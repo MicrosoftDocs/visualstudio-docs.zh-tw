@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 79987c77da7959c4ba37a4ae8e5b689a052cbbbc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193645"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
@@ -40,7 +40,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  要使用的執行緒數目。  
   
 ## <a name="return-value"></a>傳回值  
- [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) 以 [成功] （<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 位元集，如果更新執行緒計數。  
+ [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->具有 [SUCCEEDED] ( 的 ) <!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->如果已更新執行緒計數，則為 ) 位集。  
   
 ## <a name="requirements"></a>需求  
  **標頭：** FileTracker.h

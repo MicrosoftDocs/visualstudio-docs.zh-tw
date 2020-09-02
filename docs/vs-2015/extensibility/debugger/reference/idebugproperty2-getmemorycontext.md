@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetMemoryContext |Microsoft Docs
+title: IDebugProperty2：： GetMemoryCoNtext |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a3ad83bfe36f468dd0e2d7d040c188fd69970a82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193488"
 ---
 # <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
@@ -40,10 +40,10 @@ int GetMemoryContext(
   
 #### <a name="parameters"></a>參數  
  `ppMemory`  
- [out]傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，表示此屬性相關聯的記憶體。  
+ 擴展傳回 [IDebugMemoryCoNtext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 物件，代表與這個屬性相關聯的記憶體。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 傳回`S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT`如果沒有要擷取記憶體內容。  
+ 如果成功，則傳回，否則會傳回 `S_OK` 錯誤碼。 `S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT`如果沒有要取出的記憶體內容，則會傳回。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

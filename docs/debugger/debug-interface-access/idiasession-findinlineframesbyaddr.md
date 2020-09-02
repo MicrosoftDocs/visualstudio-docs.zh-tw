@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94d910f49120fcbf22f4d6830d2bd89eeb3492af
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465696"
 ---
 # <a name="idiasessionfindinlineframesbyaddr"></a>IDiaSession::findInlineFramesByAddr
-抓取列舉型別，可讓用戶端逐一查看指定位址上的所有內嵌框架。
+抓取可讓用戶端逐一查看指定位址上所有內嵌框架的列舉。
 
 ## <a name="syntax"></a>語法
 
@@ -33,7 +33,7 @@ HRESULT findInlineFramesByAddr ( 
 #### <a name="parameters"></a>參數
  `parent`
 
-在`IDiaSymbol`代表父系的物件。
+在 `IDiaSymbol` 代表父系的物件。
 
  `isect`
 
@@ -45,10 +45,10 @@ HRESULT findInlineFramesByAddr ( 
 
  `ppResult`
 
-脫銷保存 `IDiaEnumSymbols` 物件，其中包含所抓取之框架的清單。
+擴展保存 `IDiaEnumSymbols` 物件，其中包含所抓取的框架清單。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

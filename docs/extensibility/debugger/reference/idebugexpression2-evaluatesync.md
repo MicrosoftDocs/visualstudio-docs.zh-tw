@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::評估同步 |微軟文件
+title: IDebugExpression2：： EvaluateSync |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 306ed6af2a0a0b8fdb4525a112e680e289e6e6df
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729683"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
-此方法同步計算表達式。
+這個方法會以同步方式評估運算式。
 
 ## <a name="syntax"></a>語法
 
@@ -47,30 +47,30 @@ int EvaluateSync(
 
 ## <a name="parameters"></a>參數
 `dwFlags`\
-[在][EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)枚舉中的標誌的組合,用於控制運算式計算。
+在 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 列舉中的旗標組合，可控制運算式評估。
 
 `dwTimeout`\
-[在]從此方法返回之前等待的最大時間(以毫秒為單位)。 用於`INFINITE`無限期等待。
+在從這個方法傳回之前等候的最長時間（以毫秒為單位）。 使用 `INFINITE` 可無限期等候。
 
 `pExprCallback`\
-[在]此參數始終為空值。
+在此參數一律為 null 值。
 
 `ppResult`\
-[出]返回包含表達式計算結果的[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件。
+擴展傳回 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 物件，其中包含運算式評估的結果。
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則返回錯誤代碼。 一些典型的錯誤代碼是:
+如果成功，則傳回，否則會傳回 `S_OK` 錯誤碼。 以下是一些典型的錯誤碼：
 
 |錯誤|描述|
 |-----------|-----------------|
-|E_EVALUATE_BUSY_WITH_EVALUATION|目前正在計算另一個表達式,並且不支援同時計算表達式。|
-|E_EVALUATE_TIMEOUT|評估超時。|
+|E_EVALUATE_BUSY_WITH_EVALUATION|目前正在評估另一個運算式，但不支援同時運算式評估。|
+|E_EVALUATE_TIMEOUT|評估已超時。|
 
 ## <a name="remarks"></a>備註
-對於同步評估,無需在評估完成後將事件發送回 Visual Studio。
+若要進行同步評估，在評估完成時，不需要將事件傳回 Visual Studio。
 
 ## <a name="example"></a>範例
-下面的範例展示如何實現[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)介面的簡單`CExpression`物件實現此方法。
+下列範例示範如何針對實 IDebugExpression2 介面的簡單物件，執行這個方法 `CExpression` 。 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
 
 ```cpp
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,

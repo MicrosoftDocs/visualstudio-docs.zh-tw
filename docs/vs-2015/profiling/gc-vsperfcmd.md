@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2bdb28f74dd305dc497521e95d38e00192c21c54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193595"
 ---
 # <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
@@ -33,7 +33,7 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
   
 #### <a name="parameters"></a>參數  
  **配置**  
- 預設值： 收集 .NET Framework 記憶體配置資料。  
+ 預設值。 收集 .NET Framework 記憶體配置資料。  
   
  **存留期**  
  收集 .NET Framework 記憶體配置資料和 .NET Framework 物件存留期資料。  
@@ -41,7 +41,7 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
 ## <a name="required-options"></a>必要選項  
  **GC** 選項只能與 **Launch** 選項搭配使用。  
   
- **Launch：** `AppName`  
+ **啟動：**`AppName`  
  啟動指定的應用程式，並使用取樣方法開始程式碼剖析。  
   
 ## <a name="example"></a>範例  
@@ -52,7 +52,7 @@ VSPerfCmd.exe /Launch:TestApp.exe /gc
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [>vsperfcmd](../profiling/vsperfcmd.md)   
+ [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsString |Microsoft Docs
+title: IDebugProperty2：： SetValueAsString |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d50057570b5b067447321f975d4d33da8aa3de43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193435"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-從指定的字串中設定屬性的值。  
+從指定的字串設定屬性的值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,21 +44,21 @@ int SetValueAsString ( 
   
 #### <a name="parameters"></a>參數  
  `pszValue`  
- [in]字串，包含要設定的值。  
+ 在字串，包含要設定的值。  
   
  `nRadix`  
- [in]用於解譯任何數字資訊基數。 這可以是 0，以嘗試自動判斷基數。  
+ 在用來解讀任何數值資訊的基數。 這可以是0，以嘗試自動判斷基數。  
   
  `dwTimeout`  
- [in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用`INFINITE`無限期等候。  
+ 在指定從這個方法傳回之前等候的最長時間（以毫秒為單位）。 使用 `INFINITE` 可無限期等候。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 下表顯示其他可能的值。  
+ 如果成功，則傳回，否則會傳回 `S_OK` 錯誤碼。 下表顯示其他可能的值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|字串無法轉換成屬性值，或無法設定屬性值。|  
-|`E_SETVALUE_VALUE_IS_READONLY`|屬性是唯讀。|  
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|無法將字串轉換成屬性值，或無法設定屬性值。|  
+|`E_SETVALUE_VALUE_IS_READONLY`|此為唯讀屬性。|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

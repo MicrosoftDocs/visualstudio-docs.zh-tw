@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ab01f67d44e8c6e0cc13eaf9b0046695a0132e65
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778501"
 ---
 # <a name="output"></a>輸出
@@ -31,7 +31,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="required-options"></a>必要選項
  [輸出]**** 選項必須搭配 [啟動]**** 選項。
 
- **開始：**`Method`指定輸出檔案名。
+ **開始：** `Method` 指定輸出檔名稱。
 
 ## <a name="example"></a>範例
  在以下範例中，分析資料檔案是建立在目前的目錄中。
@@ -43,5 +43,5 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 ## <a name="see-also"></a>另請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [設定檔ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [分析 ASP.NET web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [分析服務](../profiling/command-line-profiling-of-services.md)

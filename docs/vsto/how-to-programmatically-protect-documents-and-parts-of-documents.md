@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4654a2c218470e0d5e2a1ddd54a88de5c4546f7b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537835"
 ---
-# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>如何：以程式設計方式保護檔和檔的部分
+# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>如何：以程式設計方式保護檔及部分的檔
   您可以在 Microsoft Office Word 文件加入保護，以防止使用者對文件進行任何編輯。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "85537835"
  您也可以將文件的特定區域標記為例外狀況，讓指定的使用者只能編輯文件的那些區域。 例如，您可能想要保護除了特定書籤以外的整份文件。 您可以選擇性地加入密碼，除非使用者知道密碼，否則無法移除文件保護。
 
 > [!NOTE]
-> 下列範例不會使用密碼保護。不過，您可以考慮在加入文件保護時使用密碼。 如需詳細資訊，請參閱[Office 程式開發範例和](../vsto/office-development-samples-and-walkthroughs.md)逐步解說中的檔案保護裝置範例。
+> 下列範例不會使用密碼保護。不過，您可以考慮在加入文件保護時使用密碼。 如需詳細資訊，請參閱 [Office 程式開發範例和](../vsto/office-development-samples-and-walkthroughs.md)逐步解說中的檔案保護裝置範例。
 
- 您也可以使用內容控制項保護文件的部分。 如需詳細資訊，請參閱[如何：使用內容控制項保護檔的元件](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。
+ 您也可以使用內容控制項保護文件的部分。 如需詳細資訊，請參閱 [如何：使用內容控制項保護檔的元件](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。
 
 ## <a name="protect-a-document-that-is-part-of-a-document-level-customization"></a>保護屬於檔層級自訂一部分的檔
 
@@ -69,7 +69,7 @@ ms.locfileid: "85537835"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#111)]
 
 ## <a name="see-also"></a>另請參閱
-- [檔層級方案中的檔案保護](../vsto/document-protection-in-document-level-solutions.md)
+- [檔層級方案的檔案保護](../vsto/document-protection-in-document-level-solutions.md)
 - [Office 檔上的密碼保護](../vsto/password-protection-on-office-documents.md)
 - [如何：允許程式碼在具有限制許可權的檔背後執行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
 - [如何：將書簽控制項新增至 Word 檔](../vsto/how-to-add-bookmark-controls-to-word-documents.md)

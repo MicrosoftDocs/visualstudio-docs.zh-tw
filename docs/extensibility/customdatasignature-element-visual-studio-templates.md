@@ -1,5 +1,5 @@
 ---
-title: 自定義數據簽名元素(可視化工作室範本) |微軟文件
+title: " (Visual Studio 範本的 CustomDataSignature 元素) |Microsoft Docs"
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,16 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ec8bae34da0f007bac65f26c4e442c1d03e56d08
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739437"
 ---
-# <a name="customdatasignature-element-visual-studio-templates"></a>自訂資料簽名元素(視覺化工作室範本)
-指定文字簽章以尋找自訂資料。
+# <a name="customdatasignature-element-visual-studio-templates"></a> (Visual Studio 範本的 CustomDataSignature 元素) 
+指定要尋找自訂資料的文字簽章。
 
- \<樣本>\<樣本資料>\<自訂資料簽名>
+ \<VSTemplate> \<TemplateData>
+ \<CustomDataSignature>
 
 ## <a name="syntax"></a>語法
 
@@ -41,18 +42,18 @@ ms.locfileid: "80739437"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 對樣本進行分類,並定義如何在 **「新專案**」或「**新增新項目**」對話框中顯示範本。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [ **新增專案** ] 或 [ **加入新** 專案] 對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- 文字是具有尋找自訂資料所需的文字簽名的字串。
+ 文字是具有尋找自訂資料所需之文字簽章的字串。
 
 ## <a name="remarks"></a>備註
   是選擇性元素。
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
-- [建立項目與專案樣本](../ide/creating-project-and-item-templates.md)
+- [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [建立專案和專案範本](../ide/creating-project-and-item-templates.md)

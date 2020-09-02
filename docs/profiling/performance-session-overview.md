@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e7b23a7cbefeace19a3deaa5c1bfc05580081d39
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778462"
 ---
 # <a name="performance-session-overview"></a>效能工作階段概觀
@@ -76,4 +76,4 @@ ms.locfileid: "74778462"
 
 ## <a name="see-also"></a>另請參閱
 - [概觀](../profiling/overviews-performance-tools.md)
-- [演練：確定性能問題](beginners-guide-to-cpu-sampling.md)
+- [逐步解說：找出效能問題](beginners-guide-to-cpu-sampling.md)

@@ -14,30 +14,30 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 625752125d3c68e9f03afd41cd549995fbc3272e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193543"
 ---
 # <a name="symbols-and-symbol-tags"></a>符號和符號標記
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-偵錯資訊編譯的程式儲存在程式資料庫 (.pdb) 檔案，做為可使用偵錯介面存取 (DIA) SDK Api 的符號。 所有的符號[idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)並[idiasymbol:: Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)屬性。 `symTag`所定義的屬性會指出符號種類[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉型別。 `symIndexId`屬性是`DWORD`包含符號的每個執行個體的唯一識別項的值。  
+已編譯器的 Debug 資訊會儲存在程式資料庫 ( .pdb) 檔中，做為可使用 Debug 介面存取 (DIA) SDK Api 存取的符號。 所有符號都有 [IDiaSymbol：： get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) 和 [IDiaSymbol：： get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) 屬性。 `symTag`屬性工作表示[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉所定義的符號種類。 `symIndexId`屬性是一個 `DWORD` 值，其中包含每個符號實例的唯一識別碼。  
   
- 符號也會有屬性可指定的其他資訊的符號，以及參考其他符號，最常[idiasymbol:: Get_lexicalparent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)或[idiasymbol:: Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md). 當您查詢包含參考的屬性時，做為傳回參考[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。 這類屬性會一律搭配使用另一個屬性相同的名稱，但後面加上具有 「 識別碼 」，例如[idiasymbol:: Get_lexicalparentid](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)並[idiasymbol:: Get_classparentid](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)。 中的資料表[符號位置](../../debugger/debug-interface-access/symbol-locations.md)，[語彙階層的符號類型](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)，並[類別階層架構的符號類型](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)不同種類的每個說明屬性的符號。 這些屬性可能的相關資訊或其他符號的參考。 因為`*Id`屬性都只是數值的序數識別項，其相關的屬性，它們會省略進一步討論。 其參考只在所需的參數說明。  
+ 符號的屬性也可以指定符號的其他相關資訊，以及其他符號的參考，最常是 [IDiaSymbol：： get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md) 或 [IDiaSymbol：： get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)。 當您查詢包含參考的屬性時，參考會以 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件的形式傳回。 這類屬性一律會與另一個具有相同名稱的屬性配對，但尾碼為 "Id"，例如， [IDiaSymbol：： get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md) 和 [IDiaSymbol：： get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)。 符號 [位置](../../debugger/debug-interface-access/symbol-locations.md)中的資料表、 [符號類型的詞法](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)階層，以及 [符號類型的類別](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md) 階層，會針對每個不同種類的符號來概述其屬性。 這些屬性可能會有有關或參考其他符號的相關資訊。 因為 `*Id` 屬性只是其相關屬性的數值序數識別碼，所以會從進一步的討論中省略它們。 它們只是參考參數說明所需的位置。  
   
- 若要存取屬性，如果未發生錯誤，而且已指派的符號屬性值時，屬性的"get"方法會傳回`S_OK`。 傳回值為`S_FALSE`指出屬性不是適用於目前的符號。  
+ 嘗試存取屬性時，如果沒有發生錯誤，而且已將值指派給 symbol 屬性，則屬性的 "get" 方法會傳回 `S_OK` 。 的傳回值 `S_FALSE` 表示屬性對目前的符號而言是不正確。  
   
 ## <a name="in-this-section"></a>本節內容  
  [符號位置](../../debugger/debug-interface-access/symbol-locations.md)  
- 說明不同的類型可以有一個符號的位置。  
+ 描述項號可以有的不同位置種類。  
   
  [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)  
- 描述形成語彙階層架構，例如檔案、 模組和函式的符號類型。  
+ 描述形成詞彙階層的符號類型，例如檔案、模組和函式。  
   
  [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)  
- 描述對應至不同的語言項目，例如類別、 陣列和函式傳回類型的符號類型。  
+ 描述對應至不同語言專案（例如類別、陣列和函式傳回類型）的符號類型。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯介面存取 SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

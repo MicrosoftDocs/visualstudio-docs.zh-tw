@@ -9,16 +9,16 @@ caps.latest.revision: 7
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f02c3fe2e3d8fa67cb8a996ba14dddce7b1a3a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657073"
 ---
 # <a name="writing-unit-tests-for-the-net-framework-with-the-microsoft-unit-test-framework-for-managed-code"></a>使用適用於 Managed 程式碼的 Microsoft 單元測試架構撰寫適用於 .NET Framework 的單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本節逐步解說[：針對受控碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+本節逐步解說 [：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
  [快速入門：搭配測試總管進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)
 

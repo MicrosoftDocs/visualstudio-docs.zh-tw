@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetCustomViewerCount |Microsoft Docs
+title: IDebugProperty3：： GetCustomViewerCount |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: adce7ad5813afc9c002ec9439326c12f3b2c8e6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193412"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得可供這個屬性的自訂檢視器的數目。  
+取得這個屬性可能可用的自訂檢視器數目。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,18 +40,18 @@ int GetCustomViewerCount(
   
 #### <a name="parameters"></a>參數  
  `pcelt`  
- [out]適用於此屬性的自訂檢視器的數目。  
+ 擴展此屬性可用的自訂檢視器數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 為了支援類型視覺化檢視，這個方法會呼叫轉寄[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)方法。 如果運算式評估工具也支援自訂檢視器，這個屬性的類型，這個方法會將傳回值的自訂檢視器的數目。  
+ 為了支援型別視覺化，這個方法會將呼叫轉送至 [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) 方法。 如果運算式評估工具也支援此屬性類型的自訂檢視器，這個方法會將自訂檢視器的數目新增至傳回的值。  
   
- 如需類型視覺化檢視和自訂檢視器之間的差異的詳細資訊，請參閱[類型視覺化檢視和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)。  
+ 如需型別視覺化程式和自訂檢視器之間差異的詳細資訊，請參閱 [型別視覺化程式和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法，如**CProperty**公開 （expose） 的物件[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面。  
+ 下列範例示範如何針對公開[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面的**CProperty**物件，執行這個方法。  
   
 ```cpp#  
 STDMETHODIMP CProperty::GetCustomViewerCount(ULONG* pcelt)  

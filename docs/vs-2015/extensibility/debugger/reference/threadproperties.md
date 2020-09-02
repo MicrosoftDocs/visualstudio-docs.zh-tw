@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4815a1e42b98fba812e8a3c2a53516bff16081db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204814"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-描述執行緒屬性。  
+描述執行緒的屬性。  
   
 ## <a name="syntax"></a>語法  
   
@@ -52,35 +52,35 @@ public struct THREADPROPERTIES { 
   
 ## <a name="members"></a>成員  
  dwFields  
- 從旗標的組合[THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)列舉，描述在此結構中的哪一個欄位都有效。  
+ [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)列舉中的旗標組合，描述此結構中的哪些欄位有效。  
   
  dwThreadId  
- 執行緒 id。  
+ 執行緒識別碼。  
   
  dwSuspendCount  
  執行緒暫停計數。  
   
  dwThreadState  
- 值，以從[THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)列舉，指出作業的執行緒的狀態。  
+ [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)列舉中的值，指出作業執行緒的狀態。  
   
  bstrPriority  
- 字串，指定的執行緒優先權。例如，"上方 Normal"、"Normal"或者 「 時間重大 」。  
+ 指定執行緒優先順序的字串;例如，「上述標準」、「一般」或「時間緊迫」。  
   
  bstName  
  執行緒名稱。  
   
  bstrLocation  
- 執行緒位置 （通常是最上層的堆疊框架），通常表示為目前停止執行方法的名稱。  
+ 執行緒位置 (通常是最上層堆疊框架) ，通常表示為執行目前暫停之方法的名稱。  
   
 ## <a name="remarks"></a>備註  
- 此結構會填入藉由呼叫[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)方法。 因此傳回的資訊通常會用於填入**執行緒**視窗。  
+ [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)方法的呼叫會填入此結構。 傳回的資訊通常用於填入 [ **執行緒** ] 視窗。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

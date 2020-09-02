@@ -1,5 +1,5 @@
 ---
-title: 應用於元素(視覺工作室範本) |微軟文件
+title: " (Visual Studio 範本的 AppliesTo 元素) |Microsoft Docs"
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,19 +10,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 39b5ee1e3cad0b4d8ddbe0fc2dfa1c2d478ec063
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740081"
 ---
-# <a name="appliesto-element-visual-studio-templates"></a>套用於元素(視覺化工作室範本)
+# <a name="appliesto-element-visual-studio-templates"></a> (Visual Studio 範本的 AppliesTo 元素) 
 
-指定可選表達式以匹配一個或多個功能(請參閱<xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>)。 功能通過層次結構通過層次結構公開功能,作為屬性[__VSHPROPID5。VSHPROPID_ProjectCapabilities](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5.VSHPROPID_ProjectCapabilities>)。 如此一來，範本就可以在具有通用功能的多個專案類型之間共用。
+指定選用的運算式來比對一或多項功能 (查看 <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>) 。 功能是由專案類型透過階層公開為屬性 [__VSHPROPID5。VSHPROPID_ProjectCapabilities](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5.VSHPROPID_ProjectCapabilities>)。 如此一來，範本就可以在具有通用功能的多個專案類型之間共用。
 
 這是選擇性的項目。 一個範本檔最多只能有一個執行個體。 這個項目只會根據目前選取的現用專案，讓項目範本加入成為適用的範本。 它不能用來讓項目範本變成不適用。 如果 `AppliesTo` 不存在或運算式未成功選擇加入，則會使用 `TemplateID` 或 `TemplateGroupID` 讓範本成為適用，就如舊版產品一樣。
 
-已在 Visual Studio 2013 Update 2 中引入。 要引用正確的版本,請參閱[Visual Studio 2013 SDK 更新 2 中提供的參考程式集](/previous-versions/dn632168(v=vs.120))。
+已在 Visual Studio 2013 Update 2 中引入。 若要參考正確的版本，請參閱 [VISUAL STUDIO 2013 SDK Update 2 中提供的參考元件](/previous-versions/dn632168(v=vs.120))。
 
 ```xml
 <VSTemplate>
@@ -50,7 +50,7 @@ ms.locfileid: "80740081"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類。|
 
@@ -60,11 +60,11 @@ ms.locfileid: "80740081"
 
 有效的運算式語法定義如下：
 
-- 功能運算式,如"(VisualC &#124; CSharp) = (MSTest &#124; NUnit)"。
+- 功能運算式，例如 " (VisualC &#124; CSharp) + (MSTest &#124; NUnit) 」。
 
-- "&#124;"是 OR 運算符。
+- "&#124;" 是 OR 運算子。
 
-- "&"和"+"字元都是 AND 運算元。
+- "&" 和 "+" 字元都是和運算子。
 
 - "!" 字元是 NOT 運算子。
 
@@ -72,11 +72,11 @@ ms.locfileid: "80740081"
 
 - Null 或空白運算式會判斷值為相符項目。
 
-- 專案功能可以是除這些保留字元之外的任何字元:"':;*--/!]\\{}&#124;&%$_())]*<>? \t\b\n\r
+- 專案功能可以是下列保留字元以外的任何字元： "' '：;，+-*/ \\ ！ ~&#124;&% $ @ ^ ( # B1 = {} [] <>？ \t\b\n\r
 
 ## <a name="example"></a>範例
 
-下列範例將示範三個不同的範本。 `Template1`應用於所有 C# 專案類型或`WindowsAppContainer`支援該 功能的任何其他項目類型。 `Template2`適用於所有任何類型的 C# 專案。 `Template3` 適用於不是 `WindowsAppContainer` 專案的 C# 專案。
+下列範例將示範三個不同的範本。 `Template1` 適用于所有 c # 專案類型或任何其他支援此功能的專案類型 `WindowsAppContainer` 。 `Template2` 適用于任何種類的 c # 專案。 `Template3` 適用於不是 `WindowsAppContainer` 專案的 C# 專案。
 
 ```xml
 <!--  Template 1 -->
@@ -106,5 +106,5 @@ ms.locfileid: "80740081"
 
 ## <a name="see-also"></a>另請參閱
 
-- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
 - [建立專案與項目範本](../ide/creating-project-and-item-templates.md)

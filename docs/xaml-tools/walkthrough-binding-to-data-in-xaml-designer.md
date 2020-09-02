@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: f57d4f24348ff805669832ce6db9e8e4e79e4569
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330754"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>在 XAML 設計工具中繫結至資料
@@ -91,7 +91,7 @@ ms.locfileid: "85330754"
 
      ![[建立資料繫結] 對話方塊](../designers/media/xaml_create_data_binding.png)
 
-1. 按**F5**執行應用程式。
+1. 按 **F5** 執行應用程式。
 
      `TextBlock` 控制項應顯示預設值 0 做為文字。
 

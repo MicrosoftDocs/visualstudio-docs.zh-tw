@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 753d26e2c48f6263ccbc9c403f255948b5077924
-ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86092306"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>如何：使用查看定義 (Alt+F12) 來檢視及編輯程式碼
@@ -24,7 +24,7 @@ ms.locfileid: "86092306"
 
 ### <a name="open-a-peek-definition-window"></a>開啟 [查看定義] 視窗
 
-1. 您可以從想要探索的型別或成員的右鍵功能表，選擇 [查看定義]**** 以查看定義。 如果已啟用選項，您也可以按 **Ctrl** 鍵 (或其他輔助按鍵)，然後按一下成員名稱，以使用滑鼠查看定義。 或者，在鍵盤上按**Alt** + **F12**。
+1. 您可以從想要探索的型別或成員的右鍵功能表，選擇 [查看定義]**** 以查看定義。 如果已啟用選項，您也可以按 **Ctrl** 鍵 (或其他輔助按鍵)，然後按一下成員名稱，以使用滑鼠查看定義。 或者，從鍵盤按下**Alt** + **F12**。
 
      下圖顯示名為 `Print()` 之方法的 [查看定義]**** 視窗：
 
@@ -58,7 +58,7 @@ ms.locfileid: "86092306"
 
 ### <a name="to-change-options-for-peek-definition"></a>變更查看定義的選項
 
-1. 前往 [**工具**]  >  [**選項**]  >  [**文字編輯器**]  >  **[一般**]。
+1. 移至 [**工具**  >  **選項**  >  **文字編輯器**  >  **一般**]。
 
 1. 選取 [在預覽檢視中開啟定義]**** 選項。
 
@@ -77,7 +77,7 @@ ms.locfileid: "86092306"
 |將定義視窗升級到一般文件索引標籤|**Ctrl** +**Alt** +**首頁**|
 |在定義視窗之間巡覽|**Ctrl** +**Alt** + Alt **-** 和**Ctrl** + **Alt**+**=**|
 |在多個結果之間巡覽|**F8** 和 **Shift**+**F8**|
-|在程式碼編輯器視窗和定義視窗之間切換|**Shift** +**Esc 鍵**|
+|在程式碼編輯器視窗和定義視窗之間切換|**Shift** +**Esc**|
 
 > [!NOTE]
 > 您也可以使用相同的鍵盤快速鍵，在 [查看定義]**** 視窗中編輯程式碼，就如同在 Visual Studio 中的其他位置使用。

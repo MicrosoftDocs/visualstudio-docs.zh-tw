@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2ef7ef7f4ec930b8aa338a8be33c4009b3009b20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193241"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 工作
@@ -34,9 +34,9 @@ ms.locfileid: "68193241"
 ## <a name="parameters"></a>參數  
  下表說明 `UnregisterAssembly` 工作的參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
-|`Assemblies`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要取消註冊的組件。|  
+|`Assemblies`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要取消註冊的組件。|  
 |`AssemblyListFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 包含 `RegisterAssembly` 工作與 `UnregisterAssembly` 工作之間狀態的相關資訊。 如此可防止工作嘗試取消註冊無法在 `RegisterAssembly` 工作中註冊的組件。<br /><br /> 如果已指定此參數，則會忽略 `Assemblies` 和 `TypeLibFiles` 參數。|  
 |`TypeLibFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 從指定的組件中取消註冊指定的類型程式庫。 **注意：** 只有在類型程式庫檔案名稱與組件名稱不同時才需要此參數。|  
   
@@ -65,5 +65,5 @@ ms.locfileid: "68193241"
   
 ## <a name="see-also"></a>另請參閱  
  [RegisterAssembly 工作](../msbuild/registerassembly-task.md)   
- [工作](../msbuild/msbuild-tasks.md)   
+ [任務](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

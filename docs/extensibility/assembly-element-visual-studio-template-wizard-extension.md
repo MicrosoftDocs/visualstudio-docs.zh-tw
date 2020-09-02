@@ -1,5 +1,5 @@
 ---
-title: 程式集元素(可視化工作室範本精靈) |微軟文件
+title: 元件元素 (Visual Studio 範本 Wizard 擴充) |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 43f5adb8abc17f0509fb58263f307e5051af85dc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740058"
 ---
-# <a name="assembly-element-visual-studio-template-wizard-extension"></a>程式集元素(可視化工作室範本精靈)
-指定實現`IWizard`介面的程式集的名稱或強名稱。
+# <a name="assembly-element-visual-studio-template-wizard-extension"></a>元件專案 (Visual Studio 範本 wizard 擴充) 
+指定執行介面之元件的名稱或強式名稱 `IWizard` 。
 
- \<VStemplate>\<嚮導延伸>\<程式集>
+ \<VSTemplate>
+\<WizardExtension>
+\<Assembly>
 
 ## <a name="syntax"></a>語法
 
@@ -43,20 +45,20 @@ ms.locfileid: "80740058"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|包含用於自定義範本嚮導的註冊元素。|
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|包含用於自訂範本 wizard 的註冊專案。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- 此文字指定實現介面的`IWizard`程式集。 必須指定此程式集名稱為完整程式集名稱。 例如： `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null` 。
+ 此文字會指定執行介面的元件 `IWizard` 。 此元件名稱必須指定為完整元件名稱。 例如： `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null` 。
 
 ## <a name="remarks"></a>備註
  `Assembly` 是 `WizardExtension` 的必要子項目。
 
 ## <a name="example"></a>範例
- 下面的範例展示[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 應用程式的標準項目樣本的中繼資料。
+ 下列範例說明適用于 Windows 應用程式的標準專案範本中繼資料 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
 
 ```xml
 <VSTemplate Version="3.0.0" Type="Item"
@@ -88,6 +90,6 @@ ms.locfileid: "80740058"
 
 ## <a name="see-also"></a>另請參閱
 
-- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
-- [建立項目與專案樣本](../ide/creating-project-and-item-templates.md)
-- [如何:將精靈與專案樣本一起使用](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [建立專案和專案範本](../ide/creating-project-and-item-templates.md)
+- [如何：搭配專案範本使用嚮導](../extensibility/how-to-use-wizards-with-project-templates.md)

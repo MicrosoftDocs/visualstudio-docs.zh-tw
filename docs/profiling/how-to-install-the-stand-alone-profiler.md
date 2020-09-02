@@ -1,5 +1,5 @@
 ---
-title: 如何-安裝獨立分析工具 |Microsoft Docs
+title: 如何-安裝獨立 Profiler |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 950927510d4c7acd77db22e80dff59946c0d6c20
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330135"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>如何：安裝獨立分析工具
@@ -31,7 +31,7 @@ ms.locfileid: "85330135"
 
 1. 在您下載效能工具處找到獨立分析工具安裝程式 (*vs_standaloneprofiler.exe*) 並執行它。
 
-2. 將*vsinstr.exe*的路徑新增至系統路徑。
+2. 將 *vsinstr.exe* 的路徑新增至系統路徑。
 
    > [!NOTE]
    > 若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
@@ -48,7 +48,7 @@ ms.locfileid: "85330135"
     **start %COMSPEC%**
 
    > [!NOTE]
-   > 如需如何設定符號伺服器套件的詳細指示，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。
+   > 如需有關如何設定符號伺服器套件的詳細指示，請參閱 [如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。
 
 6. 使用 [VSPerfReport](../profiling/vsperfreport.md) 工具將符號序列化成分析資料 (.vsp) 檔案。 使用 **VSPerfReport /summary:all /packsymbols** 參數。 如未在資料檔案中插入符號，請確定設定了 _NT_SYMBOL_PATH 環境變數。
 

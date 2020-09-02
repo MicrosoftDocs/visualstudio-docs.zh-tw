@@ -1,5 +1,5 @@
 ---
-title: IEnumDebug參考資訊2 |微軟文件
+title: IEnumDebugReferenceInfo2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6132235a7e4789c7d9efe5bae9d7fd531112dab4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715272"
 ---
 # <a name="ienumdebugreferenceinfo2"></a>IEnumDebugReferenceInfo2
-此介面枚舉[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構。
+此介面會列舉 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 結構。
 
 ## <a name="syntax"></a>語法
 
@@ -28,32 +28,32 @@ ms.locfileid: "80715272"
 IEnumDebugReferenceInfo2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 除錯引擎 (DE) 實現此介面,作為其對記憶體中物件的引用的支援的一部分。 僅當支援引用時,才能實現此介面。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ Debug engine (DE) 會在其支援記憶體中的物件參考時，將此介面實作為其支援。 只有在支援參考時，才必須執行這個介面。
 
-## <a name="notes-for-callers"></a>通話備註
- Visual Studio 調用[Enum 兒童](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)以獲取此介面。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ Visual Studio 會呼叫 [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) 來取得這個介面。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 下表顯示的方法`IEnumDebugReferenceInfo2`。
+ 下表顯示的方法 `IEnumDebugReferenceInfo2` 。
 
 |方法|描述|
 |------------|-----------------|
-|[下一步](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|檢索枚舉序列中指定數量的[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構。|
-|[跳](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-skip.md)|跳過枚舉序列中指定數量的[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構。|
-|[重設](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-reset.md)|將枚舉序列重置為開頭。|
-|[複製](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-clone.md)|建立與當前枚舉器相同的枚舉狀態的枚舉器。|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-getcount.md)|獲取枚舉器中[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構的數量。|
+|[下一個](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|抓取列舉序列中指定數目的 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 結構。|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-skip.md)|略過列舉序列中指定數目的 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 結構。|
+|[重設](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-reset.md)|將列舉順序重設為開頭。|
+|[複製](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-getcount.md)|取得枚舉器中 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 結構的數目。|
 
 ## <a name="remarks"></a>備註
- 引用本質上是一個類型和位址,而屬性是名稱、類型和位址。 只要引用的物件存在於記憶體中,引用就保持不變。 有關詳細資訊[,請參閱 IDebug 參考 2。](../../../extensibility/debugger/reference/idebugreference2.md)
+ 參考基本上是類型和位址，而屬性則是名稱、類型和位址。 只要參考的物件存在於記憶體中，就會保存參考。 如需詳細資訊，請參閱 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

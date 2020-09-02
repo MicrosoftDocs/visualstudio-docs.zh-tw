@@ -1,5 +1,5 @@
 ---
-title: 混合的模式偵錯時，才支援使用 Microsoft.NET Framework 2.0 或 3.0 |Microsoft Docs
+title: 只有使用 Microsoft .NET Framework 2.0 或3.0 時，才支援混合模式的偵錯工具 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fc45927ad6cc1189ed1d08328b4dd362821cdcb6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696459"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>只有使用 Microsoft .NET Framework 2.0 或 3.0 版本時才支援混合模式偵錯
@@ -38,23 +38,23 @@ ms.locfileid: "65696459"
   
 ### <a name="to-change-the-operating-system-to-32-bit-visual-basic-or-c"></a>若要將作業系統變更為 32 位元 (Visual Basic 或 C#)  
   
-1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後按一下捷徑功能表中的 [屬性]。  
+1. 在 [方案總管]**** 中，以滑鼠右鍵按一下專案，然後按一下捷徑功能表中的 [屬性]****。  
   
-2. 在屬性頁中，按一下 [編譯] 或 [偵錯] 索引標籤。  
+2. 在屬性頁中，按一下 [編譯]**** 或 [偵錯]**** 索引標籤。  
   
-3. 按一下 [平台]，然後從平台清單選取 [x86]。  
+3. 按一下 [平台]****，然後從平台清單選取 [x86]****。  
   
-     根據預設，Visual Basic 和 C# 編譯器會產生可針對任何 CPU 執行的程式碼。 在 64 位元電腦上，這些二進位檔會當做 64 位元處理序執行。 若要在 32 位元處理序上執行，您必須選擇 [Win32]，而非 [AnyCPU]。  
+     根據預設，Visual Basic 和 C# 編譯器會產生可針對任何 CPU 執行的程式碼。 在 64 位元電腦上，這些二進位檔會當做 64 位元處理序執行。 若要在 32 位元處理序上執行，您必須選擇 [Win32]****，而非 [AnyCPU]****。  
   
 ### <a name="to-change-the-operating-system-to-32-bit-cc"></a>若要將作業系統變更為 32 位元 (C/C++)  
   
-1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後按一下捷徑功能表中的 [屬性]。  
+1. 在 [方案總管]**** 中，以滑鼠右鍵按一下專案，然後按一下捷徑功能表中的 [屬性]****。  
   
-     在屬性頁中，按一下 [平台]，然後從平台清單選取 [Win32]。  
+     在屬性頁中，按一下 [平台]****，然後從平台清單選取 [Win32]****。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 請參閱[設定 SQL 偵錯](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)。  
+- 請參閱 [設定 SQL 調試](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 64 位元應用程式](../debugger/debug-64-bit-applications.md)

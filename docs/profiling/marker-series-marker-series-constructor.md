@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 78b2e80611983e69f11465269dcf15dad7d6351e
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329704"
 ---
 # <a name="marker_seriesmarker_series-constructor"></a>marker_series::marker_series 建構函式
-將 `marker_series` 類別的新執行個體初始化。
+初始化 `marker_series` 類別的新執行個體。
 
 ## <a name="syntax"></a>語法
 
@@ -43,7 +43,7 @@ marker_series(
 
  `_ProviderGuid` 系列提供者的 GUID。
 
-## <a name="requirements"></a>規格需求
+## <a name="requirements"></a>需求
  **標頭：** *cvmarkersobj.h*
 
  **命名空間：** Concurrency::diagnostic

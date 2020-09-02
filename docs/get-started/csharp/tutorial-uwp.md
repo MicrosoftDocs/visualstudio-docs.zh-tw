@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: aec4b72e8393e241039e8c005d05275ab61111bb
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249253"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>教學課程：使用 XAML 和 C&#35; 在 Visual Studio 中建立您的第一個通用 Windows 平臺應用程式
@@ -44,7 +44,7 @@ ms.locfileid: "88249253"
 1. 在 [新增專案]**** 對話方塊的左窗格中，展開 [Visual C#]****，然後選擇 [Windows 通用]****。 在中間窗格中，選擇 [空白應用程式 (通用 Windows)]****。 接著，將專案命名為 *HelloWorld*，然後選擇 [確定]****。
 
    > [!NOTE]
-   > 請確定來源專案的位置是在 **新的技術檔案系統上 (NTFS) ** 格式化的磁片磁碟機，例如作業系統 (OS) 磁片磁碟機。 否則，您可能無法建立和執行專案。 
+   > 請確定來源專案的位置位於 **新的技術檔案系統 (NTFS) ** 格式化的磁片磁碟機，例如作業系統 (作業系統) 磁片磁碟機。 否則，您可能會遇到建立和執行專案的問題。 
 
    ![Visual Studio IDE 中 [新增專案] 對話方塊的「Windows 通用」專案範本](media/new-project-csharp-uwp-helloworld.png)
 
@@ -102,7 +102,7 @@ ms.locfileid: "88249253"
 
    ![按一下 [工具箱] 以開啟 [工具箱] 飛出視窗](media/uwp-toolbox.png)
 
-    (如果看不到 [ **工具箱** ] 選項，您可以從功能表列開啟它。 若要這麼做，請選擇 [ **View**  >  **工具列**]。 或者按**Ctrl** + **Alt** + **X**. ) 
+    (如果沒有看到 [ **工具箱** ] 選項，您可以從功能表列開啟它。 若要這樣做，請選擇 [**視圖**  >  **工具列**]。 或者，按下**Ctrl** + **Alt** + **X**. ) 
 
 1. 按一下 **釘** 選圖示以停駐 [工具箱] 視窗。
 
@@ -112,7 +112,7 @@ ms.locfileid: "88249253"
 
    ![按一下 [Button] 控制項，然後將它拖曳至設計畫布](media/uwp-toolbox-add-button-control.png)
 
-   如果您查看 **XAML 編輯器**中的程式碼，您會看到按鈕已加入該處。
+   如果您查看 **XAML 編輯器**中的程式碼，您會看到該按鈕也已新增至該處：
 
    ![按一下 [Button] 控制項，然後將它拖曳至設計畫布](media/uwp-xaml-control-code-window.png)
 
@@ -178,7 +178,7 @@ ms.locfileid: "88249253"
 
    您的 Windows 10 裝置字面上會顯示 "Hello, World!"
 
-1. 若要關閉此應用程式，請按一下工具列中的 [停止偵錯]**** 按鈕。  (也可以選擇功能表列中的 [**調試**] [  >  **停止調試**]，或按 Shift + F5。 ) 
+1. 若要關閉此應用程式，請按一下工具列中的 [停止偵錯]**** 按鈕。  (或者，請從功能表列選擇 [ **Debug**  >  **停止**錯]，或按 Shift + F5。 ) 
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
@@ -198,7 +198,7 @@ ms.locfileid: "88249253"
 
    您的 Windows 10 裝置字面上會顯示 "Hello, World!"
 
-1. 若要關閉此應用程式，請按一下工具列中的 [停止偵錯]**** 按鈕。  (也可以選擇功能表列中的 [**調試**] [  >  **停止調試**]，或按 Shift + F5。 ) 
+1. 若要關閉此應用程式，請按一下工具列中的 [停止偵錯]**** 按鈕。  (或者，請從功能表列選擇 [ **Debug**  >  **停止**錯]，或按 Shift + F5。 ) 
 
 ::: moniker-end
 

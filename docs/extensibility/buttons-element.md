@@ -1,5 +1,5 @@
 ---
-title: 按鈕元素 |微軟文件
+title: 按鈕元素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 64ac5621093f30af28ade0817906b767231e4ee1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739926"
 ---
-# <a name="buttons-element"></a>按鈕項目
-對[表示](../extensibility/button-element.md)單個命令的按鈕元素進行分組。
+# <a name="buttons-element"></a>按鈕元素
+代表個別命令的群組 [按鈕](../extensibility/button-element.md) 元素。
 
 ## <a name="syntax"></a>語法
 
@@ -37,20 +37,20 @@ ms.locfileid: "80739926"
 
 |屬性|描述|
 |---------------|-----------------|
-|條件|選擇性。 請參考[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|條件|選擇性。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[按鈕項目](../extensibility/buttons-element.md)|對按鈕元素進行分組。|
-|[按鈕項目](../extensibility/button-element.md)|定義用戶可以與之交互的命令。|
+|[按鈕元素](../extensibility/buttons-element.md)|群組按鈕元素。|
+|[Button 元素](../extensibility/button-element.md)|定義使用者可與其互動的命令。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[指令元素](../extensibility/commands-element.md)|表示 VSPackage 工具列上的命令集合。|
+|[命令元素](../extensibility/commands-element.md)|代表 VSPackage 工具列上的命令集合。|
 
 ## <a name="example"></a>範例
 
@@ -67,5 +67,5 @@ ms.locfileid: "80739926"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [VS 套件如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [命令、選單和工具列](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Vspackage 如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)

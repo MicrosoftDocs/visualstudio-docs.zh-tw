@@ -18,19 +18,19 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 92148a6f084a4cc04b4587781e750e4fd0df133f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538329"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>如何：將自訂 XML 元件加入至檔層級自訂
-  您可以在文件層級自訂中建立自訂 XML 組件，將 XML 資料儲存在 Microsoft Office Excel 活頁簿或 Microsoft Office Word 文件中。 如需詳細資訊，請參閱[自訂 XML 元件總覽](../vsto/custom-xml-parts-overview.md)。
+  您可以在文件層級自訂中建立自訂 XML 組件，將 XML 資料儲存在 Microsoft Office Excel 活頁簿或 Microsoft Office Word 文件中。 如需詳細資訊，請參閱 [自訂 XML 元件總覽](../vsto/custom-xml-parts-overview.md)。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 > [!NOTE]
-> Visual Studio 不提供 Microsoft Office PowerPoint 的文件層級專案。 如需使用 VSTO 增益集將自訂 XML 元件加入 PowerPoint 簡報的相關資訊，請參閱[如何：使用 Vsto 增益集將自訂 xml 元件新增至檔](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)。
+> Visual Studio 不提供 Microsoft Office PowerPoint 的文件層級專案。 如需使用 VSTO 增益集將自訂 XML 元件加入至 PowerPoint 簡報的詳細資訊，請參閱 [如何：使用 Vsto 增益集將自訂 xml 元件加入至檔](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)。
 
 ### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>將自訂 XML 組件加入至 Excel 活頁簿
 

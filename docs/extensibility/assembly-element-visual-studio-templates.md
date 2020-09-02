@@ -1,5 +1,5 @@
 ---
-title: 裝配元件(可視化工作室範本) |微軟文件
+title: 元件元素 (Visual Studio 範本) |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c80044657b16448ba4567fff839274226985fa14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740041"
 ---
-# <a name="assembly-element-visual-studio-templates"></a>裝配元件(可視化工作室範本)
-指定有關程式集的資訊,範本用於將該程式集的引用添加到專案。
+# <a name="assembly-element-visual-studio-templates"></a>元件元素 (Visual Studio 範本) 
+指定元件的相關資訊，範本會使用此元件將該元件的參考加入至專案。
 
- \<樣本>\<範本內容>\<參考>\<參考>\<程式集>
+ \<VSTemplate> \<TemplateContent>
+ \<References>
+ \<Reference>
+ \<Assembly>
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +46,16 @@ ms.locfileid: "80740041"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[參考](../extensibility/reference-element-visual-studio-templates.md)|指定項目加入專案時要加入的組件參考。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- 此文字指定在實例化專案樣本時要添加到專案的程式集。 必須透過以下方式的一個指定此程式集名稱:
+ 此文字會指定當專案範本具現化時，要加入至專案的元件。 此元件名稱必須以下列其中一種方式指定：
 
-- 作為完整的程式集名稱。 例如：
+- 作為完整元件名稱。 例如：
 
     ```
     <Assembly>
@@ -60,7 +63,7 @@ ms.locfileid: "80740041"
     </Assembly>
     ```
 
-- 作為簡單的文本引用。 例如：
+- 做為簡單的文字參考。 例如：
 
     ```
     <Assembly> System </Assembly>
@@ -69,10 +72,10 @@ ms.locfileid: "80740041"
 ## <a name="remarks"></a>備註
  `Assembly` 是 `Reference` 的必要子項目。
 
- `References,``Reference`和`Assembly`元素只能在具有`Type`屬性值`Item`的 *.vstemplate*檔案中使用。
+ `Reference`、 `References,` 和 `Assembly` 元素只能用在具有屬性值*的 .vstemplate*檔案中 `Type` `Item` 。
 
 ## <a name="example"></a>範例
- 下面的示例說明了項範本`TemplateContent`的元素。 此 XML 添加對*System.dll*和*System.Data.dll*程式集的引用。
+ 下列範例說明 `TemplateContent` 專案範本的元素。 這個 XML 會將參考加入 *System.dll* 和 *System.Data.dll* 元件。
 
 ```
 <TemplateContent>
@@ -93,5 +96,5 @@ ms.locfileid: "80740041"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
 - [建立專案與項目範本](../ide/creating-project-and-item-templates.md)

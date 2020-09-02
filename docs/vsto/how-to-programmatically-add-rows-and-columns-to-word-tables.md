@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0097692c77d0b472c808876e9017b514b6416fc6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538069"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>如何：以程式設計方式將資料列和資料行加入至 Word 資料表
@@ -37,7 +37,7 @@ ms.locfileid: "85538069"
 > - Word 2010 文件
 > - Word 2010 範本
 >
->   如果您想要在任何其他類型的專案中執行這項工作，您必須加入對**Microsoft.** node.js 元件的參考，然後您必須使用該元件中的類別，將資料列和資料行加入至資料表。 如需詳細資訊，請參閱[如何：透過主要 interop 元件以 Office 應用程式為目標](how-to-target-office-applications-through-primary-interop-assemblies.md)和[Word 2010 主要 interop 元件參考](office-primary-interop-assemblies.md)。
+>   如果您想要在任何其他類型的專案中執行這項工作，您必須將參考加入至 node.js 元件，然後必須使用該元件 **中的類別** ，將資料列和資料行加入至資料表。 如需詳細資訊，請參閱 [如何：透過主要 interop 元件以 Office 應用程式為目標](how-to-target-office-applications-through-primary-interop-assemblies.md) ，以及 [Word 2010 主要 interop 元件參考](office-primary-interop-assemblies.md)。
 
 ### <a name="to-add-a-row-to-a-table"></a>在資料表中新增群組
 
@@ -59,7 +59,7 @@ ms.locfileid: "85538069"
 > [!IMPORTANT]
 > 只有在使用 Word VSTO 增益集範本建立的專案中，才能執行此程式碼。
 >
-> 如果您想要在任何其他類型的專案中執行這項工作，您必須加入對**Microsoft.** node.js 元件的參考，然後您必須使用該元件中的類別，將資料列和資料行加入至資料表。 如需詳細資訊，請參閱[如何：透過主要 interop 元件以 Office 應用程式為目標](how-to-target-office-applications-through-primary-interop-assemblies.md)和[Word 2010 主要 interop 元件參考](office-primary-interop-assemblies.md)。
+> 如果您想要在任何其他類型的專案中執行這項工作，您必須將參考加入至 node.js 元件，然後必須使用該元件 **中的類別** ，將資料列和資料行加入至資料表。 如需詳細資訊，請參閱 [如何：透過主要 interop 元件以 Office 應用程式為目標](how-to-target-office-applications-through-primary-interop-assemblies.md) ，以及 [Word 2010 主要 interop 元件參考](office-primary-interop-assemblies.md)。
 
 ### <a name="to-add-a-row-to-a-table"></a>在資料表中新增群組
 
@@ -76,6 +76,6 @@ ms.locfileid: "85538069"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]
 
 ## <a name="see-also"></a>另請參閱
-- [如何：以程式設計方式建立 Word 資料表](how-to-programmatically-create-word-tables.md)
+- [如何：以程式設計方式建立 Word 表格](how-to-programmatically-create-word-tables.md)
 - [如何：以程式設計方式在 Word 表格的儲存格中加入文字和格式](how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
-- [如何：以程式設計方式使用文件屬性填入 Word 資料表](how-to-programmatically-populate-word-tables-with-document-properties.md)
+- [如何：以程式設計方式將文件屬性填入 Word 表格](how-to-programmatically-populate-word-tables-with-document-properties.md)

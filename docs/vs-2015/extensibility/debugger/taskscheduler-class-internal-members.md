@@ -12,22 +12,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 427a84b3dcda0471f5ec9d71883a5a8e859bb92d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176692"
 ---
 # <a name="taskscheduler-class---internal-members"></a>TaskScheduler 類別 - 內部成員
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主題描述的內部成員<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>類別可協助您實作自訂的偵錯工具。 如需此類別的一般資訊，請參閱<xref:System.Threading.Tasks.TaskScheduler>參考主題。  
+本主題說明 <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> 可協助您執行自訂偵錯工具之類別的內部成員。 如需此類別的一般資訊，請參閱 <xref:System.Threading.Tasks.TaskScheduler> 參考主題。  
   
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **組件：** mscorlib （在 mscorlib.dll 中)  
+ **元件：** mscorlib.dll) 中的 mscorlib (  
   
- 因為您無法從.NET Framework 來存取這些內部成員，下列語法提供通用中繼語言 (CIL)。  
+ 因為您無法從 .NET Framework 存取這些內部成員，所以會以一般中繼語言 () 的 CIL 來提供下列語法。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,10 +40,10 @@ ms.locfileid: "68176692"
   
 ### <a name="methods"></a>方法  
   
-|名稱|說明|  
+|名稱|描述|  
 |----------|-----------------|  
-|[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|擷取所有排定工作的陣列。|  
-|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|擷取的所有陣列<xref:System.Threading.Tasks.TaskScheduler>目前使用中的物件。|  
+|[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|捕獲所有排程工作的陣列。|  
+|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|抓取目前作用中之所有物件的陣列 <xref:System.Threading.Tasks.TaskScheduler> 。|  
   
 ## <a name="remarks"></a>備註  
   

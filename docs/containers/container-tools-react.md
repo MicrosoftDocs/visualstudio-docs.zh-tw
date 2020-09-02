@@ -7,10 +7,10 @@ ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
 ms.openlocfilehash: 321d85537f210d17414be115b8f6b3f8b8d5b3c9
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249199"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>快速入門：在 Visual Studio 中搭配使用 Docker 與回應單一頁面應用程式
@@ -22,22 +22,22 @@ ms.locfileid: "88249199"
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * 已安裝 [網頁程式開發]****、[Azure Tools]**** 工作負載及/或 [.NET Core 跨平台開發]**** 工作負載的 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
-* 發佈至 Azure Container Registry (Azure 訂用帳戶)。 [註冊免費試用版](https://azure.microsoft.com/offers/ms-azr-0044p/)。
+* 發佈至 Azure Container Registry (Azure 訂用帳戶)。 [註冊以免費試用](https://azure.microsoft.com/offers/ms-azr-0044p/)。
 * [Node.js](https://nodejs.org/en/download/)
-* 針對 Windows 容器，Windows 10 1903 版或更新版本，以使用本文所參考的 Docker 映射。
+* 針對 Windows 容器（Windows 10 1903 版或更新版本），以使用本文中所參考的 Docker 映射。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * 已安裝**網頁程式開發**、**Azure Tools** 工作負載及(或) **.NET Core 跨平台開發** 工作負載的 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 * 適用於 .NET Core 2.2 開發的 [.NET Core 2.2 開發工具](https://dotnet.microsoft.com/download/dotnet-core/2.2)
-* 發佈至 Azure Container Registry (Azure 訂用帳戶)。 [註冊免費試用版](https://azure.microsoft.com/offers/ms-azr-0044p/)。
+* 發佈至 Azure Container Registry (Azure 訂用帳戶)。 [註冊以免費試用](https://azure.microsoft.com/offers/ms-azr-0044p/)。
 * [Node.js](https://nodejs.org/en/download/)
-* 針對 Windows 容器，Windows 10 1903 版或更新版本，以使用本文所參考的 Docker 映射。
+* 針對 Windows 容器（Windows 10 1903 版或更新版本），以使用本文中所參考的 Docker 映射。
 ::: moniker-end
 
 ## <a name="installation-and-setup"></a>安裝與設定
 
-針對 Docker 安裝，請先參閱適用于 [Windows 的 Docker Desktop 中的資訊：安裝之前的須知](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install)事項。 接下來，安裝 [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)。
+若要安裝 Docker，請先參閱 [Docker Desktop For Windows 的資訊：安裝之前的須知](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install)事項。 接下來，安裝 [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)。
 
 ## <a name="create-a-project-and-add-docker-support"></a>建立專案並新增 Docker 支援
 
@@ -51,7 +51,7 @@ ms.locfileid: "88249199"
 
    ![新增 Docker 支援](media/container-tools-react/vs2017/add-docker-support.png)
 
-1. 選取 [容器類型]，然後按一下 **[確定]**。
+1. 選取容器類型，然後按一下 **[確定]**。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. 使用 **ASP.NET Core Web 應用程式**範本建立新專案。
@@ -70,9 +70,9 @@ ms.locfileid: "88249199"
 
 ## <a name="modify-the-dockerfile-linux-containers"></a>修改 Dockerfile (Linux 容器) 
 
-*Dockerfile* 是用於建立最終 Docker 映像的配方，會在專案中建立。 請參閱 [Dockerfile 參考](https://docs.docker.com/engine/reference/builder/) 以瞭解其內的命令。
+*Dockerfile* 是用於建立最終 Docker 映像的配方，會在專案中建立。 請參閱 [Dockerfile 參考](https://docs.docker.com/engine/reference/builder/) ，以瞭解其內的命令。
 
-在專案中開啟 *Dockerfile*，並新增下列程式碼行，在容器中安裝 Node.js 10.x。 請務必在第一節中新增這些行，以將節點套件管理員 *npm.exe* 的安裝新增至基底映射，以及 `build` 區段中。
+在專案中開啟 *Dockerfile*，並新增下列程式碼行，在容器中安裝 Node.js 10.x。 請務必在第一節中新增這些行，以便將節點套件管理員 *npm.exe* 安裝新增至基礎映射，以及 `build` 一節中。
 
 ```Dockerfile
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
@@ -114,13 +114,13 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
 
 ## <a name="modify-the-dockerfile-windows-containers"></a>修改 Dockerfile (Windows 容器) 
 
-按兩下專案節點來開啟專案檔，然後將下列屬性新增為專案的子系，以更新 ( * .csproj) 的專案檔案 `<PropertyGroup>` ：
+按兩下專案節點以開啟專案檔，然後將下列屬性新增為專案的子系，以更新專案檔 ( * .csproj) `<PropertyGroup>` ：
 
    ```xml
     <DockerfileFastModeStage>base</DockerfileFastModeStage>
    ```
 
-新增下列幾行以更新 Dockerfile。 這會將 node 和 npm 複製到容器。
+藉由新增下列幾行來更新 Dockerfile。 這會將節點和 npm 複製到容器。
 
    1. 新增 ``# escape=` `` 至 Dockerfile 的第一行
    1. 在之前新增下列幾行 `FROM … base`
@@ -133,13 +133,13 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
       ```
 
-   1. 在之前和之後加入下列程式程式碼 `FROM … build`
+   1. 在前面和之後加入下行 `FROM … build`
 
       ```Dockerfile
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       ```
 
-   1. 完整的 Dockerfile 現在看起來應該像這樣：
+   1. 完成的 Dockerfile 現在看起來應該像這樣：
 
       ```Dockerfile
       # escape=`
@@ -177,11 +177,11 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       ```
 
-   1. 藉由移除來更新 .dockerignore `**/bin` 檔案。
+   1. 藉由移除來更新 >.dockerignore `**/bin` 檔案。
 
 ## <a name="debug"></a>偵錯
 
-從工具列的偵錯下拉式清單中選取 [Docker]****，然後開始對應用程式進行偵錯。 您可能會看到提示信任憑證的訊息，請選擇信任憑證以繼續進行。  當您第一次建立時，docker 會下載基底映射，因此可能需要更長的時間。
+從工具列的偵錯下拉式清單中選取 [Docker]****，然後開始對應用程式進行偵錯。 您可能會看到提示信任憑證的訊息，請選擇信任憑證以繼續進行。  當您第一次建立時，docker 會下載基礎映射，因此可能需要更長的時間。
 
 [輸出]**** 視窗中的 [容器工具]**** 選項會顯示要採取哪些動作。 您應該會看到與 *npm.exe* 相關聯的安裝步驟。
 
@@ -228,7 +228,7 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
 
     | 設定      | 建議的值  | 描述                                |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **DNS 首碼** | 全域唯一名稱 | 用以唯一識別容器登錄的名稱。 |
+    | **DNS 首碼** | 全域唯一的名稱 | 用以唯一識別容器登錄的名稱。 |
     | **訂用帳戶** | 選擇您的訂用帳戶 | 要使用的 Azure 訂用帳戶。 |
     | **[資源群組](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  要在其中建立容器登錄的資源群組名稱。 選擇 [新增]**** 以建立新的資源群組。|
     | **[SKU](/azure/container-registry/container-registry-skus)** | 標準 | 容器登錄的服務層  |
@@ -236,7 +236,7 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
 
     ![Visual Studio 的 [建立 Azure Container Registry] 對話方塊][0]
 
-1. 按一下 [建立]。
+1. 按一下 [建立]  。
 
    ![顯示成功發佈的螢幕擷取畫面](media/container-tools/publish-succeeded.png)
 

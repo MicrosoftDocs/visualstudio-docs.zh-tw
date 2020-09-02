@@ -1,5 +1,5 @@
 ---
-title: HOW TO：管理 ClickOnce 應用程式的更新 |Microsoft Docs
+title: 如何：管理 ClickOnce 應用程式的更新 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -21,97 +21,97 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0754d816104832f92a0be8d754046d1ee18e7a09
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697642"
 ---
-# <a name="how-to-manage-updates-for-a-clickonce-application"></a>作法：管理 ClickOnce 應用程式的更新
+# <a name="how-to-manage-updates-for-a-clickonce-application"></a>如何：管理 ClickOnce 應用程式中的更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式可以自動或以程式設計方式檢查更新。 身為開發人員，您會有更多的彈性，指定何時和如何執行更新檢查、 更新是否為必要項目，以及應用程式應該檢查更新。  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式可以自動或以程式設計方式檢查更新。 作為開發人員，您有許多彈性可指定執行更新檢查的時間和方式、是否需要更新，以及應用程式應該檢查更新的位置。  
   
- 您可以設定應用程式的應用程式啟動後檢查更新會自動在應用程式啟動之前，或設定的間隔。 此外，您也可以指定最小必要的版本;也就是說，如果使用者的版本低於所需的版本，已安裝更新。  
+ 您可以將應用程式設定為在應用程式啟動之前，或在應用程式啟動後的設定間隔，自動檢查更新。 此外，您還可以指定最小必要版本;也就是說，如果使用者的版本低於所需的版本，就會安裝更新。  
   
- 您可以設定要檢查更新，例如使用者要求事件以程式設計方式為基礎的應用程式。 「 若要以程式設計方式檢查更新 」 的程序在本主題中會顯示如何撰寫使用程式碼<xref:System.Deployment.Application.ApplicationDeployment>事件為基礎來檢查是否有更新的類別。  
+ 您可以設定應用程式以程式設計的方式，根據使用者要求之類的事件來檢查更新。 本主題中的「若要以程式設計方式檢查更新」程式將示範如何撰寫程式碼， <xref:System.Deployment.Application.ApplicationDeployment> 以使用類別根據事件來檢查更新。  
   
- 您也可以部署您的應用程式，從一個位置，然後從另一個更新。 請參閱 「 若要指定不同的更新位置。 」 的程序  
+ 您也可以從某個位置部署應用程式，並從另一個位置進行更新。 請參閱「指定不同的更新位置」程式。  
   
  如需詳細資訊，請參閱[選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。  
   
- 在中管理更新行為**應用程式更新** 對話方塊中，可從**發佈**頁面**專案設計工具。**  
+ 更新行為是在 [**應用程式更新**] 對話方塊中管理的，可從 [**專案設計**工具] 的 [**發行**] 頁面取得。  
   
-### <a name="to-check-for-updates-before-the-application-starts"></a>應用程式啟動前，檢查有更新  
+### <a name="to-check-for-updates-before-the-application-starts"></a>在應用程式啟動之前檢查更新  
   
-1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
+1. 在方案總管 **** 中選取專案之後，按一下 [專案] **** 功能表中 [屬性] ****。  
   
-2. 按一下 [發佈] 索引標籤。  
+2. 按一下 [Publish (發行)] **** 索引標籤。  
   
-3. 按一下 **更新** 按鈕以開啟**應用程式更新** 對話方塊。  
+3. 按一下 [ **更新** ] 按鈕以開啟 [ **應用程式更新** ] 對話方塊。  
   
-4. 在 **應用程式更新**對話方塊方塊中，請確定**應用程式應該檢查更新**選取核取方塊。  
+4. 在 [ **應用程式更新** ] 對話方塊中，確認已選取 [ **應用程式應該檢查更新** ] 核取方塊。  
   
-5. 在 **選擇此應用程式應該檢查更新**區段中，選取**應用程式啟動之前**。 這可確保一律連線到網路的使用者執行應用程式，使用最新的更新。  
+5. 在 [ **選擇應用程式應該在何時檢查更新** ] 區段中，選取 **[應用程式啟動前**]。 這可確保連線到網路的使用者一律會以最新的更新執行應用程式。  
   
 ### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>在應用程式啟動之後，於背景檢查更新  
   
-1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
+1. 在方案總管 **** 中選取專案之後，按一下 [專案] **** 功能表中 [屬性] ****。  
   
-2. 按一下 [發佈] 索引標籤。  
+2. 按一下 [Publish (發行)] **** 索引標籤。  
   
-3. 按一下 **更新** 按鈕以開啟**應用程式更新** 對話方塊。  
+3. 按一下 [ **更新** ] 按鈕以開啟 [ **應用程式更新** ] 對話方塊。  
   
-4. 在 **應用程式更新**對話方塊方塊中，請確定核取方塊**應用程式應該檢查更新**已選取。  
+4. 在 [ **應用程式更新** ] 對話方塊中，確認已選取 [ **應用程式應該檢查更新** ] 核取方塊。  
   
-5. 在 **選擇應用程式應該於何時檢查更新 」 一節**，選取**應用程式啟動後**。 應用程式會啟動更快速地如此一來，，然後它會檢查更新，在背景中，並有可用的更新時才會通知使用者。 安裝之後，更新不會影響應用程式重新啟動之前。  
+5. 在 [ **選擇應用程式應該在何時檢查更新] 區段**中，選取 **[應用程式啟動後**]。 應用程式的啟動速度會更快，然後它會在背景檢查更新，並且只在有可用更新時通知使用者。 安裝之後，在應用程式重新開機之前，更新將不會生效。  
   
-6. 在 **指定應用程式應該要檢查更新的頻率**區段中，選取**每次應用程式執行時檢查**（預設值） 或**檢查每個**然後輸入數字和時間間隔。  
+6. 在 [ **指定應用程式應該檢查更新的頻率** ] 區段中，選取 **[每次執行應用程式時都檢查** ] (預設) 或 **勾選 [每** 一次]，然後輸入數位和時間間隔。  
   
-### <a name="to-specify-a-minimum-required-version-for-the-application"></a>若要指定應用程式的最小必要的版本  
+### <a name="to-specify-a-minimum-required-version-for-the-application"></a>若要指定應用程式的最低必要版本  
   
-1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
+1. 在方案總管 **** 中選取專案之後，按一下 [專案] **** 功能表中 [屬性] ****。  
   
-2. 按一下 [發佈] 索引標籤。  
+2. 按一下 [Publish (發行)] **** 索引標籤。  
   
-3. 按一下 **更新** 按鈕以開啟**應用程式更新** 對話方塊。  
+3. 按一下 [ **更新** ] 按鈕以開啟 [ **應用程式更新** ] 對話方塊。  
   
-4. 在 **應用程式更新**對話方塊方塊中，請確定**應用程式應該檢查更新**選取核取方塊。  
+4. 在 [ **應用程式更新** ] 對話方塊中，確認已選取 [ **應用程式應該檢查更新** ] 核取方塊。  
   
-5. 選取 **指定此應用程式的最小必要的版本**核取方塊，，然後輸入**主要**，**次要**，**建置**，以及**修訂**應用程式的數字。  
+5. 選取 [ **指定此應用程式的最小必要版本** ] 核取方塊，然後輸入應用程式的 **主要**、 **次要**、 **組建**和 **修訂** 編號。  
   
 ### <a name="to-specify-a-different-update-location"></a>若要指定不同的更新位置  
   
-1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
+1. 在方案總管 **** 中選取專案之後，按一下 [專案] **** 功能表中 [屬性] ****。  
   
-2. 按一下 [發佈] 索引標籤。  
+2. 按一下 [Publish (發行)] **** 索引標籤。  
   
-3. 按一下 **更新** 按鈕以開啟**應用程式更新** 對話方塊。  
+3. 按一下 [ **更新** ] 按鈕以開啟 [ **應用程式更新** ] 對話方塊。  
   
-4. 在 **應用程式更新**對話方塊方塊中，請確定**應用程式應該檢查更新**選取核取方塊。  
+4. 在 [ **應用程式更新** ] 對話方塊中，確認已選取 [ **應用程式應該檢查更新** ] 核取方塊。  
   
-5. 在 **更新位置**欄位中，輸入完整的 URL，並使用格式的更新位置 http://Hostname/ApplicationName，或 UNC 路徑，使用格式\\\Server\ApplicationName 或按一下 **瀏覽**按鈕來瀏覽的更新位置。  
+5. 在 [ **更新位置** ] 欄位中，輸入具有完整 URL 的更新位置、使用格式 http://Hostname/ApplicationName 或使用 \SERVER\APPLICATIONNAME 格式的 UNC 路徑， \\ 或按一下 [ **流覽]** 按鈕以流覽更新位置。  
   
-### <a name="to-check-for-updates-programmatically"></a>若要以程式設計方式檢查更新  
+### <a name="to-check-for-updates-programmatically"></a>以程式設計方式檢查更新  
   
-1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
+1. 在方案總管 **** 中選取專案之後，按一下 [專案] **** 功能表中 [屬性] ****。  
   
-2. 按一下 [發佈] 索引標籤。  
+2. 按一下 [Publish (發行)] **** 索引標籤。  
   
-3. 按一下 **更新** 按鈕以開啟**應用程式更新** 對話方塊。  
+3. 按一下 [ **更新** ] 按鈕以開啟 [ **應用程式更新** ] 對話方塊。  
   
-4. 在 **應用程式更新**對話方塊方塊中，請確定**應用程式應該檢查更新檔**核取方塊。 （或者，您可以選取此核取方塊，以檢查有更新，以程式設計的方式，也讓 ClickOnce 執行階段自動檢查更新。）  
+4. 在 [ **應用程式更新** ] 對話方塊中，確認已清除 [ **應用程式應該檢查更新** ] 核取方塊。  (選擇性地，您可以選取此核取方塊，以程式設計方式檢查更新，並讓 ClickOnce 執行時間自動檢查是否有更新。 )   
   
-5. 在 **更新位置**欄位中，輸入完整的 URL，並使用格式的更新位置 http://Hostname/ApplicationName，或 UNC 路徑，使用格式\\\Server\ApplicationName 或按一下 **瀏覽**按鈕來瀏覽的更新位置。 更新位置就是應用程式將在其中尋找本身的更新版本。  
+5. 在 [ **更新位置** ] 欄位中，輸入具有完整 URL 的更新位置、使用格式 http://Hostname/ApplicationName 或使用 \SERVER\APPLICATIONNAME 格式的 UNC 路徑， \\ 或按一下 [ **流覽]** 按鈕以流覽更新位置。 更新位置是應用程式將在其中尋找其本身更新版本的位置。  
   
-6. 使用者會選取檢查更新的 Windows Form 上建立按鈕、 功能表項目或其他使用者介面項目。 從該項目的事件處理常式，呼叫方法來檢查並安裝更新。 您可以找到範例的 Visual Basic 和 VisualC#中的這類方法的程式碼[如何：檢查以程式設計方式使用 ClickOnce 部署 API 的應用程式更新](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)。  
+6. 在 Windows Form 上建立按鈕、功能表項目或其他使用者介面專案，使用者會選取此專案來檢查是否有更新。 從該專案的事件處理常式中，呼叫方法以檢查並安裝更新。 您可以在 how [to：使用 ClickOnce 部署 API 以程式設計方式檢查應用程式更新](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)中，找到這類方法的 Visual Basic 和 Visual c # 程式碼範例。  
   
-7. 建置您的應用程式。  
+7. 建立您的應用程式。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:System.Deployment.Application.ApplicationDeployment>   
- [應用程式 [更新] 對話方塊](https://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
+ [[應用程式更新] 對話方塊](https://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
  [選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)   
- [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
- [如何：發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [如何：使用 ClickOnce 部署 API 以程式檢查應用程式更新](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)
+ [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
+ [如何：使用發佈嚮導發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [如何：使用 ClickOnce 部署 API 以程式設計方式檢查應用程式更新](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

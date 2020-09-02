@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 10a849d8545565e450cd099b32a9e3e8f7f11b56
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537900"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>如何：以程式設計方式開啟活頁簿
@@ -25,7 +25,7 @@ ms.locfileid: "85537900"
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="to-open-an-existing-workbook"></a>若要開啟現有的活頁簿
+## <a name="to-open-an-existing-workbook"></a>開啟現有的活頁簿
 
 1. 使用 <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> 集合的方法 <xref:Microsoft.Office.Interop.Excel.Workbooks> ，並傳入活頁簿的路徑。
 
@@ -35,7 +35,7 @@ ms.locfileid: "85537900"
 ## <a name="compile-the-code"></a>編譯程式碼
  這段程式碼範例需要下列項目：
 
-- 名為的活頁簿 `YourWorkbook.xls` 必須存在於 `Test` 磁片磁碟機 C 上名為的目錄中。
+- 名為的活頁簿 `YourWorkbook.xls` 必須存在於 `Test` 磁片磁碟機 C 上的目錄中。
 
 ## <a name="see-also"></a>另請參閱
 - [使用活頁簿](../vsto/working-with-workbooks.md)

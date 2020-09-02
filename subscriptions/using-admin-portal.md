@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: overview
 description: 了解如何開始使用訂閱系統管理入口網站管理組織的 Visual Studio 訂閱。
 ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249861"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio 訂閱系統管理員入口網站的總覽
@@ -28,7 +28,7 @@ Visual Studio 訂閱管理入口網站可讓您使用工具，在單一位置管
 - **請勿讓訂閱者彼此共用訂用帳戶。** 訂閱必須指派給具名的個人。  不允許將訂閱指派給小組。  您必須將訂用帳戶指派給使用全部或部分訂用帳戶權益的任一人 (供開發和測試用的軟體、Microsoft Azure、E-learning 等等)。
 
 ## <a name="the-subscribers-page"></a>訂閱者頁面
-指派訂閱之後，[管理訂閱者] 索引標籤會提供有關訂閱者的詳細資訊，包括：
+指派訂閱之後，[管理訂閱者] 索引標籤會提供訂閱者的詳細資訊，包括：
 - 每位訂閱者的姓名。
 - 此使用者的電子郵件地址。
 - 已指派給他們的訂用帳戶層級。
@@ -40,14 +40,14 @@ Visual Studio 訂閱管理入口網站可讓您使用工具，在單一位置管
 - 他們在管理入口網站指派通訊電子郵件的語言設定。
 - 選擇性欄位，用於登入通訊以外的其他電子郵件地址。
 
-在頁面的左上方，有數個圖示可供您選擇以顯示訂用帳戶指派總覽、合約詳細資料和使用量上限報表。
+在頁面的左上方有幾個圖示可供您選擇，以顯示訂用帳戶指派總覽、合約詳細資料和使用量上限報表。
 
-若要查看您組織中針對每個合約購買、指派和仍然可用之訂用帳戶授權數目的其他資訊，請選取上方圖示以啟用滑出面板。
+若要查看針對每份合約購買、指派和仍可在組織中使用的訂用帳戶授權數目的其他相關資訊，請選取上方圖示來啟用滑出面板。
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 訂用帳戶管理入口網站訂閱者頁面](_img/using-admin-portal/subscribers-page.png)
 
 ## <a name="the-details-page"></a>詳細資料頁面
-如需您所要查看之合約的詳細資訊，請選取第二個圖示以查看 [合約詳細資料] 索引標籤。[滑出] 面板會顯示合約狀態、購買帳戶、組織詳細資料、超級管理員和其他相關資訊。
+如需您所看到之合約的詳細資訊，請選取第二個圖示，以查看 [合約詳細資料] 索引標籤。[滑出] 面板會顯示合約狀態、購買帳戶、組織詳細資料、超級管理員和其他相關資訊。
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 訂用帳戶管理入口網站詳細資料頁面](_img/using-admin-portal/details-page.png)
 

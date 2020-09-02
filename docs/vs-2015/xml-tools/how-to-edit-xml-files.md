@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c099839cda87819ec0ec7932c2b2e6aa7698fa52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670876"
 ---
 # <a name="how-to-edit-xml-files"></a>HOW TO：編輯 XML 檔案
@@ -30,43 +30,43 @@ XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或�
 
 ### <a name="to-add-a-new-xml-file-to-a-project"></a>將新的 XML 檔案加入至專案
 
-1. 從 [**專案**] 功能表中，選取 [**加入新專案**]。
+1. 從 [ **專案** ] 功能表選取 [ **加入新專案**]。
 
 2. 從 [**範本**] 窗格中選取 [ **XML**檔案]。
 
-3. 在 [**名稱**] 欄位中輸入檔案名，然後按 [**新增**]。
+3. 在 [ **名稱** ] 欄位中輸入檔案名，然後按 [ **新增**]。
 
      將 XML 檔案加入至專案，並在 XML 編輯器中開啟它。 檔案包含預設的 XML 宣告，`<?xml version="1.0" encoding="utf-8" ?>`。
 
 ### <a name="to-add-an-existing-xml-file-to-a-project"></a>將現有 XML 檔案加入至專案
 
-1. 從 [**專案**] 功能表中，選取 [**加入現有專案**]。
+1. 從 [專案]**** 功能表上，選取 [新增現有項目]****。
 
-     [**加入現有專案**] 對話方塊隨即出現。
+     [ **加入現有專案** ] 對話方塊隨即出現。
 
-2. 選取 XML 檔案，然後按 [**新增**]。
+2. 選取 XML 檔案，然後按 [ **新增**]。
 
 ### <a name="to-create-a-new-xml-or-xslt-file"></a>建立新的 XML 或 XSLT 檔
 
-1. 從 [**檔案**] 功能表中，選取 [**新增**]。
+1. 從 [ **檔案** ] 功能表選取 [ **新增**]。
 
-     [**新增**檔案] 對話方塊隨即出現。
+     [ **新增檔案** ] 對話方塊隨即出現。
 
-2. 選取 [ **xml**檔案] 以建立新的 xml 檔案;或者，選取 [ **xslt**檔案] 以建立新的 xslt 樣式表單。
+2. 選取 **xml** 檔案以建立新的 xml 檔案;或者，選取 [ **xslt** 檔] 以建立新的 xslt 樣式表單。
 
 3. 按一下 [開啟]。
 
 ### <a name="to-create-a-project-for-xml-files"></a>建立 XML 檔案的專案
 
-1. 從 [**檔案**] 功能表中，選取 [**新增**]，然後選取 [**專案**]。
+1. 在 [檔案]**** 功能表上選取 [新增]****，然後選取 [專案]****。
 
-     [ **新增專案** ] 對話方塊隨即出現。
+     [新增專案]  對話方塊隨即出現。
 
-2. 選取您選擇的程式碼語言，選取 [**空白專案**]，然後按一下 **[確定]** 。
+2. 選取您選擇的程式碼語言，選取 [ **空白專案**]，然後按一下 **[確定]**。
 
 3. 將 XML 檔案加入至專案。
 
      XML 編輯器會找到加入至此專案的結構描述，並在此專案開啟時編輯的任何 XML、結構描述或 XSLT 檔案中使用它們進行驗證及 IntelliSense。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [Xml 編輯器](../xml-tools/xml-editor.md) [xml 文件屬性，屬性視窗](../xml-tools/xml-document-properties-properties-window.md)[如何：從 xml 檔建立 xml 架構](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

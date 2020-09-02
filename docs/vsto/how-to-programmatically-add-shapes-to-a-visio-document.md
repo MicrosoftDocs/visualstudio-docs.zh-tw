@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: adde20bff07b54a7fb5777bd9e03a995b4fbd7df
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538056"
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>如何：以程式設計方式將圖形新增至 Visio 檔
@@ -37,7 +37,7 @@ ms.locfileid: "85538056"
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#13)]
 
 ## <a name="see-also"></a>另請參閱
-- [Visio 解決方案](../vsto/visio-solutions.md)
+- [Visio 方案](../vsto/visio-solutions.md)
 - [Visio 物件模型總覽](../vsto/visio-object-model-overview.md)
 - [使用 Visio 圖形](../vsto/working-with-visio-shapes.md)
 - [如何：以程式設計方式在 Visio 檔中複製並貼上圖形](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)

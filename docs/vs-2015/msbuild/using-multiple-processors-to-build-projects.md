@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3a590d3dc3053c5b857917dc358e32a2c7d5247c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192863"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>使用多個處理器來建置專案
@@ -34,7 +34,7 @@ MSBuild 可運用有多個處理器或多核心處理器的系統。 針對每�
  在平行建置中，錯誤和例外狀況可以發生在與它們在非平行建置中不一樣的時間，且當其中一個專案無法建置時，另一個專案會繼續建置。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 不會停止與失敗的專案平行建置的任何專案建置。 其他專案仍會繼續建置，直到它們成功或失敗為止。 不過，如果已啟用 <xref:Microsoft.Build.Framework.IBuildEngine.ContinueOnError%2A>，則即使發生錯誤，還是不會停止任何建置。  
   
 ## <a name="visual-c-project-vcproj-and-solution-sln-files"></a>Visual C++ 專案 (.vcproj) 和方案 (.sln) 檔  
- [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 專案 (.vcproj) 和方案 (.sln) 檔兩者可以傳遞至 [MSBuild 工作](../msbuild/msbuild-task.md)。 針對 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 專案，會呼叫 VCWrapperProject，並接著建立內部 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案。 針對 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 方案，會建立 SolutionWrapperProject，並接著建立內部 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案。 在這兩種情況下，產生的專案會視為與任何其他 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案相同。  
+ 這兩個 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 專案 ( vcproj) 和方案 ( .sln) 檔案都可以傳遞給 [MSBuild](../msbuild/msbuild-task.md)工作。 針對 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 專案，會呼叫 VCWrapperProject，並接著建立內部 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案。 針對 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 方案，會建立 SolutionWrapperProject，並接著建立內部 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案。 在這兩種情況下，產生的專案會視為與任何其他 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案相同。  
   
 ## <a name="multi-process-execution"></a>多處理序執行  
  幾乎所有建置相關活動都需要目前的目錄在整個建置流程期間維持一致，以避免路徑相關錯誤。 因此，專案無法在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 中不同的執行緒上執行，因為它們可能會導致建立多個目錄。  
@@ -42,5 +42,5 @@ MSBuild 可運用有多個處理器或多核心處理器的系統。 針對每�
  若要避免此問題，但仍啟用多處理器建置，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會使用「處理序隔離」。 透過使用處理序隔離，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 可以建立最多 `n` 個處理序，其中 `n` 等於系統上可用的處理器數目。 例如，如果 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 在具備兩個處理器的系統上建置方案，則只會建立兩個建置流程。 這些處理序會重複使用來建置方案中的所有專案。  
   
 ## <a name="see-also"></a>另請參閱  
- [以平行方式建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)   
+ [平行建立多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)   
  [工作](../msbuild/msbuild-tasks.md)

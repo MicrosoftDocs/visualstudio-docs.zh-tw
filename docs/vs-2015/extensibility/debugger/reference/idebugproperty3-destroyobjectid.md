@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::DestroyObjectID |Microsoft Docs
+title: IDebugProperty3：:D estroyObjectID |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3a610cd5c947d77048e86b31c92298f6cc18607d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193430"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-終結與這個屬性相關聯，指出呼叫端不會再想要找出此屬性唯一從所有其他屬性的唯一識別碼。  
+終結與這個屬性相關聯的唯一識別碼，表示呼叫端不再在意從所有其他屬性唯一識別此屬性。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,12 +37,12 @@ int DestroyObjectID();
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 如果偵錯引擎不需要支援屬性的唯一識別碼 （因為它已經追蹤這些唯一內部），則可以只傳回`E_NOTIMPL`這個方法。  
+ 如果 debug engine 不需要支援屬性 (的唯一識別碼，因為它已經在) 內部追蹤它們，所以它可以直接 `E_NOTIMPL` 針對此方法傳回。  
   
- 藉由呼叫會建立唯一的識別碼[CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)方法，當呼叫端想要確定此屬性會唯一識別以及所有其他屬性。  
+ 當呼叫端想要確保在所有其他屬性中唯一識別這個屬性時，會使用 [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) 方法的呼叫來建立唯一識別碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   

@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cf05d60499da0317461d03d05579dce6124385f7
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465528"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
-假設有對應的標記值，這個方法會傳回指定的相對虛擬位址上，包含在指定之父加速器 stub 函數中的符號列舉。
+如果有對應的標記值，這個方法會傳回在指定的相對虛擬位址之指定的父加速器存根函式中所包含的符號列舉。
 
 ## <a name="syntax"></a>語法
 
@@ -34,7 +34,7 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag ( 
 #### <a name="parameters"></a>參數
  `parent`
 
-在`IDiaSymbol`，對應至要搜尋的快速鍵 stub 函數。
+在 `IDiaSymbol` ，對應至要搜尋的快速鍵對應函式。
 
  `tagValue`
 
@@ -46,13 +46,13 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag ( 
 
  `ppResult`
 
-脫銷以 `IDiaEnumSymbols` 結果初始化之介面指標的指標。
+擴展以 `IDiaEnumSymbols` 結果初始化之介面指標的指標。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 只在 `IDiaSymbol` 對應至快速鍵 stub 函式的介面上呼叫這個方法。
+ 請只在 `IDiaSymbol` 對應至加速器存根函式的介面上呼叫這個方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

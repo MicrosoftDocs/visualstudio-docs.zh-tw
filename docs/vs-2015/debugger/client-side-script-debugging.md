@@ -1,5 +1,5 @@
 ---
-title: 用戶端指令碼偵錯 |Microsoft Docs
+title: 用戶端腳本調試 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6405a35068b7be7ac93eb91f4d9100e6a840b0bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702385"
 ---
 # <a name="client-side-script-debugging"></a>用戶端指令碼偵錯
@@ -30,7 +30,7 @@ ms.locfileid: "65702385"
 Visual Studio 偵錯工具提供完整的偵錯環境，以找出並修正 ASP.NET 頁面中用戶端指令碼的錯誤。  
   
 ## <a name="opening-script-documents"></a>開啟指令碼文件  
- 您可以在 [方案總管]  查看伺服器端與用戶端指令碼文件清單並加以檢視。 您可以從 [ **方案總管**] 開啟任何指令碼文件。 如需詳細資訊，請參閱[如何：檢視指令碼文件](../debugger/how-to-view-script-documents.md)。  
+ 您可以在 [方案總管] **** 查看伺服器端與用戶端指令碼文件清單並加以檢視。 您可以從 [ **方案總管**] 開啟任何指令碼文件。 如需詳細資訊，請參閱 [How to: View Script Documents](../debugger/how-to-view-script-documents.md)。  
   
 ## <a name="breakpoint-mapping"></a>中斷點對應  
  在 Visual Studio 中，您無法直接對伺服器端程式碼進行偵錯，但是可以在伺服器端檔案內設定中斷點。 Visual Studio 會自動將中斷點對應至用戶端檔案內對應的位置，並且在用戶端程式碼中建立對應的中斷點。  
@@ -38,7 +38,7 @@ Visual Studio 偵錯工具提供完整的偵錯環境，以找出並修正 ASP.N
 ## <a name="manually-or-automatically-attaching-to-script"></a>手動或自動附加至指令碼  
  若要開始在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]內偵錯指令碼，您必須將偵錯工具附加至要偵錯的指令碼。 這可以手動執行，也可以自動發生。  
   
- 您可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 偵錯工具介面選擇要附加之執行中指令碼處理序，以手動方式附加至指令碼。 如需詳細資訊，請參閱[如何：附加至指令碼](../debugger/how-to-attach-to-script.md)。  
+ 您可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 偵錯工具介面選擇要附加之執行中指令碼處理序，以手動方式附加至指令碼。 如需詳細資訊，請參閱 [How to: Attach to Script](../debugger/how-to-attach-to-script.md)。  
   
  偵錯工具會在發生下列其中一種情況時，自動附加至指令碼：  
   
@@ -60,11 +60,11 @@ Visual Studio 偵錯工具提供完整的偵錯環境，以找出並修正 ASP.N
 ## <a name="debugging-ajax-script-applications"></a>偵錯 AJAX 指令碼應用程式  
  啟用 AJAX 功能的 Web 應用程式會使用大量指令碼，在偵錯時特別困難。 如需 AJAX 偵錯技術的詳細資訊，請參閱  
   
- [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375) 開啟任何指令碼文件。  
+ [偵錯工具和追蹤 Ajax 應用程式的總覽](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)。  
   
 ## <a name="see-also"></a>另請參閱  
- [對 ASP.NET 和 AJAX 應用程式進行偵錯](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [指令碼偵錯的限制](../debugger/limitations-on-script-debugging.md)   
+ [ASP.NET 和 AJAX 應用程式的偵錯工具](../debugger/debugging-aspnet-and-ajax-applications.md)   
+ [腳本調試的限制](../debugger/limitations-on-script-debugging.md)   
  [變數視窗](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [即時運算視窗](../ide/reference/immediate-window.md)   
- [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Debugging and Tracing AJAX Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

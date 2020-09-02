@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f6449ad30edf11d3d315532cc33db2a79c14f90b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778527"
 ---
 # <a name="modules-view---instrumentation-data"></a>模組檢視 - 檢測資料
@@ -29,11 +29,11 @@ ms.locfileid: "74778527"
 |**名稱**|函式或模組的名稱。|
 |**函式行號**|原始程式檔中這個函式的開頭行號。|
 |**呼叫次數**|呼叫此函式或模組的總次數。|
-|**原始檔案**|含有這個函式定義的原始程式檔。|
+|**來源檔案**|含有這個函式定義的原始程式檔。|
 |**模組名稱**|包含該函式的模組名稱。|
 |**模組路徑**|包含該函式的模組路徑。|
 |**處理序識別碼**|分析執行的處理序 ID (PID)。|
-|**流程名稱**|模組或函式於其中執行的處理序名稱。|
+|**進程名稱**|模組或函式於其中執行的處理序名稱。|
 |**時間專有探查額外負荷**|因檢測造成此函式或模組的時間額外負荷。|
 |**時間內含探查額外負荷**|因檢測造成此函式或模組及其子函式的時間額外負荷。|
 
@@ -83,5 +83,5 @@ ms.locfileid: "74778527"
 
 ## <a name="see-also"></a>另請參閱
 - [模組檢視](../profiling/modules-view-sampling-data.md)
-- [模組視圖 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [模組視圖-檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [模組檢視 - 取樣](../profiling/modules-view-dotnet-memory-sampling-data.md)

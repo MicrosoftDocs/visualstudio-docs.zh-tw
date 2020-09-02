@@ -1,5 +1,5 @@
 ---
-title: Sccget家長專案路徑功能 |微軟文件
+title: SccGetParentProjectPath 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0f258558207f86ff76746d18aa432fe4c5850290
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700709"
 ---
-# <a name="sccgetparentprojectpath-function"></a>SccGet父項目路徑功能
-此函數確定指定專案的父專案路徑。 當使用者向原始程式碼管理添加 Visual Studio 專案時,將調用此功能。
+# <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath 函式
+此函式會判斷指定專案的父專案路徑。 當使用者將 Visual Studio 專案加入至原始檔控制時，會呼叫這個函式。
 
 ## <a name="syntax"></a>語法
 
@@ -38,67 +38,67 @@ SCCRTN SccGetParentProjectPath(
 ### <a name="parameters"></a>參數
  pContext
 
-[在]源代碼管理外掛程式上下文指標。
+在原始檔控制外掛程式內容指標。
 
  hWnd
 
-[在]源控件外掛程式可以用作它提供的任何對話框的父級的IDE視窗句柄。
+在IDE 視窗的控制碼，原始檔控制外掛程式可以使用它做為它所提供之任何對話方塊的父代。
 
  lpUser
 
-[進出]使用者名(最多SCC_USER_SIZE,包括 NULL 終止符)。
+[in，out]使用者名稱最多 (SCC_USER_SIZE，包括 Null 結束字元) 。
 
  lpProjPath
 
-[在]標識專案路徑的字串(最多SCC_PRJPATH_SIZE,包括 NULL 終止字)。
+在識別專案路徑 (的字串，最多可 SCC_PRJPATH_SIZE，包括 Null 結束字元) 。
 
  lpAuxProjPath
 
-[進出]標識項目的輔助字串(最多SCC_PRJPATH_SIZE,包括 NULL 終止字)。
+[in，out]識別專案 (的輔助字串，最多可 SCC_PRJPATH_SIZE，包括 Null 結束字元) 。
 
  lpParentProjPath
 
-[進出]標識父項目路徑的輸出字串(最多SCC_PRJPATH_SIZE,包括 NULL 終止符)。
+[in，out]識別父專案路徑 (的輸出字串，最多可 SCC_PRJPATH_SIZE，包括 Null 結束字元) 。
 
 ## <a name="return-value"></a>傳回值
- 此函數的源碼管理外掛程式實現應返回以下值之一:
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|已成功獲取父項目路徑。|
+|SCC_OK|已成功取得父專案路徑。|
 |SCC_E_INITIALIZEFAILED|無法初始化專案。|
-|SCC_E_INVALIDUSER|使用者無法登錄到原始程式碼管理外掛程式。|
-|SCC_E_UNKNOWNPROJECT|源控制外掛程式未知專案。|
-|SCC_E_INVALIDFILEPATH|無效或無法使用的檔案路徑。|
-|SCC_E_NOTAUTHORIZED|不允許使用者執行此操作。|
-|SCC_E_ACCESSFAILURE|訪問原始程式碼管理系統時出現問題,可能是由於網路或爭用問題。 建議重試。|
-|SCC_E_PROJSYNTAXERR|無效的專案語法。|
-|SCC_E_CONNECTIONFAILURE|存儲連接問題。|
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|非特異性故障。|
+|SCC_E_INVALIDUSER|使用者無法登入原始檔控制外掛程式。|
+|SCC_E_UNKNOWNPROJECT|專案對於原始檔控制外掛程式而言是未知的。|
+|SCC_E_INVALIDFILEPATH|檔案路徑無效或無法使用。|
+|SCC_E_NOTAUTHORIZED|不允許使用者執行這項操作。|
+|SCC_E_ACCESSFAILURE|存取原始檔控制系統時發生問題，可能是因為網路或爭用問題。 建議您重試。|
+|SCC_E_PROJSYNTAXERR|不正確專案語法。|
+|SCC_E_CONNECTIONFAILURE|儲存連接問題。|
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|模糊失敗。|
 
 ## <a name="remarks"></a>備註
- 此函數返回成功或失敗代碼,如果成功,則使用指定專案的完整專案`lpParentProjPath`路徑填充變數。
+ 此函式會傳回成功或失敗的程式碼，如果成功，則會 `lpParentProjPath` 使用指定專案的完整專案路徑來填滿變數。
 
- 此函數返回現有專案的父專案路徑。 對於根專案,函數返回傳入的專案路徑(即相同的根專案路徑)。 請注意,專案路徑是僅對原始程式碼管理外掛程式有意義的字串。
+ 此函數會傳回現有專案的父專案路徑。 針對根專案，函式會傳回在 (中傳遞的專案路徑，也就是相同的根專案路徑) 。 請注意，專案路徑是僅對原始檔控制外掛程式有意義的字串。
 
- IDE 也準備接受對`lpUser``lpAuxProjPath`和參數的更改。 IDE 將保留這些字串,並在使用者將來打開此專案時將它們傳遞給[SccOpenProject。](../extensibility/sccopenproject-function.md) 因此,這些字串為原始程式碼管理外掛程式提供了一種追蹤與專案關聯的資訊的方法。
+ IDE 已準備好接受和參數的變更 `lpUser` `lpAuxProjPath` 。 當使用者在日後開啟此專案時，IDE 會保存這些字串，並將它們傳遞至 [SccOpenProject](../extensibility/sccopenproject-function.md) 。 因此，這些字串可讓原始檔控制外掛程式追蹤與專案相關聯的資訊。
 
- 此功能類似於[SccGetProjPath,](../extensibility/sccgetprojpath-function.md)只不過它不提示用戶選擇專案。 它還永遠不會創建新專案,但只能與現有專案一起工作。
+ 此函式類似于 [SccGetProjPath](../extensibility/sccgetprojpath-function.md)，不同之處在于它不會提示使用者選取專案。 它也永遠不會建立新的專案，但只適用于現有的專案。
 
- 呼叫`SccGetParentProjectPath`時,`lpProjPath``lpAuxProjPath`不會為空,並且將對應於有效的專案。 這些字串通常由IDE從對`SccGetProjPath`函數的上一個調用接收。
+ 當 `SccGetParentProjectPath` 呼叫時， `lpProjPath` 而且 `lpAuxProjPath` 將不會是空的，而且會對應至有效的專案。 IDE 通常會從先前的函式呼叫接收這些字串 `SccGetProjPath` 。
 
- 參數`lpUser`是使用者名。 IDE 將傳遞以前`SccGetProjPath`從函數接收的相同使用者名,原始程式碼管理外掛程式應使用該名稱作為預設值。 如果使用者已與外掛程式建立了打開的連接,則外掛程式應嘗試消除任何提示,以確保該函數靜默工作。 但是,如果登錄失敗,外掛程式應提示使用者登錄,並在收到有效的登錄時,將名稱轉`lpUser`回 。 由於外掛程式可能會更改此字串,因此IDE將始終分配大小緩衝區 (+1)。`SCC_USER_LEN` 如果更改了字串,則新字串必須是有效的登錄名(至少與舊字串一樣有效)。
+ `lpUser`引數是使用者名稱。 IDE 會傳入先前從函式收到的相同使用者名稱 `SccGetProjPath` ，而原始檔控制外掛程式應使用此名稱做為預設值。 如果使用者已經有與外掛程式的開啟連接，則外掛程式應嘗試排除任何提示，以確保函式可無訊息地運作。 但是，如果登入失敗，外掛程式應該會提示使用者輸入登入，並在收到有效的登入時，將名稱傳遞回 `lpUser` 。 由於外掛程式可能會變更這個字串，因此 IDE 一律會配置大小 (`SCC_USER_LEN` + 1) 的緩衝區。 如果字串已變更，則新的字串必須是有效的登入名稱， (至少與舊的字串) 一樣有效。
 
-## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>SccCreate 子專案和 SccGet 父項目路徑的技術說明
- 在 Visual Studio 中,將解決方案和專案添加到原始碼管理中已簡化,以最大程度地減少提示使用者選擇原始程式碼管理系統中位置的次數。 如果原始程式資料管理外掛程式同時支援新功能[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)和`SccGetParentProjectPath`函數,則 Visual Studio 將啟動這些更改。 但是,以下註冊表項可用於禁用這些更改並恢復到以前的 Visual Studio(原始程式碼管理外掛程式 API 版本 1.1)行為:
+## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>SccCreateSubProject 和 SccGetParentProjectPath 的技術注意事項
+ 將方案和專案加入至原始檔控制已經過簡化，Visual Studio 將提示使用者在原始檔控制系統中選取位置的次數降到最低。 如果原始檔控制外掛程式同時支援這兩個新函式、 [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) 和函式，則會 Visual Studio 啟用這些變更 `SccGetParentProjectPath` 。 不過，您可以使用下列登錄專案來停用這些變更，並還原為先前的 Visual Studio (原始檔控制外掛程式 API 1.1 版) 行為：
 
- **[HKEY_CURRENT_USER_軟體\微軟[VisualStudio]8.0\源控制]"不創建解決方案 RootfolderinSourceControl"=dword:0000001**
+ **[HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl]"DoNotCreateSolutionRootFolderInSourceControl" = dword：00000001**
 
- 如果這個註冊表項不存在或設定為 dword:00000000,Visual Studio 將試著`SccCreateSubProject``SccGetParentProjectPath`使用新功能和 。
+ 如果這個登錄專案不存在或設定為 dword：00000000，Visual Studio 會嘗試使用新的函式 `SccCreateSubProject` 和 `SccGetParentProjectPath` 。
 
- 如果註冊表項設置為 dword:00000001,Visual Studio 不會嘗試使用這些新功能,並且添加到原始碼管理的操作將像在 Visual Studio 的早期版本中那樣工作。
+ 如果登錄專案設定為 dword：00000001，Visual Studio 不會嘗試使用這些新的函式，而新增至原始檔控制的作業會像在舊版 Visual Studio 中一樣運作。
 
 ## <a name="see-also"></a>另請參閱
-- [原始程式碼管理外掛程式 API 功能](../extensibility/source-control-plug-in-api-functions.md)
+- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
 - [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

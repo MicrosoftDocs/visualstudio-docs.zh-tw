@@ -1,5 +1,5 @@
 ---
-title: IDebug運算式評估完成事件2::獲取結果 |微軟文件
+title: IDebugExpressionEvaluationCompleteEvent2：： GetResult |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4d3af0affa1c6d98a8209a6a72913f9c2bccf1fd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729576"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
-獲取表達式計算的結果。
+取得運算式評估的結果。
 
 ## <a name="syntax"></a>語法
 
@@ -40,13 +40,13 @@ int GetResult( 
 ```
 
 ## <a name="parameters"></a>參數
-`ppResult`[出]返回表示表達式計算結果的[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件。
+`ppResult` 擴展傳回代表運算式評估結果的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 返回的[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件包含計算表達式的值。 請注意,此值可以是複雜值(如陣列),但最終結果必須是向使用者顯示的數位或字串值。
+ 傳回的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 物件包含已評估之運算式的值。 請注意，這個值可能是複雜值（例如陣列），但最終結果必須是向使用者顯示的數值或字串值。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)
