@@ -1,5 +1,5 @@
 ---
-title: 在平行線程中設定變數的監看式 |Microsoft Docs
+title: 在平行線程中設定監看變數 |Microsoft Docs
 ms.date: 04/25/2017
 ms.topic: how-to
 f1_keywords:
@@ -18,25 +18,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9fb0d5ac60ea5ab89b02a624488b5df4f8a7164b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348622"
 ---
-# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>在 Visual Studio 中的平行線程中設定監看變數（c #、Visual Basic、c + +）
+# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>在 Visual Studio (c #、Visual Basic、c + + 的平行線程中，設定監看式變數) 
 在 [平行監看式] 視窗中，您可以同時在多個執行緒上顯示某個運算式保存的值。 每一列代表應用程式中執行的一個執行緒，不過一個執行緒可能在多列上表示。 更精確的說，每一列代表一個函式呼叫，該函式呼叫的簽章與目前堆疊框架上的函式相符。 您可以將資料行中的項目排序、重新排列、移除和設為群組。 您可以將執行緒加上旗標、取消旗標、凍結 (暫止) 和解除凍結 (繼續)。 下列資料行會在 [平行監看式]**** 視窗中顯示：
 
 - 旗標資料行，您可以在該資料行中標示想要特別注意的執行緒。
 
-- 目前的執行緒資料行，其中黃色箭號表示目前的執行緒（具有大括弧的綠色箭號表示非目前的執行緒具有目前的偵錯工具內容）。
+- 目前的執行緒資料行，其中黃色箭號表示目前的執行緒 (綠色箭號的綠色箭號，表示非目前的執行緒具有目前的偵錯工具內容) 。
 
 - 可以顯示電腦、處理序、Tile、工作和執行緒的可設定資料行。
 
   > [!TIP]
   > 若要在 [**平行監看**式] 視窗中顯示工作資訊，您必須先開啟**工作視窗。**
 
-- 空白的 [*加入監看式]* 資料行，您可以在其中輸入要監看的運算式。
+- 空白的 *[新增監看式]* 資料行，您可以在其中輸入要監看的運算式。
 
   [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -50,19 +50,19 @@ ms.locfileid: "85348622"
 
 ### <a name="to-add-a-watch-expression"></a>若要加入監看運算式
 
-- 選取其中一個空白的 [*加入監看式]* 資料行，然後輸入監看式運算式。
+- 選取其中一個空白的 [ *新增監看式]* 資料行，然後輸入監看式運算式。
 
 ### <a name="to-flag-or-unflag-a-thread"></a>若要將執行緒加上旗標或取消旗標
 
-- 選取資料列的 [旗標] 資料行（第一個資料行），或開啟執行緒的快捷方式功能表，然後選擇 [**旗**標] 或 [取消**標記**]。
+- 選取資料列 (第一個資料行) 的旗標資料行，或開啟執行緒的快捷方式功能表，然後選擇 [ **旗** 標] 或 [取消 **標記**]。
 
 ### <a name="to-display-only-flagged-threads"></a>若只要顯示加上旗標的執行緒
 
-- 在 [**平行監看**式] 視窗的左上角，選擇 [**僅顯示**加上旗標的] 按鈕。
+- 選擇 [**平行監看**式] 視窗左上角的 [**僅顯示**已加上旗標] 按鈕。
 
-### <a name="to-switch-to-another-thread"></a>切換至另一個執行緒
+### <a name="to-switch-to-another-thread"></a>切換到另一個執行緒
 
-- 按兩下 [目前線程] 資料行（第二個數據行）。 (鍵盤：選取資料列並按 Enter)。
+- 按兩下 [目前的執行緒] 資料行 (第二個數據行) 。 (鍵盤：選取資料列並按 Enter)。
 
 ### <a name="to-sort-a-column"></a>若要排序資料行
 

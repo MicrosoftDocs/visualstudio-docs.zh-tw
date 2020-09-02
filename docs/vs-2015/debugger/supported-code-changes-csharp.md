@@ -1,5 +1,5 @@
 ---
-title: 支援程式碼變更 (C#) |Microsoft Docs
+title: " (c # ) 支援的程式碼變更 |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67823543"
 ---
 # <a name="supported-code-changes-c"></a>支援的程式碼變更 (C#)
@@ -34,7 +34,7 @@ ms.locfileid: "67823543"
   
      使用中陳述式包含了在呼叫堆疊的函式中，為了取得目前陳述式而呼叫的任何陳述式。  
   
-     目前的陳述式在來源視窗中會以黃色背景標示。 其他使用中陳述式會以灰色背景標示，而且是唯讀的。 這些預設色彩可以在 [選項]  對話方塊中進行變更。  
+     目前的陳述式在來源視窗中會以黃色背景標示。 其他使用中陳述式會以灰色背景標示，而且是唯讀的。 這些預設色彩可以在 [選項]**** 對話方塊中進行變更。  
   
 - 變更類型的簽章。  
   
@@ -47,7 +47,7 @@ ms.locfileid: "67823543"
 - 在使用中陳述式前後加入 `foreach`、`using` 或 `lock`。  
   
 ## <a name="unsafe-code"></a>Unsafe 程式碼  
- 變更 Unsafe 程式碼的限制與變更 Safe 程式碼的限制相同，但前者多了下列這一項額外限制：編輯後繼續不支援包含的方法內的 unsafe 程式碼變更`stackalloc`運算子。  
+ 變更 Unsafe 程式碼的限制與變更 Safe 程式碼的限制相同，但前者多了下列這一項額外限制：[編輯後繼續] 不支援對包含 `stackalloc` 運算子之方法內的 Unsafe 程式碼進行變更。  
   
 ## <a name="exceptions"></a>例外狀況  
  [編輯後繼續] 支援 `catch` 和 `finally` 區塊的變更，不同之處在於不允許將 `catch` 或 `finally` 區塊加入使用中陳述式前後。  
@@ -59,7 +59,7 @@ ms.locfileid: "67823543"
   
   - 擷取之前尚未擷取的變數。  
 
-  - 變更查詢運算式的型別 (例如，選取 a = > 選取 新增 {A =};)  
+  - 變更查詢運算式的類型 (例如，選取 a => 選取 new {A = a}; )   
 
   - 移除包含使用中陳述式的 `where`。  
 
@@ -73,18 +73,18 @@ ms.locfileid: "67823543"
   
 - SQL 偵錯  
   
-- 偵錯 Dr.Watson 傾印。  
+- 偵測 Dr. Watson 傾印。  
   
-- 未處理的例外狀況之後編輯程式碼時 「**回溯呼叫堆疊上未處理例外狀況**「 未選取選項。  
+- 在未處理的例外狀況之後編輯程式碼，但未選取 [**未處理的例外狀況回溯呼叫堆疊**] 選項。  
   
 - 偵錯內嵌的執行階段應用程式。  
   
-- 偵錯的應用程式**附加至**而不是藉由選擇執行應用程式**開始**從**偵錯**功能表。  
+- 從 [**調試**程式] 功能表選擇 [**啟動**]，**以將附加**的應用程式（而不是執行應用程式）進行偵錯工具。  
   
 - 偵錯最佳化程式碼  
   
 - 由於建置錯誤以致新版本建置失敗之後，對舊版程式碼進行偵錯。  
   
 ## <a name="see-also"></a>另請參閱  
- [編輯後繼續 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
+ [Visual c # ) 的 [編輯後繼續] (](../debugger/edit-and-continue-visual-csharp.md)   
  [如何：使用編輯後繼續 (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

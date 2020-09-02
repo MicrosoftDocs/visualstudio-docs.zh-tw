@@ -1,5 +1,5 @@
 ---
-title: 作法：使用不同選項來建置相同的來源檔案 | Microsoft Docs
+title: 如何：使用不同選項來建置相同的原始程式檔 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -15,13 +15,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8bf76967363f4c0d97d93c895fbeb6209c8503f0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821675"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>HOW TO：使用不同選項來建置相同的原始程式檔
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同選項來建置相同的原始程式檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 當您建置專案時，經常會以不同的組建選項編譯相同的元件。 例如，您可以建立含有符號資訊的偵錯組建，或是不含符號資訊但已啟用最佳化的發行組建。 或者，您可以建置要在特定平台上執行的專案，例如 x86 或 [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]。 在這些情況下，大部分的建置選項都會保持不變。只會變更某些選項來控制組建組態。 透過 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]，您可以使用屬性和條件來建立不同的建置組態。  
@@ -61,7 +61,7 @@ ms.locfileid: "67821675"
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     \-或-  
+     \- 或 -  
   
     ```  
     Msbuild file.proj /p:Flavor=Debug  
@@ -75,13 +75,13 @@ ms.locfileid: "67821675"
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
   ```  
   
-   \- 或-  
+   \-或-  
   
   ```  
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
   ```  
   
-  環境變數也可視為屬性，並由 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 自動合併。 如需使用環境變數的詳細資訊，請參閱[如何：在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
+  環境變數也可視為屬性，並由 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 自動合併。 如需使用環境變數的詳細資訊，請參閱[如何︰在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
   
   命令列上指定的屬性值優先於針對專案檔中相同屬性設定的任何值，而位於專案檔中的值會優先於環境變數中的值。  
   
@@ -186,7 +186,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 ```  
   
 ## <a name="see-also"></a>另請參閱  
-[MSBuild](msbuild.md)  
+[Msbuild](msbuild.md)  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [Project 項目 (MSBuild)](../msbuild/project-element-msbuild.md)

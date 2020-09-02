@@ -1,5 +1,5 @@
 ---
-title: 除錯器安全性 |微軟文件
+title: 偵錯工具安全性 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a89e60a47e5bab6580c78275357234bb9d3f1c56
-ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80527918"
 ---
 # <a name="debugger-security"></a>偵錯工具安全性
@@ -50,11 +50,11 @@ ms.locfileid: "80527918"
 
  ![[記錄] 對話方塊](../debugger/media/dbg_err_remotepermissionschanged.png "DBG_ERR_RemotePermissionsChanged")
 
- 使用 Windows 身份驗證模式時,請注意授予不受信任的用戶許可權以連接到 msvsmon 是危險的,因為使用者被授予在承載 msvmon 的電腦上的所有許可權。
+ 當使用 Windows 驗證模式時，請注意，授與不受信任的使用者連線到 msvsmon 的許可權是危險的，因為使用者會被授與裝載 msvsmon 之電腦上的擁有權限。
 
- 不要在遠端電腦上調試未知進程:存在可能影響運行調試器的計算機的潛在漏洞,或者可能危及 msvsmon。 如果您一定要偵錯未知的處理序，請嘗試在本機偵錯並使用防火牆以避免任何潛在的威脅。
+ 請勿在遠端電腦上偵測到未知的進程：有可能會影響執行偵錯工具的機器，或可能會危害 msvsmon 的潛在攻擊。 如果您一定要偵錯未知的處理序，請嘗試在本機偵錯並使用防火牆以避免任何潛在的威脅。
 
- 有關設定 msvsmon 的資訊,請參考[設定遠端除錯器](../debugger/remote-debugging.md#bkmk_setup)。
+ 如需設定 msvsmon 的詳細資訊，請參閱 [設定遠端偵錯程式](../debugger/remote-debugging.md#bkmk_setup)。
 
 ### <a name="web-services-debugging-security"></a>Web 服務偵錯安全性
  在本機偵錯比較安全，但是因為在 Web 伺服器上可能並未安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，所以本機偵錯並不實用。 一般來說，偵錯 Web 服務會在遠端完成 (除了在開發期間以外)，因此遠端偵錯安全性的建議也適用於 Web 服務偵錯。 這裡有幾個額外的最佳作法。 如需詳細資訊，請參閱 [Debugging XML Web Services](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00)。
@@ -71,14 +71,14 @@ ms.locfileid: "80527918"
 ### <a name="symbols-and-source-code"></a>符號和原始程式碼
  需要考慮安全性的兩個 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 工具如下所示：
 
-- 來源伺服器，提供原始程式碼儲存機制的原始程式碼版本。 當您沒有程式之原始程式碼的最新版時，來源伺服器這就很有用。 [安全警告:除錯器必須執行不受信任的指令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。
+- 來源伺服器，提供原始程式碼儲存機制的原始程式碼版本。 當您沒有程式之原始程式碼的最新版時，來源伺服器這就很有用。 [安全性警告：偵錯工具必須執行未受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。
 
 - 符號伺服器，用來提供偵錯系統呼叫期間之損毀所需的符號。
 
   請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
 ## <a name="see-also"></a>另請參閱
-- [除錯器設定和準備](../debugger/debugger-settings-and-preparation.md)
-- [首先檢視除錯器](../debugger/debugger-feature-tour.md)
+- [偵錯設定及準備](../debugger/debugger-settings-and-preparation.md)
+- [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [安全性警告附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
-- [安全警告:除錯器必須執行不受信任的指令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+- [安全性警告：偵錯工具必須執行未受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

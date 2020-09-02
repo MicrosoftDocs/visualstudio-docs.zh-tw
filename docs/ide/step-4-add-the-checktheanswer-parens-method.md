@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 199cee66013392a253139abf8ef1b88b502abac2
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80472620"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>步驟 4：新增 CheckTheAnswer() 方法
@@ -32,7 +32,7 @@ ms.locfileid: "80472620"
 > [!NOTE]
 > 如果您是在 Visual Basic 中依照步驟一路做下來，您將使用 `Function` 關鍵字，而不會使用慣用的 `Sub` 關鍵字，因為這個方法會傳回值。 理由就是這麼簡單：Sub 不會傳回值，但 Function 會傳回值。
 
-1. 新增 `CheckTheAnswer()` 方法。 此方法應與您使用的其他方法(如`StartTheQuiz()`) 一致。
+1. 新增 `CheckTheAnswer()` 方法。 此方法應該與您所做的其他方法（例如）對齊 `StartTheQuiz()` 。
 
      呼叫這個方法時，它會將 addend1 和 addend2 的值相加，並且將結果與 sum (總和) <xref:System.Windows.Forms.NumericUpDown> 控制項的值比較。 如果值相等，則方法會傳回 `true` 值。 否則，方法會傳回 `false` 值。 您的程式碼應該看起來與下列範例相同。
 
@@ -43,7 +43,7 @@ ms.locfileid: "80472620"
 
      接下來，您將透過更新方法中的程式碼，讓計時器的 <xref:System.Windows.Forms.Timer.Tick> 事件處理常式呼叫新的 `CheckTheAnswer()` 方法，藉此檢查答案。
 
-2. 將以下代碼添加到`if else``Timer1_Tick()`方法中的語句中,以便在用戶正確獲得答案時計時器停止。
+2. 將下列程式碼加入至 `if else` 方法中的語句 `Timer1_Tick()` ，讓計時器在使用者取得解答許可權時停止。
 
      [!code-vb[VbExpressTutorial3Step4#10](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_2.vb)]
      [!code-csharp[VbExpressTutorial3Step4#10](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_2.cs)]
@@ -59,6 +59,6 @@ ms.locfileid: "80472620"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 要轉到下一個教學步驟,請參閱**[步驟 5:新增數位上下控制的 Enter 事件處理程式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)**。
+- 若要移至下一個教學課程步驟，請參閱 **[步驟5：加入 NumericUpDown 控制項的 Enter 事件處理常式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)**。
 
-- 要返回到前面的教程步驟,請參閱步驟[3:添加倒計時計時器](../ide/step-3-add-a-countdown-timer.md)。
+- 若要回到上一個教學課程步驟，請參閱 [步驟3：加入倒數計時器](../ide/step-3-add-a-countdown-timer.md)。

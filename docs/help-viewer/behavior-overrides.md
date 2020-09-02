@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c03d631be1bc4a38e514e1019fa230775427a53
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825099"
 ---
 # <a name="help-content-manager-overrides"></a>Help Content Manager 覆寫
@@ -21,23 +21,23 @@ ms.locfileid: "67825099"
 
 ## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>如何使用 .pkgdef 檔案控制 Help Viewer 行為
 
-1. 建立 .pkgdef  檔案並以 `[$RootKey$\Help]` 作為第一行。
+1. 建立 .pkgdef** 檔案並以 `[$RootKey$\Help]` 作為第一行。
 
 2. 分行加入下表中所述的任何或所有登錄機碼值，例如 `"UseOnlineHelp"=dword:00000001`。
 
-3. 將檔案複製到 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<版本\>\Common7\IDE\CommonExtensions  。
+3. 將檔案複製到 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<版本\>\Common7\IDE\CommonExtensions**。
 
 4. 在開發人員命令提示字元中執行 `devenv /updateconfiguration`。
 
 ### <a name="registry-key-values"></a>登錄機碼值
 
-|登錄機碼值|類型|資料|說明|
+|登錄機碼值|類型|資料|描述|
 |------------------|----|----|-----------|
-|NewContentAndUpdateService|字串|\<服務端點的 HTTP URL\>|定義唯一的服務端點|
+|NewContentAndUpdateService|字串|\<http URL for service endpoint\>|定義唯一的服務端點|
 |UseOnlineHelp|dword|`0` 表示指定本機說明，`1` 表示指定線上說明|定義線上或離線說明預設值|
-|OnlineBaseUrl|字串|\<服務端點的 HTTP URL\>|定義唯一的 F1 端點|
+|OnlineBaseUrl|字串|\<http URL for service endpoint\>|定義唯一的 F1 端點|
 |OnlineHelpPreferenceDisabled|dword|`0` 表示啟用線上說明喜好設定選項，`1` 表示停用|停用線上說明喜好設定選項|
-|DisableManageContent|dword|`0` 表示啟用 Help Viewer 中的 [管理內容]  索引標籤，`1` 表示停用|停用 [管理內容]  索引標籤|
+|DisableManageContent|dword|`0` 表示啟用 Help Viewer 中的 [管理內容]**** 索引標籤，`1` 表示停用|停用 [管理內容]**** 索引標籤|
 |DisableFirstRunHelpSelection|dword|`0` 表示啟用第一次啟動 Visual Studio 時所設定的說明功能，`1` 表示停用|停用第一次啟動 Visual Studio 時所安裝的內容|
 
 ### <a name="example-pkgdef-file-contents"></a>.pkgdef 檔案內容範例
@@ -56,13 +56,13 @@ ms.locfileid: "67825099"
 
 您可以在登錄編輯程式中設定登錄機碼值，來控制下列兩種行為。
 
-|工作|登錄機碼|值|資料|
+|工作|登錄金鑰|值|資料|
 |----------|-----|------|----|
 |覆寫 BITS 工作優先權|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (在 64 位元電腦上)\Microsoft\Help\v2.3|BITSPriority|**前景**、**高**、**一般**或**低**|
 |指向網路共用上的本機內容存放區|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
 
 ## <a name="see-also"></a>另請參閱
 
-- [Help Viewer 系統管理員指南](../help-viewer/administrator-guide.md)
+- [說明檢視器系統管理員指南](../help-viewer/administrator-guide.md)
 - [Help Content Manager 的命令列引數](../help-viewer/command-line-arguments.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)

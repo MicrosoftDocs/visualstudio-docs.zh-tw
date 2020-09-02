@@ -1,5 +1,5 @@
 ---
-title: MenuCommand 對比OleMenuCommands |Microsoft Docs
+title: Menucommand 對比與 OleMenuCommands |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,19 +12,19 @@ ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
 ms.openlocfilehash: 42c471ca924bfded62db32a956a26c07240459eb
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67624462"
 ---
-# <a name="menucommands-vs-olemenucommands"></a>MenuCommand 對比OleMenuCommand
-您可以藉由衍生自建立功能表命令<xref:System.ComponentModel.Design.MenuCommand>或從<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>物件，並實作適當的事件處理常式。 在大多數情況下，您可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就如同 VSPackage 專案範本一樣，但有時候您可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。  
+# <a name="menucommands-vs-olemenucommands"></a>Menucommand 對比與 OleMenuCommands 的比較
+您可以從 <xref:System.ComponentModel.Design.MenuCommand> <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件衍生，以及執行適當的事件處理常式，以建立功能表命令。 在大多數情況下，您可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就如同 VSPackage 專案範本一樣，但有時候您可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。  
   
  VSPackage 會提供給 IDE 的命令必須顯示並啟用，使用者才能使用它們。 使用 Visual Studio Package 專案範本建立在 .vsct 檔案中建立命令，它們預設會顯示並啟用。 設定一些命令旗標，例如 `DynamicItemStart`，可以變更預設行為。 可見性、啟用的狀態，以及命令的其他屬性，也可以在執行階段的程式碼中藉由存取與命令相關聯的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件來變更。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
+## <a name="prerequisites"></a>先決條件  
+ 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 [VISUAL STUDIO SDK](../extensibility/visual-studio-sdk.md)。  
   
 ## <a name="template-locations-for-the-visual-studio-package-template"></a>Visual Studio Package 範本的範本位置  
  您可以在下列位置找到 Visual Studio Package 範本：[Visual Basic]/[ **擴充性** ]、[C#]/[ **擴充性**] 或 [其他專案類型]/[ **擴充性**] 下的 [ **新增專案**] 對話方塊。  
@@ -32,7 +32,7 @@ ms.locfileid: "67624462"
 ## <a name="creating-a-command"></a>建立命令  
  所有命令、命令群組、功能表、工具列和工具視窗定義在 .vsct 檔案中。 如需詳細資訊，請參閱 [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
   
- 如果您使用封裝範本建立 VSPackage，請選取 [ **功能表命令** ] 來建立 .vsct 檔並定義預設的功能表命令。 如需詳細資訊，請參閱 <<c0> [ 建立具有功能表命令的擴充](../extensibility/creating-an-extension-with-a-menu-command.md)。  
+ 如果您使用封裝範本建立 VSPackage，請選取 [ **功能表命令** ] 來建立 .vsct 檔並定義預設的功能表命令。 如需詳細資訊，請參閱 [使用功能表命令建立擴充](../extensibility/creating-an-extension-with-a-menu-command.md)功能。  
   
 #### <a name="to-add-a-command-to-the-ide"></a>將命令加入 IDE  
   
@@ -90,7 +90,7 @@ ms.locfileid: "67624462"
   
     您可以執行下列兩種方式之一，視您的設計而定：  
   
-   - 在 `Button` 項目中，建立 [父代](../extensibility/parent-element.md) 項目，並將其 `guid` 和 `id` 欄位設定為裝載命令之群組的 Guid 和 ID，這個群組又稱為 *「主要父群組」* (primary parent group)。  
+   - 在 `Button` 項目中，建立 [父代](../extensibility/parent-element.md) 項目，並將其 `guid` 和 `id` 欄位設定為裝載命令之群組的 Guid 和 ID，這個群組又稱為 *「主要父群組」*(primary parent group)。  
   
         下列範例會定義使用者定義功能表中所顯示的命令。  
   
@@ -117,7 +117,7 @@ ms.locfileid: "67624462"
       
       建立多個有相同 GUID:ID 但有不同父代的命令位置，會使功能表出現在多個位置。 如需詳細資訊，請參閱 [CommandPlacements](../extensibility/commandplacements-element.md) 項目。  
   
-    如需有關命令群組與父代的詳細資訊，請參閱[建立可重複使用群組的按鈕](../extensibility/creating-reusable-groups-of-buttons.md)。  
+    如需命令群組和父代的詳細資訊，請參閱 [建立可重複使用的按鈕群組](../extensibility/creating-reusable-groups-of-buttons.md)。  
   
    此時，命令會顯示在 IDE 中，但沒有任何功能。 如果命令由封裝範本所建立，依預設它會有 顯示訊息的 Click 處理常式。  
   
@@ -197,7 +197,7 @@ ms.locfileid: "67624462"
 ### <a name="handling-commands-by-using-the-iolecommandtarget-interface"></a>使用 IOleCommandTarget 介面處理命令  
  對於直接使用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面的程式碼，VSPackage 必須同時實作 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 介面的 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 方法。 如果 VSPackage 實作專案階層架構，則應該改為實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> 介面的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 方法。  
   
- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法都是設計來接收單一命令集 `GUID` 和命令 ID 的陣列作為輸入。 我們建議 VSPackage 在單一呼叫中完全支援這個多 ID 的概念。 不過，只要未從其他 VSPackage 呼叫 VSPackage，您就可以假設命令陣列只包含一個命令 ID，因為 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法會按照妥善定義的順序執行。 如需有關路由的詳細資訊，請參閱 < [Vspackage 的命令路由](../extensibility/internals/command-routing-in-vspackages.md)。  
+ <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法都是設計來接收單一命令集 `GUID` 和命令 ID 的陣列作為輸入。 我們建議 VSPackage 在單一呼叫中完全支援這個多 ID 的概念。 不過，只要未從其他 VSPackage 呼叫 VSPackage，您就可以假設命令陣列只包含一個命令 ID，因為 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法會按照妥善定義的順序執行。 如需路由的詳細資訊，請參閱 [vspackage 中的命令路由](../extensibility/internals/command-routing-in-vspackages.md)。  
   
  對於直接使用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面處理命令的程式碼，您必須在 VSPackage 中實作 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 方法來處理命令，如下所示。  
   
@@ -252,5 +252,5 @@ ms.locfileid: "67624462"
 - 如果 `GUID` 和命令 ID 符合 .vsct 檔中的命令所使用的 GUID:ID 配對，會執行與命令相關聯的程式碼並傳回 <xref:Microsoft.VisualStudio.VSConstants.S_OK>。  
   
 ## <a name="see-also"></a>另請參閱  
- [VSCT XML 結構描述參考](../extensibility/vsct-xml-schema-reference.md)   
- [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)
+ [.VSCT XML 架構參考](../extensibility/vsct-xml-schema-reference.md)   
+ [延伸功能表和命令](../extensibility/extending-menus-and-commands.md)

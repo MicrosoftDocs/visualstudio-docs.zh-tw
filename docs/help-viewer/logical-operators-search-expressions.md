@@ -12,21 +12,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0e241df6c32fc1b0a8e88942fe5d0d178c37b9bf
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67824904"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>搜尋運算式中的邏輯與進階運算子
 
-您可以使用邏輯運算子與進階的搜尋運算子，來精簡 [說明檢視器]  的說明內容搜尋範圍。
+您可以使用邏輯運算子與進階的搜尋運算子，來精簡 [說明檢視器]**** 的說明內容搜尋範圍。
 
 ## <a name="logical-operators"></a>邏輯運算子
 
 邏輯運算子會指定應該如何在搜尋查詢中合併多個搜尋詞彙。 下表會顯示邏輯運算子 AND、OR、NOT 和 NEAR。
 
-|搜尋|使用|範例|結果|
+|搜尋|用法|範例|結果|
 |-------------------|---------|-------------|------------|
 |相同文章中的兩個詞彙|AND|dib AND palette|包含 "dib" 和 "palette" 的主題。|
 |文章中的任一個詞彙|OR|raster OR vector|包含 "raster" 或 "vector" 的主題。|
@@ -40,7 +40,7 @@ ms.locfileid: "67824904"
 
 進階搜尋運算子可藉由在文章中指定要尋找搜尋詞彙的位置，來精簡內容的搜尋範圍。 下表描述四個可用的進階搜尋運算子。
 
-|搜尋|使用|範例|結果|
+|搜尋|用法|範例|結果|
 |-------------------|---------|-------------|------------|
 |文章標題中的詞彙|`title:`|`title:binaryreader`|標題中包含 "binaryreader" 的主題。|
 |程式碼範例中的詞彙|`code:`|`code:readdouble`|程式碼範例中包含 "readdouble" 的主題。|

@@ -20,15 +20,15 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: dd38a758a69b2e19079a2bc2511e7edf5cbfb0ab
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348154"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>在 Visual Studio 中重新整理 UWP 應用程式
 
- 您可以在進行偵錯工具時對程式碼進行變更，然後藉由選擇**Debug**工具列上的 [重新整理**Windows 應用程式**] 按鈕，使用 JavaScript 重新整理 UWP 應用程式。 選擇此按鈕隨即會重新載入應用程式，而不需要停止並重新開始偵錯工具。 重新整理功能可讓您修改 HTML、CSS 和 JavaScript 程式碼，並且快速查看結果。 UWP 應用程式支援這項功能。
+ 您可以在進行偵錯工具時對程式碼進行變更，然後選擇**調試**程式工具列上的 [重新整理**Windows 應用程式**] 按鈕，以使用 JavaScript 重新整理 UWP 應用程式。 選擇此按鈕隨即會重新載入應用程式，而不需要停止並重新開始偵錯工具。 重新整理功能可讓您修改 HTML、CSS 和 JavaScript 程式碼，並且快速查看結果。 UWP 應用程式支援這項功能。
 
  重新整理不會維護您的應用程式狀態，也不會將下列變更反映給應用程式：
 
@@ -47,7 +47,7 @@ ms.locfileid: "85348154"
 
 ### <a name="to-refresh-an-app"></a>若要重新整理應用程式
 
-1. 在 Visual Studio 中開啟 UWP 專案，選取 [**本機電腦**] 做為 [偵錯工具目標]。
+1. 在 Visual Studio 中開啟 UWP 專案，選取 [ **本機電腦** ] 作為 [偵錯工具] 目標。
 
      ![選取偵錯目標清單](../debugger/media/js_select_target.png "JS_Select_Target")
 
@@ -57,7 +57,7 @@ ms.locfileid: "85348154"
 
 5. 在 UWP 應用程式的首頁中，編輯部分 HTML。
 
-7. 按一下 [重新整理**windows 應用程式**] 按鈕，如下所示： [重新整理![windows 應用程式] 按鈕](../debugger/media/js_refresh.png "JS_Refresh")。 (或按 F4)。
+7. 按一下 [重新整理 **windows 應用程式** ] 按鈕，如下所示： [重新整理 ![windows 應用程式] 按鈕](../debugger/media/js_refresh.png "JS_Refresh")。 (或按 F4)。
 
 8. 切換至應用程式。 應用程式會重載，並使用更新的 HTML 來呈現應用程式。
 

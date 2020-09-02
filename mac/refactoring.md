@@ -7,13 +7,13 @@ ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67691290"
 ---
-# <a name="refactoring"></a>Refactoring
+# <a name="refactoring"></a>重構
 
 重構程式碼是重新排列、重建和釐清現有程式碼的方法，並能同時確保程式碼的整體行為不會變更。
 
@@ -42,7 +42,7 @@ Visual Studio for Mac 與 Roslyn (Microsoft 的開放原始碼 .NET 編譯器平
 * 套用重構作業 (例如，內嵌暫存變數)
 * 產生程式碼 (例如，引進區域變數)
 
-![可以使用燈泡燈泡圖示](media/quick-actions-light-bulb-icon.png)或螺絲刀![螺絲刀圖示](media/quick-actions-screwdriver-icon.png)圖示應用快速操作，或者按下選項 **（*）**+當游標位於可用於操作的程式碼上時**輸入**。 如果有紅色波浪線指出錯誤，而且 Visual Studio 有該錯誤可用的修正程式，您就會看到錯誤燈泡 ![錯誤燈泡圖示](media/quick-actions-error-light-bulb-icon.png)。
+您可以使用燈泡燈泡 ![ 圖示 ](media/quick-actions-light-bulb-icon.png) 或螺絲螺絲螺絲起子圖示圖示來套用快速動作 ![ ](media/quick-actions-screwdriver-icon.png) ，或按下**選項 (⌥) ** + **Enter**鍵（當游標位於可使用動作的程式程式碼上時）。 如果有紅色波浪線指出錯誤，而且 Visual Studio 有該錯誤可用的修正程式，您就會看到錯誤燈泡 ![錯誤燈泡圖示](media/quick-actions-error-light-bulb-icon.png)。
 
 好比說，協力廠商可以針對任何語言，在 SDK 當中提供自訂診斷和建議，而 Visual Studio 燈泡會依據這些規則亮燈。
 
@@ -57,7 +57,7 @@ Visual Studio for Mac 與 Roslyn (Microsoft 的開放原始碼 .NET 編譯器平
 
 - 燈泡和螺絲起子會在您將游標移到可使用快速動作的程式碼上時，顯示在編輯器的左側邊界。
 
-- 按**選項 （*）**+**輸入**行上的任意位置以查看可用快速操作和重構的清單。
+- 按**選項 (⌥) ** + 在行上的任意處**輸入**，以查看可用的快速動作和重構清單。
 
 ![顯示內容項目](media/refactoring-context-action.png)
 

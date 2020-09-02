@@ -15,20 +15,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9b9013d41ac4d5ca890e7cc9e09b5eb9415cb640
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691336"
 ---
 # <a name="querying-the-pdb-file"></a>查詢 .Pdb 檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-程式資料庫檔案 (副檔名為.pdb) 是二進位檔案，其中包含型別和編譯及連結專案的期間所收集的符號偵錯資訊。 PDB 檔案建立時編譯 C /C++使用程式設計 **/ZI**或是 **/Zi**或[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]， [!INCLUDE[csprcs](../../includes/csprcs-md.md)]，或[!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)]以程式 **/偵錯**選項。 物件檔案包含到偵錯資訊的.pdb 檔案的參考。 如需有關 pdb 檔案的詳細資訊，請參閱[PDB 檔案](https://msdn.microsoft.com/1761c84e-8c2c-4632-9649-b5f99964ed3f)。 DIA 應用程式可以使用下列一般步驟，以取得各種不同的符號、 物件和資料元素，在可執行檔映像中的相關詳細資料。  
+程式資料庫檔案 (副檔名) 是一個二進位檔案，其中包含編譯和連結專案時所收集的型別和符號偵錯工具資訊。 當您使用 **/zi** 或 **/zi** 編譯 C/c + + 程式 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] ，或 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] 使用 **/debug** 選項來編譯、或程式時，就會建立 PDB 檔案。 物件檔包含用於偵錯工具的 .pdb 檔參考。 如需 pdb 檔案的詳細資訊，請參閱 [pdb](https://msdn.microsoft.com/1761c84e-8c2c-4632-9649-b5f99964ed3f)檔案。 DIA 應用程式可以使用下列一般步驟，取得可執行映射內各種符號、物件和資料元素的詳細資料。  
   
-### <a name="to-query-the-pdb-file"></a>查詢.pdb 檔案  
+### <a name="to-query-the-pdb-file"></a>查詢 .pdb 檔案  
   
-1. 藉由建立取得資料來源[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)介面。  
+1. 藉由建立 [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) 介面來取得資料來源。  
   
     ```cpp#  
     CComPtr<IDiaDataSource> pSource;  
@@ -44,7 +44,7 @@ ms.locfileid: "65691336"
     }  
     ```  
   
-2. 呼叫[idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)或是[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)載入偵錯資訊。  
+2. 呼叫 [IDiaDataSource：： loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) 或 [IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 以載入調試資訊。  
   
     ```cpp#  
     wchar_t wszFilename[ _MAX_PATH ];  
@@ -58,7 +58,7 @@ ms.locfileid: "65691336"
     }  
     ```  
   
-3. 呼叫[idiadatasource:: Opensession](../../debugger/debug-interface-access/idiadatasource-opensession.md)來開啟[IDiaSession](../../debugger/debug-interface-access/idiasession.md)來存取偵錯資訊。  
+3. 呼叫 [IDiaDataSource：： openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) 來開啟 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) ，以存取偵錯工具資訊。  
   
     ```cpp#  
     CComPtr<IDiaSession> psession;  
@@ -68,7 +68,7 @@ ms.locfileid: "65691336"
     }  
     ```  
   
-4. 使用中的方法`IDiaSession`來查詢資料來源中的符號。  
+4. 使用中的方法 `IDiaSession` 來查詢資料來源中的符號。  
   
     ```cpp#  
     CComPtr<IDiaSymbol> pglobal;  
@@ -78,7 +78,7 @@ ms.locfileid: "65691336"
     }  
     ```  
   
-5. 使用`IDiaEnum*`介面列舉，並掃描符號或其他項目中的偵錯資訊。  
+5. 您 `IDiaEnum*` 可以使用介面，透過符號或其他偵錯工具的元素來列舉和掃描。  
   
     ```cpp#  
     CComPtr<IDiaEnumTables> pTables;  

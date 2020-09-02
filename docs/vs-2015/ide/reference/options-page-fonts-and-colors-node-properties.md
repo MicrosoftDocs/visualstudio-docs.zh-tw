@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23aa4eff3339ad3cd3ab7d4106745dc6fa83df34
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662432"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>字型和色彩節點屬性、選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本文件說明 [工具] 視窗的字型和色彩屬性，它是登錄顯示在 [選項]  對話方塊的 [環境]  類別的 [字型和色彩]  中。 這支援可變換色彩項目群組的動態本質，如果安裝或解除安裝 VSPackage 時可予以變更。
+本文件說明 [工具] 視窗的字型和色彩屬性，它是登錄顯示在 [選項]**** 對話方塊的 [環境]**** 類別的 [字型和色彩]**** 中。 這支援可變換色彩項目群組的動態本質，如果安裝或解除安裝 VSPackage 時可予以變更。
 
  下節顯示各視窗可使用的已登錄視窗類型和屬性範例。
 
@@ -37,11 +37,11 @@ ms.locfileid: "72662432"
 
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |FontFamily|Get/Set (字串)|要使用的字型名稱，例如「新細明體」。|
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|<xref:EnvDTE.vsFontCharSet> 值，指定要使用的字元集類型，例如希伯來文或俄文。|
 |FontSize|Get/Set (短整數)|要使用的字型大小，以點為單位。 例如 10 或 12。|
 
 ## <a name="see-also"></a>另請參閱
- [控制選項設定](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)[決定 [選項頁選項] 頁面上的屬性專案名稱](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) [、[環境節點屬性](../../ide/reference/options-page-environment-node-properties.md)[選項] 頁面、[文字編輯器] 節點屬性](../../ide/reference/options-page-text-editor-node-properties.md)
+ [控制選項設定](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)在選項頁[選項頁面、環境節點屬性](../../ide/reference/options-page-environment-node-properties.md)[選項頁、文字編輯器節點屬性](../../ide/reference/options-page-text-editor-node-properties.md)[上決定屬性專案的名稱](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
