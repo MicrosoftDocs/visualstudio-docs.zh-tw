@@ -1,5 +1,5 @@
 ---
-title: 偵錯準備：C#F#，和 Visual Basic 專案類型 |Microsoft Docs
+title: '調試準備： c #、F # 和 Visual Basic 專案類型 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1bf57ae0d8d2b9b499897baadc7f2c4450086bf2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195323"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>偵錯準備：C#、F# 和 Visual Basic 專案類型
@@ -35,7 +35,7 @@ ms.locfileid: "68195323"
 
 本章節內的主題說明如何偵錯由 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 專案範本所建立的 C#、F# 和 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案類型。  
   
- 請注意，這些專案類型建立 Dll 為輸出均已分組為[偵錯 DLL 專案](../debugger/debugging-dll-projects.md)因為它們共用通用的功能。  
+ 請注意，建立 Dll 做為其輸出的專案類型，因為它們所共用的常見功能而被分組到 [偵錯工具 Dll 專案](../debugger/debugging-dll-projects.md) 中。  
   
 ## <a name="in-this-section"></a>本節內容  
  [建議的屬性設定](../debugger/managed-debugging-recommended-property-settings.md)  
@@ -51,7 +51,7 @@ ms.locfileid: "68195323"
  說明 Windows 服務，並提供偵錯 Windows 服務應用程式的說明連結。  
   
 ## <a name="related-sections"></a>相關章節  
- [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)  
+ [偵錯設定及準備](../debugger/debugger-settings-and-preparation.md)  
  本章節內容涵蓋使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 偵錯工具偵錯程式時，必須執行的設定和準備。  
   
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)  

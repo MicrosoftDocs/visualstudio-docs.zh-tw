@@ -1,5 +1,5 @@
 ---
-title: 原生程式碼常見問題的偵錯工具 |Microsoft Docs
+title: 原生程式碼的偵錯工具常見問題 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 15a94d20ade7bfe3e5aaac2c90bb3ba452ef4330
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72738178"
 ---
 # <a name="debugging-native-code-faqs"></a>機器碼偵錯 FAQ
@@ -48,6 +48,6 @@ ms.locfileid: "72738178"
 
 - [如果暫止於 MFC，要如何回到呼叫 MFC 的函式？](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯機器碼](../debugger/debugging-native-code.md)

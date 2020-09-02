@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：在設計階段偵錯 |Microsoft Docs
+title: 逐步解說：在設計階段進行調試 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,22 +24,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149422"
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>逐步解說：在設計階段進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以使用 Visual Studio **Immediate**視窗，以在您的應用程式未在執行時執行函式或副程式。 如果函式或副程式含有中斷點，Visual Studio 會中斷執行的適當位置。 然後，您就可以使用偵錯工具視窗來檢查程式狀態。 這項功能稱為設計階段偵錯。  
+當您的應用程式未執行時，您可以 **使用 Visual Studio 即時** 運算視窗來執行函式或副程式。 如果函式或副程式包含中斷點，Visual Studio 將會在適當的時間點中斷執行。 然後，您就可以使用偵錯工具視窗來檢查程式狀態。 這項功能在設計階段稱為「偵錯工具」。  
   
- 下列程序示範如何使用這項功能。  
+ 下列程式說明如何使用這項功能。  
   
-### <a name="to-hit-breakpoints-from-the-immediate-window"></a>從即時運算視窗中叫用  
+### <a name="to-hit-breakpoints-from-the-immediate-window"></a>從即時運算視窗點擊中斷點  
   
-1. 將下列程式碼貼到 Visual Basic 主控台應用程式：  
+1. 將下列程式碼貼入 Visual Basic 主控台應用程式中：  
   
     ```  
     Module Module1  
@@ -63,23 +63,23 @@ ms.locfileid: "68149422"
     End Module  
     ```  
   
-2. 讀取的行上設定中斷點`s="Add BreakPoint Here"`。  
+2. 在讀取的行上設定中斷點 `s="Add BreakPoint Here"` 。  
   
-3. 輸入中的下列**Immediate**視窗： `?MyFunction<enter>`  
+3. **在 [即時**運算] 視窗中輸入下列內容：`?MyFunction<enter>`  
   
-4. 請確認，叫用中斷點，和呼叫堆疊正確無誤。  
+4. 請確認已叫用中斷點，而且呼叫堆疊是正確的。  
   
-5. 在 [**偵錯**] 功能表中，按一下**繼續**，並確認您是否仍處於設計模式。  
+5. 在 [ **調試** 程式] 功能表上，按一下 [ **繼續**]，並確認您仍處於設計模式。  
   
-6. 輸入中的下列**Immediate**視窗： `?MyFunction<enter>`  
+6. **在 [即時**運算] 視窗中輸入下列內容：`?MyFunction<enter>`  
   
-7. 輸入中的下列**Immediate**視窗： `?MySub<enter>`  
+7. **在 [即時**運算] 視窗中輸入下列內容：`?MySub<enter>`  
   
-8. 確認您叫用中斷點，並檢查靜態變數的值`i`中**區域變數**視窗。 它應該有值為 3。  
+8. 確認您點擊中斷點，並檢查 `i` [ **區域變數** ] 視窗中的 [靜態變數] 的值。 其值應為3。  
   
-9. 驗證正確的呼叫堆疊。  
+9. 確認呼叫堆疊正確無誤。  
   
-10. 在 [**偵錯**] 功能表中，按一下**繼續**，並確認您是否仍處於設計模式。  
+10. 在 [ **調試** 程式] 功能表上，按一下 [ **繼續**]，並確認您仍處於設計模式。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   

@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 865167b9182ca1f2264900a3e71ddeb4983e25ef
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82167393"
 ---
 # <a name="lc-task"></a>LC 工作
 
-包裝*dism.exe*，它會從 *.licx*檔案產生*許可證*檔。 如需有關*dism.exe*的詳細資訊，請參閱[Dism.exe （授權編譯器）](/dotnet/framework/tools/lc-exe-license-compiler)。
+包裝*LC.exe*，這會從 *.licx*檔案產生 *. 許可證*檔。 如需 *LC.exe*的詳細資訊，請參閱 [Lc.exe (授權編譯器) ](/dotnet/framework/tools/lc-exe-license-compiler)。
 
 ## <a name="parameters"></a>參數
 
@@ -35,13 +35,13 @@ ms.locfileid: "82167393"
 
 |參數|描述|
 |---------------|-----------------|
-|`LicenseTarget`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要為其產生*授權*檔案的可執行檔。|
+|`LicenseTarget`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要為其產生 *授權* 檔案的可執行檔。|
 |`NoLogo`|選擇性的 `Boolean` 參數。<br /><br /> 隱藏 Microsoft 程式啟始資訊顯示。|
-|`OutputDirectory`|選擇性的 `String` 參數。<br /><br /> 指定要在其中放置輸出*許可證*檔的目錄。|
-|`OutputLicense`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 輸出參數。<br /><br /> 指定*許可證*檔的名稱。 如果您未指定名稱，則會使用 *.licx*檔案的名稱，並將*授權*檔放在包含 *.licx*檔案的目錄中。|
-|`ReferencedAssemblies`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定在產生*許可證*檔時所要載入的參考元件。|
-|`SdkToolsPath`|選擇性的 `String` 參數。<br /><br /> 指定 SDK 工具（例如*resgen.exe*）的路徑。|
-|`Sources`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定包含授權元件的專案，以包含在*許可證*檔中。 如需詳細資訊，請參閱 [Lc.exe (授權編譯器)](/dotnet/framework/tools/lc-exe-license-compiler) 中 `/complist` 參數的記載說明。|
+|`OutputDirectory`|選擇性的 `String` 參數。<br /><br /> 指定要在其中放置輸出的目錄 *。授權* 檔。|
+|`OutputLicense`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 輸出參數。<br /><br /> 指定 *許可證* 檔的名稱。 如果您未指定名稱，則會使用 *.licx* 檔的名稱，而且會將 *. 授權* 檔案放在包含 *.licx* 檔案的目錄中。|
+|`ReferencedAssemblies`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定在產生 *許可證* 檔時所要載入的參考元件。|
+|`SdkToolsPath`|選擇性的 `String` 參數。<br /><br /> 指定 SDK 工具（例如 *resgen.exe*）的路徑。|
+|`Sources`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定包含授權元件的專案，以包含在 *.* 授權檔案中。 如需詳細資訊，請參閱 [Lc.exe (授權編譯器)](/dotnet/framework/tools/lc-exe-license-compiler) 中 `/complist` 參數的記載說明。|
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 

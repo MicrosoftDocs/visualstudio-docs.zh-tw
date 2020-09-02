@@ -1,5 +1,5 @@
 ---
-title: IDebug動態場 |微軟文件
+title: IDebugDynamicField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 15f0ddf70849377d37ec74839550de6057b3450c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731309"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
-此介面表示變數的類型。
+此介面代表變數的類型。
 
 ## <a name="syntax"></a>語法
 
@@ -28,21 +28,21 @@ ms.locfileid: "80731309"
 IDebugDynamicField : IDebugField
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 此介面由符號提供程式實現,作為可在運行時確定的任何類型的基類。 這僅適用於託管代碼。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ 此介面是由符號提供者實作為可在執行時間決定之任何類型的基類。 這僅適用于 managed 程式碼。
 
-## <a name="notes-for-callers"></a>通話備註
- 此介面表示可以從中提取更專用的介面的基類。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ 這個介面代表基類，可從中衍生更特製化的介面。
 
-## <a name="methods-in-vtable-order"></a>依 Vtable 順序排列的方法
- 此介面不提供除從`IDebugField`繼承的方法之外的任何其他方法。
+## <a name="methods-in-vtable-order"></a>採用 Vtable 順序的方法
+ 這個介面不提供繼承自的任何方法 `IDebugField` 。
 
 ## <a name="requirements"></a>需求
- 標題: sh.h
+ 標頭： sh. h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

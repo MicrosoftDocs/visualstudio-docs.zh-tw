@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5a53faf8c9395867b570909ac4d34cf329da12c6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149450"
 ---
-# <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
+# <a name="idiasymbolget_isacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取表示符號是否對應至的旗標*定義範圍符號*標記元件之指標的程式碼中的變數編譯為C++AMP 加速器。 定義範圍符號是變數的位址範圍的位置。  
+抓取旗標，這個旗標會指出符號是否對應到針對 C++ AMP 加速器編譯之程式碼中指標變數標記元件的 *定義範圍符號* 。 定義範圍符號是位址範圍的變數位置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -32,10 +32,10 @@ HRESULT get_isAcceleratorPointerTagLiveRange(
   
 #### <a name="parameters"></a>參數  
  `pFlag`  
- [out]指標`BOOL`表示符號是否對應至所定義範圍的符號。  
+ 擴展的指標 `BOOL` ，指出符號是否對應于定義範圍符號。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 27484ce70b9e98ef7351d03d00ed91515b34e9af
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468403"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
@@ -34,14 +34,14 @@ HRESULT Item (
 #### <a name="parameters"></a>參數
 索引
 
-在要抓取的 debug 資料流程的索引或名稱。 如果使用整數變異，它必須在0到-1 的範圍內 `count` ，其中 `count` 是[IDiaEnumDebugStreams：： get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)方法所傳回的。
+在要抓取之 debug 資料流程的索引或名稱。 如果使用整數變異數，它必須在0到-1 的範圍內 `count` ，其中 `count` 是 [IDiaEnumDebugStreams：： get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) 方法所傳回的。
 
 資料流
 
-脫銷傳回代表指定之 debug 資料流程的[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)物件。
+擴展傳回代表指定之 debug 資料流程的 [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) 物件。
 
 ## <a name="return-value"></a>傳回值
-如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
 

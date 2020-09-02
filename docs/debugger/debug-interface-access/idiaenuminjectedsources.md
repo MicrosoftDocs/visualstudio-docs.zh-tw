@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8ecd669e546f12972c2a11c3b038322ceaf18fc1
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468242"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
@@ -33,21 +33,21 @@ IDiaEnumInjectedSources : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|抓取此列舉值的[IEnumVARIANT 介面](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)版本。|
+|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|抓取此列舉值的 [IEnumVARIANT 介面](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) 版本。|
 |[IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)|抓取插入的來源數目。|
 |[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)|藉由索引來抓取插入的來源。|
-|[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|在列舉序列中，捕獲指定數目的插入來源。|
-|[IDiaEnumInjectedSources::Skip](../../debugger/debug-interface-access/idiaenuminjectedsources-skip.md)|在列舉序列中略過指定數目的插入來源。|
-|[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|將列舉序列重設為開頭。|
-|[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|建立枚舉器，其中包含與目前列舉值相同的列舉狀態。|
+|[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|抓取列舉順序中指定數目的插入來源。|
+|[IDiaEnumInjectedSources::Skip](../../debugger/debug-interface-access/idiaenuminjectedsources-skip.md)|略過列舉序列中指定數目的插入來源。|
+|[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|將列舉順序重設為開頭。|
+|[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
 
 ## <a name="remarks"></a>備註
 
-## <a name="notes-for-callers"></a>呼叫者的注意事項
-藉由呼叫[IDiaSession：： findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)方法與特定原始程式檔的名稱，或使用介面的 GUID 呼叫[IDiaSession：： getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)方法，即可取得此介面 `IDiaEnumInjectedSources` 。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+藉由呼叫 [IDiaSession：： findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) 方法，以指定原始程式檔的名稱，或使用介面的 GUID 呼叫 [IDiaSession：： getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) 方法，即可取得這個介面 `IDiaEnumInjectedSources` 。
 
 ## <a name="example"></a>範例
-這個範例會示範如何取得（函式 `GetEnumInjectedSources` ）並使用（函式 `DumpAllInjectedSources` ） `IDiaEnumInjectedSources` 介面。 如需函數的執行，請參閱[IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)介面 `PrintPropertyStorage` 。 如需替代輸出，請參閱[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)介面。
+這個範例會示範如何取得函式 (`GetEnumInjectedSources`) ，並 (函式) 介面使用該函數 `DumpAllInjectedSources` `IDiaEnumInjectedSources` 。 如需函式的執行，請參閱 [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) 介面 `PrintPropertyStorage` 。 如需替代輸出，請參閱 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) 介面。
 
 ```C++
 
@@ -108,7 +108,7 @@ void DumpAllInjectedSources( IDiaSession* pSession)
 ## <a name="requirements"></a>需求
 標頭： Dia2。h
 
-程式庫： diaguids
+程式庫： diaguids .lib
 
 DLL： msdia80.dll
 

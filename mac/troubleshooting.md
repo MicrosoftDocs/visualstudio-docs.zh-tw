@@ -7,10 +7,10 @@ ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
 ms.openlocfilehash: b0f10e1f70349126ab48c41efc40f982212836f1
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67691890"
 ---
 # <a name="troubleshooting"></a>疑難排解

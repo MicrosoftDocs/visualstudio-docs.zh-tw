@@ -1,5 +1,5 @@
 ---
-title: '[選項] 對話方塊、[調試] |Microsoft Docs'
+title: 選項對話方塊、調試Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -22,14 +22,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 407da10e5a10ea08a75618046189a87a4ad6c5f3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72738155"
 ---
 # <a name="debugging-options-dialog-box"></a>選項對話方塊、偵錯
-[偵錯] 資料夾位於 [工具] 功能表上的 [選項] 對話方塊中，該資料夾提供了下列頁面，可讓您指定偵錯工具選項。
+[偵錯]**** 資料夾位於 [工具]**** 功能表上的 [選項]**** 對話方塊中，該資料夾提供了下列頁面，可讓您指定偵錯工具選項。
 
 - [選項對話方塊、偵錯、一般](../debugger/general-debugging-options-dialog-box.md)
 
@@ -39,7 +39,7 @@ ms.locfileid: "72738155"
 
 - [符號、偵錯、選項對話方塊](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

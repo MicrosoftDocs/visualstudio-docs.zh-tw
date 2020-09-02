@@ -1,5 +1,5 @@
 ---
-title: 在專案中C++啟用調試功能（-D_DEBUG） |Microsoft Docs
+title: 在 c + + 專案中啟用 Debug 功能 (-D_DEBUG) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,13 +25,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 19d341cba47e0a3d2259cc57d239c63420095347
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72737948"
 ---
-# <a name="enabling-debug-features-in-c-projects-d_debug"></a>在專案中C++啟用 Debug 功能（/D_DEBUG）
+# <a name="enabling-debug-features-in-c-projects-d_debug"></a>在 c + + 專案中啟用 Debug 功能 (/D_DEBUG) 
 在 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 中，當您使用已定義的 **_DEBUG** 符號編譯您的程式時，便會啟用判斷提示之類的偵錯功能。 您可以使用下列兩種方法之一定義 **_DEBUG**：
 
 - 在原始程式碼中指定 **#define _DEBUG**，或
@@ -42,6 +42,6 @@ ms.locfileid: "72737948"
 
   MFC 程式的偵錯組態必須與 MFC 程式庫的偵錯版本連結。 MFC 標頭檔會根據您已定義的符號，例如 **_DEBUG** 和 **_UNICODE**，來決定要連結到哪一個正確版本的 MFC 程式庫。 如需詳細資訊，請參閱 [MFC 程式庫版本](/cpp/mfc/mfc-library-versions)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯機器碼](../debugger/debugging-native-code.md)
 - [C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)

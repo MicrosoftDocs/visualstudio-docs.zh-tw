@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e6d527b00e8cbfe6a6f4ad5d112a23e46d4edb8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149553"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath 工作
@@ -34,7 +34,7 @@ ms.locfileid: "68149553"
 ## <a name="task-parameters"></a>工作參數  
  下表說明 `GetFrameworkSdkPath` 工作的參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`FrameworkSdkVersion20Path`|選擇性的 `String` 唯讀輸出參數。<br /><br /> 傳回 .NET SDK 2.0 版的路徑 (如果存在的話)。 否則傳回 `String.Empty`。|  
 |`FrameworkSdkVersion35Path`|選擇性的 `String` 唯讀輸出參數。<br /><br /> 傳回 .NET SDK 3.5 版的路徑 (如果存在的話)。 否則傳回 `String.Empty`。|  
@@ -42,7 +42,7 @@ ms.locfileid: "68149553"
 |`Path`|選擇性的 `String` 輸出參數。<br /><br /> 包含最新的 .NET SDK 路徑 (如果已有任何版本的話)。 否則傳回 `String.Empty`。|  
   
 ## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="example"></a>範例  
  下列範例使用 `GetFrameworkSdkPath` 工作，將 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 的路徑儲存在 `SdkPath` 屬性中。  
@@ -61,5 +61,5 @@ ms.locfileid: "68149553"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [工作](../msbuild/msbuild-tasks.md)   
+ [任務](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

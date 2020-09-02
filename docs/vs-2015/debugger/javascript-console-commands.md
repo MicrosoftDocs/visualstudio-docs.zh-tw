@@ -19,23 +19,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d5c4223699c720750514aaf2b9abc18b34ae4269
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690591"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-適用於 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
+適用于 Windows 和 Windows Phone] (。/Image/windows_and_phone_content.png "windows_and_phone_content" )   
   
- 您可以在 Visual Studio [JavaScript 主控台] 視窗中，使用命令傳送訊息及執行其他工作。 如需示範如何使用該視窗的範例，請參閱[快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)。 本主題資訊適用於 Windows 市集應用程式、Windows Phone 市集應用程式和使用 Visual Studio Tools for Apache Cordova 建立的應用程式。 如需 Cordova 應用程式支援的主控台命令相關資訊，請參閱 [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)。 如需在 Internet Explorer F12 工具中使用主控台的詳細資訊，請參閱 [本主題](https://msdn.microsoft.com/library/ie/dn255006.aspx)。  
+ 您可以在 Visual Studio [JavaScript 主控台] 視窗中，使用命令傳送訊息及執行其他工作。 如需示範如何使用該視窗的範例，請參閱 [快速入門： Debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)。 本主題資訊適用於 Windows 市集應用程式、Windows Phone 市集應用程式和使用 Visual Studio Tools for Apache Cordova 建立的應用程式。 如需 Cordova 應用程式支援的主控台命令相關資訊，請參閱 [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)。 如需在 Internet Explorer F12 工具中使用主控台的詳細資訊，請參閱 [本主題](https://msdn.microsoft.com/library/ie/dn255006.aspx)。  
   
- 如果 [JavaScript 主控台] 視窗已關閉，您可以開啟偵錯時在 Visual Studio 中選擇**偵錯** > **Windows** > **JavaScript主控台**。  
+ 如果 [JavaScript 主控台] 視窗已關閉，您可以在 Visual Studio 中，藉由選擇 [ **Debug**  >  **Windows**  >  **JavaScript 主控台**] 來開啟它。  
   
 > [!NOTE]
-> 如果在偵錯工作階段期間無法使用該視窗，請確定在專案的 [偵錯] 屬性中的偵錯工具類型已設為 [指令碼]  。  
+> 如果在偵錯工作階段期間無法使用該視窗，請確定在專案的 [偵錯] 屬性中的偵錯工具類型已設為 [指令碼] **** 。  
   
 ## <a name="console-object-commands"></a>主控台物件命令  
  此表格顯示 `console` 物件命令的語法，該命令可用於 [JavaScript 主控台] 視窗，也可以用來從程式碼傳送訊息至主控台。 此物件提供數種格式，以便您在必要時可區分告知性訊息與錯誤訊息。  
@@ -73,7 +73,7 @@ ms.locfileid: "65690591"
   
 |命令|描述|範例|  
 |-------------|-----------------|-------------|  
-|`$0`, `$1`, `$2`, `$3`, `$4`|將指定的項目傳回主控台視窗。 `$0` 會傳回目前在 [DOM 總管] 中選取的項目，`$1` 則會傳回前次在 [DOM 總管] 中選取的項目，依此類推，最多可回推至前四次選取的項目。|$3|  
+|`$0`, `$1`, `$2`, `$3`, `$4`|將指定的項目傳回主控台視窗。 `$0` 會傳回目前在 [DOM 總管] 中選取的項目，`$1` 則會傳回前次在 [DOM 總管] 中選取的項目，依此類推，最多可回推至前四次選取的項目。|美金 $3 元|  
 |`$(id)`|依 ID 傳回項目。 這是 `document.getElementById(id)`的捷徑命令，其中 `id` 是代表項目 ID 的字串。|`$("contenthost")`|  
 |`$$(selector)`|傳回項目陣列，其符合使用 CSS 選取器語法的指定選取器。 這是 `document.querySelectorAll()`的捷徑命令。|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|可讓您將運算式評估的內容，從頁面的預設最上層視窗變更為指定框架的視窗。 呼叫不帶參數的 `cd()` ，會將內容傳回至最上層視窗。|`cd();`<br /><br /> `cd(myframe);`|  
@@ -91,9 +91,9 @@ if (console && console.log) {
 ```  
   
 ## <a name="examining-objects-in-the-javascript-console-window"></a>檢查 JavaScript 主控台視窗中的物件  
- 當您使用 JavaScript 主控台視窗時，可以與範圍內的任何物件互動。 若要在主控台視窗中檢查超出範圍的物件，請從您的程式碼使用 `console.log` 、 `console.dir`或其他命令。 或者，當物件在範圍內時，可以在程式碼中設定中斷點 ([中斷點] > **Insert**)，即可從主控台視窗與物件互動。  
+ 當您使用 JavaScript 主控台視窗時，可以與範圍內的任何物件互動。 若要在主控台視窗中檢查超出範圍的物件，請從您的程式碼使用 `console.log` 、 `console.dir`或其他命令。 或者，您可以在程式碼 (**中斷點**  >  **插入中斷點**) 中設定中斷點，以從主控台視窗與物件互動。  
   
-## <a name="ConsoleLog"></a> 格式化 console.log 輸出  
+## <a name="formatting-consolelog-output"></a><a name="ConsoleLog"></a> 設定主控台的格式。記錄檔輸出  
  如果您將多個引數傳遞至 `console.log`，主控台會將這些引數視為陣列處理並串連輸出。  
   
 ```javascript  
@@ -138,5 +138,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [快速入門：對 JavaScript 進行偵錯](../debugger/quickstart-debug-javascript-using-the-console.md)   
- [快速入門：對 HTML 和 CSS 進行偵錯](../debugger/quickstart-debug-html-and-css.md)
+ [快速入門： Debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
+ [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

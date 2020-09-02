@@ -1,5 +1,5 @@
 ---
-title: 作法：從組建中排除檔案 | Microsoft Docs
+title: 如何：從組建中排除檔案 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d7aac21e1ee4d77453808090fc37a3fccaf77e1d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821619"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>HOW TO：從組建中排除檔案
+# <a name="how-to-exclude-files-from-the-build"></a>如何：從組建中排除檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在專案檔中，您可以使用萬用字元，來包含一個目錄中的所有檔案或巢狀目錄集合做為組建的輸入。 不過，目錄中可能有一個您不想包含來建置輸入的檔案，或者巢狀目錄集合中可能有一個您不想包含的目錄。 您可以明確地從輸入清單中排除該檔案或目錄。 專案中也可能有一個您只想在符合特定條件的情況下包含的檔案。 您可以明確地宣告要在組建中包含檔案的條件。  
@@ -45,7 +45,7 @@ ms.locfileid: "67821619"
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
     ```  
   
-     \-或-  
+     \- 或 -  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb"/>  
@@ -59,7 +59,7 @@ ms.locfileid: "67821619"
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
     ```  
   
-     \-或-  
+     \- 或 -  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>  
@@ -126,5 +126,5 @@ ms.locfileid: "67821619"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [項目](../msbuild/msbuild-items.md)   
- [MSBuild](msbuild.md) [How to:選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)
+ [專案](../msbuild/msbuild-items.md)   
+ [MSBuild](msbuild.md) [如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)

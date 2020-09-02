@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 1bef6a460f1a59823930597565b955b591ab48a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591381"
 ---
 # <a name="how-to-troubleshoot-templates"></a>如何：針對範本進行疑難排解
@@ -36,7 +36,7 @@ ms.locfileid: "75591381"
 
 1. 尋找包含範本的 *.zip* 檔。
 
-1. 提取 *.zip*檔。
+1. 將 *.zip* 檔案解壓縮。
 
 1. 在 Visual Studio 的 [檔案]**** 功能表中選擇 [開啟]**** > [檔案]****。
 
@@ -49,11 +49,11 @@ ms.locfileid: "75591381"
 
 1. 儲存並關閉 *vstemplate* 檔案。
 
-1. 選擇範本中包含的檔，按右鍵，然後選擇"**發送到** > **壓縮（壓縮）"資料夾**。 您選擇的檔將壓縮到 *.zip*檔中。
+1. 選取範本中包含的檔案、按一下滑鼠右鍵，然後選擇 [**傳送到**  >  **壓縮 (壓縮的) 資料夾**。 您選取的檔案會壓縮成 *.zip* 檔案。
 
-1. 將新的 *.zip*檔與舊的 *.zip*檔放在同一目錄中。
+1. 將新的 *.zip* 檔案放在與舊 *.zip* 檔相同的目錄中。
 
-1. 刪除提取的範本檔和舊的範本 *.zip*檔。
+1. 刪除已解壓縮的範本檔案和舊的範本 *.zip* 檔。
 
 ## <a name="enable-diagnostic-logging"></a>啟用診斷記錄
 
@@ -63,5 +63,5 @@ ms.locfileid: "75591381"
 
 - [針對範本探索進行疑難排解 (擴充性)](../extensibility/troubleshooting-template-discovery.md)
 - [自訂範本](../ide/customizing-project-and-item-templates.md)
-- [創建專案和專案範本](../ide/creating-project-and-item-templates.md)
-- [範本架構引用](../extensibility/visual-studio-template-schema-reference.md)
+- [建立專案與項目範本](../ide/creating-project-and-item-templates.md)
+- [範本架構參考](../extensibility/visual-studio-template-schema-reference.md)

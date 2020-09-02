@@ -1,5 +1,5 @@
 ---
-title: 如何驗證 IIS 屬性設定 |Microsoft Docs
+title: 如何-確認 IIS 屬性設定 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f37a1ee196b14ec1f8c7b03ffc6e6d826ced02d8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348466"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>如何：檢查 IIS 屬性設定
@@ -59,7 +59,7 @@ ms.locfileid: "85348466"
 
    3. 按一下 [確定]**** 關閉 [驗證方法]**** 對話方塊。
 
-5. 對於 ATL Server 應用程式，請驗證偵錯動詞命令 (DEBUG Verb) 是否與您的 ISAPI 副檔名有關聯。 如需詳細資訊，請參閱 how [to：將 DEBUG 動詞與 Extension 建立關聯](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e)。
+5. 對於 ATL Server 應用程式，請驗證偵錯動詞命令 (DEBUG Verb) 是否與您的 ISAPI 副檔名有關聯。 如需詳細資訊，請參閱 how [to：使 DEBUG 動詞與 Extension 產生關聯](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e)。
 
 6. 針對 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式，請確定應用程式的虛擬資料夾在 [網際網路資訊服務 (IIS) 管理員]****、[網際網路服務管理員]**** 或 [網際網路資訊服務]**** 中已設定 [應用程式名稱]。
 

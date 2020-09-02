@@ -1,5 +1,5 @@
 ---
-title: 設定類別的支援 |Microsoft Docs
+title: 支援設定類別 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,16 +11,16 @@ ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
 ms.openlocfilehash: 15a3896f8a2010a063393d3a11c1ed3453a008d5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65689089"
 ---
 # <a name="support-for-settings-categories"></a>設定類別的支援
-設定類別包含自訂整合式開發環境 (IDE) 的選項群組。 例如，設定可以控制 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 視窗的配置和功能表的內容。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+設定類別包含自訂整合式開發環境 (IDE) 的選項群組。 例如，設定可以控制 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 視窗的配置和功能表的內容。 如需詳細資訊，請參閱 [Visual Studio 中的自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
- 在 [工具]  功能表上，按一下 [匯入和匯出設定]  啟動 [匯入和匯出設定精靈] 。 此精靈提供三個選項︰匯出、匯入或重設您的設定。 選取 [匯出]，例如開啟精靈的 [選擇要匯出的設定]  頁面。  
+ 在 [工具] **** 功能表上，按一下 [匯入和匯出設定] **** 啟動 [匯入和匯出設定精靈] ****。 此精靈提供三個選項︰匯出、匯入或重設您的設定。 選取 [匯出]，例如開啟精靈的 [選擇要匯出的設定] **** 頁面。  
   
  此頁面之巡覽窗格中的樹狀目錄控制項會列出類別。 類別是一組顯示為「自訂設定點」(即核取方塊) 的相關設定。 您可以使用這些核取方塊來選取要保存在 .vsettings 檔案中的類別。 此精靈可讓您命名 .vsettings 檔案，並指定其路徑。  
   
@@ -51,17 +51,17 @@ ms.locfileid: "65689089"
 > 標準名稱不會出現在使用者介面 (UI) 中。 它用來將可讀名稱與設定類別產生關聯，這與程式設計識別項 (ProgID) 十分類似。  
   
 ### <a name="settings-category-attribute"></a>設定類別屬性  
- <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>判斷類別目錄中的自訂設定點的對應**匯入和匯出設定精靈**與提供它的 VSPackage 產生關聯的類別。 請考慮下列程式碼片段：  
+ <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>會在 [匯**入和匯出設定]** 中，將類別與提供的 VSPackage 產生關聯，以決定類別與自訂設定點的對應。 請考慮下列程式碼片段：  
   
  [!code-csharp[VSSDKSupportForSettingsCategories#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforsettingscategories/cs/vssdksupportforsettingscategoriespackage.cs#1)]
  [!code-vb[VSSDKSupportForSettingsCategories#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforsettingscategories/vb/vssdksupportforsettingscategoriespackage.vb#1)]  
   
  資源識別碼 106 對應至 "My Category"、107 對應至 "My Settings"，而 108 對應至 "Various Options"。 這會宣告 `MyPackage` 提供類別 My Category_My Settings。 類別 (category) 是由 `OptionsPageGeneral` 類別 (class) 所提供，而後者必須實作 <xref:Microsoft.VisualStudio.Shell.IProfileManager>。 該類別 (category) 中的設定是 `OptionsPageGeneral` 類別 (class) 的公用屬性。  
   
- 在 [匯入和匯出設定精靈] 中，設定點的名稱為 My Settings。 選取設定點時，描述 ( **Various Options**) 隨即出現。 設定點名稱和描述取自當地語系化的字串資源。  
+ 在 [匯入和匯出設定精靈] **** 中，設定點的名稱為 My Settings。 選取設定點時，描述 ( **Various Options**) 隨即出現。 設定點名稱和描述取自當地語系化的字串資源。  
   
 ## <a name="see-also"></a>另請參閱  
- [建立選項頁](../extensibility/creating-an-options-page.md)   
+ [建立選項頁面](../extensibility/creating-an-options-page.md)   
  [VSSDK 範例](../misc/vssdk-samples.md)   
  [VSPackage 狀態](../misc/vspackage-state.md)   
- [Visual Studio 中的自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

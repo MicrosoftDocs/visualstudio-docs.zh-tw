@@ -9,10 +9,10 @@ author: angelosp
 ms.author: angelpe
 manager: jillfra
 ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67587019"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>[方案總管] 中的檔案巢狀

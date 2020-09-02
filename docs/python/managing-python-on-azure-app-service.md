@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 34fd56b37113467b7cbb2dfb8ac6fdba01b79cc6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543750"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>如何在 Azure App Service 上設定 Python 環境 (Windows)
@@ -173,11 +173,11 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
 
 [Kudu console](https://github.com/projectkudu/kudu/wiki/Kudu-console) (Kudu 主控台) 可讓您透過直接且提高權限的命令列存取 App Service 伺服器和其檔案系統。 這既是一項重要的偵錯工具，也可讓 CLI 作業 (例如安裝套件) 順利進行。
 
-1. 藉由選取 [**開發工具**] [  >  **高級工具**]，然後選取 [執行]， **Go**從 Azure 入口網站的 App Service 頁面開啟 Kudu。 這個動作會瀏覽至與基底 App Service URL 相同的 URL，差別只在於插入了 `.scm`。 例如，如果您的基底 URL 是 `https://vspython-test.azurewebsites.net/`，則 Kudu 位於 `https://vspython-test.scm.azurewebsites.net/` (您可將其設為書籤)：
+1. 選取 [**開發工具**] 的 [  >  **Advanced tools**]，然後選取 [**移至**]，從 Azure 入口網站的 App Service 頁面開啟 Kudu。 這個動作會瀏覽至與基底 App Service URL 相同的 URL，差別只在於插入了 `.scm`。 例如，如果您的基底 URL 是 `https://vspython-test.azurewebsites.net/`，則 Kudu 位於 `https://vspython-test.scm.azurewebsites.net/` (您可將其設為書籤)：
 
     ![Azure App Service 的 Kudu 主控台](media/python-on-azure-console01.png)
 
-1. 選取 [偵錯工具] [**主控台**]  >  [**CMD** ] 以開啟主控台，您可以在其中流覽至 Python 安裝，並查看現有的程式庫。
+1. 選取 [ **Debug console**  >  **CMD** ] 以開啟主控台，您可以在其中流覽至 Python 安裝，並查看已有哪些程式庫。
 
 1. 安裝單一套件：
 

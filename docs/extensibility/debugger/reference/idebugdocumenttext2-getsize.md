@@ -1,5 +1,5 @@
 ---
-title: IDebug文件文字2::獲取大小 |微軟文件
+title: IDebugDocumentText2：： GetSize |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: edc4a209537ca4bd54d3f6d9343d1496ab7c0e90
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731587"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
-檢索文件中此位置的文字大小。
+抓取檔中這個位置的文字大小。
 
 ## <a name="syntax"></a>語法
 
@@ -43,19 +43,19 @@ int GetSize( 
 
 ## <a name="parameters"></a>參數
 `pcNumLines`\
-[出]返回文本行數。
+擴展傳回文字的行數。
 
 `pcNumChars`\
-[出]返回文本的字元數。
+擴展傳回文字的字元數。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
 
- [僅C++]如果不需要特定值,則為參數傳遞 NULL。
+ [僅限 c + +]如果不需要特定的值，請針對參數傳遞 Null。
 
- [僅 C]必須指定這兩個參數。
+ [僅限 c #]這兩個參數都必須指定。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

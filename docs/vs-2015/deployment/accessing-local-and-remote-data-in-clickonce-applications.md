@@ -1,5 +1,5 @@
 ---
-title: 存取 ClickOnce 應用程式中的本機和遠端資料 |Microsoft Docs
+title: 在 ClickOnce 應用程式中存取本機和遠端資料 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ce6b6ee633e926709b0c15c2234077055600a07
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688121"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 應用程式中存取本機和遠端資料
@@ -46,10 +46,10 @@ ms.locfileid: "65688121"
 > 在解除安裝 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式時，也會移除其資料目錄。 請絕對不要使用資料目錄來儲存由使用者所管理資料 (例如文件)。  
   
 #### <a name="marking-data-files-in-a-clickonce-distribution"></a>標示 ClickOnce 散發中的資料檔案  
- 若要將現有檔案置於資料目錄中，您必須在 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的應用程式資訊清單檔中將此現有檔案標記為資料檔案。 如需詳細資訊，請參閱[如何：在 ClickOnce 應用程式中納入資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
+ 若要將現有檔案置於資料目錄中，您必須在 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的應用程式資訊清單檔中將此現有檔案標記為資料檔案。 如需詳細資訊，請參閱 [如何：在 ClickOnce 應用程式中包含資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
   
 #### <a name="reading-from-and-writing-to-the-data-directory"></a>對資料目錄進行讀取和寫入  
- 若要從資料目錄讀取，需具備 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式要求讀取權限；同樣地，寫入目錄則需要寫入權限。 如果設定以完全信任狀態執行，您的應用程式就會自動擁有這種權限。 如需有關為您的權限提升或受信任的應用程式部署的應用程式提升權限的詳細資訊，請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。  
+ 若要從資料目錄讀取，需具備 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式要求讀取權限；同樣地，寫入目錄則需要寫入權限。 如果設定以完全信任狀態執行，您的應用程式就會自動擁有這種權限。 如需使用許可權提升或受信任的應用程式部署來提升應用程式許可權的詳細資訊，請參閱 [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。  
   
 > [!NOTE]
 > 如果您的組織不使用受信任的應用程式部署，並關閉了權限提升，判斷提示權限就會失敗。  
@@ -59,7 +59,7 @@ ms.locfileid: "65688121"
  [!code-csharp[ClickOnce.OpenDataFile#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnce.OpenDataFile/CS/Form1.cs#1)]
  [!code-vb[ClickOnce.OpenDataFile#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.OpenDataFile/VB/Form1.vb#1)]  
   
- 如需有關如何標記您的部署與資料檔案中的檔案的詳細資訊，請參閱[How to:在 ClickOnce 應用程式中納入資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
+ 如需在您的部署中將檔案標示為資料檔案的詳細資訊，請參閱 [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
   
  您也可以使用 <xref:System.Windows.Forms.Application> 類別上的相關變數 (例如 <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>)，來取得資料目錄路徑。  
   
@@ -98,7 +98,7 @@ ms.locfileid: "65688121"
 |檔案共用安裝|無法存取任何 Web 伺服器|  
 |CD-ROM 安裝|可以存取任何 Web 伺服器|  
   
- 如果 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式由於安全性限制而無法存取 Web 伺服器，此應用程式就必須為該網站判斷提示 <xref:System.Net.WebPermission> 。 如需增加安全性權限的詳細資訊[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式，請參閱 <<c2> [ 保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。  
+ 如果 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式由於安全性限制而無法存取 Web 伺服器，此應用程式就必須為該網站判斷提示 <xref:System.Net.WebPermission> 。 如需為應用程式增加安全性許可權的詳細資訊 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ，請參閱 [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。  
   
 ### <a name="accessing-data-through-an-xml-web-service"></a>透過 XML Web Service 存取資料  
  如果您將資料公開為 XML Web Service，就可以使用 XML Web Service Proxy 來存取資料， 此 Proxy 是使用 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 所建立的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]類別。 XML Web Service 的作業 (例如擷取客戶、下訂單等等)，都會公開為 Proxy 上的方法。 這讓 Web 服務比未經處理的文字或 XML 檔案更加容易使用。  
@@ -111,4 +111,4 @@ ms.locfileid: "65688121"
  大部分的情況下，您都不需要直接存取資料庫，而是會從以 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 撰寫的 Web 伺服器應用程式，或是 XML Web Service 來進行存取。 如果 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式是從 Web 伺服器進行部署，以這種方式存取資料庫通常是最佳的方式。 您可以使用部分信任來存取伺服器，而不需提升應用程式的權限。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何：在 ClickOnce 應用程式中納入資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
+ [如何：在 ClickOnce 應用程式中包含資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

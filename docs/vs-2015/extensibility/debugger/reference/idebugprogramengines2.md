@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEngines2 | Microsoft Docs
+title: IDebugProgramEngines2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1383599231f8f0f0dca39a7c2fa514aca6f6fdb3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688956"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-程式節點會使用此介面來指定所有可能的偵錯引擎 (DE) 可以偵錯此程式。  
+程式節點會使用此介面來指定所有可能的偵錯工具引擎 (DE) 可將此程式進行偵錯工具。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,29 +30,29 @@ ms.locfileid: "65688956"
 IDebugProgramEngines2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- DE 或自訂的連接埠提供者會實作這個介面上相同的物件會實作[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)來支援建立特定的規定，若要使用特定程式。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ 取消或自訂埠供應商會在執行 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 的相同物件上，執行此介面，以支援建立特定程式所要使用的特定取消。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 呼叫[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上`IDebugProgramNode2`介面，以取得此介面。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 呼叫介面上的 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) `IDebugProgramNode2` 來取得這個介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDebugProgramEngines2`。  
+ 下表顯示的方法 `IDebugProgramEngines2` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[EnumPossibleEngines](../../../extensibility/debugger/reference/idebugprogramengines2-enumpossibleengines.md)|指出可以進行偵錯此程式的所有可能 DEs。|  
-|[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|選取要用於偵錯此程式 DE。|  
+|[EnumPossibleEngines](../../../extensibility/debugger/reference/idebugprogramengines2-enumpossibleengines.md)|指出可以對此程式進行偵錯工具的所有可能 DEs。|  
+|[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|選取要用來對此程式進行偵錯工具的取消。|  
   
 ## <a name="remarks"></a>備註  
- 由使用者選擇規定之後, 程式節點註冊該選擇藉由呼叫[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)。 選取的引擎會變成所傳回的引擎[GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)。  
+ 一旦使用者選擇取消，該選項就會藉由呼叫 [SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)向程式節點註冊。 選取的引擎會成為 [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)所傳回的引擎。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b69afc20d15802ad79b201ca38e2d69f1d473b1e
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82072489"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke 工作
@@ -31,7 +31,7 @@ ms.locfileid: "82072489"
 
  下表說明 `XmlPoke` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`Namespaces`|選擇性的 `String` 參數。<br /><br /> 指定 XPath 查詢前置詞的命名空間。 `Namespaces` 是一個 XML 程式碼片段，由 `Namespace` 元素與 `Prefix` 和 `Uri` 屬性組成。 屬性 `Prefix` 會指定前置詞與 `Uri` 屬性中指定的命名空間建立關聯。 請勿使用空的 `Prefix`。|
 |`Query`|選擇性的 `String` 參數。<br /><br /> 指定 XPath 查詢。|
@@ -40,7 +40,7 @@ ms.locfileid: "82072489"
 
 ## <a name="remarks"></a>備註
 
- 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱[TaskExtension 基類](../msbuild/taskextension-base-class.md)。
+ 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些額外參數的清單及其描述，請參閱 [TaskExtension 基類（base class](../msbuild/taskextension-base-class.md)）。
 
 ## <a name="example"></a>範例
 

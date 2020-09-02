@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f7d35f763500d48b356305a4ed6cce7a282a42a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179986"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>遠端偵錯錯誤和疑難排解
@@ -46,4 +46,4 @@ ms.locfileid: "68179986"
 - [錯誤：遠端電腦未顯示於 [遠端連線] 對話方塊](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
   
 ## <a name="see-also"></a>另請參閱  
- [Remote Debugging](../debugger/remote-debugging.md)
+ [遠端偵錯](../debugger/remote-debugging.md)
