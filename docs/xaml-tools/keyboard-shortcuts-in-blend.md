@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4d0d537dc93479cc791b2e1c3246e9bab74139f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332229"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的鍵盤快速鍵
@@ -26,7 +26,7 @@ ms.locfileid: "85332229"
 |開啟專案或解決方案 (非網站)|**Ctrl** +**Shift** +**O**|
 |關閉解決方案|**Ctrl** +**Shift** +**C**|
 |儲存解決方案或網站複本|**Ctrl** +**Shift** +**P**|
-|將現有的項目加入至專案|**Ctrl** +**I**|
+|將現有的項目加入至專案|**Ctrl** +**我**|
 |新增 DLL 的參考 (WPF)|**Alt** +**Shift** +**R**|
 |建置專案|**Ctrl** +**Shift** +**B**|
 |測試專案或網站|**F5**|
@@ -68,7 +68,7 @@ ms.locfileid: "85332229"
 |選取多個相鄰的物件|按住 **Shift**|
 |將選取範圍調整成螢幕大小|**Ctrl** +**9**|
 |鎖定使用中的容器|**Ctrl** +**Shift** +**D**|
-|微調選取的物件|**箭頭**鍵|
+|微調選取的物件|**箭** 號鍵|
 |自動調整寬度|**Ctrl** +**Shift** +**5**|
 |自動調整高度|**Ctrl** +**Shift** +**6**|
 |將物件群組到版面配置面板中|**Ctrl** +**G**|
@@ -96,8 +96,8 @@ ms.locfileid: "85332229"
 |作法|執行方式|
 |----------------|-------------|
 |切換 [設計]****、[程式碼]**** 與 [分割]**** 檢視|**F11**|
-|放大畫板|**Ctrl** +**等號**（ **=** ）|
-|縮小畫板|**Ctrl** +**減號**（ **-** ）|
+|放大畫板|**Ctrl** +**等號** (**=**) |
+|縮小畫板|**Ctrl** +**負號** (**-**) |
 |放大或縮小畫板|旋轉滑鼠滾輪|
 |向左或向右移動畫板|**Shift** 加旋轉滑鼠滾輪|
 |向上或向下移動畫板|**Ctrl** 加旋轉滑鼠滾輪|

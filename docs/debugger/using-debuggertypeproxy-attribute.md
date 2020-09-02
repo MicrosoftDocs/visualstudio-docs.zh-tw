@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b98481cb1727ecad9289f63136291d500c0d577e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85347959"
 ---
-# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>使用 DebuggerTypeProxy 屬性告訴偵錯工具要顯示的類型（c #、Visual Basic、c + +/CLI）
+# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>使用 DebuggerTypeProxy 屬性告訴偵錯工具要顯示的類型 (c #、Visual Basic、c + +/CLI) 
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> 會指定類型的 Proxy (或替代)，並且變更在偵錯工具視窗中顯示類型的方式。 當您檢視有 Proxy 的變數時，Proxy 會替代 [顯示]**** 中的原始類型。 偵錯工具變數視窗只會顯示 proxy 型別的 Public 成員。 私用成員不會顯示。
 
@@ -35,7 +35,7 @@ ms.locfileid: "85347959"
 - 組件
 
 > [!NOTE]
-> 針對機器碼，只有在 c + +/CLI 程式碼中才支援這個屬性。
+> 若為機器碼，只有在 c + +/CLI 程式碼中才支援此屬性。
 
 類型 Proxy 類別必須具有建構函式，才能接受 Proxy 將取代之類型的引數。 每次需要顯示目標類型的變數時，偵錯工具都會建立類型 Proxy 類別的新執行個體。 這種行為可能會影響效能。 因此，除非絕對必要，否則不要在建構函式中再執行任何作業。
 
@@ -43,7 +43,7 @@ ms.locfileid: "85347959"
 
 讓類型 Proxy 成為做為屬性目標之類別內的私用巢狀類別，會是較理想的做法。 這樣就可方便它存取內部成員。
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute>可以繼承，因此，如果在基類上指定型別 proxy，它會套用至任何衍生的類別，除非這些衍生類別指定自己的型別 proxy。
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute> 可以繼承，因此，如果在基類上指定型別 proxy，則會套用至任何衍生類別，除非這些衍生類別指定自己的型別 proxy。
 
 如果在組件層級使用 <xref:System.Diagnostics.DebuggerTypeProxyAttribute>，則 `Target` 參數會指定 Proxy 將要取代的類型。
 
@@ -59,7 +59,7 @@ ms.locfileid: "85347959"
 
 如果您在 `DebuggerTypeProxy` 中使用泛型類型做為目標，就必須使用此語法。 `DebuggerTypeProxy` 機制會自動推斷型別參數。
 
-如需 c # 中的開放式和封閉式類型的詳細資訊，請參閱[c # 語言規格](/dotnet/csharp/language-reference/language-specification)，區段20.5.2 開啟和關閉類型。
+如需 c # 中開啟和關閉型別的詳細資訊，請參閱 [c # 語言規格](/dotnet/csharp/language-reference/language-specification)20.5.2 開啟和關閉類型一節。
 
 Visual Basic 沒有開放類型語法，因此無法在 Visual Basic 中執行相同的動作。 您必須改用開放類型名稱的字串表示。
 

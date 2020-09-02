@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 71ef27b61e162fedbf0b8fcaac38d93bedbc77c1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682396"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly 工作
@@ -42,7 +42,7 @@ ms.locfileid: "65682396"
 |`TypeLibFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定要從指定組件產生的類型程式庫。 產生的類型程式庫包含組件內所定義的可存取類型定義。 只有在下列其中一項條件成立時，才會產生類型程式庫︰<br /><br /> - 該位置沒有那個名稱的類型程式庫存在時。<br />- 有類型程式庫存在，但比傳入的組件還舊。<br /><br /> 如果類型程式庫比傳入的組件還新時，不會建立新的程式庫，但仍會註冊該組件。<br /><br /> 如果指定此參數，它必須要有相同數目的項目做為 `Assemblies` 參數，否則工作將會失敗。 如果沒有指定輸入，該工作將預設為該組件的名稱，並將項目的副檔名變更為 .tlb。|  
   
 ## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="example"></a>範例  
  下列範例會使用 `RegisterAssembly` 工作來註冊 `MyAssemblies` 項目集合所指定的組件。  
@@ -62,6 +62,6 @@ ms.locfileid: "65682396"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
- [工作](../msbuild/msbuild-tasks.md)   
+## <a name="see-also"></a>另請參閱  
+ [任務](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

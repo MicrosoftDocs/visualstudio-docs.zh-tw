@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb21495954801d55c1db0bb9156a813ab73db683
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687076"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild 工作參考
@@ -57,7 +57,7 @@ Windows Presentation Foundation (WPF) 建置程序會擴充 Microsoft Build Engi
  檢查、更新或移除唯一識別碼 (UID)，以將來源 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 檔案中包含的所有 [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] 項目當地語系化。  
   
  [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)  
- 建置 [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] 專案時，將 **\<hostInBrowser />** 項目新增至應用程式資訊清單 (*projectname*.exe.manifest)。  
+ 將 **\<hostInBrowser />** 專案加入至應用程式資訊清單 *中，* (] [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] 專案建立時) 。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)

@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aba6feb17a4e7bd4cabfe40bd45480a0f7a9f552
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683929"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 屬性
@@ -34,10 +34,10 @@ ms.locfileid: "65683929"
   
  如果類別具有覆寫的 `ToString()` 方法，偵錯工具會使用覆寫的方法，而非預設的 `{<typeName>}`。 因此，如果您已覆寫 `ToString()` 方法，偵錯工具就會使用覆寫的方法，而非預設的`{<typeName>}`，而且您不需要使用 `DebuggerDisplay`。 若兩者都使用， `DebuggerDisplay` 屬性會優先於覆寫的 `ToString()` 方法。  
   
- 偵錯工具是否評估這個隱含 `ToString()` 呼叫，是取決於 [工具 / 選項 / 偵錯]  對話方塊中的使用者設定。 Visual Basic 並未實作這個隱含 `ToString()` 評估。  
+ 偵錯工具是否評估這個隱含 `ToString()` 呼叫，是取決於 [工具 / 選項 / 偵錯] **** 對話方塊中的使用者設定。 Visual Basic 並未實作這個隱含 `ToString()` 評估。  
   
 > [!IMPORTANT]
-> 如果已核取 [工具/選項 / 偵錯]  對話方塊中的 [在變數視窗中顯示物件的原始結構]  核取方塊，即忽略 `DebuggerDisplay` 屬性。  
+> 如果已核取 [工具/選項 / 偵錯] **** 對話方塊中的 [在變數視窗中顯示物件的原始結構] **** 核取方塊，即忽略 `DebuggerDisplay` 屬性。  
   
  下表說明 `DebuggerDisplay` 屬性的一些可能用法和範例輸出。  
   
@@ -48,7 +48,7 @@ ms.locfileid: "65683929"
   
  `DebuggerDisplay` 也可以接受具名參數。  
   
-|參數|用途|  
+|參數|目的|  
 |----------------|-------------|  
 |`Name`, `Type`|這些參數會影響變數視窗的 [ **名稱** ] 和 [ **類型** ] 欄 (它們可以設定為與建構函式使用相同語法的字串)。過度使用或不當使用這些參數，會造成輸出混淆。|  
 |`Target`, `TargetTypeName`|指定屬性在組件層級使用時的目標類型。|  
@@ -98,7 +98,7 @@ public sealed class MyClass
 ## <a name="example"></a>範例  
  下列程式碼範例將示範如何使用 `DebuggerDisplay`搭配 `DebuggerBrowseable` 和 `DebuggerTypeProxy`。 在偵錯工具變數視窗中檢視時 (例如 [ **監看式** ] 視窗)，它會產生類似下面所示的展開：  
   
-|**名稱**|**值**|**Type**|  
+|**名稱**|**ReplTest1**|**類型**|  
 |--------------|---------------|--------------|  
 |Key|"three"|object {string}|  
 |值|3|object {int}|  
@@ -180,4 +180,4 @@ class MyHashtable
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)[增強偵錯功能，使用偵錯工具顯示屬性](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+ [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)[增強偵錯工具顯示內容的偵錯工具](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

@@ -1,5 +1,5 @@
 ---
-title: IDebugThreadDestroyEvent2 | Microsoft Docs
+title: IDebugThreadDestroyEvent2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 837fba4afa64c0627fcac7ab9d904ef41c00e27a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704803"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個介面會傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 時在執行緒執行到完成為止。  
+此介面是由偵錯工具引擎傳送 (當執行緒已執行完成時，將) 還原為會話 debug manager (SDM) 。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,28 +30,28 @@ ms.locfileid: "65704803"
 IDebugThreadDestroyEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- DE 實作此介面，以便在執行緒結束的報表。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上。 使用 SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要存取`IDebugEvent2`介面。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ DE 會執行此介面來報告執行緒已結束。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須在與這個介面相同的物件上執行。 SDM 會使用 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) 來存取 `IDebugEvent2` 介面。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- DE 建立，並將此事件的物件傳送至已結束執行緒的報表。 事件會使用傳送[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)附加至正在進行偵錯程式時，會將 SDM 所提供的回呼函式。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ DE 會建立並傳送此事件物件，以報告執行緒已結束。 使用 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 回呼函式來傳送事件，該函式會在附加至要進行偵錯工具的程式時提供。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDebugThreadDestroyEvent2`。  
+ 下表顯示的方法 `IDebugThreadDestroyEvent2` 。  
   
 |方法|描述|  
 |------------|-----------------|  
 |[GetExitCode](../../../extensibility/debugger/reference/idebugthreaddestroyevent2-getexitcode.md)|取得執行緒的結束代碼。|  
   
 ## <a name="remarks"></a>備註  
- Visual Studio 會使用這個事件來更新**執行緒**視窗。  
+ Visual Studio 使用此事件來更新 [ **執行緒** ] 視窗。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

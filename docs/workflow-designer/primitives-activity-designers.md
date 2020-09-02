@@ -1,5 +1,5 @@
 ---
-title: 工作流程設計工具-基本活動設計工具
+title: 工作流程設計工具基本活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 0a2b613e-dc04-49a1-a787-caec2ec63b90
@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b5300af2bc011cb6ae5255d2d55aa425ca9f1925
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875913"
 ---
 # <a name="primitives-activity-designers"></a>基本活動設計工具

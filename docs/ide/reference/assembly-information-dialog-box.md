@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae70a2bf989b73dedc5becaac6f4b49bd0108730
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595783"
 ---
 # <a name="assembly-information-dialog-box"></a>組件資訊對話方塊
@@ -30,7 +30,7 @@ ms.locfileid: "75595783"
 **標題**\
 指定組件資訊清單的標題。 對應至 <xref:System.Reflection.AssemblyTitleAttribute>。
 
-**描述**\
+**說明**\
 指定組件資訊清單的選擇性描述。 對應至 <xref:System.Reflection.AssemblyDescriptionAttribute>。
 
 **公司**\
@@ -47,25 +47,25 @@ ms.locfileid: "75595783"
 **商標**\
 指定組件資訊清單的商標。 對應至 <xref:System.Reflection.AssemblyTrademarkAttribute>。
 
-**程式集版本**\
+**元件版本**\
 指定組件的版本。 對應至 <xref:System.Reflection.AssemblyVersionAttribute>。
 
-**檔版本**\
+**檔案版本**\
 指示版本號碼，以指示編譯器使用 Win32 檔案版本資源的特定版本。 對應至 <xref:System.Reflection.AssemblyFileVersionAttribute>。
 
 **Guid**\
 識別組件的唯一 GUID。 當您建立專案時，Visual Studio 會產生組件的 GUID。 對應至 <xref:System.Guid>。
 
 **中性語言**\
-指定組件所支援的文化特性。 對應至 <xref:System.Resources.NeutralResourcesLanguageAttribute>。 預設值為 **（無）。**
+指定組件所支援的文化特性。 對應至 <xref:System.Resources.NeutralResourcesLanguageAttribute>。 預設值為 [ ** 無] () **。
 
-**使程式集 COM 可見**\
+**使元件變成 COM 可見**\
 指定組件中的類型是否可供 COM 使用。 對應至 <xref:System.Runtime.InteropServices.ComVisibleAttribute>。
 
 > [!NOTE]
-> 有關在 .NET Framework 類庫中生成 NuGet 包時設置這些屬性的詳細資訊，請參閱[為包設定項目屬性](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package)。
+> 如需在 .NET Framework 類別庫中產生 NuGet 套件時設定這些屬性的詳細資訊，請參閱設定 [封裝的專案屬性](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package)。
 
 ## <a name="see-also"></a>另請參閱
 
-- [專案設計工具、應用程式頁面 (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
+- [Application Page, Project Designer (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [屬性](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

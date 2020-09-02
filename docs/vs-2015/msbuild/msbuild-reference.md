@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8dfa8314ffe8f174422519ba549d9949cc36b764
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683006"
 ---
 # <a name="msbuild-reference"></a>MSBuild 參考
@@ -29,7 +29,7 @@ ms.locfileid: "65683006"
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 是適用於 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的建置系統。 下列連結會引導至包含 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 參考資訊的主題。  
   
 ## <a name="in-this-section"></a>本節內容  
- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)  
+ [專案檔結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)  
  說明組成 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 檔案格式的 XML 項目。  
   
  [工作參考](../msbuild/msbuild-task-reference.md)  
@@ -44,10 +44,10 @@ ms.locfileid: "65683006"
  [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)  
  說明 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 的保留屬性。  
   
- [通用的 MSBuild 專案屬性](../msbuild/common-msbuild-project-properties.md)  
+ [一般 MSBuild 專案屬性](../msbuild/common-msbuild-project-properties.md)  
  說明通用於所有專案類型的專案屬性，也會說明通常是供特定專案類型使用的屬性。  
   
- [通用的 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)  
+ [一般 MSBuild 專案專案](../msbuild/common-msbuild-project-items.md)  
  說明通用於所有專案類型的專案項目，也會說明通常是供特定專案類型使用的項目。  
   
  [命令列參考](../msbuild/msbuild-command-line-reference.md)  
@@ -68,11 +68,11 @@ ms.locfileid: "65683006"
  [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)  
  包含適用於 Windows Presentation Foundation (WPF) 的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 目標和工作參考。  
   
- [要逸出的特殊字元](../msbuild/special-characters-to-escape.md)  
+ [要 Escape 的特殊字元](../msbuild/special-characters-to-escape.md)  
  列出可能必須「逸出」才能正確解譯的字元。 逸出序列是一系列的字元，表示隨之而來的是替代的解譯。  
   
 ## <a name="related-sections"></a>相關章節  
- [MSBuild 概觀](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)介紹 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]，並提供說明如何使用它來建置專案的主題連結。  
+ [MSBuild 總覽](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) 介紹 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 並提供說明如何使用它來建立專案的主題連結。  
   
  <xref:Microsoft.Build.Conversion>  
  包含 Conversion 命名空間參考  

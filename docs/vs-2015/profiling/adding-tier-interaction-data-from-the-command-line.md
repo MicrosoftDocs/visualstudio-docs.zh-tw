@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 369c5b75780e9d557dedbde60b5b584c8b3345b3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65705839"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>從命令列加入階層互動資料
@@ -30,11 +30,11 @@ ms.locfileid: "65705839"
   
  **Visual Studio 版本**  
   
- 使用 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 或 [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] 可以收集階層互動分析。 不過，只能在 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 和 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 中檢視階層互動分析資料。  
+ 使用 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 或 [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] 可以收集階層互動分析。 不過，只能在 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 和 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]檢視階層互動分析資料。  
   
  **在遠端電腦上收集 TIP 資料**  
   
- 若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** 資料夾中，將 **vs\_profiler\_**_\<平台>_**\_**_\<語言>_**.exe** 檔案複製到遠端電腦並加以安裝。 您無法使用 [Visual Studio 遠端工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 下載封裝的程式碼剖析工具。  
+ 若要在遠端電腦上收集階層互動資料，您必須將** \_ \_ ** _\<Platform>_ **\_** _\<Language>_ Visual Studio 電腦的 _% VSInstallDir%_**\Team Tools\Performance Tools\Setups**資料夾中的 vs profiler **.exe**檔案複製到遠端電腦，並加以安裝。 您無法使用 [Visual Studio 遠端工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 下載封裝的程式碼剖析工具。  
   
  **TIP 報告**  
   
@@ -50,7 +50,7 @@ ms.locfileid: "65705839"
   
 ##### <a name="profiling-a-windows-desktop-application-example"></a>對 Windows 傳統型應用程式進行程式碼剖析的範例  
   
-1. 使用系統管理員權限開啟命令提示視窗。 按一下 [開始]，然後依序指向 [所有程式] 和 [附屬應用程式]。 用右鍵按一下 [命令提示字元]，然後按一下 [以系統管理員身份執行]。  
+1. 使用系統管理員權限開啟命令提示視窗。 按一下 [開始]****，然後依序指向 [所有程式]**** 和 [附屬應用程式]****。 以滑鼠右鍵按一下 [ **命令提示**字元]，然後按一下 [以 **系統管理員身分執行**]。  
   
 2. 初始化 .NET 程式碼剖析和 TIP 環境變數。 輸入下列命令：  
   
@@ -59,13 +59,13 @@ ms.locfileid: "65705839"
    vsperfclrenv /interactionon  
    ```  
   
-3. 啟動分析工具。 輸入下列命令：  
+3. 啟動分析工具。 輸入以下命令：  
   
    ```  
    vsperfcmd /start:trace /output:Desktop_tip.vsp   
    ```  
   
-4. 使用 VSPerfCmd 啟動應用程式。 輸入下列命令：  
+4. 使用 VSPerfCmd 啟動應用程式。 輸入以下命令：  
   
    ```  
    vsperfcmd /launch:DesktopApp.exe  
@@ -73,7 +73,7 @@ ms.locfileid: "65705839"
   
 5. 執行應用程式以收集分析資料，接著按照一般方式關閉應用程式。  
   
-6. 清除 TIP 環境變數。 輸入下列命令：  
+6. 清除 TIP 環境變數。 輸入以下命令：  
   
    ```  
    vsperfclrenv /off  
@@ -92,9 +92,9 @@ ms.locfileid: "65705839"
   
 1. 如有必要，請安裝服務。  
   
-2. 使用系統管理員權限開啟命令提示視窗。 按一下 [開始]，然後依序指向 [所有程式] 和 [附屬應用程式]。 用右鍵按一下 [命令提示字元]，然後按一下 [以系統管理員身份執行]。  
+2. 使用系統管理員權限開啟命令提示視窗。 按一下 [開始]****，然後依序指向 [所有程式]**** 和 [附屬應用程式]****。 以滑鼠右鍵按一下 [ **命令提示**字元]，然後按一下 [以 **系統管理員身分執行**]。  
   
-3. 初始化 .NET 程式碼剖析環境變數。 輸入下列命令：  
+3. 初始化 .NET 程式碼剖析環境變數。 輸入以下命令：  
   
    ```  
    vsperfclrenv /globaltraceon  
@@ -110,15 +110,15 @@ ms.locfileid: "65705839"
   
 6. 使用系統管理員權限開啟命令提示視窗。  
   
-7. 啟動分析工具。 輸入下列命令：  
+7. 啟動分析工具。 輸入以下命令：  
   
    ```  
    vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
    ```  
   
-8. 如有必要，請啟動服務。  
+8. 如有必要，請啟動該服務。  
   
-9. 將程式碼剖析工具附加至服務。 輸入下列命令：  
+9. 將程式碼剖析工具附加至服務。 輸入以下命令：  
   
     ```  
     vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession   
@@ -126,11 +126,11 @@ ms.locfileid: "65705839"
   
 10. 執行服務並收集分析資料。  
   
-11. 停止程式碼剖析工具。 輸入下列命令：  
+11. 停止程式碼剖析工具。 輸入以下命令：  
   
      `vsperfcmd /detach`  
   
-12. 初始化 .NET 和 TIP 程式碼剖析環境變數。 輸入下列命令：  
+12. 初始化 .NET 和 TIP 程式碼剖析環境變數。 輸入以下命令：  
   
     ```  
     vsperfclrenv /globaloff  
@@ -140,7 +140,7 @@ ms.locfileid: "65705839"
   
     如需詳細資訊，請參閱下列其中一個主題：  
   
-    [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
+    [為 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
     [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)  
   
@@ -153,4 +153,4 @@ ms.locfileid: "65705839"
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp  
 ```  
   
- 如需 VSPerfASPNETCmd 的詳細資訊，請參閱[使用 VSPerfASPNETCmd 快速進行網站程式碼剖析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)。
+ 如需 VSPerfASPNETCmd 的詳細資訊，請參閱 [使用 VSPerfASPNETCmd 快速進行網站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)。

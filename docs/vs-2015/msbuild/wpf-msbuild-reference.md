@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a940cf371373d23d98ce8f89005197ee3ea7c309
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687071"
 ---
 # <a name="wpf-msbuild-reference"></a>WPF MSBuild 參考
@@ -51,5 +51,5 @@ Windows Presentation Foundation (WPF) 擴充 Microsoft Build Engine (MSBuild) �
  <xref:Microsoft.Build.Tasks.Windows>  
  建置工作視窗組件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)

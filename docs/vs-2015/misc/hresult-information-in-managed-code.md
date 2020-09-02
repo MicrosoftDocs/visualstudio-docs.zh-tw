@@ -1,5 +1,5 @@
 ---
-title: 在 Managed 程式碼的 HRESULT 資訊 |Microsoft Docs
+title: Managed 程式碼中的 HRESULT 資訊 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,13 +11,13 @@ ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
 manager: jillfra
 ms.openlocfilehash: 4f80b575656c2d8b1740f217f2e144f89f254078
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681638"
 ---
-# <a name="hresult-information-in-managed-code"></a>在 Managed 程式碼的 HRESULT 資訊
+# <a name="hresult-information-in-managed-code"></a>Managed 程式碼中的 HRESULT 資訊
 遇到 HRESULT 傳回值時，Managed 程式碼與 COM 之間的互動可能會造成問題。  
   
  在 COM 介面中，HRESULT 傳回值可以扮演下列角色：  
@@ -42,7 +42,7 @@ ms.locfileid: "65681638"
  根據預設，<xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 只要傳遞的 HRESULT 值小於零就會擲回例外狀況。 如果這類 HRESULT 是可接受值，而且不應該擲回任何例外狀況，則在測試值之後，應該會將其他 HRESULT 的值傳遞給 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>。 如果正在測試的 HRESULT 符合明確傳遞給 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 的任何 HRESULT 值，則不會擲回任何例外狀況。  
   
 > [!NOTE]
-> <xref:Microsoft.VisualStudio.VSConstants>類別包含常數常見 hresults，例如<xref:Microsoft.VisualStudio.VSConstants.S_OK>並<xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>，和[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]HRESULT，比方說，<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>和<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>。 <xref:Microsoft.VisualStudio.VSConstants> 也提供 <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> 和 <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> 方法，而這些方法會對應至 COM 中的 SUCCEEDED 和 FAILED 巨集。  
+> <xref:Microsoft.VisualStudio.VSConstants>類別包含一般 hresult 的常數，例如 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 和 <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> ，以及 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hresult，例如 <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> 和 <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT> 。 <xref:Microsoft.VisualStudio.VSConstants> 也提供 <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> 和 <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> 方法，而這些方法會對應至 COM 中的 SUCCEEDED 和 FAILED 巨集。  
   
  例如，請考慮下列的函式呼叫，其中，<xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> 是可接受的傳回值，但任何其他小於零的 HRESULT 都代表發生錯誤。  
   
@@ -63,8 +63,8 @@ ms.locfileid: "65681638"
 > 例外狀況會危害效能並用來指出異常程式狀況。 經常發生的狀況應該透過內嵌方式處理，而不是擲回例外狀況。  
   
 ## <a name="see-also"></a>另請參閱  
- [Managed 的 Vspackage](../misc/managed-vspackages.md)   
- [與 Unmanaged 程式碼互通](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)   
+ [受控 Vspackage](../misc/managed-vspackages.md)   
+ [與非受控程式碼交互操作](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)   
  [如何：對應 Hresult 和例外狀況](https://msdn.microsoft.com/library/610b364b-2761-429d-9c4a-afbc3e66f1b9)   
- [建置 COM 元件的互通性](https://msdn.microsoft.com/7a2c657a-cfef-40f0-bed3-7c2c0ac4abdf)   
+ [建立交互操作的 COM 元件](https://msdn.microsoft.com/7a2c657a-cfef-40f0-bed3-7c2c0ac4abdf)   
  [Managed VSPackages](../misc/managed-vspackages.md)

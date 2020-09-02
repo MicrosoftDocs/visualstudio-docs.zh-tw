@@ -1,5 +1,5 @@
 ---
-title: 點/雙線性/三線性/非等向性紋理篩選變異
+title: 點/雙線性/三線性/非等材質篩選變數
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 314ec61da7ed61cc8bdd573e201d98a53862a32c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66262925"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>點、雙線性、三線性和各向異性紋理篩選變異
@@ -58,7 +58,7 @@ ms.locfileid: "66262925"
 
   在**非等向性紋理篩選**變異中，應用程式所提供的篩選模式會取代為 `D3D11_FILTER_ANISOTROPIC`，而且「最大非等向性」會設定為 16。
 
-## <a name="restrictions-and-limitations"></a>限制
+## <a name="restrictions-and-limitations"></a>限制事項
  在 Direct3D 中，功能層級 9.1 會指定最大非等向性為 2x。 因為**非等向性紋理篩選**變異嘗試以獨佔方式使用 16x 非等向性，所以在功能層級 9.1 裝置上執行畫面格分析時，播放會失敗。 受此限制影響的現代裝置包括 ARM Surface RT 和 Surface 2 Windows 平板電腦。 還是可以在一些電腦上發現的較舊型 GPU 也是會受到影響，但是它們已被廣泛地視為過時，且漸漸地不常見。
 
 ## <a name="example"></a>範例

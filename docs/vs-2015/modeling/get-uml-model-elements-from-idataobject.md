@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 66b4ffc312af89aa5852a1f4dad62fd328176df3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666082"
 ---
 # <a name="get-uml-model-elements-from-idataobject"></a>從 IDataObject 取得 UML 模型項目
@@ -24,16 +24,16 @@ ms.locfileid: "72666082"
 當使用者從任何來源拖曳項目到圖表中時，拖曳的項目會編碼於 `System.Windows.Forms.IDataObject`。 編碼取決於來源物件的類型。 下列片段示範當來源是 UML 圖表時，如何擷取項目。
 
 > [!NOTE]
-> 您必須在 UML 模型上執行的大部分作業，都可以使用**VisualStudio**中所定義的類型來執行，以及**VisualStudio. microsoft.visualstudio.architecturetools.layer.validator。** 但是，基於此目的，您必須使用屬於 UML 模型工具實作一部分的一些類別。 例如，在此片段中的 `ShapeElement` 與 UML  `IShape` 不同。 若要降低使 UML 模型和圖表處於不一致狀態的風險，最好避免對這些實作類別使用方法，除非別無選擇。
+> 您必須對 UML 模型執行的大部分作業都可以使用 **VisualStudio** 元件中所定義的型別，以及 **VisualStudio. [microsoft.visualstudio.architecturetools.layer.validator**擴充性。 但是，基於此目的，您必須使用屬於 UML 模型工具實作一部分的一些類別。 例如，在此片段中的 `ShapeElement` 與 UML  `IShape` 不同。 若要降低使 UML 模型和圖表處於不一致狀態的風險，最好避免對這些實作類別使用方法，除非別無選擇。
 
-## <a name="code-sample"></a>範例程式碼
+## <a name="code-sample"></a>程式碼範例
  您的專案必須參考下列 [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] 元件：
 
- **VisualStudio. 模型化 Sdk。版本**
+ **Microsoft.VisualStudio.Modeling.Sdk.[版本]**
 
- **VisualStudio. 模型化 Sdk。版本**
+ **Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[版本]**
 
- **System.web**
+ **System.Windows.Forms**
 
 ```
 using Microsoft.VisualStudio.Modeling;
@@ -78,7 +78,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     }
 ```
 
- 如需有關 `ElementGroupPrototype` 的詳細資訊，以及執行 UML 模型工具的 `Store`，請參閱[適用于 Visual Studio 網域特定語言的模型化 SDK](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)。
+ 如需有關 `ElementGroupPrototype` 的詳細資訊 `Store` ，以及 UML 模型工具的執行方式，請參閱 [Visual Studio 網域專屬語言的模型 SDK](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

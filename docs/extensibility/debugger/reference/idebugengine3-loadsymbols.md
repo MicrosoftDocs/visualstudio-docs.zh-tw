@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::載入符號 |微軟文件
+title: IDebugEngine3：： LoadSymbols |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7963d39601a0d3a90ca2daa7632902d7aa506de8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730808"
 ---
 # <a name="idebugengine3loadsymbols"></a>IDebugEngine3::LoadSymbols
-此除錯引擎正在除錯的所有模組的載入(根據需要)符號。
+視需要為此偵錯工具所進行的所有模組) 符號載入 (。
 
 ## <a name="syntax"></a>語法
 
@@ -39,10 +39,10 @@ int LoadSymbols();
  無。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回S_OK;否則返回錯誤代碼。
+ 如果成功，則傳回 S_OK;否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 這將載入此除錯引擎引用的所有模組的調試符號。 僅當符號尚未載入時,才會載入這些符號。 符號在調用[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)設置的路徑上搜索。
+ 這會為此偵錯工具引擎所參考的所有模組載入偵錯工具符號。 只有當符號尚未載入時，才會載入這些符號。 符號會在呼叫 [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)所設定的路徑上搜尋。
 
 ## <a name="see-also"></a>另請參閱
 - [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)

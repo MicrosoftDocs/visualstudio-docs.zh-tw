@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6edc8b246055dcd8efdb32f4118f81a535635d55
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683820"
 ---
 # <a name="vbc-task"></a>Vbc 工作
@@ -49,11 +49,11 @@ ms.locfileid: "65683820"
 |`ErrorReport`|選擇性的 `String` 參數。<br /><br /> 指定工作應如何報告編譯器內部錯誤。 此參數的值如下：<br /><br /> -   `prompt`<br />-   `send`<br />-   `none`<br /><br /> 如果指定 `prompt` 且發生編譯器內部錯誤時，會提示使用者選擇是否將錯誤資料傳送給 Microsoft。<br /><br /> 如果指定 `send` 且發生編譯器內部錯誤時，工作會將錯誤資料傳送給 Microsoft。<br /><br /> 預設值為 `none`，僅報告文字輸出中的錯誤。<br /><br /> 此參數對應至 vbc.exe 編譯器的 [/errorreport](https://msdn.microsoft.com/library/a7fe83a2-a6d8-460c-8dad-79a8f433f501) 參數。|  
 |`FileAlignment`|選擇性的 `Int32` 參數。<br /><br /> 以位元組為單位，指定要對齊輸出檔案區段的位置。 此參數的值如下：<br /><br /> -   `512`<br />-   `1024`<br />-   `2048`<br />-   `4096`<br />-   `8192`<br /><br /> 此參數對應至 vbc.exe 編譯器的 [/filealign](https://msdn.microsoft.com/library/cc61ec3d-ad38-4b28-9659-099d73cad099) 參數。|  
 |`GenerateDocumentation`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true` 則產生文件資訊，並將該資訊放入 XML 檔中，此檔案的名稱為工作所建立的可執行檔或程式庫名稱。 如需詳細資訊，請參閱 [/doc](https://msdn.microsoft.com/library/5fc32ec9-a149-4648-994c-a8d0cccd0a65)。|  
-|`Imports`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 從指定的項目集合匯入命名空間。 此參數對應至 vbc.exe 編譯器的 [/imports](https://msdn.microsoft.com/library/9a93fb53-c080-497b-bf9b-441022dbbc39) 參數。|  
+|`Imports`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 從指定的項目集合匯入命名空間。 此參數對應至 vbc.exe 編譯器的 [/imports](https://msdn.microsoft.com/library/9a93fb53-c080-497b-bf9b-441022dbbc39) 參數。|  
 |`KeyContainer`|選擇性的 `String` 參數。<br /><br /> 指定密碼編譯金鑰容器的名稱。 此參數對應至 vbc.exe 編譯器的 [/keycontainer](https://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc) 參數。|  
 |`KeyFile`|選擇性的 `String` 參數。<br /><br /> 指定包含密碼編譯金鑰的檔名。 如需詳細資訊，請參閱 [/keyfile](https://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8)。|  
 |`LangVersion`|選擇性的 [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)參數。<br /><br /> 指定語言版本，"9" 或 "10"。|  
-|`LinkResources`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 在輸出檔中建立 .NET Framework 資源的連結；不要將資源檔放置於輸出檔中。 此參數對應至 vbc.exe 編譯器的 [/linkresource](https://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15) 參數。|  
+|`LinkResources`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 在輸出檔中建立 .NET Framework 資源的連結；不要將資源檔放置於輸出檔中。 此參數對應至 vbc.exe 編譯器的 [/linkresource](https://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15) 參數。|  
 |`MainEntryPoint`|選擇性的 `String` 參數。<br /><br /> 指定包含 `Sub Main` 程序的類別或模組。 此參數對應至 vbc.exe 編譯器的 [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0) 參數。|  
 |`ModuleAssemblyName`|選擇性的 `String` 參數。<br /><br /> 指定將包含此模組的組件。|  
 |`NoConfig`|選擇性的 `Boolean` 參數。<br /><br /> 指定編譯器不應使用 vbc.rsp 檔案。 此參數對應至 vbc.exe 編譯器的 [/noconfig](https://msdn.microsoft.com/library/a7405067-bd21-4171-adf4-a126fa3ad6c3) 參數。|  
@@ -69,17 +69,17 @@ ms.locfileid: "65683820"
 |`OptionStrictType`|選擇性的 `String` 參數。<br /><br /> 指定哪些嚴格的類型語意會產生警告。 目前只支援 "custom"。 此參數對應至 vbc.exe 編譯器的 [/optionstrict](https://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da) 參數。|  
 |`OutputAssembly`|選擇性的 `String` 輸出參數。<br /><br /> 指定輸出檔案的名稱。 這個參數對應於 vbc.exe 編譯器的 [/out](https://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae) 參數。|  
 |`Platform`|選擇性的 `String` 參數。<br /><br /> 指定輸出檔設為目標的處理器平台。 這個參數可以具有 `x86`、`x64`、`Itanium` 或 `anycpu` 的值。 預設為 `anycpu`。 這個參數對應於 vbc.exe 編譯器的 [/platform](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1) 參數。|  
-|`References`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 導致工作將公用類型資訊從指定的項目匯入目前的專案。 這個參數對應於 vbc.exe 編譯器的 [/reference](https://msdn.microsoft.com/library/66bdfced-bbf6-43d1-a554-bc0990315737) 參數。|  
-|`RemoveIntegerChecks`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，停用整數的溢位錯誤檢查。 預設值為 `false`。 這個參數對應於 vbc.exe 編譯器的 [/removeintchecks](https://msdn.microsoft.com/library/c1835bd5-1e38-4fba-bd2f-6984774765d4) 參數。|  
-|`Resources`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 將 .NET Framework 資源內嵌到輸出檔中。 這個參數對應於 vbc.exe 編譯器的 [/resource](https://msdn.microsoft.com/library/eee2f227-91f2-4f2b-a9d6-1c51c5320858) 參數。|  
-|`ResponseFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定包含適用於此工作之命令的回應檔。 此參數對應至 vbc.exe 編譯器的 [@ (指定回應檔)](https://msdn.microsoft.com/library/a6847eaa-e5f9-4303-9421-45b55484b9ca) 選項。|  
+|`References`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 導致工作將公用類型資訊從指定的項目匯入目前的專案。 這個參數對應於 vbc.exe 編譯器的 [/reference](https://msdn.microsoft.com/library/66bdfced-bbf6-43d1-a554-bc0990315737) 參數。|  
+|`RemoveIntegerChecks`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，停用整數的溢位錯誤檢查。 預設值是 `false`。 這個參數對應於 vbc.exe 編譯器的 [/removeintchecks](https://msdn.microsoft.com/library/c1835bd5-1e38-4fba-bd2f-6984774765d4) 參數。|  
+|`Resources`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 將 .NET Framework 資源內嵌到輸出檔中。 這個參數對應於 vbc.exe 編譯器的 [/resource](https://msdn.microsoft.com/library/eee2f227-91f2-4f2b-a9d6-1c51c5320858) 參數。|  
+|`ResponseFiles`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定包含適用於此工作之命令的回應檔。 此參數對應至 vbc.exe 編譯器的 [@ (指定回應檔)](https://msdn.microsoft.com/library/a6847eaa-e5f9-4303-9421-45b55484b9ca) 選項。|  
 |`RootNamespace`|選擇性的 `String` 參數。<br /><br /> 指定所有類型宣告的根命名空間。 這個參數對應於 vbc.exe 編譯器的 [/rootnamespace](https://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783) 參數。|  
 |`SdkPath`|選擇性的 `String` 參數。<br /><br /> 指定 mscorlib.dll 和 microsoft.visualbasic.dll 的位置。 這個參數對應於 vbc.exe 編譯器的 [/sdkpath](https://msdn.microsoft.com/library/fec8a3f1-b791-4a37-8af7-344859f8212d) 參數。|  
-|`Sources`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定一或多個 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 原始程式檔。|  
+|`Sources`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定一或多個 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 原始程式檔。|  
 |`TargetCompactFramework`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，工作會以 [!INCLUDE[Compact](../includes/compact-md.md)] 為目標。 這個參數對應於 vbc.exe 編譯器的 [/netcf](https://msdn.microsoft.com/library/db7cfa59-c315-401c-a59b-0daf355343d6) 參數。|  
 |`TargetType`|選擇性的 `String` 參數。<br /><br /> 指定輸出檔的檔案格式。 此參數的值如下：`library` (可建立程式碼程式庫)、`exe` (可建立主控台應用程式)、`module` (可建立模組) 或 `winexe` (可建立 Windows 程式)。 預設為 `library`。 這個參數對應於 vbc.exe 編譯器的 [/target](https://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c) 參數。|  
 |`Timeout`|選擇性的 `Int32` 參數。<br /><br /> 指定時間量 (以毫秒為單位)，在此時間量之後會終止工作可執行檔。 預設值是 `Int.MaxValue`，表示沒有逾時期間。|  
-|`ToolPath`|選擇性的 `String` 參數。<br /><br /> 指定位置，工作會從該位置載入基礎可執行檔 (vbc.exe)。 如果未指定這個參數，工作會使用 SDK 安裝路徑，此路徑對應到執行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 之架構的版本。|  
+|`ToolPath`|選擇性的 `String` 參數。<br /><br /> 指定位置，工作會從該位置載入基礎可執行檔 (vbc.exe)。 如果未指定這個參數，工作會使用 SDK 安裝路徑，對應於執行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 之架構的版本。|  
 |`TreatWarningsAsErrors`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，所有警告都視為錯誤。 如需詳細資訊，請參閱 [/warnaserror (Visual Basic)](https://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1)。|  
 |`UseHostCompilerIfAvailable`|選擇性的 `Boolean` 參數。<br /><br /> 如果有的話，即會指示工作來使用同處理序編譯器物件。 僅可供 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用。|  
 |`Utf8Output`|選擇性的 `Boolean` 參數。<br /><br /> 使用 UTF-8 編碼記錄編譯器輸出。 這個參數對應於 vbc.exe 編譯器的 [/utf8output](https://msdn.microsoft.com/library/8ab36b1e-027a-49ac-85b4-f48997d9e4d6) 參數。|  
@@ -105,5 +105,5 @@ ms.locfileid: "65683820"
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Basic 命令列編譯器](https://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
- [工作](../msbuild/msbuild-tasks.md)   
+ [任務](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

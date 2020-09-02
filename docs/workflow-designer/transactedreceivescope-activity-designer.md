@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 75fb1da392bce7dbd0cd7849d83b3b452521e0c7
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875926"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope 活動設計工具
@@ -27,25 +27,25 @@ ms.locfileid: "86875926"
 
 ### <a name="using-the-transactedreceivescope-activity-designer"></a>使用 TransactedReceiveScope 活動設計工具
 
-在 [工具箱] 的 [**訊息**] 分類中，存取 [ **TransactedReceiveScope** ] 活動設計**工具**。 [ **TransactedReceiveScope** ] 活動設計工具可以從 [**工具箱**] 拖曳出來，放到工作流程設計工具介面上通常用來放置活動的任一處。 這會建立一個 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 活動，具有 TransactedReceiveScope 的預設**DisplayName** 。 <xref:System.Activities.Activity.DisplayName%2A>可以在 [ **TransactedReceiveScope** ] 活動設計工具的標頭中編輯，或是在屬性方格的 [ **DisplayName** ] 方塊中編輯。
+存取 [工具箱] 的 [**訊息**] 類別中的 [ **TransactedReceiveScope** ] 活動設計**工具**。 [ **TransactedReceiveScope** ] 活動設計工具可以從 [ **工具箱** ] 拖曳出來，放到工作流程設計工具介面上通常用來放置活動的任一處。 這會建立一個 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 活動，具有 TransactedReceiveScope 的預設 **DisplayName** 。 <xref:System.Activities.Activity.DisplayName%2A>可以在 [ **TransactedReceiveScope** ] 活動設計工具的標頭中編輯，或是在屬性方格的 [ **DisplayName** ] 方塊中編輯。
 
-**TransactedReceiveScope**設計工具組含**Request** [要求 **] 和 [** 內文] 方塊。 這些會用來設定 <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> 屬性，而該屬性會指定 <xref:System.ServiceModel.Activities.Receive> 活動與 <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> 屬性，而此屬性再指定某個其他 <xref:System.Activities.Activity>。 <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> 會建立異動。 然後，此異動會變成 <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> 範圍的環境異動，於是此範圍內的任何活動會在此異動的內部執行。
+[ **TransactedReceiveScope** ] 設計工具組含 [ **要求** **] 和 [** 內文] 方塊。 這些會用來設定 <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> 屬性，而該屬性會指定 <xref:System.ServiceModel.Activities.Receive> 活動與 <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> 屬性，而此屬性再指定某個其他 <xref:System.Activities.Activity>。 <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> 會建立異動。 然後，此異動會變成 <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> 範圍的環境異動，於是此範圍內的任何活動會在此異動的內部執行。
 
 ### <a name="the-transactedreceivescope-properties"></a>TransactedReceiveScope 屬性
 
-下表顯示 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 屬性，並且描述屬性在設計工具中的使用方式。 這些 <xref:System.Activities.Activity.DisplayName%2A> 屬性可以在屬性方格中或在工作流程設計工具介面上編輯，但其他則必須在設計介面上編輯。
+下表顯示 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 屬性，並且描述屬性在設計工具中的使用方式。 這些 <xref:System.Activities.Activity.DisplayName%2A> 屬性可以在屬性方格中或在工作流程設計工具介面上編輯，但其他屬性必須在設計介面上編輯。
 
 |屬性名稱|必要|使用方式|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|否|<xref:System.ServiceModel.Activities.TransactedReceiveScope> 活動可選用的易記名稱。 預設為 TransactedReceiveScope。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 名稱並非絕對必要，但建議您盡量使用顯示名稱。|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|是|<xref:System.ServiceModel.Activities.Receive>將活動拖放到活動設計工具介面上的**要求**區塊中。|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|否|<xref:System.Activities.Activity>將放入活動設計工具介面上的**主體**區塊中。|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|是|將 <xref:System.ServiceModel.Activities.Receive> 活動放置到活動設計工具介面上的 **要求** 區塊。|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|否|<xref:System.Activities.Activity>將加入至活動設計工具介面上的**主體**區塊。|
 
 ## <a name="see-also"></a>另請參閱
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [Receive](../workflow-designer/receive-activity-designer.md)
+- [收到](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
 - [發送](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

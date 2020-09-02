@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2ed5d86599fa99b9c1360b414b37ef95ab59082d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79303026"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89313428"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
-C# IntelliSense 在編輯器中編碼時，在["即時模式"](../ide/reference/immediate-window.md)命令視窗中進行調試時可用。
+在編輯器中撰寫程式碼，以及在即時 [模式](../ide/reference/immediate-window.md) 命令視窗中進行偵錯工具時，都可以使用 c # IntelliSense。
 
 ## <a name="completion-lists"></a>自動完成清單
 
@@ -35,15 +35,15 @@ C# 中的 IntelliSense 完成清單包含來自清單成員和自動完成文字
 
 - 擴充方法
 
-C# 中的自動完成清單也十分聰明，可以篩選掉不相關的語彙基元，並根據內容預先選取語彙基元。 有關詳細資訊，請參閱[篩選的完成清單](#filtered-completion-lists)。
+C# 中的自動完成清單也十分聰明，可以篩選掉不相關的語彙基元，並根據內容預先選取語彙基元。 如需詳細資訊，請參閱篩選後的 [完成清單](#filtered-completion-lists)。
 
 ### <a name="code-snippets-in-completion-lists"></a>完成清單中的程式碼片段
 
-C# 完成清單包含程式碼片段，可以協助您在程式中輕鬆地插入預先定義的程式碼主體。 完成清單中顯示為程式碼片段[捷徑文字](../ide/code-snippets-schema-reference.md#shortcut-element)的程式碼片段。 有關預設情況下在 C# 中可用的程式碼片段的詳細資訊，請參閱[C# 程式碼片段](../ide/visual-csharp-code-snippets.md)。
+C# 完成清單包含程式碼片段，可以協助您在程式中輕鬆地插入預先定義的程式碼主體。 完成清單中顯示為程式碼片段[捷徑文字](../ide/code-snippets-schema-reference.md#shortcut-element)的程式碼片段。 如需 c # 中預設可用程式碼片段的詳細資訊，請參閱 [c # 程式碼片段](../ide/visual-csharp-code-snippets.md)。
 
 ### <a name="language-keywords-in-completion-lists"></a>完成清單中的語言關鍵字
 
-C# 的完成清單也包含語言關鍵字。 有關 C# 語言關鍵字的詳細資訊，請參閱[C# 關鍵字](/dotnet/csharp/language-reference/keywords/index)。
+C# 的完成清單也包含語言關鍵字。 如需 c # 語言關鍵字的詳細資訊，請參閱 [c # 關鍵字](/dotnet/csharp/language-reference/keywords/index)。
 
 ### <a name="extension-methods-in-completion-lists"></a>完成清單中的擴充方法
 
@@ -72,13 +72,13 @@ IntelliSense 會利用篩選條件，將不必要的成員從完成名單中移�
 
 - **as 和 is 運算子**：當您鍵入 `as` 或 `is` 關鍵字後按**空格鍵**，即會自動顯示篩選後的完成清單。
 
-- **事件**：鍵入關鍵字`event`時，完成清單僅包含委託類型。
+- **事件**：當您輸入關鍵字時 `event` ，完成清單只會包含委派類型。
 
 - **參數說明**會自動排序到符合您所輸入之參數的第一個方法多載。 如有多個方法多載，您可以使用向上鍵與向下鍵巡覽至清單中下一個可能的多載。
 
 ### <a name="most-recently-used-members"></a>最近使用的成員
 
-IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md) 快顯方塊中選取的成員，自動完成物件名稱。 下次使用**成員清單**時，最近使用的成員顯示在頂部。 會在每個 Visual Studio 工作階段之間，清除最近使用過的成員記錄。
+IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md) 快顯方塊中選取的成員，自動完成物件名稱。 下次您使用 **成員清單**時，最近使用的成員會顯示在頂端。 會在每個 Visual Studio 工作階段之間，清除最近使用過的成員記錄。
 
 ### <a name="override"></a>override
 
@@ -94,7 +94,7 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 
 **加入 using** IntelliSense 作業會自動將必要的 `using` 指示詞新增至程式碼檔案。 此功能可讓您專注在自己所撰寫的程式碼上，而不需要將焦點轉移到其他部分的程式碼。
 
-要啟動 **"使用添加"** 操作，請將游標放置在無法解析的類型引用上。 例如，當您建立主控台應用程式，然後將 `XmlReader` 新增至 `Main` 方法主體時，該行程式碼就會出現紅色波浪線，因為無法解析類型參考。 您可以接著透過 [快速動作]**** 叫用**新增 using**。 只有當游標停在未繫結的類型上時，才會顯示 [快速動作]****。
+若要起始 **Add using** 作業，請將游標放在無法解析的類型參考上。 例如，當您建立主控台應用程式，然後將 `XmlReader` 新增至 `Main` 方法主體時，該行程式碼就會出現紅色波浪線，因為無法解析類型參考。 您可以接著透過 [快速動作]**** 叫用**新增 using**。 只有當游標停在未繫結的類型上時，才會顯示 [快速動作]****。
 
 ![新增 using，快速動作展開的影像](../ide/media/addusing-quickaction.png)
 
@@ -106,15 +106,15 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 
 ### <a name="implement-interface"></a>實作介面
 
-IntelliSense 提供了一個選項，可説明您在代碼編輯器中工作時實現[介面](/dotnet/csharp/language-reference/keywords/interface)。 一般來說，若要正確地實作介面，必須為類別中介面的每位成員建立方法宣告。 使用 IntelliSense，在類聲明中鍵入介面的名稱後，將顯示**一個快速操作**燈泡。 您可利用燈泡，選擇要使用明確或隱含命名的方式進行自動實作介面。 在明確命名下，方法宣告會帶有介面的名稱。 在隱含命名下，方法宣告不會指出其所屬介面。 明確命名的介面方法只可透過介面執行個體而不是透過類別執行個體加以存取。 有關詳細資訊，請參閱[明確介面實作](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)。
+在程式碼編輯器中工作時，IntelliSense 提供可協助您執行 [介面](/dotnet/csharp/language-reference/keywords/interface) 的選項。 一般來說，若要正確地實作介面，必須為類別中介面的每位成員建立方法宣告。 使用 IntelliSense，在類別宣告中輸入介面名稱後，就會顯示 [ **快速動作** ] 燈泡。 您可利用燈泡，選擇要使用明確或隱含命名的方式進行自動實作介面。 在明確命名下，方法宣告會帶有介面的名稱。 在隱含命名下，方法宣告不會指出其所屬介面。 明確命名的介面方法只可透過介面執行個體而不是透過類別執行個體加以存取。 如需詳細資訊，請參閱 [明確介面實行](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)。
 
 實作介面將會產生滿足介面所需之方法虛設常式的數目下限。 如果基底類別實作部分的介面，則不會重新產生那些虛設常式。
 
 ### <a name="implement-abstract-base-class"></a>實作抽象基底類別
 
-在使用程式碼編輯器時，IntelliSense 提供您可自動實作抽象基底類別成員的選項。 一般而言，實作抽象基底類別的成員需要針對衍生類別中抽象基底類別的每個方法建立新的方法定義。 使用 IntelliSense，在類聲明中鍵入抽象基類的名稱後，將顯示**一個快速操作**燈泡。 燈泡提供您自動實作基底類別方法的選項。
+在使用程式碼編輯器時，IntelliSense 提供您可自動實作抽象基底類別成員的選項。 一般而言，實作抽象基底類別的成員需要針對衍生類別中抽象基底類別的每個方法建立新的方法定義。 使用 IntelliSense，在類別宣告中輸入抽象基類的名稱後，就會顯示 **快速動作** 燈泡。 燈泡提供您自動實作基底類別方法的選項。
 
-**實現抽象基類**功能生成的方法存根由檔*方法庫.snippet*中定義的程式碼片段建模。 程式碼片段是可以修改的。 如需詳細資訊，請參閱[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)。
+由「 **執行抽象基類** 」功能所產生的方法存根，會由 *MethodStub*檔案中所定義的程式碼片段進行模型化。 程式碼片段是可以修改的。 如需詳細資訊，請參閱[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)。
 
 ### <a name="generate-from-usage"></a>使用時產生
 
@@ -124,7 +124,7 @@ IntelliSense 提供了一個選項，可説明您在代碼編輯器中工作時�
 
 - 按一下未定義的識別碼。 [快速動作]**** 錯誤燈泡會出現在識別碼下。 按一下錯誤燈泡。
 
-- 按一下未定義的識別碼，然後按**Ctrl**+**。** **（Ctrl** = 期間）。
+- 按一下未定義的識別碼，然後按下**Ctrl** + **。**  (**Ctrl** + 句號) 。
 
 - 以滑鼠右鍵按一下未定義的識別碼，然後按一下 [快速動作及重構]****。
 
@@ -134,7 +134,7 @@ IntelliSense 提供了一個選項，可説明您在代碼編輯器中工作時�
 
 - **產生欄位**
 
-- **生成方法**
+- **產生方法**
 
 - **產生類別**
 
@@ -144,18 +144,18 @@ IntelliSense 提供了一個選項，可説明您在代碼編輯器中工作時�
 
 在程式碼編輯器中，IntelliSense 可協助您將方法 (事件處理常式) 連結到事件欄位。
 
-當您在`+=`*.cs*檔中的事件欄位後鍵入運算子時，IntelliSense 會提示您選擇按**Tab**鍵的選項。 這會插入委派的新執行個體，指向處理事件的方法。
+當您在 .cs 檔案的 `+=` 事件欄位後面輸入運算子 *.cs*時，IntelliSense 會提示您按下**tab**鍵的選項。 這會插入委派的新執行個體，指向處理事件的方法。
 
 ![按鈕自動連結](../ide/media/vxautohookup.gif)
 
-如果按**Tab**，IntelliSense 會自動完成該語句，並在代碼編輯器中顯示為選定文本的事件處理常式引用。 要完成自動事件連接，IntelliSense 會提示您再次按**Tab**鍵為事件處理常式創建空存根。
+如果您按下 **tab**鍵，IntelliSense 會自動為您完成語句，並在程式碼編輯器中將事件處理常式參考顯示為選取的文字。 為了完成自動事件連結，IntelliSense 會提示您再次按下 **tab** 鍵，為事件處理常式建立空白的存根。
 
 ![產生事件處理常式](../ide/media/vxgenerateeventhandler.gif)
 
 > [!NOTE]
 > 如果 IntelliSense 建立的新委派，參考的是現有的事件處理常式，IntelliSense 就會在工具提示中傳達這項資訊。 接著您就可以修改此參考，程式碼編輯器中已選取該文字。 否則，自動事件連結即於此刻完成。
 
-如果按**Tab**，IntelliSense 會挖出具有正確簽名的方法，並將游標放在事件處理常式的正文中。
+如果您按下 **tab**鍵，IntelliSense 會以正確的簽章來取代方法，並將游標放在事件處理常式的主體中。
 
 > [!NOTE]
 > 使用 [檢視]**** 功能表上的 [向後巡覽]**** 命令 (**Ctrl**+**-**)，返回事件連結陳述式。

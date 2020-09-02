@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301878"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89313025"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Visual Studio 的環境設定
 
@@ -32,7 +32,7 @@ ms.locfileid: "79301878"
 
 若要在第一次開啟 Visual Studio 之後變更開發設定，請遵循下列步驟：
 
-1. 從功能表列中選擇 **"工具** > **導入和匯出設置"** 以打開 **"導入和匯出設置"嚮導**。
+1. 從功能表列選取 [**工具**匯  >  **入和匯出設定**]，以開啟 [匯**入和匯出設定] Wizard**。
 
 1. 在 [匯入和匯出設定精靈]**** 中，選取 [重設所有設定]****，然後選取 [下一步]****。
 
