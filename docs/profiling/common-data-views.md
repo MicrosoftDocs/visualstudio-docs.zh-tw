@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 39af1975dc3bcb0f5df729579ca1af38fa60160f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74777825"
 ---
 # <a name="common-data-views"></a>一般資料檢視
@@ -27,11 +27,11 @@ ms.locfileid: "74777825"
 
  描述摘要檢視和報表。 資料行取決於分析方法。
 
-- [呼叫者/被叫方視圖](../profiling/caller-callee-view.md)
+- [呼叫端/被呼叫者視圖](../profiling/caller-callee-view.md)
 
  描述呼叫樹狀圖檢視和報表。 資料行取決於分析方法。
 
-- [調用樹狀檢視](../profiling/call-tree-view.md)
+- [呼叫樹狀檢視](../profiling/call-tree-view.md)
 
  描述呼叫樹狀圖檢視和報表。 資料行取決於分析方法。
 
@@ -43,15 +43,15 @@ ms.locfileid: "74777825"
 
  描述函式檢視和報表。 資料行取決於分析方法。
 
-- [線視圖](../profiling/lines-view.md)
+- [線條視圖](../profiling/lines-view.md)
 
  描述程式行檢視和報表。 資料行取決於分析方法。
 
-- [指令指標 （IP） 視圖](../profiling/instruction-pointers-ips-view.md)
+- [ (Ip) 視圖的指令指標](../profiling/instruction-pointers-ips-view.md)
 
  描述指令指標 (IP) 檢視和報表。 資料行取決於分析方法。
 
-- [流程視圖](../profiling/process-view.md)
+- [進程視圖](../profiling/process-view.md)
 
  列出處理序和執行緒開始和結束時間。
 
@@ -60,7 +60,7 @@ ms.locfileid: "74777825"
  列出已插入程式碼剖析資料檔中的 ETW 和取樣事件。
 
 ## <a name="related-sections"></a>相關章節
-- [採樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)
+- [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)
 
  使用取樣方法所產生的分析工具資料檔案之檢視和報表的參考資訊。
 

@@ -14,25 +14,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2d3247fb421800f87740a911563880b70abf3eed
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844725"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：以處理序 Managed 記憶體限制執行的 32 位元應用程式
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：執行 32 位元的應用程式時，處理序的記憶體限制會受到管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 規則識別碼 |DA0018 |  
-|類別 |分析工具使用方式 |  
-|程式碼剖析方法 |取樣 |  
+|類別 |分析工具使用量 |  
+|分析方法 |取樣 |  
 |訊息 |受控記憶體配置接近32位進程的預設限制。 您的應用程式可能是記憶體繫結。|  
 |規則類型 |警告 |  
   
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  
   
 ## <a name="cause"></a>原因  
- 分析執行期間收集的系統資料指出，.NET Framework 記憶體堆積已接近 Managed 堆積在 32 位元處理序中可以到達的大小上限。 此大小上限是預設值。 此值是根據可為私用位元組配置的處理序位址空間總量。 報告的值是當分析的處理序作用中時，堆積的最大觀察值。 請考慮使用 .NET 記憶體程式碼剖析方法再次嘗試程式碼剖析，並最佳化應用程式使用的受管理資源。  
+ 分析執行期間收集的系統資料指出，.NET Framework 記憶體堆積已接近 Managed 堆積在 32 位元處理序中可以到達的大小上限。 此大小上限是預設值。 此值是根據可為私用位元組配置的處理序位址空間總量。 報告的值是當分析的處理序作用中時，堆積的最大觀察值。 請考慮使用 .NET 記憶體分析方法再次進行分析，並最佳化應用程式使用的 Managed 資源。  
   
  當 Managed 堆積的大小接近預設限制時，可能需要更頻繁地叫用自動記憶體回收處理序。 這會增加記憶體管理的負擔。  
   
@@ -46,7 +46,7 @@ ms.locfileid: "75844725"
  當 Managed 堆積的總大小接近預設限制時，記憶體管理的負擔通常會變大而開始影響應用程式的回應性和延展性。  
   
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告  
- 按兩下 [錯誤清單] 視窗中的訊息，瀏覽至[標記](../profiling/marks-view.md)檢視。 尋找 **.NET CLR Memory\\# Bytes in all Heaps** 和 **# Total committed bytes** 欄。 判斷是否有特定的程式執行階段，當中的 Managed 記憶體配置比其他階段更繁重。 將 **# Bytes in all Heaps** 欄的值與 **.NET CLR Memory\\# of Gen 0 Collections**、 **.NET CLR Memory\\# of Gen 1 Collections** 和 **.NET CLR Memory\\# of Gen 2 Collections** 欄中報告的記憶體回收速度比較，判斷 Managed 記憶體配置的模式是否會影響記憶體回收的速率。  
+ 按兩下 [錯誤清單] 視窗中的訊息，流覽至 [ [標記](../profiling/marks-view.md) ] view。 尋找 **.NET CLR Memory\\# Bytes in all Heaps** 和 **# Total committed bytes** 欄。 判斷是否有特定的程式執行階段，當中的 Managed 記憶體配置比其他階段更繁重。 將 **# Bytes in all Heaps** 欄的值與 **.NET CLR Memory\\# of Gen 0 Collections**、**.NET CLR Memory\\# of Gen 1 Collections** 和 **.NET CLR Memory\\# of Gen 2 Collections** 欄中報告的記憶體回收速度比較，判斷 Managed 記憶體配置的模式是否會影響記憶體回收的速率。  
   
  在 .NET Framework 應用程式中，通用語言執行平台限制 Managed 堆積的大小上限要稍微小於處理序位址空間之私用區域部分大小上限的一半。 對於在 32 位元電腦上執行的 32 位元處理序，2GB 代表處理序位址空間之私用部分的上限。 當 Managed 堆積的總大小開始接近預設限制時，可能會增加管理記憶體的負擔，且會降低應用程式效能。  
   

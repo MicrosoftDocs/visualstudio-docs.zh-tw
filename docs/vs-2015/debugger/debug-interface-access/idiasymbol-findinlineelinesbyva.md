@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7f1bb0af59cfa4c9ee3ba27003f985361cde9241
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149917"
 ---
 # <a name="idiasymbolfindinlineelinesbyva"></a>IDiaSymbol::findInlineeLinesByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取列舉型別，可讓用戶端來逐一查看的是內嵌，直接或間接地在這個符號內指定的虛擬位址 (VA) 中的所有函式的行號資訊。  
+抓取列舉，此列舉可讓用戶端逐一查看在指定虛擬位址 (VA) 內，直接或間接內嵌于此符號中的所有函式的行號資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,16 +35,16 @@ HRESULT findInlineeLinesByVA ( 
   
 #### <a name="parameters"></a>參數  
  `va`  
- [in]指定的位址為瑞斯  
+ 在將位址指定為 VA。  
   
  `length`  
- [in]指定位址範圍中涵蓋此查詢使用的位元組數目。  
+ 在指定要包含在此查詢中的位址範圍（以位元組數為單位）。  
   
  `ppResult`  
- [out]保存`IDiaEnumLineNumbers`物件，其中包含所擷取的行號的清單。  
+ 擴展保存 `IDiaEnumLineNumbers` 物件，其中包含所抓取行號的清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

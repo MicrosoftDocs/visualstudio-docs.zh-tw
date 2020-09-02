@@ -1,5 +1,5 @@
 ---
-title: 除錯器上下文 |微軟文件
+title: 偵錯工具內容 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,33 +11,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 56825fe299147e60c5ed9dfcefa491a427ab59e4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738970"
 ---
-# <a name="debugger-contexts"></a>除錯器上下文
-在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]除錯中,除錯引擎 (DE) 在幾個不同的上下文中同時運行,如下所示:
+# <a name="debugger-contexts"></a>偵錯工具內容
+在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 調試中，debug engine (DE) 在數個不同的內容中同時運作，如下所示：
 
-- 代碼上下文,它描述程式執行流中的當前位置。
+- 程式碼內容，描述程式執行資料流程中的目前位置。
 
-- 文件上下文或位置,用於描述源文檔中的當前位置。
+- 檔內容或位置，描述來源文件中的目前位置。
 
-- 表達式計算上下文,它描述將進行表達式計算的上下文。
+- 運算式評估內容，描述將在其中進行運算式評估的內容。
 
 ## <a name="in-this-section"></a>本節內容
- [代碼內容](../../extensibility/debugger/code-context.md)將代碼上下文作為當今運行時體系結構中程式指令流中的地址討論,而非傳統語言則不由指令表示,但使用其他一些方法。
+ 程式[代碼內容](../../extensibility/debugger/code-context.md)在目前的執行時間架構與非傳統語言中，將程式碼內容討論為程式指令資料流程中的位址，其中程式碼可能不會以指示表示，但還有其他方法。
 
- [文件位置](../../extensibility/debugger/document-position.md)通過在源檔中的位置(如IDE已知)的抽象來定義Visual Studio調試中的文檔位置。
+ [檔位置](../../extensibility/debugger/document-position.md) 藉由在原始程式檔中的位置抽象化（如 IDE 已知）來定義 Visual Studio 的檔位置。
 
- [文件內容](../../extensibility/debugger/document-context.md)討論視覺化工作室調試中相對於源檔表示的文檔上下文。 還討論了符號處理程式如何將代碼上下文映射到文檔上下文。
+ [檔內容](../../extensibility/debugger/document-context.md) 討論與原始檔相關的 Visual Studio 錯錯中的檔內容。 此外也會討論符號處理常式如何將程式碼內容對應至檔內容。
 
- [運算式運算內容](../../extensibility/debugger/expression-evaluation-context.md)提供有關可視化工作室中的表達式評估上下文的資訊。 例如,與堆疊框架關聯的表達式計算上下文提供用於評估局部變數、方法參數和類成員的上下文。
+ [運算式評估內容](../../extensibility/debugger/expression-evaluation-context.md) 提供 Visual Studio 中運算式評估內容的相關資訊。 例如，與堆疊框架相關聯的運算式評估內容會提供用來評估區域變數、方法參數和類別成員的內容。
 
 ## <a name="related-sections"></a>相關章節
- [除錯概念](../../extensibility/debugger/debugger-concepts.md)描述主要的調試體系結構概念。
+ [Debug 概念](../../extensibility/debugger/debugger-concepts.md) 描述主要的調試架構概念。
 
- [除錯元件](../../extensibility/debugger/debugger-components.md)提供 Visual Studio 除錯元件的概述,其中包括除錯引擎 (DE)、運算式賦值器 (EE) 和符號處理程式 (SH)。
+ [Debug 元件](../../extensibility/debugger/debugger-components.md) 概要說明 Visual Studio 的偵錯工具元件，其中包括 debug engine (DE) 、運算式評估工具 (EE) ，以及符號處理常式 (SH) 。
 
- [除錯工作](../../extensibility/debugger/debugging-tasks.md)包含指向各種除錯任務的連結,例如啟動程式和評估運算式。
+ [調試作業](../../extensibility/debugger/debugging-tasks.md) 包含各種偵錯工具的連結，例如啟動程式和評估運算式。

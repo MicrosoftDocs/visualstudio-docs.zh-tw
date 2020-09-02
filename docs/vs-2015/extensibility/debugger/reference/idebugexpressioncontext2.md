@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2 | Microsoft Docs
+title: IDebugExpressionCoNtext2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a18f546cf43ddff7f445ac0aa04a337487de0538
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192139"
 ---
 # <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
@@ -30,33 +30,33 @@ ms.locfileid: "68192139"
 IDebugExpressionContext2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- 偵錯引擎 (DE) 會實作這個介面來表示可以在其中評估運算式的內容。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ Debug engine (DE) 會執行這個介面，以代表可評估運算式的內容。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 呼叫[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)傳回這個介面。 只有在已暫停，正在偵錯程式，而一個堆疊框架是可存取此介面。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 對 [GetExpressionCoNtext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) 的呼叫會傳回這個介面。 只有在正在進行程式設計的程式已暫停，而且有堆疊框架可用時，才可以存取此介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDebugExpressionContext2`。  
+ 下表顯示的方法 `IDebugExpressionContext2` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetName](../../../extensibility/debugger/reference/idebugexpressioncontext2-getname.md)|擷取評估內容的名稱。|  
-|[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)|剖析的文字為基礎的運算式進行評估。|  
+|[GetName](../../../extensibility/debugger/reference/idebugexpressioncontext2-getname.md)|抓取評估內容的名稱。|  
+|[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)|剖析以文字為基礎的運算式以進行評估。|  
   
 ## <a name="remarks"></a>備註  
  評估內容可以視為執行運算式評估的範圍。  
   
- 當程式已停止執行時，工作階段的偵錯管理員 (SDM) 會從呼叫 DE 取得堆疊框架[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)。 然後呼叫 SDM [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)若要取得`IDebugExpressionContext2`介面。 這之後藉由呼叫[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)來建立[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)介面，表示剖析準備要評估的運算式。  
+ 當程式停止時，會話 debug manager (SDM) 從 EnumFrameInfo 取得堆疊框架，並呼叫[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)。 然後 SDM 會呼叫 [GetExpressionCoNtext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) 以取得 `IDebugExpressionContext2` 介面。 接下來就是呼叫 [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 來建立 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) 介面，此介面表示準備要評估的已剖析運算式。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
- [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)   
+ [GetExpressionCoNtext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)   
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)

@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO |微軟文件
+title: MODULE_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 59ab4d0bb2a7aaa4b08f616ea0a99be85b521bb0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714306"
 ---
 # <a name="module_info"></a>MODULE_INFO
-描述特定模組(DLL、EXE 或程式集)。
+描述 (DLL、EXE 或元件) 的特定模組。
 
 ## <a name="syntax"></a>語法
 
@@ -63,7 +63,7 @@ public struct MODULE_INFO { 
 
 ## <a name="members"></a>成員
  `dwValidFields`\
- [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)枚舉中的標誌的組合,用於指定填寫哪些欄位。
+ [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)列舉中的旗標組合，可指定要填寫的欄位。
 
  `m_bstrName`\
  模組名稱。
@@ -75,13 +75,13 @@ public struct MODULE_INFO { 
  模組版本。
 
  `m_bstrDebugMessage`\
- 有關模組的可選消息,例如,"無法載入符號"。
+ 關於此模組的選擇性訊息，例如「無法載入符號」。
 
  `m_addrLoadAddress`\
  模組載入位址。
 
  `m_addrPreferredLoadAddress`\
- 模組的首選負載位址。
+ 模組慣用的載入位址。
 
  `m_dwSize`\
  模組大小。
@@ -90,25 +90,25 @@ public struct MODULE_INFO { 
  模組載入順序。
 
  `m_TimeStamp`\
- 上次修改符號文件的時間。
+ 上次修改符號檔的時間。
 
  `m_bstrUrlSymbolLocation`\
- 符號檔的位置(例如,".")\\在模組中指定。 用作查找模組符號的起始位置。
+ 符號檔的位置 (例如 ". \\ "模組中指定的 ) 。 作為尋找模組符號的起始位置。
 
  `m_dwModuleFlags`\
- 描述模組[MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)枚舉的標誌的組合。
+ 描述模組的 [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) 列舉中的旗標組合。
 
 ## <a name="remarks"></a>備註
- 此結構傳遞給填寫它的[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)方法。
+ 此結構會傳遞至其填入的 [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) 方法。
 
- 此結構對應於 **「模組」** 視窗中列出的每個模組。
+ 此結構會對應至 [ **模組** ] 視窗中所列的每個模組。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f9fd6e4b8f579500552205aabd280c2d2e79e83
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149887"
 ---
 # <a name="idiasymbolfindinlineframesbyrva"></a>IDiaSymbol::findInlineFramesByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取列舉型別，可讓用戶端來逐一查看所有內嵌上的框架指定相對虛擬位址 (RVA)。  
+抓取列舉，可讓用戶端在指定的相對虛擬位址 (RVA) 上，逐一查看所有的內嵌框架。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,13 +33,13 @@ HRESULT findInlineFramesByRVA (    DWORD             rva,
   
 #### <a name="parameters"></a>參數  
  `rva`  
- [in]RVA 為指定的位址。  
+ 在將位址指定為 RVA。  
   
  `ppResult`  
- [out]保存`IDiaEnumSymbols`物件，其中包含所擷取的畫面格的清單。  
+ 擴展保存 `IDiaEnumSymbols` 物件，其中包含所抓取的框架清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

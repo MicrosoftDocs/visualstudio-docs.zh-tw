@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 891a5c44159d10aacbb767cbc5376ae1d62252b0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547052"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>如何：以程式設計方式儲存 Visio 檔
@@ -31,7 +31,7 @@ ms.locfileid: "85547052"
 
   如需詳細資訊，請參閱 [Microsoft.Office.Interop.Visio.Document.Save](/office/vba/api/Visio.Document.Save) 方法、 [Microsoft.Office.Interop.Visio.Document.SaveAs](/office/vba/api/Visio.Document.SaveAs) 方法和 [Microsoft.Office.Interop.Visio.Document.SaveAsEx](/office/vba/api/Visio.Document.SaveAsEx) 方法的 VBA 參考文件。
 
-## <a name="save-an-existing-document"></a>儲存現有的檔
+## <a name="save-an-existing-document"></a>儲存現有檔
 
 ### <a name="to-save-a-document"></a>儲存文件
 
@@ -45,7 +45,7 @@ ms.locfileid: "85547052"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#11)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#11)]
 
-## <a name="save-a-document-with-a-new-name"></a>以新名稱儲存檔
+## <a name="save-a-document-with-a-new-name"></a>使用新名稱儲存檔
  使用 `Microsoft.Office.Interop.Visio.Document.SaveAs` 方法儲存新的文件或有新名稱的文件。 這個方法需要指定新的檔案名稱。
 
 ### <a name="to-save-the-active-visio-document-with-a-new-name"></a>以新名稱儲存使用中的 Visio 文件
@@ -57,7 +57,7 @@ ms.locfileid: "85547052"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#10](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#10)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#10](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#10)]
 
-## <a name="save-a-document-with-a-new-name-and-specified-arguments"></a>以新的名稱和指定的引數儲存檔
+## <a name="save-a-document-with-a-new-name-and-specified-arguments"></a>使用新名稱和指定的引數儲存檔
  使用 `Microsoft.Office.Interop.Visio.Document.SaveAsEx` 方法儲存具有新名稱的文件，並指定所有適用的引數套用至文件。
 
 ### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>以新名稱和指定的引數儲存文件
@@ -72,10 +72,10 @@ ms.locfileid: "85547052"
 ## <a name="compile-the-code"></a>編譯程式碼
  這段程式碼範例需要下列項目：
 
-- 若要儲存具有新名稱的檔， `Test` 必須在 [*我的文件*] 資料夾（適用于 windows XP 及更早版本）或 [*檔*] 資料夾（windows Vista）中找到名為的目錄。
+- 若要儲存具有新名稱的檔，名為的目錄 `Test` 必須位於 WINDOWS XP 和舊版) 的 *我的檔* 資料夾 (，或適用于 windows Vista) 的 [ *檔* ] 資料夾 (。
 
 ## <a name="see-also"></a>另請參閱
-- [Visio 解決方案](../vsto/visio-solutions.md)
+- [Visio 方案](../vsto/visio-solutions.md)
 - [Visio 物件模型總覽](../vsto/visio-object-model-overview.md)
 - [如何：以程式設計方式建立新的 Visio 檔](../vsto/how-to-programmatically-create-new-visio-documents.md)
 - [如何：以程式設計方式開啟 Visio 檔](../vsto/how-to-programmatically-open-visio-documents.md)

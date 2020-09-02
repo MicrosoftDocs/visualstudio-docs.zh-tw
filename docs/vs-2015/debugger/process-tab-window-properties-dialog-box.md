@@ -1,5 +1,5 @@
 ---
-title: 處理索引標籤上，視窗屬性對話方塊 |Microsoft Docs
+title: 視窗屬性對話方塊、進程索引標籤 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,20 +12,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4a8d4726ba91be6df455d16907a0cf122cc1effa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192328"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>視窗屬性對話方塊、處理序索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-使用**程序**索引標籤以識別的選取的視窗程序。 若要顯示[視窗中 [屬性] 對話方塊中](../debugger/window-properties-dialog-box.md)，焦點移至[Windows 檢視](../debugger/windows-view.md)視窗。 在樹狀目錄中，選取視窗的任何節點，然後選擇**屬性**從**檢視**功能表。  
+使用 [ **流程** ] 索引標籤來識別所選視窗的進程。 若要顯示 [ [視窗屬性] 對話方塊](../debugger/window-properties-dialog-box.md)，請將焦點移至 [ [Windows View](../debugger/windows-view.md) ] 視窗。 選取樹狀結構中的任何視窗節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。  
   
- 下列設定位於**程序** 索引標籤：  
+ [ **流程** ] 索引標籤提供下列設定：  
   
-|進入|說明|  
+|進入|描述|  
 |-----------|-----------------|  
-|**處理序 ID**|擁有建立這個視窗的執行緒的處理序識別碼。 選擇此值，以檢視此程序的屬性。|  
-|**執行緒 ID**|建立這個視窗的執行緒識別碼。 選擇此值，以檢視此執行緒的內容。|
+|**處理序識別碼**|擁有建立此視窗之執行緒的進程識別碼。 選擇此值以查看此進程的屬性。|  
+|**執行緒識別碼**|建立此視窗之執行緒的識別碼。 選擇此值以查看此執行緒的屬性。|

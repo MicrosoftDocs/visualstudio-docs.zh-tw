@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FIELDS |微軟文件
+title: MACHINE_INFO_FIELDS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 89a2552bb6a8bea88f54a897b829ab89b30ff413
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714509"
 ---
 # <a name="machine_info_fields"></a>MACHINE_INFO_FIELDS
-指定要檢索特定計算機的資訊類型。
+指定要針對特定電腦取出的資訊類型。
 
 ## <a name="syntax"></a>語法
 
@@ -46,27 +46,27 @@ public enum enum_MACHINE_INFO_FIELDS { 
 
 ## <a name="fields"></a>欄位
  `MCIF_NAME`\
- 初始化/使用結構`bstrName`中的欄位。
+ 初始化/使用 `bstrName` 結構中的欄位。
 
  `MCIF_FLAGS`\
- 初始化/使用結構`Flags`中的欄位。
+ 初始化/使用 `Flags` 結構中的欄位。
 
  `MIF_ALL`\
  初始化/使用結構中的所有欄位。
 
 ## <a name="remarks"></a>備註
- 這些值將傳遞給[GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)方法,以指示要初始化[MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)結構的成員。
+ 這些值會傳遞至 [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) 方法，以指出要初始化 [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) 結構的哪些成員。
 
- 還用於結構`Fields`的成員,`MACHINE_INFO`以指示哪些欄位被使用和有效。
+ 也可用於結構的成員中， `Fields` `MACHINE_INFO` 以指出哪些欄位已使用且有效。
 
- 這些旗標可以稍微`OR`結合 。
+ 這些旗標可以與位結合 `OR` 。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugGeneric欄位定義::構造即時性 |微軟文件
+title: IDebugGenericFieldDefinition：： ConstructInstantiation |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 352018e50b955ed414af974bc21b62775fd55f53
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728258"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
-建構給定類型參數陣列的欄位實例。
+在給定型別引數的陣列時，建立欄位實例。
 
 ## <a name="syntax"></a>語法
 
@@ -44,19 +44,19 @@ int ConstructInstantiation(
 
 ## <a name="parameters"></a>參數
 `cArgs`\
-[在]陣列中的`ppArgs`參數數。
+在陣列中的引數數目 `ppArgs` 。
 
 `ppArgs`\
-[在]包含類型參數的陣列。 類型參數必須是閉合類型(非泛型或完全實例化泛型)。
+在包含型別引數的陣列。 型別引數必須是封閉式類型 (非泛型或完全具現化的泛型) 。
 
 `ppConstructedField`\
-[出]返回表示新欄位的[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面。
+擴展傳回代表新欄位的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 介面。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 未檢查約束。
+ 不會檢查條件約束。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

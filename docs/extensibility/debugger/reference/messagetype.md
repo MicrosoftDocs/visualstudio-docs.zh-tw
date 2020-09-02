@@ -1,5 +1,5 @@
 ---
-title: 消息類型 |微軟文件
+title: MESSAGETYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b4d0fd12495a59427500c16ef6f37d9f8b6e61f5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714491"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
-指定消息類型和原因。
+指定訊息類型和原因。
 
 ## <a name="syntax"></a>語法
 
@@ -52,34 +52,34 @@ public enum enum_MESSAGETYPE { 
 
 ## <a name="fields"></a>欄位
  `MT_OUTPUTSTRING`\
- 指示應將消息發送到輸出視窗。 這是來自`MT_MESSAGEBOX`的相互排斥。
+ 指出訊息應該傳送至 [輸出] 視窗。 這與的互斥 `MT_MESSAGEBOX` 。
 
  `MT_MESSAGEBOX`\
- 指示消息應顯示在消息框中。 這是來自`MT_OUTPUTSTRING`的相互排斥。
+ 指出訊息應該會顯示在訊息方塊中。 這與的互斥 `MT_OUTPUTSTRING` 。
 
  `MT_TYPE_MASK`\
- 用於隔離消息目標的掩碼值。
+ 用來隔離訊息目的地的遮罩值。
 
  `MT_REASON_EXCEPTION`\
- 指示消息框由於異常而顯示。 這是來自`MT_REASON_TRACEPOINT`的相互排斥。
+ 表示顯示為例外狀況結果的訊息方塊。 這與的互斥 `MT_REASON_TRACEPOINT` 。
 
  `MT_REASON_TRACEPOINT`\
- 指示由於命中跟蹤點而顯示消息框。 這是相互排斥的`MT_REASON_EXCEPTION`。
+ 指出因達到追蹤點而顯示訊息方塊。 這對而言是互斥的 `MT_REASON_EXCEPTION` 。
 
  `MT_REASON_MASK`\
- 用於隔離顯示消息原因的掩碼值。
+ 用來隔離顯示訊息原因的遮罩值。
 
 ## <a name="remarks"></a>備註
- 這些值從[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)和[GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)方法返回。
+ 這些值會從 [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) 和 [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) 方法傳回。
 
- 其中一個原因值可以使用位值`OR`與輸出目標值之一組合。
+ 其中一個原因值可以使用位來與其中一個輸出目的地值結合 `OR` 。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

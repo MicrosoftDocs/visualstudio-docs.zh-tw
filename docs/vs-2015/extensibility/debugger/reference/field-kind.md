@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND | Microsoft Docs
+title: FIELD_KIND |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ab972df2cf1b382498d2e57a5ae2e978c7230a34
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65692882"
 ---
-# <a name="fieldkind"></a>FIELD_KIND
+# <a name="field_kind"></a>FIELD_KIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定之欄位中所包含的種類[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。  
+指定 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 物件中所含的欄位種類。  
   
 ## <a name="syntax"></a>語法  
   
@@ -125,118 +125,118 @@ public enum enum_FIELD_KIND {
   
 ## <a name="members"></a>成員  
  FIELD_KIND_TYPE  
- 表示欄位是僅限型別。  
+ 表示欄位只是型別。  
   
  FIELD_KIND_SYMBOL  
- 表示欄位是一種符號，使用型別、 名稱和其他資訊。  
+ 表示欄位是符號，其類型、名稱和其他資訊。  
   
  FIELD_TYPE_PRIMITIVE  
- 表示欄位的基本資料類型。  
+ 表示欄位是基本資料類型。  
   
  FIELD_TYPE_STRUCT  
- 表示欄位是一種結構。  
+ 表示欄位為結構。  
   
  FIELD_TYPE_CLASS  
- 表示欄位的類別。  
+ 表示欄位為類別。  
   
  FIELD_TYPE_INTERFACE  
- 表示欄位是一種介面。  
+ 表示欄位為介面。  
   
  FIELD_TYPE_UNION  
- 表示欄位是等位。  
+ 表示欄位為聯集。  
   
  FIELD_TYPE_ARRAY  
- 表示欄位是一個陣列。  
+ 表示欄位為數組。  
   
  FIELD_TYPE_METHOD  
- 表示欄位是一種方法。  
+ 表示欄位是方法。  
   
  FIELD_TYPE_BLOCK  
- 表示欄位是一個區塊。  
+ 表示此欄位為區塊。  
   
  FIELD_TYPE_POINTER  
- 表示欄位的指標。  
+ 表示欄位是指標。  
   
  FIELD_TYPE_ENUM  
- 表示欄位是列舉的資料類型。  
+ 表示欄位是列舉資料類型。  
   
  FIELD_TYPE_LABEL  
- 表示欄位的標籤。  
+ 表示欄位是標籤。  
   
  FIELD_TYPE_TYPEDEF  
- 表示欄位是其 typedef。  
+ 表示此欄位為 typedef。  
   
  FIELD_TYPE_BITFIELD  
- 表示欄位是位元欄位。  
+ 表示欄位是位位。  
   
  FIELD_TYPE_NAMESPACE  
- 表示欄位是命名空間。  
+ 表示此欄位為命名空間。  
   
  FIELD_TYPE_MODULE  
- 表示欄位是一個模組。  
+ 表示欄位為模組。  
   
  FIELD_TYPE_DYNAMIC  
- 表示欄位是動態。  
+ 表示欄位為動態。  
   
  FIELD_TYPE_PROP  
- 表示欄位的屬性。  
+ 表示欄位是屬性。  
   
  FIELD_TYPE_INNERCLASS  
- 表示欄位是內部的類別。  
+ 表示欄位是內部類別。  
   
  FIELD_TYPE_REFERENCE  
- 表示欄位的參考。  
+ 表示欄位為參考。  
   
  FIELD_TYPE_EXTENDED  
  保留供未來使用。  
   
  FIELD_SYM_MEMBER  
- 表示欄位的成員。  
+ 表示欄位是成員。  
   
  FIELD_SYM_LOCAL  
- 表示欄位是本機。  
+ 表示欄位為本機。  
   
  FIELD_SYM_PARAMETER  
  表示欄位是參數。  
   
  FIELD_SYM_THIS  
- 表示欄位是 「 this 」 指標。  
+ 表示此欄位為 "this" 指標。  
   
  FIELD_SYM_GLOBAL  
- 表示全域欄位。  
+ 表示此欄位為 global。  
   
  FIELD_SYM_PROP_GETTER  
- 表示欄位擷取屬性。  
+ 表示欄位會抓取屬性。  
   
  FIELD_SYM_PROP_SETTER  
- 表示欄位設定屬性。  
+ 表示欄位會設定屬性。  
   
  FIELD_SYM_EXTENDED  
  保留供未來使用。  
   
  FIELD_KIND_MASK  
- 表示遮罩的欄位類型。  
+ 表示欄位種類的遮罩。  
   
  FIELD_TYPE_MASK  
- 表示遮罩的欄位類型。  
+ 表示欄位類型的遮罩。  
   
  FIELD_SYM_MASK  
  表示符號資訊的遮罩。  
   
 ## <a name="remarks"></a>備註  
- 從呼叫傳回[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)方法。  
+ 從對 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 方法的呼叫傳回。  
   
- 欄位中，視[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上可呼叫[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)更特定形式的介面的介面。 比方說，如果[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)會傳回`FIELD_TYPE_METHOD`，然後您可以呼叫`QueryInterface`上我`DebugField`取得[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)介面。  
+ 根據欄位類型，可以在[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面上呼叫[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) ，以取得更明確的介面形式。 例如，如果 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 傳回 `FIELD_TYPE_METHOD` ，您就可以呼叫 `QueryInterface` I `DebugField` 來取得 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) 介面。  
   
 ## <a name="requirements"></a>需求  
- 標頭： sh.h  
+ 標頭： sh. h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   
  [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

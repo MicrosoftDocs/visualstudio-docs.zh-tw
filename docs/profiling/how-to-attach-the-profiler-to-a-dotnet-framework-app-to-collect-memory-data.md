@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: dbe8f0cdb976dfb687071b231b2907b6b7124b3a
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328734"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令列將分析工具附加至 .NET Framework 獨立應用程式以收集記憶體資料
@@ -48,7 +48,7 @@ ms.locfileid: "85328734"
 
 3. 啟動分析工具。 輸入：
 
-     **VSPerfCmd/start：範例/output：** `OutputFile`[`Options`]
+     **>vsperfcmd/start：/output 範例：** `OutputFile` [`Options`]
 
    - [/start](../profiling/start.md)**:sample** 選項會初始化程式碼剖析工具。
 
@@ -56,7 +56,7 @@ ms.locfileid: "85328734"
 
      您可以使用下列任一選項搭配 **/start:sample** 選項。
 
-     | 選項 | 說明 |
+     | 選項 | 描述 |
      | - | - |
      | [/user](../profiling/user-vsperfcmd.md) **：**[ `Domain` **\\** ]`UserName` | 指定擁有程式碼剖析處理序之帳戶的網域和使用者名稱。 只有在以登入的使用者之外的使用者身分執行處理序時，才需要這個選項。 處理序擁有者會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [使用者名稱] 欄。 |
      | [/crosssession &#124; /cs](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 工作階段識別碼會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [工作階段識別碼] 欄。 **/crosssession** 可縮寫成 **/CS**。 |
@@ -67,11 +67,11 @@ ms.locfileid: "85328734"
 
 5. 將分析工具附加至目標應用程式。 輸入：
 
-     **VSPerfCmd**[/attach](../profiling/attach.md) **：**{ `PID`&#124;`ProcName` } [[/targetclr](../profiling/targetclr.md)**：** `Version` ]  
+     **>vsperfcmd**[/attach](../profiling/attach.md) **：**{ `PID`&#124;`ProcName` } [[/targetclr](../profiling/targetclr.md)**：** `Version` ]  
 
     - `PID` 指定目標應用程式的處理序 ID。 `ProcessName` 指定處理序的名稱。 請注意，如果您指定 `ProcessName` 且有多個名稱相同的處理序正在執行，則會發生無法預期的結果。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序 ID。
 
-    - **/targetclr：** `Version`指定在應用程式中載入多個版本的執行時間時要分析的 common language runtime （CLR）版本。 選擇性。
+    - **/targetclr：** `Version` 指定當應用程式載入多個版本的執行時間時，要進行分析的 common language runtime 版本 (CLR) 。 選擇性。
 
 ## <a name="control-data-collection"></a>控制資料收集
 
@@ -81,11 +81,11 @@ ms.locfileid: "85328734"
 
 - 下列成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
-    |選項|說明|
+    |選項|描述|
     |------------|-----------------|
     |[/globalon/globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|
     |[/processon](../profiling/processon-and-processoff.md) **：** `PID` [/processoff](../profiling/processon-and-processoff.md) **：**`PID`|開始 (**/processon**) 或停止 (**/processoff**) 對 `PID` 指定的處理序收集資料。|
-    |[/attach](../profiling/attach.md) **：**{ `PID`&#124;`ProcName` } [/detach](../profiling/detach.md)[**：**{ `PID`&#124;`ProcName` }]|**/attach** 會開始收集 `PID` 或處理序名稱 (ProcName) 指定的處理序資料。 **/detach**會停止指定的進程或所有進程（如果未指定特定進程）的資料收集。|
+    |[/attach](../profiling/attach.md) **：**{ `PID`&#124;`ProcName` } [/detach](../profiling/detach.md)[**：**{ `PID`&#124;`ProcName` }]|**/attach** 會開始收集 `PID` 或處理序名稱 (ProcName) 指定的處理序資料。 如果未指定特定進程， **/detach**會停止指定進程或所有進程的資料收集。|
 
 ## <a name="end-the-profiling-session"></a>結束程式碼剖析工作階段
 
@@ -95,7 +95,7 @@ ms.locfileid: "85328734"
 
 1. 執行下列其中一個步驟，以從目標應用程式中斷連結程式碼剖析工具：
 
-    - 輸入**VSPerfCmd/detach**
+    - 輸入 **>vsperfcmd/detach**
 
          -或-
 
@@ -103,7 +103,7 @@ ms.locfileid: "85328734"
 
 2. 關閉程式碼剖析工具。 輸入：
 
-     **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
+     **>vsperfcmd**  [/shutdown](../profiling/shutdown.md)
 
 3. (選擇性) 清除程式碼剖析環境變數。 輸入：
 

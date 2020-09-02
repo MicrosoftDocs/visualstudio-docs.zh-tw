@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3dad3a9b157989ecf993cf951f91fc6296ecdf7
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238604"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>使用 MSBuild 取得組建記錄檔
@@ -76,7 +76,7 @@ msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diag
 
  下列範例會將整個記錄檔儲存至 *msbuild1.log*、只將錯誤儲存至 *JustErrors.log*，並且只將警告儲存至 *JustWarnings.log*。 這個範例會針對這三個檔案的每個檔案使用檔案號碼。 檔案號碼會指定於 **-fl** 和 **-flp** 參數 (例如，`-fl1` 和 `-flp1`) 的正後方。
 
- **-FileLoggerParameters** (檔案 `flp` 2 和3的) 參數指定每個檔案的名稱，以及要在每個檔案中包含的內容。 由於未指定檔案 1 的名稱，因此會使用 *msbuild1.log* 的預設名稱。
+ 檔案2和3的 **-fileLoggerParameters** (`flp`) 參數指定要為每個檔案命名的內容，以及要在每個檔案中包含的內容。 由於未指定檔案 1 的名稱，因此會使用 *msbuild1.log* 的預設名稱。
 
 ```cmd
 msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorsonly -flp3:logfile=JustWarnings.log;warningsonly

@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: daf72a4466cd0f02eb6ef3a357276ed690fd26bf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845525"
 ---
 # <a name="creating-bootstrapper-packages"></a>建立啟動載入器套件
@@ -82,7 +82,7 @@ ms.locfileid: "75845525"
 \Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
 ```  
   
- 您也可以從下列登錄機碼中的 [路徑] 值，決定啟動載入器資料夾位置：  
+ 您也可以從下列登錄機碼中的 [路徑] **** 值，決定啟動載入器資料夾位置：  
   
 ```  
 HKLM\Software\Microsoft\GenericBootstrapper\11.0  
@@ -124,7 +124,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 </FileList>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [必要條件對話方塊](../ide/reference/prerequisites-dialog-box.md)   
  [產品和套件架構參考](../deployment/product-and-package-schema-reference.md)   

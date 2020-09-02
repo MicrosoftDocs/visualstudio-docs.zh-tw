@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 38aa92ae1c320ae9eb5ad4bdb1e43b761048661f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547130"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>如何：以程式設計方式從活頁簿中刪除工作表
@@ -36,7 +36,7 @@ ms.locfileid: "85547130"
 > - Excel 2010 活頁簿
 > - Excel 2010 範本
 >
->   如果您想要在任何其他類型的專案中執行這項工作，則必須加入對的參考，然後必須使用該元件**中的類別**開啟活頁簿並刪除工作表。 如需詳細資訊，請參閱[如何：透過主要 interop 元件以 Office 應用程式為目標](how-to-target-office-applications-through-primary-interop-assemblies.md)和[Excel 2010 主要 interop 元件參考](office-primary-interop-assemblies.md)。
+>   如果您想要在任何其他類型的專案中執行這項工作，您必須將參考加入至 node.js 元件，然後必須使用該元件 **中的類別** 開啟活頁簿，並刪除工作表。 如需詳細資訊，請參閱 [如何：透過主要 interop 元件以 Office 應用程式為目標](how-to-target-office-applications-through-primary-interop-assemblies.md) 和 [Excel 2010 主要 interop 元件參考](office-primary-interop-assemblies.md)。
 
 ### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>使用工作表主項目刪除工作表
 
@@ -52,10 +52,10 @@ ms.locfileid: "85547130"
 
 - 您想要刪除的工作表，是在文件層級自訂的執行階段建立的。
 
-  下列程式碼會**透過工作表集合的**索引編號參考工作表，從活頁簿中刪除工作表。 這個程式碼會假設新的工作表是以程式設計方式建立的。
+  下列程式碼會 **透過工作表集合的** 索引編號參考工作表，從活頁簿刪除工作表。 這個程式碼會假設新的工作表是以程式設計方式建立的。
 
 > [!IMPORTANT]
-> 如果您想要在任何其他類型的專案中執行這項工作，則必須加入對的參考，然後必須使用該元件**中的類別**開啟活頁簿並刪除工作表。 如需詳細資訊，請參閱[如何：透過主要 interop 元件以 Office 應用程式為目標](how-to-target-office-applications-through-primary-interop-assemblies.md)和[Excel 2010 主要 interop 元件參考](office-primary-interop-assemblies.md)。
+> 如果您想要在任何其他類型的專案中執行這項工作，您必須將參考加入至 node.js 元件，然後必須使用該元件 **中的類別** 開啟活頁簿，並刪除工作表。 如需詳細資訊，請參閱 [如何：透過主要 interop 元件以 Office 應用程式為目標](how-to-target-office-applications-through-primary-interop-assemblies.md) 和 [Excel 2010 主要 interop 元件參考](office-primary-interop-assemblies.md)。
 
 ### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>使用 Excel 活頁簿的工作表集合刪除工作表
 

@@ -7,10 +7,10 @@ ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
 ms.openlocfilehash: c226e1a8160d0eb1321d244b26177119ec3a5846
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238552"
 ---
 # <a name="set-up-a-git-repository"></a>設定 Git 存放庫
@@ -55,7 +55,7 @@ Git 是一種分散式版本控制系統，可讓小組同時處理相同的文�
 
 3. 選擇 [已註冊的存放庫]**** 索引標籤，然後按 [新增]**** 按鈕：
 
-    ![[選取儲存機制] 對話方塊的 [已註冊的存放庫] 索引標籤具有 [新增]、[移除] 和 [編輯] 按鈕，以及 [模組名稱] 和 [](media/version-control-git5.png)
+    ![[選取存放庫] 對話方塊的 [已註冊的存放庫] 索引標籤具有 [新增]、[移除] 和 [編輯] 按鈕，以及模組名稱和訊息的方塊](media/version-control-git5.png)
 
 4. 輸入您想要顯示在本機的存放庫名稱，並貼入步驟 3 中的 URL。 [存放庫組態] 對話方塊應該與下列類似。 按 [確定]：
 
@@ -142,7 +142,7 @@ Visual Studio for Mac 現在會將變更推送至您的遠端 GitHub 存放庫�
 
     ![顯示的 GitHub URL](media/version-control-git14.png)
 
-4. 取代 [**連接到存放庫**] 索引標籤中 [ **URL** ] 專案欄位的所有文字。這會為您填入此索引標籤中的大部分其他欄位，如步驟 #2 中的影像所示。
+4. 取代 [**連接到存放庫**] 索引標籤中 [ **URL**輸入] 欄位中的所有文字。這會為您填入此索引標籤中的大部分其他欄位，如步驟 #2 中的影像所示。
 
 5. 輸入您想要複製存放庫的目標目錄，然後按 [簽出]****。
 

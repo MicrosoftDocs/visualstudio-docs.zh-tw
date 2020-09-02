@@ -1,5 +1,5 @@
 ---
-title: Debug 逐步執行選項（舊版） |Microsoft Docs
+title: " (舊版) 的 Debug 逐步執行選項 |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -16,18 +16,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 443cbac0ea9d74c61f24d6714162ec08e2906a62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656882"
 ---
 # <a name="debug-stepping-options-legacy"></a>偵錯逐步執行選項 (舊版)
 本主題描述如何偵錯在舊版 [!INCLUDE[wf](../includes/wf-md.md)] 中擁有並行活動的 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 應用程式。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。
 
- 當您要對具有並存執行的舊版活動（例如**ParallelActivity**或**ConditionedActivityGroup**）進行偵錯工具時，您可以使用下列兩個選項的其中一個來逐步執行程式碼。
+ 當您在執行具有並存執行的舊版活動（例如 **ParallelActivity** 或 **ConditionedActivityGroup**）時，您可以使用下列兩個選項的其中一個來逐步執行程式碼。
 
-- **分支逐步執行。** 此逐步執行模式可讓您逐步執行及檢查複合活動的特定分支，例如**ParallelActivity**或**ConditionalActivityGroup**活動。 使用此選項偵錯時，由於工作流程中同時執行其他活動，因此您將不會注意到控制項中發生變化。 當工作流程中的其他活動可能正在同時執行時，偵錯工具只會逐步執行目前選取之分支中的活動。 例如，根據預設， **ParallelActivity**活動中最左邊的分支和**ConditionedActivityGroup**活動的第一個子活動會用於逐步執行。 如果使用者想要偵錯任何其他分支或子活動，必須在該分支或子活動上放置明確的中斷點。 觸發 (Trigger) 中斷點時，逐步執行會在該分支中繼續。
+- **分支逐步執行。** 這個逐步模式可讓您逐步執行和調試複合活動的特定分支，例如 **ParallelActivity** 或 **ConditionalActivityGroup** 活動。 使用此選項偵錯時，由於工作流程中同時執行其他活動，因此您將不會注意到控制項中發生變化。 當工作流程中的其他活動可能正在同時執行時，偵錯工具只會逐步執行目前選取之分支中的活動。 例如，根據預設， **ParallelActivity** 活動中最左邊的分支和 **ConditionedActivityGroup** 活動的第一個子活動用於逐步執行。 如果使用者想要偵錯任何其他分支或子活動，必須在該分支或子活動上放置明確的中斷點。 觸發 (Trigger) 中斷點時，逐步執行會在該分支中繼續。
 
 - **實例逐步執行。** 這個逐步模式可讓您逐步執行和偵錯工作流程中的並行執行活動。 使用此選項時，您會在工作流程內的並行執行活動執行時發現控制權的改變。
 
@@ -35,5 +35,5 @@ ms.locfileid: "72656882"
 
   您在偵錯舊版狀態機器工作流程時，應選取執行個體逐步執行選項。
 
-## <a name="see-also"></a>請參閱
- [調試舊版工作流程](../workflow-designer/debugging-legacy-workflows.md)[如何：變更 Debug 逐步執行選項（舊版）](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)
+## <a name="see-also"></a>另請參閱
+ [調試舊版工作流程](../workflow-designer/debugging-legacy-workflows.md)[如何： (舊版) 變更 Debug 逐步執行選項](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

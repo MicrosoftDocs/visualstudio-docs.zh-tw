@@ -1,5 +1,5 @@
 ---
-title: NAME_MATCH |微軟文件
+title: NAME_MATCH |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 66a0e725f6362034e2d1a9b1df49d2a83d154ce7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714304"
 ---
 # <a name="name_match"></a>NAME_MATCH
-選擇匹配名稱的案例選項。
+選取相符名稱的案例選項。
 
 ## <a name="syntax"></a>語法
 
@@ -48,13 +48,13 @@ public enum NameMatchOptions { 
  未指定任何選項。
 
  `nmCaseSensitive`\
- 指示要匹配的名稱區分大小寫。
+ 指出要比對的名稱會區分大小寫。
 
  `nmCaseInsensitive`\
- 指示要匹配的名稱不區分大小寫。
+ 指出要比對的名稱不區分大小寫。
 
 ## <a name="remarks"></a>備註
- 為參數傳遞給以下方法:
+ 以引數形式傳遞至下列方法：
 
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)
 
@@ -65,11 +65,11 @@ public enum NameMatchOptions { 
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
 
 ## <a name="requirements"></a>需求
- 標題: sh.h
+ 標頭： sh. h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

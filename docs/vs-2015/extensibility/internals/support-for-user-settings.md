@@ -13,49 +13,49 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 80734d9859df2e06bc51d40e1fffa40c7d97c7a7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691816"
 ---
 # <a name="support-for-user-settings"></a>支援使用者設定
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-VSPackage 可能會定義一或多個設定類別，也就是當使用者選擇保存的狀態變數群組**匯入/匯出設定**命令**工具**功能表。 若要啟用此持續性，您可以使用 Api 設定中[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]。  
+VSPackage 可定義一或多個設定類別，這是當使用者選擇 [**工具**] 功能表上的 [匯**入/匯出設定**] 命令時保存的狀態變數群組。 若要啟用此持續性，您可以在中使用設定 Api [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 。  
   
- 自訂設定點和 GUID 指的登錄項目定義 VSPackage 的 [設定] 類別。 VSPackage 可以支援多個設定分類，每個已定義的自訂設定點。  
+ 稱為自訂設定點的登錄專案，以及 GUID 定義了 VSPackage 的設定類別。 VSPackage 可以支援多個設定類別，每個都是由自訂設定點所定義。  
   
-- 實作的 interop 組件為基礎的設定 (使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings>介面) 應該藉由編輯登錄，或使用登錄器指令碼 （.rgs 檔案） 建立自訂設定點。 如需詳細資訊，請參閱 [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)。  
+- 以 interop 元件為基礎的設定的執行 (使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> 介面) 應該藉由編輯登錄或使用註冊機構腳本 ( .rgs 檔) 來建立自訂設定點。 如需詳細資訊，請參閱 [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)。  
   
-- 使用 Managed Package Framework (MPF) 的程式碼應該連結以建立自訂設定點<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>每個自訂設定點的 vspackage。  
+- 使用受管理套件架構 (MPF) 的程式碼應該藉由 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 將 VSPackage 附加至每個自訂設定點的方式，來建立自訂設定點。  
   
-     如果單一 VSPackage 支援數個自訂設定點，每個自訂設定點藉由個別的類別，而且每個已註冊的唯一執行個體<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>類別。 因此，實作類別的設定可以支援多個設定分類。  
+     如果單一 VSPackage 支援數個自訂設定點，每個自訂設定點都是由個別的類別來執行，而每個都是由類別的唯一實例所註冊 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 。 因此，設定實類別可支援一個以上的設定類別。  
   
-## <a name="custom-settings-point-registry-entry-details"></a>自訂設定點的登錄項目詳細資料  
- 在下列位置的登錄項目中建立自訂設定點：HKLM\Software\Microsoft\VisualStudio\\ *\<版本 >* \UserSettings\\`<CSPName>`，其中`<CSPName>`是 VSPackage 支援的自訂設定點名稱並 *\<版本>* 是新版[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，例如 8.0。  
+## <a name="custom-settings-point-registry-entry-details"></a>自訂設定點登錄專案詳細資料  
+ 自訂設定點會建立在下列位置的登錄專案中： HKLM\Software\Microsoft\VisualStudio \\ *\<Version>* \UserSettings \\ `<CSPName>` ，其中 `<CSPName>` 是 VSPackage 支援的自訂設定點名稱，而 *\<Version>* 則是的版本 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ，例如8.0。  
   
 > [!NOTE]
-> Hkey_local_machine\software\microsoft\visualstudio \ 的根路徑\\ *\<版本 >* 可以覆寫以替代 root 時[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]是整合式的開發環境 (IDE)初始化。 如需詳細資訊，請參閱 <<c0> [ 命令列參數](../../extensibility/command-line-switches-visual-studio-sdk.md)。  
+> \\ *\<Version>* 當 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 初始化整合式開發環境 (IDE) 時，可使用替代根目錄覆寫 HKEY_LOCAL_MACHINE \software\microsoft\visualstudio 的根路徑。 如需詳細資訊，請參閱 [命令列參數](../../extensibility/command-line-switches-visual-studio-sdk.md)。  
   
- 登錄項目結構如下所示：  
+ 登錄專案的結構如下所示：  
   
- HKLM\Software\Microsoft\VisualStudio\\ *\<Version>* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio \\ *\<Version>* \UserSettings\  
   
- `<CSPName`>= s '#12345'  
+ `<CSPName`>= s ' #12345 '  
   
- 封裝 = ' {XXXXXX XXXX XXXX XXXX XXXXXXXXX}'  
+ Package = ' {XXXXXX XXXX xxxx xxxx XXXXXXXXX} '  
   
- Category = '{YYYYYY YYYY YYYY YYYY YYYYYYYYY}'  
+ Category = ' {YYYYYY YYYY YYYY YYYY YYYYYYYYY} '  
   
- ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'  
+ ResourcePackage = ' {ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ} '  
   
- AlternateParent = CategoryName  
+ AlternateParent = 類別名稱  
   
 |名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
-|(預設值)|REG_SZ|自訂設定點的名稱|索引鍵的名稱， `<CSPName`>，為自訂設定點的未當地語系化的名稱。<br /><br /> 結合的 MPF 所根據的實作，取得索引鍵的名稱`categoryName`並`objectName`的引數<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>建構函式到`categoryName_objectName`。<br /><br /> 金鑰可以是空的或它可以包含在附屬 DLL 中的當地語系化字串的參考識別碼。 這個值取自`objectNameResourceID`引數<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>建構函式。|  
-|套件|REG_SZ|GUID|VSPackage 實作自訂設定點的 GUID。<br /><br /> 實作會根據使用 MPF<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>類別中，使用的建構函式`objectType`引數包含 VSPackage 的<xref:System.Type>和反映來取得這個值。|  
-|分類|REG_SZ|GUID|用來識別設定類別的 GUID。<br /><br /> Interop 組件為基礎的實作，這個值可以是任意選擇的 GUID，其中[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE 會將傳遞給<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A>而<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A>方法。 所有的這兩種方法的實作應該先確認其 GUID 引數。<br /><br /> 對於根據 MPF 實作，來取得此 GUID<xref:System.Type>類別實作的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]設定機制。|  
-|ResourcePackage|REG_SZ|GUID|選擇性。<br /><br /> 通往附屬 DLL 包含當地語系化字串，如果實作 VSPackage 未提供它們。<br /><br /> MPF 會使用反映以取得正確的資源 VSPackage，因此<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>類別不會設定這個引數。|  
-|AlternateParent|REG_SZ|包含此自訂設定點的 [工具選項] 頁面下的資料夾名稱。|選擇性。<br /><br /> 您必須將此值，只有支援的設定實作**工具選項**使用持續性機制中的頁面[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]而不是儲存狀態的 automation 模型中的機制。<br /><br /> 在這些情況下，AlternateParent 機碼中的值是`topic`一節`topic.sub-topic`用來識別特定的字串**ToolsOptions**頁面。 例如，對於**ToolsOptions**頁`"TextEditor.Basic"`AlternateParent 的值會是`"TextEditor"`。<br /><br /> 當<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>產生自訂設定點，它是類別名稱相同。|
+|(預設值)|REG_SZ|自訂設定點的名稱|金鑰的名稱 `<CSPName`> 是自訂設定點的未當地語系化名稱。<br /><br /> 若是以 MPF 為基礎的實作為基礎，則會藉由將函式的 `categoryName` 和 `objectName` 引數合併為來取得索引鍵的名稱 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> `categoryName_objectName` 。<br /><br /> 索引鍵可以是空的，也可以在附屬 DLL 中包含當地語系化字串的參考識別碼。 這個值是從函式的 `objectNameResourceID` 引數取得的 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 。|  
+|套件|REG_SZ|GUID|執行自訂設定點之 VSPackage 的 GUID。<br /><br /> 以使用類別的 MPF 為基礎的 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 實作為基礎，使用 `objectType` 包含 VSPackage 和反映的函式引數， <xref:System.Type> 以取得此值。|  
+|類別|REG_SZ|GUID|識別設定類別的 GUID。<br /><br /> 針對以 interop 元件為基礎的實值，此值可以是任意選擇的 GUID，IDE 會將它 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 傳遞至 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> 方法。 這兩個方法的所有執行都應該驗證其 GUID 引數。<br /><br /> 針對以 MPF 為基礎的執行，此 GUID 是由實 <xref:System.Type> 設定機制的類別所取得 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。|  
+|ResourcePackage|REG_SZ|GUID|選擇性。<br /><br /> 如果實 VSPackage 未提供，則為包含當地語系化字串之附屬 DLL 的路徑。<br /><br /> MPF 使用反映來取得正確的資源 VSPackage，因此 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 類別不會設定此引數。|  
+|AlternateParent|REG_SZ|包含此自訂設定點的 [工具選項] 頁面下的資料夾名稱。|選擇性。<br /><br /> 只有在設定實支援在中使用持續性機制的 [ **工具選項** ] 頁面， [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 而不是 automation 模型中的機制來儲存狀態時，才必須設定這個值。<br /><br /> 在這些情況下，AlternateParent 索引鍵中的值是 `topic` `topic.sub-topic` 用來識別特定 **ToolsOptions** 頁面的字串區段。 例如，針對 **ToolsOptions** 頁面， `"TextEditor.Basic"` AlternateParent 的值會是 `"TextEditor"` 。<br /><br /> 當 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 產生自訂設定點時，它會與類別目錄名稱相同。|

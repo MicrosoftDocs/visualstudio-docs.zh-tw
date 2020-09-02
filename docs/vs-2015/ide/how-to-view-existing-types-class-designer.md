@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 925220d583695e0116fb5901d92626bfcfa7450f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670548"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>如何：檢視現有類型 (類別設計工具)
@@ -50,9 +50,9 @@ ms.locfileid: "72670548"
    您也可以將一或多個類型從 [類別檢視] 的專案節點中拖曳至類別圖，以檢視專案中的類型。
 
 > [!TIP]
-> 如果未開啟 [類別檢視]，請從 [檢視] 功能表將其開啟。 如需類別檢視的詳細資訊，請參閱[檢視類別和其成員](https://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333)。
+> 如果未開啟 [類別檢視]，請從 [檢視]**** 功能表將其開啟。 如需類別檢視的詳細資訊，請參閱[檢視類別和其成員](https://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333)。
 
- 若要在圖表上的預設位置顯示類型，請在 [類別檢視] 中選取一或多個類型、在所選類型上按一下滑鼠右鍵，並且選擇 [檢視類別圖表]。
+ 若要在圖表上的預設位置顯示類型，請在 [類別檢視] 中選取一或多個類型、在所選類型上按一下滑鼠右鍵，並且選擇 [檢視類別圖表]****。
 
 > [!NOTE]
 > 如果專案中已有包含類型的已關閉類別圖，便會開啟類別圖以顯示類型圖案。 但是，如果專案中沒有包含類型的類別圖，[類別設計工具] 會在專案中建立新的類別圖，並且開啟圖表以顯示類型。
@@ -61,9 +61,9 @@ ms.locfileid: "72670548"
 
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>在類別圖中顯示專案內容
 
-1. 在方案總管或 [類別檢視] 中，在專案上按一下滑鼠右鍵並選擇 [檢視]，然後選擇 [類別圖表檢視]。
+1. 在方案總管或 [類別檢視] 中，在專案上按一下滑鼠右鍵並選擇 [檢視]****，然後選擇 [類別圖表檢視]****。
 
      就會建立會自動填入內容的類別圖。
 
-## <a name="see-also"></a>請參閱
- [如何：檢視類型之間的繼承（類別設計工具）](../ide/how-to-view-inheritance-between-types-class-designer.md) [如何：自訂類別圖表（類別設計工具）](../ide/how-to-customize-class-diagrams-class-designer.md) [查看類型和關聯性（類別設計工具）](../ide/viewing-types-and-relationships-class-designer.md)
+## <a name="see-also"></a>另請參閱
+ [如何：檢視類型之間的繼承 (類別設計工具) ](../ide/how-to-view-inheritance-between-types-class-designer.md) [如何：自訂類別圖表 (類別設計工具](../ide/how-to-customize-class-diagrams-class-designer.md)) [檢視類型和關聯性 (](../ide/viewing-types-and-relationships-class-designer.md)類別設計工具) 

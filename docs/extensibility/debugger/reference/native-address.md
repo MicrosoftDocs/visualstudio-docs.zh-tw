@@ -1,5 +1,5 @@
 ---
-title: NATIVE_ADDRESS |微軟文件
+title: NATIVE_ADDRESS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7c62bbea846f3d486ead8add4dfab2182df1e1bb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714334"
 ---
 # <a name="native_address"></a>NATIVE_ADDRESS
 
-此結構表示本機位址。
+此結構代表原生位址。
 
 ## <a name="syntax"></a>語法
 
@@ -43,19 +43,19 @@ public struct NATIVE_ADDRESS {
 ## <a name="members"></a>成員
 
 `unknown`\
-本機位址(其含義取決於運行時和作業系統)。
+原生位址 (的意義取決於執行時間和作業系統) 。
 
 ## <a name="remarks"></a>備註
 
-當`DEBUG_ADDRESS_UNION``ADDRESS_KIND_NATIVE`結構欄位設置為[(ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)舉中的值)`dwKind`時, 此結構是DEBUG_ADDRESS_UNION結構中的聯合的一部分。
+當結構的[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 欄位 `DEBUG_ADDRESS_UNION` 設定為 `ADDRESS_KIND_NATIVE` ([ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉) 中的值時，此結構就是 DEBUG_ADDRESS_UNION 結構中聯集的一部分。
 
 ## <a name="requirements"></a>需求
 
-標題: sh.h
+標頭： sh. h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 

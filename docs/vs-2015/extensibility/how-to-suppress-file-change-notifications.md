@@ -1,5 +1,5 @@
 ---
-title: HOW TO：隱藏檔案變更通知 |Microsoft Docs
+title: 如何：隱藏檔案變更通知 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,36 +11,36 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f045175eae165b75a887ada2716b19f34fc228b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204084"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>HOW TO：隱藏檔案變更通知
+# <a name="how-to-suppress-file-change-notifications"></a>如何：隱藏檔案變更通知
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-當已變更之實體的檔案，表示文字緩衝區時，對話方塊會顯示與訊息**您要儲存下列項目的變更嗎？** 這就是檔案變更通知。 如果檔案要許多變更，不過，不斷地顯示此對話方塊中可能很快就會造成困擾。  
+當表示文字緩衝區的實體檔案已變更時，會顯示一個對話方塊，顯示 **您要將變更儲存至下列專案的訊息嗎？** 這就是所謂的檔案變更通知。 但是，如果檔案中有許多變更，這個對話方塊就會再度出現，而且可能很快就會變成討厭。  
   
- 您以程式設計的方式可以抑制此對話方塊中，使用下列程序。 如此一來，您可以重新載入檔案立即而不需要提示使用者每次儲存變更。  
+ 您可以使用下列程式，以程式設計方式隱藏此對話方塊。 如此一來，您就可以立即重載檔案，而不需要每次都提示使用者儲存變更。  
   
-### <a name="to-suppress-file-change-notification"></a>若要隱藏檔案變更通知  
+### <a name="to-suppress-file-change-notification"></a>隱藏檔案變更通知  
   
-1. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>方法來判斷哪一個文字緩衝區物件為您開啟的檔案與相關聯。  
+1. 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> 方法來判斷哪個文字緩衝區物件與開啟的檔案相關聯。  
   
-2. 直接<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>要略過的記憶體中監視檔案變更所取得的物件<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>從介面<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>（文件資料） 物件，然後實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A>方法`fIgnore`參數若要設定`true`。  
+2. 將 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 記憶體中的物件導向至記憶體中的物件，藉由 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> 從 (的檔 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 資料) 物件取得介面，然後執行方法並將 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> `fIgnore` 參數設定為， `true` 以忽略監視檔案變更。  
   
-3. 上呼叫方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>而<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>介面來更新記憶體中<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>（例如當欄位加入至您的元件） 的檔案變更的物件。  
+3. 在和介面上呼叫方法， <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> 以更新記憶體中的 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 物件與檔案 (例如，將欄位新增至您的元件) 。  
   
-4. 更新與變更的磁碟上的檔案，而不考慮任何暫止的編輯使用者可能會有進行中。  
+4. 使用變更來更新磁片上的檔案，而不考慮使用者可能進行的任何暫止編輯。  
   
-     如此一來，當您直接<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>物件，以繼續監視檔案變更通知，在記憶體中的文字緩衝區反映產生所有暫止的編輯以及這些變更。 磁碟上的檔案會反映您所產生的最新的程式碼和任何先前在使用者編輯的程式碼中儲存使用者所做的變更。  
+     如此一來，當您指示 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 物件繼續監視檔案變更通知時，記憶體中的文字緩衝區會反映您所產生的變更，以及所有其他暫止的編輯。 磁片上的檔案會反映您所產生的最新程式碼，以及使用者在使用者編輯的程式碼中任何先前儲存的變更。  
   
-5. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A>方法來通知<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>物件，以繼續設定監視的檔案變更告知`fIgnore`參數來`false`。  
+5. 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> 方法，藉 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 由將參數設定為，以通知物件繼續監視檔案變更通知 `fIgnore` `false` 。  
   
-6. 如果您打算變更數個檔案，原始程式碼控制 (SCC)，為例，您必須告訴暫時暫止檔案變更告知的通用檔案變更服務。  
+6. 如果您想要對檔案進行數個變更，例如原始程式碼控制 (SCC) ，您必須告訴全域檔案變更服務暫時暫停檔案變更通知。  
   
-     比方說，如果您重寫檔案，然後變更 時間戳記，您必須暫止檔案變更通知，如 「 重寫 」 和 「 timestample 作業每個會計為另一個檔案變更的事件。 若要啟用全域檔案變更通知，您應該改為呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A>方法。  
+     例如，如果您重寫檔案，然後變更時間戳記，則必須暫停檔案變更通知，因為重寫和 timestample 作業每個都會計為個別的檔案變更事件。 若要啟用全域檔案變更通知，您應該改為呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A> 方法。  
   
 ## <a name="example"></a>範例  
  以下示範如何隱藏檔案變更通知。  
@@ -115,4 +115,4 @@ void CSuspendFileChanges::Resume()
 ```  
   
 ## <a name="robust-programming"></a>穩固程式設計  
- 如果您的案例牽涉到多個變更檔案，如同 SCC，情況則重要警示繼續監視檔案變更的文件資料之前繼續通用檔案變更通知。
+ 如果您的案例牽涉到對檔案進行多項變更，就像 SCC 一樣，在警示檔資料以繼續監視檔案變更之前，請務必先繼續全域檔案變更通知。

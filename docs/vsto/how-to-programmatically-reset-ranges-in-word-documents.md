@@ -1,5 +1,5 @@
 ---
-title: 如何：以程式設計方式重設 Word 檔中的範圍
+title: 如何：以程式設計方式在 Word 檔中重設範圍
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8f1978a280a26af3b2a21e0bc5a4c9a238a723a9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547117"
 ---
-# <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>如何：以程式設計方式重設 Word 檔中的範圍
+# <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>如何：以程式設計方式在 Word 檔中重設範圍
   使用 <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> 方法，可以調整 Microsoft Office Word 文件中現有範圍的大小。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -64,6 +64,6 @@ ms.locfileid: "85547117"
 
 ## <a name="see-also"></a>另請參閱
 - [如何：以程式設計方式在檔中擴充範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [如何：以程式設計方式在檔中定義及選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [如何：以程式設計方式取出範圍中的開頭和結尾字元](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
+- [如何：以程式設計方式定義和選取檔中的範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [如何：以程式設計方式取得範圍中的開始和結束字元](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
 - [如何：以程式設計方式折迭檔中的範圍或選取專案](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)

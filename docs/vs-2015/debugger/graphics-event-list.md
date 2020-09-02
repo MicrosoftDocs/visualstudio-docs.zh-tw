@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9e56f2d8ef72121e8b34117436019251449fbb75
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845040"
 ---
 # <a name="graphics-event-list"></a>圖形事件清單
@@ -25,7 +25,7 @@ ms.locfileid: "75845040"
   
  這是 [事件清單]：  
   
- ![名稱中包含 "Index" 的事件清單。](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
+ ![名稱包含 "Index" 的事件清單。](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
   
 ## <a name="using-the-event-list"></a>使用事件清單  
  當您選取事件清單中的事件時，該事件會反映在其他圖形分析工具所顯示的資訊中；透過搭配這些其他工具使用事件清單，您可以更詳細地檢查呈現問題以判斷原因。 若要深入了解如何搭配其他圖形分析工具使用事件清單以解決轉譯問題，請參閱[範例](../debugger/graphics-diagnostics-examples.md)。  
@@ -54,13 +54,13 @@ ms.locfileid: "75845040"
   
 ##### <a name="to-change-the-event-list-view-mode"></a>變更事件清單檢視模式  
   
-- 在 [圖形事件清單] 視窗的事件清單上方，找到 [檢視] 下拉式清單，並選擇 [時間軸] 檢視或 [繪製呼叫] 檢視。  
+- 在 [圖形事件清單] **** 視窗的事件清單上方，找到 [檢視] **** 下拉式清單，並選擇 [時間軸] **** 檢視或 [繪製呼叫] **** 檢視。  
   
 ### <a name="filtering-events"></a>篩選事件  
- 您可以使用 [搜尋] 方塊 (位在 [圖形事件清單] 視窗右上角) 篩選事件清單，使清單只包括名稱包含特定關鍵字的事件。 如上圖所示，您可以指定單一關鍵字 (如 `Vertex`)，或使用以分號分隔清單指定多個關鍵字，例如 `Draw;Primitive`，其符合名稱中有 `Draw` 或 `Primitive` 的事件。 搜尋會受到空格影響；例如， `VSSet` 和 `VS Set` 是不同的搜尋，因此，請務必小心地建立搜尋。  
+ 您可以使用 [搜尋] 方塊 (位在 [圖形事件清單] **** 視窗右上角) 篩選事件清單，使清單只包括名稱包含特定關鍵字的事件。 如上圖所示，您可以指定單一關鍵字 (如 `Vertex`)，或使用以分號分隔清單指定多個關鍵字，例如 `Draw;Primitive`，其符合名稱中有 `Draw` 或 `Primitive` 的事件。 搜尋會受到空格影響；例如， `VSSet` 和 `VS Set` 是不同的搜尋，因此，請務必小心地建立搜尋。  
   
 ### <a name="moving-between-draw-calls"></a>在繪製呼叫之間移動  
- 因為檢查 `Draw` 呼叫相當重要，所以您可以使用 [移至下一個繪製呼叫] 和 [移至上一個繪製呼叫] 按鈕 (位在 [圖形事件清單] 視窗左上角)，尋找繪製呼叫並快速在其間移動。  
+ 因為檢查 `Draw` 呼叫相當重要，所以您可以使用 [移至下一個繪製呼叫] **** 和 [移至上一個繪製呼叫] **** 按鈕 (位在 [圖形事件清單] **** 視窗左上角)，尋找繪製呼叫並快速在其間移動。  
   
 ### <a name="links-to-graphics-objects"></a>圖形物件連結  
  若要了解特定圖形事件，您可能需要目前 Direct3D 狀態或事件所參考 Direct3D 物件的其他資訊。 許多事件都提供您可進入以取得其他詳細資料的資訊連結。  
@@ -101,5 +101,5 @@ ms.locfileid: "75845040"
   
  您可以使用 Direct3D 版本所支援的這些 API 之一 (例如，如果您的目標設為 Direct3D 11.1 API，則可以使用 `SetMarker` 或 `D3DPerf_SetMarker` 建立事件標記，而非 `SetMarkerInt` ，因為它只適用於 Direct3D 11.2)，還可以在相同的應用程式中，混合使用支援不同版本的 Direct3D 的 API。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說：因裝置狀態而遺漏的物件](../debugger/walkthrough-missing-objects-due-to-device-state.md)

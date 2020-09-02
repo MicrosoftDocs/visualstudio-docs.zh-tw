@@ -1,5 +1,5 @@
 ---
-title: 可見性項目元素 |微軟文件
+title: VisibilityItem 元素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9129d64e430d661bbdd8f7682e64c93650570211
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80698155"
 ---
-# <a name="visibilityitem-element"></a>可見性項目元素
-該`VisibilityItem`元素確定命令和工具列的靜態可見性。 每個條目標識命令或功能表,以及關聯的命令 UI 上下文。 Visual Studio 檢測命令、功能表和工具列及其可見性,而無需載入定義它們的 VS 包。 IDE<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>使用 方法確定命令 UI 上下文是否處於活動狀態。
+# <a name="visibilityitem-element"></a>VisibilityItem 元素
+`VisibilityItem`元素會決定命令和工具列的靜態可見度。 每個專案都會識別命令或功能表，以及相關聯的命令 UI 內容。 Visual Studio 會偵測命令、功能表和工具列，以及它們的可見度，而不會載入定義它們的 Vspackage。 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 會使用方法來判斷命令 UI 內容是否為作用中。
 
- 載入 VSPackage 後,Visual Studio 希望命令可見性由 VSPackage 而不是 確定`VisibilityItem`。 要確定命令的可見性,可以實現<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>事件處理程式<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>或 方法,具體取決於實現命令的方式。
+ 載入 VSPackage 之後，Visual Studio 預期會由 VSPackage 判斷命令可見度，而不是 `VisibilityItem` 。 若要判斷您的命令可見度，您可以 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 根據您執行命令的方式，執行事件處理常式或 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 方法。
 
- 僅當關聯的上下文處於活動狀態時,才會`VisibilityItem`顯示具有元素的命令或功能表。 通過為每個命令上下文組合包含一個條目,可以將單個命令、功能表或工具列與一個或多個命令 UI 上下文相關聯。 如果命令或功能表與多個命令 UI 上下文相關聯,則當任何關聯的命令 UI 上下文處於活動狀態時,命令或功能表可見。
+ `VisibilityItem`只有當相關聯的內容為作用中時，才會顯示具有元素的命令或功能表。 您可以針對每個命令內容組合包含一個專案，藉此將單一命令、功能表或工具列與一個或多個命令 UI 內容產生關聯。 如果命令或功能表與多個命令 UI 內容相關聯，當任何一個相關聯的命令 UI 內容為作用中時，就會顯示命令或功能表。
 
- 該`VisibilityItem`元素僅適用於命令、功能表和工具列,不適用於組。 每當其父功能表處於活動狀態時,沒有`VisibilityItem`相關元素的元素都會可見。
+ `VisibilityItem`元素只適用于命令、功能表和工具列，而不會套用至群組。 只要專案的 `VisibilityItem` 父功能表為使用中，就會顯示沒有相關專案的元素。
 
 ## <a name="syntax"></a>語法
 
@@ -43,22 +43,22 @@ ms.locfileid: "80698155"
 
 |屬性|描述|
 |---------------|-----------------|
-|guid|必要。 GUID/ID 命令識別碼的 GUID。|
-|id|必要。 GUID/ID 命令識別碼的識別碼。|
-|內容|必要。 命令可見的 UI 上下文。|
-|條件|選擇性。 請參考[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|guid|必要。 GUID/識別碼命令識別碼的 GUID。|
+|id|必要。 GUID/識別碼命令識別碼的識別碼。|
+|內容|必要。 可以看見命令的 UI 內容。|
+|條件|選擇性。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
- None
+ 無
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[可見性限制元素](../extensibility/visibilityconstraints-element.md)|該`VisibilityConstraints`元素確定命令組和工具列的靜態可見性。|
+|[VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)|`VisibilityConstraints`元素會決定命令和工具列群組的靜態可見度。|
 
 ## <a name="remarks"></a>備註
- 標準視覺化工作室 UI 上下文在 Visual *Studio SDK 安裝路徑*[VisualStudio 整合式<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids><xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>]公共_Inc_vsshlids.h 檔中以及和類中定義。 <xref:Microsoft.VisualStudio.VSConstants>類中定義了一組更完整的 UI 上下文。
+ 標準 Visual Studio UI 內容是在 *VISUAL STUDIO SDK 安裝路徑*\VisualStudioIntegration\Common\Inc\vsshlids.h 檔以及 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> 和類別中定義 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> 。 類別中會定義一組更完整的 UI 內容 <xref:Microsoft.VisualStudio.VSConstants> 。
 
 ## <a name="example"></a>範例
 
@@ -75,5 +75,5 @@ ms.locfileid: "80698155"
 - <xref:Microsoft.VisualStudio.VSConstants>
 - <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids>
 - <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>
-- [可見性限制元素](../extensibility/visibilityconstraints-element.md)
-- [視覺化工作室命令表 (.Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)
+- [Visual Studio 命令表格 (。.Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

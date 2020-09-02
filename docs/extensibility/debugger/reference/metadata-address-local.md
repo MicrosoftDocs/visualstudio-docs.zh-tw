@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_LOCAL |微軟文件
+title: METADATA_ADDRESS_LOCAL |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e3adf9ca5f679c7a526f10b1ee6c91d50dac52d2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714481"
 ---
 # <a name="metadata_address_local"></a>METADATA_ADDRESS_LOCAL
 
-此結構表示作用域(通常是函數或方法)中的局部變數的位址。
+此結構代表範圍內的區域變數位址， (通常是) 的函式或方法。
 
 ## <a name="syntax"></a>語法
 
@@ -47,22 +47,22 @@ public struct METADATA_ADDRESS_LOCAL {
 ## <a name="members"></a>成員
 
 `tokMethod`\
-本地變數的一部分的方法或函數的 ID。
+區域變數所屬方法或函數的識別碼。
 
-[C++]`_mdToken`是`typedef`32`int`位元的 。
+[C + +] `_mdToken` 是 `typedef` 32 位的 `int` 。
 
 `pLocal`\
-此結構表示的位址的權杖。
+此結構所代表之位址的標記。
 
 `dwIndex`\
-可以是方法或函數中此局部變數的索引,也可以是其他一些值(特定於語言) 的索引。
+可以是方法或函式中這個區域變數的索引，也可以是 (語言特定) 的其他值。
 
 ## <a name="remarks"></a>備註
 
-當`DEBUG_ADDRESS_UNION``ADDRESS_KIND_LOCAL`結構欄位設置為[(ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)舉中的值)`dwKind`時, 此結構是DEBUG_ADDRESS_UNION結構中的聯合的一部分。
+當結構的[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 欄位 `DEBUG_ADDRESS_UNION` 設定為 `ADDRESS_KIND_LOCAL` ([ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉) 中的值時，此結構就是 DEBUG_ADDRESS_UNION 結構中聯集的一部分。
 
 > [!WARNING]
-> [僅C++]如果`pLocal`不是 null,則必須`Release`呼叫 權限`addr`( 是[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)結構中的欄位):
+> [僅限 c + +]如果不 `pLocal` 是 null，則您必須在 `Release` token 指標上呼叫， (`addr` 是 [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) 結構) 中的欄位：
 >
 > ```cpp
 > if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != NULL)
@@ -73,11 +73,11 @@ public struct METADATA_ADDRESS_LOCAL {
 
 ## <a name="requirements"></a>需求
 
-標題: sh.h
+標頭： sh. h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 

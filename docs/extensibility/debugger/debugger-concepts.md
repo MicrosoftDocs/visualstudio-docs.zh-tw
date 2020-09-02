@@ -1,5 +1,5 @@
 ---
-title: 除錯器概念 |微軟文件
+title: 偵錯工具概念 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,41 +11,41 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9ad8a450f9e79c1d44b8e098c8a00bb4b816e1af
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738990"
 ---
-# <a name="debugger-concepts"></a>除錯器概念
-要構建 Visual Studio 調試包,您需要熟悉設計包時使用的體系結構概念。
+# <a name="debugger-concepts"></a>偵錯工具概念
+若要建立 Visual Studio 的 debug 封裝，您必須熟悉設計封裝時所使用的架構概念。
 
 ## <a name="in-this-section"></a>本節內容
- [除錯工作階段](../../extensibility/debugger/debug-session.md)解釋會話在調試體系結構中的角色。
+ [Debug 會話](../../extensibility/debugger/debug-session.md) 說明在偵錯工具架構中會話的角色。
 
- [伺服器](../../extensibility/debugger/servers-visual-studio-sdk.md)以抽象和物理術語定義伺服器在調試體系結構方面的內容。
+ [伺服器](../../extensibility/debugger/servers-visual-studio-sdk.md) 以抽象和實體詞彙定義伺服器在偵錯工具架構方面的意義。
 
- [港口供應商](../../extensibility/debugger/port-suppliers.md)定義埠供應商在調試體系結構方面的內容。
+ [埠供應商](../../extensibility/debugger/port-suppliers.md) 定義埠供應商在偵測架構方面的意義。
 
- [連接埠](../../extensibility/debugger/ports.md)定義埠在調試體系結構方面是什麼。
+ [埠](../../extensibility/debugger/ports.md) 定義埠在偵錯工具架構方面的意義。
 
- [流程](../../extensibility/debugger/processes.md)定義進程在調試體系結構方面是什麼。
+ [進程](../../extensibility/debugger/processes.md) 定義處理常式在偵測架構方面的意義。
 
- [程式節點](../../extensibility/debugger/program-nodes.md)定義程式節點的調試體系結構,包括它如何標識自身及其正在運行的進程。
+ [程式節點](../../extensibility/debugger/program-nodes.md) 根據偵測架構來定義程式節點，包括它本身的識別方式，以及其執行所在的進程。
 
- [排程](../../extensibility/debugger/programs.md)根據調試體系結構定義程式。
+ [程式](../../extensibility/debugger/programs.md) 根據偵錯工具架構來定義程式。
 
- [螺紋](../../extensibility/debugger/threads.md)定義線程在調試體系結構方面的特徵。
+ [執行緒](../../extensibility/debugger/threads.md) 定義執行緒在偵錯工具架構方面的特性。
 
- [堆疊幀](../../extensibility/debugger/stack-frames.md)根據調試體系結構定義堆疊幀。 堆疊框架是提供線程執行上下文的堆疊的抽象。
+ [堆疊框架](../../extensibility/debugger/stack-frames.md) 根據偵錯工具架構來定義堆疊框架。 堆疊框架是堆疊的抽象概念，可提供執行緒的執行內容。
 
- [模組](../../extensibility/debugger/modules.md)在調試體系結構方面,將模組定義為代碼的物理容器,如可執行檔或 DLL。
+ [模組](../../extensibility/debugger/modules.md) 將模組以偵錯工具架構的形式定義為程式碼的實體容器，例如可執行檔或 DLL。
 
- [斷點](../../extensibility/debugger/breakpoints-visual-studio-sdk.md)定義三種類型的斷點 - 掛起、綁定和錯誤 - 在除錯體系結構方面。
+ [中斷點](../../extensibility/debugger/breakpoints-visual-studio-sdk.md) 根據偵測架構，定義三種類型的中斷點，包括暫止、系結和錯誤。
 
 ## <a name="related-sections"></a>相關章節
- [除錯器上下文](../../extensibility/debugger/debugger-contexts.md)說明除錯引擎 (DE) 如何在程式碼、文件和運算式評估上下文中同時執行。 描述三個上下文中的每一個與它相關的位置、位置或評估。
+ [偵錯工具](../../extensibility/debugger/debugger-contexts.md) 內容說明 debug engine (DE) 如何在程式碼、檔和運算式評估內容中同時運作。 描述每個內容的相關位置、位置或評估。
 
- [除錯器元件](../../extensibility/debugger/debugger-components.md)提供可視化工作室調試元件的概述,其中包括調試引擎 (DE)、運算式賦值器 (EE) 和符號處理程式 (SH)。
+ [偵錯工具元件](../../extensibility/debugger/debugger-components.md) 概要說明 Visual Studio 的偵錯工具元件，其中包括 debug engine (DE) 、運算式評估工具 (EE) ，以及符號處理常式 (SH) 。
 
- [除錯工作](../../extensibility/debugger/debugging-tasks.md)包含指向各種除錯任務的連結,例如啟動程式和評估運算式。
+ [調試作業](../../extensibility/debugger/debugging-tasks.md) 包含各種偵錯工具的連結，例如啟動程式和評估運算式。
