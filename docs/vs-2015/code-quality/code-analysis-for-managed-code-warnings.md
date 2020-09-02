@@ -1,6 +1,6 @@
 ---
-title: 受控碼的程式碼分析警告 |Microsoft Docs
-ms.date: 11/15/2016
+title: Managed 程式碼的程式碼分析警告 |Microsoft Docs
+ms.date: 08/31/2020
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -13,31 +13,31 @@ helpviewer_keywords:
 - code analysis,managed code
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
 caps.latest.revision: 22
-author: jillre
-ms.author: jillfra
+author: mikadumont
+ms.author: midumont
 manager: wpickett
-ms.openlocfilehash: 5294840e4669f28f4e8a04978274ad130d1397ee
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e689d137e071096d096e117ef3b79df405a060ed
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535729"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89285745"
 ---
-# <a name="code-analysis-for-managed-code-warnings"></a>Managed 程式碼的程式碼分析警告
+# <a name="net-code-analysis-rules"></a>.NET 程式碼分析規則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Managed 程式碼分析工具會提供警告，指出 Managed 程式碼程式庫中的規則違規。 警告會組織成規則區域，例如設計、當地語系化、效能與安全性。 每一項警告皆表示 Managed 程式碼分析規則的違規。 本節針對每個 Managed 程式碼分析警告，提供深入的討論與範例。
 
  下表顯示針對每個警告所提供的資訊類型。
 
-|Item|描述|
+|項目|描述|
 |----------|-----------------|
 |類型|規則的 TypeName。|
 |CheckId|規則的唯一識別碼。 Checkid 與 Category 是用於原始程式檔內的警告隱藏。|
 |類別|警告的分類。|
 |中斷變更|此規則的違規修正是否為中斷變更。 中斷變更表示組件在造成違規的目標上具相依性，且該組件不會使用新的固定版本進行重新編譯，或可能由於此項變更而在執行階段失敗。 當有多項修正可用，且至少有一個是中斷變更而有一個不是時，便會指定「中斷」與「非中斷」。|
 |原因|此特定的 Managed 程式碼讓規則產生警告。|
-|描述|討論警告背後的問題。|
+|說明|討論警告背後的問題。|
 |如何修正違規|說明如何變更原始程式碼，以符合規則並避免其產生警告。|
 |隱藏警告的時機|描述何時可安全地隱藏此規則的警告。|
 |範例程式碼|違反規則的範例與經過更正且符合規則的範例。|
