@@ -42,10 +42,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fc169960cf757e4e334d5f77b06ff70b0d6da7c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594743"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>索引標籤、所有語言、文字編輯器、選項
@@ -59,11 +59,11 @@ ms.locfileid: "75594743"
 
 ## <a name="indenting"></a>縮排
 
-None
+無
 
 選取時，新行不會縮排。 插入點會放在新行的第一欄中。
 
-區塊
+封鎖
 
 選取時，新行會自動縮排。 插入點會放在與前一行相同的起始點。
 
@@ -89,9 +89,9 @@ None
 
 保留定位點
 
-選取時，縮排作業會盡可能插入越多的定位字元。 每個 TAB 輸入鍵台**以 Tab 大小**指定的空格數。 如果 [縮排大小]**** 不是 [定位點大小]**** 的偶數倍數，就會加入空格字元填滿其間的差距。
+選取時，縮排作業會盡可能插入越多的定位字元。 每個定位字元會填滿 [索引標籤 **大小]** 中指定的空格數目。 如果 [縮排大小]**** 不是 [定位點大小]**** 的偶數倍數，就會加入空格字元填滿其間的差距。
 
 ## <a name="see-also"></a>另請參閱
 
 - [所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages.md)
-- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)
+- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

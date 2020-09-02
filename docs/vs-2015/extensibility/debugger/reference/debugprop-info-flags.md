@@ -1,5 +1,5 @@
 ---
-title: DEBUGPROP_INFO_FLAGS | Microsoft Docs
+title: DEBUGPROP_INFO_FLAGS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 764d28972575e8da9ef499e6d33a4a4a1deb3b07
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68142997"
 ---
-# <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
+# <a name="debugprop_info_flags"></a>DEBUGPROP_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定要擷取偵錯屬性物件的相關資訊。  
+指定要取出哪些有關 debug 屬性物件的資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -71,60 +71,60 @@ public enum enum_DEBUGPROP_INFO_FLAGS { 
   
 ## <a name="members"></a>成員  
  DEBUGPROP_INFO_FULLNAME  
- 初始化/使用`bstrFullName`欄位。  
+ 初始化/使用 `bstrFullName` 欄位。  
   
  DEBUGPROP_INFO_NAME  
- 初始化/使用`bstrName`欄位。  
+ 初始化/使用 `bstrName` 欄位。  
   
  DEBUGPROP_INFO_TYPE  
- 初始化/使用`bstrType`欄位。  
+ 初始化/使用 `bstrType` 欄位。  
   
  DEBUGPROP_INFO_VALUE  
- 初始化/使用`bstrValue`欄位。  
+ 初始化/使用 `bstrValue` 欄位。  
   
  DEBUGPROP_INFO_ATTRIB  
- 初始化/使用`dwAttrib`欄位。  
+ 初始化/使用 `dwAttrib` 欄位。  
   
  DEBUGPROP_INFO_PROP，  
- 初始化/使用`pProperty`包含的欄位[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)介面。  
+ 初始化/使用 `pProperty` 包含 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 介面的欄位。  
   
  DEBUGPROP_INFO_VALUE_AUTOEXPAND  
- 指定 [值] 欄位應該包含自動擴充的值，是否有的話，這種類型的物件。  
+ 指定值欄位應該包含此類型之物件的自動展開值（如果有的話）。  
   
  DEBUGPROP_INFO_VALUE_NOFUNCEVAL  
  已取代。  
   
  DEBUGPROP_INFO_VALUE_RAW  
- 不會傳回任何 beautified 的值或成員 （也就是不會將格式化的值）。  
+ 請勿傳回任何 beautified 值或成員 (也就是不要將值格式化) 。  
   
  DEBUGPROP_INFO_VALUE_NO_TOSTRING  
- 不會傳回任何特殊的合成的值 (例如，請勿呼叫`ToString()`上用來產生值的物件)。  
+ 請勿傳回任何特殊的合成值 (例如，請勿呼叫 `ToString()` 物件來產生) 的值。  
   
  DEBUGPROP_INFO_NONE  
- 指定會設定任何旗標。  
+ 指定不設定任何旗標。  
   
  DEBUGPROP_INFO_STANDARD  
- 初始化/使用`dwAttrib`， `bstrName`， `bstrType`，和`bstrValue`欄位。  
+ 初始化/使用 `dwAttrib` 、、 `bstrName` `bstrType` 和 `bstrValue` 欄位。  
   
  DEBUGPROP_INFO_All  
  表示所有旗標的遮罩。  
   
 ## <a name="remarks"></a>備註  
- 這些值會傳遞給[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)， [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)，並[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)方法以指出哪些欄位是初始化[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構。  
+ 這些值會傳遞至 [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)、 [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)和 [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) 方法，以指出哪些欄位要初始化 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 結構。  
   
- 這些值也會用於`dwFields`隸屬`DEBUG_PROPERTY_INFO`表示結構的哪些欄位是使用和有效時，會傳回這個結構的結構。  
+ 這些值也會用於結構的 `dwFields` 成員 `DEBUG_PROPERTY_INFO` ，以指出在傳回結構時使用結構的欄位和有效的欄位。  
   
- 這些值可能會合併的位元`OR`。  
+ 這些值可能會與位結合 `OR` 。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)   
  [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)   

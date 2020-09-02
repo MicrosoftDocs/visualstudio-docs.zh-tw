@@ -12,10 +12,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594925"
 ---
 # <a name="trackedvctooltask-base-class"></a>TrackedVCToolTask 基底類別
@@ -30,25 +30,25 @@ ms.locfileid: "75594925"
 |---------------|-----------------|
 |**DeleteOutputOnExecute**|選擇性的 **bool** 參數。|
 |**EnableExecuteTool**|選擇性的 **bool** 參數。|
-|**ExcludedInputPaths**|可選**的 ITaskItem]** 參數。|
+|**ExcludedInputPaths**|選擇性的 **ITaskItem []** 參數。|
 |**MinimalRebuildFromTracking**|選擇性的 **bool** 參數。|
-|**PathOverride**|可選**字串**參數。|
+|**PathOverride**|選擇性的 **字串** 參數。|
 |**PostBuildTrackingCleanup**|選擇性的 **bool** 參數。|
-|**RootSource**|可選**字串**參數。|
+|**RootSource**|選擇性的 **字串** 參數。|
 |**SkippedExecution**|選擇性的 **bool** 輸出參數。|
 |**SourcesCompiled**|選擇性的 **ITaskItem[]** 輸出參數。|
 |**TLogCommandFile**|選擇性的 **ITaskItem** 參數。|
-|**TLogReadFiles**|可選**的 ITaskItem]** 參數。|
-|**TLogWriteFiles**|可選**的 ITaskItem]** 參數。|
-|**ToolArchitecture**|可選**字串**參數。|
+|**TLogReadFiles**|選擇性的 **ITaskItem []** 參數。|
+|**TLogWriteFiles**|選擇性的 **ITaskItem []** 參數。|
+|**ToolArchitecture**|選擇性的 **字串** 參數。|
 |**TrackCommandLines**|選擇性的 **bool** 參數。|
 |**TrackFileAccess**|選擇性的 **bool** 參數。|
-|**TrackedInputFilesToIgnore**|可選**的 ITaskItem]** 參數。|
-|**TrackedOutputFilesToIgnore**|可選**的 ITaskItem]** 參數。|
-|**TrackerFrameworkPath**|可選**字串**參數。|
-|**TrackerSdkPath**|可選**字串**參數。|
+|**TrackedInputFilesToIgnore**|選擇性的 **ITaskItem []** 參數。|
+|**TrackedOutputFilesToIgnore**|選擇性的 **ITaskItem []** 參數。|
+|**TrackerFrameworkPath**|選擇性的 **字串** 參數。|
+|**TrackerSdkPath**|選擇性的 **字串** 參數。|
 
 ## <a name="see-also"></a>另請參閱
 
-[任務引用](../msbuild/msbuild-task-reference.md)<br/>
+[工作參考](../msbuild/msbuild-task-reference.md)<br/>
 [工作](../msbuild/msbuild-tasks.md)

@@ -1,5 +1,5 @@
 ---
-title: CA1002：不要公開泛型清單 |Microsoft Docs
+title: CA1002：不公開泛型清單 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6fcc4ae2a07eb7b1f155d6c65020e2c1a9ddc9f2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546844"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002：不要公開泛型清單
@@ -29,14 +29,14 @@ ms.locfileid: "85546844"
 |-|-|
 |TypeName|DoNotExposeGenericLists|
 |CheckId|CA1002|
-|類別|Microsoft. Design|
+|類別|Microsoft. 設計|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 類型包含外部可見成員，其為 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 類型、傳回 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 類型，或其簽章包含 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 參數。
+ 類型包含外部可見的成員， <xref:System.Collections.Generic.List%601?displayProperty=fullName> 其為類型、傳回 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 類型，或其簽章包含 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 參數。
 
 ## <a name="rule-description"></a>規則描述
- <xref:System.Collections.Generic.List%601?displayProperty=fullName>是針對效能和非繼承而設計的泛型集合。 <xref:System.Collections.Generic.List%601?displayProperty=fullName>不包含虛擬成員，可讓您更輕鬆地變更繼承類別的行為。 下列泛型集合是針對繼承而設計，應該公開而不是 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 。
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName> 是針對效能而非繼承所設計的泛型集合。 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 不包含可讓您更輕鬆地變更繼承類別行為的虛擬成員。 下列泛型集合是針對繼承而設計，而且應該公開而不是 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 。
 
 - <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
@@ -45,10 +45,10 @@ ms.locfileid: "85546844"
 - <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請將 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 類型變更為針對繼承而設計的其中一個泛型集合。
+ 若要修正此規則的違規情形，請將 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 類型變更為針對繼承所設計的其中一個泛型集合。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 除非引發此警告的元件不是可重複使用的程式庫，否則請勿隱藏此規則的警告。 例如，在效能調整的應用程式中隱藏此警告是很安全的，因為使用了泛型清單的效能優勢。
+ 除非引發此警告的元件不是可重複使用的程式庫，否則請勿隱藏此規則的警告。 例如，您可以放心地在效能微調的應用程式中隱藏此警告，因為使用泛型清單會獲得效能優勢。
 
 ## <a name="related-rules"></a>相關規則
  [CA1005：避免在泛型類型上包含過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)

@@ -18,16 +18,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7918844915d32893491f69b4e7f58a5867c3613c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144330"
 ---
 # <a name="taskbody-element-msbuild"></a>TaskBody 項目 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-包含傳遞至 `UsingTask``TaskFactory` 的資料。 如需詳細資訊，請參閱 [UsingTask 項目 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。  
+包含傳遞至 `UsingTask``TaskFactory` 的資料。 如需詳細資訊，請參閱 [ (MSBuild) 的 UsingTask 元素 ](../msbuild/usingtask-element-msbuild.md)。  
   
  \<Project>  
  \<UsingTask>  
@@ -40,23 +40,23 @@ ms.locfileid: "68144330"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`Evaluate`|選擇性的 Boolean 屬性。<br /><br /> 如果為 `true`，當具現化工作時，MSBuild 會評估所有內部元素，並且展開項目和屬性，然後才將資訊傳遞給 `TaskFactory`。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |資料|`TaskBody` 標籤之間的文字會逐字傳送給 `TaskFactory`。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|元素|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[UsingTask](../msbuild/usingtask-element-msbuild.md)|提供一種方式，在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 中登錄工作。 專案中可能有零或多個 `UsingTask` 項目。|  
   
@@ -77,6 +77,6 @@ ms.locfileid: "68144330"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [工作](../msbuild/msbuild-tasks.md)   
+ [任務](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)   
- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
+ [專案檔結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

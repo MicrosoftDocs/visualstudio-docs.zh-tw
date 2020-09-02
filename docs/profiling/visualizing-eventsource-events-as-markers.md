@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64811542"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>將 EventSource 事件顯示為標記
@@ -35,8 +35,8 @@ ms.locfileid: "64811542"
 |ETW 層級|並行視覺化檢視重要性|
 |---------------|---------------------------------------|
 |win:LogAlways|正常|
-|win:Critical|重大|
-|win:Error|重大|
+|win:Critical|重要|
+|win:Error|重要|
 |win:Warning|高|
 |win:Informational|正常|
 |win:Verbose|低|
@@ -71,7 +71,7 @@ ms.locfileid: "64811542"
 |cvImportance 值|並行視覺化檢視重要性|
 |------------------------|---------------------------------------|
 |0|正常|
-|1|重大|
+|1|重要|
 |2|高|
 |3|高|
 |4|正常|
@@ -94,4 +94,4 @@ ms.locfileid: "64811542"
 > 使用 SpanID 將延伸範圍巢狀化，不支援允許其在相同執行緒上部分重疊，或允許其在一個執行緒上開始並在另一個執行緒上結束。
 
 ## <a name="see-also"></a>另請參閱
-- [併發視覺化器標記](../profiling/concurrency-visualizer-markers.md)
+- [並行視覺化標記](../profiling/concurrency-visualizer-markers.md)

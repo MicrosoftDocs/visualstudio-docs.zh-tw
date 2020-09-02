@@ -1,5 +1,5 @@
 ---
-title: 符號元素 |微軟文件
+title: 符號元素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5c24c3f84df23a07b6b16272b66b29e32ad7b911
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699354"
 ---
 # <a name="symbols-element"></a>Symbols 項目
-定義其他 VSCT 元素使用的 GUID 和 I。 對於非託管代碼,此資訊通常來自[Extern 元素](../extensibility/extern-element.md)指定的標頭檔。 託管代碼使用 Symbols 元素的子元素來定義此資訊。
+定義其他 .VSCT 元素所使用的 Guid 和識別碼。 針對非受控碼，這項資訊通常來自 [Extern 元素](../extensibility/extern-element.md)所指定的標頭檔。 Managed 程式碼會使用符號元素的子項目來定義這項資訊。
 
- 如果從現有的 .cto 檔案建立 .vsct 檔案,則符號將作為 Symbol 元素的子級生成。 有關詳細資訊,請參閱[如何:創建 。來自現有的 Vct 檔。Cto 檔案](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)。
+ 如果您從現有的 cto 檔建立 .vsct 檔案，則會將符號產生為符號元素的子系。 如需詳細資訊，請參閱 [如何：建立。從現有的 .vsct 檔案。Cto](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)檔案。
 
- 符號元素不應與[定義元素](../extensibility/define-element.md)混淆,該元素定義名稱值對供預處理器使用。
+ 符號元素不應與 [定義元素](../extensibility/define-element.md)混淆，此專案會定義預處理器所使用的名稱/值組。
 
 ## <a name="syntax"></a>語法
 
@@ -41,20 +41,20 @@ ms.locfileid: "80699354"
 
 |屬性|描述|
 |---------------|-----------------|
-|None||
+|無||
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|吉德符號|定義 GUID 符號。 GuidSymbol 有兩個必需的屬性:名稱和值。 名稱是符號的名稱,該值是 GUID 作為字串的值。<br /><br /> 例如:GuidSymbol\<名稱="guidV 包裝1Pkg"值="{c5f54698-101a-4846-84d3-dc748f9cd848}"/>|
-|ID符號|定義符號。 IDSymbol 具有兩個必需的屬性:名稱和值。 名稱是符號的名稱,值是符號作為字串的值。<br /><br /> 例如:IDSymbol\<名稱="MyMenuGroup"值="0x1020"/>|
+|GuidSymbol|定義 GUID 符號。 GuidSymbol 有兩個必要屬性：名稱和值。 名稱是符號的名稱，而值則是以字串形式提供的 GUID 值。<br /><br /> 例如：\<GuidSymbol name="guidVsPackage1Pkg"   value="{c5f54698-101a-4846-84d3-dc748f9cd848}" />|
+|IDSymbol|定義符號。 IDSymbol 有兩個必要屬性：名稱和值。 名稱是符號的名稱，而值則是以字串作為符號的值。<br /><br /> 例如：\<IDSymbol name="MyMenuGroup" value="0x1020" />|
 
 ### <a name="parent-elements"></a>父項目
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[CommandTable 元素](../extensibility/commandtable-element.md)|.vsct 檔案的根元素。|
+|[CommandTable 元素](../extensibility/commandtable-element.md)|.Vsct 檔案的根項目。|
 
 ## <a name="example"></a>範例
 

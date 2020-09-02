@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::GetChecksum | Microsoft Docs
+title: IDebugBreakpointChecksumRequest2：： GetChecksum |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bff00b5cbe0d59d3c7515d0a384746cd9303097c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158831"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取的中斷點要求指定總和檢查碼演算法的唯一識別項使用的文件總和檢查碼。  
+針對指定要使用總和檢查碼演算法的唯一識別碼，抓取中斷點要求的檔總和檢查碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,16 +40,16 @@ public int GetChecksum(
   
 #### <a name="parameters"></a>參數  
  `guidAlgorithm`  
- [in]總和檢查碼演算法的唯一識別碼。  
+ 在總和檢查碼演算法的唯一識別碼。  
   
  `pChecksumData`  
- [out]用中斷點要求的文件總和檢查碼。  
+ 擴展記錄中斷點要求的總和檢查碼。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 下列範例會檢查是否有總和檢查碼的文件，也就是要繫結，符合其中一個從 UI 的函式。  
+ 下列範例顯示的函式會檢查檔的總和檢查碼（即將系結）是否符合 UI 中的總和檢查碼。  
   
 ```cpp#  
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)  

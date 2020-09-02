@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 920e7222b3b425cbb13c962ff8c2e1e2fc551bd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159235"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>在設計階段時解析組件
@@ -40,4 +40,4 @@ ms.locfileid: "68159235"
  現在隨附於 .NET Framework SDK 的目標套件包含 Framework 版本中所有執行階段組件的清單，稱為轉散發 (redist) 清單。 如此一來，使得建置系統不可能根據錯誤的組件版本來解析類別。  
   
 ## <a name="see-also"></a>另請參閱  
- [進階概念](../msbuild/msbuild-advanced-concepts.md)
+ [先進的概念](../msbuild/msbuild-advanced-concepts.md)

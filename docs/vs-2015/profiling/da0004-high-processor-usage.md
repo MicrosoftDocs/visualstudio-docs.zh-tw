@@ -1,5 +1,5 @@
 ---
-title: DA0004：高處理器使用率 | Microsoft Docs
+title: DA0004：處理器使用率高 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,19 +15,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a0e14a7400b937c56c2aac49a43d1d59cf96eba0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158703"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004：高處理器使用率
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-規則 Id |DA0004 |  
-|類別目錄 |分析工具使用方式 |  
-|程式碼剖析方法 |檢測取樣 |  
-|訊息 |處理器使用率會高於 75%一致的方式。 請考慮為 CPU 繫結應用程式使用取樣模式。|  
+規則識別碼 |DA0004 |  
+|類別 |分析工具使用量 |  
+|分析方法 |檢測取樣 |  
+|訊息 |您的處理器使用量一致地高於75%。 請考慮為 CPU 繫結應用程式使用取樣模式。|  
 |規則類型 |資訊 |  
   
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  

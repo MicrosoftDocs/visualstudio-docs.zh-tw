@@ -7,10 +7,10 @@ ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
 ms.openlocfilehash: 749a267d4fc33153cfc609f331ecd1d269706e12
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249968"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>在 Visual Studio 中停用 DPI 感知
@@ -29,12 +29,12 @@ Visual Studio 中的 **Windows Form 設計工具**不支援縮放比例。 這�
 
 ![Visual Studio 中的資訊列以非 DPI 感知模式重新啟動](./media/scaling-gold-bar.png)
 
-**您主要顯示器上的 [讀取調整] 訊息已設定為 200% (192 DPI) 。這可能會導致在設計工具視窗中呈現問題。**
+**主顯示器上的訊息讀取調整會設定為 200% (192 DPI) 。這可能會導致在設計工具視窗中呈現問題。**
 
 > [!NOTE]
 > 此資訊列是在 Visual Studio 2017 版本 15.8 引入的。
 
-若您並未使用設計工具且不需要調整您表單的版面配置，您可以忽略資訊列並繼續在程式碼編輯器或其他類型的設計工具中工作。  (您也可以 [停用通知](#disable-notifications) ，讓資訊列不會繼續出現。 ) 只有 **Windows Form 設計工具** 會受到影響。 若您需要在 **Windows Form 設計工具**中工作，下一節可協助您[解決問題](#to-resolve-the-display-problem)。
+若您並未使用設計工具且不需要調整您表單的版面配置，您可以忽略資訊列並繼續在程式碼編輯器或其他類型的設計工具中工作。  (您也可以 [停用通知](#disable-notifications) ，讓資訊列不會繼續出現。 ) 只會影響 **Windows Form 設計工具** 。 若您需要在 **Windows Form 設計工具**中工作，下一節可協助您[解決問題](#to-resolve-the-display-problem)。
 
 ## <a name="to-resolve-the-display-problem"></a>解決顯示問題
 
@@ -48,19 +48,19 @@ Visual Studio 中的 **Windows Form 設計工具**不支援縮放比例。 這�
 
 您可以選取黃色資訊列上的選項，以非 DPI 感知處理序方式重新啟動 Visual Studio。 這是解決問題的慣用方法。
 
-以非 DPI 感知處理序方式執行 Visual Studio 時，雖然可以解決設計工具的版面配置，但字體可能會相當模糊。 當 Visual Studio 以不感知 DPI 的進程執行時，會顯示另一個黃色的參考用訊息，表示 **Visual Studio 以 DPI 感知的進程執行。WPF 和 XAML 設計工具可能無法正確顯示。** 資訊列也會提供**以 DPI 感知處理序方式重新啟動 Visual Studio** 的選項。
+以非 DPI 感知處理序方式執行 Visual Studio 時，雖然可以解決設計工具的版面配置，但字體可能會相當模糊。 Visual Studio 在以非 DPI 感知進程的形式執行時，會顯示另一個黃色的參考訊息，指出 **Visual Studio 正在以非 DPI 感知進程的形式執行。WPF 和 XAML 設計工具可能無法正確顯示。** 資訊列也會提供**以 DPI 感知處理序方式重新啟動 Visual Studio** 的選項。
 
 > [!NOTE]
 > - 當您選取以非 DPI 感知處理序方式重新啟動 Visual Studio 的選項時，若 Visual Studio 中有取消停駐的工具視窗，則這些工具視窗的位置可能會變更。
-> - 若您使用預設的 Visual Basic 設定檔，或您在 [工具]**** > [選項]**** > [專案和解決方案]**** 中取消選取了 [在建立時儲存新的專案]**** 選項，Visual Studio 便無法在以非 DPI 感知處理序方式重新啟動時重新開啟您的專案。 不過，您**可以在 [** 檔案] [  >  **最近使用的專案和方案**] 底下選取專案來開啟它。
+> - 若您使用預設的 Visual Basic 設定檔，或您在 [工具]**** > [選項]**** > [專案和解決方案]**** 中取消選取了 [在建立時儲存新的專案]**** 選項，Visual Studio 便無法在以非 DPI 感知處理序方式重新啟動時重新開啟您的專案。 不過，您**可以在 [** 檔案  >  **最近的專案和方案**] 底下選取專案來開啟專案。
 
-當您在 **Windows Form 設計工具**中完成工作後，請務必以 DPI 感知處理序方式來重新啟動 Visual Studio。 以非 DPI 感知處理序方式執行時，字體看起來可能會相當模糊，且您可能會在其他設計工具 (例如 **XAML 設計工具**) 中發現問題。 若您在 Visual Studio 正在以非 DPI 感知模式執行時關閉並重新開啟 Visual Studio，則其會再次進入 DPI 感知狀態。 您也可以在資訊列中選取 [ **重新開機 Visual Studio 做為 DPI 感知進程** ] 選項。
+當您在 **Windows Form 設計工具**中完成工作後，請務必以 DPI 感知處理序方式來重新啟動 Visual Studio。 以非 DPI 感知處理序方式執行時，字體看起來可能會相當模糊，且您可能會在其他設計工具 (例如 **XAML 設計工具**) 中發現問題。 若您在 Visual Studio 正在以非 DPI 感知模式執行時關閉並重新開啟 Visual Studio，則其會再次進入 DPI 感知狀態。 您也可以在資訊列中選取 [ **重新開機 Visual Studio 為 DPI 感知進程** ] 選項。
 
 ### <a name="add-a-registry-entry"></a>新增登錄項目
 
 您可以修改登錄，將 Visual Studio 標記為非 DPI 感知。 請開啟**登錄編輯程式**，然後新增項目到 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers** 子機碼：
 
-**專案**：根據您使用的是 Visual Studio 2017 或2019，請使用下列其中一個值：
+**Entry**：根據您使用的是 Visual Studio 2017 或2019，請使用下列其中一個值：
 
 - C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe
 - C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe
@@ -85,7 +85,7 @@ Visual Studio 中的 **Windows Form 設計工具**不支援縮放比例。 這�
 
 您可以在 Visual Studio 中選擇不要接收 DPI 縮放比例問題的通知。 例如，若您沒有在設計工具中工作，您便可能會想要停用通知。
 
-若要停用通知，請選擇 [**工具**  >  ] [**選項**] 以開啟 [**選項**] 對話方塊。 然後，選擇**Windows Forms Designer**  >  **[Windows Form 設計工具一般**]，並將 [ **DPI 縮放比例] 通知**設定為 [ **False**]。
+若要停用通知，請選擇 [**工具**  >  **選項**] 以開啟 [**選項**] 對話方塊。 然後，選擇 [一般] **Windows Form 設計工具**  >  ，並將**DPI 調整通知**設定為 **[** **False**]。
 
 ![Visual Studio 中的 DPI 縮放比例通知選項](./media/notifications-option.png)
 

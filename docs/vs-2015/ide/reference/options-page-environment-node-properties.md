@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b45716db44dcc316ec60604aa0411e6498797ae0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595016"
 ---
 # <a name="options-page-environment-node-properties"></a>環境節點屬性、選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本文件描述與 [選項]  對話方塊的 [環境]  分類 `DTE.Properties("Environment", <Property Page>)` 相關聯的頁面 (或屬性集合)。 每一小節的標題就是用來存取屬性集合的呼叫，而每一小節中的表格會列出集合中的屬性。
+本文件描述與 [選項]**** 對話方塊的 [環境]**** 分類 `DTE.Properties("Environment", <Property Page>)` 相關聯的頁面 (或屬性集合)。 每一小節的標題就是用來存取屬性集合的呼叫，而每一小節中的表格會列出集合中的屬性。
 
 ## <a name="general"></a>一般
  `DTE.Properties("Environment", "General")`
@@ -32,12 +32,12 @@ ms.locfileid: "75595016"
 |ShowStatusBar|Get/Set (布林值)|決定狀態列是否為可見。|
 |WindowMenuContainsNItems|Get/Set (短整數)|決定 Windows 功能表底部包含文件視窗的方式。|
 |MRUListContainsNItems|Get/Set (短整數)|決定 [最近使用] 子功能表中顯示的檔案數目。|
-|Animations|Get/Set (布林值)|決定整合式開發環境 (IDE) 是否在狀態列中使用動畫。|
+|動畫|Get/Set (布林值)|決定整合式開發環境 (IDE) 是否在狀態列中使用動畫。|
 |AnimationSpeed|Get/Set (短整數)||
 |AutoAdjustExperience|Get/Set (布林值)|自動根據用戶端效能調整視覺效果。|
 |RichClientExperienceOptions|Get/Set (列舉)|透過 <xref:EnvDTE100.vsRichClientExperienceOptions> 中的值提供豐富的用戶端視覺效果。|
-|CloseButtonActiveTabOnly|Get/Set (布林值)|決定是否只在使用中的索引標籤上顯示 [關閉]  按鈕。|
-|AutohidePinActiveTabOnly|Get/Set (布林值)|決定 [自動隱藏]  按鈕是否只會影響使用中的索引標籤。|
+|CloseButtonActiveTabOnly|Get/Set (布林值)|決定是否只在使用中的索引標籤上顯示 [關閉]**** 按鈕。|
+|AutohidePinActiveTabOnly|Get/Set (布林值)|決定 [自動隱藏]**** 按鈕是否只會影響使用中的索引標籤。|
 
 ## <a name="add-inmacros-security"></a>增益集/巨集安全性
  `DTE.Properties("Environment", "AddinMacrosSecurity")`
@@ -80,9 +80,9 @@ ms.locfileid: "75595016"
 |屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |ShowWarningMessages|Get/Set (布林值)|顯示警告訊息。|
-|InitializeFromEditor|Get/Set (布林值)|以編輯器中的文字自動填入 [尋找目標]  方塊。|
+|InitializeFromEditor|Get/Set (布林值)|以編輯器中的文字自動填入 [尋找目標]**** 方塊。|
 |ShowMessageBoxes|Get/Set (布林值)|顯示告知性訊息。|
-|HideWindowsAfterMatchFromQuickFindReplace|Get/Set (布林值)|使用 [快速尋找]  或 [快速取代]  找到符合的項目之後，隱藏 [尋找和取代]  視窗。|
+|HideWindowsAfterMatchFromQuickFindReplace|Get/Set (布林值)|使用 [快速尋找]**** 或 [快速取代]**** 找到符合的項目之後，隱藏 [尋找和取代]**** 視窗。|
 
 ## <a name="import-and-export-settings"></a>匯入和匯出設定
  `DTE.Properties("Environment", "Import and Export Settings")`
@@ -113,10 +113,10 @@ ms.locfileid: "75595016"
 |屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |OnRunOrPreview|Get/Set (字串)|決定 IDE 是否先將一切存檔，然後再預覽或執行所建置的專案。|
-|ProjectsLocation|Get/Set (字串)|決定 [新增專案]  對話方塊儲存新專案的預設目錄。|
-|ShowOutputWindowBeforeBuild|Get/Set (布林值)|決定是否在開始組建時顯示 [輸出]  視窗。|
-|ShowTaskListAfterBuild|Get/Set (布林值)|決定當組建完成但建置作業失敗時，是否顯示 [工作清單]  。|
-|TrackFileSelectionInExplorer|Get/Set (布林值)|決定是否在方案總管  中追蹤目前項目。|
+|ProjectsLocation|Get/Set (字串)|決定 [新增專案]**** 對話方塊儲存新專案的預設目錄。|
+|ShowOutputWindowBeforeBuild|Get/Set (布林值)|決定是否在開始組建時顯示 [輸出]**** 視窗。|
+|ShowTaskListAfterBuild|Get/Set (布林值)|決定當組建完成但建置作業失敗時，是否顯示 [工作清單]****。|
+|TrackFileSelectionInExplorer|Get/Set (布林值)|決定是否在方案總管**** 中追蹤目前項目。|
 |AlwaysShowSolutionNode|Get/Set (布林值)|決定是否顯示方案節點。|
 |OnlySaveStartupProjectsAndDependencies|Get/Set (布林值)|決定儲存作業是否只限於啟始專案及其相依檔案。|
 |ShowAdvancedBuildConfigurations|Get/Set (布林值)|決定是否顯示進階組建組態。|
@@ -135,7 +135,7 @@ ms.locfileid: "75595016"
 
 |屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
-|OnStartUp|Get/Set (列舉)|從 <xref:EnvDTE.vsStartUp> 啟動時所採取的動作，值為 0 到 5：<br /><br /> -   0：開啟首頁<br />-   1：載入上次載入的方案<br />-   2：顯示 [開啟專案]  對話方塊<br />-   3：顯示 [新增專案]  對話方塊<br />-   4：顯示空白環境<br />-   5：顯示起始畫面|
+|OnStartUp|Get/Set (列舉)|從 <xref:EnvDTE.vsStartUp> 啟動時所採取的動作，值為 0 到 5：<br /><br /> -   0：開啟首頁<br />-   1：載入上次載入的方案<br />-   2：顯示 [開啟專案]**** 對話方塊<br />-   3：顯示 [新增專案]**** 對話方塊<br />-   4：顯示空白環境<br />-   5：顯示起始頁|
 |StartPageRSSUrl|Get/Set (字串)|啟動時所使用之 RSS 摘要的 URL。|
 |StartPageRefreshDownloadedContent|Get/Set (布林值)|每隔 StartPageRefreshInterval 中所指定的間隔之後，重新整理起始頁。|
 |StartPageRefreshInterval|Get/Set (短整數)|重新整理起始頁的間隔，以分鐘為單位。|
@@ -145,12 +145,12 @@ ms.locfileid: "75595016"
 
 |屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
-|ConfirmTaskDeletion|Get/Set (布林值)|指定在刪除 [工作清單]  中的工作時，是否顯示確認方塊。|
+|ConfirmTaskDeletion|Get/Set (布林值)|指定在刪除 [工作清單]**** 中的工作時，是否顯示確認方塊。|
 |WarnOnAddingHiddenItem|Get/Set (布林值)|指定加入不會顯示的使用者工作時，是否對您發出警告。|
 |DontShowFilePaths|Get/Set (布林值)|指定是否在 [工作清單] 中顯示完整檔案路徑。|
 |CommentTokens|SafeArray|傳回註解語彙基元值的 SafeArray。 各有各的欄位、`Name` (字串) 和 `Priority` (<xref:EnvDTE.vsTaskPriority>、高、中或低)。|
 
-## <a name="web-browser"></a>網頁瀏覽器
+## <a name="web-browser"></a>Web Browser
  `DTE.Properties("Environment", "WebBrowser")`
 
 |屬性項目名稱|值|描述|
@@ -164,6 +164,6 @@ ms.locfileid: "75595016"
 
 - [控制選項設定](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
 - [在選項頁中決定屬性項目的名稱](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
-- [字型和色彩節點屬性、選項頁面](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
-- [文字編輯器節點屬性、選項頁面](../../ide/reference/options-page-text-editor-node-properties.md)
+- [選項頁、字型和色彩節點屬性](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
+- [文字編輯器節點屬性、選項頁](../../ide/reference/options-page-text-editor-node-properties.md)
 - [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)

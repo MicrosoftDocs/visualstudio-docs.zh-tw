@@ -22,17 +22,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c55b0d3487eb18db33805b418882f157d55b1253
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183531"
 ---
 # <a name="manage-references-in-a-project"></a>管理專案中的參考
 
 在您針對外部元件或已連線服務撰寫程式碼之前，您的專案首先必須包含所需的參考。 參考其實是在專案檔中的項目，包含 Visual Studio 找出該元件或該服務所需的資訊。
 
-若要新增參考，請以滑鼠右鍵按一下方案總管**** 中的 [參考]**** 或 [相依性]**** 節點，然後選擇 [新增參考]****。 您也可以在專案節點上按一下滑鼠右鍵，然後選取 [**加入**  >  **參考**]。 如需詳細資訊，請參閱[如何：新增或移除參考](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)。
+若要新增參考，請以滑鼠右鍵按一下方案總管**** 中的 [參考]**** 或 [相依性]**** 節點，然後選擇 [新增參考]****。 您也可以用滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **參考**]。 如需詳細資訊，請參閱 [如何：加入或移除參考](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)。
 
 ![在 Visual C&#43;&#43; 中新增參考](../ide/media/vs2015_cpp_add_reference.png)
 
@@ -56,7 +56,7 @@ ms.locfileid: "84183531"
 
 通用 Windows 平台 (UWP) 專案可以建立對方案中其他 UWP 專案或者 Windows 8.1 專案或二進位檔的參考，前提是這些專案不使用 Windows 10 中已淘汰的 API。 如需詳細資訊，請參閱 [從 Windows 執行階段 8 移至 UWP](/windows/uwp/porting/w8x-to-uwp-root)。
 
-如果您選擇將 Windows 8.1 專案的目標重定為 Windows 10，請參閱[移植、遷移和升級 Visual Studio 專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md)。
+如果您選擇將 Windows 8.1 專案的目標重定為 Windows 10，請參閱 [移植、遷移及升級 Visual Studio 專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md)。
 
 ### <a name="extension-sdk-references"></a>延伸模組 SDK 參考
 
@@ -80,7 +80,7 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 應用程式�
 
 1. 以滑鼠右鍵按一下導致錯誤之專案中的 [參考]**** 或 [相依性]**** 節點，然後選擇 [新增參考]****。
 
-1. 依序按一下 [Windows]**** 索引標籤和 [延伸模組]**** 子索引標籤，然後針對舊延伸模組 SDK 取消核取方塊，並核取新延伸模組 SDK 的核取方塊。 按一下 [確定]。
+1. 依序按一下 [Windows]**** 索引標籤和 [延伸模組]**** 子索引標籤，然後針對舊延伸模組 SDK 取消核取方塊，並核取新延伸模組 SDK 的核取方塊。 按一下 [確定]  。
 
 ## <a name="add-a-reference-at-design-time"></a>在設計階段新增參考
 
@@ -91,7 +91,7 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 應用程式�
 - 同一方案中的其他專案目錄。 (您可以使用 [專案] **** 索引標籤尋找這些組件。)
 
 > [!NOTE]
-> - 所有專案都包含**mscorlib**的隱含參考。
+> - 所有專案都包含 **mscorlib**的隱含參考。
 > - 所有專案都包含 `System.Core` 的隱含參考，即使 `System.Core` 已從參考清單中移除也一樣。
 > - Visual Basic 專案包含 <xref:Microsoft.VisualBasic>的隱含參考。
 
@@ -113,7 +113,7 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 應用程式�
 
 專案對專案參考是包含組件的專案參考；您可以使用 [參考管理員] 對話方塊的 [專案]**** 索引標籤來新增專案參考。 當給定專案路徑時，Visual Studio 即可找出組件。
 
-當您有會產生組件的專案時，您應該參考該專案，而不要使用檔案參考 (請參閱下文)。 專案對專案參考的優點是它會在組建系統中建立專案之間的相依性。 如果自上次建置的參考專案已變更，則將會建立相依專案。 檔案參考不會建立組建相依性，因此可以建置參考專案而不需建置相依專案，且參考可能會遭到淘汰。 （也就是說，專案可以參考先前建立的專案版本。）這可能會導致在*bin*目錄中需要單一 DLL 的數個版本，這是不可能的。 當發生此衝突時，您會看到一則訊息，例如「警告: 無法將專案 'project' 中的相依性 'file' 複製至執行目錄，因為它會覆寫參考 'file'」。 如需詳細資訊，請參閱[針對中斷參考進行疑難排解](../ide/troubleshooting-broken-references.md)以及[如何：建立和移除專案相依性](../ide/how-to-create-and-remove-project-dependencies.md)。
+當您有會產生組件的專案時，您應該參考該專案，而不要使用檔案參考 (請參閱下文)。 專案對專案參考的優點是它會在組建系統中建立專案之間的相依性。 如果自上次建置的參考專案已變更，則將會建立相依專案。 檔案參考不會建立組建相依性，因此可以建置參考專案而不需建置相依專案，且參考可能會遭到淘汰。  (亦即，專案可以參考先前建立的專案版本。 ) 這可能會導致 *bin* 目錄中需要有數個版本的單一 DLL，但這是不可能的。 當發生此衝突時，您會看到一則訊息，例如「警告: 無法將專案 'project' 中的相依性 'file' 複製至執行目錄，因為它會覆寫參考 'file'」。 如需詳細資訊，請參閱[針對中斷參考進行疑難排解](../ide/troubleshooting-broken-references.md)以及[如何：建立和移除專案相依性](../ide/how-to-create-and-remove-project-dependencies.md)。
 
 > [!NOTE]
 > 如果某個專案的 .NET Framework 目標版本為 4.5 版，而其他專案的目標版本為第 2 版、第 3 版、3.5 版或 4.0 版，則會建立檔案參考而非專案對專案參考。

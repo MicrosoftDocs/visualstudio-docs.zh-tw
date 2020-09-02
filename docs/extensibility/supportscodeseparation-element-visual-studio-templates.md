@@ -1,5 +1,5 @@
 ---
-title: 支援代碼分離元素(可視化工作室範本) |微軟文件
+title: " (Visual Studio 範本的 SupportsCodeSeparation 元素) |Microsoft Docs"
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bd52ae47f47f3ca1fce23f7cf8d37260ec86fb0c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699503"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 項目 (Visual Studio 範本)
-在 **「新增新項目**」對話框中指定是否啟用**了單獨檔中的放置代碼**複選框。
+指定是否在 [**加入新專案**] 對話方塊中，啟用 [將程式**代碼放在個別檔案中**] 核取方塊。
 
- \<樣本>\<範本資料>\<支援代碼分離>
+ \<VSTemplate> \<TemplateData>
+ \<SupportsCodeSeparation>
 
 ## <a name="syntax"></a>語法
 
@@ -43,24 +44,24 @@ ms.locfileid: "80699503"
 
 ### <a name="parent-elements"></a>父項目
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 對樣本進行分類,並定義範本在 **「新專案**」或「**新項目**」對話框中的顯示方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [ **新增專案** ] 或 [ **新增** 專案] 對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- 文字必須為或`true``false`,指示在 **'新增新項目**'對話框中是否啟用**了一個檔案複選框中的放置代碼**。
+ 文字必須是 `true` 或 `false` ，表示在 [**加入新專案**] 對話方塊中是否已啟用 [將程式**代碼放入個別**檔案] 核取方塊。
 
 ## <a name="remarks"></a>備註
   是選擇性元素。 預設值是 `false`。
 
- 該`SupportsCodeSeparation`元素僅適用於 Web 項範本。
+ `SupportsCodeSeparation`元素僅適用于 Web 專案範本。
 
- 代碼分離或代碼背後的頁面模型允許您將標記保存在一個檔中,而程式設計代碼儲存在另一個檔中。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]和其他 .NET 語言使用此模型。
+ 程式碼分隔（或程式碼後端頁面模型）可讓您將標記保留在一個檔案中，並將程式碼放在另一個檔案中。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 和其他 .NET 語言使用此模型。
 
 ## <a name="example"></a>範例
- 下面的範例指定在**單獨的檔案選項中**顯示 Place 代碼。
+ 下列範例會指定 **在個別檔案選項中顯示位置代碼** 。
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"

@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest3::GetRequestInfo2 |Microsoft Docs
+title: IDebugBreakpointRequest3：： GetRequestInfo2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d01d1b5e3aef83d948f058dfbf5dbdbb4c7cb782
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158792"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
@@ -42,16 +42,16 @@ int GetRequestInfo2(
   
 #### <a name="parameters"></a>參數  
  `dwFields`  
- [in]從旗標的組合[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列舉型別，判斷哪些欄位`pBPRequestInfo`是要填入。  
+ 在 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 列舉中的旗標組合，可決定 `pBPRequestInfo` 要填入的欄位。  
   
  `bBPRequestInfo`  
- [out][BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)来填入結構。  
+ 擴展要填入的 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 結構。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`，否則會傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 不會傳回從這個要求中的詳細資訊[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)方法。  
+ 此要求中的詳細資訊與 [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) 方法所傳回的資訊不同。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugBreakpointRequest3](../../../extensibility/debugger/reference/idebugbreakpointrequest3.md)   

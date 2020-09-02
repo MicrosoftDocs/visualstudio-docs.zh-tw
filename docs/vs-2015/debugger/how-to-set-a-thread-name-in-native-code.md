@@ -1,5 +1,5 @@
 ---
-title: HOW TO：在機器碼中設定執行緒名稱 |Microsoft Docs
+title: 如何：在機器碼中設定執行緒名稱 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,13 +21,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 37554c8ba72257ee78b219774425c7e8acb305a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156678"
 ---
-# <a name="how-to-set-a-thread-name-in-native-code"></a>作法：在機器碼中設定執行緒名稱
+# <a name="how-to-set-a-thread-name-in-native-code"></a>如何：在機器碼中設定執行緒名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要在程式中設定執行緒名稱，請如下列程式碼範例所示，使用 `SetThreadName` 函式。 請注意，執行緒名稱會複製到執行緒，以便釋放 `threadName` 參數的記憶體。  
@@ -68,6 +68,6 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
- [如何：在 Managed 程式碼碼中設定執行緒名稱](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+ [Debug 多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [在偵錯工具中查看資料](../debugger/viewing-data-in-the-debugger.md)   
+ [如何：在 Managed 程式碼中設定執行緒名稱](../debugger/how-to-set-a-thread-name-in-managed-code.md)

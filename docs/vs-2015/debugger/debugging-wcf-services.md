@@ -1,5 +1,5 @@
 ---
-title: 偵錯 WCF 服務 |Microsoft Docs
+title: WCF 服務的調試 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 13202f8eb266c82cdd57c227ed4c480a0c871cf7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68141990"
 ---
 # <a name="debugging-wcf-services"></a>偵錯 WCF 服務
@@ -34,7 +34,7 @@ ms.locfileid: "68141990"
  [如何：逐步執行 WCF 服務](../debugger/how-to-step-into-wcf-services.md)  
  說明逐步執行 WCF 服務的偵錯工具支援。  
   
- [如何：針對自我裝載的 WCF 服務進行偵錯](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
+ [如何：將自我裝載的 WCF 服務進行調試](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
  說明如何對在 IIS 或 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程式開發伺服器外執行的 WCF 服務進行偵錯。  
   
 ## <a name="see-also"></a>另請參閱  

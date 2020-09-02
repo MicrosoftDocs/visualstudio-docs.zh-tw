@@ -1,5 +1,5 @@
 ---
-title: 支援多個版本的視覺工作室 |微軟文件
+title: 支援 Visual Studio 的多個版本 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,36 +12,36 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d571f1be4da45ff5ed6b2538cfb515930bde1de
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699481"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>支援多個 Visual Studio 版本
-並排術語*意味著*您可以在同一台電腦上安裝和維護產品的多個版本。 對於 VSPackages,這意味著用戶可以在同一台電腦上安裝多個 Visual Studio 版本。 但是,您不能將 VS 包的並行版本載入到 Visual Studio 的單個版本中。
+此詞彙 *並存* 表示您可以在同一部電腦上安裝和維護產品的多個版本。 針對 Vspackage，這表示使用者可以在同一部電腦上安裝數個 Visual Studio 版本。 不過，您不能將 Vspackage 的並存版本載入 Visual Studio 的單一版本。
 
- 在使 VSPackage 能夠載入到並行版本的 Visual Studio 之前,請考慮以下事項:
+ 在您將 VSPackage 載入 Visual Studio 的並存版本之前，請考慮下列事項：
 
-- 您必須確定要遵循的並行實現策略。
+- 您必須決定要遵循的並存執行策略。
 
-   有關詳細資訊,請參閱[在分享和版本化 VS 套件之間進行選擇](../extensibility/choosing-between-shared-and-versioned-vspackages.md)。
+   如需詳細資訊，請參閱 [在共用和建立版本的 Vspackage 之間進行選擇](../extensibility/choosing-between-shared-and-versioned-vspackages.md)。
 
-- 您的解決方案和專案檔案格式必須適合您的實施策略。
+- 您的解決方案和專案檔案格式必須符合您的執行策略。
 
-   有關詳細資訊,請參閱[升級自訂項目和](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects)[註冊並行部署的檔案名稱副檔名](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)。
+   如需詳細資訊，請參閱 [升級自訂專案](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects) 和 [註冊並存部署的](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)副檔名。
 
-- 安裝程式必須處理實現策略,以便正確安裝和註冊版本控制元件以及跨所有版本共用的元件。
+- 您的安裝程式必須處理您的執行策略，以便正確安裝及註冊已建立版本的元件，以及在所有版本間共用的元件。
 
-   有關詳細資訊,請參閱[安裝帶有 Windows 安裝程式的 VS 套件](../extensibility/internals/installing-vspackages-with-windows-installer.md)以及[元件管理](../extensibility/internals/component-management.md)。
+   如需詳細資訊，請參閱 [使用 Windows Installer 安裝 vspackage](../extensibility/internals/installing-vspackages-with-windows-installer.md) 以及 [元件管理](../extensibility/internals/component-management.md)。
 
   > [!NOTE]
-  > 安裝 Visual Studio 版本還會安裝相應的 .NET 框架版本。 例如,在同一台電腦上安裝 Visual Studio 2010 和 Visual Studio 2012 也分別安裝 .NET Framework 的 4.0 和 4.5 版本。
+  > 安裝 Visual Studio 版本也會安裝對應的 .NET Framework 版本。 例如，在同一部電腦上安裝 Visual Studio 2010 和 Visual Studio 2012，也會分別安裝 .NET Framework 4.0 和4.5 版。
 
 ## <a name="in-this-section"></a>本節內容
-- [在分享與版本化 VS 套件之間進行選擇](../extensibility/choosing-between-shared-and-versioned-vspackages.md)說明如何解決 VS 包中的並排問題。
+- [在共用和建立版本的 Vspackage 之間進行選擇](../extensibility/choosing-between-shared-and-versioned-vspackages.md) 說明如何解決 VSPackage 中並存的問題。
 
-- [註冊並行部署的檔案名副檔名](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)描述 VSPackage 如何在並行方案中註冊文件關聯。
+- [註冊並存部署的](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md) 副檔名描述 VSPackage 如何在並存案例中註冊檔案關聯。
 
 ## <a name="related-sections"></a>相關章節
 - [使用 Windows Installer 安裝 VSPackage](../extensibility/internals/installing-vspackages-with-windows-installer.md)

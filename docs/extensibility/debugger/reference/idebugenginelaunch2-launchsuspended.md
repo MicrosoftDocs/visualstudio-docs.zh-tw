@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine啟動2::啟動暫停 |微軟文件
+title: IDebugEngineLaunch2：： LaunchSuspended |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e802c17d0a93aabbe5c6c0a8573abc6a551944ae
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730551"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
-此方法通過調試引擎 (DE) 啟動進程。
+這個方法會透過 debug engine (DE) 來啟動處理常式。
 
 ## <a name="syntax"></a>語法
 
@@ -65,51 +65,51 @@ int LaunchSuspended(
 
 ## <a name="parameters"></a>參數
 `pszMachine`\
-[在]要在其中啟動進程的機器的名稱。 使用 null 值指定本地電腦。
+在要在其中啟動處理常式的電腦名稱稱。 使用 null 值來指定本機電腦。
 
 `pPort`\
-[在][IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)介面表示程式將在其中運行的埠。
+在代表程式將在其中執行之埠的 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) 介面。
 
 `pszExe`\
-[在]要啟動的可執行檔的名稱。
+在要啟動的可執行檔名稱。
 
 `pszArgs`\
-[在]要傳遞給可執行檔的參數。 如果沒有參數,則可能是 null 值。
+在要傳遞給可執行檔的引數。 如果沒有引數，則可以是 null 值。
 
 `pszDir`\
-[在]可執行檔使用的工作目錄的名稱。 如果不需要工作目錄,則可能是空值。
+在可執行檔所使用之工作目錄的名稱。 如果不需要工作目錄，則可以是 null 值。
 
 `bstrEnv`\
-[在]NULL 終止字串的環境塊,後跟一個額外的 NULL 終止符。
+在以 Null 結束之字串的環境區塊，後面接著額外的 Null 結束字元。
 
 `pszOptions`\
-[在]可執行檔的選項。
+在可執行檔的選項。
 
 `dwLaunchFlags`\
-[在]指定會話[的LAUNCH_FLAGS。](../../../extensibility/debugger/reference/launch-flags.md)
+在指定會話的 [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) 。
 
 `hStdInput`\
-[在]處理備用輸入流。 如果不需要重定向,則可能是 0。
+在替代輸入資料流程的控制碼。 如果不需要重新導向，則可以是0。
 
 `hStdOutput`\
-[在]處理備用輸出流。 如果不需要重定向,則可能是 0。
+在替代輸出資料流程的控制碼。 如果不需要重新導向，則可以是0。
 
 `hStdError`\
-[在]處理備用錯誤輸出流。 如果不需要重定向,則可能是 0。
+在替代錯誤輸出資料流程的控制碼。 如果不需要重新導向，則可以是0。
 
 `pCallback`\
-[在]接收調試器事件的[IDebugEvent 回調2](../../../extensibility/debugger/reference/idebugeventcallback2.md)物件。
+在接收偵錯工具事件的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 物件。
 
 `ppDebugProcess`\
-[出]返回表示啟動過程的結果[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件。
+擴展傳回產生的 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 物件，代表已啟動的進程。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 通常,[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]使用[Launch 暫停](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md)方法啟動程式,然後將除錯器附加到掛起的程式。 但是,在某些情況下,調試引擎可能需要啟動程式(例如,如果調試引擎是解釋器的一部分,並且正在調試的程式是解釋語言),在這種情況下[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)],使用 該`IDebugEngineLaunch2::LaunchSuspended`方法。
+ 一般來說，會 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 使用 [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) 方法啟動程式，然後將偵錯工具附加至已暫止的程式。 不過，在某些情況下，debug engine 可能需要啟動程式 (例如，如果偵錯工具是解譯器的一部分，而正在進行調試的程式是) 的解讀語言，在這種情況下會 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 使用 `IDebugEngineLaunch2::LaunchSuspended` 方法。
 
- 在進程以掛起狀態成功啟動后,將調用[ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)方法以啟動進程。
+ 在以暫停狀態成功啟動程式之後，會呼叫 [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md) 方法來啟動處理常式。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a1e8118faa743398271fb282a2603aab5fcd76b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62950652"
 ---
 # <a name="nosplash-devenvexe"></a>/NoSplash (devenv.exe)
@@ -31,7 +31,7 @@ devenv /NoSplash [File1[ FileN]...]
 
 ## <a name="arguments"></a>引數
 
-- *檔1*
+- *1*
 
   選擇性。 要在現有 Visual Studio 執行個體中開啟的檔案。 如果沒有任何 Visual Studio 執行個體存在，即會建立具有簡易視窗配置的新執行個體，而工具會在新的執行個體中開啟 *File1*。
 
@@ -60,4 +60,4 @@ devenv /nosplash /debugexe MySolution.exe
 ## <a name="see-also"></a>另請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)
-- [用於 VSPackage 開發的 Devenv 命令列交換器](../../extensibility/devenv-command-line-switches-for-vspackage-development.md)
+- [適用于 VSPackage 開發的 Devenv 命令列參數](../../extensibility/devenv-command-line-switches-for-vspackage-development.md)

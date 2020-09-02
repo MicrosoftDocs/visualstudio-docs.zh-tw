@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd9775bf03754913aea84f41e9878e755ff15d95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198354"
 ---
 # <a name="span-class"></a>span 類別
@@ -35,12 +35,12 @@ class span;
   
 ### <a name="public-constructors"></a>公用建構函式  
   
-|名稱|說明|  
+|Name|描述|  
 |----------|-----------------|  
 |[span::span 建構函式](../profiling/span-span-constructor.md)|初始化 `span` 類別的新執行個體。|  
 |[span::~span 解構函式](../profiling/span-tilde-span-destructor.md)|終結 `span` 物件，並釋放其資源。|  
   
-## <a name="inheritance-hierarchy"></a>繼承階層  
+## <a name="inheritance-hierarchy"></a>繼承階層架構  
  `span`  
   
 ## <a name="requirements"></a>需求  
@@ -49,4 +49,4 @@ class span;
  **命名空間：** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>另請參閱  
- [diagnostic 命名空間](../profiling/diagnostic-namespace.md)
+ [診斷命名空間](../profiling/diagnostic-namespace.md)

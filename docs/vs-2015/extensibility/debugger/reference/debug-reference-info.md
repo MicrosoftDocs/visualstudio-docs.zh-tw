@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 675373ae1728bbca2cc7a89fdaa8014e6286d8b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159319"
 ---
-# <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
+# <a name="debug_reference_info"></a>DEBUG_REFERENCE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-描述的參考。  
+描述參考。  
   
 ## <a name="syntax"></a>語法  
   
@@ -52,35 +52,35 @@ public struct DEBUG_REFERENCE_INFO { 
   
 ## <a name="members"></a>成員  
  dwFields  
- 從旗標的組合[DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)列舉，指定哪些欄位都已填寫。  
+ [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)列舉中的旗標組合，可指定要填寫的欄位。  
   
  bstrName  
- 指定使用者名稱[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件。  
+ 使用者指定的 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 物件名稱。  
   
  bstrType  
- 參考型別為格式化的字串。  
+ 格式化字串形式的參考型別。  
   
  bstrValue  
- 格式化字串的參考值  
+ 格式化字串形式的參考值  
   
  dwAttrib  
- 從旗標的組合[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)指定偵錯屬性的屬性旗標的列舉型別。  
+ [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)列舉中的旗標組合，可指定 debug 屬性屬性的旗標。  
   
  dwRefType  
- 值，以從[REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)列舉，指定參考型別是否為強式或弱式。  
+ [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)列舉中的值，這個值會指定參考型別為強式或弱式。  
   
  m_pReference  
- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，指定的參考資訊。  
+ 指定參考資訊的 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 物件。  
   
 ## <a name="remarks"></a>備註  
- 此結構會傳遞至呼叫[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)来填入的方法。 此結構也會傳回從清單的一部分[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)介面，反而會從呼叫傳回[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)方法。  
+ 此結構會傳遞至要填入之 [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) 方法的呼叫。 此結構也會從 [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) 介面傳回做為清單的一部分，而這會從 [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) 方法的呼叫傳回。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
