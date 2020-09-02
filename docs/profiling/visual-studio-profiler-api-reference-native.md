@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 89dadc3213620b668160752e919679cccead90bc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778020"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio 分析工具 API 參考 (原生)
@@ -48,5 +48,5 @@ Visual Studio 分析工具 API 可讓您以程式設計方式控制收集的資�
 
 ## <a name="see-also"></a>另請參閱
 
-- [分析工具 API](../profiling/profiling-tools-apis.md)
+- [程式碼剖析工具 Api](../profiling/profiling-tools-apis.md)
 - [逐步解說：使用分析工具 API](../profiling/walkthrough-using-profiler-apis.md)

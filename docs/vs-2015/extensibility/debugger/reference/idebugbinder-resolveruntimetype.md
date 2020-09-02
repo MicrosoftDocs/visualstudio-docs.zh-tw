@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveRuntimeType |Microsoft Docs
+title: IDebugBinder：： ResolveRuntimeType |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 69b1418c76e01b87bcd6d992a82ce58287e79ceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192302"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個方法會判斷物件的執行階段型別。  
+這個方法會判斷物件的執行時間類型。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,16 +42,16 @@ int ResolveRuntimeType(
   
 #### <a name="parameters"></a>參數  
  `pObject`  
- [in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)進行解析。  
+ 在要解析的 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 。  
   
  `ppResolved`  
- [out]傳回的物件做為類型[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)。  
+ 擴展傳回物件的型別為 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 物件的執行階段類型不一定知道在編譯時期。 比方說，使用多型，引數可以傳遞至函式作為其基底類別，例如按鈕類別。 實際引數可能衍生的類別，例如選項按鈕類別。  
+ 在編譯時間，物件的執行時間類型不一定是已知的。 例如，使用多型，可以將引數傳遞至函式作為其基類，例如按鈕類別。 實際的引數可能是衍生類別，例如選項按鈕類別。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   

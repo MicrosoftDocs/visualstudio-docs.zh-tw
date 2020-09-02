@@ -1,5 +1,5 @@
 ---
-title: IDebug函數物件::創建ArrayObject |微軟文件
+title: IDebugFunctionObject：： CreateArrayObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bd4c07f2b95ff3077de79d4bc63f4fad19b0c6fa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728611"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
-創建陣列物件。 此陣列可以包含基元或物件實例值。
+建立陣列物件。 這個陣列可以包含基本或物件實例值。
 
 ## <a name="syntax"></a>語法
 
@@ -51,28 +51,28 @@ int CreateArrayObject(
 
 ## <a name="parameters"></a>參數
 `ot`\
-[在]指定[OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md)枚舉中的值,指示新陣組物件的類型。
+在指定 [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) 列舉中的值，表示新陣列物件的型別。
 
 `pClassField`\
-[在]如果創建物件實例值陣列,則表示物件的類的[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。 如果創建基元物件的陣列,則此參數為空值。
+在代表物件之類別的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 物件（如果建立物件實例值的陣列）。 如果建立基本物件的陣列，此參數為 null 值。
 
 `dwRank`\
-[在]陣列的級別或維度數。
+在陣列的等級或維度數目。
 
 `dwDims`\
-[在]陣列的每個維度的大小。
+在陣列的每個維度大小。
 
 `dwLowBounds`\
-[在]每個維度(通常為 0 或 1)的原點。
+在每個維度的來源 (通常是0或 1) 。
 
 `ppObject`\
-[出]傳回表示新的建立的陣列的[IDebugObject 物件](../../../extensibility/debugger/reference/idebugobject.md)。 這實際上是一個[IDebugArray 物件](../../../extensibility/debugger/reference/idebugarrayobject.md)物件。
+擴展傳回代表新建立之陣列的 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 物件。 這實際上是 [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回S_OK;否則,返回錯誤代碼。
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 調用此方法以創建一個物件,該物件表示由[IDebug函數物件](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面表示的函數的陣列參數。
+ 呼叫這個方法來建立物件，該物件代表 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 介面所代表之函式的陣列參數。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

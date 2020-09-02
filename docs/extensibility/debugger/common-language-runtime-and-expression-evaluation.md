@@ -1,5 +1,5 @@
 ---
-title: 通用語言執行時和運算中計算 |微軟文件
+title: Common Language Runtime 和運算式評估 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,28 +12,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 013579473189dd9310501b76d2de0d5cf6fa5822
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739118"
 ---
-# <a name="common-language-runtime-and-expression-evaluation"></a>通用語言執行時與表示式運算
+# <a name="common-language-runtime-and-expression-evaluation"></a>Common language runtime 和運算式評估
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關如何執行 CLR 運算式評估工具的詳細資訊，請參閱 [CLR 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 面向通用語言運行時 (CLR) 的編譯器(如 Visual Basic 和 C#(發音為 C-sharp))生成 Microsoft 中間語言 (MSIL),後者後來被編譯為本機代碼。 CLR 提供調試引擎 (DE) 來調試生成的代碼。 如果您計劃將專有程式設計語言整合到 Visual Studio IDE 中,您可以選擇編譯到 MSIL,因此不必編寫自己的 DE。 但是,您必須編寫一個表示式賦值器 (EE),該運算式評估器能夠評估程式設計語言上下文中的運算式。
+ 編譯器（例如 Visual Basic 和 c #)  (會以 Common Language Runtime (CLR) 為目標，並產生 Microsoft 中繼語言 (MSIL) ，稍後會編譯成機器碼。 CLR 會提供 debug engine (DE) 來對產生的程式碼進行 debug 錯。 如果您打算將專屬的程式設計語言整合至 Visual Studio IDE，您可以選擇編譯成 MSIL，因此不需要自行撰寫 DE。 不過，您必須撰寫 (EE) 的運算式評估工具，以便能夠在程式設計語言的內容中評估運算式。
 
-## <a name="discussion"></a>討論區
- 通常對計算機語言表達式進行分析以生成一組數據物件和一組用於操作它們的運算符。 例如,可以分析表達式「A+B」以將添加運算符 (+) 應用於數據物件「A」和「B」,這可能導致另一個數據物件。 數據物件、運算元及其關聯的總集通常以樹的形式在程式中表示,其中運算符位於樹的節點處,數據物件位於分支。 分解為樹形的表達式通常稱為解析樹。
+## <a name="discussion"></a>討論
+ 通常會剖析電腦語言運算式來產生一組資料物件，以及一組用來操作這些物件的運算子。 例如，可能會剖析運算式 "A + B"，將加法運算子 (+) 套用至資料物件 "A" 和 "B"，可能導致另一個資料物件。 在程式中，資料物件、運算子及其關聯的總集合最常以樹狀結構表示，並在樹狀結構的節點和資料物件的資料物件中，提供運算子。 已細分為樹狀結構的運算式通常稱為剖析樹狀結構。
 
- 分析表示式後,將調用符號提供程式 (SP) 以評估每個數據物件。 例如,如果「A」在多種方法中同時定義,則問題「哪個 A? 必須先回答,然後才能確定 A 的值。 SP 返回的答案類似於"第五堆棧幀上的第三項"或"A 是 50 位元組,超出分配給此方法的靜態記憶體的開頭。
+ 一旦剖析運算式，就會呼叫 (SP) 的符號提供者來評估每個資料物件。 例如，如果 "A" 是在一個以上的方法中定義，則問題為 "A？" 必須先回答，才能確認的值。 SP 傳回的答案就像是「第五個堆疊框架上的第三個專案」或「在配置給這個方法的靜態記憶體開頭以外的50個位元組」。
 
- 除了為程式本身生成 MSIL 外,CLR 編譯器還可以生成非常描述性的調試資訊,這些資訊寫入程式資料庫 *(.pdb*) 檔中。 只要專有語言編譯器生成與 CLR 編譯器相同的格式的調試資訊,CLR 的 SP 就能標識該語言的命名數據物件。 標識命名數據物件後,EE 使用活頁夾物件將數據物件關聯(或綁定)到保存該物件值的記憶體區域。 然後,DE 可以獲取或設置數據物件的新值。
+ 除了為程式本身產生 MSIL 之外，CLR 編譯器也可以產生非常描述性的偵錯工具，並將其寫入至程式資料庫 (*.pdb*) 檔。 只要專屬語言編譯器以與 CLR 編譯器相同的格式產生 debug 資訊，CLR 的 SP 就能夠識別該語言的命名資料物件。 一旦識別出已命名的資料物件，EE 就會使用系結器物件，將 (或系結) 資料物件關聯至保存該物件值的記憶體區域。 然後，DE 可以取得或設定資料物件的新值。
 
- 專有編譯器可以通過調`ISymbolWriter`用 介面(在`System.Diagnostics.SymbolStore`命名空間 中的 .NET 框架中定義)來提供 CLR 調試資訊。 通過編譯到 MSIL 並透過這些介面編寫除錯資訊,專有編譯器可以使用 CLR DE 和 SP。 這大大簡化了將專有語言集成到可視化工作室 IDE 中。
+ 專屬的編譯器可以藉由呼叫 `ISymbolWriter` (定義于命名空間) .NET Framework 中的介面，來提供 CLR 偵錯工具的資訊 `System.Diagnostics.SymbolStore` 。 藉由編譯至 MSIL 並透過這些介面寫入偵錯工具資訊，專屬的編譯器可以使用 CLR DE 和 SP。 這可大幅簡化將專屬語言整合到 Visual Studio IDE 中的工作。
 
- 當 CLR DE 調用專有 EE 以評估運算式時,DE 向 EE 提供 SP 和活頁夾物件的介面。 因此,編寫基於 CLR 的調試引擎意味著只需實現適當的運算式賦值器介面;CLR 負責綁定和符號處理。
+ 當 CLR DE 呼叫專屬的 EE 來評估運算式時，DE 會將具有介面的 EE 提供給 SP 和系結器物件。 因此，撰寫以 CLR 為基礎的 debug 引擎表示只需要執行適當的運算式評估工具介面，CLR 會為您處理系結和符號處理。
 
 ## <a name="see-also"></a>另請參閱
-- [編寫 CLR 表示式賦值器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+- [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

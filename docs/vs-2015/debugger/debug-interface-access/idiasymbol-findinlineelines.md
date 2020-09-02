@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineeLines |Microsoft Docs
+title: IDiaSymbol：： findInlineeLines |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67803ae362c8a377593f77e100ab094f184483a0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149960"
 ---
 # <a name="idiasymbolfindinlineelines"></a>IDiaSymbol::findInlineeLines
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取列舉型別，可讓用戶端來逐一查看所有函式是內嵌的直接或間接地在這個符號中的行號資訊。  
+抓取列舉，此列舉可讓用戶端逐一查看此符號中內嵌或間接內嵌之所有函式的行號資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,10 +33,10 @@ HRESULT findInlineeLines ( 
   
 #### <a name="parameters"></a>參數  
  `ppResult`  
- [out]保存`IDiaEnumLineNumbers`物件，其中包含所擷取的行號的清單。  
+ 擴展保存 `IDiaEnumLineNumbers` 物件，其中包含所抓取行號的清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

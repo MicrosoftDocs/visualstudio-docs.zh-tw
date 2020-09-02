@@ -14,10 +14,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d6a4f7f1631ac4bfc651f5df347db010cf47a656
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657142"
 ---
 # <a name="using-the-assert-classes"></a>使用 Assert 類別
@@ -59,5 +59,5 @@ ms.locfileid: "72657142"
 
  當您想要測試方法確認您預期由開發程式碼中之方法擲回的例外狀況，確實是由該方法擲回時，請使用 ExpectedExceptionAttribute 屬性裝飾測試方法。
 
-## <a name="see-also"></a>請參閱
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting>[針對現有程式碼建立及執行單元測試](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
+## <a name="see-also"></a>另請參閱
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting>[針對現有的程式碼建立和執行單元測試](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)

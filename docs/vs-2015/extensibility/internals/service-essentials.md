@@ -1,5 +1,5 @@
 ---
-title: 服務 Essentials |Microsoft Docs
+title: 服務基本 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,36 +11,36 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 407dda2f203b7be20b19c0e296caa9ce1c95b32c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696073"
 ---
 # <a name="service-essentials"></a>服務的基本資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-服務是兩個的 Vspackage 之間的合約。 一個 VSPackage 提供一組特定的介面使用的另一個 VSPackage。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 本身是提供服務給其他 Vspackage 的 Vspackage 集合。  
+服務是兩個 Vspackage 之間的合約。 其中一個 VSPackage 會提供一組特定的介面，供另一個要取用的 VSPackage 使用。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 本身是提供服務給其他 Vspackage 的 Vspackage 集合。  
   
- 例如，您可以使用 SVsActivityLog 服務取得 IVsActivityLog 介面，可用來寫入活動記錄檔。 如需詳細資訊，請參閱[如何：使用活動記錄](../../extensibility/how-to-use-the-activity-log.md)。  
+ 例如，您可以使用 SVsActivityLog 服務取得 IVsActivityLog 介面，此介面可用來寫入活動記錄。 如需詳細資訊，請參閱 [如何：使用活動記錄](../../extensibility/how-to-use-the-activity-log.md)。  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 也提供一些內建的服務未註冊的。 Vspackage 可以藉由提供服務的覆寫來取代內建或其他服務。 只有一個服務覆寫所允許的任何服務。  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 也提供一些未註冊的內建服務。 Vspackage 可以藉由提供服務覆寫來取代內建或其他服務。 任何服務都只允許一個服務覆寫。  
   
- 服務有沒有可測知性。 因此，您必須知道您想要使用的服務的服務識別碼 (SID)，而且您必須知道它所提供的介面。 服務的參考文件提供這項資訊。  
+ 服務沒有可搜尋的。 因此，您必須知道您想要取用之服務的服務識別碼 (SID) ，而且必須知道它所提供的介面。 服務的參考檔會提供此資訊。  
   
-- 提供服務的 Vspackage 會呼叫服務提供者。  
+- 提供服務的 Vspackage 稱為服務提供者。  
   
-- 其他 vspackage 提供的服務稱為 「 全域服務 」。  
+- 提供給其他 Vspackage 的服務稱為「全域服務」。  
   
-- 僅適用於 VSPackage 實作它們，或它所建立的任何物件，會呼叫本機服務的服務。  
+- 只有執行這些服務的 VSPackage 或其所建立的任何物件才能使用這些服務，稱為本機服務。  
   
-- 取代內建的服務或由其他套件，提供服務的服務稱為服務覆寫。  
+- 取代其他封裝所提供的內建服務或服務的服務，稱為服務覆寫。  
   
-- 視需要載入服務或服務的覆寫，另一個 VSPackage 要求它所提供的服務時，也就是載入服務提供者。  
+- 服務或服務覆寫會視需要載入，也就是當另一個 VSPackage 要求服務提供者所提供的服務時，就會載入服務提供者。  
   
-- 若要支援依需求載入，服務提供者註冊其全域服務與[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 <<c0> [ 登錄服務](../../misc/registering-services.md)。  
+- 為了支援隨選載入，服務提供者會向註冊其全域服務 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。 如需詳細資訊，請參閱 [註冊服務](../../misc/registering-services.md)。  
   
-- 取得服務之後，請使用[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (unmanaged 程式碼) 或轉型 （managed 程式碼） 來取得所需的介面，例如：  
+- 取得服務之後，請使用 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (非受控程式碼) 或轉換 (managed 程式碼) 以取得所需的介面，例如：  
   
     ```vb  
     TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)  
@@ -51,16 +51,16 @@ ms.locfileid: "65696073"
   
     ```  
   
-- Managed 程式碼是指服務依其型別，而未受管理的程式碼係指服務的 GUID 來。  
+- Managed 程式碼是由其型別所參考的服務，而非受控碼則是透過其 GUID 來參考服務。  
   
-- 當[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]VSPackage 的載入，就會傳遞服務提供者至 VSPackage 的 VSPackage 的存取權給予全域服務。 這稱為 「 地點 」 VSPackage。  
+- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]載入 VSPackage 時，它會將服務提供者傳遞給 VSPackage，以授與 VSPackage 對全域服務的存取權。 這稱為「地點」 VSPackage。  
   
-- Vspackage 可以是服務提供者所建立的物件。 例如，表單可能會傳送色彩服務的要求至其的框架，可能會傳遞要求[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
+- Vspackage 可以是其所建立物件的服務提供者。 例如，表單可能會將色彩服務的要求傳送至其框架，而這可能會將要求傳遞至 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。  
   
-- 受管理的物件深度巢狀，或未設置，可能會呼叫<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>全域服務的直接存取。 如需詳細資訊，請參閱[如何：使用 GetGlobalService](../../misc/how-to-use-getglobalservice.md)。  
+- 具有深層嵌套或未放置的 Managed 物件，可能會呼叫 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 以直接存取全域服務。 如需詳細資訊，請參閱 [如何：使用 GetGlobalService](../../misc/how-to-use-getglobalservice.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [可用服務清單](../../extensibility/internals/list-of-available-services.md)   
+ [可用服務的清單](../../extensibility/internals/list-of-available-services.md)   
  [使用和提供服務](../../extensibility/using-and-providing-services.md)   
- [轉型和類型轉換](https://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
+ [轉換和類型轉換](https://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
  [轉型](https://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)

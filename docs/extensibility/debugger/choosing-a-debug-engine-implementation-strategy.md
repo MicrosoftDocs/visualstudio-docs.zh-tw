@@ -1,5 +1,5 @@
 ---
-title: 選擇除錯引擎實施策略 |微軟文件
+title: 選擇 Debug Engine 執行策略 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,25 +11,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 05e66975a2d41108d3d9fb469da9e4a36a10d8d2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739123"
 ---
-# <a name="choose-a-debug-engine-implementation-strategy"></a>選擇除錯引擎實施原則
-使用運行時體系結構確定調試引擎 (DE) 實現策略。 您可以將除錯引擎建立到正在除錯的程式的程序。 在過程中創建調試引擎到可視化工作室工作階段除錯管理器 (SDM)。 或者,將調試引擎創建進程外,以將其與它們進行。 以下指南將説明您從這三種策略中進行選擇。
+# <a name="choose-a-debug-engine-implementation-strategy"></a>選擇 debug engine 執行策略
+您可以使用執行時間架構來決定您的 debug engine (DE) 的執行策略。 您可以針對正在進行偵錯工具的程式建立同進程的 debug engine。 在 Visual Studio 會話 debug manager (SDM) 的同進程中建立 debug engine。 或者，為這兩個元件建立跨進程的偵錯工具引擎。 下列指導方針可協助您在這三種策略中做選擇。
 
 ## <a name="guidelines"></a>指導方針
- 雖然 DE 可能會與 SDM 和正在調試的程式都進行進程外處理,但通常沒有理由這樣做。 跨進程邊界的調用相對較慢。
+ 雖然您可以對 SDM 和您正在進行偵錯工具的程式進行非程式處理，但通常沒有理由這麼做。 跨進程界限的呼叫會相當緩慢。
 
- 已經為 Win32 本機運行時環境和通用語言運行時環境提供了調試引擎。 如果必須為任一環境替換 DE,則應使用 SDM 創建進程中的 DE。
+ 已經為 Win32 原生執行時間環境和 common language 執行時間環境提供了偵錯工具引擎。 如果您必須取代任一環境的取消，您應該使用 SDM 來建立取消處理。
 
- 否則,您將在進程中創建 DE 到 SDM 或行程內到要調試的程式。 您需要考慮 DE 的運算式賦值器是否需要頻繁存取程式符號儲存。 或者,如果符號存儲可以載入到記憶體中以便快速存取。 此外,請考慮以下方法:
+ 否則，您可以針對正在進行偵錯工具的程式，建立對 SDM 或同進程的取消進程。 您必須考慮是否需要經常存取程式符號存放區，才能進行 DE 的運算式評估工具。 或者，如果符號存放區可以載入記憶體以供快速存取。 此外，請考慮下列方法：
 
-- 如果表達式賦值器和符號存儲之間沒有多次調用,或者如果符號存儲可以讀取到 SDM 記憶體空間中,請創建 SDM 過程中的 DE 進程。 當除錯引擎的 CLSID 附加到程式時,必須將其返回到 SDM。 SDM 使用此 CLSID 創建 DE 的程序內實例。
+- 如果運算式評估工具和符號存放區之間沒有許多呼叫，或如果符號存放區可讀入 SDM 記憶體空間中，請建立對 SDM 的取消處理。 當您附加至程式時，您必須將偵錯工具的 CLSID 傳回至 SDM。 SDM 會使用這個 CLSID 來建立 DE 的同進程實例。
 
-- 如果 DE 必須呼叫程式才能存取符號儲存,請使用程式創建進程中的 DE。 在這種情況下,程式將創建 DE 的實例。
+- 如果 DE 必須呼叫程式來存取符號存放區，請建立程式的「取消處理」程式。 在此情況下，程式會建立 DE 的實例。
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室除錯器可擴充性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+- [Visual Studio 偵錯工具擴充性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

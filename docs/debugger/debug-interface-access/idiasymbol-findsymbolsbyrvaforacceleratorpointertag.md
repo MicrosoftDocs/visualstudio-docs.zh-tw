@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: de63223afda4ce5d00358fe3c06cabe90f2689aa
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464433"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
-假設有對應的標記值，這個方法會傳回在指定的相對虛擬位址上，此存根函式中所包含的符號列舉。
+如果有對應的標記值，這個方法會傳回在指定的相對虛擬位址的這個存根函式中所包含的符號列舉。
 
 ## <a name="syntax"></a>語法
 
@@ -36,17 +36,17 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
 
  `rva`
 
-在Rva，用來篩選對應至具有指定標記值之 pointee 變數的符號。
+在Rva，用來篩選以指定的標記值對應至 pointee 變數的符號。
 
  `ppResult`
 
-脫銷介面指標的指標， `IDiaEnumSymbols` 它會以結果初始化。
+擴展介面指標的指標， `IDiaEnumSymbols` 該指標會以結果初始化。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 ## <a name="remarks"></a>備註
- 只在 `IDiaSymbol` 對應至快速鍵 stub 函式的介面上呼叫這個方法。
+ 請只在 `IDiaSymbol` 對應至加速器存根函式的介面上呼叫這個方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

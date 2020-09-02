@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 94d7e16b011b153a43e3d1666451a90b0e44c8b1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547156"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>如何：以程式設計方式判斷目前的 Outlook 專案
-  這個範例會使用 `Explorer.SelectionChange` 事件來顯示目前資料夾的名稱，以及所選項目的一些相關資訊。 然後，程式碼會顯示選取的專案。
+  這個範例會使用 `Explorer.SelectionChange` 事件來顯示目前資料夾的名稱，以及有關所選取專案的一些資訊。 然後，程式碼會顯示選取的專案。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -34,9 +34,9 @@ ms.locfileid: "85547156"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要：
 
-- Microsoft Office Outlook 中的 [約會]、[連絡人] 和 [電子郵件] 專案。
+- Microsoft Office Outlook 中的約會、連絡人和電子郵件專案。
 
 ## <a name="see-also"></a>另請參閱
 - [Outlook 物件模型總覽](../vsto/outlook-object-model-overview.md)
-- [如何：以程式設計方式依名稱取得資料夾](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [如何：以程式設計方式依名稱取出資料夾](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
 - [如何：以程式設計方式搜尋特定的連絡人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

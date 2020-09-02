@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e14a713772a183100753212effcb696e5d5f1f05
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464388"
 ---
 # <a name="idiasymbolget_access"></a>IDiaSymbol::get_access
@@ -33,10 +33,10 @@ HRESULT get_access ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷從指定類別成員之存取修飾詞的[CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)列舉傳回值。
+擴展從指定類別成員之存取修飾詞的 [CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md) 列舉值傳回值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。

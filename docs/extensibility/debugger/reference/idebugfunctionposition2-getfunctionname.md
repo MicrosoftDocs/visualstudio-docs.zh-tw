@@ -1,5 +1,5 @@
 ---
-title: IDebug功能位置2::獲取功能名稱 |微軟文件
+title: IDebugFunctionPosition2：： GetFunctionName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 771dbe369154200805fb9d344dd5b457353e34dd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728420"
 ---
 # <a name="idebugfunctionposition2getfunctionname"></a>IDebugFunctionPosition2::GetFunctionName
-獲取此位置指向的函數的名稱。
+取得這個位置所指向之函式的名稱。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ int GetFunctionName(
 
 ## <a name="parameters"></a>參數
 `pbstrFunctionName`\
-[出]返回函數的名稱。
+擴展傳回函數的名稱。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)

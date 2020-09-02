@@ -9,10 +9,10 @@ caps.latest.revision: 10
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c561555df40bc02c3c9f3090ee1de4c0f329bcdc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657177"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework
@@ -20,12 +20,12 @@ ms.locfileid: "72657177"
 
 本主題列出 `Microsoft::VisualStudio::CppUnitTestFramework` 命名空間的公用成員。
 
- 標頭檔位於 _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\include** 資料夾。
+ 標頭檔位於  _>visualstudio2012 [x86] InstallFolder_**\VC\UnitTest\include** 資料夾中。
 
- Lib 檔案位於 _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\lib** 資料夾。
+ Lib 檔案位於  _>visualstudio2012 [x86] InstallFolder_**\VC\UnitTest\lib** 資料夾中。
 
-## <a name="BKMK_In_this_topic"></a>本主題內容
- [CppUnitTest.h](#BKMK_CppUnitTest_h)
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> 本主題中
+ [Cppunittest.h。h](#BKMK_CppUnitTest_h)
 
 - [建立測試類別和方法](#BKMK_Create_test_classes_and_methods)
 
@@ -53,7 +53,7 @@ ms.locfileid: "72657177"
 
     - [相等](#BKMK_General_Are_Equal)
 
-    - [不相等](#BKMK_General_Are_Not_Equal)
+    - [不等於](#BKMK_General_Are_Not_Equal)
 
     - [相同](#BKMK_General_Are_Same)
 
@@ -75,7 +75,7 @@ ms.locfileid: "72657177"
 
     - [相同](#BKMK_WinRT_Are_Same)
 
-    - [不相等](#BKMK_WinRT_Are_Not_Equal)
+    - [不等於](#BKMK_WinRT_Are_Not_Equal)
 
     - [不相同](#BKMK_WinRT_Are_Not_Same)
 
@@ -83,7 +83,7 @@ ms.locfileid: "72657177"
 
     - [不是 Null](#BKMK_WinRT_Is_Not_Null)
 
-  - [判斷提示例外狀況](#BKMK_Exception_Asserts)
+  - [例外狀況判斷提示](#BKMK_Exception_Asserts)
 
     - [預期例外狀況](#BKMK_Expect_Exception)
 
@@ -93,9 +93,9 @@ ms.locfileid: "72657177"
 
     - [寫入訊息](#BKMK_Write_Message)
 
-## <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h
+## <a name="cppunittesth"></a><a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h
 
-### <a name="BKMK_Create_test_classes_and_methods"></a> 建立測試類別和方法
+### <a name="create-test-classes-and-methods"></a><a name="BKMK_Create_test_classes_and_methods"></a> 建立測試類別和方法
 
 ```cpp
 TEST_CLASS(className)
@@ -113,9 +113,9 @@ TEST_METHOD(methodName)
 
  定義 *methodName* 為測試方法。 `TEST_METHOD` 必須在方法的類別範圍中宣告。
 
-### <a name="BKMK_Initialize_and_cleanup"></a> 初始化和清除
+### <a name="initialize-and-cleanup"></a><a name="BKMK_Initialize_and_cleanup"></a> 初始化和清除
 
-#### <a name="BKMK_Test_methods"></a> 測試方法
+#### <a name="test-methods"></a><a name="BKMK_Test_methods"></a> 測試方法
 
 ```cpp
 TEST_METHOD_INITIALIZE(methodName)
@@ -137,7 +137,7 @@ TEST_METHOD_CLEANUP(methodName)
 
  定義 *methodName* 為每個測試方法執行之後要執行的方法。 `TEST_METHOD_CLEANUP` 只能在測試類別中定義一次，且必須在測試類別的範圍中定義。
 
-#### <a name="BKMK_Test_classes"></a> 測試類別
+#### <a name="test-classes"></a><a name="BKMK_Test_classes"></a> 測試類別
 
 ```cpp
 TEST_CLASS_INITIALIZE(methodName)
@@ -159,7 +159,7 @@ TEST_CLASS_CLEANUP(methodName)
 
  定義 *methodName* 為每個測試類別建立之後要執行的方法。 `TEST_CLASS_CLEANUP` 只能在測試類別中定義一次，且必須在測試類別的範圍中定義。
 
-#### <a name="BKMK_Test_modules"></a> 測試模組
+#### <a name="test-modules"></a><a name="BKMK_Test_modules"></a> 測試模組
 
 ```cpp
 TEST_MODULE_INITIALIZE(methodName)
@@ -176,9 +176,9 @@ TEST_MODULE_CLEANUP(methodName)
 
  定義卸載模組時要執行的方法 *methodName*。 `TEST_MODULE_CLEANUP` 只能在測試模組中定義一次，且必須在命名空間範圍中宣告。
 
-### <a name="BKMK_Create_test_attributes"></a> 建立測試屬性
+### <a name="create-test-attributes"></a><a name="BKMK_Create_test_attributes"></a> 建立測試屬性
 
-#### <a name="BKMK_Test_method_attributes"></a> 測試方法屬性
+#### <a name="test-method-attributes"></a><a name="BKMK_Test_method_attributes"></a> 測試方法屬性
 
 ```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
@@ -191,7 +191,7 @@ END_TEST_METHOD_ATTRIBUTE()
 
  `TEST_METHOD_ATTRIBUTE` 巨集會以名稱 *attributeName* 和值 *attributeValue* 來定義屬性。
 
-#### <a name="BKMK_Test_class_attributes"></a> 測試類別屬性
+#### <a name="test-class-attributes"></a><a name="BKMK_Test_class_attributes"></a> 測試類別屬性
 
 ```cpp
 BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)
@@ -204,7 +204,7 @@ END_TEST_CLASS_ATTRIBUTE()
 
  `TEST_CLASS_ATTRIBUTE` 巨集會以名稱 *attributeName* 和值 *attributeValue* 來定義屬性。
 
-#### <a name="BKMK_Test_module_attributes"></a> 測試模組屬性
+#### <a name="test-module-attributes"></a><a name="BKMK_Test_module_attributes"></a> 測試模組屬性
 
 ```cpp
 BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)
@@ -217,7 +217,7 @@ END_TEST_MODULE_ATTRIBUTE()
 
  `TEST_MODULE_ATTRIBUTE` 巨集會以名稱 *attributeName* 和值 *attributeValue* 來定義屬性。
 
-#### <a name="BKMK_Pre_defined_attributes"></a> 預先定義的屬性
+#### <a name="pre-defined-attributes"></a><a name="BKMK_Pre_defined_attributes"></a> 預先定義的屬性
  這些預先定義的屬性巨集可以由巨集 `TEST_METHOD_ATTRIBUTE`、`TEST_CLASS_ATTRIBUTE` 或 `TEST_MODULE_ATTRIBUTE` 所取代，如上文所述。
 
 ```cpp
@@ -250,11 +250,11 @@ TEST_IGNORE()
 
  以名稱 `Ignore` 和 `true` 的屬性值來定義屬性。
 
-## <a name="BKMK_CppUnitTestAssert_h"></a> CppUnitTestAssert.h
+## <a name="cppunittestasserth"></a><a name="BKMK_CppUnitTestAssert_h"></a> CppUnitTestAssert。h
 
-### <a name="BKMK_General_Asserts"></a> 一般判斷提示
+### <a name="general-asserts"></a><a name="BKMK_General_Asserts"></a> 一般判斷提示
 
-#### <a name="BKMK_General_Are_Equal"></a> 相等
+#### <a name="are-equal"></a><a name="BKMK_General_Are_Equal"></a> 相等
  確認兩個物件相等
 
 ```cpp
@@ -310,7 +310,7 @@ static void AreEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="BKMK_General_Are_Not_Equal"></a> 不相等
+#### <a name="are-not-equal"></a><a name="BKMK_General_Are_Not_Equal"></a> 不相等
  確認兩個雙精確度浮點數不相等
 
 ```cpp
@@ -366,7 +366,7 @@ static void AreNotEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="BKMK_General_Are_Same"></a> 相同
+#### <a name="are-same"></a><a name="BKMK_General_Are_Same"></a> 相同
  確認兩個參考會參考相同的物件執行個體 (識別)。
 
 ```cpp
@@ -378,7 +378,7 @@ static void AreSame(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="BKMK_General_Are_Not_Same"></a> 不相同
+#### <a name="are-not-same"></a><a name="BKMK_General_Are_Not_Same"></a> 不相同
  確認兩個參考未參考相同的物件執行個體 (識別)。
 
 ```cpp
@@ -390,7 +390,7 @@ static void AreNotSame (
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="BKMK_General_Is_Null"></a> 為 Null
+#### <a name="is-null"></a><a name="BKMK_General_Is_Null"></a> 為 Null
  確認指標為 NULL。
 
 ```cpp
@@ -401,7 +401,7 @@ static void IsNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="BKMK_General_Is_Not_Null"></a> 不是 Null
+#### <a name="is-not-null"></a><a name="BKMK_General_Is_Not_Null"></a> 不是 Null
  確認指標不是 NULL
 
 ```cpp
@@ -412,7 +412,7 @@ static void IsNotNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="BKMK_General_Is_True"></a> 為 True
+#### <a name="is-true"></a><a name="BKMK_General_Is_True"></a> 為 True
  確認條件為 True
 
 ```cpp
@@ -422,7 +422,7 @@ static void IsTrue(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="BKMK_General_Is_False"></a> 為 False
+#### <a name="is-false"></a><a name="BKMK_General_Is_False"></a> 為 False
  確認條件為 False
 
 ```cpp
@@ -432,7 +432,7 @@ static void IsFalse(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="BKMK_General_Fail"></a> 失敗
+#### <a name="fail"></a><a name="BKMK_General_Fail"></a> 失敗
  強制測試案例結果為失敗
 
 ```cpp
@@ -441,9 +441,9 @@ static void Fail(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-### <a name="BKMK_WinRT_Asserts"></a> Windows 執行階段判斷提示
+### <a name="windows-runtime-asserts"></a><a name="BKMK_WinRT_Asserts"></a> Windows 執行階段判斷提示
 
-#### <a name="BKMK_WinRT_Are_Equal"></a> 相等
+#### <a name="are-equal"></a><a name="BKMK_WinRT_Are_Equal"></a> 相等
  確認兩個 Windows 執行階段的指標相等。
 
 ```
@@ -466,7 +466,7 @@ static void AreEqual(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="BKMK_WinRT_Are_Same"></a> 相同
+#### <a name="are-same"></a><a name="BKMK_WinRT_Are_Same"></a> 相同
  確認兩個 Windows 執行階段的參考參考相同的物件。
 
 ```
@@ -478,7 +478,7 @@ static void AreSame(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="BKMK_WinRT_Are_Not_Equal"></a> 不相等
+#### <a name="are-not-equal"></a><a name="BKMK_WinRT_Are_Not_Equal"></a> 不相等
  確認兩個 Windows 執行階段的指標不相等。
 
 ```
@@ -501,7 +501,7 @@ static void AreNotEqual(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="BKMK_WinRT_Are_Not_Same"></a> 不相同
+#### <a name="are-not-same"></a><a name="BKMK_WinRT_Are_Not_Same"></a> 不相同
  確認兩個 Windows 執行階段參考未參考相同的物件。
 
 ```
@@ -513,7 +513,7 @@ static void AreNotSame(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="BKMK_WinRT_Is_Null"></a> 為 Null
+#### <a name="is-null"></a><a name="BKMK_WinRT_Is_Null"></a> 為 Null
  確認 Windows 執行階段指標為 nullptr。
 
 ```
@@ -524,7 +524,7 @@ static void IsNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="BKMK_WinRT_Is_Not_Null"></a> 不是 Null
+#### <a name="is-not-null"></a><a name="BKMK_WinRT_Is_Not_Null"></a> 不是 Null
  確認 Windows 執行階段指標不是 nullptr。
 
 ```
@@ -535,9 +535,9 @@ static void IsNotNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-### <a name="BKMK_Exception_Asserts"></a> 判斷提示例外狀況
+### <a name="exception-asserts"></a><a name="BKMK_Exception_Asserts"></a> 判斷提示例外狀況
 
-#### <a name="BKMK_Expect_Exception"></a> 預期例外狀況
+#### <a name="expect-exception"></a><a name="BKMK_Expect_Exception"></a> 預期例外狀況
  確認函式引發例外狀況︰
 
 ```
@@ -558,16 +558,16 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)
 ```
 
-## <a name="BKMK_CppUnitTestLogger_h"></a> CppUnitTestLogger.h
+## <a name="cppunittestloggerh"></a><a name="BKMK_CppUnitTestLogger_h"></a> CppUnitTestLogger。h
 
-### <a name="BKMK_Logger"></a> 記錄器
+### <a name="logger"></a><a name="BKMK_Logger"></a> 記錄
  記錄器類別包含要寫入的靜態方法
 
 ```
 class Logger
 ```
 
-### <a name="BKMK_Write_Message"></a> 寫入訊息
+### <a name="write-message"></a><a name="BKMK_Write_Message"></a> 寫入訊息
 
 ```
 static void
@@ -650,5 +650,5 @@ public:
 };
 ```
 
-## <a name="see-also"></a>請參閱
- [單元測試程式碼](../test/unit-test-your-code.md)[單元測試機器碼使用測試瀏覽器](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)[將單元測試新增至C++現有的應用程式](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
+## <a name="see-also"></a>另請參閱
+ 對程式碼單元測試[程式碼](../test/unit-test-your-code.md)[單元測試使用 Test Explorer](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c) [將單元測試新增至現有的 c + + 應用程式](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)

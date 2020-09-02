@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: edf9fec93b8fed4e89e5e7cf0525d4f11ed326fa
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329347"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令列將分析工具附加至 ASP.NET Web 應用程式以收集記憶體資料
@@ -56,9 +56,9 @@ ms.locfileid: "85329347"
 
 5. 啟動分析工具。 輸入：
 
-    **VSPerfCmd**  [/start](../profiling/start.md) **： sample**  [/output](../profiling/output.md) **：** `OutputFile` [ `Options` ]
+    **>vsperfcmd**  [/start](../profiling/start.md) **： sample**  [/output](../profiling/output.md) **：** `OutputFile` [ `Options` ]
 
-   - **/Start： sample**選項會初始化分析工具。
+   - **/Start： sample**選項會初始化 profiler。
 
    - /Start 需要 **/output：** `OutputFile` 選項。 **/start** `OutputFile` 指定程式碼剖析資料 (.vsp) 檔案的名稱和位置。
 
@@ -80,24 +80,24 @@ ms.locfileid: "85329347"
 
 7. 將分析工具附加至 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序。 輸入：
 
-    **VSPerfCmd**[/attach](../profiling/attach.md) **：**{ `PID`&#124;`ProcName` } [[/targetclr](../profiling/targetclr.md)**：** `Version` ]  
+    **>vsperfcmd**[/attach](../profiling/attach.md) **：**{ `PID`&#124;`ProcName` } [[/targetclr](../profiling/targetclr.md)**：** `Version` ]  
 
    - 處理序識別碼 `(PID)` 會指定 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序的處理序識別碼或處理序名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序 ID。
 
-   - **/targetclr：** `Version`指定在應用程式中載入多個版本的執行時間時要分析的 common language runtime （CLR）版本。
+   - **/targetclr：** `Version` 指定當應用程式載入多個版本的執行時間時，要進行分析的 common language runtime 版本 (CLR) 。
 
 ## <a name="control-data-collection"></a>控制資料收集
  當應用程式在執行時，您可以使用 **VSPerfCmd.exe** 選項，藉由開始和停止將資料寫入至分析工具資料檔中的方式，控制資料收集。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集
 
-- 下列成對的**VSPerfCmd**選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
+- 下列 **>vsperfcmd** 選項配對會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
     |選項|說明|
     |------------|-----------------|
     |[/globalon/globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|
     |[/processon](../profiling/processon-and-processoff.md) **：** `PID` [/processoff](../profiling/processon-and-processoff.md) **：**`PID`|開始 (**/processon**) 或停止 (**/processoff**) `PID` 指定的處理序資料收集。|
-    |**/attach：**{ `PID`&#124;`ProcName` } [/detach](../profiling/detach.md)[**：**{ `PID`&#124;： `ProcName` }]|**/attach** 會開始為處理序識別碼或處理序名稱指定的處理序收集資料。 **/detach**會停止指定的進程或所有進程（如果未指定特定進程）的資料收集。|
+    |**/attach：**{ `PID`&#124;`ProcName` } [/detach](../profiling/detach.md)[**：**{ `PID`&#124;： `ProcName` }]|**/attach** 會開始為處理序識別碼或處理序名稱指定的處理序收集資料。 如果未指定特定進程， **/detach**會停止指定進程或所有進程的資料收集。|
 
 ## <a name="end-the-profiling-session"></a>結束程式碼剖析工作階段
  若要結束分析工作階段，必須從 Web 應用程式 中斷連結分析工具。 您可以重新啟動 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序或呼叫 **VSPerfCmd /detach** 選項，停止從使用取樣方法分析的應用程式中收集資料。 接著呼叫 **VSPerfCmd** [/shutdown](../profiling/shutdown.md) 選項以停止分析工具，並關閉分析資料檔案。 **VSPerfClrEnv /globaloff** 命令會清除程式碼剖析環境變數，但在重新啟動電腦之前不會重設系統組態。
@@ -122,7 +122,7 @@ ms.locfileid: "85329347"
 
     **VSPerfCmd /globaloff**
 
-4. 重新啟動電腦。 如有必要，請重新啟動 Internet Information Services (IIS)。 輸入：
+4. 將電腦重新開機。 如有必要，請重新啟動 Internet Information Services (IIS)。 輸入：
 
     **IISReset /start**
 

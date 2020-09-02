@@ -17,19 +17,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac188bcf7975b8da1bbc71a90d3b6c34b095d424
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845570"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>逐步解說：建立程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-只需要幾個步驟就能建立程式碼片段。 您只需要建立 XML 檔案、填入適當的項目，並在其中新增您的程式碼。 您也可以將參考和取代參數新增至程式碼。 您可以使用 [程式碼片段管理員] ([工具]/[程式碼片段管理員]) 上的 [匯入] 按鈕，將程式碼片段新增至 Visual Studio 安裝。
+只需要幾個步驟就能建立程式碼片段。 您只需要建立 XML 檔案、填入適當的項目，並在其中新增您的程式碼。 您也可以將參考和取代參數新增至程式碼。 您可以使用 [程式碼片段管理員] ([工具]/[程式碼片段管理員]****) 上的 [匯入] 按鈕，將程式碼片段新增至 Visual Studio 安裝。
 
 > [!TIP]
-> 如需如何更輕鬆地撰寫程式碼片段的詳細資訊，請在 CodePlex 網站上搜尋如[程式碼片段編輯器](https://snippeteditor.codeplex.com/)的工具。
+> 如需如何更輕鬆地撰寫程式碼片段的詳細資訊，請搜尋 CodePlex 網站中的工具，例如 [程式碼片段編輯器](https://snippeteditor.codeplex.com/)。
 
 ## <a name="snippet-template"></a>程式碼片段範本
  以下是基本程式碼片段範本：
@@ -56,7 +56,7 @@ ms.locfileid: "75845570"
 
 1. 在 Visual Studio 中建立新的 XML 檔案，並新增上面所示的範本。
 
-2. 在標題元素中填入程式碼片段的標題，例如 "Hello World VB"。
+2. 在標題專案中填入程式碼片段的標題，例如 "Hello World VB"。
 
 3. 在 [程式碼] 項目的 [語言] 屬性中，填入程式碼片段的語言。 在此範例中，使用 "VB"。
 
@@ -73,25 +73,25 @@ ms.locfileid: "75845570"
 
 ### <a name="to-add-a-code-snippet-to-visual-studio"></a>將程式碼片段新增至 Visual Studio
 
-1. 您可以使用 [程式碼片段管理員]，將自己的程式碼片段新增至 Visual Studio 安裝。 開啟 [程式碼片段管理員] ([工具]/[程式碼片段管理員])。
+1. 您可以使用 [程式碼片段管理員]，將自己的程式碼片段新增至 Visual Studio 安裝。 開啟 [程式碼片段管理員] ([工具]/[程式碼片段管理員]****)。
 
-2. 按一下 [匯出] 按鈕。
+2. 按一下 [匯入] 按鈕。
 
-3. 移至您在先前程序中儲存程式碼片段的位置，並選取它，然後按一下 [開啟]。
+3. 移至您在先前程序中儲存程式碼片段的位置，並選取它，然後按一下 [開啟]****。
 
-4. [匯入程式碼片段] 對話方塊隨即開啟，要求您從右窗格的選項中選擇要新增程式碼片段的位置。 其中一個選項應該是 [我的程式碼片段]。 選取它，然後依序按一下 [完成] 和 [確定]。
+4. [匯入程式碼片段]**** 對話方塊隨即開啟，要求您從右窗格的選項中選擇要新增程式碼片段的位置。 其中一個選項應該是 [我的程式碼片段]****。 選取它，然後依序按一下 [完成]**** 和 [確定]****。
 
 5. 程式碼片段會複製至下列位置：
 
      `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippets`
 
-6. 開啟 Visual Basic 專案，並開啟程式碼檔，來測試程式碼片段。 在檔案中，按一下內容功能表上的 **插入程式碼片段**，然後**My Code 程式碼片段**。 您應該會看到名為 **My Visual Basic Code Snippet** 的程式碼片段。 對它按兩下。
+6. 開啟 Visual Basic 專案，並開啟程式碼檔，來測試程式碼片段。 在檔案中，按一下內容功能表上的 [ **插入程式碼片段** ]，然後 **My Code 程式碼片段**]。 您應該會看到名為 **My Visual Basic Code Snippet** 的程式碼片段。 對它按兩下。
 
 7. 您應該會看到 `Console.WriteLine("Hello, World!")` 插入程式碼中。
 
 ### <a name="adding-description-and-shortcut-fields"></a>新增描述和捷徑欄位
 
-1. 描述欄位會提供您的程式碼片段在 [程式碼片段管理員] 中檢視時的詳細資訊。 捷徑是使用者可鍵入以插入程式碼片段的標記。 藉由開啟檔案 `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`，編輯您新增的程式碼片段。
+1. 描述欄位會提供您的程式碼片段在 [程式碼片段管理員] 中檢視時的詳細資訊。 捷徑是使用者可鍵入以插入程式碼片段的標記。 藉由開啟檔案來編輯您已新增的程式碼片段 `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet` 。
 
 2. 將 Author 和 Description 項目新增至 Header 項目，並填入其資料。
 
@@ -122,11 +122,11 @@ ms.locfileid: "75845570"
 
 6. 重新儲存程式碼片段檔案。
 
-7. 若要測試捷徑，請開啟 Visual Basic 專案，並開啟程式碼檔。 在檔案中輸入 `hello`，然後按 TAB 鍵。 應該插入程式碼片段。
+7. 若要測試捷徑，請開啟 Visual Basic 專案，並開啟程式碼檔。 輸入檔案 `hello` ，然後按下 tab 鍵。 應該插入程式碼片段程式碼。
 
 ### <a name="to-add-references-and-imports"></a>新增 References 和 Imports
 
-1. 藉由 Visual Basic 程式碼片段，您可以使用 References 專案新增專案的參考，並使用 Imports 元素加入 Imports 宣告。 （其他語言的程式碼片段沒有這項功能）。例如，如果您將程式碼範例中的 `Console.WriteLine` 變更為 `MessageBox.Show`，則可能需要將 System.web 元件新增至專案。
+1. 使用 Visual Basic 程式碼片段，您可以使用 References 專案加入專案的參考，並使用 Imports 元素加入 Imports 宣告。 其他語言的 (程式碼片段沒有這項功能。 ) 例如，如果您將 `Console.WriteLine` 程式碼範例中的變更為 `MessageBox.Show` ，可能需要將 System.Windows.Forms.dll 元件加入至專案。
 
 2. 開啟程式碼片段。
 
@@ -248,7 +248,7 @@ ms.locfileid: "75845570"
 
 8. 開啟 Visual Basic 專案，並新增程式碼片段。
 
-9. 程式碼應該如下，其中會以淺橙色反白顯示 `SQL connection string` 和 `dcConnection` 取代。 按 TAB 鍵，從一個流覽至另一個。
+9. 程式碼應該如下，其中會以淺橙色反白顯示 `SQL connection string` 和 `dcConnection` 取代。 按 TAB 鍵可流覽至另一個。
 
     ```
     Dim daCustomers As SqlDataAdapter
@@ -261,5 +261,5 @@ ms.locfileid: "75845570"
 
     ```
 
-## <a name="see-also"></a>請參閱
- [程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)
+## <a name="see-also"></a>另請參閱
+ [程式碼片段架構參考](../ide/code-snippets-schema-reference.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 8
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e8b3ea10b96a63bd18098030dc884ac3f3383353
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657191"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>在單元測試中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成員
@@ -88,7 +88,7 @@ ms.locfileid: "72657191"
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute>
 
 ## <a name="the-testcontext-class"></a>TestContext 類別
- 下列屬性和指派給它們的值會顯示在特定測試方法的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [屬性] 視窗中。 這些屬性並不應該透過單元測試的程式碼存取。 相反地，它們會影響單元測試的使用或執行方式，無論是透過您或 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的 IDE，或是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 測試引擎。例如，其中一些屬性會顯示為 [測試管理員] 視窗和 [測試結果] 視窗中的資料行，這表示您可以使用它們來群組或排序測試和測試結果。 這類屬性其中之一為 TestPropertyAttribute，您可以利用它來將任意中繼資料加入至單元測試。 例如，您可以使用它來儲存此測試所涵蓋之測試進行的名稱，方法是以 `[TestProperty("TestPass", "Accessibility")]` 標示單元測試。 或者，您可以使用它來儲存指出測試為哪種類型的指標：`[TestProperty("TestKind", "Localization")]`。 您使用此屬性建立的屬性，以及您指派的屬性值，都會顯示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [屬性] 視窗的 [測試專屬] 標題下。
+ 下列屬性和指派給它們的值會顯示在特定測試方法的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [屬性] 視窗中。 這些屬性並不應該透過單元測試的程式碼存取。 相反地，它們會影響單元測試的使用或執行方式，無論是透過您或 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的 IDE，或是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 測試引擎。例如，其中一些屬性會顯示為 [測試管理員] 視窗和 [測試結果] 視窗中的資料行，這表示您可以使用它們來群組或排序測試和測試結果。 這類屬性其中之一為 TestPropertyAttribute，您可以利用它來將任意中繼資料加入至單元測試。 例如，您可以使用它來儲存此測試所涵蓋之測試進行的名稱，方法是以 `[TestProperty("TestPass", "Accessibility")]` 標示單元測試。 或者，您可以使用它來儲存指出測試為哪種類型的指標：`[TestProperty("TestKind", "Localization")]`。 您使用此屬性建立的屬性，以及您指派的屬性值，都會顯示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [屬性] 視窗的 [測試專屬]**** 標題下。
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>
 
@@ -124,6 +124,6 @@ ms.locfileid: "72657191"
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateType>
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting>

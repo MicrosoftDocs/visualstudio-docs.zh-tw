@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArguments |Microsoft Docs
+title: IDebugBinder3：： GetTypeArguments |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,15 +13,15 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1f7b6038013370ad85a665d9899d367e621aa991
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192277"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
-這個方法會擷取與這個物件相關聯的引數類型的清單。
+這個方法會抓取與這個物件相關聯的引數類型清單。
 
 ## <a name="syntax"></a>語法
 
@@ -47,25 +47,25 @@ int GetTypeArguments(
 
  `skip`
 
- [in]取得引數型別之前，要略過的欄位數目。
+ 在取得引數類型之前要跳過的欄位數目。
 
  `count`
 
- [in]要傳回的引數欄位數目 (也會指定的大小`ppFields`陣列)。
+ 在要傳回的引數欄位數目 (也會指定 `ppFields` 陣列) 的大小。
 
  `ppFields`
 
- [in、 out]將會填入這個方法傳回的欄位的陣列。
+ [in，out]將在傳回這個方法時填入的欄位陣列。
 
  `pFetched`
 
- [out]引數型別欄位數目實際上會傳回 （選擇性）。
+ 擴展實際傳回的引數類型欄位數目 (選擇性) 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 可以事先取得引數類型的數目，與[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)。
+ 引數類型的數目可以事先以 [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)取得。
 
 ## <a name="see-also"></a>另請參閱
 

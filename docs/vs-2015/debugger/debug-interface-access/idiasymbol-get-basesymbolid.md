@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88f8642c8585aa1964068e1f66082a1da5ea878c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149826"
 ---
-# <a name="idiasymbolgetbasesymbolid"></a>IDiaSymbol::get_baseSymbolId
+# <a name="idiasymbolget_basesymbolid"></a>IDiaSymbol::get_baseSymbolId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取的指標為基礎的符號 ID。  
+抓取指標所依據的符號 ID。  
   
 ## <a name="syntax"></a>語法  
   
@@ -32,10 +32,10 @@ HRESULT get_baseSymbolId(
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]指標`DWORD`保存從中指標為基礎的符號 ID。  
+ 擴展的指標 `DWORD` ，其中包含指標所依據的符號 ID。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

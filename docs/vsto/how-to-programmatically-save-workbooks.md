@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6b45449f72275ac154a433cad725a2867062cc5e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547078"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>如何：以程式設計方式儲存活頁簿
@@ -42,11 +42,11 @@ ms.locfileid: "85547078"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#3)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#3)]
 
-## <a name="save-a-workbook-with-a-new-path"></a>以新路徑儲存活頁簿
+## <a name="save-a-workbook-with-a-new-path"></a>使用新路徑儲存活頁簿
  您可以將指定的活頁簿儲存至新位置或使用新名稱儲存，也可以選擇性地指定檔案格式、密碼、存取模式等項目。
 
 > [!NOTE]
-> 在以新路徑儲存活頁簿之前，您可能會想要將 <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> 屬性設定為**False** ，因為以某些格式儲存需要互動。 將此屬性設定為**False** ，會導致 Excel 使用所有預設值。
+> 您可能會想要將此 <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> 屬性設定為 **False** ，然後再以新路徑儲存活頁簿，因為以某些格式儲存時需要互動。 將這個屬性設定為 **False** 會導致 Excel 使用所有預設值。
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>儲存與文件層級自訂相關聯的活頁簿
 
@@ -80,7 +80,7 @@ ms.locfileid: "85547078"
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#5)]
 
 ## <a name="robust-programming"></a>穩固程式設計
- 以互動方式取消任何儲存或複製活頁簿的方法，都會在程式碼中引發執行階段錯誤。 例如，如果您的程式呼叫 <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> 方法，但未停用 Excel 的提示，而且您的使用者在出現提示時按一下 [**取消**]，則 Excel 會引發執行階段錯誤。
+ 以互動方式取消任何儲存或複製活頁簿的方法，都會在程式碼中引發執行階段錯誤。 例如，如果您的程式會呼叫 <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> 方法，但不會停用 Excel 的提示，而且您的使用者在出現提示時按一下 [ **取消** ]，則 Excel 會引發執行階段錯誤。
 
 ## <a name="see-also"></a>另請參閱
 - [使用活頁簿](../vsto/working-with-workbooks.md)
