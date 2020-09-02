@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: acdfe8f96d30ad881d8c9c0f0a9ff48c3353afee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779242"
 ---
 # <a name="filter-report-views"></a>篩選報告檢視
@@ -37,10 +37,10 @@ ms.locfileid: "74779242"
 
     |欄位|描述|
     |-----------|-----------------|
-    |**和/或**|如果這個子句和下一個子句必須同時為 true，請選擇**和**以進行結果比對。 如果這個子句或下一個子句可以為 true，請選擇**或**以進行結果比對。|
-    |**領域**|從顯示的資料欄位清單中選取要用在篩選子句中的報表欄位。|
-    |**運算元**|選取運算子以指定子句的欄位和值之間的關聯性。<br /><br /> =    等於<br /><br /> <>  不等於<br /><br /> <    小於<br /><br /> >    大於<br /><br /> <=  小於或等於<br /><br /> >=  大於或等於|
-    |**價值**|選取或輸入要尋找的值。 某些欄位會列出可用的欄位值。|
+    |**及/或**|如果這個子句和下一個子句必須同時為 true，請選擇**和**以進行結果比對。 如果這個子句或下一個子句可以為 true，請選擇**或**以進行結果比對。|
+    |**欄位**|從顯示的資料欄位清單中選取要用在篩選子句中的報表欄位。|
+    |**運算子**|選取運算子以指定子句的欄位和值之間的關聯性。<br /><br /> =    等於<br /><br /> <>  不等於<br /><br /> <    小於<br /><br /> >    大於<br /><br /> <=  小於或等於<br /><br /> >=  大於或等於|
+    |**值**|選取或輸入要尋找的值。 某些欄位會列出可用的欄位值。|
 
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>從標記報表檢視建立分析工具報表篩選
 

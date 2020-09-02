@@ -1,5 +1,5 @@
 ---
-title: IEnum調試模組2 |微軟文件
+title: IEnumDebugModules2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 612285aa4d5a249c0f922ccae88d98a7df83187b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80716441"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
-此介面枚舉模組清單。
+此介面會列舉模組清單。
 
 ## <a name="syntax"></a>語法
 
@@ -28,34 +28,34 @@ ms.locfileid: "80716441"
 IEnumDebugModules2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 除錯引擎 (DE) 實現此介面以表示為程式載入的模組清單。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ Debug engine (DE) 會執行這個介面，以代表為程式載入的模組清單。
 
-## <a name="notes-for-callers"></a>通話備註
- 可視化工作室調用[EnumModule](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)以獲取此介面。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ Visual Studio 會呼叫 [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) 來取得這個介面。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 下表顯示的方法`IEnumDebugModules2`。
+ 下表顯示的方法 `IEnumDebugModules2` 。
 
 |方法|描述|
 |------------|-----------------|
-|[下一步](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|在枚舉序列中檢索指定數量的模組。|
-|[跳](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|在枚舉序列中跳過指定數量的模組。|
-|[重設](../../../extensibility/debugger/reference/ienumdebugmodules2-reset.md)|將枚舉序列重置為開頭。|
-|[複製](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|建立與當前枚舉器相同的枚舉狀態的枚舉器。|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|獲取模組數。|
+|[下一個](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|抓取列舉序列中指定數目的模組。|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|略過列舉序列中指定數目的模組。|
+|[重設](../../../extensibility/debugger/reference/ienumdebugmodules2-reset.md)|將列舉順序重設為開頭。|
+|[複製](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|取得模組的數目。|
 
 ## <a name="remarks"></a>備註
- Visual Studio 主要使用此介面更新 **「模組」** 視窗。
+ Visual Studio 使用此介面主要是用來更新 **模組** 視窗。
 
- 為了在 Visual Studio 中調試,程式是一個邏輯代碼指令序列,可以跨越模組邊界,因此需要單個[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面的模組清單。 清單中的第一個模組通常包含關聯程式的初始入口點。
+ 為了在 Visual Studio 中進行偵錯工具，程式是程式碼指令的邏輯序列，可以跨模組界限，因此需要單一 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 介面的模組清單。 清單中的第一個模組通常包含相關程式的初始進入點。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

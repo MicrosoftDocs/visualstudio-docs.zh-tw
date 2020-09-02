@@ -1,5 +1,5 @@
 ---
-title: 產生載入屬性與元素(視覺化工作室範本)
+title: " (Visual Studio 範本的 BuildOnLoad 屬性和元素) "
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,17 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3be4016822ccaaae2f1352f91ecc10f09273a889
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739943"
 ---
-# <a name="buildonload-attribute-and-element"></a>產生載入屬性和元素
+# <a name="buildonload-attribute-and-element"></a>BuildOnLoad 屬性和元素
 
-指定是否在項目創建後立即生成專案。 **BuildOnLoad**既是一個屬性,也是一個元素。
+指定是否要在建立專案之後立即建立專案。 **BuildOnLoad** 同時是屬性和元素。
 
-元素層次結構:
+元素階層：
 
 ```xml
 <VSTemplate>
@@ -41,21 +41,21 @@ ms.locfileid: "80739943"
 
 ## <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
 
-**產生載入**元素需要文本值。 文字必須為`true``false`或 ,指示是否在創建專案後立即生成專案。
+**BuildOnLoad**元素需要文字值。 文字必須是 `true` 或 `false` ，指出是否要在建立專案之後立即建立專案。
 
 ## <a name="remarks"></a>備註
 
-**生成載入**是一個可選屬性。 預設值是 `false`。
+**BuildOnLoad** 是選擇性屬性。 預設值是 `false`。
 
 ## <a name="example"></a>範例
 
-以下範例說明了當**BuildOnLoad**用作元素時 C# 樣本的中繼資料:
+下列範例說明使用 **BuildOnLoad** 做為元素時，c # 範本的中繼資料：
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -84,7 +84,7 @@ ms.locfileid: "80739943"
 
 ## <a name="see-also"></a>另請參閱
 
-- [組建項目載入元素](buildprojectonload-element-visual-studio-templates.md)
-- [樣本內容項目](../extensibility/templatecontent-element-visual-studio-templates.md)
-- [建立項目與專案樣本](../ide/creating-project-and-item-templates.md)
-- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [BuildProjectOnload 元素](buildprojectonload-element-visual-studio-templates.md)
+- [TemplateContent 元素](../extensibility/templatecontent-element-visual-studio-templates.md)
+- [建立專案和專案範本](../ide/creating-project-and-item-templates.md)
+- [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)

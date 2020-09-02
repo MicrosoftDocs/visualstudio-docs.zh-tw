@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointBoundEvent2 | Microsoft Docs
+title: IDebugBreakpointBoundEvent2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0b2543dbb94e666cd02e55f0ddd84e1d0a5f4da4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675524"
 ---
 # <a name="idebugbreakpointboundevent2"></a>IDebugBreakpointBoundEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個介面會告知工作階段的偵錯管理員 (SDM)，暫止中斷點具有已成功繫結至載入程式。  
+此介面會告知會話 debug manager (SDM) 暫止的中斷點已成功系結至已載入的程式。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,29 +30,29 @@ ms.locfileid: "65675524"
 IDebugBreakpointBoundEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- DE 會實作這個介面做為其支援中斷點的一部分。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上 (使用 SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要存取`IDebugEvent2`介面)。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ 在中斷點的支援過程中，會將此介面實作為一部分。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須在與此介面相同的物件上執行， (SDM 使用[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)來存取 `IDebugEvent2` 介面) 。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- DE 建立，並暫止中斷點已成功繫結至正在偵錯程式時，會傳送這個事件的物件。 事件會使用傳送[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)它附加到正在偵錯程式時，在 SDM 所提供的回呼函式。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 當暫止中斷點成功系結至正在進行偵錯工具的程式時，取消會建立並傳送此事件物件。 當附加至要進行偵錯工具的程式時，會使用由 SDM 提供的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 回呼函式來傳送事件。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDebugBreakpointBoundEvent2`。  
+ 下表顯示的方法 `IDebugBreakpointBoundEvent2` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)|取得與所繫結的暫止中斷點。|  
-|[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)|建立繫結此事件的中斷點的列舉值。|  
+|[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)|取得正在系結的暫止中斷點。|  
+|[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)|建立已系結至此事件之中斷點的列舉值。|  
   
 ## <a name="remarks"></a>備註  
- 每當中斷點繫結時，事件會傳送到 SDM。 如果中斷點無法繫結[IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)傳送; 否則即為`IDebugBreakpointBoundEvent2`傳送。  
+ 每當有中斷點系結時，就會將事件傳送至 SDM。 如果無法系結中斷點，則會傳送 [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) ;否則， `IDebugBreakpointBoundEvent2` 就會傳送。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   

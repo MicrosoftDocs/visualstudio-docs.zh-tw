@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c713759a8ea75eed3048469327f962668efa4f70
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657645"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>將使用案例連結到文件與圖表
@@ -60,9 +60,9 @@ ms.locfileid: "72657645"
 
     1. 將 Word 文件移至與此方案相同的 Windows 資料夾。
 
-    2. 在方案總管中，以滑鼠右鍵按一下方案，指向 [**加入**]，然後按一下 [**現有專案**]。
+    2. 在方案總管中，以滑鼠右鍵按一下方案，指向 [ **加入**]，然後按一下 [ **現有專案**]。
 
-    3. 流覽至 Word 檔，然後按一下 [**新增**]。
+    3. 流覽至 Word 檔，然後按一下 [ **新增**]。
 
          該 Word 文件會出現在 [方案總管] 的方案資料夾中。
 
@@ -74,14 +74,14 @@ ms.locfileid: "72657645"
 
 ### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>連結至共用文件、OneNote 項目或網頁
 
-1. 取得此共用項目的 URL。 例如，這可以是開頭為「\\ \\」的網路檔案路徑，或是開頭為 ' HTTP://' 的網頁或 Sharepoint URL，或是從 ' onenote： ' 開始的 OneNote 區段、頁面或段落的連結。
+1. 取得此共用項目的 URL。 例如，這可以是一開始是 ' ' 的網路檔案路徑，或是開頭為 ' \\ \\ HTTP://' 的網頁或 Sharepoint URL，或是 onenote 區段、頁面或段落開頭為 ' onenote： ' 的連結。
 
-2. 在 [工具箱] 中 **，按一下 [成品]，然後**按一下 [使用案例] 圖表。
+2. 在 [工具箱] 中 **，按一下 [成品]，然後** 按一下使用案例圖。
 
-3. 選取新的成品之後，請在**超連結**屬性中輸入或貼上 URL。
+3. 選取新的成品之後，請將 URL 輸入或貼到 **超連結** 屬性。
 
     > [!NOTE]
-    > 如果您想要提供檔案路徑，最好是選擇一般工作區中的檔案（從 ' \\ \\ ' 開始），或 Visual Studio 方案中的檔案。 這確保檔案路徑在另一個小組成員的電腦上或移動方案時也仍然有效。 若要在方案中加入 Word 檔之類的檔，請以滑鼠右鍵按一下方案總管中的方案，指向 [**加入**]，然後按一下 [**現有專案**]。
+    > 如果您想要提供檔案路徑，最好是在一般工作區中選擇檔案， (從 ' \\ \\ ' ) 開始，或 Visual Studio 方案內的檔案。 這確保檔案路徑在另一個小組成員的電腦上或移動方案時也仍然有效。 若要將檔（例如 Word 檔）加入至方案，請以滑鼠右鍵按一下方案總管中的方案，指向 [ **加入** ]，然後按一下 [ **現有專案**]。
 
-## <a name="see-also"></a>請參閱
- [Uml 使用案例圖：參考](../modeling/uml-use-case-diagrams-reference.md) [Uml 使用案例圖：方針](../modeling/uml-use-case-diagrams-guidelines.md)[編輯 uml 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)[建立您應用程式的模型](../modeling/create-models-for-your-app.md)
+## <a name="see-also"></a>另請參閱
+ [Uml 使用案例圖：參考](../modeling/uml-use-case-diagrams-reference.md) [Uml 使用案例圖：指導方針](../modeling/uml-use-case-diagrams-guidelines.md)[編輯 uml 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)[為您的應用程式建立模型](../modeling/create-models-for-your-app.md)

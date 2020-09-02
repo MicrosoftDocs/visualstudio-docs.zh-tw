@@ -1,5 +1,5 @@
 ---
-title: CA1415：宣告 P-正確地叫用 |Microsoft Docs
+title: CA1415：宣告正確的 P-Invoke |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b9931d29c818d95785146558637c32237e2c5276
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547845"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415：P/Invokes 必須正確宣告
@@ -30,16 +30,16 @@ ms.locfileid: "85547845"
 |TypeName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
 |類別|Microsoft. 互通性|
-|中斷變更|不中斷-如果宣告參數的 P/Invoke 無法在元件外部看到，則為。 中斷-如果宣告參數的 P/Invoke 可以在元件外部看到，則為。|
+|中斷變更|不中斷-如果宣告參數的 P/Invoke 不能出現在元件外部。 中斷-如果宣告參數的 P/Invoke 可以在元件外部看到。|
 
 ## <a name="cause"></a>原因
- 平台叫用方法宣告不正確。
+ 平台叫用方法的宣告不正確。
 
 ## <a name="rule-description"></a>規則描述
- 平台叫用方法會存取未受管理的程式碼，並使用 `Declare` 或中的關鍵字來定義 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> 。 目前，此規則會尋找以具有重迭結構參數指標的 Win32 函式為目標的平台叫用方法宣告，而且對應的 managed 參數不是結構的指標 <xref:System.Threading.NativeOverlapped?displayProperty=fullName> 。
+ 平台叫用方法會存取未受管理的程式碼，並使用 `Declare` 或中的關鍵字來定義 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> 。 目前，此規則會尋找平台叫用方法宣告，此宣告會以具有重迭結構參數指標的 Win32 函式為目標，而且對應的 managed 參數不是指向結構的指標 <xref:System.Threading.NativeOverlapped?displayProperty=fullName> 。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規，請正確宣告平台叫用方法。
+ 若要修正此規則的違規情形，請正確宣告平台叫用方法。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。

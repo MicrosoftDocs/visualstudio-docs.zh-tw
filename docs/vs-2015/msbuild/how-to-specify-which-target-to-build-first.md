@@ -1,5 +1,5 @@
 ---
-title: 作法：指定要優先建置的目標 | Microsoft Docs
+title: 如何：指定要優先建置的目標 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,16 +14,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d7d47746aed2e663eb1fa25e3bb9ca2c6bed2c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178334"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>HOW TO：指定要優先建置的目標
+# <a name="how-to-specify-which-target-to-build-first"></a>如何：指定要優先建置的目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-專案檔可以包含一或多個 `Target` 項目來定義專案的建置方式。 除非專案檔內含 `DefaultTargets` 屬性、`InitialTargets` 屬性，或在命令列中使用 **/target** 參數來指定目標，否則 [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) 引擎會建置它找到的第一個專案以及任何相依性。  
+專案檔可以包含一或多個 `Target` 項目來定義專案的建置方式。 [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 除非專案檔包含 `DefaultTargets` 屬性、 `InitialTargets` 屬性或目標是使用 **/target**參數在命令列指定，否則 () 引擎會建立它所找到的第一個專案，以及任何相依性。  
   
 ## <a name="using-the-initialtargets-attribute"></a>使用 InitialTargets 屬性  
  `Project` 項目的 `InitialTargets` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。  
@@ -75,6 +75,6 @@ ms.locfileid: "68178334"
      `msbuild <file name>.proj /t:Clean;Compile`  
   
 ## <a name="see-also"></a>另請參閱
-  [ MSBuild](msbuild.md)  
+  [Msbuild](msbuild.md)  
  [目標](../msbuild/msbuild-targets.md)   
  [如何：清除組建](../msbuild/how-to-clean-a-build.md)

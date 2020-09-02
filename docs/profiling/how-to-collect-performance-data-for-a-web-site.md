@@ -1,5 +1,5 @@
 ---
-title: 如何收集網站的效能資料 |Microsoft Docs
+title: 如何-收集網站的效能資料 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,10 +19,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c2f8169716bda09e3c4d89ce06dc907c726adee2
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330959"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：收集網站的效能資料
@@ -56,9 +56,9 @@ ms.locfileid: "85330959"
 
     - 若要收集階層互動，請選取 [啟用階層互動分析] **** 核取方塊。
 
-    - 若要從網頁中執行的 JavaScript 收集資料，請選取 [**分析 JavaScript** ] 核取方塊。
+    - 若要從網頁中執行的 JavaScript 收集資料，請選取 [ **分析 javascript** ] 核取方塊。
 
-6. 按一下 [下一步] 。
+6. 按一下 [下一步]  。
 
 7. 在精靈的第四個頁面上，按一下 [完成] ****。
 
@@ -78,7 +78,7 @@ ms.locfileid: "85330959"
 
 5. 在精靈第三個頁面的 [您要使用哪個 URL 或路徑執行 Web 應用程式] **** 方塊中，輸入應用程式首頁的 URL，然後按一下 [下一步] ****。
 
-   - 若是以伺服器（IIS）為基礎的網站，請輸入 URL，例如 **<`http://localhost/MySite/default.aspx`>** 。 這會對本機電腦上位於 MySite 之應用程式根目錄的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式進行程式碼剖析，然後 Internet Explorer 會啟動該網站的 default.aspx 頁面以開始工作階段。
+   - 針對 (IIS) 基礎網站的伺服器，請輸入如下的 URL： **<`http://localhost/MySite/default.aspx`>** 。 這會對本機電腦上位於 MySite 之應用程式根目錄的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式進行程式碼剖析，然後 Internet Explorer 會啟動該網站的 default.aspx 頁面以開始工作階段。
 
    - 針對檔案架構的網站，請輸入如檔案///**c:\WebSites\MySite\default.aspx**之類的路徑。 這會對位於 c:\webSites\MySite 的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式進行分析，然後 Internet Explorer 會啟動 `http://localhost:nnnn/MySite/default.aspx` 頁面以開始工作階段。
 
@@ -92,7 +92,7 @@ ms.locfileid: "85330959"
 
     - 若要從網頁中執行的 JavaScript 收集資料，請選取 [分析 JavaScript]**** 核取方塊。
 
-7. 按一下 [下一步] 。
+7. 按一下 [下一步]  。
 
 8. 在精靈的第四個頁面上，按一下 [完成] ****。
 
@@ -102,7 +102,7 @@ ms.locfileid: "85330959"
 
 ## <a name="see-also"></a>另請參閱
 
-[Overviews](../profiling/overviews-performance-tools.md)總覽 
+[概覽](../profiling/overviews-performance-tools.md) 
 [設定效能會話](../profiling/configuring-performance-sessions.md) 
 [瞭解檢測資料值](../profiling/understanding-instrumentation-data-values.md) 
 [瞭解取樣資料值](../profiling/understanding-sampling-data-values.md)
