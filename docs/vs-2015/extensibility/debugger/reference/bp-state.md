@@ -1,5 +1,5 @@
 ---
-title: BP_STATE | Microsoft Docs
+title: BP_STATE |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4de23d462136ad417859d7064fef6b4ace7e59c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153256"
 ---
-# <a name="bpstate"></a>BP_STATE
+# <a name="bp_state"></a>BP_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定的繫結中斷點存在，也會指定是否已啟用。  
+指定系結中斷點是否存在，並指定是否已啟用。  
   
 ## <a name="syntax"></a>語法  
   
@@ -47,27 +47,27 @@ public enum enum_BP_STATE { 
   
 ## <a name="members"></a>成員  
  BPS_NONE  
- 指定任何中斷點存在。  
+ 指定不存在任何中斷點。  
   
  BPS_DELETED  
- 指定已刪除的中斷點。  
+ 指定中斷點已刪除。  
   
  BPS_DISABLED  
  指定停用中斷點。  
   
  BPS_ENABLED  
- 指定啟用中斷點。  
+ 指定中斷點已啟用。  
   
 ## <a name="remarks"></a>備註  
- 傳回從[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)方法。  
+ 從 [>getstate](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) 方法傳回。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [>getstate](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

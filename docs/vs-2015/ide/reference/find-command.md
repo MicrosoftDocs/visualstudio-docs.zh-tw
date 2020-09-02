@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6ce0e4a3aaca752cbdeda0a83e469977306c3404
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657688"
 ---
-# <a name="find-command"></a>尋找命令
+# <a name="find-command"></a>Find Command
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-在 [尋找和取代]  視窗中，您可以使用 [檔案中尋找]  索引標籤提供的選項子集，搜尋檔案。
+在 [尋找和取代]**** 視窗中，您可以使用 [檔案中尋找]**** 索引標籤提供的選項子集，搜尋檔案。
 
 ## <a name="syntax"></a>語法
 
@@ -34,9 +34,9 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ```
 
 ## <a name="arguments"></a>引數
- `findwhat` 必要項。 要比對的文字。
+ 需要 `findwhat`。 要比對的文字。
 
-## <a name="switches"></a>參數
+## <a name="switches"></a>交換器
  /case 或 /c 選擇項。 只有當大寫和小寫字元完全符合 `findwhat` 引數中所指定的項目時，才會出現相符項目。
 
  /doc 或 /d 選擇項。 僅搜尋目前的文件。 只指定其中一個可用的搜尋範圍，`/doc`、`/proc`、`/open` 或 `/sel`。
@@ -69,4 +69,4 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ```
 
 ## <a name="see-also"></a>另請參閱
- 命令[視窗](../../ide/reference/command-window.md)[尋找/命令框](../../ide/find-command-box.md) [Visual Studio](../../ide/reference/visual-studio-commands.md)命令[Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ 命令[視窗](../../ide/reference/command-window.md)[尋找/命令框](../../ide/find-command-box.md) [Visual Studio 命令](../../ide/reference/visual-studio-commands.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

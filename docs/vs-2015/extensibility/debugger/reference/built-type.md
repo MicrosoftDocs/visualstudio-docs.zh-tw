@@ -1,5 +1,5 @@
 ---
-title: BUILT_TYPE | Microsoft Docs
+title: BUILT_TYPE |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6becf886d361e203dca313a7aa1dfdf166aa4614
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153168"
 ---
-# <a name="builttype"></a>BUILT_TYPE
+# <a name="built_type"></a>BUILT_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此結構會指定取自中繼資料的欄位類型的相關資訊。  
+此結構會指定取自中繼資料之欄位類型的相關資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,23 +44,23 @@ public struct BUILT_TYPE {
   
 #### <a name="parameters"></a>參數  
  ulAppDomainID  
- 符號所來自的應用程式的識別碼。 這用來唯一識別應用程式的執行個體。  
+ 符號的來源應用程式識別碼。 這是用來唯一識別應用程式的實例。  
   
  guidModule  
- 模組包含此欄位的 GUID。  
+ 包含此欄位之模組的 GUID。  
   
  pUnderlyingField  
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，可識別此內建欄位相關聯的基礎欄位。  
+ [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，識別與這個內建欄位相關聯的基礎欄位。  
   
 ## <a name="remarks"></a>備註  
- 此結構會顯示為中的等位的一部分[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)結構時`dwKind`欄位`TYPE_INFO`結構設定為`TYPE_KIND_BUILT`(值[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列舉型別）。  
+ 當結構的[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) `dwKind` 欄位 `TYPE_INFO` 設定為 `TYPE_KIND_BUILT` ([dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列舉) 中的值時，這個結構會顯示為 TYPE_INFO 結構中聯集的一部分。  
   
 ## <a name="requirements"></a>需求  
- 標頭： sh.h  
+ 標頭： sh. h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 50c48098aee3b1077edec99210e7ab624d2a8d6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153456"
 ---
-# <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
+# <a name="bp_location_code_string"></a>BP_LOCATION_CODE_STRING
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-用於設定使用者可以輸入從整合式的開發環境 (IDE) 的字串為基礎的程式碼中斷點。  
+用來根據使用者可從整合式開發環境輸入的字串來設定程式碼中斷點 (IDE) 。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,20 +35,20 @@ typedef struct _BP_LOCATION_CODE_STRING { 
   
 ## <a name="members"></a>成員  
  `bstrContext`  
- 程式碼內的中斷點，通常是方法或函式的名稱為 呼叫堆疊上看到的內容。  
+ 程式碼內中斷點的內容，通常是在呼叫堆疊上看到的方法或函式名稱。  
   
  `bstrCodeExpr`  
- 字串，使用者輸入來描述程式碼中斷點。  
+ 使用者輸入以描述程式碼中斷點的字串。  
   
 ## <a name="remarks"></a>備註  
- 此結構是隸屬[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構的聯集的一部分。  
+ 此結構是 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 結構的成員，做為聯集的一部分。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

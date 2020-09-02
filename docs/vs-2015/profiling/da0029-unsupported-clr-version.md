@@ -17,19 +17,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 532427618f476e1e187d8a1c88749810f9d157c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152650"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029：CLR 版本不受支援
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-規則 Id |DA0029 |  
-|類別目錄 |分析工具使用方式 |  
-|程式碼剖析方法 |從命令列剖析 |  
-|訊息 |在收集期間偵測到不受支援的 CLR 版本。 可能無法正確解析受控符號。|  
+規則識別碼 |DA0029 |  
+|類別 |分析工具使用量 |  
+|分析方法 |從命令列進行程式碼剖析 |  
+|訊息 |在收集期間偵測到不支援的 CLR 版本。 可能無法正確解析受控符號。|  
 |規則類型 |資訊。 |  
   
 ## <a name="cause"></a>原因  

@@ -1,5 +1,5 @@
 ---
-title: 作法：偵錯部分信任應用程式 |Microsoft Docs
+title: 如何：對部分信任應用程式進行偵錯工具 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,18 +19,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 030fef750cc1e0f0932de32fca1a0ffef56bc8f3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704491"
 ---
-# <a name="how-to-debug-a-partial-trust-application"></a>HOW TO：偵錯部分信任應用程式
+# <a name="how-to-debug-a-partial-trust-application"></a>How to: Debug a Partial Trust Application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 適用於 Windows 和主控台應用程式。  
   
- [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)輕鬆地部署部分信任應用程式，善用[程式碼存取安全性](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127)限制存取權的電腦上的資源。  
+ [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md) 可讓您輕鬆地部署部分信任的應用程式，以利用 [代碼啟用安全性](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) 來限制對電腦上資源的存取。  
   
  偵錯部分信任的應用程式頗具挑戰性，因為根據進行安裝的來源位置不同，部分信任的應用程式也會有不同的安全性權限 (因此行為也不同)。 如果是從網際網路進行安裝，則部分信任的應用程式會具有較少使用權限。 如果是從近端內部網路進行安裝，則會擁有較多的使用權限。如果是從本機電腦進行安裝，則具有完整的使用權限  您可能也擁有自訂區域，這會具有自訂使用權限。 您可能必須在上述任何或所有條件下，才能偵錯部分信任的應用程式。 幸運的是，Visual Studio 也能讓這類偵錯變得更簡單。  
   
@@ -45,41 +45,41 @@ ms.locfileid: "65704491"
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>若要選擇部分信任應用程式的區域  
   
-1. 從**專案**功能表上，選擇_Projectname_**屬性**。  
+1. 從 [ **專案** ] 功能表中，選擇 [專案 _名稱_**屬性**]。  
   
-2. 在  *Projectname*  屬性頁面上，按一下 **安全性**頁面。  
+2. 在 [ *專案名稱* ] 屬性頁中，按一下 [ **安全性** ] 頁面。  
   
-3. 選取 **啟用 ClickOnce 安全性設定**。  
+3. 選取 [ **啟用 ClickOnce 安全性設定**]。  
   
-4. 底下**從安裝應用程式的區域**、 按一下下拉式清單方塊，然後選擇您想要模擬安裝應用程式的區域。  
+4. 在 [ **要從中安裝您的應用程式的區域**] 底下，按一下下拉式清單方塊，然後選擇您想要用來模擬要安裝之應用程式的區域。  
   
-     **應用程式所需的權限**方格會顯示所有可用的權限。 核取記號會指出已授與應用程式的使用權限。  
+     **應用程式方格所需的許可權**會顯示所有可用的許可權。 核取記號會指出已授與應用程式的使用權限。  
   
-5. 如果您選擇的區域 **（自訂）**，選取正確的自訂設定，在**設定**資料行**權限**方格。  
+5. 如果您選擇的區域是** (自訂) **，請在 [**許可權**] 方格的 [**設定**] 欄中選取正確的自訂設定。  
   
-6. 按一下 [確定] 關閉屬性頁。  
+6. 按一下 [確定]**** 關閉屬性頁。  
   
 ### <a name="to-add-an-extra-permission-when-a-security-exception-occurs"></a>若要在發生安全性例外狀況時加入額外使用權限  
   
-1. **例外狀況助理** 對話方塊隨即出現並顯示訊息：**SecurityException 未處理的。**  
+1. [ **例外狀況助理** ] 對話方塊隨即出現，並顯示訊息： **SecurityException 未處理。**  
   
-2. 在 **例外狀況助理**對話方塊的 **動作**，按一下 **新增至專案的權限**。  
+2. 在 [ **例外狀況助理** ] 對話方塊的 [ **動作**] 底下，按一下 **[新增專案的許可權**]。  
   
-3. **重新啟動偵錯** 對話方塊隨即出現。  
+3. [ **重新開機調試** ] 對話方塊隨即出現。  
   
-    - 如果您想要重新啟動新的權限的偵錯工作階段，請按一下**是**。  
+    - 如果您想要以新的許可權重新開機調試會話，請按一下 **[是]**。  
   
-    - 如果您不想要重新啟動，請按一下**No**。  
+    - 如果您不想要重新開機，請按一下 [ **否**]。  
   
 ### <a name="to-view-extra-permissions-added-while-debugging"></a>若要在偵錯期間檢視已加入的額外使用權限  
   
-1. 從**專案**功能表上，選擇_Projectname_**屬性**。  
+1. 從 [ **專案** ] 功能表中，選擇 [專案 _名稱_**屬性**]。  
   
-2. 在  *Projectname*  屬性頁面上，按一下 **安全性**頁面。  
+2. 在 [ *專案名稱* ] 屬性頁中，按一下 [ **安全性** ] 頁面。  
   
-3. 看看**應用程式所需的權限**方格。 您新增任何額外使用權限中有兩個圖示**包含**資料行： 的正常核取記號，所有已納入的擁有權限，這與其他圖示，如下所示包含字母"i"的汽球。  
+3. 查看 **應用程式方格所需的許可權** 。 您新增的任何額外許可權在 **內含** 的資料行中都有兩個圖示：標準核取記號（所有包含的許可權都具有）和其他圖示（看起來像是包含字母 "i" 的批註）。  
   
-4. 用於垂直捲軸檢視整個**應用程式所需的權限**方格。  
+4. 您可以使用垂直捲動條來查看 **應用程式方格所需** 的完整許可權。  
   
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   

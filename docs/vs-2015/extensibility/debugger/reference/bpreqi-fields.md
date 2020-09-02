@@ -1,5 +1,5 @@
 ---
-title: BPREQI_FIELDS | Microsoft Docs
+title: BPREQI_FIELDS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a8ad9e4b6d83ebc05c78a8b84c0c06e00d7563bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153219"
 ---
-# <a name="bpreqifields"></a>BPREQI_FIELDS
+# <a name="bpreqi_fields"></a>BPREQI_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定要擷取中斷點要求的相關資訊。  
+指定要抓取之中斷點要求的相關資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -67,63 +67,63 @@ public enum enum_BPREQI_FIELDS { 
   
 ## <a name="members"></a>成員  
  BPREQI_BPLOCATION  
- 初始化/使用`bpLocation`（中斷點位置） 欄位[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)或是[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。  
+ 初始化/使用 `bpLocation` [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 或 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 結構的 (中斷點位置) 欄位。  
   
  BPREQI_LANGUAGE  
- 初始化/使用`guidLanguage`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
+ 初始化/使用 `guidLanguage` 或結構的欄位 `BP_REQUEST_INFO` `BP_REQUEST_INFO2` 。  
   
  BPREQI_PROGRAM  
- 初始化/使用`pProgram`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
+ 初始化/使用 `pProgram` 或結構的欄位 `BP_REQUEST_INFO` `BP_REQUEST_INFO2` 。  
   
  BPREQI_PROGRAMNAME  
- 初始化/使用`bstrProgramName`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
+ 初始化/使用 `bstrProgramName` 或結構的欄位 `BP_REQUEST_INFO` `BP_REQUEST_INFO2` 。  
   
  BPREQI_THREAD  
- 初始化/使用`pThread`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
+ 初始化/使用 `pThread` 或結構的欄位 `BP_REQUEST_INFO` `BP_REQUEST_INFO2` 。  
   
  BPREQI_THREADNAME  
- 初始化/使用`bstrThreadName`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
+ 初始化/使用 `bstrThreadName` 或結構的欄位 `BP_REQUEST_INFO` `BP_REQUEST_INFO2` 。  
   
  BPREQI_PASSCOUNT  
- 初始化/使用`bpPassCount`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
+ 初始化/使用 `bpPassCount` 或結構的欄位 `BP_REQUEST_INFO` `BP_REQUEST_INFO2` 。  
   
  BPREQI_CONDITION  
- 初始化/使用`bpCondition`（中斷點條件） 欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
+ 初始化/使用 `bpCondition` 或結構的 (中斷點條件) 欄位 `BP_REQUEST_INFO` `BP_REQUEST_INFO2` 。  
   
  BPREQI_FLAGS  
- 初始化/使用`dwFlags`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。  
+ 初始化/使用 `dwFlags` 或結構的欄位 `BP_REQUEST_INFO` `BP_REQUEST_INFO2` 。  
   
  BPREQI_ALLOLDFIELDS  
- 初始化/使用的所有欄位的`BP_REQUEST_INFO`結構。  
+ 初始化/使用結構之的所有欄位 `BP_REQUEST_INFO` 。  
   
  BPREQI_VENDOR  
- 初始化/使用`guidVendor`欄位`BP_REQUEST_INFO2`結構。  
+ 初始化/使用 `guidVendor` 結構的欄位 `BP_REQUEST_INFO2` 。  
   
  BPREQI_CONSTRAINT  
- 初始化/使用`bstrConstraint`欄位`BP_REQUEST_INFO2`結構。  
+ 初始化/使用 `bstrConstraint` 結構的欄位 `BP_REQUEST_INFO2` 。  
   
  BPREQI_TRACEPOINT  
- 初始化/使用`bstrTracepoint`欄位`BP_REQUEST_INFO2`結構。  
+ 初始化/使用 `bstrTracepoint` 結構的欄位 `BP_REQUEST_INFO2` 。  
   
  BPREQI_ALLFIELDS  
- 指定的所有欄位`BP_REQUEST_INFO2`結構。  
+ 指定結構的所有欄位 `BP_REQUEST_INFO2` 。  
   
 ## <a name="remarks"></a>備註  
- 作為引數[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)並[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)方法，來指定哪些欄位[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)並[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構會進行初始化。  
+ 以引數形式傳遞至 [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) 和 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 方法，以指定要初始化 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 和 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 結構的哪些欄位。  
   
- 這些旗標也可用來表示欄位`BP_REQUEST_INFO`和`BP_REQUEST_INFO2`結構會使用和有效時傳回每個結構。  
+ 這些旗標也可用來指出傳回的和結構的哪些欄位 `BP_REQUEST_INFO` `BP_REQUEST_INFO2` ，以及傳回每個結構時的有效欄位。  
   
- 這些值可能會合併的位元`OR`。  
+ 這些值可能會與位結合 `OR` 。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
  [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

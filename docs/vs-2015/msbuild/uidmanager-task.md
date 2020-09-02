@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5fd8175911def7fb1b63dc63d967c404d649e9e4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703687"
 ---
 # <a name="uidmanager-task"></a>UidManager 工作
@@ -36,8 +36,8 @@ ms.locfileid: "65703687"
   
 |參數|描述|  
 |---------------|-----------------|  
-|`IntermediateDirectory`|選擇性的 **String** 參數。<br /><br /> 指定用於備份來源 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 檔案的目錄，該檔案是由 **MarkupFiles** 參數指定。|  
-|`MarkupFiles`|必要的 **ITaskItem[]** 參數。<br /><br /> 指定要包含的來源 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 檔案以進行 UID 檢查、更新或移除。|  
+|`IntermediateDirectory`|選擇性的 **字串** 參數。<br /><br /> 指定用於備份來源 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 檔案的目錄，該檔案是由 **MarkupFiles** 參數指定。|  
+|`MarkupFiles`|必要的 **ITaskItem []** 參數。<br /><br /> 指定要包含的來源 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 檔案以進行 UID 檢查、更新或移除。|  
 |`Task`|必要的 **String** 參數。<br /><br /> 指定您想要執行的 UID 管理工作。 有效的選項為 **Check**、**Update** 或 **Remove**。|  
   
 ## <a name="example"></a>範例  
@@ -62,5 +62,5 @@ ms.locfileid: "65703687"
  [工作參考](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)   
- [建置 WPF 應用程式 (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [ (WPF) 建立 WPF 應用程式 ](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [如何：將應用程式當地語系化](https://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)

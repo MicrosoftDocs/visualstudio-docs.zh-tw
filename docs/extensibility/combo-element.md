@@ -1,5 +1,5 @@
 ---
-title: 組合元素 |微軟文件
+title: 組合元素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 18ff9d9e20ec221a86f1cce5f9c43a4e47ed6dc2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739814"
 ---
-# <a name="combo-element"></a>組合項目
-定義顯示在組合框中的命令。 組合框有四種,如下所示:下拉康博、動態康波、指數康博和MRUCombo。
+# <a name="combo-element"></a>組合元素
+定義出現在下拉式方塊中的命令。 下拉式方塊有四種類型，如下所示： DropDownCombo、DynamicCombo、IndexCombo 和 MRUCombo。
 
 ## <a name="syntax"></a>語法
 
@@ -38,28 +38,28 @@ ms.locfileid: "80739814"
 
 |屬性|描述|
 |---------------|-----------------|
-|guid|必要。 GUID/ID 命令識別碼的 GUID。|
-|id|必要。 GUID/ID 命令識別碼的識別碼。|
-|預設寬度|必要。 指定組合框圖元寬度的整數。|
-|id 命令清單|必要。 發送到活動命令目標的 ID,用於檢索要在組合框中顯示的專案清單。 ID 將與控制項位於相同的 GUID 作用域中。|
-|priority|選擇性。 指定優先權的數值。|
-|type|選擇性。 指定按鈕類型的枚舉值。<br /><br /> 如果未給出,則使用按鈕。<br /><br /> 下拉康博<br /> VS包裝負責填寫此組合框的內容。 使用者無法在此下拉清單的文本框中鍵入任何內容。<br /><br /> 動態通信<br /> VS包裝負責填寫此組合框的內容。 用戶可以編輯此組合,也可以選擇其中的專案。<br /><br /> 索引孔博<br /> 與 DynamicCombo 相同,只不過它提高了項的索引,而不是其文本。<br /><br /> MRUCombo<br /> 由代表 VSPackage 的整合式開發環境 (IDE) 填充。  用戶可以在此組合框中進行編輯。 IDE 最多記住每個組合框的最後 16 個條目。<br /><br /> 當使用者在組合框中選擇某些內容或輸入新內容時,IDE 會通知相應的 VSPackage。|
-|條件|選擇性。 請參考[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|guid|必要。 GUID/識別碼命令識別碼的 GUID。|
+|id|必要。 GUID/識別碼命令識別碼的識別碼。|
+|defaultWidth|必要。 指定下拉式方塊之圖元寬度的整數。|
+|idCommandList|必要。 傳送至使用中命令目標的識別碼，以取得要顯示在下拉式方塊中的專案清單。 此識別碼將會在與控制項相同的 GUID 範圍中。|
+|priority|選擇性。 指定優先權的數位值。|
+|type|選擇性。 指定按鈕類型的列舉值。<br /><br /> 如果未指定，會使用按鈕。<br /><br /> DropDownCombo<br /> VSPackage 負責填入此下拉式方塊的內容。 使用者無法在這個下拉式清單的文字方塊中輸入任何內容。<br /><br /> DynamicCombo<br /> VSPackage 負責填入這個下拉式方塊的內容。 使用者可以編輯這個下拉式方塊，也可以選取其中的專案。<br /><br /> IndexCombo<br /> 與 DynamicCombo 相同，不同之處在于它會引發專案的索引，而不是其文字。<br /><br /> MRUCombo<br />  (IDE) 代表 VSPackage 填入整合式開發環境。  使用者可以在此下拉式方塊中編輯。 IDE 會記住每個下拉式方塊最多最後16個專案。<br /><br /> 當使用者在下拉式方塊中選取某個內容，或輸入新的內容時，IDE 會通知適當的 VSPackage。|
+|條件|選擇性。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |父系|選擇性。 按鈕的父元素。|
-|命令旗標|必要。 請參考[指令旗標元素](../extensibility/command-flag-element.md)。 按鈕的有效命令 Flag 值如下所示。<br /><br /> - 區分大小寫<br /><br /> - 命令井只<br /><br /> - 預設關閉<br /><br /> - 預設不可見<br /><br /> - 動態可見度<br /><br /> - 過濾器鍵<br /><br /> - 圖示與文字<br /><br /> - 無自動完成<br /><br /> - 無按鈕定制<br /><br /> - 無訂<br /><br /> - 無鍵定制<br /><br /> - 橫向拉伸|
-|字串|必要。 請參考[字串元素](../extensibility/strings-element.md)。 必須定義子按鈕文本元素。|
-|Annotation|可選註釋。|
+|CommandFlag|必要。 請參閱 [命令旗標元素](../extensibility/command-flag-element.md)。 按鈕的有效 CommandFlag 值如下所示。<br /><br /> -CaseSensitive<br /><br /> - CommandWellOnly<br /><br /> - DefaultDisabled<br /><br /> - DefaultInvisible<br /><br /> - DynamicVisibility<br /><br /> -篩選<br /><br /> - IconAndText<br /><br /> - NoAutoComplete<br /><br /> - NoButtonCustomize<br /><br /> - NoCustomize<br /><br /> - NoKeyCustomize<br /><br /> - StretchHorizontally|
+|字串|必要。 請參閱 [Strings 元素](../extensibility/strings-element.md)。 必須定義子 ButtonText 元素。|
+|Annotation|選擇性批註。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[指令元素](../extensibility/commands-element.md)|表示 VSPackage 工具列上的命令集合。|
+|[命令元素](../extensibility/commands-element.md)|代表 VSPackage 工具列上的命令集合。|
 
 ## <a name="example"></a>範例
 
@@ -84,4 +84,4 @@ ms.locfileid: "80739814"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室指令表 (.vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio 命令表格 (. .vsct) 檔](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

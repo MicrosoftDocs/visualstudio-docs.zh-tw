@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_length |Microsoft Docs'
+title: IDiaLineNumber：： get_length |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a1fd9dda0e61da4353df7f3fc222df988d022c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152071"
 ---
-# <a name="idialinenumbergetlength"></a>IDiaLineNumber::get_length
+# <a name="idialinenumberget_length"></a>IDiaLineNumber::get_length
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取在區塊中的位元組數目。  
+捕獲區塊中的位元組數目。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,13 +35,13 @@ HRESULT get_length ( 
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]在區塊中傳回位元組的數目。  
+ 擴展傳回區塊中的位元組數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援這個屬性，則傳回。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 區塊是該行的原始碼的長度表示的[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)物件。  
+ 區塊是行中原始程式碼的長度，以 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) 物件表示。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

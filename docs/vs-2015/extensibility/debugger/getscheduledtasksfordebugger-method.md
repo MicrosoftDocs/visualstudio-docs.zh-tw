@@ -11,22 +11,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b4ac6fa753be7672f1e698bda231bd11217c10d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152729"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger 方法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取所有排定工作的陣列。  
+捕獲所有排程工作的陣列。  
   
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **組件：** mscorlib （在 mscorlib.dll 中)  
+ **元件：** mscorlib.dll) 中的 mscorlib (  
   
- 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。  
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,10 +35,10 @@ ms.locfileid: "68152729"
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 所有排程工作的陣列。 每項工作正在執行，或已完成執行。  
+ 所有排程工作的陣列。 每項工作正在執行或已完成執行。  
   
 ## <a name="remarks"></a>備註  
- 這個方法不是安全執行緒，並不應與其他執行個體同時<xref:System.Threading.Tasks.TaskScheduler>它時，應該呼叫從偵錯工具只偵錯工具已暫止所有其他執行緒。  
+ 這個方法不是安全線程，而且不應該與其他實例同時使用， <xref:System.Threading.Tasks.TaskScheduler> 只在偵錯工具暫停所有其他執行緒時，才應該從偵錯工具中呼叫。  
   
 ## <a name="see-also"></a>另請參閱  
  [TaskScheduler 類別](../../extensibility/debugger/taskscheduler-class-internal-members.md)

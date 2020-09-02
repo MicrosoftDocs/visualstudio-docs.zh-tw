@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetLanguageInfo | Microsoft Docs
+title: IDebugStackFrame2：： GetLanguageInfo |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d370670ed86ee3484243fe5dc7cfdd8ea64be084
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153132"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得此堆疊框架相關聯的語言。  
+取得與此堆疊框架相關聯的語言。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,10 +42,10 @@ int GetLanguageInfo ( 
   
 #### <a name="parameters"></a>參數  
  `pbstrLanguage`  
- [out]傳回實作的方法，此堆疊框架相關聯的語言名稱。  
+ 擴展傳回用來執行與此堆疊框架相關聯之方法的語言名稱。  
   
  `pguidLanguage`  
- [out]傳回`GUID`的語言。 針對[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]語言，例如，下列可傳回：  
+ 擴展傳回 `GUID` 語言的。 例如 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] ，您可以傳回下列語言：  
   
 - `guidVBScriptLang`  
   
@@ -60,7 +60,7 @@ int GetLanguageInfo ( 
 - `guidScriptLang`  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

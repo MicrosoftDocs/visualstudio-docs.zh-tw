@@ -12,29 +12,29 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bc6476c925f37d70ab45bae129a8b8a379ee519c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152775"
 ---
 # <a name="execution-control-and-state-evaluation"></a>執行控制和狀態評估
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-偵錯應用程式需要實作逐步執行函式、 中斷點、 停止和繼續執行這類執行控制項功能。 Visual Studio 偵錯基底偵錯工具元件之間傳送的事件其執行控制項。  
+若要對應用程式進行偵錯工具，您必須將這類執行控制功能實作為逐步執行函式、在中斷點停止，然後繼續執行。 Visual Studio 的偵錯工具會根據偵錯工具元件之間傳送的事件來執行控制項的執行控制。  
   
 ## <a name="in-this-section"></a>本節內容  
  [程式控制](../../extensibility/debugger/program-control.md)  
- 列出的程式層級發生下列常式： 設定下一個陳述式、 執行、 逐步執行、 繼續、 暫停及繼續。  
+ 列出程式層級所發生的下列常式：設定下一個語句、執行、逐步執行、繼續、暫停和繼續。  
   
  [中斷點相關的方法](../../extensibility/debugger/breakpoint-related-methods.md)  
- 定義繫結和暫止中斷點的 Visual Studio 支援的類型。  
+ 定義 Visual Studio 支援之中斷點的系結和暫止型別。  
   
  [呼叫堆疊評估](../../extensibility/debugger/call-stack-evaluation.md)  
- 討論的方法，以便檢視呼叫堆疊的堆疊框架處於中斷模式時的實作。  
+ 討論在中斷模式期間，允許查看呼叫堆疊堆疊框架的方法的執行方式。  
   
  [運算式評估](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
- 說明如何偵錯引擎 (DE) 中，運算式評估 (EE)，與工作階段偵錯管理員都能參與剖析並評估運算式輸入到其中一個 IDE 視窗。  
+ 說明 debug engine (DE) 、運算式評估 (EE) ，以及會話 debug manager 如何剖析和評估輸入至 IDE 其中一個視窗的運算式。  
   
  [控制項事件](../../extensibility/debugger/control-events.md)  
- 討論用來在受控制的程式執行期間傳送事件的介面。
+ 討論在受控制的程式執行期間用來傳送事件的介面。

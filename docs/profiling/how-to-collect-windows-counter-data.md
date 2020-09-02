@@ -1,5 +1,5 @@
 ---
-title: 如何收集 Windows 計數器資料 |Microsoft Docs
+title: 如何-收集 Windows 計數器資料 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,15 +16,15 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 16e29d82d1cee2237886d88a24929b4c794464a5
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330872"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>如何：收集 Windows 計數器資料
 
-Windows 計數器是程式碼剖析期間可以設定的間隔收集的系統效能計數器。 在程式碼剖析工具報告的 [標記] 檢視中，每個收集間隔會有一個標示為 [自動標記]**** 的資料列。 該資料列包含以該間隔描述效能計數器值的資料行。 若要將分析限制于兩個特定標記之間的一段時間，請選取標記，**以**滑鼠右鍵按一下，然後  >  從快捷方式功能表選取 [依**標記**篩選]。
+Windows 計數器是程式碼剖析期間可以設定的間隔收集的系統效能計數器。 在程式碼剖析工具報告的 [標記] 檢視中，每個收集間隔會有一個標示為 [自動標記]**** 的資料列。 該資料列包含以該間隔描述效能計數器值的資料行。 若要將分析限制于兩個特定標記之間的時段，請選取標記並按一下滑鼠右鍵，然後**Filter By**  >  從快捷方式功能表選取 [依**標記**篩選]。
 
 > [!NOTE]
 > Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。

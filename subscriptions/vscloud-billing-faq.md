@@ -8,10 +8,10 @@ ms.date: 03/24/2020
 ms.topic: conceptual
 description: 雲端訂用帳戶帳單問題。
 ms.openlocfilehash: d09d9d4a3b21d0b96f0664451323dcc523d73cb3
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249380"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 雲端訂閱帳單常見問題集
@@ -34,7 +34,7 @@ ms.locfileid: "88249380"
 答：可以。 您必須是為 EA 所建立之 Azure 訂用帳戶的擁有者或參與者。 請確定您是直接在 Visual Studio Marketplace 購買 Visual Studio 雲端訂閱。 您不可以使用訂單購買 Visual Studio 雲端訂閱？
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>問：如何判斷我是否有必要的權限，可透過我組織的 Enterprise 合約在 Visual Studio Marketplace 購買服務？
-答：判斷您是否擁有正確許可權最簡單的方法，就是針對 Visual Studio Marketplace 中提供的服務選取 [ **購買** ] 按鈕。
+答：判斷您是否擁有正確許可權的最簡單方法，就是選取 Visual Studio Marketplace 中所提供之服務的 [ **購買** ] 按鈕。
 您需要從目前連結到您登入之 Azure 訂用帳戶提供的清單中選取 Azure 訂用帳戶 (這是計費帳戶)。
 因為 Azure 訂用帳戶的名稱預設為計費帳戶類型 (「隨用隨付方案」、「Enterprise 合約」等等)，Azure 訂用帳戶是否屬於 Enterprise 合約通常很清楚。
 
@@ -74,15 +74,15 @@ ms.locfileid: "88249380"
 而且，折扣僅適用於指定的月租方案計費期費用。 因此，如果您在一個月內購買了 5 個 Visual Studio Professional 訂用帳戶的年度訂閱，然後在次月又購買了 5 個，則所有 10 個訂用帳戶都要支付一般價格。
 
 > [!NOTE]
-> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶前往以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索 Visual Studio 購買的不同選項。
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶移至，以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索購買 Visual Studio 的不同選項。
 
 ## <a name="other-questions"></a>其他問題
-### <a name="q-can-i-use-the-monthly-azure-devtest-individual-credit-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>問：我可以使用每月 Azure DevTest 的個人點數作為 Visual Studio 的訂閱者，以購買更多 Visual Studio 雲端訂閱嗎？
-答：否，您無法使用您的 [每月 Azure DevTest 個人點數](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) 作為 Visual Studio 的訂閱者來支付 Visual Studio Marketplace 購買費用。 任何 Visual Studio 雲端訂閱購買都會計入您的信用卡帳單。
+### <a name="q-can-i-use-the-monthly-azure-devtest-individual-credit-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>問：我可以使用每月 Azure DevTest 個別點數作為 Visual Studio 的訂閱者，以購買更 Visual Studio 的雲端訂用帳戶嗎？
+答：否，您無法使用您的 [每月 Azure DevTest 個別點數](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) 作為 Visual Studio 訂閱者來支付 Visual Studio Marketplace 購買費用。 任何 Visual Studio 雲端訂閱購買都會計入您的信用卡帳單。
 進行採購之前，您必須[移除您的消費限制](https://azure.microsoft.com/pricing/spending-limits/)。
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>問：雲端訂閱的年度訂閱和月租方案有何差異？
-答：雲端訂閱月租方案包含 Visual Studio 和 Azure DevOps Services 和 TFS 的使用。 年度雲端訂用帳戶也有這項功能，但也包括訂閱者權益，包括使用 Windows 和其他 Microsoft 軟體來安裝及執行以進行開發和測試、每月 Azure DevTest 個別點數，用於實驗 Azure 服務，以及在雲端進行開發和測試、訓練、支援等等。
+答：雲端訂閱月租方案包含 Visual Studio 和 Azure DevOps Services 和 TFS 的使用。 年度雲端訂用帳戶也有這麼做，但也包含訂閱者權益，包括使用 Windows 和其他 Microsoft 軟體來安裝和執行開發和測試、每月的 Azure DevTest 個別點數，用來試驗 Azure 服務，並在雲端中進行開發和測試、訓練、支援等等。
 [比較雲端訂閱權益和定價](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>問：如果購買 Visual Studio 雲端訂閱是否可以取得新版本的 Visual Studio？

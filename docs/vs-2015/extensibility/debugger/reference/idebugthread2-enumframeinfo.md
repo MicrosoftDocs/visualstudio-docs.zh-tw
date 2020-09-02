@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::EnumFrameInfo |Microsoft Docs
+title: IDebugThread2：： EnumFrameInfo |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: efda31daae198befbda35803ef71e1d0322e9bbd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153088"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取一份此執行緒的堆疊框架。  
+抓取這個執行緒的堆疊框架清單。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,19 +44,19 @@ int EnumFrameInfo ( 
   
 #### <a name="parameters"></a>參數  
  `dwFieldSpec`  
- [in]從旗標的組合[FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)列舉，指定哪些欄位[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構是填寫。指定`FIF_FUNCNAME_FORMAT`格式化成單一字串的函式名稱的旗標。  
+ 在 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) 列舉中的旗標組合，可指定要填寫 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 結構的哪些欄位。指定將 `FIF_FUNCNAME_FORMAT` 函數名稱格式化為單一字串的旗標。  
   
  `nRadix`  
- [in]格式化數值列舉值中的資訊使用的基數。  
+ 在用來格式化列舉值中數值資訊的基數。  
   
  `ppEnum`  
- [out]傳回[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)物件，其中包含一份[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構描述的堆疊框架。  
+ 擴展傳回 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) 物件，其中包含描述堆疊框架的 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 結構清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 執行緒的框架列舉順序，與目前的框架先列舉和列舉上次最舊的畫面格。  
+ 執行緒的框架會依序列舉，並先列舉目前的框架，並最後列舉最舊的框架。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

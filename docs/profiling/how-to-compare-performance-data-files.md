@@ -1,5 +1,5 @@
 ---
-title: 如何比較效能資料檔案 |Microsoft Docs
+title: 如何-比較效能資料檔案 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,14 +15,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 5fdb8057823732503a215fb4f2c12ebee33b34c4
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330822"
 ---
 # <a name="how-to-compare-performance-data-files"></a>如何：比較效能資料檔案
-您可以比較兩個不同 profiler 資料檔案的結果（。*vsp*或。*.vsps*）藉由建立比較（「差異」）報表或 view。 比較會顯示相較於另一個程式碼剖析工作階段所發生的差異、效能衰退和改進。
+您可以比較兩個不同 profiler 資料檔案的結果 (。*.vsp* 或。) 報表或視圖的「差異」 ( 建立比較，) 的 *.vsps* 。 比較會顯示相較於另一個程式碼剖析工作階段所發生的差異、效能衰退和改進。
 
  差異報告提供資料的資料表檢視。 表格會呈現相對於基準的差異或變更。 這是透過判斷舊值、基準值和新分析中的結果值之間的差異計算而來。
 
@@ -32,9 +32,9 @@ ms.locfileid: "85330822"
 
 ### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>在效能總管中建立專案的比較檔案檢視
 
-1. 在**效能總管**的 [**報表**] 底下，選取。*vsp*或。您想要用來做為比較基準值的 *.vsps*報表檔案。
+1. 在 **效能總管**的 [ **報表**] 底下，選取。*.vsp* 或。您想要用來做為比較基準值的 *.vsps* 報告檔案。
 
-2. 選取 []。*vsp*或。您想要比較的 *.vsps*報表檔案。
+2. 選取。*.vsp* 或。您要比較的 *.vsps* 報告檔案。
 
 3. 以滑鼠右鍵按一下其中一個選取的檔案，然後按一下 [比較報告]****。
 
@@ -48,12 +48,12 @@ ms.locfileid: "85330822"
 
 4. (選擇性) 輸入 [臨界值]**** 的值。
 
-5. 按一下 [套用]。
+5. 按一下 [套用] 。
 
 ### <a name="to-compare-report-files"></a>比較報告檔案
 
 1. 在 [分析]**** 功能表上，選取 [比較效能報告]****。
 
-2. 在 [**選取要進行比較的分析**檔案] 視窗中，流覽並選取 [**基準**檔案分析檔案] （。*vsp*或。*.vsps*）和**比較**檔案（.*vsp*或。*.vsps*）。
+2. 在 [ **選取用於比較的分析** 檔案] 視窗中，流覽並選取 **基準** 檔案分析檔案 (。*.vsp* 或。) 的 *.vsps* 和 **比較** 檔案 (。*.vsp* 或。) 的 *.vsps* 。
 
-3. 按一下 [確定]。
+3. 按一下 [確定] 。

@@ -1,5 +1,5 @@
 ---
-title: 編輯後繼續對話方塊 |Microsoft Docs
+title: '[編輯後繼續] 對話方塊 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,19 +21,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77fd48cd8e64be296231ff847b31d940d3d5831c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704149"
 ---
 # <a name="edit-and-continue-dialog-box"></a>[編輯後繼續] 對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-僅限機器碼） 偵錯時編輯程式碼時，會出現此對話方塊並**編輯後繼續**辨識它可以套用程式碼變更。 如需詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。  
+僅限原生) 當您在偵錯工具中編輯程式碼，並 **繼續進行編輯並繼續** 辨識它可以套用程式碼變更時，就會出現此對話方塊。 如需詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。  
   
  **不要再顯示這個對話方塊**  
- 如果選取這個核取方塊，[編輯後繼續] 以後將直接套用程式碼變更，並且不再請求允許變更。 您可以在 [選項] 對話方塊中開啟 [偵錯] 資料夾，按一下 [編輯後繼續] 頁面，然後選取 [由偵錯命令叫用] 和 [先詢問我]，即可重新開啟這個警告。  
+ 如果您選取此核取方塊，[ **編輯後繼續** ] 將會套用程式碼變更，而不會在未來要求許可權。 您可以在 [選項]**** 對話方塊中開啟 [偵錯]**** 資料夾，按一下 [編輯後繼續]**** 頁面，然後選取 [由偵錯命令叫用]**** 和 [先詢問我]****，即可重新開啟這個警告。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
