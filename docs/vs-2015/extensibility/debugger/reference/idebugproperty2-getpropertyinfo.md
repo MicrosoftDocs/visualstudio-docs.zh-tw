@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetPropertyInfo | Microsoft Docs
+title: IDebugProperty2：： GetPropertyInfo |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6a6d4c2fd943ddef0b4459460be1f67550e53d84
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146266"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構描述的屬性。  
+取得描述屬性的 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 結構。  
   
 ## <a name="syntax"></a>語法  
   
@@ -50,25 +50,25 @@ int GetPropertyInfo ( 
   
 #### <a name="parameters"></a>參數  
  `dwFields`  
- [in]從值的組合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)列舉，指定哪些欄位是填寫`pPropertyInfo`結構。  
+ 在 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) 列舉中的值組合，可指定要在結構中填寫哪些欄位 `pPropertyInfo` 。  
   
  `nRadix`  
- [in]要用於格式化數字的任何資訊的基數。  
+ 在用來格式化任何數值資訊的基數。  
   
  `dwTimeout`  
- [in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用`INFINITE`無限期等候。  
+ 在指定從這個方法傳回之前等候的最長時間（以毫秒為單位）。 使用 `INFINITE` 可無限期等候。  
   
  `rgpArgs`  
- [in、 out]保留供未來使用;設定為 null 的值。  
+ [in，out]保留供日後使用;設定為 null 值。  
   
  `dwArgCount`  
- [in]保留供未來使用;設定為零。  
+ 在保留供日後使用;設定為零。  
   
  `pPropertyInfo`  
- [out]A [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)會填入的屬性描述的結構。  
+ 擴展填入屬性描述的 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 結構。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。  
+ 如果成功，則傳回，否則會傳回 `S_OK` 錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

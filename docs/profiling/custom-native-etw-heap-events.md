@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62552933"
 ---
 # <a name="custom-native-etw-heap-events"></a>自訂原生 ETW 堆積事件
@@ -51,7 +51,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 
 藉由執行下列步驟，我們可以使用這個相同工具來追蹤自訂堆積中的記憶體使用量。
 
-## <a name="how-to-use"></a>使用方式
+## <a name="how-to-use"></a>如何使用
 
 您可以輕鬆地在 C 和 C++ 中使用此程式庫。
 
@@ -156,5 +156,5 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 > Visual Studio 的 [效能分析]**** 工具集中也包含 [記憶體使用量]**** 工具，您可從 [偵錯]**** > [效能分析工具]**** 功能表選項或 **Alt**+**F2** 鍵盤組合，加以啟用。  這項功能不包含堆積追蹤，亦不會顯示此處所述的自訂堆積。  只有 [診斷工具]**** 視窗才包含這項功能 (您可以透過 [偵錯]**** > [視窗]**** > [顯示診斷工具]**** 功能表，或 **Ctrl**+**Alt**+**F2** 鍵盤組合，加以啟用)。
 
 ## <a name="see-also"></a>另請參閱
-[首先查看分析工具](../profiling/profiling-feature-tour.md)
-[記憶體使用方式](../profiling/memory-usage.md)
+[深入瞭解程式碼剖析工具](../profiling/profiling-feature-tour.md) 
+[記憶體使用量](../profiling/memory-usage.md)

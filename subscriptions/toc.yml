@@ -1,0 +1,196 @@
+- name: Visual Studio 訂閱
+  href: index.yml
+- name: 新功能
+  href: whats-new-in-subscriptions.md
+- name: 訂閱
+  items:
+    - name: 購買訂用帳戶
+      items:
+        - name: Retail
+          href: buy-activate-retail.md
+        - name: Cloud
+          items:
+            - name: 概觀
+              href: vscloud-overview.md
+            - name: 計費常見問題集
+              href: vscloud-billing-faq.md
+            - name: 購買 CSP
+              href: vscloud-csp.md
+        - name: 搭配 GitHub Enterprise 的 Visual Studio
+          href: access-github.md
+        - name: Microsoft 合作夥伴網路
+          items:
+            - name: 合作夥伴的訂用帳戶
+              href: program-mpn.md
+            - name: 管理 MPN 的訂閱
+              href: manage-mpn-subscriptions.md
+        - name: Microsoft for Startups
+          href: program-startups.md
+    - name: 登入
+      items:
+        - name: 使用 Microsoft 帳戶登入
+          href: sign-in-msa.md
+        - name: 使用公司/學校帳戶登入
+          href: sign-in-work.md
+        - name: 使用 GitHub 登入
+          href: sign-in-github.md
+        - name: 連線的身分識別
+          href: use-connected-identities.md
+        - name: 替代識別
+          href: vs-alternate-identity.md
+        - name: 登入問題
+          href: sign-in-issues.md
+        - name: 訂閱者資料的匿名
+          href: anonymization.md
+    - name: 訂用帳戶入口網站概觀
+      href: using-the-subscriber-portal.md
+    - name: 管理您的訂閱
+      href: manage-vs-subscriptions.md
+    - name: 連絡您的訂用帳戶管理員
+      href: contact-my-admin.md
+    - name: 優點
+      items:
+        - name: 工具
+          items:
+            - name: Azure DevTest 個人點數
+              href: vs-azure.md
+            - name: Azure DevOps
+              href: vs-azure-devops.md
+            - name: Azure DevTest 隨用隨付
+              href: vs-azure-payg.md
+            - name: Azure EA DevTest
+              href: azure-ea-devtest.md
+            - name: CAST Highlight
+              href: vs-cast.md
+            - name: CloudPilot
+              href: vs-cloudpilot.md
+            - name: Microsoft 365 應用程式企業版
+              href: microsoft-365-apps-for-enterprise.md
+            - name: Microsoft 365 開發人員
+              href: vs-m365.md
+            - name: Parasoft
+              href: vs-parasoft.md
+            - name: Power BI Pro
+              href: vs-pbi.md
+            - name: Visual Studio App Center
+              href: vs-visual-studio-app-center.md
+            - name: Visual Studio IDE
+              href: vs-ide-benefit.md
+            - name: WhiteSource Bolt
+              href: vs-whitesource.md
+            - name: Windows 開發人員帳戶
+              href: vs-windows-dev.md
+            - name: Windows 虛擬桌面
+              href: vs-windows-virtual-desktop.md
+        - name: 專業開發
+          items:
+            - name: CODE Magazine
+              href: vs-code-magazine.md
+            - name: DataCamp
+              href: vs-datacamp.md
+            - name: LinkedIn Learning
+              href: vs-linkedin-learning.md
+            - name: Pluralsight
+              href: vs-pluralsight.md
+        - name: 支援
+          items:
+            - name: Azure 社群
+              href: vs-azure-community.md
+            - name: 指引支援
+              href: vs-concierge-chat.md
+            - name: 技術支援
+              href: vs-tech-support.md
+- name: 軟體與金鑰
+  items:
+    - name: 軟體下載
+      items:
+        - name: 產品可用性
+          href: product-availability.md
+        - name: 下載軟體
+          href: download-software.md
+    - name: 可用軟體下載的清單
+      href: software-download-list.md
+    - name: 產品金鑰
+      items:
+        - name: 產品金鑰概觀
+          href: product-keys.md
+        - name: 尋找及索取金鑰
+          href: find-keys.md
+        - name: 網際網路示範
+          href: internet-demos.md
+- name: 系統管理員
+  items:
+    - name: 系統管理員責任
+      items:
+        - name: 系統管理員責任
+          href: admin-responsibilities.md
+        - name: 生產階段前清查
+          href: admin-inventory.md
+        - name: 管理大型小組及外部承攬人
+          href: manage-teams.md
+        - name: 追蹤使用者指派及處理訂單
+          href: assignments-orders.md
+    - name: 存取管理入口網站
+      items:
+        - name: 大量授權
+          href: volume-license.md
+        - name: MPSA
+          href: mpsa.md
+        - name: 雲端訂用
+          href: cloud-admin.md
+        - name: 為客戶進行管理的合作夥伴
+          href: open-migration.md
+        - name: 影片教學課程：存取管理入口網站
+          href: 'https://youtu.be/plSu6fpi7UI'
+    - name: 使用管理入口網站
+      items:
+        - name: 進階管理員與系統管理員
+          href: admin-roles.md
+        - name: 設定合約喜好設定
+          href: admin-prefs.md
+        - name: 概觀
+          href: using-admin-portal.md
+        - name: 新增每月訂閱
+          href: add-monthly-subs.md
+        - name: 指派訂用帳戶
+          items:
+            - name: 新增單一使用者
+              href: assign-license.md
+            - name: 新增多個使用者
+              href: assign-license-bulk.md
+            - name: 指派特定訂閱
+              href: assign-guid.md
+        - name: 編輯訂用帳戶
+          href: edit-license.md
+        - name: 刪除訂用帳戶
+          href: delete-license.md
+        - name: 搜尋訂閱
+          href: search-license.md
+        - name: 匯出訂用帳戶
+          href: exporting-subscriptions.md
+        - name: 過度分派
+          href: handle-overclaimed-license.md
+        - name: 使用量上限
+          href: maximum-usage.md
+        - name: 過期的訂用帳戶
+          href: handle-expired-license.md
+        - name: '訂閱者登入案例 '
+          href: aliasing.md
+        - name: 具有個人電子郵件登入的訂閱者
+          href: personal-email-sign-ins.md
+        - name: 管理搭配 GitHub Enterprise 的 Visual Studio
+          href: assign-github.md
+- name: 資源
+  items:
+    - name: Visual Studio 授權技術白皮書
+      href: 'https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf'
+    - name: 比較訂閱選項和定價
+      href: 'https://visualstudio.microsoft.com/vs/pricing'
+    - name: 比較 Visual Studio IDE 功能
+      href: 'https://visualstudio.microsoft.com/vs/compare'
+    - name: Visual Studio 管理與訂閱支援
+      href: 'https://visualstudio.microsoft.com/support/support-overview-vs'
+    - name: 大量授權條款
+      href: 'https://www.microsoft.com/licensing/product-licensing/products.aspx'
+    - name: Microsoft 產品和服務合約 (MPSA)
+      href: 'https://www.microsoft.com/licensing/mpsa/default.aspx'

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 16ee86e69cb3a150a98de5077aa0c545545833e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145597"
 ---
 # <a name="thread-details-view---contention-data"></a>執行緒詳細資料檢視 - 爭用資料
@@ -37,9 +37,9 @@ ms.locfileid: "68145597"
   
 #### <a name="to-zoom-out-on-a-timeline"></a>在時間軸上縮小  
   
-- 按一下 [縮小]  以返回上一個縮放層級。  
+- 按一下 [縮小]**** 以返回上一個縮放層級。  
   
-- 按一下 [顯示比例重設]  ，在檢視中顯示整個時間軸。  
+- 按一下 [顯示比例重設]****，在檢視中顯示整個時間軸。  
   
 #### <a name="to-view-the-call-stack-of-an-event"></a>檢視事件的呼叫堆疊  
   
@@ -59,6 +59,6 @@ ms.locfileid: "68145597"
   
 #### <a name="to-view-the-thread-contention-data-in-the-processes-window"></a>在 [處理序] 視窗中檢視執行緒爭用資料  
   
-- 在時間軸圖形中，按一下 [總計]  。  
+- 在時間軸圖形中，按一下 [總計]****。  
   
      [處理序檢視](../profiling/process-view-contention-data.md)隨即顯示，並選取該執行緒。

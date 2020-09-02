@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 91929038d77bcf14c6997f9b60551ed8c9c3b820
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186372"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-可讓 VSPackage 也可以存取另一個.vsct 檔案中定義的命令。 例如，如果您的 VSPackage 會使用標準**複製**命令，可定義[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]shell 中，您可以將命令加入功能表或工具列而不需要重新實作它。  
+讓 VSPackage 存取另一個 .vsct 檔案中定義的命令。 例如，如果您的 VSPackage 使用由 shell 定義的標準 **複製** 命令， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 您可以將命令新增至功能表或工具列，而不需要重新執行它。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,15 +30,15 @@ ms.locfileid: "68186372"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|guid|必要項。 識別命令的 GUID 識別碼組的 GUID。|  
-|id|必要項。 識別命令的 GUID 識別碼組識別碼。|  
-|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
+|guid|必要。 識別命令之 GUID 識別碼組的 GUID。|  
+|id|必要。 識別命令之 GUID 識別碼組的識別碼。|  
+|條件|選擇性。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
@@ -48,12 +48,12 @@ ms.locfileid: "68186372"
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
-|[UsedCommands 元素](../extensibility/usedcommands-element.md)|群組 UsedCommand 元素，而且其他 UsedCommands 分組。|  
+|[UsedCommands 元素](../extensibility/usedcommands-element.md)|群組 UsedCommand 元素和其他 UsedCommands 群組。|  
   
 ## <a name="remarks"></a>備註  
- 將命令新增至`<UsedCommands>`元素，VSPackage 會通知[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]VSPackage，需要此命令的環境。 您應該加入`<UsedCommand>`封裝需要的任何命令的項目可能不會包含於所有版本的 Visual Studio 的設定。 例如，如果您的封裝呼叫特定視覺效果的命令C++，無法使用的 Visual Web Developer 使用者命令，除非您將包含`<UsedCommand>`命令的項目。  
+ 藉由將命令新增至 `<UsedCommands>` 元素，VSPackage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 就會通知環境 VSPackage 需要命令。 您應該 `<UsedCommand>` 為套件需要的任何命令新增專案，而這些命令可能不會包含在 Visual Studio 的所有版本和設定中。 例如，如果您的封裝呼叫 Visual C++ 特有的命令，則 Visual Web Developer 的使用者將無法使用此命令，除非您包含 `<UsedCommand>` 命令的元素。  
   
 ## <a name="example"></a>範例  
   

@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef86bcca5e7b8b6fa8f2b6c5e7a0efe86ab5ba17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197456"
 ---
 # <a name="visualizer-api-reference"></a>視覺化檢視 API 參考
@@ -43,6 +43,6 @@ ms.locfileid: "68197456"
 - <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource?displayProperty=fullName>  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說：使用 C# 撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [如何：撰寫視覺化檢視](../debugger/how-to-write-a-visualizer.md)   
+ [逐步解說：以 C 撰寫視覺化#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [How to：撰寫視覺化](../debugger/how-to-write-a-visualizer.md)   
  [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)

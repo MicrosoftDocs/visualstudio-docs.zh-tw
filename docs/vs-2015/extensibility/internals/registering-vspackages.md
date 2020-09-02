@@ -12,16 +12,16 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 053157b0ce1cb4250d8c666725431515c75b5fa2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157382"
 ---
 # <a name="registering-vspackages"></a>註冊 VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 依賴.pkgdef 檔案，來描述及尋找 VSPackage。 .Pkgdef 檔案包含所有的註冊資訊，否則會新增至系統登錄。 將屬性加入至原始碼，然後執行註冊 managed 的 Vspackage [CreatePkgDef 公用程式](../../extensibility/internals/createpkgdef-utility.md)上產生的組件，以產生.pkgdef 檔。  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 依賴 .pkgdef 檔案來描述和找出 VSPackage。 .Pkgdef 檔案包含所有註冊資訊，否則會新增至系統登錄。 藉由將屬性加入至原始程式碼，然後在產生的元件上執行 [CreatePkgDef 公用程式](../../extensibility/internals/createpkgdef-utility.md) 來產生 .pkgdef 檔案，即可註冊 Managed vspackage。  
   
 ## <a name="in-this-section"></a>本節內容  
  [為 VS Shell 指定 VSPackage 檔案位置](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
@@ -31,4 +31,4 @@ ms.locfileid: "68157382"
  說明如何註冊 VSPackage。  
   
  [使用自訂註冊屬性來註冊延伸模組](../../misc/using-a-custom-registration-attribute-to-register-an-extension.md)  
- 描述如何建立可用來部署 managed 的 VSPackage 的註冊資訊清單。
+ 說明如何建立可用於部署受控 VSPackage 的註冊資訊清單。

@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79302844"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315300"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教學課程：開始使用 Visual Studio 中的 Flask Web 架構
 
@@ -38,7 +38,7 @@ Flask 被稱為「微」架構，因為它並不直接提供表單驗證、資�
 > [!Note]
 > 本教學課程與 [Flask 快速入門](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)的差異在於，您可以深入了解 Flask，以及如何使用各種不同 Flask 專案範本，以便為自己的專案提供更廣泛的起點。 例如，專案範本會在建立專案時自動安裝 Flask 套件，而不像快速入門中所示，需要您手動安裝套件。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 - Windows 上具有下列選項的 Visual Studio 2017 或更新版本：
   - **Python 開發** 工作負載 (安裝程式的 [工作負載]**** 索引標籤)。 如需相關指示，請參閱[在 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
@@ -50,7 +50,7 @@ Visual Studio for Mac 目前不支援 Python 開發。 在 Mac 和 Linux 上，�
 
 ## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>步驟 1-1：建立 Visual Studio 專案和解決方案
 
-1. 在視覺化工作室中，選擇 **"檔** > **新專案** > **"，** 搜索"文本"，然後選擇**空白的"空白文本 Web 專案**"範本。 （該範本也可在左側清單中的**Python** > **Web**下找到。
+1. 在 Visual Studio 中，**選取**  >  [檔案**新增**  >  **專案**]、搜尋 "Flask"，然後選取 [**空白 Flask Web 專案**] 範本。  (範本也可在左側清單中的**Python**  >  **Web**下找到。 ) 
 
     ![Visual Studio 中 [空白 Flask Web 專案] 的 [新增專案] 對話方塊](media/flask/step01-new-blank-project.png)
 
@@ -58,7 +58,7 @@ Visual Studio for Mac 目前不支援 Python 開發。 在 Mac 和 Linux 上，�
 
     - **名稱**：將 Visual Studio 專案名稱設定為 **BasicProject**。 此名稱也會用於 Flask 專案。
     - **位置**：指定要在其中建立 Visual Studio 解決方案和專案的位置。
-    - **解決方案名稱**：設置為**LearningFlask**，它適用于本教程中多個專案的容器解決方案。
+    - **解決方案名稱**：設定為 **LearningFlask**，適用于在本教學課程中作為多個專案容器的解決方案。
     - **為解決方案建立目錄**：設定維持不變 (預設值)。
     - **建立新的 Git 存放庫**：選取此選項 (預設為清除)，以便 Visual Studio 在建立解決方案時一併建立本機 Git 存放庫。 若您沒有看到此選項，請執行 Visual Studio 安裝工具，並在 [程式碼工具]**** 下的 [個別元件]**** 索引標籤上新增 **Git for Windows** 和 **Visual Studio 的 GitHub 延伸模組**。
 
@@ -190,7 +190,7 @@ Visual Studio for Mac 目前不支援 Python 開發。 在 Mac 和 Linux 上，�
         return "Hello World!"
     ```
 
-### <a name="question-what-is-the-purpose-of-the-__name__-argument-to-the-flask-class"></a>問：法拉克類__的名稱__參數的目的是什麼？
+### <a name="question-what-is-the-purpose-of-the-__name__-argument-to-the-flask-class"></a>問題： Flask 類別的 __name__ 引數用途為何？
 
 回答：此引數是應用程式模組或套件的名稱，可告訴 Flask 該去哪裡尋找範本、靜態檔案，以及其他屬於應用程式的資源。 對於包含在單一模組中的應用程式來說，`__name__` 一律是正確的值。 此引數對於需要偵錯資訊的延伸模組來說，也相當重要。 如需詳細資訊和額外的引數，請參閱 [Flask 類別文件](https://flask.palletsprojects.com/en/1.0.x/api/#flask.Flask) \(英文\) (flask.pocoo.org)。
 
@@ -228,7 +228,7 @@ def hello(name, msg):
 
 ## <a name="step-1-5-run-the-project"></a>步驟 1-5：執行專案
 
-1. 在視覺化工作室中，選擇**調試** > **啟動調試**（**F5**） 或使用工具列上的**Web 服務器**按鈕（您看到的瀏覽器可能有所不同）：
+1. 在 Visual Studio 中，選取 [ **Debug**  >  **開始調試**] (**F5**) 或使用工具列上的 [ **Web 服務器**] 按鈕 (您所看到的瀏覽器可能會有不同的) ：
 
     ![Visual Studio 中的 [執行網頁伺服器] 工具列按鈕](media/tutorials-common/run-web-server-toolbar-button.png)
 
@@ -238,11 +238,11 @@ def hello(name, msg):
 
     ![Flask 專案預設檢視](media/flask/step01-first-run-success.png)
 
-1. 完成後，請關閉主控台視窗或使用 Visual Studio 中的 **"調試** > **停止調試"** 命令來阻止伺服器。
+1. 當您完成時，請關閉主控台視窗，或使用 Visual Studio 中的 [ **Debug**  >  **停止調試**程式] 命令，以停止伺服器。
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>問題：使用 [偵錯] 功能表命令和使用專案 Python 子功能表上的伺服器命令，兩者有何差異？
 
-回答：除了 [偵錯]**** 功能表命令與工具列按鈕之外，您也可以使用專案內容功能表上的 [Python]**** > [執行伺服器]**** 或 [Python]**** > [執行偵錯伺服器]**** 命令來啟動伺服器。 這兩個命令都會開啟主控台視窗，您可在該處看到執行中伺服器的本機 URL (localhost:port)。 不過，您必須使用該 URL 手動開啟瀏覽器，執行偵錯伺服器並不會自動啟動 Visual Studio 偵錯工具。 如果需要，可以使用 **"調試** > **附加到進程**"命令，稍後可以將調試器附加到正在運行的進程。
+回答：除了 [偵錯]**** 功能表命令與工具列按鈕之外，您也可以使用專案內容功能表上的 [Python]**** > [執行伺服器]**** 或 [Python]**** > [執行偵錯伺服器]**** 命令來啟動伺服器。 這兩個命令都會開啟主控台視窗，您可在該處看到執行中伺服器的本機 URL (localhost:port)。 不過，您必須使用該 URL 手動開啟瀏覽器，執行偵錯伺服器並不會自動啟動 Visual Studio 偵錯工具。 您可以稍後使用**Debug**  >  **attach to process**命令，將偵錯工具附加至執行中的進程。
 
 ## <a name="next-steps"></a>後續步驟
 

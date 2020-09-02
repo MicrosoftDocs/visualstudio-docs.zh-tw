@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: bcdef95935c0522c8b93a972d7f44fbd7632c53b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302690"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312687"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>在 Visual Studio 中建立 R 專案
 
@@ -25,7 +25,7 @@ R 專案 (*.rxproj* 檔案) 會識別與您專案建立關聯的所有來源和�
 
 1. 開啟 Visual Studio。
 1. 選擇 [檔案] > [新增] > [專案]**** (**Ctrl**+**Shift**+**N**)
-1. 從**範本** > **R**下選擇"R 專案"，為專案指定名稱和位置，然後選擇 **"確定**"：
+1. 從**範本**R 下選取 [r 專案]  >  ** **，為專案提供名稱和位置，然後選取 **[確定]**：
 
     ![Visual Studio R (在 VS2017 中為 RTVS) 的 [新增專案] 對話方塊](media/getting-started-01-new-project.png)
 
@@ -33,7 +33,7 @@ R 專案 (*.rxproj* 檔案) 會識別與您專案建立關聯的所有來源和�
 
 ![從範本建立的 R 專案內容](media/projects-template-results.png)
 
-*.Rhistory* 會記錄您在 [R 互動](interactive-repl-for-r-in-visual-studio.md)視窗中輸入的所有命令。 您可以使用**R Tools** > **Windows** > **歷史記錄**命令打開專用歷史記錄視窗。 該視窗具有工具列按鈕和內容功能表項目可清除歷程記錄內容。
+*.Rhistory* 會記錄您在 [R 互動](interactive-repl-for-r-in-visual-studio.md)視窗中輸入的所有命令。 您可以使用**R 工具**  >  **Windows**  >  **history**命令開啟專用的歷程記錄視窗。 該視窗具有工具列按鈕和內容功能表項目可清除歷程記錄內容。
 
 *rproject.rproj* 檔案會維護某些本來由 Visual Studio 管理的 R 特定專案設定：
 
@@ -44,11 +44,11 @@ R 專案 (*.rxproj* 檔案) 會識別與您專案建立關聯的所有來源和�
 | SaveWorkspace | 預設 | 關閉專案時，將目前的工作區變數儲存在專案目錄的 `.RData` 檔案。 |
 | AlwaysSaveHistory | 預設 | 關閉專案時，將目前的互動式視窗歷程記錄儲存在專案目錄的 `.RHistory` 檔案。 |
 | EnableCodeIndexing | 是 | 決定是否執行背景編製索引工作，以加速搜尋程式碼。 |
-| UseSpacesForTab | 是 | 確定在編輯器中按下**Tab**鍵時，是插入空格（是）還是 Tab 字元（否）。 |
+| UseSpacesForTab | 是 | 決定在編輯器中按下 **tab** 鍵時，是否要插入空格 (Yes) 或 tab 字元 (No) 。 |
 | NumSpacesForTab | 2 | 如果 UseSpacesForTab 為 Yes，要插入的空格數目。 |
 | 編碼 | UTF-8 | `.R` 檔案的預設編碼。 |
 | RnwWeave | Sweave | 編排 Rnw 檔案時要使用的套件。 |
-| LaTeX | pdfLaTeX | 將 RMarkdown 轉換為 PDF 時要使用的庫。 |
+| LaTeX | pdfLaTeX | 將 RMarkdown 轉換為 PDF 時要使用的程式庫。 |
 
 ### <a name="converting-a-folder-of-files-to-an-r-project"></a>將檔案資料夾轉換成 R 專案
 
@@ -56,8 +56,8 @@ R 專案 (*.rxproj* 檔案) 會識別與您專案建立關聯的所有來源和�
 
 1. 如上節所述，在 Visual Studio 中建立新的專案。
 1. 將檔案複製到專案資料夾。
-1. 在視覺化工作室解決方案資源管理器中，按右鍵專案，選擇 **"添加** > **現有專案**"，然後流覽到要添加的檔。 選取 [確定]**** 之後，這些檔案就會出現在您的專案樹狀結構中。
-1. 要將代碼組織到子資料夾中，請按右鍵專案，首先選擇 **"添加新** > **資料夾**"，然後將檔案複製到該資料夾中，並在步驟 3 中添加這些現有專案。
+1. 在 [Visual Studio 方案總管中，以滑鼠右鍵按一下專案，選取 [**加入**  >  **現有專案**]，然後流覽至您要新增的檔案。 選取 [確定]**** 之後，這些檔案就會出現在您的專案樹狀結構中。
+1. 若要將程式碼組織到子資料夾，請以滑鼠右鍵按一下專案、選取 [先**加入**  >  **新資料夾**]，然後將檔案複製到該資料夾，並在步驟3中新增這些現有的專案。
 
 ## <a name="project-properties"></a>專案屬性
 
@@ -70,36 +70,36 @@ R 專案 (*.rxproj* 檔案) 會識別與您專案建立關聯的所有來源和�
 | | 遠端專案路徑 | 遠端工作區的路徑。 |
 | | 執行時傳輸檔案 | 指出受限於 [Files to transfer]\(要傳輸的檔案)**** 篩選的專案檔案，是否每一次執行都要複製到遠端工作區。 |
 | | 要傳輸的檔案 | 如已選取 [Transfer files on run]\(執行時傳輸檔案)****，表示要複製到遠端工作區之特定檔案的檔案名稱和萬用字元。 |
-| 設定 | (Settings.R 檔案) | R 專案設定，來自位於專案內的 *Settings.R* 或 *.Settings.R* 檔案。 如果沒有設定檔案，您可以新增變數，並儲存頁面，這樣就會為您建立預設 *Settings.R* 檔案。 您還可以通過 **"檔** > **添加新專案"** 功能表命令向專案添加設置檔。 <br/> 在執行其他模組前，設定會先儲存為 R 程式碼，且檔案可以成為來源，因此會以預先定義的設定來填入環境。 |
+| 設定 | (Settings.R 檔案) | R 專案設定，來自位於專案內的 *Settings.R* 或 *.Settings.R* 檔案。 如果沒有設定檔案，您可以新增變數，並儲存頁面，這樣就會為您建立預設 *Settings.R* 檔案。 您也可以**透過 [檔案新增**  >  **專案**] 功能表命令，將設定檔新增至專案。 <br/> 在執行其他模組前，設定會先儲存為 R 程式碼，且檔案可以成為來源，因此會以預先定義的設定來填入環境。 |
 
 ## <a name="r-specific-project-commands"></a>R 特定專案命令
 
-Visual Studio 專案透過滑鼠右鍵功能表和 [專案]**** 功能表支援多個一般命令。 有關這些常規功能的詳細資訊，請參閱[Visual Studio 中的解決方案和專案](../ide/solutions-and-projects-in-visual-studio.md)。 不過，請記住 Visual Studio R 工具 (RTVS) 會將多個專屬命令新增至 R 專案以及專案中檔案和資料夾的快顯功能表。
+Visual Studio 專案透過滑鼠右鍵功能表和 [專案]**** 功能表支援多個一般命令。 如需這些一般功能的詳細資訊，請參閱 [Visual Studio 中的方案和專案](../ide/solutions-and-projects-in-visual-studio.md)。 不過，請記住 Visual Studio R 工具 (RTVS) 會將多個專屬命令新增至 R 專案以及專案中檔案和資料夾的快顯功能表。
 
-| Command | 描述 |
+| 命令 | 描述 |
 | --- | --- |
 | 在此設定工作目錄 | 將 [R 互動] 視窗的工作目錄設定為專案資料夾，而專案資料夾也可以用在專案內的任何子資料夾上。 |
 | 開啟包含的資料夾 | 在所選檔案位置開啟 Windows 檔案總管。 |
-| 新增 R 指令碼 | 以預設名稱建立並開啟新的 *.R* 檔案。 您還可以使用 **"添加新** > **項"** 命令來創建 *。R*檔以及許多其他檔案類型。 請參閱 [R 特定項目範本](#r-specific-item-templates)。 |
-| 新增 R Markdown | 以預設名稱建立並開啟新的 *.rmd* 文件。 您還可以使用 **"** > **添加新項"** 命令創建 *.rmd*檔以及許多其他檔案類型。 請參閱 [R 特定項目範本](#r-specific-item-templates)。  |
+| 新增 R 指令碼 | 以預設名稱建立並開啟新的 *.R* 檔案。 您也可以使用 [**加入**  >  **新專案**] 命令來建立 *。R*檔案以及其他許多檔案類型。 請參閱 [R 特定項目範本](#r-specific-item-templates)。 |
+| 新增 R Markdown | 以預設名稱建立並開啟新的 *.rmd* 文件。 您也可以使用 [**加入**  >  **新專案**] 命令來建立*rmd*檔案，以及一些其他檔案類型。 請參閱 [R 特定項目範本](#r-specific-item-templates)。  |
 | 發行預存程序 | 啟動發行包含在 R 指令碼中所有預存程序的流程。 請參閱[使用 SQL Server 預存程序](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures)。 |
 
 ## <a name="r-specific-item-templates"></a>R 特定項目範本
 
-RTVS 包含特定檔案類型的多個範本。 您可以通過按右鍵 R 專案並選擇 **"** > **添加新專案**"（通過選擇 **"專案** > **添加新專案**"）或使用 **"檔** > **新** > **檔**"並選擇**R**選項卡來訪問範本。流覽範本的最佳方法是創建新專案並插入每種類型的檔。
+RTVS 包含特定檔案類型的多個範本。 您可以用滑鼠右鍵按一下 R 專案並選取 [**加入**新專案]  >  ** **、選取 [**專案**  >  **加入新專案**]，或使用 [檔案新檔案]， **File**  >  **New**  >  **File**然後選取 [ **R** ] 索引標籤，以存取範本。探索範本的最佳方式是建立新的專案，並插入每個類型的檔案。
 
 > [!Note]
-> **"添加新** > **專案"** 命令還顯示表中未列出的常規檔案類型;因此，還會顯示未在表中列出的常規檔案類型。與**檔** > **新** > **檔**這些類型包含在 **"常規**"選項卡上。
+> [**加入**  >  **新專案**] 命令也會顯示表格中未列出的一般檔案類型， **File**而 [檔案  >  **新**檔案] 則  >  **File**是包含這些類型，而不是 [**一般**] 索引標籤。
 
 | 檔案類型 | 描述 |
 | --- | --- |
-| R 指令碼 | 包含可在 R 命令列輸入之相同命令的文字檔。 |
+| R Script | 包含可在 R 命令列輸入之相同命令的文字檔。 |
 | R Markdown | 包含 [R Markdown](rmarkdown-with-r-in-visual-studio.md) 文件的檔案。 |
 | R 設定 | 保存 R 應用程式設定的檔案。 |
 | R 文件 | 僅包含名稱、別名和標題欄位的一般 R 文件檔案。 |
 | R 文件 (函式) | 包含許多欄位及描述函式之註解的 R 文件檔案。 |
 | R 文件 (資料集) | 包含許多欄位及描述資料集之註解的 R 文件檔案。 |
-| SQL 查詢 | 空*的 .sql*檔。 請參閱[使用 SQL Server 和 R](integrating-sql-server-with-r.md)。 |
+| SQL 查詢 | 空的 *.sql* 檔。 請參閱[使用 SQL Server 和 R](integrating-sql-server-with-r.md)。 |
 | 使用 R 的預存程序 | 具有子系 SQL 查詢和子系預存程序範本檔案的 R 檔案。 請參閱[使用 SQL Server 和 R](integrating-sql-server-with-r.md)。 |
 
 ## <a name="use-multiple-project-types-in-visual-studio"></a>使用 Visual Studio 中的多個專案類型
@@ -115,4 +115,4 @@ Visual Studio 解決方案提供一個方便的位置，讓您在同一個邏輯
 > [!Note]
 > 目前，C#/C++ 語言整合沒有任何就緒的明確 R (如為 Python，請參閱[建立適用於 Python 的 C++ 延伸模組](../python/working-with-c-cpp-python-in-visual-studio.md))。  不過有一些可用的文件庫為 R 提供 C# 和 C++ 橋接器。
 
-有關管理專案和解決方案的詳細資訊，請參閱 Visual Studio[中的解決方案和專案](../ide/solutions-and-projects-in-visual-studio.md)。
+如需一般管理專案和方案的詳細資訊，請參閱 [Visual Studio 中的方案和專案](../ide/solutions-and-projects-in-visual-studio.md)。

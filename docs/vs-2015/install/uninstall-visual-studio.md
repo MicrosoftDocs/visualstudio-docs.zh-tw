@@ -16,10 +16,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ed9d33501644c6fa7252dffa758f92c0919653b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546898"
 ---
 # <a name="uninstall-visual-studio"></a>解除安裝 Visual Studio
@@ -31,11 +31,11 @@ Visual Studio 2015 是我們提供給開發人員的整合式生產力工具套�
 
 ## <a name="uninstall-visual-studio-by-using-the-standard-uninstallation-method"></a>使用「標準」解除安裝方法將 Visual Studio 解除安裝
 
-1. 在 [控制台] 的 [程式和功能] 頁面上，選取要解除安裝的產品版本，然後選擇 [變更]。
+1. 在 [控制台]**** 的 [程式和功能]**** 頁面上，選取要解除安裝的產品版本，然後選擇 [變更]****。
 
-2. 在 [安裝精靈] 中，依序選擇 [解除安裝]、[是]，然後遵循精靈中的其餘指示進行。
+2. 在 [安裝精靈] 中，依序選擇 [解除安裝]****、[是]****，然後遵循精靈中的其餘指示進行。
 
-   此標準或預設方法會留下一些您第一次執行 Visual Studio 原始安裝所安裝的項目 (例如，Microsoft .NET Framework、Microsoft Visual C++ 可轉散發套件、Microsoft SQL Server 等)。   因為許多其他應用程式相依於這些項目，所以我們保留它們。 不過，如果您也想要移除它們，請在 [程式和功能] 中選取其項目，然後個別移除每個項目。
+   此標準或預設方法會留下一些您第一次執行 Visual Studio 原始安裝所安裝的項目 (例如，Microsoft .NET Framework、Microsoft Visual C++ 可轉散發套件、Microsoft SQL Server 等)。   因為許多其他應用程式相依於這些項目，所以我們保留它們。 不過，如果您也想要移除它們，請在 [程式和功能]**** 中選取其項目，然後個別移除每個項目。
 
 ## <a name="uninstall-visual-studio-and-all-other-related-files-that-is-to-uninstall-almost-everything"></a>將 Visual Studio 和所有其他相關檔案解除安裝 (亦即，將幾乎所有項目都解除安裝)
 
@@ -57,7 +57,7 @@ Visual Studio 2015 是我們提供給開發人員的整合式生產力工具套�
 
 2. 輸入下列參數：
 
-     *DVDRoot* \\<Installation File\> \</quiet&#124;/passive> [/norestart]/uninstall
+     *DVDRoot* \\<安裝檔案 \> \</quiet&#124;/passive> [/norestart]/uninstall
 
 ## <a name="roll-back-to-a-previous-version-or-release-of--visual-studio"></a>復原為 Visual Studio 的先前版本或版次
 

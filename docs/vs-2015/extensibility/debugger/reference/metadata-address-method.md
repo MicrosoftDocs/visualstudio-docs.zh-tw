@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_METHOD | Microsoft Docs
+title: METADATA_ADDRESS_METHOD |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 08a70bc02268e5814982f76cd91dc5d2e2e1cac2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547087"
 ---
-# <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
+# <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此結構表示的類別方法的位址。  
+此結構代表類別方法的位址。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,23 +46,23 @@ public struct METADATA_ADDRESS_METHOD {
  tokMethod  
  方法的識別碼。  
   
- [C++]`_mdToken`是`typedef`適用於 32 位元`int`。  
+ [C + +] `_mdToken` 是 `typedef` 32 位的 `int` 。  
   
  dwOffset  
- 從類別的位移開始 （可以代表位移 vtable） 此方法。  
+ 從類別開始到這個方法的位移 (可以表示 vtable) 中的位移。  
   
  dwVersion  
- （這個值是唯一的符號提供者） 的方法版本。  
+  (此值的方法版本對符號提供者) 而言是唯一的。  
   
 ## <a name="remarks"></a>備註  
- 此結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構的時機`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設定為`ADDRESS_KIND_METHOD`(中的值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。  
+ 當結構的[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 欄位 `DEBUG_ADDRESS_UNION` 設定為 `ADDRESS_KIND_METHOD` ([ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉) 中的值時，此結構就是 DEBUG_ADDRESS_UNION 結構中聯集的一部分。  
   
 ## <a name="requirements"></a>需求  
- 標頭： sh.h  
+ 標頭： sh. h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

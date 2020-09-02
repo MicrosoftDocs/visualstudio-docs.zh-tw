@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2d7bb7e0f3dfee3dd1bf3e9b42afd5837a29f6ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646812"
 ---
 # <a name="template-parameters"></a>範本參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-透過使用範本中的參數，您可以在範本具現化時取代範本機碼部分的值，例如類別名稱和命名空間。 當使用者按一下 [新增專案]  或 [新增項目]  對話方塊中的 [確定]  時，在背景執行的範本精靈即會取代這些參數。
+透過使用範本中的參數，您可以在範本具現化時取代範本機碼部分的值，例如類別名稱和命名空間。 當使用者按一下 [新增專案]**** 或 [新增項目]**** 對話方塊中的 [確定]**** 時，在背景執行的範本精靈即會取代這些參數。
 
 ## <a name="declaring-and-enabling-template-parameters"></a>宣告和啟用範本參數
  範本參數是以 $*parameter*$ 格式來宣告。 例如：
@@ -53,17 +53,17 @@ ms.locfileid: "72646812"
 > [!NOTE]
 > 範本參數會區分大小寫。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`clrversion`|通用語言執行平台 (CLR) 的最新版本。|
 |`GUID [1-10]`|GUID；用來取代專案檔中的專案 GUID。 您最多可以指定 10 個唯一的 GUID (例如，`guid1)`。|
-|`itemname`|使用者在 [新增項目]  對話方塊中所提供的名稱。|
+|`itemname`|使用者在 [新增項目]**** 對話方塊中所提供的名稱。|
 |`machinename`|目前的電腦名稱 (例如，Computer01)。|
-|`projectname`|使用者在 [新增專案]  對話方塊中所提供的名稱。|
+|`projectname`|使用者在 [新增專案]**** 對話方塊中所提供的名稱。|
 |`registeredorganization`|來自 HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization 的登錄機碼值。|
 |`rootnamespace`|目前專案的根命名空間。 這個參數只適用於項目範本。|
-|`safeitemname`|使用者在 [新增項目]  對話方塊中所提供的名稱，其中已將所有 Unsafe 字元和空格移除。|
-|`safeprojectname`|使用者在 [新增專案]  對話方塊中所提供的名稱，其中已將所有 Unsafe 字元和空格移除。|
+|`safeitemname`|使用者在 [新增項目]**** 對話方塊中所提供的名稱，其中已將所有 Unsafe 字元和空格移除。|
+|`safeprojectname`|使用者在 [新增專案]**** 對話方塊中所提供的名稱，其中已將所有 Unsafe 字元和空格移除。|
 |`time`|目前的時間，格式為 DD/MM/YYYY 00:00:00。|
 |`SpecificSolutionName`|方案名稱。 若已核取 [建立方案目錄]，則 `SpecificSolutionName` 具有方案名稱。 若未核取 [建立方案目錄]，`SpecificSolutionName` 則為空白。|
 |`userdomain`|目前的使用者網域。|

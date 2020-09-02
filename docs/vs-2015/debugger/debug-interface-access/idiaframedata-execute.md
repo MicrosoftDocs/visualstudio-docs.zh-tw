@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4042cf58ee34b5f49df601b94e1110f03e0b6f5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197556"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-執行堆疊回溯，並傳回結果的堆疊查核行程框架介面中。  
+執行堆疊回溯，並且在堆疊引導框架介面中傳回結果。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,20 +35,20 @@ HRESULT execute ( 
   
 #### <a name="parameters"></a>參數  
  `frame`  
- [in][IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)保留狀態的畫面格暫存器的物件。  
+ 在保存框架暫存器狀態的 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) 物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示可能的傳回值，這個方法。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 下表顯示此方法可能傳回的值。  
   
 |值|描述|  
 |-----------|-----------------|  
-|E_DIA_INPROLOG|無法執行序言程式碼中的堆疊框架。|  
-|E_DIA_SYNTAX|剖析 畫面格程式中發生錯誤。|  
+|E_DIA_INPROLOG|在序言程式碼中，無法執行堆疊框架。|  
+|E_DIA_SYNTAX|在框架程式中發生剖析錯誤。|  
 |E_DIA_FRAME_ACCESS|無法存取暫存器或記憶體。|  
-|E_DIA_VALUE|在 值 （例如，除數為零） 的計算錯誤。|  
+|E_DIA_VALUE|計算值時發生錯誤 (例如，零除) 。|  
   
 ## <a name="remarks"></a>備註  
- 回溯堆疊偵錯期間，會呼叫這個方法。 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)用戶端應用程式接收到暫存器的更新，並提供所使用的方法實作物件`execute`方法。  
+ 在偵錯工具期間會呼叫這個方法，以回溯堆疊。 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)物件是由用戶端應用程式所執行，以接收暫存器的更新，並提供方法所使用的方法 `execute` 。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

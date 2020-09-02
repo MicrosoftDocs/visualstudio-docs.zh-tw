@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2 | Microsoft Docs
+title: IDebugMemoryCoNtext2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f5a0533e2f7ce50dce7ccdf1285e4ab28a4b7a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146360"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此介面代表執行所偵錯之程式的電腦的位址空間中的位置。  
+此介面代表執行正在進行偵錯工具之電腦的位址空間中的位置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,36 +30,36 @@ ms.locfileid: "68146360"
 IDebugMemoryContext2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- 偵錯引擎 (DE) 會實作這個介面來代表記憶體中的位址。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ Debug engine (DE) 會執行此介面來代表記憶體中的位址。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 呼叫[GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)或是[GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)傳回此介面。 此外，呼叫[新增](../../../extensibility/debugger/reference/idebugmemorycontext2-add.md)並[Subtract](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md)套用適當的算術運算後傳回的這個介面的新複本。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 對 [GetMemoryCoNtext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) 或 [GetMemoryCoNtext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md) 的呼叫會傳回這個介面。 此外，在套用適當的算數運算之後，對 [加入](../../../extensibility/debugger/reference/idebugmemorycontext2-add.md) 和 [減去](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md) 的呼叫會傳回這個介面的新複本。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDebugMemoryContext2`。  
+ 下表顯示的方法 `IDebugMemoryContext2` 。  
   
 |方法|描述|  
 |------------|-----------------|  
 |[GetName](../../../extensibility/debugger/reference/idebugmemorycontext2-getname.md)|取得此內容的使用者可顯示名稱。|  
 |[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)|取得描述此內容的資訊。|  
-|[[新增]](../../../extensibility/debugger/reference/idebugmemorycontext2-add.md)|將指定的值加入至目前內容的位址來建立新的內容。|  
-|[差集](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md)|減去指定的值，從目前內容的位址來建立新的內容。|  
-|[Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)|比較兩個內容的方式以比較旗標。|  
+|[加入](../../../extensibility/debugger/reference/idebugmemorycontext2-add.md)|將指定的值加入至目前內容的位址，以建立新的內容。|  
+|[減去](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md)|從目前內容的位址減去指定的值，以建立新的內容。|  
+|[比較](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)|比較旗標所指定的方式來比較兩個內容。|  
   
 ## <a name="remarks"></a>備註  
- Visual Studio**記憶體**視窗中呼叫[GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)若要取得`IDebugMemoryContext2`介面，其中包含評估的運算式所使用的記憶體位址。 此內容接著會傳遞給[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)並[WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)來指定要讀取或寫入的位址。  
+ Visual Studio 的 [ **記憶體** ] 視窗會呼叫 [GetMemoryCoNtext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) ，以取得 `IDebugMemoryContext2` 包含用於記憶體位址之評估運算式的介面。 此內容接著會傳遞至 [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) 和 [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md) ，以指定要讀取或寫入的位址。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
- [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)   
- [GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)   
+ [GetMemoryCoNtext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)   
+ [GetMemoryCoNtext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)   
  [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)   
  [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)

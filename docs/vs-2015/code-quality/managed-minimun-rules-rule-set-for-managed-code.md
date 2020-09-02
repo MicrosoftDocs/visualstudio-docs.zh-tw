@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 83f8654a3cca246fa4853add231008e2fadbfc1d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667905"
 ---
 # <a name="managed-minimun-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的 Managed 最小規則規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-受管理的最小規則會專注于程式碼中最嚴重的問題，包括潛在的安全性漏洞、應用程式損毀，以及其他重要的邏輯和設計錯誤。 您應該將此規則集包含在您為專案建立的任何自訂規則集中。
+受管理的最小規則會著重于程式碼中最嚴重的問題，包括潛在的安全性漏洞、應用程式損毀，以及其他重要的邏輯和設計錯誤。 您應該在為專案建立的任何自訂規則集中包含此規則集。
 
 |規則|描述|
 |----------|-----------------|

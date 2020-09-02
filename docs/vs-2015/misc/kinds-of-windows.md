@@ -1,5 +1,5 @@
 ---
-title: Windows 的種類 |Microsoft Docs
+title: Windows 類型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -23,11 +23,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d3e4bc3e44c25e9a3ecf6a681febfe87984a9c7e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646170"
 ---
 # <a name="kinds-of-windows"></a>視窗種類
-本內容已移至[自訂視窗版面](../ide/customizing-window-layouts-in-visual-studio.md)配置
+此內容已移至[自訂視窗版面](../ide/customizing-window-layouts-in-visual-studio.md)配置

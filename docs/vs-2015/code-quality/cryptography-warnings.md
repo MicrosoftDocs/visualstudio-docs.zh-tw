@@ -9,10 +9,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d9f5694ccf48615ebdf7157adc80543b0fbb71eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667679"
 ---
 # <a name="cryptography-warnings"></a>密碼編譯警告

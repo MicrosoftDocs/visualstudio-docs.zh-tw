@@ -1,5 +1,5 @@
 ---
-title: MESSAGETYPE | Microsoft Docs
+title: MESSAGETYPE |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c17564c992f4c8855d8a96165975a5d0e132755c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547204"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
@@ -51,36 +51,36 @@ public enum enum_MESSAGETYPE { 
   
 ## <a name="members"></a>成員  
  MT_OUTPUTSTRING  
- 表示訊息應傳送至輸出視窗。 這是從互斥`MT_MESSAGEBOX`。  
+ 指出訊息應該傳送至 [輸出] 視窗。 這與的互斥 `MT_MESSAGEBOX` 。  
   
  MT_MESSAGEBOX  
- 指示訊息應該會顯示訊息方塊。 這是從互斥`MT_OUTPUTSTRING`。  
+ 指出訊息應該會顯示在訊息方塊中。 這與的互斥 `MT_OUTPUTSTRING` 。  
   
  MT_TYPE_MASK  
- 要找出訊息的目的地的遮罩值。  
+ 用來隔離訊息目的地的遮罩值。  
   
  MT_REASON_EXCEPTION  
- 表示在發生例外狀況，正在顯示訊息方塊。 這是從互斥`MT_REASON_TRACEPOINT`。  
+ 表示顯示為例外狀況結果的訊息方塊。 這與的互斥 `MT_REASON_TRACEPOINT` 。  
   
  MT_REASON_TRACEPOINT  
- 表示顯示訊息方塊的結果叫用追蹤點。 這是互斥`MT_REASON_EXCEPTION`。  
+ 指出因達到追蹤點而顯示訊息方塊。 這對而言是互斥的 `MT_REASON_EXCEPTION` 。  
   
  MT_REASON_MASK  
- 要找出所顯示的訊息的原因的遮罩值。  
+ 用來隔離顯示訊息原因的遮罩值。  
   
 ## <a name="remarks"></a>備註  
- 會傳回這些值從[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)並[GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)方法。  
+ 這些值會從 [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) 和 [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) 方法傳回。  
   
- 其中一個原因值可以結合使用位元的輸出目的地值的其中一個`OR`。  
+ 其中一個原因值可以使用位來與其中一個輸出目的地值結合 `OR` 。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)   
  [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)

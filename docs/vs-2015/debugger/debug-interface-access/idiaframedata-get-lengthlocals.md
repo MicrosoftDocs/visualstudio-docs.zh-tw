@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da9c50b6c63176fdb3156b2daa15d6c0e1bbefbb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62552557"
 ---
-# <a name="idiaframedatagetlengthlocals"></a>IDiaFrameData::get_lengthLocals
+# <a name="idiaframedataget_lengthlocals"></a>IDiaFrameData::get_lengthLocals
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取推送到堆疊上的本機變數的位元組的數目。  
+抓取推播于堆疊上的本機變數位元組數目。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,13 +35,13 @@ HRESULT get_lengthLocals ( 
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回區域變數的位元組數目。  
+ 擴展傳回本機變數的位元組數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援這個屬性，則傳回。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法所傳回的值通常用於程式字串的解譯 (請參閱[idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)方法定義的程式字串)。  
+ 這個方法所傳回的值通常用於程式字串的解讀， (查看程式字串) 定義的 [IDiaFrameData：： get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) 方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

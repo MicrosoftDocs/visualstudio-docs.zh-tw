@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 44d816c7107d34cf81369a98ea0c435133e8e4b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551937"
 ---
 # <a name="zoom-control-threads-view"></a>縮放控制 (執行緒檢視)
@@ -31,8 +31,8 @@ ms.locfileid: "62551937"
 ## <a name="zooming-in-and-out-by-using-the-mouse-wheel"></a>使用滑鼠滾輪來縮放  
  按一下時間軸上的任一點 (確定滑鼠焦點在該點上)，然後按下 CTRL 並移動滑鼠滾輪 (向前放大、向後縮小)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [管理通道](../profiling/manage-channels.md)   
  [開啟/關閉測量模式](../profiling/measure-mode-on-off.md)   
- [執行緒檢視](../profiling/threads-view-parallel-performance.md)   
+ [執行緒視圖](../profiling/threads-view-parallel-performance.md)   
  [使用率導覽](../profiling/utilization-navigator.md)

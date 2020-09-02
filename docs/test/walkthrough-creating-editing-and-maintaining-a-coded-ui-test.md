@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592057"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>逐步解說：建立、編輯和維護自動程式化 UI 測試
@@ -30,11 +30,11 @@ ms.locfileid: "75592057"
 
 3. 在 [所有 WPF 控制項]**** 區段底下，將 [Button]****、[CheckBox]**** 和 [ProgressBar]**** 控制項拖曳至設計介面中的 [MainWindow]。
 
-4. 選取 [Button]**** 控制項。 在 [屬性]**** 視窗中，將 [Name]**** 屬性的值從 \<No Name> 變更為 button1。 然後將 [Content]**** 屬性的值從 Button 變更為 Start。
+4. 選取 [Button]**** 控制項。 在 [ **屬性** ] 視窗中，將 [ **名稱** ] 屬性的值從變更 \<No Name> 為 button1。 然後將 [Content]**** 屬性的值從 Button 變更為 Start。
 
-5. 選取 [ProgressBar]**** 控制項。 在 [屬性]**** 視窗中，將 [Name]**** 屬性的值從 \<No Name> 變更為 progressBar1。 然後將 [Maximum]**** 屬性的值從 **100** 變更為 **10000**。
+5. 選取 [ProgressBar]**** 控制項。 在 [ **屬性** ] 視窗中，將 [ **名稱** ] 屬性的值從變更 \<No Name> 為 progressBar1。 然後將 [Maximum]**** 屬性的值從 **100** 變更為 **10000**。
 
-6. 選取 [Checkbox]**** 控制項。 在 [屬性]**** 視窗中，將 [Name]**** 屬性的值從 \<No Name> 變更為 checkBox1，然後清除 [IsEnabled]**** 屬性。
+6. 選取 [Checkbox]**** 控制項。 在 [ **屬性** ] 視窗中，將 [ **名稱** ] 屬性的值從變更 \<No Name> 為 checkBox1，並清除 **IsEnabled** 屬性。
 
      ![簡單 WPF 應用程式](../test/media/codedui_wpfapp.png)
 
@@ -99,7 +99,7 @@ ms.locfileid: "75592057"
 
 1. 找出先前建立的 SimpleWPFApp 應用程式。
 
-2. 建立 SimpleWPFApp 應用程式的桌面捷徑。 按右鍵*SimpleWPFApp.exe*並選擇 **"複製**"。 在桌面上按一下滑鼠右鍵，然後選取 [貼上捷徑]****。
+2. 建立 SimpleWPFApp 應用程式的桌面捷徑。 以滑鼠右鍵按一下 *SimpleWPFApp.exe* ，然後選擇 [ **複製**]。 在桌面上按一下滑鼠右鍵，然後選取 [貼上捷徑]****。
 
     > [!TIP]
     > 使用應用程式的捷徑可以輕鬆新增或修改應用程式的自動程式化 UI 測試，因為它能讓您快速啟動應用程式。
@@ -111,7 +111,7 @@ ms.locfileid: "75592057"
 2. 搜尋並選取 [自動程式化 UI 測試專案]**** 專案範本，且繼續執行步驟直到專案建立完成。
 
    > [!NOTE]
-   > 如果看不到**編碼的 UI 測試專案**範本，則需要[安裝編碼的 UI 測試元件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。
+   > 如果您沒有看到 [自動程式化 **Ui 測試專案** ] 範本，則需要安裝自動程式化 [ui 測試元件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。
 
      名為 **CodedUITestProject1** 的新自動程式化 UI 測試專案會新增至方案，且 [產生自動程式化 UI 測試的程式碼]**** 對話方塊會隨即出現。
 
@@ -148,9 +148,9 @@ ms.locfileid: "75592057"
 
 1. 在 [方法名稱]**** 方塊中鍵入 **SimpleAppTest**，然後選擇 [新增和產生]****。 自動程式化 UI 測試幾分鐘後會出現並新增至方案。
 
-1. 關閉**UIMap - 編碼的 UI 測試產生器**。
+1. 關閉 **UIMap 自動程式碼 UI 測試**產生器。
 
-     *CodedUITest1.cs*檔將顯示在代碼編輯器中。
+     *CodedUITest1.cs*檔會出現在程式碼編輯器中。
 
 1. 儲存您的專案。
 
@@ -158,17 +158,17 @@ ms.locfileid: "75592057"
 
 1. 從 [測試]**** 功能表中，選擇 [Windows]****，然後選擇 [測試總管]****。
 
-2. 在 **"生成"** 功能表中，選擇 **"生成解決方案**"。
+2. 從 [ **組建** ] 功能表中，選擇 [ **建立方案**]。
 
-3. 在*CodedUITest1.cs*檔中，找到**CodeUITestMethod**方法，按右鍵並選擇**運行測試**，或從**測試資源管理器**運行測試 。
+3. 在 *CodedUITest1.cs* 檔案中，找出 [ **CodedUITestMethod** ] 方法，按一下滑鼠右鍵並選取 [ **執行測試**]，或從 **test Explorer**執行測試。
 
-   當自動程式化 UI 測試執行時，會顯示 SimpleWPFApp。 它會處理您在先前程序執行的步驟。 但是，當測試嘗試為核取方塊控制項選擇核取方塊時，"**測試結果"** 視窗顯示測試失敗。 這是因為這個測試嘗試選取核取方塊，但是一直到在進度列 100% 完成之後才發現核取方塊控制項已停用。 您可以使用各種可供自動程式碼 UI 測試使用的 `UITestControl.WaitForControlXXX()` 方法，來修正這個 (或類似) 問題。 下一個程序將示範使用 `WaitForControlEnabled()` 方法來修正導致這個測試失敗的問題。 如需詳細資訊，請參閱[讓自動程式化 UI 測試在播放期間等候特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。
+   當自動程式化 UI 測試執行時，會顯示 SimpleWPFApp。 它會處理您在先前程序執行的步驟。 不過，當測試嘗試選取核取方塊控制項的核取方塊時， **測試結果** 視窗會顯示測試失敗。 這是因為這個測試嘗試選取核取方塊，但是一直到在進度列 100% 完成之後才發現核取方塊控制項已停用。 您可以使用各種可供自動程式碼 UI 測試使用的 `UITestControl.WaitForControlXXX()` 方法，來修正這個 (或類似) 問題。 下一個程序將示範使用 `WaitForControlEnabled()` 方法來修正導致這個測試失敗的問題。 如需詳細資訊，請參閱[讓自動程式化 UI 測試在播放期間等候特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。
 
 ## <a name="edit-and-rerun-the-coded-ui-test"></a>編輯和重新執行自動程式化 UI 測試
 
-1. 在 **"測試資源管理器"** 視窗中，選擇失敗的測試，在**StackTrace**部分中，選擇指向**UIMap.SimpleAppTest（）** 的第一個連結。
+1. 在 [ **測試瀏覽器** ] 視窗中，選取失敗的測試，然後在 [ **StackTrace** ] 區段中，選擇第一個指向 **UIMap. SimpleAppTest ( # B1 **的連結。
 
-2. 此時*將打開UIMap.Designer.cs*檔，並在代碼中突出顯示錯誤點：
+2. *UIMap.Designer.cs*檔案隨即開啟，並在程式碼中反白顯示錯誤點：
 
     ```csharp
     // Select 'CheckBox' check box
@@ -178,9 +178,9 @@ ms.locfileid: "75592057"
 3. 若要修正這個問題，您可以使用 `WaitForControlEnabled()` 方法，讓自動程式碼 UI 測試先等候 [CheckBox] 控制項完成啟用後再繼續進行至這一行。
 
     > [!WARNING]
-    > 不要修改*UIMap.Designer.cs*檔。 每次您使用 [UIMap - 自動程式化 UI 測試產生器]**** 產生程式碼時，您所做的任何程式碼變更都會被覆寫。 如果您需要修改錄製的方法，請將它複製到 *UIMap.cs* 檔案並重新命名。 *UIMap.cs* 檔案可用來覆寫 *UIMapDesigner.cs* 檔案中的方法和屬性。 您必須移除 *CodedUITest.cs* 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。
+    > 請勿修改 *UIMap.Designer.cs* 檔。 每次您使用 [UIMap - 自動程式化 UI 測試產生器]**** 產生程式碼時，您所做的任何程式碼變更都會被覆寫。 如果您需要修改錄製的方法，請將它複製到 *UIMap.cs* 檔案並重新命名。 *UIMap.cs* 檔案可用來覆寫 *UIMapDesigner.cs* 檔案中的方法和屬性。 您必須移除 *CodedUITest.cs* 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。
 
-4. 在**解決方案資源管理器**中，在編碼的 UI 測試專案中找到*UIMap.uitest。*
+4. 在 **方案總管**中，找出自動程式碼 UI 測試專案中的 *UIMap. uitest* 。
 
 5. 開啟 *UIMap.uitest* 的捷徑功能表，並選擇 [開啟]****。
 
@@ -188,15 +188,15 @@ ms.locfileid: "75592057"
 
 6. 在 [UI 動作]**** 窗格中，選取您要移至 *UIMap.cs* 或 *UIMap.vb* 檔案的測試方法 (SimpleAppTest)。 將此方法移至不同的檔案即可新增自訂程式碼，重新編譯測試程式碼時不會覆寫此程式碼。
 
-7. 在 **"編碼的 UI 測試編輯器"** 工具列上選擇 **"移動代碼"** 按鈕。
+7. 選擇 [自動程式碼**UI 測試編輯器**] 工具列上的 [**移動程式碼**] 按鈕。
 
 8. Microsoft Visual Studio 對話方塊隨即顯示。 它會警告此方法將從 *UIMap.uitest* 檔案移至 *UIMap.cs* 檔案，而且您將無法再使用 [自動程式化 UI 測試編輯器] 編輯此方法。 選擇 [ **是**]。
 
-     測試方法會從 *UIMap.uitest* 檔案移除，不再顯示在 [UI 動作] 窗格中。 要編輯移動的測試檔案，請從**解決方案資源管理器**打開*UIMap.cs*檔。
+     測試方法會從 *UIMap.uitest* 檔案移除，不再顯示在 [UI 動作] 窗格中。 若要編輯移動的測試檔案，請從**方案總管**開啟*UIMap.cs*檔案。
 
 9. 在 Visual Studio 工具列上，選擇 [儲存]****。
 
-     測試方法的更新保存在*UIMap.Designer*檔中。
+     測試方法的更新會儲存在 *UIMap* 檔中。
 
     > [!WARNING]
     > 一旦移動方法，便無法使用 [自動程式碼 UI 測試編輯器] 來編輯方法。 您必須使用 [程式碼編輯器] 加入及維護自訂程式碼。
@@ -218,7 +218,7 @@ ms.locfileid: "75592057"
     uICheckBoxCheckBox.Checked = this.SimpleAppTestParams.UICheckBoxCheckBoxChecked;
     ```
 
-13. 在*CodedUITest1.cs*檔中，找到**CodeUITestMethod 方法**，注釋掉或重命名對原始 SimpleAppTest（） 方法的引用，然後將其替換為新的"修改的簡單應用程式測試"方法（）：
+13. 在 *CodedUITest1.cs* 檔案中，找出 **CodedUITestMethod** 方法，並將對原始 SimpleAppTest ( # A1 方法的參考加上批註或重新命名，然後將它取代為新的 ModifiedSimpleAppTest ( # A3：
 
     ```csharp
     [TestMethod]
@@ -235,23 +235,23 @@ ms.locfileid: "75592057"
 
 15. 以滑鼠右鍵按一下 **CodedUITestMethod** 方法，然後選取 [執行測試]****。
 
-16. 這一次，編碼的 UI 測試成功完成測試中的所有步驟，**並且"通過"** 將顯示在**測試資源管理器**視窗中。
+16. 這次 **自動程式碼** UI 測試成功完成測試中的所有步驟，而且 [ **測試瀏覽器** ] 視窗中會顯示 [成功]。
 
 ## <a name="refactor-a-control-in-simplewpfapp"></a>重構 SimpleWPFApp 中的控制項
 
-1. 在*MainWindow.xaml*檔中，在設計器中，選擇按鈕控制項。
+1. 在 *MainWindow* 的 [設計工具] 中，選取 [button] 控制項。
 
-2. 在 **"屬性"** 視窗的頂部，將 **"名稱**"屬性值從**按鈕 1**更改為**按鈕 A**。
+2. 在 [ **屬性** ] 視窗的頂端，將 [ **名稱** ] 屬性值從 **button1** 變更為 **buttonA**。
 
 3. 在 [ **建置** ] 功能表上，選擇 [ **建置方案**]。
 
-4. 在**測試資源管理器中**，運行**編碼UITestmethod1。**
+4. 在 [ **測試瀏覽器**] 中，執行 **CodedUITestMethod1**。
 
      測試失敗，因為自動程式化 UI 測試找不到 UIMap 中原始對應為 button1 的按鈕控制項。 重構是以這種方式影響自動程式化 UI 測試。
 
 5. 在 [測試總管]**** 視窗的 [StackTrace]**** 區段中，選擇 **UIMpa.ModifiedSimpleAppTest()** 旁的第一個連結。
 
-     將打開*UIMap.cs*檔。 錯誤點反白顯示在程式碼中：
+     *UIMap.cs*檔案隨即開啟。 錯誤點反白顯示在程式碼中：
 
     ```csharp
     // Click 'Start' button
@@ -260,13 +260,13 @@ ms.locfileid: "75592057"
 
      請注意，之前在這個程序中的這一行程式碼是使用 `UiStartButton`，這是重構前的 UIMap 名稱。
 
-     要更正此問題，可以使用**編碼的 UI 測試產生器**將重構控制項添加到 UIMap。 您可以將測試的程式碼更新為使用這個程式碼，如下一個程序中所示。
+     若要修正此問題，您可以使用自動程式 **代碼 UI 測試**產生器，將重構的控制項加入至 UIMap。 您可以將測試的程式碼更新為使用這個程式碼，如下一個程序中所示。
 
 ## <a name="map-refactored-control-rerun-the-test"></a>對應重構的控制項以重新執行測試
 
-1. 在*CodedUITest1.cs*檔中，在**CodeUITestMethod1（）** 方法中，按右鍵，選擇 **"為編碼 UI 測試生成代碼**"，然後選擇 **"使用編碼 UI 測試產生器**"。
+1. 在 *CodedUITest1.cs* 檔案的 **CodedUITestMethod1 ( # B1 ** 方法中，以滑鼠右鍵按一下，選取 [ **產生自動程式化 ui 測試的程式碼** ]，然後選擇 [使用自動程式化 **ui 測試**產生器]。
 
-     將顯示**UIMap - 編碼的 UI 測試產生器**。
+     **UIMap 自動程式碼 UI 測試**產生器隨即出現。
 
 2. 使用先前建立的桌面捷徑，執行先前建立的 SimpleWPFApp 應用程式。
 
@@ -288,9 +288,9 @@ ms.locfileid: "75592057"
 
 8. 關閉 SimpleWPFApp。
 
-9. 關閉**UIMap - 編碼的 UI 測試產生器**。
+9. 關閉 **UIMap 自動程式碼 UI 測試**產生器。
 
-10. 在**解決方案資源管理器**中，打開*UIMap.Designer.cs*檔。
+10. 在 **方案總管**中，開啟 *UIMap.Designer.cs* 檔案。
 
 11. 在 *UIMap.Designer.cs* 檔案中，找出 **UIStartButton1** 屬性。 請注意，`SearchProperties` 已設定為 `"buttonA"`：
 
@@ -314,7 +314,7 @@ ms.locfileid: "75592057"
 
      您現在可以修改自動程式碼 UI 測試來使用新對應的控制項。 如先前的程序所述，如果要在自動程式化 UI 測試中覆寫任何方法或屬性，必須在 *UIMap.cs* 檔案中這麼做。
 
-12. 在*UIMap.cs*檔中，添加一個建構函式並指定`SearchProperties``UIStartButton`屬性的屬性以使用`AutomationID`值`"buttonA":`
+12. 在 *UIMap.cs* 檔案中，新增函式並指定屬性 `SearchProperties` 的屬性， `UIStartButton` 以使用 `AutomationID` 屬性值為 `"buttonA":`
 
     ```csharp
     public UIMap()
@@ -325,7 +325,7 @@ ms.locfileid: "75592057"
 
 13. 在 [ **建置** ] 功能表上，選擇 [ **建置方案**]。
 
-14. 在**測試資源管理器中**，運行**編碼UITestmethod1。**
+14. 在 [ **測試瀏覽器**] 中，執行 **CodedUITestMethod1**。
 
      這次自動程式化 UI 測試成功完成測試中的所有步驟。 在 [測試結果]**** 視窗中，您將會看到 [成功]**** 的狀態。
 
@@ -341,4 +341,4 @@ ms.locfileid: "75592057"
 
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
 - [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+- [使用自動程式化 UI 測試編輯器來編輯自動程式碼 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

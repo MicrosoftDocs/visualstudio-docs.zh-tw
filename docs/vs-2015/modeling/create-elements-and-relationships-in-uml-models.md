@@ -1,5 +1,5 @@
 ---
-title: 在 UML 模型中建立元素和關聯性 |Microsoft Docs
+title: 在 UML 模型中建立專案和關聯性 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5ea066aa31cbc1f6408ee55c92a5ca761608f534
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667818"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>在 UML 模型中建立項目和關聯性
@@ -35,7 +35,7 @@ ms.locfileid: "72667818"
 ### <a name="obtain-the-owner-of-the-element-you-want-to-create"></a>取得您要建立之項目的擁有者
  模型會形成單一樹狀結構，如此除了模型根項目之外，每一個項目都會有一個擁有者。 模型根項目的類型為 `IModel`，它是屬於 `IPackage` 的類型。
 
- 如果您建立將在特殊圖表中顯示的項目，例如使用者目前的圖表，通常應該要在連結至該圖表的套件中建立該項目。 例如:
+ 如果您建立將在特殊圖表中顯示的項目，例如使用者目前的圖表，通常應該要在連結至該圖表的套件中建立該項目。 例如：
 
 ```
 IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
@@ -52,13 +52,13 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|
 
 ### <a name="invoke-the-create-method-on-the-owner"></a>在擁有者上叫用 Create 方法
- 方法名稱的格式為： `Create`*OwnedType* `()`。 例如:
+ 方法名稱的格式為： `Create` *OwnedType* `()` 。 例如：
 
 ```
 IUseCase usecase1 = linkedPackage.CreateUseCase();
 ```
 
- 某些類型的建立方法較為複雜，尤其是在循序圖中。 請參閱[使用 UML API 編輯 uml 順序圖表](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)。
+ 某些類型的建立方法較為複雜，尤其是在循序圖中。 請參閱 [使用 UML API 編輯 uml 順序圖表](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)。
 
  針對某些類型的項目，您可以在其存留期內使用 `SetOwner(newOwner)` 變更項目的擁有者。
 
@@ -93,14 +93,14 @@ using Microsoft.VisualStudio.Uml.Extensions;
 
 3. 設定關聯性的屬性，例如其名稱。
 
-     例如:
+     例如：
 
     ```
     IAssociation association = subject.Package.CreateAssociation(subject, observer);
     association .Name = "Observes";
     ```
 
-4. 設定關聯性各端的屬性。 總是會有兩個 `MemberEnds`。 例如:
+4. 設定關聯性各端的屬性。 總是會有兩個 `MemberEnds`。 例如：
 
     ```
     association .MemberEnds[0].Name = "subject";   // role name
@@ -129,5 +129,5 @@ anElement.Delete();
 
 - 也會刪除在圖表上代表該項目的每一個圖形。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [擴充 uml 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)[在圖表上顯示 uml 模型](../modeling/display-a-uml-model-on-diagrams.md)

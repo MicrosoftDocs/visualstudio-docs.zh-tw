@@ -8,23 +8,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591810"
 ---
 # <a name="t4-output-directive"></a>T4 輸出指示詞
 
-在 Visual Studio 文字模板中，`output` 指示詞是用來定義已轉換檔案的副檔名和編碼。
+在 Visual Studio 文字模板中，指示詞 `output` 是用來定義已轉換之檔案的副檔名和編碼。
 
- 例如，如果您的 Visual Studio 專案包含名為**MyTemplate.tt**的範本檔案，其中包含下列指示詞：
+ 例如，如果您的 Visual Studio 專案包含名為 **MyTemplate.tt** 的範本檔案，其中包含下列指示詞：
 
  `<#@output extension=".cs"#>`
 
- 然後 Visual Studio 會產生名為**MyTemplate.cs**的檔案
+ 然後 Visual Studio 會產生名為**MyTemplate.cs**的檔案。
 
- 在執行階段 (前置處理過的) 文字範本中，不需要 `output` 指示詞。 而是，您的應用程式會呼叫 `TextTransform()` 來取得產生的字串。 如需詳細資訊，請參閱[使用 T4 文字模板產生執行時間文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+ 在執行階段 (前置處理過的) 文字範本中，不需要 `output` 指示詞。 而是，您的應用程式會呼叫 `TextTransform()` 來取得產生的字串。 如需詳細資訊，請參閱 [使用 T4 文字模板的執行時間文字產生](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
 ## <a name="using-the-output-directive"></a>使用輸出指示詞
 
@@ -34,7 +34,7 @@ ms.locfileid: "75591810"
 
  在每個文字範本中，不應該有多個 `output` 指示詞。
 
-## <a name="extension-attribute"></a>擴充屬性
+## <a name="extension-attribute"></a>extension 屬性
  指定所產生文字輸出檔案的副檔名。
 
  預設值為 **.cs。**
@@ -68,6 +68,6 @@ ms.locfileid: "75591810"
 
  `utf-32`
 
- `0` （系統預設值）
+ `0` (系統預設) 
 
  一般而言，您可以使用 <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName> 所傳回之任何編碼的 WebName 字串或 CodePage 號碼。

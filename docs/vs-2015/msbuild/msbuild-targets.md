@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4cc8d9654fc2d277f0b7c69483ab46aa3209983
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157610"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目標
@@ -32,7 +32,7 @@ ms.locfileid: "68157610"
 </Target>  
 ```  
   
- 與 MSBuild 屬性相同，可以重新定義目標。 例如，套用至物件的  
+ 與 MSBuild 屬性相同，可以重新定義目標。 例如，  
   
 ```  
 <Target Name="AfterBuild" >  
@@ -63,7 +63,7 @@ ms.locfileid: "68157610"
   如需目標建置順序的詳細資料和詳細資訊，請參閱[目標建置順序](../msbuild/target-build-order.md)。  
   
 ## <a name="target-batching"></a>目標批次處理  
- 目標項目可能有 `Outputs` 屬性以 %(中繼資料) 形式指定中繼資料。 如果是這樣，MSBuild 會為每個唯一的中繼資料值執行一次目標，並分組或「批次處理」具有該中繼資料值的項目。 例如，套用至物件的  
+ 目標項目可能有 `Outputs` 屬性以 %(中繼資料) 形式指定中繼資料。 如果是這樣，MSBuild 會為每個唯一的中繼資料值執行一次目標，並分組或「批次處理」具有該中繼資料值的項目。 例如，  
   
 ```  
 <ItemGroup>  
