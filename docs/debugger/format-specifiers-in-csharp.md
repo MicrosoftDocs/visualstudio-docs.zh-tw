@@ -1,5 +1,5 @@
 ---
-title: 格式規範，在偵錯工具 (C#) |Microsoft Docs
+title: '偵錯工具中的格式規範 (c # ) |Microsoft Docs'
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -26,19 +26,19 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62849835"
 ---
-# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>C# 中的格式規範，在 Visual Studio 偵錯工具
-您可以變更在顯示值的格式**監看式**視窗使用格式規範。 您也可以使用中的格式規範**即時運算** 視窗中，**命令**視窗中[追蹤點](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，並在來源視窗中。 如果您暫停在這些視窗中的運算式，結果會出現在[DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)中指定的格式顯示。
+# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中 c # 的格式規範
+您可以使用格式規範變更在 [ **監看** 式] 視窗中顯示值的格式。 您也可以 **在 [即時** 運算] 視窗、 **命令** 視窗、追蹤 [點](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)和來源視窗中使用格式規範。 如果您在這些視窗中的運算式上暫停，結果會以指定的格式顯示顯示在  [資料提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) 中。
 
-若要使用的格式規範，請輸入變數的運算式後面接著一個逗號和適當的規範。
+若要使用格式規範，請輸入變數運算式，並在後面加上逗號和適當的規範。
 
 ## <a name="set-format-specifiers"></a>設定格式規範
-我們將使用下列的範例程式碼：
+我們將使用下列範例程式碼：
 
 ```csharp
 {
@@ -48,33 +48,33 @@ ms.locfileid: "62849835"
 }
 ```
 
-新增`my_var1`變數設為**監看式**偵錯時，視窗**偵錯** > **Windows** > **觀看** > **監看式 1**。 接下來，以滑鼠右鍵按一下變數，然後選取**十六進位顯示**。 現在**監看式**視窗會顯示了值 0x0065。 若要查看此值為十進位整數，而不是十六進位整數，加入十進位格式規範 **，d**中**名稱**的變數名稱後面的資料行。 **值**資料行現在會顯示**101**。
+將 `my_var1` 變數加入至 [**監看**式] 視窗（在進行調試時），並將它設為 [ **Debug**  >  ** **]  >  **Watch**  >  **Watch 1** 接下來，以滑鼠右鍵按一下變數，然後選取 [ **十六進位顯示**]。 現在 [ **監看** 式] 視窗會顯示值0x0065。 若要以十進位整數而非十六進位整數來查看此值，請在變數名稱後面的**名稱**資料行中，加入十進位格式規範**d** 。 **值**資料行現在會顯示**101**。
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
 
 ::: moniker range=">= vs-2019" 
 
-您可以檢視，並藉由在值後面附加一個逗號 （，） 中選取 從清單中可用的格式規範**監看式**視窗。 
+您可以在 [ **監看** 式] 視窗中附加逗號 (，) ，以從可用的格式規範清單中查看並選取。 
 
 ![FormatSpecCSharp](../debugger/media/vs-2019/format-specs-csharp.png "FormatSpecCSharp")
 
 ::: moniker-end
 
 ## <a name="format-specifiers"></a>格式規範
-下表描述C#格式規範，Visual Studio 偵錯工具。
+下表描述 Visual Studio 偵錯工具的 c # 格式規範。
 
-|指定名稱|格式|原始的監看值|顯示|
+|規範|格式|原始的監看值|顯示|
 |---------------|------------|--------------------------|--------------|
-|ac|強制關閉隱含評估屬性和隱含函式呼叫時很有用的運算式評估。|訊息「使用者已關閉隱含函式評估」|\<值>|
+|ac|強制評估運算式，這在隱含評估屬性和隱含函式呼叫關閉時很有用。|訊息「使用者已關閉隱含函式評估」|\<value>|
 |d|十進位整數|0x0065|101|
 |動態|使用動態檢視顯示指定的物件|顯示物件所有成員，包括動態檢視|只顯示動態檢視|
 |h|十六進位整數|61541|0x0000F065|
 |nq|沒有引號的字串|"My String"|My String|
-|nse|指定的行為，不是格式。 評估與 「 副作用 」 運算式。 如果運算式無法解譯，而且只可以解析 （例如函式呼叫），評估，您會改為看到錯誤。|N/A|N/A|
+|Nse|指定行為，而不是格式。 使用「沒有副作用」來評估運算式。 如果無法解讀運算式，而且只能由評估 (（例如函式呼叫) ）解析，則會改為看到錯誤。|N/A|N/A|
 |隱藏|顯示所有公用及非公用成員|顯示公用成員|顯示所有成員|
-|raw|以項目在原始項目節點中出現的形式顯示該項目。 只有在 Proxy 物件上有效。|字典\<T >|字典的未經處理檢視\<T >|
-|結果|搭配實作 IEnumerable 或 IEnumerable 型別的變數\<T >，通常是查詢運算式的結果。 只顯示包含查詢結果的成員。|顯示所有成員|顯示符合查詢條件的成員|
+|raw|以項目在原始項目節點中出現的形式顯示該項目。 只有在 Proxy 物件上有效。|字典\<T>|字典的原始觀點\<T>|
+|results|與實作為 IEnumerable 或 IEnumerable 之型別的變數搭配使用 \<T> ，通常是查詢運算式的結果。 只顯示包含查詢結果的成員。|顯示所有成員|顯示符合查詢條件的成員|
 
 ## <a name="see-also"></a>另請參閱
-- [監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)
+- [觀賞和快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)
 - [自動變數和區域變數視窗](../debugger/autos-and-locals-windows.md)

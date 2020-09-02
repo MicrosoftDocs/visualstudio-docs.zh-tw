@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94e2562e86af36d935679916c2bfb9669be1758d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62823477"
 ---
 # <a name="utilization-navigator"></a>使用率導覽
 您可以使用並行視覺化檢視中的使用率導覽，選取追蹤中的一段時間。 並行視覺化檢視會顯示目標處理序在一段時間內的 CPU 核心使用率。 這可讓您更輕鬆地檢查 CPU 使用率模式，也可讓您比較使用率資料與其他檢視中的資料。 使用率導覽會出現在並行視覺化檢視中的每個檢視頂端。 下圖顯示使用率導覽。
 
- ![顯示選定時間範圍的利用率導航器](../profiling/media/cvutilizationnavigator.png "CV利用導航器")利用率導航器和選定的時間範圍
+ ![顯示所選時間範圍的使用率](../profiling/media/cvutilizationnavigator.png ">cvutilizationnavigator") 導覽使用率導覽和所選時間範圍
 
  在圖中，以紅色矩形定義的選取間隔，稱為 thumb**。
 

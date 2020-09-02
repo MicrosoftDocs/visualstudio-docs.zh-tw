@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ae006788f2704459de7ef32f01385e196e28c04
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62553106"
 ---
 # <a name="cores-view-timeline"></a>核心檢視時間表
@@ -24,4 +24,4 @@ ms.locfileid: "62553106"
 
 ## <a name="see-also"></a>另請參閱
 - [核心檢視](../profiling/cores-view.md)
-- [縮放控制 (執行緒檢視)](../profiling/zoom-control-threads-view.md)
+- [縮放控制項 (執行緒視圖) ](../profiling/zoom-control-threads-view.md)

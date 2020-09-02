@@ -1,5 +1,5 @@
 ---
-title: 處理序檢視 |Microsoft Docs
+title: 進程視圖 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,41 +13,41 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99ba60021410f1965e05f7c5479231013d53cb71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62904221"
 ---
 # <a name="processes-view"></a>處理序檢視
-處理序檢視會顯示您系統上的所有作用中處理序樹狀結構。 會顯示處理序識別碼和模組名稱。 如果您想要檢查特定的系統程序，通常對應於執行程式，請使用處理序檢視。 處理程序會以模組名稱識別，或指定 [系統處理序]。
+[進程] 視圖會顯示您系統上所有使用中進程的樹狀結構。 系統會顯示處理序識別碼和模組名稱。 如果您想要檢查特定的系統進程（通常會對應至執行中的程式），請使用 [進程]。 系統會以模組名稱來識別處理常式，或將它們指定為「系統進程」。
 
- Microsoft Windows 支援多個處理序。 每個處理序可以有一或多個執行緒，以及每個執行緒可以有一個或多個相關聯的最上層視窗。 每個最上層的視窗可以擁有一系列的視窗。 A （+ 符號） 表示層級會摺疊。 摺疊的檢視是由每個處理序的一列所組成。 按一下 + 符號展開的層級。
+ Microsoft Windows 支援多個處理常式。 每個進程都可以有一或多個執行緒，而且每個執行緒都可以有一或多個相關聯的最上層視窗。 每個最上層視窗都可以擁有一系列的視窗。 + 符號展示層級已折迭。 折迭的視圖包含每個進程一行。 按一下 + 符號展開層級。
 
- 如果您想要檢查特定的系統程序，通常對應於執行程式，請使用處理序檢視。 處理程序會以模組名稱識別，或指定 [系統處理序]。 若要尋找處理程序，摺疊樹狀結構，並在清單中搜尋。
+ 如果您想要檢查特定的系統進程（通常會對應至執行中的程式），請使用 [進程]。 系統會以模組名稱來識別處理常式，或將它們指定為「系統進程」。 若要尋找處理常式，請折迭樹狀結構並搜尋清單。
 
 ## <a name="procedures"></a>程序
 
-#### <a name="to-open-the-processes-view"></a>若要開啟 處理序檢視
+#### <a name="to-open-the-processes-view"></a>開啟進程視圖
 
-1. 從**Spy**功能表上，選擇**處理序**。
+1. 從 **Spy** 功能表中，選擇 [ **進程**]。
 
-   ![Spy&#43; &#43;處理序檢視](../debugger/media/spy--_processes.png "Spy + + _Processes") Spy + + 處理序檢視
+   ![Spy&#43;&#43; 進程視圖](../debugger/media/spy--_processes.png "Spy + + _Processes") Spy + + 進程視圖
 
-   上圖顯示處理序檢視處理序和執行緒展開的節點。
+   上圖顯示展開進程和執行緒節點的進程視圖。
 
 ### <a name="in-this-section"></a>本節內容
- [搜尋處理序檢視中的處理序](../debugger/how-to-search-for-a-process-in-processes-view.md)說明如何在處理序檢視中找到特定的處理程序。
+ [在進程中搜尋進程視圖](../debugger/how-to-search-for-a-process-in-processes-view.md) 說明如何在 [進程] view 中尋找特定的進程。
 
- [顯示處理序屬性](../debugger/how-to-display-process-properties.md)說明如何顯示一則訊息的詳細資訊。
+ [顯示進程屬性](../debugger/how-to-display-process-properties.md) 說明如何顯示訊息的詳細資訊。
 
 ### <a name="related-sections"></a>相關章節
- [Spy + + 檢視](../debugger/spy-increment-views.md)說明 windows、 訊息、 處理程序和執行緒的 Spy + + 樹狀結構檢視。
+ [Spy + + Views](../debugger/spy-increment-views.md) 說明 windows、訊息、進程和執行緒的 Spy + + 樹狀檢視。
 
- [使用 Spy + +](../debugger/using-spy-increment.md)介紹 Spy + + 工具，並說明如何使用它。
+ [使用 Spy + +](../debugger/using-spy-increment.md) 介紹 Spy + + 工具，並說明其使用方式。
 
- [處理序搜尋對話方塊](../debugger/process-search-dialog-box.md)用來尋找特定的處理程序，在處理序檢視中的節點。
+ [進程搜尋對話方塊](../debugger/process-search-dialog-box.md) 用來尋找進程視圖中特定進程的節點。
 
- [處理序屬性對話方塊](../debugger/process-properties-dialog-box.md)顯示處理程序在處理序檢視中選取的屬性。
+ [進程屬性對話方塊](../debugger/process-properties-dialog-box.md) 顯示在 [進程] View 中選取之進程的屬性。
 
- [Spy + + 參考](../debugger/spy-increment-reference.md)包含各節描述每個 Spy + + 功能表和對話方塊方塊。
+ [Spy + + 參考](../debugger/spy-increment-reference.md) 包含描述每個 Spy + + 功能表和對話方塊的章節。

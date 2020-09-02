@@ -18,24 +18,24 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 651f981117cdd9b9cfb26aae61bbd4e2747e921d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900382"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 部署範例和逐步解說
-本章節包含範例應用程式、 程式碼範例和逐步解說，說明語法、 結構和技術來部署 Windows Form、 WPF 和主控台應用程式。
+本節包含範例應用程式、範例程式碼和逐步解說，說明用來部署 Windows Forms、WPF 和主控台應用程式的語法、結構和技術。
 
- 範例程式碼是為了提供指示，，因此不應用於已部署的解決方案，而不需要修改。 特別是，安全性必須納入大於的考量。
+ 範例程式碼適用于教學用途，不應該在未修改的情況下在部署的解決方案中使用。 尤其是，必須將安全性納入考慮。
 
 ## <a name="clickonce-deployment"></a>ClickOnce 部署
 
 |主題|描述|
 |-----------|-----------------|
 |[手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|說明如何使用.NET Framework 公用程式，部署 ClickOnce 應用程式。|
-|[下載依需求以 ClickOnce 部署 API 的組件](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|示範如何將標示為 「 選用 」 的應用程式中的某些組件，以及如何下載它們使用中的類別<xref:System.Deployment.Application>命名空間。|
-|[下載組件隨選與 ClickOnce 部署 API 使用設計工具](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|說明如何只有在應用程式第一次使用應用程式組件時，才下載這些組件。|
+|[使用 ClickOnce 部署 API 依需求下載元件](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|示範如何將應用程式中的特定元件標示為「選擇性」，以及如何使用命名空間中的類別來下載它們 <xref:System.Deployment.Application> 。|
+|[使用設計工具以 ClickOnce 部署 API 隨選下載元件](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|說明如何只有在應用程式第一次使用應用程式組件時，才下載這些組件。|
 
 ## <a name="see-also"></a>另請參閱
 

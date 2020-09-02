@@ -11,16 +11,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b7b5c49aea62ff1f7cb6416f7e02f7e7a3c0a166
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62561627"
 ---
-# <a name="computerinfo"></a>COMPUTER_INFO
+# <a name="computer_info"></a>COMPUTER_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-描述偵錯工具執行所在的電腦。  
+描述正在執行偵錯工具的電腦。  
   
 ## <a name="syntax"></a>語法  
   
@@ -47,20 +47,20 @@ public struct COMPUTER_INFO
  識別微處理器的架構。  
   
  wSuiteMask  
- 識別套件的遮罩。  
+ 識別套件遮罩。  
   
  dwOperatingSystemVersion  
  作業系統版本號碼。  
   
 ## <a name="remarks"></a>備註  
- 此結構由[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)方法。  
+ [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)方法會傳回這個結構。  
   
 ## <a name="requirements"></a>需求  
- 標頭：Msdbg.h  
+ 標頭： Msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

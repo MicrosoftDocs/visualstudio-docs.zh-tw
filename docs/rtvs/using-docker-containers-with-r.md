@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 8c5b4278ab50aac96703f03e74c014d29831f22e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62810127"
 ---
 # <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>搭配 Visual Studio R 工具使用 Docker 容器
@@ -22,7 +22,7 @@ Visual Studio R 工具 (RTVS) 版本 1.3 以後，與[適用於 Windows 的 Dock
 
 ## <a name="create-a-container"></a>建立容器
 
-1. 選取位於 [工作區]**** 視窗 ([R 工具]**** > [視窗]**** > [工作區]****) 右邊角落的 [容器]**** 按鈕。 若您尚未安裝適用於 Windows 的 Docker，視窗會通知您並提供下載連結。 安裝 Docker 可能需要重新啟動電腦。
+1. 選取位於 [工作區]**** 視窗 ([R 工具]**** > [視窗]**** > [工作區]****) 右邊角落的 [容器]**** 按鈕。 若您尚未安裝適用於 Windows 的 Docker，視窗會通知您並提供下載連結。 安裝 Docker 可能需要將電腦重新開機。
 
     ![Visual Studio R 工具 (VS2017) 中的 [工作區] 視窗及容器命令](media/container-workspaces-window.png)
 

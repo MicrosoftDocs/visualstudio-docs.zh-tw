@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b98098c0b6e1de9c3c2ceda5c644bc2957ab22bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62576404"
 ---
-# <a name="thunkordinal"></a>THUNK_ORDINAL
+# <a name="thunk_ordinal"></a>THUNK_ORDINAL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-將指定的 thunk 類型。  
+指定 Thunk 類型。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,33 +41,33 @@ typedef enum THUNK_ORDINAL { 
 } THUNK_ORDINAL;  
 ```  
   
-## <a name="elements"></a>項目  
+## <a name="elements"></a>元素  
  THUNK_ORDINAL_NOTYPE  
- 標準的 thunk。  
+ 標準 Thunk。  
   
  THUNK_ORDINAL_ADJUSTOR  
- A `this` adjustor thunk。  
+ `this`Adjustor Thunk。  
   
  THUNK_ORDINAL_VCALL  
- 虛擬呼叫 thunk。  
+ 虛擬呼叫 Thunk。  
   
  THUNK_ORDINAL_PCODE  
- P-程式碼 thunk。  
+ P-code Thunk。  
   
  THUNK_ORDINAL_LOAD  
- 延遲載入 thunk。  
+ 延遲載入 Thunk。  
   
  THUNK_ORDINAL_TRAMP_INCREMENTAL  
- 累加 trampoline thunk （trampoline thunk 用來從一個記憶體空間的呼叫退回到另一個）。  
+ 累加式 trampoline Thunk (trampoline Thunk 是用來將呼叫從某個記憶體空間彈跳至另一個) 。  
   
  THUNK_ORDINAL_TRAMP_BRANCHISLAND  
- 分支點 trampoline thunk。  
+ 分支點 trampoline Thunk。  
   
 ## <a name="remarks"></a>備註  
- 這個列舉型別中的值會傳回呼叫[idiasymbol:: Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)方法。  
+ 此列舉中的值會從 [IDiaSymbol：： get_ThunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) 方法的呼叫傳回。  
   
 ## <a name="requirements"></a>需求  
- 標頭： cvconst.h  
+ 標頭： cvconst。h  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   

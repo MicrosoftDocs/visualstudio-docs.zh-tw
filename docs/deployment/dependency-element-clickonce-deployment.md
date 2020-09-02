@@ -1,5 +1,5 @@
 ---
-title: '&lt;相依性&gt;項目 （ClickOnce 部署） |Microsoft Docs'
+title: '&lt;&gt; (ClickOnce 部署) 的相依性元素 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -26,14 +26,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 84e26a2d7dae70e0029817d4e6bb6e70dd53bce4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62928957"
 ---
-# <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;相依性&gt;項目 （ClickOnce 部署）
-識別要安裝，應用程式的版本和應用程式資訊清單的位置。
+# <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;&gt; (ClickOnce 部署) 的相依性元素
+識別要安裝的應用程式版本，以及應用程式資訊清單的位置。
 
 ## <a name="syntax"></a>語法
 
@@ -71,63 +71,63 @@ ms.locfileid: "62928957"
 ```
 
 ## <a name="elements-and-attributes"></a>元素和屬性
- `dependency`是必要元素。 它沒有任何屬性。 部署資訊清單可以有多個`dependency`項目。
+ `dependency`需要元素。 它沒有任何屬性。 部署資訊清單可以有多個 `dependency` 元素。
 
- `dependency`項目通常表示主應用程式的相依性組件內含[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 如果 Main.exe 應用程式會使用稱為 DotNetAssembly.dll 的組件，該組件必須在相依性一節中所列。 相依性，不過，也可以表示其他類型的相依性，例如倚賴特定版本的 common language runtime 中，在全域組件快取 (GAC) 中的組件或 COM 物件上。 因為它是一種自動部署技術，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]無法起始下載和安裝這些類型的相依性，但它不會防止應用程式執行如果一或多個指定的相依性不存在。
+ `dependency`元素通常會針對應用程式中包含的元件，表示主要應用程式的相依性 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 如果您的 Main.exe 應用程式使用稱為 DotNetAssembly.dll 的元件，則該元件必須列在相依性區段中。 不過，相依性也可以表示其他類型的相依性，例如特定 common language runtime 版本的相依性、全域組件快取中的元件 (GAC) 或 COM 物件。 因為這是一項無接觸的部署技術，所以 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 無法起始這些相依性類型的下載和安裝，但如果有一或多個指定的相依性不存在，就會導致應用程式無法執行。
 
 ## <a name="dependentassembly"></a>dependentAssembly
- 必要項。 這個項目包含`assemblyIdentity`項目。 下表顯示的屬性`dependentAssembly`支援。
+ 必要。 這個元素包含 `assemblyIdentity` 元素。 下表顯示支援的屬性 `dependentAssembly` 。
 
 | 屬性 | 描述 |
 |------------------| - |
-| `preRequisite` | 選擇性。 指定這個組件應該已經存在於 GAC。 有效值為 `true` 和 `false`。 如果`true`，和指定的組件不存在於 GAC、 應用程式無法執行。 |
-| `visible` | 選擇性。 識別最上層應用程式身分識別，包括其相依性。 在內部使用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]來管理應用程式存放區和啟用。 |
-| `dependencyType` | 必要項。 此相依性和應用程式之間的關係。 有效值為：<br /><br /> -   `install`. 元件代表目前的應用程式是個別安裝。<br />-   `preRequisite`. 目前的應用程式需要的元件。 |
+| `preRequisite` | 選擇性。 指定此元件應該已經存在於 GAC 中。 有效值為 `true` 和 `false`。 如果為 `true` ，而且指定的元件不存在於 GAC 中，應用程式將無法執行。 |
+| `visible` | 選擇性。 識別最上層應用程式身分識別，包括其相依性。 在內部用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 來管理應用程式的儲存和啟用。 |
+| `dependencyType` | 必要。 這項相依性和應用程式之間的關聯性。 有效值為：<br /><br /> -   `install`. 元件代表與目前應用程式不同的安裝。<br />-   `preRequisite`. 目前的應用程式需要元件。 |
 | `codebase` | 選擇性。 應用程式資訊清單的完整路徑。 |
-| `size` | 選擇性。 應用程式資訊清單，以位元組為單位的大小。 |
+| `size` | 選擇性。 應用程式資訊清單的大小（以位元組為單位）。 |
 
 ## <a name="assemblyidentity"></a>assemblyIdentity
- 必要項。 這個元素是 `dependentAssembly` 元素的子項。 內容`assemblyIdentity`必須如所述相同[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單。 下表顯示的屬性`assemblyIdentity`項目。
+ 必要。 這個元素是 `dependentAssembly` 元素的子項。 的內容 `assemblyIdentity` 必須與 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單中所述的內容相同。 下表顯示元素的屬性 `assemblyIdentity` 。
 
 |屬性|描述|
 |---------------|-----------------|
-|`Name`|必要項。 識別應用程式的名稱。|
-|`Version`|必要項。 指定的版本號碼的應用程式，以下列格式： `major.minor.build.revision`|
-|`publicKeyToken`|必要項。 指定 16 個字元的十六進位字串，表示簽署的應用程式或組件之公開金鑰的 sha-1 雜湊最後 8 個位元組。 用來登入的公用金鑰必須是 2048 位元或更高。|
-|`processorArchitecture`|必要項。 指定微處理器。 有效值`x86`用於 32 位元 Windows 和`IA64`的 64 位元 Windows。|
-|`Language`|選擇性。 識別組件的兩個組件語言代碼。 例如，EN-US，代表針對英文 （美國）。 預設為 `neutral`。 此元素為`asmv2`命名空間。|
-|`type`|選擇性。 針對回溯相容性 Windows-並存安裝技術。 唯一允許的值是`win32`。|
+|`Name`|必要。 識別應用程式的名稱。|
+|`Version`|必要。 以下列格式指定應用程式的版本號碼： `major.minor.build.revision`|
+|`publicKeyToken`|必要。 指定16個字元的十六進位字串，表示用來簽署應用程式或元件之公開金鑰的 SHA-1 雜湊最後8個位元組。 用來簽署的公開金鑰必須是2048位或更高的版本。|
+|`processorArchitecture`|必要。 指定微處理器。 有效的值 `x86` 適用于32位 windows 和 `IA64` 64 位 windows。|
+|`Language`|選擇性。 識別元件的兩個部分語言代碼。 例如，EN-US，代表美式英文 (US ) 。 預設為 `neutral`。 此元素位於 `asmv2` 命名空間中。|
+|`type`|選擇性。 可回溯相容于 Windows 並存安裝技術。 唯一允許的值為 `win32` 。|
 
 ## <a name="hash"></a>雜湊
- `hash`項目是選用的子系`file`項目。 `hash` 項目沒有任何屬性。
+ `hash`元素是元素的選擇性子專案 `file` 。 `hash` 項目沒有任何屬性。
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用應用程式中的所有檔案的演算法雜湊做為安全性檢查，以確保沒有任何檔案已在部署後變更。 如果`hash`就不會包含項目，將不會執行這項檢查。 因此，省略`hash`不建議項目。
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用應用程式中所有檔案的演算法雜湊做為安全性檢查，以確保在部署後不會變更任何檔案。 如果 `hash` 未包含此元素，則不會執行這項檢查。 因此， `hash` 不建議省略元素。
 
 ## <a name="dsigtransforms"></a>dsig:Transforms
- `dsig:Transforms`項目是必要的子系`hash`項目。 `dsig:Transforms` 項目沒有任何屬性。
+ 專案 `dsig:Transforms` 是專案的必要子項目 `hash` 。 `dsig:Transforms` 項目沒有任何屬性。
 
 ## <a name="dsigtransform"></a>dsig:Transform
- `dsig:Transform`項目是必要的子系`dsig:Transforms`項目。 下表顯示的屬性`dsig:Transform`項目。
+ 專案 `dsig:Transform` 是專案的必要子項目 `dsig:Transforms` 。 下表顯示元素的屬性 `dsig:Transform` 。
 
 | 屬性 | 描述 |
 |-------------| - |
-| `Algorithm` | 用來計算此檔案的摘要演算法。 目前所使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`urn:schemas-microsoft-com:HashTransforms.Identity`。 |
+| `Algorithm` | 用來計算此檔案摘要的演算法。 目前唯一使用的值 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 為 `urn:schemas-microsoft-com:HashTransforms.Identity` 。 |
 
 ## <a name="dsigdigestmethod"></a>dsig:DigestMethod
- `dsig:DigestMethod`項目是必要的子系`hash`項目。 下表顯示的屬性`dsig:DigestMethod`項目。
+ 專案 `dsig:DigestMethod` 是專案的必要子項目 `hash` 。 下表顯示元素的屬性 `dsig:DigestMethod` 。
 
 | 屬性 | 描述 |
 |-------------| - |
-| `Algorithm` | 用來計算此檔案的摘要演算法。 目前所使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`http://www.w3.org/2000/09/xmldsig#sha1`。 |
+| `Algorithm` | 用來計算此檔案摘要的演算法。 目前唯一使用的值 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 為 `http://www.w3.org/2000/09/xmldsig#sha1` 。 |
 
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue
- `dsig:DigestValue`項目是必要的子系`hash`項目。 `dsig:DigestValue` 項目沒有任何屬性。 它的值是計算的雜湊指定的檔案。
+ 專案 `dsig:DigestValue` 是專案的必要子項目 `hash` 。 `dsig:DigestValue` 項目沒有任何屬性。 它的文字值是指定之檔案的計算雜湊。
 
 ## <a name="remarks"></a>備註
- 部署資訊清單通常會有單一`assemblyIdentity`可識別的名稱和版本的應用程式資訊清單的項目。
+ 部署資訊清單通常會有一個 `assemblyIdentity` 識別應用程式資訊清單名稱和版本的單一元素。
 
 ## <a name="example"></a>範例
- 下列程式碼範例所示`dependency`中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署資訊清單。
+ 下列程式碼範例顯示 `dependency` [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署資訊清單中的元素。
 
 ```xml
 <!-- Identify the assembly dependencies -->
@@ -146,7 +146,7 @@ ms.locfileid: "62928957"
 ```
 
 ## <a name="example"></a>範例
- 下列程式碼範例會指定已安裝在 GAC 中的組件相依性。
+ 下列程式碼範例會指定已安裝在 GAC 中之元件的相依性。
 
 ```xml
 <dependency>
@@ -157,7 +157,7 @@ ms.locfileid: "62928957"
 ```
 
 ## <a name="example"></a>範例
- 下列程式碼範例會指定特定版本的通用語言執行平台上的相依性。
+ 下列程式碼範例會針對特定版本的 common language runtime 指定相依性。
 
 ```xml
 <dependency>
@@ -182,4 +182,4 @@ ms.locfileid: "62928957"
 
 ## <a name="see-also"></a>另請參閱
 - [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)
-- [\<相依性 > 項目](../deployment/dependency-element-clickonce-application.md)
+- [\<dependency> 元素](../deployment/dependency-element-clickonce-application.md)

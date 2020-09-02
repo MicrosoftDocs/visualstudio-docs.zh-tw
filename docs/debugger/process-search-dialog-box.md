@@ -1,5 +1,5 @@
 ---
-title: 處理序搜尋對話方塊 |Microsoft Docs
+title: 進程搜尋對話方塊 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,32 +11,32 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 190ec35d014e6b443a9f80bf79433ac14b8fb8ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62903765"
 ---
 # <a name="process-search-dialog-box"></a>處理序搜尋對話方塊
-使用此對話方塊，即可尋找並選取特定的處理序中的節點[處理序檢視](../debugger/processes-view.md)。 若要顯示此對話方塊中，焦點移至**處理序**檢視 視窗中。 然後選擇**尋找處理序**從**搜尋**功能表。
+使用這個對話方塊，即可在 [ [進程] View](../debugger/processes-view.md)中尋找並選取特定進程的節點。 若要顯示此對話方塊，請將焦點移至 [ **進程** ] 視圖視窗。 然後選擇 [**搜尋**] 功能表中的 [**尋找進程**]。
 
  可用的設定如下：
 
- **處理序**来搜尋的處理序識別碼。
+ **進程** 要搜尋的處理序識別碼。
 
- **模組**模組字串來搜尋。
+ **課程模組** 要搜尋的模組字串。
 
- **搜尋方向，增加或相應減少**初始方向搜尋。
+ **向上或向下搜尋方向** 搜尋的初始方向。
 
 ## <a name="related-sections"></a>相關章節
- [搜尋處理序檢視中的處理序](../debugger/how-to-search-for-a-process-in-processes-view.md)說明如何在處理序檢視中找到特定的處理程序。
+ [在進程中搜尋進程視圖](../debugger/how-to-search-for-a-process-in-processes-view.md) 說明如何在 [進程] view 中尋找特定的進程。
 
- [處理序檢視](../debugger/processes-view.md)顯示作用中的程序的樹狀結構檢視。
+ [進程視圖](../debugger/processes-view.md) 顯示現用進程的樹狀檢視。
 
- [Spy + + 檢視](../debugger/spy-increment-views.md)說明 windows、 訊息、 處理程序和執行緒的 Spy + + 樹狀結構檢視。
+ [Spy + + Views](../debugger/spy-increment-views.md) 說明 windows、訊息、進程和執行緒的 Spy + + 樹狀檢視。
 
- [使用 Spy + +](../debugger/using-spy-increment.md)介紹 Spy + + 工具，並說明如何使用它。
+ [使用 Spy + +](../debugger/using-spy-increment.md) 介紹 Spy + + 工具，並說明其使用方式。
 
- [處理序屬性對話方塊](../debugger/process-properties-dialog-box.md)用來顯示處理程序檢視中選取處理序的屬性。
+ [進程屬性對話方塊](../debugger/process-properties-dialog-box.md) 用來顯示在 [進程] view 中選取之進程的屬性。
 
- [Spy + + 參考](../debugger/spy-increment-reference.md)包含各節描述每個 Spy + + 功能表和對話方塊方塊。
+ [Spy + + 參考](../debugger/spy-increment-reference.md) 包含描述每個 Spy + + 功能表和對話方塊的章節。

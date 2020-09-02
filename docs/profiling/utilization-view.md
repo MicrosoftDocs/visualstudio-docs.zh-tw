@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 926c67261f91aa8787d9be4a33dadbd3a890c568
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62823516"
 ---
 # <a name="utilization-view"></a>使用率檢視
@@ -24,9 +24,9 @@ ms.locfileid: "62823516"
 
  ![CPU 使用率檢視](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")
 
- 圖形顯示目標處理序、閒置處理序及系統處理序所使用的時間 (在 x 軸上) 與平均邏輯核心。 (閒置處理程序顯示閒置的核心。 系統進程是 Windows 中可以代表其他進程執行工作的過程。在系統上運行的剩餘進程考慮任何剩餘內核的利用率。
+ 圖形顯示目標處理序、閒置處理序及系統處理序所使用的時間 (在 x 軸上) 與平均邏輯核心。 (閒置處理程序顯示閒置的核心。 系統進程是 Windows 中的進程，可代表其他進程執行工作。 ) 在系統帳戶上執行的其餘進程，以取得任何剩餘核心的使用率。
 
- 邏輯核心數目會顯示在 y 軸上。 Windows 會將硬體中的同步多執行緒支援視為邏輯核心 (例如，超執行緒技術)。 因此，在每個核心支援兩個硬體執行緒的四核心處理器系統上，會顯示為 8 個邏輯核心系統。 這也適用於核心檢視。 有關詳細資訊，請參閱[Cores 視圖](../profiling/cores-view.md)。
+ 邏輯核心數目會顯示在 y 軸上。 Windows 會將硬體中的同步多執行緒支援視為邏輯核心 (例如，超執行緒技術)。 因此，在每個核心支援兩個硬體執行緒的四核心處理器系統上，會顯示為 8 個邏輯核心系統。 這也適用於核心檢視。 如需詳細資訊，請參閱 [核心觀點](../profiling/cores-view.md)。
 
  GPU 活動圖會顯示在一段時間內處於使用中的 DirectX 引擎數。  如果引擎正在處理 DMA 封包，即為使用中。  該圖不會顯示特定的 DirectX 引擎 (例如，3D 引擎、視訊引擎及其他引擎)。
 
@@ -46,8 +46,8 @@ ms.locfileid: "62823516"
  如果您使用 C++ AMP 或 DirectX 來使用 GPU，您可能會想要識別使用中的 GPU 引擎數或意外閒置 GPU 的區域。
 
 ## <a name="zoom"></a>Zoom
- 若要放大 CPU 使用率圖形或 GPU 活動圖，請選取一個區段或使用圖形上方的 [縮放] 滑桿工具。 當您切換至其他檢視時，縮放設定會保持不變。 若要再次縮小，請使用 [縮放] 滑桿工具。 您還可以使用**Ctrl**+**滾動進行**縮放。
+ 若要放大 CPU 使用率圖形或 GPU 活動圖，請選取一個區段或使用圖形上方的 [縮放] 滑桿工具。 當您切換至其他檢視時，縮放設定會保持不變。 若要再次縮小，請使用 [縮放] 滑桿工具。 您也可以使用**Ctrl** + **滾輪**來縮放。
 
 ## <a name="see-also"></a>另請參閱
 - [並行視覺化檢視](../profiling/concurrency-visualizer.md)
-- [核心視圖](../profiling/cores-view.md)
+- [核心觀點](../profiling/cores-view.md)

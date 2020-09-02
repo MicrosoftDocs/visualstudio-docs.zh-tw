@@ -1,5 +1,5 @@
 ---
-title: HOW TO：顯示處理序屬性 |Microsoft Docs
+title: 如何：顯示進程屬性 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,21 +12,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 59cdf89d1427aa8a080ed119831d7775ca750111
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62575854"
 ---
-# <a name="how-to-display-process-properties"></a>HOW TO：顯示處理序屬性
+# <a name="how-to-display-process-properties"></a>如何：顯示處理序屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-若要深入了解處理程序中所列[處理序檢視](../debugger/processes-view.md)，使用[處理序屬性對話方塊](../debugger/process-properties-dialog-box.md)。  
+若要深入瞭解 [ [進程視圖](../debugger/processes-view.md)] 中所列的進程，請使用 [ [處理常式屬性] 對話方塊](../debugger/process-properties-dialog-box.md)。  
   
-### <a name="to-open-a-process-properties-dialog-box"></a>若要開啟 處理序屬性對話方塊  
+### <a name="to-open-a-process-properties-dialog-box"></a>開啟進程屬性對話方塊  
   
-1. 從樹狀結構中顯示選取的處理序**處理序檢視**。  
+1. 從樹狀結構中 **顯示的樹狀**結構中選取進程。  
   
-2. 從**檢視**功能表上，選擇**屬性**。  
+2. 從 **[檢視]** 功能表中選擇 **[屬性]**。  
   
-   屬性 對話方塊不是強制回應，因此您可以按一下 檢視 視窗中的另一個項目，並在對話方塊中會顯示在選取的項目上的資訊。
+   [屬性] 對話方塊並非強制回應，因此您可以按一下 [視圖] 視窗中的另一個專案，對話方塊將會顯示所選取專案的相關資訊。

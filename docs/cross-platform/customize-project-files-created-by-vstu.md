@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: ad52e9f97dfbb9a5d0b3d65085c6c2627ccb2232
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62819525"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>自訂 VSTU 所建立的專案檔

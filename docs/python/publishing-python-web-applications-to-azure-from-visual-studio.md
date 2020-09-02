@@ -12,13 +12,13 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: c3c8d6c16f2f7e432b6b5e988bf63521f3dfc8c0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62784111"
 ---
-# <a name="publish-to-azure-app-service"></a>發佈到 Azure App Service
+# <a name="publish-to-azure-app-service"></a>發佈至 Azure App Service
 
 目前在適用於 Linux 的 Azure App Service 上支援 Python，而且您可以使用 [Git 部署](#publish-to-app-service-on-linux-using-git-deploy)和[容器](#publish-to-app-service-on-linux-using-containers)發佈應用程式，如本文中所述。
 

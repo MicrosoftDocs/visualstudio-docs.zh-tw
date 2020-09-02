@@ -1,5 +1,5 @@
 ---
-title: CRT 偵錯技術 |Microsoft Docs
+title: CRT 調試技術 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 88cdc78fd739de412b4cf796d0ca7a42f9174e0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62564030"
 ---
 # <a name="crt-debugging-techniques"></a>CRT 偵錯技術
@@ -56,5 +56,5 @@ ms.locfileid: "62564030"
 
 ## <a name="related-sections"></a>相關章節
 
-- [偵錯機器碼](../debugger/debugging-native-code.md)-適用於 C 討論一些常見的偵錯問題和技術和C++應用程式。
-- [偵錯工具安全性](../debugger/debugger-security.md)-提供更安全偵錯的建議。
+- [偵錯工具代碼](../debugger/debugging-native-code.md) -討論 C 和 c + + 應用程式的一些常見的偵錯工具問題和技術。
+- [偵錯工具安全性](../debugger/debugger-security.md) ：提供更安全的偵測建議。

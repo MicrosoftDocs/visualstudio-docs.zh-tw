@@ -1,5 +1,5 @@
 ---
-title: 執行緒檢視 |Microsoft Docs
+title: 執行緒視圖 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,37 +13,37 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 82c8bb229a0781f299b5fa8c3a8c73670be8c4fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929951"
 ---
 # <a name="threads-view"></a>執行緒檢視
-[執行緒] 檢視是您的系統上的 windows 相關聯的所有執行緒的簡單列表。 顯示執行緒 ID 和每個執行緒的模組名稱。 處理程序不包含在內，但您可以輕鬆地找到擁有所選取之執行緒的處理序。
+[執行緒] 視圖是與您系統上的 windows 相關聯之所有線程的一般清單。 會顯示每個執行緒的執行緒識別碼和模組名稱。 進程不包含在內，但您可以輕鬆地找到擁有所選執行緒的進程。
 
 ## <a name="procedures"></a>程序
 
-#### <a name="to-open-the-threads-view"></a>若要開啟 [執行緒] 檢視
+#### <a name="to-open-the-threads-view"></a>若要開啟執行緒視圖
 
-1. 從**Spy**功能表上，選擇**執行緒**。
+1. 從 **Spy** 功能表中，選擇 [ **執行緒**]。
 
-   ![Spy&#43; &#43;執行緒檢視](../debugger/media/spy--_threads.png "Spy + + _Threads") Spy + + 執行緒檢視
+   ![Spy&#43;&#43; 執行緒視圖](../debugger/media/spy--_threads.png "Spy + + _Threads") Spy + + 執行緒視圖
 
-   上圖顯示 [執行緒] 檢視。
+   上圖顯示執行緒的觀點。
 
 ## <a name="in-this-section"></a>本節內容
- [搜尋 [執行緒] 檢視中的執行緒](../debugger/how-to-search-for-a-thread-in-threads-view.md)說明如何在執行緒檢視中找到特定的執行緒。
+ [線上程視圖中搜尋執行緒](../debugger/how-to-search-for-a-thread-in-threads-view.md) 說明如何線上程視圖中尋找特定的執行緒。
 
- [顯示執行緒屬性](../debugger/how-to-display-thread-properties.md)說明如何顯示執行緒的詳細資訊。
+ [顯示執行緒屬性](../debugger/how-to-display-thread-properties.md) 說明如何顯示有關執行緒的詳細資訊。
 
 ## <a name="related-sections"></a>相關章節
- [Spy + + 檢視](../debugger/spy-increment-views.md)說明 windows、 訊息、 處理程序和執行緒的 Spy + + 樹狀結構檢視。
+ [Spy + + Views](../debugger/spy-increment-views.md) 說明 windows、訊息、進程和執行緒的 Spy + + 樹狀檢視。
 
- [使用 Spy + +](../debugger/using-spy-increment.md)介紹 Spy + + 工具，並說明如何使用它。
+ [使用 Spy + +](../debugger/using-spy-increment.md) 介紹 Spy + + 工具，並說明其使用方式。
 
- [執行緒搜尋對話方塊](../debugger/thread-search-dialog-box.md)用來為特定執行緒在執行緒檢視中尋找的節點。
+ [執行緒搜尋對話方塊](../debugger/thread-search-dialog-box.md) 用來尋找執行緒視圖中特定執行緒的節點。
 
- [執行緒屬性對話方塊](../debugger/message-properties-dialog-box.md)顯示執行緒在執行緒檢視中選取的屬性或訊息檢視。
+ [執行緒屬性對話方塊](../debugger/message-properties-dialog-box.md) 顯示在 [執行緒] 或 [訊息] 視圖中選取的執行緒屬性。
 
- [Spy + + 參考](../debugger/spy-increment-reference.md)包含各節描述每個 Spy + + 功能表和對話方塊方塊。
+ [Spy + + 參考](../debugger/spy-increment-reference.md) 包含描述每個 Spy + + 功能表和對話方塊的章節。

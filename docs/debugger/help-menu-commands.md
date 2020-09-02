@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c58bc069b3d38c4086a5642d13bb907528923bb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62895096"
 ---
 # <a name="help-menu-commands"></a>說明功能表命令
-**協助**功能表提供的命令來開啟說明檔案。
+[ **說明** ] 功能表提供開啟說明檔的命令。
 
- **索引**開啟 Spy + + 說明 內容畫面。
+ **索引** 開啟 Spy + + 說明的 [內容] 畫面。
 
- **使用說明**開啟說明檔案，描述如何使用說明。
+ **使用** 說明開啟描述如何使用說明的說明檔。
 
  **關於 Spy + +** 顯示 Spy + + 的軟體版本和著作權資訊。

@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 8b4b7a05de87ab8b70046b51fe9f256f05d3aee5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62572281"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (Windows PowerShell 指令碼)
@@ -30,82 +30,82 @@ Publish-WebApplicationVM
 -Verbose
 ```
 
-### <a name="configuration"></a>Configuration
+### <a name="configuration"></a>組態
 描述部署詳細資訊的 JSON 組態檔路徑。
 
-| 別名 | none |
+| 別名 | 無 |
 | --- | --- |
-| 是否為必要項？ |true |
-| 位置 |已命名 |
-| 預設值 |none |
-| 接受管線輸入？ |False |
-| 接受萬用字元？ |False |
+| 必要？ |true |
+| 位置 |具名 |
+| 預設值 |無 |
+| 接受管線輸入？ |false |
+| 接受萬用字元？ |false |
 
 ### <a name="subscriptionname"></a>SubscriptionName
 要建立虛擬機器的 Azure 訂用帳戶名稱。
 
-| 別名 | none |
+| 別名 | 無 |
 | --- | --- |
-| 是否為必要項？ |False |
-| 位置 |已命名 |
+| 必要？ |false |
+| 位置 |具名 |
 | 預設值 |使用訂用帳戶檔案中的第一個訂用帳戶 |
-| 接受管線輸入？ |False |
-| 接受萬用字元？ |False |
+| 接受管線輸入？ |false |
+| 接受萬用字元？ |false |
 
 ### <a name="webdeploypackage"></a>WebDeployPackage
-要發佈至虛擬機器的 Web 部署封裝路徑。 您可以使用 Visual Studio 的 [發佈 Web] 精靈來建立此封裝。 請參閱[如何：在 Visual Studio 中建立 Web 部署套件](https://msdn.microsoft.com/library/dd465323.aspx)。
+要發佈至虛擬機器的 Web 部署封裝路徑。 您可以使用 Visual Studio 的 [發佈 Web] 精靈來建立此封裝。 請參閱 [如何：在 Visual Studio 中建立 Web 部署封裝](https://msdn.microsoft.com/library/dd465323.aspx)。
 
-| 別名 | none |
+| 別名 | 無 |
 | --- | --- |
-| 是否為必要項？ |False |
-| 位置 |已命名 |
-| 預設值 |none |
-| 接受管線輸入？ |False |
-| 接受萬用字元？ |False |
+| 必要？ |false |
+| 位置 |具名 |
+| 預設值 |無 |
+| 接受管線輸入？ |false |
+| 接受萬用字元？ |false |
 
 ### <a name="allowuntrusted"></a>AllowUntrusted
 如果為 true，允許使用未受信任的根授權單位所簽署的憑證。
 
-| 別名 | none |
+| 別名 | 無 |
 | --- | --- |
-| 是否為必要項？ |False |
-| 位置 |已命名 |
-| 預設值 |False |
-| 接受管線輸入？ |False |
-| 接受萬用字元？ |False |
+| 必要？ |false |
+| 位置 |具名 |
+| 預設值 |false |
+| 接受管線輸入？ |false |
+| 接受萬用字元？ |false |
 
 ### <a name="vmpassword"></a>VMPassword
 虛擬機器帳戶的認證。 範例：-VMPassword @{Name = "admin"; Password = "password"}
 
-| 別名 | none |
+| 別名 | 無 |
 | --- | --- |
-| 是否為必要項？ |False |
-| 位置 |已命名 |
-| 預設值 |none |
-| 接受管線輸入？ |False |
-| 接受萬用字元？ |False |
+| 必要？ |false |
+| 位置 |具名 |
+| 預設值 |無 |
+| 接受管線輸入？ |false |
+| 接受萬用字元？ |false |
 
 ### <a name="databaseserverpassword"></a>DatabaseServerPassword
 Azure 中的 SQL 資料庫認證。 範例：-DatabaseServerPassword @{Name = "admin"; Password = "password"}
 
-| 別名 | none |
+| 別名 | 無 |
 | --- | --- |
-| 是否為必要項？ |False |
-| 位置 |已命名 |
-| 預設值 |none |
-| 接受管線輸入？ |False |
-| 接受萬用字元？ |False |
+| 必要？ |false |
+| 位置 |具名 |
+| 預設值 |無 |
+| 接受管線輸入？ |false |
+| 接受萬用字元？ |false |
 
 ### <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
 如果為 true，將訊息從指令碼列印至輸出資料流。
 
-| 別名 | none |
+| 別名 | 無 |
 | --- | --- |
-| 是否為必要項？ |False |
-| 位置 |已命名 |
-| 預設值 |False |
-| 接受管線輸入？ |False |
-| 接受萬用字元？ |False |
+| 必要？ |false |
+| 位置 |具名 |
+| 預設值 |false |
+| 接受管線輸入？ |false |
+| 接受萬用字元？ |false |
 
 ## <a name="remarks"></a>備註
 如需如何使用指令碼來建立開發和測試環境的完整說明，請參閱 [使用 Windows PowerShell 指令碼來發佈至開發和測試環境](vs-azure-tools-publishing-using-powershell-scripts.md)。

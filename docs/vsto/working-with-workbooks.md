@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3d4d6eec08ae75efbd9104ace25409d336e45f40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62814684"
 ---
 # <a name="work-with-workbooks"></a>使用活頁簿
@@ -34,12 +34,12 @@ ms.locfileid: "62814684"
 |取得最近使用之活頁簿檔案的集合。|[如何：以程式設計方式列出最近使用的活頁簿檔案](../vsto/how-to-programmatically-list-recently-used-workbook-files.md)|
 |將文字檔開啟為活頁簿。|[如何：以程式設計方式將文字檔開啟為活頁簿](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)|
 
- 如需有關 Excel 工作和 Excel 物件模型的詳細資訊，請參閱 < [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)。
+ 如需 Excel 工作和 Excel 物件模型的詳細資訊，請參閱 [excel 物件模型總覽](../vsto/excel-object-model-overview.md)。
 
  在某些情況下，您在 VSTO 增益集中執行這些工作的方式，不同於您在文件層級自訂中的執行方式。
 
 ## <a name="see-also"></a>另請參閱
-- [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)
+- [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)
 - [使用工作表](../vsto/working-with-worksheets.md)
 - [使用範圍](../vsto/working-with-ranges.md)
-- [使用 Excel 工作表上的 Windows Form 控制項](../vsto/using-windows-forms-controls-on-excel-worksheets.md)
+- [在 Excel 工作表上使用 Windows Forms 控制項](../vsto/using-windows-forms-controls-on-excel-worksheets.md)

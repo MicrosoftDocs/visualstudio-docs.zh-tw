@@ -1,5 +1,5 @@
 ---
-title: 在 偵錯工具中的內容運算子 (C++) |Microsoft Docs
+title: 偵錯工具中的內容運算子 (c + +) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,16 +23,16 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: aa16bd6f93198e5360139dbc5a6a0d96f02a1e41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62564700"
 ---
-# <a name="context-operator-in-the-visual-studio-debugger-c"></a>在 Visual Studio 偵錯工具中的內容運算子 (C++)
+# <a name="context-operator-in-the-visual-studio-debugger-c"></a>Visual Studio 偵錯工具中的內容運算子 (c + +) 
 您可以使用 C++ 中的內容運算子限定中斷點位置、變數名稱或運算式。 內容運算子對於指定來自外部範圍的名稱相當實用，因為這類名稱會被本機名稱所隱藏。
 
-## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> 語法
+## <a name="syntax"></a><a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> 語法
  指定內容的方式有兩種：
 
 1. {,,[*module*] } *expression*
@@ -53,7 +53,7 @@ ms.locfileid: "62564700"
 
 - *module* 是模組的名稱。 您可以使用完整路徑釐清具有相同名稱的模組。
 
-   如果 *module* 路徑包含逗號、內嵌空格或大括號，您就必須使用引號括住路徑，如此內容剖析器才能正確辨識字串。 單引號會視為 Windows 檔案名稱的一部分，因此您必須使用雙引號。 例如，套用至物件的
+   如果 *module* 路徑包含逗號、內嵌空格或大括號，您就必須使用引號括住路徑，如此內容剖析器才能正確辨識字串。 單引號會視為 Windows 檔案名稱的一部分，因此您必須使用雙引號。 例如，
 
   ```C++
   {,,"a long, long, library name.dll"} g_Var

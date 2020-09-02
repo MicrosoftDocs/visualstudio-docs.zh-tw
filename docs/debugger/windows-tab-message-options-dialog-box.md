@@ -1,5 +1,5 @@
 ---
-title: Windows 索引標籤，訊息選項對話方塊 |Microsoft Docs
+title: 訊息選項對話方塊、視窗索引標籤 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,29 +11,29 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f60201bacd928b4744795e644cb1d9e5de55b75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929176"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>訊息選項對話方塊、視窗索引標籤
-使用**Windows**索引標籤以設定訊息中所列的範圍[訊息檢視](../debugger/messages-view.md)。 若要顯示[訊息選項對話方塊](../debugger/message-options-dialog-box.md)，選擇**記錄檔訊息**從**Spy**功能表。
+您可以使用 [ **Windows** ] 索引標籤來設定 [ [訊息] 視圖](../debugger/messages-view.md)中列出的訊息範圍。 若要顯示 [[訊息選項] 對話方塊](../debugger/message-options-dialog-box.md)，請從 [ **Spy** ] 功能表選擇 [**記錄訊息**]。
 
- 下列設定位於**Windows**  索引標籤：
+ [ **Windows** ] 索引標籤上提供下列設定：
 
- **搜尋工具**拖放工具，用來選取視窗。
+ **Finder 工具** 用來選取視窗的拖放工具。
 
- **隱藏 Spy + +** 移除主要的 Spy + + 視窗，並將保留**MessageOptions**對話方塊顯示在其他應用程式之上。
+ **隱藏 Spy + +** 移除主要的 Spy + + 視窗，並讓 **MessageOptions** 對話方塊出現在其他應用程式的頂端。
 
- **父視窗**顯示選取的視窗和它的直屬父視窗的訊息。
+ **父視窗** 顯示所選視窗及其直屬父視窗的訊息。
 
- **子視窗**顯示訊息，所選取的視窗和所有子視窗，包括巢狀的子視窗。
+ **子視窗** 顯示所選視窗及其所有子視窗的訊息，包括嵌套的子視窗。
 
- **同一個執行緒 Windows**顯示選取的視窗和相同的執行緒所擁有的所有其他視窗的訊息。
+ **相同執行緒的視窗** 顯示所選視窗和相同執行緒所擁有之所有其他視窗的訊息。
 
- **Windows 的相同程序**顯示選取的視窗和相同的程序所擁有的所有其他視窗的訊息。
+ **相同進程的視窗** 顯示所選視窗的訊息，以及同一個進程擁有的所有其他視窗。
 
- **在系統中的所有 Windows**顯示適用於所有 windows 訊息。
+ **系統中的所有視窗** 顯示所有視窗的訊息。
 
- **將設定儲存為預設**儲存先前的設定，適用於新的訊息資料流 windows。 結束 Spy + + 時，也會儲存這些設定。
+ **將設定儲存為預設值** 針對新的訊息串流視窗儲存先前的設定。 當結束 Spy + + 時，也會儲存這些設定。

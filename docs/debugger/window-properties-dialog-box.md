@@ -11,37 +11,37 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c27f10298f3a5621bc68e31bc2b150663955d6c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929219"
 ---
 # <a name="window-properties-dialog-box"></a>視窗屬性對話方塊
-若要深入了解特定的視窗中使用此對話方塊。 若要顯示此對話方塊中，焦點移至[Windows 檢視](../debugger/windows-view.md)視窗。 在樹狀目錄中，選取視窗的任何節點，然後選擇**屬性**從**檢視**功能表。
+使用此對話方塊可深入瞭解特定視窗。 若要顯示此對話方塊，請將焦點移至 [Windows View](../debugger/windows-view.md) 視窗。 選取樹狀結構中的任何視窗節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。
 
 ## <a name="in-this-section"></a>本節內容
- [一般索引標籤。視窗屬性對話方塊](../debugger/general-tab-window-properties-dialog-box.md)顯示選取的視窗的相關資訊。
+ [[一般] 索引標籤： [視窗屬性] 對話方塊](../debugger/general-tab-window-properties-dialog-box.md) 顯示所選視窗的相關資訊。
 
- [樣式索引標籤。視窗屬性對話方塊](../debugger/styles-tab-window-properties-dialog-box.md)會顯示套用至選取的視窗樣式。
+ [樣式] 索引標籤[。視窗屬性對話方塊](../debugger/styles-tab-window-properties-dialog-box.md)顯示套用至所選視窗的樣式。
 
- [[Windows] 索引標籤。視窗屬性對話方塊](../debugger/windows-tab-window-properties-dialog-box.md)顯示與選取的視窗相關的 windows 上的資訊。
+ [視窗屬性對話方塊、視窗](../debugger/windows-tab-window-properties-dialog-box.md) 顯示與所選取視窗相關之視窗的資訊。
 
- [類別索引標籤。視窗屬性對話方塊](../debugger/class-tab-window-properties-dialog-box.md)顯示選取的視窗類別的相關資訊。
+ [類別] 索引標籤[。視窗屬性對話方塊](../debugger/class-tab-window-properties-dialog-box.md)顯示所選視窗之類別的資訊。
 
- [處理序索引標籤。視窗屬性對話方塊](../debugger/process-tab-window-properties-dialog-box.md)識別的選取的視窗程序。
+ 進程索引標籤[。視窗屬性對話方塊](../debugger/process-tab-window-properties-dialog-box.md)識別所選視窗的進程。
 
 ## <a name="related-sections"></a>相關章節
- [視窗搜尋對話方塊](../debugger/window-search-dialog-box.md)用來尋找特定的時間範圍，在 [Windows] 檢視中的節點。
+ [[視窗搜尋] 對話方塊](../debugger/window-search-dialog-box.md)用來尋找 Windows view 中特定視窗的節點。
 
- [Spy + + 參考](../debugger/spy-increment-reference.md)包含各節描述每個 Spy + + 功能表和對話方塊方塊。
+ [Spy + + 參考](../debugger/spy-increment-reference.md) 包含描述每個 Spy + + 功能表和對話方塊的章節。
 
- [使用搜尋工具](../debugger/how-to-use-the-finder-tool.md)顯示這項工具如何掃描 windows 以進行屬性或訊息。
+ [使用 Finder 工具](../debugger/how-to-use-the-finder-tool.md) 顯示此工具如何掃描 windows 中的屬性或訊息。
 
- [搜尋 [Windows] 檢視中的視窗](../debugger/how-to-search-for-a-window-in-windows-view.md)說明如何在 Windows 檢視尋找特定的視窗。
+ [在 Windows View 中搜尋視窗](../debugger/how-to-search-for-a-window-in-windows-view.md) 說明如何在 Windows view 中尋找特定視窗。
 
- [Windows 檢視](../debugger/windows-view.md)顯示可用的視窗和控制項的樹狀檢視。
+ [Windows View](../debugger/windows-view.md) 顯示可用視窗和控制項的樹狀檢視。
 
- [Spy + + 檢視](../debugger/spy-increment-views.md)說明 windows、 訊息、 處理程序和執行緒的 Spy + + 樹狀結構檢視。
+ [Spy + + Views](../debugger/spy-increment-views.md) 說明 windows、訊息、進程和執行緒的 Spy + + 樹狀檢視。
 
- [使用 Spy + +](../debugger/using-spy-increment.md)介紹 Spy + + 工具，並說明如何使用它。
+ [使用 Spy + +](../debugger/using-spy-increment.md) 介紹 Spy + + 工具，並說明其使用方式。

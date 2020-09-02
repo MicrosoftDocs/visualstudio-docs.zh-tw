@@ -1,5 +1,5 @@
 ---
-title: 歷程偵錯 |Microsoft Docs
+title: 歷程記錄調試 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e44e62997cac1060047de03253880bbf577935da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62895165"
 ---
-# <a name="historical-debugging-c-visual-basic-c"></a>歷程偵錯 (C#，Visual Basic 中， C++)
+# <a name="historical-debugging-c-visual-basic-c"></a> (c #、Visual Basic、c + +) 的歷程記錄調試
 
 歷程偵錯是取決於 IntelliTrace 所收集資訊的偵錯模式。 它可讓您向後和向前逐步執行您的應用程式，並檢查其狀態。
 
@@ -31,8 +31,8 @@ ms.locfileid: "62895165"
 
 ## <a name="how-do-i-start-using-historical-debugging"></a>如何開始使用歷程偵錯？
 
-預設會開啟 IntelliTrace。 您必須執行的只是決定哪些事件和函式呼叫感興趣，以及您是否要檢視完整的應用程式狀態的快照集。 如需定義您想要尋找之項目的詳細資訊，請參閱 [IntelliTrace 功能](../debugger/intellitrace-features.md)。 功能支援會因語言和應用程式類型。
+預設會開啟 IntelliTrace。 您只需決定要對您感興趣的事件和函數呼叫，以及是否要查看完整應用程式狀態的快照集。 如需定義您想要尋找之項目的詳細資訊，請參閱 [IntelliTrace 功能](../debugger/intellitrace-features.md)。 功能支援會因語言和應用程式類型而異。
 
-- 若要檢視使用歷程偵錯快照集，請參閱[檢查先前使用 IntelliTrace 的應用程式狀態](../debugger/view-historical-application-state.md)
-- 若要了解如何檢查變數，以及巡覽程式碼，請參閱[檢查您的應用程式，使用歷程偵錯](../debugger/historical-debugging-inspect-app.md)
-- 若要深入了解使用 IntelliTrace 事件偵錯，請參閱[逐步解說：使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)。
+- 若要使用歷程記錄偵錯工具來查看快照集，請參閱 [使用 IntelliTrace 檢查先前的應用程式狀態](../debugger/view-historical-application-state.md)
+- 若要瞭解如何檢查變數和流覽程式碼，請參閱 [使用歷程記錄來檢查應用程式](../debugger/historical-debugging-inspect-app.md)
+- 若要深入了解使用 IntelliTrace 事件偵錯，請參閱[逐步解說： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)。

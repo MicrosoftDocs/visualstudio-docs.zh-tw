@@ -10,33 +10,33 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a243033bf5831952d83fdf688302651e02b76b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62903016"
 ---
-# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>HOW TO：解除封鎖 Windows Server 上的遠端工具下載
+# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>如何：解除封鎖 Windows Server 上的遠端工具下載
 
-在 Windows Server 上的 Internet Explorer 中的預設安全性設定可以讓它更耗時下載元件，例如遠端工具。
+Internet Explorer 在 Windows Server 上的預設安全性設定，可能會花很多時間來下載像是遠端工具的元件。
 
-* Internet Explorer 中，它會防止您從開啟網站，並存取 web 資源，除非明確允許包含資源的網域上啟用增強式的安全性設定 （也就是受信任）。 雖然您可以停用此設定，但我們不建議您這麼做因為它可以有安全性風險。
+* Internet Explorer 上會啟用增強式安全性設定，以防止您開啟網站及存取 web 資源，除非明確允許包含該資源的網域 (也就是信任的) 。 雖然您可以停用此設定，但我們不建議您這麼做，因為它可能會帶來安全性風險。
 
-* 在 Windows Server 2016 中設定的預設值**網際網路選項** > **安全性** > **網際網路** >  **自訂層級** > **下載**也會停用檔案的下載。 如果您選擇下載直接在 Windows Server 上的遠端工具，您必須啟用檔案下載。
+* 在 Windows Server 2016 上， **internet Options**  >  **Security**  >  **網際網路**  >  **自訂層級**  >  **下載**的預設設定也會停用檔案下載。 如果您選擇直接在 Windows Server 上下載遠端工具，您必須啟用檔案下載。
 
-若要下載 Windows Server 上的工具，我們建議下列其中一項：
+若要下載 Windows Server 上的工具，建議您執行下列其中一項：
 
-* 下載像是一個執行的 Visual Studio，在不同電腦上的遠端工具，然後複製 *.exe*到 Windows Server 的檔案。
+* 在另一部電腦上下載遠端工具，例如執行 Visual Studio 的電腦，然後將 *.exe* 檔複製到 Windows Server。
 
-* 執行遠端偵錯工具[從檔案共用](../debugger/remote-debugging.md#fileshare_msvsmon)Visual Studio 電腦上。
+* 從 Visual Studio 電腦上 [的檔案共用](../debugger/remote-debugging.md#fileshare_msvsmon) 執行遠端偵錯程式。
 
-* 下載直接在 Windows Server 上的遠端工具，並接受提示來加入信任的網站。 現代化網站通常會包含許多協力廠商資源，因此這可能會導致很多提示。 此外，任何重新導向的連結可能需要手動加入。 您可以選擇將部分信任的網站開始下載之前。 移至**網際網路選項 > 安全性 > 受信任的站台 > 網站**然後新增下列站台。
+* 直接在 Windows Server 上下載遠端工具，並接受提示以新增信任的網站。 新式網站通常包含許多協力廠商資源，因此這可能會導致許多提示。 此外，您可能需要手動新增任何重新導向的連結。 在開始下載之前，您可以選擇新增一些受信任的網站。 移至 [ **網際網路選項] > 安全性 > 信任的網站 > 網站** ]，並新增下列網站。
 
   * visualstudio.microsoft.com
   * download.visualstudio.microsoft.com
-  * 關於： 空白
+  * 關於：空白
 
-  針對舊版 my.visualstudio.com 的偵錯工具中，加入這些額外的站台，以確定該登入成功：
+  針對 my.visualstudio.com 上較舊版本的偵錯工具，請新增這些額外的網站以確定登入成功：
 
   * microsoft.com
   * go.microsoft.com
@@ -51,8 +51,8 @@ ms.locfileid: "62903016"
   * vlscppe.microsoft.com
   * query.prod.cms.rt.microsoft.com
 
-    如果您選擇將這些網域加入下載遠端工具時，請選擇**新增**出現提示時。
+    如果您選擇在下載遠端工具時新增這些網域，請在出現提示時選擇 [ **新增** ]。
 
-    ![已封鎖的內容對話方塊](../debugger/media/remotedbg-blocked-content.png)
+    ![封鎖的內容對話方塊](../debugger/media/remotedbg-blocked-content.png)
 
-    當您下載軟體時，您會取得載入各種 web 站台指令碼和資源的權限授與某些其他要求。 My.visualstudio.com，建議您新增其他網域，以確定該登入成功。
+    當您下載此軟體時，您會收到一些額外的要求，授與載入各種網站腳本和資源的許可權。 在 my.visualstudio.com 上，建議您新增額外的網域，以確保登入成功。

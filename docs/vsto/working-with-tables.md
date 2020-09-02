@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f1102a996f06634396f8bec3a02400fa952810e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62815348"
 ---
 # <a name="work-with-tables"></a>使用資料表
@@ -28,10 +28,10 @@ ms.locfileid: "62815348"
 |工作|程序|
 |----------|---------------|
 |建立資料表、套用樣式，然後存取程式碼中的資料表。|[如何：以程式設計方式建立 Word 表格](../vsto/how-to-programmatically-create-word-tables.md)|
-|建立並格式化資料表，然後將資料插入儲存格。|[如何：以程式設計方式填入 Word 表格文件屬性](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)|
-|將資料列或資料行加入資料表。|[如何：以程式設計方式將資料列和資料行加入至 Word 表格](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)|
-|將文字加入儲存格並加以格式化。|[如何：以程式設計方式加入文字和格式在 Word 表格的儲存格](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)|
+|建立並格式化資料表，然後將資料插入儲存格。|[如何：以程式設計方式將文件屬性填入 Word 表格](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)|
+|將資料列或資料行加入資料表。|[如何：以程式設計方式將資料列和資料行加入至 Word 資料表](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)|
+|將文字加入儲存格並加以格式化。|[如何：以程式設計方式在 Word 表格的儲存格中加入文字和格式](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)|
 
 ## <a name="see-also"></a>另請參閱
-- [Word 物件模型概觀](../vsto/word-object-model-overview.md)
-- [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Word 物件模型總覽](../vsto/word-object-model-overview.md)
+- [Office 方案開發總覽 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0afc4f73ed287f753acf87bd0b112e6f5303e996
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551246"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions 項目 (MSBuild)
@@ -43,7 +43,7 @@ ms.locfileid: "62551246"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
  無  
@@ -53,7 +53,7 @@ ms.locfileid: "62551246"
   
 ### <a name="parent-elements"></a>父項目  
   
-|元素|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[專案](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔案的必要根項目。|  
   
@@ -75,6 +75,6 @@ ms.locfileid: "62551246"
 </ProjectExtensions>  
 ```  
   
-## <a name="see-also"></a>請參閱  
- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)  
+## <a name="see-also"></a>另請參閱  
+ [專案檔結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)  
  [MSBuild](msbuild.md)

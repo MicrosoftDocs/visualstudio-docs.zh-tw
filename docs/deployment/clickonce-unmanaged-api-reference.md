@@ -1,5 +1,5 @@
 ---
-title: ClickOnce Unmanaged API 參考 |Microsoft Docs
+title: ClickOnce 非受控 API 參考 |Microsoft Docs
 ms.date: 11/04/2016
 api_name:
 - CleanOnlineAppCache
@@ -29,26 +29,26 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3b536a17df4f54158aa6f157a0d9795cf359ddc0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900266"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>ClickOnce 非受控 API 參考
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 從 dfshim.dll 未受管理的公用 Api。
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dfshim.dll 的非受控公用 Api。
 
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache
- 清除或解除安裝所有的線上應用程式，從[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式快取。
+ 清除或卸載應用程式快取中的所有線上應用程式 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。
 
 ### <a name="return-value"></a>傳回值
- 如果成功，會傳回 S_OK;否則，會傳回 HRESULT，表示失敗。 如果 managed 例外狀況發生時，會傳回 0x80020009 (DISP_E_EXCEPTION)。
+ 如果成功，則傳回 S_OK;否則，會傳回表示失敗的 HRESULT。 如果發生 managed 例外狀況，則會傳回 0x80020009 (DISP_E_EXCEPTION) 。
 
 ### <a name="remarks"></a>備註
- 將會開始呼叫 CleanOnlineAppCache[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]服務如果尚未執行。
+ 呼叫 CleanOnlineAppCache 將會啟動 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 服務（如果尚未執行）。
 
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest
- 擷取部署資訊從資訊清單和啟用 URL。
+ 從資訊清單和啟用 URL 抓取部署資訊。
 
 ### <a name="parameters"></a>參數
 
@@ -56,38 +56,38 @@ ms.locfileid: "62900266"
 |---------------|-----------------|----------|
 |`pcwzActivationUrl`|`ActivationURL` 的指標。|LPCWSTR|
 |`pcwzPathToDeploymentManifest`|`PathToDeploymentManifest` 的指標。|LPCWSTR|
-|`pwzApplicationIdentity`|收到 NULL 終止的字串，指定傳回完整的應用程式身分識別之緩衝區的指標。|LPWSTR|
-|`pdwIdentityBufferLength`|長度為 DWORD 的指標`pwzApplicationIdentity`WCHARs 中的緩衝區。 這包括 NULL 結束字元的空間。|LPDWORD|
-|`pwzProcessorArchitecture`|收到 NULL 終止的字串，指定處理器架構的應用程式部署，從資訊清單之緩衝區的指標。|LPWSTR|
-|`pdwArchitectureBufferLength`|長度為 DWORD 的指標`pwzProcessorArchitecture`WCHARs 中的緩衝區。|LPDWORD|
-|`pwzApplicationManifestCodebase`|以 NULL 終止的字串，指定應用程式資訊清單中，從資訊清單的程式碼基底的接收緩衝區的指標。|LPWSTR|
-|`pdwCodebaseBufferLength`|長度為 DWORD 的指標`pwzApplicationManifestCodebase`WCHARs 中的緩衝區。|LPDWORD|
-|`pwzDeploymentProvider`|接收以 NULL 結束的字串之緩衝區的指標，指定資訊清單中，從部署提供者，如果有的話。 否則，會傳回空字串。|LPWSTR|
-|`pdwProviderBufferLength`|長度為 DWORD 的指標`pwzProviderBufferLength`。|LPDWORD|
+|`pwzApplicationIdentity`|緩衝區的指標，用來接收以 Null 終止的字串，指定傳回的完整應用程式識別。|LPWSTR|
+|`pdwIdentityBufferLength`|DWORD 的指標，此為緩衝區的長度 `pwzApplicationIdentity` （以 WCHARs）。 這包括 Null 終止字元的空間。|LPDWORD|
+|`pwzProcessorArchitecture`|緩衝區的指標，用來接收以 Null 終止的字串，此字串會從資訊清單中指定應用程式部署的處理器架構。|LPWSTR|
+|`pdwArchitectureBufferLength`|DWORD 的指標，此為緩衝區的長度 `pwzProcessorArchitecture` （以 WCHARs）。|LPDWORD|
+|`pwzApplicationManifestCodebase`|緩衝區的指標，用來接收以 Null 終止的字串，此字串會從資訊清單中指定應用程式資訊清單的程式碼基底。|LPWSTR|
+|`pdwCodebaseBufferLength`|DWORD 的指標，此為緩衝區的長度 `pwzApplicationManifestCodebase` （以 WCHARs）。|LPDWORD|
+|`pwzDeploymentProvider`|緩衝區的指標，用來接收以 Null 終止的字串，以指定資訊清單中的部署提供者（如果有的話）。 否則，會傳回空字串。|LPWSTR|
+|`pdwProviderBufferLength`|DWORD 的指標，其為的長度 `pwzProviderBufferLength` 。|LPDWORD|
 
 ### <a name="return-value"></a>傳回值
- 如果成功，會傳回 S_OK;否則，會傳回 HRESULT，表示失敗。 如果緩衝區太小，則傳回 HRESULTFROMWIN32(ERROR_INSUFFICIENT_BUFFER)。
+ 如果成功，則傳回 S_OK;否則，會傳回表示失敗的 HRESULT。 如果緩衝區太小，則傳回 HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) 。
 
 ### <a name="remarks"></a>備註
- 指標不得為 null。 `pcwzActivationUrl` 和`pcwzPathToDeploymentManifest`不得為空白。
+ 指標不得為 null。 `pcwzActivationUrl` 和 `pcwzPathToDeploymentManifest` 不得空白。
 
- 是呼叫者的責任，清除 啟用 URL。 例如，加入逸出字元的所需的位置，或移除查詢字串。
+ 呼叫者必須負責清除啟用 URL。 例如，在需要時加入 escape 字元或移除查詢字串。
 
- 它負責將呼叫者的輸入的長度限制。 例如，URL 長度上限為 2 KB。
+ 呼叫端負責限制輸入長度。 例如，最大 URL 長度為2KB。
 
 ## <a name="launchapplication"></a>LaunchApplication
- 啟動或安裝應用程式所使用的部署 URL。
+ 使用部署 URL 來啟動或安裝應用程式。
 
 ### <a name="parameters"></a>參數
 
 |參數|描述|類型|
 |---------------|-----------------|----------|
-|`deploymentUrl`|以 NULL 終止的字串，其中包含部署資訊清單 URL 的指標。|LPCWSTR|
+|`deploymentUrl`|以 Null 結束的字串指標，其中包含部署資訊清單的 URL。|LPCWSTR|
 |`data`|保留供未來使用。 必須是 Null。|LPVOID|
 |`flags`|保留供未來使用。 必須是 0。|DWORD|
 
 ### <a name="return-value"></a>傳回值
- 如果成功，會傳回 S_OK;否則，會傳回 HRESULT，表示失敗。 如果 managed 例外狀況發生時，會傳回 0x80020009 (DISP_E_EXCEPTION)。
+ 如果成功，則傳回 S_OK;否則，會傳回表示失敗的 HRESULT。 如果發生 managed 例外狀況，則會傳回 0x80020009 (DISP_E_EXCEPTION) 。
 
 ## <a name="see-also"></a>另請參閱
 - <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>

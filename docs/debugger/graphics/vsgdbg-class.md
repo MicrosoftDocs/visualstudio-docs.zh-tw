@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4051a02de6a046621e62c21b4d2399b5a2703cb8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62895188"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg 類別
-表示讓您以程式設計方式控制圖形診斷的應用程式元件的介面。
+表示介面，可讓您以程式設計方式控制圖形診斷的應用程式內元件。
 
 ## <a name="syntax"></a>語法
 
@@ -29,23 +29,23 @@ class VsgDbg;
 
 ### <a name="public-constructors"></a>公用建構函式
 
-|名稱|描述|
+|Name|描述|
 |----------|-----------------|
-|[VsgDbg::VsgDbg (建構函式)](vsgdbg-vsgdbg-constructor.md)|建構的執行個體`VsgDbg`類別，並選擇性地準備 圖形診斷來主動擷取與記錄的圖形資訊的應用程式元件。|
-|[VsgDbg::~VsgDbg (解構函式)](vsgdbg-tilde-vsgdbg-destructor.md)|終結的執行個體`VsgDbg`類別。|
+|[VsgDbg::VsgDbg (建構函式)](vsgdbg-vsgdbg-constructor.md)|會建立類別的實例 `VsgDbg` ，並選擇性地準備圖形診斷的應用程式內元件，以主動捕捉和記錄圖形資訊。|
+|[VsgDbg::~VsgDbg (解構函式)](vsgdbg-tilde-vsgdbg-destructor.md)|終結類別的實例 `VsgDbg` 。|
 
 ### <a name="public-methods"></a>公用方法
 
-|名稱|描述|
+|Name|描述|
 |----------|-----------------|
-|[AddMessage](addmessage.md)|將圖形診斷抬頭顯示器 （Hud 顯示器） 的自訂訊息。|
-|[BeginCapture](begincapture.md)|開始會結束，在擷取間隔`EndCapture`。|
-|[CaptureCurrentFrame](capturecurrentframe.md)|擷取目前畫面的圖形記錄檔的其餘部分。|
-|[複製 (程式設計擷取)](copy-programmatic-capture.md)|使用中的圖形記錄 (.vsglog) 檔案的內容複製到新的檔案。|
-|[EndCapture](endcapture.md)|結束用來啟動在擷取間隔`BeginCapture`。|
-|[Init](init.md)|準備圖形診斷來主動擷取與記錄的圖形資訊的應用程式元件。|
-|[ToggleHUD](togglehud.md)|開啟或關閉，請切換圖形診斷抬頭顯示器覆疊。|
-|[UnInit](uninit.md)|完成的圖形記錄檔、 關閉，並釋出應用程式的作用中記錄的圖形資訊時所使用的資源。|
+|[AddMessage](addmessage.md)|將自訂訊息新增至 [圖形診斷] 抬頭顯示器 (上層顯示) 。|
+|[BeginCapture](begincapture.md)|開始將結束的捕獲間隔 `EndCapture` 。|
+|[CaptureCurrentFrame](capturecurrentframe.md)|將目前框架的其餘部分捕獲到圖形記錄檔。|
+|[複製 (程式設計擷取)](copy-programmatic-capture.md)|將現用圖形記錄檔 ( 的內容複寫到新的檔案中。 vsglog) 檔案。|
+|[EndCapture](endcapture.md)|結束以啟動的捕獲間隔 `BeginCapture` 。|
+|[Init](init.md)|準備圖形診斷的應用程式內元件，以主動捕捉及記錄圖形資訊。|
+|[ToggleHUD](togglehud.md)|切換圖形診斷抬頭顯示器重迭開啟或關閉。|
+|[UnInit](uninit.md)|完成圖形記錄檔、將其關閉，並釋放應用程式主動記錄圖形資訊時所使用的資源。|
 
 ## <a name="remarks"></a>備註
- `VsgDbg`類別代表的介面，可用來以程式設計方式控制圖形診斷功能。 您可以使用某些功能，即使您未主動擷取並記錄圖形資訊;這包括`AddMessage`成員函式和`ToggleHUD`成員函式。 其他成員函式會準備圖形診斷來啟動或停止作用中的擷取圖形資訊的應用程式元件，或主動擷取及記錄到圖形記錄檔的圖形資訊的應用程式時，必須呼叫。
+ `VsgDbg`類別代表您可以用來以程式設計方式控制圖形診斷功能的介面。 即使您不主動捕捉和錄製圖形資訊，還是可以使用某些功能;這包括成員函式 `AddMessage` 和 `ToggleHUD` 成員函式。 另一個成員函式會準備圖形診斷的應用程式內元件，以啟動或停止圖形資訊的主動式抓取，或者必須在應用程式主動捕獲圖形資訊並將其記錄到圖形記錄檔時呼叫。

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 251dc4279530c2d10ba8b404ee515824d0671037
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62579980"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>程式行檢視 - .NET 記憶體取樣資料
@@ -43,25 +43,25 @@ ms.locfileid: "62579980"
   
   根據定義，陳述式不會呼叫其他函式。 因此只會列出互斥值。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
-|**處理序 ID**|分析執行的處理序 ID (PID)。|  
-|**處理序名稱**|處理序的名稱。|  
+|**處理序識別碼**|分析執行的處理序 ID (PID)。|  
+|**進程名稱**|處理序的名稱。|  
 |**模組名稱**|包含陳述式的模組名稱。|  
 |**模組路徑**|包含陳述式的模組路徑。|  
-|**原始程式檔**|包含陳述式的原始程式檔。|  
-|**函式名稱**|包含此陳述式的函式名稱。|  
+|**來源檔案**|包含陳述式的原始程式檔。|  
+|**函數名稱**|包含此陳述式的函式名稱。|  
 |**函式行號**|原始程式檔中這個函式的開頭行號。|  
-|**函式位址**|函式的開始位址。|  
+|**函數位址**|函式的開始位址。|  
 |**原始程式碼開頭行**|發生配置的原始程式檔中的起始行號。|  
 |**原始程式碼結尾行**|發生配置的原始程式檔中的結尾行號。|  
 |**原始程式碼開頭字元**|發生配置的原始程式檔行中，起始字元的位移。|  
 |**原始程式碼結尾字元**|發生配置的原始程式檔行中，結尾字元的位移。|  
-|**程式行名稱**|分析工具產生的程式行識別項，該程式行使用下列語法：`Source File`**;[**`Line Number Start`**,**`Character Start`**]->;[**`Line Number Start,Character Start`**]**|  
+|**程式行名稱**|分析工具產生的行識別碼，語法如下： `Source File` **; [** `Line Number Start`**,**`Character Start`**]->;[**`Line Number Start,Character Start`**]**|  
 |**專有配置**|已在此行中建立的物件總數。|  
 |**專有配置 %**|分析執行期間，配置於此行中的物件佔所有已建立物件的百分比。|  
 |**專有位元組**|在執行分析期間配置於此行中的記憶體位元組，佔所配置記憶體之所有位元組的百分比。|  
 |**專有位元組 %**|在執行分析期間配置於此行中的記憶體位元組，佔所配置記憶體之所有位元組的百分比。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [程式行檢視](../profiling/lines-view-sampling-data.md)

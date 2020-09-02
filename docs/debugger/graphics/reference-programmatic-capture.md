@@ -1,5 +1,5 @@
 ---
-title: 參考 （程式設計擷取） |Microsoft Docs
+title: 參考 (程式設計捕獲) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a462d22df9768d2ffc8b344933e9f5c1f556575a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62895517"
 ---
 # <a name="reference-programmatic-capture"></a>參考 (程式設計擷取)
@@ -22,13 +22,13 @@ ms.locfileid: "62895517"
 
 ### <a name="classes"></a>類別
 
-|名稱|描述|
+|Name|描述|
 |----------|-----------------|
 |[VsgDbg 類別](vsgdbg-class.md)|表示以程式設計方式控制圖形診斷應用程式內部元件的介面。|
 
 ### <a name="preprocessor-symbols"></a>前置處理器符號
 
-|名稱|描述|
+|Name|描述|
 |----------|-----------------|
 |[DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)|出現時，定義圖形記錄檔是否儲存到使用者的暫存檔目錄。|
 |[VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)|定義圖形記錄檔的預設檔案名稱。|
@@ -38,5 +38,5 @@ ms.locfileid: "62895517"
 
 | 標題 | 描述 |
 | - | - |
-| [Capturing Graphics Information](capturing-graphics-information.md) | 示範如何從 DirectX 應用程式擷取圖形資訊，以便使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷工具來診斷轉譯問題。 |
+| [擷取圖形資訊](capturing-graphics-information.md) | 示範如何從 DirectX 應用程式擷取圖形資訊，以便使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷工具來診斷轉譯問題。 |
 | [概觀](overview-of-visual-studio-graphics-diagnostics.md) | 示範圖形診斷如何協助您偵錯 DirectX 遊戲和應用程式的轉譯錯誤。 |

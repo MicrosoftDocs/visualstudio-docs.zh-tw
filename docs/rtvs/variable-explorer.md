@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 799b7f2789898e0d02d9588f9a3ad7d1e8098a00
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62809786"
 ---
 # <a name="variable-explorer"></a>變數總管
@@ -45,7 +45,7 @@ n <- c(1,2,3,5,8,13)
 
 按一下資料行標題按資料行排序資料 (輪換遞增和遞減)。 按住 **Shift** 鍵並按一下其他資料行，將這些資料行也新增至排序。 按一下資料行但不按 **Shift** 鍵會傳回單一資料行排序。
 
-您按下的資料行標題順序會決定執行的排序順序。 例如 **，"Shift"**+**按一下** **cyl**列，然後**Shift**+**按一下** **mpg**列兩次，對升升圓柱的清單進行排序，然後降出每加侖英里：
+您按下的資料行標題順序會決定執行的排序順序。 例如， **shift 鍵** + **按一下**[ **cyl** ] 資料行，然後**按** + 兩次 [ **mpg** ] 資料行，以排序清單**中的**遞增圓柱和遞減的每加侖英里：
 
 ![依兩個資料行排序的資料表格檢視。](media/variable-explorer-table-view-sorting.png)
 

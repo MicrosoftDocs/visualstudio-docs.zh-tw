@@ -1,5 +1,5 @@
 ---
-title: 已篩選的 C# 中的完成清單 |Microsoft Docs
+title: 'C # 中已篩選的完成清單 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -14,11 +14,11 @@ author: BillWagner
 ms.author: wiwagn
 manager: jillfra
 ms.openlocfilehash: 291ea2e7d15dee40642e9cd5c1140eb5e5b0fe15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62822679"
 ---
 # <a name="filtered-completion-lists-in-c"></a>C# 中已篩選的完成清單 #
-本內容已移至[C# 中的完成清單](../misc/completion-lists-in-csharp.md)
+此內容已移至 [c # 中的完成清單](../misc/completion-lists-in-csharp.md)

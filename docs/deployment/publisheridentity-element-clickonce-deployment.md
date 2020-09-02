@@ -1,5 +1,5 @@
 ---
-title: '&lt;publisherIdentity&gt;項目 （ClickOnce 部署） |Microsoft Docs'
+title: '&lt;publisherIdentity &gt; 元素 (ClickOnce 部署) |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62927535"
 ---
-# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt;項目 （ClickOnce 部署）
+# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;&gt;ClickOnce 部署 (的 publisherIdentity 元素) 
 包含簽署此部署資訊清單之發行者的資訊。
 
 ## <a name="syntax"></a>語法
@@ -36,12 +36,12 @@ ms.locfileid: "62927535"
 ```
 
 ## <a name="elements-and-attributes"></a>元素和屬性
- `publisherIdentity` ，則需要簽署資訊清單元素。 下表顯示的屬性，`publisherIdentity`項目支援。
+ `publisherIdentity`簽署的資訊清單需要元素。 下表顯示 `publisherIdentity` 元素支援的屬性。
 
 |屬性|描述|
 |---------------|-----------------|
-|`name`|必要項。 描述發行此應用程式的合作對象的識別。|
-|`issuerKeyHash`|必要項。 包含憑證簽發者的公開金鑰的 sha-1 雜湊。|
+|`name`|必要。 描述發行此應用程式之合作物件的身分識別。|
+|`issuerKeyHash`|必要。 包含憑證簽發者之公開金鑰的 SHA-1 雜湊。|
 
 #### <a name="parameters"></a>參數
 

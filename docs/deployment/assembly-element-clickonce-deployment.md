@@ -1,5 +1,5 @@
 ---
-title: '&lt;組件&gt;項目 （ClickOnce 部署） |Microsoft Docs'
+title: '&lt;&gt; (ClickOnce 部署的元件元素) |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b639a7f95cfb59844fa37963730e22ead450482
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929081"
 ---
-# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;組件&gt;項目 （ClickOnce 部署）
-部署資訊清單最上層項目。
+# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;&gt;ClickOnce 部署 (的 assembly 元素) 
+部署資訊清單的最上層元素。
 
 ## <a name="syntax"></a>語法
 
@@ -36,16 +36,16 @@ ms.locfileid: "62929081"
 ```
 
 ## <a name="elements-and-attributes"></a>元素和屬性
- `assembly`元素是根項目，且需要。 必須是其第一個包含的項目`assemblyIdentity`項目。 資訊清單的項目必須位於下列命名空間： `urn:schemas-microsoft-com:asm.v1`， `urn:schemas-microsoft-com:asm.v2`，和`http://www.w3.org/2000/09/xmldsig#`。 組件的子項目也必須是這些命名空間，繼承或標記。
+ `assembly`元素是根項目，而且是必要專案。 其第一個包含的元素必須是 `assemblyIdentity` 元素。 資訊清單元素必須位於下列命名空間： `urn:schemas-microsoft-com:asm.v1` 、 `urn:schemas-microsoft-com:asm.v2` 和 `http://www.w3.org/2000/09/xmldsig#` 。 元件的子專案也必須位於這些命名空間中（透過繼承或標記）。
 
  `assembly` 項目具有下列屬性。
 
 |屬性|描述|
 |---------------|-----------------|
-|`manifestVersion`|必要項。 此屬性必須設為`1.0`。|
+|`manifestVersion`|必要。 這個屬性必須設定為 `1.0` 。|
 
 ## <a name="example"></a>範例
- 下列程式碼範例說明`assembly`部署使用的應用程式的部署資訊清單中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 此程式碼範例是針對提供之較大範例的一部分[ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)主題。
+ 下列程式碼範例說明 `assembly` 使用部署之應用程式的部署資訊清單中的元素 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 這個程式碼範例是針對 [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md) 主題提供之較大範例的一部分。
 
 ```xml
 <asmv1:assembly
@@ -64,4 +64,4 @@ ms.locfileid: "62929081"
 
 ## <a name="see-also"></a>另請參閱
 - [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)
-- [\<組件 > 項目](../deployment/assembly-element-clickonce-application.md)
+- [\<assembly> 元素](../deployment/assembly-element-clickonce-application.md)

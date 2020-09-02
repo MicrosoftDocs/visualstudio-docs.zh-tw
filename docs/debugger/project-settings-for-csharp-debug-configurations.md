@@ -1,5 +1,5 @@
 ---
-title: 專案設定為C#偵錯組態 |Microsoft Docs
+title: 'C # debug config 的專案設定 |Microsoft Docs'
 ms.custom: seodec18
 ms.date: 11/21/2018
 ms.topic: reference
@@ -22,43 +22,43 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a5108e195e5df245c72436752316e8ee91781e7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62903953"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# 偵錯組態的專案設定
 
-您可以變更C#專案中的偵錯設定[偵錯 索引標籤](#debug-tab)並[建置 索引標籤](#build-tab)專案屬性頁。
+您可以在專案屬性頁的 [ [偵錯工具]](#debug-tab) 索引標籤和 [ [組建]](#build-tab) 索引標籤中變更 c # 專案 debug 設定。
 
-若要開啟屬性頁面，選取 在專案**方案總管**，然後選取**屬性**圖示，或以滑鼠右鍵按一下專案，然後選取**屬性**。
+若要開啟屬性頁，請在 **方案總管** 中選取專案，然後選取 [ **屬性** ] 圖示，或以滑鼠右鍵按一下專案，然後選取 [ **屬性**]。
 
-如需詳細資訊，請參閱[偵錯和發行組態](how-to-set-debug-and-release-configurations.md)。
+如需詳細資訊，請參閱 [Debug 和 release](how-to-set-debug-and-release-configurations.md)設定。
 
 >[!IMPORTANT]
->這些設定不適用於.NET Core、 ASP.NET 或 UWP 應用程式。 若要設定之 UWP 應用程式的偵錯設定，請參閱[啟動的 UWP 應用程式的偵錯工作階段](start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。
+>這些設定不適用於 .NET Core、ASP.NET 或 UWP 應用程式。 若要設定 UWP 應用程式的偵錯工具設定，請參閱 [啟動 uwp 應用程式的偵錯工具](start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。
 
 ## <a name="debug-tab"></a>偵錯索引標籤
 
 |設定|描述|
 |-------------------------------------| - |
-| **組態** | 建置應用程式的設定模式。 選取 **現用 （偵錯）**，**偵錯**，**版本**，或**所有組態**從下拉式清單。 |
-| **起始動作** | 指定的動作，當您選取**啟動**偵錯組態。<br />- [起始專案] 是預設動作，並且會啟動用於偵錯的啟始專案。 如需詳細資訊，請參閱 <<c0> [ 選擇啟始專案](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100))。<br />- **啟動外部程式**開始，並將附加至應用程式不屬於[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案。 如需詳細資訊，請參閱 <<c0> [ 附加至執行中處理序偵錯工具](attach-to-running-processes-with-the-visual-studio-debugger.md)。<br />- **以 URL 啟動瀏覽器**可讓您偵錯 web 應用程式。 |
-| **起始選項** > **命令列引數** | 指定正在進行偵錯的應用程式的命令列引數。 命令名稱是在指定的應用程式名稱**啟動外部程式**。 |
-| **起始選項** > **工作目錄** | 指定應用程式進行偵錯的工作目錄。 在C#，工作目錄*\bin\debug*預設。
-| **起始選項** > **使用遠端電腦**|遠端偵錯，請選取此選項，然後輸入名稱的遠端偵錯目標，或[Msvsmon 伺服器名稱](../debugger/remote-debugging.md)。 <br />在遠端電腦上的應用程式的位置由**輸出路徑**屬性上的**建置** 索引標籤。其位置必須是遠端電腦上的可共用目錄。
-| **偵錯工具引擎** > **啟用 unmanaged 程式碼偵錯** | 從受管理的應用程式呼叫原生 (unmanaged) Win32 程式碼進行偵錯。 |
-| **偵錯工具引擎** > **啟用 SQL Server 偵錯** | 偵錯 SQL Server 資料庫物件。 |
+| **設定** | 設定用來建立應用程式的模式。 從下拉式清單中選取 [ **Active (debug) **]、[ **debug**]、[ **Release**] 或 [ **所有** 設定]。 |
+| **開始動作** | 指定當您在調試設定中選取 [ **啟動** ] 時的動作。<br />- [**啟動專案**] 是預設值，並且會啟動啟始專案以進行偵錯工具。 如需詳細資訊，請參閱 [選擇啟始專案](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100))。<br />- **啟動外部程式** 啟動，並附加至不屬於專案的應用程式 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 如需詳細資訊，請參閱 [使用偵錯工具附加至執行中的進程](attach-to-running-processes-with-the-visual-studio-debugger.md)。<br />- **使用 URL 啟動瀏覽器** 可讓您對 web 應用程式進行偵錯工具。 |
+| **開始選項**  > **命令列引數** | 指定要進行偵錯工具的命令列引數。 命令名稱是在 [ **啟動外部程式**] 中指定的應用程式名稱。 |
+| **開始選項**  > **工作目錄** | 指定正在進行調試的應用程式的工作目錄。 在 c # 中，預設會 *\bin\debug* 工作目錄。
+| **開始選項**  > **使用遠端電腦**|針對 [遠端偵錯程式]，選取此選項並輸入遠端偵錯程式目標的名稱，或輸入 [Msvsmon 伺服器名稱](../debugger/remote-debugging.md)。 <br />遠端電腦上應用程式的位置是由 [**組建**] 索引標籤上的 [**輸出路徑**] 屬性所指定。位置必須是遠端電腦上的可共用目錄。
+| **偵錯工具引擎**  > **啟用非受控程式碼調試**程式 | 從受管理的應用程式，對原生 (非受控) Win32 程式碼進行的呼叫。 |
+| **偵錯工具引擎**  > **啟用 SQL Server 的調試** | SQL Server 資料庫物件進行調試。 |
 
 ## <a name="build-tab"></a>建置索引標籤
 
 |設定|描述|
 |-------------|-----------------|
-|**一般** > **條件式編譯符號**|如果選取，請定義 DEBUG 和 TRACE 常數。<br /><br /> 這些常數可啟用 [Debug 類別](/dotnet/api/system.diagnostics.debug)和 [Trace 類別](/dotnet/api/system.diagnostics.trace)的條件式編譯。 完成這些常數定義之後，Debug 和 Trace 類別方法即會於[輸出視窗](../ide/reference/output-window.md)產生輸出。 如果沒有這些常數，Debug 和 Trace 類別方法便不會編譯，且不會產生輸出。<br /><br />通常，偵錯是定義在偵錯版本的組建和發行版本中未定義。 追蹤已定義在偵錯和發行版本。|
-|**一般** > **最佳化程式碼**|除非錯誤只會出現在最佳化程式碼，否則請保留 偵錯組建的 已取消選取此設定。 最佳化程式碼較難偵錯，因為直接至在原始程式碼中的陳述式沒有對應的指示。|
-|**輸出** > **輸出路徑**|偵錯通常會設為 *bin\Debug*。|
-|**進階**按鈕|如需進階偵錯選項的資訊，請參閱[進階的建置設定對話方塊 (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)。 符號的可攜式格式 (*.pdb*) 檔案是最新的跨平台格式，.NET Core 應用程式。
+|**一般**  > **條件式編譯符號**|如果已選取，請定義 DEBUG 和 TRACE 常數。<br /><br /> 這些常數可啟用 [Debug 類別](/dotnet/api/system.diagnostics.debug)和 [Trace 類別](/dotnet/api/system.diagnostics.trace)的條件式編譯。 完成這些常數定義之後，Debug 和 Trace 類別方法即會於[輸出視窗](../ide/reference/output-window.md)產生輸出。 如果沒有這些常數，Debug 和 Trace 類別方法便不會編譯，且不會產生輸出。<br /><br />通常，DEBUG 是在組建的 Debug 版本中定義，而且在發行版本中未定義。 追蹤是在 Debug 和 Release 版本中定義的。|
+|**一般**  > **優化程式碼**|除非 bug 只出現在優化程式碼中，否則請將此設定保留為 [偵錯工具組建] 取消選取。 優化程式碼比較難進行偵錯工具，因為指令不會直接對應到原始程式碼中的語句。|
+|**輸出**  > **輸出路徑**|通常會設定為 *bin\Debug* 進行偵錯工具。|
+|**Advanced** 按鈕|如需 advanced 偵錯工具選項的詳細資訊，請參閱 [ (c # ) 的 [advanced build settings] 對話方塊 ](../ide/reference/advanced-build-settings-dialog-box-csharp.md)。 符號 (*.pdb*) 檔案的可移植格式是適用于 .net Core 應用程式的最新跨平臺格式。
 
 ## <a name="see-also"></a>另請參閱
-- [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)
+- [偵錯工具設定和準備](../debugger/debugger-settings-and-preparation.md)

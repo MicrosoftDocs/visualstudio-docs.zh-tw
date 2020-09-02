@@ -18,40 +18,40 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4beefddd429384fadda71d9742e8c0fac606c38e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900498"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista 的 ClickOnce 部署
 
-在 Visual Studio 中的建置應用程式的使用者帳戶控制 (UAC) 在 Windows Vista 上通常會產生的內嵌資訊清單中，編碼為二進位的 XML 資料，在應用程式的可執行檔。  ClickOnce 和免註冊 COM 應用程式需要的外部的資訊清單，因此 Visual Studio 會產生這些專案包含 UAC 資料，而不是內嵌的資訊清單的檔案。 ClickOnce 和免註冊 COM 部署 Visual Studio 會使用資訊檔案，稱為*app.manifest*產生外部 UAC 資訊清單資訊。 所有其他情況下，Visual Studio 會將 UAC 資料內嵌在應用程式的可執行檔。
+在 Visual Studio 中建立應用程式以進行使用者帳戶控制 (UAC) 在 Windows Vista 上，通常會產生內嵌的資訊清單，並在應用程式的可執行檔中編碼為二進位 XML 資料。  ClickOnce 和免註冊的 COM 應用程式需要外部資訊清單，因此 Visual Studio 會為這些專案產生檔案，其中包含 UAC 資料，而不是內嵌的資訊清單。 針對 ClickOnce 和免註冊的 COM 部署，Visual Studio 會使用名為 *app.config* 的檔案中的資訊來產生外部 UAC 資訊清單資訊。 在所有其他情況下，Visual Studio 將 UAC 資料內嵌在應用程式的可執行檔中。
 
-Visual Studio 會提供下列選項，以產生資訊清單：
+Visual Studio 針對資訊清單產生提供下列選項：
 
-- 使用內嵌資訊清單。 在應用程式的可執行檔中內嵌 UAC 資料，並以一般使用者身分執行。
+- 使用內嵌資訊清單。 將 UAC 資料內嵌在應用程式的可執行檔中，並以一般使用者的形式執行。
 
-   （除非您使用 ClickOnce 時），這是預設設定。 此設定支援在 Windows Vista 上的 Visual Studio 運作方式的一般方式，與內部和外部的產生資訊清單使用`AsInvoker`。
+   除非您使用 ClickOnce) ，否則這是預設的 (設定。 這項設定支援在 Windows Vista 上進行 Visual Studio 操作的一般方式，同時也會使用產生內部和外部資訊清單 `AsInvoker` 。
 
-- 使用外部資訊清單。 使用產生的外部資訊清單*app.manifest*。
+- 使用外部資訊清單。 使用 *app.config*產生外部資訊清單。
 
-   這會將外部資訊清單產生使用中的資訊*app.manifest*。 當您發行應用程式使用 ClickOnce 或免註冊 COM 時，Visual Studio 會加入*app.manifest*至專案，然後新增此選項。
+   這只會使用 *app.config*中的資訊來產生外部資訊清單。 當您使用 ClickOnce 或免註冊的 COM 發行應用程式時，Visual Studio 會將 *app.config* 新增至專案，然後新增此選項。
 
-- 使用任何資訊清單。 建立無資訊清單應用程式。
+- 不使用資訊清單。 建立沒有資訊清單的應用程式。
 
-   這種方法就是所謂*虛擬化*。 使用此選項，與現有的應用程式從舊版的 Visual Studio 的相容性。
+   這種方法也稱為 *虛擬化*。 使用此選項可與舊版 Visual Studio 的現有應用程式相容。
 
-  新的屬性值可用於**應用程式**頁面的 專案設計工具 （Visual C# 中僅限專案） 和 MSBuild 專案檔案格式。
+  您可以在 [專案設計工具] 的 [ **應用程式** ] 頁面上找到新的屬性， (僅針對 Visual c # 專案) 和 MSBuild 專案檔案格式。
 
-  Visual Studio IDE 中設定 UAC 資訊清單產生的方法需視專案類型 （Visual C# 或 Visual Basic） 而有所不同。
+  在 Visual Studio IDE 中設定 UAC 資訊清單產生的方法，會因 Visual c # (或 Visual Basic) 的專案類型而有所不同。
 
-  * 如需設定 Visual C# 專案，以產生資訊清單資訊，請參閱 < [Application Page，Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)。
+  * 如需設定 Visual c # 專案以產生資訊清單的詳細資訊，請參閱 [應用程式頁面、專案設計工具 (c # ) ](../ide/reference/application-page-project-designer-csharp.md)。
 
-  * 如需設定 Visual Basic 專案以產生資訊清單資訊，請參閱 < [Application Page，Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)。
+  * 如需設定 Visual Basic 專案以產生資訊清單的詳細資訊，請參閱 [應用程式頁面、專案設計工具 (Visual Basic) ](../ide/reference/application-page-project-designer-visual-basic.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
-- [User permissions and Visual Studio](https://msdn.microsoft.com/library/d5c55084-1e7b-4b61-b478-137db01c0fc0) (使用者權限和 Visual Studio)
-- [專案設計工具，應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md)
-- [專案設計工具、應用程式頁面 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
+- [使用者權限和 Visual Studio](https://msdn.microsoft.com/library/d5c55084-1e7b-4b61-b478-137db01c0fc0)
+- [專案設計工具，應用程式頁 (C#)](../ide/reference/application-page-project-designer-csharp.md)
+- [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
