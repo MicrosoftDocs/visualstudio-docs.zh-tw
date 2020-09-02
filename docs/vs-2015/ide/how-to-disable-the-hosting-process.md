@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 95dcd7da113bfe996d00e617b7c8e2f9b68864d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667966"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>How to: Disable the Hosting Process
@@ -28,13 +28,13 @@ ms.locfileid: "72667966"
 
 1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟可執行專案。 不會產生可執行檔 (例如，類別庫或服務專案) 的專案沒有此選項。
 
-2. 在 [專案]  功能表上，按一下 [屬性]  。
+2. 按一下 [專案] 功能表上的 [屬性]。
 
-3. 按一下 [偵錯]  索引標籤。
+3. 按一下 [偵錯]**** 索引標籤。
 
-4. 清除 [啟用 Visual Studio 裝載處理序]  核取方塊。
+4. 清除 [啟用 Visual Studio 裝載處理序]**** 核取方塊。
 
-   停用裝載處理序時，無法使用數個偵錯功能，或效能降低。 如需詳細資訊，請參閱[偵錯和裝載處理序](../debugger/debugging-and-the-hosting-process.md)。
+   停用裝載處理序時，無法使用數個偵錯功能，或效能降低。 如需詳細資訊，請參閱 [偵錯工具和裝載進程](../debugger/debugging-and-the-hosting-process.md)。
 
    一般情況下，停用裝載處理序時：
 
@@ -45,4 +45,4 @@ ms.locfileid: "72667966"
 - 部分信任偵錯無法使用。
 
 ## <a name="see-also"></a>另請參閱
- [在應用程式開發期間建立](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)[的偵錯工具和裝載進程](../debugger/debugging-and-the-hosting-process.md)[裝載進程（.vshost.exe .exe）](../ide/hosting-process-vshost-exe.md)
+ [在應用程式開發期間](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6) [，偵錯工具和裝載進程的](../debugger/debugging-and-the-hosting-process.md)[裝載進程 ( # A0) ](../ide/hosting-process-vshost-exe.md)建立

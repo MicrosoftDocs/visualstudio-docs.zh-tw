@@ -15,34 +15,34 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e1223b3cee7f0246d8d685260fb6ea9ad0045347
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817641"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>迴圈外不可以有 'continue'
-您嘗試在迴圈外使用**continue**語句。 **Continue**語句只能在的主體內使用：  
+您嘗試在迴圈外使用 **continue** 語句。 **Continue**語句只能用在的主體內：  
   
-- `do-while`進入  
+- `do-while` 環  
   
-- `while`進入  
+- `while` 環  
   
-- **for**迴圈，  
+- **for** 迴圈  
   
-- **for/in**迴圈。  
+- **for/in** 迴圈。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 請確定**continue**語句出現在的主體內：  
+- 請確定 **continue** 語句出現在的主體內：  
   
-  - `do-while`進入  
+  - `do-while` 環  
 
-  - `while`進入  
+  - `while` 環  
 
-  - **for**迴圈，  
+  - **for** 迴圈  
 
-  - **for/in**迴圈。  
+  - **for/in** 迴圈。  
   
 ## <a name="see-also"></a>另請參閱  
  [continue 語句](../../javascript/reference/continue-statement-javascript.md)   

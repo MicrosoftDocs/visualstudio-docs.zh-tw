@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: afbe2f813f0bba881f85463777c704c30a45d9ce
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281496"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>應用程式設定檔中的連接屬性遺漏或不正確
@@ -21,7 +21,7 @@ ms.locfileid: "85281496"
 
 *.dbml* 檔案包含對應用程式設定檔中無法找到之連接字串的參考。 這是告知性訊息，當您按一下 [確定]**** 時就會建立連接字串設定。
 
-若要回應此訊息，請選取 **[確定]**。 *.Dbml*檔案中所含的連接資訊會新增至 [應用程式設定]。
+若要回應這則訊息，請選取 **[確定]**。 *.Dbml*檔中所包含的連接資訊會加入至應用程式設定。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
 ms.openlocfilehash: c3f8aef1b784b0261eeba6408a8cef0144e5fcac
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984995"
 ---
 # <a name="enable-subscription"></a>啟用訂用帳戶
@@ -28,7 +28,7 @@ Visual Studio for Mac 提供三種不同的訂用帳戶層級供您選擇，可�
 
 如果您的訂用帳戶已過期，則會有兩個選項：
 
-1. 更新您的訂閱 您可以通過流覽 來[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)續訂訂閱。
+1. 更新您的訂閱 您可以藉由流覽至來更新您的訂用帳戶 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 。
 
 2. 如果您有具有作用中訂用帳戶的其他帳戶，則可以將它新增至 Visual Studio for Mac，如[新增多個使用者帳戶](signing-in.md)一文中所述。 Visual Studio for Mac 會從您新增的所有帳戶中偵測到最適合的可用授權。
 

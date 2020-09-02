@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6f5f5c3fa70c022175208cee492f3c0e752826e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144675"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-提供方法，以執行堆疊查核行程使用.pdb 檔案中的資訊。  
+提供方法，以使用 .pdb 檔案中的資訊來進行堆疊逐步解說。  
   
 ## <a name="syntax"></a>語法  
   
@@ -32,21 +32,21 @@ IDiaStackWalker: IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDiaStackWalker`。  
+ 下表顯示的方法 `IDiaStackWalker` 。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
-|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|擷取堆疊框架的列舉值適用於 x86 平台。|  
-|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|擷取特定平台類型的堆疊框架的列舉值。|  
+|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|捕獲 x86 平臺的堆疊框架列舉值。|  
+|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|抓取特定平臺類型的堆疊框架列舉值。|  
   
 ## <a name="remarks"></a>備註  
- 此介面用來取得載入模組的堆疊框架的清單。 每個方法會傳遞[IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) （用戶端應用程式所實作） 的物件可提供所需的資訊建立堆疊框架的清單。  
+ 這個介面是用來取得已載入模組的堆疊框架清單。 每個方法都會傳遞 (用戶端應用程式所執行的 [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) 物件，) 提供建立堆疊框架清單所需的資訊。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 這個介面由呼叫`CoCreateInstance`方法的類別識別項`CLSID_DiaStackWalker`而介面 ID 的`IID_IDiaStackWalker`。 此範例會示範如何取得這個介面。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 藉由呼叫 `CoCreateInstance` 具有類別識別碼和之介面識別碼的方法，即可取得這個介面 `CLSID_DiaStackWalker` `IID_IDiaStackWalker` 。 此範例顯示如何取得此介面。  
   
 ## <a name="example"></a>範例  
- 此範例示範如何取得`IDiaStackWalker`介面。  
+ 此範例顯示如何取得 `IDiaStackWalker` 介面。  
   
 ```cpp#  
   
@@ -63,12 +63,12 @@ if (FAILED(hr))
 ```  
   
 ## <a name="requirements"></a>需求  
- 標頭：dia2.h  
+ 標頭： Dia2。h  
   
- 程式庫： diaguids.lib  
+ 程式庫： diaguids .lib  
   
- DLL: msdia80.dll  
+ DLL： msdia80.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [ (Debug 介面存取 SDK) 介面 ](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

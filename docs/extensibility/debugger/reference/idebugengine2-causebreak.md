@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::原因中斷 |微軟文件
+title: IDebugEngine2：： CauseBreak |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 62be3ce13ecbc3180cf2bbcce26b04f3d79edb1a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731162"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
-請求此除錯引擎 (DE) 除錯的所有程式在下次線程嘗試執行時停止執行。
+要求此 debug engine 所進行的所有程式都 (取消) ，以在下一個執行緒嘗試執行時停止執行。
 
 ## <a name="syntax"></a>語法
 
@@ -38,10 +38,10 @@ int CauseBreak();
 ```
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 此方法是非同步的:當程式在調用此方法後下次嘗試執行時,將發送[IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)事件。
+ 這個方法是非同步：當程式下一次嘗試在呼叫這個方法之後執行時，就會傳送 [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) 事件。
 
 ## <a name="see-also"></a>另請參閱
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)

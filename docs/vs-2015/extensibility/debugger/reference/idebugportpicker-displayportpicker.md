@@ -1,5 +1,5 @@
 ---
-title: IDebugPortPicker::DisplayPortPicker |Microsoft Docs
+title: IDebugPortPicker：:D isplayPortPicker |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3dd9317a73800a3886a5a807e9e28b0c24b2301c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188370"
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-顯示指定的對話方塊中，可讓使用者選取一個連接埠。  
+顯示允許使用者選取埠的指定對話方塊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,13 +41,13 @@ public int DisplayPortPicker(
   
 #### <a name="parameters"></a>參數  
  `hwndParentDialog`  
- [in]父對話方塊中的控制代碼。  
+ 在父對話方塊的控制碼。  
   
  `pbstrPortId`  
- [out]連接埠識別碼字串。  
+ 擴展埠識別碼字串。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回值`S_FALSE`(或傳回值`S_OK`具有`BSTR`設定為`NULL`) 指出使用者已按下**取消**。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  (的傳回值 `S_FALSE` 或傳回值， `S_OK` 且 `BSTR` 設定為 `NULL`) 表示使用者按一下 [ **取消**]。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

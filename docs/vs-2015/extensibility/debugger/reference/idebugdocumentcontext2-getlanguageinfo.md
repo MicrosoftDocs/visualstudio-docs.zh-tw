@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetLanguageInfo |Microsoft Docs
+title: IDebugDocumentCoNtext2：： GetLanguageInfo |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f1c9d62fd368b248bd6267c9d85e86b9b6e4de36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145029"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得與此文件內容相關聯的語言。  
+取得與此檔內容相關聯的語言。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,16 +42,16 @@ int GetLanguageInfo( 
   
 #### <a name="parameters"></a>參數  
  `pbstrLanguage`  
- [out]傳回實作此文件內容的程式碼的語言名稱。  
+ 擴展傳回在此檔內容中執行程式碼的語言名稱。  
   
  `pguidLanguage`  
- [out]傳回可實作此文件內容的程式碼語言的 GUID。 例如，`guidVBScriptLang` 或 `guidCPPLang`。 此 GUID 並不限於所提供的語言[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]。  
+ 擴展傳回在此檔內容中執行程式碼之語言的 GUID。 例如，`guidVBScriptLang` 或 `guidCPPLang`。 此 GUID 不限於所提供的語言 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CDebugContext`公開的物件[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面。  
+ 下列範例顯示如何針對 `CDebugContext` 公開 [IDebugDocumentCoNtext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 介面的簡單物件，執行這個方法。  
   
 ```cpp#  
 HRESULT CDebugContext::GetLanguageInfo(BSTR* pbstrLanguage, GUID* pguidLanguage)    

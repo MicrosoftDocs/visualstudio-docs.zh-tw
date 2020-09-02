@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::Attach |Microsoft Docs
+title: IDebugProcess2：： Attach |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4d4664f164675c445510d8976f33577684dbd1d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188107"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-將工作階段的偵錯管理員 (SDM) 附加至處理序。  
+將會話 debug manager (SDM) 附加至進程。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,30 +46,30 @@ int Attach( 
   
 #### <a name="parameters"></a>參數  
  `pCallback`  
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)來進行偵錯事件通知的物件。  
+ 在用於 debug 事件通知的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 物件。  
   
  `rgguidSpecificEngines`  
- [in]用來偵錯的處理序中執行的程式偵錯引擎的 Guid 的陣列。 這個參數可以是 null 值。 如需詳細資訊，請參閱 < 備註 >。  
+ 在用來在進程中執行的偵錯工具之偵錯工具的 Guid 陣列。 這個參數可以是 null 值。 如需詳細資訊，請參閱備註。  
   
  `celtSpecificEngines`  
- [in]引擎中的偵錯的數字`rgguidSpecificEngines`陣列和大小`rghrEngineAttach`陣列。  
+ 在陣列中的偵錯工具引擎數目 `rgguidSpecificEngines` 以及陣列的大小 `rghrEngineAttach` 。  
   
  `rghrEngineAttach`  
- [in、 out]偵錯引擎所傳回的 HRESULT 代碼的陣列。 這個陣列的大小以指定`celtSpecificEngines`參數。 每個程式碼通常是`S_OK`或`S_ATTACH_DEFERRED`。 後者表示 DE 目前已連結至任何程式。  
+ [in，out]偵錯工具引擎所傳回的 HRESULT 代碼陣列。 這個陣列的大小是在參數中指定 `celtSpecificEngines` 。 每個程式碼通常是 `S_OK` 或 `S_ATTACH_DEFERRED` 。 後者表示 DE 目前未附加到任何程式。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示其他可能的值。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 下表顯示其他可能的值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
-|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|指定的處理序已附加偵錯工具。|  
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|附加程序期間，發生安全性違規。|  
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|桌面的程序無法附加至偵錯工具。|  
+|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|指定的進程已附加至偵錯工具。|  
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|附加程式期間發生安全性違規。|  
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|桌面進程無法附加至偵錯工具。|  
   
 ## <a name="remarks"></a>備註  
- 附加至處理序會將附加至偵錯引擎 (DE) 中指定偵錯該處理序中執行的所有程式的 SDM`rgguidSpecificEngines`陣列。 設定`rgguidSpecificEngines`為 null 的參數值，或包含`GUID_NULL`陣列中要附加至處理序中的所有程式。  
+ 附加至處理常式會將 SDM 附加至在該進程中執行的所有程式，而這些程式可以由 debug 引擎進行調試 (DE) 陣列中所指定 `rgguidSpecificEngines` 。 將 `rgguidSpecificEngines` 參數設定為 null 值，或包含 `GUID_NULL` 在陣列中以附加至進程中的所有程式。  
   
- 在此程序中發生的所有偵錯事件傳送至給定[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)物件。 這`IDebugEventCallback2`SDM 呼叫這個方法時，提供物件。  
+ 在處理常式中發生的所有 debug 事件都會傳送至指定的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 物件。 `IDebugEventCallback2`當 SDM 呼叫這個方法時，會提供此物件。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   

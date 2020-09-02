@@ -1,5 +1,5 @@
 ---
-title: '&lt;customErrorReporting&gt;項目 （ClickOnce 部署） |Microsoft Docs'
+title: '&lt;Customerrorreporting> &gt; 元素 (ClickOnce 部署) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -16,13 +16,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7e8a0db3e10a277fe1c4a2f8fcd2bb85fa69e69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187823"
 ---
-# <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting&gt;項目 （ClickOnce 部署）
+# <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;&gt;ClickOnce 部署 (的 customerrorreporting> 元素) 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定要在錯誤發生時顯示的 URI。  
@@ -36,12 +36,12 @@ ms.locfileid: "68187823"
 ```  
   
 ## <a name="remarks"></a>備註  
- 這是選擇性的項目。 否則，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]會顯示錯誤對話方塊顯示的例外狀況堆疊。 如果`customErrorReporting`項目，則[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]改為將會顯示所指定的 URI`uri`參數。 目標 URI 會包含外部例外狀況類別、 內部例外狀況類別，以及內部例外狀況訊息，做為參數。  
+ 這是選擇性的項目。 如果沒有，則會 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 顯示 [錯誤] 對話方塊，顯示例外狀況堆疊。 如果專案 `customErrorReporting` 存在，則 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 會改為顯示參數所指示的 URI `uri` 。 目標 URI 將包含外部例外狀況類別、內部例外狀況類別，以及內部例外狀況訊息作為參數。  
   
- 您可以使用此項目新增至您的應用程式報告功能的錯誤。 因為產生的 URI 包含錯誤的類型的相關資訊，該資訊，並顯示，例如，適當的疑難排解畫面內可剖析您的網站。  
+ 使用這個元素可將錯誤報表功能新增至您的應用程式。 由於產生的 URI 包含錯誤類型的相關資訊，您的網站可以剖析該資訊並顯示，例如適當的疑難排解畫面。  
   
 ## <a name="example"></a>範例  
- 下列程式碼片段顯示`customErrorReporting`項目，以及它可能會產生所產生的 URI。  
+ 下列程式碼片段會顯示 `customErrorReporting` 元素，以及產生的 URI。  
   
 ```  
 <customErrorReporting uri=http://www.contoso.com/applications/error.asp />  

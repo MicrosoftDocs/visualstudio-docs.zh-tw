@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3199498f9e31f65045f7df44c4c6b6c39be18f56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144735"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-公開的堆疊框架的屬性。  
+公開堆疊框架的屬性。  
   
 ## <a name="syntax"></a>語法  
   
@@ -32,32 +32,32 @@ IDiaStackFrame : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 以下是支援此介面的方法：  
+ 以下是這個介面支援的方法：  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|擷取表示基底的指標會配置此位址範圍中的程式碼的旗標。 此方法已淘汰。|  
-|[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|擷取框架的位址基底。|  
-|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|擷取旗標，表示C++例外狀況處理是作用中。|  
-|[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|擷取旗標，指出區塊包含函式的進入點。|  
-|[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|擷取推送到堆疊上的本機變數的位元組的數目。|  
-|[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|擷取位元組的推送到堆疊上的參數數目。|  
-|[IDiaStackFrame::get_lengthProlog](../../debugger/debug-interface-access/idiastackframe-get-lengthprolog.md)|擷取的初構程式碼區塊中的位元組數目|  
-|[IDiaStackFrame::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiastackframe-get-lengthsavedregisters.md)|擷取已儲存的暫存器推送到堆疊上的位元組數目。|  
-|[IDiaStackFrame::get_localsBase](../../debugger/debug-interface-access/idiastackframe-get-localsbase.md)|擷取區域變數的位址基底。|  
-|[IDiaStackFrame::get_maxStack](../../debugger/debug-interface-access/idiastackframe-get-maxstack.md)|擷取推入堆疊框架中的位元組的數目上限。|  
-|[IDiaStackFrame::get_rawLVarInstanceValue](../../debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue.md)|擷取指定的本機變數的值來當做未經處理位元組。|  
-|[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)|擷取值，指定暫存器。|  
-|[IDiaStackFrame::get_returnAddress](../../debugger/debug-interface-access/idiastackframe-get-returnaddress.md)|擷取框架的傳回位址。|  
-|[IDiaStackFrame::get_size](../../debugger/debug-interface-access/idiastackframe-get-size.md)|擷取的框架，以位元組為單位的大小。|  
-|[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|擷取指出系統例外狀況處理為作用中的旗標。|  
-|[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|擷取的框架類型。|  
+|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|抓取旗標，指出基底指標是配置給此位址範圍中的程式碼。 此方法已被取代。|  
+|[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|抓取框架的位址基底。|  
+|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|抓取旗標，指出 c + + 例外狀況處理有效。|  
+|[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|抓取旗標，指出區塊包含函數的進入點。|  
+|[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|抓取推播于堆疊上的本機變數位元組數目。|  
+|[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|抓取堆疊上推送之參數的位元組數目。|  
+|[IDiaStackFrame::get_lengthProlog](../../debugger/debug-interface-access/idiastackframe-get-lengthprolog.md)|抓取區塊中序言程式碼的位元組數目|  
+|[IDiaStackFrame::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiastackframe-get-lengthsavedregisters.md)|抓取推送至堆疊的已儲存暫存器位元組數目。|  
+|[IDiaStackFrame::get_localsBase](../../debugger/debug-interface-access/idiastackframe-get-localsbase.md)|抓取區域變數的位址基底。|  
+|[IDiaStackFrame::get_maxStack](../../debugger/debug-interface-access/idiastackframe-get-maxstack.md)|抓取框架中堆疊上推送的位元組數目上限。|  
+|[IDiaStackFrame::get_rawLVarInstanceValue](../../debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue.md)|以原始位元組形式抓取指定區域變數的值。|  
+|[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)|抓取指定之暫存器的值。|  
+|[IDiaStackFrame::get_returnAddress](../../debugger/debug-interface-access/idiastackframe-get-returnaddress.md)|抓取框架的傳回位址。|  
+|[IDiaStackFrame::get_size](../../debugger/debug-interface-access/idiastackframe-get-size.md)|抓取框架的大小（以位元組為單位）。|  
+|[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|抓取旗標，指出系統例外狀況處理作用中。|  
+|[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|抓取框架類型。|  
   
 ## <a name="remarks"></a>備註  
- 堆疊框架是在其執行期間的函式呼叫抽象概念。  
+ 堆疊框架是函數呼叫在其執行期間的抽象概念。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 取得這個介面，藉由呼叫[idiaenumstackframes:: Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)方法。 請參閱[IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)介面，如需範例，取得`IDiaStackFrame`介面。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 藉由呼叫 [IDiaEnumStackFrames：： Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) 方法來取得這個介面。 如需取得介面的範例，請參閱 [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) 介面 `IDiaStackFrame` 。  
   
 ## <a name="example"></a>範例  
  此範例會顯示堆疊框架的各種屬性。  
@@ -104,14 +104,14 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
 ```  
   
 ## <a name="requirements"></a>需求  
- 標頭：dia2.h  
+ 標頭： Dia2。h  
   
- 程式庫： diaguids.lib  
+ 程式庫： diaguids .lib  
   
- DLL: msdia80.dll  
+ DLL： msdia80.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [ (Debug 介面存取 SDK) 介面 ](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   
- [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)   
+ [IDiaEnumStackFrames：： Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

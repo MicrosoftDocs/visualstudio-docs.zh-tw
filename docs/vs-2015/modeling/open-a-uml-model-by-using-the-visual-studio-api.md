@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 694f10fb0af440513331aa6e76dbf9a59a16d340
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668500"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>使用 Visual Studio API 開啟 UML 模型
@@ -25,16 +25,16 @@ ms.locfileid: "72668500"
 
  如果您只想要讀取程式碼中的模型，而不讓使用者看到它，則可以使用下列方法：
 
-- Visual Studio 模型匯流排可讓您存取模型和其內的項目，並提供在兩個模型之間建立連結的標準方法。 如需詳細資訊，請參閱[整合 UML 模型與其他模型和工具](../modeling/integrate-uml-models-with-other-models-and-tools.md)。
+- Visual Studio 模型匯流排可讓您存取模型和其內的項目，並提供在兩個模型之間建立連結的標準方法。 如需詳細資訊，請參閱 [整合 UML 模型與其他模型和工具](../modeling/integrate-uml-models-with-other-models-and-tools.md)。
 
-- 您可以使用唯讀模式開啟模型。 如需詳細資訊，請參閱[在程式碼中讀取 UML 模型](../modeling/read-a-uml-model-in-program-code.md)。
+- 您可以使用唯讀模式開啟模型。 如需詳細資訊，請參閱 [在程式碼中讀取 UML 模型](../modeling/read-a-uml-model-in-program-code.md)。
 
-## <a name="Showing"></a>在 Visual Studio 中開啟模型和圖表
+## <a name="opening-models-and-diagrams-in-visual-studio"></a><a name="Showing"></a> 在 Visual Studio 中開啟模型和圖表
  若要在使用者介面中開啟模型，請使用標準 Visual Studio API `EnvDTE.DTE`。 有兩個您可以針對模型專案項目執行的實用轉換：
 
-- 如果專案是模型專案，以及在目前 AppDomain 中載入專案，則 `EnvDTE.Project` 可以轉換為 `IModelingProject`，以及從中進行轉換。
+- `EnvDTE.Project``IModelingProject`如果專案是模型專案，而且專案是在目前的 AppDomain 中載入，則可以轉換成或從中轉換。
 
-- 如果項目是 UML 圖表，則 `EnvDTE.ProjectItem` 可以轉換為 `IDiagramContext`，以及從中進行轉換。
+- `EnvDTE.ProjectItem``IDiagramContext`如果專案是 UML 圖表，則可以轉換成或從轉換。
 
   在下列範例中，您的專案應該匯入這些參考：
 
@@ -115,5 +115,5 @@ foreach (ProjectItem item in project.ProjectItems)
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)[擴充 uml 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)

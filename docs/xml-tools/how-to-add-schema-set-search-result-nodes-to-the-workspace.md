@@ -9,33 +9,33 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d94544fd017809b32b7a144b16da4515e6b2e4bb
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816315"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>如何：將架構集合搜尋結果節點新增至工作區
 
-本主題說明如何加入在**XML 架構瀏覽器**中反白顯示的節點，做為工作區中關鍵字搜尋的結果。
+本主題說明如何在工作區中加入已在 **XML 架構瀏覽器** 中反白顯示的節點，做為關鍵字搜尋的結果。
 
 > [!NOTE]
-> 只有全域節點可以新增至[工作區](../xml-tools/xml-schema-designer-workspace.md)。
+> 只有全域節點可以加入至 [工作區](../xml-tools/xml-schema-designer-workspace.md)。
 
-這個範例會使用範例[採購單架構](../xml-tools/sample-xsd-file-purchase-order-schema.md)。
+此範例會使用範例 [採購單架構](../xml-tools/sample-xsd-file-purchase-order-schema.md)。
 
 ## <a name="to-add-schema-set-result-nodes"></a>加入結構描述集合結果節點
 
-1. 請依照[如何：建立和編輯 XSD 架構](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)檔案中的步驟執行。
+1. 遵循 how [to：建立和編輯 XSD 架構](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)檔案中的步驟。
 
-2. 在 [ [XML Explorer](../xml-tools/xml-schema-explorer.md) ] 工具列的 [搜尋] 文字方塊中輸入 "purchaseOrder"，然後按一下 [搜尋] 按鈕。
+2. 在 [XML Explorer](../xml-tools/xml-schema-explorer.md) 工具列的 [搜尋] 文字方塊中輸入 "purchaseOrder"，然後按一下 [搜尋] 按鈕。
 
      ![XML 結構描述總管關鍵字搜尋](../xml-tools/media/schemaexplorersearch.gif)
 
-     搜尋結果會在**XML 架構瀏覽器**中反白顯示，並在垂直捲動條上以刻度標示。
+     搜尋結果會在 **XML 架構瀏覽器** 中反白顯示，並在垂直捲動條上以刻度標記。
 
-3. 按一下 [摘要] 結果窗格上的 [**將反白顯示的節點新增至工作區**] 按鈕，將搜尋結果新增至工作區。
+3. 按一下 [摘要結果] 窗格上的 [ **將反白顯示的節點加入工作區** ]，以將搜尋結果新增至工作區。
 
      ![XML 結構描述總管搜尋結果](../xml-tools/media/schemaexplorersearchresult.gif)
 
-     在 `purchaseOrder` `PurchaseOrderType` [圖表視圖](../xml-tools/graph-view.md)的設計介面上，節點和節點會彼此旁顯示。 由於兩個節點是相關的 (`purchaseOrder` 項目屬於 `PurchaseOrderType` 型別)，因此兩個節點之間會畫上箭號。
+     `purchaseOrder`節點和 `PurchaseOrderType` 節點會出現在[圖形視圖](../xml-tools/graph-view.md)的設計介面旁。 由於兩個節點是相關的 (`purchaseOrder` 項目屬於 `PurchaseOrderType` 型別)，因此兩個節點之間會畫上箭號。

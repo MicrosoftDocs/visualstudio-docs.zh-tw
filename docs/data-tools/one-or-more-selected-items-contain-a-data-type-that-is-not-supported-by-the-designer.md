@@ -9,21 +9,21 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: d2f066bb7501085b66ba724f94840314063cd2ca
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281886"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>一個或多個選取的項目包含設計工具不支援的資料類型
 
-從**伺服器總管**或**資料庫總管**拖曳至**o/r 設計**工具的一個或多個專案包含**O/r 設計**工具不支援的資料類型，例如[CLR 使用者定義類型](/dotnet/framework/data/adonet/sql/clr-user-defined-types)。
+從 **伺服器總管** 或 **資料庫總管** 拖曳至 **o/r 設計** 工具的一或多個專案包含 **o/r 設計**工具不支援的資料類型，例如 [CLR 使用者定義類型](/dotnet/framework/data/adonet/sql/clr-user-defined-types)。
 
 ## <a name="to-correct-this-error"></a>更正這個錯誤
 
 1. 建立檢視，這個檢視會依據所需的資料表，而且其中只包含受支援的資料型別。
 
-2. 將視圖從**伺服器總管**或**資料庫總管**拖曳到設計工具上。
+2. 從 **伺服器總管** 或 **資料庫總管** 將視圖拖曳至設計工具。
 
 ## <a name="see-also"></a>另請參閱
 

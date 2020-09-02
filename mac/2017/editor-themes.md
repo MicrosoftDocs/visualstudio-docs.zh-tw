@@ -6,15 +6,15 @@ ms.author: dominicn
 ms.date: 11/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
 ms.openlocfilehash: 6aa4868f5e9c5fbaa4fb58258c70ce672edf2e30
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984826"
 ---
 # <a name="editor-themes"></a>編輯器佈景主題
 
-編輯器主題可以通過**Visual Studio >首選項>文字編輯器>顏色主題**功能表選項，更改為 Mac 視覺工作室預設提供的 10 種色彩配置中的任何一個：
+編輯器主題可以變更為 Visual Studio for Mac 中預設提供之10種色彩配置的任何一種，方法是透過 **Visual Studio > 喜好設定 > 文字編輯器 > 色彩主題** 功能表選項：
 
 ![色彩佈景主題選取](media/source-editor-image17.png)
 

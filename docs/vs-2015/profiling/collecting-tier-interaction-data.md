@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a20266c870316be9b6be67e661d13eb4e6fdbaee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62568043"
 ---
 # <a name="collecting-tier-interaction-data"></a>收集階層互動資料
@@ -42,11 +42,11 @@ ms.locfileid: "62568043"
   
 ### <a name="to-add-tier-interaction-data-to-a-profiling-run-by-using-the-performance-session-property-pages"></a>使用效能工作階段屬性頁將階層互動資料加入分析執行  
   
-1. 在 [效能總管] 中，從操作功能表選擇 [屬性]。  
+1. 在 [效能總管] 中，從操作功能表選擇 [屬性]****。  
   
-2. 選取 [階層互動] 頁面，然後按一下 [啟用階層互動分析] 核取方塊。  
+2. 選取 [階層互動]**** 頁面，然後按一下 [啟用階層互動分析]**** 核取方塊。  
   
-3. 在 [效能總管] 中，選取 [目標] 節點，然後指定您想要分析的專案、可執行檔或網站。  
+3. 在 [效能總管] 中，選取 [目標]**** 節點，然後指定您想要分析的專案、可執行檔或網站。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [階層互動檢視](../profiling/tier-interactions-view.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnum調試欄位:獲取計數 |微軟文件
+title: IEnumDebugFields：： GetCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5109e3f515b98cf8d89babb7a66ec28e7849d3ca
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80716919"
 ---
 # <a name="ienumdebugfieldsgetcount"></a>IEnumDebugFields::GetCount
-此方法返回枚舉中的元素數。
+這個方法會傳回列舉中的元素數目。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>參數
 `pcelt`\
-[出]返回枚舉中的元素數。
+擴展傳回列舉中的元素數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 此方法不是習慣的 COM 枚舉介面的一部分,該介面指定僅實現"下一步"、克隆、跳過和重置。
+ 這個方法不是慣例 COM 列舉介面的一部分，這會指定只需要執行 Next、Clone、Skip 和 Reset。
 
 ## <a name="see-also"></a>另請參閱
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

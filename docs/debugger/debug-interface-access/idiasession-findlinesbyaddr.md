@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24c6d927d129a8005bf2e43c6bb69d6523cb8790
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465668"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
-抓取指定編譯模組中包含指定位址的行。
+抓取指定編譯單位中包含指定之位址的行。
 
 ## <a name="syntax"></a>語法
 
@@ -44,17 +44,17 @@ HRESULT findLinesByAddr (
 
 `length`
 
-在指定要與此查詢一併涵蓋之位址範圍的位元組數目。
+在指定要包含在此查詢中之位址範圍的位元組數目。
 
 `ppResult`
 
-脫銷傳回[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)物件，其中包含涵蓋指定之位址範圍的所有行號清單。
+擴展傳回 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) 物件，其中包含涵蓋指定位址範圍的所有行號的清單。
 
 ## <a name="return-value"></a>傳回值
-如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
-這個範例會顯示函式，該函式會使用函式的位址和長度，取得函式中包含的所有行號。
+此範例顯示的函式會使用函式的位址和長度來取得函式中包含的所有行號。
 
 ```C++
 IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,

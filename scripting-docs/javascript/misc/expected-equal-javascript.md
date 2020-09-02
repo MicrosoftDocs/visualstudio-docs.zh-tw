@@ -1,5 +1,5 @@
 ---
-title: 必須是 ' = ' （JavaScript） |Microsoft Docs
+title: 需要 ' = ' (JavaScript) |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: acc91513cc7f230a150ca87eea5cddc4681e43d3
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816588"
 ---
 # <a name="expected--javascript"></a>必須是 '=' (JavaScript)
-您嘗試建立要搭配條件式編譯語句使用的變數，但未在變數與您要指派給它的值之間放置等號。  
+您嘗試建立要搭配條件式編譯語句使用的變數，但未在變數和您想要指派給它的值之間放置等號。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   

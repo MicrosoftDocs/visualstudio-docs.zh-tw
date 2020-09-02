@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::GetMethodLocationProperty |Microsoft Docs
+title: IDebugExpressionEvaluator：： GetMethodLocationProperty |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d82b002d9253b2d48f78e74fdf964cf42d241d9a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144398"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個方法會將方法的位置和位移轉換成記憶體位址。  
+這個方法會將方法位置和位移轉換成記憶體位址。  
   
 ## <a name="syntax"></a>語法  
   
@@ -48,27 +48,27 @@ int GetMethodLocationProperty(
   
 #### <a name="parameters"></a>參數  
  `upstrFullyQualifiedMethodPlusOffset`  
- [in]方法的位置和位移、 以字串表示。  
+ 在方法位置和位移，以字串表示。  
   
  `pSymbolProvider`  
- [in]符號提供者以表示[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)物件。  
+ 在表示為 [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) 物件的符號提供者。  
   
  `pAddress`  
- [in]在方法中，以表示地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件。  
+ 在方法內的位址，以 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 物件表示。  
   
  `pBinder`  
- [in]繫結器表示為[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)物件。  
+ 在以 [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) 物件表示的系結器。  
   
  `ppProperty`  
- [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)代表的記憶體位址的介面。  
+ 擴展傳回代表記憶體位址的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 介面。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 傳回的位址可用來設定中斷點，例如使用中。  
+ 例如，傳回的位址可以用來設定中斷點。  
   
- 儘管有此名稱`upstrFullyQualifiedMethodPlusOffset`，這個參數可以傳遞完整的方法名稱。 在此情況下，選取的方法是包圍`pAddress`。 此參數的解譯方式，是由運算式評估工具及它所支援的語言實作。  
+ 儘管有名稱 `upstrFullyQualifiedMethodPlusOffset` ，此參數也可以傳遞至部分限定的方法名稱。 在這種情況下，選取的方法是包含的方法 `pAddress` 。 此參數的解讀方式是由運算式評估工具和它所支援的語言來執行。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

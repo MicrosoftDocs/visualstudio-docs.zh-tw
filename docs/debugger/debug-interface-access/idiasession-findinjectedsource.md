@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 315c09c29f99d8fe148f9795879193b2cb1f9e49
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465815"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
-抓取屬性提供者或編譯進程的其他元件已放入符號存放區中的來源清單。
+抓取屬性提供者或編譯器的其他元件已放入符號存放區中的來源清單。
 
 ## <a name="syntax"></a>語法
 
@@ -34,14 +34,14 @@ HRESULT findInjectedSource ( 
 #### <a name="parameters"></a>參數
  srcFile
 
-在要搜尋之來源檔案的名稱。
+在要搜尋的原始程式檔名稱。
 
  ppResult
 
-脫銷傳回[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)物件，其中包含所有插入來源的清單。
+擴展傳回 [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) 物件，其中包含所有插入來源的清單。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

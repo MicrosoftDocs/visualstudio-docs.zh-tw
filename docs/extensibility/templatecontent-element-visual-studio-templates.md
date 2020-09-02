@@ -1,5 +1,5 @@
 ---
-title: 範本內容元素(可視化工作室範本) |微軟文件
+title: " (Visual Studio 範本的 TemplateContent 元素) |Microsoft Docs"
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 577ce71d3900947cde1de9a1e913124ab778a1ee
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699226"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent 項目 (Visual Studio 範本)
 
 指定範本的內容。
 
-元素層次結構:
+元素階層：
 
 ```xml
 <VSTemplate>
@@ -46,29 +46,29 @@ ms.locfileid: "80699226"
 
 |屬性|描述|
 |---------------|-----------------|
-|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|指定是否從範本創建專案時生成解決方案。|
+|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|指定從範本建立專案時是否要建立方案。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定多專案範本的組織和內容。|
-|[專案](../extensibility/project-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定要新增到專案的檔案或目錄。|
-|[參考](../extensibility/references-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定專案範本所需的程式集引用。|
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|選擇性項目。<br /><br /> 指定樣本中包含的檔。|
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定從範本建立項目或專案時要使用的任何自訂參數。|
+|[專案](../extensibility/project-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定要加入至專案的檔案或目錄。|
+|[參考](../extensibility/references-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定專案範本所需的元件參考。|
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|選擇性項目。<br /><br /> 指定包含在範本中的檔案。|
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定從範本建立專案或專案時所要使用的任何自訂參數。|
 
 ### <a name="parent-elements"></a>父項目
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必要元素。<br /><br /> 包含專案範本、專案範本或初學者工具組的所有元資料。|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必要元素。<br /><br /> 包含專案範本、專案範本或入門套件的所有中繼資料。|
 
 ## <a name="remarks"></a>備註
- `TemplateContent`是必需的元素。
+ `TemplateContent` 是必要的元素。
 
 ## <a name="example"></a>範例
- 下面的範例顯示了[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式的專案範本的元數據。
+ 下列範例會顯示應用程式專案範本的中繼資料 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"

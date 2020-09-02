@@ -12,25 +12,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66ac968f21ef28916f038f8abf54331bea2b972f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144561"
 ---
 # <a name="tree-menu-commands"></a>樹狀結構功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**樹狀結構**功能表提供命令，以展開或摺疊檢視。  
+**樹狀目錄**功能表提供用來展開或折迭視圖的命令。  
   
- [展開一層]   
- 展開目前選取的項目，在系統檢視中顯示其下的一個層級。  
+ [展開一層]****  
+ 在系統檢視中顯示目前選取的專案，方法是在其下顯示一個層級。  
   
  **展開分支**  
- 展開目前選取的項目底下的所有層級。  
+ 展開目前選取之專案底下的所有層級。  
   
- [全部展開]   
- 會展開並顯示在系統檢視中的所有層級。  
+ **全部展開**  
+ 展開並顯示系統視圖中的所有層級。  
   
- [摺疊]   
- 摺疊目前選取的項目底下的所有層級。
+ **摺疊**  
+ 折迭目前選取之專案底下的所有層級。

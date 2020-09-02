@@ -12,22 +12,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 63a1a0cd9068f8c9dc40dc6fc6ac7984ef250a16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197498"
 ---
 # <a name="help-menu-commands"></a>說明功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**協助**功能表提供的命令來開啟說明檔案。  
+[ **說明** ] 功能表提供開啟說明檔的命令。  
   
- **Tuple**  
- 開啟 Spy + + 說明的內容畫面。  
+ **Index**  
+ 開啟 Spy + + 說明的 [內容] 畫面。  
   
  **使用說明**  
- 開啟說明檔案，描述如何使用說明。  
+ 開啟描述如何使用說明的說明檔。  
   
  **關於 Spy++**  
  顯示 Spy + + 的軟體版本和著作權資訊。

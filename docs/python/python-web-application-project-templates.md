@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302753"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315118"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 應用程式專案範本
 
@@ -27,7 +27,7 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 
 ## <a name="use-a-project-template"></a>使用專案範本
 
-使用 **"檔** > **新專案** > "從範本創建**專案**。 要查看 Web 專案的範本，請在對話方塊的左側選擇**Python** > **Web。** 然後選取您選擇的範本，提供專案和方案的名稱，設定方案目錄和 Git 存放庫的選項，然後選取 [確定]****。
+您**可以使用 [** 檔案  >  **新增**  >  **專案**] 從範本建立專案。 若要查看 Web 專案的範本，請選取對話方塊左側的**Python**  >  **web** 。 然後選取您選擇的範本，提供專案和方案的名稱，設定方案目錄和 Git 存放庫的選項，然後選取 [確定]****。
 
 ![Web 應用程式的 [新專案] 對話方塊](media/projects-new-project-dialog-web.png)
 
@@ -37,7 +37,7 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 
 ### <a name="blank-group"></a>空白群組
 
-所有的 [空白 \<架構> Web 專案]**** 範本都會建立具有精簡樣板程式碼的專案，以及在 *requirements.txt* 檔案中宣告的必要相依性。
+所有 **空白的 \<framework> Web 專案** 範本都會建立一個專案，其中包含更多或較少的未定案程式碼，以及在 *requirements.txt* 檔案中宣告的必要相依性。
 
 | [範本] | 描述 |
 | --- | --- |
@@ -47,25 +47,25 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 
 ### <a name="web-group"></a>Web 群組
 
-所有**\<框架> Web 專案**範本創建具有相同設計的入門 Web 應用，而不考慮所選框架。 該應用程式具有 [首頁]、[關於] 和 [連絡] 頁面，且包含使用 Bootstrap 的瀏覽列和回應式設計。 每個應用程式都已適當設定為提供靜態檔案 (CSS、JavaScript 和字型)，並使用適用於該架構的頁面範本機制。
+不論選擇的架構為何，所有** \<Framework> Web 專案**範本都會建立具有相同設計的入門 Web 應用程式。 該應用程式具有 [首頁]、[關於] 和 [連絡] 頁面，且包含使用 Bootstrap 的瀏覽列和回應式設計。 每個應用程式都已適當設定為提供靜態檔案 (CSS、JavaScript 和字型)，並使用適用於該架構的頁面範本機制。
 
 | [範本] | 描述 |
 | --- | --- |
-| **瓶網專案** | 產生其靜態檔案會包含在 *static* 資料夾中，且經由 *app.py* 中程式碼處理的應用程式。 個別頁面的路由會包含在 *routes.py* 中，且 *views* 資料夾會包含頁面範本。|
-| **Django 網路專案** | 產生 Django 專案和含三個頁面、驗證支援，以及 SQLite 資料庫 (但不含資料模型) 的 Django 應用程式。 如需詳細資訊，請參閱 [Django 範本](python-django-web-application-project-template.md)和[學習 Django 步驟 4](learn-django-in-visual-studio-step-04-full-django-project-template.md)。 |
-| **弗拉斯克網路專案** | 產生其靜態檔案會包含在 *static* 資料夾中的應用程式。 *views.py* 中的程式碼會處理路由，而使用 Jinja 引擎的頁面範本則會包含在 *templates* 資料夾中。 *runserver.py* 檔案會提供啟動程式碼。 請參閱[學習 Flask 步驟 4](learn-flask-visual-studio-step-04-full-flask-project-template.md)。 |
-| **Flask/Jade Web 專案** | 生成與**Flask Web 專案**範本相同的應用，但使用 Jinja 範本引擎的 Jade 擴展。 |
+| **瓶 Web 專案** | 產生其靜態檔案會包含在 *static* 資料夾中，且經由 *app.py* 中程式碼處理的應用程式。 個別頁面的路由會包含在 *routes.py* 中，且 *views* 資料夾會包含頁面範本。|
+| **Django Web 專案** | 產生 Django 專案和含三個頁面、驗證支援，以及 SQLite 資料庫 (但不含資料模型) 的 Django 應用程式。 如需詳細資訊，請參閱 [Django 範本](python-django-web-application-project-template.md)和[學習 Django 步驟 4](learn-django-in-visual-studio-step-04-full-django-project-template.md)。 |
+| **Flask Web 專案** | 產生其靜態檔案會包含在 *static* 資料夾中的應用程式。 *views.py* 中的程式碼會處理路由，而使用 Jinja 引擎的頁面範本則會包含在 *templates* 資料夾中。 *runserver.py* 檔案會提供啟動程式碼。 請參閱[學習 Flask 步驟 4](learn-flask-visual-studio-step-04-full-flask-project-template.md)。 |
+| **Flask/Jade Web 專案** | 產生與 **Flask Web 專案** 範本相同的應用程式，但使用 Jinja 範本化引擎的 Jade 延伸模組。 |
 
 ### <a name="polls-group"></a>投票群組
 
-[投票 \<架構> Web 專案]**** 範本會建立入門 Web 應用程式，使用者可以透過它對不同的投票問題進行投票。 每個應用程式都建置在 [Web]**** 專案範本的結構上，以使用資料庫來管理投票和使用者回應。 應用程式會包含適當的資料模型，以及會從 *samples.json* 檔案載入投票項目的特殊應用程式頁面 (/seed)。
+**投票 \<framework> Web 專案**範本會建立入門 web 應用程式，讓使用者可以透過此應用程式來對不同的投票問題進行投票。 每個應用程式都建置在 [Web]**** 專案範本的結構上，以使用資料庫來管理投票和使用者回應。 應用程式會包含適當的資料模型，以及會從 *samples.json* 檔案載入投票項目的特殊應用程式頁面 (/seed)。
 
 | [範本] | 描述 |
 | --- | --- |
 | **投票 Bottle Web 專案** | 產生能針對記憶體內資料庫、MongoDB 或 Azure 資料表儲存體執行的應用程式，這是使用 `REPOSITORY_NAME` 環境變數來設定。 資料模型和資料存放區程式碼會包含在 *models* 資料夾中，且 *settings.py* 檔案會包含程式碼以決定要使用哪個資料存放區。 |
 | **投票 Django Web 專案** | 會產生 Django 專案和包含三個頁面及 SQLite 資料庫的 Django 應用程式。 包含對 Django 系統管理介面的自訂項目，以允許已驗證的系統管理員建立及管理投票。 如需詳細資訊，請參閱 [Django 範本](python-django-web-application-project-template.md)和[學習 Django 步驟 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)。 |
 | **投票 Flask Web 專案** | 產生能針對記憶體內資料庫、MongoDB 或 Azure 資料表儲存體執行的應用程式，這是使用 `REPOSITORY_NAME` 環境變數來設定。 資料模型和資料存放區程式碼會包含在 *models* 資料夾中，且 *settings.py* 檔案會包含程式碼以決定要使用哪個資料存放區。 該應用程式針對頁面範本會使用 Jinja 引擎。 請參閱[學習 Flask 步驟 5](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)。 |
-| **投票 Flask/Jade Web 專案** | 生成與**投票法弗拉斯克 Web 專案**範本相同的應用程式，但使用 Jinja 範本引擎的 Jade 擴展。 |
+| **投票 Flask/Jade Web 專案** | 產生與 **投票 Flask Web 專案** 範本相同的應用程式，但使用 Jinja 範本化引擎的 Jade 延伸模組。 |
 
 ## <a name="install-project-requirements"></a>安裝專案需求
 
@@ -81,21 +81,21 @@ Microsoft Azure 雲端服務「確實」** 支援 *requirements.txt* 檔案。 �
 
 ## <a name="debugging"></a>偵錯
 
-當啟動 Web 專案以進行偵錯時，Visual Studio 會在隨機的連接埠上啟動本機 Web 伺服器，並將您的預設瀏覽器開啟至該位址和連接埠。 要指定其他選項，請按右鍵專案，選擇**屬性**，然後選擇**Web 啟動器**選項卡：
+當啟動 Web 專案以進行偵錯時，Visual Studio 會在隨機的連接埠上啟動本機 Web 伺服器，並將您的預設瀏覽器開啟至該位址和連接埠。 若要指定其他選項，請以滑鼠右鍵按一下專案、選取 [ **屬性**]，然後選取 [ **Web 啟動器** ] 索引標籤：
 
 ![一般 Web 範本的 Web 啟動器屬性](media/template-web-launcher-properties.png)
 
 在 [偵錯]**** 群組中：
 
 - **搜尋路徑**、**指令碼引數**、**解譯器引數**及**解譯器路徑**：這些選項與[標準偵錯](debugging-python-in-visual-studio.md)的選項相同。
-- **啟動 URL**：指定在瀏覽器中開啟的 URL。 預設值為 `localhost`。
+- **啟動 URL**：指定在瀏覽器中開啟的 URL。 其預設為 `localhost`。
 - **連接埠號碼**：在未於 URL 中指定連接埠的情況下，要使用的連接埠 (Visual Studio 預設會自動選取一個)。 此設定可讓您覆寫 `SERVER_PORT` 環境變數的預設值，該預設值是範本用來設定本機偵錯伺服器要接聽的連接埠。
 
 [執行伺服器命令]**** 和 [偵錯伺服器命令]**** 群組中的屬性 (下圖所示的為後者) 會決定網頁伺服器的啟動方式。 因為許多架構要求使用目前專案外部的指令碼，您可以在這裡設定指令碼，而啟始模組的名稱可以當作參數傳遞。
 
 - **命令**：可以是 Python 指令碼 (*\*.py* 檔案)、模組名稱 (也就是 `python.exe -m module_name`) 或單一程式碼行 (也就是 `python.exe -c "code"`)。 下拉式清單中的值會指出所要使用的類型。
 - **引數**︰這些引數會緊跟著命令在命令列上傳遞。
-- **環境**︰以新行來分隔的 \<NAME>=\<VALUE> 配對清單，可指定環境變數。 這些變數是在所有可修改環境的屬性 (例如連接埠號碼和搜尋路徑) 之後設定，因此可能會覆寫這些值。
+- **環境**： \<NAME> = \<VALUE> 指定環境變數之配對的行分隔清單。 這些變數是在所有可修改環境的屬性 (例如連接埠號碼和搜尋路徑) 之後設定，因此可能會覆寫這些值。
 
 任何的專案屬性或環境變數都可以使用 MSBuild 語法指定，例如：`$(StartupFile) --port $(SERVER_PORT)`。
 `$(StartupFile)` 是啟始檔案的相對路徑，而 `{StartupModule}` 是啟始檔案的可匯入名稱。 `$(SERVER_HOST)` 和 `$(SERVER_PORT)` 是一般環境變數，會自動由 [啟動 URL]**** 和 [連接埠號碼]**** 屬性設定，或是由 [環境]**** 屬性設定。
@@ -108,21 +108,21 @@ Microsoft Azure 雲端服務「確實」** 支援 *requirements.txt* 檔案。 �
 [Bottle Web 專案]**** 範本包含會執行必要設定的未定案程式碼。 不過，匯入的 Bottle 應用程式可能不會包括此程式碼，在這種情況下，下列設定會使用已安裝的 `bottle` 模組啟動應用程式：
 
 - [執行伺服器命令]**** 群組：
-  - **命令** `bottle` ：（模組）
-  - **參數**：`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **命令**： `bottle` (模組) 
+  - **引數**： `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 - [偵錯伺服器命令]**** 群組：
-  - **命令** `bottle` ：（模組）
-  - **參數**`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **命令**： `bottle` (模組) 
+  - **引數** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 使用 Visual Studio 進行偵錯時，不建議使用 `--reload` 選項。
 
 ### <a name="sample-pyramid-configuration"></a>範例 Pyramid 設定
 
-Pyramid 應用程式目前最適合使用 `pcreate` 命令列工具建立。 創建應用後，可以使用[**"從現有 Python 代碼**](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files)範本"導入應用。 這麼做之後，請選取 [一般 Web 專案]**** 自訂項目來設定選項。 這些設定會假設 Pyramid 已經安裝到位於 `..\env` 的虛擬環境。
+Pyramid 應用程式目前最適合使用 `pcreate` 命令列工具建立。 一旦建立應用程式之後，就可以使用 [ [**從現有的 Python 程式碼**](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files) ] 範本匯入該應用程式。 這麼做之後，請選取 [一般 Web 專案]**** 自訂項目來設定選項。 這些設定會假設 Pyramid 已經安裝到位於 `..\env` 的虛擬環境。
 
 - [偵錯]**** 群組：
-  - **伺服器埠**：6543（或 *.ini*檔中配置的任何內容）
+  - **伺服器埠**： 6543 (或 *.ini* 檔案中設定的任何內容) 
 
 - [執行伺服器命令]**** 群組：
   - 命令：`..\env\scripts\pserve-script.py` (指令碼)
@@ -141,11 +141,11 @@ Pyramid 應用程式目前最適合使用 `pcreate` 命令列工具建立。 創
 
 ## <a name="convert-a-project-to-azure-cloud-service"></a>將專案轉換成 Azure 雲端服務
 
-**"轉換為 Microsoft Azure 雲服務專案"** 命令（下圖）將雲服務專案添加到解決方案中。 此專案包括要使用之虛擬機器和服務的部署設定及組態。 使用雲端專案上的 [發行]**** 命令以部署至雲端服務；Python 專案上的 [發行]**** 命令仍然會部署至網站。 如需詳細資訊，請參閱 [Azure 雲端服務專案](python-azure-cloud-service-project-template.md)。
+[ **轉換成 Microsoft Azure 雲端服務專案** ] 命令 (下圖) 將雲端服務專案新增至您的方案。 此專案包括要使用之虛擬機器和服務的部署設定及組態。 使用雲端專案上的 [發行]**** 命令以部署至雲端服務；Python 專案上的 [發行]**** 命令仍然會部署至網站。 如需詳細資訊，請參閱 [Azure 雲端服務專案](python-azure-cloud-service-project-template.md)。
 
 ![[轉換為 Microsoft Azure 雲端服務專案] 命令](media/template-web-convert-menu.png)
 
 ## <a name="see-also"></a>另請參閱
 
 - [Python 項目範本參考](python-item-templates.md)
-- [發佈到 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [發佈至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

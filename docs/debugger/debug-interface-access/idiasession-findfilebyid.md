@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1893a361ab4043ad5969a7fa899c07fe18253b9a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465829"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
@@ -38,13 +38,13 @@ HRESULT findFileById ( 
 
  `ppResult`
 
-脫銷傳回[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)物件，代表所抓取的來源檔案。
+擴展傳回代表抓取之來源檔案的 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 來源檔案識別碼是在內部用來進行 DIA SDK 的唯一值，讓所有的來源檔案都是唯一的。 這個方法通常會在內部使用於 DIA SDK。
+ 來源檔案識別碼是在內部用來將所有原始程式檔設為唯一 DIA SDK 的唯一值。 此方法通常會在內部用來 DIA SDK。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

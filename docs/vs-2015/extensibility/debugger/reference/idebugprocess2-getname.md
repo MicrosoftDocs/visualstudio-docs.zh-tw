@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetName |Microsoft Docs
+title: IDebugProcess2：： GetName |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6070e530726c4b21a9f4f123df431941a4b1801e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188014"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得標題、 易記名稱或處理序檔案名稱。  
+取得進程的標題、易記名稱或檔案名。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,13 +42,13 @@ int GetName( 
   
 #### <a name="parameters"></a>參數  
  `gnType`  
- [in]值，以從[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)列舉，指定要傳回名稱的類型。  
+ 在 [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) 列舉中的值，這個值會指定要傳回的名稱類型。  
   
  `pbstrName`  
- [out]傳回處理序的名稱。  
+ 擴展傳回進程的名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   

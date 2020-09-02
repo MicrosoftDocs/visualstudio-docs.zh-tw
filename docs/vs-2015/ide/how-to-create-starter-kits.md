@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f9df8d85c600cd383a9a9059e689e6cb9f232d8f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668033"
 ---
 # <a name="how-to-create-starter-kits"></a>如何：建立入門套件
@@ -47,9 +47,9 @@ ms.locfileid: "72668033"
 
  下列主題包含建立範本的相關資訊。
 
- [如何：建立專案範本](../ide/how-to-create-project-templates.md)說明如何使用 [**匯出範本**] wizard 來建立範本。
+ [如何：建立專案範本](../ide/how-to-create-project-templates.md) 說明如何使用 [ **匯出範本** ] 建立範本。
 
- [如何：更新現有的範本](../ide/how-to-update-existing-templates.md)描述如何編輯已匯出的範本。 使用此程序即可修改 .vstemplate 檔案來自訂入門套件。
+ [如何：更新現有的範本](../ide/how-to-update-existing-templates.md) 說明如何編輯匯出的範本。 使用此程序即可修改 .vstemplate 檔案來自訂入門套件。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [建立專案和專案範本](../ide/creating-project-and-item-templates.md)[自訂](../ide/customizing-project-and-item-templates.md)範本[Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)

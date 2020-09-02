@@ -17,23 +17,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 321de64442b983dd6da1d23c25d535b389f15bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144587"
 ---
 # <a name="symbol-load-information-dialog-box"></a>符號載入資訊對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-當您以滑鼠右鍵按一下 [模組]  視窗並選擇 [符號載入資訊]  時，[符號載入資訊]  對話方塊隨即開啟。  
+當您以滑鼠右鍵按一下 [模組]**** 視窗並選擇 [符號載入資訊]**** 時，[符號載入資訊]**** 對話方塊隨即開啟。  
   
 ## <a name="uielement-list"></a>UIElement 清單  
  **資訊**  
- 根據 Visual Studio 安裝設定，以及您在 [選項]  對話方塊中對符號設定所做的變更，顯示針對符號檔 (PDB 檔) 搜尋的目錄。  
+ 根據 Visual Studio 安裝設定，以及您在 [選項]**** 對話方塊中對符號設定所做的變更，顯示針對符號檔 (PDB 檔) 搜尋的目錄。  
   
  **符號設定**  
- 按一下這個按鈕，可變更 [選項]  對話方塊中的符號設定 ([符號]  頁面、[偵錯]  分類)。 在該頁面上，您可以加入或移除符號位置、指定本機快取位置 (如果使用符號伺服器)，以及控制何時搜尋符號位置。  
+ 按一下這個按鈕，可變更 [選項]**** 對話方塊中的符號設定 ([符號]**** 頁面、[偵錯]**** 分類)。 在該頁面上，您可以加入或移除符號位置、指定本機快取位置 (如果使用符號伺服器)，以及控制何時搜尋符號位置。  
   
 ## <a name="see-also"></a>另請參閱  
- [指定符號 (.pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

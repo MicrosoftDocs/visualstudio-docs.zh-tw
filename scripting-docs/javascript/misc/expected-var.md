@@ -15,15 +15,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1fbf482e27dcf610c1660fa132f124532673e6cd
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817368"
 ---
 # <a name="expected-var"></a>必須是 'var'
-必須是 ' var ' （ERRnoVar 1034））  
+必須是 ' var ' (ERRnoVar 1034) # A2  
   
- 您無法在需要時新增關鍵字 var。  
+ 必要時，您無法新增關鍵字 var。  
   
- 如需 var 關鍵字的詳細資訊，請參閱[Var 語句](../../javascript/reference/var-statement-javascript.md)。
+ 如需 var 關鍵字的詳細資訊，請參閱 [Var 語句](../../javascript/reference/var-statement-javascript.md)。

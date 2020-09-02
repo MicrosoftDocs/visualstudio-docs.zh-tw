@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f3e030facd8c70aec4fdc480b01c90ee4c0acda7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188395"
 ---
 # <a name="idebugportpicker"></a>IDebugPortPicker
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-代表自訂的 UI 中選取連接埠。  
+表示用來選取埠的自訂 UI。  
   
 ## <a name="syntax"></a>語法  
   
@@ -28,20 +28,20 @@ ms.locfileid: "68188395"
 IDebugPortPicker : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- 連接埠提供者會實作這個介面。 連接埠提供者會定義將其公開為 CLSID，並指向其連接埠選擇器`metricPortPickerCLSID`計量在公開的 CLSID。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ 此介面是由埠供應商所執行。 埠供應商會以 CLSID 的形式公開，並將計量指向公開的 CLSID，以定義其埠選擇器 `metricPortPickerCLSID` 。  
   
 ## <a name="methods"></a>方法  
- 下表顯示的方法`IDebugPortPicker`。  
+ 下表顯示的方法 `IDebugPortPicker` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[DisplayPortPicker](../../../extensibility/debugger/reference/idebugportpicker-displayportpicker.md)|顯示指定的對話方塊中，可讓使用者選取一個連接埠。|  
+|[DisplayPortPicker](../../../extensibility/debugger/reference/idebugportpicker-displayportpicker.md)|顯示允許使用者選取埠的指定對話方塊。|  
 |[SetSite](../../../extensibility/debugger/reference/idebugportpicker-setsite.md)|設定服務提供者。|  
   
 ## <a name="requirements"></a>需求  
- 標頭：Msdbg.h  
+ 標頭： Msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll

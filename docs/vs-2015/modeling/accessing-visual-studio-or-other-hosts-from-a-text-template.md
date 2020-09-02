@@ -11,25 +11,25 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0e8cedc66d6b52f80239364a3e51b73e93a69aa4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655331"
 ---
 # <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>從文字範本存取 Visual Studio 或其他主機
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在文字模板中，您可以使用執行範本之主控制項所公開的方法和屬性，例如 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。
+在文字模板中，您可以使用執行範本的主機所公開的方法和屬性，例如 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。
 
  這適用于一般文字模板，而非前置處理過的文字模板。
 
 ## <a name="obtaining-access-to-the-host"></a>取得主機的存取權
 
-在 `template` 指示詞中設定 `hostspecific="true"`。 這可讓您使用具有[ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))類型的 `this.Host`。 此類型具有您可以使用的成員，例如，用來解析檔案名和記錄錯誤。
+在指示詞 `hostspecific="true"` 中設定 `template` 。 這可讓您使用  `this.Host` 具有類型 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))的。 此類型具有您可以使用的成員，例如，用來解析檔案名和記錄錯誤。
 
 ### <a name="resolving-file-names"></a>解析檔案名
- 若要尋找相對於文字模板之檔案的完整路徑，請使用這個。ResolvePath （）。
+ 若要尋找相對於文字模板之檔案的完整路徑，請使用此檔案。ResolvePath ( # A1。
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -45,7 +45,7 @@ Content of myFile is:
 ```
 
 ### <a name="displaying-error-messages"></a>顯示錯誤訊息
- 這個範例會在您轉換範本時記錄訊息。 如果主機是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的，則會新增至 [錯誤] 視窗。
+ 當您轉換範本時，此範例會記錄訊息。 如果主機為 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，則會將它們新增至錯誤視窗。
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -63,11 +63,11 @@ Content of myFile is:
 ```
 
 ## <a name="using-the-visual-studio-api"></a>使用 Visual Studio API
- 如果您在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中執行文字模板，則可以使用 `this.Host` 來存取 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 所提供的服務，以及任何已載入的封裝或延伸模組。
+ 如果您要在中執行文字模板 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，您可以使用 `this.Host` 來存取所提供的服務 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，以及任何已載入的封裝或延伸模組。
 
- 設定 hostspecific = "true"，並將 `this.Host` 轉換為 <xref:System.IServiceProvider>。
+ Set hostspecific = "true" 並轉換 `this.Host` 成 <xref:System.IServiceProvider> 。
 
- 這個範例會以服務的形式取得 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] API <xref:EnvDTE.DTE>：
+ 此範例會 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] <xref:EnvDTE.DTE> 以服務的形式取得 API：
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -83,4 +83,4 @@ Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
 ```
 
 ## <a name="using-hostspecific-with-template-inheritance"></a>搭配使用 hostSpecific 與範本繼承
- 如果您也使用 `inherits` 屬性，而且如果您繼承自指定 `hostspecific="true"` 的範本，請指定 `hostspecific="trueFromBase"`。 這可避免編譯器警告，因為屬性 `Host` 宣告了兩次。
+ 指定 `hostspecific="trueFromBase"` 是否也要使用 `inherits` 屬性，如果您繼承自指定的範本，則為 `hostspecific="true"` 。 這可避免編譯器警告，因為屬性 `Host` 已宣告兩次。

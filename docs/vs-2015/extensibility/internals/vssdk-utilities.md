@@ -11,22 +11,22 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 115f3e99fa09617fbcb7b278e1e7eae76a80e4fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144366"
 ---
 # <a name="vssdk-utilities"></a>VSSDK 公用程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-在本節中的主題會描述所隨附的 VSSDK 工具。  
+本節中的主題描述 VSSDK 隨附的工具。  
   
 ## <a name="in-this-section"></a>本節內容  
  [RegPkg 公用程式](../../extensibility/internals/regpkg-utility.md)  
   [CreatePkgDef 公用程式](../../extensibility/internals/createpkgdef-utility.md)  
   [CreateExpInstance 公用程式](../../extensibility/internals/createexpinstance-utility.md)  
-  [色彩主題設定工具](../../extensibility/internals/color-theming-tools.md)  
+  [色彩佈景主題設定工具](../../extensibility/internals/color-theming-tools.md)  
   [影像服務工具](../../extensibility/internals/image-service-tools.md)  
   
 ## <a name="related-sections"></a>相關章節

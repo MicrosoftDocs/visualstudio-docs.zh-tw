@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba27b32cc322da2e14cec86b878a7dd42dae0039
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668098"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>如何：建立類型之間的繼承 (類別設計工具)
@@ -32,7 +32,7 @@ ms.locfileid: "72668098"
 
      如果您還沒有類別圖，請先建立類別圖。 請參閱[如何：將類別圖表新增至專案 (類別設計工具)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。
 
-2. 在 [工具箱] 的 [類別設計工具] 下，按一下 [繼承]。
+2. 在 [工具箱]**** 的 [類別設計工具]**** 下，按一下 [繼承]****。
 
 3. 在類別圖上，繪製所需類型之間的繼承線，從下列各項開始：
 
@@ -42,12 +42,12 @@ ms.locfileid: "72668098"
 
     - 擴充中的介面到已擴充的介面
 
-4. (選擇性) 如果您有泛型類型的衍生類型，請按一下繼承線。 在 [屬性] 視窗中，將**型別引數**屬性設定為符合泛型型別所需的類型。
+4. (選擇性) 如果您有泛型類型的衍生類型，請按一下繼承線。 在 [屬性]**** 視窗中，將**型別引數**屬性設定為符合泛型型別所需的類型。
 
     > [!NOTE]
     > 如果父抽象類別至少包含一個抽象成員，則所有抽象成員都會實作為非抽象繼承類別。
     >
     >  雖然您可以視覺化現有的泛型類型，不過無法建立新的泛型類型。 您也無法變更現有泛型類型的型別參數。
 
-## <a name="see-also"></a>請參閱
- [繼承](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)[繼承基本概念](https://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)[如何：在類別設計工具中查看類型（類別設計工具）](../ide/how-to-view-inheritance-between-types-class-designer.md) [Visual C++類別之間的](../ide/visual-cpp-classes-in-class-designer.md)繼承
+## <a name="see-also"></a>另請參閱
+ [繼承](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)[繼承基本概念](https://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)[如何： (類別設計工具) ](../ide/how-to-view-inheritance-between-types-class-designer.md) [Visual C++ 類別之間的繼承類別設計工具](../ide/visual-cpp-classes-in-class-designer.md)
