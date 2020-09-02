@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 91b2e157ee64f5e4d91bc75a5d6f8d65d4312862
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78263145"
 ---
 # <a name="msbuild-best-practices"></a>MSBuild 最佳做法
@@ -30,7 +30,7 @@ ms.locfileid: "78263145"
 </MyProperty>
 ```
 
-- 通常，在選擇專案時，請避免使用萬用字元。 而要明確地指定檔案。 這是因為在大多數專案類型中，MSBuild 會在不同時間（例如添加或刪除項時）擴展萬用字元，這可能導致意外行為。 例外情況是 .NET Core SDK 樣式專案，這些專案正確處理萬用字元。
+- 一般情況下，請避免在選取專案時使用萬用字元。 而要明確地指定檔案。 這是因為在大部分的專案類型中，MSBuild 會在不同的時間展開萬用字元，例如新增或移除專案時，可能會導致非預期的行為。 例外狀況是在 .NET Core SDK 樣式的專案中，這會正確處理萬用字元。
 
 ## <a name="see-also"></a>另請參閱
 

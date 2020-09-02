@@ -12,10 +12,10 @@ ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: a4cdb685a11df8e013025fd91dd8869fe5851d93
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87453673"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>Visual Studio 2019 中的 JavaScript 和 TypeScript
@@ -35,11 +35,11 @@ Visual Studio 2019 中的 JavaScript 體驗由提供 TypeScript 支援的相同�
 Visual Studio 2019 提供了幾種將 TypeScript 編譯整合到專案中的選項：
 
 * [TypeScript NuGet 套件](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild)。 將 TypeScript 3.2 或更高版本的 NuGet 套件安裝到您的專案中時，會在編輯器中載入對應版本的 TypeScript 語言服務。
-* [TypeScript npm 套件](https://www.npmjs.com/package/typescript)。 將 TypeScript 2.1 或更高版本的 npm 套件安裝到您的專案中時，會在編輯器中載入對應版本的 TypeScript 語言服務。
+* [TypeScript npm 封裝](https://www.npmjs.com/package/typescript)。 將 TypeScript 2.1 或更高版本的 npm 套件安裝到您的專案中時，會在編輯器中載入對應版本的 TypeScript 語言服務。
 * TypeScript SDK 預設會在 Visual Studio 安裝程式中提供使用，以及從 [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-395) 下載的獨立 SDK。
 
 > [!TIP]
-> 對於在 Visual Studio 2019 中開發的專案，我們鼓勵您使用 TypeScript NuGet 或 TypeScript npm 套件，以在不同的平臺和環境中獲得更高的可攜性。 如需詳細資訊，請參閱[使用 NuGet 編譯 typescript 程式碼](../javascript/compile-typescript-code-nuget.md)和[使用 tsc 編譯 typescript 程式碼](../javascript/compile-typescript-code-npm.md)。
+> 針對在 Visual Studio 2019 中開發的專案，我們建議您使用 TypeScript NuGet 或 TypeScript npm 套件，以在不同的平臺和環境之間獲得更高的可攜性。 如需詳細資訊，請參閱 [使用 NuGet 編譯 typescript 程式碼](../javascript/compile-typescript-code-nuget.md) ，並 [使用 tsc 編譯 typescript 程式碼](../javascript/compile-typescript-code-npm.md)。
 
 ## <a name="projects"></a>專案
 

@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
 ms.openlocfilehash: 24df9f7c44ea2dbb9e9899abf68823683422da71
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235065"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>疑難排解及建立 MSBuild 問題的記錄檔
@@ -44,7 +44,7 @@ ms.locfileid: "87235065"
 - PropertyGroups 和 Imports
 - ItemDefinitionGroups
 - ItemGroups
-- Targets
+- 目標
 
 因此，假設順序如下：
 
@@ -116,8 +116,8 @@ Msbuild.binlog 檔案會建立在您執行 MSBuild 的目錄中。 您可以使�
 
 ## <a name="create-a-detailed-log"></a>建立詳細的記錄檔
 
-1. 從 Visual Studio 主功能表中，移至 [**工具**] [選項] [  >  **Options**  >  **專案和方案**] [  > **建立並執行**]。
-1. 兩個下拉式方塊中的 [Msbuild project build verbosity] \(MSBuild 專案組建詳細資料\)**** 都設為 [詳細]****。 前一個控制項**輸出視窗**中的組建詳細資訊，第二個控制項會控制在 \<projectname\> 組建期間于每個專案的中繼目錄中建立的記錄檔中的組建詳細資訊。
+1. 從 Visual Studio 主功能表中，移至 [**工具**  >  **選項**  >  **專案和方案**  > **組建及執行**]。
+1. 兩個下拉式方塊中的 [Msbuild project build verbosity] \(MSBuild 專案組建詳細資料\)**** 都設為 [詳細]****。 第一個控制項是 **輸出視窗** 中的組建詳細資訊，第二個則 \<projectname\> 是在組建期間，在每個專案的中繼目錄中所建立的 .log 檔案中控制組建詳細資訊。
 2. 在 Visual Studio 開發人員命令提示字元中，輸入下列任一命令，替換實際的路徑和組態值：
 
     ```cmd

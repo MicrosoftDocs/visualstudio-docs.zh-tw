@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 20e5d8a915c1621b26c070976f27db56d8f2c84e
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284057"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>如何：指定應用程式圖示 (Visual Basic、C#)
@@ -35,11 +35,11 @@ ms.locfileid: "85284057"
 
 1. 當 [專案設計工具]**** 出現時，請選擇 [應用程式]**** 索引標籤。
 
-1. **（Visual Basic）** &mdash;在 [**圖示**] 清單中，選擇圖示檔（*.ico*）。
+1. ** (Visual Basic) ** &mdash;在 [**圖示**] 清單中，選擇 (*.ico*) 檔案的圖示。
 
-    **C #** &mdash;在 [**圖示**] 清單附近，選擇 [ **\<Browse...>** ] 按鈕，然後流覽至您想要之圖示檔的位置。
+    **C #** &mdash;在**圖示**清單附近，選擇該 **\<Browse...>** 按鈕，然後流覽至您想要的圖示檔位置。
 
 ## <a name="see-also"></a>另請參閱
 
-- [專案設計工具、應用程式頁面（Visual Basic）](../ide/reference/application-page-project-designer-visual-basic.md)
-- [專案設計工具、應用程式頁面（c #）](../ide/reference/application-page-project-designer-csharp.md)
+- [[專案設計工具]、[應用程式] 頁面 (Visual Basic) ](../ide/reference/application-page-project-designer-visual-basic.md)
+- [應用程式頁面、專案設計工具 (c # ) ](../ide/reference/application-page-project-designer-csharp.md)

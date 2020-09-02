@@ -1,5 +1,5 @@
 ---
-title: 舊版語言服務中的註解程式碼 |Microsoft Docs
+title: 在舊版語言服務中將程式碼批註化 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,37 +12,37 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cd1405456ca9a6ba00926c82bcc7959ea36d26c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160915"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>在舊版語言服務中將程式碼設為註解
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-程式設計語言通常能用來標註或註解的程式碼。 註解是一段文字，提供程式碼的其他資訊，但會忽略期間編譯或解譯。  
+程式設計語言通常會提供批註或批註程式碼的方法。 批註是一段文字，可提供程式碼的其他相關資訊，但會在編譯或轉譯期間遭到忽略。  
   
- Managed 的封裝架構 (MPF) 類別會提供註解和取消註解選取的文字支援。  
+ 受控封裝架構 (MPF) 類別可支援批註和取消批註選取的文字。  
   
-## <a name="comment-styles"></a>註解樣式  
- 有兩種一般的樣式的註解：  
+## <a name="comment-styles"></a>批註樣式  
+ 批註的一般樣式有兩種：  
   
-1. 行註解，以單行註解的所在。  
+1. 行批註，其中批註是在同一行。  
   
-2. 區塊註解，其中註解可能包含多行。  
+2. 封鎖批註，其中批註可以包含多行。  
   
-   行註解通常會有起始字元 （或字元），在區塊註解時有開頭和結尾字元。 例如，在 C# 中，行註解的開頭 / /、 區塊註解的開頭和 / *，並結束\*/。  
+   行批註通常會有起始字元 (或字元) ，同時封鎖批註同時具有開頭和結尾字元。 例如，在 c # 中，行批註的開頭為//，而區塊批註的開頭為/*，結尾為 \* /。  
   
-   當使用者選取命令**註解選取範圍**從**編輯** -> **進階**功能表中，此命令會路由傳送至<xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A>方法<xref:Microsoft.VisualStudio.Package.Source>類別。 當使用者選取命令**取消註解選取範圍**，此命令會路由傳送至<xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A>方法。  
+   當使用者從 [**編輯**] 功能表中選取命令**批註選取專案**時  ->  **Advanced** ，此命令會路由至 <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> 類別上的方法 <xref:Microsoft.VisualStudio.Package.Source> 。 當使用者選取 **取消選取**命令的命令時，會將命令路由傳送至 <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> 方法。  
   
-## <a name="supporting-code-comments"></a>支援的程式碼註解  
- 您可以讓您的語言服務支援的程式碼的註解藉由`EnableCommenting`具名參數的<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>。 這會設定<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A>屬性<xref:Microsoft.VisualStudio.Package.LanguagePreferences>類別。 如需有關如何設定語言 servicce 功能的詳細資訊，請參閱 <<c0> [ 註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md))。  
+## <a name="supporting-code-comments"></a>支援程式碼批註  
+ 您可以透過的具名引數，讓您的語言服務支援程式碼批註 `EnableCommenting` <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 。 這會設定 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> 類別的屬性 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 。 如需設定 language servicce 功能的詳細資訊，請參閱) [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md) 。  
   
- 您也必須覆寫<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>方法來傳回<xref:Microsoft.VisualStudio.Package.CommentInfo>結構取代為您的語言的註解字元。 C#-樣式行註解字元都是預設值。  
+ 您也必須覆寫 <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> 方法，以傳回 <xref:Microsoft.VisualStudio.Package.CommentInfo> 具有您語言批註字元的結構。 C # 樣式的行批註字元是預設值。  
   
 ### <a name="example"></a>範例  
- 以下是範例實作<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>方法。  
+ 以下是方法的範例執行 <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> 。  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  

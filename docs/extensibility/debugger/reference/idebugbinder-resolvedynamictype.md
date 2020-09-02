@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::解析動態類型 |微軟文件
+title: IDebugBinder：： ResolveDynamicType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a3e490d06444d555625136d6b7ba2a8e99169f59
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735986"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
-此方法返回變數的確切類型。
+這個方法會傳回變數的確切型別。
 
 ## <a name="syntax"></a>語法
 
@@ -43,13 +43,13 @@ int ResolveDynamicType(
 
 ## <a name="parameters"></a>參數
 `pDynamic`\
-[在]表示變數類型的[IDebugDynamicField。](../../../extensibility/debugger/reference/idebugdynamicfield.md)
+在代表變數型別的 [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) 。
 
 `ppResolved`\
-[出]傳回[IDebugField,](../../../extensibility/debugger/reference/idebugfield.md)提供有關變數類型的特定資訊。
+擴展傳回 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ，提供變數型別的特定資訊。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

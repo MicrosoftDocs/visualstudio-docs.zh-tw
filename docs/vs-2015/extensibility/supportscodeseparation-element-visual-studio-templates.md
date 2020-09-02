@@ -1,5 +1,5 @@
 ---
-title: SupportsCodeSeparation 項目 （Visual Studio 範本） |Microsoft Docs
+title: " (Visual Studio 範本的 SupportsCodeSeparation 元素) |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,19 +14,19 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dd454873fb6a81e66efa99ed68007408f87ff824
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160501"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-指定是否**程式碼置於個別的檔案**中已啟用 核取方塊**加入新項目** 對話方塊。  
+指定是否在 [**加入新專案**] 對話方塊中，啟用 [將程式**代碼放在個別檔案中**] 核取方塊。  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<SupportsCodeSeparation>  
   
 ## <a name="syntax"></a>語法  
@@ -48,22 +48,22 @@ ms.locfileid: "68160501"
   
 |項目|描述|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義中顯示的方式**新的專案**或**新項目**對話方塊。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [ **新增專案** ] 或 [ **新增** 專案] 對話方塊中顯示的方式。|  
   
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 文字必須是`true`或`false`，這表示，zda bude**程式碼置於個別檔案**中已啟用 核取方塊**加入新項目** 對話方塊。  
+ 文字必須是 `true` 或 `false` ，表示在 [**加入新專案**] 對話方塊中是否已啟用 [將程式**代碼放入個別**檔案] 核取方塊。  
   
 ## <a name="remarks"></a>備註  
- `SupportsCodeSeparation` 是選擇性項目。 預設值為 `false`。  
+  是選擇性元素。 預設值是 `false`。  
   
- `SupportsCodeSeparation`項目僅適用於 Web 項目範本。  
+ `SupportsCodeSeparation`元素僅適用于 Web 專案範本。  
   
- 程式碼分離或程式碼後置頁面模型中，可讓您將標記放在一個檔案，將程式碼放在另一個檔案。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 和其他.NET 語言使用此模型。  
+ 程式碼分隔（或程式碼後端頁面模型）可讓您將標記保留在一個檔案中，並將程式碼放在另一個檔案中。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 和其他 .NET 語言使用此模型。  
   
 ## <a name="example"></a>範例  
- 下列範例會指定要顯示**程式碼置於個別檔案**選項。  
+ 下列範例會指定 **在個別檔案選項中顯示位置代碼** 。  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  
@@ -88,5 +88,5 @@ ms.locfileid: "68160501"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

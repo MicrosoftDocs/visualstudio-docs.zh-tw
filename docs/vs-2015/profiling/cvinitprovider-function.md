@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a5a8a9e70c85563e95037c754c59b6077ed21f28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188809"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider 函式
@@ -36,10 +36,10 @@ HRESULT CvInitProvider(
   
 #### <a name="parameters"></a>參數  
  `pGuid`  
- 提供者的 GUID。 不可以是 NULL。  
+ 提供者的 GUID。 不能是 NULL。  
   
  `ppProvider`  
- 將儲存提供者內容的輸出變數位址。 不可以是 NULL。  
+ 將儲存提供者內容的輸出變數位址。 不能是 NULL。  
   
 ## <a name="return-value"></a>傳回值  
  成功初始化提供者時傳回 S_OK，發生任何錯誤時則傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。  
@@ -48,4 +48,4 @@ HRESULT CvInitProvider(
  **標頭︰** cvmarkers.h  
   
 ## <a name="see-also"></a>另請參閱  
- [C++ 程式庫參考](../profiling/cpp-library-reference.md)
+ [C + + 程式庫參考](../profiling/cpp-library-reference.md)

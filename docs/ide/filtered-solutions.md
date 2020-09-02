@@ -11,10 +11,10 @@ ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 4c44d267ef5686d04e9549601e05866aabbfb62d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650843"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio 中已篩選的方案
@@ -37,7 +37,7 @@ ms.locfileid: "72650843"
 
 若要使用 [開啟專案]**** 對話方塊開啟方案而不載入其任何專案：
 
-1. 從功能表列中選擇 **"檔** > **打開** > **專案/解決方案**"。
+1. 從功能表列**選擇 [** 檔案  >  **開啟**  >  **專案/方案**]。
 
 2. 在 [開啟專案]**** 對話方塊中選取解決方案，然後選取 [不要載入專案]****。
 
@@ -57,7 +57,7 @@ ms.locfileid: "72650843"
 
 (Visual Studio 2019 16.1 版中的新功能。)
 
-要打開解決方案而不從命令列載入其任何專案，請使用開關，[`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md)如以下示例所示：
+若要在不從命令列載入任何專案的情況下開啟方案，請使用 [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md) 參數，如下列範例所示：
 
 ```cmd
 devenv /donotloadprojects MySln.sln

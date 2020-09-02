@@ -11,18 +11,18 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 6870143be825469fde2be4b3448da24d54034fc1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284174"
 ---
 # <a name="how-to-manually-create-web-templates"></a>如何：手動建立網站範本
 
-建立網站範本與建立其他種類的範本不同。 由於 Web 專案範本會出現在 [**加入新網站**] 對話方塊中，而 Web 專案專案會依程式語言分類，因此 *.vstemplate*檔案必須將範本指定為 web 範本，並識別程式設計語言。
+建立網站範本與建立其他種類的範本不同。 由於 Web 專案範本會出現在 [ **加入新網站** ] 對話方塊中，而 Web 專案專案會依程式設計語言分類，因此 *.vstemplate* 檔案必須將範本指定為 web 範本，並識別程式設計語言。
 
 > [!NOTE]
-> Web 範本必須包含空的 *.webproj*檔案，而且必須在元素的屬性中的 *.vstemplate*檔案中參考該檔案 `File` `Project` 。 雖然 Web 專案不需要 *.proj* 專案檔，但網站範本要正確運作就必須建立此虛設常式檔案。
+> Web 範本必須包含空的 *.webproj* 檔案，而且必須在專案屬性的 *.vstemplate* 檔案中參考該檔案 `File` `Project` 。 雖然 Web 專案不需要 *.proj* 專案檔，但網站範本要正確運作就必須建立此虛設常式檔案。
 
 ## <a name="to-manually-create-a-web-template"></a>手動建立網站範本
 
@@ -30,11 +30,11 @@ ms.locfileid: "85284174"
 
 2. 修改或刪除專案中的檔案，或將新檔案新增至專案。
 
-3. 建立 XML 檔案，並在與專案相同的目錄中，使用 *.vstemplate*檔案副檔名來儲存它。 在 Visual Studio 中，請不要將它新增至專案。
+3. 使用 *.vstemplate* 副檔名來建立 XML 檔案，並將它儲存在與專案相同的目錄中。 在 Visual Studio 中，請不要將它新增至專案。
 
 4. 編輯 *.Vstemplate* XML 檔案，以提供專案範本中繼資料。 如需詳細資訊，請參閱[後續範例](#example)。
 
-5. 找出 `ProjectType` *.vstemplate*檔案中的專案，並將文字值設為 `Web` 。
+5. `ProjectType`在 *.vstemplate*檔案中尋找元素，並將文字值設為 `Web` 。
 
 6. 在 `ProjectType` 項目後面，新增 `ProjectSubType` 項目，並將文字值設為範本的程式設計語言。 程式設計語言可以是下列其中一個值：
 
@@ -52,13 +52,13 @@ ms.locfileid: "85284174"
      </TemplateData>
      ```
 
-7. 在您的範本中選取檔案（其中包含 *.vstemplate*檔案），以滑鼠右鍵按一下選取範圍，然後選擇 [**傳送到**  >  **壓縮的（zipped）資料夾**]。 檔案會壓縮成 *.zip*檔案。
+7. 在您的範本中選取檔案 (這包括 *.vstemplate*檔案) 、以滑鼠右鍵按一下選取範圍，然後選擇 [**傳送到**  >  **壓縮的 (壓縮的) 資料夾**]。 檔案會壓縮成 *.zip* 檔案。
 
-8. 將 *.zip*範本檔案放在 Visual Studio 專案範本目錄中。 此目錄預設為 *%USERPROFILE%\Documents\Visual Studio \<Version\> \ProjectTemplates*。
+8. 將 *.zip* 範本檔放在 Visual Studio 專案範本目錄中。 此目錄預設為 *%USERPROFILE%\Documents\Visual Studio \<Version\> \ProjectTemplates*。
 
 ## <a name="example"></a>範例
 
-下列範例顯示 Web 專案範本的基本 *.vstemplate*檔案：
+下列範例顯示 Web 專案範本的基本 *.vstemplate* 檔案：
 
 ```xml
 <VSTemplate Version="2.0.0" Type="Project"

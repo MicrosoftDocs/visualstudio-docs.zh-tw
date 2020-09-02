@@ -1,5 +1,5 @@
 ---
-title: SDKReference 元素 （Visual Studio 範本） |Microsoft Docs
+title: " (Visual Studio 範本的 SDKReference 元素) |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,10 +9,10 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 606c6595f83003c463d218cf7253407ae2e925d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160756"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 項目 (Visual Studio 樣板)
@@ -31,7 +31,7 @@ ms.locfileid: "68160756"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
  無。  
@@ -62,7 +62,7 @@ ms.locfileid: "68160756"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [References 項目 （Visual Studio 範本）](../extensibility/references-element-visual-studio-templates.md)   
- [Reference 項目 （Visual Studio 範本）](../extensibility/reference-element-visual-studio-templates.md)   
- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
+ [ (Visual Studio 範本的參考元素) ](../extensibility/references-element-visual-studio-templates.md)   
+ [ (Visual Studio 範本的參考元素) ](../extensibility/reference-element-visual-studio-templates.md)   
+ [建立專案和專案範本](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

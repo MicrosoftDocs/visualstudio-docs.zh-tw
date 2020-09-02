@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::枚舉 |微軟文件
+title: IDebugProcess2：： EnumThreads |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 52383649fc45eae6bbac6831f9bb233b9c0a2fde
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724065"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
-檢索進程中運行的所有線程的清單。
+抓取在進程中執行之所有線程的清單。
 
 ## <a name="syntax"></a>語法
 
@@ -41,15 +41,15 @@ int EnumThreads(
 
 ## <a name="parameters"></a>參數
 `ppEnum`\
-[出]返回包含進程中所有程式中所有線程的清單的[IEnum DebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)物件。
+擴展傳回 [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) 物件，其中包含進程中所有程式內所有線程的清單。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 此方法枚舉每個程式中運行的線程,然後將它們合併到線程的進程視圖中。 單個線程可能在多個程式中運行;但是,單個線程可能會在多個程式中運行。此方法僅枚舉該線程一次。
+ 這個方法會列舉在每個程式中執行的執行緒，然後將它們合併到執行緒的進程視圖中。 單一線程可能會在多個程式中執行;這個方法只會列舉該執行緒一次。
 
- 此方法顯示行程線程的清單,而不重複。 否則,要枚舉在特定程式中運行的線程,請使用[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)方法。
+ 這個方法會顯示進程的執行緒清單，而不會有重複的專案。 否則，若要列舉在特定程式中執行的執行緒，請使用 [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) 方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

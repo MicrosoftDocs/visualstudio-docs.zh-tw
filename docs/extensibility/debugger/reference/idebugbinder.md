@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder |微軟文件
+title: IDebugBinder |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fcdec19c4667356edaf9e057c86ddc24baf747b7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735967"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關如何執行 CLR 運算式評估工具的詳細資訊，請參閱 [CLR 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 此介面將符號欄位(通常由符號提供程式返回)綁定到包含符號當前值的記憶體上下文或物件。
+ 這個介面會將符號欄位（通常由符號提供者傳回）系結至記憶體內容或包含符號目前值的物件。
 
 ## <a name="syntax"></a>語法
 
@@ -31,32 +31,32 @@ ms.locfileid: "80735967"
 IDebugBinder : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 此介面支援表達式計算,必須由調試引擎 (DE) 實現。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ 這個介面支援運算式評估，並且必須由 debug engine (DE) 來執行。
 
-## <a name="notes-for-callers"></a>通話備註
- 此介面用於表示式計算過程,通常用於[評估同步](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)和[評估Async](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ 此介面會在運算式評估的過程中使用，且通常用於 [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 和 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)的實。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 下表顯示的方法`IDebugBinder`。
+ 下表顯示的方法 `IDebugBinder` 。
 
 |方法|描述|
 |------------|-----------------|
-|[綁定](../../../extensibility/debugger/reference/idebugbinder-bind.md)|獲取包含符號當前值的記憶體上下文或物件。|
-|[ResolveRuntimeType](../../../extensibility/debugger/reference/idebugbinder-resolveruntimetype.md)|確定物件的運行時類型。|
-|[GetMemoryContext](../../../extensibility/debugger/reference/idebugbinder-getmemorycontext.md)|將物件位置或記憶體位址轉換為記憶體上下文。|
-|[GetFunctionObject](../../../extensibility/debugger/reference/idebugbinder-getfunctionobject.md)|取得用於建立函數參數的[IDebug 函數物件](../../../extensibility/debugger/reference/idebugfunctionobject.md)。|
-|[ResolveDynamicType](../../../extensibility/debugger/reference/idebugbinder-resolvedynamictype.md)|獲取變數的確切類型。|
+|[繫結](../../../extensibility/debugger/reference/idebugbinder-bind.md)|取得包含符號目前值的記憶體內容或物件。|
+|[ResolveRuntimeType](../../../extensibility/debugger/reference/idebugbinder-resolveruntimetype.md)|判斷物件的執行時間類型。|
+|[GetMemoryContext](../../../extensibility/debugger/reference/idebugbinder-getmemorycontext.md)|將物件位置或記憶體位址轉換成記憶體內容。|
+|[GetFunctionObject](../../../extensibility/debugger/reference/idebugbinder-getfunctionobject.md)|取得用來建立函數參數的 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 物件。|
+|[ResolveDynamicType](../../../extensibility/debugger/reference/idebugbinder-resolvedynamictype.md)|取得變數的確切型別。|
 
 ## <a name="remarks"></a>備註
- 此介面返回表達式賦值器在解析樹中使用的物件。 表達式賦值器通過使用符號提供程式將運算式中的符號轉換為[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)的實例來解析表達式,IDebugField 根據其類型和在原始碼中的位置來描述每個符號。 [綁定](../../../extensibility/debugger/reference/idebugbinder-bind.md)方法`IDebugField`將 物件轉換為[IDebugObject 物件](../../../extensibility/debugger/reference/idebugobject.md),這些物件將符號類型連接或綁定到記憶體中的實際值。 然後`IDebugObject`,這些物件存儲在解析樹中,以供以後評估。
+ 此介面會傳回剖析樹狀結構中運算式評估工具所使用的物件。 運算式評估工具會使用符號提供者來剖析運算式，將運算式中的符號轉換成 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)的實例，這會根據原始程式碼中的型別和位置來描述每個符號。 [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)方法會將 `IDebugField` 物件轉換成[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，以便將符號類型連接或系結至記憶體中的實際值。 這些 `IDebugObject` 物件接著會儲存在剖析樹狀結構中，以供稍後評估之用。
 
 ## <a name="requirements"></a>需求
- 標題: ee.h
+ 標頭： ee. h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)

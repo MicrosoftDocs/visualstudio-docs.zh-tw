@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a0d95d4593939b878194d2aeef79bdd0a8ad946a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160645"
 ---
 # <a name="execution-profile-report"></a>執行分析報表
@@ -31,16 +31,16 @@ ms.locfileid: "68160645"
   
   下表顯示報表中的資料行。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
-|名稱|每個層級的呼叫堆疊的函式名稱。|  
+|Name|每個層級的呼叫堆疊的函式名稱。|  
 |內含樣本|針對到呼叫堆疊樹狀圖的這個層級為止的所有堆疊收集的樣本總數。 此內含數字是此函式的專屬樣本和其所有子節點的內含計數器的總和。|  
 |專有樣本|收集的樣本總數，其中，此函式是呼叫堆疊的最低層級。|  
 |內含 %|內含樣本資料行中顯示的樣本總數百分比。 百分比會四捨五入成兩個小數位數。|  
 |專有 %|專有樣本資料行中顯示的樣本總數百分比。 百分比會四捨五入成兩個小數位數。|  
 |詳細資料|函式的完整格式名稱。 當有詳細資料可用時，其中會包括行數。|  
   
- 在[執行時間 (執行緒檢視)](../profiling/execution-time-threads-view.md) 檢視中可以看到此報表的資料表。  
+ 您可以在 [ [執行時間] ([執行緒] 視圖) ](../profiling/execution-time-threads-view.md) 視圖中看到此報表資料表。  
   
 ## <a name="see-also"></a>另請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

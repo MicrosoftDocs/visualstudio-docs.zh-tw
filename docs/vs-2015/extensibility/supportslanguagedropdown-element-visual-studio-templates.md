@@ -1,5 +1,5 @@
 ---
-title: SupportsLanguageDropDown 項目 （Visual Studio 範本） |Microsoft Docs
+title: " (Visual Studio 範本的 SupportsLanguageDropDown 元素) |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,19 +14,19 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 53703d6178c81758650fdd00aada0a5952734caa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160492"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-指定是否 Web 項目範本是相同的多種語言，以及是否**語言**上，已啟用**加入新項目** 對話方塊。  
+指定多個語言的 Web 專案範本是否相同，以及是否在 [**加入新專案**] 對話方塊中啟用 [**語言**] 選項。  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<SupportsLanguageDropDown>  
   
 ## <a name="syntax"></a>語法  
@@ -48,22 +48,22 @@ ms.locfileid: "68160492"
   
 |項目|描述|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|  
   
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 文字必須是`true`或`false`，這表示，zda bude**語言**選項可從**加入新項目** 對話方塊。  
+ 此文字必須是 `true` 或 `false` ，指出是否可以從 [**加入新專案**] 對話方塊中使用 [**語言**] 選項。  
   
 ## <a name="remarks"></a>備註  
- `SupportsLanguageDropDown` 是選擇性項目。 預設值為 `false`。  
+  是選擇性元素。 預設值是 `false`。  
   
- `SupportsLanguageDropDown`項目僅適用於 Web 項目範本。  
+ `SupportsLanguageDropDown`元素僅適用于 Web 專案範本。  
   
- 如果此項目的值設定為`true`，則所有的程式設計語言的等同項目範本和**語言**都會啟用選項**加入新項目** 對話方塊。 此選項可讓您選擇的程式設計語言，您想要從範本建立的新項目。  
+ 如果這個元素的值設定為，則 `true` 所有程式設計語言的專案範本都相同，而且在 [**加入新專案**] 對話方塊中會啟用 [**語言**] 選項。 此選項可讓您選擇要從範本建立之新專案的程式設計語言。  
   
 ## <a name="example"></a>範例  
- 下列範例會指定要顯示**語言**下拉式清單選項。  
+ 下列範例會指定顯示 [ **語言** ] 下拉式清單選項。  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  
@@ -88,5 +88,5 @@ ms.locfileid: "68160492"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
