@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 890d9c5b1673a9af4acabf8262a76e2840ede8ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150881"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-略過指定的數目的列舉型別序列中的插入來源。  
+略過列舉序列中指定數目的插入來源。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,10 +35,10 @@ HRESULT Skip ( 
   
 #### <a name="parameters"></a>參數  
  celt  
- [in]略過列舉序列中的插入來源數目。  
+ 在列舉順序中要跳過的插入來源數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`有沒有其他插入的來源，以略過。  
+ 如果成功， `S_OK` 則傳回; 否則， `S_FALSE` 如果沒有任何插入的來源要略過，則會傳回。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

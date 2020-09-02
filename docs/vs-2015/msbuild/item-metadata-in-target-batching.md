@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9dd6c297e00a305fbd1b13cf0fe0bd4a4f151f6b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192871"
 ---
 # <a name="item-metadata-in-target-batching"></a>目標批次處理中的項目中繼資料
@@ -69,7 +69,7 @@ ms.locfileid: "68192871"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [如何：以累加方式建置](../msbuild/how-to-build-incrementally.md)   
- [批次處理](../msbuild/msbuild-batching.md)   
- [Target 項目 (MSBuild)](../msbuild/target-element-msbuild.md)   
- [工作批次處理中的項目中繼資料](../msbuild/item-metadata-in-task-batching.md)
+ [如何：以累加方式建立](../msbuild/how-to-build-incrementally.md)   
+ [配料](../msbuild/msbuild-batching.md)   
+ [MSBuild)  (目標元素 ](../msbuild/target-element-msbuild.md)   
+ [工作批次處理中的專案中繼資料](../msbuild/item-metadata-in-task-batching.md)

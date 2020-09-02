@@ -1,5 +1,5 @@
 ---
-title: 以程式設計方式將圖片和文字美工圖案新增至檔
+title: 以程式設計方式將圖片和文字藝術新增至檔
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 621051c827b08e66d68bc348401c2a939e279bcf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538082"
 ---
-# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>如何：以程式設計方式將圖片和文字美工圖案新增至檔
+# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>如何：以程式設計方式將圖片和文字藝術新增至檔
   您可以在設計階段或執行階段，將圖片和繪圖物件加入至您的文件。 文字藝術師可讓您將裝飾文字加入至 Microsoft Office Word 文件。 這些特殊文字效果是繪圖物件，您可自訂並將它們插入至文件。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "85538082"
 
 1. 請將游標置於想要在文件中插入圖片的位置。
 
-2. 按一下功能區的 [**插入**] 索引標籤。
+2. 按一下功能區的 [ **插入** ] 索引標籤。
 
-3. 在 [**圖例**] 群組中，按一下 [**圖片**]。
+3. 在 [ **圖例** ] 群組中，按一下 [ **圖片**]。
 
-4. 在 [**插入圖片**] 對話方塊中，流覽至您要插入的圖片，然後按一下 [**插入**]。
+4. 在 [ **插入圖片** ] 對話方塊中，流覽至您要插入的圖片，然後按一下 [ **插入**]。
 
      圖片隨即加入文件中目前的游標位置。
 
@@ -53,22 +53,22 @@ ms.locfileid: "85538082"
      [!code-vb[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#108)]
      [!code-csharp[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#108)]
 
-## <a name="add-wordart-at-design-time"></a>在設計階段加入藝術文字
+## <a name="add-wordart-at-design-time"></a>在設計階段加入藝術
  如果您正在開發文件層級自訂，可以在設計階段將文字藝術師加入至文件。
 
 ### <a name="to-add-wordart-to-a-word-document-at-design-time"></a>在設計階段將文字藝術師加入至 Word 文件
 
 1. 請將游標置於想要在文件中插入文字藝術師的位置。
 
-2. 按一下功能區的 [**插入**] 索引標籤。
+2. 按一下功能區的 [ **插入** ] 索引標籤。
 
-3. 在 [**文字**] 群組中，按一下 [**藝術字**]，然後選取 [藝術字] 樣式。
+3. 在 [ **文字** ] 群組中，按一下 [ **藝術字**]，然後選取 [藝術體] 樣式。
 
-4. 將您想要在檔中顯示的文字加入至 [**編輯藝術文字**] 對話方塊，然後按一下 **[確定]**。
+4. 將您想要在檔中顯示的文字加入至 [ **編輯藝術文字** ] 對話方塊中，然後按一下 **[確定]**。
 
      加入至文件的文字即會套用選取的文字藝術師樣式。
 
-## <a name="add-wordart-at-run-time"></a>在執行時間加入藝術文字
+## <a name="add-wordart-at-run-time"></a>在執行時間加入藝術
  您可以將文字藝術師插入至文件中目前游標的位置。 文件層級自訂與 VSTO 增益集的程序不同。
 
 ### <a name="to-add-wordart-at-the-cursor-location-in-a-document-level-customization"></a>在文件層級自訂的游標位置加入文字藝術師
@@ -97,11 +97,11 @@ ms.locfileid: "85538082"
 
 ## <a name="compile-the-code"></a>編譯程式碼
 
-- 磁片磁碟機 C 上必須有一個名為*SamplePicture.jpg*的圖片。
+- 磁片磁碟機 C 上必須存在名為 *SamplePicture.jpg* 的圖片。
 
 ## <a name="see-also"></a>另請參閱
 - [如何：以程式設計方式開啟現有檔](../vsto/how-to-programmatically-open-existing-documents.md)
-- [如何：以程式設計方式將文字插入 Word 檔](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [如何：以程式設計方式在搜尋後還原選取範圍](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+- [如何：以程式設計方式在 Word 檔中插入文字](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [如何：以程式設計方式在搜尋後還原選取專案](../vsto/how-to-programmatically-restore-selections-after-searches.md)
 - [如何：以程式設計方式儲存檔](../vsto/how-to-programmatically-save-documents.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)

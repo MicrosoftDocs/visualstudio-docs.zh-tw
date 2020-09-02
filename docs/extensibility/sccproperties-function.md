@@ -1,5 +1,5 @@
 ---
-title: Scc屬性功能 |微軟文件
+title: SccProperties 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bf2dd87efbb50346093144db6e069eea30138e37
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700499"
 ---
 # <a name="sccproperties-function"></a>SccProperties 函式
-此函數顯示檔或專案的原始程式碼管理屬性。
+此函數會顯示檔案或專案的原始檔控制屬性。
 
 ## <a name="syntax"></a>語法
 
@@ -33,34 +33,34 @@ SCCRTN SccProperties (
 ```
 
 #### <a name="parameters"></a>參數
- pvContext
+ pvCoNtext
 
-[在]原始程式碼管理外掛程式上下文結構。
+在原始檔控制外掛程式內容結構。
 
  hWnd
 
-[在]源控件外掛程式可以用作它提供的任何對話框的父級的IDE視窗句柄。
+在IDE 視窗的控制碼，原始檔控制外掛程式可以使用它做為它所提供之任何對話方塊的父代。
 
- lpFile 名稱
+ lpFileName
 
-[在]檔或專案的完全限定路徑名稱。
+在檔案或專案的完整路徑名稱。
 
 ## <a name="return-value"></a>傳回值
- 此函數的源碼管理外掛程式實現應返回以下值之一:
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|已成功顯示屬性。|
-|SCC_I_RELOADFILE|版本控制系統已修改文件屬性,因此IDE應重新載入此檔。|
-|SCC_E_PROJNOTOPEN|未在原始碼管理中打開指定的專案。|
-|SCC_E_NOTAUTHORIZED|使用者無權查看此檔或項目的屬性。|
-|SCC_E_FILENOTCONTROLLED|指定的檔或專案不受原始程式碼管理。|
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|發生未知或常規錯誤。|
+|SCC_OK|已成功顯示內容。|
+|SCC_I_RELOADFILE|版本控制系統已修改檔案屬性，因此 IDE 應重載此檔案。|
+|SCC_E_PROJNOTOPEN|未在原始檔控制中開啟指定的專案。|
+|SCC_E_NOTAUTHORIZED|使用者無權查看此檔案或專案的屬性。|
+|SCC_E_FILENOTCONTROLLED|指定的檔案或專案不在原始檔控制之下。|
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|發生不明或一般錯誤。|
 
 ## <a name="remarks"></a>備註
- 原始程式碼管理外掛程式在其自己的對話框中顯示屬性。
+ 原始檔控制外掛程式會在它自己的對話方塊中顯示內容。
 
- 屬性由原始程式碼管理外掛程式定義,可能因外掛程式而異。 如果外掛程式允許使用者更改檔的原始程式碼管理屬性,則`SCC_I_RELOAD`應返回 以向 IDE 發出訊號,指出需要重新載入此檔或專案。
+ 這些屬性是由原始檔控制外掛程式所定義，而且可能與外掛程式不同。 如果外掛程式允許使用者變更檔案的原始檔控制屬性，它應該會傳回， `SCC_I_RELOAD` 表示 IDE 必須重載這個檔案或專案。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

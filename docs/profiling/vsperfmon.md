@@ -18,10 +18,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ee2423f552c6931b0c8b62181dc44186053c9460
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329973"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
@@ -33,14 +33,14 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
 
  下表說明 VSPerfMon 工具選項：
 
-|選項|說明|
+|選項。|描述|
 |-------------|-----------------|
 |**U**|以 Unicode 撰寫重新導向的主控台輸出。  務必要優先指定此選項。|
 |**OUTPUT:** `<` *檔案名稱* `>`|將輸出重新導向至指定的檔案名稱。|
-|**追蹤**|啟動效能監視器進行檢測分析。|
+|**跟蹤**|啟動效能監視器進行檢測分析。|
 |**SAMPLE**|啟動效能監視器進行取樣分析。|
-|**保修**|啟動效能監視器進行程式碼涵蓋範圍收集。|
-|**能力**|啟動效能監視器以進行資源爭用分析。|
+|**覆蓋**|啟動效能監視器進行程式碼涵蓋範圍收集。|
+|**併發**|啟動效能監視器以進行資源爭用分析。|
 |**USER:** `[` *網域* `\]` *使用者名稱*|允許用戶端透過指定的帳戶存取監視器。|
 |**CROSSSESSION**|啟用跨工作階段進行程式碼剖析。|
 |**計數器**`:cfg`|使用檢測 (TRACE) 分析方法時，指定要在每個檢測點收集 CPU 計數器。 您可以指定多個計數器選項，以收集多項計數器資料。<br /><br /> 使用下列語法指定計數器 (*cfg*) 資料：<br /><br /> **CounterName** [**,Reload**[,**FriendlyName**]]<br /><br /> -   **CounterName** 是 VSPerfCmd /QueryCounters 命令傳回的計數器名稱。<br />-   **Reload** 是計數器事件取樣間隔。 請勿搭配檢測方法使用 *Reload*。<br />-   指定之後，**FriendlyName** 會以程式碼剖析工具報表欄名取代 **CounterName**。|

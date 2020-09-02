@@ -14,16 +14,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1b6e74caa9eedd42e25339d62f5837ccfe82d001
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204373"
 ---
 # <a name="file-status-code-enumerator"></a>檔案狀態碼列舉程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`SccStatus`列舉值包含具名的常數值會指定在原始檔控制系統中的檔案的狀態。 這個列舉型別由[SccQueryInfo](../extensibility/sccqueryinfo-function.md)並`POPLISTFUNC`回呼函式 (請參閱[POPLISTFUNC](../extensibility/poplistfunc.md)如需詳細資訊)。  
+`SccStatus`列舉值包含指定原始檔控制系統中檔案狀態的指定常數值。 [SccQueryInfo](../extensibility/sccqueryinfo-function.md)和回呼函式會使用這個列舉 `POPLISTFUNC` (如需詳細資料) ，請參閱[POPLISTFUNC](../extensibility/poplistfunc.md) 。  
   
 ## <a name="syntax"></a>語法  
   
@@ -55,49 +55,49 @@ enum SccStatus {
  無法取得狀態;請勿依賴它。  
   
  SCC_STATUS_NOTCONTROLLED  
- 檔案不在原始檔控制中。  
+ 檔案不在原始檔控制之下。  
   
  SCC_STATUS_CONTROLLED  
- 檔案是在原始檔控制。  
+ 檔案在原始檔控制之下。  
   
  SCC_STATUS_CHECKEDOUT  
- 簽出目前的使用者，在本機磁碟上。  
+ 由本機磁片上的目前使用者簽出。  
   
  SCC_STATUS_OUTOTHER  
- 檔案是由其他使用者簽出。  
+ 另一位使用者簽出檔案。  
   
  SCC_STATUS_OUTEXCLUSIVE  
- 檔案是以獨佔方式簽出。  
+ 以獨佔方式簽出檔案。  
   
  SCC_STATUS_OUTMULTIPLE  
- 檔案是由一個以上的使用者簽出。  
+ 有多個使用者簽出檔案。  
   
  SCC_STATUS_OUTOFDATE  
  檔案不是最新的。  
   
  SCC_STATUS_DELETED  
- 已從專案刪除檔案。  
+ 已從專案中刪除檔案。  
   
  SCC_STATUS_LOCKED  
- 鎖定檔案;允許任何其他版本。  
+ 檔案已鎖定;不允許其他版本。  
   
  SCC_STATUS_MERGED  
  檔案已合併，但尚未修正/驗證。  
   
  SCC_STATUS_SHARED  
- 在專案之間共用檔案。  
+ 檔案會在專案之間共用。  
   
  SCC_STATUS_PINNED  
- 明確的版本被共用檔案。  
+ 檔案會與明確版本共用。  
   
  SCC_STATUS_MODIFIED  
- 檔案已修改/中斷/違反。  
+ 檔案已遭修改/中斷/違規。  
   
  SCC_STATUS_OUTBYUSER  
- 檔案是由目前的使用者簽出。  
+ 檔案已由目前的使用者簽出。  
   
  SCC_STATUS_NOMERGE  
- 檔案永遠不會與合併，並不需要儲存 GET 之前。  
+ 檔案永遠不能合併，且不需要在 GET 之前儲存。  
   
  SCC_STATUS_RESERVED_1  
  保留供內部使用。  

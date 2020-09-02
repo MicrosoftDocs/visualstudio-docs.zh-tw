@@ -1,5 +1,5 @@
 ---
-title: 指令表元素 |微軟文件
+title: CommandTable 元素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a362763d34335b9a18c4114a7c35b23f0efee020
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739654"
 ---
-# <a name="commandtable-element"></a>指令表元素
-指令表是 *.vsct*檔案的根元素。 這是定義 VS 包向 IDE 提供的命令的實際佈局和類型的檔案。 命令可能包括功能表項、功能表、工具列和組合框。 有關詳細資訊,請參閱[可視化工作室命令表 (.vsct) 檔](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
+# <a name="commandtable-element"></a>CommandTable 元素
+CommandTable 是 *.vsct* 檔的根項目。 此檔案會定義 VSPackage 提供給 IDE 之命令的實際版面配置和類型。 命令可能包含功能表項目、功能表、工具列和下拉式方塊。 如需詳細資訊，請參閱 [Visual Studio 命令表格 (. .vsct) ](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔。
 
 ## <a name="syntax"></a>語法
 
@@ -46,28 +46,28 @@ ms.locfileid: "80739654"
 
 | 屬性 | 描述 |
 |-----------| - |
-| xmlns | 必要。 XML 命名空間:<br /><br /> `xmlns=http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable`<br /><br /> xmlns:xs="<http://www.w3.org/2001/XMLSchema> |
-| 語言 | 選擇性。 語言屬性可用於指定命令表中所有\<字串>元素的默認語言。  沒有指定該語言,將使用目前程序的語言:<br /><br /> 語言="en-us" |
+| xmlns | 必要。 XML 命名空間：<br /><br /> `xmlns=http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable`<br /><br /> xmlns： xs = " <http://www.w3.org/2001/XMLSchema> " |
+| 語言 | 選擇性。 Language 屬性可用來指定命令資料表中所有元素的預設語言 \<Strings> 。  如果未指定語言，則會使用目前進程的語言：<br /><br /> language = "en-us" |
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[外部元素](../extensibility/extern-element.md)|選擇性。 包含編譯器的預處理器指令。|
-|[包括元素](../extensibility/include-element.md)|選擇性。 包含要包含在編譯中的任何文件的路徑。|
-|[定義項目](../extensibility/define-element.md)|選擇性。 定義給定其名稱和值的符號。|
-|[指令元素](../extensibility/commands-element.md)|選擇性。 定義包含所有其他元素的 VSPackage 的所有命令的父元素。|
-|[命令放置元素](../extensibility/commandplacements-element.md)|選擇性。 定義命令列上要放置命令的位置。|
-|[可見性限制元素](../extensibility/visibilityconstraints-element.md)|選擇性。 確定命令和工具列的靜態可見性。|
-|[鍵繫結元素](../extensibility/keybindings-element.md)|選擇性。 指定命令的快捷鍵組合(如果有)。|
-|[已用指令元素](../extensibility/usedcommands-element.md)|選擇性。 允許 VSPackage 可以選擇實現其最初由其他 VSPackage 支援的功能版本。|
-|[符號元素](https://www.microsoft.com/download/details.aspx?id=55984)|選擇性。 包含編譯器的任何符號數據(GUID、DOd 等)。|
+|[Extern 元素](../extensibility/extern-element.md)|選擇性。 包含編譯器的預處理器指示詞。|
+|[Include 元素](../extensibility/include-element.md)|選擇性。 包含要包含在編譯中之任何檔案的路徑。|
+|[Define 元素](../extensibility/define-element.md)|選擇性。 定義指定其名稱和值的符號。|
+|[命令元素](../extensibility/commands-element.md)|選擇性。 父元素，定義包含所有其他元素之 VSPackage 的所有命令。|
+|[CommandPlacements 元素](../extensibility/commandplacements-element.md)|選擇性。 定義命令列上要放置命令的位置。|
+|[VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)|選擇性。 決定命令和工具列的靜態可見度。|
+|[Keybindings.json 元素](../extensibility/keybindings-element.md)|選擇性。 指定命令的快捷方式按鍵組合（如果有的話）。|
+|[UsedCommands 元素](../extensibility/usedcommands-element.md)|選擇性。 允許 VSPackage 選擇性地執行其他 Vspackage 原本支援的功能版本。|
+|[符號元素](https://www.microsoft.com/download/details.aspx?id=55984)|選擇性。 包含編譯器的任何符號資料--Guid、識別碼等等。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|None||
+|無||
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室指令表 (.vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio 命令表格 (. .vsct) 檔](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

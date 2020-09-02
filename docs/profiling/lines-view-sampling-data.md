@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ff4d851937111400002de531696b9b69aec20ba9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778579"
 ---
 # <a name="lines-view---sampling-data"></a>程式行檢視 - 取樣資料
@@ -45,20 +45,20 @@ ms.locfileid: "74778579"
 |資料行|描述|
 |------------|-----------------|
 |**處理序識別碼**|分析執行的處理序 ID (PID)。|
-|**流程名稱**|處理序的名稱。|
+|**進程名稱**|處理序的名稱。|
 |**模組名稱**|包含該函式行的模組名稱。|
 |**模組路徑**|包含該函式行的模組路徑。|
-|**原始檔案**|包含此函式行的原始程式檔。|
-|**函數名稱**|函數的名稱。|
+|**來源檔案**|包含此函式行的原始程式檔。|
+|**函數名稱**|函式的名稱。|
 |**函式行號**|原始程式檔中這個函式的開頭行號。|
-|**功能位址**|函式的開始位址。|
+|**函數位址**|函式的開始位址。|
 |**原始程式碼開頭行**|收集這個樣本的原始程式檔中的起始行號。|
 |**原始程式碼結尾行**|收集這個樣本的原始程式檔中的結尾行號。|
 |**原始程式碼開頭字元**|收集這個樣本的原始程式檔行中，起始字元的位移。|
 |**原始程式碼結尾字元**|收集這個樣本的原始程式檔行中，結尾字元的位移。|
-|**程式行名稱**|具有以下語法的行的探測器生成的`Source File`**識別碼：**`Line Number Start` ** ** `Character Start` **，#->;[**`Line Number End`**,**`Character End`**]**|
+|**程式行名稱**|分析工具產生的行識別碼，語法如下： `Source File` **; [** `Line Number Start`**,**`Character Start`**]->;[**`Line Number End`**,**`Character End`**]**|
 |**專有樣本**|當正在執行函式行時所收集的總樣本數。|
 |**專有樣本 %**|執行分析期間，執行函式行時所收集的所有樣本的百分比。|
 
 ## <a name="see-also"></a>另請參閱
-- [線視圖 - 採樣](../profiling/lines-view-dotnet-memory-sampling-data.md)
+- [線條視圖-取樣](../profiling/lines-view-dotnet-memory-sampling-data.md)

@@ -1,5 +1,5 @@
 ---
-title: SccQuery 更改功能 |微軟文件
+title: SccQueryChanges 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ec335d808c287decb75bf759d5a3795d98962579
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700489"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 函式
-此函數枚舉給定的檔案清單,提供有關通過回調函數更改每個檔的名稱的資訊。
+此函式會列舉指定的檔案清單，並透過回呼函數提供每個檔案的名稱變更相關資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -37,38 +37,38 @@ SCCRTN SccQueryChanges(
 #### <a name="parameters"></a>參數
  pContext
 
-[在]源代碼管理外掛程式上下文指標。
+在原始檔控制外掛程式內容指標。
 
- n 檔案
+ nFiles
 
-[在]陣列中`lpFileNames`的檔案數。
+在陣列中的檔案數目 `lpFileNames` 。
 
- lpFile 名稱
+ lpFileNames
 
-[在]要獲取有關資訊的檔名陣列。
+在要取得相關資訊的檔案名陣列。
 
  pfnCallback
 
-[在]回檔函數用於調用清單中的每個檔名(有關詳細資訊,請參閱[查詢更改FUNC)。](../extensibility/querychangesfunc.md)
+在針對清單中的每個檔案名呼叫回呼函式 (如需詳細資料) ，請參閱 [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) 。
 
  pvCallerData
 
-[在]將傳遞給回調函數的值保持不變。
+在將原封不動地傳遞給回呼函式的值。
 
 ## <a name="return-value"></a>傳回值
- 此函數的源碼管理外掛程式實現應返回以下值之一:
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|查詢過程已成功完成。|
-|SCC_E_PROJNOTOPEN|專案尚未在原始程式碼管理中打開。|
-|SCC_E_ACCESSFAILURE|訪問原始程式碼管理系統時出現問題,可能是由於網路或爭用問題。|
-|SCC_E_NONSPECIFICERROR|發生未指定或常規錯誤。|
+|SCC_OK|查詢處理已順利完成。|
+|SCC_E_PROJNOTOPEN|尚未在原始檔控制中開啟專案。|
+|SCC_E_ACCESSFAILURE|存取原始檔控制系統時發生問題，可能是因為網路或爭用問題。|
+|SCC_E_NONSPECIFICERROR|發生未指定或一般的錯誤。|
 
 ## <a name="remarks"></a>備註
- 查詢的更改是命名空間:特別是重新命名、添加和刪除檔。
+ 正在查詢的變更是命名空間：具體而言，就是重新命名、新增和移除檔案。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
 - [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)
-- [錯誤代碼](../extensibility/error-codes.md)
+- [錯誤碼](../extensibility/error-codes.md)

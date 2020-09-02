@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: b42936d9d87ad80b48b7fdc71cdf0fd3fa965af2
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329896"
 ---
 # <a name="waitstart"></a>WaitStart
@@ -33,7 +33,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName[Options] /WaitStart[:Seconds]
 ## <a name="required-options"></a>必要選項
  WaitStart 選項只能搭配 Start 子命令使用。
 
- **輸出：** `filename`指定輸出檔名稱。
+ **輸出：** `filename` 指定輸出檔名稱。
 
 ## <a name="remarks"></a>備註
 

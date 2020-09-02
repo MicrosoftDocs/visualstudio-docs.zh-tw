@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d67a1806034d55147379626b6eb4f868532e4d77
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330740"
 ---
 # <a name="marker_importance-enumeration"></a>marker_importance 列舉
@@ -39,7 +39,7 @@ enum marker_importance;
 |`low_importance`|指定標記有低重要性。|
 |`normal_importance`|指定標記有一般重要性。|
 
-## <a name="requirements"></a>規格需求
+## <a name="requirements"></a>需求
  **標頭：** *cvmarkersobj.h*
 
  **命名空間：** Concurrency::diagnostic

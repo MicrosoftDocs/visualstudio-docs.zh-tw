@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 54d5de2395c0ce95bc0c20c3ae7810b2762122fa
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329957"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
@@ -43,16 +43,16 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
  `vspfilename1 and vspfilename2` 必須是有效的 .*vsp* 或 .*vsps* 檔案。
 
 ## <a name="symbol-files"></a>符號檔
- 若要顯示符號資訊 (例如函式名稱與行號)，VSPerfReport 需要存取已分析元件的符號 (.PDB) 檔與 Windows 符號檔。 如需詳細資訊，請參閱[如何：從命令列指定符號檔位置](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)。
+ 若要顯示符號資訊 (例如函式名稱與行號)，VSPerfReport 需要存取已分析元件的符號 (.PDB) 檔與 Windows 符號檔。 如需詳細資訊，請參閱 [如何：從命令列指定符號檔位置](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)。
 
 ## <a name="general-report-options"></a>一般報告選項
  下表描述一般報告格式選項，以及選取要報告之資料的選項。
 
-|選項|說明|
+|選項。|描述|
 |-------------|-----------------|
 |**U**|報告輸出和重新導向的主控台輸出是以 Unicode 撰寫。 務必優先指定此選項。|
 |**Summary:**[*types*]|建立一或多個類型的報告。<br /><br /> -   `All` - 產生所有報告類型。<br />-   `CallerCallee` - 函式之間的父/子關聯性。<br />-   `Function` - 已呼叫的函式。<br />-   `CallTree` - 已呼叫的函式階層。<br />-   `Counter` - 所有的標記，以及 Windows 效能計數器的值。<br />-   `Ip` - 已分析的指令。<br />-   `Life` - 已配置物件的存留期 (已收集配置資料時可以使用)。<br />-   `Line` 原始程式碼行設定檔資料。<br />-   `Header` - 報告包含檔案標頭資訊。<br />-   `Mark` 所有標記。<br />-   `Module` - 已分析的模組。<br />-   `Process` - 已分析的處理序。<br />-   `Thread` - 已分析的執行緒。<br />-   `Type` - 配置的類型。<br />-   `Contention` - 資源爭用。<br />-   `RuleWarnings` - 效能規則問題<br />-   `ETW` - 程式碼分析執行中所收集的所有 Windows 事件追蹤 (ETW) 事件。 .etl 資料檔案必須位於其原始位置，或位於包含 .vsp 或 .vsps 檔案的目錄。|
-|**Stl**|以 XML 格式輸出報告。|
+|**XML**|以 XML 格式輸出報告。|
 |**CallTrace**|建立函式進入與離開、ETW 事件和標記的清單。|
 |**ClearPackedSymbols**|從分析工具資料檔案移除先前內嵌的符號。 在第二次執行 PackSymbols 之前，執行此命令。|
 |**SymbolPath：**`path`|指定包含分析工具資料檔案符號的一或多個搜尋路徑或符號伺服器。|
@@ -68,7 +68,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="filter-options"></a>篩選選項
  下表描述用於篩選可用資料的選項。
 
-|選項|說明|
+|選項。|描述|
 |-------------|-----------------|
 |**JustMyCode**[**：**[ `caller` ] [， `callee` ]]|只顯示使用者應用程式函式呼叫；隱藏系統呼叫。<br /><br /> -   無參數 - 隱藏所有系統函式。<br />-   `caller` - 顯示呼叫應用程式函式的一個系統函式層級。<br />-   `callee` - 顯示使用者應用程式函式所呼叫的一個系統函式層級。|
 |**StartTime：**[*值*]|只顯示值 (以毫秒為單位) 之後所收集的資料。|
@@ -76,15 +76,15 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**FilterFile:** `VSPFFile`|指定從 [Visual Studio 效能報告] 視窗所產生之篩選器檔案的位置。|
 |**MsFilter：**[*starttime，duration*]|只顯示從 `starttime` 直到 `duration` 長度(以毫秒為單位) 的資料。|
 |**進程：**[*pid*]|只顯示來自所指定處理序的資料。|
-|**執行緒：**[*threadid*]|只顯示來自所指定執行緒的資料。|
+|**Thread：**[*threadid*]|只顯示來自所指定執行緒的資料。|
 |**Thread：**[*threadid，processid*]|只顯示來自與指定處理序相關聯之指定執行緒的資料。|
 
 ## <a name="difference-report-options"></a>差異報告選項
  下表描述用來比較報告檔案的選項。
 
-|選項|說明|
+|選項。|描述|
 |-------------|-----------------|
-|**奇數**  `vspfile1 vspfile2`|比較兩個報告檔案 (.*vsp* 或 .*vsps*)。 使用 diff 選項將會忽略摘要選項。|
+|**Diff**  `vspfile1 vspfile2`|比較兩個報告檔案 (.*vsp* 或 .*vsps*)。 使用 diff 選項將會忽略摘要選項。|
 |**Diff:**[*value*]|低於此臨界值將會略過兩個值之間的差異。 此外，將不會顯示包含值低於此臨界值的新資料。|
 |**DiffTable：**[*tablename*]|使用此特定資料表來比較檔案。 預設為函式資料表。|
 |**DiffColumn：**[*columnname*]|使用此特定資料行來比較值。 預設為專有樣本百分比資料行。|

@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：以程式設計方式捕捉圖形資訊 |Microsoft Docs
+title: 逐步解說：以程式設計方式捕獲圖形資訊 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9de8e2a2ee69911f5505937494d2912c724326e9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847815"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>逐步解說：以程式設計方式擷取圖形資訊
@@ -29,7 +29,7 @@ ms.locfileid: "75847815"
   
 - 如果呈現問題很難預期以及在手動測試中擷取，但是可以在執行階段使用應用程式狀態資訊，透過程式設計方式進行預測，請呼叫 `CaptureCurrentFrame`。  
   
-## <a name="CaptureDX11_2"></a> Windows 8.1 中的程式設計擷取  
+## <a name="programmatic-capture-in-windows-81"></a><a name="CaptureDX11_2"></a> Windows 8.1 中的程式設計捕獲  
  這部分的逐步解說示範如何在 Windows 8.1 上使用 DirectX 11.2 API 的應用程式中進行程式設計擷取 (使用穩固擷取方法)。 如需如何在於 Windows 8.0 上使用舊版 DirectX 的應用程式中，使用程式設計擷取的資訊，請參閱本逐步解說稍後的 [Programmatic capture in Windows 8.0 and earlier](#CaptureDX11_1) 。  
   
  本節顯示如何執行這些工作：  
@@ -58,13 +58,13 @@ ms.locfileid: "75847815"
     ```  
   
     > [!IMPORTANT]
-    > 請勿包括標頭檔 vsgcapture.h (其支援 Windows 8.0 (含) 以前版本上的程式設計擷取)，以在 Windows 8.1 應用程式中執行程式設計擷取。 此標頭與 DirectX 11.2 不相容。 如果在包含 d3d11_2 .h 標頭之後包含此檔案，則編譯器會發出警告。 如果 d3d11_2 .h 之前包含 vsgcapture.h，應用程式將不會啟動。  
+    > 請勿包括標頭檔 vsgcapture.h (其支援 Windows 8.0 (含) 以前版本上的程式設計擷取)，以在 Windows 8.1 應用程式中執行程式設計擷取。 此標頭與 DirectX 11.2 不相容。 如果包含這個檔案，在包含 d3d11_2 .h 標頭之後，編譯器會發出警告。 如果 vsgcapture.h 包含在 d3d11_2 .h 之前，應用程式將不會啟動。  
   
     > [!NOTE]
     > 如果在電腦上安裝 2010 年 6 月 DirectX SDK，而且專案的 Include 路徑包含 `%DXSDK_DIR%includex86`，請將它移至 Include 路徑結尾。 請對程式庫路徑執行相同的處理。  
   
 #### <a name="windows-phone-81"></a>Windows Phone 8.1  
- 因為 Windows Phone 8.1 SDK 不包含 Dxprogrammablecapture.h 標頭，所以您必須自行定義 `IDXGraphicsAnalysis` 介面，才能使用 `BeginCapture()` 和 `EndCapture()` 方法。 包括上一節中所述的其他標頭。  
+ 因為 Windows Phone 8.1 SDK 不包含 Dxprogrammablecapture.h .h 標頭，所以您必須 `IDXGraphicsAnalysis` 自行定義介面，才能使用 `BeginCapture()` 和 `EndCapture()` 方法。 包括上一節中所述的其他標頭。  
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>定義 IDXGraphicsAnalysis 介面  
   
@@ -85,7 +85,7 @@ ms.locfileid: "75847815"
  您需要先取得 DXGI 偵錯介面，才能從 DirectX 11.2 擷取圖形資訊。  
   
 > [!IMPORTANT]
-> 使用程式設計捕獲時，您仍然必須在 [圖形診斷] 下執行應用程式（[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中的 Alt + F5），或在[命令列捕獲工具](../debugger/command-line-capture-tool.md)底下執行。  
+> 使用程式設計捕捉時，您仍然必須在 [圖形診斷] 下執行您的應用程式 (Alt + F5 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) 或在 [命令列捕捉工具](../debugger/command-line-capture-tool.md)下。  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>取得 IDXGraphicsAnalysis 介面  
   
@@ -129,7 +129,7 @@ ms.locfileid: "75847815"
     ...  
     ```  
   
-## <a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
+## <a name="programmatic-capture-in-windows-80-and-earlier"></a><a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
  這部分的逐步解說示範如何在使用 DirectX 11.1 API 之 Windows 8.0 (含) 以前版本的應用程式中進行程式設計擷取 (使用舊版擷取方法)。 如需如何在於 Windows 8.1 上使用 DirectX 11.2 的應用程式中，使用程式設計擷取的資訊，請參閱本逐步解說稍後的 [Windows 8.1 中的程式設計擷取](#CaptureDX11_2) 。  
   
  此部分顯示下列工作：  
@@ -182,7 +182,7 @@ ms.locfileid: "75847815"
   
    如果您未執行此步驟，則檔案名稱為 default.vsglog。 如果您未定義 `DONT_SAVE_VSGLOG_TO_TEMP`，則檔案的位置是與暫存目錄相對的位置；否則，它是與工作目錄相對的位置，或在另一個位置中 (如果您已指定絕對檔案名稱)。  
   
-  針對 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式，臨時目錄的位置是每個使用者和應用程式所特有，通常位於 C:\users\\*username*\AppData\Local\Packages\\*套件系列名稱*\TempState\\的位置。 針對桌面應用程式，臨時目錄的位置是每個使用者特有的，通常位於 C:\Users\\*username*\AppData\Local\Temp\\之類的位置。  
+  針對 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式，臨時目錄的位置是每個使用者和應用程式的特定位置，通常是在 C:\users 使用者 \\ *username* \\ *名稱 \AppData\Local\Packages 套件系列名稱*\TempState 之類的位置中找到 \\ 。 針對傳統型應用程式，temp 目錄的位置是每個使用者專屬的，而且通常會在 C:\Users 使用者名稱 \AppData\Local\Temp 之類的位置中找到 \\ *username* \\ 。  
   
 > [!NOTE]
 > 若要寫入至特定位置，您必須具有寫入至該位置的權限；否則會發生錯誤。 請記住，在寫入資料的位置方面， [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的限制多於桌面應用程式，而且可能需要進行額外設定才能寫入至特定位置。  
@@ -196,9 +196,9 @@ ms.locfileid: "75847815"
 ## <a name="next-steps"></a>後續步驟  
  此逐步解說示範如何透過程式設計方式擷取圖形資訊。 下一步是考慮此選項：  
   
-- 了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱[總覽](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
+- 了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱 [總覽](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
   
-## <a name="see-also"></a>請參閱  
- [逐步解說：捕捉圖形資訊](../debugger/walkthrough-capturing-graphics-information.md)   
- [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
+## <a name="see-also"></a>另請參閱  
+ [逐步解說：捕獲圖形資訊](../debugger/walkthrough-capturing-graphics-information.md)   
+ [捕獲圖形資訊](../debugger/capturing-graphics-information.md)   
  [命令列擷取工具](../debugger/command-line-capture-tool.md)

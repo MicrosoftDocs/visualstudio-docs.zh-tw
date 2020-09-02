@@ -1,5 +1,5 @@
 ---
-title: SccRunScc 功能 |微軟文件
+title: SccRunScc 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d012908e59be8b82e34ff68cdab1945c5bd2de8b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700400"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc 函式
-此函數調用原始程式碼管理工具。
+此函式會叫用原始檔控制管理工具。
 
 ## <a name="syntax"></a>語法
 
@@ -34,41 +34,41 @@ SCCRTN SccRunScc(
 ```
 
 #### <a name="parameters"></a>參數
- pvContext
+ pvCoNtext
 
-[在]原始程式碼管理外掛程式上下文結構。
+在原始檔控制外掛程式內容結構。
 
  hWnd
 
-[在]源控件外掛程式可以用作它提供的任何對話框的父級的IDE視窗句柄。
+在IDE 視窗的控制碼，原始檔控制外掛程式可以使用它做為它所提供之任何對話方塊的父代。
 
- n 檔案
+ nFiles
 
-[在]`lpFileNames`陣列中指定的檔案數。
+在陣列中指定的檔案數目 `lpFileNames` 。
 
- lpFile 名稱
+ lpFileNames
 
-[在]所選檔名的陣列。
+在所選檔案名的陣列。
 
 ## <a name="return-value"></a>傳回值
- 此函數的源碼管理外掛程式實現應返回以下值之一:
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|已成功調用原始程式碼管理工具。|
-|SCC_I_OPERATIONCANCELED|操作已取消。|
-|SCC_E_INITIALIZEFAILED|無法初始化原始碼管理系統。|
-|SCC_E_ACCESSFAILURE|訪問原始程式碼管理系統時出現問題,可能是由於網路或爭用問題。|
-|SCC_E_CONNECTIONFAILURE|無法連接到原始程式碼管理系統。|
-|SCC_E_FILENOTCONTROLLED|所選檔不受原始程式碼管理。|
-|SCC_E_NONSPECIFICERROR|非特異性故障。|
+|SCC_OK|已成功叫用原始檔控制管理工具。|
+|SCC_I_OPERATIONCANCELED|作業已取消。|
+|SCC_E_INITIALIZEFAILED|無法初始化原始檔控制系統。|
+|SCC_E_ACCESSFAILURE|存取原始檔控制系統時發生問題，可能是因為網路或爭用問題。|
+|SCC_E_CONNECTIONFAILURE|無法連接到原始檔控制系統。|
+|SCC_E_FILENOTCONTROLLED|選取的檔案不在原始檔控制之下。|
+|SCC_E_NONSPECIFICERROR|模糊失敗。|
 
 ## <a name="remarks"></a>備註
- 此功能允許調用方透過外部管理工具存取原始程式碼管理系統的全部功能。 如果原始程式碼管理系統沒有使用者介面,原始程式碼管理外掛程式可以實現一個介面來執行必要的管理功能。
+ 這個函式可讓呼叫端透過外部管理工具，存取原始檔控制系統的完整功能範圍。 如果原始檔控制系統沒有使用者介面，則原始檔控制外掛程式可以執行介面來執行必要的管理功能。
 
- 此函數使用當前選定檔的 count 和檔名陣列進行呼叫。 如果管理工具支援它,則檔案清單可用於在管理介面中預先選擇檔;如果管理工具支援它,則檔案清單可用於預先選擇管理介面中的檔。否則,可以忽略該清單。
+ 這個函式會使用計數和檔案名陣列來呼叫，以供目前選取的檔案使用。 如果管理工具支援此功能，則可以使用檔案清單來預先設置管理介面中的檔案;否則，可以忽略清單。
 
- 當使用者從 **「檔案** -> **源控制」** 選單中選擇**啟動\<源控制伺服器>** 時,通常會調用此功能。 通過設置註冊表項,始終可以禁用甚至隱藏此**啟動**功能表選項。 有關詳細資訊[,請參閱:安裝原始碼管理外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)。 僅當[Scc 初始化](../extensibility/sccinitialize-function.md)返回`SCC_CAP_RUNSCC`功能位時,才會調用此功能(有關此功能位和其他功能位的詳細資訊,請參閱[功能標誌](../extensibility/capability-flags.md))。
+ 此函式通常會在使用者**從 [檔案**原始檔控制] 功能表選取 [ ** \<Source Control Server> 啟動**] 時叫用  ->  **Source Control** 。 您可以藉由設定登錄專案，一律停用或甚至隱藏這個 **啟動** 功能表選項。 如需詳細資訊，請參閱 [如何：安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md) 。 只有當 [SccInitialize](../extensibility/sccinitialize-function.md) 傳回功能位時，才會呼叫此函式 `SCC_CAP_RUNSCC` (請參閱 [功能旗標](../extensibility/capability-flags.md) ，以取得此功能和其他功能位) 的詳細資料。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

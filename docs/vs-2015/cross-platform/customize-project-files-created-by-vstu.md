@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 744e7d89827e169579953474c9e7b37f2dcc653f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151004"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>自訂 VSTU 所建立的專案檔
@@ -69,4 +69,4 @@ public class ProjectFileHook
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [例如：記錄回呼](../cross-platform/share-the-unity-log-callback-with-vstu.md)
+ [範例：記錄回呼](../cross-platform/share-the-unity-log-callback-with-vstu.md)

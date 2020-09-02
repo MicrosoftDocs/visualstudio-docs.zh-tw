@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: a30ec1a60b7bc19710e3184c7cd32e252acc9921
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248480"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>歡迎使用 Visual Studio R 工具
@@ -25,9 +25,9 @@ ms.locfileid: "88248480"
 
 - [文件集](index.md)
 - [如何安裝 Visual Studio R 工具](installing-r-tools-for-visual-studio.md)
-- [提交和流覽 GitHub 上的錯誤和功能要求](https://github.com/Microsoft/RTVS/issues)
+- [在 GitHub 上提交和流覽 bug 和功能要求](https://github.com/Microsoft/RTVS/issues)
 - [Explore and contribute to the source code](https://github.com/Microsoft/RTVS/blob/master/LICENSE) (探索和參與程式原始碼)
-- 若要傳送意見反應，而不使用偏好) 的 GitHub (，請使用 Visual Studio 中的 [ **R 工具] > [意見** 反應] 功能表。
+- 若要在不使用 GitHub (的情況下傳送意見反應) ，請使用 Visual Studio 中的 **R 工具 > 意見** 反應功能表。
 
 ## <a name="microsoft-r-distributions"></a>Microsoft R 散發套件
 

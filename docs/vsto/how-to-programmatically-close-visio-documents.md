@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 478905a8ba4dacd2102c4b19fe091016a7409773
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547481"
 ---
 # <a name="how-to-programmatically-close-visio-documents"></a>如何：以程式設計方式關閉 Visio 檔
@@ -37,7 +37,7 @@ ms.locfileid: "85547481"
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#7)]
 
 ## <a name="see-also"></a>另請參閱
-- [Visio 解決方案](../vsto/visio-solutions.md)
+- [Visio 方案](../vsto/visio-solutions.md)
 - [Visio 物件模型總覽](../vsto/visio-object-model-overview.md)
 - [如何：以程式設計方式建立新的 Visio 檔](../vsto/how-to-programmatically-create-new-visio-documents.md)
 - [如何：以程式設計方式開啟 Visio 檔](../vsto/how-to-programmatically-open-visio-documents.md)

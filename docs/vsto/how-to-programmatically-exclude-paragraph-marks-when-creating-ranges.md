@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 20d91aff6b09e659375494c387eea94ef05cc682
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547429"
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>如何：以程式設計方式在建立範圍時排除段落標記
@@ -77,7 +77,7 @@ ms.locfileid: "85547429"
 
      這兩個範圍的原始內容都儲存為字串，所以您可以將文件還原成原始狀態。
 
-8. `firstRange`針對一個字元位置使用方法，重新調整以包含段落標記 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 。
+8. 重新調整 `firstRange` 以包含段落標記，方法是使用 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 單一字元位置的方法。
 
      [!code-vb[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#34)]
      [!code-csharp[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#34)]
@@ -118,7 +118,7 @@ ms.locfileid: "85547429"
 ## <a name="see-also"></a>另請參閱
 - [如何：以程式設計方式在檔中擴充範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
 - [如何：以程式設計方式折迭檔中的範圍或選取專案](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
-- [如何：以程式設計方式將文字插入 Word 檔](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [如何：以程式設計方式重設 Word 檔中的範圍](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
-- [如何：以程式設計方式在檔中定義及選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [如何：以程式設計方式在 Word 檔中插入文字](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [如何：以程式設計方式在 Word 檔中重設範圍](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [如何：以程式設計方式定義和選取檔中的範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)

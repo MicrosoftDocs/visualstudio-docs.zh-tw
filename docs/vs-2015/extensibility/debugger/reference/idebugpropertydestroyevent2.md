@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyDestroyEvent2 | Microsoft Docs
+title: IDebugPropertyDestroyEvent2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 034040ecd8df3368f53cb7a3bf99197e962e2b56
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702296"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個介面會傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 與特定文件相關聯的屬性時即將終結。  
+當與特定檔相關聯的屬性即將終結時，debug engine 會將這個介面傳送 (DE) 至會話 debug manager (SDM) 。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,28 +30,28 @@ ms.locfileid: "65702296"
 IDebugPropertyDestroyEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- DE 會實作這個介面來報告屬性已被終結。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上。 使用 SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要存取`IDebugEvent2`介面。 如果 DE 先前已建立的指令碼; 相關聯的屬性，會實作這個介面終結的屬性，是在 IDE 中移除相關聯的指令碼。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ DE 會執行這個介面，以報告屬性已終結。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須在與這個介面相同的物件上執行。 SDM 會使用 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) 來存取 `IDebugEvent2` 介面。 如果 DE 先前已建立與腳本相關聯的屬性，就會執行這個介面;終結屬性會從 IDE 移除相關聯的腳本。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- DE 建立，並將此事件的物件傳送至報表的屬性已被終結。 事件會使用傳送[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)附加至正在進行偵錯程式時，會將 SDM 所提供的回呼函式。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 「取消」會建立並傳送此事件物件，以報告屬性已損毀。 使用 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 回呼函式來傳送事件，該函式會在附加至要進行偵錯工具的程式時提供。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDebugPropertyDestroyEvent2`。  
+ 下表顯示的方法 `IDebugPropertyDestroyEvent2` 。  
   
 |方法|描述|  
 |------------|-----------------|  
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertydestroyevent2-getdebugproperty.md)|取得要終結的屬性。|  
   
 ## <a name="remarks"></a>備註  
- 請參閱的 < 備註 > [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)如需有關為什麼並使用這些事件。  
+ 如需有關使用這些事件之原因的詳細資訊，請參閱 [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md) 的備註。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

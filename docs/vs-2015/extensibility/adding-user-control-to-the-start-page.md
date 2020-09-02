@@ -1,5 +1,5 @@
 ---
-title: 將使用者控制項加入至起始頁 |Microsoft Docs
+title: 將使用者控制項加入起始頁 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,36 +13,36 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1171197ba55c2fe3fa59ccc9ca918fa0c8f9e727
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65699136"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>將使用者控制項新增至起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本逐步解說示範如何加入自訂的 [入門] 頁面的 DLL 參考。 範例會將使用者控制項加入方案中，建置使用者控制項，然後參考起始頁.xaml 檔建置的組件。 新的索引標籤裝載使用者控制項，可當做基本網頁瀏覽器。  
+本逐步解說將示範如何將 DLL 參考加入至自訂起始頁。 此範例會將使用者控制項加入至方案、建立使用者控制項，然後從起始頁 .xaml 檔案參考建立的元件。 新的索引標籤會裝載使用者控制項，作為基本的網頁瀏覽器。  
   
- 您可以使用相同的程序加入任何可以呼叫從.xaml 檔案的組件。  
+ 您可以使用相同的程式，加入可從 .xaml 檔案呼叫的任何元件。  
   
-## <a name="adding-a-wpf-user-control-to-the-solution"></a>將 WPF 使用者控制項新增至解決方案  
- 首先，Windows Presentation Foundation (WPF) 使用者控制項加入起始頁的解決方案。  
+## <a name="adding-a-wpf-user-control-to-the-solution"></a>將 WPF 使用者控制項加入至方案  
+ 首先，將 Windows Presentation Foundation (WPF) 使用者控制項加入起始頁方案。  
   
-1. 建立起始頁使用我們建立中[建立自訂起始頁](../extensibility/creating-a-custom-start-page.md)。  
+1. 使用我們在 [建立自訂起始頁](../extensibility/creating-a-custom-start-page.md)時建立的起始頁。  
   
-2. 中**方案總管**，以滑鼠右鍵按一下方案，按一下**新增**，然後按一下 **新專案**。  
+2. 在 **方案總管**中，以滑鼠 **按右鍵方案，按一下 [** 新增]，然後按一下 [ **新增專案**]。  
   
-3. 在左窗格中**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#** 節點，然後按一下**Windows**。 在中間窗格中，選取**WPF 使用者控制項程式庫**。  
+3. 在 [ **新增專案** ] 對話方塊的左窗格中，展開 [ **Visual Basic** ] 或 [ **Visual c #** ] 節點，然後按一下 [ **Windows**]。 在中間窗格中，選取 [ **WPF 使用者控制項程式庫**]。  
   
-4. 將控制項`WebUserControl`，然後按一下  **確定**。  
+4. 為控制項命名 `WebUserControl` ，然後按一下 **[確定]**。  
   
-## <a name="implementing-the-user-control"></a>實作使用者控制項  
- 若要實作 WPF 使用者控制項，建置在 XAML 中的使用者介面 (UI)，然後以 C# 或其他.NET 語言撰寫的程式碼後置事件。  
+## <a name="implementing-the-user-control"></a>執行使用者控制項  
+ 若要執行 WPF 使用者控制項，請在 XAML 中建立使用者介面 (UI) ，然後以 c # 或其他 .NET 語言撰寫程式碼後端事件。  
   
 #### <a name="to-write-the-xaml-for-the-user-control"></a>撰寫使用者控制項的 XAML  
   
-1. 開啟使用者控制項的 XAML 檔案。 在 \<方格 > 項目，將下列的資料列定義加入至控制項。  
+1. 開啟使用者控制項的 XAML 檔案。 在 \<Grid> 元素中，將下列資料列定義加入控制項。  
   
     ```vb  
     <Grid.RowDefinitions>  
@@ -52,7 +52,7 @@ ms.locfileid: "65699136"
   
     ```  
   
-2. 在主要`Grid`項目，新增下列新`Grid`元素，其中包含文字方塊，用於輸入網址並設定新的地址的按鈕。  
+2. 在主要專案中 `Grid` ，加入下列新專案 `Grid` ，其中包含用於輸入網址的文字方塊，以及用來設定新位址的按鈕。  
   
     ```xml  
     <Grid Grid.Row="0">  
@@ -65,13 +65,13 @@ ms.locfileid: "65699136"
     </Grid>  
     ```  
   
-3. 將下列的畫面格新增至最上層`Grid`元素正後方`Grid`包含按鈕和文字方塊中的項目。  
+3. 將下列框架新增至最上層元素， `Grid` 緊接在 `Grid` 包含按鈕和 textbox 的元素之後。  
   
     ```vb  
     <Frame Grid.Row="1" x:Name="WebFrame" Source="http://www.bing.com" Navigated="WebFrame_Navigated" />  
     ```  
   
-4. 下列範例會顯示已完成的 XAML 使用者控制項。  
+4. 下列範例顯示使用者控制項已完成的 XAML。  
   
     ```xml  
     <UserControl x:Class="WebUserControl.UserControl1"  
@@ -100,13 +100,13 @@ ms.locfileid: "65699136"
   
     ```  
   
-#### <a name="to-write-the-code-behind-events-for-the-user-control"></a>撰寫使用者控制項的程式碼後置事件  
+#### <a name="to-write-the-code-behind-events-for-the-user-control"></a>撰寫使用者控制項的程式碼後端事件  
   
-1. 在 XAML 設計工具中，按兩下**設定的位址**按鈕加入至控制項。  
+1. 在 XAML 設計工具中，按兩下您加入至控制項的 [ **設定位址** ] 按鈕。  
   
-     UserControl1.cs 檔案會在 程式碼編輯器中開啟。  
+     UserControl1.cs 檔案隨即在 [程式碼編輯器] 中開啟。  
   
-2. 填入 SetButton_Click 事件處理常式，如下所示。  
+2. 填寫 SetButton_Click 的事件處理常式，如下所示。  
   
     ```csharp  
     private void SetButton_Click(object sender, RoutedEventArgs e)  
@@ -122,7 +122,7 @@ ms.locfileid: "65699136"
     }  
     ```  
   
-     此程式碼會設定在文字方塊中輸入做為目標的 Web 瀏覽器的網址。 如果位址不是有效的程式碼會擲回錯誤。  
+     此程式碼會將文字方塊中輸入的網址設定為網頁瀏覽器的目標。 如果位址無效，程式碼就會擲回錯誤。  
   
 3. 您也必須處理 WebFrame_Navigated 事件：  
   
@@ -133,34 +133,34 @@ ms.locfileid: "65699136"
   
 4. 建置方案。  
   
-## <a name="adding-the-user-control-to-the-start-page"></a>將使用者控制項加入至 [開始] 頁面  
- 若要讓此控制項的起始頁專案中，使用起始頁專案檔中，加入新的控制項程式庫的參考。 然後您可以將控制項加入 [開始] 頁面的 XAML 標記。  
+## <a name="adding-the-user-control-to-the-start-page"></a>將使用者控制項新增至起始頁  
+ 若要使此控制項可供起始頁專案使用，請在起始頁專案檔中，加入新控制項程式庫的參考。 然後，您可以將控制項加入至起始頁 XAML 標記。  
   
-1. 在 **方案總管 中**，在起始頁專案中，以滑鼠右鍵按一下**參考**，然後按一下 **加入參考**。  
+1. 在 **方案總管**的起始頁專案中，以滑鼠右鍵按一下 [ **參考** ]，然後按一下 [ **加入參考**]。  
   
-2. 在 **專案**索引標籤上，選取**WebUserControl** ，然後按一下 **確定**。  
+2. 在 [ **專案** ] 索引標籤上，選取 [ **WebUserControl** ]，然後按一下 **[確定]**。  
   
-3. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
+3. 在 [建置] 功能表上，按一下 [建置方案]。  
   
-    建置方案會將使用者控制項提供給 IntelliSense 的方案中的其他檔案。  
+    建立解決方案可將使用者控制項提供給方案中其他檔案的 IntelliSense。  
   
-   若要將控制項加入 [開始] 頁面的 XAML 標記，加入組件的命名空間參考，然後放在頁面上的控制項。  
+   若要將控制項加入至起始頁 XAML 標記，請將命名空間參考加入至元件，然後將控制項放在頁面上。  
   
-#### <a name="to-add-the-control-to-the-markup"></a>若要將控制項加入標記  
+#### <a name="to-add-the-control-to-the-markup"></a>將控制項加入至標記  
   
-1. 在 [**方案總管] 中**，開啟起始頁.xaml 檔案。  
+1. 在 **方案總管**中，開啟 [開始] 頁面 .xaml 檔案。  
   
-2. 在  **XAML**窗格中，將下列的命名空間宣告加入至最上層<xref:System.Windows.Controls.Grid>項目。  
+2. 在 [ **XAML** ] 窗格中，將下列命名空間宣告加入至最上層 <xref:System.Windows.Controls.Grid> 元素。  
   
    ```xml  
    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
    ```  
   
-3. 在 [ **XAML** ] 窗格中，捲動至\<方格 > 一節。  
+3. 在 [ **XAML** ] 窗格中，滾動至 \<Grid> 區段。  
   
-    區段包含<xref:System.Windows.Controls.TabControl>中的項目<xref:System.Windows.Controls.Grid>項目。  
+    區段包含 <xref:System.Windows.Controls.TabControl> 元素中的元素 <xref:System.Windows.Controls.Grid> 。  
   
-4. 新增\<TabControl > 項目包含\<TabItem >，其中包含使用者控制項的參考。  
+4. 加入包含 \<TabControl> \<TabItem> 您的使用者控制項之參考的元素。  
   
    ```xml  
   
@@ -174,18 +174,18 @@ ms.locfileid: "65699136"
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>測試手動建立的自訂起始頁  
   
-1. 將您的 XAML 檔案，並支援文字檔案或標記檔案，為複製 **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\** 資料夾。  
+1. 將您的 XAML 檔案及任何支援的文字檔或標記檔案複製到 **%USERPROFILE%\My Documents\Visual Studio 2015 \ StartPages \\ **資料夾。  
   
-2. 如果您的起始頁會參考任何控制項或 Visual Studio 不會安裝的組件中的類型，將組件複製並貼在_Visual Studio 安裝資料夾_**\Common7\IDE\在 PrivateAssemblies\\**。  
+2. 如果您的起始頁參考 Visual Studio 未安裝之元件中的任何控制項或類型，請複製元件，然後將它們貼到_Visual Studio 安裝資料夾_**\Common7\IDE\PrivateAssemblies \\ **中。  
   
-3. 在 Visual Studio 命令提示字元中，輸入**devenv /rootsuffix Exp**開啟 Visual Studio 的實驗執行個體。  
+3. 在 Visual Studio 的命令提示字元中，輸入 **devenv/Rootsuffix Exp** 以開啟 Visual Studio 的實驗實例。  
   
-4. 在實驗執行個體中，移至**工具 / 選項 / 環境 / 啟動**頁面，然後選取您的 XAML 檔案，從**自訂起始頁**下拉式清單。  
+4. 在實驗性實例中，移至 [ **工具/選項/環境/啟動** ] 頁面，然後從 [ **自訂起始頁** ] 下拉式清單中選取您的 XAML 檔案。  
   
-5. 在 [檢視]  功能表上，按一下 [起始頁] 。  
+5. 在 [檢視] **** 功能表上，按一下 [起始頁] ****。  
   
-     應該會顯示您的自訂起始頁。 如果您想要變更任何檔案，您必須關閉實驗執行個體、 進行變更、 複製並貼變更的檔案，然後再重新開啟實驗的執行個體，以檢視所做的變更。  
+     應該會顯示您的自訂起始頁。 如果您想要變更任何檔案，您必須關閉實驗性實例、進行變更、複製並貼上變更的檔案，然後重新開啟實驗實例以查看變更。  
   
 ## <a name="see-also"></a>另請參閱  
- [WPF 控制項](https://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)   
- [逐步解說：將自訂的 XAML 新增至起始頁](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [WPF 容器控制項](https://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)   
+ [逐步解說︰將自訂的 XAML 加入至起始頁](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

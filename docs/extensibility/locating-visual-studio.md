@@ -1,5 +1,5 @@
 ---
-title: 尋找 Visual Studio |Microsoft Docs
+title: 找 Visual Studio |Microsoft Docs
 ms.date: 08/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,36 +10,36 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a7187fbcc3e3aca990846176676a47f5d17aaf00
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64878149"
 ---
 # <a name="locate-visual-studio"></a>尋找 Visual Studio
 
-從 Visual Studio 2017 開始，您可以安裝相同版本或甚至是版本的多個執行個體。 當您想要預覽的主要開發電腦上的新功能，同時保留先前的安裝，這是很有幫助。 由於這些變更，沒有單一的環境變數或登錄值可用來找出執行個體。 相反地，您可以使用[COM 查詢 API](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx)尋找與您的延伸模組相關的準則為基礎的執行個體。
+從 Visual Studio 2017 開始，您可以安裝相同版本或甚至版本的多個實例。 當您想要在主要開發電腦上預覽新功能，同時保留先前的安裝時，這會很有説明。 由於這些變更，因此沒有可供您用來尋找實例的單一環境變數或登錄值。 相反地，您可以使用 [COM 查詢 API](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) ，根據與延伸模組相關的準則來尋找實例。
 
-這是快速、 唯讀 API，使用適用於原生和 managed 程式碼的 NuGet 套件。
+這是一種快速、唯讀的 API，其具有適用于原生和 managed 程式碼的 NuGet 套件。
 
 | 程式碼 | 套件 |
 | ---- | --- |
 | 原生 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| Managed | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| 受控 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
-您可以找出指定的路徑或目前的處理序的單一執行個體，或列舉所有的執行個體。 請參閱[我們的範例](https://github.com/Microsoft/vs-setup-samples)如需如何找出 Visual Studio 的完整範例。
+您可以指定路徑或目前的進程，或列舉所有實例，以找出單一實例。 如需如何找出 Visual Studio 的完整範例，請參閱 [我們的範例](https://github.com/Microsoft/vs-setup-samples) 。
 
 ## <a name="tools"></a>工具
 
-若要尋找 Visual Studio 和其他工具，在建置環境、 PowerShell 指令碼、 安裝程式，以及更多的案例中，有幾個開放原始碼工具，您可以直接使用或轉散發，以及您自己的指令碼。
+若要尋找組建環境、PowerShell 腳本、安裝程式及更多案例中的 Visual Studio 和其他工具，有許多開放原始碼工具可直接使用，或隨您自己的腳本重新發佈。
 
 | 專案 | 描述 |
 | ------- | ----------- |
-| [vswhere](https://github.com/Microsoft/vswhere) | 單一檔案原生可執行檔來找出符合準則，例如版本或發行前版本，已安裝哪些產品，以及哪些工作負載會安裝的執行個體。 也支援尋找 Visual Studio 2010 及更新版本中，但較少的資訊傳回，Visual Studio 2017 及更新版本。 請參閱[wiki](https://github.com/Microsoft/vswhere/wiki)的範例。 |
-| [VSSetup cmdlet](https://github.com/Microsoft/vssetup.powershell) | PowerShell cmdlet 支援 2.0 及更新版本中，會傳回可用來尋找相同的條件為基礎的執行個體做為物件豐富的資訊_vswhere_和用來探索更多執行個體相關的屬性。 請參閱[wiki](https://github.com/Microsoft/vssetup.powershell/wiki)的範例。 |
-| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | 會自動找出_VSIXInstaller_並將透過命令列傳遞至安裝 **.vsix*檔案。 這項功能可用於不需要直接查詢 Api 支援的安裝程式。 請參閱[wiki](https://github.com/Microsoft/vsixbootstrapper/wiki)的範例。 |
+| [vswhere](https://github.com/Microsoft/vswhere) | 單一檔案原生可執行檔，用來找出符合準則的實例，例如發行或發行前版本、已安裝的產品，以及已安裝的工作負載。 也支援尋找 Visual Studio 2010 和更新版本，但針對 Visual Studio 2017 和更新版本傳回的資訊較少。 如需範例，請參閱 [wiki](https://github.com/Microsoft/vswhere/wiki) 。 |
+| [Vssetup.powershell Cmdlet](https://github.com/Microsoft/vssetup.powershell) | PowerShell Cmdlet 支援2.0 和更新版本，可將豐富的資訊以 _vswhere_ 的相同準則來尋找實例，並探索更多有關實例的屬性。 如需範例，請參閱 [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) 。 |
+| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | 自動尋找 _VSIXInstaller_ 並傳遞命令列，以安裝 **.vsix* 檔案。 這項功能在沒有查詢 Api 直接支援的安裝程式中很有用。 如需範例，請參閱 [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) 。 |
 
 ## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 2017 安裝程式的變更](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
-* [啟動 Visual Studio 中使用 DTE](launch-visual-studio-dte.md)
+* [使用 DTE 啟動 Visual Studio](launch-visual-studio-dte.md)

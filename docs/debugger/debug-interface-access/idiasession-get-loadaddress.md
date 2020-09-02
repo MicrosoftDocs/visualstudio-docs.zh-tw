@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0615933715c0e78513f9ee33ee171cc764f5d743
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465430"
 ---
 # <a name="idiasessionget_loadaddress"></a>IDiaSession::get_loadAddress
-抓取可執行檔的載入位址，此檔案會對應至這個符號存放區中的符號。
+抓取對應于此符號存放區中符號的可執行檔的載入位址。
 
 ## <a name="syntax"></a>語法
 
@@ -33,13 +33,13 @@ HRESULT get_loadAddress ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回 .exe 檔案或 .dll 檔案載入所在的虛擬位址（VA）。
+擴展傳回載入 .exe 檔案或 .dll 檔案 (VA) 的虛擬位址。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 除非使用[IDiaSession：:p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)方法明確設定，否則傳回的載入位址一律為零。
+ 除非特別使用 [IDiaSession：:p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) 方法設定，否則傳回的載入位址一律為零。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

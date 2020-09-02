@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 680d304a8e4d21365d82f654265ae2f34582b636
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330262"
 ---
 # <a name="diagnostic-namespace"></a>diagnostic 命名空間
@@ -43,10 +43,10 @@ namespace diagnostic;
 |----------|-----------------|
 |[marker_importance 列舉](../profiling/marker-importance-enumeration.md)|表示並行視覺化檢視標記的重要性層級。|
 
-## <a name="requirements"></a>規格需求
+## <a name="requirements"></a>需求
  **標頭：** *cvmarkersobj.h*
 
  **命名空間：** 並行
 
 ## <a name="see-also"></a>另請參閱
-- [Concurrency 命名空間（並行視覺化）](../profiling/concurrency-namespace-concurrency-visualizer.md)
+- [平行存取的命名空間 (平行存取視覺化) ](../profiling/concurrency-namespace-concurrency-visualizer.md)

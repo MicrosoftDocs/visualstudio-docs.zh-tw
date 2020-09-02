@@ -9,10 +9,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778423"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 應用程式的效能工具
@@ -106,11 +106,11 @@ Windows 8 尚未變更使用檢測方法進行程式碼剖析。
 
 **[效能精靈] 和 [效能總管]**
 
-您必須將階層互動資料收集選項加入從 [效能總管] 執行的程式碼剖析。 您也必須將專案、可執行檔或網站加入 [效能總管] 的 [目標] 節點。 請參閱[收集層交互資料](../profiling/collecting-tier-interaction-data.md)。
+您必須將階層互動資料收集選項加入從 [效能總管] 執行的程式碼剖析。 您也必須將專案、可執行檔或網站加入 [效能總管] 的 [目標] 節點。 請參閱 [收集階層互動資料](../profiling/collecting-tier-interaction-data.md)。
 
 **在遠端電腦上收集 TIP 資料**
 
-要在遠端電腦上收集層交互資料，必須將**vs\_分析\_器**_\<平臺>_**\_**_\<語言>_ **.exe**檔從 Visual Studio 電腦的 *%VSInstallDir%_團隊工具_性能工具_性能工具_安裝程式*資料夾複製到遠端電腦並安裝它。 您無法使用[遠端偵錯](../debugger/remote-debugging.md)下載套件中的程式碼剖析工具。
+若要在遠端電腦上收集階層互動資料，您必須將** \_ \_ ** _\<Platform>_ **\_** _\<Language>_ Visual Studio 電腦的 *%VSInstallDir%\Team Tools\Performance Tools\Setups*資料夾中的 vs profiler **.exe**檔案複製到遠端電腦，並加以安裝。 您無法使用[遠端偵錯](../debugger/remote-debugging.md)下載套件中的程式碼剖析工具。
 
 您可以使用 [VSPerfCmd](../profiling/vsperfcmd.md) 或 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 收集程式碼剖析資料。
 
@@ -120,6 +120,6 @@ Windows 8 尚未變更使用檢測方法進行程式碼剖析。
 
 ## <a name="see-also"></a>另請參閱
 
-[性能資源管理器](../profiling/performance-explorer.md)
-[從命令列](../profiling/using-the-profiling-tools-from-the-command-line.md)[配置性能會話](../profiling/configuring-performance-sessions.md)
-設定檔
+[效能總管](../profiling/performance-explorer.md) 
+[設定效能會話](../profiling/configuring-performance-sessions.md) 
+[從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

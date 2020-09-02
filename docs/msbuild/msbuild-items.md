@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 020983182706bd6d9382f4d0bd4885ffa0f86f52
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247582"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
@@ -45,7 +45,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 </ItemGroup>
 ```
 
-`Include`屬性（attribute）是相對於專案檔的資料夾（$ (MSBuildProjectPath) ）所解讀的路徑，即使專案是在匯入的檔案（例如 *.targets*檔案）中也一樣。
+`Include`屬性（attribute）是相對於專案檔資料夾 $ (MSBuildProjectPath) 的路徑，即使專案是在匯入的檔案中（例如 *.targets*檔案）也是一樣。
 
 ## <a name="create-items-during-execution"></a>執行期間建立項目
 
@@ -61,7 +61,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 
  若要在整個專案檔中參考項目類型，您可以使用語法 @(\<ItemType>)。 例如，您應該使用 `@(Compile)`，來參考前一個範例中的項目類型。 使用下列語法，您可以藉由指定項目類型做為工作的參數，來將項目傳遞給該工作。 如需詳細資訊，請參閱 [如何：選取要建立的](../msbuild/how-to-select-the-files-to-build.md)檔案。
 
- 根據預設，項目類型的項目在展開時會以分號 (;) 分隔。 您可以使用語法 @ (\<ItemType> ，' \<separator> ' ) 來指定預設值以外的分隔符號。 如需詳細資訊，請參閱 [如何：顯示以逗號分隔的專案清單](../msbuild/how-to-display-an-item-list-separated-with-commas.md)。
+ 根據預設，項目類型的項目在展開時會以分號 (;) 分隔。 您可以使用語法 @ (\<ItemType> ，' \<separator> ' ) 指定預設值以外的分隔符號。 如需詳細資訊，請參閱 [如何：顯示以逗號分隔的專案清單](../msbuild/how-to-display-an-item-list-separated-with-commas.md)。
 
 ## <a name="use-wildcards-to-specify-items"></a>使用萬用字元指定項目
 
@@ -97,7 +97,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 </ItemGroup>
 ```
 
- `Exclude` 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 `Include` 屬性所加入的項目 (Item)。 下列範例不會排除檔案 *Form1.cs*，這是在前一個 item 專案中加入的檔案。
+ `Exclude` 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 `Include` 屬性所加入的項目 (Item)。 下列範例不會排除 *Form1.cs*檔案，這是在先前的 item 專案中加入的。
 
 ```xml
 <Compile Include="*.cs" />
@@ -112,7 +112,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 
  中繼資料是一個索引鍵值組的集合，可在專案檔中宣告為 Item 項目的子項目。 子項目的名稱是中繼資料的名稱，而子項目的值是中繼資料的值。
 
- 中繼資料會與包含它的 Item 項目相關聯。 例如，下列 XML `Culture` 會將具有值的中繼資料加入 `Fr` 至至 csfile 專案類型的 *one.cs* 和 *two.cs* 專案。
+ 中繼資料會與包含它的 Item 項目相關聯。 例如，下列 XML `Culture` 會將具有值的中繼資料加入 `Fr` 至新增至 csfile 專案類型的 *one.cs* 和 *two.cs* 專案。
 
 ```xml
 <ItemGroup>
@@ -146,11 +146,11 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 
 ### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a> 已知的專案中繼資料
 
- 將項目加入至項目類型時，即會為該項目指派一些已知的中繼資料。 例如，所有專案都具有已知的中繼資料% (\<Filename>) ，其值為不含副檔名) 之專案 (的檔案名。 如需詳細資訊，請參閱 [已知的專案中繼資料](../msbuild/msbuild-well-known-item-metadata.md)。
+ 將項目加入至項目類型時，即會為該項目指派一些已知的中繼資料。 例如，所有專案都具有已知的中繼資料% (\<Filename>) ，其值為專案的檔案名， (不含副檔名) 。 如需詳細資訊，請參閱 [已知的專案中繼資料](../msbuild/msbuild-well-known-item-metadata.md)。
 
 ### <a name="transform-item-types-by-using-metadata"></a><a name="BKMK_Transforming"></a> 使用中繼資料轉換項目類型
 
- 您可以使用中繼資料，來將項目清單轉換為新的項目清單。 例如，您可以使用運算式，將具有代表 .cpp 檔案之專案的專案類型轉換 `CppFiles` 為 *.obj*檔的 *.cpp*對應清單 `@(CppFiles -> '%(Filename).obj')` 。
+ 您可以使用中繼資料，來將項目清單轉換為新的項目清單。 例如，您可以使用運算式，將具有代表 .cpp 檔案之專案的專案類型轉換 `CppFiles` 成 .obj 檔案的對應 *.cpp*清單 *。* `@(CppFiles -> '%(Filename).obj')`
 
  下列程式碼會建立 `CultureResource` 項目類型，其中包含所有具 `Culture` 中繼資料之 `EmbeddedResource` 項目的複本。 `Culture` 中繼資料值會成為新中繼資料 `CultureResource.TargetDirectory` 的值。
 
@@ -169,7 +169,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 
 ## <a name="item-definitions"></a>項目定義
 
- 從 .NET Framework 3.5 開始，您可以使用 [ItemDefinitionGroup 項目](../msbuild/itemdefinitiongroup-element-msbuild.md) (Element)，來將預設的中繼資料加入至任何項目類型。 如同已知的中繼資料，預設的中繼資料會與您指定之項目類型的所有項目相關聯。 您可以在項目定義中明確覆寫預設的中繼資料。 例如，下列 XML 會提供 `Compile` 專案 *one.cs* ，並 *Three.cs* `BuildDay` 值為 "Monday" 的中繼資料。 此程式碼會為*two.cs*專案提供 two.cs `BuildDay` 值為 "週二" 的中繼資料。
+ 從 .NET Framework 3.5 開始，您可以使用 [ItemDefinitionGroup 項目](../msbuild/itemdefinitiongroup-element-msbuild.md) (Element)，來將預設的中繼資料加入至任何項目類型。 如同已知的中繼資料，預設的中繼資料會與您指定之項目類型的所有項目相關聯。 您可以在項目定義中明確覆寫預設的中繼資料。 例如，下列 XML 會提供 `Compile` 專案 *one.cs* ，並 *Three.cs* `BuildDay` 值為 "Monday" 的中繼資料。 此程式碼會為專案 *two.cs* `BuildDay` 值為 "星期二" 的中繼資料。
 
 ```xml
 <ItemDefinitionGroup>
@@ -193,7 +193,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 
 ### <a name="remove-attribute"></a><a name="BKMK_RemoveAttribute"></a> 移除屬性
 
- `Remove` 屬性會移除項目類型中的特定項目 (檔案)。 此屬性是在目標 .NET Framework 3.5 (中引進，僅) 。 從 MSBuild 15.0 開始支援內部和外部目標。
+ `Remove` 屬性會移除項目類型中的特定項目 (檔案)。 這個屬性是在 .NET Framework 3.5 中引進，但在目標中 (僅) 。 從 MSBuild 15.0 開始支援內部和外部目標。
 
  下列範例會從 Compile 專案類型移除每個 *.config* 檔案。
 
@@ -338,9 +338,9 @@ Output:
 -->
 ```
 
-## <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>更新目標外部 ItemGroup 中專案的中繼資料
+## <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>更新目標外部 ItemGroup 專案的中繼資料
 
-目標外部的專案可以透過屬性更新其現有中繼資料 `Update` 。 目標下的專案 **無法** 使用這個屬性。
+目標外的專案可以透過屬性來更新其現有中繼資料 `Update` 。 目標底下的專案 **無法** 使用這個屬性。
 
 ```xml
 <Project>
@@ -413,7 +413,7 @@ Item1: notebook
 ```
 
 :::moniker range=">=vs-2019"
-在 MSBuild 版本16.6 和更新版本中， `Update` 屬性支援限定的中繼資料參考，以便從兩個或多個專案匯入中繼資料。
+在 MSBuild 16.6 版和更新版本中， `Update` 屬性支援限定的中繼資料參考，以協助從兩個或多個專案匯入中繼資料。
 
 ```xml
 <Project>
@@ -497,11 +497,11 @@ Item1: notebook
 ```
 
 備註：
-- 不合格的中繼資料 (% (M) # A3 會系結至 `Item1` 上述範例) 中 (更新的專案類型。 限定的中繼資料 () 系結至 `%(Item2.Color)` 更新運算式中的一組已捕獲相符專案類型內。
-- 如果專案在多個參考的專案內和之間有多個相符的次數：
-  - 每個參考專案類型最後一次出現 (，因此每個專案類型) 一個已捕獲的專案。
+- 不合格的中繼資料 (% (M) # A3 系結至 `Item1` 上述範例) 中 (更新的專案類型。 限定的中繼資料 () 系結至 `%(Item2.Color)` 來自更新運算式的一組已從相符專案類型內。
+- 如果專案在多個參考專案之間和之間符合多次：
+  - 每個參考專案類型的最後一個相符專案都會被捕獲 (因此，每個專案類型的一個捕捉專案) 。
   - 這符合目標下工作專案批次處理的行為。
-- 其中一個可以放入% ( # A1 參考：
+- 其中一個可放置% ( # A1 參考：
   - 中繼資料
   - 中繼資料條件
 - 中繼資料名稱比對不區分大小寫。
@@ -509,7 +509,7 @@ Item1: notebook
 
 ## <a name="updating-metadata-on-items-in-an-itemgroup-of-a-target"></a>更新目標 ItemGroup 中專案的中繼資料
 
-您也可以在目標內部修改中繼資料，方法是使用較不明確的語法 `Update` ：
+您也可以使用較不明確的語法，在目標內部修改中繼資料 `Update` 。
 
 ```xml
 <Project>
@@ -598,7 +598,7 @@ Item1: notebook
 - [Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)
 - [一般 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
-- [MSBuild](../msbuild/msbuild.md)
+- [Msbuild](../msbuild/msbuild.md)
 - [如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)
 - [如何：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)
 - [如何：顯示以逗號分隔的專案清單](../msbuild/how-to-display-an-item-list-separated-with-commas.md)

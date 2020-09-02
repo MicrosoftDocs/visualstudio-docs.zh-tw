@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶
 ms.openlocfilehash: da78c4f9212341636d85453ad19dde549ddb0e20
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248430"
 ---
 # <a name="managing-subscriptions"></a>管理訂用帳戶
@@ -30,10 +30,10 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>若要在訂閱之間切換，您可以：
 
-- 選取右上方的下拉式清單，然後從清單中選擇訂用帳戶
+- 選取右上方的下拉式清單，並從清單中選擇訂用帳戶
 - 選取 [訂閱] 索引標籤，然後選取所需的訂用帳戶
   > [!div class="mx-imgBorder"]
-  > ![切換訂閱](_img/manage-vs-subscriptions/change-subscription-resized.png "選取 [訂用帳戶] 索引標籤，以查看您所有訂用帳戶的詳細資訊，並在其間切換。")
+  > ![切換訂閱](_img/manage-vs-subscriptions/change-subscription-resized.png "選取 [訂閱] 索引標籤，以查看所有訂用帳戶的詳細資訊，並在其間切換。")
 
 ### <a name="if-your-subscription-is-not-visible"></a>如果未顯示您的訂閱...
 
@@ -90,22 +90,22 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 1. 使用您的 Microsoft 帳戶 (MSA) 登入[訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。
 2. 選取 **[訂閱]** 索引標籤。
 3. 在 [相關連結]**** 中，選擇 [新增其他帳戶]****。
-4. 輸入您的工作/學校帳戶電子郵件地址，然後選取 [ **新增**]。
+4. 輸入您的公司/學校帳戶電子郵件地址，然後選取 [ **新增**]。
 
-新增其他帳戶之後，您可以隨時透過選取 [ **訂閱** ] 索引標籤，然後在 [ **相關連結** ] 區段中選擇適當的選項，來更新或移除帳戶。
+新增其他帳戶之後，您可以隨時更新或移除帳戶，方法是選取 [ **訂閱** ] 索引標籤，然後在 [ **相關連結** ] 區段中選擇適當的選項。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>問：如果我未更新訂閱，Microsoft 會保留我的資料多久？
 答：根據購買管道，Microsoft 維護客戶資料的時間長度不一。
 
-| 通路                                                | 持續時間 (天數) |
+| 管道                                                | 持續時間 (天數) |
 |--------------------------------------------------------|-----------------|
 |    零售 (例如透過 Microsoft Store)               |    360          |
 |    大量授權服務中心 (VLSC)              |    180          |
 |    Microsoft 產品和服務合約 (MPSA)    |    180          |
 |    Visual Studio 雲端訂閱                   |    180          |
-|    程式 (例如 MCT、MPN、想像)           |    180          |
+|    程式 (例如 MCT、MPN、假想)           |    180          |
 |    禁止轉售 (例如 MVP、MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 
@@ -120,8 +120,8 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
-您是否管理組織的訂用帳戶？  深入瞭解如何管理 Visual Studio 訂閱：
-- [指派個別訂閱](assign-license.md)
+您是否可以管理組織的訂用帳戶？  深入瞭解如何管理 Visual Studio 訂閱：
+- [指派個別訂用帳戶](assign-license.md)
 - [指派多個訂用帳戶](assign-license-bulk.md)
 - [編輯訂用帳戶](edit-license.md)
 - [刪除訂用帳戶](delete-license.md)

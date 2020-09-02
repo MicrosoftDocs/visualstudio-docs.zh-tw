@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 07ec6d636ec087386fdc9462ae09db55400957a9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778410"
 ---
 # <a name="pf"></a>PF
@@ -40,20 +40,20 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="required-options"></a>必要選項
  **PF** 只能在包含下列其中一個選項的命令列上指定。
 
- **啟動：**`AppName`啟動探測器和 AppName 指定的應用程式。
+ **啟動：** `AppName` 啟動 profiler 和 AppName 指定的應用程式。
 
- **附加：**`PID`將探測器附加到 AppName 指定的進程。
+ **附加：** `PID` 將分析工具附加至 AppName 指定的進程。
 
 ## <a name="invalid-options"></a>無效的選項
  下列選項無法在與 **PF** 相同的命令列上指定。
 
- **計時器**[**：**`Cycles`] 將採樣事件設置為處理器時鐘週期，並選擇性地將`Cycles`取樣間隔設置為 。 預設 Timer 間隔為 10,000,000。
+ **Timer**[**：** `Cycles` ] 將取樣事件設定為處理器頻率週期，並選擇性地將取樣間隔設定為 `Cycles` 。 預設 Timer 間隔為 10,000,000。
 
- **Sys**=**：**`Events`* 將採樣事件設置為從設定檔的應用程式到作業系統內核 （syscalls） 的調用，並可以選擇將取樣間隔`Events`設置為 。 預設的 Sys 間隔為 10。
+ **Sys**[**：** `Events` ] 將取樣事件設定為從已分析的應用程式呼叫 (syscalls) 的作業系統核心，並選擇性地將取樣間隔設定為 `Events` 。 預設的 Sys 間隔為 10。
 
- **計數器：** `Name` `,Reload`[`,FriendlyName`] 將採樣事件設置為 指定的`Name`CPU 效能計數器，並將取樣間隔設置為`Reload`。
+ **計數器：** `Name`[ `,Reload` [ `,FriendlyName` ]] 將取樣事件設定為所指定的 CPU 效能計數器 `Name` ，並將取樣間隔設定為 `Reload` 。
 
- **GC**[**:**{**Allocation**&#124;**Lifetime**}] 收集 .NET 記憶體資料。 預設情況下（**分配**），資料在每個記憶體分配事件時收集。 指定**存留期**參數時，還會在每個垃圾回收事件中收集資料。
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}] 收集 .NET 記憶體資料。 根據預設 (**配置**) ，資料會在每個記憶體配置事件收集。 指定 **Lifetime** 參數時，也會在每個垃圾收集事件上收集資料。
 
 ## <a name="example"></a>範例
  此範例示範如何將分析取樣事件設定為分頁錯誤，並將取樣間隔設定為 20 個分頁錯誤。
@@ -66,5 +66,5 @@ VSPerfCmd.exe /Launch:TestApp.exe /PF:20
 ## <a name="see-also"></a>另請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [設定檔ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [分析 ASP.NET web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [分析服務](../profiling/command-line-profiling-of-services.md)

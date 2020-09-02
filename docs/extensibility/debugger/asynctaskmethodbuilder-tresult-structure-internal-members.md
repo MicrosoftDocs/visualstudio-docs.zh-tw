@@ -1,5 +1,5 @@
 ---
-title: 非同步Task方法建&lt;構器Tresult&gt;結構 - 內部成員 |微軟文件
+title: AsyncTaskMethodBuilder &lt; TResult &gt; 結構-內部成員 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9c4f4da7070af09937af9e047ec83142584942e6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739342"
 ---
-# <a name="asynctaskmethodbuilderlttresultgt-structure---internal-members"></a>非同步工作方法建&lt;構&gt;器 TResult 結構 - 內部成員
-本主題介紹<xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>類的內部成員。 有關此類的一般資訊,<xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>請參閱參考主題。
+# <a name="asynctaskmethodbuilderlttresultgt-structure---internal-members"></a>AsyncTaskMethodBuilder &lt; TResult &gt; 結構-內部成員
+本主題說明類別的內部成員 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> 。 如需此類別的一般資訊，請參閱 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> 參考主題。
 
- **命名空間:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **命名空間：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
- **程式集**:mscorlib(在 mscorlib.dll 中)
+ **元件：** mscorlib.dll) 中的 mscorlib (
 
- 由於您無法從 .NET 框架訪問這些內部成員,因此在通用中間語言 (CIL) 中提供了以下語法。
+ 因為您無法從 .NET Framework 存取這些內部成員，所以會以一般中繼語言 () 的 CIL 來提供下列語法。
 
 ## <a name="syntax"></a>語法
 
@@ -37,11 +37,11 @@ ms.locfileid: "80739342"
 
 ## <a name="internal-members"></a>內部成員
 
-|名稱|描述|
+|Name|描述|
 |----------|-----------------|
-|[物件 IdforDebugger 屬性](../../extensibility/debugger/asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)|獲取可用於唯一標識調試器此生成器的物件。|
-|[m_task欄位](../../extensibility/debugger/asynctaskmethodbuilder-tresult-m-task-field.md)|表示懶惰地初始化的已生成任務。|
+|[>.objectidfordebugger 屬性](../../extensibility/debugger/asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)|取得可用來唯一識別此產生器至偵錯工具的物件。|
+|[m_task 欄位](../../extensibility/debugger/asynctaskmethodbuilder-tresult-m-task-field.md)|表示延遲初始化的建立工作。|
 
 ## <a name="see-also"></a>另請參閱
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
-- [.NET 框架的並行擴展內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET Framework 的平行延伸模組內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
