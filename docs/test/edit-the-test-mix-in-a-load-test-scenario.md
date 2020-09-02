@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4a52d660140416ce829493a733171cfcf64ebbe4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595926"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>編輯測試混合以指定要包含在負載測試情節中的 Web 效能測試、單元測試和自動程式化 UI 測試
@@ -53,7 +53,7 @@ ms.locfileid: "75595926"
 
      測試便會加入至測試混合。 新的散發會自動指派至測試混合中的測試。
 
-5. (選擇性) 調整混合控制項以指定測試分佈。 有關詳細資訊，請參閱[有關混合控制項](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)。
+5. (選擇性) 調整混合控制項以指定測試分佈。 如需詳細資訊，請參閱 [關於混合控制項](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)。
 
 ## <a name="remove-tests-from-a-scenario"></a>從情節移除測試
 ![從現有的負載測試中移除測試](../test/media/ltest_removetest.png)
@@ -71,7 +71,7 @@ ms.locfileid: "75595926"
 
 4. 完成移除測試之後，選擇 [確定]****。
 
-## <a name="about-the-mix-control"></a><a name="EditingTestMixAboutMixControl"></a>關於混合控制
+## <a name="about-the-mix-control"></a><a name="EditingTestMixAboutMixControl"></a> 關於混合控制項
 混合控制可讓您在負載測試情節中，調整分佈在測試、瀏覽器類型或網路類型中的負載百分比。 您可以藉由移動滑桿調整百分比值。 調整混合測試可指定在負載測試情節中，一位虛擬使用者執行特定測試的可能性。
 
 當您移動滑桿時，所有可用項目的百分比值就會變更。 如果您有兩個以上的項目，您所新增或移除的數量會在其他項目間平均分佈。 您無法覆寫這個行為。 如果您針對特定項目選取鎖定資料行中的核取方塊，就會鎖定該項目所指定的百分比值。 之後，當您移動滑桿時，您所新增或移除的數量僅會套用到其餘未鎖定的所有項目。
@@ -81,10 +81,10 @@ ms.locfileid: "75595926"
 > [!WARNING]
 > [均分]**** 按鈕會覆寫所有已鎖定的項目。
 
-還可以直接在列中鍵入百分比值，**%** 而不是使用滑塊。 如果您直接輸入百分比值，其他項目就不會自動調整。
+您也可以直接在資料行中輸入百分比值， **%** 而不是使用滑杆。 如果您直接輸入百分比值，其他項目就不會自動調整。
 
 > [!NOTE]
-> 當總計未累積到 100% 或輸入到列中的百分比值為十進位時，**%** 將禁用滑塊。
+> 當總計未新增至100%，或輸入資料行的百分比值為十進位時，滑杆會停用 **%** 。
 
 當您手動輸入百分比值時，應確認所有項目的總和為 100%。 當您儲存混合時，如果總和不是 100%，系統會提示您接受該百分比值，或返回予以調整。 如果您選擇接受此設定，則會按比例分配至 100%。  例如，如果您有兩個項目，而且手動設定為 80% 和 40%。第一個項目會被設定為 66.67% (80 除以 120)，而第二個項目則會被設定為 33.33% (40 除以 120)。
 

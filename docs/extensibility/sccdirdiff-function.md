@@ -1,5 +1,5 @@
 ---
-title: SccDirDiff 功能 |微軟文件
+title: SccDirDiff 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1bb592a1174a91480ed76ef818733c288c5273c0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701007"
 ---
-# <a name="sccdirdiff-function"></a>SccDirDiff 函數
-此功能顯示用戶端磁碟上的當前本地目錄與原始程式碼管理下的相應專案之間的差異。
+# <a name="sccdirdiff-function"></a>SccDirDiff 函式
+此函式會顯示用戶端磁片上目前本機目錄與原始檔控制下對應專案之間的差異。
 
 ## <a name="syntax"></a>語法
 
@@ -37,53 +37,53 @@ SCCRTN SccDirDiff(
 ### <a name="parameters"></a>參數
  pContext
 
-[在]原始程式碼管理外掛程式上下文結構。
+在原始檔控制外掛程式內容結構。
 
  hWnd
 
-[在]源控件外掛程式可以用作它提供的任何對話框的父級的IDE視窗句柄。
+在IDE 視窗的控制碼，原始檔控制外掛程式可以使用它做為它所提供之任何對話方塊的父代。
 
- lpDirname
+ lpDirName
 
-[在]本地目錄的完全限定路徑,用於顯示視覺差異。
+在要顯示其視覺效果差異之本機目錄的完整路徑。
 
  dwFlags
 
-[在]命令標誌(請參閱備註部分)。
+在命令旗標 (查看備註區段) 。
 
  pvOptions
 
-[在]原始程式碼管理外掛程式特定選項。
+在原始檔控制外掛程式特定的選項。
 
 ## <a name="return-value"></a>傳回值
- 此函數的源碼管理外掛程式實現應返回以下值之一:
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|磁碟上的目錄與原始程式碼管理中的專案相同。|
-|SCC_I_FILESDIFFER|磁碟上的目錄與原始程式碼管理中的專案不同。|
-|SCC_I_RELOADFILE|需要重新載入檔或專案。|
-|SCC_E_FILENOTCONTROLLED|目錄不受原始程式碼控制。|
-|SCC_E_NOTAUTHORIZED|不允許使用者執行此操作。|
-|SCC_E_ACCESSFAILURE|訪問原始程式碼管理系統時出現問題,可能是由於網路或爭用問題。 建議重試。|
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|非特異性故障。|
-|SCC_E_FILENOTEXIST|找不到本地目錄。|
+|SCC_OK|磁片上的目錄與原始程式碼控制中的專案相同。|
+|SCC_I_FILESDIFFER|磁片上的目錄與原始程式碼控制中的專案不同。|
+|SCC_I_RELOADFILE|需要重載檔案或專案。|
+|SCC_E_FILENOTCONTROLLED|此目錄不在原始程式碼控制之下。|
+|SCC_E_NOTAUTHORIZED|不允許使用者執行這項操作。|
+|SCC_E_ACCESSFAILURE|存取原始檔控制系統時發生問題，可能是因為網路或爭用問題。 建議您重試。|
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|模糊失敗。|
+|SCC_E_FILENOTEXIST|找不到本機目錄。|
 
 ## <a name="remarks"></a>備註
- 此功能用於指示原始程式碼管理外掛程式向使用者顯示對指定目錄的更改清單。 該外掛程式以其選擇的格式打開自己的視窗,以顯示使用者在磁碟上的目錄與版本控制下的相應項目之間的差異。
+ 這個函式是用來指示原始檔控制外掛程式向使用者顯示指定目錄的變更清單。 外掛程式會以其選擇的格式開啟自己的視窗，以顯示使用者在磁片上的目錄與版本控制下的對應專案之間的差異。
 
- 如果外掛程式根本不支援目錄的比較,則即使不支援"快速差異"選項,它也必須支援基於檔名對目錄進行比較。
+ 如果外掛程式支援目錄的比較，則即使不支援「快速差異」選項，它也必須支援目錄的目錄比較。
 
 |`dwFlags`|解譯|
 |---------------|--------------------|
-|SCC_DIFF_IGNORECASE|區分大小寫的比較(可用於快速差異或視覺)。|
-|SCC_DIFF_IGNORESPACE|忽略空白(可用於快速差異或視覺)。|
-|SCC_DIFF_QD_CONTENTS|如果原始程式碼管理外掛程式支援,請靜默地比較目錄,位元組。|
-|SCC_DIFF_QD_CHECKSUM|如果外掛程式支援,則通過校驗和靜靜比較目錄,或者,如果不支援,則回落到SCC_DIFF_QD_CONTENTS。|
-|SCC_DIFF_QD_TIME|如果外掛程式支援,請通過其時間戳靜靜比較目錄,或者,如果不支援,則落在SCC_DIFF_QD_CHECKSUM或SCC_DIFF_QD_CONTENTS。|
+|SCC_DIFF_IGNORECASE|不區分大小寫的比較 (可用於快速差異或 visual) 。|
+|SCC_DIFF_IGNORESPACE|忽略空白字元 (可用於快速差異或 visual) 。|
+|SCC_DIFF_QD_CONTENTS|如果原始檔控制外掛程式支援，則以無訊息方式比較目錄、位元組和位元組。|
+|SCC_DIFF_QD_CHECKSUM|如果外掛程式支援，請透過總和檢查碼以無訊息方式比較目錄，或者，如果不支援，則會回復為 SCC_DIFF_QD_CONTENTS。|
+|SCC_DIFF_QD_TIME|如果外掛程式支援，請以無訊息方式透過其時間戳記來比較目錄，或者，如果不支援，則會回到 SCC_DIFF_QD_CHECKSUM 或 SCC_DIFF_QD_CONTENTS。|
 
 > [!NOTE]
-> 此函數使用與[SccDiff](../extensibility/sccdiff-function.md)相同的命令標誌。 但是,原始程式碼管理外掛程式可以選擇不支援目錄的「快速差異」。
+> 此函數會使用與 [SccDiff](../extensibility/sccdiff-function.md)相同的命令旗標。 不過，原始檔控制外掛程式可能會選擇不支援目錄的「快速差異」作業。
 
 ## <a name="see-also"></a>另請參閱
-- [原始程式碼管理外掛程式 API 功能](../extensibility/source-control-plug-in-api-functions.md)
+- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

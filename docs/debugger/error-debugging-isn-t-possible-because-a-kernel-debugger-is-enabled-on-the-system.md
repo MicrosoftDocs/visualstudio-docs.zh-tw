@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c94d605459720722b0e1360ab3a56539667d51e
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88706629"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤：因為系統上已啟用內核偵錯工具，所以無法進行&#39;t 的偵錯工具
@@ -36,7 +36,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 - 使用 CLR 2.0、3.0 或 3.5 版的應用程式。
 
-## <a name="solution"></a>解決方案
+## <a name="solution"></a>解決方法
 
 #### <a name="to-fix-this-problem"></a>若要修復這個問題
 
@@ -70,7 +70,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     bcdedit /debug off
     ```
 
-2. 重新啟動電腦。
+2. 將電腦重新開機。
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>若要停用所有工作階段的核心偵錯 (其他 Windows 作業系統)
 
@@ -88,7 +88,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     /baudrate
     ```
 
-3. 重新啟動電腦。
+3. 將電腦重新開機。
 
 #### <a name="to-debug-with-the-kernel-debugger"></a>若要使用核心偵錯工具進行偵錯
 
@@ -98,6 +98,6 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
      `gn`
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

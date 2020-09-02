@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5fe8a99ee59a347fdcb7cff601b75139760630f7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595952"
 ---
 # <a name="new-file-command"></a>新增檔案命令
@@ -70,6 +70,6 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
-- [即時視窗](../../ide/reference/immediate-window.md)
+- [即時運算視窗](../../ide/reference/immediate-window.md)
 - [尋找/命令方塊](../../ide/find-command-box.md)
-- [視覺化工作室命令別名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

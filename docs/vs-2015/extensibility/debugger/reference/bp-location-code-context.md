@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_CONTEXT | Microsoft Docs
+title: BP_LOCATION_CODE_CONTEXT |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1d703a35c0b4e065bcf3515fe063c7620382666f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153491"
 ---
-# <a name="bplocationcodecontext"></a>BP_LOCATION_CODE_CONTEXT
+# <a name="bp_location_code_context"></a>BP_LOCATION_CODE_CONTEXT
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-描述直接繫結中正在偵錯之程式的位址中斷點的位置。  
+描述直接系結至要進行偵錯工具之位址的中斷點位置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,18 +33,18 @@ typedef struct _BP_LOCATION_CODE_CONTEXT { 
 ```  
   
 ## <a name="members"></a>成員  
- pCodeContext  
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)識別中斷點的位置，在程式碼中的物件。  
+ pCodeCoNtext  
+ 在程式碼中識別中斷點位置的 [IDebugCodeCoNtext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 物件。  
   
 ## <a name="remarks"></a>備註  
- 此結構是隸屬[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構的聯集的一部分。  
+ 此結構是 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 結構的成員，做為聯集的一部分。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

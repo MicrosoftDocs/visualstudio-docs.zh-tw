@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1526e1c49636f4883392caa63966714625d066d6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595510"
 ---
-# <a name="options-dialog-box-environment--international-settings"></a>選項對話方塊：環境\>國際設置
+# <a name="options-dialog-box-environment--international-settings"></a>選項對話方塊：環境 \> 國際設定
 
 當您在電腦上安裝多個語言版本的整合式開發環境 (IDE) 時，[國際設定] 頁面可讓您變更預設語言。 您可以從 [工具]**** 功能表選取 [選項]****，然後從 [環境]**** 資料夾選擇 [國際設定]****，來存取這個對話方塊。
 

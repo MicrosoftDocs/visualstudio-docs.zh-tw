@@ -12,22 +12,22 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7a2b2f04e1088b9b06cb05015a6b0b4da5d60927
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153739"
 ---
-# <a name="modules"></a>模組
+# <a name="modules"></a>單元
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-偵錯工具就架構而言，**模組**:  
+就偵錯工具架構而言， **模組**：  
   
-- 是一個實體容器的程式碼，例如可執行檔或 DLL。  
+- 是程式碼的實體容器，例如可執行檔或 DLL。  
   
-- 可以重新載入其符號，並描述本身。 模組描述會顯示在 IDE 的 [模組] 視窗中。  
+- 可以重載其符號並加以描述。 模組描述會顯示在 IDE 的 [模組] 視窗中。  
   
-- 由[IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)來描述模組的偵錯引擎所建立的介面。  
+- 是由偵錯工具引擎所建立的 [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) 介面所表示，用來描述模組。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)   

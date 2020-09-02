@@ -8,22 +8,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2363e5131dd499dd85a5822ed15e2bfe473f1e1c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596632"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>有向圖形標記語言 (DGML) 參考
 
 有向圖形標記語言 (DGML) 描述用於視覺化以及執行複雜度分析的資訊，而且是用來在 Visual Studio 中保存 Code Map 的格式。 它使用簡單的 XML 來描述循環與非循環的有向圖形。 有向圖形是一組用連結或邊緣相連的節點。 節點和連結可用來表示網路結構，例如軟體專案中的項目。
 
-請注意，某些版本的 Visual Studio 僅支援 DGML 功能的子集，請參閱[架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+請注意，某些版本的 Visual Studio 僅支援 DGML 功能的子集，請參閱 [架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 > [!NOTE]
-> 當您編輯 .dgml 檔案時，IntelliSense 會協助您識別每個項目的可用屬性和其值。 若要以屬性指定色彩，請使用常見色彩名稱 (例如 "Blue") 或 ARGB 十六進位值 (例如 "#ffa0b1c3")。 DGML 使用一小部分的 Windows Presentation Foundation (WPF) 色彩定義格式。 如需詳細資訊，請參閱[色彩類別](/dotnet/api/system.windows.media.colors?view=netframework-4.8)。
+> 當您編輯 .dgml 檔案時，IntelliSense 會協助您識別每個項目的可用屬性和其值。 若要以屬性指定色彩，請使用常見色彩名稱 (例如 "Blue") 或 ARGB 十六進位值 (例如 "#ffa0b1c3")。 DGML 使用一小部分的 Windows Presentation Foundation (WPF) 色彩定義格式。 如需詳細資訊，請參閱 [色彩類別](/dotnet/api/system.windows.media.colors?view=netframework-4.8)。
 
-## <a name="DGML"></a>DGML 語法
+## <a name="dgml-syntax"></a><a name="DGML"></a> DGML 語法
 
 下表說明 DGML 中所使用的項目種類：
 
@@ -33,15 +33,15 @@ ms.locfileid: "75596632"
 
    下列清單說明您可以加入的選擇性屬性：
 
-   `Background`-地圖背景的色彩
+   `Background` -地圖背景的色彩
 
-   `BackgroundImage`-要當做地圖背景使用之影像檔案的位置。
+   `BackgroundImage` -影像檔案的位置，用來做為地圖背景。
 
-   `GraphDirection`-當地圖設定為樹狀配置（`Sugiyama`）時，排列節點，讓大部分的連結以指定的方向流動： `TopToBottom`、`BottomToTop`、`LeftToRight`或 `RightToLeft`。 請參閱[變更地圖版面](../modeling/browse-and-rearrange-code-maps.md#Selecting)配置。
+   `GraphDirection` -當地圖設定為樹狀配置 () 時 `Sugiyama` ，請排列節點，讓大部分的連結以指定的方向流動： `TopToBottom` 、 `BottomToTop` 、 `LeftToRight` 或 `RightToLeft` 。 請參閱 [變更地圖版面](../modeling/browse-and-rearrange-code-maps.md#Selecting)配置。
 
-   `Layout`-將地圖設定為下列配置： [`None`]、[`Sugiyama` （樹狀配置）]、[`ForceDirected` （快速叢集）] 或 [`DependencyMatrix`]。 請參閱[變更地圖版面](../modeling/browse-and-rearrange-code-maps.md#Selecting)配置。
+   `Layout` -將地圖設定為下列配置： `None` 、 `Sugiyama` (樹版面配置) 、 `ForceDirected` (快速叢集) 或 `DependencyMatrix` 。 請參閱 [變更地圖版面](../modeling/browse-and-rearrange-code-maps.md#Selecting)配置。
 
-   `NeighborhoodDistance`-當對應設定為 [樹狀配置] 或 [快速叢集配置] 時，只顯示與所選節點的指定數目（1-7）連結相同的節點。 請參閱[變更地圖版面](../modeling/browse-and-rearrange-code-maps.md#Selecting)配置。
+   `NeighborhoodDistance` -當地圖設定為 [樹狀配置] 或 [快速叢集配置] 時，只會顯示與所選節點相距 (1-7) 連結的節點。 請參閱 [變更地圖版面](../modeling/browse-and-rearrange-code-maps.md#Selecting)配置。
 
    範例：
 
@@ -90,23 +90,23 @@ ms.locfileid: "75596632"
 
    這個項目必須包括下列屬性：
 
-   `Id`-節點的唯一名稱，以及 `Label` 屬性的預設值（如果未指定個別的 `Label` 屬性）。 此名稱必須符合參考該節點之連結的 `Source` 或 `Target` 屬性。
+   `Id` -節點的唯一名稱，以及屬性的預設值 `Label` （如果未指定個別的 `Label` 屬性）。 此名稱必須符合參考該節點之連結的 `Source` 或 `Target` 屬性。
 
    下列清單會描述一些您可以加入的選擇性屬性：
 
-   `Label`-節點的顯示名稱。
+   `Label` -節點的顯示名稱。
 
    樣式屬性。 請參閱 [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。
 
-   `Category`-識別共用這個屬性之元素的分類名稱。 如需詳細資訊，請參閱 `<Category/>` 項目。
+   `Category` -識別共用這個屬性之元素的分類名稱。 如需詳細資訊，請參閱 `<Category/>` 項目。
 
-   `Property`-識別具有相同屬性值之元素的屬性名稱。 如需詳細資訊，請參閱 `<Property/>` 項目。
+   `Property` -屬性的名稱，這個屬性會識別具有相同屬性值的元素。 如需詳細資訊，請參閱 `<Property/>` 項目。
 
-   `Group` - 如果節點中包含其他節點，請將此屬性設定為 `Expanded` 或 `Collapsed`，以顯示或隱藏其內容。 此時必須要有 `<Link/>` 項目，用以加入 `Category="Contains"` 屬性，以及將父節點指定為來源節點，將子節點指定為目標節點。 請參閱[群組程式碼元素](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes)。
+   `Group` - 如果節點中包含其他節點，請將此屬性設定為 `Expanded` 或 `Collapsed`，以顯示或隱藏其內容。 此時必須要有 `<Link/>` 項目，用以加入 `Category="Contains"` 屬性，以及將父節點指定為來源節點，將子節點指定為目標節點。 請參閱 [群組程式碼元素](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes)。
 
-   `Visibility`-將此屬性設定為 `Visible`、`Hidden`或 `Collapsed`。 使用`System.Windows.Visibility`。 請參閱[隱藏或顯示節點和連結](../modeling/browse-and-rearrange-code-maps.md#HidingShowing)。
+   `Visibility` -將此屬性設定為 `Visible` 、 `Hidden` 或 `Collapsed` 。 使用`System.Windows.Visibility`。 請參閱 [隱藏或顯示節點和連結](../modeling/browse-and-rearrange-code-maps.md#HidingShowing)。
 
-   `Reference` - 請將此屬性設為連結到文件或 URL。 請參閱[將檔或 Url 連結至程式碼專案和連結](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences)。
+   `Reference` - 請將此屬性設為連結到文件或 URL。 請參閱 [將檔或 Url 連結至程式碼專案和連結](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences)。
 
    範例：
 
@@ -153,19 +153,19 @@ ms.locfileid: "75596632"
 
    這個項目必須包括下列屬性：
 
-   `Source`-連結的來源節點
+   `Source` -連結的來源節點
 
    `Target` - 連結的目標節點
 
    下列清單會描述一些您可以加入的選擇性屬性：
 
-   `Label`-連結的顯示名稱
+   `Label` -連結的顯示名稱
 
    樣式屬性。 請參閱 [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。
 
-   `Category`-識別共用這個屬性之元素的分類名稱。 如需詳細資訊，請參閱 `<Category/>` 項目。
+   `Category` -識別共用這個屬性之元素的分類名稱。 如需詳細資訊，請參閱 `<Category/>` 項目。
 
-   `Property`-識別具有相同屬性值之元素的屬性名稱。 如需詳細資訊，請參閱 `<Property/>` 項目。
+   `Property` -屬性的名稱，這個屬性會識別具有相同屬性值的元素。 如需詳細資訊，請參閱 `<Property/>` 項目。
 
    範例：
 
@@ -214,9 +214,9 @@ ms.locfileid: "75596632"
 
    `Label` - 方便讀者理解的分類名稱。
 
-   `BasedOn`-目前專案的 `<Category/>` 繼承的父類別。
+   `BasedOn` -目前專案所繼承的父類別 `<Category/>` 。
 
-   在這個項目的範例中，`FailedTest` 分類會從 `Stroke` 分類繼承 `PassedTest` 屬性。 請參閱[編輯 DGML 檔案以自訂 code map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)中的「建立階層式類別」。
+   在這個項目的範例中，`FailedTest` 分類會從 `Stroke` 分類繼承 `PassedTest` 屬性。 藉由編輯 DGML 檔案，請參閱 [自訂 code map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)中的「建立階層式類別」。
 
    分類也提供一些基本的範本行為，用以控制節點和連結顯示於地圖時的外觀。 請參閱 [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。
 
@@ -265,13 +265,13 @@ ms.locfileid: "75596632"
 
    這個項目必須包括下列屬性：
 
-  - `Id`-屬性的唯一名稱，以及 `Label` 屬性的預設值（如果未指定個別的 `Label` 屬性）。
+  - `Id` -屬性的唯一名稱，以及屬性的預設值 `Label` （如果未指定個別的 `Label` 屬性）。
 
-  - `DataType`-屬性所儲存的資料類型
+  - `DataType` -屬性所儲存的資料類型
 
-    如果您想要讓屬性出現在 [**屬性**] 視窗中，請使用 [`Label`] 屬性來指定屬性的顯示名稱。
+    如果您要讓屬性出現在 [ **屬性** ] 視窗中，請使用 `Label` 屬性來指定屬性的顯示名稱。
 
-    請參閱[指派分類給程式碼專案和連結](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories)。
+    請參閱 [指派分類給程式碼專案和連結](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories)。
 
     範例：
 
@@ -300,7 +300,7 @@ ms.locfileid: "75596632"
   </DirectedGraph>
   ```
 
-### <a name="AddAlias"></a>常用路徑的別名
+### <a name="aliases-for-commonly-used-paths"></a><a name="AddAlias"></a> 常用路徑的別名
 
 以別名取代常用路徑，有助於縮減 .dgml 檔案的大小以及載入或儲存檔案所需的時間。 若要建立別名，請在 .dgml 檔案的結尾加入 `<Paths></Paths>` 區段。 在這個區段加入 `<Path/>` 項目，以定義路徑的別名：
 
@@ -310,7 +310,7 @@ ms.locfileid: "75596632"
 </Paths>
 ```
 
-若要從 .dgml 檔案中的元素參考別名，請以貨幣符號（$）和括弧（（））括住 \<Path/> 元素的 `Id`：
+若要從 .dgml 檔案中的專案參考別名，請以 `Id` \<Path/> 貨幣符號 ($) ，並以括弧括住元素 ( # A3 # A4 # A5：
 
 ```xml
 <Nodes>
@@ -321,7 +321,7 @@ ms.locfileid: "75596632"
 </Properties>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)
 - [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)

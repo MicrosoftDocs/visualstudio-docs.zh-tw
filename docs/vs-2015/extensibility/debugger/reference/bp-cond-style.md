@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fbb2674381992bd86f0144af103615f0a3922fcf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153579"
 ---
-# <a name="bpcondstyle"></a>BP_COND_STYLE
+# <a name="bp_cond_style"></a>BP_COND_STYLE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定中斷點條件樣式暫止和繫結中斷點。  
+指定暫止和系結中斷點的中斷點條件樣式。  
   
 ## <a name="syntax"></a>語法  
   
@@ -45,24 +45,24 @@ public enum enum_BP_COND_STYLE { 
   
 ## <a name="members"></a>成員  
  BP_COND_NONE  
- 當到達中斷點的位置時，就會引發中斷點。 沒有指定中斷點條件。  
+ 到達中斷點的位置時引發中斷點。 未指定中斷點條件。  
   
  BP_COND_WHEN_TRUE  
- 條件運算式與中斷點相關聯的時評估為僅，就會引發中斷點`true`。  
+ 只有當與中斷點相關聯的條件運算式評估為時，才會引發中斷點 `true` 。  
   
  BP_COND_WHEN_CHANGED  
- 引發中斷點與中斷點相關聯的條件式運算式的值時，才已經從其先前的評估。  
+ 只有當與中斷點相關聯之條件運算式的值已從其先前的評估變更時，才會引發中斷點。  
   
 ## <a name="remarks"></a>備註  
- 用於`styleCondition`隸屬[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)結構。  
+ 用於 `styleCondition` [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) 結構的成員。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

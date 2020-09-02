@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c16c92b41aa0635ecb24d83e30e2c347620b2c75
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675529"
 ---
 # <a name="xdcmake-task"></a>XDCMake 工作
@@ -40,17 +40,17 @@ ms.locfileid: "65675529"
 ## <a name="parameters"></a>參數  
  下表說明 **XDCMake** 工作的參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
-|**AdditionalDocumentFile**|選擇性的 **String[]** 參數。<br /><br /> 指定其他一或多個要合併的 .xdc 檔案。<br /><br /> 如需詳細資訊，請參閱 [XML 文件產生器工具屬性頁](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)中的**其他文件檔**描述。 另請參閱 xdcmake.exe 的 **/old** 和 **/Fs** 命令列選項。|  
-|**AdditionalOptions**|選擇性的 **String** 參數。<br /><br /> 選項的清單，如命令列上所指定。 例如 "*/option1 /option2 /option#*"。 使用這個參數來指定任何其他 **XDCMake** 工作參數未表示的選項。<br /><br /> 如需詳細資訊，請參閱 [XDCMake 參考](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)、[XML 文件產生器工具屬性頁](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)，以及 xdcmake.exe 的命令列說明 (**/?**)。|  
-|**DocumentLibraryDependencies**|選擇性的 **Boolean** 參數。<br /><br /> 如果為 `true` 且目前的專案相依於方案中的靜態程式庫 (.lib) 專案，則程式庫專案的 .xdc 檔案會包含在目前專案的 .xml 檔案輸出中。<br /><br /> 如需詳細資訊，請參閱 [XML 文件產生器工具屬性頁](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)中的**文件庫相依性**描述。|  
-|**OutputFile**|選擇性的 **String** 參數。<br /><br /> 覆寫預設輸出檔案名稱。 此預設名稱衍生自第一個處理之 .xdc 檔案的名稱。<br /><br /> 如需詳細資訊，請參閱 [XDCMake 參考](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)中的 **/out:**`filename` 選項。 另請參閱 xdcmake.exe 的 **/old** 和 **/Fo** 命令列選項。|  
-|**ProjectName**|選擇性的 **String** 參數。<br /><br /> 目前專案的名稱。|  
-|**SlashOld**|選擇性的 **Boolean** 參數。<br /><br /> 如果為 `true`，則會啟用其他 xdcmake.exe 選項。<br /><br /> 如需詳細資訊，請參閱 xdcmake.exe 的 **/old** 命令列選項。|  
-|**Sources**|必要的 `ITaskItem[]` 參數。<br /><br /> 定義工作可以耗用和發出的 MSBuild 來源檔案項目的陣列。|  
-|**SuppressStartupBanner**|選擇性的 **Boolean** 參數。<br /><br /> 如果是 `true`，當工作開始時，會防止顯示著作權和版本號碼訊息。<br /><br /> 如需詳細資訊，請參閱 [XDCMake 參考](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)中的 **/nologo** 選項。|  
-|**TrackerLogDirectory**|選擇性的 **String** 參數。<br /><br /> 指定追蹤器記錄檔的目錄。|  
+|**AdditionalDocumentFile**|選擇性的 **String []** 參數。<br /><br /> 指定其他一或多個要合併的 .xdc 檔案。<br /><br /> 如需詳細資訊，請參閱 [XML 文件產生器工具屬性頁](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)中的**其他文件檔**描述。 另請參閱 xdcmake.exe 的 **/old** 和 **/fs** 命令列選項。|  
+|**AdditionalOptions**|選擇性的 **字串** 參數。<br /><br /> 選項的清單，如命令列上所指定。 例如，"*/option1/option2/option #*"。 使用這個參數來指定任何其他 **XDCMake** 工作參數未表示的選項。<br /><br /> 如需詳細資訊，請參閱 xdcmake.exe 的 [Xdcmake.exe 參考](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)、 [XML 檔產生器工具屬性頁](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)和命令列說明 (**/？**) 。|  
+|**DocumentLibraryDependencies**|選擇性的 **布林值** 參數。<br /><br /> 如果為 `true` 且目前的專案相依於方案中的靜態程式庫 (.lib) 專案，則程式庫專案的 .xdc 檔案會包含在目前專案的 .xml 檔案輸出中。<br /><br /> 如需詳細資訊，請參閱 [XML 文件產生器工具屬性頁](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)中的**文件庫相依性**描述。|  
+|**OutputFile**|選擇性的 **字串** 參數。<br /><br /> 覆寫預設輸出檔案名稱。 此預設名稱衍生自第一個處理之 .xdc 檔案的名稱。<br /><br /> 如需詳細資訊，請 **/out:** 參閱 `filename` [xdcmake.exe 參考](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)中的/out：選項。 另請參閱 xdcmake.exe 的 **/old** 和 **/Fo** 命令列選項。|  
+|**ProjectName**|選擇性的 **字串** 參數。<br /><br /> 目前專案的名稱。|  
+|**SlashOld**|選擇性的 **布林值** 參數。<br /><br /> 如果為 `true`，則會啟用其他 xdcmake.exe 選項。<br /><br /> 如需詳細資訊，請參閱 xdcmake.exe 的 **/old** 命令列選項。|  
+|**來源**|必要的 `ITaskItem[]` 參數。<br /><br /> 定義工作可以耗用和發出的 MSBuild 來源檔案項目的陣列。|  
+|**SuppressStartupBanner**|選擇性的 **布林值** 參數。<br /><br /> 如果是 `true`，當工作開始時，會防止顯示著作權和版本號碼訊息。<br /><br /> 如需詳細資訊，請參閱 [XDCMake 參考](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)中的 **/nologo** 選項。|  
+|**TrackerLogDirectory**|選擇性的 **字串** 參數。<br /><br /> 指定追蹤器記錄檔的目錄。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

@@ -9,27 +9,27 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 08d88ce08c6c91cbf46bcc6d15cbf098d61e604d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65679935"
 ---
 # <a name="managing-universal-windows-projects"></a>管理通用 Windows 專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-通用 Windows 應用程式是以 Windows 8.1 和 Windows Phone 8.1，讓開發人員可以使用兩種平台的程式碼和其他資產為目標的應用程式。 共用程式碼和資源會保留在共用的專案，而平台特定程式碼和資源會保留在不同的專案，一個用於 Windows，另一個則用於 Windows Phone。 如需通用 Windows 應用程式的詳細資訊，請參閱[通用 Windows 應用程式](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx)。 管理專案的 visual Studio 擴充功能應該要知道通用 Windows 應用程式專案具有不同於單一平台應用程式的結構。 本逐步解說會示範如何瀏覽共用的專案和管理共用的項目。  
+通用 Windows 應用程式是以 Windows 8.1 和 Windows Phone 8.1 為目標的應用程式，可讓開發人員在兩個平臺上使用程式碼和其他資產。 共用的程式碼和資源會保留在共用的專案中，而平臺特定的程式碼和資源會保留在不同的專案中，一個用於 Windows，另一個則用於 Windows Phone。 如需通用 Windows 應用程式的詳細資訊，請參閱 [通用 Windows 應用程式](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx)。 管理專案的 Visual Studio 延伸模組應留意到通用 Windows 應用程式專案的結構與單一平臺應用程式不同。 本逐步解說會示範如何流覽共用的專案，以及管理共用的專案。  
   
-## <a name="prerequisites"></a>必要條件  
- 從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+## <a name="prerequisites"></a>先決條件  
+ 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-### <a name="navigate-the-shared-project"></a>瀏覽共用的專案  
+### <a name="navigate-the-shared-project"></a>流覽共用的專案  
   
-1. 建立名為 C# VSIX 專案**TestUniversalProject**。 (**檔案]、 [新增]、 [專案**，然後**C# 擴充性，Visual Studio 套件**)。 新增**自訂命令**專案項目範本 (在 [方案總管] 中，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新的項目**，然後移至**擴充性**)。 將檔案命名**TestUniversalProject**。  
+1. 建立名為 **TestUniversalProject**的 c # VSIX 專案。  (檔案 **、新的、專案** ，以及 **c #、擴充性、Visual Studio 封裝**) 。 在方案總管上加入**自訂命令**專案專案範本 (，以滑鼠右鍵按一下專案節點，然後選取 [**加入]/[新增專案**]，然後移至 [擴充性 **]) 。** 將檔案命名為 **TestUniversalProject**。  
   
-2. 將參考加入 Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll 和 Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll (在**延伸模組**區段)。  
+2. 在 [ **延伸** 模組] 區段中新增 Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll 的參考，並 Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll () 。  
   
-3. 開啟 TestUniversalProject.cs 並新增下列`using`陳述式：  
+3. 開啟 TestUniversalProject.cs，並加入下列 `using` 語句：  
   
     ```csharp  
     using EnvDTE;  
@@ -42,7 +42,7 @@ ms.locfileid: "65679935"
     using System.Windows.Forms;  
     ```  
   
-4. TestUniversalProject 類別中新增私用欄位，指向**輸出**視窗。  
+4. 在 TestUniversalProject 類別中，新增指向 **輸出** 視窗的私用欄位。  
   
     ```csharp  
     public sealed class TestUniversalProject   
@@ -52,7 +52,7 @@ ms.locfileid: "65679935"
     }  
     ```  
   
-5. 設定 TestUniversalProject 建構函式內的 [輸出] 窗格的參考：  
+5. 在 TestUniversalProject 的函式內，將參考設定為 [輸出] 窗格：  
   
     ```csharp  
     private TestUniversalProject(Package package)  
@@ -77,7 +77,7 @@ ms.locfileid: "65679935"
     }  
     ```  
   
-6. 移除現有的程式碼，從`ShowMessageBox`方法：  
+6. 從方法中移除現有的程式碼 `ShowMessageBox` ：  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)   
@@ -85,7 +85,7 @@ ms.locfileid: "65679935"
     }  
     ```  
   
-7. 取得 DTE 物件，我們會用來在這個逐步解說幾個不同的用途。 此外，請確定載入方案時按下功能表按鈕時。  
+7. 取得在這個逐步解說中，我們將用於數個不同用途的 DTE 物件。 此外，請確定在按一下功能表按鈕時，已載入解決方案。  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -103,7 +103,7 @@ ms.locfileid: "65679935"
     }  
     ```  
   
-8. 尋找共用的專案。 共用的專案是純粹的容器;它不會建置或產生的輸出。 下列方法在方案內尋找第一個共用的專案，藉由尋找<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>共用的專案匯入功能的物件。  
+8. 尋找共用的專案。 共用的專案是純容器;它不會建立或產生輸出。 下列方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 會尋找具有共用專案功能的物件，以尋找方案中的第一個共用專案。  
   
     ```csharp  
     private IVsHierarchy FindSharedProject()  
@@ -125,7 +125,7 @@ ms.locfileid: "65679935"
     }  
     ```  
   
-9. 在 [`ShowMessageBox`方法，輸出標題 (會出現在專案名稱**方案總管] 中**) 共用專案。  
+9. 在 `ShowMessageBox` 方法中，輸出標題 (出現在共用專案的 **方案總管**) 中的專案名稱。  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -155,7 +155,7 @@ ms.locfileid: "65679935"
     }  
     ```  
   
-10. 取得使用中平台專案。 平台專案會包含平台特定程式碼和資源的專案。 下列方法會使用新的欄位<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>取得使用中平台專案。  
+10. 取得使用中的平臺專案。 平臺專案是包含平臺特定程式碼和資源的專案。 下列方法會使用新的欄位 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7> 來取得使用中的平臺專案。  
   
     ```csharp  
     private IVsHierarchy GetActiveProjectContext(IVsHierarchy hierarchy)  
@@ -173,7 +173,7 @@ ms.locfileid: "65679935"
     }  
     ```  
   
-11. 在 `ShowMessageBox`方法，輸出的使用中平台專案的標題。  
+11. 在 `ShowMessageBox` 方法中，輸出使用中平臺專案的標題。  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -216,7 +216,7 @@ ms.locfileid: "65679935"
   
     ```  
   
-12. 逐一查看的平台專案。 下列方法會取得所有匯入的 （平台） 專案，從共用的專案。  
+12. 逐一查看平臺專案。 下列方法會取得從共用專案匯入 (平臺) 專案的所有專案。  
   
     ```csharp  
     private IEnumerable<IVsHierarchy> EnumImportingProjects(IVsHierarchy hierarchy)  
@@ -235,7 +235,7 @@ ms.locfileid: "65679935"
     ```  
   
     > [!IMPORTANT]
-    > 如果使用者已開啟C++實驗執行個體中的通用 Windows 應用程式專案，上述程式碼會擲回例外狀況。 這是已知的問題。 若要避免此例外狀況，取代`foreach`含有下列區塊上方：  
+    > 如果使用者已在實驗實例中開啟 c + + 通用 Windows 應用程式專案，上述程式碼會擲回例外狀況。 這是已知的問題。 若要避免這個例外狀況，請以 `foreach` 下列內容取代上述的區塊：  
   
     ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
@@ -245,7 +245,7 @@ ms.locfileid: "65679935"
     }   
     ```  
   
-13. 在 `ShowMessageBox`方法，輸出每個平台專案的標題。 輸出標題的使用中平台專案的行之後插入下列程式碼。 只載入的平台專案會出現在這份清單中。  
+13. 在 `ShowMessageBox` 方法中，輸出每個平臺專案的標題。 在輸出作用中平臺專案標題的行之後，插入下列程式碼。 只有已載入的平臺專案才會出現在此清單中。  
   
     ```csharp  
     output.OutputStringThreadSafe("Platform projects:\n");  
@@ -261,7 +261,7 @@ ms.locfileid: "65679935"
     }  
     ```  
   
-14. 變更使用中平台專案。 下列方法可讓您設定作用中的專案使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>。  
+14. 變更使用中的平臺專案。 下列方法會使用來設定使用中的專案 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A> 。  
   
     ```csharp  
     private int SetActiveProjectContext(IVsHierarchy hierarchy, IVsHierarchy activeProjectContext)  
@@ -270,7 +270,7 @@ ms.locfileid: "65679935"
     }  
     ```  
   
-15. 在 `ShowMessageBox`方法中，變更使用中平台專案。 插入此程式碼內`foreach`區塊。  
+15. 在 `ShowMessageBox` 方法中，變更使用中的平臺專案。 將此程式碼插入 `foreach` 區塊內。  
   
     ```csharp  
     bool isActiveProjectSet = false;  
@@ -293,7 +293,7 @@ ms.locfileid: "65679935"
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');  
     ```  
   
-16. 現在試試看。按下 F5 來啟動實驗執行個體。 在實驗執行個體中建立 C# 通用中樞應用程式專案 (在**新的專案** 對話方塊中， **Visual C# / Windows / Windows 8 / 通用 / 中樞應用程式**)。 載入方案之後，請前往**工具**功能表，然後按一下**叫用 TestUniversalProject**，然後簽入的 文字**輸出**窗格。 您應該會看到類似下列的畫面：  
+16. 現在就試試看。按 F5 來啟動實驗實例。 在 [ **新增專案** ] 對話方塊、 **Visual c #/Windows/Windows 8/通用/中樞應用程式**) 的實驗 (實例中，建立 c # 通用中樞應用程式專案。 載入解決方案之後，請移至 [ **工具** ] 功能表並按一下 [叫用 **TestUniversalProject**]，然後檢查 [ **輸出** ] 窗格中的文字。 您應該會看到如下的內容：  
   
     ```  
     Found shared project: HubApp.Shared  
@@ -304,9 +304,9 @@ ms.locfileid: "65679935"
     set active project: HubApp.WindowsPhone  
     ```  
   
-### <a name="manage-the-shared-items-in-the-platform-project"></a>管理平台專案中的共用項目  
+### <a name="manage-the-shared-items-in-the-platform-project"></a>管理平臺專案中的共用專案  
   
-1. 平台專案中找到共用的項目。 共用專案中的項目會出現，平台專案中做為共用的項目。 看不到它們**方案總管 中**，但您可以逐步專案階層架構，以找出它們。 下列方法會引導階層，並且收集所有共用的項目。 （選擇性），它會輸出每個項目的標題。 共用的項目由新的屬性識別<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>。  
+1. 在平臺專案中尋找共用的專案。 共用專案中的專案會顯示在平臺專案中做為共用專案。 您在 **方案總管**中看不到它們，但您可以將專案階層引導至專案階層尋找。 下列方法會引導階層，並收集所有共用的專案。 它會選擇性地輸出每個專案的標題。 共用的專案是由新的屬性來識別 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7> 。  
   
     ```csharp  
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)  
@@ -338,7 +338,7 @@ ms.locfileid: "65679935"
     }  
     ```  
   
-2. 在 `ShowMessageBox`方法，加入下列程式碼，逐步引導的平台專案階層項目。 將其內部插入`foreach`區塊。  
+2. 在 `ShowMessageBox` 方法中，加入下列程式碼以逐步執行平臺專案階層專案。 將它插入 `foreach` 區塊內。  
   
     ```csharp  
     output.OutputStringThreadSafe("Walk the active platform project:\n");  
@@ -346,7 +346,7 @@ ms.locfileid: "65679935"
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);  
     ```  
   
-3. 讀取共用的項目。 為隱藏的連結檔案，共用的項目會出現，平台專案中，您可以閱讀為一般連結的檔案的所有屬性。 下列程式碼會讀取第一個共用的項目完整路徑。  
+3. 讀取共用的專案。 共用的專案會在平臺專案中顯示為隱藏的連結檔案，而且您可以將所有屬性讀取為一般連結檔案。 下列程式碼會讀取第一個共用專案的完整路徑。  
   
     ```csharp  
     var sharedItemId = sharedItemIds[0];  
@@ -355,7 +355,7 @@ ms.locfileid: "65679935"
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));  
     ```  
   
-4. 現在試試看。按下 F5 來啟動實驗執行個體。 在實驗執行個體中建立 C# 通用中樞應用程式專案 (在**新的專案**] 對話方塊中， **Visual C# / Windows / Windows 8 / 通用 / 中樞應用程式**) 移至**工具**功能表，然後按一下**叫用 TestUniversalProject**，然後簽入的 [文字**輸出**窗格。 您應該會看到類似下列的畫面：  
+4. 現在就試試看。按 F5 來啟動實驗實例。 在實驗實例中建立 c # 通用中樞應用程式專案 (在 **[新增專案** ] 對話方塊、 **Visual c #/Windows/Windows 8/通用/hub 應用程式**) 移至 [ **工具** ] 功能表，然後按一下 [叫用 **TestUniversalProject**]，然後檢查 [ **輸出** ] 窗格中的文字。 您應該會看到如下的內容：  
   
     ```  
     Found shared project: HubApp.Shared  
@@ -409,25 +409,25 @@ ms.locfileid: "65679935"
                 SectionPage.xaml.cs  
     ```  
   
-### <a name="detecting-changes-in-platform-projects-and-shared-projects"></a>正在偵測平台專案和共用的專案中的變更  
+### <a name="detecting-changes-in-platform-projects-and-shared-projects"></a>偵測平臺專案和共用專案中的變更  
   
-1. 如同您用於平台專案，您可以使用階層和專案的事件在共用專案中，偵測變更。 不過，共用專案中的專案項目不是可見的這表示共用的專案項目變更時，並不會引發特定事件。  
+1. 您可以使用階層和專案事件來偵測共用專案中的變更，就像您針對平臺專案所做的變更一樣。 但是，不會顯示共用專案中的專案專案，這表示當共用專案專案變更時，不會引發特定事件。  
   
-    請考慮重新命名專案中的檔案時的事件順序：  
+    當專案中的檔案重新命名時，請考慮事件的順序：  
   
-   1. 檔案名稱是在磁碟上變更。  
+   1. 磁片上的檔案名會變更。  
   
-   2. 專案檔會更新以包含新的檔案名稱。  
+   2. 專案檔會更新以包含新的檔案名。  
   
-      階層架構事件 (例如<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) 通常會追蹤變更顯示在 UI 中，依照**方案總管 中**。 階層架構事件，請考慮包含刪除的檔案，然後檔案新增的檔案重新命名作業。 不過，不可見的項目變更時，階層事件系統會引發<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>事件，但不是<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>事件。 因此，如果您重新命名的平台專案中的檔案，您可以同時<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>並<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>，但如果您重新命名共用專案中的檔案，您會收到僅<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>。  
+      階層事件 (例如， <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) 通常會追蹤 UI 中顯示的變更，如 **方案總管**中所示。 階層事件會將檔案重新命名作業視為包含檔案刪除，然後新增檔案。 但是，如果變更了隱藏專案，階層事件系統就會引發 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 事件，但不會引發 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 事件。 因此，如果您在平臺專案中重新命名檔案，就會同時取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> ，但如果您重新命名共用專案中的檔案，則只會取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 。  
   
-      若要追蹤變更專案項目中的，您可以處理 DTE 專案項目事件 (在中找到的<xref:EnvDTE.ProjectItemsEventsClass>)。 不過，如果您要處理大量的事件數目，您可以取得更佳的效能處理中的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>。 在本逐步解說示範階層事件以及 DTE 事件。 在此程序中，您可以加入事件接聽程式為共用的專案，而且平台專案。 然後，當您重新命名共用專案中的一個檔案與平台專案中的另一個檔案，您可以看到每個重新命名作業會引發的事件。  
+      若要追蹤專案專案中的變更，您可以將 DTE 專案專案事件 (在) 中找到的事件來處理 <xref:EnvDTE.ProjectItemsEventsClass> 。 但是，如果您要處理大量的事件，您可以在中處理事件，以獲得更好的效能 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> 。 在這個逐步解說中，我們只會顯示階層事件和 DTE 事件。 在此程式中，您會將事件接聽程式新增至共用專案和平臺專案。 然後，當您重新命名共用專案中的一個檔案，以及平臺專案中的另一個檔案時，就會看到針對每個重新命名作業引發的事件。  
   
-      在此程序中，您可以加入事件接聽程式為共用的專案，而且平台專案。 然後，當您重新命名共用專案中的一個檔案與平台專案中的另一個檔案，您可以看到每個重新命名作業會引發的事件。  
+      在此程式中，您會將事件接聽程式新增至共用專案和平臺專案。 然後，當您重新命名共用專案中的一個檔案，以及平臺專案中的另一個檔案時，就會看到針對每個重新命名作業引發的事件。  
   
-2. 加入事件接聽程式。 將新的類別檔案加入專案，並呼叫 HierarchyEventListener.cs。  
+2. 新增事件接聽程式。 將新的類別檔案加入至專案，並呼叫它 HierarchyEventListener.cs。  
   
-3. 開啟 HierarchyEventListener.cs 檔案並新增下列 using 陳述式：  
+3. 開啟 HierarchyEventListener.cs 檔案，並新增下列 using 語句：  
   
    ```csharp  
    using Microsoft.VisualStudio.Shell.Interop;  
@@ -436,7 +436,7 @@ ms.locfileid: "65679935"
   
    ```  
   
-4. 已`HierarchyEventListener`類別會實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
+4. 讓 `HierarchyEventListener` 類別執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents> ：  
   
    ```csharp  
    class HierarchyEventListener : IVsHierarchyEvents  
@@ -444,7 +444,7 @@ ms.locfileid: "65679935"
   
    ```  
   
-5. 實作的成員<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>，如下列程式碼。  
+5. 執行的成員 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents> ，如下列程式碼所示。  
   
    ```csharp  
    class HierarchyEventListener : IVsHierarchyEvents  
@@ -488,7 +488,7 @@ ms.locfileid: "65679935"
   
    ```  
   
-6. 在相同類別中新增 DTE 事件的另一個事件處理常式<xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>，就會出現每當重新命名專案項目。  
+6. 在相同的類別中，為 DTE 事件新增另一個事件處理常式 <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> ，這會在每次重新命名專案專案時發生。  
   
    ```csharp  
    public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
@@ -498,7 +498,7 @@ ms.locfileid: "65679935"
    }  
    ```  
   
-7. 註冊的階層架構事件。 您需要另外註冊您要追蹤每個專案。 新增下列程式碼中的`ShowMessageBox`，一個適用於共用的專案中，而另一個則用於其中一個平台專案。  
+7. 註冊階層事件。 您必須針對正在追蹤的每個專案分別註冊。 在中加入下列 `ShowMessageBox` 程式碼，其中一個用於共用專案，另一個用於其中一個平臺專案。  
   
    ```csharp  
    // hook up the event listener for hierarchy events on the shared project  
@@ -513,7 +513,7 @@ ms.locfileid: "65679935"
    activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
    ```  
   
-8. DTE 專案項目事件註冊<xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>。 您將連結的第二個接聽程式之後，請新增下列程式碼。  
+8. 註冊 DTE 專案專案事件 <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> 。 連接第二個接聽程式之後，請新增下列程式碼。  
   
    ```csharp  
    // hook up DTE events for project items  
@@ -522,12 +522,12 @@ ms.locfileid: "65679935"
   
    ```  
   
-9. 修改共用的項目。 您無法修改共用的項目，在平台專案中;相反地，您必須修改它們實際的擁有者，這些項目之共用專案中。 您可以使用共用專案中取得對應的項目 ID <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>，讓它共用的項目完整路徑。 然後您可以修改共用的項目。 變更會傳播到平台專案中。  
+9. 修改共用專案。 您無法修改平臺專案中的共用專案;相反地，您必須在屬於這些專案實際擁有者的共用專案中修改它們。 您可以在共用專案中取得對應的專案識別碼，並為 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A> 其提供共用專案的完整路徑。 然後您可以修改共用專案。 變更會傳播到平臺專案。  
   
     > [!IMPORTANT]
-    > 您應該了解專案項目為共用的項目再加以修改。  
+    > 在修改專案專案之前，您應該先瞭解專案專案是否為共用專案。  
   
-     下列方法修改專案項目檔案的名稱。  
+     下列方法會修改專案專案檔的名稱。  
   
     ```csharp  
     private void ModifyFileNameInProject(IVsHierarchy project, string path)  
@@ -545,7 +545,7 @@ ms.locfileid: "65679935"
     }  
     ```  
   
-10. 畢竟中的其他程式碼呼叫此方法`ShowMessageBox`修改的檔案名稱的共用專案中的項目。 共用專案中取得項目的完整路徑的程式碼之後插入此項。  
+10. 請在中的所有其他程式碼之後呼叫這個方法， `ShowMessageBox` 以修改共用專案中的專案名稱。 將此程式碼插入在共用專案中取得專案完整路徑的程式碼之後。  
   
     ```csharp  
     // change the file name of an item in a shared project  
@@ -555,9 +555,9 @@ ms.locfileid: "65679935"
     this.ModifyFileNameInProject(sharedHier, fullPath);  
     ```  
   
-11. 建置並執行專案。 建立 C# 通用中樞應用程式中的實驗執行個體，請前往**工具**功能表，然後按一下**叫用 TestUniversalProject**，並檢查一般輸出窗格中的文字。 第一個項目，是共用的名稱應該變更專案 （我們預期的 App.xaml 檔案），而且您應該會看到<xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>已引發事件。 在此情況下，因為重新命名 App.xaml 導致 App.xaml.cs 也重新命名，您應該會看到四個事件 （針對每個平台專案的兩個）。 （DTE 事件進行追蹤共用的專案中的項目）。您應該會看到兩個<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>事件 （一個用於每個平台專案），但不是<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>事件。  
+11. 建置並執行專案。 在實驗實例中建立 c # 通用中樞應用程式，移至 [ **工具** ] 功能表，然後按一下 [叫用 **TestUniversalProject**]，並檢查 [一般輸出] 窗格中的文字。 共用專案中第一個專案的名稱 (我們預期它是應用程式 .xaml 檔案) 應該變更，您應該會看到 <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> 事件已引發。 在此情況下，自從重新命名應用程式之後，也會讓 App.xaml.cs 重新命名，您應該會看到每個平臺專案) 的四個事件 (兩個。  (DTE 事件不會追蹤共用專案中的專案。 ) 您應該會看到兩個 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 事件，每個平臺) 專案 (一個事件，但沒有任何 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 事件。  
   
-12. 現在，請嘗試重新命名檔案，以在平台專案中，與您所見取得引發事件的差異。 新增下列程式碼`ShowMessageBox`呼叫後面`ModifyFileName`。  
+12. 現在嘗試重新命名平臺專案中的檔案，您可以看到引發的事件有何差異。 在呼叫之後，將下列程式碼加入 `ShowMessageBox` `ModifyFileName` 。  
   
     ```csharp  
     // change the file name of an item in a platform project  
@@ -572,4 +572,4 @@ ms.locfileid: "65679935"
     this.ModifyFileNameInProject(activePlatformHier, unsharedPath);  
     ```  
   
-13. 建置並執行專案。 在實驗執行個體中建立 C# 通用專案，請前往**工具**功能表，然後按一下**叫用 TestUniversalProject**，並檢查一般輸出窗格中的文字。 平台專案中的檔案重新命名之後，您應該會看到兩者<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>事件和<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>事件。 因為變更檔案造成的變更，沒有其他檔案，因為平台專案中的項目已變更不在任何位置取得傳播，都只有一個每個事件。
+13. 建置並執行專案。 在實驗實例中建立 c # 通用專案，移至 [ **工具** ] 功能表，然後按一下 [叫用 **TestUniversalProject**]，並檢查 [一般輸出] 窗格中的文字。 將平臺專案中的檔案重新命名之後，您應該會看到 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 事件和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 事件。 由於變更檔案會造成其他檔案不會變更，而且因為對平臺專案中的專案所做的變更不會傳播到任何地方，所以每一個事件都只會有一個。

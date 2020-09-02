@@ -9,19 +9,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e8abf4d4c5d2158ab4a3c9deeb11ab93e31b4cc3
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81649343"
 ---
 # <a name="native-minimum-rules-rule-set"></a>原生最小規則規則集
 
-Microsoft 本機最小規則側重於本機代碼中最關鍵的問題,包括潛在的安全漏洞和應用程式崩潰。
+Microsoft 原生最小規則著重于機器碼中最嚴重的問題，包括潛在的安全性漏洞和應用程式當機。
 
-在為本機項目創建的任何自定義規則集中包括此規則集。
+在您為原生專案建立的任何自訂規則集中包含此規則集。
 
-|規則|描述|
+|規則|說明|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|使用尚未初始化的記憶體|
 |[C6011](../code-quality/c6011.md)|取值的指標為 NULL|
@@ -92,18 +92,18 @@ Microsoft 本機最小規則側重於本機代碼中最關鍵的問題,包括潛
 |[C28182](../code-quality/c28182.md)|取值的指標為 NULL。 指標所包含的 NULL 值與另一個指標相同。|
 |[C28202](../code-quality/c28202.md)|非靜態成員的參考不合法|
 |[C28203](../code-quality/c28203.md)|類別成員的參考模稜兩可。|
-|[C28205](../code-quality/c28205.md)|\_在\_非法\_的權\_中\_使用的成功或失敗|
+|[C28205](../code-quality/c28205.md)|\_\_ \_ \_ \_ 在不合法的內容中使用成功或失敗|
 |[C28206](../code-quality/c28206.md)|左運算元指向結構，請使用 '->'|
 |[C28207](../code-quality/c28207.md)|左運算元是結構，請使用 '.'|
 |[C28210](../code-quality/c28210.md)|_On_failure_ 內容的註釋不能在明確 pre context 中|
 |[C28211](../code-quality/c28211.md)|SAL_context 需要靜態內容名稱|
 |[C28212](../code-quality/c28212.md)|註釋需要指標運算式|
-|[C28213](../code-quality/c28213.md)|\_使用\_del\_\_註釋 註釋必須用於引用,無需修改,以前的聲明。|
+|[C28213](../code-quality/c28213.md)|\_使用 \_ decl \_ 注釋 \_ 注釋必須用來參考先前的宣告，而不需要修改。|
 |[C28214](../code-quality/c28214.md)|屬性參數名稱必須是 p1...p9|
 |[C28215](../code-quality/c28215.md)|typefix 不能套用到已經有 typefix 的參數|
 |[C28216](../code-quality/c28216.md)|checkReturn 註釋只適用於特定函式參數的後置條件。|
 |[C28217](../code-quality/c28217.md)|對於函式，註釋的參數數目不符合檔案中找到的參數數目|
-|[C28218](../code-quality/c28218.md)|對於函數參數,註解的參數與在檔案中找到的參數不匹配|
+|[C28218](../code-quality/c28218.md)|針對函式參數，注釋的參數不符合檔案中找到的參數|
 |[C28219](../code-quality/c28219.md)|註釋中標註的參數需要列舉的成員|
 |[C28220](../code-quality/c28220.md)|註釋中標註的參數需要整數運算式|
 |[C28221](../code-quality/c28221.md)|註釋中的參數需要字串運算式|
@@ -140,7 +140,7 @@ Microsoft 本機最小規則側重於本機代碼中最關鍵的問題,包括潛
 |[C28267](../code-quality/c28267.md)|在函式 (隸屬於註釋) 中找到註釋的語法錯誤。|
 |[C28272](../code-quality/c28272.md)|函式參數的註釋在檢查時，與函式宣告不一致|
 |[C28273](../code-quality/c28273.md)|對於函式，線索與函式宣告不一致|
-|[C28275](../code-quality/c28275.md)|巨\_\_集\_值的參數為空|
+|[C28275](../code-quality/c28275.md)|\_宏值的參數 \_ \_ 為 null|
 |[C28279](../code-quality/c28279.md)|找到符號的 'begin'，但沒有相符的 'end'|
 |[C28280](../code-quality/c28280.md)|找到符號的 'end'，但沒有相符的 'begin'|
 |[C28282](../code-quality/c28282.md)|格式字串必須在前置條件中|

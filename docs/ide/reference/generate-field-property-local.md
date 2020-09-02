@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b554aa5586150942c0fc7d7aeada9356a67029ca
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595601"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>在 Visual Studio 中產生欄位、屬性或區域變數
@@ -43,7 +43,7 @@ ms.locfileid: "75595601"
 2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
+      - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
    - **滑鼠**
       - 以滑鼠右鍵按一下並選取 [快速動作與重構]**** 功能表。
       - 將游標暫留在紅色曲線上，然後按一下顯示的 ![錯誤燈泡](media/error-bulb.png) 圖示。
@@ -68,5 +68,5 @@ ms.locfileid: "75595601"
 
 ## <a name="see-also"></a>另請參閱
 
-- [代碼生成](../code-generation-in-visual-studio.md)
+- [程式碼產生](../code-generation-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

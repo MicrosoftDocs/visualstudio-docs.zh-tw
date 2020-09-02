@@ -33,29 +33,29 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e763fa3475f26b9742ea5fb7061978e711eb22ea
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816419"
 ---
 # <a name="overview-of-xml-tools-in-visual-studio"></a>Visual Studio 中的 XML 工具總覽
 
-*可延伸標記語言 (XML) （XML）* 是一種標記語言，可提供用來描述資料的格式。 XML 會使用相關聯的樣式表單（例如可延伸樣式表語言（XSL）和級聯樣式表（CSS））來分隔資料和其呈現方式。 Visual Studio 包括一些工具及功能，讓使用 XML、XSLT 及 XML 結構描述更為容易。
+*可延伸標記語言 (XML)  (XML) * 是提供描述資料格式的標記語言。 XML 會使用相關聯的樣式表單（例如可擴充樣式表單語言 (XSL) 和級聯樣式表 (CSS) ）來分隔資料及其呈現方式。 Visual Studio 包括一些工具及功能，讓使用 XML、XSLT 及 XML 結構描述更為容易。
 
 ## <a name="xml-editor"></a>XML 編輯器
 
-[Xml 編輯器](xml-editor.md)是用來編輯 xml 檔。 它提供完整的 XML 語法檢查、輸入時的架構驗證、色彩編碼和 IntelliSense。 如果已提供結構描述或文件類型定義，IntelliSense 即可使用它來列出允許的項目及屬性。
+[Xml 編輯器](xml-editor.md)是用來編輯 xml 檔。 它會在您鍵入、色彩編碼和 IntelliSense 時，提供完整的 XML 語法檢查、架構驗證。 如果已提供結構描述或文件類型定義，IntelliSense 即可使用它來列出允許的項目及屬性。
 
 其他功能包括：
 
 - XML 片段支援，包括架構產生的程式碼片段
 
-- 檔大綱，讓元素可以展開和折迭
+- 檔大綱，以便展開及折迭元素
 
-- 執行 XSLT 轉換和以文字、XML 或 HTML 形式來查看結果的能力
+- 執行 XSLT 轉換並以文字、XML 或 HTML 形式來查看結果的能力
 
-- 從 XML 實例檔產生 XML 架構定義語言（XSD）架構的能力
+- 從 XML 實例檔產生 XML 架構定義語言 (XSD) 架構的能力
 
 - 支援編輯 XSLT 樣式表單，包括 IntelliSense 支援
 
@@ -63,11 +63,11 @@ ms.locfileid: "85816419"
 
 ## <a name="xml-schema-designer"></a>XML 結構描述設計工具
 
-[Xml 架構設計](xml-schema-designer.md)工具已與 VISUAL STUDIO 和 xml 編輯器整合，可讓您使用 xml 架構定義語言（XSD）架構。
+[Xml 架構設計](xml-schema-designer.md)工具與 VISUAL STUDIO 和 xml 編輯器整合，可讓您使用 xml 架構定義語言 (XSD) 架構。
 
 ## <a name="xslt-debugging"></a>XSLT 偵錯
 
-Visual Studio 支援對[XSLT 樣式表單進行調試](../xml-tools/debugging-xslt.md)。 使用偵錯工具，您可在 XSLT 樣式表中設定中斷點，從程式碼逐步執行 XSLT 樣式表等。
+Visual Studio 支援 [調試 XSLT 樣式表單](../xml-tools/debugging-xslt.md)。 使用偵錯工具，您可在 XSLT 樣式表中設定中斷點，從程式碼逐步執行 XSLT 樣式表等。
 
 > [!NOTE]
 > XSLT 偵錯工具僅適用于 Enterprise edition 的 Visual Studio。

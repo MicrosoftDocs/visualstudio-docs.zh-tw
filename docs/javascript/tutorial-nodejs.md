@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 3d91f20dec22379d79b5f295fccf49aae0733a24
-ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81744883"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 Express 應用程式
@@ -56,28 +56,28 @@ npm 是 Node.js 的預設套件管理員。 套件管理員可讓程式設計人
 
 ### <a name="what-is-express"></a>什麼是 express？
 
-Express 是一種 Web 應用程式架構，用作 Node.js 的伺服器架構以建置 Web 應用程式。 Express 允許您選擇不同的前端框架來創建 UI,例如 Pug(以前稱為 Jade)。 本教學課程中使用 Pug。
+Express 是一種 Web 應用程式架構，用作 Node.js 的伺服器架構以建置 Web 應用程式。 Express 可讓您選擇不同的前端架構來建立 UI，例如 Pug (先前稱為 Jade) 。 本教學課程中使用 Pug。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
 * 您必須安裝 Visual Studio 和 Node.js 開發工作負載。
 
     ::: moniker range=">=vs-2019"
-    如果您尚未安裝 Visual Studio 2019,請轉到 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費安裝它。
+    如果您尚未安裝 Visual Studio 2019，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)   頁面，免費進行安裝。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    如果您尚未安裝 Visual Studio 2017,請轉到 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費安裝它。
+    如果您尚未安裝 Visual Studio 2017，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)   頁面，免費進行安裝。
     ::: moniker-end
 
-    如果您需要安裝工作負載,但已經擁有可視化工作室,請轉到 **「工具** > **獲取工具和功能...",** 這將打開可視化工作室安裝程式。 選擇 [Node.js 開發]**** 工作負載，然後選擇 [修改]****。
+    如果您需要安裝工作負載，但已有 Visual Studio，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 [Node.js 開發]**** 工作負載，然後選擇 [修改]****。
 
     ![VS 安裝程式中的 Node.js 工作負載](../ide/media/quickstart-nodejs-workload.png)
 
 * 您必須安裝 Node.js 執行階段。
 
-    如果您沒有安裝它,我們建議您從[Node.js](https://nodejs.org/en/download/)網站安裝 LTS 版本,以便與外部框架和庫進行最佳相容性。 Node.js 是為 32 位元和 64 位體系結構構建的。 Visual Studio 中的 Node.js 工具(包含在 Node.js 工作負荷中)支援這兩個版本。 只需要一個,Node.js 安裝程式一次只支援安裝一個。
+    如果您沒有安裝它，建議您從 [Node.js](https://nodejs.org/en/download/) 網站安裝 LTS 版本，以提供與外部架構和程式庫的最佳相容性。 Node.js 是針對32位和64位架構所建立。 Visual Studio 中的 Node.js 工具（包含在 Node.js 工作負載中）支援兩種版本。 只有一個是必要的，而且 Node.js 安裝程式只支援一次安裝一個。
     
-    一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果未檢測到已安裝的運行時,則可以將專案配置為引用屬性頁中的已安裝運行時(在創建專案後,右鍵單擊專案節點,選擇**屬性**,並設置**Node.exe 路徑**)。 您可以使用 Node.js 的全域安裝,也可以在每個 Node.js 專案中指定本地解釋器的路徑。 
+    一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果未偵測到已安裝的執行時間，您可以在建立專案之後，將專案設定為參考已安裝的執行時間 (在專案節點上按一下滑鼠右鍵，選擇 [ **屬性**]，然後設定 **Node.exe 路徑**) 。 您可以使用 Node.js 的全域安裝，也可以在每個 Node.js 專案中指定本機解譯器的路徑。 
 
     本教學課程使用 Node.js 8.10.0 來進行測試。
 
@@ -95,7 +95,7 @@ Visual Studio 可在「專案」** 中管理單一應用程式的檔案。 專�
     按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，鍵入 **Node.js**，然後選擇 [Create a new Basic Azure Node.js Express 4 application] \(建立新的基礎 Azure Node.js Express 4 應用程式\)**** (JavaScript)。 在出現的對話方塊中選擇 [建立]****。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂部功能表欄中,選擇 **「檔** > **新專案** > **」。。** 在 [新增專案]**** 對話方塊的左窗格中，展開 **JavaScript**，然後選擇 **Node.js**。 在中間窗格中,選擇**基本 Azure Node.js Express 4 應用程式**,然後選擇 **"確定**"。
+    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [新增專案]**** 對話方塊的左窗格中，展開 **JavaScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [ **基本 Azure Node.js Express 4 應用程式**]，然後選擇 **[確定]**。
     ::: moniker-end
     如果您看不到 [基本的 Azure Node.js Express 4 應用程式]**** 專案範本，則必須新增 **Node.js 開發**工作負載。 如需詳細指示，請參閱[必要條件](#prerequisites)。
 
@@ -109,13 +109,13 @@ Visual Studio 可在「專案」** 中管理單一應用程式的檔案。 專�
 
     (3) npm 節點會顯示任何已安裝的 npm 套件。 您可以用滑鼠右鍵按一下 npm 節點，使用對話方塊來搜尋及安裝 npm 套件，或者使用 *package.json* 中的設定來安裝及更新套件，並以滑鼠右鍵按一下 npm 節點中的選項。
 
-    (4) *package.json* 是 npm 用來管理本機安裝套件之套件相依性和套件版本的檔案。 有關詳細資訊,請參閱管理[npm 包](../javascript/npm-package-management.md)。
+    (4) *package.json* 是 npm 用來管理本機安裝套件之套件相依性和套件版本的檔案。 如需詳細資訊，請參閱 [管理 npm 封裝](../javascript/npm-package-management.md)。
 
     (5) *app.js* 之類的專案檔會顯示在專案節點下。 *app.js* 是專案啟動檔案，這也是它會以**粗體**顯示的原因。 以滑鼠右鍵按一下專案中的檔案，然後選取 [設定為 Node.js 啟動檔案]****，即可設定啟動檔案。
 
 1. 開啟 **npm** 節點，並確定所有必要的 npm 套件都存在。
 
-    如果缺少任何包(感嘆號圖示),您可以右鍵單擊**npm**節點並選擇 **「安裝 npm 包**」。
+    如果遺漏任何套件 (驚嘆號圖示) ，您可以在 [ **npm** ] 節點上按一下滑鼠右鍵，然後選擇 [ **安裝 npm 套件**]。
 
 ## <a name="add-some-code"></a>新增一些程式碼
 
@@ -186,7 +186,7 @@ IntelliSense 是一種 Visual Studio 工具，可協助您撰寫程式碼。
 
     ![使用 IntelliSense](../javascript/media/tutorial-nodejs-intellisense.png)
 
-1. 新增括號以將其做為函數呼`getData()`叫 。
+1. 新增括弧，使其成為函式呼叫 `getData()` 。
 
 1. 移除 `"data"` 前面的逗號 (`,`)，而且您會看到運算式上的綠色語法醒目提示。 將滑鼠停留在語法醒目提示上方。
 
@@ -194,7 +194,7 @@ IntelliSense 是一種 Visual Studio 工具，可協助您撰寫程式碼。
 
     此訊息的最後一行告訴您：JavaScript 解譯器必須要有逗號 (`,`)。
 
-1. 在下部窗格中,按下 **「錯誤列表**」選項卡,然後針對報告的問題類型選擇 **「生成 + IntelliSense」。。**
+1. 在下方窗格中，按一下 [ **錯誤清單** ] 索引標籤，然後針對所報告的問題類型，選取 [ **組建 + IntelliSense** ]。
 
     您會看到警告和描述以及檔案名稱和行號。
 
@@ -218,7 +218,7 @@ IntelliSense 是一種 Visual Studio 工具，可協助您撰寫程式碼。
 
 ## <a name="run-the-application"></a>執行應用程式
 
-1. 在調試工具列中選擇調試目標,如**Web 伺服器(Google Chrome)** 或**Web 伺服器(微軟邊緣)。**
+1. 在 Debug 工具列中選取 [debug] 目標，例如 [ **Web server (Google Chrome) ** 或 [ **web 伺服器 (Microsoft Edge) **]。
 
     ::: moniker range=">=vs-2019"
     ![選取偵錯目標](../javascript/media/vs-2019/tutorial-nodejs-deploy-target.png)
@@ -251,7 +251,7 @@ IntelliSense 是一種 Visual Studio 工具，可協助您撰寫程式碼。
 
 ## <a name="optional-publish-to-azure-app-service"></a>(選擇性) 發行至 Azure App Service
 
-1. 在解決方案資源管理器中,右鍵單擊專案並選擇 **「發布**」。
+1. 在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [ **發行**]。
 
    ![發佈至 Azure App Service](../javascript/media/tutorial-nodejs-publish-to-azure.png)
 
@@ -259,7 +259,7 @@ IntelliSense 是一種 Visual Studio 工具，可協助您撰寫程式碼。
 
     在 [App Service]**** 對話方塊中，您可以登入 Azure 帳戶，並連線至現有 Azure 訂用帳戶。
 
-1. 遵循其餘步驟來選取訂用帳戶、選擇或建立資源群組、選擇或建立應用程式服務平面，然後在系統提示發行至 Azure 時遵循步驟。 有關更詳細的說明,請參閱使用[Web 部署發表到 Azure 網站](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)。
+1. 遵循其餘步驟來選取訂用帳戶、選擇或建立資源群組、選擇或建立應用程式服務平面，然後在系統提示發行至 Azure 時遵循步驟。 如需詳細指示，請參閱 [使用 web Deploy 發佈至 Azure 網站](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)。
 
 1. [輸出]**** 視窗會顯示部署到 Azure 的進度。
 

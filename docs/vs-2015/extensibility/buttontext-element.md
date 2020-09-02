@@ -12,16 +12,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ef22471d20df5582fec96c8a685029a1d475a4a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184571"
 ---
 # <a name="buttontext-element"></a>ButtonText 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-此欄位可讓您指定各種功能表所顯示的文字。 根據預設，`ButtonText`元素會出現在功能表控制站。 `ButtonText`項目也會成為預設值，如果其他的文字欄位為空白。 `ButtonText`元素不可為空白，即使指定的其他文字欄位。  
+此欄位可讓您指定出現在各種功能表中的文字。 依預設，專案 `ButtonText` 會出現在功能表控制器中。 `ButtonText`如果其他文字欄位是空白的，元素也會成為預設值。 `ButtonText`即使已指定其他文字欄位，元素也不能空白。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,7 +30,7 @@ ms.locfileid: "68184571"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
  無。  
@@ -42,10 +42,10 @@ ms.locfileid: "68184571"
   
 |項目|描述|  
 |-------------|-----------------|  
-|[Strings 元素](../extensibility/strings-element.md)|群組文字項目，例如`ButtonText`和`CommandName`。|  
+|[Strings 元素](../extensibility/strings-element.md)|將文字元素分組，例如 `ButtonText` 和 `CommandName` 。|  
   
 ## <a name="text-value"></a>文字值  
- 文字值`ButtonText`項目提供為功能表項目、 combos 和其他可見文字的使用者介面 (UI) 項目顯示的文字。  
+ 專案的文字值 `ButtonText` 會提供針對功能表項目、combos 和其他使用者介面所顯示的文字， (UI) 具有可見文字的元素。  
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

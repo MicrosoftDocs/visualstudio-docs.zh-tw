@@ -64,7 +64,7 @@ Visual Studio*圖形診斷* 是一組工具，可用於記錄和分析 Direct3D 
 
 ## <a name="related-sections"></a>相關章節
 
-| 標題 | 描述 |
+| 標題 | 說明 |
 | - | - |
 | [偵錯工具功能導覽](../debugger-feature-tour.md) | 介紹 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的偵錯功能。 |
 | [DirectX 圖形與遊戲](/windows/win32/directx) | 提供討論 DirectX 圖形技術的文章。 |

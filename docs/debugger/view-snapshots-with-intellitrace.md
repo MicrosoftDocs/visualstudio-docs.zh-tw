@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 767181ce917e4cbef69001e07a018e20c89a01f8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65676439"
 ---
 # <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise-c-visual-basic-c"></a>使用 IntelliTrace 回溯檢視快照集 (Visual Studio Enterprise) (C#、Visual Basic、C++)
@@ -23,6 +23,6 @@ ms.locfileid: "65676439"
 
 您可以使用[偵錯] 工具列的 [逐步返回]**** 和 [逐步前進]**** 按鈕，來巡覽及檢視快照集。 這些按鈕可巡覽出現在 [診斷工具]**** 視窗之 [事件]**** 索引標籤中的事件。
 
-![後退和向前按鈕](../debugger/media/intellitrace-step-back-icons-description.png  "後退和向前按鈕")
+![逐步執行和向前按鈕](../debugger/media/intellitrace-step-back-icons-description.png  "逐步執行和向前按鈕")
 
 如需詳細資訊，請參閱[使用 IntelliTrace 回溯檢查先前的應用程式狀態](../debugger/view-historical-application-state.md)。

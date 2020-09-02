@@ -1,5 +1,5 @@
 ---
-title: 處理程序 |Microsoft Docs
+title: 進程 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,37 +11,37 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 82718a7ceb7a18f9978840f35ca0c5fce5628e81
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153673"
 ---
 # <a name="processes"></a>處理序
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-偵錯工具就架構而言，**程序**:  
+就偵錯工具架構而言， **進程**：  
   
-- 是一組程式的容器。 它是密切類似於 Windows 處理程序，也就是執行緒的一組的容器。  
+- 是一組程式的容器。 它相當類似于 Windows 進程，這是一組執行緒的容器。  
   
-- 可以依名稱、 識別碼或實體的識別碼識別本身。  
+- 可以依名稱、識別碼或實體識別碼來識別其本身。  
   
-- 可以列舉所有執行中的程式 （和其執行緒）。  
+- 可以列舉所有正在執行的程式 (及其執行緒) 。  
   
-- 可以描述本身、 執行中，連接埠和包含它的電腦。  
+- 可以描述本身、其執行所在的埠，以及包含它的電腦。  
   
-- 可以建立一個或多個程式終止任何它所建立的應用程式，或造成程式停止。  
+- 可以建立一或多個程式、終止它所建立的任何程式，或造成程式停止。  
   
-- 由[IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)時啟動處理序所建立的介面。 啟動處理序的其中一個工作階段偵錯管理員 (SDM) 或[LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)。  
+- 會以 [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) 介面表示，此介面會在進程啟動時建立。 處理常式是由會話 debug manager (SDM) 或 [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)啟動。  
   
-  偵錯封裝可以附加至處理序的偵錯引擎 (DE) 藉由呼叫[附加](../../extensibility/debugger/reference/idebugprocess2-attach.md)。 這表示 DE 附加至所有可能的程式，它可以處理處理序中執行。 例如，如果 common language runtime DE 附加至處理序，它會連結才能執行 managed 程式碼的程式。  
+  您可以藉由呼叫 [attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)，將 debug engine 附加至進程 (DE) 。 這表示，會將在進程中執行的所有可能程式附加到所有可能處理的程式。 例如，如果 common language runtime 取消附加至進程，它只會附加至執行 managed 程式碼的程式。  
   
 ## <a name="see-also"></a>另請參閱  
  [程式](../../extensibility/debugger/programs.md)   
  [執行緒](../../extensibility/debugger/threads.md)   
  [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)   
- [偵錯封裝](../../extensibility/debugger/debug-package.md)   
- [偵錯引擎](../../extensibility/debugger/debug-engine.md)   
+ [Debug 封裝](../../extensibility/debugger/debug-package.md)   
+ [Debug 引擎](../../extensibility/debugger/debug-engine.md)   
  [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)   
  [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
- [Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)
+ [附加](../../extensibility/debugger/reference/idebugprocess2-attach.md)

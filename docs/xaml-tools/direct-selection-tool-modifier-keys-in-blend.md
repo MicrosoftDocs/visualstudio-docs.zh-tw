@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0931eef87bce1a942e9c8740d248d213f1b778a4
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332309"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的直接選取工具輔助按鍵

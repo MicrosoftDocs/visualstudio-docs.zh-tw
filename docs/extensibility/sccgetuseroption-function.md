@@ -1,5 +1,5 @@
 ---
-title: SccGetUserOption 功能 |微軟文件
+title: SccGetUserOption 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc7b68df3331c1240ad833048940e656da034ccf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700692"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 函式
-此功能檢索各種特定於用戶的選項。
+此函式會抓取各種使用者專屬的選項。
 
 ## <a name="syntax"></a>語法
 
@@ -35,32 +35,32 @@ SCCRTN SccGetUserOption(
 #### <a name="parameters"></a>參數
  pContext
 
-[在]源代碼管理外掛程式上下文指標。
+在原始檔控制外掛程式內容指標。
 
  nOption
 
-[在]要檢索的選項(有關可能的選項,請參閱備註)。
+在取得 (的選項請參閱備註，以取得可能的選項) 。
 
  lpVal
 
-[出]與選項關聯的值。
+擴展與選項相關聯的值。
 
 ## <a name="return-value"></a>傳回值
- 此函數的源碼管理外掛程式實現應返回以下值之一:
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|已成功檢索選項。|
-|SCC_E_OPNOTSUPPORTED|不支援選項。|
+|SCC_OK|已成功抓取選項。|
+|SCC_E_OPNOTSUPPORTED|選項不受支援。|
 |SCC_E_NONSPECIFICERROR|發生未指定的錯誤。|
 
 ## <a name="remarks"></a>備註
- 此指令支援以下選項:
+ 此命令支援下列選項：
 
 |使用者選項|描述|
 |-----------------|-----------------|
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|確定使用者是否要簽出檔的本地版本。 `lpVal`已配置`SCC_USEROPT_COLV_YES`(使用者希望簽出本地端檔案`SCC_USEROPT_COLV_NO`)或 。|
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|判斷使用者是否想要簽出本機版本的檔案。 `lpVal` 指派 `SCC_USEROPT_COLV_YES` (使用者想要簽出本機檔案) 或 `SCC_USEROPT_COLV_NO` 。|
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
-- [錯誤代碼](../extensibility/error-codes.md)
+- [錯誤碼](../extensibility/error-codes.md)

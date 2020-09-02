@@ -1,5 +1,5 @@
 ---
-title: 錯誤：TRANSACT-SQL 執行未經偵錯即結束 |Microsoft Docs
+title: 錯誤： Transact-sql 執行已結束，但未進行調試 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cdfcaa42c55f87711b0889c6a67d1a4799b84fed
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681068"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>錯誤：Transact-SQL 執行未經偵錯即結束
@@ -43,14 +43,14 @@ ms.locfileid: "65681068"
   
   若要更正這個錯誤，您可能需要：  
   
-- 驗證使用權限設定。 如需詳細資訊，請參閱[如何：設定 SQL Server 權限偵錯](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)。  
+- 驗證使用權限設定。 如需詳細資訊，請參閱 [如何：設定偵錯工具的 SQL Server 許可權](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)。  
   
 - 如果設定正確，請確定 SQL 偵錯作業。  
   
 - 請連絡網路或資料庫管理員。  
   
 ## <a name="see-also"></a>另請參閱  
- [設定 SQL 偵錯](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
- [如何：設定 SQL Server 權限偵錯](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
- [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
+ [設定 SQL 調試](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
+ [如何：設定偵錯工具的 SQL Server 許可權](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
+ [偵錯工具設定和準備](../debugger/debugger-settings-and-preparation.md)   
+ [遠端偵錯](../debugger/remote-debugging.md)

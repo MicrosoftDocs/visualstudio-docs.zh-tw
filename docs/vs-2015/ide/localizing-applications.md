@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7fa9aa7a4a19ebd5ae45ee84364e71043a28f6be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651467"
 ---
 # <a name="localizing-applications"></a>當地語系化應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-「當地語系化」是針對指定文化特性或地區設定自訂應用程式的程序。 當地語系化工作主要是翻譯使用者介面。
+「當地語系化」** 是針對指定文化特性或地區設定自訂應用程式的程序。 當地語系化工作主要是翻譯使用者介面。
 
 ## <a name="in-this-section"></a>本節內容
  [階層式組織當地語系化的資源](../ide/hierarchical-organization-of-resources-for-localization.md)說明在 Visual Studio 中如何儲存及存取當地語系化的資源。
@@ -37,10 +37,10 @@ ms.locfileid: "72651467"
  [當地語系化的中性資源語言](../ide/neutral-resources-languages-for-localization.md)引進 <xref:System.Resources.NeutralResourcesLanguageAttribute> 類別，指定應用程式主要組件包含的資源文化特性。
 
 ## <a name="related-sections"></a>相關章節
- [以 .NET Framework 為基礎的國際應用程式簡介](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)討論使用 Visual Basic 或視覺效果C#，針對國際市場開發軟體的相關概念。
+ [以 .NET Framework 為基礎的國際應用程式簡介](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) 討論使用 Visual Basic 或 Visual c # 為國際市場開發軟體的相關概念。
 
  [全球化 Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)提供建立支援多種文化特性之 Windows 應用程式的相關頁面連結。
 
- [全球化和當地語系化](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)提供建立支援多種文化特性之網路應用程式的相關頁面連結。
+ [全球化和當地語系化](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) 提供有關建立支援多種文化特性之 Web 應用程式的頁面連結。
 
  [開發世界性的應用程式的最佳做法](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)提供適用於國際對象的程式設計相關資訊，例如設計問題和技術。

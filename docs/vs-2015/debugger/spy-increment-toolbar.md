@@ -12,39 +12,39 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a96a5765c98bf8e7d1c600fbd47478a88fa7175d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153974"
 ---
 # <a name="spy-toolbar"></a>Spy++ 工具列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-工具列會出現在功能表列，Spy + + 中。 若要顯示或隱藏工具列，請在**檢視**功能表上，按一下**工具列**。  
+工具列會出現在 Spy + + 的功能表列下方。 若要顯示或隱藏工具列，請按一下 [ **View** ] 功能表上的 [ **工具列**]。  
   
- 下列控制項可在工具列上。  
+ 工具列上提供下列控制項。  
   
 ## <a name="uielement-list"></a>UIElement 清單  
   
-|按鈕|作用|  
+|按鈕|效果|  
 |------------|------------|  
-|![Spy&#43; &#43; Windows 按鈕](../debugger/media/icon-spy-windows.gif "Icon_Spy + + （_w)")|顯示系統中的視窗和控制項的樹狀檢視。 如需詳細資訊，請參閱 < [Windows 檢視](../debugger/windows-view.md)。|  
-|![Spy&#43; &#43;按鈕會處理](../debugger/media/icon-spy-processes.gif "Icon_Spy + + _Processes")|顯示系統中的程序的樹狀結構檢視。 如需詳細資訊，請參閱 <<c0> [ 處理序檢視](../debugger/processes-view.md)。|  
-|![Spy&#43; &#43;執行緒按鈕](../debugger/media/icon-spy-threads.gif "Icon_Spy + + _Threads")|顯示樹狀檢視中的執行緒在系統中。 如需詳細資訊，請參閱 <<c0> [ 執行緒檢視](../debugger/threads-view.md)。|  
-|![Spy&#43; &#43;按鈕的訊息](../debugger/media/icon-spy-messages.gif "Icon_Spy + + 訊息 （_m)")|建立視窗以顯示視窗訊息，並開啟**訊息選項**對話方塊，讓您可以選取的視窗的訊息將會顯示，而且也選取 其他選項。 如需詳細資訊，請參閱 <<c0> [ 訊息檢視](../debugger/messages-view.md)。|  
-|![Spy&#43; &#43;啟動記錄檔 按鈕](../debugger/media/icon-spy-startlog.gif "Icon_Spy + + _StartLog")|啟動訊息記錄，並顯示訊息資料流。 此控制項是時才可使用**訊息**視窗是作用中視窗。 如需詳細資訊，請參閱[如何：啟動與停止訊息記錄顯示](../debugger/how-to-start-and-stop-the-message-log-display.md)。|  
-|![Spy&#43; &#43;停止記錄 按鈕](../debugger/media/icon-spy-stoplog.gif "Icon_Spy + + _StopLog")|停止訊息記錄和顯示的訊息資料流。 此控制項是時才可使用**訊息**視窗是作用中視窗。 如需詳細資訊，請參閱[如何：啟動與停止訊息記錄顯示](../debugger/how-to-start-and-stop-the-message-log-display.md)。|  
-|![Spy&#43; &#43;記錄檔選項按鈕](../debugger/media/icon-spy-logoptions.gif "Icon_Spy + + _LogOptions")|顯示[訊息選項](../debugger/message-options-dialog-box.md) 對話方塊。 使用此對話方塊來選取視窗，然後訊息進行檢視的類型。 此控制項是時才可使用**訊息**視窗是作用中視窗。|  
-|![Spy&#43; &#43;清除記錄檔 按鈕](../debugger/media/spy-clearlog.gif "Spy + + _ClearLog")|清除作用中的內容**訊息**視窗。 此控制項是時才可使用**訊息**視窗是作用中視窗。|  
-|![Spy&#43; &#43;尋找視窗 按鈕](../debugger/media/icon-spy-findwindow.gif "Icon_Spy + + _FindWindow")|會開啟[尋找視窗](../debugger/find-window-dialog-box.md)對話方塊中，可讓您設定視窗搜尋條件，並顯示屬性或訊息。 如需詳細資訊，請參閱[如何：使用搜尋工具](../debugger/how-to-use-the-finder-tool.md)。|  
-|![Spy&#43; &#43;尋找第一個視窗 按鈕](../debugger/media/icon-spy-window.gif "Icon_Spy + + _Window")|搜尋相符的視窗、 程序、 執行緒或訊息的目前檢視。|  
-|![Spy&#43; &#43;尋找下一個視窗 按鈕](../debugger/media/icon-spy-nextwindow.gif "Icon_Spy + + _NextWindow")|會搜尋目前的檢視中的下一個相符的視窗、 程序、 執行緒或訊息。 不是唯一有效的搜尋結果時，此控制項 （與相關的功能表命令） 是可用。 例如，當您使用的視窗控制代碼與視窗樹狀目錄中的搜尋準則時，它會產生唯一的結果因為具有該控制代碼; 的視窗樹狀目錄中只有一個視窗在這種情況**尋找下一個**不提供。|  
-|![Spy&#43; &#43;尋找上一個視窗 按鈕](../debugger/media/icon-spy-prevwindow.gif "Icon_Spy + + _PrevWindow")|搜尋上一個相符的視窗、 程序、 執行緒或訊息的目前檢視。 不是唯一有效的搜尋結果時，此控制項 （與相關的功能表命令） 是可用。 例如，當您使用的視窗控制代碼與視窗樹狀目錄中的搜尋準則時，它會產生唯一的結果因為具有該控制代碼; 的視窗樹狀目錄中只有一個視窗在這種情況**找上一個**不提供。|  
-|![Spy&#43; &#43;屬性瀏覽器 按鈕](../debugger/media/icon-spy-propexp.gif "Icon_Spy + + _PropExp")|會顯示在 [Windows] 檢視中選取視窗的屬性。|  
-|![Spy&#43; &#43;重新整理 按鈕](../debugger/media/icon-spy-refresh.gif "Icon_Spy + + （_r)")|重新整理的系統檢視表。|  
+|![Spy&#43;&#43; Windows 按鈕](../debugger/media/icon-spy-windows.gif "Icon_Spy + + _Windows")|顯示系統中視窗和控制項的樹狀檢視。 如需詳細資訊，請參閱 [Windows View](../debugger/windows-view.md)。|  
+|![Spy&#43;&#43; 進程按鈕](../debugger/media/icon-spy-processes.gif "Icon_Spy + + _Processes")|顯示系統中進程的樹狀檢視。 如需詳細資訊，請參閱 [進程視圖](../debugger/processes-view.md)。|  
+|![Spy&#43;&#43; 執行緒按鈕](../debugger/media/icon-spy-threads.gif "Icon_Spy + + _Threads")|顯示系統中線程的樹狀檢視。 如需詳細資訊，請參閱 [執行緒視圖](../debugger/threads-view.md)。|  
+|![Spy&#43;&#43; 訊息按鈕](../debugger/media/icon-spy-messages.gif "Icon_Spy + + _Messages")|建立視窗來顯示視窗訊息，並開啟 [ **訊息選項** ] 對話方塊，讓您可以選取要顯示其訊息的視窗，也可以選取 [其他選項]。 如需詳細資訊，請參閱 [訊息查看](../debugger/messages-view.md)。|  
+|![Spy&#43;&#43; 開機記錄按鈕](../debugger/media/icon-spy-startlog.gif "Icon_Spy + + _StartLog")|啟動訊息記錄，並顯示訊息串流。 只有當 [ **訊息** ] 視窗是使用中視窗時，才能使用這個控制項。 如需詳細資訊，請參閱 [如何：啟動和停止訊息記錄顯示](../debugger/how-to-start-and-stop-the-message-log-display.md)。|  
+|![Spy&#43;&#43; 停止記錄按鈕](../debugger/media/icon-spy-stoplog.gif "Icon_Spy + + _StopLog")|停止訊息記錄和訊息資料流程的顯示。 只有當 [ **訊息** ] 視窗是使用中視窗時，才能使用這個控制項。 如需詳細資訊，請參閱 [如何：啟動和停止訊息記錄顯示](../debugger/how-to-start-and-stop-the-message-log-display.md)。|  
+|![Spy&#43;&#43; 記錄檔選項按鈕](../debugger/media/icon-spy-logoptions.gif "Icon_Spy + + _LogOptions")|顯示 [ [訊息選項](../debugger/message-options-dialog-box.md) ] 對話方塊。 使用此對話方塊來選取要進行流覽的視窗和訊息類型。 只有當 [ **訊息** ] 視窗是使用中視窗時，才能使用這個控制項。|  
+|![Spy&#43;&#43; 清除記錄按鈕](../debugger/media/spy-clearlog.gif "Spy + + _ClearLog")|清除 [活動 **訊息** ] 視窗的內容。 只有當 [ **訊息** ] 視窗是使用中視窗時，才能使用這個控制項。|  
+|![Spy&#43;&#43; 尋找視窗按鈕](../debugger/media/icon-spy-findwindow.gif "Icon_Spy + + _FindWindow")|開啟 [ [尋找視窗](../debugger/find-window-dialog-box.md) ] 對話方塊，此對話方塊可讓您設定視窗搜尋準則，以及顯示內容或訊息。 如需詳細資訊，請參閱 [如何：使用 Finder 工具](../debugger/how-to-use-the-finder-tool.md)。|  
+|![Spy&#43;&#43; 尋找第一個視窗按鈕](../debugger/media/icon-spy-window.gif "Icon_Spy + + _Window")|在目前的視圖中搜尋相符的視窗、進程、執行緒或訊息。|  
+|![Spy&#43;&#43; 尋找下一個視窗按鈕](../debugger/media/icon-spy-nextwindow.gif "Icon_Spy + + _NextWindow")|在目前的視圖中搜尋下一個相符的視窗、進程、執行緒或訊息。 只有當有效的搜尋結果不是唯一時，才能使用此控制項 (和相關的功能表命令) 。 例如，當您使用視窗控制碼做為視窗樹狀結構中的搜尋準則時，它會產生唯一的結果，因為視窗樹狀結構中只有一個視窗具有該控制碼;在此實例中， **找不到 [下一步]** 。|  
+|![Spy&#43;&#43; 尋找上一個視窗按鈕](../debugger/media/icon-spy-prevwindow.gif "Icon_Spy + + _PrevWindow")|在目前的視圖中搜尋先前相符的視窗、進程、執行緒或訊息。 只有當有效的搜尋結果不是唯一時，才能使用此控制項 (和相關的功能表命令) 。 例如，當您使用視窗控制碼做為視窗樹狀結構中的搜尋準則時，它會產生唯一的結果，因為視窗樹狀結構中只有一個視窗具有該控制碼;在此實例中， **找不到 [上一步** ]。|  
+|![Spy&#43;&#43; Property Explorer 按鈕](../debugger/media/icon-spy-propexp.gif "Icon_Spy + + _PropExp")|顯示在 Windows view 中選取之視窗的屬性。|  
+|![Spy&#43;&#43; 重新整理按鈕](../debugger/media/icon-spy-refresh.gif "Icon_Spy + + _Refresh")|重新整理系統檢視。|  
   
 ## <a name="see-also"></a>另請參閱  
- [使用 Spy++](../debugger/using-spy-increment.md)   
- [Spy++ 檢視](../debugger/spy-increment-views.md)   
+ [使用 Spy + +](../debugger/using-spy-increment.md)   
+ [Spy + + Views](../debugger/spy-increment-views.md)   
  [Spy++ 參考](../debugger/spy-increment-reference.md)

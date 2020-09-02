@@ -1,5 +1,5 @@
 ---
-title: BP_CONDITION | Microsoft Docs
+title: BP_CONDITION |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8d49c912ae14154fc552c76fc011596f4f22166f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153567"
 ---
-# <a name="bpcondition"></a>BP_CONDITION
+# <a name="bp_condition"></a>BP_CONDITION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-描述用以引發中斷點的條件。  
+描述引發中斷點的條件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -48,31 +48,31 @@ public struct BP_CONDITION { 
   
 ## <a name="members"></a>成員  
  `pThread`  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示包含中斷點的應用程式的使用中執行緒。  
+ [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，代表包含中斷點之應用程式的使用中線程。  
   
  `styleCondition`  
- 值，以從[BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)列舉型別描述此中斷點條件的樣式。  
+ [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)列舉中的值，描述此中斷點條件的樣式。  
   
  `bstrContext`  
  中斷點的位置。  
   
  `bstrCondition`  
- 引發中斷點的條件。  
+ 中斷點的引發條件。  
   
  `nRadix`  
- 用來評估數字的任何資訊的基數。  
+ 要用於評估任何數值資訊的基數。  
   
 ## <a name="remarks"></a>備註  
- 此結構是隸屬[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)並[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。  
+ 此結構是 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 和 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 結構的成員。  
   
- 此結構也會做為參數傳遞[SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)並[SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)方法。  
+ 此結構也會以參數形式傳遞至 [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) 和 [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) 方法。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 87a167a75f3b06522da77d562b0137df89757975
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596212"
 ---
 # <a name="options-text-editor-c-intellisense"></a>IntelliSense、C#、文字編輯器、選項
 
-使用 [IntelliSense]**** 選項頁修改影響 C# 之 IntelliSense 行為的設定。 要訪問此選項頁，請選擇 **"工具** > **選項**"，然後選擇**文字編輯器** > **C#** > **IntelliSense**。
+使用 [IntelliSense]**** 選項頁修改影響 C# 之 IntelliSense 行為的設定。 若要存取此選項頁面，請選擇 [**工具**  >  **選項**]，然後選擇 [**文字編輯器**]  >  **c #**  >  **IntelliSense**。
 
 [IntelliSense]**** 頁面包含下列選項：
 
@@ -53,7 +53,7 @@ ms.locfileid: "75596212"
 
 - 在識別碼後鍵入 ?-Tab 時包含程式碼片段
 
-   選擇此選項後，IntelliSense 會在完成清單中添加 C# 程式碼片段的別名 **。**+**在**識別碼後按下選項卡
+   選取此選項時，IntelliSense 會將 c # 程式碼片段的別名新增至完成清單（若有的話） **？** +識別碼之後按下**Tab 鍵**
 
 ## <a name="enter-key-behavior"></a>ENTER 鍵行為
 
@@ -85,5 +85,5 @@ ms.locfileid: "75596212"
 
 ## <a name="see-also"></a>另請參閱
 
-- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)
-- [Using IntelliSense](../../ide/using-intellisense.md)
+- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
+- [使用 IntelliSense](../../ide/using-intellisense.md)

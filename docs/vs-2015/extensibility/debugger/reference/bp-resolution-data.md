@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_DATA | Microsoft Docs
+title: BP_RESOLUTION_DATA |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e4e266d1b5d0976ebc910a8228a3724f80001b5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153311"
 ---
-# <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
+# <a name="bp_resolution_data"></a>BP_RESOLUTION_DATA
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-描述繫結資料中斷點的結果。  
+描述系結資料中斷點的結果。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,26 +46,26 @@ public struct BP_RESOLUTION_DATA { 
   
 ## <a name="members"></a>成員  
  `bstrDataExpr`  
- 已繫結的資料運算式。  
+ 已系結的日期運算式。  
   
  `bstrFunc`  
- 函式的名稱 （如果有的話），資料中斷點已經在繫結。  
+ 如果有任何) ，資料中斷點在 (中系結的函數名稱。  
   
  `bstrImage`  
- 資料中斷點已繫結中的模組 (例如 MyModule.dll) 名稱。  
+ 模組的名稱 ( # A0，例如資料中斷點已系結的) 。  
   
  `dwFlags`  
- 值，以從[BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)列舉，描述如何實作資料中斷點。  
+ [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)列舉中的值，描述資料中斷點的執行方式。  
   
 ## <a name="remarks"></a>備註  
- 此結構是隸屬[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)結構，也就是在開啟的成員[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)所傳回的結構[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)方法。  
+ 此結構是[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)結構的成員，它會接著[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)方法所傳回之[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)結構的成員。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

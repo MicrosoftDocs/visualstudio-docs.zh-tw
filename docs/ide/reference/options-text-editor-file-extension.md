@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3711a87d84e25fd6f790cee62ecb71b2b046d0be
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596199"
 ---
 # <a name="options-text-editor-file-extension"></a>副檔名、文字編輯器、選項
@@ -30,15 +30,15 @@ ms.locfileid: "75596199"
 
 ## <a name="uielement-list"></a>UIElement 清單
 
-**擴展**
+**延伸模組**
 
 輸入您想要在 IDE 中為其定義編輯體驗的檔案副檔名。
 
-**編輯 器**
+**編輯器**
 
 選取要用來開啟此檔案副檔名文件的 IDE 編輯器或設計工具。 如果您選取的選項「具有編碼方式」，則每次開啟這類文件時，就會顯示一個對話方塊供您選取編碼配置。
 
-**新增**
+**加入**
 
 可將包含指定 [副檔名]**** 和 [編輯體驗]**** 的項目新增至 [副檔名清單]。
 

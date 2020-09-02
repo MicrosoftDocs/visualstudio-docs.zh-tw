@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea06d8e007e2df88cb46c2f0e6dd4a79ebe711b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153633"
 ---
-# <a name="adprocessid"></a>AD_PROCESS_ID
+# <a name="ad_process_id"></a>AD_PROCESS_ID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定的處理序識別碼，可能是系統識別碼或 GUID。  
+指定處理序識別碼，此識別碼可能是系統識別碼或 GUID。  
   
 ## <a name="syntax"></a>語法  
   
@@ -48,19 +48,19 @@ public struct AD_PROCESS_ID {
   
 ## <a name="members"></a>成員  
  `ProcessIdType`  
- 值，以從[AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)列舉，指定如何解譯`ProcessId`等位 （或 managed 程式碼，來存取結構的成員）。  
+ [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)列舉中的值，指定如何解讀等位 `ProcessId` (，或針對 managed 程式碼，用來存取) 之結構的成員。  
   
  dwProcessId  
- 值，以從系統處理序識別碼。  
+ 系統中做為值的處理序識別碼。  
   
  guidProcessId  
- 處理序識別碼，做為 GUID。  
+ GUID 形式的處理序識別碼。  
   
  dwUnused  
- 邊框距離。  
+ 填充。  
   
 ## <a name="remarks"></a>備註  
- 此結構會傳遞下列方法：  
+ 此結構會傳遞至下列方法：  
   
 - [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
   
@@ -70,18 +70,18 @@ public struct AD_PROCESS_ID {
   
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)  
   
-  而且會傳回下列任一方法：  
+  和會從下列方法傳回：  
   
 - [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
   
 - [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

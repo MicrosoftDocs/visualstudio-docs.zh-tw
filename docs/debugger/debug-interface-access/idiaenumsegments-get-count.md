@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 74597d8e5deab9fc572500bef0b4175fd5722d96
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468055"
 ---
 # <a name="idiaenumsegmentsget_count"></a>IDiaEnumSegments::get_Count
-抓取區段的數目。
+捕獲區段的數目。
 
 ## <a name="syntax"></a>語法
 
@@ -35,7 +35,7 @@ HRESULT get_Count ( 
 - [out，retval]傳回區段的數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

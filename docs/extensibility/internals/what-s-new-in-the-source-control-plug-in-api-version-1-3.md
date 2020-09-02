@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ec24e9ee3079d3b02ac13759b6ab5bdee8c07a84
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88706447"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>原始檔控制外掛程式 API 版本1.3 的新功能&#39;
@@ -34,6 +34,6 @@ ms.locfileid: "88706447"
 |[SccBackgroundGet](../../extensibility/sccbackgroundget-function.md)|執行指定檔案的無訊息 "Get" (不會顯示任何使用者介面) |
 |[SccGetUserOption](../../extensibility/sccgetuseroption-function.md)|允許存取使用者特定的選項|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [快速入門](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
 - [原始檔控制外掛程式 API 1.2 版的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

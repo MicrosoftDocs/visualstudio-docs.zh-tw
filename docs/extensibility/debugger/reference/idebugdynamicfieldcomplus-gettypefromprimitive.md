@@ -1,5 +1,5 @@
 ---
-title: IDebug動態場COMPlus:從原始獲取類型 |微軟文件
+title: IDebugDynamicFieldCOMPlus：： GetTypeFromPrimitive |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 89a0e559fbdf2824d334903a668bbdef8dbb6fff
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731283"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromprimitive"></a>IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
-檢索給定其基元類型的類型。
+根據給定的基本型別來取得型別。
 
 ## <a name="syntax"></a>語法
 
@@ -42,13 +42,13 @@ int GetTypeFromPrimitive(
 
 ## <a name="parameters"></a>參數
 `dwCorElementType`\
-[在]表示基元[類型的 CorElementType 枚舉中](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration)的值。
+在 [CorElementType 列舉](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) 中的值，表示基本類型。
 
 `ppType`\
-[出]返回表示類型的[IDebugField。](../../../extensibility/debugger/reference/idebugfield.md)
+擴展傳回表示類型的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)

@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ef9a38fc13d0d9c9f6b912f4cb2b83971d105c29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595822"
 ---
 # <a name="application-page-project-designer-c"></a>專案設計工具，應用程式頁 (C#)
 
 使用 [專案設計工具]**** 的 [應用程式]**** 頁面來指定專案的應用程式設定和屬性。
 
-若要存取 [應用程式]**** 頁面，請在方案總管**** 中選擇專案節點 (而不是 [方案]**** 節點)。 然後在功能表列上選擇 **"專案** > **屬性**"。 當 [專案設計工具]**** 出現時，請按一下 [應用程式]**** 索引標籤。
+若要存取 [應用程式]**** 頁面，請在方案總管**** 中選擇專案節點 (而不是 [方案]**** 節點)。 然後選擇**Project**  >  功能表列上的 [專案**屬性**]。 當 [專案設計工具]**** 出現時，請按一下 [應用程式]**** 索引標籤。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -48,7 +48,7 @@ ms.locfileid: "75595822"
 
 若要以程式設計方式存取此屬性，請參閱 <xref:VSLangProj.ProjectProperties.RootNamespace%2A>。
 
-**目標框架**
+**目標 Framework**
 
 指定應用程式作為目標的 .NET 版本。 視電腦上所安裝的 .NET 版本而定，此選項可能會有不同的值。
 
@@ -81,9 +81,9 @@ ms.locfileid: "75595822"
 
 **啟始物件**
 
-定義要在應用程式載入時呼叫的進入點。 通常，這會設定成您應用程式中的主要表單，或應該在應用程式啟動時執行的 `Main` 處理序。 由於類庫沒有進入點，因此其此屬性的唯一選項是 **（未設置）。**
+定義要在應用程式載入時呼叫的進入點。 通常，這會設定成您應用程式中的主要表單，或應該在應用程式啟動時執行的 `Main` 處理序。 因為類別庫沒有進入點，所以這個屬性的唯一選項是 ** (未設定) **。
 
-根據預設，此選項在 WPF 應用程式專案中為 [(未設定)]****。 另一個選項是 \[projectname].App。 在 WPF 專案中，您必須設定應用程式啟動時載入 UI 資源的啟動 URI。 為此，請打開專案中的*Application.xaml*檔，`StartupUri`並將該屬性設置為專案中的 *.xaml*檔，如*Window1.xaml*。 如需可接受根項目的清單，請參閱 <xref:System.Windows.Application.StartupUri%2A>。 您必須也在專案的類別中定義 `public static void Main()` 方法。 此類別將會以 <專案名稱.類別名稱>** 形式出現在 [啟始物件]**** 清單中。 您接著可以選取類別作為啟始物件。
+根據預設，此選項在 WPF 應用程式專案中為 [(未設定)]****。 另一個選項是 \[projectname].App。 在 WPF 專案中，您必須設定應用程式啟動時載入 UI 資源的啟動 URI。 若要這樣做，請開啟專案中的*應用程式 .xaml*檔案，然後將 `StartupUri` 屬性設定為專案中的 *.Xaml*檔案，例如*window1.xaml。* 如需可接受根項目的清單，請參閱 <xref:System.Windows.Application.StartupUri%2A>。 您必須也在專案的類別中定義 `public static void Main()` 方法。 此類別將會以 <專案名稱.類別名稱>** 形式出現在 [啟始物件]**** 清單中。 您接著可以選取類別作為啟始物件。
 
 如需詳細資訊，請參閱 [/main (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option)。 若要以程式設計方式存取此屬性，請參閱 <xref:VSLangProj.ProjectProperties.StartupObject%2A>。
 
@@ -101,7 +101,7 @@ ms.locfileid: "75595822"
 
 **圖示**
 
-設置要用作程式圖示的 *.ico*檔。 按一下 [瀏覽]**** 以瀏覽現有圖形，或鍵入您所要檔案的名稱。 如需詳細資訊，請參閱 [/win32icon (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)。
+設定您想要用來做為程式圖示的 *.ico 檔案。* 按一下 [瀏覽]**** 以瀏覽現有圖形，或鍵入您所要檔案的名稱。 如需詳細資訊，請參閱 [/win32icon (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)。
 
 若要以程式設計方式存取此屬性，請參閱 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>。
 

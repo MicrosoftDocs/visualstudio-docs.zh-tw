@@ -1,5 +1,5 @@
 ---
-title: 適用於.NET Framework 進行平行擴充內部資訊 |Microsoft Docs
+title: .NET Framework 的平行延伸模組內部 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,35 +11,35 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42c472190469e7d008fa8c525f50eabfaf37053f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65680932"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>.NET Framework 適用的平行延伸模組內部資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本章節描述內部型別、 方法和欄位的類別可協助您實作自訂的 parallel extensions 到.NET Framework 偵錯工具。  
+本節說明類別的內部類型、方法和欄位，可協助您為 .NET Framework 的平行擴充功能，執行自訂偵錯工具。  
   
 ## <a name="in-this-section"></a>本節內容  
  [Task 類別](../../extensibility/debugger/task-class-internal-members.md)  
- 描述內部的資料成員的<xref:System.Threading.Tasks.Task?displayProperty=fullName>類別。  
+ 描述類別的內部資料成員 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 。  
   
  [TaskScheduler 類別](../../extensibility/debugger/taskscheduler-class-internal-members.md)  
- 描述內部的資料成員的<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>類別。  
+ 描述類別的內部資料成員 <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> 。  
   
  [ContingentProperties 類別](../../extensibility/debugger/contingentproperties-class-internal-members.md)  
- 描述內部的資料成員的`System.Threading.Tasks.ContingentProperties`類別。  
+ 描述類別的內部資料成員 `System.Threading.Tasks.ContingentProperties` 。  
   
  [AsyncTaskMethodBuilder 結構](../../extensibility/debugger/asynctaskmethodbuilder-structure-internal-members.md)  
- 描述的內部成員<xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>結構。  
+ 描述結構的內部成員 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> 。  
   
  [AsyncTaskMethodBuilder\<TResult> 結構](../../extensibility/debugger/asynctaskmethodbuilder-tresult-structure-internal-members.md)  
- 描述的內部成員<xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>結構。  
+ 描述結構的內部成員 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> 。  
   
  [AsyncVoidMethodBuilder 結構](../../extensibility/debugger/asyncvoidmethodbuilder-structure-internal-members.md)  
- 描述的內部成員<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>結構。  
+ 描述結構的內部成員 <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> 。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:System.Threading.Tasks.Task?displayProperty=fullName>   

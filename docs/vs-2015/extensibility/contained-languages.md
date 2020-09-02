@@ -1,5 +1,5 @@
 ---
-title: 包含語言 |Microsoft Docs
+title: 包含的語言 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,30 +11,30 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0920999eee7460c8bf697e245bae55a3641b8e18
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184288"
 ---
 # <a name="contained-languages"></a>包含的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)] 
 
-*包含語言*都是包含其他語言的語言。 例如，在 HTML[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]頁面可能會包含[!INCLUDE[csprcs](../includes/csprcs-md.md)]或[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]指令碼。 .Aspx 檔案編輯器，以 HTML 和指令碼語言中提供 IntelliSense、 顏色標示、 和其他編輯功能需要雙重語言架構。  
+*包含的語言* 是其他語言所包含的語言。 例如，頁面中的 HTML [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 可能包含 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 或 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 腳本。 .Aspx 檔編輯器需要雙重語言架構，以提供 HTML 和指令碼語言的 IntelliSense、顏色標示和其他編輯功能。  
   
 ## <a name="implementation"></a>實作  
- 您需要實作包含語言的最重要介面是<xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage>介面。 此介面被實作任何裝載於主要語言的語言。 它可讓存取語言服務的色彩標示器、 文字檢視篩選條件和主要語言服務識別碼。 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>可讓您建立<xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage>介面。 下列步驟會示範如何實作所包含的語言：  
+ 您必須為包含的語言執行最重要的介面，就是 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> 介面。 此介面是由可裝載于主要語言內的任何語言所執行。 它會提供語言服務的著色器、文字視圖篩選和主要語言服務識別碼的存取權。 可 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory> 讓您建立 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> 介面。 下列步驟說明如何執行包含的語言：  
   
-1. 使用`QueryService()`為其取得語言服務識別碼和的介面 ID <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>。  
+1. 使用 `QueryService()` 取得的語言服務識別碼和介面識別碼 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory> 。  
   
-2. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory.GetLanguage%2A>方法用來建立<xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage>介面。 傳遞<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>介面，一個或多個[項目識別碼](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>)和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator>介面。  
+2. 呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory.GetLanguage%2A> 方法來建立 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> 介面。 傳遞 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 介面、一或多個 [專案識別碼](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>) 和 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> 介面。  
   
-3. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator>介面，也就是文字緩衝區協調器物件，提供對應到第二個語言的緩衝區中主要檔案的位置所需的基本服務。  
+3. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator>介面（文字緩衝區協調器物件）提供將主要檔案中的位置對應到次要語言緩衝區所需的基本服務。  
   
-     例如，在單一的.aspx 檔案中，主要的檔案包括 ASP、 HTML 和包含的所有程式碼。 不過，次要緩衝區，包含只是內含的程式碼，以及任何類別定義，讓次要緩衝區，有效的程式碼檔案。 緩衝區協調器會處理協調從一個緩衝區之間的編輯的工作。  
+     例如，在單一 .aspx 檔案中，主要檔案包含 ASP、HTML 以及包含的所有程式碼。 不過，次要緩衝區只包含包含的程式碼以及任何類別定義，讓次要緩衝區成為有效的程式碼檔案。 緩衝區協調器會處理將編輯從某個緩衝區協調到另一個緩衝區的工作。  
   
-4. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A>方法，也就是主要的語言，會告訴緩衝區協調器什麼其緩衝區內的文字會對應到相對應的文字，第二個緩衝區中。  
+4. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A>方法（主要語言）會告知緩衝區協調器，其緩衝區內的哪些文字會對應到次要緩衝區中的對應文字。  
   
-     會將陣列中的語言<xref:Microsoft.VisualStudio.TextManager.Interop.NewSpanMapping>結構，以及目前只包含主要和次要的範圍。  
+     語言會傳入結構的陣列，此陣列 <xref:Microsoft.VisualStudio.TextManager.Interop.NewSpanMapping> 目前只包含主要和次要範圍。  
   
-5. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A>方法和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A>方法提供的對應，從主要到次要緩衝區，反之亦然。
+5. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A>方法和方法會 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A> 提供從主要緩衝區到次要緩衝區的對應，反之亦然。

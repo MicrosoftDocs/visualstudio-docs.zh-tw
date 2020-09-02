@@ -1,5 +1,5 @@
 ---
-title: Scc背景取得功能 |微軟文件
+title: SccBackgroundGet 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b1c07076b6e257bd5519d19f841797fbc652f0c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701236"
 ---
-# <a name="sccbackgroundget-function"></a>Scc背景抓取功能
-此函數從原始程式碼管理檢索每個指定的檔,而沒有使用者互動。
+# <a name="sccbackgroundget-function"></a>SccBackgroundGet 函式
+此函式會從原始檔控制每個指定的檔案，而不是使用者互動。
 
 ## <a name="syntax"></a>語法
 
@@ -37,41 +37,41 @@ SCCRTN SccBackgroundGet(
 ### <a name="parameters"></a>參數
  pContext
 
-[在]源代碼管理外掛程式上下文指標。
+在原始檔控制外掛程式內容指標。
 
- n 檔案
+ nFiles
 
-[在]`lpFileNames`陣列中指定的檔案數。
+在陣列中指定的檔案數目 `lpFileNames` 。
 
- lpFile 名稱
+ lpFileNames
 
-[進出]要檢索的文件的名稱陣列。
+[in，out]要抓取之檔案的名稱陣列。
 
 > [!NOTE]
-> 名稱必須是完全限定的本地檔名。
+> 這些名稱必須是完整的本機檔案名。
 
  dwFlags
 
-[在]命令標誌`SCC_GET_ALL`(。 `SCC_GET_RECURSIVE`
+在命令旗標 (`SCC_GET_ALL` ， `SCC_GET_RECURSIVE`) 。
 
- dw背景操作ID
+ dwBackgroundOperationID
 
-[在]與此操作關聯的唯一值。
+在與此作業相關聯的唯一值。
 
 ## <a name="return-value"></a>傳回值
- 此函數的源碼管理外掛程式實現應返回以下值之一:
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：
 
 |值|描述|
 |-----------|-----------------|
 |SCC_OK|作業順利完成。|
-|SCC_E_BACKGROUNDGETINPROGRESS|後台檢索已在進行中(原始程式碼管理外掛程式應僅當它不支援同時批處理操作時才返回它)。|
-|SCC_I_OPERATIONCANCELED|操作在完成之前已取消。|
+|SCC_E_BACKGROUNDGETINPROGRESS|背景抓取已經在進行中 (當原始檔控制外掛程式不支援) 的並行批次作業時，才應該傳回此功能。|
+|SCC_I_OPERATIONCANCELED|作業已在完成前取消。|
 
 ## <a name="remarks"></a>備註
- 此函數始終調用與載入原始程式碼管理外掛程式不同的線程。 在完成之前,不應返回此功能;但是,它可以調用多個檔清單,同時調用。
+ 這個函式一律會在與載入原始檔控制外掛程式不同的執行緒上呼叫。 在完成之前，不應傳回此函式。不過，您可以使用多個檔案清單多次呼叫它，而這兩者都是在同一時間進行。
 
- 參數的使用`dwFlags`與[SccGet](../extensibility/sccget-function.md)相同。
+ 使用 `dwFlags` 引數與 [SccGet](../extensibility/sccget-function.md)相同。
 
 ## <a name="see-also"></a>另請參閱
-- [原始程式碼管理外掛程式 API 功能](../extensibility/source-control-plug-in-api-functions.md)
+- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGet](../extensibility/sccget-function.md)

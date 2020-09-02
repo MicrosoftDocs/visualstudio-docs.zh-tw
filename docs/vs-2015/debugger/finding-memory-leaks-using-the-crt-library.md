@@ -1,5 +1,5 @@
 ---
-title: 使用 CRT 程式庫尋找記憶體遺漏 |Microsoft Docs
+title: 使用 CRT 程式庫尋找記憶體流失 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -31,10 +31,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 831cae8d83bc26e05b80d6948a3168a6e6a387c4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682428"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>使用 CRT 程式庫尋找記憶體遺漏
@@ -73,9 +73,9 @@ _CrtDumpMemoryLeaks();
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
 ```  
   
- 根據預設， `_CrtDumpMemoryLeaks` 會將記憶體流失報告輸出至 [輸出]  視窗的 [偵錯]  窗格。 您可以使用 `_CrtSetReportMode` 將報告重新導向至其他位置。  
+ 根據預設， `_CrtDumpMemoryLeaks` 會將記憶體流失報告輸出至 [輸出] **** 視窗的 [偵錯] **** 窗格。 您可以使用 `_CrtSetReportMode` 將報告重新導向至其他位置。  
   
- 如果您使用程式庫，該程式庫可能會重設輸出至其他位置。 在這種情況下，您可以將輸出位置設回 [輸出]  視窗，如下所示：  
+ 如果您使用程式庫，該程式庫可能會重設輸出至其他位置。 在這種情況下，您可以將輸出位置設回 [輸出] **** 視窗，如下所示：  
   
 ```  
 _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );  
@@ -121,7 +121,7 @@ Object dump complete.
   
   另外還有兩種絕對不會出現在記憶體流失報告中的記憶體區塊。 *「可用區塊」* (Free Block) 是已經釋放的記憶體。 按照定義，這種記憶體本身就沒有流失的問題。 *「忽略區塊」* (Ignore Block) 是您已明確標記為要從記憶體流失報告中排除的區塊。  
   
-  上述方式適用於以標準 CRT `malloc` 函式配置的記憶體。 如果您的程式可讓您配置的記憶體使用C++`new`運算子，不過，您可能只會看到的檔案和行號位置的通用實作`operator new`呼叫`_malloc_dbg`記憶體流失報告中。 由於該行為不是很有用，您可以變更它，以回報使用看起來像這樣的巨集時，所配置的那一行： 
+  上述方式適用於以標準 CRT `malloc` 函式配置的記憶體。 但是，如果您的程式使用 c + + 運算子來配置記憶體 `new` ，您可能只會看到在 `operator new` 記憶體流失報告中執行全域呼叫的檔案和行號 `_malloc_dbg` 。 因為該行為不太實用，所以您可以使用如下所示的宏來變更它，以報告進行配置的那一行： 
  
 ```cpp  
 #ifdef _DEBUG
@@ -133,7 +133,7 @@ Object dump complete.
 #endif
 ```  
   
-現在您可以取代`new`運算子使用`DBG_NEW`巨集程式碼中的。 在偵錯組建中，這會使用多載的全域`operator new`接受其他參數區塊類型、 檔案和行號。 這個多載`new`呼叫`_malloc_dbg`記錄的額外資訊。 當您使用`DBG_NEW`，記憶體流失報告顯示的檔名和行號遺漏的物件配置的位置。 在零售組建中，它會使用預設`new`。 (我們不建議您建立名為前置處理器巨集`new`，或任何其他的語言關鍵字。)此技術的範例如下：  
+現在您可以 `new` `DBG_NEW` 在程式碼中使用宏來取代操作員。 在 debug 組建中，這會使用 global 的多載，以 `operator new` 接受區塊類型、檔案和行號的其他參數。 用 `new` `_malloc_dbg` 來記錄額外資訊的呼叫多載。 當您使用時 `DBG_NEW` ，記憶體流失報告會顯示已配置遺漏物件的檔案名和行號。 在零售組建中，它會使用預設值 `new` 。  (我們不建議您建立名為的預處理器宏 `new` ，或任何其他語言關鍵字。如需這項技術的範例 ) ：  
   
 ```cpp  
 // debug_new.cpp
@@ -163,7 +163,7 @@ void main() {
 }
 ```  
   
-當您執行此程式碼偵錯工具在 Visual Studio 中，呼叫`_CrtDumpMemoryLeaks`產生的報表**輸出**視窗看起來如下所示：  
+當您在 Visual Studio 的偵錯工具中執行此程式碼時，呼叫會在 `_CrtDumpMemoryLeaks` **輸出** 視窗中產生報告，如下所示：  
   
 ```Output  
 Detected memory leaks!
@@ -174,7 +174,7 @@ c:\users\username\documents\projects\debug_new\debug_new.cpp(20) : {75}
 Object dump complete.
 ```  
   
-這會告訴您外洩的配置是 debug_new.cpp 第 20 行上。  
+這會告訴您，遺漏的配置是在 debug_new .cpp 的第20行上。  
   
 ## <a name="setting-breakpoints-on-a-memory-allocation-number"></a>在記憶體配置編號上設定中斷點  
  記憶體配置編號會指出流失的記憶體區塊是何時配置的。 例如，區塊的記憶體配置編號為 18，代表這是在應用程式執行期間配置的第 18 個記憶體區塊。 CRT 報告會算進所有在執行期間配置的記憶體區塊。 這包括由 CRT 程式庫和其他程式庫 (例如 MFC) 配置的記憶體區塊。 因此，記憶體配置編號為 18 的區塊，不見得是您的程式碼所配置的第 18 個記憶體區塊。 通常情況下並不是。  
@@ -185,29 +185,29 @@ Object dump complete.
   
 1. 在靠近應用程式的開頭設定中斷點，然後啟動應用程式。  
   
-2. 當應用程式在中斷點中斷時，[監看式]  視窗隨即出現。  
+2. 當應用程式在中斷點中斷時，[監看式] **** 視窗隨即出現。  
   
-3. 在 **監看式**視窗中，輸入`_crtBreakAlloc`中**名稱**資料行。  
+3. 在 [ **監看** 式] 視窗中，輸入 `_crtBreakAlloc` [ **名稱** ] 資料行。  
   
     如果您使用 CRT 程式庫 (/MD 選項) 的多執行緒 DLL 版本，請包含內容運算子： `{,,ucrtbased.dll}_crtBreakAlloc`  
   
 4. 請按 **RETURN**。  
   
-    偵錯工具會評估呼叫，並將結果放在 [值]  欄中。 如果您尚未在記憶體配置上設定任何中斷點，此值將會是 –1。  
+    偵錯工具會評估呼叫，並將結果放在 [值] **** 欄中。 如果您尚未在記憶體配置上設定任何中斷點，此值將會是 –1。  
   
-5. 在 [值]  欄中，將顯示的值取代為您要在該處中斷的記憶體配置的配置編號。  
+5. 在 [值] **** 欄中，將顯示的值取代為您要在該處中斷的記憶體配置的配置編號。  
   
-   在記憶體配置編號上設定中斷點之後，您可以繼續偵錯。 請務必注意要在上次執行的相同條件下執行程式，這樣記憶體配置順序才不會變更。 當程式在特定的記憶體配置中斷時，您可以使用 [呼叫堆疊]  視窗和其他偵錯工具視窗，判斷記憶體配置所處的條件。 然後再恢復程式的執行，觀察物件有何變化，並判斷未將它適當解除配置的原因。  
+   在記憶體配置編號上設定中斷點之後，您可以繼續偵錯。 請務必注意要在上次執行的相同條件下執行程式，這樣記憶體配置順序才不會變更。 當程式在特定的記憶體配置中斷時，您可以使用 [呼叫堆疊] **** 視窗和其他偵錯工具視窗，判斷記憶體配置所處的條件。 然後再恢復程式的執行，觀察物件有何變化，並判斷未將它適當解除配置的原因。  
   
    在物件上設定資料中斷點可能也很有用。 如需詳細資訊，請參閱 [Using Breakpoints](../debugger/using-breakpoints.md)。  
   
-   您也可以在程式碼中設定記憶體配置中斷點。 執行此作業的方法有兩種：  
+   您也可以在程式碼中設定記憶體配置中斷點。 作法有二：  
   
 ```  
 _crtBreakAlloc = 18;  
 ```  
   
- 或：  
+ 或者：  
   
 ```  
 _CrtSetBreakAlloc(18);  
@@ -263,6 +263,6 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
  在某些情況下， `_CrtDumpMemoryLeaks` 會提供錯誤的記憶體流失指示。 如果您使用的程式庫將內部配置標記為 _NORMAL_BLOCKs，而非 `_CRT_BLOCK`s 或 `_CLIENT_BLOCK`s，則可能會發生這種情形。 在這種情況下， `_CrtDumpMemoryLeaks` 無法區分使用者配置和內部程式庫配置。 如果在您呼叫 `_CrtDumpMemoryLeaks`之後執行程式庫配置的全域解構函式，則每個內部程式庫配置都會報告為記憶體流失。 在 Visual Studio .NET 之前的舊版標準樣板程式庫會造成 `_CrtDumpMemoryLeaks` 提出這樣的誤報，但最新版本中已修正這個問題。  
   
 ## <a name="see-also"></a>另請參閱  
- [CRT 偵錯堆積詳細資料](../debugger/crt-debug-heap-details.md)   
+ [CRT Debug 堆積詳細資料](../debugger/crt-debug-heap-details.md)   
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)

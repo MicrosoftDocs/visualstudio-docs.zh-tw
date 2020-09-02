@@ -14,18 +14,18 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dbe65cc38bd14d859507d795ce32657f53ca8b44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184302"
 ---
 # <a name="commandplacements-element"></a>CommandPlacements 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-CommandPlacements 元素分組 CommandPlacement 元素和其他 CommandPlacements 分組。  
+CommandPlacements 元素會將 CommandPlacement 元素和其他 CommandPlacements 群組分組。  
   
- CommandPlacements 元素是選擇性的。 如果任何命令、 群組或功能表必須包含在次要位置中，您不必在.vsct 檔案中加入此區段。  
+ CommandPlacements 元素是選擇性的。 如果次要位置中必須未包含任何命令、群組或功能表，您就不需要在 .vsct 檔案中包含此區段。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,26 +37,26 @@ CommandPlacements 元素分組 CommandPlacement 元素和其他 CommandPlacement
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
+|條件|選擇性。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
 |項目|描述|  
 |-------------|-----------------|  
-|CommandPlacements|群組 CommandPlacement 元素，而且其他 CommandPlacements 分組。|  
-|[CommandPlacement 元素](../extensibility/commandplacement-element.md)|可讓按鈕、 群組和包含在一個以上的群組或功能表的功能表。|  
+|CommandPlacements|群組 CommandPlacement 元素和其他 CommandPlacements 群組。|  
+|[CommandPlacement 元素](../extensibility/commandplacement-element.md)|可將按鈕、群組和功能表包含在一個以上的群組或功能表中。|  
   
 ### <a name="parent-elements"></a>父項目  
   
 |項目|描述|  
 |-------------|-----------------|  
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表命令的所有項目。|  
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表命令的所有元素。|  
   
 ## <a name="example"></a>範例  
   

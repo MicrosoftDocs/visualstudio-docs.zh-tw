@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 56af9515fb9c066e56dd45a0fb91a95530f09799
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332169"
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert 函式
@@ -64,7 +64,7 @@ HRESULT CvWriteAlertVA(
 ## <a name="return-value"></a>傳回值
  當訊息成功寫入時傳回 S_OK。 發生任何錯誤時傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。
 
-## <a name="requirements"></a>規格需求
+## <a name="requirements"></a>需求
  **標頭︰** *cvmarkers.h*
 
  **Unicode：** CvWriteAlertW、CvWriteAlertVW

@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c088b27e686d42d800a6470fbbced8192c100bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153608"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定組件所在的位置。  
+指定元件的所在位置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -47,30 +47,30 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
   
 ## <a name="members"></a>成員  
  ALR_NAME  
- 組件位於目前的命名空間中。  
+ 元件位於目前的命名空間中。  
   
  ALR_USERDIR  
- 組件位於使用者目錄中。  
+ 元件位於使用者目錄中。  
   
  ALR_SHAREDDIR  
- 組件位於共用目錄。  
+ 元件位於共用目錄中。  
   
  ALR_REMOTEDIR  
- 組件位於遠端目錄。  
+ 元件位於遠端目錄。  
   
 ## <a name="remarks"></a>備註  
- 這些值會傳回[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)並[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)方法。  
+ [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)和[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)方法會傳回這些值。  
   
- 這些值可以結合`OR`作業。  
+ 這些值可以與作業合併使用 `OR` 。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)   
  [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)

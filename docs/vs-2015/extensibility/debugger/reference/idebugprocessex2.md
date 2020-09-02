@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2 | Microsoft Docs
+title: IDebugProcessEx2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d2b036bd68aca126675f26b9823d2c786a0ae652
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675321"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此介面可讓偵錯管理員 (SDM) 通知的程序，它會附加至或從處理序中斷連結的工作階段。  
+此介面可讓會話 debug manager (SDM) 通知正在附加或卸離進程的進程。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,37 +30,37 @@ ms.locfileid: "65675321"
 IDebugProcessEx2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- 自訂連接埠供應商的相同物件上實作這個介面[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)介面才能：  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ 自訂通訊埠供應商會在與 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 介面相同的物件上執行這個介面，以便：  
   
-- 支援追蹤的工作階段連線到處理程序  
+- 支援追蹤連接到進程的會話  
   
-- 支援自動附加跨多個偵錯引擎  
+- 支援跨多個 debug 引擎的自動附加  
   
-  自訂連接埠供應商可以實作這個介面，如果選擇。  
+  自訂埠供應商可以在選擇的情況下，執行這個介面。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
   
-- SDM 呼叫[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上`IDebugProcess2`介面，以取得此介面。  
+- SDM 會呼叫介面上的 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) `IDebugProcess2` 來取得這個介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDebugProcessEx2`。  
+ 下表顯示的方法 `IDebugProcessEx2` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|通知程序工作階段現在正在偵錯程序。|  
-|[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|通知程序工作階段不會再偵錯程序。|  
-|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|加入程式節點，如需偵錯引擎的清單。|  
+|[附加](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|通知進程，會話現在正在將進程進行偵錯工具。|  
+|[卸離](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|通知進程，會話不再將進程進行偵錯工具。|  
+|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|加入程式節點以取得 debug 引擎的清單。|  
   
 ## <a name="remarks"></a>備註  
- 這個介面是 SDM 和處理序之間的私用。  
+ 這個介面在 SDM 和進程之間是私用的。  
   
 ## <a name="requirements"></a>需求  
- 標頭：Portpriv.h  
+ 標頭： Portpriv。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

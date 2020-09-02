@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 43b6115c45f9583b90711ef030834da662106f08
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704357"
 ---
 # <a name="concurrency-visualizer-markers"></a>並行視覺化檢視中的標記
@@ -63,7 +63,7 @@ ms.locfileid: "65704357"
 ## <a name="markers-from-eventsource"></a>來自 EventSource 的標記  
  並行視覺化檢視也可以顯示 EventSource 事件。  如需詳細資訊，請參閱[將 EventSource 事件顯示為標記](../profiling/visualizing-eventsource-events-as-markers.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [旗標標記](../profiling/flag-markers.md)   
  [訊息標記](../profiling/message-markers.md)   
  [範圍標記](../profiling/span-markers.md)   

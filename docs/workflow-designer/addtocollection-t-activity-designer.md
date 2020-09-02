@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ffa24dce2691f061c5947e15d7fc7923d632b38
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88706538"
 ---
 # <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T> 活動設計工具
@@ -42,7 +42,7 @@ ms.locfileid: "88706538"
 |<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|是|應該加入項目的集合。 此集合的類型為**ICollection<TypeArgument \> **。 若要指定集合，請在屬性方格中輸入 Visual Basic 運算式。|
 |*TypeArgument*|是|<xref:System.Collections.Generic.ICollection%601> 所包含項目的 T 型別。 根據預設，這個 *TypeArgument* 類型設定為 **Int32**。 若要變更類型，請變更屬性方格中下拉式方塊的 *TypeArgument* 值。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [集合](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection \<T> 活動設計工具](../workflow-designer/addtocollection-t-activity-designer.md)
