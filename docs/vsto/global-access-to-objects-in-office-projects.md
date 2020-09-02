@@ -31,10 +31,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f76a2e74315980764a2cdffe67af4403552de7fe
-ms.sourcegitcommit: d293c0e3e9cc71bd4117b6dfd22990d52964addc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88041047"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>全域存取 Office 專案中的物件
@@ -51,29 +51,29 @@ ms.locfileid: "88041047"
 
 - `ThisAddIn`VSTO 增益集專案中的類別。 您可以使用 `Globals.ThisAddIn` 屬性來存取這個物件。
 
-- 專案中使用 [功能區設計工具] 自訂的所有功能區。 您可以使用 `Globals.Ribbons` 屬性來存取功能區。 如需詳細資訊，請參閱[在執行時間存取功能區](../vsto/accessing-the-ribbon-at-run-time.md)。
+- 專案中使用 [功能區設計工具] 自訂的所有功能區。 您可以使用 `Globals.Ribbons` 屬性來存取功能區。 如需詳細資訊，請參閱 [在執行時間存取功能區](../vsto/accessing-the-ribbon-at-run-time.md)。
 
-- Outlook VSTO 增益集專案中的所有 Outlook 表單區域。 您可以使用 `Globals.FormRegions` 屬性來存取表單區域。 如需詳細資訊，請參閱[在執行時間存取表單區域](../vsto/accessing-a-form-region-at-run-time.md)。
+- Outlook VSTO 增益集專案中的所有 Outlook 表單區域。 您可以使用 `Globals.FormRegions` 屬性來存取表單區域。 如需詳細資訊，請參閱 [在執行時間存取表單區域](../vsto/accessing-a-form-region-at-run-time.md)。
 
 - Factory 物件，可讓您在執行階段於 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]目標專案中建立功能區控制項和主項目。 您可以使用 `Globals.Factory` 屬性來存取這個物件。 這個物件是可實作下列其中一個介面的類別執行個體：
 
-  - [Microsoft. Tools Factory](xref:Microsoft.Office.Tools.Factory)
+  - [Microsoft. 工具](xref:Microsoft.Office.Tools.Factory)
 
-  - [Microsoft. Tools. Factory](xref:Microsoft.Office.Tools.Excel.Factory)
+  - [Microsoft. 工具。](xref:Microsoft.Office.Tools.Excel.Factory)
 
-  - [Microsoft. Office. Tools。](xref:Microsoft.Office.Tools.Outlook.Factory)
+  - [Microsoft..。](xref:Microsoft.Office.Tools.Outlook.Factory)
 
-  - [Microsoft. Tools. Factory](xref:Microsoft.Office.Tools.Word.Factory)
+  - [Microsoft. 工具。](xref:Microsoft.Office.Tools.Word.Factory)
 
   例如，您可以使用 `Globals.Sheet1` 屬性在使用者按一下 Excel 文件層級專案中執行窗格上的按鈕時，將文字插入 <xref:Microsoft.Office.Tools.Excel.NamedRange> 上的 `Sheet1` 控制項。
 
   [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
   [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]
 
- 嘗試在 `Globals` 檔或 VSTO 增益集初始化之前使用類別的程式碼，可能會擲回執行時間例外狀況。 例如，在宣告類別層級變數時使用 `Globals` 可能會失敗，因為 `Globals` 類別可能不會在宣告的物件具現化之前，使用所有主項目的參考進行初始化。
+ `Globals`在檔或 VSTO 增益集初始化之前嘗試使用類別的程式碼，可能會擲回執行時間例外狀況。 例如，在宣告類別層級變數時使用 `Globals` 可能會失敗，因為 `Globals` 類別可能不會在宣告的物件具現化之前，使用所有主項目的參考進行初始化。
 
 > [!NOTE]
-> 雖然 `Globals` 類別絕對不會在設計階段初始化，但是設計工具卻會建立控制項執行個體。 這表示如果您建立的使用者控制項會 `Globals` 從使用者控制項類別中使用類別的屬性，您必須先檢查屬性是否傳回**null** ，再嘗試使用傳回的物件。
+> 雖然 `Globals` 類別絕對不會在設計階段初始化，但是設計工具卻會建立控制項執行個體。 這表示，如果您建立的使用者控制項使用 `Globals` 來自使用者控制項類別內類別的屬性，您必須在嘗試使用傳回的物件之前，檢查屬性是否傳回 **null** 。
 
 ## <a name="see-also"></a>另請參閱
 - [在執行時間存取功能區](../vsto/accessing-the-ribbon-at-run-time.md)

@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: b41ed3901cd4ad18a1b52ddbdc7ee6fd82cb5380
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62962117"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>教學課程：開始使用 Visual Studio 中的 Django Web 架構
@@ -32,7 +32,7 @@ ms.locfileid: "62962117"
 > - 驗證使用者 (步驟 5)
 > - 使用 [投票 Django Web 專案] 範本，建立使用模型、移轉資料庫及自訂系統管理介面的應用程式 (步驟 6)
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 - Windows 上具有下列選項的 Visual Studio 2017 或更新版本：
   - **Python 開發** 工作負載 (安裝程式的 [工作負載]**** 索引標籤)。 如需相關指示，請參閱[在 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
@@ -54,7 +54,7 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 
 從命令列使用 Django 時，您通常會執行 `django-admin startproject <project_name>` 命令來啟動專案。 在 Visual Studio 中，使用 [空白 Django Web 專案] 範本可在 Visual Studio 專案和解決方案內提供相同的結構。
 
-1. 在視覺化工作室中，選擇 **"檔** > **新專案** > **"，** 搜索"Django"，然後選擇**空白 Django Web 專案**範本。 （該範本也可在左側清單中的**Python** > **Web**下找到。
+1. 在 Visual Studio 中，**選取**  >  [檔案**新增**  >  **專案**]、搜尋 "Django"，然後選取 [**空白 Django Web 專案**] 範本。  (範本也可在左側清單中的**Python**  >  **Web**下找到。 ) 
 
     ![Visual Studio 中針對 [空白 Django Web 專案] 的 [新專案] 對話方塊](media/django/step01-new-blank-project.png)
 
@@ -166,7 +166,7 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 2. 在您的專案中，會有一個名稱和專案相同的資料夾。 其中包含基本的 Django 專案檔：
 
    - *__init.py*：告訴 Python 此資料夾為 Python 套件的空白檔案。
-   - *wsgi.py*：供 WSGI 相容的網頁伺服器服務您專案的進入點。 您通常會以現況保留此檔案，因為它可為實際執行的網頁伺服器提供勾點。
+   - *wsgi.py*：供 WSGI 相容的網頁伺服器服務您專案的進入點。 您通常會將此檔案保持原狀，因為它會提供生產 Web 伺服器的勾點。
    - *settings.py*：包含 Django 專案的設定，您可以在開發 Web 應用程式的過程中修改。
    - *urls.py*：包含 Django 專案的目錄，您也可以在開發過程中修改。
 
@@ -180,7 +180,7 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 
 ## <a name="step-1-5-run-the-empty-django-project"></a>步驟 1-5：執行空白 Django 專案
 
-1. 在視覺化工作室中，選擇**調試** > **啟動調試**（**F5**） 或使用工具列上的**Web 服務器**按鈕（您看到的瀏覽器可能有所不同）：
+1. 在 Visual Studio 中，選取 [ **Debug**  >  **開始調試**] (**F5**) 或使用工具列上的 [ **Web 服務器**] 按鈕 (您所看到的瀏覽器可能會有不同的) ：
 
     ![Visual Studio 中的 [執行網頁伺服器] 工具列按鈕](media/django/run-web-server-toolbar-button.png)
 
@@ -190,15 +190,15 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 
     ![Django 專案預設檢視](media/django/step01-first-run-success.png)
 
-1. 完成後，請關閉主控台視窗或使用 Visual Studio 中的 **"調試** > **停止調試"** 命令來阻止伺服器。
+1. 當您完成時，請關閉主控台視窗，或使用 Visual Studio 中的 [ **Debug**  >  **停止調試**程式] 命令，以停止伺服器。
 
 ### <a name="question-is-django-a-web-server-as-well-as-a-framework"></a>問題：Django 是網頁伺服器，同時也是架構？
 
-回答：可以說是，也可以說不是。 Django 沒有用於開發用途的內建網頁伺服器。 此網頁伺服器是用於您在本機執行 Web 應用程式 (例如在 Visual Studio 中進行偵錯) 的情況。 不過，當您部署到 Web 主機時，Django 會改用主機的網頁伺服器。 Django 專案中的 *wsgi.py* 模組會負責連結到實際執行伺服器。
+回答：可以說是，也可以說不是。 Django 沒有用於開發用途的內建網頁伺服器。 此網頁伺服器是用於您在本機執行 Web 應用程式 (例如在 Visual Studio 中進行偵錯) 的情況。 不過，當您部署至 Web 主機時，Django 會改為使用主機的 Web 伺服器。 Django 專案中的 *wsgi.py* 模組會負責連結到實際執行伺服器。
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>問題：使用 [偵錯] 功能表命令和使用專案 Python 子功能表上的伺服器命令，兩者有何差異？
 
-回答：除了 [偵錯]**** 功能表命令與工具列按鈕之外，您也可以使用專案內容功能表上的 [Python]**** > [執行伺服器]**** 或 [Python]**** > [執行偵錯伺服器]**** 命令來啟動伺服器。 這兩個命令都會開啟主控台視窗，您可在該處看到執行中伺服器的本機 URL (localhost:port)。 不過，您必須使用該 URL 手動開啟瀏覽器，執行偵錯伺服器並不會自動啟動 Visual Studio 偵錯工具。 如果需要，可以使用 **"調試** > **附加到進程**"命令，稍後可以將調試器附加到正在運行的進程。
+回答：除了 [偵錯]**** 功能表命令與工具列按鈕之外，您也可以使用專案內容功能表上的 [Python]**** > [執行伺服器]**** 或 [Python]**** > [執行偵錯伺服器]**** 命令來啟動伺服器。 這兩個命令都會開啟主控台視窗，您可在該處看到執行中伺服器的本機 URL (localhost:port)。 不過，您必須使用該 URL 手動開啟瀏覽器，執行偵錯伺服器並不會自動啟動 Visual Studio 偵錯工具。 您可以稍後使用**Debug**  >  **attach to process**命令，將偵錯工具附加至執行中的進程。
 
 ## <a name="next-steps"></a>後續步驟
 

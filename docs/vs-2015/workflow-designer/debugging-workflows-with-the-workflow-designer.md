@@ -13,20 +13,20 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b2b5dcbc69853007eebec65142f522f8a942abd1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656839"
 ---
 # <a name="debugging-workflows-with-the-workflow-designer"></a>使用工作流程設計工具偵錯工作流程
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 提供工作流程與自訂活動的偵錯功能。 其處理序與行為表現類似預設的 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 偵錯工具。 本節中的主題說明如何執行傳統的偵錯程序，以及 XAML 與運算式的偵錯。
 
-## <a name="in-this-section"></a>本章節內容
- [如何：叫用工作流程偵錯工具](../workflow-designer/how-to-invoke-the-workflow-debugger.md)
+## <a name="in-this-section"></a>本節內容
+ [HOW TO：叫用工作流程偵錯工具](../workflow-designer/how-to-invoke-the-workflow-debugger.md)
 
  [如何：在工作流程中設定中斷點](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
 
- [如何：使用工作流程設計工具對 XAML 進行偵錯](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
+ [HOW TO：使用工作流程設計工具偵測 XAML](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
 
  [工作流程設計工具中不支援的偵錯情況](../workflow-designer/unsupported-debugging-scenarios-in-the-workflow-designer.md)

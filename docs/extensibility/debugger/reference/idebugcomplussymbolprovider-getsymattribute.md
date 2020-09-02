@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlus符號提供程式::獲取Sym屬性 |微軟文件
+title: IDebugComPlusSymbolProvider：： GetSymAttribute |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cb405bd0cf6f3ec846e3b146e4fd02399d583fb7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733766"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
-使用指定模組的給定父屬性檢索調試符號。
+使用指定之模組的給定父屬性抓取 debug 符號。
 
 ## <a name="syntax"></a>語法
 
@@ -52,31 +52,31 @@ int GetSymAttribute (
 
 ## <a name="parameters"></a>參數
 `ulAppDomainID`\
-[在]應用程式域的標識碼。
+在應用程式域的識別碼。
 
 `guidModule`\
-[在]模組的唯一標識碼。
+在模組的唯一識別碼。
 
 `tokParent`\
-[在]父屬性的權杖。
+在父屬性的標記。
 
 `pstrName`\
-[在]模組的名稱。
+在模組的名稱。
 
 `cBuffer`\
-[在]輸出`buffer`所需的位元組數。
+在輸出所需的位元組數目 `buffer` 。
 
 `pcBuffer`\
-[出]輸出`buffer`的長度。
+擴展輸出的長度 `buffer` 。
 
 `buffer`\
-[出]包含符號的陣列。
+擴展包含符號的陣列。
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則,返回錯誤代碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
-下面的範例展示如何為公開[IDebugComPlusSymbol提供程式](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbol提供程式**物件實現此方法。
+下列範例示範如何針對公開[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbolProvider**物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetSymAttribute(

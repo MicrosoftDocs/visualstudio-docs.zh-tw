@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a96cdc7ae4edc7ea7193d5b95dfc73fa1747c1fb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62970105"
 ---
 # <a name="empty-timeline-segment"></a>空白時間表區段
@@ -32,4 +32,4 @@ ms.locfileid: "62970105"
 
 ## <a name="see-also"></a>另請參閱
 - [執行緒檢視](../profiling/threads-view-parallel-performance.md)
-- [縮放控制 (執行緒檢視)](../profiling/zoom-control-threads-view.md)
+- [縮放控制項 (執行緒視圖) ](../profiling/zoom-control-threads-view.md)

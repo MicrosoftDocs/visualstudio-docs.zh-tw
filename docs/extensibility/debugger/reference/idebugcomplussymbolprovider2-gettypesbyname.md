@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlus符號提供程式2::獲取按名稱獲取類型 |微軟文件
+title: IDebugComPlusSymbolProvider2：： GetTypesByName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5e7b85fb8d5b0e3256e172ff78bc3a5f660b69b8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733427"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
-檢索給定其名稱的類型。
+使用指定的名稱來抓取型別。
 
 ## <a name="syntax"></a>語法
 
@@ -44,22 +44,22 @@ int GetTypesByName(
 
 ## <a name="parameters"></a>參數
 `pszClassName`\
-[在]類型的名稱。
+在型別的名稱。
 
 `nameMatch`\
-[在]選擇匹配類型,例如區分大小寫。 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)枚舉中的值。
+在選取相符的類型，例如區分大小寫。 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉中的值。
 
 `ppEnum`\
-[出]包含具有給定名稱的類型或類型的枚舉器。
+擴展列舉值，其中包含具有指定名稱的類型或類型。
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則,返回錯誤代碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
-對於泛型類型,要查找「清單\<int>」或\<「清單 int,int>」的名稱將是「清單」。。 如果同名類型出現在多個模組中,則`ppEnum`參數將包含所有副本。 您必須使用[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)`guidModule`並根據 參數進行區分。
+若為泛型型別，要查詢 ' List \<int> ' 或 ' list ' 的名稱將 \<int,int> 會是「list」。 如果有相同名稱的類型出現在多個模組中， `ppEnum` 參數將會包含所有的複本。 您必須使用 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) ，並根據參數來區分 `guidModule` 。
 
 ## <a name="example"></a>範例
-下面的範例展示如何為公開[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面的**CDebugSymbol提供程式**物件實現此方法。
+下列範例示範如何針對公開[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面的**CDebugSymbolProvider**物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypesByName(

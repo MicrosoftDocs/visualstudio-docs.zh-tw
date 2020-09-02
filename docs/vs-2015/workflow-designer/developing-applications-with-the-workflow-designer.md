@@ -18,14 +18,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 848300c54800e229ee1f487fc415bad45d982a6c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656818"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>使用工作流程設計工具開發應用程式
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] 是視覺化設計工具，也是偵錯工具，可用於圖形建構與 [!INCLUDE[wf](../includes/wf-md.md)] 開發環境下所裝載之 [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] 中的 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 應用程式之偵錯。 它可讓您使用範本與活動設計工具，來撰寫複合工作流程應用程式、活動程式庫或 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 服務。 [!INCLUDE[crabout](../includes/crabout-md.md)] 工作流程，請[參閱&#91;Windows Workflow Foundation .NET Framework&#93;4](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66)。
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] 是視覺化設計工具，也是偵錯工具，可用於圖形建構與 [!INCLUDE[wf](../includes/wf-md.md)] 開發環境下所裝載之 [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] 中的 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 應用程式之偵錯。 它可讓您使用範本與活動設計工具，來撰寫複合工作流程應用程式、活動程式庫或 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 服務。 [!INCLUDE[crabout](../includes/crabout-md.md)] 工作流程，請參閱 [Windows Workflow Foundation &#91; .NET Framework 4&#93;](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66)。
 
  以下是幾個使這個新版 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 與舊版 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 不同的新設計功能：
 
@@ -43,23 +43,23 @@ ms.locfileid: "72656818"
 
 - 相較於舊版，重新裝載 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 之外的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 已大幅簡化，現在只需要幾行程式碼即可完成。
 
-- 新的 <xref:System.Activities.Statements.Flowchart> 活動及其[流程圖](../workflow-designer/flowchart-activity-designer.md)，可讓您使用熟悉的流程圖模型樣式，將程式流程視覺化。
+- 新 <xref:System.Activities.Statements.Flowchart> 活動和其 [流程圖](../workflow-designer/flowchart-activity-designer.md) 可讓您使用熟悉的流程圖模型樣式來視覺化程式流程。
 
 - 傳訊活動已有所加強，可讓您撰寫完全宣告式 (無程式碼) 的 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 服務。
 
 - **加入服務參考 ...** 功能可讓您自動產生可存取 Web 服務的活動。
 
-## <a name="in-this-section"></a>本章節內容
- [使用工作流程設計工具](../workflow-designer/using-the-workflow-designer.md)示範如何使用內建的設計工具建立新的活動和工作流程專案，以及如何使用設計師提供的其他工具來處理引數、變數、運算式、匯入和階層連結流覽。
+## <a name="in-this-section"></a>本節內容
+ [使用工作流程設計工具](../workflow-designer/using-the-workflow-designer.md) 示範如何使用內建的設計工具建立新的活動和工作流程專案，以及如何使用設計工具提供的其他工具來處理引數、變數、運算式、匯入和階層連結導覽。
 
- [使用活動設計](../workflow-designer/using-the-activity-designers.md)工具描述活動和範本的分類，以及系統提供的設計工具。
+ [使用活動設計](../workflow-designer/using-the-activity-designers.md) 工具描述活動和範本的類別以及系統提供的設計工具。
 
- [使用工作流程設計工具來調試工作流程](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)描述如何執行傳統的偵錯工具，以及如何偵測 XAML 和運算式。
+ [使用工作流程設計工具來調試工作流程](../workflow-designer/debugging-workflows-with-the-workflow-designer.md) 描述如何執行傳統的偵錯工具，以及對 XAML 和運算式進行的偵錯工具。
 
- [工作流程設計工具 UI](../workflow-designer/workflow-designer-ui-help.md)說明包含 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 提供之對話方塊的上下文相關說明主題，以及設計工具 shell 功能、鍵盤快速鍵和錯誤訊息的指引。
+ [工作流程設計工具 UI](../workflow-designer/workflow-designer-ui-help.md) 說明包含提供之對話方塊的上下文相關說明主題，以及 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 設計工具 shell 功能、鍵盤快速鍵和錯誤訊息的指引。
 
- [開發以 .net 3.0 或 .net 3.5 Framework 為目標的工作流程應用程式](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md)包含使用以 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 為目標之舊版設計工具的指引。
+ [開發以 .net 3.0 或 .net 3.5 Framework 為目標的工作流程應用程式](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md) 包含使用以或為目標之舊版設計工具的指引 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 。
 
- [設計工具&#91;重新裝載 WF&#93;範例](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)這個範例示範如何建立 WPF 配置以包含設計工具。
+ [設計工具重新裝載 &#91;WF 範例&#93;](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d) 這個範例會示範如何建立 WPF 配置以包含設計工具。
 
- [自訂活動設計](https://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)工具本節包含的活動範例，會使用自訂設計工具在工作流程設計工具中顯示。
+ [自訂活動設計](https://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075) 工具本章節包含使用自訂設計工具在工作流程設計工具中顯示的活動範例。

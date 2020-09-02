@@ -1,5 +1,5 @@
 ---
-title: IDebugsettings 回調2::獲取EEMetricGuid |微軟文件
+title: IDebugSettingsCallback2：： GetEEMetricGuid |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d95842ecde264accd8989a83ae652ac540183ef1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720010"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
-檢索給定名稱的運算器指標的唯一標識碼。
+根據給定的名稱，抓取運算式評估工具度量的唯一識別碼。
 
 ## <a name="syntax"></a>語法
 
@@ -45,19 +45,19 @@ HRESULT GetEEMetricGuid(
 
 ## <a name="parameters"></a>參數
 `guidLang`\
-[在]程式設計語言的唯一標識符。
+在程式設計語言的唯一識別碼。
 
 `guidVendor`\
-[在]供應商的唯一標識碼。
+在廠商的唯一識別碼。
 
 `pszMetric`\
-[在]指標的名稱。
+在度量的名稱。
 
 `pguidValue`\
-[出]返回指標的唯一標識符。
+擴展傳回度量的唯一識別碼。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

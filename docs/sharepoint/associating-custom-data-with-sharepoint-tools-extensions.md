@@ -1,5 +1,5 @@
 ---
-title: 關聯自訂資料與 SharePoint 工具擴充功能 |Microsoft Docs
+title: 將自訂資料與 SharePoint 工具延伸模組產生關聯 |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,23 +17,23 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9a2c1869791b250fb90c6a634f057797f3c57a62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62987968"
 ---
-# <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>將自訂的資料產生關聯的 SharePoint 工具擴充功能
-  您可以新增自訂資料中 SharePoint 工具擴充功能的特定物件。 當您需要在您想要從您的延伸模組中的其他程式碼供稍後存取的擴充功能的其中一部分中的資料，這非常有用。 而不是實作自訂的方式來儲存及存取資料，您可以在您的延伸模組相關聯物件的資料，然後稍後再從同一個物件擷取資料。
+# <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>將自訂資料與 SharePoint 工具延伸模組產生關聯
+  您可以將自訂資料新增至 SharePoint 工具延伸模組中的特定物件。 當您的延伸模組中有您想要稍後從擴充功能的其他程式碼存取的資料時，這非常有用。 您可以將資料與延伸模組中的物件建立關聯，然後再從相同的物件取得資料，而不是執行自訂方式來儲存及存取資料。
 
- 將自訂資料加入至物件也很有用時您想要保留與 Visual Studio 中的特定項目相關的資料。 SharePoint 工具擴充功能會載入一次在 Visual Studio 中，因此您的延伸模組可能會使用數個不同的項目 (例如專案、 專案項目，或**伺服器總管**節點) 在任何時間。 如果您有只與特定的項目相關的自訂資料，您可以將資料加入物件，表示該項目。
+ 當您想要保留與 Visual Studio 中特定專案相關的資料時，將自訂資料新增至物件也很有用。 SharePoint 工具擴充功能只會在 Visual Studio 載入一次，因此您的延伸模組可能會在任何時間 (例如專案、專案專案或 **伺服器總管**) 節點等數個不同的專案中使用。 如果您有僅與特定專案相關的自訂資料，您可以將資料加入代表該專案的物件。
 
- 當您新增自訂資料中 SharePoint 工具擴充功能的物件時，就不會保存資料。 只有在物件的存留時間期間有可用資料。 記憶體回收收回物件之後，資料會遺失。
+ 當您將自訂資料新增至 SharePoint 工具延伸模組中的物件時，資料不會保存。 只有在物件的存留期內，資料才可供使用。 當垃圾收集回收物件之後，資料就會遺失。
 
- 中的 SharePoint 專案系統的擴充功能，您也可以儲存延伸模組已卸載之後依然存在的字串資料。 如需詳細資訊，請參閱 <<c0> [ 將資料儲存於 SharePoint 專案系統擴充](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
+ 在 SharePoint 專案系統的延伸模組中，您也可以儲存在卸載延伸之後仍會保存的字串資料。 如需詳細資訊，請參閱 [在 SharePoint 專案系統的延伸中儲存資料](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
 
-## <a name="objects-that-can-contain-custom-data"></a>可包含自訂的資料
- 您可以將自訂資料新增至實作 SharePoint 工具物件模型中的任何物件<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>介面。 這個介面會定義一個屬性， <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>，這是自訂資料物件的集合。 下列型別會實作<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>:
+## <a name="objects-that-can-contain-custom-data"></a>可以包含自訂資料的物件
+ 您可以將自訂資料新增至 SharePoint 工具物件模型中的任何物件，以執行 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> 介面。 這個介面只會定義一個屬性， <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 也就是自訂資料物件的集合。 下列類型會執行 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> ：
 
 - <xref:Microsoft.VisualStudio.SharePoint.IMappedFolder>
 
@@ -65,23 +65,23 @@ ms.locfileid: "62987968"
 
 - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition>
 
-## <a name="add-and-retrieve-custom-data"></a>新增和擷取自訂的資料
- 若要將自訂資料新增至 SharePoint 工具擴充功能中的物件，取得<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>您想要新增的資料，然後使用的物件屬性<xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add%2A>方法，將資料加入至物件。
+## <a name="add-and-retrieve-custom-data"></a>新增和取出自訂資料
+ 若要將自訂資料新增至 SharePoint 工具擴充功能中的物件，請取得 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 您想要加入資料之物件的屬性，然後使用 <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add%2A> 方法將資料加入至物件。
 
- 若要從 SharePoint 工具擴充功能中的物件中擷取自訂的資料，取得<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>屬性的物件，然後使用下列其中一個下列方法：
+ 若要從 SharePoint 工具擴充功能中的物件取出自訂資料，請取得 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 物件的屬性，然後使用下列其中一種方法：
 
-- <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. 這個方法會傳回**真**如果資料物件存在，或**false**如果不存在。 您可以使用這個方法來擷取實值型別或參考類型的執行個體。
+- <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. 如果資料物件存在，這個方法會傳回 **true** ，如果不存在則傳回 **false** 。 您可以使用這個方法來取出實值型別或參考型別的實例。
 
-- <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. 這個方法傳回的資料物件，如果結束，或是**null**如果不存在。 您只能使用這個方法來擷取執行個體的參考型別。
+- <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. 如果資料物件結束，這個方法會傳回資料物件，如果不存在，則傳回 **null** 。 您只能使用這個方法來取出參考型別的實例。
 
-  下列程式碼範例會判斷特定資料物件是否已經與專案項目相關聯。 如果資料物件是未與專案項目相關聯，則程式碼將物件加入<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>專案項目的屬性。 若要查看這個內容中的較大範例的範例，請參閱[How to:將屬性加入至自訂的 SharePoint 專案項目類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。
+  下列程式碼範例會判斷特定資料物件是否已與專案專案相關聯。 如果資料物件尚未與專案專案相關聯，則程式碼會將物件加入至專案專案的 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 屬性。 若要在較大範例的內容中查看這個範例，請參閱 [如何：將屬性加入至自訂 SharePoint 專案專案類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。
 
   [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
   [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]
 
 ## <a name="see-also"></a>另請參閱
 - [SharePoint 工具擴充功能的程式設計概念和功能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
-- [逐步解說：使用項目範本，第 1 部分中建立自訂動作專案項目](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
-- [逐步解說：擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+- [逐步解說：使用專案範本建立自訂動作專案專案（第1部分）](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
+- [逐步解說：擴充伺服器總管以顯示 web 元件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [如何：將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
-- [如何：將屬性加入至自訂的 SharePoint 專案項目類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
+- [如何：將屬性加入至自訂 SharePoint 專案專案類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)

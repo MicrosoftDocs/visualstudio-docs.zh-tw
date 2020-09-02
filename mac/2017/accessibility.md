@@ -1,5 +1,5 @@
 ---
-title: Accessibility
+title: 協助工具選項
 description: 本文介紹 Visual Studio for Mac 中的協助工具功能及其啟用方式。
 author: heiligerdankgesang
 ms.author: dominicn
@@ -7,10 +7,10 @@ ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.topic: overview
 ms.openlocfilehash: a2f151cbf593d2b8e26be7ac60eaf8ff3c687499
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938922"
 ---
 # <a name="accessibility"></a>協助工具選項

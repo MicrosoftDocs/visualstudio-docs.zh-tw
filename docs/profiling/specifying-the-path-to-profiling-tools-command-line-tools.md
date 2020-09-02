@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f66ed17aec8c6e5303ea61741021dd25032fcb37
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75406307"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>指定分析工具命令列工具的路徑
@@ -24,7 +24,7 @@ ms.locfileid: "75406307"
 
 針對機器碼，Visual Studio 分析工具 API 位在 *VSPerf.dll* 中。 標頭檔 (*VSPerf.h*) 和匯入程式庫 (*VSPerf.lib*) 位在 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* 目錄中。
 
- 對於託管代碼，探測器 API 位於*Microsoft.VisualStudio.profiler.dll 中*。 這個 DLL 位於 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 目錄。
+ 針對 managed 程式碼，profiler Api 位於 *Microsoft.VisualStudio.Profiler.dll*中。 這個 DLL 位於 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 目錄。
 
 ## <a name="64-bit-computers"></a>64 位元電腦
 
@@ -32,12 +32,12 @@ ms.locfileid: "75406307"
 
 - 若是 32 位元應用程式，預設程式碼剖析工具目錄是：
 
-     （本機）*微軟視覺工作室_2017_團隊工具\性能工具\PerfSDK*
+      (原生) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*
      
-     （管理）*微軟視覺工作室_共用_公共_VSPerf收集工具*
+      (受控) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
 - 若是 64 位元應用程式，預設程式碼剖析工具目錄是：
 
-     （本機）*微軟視覺化工作室_2017_團隊工具\性能工具\x64\PerfSDK*
+      (原生) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
 
-     （管理）*微軟視覺工作室_共用_公共_VSPerf收集工具\x64*
+      (受控) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*

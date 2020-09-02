@@ -1,5 +1,5 @@
 ---
-title: IDebugsettings回調2::獲取EEMetric檔 |微軟文件
+title: IDebugSettingsCallback2：： GetEEMetricFile |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2aafda1563d2f948ea0871f920faa8bbbef766f7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720042"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
-檢索給定名稱或指標的運算式賦值器指標檔。
+取得指定名稱或計量的運算式評估工具度量檔案。
 
 ## <a name="syntax"></a>語法
 
@@ -45,19 +45,19 @@ private int GetEEMetricFile(
 
 ## <a name="parameters"></a>參數
 `guidLang`\
-[在]程式設計語言的唯一標識符。
+在程式設計語言的唯一識別碼。
 
 `guidVendor`\
-[在]供應商的唯一標識碼。
+在廠商的唯一識別碼。
 
 `pszMetric`\
-[在]指標的名稱。
+在度量的名稱。
 
 `pbstrValue`\
-[出]將指標文件的內容作為字串返回。
+擴展以字串形式傳回度量檔案的內容。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

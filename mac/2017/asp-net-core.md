@@ -8,15 +8,15 @@ ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
 ms.topic: how-to
 ms.openlocfilehash: 2e921ac1e9c85216bebf1626e1454b9fb764f129
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938933"
 ---
 # <a name="getting-started-with-aspnet-core"></a>開始使用 ASP.NET Core
 
- Visual Studio for Mac 可讓您輕鬆地開發應用程式的服務，並支援最新的 ASP.NET Core Web 開發平臺。 ASP.NET Core 在 .NET Core 上執行，而 .NET Core 是 .NET Framework 和執行階段的最新演進。 它已針對快速效能進行調整，並考慮小型安裝大小，並重新想像在 Linux 和 macOS 上執行，以及 Windows。
+ Visual Studio for Mac 可讓您輕鬆地開發應用程式的服務，並支援最新的 ASP.NET Core Web 開發平臺。 ASP.NET Core 在 .NET Core 上執行，而 .NET Core 是 .NET Framework 和執行階段的最新演進。 它已針對快速效能進行調整，並針對小型安裝大小進行考慮，並重新假設在 Linux 和 macOS 以及 Windows 上執行。
 
 ## <a name="installing-net-core"></a>安裝 .NET Core
 
@@ -30,7 +30,7 @@ ms.locfileid: "85938933"
 
 這會顯示 [新增專案] 對話方塊，可讓您選取範本來建立應用程式。
 
-有許多專案可為您提供預先建立的範本，以開始建置 ASP.NET Core 應用程式。 它們是：
+有許多專案可為您提供預先建立的範本，以開始建置 ASP.NET Core 應用程式。 這些警告是：
 
 - **.NET Core > ASP.NET Core 空白 Web 應用程式**
 - **.NET Core > ASP.NET Core Web 應用程式**
@@ -43,7 +43,7 @@ ms.locfileid: "85938933"
 
 ![新的 ASP.NET Core 空白專案檢視](media/asp-net-core-image4.png)
 
-ASP.NET Core 空白 Web 應用程式建立的 Web 應用程式含有兩個預設檔案：**Program.cs** 和 **Startup.cs**，其說明如下。 它也會建立相依性資料夾，其中包含您專案的 NuGet 套件相依性，例如 ASP.NET Core、.NET Core framework，以及建立專案的 MSBuild 目標：
+ASP.NET Core 空白 Web 應用程式建立的 Web 應用程式含有兩個預設檔案：**Program.cs** 和 **Startup.cs**，其說明如下。 它也會建立相依性資料夾，其中包含專案的 NuGet 套件相依性，例如 ASP.NET Core、.NET Core framework 和建立專案的 MSBuild 目標：
 
 ![顯示相依性的 Solution Pad](media/asp-net-core-image12.png)
 
@@ -65,7 +65,7 @@ public static void Main(string[] args)
 }
 ```
 
-ASP.NET Core 應用程式會透過的實例設定和啟動主機，在其 main 方法中建立 web 伺服器 [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) 。 這個建立器提供了一些方法來允許設定主機。 在範本應用程式中會使用下列組態：
+ASP.NET Core 的應用程式會透過的實例設定和啟動主機，以在其主要方法中建立 web 伺服器 [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) 。 這個建立器提供了一些方法來允許設定主機。 在範本應用程式中會使用下列組態：
 
 * `UseKestrel`：指定應用程式將使用的 Kestrel 伺服器
 * `UseContentRoot(Directory.GetCurrentDirectory())`：當應用程式從 Web 專案的根資料夾啟動時，使用這個資料夾作為應用程式的內容根目錄
@@ -231,11 +231,11 @@ ASP.NET Core 應用程式使用「模型-檢視-控制器 (MVC)」設計模式�
 
 請務必先順利完成所有四個步驟，以確保已順利安裝 .NET Core。
 
-## <a name="summary"></a>摘要
+## <a name="summary"></a>總結
 
 本指南提供了 ASP.NET Core 的簡介。 當中描述其概念和使用時機，並提供了如何在 Visual Studio for Mac 中使用它的資訊。
 如需其下一個步驟的詳細資訊，請參閱下列指南：
-- [ASP.NET Core](/aspnet/core/)檔。
+- [ASP.NET Core](/aspnet/core/) 檔。
 - [建立原生行動應用程式的後端服務](/aspnet/core/mobile/native-mobile-backend)，其示範如何使用 Xamarin.Forms 應用程式的 ASP.NET Core 來建置 REST 服務。
 - [ASP.NET Core 實習實驗室](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)。
 

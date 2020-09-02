@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.topic: overview
 ms.openlocfilehash: 28ea53826a19a9ec97349060702cf13c68342ad2
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938999"
 ---
 # <a name="managing-references-in-a-project"></a>管理專案中的參考
@@ -19,7 +19,7 @@ Visual Studio for Mac 提供兩種方式來新增專案的其他參考：
 
 ![專案參考](media/projects-and-solutions-image10.png)
 
-它們是：
+這些警告是：
 
 * 參考資料
 * NuGets (透過 [套件] 資料夾新增)

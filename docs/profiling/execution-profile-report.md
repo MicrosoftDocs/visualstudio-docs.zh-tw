@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25886ad4f7c31ea02c8dab2d45d8709a362a5a69
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62969988"
 ---
 # <a name="execution-profile-report"></a>執行分析報表
@@ -30,7 +30,7 @@ ms.locfileid: "62969988"
 
 |資料行|描述|
 |------------|-----------------|
-|名稱|每個層級的呼叫堆疊的函式名稱。|
+|Name|每個層級的呼叫堆疊的函式名稱。|
 |內含樣本|針對到呼叫堆疊樹狀圖的這個層級為止的所有堆疊收集的樣本總數。 此內含數字是此函式的專屬樣本和其所有子節點的內含計數器的總和。|
 |專有樣本|收集的樣本總數，其中，此函式是呼叫堆疊的最低層級。|
 |內含 %|內含樣本資料行中顯示的樣本總數百分比。 百分比會四捨五入成兩個小數位數。|

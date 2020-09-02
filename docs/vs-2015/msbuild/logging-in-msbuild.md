@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8caf9dcabe46c0d68fabf9e620818f52316e484b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162324"
 ---
 # <a name="logging-in-msbuild"></a>MSBuild 中的記錄
@@ -40,5 +40,5 @@ ms.locfileid: "68162324"
  概述如何建立自訂的轉送記錄器。  
   
 ## <a name="related-sections"></a>相關章節  
- [同時建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
+ [平行建立多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
  說明如何透過讓專案平行執行的方式，加快建置多個專案的速度。

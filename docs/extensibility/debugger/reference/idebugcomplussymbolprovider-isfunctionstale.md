@@ -1,5 +1,5 @@
 ---
-title: IDebugcomPlus 符號提供者:功能微軟文件
+title: IDebugComPlusSymbolProvider：： IsFunctionStale |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4e5b42e8bb89a84b5274669173c93db3e287755a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733692"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
-確定指定調試位址的函數是否被視為過時。
+判斷指定之 debug 位址的函式是否視為過時。
 
 ## <a name="syntax"></a>語法
 
@@ -39,13 +39,13 @@ int IsFunctionStale(
 
 ## <a name="parameters"></a>參數
 `pAddress`\
-[在]由[IDebugAddress 介面](../../../extensibility/debugger/reference/idebugaddress.md)表示的調試位址。 此地址必須是METHOD_ADDRESS。
+在 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 介面所代表的偵錯工具位址。 此位址必須是 METHOD_ADDRESS。
 
 ## <a name="return-value"></a>傳回值
-如果函數被視為過時,則返回`S_OK`。 如果函數未過時,則傳`S_FALSE`回 。
+如果函式被視為過時，則會傳回 `S_OK` 。 如果函數不是過時的，則會傳回 `S_FALSE` 。
 
 ## <a name="example"></a>範例
-下面的範例展示如何為公開[IDebugComPlusSymbol提供程式](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbol提供程式**物件實現此方法。
+下列範例示範如何針對公開[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbolProvider**物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsFunctionStale(

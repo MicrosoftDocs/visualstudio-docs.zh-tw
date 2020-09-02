@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3ad1647c31dba9b313d67a55d9435bcd5843a5a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190611"
 ---
-# <a name="idiastackframegetbase"></a>IDiaStackFrame::get_base
+# <a name="idiastackframeget_base"></a>IDiaStackFrame::get_base
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取框架的基底位址。  
+抓取框架的基底位址。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,10 +35,10 @@ HRESULT get_base ( 
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回基底地址。  
+ 擴展傳回基底位址。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援的屬性。 否則會傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援屬性，則傳回。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

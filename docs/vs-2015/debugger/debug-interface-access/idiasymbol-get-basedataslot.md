@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d0fbdf2bf6df2e61e1328a71f180264d582bfdf9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149814"
 ---
-# <a name="idiasymbolgetbasedataslot"></a>IDiaSymbol::get_baseDataSlot
+# <a name="idiasymbolget_basedataslot"></a>IDiaSymbol::get_baseDataSlot
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取的基底的資料插槽。  
+抓取基底資料槽。  
   
 ## <a name="syntax"></a>語法  
   
@@ -32,10 +32,10 @@ HRESULT get_baseDataSlot(
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]指標`DWORD`保存的基底的資料插槽。  
+ 擴展 `DWORD` 保存基底資料位置之的指標。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

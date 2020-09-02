@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：在文件層級專案中的簡單資料繫結
+title: 逐步解說：檔層級專案中的簡單資料系結
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,100 +17,100 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62981058"
 ---
-# <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>逐步解說：在文件層級專案中的簡單資料繫結
-  本逐步解說會示範在文件層級專案中的資料繫結的基本概念。 SQL Server 資料庫中的單一資料欄位繫結至 Microsoft Office Excel 中的具名範圍。 本逐步解說也示範如何新增控制項，可讓您捲動瀏覽資料表中的所有記錄。
+# <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>逐步解說：檔層級專案中的簡單資料系結
+  本逐步解說示範檔層級專案中資料系結的基本概念。 SQL Server 資料庫中的單一資料欄位會系結至 Microsoft Office Excel 中的已命名範圍。 本逐步解說也會示範如何加入控制項，讓您可以在資料表中的所有記錄之間進行滾動。
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- 這個逐步解說將說明下列工作：
+ 本逐步解說將說明下列工作：
 
 - 建立 Excel 專案的資料來源。
 
 - 將控制項加入工作表。
 
-- 捲動資料庫記錄。
+- 在資料庫記錄中進行滾動。
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>必要條件
- 您需要下列元件才能完成此逐步解說：
+ 您需要下列元件才能完成這個逐步解說：
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
-- 伺服器的存取權與 Northwind SQL Server 範例資料庫。
+- 具有 Northwind SQL Server 範例資料庫之伺服器的存取權。
 
-- 讀取和寫入至 SQL Server 資料庫的權限。
+- 從 SQL Server 資料庫讀取和寫入的許可權。
 
 ## <a name="create-a-new-project"></a>建立新專案
- 在此步驟中，您將建立的 Excel 活頁簿專案。
+ 在這個步驟中，您將建立 Excel 活頁簿專案。
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 建立 Excel 活頁簿專案同名**我的簡單資料繫結**，使用 Visual Basic 或 C#。 請確定**建立新的文件**已選取。 如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 使用 Visual Basic 或 c #，建立名稱為 **My Simple Data Binding**的 Excel 活頁簿專案。 確定已選取 [ **建立新檔** ]。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-   Visual Studio 設計工具中開啟新的 Excel 活頁簿，並將**我的簡單資料繫結**專案加入**方案總管 中**。
+   Visual Studio 會在設計工具中開啟新的 Excel 活頁簿，並將 [ **我的簡單資料** 系結] 專案加入 **方案總管**。
 
 ## <a name="create-the-data-source"></a>建立資料來源
  使用 [ **資料來源** ] 視窗將型別資料集加入專案。
 
 ### <a name="to-create-the-data-source"></a>若要建立資料來源
 
-1. 如果**資料來源**看不到視窗，顯示，請在功能表列選擇**檢視** > **其他 Windows**  >  **資料來源**。
+1. 如果看不到 [**資料來源**] 視窗，請在功能表列上選擇 [ **View**  >  **Other Windows**  >  **資料來源**]。
 
 2. 選擇 [ **加入新資料來源** ] 以啟動 [ **資料來源組態精靈**]。
 
-3. 選取 [**資料庫**，然後按一下**下一步]** 。
+3. 選取 [ **資料庫** ]，然後按 **[下一步]**。
 
-4. 選取資料連接至 Northwind 範例 SQL Server 資料庫，或加入新的連接 using**新的連接** 按鈕。
+4. 選取與 Northwind 範例 SQL Server 資料庫的資料連線，或使用 [ **新增連接** ] 按鈕來加入新的連接。
 
-5. 已選取或建立連接之後，請按一下**下一步**。
+5. 選取或建立連接之後，請按 **[下一步]**。
 
-6. 清除 [可儲存連線，如果已選取，選項，然後按**下一步]** 。
+6. 如果已選取連接，請清除選項來儲存連接，然後按 **[下一步]**。
 
-7. 依序展開**資料表**中的節點**資料庫物件**視窗。
+7. 展開 [**資料庫物件**] 視窗中的 [**資料表**] 節點。
 
-8. 選取此核取方塊旁**客戶**資料表。
+8. 選取 [ **Customers** ] 資料表旁的核取方塊。
 
-9. 按一下 [ **完成**]。
+9. 按一下 [完成]  。
 
-   精靈會新增**客戶**資料表**Zdroje dat**視窗。 它也將具類型資料集加入專案中可見**方案總管 中**。
+   Wizard 會將 **Customers** 資料表加入至 [ **資料來源** ] 視窗。 它也會將具類型的資料集加入至 **方案總管**中可見的專案。
 
-## <a name="add-controls-to-the-worksheet"></a>將控制項加入工作表
- 此逐步解說中，您需要兩個已命名的範圍和第一個工作表上的四個按鈕。 首先，新增兩個具名的範圍，從**Zdroje dat**視窗，讓它們自動繫結至資料來源。 接下來，新增按鈕等，從**工具箱**。
+## <a name="add-controls-to-the-worksheet"></a>將控制項新增至工作表
+ 針對這個逐步解說，您需要在第一個工作表上有兩個命名範圍和四個按鈕。 首先，從 [ **資料來源** ] 視窗加入兩個命名範圍，讓它們自動系結至資料來源。 接下來，從 [ **工具箱**] 加入按鈕。
 
-### <a name="to-add-two-named-ranges"></a>若要新增兩個名為範圍
+### <a name="to-add-two-named-ranges"></a>加入兩個命名範圍
 
-1. 確認*我的簡單資料 Binding.xlsx*活頁簿是在 Visual Studio 設計工具中開啟具有**Sheet1**顯示。
+1. 確認 [ *我的簡單資料 Binding.xlsx* 活頁簿] 已在 Visual Studio 設計工具中開啟，並顯示 **Sheet1** 。
 
-2. 開啟**資料來源**視窗中，展開**客戶**節點。
+2. 開啟 [ **資料來源** ] 視窗，並展開 [ **Customers** ] 節點。
 
-3. 選取  **CompanyName**資料行，然後按一下出現的下拉式箭號。
+3. 選取 [ **公司名稱** ] 資料行，然後按一下出現的下拉箭號。
 
-4. 選取  **NamedRange**在下拉式清單，然後拖曳**CompanyName**加入儲存格的資料行**A1**。
+4. 在下拉式清單中選取 [ **NamedRange** ]，然後將 [ **公司名稱** ] 資料行拖曳至儲存格 **A1**。
 
-     A<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項，名為`companyNameNamedRange`會建立在資料格中**A1**。 在此同時<xref:System.Windows.Forms.BindingSource>名為`customersBindingSource`，資料表配接器和<xref:System.Data.DataSet>執行個體加入至專案。 控制項所繫結<xref:System.Windows.Forms.BindingSource>，它接著會繫結至<xref:System.Data.DataSet>執行個體。
+     <xref:Microsoft.Office.Tools.Excel.NamedRange> `companyNameNamedRange` 在儲存格**A1**中會建立名為的控制項。 同時， <xref:System.Windows.Forms.BindingSource> 已命名的 `customersBindingSource` 、資料表介面卡和 <xref:System.Data.DataSet> 實例會加入至專案。 控制項系結至 <xref:System.Windows.Forms.BindingSource> ，後者接著會系結至 <xref:System.Data.DataSet> 實例。
 
-5. 選取 [ **CustomerID**中的資料行**Zdroje dat** ] 視窗中，然後按一下出現的下拉式箭號。
+5. 在 [**資料來源**] 視窗中選取 [ **CustomerID** ] 資料行，然後按一下出現的下拉箭號。
 
-6. 按一下  **NamedRange**在下拉式清單，然後拖曳**CustomerID**加入儲存格的資料行**B1**。
+6. 按一下下拉式清單中的 [ **NamedRange** ]，然後將 [ **CustomerID** ] 資料行拖曳至儲存格 **B1**。
 
-7. 另一個<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項，名為`customerIDNamedRange`會建立在資料格中**B1**，並繫結至<xref:System.Windows.Forms.BindingSource>。
+7. 另一個名為的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項 `customerIDNamedRange` 是在資料格 **B1**中建立，並系結至 <xref:System.Windows.Forms.BindingSource> 。
 
-### <a name="to-add-four-buttons"></a>若要加入四個按鈕
+### <a name="to-add-four-buttons"></a>新增四個按鈕
 
-1. 從**通用控制項**索引標籤**工具箱**，加入<xref:System.Windows.Forms.Button>控制項加入儲存格**A3**工作表。
+1. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤，將 <xref:System.Windows.Forms.Button> 控制項加入工作表的儲存格**A3** 。
 
-    此欄位稱為`Button1`。
+    此按鈕的名稱為 `Button1` 。
 
-2. 將另外三個按鈕新增至 依此順序中，下列資料格，讓名稱所示：
+2. 依此順序將三個以上的按鈕新增至下列資料格，讓名稱如下所示：
 
    |資料格|(名稱)|
    |----------|--------------|
@@ -118,80 +118,80 @@ ms.locfileid: "62981058"
    |C3|Button3|
    |D3|Button4|
 
-   下一個步驟是將文字加入至按鈕，並在 C# 中，加入事件處理常式。
+   下一步是要在按鈕中加入文字，並在 c # 中加入事件處理常式。
 
-## <a name="initialize-the-controls"></a>初始化的控制項
- 設定按鈕文字，並新增事件處理常式期間<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>事件。
+## <a name="initialize-the-controls"></a>初始化控制項
+ 設定按鈕文字並在事件期間新增事件處理常式 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 。
 
-### <a name="to-initialize-the-controls"></a>若要初始化的控制項
+### <a name="to-initialize-the-controls"></a>若要初始化控制項
 
-1. 在**方案總管 中**，以滑鼠右鍵按一下**Sheet1.vb**或**Sheet1.cs**，然後按一下**檢視程式碼**快顯功能表。
+1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **Sheet1** ] 或 [ **Sheet1.cs**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
 
-2. 將下列程式碼加入`Sheet1_Startup`方法來設定每個按鈕的文字。
+2. 將下列程式碼加入至 `Sheet1_Startup` 方法，以設定每個按鈕的文字。
 
     [!code-csharp[Trin_VstcoreDataExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#2)]
     [!code-vb[Trin_VstcoreDataExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#2)]
 
-3. 僅適用 C#，加入事件處理常式按鈕按一下事件`Sheet1_Startup`方法。
+3. 針對 c #，請將按鈕 click 事件的事件處理常式加入至 `Sheet1_Startup` 方法。
 
     [!code-csharp[Trin_VstcoreDataExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#3)]
 
-   現在將新增程式碼來處理<xref:System.Windows.Forms.Control.Click>按鈕的事件，讓使用者可以瀏覽記錄。
+   現在，新增程式碼來處理 <xref:System.Windows.Forms.Control.Click> 按鈕的事件，讓使用者可以流覽記錄。
 
-## <a name="add-code-to-enable-scrolling-through-the-records"></a>加入程式碼來啟用捲動記錄
- 將程式碼加入<xref:System.Windows.Forms.Control.Click>記錄之間移動的每個按鈕事件處理常式。
+## <a name="add-code-to-enable-scrolling-through-the-records"></a>新增程式碼以啟用記錄的滾動
+ 將程式碼加入至 <xref:System.Windows.Forms.Control.Click> 每個按鈕的事件處理常式，以移動記錄。
 
-### <a name="to-move-to-the-first-record"></a>移至第一筆記錄
+### <a name="to-move-to-the-first-record"></a>移至第一個記錄
 
-1. 新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`Button1`按鈕，然後新增下列程式碼移至第一筆記錄：
+1. 新增按鈕事件的事件處理常式 <xref:System.Windows.Forms.Control.Click> `Button1` ，並加入下列程式碼以移至第一筆記錄：
 
      [!code-csharp[Trin_VstcoreDataExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#4)]
      [!code-vb[Trin_VstcoreDataExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#4)]
 
-### <a name="to-move-to-the-previous-record"></a>若要移到上一筆記錄
+### <a name="to-move-to-the-previous-record"></a>移至上一個記錄
 
-1. 新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`Button2`按鈕，然後新增下列程式碼，將位置移回一個：
+1. 新增按鈕事件的事件處理常式 <xref:System.Windows.Forms.Control.Click> `Button2` ，並加入下列程式碼，將位置向後移動一個：
 
      [!code-csharp[Trin_VstcoreDataExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreDataExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#5)]
 
-### <a name="to-move-to-the-next-record"></a>移至下一筆記錄
+### <a name="to-move-to-the-next-record"></a>移到下一筆記錄
 
-1. 新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`Button3`按鈕，然後新增下列程式碼位置前移一個：
+1. 新增按鈕事件的事件處理常式 <xref:System.Windows.Forms.Control.Click> `Button3` ，並加入下列程式碼以將位置前移一：
 
      [!code-csharp[Trin_VstcoreDataExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#6)]
      [!code-vb[Trin_VstcoreDataExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#6)]
 
-### <a name="to-move-to-the-last-record"></a>若要移動的最後一個記錄
+### <a name="to-move-to-the-last-record"></a>移至最後一筆記錄
 
-1. 新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`Button4`按鈕，然後新增下列程式碼移到最後的記錄：
+1. 新增按鈕事件的事件處理常式 <xref:System.Windows.Forms.Control.Click> `Button4` ，並加入下列程式碼以移至最後一筆記錄：
 
      [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]
 
 ## <a name="test-the-application"></a>測試應用程式
- 現在您可以測試您的活頁簿，藉此確定您可以瀏覽資料庫中的記錄。
+ 現在您可以測試您的活頁簿，以確定您可以流覽資料庫中的記錄。
 
 ### <a name="to-test-your-workbook"></a>測試您的活頁簿
 
-1. 按下**F5**執行您的專案。
+1. 按 **F5** 執行您的專案。
 
-2. 確認第一筆記錄出現在資料格中**A1**並**B1**。
+2. 確認第一個記錄出現在 **A1** 和 **B1**儲存格。
 
-3. 按一下  **>** (`Button3`) 按鈕，然後確認 下一筆記錄顯示在儲存格中**A1**並**B1**。
+3. 按一下 [ **>** (`Button3`) ] 按鈕，並確認下一個記錄出現在儲存格 **A1** 和 **B1**中。
 
-4. 按一下 其他捲軸按鈕，以確認記錄變更如預期般運作。
+4. 按一下 [其他] 滾動按鈕以確認記錄會如預期般變更。
 
 ## <a name="next-steps"></a>後續步驟
- 本逐步解說會示範繫結至資料庫中的欄位的已命名的範圍的基本概念。 接著可以執行下列一些工作：
+ 本逐步解說會示範將命名範圍系結至資料庫中之欄位的基本概念。 接著可以執行下列一些工作：
 
-- 快取的資料，以便可以離線使用。 如需詳細資訊，請參閱[如何：離線或在伺服器上快取資料以用於](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。
+- 快取資料，讓它可以離線使用。 如需詳細資訊，請參閱 [如何：快取資料供離線使用或在伺服器上使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。
 
-- 繫結至資料表中的多個資料行的資料格而不是至一個欄位。 如需詳細資訊，請參閱[逐步解說：在文件層級專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)。
+- 將資料格系結至資料表中的多個資料行，而不是一個欄位。 如需詳細資訊，請參閱 [逐步解說：檔層級專案中的複雜資料](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)系結。
 
-- 使用<xref:System.Windows.Forms.BindingNavigator>捲動記錄的控制項。 如需詳細資訊，請參閱[如何：使用 Windows Form BindingNavigator 控制項巡覽資料](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。
+- 使用 <xref:System.Windows.Forms.BindingNavigator> 控制項來流覽記錄。 如需詳細資訊，請參閱 [如何：使用 Windows Forms BindingNavigator 控制項來流覽資料](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。
 
 ## <a name="see-also"></a>另請參閱
-- [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)
-- [逐步解說：在文件層級專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
+- [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Office 方案中的資料](../vsto/data-in-office-solutions.md)
+- [逐步解說：檔層級專案中的複雜資料系結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)

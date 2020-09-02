@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 747f96a31ace1267512b9327a0d6aaaf07e02631
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545583"
 ---
 # <a name="debugging-applications"></a>對應用程式進行偵錯
@@ -28,7 +28,7 @@ ms.locfileid: "85545583"
   
 ## <a name="debugging-for-different-types-of-applications"></a>對不同類型的應用程式進行偵錯  
   
-|Title|描述|  
+|標題|描述|  
 |-|-|  
 |[對 Windows 市集及 Windows 通用應用程式進行偵錯](../debugger/debugging-windows-store-and-windows-universal-apps.md)|說明如何對 Windows 市集應用程式與 Windows 通用應用程式進行偵錯。|  
 |[偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)|說明如何對 Managed 程式碼 (Visual C#、Visual Basic 及 F3) 進行偵錯。|  

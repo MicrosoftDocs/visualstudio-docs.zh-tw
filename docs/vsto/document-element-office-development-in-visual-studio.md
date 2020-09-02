@@ -1,5 +1,5 @@
 ---
-title: '&lt;文件&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
+title: '&lt;檔 &gt; 元素 (Visual Studio) 的 Office 開發'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -17,14 +17,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 36d822d60d1a28d48f660f6d358b75bf4a913048
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63000034"
 ---
-# <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;文件&gt;元素 （在 Visual Studio 中的 Office 程式開發）
-  `document`項目`vstov4`命名空間會儲存文件層級自訂的自訂特定資訊。
+# <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;檔 &gt; 元素 (Visual Studio) 的 Office 開發
+  `document`命名空間的元素會 `vstov4` 儲存檔層級自訂的自訂特定資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -33,18 +33,18 @@ ms.locfileid: "63000034"
 ```
 
 ## <a name="elements-and-attributes"></a>元素和屬性
- 只有需要文件層級自訂。 `document` 元素位於 `vstov4` 命名空間。 `document` 項目具有下列屬性。
+ 只有檔層級自訂才需要。 `document` 元素位於 `vstov4` 命名空間。 `document` 項目具有下列屬性。
 
 |屬性|描述|
 |---------------|-----------------|
-|`solutionId`|必要項。 Visual Studio Tools for Office 執行階段用來唯一識別文件層級方案的 GUID。 這個值會儲存為 _AssemblyLocation 自訂文件屬性。 如需詳細資訊，請參閱 <<c0> [ 自訂文件屬性概觀](../vsto/custom-document-properties-overview.md)。|
+|`solutionId`|必要。 Visual Studio Tools for Office 執行時間用來唯一識別檔層級方案的 GUID。 此值會儲存為 _AssemblyLocation 自訂文件屬性。 如需詳細資訊，請參閱 [自訂文件屬性總覽](../vsto/custom-document-properties-overview.md)。|
 
  `document` 沒有任何子項目。
 
-## <a name="document-level-customization-example"></a>文件層級自訂範例
+## <a name="document-level-customization-example"></a>檔層級自訂範例
 
 ### <a name="description"></a>描述
- 下列程式碼範例說明`document`您可以使用部署之文件層級 Office 方案中的項目[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]。 此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。
+ 下列程式碼範例說明 `document` 使用部署之檔層級 Office 方案中的元素 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼
 

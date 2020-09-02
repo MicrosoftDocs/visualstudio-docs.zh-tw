@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63002342"
 ---
 # <a name="report-based-on-visible-time-range"></a>以可見時間範圍為基礎的報表
@@ -28,7 +28,7 @@ ms.locfileid: "63002342"
 - [沒有可顯示的執行緒活動](../profiling/no-thread-activity-to-show-threads-view.md)
 - [執行分析報表](../profiling/execution-profile-report.md)
 - [同步處理時間](../profiling/synchronization-time.md)
-- [I/O 時間 (執行緒檢視)](../profiling/i-o-time-threads-view.md)
+- [ (執行緒 View) 的 i/o 時間 ](../profiling/i-o-time-threads-view.md)
 - [睡眠時間](../profiling/sleep-time.md)
 - [記憶體管理時間](../profiling/memory-management-time.md)
 - [先佔時間](../profiling/preemption-time.md)

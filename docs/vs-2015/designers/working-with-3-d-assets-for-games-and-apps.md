@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e181500beefd32dffb9c0e8a7572a198cc9ff1f2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852187"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>使用 3D 資產來打造遊戲和應用程式
@@ -24,7 +24,7 @@ ms.locfileid: "75852187"
 本文件所描述的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 工具，可用來建立或修改 DirectX 遊戲和應用程式的 3D 模型、紋理和著色器。
 
 ## <a name="directx-app-development-in-visual-studio"></a>Visual Studio 中的 DirectX 應用程式開發
- DirectX 應用程式通常會結合程式設計邏輯、DirectX API 和高階著色語言 (HLSL) 程式，以及音訊和 3D 視覺效果資產，以呈現豐富的互動式多媒體體驗。[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 所包含的工具可用來使用影像和紋理、3D 模型以及著色器，而且不需要離開 IDE 就能使用另一個工具。 Visual Studio 工具特別適用於建立「預留位置」資產，而您可以先使用這些資產來測試程式碼或建置原型，再委任生產環境就緒的資產，以及當您偵錯您的應用程式時檢查和修改生產環境就緒的資產。
+ DirectX 應用程式通常會結合程式設計邏輯、DirectX API 和高階著色語言 (HLSL) 程式，以及音訊和 3D 視覺效果資產，以呈現豐富的互動式多媒體體驗。[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 所包含的工具可用來使用影像和紋理、3D 模型以及著色器，而且不需要離開 IDE 就能使用另一個工具。 Visual Studio 工具特別適用於建立「預留位置」** 資產，而您可以先使用這些資產來測試程式碼或建置原型，再委任生產環境就緒的資產，以及當您偵錯您的應用程式時檢查和修改生產環境就緒的資產。
 
  以下是有關可在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中使用之資產類型的詳細資訊。
 
@@ -34,7 +34,7 @@ ms.locfileid: "75852187"
  您可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 影像編輯器來處理許多常見類型和格式的影像和紋理。
 
 ### <a name="3-d-models"></a>立體模型
- 3D 模型會在遊戲和應用程式中建立空間和圖形。 模型最少會將 3D 空間點 (稱為「頂點」) 的位置與索引資料一起編碼，以定義代表模型圖形的線條或三角形。 其他資料可以與這些頂點建立關聯；例如，色彩資訊、標準向量或應用程式特定屬性。 每個模型也可以定義整個物件屬性；例如，使用哪一個著色器來計算物件介面的外觀，或要套用的紋理。
+ 3D 模型會在遊戲和應用程式中建立空間和圖形。 模型最少會將 3D 空間點 (稱為「頂點」**) 的位置與索引資料一起編碼，以定義代表模型圖形的線條或三角形。 其他資料可以與這些頂點建立關聯；例如，色彩資訊、標準向量或應用程式特定屬性。 每個模型也可以定義整個物件屬性；例如，使用哪一個著色器來計算物件介面的外觀，或要套用的紋理。
 
  您可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模型編輯器來處理數種常見格式的 3D 模型。
 
@@ -56,4 +56,4 @@ ms.locfileid: "75852187"
 |[使用紋理和影像](../designers/working-with-textures-and-images.md)|描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 來使用影像和紋理。|
 |[使用 3D 模型](../designers/working-with-3-d-models.md)|描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 來使用 3D 模型。|
 |[使用著色器](../designers/working-with-shaders.md)|描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 著色器設計工具來建立和修改自訂著色器效果。|
-|[在遊戲或應用程式中使用 3D 資產](../designers/using-3-d-assets-in-your-game-or-app.md)|描述如何在遊戲或應用程式中使用資產，而資產是使用影像編輯器、模型編輯器或著色器設計工具所建立。|
+|[在遊戲或應用程式中使用3D 資產](../designers/using-3-d-assets-in-your-game-or-app.md)|描述如何在遊戲或應用程式中使用資產，而資產是使用影像編輯器、模型編輯器或著色器設計工具所建立。|

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0f646dd6bfe93835d2d30280c7e57e7de2fbefa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190498"
 ---
-# <a name="idiastackframegetsize"></a>IDiaStackFrame::get_size
+# <a name="idiastackframeget_size"></a>IDiaStackFrame::get_size
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取堆疊框架，以位元組為單位的大小。  
+抓取堆疊框架的大小（以位元組為單位）。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,10 +35,10 @@ HRESULT get_size ( 
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回以位元組為單位的堆疊框架的大小。  
+ 擴展傳回堆疊框架的大小（以位元組為單位）。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援的屬性。 否則會傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援屬性，則傳回。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
