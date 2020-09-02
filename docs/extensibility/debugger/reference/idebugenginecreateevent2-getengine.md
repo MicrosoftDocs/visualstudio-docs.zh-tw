@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine創建事件2::獲取引擎 |微軟文件
+title: IDebugEngineCreateEvent2：： GetEngine |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 57e2eca3506bf965ca51b76c35d3e677ac21d80b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730610"
 ---
 # <a name="idebugenginecreateevent2getengine"></a>IDebugEngineCreateEvent2::GetEngine
-檢索表示新創建的調試引擎 (DE) 的物件。
+抓取物件，該物件表示新建立的 debug engine (DE) 。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ int GetEngine( 
 
 ## <a name="parameters"></a>參數
 `pEngine`\
-[出]返回表示新創建的 DE 的[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)物件。
+擴展傳回代表新建立之 DE 的 [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)

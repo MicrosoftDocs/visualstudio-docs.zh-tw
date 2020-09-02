@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_memorySpaceKind |Microsoft Docs
+title: IDiaSymbol：： get_memorySpaceKind |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 00368230bfadf322f0c98aceb18b575f1688a070
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154227"
 ---
-# <a name="idiasymbolgetmemoryspacekind"></a>IDiaSymbol::get_memorySpaceKind
+# <a name="idiasymbolget_memoryspacekind"></a>IDiaSymbol::get_memorySpaceKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取記憶體空間類型。  
+捕獲記憶體空間種類。  
   
 ## <a name="syntax"></a>語法  
   
@@ -32,10 +32,10 @@ HRESULT get_memorySpaceKind(
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]指標`DWORD`保存記憶體空間類型。  
+ 擴展 `DWORD` 保存記憶體空間種類之的指標。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

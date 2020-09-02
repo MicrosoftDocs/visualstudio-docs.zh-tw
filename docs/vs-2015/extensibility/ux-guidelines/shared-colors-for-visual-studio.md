@@ -9,13 +9,13 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 87520a7e17d194d7f5cc28665a6f23466bface65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154474"
 ---
-# <a name="shared-colors-for-visual-studio"></a>適用於 Visual Studio 的共用的色彩
+# <a name="shared-colors-for-visual-studio"></a>適用於 Visual Studio 的共用色彩
 
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
@@ -25,22 +25,22 @@ ms.locfileid: "68154474"
 
 請務必正確地使用語彙基元名稱：
 
-- **使用根據函式，不是色彩本身的語彙基元名稱。** 常見共用色彩是與特定介面項目相關聯，並且僅適用於相同或類似的功能。 例如，請不要只因為您喜歡微調進度動畫之已按下下拉式方塊的色彩，就重複使用該色彩。 下拉式方塊和動畫的功能不同，而且，如果與下拉式方塊相關聯的色彩變更，則可能不再是動畫項目的適當色彩。 一致地使用色彩可協助引導您的使用者並避免混淆。
+- **根據函式來使用語彙基元名稱，而不是色彩本身。** 常見共用色彩是與特定介面項目相關聯，並且僅適用於相同或類似的功能。 例如，請不要只因為您喜歡微調進度動畫之已按下下拉式方塊的色彩，就重複使用該色彩。 下拉式方塊和動畫的功能不同，而且，如果與下拉式方塊相關聯的色彩變更，則可能不再是動畫項目的適當色彩。 一致地使用色彩可協助引導您的使用者並避免混淆。
 
 - **以正確的組合來使用背景和文字色彩。** 要與文字搭配使用的背景色彩將有相關聯的文字色彩。 務必使用背景所指定的文字色彩。 如果沒有相關聯的文字色彩，請不要將該背景色彩用於您希望顯示文字的任何介面。 用其他方式組合文字和背景色彩可能會導致介面無法讀取。
 
 - **使用其位置適用的控制項色彩。** 在特定狀態中，部分 Visual Studio 控制項沒有個別框線和背景色彩。 而是會選取其後介面的色彩。 務必根據控制項所放置的位置，而為其使用適合的語彙基元名稱。
 
 > [!IMPORTANT]
-> 請勿使用 「 起始頁 」 或"Cider"。 類別目錄中的權杖
+> 請勿使用在「起始頁」或「Cider」類別中找到的權杖。
 
 ## <a name="command-structures"></a>命令結構
 
-### <a name="BKMK_CommandMenus"></a> 功能表
+### <a name="menus"></a><a name="BKMK_CommandMenus"></a> 功能表
 
-功能表可能會發生在 Visual Studio 的數個位置： 主要功能表列、 內嵌在文件或工具視窗中，或以滑鼠右鍵按一下 IDE 各位置上。 針對個別項目的一節中會討論與其他 UI 項目相關聯之功能表的實作。 您應該一律使用 Visual Studio 環境所提供的標準功能表實作。 不過，在一些罕見情況下，您可能無法存取標準 Visual Studio 功能表。 在這些情況下，請使用下列語彙基元名稱，確保您的 UI 與 Visual Studio 中的其他功能表一致。
+功能表可以出現在 Visual Studio 中的數個位置：主功能表列、內嵌于檔或工具視窗中，或在整個 IDE 的不同位置以滑鼠右鍵按一下。 針對個別項目的一節中會討論與其他 UI 項目相關聯之功能表的實作。 您應該一律使用 Visual Studio 環境所提供的標準功能表實作。 不過，在一些罕見情況下，您可能無法存取標準 Visual Studio 功能表。 在這些情況下，請使用下列語彙基元名稱，確保您的 UI 與 Visual Studio 中的其他功能表一致。
 
-![功能表紅線](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303年 000_MenuRedline")
+![功能表紅線](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303-000_MenuRedline")
 
 請使用於…
 - 任何需要建立自訂功能表的時機。
@@ -54,7 +54,7 @@ ms.locfileid: "68154474"
 
 功能表標題包含背景、框線和標題文字，以及選用字符 (通常是在命令列中找到功能表時)。
 
-![功能表標題紅線](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303年 001_MenuTitleRedline")
+![功能表標題紅線](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303-001_MenuTitleRedline")
 
 請使用於…
 任何需要建立自訂功能表標題的時機。
@@ -64,27 +64,27 @@ ms.locfileid: "68154474"
 
 - 任何非指定的背景/前景組合。
 
-  **Default**
+  **預設值**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![功能表標題預設值](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303年 002_MenuTitleDefault")
+  ![功能表標題預設值](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303-002_MenuTitleDefault")
 
   **功能表標題**
 
   背景
 
-  None
+  無
 
   前景 (文字)
 
   `Environment.CommandBarTextActive`
 
-  ![使用字符預設值的功能表標題](../../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303年 003_MenuTitleWithGlyphDefault")
+  ![使用字符的功能表標題預設值](../../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")
 
   **使用字符的功能表標題**
 
@@ -92,19 +92,19 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarMenuGlyph`
 
-  Border
+  框線
 
   無
 
-  **將滑鼠停留**
+  **暫留**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![暫留時顯示的功能表標題](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303年 004_MenuTitleHover")
+  ![停留時顯示功能表標題](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303-004_MenuTitleHover")
 
   **功能表標題**
 
@@ -118,7 +118,7 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarTextHover`
 
-  ![使用暫留時的字符的功能表標題](../../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303年 005_MenuTitleWithGlyphHover")
+  ![停留時顯示使用字符的功能表標題](../../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303-005_MenuTitleWithGlyphHover")
 
   **使用字符的功能表標題**
 
@@ -126,19 +126,19 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarMenuMouseOverGlyph`
 
-  Border
+  框線
 
   `Environment.CommandBarBorder`
 
-  **按下**
+  **Pressed**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![按下功能表標題](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303年 006_MenuTitlePressed")
+  ![已按下功能表標題](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303-006_MenuTitlePressed")
 
   **功能表標題**
 
@@ -152,7 +152,7 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarTextActive`
 
-  ![使用已按下的字符的功能表標題](../../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303年 007_MenuTitleWithGlyphPressed")
+  ![已按下使用字符的功能表標題](../../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303-007_MenuTitleWithGlyphPressed")
 
   **使用字符的功能表標題**
 
@@ -160,7 +160,7 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarMenuMouseDownGlyph`
 
-  Border
+  框線
 
   `Environment.CommandBarMenuBorder`
 
@@ -172,9 +172,9 @@ ms.locfileid: "68154474"
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![使用停用的字符的功能表標題](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303年 008_MenuTitleWithGlyphDisabled")
+  ![已停用使用字符的功能表標題](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")
 
   **使用字符的功能表標題**
 
@@ -190,7 +190,7 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarTextInactive`
 
-  Border
+  框線
 
   無
 
@@ -198,7 +198,7 @@ ms.locfileid: "68154474"
 
 個別功能表項目包含功能表文字和選用圖示、核取方塊或子功能表字符。 其背景和文字色彩會在滑鼠游標暫留時變更。 這個色彩語彙基元是背景/前景配對。
 
-![功能表項目紅線](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303年 009_MenuItemRedline")
+![功能表項目紅線](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303-009_MenuItemRedline")
 
 請使用於…
 任何從功能表列或命令列啟動的下拉式清單。
@@ -208,17 +208,17 @@ ms.locfileid: "68154474"
 
 - 任何非指定的背景/前景組合。
 
-  **Default**
+  **預設值**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![功能表預設值](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303年 010_MenuDefault")
+  ![功能表預設值](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")
 
-  **Menu**
+  **功能表**
 
   背景
 
@@ -234,7 +234,7 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarMenuSubmenuGlyph`
 
-  Border
+  框線
 
   `Environment.CommandBarMenuBorder`
 
@@ -250,9 +250,9 @@ ms.locfileid: "68154474"
 
   `Environment.DropShadowBackground`
 
-  ![已核取功能表](../../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303年 011_MenuChecked")
+  ![已核取功能表](../../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")
 
-  **已核取**
+  **檢查**
 
   核取標記
 
@@ -262,9 +262,9 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarSelectedIcon`
 
-  ![選取 [功能表]](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303年 012_MenuSelected")
+  ![已選取功能表](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")
 
-  **選取**
+  **Selected**
 
   圖示背景
 
@@ -274,15 +274,15 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarSelectedBorder`
 
-  **將滑鼠停留**
+  **暫留**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![功能表動態顯示](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303年 013_MenuHover")
+  ![功能表動態顯示](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")
 
   **功能表項目**
 
@@ -298,9 +298,9 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarMenuMouseOverSubmenuGlyph`
 
-  ![核取功能表動態顯示](../../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303年 014_MenuHoverChecked")
+  ![已核取功能表動態顯示](../../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")
 
-  **已核取**
+  **檢查**
 
   核取標記
 
@@ -310,9 +310,9 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarHoverOverSelectedIcon`
 
-  ![已選取功能表動態顯示](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303年 015_MenuHoverSelected")
+  ![已選取功能表動態顯示](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")
 
-  **選取**
+  **Selected**
 
   圖示背景
 
@@ -328,11 +328,11 @@ ms.locfileid: "68154474"
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![已停用功能表](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303年 016_MenuDisabled")
+  ![已停用功能表](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")
 
-  Menu item
+  功能表項目
 
   前景 (文字)
 
@@ -342,7 +342,7 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarMenuSubmenuGlyph`
 
-  ![停用的功能表已核取](../../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303年 017_MenuDisabledChecked")
+  ![已核取停用的功能表](../../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")
 
   已核取
 
@@ -360,9 +360,9 @@ ms.locfileid: "68154474"
 
 一般情況下，請一律使用 Visual Studio 環境所提供的標準命令列實作。 使用標準機制可確保正確地顯示所有視覺化詳細資料，而且互動式項目的行為會與其他 Visual Studio 命令列控制項一致。 不過，如果您需要建置專屬的命令列，請確定您使用下列語彙基元名稱正確地設定樣式。
 
-![命令列紅線](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303年 018_CommandBarRedline")
+![命令列紅線](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303-018_CommandBarRedline")
 
-![溢位按鈕紅線](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303年 019_OverflowButtonRedline")
+![溢位按鈕紅線](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303-019_OverflowButtonRedline")
 
 請使用於…
 任何需要內嵌命令列，但無法使用標準 Visual Studio 命令列實作的位置。
@@ -376,7 +376,7 @@ ms.locfileid: "68154474"
 
 命令列群組包含一組相關的命令列控制項，而且可能包含任意數目的按鈕，分割按鈕、下拉式功能表、下拉式方塊或功能表。 這些控制項的色彩受到個別的語彙基元名稱所規範，並且會在本指南的其他位置個別討論。 分隔線用來將命令列群組分成相關的子群組。
 
-![命令列群組紅線](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303年 020_CommandBarGroupRedline")
+![命令列群組紅線](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303-020_CommandBarGroupRedline")
 
 請使用於…
 任何需要內嵌命令列，但無法使用標準 Visual Studio 命令列實作的位置。
@@ -386,11 +386,11 @@ ms.locfileid: "68154474"
 
 - 不屬於語彙基元名稱所指定的命令列元件。
 
-  **預設值** (沒有其他狀態)
+  **預設** (沒有其他狀態) 
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
   背景
 
@@ -398,7 +398,7 @@ ms.locfileid: "68154474"
 
   雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。
 
-  Border
+  框線
 
   `Environment.CommandBarToolBarBorder`
 
@@ -414,9 +414,9 @@ ms.locfileid: "68154474"
 
 #### <a name="command-icons"></a>命令圖示
 
-![命令圖示紅線](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303年 021_CommandIconRedline1")
+![命令圖示紅線](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303-021_CommandIconRedline1")
 
-![命令圖示紅線](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303年 022_CommandIconRedline2")
+![命令圖示紅線](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303-022_CommandIconRedline2")
 
 請使用於…
 任何將放在命令列上的按鈕。
@@ -426,17 +426,17 @@ ms.locfileid: "68154474"
 
 - 任何非指定的背景/前景組合。
 
-  **Default**
+  **預設值**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![命令圖示預設值](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303年 023_CommandIconDefault")
+  ![命令圖示預設值](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")
 
-  **Default**
+  **預設值**
 
   背景
 
@@ -446,13 +446,13 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarTextActive`
 
-  Border
+  框線
 
   N/A
 
-  ![命令圖示預設的已選取](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303年 024_CommandIconDefaultSelected")
+  ![已選取命令圖示預設值](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")
 
-  **選取**
+  **Selected**
 
   背景
 
@@ -462,7 +462,7 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarTextSelected`
 
-  Border
+  框線
 
   `Environment.CommandBarSelectedBorder`
 
@@ -472,11 +472,11 @@ ms.locfileid: "68154474"
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![命令圖示動態顯示](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303年 025_CommandIconHover")
+  ![命令圖示動態顯示](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303-025_CommandIconHover")
 
-  **暫留時的標準**
+  **暫留時的標準項目**
 
   背景
 
@@ -488,13 +488,13 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarTextHover`
 
-  Border
+  框線
 
   `Environment.CommandBarBorder`
 
-  ![命令圖示動態顯示選取](../../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303年 026_CommandIconHoverSelected")
+  ![已選取命令圖示動態顯示](../../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303-026_CommandIconHoverSelected")
 
-  **選取暫留時顯示**
+  **暫留時的選取項目**
 
   背景
 
@@ -504,19 +504,19 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarTextHoverOverSelected`
 
-  Border
+  框線
 
   `Environment.CommandBarHoverOverSelectedIconBorder`
 
-  **按下**
+  **Pressed**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![按下命令圖示](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303年 027_CommandIconPressed")
+  ![已按下命令圖示](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")
 
   **已按下的命令圖示**
 
@@ -530,7 +530,7 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarTextMouseDown`
 
-  Border
+  框線
 
   `Environment.CommandBarBorder`
 
@@ -540,9 +540,9 @@ ms.locfileid: "68154474"
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![停用的命令圖示](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303年 028_CommandIconDisabled")
+  ![已停用命令圖示](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")
 
   **已停用的命令圖示**
 
@@ -554,16 +554,16 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarTextInactive`
 
-  Border
+  框線
 
   N/A
 
-#### <a name="BKMK_CommandComboBox"></a> 下拉式方塊
+#### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a> 下拉式方塊
 
 > [!IMPORTANT]
 > 下拉式方塊與下拉式清單類似，但包括可編輯的文字區域。 如果下拉式清單未包括可編輯的文字區域，請使用 [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)下找到的色彩語彙基元。
 
-![下拉式方塊紅線](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303年 029_ComboBoxRedline")
+![下拉式方塊紅線](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")
 
 請使用於…
 - 建置自訂下拉式方塊時。
@@ -575,17 +575,17 @@ ms.locfileid: "68154474"
 
 - 您能存取已設定樣式的下拉式方塊時。
 
-  **Default**
+  **預設值**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![下拉式方塊輸入的欄位](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303年 030_ComboBoxInputField")
+  ![下拉式方塊輸入欄位](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")
 
-  **輸入的欄位**
+  **輸入欄位**
 
   背景
 
@@ -595,7 +595,7 @@ ms.locfileid: "68154474"
 
   `Environment.ComboBoxText`
 
-  Border
+  框線
 
   `Environment.ComboBoxBorder`
 
@@ -603,7 +603,7 @@ ms.locfileid: "68154474"
 
   沒有分隔符號
 
-  ![下拉式方塊&#45;向下按鈕](../../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303年 031_ComboBoxDropdownButton")
+  ![下拉式方塊下拉&#45;向下按鈕](../../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")
 
   **下拉式按鈕**
 
@@ -615,7 +615,7 @@ ms.locfileid: "68154474"
 
   `Environment.ComboBoxGlyph`
 
-  ![下拉式方塊&#47;drop&#45;下拉式清單](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303年 032_ComboBoxDropdownList")
+  ![下拉式方塊&#47;下拉清單&#45;](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")
 
   **下拉式清單**
 
@@ -629,21 +629,21 @@ ms.locfileid: "68154474"
 
   `Environment.ComboBoxItemText`
 
-  Border
+  框線
 
   `Environment.ComboBoxPopupBorder`
 
-  **將滑鼠停留**
+  **暫留**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![暫留時顯示下拉式方塊輸入的欄位](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303年 033_ComboBoxInputFieldHover")
+  ![停留時顯示下拉式方塊輸入欄位](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")
 
-  **輸入的欄位**
+  **輸入欄位**
 
   背景
 
@@ -655,7 +655,7 @@ ms.locfileid: "68154474"
 
   `Environment.ComboBoxMouseOverText`
 
-  Border
+  框線
 
   `Environment.ComboBoxMouseOverBorder`
 
@@ -663,7 +663,7 @@ ms.locfileid: "68154474"
 
   `Environment.ComboBoxMouseOverSeparator`
 
-  ![下拉式方塊&#47;drop&#45;向下按鈕，停留](../../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303年 034_ComboBoxDropdownButtonHover")
+  ![下拉式方塊&#47;停留時下拉&#45;向下按鈕](../../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")
 
   **下拉式按鈕**
 
@@ -675,7 +675,7 @@ ms.locfileid: "68154474"
 
   `Environment.ComboBoxMouseOverGlyph`
 
-  ![下拉式方塊&#47;drop&#45;下拉式清單上暫留](../../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303年 035_ComboBoxDropdownListHover")
+  ![下拉式方塊&#47;停留時下拉&#45;清單](../../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")
 
   **下拉式清單**
 
@@ -691,17 +691,17 @@ ms.locfileid: "68154474"
 
   `Environment.ComboBoxItemMouseOverBorder`
 
-  **已取得焦點**
+  **Focused**
 
   元件
 
   項目
 
-  權杖名稱：Color.category
+  語彙基元名稱：Color.category
 
-  ![下拉式方塊輸入的欄位已取得焦點](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303年 036_ComboBoxInputFieldFocused")
+  ![下拉式方塊輸入欄位已取得焦點](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")
 
-  **輸入的欄位**
+  **輸入欄位**
 
   背景
 
@@ -711,7 +711,7 @@ ms.locfileid: "68154474"
 
   `Environment.ComboBoxFocusedText`
 
-  Border
+  框線
 
   `Environment.ComboBoxFocusedBorder`
 
@@ -719,7 +719,7 @@ ms.locfileid: "68154474"
 
   `Environment.ComboBoxFocusedButtonSeparator`
 
-  ![下拉式方塊&#47;drop&#45;向下按鈕已取得焦點](../../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303年 037_ComboBoxDropdownButtonFocused")
+  ![下拉式方塊&#47;將焦點&#45;向下按鈕](../../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")
 
   **下拉式按鈕**
 
@@ -731,17 +731,17 @@ ms.locfileid: "68154474"
 
   `Environment.ComboBoxFocusedGlyph`
 
-  **按下**
+  **Pressed**
 
   元件
 
   項目
 
-  權杖名稱：Color.category
+  語彙基元名稱：Color.category
 
-  ![按下下拉式方塊輸入的欄位](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303年 038_ComboBoxInputFieldPressed")
+  ![已按下下拉式方塊輸入欄位](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")
 
-  **輸入的欄位**
+  **輸入欄位**
 
   背景
 
@@ -751,7 +751,7 @@ ms.locfileid: "68154474"
 
   `Environment.ComboBoxMouseDownText`
 
-  Border
+  框線
 
   `Environment.ComboBoxMouseDownBorder`
 
@@ -759,7 +759,7 @@ ms.locfileid: "68154474"
 
   `Environment.ComboBoxMouseDownSeparator`
 
-  ![下拉式方塊&#47;drop&#45;向下按鈕按下](../../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303年 039_ComboBoxDropdownButtonPressed")
+  ![下拉式方塊&#47;按下&#45;向下按鈕](../../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")
 
   **下拉式按鈕**
 
@@ -773,9 +773,9 @@ ms.locfileid: "68154474"
 
   **已停用**
 
-  ![停用下拉式方塊輸入的欄位](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303年 041_ComboBoxInputFieldDisabled")
+  ![已停用下拉式方塊輸入欄位](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")
 
-  **輸入的欄位**
+  **輸入欄位**
 
   背景
 
@@ -785,7 +785,7 @@ ms.locfileid: "68154474"
 
   `Environment.ComboBoxDisabledText`
 
-  Border
+  框線
 
   `Environment.ComboBoxDisabledBorder`
 
@@ -793,24 +793,24 @@ ms.locfileid: "68154474"
 
   沒有分隔符號
 
-  ![下拉式方塊&#47;drop&#45;向下按鈕已停用](../../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303年 040_ComboBoxDropdownButtonDisabled")
+  ![下拉式方塊&#47;下拉&#45;向下按鈕已停用](../../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")
 
   **下拉式按鈕**
 
   背景
 
-  None
+  無
 
   前景 (字符)
 
   `Environment.ComboBoxDisabledGlyph`
 
-#### <a name="BKMK_CommandDropDown"></a> 下拉式清單
+#### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a> 下拉式清單
 
 > [!IMPORTANT]
 > 下拉式清單與下拉式方塊類似，但沒有可編輯的文字區域。 如果下拉式清單包括可編輯的文字區域，請使用 [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)下找到的色彩語彙基元。
 
-![卸除&#45;向下紅線](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303年 042_DropdownRedline")
+![捨棄&#45;紅線](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")
 
 請使用於…
 建立自訂下拉式清單控制項時。
@@ -820,17 +820,17 @@ ms.locfileid: "68154474"
 
 - 下拉式方塊或分割按鈕。
 
-  **Default**
+  **預設值**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![卸除&#45;下選取項目欄位](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303年 043_DropdownSelectionField")
+  ![下拉&#45;向下選取欄位](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")
 
-  **選取項目欄位**
+  **選取欄位**
 
   背景
 
@@ -840,7 +840,7 @@ ms.locfileid: "68154474"
 
   `DropDownText`
 
-  Border
+  框線
 
   `DropDownBorder`
 
@@ -848,19 +848,19 @@ ms.locfileid: "68154474"
 
   沒有分隔符號
 
-  ![卸除&#45;向下按鈕](../../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303年 044_DropdownButton")
+  ![下拉&#45;向下按鈕](../../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")
 
   **下拉式按鈕**
 
   背景
 
-  None
+  無
 
   前景 (字符)
 
   `Environment.DropDownGlyph`
 
-  ![卸除&#45;下拉式清單](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303年 045_DropdownList")
+  ![下拉清單&#45;](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")
 
   **下拉式清單**
 
@@ -874,7 +874,7 @@ ms.locfileid: "68154474"
 
   `Environment.ComboBoxItemText`
 
-  Border
+  框線
 
   `Environment.DropDownPopupBorder`
 
@@ -882,17 +882,17 @@ ms.locfileid: "68154474"
 
   `Environment.DropShadowBackground`
 
-  **將滑鼠停留**
+  **暫留**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![卸除&#45;下暫留時的選取項目欄位](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303年 046_DropdownSelectionFieldHover")
+  ![停留時卸載&#45;向下選取欄位](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")
 
-  **選取項目欄位**
+  **選取欄位**
 
   背景
 
@@ -904,7 +904,7 @@ ms.locfileid: "68154474"
 
   `Environment.DropDownMouseOverText`
 
-  Border
+  框線
 
   `Environment.DropDownMouseOverBorder`
 
@@ -912,7 +912,7 @@ ms.locfileid: "68154474"
 
   `Environment.DropDownButtonMouseOverSeparator`
 
-  ![卸除&#45;向下按鈕，停留](../../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303年 047_DropdownButtonHover")
+  ![停留時下拉&#45;向下按鈕](../../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303-047_DropdownButtonHover")
 
   **下拉式按鈕**
 
@@ -924,7 +924,7 @@ ms.locfileid: "68154474"
 
   `Environment.DropDownMouseOverGlyph`
 
-  ![卸除&#45;暫留時顯示的清單中向下](../../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303年 048_DropdownListHover")
+  ![停留時放置&#45;向下清單](../../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")
 
   **下拉式清單**
 
@@ -940,17 +940,17 @@ ms.locfileid: "68154474"
 
   `Environment.ComboBoxItemMouseOverBorder`
 
-  **按下**
+  **Pressed**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![卸除&#45;下按下的選取項目欄位](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303年 049_DropdownSelectionFieldPressed")
+  ![下拉&#45;按下選取欄位](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")
 
-  **選取項目欄位**
+  **選取欄位**
 
   背景
 
@@ -960,7 +960,7 @@ ms.locfileid: "68154474"
 
   `Environment.DropDownMouseDownText`
 
-  Border
+  框線
 
   `Environment.DropDownMouseDownBorder`
 
@@ -968,7 +968,7 @@ ms.locfileid: "68154474"
 
   `Environment.DropDownButtonMouseDownSeparator`
 
-  ![卸除&#45;向下按鈕按下](../../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303年 050_DropdownButtonPressed")
+  ![下拉&#45;按下按鈕](../../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")
 
   **下拉式按鈕**
 
@@ -986,9 +986,9 @@ ms.locfileid: "68154474"
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![卸除&#45;下已停用的選取項目欄位](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303年 051_DropdownSelectionFieldDisabled")
+  ![捨棄&#45;向下選取欄位已停用](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")
 
   背景
 
@@ -998,7 +998,7 @@ ms.locfileid: "68154474"
 
   `Environment.DropDownDisabledText`
 
-  Border
+  框線
 
   `Environment.DropDownDisabledBorder`
 
@@ -1006,7 +1006,7 @@ ms.locfileid: "68154474"
 
   沒有分隔符號
 
-  ![卸除&#45;向下按鈕已停用](../../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303年 052_DropdownButtonDisabled")
+  ![已停用下拉&#45;向下按鈕](../../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")
 
   背景
 
@@ -1020,7 +1020,7 @@ ms.locfileid: "68154474"
 
 分割按鈕會與其他命令列控制項 (例如按鈕、 功能表和命令列文字) 共用許多語彙基元名稱。 基於使用方便，會在這裡重複所有必要的動作和下拉式按鈕語彙基元名稱。 分割按鈕下拉式清單是命令列 [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)的實作。
 
-![分割按鈕紅線](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303年 053_SplitButtonRedline")
+![分割按鈕紅線](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303-053_SplitButtonRedline")
 
 請使用於…
 建置自訂分割按鈕時。
@@ -1030,21 +1030,21 @@ ms.locfileid: "68154474"
 
 - 任何非指定的背景/前景組合。
 
-  **Default**
+  **預設值**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![分割按鈕](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303年 054_SplitButton")
+  ![分割按鈕](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")
 
-  **分割按鈕 （預設值）**
+  **分割按鈕 (預設)**
 
   背景
 
-  None
+  無
 
   前景 (文字)
 
@@ -1054,7 +1054,7 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarSplitButtonGlyph`
 
-  Border
+  框線
 
   N/A
 
@@ -1062,17 +1062,17 @@ ms.locfileid: "68154474"
 
   N/A
 
-  **將滑鼠停留**
+  **暫留**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![分割按鈕，停留](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303年 055_SplitButtonHover")
+  ![停留時顯示分割按鈕](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")
 
-  **分割按鈕 （暫留）**
+  **分割按鈕 (暫留時)**
 
   背景
 
@@ -1088,7 +1088,7 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarSplitButtonMouseOverGlyph`
 
-  Border
+  框線
 
   `Environment.CommandBarBorder`
 
@@ -1096,17 +1096,17 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarSplitButtonSeparator`
 
-  **按下**
+  **Pressed**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![按下的 [分割] 按鈕](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303年 056_SplitButtonPressed")
+  ![已按下分割按鈕](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")
 
-  **（按下） 的 [分割] 按鈕**
+  **分割按鈕 (已按下)**
 
   背景
 
@@ -1122,7 +1122,7 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarSplitButtonMouseDownGlyph`
 
-  Border
+  框線
 
   `Environment.CommandBarBorder`
 
@@ -1136,11 +1136,11 @@ ms.locfileid: "68154474"
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![已停用分割按鈕](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303年 057_SplitButtonDisabled")
+  ![分割按鈕已停用](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")
 
-  **分割按鈕 （停用）**
+  **分割按鈕 (已停用)**
 
   背景
 
@@ -1154,7 +1154,7 @@ ms.locfileid: "68154474"
 
   `Environment.CommandBarTextInactive`
 
-  Border
+  框線
 
   N/A
 
@@ -1165,7 +1165,7 @@ ms.locfileid: "68154474"
 #### <a name="more-options-and-overflow-buttons"></a>[其他選項] 和 [溢位] 按鈕
  可透過加入或移除相關命令列按鈕來自訂命令列群組時，會使用 [其他選項] 按鈕。 如果因水平空間不足而截斷命令列，以及按一下時顯示包含無法顯示之命令列按鈕的功能表，則會出現 [溢位] 按鈕。 這兩個按鈕的色彩是透過同一組語彙基元名稱所控制。
 
- ![更多選項紅線](../../extensibility/ux-guidelines/media/0303-058-moreoptionsredline.png "0303年 058_MoreOptionsRedline")
+ ![更多選項紅線](../../extensibility/ux-guidelines/media/0303-058-moreoptionsredline.png "0303-058_MoreOptionsRedline")
 
  請使用於…
 針對自訂 [其他選項] 或 [溢位] 按鈕。
@@ -1173,21 +1173,21 @@ ms.locfileid: "68154474"
  請勿使用於…
 針對沒有與 [其他選項] 或 [溢位] 按鈕類似之功能的按鈕。
 
- **Default**
+ **預設值**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![更多選項](../../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303年 059_MoreOptions")
+ ![更多選項](../../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")
 
  **更多選項**
 
- ![溢位按鈕](../../extensibility/ux-guidelines/media/0303-060-overflow.png "0303年 060_Overflow")
+ ![溢位按鈕](../../extensibility/ux-guidelines/media/0303-060-overflow.png "0303-060_Overflow")
 
- **溢位**
+ **溢出**
 
  背景
 
@@ -1197,21 +1197,21 @@ ms.locfileid: "68154474"
 
  `Environment.CommandBarOptionsGlyph`
 
- **將滑鼠停留**
+ **暫留**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![暫留時的更多選項](../../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303年 061_MoreOptionsHover")
+ ![停留時顯示更多選項](../../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")
 
  **更多選項**
 
- ![暫留時顯示溢位](../../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303年 062_OverflowOptions")
+ ![停留時顯示溢位](../../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")
 
- **溢位**
+ **溢出**
 
  背景
 
@@ -1223,21 +1223,21 @@ ms.locfileid: "68154474"
 
  `Environment.CommandBarOptionsMouseDownGlyph`
 
- **按下**
+ **Pressed**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![更多選項按下](../../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303年 063_MoreOptionsPressed")
+ ![已按下更多選項](../../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")
 
  **更多選項**
 
- ![按下溢位](../../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303年 064_OverflowPressed")
+ ![已按下溢位](../../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")
 
- **溢位**
+ **溢出**
 
  背景
 
@@ -1257,11 +1257,11 @@ ms.locfileid: "68154474"
 ### <a name="document-window-frame"></a>文件視窗框架
  文件視窗可以停駐在 IDE 中或浮動為不同的視窗。 文件視窗在 IDE 外部浮動時，還是停留在文件區域中，並且具有為 IDE 一部分時的相同背景、框線、文字和索引標籤色彩。 不過，文件位在具有其專屬背景、框線和文字色彩的框架內。 工具視窗停駐在文件區域時，會從文件視窗語彙基元名稱繼承其索引標籤的行為和色彩。
 
- ![停駐文件視窗紅線](../../extensibility/ux-guidelines/media/0303-065-dockeddocumentwindowredline.png "0303年 065_DockedDocumentWindowRedline")
+ ![停駐文件視窗紅線](../../extensibility/ux-guidelines/media/0303-065-dockeddocumentwindowredline.png "0303-065_DockedDocumentWindowRedline")
 
  **停駐文件視窗**
 
- ![浮動文件視窗紅線](../../extensibility/ux-guidelines/media/0303-066-floatingdocumentwindowredline.png "0303年 066_FloatingDocumentWindowRedline")
+ ![浮動文件視窗紅線](../../extensibility/ux-guidelines/media/0303-066-floatingdocumentwindowredline.png "0303-066_FloatingDocumentWindowRedline")
 
  **浮動文件視窗**
 
@@ -1271,13 +1271,13 @@ ms.locfileid: "68154474"
  請勿使用於…
 針對您不想在 Shell 具有佈景主題更新時自動變更的任何 UI。
 
- **Default**
+ **預設值**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
  文件：停駐或浮動
 
@@ -1289,13 +1289,13 @@ ms.locfileid: "68154474"
 
  根據文件類型
 
- Border
+ 框線
 
  `Environment.ToolWindowBorder`
 
- ![框架已取得焦點](../../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303年 067_FrameFocused")
+ ![框架已取得焦點](../../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303-067_FrameFocused")
 
- **框架： 浮動，已取得焦點**
+ **框架：浮動，已取得焦點**
 
  背景
 
@@ -1309,7 +1309,7 @@ ms.locfileid: "68154474"
 
  `Environment.RaftedWindowButtonActiveGlyph`
 
- Border
+ 框線
 
  `Environment.MainWindowActiveDefaultBorder`
 
@@ -1319,9 +1319,9 @@ ms.locfileid: "68154474"
 
  設定為透明
 
- ![未取得焦點的框架](../../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303年 068_FrameUnfocused")
+ ![框架未取得焦點](../../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303-068_FrameUnfocused")
 
- **框架： 浮動，未取得焦點**
+ **框架：浮動，未取得焦點**
 
  背景
 
@@ -1335,7 +1335,7 @@ ms.locfileid: "68154474"
 
  `Environment.RaftedWindowButtonInactiveGlyph`
 
- Border
+ 框線
 
  `Environment.MainWindowInactiveBorder`
 
@@ -1345,17 +1345,17 @@ ms.locfileid: "68154474"
 
  設定為透明
 
- **將滑鼠停留**
+ **暫留**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![暫留時顯示取得焦點的框架](../../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303年 069_FrameFocusedHover")
+ ![停留時顯示取得焦點的框架](../../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303-069_FrameFocusedHover")
 
- **框架： 浮動，已取得焦點**
+ **框架：浮動，已取得焦點**
 
  背景 (字符)
 
@@ -1369,9 +1369,9 @@ ms.locfileid: "68154474"
 
  `Environment.RaftedWindowButtonHoverActiveBorder`
 
- ![框架未取得焦點停留](../../extensibility/ux-guidelines/media/0303-070-frameunfocusedhover.png "0303年 070_FrameUnfocusedHover")
+ ![停留時顯示未取得焦點的框架](../../extensibility/ux-guidelines/media/0303-070-frameunfocusedhover.png "0303-070_FrameUnfocusedHover")
 
- **框架： 浮動，未取得焦點**
+ **框架：浮動，未取得焦點**
 
  背景 (字符)
 
@@ -1385,17 +1385,17 @@ ms.locfileid: "68154474"
 
  `Environment.RaftedWindowButtonHoverInactiveBorder`
 
- **按下**
+ **Pressed**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![取得焦點的框架已按下](../../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303年 071_FrameFocusedPressed")
+ ![已按下取得焦點的框架](../../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303-071_FrameFocusedPressed")
 
- **框架： 浮動，已取得焦點**
+ **框架：浮動，已取得焦點**
 
  背景 (字符)
 
@@ -1412,7 +1412,7 @@ ms.locfileid: "68154474"
 ### <a name="document-tabs"></a>文件索引標籤
  文件索引標籤位在索引標籤通道中，表示目前開啟的文件以及目前選取的文件或使用中文件。 工具視窗也可以停駐在文件索引標籤通道中 (如果使用者將它們放在那裏)。 在此情況下，他們會使用與文件視窗相同的索引標籤色彩。 如果所建立的 UI 要一律符合文件視窗色彩 (包括佈景主題更新，或已安裝新的佈景主題時)，則請參考這些色彩語彙基元。
 
- ![文件索引標籤紅線](../../extensibility/ux-guidelines/media/0303-072-documenttabredline.png "0303年 072_DocumentTabRedline")
+ ![[文件] 索引標籤紅線](../../extensibility/ux-guidelines/media/0303-072-documenttabredline.png "0303-072_DocumentTabRedline")
 
  請使用於…
 任何要建立與文件索引標籤相符並自動選取佈景主題更新或新佈景主題色彩之 UI 的位置。
@@ -1425,9 +1425,9 @@ ms.locfileid: "68154474"
 
 - 選取的索引標籤代表目前顯示在文件區域中的文件。 選取的索引標籤會有可延伸至文件區域頂端的文件框線。
 
-- 背景索引標籤是任何非目前選取之索引標籤的文件索引標籤。按一下之後，它們會成為選取的索引標籤，並從這些語彙基元名稱取得所有背景、框線和文字色彩。
+- 背景索引標籤是指不是目前選取索引標籤的任何檔索引標籤。一旦按一下，它們就會變成選取的索引標籤，並從這些標記名稱取得所有背景、框線和文字色彩。
 
-  ![開啟的文件 索引標籤紅線](../../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303年 073_OpenDocumentTabRedline")
+  ![[開啟文件] 索引標籤紅線](../../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")
 
   請使用於…
   建立自訂文件索引標籤時。
@@ -1438,17 +1438,17 @@ ms.locfileid: "68154474"
 - 任何您不想在 Shell 具有佈景主題更新時自動變更的 UI。
 
 #### <a name="selected-tab"></a>選取的索引標籤
- **已取得焦點**
+ **Focused**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![選取的索引標籤已取得焦點](../../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303年 074_SelectedTabFocused")
+ ![選取的索引標籤已取得焦點](../../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303-074_SelectedTabFocused")
 
- **選取的文件索引標籤上，已取得焦點**
+ **選取的文件索引標籤，已取得焦點**
 
  背景
 
@@ -1460,7 +1460,7 @@ ms.locfileid: "68154474"
 
  `Environment.FileTabSelectedText`
 
- Border
+ 框線
 
  `Environment.FileTabSelectedBorder`
 
@@ -1476,11 +1476,11 @@ ms.locfileid: "68154474"
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![選取的索引標籤未取得焦點](../../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303年 075_SelectedTabUnfocused")
+ ![選取的索引標籤未取得焦點](../../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303-075_SelectedTabUnfocused")
 
- **選取的文件索引標籤上，未取得焦點**
+ **選取的文件索引標籤，未取得焦點**
 
  背景
 
@@ -1492,7 +1492,7 @@ ms.locfileid: "68154474"
 
  `Environment.FileTabInactiveText`
 
- Border
+ 框線
 
  `Environment.FileTabInactiveBorder`
 
@@ -1503,11 +1503,11 @@ ms.locfileid: "68154474"
  `Environment.FileTabInactiveDocumentBorderBackground`
 
 #### <a name="background-tab"></a>背景索引標籤
- **Default**
+ **預設值**
 
- ![背景索引標籤](../../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303年 076_BackgroundTab")
+ ![背景索引標籤](../../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303-076_BackgroundTab")
 
- **背景索引標籤的預設值**
+ **背景索引標籤預設值**
 
  背景
 
@@ -1517,17 +1517,17 @@ ms.locfileid: "68154474"
 
  `Environment.FileTabText`
 
- Border
+ 框線
 
  `Environment.FileTabBorder`
 
  設定為與背景相同的色彩。
 
- **將滑鼠停留**
+ **暫留**
 
- ![暫留時背景索引標籤](../../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303年 077_BackgroundTabHover")
+ ![停留時顯示背景索引標籤](../../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303-077_BackgroundTabHover")
 
- **暫留時背景索引標籤**
+ **停留時顯示背景索引標籤**
 
  背景
 
@@ -1539,7 +1539,7 @@ ms.locfileid: "68154474"
 
  `Environment.FileTabHotText`
 
- Border
+ 框線
 
  `Environment.FileTabHotBorder`
 
@@ -1549,7 +1549,7 @@ ms.locfileid: "68154474"
 
 使用者按一下方案總管工具視窗中的項目時，預覽索引標籤會出現在文件索引標籤通道右側。 它可作為文件的預覽，也可讓使用者選擇持續在文件索引標籤通道左側開啟文件。 一次只能開啟一個預覽索引標籤。 預覽索引標籤同時具有背景和選取的狀態 (例如開啟的索引標籤)，而且可以在其作用中狀態取得焦點或未取得焦點。
 
-![預覽索引標籤紅線](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303年 078_PreviewTabRedline")
+![[預覽] 索引標籤紅線](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303-078_PreviewTabRedline")
 
 請使用於…
 任何要建立暫時預覽且想要某個項目符合目前預覽索引標籤色彩的位置。
@@ -1565,11 +1565,11 @@ ms.locfileid: "68154474"
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![已取得焦點的預覽索引標籤](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303年 079_PreviewTabFocused")
+  ![[預覽] 索引標籤已取得焦點](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")
 
-  **具有焦點的預覽索引標籤**
+  **已取得焦點的預覽索引標籤**
 
   背景
 
@@ -1579,7 +1579,7 @@ ms.locfileid: "68154474"
 
   `Environment.FileTabProvisionalSelectedActiveForeground`
 
-  Border
+  框線
 
   `Environment.FileTabProvisionalSelectedActiveBorder`
 
@@ -1595,9 +1595,9 @@ ms.locfileid: "68154474"
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![預覽索引標籤未取得焦點](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303年 080_PreviewTabUnfocused")
+  ![[預覽] 索引標籤未取得焦點](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")
 
   **未取得焦點的預覽索引標籤**
 
@@ -1609,7 +1609,7 @@ ms.locfileid: "68154474"
 
   `Environment.FileTabProvisionalSelectedInactiveForeground`
 
-  Border
+  框線
 
   `Environment.FileTabProvisionalSelectedInactiveBorder`
 
@@ -1623,9 +1623,9 @@ ms.locfileid: "68154474"
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![預覽 背景索引標籤](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303年 081_PreviewBackgroundTab")
+  ![[預覽] 背景索引標籤](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303-081_PreviewBackgroundTab")
 
   **預覽索引標籤背景索引標籤**
 
@@ -1637,23 +1637,23 @@ ms.locfileid: "68154474"
 
   `Environment.FileTabProvisionalInactiveForeground`
 
-  Border
+  框線
 
   `Environment.FileTabProvisionalInactiveBorder`
 
   設定為與背景相同的色彩。
 
-  **背景預覽索引標籤：將滑鼠停留**
+  **背景預覽索引標籤：暫留**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![暫留時顯示 [預覽] 背景索引標籤](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303年 082_PreviewBackgroundTabHover")
+  ![停留時顯示 [預覽] 背景索引標籤](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")
 
-  **暫留時的預覽索引標籤背景索引標籤**
+  **暫留時顯示預覽索引標籤背景索引標籤**
 
   背景
 
@@ -1663,7 +1663,7 @@ ms.locfileid: "68154474"
 
   `Environment.FileTabProvisionalHoverForeground`
 
-  Border
+  框線
 
   `Environment.FileTabProvisionalHoverBorder`
 
@@ -1673,7 +1673,7 @@ ms.locfileid: "68154474"
 
 如果開啟一個或多個文件 (不論目前組態中是否有垂直空間可放入所有文件索引標籤)，則會有文件溢位按鈕。 透過 **CommandBarMenu** 色彩控制的文件溢位下拉式功能表 (請參閱 [Menus](../../misc/shared-colors.md#BKMK_CommandMenus))，會顯示一份所有開啟的文件 (顯示和隱藏)，並根據是否在索引標籤通道中顯示所有開啟的文件來變更溢位字符。
 
-![溢位紅線](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303年 083_OverflowRedline")
+![溢位紅線](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303-083_OverflowRedline")
 
 請使用於…
 建立自訂文件溢位按鈕時。
@@ -1683,15 +1683,15 @@ ms.locfileid: "68154474"
 
 - 命令列溢位按鈕。
 
-  **Default**
+  **預設值**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")
+  ![溢出](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")
 
   **文件溢位按鈕**
 
@@ -1703,21 +1703,21 @@ ms.locfileid: "68154474"
 
   `Environment.DocWellOverflowButtonGlyph`
 
-  Border
+  框線
 
   N/A
 
-  **將滑鼠停留**
+  **暫留**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![暫留時顯示溢位](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303年 085_OverflowHover")
+  ![停留時顯示溢位](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303-085_OverflowHover")
 
-  **暫留時的文件溢位按鈕**
+  **暫留時顯示文件溢位按鈕**
 
   背景
 
@@ -1727,21 +1727,21 @@ ms.locfileid: "68154474"
 
   `Environment.DocWellOverflowButtonMouseOverGlyph`
 
-  Border
+  框線
 
   `Environment.DocWellOverflowButtonMouseOverBorder`
 
-  **按下**
+  **Pressed**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![按下溢位](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303年 086_OverflowPressed")
+  ![已按下溢位](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303-086_OverflowPressed")
 
-  **已按下的文件溢位按鈕**
+  **已按下文件溢位按鈕**
 
   背景
 
@@ -1751,14 +1751,14 @@ ms.locfileid: "68154474"
 
   `Environment.DocWellOverflowButtonMouseDownGlyph`
 
-  Border
+  框線
 
   `Environment.DocWellOverflowButtonMouseDownBorder`
 
 ## <a name="tool-windows"></a>工具視窗
  工具視窗是由 Visual Studio 環境所提供，因此不需要進行複寫。 不過，您可能會決定要利用工具視窗中所使用的色彩，讓您的 UI 一律與 Visual Studio 環境的這個部分一致。
 
- ![工具視窗紅線](../../extensibility/ux-guidelines/media/0303-087-toolwindowredline.png "0303年 087_ToolWindowRedline")
+ ![工具視窗紅線](../../extensibility/ux-guidelines/media/0303-087-toolwindowredline.png "0303-087_ToolWindowRedline")
 
  請使用於…
 任何要建立符合工具視窗之 UI 的位置。
@@ -1769,7 +1769,7 @@ ms.locfileid: "68154474"
 ### <a name="tool-window-frame"></a>工具視窗框架
  Visual Studio 中的工具視窗用於許多不同的工作，而且可以存在於數種不同狀態的其中一種狀態。 如果開啟工具視窗，則可以將它指派至文件區域四邊的任何一邊。 工具視窗也可以浮動在 IDE 外面，讓它們可以重新定位在使用者螢幕內的任何位置。 浮動視窗一律位在 IDE 頂端。 最後，工具視窗可以停駐為文件視窗，以及顯示為文件區域中的索引標籤。 會使用文件視窗語彙基元名稱，將已停駐為文件視窗的工具視窗局部上色。
 
- ![工具視窗框架紅線](../../extensibility/ux-guidelines/media/0303-088-toolwindowframeredline.png "0303年 088_ToolWindowFrameRedline")
+ ![工具視窗框架紅線](../../extensibility/ux-guidelines/media/0303-088-toolwindowframeredline.png "0303-088_ToolWindowFrameRedline")
 
  請使用於…
 任何要建立符合工具視窗之 UI 的位置。
@@ -1777,64 +1777,64 @@ ms.locfileid: "68154474"
  請勿使用於…
 任何您不想在 Shell 具有佈景主題更新時自動變更的 UI。
 
- **停駐**
+ **停靠**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![工具視窗停駐](../../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303年 089_ToolWindowDocked")
+ ![已停駐工具視窗](../../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303-089_ToolWindowDocked")
 
  背景
 
  `Environment.ToolWindowBackground`
 
- Border
+ 框線
 
  `Environment.ToolWindowBorder`
 
- **浮動： 已取得焦點**
+ **浮動：已取得焦點**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![工具視窗已取得焦點](../../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303年 090_ToolWindowFocused")
+ ![工具視窗已取得焦點](../../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303-090_ToolWindowFocused")
 
  背景
 
  `Environment.ToolWindowBackground`
 
- Border
+ 框線
 
  `Environment.MainWindowActiveDefaultBorder`
 
- **浮動： 未取得焦點**
+ **浮動：未取得焦點**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![未取得焦點的工具視窗](../../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303年 091_ToolWindowUnfocused")
+ ![工具視窗未取得焦點](../../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303-091_ToolWindowUnfocused")
 
  背景
 
  `Environment.ToolWindowBackground`
 
- Border
+ 框線
 
  `Environment.MainWindowInactiveBorder`
 
 ### <a name="tool-window-title-bar"></a>工具視窗標題列
  標題列框線不是真正的框線，而是跨標題列頂端的粗線。 它並沒有其未取得焦點狀態的語彙基元名稱。
 
- ![工具視窗標題列紅線](../../extensibility/ux-guidelines/media/0303-092-toolwindowtitlebarredline.png "0303年 092_ToolWindowTitleBarRedline")
+ ![工具視窗標題列紅線](../../extensibility/ux-guidelines/media/0303-092-toolwindowtitlebarredline.png "0303-092_ToolWindowTitleBarRedline")
 
  請使用於…
 任何要建立符合工具視窗之 UI 的位置。
@@ -1842,17 +1842,17 @@ ms.locfileid: "68154474"
  請勿使用於…
 任何您不想在 Shell 具有佈景主題更新時自動變更的 UI。
 
- **已取得焦點**
+ **Focused**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![標題列著重](../../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303年 093_TitleBarFocused")
+ ![標題列已取得焦點](../../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303-093_TitleBarFocused")
 
- **具有焦點的標題列**
+ **已取得焦點的標題列**
 
  背景
 
@@ -1864,7 +1864,7 @@ ms.locfileid: "68154474"
 
  `Environment.TitleBarActiveText`
 
- Border
+ 框線
 
  `Environment.TitleBarActiveBorder`
 
@@ -1880,9 +1880,9 @@ ms.locfileid: "68154474"
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![未取得焦點的標題列](../../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303年 094_TitleBarUnfocused")
+ ![標題列未取得焦點](../../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")
 
  **未取得焦點的標題列**
 
@@ -1896,7 +1896,7 @@ ms.locfileid: "68154474"
 
  `Environment.TitleBarInactiveText`
 
- Border
+ 框線
 
  N/A
 
@@ -1906,7 +1906,7 @@ ms.locfileid: "68154474"
 
 #### <a name="title-bar-buttons"></a>標題列按鈕
 
-![標題列按鈕紅線](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303年 095_TitleBarButtonRedline")
+![標題列按鈕紅線](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303-095_TitleBarButtonRedline")
 
 請使用於…
 UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩語彙基元時)。
@@ -1916,17 +1916,17 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
 - 任何非指定的背景/前景組合。
 
-  **Default**
+  **預設值**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![標題列按鈕已取得焦點](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303年 096_TitleBarButtonFocused")
+  ![標題列按鈕已取得焦點](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")
 
-  **已取得焦點**
+  **Focused**
 
   背景
 
@@ -1936,11 +1936,11 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `Environment.ToolWindowButtonActiveGlyph`
 
-  Border
+  框線
 
   N/A
 
-  ![標題列按鈕未取得焦點](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303年 097_TitleBarButtonUnfocused")
+  ![標題列按鈕未取得焦點](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")
 
   **未取得焦點**
 
@@ -1952,21 +1952,21 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `Environment.ToolWindowButtonInactiveGlyph`
 
-  Border
+  框線
 
   N/A
 
-  **將滑鼠停留**
+  **暫留**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![暫留時顯示的標題列按鈕已取得焦點](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303年 098_TitleBarButtonFocusedHover")
+  ![停留時顯示取得焦點的標題列按鈕](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")
 
-  **已取得焦點**
+  **Focused**
 
   背景
 
@@ -1976,11 +1976,11 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `Environment.ToolWindowButtonHoverActiveGlyph`
 
-  Border
+  框線
 
   `Environment.ToolWindowButtonHoverActiveBorder`
 
-  ![標題列按鈕未取得焦點停留](../../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303年 099_TitleBarButtonUnfocusedHover")
+  ![停留時顯示未取得焦點的標題列按鈕](../../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")
 
   **未取得焦點**
 
@@ -1992,21 +1992,21 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `Environment.ToolWindowButtonHoverInactiveGlyph`
 
-  Border
+  框線
 
   `Environment.ToolWindowButtonHoverInactiveBorder`
 
-  **按下**
+  **Pressed**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![標題列按鈕已取得焦點且按下](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303年 100_TitleBarButtonFocusedPressed")
+  ![標題列按鈕已取得焦點且已按下](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")
 
-  **已取得焦點**
+  **Focused**
 
   背景
 
@@ -2016,11 +2016,11 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `Environment.ToolWindowButtonDownActiveGlyph`
 
-  Border
+  框線
 
   `Environment.ToolWindowButtonDownBorder`
 
-  ![標題列按鈕未取得焦點且按下](../../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303年 101_TitleBarButtonUnfocusedPressed")
+  ![標題列按鈕未取得焦點且已按下](../../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")
 
   **未取得焦點**
 
@@ -2032,12 +2032,12 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `Environment.ToolWindowButtonDownInactiveGlyph`
 
-  Border
+  框線
 
   `Environment.ToolWindowButtonDownBorder`
 
 ### <a name="tool-window-tabs"></a>工具視窗索引標籤
- ![工具視窗索引標籤紅線](../../extensibility/ux-guidelines/media/0303-102-toolwindowtabredline.png "0303年 102_ToolWindowTabRedline")
+ ![工具視窗索引標籤紅線](../../extensibility/ux-guidelines/media/0303-102-toolwindowtabredline.png "0303-102_ToolWindowTabRedline")
 
  請使用於…
 任何要建立符合工具視窗之 UI 的位置。
@@ -2051,9 +2051,9 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![工具視窗索引標籤已取得焦點](../../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303年 103_ToolWindowTabFocused")
+ ![工具視窗索引標籤已取得焦點](../../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")
 
  **已選取，已取得焦點的工具視窗索引標籤**
 
@@ -2065,7 +2065,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Environment.ToolWindowTabSelectedActiveText`
 
- Border
+ 框線
 
  `Environment.ToolWindowTabSelectedBorder`
 
@@ -2075,9 +2075,9 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![工具視窗索引標籤未取得焦點](../../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303年 104_ToolWindowTabUnfocused")
+ ![工具視窗索引標籤未取得焦點](../../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")
 
  **已選取，未取得焦點的工具視窗索引標籤**
 
@@ -2089,7 +2089,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Environment.ToolWindowTabSelectedText`
 
- Border
+ 框線
 
  `Environment.ToolWindowTabSelectedBorder`
 
@@ -2101,9 +2101,9 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![工具視窗背景索引標籤](../../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303年 105_ToolWindowBackgroundTab")
+ ![工具視窗背景索引標籤](../../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")
 
  **背景工具視窗索引標籤**
 
@@ -2121,7 +2121,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Environment.ToolWindowTabText`
 
- Border
+ 框線
 
  `Environment.ToolWindowTabBorder`
 
@@ -2129,11 +2129,11 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![暫留時的工具視窗背景索引標籤](../../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303年 106_ToolWindowBackgroundTabHover")
+ ![停留時顯示工具視窗背景索引標籤](../../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")
 
- **暫留時的背景工具視窗索引標籤**
+ **暫留時顯示背景工具視窗索引標籤**
 
  背景
 
@@ -2149,14 +2149,14 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Environment.ToolWindowTabMouseOverText`
 
- Border
+ 框線
 
  `Environment.ToolWindowTabMouseOverBorder`
 
  設定為與背景相同的色彩。
 
 ### <a name="auto-hide-tabs"></a>自動隱藏索引標籤
- ![自動&#45;隱藏紅線](../../extensibility/ux-guidelines/media/0303-107-autohideredline.png "0303年 107_AutoHideRedline")
+ ![自動&#45;隱藏紅線](../../extensibility/ux-guidelines/media/0303-107-autohideredline.png "0303-107_AutoHideRedline")
 
  請使用於…
 任何要建立符合自動隱藏工具視窗索引標籤之 UI 的位置。
@@ -2164,15 +2164,15 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
  請勿使用於…
 任何您不想在 Shell 具有佈景主題更新時自動變更的 UI。
 
- **Default**
+ **預設值**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![自動&#45;隱藏 索引標籤](../../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303年 108_AutoHideTab")
+ ![自動&#45;隱藏] 索引標籤](../../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")
 
  **預設自動隱藏索引標籤**
 
@@ -2186,21 +2186,21 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Environment.AutoHideTabText`
 
- Border
+ 框線
 
  `Environment.AutoHideTabBorder`
 
- **將滑鼠停留**
+ **暫留**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![自動&#45;隱藏 索引標籤上暫留](../../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303年 109_AutoHideTabHover")
+ ![停留時自動&#45;隱藏索引標籤](../../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")
 
- **暫留時的自動隱藏索引標籤**
+ **停留時顯示 [自動隱藏] 索引標籤**
 
  背景
 
@@ -2212,7 +2212,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Environment.AutoHideTabMouseOverText`
 
- Border
+ 框線
 
  `Environment.AutoHideTabMouseOverBorder`
 
@@ -2232,7 +2232,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
 - 「已停用」表示已關閉目前內容的搜尋功能。
 
-  ![搜尋方塊紅線](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303年 110_SearchBoxRedline")
+  ![搜尋方塊紅線](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303-110_SearchBoxRedline")
 
   請使用於…
   設計自訂搜尋方塊時。
@@ -2242,17 +2242,17 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
 - 任何不想要其一律與搜尋方塊 UI 相符的項目。
 
-  **已取得焦點**
+  **Focused**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![搜尋輸入的欄位已取得焦點](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303年 111_SearchInputFieldFocused")
+  ![搜尋輸入欄位已取得焦點](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")
 
-  **輸入的欄位**
+  **輸入欄位**
 
   背景
 
@@ -2262,7 +2262,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.FocusedBackground`
 
-  Border
+  框線
 
   `SearchControl.FocusedBorder`
 
@@ -2270,7 +2270,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.FocusedDropDownSeparator`
 
-  ![搜尋動作按鈕已取得焦點](../../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303年 112_SearchActionButtonFocused")
+  ![搜尋動作按鈕已取得焦點](../../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")
 
   **動作按鈕**
 
@@ -2290,11 +2290,11 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.ClearGlyph`
 
-  Border
+  框線
 
   N/A
 
-  ![搜尋下拉式&#45;向下按鈕已取得焦點](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303年 113_SearchDropdownButtonFocused")
+  ![搜尋下拉&#45;向下按鈕焦點](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")
 
   **下拉式按鈕**
 
@@ -2306,7 +2306,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.FocusedDropDownButtonGlyph`
 
-  Border
+  框線
 
   `SearchControl.FocusedDropDownButtonBorder`
 
@@ -2316,11 +2316,11 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![搜尋輸入的欄位未取得焦點](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303年 114_SearchInputFieldUnfocused")
+  ![搜尋輸入欄位未取得焦點](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")
 
-  **作用中的輸入的欄位**
+  **使用中輸入欄位**
 
   背景
 
@@ -2330,7 +2330,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.SearchActiveBackground`
 
-  Border
+  框線
 
   `SearchControl.UnfocusedBorder`
 
@@ -2338,9 +2338,9 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.DropDownSeparator`
 
-  ![搜尋輸入的欄位未取得焦點且非作用中](../../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303年-114-1_SearchInputFieldUnfocusedInactive")
+  ![搜尋輸入欄位未取得焦點且未啟用](../../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")
 
-  **非使用中的輸入的欄位**
+  **非使用中輸入欄位**
 
   背景
 
@@ -2350,7 +2350,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.Unfocused`
 
-  Border
+  框線
 
   `SearchControl.UnfocusedBorder`
 
@@ -2358,7 +2358,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.DropDownSeparator`
 
-  ![搜尋動作按鈕未取得焦點](../../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303年 115_SearchActionButtonUnfocused")
+  ![搜尋動作按鈕未取得焦點](../../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")
 
   **動作按鈕**
 
@@ -2378,11 +2378,11 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.ClearGlyph`
 
-  Border
+  框線
 
   N/A
 
-  ![搜尋下拉式&#45;向下按鈕未取得焦點](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303年 116_SearchDropdownButtonUnfocused")
+  ![搜尋下拉&#45;向下按鈕未取得焦點](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")
 
   **下拉式按鈕**
 
@@ -2394,19 +2394,19 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.UnfocusedDropDownButtonGlyph`
 
-  Border
+  框線
 
   `SearchControl.UnfocusedDropDownButtonBorder`
 
-  **按下**
+  **Pressed**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![按下搜尋動作按鈕](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303年-116-1_SearchActionButtonPressed")
+  ![已按下搜尋動作按鈕](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")
 
   **動作按鈕**
 
@@ -2418,11 +2418,11 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.ActionButtonMouseDownGlyph`
 
-  Border
+  框線
 
   `SearchControl.ActionButtonMouseDownBorder`
 
-  ![搜尋下拉式&#45;向下按鈕按下](../../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303年-116-2_SearchDropdownButtonPressed")
+  ![已按下 [搜尋] 下拉&#45;向下按鈕](../../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")
 
   **下拉式按鈕**
 
@@ -2434,21 +2434,21 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.MouseDownDropDownButtonGlyph`
 
-  Border
+  框線
 
   `SearchControl.MouseDownDropDownButtonBorder`
 
-  **反白顯示 （僅顯示文字）**
+  **已反白顯示 (僅文字)**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![搜尋輸入的欄位反白](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303年 120_SearchInputFieldHighlight")
+  ![搜尋輸入欄位反白顯示](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")
 
-  **反白顯示的文字輸入的欄位**
+  **已反白顯示文字的輸入欄位**
 
   背景
 
@@ -2458,7 +2458,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.FocusedBackground`
 
-  Border
+  框線
 
   無
 
@@ -2472,11 +2472,11 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![已停用搜尋輸入的欄位](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303年 121_SearchInputFieldDisabled")
+  ![已停用搜尋輸入欄位](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")
 
-  **輸入的欄位**
+  **輸入欄位**
 
   背景
 
@@ -2486,7 +2486,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.Disabled`
 
-  Border
+  框線
 
   `SearchControl.DisabledBorder`
 
@@ -2494,23 +2494,23 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.DropDownSeparator`
 
-  ![已停用搜尋動作按鈕](../../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303年 122_SearchActionButtonDisabled")
+  ![已停用搜尋動作按鈕](../../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")
 
   **動作按鈕**
 
   背景
 
-  None
+  無
 
   前景 (字符)
 
   `SearchControl.ActionButtonDisabledGlyph`
 
-  Border
+  框線
 
   無
 
-  ![搜尋下拉式&#45;向下按鈕已停用](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303年 123_SearchDropdownButtonDisabled")
+  ![已停用搜尋下拉&#45;向下按鈕](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")
 
   **下拉式按鈕**
 
@@ -2522,15 +2522,15 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.DisabledDownButtonGlyph`
 
-  Border
+  框線
 
-  None
+  無
 
 #### <a name="search-drop-down-lists"></a>搜尋下拉式清單
 
 搜尋方塊下拉式功能表可能會比 Visual Studio 中的其他下拉式功能表稍微更為複雜。 [建議的搜尋] 和 [搜尋選項] 區段可以單獨或一起出現在功能表上，而且各區段會個別著色。 這兩個區段同時出現時，也會有一條線來區隔它們，而且會有框線括住整個下拉式功能表。
 
-![搜尋下拉式&#45;向下紅線](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303年 124_SearchDropdownRedline")
+![搜尋下拉&#45;向下紅線](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303-124_SearchDropdownRedline")
 
 請使用於…
 - 建立自訂搜尋下拉式清單時。
@@ -2542,13 +2542,13 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
 - 任何非指定的背景/前景組合。
 
-  **預設值 （沒有其他狀態）**
+  **預設值 (沒有其他狀態)**
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  Border
+  框線
 
   `SearchControl.PopupBorder`
 
@@ -2560,15 +2560,15 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `Environment.DropShadowBackground`
 
-  **Default**
+  **預設值**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![搜尋建議](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303年 125_SearchSuggested")
+  ![搜尋建議](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303-125_SearchSuggested")
 
   **建議的搜尋**
 
@@ -2582,13 +2582,13 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.PopupItemText`
 
-  ![搜尋核取方塊](../../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303年 126_SearchCheckbox")
+  ![搜尋核取方塊](../../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303-126_SearchCheckbox")
 
-  **搜尋選項 （核取方塊）**
+  **搜尋選項 (核取方塊)**
 
-  ![搜尋選項](../../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303年 127_SearchOptions")
+  ![搜尋選項](../../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303-127_SearchOptions")
 
-  **搜尋選項 （連結）**
+  **搜尋選項 (連結)**
 
   背景
 
@@ -2614,15 +2614,15 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.PopupSectionHeaderText`
 
-  **將滑鼠停留**
+  **暫留**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![搜尋建議停留](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303年 128_SearchSuggestedHover")
+  ![停留時顯示搜尋建議](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303-128_SearchSuggestedHover")
 
   **建議的搜尋**
 
@@ -2636,15 +2636,15 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.PopupMouseOverItemText`
 
-  Border
+  框線
 
   `SearchControl.PopupControlMouseOverBorder`
 
-  ![暫留時顯示搜尋核取方塊](../../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303年 129_SearchCheckboxHover")
+  ![停留時顯示搜尋核取方塊](../../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303-129_SearchCheckboxHover")
 
-  **建議的搜尋 （核取方塊）**
+  **建議的搜尋 (核取方塊)**
 
-  ![搜尋選項停留](../../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303年 130_SearchOptionsHover")
+  ![停留時顯示搜尋選項](../../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303-130_SearchOptionsHover")
 
   **搜尋選項**
 
@@ -2662,23 +2662,23 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.PopupButtonMouseDownText`
 
-  Border
+  框線
 
   `SearchControl.PopupControlMouseOverBorder`
 
-  **按下**
+  **Pressed**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![搜尋建議的按下](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303年 131_SearchSuggestedPressed")
+  ![已按下搜尋建議](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")
 
-  **建議的搜尋 （核取方塊）**
+  **建議的搜尋 (核取方塊)**
 
-  ![搜尋已按下選項](../../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303年 132_SearchOptionsPressed")
+  ![已按下搜尋選項](../../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303-132_SearchOptionsPressed")
 
   **搜尋選項**
 
@@ -2706,10 +2706,10 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `SearchControl.PopupButtonMouseDownText`
 
-### <a name="hyperlink"></a>超連結
+### <a name="hyperlink"></a>Hyperlink
  超連結是一個沒有前景/背景配對的控制項。 在所有情況下，都會使用前景超連結色彩，以正確地顯示在深色、灰色和白色背景上。 如果您未使用超連結控制項的色彩語彙基元，則會看到「已按下」的預設系統色彩 (即閃爍紅色)。 這是控制項未使用正確環境色彩語彙基元的訊號。
 
- ![超連結紅線](../../extensibility/ux-guidelines/media/0303-133-hyperlinkredline.png "0303年 133_HyperlinkRedline")
+ ![超連結紅線](../../extensibility/ux-guidelines/media/0303-133-hyperlinkredline.png "0303-133_HyperlinkRedline")
 
  請使用於…
 需要建立自訂超連結時。
@@ -2717,43 +2717,43 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
  請勿使用於…
 針對不是超連結的任何項目。
 
- **Default**
+ **預設值**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![超連結預設值](../../extensibility/ux-guidelines/media/0303-134-hyperlink.png "0303年 134_Hyperlink")
+ ![超連結預設值](../../extensibility/ux-guidelines/media/0303-134-hyperlink.png "0303-134_Hyperlink")
 
  前景 (文字)
 
  `Environment.PanelHyperlink`
 
- **將滑鼠停留**
+ **暫留**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![暫留時的超連結](../../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303年 135_HyperlinkHover")
+ ![停留時顯示超連結](../../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303-135_HyperlinkHover")
 
  前景 (文字)
 
  `Environment.PanelHyperlinkHover`
 
- **按下**
+ **Pressed**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![按下的超連結](../../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303年 136_HyperlinkPressed")
+ ![已按下超連結](../../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303-136_HyperlinkPressed")
 
  前景 (文字)
 
@@ -2765,9 +2765,9 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![停用的超連結](../../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303年 137_HyperlinkDisabled")
+ ![已停用超連結](../../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303-137_HyperlinkDisabled")
 
  前景 (文字)
 
@@ -2776,7 +2776,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 ### <a name="infobar"></a>資訊列
  資訊列用來提供所指定內容的詳細資訊，而且一律會出現在文件視窗或工具視窗的頂端。
 
- ![資訊列紅線](../../extensibility/ux-guidelines/media/0303-138-infobarredline.png "0303年 138_InfobarRedline")
+ ![資訊列紅線](../../extensibility/ux-guidelines/media/0303-138-infobarredline.png "0303-138_InfobarRedline")
 
  請使用於…
 建立自訂資訊列時。
@@ -2788,9 +2788,9 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![Infobar](../../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")
+ ![資訊列](../../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")
 
  **資訊列**
 
@@ -2802,31 +2802,31 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Environment.InfoText`
 
- Border
+ 框線
 
  `Environment.ToolWindowBorder`
 
 ### <a name="scroll-bar"></a>捲軸
- 捲軸的樣式是由 Visual Studio 環境所設定，因此不需要設定佈景主題。 不過，您可能會決定您想要利用捲軸中使用時，您的 UI 一律會顯示與 Visual Studio 環境的這個部分一致的色彩。
+ 捲軸的樣式是由 Visual Studio 環境所設定，因此不需要設定佈景主題。 不過，您可能會決定要利用捲軸中使用的色彩，讓您的 UI 一律與 Visual Studio 環境的這個部分一致。
 
- ![捲軸紅線](../../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303年 140_ScrollbarRedline")
+ ![捲軸紅線](../../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303-140_ScrollbarRedline")
 
  請使用於…
 建立要符合 Visual Studio 捲軸的 UI 時。
 
- 請勿使用於...針對任何項目，您不想要一律與捲軸 UI 相符。
+ 請勿使用 .。。針對您不想要永遠符合捲軸 UI 的任何事項。
 
- **Default**
+ **預設值**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![捲軸](../../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303年 141_Scrollbar")
+ ![捲軸](../../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")
 
- **捲軸**
+ **狀態列**
 
  捲軸
 
@@ -2836,9 +2836,9 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Environment.ScrollBarThumbBackground`
 
- ![捲軸箭號](../../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303年 142_ScrollbarArrow")
+ ![捲軸箭號](../../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303-142_ScrollbarArrow")
 
- **捲動箭號**
+ **捲軸箭號**
 
  背景
 
@@ -2850,17 +2850,17 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Environment.ScrollBarArrowGlyph`
 
- **將滑鼠停留**
+ **暫留**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![暫留時顯示捲軸](../../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303年 143_ScrollbarHover")
+ ![停留時顯示捲軸](../../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")
 
- **捲軸**
+ **狀態列**
 
  捲軸
 
@@ -2870,9 +2870,9 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Environment.ScrollBarThumbMouseOverBackground`
 
- ![捲軸箭號暫留時](../../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303年 144_ScrollbarArrowHover")
+ ![停留時顯示捲軸箭號](../../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303-144_ScrollbarArrowHover")
 
- **捲動箭號**
+ **捲軸箭號**
 
  背景
 
@@ -2884,17 +2884,17 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Environment.ScrollBarArrowGlyphMouseOver`
 
- **按下**
+ **Pressed**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![按下捲軸](../../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303年 145_ScrollbarPressed")
+ ![已按下捲軸](../../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")
 
- **捲軸**
+ **狀態列**
 
  捲軸
 
@@ -2904,9 +2904,9 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Environment.ScrollBarThumbPressedBackground`
 
- ![捲軸箭號，按下](../../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303年 146_ScrollbarArrowPressed")
+ ![已按下捲軸箭號](../../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")
 
- **捲動箭號**
+ **捲軸箭號**
 
  背景
 
@@ -2918,11 +2918,11 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Environment.ScrollBarArrowGlyphPressed`
 
-### <a name="BKMK_TreeView"></a> 樹狀檢視
+### <a name="tree-view"></a><a name="BKMK_TreeView"></a> 樹狀檢視
 
 數個工具視窗 (包括方案總管、伺服器總管和類別檢視) 會實作階層式組織配置，其色彩受到 TreeView 類別中的色彩名稱所控制。 樹狀檢視中的所有項目都會有背景和文字色彩。 具有巢狀子項目的項目也具有字符可指出展開還是摺疊項目。
 
-![樹狀檢閱紅線](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303年 147_TreeViewRedline")
+![樹狀檢閱紅線](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")
 
 請使用於…
 任何您需要實作階層式組織檢視的位置。
@@ -2932,15 +2932,15 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
 - 任何非指定的背景/前景組合。
 
-  **Default**
+  **預設值**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![樹狀檢視](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303年 148_TreeView")
+  ![樹狀檢視](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")
 
   背景
 
@@ -2954,19 +2954,19 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `TreeView.Glyph`
 
-  Border
+  框線
 
-  None
+  無
 
-  **將滑鼠停留**
+  **暫留**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![樹狀檢視停留](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303年 149_TreeViewHover")
+  ![停留時顯示樹狀檢閱](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")
 
   背景
 
@@ -2980,7 +2980,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `TreeView.GlyphMouseOver`
 
-  Border
+  框線
 
   無
 
@@ -2990,9 +2990,9 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![樹狀檢視拖曳經過時顯示](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303年 150_TreeViewDragOver")
+  ![拖曳經過時顯示樹狀檢閱](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")
 
   背景
 
@@ -3006,21 +3006,21 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `TreeView.DragOverItemGlyph`
 
-  Border
+  框線
 
   無
 
-  **選取**
+  **Selected**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![樹狀檢閱已取得焦點](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303年 151_TreeViewFocused")
+  ![樹狀檢視已取得焦點](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")
 
-  **已取得焦點**
+  **Focused**
 
   背景
 
@@ -3034,11 +3034,11 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `TreeView.SelectedItemActiveGlyph`
 
-  Border
+  框線
 
   `TreeView.FocusVisualBorder`
 
-  ![樹狀檢視未取得焦點](../../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303年 152_TreeViewUnfocused")
+  ![樹狀檢閱未取得焦點](../../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")
 
   **未取得焦點**
 
@@ -3054,21 +3054,21 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `TreeView.SelectedItemInactiveGlyph`
 
-  Border
+  框線
 
   無
 
-  **將滑鼠停在選取**
+  **在選取的項目上方暫留**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![樹狀檢閱已取得焦點停留](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303年 153_TreeViewFocusedHover")
+  ![停留時顯示取得焦點的樹狀檢閱](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")
 
-  **已取得焦點**
+  **Focused**
 
   背景
 
@@ -3082,11 +3082,11 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `TreeView.SelectedItemActiveGlyphMouseOver`
 
-  Border
+  框線
 
   無`TreeView.FocusVisualBorder`
 
-  ![樹狀檢閱未取得焦點停留](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303年 154_TreeViewUnfocusedHover")
+  ![停留時顯示未取得焦點的樹狀檢視](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")
 
   **未取得焦點**
 
@@ -3102,12 +3102,12 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `TreeView.SelectedItemActiveGlyphMouseOver`
 
-  Border
+  框線
 
   無
 
 ### <a name="button-controls"></a>按鈕控制項
- ![按鈕控制項紅線](../../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303年 155_ButtonControlRedline")
+ ![按鈕控制項紅線](../../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303-155_ButtonControlRedline")
 
  請使用於…
 文件區域中，您想要與 Visual Studio 佈景主題 (淺色調、暗色調、藍色或系統高對比佈景主題) 整合的按鈕。
@@ -3115,13 +3115,13 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
  請勿使用於…
 將針對自訂背景 (不屬於 Visual Studio 的佈景主題) 而顯示的按鈕。
 
- **Default**
+ **預設值**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
  ![Button](../../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")
 
@@ -3139,9 +3139,9 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![按鈕已停用](../../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303年 157_ButtonDisabled")
+ ![已停用按鈕](../../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303-157_ButtonDisabled")
 
  按鈕
 
@@ -3151,15 +3151,15 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `CommonControls.ButtonBorderDisabled`
 
- **將滑鼠停留**
+ **暫留**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![動態顯示按鈕](../../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303年 158_ButtonHover")
+ ![停留時顯示按鈕](../../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303-158_ButtonHover")
 
  按鈕
 
@@ -3169,15 +3169,15 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `CommonControls.ButtonBorderHover`
 
- **按下**
+ **Pressed**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![已按下按鈕](../../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303年 159_ButtonPressed")
+ ![已按下按鈕](../../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")
 
  按鈕
 
@@ -3187,15 +3187,15 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `CommonControls.ButtonBorderPressed`
 
- **已取得焦點**
+ **Focused**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![按鈕已取得焦點](../../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303年 160_ButtonFocused")
+ ![按鈕已取得焦點](../../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303-160_ButtonFocused")
 
  按鈕
 
@@ -3206,7 +3206,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
  `CommonControls.ButtonBorderFocused`
 
 ### <a name="check-box-controls"></a>核取方塊控制項
- ![核取方塊紅線](../../extensibility/ux-guidelines/media/0303-161-checkboxredline.png "0303年 161_CheckboxRedline")
+ ![核取方塊紅線](../../extensibility/ux-guidelines/media/0303-161-checkboxredline.png "0303-161_CheckboxRedline")
 
  請使用於…
 文件區域內所包含的核取方塊控制項。
@@ -3214,25 +3214,25 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
  請勿使用於…
 任何不是核取方塊控制項的 UI。
 
- **Default**
+ **預設值**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![核取方塊](../../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303年 162_Checkbox")
+ ![核取方塊](../../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")
 
  背景
 
  `CommonControls.CheckBoxBackground`
 
- Border
+ 框線
 
  `CommonControls.CheckBoxBorder`
 
- 文字
+ Text
 
  `CommonControls.CheckBoxText`
 
@@ -3246,19 +3246,19 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![已停用的核取方塊](../../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303年 163_CheckboxDisabled")
+ ![已停用核取方塊](../../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303-163_CheckboxDisabled")
 
  背景
 
  `CommonControls.CheckBoxBackgroundDisabled`
 
- Border
+ 框線
 
  `CommonControls.CheckBoxBorderDisabled`
 
- 文字
+ Text
 
  `CommonControls.CheckBoxTextDisabled`
 
@@ -3266,25 +3266,25 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `CommonControls.CheckBoxGlyphDisabled`
 
- **將滑鼠停留**
+ **暫留**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![暫留時的核取方塊](../../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303年 164_CheckboxHover")
+ ![停留時顯示核取方塊](../../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303-164_CheckboxHover")
 
  背景
 
  `CommonControls.CheckBoxBackgroundHover`
 
- Border
+ 框線
 
  `CommonControls.CheckBoxBorderHover`
 
- 文字
+ Text
 
  `CommonControls.CheckBoxTextHover`
 
@@ -3292,25 +3292,25 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `CommonControls.CheckBoxGlyphHover`
 
- **按下**
+ **Pressed**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![按下的核取方塊](../../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303年 165_CheckboxPressed")
+ ![已按下核取方塊](../../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303-165_CheckboxPressed")
 
  背景
 
  `CommonControls.CheckBoxBackgroundPressed`
 
- Border
+ 框線
 
  `CommonControls.CheckBoxBorderPressed`
 
- 文字
+ Text
 
  `CommonControls.CheckBoxTextPressed`
 
@@ -3318,25 +3318,25 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `CommonControls.CheckBoxGlyphPressed`
 
- **已取得焦點**
+ **Focused**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![核取方塊已取得焦點](../../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303年 166_CheckboxFocused")
+ ![核取方塊已取得焦點](../../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303-166_CheckboxFocused")
 
  背景
 
  `CommonControls.CheckBoxBackgroundFocused`
 
- Border
+ 框線
 
  `CommonControls.CheckBoxBorderFocused`
 
- 文字
+ Text
 
  `CommonControls.CheckBoxTextFocused`
 
@@ -3346,7 +3346,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
 ### <a name="drop-boxcombo-box-controls"></a>下拉式方塊控制項
 
-![卸除&#45;關閉&#47;下拉式方塊紅線](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303年 167_DropDownComboBoxRedline")
+![&#45;下&#47;下拉式方塊紅線](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")
 
 請使用於…
 針對屬於文件區域一部分的下拉式清單和下拉式方塊。
@@ -3356,25 +3356,25 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
 - 針對命令列中的 [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) 或 [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) 。
 
-  **Default**
+  **預設值**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![卸除&#45;關閉&#47;下拉式方塊](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303年 168_DropDownComboBox")
+  ![下拉&#45;下&#47;下拉式方塊](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")
 
   背景
 
   `CommonControls.ComboBoxBackground`
 
-  Border
+  框線
 
   `CommonControls.ComboBoxBorder`
 
-  文字
+  Text
 
   `CommonControls.ComboBoxText`
 
@@ -3396,19 +3396,19 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![卸除&#45;關閉&#47;下拉式方塊已停用](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303年 169_DropDownComboBoxDisabled")
+  ![將&#45;下拉&#47;下拉式方塊已停用](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")
 
   背景
 
   `CommonControls.ComboBoxBackgroundDisabled`
 
-  Border
+  框線
 
   `CommonControls.ComboBoxBorderDisabled`
 
-  文字
+  Text
 
   `CommonControls.ComboBoxTextDisabled`
 
@@ -3424,25 +3424,25 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `CommonControls.ComboBoxGlyphBackgroundDisabled`
 
-  **將滑鼠停留**
+  **暫留**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![卸除&#45;關閉&#47;動態顯示下拉式方塊](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303年 170_DropDownComboBoxHover")
+  ![停留時，卸載&#45;下&#47;下拉式方塊](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")
 
   背景
 
   `CommonControls.ComboBoxBackgroundHover`
 
-  Border
+  框線
 
   `CommonControls.ComboBoxBorderHover`
 
-  文字
+  Text
 
   `CommonControls.ComboBoxTextHover`
 
@@ -3458,25 +3458,25 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `CommonControls.ComboBoxGlyphBackgroundHover`
 
-  **按下**
+  **Pressed**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![卸除&#45;關閉&#47;下拉式方塊，按下](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303年 171_DropDownComboBoxPressed")
+  ![下拉&#45;下&#47;下拉式方塊](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")
 
   背景
 
   `CommonControls.ComboBoxBackgroundPressed`
 
-  Border
+  框線
 
   `CommonControls.ComboBoxBorderPressed`
 
-  文字
+  Text
 
   `CommonControls.ComboBoxTextPressed`
 
@@ -3492,25 +3492,25 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `CommonControls.ComboBoxGlyphBackgroundPressed`
 
-  **已取得焦點**
+  **Focused**
 
   元件
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![卸除&#45;關閉&#47;下拉式方塊已取得焦點](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303年 172_DropDownComboBoxFocused")
+  ![將焦點放在&#47;下拉式方塊&#45;下](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")
 
   背景
 
   `CommonControls.ComboBoxBackgroundFocused`
 
-  Border
+  框線
 
   `CommonControls.ComboBoxBorderFocused`
 
-  文字
+  Text
 
   `CommonControls.ComboBoxTextFocused`
 
@@ -3532,9 +3532,9 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
-  ![卸除&#45;關閉&#47;下拉式方塊的文字輸入](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303年 173_DropDownComboBoxTextInput")
+  ![&#45;下&#47;下拉式方塊文字輸入](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")
 
   反白顯示
 
@@ -3542,7 +3542,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   **已按下 – 清單項目檢視**
 
-  ![卸除&#45;關閉&#47;下拉式方塊清單檢視](../../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303年 174_DropDownComboBoxListView")
+  ![&#45;下&#47;下拉式方塊清單視圖](../../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")
 
   背景
 
@@ -3554,7 +3554,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `CommonControls.ComboBoxListItemBackgroundFocused`
 
-  Border
+  框線
 
   `CommonControls.ComboBoxListBorder`
 
@@ -3581,7 +3581,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 ### <a name="tabular-data-grid-controls"></a>表格式資料 (方格) 控制項
  表格式資料控制項 (也稱為方格控制項) 是 Visual Studio 通用控制項，可用來在多個資料行中顯示大量資料。 標準表格式資料控制項可以位於 Visual Studio 的多個位置：[錯誤清單] 工具視窗、IntelliTrace 報告和記憶體堆積檢視等等。 請一律使用所提供的標準表格式資料控制項。 在一些罕見情況下，您可能無法存取標準表格式資料控制項。 在這些情況下，請使用下列語彙基元名稱，確保您的 UI 與 Visual Studio 中的其他表格式資料控制項一致。
 
- ![表格式資料&#40;方格控制項&#41;紅線](../../extensibility/ux-guidelines/media/0303-197-tabulardatagridcontrolredline.png "0303年 197_TabularDataGridControlRedline")
+ ![表格式資料 &#40;方格控制項&#41; 紅線](../../extensibility/ux-guidelines/media/0303-197-tabulardatagridcontrolredline.png "0303-197_TabularDataGridControlRedline")
 
  請使用於…
 針對表格式或方格控制項。
@@ -3589,14 +3589,14 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
  請勿使用於…
 任何不是表格式或方格控制項的 UI。
 
-#### <a name="column-headers"></a>資料行標頭
+#### <a name="column-headers"></a>資料行標題
  資料行標頭包含背景、框線、標題文字，以及通常在依該資料行排序方格時使用的選用字符。
 
  State
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
  預設
 
@@ -3612,7 +3612,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Header.Glyph`
 
- Border
+ 框線
 
  `Header.SeparatorLine`
 
@@ -3630,7 +3630,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Header.MouseOverGlyph`
 
- Border
+ 框線
 
  `Header.SeparatorLine`
 
@@ -3648,7 +3648,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `CommonControls.CheckBoxTextPressed`
 
- Border
+ 框線
 
  `CommonControls.CheckBoxGlyphPressed`
 
@@ -3659,7 +3659,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
  預設
 
@@ -3671,7 +3671,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Environment.CommandBarTextActive`
 
- Border
+ 框線
 
  無
 
@@ -3685,9 +3685,9 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `TreeView.SelectedItemActiveText`
 
- Border
+ 框線
 
- None
+ 無
 
  已選取 (非使用中)
 
@@ -3699,7 +3699,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `TreeView.SelectedItemInactiveText`
 
- Border
+ 框線
 
  無
 
@@ -3707,7 +3707,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
 資訊清單設計工具的設計是用來輕鬆地編輯 Windows 8 和 Windows Phone 8 專案中的資訊清單檔。 雖然沒有任何共用架構可供取用，但是可能適合您比對方向/瀏覽索引標籤和整體結構的設計版面配置和色彩。 如需版面配置詳細資料的詳細資訊，請參閱 [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)。
 
-![資訊清單設計工具紅線](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303年 175_ManifestDesignerRedline")
+![資訊清單設計工具紅線](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303-175_ManifestDesignerRedline")
 
 請使用於…
 - 針對與資訊清單設計工具類似的設計工具。
@@ -3725,7 +3725,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
   預設值 (已選取)
 
@@ -3735,7 +3735,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   `ManifestDesigner.TabActive`
 
-  Border
+  框線
 
   無
 
@@ -3776,7 +3776,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 ## <a name="tagging"></a>標記
  Visual Studio 支援標記，可讓使用者宣告可搜尋關鍵字，以進行追蹤。 例如，專案經理和開發人員可以使用 Team Foundation Server (TFS) 來標記工作項目。 下列表格提供以暫停和已選取狀態顯示之標記本身和「關閉圖示」字符的色彩名稱。
 
- ![標記紅線](../../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303年 176_TaggingRedline")
+ ![標記紅線](../../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303-176_TaggingRedline")
 
  請使用於…
 針對支援標記的 UI。
@@ -3784,16 +3784,16 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
  請勿使用於…
 任何其他類型的 UI。
 
-### <a name="tag"></a>標記
+### <a name="tag"></a>Tag
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
  ![Tag](../../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")
 
- **Default**
+ **預設值**
 
  背景
 
@@ -3803,9 +3803,9 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Tag.Background`
 
- ![暫留時顯示標記](../../extensibility/ux-guidelines/media/0303-178-taghover.png "0303年 178_TagHover")
+ ![停留時顯示標記](../../extensibility/ux-guidelines/media/0303-178-taghover.png "0303-178_TagHover")
 
- **將滑鼠停留**
+ **暫留**
 
  背景
 
@@ -3815,9 +3815,9 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Tag.HoverBackgroundText`
 
- ![已按下標記](../../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303年 179_TagPressed")
+ ![已按下標記](../../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303-179_TagPressed")
 
- **按下**
+ **Pressed**
 
  背景
 
@@ -3827,9 +3827,9 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Tag.PressedBackgroundText`
 
- ![已選取標記](../../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303年 180_TagSelected")
+ ![已選取標記](../../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303-180_TagSelected")
 
- **選取**
+ **Selected**
 
  背景
 
@@ -3840,17 +3840,17 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
  `Tag.SelectedBackgroundText`
 
 ### <a name="glyph-close-icon"></a>字符 (關閉圖示)
- **Default**
+ **預設值**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![標記&#40;圖像 （glyph)&#41;](../../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303年 181_TagGlyph")
+ ![標記 &#40;圖像&#41;](../../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")
 
- **預設值 （標記預設值）**
+ **預設值 (標記預設值)**
 
  背景
 
@@ -3860,17 +3860,17 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Tag.TagHoverGlyph`
 
- **將滑鼠停留**
+ **暫留**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![標記&#40;圖像 （glyph)&#41;停留](../../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303年 182_TagGlyphHover")
+ ![停留時標記 &#40;圖像&#41;](../../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")
 
- **暫留 （標記預設值）**
+ **暫留 (標記預設值)**
 
  背景
 
@@ -3880,21 +3880,21 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Tag.TagHoverGlyphHover`
 
- Border
+ 框線
 
  `Tag.TagHoverGlyphHoverBorder`
 
- **按下**
+ **Pressed**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![標記&#40;圖像 （glyph)&#41;按下](../../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303年 183_TagGlyphPressed")
+ ![&#41; 按下 &#40;字元標記](../../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")
 
- **按下 （標記預設值）**
+ **已按下 (標記預設值)**
 
  背景
 
@@ -3904,21 +3904,21 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Tag.TagHoverGlyphPressed`
 
- Border
+ 框線
 
  `Tag.TagHoverGlyphPressedBorder`
 
- **標記選取/字符預設值**
+ **已選取標記/字符預設值**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![已選取標記](../../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303年 184_TagSelected")
+ ![已選取標記](../../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303-184_TagSelected")
 
- **預設值 （已選取標記）**
+ **預設值 (已選取標記)**
 
  背景
 
@@ -3928,17 +3928,17 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Tag.TagSelectedGlyph`
 
- **標記選取/字符暫留**
+ **已選取標記/字符暫留**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![暫留時已選取標記](../../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303年 185_TagSelectedHover")
+ ![停留時顯示選取的標記](../../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303-185_TagSelectedHover")
 
- **暫留 （已選取標記）**
+ **暫留 (已選取標記)**
 
  背景
 
@@ -3948,21 +3948,21 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Tag.TagSelectedGlyphHover`
 
- Border
+ 框線
 
  `Tag.TagSelectedGlyphHoverBorder`
 
- **標記選取/字符按下**
+ **已選取標記/已按下字符**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![已選取標記已按下](../../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303年 186_TagSelectedPressed")
+ ![已按下選取的標記](../../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303-186_TagSelectedPressed")
 
- **已按下 （已選取標記）**
+ **已按下 (已選取標記)**
 
  背景
 
@@ -3972,7 +3972,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Tag.TagSelectedGlyphPressed`
 
- Border
+ 框線
 
  `Tag.TagSelectedGlyphPressedBorder`
 
@@ -3982,7 +3982,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
 環境背景包含兩個層級。 下層是涵蓋整個 IDE 的單色。 上層可放入命令櫃下方以及 IDE 左右兩側邊緣的工具視窗自動隱藏通道之間。 從 Visual Studio 2013 開始，在淺色調和暗色調佈景主題中，背景上層和下層會設定為相同的色彩。
 
-![殼層背景紅線](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303年 187_ShellBackgroundRedline")
+![殼層背景紅線](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303-187_ShellBackgroundRedline")
 
 請使用於…
 針對您想要符合 Visual Studio 環境背景的位置。
@@ -3996,7 +3996,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
   下層
 
@@ -4008,13 +4008,13 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
   上層
 
   背景
 
-  *漸層停駐在 Visual Studio 2013 淺色調和暗色調佈景主題中的相同色彩值的集合。*
+  *設定為與 Visual Studio 2013 淺色調和暗色調佈景主題相同色彩值的漸層停駐點。*
 
   `Environment.EnvironmentBackgroundGradientBegin`
 
@@ -4028,12 +4028,12 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
 兩組語彙基元名稱用於命令櫃背景：一組用於功能表列所在的位置，一組用於命令列所在的位置。 個別命令列群組有其專屬背景色彩值 (會在＜命令列＞一節中詳細討論)。 功能表列和命令列文字分別會在功能表和命令列一節中進行討論。
 
-![命令櫃紅線](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303年 188_CommandShelfRedline")
+![命令櫃紅線](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303-188_CommandShelfRedline")
 
 請使用於…
 - 針對您放置功能表或工具列的區域。
 
-- 具有正確的背景 /？ 前景語彙基元名稱組合。
+- 使用正確的 background/？前景 token 名稱組合。
 
 請勿使用於…
 針對未與命令櫃類似的區域。
@@ -4042,13 +4042,13 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   項目
 
-  權杖名稱：Category.color
+  語彙基元名稱：Category.color
 
   功能表列
 
   背景
 
-  *漸層停駐在 Visual Studio 2013 淺色調和暗色調佈景主題中的相同色彩值的集合。*
+  *設定為與 Visual Studio 2013 淺色調和暗色調佈景主題相同色彩值的漸層停駐點。*
 
   `Environment.CommandShelfHighlightGradientBegin`
 
@@ -4060,7 +4060,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
   背景
 
-  *漸層停駐在 Visual Studio 2013 淺色調和暗色調佈景主題中的相同色彩值的集合。*
+  *設定為與 Visual Studio 2013 淺色調和暗色調佈景主題相同色彩值的漸層停駐點。*
 
   `Environment.CommandShelfBackgroundGradientBegin`
 
@@ -4071,7 +4071,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 ## <a name="toolbox"></a>工具箱
  工具箱是其中一個最常用於 Visual Studio 的通用工具視窗。 它基本上是已套用特殊佈景主題和樣式的樹狀控制項。
 
- ![工具箱紅線](../../extensibility/ux-guidelines/media/0303-189-toolboxredline.png "0303年 189_ToolboxRedline")
+ ![工具箱紅線](../../extensibility/ux-guidelines/media/0303-189-toolboxredline.png "0303-189_ToolboxRedline")
 
  請使用於…
 設計要一律與 Shell 工具箱一致的工具視窗時。
@@ -4079,19 +4079,19 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
  請勿使用於…
 針對未與工具箱 UI 類似的任何項目，或者，如果您不確定 UI 是否會在 Shell 工具箱色彩變更時發生問題。
 
- **Default**
+ **預設值**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![工具箱父節點](../../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303年 190_ToolboxParentNode")
+ ![工具箱父節點](../../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")
 
  **父節點**
 
- ![工具箱子節點](../../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303年 191_ToolboxChildNode")
+ ![工具箱子節點](../../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")
 
  **子節點**
 
@@ -4105,7 +4105,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  個別項目或整個視窗 (沒有可用控制項時)
 
- Border
+ 框線
 
  無
 
@@ -4117,15 +4117,15 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Environment.ToolboxContent`
 
- **將滑鼠停留**
+ **暫留**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![暫留時顯示工具箱子節點](../../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303年 192_ToolboxChildNodeHover")
+ ![停留時顯示工具箱子節點](../../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")
 
  **子節點上的工具箱暫留**
 
@@ -4135,9 +4135,9 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  僅限個別項目
 
- Border
+ 框線
 
- None
+ 無
 
  前景 (文字)
 
@@ -4145,21 +4145,21 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  僅限個別項目
 
- **選取**
+ **Selected**
 
  元件
 
  項目
 
- 權杖名稱：Category.color
+ 語彙基元名稱：Category.color
 
- ![工具箱父節點已取得焦點](../../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303年 193_ToolboxParentNodeFocused")
+ ![工具箱父節點已取得焦點](../../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")
 
- **具有焦點的父節點**
+ **已取得焦點的父節點**
 
- ![工具箱子節點已取得焦點](../../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303年 194_ToolboxChildNodeFocused")
+ ![工具箱子節點已取得焦點](../../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")
 
- **具有焦點的子節點**
+ **已取得焦點的子節點**
 
  背景
 
@@ -4167,7 +4167,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  從 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 分類
 
- Border
+ 框線
 
  `TreeView.FocusVisualBorder`
 
@@ -4185,11 +4185,11 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  從 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 分類
 
- ![工具箱父節點未取得焦點](../../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303年 195_ToolboxParentNodeUnfocused")
+ ![工具箱父節點未取得焦點](../../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")
 
  **未取得焦點的父節點**
 
- ![工具箱子節點未取得焦點](../../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303年 196_ToolboxChildNodeUnfocused")
+ ![工具箱子節點未取得焦點](../../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")
 
  **未取得焦點的子節點**
 
@@ -4199,7 +4199,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  從 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 分類
 
- Border
+ 框線
 
  無
 

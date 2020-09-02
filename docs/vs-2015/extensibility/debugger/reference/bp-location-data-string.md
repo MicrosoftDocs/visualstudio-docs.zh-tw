@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_DATA_STRING | Microsoft Docs
+title: BP_LOCATION_DATA_STRING |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 82caf285d73ab1b9b49b9546012bbb45f25c3320
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153427"
 ---
-# <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
+# <a name="bp_location_data_string"></a>BP_LOCATION_DATA_STRING
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-用於設定資料中斷點的使用者可以輸入從整合式的開發環境 (IDE) 的字串為基礎。  
+用來設定資料中斷點，這些中斷點是以使用者可從整合式開發環境輸入的字串為基礎 (IDE) 。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,26 +37,26 @@ typedef struct _BP_LOCATION_DATA_STRING { 
   
 ## <a name="members"></a>成員  
  `pThread`  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示中斷點發生的執行緒。  
+ 代表中斷點發生所在之執行緒的 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 物件。  
   
  `bstrContext`  
- 程式碼內的中斷點，通常是方法或函式的名稱為 呼叫堆疊上看到的內容。  
+ 程式碼內中斷點的內容，通常是在呼叫堆疊上看到的方法或函式名稱。  
   
  `bstrDataExpr`  
- 資料字串，使用者會進入設定中斷點。  
+ 使用者輸入以設定中斷點的資料字串。  
   
  `dwNumElements`  
- 中斷點會發生的資料字串中的項目數目。  
+ 發生中斷點的資料字串中的元素數目。  
   
 ## <a name="remarks"></a>備註  
- 此結構是隸屬[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構的聯集的一部分。  
+ 此結構是 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 結構的成員，做為聯集的一部分。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

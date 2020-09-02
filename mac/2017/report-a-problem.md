@@ -7,10 +7,10 @@ ms.author: jomatthi
 ms.date: 11/16/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
 ms.openlocfilehash: 3513f4e120db3bab61348f0ee1f0f452d09ded15
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66501001"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>如何在 Visual Studio for Mac 中回報問題
@@ -52,7 +52,7 @@ ms.locfileid: "66501001"
 
    ![回報新問題](media/report-problem-image5.png)
 
-1. 選擇 **"下一步**"以移動到"**包含附件"** 選項卡。在這裡，您可以捕獲當前螢幕並將其發送到 Microsoft。 若要附加記錄檔，請按一下![附加記錄](media/report-problem-attach-logs.png)圖示，或是若要附加其他螢幕擷取畫面和其他檔案，請按一下![附加檔案](media/report-problem-attach-file.png)圖示。
+1. 選取 **[下一步** ] 以移至 [ **包含附件** ] 索引標籤。您可以在這裡抓取目前的畫面，以將其傳送給 Microsoft。 若要附加記錄檔，請按一下![附加記錄](media/report-problem-attach-logs.png)圖示，或是若要附加其他螢幕擷取畫面和其他檔案，請按一下![附加檔案](media/report-problem-attach-file.png)圖示。
 
    ![將螢幕擷取畫面附加到 Visual Studio for Mac 問題報告](media/report-problem-image6.png)
 

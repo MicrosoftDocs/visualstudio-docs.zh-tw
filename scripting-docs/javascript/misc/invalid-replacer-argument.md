@@ -16,21 +16,21 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 452af60c37e4a56996438cc2957e9b69ccee98ef
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816822"
 ---
 # <a name="invalid-replacer-argument"></a>無效的取代子引數
-嘗試使用不正確 `JSON.stringify` 引數叫用。 `replacer`引數必須是函式或陣列。  
+嘗試使用不正確 `JSON.stringify` 引數進行叫用。 `replacer`引數必須是函式或陣列。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
 - 將 `replacer` 引數變更為函式或陣列。  
   
 ## <a name="example"></a>範例  
- 這個範例中的程式碼會造成執行階段錯誤，因為 `memberfilter` 是物件，而不是函式或陣列。  
+ 此範例中的程式碼會造成執行階段錯誤，因為 `memberfilter` 是物件，而不是函式或陣列。  
   
 ```JavaScript  
 var contact = new Object();  
@@ -46,5 +46,5 @@ var jsontext = JSON.stringify(contact, memberfilter, "\t");
   
 ## <a name="see-also"></a>另請參閱  
  [JSON 物件](../../javascript/reference/json-object-javascript.md)   
- [JSON. parse 函式](../../javascript/reference/json-parse-function-javascript.md)   
+ [JSON. parse 函數](../../javascript/reference/json-parse-function-javascript.md)   
  [JavaScript 執行階段錯誤](../../javascript/reference/javascript-run-time-errors.md)

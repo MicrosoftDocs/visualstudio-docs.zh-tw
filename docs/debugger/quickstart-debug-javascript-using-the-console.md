@@ -17,15 +17,15 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e56350c2fd0583d3fef4e77e559a4df1fd894663
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348102"
 ---
-# <a name="debug-javascript-using-the-console-in-visual-studio"></a>在 Visual Studio 中使用主控台的 Debug JavaScript
+# <a name="debug-javascript-using-the-console-in-visual-studio"></a>在 Visual Studio 中使用主控台來調試 JavaScript
 
-您可以使用 [JavaScript 主控台] 視窗，與使用 JavaScript 建立的 UWP 應用程式互動並加以偵測。 UWP 應用程式和使用 Visual Studio Tools 建立的應用程式都支援這些功能 Apache Cordova。 如需主控台命令參考，請參閱 [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017)。
+您可以使用 [JavaScript 主控台] 視窗，與使用 JavaScript 建立的 UWP 應用程式進行互動和偵測。 UWP 應用程式和使用 Visual Studio Tools 針對 Apache Cordova 所建立的應用程式支援這些功能。 如需主控台命令參考，請參閱 [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017)。
 
 [JavaScript 主控台] 視窗可讓您：
 
@@ -44,9 +44,9 @@ ms.locfileid: "85348102"
 > [!TIP]
 > 如果 [JavaScript 主控台] 視窗已關閉，請選擇 [ **Debug** >  **Windows**  >  **JavaScript 主控台**] 以重新開啟它。 只有在指令碼偵錯工作階段期間，才會出現此視窗。
 
-使用 [JavaScript 主控台] 視窗，您可以與 App 互動，而不需要停止和重新啟動偵錯工具。 如需詳細資訊，請參閱重新整理[應用程式（JavaScript）](../debugger/refresh-an-app-javascript.md)。 如需其他 JavaScript 偵錯工具功能的詳細資訊，例如使用 DOM 總管和設定中斷點，請參閱[快速入門： Visual Studio 中的 DEBUG HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)和[debug apps](debugging-windows-store-and-windows-universal-apps.md)。
+使用 [JavaScript 主控台] 視窗，您可以與 App 互動，而不需要停止和重新啟動偵錯工具。 如需詳細資訊，請參閱 [ (JavaScript) 重新整理應用程式 ](../debugger/refresh-an-app-javascript.md)。 如需其他 JavaScript 偵錯工具功能（例如使用 DOM 總管和設定中斷點）的詳細資訊，請參閱快速入門：[在 Visual Studio 中偵錯工具的](debugging-windows-store-and-windows-universal-apps.md) [HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)和偵錯工具。
 
-## <a name="debug-by-using-the-javascript-console-window"></a><a name="InteractiveConsole"></a>使用 [JavaScript 主控台] 視窗進行偵錯工具
+## <a name="debug-by-using-the-javascript-console-window"></a><a name="InteractiveConsole"></a> 使用 JavaScript 主控台視窗進行偵錯工具
 下列步驟會建立 `FlipView` App，並顯示如何以互動方式為 JavaScript 程式碼錯誤偵錯。
 
 > [!NOTE]
@@ -54,9 +54,9 @@ ms.locfileid: "85348102"
 
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>在 FlipView App 中為 JavaScript 程式碼偵錯
 
-1. **選擇 [** 檔案] [新增] [專案]，在 Visual Studio 中建立新的方案  >  ** **。
+1. **選擇 [** 檔案  >  **新增專案**]，在 Visual Studio 中建立新的方案。
 
-2. 選擇 [ **JavaScript**] [  >  **Windows 通用**]，然後選擇 [ **WinJS 應用程式**]。
+2. 選擇 [ **JavaScript**  >  **Windows 通用**]，然後選擇 [ **WinJS 應用程式**]。
 
 3. 輸入專案的名稱，例如 `FlipViewApp`，然後選擇 [確定] **** 建立應用程式。
 
@@ -136,7 +136,7 @@ ms.locfileid: "85348102"
     })();
     ```
 
-7. 如果尚未選取 [調試目標]，請從 [**調試**] 工具列上 [**裝置**] 按鈕旁邊的下拉式清單中選擇 [**本機電腦**]：
+7. 如果尚未選取調試目標，請從 [**調試**] 工具列上 [**裝置**] 按鈕旁邊的下拉式清單中選擇 [**本機電腦**]：
 
     ![選取偵錯目標清單](../debugger/media/js_select_target.png "JS_Select_Target")
 
@@ -144,7 +144,7 @@ ms.locfileid: "85348102"
 
     App 便會執行，但影像會遺失。 [JavaScript 主控台] 視窗中的 APPHOST 錯誤指出影像遺失。
 
-9. 在 `FlipView` 應用程式執行時， `Data.items` 在主控台視窗的輸入提示字元中輸入（在 ">>" 符號旁），然後按 enter 鍵。
+9. 當 `FlipView` 應用程式執行時， `Data.items` 在 [主控台視窗輸入提示字元] 中輸入 (">>" 符號) 然後按 enter 鍵。
 
     `items` 物件的視覺化檢視便會出現在主控台視窗中。 這表示 `items` 物件已具現化，且可在目前的指令碼內容中使用。 在主控台視窗中，您可以按一下物件的每個節點以檢視屬性值 (或使用方向鍵)。 這表示 `items._data` 物件已具現化，且可在目前的指令碼內容中使用。 預設影像 (logo.png) 仍存在於物件中，但遺失影像與預期影像顛倒。
 
@@ -180,15 +180,15 @@ ms.locfileid: "85348102"
 
 13. 選擇綠色箭頭符號以執行指令碼。
 
-14. 按 Ctrl + Alt + M，將主控台輸入提示字元切換至單行模式，然後選擇 [**清除輸入**] （紅色 "X"）以刪除輸入提示字元中的程式碼。
+14. 按 Ctrl + Alt + M，將主控台輸入提示字元切換至單行模式，然後選擇 [ **清除輸入** ] (紅色的 "X" ) 從輸入提示字元刪除程式碼。
 
 15. 在提示字元中輸入 `Data.items.length = 3` ，然後按 Enter。 這會從資料中移除多餘的項目。
 
-16. 再次檢查應用程式，您會看到正確的映射位於正確的 `FlipView` 頁面上。
+16. 再次檢查應用程式，您會看到正確的影像位於正確的 `FlipView` 頁面上。
 
 17. 在 [DOM 總管] 中，您可以看到更新的 DIV 項目，而且您可以巡覽至樹狀子目錄，以尋找預期的 IMG 項目。
 
-18. 選擇 [**調試**程式] [  >  **停止**] [切換] 或按 Shift + F5 來停止偵錯工具，然後修正原始程式碼。
+18. 選擇 [ **Debug**  >  **停止調試**程式] 或按 Shift + F5 來停止偵錯工具，然後修正原始程式碼。
 
     如需包含已更正範例程式碼的完整 default.html 頁面，請參閱[對 HTML、CSS 和 JavaScript 範例程式碼進行偵錯](../debugger/debug-html-css-and-javascript-sample-code.md)。
 
@@ -199,11 +199,11 @@ ms.locfileid: "85348102"
 
 #### <a name="to-set-a-breakpoint-and-debug-the-app"></a>設定中斷點並為 App 偵錯
 
-1. 在您先前建立之應用程式的 default.html 檔案中 `FlipView` ，開啟函式的快捷方式功能表， `updateImages()` 然後選擇 [**中斷點**] [  >  **插入中斷點**]。
+1. 在 `FlipView` 您先前建立的應用程式 default.html 檔案中，開啟函式的快捷方式功能表， `updateImages()` 然後選擇 [**中斷點**  >  **插入中斷點**]。
 
-2. 在 [**調試**] 工具列上，選擇 [**開始調試**] 按鈕旁邊下拉式清單中的 [**本機電腦**]。
+2. 在 [**調試**] 工具列上，于 [**開始調試**] 按鈕旁的下拉式清單中選擇 [**本機電腦**]。
 
-3. 選擇 [ **Debug**] [  >  **開始調試**]，或按 F5。
+3. 選擇 [ **Debug**  >  **開始調試**]，或按 F5。
 
     當執行程序到達 `updateImages()` 函式時，App 會進入中斷模式，而程式執行的目前所在行會以黃色反白顯示。
 
@@ -238,9 +238,9 @@ ms.locfileid: "85348102"
 
 單行模式提供輸入歷程記錄。 您可以使用向上鍵和向下鍵巡覽輸入歷程記錄。 當您執行指令碼時，單行模式會清除輸入提示。 若要在單行模式下執行指令碼，請按 Enter。
 
-當您執行指令碼時，多行模式不會清除輸入提示。 當您從多行模式切換至單行模式時，可以按下 [**清除輸入**] （紅色的 "X"）來清除輸入行。 若要在多行模式下執行指令碼，請按 Ctrl+Enter 或選擇視窗右下角的箭頭符號。
+當您執行指令碼時，多行模式不會清除輸入提示。 當您從多行模式切換至單行模式時，可以按下 [ **清除輸入** ] (紅色的 "X" ) 來清除輸入行。 若要在多行模式下執行指令碼，請按 Ctrl+Enter 或選擇視窗右下角的箭頭符號。
 
-## <a name="switching-the-script-execution-context"></a><a name="Switching"></a>切換腳本執行內容
+## <a name="switching-the-script-execution-context"></a><a name="Switching"></a> 切換腳本執行內容
 [JavaScript 主控台] 視窗可讓您一次與一個單一執行內容 (表示 Web 平台主機 (WWAHost.exe) 的單一執行個體) 互動。 在某些情況下，您的 App 可能會啟動主機的另一個執行個體，例如當您使用 `iframe`、共用合約、Web 背景工作或 `WebView` 控制項時。 如果主機的另一個執行個體正在執行，您可以在 [目標] **** 清單中選取執行內容，以便在執行 App 的同時，選取不同的執行內容。
 
 下圖顯示 [JavaScript 主控台] 視窗中的 [目標] 清單。

@@ -1,5 +1,5 @@
 ---
-title: 在 UWP 應用程式中的 HTML 和 CSS 的 Debug |Microsoft Docs
+title: 在 UWP 應用程式中偵錯工具的 HTML 和 CSS |Microsoft Docs
 ms.date: 07/17/2018
 ms.topic: how-to
 f1_keywords:
@@ -18,25 +18,25 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: 331cb056132a2d90a932ff250c9bdbb7e22e38af
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348258"
 ---
-# <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 應用程式中的 HTML 和 CSS 的 Debug
+# <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 應用程式中進行 HTML 和 CSS 的偵錯工具
 
-Visual Studio 針對 JavaScript 應用程式提供完整的偵錯體驗，所包含的功能對於 Internet Explorer 和 Visual Studio 開發人員而言是很熟悉的。 這些功能支援 UWP 應用程式，以及針對 Apache Cordova 使用 Visual Studio Tools 所建立的應用程式。
+Visual Studio 針對 JavaScript 應用程式提供完整的偵錯體驗，所包含的功能對於 Internet Explorer 和 Visual Studio 開發人員而言是很熟悉的。 UWP 應用程式和使用 Visual Studio Tools 針對 Apache Cordova 所建立的應用程式支援這些功能。
 
 使用 DOM 檢查工具所提供的互動式偵錯模型，您可以檢視和修改呈現的 HTML 和 CSS 程式碼。 您可以這麼做，而不需要停止並重新開始偵錯工具。
 
-如需其他 JavaScript 偵錯工具功能（例如使用 [JavaScript 主控台] 視窗和設定中斷點）的詳細資訊，請參閱[快速入門：](../debugger/quickstart-debug-javascript-using-the-console.md) [在 Visual Studio 中的](debugging-windows-store-and-windows-universal-apps.md)debug JavaScript 和 debug apps。
+如需其他 JavaScript 偵錯工具功能的相關資訊，例如使用 [JavaScript 主控台] 視窗和設定中斷點，請參閱 [快速入門：](../debugger/quickstart-debug-javascript-using-the-console.md) [在 Visual Studio 中](debugging-windows-store-and-windows-universal-apps.md)進行 javascript 和偵錯工具的偵錯工具。
 
 ## <a name="inspecting-the-live-dom"></a><a name="InspectingDOM"></a> 檢查 Llive DOM
 DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更值並立即查看結果。 這讓您能測試變更，而不需要停止並重新開始偵錯工具。 當您以此方法與頁面互動時，專案中的原始程式碼並不會變更，因此當您找到所需的程式碼修正時，您可以對原始程式碼進行變更。
 
 > [!TIP]
-> 若要避免在對原始程式碼進行變更時停止再重新開始偵錯工具，您可以使用 [偵錯] 工具列上的 [重新整理 Windows 應用程式] **** 按鈕 (或按 F4)，重新整理應用程式。 如需詳細資訊，請參閱重新整理[應用程式（JavaScript）](../debugger/refresh-an-app-javascript.md)。
+> 若要避免在對原始程式碼進行變更時停止再重新開始偵錯工具，您可以使用 [偵錯] 工具列上的 [重新整理 Windows 應用程式] **** 按鈕 (或按 F4)，重新整理應用程式。 如需詳細資訊，請參閱 [ (JavaScript) 重新整理應用程式 ](../debugger/refresh-an-app-javascript.md)。
 
 您可將 DOM 總管用於：
 
@@ -46,10 +46,10 @@ DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更�
 
 - 檢查 CSS 樣式套用到頁面項目的情形，並追蹤已套用的規則。
 
-  偵錯應用程式時，您通常需要在 DOM 總管中選取項目。 當您選取項目時，DOM 總管右邊索引標籤上的值會自動更新，以反映 DOM 總管中選取的項目。 這些索引標籤如下：[樣式] ****、[計算] ****、[配置] ****。 UWP 應用程式也支援 [**事件**] 和 [**變更**] 索引標籤。 如需選取項目的詳細資訊，請參閱 [Selecting elements](#SelectingElements)。
+  偵錯應用程式時，您通常需要在 DOM 總管中選取項目。 當您選取項目時，DOM 總管右邊索引標籤上的值會自動更新，以反映 DOM 總管中選取的項目。 這些索引標籤如下：[樣式] ****、[計算] ****、[配置] ****。 UWP 應用程式也支援 [ **事件** ] 和 [ **變更** ] 索引標籤。 如需選取項目的詳細資訊，請參閱 [Selecting elements](#SelectingElements)。
 
 > [!TIP]
-> 如果 [DOM 總管] 視窗已關閉，請選擇 [ **Debug** > **Windows**  >  **DOM 總管**] 以重新開啟它。 此視窗只有在指令碼偵錯工作階段期間才會顯示。
+> 如果 DOM 總管視窗已關閉，請選擇 [ **Debug** > **Windows**  >  **DOM 總管**重新開啟]。 此視窗只有在指令碼偵錯工作階段期間才會顯示。
 
 在接下來的程序中，我們將會經歷使用 DOM 總管以互動方式偵錯應用程式的過程。 我們將建立一個使用 `FlipView` 控制項的應用程式，然後對它進行偵錯。 應用程式包含幾個錯誤。
 
@@ -58,9 +58,9 @@ DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更�
 
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>藉由檢查 Live DOM 偵錯
 
-1. **選擇 [** 檔案] [新增] [專案]，在 Visual Studio 中建立新的方案  >  ** **。
+1. **選擇 [** 檔案  >  **新增專案**]，在 Visual Studio 中建立新的方案。
 
-2. 選擇 [ **JavaScript**] [  >  **Windows 通用**]，然後選擇 [ **WinJS 應用程式**]。
+2. 選擇 [ **JavaScript**  >  **Windows 通用**]，然後選擇 [ **WinJS 應用程式**]。
 
 3. 輸入專案的名稱，例如 `FlipViewApp`，然後選擇 [確定] **** 建立應用程式。
 
@@ -141,15 +141,15 @@ DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更�
     })();
     ```
 
-    下圖顯示我們執行此應用程式時所要看到的內容。 但是，要讓應用程式變成這樣，我們必須先修正一些 Bug。
+    下圖顯示我們要在執行此應用程式時看到的內容。 但是，要讓應用程式變成這樣，我們必須先修正一些 Bug。
 
     ![顯示預期結果的 FlipView 應用程式](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")
 
-7. 從 [**調試**] 工具列上 [**開始調試**] 按鈕旁邊的下拉式清單中，選擇 [**本機電腦**]：
+7. 從**調試**工具列上 [**開始調試**] 按鈕旁的下拉式清單中選擇 [**本機電腦**]：
 
     ![選取偵錯目標清單](../debugger/media/js_select_target.png "JS_Select_Target")
 
-8. 選擇 [**調試**  >  程式] [**開始**] [偵測]，或按 F5，以在 Debug 模式中執行您的應用程式
+8. 選擇 [ **debug**  >  ]**開始調試**程式，或按 F5，在「偵測」模式中執行您的應用程式。
 
     這會執行應用程式，但您會看到大部分的空白畫面，因為樣式有幾個 bug。 第一個 `FlipView` 影像出現在螢幕中央附近的小方形中。
 
@@ -179,16 +179,16 @@ DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更�
 
 13. 在主要 [DOM 總管] 視窗中，按兩下 `fView` DIV 元素的高度和寬度內嵌樣式。 您現在可以在這裡編輯值。 在這個案例中，我們要完全移除它們。
 
-14. 在主視窗中，按兩下 `width: 100px;height: 100px;` ，按下**Delete**鍵，然後按**enter**。 當您按下 Enter 後，新的值會立即反映在應用程式中，但您還沒有停止您的「偵錯工具」會話。
+14. 在主視窗中，按兩下 `width: 100px;height: 100px;` ，按下 **Delete** 鍵，然後按 **enter**鍵。 當您按下 Enter 鍵之後，新的值就會立即反映在應用程式中，雖然您尚未停止您的偵錯工具。
 
     > [!IMPORTANT]
     > 您可以更新 [DOM 總管] 視窗中的屬性，也可以更新 [樣式] ****、[計算] **** 和 [配置] **** 索引標籤中出現的值。
 
-15. 藉由選取或使用 Alt + Tab 切換至應用程式。
+15. 選取應用程式，或使用 Alt + Tab 切換至應用程式。
 
     現在 `FlipView` 控制項看起來比 [模擬器] 或 [Phone 模擬器] 的螢幕還大。 這不是預期的結果。 若要調查，請切換回 Visual Studio。
 
-16. 在 [DOM 總管] 中，再選取 [ **計算** ] 索引標籤並開啟高度規則。 FView 元素仍然會如預期般顯示100% 的值，但計算的值等於應用程式的螢幕高度（例如，800px、667.67 px 或一些其他值），這不是我們想要用於此應用程式的專案。 若要調查，請在接下來的步驟中，移除 DIV 元素的高度和寬度 `fView` 。
+16. 在 [DOM 總管] 中，再選取 [ **計算** ] 索引標籤並開啟高度規則。 FView 元素仍會顯示從 CSS 預期的值100%，但計算值等於應用程式的螢幕高度 (例如800px、667.67 px 或其他值) ，這不是我們想要用於此應用程式的值。 若要調查，請在接下來的步驟中移除 DIV 元素的高度和寬度 `fView` 。
 
 17. 在 [樣式] **** 索引標籤中，取消核取 `#fView` CSS 選取器的高度和寬度屬性。
 
@@ -198,13 +198,13 @@ DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更�
 
     狀況隨即有所改善。 不過，仍有另外一個問題待修正，邊界太大。
 
-19. 若要調查，請切換至 Visual Studio，然後選擇 [**配置] 索引**標籤來查看元素的方塊模型。
+19. 若要調查，請切換至 Visual Studio 並選擇 [ **配置] 索引** 標籤，以查看元素的方塊模型。
 
-    **在 [配置] 索引**標籤中，您會看到下列內容：
+    在 [ **版面** 配置] 索引標籤中，您將會看到下列內容：
 
-    - 255px （Offset）和255px （Margin）或類似的值（視您的裝置解析度而定）。
+    - 根據您的裝置解析度，255px (Offset) 和 255px (Margin) 或類似的值。
 
-      下圖顯示當您使用具有100px 位移和邊界的模擬器時，[**版面**配置] 索引標籤的外觀。
+      下圖顯示當您使用具有 100px offset 和 margin) 的模擬器時，[ **版面** 配置] 索引標籤的外觀。
 
       ![[DOM 總管] 的 [版面配置] 索引標籤](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")
 
@@ -224,11 +224,11 @@ DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更�
 
 2. 開啟 default.html，將 `"fView"` DIV 元素的高度和寬度變更為 100%，修改您的原始程式碼。
 
-3. 選擇 [偵錯] 工具列上的 [ **重新整理 Windows 應用程式** ] 按鈕 (或按 F4)。 按鈕看起來像這樣： [重新整理![Windows 應用程式] 按鈕](../debugger/media/js_refresh.png "JS_Refresh")。
+3. 選擇 [偵錯] 工具列上的 [ **重新整理 Windows 應用程式** ] 按鈕 (或按 F4)。 此按鈕看起來像這樣： [重新整理 ![Windows 應用程式] 按鈕](../debugger/media/js_refresh.png "JS_Refresh")。
 
     應用程式頁面會重新載入，模擬器或 Phone 模擬器會回到前景。
 
-    如需重新整理功能的詳細資訊，請參閱重新整理[應用程式（JavaScript）](../debugger/refresh-an-app-javascript.md)。
+    如需重新整理功能的詳細資訊，請參閱 [ (JavaScript) 重新整理應用程式 ](../debugger/refresh-an-app-javascript.md)。
 
 ## <a name="selecting-elements"></a><a name="SelectingElements"></a> Selecting elements
 偵錯應用程式時，您可以使用三種方式選取 DOM 項目：

@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c251a1539b42da2b4e92c2996457075f3c3be135
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302606"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315170"
 ---
 # <a name="test-generation"></a>測試產生
 
@@ -235,7 +235,7 @@ namespace MyTests
 ```
 
 <a name="further-reading"></a>
-## <a name="further-reading"></a>深入閱讀
+## <a name="further-reading"></a>延伸閱讀
 
 * [程式碼繫結測試](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
 * [一項掌控全場的測試](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)

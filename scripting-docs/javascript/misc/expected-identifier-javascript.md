@@ -1,5 +1,5 @@
 ---
-title: 預期的識別碼（JavaScript） |Microsoft Docs
+title: 需要 (JavaScript) 的識別碼 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 71f5e4363481745887371e7d25e308b2856dc00c
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816523"
 ---
 # <a name="expected-identifier-javascript"></a>必須是識別項 (JavaScript)
-您在需要其中一個專案的內容中使用了除了識別碼以外的其他專案。 識別碼可以是：  
+您在需要的內容中使用了識別碼以外的內容。 識別碼可以是：  
   
 - 變數、  
   

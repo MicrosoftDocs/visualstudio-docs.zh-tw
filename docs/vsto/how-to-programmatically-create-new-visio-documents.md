@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 171ad93caf6b5c13d000073a0d7f7e82282b9b4a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541527"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>如何：以程式設計方式建立新的 Visio 檔
@@ -42,7 +42,7 @@ ms.locfileid: "85541527"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#2)]
 
-## <a name="create-stencils-copied-from-existing-stencils"></a>建立從現有樣板複製的樣板
+## <a name="create-stencils-copied-from-existing-stencils"></a>建立從現有的模版複製的樣板
  Microsoft.Office.Interop.Visio.Documents.Add [myTemplate.vst](/office/vba/api/Visio.Documents.Add) 方法可建立現有 Visio 樣板複本的新樣板。 您必須提供樣板的檔案名稱和完整路徑。
 
 ### <a name="to-create-a-new-stencil-that-is-copied-from-an-existing-stencil"></a>建立從現有樣板複製的新樣板
@@ -52,8 +52,8 @@ ms.locfileid: "85541527"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#3)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#3)]
 
-## <a name="create-documents-based-on-existing-templates"></a>建立以現有範本為基礎的檔
- `Microsoft.Office.Interop.Visio.Documents.Add`方法可以建立以現有 Visio 範本（ *.....* ）為基礎的新檔（ *.vsd*檔案）。 這個方法會複製屬於範本工作區一部分的樣板、樣式和設定。 您必須提供範本的檔案名稱和完整路徑。
+## <a name="create-documents-based-on-existing-templates"></a>根據現有範本建立檔
+ `Microsoft.Office.Interop.Visio.Documents.Add`方法可以建立新*檔*， (以現有的 Visio (範本為基礎的 *.vsd*檔案) ) 。 這個方法會複製屬於範本工作區一部分的樣板、樣式和設定。 您必須提供範本的檔案名稱和完整路徑。
 
 ### <a name="to-create-a-new-document-that-is-based-on-an-existing-template"></a>建立以現有範本為基礎的新文件
 
@@ -65,14 +65,14 @@ ms.locfileid: "85541527"
 ## <a name="compile-the-code"></a>編譯程式碼
  這段程式碼範例需要下列項目：
 
-- 名為的 Visio 檔 `myDrawing.vsd` 必須位於 `Test` [*我的文件*] 資料夾（windows XP 及更早版本）或 [*檔*] 資料夾（windows Vista）中名為的目錄中。
+- 名為的 Visio 檔必須位在 `myDrawing.vsd` `Test` windows XP 和舊版) 的 *我的檔* 資料夾 (的目錄中，或是 windows Vista) 的 [ *檔* ] 資料夾 (。
 
-- 名為的 Visio 檔 `myStencil.vss` 必須位於 `Test` [*我的文件*] 資料夾（windows XP 及更早版本）或 [*檔*] 資料夾（windows Vista）中名為的目錄中。
+- 名為的 Visio 檔必須位在 `myStencil.vss` `Test` windows XP 和舊版) 的 *我的檔* 資料夾 (的目錄中，或是 windows Vista) 的 [ *檔* ] 資料夾 (。
 
-- 名為的 Visio 檔 `myTemplate.vst` 必須位於 `Test` [*我的文件*] 資料夾（windows XP 及更早版本）或 [*檔*] 資料夾（windows Vista）中名為的目錄中。
+- 名為的 Visio 檔必須位在 `myTemplate.vst` `Test` windows XP 和舊版) 的 *我的檔* 資料夾 (的目錄中，或是 windows Vista) 的 [ *檔* ] 資料夾 (。
 
 ## <a name="see-also"></a>另請參閱
-- [Visio 解決方案](../vsto/visio-solutions.md)
+- [Visio 方案](../vsto/visio-solutions.md)
 - [Visio 物件模型總覽](../vsto/visio-object-model-overview.md)
 - [如何：以程式設計方式開啟 Visio 檔](../vsto/how-to-programmatically-open-visio-documents.md)
 - [如何：以程式設計方式關閉 Visio 檔](../vsto/how-to-programmatically-close-visio-documents.md)

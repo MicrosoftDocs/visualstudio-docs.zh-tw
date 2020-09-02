@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5b9c9f85ffbf4eed2fdc305a64bd3f32822dacd6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682794"
 ---
 # <a name="idiatable"></a>IDiaTable
@@ -32,24 +32,24 @@ IDiaTable : IEnumUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDiaTable`。  
+ 下表顯示的方法 `IDiaTable` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|擷取[IEnumVARIANT 介面](https://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e)這個列舉值的版本。|  
-|[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|擷取資料表的名稱。|  
-|[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|擷取資料表中的項目數。|  
-|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|擷取特定項目索引的參考。|  
+|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|抓取此列舉值的 [IEnumVARIANT 介面](https://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) 版本。|  
+|[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|抓取資料表的名稱。|  
+|[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|抓取資料表中的專案數。|  
+|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|抓取特定專案索引的參考。|  
   
 ## <a name="remarks"></a>備註  
- 這個介面會實作`IEnumUnknown`Microsoft.VisualStudio.OLE.Interop 命名空間中的列舉方法。 `IEnumUnknown`列舉型別介面會逐一查看資料表內容比更有效率[idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md)並[idiatable:: Item](../../debugger/debug-interface-access/idiatable-item.md)方法。  
+ 這個介面會實 `IEnumUnknown` VisualStudio 命名空間中的列舉方法。 `IEnumUnknown`列舉介面對於反覆運算資料表內容比[IDiaTable：： Get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)和[IDiaTable：： Item](../../debugger/debug-interface-access/idiatable-item.md)方法更有效率。  
   
- 解譯`IUnknown`介面傳回從其中`IDiaTable::Item`方法或`Next`方法 （在 Microsoft.VisualStudio.OLE.Interop 命名空間中） 會相依於資料表的類型。 例如，如果`IDiaTable`介面代表插入的來源清單`IUnknown`介面應該查詢[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)介面。  
+ `IUnknown`從 `IDiaTable::Item` 方法或 VisualStudio 命名空間中的方法所傳回的介面解釋， `Next` (在中，) 相依于資料表的型別。 例如，如果 `IDiaTable` 介面代表插入的來源清單，則 `IUnknown` 應該針對 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) 介面查詢介面。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 取得這個介面，藉由呼叫[idiaenumtables:: Item](../../debugger/debug-interface-access/idiaenumtables-item.md)或是[idiaenumtables:: Next](../../debugger/debug-interface-access/idiaenumtables-next.md)方法。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 藉由呼叫 [IDiaEnumTables：： Item](../../debugger/debug-interface-access/idiaenumtables-item.md) 或 [IDiaEnumTables：： Next](../../debugger/debug-interface-access/idiaenumtables-next.md) 方法來取得這個介面。  
   
- 以實作下列介面`IDiaTable`介面 (也就是您可以查詢`IDiaTable`其中一個下列介面的介面):  
+ 下列介面會使用介面來執行 `IDiaTable` (也就是，您可以在介面中查詢 `IDiaTable` 下列其中一個介面) ：  
   
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
   
@@ -66,10 +66,10 @@ IDiaTable : IEnumUnknown
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
   
 ## <a name="example"></a>範例  
- 第一個函式， `ShowTableNames`，工作階段中會顯示所有資料表的名稱。 第二個函式， `GetTable`，搜尋所有實作指定的介面的資料表中的資料表。 第三個函式中， `UseTable`，示範如何使用`GetTable`函式。  
+ 第一個函數會 `ShowTableNames` 顯示會話中所有資料表的名稱。 第二個函式 `GetTable` 會搜尋所有資料表，以取得執行指定介面的資料表。 第三個函式會示範 `UseTable` 如何使用 `GetTable` 函數。  
   
 > [!NOTE]
-> `CDiaBSTR` 是一個類別，包裝`BSTR`並可自動處理具現化超出範圍時釋出的字串。  
+> `CDiaBSTR` 是一個類別，會在具現 `BSTR` 化超出範圍時，包裝和自動處理釋出字串。  
   
 ```cpp#  
 void ShowTableNames(IDiaSession *pSession)  
@@ -134,14 +134,14 @@ void UseTable(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>需求  
- 標頭：dia2.h  
+ 標頭： Dia2。h  
   
- 程式庫： diaguids.lib  
+ 程式庫： diaguids .lib  
   
- DLL: msdia80.dll  
+ DLL： msdia80.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [ (Debug 介面存取 SDK) 介面 ](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
- [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)   
+ [IDiaEnumTables：： Item](../../debugger/debug-interface-access/idiaenumtables-item.md)   
  [IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)

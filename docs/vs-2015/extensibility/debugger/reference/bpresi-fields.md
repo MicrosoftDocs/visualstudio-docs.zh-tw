@@ -1,5 +1,5 @@
 ---
-title: BPRESI_FIELDS | Microsoft Docs
+title: BPRESI_FIELDS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 52a4b9719b03c353dd3933c16b6f494f19f9c6ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153205"
 ---
-# <a name="bpresifields"></a>BPRESI_FIELDS
+# <a name="bpresi_fields"></a>BPRESI_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定要擷取有關中斷點的成功解決方式的資訊。  
+指定要抓取的資訊，以取得中斷點的成功解析。  
   
 ## <a name="syntax"></a>語法  
   
@@ -47,32 +47,32 @@ public enum enum_BPRESI_FIELDS { 
   
 ## <a name="members"></a>成員  
  BPRESI_BPRESLOCATION  
- 初始化/使用`bpResLocation`（中斷點解析位置） 欄位[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)結構。  
+ 初始化/使用 `bpResLocation` [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 結構的 (中斷點解析位置) 欄位。  
   
  BPRESI_PROGRAM  
- 初始化/使用`pProgram`欄位`BP_RESOLUTION_INFO`結構。  
+ 初始化/使用 `pProgram` 結構的欄位 `BP_RESOLUTION_INFO` 。  
   
  BPRESI_THREAD  
- 初始化/使用`pThread`欄位`BP_RESOLUTION_INFO`結構。  
+ 初始化/使用 `pThread` 結構的欄位 `BP_RESOLUTION_INFO` 。  
   
  BPRESI_ALLFIELDS  
  指定所有欄位。  
   
 ## <a name="remarks"></a>備註  
- 傳遞給[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)方法，以表示哪些欄位[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)結構會進行初始化。  
+ 傳遞至 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) 方法，以指出要初始化 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 結構的哪些欄位。  
   
- 這些旗標也可用來表示欄位`BP_RESOLUTION_INFO`結構會使用和有效時傳回該結構。  
+ 這些旗標也可用來指出 `BP_RESOLUTION_INFO` 當傳回該結構時，要使用和有效的結構欄位。  
   
- 這些值可能會合併的位元`OR`。  
+ 這些值可能會與位結合 `OR` 。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

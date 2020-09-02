@@ -1,5 +1,5 @@
 ---
-title: ATTACH_REASON | Microsoft Docs
+title: ATTACH_REASON |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c66894fe0515b28037bbb2a19715fa09cbf9fa62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153595"
 ---
-# <a name="attachreason"></a>ATTACH_REASON
+# <a name="attach_reason"></a>ATTACH_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定偵錯引擎 (DE) 附加至程式節點的原因。  
+指定 debug engine (DE) 附加至程式節點的原因。  
   
 ## <a name="syntax"></a>語法  
   
@@ -45,25 +45,25 @@ public enum enum_ATTACH_REASON { 
   
 ## <a name="members"></a>成員  
  ATTACH_REASON_AUTO  
- 附加，因為處理序目前正在偵錯模式。  
+ 附加，因為進程目前處於「偵測」模式。  
   
  ATTACH_REASON_LAUNCH  
- 附加，因為處理序已啟動。  
+ 附加，因為進程已啟動。  
   
  ATTACH_REASON_USER  
- 由於使用者要求附加。  
+ 因為使用者要求而附加。  
   
 ## <a name="remarks"></a>備註  
- 這些值用做為參數[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)並[附加](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)方法。  
+ 這些值會當做 [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md) 和 [附加](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) 方法的參數使用。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
- [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)
+ [附加](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

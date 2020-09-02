@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetSize |Microsoft Docs
+title: IDebugDocumentText2：： GetSize |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1f6d438db999e2e0b2aa85c45c0b38333238755e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200204"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取文件中的這個位置的文字的大小。  
+抓取檔中這個位置的文字大小。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,18 +42,18 @@ int GetSize( 
   
 #### <a name="parameters"></a>參數  
  `pcNumLines`  
- [out]傳回的文字行數。  
+ 擴展傳回文字的行數。  
   
  `pcNumChars`  
- [out]傳回文字的字元數目。  
+ 擴展傳回文字的字元數。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- [C++只]如果不需要特定的值，傳遞參數為 NULL。  
+ [僅限 c + +]如果不需要特定的值，請針對參數傳遞 Null。  
   
- [C#只]必須指定這兩個參數。  
+ [僅限 c #]這兩個參數都必須指定。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

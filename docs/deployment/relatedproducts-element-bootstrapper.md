@@ -1,5 +1,5 @@
 ---
-title: '&lt;RelatedProducts&gt;項目 （啟動載入器） |Microsoft Docs'
+title: '&lt;啟動載入器 &gt;)  (RelatedProducts 元素 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,14 +22,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 42756b21e631ec14e9c590833f6f0e95a317cc22
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747463"
 ---
-# <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt;項目 （啟動載入器）
-`RelatedProducts`項目定義，或是相依於目前的產品中包含其他產品。
+# <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;啟動載入器 &gt;)  (RelatedProducts 元素
+`RelatedProducts`元素會定義相依于或包含在目前產品中的其他產品。
 
 ## <a name="syntax"></a>語法
 
@@ -50,31 +50,31 @@ ms.locfileid: "66747463"
 ```
 
 ## <a name="elements-and-attributes"></a>元素和屬性
- `RelatedProducts`項目是子系`Product`項目。 它沒有任何屬性。
+ `RelatedProducts`元素是元素的子系 `Product` 。 它沒有任何屬性。
 
 ## <a name="dependsonproduct"></a>DependsOnProduct
- `DependsOnProduct`項目表示目前的產品取決為指定的產品，並為指定的產品，應該在目前之前安裝。 它是子系`RelatedProducts`項目。 A`RelatedProducts`項目可能會有一或多個`DependsOnProduct`項目。
+ `DependsOnProduct`元素表示目前的產品取決於已命名的產品，而且應該在目前的產品之前安裝命名產品。 它是專案的子系 `RelatedProducts` 。 `RelatedProducts`元素可能有一或多個 `DependsOnProduct` 元素。
 
  `DependsOnProduct` 具有下列屬性。
 
 |屬性|描述|
 |---------------|-----------------|
-|`Code`|包含的產品，為所指定的程式碼名稱`ProductCode`屬性的`Product`項目。 如需詳細資訊，請參閱 < [\<產品 > 項目](../deployment/product-element-bootstrapper.md)。|
+|`Code`|所含產品的代碼名稱，如元素的屬性所指定 `ProductCode` `Product` 。 如需詳細資訊，請參閱[ \<Product> 元素](../deployment/product-element-bootstrapper.md)。|
 
 ## <a name="eitherproducts"></a>EitherProducts
- `EitherProducts`項目會定義零或多個`DependsOnProduct`項目，且沒有屬性。 至少一個`DependsOnProduct`此集中之前必須先安裝目前的產品。 A`RelatedProducts`項目可以有零或多個`EitherProducts`項目。
+ `EitherProducts`元素定義零或多個 `DependsOnProduct` 元素，而且沒有任何屬性。 在 `DependsOnProduct` 目前的產品之前，必須先安裝此集合中至少一個。 `RelatedProducts`元素可以有零或多個 `EitherProducts` 元素。
 
 ## <a name="includesproduct"></a>IncludesProduct
- `IncludesProduct`項目表示產品隨附於目前的安裝，而且不需要另外安裝。 它是子系`RelatedProducts`項目。 A`RelatedProducts`項目可能會有一或多個`IncludesProduct`項目。
+ `IncludesProduct`元素表示產品隨附于目前的安裝，而且不需要個別安裝。 它是專案的子系 `RelatedProducts` 。 `RelatedProducts`元素可能有一或多個 `IncludesProduct` 元素。
 
  `IncludesProduct` 具有下列屬性。
 
 |屬性|描述|
 |---------------|-----------------|
-|`Code`|包含的產品，為所指定的程式碼名稱`ProductCode`屬性的`Product`項目。 如需詳細資訊，請參閱 < [\<產品 > 項目](../deployment/product-element-bootstrapper.md)。|
+|`Code`|所含產品的代碼名稱，如元素的屬性所指定 `ProductCode` `Product` 。 如需詳細資訊，請參閱[ \<Product> 元素](../deployment/product-element-bootstrapper.md)。|
 
 ## <a name="example"></a>範例
- 下列程式碼範例會指定 Microsoft 安裝程式會隨.NET Framework 中，並因此不需要另外安裝。
+ 下列程式碼範例會指定使用 .NET Framework 安裝 Microsoft 安裝程式，因此不需要個別安裝。
 
 ```xml
 <RelatedProducts>
@@ -83,4 +83,4 @@ ms.locfileid: "66747463"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [\<產品 > 項目](../deployment/product-element-bootstrapper.md)
+- [\<Product> 元素](../deployment/product-element-bootstrapper.md)

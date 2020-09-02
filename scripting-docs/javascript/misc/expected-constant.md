@@ -15,20 +15,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: efac49ccbf3c94c5b7d136ddd965b4a45a304adb
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816640"
 ---
 # <a name="expected-constant"></a>必須是常數
-您嘗試在條件式編譯測試語句中使用（非條件式編譯）變數。 條件式編譯測試語句必須評估為常數。  
+您嘗試在條件式編譯測試語句中使用 (的非條件式編譯) 變數。 條件式編譯測試語句必須評估為常數。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 將變數取代為常值。  
+- 以常值取代變數。  
   
-- 以條件式編譯變數取代變數。  
+- 使用條件式編譯變數來取代變數。  
   
 ## <a name="see-also"></a>另請參閱  
  [條件式編譯](../../javascript/advanced/conditional-compilation-javascript.md)   

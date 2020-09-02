@@ -1,5 +1,5 @@
 ---
-title: '&lt;V m e &gt; 元素（Visual Studio 中的 Office 開發）'
+title: '&lt;&gt;在 Visual Studio) 中 (Office 開發的 v m e 元素'
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 985afe50d7c6edcfdb34e2ca046f59c5f7b664a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541878"
 ---
-# <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;V m e &gt; 元素（Visual Studio 中的 Office 開發）
+# <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;&gt;在 Visual Studio) 中 (Office 開發的 v m e 元素
   `vstoRuntime` 命名空間的 `vstav3` 項目包含特定 Office 方案支援的 Visual Studio Tools for Office Runtime 版本。
 
 ## <a name="syntax"></a>語法
@@ -47,7 +47,7 @@ ms.locfileid: "85541878"
  `vstoRuntime` 沒有任何項目。
 
 ## <a name="example"></a>範例
- 下列程式碼範例說明使用 `vstoRuntime` 所部署之 Office 方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中提供之較大範例的一部分。
+ 下列程式碼範例說明使用 `vstoRuntime` 所部署之 Office 方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ```xml
 <vstav3:vstoRuntime

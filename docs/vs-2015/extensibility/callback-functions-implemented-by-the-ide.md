@@ -1,5 +1,5 @@
 ---
-title: IDE 所實作的回呼函式 |Microsoft Docs
+title: IDE 所執行的回呼函式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,50 +12,50 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: df2daef11303e85d5fe2d0bf33e3df038081db64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184524"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE 所實作的回呼函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-若要與整合做越好，並提供統一的使用者體驗，無縫整合式的開發環境 (IDE) 的原始檔控制外掛程式可以使用由 IDE 所實作的回呼函式。 此外掛程式可以呼叫這些函式在適當的時間期間將資訊傳遞給在 IDE 中; 的原始檔控制作業IDE 可以做為內嵌的項目在其原生 UI 中顯示這項資訊。 使用者會有較分散的體驗，在此案例中比若外掛程式採用自己的 UI。  
+為了與整合式開發環境整合 (IDE) 盡可能順暢地進行整合，並提供統一的終端使用者體驗，原始檔控制外掛程式可以使用 IDE 所執行的回呼函數。 外掛程式可以在原始檔控制作業期間，于適當的時間呼叫這些函式，以將資訊傳遞至 IDE;然後，IDE 可以將此資訊顯示為其原生 UI 中的內嵌元素。 在此案例中，使用者在此案例中的使用方式不會比外掛程式採用自己的 UI 更少。  
   
- Scc.h 為必要的標頭檔案。 預設位置是 \Program Files\VSIP 8.0\EnvSDK\common\inc\\。 它也會處於 \Program Files\VSIP 8.0\MSSCCI 在有原始檔控制外掛程式範例的 VSIP 資料夾\\。  
+ 必要的標頭檔是 scc. h。 預設位置為 \Program Files\VSIP 8.0 \ EnvSDK\common\inc \\ 。 它也在具有原始檔控制外掛程式範例的 VSIP 資料夾中，位於 \Program Files\VSIP 8.0 \ MSSCCI \\ 。  
   
 ## <a name="in-this-section"></a>本節內容  
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  
- 描述回呼函式，以供[SccOpenProject](../extensibility/sccopenproject-function.md)顯示從原始檔控制外掛程式，透過 IDE 的訊息。  
+ 描述 [SccOpenProject](../extensibility/sccopenproject-function.md) 使用的回呼函式，以透過 IDE 顯示來自原始檔控制外掛程式的訊息。  
   
  [POPLISTFUNC](../extensibility/poplistfunc.md)  
- 描述回呼函式，以供[SccPopulateList](../extensibility/sccpopulatelist-function.md)當 IDE 並沒有完整存取權僅適用於原始檔控制外掛程式，例如版本控制下的檔案的完整清單的資訊。  
+ 描述當 IDE 無法完整存取原始檔控制外掛程式（例如版本控制下的檔案）的完整存取權時， [SccPopulateList](../extensibility/sccpopulatelist-function.md) 所使用的回呼函式。  
   
  [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)  
- 描述回呼函式，以供[SccQueryChanges](../extensibility/sccquerychanges-function.md)作業。  
+ 描述 [SccQueryChanges](../extensibility/sccquerychanges-function.md) 作業所使用的回呼函數。  
   
  [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)  
- 描述回呼函式，以供[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)作業。  
+ 描述 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 作業所使用的回呼函數。  
   
  [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)  
- 描述設定呼叫的回呼函式[SccSetOption](../extensibility/sccsetoption-function.md) ，可讓原始檔控制外掛程式名稱變更回 IDE 進行通訊。  
+ 描述呼叫 [SccSetOption](../extensibility/sccsetoption-function.md) 所設定的回呼函式，此函式可讓原始檔控制外掛程式將名稱變更傳遞回 IDE。  
   
 ## <a name="related-sections"></a>相關章節  
  [SccOpenProject](../extensibility/sccopenproject-function.md)  
  開啟專案。  
   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)  
- 會檢查其目前狀態的檔案清單。 此外，會使用`pfnPopulate`檔案類型不符合的準則時告知呼叫端函式`nCommand`。  
+ 檢查檔案清單中的目前狀態。 此外，當檔案不 `pfnPopulate` 符合的準則時，也會使用函式來通知呼叫端 `nCommand` 。  
   
  [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)  
- 會檢查目錄和檔案的專案或在原始檔控制的專案中的清單。 每個找到的目錄和檔案名稱會傳遞至回呼函式。  
+ 檢查位於原始檔控制下的專案或專案中的目錄和檔案清單。 每個找到的目錄和檔案名都會傳遞至回呼函式。  
   
  [SccQueryChanges](../extensibility/sccquerychanges-function.md)  
- 會檢查已對一份檔案的名稱變更。 每個檔案名稱會傳遞至回呼函式，以及其變更狀態。  
+ 檢查檔案清單所做的名稱變更。 每個檔案名都會連同其變更狀態一起傳遞給回呼函式。  
   
  [SccSetOption](../extensibility/sccsetoption-function.md)  
- 設定各種不同的選項。 每個選項開頭`SCC_OPT_xxx`而且有它自己組已定義的值。  
+ 設定各種不同的選項。 每個選項的開頭都 `SCC_OPT_xxx` 是，而且有自己的定義值集合。  
   
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)  
- 描述內容的原始檔控制外掛程式 SDK 參考 > 一節。
+ 描述原始檔控制外掛程式 SDK 參考區段的內容。

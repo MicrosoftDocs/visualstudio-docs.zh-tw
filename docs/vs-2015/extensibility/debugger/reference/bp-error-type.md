@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_TYPE | Microsoft Docs
+title: BP_ERROR_TYPE |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2317fafe410cacfca1c77b669a54669ea6e2224a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153543"
 ---
-# <a name="bperrortype"></a>BP_ERROR_TYPE
+# <a name="bp_error_type"></a>BP_ERROR_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 指定中斷點的錯誤類型。  
@@ -61,51 +61,51 @@ public enum enum_BP_ERROR_TYPE { 
   
 ## <a name="members"></a>成員  
  BPET_NONE  
- 不指定任何中斷點時發生錯誤。  
+ 指定無中斷點錯誤。  
   
  BPET_TYPE_WARNING  
- 指定警告樣式中斷點時發生錯誤。  
+ 指定警告樣式的中斷點錯誤。  
   
  BPET_TYPE_ERROR  
- 指定錯誤樣式中斷點時發生錯誤。  
+ 指定錯誤樣式的中斷點錯誤。  
   
  BPET_SEV_HIGH  
- 指定高嚴重性中斷點時發生錯誤。  
+ 指定高嚴重性的中斷點錯誤。  
   
  BPET_SEV_GENERAL  
- 指定媒體嚴重性中斷點時發生錯誤。  
+ 指定中嚴重性的中斷點錯誤。  
   
  BPET_SEV_LOW  
- 指定低嚴重性中斷點時發生錯誤。  
+ 指定低嚴重性的中斷點錯誤。  
   
  BPET_TYPE_MASK  
- 指定遮罩樣式中斷點時發生錯誤。  
+ 指定遮罩樣式的中斷點錯誤。  
   
  BPET_SEV_MASK  
- 指定嚴重性遮罩樣式中斷點時發生錯誤。  
+ 指定嚴重性遮罩樣式的中斷點錯誤。  
   
  BPET_GENERAL_WARNING  
- 指定一般警告樣式中斷點時發生錯誤。  
+ 指定一般警告樣式的中斷點錯誤。  
   
  BPET_GENERAL_ERROR  
- 指定一般錯誤樣式中斷點時發生錯誤。  
+ 指定一般錯誤樣式的中斷點錯誤。  
   
  BPET_ALL  
  指定所有中斷點錯誤類型。  
   
 ## <a name="remarks"></a>備註  
- 這些值可能會合併的位元`OR`，並用於`dwType`隸屬[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)結構。 做為參數傳遞[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)方法。  
+ 這些值可能會與位結合 `OR` ，並用於 `dwType` [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 結構的成員。 以參數形式傳遞至 [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) 方法。  
   
- 中斷點錯誤型別被組成類型和嚴重性而定。 這表示中斷點錯誤類型永遠不會是型別 (例如`BPET_TYPE_ERROR`，) 或嚴重性 (比方說， `BPET_SEV_GENERAL`) 本身。 `BPET_GENERAL_WARNING` 和`BPET_GENERAL_ERROR`提供一般的警告和錯誤中斷點的預先定義的值。  
+ 中斷點錯誤類型是由型別和嚴重性所組成。 這表示，中斷點錯誤類型絕不只是類型 (例如， `BPET_TYPE_ERROR` ) 或嚴重性 (例如， `BPET_SEV_GENERAL`) 本身。 `BPET_GENERAL_WARNING` 並 `BPET_GENERAL_ERROR` 為一般警告和錯誤中斷點提供預先定義的值。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)   
  [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

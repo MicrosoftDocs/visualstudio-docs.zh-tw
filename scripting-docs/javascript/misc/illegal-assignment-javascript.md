@@ -1,5 +1,5 @@
 ---
-title: 不合法的指派（JavaScript） |Microsoft Docs
+title: " (JavaScript) 不合法的指派 |Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9dc3436412fc75fc2879ad855a369f8207e0ae49
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816952"
 ---
 # <a name="illegal-assignment-javascript"></a>無效的指派 (JavaScript)
-您嘗試將值指派給唯讀識別碼。 您無法將值指派給唯讀識別碼。 例如，主機定義的物件和外部 COM 物件。  
+您已嘗試將值指派給唯讀識別碼。 您無法將值指派給唯讀識別碼。 例如，主控制項定義的物件和外部 COM 物件。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   

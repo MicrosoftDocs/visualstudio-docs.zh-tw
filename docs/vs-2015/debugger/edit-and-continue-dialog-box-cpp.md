@@ -1,5 +1,5 @@
 ---
-title: 編輯後繼續對話方塊 (C++) |Microsoft Docs
+title: " (c + +) 的 [編輯後繼續] 對話方塊 |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: efd6d9a6628c5d5052d2195e08074e7688a71f92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704165"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>編輯後繼續對話方塊 (C++)

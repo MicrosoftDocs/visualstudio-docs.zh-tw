@@ -1,5 +1,5 @@
 ---
-title: 在 UWP 應用程式中使用預先提取的內容進行調試 |Microsoft Docs
+title: 在 UWP 應用程式中使用預先提取的內容進行偵錯工具 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 65b889452a23bb970cbee4c65455679a3473abab
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348063"
 ---
-# <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>使用 Visual Studio 中的預先提取內容來偵測 UWP 應用程式
+# <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>在 Visual Studio 中使用預先提取的內容來將 UWP 應用程式偵錯工具
 
- 若要讓您的 UWP 應用程式更具回應能力，您可以要求 Windows 將一些 web 內容（例如網頁或影像）預先載入應用程式的[WinINet](/windows/desktop/WinInet/about-wininet)快取。 這項功能稱為預先擷取。 如果是啟動時會用到的內容，這種方式就特別有效。但是，您也可以預先擷取其他經常用到的內容。 [Windows.Networking.BackgroundTransfer.ContentPrefetcher](/uwp/api/Windows.Networking.BackgroundTransfer.ContentPrefetcher) 類別的方法可讓您指定預先載入內容的 URI。 如需如何將 ContentPrefetcher 功能新增至應用程式的範例，請參閱 Windows SDK 的[內容預先擷取範例](https://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309)。
+ 為了讓 UWP 應用程式更具回應性，您可以要求 Windows 將某些 web 內容（例如網頁或影像）預先載入至應用程式的 [WinINet](/windows/desktop/WinInet/about-wininet) 快取中。 這項功能稱為預先擷取。 如果是啟動時會用到的內容，這種方式就特別有效。但是，您也可以預先擷取其他經常用到的內容。 [Windows.Networking.BackgroundTransfer.ContentPrefetcher](/uwp/api/Windows.Networking.BackgroundTransfer.ContentPrefetcher) 類別的方法可讓您指定預先載入內容的 URI。 如需如何將 ContentPrefetcher 功能新增至應用程式的範例，請參閱 Windows SDK 的[內容預先擷取範例](https://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309)。
 
  Windows 會使用啟發學習法，判斷預先擷取的發生時機、是否要預先擷取以及要下載的資源。 啟發學習法會將系統網路和電源狀況、使用者應用程式使用歷程記錄，以及先前嘗試預先擷取的結果都納入考量。 在 Visual Studio 中，您可以使用 [觸發 Microsoft Store 應用程式預先擷取]**** 命令強制 Windows 忽略 ContentPrefetcher 啟發學習法並預先載入所有指定的 Web 內容。 如果您要測試應用程式的行為或效能，並且要在已知的狀態 (已載入或未載入) 下預先擷取內容，這個命令就很有用。
 

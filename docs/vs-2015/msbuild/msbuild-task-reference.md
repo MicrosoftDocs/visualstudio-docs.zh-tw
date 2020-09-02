@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 19fe581985ec173099790311517c0442a9c29c2f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154112"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 工作參考
@@ -33,19 +33,19 @@ ms.locfileid: "68154112"
 |參數|描述|  
 |---------------|-----------------|  
 |`Condition`|選擇性的 `String` 參數。<br /><br /> `Boolean` 運算式，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 引擎會使用此運算式來決定是否要執行此工作。 如需 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 所支援條件的相關資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
-|`ContinueOnError`|選擇性參數。 可包含一或多個下列值：<br /><br /> -   **WarnAndContinue** 或 **true**。 當工作失敗時，[Target](../msbuild/target-element-msbuild.md) 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為警告。<br />-   **ErrorAndContinue**。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。<br />-   **ErrorAndStop** 或 **false** (預設值)。 當工作失敗時，就不會執行 `Target` 項目中的其餘工作和組建，並將整個 `Target` 項目與組建視為失敗。<br /><br /> 只有 4.5 版之前的 .NET Framework 版本支援 `true` 和 `false` 值。<br /><br /> 如需詳細資訊，請參閱[如何：忽略工作中的錯誤](../msbuild/how-to-ignore-errors-in-tasks.md)。|  
+|`ContinueOnError`|選擇性參數。 可包含一或多個下列值：<br /><br /> -   **WarnAndContinue** 或 **true**。 當工作失敗時， [目標](../msbuild/target-element-msbuild.md) 專案和組建中的後續工作會繼續執行，並將工作中的所有錯誤視為警告。<br />-   **ErrorAndContinue**。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。<br />-   **ErrorAndStop** 或 **false** (預設) 。 當工作失敗時，就不會執行 `Target` 項目中的其餘工作和組建，並將整個 `Target` 項目與組建視為失敗。<br /><br /> 只有 4.5 版之前的 .NET Framework 版本支援 `true` 和 `false` 值。<br /><br /> 如需詳細資訊，請參閱 [如何：忽略工作中的錯誤](../msbuild/how-to-ignore-errors-in-tasks.md)。|  
   
 ## <a name="in-this-section"></a>本節內容  
- [工作基底類別](../msbuild/task-base-class.md)  
+ [Task 基類](../msbuild/task-base-class.md)  
  將數個參數新增至從 <xref:Microsoft.Build.Utilities.Task> 類別衍生的工作。  
   
- [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)  
+ [TaskExtension 基類](../msbuild/taskextension-base-class.md)  
  將數個參數新增至從 <xref:Microsoft.Build.Tasks.TaskExtension> 類別衍生的工作。  
   
- [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)  
+ [ToolTaskExtension 基類](../msbuild/tooltaskextension-base-class.md)  
  將數個參數新增至從 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別衍生的工作。  
   
- [AL (組件連結器) 工作](../msbuild/al-assembly-linker-task.md)  
+ [AL (元件連結器) 工作](../msbuild/al-assembly-linker-task.md)  
  從一或多個模組或資源檔的檔案中，建立包含資訊清單的組件。  
   
  [AspNetCompiler 工作](../msbuild/aspnetcompiler-task.md)  
@@ -69,7 +69,7 @@ ms.locfileid: "68154112"
  [ConvertToAbsolutePath 工作](../msbuild/converttoabsolutepath-task.md)  
  將相對路徑或參考轉換為絕對路徑。  
   
- [Copy 工作](../msbuild/copy-task.md)  
+ [複製工作](../msbuild/copy-task.md)  
  將檔案複製到新位置。  
   
  [CreateCSharpManifestResourceName 工作](../msbuild/createcsharpmanifestresourcename-task.md)  
@@ -87,10 +87,10 @@ ms.locfileid: "68154112"
  [Csc 工作](../msbuild/csc-task.md)  
  叫用 Visual C# 編譯器來產生可執行檔、動態連結程式庫或程式碼模組。  
   
- [Delete 工作](../msbuild/delete-task.md)  
+ [刪除工作](../msbuild/delete-task.md)  
  刪除指定的檔案。  
   
- [Error 工作](../msbuild/error-task.md)  
+ [錯誤工作](../msbuild/error-task.md)  
  停止組建，並根據評估的條件陳述式來記錄錯誤。  
   
  [Exec 工作](../msbuild/exec-task.md)  
@@ -147,7 +147,7 @@ ms.locfileid: "68154112"
  [Message 工作](../msbuild/message-task.md)  
  在建置期間記錄訊息。  
   
- [Move 工作](../msbuild/move-task.md)  
+ [移動工作](../msbuild/move-task.md)  
  將檔案移到新位置。  
   
  [MSBuild 工作](../msbuild/msbuild-task.md)  
@@ -169,7 +169,7 @@ ms.locfileid: "68154112"
  判斷應用程式是否需要 .NET Framework 3.5 SP1。  
   
  ResGen 工作  
- 已過時。 使用 [GenerateResource 工作](../msbuild/generateresource-task.md)，將 .txt 和 .resx 檔案轉換為通用語言執行階段二進位 .resources 檔案，反之亦然。  
+ 已過時。 使用 [GenerateResource](../msbuild/generateresource-task.md) 工作工作，將 .txt 和 .resx 檔案轉換為通用語言執行時間二進位 .resources 檔案。  
   
  [ResolveAssemblyReference 工作](../msbuild/resolveassemblyreference-task.md)  
  判斷相依於指定組件的所有組件。  
@@ -190,16 +190,16 @@ ms.locfileid: "68154112"
  決定非 MSBuild 專案參考的輸出檔。  
   
  [SGen 工作](../msbuild/sgen-task.md)  
- 針對指定組件中的類型建立 XML 序列化組件。  
+ 針對指定組件中的型別建立 XML 序列化組件。  
   
  [SignFile 工作](../msbuild/signfile-task.md)  
  使用指定的憑證簽署指定的檔案。  
   
- [Touch 工作](../msbuild/touch-task.md)  
+ [觸控工作](../msbuild/touch-task.md)  
  設定檔案的存取和修改時間。  
   
  [UnregisterAssembly 工作](../msbuild/unregisterassembly-task.md)  
- 針對 COM Interop 用途將指定的組件取消註冊。  
+ 針對 COM Interop 用途取消註冊指定的組件。  
   
  [UpdateManifest 工作](../msbuild/updatemanifest-task.md)  
  更新資訊清單中選取的屬性，並重新簽署。  
@@ -207,7 +207,7 @@ ms.locfileid: "68154112"
  [Vbc 工作](../msbuild/vbc-task.md)  
  叫用 Visual Basic 編譯器來產生可執行檔、動態連結程式庫或程式碼模組。  
   
- [Warning 工作](../msbuild/warning-task.md)  
+ [警告工作](../msbuild/warning-task.md)  
  在建置期間，根據評估的條件陳述式來記錄警告。  
   
  [WriteCodeFragment 工作](../msbuild/writecodefragment-task.md)  
@@ -223,7 +223,7 @@ ms.locfileid: "68154112"
  將 XPath 查詢所指定的值設定至 XML 檔案。  
   
  [XslTransformation 工作](../msbuild/xsltransformation-task.md)  
- 使用「可延伸樣式表語言轉換」  (XSLT) 或編譯的 XSLT 轉換 XML 輸入，並輸出到輸出裝置或檔案。  
+ 使用「可延伸樣式表語言轉換」**(XSLT) 或編譯的 XSLT 轉換 XML 輸入，並輸出到輸出裝置或檔案。  
   
 ## <a name="see-also"></a>另請參閱  
  [MSBuild 參考](../msbuild/msbuild-reference.md)   

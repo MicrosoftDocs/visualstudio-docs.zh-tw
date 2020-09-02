@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 986056b1f5202c2fb94d27a8792ed3b0fe308944
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200139"
 ---
 # <a name="sccendbatch-function"></a>SccEndBatch 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-此函式結束時，原始檔控制作業的批次。 這些批次可能不是巢狀。  
+此函式會結束原始檔控制作業的批次。 這些批次可能不會被嵌套。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,15 +34,15 @@ SCCRTN SccEndBatch(void);
  無。  
   
 ## <a name="return-value"></a>傳回值  
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
-|SCC_OK|已成功完成的作業批次。|  
-|SCC_E_UNKNOWNERROR|不明確的失敗。|  
+|SCC_OK|作業批次已成功結束。|  
+|SCC_E_UNKNOWNERROR|模糊失敗。|  
   
 ## <a name="remarks"></a>備註  
- 原始檔控制批次用來跨多個專案或多個內容中執行相同的原始檔控制作業。 批次可用來在 批次作業期間消除多餘的對話方塊，從使用者體驗。 [SccBeginBatch](../extensibility/sccbeginbatch-function.md)而`SccEndBatch`函式做為一組可用來表示的開頭和結尾的作業。 它們不能巢狀。  
+ 原始檔控制批次是用來跨多個專案或多個內容執行相同的原始檔控制作業。 批次可在批次作業期間，用來消除使用者體驗中的多餘對話方塊。 [SccBeginBatch](../extensibility/sccbeginbatch-function.md)和 `SccEndBatch` 函數是用來做為配對，以指出作業的開頭和結尾。 它們無法進行嵌套。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   

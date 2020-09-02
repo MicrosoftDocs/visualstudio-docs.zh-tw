@@ -1,5 +1,5 @@
 ---
-title: Sccadd檔從SCC功能 |微軟文件
+title: SccAddFilesFromSCC 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d22527644edbf1697112f5cf8b73b8a3f72b774
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701280"
 ---
-# <a name="sccaddfilesfromscc-function"></a>SCC 函式包含檔案
-此函數將檔案清單從原始程式碼管理添加到當前打開的專案。
+# <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC 函式
+此函式會將檔案清單從原始檔控制加入目前開啟的專案。
 
 ## <a name="syntax"></a>語法
 
@@ -41,50 +41,50 @@ SCCRTN SccAddFilesFromSCC(
 ### <a name="parameters"></a>參數
  pContext
 
-[在]源代碼管理外掛程式上下文指標。
+在原始檔控制外掛程式內容指標。
 
  hWnd
 
-[在]源控件外掛程式可以用作它提供的任何對話框的父級的IDE視窗句柄。
+在IDE 視窗的控制碼，原始檔控制外掛程式可以使用它做為它所提供之任何對話方塊的父代。
 
  lpUser
 
-[進出]使用者名(最多SCC_USER_SIZE,包括空終止符)。
+[in，out]使用者名稱 (SCC_USER_SIZE，包括 null 結束字元) 。
 
  lpAuxProjPath
 
-[進出]標識項目的輔助字串(最多`SCC_PRJPATH_`大小,包括空終止字)。
+[in，out]識別專案 (的輔助字串，最大的 `SCC_PRJPATH_` 大小，包括 null 結束字元) 。
 
  cFiles
 
-[在]提供`lpFilePaths`的檔數。
+在提供的檔案數目 `lpFilePaths` 。
 
- lpFilePath
+ lpFilePaths
 
-[進出]要添加到當前項目的檔名陣列。
+[in，out]要加入至目前專案的檔案名陣列。
 
- lp目標
+ lpDestination
 
-[在]要寫入檔的目標路徑。
+在要寫入檔案的目的地路徑。
 
  lpComment
 
-[在]要應用於要添加到的每個檔的註解。
+在要套用至每個要加入之檔案的批註。
 
- pb 結果
+ pbResults
 
-[進出]設置為指示每個檔成功(非零或 TRUE)或失敗(零或 FALSE)的標誌陣列(陣列的大小`cFiles`必須至少為長)。
+[in，out]旗標的陣列，這些旗標會設定為表示成功 (非零或 TRUE) 或失敗 (零或錯誤) 每個檔案的大小上限必須至少為 `cFiles` long (。
 
 ## <a name="return-value"></a>傳回值
- 此函數的源碼管理外掛程式實現應返回以下值之一:
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：
 
 |值|描述|
 |-----------|-----------------|
-|SCC_E_PROJNOTOPEN|專案未打開。|
-|SCC_E_OPNOTPERFORMED|連線與指定的項目不同`lpAuxProjPath.`|
-|SCC_E_NOTAUTHORIZED|用戶無權更新資料庫。|
+|SCC_E_PROJNOTOPEN|專案未開啟。|
+|SCC_E_OPNOTPERFORMED|連接與指定的專案不同 `lpAuxProjPath.`|
+|SCC_E_NOTAUTHORIZED|使用者未經授權，無法更新資料庫。|
 |SCC_E_NONSPECIFICERROR|未知的錯誤。|
-|SCC_I_RELOADFILE|需要重新載入檔或專案。|
+|SCC_I_RELOADFILE|需要重載檔案或專案。|
 
 ## <a name="see-also"></a>另請參閱
-- [原始程式碼管理外掛程式 API 功能](../extensibility/source-control-plug-in-api-functions.md)
+- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

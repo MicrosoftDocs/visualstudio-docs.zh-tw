@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595627"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>在 Visual Studio 中產生類別或類型
@@ -48,7 +48,7 @@ ms.locfileid: "75595627"
 2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
+      - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
    - **滑鼠**
       - 以滑鼠右鍵按一下並選取 [快速動作與重構]**** 功能表。
       - 將游標暫留在紅色曲線上，然後按一下顯示的 ![錯誤燈泡](media/error-bulb.png) 圖示。
@@ -59,8 +59,8 @@ ms.locfileid: "75595627"
 3. 從下拉式功能表中選取其中一個選項：
 
    - 在新檔案中產生 '*TypeName*' 類別&mdash;在名為 *TypeName*.cs/.vb 的檔案中建立名為 *TypeName* 的類別
-   - 生成類 *"TypeName"*&mdash;在當前檔中創建名為*TypeName*的類。
-   - 生成嵌套類 *"TypeName"*&mdash;創建一個名為*TypeName*的類，該類嵌套在當前類中。
+   - 產生類別 '*typename*' 會 &mdash; 在目前的檔案中建立名為 *TypeName* 的類別。
+   - 產生嵌套類別 '*typename*' 會 &mdash; 在目前的類別內建立名為 *TypeName* 的類別。
    - 產生新類型...&mdash;使用您指定的所有屬性來建立新的類別或結構。
 
    > [!TIP]
@@ -74,8 +74,8 @@ ms.locfileid: "75595627"
    --- | ---
    存取 | 將類型設定為擁有 [預設]** 內部** 或 [公用]** 存取權。
    種類 | 這可以設定為 [類別]** 或 [結構]**。
-   名稱 | 此名稱無法變更且將是您已經輸入的名稱。
-   隨附此逐步解說的專案 | 如果您的方案中有多個專案，則您可以選擇要將類別/結構放在哪個專案中。
+   Name | 此名稱無法變更且將是您已經輸入的名稱。
+   專案 | 如果您的方案中有多個專案，則您可以選擇要將類別/結構放在哪個專案中。
    檔案名稱 | 您可以建立新檔案，或是將類型新增至現有的檔案。
 
 類別或結構隨即建立。 若為 C#，還會建立建構函式。
@@ -90,5 +90,5 @@ ms.locfileid: "75595627"
 
 ## <a name="see-also"></a>另請參閱
 
-- [代碼生成](../code-generation-in-visual-studio.md)
+- [程式碼產生](../code-generation-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

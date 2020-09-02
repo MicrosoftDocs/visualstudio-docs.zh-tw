@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302620"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315196"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>使用動態符號執行產生輸入
 
@@ -37,7 +37,7 @@ IntelliTest 的[條件約束規劃求解](#constraint-solver)可處理 .NET 程�
 * [整數](#integers-and-floats)和[浮點數](#integers-and-floats)
 * [物件](#objects)
 * [結構](#structs)
-* [陣列](#arrays-and-strings)和[字串](#arrays-and-strings)
+* [陣列](#arrays-and-strings) 和 [字串](#arrays-and-strings)
 
 IntelliTest 會篩選掉違反規定假設的輸入。
 
@@ -77,7 +77,7 @@ IntelliTest 在執行測試和待測程式時，會監視已執行的指令。 �
 
 如果類型不可見或欄位不[可見](#visibility)，IntelliTest 需要協助建立物件，並使其進入相關狀態，以達到最大的程式碼涵蓋範圍。 IntelliTest 可使用反映來以任意方式建立和初始化執行個體，但這通常不可取，因為它可能會使物件進入正常程式執行期間可能永遠不會發生的狀態。 相反地，IntelliTest 會依賴來自使用者的提示。
 
-## <a name="visibility"></a>可見性
+## <a name="visibility"></a>可見度
 
 .NET 中有一個詳盡的可見性模型：類型、方法、欄位和其他成員可以是**私人**、**公用**、**內部**等等。
 
@@ -133,6 +133,6 @@ IntelliTest 會嘗試將觸發相關程式行為所需的陣列和字串大小�
 
 在[開發人員社群](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)上張貼您的意見與功能建議。
 
-## <a name="further-reading"></a>深入閱讀
+## <a name="further-reading"></a>延伸閱讀
 
-* [運作方式](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)
+* [如何運作？](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

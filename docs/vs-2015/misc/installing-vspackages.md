@@ -11,10 +11,10 @@ ms.assetid: 43db03ef-ceb5-4c13-875f-90259f470cc7
 caps.latest.revision: 18
 manager: jillfra
 ms.openlocfilehash: 72eb9df3eda2535339cb7950578fd6a640a5a493
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681598"
 ---
 # <a name="installing-vspackages"></a>安裝 VSPackage
@@ -28,7 +28,7 @@ ms.locfileid: "65681598"
  描述如何發行 VSPackage 作為可安裝的產品。  
   
 ## <a name="related-sections"></a>相關章節  
- [自訂測試使用 Visual Studio SDK](https://msdn.microsoft.com/9cf7a840-dd66-4b00-90f7-e00e40370a69)  
+ [使用 Visual Studio SDK 自訂測試](https://msdn.microsoft.com/9cf7a840-dd66-4b00-90f7-e00e40370a69)  
  說明如何擴充 [!INCLUDE[vsprvstte](../includes/vsprvstte-md.md)] 以支援新類型的測試。  
   
  [Visual Studio 整合測試](https://msdn.microsoft.com/8d741735-7d93-46c2-ab93-01da7a0e016d)  

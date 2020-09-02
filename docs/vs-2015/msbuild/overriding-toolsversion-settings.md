@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 468561a627a3ad7eb477328b5afef794c7acf2c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199951"
 ---
 # <a name="overriding-toolsversion-settings"></a>覆寫 ToolsVersion 設定
@@ -114,7 +114,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     2. MSBuild.exe.config 檔案中的預設工具版本。  
   
-    3. 登錄中的預設工具版本。 如需詳細資訊，請參閱[標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)。  
+    3. 登錄中的預設工具版本。 如需詳細資訊，請參閱 [標準和自訂工具](../msbuild/standard-and-custom-toolset-configurations.md)組設定。  
   
 6. 如果未設定環境變數 `MSBUILDLEGACYDEFAULTTOOLSVERSION`，則會使用下列步驟︰  
   
@@ -129,5 +129,5 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
 ## <a name="see-also"></a>另請參閱  
  [多目標](../msbuild/msbuild-multitargeting-overview.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
- [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   
- [標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)
+ [工具組 (ToolsVersion) ](../msbuild/msbuild-toolset-toolsversion.md)   
+ [標準和自訂工具組設定](../msbuild/standard-and-custom-toolset-configurations.md)

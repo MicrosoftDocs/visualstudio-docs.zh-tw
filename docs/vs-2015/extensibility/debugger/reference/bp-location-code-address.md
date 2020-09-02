@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_ADDRESS | Microsoft Docs
+title: BP_LOCATION_CODE_ADDRESS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b23073c41f5da7d1563a6be46e0d114334527b35
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153514"
 ---
-# <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
+# <a name="bp_location_code_address"></a>BP_LOCATION_CODE_ADDRESS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-描述在程式碼中的位址中斷點的位置。  
+描述程式碼中位址的中斷點位置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,26 +37,26 @@ typedef struct _BP_LOCATION_CODE_ADDRESS { 
   
 ## <a name="members"></a>成員  
  `bstrContext`  
- 中斷點的內容，通常是呼叫堆疊上所示的方法或函式的名稱。  
+ 中斷點的內容，通常是在呼叫堆疊上看到的方法或函式名稱。  
   
  `bstrModuleUrl`  
  包含中斷點之模組的 URL。  
   
  `bstrFunction`  
- 包含中斷點的函式的名稱。  
+ 包含中斷點的函數名稱。  
   
  `bstrAddress`  
- 位址中斷點，以將它繫結的運算式評估工具會剖析[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件。  
+ 中斷點的位址，由運算式評估工具剖析，以將其系結至 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 物件。  
   
 ## <a name="remarks"></a>備註  
- 此結構是隸屬[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構的聯集的一部分。  
+ 此結構是 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 結構的成員，做為聯集的一部分。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

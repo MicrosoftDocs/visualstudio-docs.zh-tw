@@ -1,5 +1,5 @@
 ---
-title: '&lt;封裝&gt;項目 （啟動載入器） |Microsoft Docs'
+title: '&lt;啟動載入器 &gt;)  (套件元素 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab3478f701cade458ffdb97caf4541a88f52230e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66745766"
 ---
-# <a name="ltpackagegt-element-bootstrapper"></a>&lt;封裝&gt;項目 （啟動載入器）
-`Package`項目是最上層 XML 元素內的封裝檔案。
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;啟動載入器 &gt;)  (套件元素
+`Package`元素是封裝檔案內的最上層 XML 元素。
 
 ## <a name="syntax"></a>語法
 
@@ -141,16 +141,16 @@ ms.locfileid: "66745766"
 ```
 
 ## <a name="elements-and-attributes"></a>元素和屬性
- `Package`是必要元素。 它具有下列屬性。
+ `Package`需要元素。 它具有下列屬性。
 
 | 屬性 | 描述 |
 |--------------------| - |
-| `Culture` | 必要項。 定義此套件，用來決定要使用之語言的文化特性。 這個屬性是索引鍵到`Strings`項目，它會列出在安裝期間的產品名稱和錯誤訊息的特定文化特性的字串。 |
-| `Name` | 必要項。 這類顯示開發人員工具內的套件名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 這個屬性是索引鍵中的`Strings`項目，其中應包含`String`具有項目`Name`並`Culture`屬性設定為符合`Name`並`Culture`屬性`Package`。 |
-| `LicenseAgreement` | 選擇性。 指定的檔案名稱，其中包含使用者授權合約 (EULA) 的散發套件中。  這個檔案可以是純文字 ( *.txt*) 或豐富文字格式。 ( *.rtf*) |
+| `Culture` | 必要。 定義此封裝的文化特性，以決定要使用的語言。 這個屬性是元素中的索引鍵 `Strings` ，它會在安裝期間列出產品名稱和錯誤訊息的文化特性特定字串。 |
+| `Name` | 必要。 在工具中顯示給開發人員的封裝名稱，例如 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 這個屬性是元素中的索引鍵 `Strings` ，它應該包含一個專案，其中 `String` 的 `Name` 和 `Culture` 屬性設定為符合 `Name` `Culture` 的和屬性 `Package` 。 |
+| `LicenseAgreement` | 選擇性。 指定散發套件中的檔案名，其中包含 (EULA) 的使用者授權合約。  這個檔案可以是純文字 (*.txt*) 或 Rich text 格式。  (*.rtf*)  |
 
 ## <a name="example"></a>範例
- 下列程式碼範例示範轉散發.NET Framework 2.0 的完整封裝檔案。
+ 下列程式碼範例顯示可轉散發 .NET Framework 2.0 的完整封裝檔案。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -188,4 +188,4 @@ ms.locfileid: "66745766"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [產品和套件結構描述參考](../deployment/product-and-package-schema-reference.md)
+- [產品和套件架構參考](../deployment/product-and-package-schema-reference.md)
