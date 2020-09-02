@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::CanTerminateProcess |Microsoft Docs
+title: IDebugPortEx2：： CanTerminateProcess |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae67aaee2eca8ff94f1c1620c5fb6797eb37dda9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188518"
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-判斷是否可以終止處理程序。  
+判斷是否可以終止進程。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,10 +40,10 @@ HRESULT CanTerminateProcess( 
   
 #### <a name="parameters"></a>參數  
  `pPortProcess`  
- [in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示終止程序。  
+ 在代表要終止之進程的 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 物件。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回`S_OK`可以結束處理序; 否則會傳回`S_FALSE`。  
+ `S_OK`如果可以終止進程，則傳回，否則傳回 `S_FALSE` 。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   

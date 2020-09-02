@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 53db72495b64236441b9ce517c0eb25dc09a207c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283953"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>如何：隱藏編譯器警告
 
-您可以簡化組建記錄檔，方法是篩選掉一或多個類型的編譯器警告。 例如，您可能只想檢閱當您將組建記錄檔詳細等級設定為 [一般]****、[詳細資料]**** 或 [診斷]**** 時所產生的部分輸出。 如需詳細資訊，請參閱[如何：查看、儲存和設定組建記錄](../ide/how-to-view-save-and-configure-build-log-files.md)檔。
+您可以簡化組建記錄檔，方法是篩選掉一或多個類型的編譯器警告。 例如，您可能只想檢閱當您將組建記錄檔詳細等級設定為 [一般]****、[詳細資料]**** 或 [診斷]**** 時所產生的部分輸出。 如需詳細資訊的詳細資訊，請參閱 [如何：查看、儲存和設定組建記錄](../ide/how-to-view-save-and-configure-build-log-files.md)檔。
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>隱藏 Visual C# 或 F\# 的特定警告
 
@@ -25,7 +25,7 @@ ms.locfileid: "85283953"
 
 1. 在方案總管**** 中，選擇您想要隱藏警告的專案。
 
-1. 在功能表列上，選擇 [**視圖**] [  >  **屬性頁**]。
+1. 在功能表列上，選擇 [ **View**  >  **Property Pages**]。
 
 1. 選擇 [組建]**** 頁面。
 
@@ -39,7 +39,7 @@ ms.locfileid: "85283953"
 
 1. 在方案總管**** 中，選擇您想要隱藏警告的專案或原始程式檔。
 
-1. 在功能表列上，選擇 [**視圖**] [  >  **屬性頁**]。
+1. 在功能表列上，選擇 [ **View**  >  **Property Pages**]。
 
 1. 選擇 [組態屬性]**** 分類，並選擇 [C/C++]**** 分類，然後選擇 [進階]**** 頁面。
 
@@ -61,7 +61,7 @@ ms.locfileid: "85283953"
 
 1. 在方案總管**** 中，選擇您想要隱藏警告的專案。
 
-1. 在功能表列上，選擇 [**專案**]  >  **[卸載專案**]。
+1. 在功能表列上，選擇 [**專案**卸載  >  **專案**]。
 
 1. 在**方案總管**中，以滑鼠右鍵按一下開啟專案的捷徑功能表，然後選擇 [編輯 \<ProjectName>.vbproj]****。
 
@@ -102,11 +102,11 @@ ms.locfileid: "85283953"
    > </Project>
    > ```
 
-1. 將變更儲存至*vbproj*檔案。
+1. 將變更儲存至 *vbproj* 檔案。
 
-1. 在功能表列上，選擇 [**專案**] [  >  **重載專案**]。
+1. 在功能表列上，選擇 [**專案**  >  **重載專案**]。
 
-1. 在功能表列上，選擇 [**建立**] [  >  **重建方案**]。
+1. 在功能表列上，選擇 [**建立**  >  **重建方案**]。
 
     [輸出]**** 視窗不會再顯示您所指定的警告。
 

@@ -1,5 +1,5 @@
 ---
-title: 如何-啟用 CD 安裝的自動啟動 |Microsoft Docs
+title: 如何-啟用 CD 安裝的 AutoStart |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,32 +17,32 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ff96cdfe412e5016c04daa2b22922b0ec47a3a3
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382441"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>How to: Enable AutoStart for CD installations (如何：啟用 CD 安裝的 AutoStart)
-透過卸載 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 式媒體（例如 cd-rom 或 dvd-rom）部署應用程式時，您可以啟用， `AutoStart` 以便在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 插入媒體時自動啟動應用程式。
+藉由卸載 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 式媒體（例如 cd-rom 或 dvd-rom）部署應用程式時，您可以啟用， `AutoStart` 讓 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式在插入媒體時自動啟動。
 
  `AutoStart`可以在 [**專案設計**工具] 的 [**發行**] 頁面上啟用。
 
 ### <a name="to-enable-autostart"></a>啟用自動啟動
 
-1. 在**方案總管**中選取專案時，按一下 [**專案**] 功能表上的 [**屬性**]。
+1. 在 **方案總管**中選取專案時，在 [ **專案** ] 功能表上按一下 [ **屬性**]。
 
 2. 按一下 [Publish (發行)] **** 索引標籤。
 
 3. 按一下 [ **選項** ] 按鈕。
 
-     [**發行選項**] 對話方塊隨即出現。
+     [ **發行選項** ] 對話方塊隨即出現。
 
 4. 按一下 [部署]****。
 
-5. 選取 [cd**安裝後自動啟動安裝程式**] 核取方塊。
+5. 選取 [若 **要安裝 cd，請在插入光碟時自動啟動安裝** ] 核取方塊。
 
-     當應用程式發行時，會將*自動*播放檔案複製到發行位置。
+     發行應用程式時，會將 *自動完成 .inf* 檔案複製到發行位置。
 
 ## <a name="see-also"></a>另請參閱
 - [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)

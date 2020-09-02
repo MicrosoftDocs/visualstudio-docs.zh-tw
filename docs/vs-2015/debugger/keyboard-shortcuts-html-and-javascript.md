@@ -1,5 +1,5 @@
 ---
-title: 鍵盤快速鍵 （HTML 和 JavaScript） |Microsoft Docs
+title: " (HTML 和 JavaScript) 的鍵盤快速鍵 |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dedfc8e5be9b3410c978722518f50162bcd2b40b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199687"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>鍵盤快速鍵 (HTML 和 JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-適用於 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
+適用于 Windows 和 Windows Phone] (。/Image/windows_and_phone_content.png "windows_and_phone_content" )   
   
  在 Visual Studio 中使用 HTML 和 JavaScript 進行市集應用程式偵錯的鍵盤快速鍵。  
   
@@ -53,12 +53,12 @@ ms.locfileid: "68199687"
 |動作|快速鍵|  
 |------------|--------------|  
 |選取項目|CTRL+B|  
-|使用 [選取元素]  時切換顯示和隱藏網頁醒目提示方塊|Ctrl+Shift+I|  
-|使用 [以 HTML 方式編輯]  認可變更|Ctrl+Enter|  
-|使用 [以 HTML 方式編輯]  捨棄變更|Esc|  
-|將選取的 CSS 值加 1|向上鍵|  
-|將選取的 CSS 值減 1|向下鍵|  
+|使用 [選取元素]**** 時切換顯示和隱藏網頁醒目提示方塊|Ctrl+Shift+I|  
+|使用 [以 HTML 方式編輯]**** 認可變更|Ctrl+Enter|  
+|使用 [以 HTML 方式編輯]**** 捨棄變更|Esc|  
+|將選取的 CSS 值加 1|向上箭號|  
+|將選取的 CSS 值減 1|向下箭號|  
   
 ## <a name="see-also"></a>另請參閱  
- [快速入門：對 HTML 和 CSS 進行偵錯](../debugger/quickstart-debug-html-and-css.md)   
- [快速入門：針對 JavaScript 進行偵錯](../debugger/quickstart-debug-javascript-using-the-console.md)
+ [快速入門： Debug HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)

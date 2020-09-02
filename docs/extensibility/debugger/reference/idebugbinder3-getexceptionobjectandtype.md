@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::獲取異常對象和類型 |微軟文件
+title: IDebugBinder3：： GetExceptionObjectAndType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e25a0f7b4e1713a072359f1efdd962f36c50b774
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735746"
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
-此方法檢索與對象關聯的異常(如果有)。
+這個方法會抓取與物件相關聯的例外狀況（如果有的話）。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int GetExceptionObjectAndType(
 
 ## <a name="parameters"></a>參數
 `ppException`\
-[出]返回表示異常的物件。
+擴展傳回代表例外狀況的物件。
 
 `ppField`\
-[出]返回表示可能導致異常的特定欄位的物件(這可能是空值)。
+擴展傳回代表可能造成例外狀況之特定欄位的物件 (這可能是 null 值) 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 > [!NOTE]
-> 要驗證是否存在異常,請檢查`ppException`由返回的值:如果是 null 值,則沒有異常與此對象相關聯。
+> 若要確認是否有例外狀況，請檢查傳回的值 `ppException` ：如果它是 null 值，就不會有任何例外狀況與這個物件相關聯。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

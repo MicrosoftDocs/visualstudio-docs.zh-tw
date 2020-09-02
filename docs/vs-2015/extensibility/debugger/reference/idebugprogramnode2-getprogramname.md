@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetProgramName |Microsoft Docs
+title: IDebugProgramNode2：： GetProgramName |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0c46cb55140159bff12d297adbc5c0346ffe0409
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148560"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
@@ -40,16 +40,16 @@ int GetProgramName ( 
   
 #### <a name="parameters"></a>參數  
  `pbstrProgramName`  
- [out]傳回程式的名稱。  
+ 擴展傳回程序的名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 程式名稱不相同的動作，做為程式的路徑，但程式的名稱可能是這種路徑的一部分。  
+ 程式的名稱和程式的路徑不同，不過程式的名稱可能是這類路徑的一部分。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CProgram`實作的物件[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)介面。 `MakeBstr`函式會配置一份指定的字串為 BSTR。  
+ 下列範例示範如何針對實 IDebugProgramNode2 介面的簡單物件，執行這個方法 `CProgram` 。 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 函數會將 `MakeBstr` 指定之字串的複本配置為 BSTR。  
   
 ```cpp#  
 HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {    

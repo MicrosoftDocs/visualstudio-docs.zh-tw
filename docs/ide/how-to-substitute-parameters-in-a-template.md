@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 3c8b6e0570567e8eb696fda61fe9db7bbd4a2f1b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283940"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>如何：替代範本中的參數
@@ -32,7 +32,7 @@ ms.locfileid: "85283940"
     namespace $safeprojectname$
     ```
 
-1. 在範本的 *.vstemplate*檔案中，找出 `ProjectItem` 包含此檔案的元素。
+1. 在範本的 *.vstemplate* 檔案中，找出 `ProjectItem` 包含此檔案的元素。
 
 1. 將 `ProjectItem` 項目的 `ReplaceParameters` 屬性設定為 `true`：
 

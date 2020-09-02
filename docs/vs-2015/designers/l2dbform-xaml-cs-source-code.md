@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f783161865092f714955b65e6f2fa4791741cbe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664280"
 ---
-# <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
+# <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs 原始程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題包含 L2DBForm.xaml.cs 檔案中，C# 原始程式碼的內容與描述。 此檔案中所包含的 L2XDBForm 部分類別可分為三個邏輯區段：資料成員、`OnRemove` 以及 `OnAddBook` 按鈕 Click 事件處理常式。
@@ -37,7 +37,7 @@ ms.locfileid: "72664280"
 
 - 第一個條件陳述式用於輸入驗證。
 
-- 第二個陳述式會從使用者在 [加入新的書籍] 使用者介面 (UI) 區段中輸入的字串值，建立新的 <xref:System.Xml.Linq.XElement>。
+- 第二個陳述式會從使用者在 [加入新的書籍]**** 使用者介面 (UI) 區段中輸入的字串值，建立新的 <xref:System.Xml.Linq.XElement>。
 
 - 最後一個陳述式會將這個新書籍項目加入到 L2DBForm.xaml 的資料提供者中。 因此，動態資料繫結將會使用這個新項目，自動更新 UI；不需要使用者提供的任何額外程式碼。
 
@@ -135,7 +135,7 @@ namespace LinqToXmlDataBinding {
 ```
 
 ### <a name="comments"></a>註解
- 如需這些處理常式的相關 XAML 來源，請參閱 [L2DBForm.xaml 原始程式碼](../designers/l2dbform-xaml-source-code.md)。
+ 如需這些處理常式的相關 XAML 來源，請參閱[>l2dbform.xaml 原始程式碼。](../designers/l2dbform-xaml-source-code.md)
 
-## <a name="see-also"></a>請參閱
- [逐步解說： LinqToXmlDataBinding 範例](../designers/walkthrough-linqtoxmldatabinding-example.md) [L2dbform.xaml。 xaml 原始程式碼](../designers/l2dbform-xaml-source-code.md)
+## <a name="see-also"></a>另請參閱
+ [逐步解說： LinqToXmlDataBinding 範例](../designers/walkthrough-linqtoxmldatabinding-example.md) [>l2dbform.xaml 原始程式碼。 xaml 原始程式碼](../designers/l2dbform-xaml-source-code.md)
