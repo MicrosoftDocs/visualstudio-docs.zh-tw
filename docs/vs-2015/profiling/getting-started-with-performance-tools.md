@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee0cb763cdfcd049ac389b54a2348c0a733b907d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158221"
 ---
 # <a name="getting-started-with-performance-tools"></a>效能工具入門
@@ -34,12 +34,12 @@ ms.locfileid: "68158221"
   
 |工作|相關內容|  
 |----------|---------------------|  
-|**快速剖析應用程式或網站：** 若要設定及執行 Visual Studio 方案或網站的程式碼剖析工作階段中使用效能精靈。|-   [效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)<br />-   [如何：收集網站的效能資料](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
-|**設定檔的應用程式，而不需要精靈：** 了解如何使用效能工作階段屬性頁建立效能工作階段。|-   [如何：手動建立效能工作階段](../profiling/how-to-manually-create-performance-sessions.md)|  
-|**試試看吧：** 程式碼剖析的範例應用程式，以取得實際操作經驗。|-   [逐步解說：找出效能問題](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [PeopleTrax 範例](../profiling/peopletrax-sample-profiling-tools.md)|  
+|**快速剖析應用程式或網站：** 使用「效能精靈」針對 Visual Studio 方案或網站設定及執行程式碼剖析工作階段。|-   [效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)<br />-   [如何：收集網站的效能資料](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
+|**在不使用精靈的情況下對應用程式進行程式碼剖析：** 了解使用效能工作階段屬性頁建立效能工作階段。|-   [如何：手動建立效能會話](../profiling/how-to-manually-create-performance-sessions.md)|  
+|**試作︰** 對範例應用程式進行程式碼剖析以取得實際操作經驗。|-   [逐步解說：找出效能問題](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [PeopleTrax 範例](../profiling/peopletrax-sample-profiling-tools.md)|  
   
 ## <a name="see-also"></a>另請參閱  
- [概觀](../profiling/overviews-performance-tools.md)   
+ [綜述](../profiling/overviews-performance-tools.md)   
  [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)   
  [使用效能規則分析資料](../profiling/using-performance-rules-to-analyze-data.md)   
- [設定效能工作階段](../profiling/configuring-performance-sessions.md)
+ [設定效能會話](../profiling/configuring-performance-sessions.md)

@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79302837"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89313740"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>步驟 2：使用檢視與頁面範本來建立 Flask 應用程式
 
@@ -36,7 +36,7 @@ ms.locfileid: "79302837"
 
 1. 在您的專案資料夾中，建立一個名為 `HelloFlask` 的應用程式資料夾 (在 [方案總管]**** 中的專案上按一下滑鼠右鍵，然後選取 [新增]**** > [新增資料夾]****)。
 
-2. 在*HelloFlask*資料夾中，創建名為*\_\_init\_\_.py*的檔，該檔包含創建`Flask`實例並載入應用視圖的以下內容（在下一步中創建）：
+2. 在*HelloFlask*資料夾中，使用下列內容建立名為* \_ \_ \_ \_ .py*的檔案，其會建立 `Flask` 實例，並載入 (下一個步驟中建立的應用程式視圖) ：
 
     ```python
     from flask import Flask
@@ -45,7 +45,7 @@ ms.locfileid: "79302837"
     import HelloFlask.views
     ```
 
-3. 在 *HelloFlask* 資料夾中，使用下列內容來建立名為 *views.py* 的檔案。 名稱*views.py*很重要，因為您在*\_\_\_\_init .py*`import HelloFlask.views`中使用;如果名稱不匹配，您將在運行時看到錯誤。
+3. 在 *HelloFlask* 資料夾中，使用下列內容來建立名為 *views.py* 的檔案。 名稱*views.py*很重要，因為您在 `import HelloFlask.views` * \_ \_ init \_ \_ . .py*中使用; 如果名稱不相符，您將會在執行時間看到錯誤。
 
     ```python
     from flask import Flask
@@ -57,7 +57,7 @@ ms.locfileid: "79302837"
         return "Hello Flask!"
     ```
 
-    除了重命名函數和`home`路由到 之外，此代碼還包含*app.py*的頁面呈現代碼，`app`並導入在*init \_ \_ \_ \_.py*中聲明的物件。
+    除了將函式重新命名並路由至之外 `home` ，此程式碼還包含*app.py*的頁面轉譯程式碼，並匯入 `app` 在* \_ \_ init \_ \_ . .py*中宣告的物件。
 
 4. 在 *HelloFlask* 中建立名為 *templates* 的子資料夾，此子資料夾目前會維持空白。
 
@@ -82,9 +82,9 @@ ms.locfileid: "79302837"
 
     ![重構程式碼後的專案結構](media/flask/step02-project-structure.png)
 
-7. 選擇**調試** > **啟動調試**（**F5**） 或使用工具列上的**Web 服務器**按鈕（您看到的瀏覽器可能有所不同）啟動應用並打開瀏覽器。 同時嘗試 / 和 /home URL 路由。
+7. 選取 [ **Debug**  >  **開始調試**程式] (**F5**) 或使用工具列上的 [ **Web 服務器**] 按鈕 (您所看到的瀏覽器可能會有不同的) 啟動應用程式並開啟瀏覽器。 同時嘗試 / 和 /home URL 路由。
 
-8. 您也可以在程式碼的各個不同部分設定中斷點，然後重新啟動應用程式以依照該啟動順序。 例如，在 *runserver.py* 和 *HelloFlask\_* init_*.py* 的前幾行上設定中斷點，並在 *views.py* 的 `return "Hello Flask!"` 行上設定中斷點。 然後重新開機應用程式（**調試** > **重新開機****，Ctrl**+**F5，** 或下面顯示的工具列按鈕），並單一步驟 **（F10）** 代碼，或使用**F5**從每個中斷點運行。
+8. 您也可以在程式碼的各個不同部分設定中斷點，然後重新啟動應用程式以依照該啟動順序。 例如，在 *runserver.py* 和 *HelloFlask\_* init_*.py* 的前幾行上設定中斷點，並在 *views.py* 的 `return "Hello Flask!"` 行上設定中斷點。 然後，重新開機應用程式 (**Debug**  >  **重新開機**、 **Ctrl** + **F5**或如下所示的工具列按鈕) 和逐步解說 (**F10**) 程式碼，或使用**F5**從每個中斷點執行。
 
     ![Visual Studio 中偵錯工具列上的重新啟動按鈕](media/debugging-restart-toolbar-button.png)
 
@@ -98,7 +98,7 @@ ms.locfileid: "79302837"
 
     ![Visual Studio 狀態列上的原始檔控制變更按鈕](media/flask/step02-source-control-changes-button.png)
 
-1. 在 [Team Explorer]**** 中，輸入 "Refactor code" (重構程式碼) 之類的訊息，然後選取 [全部認可]****。 提交完成後，您將看到一條消息 **，>本地創建提交\<雜湊。同步以與伺服器共用更改。** 如果您想要將變更推送至遠端存放庫，請選取 [同步]****，然後選取 [傳出的認可]**** 底下的 [推送]****。 您也可以在累積多個本機認可之後，再推送至遠端。
+1. 在 [Team Explorer]**** 中，輸入 "Refactor code" (重構程式碼) 之類的訊息，然後選取 [全部認可]****。 當認可完成時，您會看到在 **本機建立的訊息認可 \<hash> 。同步以與伺服器共用您的變更。** 如果您想要將變更推送至遠端存放庫，請選取 [同步]****，然後選取 [傳出的認可]**** 底下的 [推送]****。 您也可以在累積多個本機認可之後，再推送至遠端。
 
     ![在 [Team Explorer] 中將認可推送至遠端](media/flask/step02-source-control-push-to-remote.png)
 

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f4ca1def334241999445e3f11cf142aa426d962
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75566770"
 ---
 # <a name="settings-page-project-designer"></a>設定頁面、專案設計工具
@@ -73,7 +73,7 @@ Properties.Settings.Default.Save();
 
 使用下拉式清單來選取設定類型。 最常使用的類型會出現在下拉式清單中，例如 **String**、**(Connection string)** 和 **System.Drawing.Font**。 您可以選取清單結尾的 [瀏覽]****，然後從 [選取類型]**** 對話方塊選取類型，來選擇另一個類型。 選擇類型之後，會將它新增至下拉式清單中的常見類型 (僅適用於目前解決方案)。
 
-**Scope**
+**範圍**
 
 選取 [應用程式]**** 或 [使用者]****。
 
@@ -81,7 +81,7 @@ Properties.Settings.Default.Save();
 
 使用者範圍的設定，例如系統字型，旨在用於使用者喜好設定。 使用者可以在執行階段變更這些。
 
-**價值**
+**值**
 
 與應用程式設定建立關聯的資料或值。 例如，如果設定為字型，其值可以是 **Verdana, 9.75pt, style=Bold**。
 

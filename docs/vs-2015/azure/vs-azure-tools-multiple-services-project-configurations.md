@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 59996180661806eee60d18ab4b7b5fd26f4a2e7b
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302571"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312739"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>在 Visual Studio 中設定 Azure 專案，以便使用多個服務組態
 
@@ -41,13 +41,13 @@ Visual Studio 中的 Azure 雲端服務專案包含三個組態檔：`ServiceDef
 
 將 [執行個體] **** 計數屬性設定為服務應對此角色執行的執行個體數目。
 
-將 [VM 大小]**** 屬性設為 [超小]****、[小型]****、[中型]****、[大型]**** 或 [特大]****。  有關詳細資訊，請參閱[雲服務的大小](/azure/cloud-services/cloud-services-sizes-specs)。
+將 [VM 大小]**** 屬性設為 [超小]****、[小型]****、[中型]****、[大型]**** 或 [特大]****。  如需詳細資訊，請參閱 [雲端服務的大小](/azure/cloud-services/cloud-services-sizes-specs)。
 
 ### <a name="startup-action-web-role-only"></a>啟動動作 (僅限 Web 角色)
 
 設定此屬性，可指定當您開始偵錯時，Visual Studio 應針對 HTTP 端點或 HTTPS 端點或兩者啟動網頁瀏覽器。
 
-僅當已為角色定義 HTTPS**終結點時，HTTPS 終結點**選項才可用。 您可以在 [端點] **** 屬性頁面上定義 HTTPS 端點。
+只有在您已為角色定義 HTTPS 端點時，才可以使用 **HTTPs 端點** 選項。 您可以在 [端點] **** 屬性頁面上定義 HTTPS 端點。
 
 如果您已新增 HTTPS 端點，則預設會啟用 HTTPS 端點選項，而在您開始偵錯時，Visual Studio 除了會為 HTTP 端點啟動瀏覽器之外，還會為此端點啟動瀏覽器 (假設兩種啟動選項均已啟用)。
 

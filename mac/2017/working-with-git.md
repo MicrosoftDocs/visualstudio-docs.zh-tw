@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
 ms.openlocfilehash: 33148c5202251525504864f26177da4497b5fabe
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74983565"
 ---
 # <a name="working-with-git"></a>使用 Git
@@ -91,7 +91,7 @@ Git 是一種分散式版本控制系統，可讓小組同時處理相同的文�
 
 這允許使用 [還原]、[建立修補檔案] 或 [認可] 的選項來檢視專案之每個檔案中的所有變更。
 
-要將檔提交到遠端存放庫，請按 **"提交**"，輸入提交消息，然後使用"提交"按鈕進行確認：
+若要將檔案認可到遠端存放庫，請按 [ **認可**]，輸入認可訊息，然後使用 [認可] 按鈕確認：
 
 ![認可檔案](media/version-control-gitCommit.png)
 

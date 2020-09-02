@@ -1,37 +1,37 @@
 ---
-title: 顯示導入專案
-description: 使用"顯示導入專案"在 Mac 視覺化工作室中展開"IntelliSense"。
+title: 顯示匯入專案
+description: 使用「顯示匯入專案」展開 Visual Studio for Mac 中的 IntelliSense。
 author: cobey
 ms.author: cobey
 ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 964fbbf2f46e2495184b01c47cba888a93f24ea8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75451507"
 ---
-# <a name="show-import-items"></a>顯示導入專案
+# <a name="show-import-items"></a>顯示匯入專案
 
-Mac 的 Visual Studio 可以在 IntelliSense 完成清單中顯示所有可用的類型，即使它們未導入到您的專案。 通過選擇未導入的項，正確的`using`語句將添加到原始檔案中。
+Visual Studio for Mac 可以顯示所有可用的類型，即使它們未匯入您的專案，也會出現在 IntelliSense 完成清單中。 藉由選取未匯入的專案，將會將正確的 `using` 語句新增至您的原始程式檔。
 
-![顯示導入專案概述](media/importitems-overview.gif)
+![顯示匯入專案總覽](media/importitems-overview.gif)
 
 ## <a name="how-to-enable"></a>如何啟用
 
-要啟用此功能，請通過**視覺化工作室** > **首選項**打開**首選項**，然後導航到**文字編輯器** > **IntelliSense**。 選中"**顯示導入專案**"以啟用 IntelliSense 中的其他專案。
+若要啟用這項功能，請透過**Visual Studio**喜好設定開啟**喜好**設定  >  **Preferences** ，然後流覽至**文字編輯器**  >  **IntelliSense**。 核取 [ **顯示匯入專案** ] 核取方塊，以在 IntelliSense 中啟用其他專案。
 
-![顯示導入專案選項](media/show-import-items.png)
+![顯示匯入專案選項](media/show-import-items.png)
 
-## <a name="usage"></a>使用量
+## <a name="usage"></a>使用方式
 
-啟用 **"顯示導入項"** 後，使用該功能導入專案的過程類似于 IntelliSense 中的正常操作。 鍵入代碼時，有效的項將填充完成清單。 這包括尚未導入的專案。 未導入的項將在專案右側顯示其完整命名空間，從而允許您查看要導入的專案。
+啟用 [ **顯示匯入專案**] 之後，使用功能匯入專案的程式就會類似 IntelliSense 內的一般動作。 當您輸入程式碼時，有效的專案將會填入完成清單。 這包括尚未匯入的專案。 未匯入的專案會在專案右邊顯示其完整命名空間，讓您可以查看您要提取至專案的匯入專案。
 
-![顯示導入項清單](media/show-import-items-list.png)
+![顯示匯入專案清單](media/show-import-items-list.png)
 
-在 IntelliSense 清單中，命名空間顯示在當前未由`using`語句引用的成員旁邊。 如果從清單中選擇這些專案之一，成員將添加到您的代碼_中，_`using`該語句將添加到檔的頂部。 編碼中已引用的類型的成員不會在 IntelliSense 中顯示其命名空間。
+在 IntelliSense 清單中，命名空間會顯示在目前未由語句參考的成員旁邊 `using` 。 如果您從清單中選擇其中一個專案，則會將該成員新增至您的程式碼， _並_ 將該 `using` 語句新增至檔案頂端。 已在程式碼中參考之類型的成員將不會在 IntelliSense 中顯示其命名空間。
 
 ## <a name="see-also"></a>另請參閱
 

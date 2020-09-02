@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpoint檢查和請求2::已啟用校驗和 |微軟文件
+title: IDebugBreakpointChecksumRequest2：： IsChecksumEnabled |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5c30dbdbc3c75f22331c61f42dbe9aa829020725
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735117"
 ---
 # <a name="idebugbreakpointchecksumrequest2ischecksumenabled"></a>IDebugBreakpointChecksumRequest2::IsChecksumEnabled
-確定是否為此文檔啟用了校驗和。
+判斷是否已啟用此檔的總和檢查碼。
 
 ## <a name="syntax"></a>語法
 
@@ -39,10 +39,10 @@ public int IsChecksumEnabled(
 
 ## <a name="parameters"></a>參數
 `pfChecksumEnabled`\
-[出]如果啟用了校驗和,則返回 TRUE;否則,返回 FALSE。
+擴展如果已啟用總和檢查碼，則傳回 TRUE;否則，會傳回 FALSE。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d40ed9acf9e8c82fa315517c0abc3eb6f6d3b036
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580499"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取指定的數目的列舉型別序列中的插入來源。  
+抓取列舉順序中指定數目的插入來源。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,16 +37,16 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>參數  
  celt  
- [in]要擷取列舉值中的插入來源數目。  
+ 在要抓取的列舉值中插入的來源數目。  
   
  rgelt  
- [out]傳回的陣列[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)物件，表示所需的插入的來源。  
+ 擴展傳回 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) 物件的陣列，這些物件代表所需的插入來源。  
   
  pceltFetched  
- [out]擷取列舉值中傳回插入的來源數目。  
+ 擴展傳回已提取枚舉器中插入的來源數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`如果有其他插入的來源。 否則會傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果沒有其他插入的來源，則傳回。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   

@@ -7,10 +7,10 @@ ms.date: 11/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 5CA4B8C1-2D01-46EA-A6B2-8573B324509B
 ms.openlocfilehash: 3f5304364c3c9ea39242efcae7f0646a0db909ff
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74983996"
 ---
 # <a name="create-an-offline-installer-for-visual-studio-for-mac"></a>建立 Visual Studio for Mac 的離線安裝程式

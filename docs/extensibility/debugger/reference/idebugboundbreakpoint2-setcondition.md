@@ -1,5 +1,5 @@
 ---
-title: IDebug邊界斷點2::設置條件 |微軟文件
+title: IDebugBoundBreakpoint2：： SetCondition |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f23fbe1b353378ca521fa802bdeae25fd12476df
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735456"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
-設置或更改與此綁定斷點關聯的條件。
+設定或變更與此系結中斷點相關聯的條件。
 
 ## <a name="syntax"></a>語法
 
@@ -42,13 +42,13 @@ int SetCondition( 
 
 ## <a name="parameters"></a>參數
 `bpCondition`\
-[在]描述條件[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)枚舉中的值。
+在描述條件之 [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) 列舉中的值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。 如果`E_BP_DELETED`綁定斷點物件的狀態設置`BPS_DELETED`為[(BP_STATE](../../../extensibility/debugger/reference/bp-state.md)枚舉的一部分),則返回。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 如果系結 `E_BP_DELETED` 中斷點物件的狀態設定為 `BPS_DELETED` [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) 列舉) 的 (部分，則會傳回。
 
 ## <a name="remarks"></a>備註
- 以前與此斷點關聯的任何條件都將丟失。
+ 先前與此中斷點相關聯的任何條件都會遺失。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

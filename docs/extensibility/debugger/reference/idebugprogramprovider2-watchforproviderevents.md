@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram提供程式2::觀看提供者事件 |微軟文件
+title: IDebugProgramProvider2：： WatchForProviderEvents |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4a48e082556cf96a35ed83afd5008d3240e600b1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721757"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
-允許通知進程埠事件。
+允許進程接收埠事件的通知。
 
 ## <a name="syntax"></a>語法
 
@@ -51,38 +51,38 @@ int WatchForProviderEvents(
 
 ## <a name="parameters"></a>參數
 `Flags`\
-[在][PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)枚舉中的標誌的組合。 以下標誌是此呼叫的典型標誌:
+在 [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) 列舉中的旗標組合。 以下是此呼叫的典型旗標：
 
 |旗標|描述|
 |----------|-----------------|
-|`PFLAG_REMOTE_PORT`|呼叫者在遠端電腦上運行。|
-|`PFLAG_DEBUGGEE`|當前正在調試調用方(返回有關每個節點的編組的其他資訊)。|
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|調用方已附加到調試器,但未啟動。|
-|`PFLAG_REASON_WATCH`|呼叫者希望監視事件。 如果未設置此標誌。 然後刪除回調事件,呼叫者不再接收通知。|
+|`PFLAG_REMOTE_PORT`|呼叫端正在遠端電腦上執行。|
+|`PFLAG_DEBUGGEE`|目前正在調試呼叫端 (針對每個節點) 傳回封送處理的其他相關資訊。|
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|呼叫端已附加至，但不是由偵錯工具啟動。|
+|`PFLAG_REASON_WATCH`|呼叫端想要監看事件。 如果未設定此旗標，則為。 接著移除回呼事件，呼叫端就不會再收到通知。|
 
 `pPort`\
-[在]調用進程正在運行的埠。
+在正在執行呼叫進程的埠。
 
 `processId`\
-[在]包含包含相關程式的進程 ID 的[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構。
+在 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 結構，其中包含有問題之程式的進程識別碼。
 
 `EngineFilter`\
-[在]與進程關聯的調試引擎的 GUID 陣列。
+在與進程相關聯之 debug 引擎的 Guid 陣列。
 
 `guidLaunchingEngine`\
-[在]啟動此過程的調試引擎的 GUID(如果有)。
+在啟動此進程的 debug engine GUID (是否有任何) 。
 
 `pEventCallback`\
-[在]接收事件通知的[IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)物件。
+在接收事件通知的 [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 當調用方想要刪除以前調用此方法時建立的事件處理程式時,調用方傳遞的參數與首次調用時相同,但會離開`PFLAG_REASON_WATCH`標誌。
+ 當呼叫端想要移除先前呼叫這個方法所建立的事件處理常式時，呼叫端會傳遞和第一次相同的參數，但會離開 `PFLAG_REASON_WATCH` 旗標。
 
 ## <a name="example"></a>範例
- 下面的範例展示如何為公開[IDebugProgram.Provider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)介面的**CDebugEngine**物件實現此方法。
+ 下列範例示範如何針對公開[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)介面的**CDebugEngine**物件，執行這個方法。
 
 ```cpp
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(

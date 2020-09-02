@@ -1,5 +1,5 @@
 ---
-title: DA0013：String.Split 或 String.Substring 的高用量 | Microsoft Docs
+title: DA0013：String.Split 或 String.Substring 的用量高 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,19 +18,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6ff05e7e8cc74eacb00b5ec8ff42bd48faaa12c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159189"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013：String.Split 或 String.Substring 的高用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-規則 Id |DA0013 |  
-|類別目錄 |。NET Framework 使用方式指導 |  
-|程式碼剖析方法 |取樣 |  
-|訊息 |請考慮減少使用 String.Split 和 String.Substring 函式。 |  
+規則識別碼 |DA0013 STRING.SPLIT |  
+|類別 |。NET Framework 使用指導方針 |  
+|分析方法 |取樣 |  
+|訊息 |請考慮減少使用字串. Split 和 String Substring 函數。 |  
 |規則類型 |警告 |  
   
 ## <a name="cause"></a>原因  

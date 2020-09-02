@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f283c2c1825c4b8b02fb5b044ce113231a919317
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646854"
 ---
 # <a name="ltsummarygt-javascript"></a>&lt;summary&gt; (JavaScript)
@@ -32,12 +32,12 @@ ms.locfileid: "72646854"
 ```
 
 #### <a name="parameters"></a>參數
- `locid` 選擇項。 關於函式或方法的當地語系化資訊識別項。 該識別項會是成員識別碼，或對應由 OpenAjax 中繼資料所定義訊息包中的 `name` 屬性值。 識別項類型會依據在 [\<loc>](../ide/loc-javascript.md) 元素中指定的格式而有所不同。
+ `locid` 選擇項。 關於函式或方法的當地語系化資訊識別項。 該識別項會是成員識別碼，或對應由 OpenAjax 中繼資料所定義訊息包中的 `name` 屬性值。 識別碼類型取決於元素中指定的格式 [\<loc>](../ide/loc-javascript.md) 。
 
  `description` 選擇項。 函式或方法的描述。
 
 ## <a name="remarks"></a>備註
- 用於標註函式的元素 (包括 [\<summary>](../ide/summary-javascript.md)、[\<param>](../ide/param-javascript.md) 和 [\<returns>](../ide/returns-javascript.md)) 必須放在函式主體中的任何陳述式之前。
+ 用來標注函式的專案（包括 [\<summary>](../ide/summary-javascript.md) 、 [\<param>](../ide/param-javascript.md) 和 [\<returns>](../ide/returns-javascript.md) ）必須放在函式主體中，才能在任何語句之前。
 
 ## <a name="example"></a>範例
  下列程式碼示範如何使用 `<summary>` 元素。
@@ -56,4 +56,4 @@ function areaFunction(radiusParam)
 ```
 
 ## <a name="see-also"></a>另請參閱
- [XML 文件註解](../ide/xml-documentation-comments-javascript.md)
+ [XML 檔批註](../ide/xml-documentation-comments-javascript.md)

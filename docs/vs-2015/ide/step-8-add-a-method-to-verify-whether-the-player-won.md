@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e2481693961dd03815381e9f71ee67cb73464bdf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646932"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>步驟 8：加入方法以驗證玩家是否贏了
@@ -37,9 +37,9 @@ ms.locfileid: "72646932"
 
 3. 儲存並執行程式。 玩遊戲並將所有的圖示配對。 當您贏了之後，程式會顯示恭喜 MessageBox (如下列圖片所示)，然後關閉此方塊。
 
-     ![使用 MessageBox 配對遊戲](../ide/media/express-tut4step8.png "Express_Tut4Step8")使用 MessageBox 配對遊戲
+     ![搭配 MessageBox 的配對遊戲](../ide/media/express-tut4step8.png "Express_Tut4Step8") 搭配 MessageBox 的配對遊戲
 
-### <a name="to-continue-or-review"></a>繼續或檢視
+### <a name="to-continue-or-review"></a>若要繼續或檢視
 
 - 若要移到下一個教學課程步驟，請參閱[步驟 9：嘗試其他功能](../ide/step-9-try-other-features.md)。
 

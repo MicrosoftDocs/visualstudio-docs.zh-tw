@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b80427999ad841c493e61cd704b64435f81c3914
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565600"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>專案設計工具，參考頁 (Visual Basic)
@@ -44,11 +44,11 @@ ms.locfileid: "75565600"
 > 3. [新增參考]**** 對話方塊中所示檔案的資料夾。
 > 4. 專案的 obj 資料夾 (當您將 COM 參考新增至專案時，可能會將一或多個組件新增至專案的 obj 資料夾)。
 
- **引用**
+ **參考**
 
 這份清單會顯示專案中的所有參考 (不論使用或未使用)。
 
- **新增**
+ **加入**
 
 按一下此按鈕，即可將參考或 Web 參考新增至 [參考]**** 清單。
 
@@ -68,7 +68,7 @@ ms.locfileid: "75565600"
 
 您可以在此方塊中輸入自己的命名空間，然後按一下 [新增使用者匯入]****，將其新增至匯入的命名空間清單。
 
-您可以為使用者匯入的命名空間建立別名。 為此，請在格式*別名*=*命名空間*中輸入別名和命名空間。 如果您使用長的命名空間，例如 `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`，這就非常實用。
+您可以為使用者匯入的命名空間建立別名。 若要這樣做，請在 [格式*別名* = *命名空間*] 中輸入別名和命名空間。 如果您使用長的命名空間，例如 `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`，這就非常實用。
 
  **新增使用者匯入**
 
@@ -80,7 +80,7 @@ ms.locfileid: "75565600"
 
  **更新使用者匯入**
 
-在命名空間清單中，選取使用者指定的命名空間，並在 [匯入的命名空間]**** 方塊中，輸入您想要取代的新名稱，然後按一下這個按鈕，即可將其變更為新的命名空間。 只有當指定的命名空間是您使用 [新增使用者匯入]**** 按鈕新增至清單時，此按鈕才有作用。 您可以新增下列項目：
+在命名空間清單中，選取使用者指定的命名空間，並在 [匯入的命名空間]**** 方塊中，輸入您想要取代的新名稱，然後按一下這個按鈕，即可將其變更為新的命名空間。 只有當指定的命名空間是您使用 [新增使用者匯入]**** 按鈕新增至清單時，此按鈕才有作用。 您可以新增：
 
 - 類別或命名空間，例如 <xref:System.Math?displayProperty=fullName>。
 

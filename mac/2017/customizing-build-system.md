@@ -6,17 +6,17 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
 ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74983443"
 ---
 # <a name="customizing-the-build-system"></a>自訂組建系統
 
 MSBuild 是 Microsoft 所開發的組建引擎，可用來建置主要的 .NET 應用程式。 而 Mono 架構也有它自己的 Microsoft Build Engine 實作，稱為 **xbuild**。 不過，xbuild 已遭淘汰，改為在所有作業系統上使用 MSBuild。
 
-**MSBuild**主要用於作為 Mac 視覺化工作室中專案的構建系統。
+**MSBuild** 主要用於作為 Visual Studio for Mac 中專案的組建系統。
 
 MSBuild 的運作方式為採用一組輸入 (例如來源檔案) 並將其轉換為輸出 (例如可執行檔)。 它會透過叫用編譯器等工具來達成此輸出。
 
@@ -103,5 +103,5 @@ MSBuild 中有兩種基本資料類型：*項目*和*屬性*，下列各節會�
 
 若要更詳細了解 MSBuild，可使用下列資源：
 
-* [MSBuild 概述](/visualstudio/msbuild/msbuild)
-* [MS構建概念](/visualstudio/msbuild/msbuild-concepts)
+* [MSBuild 總覽](/visualstudio/msbuild/msbuild)
+* [MSBuild 概念](/visualstudio/msbuild/msbuild-concepts)

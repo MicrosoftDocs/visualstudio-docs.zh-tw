@@ -6,15 +6,15 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
 ms.openlocfilehash: dca21119a73c03b63a273f7b4c22d70ecdb2a583
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984678"
 ---
 # <a name="editor-behavior"></a>編輯器的行為
 
-可以設定編輯器的行為，讓程式碼在撰寫時即格式化。 這些操作設置在**Visual Studio >首選項>文字編輯器>行為**）下，下面將介紹一些較常用的功能：
+可以設定編輯器的行為，讓程式碼在撰寫時即格式化。 這些動作是在 [ **文字編輯器] Visual Studio > > 喜好**設定下設定 > 行為，而一些較常用的函式則如下所述：
 
 ![編輯器的行為選項](media/source-editor-image9.png)
 

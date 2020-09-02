@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1fb5044059fa005c1d67b3b7055a294bb22e124e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62564290"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace 擴充性的 API 參考
@@ -23,12 +23,12 @@ ms.locfileid: "62564290"
 
 ## <a name="in-this-section"></a>本節內容
 
-這個命名空間包含 IntelliTrace 擴充性 Api:
+此命名空間包含 IntelliTrace 擴充性 Api：
 
 - <xref:Microsoft.VisualStudio.IntelliTrace>
 
 ## <a name="related-sections"></a>相關章節
 
-[IntelliTrace](../debugger/intellitrace.md)提供有關如何使用 IntelliTrace 偵錯資訊。
+[IntelliTrace](../debugger/intellitrace.md) 提供有關如何使用 IntelliTrace 進行調試的資訊。
 
-[開發人員程式碼範例](https://code.msdn.microsoft.com/)裝載範例應用程式示範如何使用 IntelliTrace 擴充性。
+[開發人員程式碼範例](https://code.msdn.microsoft.com/) 裝載範例應用程式，顯示如何使用 IntelliTrace 擴充性。

@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
 ms.openlocfilehash: be8f508a0055d4cd7cbacf1c728e6d73c8b281f7
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984724"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>建立和編輯自訂的 EditorConfig 檔案
@@ -79,13 +79,13 @@ EditorConfig 也支援 C# 中的[編碼慣例](/visualstudio/ide/editorconfig-co
 
 建議您重複使用專案中現有的 `.editorconfig` 檔案。 若要新增現有檔案，請執行下列作業：
 
-1. 按右鍵要添加到該資料夾的資料夾，然後選擇"**添加>添加檔**"。
+1. 以滑鼠右鍵按一下您想要新增的資料夾，然後選取 [ **新增 > 新增**檔案]。
 
 2. 瀏覽至所需檔案的目錄。
 
 3. 開頭為 `.` 的檔案 (例如 `.editorconfig`) 是 macOS 中的隱藏檔案，因此請按 **Command + Shift + .** 將 `.editorconfig` 檔案設為可見。
 
-4. 選擇檔`.editorconfig`**，然後按一下：** 打開 ：
+4. 選取檔案 `.editorconfig` ，然後按一下 [ **開啟**]：
 
     ![新增檔案視窗](media/editorconfig-image3b.png)
 

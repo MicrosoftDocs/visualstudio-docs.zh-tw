@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ed60e07c625665f92838cfbc671b03c605fda0d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567641"
 ---
-# <a name="options-dialog-box-projects-and-solutions--general"></a>選項對話方塊：專案和解決方案\>一般
+# <a name="options-dialog-box-projects-and-solutions--general"></a>選項對話方塊：一般專案和方案 \>
 
-您可以使用此頁面定義與專案和解決方案有關的 Visual Studio 行為。 要訪問這些選項，請選擇 **"工具** > **選項**"，展開**專案和解決方案**，然後選擇 **"常規**"。
+您可以使用此頁面定義與專案和解決方案有關的 Visual Studio 行為。 若要存取這些選項，請選取 [**工具**  >  **選項**]，展開 [**專案和方案**]，然後選取 **[一般**]。
 
 下列選項位於 [一般]**** 頁面上。
 
@@ -58,7 +58,7 @@ ms.locfileid: "75567641"
 
 ## <a name="show-output-window-when-build-starts"></a>建置開始時顯示輸出視窗
 
-在解決方案生成開始時，自動在 IDE 中顯示[輸出視窗](../../ide/reference/output-window.md)。
+會在解決方案組建開始時，自動在 IDE 中顯示 [ [輸出] 視窗](../../ide/reference/output-window.md) 。
 
 ## <a name="prompt-for-symbolic-renaming-when-renaming-files"></a>在重新命名檔案時提示符號重新命名
 
@@ -72,7 +72,7 @@ ms.locfileid: "75567641"
 
 選取此選項時，會在開啟解決方案時，自動開啟上次關閉此解決方案時處於開啟狀態的文件。
 
-重新開啟特定類型的檔案或設計工具可能會導致方案載入延遲。 如果不想還原解決方案以前的上下文，請取消選中此選項[以提高解決方案載入性能](../../ide/visual-studio-performance-tips-and-tricks.md#disable-automatic-file-restore)。
+重新開啟特定類型的檔案或設計工具可能會導致方案載入延遲。 如果您不想要還原解決方案先前的內容，請取消核取此選項以 [改善解決方案載入效能](../../ide/visual-studio-performance-tips-and-tricks.md#disable-automatic-file-restore) 。
 
 ::: moniker range=">=vs-2019"
 
@@ -98,6 +98,6 @@ ms.locfileid: "75567641"
 
 ## <a name="see-also"></a>另請參閱
 
-- [選項對話方塊：專案和解決方案\>位置](projects-solutions-locations-options.md)
+- [選項對話方塊：專案和方案 \> 位置](projects-solutions-locations-options.md)
 - [選項對話方塊、專案和方案、建置並執行](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [選項對話方塊、專案和方案、Web 專案](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

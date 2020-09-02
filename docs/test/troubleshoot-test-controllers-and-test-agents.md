@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 51d7e15ec71eec7134dfc49b3515385970e593a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565951"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>負載測試中測試控制器和測試代理程式的疑難排解策略
@@ -41,7 +41,7 @@ ms.locfileid: "75565951"
 
 1. 停止測試控制器服務。 在命令提示中，鍵入 `net stop vsttcontroller`。
 
-2. 打開檔*QTController.exe.config*。此檔位於控制器安裝目錄中。
+2. 開啟 *QTController.exe.config*的檔案。此檔案位於控制器安裝目錄中。
 
 3. 在該檔案的系統診斷區段中，編輯 `EqtTraceLevel` 參數的項目。 您的程式碼應該會與以下相似：
 
@@ -86,7 +86,7 @@ ms.locfileid: "75565951"
 
 當您嘗試設定測試代理程式時，可能會接收到下列錯誤：
 
-**錯誤 8110。無法連接到指定的控制器電腦或存取控制器物件。**
+**錯誤8110。無法連接到指定的控制器電腦或存取控制器物件。**
 
 在有超過一張以上網路介面卡的電腦上安裝測試控制器，便可能導致此錯誤。
 
@@ -97,7 +97,7 @@ ms.locfileid: "75565951"
 
 ### <a name="to-obtain-the-ip-address-of-the-network-adapter"></a>取得網路介面卡的 IP 位址
 
-1. 選擇 **"開始"，** 然後選擇 **"運行**"。
+1. 選擇 [ **開始**]，然後選擇 [ **執行**]。
 
      [執行]**** 對話方塊隨即顯示。
 
@@ -113,7 +113,7 @@ ms.locfileid: "75565951"
 
 1. 停止測試控制器服務。 在命令提示中，鍵入 `net stop vsttcontroller`。
 
-2. 打開檔*QTController.exe.config*。此檔位於 *%程式檔 （x86）%\微軟視覺工作室\2017_企業_通用7_IDE*。
+2. 開啟 *QTController.exe.config*的檔案。這個檔案位於 *% ProgramFiles (x86) % \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*。
 
 3. 將 `BindTo` 屬性的項目加入至應用程式設定。 指定控制器要繫結之網路介面卡的 IP 位址。 您的程式碼應該會與以下相似：
 

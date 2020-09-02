@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a5116d2487ca9f53c460e1cae8f362f3ff1bcdf8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565912"
 ---
 # <a name="troubleshoot-broken-references"></a>針對中斷參考進行疑難排解
@@ -54,7 +54,7 @@ ms.locfileid: "75565912"
 
 1. 在方案總管**** 中，以滑鼠右鍵按一下您的專案節點，然後按一下 [屬性]****。
 
-   將顯示**專案設計器**。
+   [ **專案設計** 工具] 隨即出現。
 
 1. 如果使用 Visual Basic，請選取 [參考]**** 頁面，然後按一下 [參考路徑]**** 按鈕。 在 [參考路徑]**** 對話方塊的 [資料夾]**** 欄位中，輸入包含所要參考之項目的資料夾路徑，然後按一下 [加入資料夾]**** 按鈕。
 
@@ -86,7 +86,7 @@ ms.locfileid: "75565912"
 
 ## <a name="com-component-is-not-installed-on-computer"></a>COM 元件未安裝在電腦上
 
-如果一位使用者加入了 COM 元件的參考，而第二位使用者嘗試在未安裝此元件的電腦上執行程式碼，則第二位使用者將收到參考中斷的錯誤。 在第二部電腦上安裝元件將會修正此錯誤。 有關如何在專案中使用對 COM 元件的引用的詳細資訊，請參閱[.NET 框架應用程式中的 COM 互通性](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications)。
+如果一位使用者加入了 COM 元件的參考，而第二位使用者嘗試在未安裝此元件的電腦上執行程式碼，則第二位使用者將收到參考中斷的錯誤。 在第二部電腦上安裝元件將會修正此錯誤。 如需如何在專案中使用 COM 元件參考的詳細資訊，請參閱 [.NET Framework 應用程式中的 com 互通性](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications)。
 
 ## <a name="see-also"></a>另請參閱
 

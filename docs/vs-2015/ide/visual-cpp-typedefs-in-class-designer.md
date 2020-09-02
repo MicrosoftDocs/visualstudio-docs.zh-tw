@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 980c49aafba55e29714d786e492f7bb37a8ca621
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646755"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>類別設計工具中的 Visual C++ Typedef
@@ -52,11 +52,11 @@ typedef class coord
 
  如需使用 `typedef` 類型的詳細資訊，請參閱 [(NOTINBUILD)typedef 規範](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)。
 
- C++ typedef 圖形具有 typedef 中所指定類型的圖形。 例如，如果來源宣告 `typedef class`，則圖形具有圓角和標籤 **Class**。 針對 `typedef struct`，圖形會有方角和標籤「結構」  。
+ C++ typedef 圖形具有 typedef 中所指定類型的圖形。 例如，如果來源宣告 `typedef class`，則圖形具有圓角和標籤 **Class**。 針對 `typedef struct`，圖形會有方角和標籤「結構」****。
 
  類別和結構其內可以宣告巢狀 typedef；因此，類別和結構圖形可以將巢狀 typedef 宣告顯示為巢狀圖形。
 
- Typedef 圖形支援操作功能表上的 [顯示為關聯]  和 [顯示為集合關聯]  命令。
+ Typedef 圖形支援操作功能表上的 [顯示為關聯]**** 和 [顯示為集合關聯]**** 命令。
 
  類別設計工具所支援的一些 typdef 類型範例如下︰
 
@@ -107,7 +107,7 @@ class A {
 
  typedef
 
- 以滑鼠右鍵按一下 typedef 圖形並按一下 [顯示為關聯]  會顯示 typedef 或類別以及一個聯結兩個圖形的 [別名 -]  行 (與關聯線類似)。
+ 以滑鼠右鍵按一下 typedef 圖形並按一下 [顯示為關聯]**** 會顯示 typedef 或類別以及一個聯結兩個圖形的 [別名 -]**** 行 (與關聯線類似)。
 
  `typedef B MyB;`
 
@@ -201,4 +201,4 @@ class A {
  -> MyIntVect
 
 ## <a name="see-also"></a>另請參閱
- [使用C++ Visual Code （類別設計工具）](../ide/working-with-visual-cpp-code-class-designer.md) [（NOTINBUILD） typedef 規範](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)
+ [使用 Visual C++ 程式碼 (類別設計工具) ](../ide/working-with-visual-cpp-code-class-designer.md) [ (NOTINBUILD) typedef 規範](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)

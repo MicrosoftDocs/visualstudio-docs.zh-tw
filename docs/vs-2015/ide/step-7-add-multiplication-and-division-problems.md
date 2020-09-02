@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7f7efb0acf6611346abe67a7a94e5c221919665
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646967"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>步驟 7：加入乘法和除法問題
@@ -49,10 +49,10 @@ ms.locfileid: "72646967"
 
      受測者必須回答四個問題才能完成測驗，如下圖所示。
 
-     ![具有四個問題的數學測驗](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")具有四個問題的數學測驗
+     ![有四個問題的數學測驗](../ide/media/express-finishedquiz.png "Express_FinishedQuiz") 有四個問題的數學測驗
 
-### <a name="to-continue-or-review"></a>繼續或檢視
+### <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要移到下一個教學課程步驟，請參閱[步驟 8：自訂測驗](../ide/step-8-customize-the-quiz.md)。
+- 若要移至下一個教學課程步驟，請參閱 [步驟8：自訂測驗](../ide/step-8-customize-the-quiz.md)。
 
-- 若要回到上一個教學課程步驟，請參閱[步驟 6：新增減法問題](../ide/step-6-add-a-subtraction-problem.md)。
+- 若要回到上一個教學課程步驟，請參閱 [步驟6：加入減法問題](../ide/step-6-add-a-subtraction-problem.md)。

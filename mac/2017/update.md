@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
 ms.openlocfilehash: 6e055e02141eb2b6113e1b925cc8d7a1693a32cf
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74983532"
 ---
 # <a name="update-visual-studio-for-mac"></a>更新 Visual Studio for Mac
@@ -20,13 +20,13 @@ Visual Studio for Mac 會定期散發 IDE 和已支援架構的更新。 這些�
 Visual Studio for Mac 提供三個通道來取得這些最新版本：
 
 * **穩定** - 提供完整測試過的更新。 建議使用此通道，獲得最佳開發體驗。
-* **Beta** / **Alpha** - 提供對"穩定通道"中發佈候選的更新的早期訪問。 這些版本可能不適合日常使用。
+* **Beta 版**  / **Alpha** -可及早存取在穩定通道中發行的候選更新。 這些版本可能不適合日常使用。
 
 ## <a name="checking-for-updates"></a>檢查更新
 
 您可以使用 [Visual Studio 更新程式]**** 方塊檢查新更新、變更通道，以及下載並安裝更新。
 
-要打開**視覺化工作室更新程式**，請流覽到**視覺化工作室>檢查更新**：
+若要開啟 **Visual Studio 更新**程式，請流覽至 **Visual Studio > 檢查是否有更新**：
 
 ![檢查更新選項](media/update-image1.png)
 

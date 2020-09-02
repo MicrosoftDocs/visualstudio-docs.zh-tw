@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 847fa53acad63cec151222521ed8f85090c52080
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158850"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>MSBuild 專案檔案結構描述參考
@@ -33,26 +33,26 @@ ms.locfileid: "68158850"
 ## <a name="msbuild-xml-schema-elements"></a>MSBuild XML 結構描述項目  
  下表列出所有的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] XML 結構描述項目及其子項目和屬性。  
   
-|元素|子元素|屬性|  
+|項目|子元素|屬性|  
 |-------------|--------------------|----------------|  
-|[Choose 項目 (MSBuild)](../msbuild/choose-element-msbuild.md)|Otherwise<br /><br /> When|--|  
-|[Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md)|--|條件<br /><br /> 專案|  
-|[ImportGroup 項目](../msbuild/importgroup-element.md)|匯入|條件|  
-|[Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)|*ItemMetaData*|條件<br /><br /> 排除<br /><br /> 包含<br /><br /> 移除|  
+|[選擇 (MSBuild) 的元素 ](../msbuild/choose-element-msbuild.md)|Otherwise<br /><br /> 當|--|  
+|[ (MSBuild) 匯入元素 ](../msbuild/import-element-msbuild.md)|--|條件<br /><br /> Project|  
+|[ImportGroup 元素](../msbuild/importgroup-element.md)|匯入|條件|  
+|[ (MSBuild) 的 Item 元素 ](../msbuild/item-element-msbuild.md)|*ItemMetaData*|條件<br /><br /> 排除<br /><br /> 包含<br /><br /> 移除|  
 |[ItemDefinitionGroup 項目 (MSBuild)](../msbuild/itemdefinitiongroup-element-msbuild.md)|*Item*|條件|  
-|[ItemGroup 項目 (MSBuild)](../msbuild/itemgroup-element-msbuild.md)|*Item*|條件|  
-|[ItemMetadata 項目 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)|*Item*|條件|  
+|[MSBuild)  (ItemGroup 元素 ](../msbuild/itemgroup-element-msbuild.md)|*Item*|條件|  
+|[MSBuild)  (ItemMetadata 元素 ](../msbuild/itemmetadata-element-msbuild.md)|*Item*|條件|  
 |[OnError 項目 (MSBuild)](../msbuild/onerror-element-msbuild.md)|--|條件<br /><br /> ExecuteTargets|  
-|[Otherwise 項目 (MSBuild)](../msbuild/otherwise-element-msbuild.md)|選擇<br /><br /> ItemGroup<br /><br /> PropertyGroup|--|  
+|[否則 (MSBuild 的元素) ](../msbuild/otherwise-element-msbuild.md)|Choose<br /><br /> ItemGroup<br /><br /> PropertyGroup|--|  
 |[Output 項目 (MSBuild)](../msbuild/output-element-msbuild.md)|--|條件<br /><br /> ItemName<br /><br /> PropertyName<br /><br /> TaskParameter|  
-|[Parameter 項目](../msbuild/parameter-element.md)|--|Output<br /><br /> ParameterType<br /><br /> 必要|  
-|[ParameterGroup 項目](../msbuild/parametergroup-element.md)|*Parameter*|--|  
+|[Parameter 元素](../msbuild/parameter-element.md)|--|輸出<br /><br /> ParameterType<br /><br /> 必要|  
+|[ParameterGroup 元素](../msbuild/parametergroup-element.md)|*參數*|--|  
 |[Project 項目 (MSBuild)](../msbuild/project-element-msbuild.md)|Choose<br /><br /> 匯入<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> 目標<br /><br /> UsingTask|DefaultTargets<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|  
 |[ProjectExtensions 項目 (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|  
 |[Property 項目 (MSBuild)](../msbuild/property-element-msbuild.md)|--|條件|  
-|[PropertyGroup 項目 (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Property*|條件|  
-|[Target 項目 (MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Task*|AfterTargets<br /><br /> BeforeTargets<br /><br /> 條件<br /><br /> DependsOnTargets<br /><br /> 輸入<br /><br /> KeepDuplicateOutputs<br /><br /> 名稱<br /><br /> 輸出<br /><br /> Returns|  
-|[Task 項目 (MSBuild)](../msbuild/task-element-msbuild.md)|Output|條件<br /><br /> ContinueOnError<br /><br /> *Parameter*|  
+|[PropertyGroup 項目 (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*屬性*|條件|  
+|[Target 項目 (MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Task*|AfterTargets<br /><br /> BeforeTargets<br /><br /> 條件<br /><br /> DependsOnTargets<br /><br /> 輸入<br /><br /> KeepDuplicateOutputs<br /><br /> Name<br /><br /> 輸出<br /><br /> 傳回|  
+|[Task 項目 (MSBuild)](../msbuild/task-element-msbuild.md)|輸出|條件<br /><br /> ContinueOnError<br /><br /> *參數*|  
 |[TaskBody 項目 (MSBuild)](../msbuild/taskbody-element-msbuild.md)|*Data*|評估|  
 |[UsingTask 項目 (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> TaskBody|AssemblyFile<br /><br /> AssemblyName<br /><br /> 條件<br /><br /> TaskFactory<br /><br /> TaskName|  
 |[When 項目 (MSBuild)](../msbuild/when-element-msbuild.md)|Choose<br /><br /> ItemGroup<br /><br /> PropertyGroup|條件|  

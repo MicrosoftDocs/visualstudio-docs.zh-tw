@@ -1,5 +1,5 @@
 ---
-title: 解決方案 (.Sln)檔案
+title: 解決方案 (。.Sln) 檔案
 ms.date: 03/15/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,31 +13,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9f4eee1f0a5e8371d239b3c33d10e1d9d7998095
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705322"
 ---
-# <a name="solution-sln-file"></a>解決方案 (.sln) 檔案
+# <a name="solution-sln-file"></a>方案 ( .sln) 檔
 
-解決方案是用於在 Visual Studio 中組織專案的結構。 該解決方案在兩個檔案中維護專案的狀態資訊:
+方案是在 Visual Studio 中組織專案的結構。 解決方案會在兩個檔案中維護專案的狀態資訊：
 
-- .sln 檔案(基於文字的共用)
+- .sln 檔案 (以文字為基礎的共用) 
 
-- .suo 檔案(二進位、特定於使用者的解決方案選項)
+- .suo 檔案 (二進位、使用者專用的解決方案選項) 
 
-有關 .suo 檔的詳細資訊,請參閱[解決方案使用者選項 (。Suo) 檔案](../../extensibility/internals/solution-user-options-dot-suo-file.md)。
+如需 .suo 檔案的詳細資訊，請參閱 [ ( 的方案使用者選項。.Suo) ](../../extensibility/internals/solution-user-options-dot-suo-file.md)檔案。
 
-如果 VSPackage 是在 .sln 檔中引用的結果載入的,則<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A>環境將調用 .sln 檔中讀取。
+如果您的 VSPackage 因為 .sln 檔案中的參考而載入，則環境會呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> .sln 檔案中的 read。
 
-.sln 檔包含環境用於查找和載入持久化資料和它引用的專案 VS 包的名稱值參數的基於文字的資訊。 當使用者打開解決方案時,環境會迴圈流`preSolution``Project`覽 .sln`postSolution`檔案中的資訊以載入解決方案、解決方案中的專案以及附加到解決方案的任何持久化資訊。
+.Sln 檔案包含以文字為基礎的資訊，供環境用來尋找及載入保存資料的名稱值參數，以及它所參考的專案 Vspackage。 當使用者開啟方案時，環境會迴圈執行 .sln 檔案 `preSolution` 中的、 `Project` 和 `postSolution` 資訊，以載入解決方案、方案內的專案，以及附加至方案的任何保存資訊。
 
-每個項目的檔都包含環境讀取的其他資訊,以便使用該專案的項填充層次結構。 層次結構數據持久性由專案控制。 數據通常不儲存在 .sln 檔中,儘管如果您選擇這樣做,則可以有意將專案資訊寫入 .sln 檔。 有關持久性的詳細資訊,請參閱[專案持久性](../../extensibility/internals/project-persistence.md)以及[開啟和儲存項目項目](../../extensibility/internals/opening-and-saving-project-items.md)。
+每個專案的檔案都包含環境所讀取的其他資訊，以便在階層中填入該專案的專案。 階層資料持續性是由專案所控制。 資料通常不會儲存在 .sln 檔案中，但如果您選擇這樣做，則可以刻意將專案資訊寫入 .sln 檔案。 如需持續性的詳細資訊，請參閱 [專案持續](../../extensibility/internals/project-persistence.md) 性和 [開啟和儲存專案專案](../../extensibility/internals/opening-and-saving-project-items.md)。
 
-## <a name="file-header"></a>標頭
+## <a name="file-header"></a>檔案標頭
 
-.sln 檔案的標頭如下所示:
+.Sln 檔案的標頭如下所示：
 
 ::: moniker range="vs-2017"
 
@@ -54,13 +54,13 @@ MinimumVisualStudioVersion = 10.0.40219.1
 定義檔案格式版本的標準標頭。
 
 `# Visual Studio 15`\
-主要版本的 Visual Studio(最近)保存了此解決方案檔。 此資訊控制解決方案圖示中的版本號。
+Visual Studio 的主要版本， (最近) 儲存此方案檔。 這項資訊會控制解決方案圖示中的版本號碼。
 
 `VisualStudioVersion = 15.0.26730.15`\
-完整版本的 Visual Studio(最近)保存了解決方案檔。 如果解決方案檔由具有相同主版本的較新版本的 Visual Studio 保存,則不會更新此值,以減少解決方案檔中的改動。
+Visual Studio 的完整版本， (最近) 儲存的方案檔。 如果解決方案檔是由具有相同主要版本的較新版本 Visual Studio 所儲存，則不會更新此值，以便減少解決方案檔中的流失情形。
 
 `MinimumVisualStudioVersion = 10.0.40219.1`\
-可以打開此解決方案檔的可視化工作室的最小(最舊)版本。
+可以開啟此方案檔之 Visual Studio 的最小 () 版本。
 
 ::: moniker-end
 
@@ -79,19 +79,19 @@ MinimumVisualStudioVersion = 10.0.40219.1
 定義檔案格式版本的標準標頭。
 
 `# Visual Studio Version 16`\
-主要版本的 Visual Studio(最近)保存了此解決方案檔。 此資訊控制解決方案圖示中的版本號。
+Visual Studio 的主要版本， (最近) 儲存此方案檔。 這項資訊會控制解決方案圖示中的版本號碼。
 
 `VisualStudioVersion = 16.0.28701.123`\
-完整版本的 Visual Studio(最近)保存了解決方案檔。 如果解決方案檔由具有相同主版本的較新版本的 Visual Studio 保存,則不會更新此值,以減少檔中的改動。
+Visual Studio 的完整版本， (最近) 儲存的方案檔。 如果解決方案檔是由具有相同主要版本的較新版本 Visual Studio 所儲存，則不會更新此值，以減少檔案中的流失情形。
 
 `MinimumVisualStudioVersion = 10.0.40219.1`\
-可以打開此解決方案檔的可視化工作室的最小(最舊)版本。
+可以開啟此方案檔之 Visual Studio 的最小 () 版本。
 
 ::: moniker-end
 
-## <a name="file-body"></a>檔案本文
+## <a name="file-body"></a>檔案主體
 
-.sln 檔案的主體由標`GlobalSection`記 的幾個部分組成,如下所示:
+.Sln 檔案的主體包含數個標示的區段 `GlobalSection` ，如下所示：
 
 ```
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Project1", "Project1.vbproj", "{8CDD8387-B905-44A8-B5D5-07BB50E05BEA}"
@@ -118,9 +118,9 @@ Global
 EndGlobal
 ```
 
-要載入解決方案,環境將執行以下任務序列:
+若要載入解決方案，環境會執行下列一系列的工作：
 
-1. 環境讀取 .sln 檔的全域部分,並處理標`preSolution`記 的所有部分。 此範例中檔案中,有一個這樣的語句:
+1. 環境會讀取 .sln 檔案的全域區段，並處理所有標示的區段 `preSolution` 。 在此範例檔案中，有一個此類語句：
 
    ```
    GlobalSection(SolutionConfiguration) = preSolution
@@ -128,11 +128,11 @@ EndGlobal
         ConfigName.1 = Release
    ```
 
-   當環境讀取標記時`GlobalSection('name')`,它將名稱映射到使用註冊表的 VSPackage。 密鑰名稱應存在於註冊表中[HKLM\\<应用程序 ID\>註冊表根 [解決方案持久性]聚合 GUIDs]下。 鍵的預設值是寫入條目的 VSPackage 的包 GUID(REG_SZ)。
+   當環境讀取標記時 `GlobalSection('name')` ，它會使用登錄將名稱對應至 VSPackage。 機碼名稱應該存在於 [HKLM \\<應用程式識別碼登錄根目錄 \SolutionPersistence\AggregateGUIDs] 底下的登錄中 \> 。 索引鍵的預設值是封裝 GUID (REG_SZ) 寫入專案的 VSPackage。
 
-2. 環境載入 VSPackage,呼`QueryInterface`<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>叫介面的 VSPackage,並在節中使用資料<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A>呼叫 該方法,以便 VSPackage 可以儲存資料。 環境將為每個`preSolution`部分重複此過程。
+2. 環境會載入 VSPackage、 `QueryInterface` 針對介面呼叫 VSPackage， <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> 然後 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> 使用區段中的資料來呼叫方法，讓 VSPackage 可以儲存資料。 環境會針對每個區段重複此進程 `preSolution` 。
 
-3. 環境通過專案持久性塊進行遍發。 在這種情況下,有一個專案。
+3. 環境會逐一查看專案持續性區塊。 在此案例中，有一個專案。
 
    ```
    Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Project1",
@@ -140,25 +140,25 @@ EndGlobal
    EndProject
    ```
 
-   此語句包含唯一的專案 GUID 和專案類型 GUID。 環境使用此資訊查找屬於解決方案的專案檔或檔,以及每個專案所需的 VSPackage。 專案 GUID 傳遞<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>給以 載入與專案相關的特定 VS 包,然後由 VSPackage 載入專案。 在這種情況下,為此專案載入的 VS 套件是可視化基本。
+   此語句包含唯一的專案 GUID 和專案類型 GUID。 環境會使用這項資訊來尋找屬於解決方案的專案檔或檔案，以及每個專案所需的 VSPackage。 專案 GUID 會傳遞至以 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> 載入與專案相關的特定 VSPackage，然後由 VSPackage 載入專案。 在此情況下，會 Visual Basic 為此專案載入的 VSPackage。
 
-   每個專案都可以保留一個唯一的專案實例 ID,以便解決方案中的其他專案可以根據需要存取它。 理想情況下,如果解決方案和專案處於原始程式碼控制之下,則專案的路徑應相對於解決方案的路徑。 首次載入解決方案時,專案檔不能位於使用者的電腦上。 通過將專案檔相對於解決方案檔存儲在伺服器上,找到專案檔並將其複製到使用者的計算機相對簡單。 然後,它複製並載入專案所需的其餘檔。
+   每個專案都可以保存唯一的專案實例識別碼，以便在方案中依其他專案的需要來存取。 在理想的情況下，如果方案和專案是在原始程式碼控制之下，則專案的路徑應相對於方案的路徑。 第一次載入解決方案時，專案檔案不能在使用者的電腦上。 藉由將專案檔儲存在伺服器上的相對於方案檔，您就可以更輕鬆地找到專案檔並將其複製到使用者的電腦。 然後，它會複製並載入專案所需的其餘檔案。
 
-4. 根據 .sln 檔案的專案部分中包含的資訊,環境將載入每個專案檔。 然後,專案本身負責填充專案層次結構並載入任何嵌套專案。
+4. 根據 .sln 檔案的 [專案] 區段中所包含的資訊，環境會載入每個專案檔。 專案本身負責擴展專案階層，並載入任何的嵌套專案。
 
-5. 處理 .sln 檔案的所有部分後,解決方案將顯示在解決方案資源管理器中,並可供使用者修改。
+5. 處理 .sln 檔案的所有區段之後，方案會顯示在方案總管中，並且可供使用者修改。
 
-如果實現解決方案中專案的任何 VSPackage 無法載入,則<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.OnProjectLoadFailure%2A>調用 該方法,並且解決方案中的每個其他專案都有機會忽略它在載入過程中可能所做的更改。 如果發生分析錯誤,解決方案檔將保留盡可能多的資訊,環境將顯示一個對話方塊,警告使用者解決方案已損壞。
+如果任何在解決方案中執行專案的 VSPackage 都無法載入，則 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.OnProjectLoadFailure%2A> 會呼叫方法，而且方案中的每個其他專案都會有機會忽略可能在載入期間進行的變更。 如果發生剖析錯誤，解決方案檔會盡可能保留最多的資訊，而環境會顯示對話方塊，警告使用者解決方案已損毀。
 
-儲存或關閉解決方案時,<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.QuerySaveSolutionProps%2A>將調用該方法並將其傳遞給層次結構,以查看是否對需要輸入到 .sln 檔案中的解決方案進行了更改。 傳入`QuerySaveSolutionProps`到<xref:Microsoft.VisualStudio.Shell.Interop.VSQUERYSAVESLNPROPS>的 null 值 表示正在為解決方案持久化資訊。 如果值不為空,則持久化的資訊適用於特定專案,由指向介面的<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>指標確定。
+當您儲存或關閉方案時， <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.QuerySaveSolutionProps%2A> 會呼叫方法並傳遞至階層，以查看是否已對需要輸入 .sln 檔案的方案進行變更。 傳入的 null 值 `QuerySaveSolutionProps` <xref:Microsoft.VisualStudio.Shell.Interop.VSQUERYSAVESLNPROPS> 表示解決方案的資訊已保存。 如果此值不是 null，則會針對特定專案（由介面指標決定）保存的資訊 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 。
 
-如果有要保存的資訊<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>, 則使用指向<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.SaveSolutionProps%2A>方法的指標呼叫介面。 然後<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A>,環境調用該方法,`IPropertyBag`從介面檢索名稱值對並將資訊寫入 .sln 檔。
+如果有要儲存的資訊，則 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> 會使用方法的指標來呼叫介面 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.SaveSolutionProps%2A> 。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A>然後，環境會呼叫方法，以從介面取出名稱/值組 `IPropertyBag` ，並將資訊寫入 .sln 檔案。
 
-`SaveSolutionProps`環境`WriteSolutionProps`遞迴地調用物件,以檢索要從介面保存的`IPropertyBag`資訊, 直到所有更改都輸入到 .sln 檔中。 通過這種方式,您可以確保資訊將保留到解決方案中,並在下次打開解決方案時可用。
+`SaveSolutionProps``WriteSolutionProps`環境會以遞迴方式呼叫和物件，以抓取要從介面儲存的資訊， `IPropertyBag` 直到所有變更都輸入 .sln 檔案中為止。 如此一來，您可以確保資訊會隨解決方案保存，並在下一次開啟解決方案時使用。
 
-將枚舉每個載入的 VSPackage 以查看它是否有要儲存到 .sln 檔案的東西。 只有在載入時查詢註冊表項。 環境知道所有載入的包,因為它們在保存解決方案時位於記憶體中。
+每個載入的 VSPackage 都會列舉，以查看是否有任何要儲存至 .sln 檔案的檔案。 只有在載入登錄機碼時，才會進行這項工作。 環境會知道所有載入的封裝，因為在儲存方案時，它們會在記憶體中。
 
-只有 .sln 檔`preSolution``postSolution`包含 和 節中的條目。 .suo 檔中沒有類似的部分,因為解決方案需要此資訊才能正確載入。 .suo 檔包含使用者特定的選項,如專用註釋,這些選項不打算共用或置於原始程式碼控制之下。
+只有 .sln 檔案包含和區段中的專案 `preSolution` `postSolution` 。 .Suo 檔案中沒有類似的區段，因為解決方案需要此資訊才能正確載入。 .Suo 檔案包含使用者特定的選項（例如私用備註），不適合在原始程式碼控制之下共用或放置。
 
 ## <a name="see-also"></a>另請參閱
 

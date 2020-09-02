@@ -1,5 +1,5 @@
 ---
-title: IDebug程式提供程式2 |微軟文件
+title: IDebugProgramProvider2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 43557e5d81e5140967a1189e57a350595d0f7220
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721701"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
-此已註冊的介面允許工作階段調試管理員 (SDM) 獲取有關透過[IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)介面"發佈"的程式的資訊。
+這個註冊的介面可讓會話 debug manager (SDM) 取得已透過 [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) 介面「發佈」之程式的相關資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -28,30 +28,30 @@ ms.locfileid: "80721701"
 IDebugProgramProvider2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
-除錯引擎 (DE) 實現此介面,以提供有關正在除錯的程式的資訊。 此介面使用指標`metricProgramProvider`在註冊表的 DE 部分註冊,如[用於調試的 SDK 幫助器](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)中所述。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+Debug engine (DE) 會執行這個介面，以提供所要偵錯工具的相關資訊。 此介面會使用計量在登錄的 DE 區段中進行註冊 `metricProgramProvider` ，如 [用於偵錯工具的 SDK](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)helper 中所述。
 
-## <a name="notes-for-callers"></a>通話備註
-使用`CLSID`從註冊表獲取`CoCreateInstance`的程式提供程式呼叫 COM 的功能。 請參閱示例。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+`CoCreateInstance`使用 `CLSID` 從登錄取得之程式提供者的來呼叫 COM 的函式。 請參閱範例。
 
-## <a name="methods-in-vtable-order"></a>依 Vtable 順序排列的方法
+## <a name="methods-in-vtable-order"></a>採用 Vtable 順序的方法
 
 |方法|描述|
 |------------|-----------------|
-|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|獲取有關以各種方式運行、篩選的程式的資訊。|
-|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|獲取程式節點,給定特定的進程 ID。|
-|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|建立回調以監視與特定類型的進程關聯的提供程式事件。|
-|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|為 DE 所需的任何特定於語言的資源建立區域設置。|
+|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|取得執行之程式的相關資訊，以各種方式進行篩選。|
+|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|取得特定處理序識別碼的程式節點。|
+|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|建立回呼，以監看與特定類型進程相關聯的提供者事件。|
+|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|建立 DE 所需之任何語言特定資源的地區設定。|
 
 ## <a name="remarks"></a>備註
-通常,程式使用此介面來瞭解該進程中運行的程式。
+一般情況下，程式會使用此介面來找出在該進程中執行的程式。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>範例
 

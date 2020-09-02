@@ -10,10 +10,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 2e883970b4b265b1864d53ef6e1f347160e5aeb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62550908"
 ---
 # <a name="getting-started-with-ptvs-editing-code"></a>PTVS 快速入門：編輯程式碼
@@ -34,7 +34,7 @@ from math import sin
   
  在撰寫程式碼時，如果您使用未繫結但可在程式庫中找到的識別項，則 PTVS 會提供快顯的快速檢修，用來加入您所需的適當匯入陳述式。  例如，如果您鍵入了 `cos`，就會看到其提供了 **import from math**。  
   
- 您可以使用程式碼片段來產生程式碼。  在 [編輯] 功能表中，選擇 [IntelliSense]，然後選擇 [插入程式碼片段]。  現在請選擇 [Python]，然後選擇 [def]。呼叫函式 `make_dot_string` 並新增一個參數 `x`。  您現在可以在檔案中加入判斷提示，來進行測試導向開發，而且您會看到 PTVS 已經可以在完成清單內提供新的函式。  
+ 您可以使用程式碼片段來產生程式碼。  在 [編輯] 功能表中，選擇 [IntelliSense]，然後選擇 [插入程式碼片段]。  現在選擇 [Python]，然後選擇 [def]。 呼叫函數 `make_dot_string` ，並加入一個參數 `x` 。  您現在可以在檔案中加入判斷提示，來進行測試導向開發，而且您會看到 PTVS 已經可以在完成清單內提供新的函式。  
   
 ```python  
 assert make_dot_string(90) == '          o'  
@@ -66,6 +66,6 @@ def main ():
   
  您可以在這段簡短的 [YouTube 影片 (英文)](https://www.youtube.com/watch?v=uZGZNEyyeKs&index=3&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) 中觀看這些指示。  
   
-## <a name="see-also"></a>請參閱  
- [Wiki 文件 (英文)](https://github.com/Microsoft/PTVS/wiki/Editor-Features)   
+## <a name="see-also"></a>另請參閱  
+ [Wiki 檔](https://github.com/Microsoft/PTVS/wiki/Editor-Features)   
  [PTVS 快速入門及深度剖析影片 (英文)](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

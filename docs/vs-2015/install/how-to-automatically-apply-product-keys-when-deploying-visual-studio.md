@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ec050cf8f365bfae2290593a0c7f215dcb2f39cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186005"
 ---
 # <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>How to: Automatically apply product keys when deploying Visual Studio
@@ -32,7 +32,7 @@ ms.locfileid: "68186005"
  `vs_enterprise.exe [any other setup parameters] /ProductKey AAAAABBBBBCCCCCDDDDDDEEEEEE`
 
 ## <a name="apply-the-license-after-installation"></a>在安裝後套用授權
- 您可以在目標電腦上以無訊息模式使用 storePID.exe 公用程式，使用產品金鑰來啟用已安裝的 Visual Studio 版本。 StorePID.exe 是隨 Visual Studio 一起安裝的公用程式，安裝於 **\<磁碟機>:\\\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe**。
+ 您可以在目標電腦上以無訊息模式使用 storePID.exe 公用程式，使用產品金鑰來啟用已安裝的 Visual Studio 版本。 StorePID.exe 是一種公用程式，它會安裝 Visual Studio ** \<drive> ： \\ \Program Files (x86) \microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe**。
 
  藉由使用 System Center 代理程式或提高權限的命令提示字元，後面加上 (包括破折號) 產品金鑰和 Microsoft 產品代碼 (MPC)，以較高的權限執行 StorePID.exe。 請務必包含產品金鑰的破折號！
 

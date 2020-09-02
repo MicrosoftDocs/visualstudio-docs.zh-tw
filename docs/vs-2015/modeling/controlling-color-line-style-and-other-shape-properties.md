@@ -10,26 +10,26 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5d296f5ab3f5c584558b373b57c175fb2bacef4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667861"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>控制色彩、線條樣式和其他圖形屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-某些圖形屬性（例如色彩）可以「公開」，也就是連結至圖形的網域屬性。 有些則必須直接控制。
+某些圖形屬性（例如色彩）可以「公開」，也就是連結到圖形的網域屬性。 您必須直接控制其他人。
 
 ## <a name="exposing-a-property"></a>公開屬性
- 某些圖形屬性（例如色彩）可以連結至網域屬性的值。
+ 某些圖形屬性（例如 color）可以連結至網域屬性的值。
 
- 在 DSL 定義中，選取圖形、連接器或圖表類別。 在內容功能表上，選擇 [新增] [**公開**]，然後選擇您想要的屬性，例如 [填滿色彩]。
+ 在 DSL 定義中，選取 [圖形]、[連接器] 或 [圖表] 類別。 在內容功能表上，選擇 [ **加入**]，然後選擇您想要的屬性，例如 [填滿色彩]。
 
- 圖形現在具有可在 [程式碼] 或 [使用者] 中設定的網域屬性。
+ 圖形現在具有可在程式碼或使用者中設定的網域屬性。
 
 ## <a name="dynamically-updating-an-exposed-property"></a>動態更新公開的屬性
- 您通常會想要讓公開的屬性相依于另一個屬性。 例如，您可能想要在特定網域屬性小於零時，讓圖形變成紅色。 若要進行這項相依性，請建立[規則](../modeling/rules-propagate-changes-within-the-model.md)。 例如:
+ 通常您會想要讓公開的屬性相依于其他屬性。 例如，您可能想要在特定網域屬性小於零時，讓圖形變成紅色。 若要建立這項相依性，請建立 [規則](../modeling/rules-propagate-changes-within-the-model.md)。 例如：
 
 ```csharp
 using System;

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f23ca72f8251cca26e2b636978fdb25ab302962d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667930"
 ---
 # <a name="how-to-export-class-diagrams-as-images-class-designer"></a>如何：將類別圖表匯出為影像 (類別設計工具)
@@ -27,15 +27,15 @@ ms.locfileid: "72667930"
 
 1. 開啟您的類別圖 (.cd) 檔案。
 
-2. 從 [類別圖表] 功能表或圖表介面捷徑功能表，選擇 [將圖表匯出為影像]。
+2. 從 [類別圖表]**** 功能表或圖表介面捷徑功能表，選擇 [將圖表匯出為影像]****。
 
 3. 選取圖表。
 
 4. 選取您要的格式。
 
-5. 選擇 [匯出] 以完成匯出。
+5. 選擇 [匯出]**** 以完成匯出。
 
      若要自動更新與其他文件連結的匯出影像，請在 Visual Studio 中重新匯出圖表。
 
-## <a name="see-also"></a>請參閱
- [如何：列印類別圖表（類別設計工具）](../ide/how-to-print-class-diagrams-class-designer.md) [使用類別圖表（類別設計工具）](../ide/working-with-class-diagrams-class-designer.md)
+## <a name="see-also"></a>另請參閱
+ [如何：列印類別圖表 (類別設計工具) ](../ide/how-to-print-class-diagrams-class-designer.md) [使用類別圖表 (類別設計工具) ](../ide/working-with-class-diagrams-class-designer.md)

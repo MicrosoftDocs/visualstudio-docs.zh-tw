@@ -1,60 +1,60 @@
 ---
-title: 適用于 Windows 使用者的 Mac 視覺化工作室
-description: 在 Mac 視覺化工作室仲介紹協助工具以及如何啟用這些功能。
+title: 適用于 Windows 使用者的 Visual Studio for Mac
+description: 介紹 Visual Studio for Mac 中的協助工具功能，以及如何啟用這些功能。
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/25/2019
 ms.assetid: 61CB6883-08CE-470F-8599-6F7570DB756E
 ms.openlocfilehash: b414026ba7297dd6c93fecdf56d9a9c58c99f294
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984267"
 ---
-# <a name="visual-studio-for-mac-for-windows-users"></a>適用于 Windows 使用者的 Mac 視覺化工作室
+# <a name="visual-studio-for-mac-for-windows-users"></a>適用于 Windows 使用者的 Visual Studio for Mac
 
-從一個作業系統遷移到另一個作業系統可能令人望而生畏。 跨平臺應用程式（從使用者介面到功能表項目的分類）通常存在細微差異。 使用者還將有適應新作業系統使用者介面的學習曲線。 在這裡，您將瞭解 Mac 視覺化工作室和適用于 Windows 的視覺化工作室之間的最常見區別。 您還將瞭解 macOS 和 Windows 之間的幾種不同的約定。
+從一個作業系統遷移到另一個作業系統可能會很困難。 跨平臺應用程式（從使用者介面到功能表項目的分類）通常會有細微的差異。 使用者也會有 acclimatizing 到新作業系統使用者介面的學習曲線。 您將在這裡瞭解 Windows 的 Visual Studio for Mac 和 Visual Studio 之間最常見的差異。 您也將瞭解 macOS 和 Windows 之間的幾個不同慣例。
 
 ## <a name="keyboard-shortcuts"></a>鍵盤快速鍵
 
-作為開發人員，你們中的許多人將習慣于使用鍵盤執行任務和導航。 鍵盤上的某些鍵在 Mac 和 Windows PC 之間很常見。 認為鍵盤操作（如複製和粘貼）使用相同的組合組合是可以原諒的。 情況並非總是如此。 幸運的是，您可以在 Mac 的 Visual Studio 中更改金鑰綁定，以與 Windows 中的 Visual Studio 綁定緊密匹配。
+就開發人員而言，許多人都習慣使用鍵盤來進行工作和導覽。 在 Mac 與 Windows 電腦之間，鍵盤上的某些按鍵是共通的。 您可以 forgiven，以為鍵盤動作（例如複製和貼上）使用相同的按鍵組合。 這不一定都是如此。 幸好，您可以在 Visual Studio for Mac 中變更金鑰系結，以與 Windows 中 Visual Studio 的系結緊密相符。
 
-首次為 Mac 運行 Visual Studio 時，您將看到鍵盤快速鍵選擇視窗：![鍵綁定視窗](media/ide-tour-2019-keyboard-shortcut.png)
+當您第一次執行 Visual Studio for Mac 時，您會看到鍵盤快速鍵選取範圍視窗：按鍵系結 ![ 視窗](media/ide-tour-2019-keyboard-shortcut.png)
 
-如果以後要更改金鑰綁定，可以在首選項中找到設置：![金鑰綁定首選項](media/customizing-the-ide-image10a.png)
+如果您稍後想要變更金鑰系結，您可以在 [喜好設定：索引鍵系結喜好設定] 中找到設定 ![](media/customizing-the-ide-image10a.png)
 
-請務必注意，macOS 使用不同的系統範圍的 Windows 快捷方式。 更改金鑰綁定首選項將允許您在 Mac 的 Visual Studio 中使用熟悉的 Windows 快捷方式。 但是，在 macOS 的其他領域，您需要熟悉 macOS 快捷方式。
+請務必注意，macOS 會使用不同的全系統快捷方式來使用 Windows。 變更按鍵系結喜好設定可讓您在 Visual Studio for Mac 中使用熟悉的 Windows 快捷方式。 不過，在 macOS 的其他區域中，您必須熟悉 macOS 快捷方式。
 
-macOS 命令 （*） 修改器鍵通常可以替換 Windows 中的"控制"鍵。 下面是一些示例和其他常用的快捷方式：
+MacOS 命令 (⌘) 輔助按鍵通常可以取代 Windows 中的控制項索引鍵。 以下是一些範例，以及其他常用的快速鍵：
 
-|Task                   |視窗快捷方式         |macOS 快捷方式      |
+|工作                   |Windows 快捷方式         |macOS 快捷方式      |
 |-----------------------|-------------------------|--------------------|
-|[複製]                   |`Ctrl + C`               |`⌘ + C`             |
+|複製                   |`Ctrl + C`               |`⌘ + C`             |
 |貼上                  |`Ctrl + V`               |`⌘ + V`             |
 |剪下                    |`Ctrl + X`               |`⌘ + X`             |
 |復原                   |`Ctrl + Z`               |`⌘ + Z`             |
 |取消復原                   |`Ctrl + Shift + Z`       |`⌘ + Shift + Z`     |
-|刪除游標的權利 |`Delete`                 |`fn + Backspace`    |
+|刪除資料指標的右邊 |`Delete`                 |`fn + Backspace`    |
 |刪除詞彙            |`Ctrl + Delete`          |`fn + ⌥ + Backspace`|
 
 > [!TIP]
-> 你可以在[蘋果支援網站上](https://support.apple.com/en-us/HT201236)找到macOS快捷方式的完整清單。
+> 您可以在 [Apple 支援網站](https://support.apple.com/en-us/HT201236)上找到 macOS 快捷方式的完整清單。
 
 ## <a name="menus"></a>功能表
 
-macOS 中的功能表的組織方式與 Windows 中的功能表不同。 Mac 的視覺工作室也不例外。 您可以在此處找到一些最常見的功能表選項：
+MacOS 中的功能表與 Windows 中的功能表的組織方式不同。 Visual Studio for Mac 不例外。 您可以在這裡找到一些最常見的功能表選項：
 
-|Task                   |Visual Studio (Windows)                                              |Visual Studio for Mac                |
+|工作                   |Visual Studio (Windows)                                              |Visual Studio for Mac                |
 |-----------------------|---------------------------------------------------------------------|-------------------------------------|
-|首選項（選項）  |工具>選項...                                                   |視覺工作室>首選項...       |
-|延伸模組             |擴展>管理擴展                                       |視覺工作室>擴展...        |
-|版面配置                |視窗>> [選擇佈局] 應用視窗佈局                       |查看> [選擇佈局]               |
-|更新                |説明>檢查更新                                             |視覺化工作室>檢查更新... |
-|NuGet 套件管理員  |> NuGet 包管理器的工具>管理 NuGet 包或解決方案... |專案>管理 NuGet 包...   |
-|墊板/窗戶         |查看> [選擇鍵盤 / 視窗]                                         |查看>>墊 [選擇鍵盤 / 視窗]  |
-|查找工具             |編輯>查找和替換> [選擇工具]                              |搜索> [選擇工具]               |
-|Visual Studio 概觀    |有關微軟視覺工作室>説明                                 |視覺工作室>關於視覺工作室  
+|喜好設定 (選項)   |工具 > 選項 .。。                                                   |Visual Studio > 喜好設定 .。。       |
+|延伸模組             |擴充功能 > 管理延伸模組                                       |Visual Studio > 延伸模組 .。。        |
+|版面配置                |視窗 > 套用視窗配置 > [選取版面配置]                       |View > [選取版面配置]               |
+|更新                |協助 > 檢查更新                                             |Visual Studio > 檢查更新 .。。 |
+|NuGet 套件管理員  |> NuGet 封裝管理員 > 管理 NuGet 套件或解決方案的工具 .。。 |Project > 管理 NuGet 套件 .。。   |
+|Pad/Windows         |View > [選取填充/視窗]                                         |View > Pad > [選取填充/視窗]  |
+|尋找工具             |編輯 > 尋找和取代 > [選取工具]                              |搜尋 > [選取工具]               |
+|Visual Studio 概觀    |> Microsoft Visual Studio 的相關資訊                                 |有關 Visual Studio 的 Visual Studio >  
 
 > [!NOTE]
-> 您可以在[IDE 旅遊](ide-tour.md)中找到 Mac 視覺化工作室中最常見的功能概述
+> 您可以在[IDE 導覽](ide-tour.md)中找到 Visual Studio for Mac 中最常見功能的總覽
