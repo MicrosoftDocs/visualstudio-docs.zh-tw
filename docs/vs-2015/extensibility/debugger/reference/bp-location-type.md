@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_TYPE | Microsoft Docs
+title: BP_LOCATION_TYPE |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fb8074317e52b43806a61d6486c53d7409333e2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153409"
 ---
-# <a name="bplocationtype"></a>BP_LOCATION_TYPE
+# <a name="bp_location_type"></a>BP_LOCATION_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定中斷點要求的中斷點位置類型。  
+指定中斷點要求之中斷點的位置類型。  
   
 ## <a name="syntax"></a>語法  
   
@@ -69,65 +69,65 @@ public enum enum_BP_LOCATION_TYPE { 
   
 ## <a name="members"></a>成員  
  BPLT_NONE  
- 不指定任何中斷點的位置。  
+ 指定無中斷點位置。  
   
  BPLT_FILE_LINE  
- 指定中斷點的位置類型為的檔案。  
+ 以檔案行指定中斷點的位置類型。  
   
  BPLT_FUNC_OFFSET  
- 指定中斷點的位置類型當作函式位移。  
+ 以函數位移的形式指定中斷點的位置類型。  
   
  BPLT_CONTEXT  
- 指定中斷點的位置類型做為內容。  
+ 將中斷點的位置類型指定為內容。  
   
  BPLT_STRING  
- 指定中斷點的位置類型為字串。  
+ 以字串形式指定中斷點的位置類型。  
   
  BPLT_ADDRESS  
- 指定中斷點的位置類型為位址。  
+ 以位址指定中斷點的位置類型。  
   
  BPLT_RESOLUTION  
- 指定中斷點的位置類型做為解析度。  
+ 將中斷點的位置類型指定為解析度。  
   
  BPLT_CODE_FILE_LINE  
- 指定中斷點的位置類型做為來源的程式碼行。  
+ 將中斷點的位置類型指定為原始程式碼的行。  
   
  BPLT_CODE_FUNC_OFFSET  
- 指定中斷點的位置類型的程式碼的函式位移。  
+ 將中斷點的位置類型指定為程式碼函數的位移。  
   
  BPLT_CODE_CONTEXT  
- 指定中斷點的位置類型做為程式碼內容。  
+ 將中斷點的位置類型指定為程式碼內容。  
   
  BPLT_CODE_STRING  
- 為程式碼字串中指定中斷點位置的類型。  
+ 將中斷點的位置類型指定為程式碼字串。  
   
  BPLT_CODE_ADDRESS  
- 為程式碼位址中指定中斷點位置的類型。  
+ 將中斷點的位置類型指定為程式碼位址。  
   
  BPLT_DATA_STRING  
- 指定中斷點的位置類型做為資料字串。  
+ 以資料字串的形式指定中斷點的位置類型。  
   
  BPLT_TYPE_MASK  
- 指定位元遮罩，如此中斷點類型可擷取出的值。  
+ 指定位元遮罩，讓中斷點類型可以從值中解壓縮。  
   
  BPLT_LOCATION_TYPE_MASK  
- 指定位元遮罩，如此中斷點位置類型可以擷取出的值。  
+ 指定位元遮罩，以便將中斷點位置型別解壓縮出值。  
   
 ## <a name="remarks"></a>備註  
- 做為參數傳遞[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)方法。  
+ 以參數形式傳遞至 [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) 方法。  
   
- 中斷點位置類型是由中斷點類型和位置類型所組成。 這表示中斷點位置類型不只是中斷點類型 (例如`BPT_CODE`) 或位置類型 (例如`BPLT_FILE_LINE`)。 目前支援的所有中斷點位置類型預先定義的常數都會納入此列舉型別 (`BPLT_CODE_FILE_LINE`透過`BPLT_DATA_STRING`)。  
+ 中斷點位置型別是由中斷點型別和位置型別所組成。 這表示，中斷點位置型別絕不只是中斷點類型 (例如 `BPT_CODE`) 或位置類型 (例如 `BPLT_FILE_LINE`) 。 目前支援的所有中斷點位置類型的預先定義常數，都包含在此列舉 (中 `BPLT_CODE_FILE_LINE` `BPLT_DATA_STRING`) 。  
   
- `BPT_CODE` 並`BPT_DATA`屬於[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)列舉型別。  
+ `BPT_CODE` 和 `BPT_DATA` 是 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 列舉的成員。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)   
  [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

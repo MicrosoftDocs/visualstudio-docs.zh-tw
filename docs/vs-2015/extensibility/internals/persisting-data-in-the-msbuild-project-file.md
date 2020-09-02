@@ -1,5 +1,5 @@
 ---
-title: MSBuild 專案檔中保存的資料 |Microsoft Docs
+title: 在 MSBuild 專案檔中保存資料 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,62 +11,62 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39d2ab449c3623a90dd76729b46a9f353900fc88
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704123"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>在 MSBuild 專案檔中保存資料
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-專案子類型可能需要將子類型特定的資料保存在專案檔，以供稍後使用。 專案子類型會使用專案檔案持續性，以符合下列需求：  
+專案子類型可能需要將子類型專屬的資料保存到專案檔中，以供稍後使用。 專案子類型會使用專案檔持續性來符合下列需求：  
   
-1. 保存資料做為建置專案的一部分。 (如需有關 Microsoft Build Engine 的詳細資訊，請參閱[MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)。)可以與組建相關的資訊：  
+1. 保存在建立專案時使用的資料。  (如需 Microsoft Build Engine 的詳細資訊，請參閱 [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)。 ) 組建相關資訊可以：  
   
-    1. 組態無關的資料。 也就是儲存在具有空白或遺漏條件的 MSBuild 項目中的資料。  
+    1. 與設定無關的資料。 也就是說，儲存在具有空白或遺漏條件之 MSBuild 元素中的資料。  
   
-    2. 設定相依的資料。 也就是儲存在會針對特定的專案組態的條件式的 MSBuild 項目中的資料。 例如:   
+    2. 與設定相依的資料。 也就是說，儲存在以特定專案設定條件下之 MSBuild 元素中的資料。 例如：  
   
         ```  
         <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">  
         ```  
   
-2. 將不會與組建相關的資料保存。 這項資料可以以自由形式的 XML，不會針對 XML 結構描述進行驗證。  
+2. 保存與組建無關的資料。 這項資料可以用不是針對 XML 架構進行驗證的自由格式 XML 來表示。  
   
-    1. 組態無關的資料。  
+    1. 與設定無關的資料。  
   
-    2. 設定相依的資料。  
+    2. 與設定相依的資料。  
   
-## <a name="persisting-build-related-information"></a>保存與組建相關的資訊  
- 適用於建置的專案資料的持續性是透過 MSBuild 處理。 MSBuild 系統會維護主要組建的相關資訊的資料表。 專案子類型會負責存取此資料來取得和設定屬性值。 專案子類型也可以加強組建相關的資料表，藉由新增其他屬性，以保存和移除屬性，因此不會保存。  
+## <a name="persisting-build-related-information"></a>保存組建相關資訊  
+ 用來建立專案的資料持續性，是透過 MSBuild 來處理。 MSBuild 系統會維護組建相關資訊的主表。 專案子類型負責存取此資料，以取得和設定屬性值。 專案子類型也可以增強與組建相關的資料表，方法是新增要保存的其他屬性，並移除屬性，使其不會保存。  
   
- 若要修改的 MSBuild 資料，專案子類型會負責從基礎專案系統，透過擷取 MSBuild 屬性物件<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 已實作的介面核心專案系統和彙總的專案子類型查詢上，執行`QueryInterface`。  
+ 若要修改 MSBuild 資料，專案子類型會負責從基底專案系統透過來取得 MSBuild 屬性物件 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 是在核心專案系統上執行的介面，並藉由執行來為其匯總專案子類型查詢 `QueryInterface` 。  
   
- 下列程序概述的步驟移除屬性，使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>。  
+ 下列程式概述使用移除屬性的步驟 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 。  
   
-#### <a name="to-remove-a-property-from-an-msbuild-project-file"></a>若要移除的 MSBuild 專案檔中的屬性  
+#### <a name="to-remove-a-property-from-an-msbuild-project-file"></a>從 MSBuild 專案檔案移除屬性  
   
-1. 呼叫`QueryInterface`上<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>的專案子類型。  
+1. `QueryInterface`在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 專案子類型上呼叫。  
   
-2. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.RemoveProperty%2A>與`pszPropName`設定您想要移除的屬性。  
+2. 呼叫， <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.RemoveProperty%2A> 並 `pszPropName` 將設定為您要移除的屬性。  
   
-### <a name="persisting-non-build-related-information"></a>保存非建置相關的資訊  
- 持續性的專案檔中建置並不重要的資料透過處理<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>。  
+### <a name="persisting-non-build-related-information"></a>保存非組建的相關資訊  
+ 不重要的專案檔中的資料持續性，是透過進行處理 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> 。  
   
- 您可以實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>主要`project subtype aggregator`物件，`project subtype project configuration`物件，或兩者。  
+ 您可以 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> 在主要 `project subtype aggregator` 物件、 `project subtype project configuration` 物件或兩者上執行。  
   
- 以下概述的非建置相關資訊的持續性有關的主要概念。  
+ 下列各點概述有關非組建相關資訊之持續性的主要概念。  
   
-- 基底專案主要專案子類型 （也就是最外層的專案子類型） 彙總工具在物件上呼叫以載入和儲存設定獨立的資料，而且它會呼叫上專案子類型的專案組態物件，以載入或儲存組態相依資料。  
+- 基底專案會呼叫主要專案子類型 (也就是最外層的專案子類型) 匯總工具物件來載入及儲存設定獨立的資料，並在專案子類型專案設定物件上呼叫，以載入或儲存設定相依的資料。  
   
-- 基底的專案呼叫的方法<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>多個時間的專案子類型的彙總，每個層級，並傳遞每個層級的 GUID。  
+- 基底專案會 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> 針對每個層級的專案子類型匯總呼叫多個時間的方法，並傳遞每個層級的 GUID。  
   
-- 基底的專案會傳遞或接收的 XML 片段專屬於特定專案子類型，並彙總層級之間保存的狀態這種使用這項機制。  
+- 基底專案會傳遞或接收特定專案子類型專用的 XML 片段，並使用此機制來保存匯總層級之間的狀態。  
   
-- 基底的專案呼叫的最外層的專案子類型<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>傳入 GUID 的實作。 如果 GUID 屬於最外層的專案子類型，它會處理呼叫本身;否則它會委派呼叫內部專案子類型，並依此類推，直到找到 GUID 對應於專案子類型。  
+- 基底專案會呼叫在 GUID 中傳遞的最外層專案子類型的 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> 實作為。 如果 GUID 屬於最外層的專案子類型，則會處理呼叫本身;否則，它會將呼叫委派給內部專案子類型，依此類推，直到找到 GUID 對應的專案子類型為止。  
   
-- 專案子類型也可以修改 XML 片段，它會委派至內部專案子類型呼叫前後。 下列範例摘錄自專案檔，其中包含特定專案子類型，屬性的檔案名稱會傳遞至該專案子類型。  
+- 專案子類型也可以在將呼叫委派給內部專案子類型之前或之後修改 XML 片段。 下列範例顯示從專案檔摘錄的專案檔，其中包含專案子類型特定屬性的檔案名，會傳遞至該專案子類型。  
   
     ```  
     <ProjectExtensions>  

@@ -1,5 +1,5 @@
 ---
-title: 處理偵錯管理員 |Microsoft Docs
+title: 進程 Debug Manager |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 186b9601b0146b64edba07ec8470bd86fd0a0a56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153686"
 ---
 # <a name="process-debug-manager"></a>處理序偵錯管理員
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-處理序偵錯管理員 (PDM) 是管理程式的 Visual Studio 的元件和程序，以提供給工作階段偵錯管理員和偵錯引擎。  
+進程 debug manager (PDM) 是管理程式和進程的 Visual Studio 元件，可供會話 debug manager 和 debug engine 使用。  
   
- PDM 管理可進行偵錯的所有處理序。 若要進行偵錯，程式必須向 PDM 的影響。 這是在啟動程式時，透過連接埠或偵錯引擎。  
+ PDM 會管理所有可進行調試的進程。 若要進行調試，必須向 PDM 註冊程式。 這是在程式啟動時，透過埠或 debug 引擎來完成。  
   
 ## <a name="see-also"></a>另請參閱  
- [處理程序](../../extensibility/debugger/processes.md)   
- [偵錯引擎](../../extensibility/debugger/debug-engine.md)   
- [連接埠](../../extensibility/debugger/ports.md)   
+ [過程](../../extensibility/debugger/processes.md)   
+ [Debug 引擎](../../extensibility/debugger/debug-engine.md)   
+ [港口](../../extensibility/debugger/ports.md)   
  [程式](../../extensibility/debugger/programs.md)   
  [偵錯工具元件](../../extensibility/debugger/debugger-components.md)

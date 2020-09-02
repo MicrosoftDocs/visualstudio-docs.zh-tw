@@ -1,6 +1,6 @@
 ---
-title: 如何執行程式 (C#)
-description: 有關如何在視覺工作室運行 C# 程式的初學者指南。
+title: '如何 (c # ) 執行程式'
+description: '如何在 Visual Studio 中執行 c # 程式的初學者指南。'
 ms.custom: get-started
 ms.date: 10/16/2019
 ms.technology: vs-ide-general
@@ -16,111 +16,111 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: ee28bde6de10006ccfdc5175cca629ad9d1590d0
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81649641"
 ---
-# <a name="how-to-run-a-c-program-in-visual-studio"></a>如何:在視覺工作室運行 C# 程式
+# <a name="how-to-run-a-c-program-in-visual-studio"></a>如何：在 Visual Studio 中執行 c # 程式
 
-執行程式所需的操作取決於您從什麼開始、程式、應用或服務的類型,以及是否要在調試器下運行它。 在最簡單的情況下,當您在 Visual Studio 中打開專案時,請按**Ctrl**+**F5(****無需調試即可開始**)或**F5(****從調試開始**)或按主 Visual Studio 工具列上的綠色箭頭(**開始按鈕**)來生成並運行該專案。
+執行程式所需執行的動作，取決於您的起點、應用程式或服務的型別，以及您是否要在偵錯工具下執行它。 在最簡單的情況下，當您在 Visual Studio 中開啟專案時，請按下**Ctrl** + **F5** (**啟動但不) 調試**程式，或按**f5** (**開始進行調試**程式) ，或按下 [主要 (] 工具列上的綠色箭號) [**開始] 按鈕**Visual Studio，來建立並執行專案。
 
-![顯示開始按鍵的螢幕擷取](media/vs-start-button.png)
+![顯示 [開始] 按鈕的螢幕擷取畫面](media/vs-start-button.png)
 
-## <a name="starting-from-a-project"></a>從項目開始
+## <a name="starting-from-a-project"></a>從專案開始
 
-如果您有一個 C# 專案 *(.csproj*檔),則可以執行它(如果它是可執行的程式)。 如果專案包含包含方法`Main`的 C# 檔,並且其輸出是可執行檔 (EXE),則如果生成成功,則最有可能運行該檔。
+如果您有 c # 專案 (*.csproj* 檔案) ，則可以執行它（如果它是可執行檔程式）。 如果專案包含具有方法的 c # 檔案 `Main` ，且其輸出是可執行檔 (EXE) ，則很有可能會在成功建立時執行。
 
-如果在 Visual Studio 中的項目中已經擁有程式的代碼,請打開該專案。 要打開專案,請雙擊或點擊 Windows 檔案資源管理員中的 *.csproj*或從 Visual Studio,選擇 **「打開專案**」,流覽以查找專案 *(.csproj)* 檔案,然後選擇專案檔。
+如果您在 Visual Studio 的專案中已經有程式碼，請開啟專案。 若要開啟專案，請從 Windows 檔案總管按兩下或按一下 *.csproj* ，或從 Visual Studio 中，選擇 [ **開啟專案**]，流覽以尋找專案 (*.csproj*) 檔，然後選擇專案檔。
 
-專案在 Visual Studio 中載入後,按**Ctrl**+**F5(****無需除錯即可啟動**)或使用 Visual Studio 工具列上的綠色 **「開始」** 按鈕執行程式。  如果有多個專案,則必須將具有`Main`該方法的專案設置為啟動專案。 要設置啟動專案,請右鍵單擊專案節點,然後選擇 **「設置為啟動專案**」。
+在 Visual Studio 中載入專案之後，請按下**Ctrl** + **F5** (**啟動但不) 調試**程式，或使用 Visual Studio 工具列上的綠色 [**開始**] 按鈕來執行程式。  如果有多個專案，則必須將使用 `Main` 方法的專案設定為啟始專案。 若要設定啟始專案，請以滑鼠右鍵按一下專案節點，然後選擇 [ **設定為啟始專案**]。
 
-![設定啟動項目](media/set-as-startup-project.png)
+![設定啟始專案](media/set-as-startup-project.png)
 
-可視化工作室嘗試構建和運行專案。  如果存在產生錯誤,請參閱 **「輸出」** 視窗中的產生輸出和**錯誤列表**視窗中的錯誤。
+Visual Studio 嘗試建立並執行您的專案。  如果有組建錯誤，您會在 [ **輸出** ] 視窗中看到組建輸出，並在 [ **錯誤清單** ] 視窗中看到錯誤。
 
-如果生成成功,應用以適合項目類型的方式運行。 控制台應用在終端視窗中運行,Windows 桌面應用在新視窗中啟動,Web 應用在瀏覽器中啟動(由 IIS Express 託管),等等。
+如果組建成功，應用程式會以適用于專案類型的方式執行。 主控台應用程式會在終端機視窗中執行、Windows 桌面應用程式會在新視窗中啟動、在瀏覽器中啟動 web 應用程式 (IIS Express) ），依此類推。
 
-## <a name="starting-from-code"></a>從代碼開始
+## <a name="starting-from-code"></a>從程式碼開始
 
-如果要從代碼清單、代碼檔或少量檔開始,請先確保要運行的代碼來自受信任的源,並且是可運行的程式。 如果它有一個`Main`方法,它很可能被用作可運行的程式,您可以使用主控台應用範本創建專案,在 Visual Studio 中使用它。
+如果您是從程式代碼清單、程式碼檔案或少量的檔案開始，請先確定您要執行的程式碼是來自信任的來源，而且是可執行檔程式。 如果它有 `Main` 方法，則可能會做為可執行檔程式，您可以使用主控台應用程式範本建立專案，以在 Visual Studio 中使用它。
 
-### <a name="code-listing-for-a-single-file"></a>單一檔案的代碼清單
+### <a name="code-listing-for-a-single-file"></a>單一檔案的程式代碼清單
 
-啟動 Visual Studio,打開空的 C# 主控台項目,選擇專案中已包含的 .cs 檔中的所有代碼,然後將其刪除。 然後,將代碼的內容粘貼到 .cs 檔中。 貼上代碼時,請覆蓋或刪除以前存在的代碼。 重新命名檔以符合原始碼。
+開始 Visual Studio，開啟空白的 c # 主控台專案，選取專案中已有的 .cs 檔案中的所有程式碼，然後將它刪除。 然後，將您的程式碼內容貼到 .cs 檔案中。 當您貼上程式碼時，請覆寫或刪除先前的程式碼。 重新命名檔案以符合原始程式碼。
 
-### <a name="code-listings-for-a-few-files"></a>幾個檔案的代碼清單
+### <a name="code-listings-for-a-few-files"></a>一些檔案的程式代碼清單
 
-啟動 Visual Studio,打開空的 C# 主控台項目,選擇專案中已包含的 .cs 檔中的所有代碼,然後將其刪除。 然後,將第一個代碼文件的內容粘貼到 .cs 檔中。 重新命名檔以符合原始碼。 
+開始 Visual Studio，開啟空白的 c # 主控台專案，選取專案中已有的 .cs 檔案中的所有程式碼，然後將它刪除。 然後，將第一個程式碼檔案的內容貼到 .cs 檔案中。 重新命名檔案以符合原始程式碼。 
 
-對於第二個檔,右鍵單擊**解決方案資源管理器**中的專案節點以打開專案的快捷方式功能表,然後選擇 **「新增>現有專案**(或使用鍵群組**Shift**+**Alt**+**A),** 然後選擇代碼檔。
+若為第二個檔案，請以滑鼠右鍵按一下**方案總管**中的專案節點，開啟專案的快捷方式功能表，然後選擇 [**加入 > 現有專案**] (或使用按鍵組合**Shift** + **Alt** + **a**) ，然後選取程式碼檔案。
 
-### <a name="multiple-files-on-disk"></a>磁碟上的多個檔案
+### <a name="multiple-files-on-disk"></a>磁片上的多個檔案
 
-1. 建立適當類型的新專案(如果您不確定,請使用 C#**控制台應用**)。
+1. 如果您不確定) ，請建立適當類型的新專案 (使用 c # **主控台應用程式** 。
 
-2. 右鍵單擊專案節點,se**添加** > **現有專案**以選擇檔並將其導入專案。  
+2. 以滑鼠右鍵按一下專案節點， **Add**  >  然後選擇 [加入**現有專案**] 來選取檔案，並將它們匯入您的專案中。  
 
 ### <a name="starting-from-a-folder"></a>從資料夾開始
 
-當您使用包含許多檔的資料夾時,首先查看是否有專案或解決方案。  如果程式是使用 Visual Studio 創建的,則應查找專案檔或解決方案檔。 尋找具有 *.csproj*副檔名或 .sln 副檔名的檔案,並在 Windows 檔案資源管理器中按兩下其中一個在 Visual Studio 中打開這些檔。 請參考[從視覺化工作室解決方案或項目開始](#starting-from-a-project)。
+當您使用許多檔案的資料夾時，請先查看是否有專案或方案。  如果是使用 Visual Studio 建立程式，您應該會找到專案檔或方案檔。 尋找副檔名為 *.csproj* 或 .sln 的檔案，並在 Windows 檔案總管中，按兩下其中一個檔案，在 Visual Studio 中開啟檔案。 請參閱 [從 Visual Studio 解決方案或專案開始](#starting-from-a-project)。
 
-如果您沒有專案檔(例如代碼是在另一個開發環境中開發的,則使用 Visual Studio 中的**Open 資料夾**方法打開頂級資料夾。 請參考[開發沒有項目或解決方案的代碼](../../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)。
+如果您沒有專案檔（例如，如果程式碼是在另一個開發環境中開發），請使用 Visual Studio 中的 [ **開啟資料夾** ] 方法開啟最上層資料夾。 請參閱 [開發沒有專案或解決方案](../../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)的程式碼。
 
-## <a name="starting-from-a-github-or-azure-devops-repo"></a>從 GitHub 或 Azure 開發人員計劃儲存函式庫開始
+## <a name="starting-from-a-github-or-azure-devops-repo"></a>從 GitHub 或 Azure DevOps 存放庫開始
 
-如果要運行的代碼在 GitHub 或 Azure DevOps 儲存庫中,則可以使用 Visual Studio 直接從儲存庫打開專案。 請參考[從回購中開啟項目](../tutorial-open-project-from-repo.md)。
+如果您想要執行的程式碼是在 GitHub 或 Azure DevOps 存放庫中，您可以使用 Visual Studio 直接從存放庫開啟專案。 請參閱從存放庫 [開啟專案](../tutorial-open-project-from-repo.md)。
 
 ## <a name="run-the-program"></a>執行程式
 
-要啟動程式,請按主 Visual Studio 工具列上的綠色箭頭(**開始**按鈕),或按**F5**或**Ctrl**+**F5**來執行該程式。 使用 **「開始」** 按鈕時,它將在除錯器下運行。  Visual Studio 嘗試在專案中生成代碼並運行它。  如果成功,太好了! 但是,如果沒有,繼續閱讀一些關於如何成功構建它的想法。
+若要啟動程式，請按下主要 Visual Studio 工具列上的綠色箭號 ([**開始**] 按鈕) ，或按**f5**或**Ctrl** + **f5**來執行程式。 當您使用 [ **開始** ] 按鈕時，它會在偵錯工具下執行。  Visual Studio 嘗試在您的專案中建立程式碼並加以執行。  如果成功，很棒！ 但如果沒有，請繼續閱讀有關如何讓它成功建立的一些想法。
 
 ## <a name="troubleshooting"></a>疑難排解
 
-您的代碼可能有錯誤,但如果代碼正確,但僅取決於其他程式集或 NuGet 包,或者編寫到針對不同版本的 .NET,則可能可以輕鬆修復它。
+您的程式碼可能有錯誤，但如果程式碼正確，但只是相依于其他的元件或 NuGet 套件，或者是以不同版本的 .NET 撰寫而成，您可能可以輕鬆地修正此問題。
 
 ### <a name="add-references"></a>新增參考
 
-要正確生成,代碼必須正確,並且已設置對庫或其他依賴項的正確引用。 您可以查看紅色波浪線和**錯誤列表**,查看程式是否有任何錯誤,甚至在編譯和運行它之前也是如此。 如果您看到與未解析名稱相關的錯誤,則可能需要添加引用或 using 指令,或者兩者兼而有之。 如果代碼引用任何程式集或 NuGet 包,則需要在專案中添加這些引用。
+若要正確建立，程式碼必須正確，並將正確的參考設定為程式庫或其他相依性。 您可以查看紅色波浪線和 **錯誤清單** ，查看程式是否有任何錯誤，即使在編譯和執行之前也是一樣。 如果您看到與無法解析的名稱相關的錯誤，您可能需要加入參考或 using 指示詞，或兩者。 如果程式碼參考任何元件或 NuGet 封裝，您必須在專案中新增這些參考。
 
-Visual Studio 會嘗試説明您識別缺少的引用。 當名稱未解析時,編輯器中將顯示一個燈泡圖示。 如果單擊燈泡,可以看到有關如何解決此問題的一些建議。 修復方法可能是:
+Visual Studio 會嘗試協助您找出遺漏的參考。 當名稱無法解析時，編輯器中會出現燈泡圖示。 如果您按一下燈泡，可以看到一些如何修正問題的建議。 修正程式可能是：
 
-- 新增 using 指令
-- 新增對程式集的參考或
-- 安裝 NuGet 包。
+- 新增 using 指示詞
+- 加入元件的參考，或
+- 安裝 NuGet 套件。
 
-#### <a name="missing-using-directive"></a>缺少使用指令
+#### <a name="missing-using-directive"></a>遺漏 using 指示詞
 
-例如,在下面的螢幕中,您可以選擇新增到`using System;`代碼檔的開頭以解析未解析的名稱: `Console`
+例如，在下列畫面中，您可以選擇新增至程式 `using System;` 代碼檔案的開頭，以解析未解析的名稱 `Console` ：
 
-![新增使用指令的燈泡螢幕擷取](media/name-does-not-exist2.png)
+![新增 using 指示詞的燈泡螢幕擷取畫面](media/name-does-not-exist2.png)
 
-#### <a name="missing-assembly-reference"></a>遺失程式集參照
+#### <a name="missing-assembly-reference"></a>遺漏元件參考
 
-.NET 引用可以以程式集或 NuGet 套件的形式進行。 通常,如果您找到原始程式碼,發行者或作者將解釋需要哪些程式集以及代碼所依賴的包。 要手動添加對專案的引用,請右鍵單擊**解決方案資源管理器**中的 **「引用」** 節點,選擇 **「添加引用**」並查找所需的程式集。
+.NET 參考可以是元件或 NuGet 套件的形式。 通常，如果您找到原始程式碼，發行者或作者將會說明需要哪些元件，以及程式碼相依的套件。 若要手動加入專案的參考，請以滑鼠右鍵按一下**方案總管**中的 [**參考**] 節點，選擇 [**加入參考**]，然後找出必要的元件。
 
-![新增參考選單的螢幕擷取](media/add-reference.png)
+![[新增參考] 功能表的螢幕擷取畫面](media/add-reference.png)
 
-您可以使用[引用管理員,按照"添加或刪除引用](../../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)"中的說明查找程式集並添加引用。
+您可以遵循 [使用參考管理員加入或移除參考](../../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)中的指示，找到元件並加入參考。
 
 #### <a name="missing-nuget-package"></a>缺少 NuGet 套件
 
-如果 Visual Studio 偵測到缺少的 NuGet 套件,則會出現一個燈泡,並為您提供安裝它的選項:
+如果 Visual Studio 偵測到遺漏的 NuGet 套件，則會出現燈泡，並提供您安裝的選項：
 
-![要安裝套件的燈泡螢幕截圖](media/lightbulb-add-package.png)
+![要安裝套件的燈泡螢幕擷取畫面](media/lightbulb-add-package.png)
 
-如果這不能解決問題,並且 Visual Studio 找不到包,請嘗試連線搜尋它。 請參考[在視覺化工作室中安裝與使用 NuGet 套件](/nuget/quickstart/install-and-use-a-package-in-visual-studio)。
+如果這無法解決問題，且 Visual Studio 找不到套件，請嘗試在線上搜尋。 請參閱 [在 Visual Studio 中安裝和使用 NuGet 套件](/nuget/quickstart/install-and-use-a-package-in-visual-studio)。
 
-## <a name="use-the-right-version-of-net"></a>使用正確的版本 .NET
+## <a name="use-the-right-version-of-net"></a>使用正確的 .NET 版本
 
-由於 .NET 框架的不同版本具有某種程度的向後相容性,因此較新的框架可能會運行為舊框架編寫的代碼,而無需進行任何修改。 但是,有時您需要針對特定框架。 如果尚未安裝 .NET 框架或 .NET Core 的特定版本,則可能需要安裝該版本。 請參閱[修改視覺工作室](../../install/modify-visual-studio.md)。
+因為不同版本的 .NET Framework 有某種程度的回溯相容性，所以較新的架構可能會執行針對較舊架構所撰寫的程式碼，而不需要任何修改。 但是，有時候您需要以特定的架構為目標。 您可能需要安裝特定版本的 .NET Framework 或 .NET Core （如果尚未安裝）。 請參閱 [修改 Visual Studio](../../install/modify-visual-studio.md)。
 
-要改變目標框架,請參閱[變更目標框架](../../ide/visual-studio-multi-targeting-overview.md#select-a-target-framework-version)。 關於詳細資訊,請參閱故障排除[.NET 框架定位錯誤](../../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)。
+若要變更目標 framework，請參閱 [變更目標 framework](../../ide/visual-studio-multi-targeting-overview.md#select-a-target-framework-version)。 如需詳細資訊，請參閱 [疑難排解 .NET Framework 目標錯誤](../../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
-通過閱讀[「歡迎瀏覽視覺工作室 IDE」](../visual-studio-ide.md)來探索視覺工作室開發環境。
+閱讀 [歡迎使用 VISUAL STUDIO IDE，以](../visual-studio-ide.md)探索 Visual Studio 開發環境。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,5 +1,5 @@
 ---
-title: '&lt;deprecated &gt; （JavaScript） |Microsoft Docs'
+title: '&lt;已淘汰 &gt; (JavaScript) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 343f3ebe4bea7ee999f60741c189f35defb0ac7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665810"
 ---
 # <a name="ltdeprecatedgt-javascript"></a>&lt;deprecated&gt; (JavaScript)
@@ -31,14 +31,14 @@ ms.locfileid: "72665810"
 ```
 
 #### <a name="parameters"></a>參數
- `type` 選擇項。 指定是否要在未來的版本中移除函式或方法，或是函式或方法是否已移除，而且其使用方式可能會導致錯誤。 設定為 `deprecate` 以指定未來版本將移除函式或方法。 設定為 `remove`，指定已移除函式或方法。
+ `type` 選擇項。 指定是否要在未來的版本中移除函式或方法，或是否已移除函式或方法，且其使用方式可能會導致錯誤。 設定為， `deprecate` 指定將在未來版本中移除函式或方法。 設定為， `remove` 指定已移除函式或方法。
 
- `locid` 選擇項。 關於函式或方法的當地語系化資訊識別項。 該識別項會是成員識別碼，或對應由 OpenAjax 中繼資料所定義訊息包中的 `name` 屬性值。 識別項類型會依據在 [\<loc>](../ide/loc-javascript.md) 元素中指定的格式而有所不同。
+ `locid` 選擇項。 關於函式或方法的當地語系化資訊識別項。 該識別項會是成員識別碼，或對應由 OpenAjax 中繼資料所定義訊息包中的 `name` 屬性值。 識別碼類型取決於元素中指定的格式 [\<loc>](../ide/loc-javascript.md) 。
 
  `description` 選擇項。 即將淘汰之函數或方法的描述。
 
 ## <a name="remarks"></a>備註
- 用來標注函式的元素（包括 `<deprecated>`）必須放在函式主體中的任何語句之前。 當您將函式標示為已被取代時，建議您將其[\<summary >](../ide/summary-javascript.md)元素取代為 `<deprecated>` 元素。
+ 用來標注函式的專案（包括 `<deprecated>` ）必須放在函式主體中的任何語句之前。 當您將函式標示為已淘汰時，建議您將它的元素取代為 [\<summary>](../ide/summary-javascript.md) `<deprecated>` 元素。
 
 ## <a name="example"></a>範例
  下列程式碼示範如何使用 `<deprecated>` 元素。
@@ -56,4 +56,4 @@ function areaFunction(radiusParam) {
 ```
 
 ## <a name="see-also"></a>另請參閱
- [XML 文件註解](../ide/xml-documentation-comments-javascript.md)
+ [XML 檔批註](../ide/xml-documentation-comments-javascript.md)

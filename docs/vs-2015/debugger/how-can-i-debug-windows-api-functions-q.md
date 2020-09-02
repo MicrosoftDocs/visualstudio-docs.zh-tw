@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8c5fd73eb64c79ac9476c0036b9f2d709294d178
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704587"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>如何偵錯 Windows API 函式？
@@ -43,8 +43,8 @@ ms.locfileid: "65704587"
     {,,USER32.DLL}_MessageBeep@4  
     ```  
   
-     若要取得裝飾的名稱，請參閱[檢視裝飾名稱](https://msdn.microsoft.com/f79e2717-a4db-4d12-a689-69830cce2be0)。  
+     若要取得裝飾名稱，請參閱 [觀看裝飾名稱](https://msdn.microsoft.com/f79e2717-a4db-4d12-a689-69830cce2be0)。  
   
 ## <a name="see-also"></a>另請參閱  
- [對機器碼進行偵錯的常見問題集](../debugger/debugging-native-code-faqs.md)   
+ [原生程式碼的偵錯工具常見問題](../debugger/debugging-native-code-faqs.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)

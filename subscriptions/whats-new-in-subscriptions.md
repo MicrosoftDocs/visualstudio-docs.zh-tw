@@ -9,10 +9,10 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
 ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81649684"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的新功能
@@ -21,43 +21,43 @@ ms.locfileid: "81649684"
 
 ## <a name="2020-q1-january-march"></a>2020 第 1 季 (1 月至 3 月)
 
-### <a name="subscriptions-administration-portal"></a>訂閱管理門戶
-2020 年第一季度,Visual Studio 訂閱管理門https://manage.visualstudio.com戶在 中出現了新的外觀和一些新功能。 對門戶的更改包括新的色彩配置和某些工具的重新排列。  訂閱分配、協定詳細資訊和最大使用量的概述現在由左上角的按鈕控制。  這有助於最大化您最常執行的管理任務的可用螢幕空間,例如分配和編輯訂閱。  
+### <a name="subscriptions-administration-portal"></a>訂用帳戶管理入口網站
+2020的第一季看到新的外觀，以及 Visual Studio 訂閱系統管理入口網站的一些新功能 https://manage.visualstudio.com 。 入口網站的變更包含新的色彩配置，以及某些工具的重新排列。  您的訂用帳戶配置、合約詳細資料和最大使用量的總覽現在是由左上方的按鈕所控制。  這有助於將您最常進行的管理工作的可用螢幕空間最大化，例如指派和編輯訂閱。  
 
-我們還組合了添加 invididual 訂閱者的選項,並在下拉**清單和添加**功能表中執行批量添加。 
+我們也結合了選項來新增 invididual 訂閱者，並在下拉式清單 **+ [新增** ] 功能表中執行大量新增。 
 
    > [!div class="mx-imgBorder"]
-   > ![訂閱管理門戶的新 UI](_img/whats-new/new-admin-ui.png)
+   > ![訂用帳戶管理入口網站的新 UI](_img/whats-new/new-admin-ui.png)
 
-#### <a name="connect-emails"></a>連線電子郵件
-我們可以輕鬆地將使用 Microsoft 帳戶 (MSA) 的訂閱者與 Azure 活動目錄 (Azure AD) 進行匹配,因此您可以快速連結這兩個標識。  使用 Azure AD 標識可提高安全性和簡化訂閱管理。  有關詳細資訊,請瀏覽我們的[個人登入文章](personal-email-sign-ins.md)。 
+#### <a name="connect-emails"></a>連接電子郵件
+我們讓您能輕鬆地比對使用 Microsoft 帳戶 (MSA) 至 Azure Active Directory (Azure AD) 的訂閱者，因此您可以快速地連結這兩個身分識別。  使用 Azure AD 身分識別可提供更高的安全性和更輕鬆的訂用帳戶管理。  如需詳細資料，請參閱我們的 [個人登入文章](personal-email-sign-ins.md) 。 
 
-#### <a name="add-subscribers-using-azure-active-directory-groups"></a>使用 Azure 的目錄群組新增訂閱者
-如果您的組織使用 Azure 活動目錄 (Azure AD),則現在可以使用 Azure AD 組管理訂閱。  將訂閱分配給組使您能夠非常快速地向多個使用者提供相同類型的訂閱。  將新使用者添加到 Azure AD 組時,將自動為其分配訂閱。  如果從 Azure AD 組中刪除使用者,則其訂閱也會被刪除。  這有助於您的組織自動執行訂閱管理,從而節省管理員的時間和精力。  有關詳細資訊,請查看文檔中的[「新增多個使用者](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions)」文章。 
+#### <a name="add-subscribers-using-azure-active-directory-groups"></a>使用 Azure Active Directory 群組新增訂閱者
+如果您的組織使用 Azure Active Directory (Azure AD) ，您現在可以使用 Azure AD 群組來管理訂用帳戶。  將訂用帳戶指派給群組，讓您能夠非常快速地將相同類型的訂閱提供給多個使用者。  將新使用者新增至 Azure AD 群組時，系統會自動將訂用帳戶指派給他們。  如果從 Azure AD 群組中移除使用者，也會移除其訂用帳戶。  這可協助您的組織將您的訂用帳戶管理自動化，以節省管理員的時間和精力。  如需詳細資料，請參閱檔中的「 [新增多位使用者](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) 」文章。 
 
 ### <a name="cast-highlight"></a>CAST Highlight
-我們很高興地宣佈擴大我們的合作夥伴 CAST 亮點所提供的福利。 
-- Visual Studio 企業版訂閱中包含的權益期限已延長至六個月。  
-- Visual Studio 專業訂閱者現在可以收到訂閱,允許他們評估單個應用程式三個月。 
+我們很高興宣佈我們的合作夥伴所提供的權益，轉型醒目提示。 
+- Visual Studio Enterprise 訂用帳戶中包含的權益長度已延長為六個月。  
+- Visual Studio Professional 訂閱者現在可以接收訂用帳戶，讓他們在三個月內評估單一應用程式。 
 
 ## <a name="2020-q2-april-june"></a>2020 年第 2 季 (4 月至 6 月)
 
-### <a name="visual-studio-subscriptions-portal"></a>可視化工作室訂閱門戶
+### <a name="visual-studio-subscriptions-portal"></a>Visual Studio 訂閱入口網站
 
-可視化工作室訂閱門戶的外觀和易用性發生了重大變化。  
+Visual Studio 訂閱的入口網站會進行外觀和易用性的重大變更。  
 
-- 福利磁貼已調整大小,並且都顯示在視窗中,因此您無需向左或向右滾動來查看給定類別中的所有磁貼。 
-- 您可以選擇顯示所有可用權益,或使用類別選取器僅顯示一個類別。
+- 優點圖格已調整大小，並會顯示在視窗中，因此您不需要向左或向右移動以查看指定類別中的所有磚。 
+- 您可以選擇顯示所有可用的權益，或使用類別選擇器只顯示一個類別。
    > [!div class="mx-imgBorder"]
-   > ![新的福利類別選擇器](_img/whats-new/whats-new-category-picker.png)
-- 我們還將訂閱選取器從視窗的右上角移動到更易於訪問的位置。
+   > ![新權益分類別選取器](_img/whats-new/whats-new-category-picker.png)
+- 我們也已將訂用帳戶選擇器從視窗的右上角移至更容易存取的位置。
    > [!div class="mx-imgBorder"]
-   > ![新的訂閱選取器](_img/whats-new/whats-new-sub-picker.png)
-- 我們在福利列表頂部添加了"特色福利",以標註新的或受歡迎的福利。  
+   > ![新的訂用帳戶選擇器](_img/whats-new/whats-new-sub-picker.png)
+- 我們已在權益清單頂端新增「精選權益」，以呼叫新的或熱門的權益。  
    > [!div class="mx-imgBorder"]
-   > ![新的特色優勢](_img/whats-new/whats-new-featured.png)
+   > ![新的精選權益](_img/whats-new/whats-new-featured.png)
 
 ## <a name="next-steps"></a>後續步驟
-- 檢視新的[訂閱管理門戶](https://manage.visualstudio.com)UI 及其新功能
-- 瞭解有關[CAST 亮點](vs-cast.md)的更多
-- 請務必在此處查看有關 Visual Studio 訂閱中新增功能的最新資訊!
+- 查看新的訂用帳戶 [管理入口網站](https://manage.visualstudio.com) UI 及其新功能
+- 深入瞭解[轉換醒目](vs-cast.md)提示
+- 請務必回來查看 Visual Studio 訂閱新功能的最新資訊！

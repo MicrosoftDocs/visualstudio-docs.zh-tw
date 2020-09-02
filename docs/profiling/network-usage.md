@@ -11,10 +11,10 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 00fd0c03bf460cd8b72a10d15501994d7a2aa10a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541709"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>分析 UWP App 的網路使用量
@@ -23,14 +23,14 @@ Visual Studio 的 [網路]**** 診斷工具會收集使用 [Windows.Web.Http 應
  [網路] 工具僅支援 UWP 應用程式。 目前不支援其他平台。
 
 > [!NOTE]
-> 如需更完整的網路工具描述，請參閱[Visual Studio 的網路工具簡介](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/)。
+> 如需更完整的網路工具描述，請參閱 [Visual Studio 的網路工具簡介](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/)。
 
 ## <a name="collect-network-tool-data"></a>收集網路工具資料
  您應該針對 Visual Studio 電腦上開啟的 Visual Studio 專案執行 [網路]**** 工具。
 
 1. 在 Visual Studio 中開啟專案。
 
-2. 在功能表上，按一下 [ **Debug/Performance Profiler**]。 選擇 [網路]****，然後選擇 [啟動]****。
+2. 在功能表上，按一下 [ **Debug/效能分析工具**]。 選擇 [網路]****，然後選擇 [啟動]****。
 
 3. 網路工具會開始收集您應用程式的 HTTP 流量。
 
@@ -53,12 +53,12 @@ Visual Studio 的 [網路]**** 診斷工具會收集使用 [Windows.Web.Http 應
 
  ![網路工具詳細資料窗格](../profiling/media/network_detailsviewpane.png "NETWORK_DetailsViewPane")
 
-|名稱|描述|
+|Name|說明|
 |-|-|
 |**標頭**|事件的要求標頭資訊。|
 |**本文**|要求和回應承載資料。|
 |**參數**|查詢字串參數名稱和值。|
-|**Cookie**|回應和要求 Cookie 資料。|
+|**餅乾**|回應和要求 Cookie 資料。|
 |**時間**|取得所選資源的各階段圖表。|
 
  網路 [摘要]**** 列會顯示在任何給定的時間點、傳輸資料量、下載所花費時間，以及可見的錯誤數目 (4xx 或 5xx 回應的要求) 的網路作業數。
@@ -76,6 +76,6 @@ Visual Studio 的 [網路]**** 診斷工具會收集使用 [Windows.Web.Http 應
 
 - [使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
 - [Visual Studio 部落格：Visual Studio 網路檢查簡介](https://devblogs.microsoft.com/visualstudio/)
-- [Channel 9 影片： VS 診斷工具-新的網路 Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
+- [Channel 9 影片： VS 診斷工具-新的網路分析工具](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
 - [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

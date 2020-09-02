@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ebc0fe8391c6390d62cffbb591c4cef1ea52976f
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468069"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
@@ -33,21 +33,21 @@ IDiaEnumSectionContribs : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|抓取此列舉值的[IEnumVARIANT 介面](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)版本。|
-|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|抓取區段貢獻的數目。|
-|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|透過索引來抓取區段投稿。|
-|[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|抓取列舉序列中指定數目的區段貢獻。|
+|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|抓取此列舉值的 [IEnumVARIANT 介面](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) 版本。|
+|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|抓取區段投稿的數目。|
+|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|藉由索引來抓取章節投稿。|
+|[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|抓取列舉序列中指定的區段貢獻數目。|
 |[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|略過列舉序列中指定數目的區段貢獻。|
-|[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|將列舉序列重設為開頭。|
-|[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|建立枚舉器，其中包含與目前列舉值相同的列舉狀態。|
+|[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|將列舉順序重設為開頭。|
+|[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
 
 ## <a name="remarks"></a>備註
 
-## <a name="note-for-callers"></a>呼叫者的注意事項
-從[IDiaSession：： getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)方法取得此介面。 如需詳細資訊，請參閱範例。
+## <a name="note-for-callers"></a>呼叫端的注意事項
+從 [IDiaSession：： getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) 方法取得這個介面。 如需詳細資訊，請參閱範例。
 
 ## <a name="example"></a>範例
-這個範例會示範如何取得（函式 `GetEnumSectionContribs` ）並使用（函式 `ShowSectionContribs` ） `IDiaEnumSectionContribs` 介面。 如需使用區段投稿的更完整範例，請參閱[IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)介面。
+這個範例會示範如何取得函式 (`GetEnumSectionContribs`) ，並 (函式) 介面使用該函數 `ShowSectionContribs` `IDiaEnumSectionContribs` 。 如需使用章節投稿的更完整範例，請參閱 [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) 介面。
 
 ```C++
 
@@ -102,7 +102,7 @@ void ShowSectionContribs(IDiaSession *pSession)
 ## <a name="requirements"></a>需求
 標頭： Dia2。h
 
-程式庫： diaguids
+程式庫： diaguids .lib
 
 DLL： msdia80.dll
 

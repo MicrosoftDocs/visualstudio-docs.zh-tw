@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ddff6130e2243d10c00cefec160d057516d60932
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153271"
 ---
-# <a name="bpunboundreason"></a>BP_UNBOUND_REASON
+# <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-提供中斷點已繫結的原因。  
+提供中斷點未系結的原因。  
   
 ## <a name="syntax"></a>語法  
   
@@ -47,27 +47,27 @@ public enum enum_BP_UNBOUND_REASON { 
   
 ## <a name="members"></a>成員  
  BPUR_UNKNOWN  
- 未知的原因。  
+ 原因不明。  
   
  BPUR_CODE_UNLOADED  
- 包含中斷點的程式碼已卸載。  
+ 包含中斷點的程式碼已經卸載。  
   
  BPUR_BREAKPOINT_REBIND  
- 中斷點具有已重新繫結至不同的位置中。 這可以在下班之後編輯並繼續作業時的中斷點會移動，或當中斷點繫結至已不再有效的路徑與檔案。  
+ 中斷點已重新綁定至不同的位置。 當中斷點移動時，或當中斷點系結至路徑不再有效的檔案時，就會發生這種情況。  
   
  BPUR_ BREAKPOINT_ERROR  
- 中斷點會判斷它繫結之後會發生錯誤。 這是受管理的條件不再是有效的中斷點。  
+ 中斷點會在系結之後判斷為錯誤。 這會發生在其條件不再有效的 managed 中斷點上。  
   
 ## <a name="remarks"></a>備註  
- 所傳回[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)方法。  
+ 由 [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) 方法傳回。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

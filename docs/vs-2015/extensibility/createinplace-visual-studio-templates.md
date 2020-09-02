@@ -1,5 +1,5 @@
 ---
-title: CreateInPlace （Visual Studio 範本） |Microsoft Docs
+title: CreateInPlace (Visual Studio 範本) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,19 +14,19 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d722aebef0cbcf589185c36cb481a676280d59ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184247"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-指定是否要建立專案和執行參數取代在指定的位置，或執行參數取代的暫存位置中，然後將專案儲存至指定的位置。  
+指定是否要在指定的位置建立專案並執行參數取代，或在暫存位置中執行參數取代，然後將專案儲存至指定的位置。  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<CreateInPlace>  
   
 ## <a name="syntax"></a>語法  
@@ -36,7 +36,7 @@ ms.locfileid: "68184247"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
  無。  
@@ -48,15 +48,15 @@ ms.locfileid: "68184247"
   
 |項目|描述|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|  
   
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 此文字必須是 `true` 或 `false`。 如果`true`，專案會建立，而且在指定的位置上執行參數取代**新的專案** 對話方塊。 如果`false`執行參數取代的暫存位置中，專案再複製到指定的位置。  
+ 此文字必須是 `true` 或 `false`。 如果為 `true` ，則會建立專案，並在 [ **新增專案** ] 對話方塊中指定的位置執行參數取代。 如果為 `false` ，則會在暫存位置中執行參數取代，然後將專案複製到指定的位置。  
   
 ## <a name="remarks"></a>備註  
- `CreateInPlace` 是選擇性項目。 預設值為 `true`。  
+  是選擇性元素。 預設值是 `true`。  
   
 ## <a name="example"></a>範例  
  下列範例說明 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 範本的中繼資料。  
@@ -87,5 +87,5 @@ ms.locfileid: "68184247"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
+ [建立專案和專案範本](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7a63b73e27de4e33aaa5c833c79f339da66954d3
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815730"
 ---
 # <a name="object-doesnt-support-this-property-or-method"></a>物件不支援此屬性或方法
@@ -33,5 +33,5 @@ ms.locfileid: "85815730"
 - 如需詳細資訊，請參閱物件的文件。  
   
 ## <a name="see-also"></a>另請參閱  
- [物件物件](../../javascript/reference/object-object-javascript.md)   
+ [Object 物件](../../javascript/reference/object-object-javascript.md)   
  [JavaScript 物件](../../javascript/reference/javascript-objects.md)

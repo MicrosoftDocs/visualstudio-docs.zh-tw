@@ -1,5 +1,5 @@
 ---
-title: 連接埠 |Microsoft Docs
+title: 埠 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,30 +12,30 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 73003e00fef5c37db4a702e7a4a1121600673844
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153692"
 ---
 # <a name="ports"></a>連接埠
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-偵錯工具就架構而言，**連接埠**:  
+就偵錯工具架構而言， **埠**：  
   
-- 在伺服器上執行的一組處理序的容器。 例如，連接埠可能代表 Windows CE 架構裝置的序列纜線或網路上的非 DCOM 機器的連線。 一個特殊的連接埠，稱為本機連接埠，包含本機電腦上執行的所有處理程序。  
+- 是在伺服器上執行的一組進程的容器。 例如，埠可能代表透過序列纜線或網路非 DCOM 電腦的 Windows CE 型裝置連線。 一個特殊的埠（稱為本機埠）包含在本機電腦上執行的所有處理常式。  
   
-- 可以依名稱或識別碼識別本身。  
+- 可以依名稱或識別碼來識別其本身。  
   
-- 可以列舉所有連接埠上執行的處理序啟動和結束這些處理序。  
+- 可以列舉在埠上執行的所有處理常式，並啟動和終止這些進程。  
   
-- 由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面，它由傳遞[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)引數[下列](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)。  
+- 是由 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 介面表示，它是藉由將 [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) 引數傳遞至 [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)所建立。  
   
-  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供處理所有以 Windows 為基礎的處理序原生和受管理的預設連接埠。 連線必須實作自訂連接埠不是以 Windows 為基礎的外部裝置。 若要提供這類自訂連接埠，自訂連接埠供應商也必須實作。  
+  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供預設的埠，可處理所有以 Windows 為基礎的處理常式（原生和 managed）。 必須針對不是以 Windows 為基礎的外部裝置連線，執行自訂埠。 若要提供這類自訂埠，也需要執行自訂埠供應商。  
   
 ## <a name="see-also"></a>另請參閱  
  [伺服器](../../extensibility/debugger/servers-visual-studio-sdk.md)   
- [處理程序](../../extensibility/debugger/processes.md)   
+ [過程](../../extensibility/debugger/processes.md)   
  [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)   
  [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)   

@@ -13,10 +13,10 @@ author: bowdenk7
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81649635"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
@@ -24,7 +24,7 @@ ms.locfileid: "81649635"
 JavaScript 是在 Visual Studio 中的第一級語言。 當您在 Visual Studio IDE 中撰寫 JavaScript 程式碼時，可以使用大部分或所有標準編輯輔助，包括程式碼片段、IntelliSense 等等。 您可以為許多應用程式類型和服務撰寫 JavaScript 程式碼。
 
 > [!NOTE]
-> 我們加入了全社區的努力,通過將 Microsoft JavaScript API 引用的所有(500 多頁)從docs.microsoft.com重定向到其 MDN 對應項,使[MDN Web 文件](https://developer.mozilla.org/en-US/)成為 Web 的一站式開發資源。 如需詳細資料，請參閱本[宣告](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)。
+> 我們已加入全公司的工作，讓 [MDN web](https://developer.mozilla.org/en-US/) 檔成為 web 的一項首播開發資源，方法是將 Microsoft 的 JavaScript API 參考) 的所有 (500 + 個頁面，從 docs.microsoft.com 重新導向至其 MDN 對應專案。 如需詳細資料，請參閱本[宣告](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)。
 
 ## <a name="support-for-ecmascript-2015-es6-and-beyond"></a><a name="ES6"></a> ECMAScript 2015 (ES6) 和更新版本的支援
 

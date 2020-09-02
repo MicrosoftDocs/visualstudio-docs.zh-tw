@@ -18,24 +18,24 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f1c3dfb145e70665156c921cc9a6f740539bc4e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665843"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>自訂 Visual Studio 的起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以使用幾個預設方式來自訂 Visual Studio 的起始頁，例如顯示 [開啟專案]  對話方塊或開啟最近載入的方案。 您也可以顯示自訂起始頁，這是一個在工具視窗中執行的 Windows Presentation Foundation (WPF) XAML 頁面，並且可以執行 Visual Studio 的內部命令。
+您可以使用幾個預設方式來自訂 Visual Studio 的起始頁，例如顯示 [開啟專案]**** 對話方塊或開啟最近載入的方案。 您也可以顯示自訂起始頁，這是一個在工具視窗中執行的 Windows Presentation Foundation (WPF) XAML 頁面，並且可以執行 Visual Studio 的內部命令。
 
 ## <a name="customizing-the-default-start-page"></a>自訂預設起始頁
 
-1. 在功能表列上選擇 [工具]  、[選項]  。
+1. 在功能表列上選擇 [工具] ****、[選項] ****。
 
-2. 展開 [環境]  ，然後選擇 [啟動]  。
+2. 展開 [環境]****，然後選擇 [啟動]****。
 
-3. 在 [啟動時]  清單中，選擇您要自訂的項目。
+3. 在 [啟動時]**** 清單中，選擇您要自訂的項目。
 
 ## <a name="show-a-custom-start-page"></a>顯示自訂起始頁
 
@@ -52,11 +52,11 @@ ms.locfileid: "72665843"
 
          請參閱[建立您自己的起始頁](../misc/creating-your-own-start-page.md)。
 
-2. 在功能表列上選擇 [工具]  、[選項]  。
+2. 在功能表列上選擇 [工具] ****、[選項] ****。
 
-3. 展開 [環境]  ，然後選擇 [啟動]  。
+3. 展開 [環境]****，然後選擇 [啟動]****。
 
-4. 在 [自訂起始頁]  清單中，選擇您要的頁面。
+4. 在 [自訂起始頁]**** 清單中，選擇您要的頁面。
 
 > [!NOTE]
 > 如果自訂起始頁中的錯誤導致 Visual Studio 當掉，請以安全模式啟動 Visual Studio，然後設定它使用預設起始頁。 請參閱 [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md)。

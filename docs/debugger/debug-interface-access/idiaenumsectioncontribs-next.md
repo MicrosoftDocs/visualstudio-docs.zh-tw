@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 09622b1b152a8d1efd105b9b18a3c1fa74835378
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468111"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
-抓取列舉序列中指定數目的區段貢獻。
+抓取列舉序列中指定的區段貢獻數目。
 
 ## <a name="syntax"></a>語法
 
@@ -39,14 +39,14 @@ HRESULT Next( 
 
  rgelt
 
-脫銷要填入[IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)物件的陣列，表示所需的區段投稿。
+擴展要填入 [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) 物件的陣列，這些物件代表所需的區段貢獻。
 
  pceltFetched
 
-脫銷傳回已提取列舉值中的區段貢獻數目。
+擴展傳回取得的列舉值中的區段貢獻數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回 `S_OK`。 `S_FALSE`如果沒有其他區段的貢獻，則傳回。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果沒有其他區段投稿，則傳回。 否則會傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

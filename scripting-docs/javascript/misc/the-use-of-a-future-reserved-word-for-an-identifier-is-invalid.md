@@ -15,15 +15,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6390e25f6d2840f22588df124b65e08b7b37ea18
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815717"
 ---
 # <a name="the-use-of-a-future-reserved-word-for-an-identifier-is-invalid"></a>使用未來供識別項使用的保留字是無效的動作
-1049：為識別碼使用未來的保留字無效  
+1049：針對識別碼使用未來保留字組無效  
   
- 您不能使用未來的保留字作為變數、函式或其他使用者定義識別碼的名稱。  
+ 您無法使用未來的保留字作為變數、函式或其他使用者定義識別碼的名稱。  
   
- 如需未來保留字的詳細資訊，請參閱[JavaScript 未來的保留字](../../javascript/reference/javascript-future-reserved-words.md)。
+ 如需未來保留字的詳細資訊，請參閱 [JavaScript 未來的保留字](../../javascript/reference/javascript-future-reserved-words.md)。

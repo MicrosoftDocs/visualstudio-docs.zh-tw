@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e5fc392e6d3d862ae81f0844d2cd28e8da44a805
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595679"
 ---
-# <a name="options-dialog-box-environment--preview-features"></a>選項對話方塊：環境\>預覽功能
+# <a name="options-dialog-box-environment--preview-features"></a>選項對話方塊：環境 \> 預覽功能
 
 使用 [選項]**** 對話方塊的這個頁面以啟用或停用 Visual Studio 中的預覽功能。 [預覽功能]**** 選項頁面會因為 Visual Studio 中提供不同的預覽功能而頻繁變更。
 

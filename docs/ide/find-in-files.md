@@ -20,32 +20,32 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e1f067df647f843819e085f283005606699f3bb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595471"
 ---
 # <a name="find-in-files"></a>檔案中尋找
 
-[檔案中尋找]**** 可讓您搜尋一組指定的檔案。 找到的匹配項和執行的操作列在 **"查找結果"視窗中，** 該視窗中選擇了"結果"選項。 **Find Results**
+[檔案中尋找]**** 可讓您搜尋一組指定的檔案。 找到的相符專案與所採取的動作會列在 [**結果選項**] 中所選取的 [**尋找結果**] 視窗中。
 
 您可以使用下列任何方法，以在 [尋找和取代]**** 視窗中顯示 [檔案中尋找]****。
 
 ## <a name="to-display-find-in-files"></a>顯示檔案中尋找
 
-1. 在功能表列上，選擇 **"編輯** > **查找和替換**"。
+1. 在功能表列上，選擇 [**編輯**  >  **尋找和取代**]。
 
 1. 選擇 [檔案中尋找]****。
 
-要取消"查找"操作，請按 **"Ctrl** + **中斷**"。
+若要取消尋找作業，請按下**Ctrl**  +  **Break**。
 
 > [!NOTE]
 > [尋找和取代] 工具不會使用 `Hidden` 或 `System` 屬性來搜尋目錄。
 
 ## <a name="find-what"></a>尋找目標
 
-若要搜尋新的文字字串或運算式，請在方塊中指定。 若要搜尋您最近搜尋過的 20 個字串之一，請開啟下拉式清單，然後選擇字串。 如果您想要在搜尋字串中使用一或多個規則運算式，請選擇相鄰的 [運算式產生器]**** 按鈕。 有關詳細資訊，請參閱[在視覺化工作室中使用正則運算式](../ide/using-regular-expressions-in-visual-studio.md)。
+若要搜尋新的文字字串或運算式，請在方塊中指定。 若要搜尋您最近搜尋過的 20 個字串之一，請開啟下拉式清單，然後選擇字串。 如果您想要在搜尋字串中使用一或多個規則運算式，請選擇相鄰的 [運算式產生器]**** 按鈕。 如需詳細資訊，請參閱 [在 Visual Studio 中使用正則運算式](../ide/using-regular-expressions-in-visual-studio.md)。
 
 > [!NOTE]
 > 只有在選取 [尋找選項]**** 下方的 [使用規則運算式]**** 時，才會啟用 [運算式產生器]**** 按鈕。
@@ -66,7 +66,7 @@ ms.locfileid: "75595471"
 
 ## <a name="find-options"></a>尋找選項
 
-您可以展開或折疊 **"查找選項"** 部分。 可選取或清除下列選項：
+您可以展開或折迭 [ **尋找選項** ] 區段。 可選取或清除下列選項：
 
 **大小寫須相符**
 
@@ -78,7 +78,7 @@ ms.locfileid: "75595471"
 
 **使用正則運算式**
 
-如果已選取此核取方塊，您可以使用特殊標記法來定義文字模式，以在 [尋找目標]**** 或 [取代為]**** 文字方塊中進行比對。 有關這些符號的清單，請參閱[在 Visual Studio 中使用正則運算式](../ide/using-regular-expressions-in-visual-studio.md)。
+如果已選取此核取方塊，您可以使用特殊標記法來定義文字模式，以在 [尋找目標]**** 或 [取代為]**** 文字方塊中進行比對。 如需這些標記法的清單，請參閱 [在 Visual Studio 中使用正則運算式](../ide/using-regular-expressions-in-visual-studio.md)。
 
 **尋找下列檔案類型**
 
@@ -88,13 +88,13 @@ ms.locfileid: "75595471"
 
 ## <a name="result-options"></a>結果選項
 
-您可以展開或折疊 **"結果"選項**部分。 可選取或清除下列選項：
+您可以展開或折迭 [ **結果選項** ] 區段。 可選取或清除下列選項：
 
-**查找結果 1 視窗**
+**尋找結果1視窗**
 
 若選取此選項，目前搜尋的結果將會取代 [尋找結果 1]**** 視窗的內容。 此視窗會自動開啟，以顯示您的搜尋結果。 若要手動開啟此視窗，請從 [檢視]**** 功能表中選取 [其他視窗]****，並選擇 [尋找結果 1]****。
 
-**查找結果 2 視窗**
+**尋找結果2視窗**
 
 若選取此選項，目前搜尋的結果將會取代 [尋找結果 2]**** 視窗的內容。 此視窗會自動開啟，以顯示您的搜尋結果。 若要手動開啟此視窗，請從 [檢視]**** 功能表中選取 [其他視窗]****，並選擇 [尋找結果 2]****。
 
@@ -108,6 +108,6 @@ ms.locfileid: "75595471"
 
 ## <a name="see-also"></a>另請參閱
 
-- [查找和替換文本](../ide/finding-and-replacing-text.md)
+- [尋找和取代文字](../ide/finding-and-replacing-text.md)
 - [檔案中取代](../ide/replace-in-files.md)
-- [視覺化工作室命令](../ide/reference/visual-studio-commands.md)
+- [Visual Studio 命令](../ide/reference/visual-studio-commands.md)
