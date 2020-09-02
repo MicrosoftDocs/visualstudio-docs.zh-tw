@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8d544a2172655df91e7156bc3f0d53b236490d1
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463670"
 ---
 # <a name="idiasymbolget_hassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
-抓取旗標，指定是否已使用緩衝區溢位的安全性檢查（例如[/gs （緩衝區安全性檢查）](/cpp/build/reference/gs-buffer-security-check)編譯器參數）來編譯編譯模組或函數。
+抓取旗標，這個旗標會指定編譯單位或函數是否以緩衝區溢位的安全性檢查進行編譯 (例如， [/gs (緩衝區安全性檢查) ](/cpp/build/reference/gs-buffer-security-check) 編譯器參數) 。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_hasSecurityChecks(
 #### <a name="parameters"></a>參數
  `pFlag`
 
-脫銷`TRUE`如果函數有任何安全性檢查，則傳回，否則傳回 `FALSE` 。
+擴展 `TRUE` 如果函數有任何安全性檢查，則傳回，否則傳回 `FALSE` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
@@ -50,4 +50,4 @@ HRESULT get_hasSecurityChecks(
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-- [/GS （緩衝區安全性檢查）](/cpp/build/reference/gs-buffer-security-check)
+- [/GS (緩衝區安全性檢查) ](/cpp/build/reference/gs-buffer-security-check)

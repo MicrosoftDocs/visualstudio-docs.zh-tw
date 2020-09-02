@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 676ae888de9cbf6a32e77571848d84a0632d0cc0
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463565"
 ---
 # <a name="idiasymbolget_inlspec"></a>IDiaSymbol::get_InlSpec
-此函式會抓取旗標，指出函式是否標示為內嵌（使用其中一個[內嵌、__inline \_ _forceinline](/cpp/cpp/inline-functions-cpp)屬性）。
+此函式會抓取旗標，指出是否已使用其中一個 [內嵌、__inline \_ _forceinline](/cpp/cpp/inline-functions-cpp) 屬性) ，將函數標記為內嵌 (。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_inlSpec(
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷如果函式 `TRUE` 標記為內嵌，則傳回，否則傳回 `FALSE` 。
+擴展如果函式 `TRUE` 標記為內嵌，則傳回，否則傳回 `FALSE` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功， `S_OK` 則傳回; 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b48f91dcb68f44f070e596d674461367dcf22966
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463516"
 ---
 # <a name="idiasymbolget_intro"></a>IDiaSymbol::get_intro
@@ -33,13 +33,13 @@ HRESULT get_intro ( 
 #### <a name="parameters"></a>參數
 `pRetVal`
 
-脫銷`TRUE`如果函數是簡介虛擬，則傳回，否則傳回 `FALSE` 。
+擴展 `TRUE` 如果函數為簡介虛擬，則傳回，否則傳回 `FALSE` 。
 
 ## <a name="return-value"></a>傳回值
-如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+如果成功， `S_OK` 則傳回; 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
-> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
 ## <a name="example"></a>範例
 
@@ -52,7 +52,7 @@ class B : public A {
 }
 ```
 
-`A::f1`和 `B::f1` 都是虛擬函式，但 `A::f1` 是簡介虛擬。
+`A::f1`和 `B::f1` 都是虛擬函式，但 `A::f1` 是虛擬的簡介。
 
 ## <a name="requirements"></a>需求
 

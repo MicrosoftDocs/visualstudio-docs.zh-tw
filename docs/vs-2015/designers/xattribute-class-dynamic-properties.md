@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dbafba72829a5dff8dd5665b6271088a3f9339db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663866"
 ---
 # <a name="xattribute-class-dynamic-properties"></a>XAttribute 類別動態屬性
@@ -21,11 +21,11 @@ ms.locfileid: "72663866"
 
 本節描述 <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> 的動態屬性。
 
-## <a name="in-this-section"></a>本章節內容
+## <a name="in-this-section"></a>本節內容
 
 |主題|描述|
 |-----------|-----------------|
 |[值](../designers/value-xattribute-dynamic-property.md)|取得或設定 XML 屬性的值。|
 
-## <a name="see-also"></a>請參閱
- <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> [LINQ to XML 動態屬性](../designers/linq-to-xml-dynamic-properties.md) [System.xml.linq.xelement> 類別動態屬性](../designers/xelement-class-dynamic-properties.md)
+## <a name="see-also"></a>另請參閱
+ <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>[LINQ to XML 動態屬性](../designers/linq-to-xml-dynamic-properties.md) [System.xml.linq.xelement> 類別動態屬性](../designers/xelement-class-dynamic-properties.md)

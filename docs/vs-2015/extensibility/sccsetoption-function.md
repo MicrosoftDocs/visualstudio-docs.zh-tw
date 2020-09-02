@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f2660ca99d8704f5dd8e7b9aa66c9c8fc5bdbb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143739"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-此函式會設定控制行為的原始檔控制外掛程式的選項。  
+此函式會設定控制原始檔控制外掛程式行為的選項。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,52 +35,52 @@ SCCRTN SccSetOption(
 ```  
   
 #### <a name="parameters"></a>參數  
- pvContext  
- [in]原始檔控制外掛程式的內容結構。  
+ pvCoNtext  
+ 在原始檔控制外掛程式內容結構。  
   
  nOption  
- [in]正在設定選項。  
+ 在正在設定的選項。  
   
  dwVal  
- [in]選項的設定。  
+ 在選項的設定。  
   
 ## <a name="return-value"></a>傳回值  
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：  
   
 |值|描述|  
 |-----------|-----------------|  
-|SCC_OK|已成功設定的選項。|  
-|SCC_I_SHARESUBPROJOK|時所傳回`nOption`已`SCC_OPT_SHARESUBPROJ`和原始檔控制外掛程式可讓 IDE 設定目的地資料夾。|  
-|SCC_E_OPNOTSUPPORTED|選擇不設定，且不能指望。|  
+|SCC_OK|已成功設定此選項。|  
+|SCC_I_SHARESUBPROJOK|如果 `nOption` was `SCC_OPT_SHARESUBPROJ` 和原始檔控制外掛程式允許 IDE 設定目的資料夾，則會傳回。|  
+|SCC_E_OPNOTSUPPORTED|未設定此選項，因此不應該依賴此選項。|  
   
 ## <a name="remarks"></a>備註  
- IDE 會呼叫此函式可控制原始檔控制外掛程式的行為。 第一個參數， `nOption`，表示正在設定值，第二個， `dwVal`，指出如何處理該值。 外掛程式會儲存這項資訊與相關聯`pvContext``,`讓 IDE 必須呼叫此函式之後呼叫[SccInitialize](../extensibility/sccinitialize-function.md) (但不是一定在每次呼叫之後[SccOpenProject](../extensibility/sccopenproject-function.md))。  
+ IDE 會呼叫這個函式，以控制原始檔控制外掛程式的行為。 第一個參數（ `nOption` ）表示正在設定的值，而第二個參數則 `dwVal` 表示該值的處理方式。 外掛程式會儲存與相關聯的這項資訊 `pvContext``,` ，因此，IDE 必須在呼叫 [SccInitialize](../extensibility/sccinitialize-function.md) (之後呼叫這個函式，但不一定要在每次呼叫 [SccOpenProject](../extensibility/sccopenproject-function.md)) 之後呼叫這個函數。  
   
  選項及其值的摘要：  
   
 |`nOption`|`dwValue`|描述|  
 |---------------|---------------|-----------------|  
 |`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|啟用/停用背景事件佇列。|  
-|`SCC_OPT_USERDATA`|任意值|指定的使用者值，要傳遞給[OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)回呼函式。|  
-|`SCC_OPT_HASCANCELMODE`|`SCC_OPT_HCM_NO`<br /><br /> `SCC_OPT_HCM_YES`|指出是否在 IDE 目前支援取消作業。|  
-|`SCC_OPT_NAMECHANGEPFN`|指標[OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)回呼函式|設定的名稱變更的回呼函式的指標。|  
-|`SCC_OPT_SCCCHECKOUTONLY`|`SCC_OPT_SCO_NO`<br /><br /> `SCC_OPT_SCO_YES`|表示 IDE 允許從它的檔案，以手動方式 （透過原始檔控制使用者介面） 檢查，或是否他們必須先簽出只能透過原始檔控制外掛程式。|  
-|`SCC_OPT_SHARESUBPROJ`|N/A|如果原始檔控制外掛程式可讓在 IDE，以指定的本機專案資料夾，外掛程式會傳回`SCC_I_SHARESUBPROJOK`。|  
+|`SCC_OPT_USERDATA`|任意值|指定要傳遞至 [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) 回呼函數的使用者值。|  
+|`SCC_OPT_HASCANCELMODE`|`SCC_OPT_HCM_NO`<br /><br /> `SCC_OPT_HCM_YES`|指出 IDE 目前是否支援取消作業。|  
+|`SCC_OPT_NAMECHANGEPFN`|[OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)回呼函式的指標|設定名稱變更回呼函數的指標。|  
+|`SCC_OPT_SCCCHECKOUTONLY`|`SCC_OPT_SCO_NO`<br /><br /> `SCC_OPT_SCO_YES`|指出 IDE 是否允許透過原始檔控制使用者介面，以手動方式簽出其檔案 () 或是否必須透過原始檔控制外掛程式簽出它們。|  
+|`SCC_OPT_SHARESUBPROJ`|N/A|如果原始檔控制外掛程式允許 IDE 指定本機專案資料夾，外掛程式就會傳回 `SCC_I_SHARESUBPROJOK` 。|  
   
-## <a name="sccopteventqueue"></a>SCC_OPT_EVENTQUEUE  
- 如果`nOption`是`SCC_OPT_EVENTQUEUE`，IDE 會停用 （或重新啟用） 背景處理。 比方說，在編譯時，IDE 可能會指示原始檔控制外掛程式，以停止在閒置處理任何類型。 之後在編譯中，它會重新啟用背景處理，將隨插即用中的事件佇列中最新狀態。 對應至`SCC_OPT_EVENTQUEUE`的值`nOption`，有兩個可能的值，如`dwVal`，亦即`SCC_OPT_EQ_ENABLE`和`SCC_OPT_EQ_DISABLE`。  
+## <a name="scc_opt_eventqueue"></a>SCC_OPT_EVENTQUEUE  
+ 如果 `nOption` 為 `SCC_OPT_EVENTQUEUE` ，則會停用 IDE (或重新啟用) 背景處理。 例如，在編譯期間，IDE 可能會指示原始檔控制外掛程式停止任何種類的閒置處理。 編譯之後，它會重新啟用背景處理，讓外掛程式的事件佇列保持在最新狀態。 對應到的 `SCC_OPT_EVENTQUEUE` 值 `nOption` ，有兩個可能的值 `dwVal` ，亦即 `SCC_OPT_EQ_ENABLE` 和 `SCC_OPT_EQ_DISABLE` 。  
   
-## <a name="sccopthascancelmode"></a>SCC_OPT_HASCANCELMODE  
- 如果值`nOption`是`SCC_OPT_HASCANCELMODE`，IDE 可讓使用者取消長時間作業。 設定`dwVal`至`SCC_OPT_HCM_NO`（預設值） 會指示 IDE 有無取消模式。 原始檔控制外掛程式在想要能夠取消使用者必須提供它自己的 [取消] 按鈕。 `SCC_OPT_HCM_YES` 表示 IDE 提供取消作業，因此不需要外掛程式 SCC，這是它自己的 [取消] 按鈕，顯示的功能。 如果 IDE 設定`dwVal`要`SCC_OPT_HCM_YES`，則已準備好回應`SCC_MSG_STATUS`並`DOCANCEL`訊息傳送至`lpTextOutProc`回呼函式 (請參閱[LPTEXTOUTPROC](../extensibility/lptextoutproc.md))。 如果 IDE 不會設定這個變數，外掛程式應該傳送這兩個訊息。  
+## <a name="scc_opt_hascancelmode"></a>SCC_OPT_HASCANCELMODE  
+ 如果的值 `nOption` 為 `SCC_OPT_HASCANCELMODE` ，則 IDE 可讓使用者取消長時間的作業。 將設定 `dwVal` 為 `SCC_OPT_HCM_NO` (預設) 表示 IDE 沒有取消模式。 如果原始檔控制外掛程式希望使用者能夠取消，則必須提供自己的 [取消] 按鈕。 `SCC_OPT_HCM_YES` 指出 IDE 提供取消作業的功能，因此 SCC 外掛程式不需要顯示自己的 [取消] 按鈕。 如果 IDE 將設定 `dwVal` 為 `SCC_OPT_HCM_YES` ，則已準備好回應 `SCC_MSG_STATUS` 和 `DOCANCEL` 傳送至回呼函式的訊息 `lpTextOutProc` (查看 [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)) 。 如果 IDE 未設定此變數，則外掛程式不應傳送這兩個訊息。  
   
-## <a name="sccoptnamechangepfn"></a>SCC_OPT_NAMECHANGEPFN  
- 如果 nOption 設`SCC_OPT_NAMECHANGEPFN`，和原始檔控制外掛程式和 IDE 可讓它、 外掛程式可以實際重新命名或移動檔案在原始檔控制作業期間。 `dwVal`將會設定為型別的函式指標[OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)。 在原始檔控制作業時，外掛程式可以呼叫此函式，在三個參數中傳遞。 這些是檔案的舊名稱 （具有完整路徑），該檔案，以及具有 ide 的相關資訊的指標 （含有完整路徑） 的新名稱。 IDE 中這個最後一個指標傳送藉由呼叫`SccSetOption`具有`nOption`設為`SCC_OPT_USERDATA`，使用`dwVal`指向的資料。 此函式的支援是選擇性的。 VSSCI 隨插即用-，會使用這項功能必須初始化其函式指標和使用者資料的變數至`NULL`，而且它必須呼叫重新命名函式，除非已獲得其中一個。 它應該也準備好為它所提供的值，或變更以回應新的呼叫`SccSetOption`。 這不會進行來源控制命令的作業，但它可能會發生命令之間。  
+## <a name="scc_opt_namechangepfn"></a>SCC_OPT_NAMECHANGEPFN  
+ 如果 nOption 設定為 `SCC_OPT_NAMECHANGEPFN` ，而且原始檔控制外掛程式和 IDE 都允許，則外掛程式在原始檔控制作業期間可以實際重新命名或移動檔案。 `dwVal`將會設定為[OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)類型的函式指標。 在原始檔控制作業期間，外掛程式可以呼叫這個函式，並傳入三個參數。 這些是舊名稱 (具有檔案的完整路徑) 、新名稱 (具有該檔案的完整路徑) ，以及與 IDE 相關之資訊的指標。 IDE 會使用 `SccSetOption` `nOption` 將設定為的來呼叫 `SCC_OPT_USERDATA` ，並 `dwVal` 指向資料，以在最後一個指標中傳送。 這項功能的支援是選擇性的。 使用這項功能的 VSSCI 外掛程式，必須將其函式指標和使用者資料變數初始化為 `NULL` ，而且除非已提供命名函式，否則它不能呼叫重新命名函數。 您也應該準備保存所提供的值，或將它變更為回應的新呼叫 `SccSetOption` 。 這不會發生在原始檔控制命令作業的中間，但是命令之間可能會發生這種情況。  
   
-## <a name="sccoptscccheckoutonly"></a>SCC_OPT_SCCCHECKOUTONLY  
- 如果設定為 nOption `SCC_OPT_SCCCHECKOUTONLY`，IDE 會指出，目前開啟的專案中的檔案應該永遠不會被簽出以手動方式透過原始檔控制系統的使用者介面。 相反地，檔案應該只能透過外掛程式 IDE 控制下的原始檔控制簽出。 如果`dwValue`設為`SCC_OPT_SCO_NO`，這表示該檔案通常外掛程式中處理，並可以透過 UI 原始檔控制簽出。 如果`dwValue`設為`SCC_OPT_SCO_YES`，然後只外掛程式允許簽出檔案，而原始檔控制系統的 UI 應該不會叫用。 這是 IDE 的可能具有 「 虛擬檔案 」 只能透過 IDE 簽出有意義的情況下。  
+## <a name="scc_opt_scccheckoutonly"></a>SCC_OPT_SCCCHECKOUTONLY  
+ 如果 nOption 設為 `SCC_OPT_SCCCHECKOUTONLY` ，則 IDE 會指出永遠不應該透過原始檔控制系統的使用者介面，手動簽出目前開啟之專案中的檔案。 相反地，應該只透過 IDE 控制項下的原始檔控制外掛程式簽出檔案。 如果 `dwValue` 設定為 `SCC_OPT_SCO_NO` ，則表示檔案應該由外掛程式正常處理，並可透過原始檔控制 UI 簽出。 如果 `dwValue` 設定為 `SCC_OPT_SCO_YES` ，則只允許外掛程式簽出檔案，而且不應該叫用原始檔控制系統的 UI。 這是在 IDE 可能具有「虛擬檔案」的情況下，只在 IDE 中簽出有意義的情況。  
   
-## <a name="sccoptsharesubproj"></a>SCC_OPT_SHARESUBPROJ  
- 如果`nOption`設為`SCC_OPT_SHARESUBPROJ`，IDE 會測試是否從原始檔控制新增檔案時，原始檔控制外掛程式可以使用指定的本機資料夾。 值`dwVal`在此情況下並不重要參數。 如果外掛程式允許 IDE，以指定的本機目的地資料夾，其中的檔案會新增從來源控制何時[SccAddFromScc](../extensibility/sccaddfromscc-function.md)呼叫，則必須傳回外掛程式`SCC_I_SHARESUBPROJOK`當`SccSetOption`函式呼叫。 接著會使用 IDE`lplpFileNames`參數的`SccAddFromScc`傳遞目的地資料夾中的函式。 外掛程式會使用該目的地資料夾將加入從原始檔控制的檔案。 如果外掛程式不會傳回`SCC_I_SHARESUBPROJOK`當`SCC_OPT_SHARESUBPROJ`設定選項時，IDE 會假設外掛程式是能夠將檔案新增只能在目前的本機資料夾中。  
+## <a name="scc_opt_sharesubproj"></a>SCC_OPT_SHARESUBPROJ  
+ 如果 `nOption` 設定為 `SCC_OPT_SHARESUBPROJ` ，則 IDE 會測試當您從原始檔控制加入檔案時，原始檔控制外掛程式是否可以使用指定的本機資料夾。 `dwVal`在此情況下，參數的值並不重要。 如果外掛程式可讓 IDE 指定在呼叫 [SccAddFromScc](../extensibility/sccaddfromscc-function.md) 時，從原始檔控制加入檔案的本機目的資料夾，則在呼叫函式時，外掛程式必須傳回 `SCC_I_SHARESUBPROJOK` `SccSetOption` 。 然後，IDE 會使用函式的 `lplpFileNames` 參數 `SccAddFromScc` 傳遞至目的資料夾。 外掛程式會使用該目的資料夾來放置從原始檔控制加入的檔案。 如果設定選項時不會傳回外掛程式 `SCC_I_SHARESUBPROJOK` `SCC_OPT_SHARESUBPROJ` ，IDE 會假設外掛程式只能在目前的本機資料夾中新增檔案。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   

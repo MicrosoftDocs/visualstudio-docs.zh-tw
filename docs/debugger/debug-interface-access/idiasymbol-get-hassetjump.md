@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 353247c494b803871a9c64126545e11be39bfcae
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463635"
 ---
 # <a name="idiasymbolget_hassetjump"></a>IDiaSymbol::get_hasSetJump
-抓取旗標，指定函式是否包含使用[setjmp](/cpp/c-runtime-library/reference/setjmp)命令（與[longjmp](/cpp/c-runtime-library/reference/longjmp)命令配對，這些會形成例外狀況處理的 C 樣式方法）。
+抓取旗標，這個旗標會指定函式是否包含使用 [setjmp](/cpp/c-runtime-library/reference/setjmp) 命令 (與 [longjmp](/cpp/c-runtime-library/reference/longjmp) 命令配對，而這些會形成例外狀況處理) 的 C 樣式方法。
 
 ## <a name="syntax"></a>語法
 
@@ -33,13 +33,13 @@ HRESULT get_hasSetJump(
 #### <a name="parameters"></a>參數
  `pFlag`
 
-脫銷`TRUE`如果函數包含 `setjmp` 命令，則傳回，否則傳回 `FALSE` 。
+擴展如果函式 `TRUE` 包含命令，則會傳回 `setjmp` ，否則會傳回 `FALSE` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功， `S_OK` 則傳回; 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
-> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
 ## <a name="requirements"></a>需求
 

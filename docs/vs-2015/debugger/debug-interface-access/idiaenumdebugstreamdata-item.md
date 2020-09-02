@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreamdata:: Item |Microsoft Docs'
+title: IDiaEnumDebugStreamData：： Item |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b80f71b2ca5d718f2de834389b4caab728e1f1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197882"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取指定的記錄。  
+抓取指定的記錄。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,23 +38,23 @@ HRESULT Item ( 
   
 #### <a name="parameters"></a>參數  
  索引  
- [in]要擷取記錄的索引。 索引是在範圍介於 0 到`count`-1，其中`count`會傳回[idiaenumdebugstreamdata:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)。  
+ 在要抓取之記錄的索引。 索引位於0到-1 的範圍內 `count` ，其中 `count` 是 [IDiaEnumDebugStreamData：： get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)所傳回的。  
   
  cbData  
- [in]資料緩衝區，以位元組為單位的大小。  
+ 在資料緩衝區的大小（以位元組為單位）。  
   
  pcbData  
- [out]傳回動作傳回的位元組的數目。 如果`data`已`NULL`，然後`pcbData`包含可在指定的記錄資料的位元組總數。  
+ 擴展傳回傳回的位元組數目。 如果 `data` 為 `NULL` ，則 `pcbData` 包含指定記錄中可用資料的位元組總數。  
   
  data[]  
- [out]偵錯資料流記錄資料會填入緩衝區。  
+ 擴展使用 debug stream 記錄資料填入的緩衝區。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_INVALIDARG`無效的參數如果`index`參數超出範圍。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 `E_INVALIDARG`如果參數超出範圍，則傳回不正確參數 `index` 。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
- [IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)   
- [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
- [IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)   
+ [IDiaEnumDebugStreamData：： Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)   
+ [IDiaEnumDebugStreams：： Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
+ [IDiaEnumDebugStreamData：： get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)   
  [IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)

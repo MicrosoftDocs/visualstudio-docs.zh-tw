@@ -1,5 +1,5 @@
 ---
-title: 正則運算式中的語法錯誤（JavaScript） |Microsoft Docs
+title: 正則運算式中的語法錯誤 (JavaScript) |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 192f9a5ca9928e4c325d67c340276ef12de14686
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816185"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>規則運算式中的語法錯誤 (JavaScript)
@@ -26,9 +26,9 @@ ms.locfileid: "85816185"
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 請確定正則運算式搜尋字串的結構遵守 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 正則運算式語法。  
+- 請確定正則運算式搜尋字串的結構符合正則 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 運算式語法。  
   
 ## <a name="see-also"></a>另請參閱  
  [正則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   
- [正則運算式語法（JavaScript）](https://msdn.microsoft.com/library/1400241x)   
+ [ (JavaScript) 的正則運算式語法 ](https://msdn.microsoft.com/library/1400241x)   
  [compile 方法 (規則運算式)](../../javascript/reference/compile-method-regular-expression-javascript.md)

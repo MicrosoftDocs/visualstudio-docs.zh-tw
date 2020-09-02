@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f294f2b64676f746cd9d155fe8c3580edc5f9821
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463621"
 ---
 # <a name="idiasymbolget_hfadouble"></a>IDiaSymbol::get_hfaDouble
-抓取旗標，指定使用者定義型別（UDT）是否包含 double 類型的同質浮點匯總（HFA）資料。
+抓取旗標，這個旗標會指定使用者定義型別 (UDT) 是否包含雙精度浮點數的 (HFA) 資料。
 
 ## <a name="syntax"></a>語法
 
@@ -33,20 +33,20 @@ HRESULT get_hfaDouble( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷`TRUE`如果 UDT 包含 double 類型的 HFA 資料，則傳回，否則傳回 `FALSE` 。
+擴展 `TRUE` 如果 UDT 包含 double 類型的 HFA 資料，則傳回，否則傳回 `FALSE` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
-> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
 ## <a name="remarks"></a>備註
 
 ## <a name="requirements"></a>需求
  標頭： Dia2。h
 
- 程式庫： diaguids
+ 程式庫： diaguids .lib
 
  DLL： msdia100.dll
 

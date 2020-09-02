@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65759da4363891c713f906e6cb10f00443bcbceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197904"
 ---
 # <a name="args"></a>Args
@@ -34,7 +34,7 @@ VSPerfCmd.exe /Launch:AppName /Args:Arguments [Options]
  **Launch** 命令的目標應用程式的引數清單。  
   
 ## <a name="required-options"></a>必要選項  
- **Launch：** `AppName`  
+ **啟動：**`AppName`  
  啟動指定的應用程式，並使用取樣方法開始程式碼剖析。  
   
 ## <a name="example"></a>範例  
@@ -46,7 +46,7 @@ VSPerfCmd.exe /Launch:TestApp.exe /Args:"123, 'Hello World'"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [>vsperfcmd](../profiling/vsperfcmd.md)   
+ [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)

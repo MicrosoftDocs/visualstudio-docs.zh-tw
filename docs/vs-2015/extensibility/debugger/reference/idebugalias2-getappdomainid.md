@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias2::GetAppDomainId |Microsoft Docs
+title: IDebugAlias2：： GetAppDomainId |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 79f6a71376d410f6eb0b524a309f5f6dffcdf614
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197924"
 ---
 # <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取應用程式定義域的識別項。  
+抓取應用程式域的識別碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,13 +39,13 @@ int GetAppDomainId (
   
 #### <a name="parameters"></a>參數  
  `pappDomainId`  
- [out]傳回應用程式網域識別項。  
+ 擴展傳回應用程式域識別碼。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 建立的應用程式網域識別項的變更時重新啟動應用程式和新的應用程式定義域。  
+ 應用程式域識別碼會在應用程式重新開機時變更，並建立新的應用程式域。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::枚外類 |微軟文件
+title: IDebugClassField：： EnumNestedClasses |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3e6ef918b55d8b311380264d688085b0d2803601
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734440"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
-為嵌套在此類中的類創建枚舉器。
+建立在這個類別中嵌套之類別的列舉值。
 
 ## <a name="syntax"></a>語法
 
@@ -41,15 +41,15 @@ int EnumNestedClasses(
 
 ## <a name="parameters"></a>參數
 `ppEnum`\
-[出]返回表示嵌套類清單的[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件。 如果沒有嵌套類,則返回 null 值。
+擴展傳回代表嵌套類別清單的 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 物件。 如果沒有任何嵌套類別，則會傳回 null 值。
 
 ## <a name="return-value"></a>傳回值
-如果成功,則返回S_OK或返回S_FALSE如果沒有嵌套類。 否則會傳回錯誤碼。
+如果成功，會傳回 S_OK，如果沒有任何嵌套類別，則傳回 S_FALSE。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
-枚舉的每個元素都是描述嵌套類的[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)物件。
+列舉的每個元素都是描述嵌套類別的 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 物件。
 
-嵌套類是在另一個類中定義的類。 例如：
+嵌套類別是在另一個類別內定義的類別。 例如：
 
 ```
 class RootClass {
@@ -57,7 +57,7 @@ class RootClass {
 };
 ```
 
-[IEnum DebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)枚舉將包含一`NestedClass`個表示 類的物件。
+[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)列舉會包含代表類別的一個物件 `NestedClass` 。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

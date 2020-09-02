@@ -1,5 +1,5 @@
 ---
-title: 傳統語言服務中的快速資訊 |微軟文件
+title: 舊版語言服務中的快速諮詢 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,32 +13,32 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d070c607313b406f036a5b6f071eaa371070408
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705936"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>舊版語言服務中的快速諮詢
-IntelliSense 快速資訊顯示有關源中識別符的資訊,當使用者將圖子放在識別符中並從**IntelliSense**選單中選擇 **「快速資訊」** 或將滑鼠游標放在標識符上時。 這將導致工具提示顯示與標識符的資訊。 此資訊通常由標識符類型組成。 當調試引擎處於活動狀態時,此資訊可能包含當前值。 調試引擎提供表達式值,而語言服務僅處理標識碼。
+當使用者將插入號放在識別碼中，並從**IntelliSense**功能表中選取 [**快速**諮詢] 或將滑鼠游標停留在識別碼上時，IntelliSense 快速諮詢會顯示來源識別碼的相關資訊。 這會導致工具提示出現，並顯示識別碼的相關資訊。 這項資訊通常包含識別碼類型。 當偵錯工具引擎為使用中時，這項資訊可能會包含目前的值。 Debug engine 提供運算式值，而語言服務只會處理識別碼。
 
- 舊語言服務是作為 VSPackage 的一部分實現的,但實現語言服務功能的較新方法是使用 MEF 擴展。 要瞭解更多資訊,請參閱[演練:顯示快速資訊工具提示](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md)。
+ 舊版語言服務會實作為 VSPackage 的一部分，但是執行語言服務功能的較新方法是使用 MEF 延伸模組。 若要深入瞭解，請參閱 [逐步解說：顯示 QuickInfo 工具提示](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md)。
 
 > [!NOTE]
-> 我們建議您儘快開始使用新的編輯器 API。 這將提高語言服務的性能,並允許您利用新的編輯器功能。
+> 建議您儘快開始使用新的編輯器 API。 這可改善您的語言服務效能，並讓您利用新的編輯器功能。
 
- 託管包框架 (MPF) 語言服務類為顯示 IntelliSense 快速資訊工具提示提供完全支援。 所有你需要做的是提供要顯示的文本,並啟用快速資訊功能。
+ 受控封裝架構 (MPF) 語言服務類別提供完整的支援，以顯示 IntelliSense Quick Info 工具提示。 您只需要提供要顯示的文字，並啟用 [快速諮詢] 功能即可。
 
- 要顯示的文字是透過呼叫具有分析原因值<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>的方法解析器取得<xref:Microsoft.VisualStudio.Package.ParseReason>的 。 此原因告訴解析器在<xref:Microsoft.VisualStudio.Package.ParseRequest>物件中指定的位置獲取標識符的類型資訊(或任何適合顯示在"快速資訊"工具提示中顯示的資訊)。 對<xref:Microsoft.VisualStudio.Package.ParseRequest>象是傳遞給方法<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>的內容 。
+ 藉由呼叫 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 具有剖析原因值的方法剖析器，即可取得要顯示的文字 <xref:Microsoft.VisualStudio.Package.ParseReason> 。 這項原因會指示剖析器取得 (的類型資訊，或是在 [快速諮詢] 工具提示中顯示的內容，在物件中指定之位置的識別碼) <xref:Microsoft.VisualStudio.Package.ParseRequest> 。 <xref:Microsoft.VisualStudio.Package.ParseRequest>物件是傳遞給方法的物件 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 。
 
- 解析器必須解析到<xref:Microsoft.VisualStudio.Package.ParseRequest>物件中位置的所有內容,以確定所有標識符的類型。 然後,解析器必須在解析請求位置獲取標識符。 最後,解析器必須將與此識別符關聯的工具提示數據傳遞給<xref:Microsoft.VisualStudio.Package.AuthoringScope>物件,以便物件可以<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A>從 方法返回文本。
+ 剖析器必須將所有專案剖析到物件中的位置，才能 <xref:Microsoft.VisualStudio.Package.ParseRequest> 判斷所有識別碼的類型。 然後剖析器必須在剖析要求位置取得識別碼。 最後，剖析器必須將與該識別碼相關聯的工具提示資料傳遞給 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 物件，讓物件可以從方法傳回文字 <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> 。
 
-## <a name="enabling-the-quick-info-feature"></a>開啟快速資訊功能
- 要啟用「快速資訊」功能,必須設定`CodeSense`與`QuickInfo`命名的參數<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>。這些屬性設置<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A>和<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableQuickInfo%2A>屬性。
+## <a name="enabling-the-quick-info-feature"></a>啟用快速諮詢功能
+ 若要啟用 [快速諮詢] 功能，您必須設定的 `CodeSense` 和 `QuickInfo` 具名引數 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 。這些屬性會設定 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> 和 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableQuickInfo%2A> 屬性。
 
-## <a name="implementing-the-quick-info-feature"></a>實現快速資訊功能
- 該<xref:Microsoft.VisualStudio.Package.ViewFilter>類處理"IntelliSense 快速資訊"操作。 <xref:Microsoft.VisualStudio.Package.ViewFilter>當類<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>接收命令時,類調<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>用 方法時具有<xref:Microsoft.VisualStudio.Package.ParseReason>解析的原因 和<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>命令發送時 的 caret 的位置。 然後<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>,方法解析器必須將源解析為給定位置,然後在給定位置解析標識符,以確定在"快速資訊"工具提示中顯示的內容。
+## <a name="implementing-the-quick-info-feature"></a>執行快速諮詢功能
+ <xref:Microsoft.VisualStudio.Package.ViewFilter>類別會處理 IntelliSense 快速資訊作業。 當 <xref:Microsoft.VisualStudio.Package.ViewFilter> 類別收到命令時 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> ，類別會在 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 命令傳送時，使用的剖析原因 <xref:Microsoft.VisualStudio.Package.ParseReason> 和插入號的位置來呼叫方法 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 。 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法剖析器接著必須將來源剖析到指定的位置，然後在指定的位置剖析識別碼，以判斷要在快速諮詢工具提示中顯示的內容。
 
- 大多數解析器對整個源檔進行初始分析,並將結果存儲在解析樹中。 當傳遞給<xref:Microsoft.VisualStudio.Package.ParseReason><xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法時,將執行完整的分析。 然後,其他類型的分析可以使用解析樹來獲取所需的資訊。
+ 大部分的剖析器都會初始剖析整個原始程式檔，並將結果儲存在剖析樹狀結構中。 當傳遞至方法時，就會執行完整的剖析 <xref:Microsoft.VisualStudio.Package.ParseReason> <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 。 其他類型的剖析則可以使用剖析樹狀結構來取得所需的資訊。
 
- 例如,的<xref:Microsoft.VisualStudio.Package.ParseReason>解析原因值可以在源位置找到標識符,並在解析樹中查找它以獲取類型資訊。 然後,將此類型信息傳遞給<xref:Microsoft.VisualStudio.Package.AuthoringScope>類,並由<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A>方法返回。
+ 例如，的剖析原因值 <xref:Microsoft.VisualStudio.Package.ParseReason> 可以尋找來源位置的識別碼，並在剖析樹狀結構中進行查詢以取得型別資訊。 然後，此型別資訊會傳遞至 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 類別，並由方法傳回 <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> 。

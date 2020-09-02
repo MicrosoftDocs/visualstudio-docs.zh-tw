@@ -24,10 +24,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7b22f63d5d3d6e0b1f7789561029bbfbfb4cdf4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143751"
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild 條件式建構
@@ -80,7 +80,7 @@ ms.locfileid: "68143751"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Choose 項目 (MSBuild)](../msbuild/choose-element-msbuild.md)   
- [When 項目 (MSBuild)](../msbuild/when-element-msbuild.md)   
- [Otherwise 項目 (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
+ [選擇 (MSBuild) 的元素 ](../msbuild/choose-element-msbuild.md)   
+ [當元素 (MSBuild 時) ](../msbuild/when-element-msbuild.md)   
+ [否則 (MSBuild 的元素) ](../msbuild/otherwise-element-msbuild.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)
