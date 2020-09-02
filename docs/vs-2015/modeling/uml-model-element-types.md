@@ -1,5 +1,5 @@
 ---
-title: UML 模型元素類型 |Microsoft Docs
+title: UML 模型專案類型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 54036b985c90be926eaa56f6ebe60d1f3903e0b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657316"
 ---
 # <a name="uml-model-element-types"></a>UML 模型項目類型
@@ -23,7 +23,7 @@ ms.locfileid: "72657316"
 
 您可以透過程式設計介面讀取及操作 UML 模型。 本主題摘要說明項目類型的階層架構。 階層架構與 UML 規格定義的一樣。
 
- 每種類型的詳細資料都在[適用于 UML 模型](../modeling/api-reference-for-uml-modeling-extensibility.md)擴充性的 API 參考中提供。
+ [適用于 UML 模型](../modeling/api-reference-for-uml-modeling-extensibility.md)擴充性的 API 參考中提供每種類型的詳細資料。
 
 ## <a name="element-types"></a>項目類型
  這是組件 `Microsoft.VisualStudio.Uml.Interfaces.dll` 中定義的類型集。
@@ -194,5 +194,5 @@ Classes.IElement
              : Classes.IRedefinableElement
 ```
 
-## <a name="see-also"></a>請參閱
- [定義設定檔以擴充](../modeling/define-a-profile-to-extend-uml.md)uml[定義 uml 模型的驗證條件約束 uml 模型](../modeling/define-validation-constraints-for-uml-models.md)擴充性的[API 參考](../modeling/api-reference-for-uml-modeling-extensibility.md)
+## <a name="see-also"></a>另請參閱
+ [定義設定檔以擴充](../modeling/define-a-profile-to-extend-uml.md)uml 模型擴充性的 uml 模型[API 參考](../modeling/api-reference-for-uml-modeling-extensibility.md)的 uml[定義驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)

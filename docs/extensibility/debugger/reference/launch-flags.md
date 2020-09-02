@@ -1,5 +1,5 @@
 ---
-title: LAUNCH_FLAGS |微軟文件
+title: LAUNCH_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f18fb850641391f451f5eedb08b7130566dd4de3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714710"
 ---
 # <a name="launch_flags"></a>LAUNCH_FLAGS
-指定調試啟動標誌。
+指定 debug 啟動旗標。
 
 ## <a name="syntax"></a>語法
 
@@ -48,28 +48,28 @@ public enum enum_LAUNCH_FLAGS {
 
 ## <a name="fields"></a>欄位
 `LAUNCH_DEBUG`\
-啟動調試過程。
+啟動處理常式以進行偵錯工具。
 
 `LAUNCH_NODEBUG`\
-啟動進程而不調試它。
+啟動進程，而不將它進行調試。
 
 `LAUNCH_ENABLE_ENC`\
-棄用,請勿使用。
+已淘汰，請勿使用。
 
 `LAUNCH_MERGE_ENV`\
-啟動進程並將環境與啟動主機合併。
+啟動進程，並將環境與啟動主控制項合併。
 
 ## <a name="remarks"></a>備註
-這些值作為參數傳遞給[Launch 暫停](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)方法。
+這些值會以引數的形式傳遞至 [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) 方法。
 
-這些旗標可以稍微`OR`結合 。
+這些旗標可以與位結合 `OR` 。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

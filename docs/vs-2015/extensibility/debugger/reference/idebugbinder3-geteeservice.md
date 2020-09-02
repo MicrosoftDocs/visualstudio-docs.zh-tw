@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetEEService |Microsoft Docs
+title: IDebugBinder3：： GetEEService |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 982802d1e89434322aba4f5078ceb6dd5a850034
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193042"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
@@ -46,22 +46,22 @@ Int GetEEService(
   
 #### <a name="parameters"></a>參數  
  `vendor`  
- [in]`GUID` （null 的值是可接受的） 之供應商。  
+ [in] `GUID` 在廠商 (null 值是可接受的) 。  
   
  `language`  
- [in]`GUID`的 （null 的值是可接受） 的語言。  
+ [in] `GUID` 在語言 (null 值是可接受的) 。  
   
  `iid`  
- [in]`IID`要取得的服務。  
+ [in] `IID` 取得的服務。  
   
  `ppService`  
- [out]要求的服務介面。  
+ 擴展要求之服務的介面。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 傳遞`IID`for [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)介面 (`IID_IEEVisualizerServiceProvider`) 類型視覺化檢視服務是否可用。 如果運算式評估工具可以取得的話[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)介面，以支援類型視覺化檢視。 請參閱[視覺化及檢視資料](../../../extensibility/debugger/visualizing-and-viewing-data.md)如需詳細資訊。  
+ 傳遞 `IID` [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) 介面 (`IID_IEEVisualizerServiceProvider`) ，以查看是否有可用的型別視覺化程式服務。 如果是的話，運算式評估工具可以取得 [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) 介面，以支援型別視覺化檢視。 如需詳細資料，請參閱 [視覺化和查看資料](../../../extensibility/debugger/visualizing-and-viewing-data.md) 。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   

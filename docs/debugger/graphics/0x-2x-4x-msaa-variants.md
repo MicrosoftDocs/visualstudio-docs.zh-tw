@@ -1,5 +1,5 @@
 ---
-title: 0 的 x-2 x-4 的 msaa 變異 |Microsoft Docs
+title: 0x-2x-4x MSAA Variant |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 707d63d3ae5fb487f6232321a1d9d3128d379e06
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64816541"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 變異
@@ -49,7 +49,7 @@ ms.locfileid: "64816541"
 
   這些變更的實際影響在於，會完成對 MSAA 呈現目標的所有呈現，但是，如果應用程式使用其中一個呈現目標，或交換鏈結緩衝區做為著色器資源檢視，或未排序存取檢視，則會從呈現目標的已解析非 MSAA 複本中取樣資料。
 
-## <a name="restrictions-and-limitations"></a>限制
+## <a name="restrictions-and-limitations"></a>限制事項
  在 Direct3D11 中，MSAA 紋理的限制多於非 MSAA 紋理。 例如，您不可以在 MSAA 紋理上呼叫 `ID3D11DeviceContext::UpdateSubresource`，而且在下列情況呼叫 `ID3D11DeviceContext::CopySubresourceRegion` 會失敗：來源資源與目的地資源的樣本計數和樣本品質不符時；這種情況可能發生在此變異覆寫某個資源的 MSAA 設定，但未覆寫另一個資源的 MSAA 設定。
 
  播放偵測到這類衝突時，會盡力複寫想要的行為，但是可能無法精確地符合其結果。 雖然因誤解這些變異的影響而影響其效能的情況並不常見，但還是可能發生 (例如，像素著色器中的流量控制是由紋理的精確內容所決定時)，因為所複寫之紋理的內容可能不同。

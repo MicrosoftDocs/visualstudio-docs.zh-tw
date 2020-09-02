@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 26941012b28bb114771472452e158823d988faab
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464517"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
-抓取列舉型別，可讓用戶端逐一查看指定的相對虛擬位址（RVA）中，此符號內的所有函式的行號資訊（直接或間接內嵌）。
+抓取列舉，此列舉可讓用戶端在指定的相對虛擬位址 (RVA) 內，直接或間接地逐一查看在此符號中內嵌或間接內嵌的所有函式的行號資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -35,14 +35,14 @@ HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD          
 
  `length`
 
-在指定要與此查詢一併涵蓋的位址範圍（以位元組數為單位）。
+在指定要包含在此查詢中的位址範圍（以位元組數為單位）。
 
  `ppResult`
 
-脫銷保存 `IDiaEnumLineNumbers` 物件，其中包含所抓取的行號清單。
+擴展保存 `IDiaEnumLineNumbers` 物件，其中包含所抓取行號的清單。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

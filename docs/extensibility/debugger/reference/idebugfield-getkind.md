@@ -1,5 +1,5 @@
 ---
-title: IDebugField:獲取金德 |微軟文件
+title: IDebugField：： GetKind |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 807b4ecab517e151c87bfc5daab3e94a1e7d5f22
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728824"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
-此方法獲取欄位類型。
+這個方法會取得欄位的種類。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ int GetKind(
 
 ## <a name="parameters"></a>參數
 `pdwKind`\
-[出]將欄位類型作為[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)常量的組合返回。
+擴展傳回 [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) 常陣列合的欄位類型。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

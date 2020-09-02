@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41d3ef0efd4c9eb8eab16bd12cc79f8df1449d65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670680"
 ---
 # <a name="how-to-specify-build-events-c"></a>如何：指定建置事件 (C#)
@@ -35,26 +35,26 @@ ms.locfileid: "72670680"
 
 #### <a name="to-specify-a-build-event"></a>若要指定建置事件
 
-1. 在 [方案總管] 中，選取您想要指定建置事件的專案。
+1. 在 [方案總管]**** 中，選取您想要指定建置事件的專案。
 
-2. 在 [專案] 功能表上，按一下 [屬性]。
+2. 按一下 [專案] 功能表上的 [屬性]。
 
-3. 選取 [建置事件] 索引標籤。
+3. 選取 [建置事件]**** 索引標籤。
 
-4. 在 [建置前事件命令列] 方塊中，指定建置事件的語法。
+4. 在 [建置前事件命令列]**** 方塊中，指定建置事件的語法。
 
     > [!NOTE]
     > 如果專案是最新狀態，而且未觸發任何建置，則建置前事件不會執行。
 
-5. 在 [建置後事件命令列] 方塊中，指定建置事件的語法。
+5. 在 [建置後事件命令列]**** 方塊中，指定建置事件的語法。
 
     > [!NOTE]
     > 在執行 .bat 檔案的所有建置命令前方，加入 `call` 陳述式。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。
 
-6. 在 [執行建置後事件] 方塊中，指定要執行建置後事件的情況。
+6. 在 [執行建置後事件]**** 方塊中，指定要執行建置後事件的情況。
 
     > [!NOTE]
-    > 若要新增冗長的語法，或從[建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)選取任何建置巨集，請按一下省略符號按鈕 ( **…** ) 來顯示編輯方塊。
+    > 若要新增冗長的語法，或從 [ [預先建立事件/後置事件命令列] 對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)中選取任何組建宏，請按一下省略號按鈕 (**...**) 以顯示編輯方塊。
 
      建置事件語法可以包含在命令提示字元或 .bat 檔案中的任何有效命令。 批次檔的名稱之前應該加上 `call` 以確保所有後續的命令都會執行。
 
@@ -73,9 +73,9 @@ ms.locfileid: "72670680"
 
 #### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>建立 .exe 命令以變更應用程式資訊清單
 
-1. 建立命令的主控台應用程式。 從 [檔案] 功能表，指向 [新增]，然後按一下 [專案]。
+1. 建立命令的主控台應用程式。 從 [檔案]**** 功能表，指向 [新增]****，然後按一下 [專案]****。
 
-2. 在 [新增專案] 對話方塊中，展開 [Visual C#]、依序按一下 [Windows] 和 [主控台應用程式] 範本。 將專案命名為 `ChangeOSVersionCS`。
+2. 在 [新增專案]**** 對話方塊中，展開 [Visual C#]****、依序按一下 [Windows]**** 和 [主控台應用程式]**** 範本。 將專案命名為 `ChangeOSVersionCS`。
 
 3. 在 Program.cs 中，將下面這行新增在檔案最上方的另一個 `using` 陳述式：
 
@@ -137,7 +137,7 @@ ms.locfileid: "72670680"
 
     命令接受兩個引數：應用程式資訊清單的路徑 (也就是建置程序建立資訊清單的資料夾，通常為 Projectname.publish)，以及新的作業系統版本。
 
-5. 建置專案。 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
+5. 建置專案。 在 [建置] 功能表上，按一下 [建置方案]。
 
 6. 將 .exe 檔案 (例如 `C:\TEMP\ChangeOSVersionVB.exe`) 複製到目錄。
 
@@ -145,17 +145,17 @@ ms.locfileid: "72670680"
 
 #### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>叫用建置後事件，以修改應用程式資訊清單
 
-1. 針對要發行的專案，建立 Windows 應用程式。 從 [檔案] 功能表，指向 [新增]，然後按一下 [專案]。
+1. 針對要發行的專案，建立 Windows 應用程式。 從 [檔案]**** 功能表，指向 [新增]****，然後按一下 [專案]****。
 
-2. 在 [新增專案] 對話方塊中，展開 [Visual C#]、依序按一下 [Windows] 和 [Windows Forms 應用程式] 範本。 將專案命名為 `CSWinApp`。
+2. 在 [新增專案]**** 對話方塊中，展開 [Visual C#]****、依序按一下 [Windows]**** 和 [Windows Forms 應用程式]**** 範本。 將專案命名為 `CSWinApp`。
 
-3. 選取方案總管中的專案，然後按一下 [專案] 功能表中的 [屬性]。
+3. 選取方案總管**** 中的專案，然後按一下 [專案]**** 功能表中的 [屬性]****。
 
-4. 在 [專案設計工具] 中，找到 [發行] 頁面，然後將 [發行位置] 設為 `C:\TEMP\`。
+4. 在 [專案設計工具] 中，找到 [發行]**** 頁面，然後將 [發行位置]**** 設為 `C:\TEMP\`。
 
-5. 按一下 [Publish Now]\(立即發行)，即可發行專案。
+5. 按一下 [Publish Now]\(立即發行)****，即可發行專案。
 
-     隨即建立資訊清單檔並將其放入`C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest`。 若要檢視資訊清單，請以滑鼠右鍵按一下檔案、按一下 [開啟方式]、選取 [從清單中選取程式]，然後按一下 [記事本]。
+     隨即建立資訊清單檔並將其放入`C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest`。 若要檢視資訊清單，請以滑鼠右鍵按一下檔案、按一下 [開啟方式]****、選取 [從清單中選取程式]****，然後按一下 [記事本]****。
 
      在檔案中搜尋 `<osVersionInfo>` 項目。 例如，版本可能是：
 
@@ -163,9 +163,9 @@ ms.locfileid: "72670680"
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. 在專案設計工具中，依序按一下 [建置事件] 索引標籤和 [建置後進行編輯] 按鈕。
+6. 在 [專案設計工具] 中，按一下 [ **建立事件** ] 索引標籤，然後按一下 [ **編輯後** 置] 按鈕。
 
-7. 在 [建置後事件命令列] 文字方塊中，輸入下列命令：
+7. 在 [建置後事件命令列]**** 文字方塊中，輸入下列命令：
 
      `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`
 
@@ -173,9 +173,9 @@ ms.locfileid: "72670680"
 
      因為 `$(TargetPath)` 巨集會表達正在建立之可執行檔的完整路徑，所以 `$(TargetPath)`.manifest 將會指定在 bin 目錄中建立的應用程式資訊清單。 發行時，系統會將這份資訊清單複製到您先前設定的發行位置中。
 
-8. 再次發行專案。 移至 [發行] 頁面，然後按一下 [Publish Now]\(立即發行)。
+8. 再次發行專案。 移至 [發行]**** 頁面，然後按一下 [Publish Now]\(立即發行)****。
 
-     再次檢視資訊清單。 若要檢視資訊清單，請開啟發行目錄，以滑鼠右鍵按一下檔案、按一下 [開啟方式]、選取 [從清單中選取程式]，然後按一下 [記事本]。
+     再次檢視資訊清單。 若要檢視資訊清單，請開啟發行目錄，以滑鼠右鍵按一下檔案、按一下 [開啟方式]****、選取 [從清單中選取程式]****，然後按一下 [記事本]****。
 
      現在，版本應讀為：
 
@@ -183,5 +183,5 @@ ms.locfileid: "72670680"
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>請參閱
- [組建事件頁面、專案設計工具C#（）](../ide/reference/build-events-page-project-designer-csharp.md) [預先建立事件/建立後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)[如何：指定組建事件（Visual Basic）](../ide/how-to-specify-build-events-visual-basic.md) [編譯和建立](../ide/compiling-and-building-in-visual-studio.md)
+## <a name="see-also"></a>另請參閱
+ [組建事件頁面、專案設計工具 (c # ) ](../ide/reference/build-events-page-project-designer-csharp.md) [預先建立事件/後置事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)[如何：指定組建事件 (Visual Basic) ](../ide/how-to-specify-build-events-visual-basic.md) [編譯和建立](../ide/compiling-and-building-in-visual-studio.md)

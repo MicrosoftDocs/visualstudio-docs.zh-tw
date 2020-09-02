@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3d286ee807d0d0e006f129ea9a34918205d3fe3d
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464727"
 ---
 # <a name="idiastackwalkhelperframeforva"></a>IDiaStackWalkHelper::frameForVA
@@ -38,10 +38,10 @@ HRESULT frameForVA( 
 
  `ppFrame`
 
-脫銷代表位於指定位址之堆疊框架的[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)物件。
+擴展 [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) 物件，表示位於指定位址的堆疊框架。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

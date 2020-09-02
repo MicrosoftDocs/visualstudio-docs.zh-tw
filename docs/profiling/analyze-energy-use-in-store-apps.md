@@ -15,10 +15,10 @@ ms.workload:
 - uwp
 monikerRange: vs-2017
 ms.openlocfilehash: 524eb76696414cbbdba72266cc732ccb7e089f86
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537237"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP App 中的能源耗用量
@@ -96,7 +96,7 @@ if (performance && performance.mark) {
 2. 選擇 [ **能源消耗** ]，然後選擇 [ **開始**]。
 
     > [!NOTE]
-    > 當您啟動 [**能源消耗**分析工具] 時，您可能會看到 [**使用者帳戶控制**] 視窗，要求您執行*VsEtwCollector.exe*的許可權。 選擇 [ **是**]。
+    > 當您啟動 **能源消耗** 分析工具時，您可能會看到 [ **使用者帳戶控制** ] 視窗要求您執行 *VsEtwCollector.exe*的許可權。 選擇 [ **是**]。
 
 3. 執行您的應用程式進行資料收集。
 
@@ -122,9 +122,9 @@ if (performance && performance.mark) {
 ## <a name="analyze-energy-profile-data"></a>分析能源分析資料
  能源分析資料會顯示在 Visual Studio 文件視窗中：
 
- ![能源分析工具報告頁面](../profiling/media/energyprof_all.png "ENERGYPROF_All")
+ ![能源分析工具報表頁面](../profiling/media/energyprof_all.png "ENERGYPROF_All")
 
-|映像|描述|
+|Image|說明|
 |-|-|
 |![步驟 1](../profiling/media/procguid_1.png "ProcGuid_1")|報告檔的名稱為 Report*YYYYMMDD-HHMM*.diagsession。 如果您決定儲存報告，可以變更名稱。|
 |![步驟 2](../profiling/media/procguid_2.png "ProcGuid_2")|時間軸會顯示程式碼剖析工作階段的長度、應用程式週期啟用事件，以及使用者標記。|
@@ -140,7 +140,7 @@ if (performance && performance.mark) {
 ## <a name="optimize-energy-use"></a>最佳化能源利用
  除了傳輸資料之外，網路連線初始化、維護及關閉連線都會產生能源成本。 某些網路在資料已傳送或接收後仍然保持連線一段時間，以便讓更多資料透過單一連線傳輸。 您可以使用 [ **資源 (開啟/關閉)** ] 窗格檢查應用程式與連接互動的方式。
 
- ![&#47;關閉&#41;] 窗格上的資源 &#40;](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
+ ![&#47;關閉&#41; 窗格的資源 &#40;](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
 
  如果 [ **網路** ] 和 [ **資料傳輸** ] 橫條圖顯示長時間開啟連接，間歇地傳送一系列的小型資料封包，您可以批次處理資料，使其在單一傳輸中傳送，減少開啟網路的時間，因此節省能源成本。
 
@@ -154,7 +154,7 @@ if (performance && performance.mark) {
 
    UWP App 適用的 Visual Studio 模擬器可讓您模擬網路資訊 API 的資料連線屬性。 請參閱[在模擬器中執行 UWP App](../debugger/run-windows-store-apps-in-the-simulator.md)
 
-- [CPU 使用量]**** 工具可以協助您降低因無效率函式所造成的 CPU 負載。 請參閱[分析 CPU 使用量](../profiling/beginners-guide-to-performance-profiling.md)。
+- [CPU 使用量]**** 工具可以協助您降低因無效率函式所造成的 CPU 負載。 請參閱 [分析 CPU 使用量](../profiling/beginners-guide-to-performance-profiling.md)。
 
 ## <a name="see-also"></a>另請參閱
 

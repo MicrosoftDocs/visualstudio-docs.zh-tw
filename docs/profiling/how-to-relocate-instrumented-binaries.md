@@ -1,5 +1,5 @@
 ---
-title: 如何重新放置已檢測的二進位檔 |Microsoft Docs
+title: 如何-重新配置已檢測的二進位檔 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 92ec3bb107c5921c6ac0113e18f1dc35ec3dd07a
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328813"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>如何：重新配置所檢測的二進位檔

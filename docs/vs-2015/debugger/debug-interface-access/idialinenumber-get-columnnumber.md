@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 51763dea01039ce084804bfa007fd8f0577cb9e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192368"
 ---
-# <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
+# <a name="idialinenumberget_columnnumber"></a>IDiaLineNumber::get_columnNumber
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取運算式或陳述式的開始處的資料行編號。  
+抓取運算式或語句開始的資料行編號。  
   
 ## <a name="syntax"></a>語法  
   
@@ -36,13 +36,13 @@ HRESULT get_columnNumber ( 
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回的資料行編號的運算式或陳述式的開始位置。 如果值為零，則不存在的資料行資訊。  
+ 擴展傳回運算式或語句開始的資料行編號。 如果值為零，則不會顯示資料行資訊。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援這個屬性，則傳回。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法所傳回的資料行值會列在列中的陳述式的第一個字元的位元組位移。  
+ 這個方法所傳回的資料行值，就是該行與語句的第一個字元之間的位元組位移。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

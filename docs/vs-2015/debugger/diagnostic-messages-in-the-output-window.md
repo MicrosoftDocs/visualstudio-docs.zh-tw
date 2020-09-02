@@ -1,5 +1,5 @@
 ---
-title: '[輸出] 視窗中的診斷訊息 |Microsoft Docs'
+title: 輸出視窗中的診斷訊息 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -30,10 +30,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 60f8da2430e1c84af3c26be31c6de561291c8c6e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695301"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>輸出視窗中的診斷訊息
@@ -46,11 +46,11 @@ ms.locfileid: "65695301"
   
 - 各種 `Write` 方法可在不中斷執行的情況下輸出資訊。 這些方法將取代前幾版 Visual Basic 所使用的 `Debug.Print` 方法。  
   
-- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 方法會在指定的條件失敗時中斷執行並輸出資訊。 根據預設，`Assert` 方法會在對話方塊中顯示此資訊。 如需詳細資訊，請參閱[受控碼中的判斷提示](../debugger/assertions-in-managed-code.md)。  
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 方法，如果指定的條件失敗，則會中斷執行和輸出資訊。 根據預設，`Assert` 方法會在對話方塊中顯示此資訊。 如需詳細資訊，請參閱[受控碼中的判斷提示](../debugger/assertions-in-managed-code.md)。  
   
 - <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> 方法一定會中斷執行並輸出資訊。 根據預設，`Fail` 方法會在對話方塊中顯示資訊。  
   
-  程式所輸出的應用程式中，除了**輸出**視窗可以顯示下列資訊：  
+  除了您的應用程式之外， **輸出** 視窗還可以顯示下列資訊：  
   
 - 偵錯工具已載入或卸載的模組。  
   
@@ -64,6 +64,6 @@ ms.locfileid: "65695301"
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [輸出視窗](../ide/reference/output-window.md)   
  [追蹤和檢測應用程式](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
- [檢測和追蹤的簡介](https://msdn.microsoft.com/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)   
- [C#、F# 和 Visual Basic 專案類型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [檢測和追蹤簡介](https://msdn.microsoft.com/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)   
+ [C #、F # 和 Visual Basic 專案類型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

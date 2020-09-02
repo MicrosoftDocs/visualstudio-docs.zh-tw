@@ -12,9 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: cdaff34c7eb2f9eba7c075127647c2eacbb736f9
-ms.sourcegitcommit: bcddb4647815e9ce2e175d9258e8df1b795e3e85
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86033347"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>在 Visual Studio 中對 JavaScript 和 TypeScript 進行單元測試
@@ -66,37 +67,37 @@ describe('Test Suite 1', function() {
 > [!Note]
 > 單元測試選項優先於個別檔案的設定。
 
-開啟 [測試瀏覽器] （選擇 [**測試**] [  >  **Windows**  >  **test Explorer**]）之後，Visual Studio 會探索並顯示測試。 如果一開始未顯示測試，則重建專案以重新整理清單。
+開啟 test explorer 之後 (選擇 [**測試**  >  **Windows**  >  **test explorer**) ]，Visual Studio 探索並顯示測試。 如果一開始未顯示測試，則重建專案以重新整理清單。
 
 ![測試總管](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> 若為 TypeScript，請勿在 `outdir` `outfile` *的tsconfig.js*中使用或選項，因為 [測試瀏覽器] 找不到您的單元測試。
+> 若為 TypeScript，請不要使用 `outdir` `outfile` *tsconfig.js*中的或選項，因為 Test Explorer 將無法找到您的單元測試。
 
 ## <a name="run-tests"></a>執行測試
 
-您可以 Visual Studio 或從命令列執行測試。
+您可以在 Visual Studio 或從命令列執行測試。
 
 ### <a name="run-tests-in-visual-studio"></a>在 Visual Studio 中執行測試
 
 ::: moniker range=">=vs-2019"
-您可以按一下 [測試總管] 中的 [全部執行]**** 連結來執行測試。 或者，您可以選取一或多個測試或群組、按一下滑鼠右鍵，然後從快捷方式功能表選取 [**執行**] 來執行測試。 測試會在背景中執行，而 [測試總管] 會自動更新並顯示結果。 此外，您也可以用滑鼠右鍵按一下並選取 [ **debug**]，來對選取的測試進行偵錯工具。
+您可以按一下 [測試總管] 中的 [全部執行]**** 連結來執行測試。 或者，您可以選取一或多個測試或群組、按一下滑鼠右鍵，然後從快捷方式功能表選取 [ **執行** ]，來執行測試。 測試會在背景中執行，而 [測試總管] 會自動更新並顯示結果。 此外，您也可以用滑鼠右鍵按一下並選取 [ **debug**]，來將選取的測試進行偵錯工具。
 ::: moniker-end
 ::: moniker range="vs-2017"
 您可以按一下 [測試總管] 中的 [全部執行]**** 連結來執行測試。 或者，您可以選取一或多個測試或群組，按一下滑鼠右鍵，然後從捷徑功能表中選取 [執行選取的測試]**** 來執行測試。 測試會在背景中執行，而 [測試總管] 會自動更新並顯示結果。 此外，您也可以選取 [偵錯選取的測試]****，對選取的測試進行偵錯。
 ::: moniker-end
 
-針對 TypeScript，會針對產生的 JavaScript 程式碼執行單元測試。
+針對 TypeScript，單元測試會針對產生的 JavaScript 程式碼執行。
 
 > [!NOTE]
-> 在大部分的 TypeScript 案例中，您可以在 TypeScript 程式碼中設定中斷點、以滑鼠右鍵按一下 [測試瀏覽器] 中的測試，然後選擇 [ **debug**]，來進行單元測試的偵錯工具。 在更複雜的案例中，例如使用來源對應的某些案例，您可能無法在 TypeScript 程式碼中遇到中斷點。 若要解決此問題，請嘗試使用 `debugger` 關鍵字。
+> 在大部分的 TypeScript 案例中，您可以藉由在 TypeScript 程式碼中設定中斷點、以滑鼠右鍵按一下測試瀏覽器中的測試，然後選擇 [ **debug**]，來進行單元測試的偵錯工具。 在更複雜的案例中，例如使用來源對應的某些案例中，您可能會遇到 TypeScript 程式碼中的中斷點。 若要解決此問題，請嘗試使用 `debugger` 關鍵字。
 
 > [!NOTE]
 > 我們目前不支援分析測試或程式碼涵蓋範圍。
 
 ### <a name="run-tests-from-the-command-line"></a>從命令列執行測試
 
-您可以使用下列命令，從適用于 Visual Studio 的[開發人員命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs)執行測試：
+您可以使用下列命令，從 [開發人員命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs) 執行 Visual Studio 的測試：
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
@@ -177,4 +178,4 @@ Test execution time: 1.5731 Seconds
 </PropertyGroup>
 ```
 
-某些測試架構可能需要額外的 npm 封裝以進行測試偵測。 例如，jest 需要 jest 編輯器-支援 npm 套件。 如有需要，請參閱特定架構的檔。
+某些測試架構可能需要額外的 npm 套件以進行測試偵測。 例如，jest 需要 jest 編輯器支援 npm 套件。 如有必要，請查看特定架構的檔。

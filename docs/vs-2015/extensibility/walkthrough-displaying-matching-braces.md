@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：顯示成對大括弧 |Microsoft Docs
+title: 逐步解說：顯示成對的大括弧 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,19 +11,19 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caaafd0143d3b09a51518ee5f54a02b06dbf10aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165782"
 ---
-# <a name="walkthrough-displaying-matching-braces"></a>逐步解說：顯示成對大括弧
+# <a name="walkthrough-displaying-matching-braces"></a>逐步解說︰顯示成對括弧
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以實作語言為基礎的功能，例如由定義要比對，在大括的號和時插入號是其中一個大括號，然後將文字標記標記新增至對稱的括號比對的大括號。 您可以定義大括號內容中的一種語言，或您可以定義您自己的檔案名稱擴充功能和內容類型，並將標籤套用到只是該類型，或您可以將標記套用至現有的內容類型 （例如 「 文字 」）。 下列逐步解說示範如何套用至"text"的內容類型的標籤進行比對的大括號。  
+您可以藉由定義要比對的大括弧來執行以語言為基礎的功能，例如大括弧比對，然後當插入號位於其中一個大括弧時，將文字標記標記加入至相符的大括弧。 您可以在語言的內容中定義大括弧，也可以定義自己的副檔名和內容類型，並只將標記套用至該類型，或者您可以將標記套用至現有的內容類型， (例如「文字」 ) 。 下列逐步解說示範如何將大括弧比對標記套用至 "text" 內容類型。  
   
-## <a name="prerequisites"></a>必要條件  
- 從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+## <a name="prerequisites"></a>Prerequisites  
+ 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF)  
   
@@ -31,87 +31,87 @@ ms.locfileid: "68165782"
   
 1. 建立編輯器分類器專案。 將方案命名為 `BraceMatchingTest`。  
   
-2. 將編輯器分類器項目範本加入專案。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
+2. 將編輯器分類專案範本加入至專案。 如需詳細資訊，請參閱 [使用編輯器專案範本建立延伸](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
 3. 刪除現有類別檔案。  
   
-## <a name="implementing-a-brace-matching-tagger"></a>實作大括號比對標記者  
- 若要取得大括號反白顯示類似於 Visual Studio 中使用的效果，您可以實作的標記者類型的<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>。 下列程式碼示範如何定義任何層級的巢狀大括號組標記。 在此範例中，在大括號配對 []。 []，和{}標記者建構函式，但在完整的語言實作相關的大括號配對會定義語言規格中定義。  
+## <a name="implementing-a-brace-matching-tagger"></a>執行括弧配對的標記  
+ 若要取得類似于 Visual Studio 中所使用的大括弧醒目提示效果，您可以執行類型的標記 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> 。 下列程式碼示範如何在任何嵌套層級上定義大括弧配對的標記。 在此範例中，大括弧配對 []。 [] 和定義于標記的函式中 {} ，但在完整語言的執行中，會在語言規格中定義相關的大括弧組。  
   
-#### <a name="to-implement-a-brace-matching-tagger"></a>若要實作大括號比對標記者  
+#### <a name="to-implement-a-brace-matching-tagger"></a>若要執行括弧對稱的成對標記  
   
-1. 將類別檔案並將它命名為括號對稱。  
+1. 新增類別檔案，並將它命名為 BraceMatching。  
   
 2. 匯入下列命名空間。  
   
      [!code-csharp[VSSDKBraceMatchingTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#1)]
      [!code-vb[VSSDKBraceMatchingTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#1)]  
   
-3. 定義類別`BraceMatchingTagger`繼承自<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>型別的<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>。  
+3. 定義 `BraceMatchingTagger` 繼承自 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> 型別的類別 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> 。  
   
      [!code-csharp[VSSDKBraceMatchingTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#2)]
      [!code-vb[VSSDKBraceMatchingTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#2)]  
   
-4. 新增 [文字] 檢視中，來源緩衝區中，和目前的快照集點，以及一組大括號組的屬性。  
+4. 加入文字視圖、來源緩衝區和目前快照點的屬性，以及一組大括弧配對。  
   
      [!code-csharp[VSSDKBraceMatchingTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#3)]
      [!code-vb[VSSDKBraceMatchingTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#3)]  
   
-5. 在標記者建構函式中，設定屬性，並檢視變更事件訂閱<xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged>和<xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>。 在此範例中，為方便說明，對稱的括號中也會定義建構函式。  
+5. 在標記的函式中，設定屬性並訂閱 view change 事件 <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> 和 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> 。 在此範例中，為了方便說明，也會在此函式中定義相符的配對。  
   
      [!code-csharp[VSSDKBraceMatchingTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#4)]
      [!code-vb[VSSDKBraceMatchingTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#4)]  
   
-6. 做為一部分<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>實作中，宣告 TagsChanged 事件。  
+6. 在 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> 執行過程中，宣告 TagsChanged 事件。  
   
      [!code-csharp[VSSDKBraceMatchingTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#5)]
      [!code-vb[VSSDKBraceMatchingTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#5)]  
   
-7. 事件處理常式更新目前插入號位置的`CurrentChar`屬性並引發 TagsChanged 事件。  
+7. 事件處理常式會更新屬性的目前插入號位置 `CurrentChar` ，並引發 TagsChanged 事件。  
   
      [!code-csharp[VSSDKBraceMatchingTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#6)]
      [!code-vb[VSSDKBraceMatchingTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#6)]  
   
-8. 實作<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>方法來比對括號是當目前字元是左大括號或前一個字元與右大括號，如同 Visual Studio 時。 找到相符項目時，這個方法會具現化兩個標記，一個用於左大括號，一個用於右大括號。  
+8. <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>當目前的字元是左大括弧，或當前一個字元是右大括弧時，請執行方法來比對大括弧，如 Visual Studio 中所示。 找到相符的時，此方法會具現化兩個標記，一個用於左大括弧，另一個用於右大括弧。  
   
      [!code-csharp[VSSDKBraceMatchingTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#7)]
      [!code-vb[VSSDKBraceMatchingTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#7)]  
   
-9. 下列的私用方法尋找對稱的括號，在任何層級的巢狀結構。 第一種方法會尋找符合的開啟字元關閉字元：  
+9. 下列私用方法會在任何嵌套層級上尋找相符的括弧。 第一個方法會尋找符合開啟字元的結尾字元：  
   
      [!code-csharp[VSSDKBraceMatchingTest#8](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#8)]
      [!code-vb[VSSDKBraceMatchingTest#8](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#8)]  
   
-10. 下列 helper 方法會尋找開啟符合關閉字元的字元：  
+10. 下列 helper 方法會尋找符合結尾字元的開啟字元：  
   
      [!code-csharp[VSSDKBraceMatchingTest#9](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#9)]
      [!code-vb[VSSDKBraceMatchingTest#9](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#9)]  
   
-## <a name="implementing-a-brace-matching-tagger-provider"></a>實作大括號比對標記者提供者  
- 除了實作標記者，您必須也實作，並匯出的標記者提供者。 在此情況下，提供者的內容類型是"text"。 這表示大括號比對會出現在所有類型的文字檔案，但更完整的實作適用於大括號比對，只以特定的內容類型。  
+## <a name="implementing-a-brace-matching-tagger-provider"></a>執行括弧對稱的標記提供者  
+ 除了執行標記之外，您還必須執行和匯出標記提供者。 在此情況下，提供者的內容類型為 "text"。 這表示括弧對稱將會出現在所有類型的文字檔中，但更完整的執行只會將大括弧比對套用至特定的內容類型。  
   
-#### <a name="to-implement-a-brace-matching-tagger-provider"></a>若要實作的大括號比對標記者提供者  
+#### <a name="to-implement-a-brace-matching-tagger-provider"></a>若要執行括弧對稱的標記提供者  
   
-1. 宣告的標記者提供者繼承自<xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>、 BraceMatchingTaggerProvider，將它命名，並將它與匯出<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>為"text"，<xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>的<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>。  
+1. 宣告繼承自的標記提供者 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> 、將它命名為 BraceMatchingTaggerProvider，然後使用 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text" 和 of 的來匯出它 <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> 。  
   
      [!code-csharp[VSSDKBraceMatchingTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#10)]
      [!code-vb[VSSDKBraceMatchingTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#10)]  
   
-2. 實作<xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A>BraceMatchingTagger 具現化的方法。  
+2. 執行 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> 方法以具現化 BraceMatchingTagger。  
   
      [!code-csharp[VSSDKBraceMatchingTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#11)]
      [!code-vb[VSSDKBraceMatchingTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#11)]  
   
 ## <a name="building-and-testing-the-code"></a>建置和測試程式碼  
- 若要測試此程式碼，建置 BraceMatchingTest 方案，並在實驗執行個體中執行它。  
+ 若要測試此程式碼，請建立 BraceMatchingTest 方案，並在實驗實例中執行它。  
   
-#### <a name="to-build-and-test-bracematchingtest-solution"></a>若要建置和測試 BraceMatchingTest 解決方案  
+#### <a name="to-build-and-test-bracematchingtest-solution"></a>若要建立及測試 BraceMatchingTest 方案  
   
 1. 建置方案。  
   
 2. 當您在偵錯工具中執行這個專案時，會具現化第二個 Visual Studio 執行個體。  
   
-3. 建立文字檔案，並輸入一些文字，其中包含對稱的括號。  
+3. 建立文字檔，並輸入包含相符括弧的一些文字。  
   
     ```  
     hello {  
@@ -122,7 +122,7 @@ ms.locfileid: "68165782"
     {hello}  
     ```  
   
-4. 當您插入號左大括號之前時，該括號和關閉對稱的大括號應該會反白顯示。 當您將游標右大括號之後時，該括號和相符的左大括號應該會反白顯示。  
+4. 當您將插入點放在左大括弧之前時，應該反白顯示該括弧和相符的右大括弧。 當您將游標放在右大括弧之後，則應該反白顯示該大括弧和相符的左大括弧。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [逐步解說︰將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

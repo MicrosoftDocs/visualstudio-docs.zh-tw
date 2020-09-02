@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineInfo | Microsoft Docs
+title: IDebugCoreServer2：： GetMachineInfo |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e1ddaa1d46d64af604d679a52d23b604012dbf84
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192980"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取的機器執行的核心伺服器的描述。  
+抓取核心伺服器執行所在機器的描述。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,13 +42,13 @@ int GetInfo( 
   
 #### <a name="parameters"></a>參數  
  `Fields`  
- [in]從旗標的組合[MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)列舉，指定哪些欄位`pMachineInfo`要填寫。  
+ 在 [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) 列舉中的旗標組合，可指定 `pMachineInfo` 要填寫的欄位。  
   
  `pMachineInfo`  
- [in、 out]A [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)結構，其中會填入電腦的描述。  
+ [in，out]填入電腦描述的 [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) 結構。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   

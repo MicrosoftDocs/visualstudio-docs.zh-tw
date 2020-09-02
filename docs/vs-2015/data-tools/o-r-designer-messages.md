@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0be3049718a97455ecce2b2df2f95c730a303110
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657362"
 ---
 # <a name="or-designer-messages"></a>O/R 設計工具訊息
@@ -21,14 +21,14 @@ ms.locfileid: "72657362"
 
 本主題列出使用 O/R 設計工具時可能會出現的訊息。
 
-## <a name="in-this-section"></a>本章節內容
- [無法建立關聯 \<關聯名稱> - 屬性已列出兩次](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
+## <a name="in-this-section"></a>本節內容
+ [無法建立關聯 \<association name>，屬性列出兩次](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
 
- [無法建立關聯 \<關聯名稱> - 屬性類型不符](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
+ [無法建立關聯 \<association name>，屬性類型不符](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
 
  [變更 DataContext 方法的傳回型別將無法復原](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)
 
- [無法擷取資料庫物件 \<物件名稱> 的結構描述資訊](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
+ [無法擷取資料庫物件 \<object name> 的結構描述資訊](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
 
  [一個或多個選取的資料庫物件傳回的結構描述與目標類別的結構描述不相符](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)
 
@@ -40,17 +40,17 @@ ms.locfileid: "72657362"
 
  [您要新增至此設計工具的物件使用了不同於設計工具目前所使用的資料連線](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)
 
- [無法刪除屬性 \<屬性名稱>](../data-tools/the-property-property-name-cannot-be-deleted.md)
+ [無法刪除屬性 \<property name>](../data-tools/the-property-property-name-cannot-be-deleted.md)
 
- [無法刪除屬性 \<屬性名稱>，因為它正參與關聯 \<關聯名稱>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
+ [無法刪除屬性 \<property name>，因為它正參與關聯 \<association name>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
 
- [無法刪除所選取的類別，因為它是用來當做一或多個 DataContext 方法的傳回型別](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)
+ [無法刪除所選取的類別，因為它是用來當做一或多個 DataContext 方法的傳回類型。](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)
 
  [選取的連線使用不支援的資料庫提供者](../data-tools/the-selected-connection-uses-an-unsupported-database-provider.md)
 
  [此關聯方法是下列預設插入、更新或刪除方法的支援方法](../data-tools/this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md)
 
- [Warning.已對 [設定行為] 對話方塊進行變更，但尚未套用](../data-tools/warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied.md)
+ [警告。尚未套用的設定行為對話方塊已進行變更](../data-tools/warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied.md)
 
  [您已從不支援的資料庫提供者選取資料庫物件](../data-tools/you-have-selected-a-database-object-from-an-unsupported-database-provider.md)
 
@@ -58,6 +58,6 @@ ms.locfileid: "72657362"
  <xref:System.Data.Linq>
 
 ## <a name="related-sections"></a>相關章節
- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Visual Studio 中的 LINQ to SQL 工具)
+ [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 
  [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)

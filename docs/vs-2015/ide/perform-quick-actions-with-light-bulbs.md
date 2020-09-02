@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 78ac9b0aba4e56b2240ef65783231d31d77e5144
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670343"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>執行燈泡提示的快速動作
@@ -29,14 +29,14 @@ ms.locfileid: "72670343"
 
 1. 在許多情況下，當您將滑鼠指標停留在錯誤點上方時，會自動出現燈泡；或者當您將插入號移到含有錯誤的字行時，會在編輯器左邊界出現燈泡。 當您看到紅色曲線時，可以將滑鼠暫留在其上方，即可顯示燈泡。 當您使用滑鼠或鍵盤前往發生問題之字行中的任何地方，也可以使燈泡顯示。
 
-2. 在字行任何地方按 **Ctrl+.** ， 可叫用燈泡，直接前往可能的修正方法清單。
+2. 在字行任何地方按 **Ctrl+.**， 可叫用燈泡，直接前往可能的修正方法清單。
 
-   ![滑鼠停留的燈泡](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+   ![當滑鼠游標暫留時的燈泡](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
 
 ## <a name="to-see-potential-fixes"></a>如何看到可能的修正方法
  按一下向下箭號或 [顯示可能的修正方法] 連結，就會顯示燈泡可以提供給您的快速動作清單。
 
- ![已擴充燈泡](../ide/media/vs2015-lightbulb-hover-expanded.png "VS2015_LightBulb_hover_expanded")
+ ![放大的燈泡](../ide/media/vs2015-lightbulb-hover-expanded.png "VS2015_LightBulb_hover_expanded")
 
 ## <a name="to-do-a-refactoring"></a>如何進行重構
  您還是可以按滑鼠右鍵來顯示內容功能表，以執行重構，但您也可以按 Ctrl + . 來顯示重構選項。 在下列說明中，在包含 `Math.Abs` 呼叫的字行某處按下 Ctrl +. 之後，就會提供擷取方法重構：

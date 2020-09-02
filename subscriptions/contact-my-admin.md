@@ -8,10 +8,10 @@ ms.date: 03/07/2020
 ms.topic: how-to
 description: 了解如何連絡您的訂用帳戶管理員以協助解決問題。
 ms.openlocfilehash: d3469fa5c8ba69cf5a4d4dab6d5c4b6be070f4d8
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247428"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>取得訂用帳戶管理員的協助
@@ -22,15 +22,15 @@ ms.locfileid: "88247428"
 ## <a name="how-to-contact-your-admin"></a>如何連絡您的管理員
 1. 登入訂閱者入口網站，網址為 <https://my.visualstudio.com>
 2. 選取 **[訂閱]** 索引標籤。 
-3. 選取右上方的 [ **聯絡我** 的系統管理員] 按鈕。 
+3. 選取右上方的 [ **連絡人我** 的系統管理員] 按鈕。 
    > [!div class="mx-imgBorder"]
-   > ![連絡我的管理員](_img/contact-my-admin/contact-my-admin-button.png "選取 [連絡人我的系統管理員] 按鈕，輸入您的訊息，然後選取 [傳送]。")
+   > ![連絡我的管理員](_img/contact-my-admin/contact-my-admin-button.png "選取 [連絡人我的系統管理員] 按鈕、輸入您的訊息，然後選取 [傳送]。")
 4. 輸入給管理員的訊息。
 5. 如果您想要收到傳送給系統管理員的訊息複本，請選擇 [ **傳送複本給我** ] 核取方塊。 
 6. 最後，選取 [ **傳送**]。
 
 > [!NOTE]
-> **超級管理員：**  若要設定傳送「連絡人我的系統管理員」要求的電子郵件地址，請在 [ [協定喜好](admin-prefs.md#contact-email-address)設定] 中指定該位址。
+> **超級管理員：**  若要設定傳送「連絡人我的系統管理員」要求的電子郵件地址，請在 [合約喜好](admin-prefs.md#contact-email-address)設定中指定該位址。
 
 ## <a name="resources"></a>資源
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)

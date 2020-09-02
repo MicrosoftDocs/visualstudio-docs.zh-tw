@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b39ac28776b1af71e2cccb601776f5518ff9e99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176626"
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>使用程式碼剖析工具命令列收集獨立應用程式的詳細計時資料
@@ -52,5 +52,5 @@ ms.locfileid: "68176626"
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>分析檢測資料檢視和報表  
  [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)  
   
-## <a name="reference"></a>參考資料  
- [命令列程式碼剖析工具參考](../profiling/command-line-profiling-tools-reference.md)
+## <a name="reference"></a>參考  
+ [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)

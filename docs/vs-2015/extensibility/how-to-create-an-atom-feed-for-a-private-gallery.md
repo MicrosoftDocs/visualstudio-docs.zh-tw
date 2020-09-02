@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立的 Atom 摘要私用組件庫 |Microsoft Docs
+title: 如何：建立私用元件庫的 Atom 摘要 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,31 +12,31 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6d4ba78028774e8fbf8e281afa2855781dab43a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204203"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>作法：建立私用組件庫的 Atom 摘要
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何：建立私用組件庫的 Atom 摘要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以建立 Atom (RSS) 到內部網路位置包含延伸模組，並加入至摘要**擴充功能和更新**為私用組件庫。 如需詳細資訊，請參閱[私用組件庫](../extensibility/private-galleries.md)。  
+您可以建立 Atom (RSS) 摘要至包含擴充功能的內部網路位置，並將摘要新增至 **擴充功能和更新** 作為私用資源庫。 如需詳細資訊，請參閱 [Private Galleries](../extensibility/private-galleries.md)。  
   
 ## <a name="creating-an-atom-feed"></a>建立 Atom 摘要  
- 若要建立的 Atom 摘要為私用組件庫，您先收集您的擴充功能 （.vsix 檔案） 的資料夾。 您可以將它們組織到子資料夾如果您想要。 您也需要下列資源：  
+ 若要建立 Atom 摘要做為私用資源庫，您必須先將擴充功能 ( .vsix 檔) 至資料夾。 您可以視需要將它們組織成子資料夾。 您也將需要下列資源：  
   
-- 讓擴充功能作為私用組件庫中可 atom.xml 檔案。 如需有關如何連接至 atom.xml 檔案資訊**擴充功能和更新**，請參閱[私用組件庫](../extensibility/private-galleries.md)。  
+- atom.xml 檔案，讓擴充功能可作為私用資源庫。 如需有關如何將 atom.xml 檔案連接到 **擴充功能和更新**的詳細資訊，請參閱私用資源 [庫](../extensibility/private-galleries.md)。  
   
-- 包含任何擴充功能 （例如，螢幕擷取畫面） 從擷取的映像檔案的資料夾。 Atom.xml 檔案包含這些影像的相對連結，以便在有提供**擴充功能和更新**。  
+- 包含從擴充功能解壓縮之任何影像檔案的資料夾 (例如，螢幕擷取畫面) 。 atom.xml 檔案包含這些映射的相對連結，讓它們可用於擴充功能 **和更新**。  
   
-  例如，假設您已收集下列兩個延伸模組到到資料夾：  
+  例如，假設您已將下列兩個延伸模組收集到資料夾中：  
   
-- Template_Wizard_239.vsix，也就是空的 VSIX 專案範本。  
+- Template_Wizard_239 .vsix，這是空的 VSIX 專案範本。  
   
-- SelectionHighlight.vsix，是以反白顯示選取的字的所有執行個體的工具。  
+- SelectionHighlight，這是用來反白顯示所選單字之所有實例的工具。  
   
-  Atom.xml 檔案的內容會類似下列的範例：  
+  atom.xml 檔案的內容會類似下列範例：  
   
 ```  
   <?xml version="1.0" encoding="utf-8" ?>   
@@ -73,7 +73,7 @@ ms.locfileid: "68204203"
   
 ```  
   
- 請注意兩個連結標記是指產生資料夾中的映像的螢幕擷取畫面。  
+ 請注意，這兩個連結標記會參考產生的影像資料夾中的螢幕擷取畫面。  
   
 ## <a name="see-also"></a>另請參閱  
  [私用組件庫](../extensibility/private-galleries.md)

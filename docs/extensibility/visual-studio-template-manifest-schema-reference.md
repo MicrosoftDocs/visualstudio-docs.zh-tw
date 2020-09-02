@@ -1,5 +1,5 @@
 ---
-title: 可視化工作室範本清單架構參考 |微軟文件
+title: Visual Studio 範本資訊清單架構參考 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
@@ -9,91 +9,91 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dbe46851d9df85569be796b4147217bd7db450ed
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697977"
 ---
-# <a name="visual-studio-template-manifest-schema-reference"></a>視覺化工作室範本清單架構參考
-此架構描述為 Visual Studio 專案或專案範本生成的可視化工作室範本清單 *(.vstman*) 檔案的格式。 架構還描述了該範本的位置和其他相關信息。
+# <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 範本資訊清單架構參考
+此架構描述為 Visual Studio 專案或專案範本產生的 Visual Studio 範本資訊清單 (*vstman*) 檔案的格式。 此架構也會描述範本的位置和其他相關資訊。
 
- :因為有單獨的專案和專案範本目錄,因此清單不應混合使用物料和專案範本。
+ ：因為有個別的專案和專案範本目錄，所以資訊清單絕不會有專案和專案範本的混合。
 
 > [!IMPORTANT]
-> 此清單可從 Visual Studio 2017 開始使用。
+> 從 Visual Studio 2017 開始，可以使用此資訊清單。
 
-## <a name="vstemplatemanifest-element"></a>VSTemplate 清單項目
- 清單的根元素。
+## <a name="vstemplatemanifest-element"></a>VSTemplateManifest 元素
+ 資訊清單的根項目。
 
 ### <a name="attributes"></a>屬性
 
-- **版本**:表示範本清單版本的字串。 必要。
+- **Version**：代表範本資訊清單版本的字串。 必要。
 
-- **區域設定**:表示範本清單區域設定或區域設置的字串。 區域設置值適用於所有範本。 您必須為每個區域設置使用單獨的清單。 選擇性。
+- **地區**設定：代表範本資訊清單地區設定或地區設定的字串。 地區設定值會套用至所有範本。 您必須針對每個地區設定使用不同的資訊清單。 選擇性。
 
 ### <a name="child-elements"></a>子元素
 
-- **VSTemplate 容器**選。
+- **VSTemplateContainer** 選。
 
-- **VSTemplateDir**選。
+- **VSTemplateDir** 選。
 
 ### <a name="parent-element"></a>父元素
  無。
 
-## <a name="vstemplatecontainer"></a>VSTemplate 容器
- 範本清單元素的容器。 清單為其定義的每個範本有一個範本容器。
+## <a name="vstemplatecontainer"></a>VSTemplateContainer
+ 範本資訊清單元素的容器。 資訊清單有一個範本容器，適用于它所定義的每個範本。
 
 ### <a name="attributes"></a>屬性
- **VSTemplate 類型**:指定樣本型`"Project"`態`"Item"``"ProjectGroup"`( 或的字串值)。 必要
+ **VSTemplateType**：指定範本類型 (`"Project"` 、 `"Item"` 或) 的字串值 `"ProjectGroup"` 。 必要
 
 ### <a name="child-elements"></a>子元素
 
-- **相對路徑磁碟**:磁碟上範本檔的相對路徑。 此位置還定義範本在新**專案**或「**新項目**」對話框中顯示的範本樹中的位置。 對於作為目錄和單個檔部署的範本,此路徑引用包含範本檔的目錄。 對於作為 *.zip*檔部署的範本,此路徑應該是 *.zip*文件的路徑。
+- **RelativePathOnDisk**：磁片上範本檔案的相對路徑。 這個位置也會在 [ **新增專案** ] 或 [ **新增** 專案] 對話方塊所顯示的範本樹狀結構中定義範本的位置。 針對部署為目錄和個別檔案的範本，此路徑會參考包含範本檔案的目錄。 針對部署為 *.zip* 檔案的範本，此路徑應該是 *.zip* 檔案的路徑。
 
-- *VSTemplate 標題:描述標頭的[範本資料](../extensibility/templatedata-element-visual-studio-templates.md)元素。
+- * * VSTemplateHeader：描述標頭的 [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) 元素。
 
 ### <a name="parent-element"></a>父元素
- **VSTemplate 清單**
+ **VSTemplateManifest**
 
 ## <a name="vstemplatedir"></a>VSTemplateDir
- 描述範本所在的目錄。 清單可以包含多個**VSTemplateDir**條目,以提供當地語系化的名稱和排序,以便目錄控制其在範本類別樹中的外觀。
+ 描述範本所在的目錄。 資訊清單可以包含多個 **VSTemplateDir** 專案，以提供目錄的當地語系化名稱和排序次序，以控制其在範本類別目錄樹狀結構中的外觀。
 
- 由於其設計 **,VSTemplateDir**條目應只出現在非區域設置指定的清單中。
+ 由於其設計的緣故， **VSTemplateDir** 專案應該只出現在非地區設定指定的資訊清單中。
 
 ### <a name="attributes"></a>屬性
  無。
 
 ### <a name="child-elements"></a>子元素
 
-- **相對路徑**:範本的路徑。 每個路徑只能有一個條目,因此第一個條目將贏得所有清單。
+- **RelativePath**：範本的路徑。 每個路徑只能有一個專案，因此第一個專案會贏得所有資訊清單。
 
-- **本地化名稱**:指定本地化名稱**的名稱描述元素**。 選擇性。
+- **LocalizedName**：指定當地語系化名稱的 **NameDescriptionIcon** 元素。 選擇性。
 
-- **排序順序**:指定排序順序的字串。 選擇性。
+- **SortOrder**：指定排序次序的字串。 選擇性。
 
-- **父資料夾覆蓋名稱**:父資料夾的重寫名稱。 選擇性。 此元素具有**Name**屬性,該屬性是指定名稱的字串值。
+- **ParentFolderOverrideName**：父資料夾的覆寫名稱。 選擇性。 這個元素有一個 **name** 屬性，它是指定名稱的字串值。
 
 ### <a name="parent-element"></a>父元素
- **VSTemplate 清單**
+ **VSTemplateManifest**
 
-## <a name="namedescriptionicon"></a>名稱描述圖示
- 指定名稱和說明,可能用於本地化範本。 請參考上面**的本地化名稱**。
+## <a name="namedescriptionicon"></a>NameDescriptionIcon
+ 指定可能當地語系化範本的名稱和描述。 請參閱上述 **LocalizedName** 。
 
 ### <a name="attributes"></a>屬性
 
-- **套件**:指定套件的字串值。 選擇性。
+- **封裝**：指定封裝的字串值。 選擇性。
 
-- **ID**:指定 ID 的字串值。 選擇性。
+- **識別碼**：指定識別碼的字串值。 選擇性。
 
 ### <a name="child-elements"></a>子元素
  無。
 
 ### <a name="parent-element"></a>父元素
- **本地化名稱**
+ **LocalizedName**
 
 ## <a name="examples"></a>範例
- 以下代碼是專案範本 *.vstman*檔的範例。
+ 下列程式碼是專案範本 *vstman* 檔的範例。
 
 ```xml
 <VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
@@ -119,7 +119,7 @@ ms.locfileid: "80697977"
 
 ```
 
- 以下代碼是項範本 *.vstman*檔的範例。
+ 下列程式碼是專案範本 *vstman* 檔的範例。
 
 ```xml
 <VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
