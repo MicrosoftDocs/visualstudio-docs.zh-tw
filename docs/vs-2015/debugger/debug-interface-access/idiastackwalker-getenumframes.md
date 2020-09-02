@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalker::getEnumFrames |Microsoft Docs
+title: IDiaStackWalker：： getEnumFrames |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8cbad02474af48ac4da72784659dd27007211e64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144702"
 ---
 # <a name="idiastackwalkergetenumframes"></a>IDiaStackWalker::getEnumFrames
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取堆疊框架的列舉值適用於 x86 平台。  
+捕獲 x86 平臺的堆疊框架列舉值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -36,16 +36,16 @@ HRESULT getEnumFrames( 
   
 #### <a name="parameters"></a>參數  
  `pHelper`  
- [in]協助專家[IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)物件。  
+ 在Helper [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) 物件。  
   
  `ppEnum`  
- [out]傳回[IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)物件，其中包含一份[IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)物件。  
+ 擴展傳回 [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) 物件，其中包含 [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) 物件的清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 若要取得任何其他平台上的堆疊框架清單，請呼叫[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)方法。  
+ 若要取得任何其他平臺上的堆疊框架清單，請呼叫 [IDiaStackWalker：： getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) 方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)   

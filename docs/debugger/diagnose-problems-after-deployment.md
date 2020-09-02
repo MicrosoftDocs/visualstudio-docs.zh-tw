@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a4ae5e4f6f21208f02cbfd6513b3c5eb28124a8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350585"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>使用 IntelliTrace (C#、Visual Basic) 於部署後診斷問題
@@ -23,7 +23,7 @@ ms.locfileid: "85350585"
 
  ![撰寫程式碼, 建置, 發行, 監視, 診斷, 修正](../debugger/media/ffr_cycle.png "FFR_Cycle")
 
- **您需要：**
+ **您將需要：**
 
 - Visual Studio、Azure DevOps，或者 Team Foundation Server 2017、2015、2013、2012 或 2010，以設定組建
 
@@ -61,7 +61,7 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
 
      如果您使用自訂範本，請確定該範本含有索引來源的活動。 稍後您將加入 MSBuild 引數以指定儲存符號檔案的位置。
 
-     ![設定組建管線中的符號路徑 TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
+     ![設定組建管線 TFS 2013 中的符號路徑](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
 
      如需更多關於符號的資訊，請參閱 [發佈符號資料](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts)。
 
@@ -187,7 +187,7 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
 
      [問：Visual Studio 為何會顯示我選取的工作區不適合？](#IneligibleWorkspace)
 
-     [問：為什麼我在選擇 team 集合或另一個集合之前不能繼續？](#ChooseTeamProject)
+     [問：在我選擇 Team 集合或另一個集合之前，為何無法繼續執行？](#ChooseTeamProject)
 
 ### <a name="diagnose-a-performance-problem"></a>診斷效能問題
 
@@ -233,7 +233,7 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
 
      [IntelliTrace 記錄檔中的其他所有事件和資訊為何？](../debugger/using-saved-intellitrace-data.md)
 
-### <a name="what-else-can-i-do-from-here"></a><a name="WhatElse"></a>我還可以從這裡做些什麼？
+### <a name="what-else-can-i-do-from-here"></a><a name="WhatElse"></a> 我還可以在這裡做些什麼？
 
 - [取得有關這個程式碼的詳細資訊](../ide/find-code-changes-and-other-history-with-codelens.md)。 尋找此程式碼的參考、其變更記錄、相關的 Bug、工作項目、程式碼檢閱或單元測試，只要使用編輯器中的 CodeLens 指標，就不需要離開編輯器。
 
@@ -245,7 +245,7 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
 
      ![偵錯期間對應呼叫堆疊](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")
 
-### <a name="q--a"></a><a name="FAQ"></a>問 & A
+### <a name="q--a"></a><a name="FAQ"></a> 問 & A
 
 #### <a name="q-why-include-information-about-my-project-source-control-build-and-symbols-with-my-release"></a><a name="WhyInclude"></a> 問：為什麼要在發行時包含我的專案、原始檔控制、組建和系統相關資訊？
  Visual Studio 使用這項資訊尋找與您嘗試偵錯之發行相符的方案和原始檔。 在您開啟 IntelliTrace 記錄檔並選取要開始偵錯的事件之後，Visual Studio 會使用符號來尋找並顯示發生事件的程式碼。 您可以接著檢視記錄的值，並前後移動瀏覽執行的程式碼。
@@ -301,7 +301,7 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
 
     - **ProjectPath**：您的 App 的專案檔 (.csproj 或 .vbproj) 的路徑
 
-    - **CommitId**：您的認可識別碼
+    - **CommitId**：認可的識別碼
 
       例如：
 
@@ -356,23 +356,23 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
     </Build>
     ```
 
-#### <a name="q-why-does-visual-studio-say-my-selected-workspace-is-ineligible"></a><a name="IneligibleWorkspace"></a>問： Visual Studio 為什麼我選取的工作區不合格？
+#### <a name="q-why-does-visual-studio-say-my-selected-workspace-is-ineligible"></a><a name="IneligibleWorkspace"></a> 問：為什麼 Visual Studio 說我選取的工作區不符合資格？
  **答：** 所選取的工作區在原始檔控制資料夾和本機資料夾之間沒有任何對應。 若要建立此工作區的對應，請選擇 [管理] ****。 否則，請選擇已對應的工作區或建立新的工作區。
 
  ![在沒有已對應之工作區的情況下從原始檔控制開啟](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
-#### <a name="q-why-cant-i-continue-until-i-choose-a-team-collection-or-a-different-collection"></a><a name="ChooseTeamProject"></a>問：為什麼我在選擇 team 集合或另一個集合之前不能繼續？
+#### <a name="q-why-cant-i-continue-until-i-choose-a-team-collection-or-a-different-collection"></a><a name="ChooseTeamProject"></a> 問：在我選擇 Team 集合或另一個集合之前，為何無法繼續執行？
  **答：** 下列任一原因都有可能造成此結果：
 
 - Visual Studio 未連接到 TFS。
 
-     ![從原始檔控制開啟 &#45; 未連接](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")
+     ![從原始檔控制開啟 &#45; 未連線](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")
 
 - Visual Studio 在您目前的 Team 集合中找不到方案或專案。
 
-     當組建資訊清單檔案（ \<*ProjectName*>.BuildInfo.config）未指定 Visual Studio 可以找到相符來源的位置時，Visual Studio 會使用您目前連接的 TFS 來尋找相符的方案或專案。 如果目前的 Team 集合沒有相符的來源，Visual Studio 會提示您連接至另一個 Team 集合。
+     當組建資訊清單檔 (\<*ProjectName*>.BuildInfo.config) 未指定 Visual Studio 可在哪裡找到相符的來源時，Visual Studio 會使用您目前連接的 TFS 來尋找相符的方案或專案。 如果目前的 Team 集合沒有相符的來源，Visual Studio 會提示您連接至另一個 Team 集合。
 
-- Visual Studio 在組建資訊清單檔案（.BuildInfo.config）指定的集合中找不到方案或專案 \<*ProjectName*> 。
+- Visual Studio 在組建資訊清單檔所指定的集合中找不到方案或專案 (\<*ProjectName*>.BuildInfo.config) 。
 
      相符的來源可能已不在指定的 TFS 上，甚至可能已經不存在，原因可能是您已將該來源移轉至新的 TFS。 如果指定的 TFS 不存在，Visual Studio 可能會在約一分鐘之後逾時，然後提示您連接到另一個集合。 若要繼續，請連接至正確的 TFS 伺服器。
 
@@ -384,4 +384,4 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
 #### <a name="q-why-do-i-get-this-message-about-untrusted-symbols"></a><a name="UntrustedSymbols"></a> 問：我為什麼收到有關未受信任符號的訊息？
  ![是否搭配未受信任的符號路徑進行偵錯？](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
- **答：** 當組建資訊清單檔案（.BuildInfo.config）中的符號路徑 \<*ProjectName*> 未包含在受信任的符號路徑清單中時，就會出現此訊息。 您可以將路徑加入至偵錯工具選項中的符號路徑清單。
+ **答：** 當組建資訊清單檔案中的符號路徑 (\<*ProjectName*>.BuildInfo.config) 不包含在受信任的符號路徑清單中時，就會出現此訊息。 您可以將路徑加入至偵錯工具選項中的符號路徑清單。

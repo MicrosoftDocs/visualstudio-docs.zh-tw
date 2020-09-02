@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 434dfc85ed6c4e03c7c610a497bd063ce1826c62
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546987"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>如何：以程式設計方式在 Word 中設定搜尋選項
@@ -32,27 +32,27 @@ ms.locfileid: "85546987"
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
 ## <a name="use-properties-of-a-find-object"></a>使用尋找物件的屬性
- 下列程式碼會設定物件的屬性 <xref:Microsoft.Office.Interop.Word.Find> ，以搜尋目前選取範圍內的文字。 請注意，搜尋條件（例如 [向前搜尋]、[換行] 和 [要搜尋的文字]）是物件的屬性 <xref:Microsoft.Office.Interop.Word.Find> 。
+ 下列程式碼會設定物件的屬性 <xref:Microsoft.Office.Interop.Word.Find> ，以搜尋目前選取範圍內的文字。 請注意，搜尋條件（例如搜尋向前、換行和要搜尋的文字）是物件的屬性 <xref:Microsoft.Office.Interop.Word.Find> 。
 
  <xref:Microsoft.Office.Interop.Word.Find>當您撰寫 c # 程式碼時，設定物件的每個屬性並不實用，因為您必須將相同的屬性指定為方法中的參數 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 。 因此，此範例只包含 Visual Basic 程式碼。
 
 ### <a name="to-set-search-options-using-a-find-object"></a>使用尋找物件設定搜尋選項
 
-1. 設定物件的屬性 <xref:Microsoft.Office.Interop.Word.Find> ，以透過 [**尋找我**的文字] 的選取範圍向前搜尋。
+1. 設定物件的屬性 <xref:Microsoft.Office.Interop.Word.Find> ，以便在 [ **尋找我**的文字] 的選取範圍內向前搜尋。
 
      [!code-vb[Trin_VstcoreWordAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#76)]
 
 ## <a name="use-execute-method-arguments"></a>使用 Execute 方法引數
- 下列程式碼會使用 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 物件的方法 <xref:Microsoft.Office.Interop.Word.Find> 來搜尋目前選取範圍內的文字。 請注意，搜尋準則（例如向前搜尋、換行，以及要搜尋的文字）會當做方法的參數來傳遞 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 。
+ 下列程式碼會使用 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 物件的方法 <xref:Microsoft.Office.Interop.Word.Find> 來搜尋目前選取範圍內的文字。 請注意，搜尋條件（例如搜尋向前、換行和要搜尋的文字）會做為方法的參數傳遞 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 。
 
 ### <a name="to-set-search-options-using-execute-method-arguments"></a>使用 Execute 方法引數設定搜尋選項
 
-1. 將搜尋準則當做方法的參數傳遞 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> ，以透過 [**尋找我**的文字] 的選取範圍向前搜尋。
+1. 將搜尋準則傳遞為方法的參數 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> ，以便向前搜尋文字 **尋找**的選項。
 
      [!code-vb[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#77)]
      [!code-csharp[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#77)]
 
 ## <a name="see-also"></a>另請參閱
-- [如何：以程式設計方式在檔中搜尋和取代文字](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
-- [如何：以程式設計方式對檔中找到的專案執行迴圈](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
-- [如何：以程式設計方式在搜尋後還原選取範圍](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+- [如何：以程式設計方式搜尋和取代檔中的文字](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
+- [如何：以程式設計方式在檔中找到的專案之間執行迴圈](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
+- [如何：以程式設計方式在搜尋後還原選取專案](../vsto/how-to-programmatically-restore-selections-after-searches.md)

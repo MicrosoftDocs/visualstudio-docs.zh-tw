@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 08fa461dc55bf42857e21a5419cab6a0ff147173
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546974"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>如何：以程式設計方式排序工作表中的資料
@@ -36,7 +36,7 @@ ms.locfileid: "85546974"
     [!code-csharp[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#78)]
     [!code-vb[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#78)]
 
-   將下列程式碼放在*Sheet1 .vb*或*Sheet1.cs*中，以排序控制項中的資料 <xref:Microsoft.Office.Tools.Excel.ListObject> 。 此程式碼假設您在名為 `Sheet1` 的工作表中，有名為 `fruitList` 的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。
+   將下列程式碼放在 *Sheet1* 或 *Sheet1.cs* 中，以排序控制項中的資料 <xref:Microsoft.Office.Tools.Excel.ListObject> 。 此程式碼假設您在名為 `Sheet1` 的工作表中，有名為 `fruitList` 的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。
 
 ### <a name="to-sort-data-in-a-listobject-control"></a>排序 ListObject 控制項的資料
 
@@ -45,7 +45,7 @@ ms.locfileid: "85546974"
      [!code-csharp[Trin_VstcoreExcelAutomation#79](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#79)]
      [!code-vb[Trin_VstcoreExcelAutomation#79](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#79)]
 
-## <a name="sort-data-in-a-vsto-add-in"></a>在 VSTO 增益集中排序資料
+## <a name="sort-data-in-a-vsto-add-in"></a>排序 VSTO 增益集中的資料
 
 ### <a name="to-sort-data-in-a-native-range"></a>排序原生範圍的資料
 

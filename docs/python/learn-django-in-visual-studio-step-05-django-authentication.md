@@ -1,4 +1,4 @@
-﻿---
+---
 title: Visual Studio 中的了解 Django 教學課程步驟 5，驗證
 titleSuffix: ''
 description: 逐步解說 Visual Studio 專案內容中的 Django 基本知識，特別是 [Django Web 專案] 範本所提供的驗證功能。
@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62957841"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>步驟 5：在 Django 中驗證使用者
 
 **上一個步驟：[使用完整的 Django Web 專案範本](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
-因為 Web 應用程式一般都需要驗證，所以 [Django Web 專案] 範本會包含基本的驗證流程。 （本教程第 6 步中討論的"投票 Django Web 專案"範本還包括相同的流。使用任何 Django 專案範本時，Visual Studio 在 Django 專案的*settings.py*中包括所有必要的身份驗證模組。
+因為 Web 應用程式一般都需要驗證，所以 [Django Web 專案] 範本會包含基本的驗證流程。  (本教學課程的步驟6中所討論的「投票 Django Web 專案」範本也包含相同的流程。 ) 使用任何 Django 專案範本時，Visual Studio 包含在 Django 專案 *settings.py*中進行驗證的所有必要模組。
 
 在這個步驟中，您將了解：
 
@@ -35,7 +35,7 @@ ms.locfileid: "62957841"
 
 1. 如果您尚未遵循專案根目錄之 *readme.html* 檔案中的指示來建立進階使用者 (系統管理員) 帳戶，請立即建立。
 
-1. 使用**調試** > **啟動調試****（F5**） 從視覺化工作室運行應用程式。 當應用程式出現在瀏覽器中時，觀察到瀏覽列的右上角出現 [登入]****。
+1. 使用**Debug**  >  **開始調試**程式 (**F5**) 執行應用程式 Visual Studio。 當應用程式出現在瀏覽器中時，觀察到瀏覽列的右上角出現 [登入]****。
 
     ![Django Web 專案應用程式頁面上的登入控制項](media/django/step05-login-control.png)
 
@@ -204,7 +204,7 @@ ms.locfileid: "62957841"
 
 1. 當您全部完成時，請停止伺服器，並再次將變更認可至原始檔控制。
 
-### <a name="question-what-is-the-purpose-of-the--csrf_token--tag-that-appears-in-the-form-elements"></a>問題：\<form\> 元素中出現的 {% csrf_token %} 標籤有什麼用途？
+### <a name="question-what-is-the-purpose-of-the--csrf_token--tag-that-appears-in-the-form-elements"></a>問題：專案中顯示的 {% csrf_token%} 標記有何用途 \<form\> ？
 
 回答：`{% csrf_token %}` 標籤包含 Django 的內建[跨網站偽造要求 (csrf) 保護](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django 文件)。 您通常會將此標籤新增至任何涉及 POST、PUT 或 DELETE 要求方法的項目 (例如表單)。 然後，範本轉譯函式 (`render`) 會插入必要的保護。
 

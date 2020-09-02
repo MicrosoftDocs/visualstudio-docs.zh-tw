@@ -1,5 +1,5 @@
 ---
-title: 支援多個文件檢視 |微軟文件
+title: 支援多個檔視圖 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,31 +11,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a952414fa7156d80675564e519e556ccedd524a3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699544"
 ---
 # <a name="supporting-multiple-document-views"></a>支援多個文件檢視
-您可以透過編輯器建立單獨的文件資料和文件檢視物件來提供文件的多個檢視。 在附加文件檢視有用的一些情況下,有以下情況:
+您可以為編輯器建立個別的檔資料和檔視圖物件，以提供多個檔的觀點。 有些情況下，其他檔視圖會很有用：
 
-- 新的視窗支援:您希望編輯器提供兩個或多個相同類型的檢視,以便已在編輯器中打開視窗的使用者可以通過從 **「視窗」** 選單中選擇 **「新建視窗**」命令打開新視窗。
+- 新的視窗支援：您希望編輯器提供兩個或多個相同類型的視圖，讓已經在編輯器中開啟視窗的使用者可以從 [**視窗]** 功能表選取 [**新增視窗]** 命令，以開啟新視窗。
 
-- 表單和程式碼檢視支援:您希望編輯器提供不同類型的檢視。 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]例如,提供表單單檢視和代碼檢視。
+- 表單和程式碼視圖支援：您希望編輯器提供不同類型的觀點。 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]例如，提供表單檢視和程式碼視圖。
 
-  有關此的詳細資訊,請參閱 Visual Studio 包樣本建立的自訂編輯器專案中 EditorFactory.cs 檔中的 CreateEditorInstance 過程。 有關此項目的詳細資訊,請參閱[演練:建立自訂編輯器](../extensibility/walkthrough-creating-a-custom-editor.md)。
+  如需這項功能的詳細資訊，請參閱 Visual Studio 套件範本所建立之自訂編輯器專案中 EditorFactory.cs 檔案的 CreateEditorInstance 程式。 如需此專案的詳細資訊，請參閱 [逐步解說：建立自訂編輯器](../extensibility/walkthrough-creating-a-custom-editor.md)。
 
-## <a name="synchronizing-views"></a>同步檢視
- 實現多個檢視時,文檔數據物件負責使所有檢視與資料保持同步。 您可以使用<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>事件 處理介面將多個檢視與數據同步。
+## <a name="synchronizing-views"></a>同步處理視圖
+ 當您執行多個視圖時，檔資料物件會負責保持所有視圖與資料同步。 您可以使用上的事件處理介面 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> ，將多個資料檢視與資料同步。
 
- 如果不使用<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>物件同步多個檢視,則必須實現自己的事件系統來處理對文檔數據物件所做的更改。 您可以使用不同級別的粒度來使多個檢視保持最新。 使用最大粒度設置,當您在一個視圖中鍵入時,其他視圖將立即更新。 以最小的粒度,其他檢視在啟動之前不會更新它們。
+ 如果您不使用 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 物件來同步處理多個視圖，則必須執行您自己的事件系統來處理對檔資料物件所做的變更。 您可以使用不同的資料細微性層級，讓多個視圖維持在最新狀態。 使用最大的資料細微性設定時，當您在其中一個視圖中輸入時，其他的視圖會立即更新。 使用最小的資料細微性時，不會更新其他視圖，直到它們啟動為止。
 
-## <a name="determining-whether-document-data-is-already-open"></a>確定文件資料是否已開啟
- 集成開發環境 (IDE) 中的正在執行的文件表 (RDT) 可幫助追蹤文件的資料是否已打開,如下圖所示。
+## <a name="determining-whether-document-data-is-already-open"></a>判斷檔資料是否已經開啟
+ 在整合式開發環境中，執行中的檔資料表 (RDT)  (IDE) 有助於追蹤檔的資料是否已經開啟，如下圖所示。
 
- ![文件資料檢視圖形](../extensibility/media/docdataview.gif "文件資料檢視")多個檢視
+ ![DocDataView 圖形](../extensibility/media/docdataview.gif "Docdataview") 多個視圖
 
- 預設情況下,每個檢視(文件檢視物件)都包含在其自己的視窗框架中 。<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> 但是,如前所述,文檔數據可以顯示在多個檢視中。 為此,Visual Studio 會檢查 RDT 以確定有問題的文檔是否已在編輯器中打開。 當 IDE<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>呼叫以建立編輯器`punkDocDataExisting`時, 參數中傳回的非 NULL 值指示文檔已在另一個編輯器中打開。 關於 RDT 如何工作的詳細資訊,請參考[文件表](../extensibility/internals/running-document-table.md)。
+ 依預設，每個 view (document view 物件) 都包含在自己的視窗框架 (<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>) 中。 不過，如先前所述，檔資料可以顯示在多個視圖中。 若要啟用此功能，Visual Studio 檢查 RDT，判斷是否已在編輯器中開啟有問題的檔。 當 IDE 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 以建立編輯器時，在參數中傳回的非 Null 值 `punkDocDataExisting` 表示檔已在其他編輯器中開啟。 如需有關 RDT 函數的詳細資訊，請參閱執行 [檔資料表](../extensibility/internals/running-document-table.md)。
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>在實現中,檢查返回的文件數據物件`punkDocDataExisting`,以確定文件資料是否適合編輯器。 (例如,HTML 編輯器只能顯示 HTML 資料。如果合適,則編輯器工廠應為數據提供第二個檢視。 如果`punkDocDataExisting`參數`NULL`不是 ,則文檔數據物件可能在另一個編輯器中打開,或者文檔數據可能已在具有相同編輯器的不同視圖中打開。 如果文件資料在編輯器工廠不支援的不同編輯器中打開,則 Visual Studio 無法打開編輯器工廠。 關於詳細資訊,請參閱[如何:將檢視附加到文件資料](../extensibility/how-to-attach-views-to-document-data.md)。
+ 在您的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> 執行中，檢查傳回的檔資料物件， `punkDocDataExisting` 以判斷檔資料是否適用于您的編輯器。  (例如，HTML 編輯器只會顯示 HTML 資料。如有需要，請 ) ，您的編輯器 factory 應提供資料的第二個資料檢視。 如果 `punkDocDataExisting` 參數不是 `NULL` ，則可能是在另一個編輯器中開啟檔資料物件，或更可能的情況是，檔資料已在具有相同編輯器的不同視圖中開啟。 如果檔資料在編輯器 factory 不支援的不同編輯器中開啟，則 Visual Studio 無法開啟您的編輯器 factory。 如需詳細資訊，請參閱 [如何：將視圖附加至檔資料](../extensibility/how-to-attach-views-to-document-data.md)。

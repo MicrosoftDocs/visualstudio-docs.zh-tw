@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::ContinueFromSynchronousEvent |Microsoft Docs
+title: IDebugEngine2：： ContinueFromSynchronousEvent |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75c359f8d7f7c0c5e9d335de296fe252b30d1c3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198453"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-工作階段的偵錯管理員 (SDM)，表示同步的偵錯事件，先前傳送給 SDM，偵錯引擎 (DE) 已收到並處理呼叫。  
+由會話 debug manager 所呼叫 (SDM) ，表示已接收並處理由 debug engine 所傳送的同步 debug 事件 (將) 解除至 SDM。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,16 +40,16 @@ HRESULT ContinueFromSynchronousEvent( 
   
 #### <a name="parameters"></a>參數  
  `pEvent`  
- [in][IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)物件，代表從中偵錯工具現在應該會繼續先前傳送同步事件。  
+ 在 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 物件，這個物件表示先前傳送的同步事件，現在偵錯工具應該從此處繼續。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- DE 必須確認它已由事件來源的`pEvent`參數。  
+ DE 必須確認它是參數所代表之事件的來源 `pEvent` 。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CEngine`實作的物件[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)介面。  
+ 下列範例示範如何針對實 IDebugEngine2 介面的簡單物件，執行這個方法 `CEngine` 。 [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)  
   
 ```cpp#  
 HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)  

@@ -11,24 +11,24 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f2994c219dd1aadf7f5b9bc833eb7867baede9a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144362"
 ---
 # <a name="web-projects"></a>Web 專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Web 專案系統會建立 Web 專案的專案系統。 Web 專案接著會建立 Web 應用程式。 您可以使用傳統的程式設計語言，例如網頁進行程式設計[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../../includes/csprcs-md.md)]，以收集和處理來自使用者的資訊、 將它儲存在資料庫中，等等。 使用相關聯的程式碼的網頁會呼叫智慧的網頁。  
+Web 專案系統是建立 Web 專案的專案系統。 Web 專案接著會建立 Web 應用程式。 您可以使用傳統的程式設計語言（例如 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 或）來設計網頁， [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 以收集和處理使用者的資訊，將其儲存在資料庫中等等。 具有相關聯之程式碼的網頁稱為智慧型 Web pages。  
   
 ## <a name="in-this-section"></a>本節內容  
- [基本資訊](../../extensibility/internals/web-project-essentials.md)  
- 提供的重要項目[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]Web 專案。  
+ [基本功能](../../extensibility/internals/web-project-essentials.md)  
+ 提供重要的元素 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Web 專案。  
   
  [網站支援](../../extensibility/internals/web-site-support.md)  
- 概略敘述[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]網站專案。 網站專案產生一個可執行檔的檔案，每個智慧的網頁。 從存放在 /App_Code 資料夾的原始程式碼檔產生額外的可執行檔。  
+ 提供 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 網站專案的總覽。 網站專案會為每個智慧型網頁產生一個可執行檔。 其他可執行檔是從/App_Code 資料夾中的原始程式碼檔產生的。  
   
 ## <a name="related-sections"></a>相關章節  
  [專案](../../extensibility/internals/projects.md)  
- 說明如何擴充[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]專案系統。
+ 說明如何擴充 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 專案系統。

@@ -11,20 +11,20 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62957527"
 ---
 # <a name="format-python-code"></a>格式化 Python 程式碼
 
 Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的格式化選項。
 
-- 要設置所選內容的格式：選擇 **"編輯** > **高級** > **格式選擇**"或按**Ctrl**+**E** > **F**。
-- 要格式化整個檔：選擇**編輯** > **高級** > **格式文檔**或按**Ctrl**+**E** > **D**。
+- 若要格式化選取專案：選取 [**編輯**高階  >  **Advanced**  >  **格式選取專案**] 或按**Ctrl** + **E**  >  **F**。
+- 若要格式化整個檔案：選取 [**編輯**  >  **先進**  >  的**格式**檔] 或按**Ctrl** + **E**  >  **D**。
 
-選項通過**工具** > **選項** > **文字編輯器** > **Python** > **格式**及其嵌套選項卡進行設置。 您需要選取 [顯示所有設定]**** 來使這些選項出現：
+選項是透過 [**工具**  >  **選項**  >  **文字編輯器**  >  **Python**  >  ]、[Python**格式**] 和其嵌套索引標籤來設定。 您需要選取 [顯示所有設定]**** 來使這些選項出現：
 
 ![Visual Studio 中的 Python 格式選項](media/options-editor-formatting.png)
 
@@ -42,7 +42,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 下表提供各種選項範例：
 
-| 類別定義選項 | 已檢查 | 已清除 |
+| 類別定義選項 | 已核取 | 已清除 |
 | --- | --- | --- |
 | **在類別宣告的名稱與基底清單之間插入空格** | `class X (object): pass` | `class X(object): pass` |
 | **在基底清單括號內插入空格** | `class X( object ): pass` | `class X(object): pass` |
@@ -50,7 +50,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 <br/>
 
-| 函式定義選項 | 已檢查 | 已清除 |
+| 函式定義選項 | 已核取 | 已清除 |
 | --- | --- | --- |
 | **在函式宣告的名稱與參數清單之間插入空格** | `def X (): pass` | `def X(): pass` |
 | **在參數清單括號內插入空格** | `def X( a, b ): pass` | `def X(a, b): pass` |
@@ -60,14 +60,14 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 <br/>
 
-| 運算子選項 | 已檢查 | 已清除 |
+| 運算子選項 | 已核取 | 已清除 |
 | --- | --- | --- |
 | **在二元運算子前後插入空格** | `a + b` | `a+b` |
 | **在指派前後插入空格** | `a = b` | `a=b` |
 
 <br/>
 
-| 運算式間距選項 | 已檢查 | 已清除 |
+| 運算式間距選項 | 已核取 | 已清除 |
 | --- | --- | --- |
 | **在函式呼叫的名稱與引數清單之間插入空格** | `X ()` | `X()` |
 | **在空白引數清單括號內插入空格** | `X( )` | `X()` |
@@ -109,7 +109,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 ## <a name="fill-comment-paragraph-command"></a>填滿註解段落命令
 
-**編輯** > **高級**+**E** > **P****Ctrl****Fill Comment Paragraph**填充注釋段落 （ Ctrl E P ） 重新流和格式注釋文本，合併短行和分解長行。 > 
+**編輯**  > **Advanced**  > **填滿批註段落** (**Ctrl** + **E**  >  **P**) 重排和格式化註解文字、將短行合併在一起，以及細分較長的行。
 
 例如：
 

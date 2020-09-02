@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 18a50d6d4ef52a0c50be0b72b4cab5706da4e2db
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547039"
 ---
-# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>如何：以程式設計方式在檔中搜尋和取代文字
+# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>如何：以程式設計方式搜尋和取代檔中的文字
   <xref:Microsoft.Office.Interop.Word.Find> 物件是 <xref:Microsoft.Office.Interop.Word.Selection> 和 <xref:Microsoft.Office.Interop.Word.Range> 物件共有的成員，您可以使用這個成員在 Microsoft Office Word 文件中搜尋文字。 取代命令是尋找命令的擴充功能。
 
  使用 <xref:Microsoft.Office.Interop.Word.Find> 物件在 Microsoft Office Word 文件中逐一搜尋特定的文字、格式或樣式，並使用 <xref:Microsoft.Office.Interop.Word.Find.Replacement%2A> 屬性取代任何找到的項目。
@@ -58,7 +58,7 @@ ms.locfileid: "85547039"
    [!code-csharp[Trin_VstcoreWordAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#67)]
 
 ## <a name="use-a-range-object"></a>使用 Range 物件
- 使用 <xref:Microsoft.Office.Interop.Word.Range> 物件可讓您搜尋文字，而不必在使用者介面中顯示任何資訊。 <xref:Microsoft.Office.Interop.Word.Find>如果找到符合搜尋準則的文字，則物件會傳回**True** ，否則會傳回**False** 。 如果找到文字，該方法還會重新定義 <xref:Microsoft.Office.Interop.Word.Range> 物件以符合搜尋準則。
+ 使用 <xref:Microsoft.Office.Interop.Word.Range> 物件可讓您搜尋文字，而不必在使用者介面中顯示任何資訊。 <xref:Microsoft.Office.Interop.Word.Find>如果找到符合搜尋準則的文字，則物件會傳回**True** ，否則傳回**False** 。 如果找到文字，該方法還會重新定義 <xref:Microsoft.Office.Interop.Word.Range> 物件以符合搜尋準則。
 
 ### <a name="to-find-text-using-a-range-object"></a>使用 Range 物件尋找文字
 
@@ -74,7 +74,7 @@ ms.locfileid: "85547039"
     [!code-vb[Trin_VstcoreWordAutomationAddIn#72](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#72)]
     [!code-csharp[Trin_VstcoreWordAutomationAddIn#72](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#72)]
 
-2. 使用 <xref:Microsoft.Office.Interop.Word.Range.Find%2A> 物件的屬性 <xref:Microsoft.Office.Interop.Word.Range> ，先清除任何現有的格式化選項，然後搜尋字串**find me**。
+2. 使用 <xref:Microsoft.Office.Interop.Word.Range.Find%2A> 物件的屬性 <xref:Microsoft.Office.Interop.Word.Range> ，先清除任何現有的格式設定選項，然後搜尋字串 **find me**。
 
     [!code-vb[Trin_VstcoreWordAutomation#73](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#73)]
     [!code-csharp[Trin_VstcoreWordAutomation#73](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#73)]
@@ -96,8 +96,8 @@ ms.locfileid: "85547039"
    [!code-vb[Trin_VstcoreWordAutomationAddIn#71](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#71)]
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#71](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#71)]
 
-## <a name="search-for-and-replace-text-in-documents"></a>在檔中搜尋和取代文字
- 下列程式碼會搜尋目前的選取範圍，並以**找到**的字串來取代所有出現的字串**find me** 。
+## <a name="search-for-and-replace-text-in-documents"></a>搜尋和取代檔中的文字
+ 下列程式碼會搜尋目前的選取範圍，並以**找到**的字串取代所有出現的字串**find me** 。
 
 ### <a name="to-search-for-and-replace-text-in-documents"></a>搜尋和取代文件中的文字
 
@@ -106,9 +106,9 @@ ms.locfileid: "85547039"
      [!code-vb[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#75)]
      [!code-csharp[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#75)]
 
-     <xref:Microsoft.Office.Interop.Word.Find> 類別具有 <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A> 方法，而 <xref:Microsoft.Office.Interop.Word.Replacement> 類別也有自己的 <xref:Microsoft.Office.Interop.Word.Replacement.ClearFormatting%2A> 方法。 當您執行「尋找和取代」作業時，必須使用這兩個物件的 ClearFormatting 方法。 如果您只在 <xref:Microsoft.Office.Interop.Word.Find> 物件上使用它，則可能會在取代文字中得到非預期的結果。
+     <xref:Microsoft.Office.Interop.Word.Find> 類別具有 <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A> 方法，而 <xref:Microsoft.Office.Interop.Word.Replacement> 類別也有自己的 <xref:Microsoft.Office.Interop.Word.Replacement.ClearFormatting%2A> 方法。 當您執行「尋找和取代」作業時，您必須同時使用這兩個物件的 ClearFormatting 方法。 如果您只在 <xref:Microsoft.Office.Interop.Word.Find> 物件上使用它，則可能會在取代文字中得到非預期的結果。
 
-2. 使用 <xref:Microsoft.Office.Interop.Word.Find> 物件的 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 方法取代每一個找到的項目。 若要指定要取代的專案，請使用*replace*參數。 這個參數可以是下列其中一個 <xref:Microsoft.Office.Interop.Word.WdReplace> 值：
+2. 使用 <xref:Microsoft.Office.Interop.Word.Find> 物件的 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 方法取代每一個找到的項目。 若要指定要取代的專案，請使用 *replace* 參數。 這個參數可以是下列其中一個 <xref:Microsoft.Office.Interop.Word.WdReplace> 值：
 
     - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> 會取代所有找到的項目。
 
@@ -118,7 +118,7 @@ ms.locfileid: "85547039"
 
 ## <a name="see-also"></a>另請參閱
 - [如何：以程式設計方式在 Word 中設定搜尋選項](../vsto/how-to-programmatically-set-search-options-in-word.md)
-- [如何：以程式設計方式對檔中找到的專案執行迴圈](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
-- [如何：以程式設計方式在檔中定義及選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [如何：以程式設計方式在搜尋後還原選取範圍](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+- [如何：以程式設計方式在檔中找到的專案之間執行迴圈](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
+- [如何：以程式設計方式定義和選取檔中的範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [如何：以程式設計方式在搜尋後還原選取專案](../vsto/how-to-programmatically-restore-selections-after-searches.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)

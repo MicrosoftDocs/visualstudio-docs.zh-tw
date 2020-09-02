@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a1d3b981002ebefb1644baa580b7f9ecc181cc16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198517"
 ---
-# <a name="idialinenumbergetaddresssection"></a>IDiaLineNumber::get_addressSection
+# <a name="idialinenumberget_addresssection"></a>IDiaLineNumber::get_addressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取區塊的開始位置的記憶體位址的區段部分。  
+抓取區塊開始之記憶體位址的區段部分。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,10 +35,10 @@ HRESULT get_addressSection ( 
   
 #### <a name="parameters"></a>參數  
  pRetVal  
- [out]傳回的記憶體位址的區段部分區塊的開始位置。  
+ 擴展傳回區塊開始之記憶體位址的區段部分。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援這個屬性，則傳回。 否則會傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
   

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 71dc914ef76c512605dbef75de04781459c4929d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198543"
 ---
-# <a name="idiaenumdebugstreamdatagetname"></a>IDiaEnumDebugStreamData::get_name
+# <a name="idiaenumdebugstreamdataget_name"></a>IDiaEnumDebugStreamData::get_name
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取偵錯資料流的名稱。  
+抓取 debug 資料流程的名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,10 +35,10 @@ HRESULT get_Name ( 
   
 #### <a name="parameters"></a>參數  
  pRetVal  
- [out]傳回偵錯資料流的名稱。  
+ 擴展傳回 debug 資料流程的名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

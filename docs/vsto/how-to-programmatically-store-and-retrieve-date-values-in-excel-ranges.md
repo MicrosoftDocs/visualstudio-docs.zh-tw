@@ -1,5 +1,5 @@
 ---
-title: 儲存 & 以程式設計方式取出 Excel 範圍中的日期值
+title: 以程式設計方式在 Excel 範圍中儲存 & 取出日期值
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e4cea02af59b6b6a8457d964bdce802e1e2b2b84
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546961"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>如何：以程式設計方式在 Excel 範圍中儲存和取出日期值
@@ -31,16 +31,16 @@ ms.locfileid: "85546961"
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- 如果您使用 Visual Studio 中的 Office 程式開發工具，來儲存落在範圍1/1/1900 或之後的日期值，則會以 OLE Automation （OA）格式儲存。 您必須使用 <xref:System.DateTime.FromOADate%2A> 方法來取得 OLE Automation （OA）日期的值。 如果日期早于1/1/1900，則會儲存為字串。
+ 如果您使用 Visual Studio 中的 Office 開發工具，將在1/1/1900 或之後的日期值儲存在範圍內，它會儲存為 OLE Automation (OA) 格式。 您必須使用 <xref:System.DateTime.FromOADate%2A> 方法來取得 OLE Automation 的值 (OA) 日期。 如果日期早于1/1/1900，則會儲存為字串。
 
 > [!NOTE]
-> 在1900的前兩個月，Excel 日期與 OLE Automation 日期不同。 如果已核取 [ **1904 日期系統**] 選項，也會有差異。 下列程式碼範例不會解決這些差異。
+> Excel 日期與前兩個月1900的 OLE Automation 日期不同。 如果已核取 [ **1904 日期系統** ] 選項，也有差異。 下列程式碼範例不會解決這些差異。
 
 ## <a name="use-a-namedrange-control"></a>使用 NamedRange 控制項
 
-- 這個範例適用于檔層級自訂。 下列程式碼必須放在工作表類別中，而不是在 `ThisWorkbook` 類別中。
+- 此範例適用于檔層級自訂。 下列程式碼必須放在工作表類別中，而不是在 `ThisWorkbook` 類別中。
 
-### <a name="to-store-a-date-value-in-a-named-range"></a>若要將日期值儲存在已命名的範圍內
+### <a name="to-store-a-date-value-in-a-named-range"></a>若要在命名範圍中儲存日期值
 
 1. <xref:Microsoft.Office.Tools.Excel.NamedRange>在儲存格**A1**上建立控制項。
 
@@ -52,18 +52,18 @@ ms.locfileid: "85546961"
      [!code-csharp[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#51)]
      [!code-vb[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#51)]
 
-### <a name="to-retrieve-a-date-value-from-a-named-range"></a>若要從已命名的範圍取出日期值
+### <a name="to-retrieve-a-date-value-from-a-named-range"></a>從命名範圍中取出日期值
 
-1. 從取出日期值 `NamedRange1` 。
+1. 從取得日期值 `NamedRange1` 。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#52)]
      [!code-vb[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#52)]
 
 ## <a name="use-native-excel-ranges"></a>使用原生 Excel 範圍
 
-### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>若要在原生 Excel 範圍物件中儲存日期值
+### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>在原生 Excel 範圍物件中儲存日期值
 
-1. 建立 <xref:Microsoft.Office.Interop.Excel.Range> 代表儲存格**A1**的。
+1. 建立 <xref:Microsoft.Office.Interop.Excel.Range> 代表儲存格 **A1**的。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#25)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#25)]
@@ -75,7 +75,7 @@ ms.locfileid: "85546961"
 
 ### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>從原生 Excel 範圍物件取出日期值
 
-1. 從取出日期值 `rng` 。
+1. 從取得日期值 `rng` 。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#27)]

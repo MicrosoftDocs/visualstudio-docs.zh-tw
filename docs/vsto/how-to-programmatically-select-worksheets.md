@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6134b23e7b398794529ee43a428ee8b8962ccf38
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547000"
 ---
 # <a name="how-to-programmatically-select-worksheets"></a>如何：以程式設計方式選取工作表
@@ -25,10 +25,10 @@ ms.locfileid: "85547000"
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- 如果您想要選取 VSTO 增益集中的現有工作表，或如果工作表是在檔層級自訂的執行時間建立的，則必須使用 Excel 活頁簿的 Excel 集合來存取它 <xref:Microsoft.Office.Interop.Excel.Sheets> ; 否則，您可以 <xref:Microsoft.Office.Tools.Excel.Worksheet> 直接存取主專案。
+ 如果您想要在 VSTO 增益集中選取現有的工作表，或在執行時間于檔層級自訂中建立工作表，您必須使用 Excel 活頁簿的 Excel 集合來存取該工作表 <xref:Microsoft.Office.Interop.Excel.Sheets> ; 否則，您可以直接存取 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主專案。
 
 ## <a name="use-the-worksheet-host-item"></a>使用工作表主專案
- 在檔層級自訂中，將下列程式碼加入至*Sheet1 .vb*或*Sheet1.cs*。
+ 在檔層級自訂中，將下列程式碼加入至 *Sheet1* 或 *Sheet1.cs*。
 
 ### <a name="to-select-the-first-worksheet-in-a-workbook-using-a-host-item"></a>使用主項目選取活頁簿中的第一個工作表
 

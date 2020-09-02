@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 73270acd97ac4555ade609601d92327235a2f3c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144896"
 ---
 # <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>使用程式碼剖析工具命令列收集 ASP.NET Web 應用程式的並行資料
@@ -30,7 +30,7 @@ ms.locfileid: "68144896"
 |----------|---------------------|  
 |將分析工具附加至執行中的 ASP.NET 應用程式|-   [如何：將分析工具附加至 ASP.NET 應用程式以收集並行資料](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
-## <a name="reference"></a>參考資料  
+## <a name="reference"></a>參考  
  [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)  
   
 ## <a name="related-tasks"></a>相關工作  
@@ -55,5 +55,5 @@ ms.locfileid: "68144896"
   
  [並行視覺化檢視](../profiling/concurrency-visualizer.md)  
   
-## <a name="reference"></a>參考資料  
- [命令列程式碼剖析工具參考](../profiling/command-line-profiling-tools-reference.md)
+## <a name="reference"></a>參考  
+ [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)

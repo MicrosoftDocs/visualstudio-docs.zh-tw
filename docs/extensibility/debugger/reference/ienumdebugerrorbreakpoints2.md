@@ -1,5 +1,5 @@
 ---
-title: IEnum調試錯誤斷點2 |微軟文件
+title: IEnumDebugErrorBreakpoints2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ea841a095964b71e301e966bfd0a10c8f7c0c65d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80716879"
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
-此介面枚舉與掛起斷點關聯的錯誤斷點。
+這個介面會列舉與暫止中斷點相關聯的錯誤中斷點。
 
 ## <a name="syntax"></a>語法
 
@@ -28,32 +28,32 @@ ms.locfileid: "80716879"
 IEnumDebugErrorBreakpoints2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 除錯引擎 (DE) 實現此介面作為其對斷點的支援的一部分。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ Debug engine (DE) 在它支援中斷點的過程中，執行這個介面。
 
-## <a name="notes-for-callers"></a>通話備註
- Visual Studio 呼叫[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)以取得此介面,表示無法綁定的斷點清單,或[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)以取得此介面,表示未綁定的斷點清單。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ Visual Studio 會呼叫 [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) 來取得這個介面，此介面代表無法系結的中斷點清單，或 [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) 來取得這個介面，代表未系結的中斷點清單。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 下表顯示的方法`IEnumDebugErrorBreakpoints2`。
+ 下表顯示的方法 `IEnumDebugErrorBreakpoints2` 。
 
 |方法|描述|
 |------------|-----------------|
-|[下一步](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)|檢索枚舉序列中指定數量的錯誤斷點。|
-|[跳](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-skip.md)|在枚舉序列中跳過指定數量的錯誤斷點。|
-|[重設](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-reset.md)|將枚舉序列重置為開頭。|
-|[複製](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md)|建立與當前枚舉器相同的枚舉狀態的枚舉器。|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount.md)|獲取枚舉器中的錯誤斷點數。|
+|[下一個](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)|抓取列舉順序中指定的錯誤中斷點數目。|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-skip.md)|略過列舉序列中指定的錯誤中斷點數目。|
+|[重設](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-reset.md)|將列舉順序重設為開頭。|
+|[複製](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount.md)|取得列舉值中的錯誤中斷點數目。|
 
 ## <a name="remarks"></a>備註
- 此介面包含[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)介面的清單,每個介面都描述了無法綁定的斷點以及為什麼無法綁定。 Visual Studio`IEnumDebugErrorBreakpoint2`使用該介面更新 IDE 中顯示的斷點。
+ 此介面會保存 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 介面的清單，每個介面都會描述無法系結的中斷點，以及無法系結的原因。 Visual Studio 會使用 `IEnumDebugErrorBreakpoint2` 介面來更新 IDE 中顯示的中斷點。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

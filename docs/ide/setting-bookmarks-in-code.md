@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c62ded0b94db9d39a197dde55fbc77434c5325d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595432"
 ---
 # <a name="set-bookmarks-in-code"></a>在程式碼中設定書籤
 
-您可以使用書籤來標記程式碼行，讓您可以快速地返回到指定位置，或是在位置之間前後移動。 書簽命令和圖示有兩個位置：**書簽視窗**（**查看** > **書簽視窗**）和文字編輯器工具列。
+您可以使用書籤來標記程式碼行，讓您可以快速地返回到指定位置，或是在位置之間前後移動。 書簽命令和圖示可以在兩個位置取得：**書簽視窗** (**視圖**  >  **書簽視窗**) 和文字編輯器工具列。
 
 ![書籤工具列](media/bookmark-toolbar.png)
 
@@ -34,7 +34,7 @@ ms.locfileid: "75595432"
 > [!IMPORTANT]
 > 書籤是設在行號，不是在程式碼。 如果您修改程式碼，書籤保留在行號，而不會隨程式碼移動。
 
-您可以使用書簽視窗中的 **"下一個書簽**"和"**上一個書簽**"按鈕在書簽之間導航。
+您可以使用書簽視窗中的 **[下一個書簽** ] 和 [ **上一個書簽** ] 按鈕，在書簽之間流覽。
 
 您可以選擇書籤視窗中的 [新增資料夾]****，然後將選取的書籤拖曳到新資料夾，以將書籤整理到虛擬資料夾中。
 

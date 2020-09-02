@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67184daeae3b2a50da266e2eb420d5a2ae9896db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198405"
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>使用程式碼剖析工具命令列以收集 .NET Framework 服務的記憶體資料
@@ -49,5 +49,5 @@ ms.locfileid: "68198405"
 ### <a name="analyzing-net-memory-data-views-and-reports"></a>分析 .NET 記憶體資料檢視和報表  
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)  
   
-## <a name="reference"></a>參考資料  
- [命令列程式碼剖析工具參考](../profiling/command-line-profiling-tools-reference.md)
+## <a name="reference"></a>參考  
+ [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)

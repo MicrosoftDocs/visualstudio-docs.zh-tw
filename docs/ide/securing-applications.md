@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87f06746901baaaf14f91032f8968a0d99fc20c2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595445"
 ---
 # <a name="secure-applications"></a>保護應用程式
@@ -45,4 +45,4 @@ ms.locfileid: "75595445"
 - [Windows 10 行動裝置版安全性指南](/windows/security/threat-protection/windows-10-mobile-security-guide)
 - [Apache Cordova 平台安全性功能](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)
 - [ASP.NET Core 安全性](/aspnet/core/security/?view=aspnetcore-2.1)
-- [Windows 表單安全性](/dotnet/framework/winforms/windows-forms-security)
+- [Windows Forms 安全性](/dotnet/framework/winforms/windows-forms-security)
