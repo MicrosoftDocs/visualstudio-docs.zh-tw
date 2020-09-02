@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 66d78988ef70e4f991dd02cb16a164cbf48e55f1
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89176074"
 ---
 # <a name="usage-warnings"></a>用法警告
@@ -27,7 +27,7 @@ ms.locfileid: "89176074"
 
 ## <a name="in-this-section"></a>本節內容
 
-|規則|說明|
+|規則|描述|
 |----------|-----------------|
 |[CA1801:必須檢閱未使用的參數](../code-quality/ca1801.md)|方法簽章包括不用於方法主體中的參數；|
 |[CA1806:不要忽略方法的結果](../code-quality/ca1806.md)|已建立但從未使用新物件、已呼叫會建立並傳回新字串的方法，而新字串從未使用過，或者 COM 或 P/Invoke 方法傳回從未使用的 HRESULT 或錯誤碼。|
@@ -77,4 +77,4 @@ ms.locfileid: "89176074"
 |[CA2246：請勿在相同的陳述式中指派符號及其成員](../code-quality/ca2246.md)|不建議在相同的語句中指派符號及其成員，也就是欄位或屬性。 如果成員存取的目的是要在指派之前使用符號的舊值，或是在此語句中指派新值，則不會很清楚。|
 |[CA2247：傳遞到 TaskCompletionSource 建構函式的引數應為 TaskCreationOptions 列舉，而非 TaskContinuationOptions 列舉](../code-quality/ca2246.md)|>taskcompletionsource 具有可使用 TaskCreationOptions 來控制基礎工作的函式，以及採用儲存在工作中之物件狀態的函式。  不小心傳遞 System.threading.tasks.taskcontinuationoptions> 而非 TaskCreationOptions，會導致呼叫將選項視為狀態。|
 |[CA2248：提供正確的 ' enum ' 引數給 ' Enum. HasFlag '](../code-quality/ca2248.md)|作為引數傳遞至方法呼叫的列舉類型 `HasFlag` ，與呼叫列舉型別不同。|
-|[CA2249：請考慮使用 String。 Contains 而不是 String. IndexOf](../code-quality/ca2249.md)|呼叫 `string.IndexOf` 結果的位置來檢查是否有子字串存在，可由取代 `string.Contains` 。|
+|[CA2249：請考慮使用 String.Contains 而非 String.IndexOf](../code-quality/ca2249.md)|呼叫 `string.IndexOf` 結果的位置來檢查是否有子字串存在，可由取代 `string.Contains` 。|

@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c7c2cb57dc96d7bb0df09248eb7a877820e50521
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302704"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315079"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Visual Studio R 工具選項
 
-通過**R 工具** > **選項**功能表或通過**工具** > **選項**和滾動到**R 工具**訪問設置：
+您可以透過 [ **R 工具**  >  **選項**] 功能表，或透過 [**工具**  >  **選項**] 和 [滾動至**R 工具**] 來存取設定：
 
   ![R 工具的 [選項] 對話方塊](media/options-dialog.png)
 
@@ -33,7 +33,7 @@ ms.locfileid: "79302704"
 - 進階編輯器選項 ([於本文中描述](#text-editor--r--advanced-options))：[工具]**** > [選項]**** 功能表，然後選取 [文字編輯器]**** > [R]**** > [進階]****
 - 行為選項 ([於本文中描述](#r-tools--advanced-options))：[R 工具]**** > [選項]**** 功能表，或 [工具]**** > [選項]****，然後捲動至 [R 工具]****。
 
-**R Tools** > **資料科學設置命令**還影響 Visual Studio 中許多不同的設置。 下一節將描述此命令。
+**R 工具**  >  **資料科學設定**命令也會影響整體 Visual Studio 的許多不同設定。 下一節將描述此命令。
 
 <a name="data-scientist-layout"></a>
 
@@ -43,7 +43,7 @@ ms.locfileid: "79302704"
 
 ![Visual Studio 中的資料科學家視窗版面配置](media/installation-data-scientist-layout-result.png)
 
-要稍後還原到其他 Visual Studio 設置，請首先使用 **"工具** > **導入和匯出設置"** 命令，選擇 **"匯出選定的環境設置**"並指定檔案名。 若要還原這些設定，請使用相同的命令並選取 [匯入選取的環境設定]****。 如果您變更資料科學家版面配置，並稍後想要還原，而不是直接使用 [資料科學設定]**** 命令，則也可以使用相同的命令。
+若要在稍後還原為其他 Visual Studio 設定，請先使用 [**工具**匯  >  **入和匯出設定**] 命令，選取 [**匯出選取的環境設定**]，然後指定檔案名。 若要還原這些設定，請使用相同的命令並選取 [匯入選取的環境設定]****。 如果您變更資料科學家版面配置，並稍後想要還原，而不是直接使用 [資料科學設定]**** 命令，則也可以使用相同的命令。
 
 ## <a name="text-editor--r--advanced-options"></a>[文字編輯器] > [R] > [進階選項]
 
@@ -57,7 +57,7 @@ ms.locfileid: "79302704"
 
 ## <a name="r-tools--advanced-options"></a>[R 工具] > [進階選項]
 
-**"R 工具** > **選項"** 功能表命令將 **"選項"** 對話方塊打開到 R 選項：
+[ **R 工具**  >  **選項**] 功能表命令會開啟 r 選項的 [**選項**] 對話方塊：
 
   ![R 工具的 [選項] 對話方塊](media/options-dialog.png)
 
@@ -82,9 +82,9 @@ ms.locfileid: "79302704"
 
 | 選項 | 預設值 | 描述 |
 | --- | --- | --- |
-| F1 網頁瀏覽器 | `Internal` | 控制使用**Ctrl**+**F1**搜索術語時説明的顯示方式。 設定為 `Internal` 時，說明是呈現在 Visual Studio 的工具視窗內。 設定為 `External` 時，說明會顯示在預設網頁瀏覽器中。 |
-| F1 Web 搜尋字串 | `R site:stackoverflow.com` | 控制在編輯器中按**Ctrl**+**F1**上的字詞時，如何將搜索詞傳遞到搜尋引擎。 字串預設是 `R site:stackoverflow.com`，這是將 `R` 附加至搜尋詞彙。 `site:stackoverflow.com` 是搜尋引擎的指示詞，告知將搜尋範圍設為 `stackoverflow.com` 網域內的頁面。 |
-| R 說明瀏覽器 | `Automatic` | 控制使用**F1** **、？** 或 **？** 搜索 R 文檔時顯示説明的方式。 設定為 `Automatic` 時，說明會呈現在適當的視窗中。 例如，HTML 說明出現在 Visual Studio 工具視窗內，而 PDF 出現在預設 PDF 程式中。 設定為 `External` 時，說明會呈現在預設網頁瀏覽器中。 |
+| F1 網頁瀏覽器 | `Internal` | 控制當您使用**Ctrl**F1 搜尋詞彙時的說明顯示方式 + ** **。 設定為 `Internal` 時，說明是呈現在 Visual Studio 的工具視窗內。 設定為 `External` 時，說明會顯示在預設網頁瀏覽器中。 |
+| F1 Web 搜尋字串 | `R site:stackoverflow.com` | 控制當您在**Ctrl** + 編輯器中的字詞上按 Ctrl**F1**時，如何將搜尋字詞傳遞給搜尋引擎。 字串預設是 `R site:stackoverflow.com`，這是將 `R` 附加至搜尋詞彙。 `site:stackoverflow.com` 是搜尋引擎的指示詞，告知將搜尋範圍設為 `stackoverflow.com` 網域內的頁面。 |
+| R 說明瀏覽器 | `Automatic` | 控制當您使用 **F1**、 **？** 或 **？？** 搜尋 R 檔時的說明顯示方式。 設定為 `Automatic` 時，說明會呈現在適當的視窗中。 例如，HTML 說明出現在 Visual Studio 工具視窗內，而 PDF 出現在預設 PDF 程式中。 設定為 `External` 時，說明會呈現在預設網頁瀏覽器中。 |
 
 ### <a name="history"></a>記錄
 

@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f6e4f5ff4e1081bbbe6aced4465afb40318048a5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285357"
 ---
 # <a name="options-text-editor-javascript-project"></a>選項、文字編輯器、JavaScript、專案
 
-使用 [選項]**** 對話方塊的 [專案]**** 頁面，在程式碼編輯器中指定 JavaScript 和 TypeScript 專案選項。 若要存取此頁面，請在功能表列上選擇 [**工具**] [  >  **選項**]，然後展開 [**文字編輯器**] [  >  **JavaScript/TypeScript**  >  **專案**]。
+使用 [選項]**** 對話方塊的 [專案]**** 頁面，在程式碼編輯器中指定 JavaScript 和 TypeScript 專案選項。 若要存取此頁面，請在功能表列上選擇 [**工具**  >  **選項**]，然後展開 [**文字編輯器**  >  **JavaScript/TypeScript**  >  **專案**]。
 
 ## <a name="project-analysis-options"></a>專案分析選項
 
@@ -40,7 +40,7 @@ ms.locfileid: "85285357"
 
 ## <a name="compile-on-save"></a>儲存時編譯
 
-這些選項會決定是否自動編譯不屬於專案一部分的 TypeScript 檔案。 Visual Studio 使用安裝在*C:\Program Files （x86） \Microsoft SDKs\TypeScript*中的最新 TypeScript 版本進行編譯。
+這些選項會決定是否自動編譯不屬於專案一部分的 TypeScript 檔案。 Visual Studio 使用安裝在 *C:\Program 檔 (x86) \Microsoft SDKs\TypeScript*中的最新 TypeScript 版本進行編譯。
 
 選取該核取方塊，然後選擇要使用的程式碼產生類型。
 
@@ -62,10 +62,10 @@ ms.locfileid: "85285357"
 
 ### <a name="uielement-list"></a>UIElement 清單
 
-|選項|說明|
+|選項|描述|
 |------------|-----------------|
 |**React 架構**|選取此選項後，程式碼編輯器會發出 *.js* 副檔名。|
-|**保留**|選取此選項時，程式碼編輯器會將 JSX 保留為輸出的一部分，並發出 *.jsx* 副檔名。|
+|**保存**|選取此選項時，程式碼編輯器會將 JSX 保留為輸出的一部分，並發出 *.jsx* 副檔名。|
 
 ## <a name="see-also"></a>另請參閱
 

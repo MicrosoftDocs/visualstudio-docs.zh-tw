@@ -10,31 +10,31 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c27d2b4436fc5defedcda44c4f7840760018ade
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188536"
 ---
-# <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>在 Visual Studio 中使用偵錯工具視窗檢查資料
+# <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>使用 Visual Studio 中的偵錯工具視窗檢查資料
 
-您可以在偵錯程式時開啟大部分偵錯工具視窗。 若要查看偵錯工具視窗的清單，請設定中斷點並開始偵錯。 當您叫用中斷點且執行停止時，按一下 [偵錯] > [Windows]。
+您可以在偵錯程式時開啟大部分偵錯工具視窗。 若要查看偵錯工具視窗的清單，請設定中斷點並開始偵錯。 當您叫用中斷點且執行停止時，按一下 [偵錯] > [Windows]****。
 
-|視窗|熱鍵|請參閱主題|
+|時間範圍|熱鍵|請參閱主題|
 |-|-|-|
 |中斷點|CTRL+ALT+B|[使用中斷點](../debugger/using-breakpoints.md)|
 |例外狀況設定|CTRL+ALT+E|[使用偵錯工具管理例外狀況](../debugger/managing-exceptions-with-the-debugger.md)|
-|Output|CTRL+ALT+O|[輸出視窗](../ide/reference/output-window.md)|
+|輸出|CTRL+ALT+O|[輸出視窗](../ide/reference/output-window.md)|
 |監看式|CTRL+ALT+W, (1, 2, 3, 4)|[監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)|
-|快速監看式|SHIFT+F9|[監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)|
-|自動|CTRL+ALT+V, A|[[自動變數] 和 [區域變數] 視窗](../debugger/autos-and-locals-windows.md)|
-|本機|CTRL+ALT+V, L|[[自動變數] 和 [區域變數] 視窗](../debugger/autos-and-locals-windows.md)|
+|QuickWatch|SHIFT+F9|[監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)|
+|自動|CTRL+ALT+V、A|[[自動變數] 和 [區域變數] 視窗](../debugger/autos-and-locals-windows.md)|
+|本機|CTRL+ALT+V、L|[[自動變數] 和 [區域變數] 視窗](../debugger/autos-and-locals-windows.md)|
 |呼叫堆疊|CTRL+ALT+C|[如何：使用呼叫堆疊視窗](../debugger/how-to-use-the-call-stack-window.md)|
-|即時運算|CTRL+ALT+I|[即時運算視窗](../ide/reference/immediate-window.md)|
+|立即|CTRL+ALT+I|[即時運算視窗](../ide/reference/immediate-window.md)|
 |平行堆疊|CTR:+SHIFT+D, S|[使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md)|
-|平行監看式|CTR:+SHIFT+D, (1, 2, 3, 4)|[開始對多執行緒應用程式進行偵錯](../debugger/get-started-debugging-multithreaded-apps.md)|
-|執行緒|CTRL+ALT+H|[使用執行緒視窗進行偵錯](../debugger/how-to-use-the-threads-window.md)|
-|模組|CTRL+ALT+U|[如何：使用模組視窗](../debugger/how-to-use-the-modules-window.md)|
+|平行監看式|CTR:+SHIFT+D, (1, 2, 3, 4)|[開始調試多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)|
+|Threads|CTRL+ALT+H|[使用執行緒視窗進行調試](../debugger/how-to-use-the-threads-window.md)|
+|單元|CTRL+ALT+U|[如何：使用模組視窗](../debugger/how-to-use-the-modules-window.md)|
 |GPU 執行緒|-|[如何：使用 GPU 執行緒視窗](../debugger/how-to-use-the-gpu-threads-window.md)|
 |工作|CTR:+SHIFT+D, K|[使用工作視窗](../debugger/using-the-tasks-window.md)|
 |Python 互動式偵錯|SHIFT+ALT+I|[Python 互動式 REPL](../python/python-interactive-repl-in-visual-studio.md)|
@@ -47,6 +47,6 @@ ms.locfileid: "73188536"
 |反組譯碼|CTRL+ALT+D|[如何：使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)|
 |暫存器|CTRL+ALT+G|[如何：使用暫存器視窗](../debugger/how-to-use-the-registers-window.md)|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [偵錯工具簡介](../debugger/debugger-feature-tour.md)

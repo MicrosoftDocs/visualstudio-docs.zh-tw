@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用 GetGlobalService |Microsoft Docs
+title: 如何：使用 GetGlobalService |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -10,35 +10,35 @@ ms.assetid: 4cdf5ab5-9f09-4caf-9011-2dcb2c62f1b7
 caps.latest.revision: 14
 manager: jillfra
 ms.openlocfilehash: 1c1fb48e4bb354ef403b39b0f1320ead92f43967
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62948178"
 ---
-# <a name="how-to-use-getglobalservice"></a>HOW TO：使用 GetGlobalService
-有時候您可能需要從 工具視窗取得服務或控制未設置，否則就不知道您想要的服務的服務提供者已決定位置的容器。 比方說，您可能要從控制項內的活動記錄檔寫入。 如需有關這些和其他案例的詳細資訊，請參閱[How to:疑難排解服務](../extensibility/how-to-troubleshoot-services.md)。  
+# <a name="how-to-use-getglobalservice"></a>如何：使用 GetGlobalService
+有時，您可能需要從尚未放置的工具視窗或控制項容器取得服務，或使用其他服務提供者不知道您想要的服務。 例如，您可能想要從控制項內寫入活動記錄。 如需有關這些案例和其他案例的詳細資訊，請參閱 [如何：針對服務進行疑難排解](../extensibility/how-to-troubleshoot-services.md)。  
   
- 您可以取得大部分[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]服務，藉由呼叫靜態<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法。  
+ 您可以藉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 由呼叫靜態方法來取得大部分的服務 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 。  
   
- <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 會初始化任何 VSPackage 衍生自第一次的快取的服務提供者會依賴<xref:Microsoft.VisualStudio.Shell.Package>設置。 您必須保證，這種情況成立，否則備妥以空值的服務。  
+ <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 依賴快取的服務提供者，其會在第一次衍生自的任何 VSPackage 時初始化 <xref:Microsoft.VisualStudio.Shell.Package> 。 您必須保證符合此條件，或為 null 服務做好準備。  
   
- 幸運的是，<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>適用於大部分的情況。  
+ 幸運的 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 是，大部分的時間都能正常運作。  
   
-- 如果 VSPackage 提供另一個 VSPackage 才知道的服務，服務要求 VSPackage 設置之前 VSPackage 提供已載入該服務。  
+- 如果 VSPackage 提供僅知道另一個 VSPackage 的服務，則要求服務的 VSPackage 會在載入服務的 VSPackage 之前放置。  
   
-- 如果 VSPackage 建立工具視窗時，建立工具視窗之前設置 VSPackage。  
+- 如果工具視窗是由 VSPackage 所建立，則 VSPackage 會在建立工具視窗之前放置。  
   
-- 如果控制項容器由建立 VSPackage 的工具視窗，在建立控制項容器之前設置 VSPackage。  
+- 如果控制項容器是由 VSPackage 所建立的工具視窗所主控，則 VSPackage 會在建立控制項容器之前放置。  
   
-### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>若要取得的工具視窗或控制項的容器內的服務  
+### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>從工具視窗或控制項容器內取得服務  
   
-- 插入此程式碼中建構函式、 工具視窗或控制項容器：  
+- 在 [函式]、[工具視窗] 或 [控制項容器] 中插入此程式碼：  
   
      [!code-csharp[UseGetGlobalService#1](../snippets/csharp/VS_Snippets_VSSDK/usegetglobalservice/cs/getglobalservicepackage.cs#1)]
      [!code-vb[UseGetGlobalService#1](../snippets/visualbasic/VS_Snippets_VSSDK/usegetglobalservice/vb/getglobalservicepackage.vb#1)]  
   
-     此程式碼會取得 SVsActivityLog 服務，並將它轉換成<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>介面，可用來寫入活動記錄檔。 如需範例，請參閱[如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
+     這段程式碼會取得 SVsActivityLog 服務，並將它轉換成 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> 介面，可用來寫入活動記錄。 如需範例，請參閱 [如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：針對服務進行疑難排解](../extensibility/how-to-troubleshoot-services.md)   

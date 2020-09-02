@@ -7,17 +7,17 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: f547662278d2ae01660312aff2708970a0a9300a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79301710"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315001"
 ---
 # <a name="customizing-the-ide"></a>自訂 IDE
 
 Visual Studio for Mac 可以使用各種方式加以自訂，讓使用者能夠在效率與審美方面符合其需求的環境中開發應用程式。 本文章探討 Visual Studio for Mac 可調整以符合您需求的各種方式。
 
-## <a name="dark-theme"></a>暗色調佈景主題
+## <a name="dark-theme"></a>深色佈景主題
 
 ![暗色調佈景主題檢視](media/customizing-the-ide-image7a.png)
 
@@ -60,7 +60,7 @@ Visual Studio for Mac 以下列 14 種語言進行當地語系化，使它可供
 
 填入的 [名稱]**** 和 [電子郵件]**** 欄位將在透過 Visual Studio for Mac 中的版本控制進行的任何認可中使用。 如果未填入這些欄位，Visual Studio for Mac 會在您嘗試使用版本控制時提示您這樣做。
 
-## <a name="key-bindings"></a>按鍵繫結關係
+## <a name="key-bindings"></a>按鍵繫結
 
 按鍵繫結可讓您調整您的開發環境，以便能夠在 Visual Studio for Mac 中更有效率地行動。 它提供許多熱門 IDE 的常見按鍵繫結，例如 Visual Studio (在 Windows 上)、ReSharper、Visual Studio Code 和 Xcode。
 

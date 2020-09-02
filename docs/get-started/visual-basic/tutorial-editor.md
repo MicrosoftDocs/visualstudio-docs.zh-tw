@@ -13,15 +13,15 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: c46120c369fa130e83620549ca0bc084a5075f7f
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235143"
 ---
-# <a name="learn-to-use-the-code-editor-with-visual-basic"></a>瞭解如何搭配使用程式碼編輯器與 Visual Basic
+# <a name="learn-to-use-the-code-editor-with-visual-basic"></a>瞭解如何使用程式碼編輯器搭配 Visual Basic
 
-在這段10分鐘的 Visual Studio 程式碼編輯器中，我們會將程式碼新增至檔案，以查看 Visual Studio 讓撰寫、流覽及瞭解 Visual Basic 程式碼更輕鬆的一些方式。
+在這段10分鐘的程式碼 Visual Studio 編輯器簡介中，我們會將程式碼新增至檔案，以查看 Visual Studio 讓撰寫、流覽和瞭解 Visual Basic 程式碼更容易的一些方式。
 
 ::: moniker range="vs-2017"
 
@@ -80,7 +80,7 @@ Visual Studio 提供實用的「程式碼片段」**，讓您可以用來快速�
 
    Sub 程序 `MySub()` 的大綱會新增至檔案。
 
-可用的程式碼片段會因不同的程式設計語言而異。 您可以選擇 [**編輯**] [IntelliSense] [  >  **IntelliSense**  >  **插入程式碼片段**] （或按**ctrl** + **K**、 **ctrl** + **X**）來查看 Visual Basic 的可用程式碼片段。 Visual Basic 的程式碼片段可分為下列類別：
+可用的程式碼片段會因不同的程式設計語言而異。 您可以選擇 [**編輯**  >  **IntelliSense**  >  **插入程式碼片段** (]，或按**ctrl** + **K**、 **ctrl** + **X**) ，查看 Visual Basic 的可用程式碼片段。 Visual Basic 的程式碼片段可分為下列類別：
 
 ![Visual Basic 程式碼片段清單](media/tutorial-code-snippet-list.png)
 
@@ -88,7 +88,7 @@ Visual Studio 提供實用的「程式碼片段」**，讓您可以用來快速�
 
 ## <a name="comment-out-code"></a>註解化程式碼
 
-工具列是 Visual Studio 功能表列下的按鈕列，有助您提高撰寫程式碼的效率。 例如，您可以切換 IntelliSense 完成模式、增加或減少行縮排，也可以為不要編譯的程式碼加上註解 （[IntelliSense](../../ide/using-intellisense.md)是一種程式碼撰寫輔助工具，可顯示與其他專案相符的方法清單。）在本節中，我們會將一些程式碼標記為批註。
+工具列是 Visual Studio 功能表列下的按鈕列，有助您提高撰寫程式碼的效率。 例如，您可以切換 IntelliSense 完成模式、增加或減少行縮排，也可以為不要編譯的程式碼加上註解  ([IntelliSense](../../ide/using-intellisense.md) 是一種程式碼撰寫輔助工具，可顯示相符方法的清單 ) 。在本節中，我們會將某些程式碼標記為批註。
 
 ![編輯器工具列按鈕](media/tutorial-editor-toolbar.png)
 
@@ -116,7 +116,7 @@ Visual Studio 提供實用的「程式碼片段」**，讓您可以用來快速�
                Select word
    ```
 
-1. 我們目前不會使用 `morewords` 陣列，但之後可能會用到，所以我們不想要完全將其刪除。 相反地，請將這些行註解化。 選取 `morewords` 的整個定義，直到右大括弧為止，然後選擇工具列上的 [註解選取行]**** 按鈕。 如果您想要使用鍵盤，請按**ctrl** + **K**、 **ctrl** + **C**。
+1. 我們目前不會使用 `morewords` 陣列，但之後可能會用到，所以我們不想要完全將其刪除。 相反地，請將這些行註解化。 選取 `morewords` 的整個定義，直到右大括弧為止，然後選擇工具列上的 [註解選取行]**** 按鈕。 如果您想要使用鍵盤，請按下**ctrl** + **K**、 **ctrl** + **C**。
 
    ![註解化按鈕](media/tutorial-comment-out.png)
 
@@ -124,15 +124,15 @@ Visual Studio 提供實用的「程式碼片段」**，讓您可以用來快速�
 
 ## <a name="collapse-code-blocks"></a>摺疊程式碼區塊
 
-您可以摺疊程式碼區段，只著重於您感興趣的一部分。 若要練習，請將 `_words` 陣列摺疊成一行程式碼。 選擇 `Dim _words = New String() {` 行邊緣中其內有減號的小型灰色方塊。 或者，如果您是鍵盤使用者，請將游標放在陣列定義中的任何位置，然後按**ctrl** + **m**、 **ctrl** + **m**。
+您可以摺疊程式碼區段，只著重於您感興趣的一部分。 若要練習，請將 `_words` 陣列摺疊成一行程式碼。 選擇 `Dim _words = New String() {` 行邊緣中其內有減號的小型灰色方塊。 或者，如果您是鍵盤使用者，請將游標放在陣列定義中的任意位置，然後按**ctrl** + **m**、 **ctrl** + **m**。
 
 ![大綱摺疊按鈕](media/tutorial-collapse.png)
 
-程式碼區塊只會摺疊到第一行，並且後面接著省略符號 (`...`)。 若要再次展開程式碼區塊，請按一下現在具有加號的相同灰色方塊，或再次按**ctrl** + **m**、 **ctrl** + **m** 。 這項功能稱為[大綱](../../ide/outlining.md)，在折迭較長的方法或整個類別時特別有用。
+程式碼區塊只會摺疊到第一行，並且後面接著省略符號 (`...`)。 若要再次展開程式碼區塊，請按一下現在具有加號的相同灰色方塊，或再次按下**ctrl** + **m**、 **ctrl** + **m** 。 這項功能稱為「 [大綱](../../ide/outlining.md) 」，當您要折迭較長的方法或整個類別時，這項功能特別有用。
 
 ## <a name="view-symbol-definitions"></a>檢視符號定義
 
-Visual Studio 編輯器可讓您輕鬆檢查類型、方法等的定義。其中一種方式是流覽至包含定義的檔案，例如，在參考符號的任何位置選擇 [**移至定義**]。 不會將焦點移離所處理檔案的較快速方式是使用[查看定義](../../ide/go-to-and-peek-definition.md#peek-definition)。 讓我們查看 `String` 類型的定義。
+Visual Studio 編輯器可讓您輕鬆檢查類型、方法等的定義。其中一種方式是導覽至包含定義的檔案，例如，在參考符號的任何位置選擇 [ **移至定義** ]。 不會將焦點移離所處理檔案的較快速方式是使用[查看定義](../../ide/go-to-and-peek-definition.md#peek-definition)。 讓我們查看 `String` 類型的定義。
 
 1. 以滑鼠右鍵按一下 `String` 一字，然後從操作功能表選擇 [查看定義]****。 或者，按**Alt** + **F12**。
 

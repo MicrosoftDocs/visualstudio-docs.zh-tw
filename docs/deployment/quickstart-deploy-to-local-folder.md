@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: da13cb2b249146c7a29abbab03b66f77594abf4b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285398"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>使用 Visual Studio 將應用程式部署到本機資料夾
@@ -30,21 +30,21 @@ ms.locfileid: "85285398"
 
 1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]**** (或使用 [建置]**** > [發行]**** 功能表項目)。
 
-    ![[專案] 內容功能表上的 [發佈] 命令方案總管](../deployment/media/quickstart-publish.png "選擇 [發行]")
+    ![方案總管的專案內容功能表上的 [發行] 命令](../deployment/media/quickstart-publish.png "選擇 [發行]")
 
-1. 在 [**發行**] 對話方塊中，選取 [**資料夾**]。
+1. 在 [ **發行** ] 對話方塊中，選取 [ **資料夾**]。
 
-    ![選擇資料夾作為發佈目標](../deployment/media/quickstart-publish-folder-new.png "選擇資料夾")
+    ![選擇資料夾做為發佈目標](../deployment/media/quickstart-publish-folder-new.png "選擇資料夾")
 
-1. 輸入路徑，或選取 **[流覽]** 以指定資料夾。
+1. 輸入路徑或選取 **[流覽]** 以指定資料夾。
 
     ![指定資料夾的路徑](../deployment/media/quickstart-publish-folder-path.png "選擇資料夾")
 
-1. 選取 [發佈] 。 Visual Studio 會建置專案，並將其發行至指定的資料夾。 專案屬性 [發行]**** 窗格隨即出現，並顯示設定檔摘要。
+1. 選取 [發佈]。 Visual Studio 會建置專案，並將其發行至指定的資料夾。 專案屬性 [發行]**** 窗格隨即出現，並顯示設定檔摘要。
 
     ![顯示設定檔摘要的 [發行] 屬性窗格](../deployment/media/quickstart-publish-folder-summary.png)
 
-1. 若要設定部署設定，請選取發行設定檔摘要中的 [**編輯**]，然後選取 [**設定**] 索引標籤。
+1. 若要設定部署設定，請選取發行設定檔摘要中的 [ **編輯** ]，然後選取 [ **設定** ] 索引標籤。
 
     ![設定檔設定](../deployment/media/quickstart-profile-settings.png "設定檔設定")
 

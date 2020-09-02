@@ -1,5 +1,5 @@
 ---
-title: 在 C# 的完成清單 |Microsoft Docs
+title: 'C # 中的完成清單 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -13,15 +13,15 @@ author: BillWagner
 ms.author: wiwagn
 manager: jillfra
 ms.openlocfilehash: a9806a5f092ab4924533f67c22d0adf78b99fb8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62946774"
 ---
-# <a name="completion-lists-in-c"></a>在 C 中的完成清單\#
+# <a name="completion-lists-in-c"></a>C 中的完成清單\#
 
-本內容已移至[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)
+此內容已移至 [Visual c # IntelliSense](../ide/visual-csharp-intellisense.md)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)
+- [Visual c # 程式碼片段](../ide/visual-csharp-code-snippets.md)

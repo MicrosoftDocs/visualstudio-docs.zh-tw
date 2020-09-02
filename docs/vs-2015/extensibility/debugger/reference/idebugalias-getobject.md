@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetObject |Microsoft Docs
+title: IDebugAlias：： GetObject |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bced4d6ea45cc33c3811e42428aa43c334b7b83b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187227"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得這個別名所針對的物件。  
+取得此別名適用的物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,10 +40,10 @@ int GetObject(
   
 #### <a name="parameters"></a>參數  
  `ppObject`  
- [out][IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)代表此別名。  
+ 擴展此別名所代表的 [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) 。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)   

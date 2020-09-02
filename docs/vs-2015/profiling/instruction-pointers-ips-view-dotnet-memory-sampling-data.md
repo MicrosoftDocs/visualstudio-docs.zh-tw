@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd06bc09114785c4359d05e3cda70c3ce7646c9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143685"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>指令指標 (IP) 檢視 - .NET 記憶體取樣資料
@@ -25,16 +25,16 @@ ms.locfileid: "68143685"
   
  只會列出專有值。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
-|**處理序 ID**|分析執行的處理序 ID (PID)。|  
-|**處理序名稱**|處理序的名稱。|  
+|**處理序識別碼**|分析執行的處理序 ID (PID)。|  
+|**進程名稱**|處理序的名稱。|  
 |**模組名稱**|包含該指令的模組名稱。|  
 |**模組路徑**|包含該指令的模組路徑。|  
-|**原始程式檔**|包含此指令的原始程式檔。|  
-|**函式名稱**|函式的名稱。|  
+|**來源檔案**|包含此指令的原始程式檔。|  
+|**函數名稱**|函式的名稱。|  
 |**函式行號**|原始程式檔中這個函式的開頭行號。|  
-|**函式位址**|函式的開始位址。|  
+|**函數位址**|函式的開始位址。|  
 |**原始程式碼開頭行**|發生配置的原始程式檔中的起始行號。|  
 |**原始程式碼結尾行**|發生配置的原始程式檔中的結尾行號。|  
 |**原始程式碼開頭字元**|發生配置的原始程式檔行中，起始字元的位移。|  

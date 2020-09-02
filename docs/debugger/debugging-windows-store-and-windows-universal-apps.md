@@ -1,5 +1,5 @@
 ---
-title: 對 UWP 應用程式進行 Debug |Microsoft Docs
+title: Debug UWP 應用程式 |Microsoft Docs
 ms.custom: ''
 ms.date: 10/22/2019
 ms.topic: conceptual
@@ -14,23 +14,23 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 73b9b78be6a6325a422c945db8c51caa7a11b487
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188262"
 ---
-# <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>在 Visual Studio 中，將通用 Windows 應用程式（UWP）進行調試
+# <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>在 Visual Studio 中將通用 Windows 應用程式 (UWP) 進行偵錯工具
 
-Visual Studio 偵錯工具會提供對 UWP 應用程式的完整支援。 請參閱下列適用于 UWP debug 工作的文章。
+Visual Studio 偵錯工具提供對 UWP 應用程式的完整支援。 請參閱下列適用于 UWP debug 工作的文章。
 
-|Debug 工作|文件|
+|Debug 工作|發行項|
 |-|-|
-|在本機電腦、遠端或已連線的裝置，或應用程式模擬器上執行 UWP 應用程式。|[開始 UWP app 的偵錯工作階段](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|
-|針對本機和遠端的已部署應用程式進行 Debug。|[對已安裝的應用程式套件進行偵錯](../debugger/debug-installed-app-package.md)|
-| [撰寫和執行 XAML 程式碼的偵錯工具](../xaml-tools/xaml-hot-reload.md) | 您可以使用 XAML 熱重載來流覽 UWP XAML 物件的視覺化樹狀結構，並在該樹狀結構中查看物件的相依性屬性。 本主題描述如何使用 XAML 熱重載。 |
-| [在偵錯時檢查 XAML 屬性](../xaml-tools/xaml-hot-reload.md) | 您可以使用 [即時視覺化樹狀結構] 流覽 UWP XAML 物件的視覺化樹狀結構，並在該樹狀結構中查看物件的相依性屬性。 |
-|分析 ContentPrefetcher 類別對 UWP 應用程式的影響。|[UWP 應用程式的預先提取內容](../debugger/prefetch-content-for-windows-store-apps.md)|
+|在本機電腦、遠端或連線的裝置或應用程式模擬器上執行 UWP 應用程式。|[啟動 UWP 應用程式 的偵錯工作階段](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|
+|將已部署的應用程式（本機和遠端）進行 Debug 錯。|[對已安裝的應用程式套件進行偵錯](../debugger/debug-installed-app-package.md)|
+| [撰寫 XAML 程式碼及針對其執行進行偵錯](../xaml-tools/xaml-hot-reload.md) | 您可以使用 XAML 熱重新載入探索 UWP XAML 物件的視覺化樹狀結構，並查看該樹狀結構中物件的相依性屬性。 本主題說明如何使用 XAML 熱重新載入。 |
+| [在偵錯時檢查 XAML 屬性](../xaml-tools/xaml-hot-reload.md) | 您可以使用 [即時視覺化樹狀] 來探索 UWP XAML 物件的視覺化樹狀結構，並查看該樹狀結構中物件的相依性屬性。 |
+|分析 UWP 應用程式的 ContentPrefetcher 類別效果。|[UWP 應用程式的預先提取內容](../debugger/prefetch-content-for-windows-store-apps.md)|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [使用靜態程式碼分析來分析程式碼品質](../code-quality/code-analysis-for-managed-code-overview.md)

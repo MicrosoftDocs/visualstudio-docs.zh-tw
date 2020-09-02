@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a6a72d1093bc8acd9aae788ff357aee2efeb9e52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197627"
 ---
 # <a name="datakind"></a>DataKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-指出特定資料值的範圍。  
+表示資料值的特定範圍。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,7 +42,7 @@ enum DataKind { 
 };  
 ```  
   
-## <a name="elements"></a>項目  
+## <a name="elements"></a>元素  
  DataIsUnknown  
  無法判斷資料符號。  
   
@@ -53,13 +53,13 @@ enum DataKind { 
  資料項目是靜態區域變數。  
   
  DataIsParam  
- 資料項目是型式參數。  
+ 資料項目是正式參數。  
   
  DataIsObjectPtr  
- 資料的項目就是物件指標 (`this`)。  
+ 資料項目是 () 的物件指標 `this` 。  
   
  DataIsFileStatic  
- 資料的項目是檔案範圍的變數。  
+ 資料項目是檔案範圍變數。  
   
  DataIsGlobal  
  資料項目是全域變數。  
@@ -68,16 +68,16 @@ enum DataKind { 
  資料項目是物件成員變數。  
   
  DataIsStaticMember  
- 資料項目是類別的靜態變數。  
+ 資料項目是類別靜態變數。  
   
  DataIsConstant  
  資料項目是常數值。  
   
 ## <a name="remarks"></a>備註  
- 傳回這個列舉型別中的值[idiasymbol:: Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)方法。  
+ [IDiaSymbol：： get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)方法會傳回這個列舉中的值。  
   
 ## <a name="requirements"></a>需求  
- 標頭： cvconst.h  
+ 標頭： cvconst。h  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4df2fafb523d04a8ec222b10e1ac9ed3aa95454d
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73187926"
 ---
 # <a name="graphics-diagnostics-examples"></a>圖形診斷範例
@@ -26,7 +26,7 @@ ms.locfileid: "73187926"
 - [逐步解說：以程式設計方式擷取圖形資訊](walkthrough-capturing-graphics-information-programmatically.md)
 
 ## <a name="use-graphics-diagnostics-with-an-arm-based-device"></a>搭配 ARM 裝置使用圖形診斷
- 您可以使用圖形診斷，透過遠端偵錯來偵錯 ARM 裝置上的 Direct3D 應用程式。 如需詳細資訊，請參閱[如何：搭配 ARM 裝置使用圖形診斷](graphics-diagnostics-examples.md)。
+ 您可以使用圖形診斷，透過遠端偵錯來偵錯 ARM 裝置上的 Direct3D 應用程式。 如需詳細資訊，請參閱 [如何：搭配使用圖形診斷與 ARM 裝置](graphics-diagnostics-examples.md)。
 
 ## <a name="playing-back-graphics-information"></a>播放圖形資訊
  在您從執行中應用程式擷取圖形資訊之後，就可以播放擷取的事件以診斷呈現問題。 若要播放，您可以使用開發電腦，也可以使用您所連接的遠端電腦或裝置。 如需詳細資訊，請參閱 [如何：變更圖形診斷播放電腦](how-to-change-the-graphics-diagnostics-playback-machine.md)。
@@ -38,7 +38,7 @@ ms.locfileid: "73187926"
 
 - [逐步解說：因裝置狀態而遺漏的物件](walkthrough-missing-objects-due-to-device-state.md)
 
-- [逐步解說：因端點著色而遺漏的物件](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [逐步解說：因頂點著色而遺漏的物件](walkthrough-missing-objects-due-to-vertex-shading.md)
 
 - [逐步解說：因管線設定錯誤而遺漏的物件](walkthrough-missing-objects-due-to-misconfigured-pipeline.md)
 
@@ -47,7 +47,7 @@ ms.locfileid: "73187926"
 
  以下情節示範如何使用圖形診斷，追蹤由次要的著色器 Bug 造成的較容易察覺的呈現問題：
 
-- [逐步解說：偵錯因著色而產生的顯示錯誤](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [逐步解說：對因著色而產生的顯示錯誤進行偵錯](walkthrough-debugging-rendering-errors-due-to-shading.md)
 
 ## <a name="debugging-compute-shaders"></a>偵錯計算著色器
  您可以使用圖形診斷，偵錯產生錯誤結果的 DirectCompute 計算著色器核心。 您可以透過 DirectCompute，使用 GPU 的計算能力來平行執行大量資料項目的計算。 針對特定類型的問題，利用 GPU 的執行速度甚至可能比最佳化的 CPU 程式碼還要快數倍。 不過，傳統偵錯工具偵測不到在 GPU 上執行的程式碼。 偵錯這類程式碼需要特定的工具，而這些特定工具通常是廠商特有的，而且可能未與 Visual Studio 有良好的整合。 為了讓計算著色器在某個 GPU 範圍之間進行更一致的偵錯，圖形診斷會擷取 DirectCompute 分派事件 (除了 Direct3D 呈現事件之外)，讓您可以使用熟悉的工具來偵錯計算著色器程式碼中的問題。

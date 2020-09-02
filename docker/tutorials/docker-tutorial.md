@@ -11,10 +11,10 @@ ms.workload:
 - azure
 next_page: app.md
 ms.openlocfilehash: 9961810ad408a384db46439235b0b7acab325062
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89178247"
 ---
 # <a name="tutorial-get-started-with-docker"></a>教學課程：開始使用 Docker

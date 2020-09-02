@@ -8,10 +8,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 16020c0928229c80a9eb33b3bc4804b004d9f432
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816003"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：撰寫 C++ DLL 的單元測試
@@ -34,12 +34,12 @@ ms.locfileid: "85816003"
 
 8. [將單元與外部資源隔離](using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)。 一般而言，DLL 相依於您開發之系統的其他元件，例如其他 DLL、資料庫或遠端子系統。 將每個單元與其相依性隔離，進行獨立測試會很有用。 外部元件可能會使測試執行速度變慢。 在開發期間，其他元件可能並不完整。
 
-## <a name="create-a-native-unit-test-project"></a><a name="create_test_project"></a>建立原生單元測試專案
+## <a name="create-a-native-unit-test-project"></a><a name="create_test_project"></a> 建立原生單元測試專案
 
 1. 在 [檔案]**** 功能表上，依序選擇 [新增]**** 和 [專案] > ****。
 
-     **Visual Studio 2017 和更早版本**：展開 [**已安裝**  >  的**範本**]  >  **Visual C++**  >  **測試**]。
-     **Visual Studio 2019**：將**語言**設定為 c + +，並在搜尋方塊中輸入 "test"。
+     **Visual Studio 2017 及更早版本**：展開 [**已安裝**  >  的**範本**]  >  **Visual C++**  >  **測試**]。
+     **Visual Studio 2019**：將 **Language** 設定為 c + +，並在搜尋方塊中輸入 "test"。
 
      選擇 [原生單元測試專案]**** 範本，或您偏好的任何已安裝架構。 如果您選擇其他範本 (例如 Google Test 或 Boost.Test)，基本原則相同，但有些細節則不同。
 
@@ -82,13 +82,13 @@ ms.locfileid: "85816003"
 
          ![[單元測試總管] 中有一個測試成功](../test/media/utecpp04.png)
 
-## <a name="create-a-dll-project"></a><a name="create_dll_project"></a>建立 DLL 專案
+## <a name="create-a-dll-project"></a><a name="create_dll_project"></a> 建立 DLL 專案
 
 ::: moniker range="vs-2019"
 
 下列步驟會示範如何在 Visual Studio 2019 中建立 DLL 專案。
 
-1. 使用**Windows 桌面 Wizard**建立 c + + 專案：以滑鼠右鍵按一下**方案總管**中的方案名稱，然後選擇 [**加入**  >  **新專案**]。 將 [語言]**** 設為 C++，然後在搜尋方塊中鍵入 "windows"。 從結果清單中選擇 [Windows 傳統式精靈]****。
+1. 使用**Windows Desktop Wizard**建立 c + + 專案：以滑鼠右鍵按一下**方案總管**中的方案名稱，然後選擇 [**加入**  >  **新專案**]。 將 [語言]**** 設為 C++，然後在搜尋方塊中鍵入 "windows"。 從結果清單中選擇 [Windows 傳統式精靈]****。
 
      在此逐步解說中，專案名為 `RootFinder`。
 
@@ -148,7 +148,7 @@ ms.locfileid: "85816003"
 
 ::: moniker-end
 
-## <a name="couple-the-test-project-to-the-dll-project"></a><a name="make_functions_visible"></a>將測試專案與 DLL 專案結合
+## <a name="couple-the-test-project-to-the-dll-project"></a><a name="make_functions_visible"></a> 將測試專案結合至 DLL 專案
 
 1. 將 DLL 專案加入測試專案的專案參考中：
 
@@ -194,7 +194,7 @@ ms.locfileid: "85816003"
 
    您已經設定測試和程式碼專案，並確認您可以執行在程式碼專案中執行函式的測試。 現在您可以開始撰寫真正的測試和程式碼。
 
-## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a>反復擴充測試並使其通過
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> 反復增強測試並使其通過
 
 1. 加入新的測試：
 
@@ -243,7 +243,7 @@ ms.locfileid: "85816003"
     }
     ```
 
-4. 建立方案，然後在 [**測試瀏覽器**] 中選擇 [**全部執行**]。
+4. 建立方案，然後在 [ **Test Explorer**] 中選擇 [ **全部執行**]。
 
      這兩個測試都通過。
 
@@ -252,7 +252,7 @@ ms.locfileid: "85816003"
     > [!TIP]
     > 開發程式碼時，一次加入一個測試。 確定所有測試在每次反覆之後都通過。
 
-## <a name="debug-a-failing-test"></a><a name="debug"></a>調試失敗的測試
+## <a name="debug-a-failing-test"></a><a name="debug"></a> 將失敗的測試進行調試
 
 1. 加入另一個測試：
 
@@ -337,7 +337,7 @@ ms.locfileid: "85816003"
 
 ::: moniker-end
 
-## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a>重構程式碼而不變更測試
+## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a> 重構程式碼而不變更測試
 
 1. 簡化 SquareRoot 函式中的主要計算：
 
@@ -358,7 +358,7 @@ ms.locfileid: "85816003"
 
 ## <a name="next-steps"></a>後續步驟
 
-- **實施.** 大部分 DLL 相依於其他子系統，例如資料庫和其他 DLL。 這些其他元件通常會以平行方式開發。 若要在還無法使用其他元件時，允許單元測試，您必須替換模擬或
+- **分離。** 大部分 DLL 相依於其他子系統，例如資料庫和其他 DLL。 這些其他元件通常會以平行方式開發。 若要在還無法使用其他元件時，允許單元測試，您必須替換模擬或
 
 - **組建驗證測試。** 您可以依設定的間隔，在小組的組建伺服器上執行測試。 這樣可以確保，當整合數個小組成員的工作時，不會引入 Bug。
 

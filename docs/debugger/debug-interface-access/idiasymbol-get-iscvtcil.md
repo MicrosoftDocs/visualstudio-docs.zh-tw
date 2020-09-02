@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 068720e4b35ca52e07351aeb6f74d7594fe69d1e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463432"
 ---
 # <a name="idiasymbolget_iscvtcil"></a>IDiaSymbol::get_isCVTCIL
-抓取表示模組是否從通用中繼語言（CIL）模組轉換成原生模組的旗標。
+抓取旗標，指出模組是否已從通用中繼語言 (CIL) 模組轉換成原生模組。
 
 ## <a name="syntax"></a>語法
 
@@ -33,16 +33,16 @@ HRESULT get_isCVTCIL(
 #### <a name="parameters"></a>參數
  `pFlag`
 
-脫銷`TRUE`如果模組已從 CIL 轉換成機器碼，則傳回，否則傳回 `FALSE` 。
+擴展 `TRUE` 如果模組已從 CIL 轉換成機器碼，則傳回，否則傳回 `FALSE` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
-> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
 ## <a name="remarks"></a>備註
- 這個屬性可從 `SymTagCompilandDetails` 符號類型取得（請參閱[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)。
+ 您可以從符號類型取得這個屬性 `SymTagCompilandDetails` (請參閱 [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)。
 
 ## <a name="requirements"></a>需求
 

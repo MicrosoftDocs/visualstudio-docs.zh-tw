@@ -1,5 +1,5 @@
 ---
-title: IDebug屬性欄位:獲取屬性取得器 |微軟文件
+title: IDebugPropertyField：： GetPropertyGetter |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b4120f4b9854eaf43d5c7119bd0a19dd21fbd584
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720888"
 ---
 # <a name="idebugpropertyfieldgetpropertygetter"></a>IDebugPropertyField::GetPropertyGetter
-獲取獲取屬性的方法。
+取得取得屬性的方法。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetPropertyGetter(
 
 ## <a name="parameters"></a>參數
 `ppField`\
-[出]返回表示獲取屬性的方法的[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)物件。
+擴展傳回代表取得屬性之方法的 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回S_OK;否則,返回錯誤代碼。
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 要獲取設置屬性的方法[,GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)調用 該方法。
+ 為了取得設定屬性的方法， [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md) 會呼叫方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)

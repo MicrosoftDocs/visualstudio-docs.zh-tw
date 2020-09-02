@@ -1,5 +1,5 @@
 ---
-title: 調試器中的運算式 |微軟文檔
+title: 偵錯工具中的運算式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302522"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315027"
 ---
 # <a name="expressions-in-the-debugger"></a>偵錯工具中的運算式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ int main()
 |**字串比較**|strcmp、wcscmp、stricmp、_stricmp、_strcmpi、wcsicmp、_wcscmpi、_wcsnicmp、strncmp、wcsncmp、strnicmp、wcsnicmp|  
 |**字串搜尋**|strchr、wcschr、strstr、wcsstr|  
 |**Win32**|GetLastError()、TlsGetValue()|  
-|**視窗 8**|WindowsGetStringLen ()、WindowsGetStringRawBuffer()<br /><br /> 這些函式要求要進行偵錯的處理序必須在 Windows 8 上執行。 對從 Windows 8 裝置產生的傾印檔案進行偵錯也要求 Visual Studio 電腦必須執行 Windows 8。 不過，如果您是對 Windows 8 裝置進行遠端偵錯，則 Visual Studio 電腦可以執行 Windows 7。|  
+|**Windows 8**|WindowsGetStringLen ()、WindowsGetStringRawBuffer()<br /><br /> 這些函式要求要進行偵錯的處理序必須在 Windows 8 上執行。 對從 Windows 8 裝置產生的傾印檔案進行偵錯也要求 Visual Studio 電腦必須執行 Windows 8。 不過，如果您是對 Windows 8 裝置進行遠端偵錯，則 Visual Studio 電腦可以執行 Windows 7。|  
 |**其他**|__log2<br /><br /> 傳回所指定整數的對數底數 2，並捨入至最接近的較小整數。|  
   
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - 不支援的運算式  
@@ -215,7 +215,7 @@ int main()
 - 命名空間或模組層級關鍵字，例如 `End Sub` 或 `Module`。  
   
 ## <a name="see-also"></a>另請參閱  
- [C++格式指定器](../debugger/format-specifiers-in-cpp.md)   
- [上下文運算子（C++）](../debugger/context-operator-cpp.md)   
- [格式規格在C#](../debugger/format-specifiers-in-csharp.md)   
+ [C + + 中的格式規範](../debugger/format-specifiers-in-cpp.md)   
+ [ (c + +) 的內容運算子 ](../debugger/context-operator-cpp.md)   
+ [C 中的格式規範#](../debugger/format-specifiers-in-csharp.md)   
  [虛擬變數](../debugger/pseudovariables.md)

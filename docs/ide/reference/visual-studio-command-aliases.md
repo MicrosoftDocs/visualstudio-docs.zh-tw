@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b420644672309371ab61f1499e22d4745c69c569
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596407"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
@@ -38,7 +38,7 @@ ms.locfileid: "75596407"
 |[列印命令](../../ide/reference/print-command.md)|?|Debug.Print|
 |[快速監看式命令](../../ide/reference/quick-watch-command.md)|??|Debug.Quickwatch|
 |新增專案|AddProj|File.AddNewProject|
-|[別名命令](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
+|[Alias 命令](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
 |自動變數視窗|自動|Debug.Autos|
 |中斷點視窗|bl|Debug.Breakpoints|
 |切換中斷點|bp|Debug.ToggleBreakPoint|
@@ -48,7 +48,7 @@ ms.locfileid: "75596407"
 |關閉所有文件|CloseAll|Window.CloseAllDocuments|
 |全部清除|cls|Edit.ClearAll|
 |命令模式|cmd|View.CommandWindow|
-|檢視程式碼|代碼|View.ViewCode|
+|檢視程式碼|code|View.ViewCode|
 |[列出記憶體命令](../../ide/reference/list-memory-command.md)|d|Debug.ListMemory|
 |[列出記憶體命令](../../ide/reference/list-memory-command.md)為 ANSI|da|Debug.ListMemory /Ansi|
 |[列出記憶體命令](../../ide/reference/list-memory-command.md) (一位元組格式)|db|Debug.ListMemory /Format:OneByte|
@@ -62,12 +62,12 @@ ms.locfileid: "75596407"
 |反組譯碼視窗|disasm|Debug.Disassembly|
 |[列出記憶體命令](../../ide/reference/list-memory-command.md) (八位元組格式)|dq|Debug.ListMemory /Format:EightBytes|
 |[列出記憶體命令](../../ide/reference/list-memory-command.md)為 Unicode|du|Debug.ListMemory /Unicode|
-|[評估陳述式命令](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
-|Exit|Exit|File.Exit|
+|[評估語句命令](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
+|結束|結束|File.Exit|
 |格式化選取範圍|format|Edit.FormatSelection|
 |全螢幕|全螢幕|View.FullScreen|
-|[啟動命令](../../ide/reference/start-command.md)|g|Debug.Start|
-|[轉到命令](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
+|[Start 命令](../../ide/reference/start-command.md)|g|Debug.Start|
+|[移至命令](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |移至大括號|GotoBrace|Edit.GotoBrace|
 |F1Help|説明|Help.F1Help|
 |即時模式|immed|Tools.ImmediateMode|
@@ -105,7 +105,7 @@ ms.locfileid: "75596407"
 |儲存選取的項目|儲存|File.SaveSelectedItems|
 |全部儲存|SaveAll|File.SaveAll|
 |另存新檔|SaveAs|File.SaveSelectedItemsAs|
-|[殼層命令](../../ide/reference/shell-command.md)|殼層|Tools.Shell|
+|[Shell 命令](../../ide/reference/shell-command.md)|殼層|Tools.Shell|
 |停止在檔案中尋找|StopFind|Edit.FindInFiles /stop|
 |交換錨點|SwapAnchor|Edit.SwapAnchor|
 |逐步執行|t|Debug.StepInto|
@@ -116,7 +116,7 @@ ms.locfileid: "75596407"
 |垂直並排|TileV|Window.TileVertically|
 |切換書籤|ToggleBook|Edit.ToggleBookmark|
 |[工具箱] 視窗|工具箱|View.Toolbox|
-|[列出反組譯碼命令](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
+|[列出反組解碼命令](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
 |設成大寫|Ucase|Edit.MakeUppercase|
 |復原|恢復|Edit.Undo|
 |將選取範圍定位點轉空白|Untabify|Edit.UntabifySelection|

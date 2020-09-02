@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596433"
 ---
 # <a name="toolbox-html-tab"></a>HTML 索引標籤、工具箱
 
-工具箱的**HTML**選項卡提供在網頁和 Web 表單上有用的元件。 若要檢視這個索引標籤，請先在 HTML 設計工具中開啟文件進行編輯。 在 [檢視]**** 功能表上，按一下 [工具箱]****，然後按一下 [工具箱] 的 [HTML]**** 索引標籤。
+[工具箱] 的 [ **HTML** ] 索引標籤會提供對網頁和 web 表單有用的元件。 若要檢視這個索引標籤，請先在 HTML 設計工具中開啟文件進行編輯。 在 [檢視]**** 功能表上，按一下 [工具箱]****，然後按一下 [工具箱] 的 [HTML]**** 索引標籤。
 
 若要在 [HTML]**** 索引標籤上建立工具的執行個體，請按兩下工具以將它新增至文件的目前插入點，或選取工具並將它拖曳至編輯介面上的想要位置。
 
@@ -87,7 +87,7 @@ ms.locfileid: "75596433"
 > [!IMPORTANT]
 >建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入 (Razor) 網站](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。
 
-**輸入（檔）**
+**輸入 (檔案) **
 
 ![HTML 網頁檔案欄位](../../ide/reference/media/vxfilefield.gif)
 
@@ -168,7 +168,7 @@ ms.locfileid: "75596433"
 > [!IMPORTANT]
 > 建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入 (Razor) 網站](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。
 
-**表**
+**Table**
 
 ![HTMLpageToolbarTable 螢幕擷取畫面](../../ide/reference/media/vxtable.gif)
 
@@ -180,7 +180,7 @@ ms.locfileid: "75596433"
 <table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>
 ```
 
-**影像**
+**映像**
 
 ![HTML 網頁影像項目](../../ide/reference/media/vximage.gif)
 

@@ -9,58 +9,58 @@ caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea4f2b49838340fcee41bc9c41ef94558e44825e
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302319"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89314949"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>適用於 Visual Studio 的 UI 文字和說明
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a>UI 文本和術語
- 可理解的文本對於有效的 UI 至關重要。 軟體使用者傾向于首先閱讀標籤，即與完成手頭任務最相關的標籤。 讀取靜態文本的頻率較低。 計畫使用者通過對整個視窗進行快速掃描來開始其工作會話，然後按以下近似順序讀取 UI：
+## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> UI 文字和術語
+ 理解文字對有效的 UI 而言很重要。 軟體使用者通常會先讀取標籤，也就是最相關的標籤，以在手邊完成工作。 以較少的頻率讀取靜態文字。 規劃使用者使用整個視窗的快速掃描來啟動其工作會話，然後以這項近似順序讀取 UI：
 
-1. 中間的互動式控制項
+1. 中心內的互動式控制項
 
-2. 提交按鈕
+2. 認可按鈕
 
-3. 在其他地方找到的互動式控制項
+3. 在其他地方找到互動式控制項
 
-4. 主要說明
+4. 主要指示
 
 5. 補充說明
 
 6. 視窗標題
 
-7. 主體中的其他靜態文本
+7. 主體中的其他靜態文字
 
-### <a name="usage-patterns-for-ui-text"></a>UI 文本的使用模式
+### <a name="usage-patterns-for-ui-text"></a>UI 文字的使用模式
 
-#### <a name="title-bar-text"></a>標題列文本
- 標題列文本必須與生成 UI 的命令匹配。
+#### <a name="title-bar-text"></a>標題列文字
+ 標題列文字必須符合產生 UI 的命令。
 
-#### <a name="instructional-text-helper-text"></a>教學文本（説明文本）
- 在某些對話方塊中，提供突出顯示的主要說明來解釋在視窗或頁面中應該怎麼做是很有説明的。 這有時稱為"説明者文本"。
+#### <a name="instructional-text-helper-text"></a> (helper text) 的解說文字
+ 在某些對話中，提供重要的主要指示來說明在視窗或頁面中要做什麼，會很有説明。 這有時稱為「協助程式文字」。
 
-##### <a name="writing-style-rules-for-helper-text"></a>説明器文本的編寫樣式規則
+##### <a name="writing-style-rules-for-helper-text"></a>撰寫 helper 文字的樣式規則
 
-- 不要解釋顯而易見的事實。 除非絕對需要，否則不要包含教學文本。
+- 請勿解釋明顯的。 除非絕對需要，否則請勿包含解說文字。
 
-- 指令文本始終放在對話方塊的頂部，並應引用正在執行的任務。
+- 教學文字一定會放在對話的最上方，而且應該參考執行中的工作。
 
-- 向使用者準確解釋他們需要做什麼。 避免過多的溝通和冗余。
+- 精確說明使用者需要進行的動作。 避免過度的通訊和冗余。
 
-- 查看每個視窗並消除重複的單詞和語句。
+- 檢查每個視窗，並消除重複的單字和語句。
 
-- 保持教學文本簡短。 如果某些使用者或方案需要更多資訊，則提供指向詳細概念連線主題的連結。
+- 保持簡短的解說文字。 如果某些使用者或案例需要詳細資訊，請提供詳細概念線上主題的連結。
 
-- 寫你的課文，使每個單詞都保持重量，是必要的。
+- 撰寫您的文字，讓每個單字都具有權數，而且是必要的。
 
-- 按照現有的微軟使用者介面[文本](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx)和[樣式和色調](https://msdn.microsoft.com/library/windows/desktop/dn742477\(v=vs.85\).aspx)的指導。
+- 遵循 [消費者介面文字](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx) 和 [樣式和語氣](https://msdn.microsoft.com/library/windows/desktop/dn742477\(v=vs.85\).aspx)的現有 Microsoft 指引。
 
-#### <a name="supplemental-instructions"></a>補充說明
- 補充說明提供了其他資訊，可説明使用者瞭解控制項或控制分組。 這還可能包括必要的提示文本，以瞭解輸入控制項所需的格式。 請謹慎使用補充說明。 保留它們，以便使用者可能無法完全理解他們做出的選擇的後果。
+#### <a name="supplemental-instructions"></a>補充指示
+ 補充指示提供可協助使用者瞭解控制項或控制項群組的其他資訊。 這也可能包含必要的提示文字，以瞭解輸入控制項預期的格式。 請謹慎使用補充指示。 如果使用者可能無法完全瞭解所做選擇的後果，請將它們保留起來。
 
  ![Visual Studio 中的補充文字](../../extensibility/ux-guidelines/media/0601-b-supplementaltext1.png "0601-b_SupplementalText1")
 
@@ -70,258 +70,258 @@ ms.locfileid: "79302319"
 
  **Visual Studio 中的補充文字**
 
-#### <a name="infotips"></a>資訊提示
- 通常，指令性文本可能太長，無法將位置放在 UI 中，或者可能僅對新使用者有用，對有經驗的使用者來說，這感覺雜亂無章。 在這種情況下，教學/資訊文本應作為工具提示放置在 InfoTip 下。
+#### <a name="infotips"></a>提示
+ 通常，解說文字可能太長，而無法就地放置在 UI 中，或可能只對新使用者很有用，而感覺像是有經驗的使用者。 在此情況下，教學/資訊文字應該放在資訊提示底下作為工具提示。
 
- InfoTips 應放置在它們相關的控制項附近，並且應該使用特定的 InfoTip 圖示，該圖示不顯眼但明顯。
+ 提示應放置在與其相關的控制項附近，而且應該使用特定的 [提示] 圖示，這並不顯眼但明顯。
 
  ![Visual Studio 中的資訊提示](../../extensibility/ux-guidelines/media/0601-d-infotip.png "0601-d_InfoTip")
 
- **視覺化工作室中的資訊提示示例**
+ **Visual Studio 中的提示範例**
 
-##### <a name="writing-style-rules-for-infotips"></a>為資訊提示編寫樣式規則
+##### <a name="writing-style-rules-for-infotips"></a>撰寫提示的樣式規則
 
-- 將資訊提示寫成完整的句子。 它們需要特定的動詞、句子大小寫和結束標點符號。
+- 將提示撰寫成完整的句子。 它們需要特定的動詞、句子大小寫和結束標點符號。
 
-- 使用資訊提示補充您的主要說明或資訊。 如果您只是使用不同的詞來重提主要想法，則不需要 InfoTip。
+- 使用提示來補充您的主要指示或資訊。 如果您只是使用不同的單字來重新聲明主要的概念，就不需要提示。
 
-- 保持資訊提示簡短而甜美。 使用支援和鼓勵使用者的小單詞和普通的日常語言。
+- 保持提示的簡短和最佳。 使用支援和鼓勵使用者的小型單字和純文字語言。
 
-- 按照現有的微軟使用者介面[文本](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx)和[樣式和色調](https://msdn.microsoft.com/library/windows/desktop/dn742477\(v=vs.85\).aspx)的指導。
+- 遵循 [消費者介面文字](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx) 和 [樣式和語氣](https://msdn.microsoft.com/library/windows/desktop/dn742477\(v=vs.85\).aspx)的現有 Microsoft 指引。
 
-#### <a name="control-labels"></a>控制標籤
- 控制項標籤應簡短、簡潔，並遵循[控制項的 Windows 桌面指南](https://msdn.microsoft.com/library/windows/desktop/dn742399\(v=vs.85\).aspx)。
+#### <a name="control-labels"></a>控制項標籤
+ 控制項標籤應該簡短、簡潔，並遵循 [Windows 桌面的控制項指引](https://msdn.microsoft.com/library/windows/desktop/dn742399\(v=vs.85\).aspx)。
 
- 有關控制項標籤格式和在 UI 中放置的詳細資訊，請參閱[視覺化工作室的佈局](../../extensibility/ux-guidelines/layout-for-visual-studio.md)。
+ 如需有關 UI 內控制項標籤格式和位置的詳細資訊，請參閱 [Visual Studio 的版面](../../extensibility/ux-guidelines/layout-for-visual-studio.md)配置。
 
 #### <a name="help-links"></a>說明連結
- 説明連結可以放置在教學文本中或 UI 正文中。 它們可以是指向"説明"或"啟動內部對話方塊"的連結。
+ 說明連結可以放在教學文字或 UI 主體內。 它們可以是協助或啟動內部對話的連結。
 
-##### <a name="visual-style-rules-for-help-links"></a>説明連結的可視樣式規則
+##### <a name="visual-style-rules-for-help-links"></a>說明連結的視覺化樣式規則
 
-- 對超連結使用正確的環境顏色。 正確樣式的超連結在按一下時不會短暫閃爍紅色。 如果看到這一點，則表示未使用環境顏色。
+- 針對超連結使用正確的環境色彩。 按一下時，正確樣式的超連結將不會短暫地閃爍。 如果您看到這種情況，則表示未使用環境色彩。
 
-- 底線應僅在懸停或連結嵌入段落時使用。
+- 底線應僅用於滑鼠停留，或在連結內嵌于段落時使用。
 
-- 有關超連結的可視樣式和交互樣式的更多詳細資訊，請參閱按鈕和超連結。
+- 如需有關超連結的視覺效果和互動樣式的詳細資訊，請參閱按鈕和超連結。
 
-##### <a name="writing-style-rules-for-help-links"></a>為説明連結編寫樣式規則
+##### <a name="writing-style-rules-for-help-links"></a>撰寫說明連結的樣式規則
 
-- 啟動對話方塊時，維護橢圓的標準：沒有用於導航的橢圓，如果任務需要額外的 UI，則省略號。
+- 當啟動對話方塊時，請維持省略號的標準：如果工作需要額外的 UI，則不會有任何省略號用於導覽，省略號。
 
      ![Visual Studio 中的 [說明] 連結](../../extensibility/ux-guidelines/media/0601-e-helplink.png "0601-e_HelpLink")
 
-     **説明連結中的省略號 （...） 表示任務將需要其他 UI。**
+     **說明連結中的省略號 ( ... ) 指出工作將需要額外的 UI。**
 
-- 連結不應以"學習"開頭，因為這不是使用者的意圖。 使用者希望回答特定問題，而不是接受普通教育。
+- 連結不能以「學習」開頭，因為這不是使用者的意圖。 使用者想要回答特定問題，而不是獲得一般教育。
 
-- 短語説明連結，以便他們提出主題將回答的問題。
+- 片語說明連結，讓他們詢問主題將回答的問題。
 
-     不正確："瞭解有關 Windows Azure 移動服務定價的更多資訊"
+     不正確：「深入瞭解 Windows Azure Mobile Services 定價」
 
-     正確："Windows Azure 移動服務有哪些定價選項？
+     正確：「Windows Azure 行動服務有哪些定價選項？」
 
-- 切勿使用 *"按一下..."...* 到連結文本。
+- 永不使用 *Click ...* 連結文字。
 
-- 切勿只連結"此處"一詞。 這對某些螢幕閱讀器來說是個問題，因為螢幕閱讀器將只發出超連結單詞的語音。
+- 絕對不要連結 "here" 這個字。 這對某些螢幕讀取器而言是有問題的，因此只會以超連結的文字為語音。
 
-     不正確："**在此處**查找 Windows Azure 移動服務的資訊"
+     不正確：「在 **此**尋找有關 Windows Azure Mobile Services 的資訊」
 
-     正確："Windows Azure 移動服務有哪些定價選項？
+     正確：「Windows Azure 行動服務有哪些定價選項？」
 
-- 有關説明連結的正確書寫樣式的詳細資訊，請參閱["説明"的 Windows 桌面指南](https://msdn.microsoft.com/library/windows/desktop/dn742494\(v=vs.85\).aspx)。
+- 如需說明連結正確書寫樣式的詳細資訊，請參閱 [Windows 桌面指引以取得協助](https://msdn.microsoft.com/library/windows/desktop/dn742494\(v=vs.85\).aspx)。
 
-#### <a name="hint-text"></a>提示文本
- 提示文本在控制項內或控制項下方顯示為浮水印。 將使用相應的 VSColors 權杖應用正確的格式`Environment.GrayText`。
+#### <a name="hint-text"></a>提示文字
+ 提示文字會顯示為控制項內或控制項下方的浮水印。 將會使用適當的 VSColors token 來套用正確的格式設定 `Environment.GrayText` 。
 
- 它可以以多種形式顯示。
+ 它可以出現在許多表單中。
 
-- 代替控制標籤：
+- 取代控制項標籤：
 
      ![Visual Studio 中的提示文字](../../extensibility/ux-guidelines/media/0601-f-hinttext1.png "0601-f_HintText1")
 
-- 用動詞，給出指示：
+- 使用動詞，提供指示：
 
      ![Visual Studio 中的提示文字](../../extensibility/ux-guidelines/media/0601-g-hinttext2.png "0601-g_HintText2")
 
-- 文本指示必需的條目：
+- 具有指出必要專案的文字：
 
      ![Visual Studio 中的提示文字](../../extensibility/ux-guidelines/media/0601-h-hinttext3.png "0601-h_HintText3")
 
-#### <a name="watermark-text"></a>浮水印文本
- 在空的設計介面上，文本應指明要執行哪些操作，並提供適當的連結以打開其他相關視窗：
+#### <a name="watermark-text"></a>浮水印文字
+ 在空白設計介面上，文字應該會指出要執行的動作，以及提供連結來開啟其他相關視窗（如果有的話）：
 
  ![Visual Studio 中的浮水印文字](../../extensibility/ux-guidelines/media/0601-i-watermarktext.png "0601-i_WatermarkText")
 
- **視覺工作室中的浮水印文本示例**
+ **Visual Studio 中的浮水印文字範例**
 
-### <a name="common-terminology"></a>常用術語
+### <a name="common-terminology"></a>常見術語
 
 |詞彙|說明|註解|
 |----------|-----------------|-------------|
-|登錄/登出|動詞與 Web 同義用於表示 Web 屬性中的身份驗證。 在用戶端中，我們一次使用此概念作為登錄和登出 IDE 使用者連接的頂級概念，該概念表示提供更高級別的功能（如漫遊和許可）的頂級標識，而所有其他連接都不可用。|IDE 使用者是唯一應表示登錄/登出謂詞的功能，因為它表示頂級 IDE 使用者。|
-|連接/斷開連接|用於功能與聯機服務保持單個連接的位置。|伺服器資源管理器（一次只能有一個活動 Azure 連接）是連接/斷開連接的示例。|
-|添加/刪除|無損。 從清單中添加或刪除內容時使用。|TFS 連線管理員伺服器清單對話方塊是添加/刪除的示例。|
-|刪除|破壞性。 僅當要刪除的元素將被永久丟棄或從磁片中刪除時，才使用。|如果結果從磁片中刪除檔，則"刪除"通常需要提示。|
+|登入/登出|使用同義搭配 web 的動詞，以將驗證表示至 web 屬性。 在用戶端中，我們會使用這一次作為登入和退出 IDE 使用者連線的最上層概念，這代表最上層的身分識別，可提供較高層級的功能，例如無法與其他所有連線一起使用的漫遊與授權。|IDE 使用者是唯一應該代表登入/登出動詞的功能，因為它代表最上層的 IDE 使用者。|
+|連線/中斷連接|在功能維護單一連接至線上服務的地方使用。|伺服器總管，您一次只能有一個作用中的 Azure 連線，就是連線/中斷連接的範例。|
+|新增/移除|非破壞性。 在清單中新增或移除某個內容時使用。|[TFS 連線管理員伺服器清單] 對話方塊是 [新增/移除] 的範例。|
+|刪除|破壞性。 只有在移除的元素將從磁片永久捨棄或刪除時，才使用。|如果結果是從磁片刪除檔案，則 [刪除] 通常需要提示。|
 
 ## <a name="error-messages"></a>錯誤訊息
 
 ### <a name="overview"></a>概觀
- 會發生錯誤。 設置使用者可以做什麼的限制是防止可避免錯誤訊息的明智第一步。 但是，當發生錯誤時，編寫良好的錯誤訊息可以很好地緩解問題。 錯誤訊息可以說是使用者看到的最重要通知類型之一，因為它們是同步的，並且指示需要解決的問題。 編寫不良的錯誤訊息使使用者自行決定錯誤的原因和任何可能的解決方案。
+ 發生錯誤。 設定使用者可執行之動作的限制，是防止肇因錯誤訊息的第一個步驟。 不過，當發生錯誤時，妥善撰寫的錯誤訊息可能會很長的方法來緩和問題。 錯誤訊息是使用者看到的最重要通知類型之一，因為它們是同步的，且表示需要解決的問題。 撰寫不當的錯誤訊息會讓使用者自行決定錯誤的原因，以及任何可能的解決方案。
 
- 使用者可能會停止關注過度使用或混淆的錯誤訊息，因此只編寫為使用者體驗增加價值的必要消息。 如果消息只是通知，則使用備用演示文稿。
+ 使用者可能會停止注意過度使用或令人困惑的錯誤訊息，因此只會撰寫必要的訊息，以增加使用者體驗的價值。 如果訊息只是通知，則使用替代的簡報。
 
-### <a name="rules-for-creating-an-error-message"></a>創建錯誤訊息的規則
+### <a name="rules-for-creating-an-error-message"></a>建立錯誤訊息的規則
 
-- 構造錯誤訊息時，為訪問群體選擇適當的錯誤級別。 旨在獲取提供使用者可以執行的操作（如果適用）的簡單摘要。 不要說明使用者不需要知道的任何內容。
+- 當您建立錯誤訊息時，請為物件選擇適當的錯誤層級。 以簡單的摘要為目標，提供使用者可採取的動作（如果適用）。 請勿陳述使用者不需要知道的任何事項。
 
-- 提供建設性援助。 閱讀和操作包含指令的錯誤訊息更容易。
+- 提供建設性的協助。 您可以更輕鬆地讀取和處理包含指令的錯誤訊息。
 
-- 不要使用雙底片。
+- 請勿使用雙否定。
 
-- 對您編寫的任何錯誤訊息執行自動和手動語法和拼寫檢查。
+- 針對您所撰寫的任何錯誤訊息，執行自動和手動文法及拼寫檢查。
 
-- 對於複雜的錯誤訊息，請避免順序通信。 切勿對錯誤訊息使用 F1 連接。 消息本身應足夠。
+- 針對複雜的錯誤訊息，請避免順序通訊。 請勿針對錯誤訊息使用 F1 的連結。 訊息本身應該就已足夠。
 
 - 使用正確的圖示。
 
-- 使問題易於理解，並使用具有明確選擇的按鈕，如"刪除"和"取消"。
+- 讓您輕鬆瞭解問題，並使用具有明確選擇的按鈕，例如 [刪除] 和 [取消]。
 
-- 對於警告，要明確操作的後果。 按鈕應指示結果。
+- 針對警告，請清楚瞭解繼續的結果。 按鈕應該會指出結果。
 
-- 對於錯誤，請描述使用者可以採取哪些措施來解決此問題。 按鈕應該是操作或說"關閉"。 不要對錯誤訊息使用"確定"按鈕。
+- 如有錯誤，請說明使用者可以如何解決問題。 按鈕應該是動作，或說「關閉」。 請勿使用 [確定] 按鈕來取得錯誤訊息。
 
-- 構造錯誤訊息時要問自己的一些問題：
+- 當您建立錯誤訊息時，需要自問一些問題：
 
-  - 使用者能否單獨找出如何僅使用此錯誤解決問題？
+  - 使用者可以找出如何單獨解決這個錯誤的問題嗎？
 
-  - 使用者是否使用此與此錯誤相同的詞彙表？
+  - 使用者是否使用與此錯誤相同的詞彙？
 
-  - 此錯誤是大錯還是在多種情況下共用？ 如果是，您如何引導使用者找到他們需要的解決方案？
+  - 此錯誤在多個情況下模棱兩可或共用嗎？ 如果有，您要如何引導使用者前往所需的解決方案？
 
 #### <a name="build-errors"></a>建置錯誤
- 由於 Visual Studio 是一個軟體發展工具，因此其許多元件都有編譯、轉換或編碼步驟，可將開發人員的工作轉換為二進位形式。 當編譯器無法處理創作不當的檔或編譯器選項設置不正確時，這些轉換可能會導致錯誤。
+ 由於 Visual Studio 是軟體發展工具，因此它的許多元件都有編譯、轉換或編碼步驟，可將開發人員的工作轉換成二進位格式。 當編譯器無法處理不當撰寫的檔案，或編譯器選項未正確設定時，這些轉換可能會造成錯誤。
 
- Visual Studio 使用者可以花費大量開發時間來解決建置錯誤。 當錯誤具有依賴關係或錯誤訊息寫得不好時，此解決時間會增加，這會使發現錯誤源變得困難。
+ Visual Studio 使用者可以花大量的開發時間來解決組建錯誤。 當錯誤具有相依性，或錯誤訊息寫入不良時，此解決時間會增加，這可能會導致難以找出錯誤的來源。
 
- 最好的建置錯誤是那些首先不會發生的錯誤，這就是為什麼 Visual Studio 提供自動完成和 IntelliSense 擺動的原因。 架構驗證器和類似的工具提供相同類型的回饋。 這些機制主動引導使用者構建格式良好的代碼，從而減少建置錯誤的可能性。
+ 最佳的組建錯誤就是不會在第一次發生的錯誤，這也是 Visual Studio 提供自動完成和 IntelliSense 波浪線的原因。 架構驗證程式和類似的工具提供相同類型的意見反應。 這些機制會主動引導使用者建立格式正確的程式碼，減輕組建錯誤的機率。
 
- Visual Studio 提供了一個工具視窗，使用者可以在其中讀取和導航其文件視窗中發生的錯誤。 提供鍵盤快速鍵，以便使用者可以快速導航大量代碼並直接轉到問題的位置。 Visual Studio 還允許將每個建置錯誤綁定到特定的説明關鍵字/上下文 ID，以便使用者可以直接轉到"説明"主題，該主題提供有關該錯誤的更深入資訊。
+ Visual Studio 提供一個工具視窗，讓使用者可以在其檔視窗中讀取和流覽發生的錯誤。 系統會提供鍵盤快速鍵，讓使用者可以快速流覽大量的程式碼，並直接移至問題的位置。 Visual Studio 也可讓每個組建錯誤都系結至特定的說明關鍵字/內容識別碼，讓使用者可以直接前往說明主題，以提供更深入的錯誤相關資訊。
 
- 編寫清晰、簡潔的建置錯誤：
+ 撰寫明確、精確的組建錯誤：
 
-- **使用簡單的語言**來解釋問題，很少或沒有編譯器行話。 建置錯誤的文本不應過於技術化。
+- **使用簡單** 或無編譯器術語的一般語言來說明問題。 組建錯誤的文字應該不太技術性。
 
-- **概述可能的原因。** 例如，"在 '（屬性）：（值）'聲明中的屬性和值之間缺少一個冒號。
+- **概述可能的原因。** 例如，' (屬性中的屬性與值之間遺漏了冒號) ： (值) ' 宣告」。
 
-- 提供有關潛在修復的詳細資訊。 如果沒有足夠的空間，則其他詳細資訊可能會放入相應的說明主題中。
+- 提供有關潛在修正的詳細資料。 如果沒有足夠的空間，則可能會將其他詳細資料放入對應的說明主題。
 
-### <a name="components-of-a-well-written-error-message"></a>寫得很好的錯誤訊息的元件
+### <a name="components-of-a-well-written-error-message"></a>妥善撰寫的錯誤訊息的元件
 
-#### <a name="use-the-shell-dialog-service-for-error-messages"></a>對錯誤訊息使用 shell 對話方塊服務。
- 使用 shell 對話方塊服務，您可以控制訊息的外觀（尤其是字體），而無需對單個元素進行重大更改。 使用**IErrorInfo**機制並使用**IVsUIShell：：設置ErrorInfo/報告錯誤資訊**報告它們。
+#### <a name="use-the-shell-dialog-service-for-error-messages"></a>使用 shell 對話服務來取得錯誤訊息。
+ 使用 shell 對話服務可讓您控制訊息的外觀（尤其是字型），而不會對個別元素有重大變更。 使用 **IErrorInfo** 機制，並使用 **IVsUIShell：： SetErrorInfo/ReportErrorInfo**來報告這些機制。
 
-#### <a name="choose-an-effective-and-appropriate-notification-presentation"></a>選擇有效和適當的通知演示文稿。
- 如果需要立即採取行動以避免資料丟失（同步通知），請使用帶有嚴重警告的模態對話方塊。 關鍵圖示保留用於在不閱讀消息的情況下關閉郵件可能會導致負面後果的情況。 資料丟失是需要報警級回應的危急情況。 過度使用關鍵圖示會使使用者對其重要性失去敏感性。 如果錯誤訊息具有資訊性，請考慮強制回應對話方塊（非同步通知）的替代方法。
+#### <a name="choose-an-effective-and-appropriate-notification-presentation"></a>選擇有效且適當的通知展示。
+ 如果需要立即動作以避免資料遺失 (同步通知) ，請使用具有重大警告的強制回應對話方塊。 重要圖示會保留在未讀取訊息的情況下，可能會造成負面的後果。 遺失資料是需要警示層級回應的重要情況。 過度利用重要圖示 desensitizes 使用者的重要性。 如果錯誤訊息的本質僅供參考，請考慮使用強制回應對話方塊的替代方案， (非同步通知) 。
 
-#### <a name="provide-a-clean-succinct-explanation-of-why-the-problem-occurred-rather-than-a-technical-explanation"></a>提供清晰、簡潔的解釋，說明問題發生的原因，而不是技術解釋。
- 在解釋中給使用者帶來技術細節負擔過重會使他們更有可能忽略錯誤訊息。 良好消息傳遞的示例：
+#### <a name="provide-a-clean-succinct-explanation-of-why-the-problem-occurred-rather-than-a-technical-explanation"></a>提供簡潔明瞭的原因，說明為何發生問題，而不是技術說明。
+ 在說明中造成具有技術詳細資料的使用者，可讓他們更有可能忽略錯誤訊息。 良好訊息的範例：
 
-- 無法打開請求的檔。
+- 「無法開啟要求的檔案。」
 
-- "無法連接到互聯網。
+- 「無法連接到網際網路」。
 
-#### <a name="provide-information-about-how-to-fix-the-problem"></a>提供有關如何解決此問題的資訊。
- 為使用者提供如何解決此問題的建議。 如果沒有建議，要誠實地對待使用者。 提供指向其他線上來源的直接連結，例如技術支援或社區支援。 嘗試將使用者指向與問題相關的特定連線資訊。 對於錯誤 ID，請考慮將使用者連結到有關該特定錯誤的討論執行緒。 良好消息傳遞的示例：
+#### <a name="provide-information-about-how-to-fix-the-problem"></a>提供如何修正問題的相關資訊。
+ 提供如何修正問題的使用者建議。 如果沒有任何建議，請與使用者誠實。 提供其他線上來源的直接連結，例如技術支援或社區支援。 請嘗試將使用者指向與問題相關的特定線上資訊。 針對錯誤識別碼，請考慮將使用者連結到有關該特定錯誤的討論主題。 良好訊息的範例：
 
-- "請確保您已連接到互聯網，然後重試此操作。
+- 「請確定您已連線到網際網路，然後再試一次此操作」。
 
-- 確保檔存在，並且您有權打開該檔。
+- 「請確定檔案存在，而且您有開啟檔案的許可權。」
 
-#### <a name="write-a-message-that-is-short-and-to-the-point"></a>寫一條簡短而正確的消息。
- 錯誤訊息可以通知、解釋和提供解決方案，但如果過於措辭，仍被忽略。 一種解決方案是使用帶有詳細資訊按鈕的漸進式披露。 例如，給出一個簡短的描述/解決方案，然後將更多詳細資訊放在詳細資訊按鈕下。 如果使用者選擇閱讀有關該錯誤的詳細資訊，則可以這樣做。
+#### <a name="write-a-message-that-is-short-and-to-the-point"></a>撰寫簡短且指向該點的訊息。
+ 錯誤訊息可以通知、解釋和提供解決方案，但如果冗長太過，仍會予以忽略。 其中一個解決方法是使用 [漸進式洩漏] 與 [詳細資料] 按鈕。 例如，提供簡短的描述/方案，然後在 [詳細資料] 按鈕下放置更多詳細資料。 如果使用者選擇閱讀有關錯誤的詳細資訊，他們可以這樣做。
 
- 消息中的語言應為：
+ 訊息中的語言應該是：
 
-- **適合域。** 使用使用者將理解的語言。 儘管我們的客戶是開發人員，但他們通常沒有我們的上下文和術語。
+- **適用網域。** 使用使用者將瞭解的語言。 雖然我們的客戶是開發人員，但它們通常沒有我們所擁有的內容和術語。
 
-- **特定。** 避免措辭模糊，並給出所涉物體的具體名稱和位置。 例如，錯誤訊息（如"字元無效"）沒有用處。 哪個角色？ "找不到檔。 哪個檔？
+- **特定。** 避免模糊的用語，並為相關的物件提供特定的名稱和位置。 例如，「字元無效」之類的錯誤訊息並不實用。 哪一個字元？ 「找不到檔案。」 哪個檔案？
 
-- **禮貌。** 不要責怪使用者或讓他們感到愚蠢。 避免使用敵對或冒犯性語言（殺戮、執行、終止、致命、非法）。 避免大寫文本，這通常被視為喊話，並且不可讀。 不要用幽默。
+- **禮貌。** 不要讓使用者感到安心，或讓他們覺得更愚蠢。 避免惡意或冒犯性的語言 (終止、執行、終止、嚴重、不合法) 。 避免大寫文字，這通常會被視為 shouting，而且不是可讀取的。 請勿使用幽默。
 
-- **正確。** 使用正確的拼寫和語法（即使在 Alphas 中）。 泰波斯是不專業和尷尬的。
+- **正確。** 即使在 Alpha) 中，也請使用正確的拼寫和文法 (。 輸入錯誤是不專業和尷尬。
 
-- **上下文適當。** 使用適當的按鈕文本。 避免使用"確定"按鈕，而是使用"繼續"或"是/否"。
+- **內容適用。** 使用適當的按鈕文字。 請避免使用 [確定] 按鈕，並改為使用 [繼續] 或 [是/否]。
 
-### <a name="error-message-examples"></a>錯誤訊息示例
+### <a name="error-message-examples"></a>錯誤訊息範例
 
 |好|不良|
 |----------|---------|
-|您撥打的號碼不再在服務中。 請檢查該號碼並再次撥號，或撥打 0 的接線員。|- "錯誤 （449）： 非法號碼"<br />- "此未處理的異常錯誤表示操作成功完成。<br /><br /> ![Visual Studio 中錯誤的錯誤訊息](../../extensibility/ux-guidelines/media/0602-a-errordialog.png "0602-a_ErrorDialog")|
+|「您撥打的號碼已不再處於服務中。 請檢查號碼，然後再按一次電話號碼，或撥打操作員撥打0。」|-"Error (449) ：不合法的數位"<br />-「此未處理的例外狀況錯誤表示作業已順利完成。」<br /><br /> ![Visual Studio 中錯誤的錯誤訊息](../../extensibility/ux-guidelines/media/0602-a-errordialog.png "0602-a_ErrorDialog")|
 
 ## <a name="accessing-help"></a>存取說明
 
 ### <a name="overview"></a>概觀
- 除了 MSDN 中的文檔之外，Visual Studio 使用者還有多個存取點在 UI 中説明使用者。 為了確保這些存取點始終可用，功能團隊需要利用環境提供的説明系統。 這些存取點包括：
+ 除了 MSDN 中的檔之外，Visual Studio 使用者還有數個存取點，可在 UI 中協助使用者。 為了確保這些存取點一致地可用，功能小組需要利用環境所提供的說明系統。 這些存取點包括：
 
-- **對話方塊中的教學和補充文本。** 在 UI 表面上提供方向或說明的靜態文本，或在 InfoTip 圖示上可用。
+- **對話中的教學和補充文字。** 提供方向或說明的靜態文字，無論是在 UI 介面上，或是在資訊提示圖示上停留時都可以使用。
 
-- **F1 説明**（僅限編輯器）。 在 Visual Studio 編輯器中，使用者可以相信，在任何時候都按 F1 將顯示特定于當前選擇的說明主題。 確保與 F1 相關的主題是適當且內容豐富的。
+- **F1** 說明 (編輯器只) 。 在 [Visual Studio 編輯器] 中，使用者可以隨時信任該專案，按下 F1 將會顯示目前選取範圍的特定說明主題。 確定與 F1 相關聯的主題都適當且有資訊。
 
-- **指向說明主題的超連結。** 對話方塊、工具視窗或設計介面中的超連結，用於啟動主題，以説明使用者瞭解有關如何完成任務的技術、功能或資訊的詳細資訊。
+- **說明主題的超連結。** 對話方塊、工具視窗或設計介面內的超連結，可啟動主題以協助使用者深入瞭解如何完成工作的相關技術、功能或資訊。
 
-- **説明器 UI 機制，如智慧標籤和生成對話方塊。** 這些機制可説明使用者瞭解 UI 元素，或促進任務（如智慧標籤或產生器對話方塊）。
+- **Helper UI 機制，例如智慧標籤和建立對話方塊。** 這些機制協助使用者瞭解 UI 元素，或協助工作，例如智慧標籤或產生器對話方塊。
 
-- **UI 説明按鈕**（已棄用）。 標題列中允許訪問相關 F1 說明主題的可見指示器。
+- **UI 說明按鈕** (已淘汰的) 。 標題列中的可見指標，可讓您存取相關的 F1 說明主題。
 
 ### <a name="text"></a>Text
 
-#### <a name="instructional-and-supplemental-text-in-dialogs"></a>對話方塊中的教學和補充文本
- 在支援複雜任務的對話方塊中，可能需要在 UI 中（通常在對話方塊頂部或複雜控制項附近）提供指令文本。 有關書寫樣式的詳細資訊，請參閱[UI 文本和術語](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology)。
+#### <a name="instructional-and-supplemental-text-in-dialogs"></a>對話方塊中的教學和補充文字
+ 在支援複雜工作的對話方塊中，可能需要在 UI 中提供解說文字，通常是在對話方塊頂端或接近複雜的控制項。 如需撰寫樣式的詳細資訊，請參閱 [UI 文字和術語](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) 。
 
-#### <a name="infotips"></a>資訊提示
- 通常，指令性文本可能太長，無法在 UI 中定位，或者可能僅對新使用者有用，對有經驗的使用者來說，感覺雜亂無章。 在這種情況下，教學/資訊文本應作為工具提示放置在 InfoTip 下。
+#### <a name="infotips"></a>提示
+ 通常，解說文字可能太長，而無法就地放置在 UI 中，或可能只對新使用者很有用，而感覺像是有經驗的使用者。 在此情況下，教學/資訊文字應該放在資訊提示底下作為工具提示。
 
- InfoTips 應放置在它們相關的控制項附近，並且應該使用特定的 InfoTip 圖示，該圖示不顯眼但明顯。
+ 提示應放置在與其相關的控制項附近，而且應該使用特定的 [提示] 圖示，這並不顯眼但明顯。
 
  ![Visual Studio 中的資訊提示](../../extensibility/ux-guidelines/media/0601-d-infotip.png "0601-d_InfoTip")
 
- **視覺化工作室中的資訊提示示例**
+ **Visual Studio 中的提示範例**
 
-### <a name="interactive-help-mechanisms"></a>互動式説明機制
+### <a name="interactive-help-mechanisms"></a>互動式說明機制
 
 #### <a name="f1-help"></a>F1 說明
- F1 説明在編輯器或設計介面中是必需的，但在視覺化工作室環境中的其他位置則不需要 F1 説明。
+ 在編輯器或設計介面中需要 F1 說明，但 Visual Studio 環境中的其他地方則不需要。
 
-#### <a name="hyperlinks-to-help-topics"></a>指向說明主題的超連結
- 超連結可用於在 IDE 中執行操作、在 IDE 中導航或在瀏覽器中啟動説明。 有關語言和 07.10.01 按鈕和超連結的詳細資訊，請參閱[UI 文本和術語](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology)，瞭解視覺化和佈局指南。
+#### <a name="hyperlinks-to-help-topics"></a>說明主題的超連結
+ 您可以使用超連結來執行動作、在 IDE 中流覽，或在瀏覽器中啟動 [說明]。 如需有關語言和07.10.01 按鈕的詳細資訊，以及視覺效果和版面配置方針的超連結，請參閱 [UI 文字和術語](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) 。
 
-#### <a name="help--buttons-in-dialog-title-bars-deprecated"></a>對話方塊標題列中的説明 [？] 按鈕（已棄用）
- 在大多數情況下，對話方塊標題列中的"説明"按鈕將被棄用。 UI 主題不再是文檔模型的一部分，因此可能沒有要連結到的相關主題。 從本質上講，標題列按鈕與 F1 説明相同，在對話方塊中不再需要。 在某些情況下，這仍可用作可用更多概念或過程資訊的指示器，儘管超連結在較新的 UI 中更常用。
+#### <a name="help--buttons-in-dialog-title-bars-deprecated"></a>對話方塊標題列中的 Help [？] 按鈕 (已淘汰) 
+ 在大部分的情況下，對話方塊標題列中的 [說明] 按鈕會被取代。 UI 主題不再是檔模型的一部分，因此可能不會有相關的主題連結。 基本上，標題列按鈕與 F1 說明相同，而且在對話方塊中不再需要。 在某些情況下，這仍然可以用來表示有更多可用的概念或程式資訊，但較常在較新的 UI 中使用超連結。
 
-##### <a name="dialogs-created-through-the-environment"></a>通過環境創建的對話方塊
- 許多 shell 對話方塊都是通過**VBDialogBoxParam**函數創建的。 此共用函數已更新，以説明將 **"説明"** 按鈕從對話方塊移動到 **"** 按鈕，同時保留向後相容和可擴展的體系結構。
+##### <a name="dialogs-created-through-the-environment"></a>透過環境建立的對話
+ 許多 shell 對話方塊都是透過 **VBDialogBoxParam** 函式所建立。 此共用函式已更新，可協助您 **將 [說明] 按鈕從** 對話方塊移至 **？** 按鈕，同時保留可回溯相容且可擴充的架構。
 
- 具體來說 **，VBDialogBoxParam**函數查看一個按鈕的對話方塊範本，該按鈕的**IDHELP** （9） 或標籤是 **"説明**"或 **"説明"&**。 如果找到"説明"按鈕，則該按鈕將隱藏，**並將WS_EX_CONTEXTHELP**樣式添加到對話方塊中，對話方塊中放置**了 "説明"按鈕。** 對話方塊標題列中的按鈕。
+ 具體來說， **VBDialogBoxParam** 函式會查看識別碼為 **IDHELP** (9 之按鈕的對話方塊範本，) 或標籤 **是 [** 說明] 或 [ **&協助**]。 如果找到 [說明] 按鈕，就會隱藏它，並將 **WS_EX_CONTEXTHELP** 樣式新增至對話方塊，以放置 **？** 按鈕（在對話方塊的標題列中）。
 
- 創建對話方塊時，它會將對話方塊進程推送到堆疊上，並調用對話方塊，預處理對話方塊進程名為**DialogPreProc**。 何時 **？** 按一下按鈕，它將**SC_CONTEXTHELPWM_SYSCOMMAND**發送到對話方塊**WM_SYSCOMMAND**。 **DialogPreProc**捕獲此命令並將其更改為**WM_HELP**消息，該消息將傳遞到原始對話方塊進程。
+ 建立對話方塊時，它會將對話程式推送至堆疊，並使用名為 **DialogPreProc**的前置處理對話方塊程式來叫用對話方塊。 當 **？** 按一下按鈕，就會將**SC_CONTEXTHELP**的**WM_SYSCOMMAND**傳送給對話方塊。 **DialogPreProc**會捕捉此命令，並將其變更為傳遞給原始對話程式的**WM_HELP**訊息。
 
- 大多數環境創建的對話方塊在對話方塊上都有"説明"按鈕。 顯示對話方塊時，"説明"按鈕將自動隱藏，並且僅隱藏 **"説明"按鈕。** 按鈕工作正常。 如果 **？** 按鈕在 Windows 中被刪除或更改，此解決方案允許您快速移回原始説明按鈕。
+ 大部分環境建立的對話方塊都有對話方塊的 [說明] 按鈕。 顯示對話方塊時，[說明] 按鈕會自動隱藏，而只有 **？** 按鈕運作。 如果 **？** 按鈕會在 Windows 中移除或變更，此解決方案可讓您快速移回原始的 [說明] 按鈕。
 
- 此解決方案會做出四種可能導致 bug 的假設：
+ 此解決方案會進行四個可能導致錯誤的假設：
 
-- 對話方塊的説明按鈕是**IDHELP** （9）。
+- 對話方塊的 [說明] 按鈕 **IDHELP** (9) 。
 
-- 隱藏"説明"按鈕時，該對話方塊看起來正確。
+- 隱藏 [說明] 按鈕時，對話方塊會顯示正確。
 
-- 該對話方塊不能替換其 winproc。
+- 對話方塊不會取代其 winproc。
 
-- 對話方塊未嵌入到另一個對話方塊中。
+- 對話方塊不會內嵌在另一個對話方塊中。
 
-  如果對話方塊位於 msenv 中，並且不使用**VBDialogBoxParam，** 請先調查利用**VBDialogBoxParam，** 然後再實現您自己的處理常式。
+  如果您的對話位於 msenv 內且未使用 **VBDialogBoxParam**，請在執行您自己的處理常式之前，先調查利用 **VBDialogBoxParam** 。
 
-##### <a name="dialogs-created-through-other-packages"></a>通過其他包創建的對話方塊
- 您可以為駐留在 msenv 外部的對話方塊實現自己的解決方案。 對於 VSPackage 中的共用對話方塊類，請考慮將按鈕移動到標題列或在每個對話方塊上實現處理常式。 以下代碼是實現的框架，可説明您入門：
+##### <a name="dialogs-created-through-other-packages"></a>透過其他套件建立的對話
+ 您可以針對位於 msenv 外部的對話，執行自己的解決方案。 針對 VSPackage 中的共用對話方塊類別，請考慮將按鈕移至標題列，或在每個對話方塊上執行處理常式。 下列程式碼是可協助您開始使用之實作為的基本架構：
 
 ```
 struct DLGPROCITEM
@@ -377,8 +377,8 @@ INT_PTR CALLBACK DialogPreProc(HWND hwndDlg, UINT uMsg,
 }
 ```
 
-##### <a name="help-buttons-in-managed-code"></a>託管代碼中的説明按鈕
- 在託管代碼中，重寫視窗標題列"説明"按鈕的預設行為非常簡單。 下面是演示此行為的完整演示應用程式。 從本質上講，您需要重寫表單的**WndProc**方法，然後在截獲**SC_CONTEXTHELP**消息時觸發 F1 説明請求。
+##### <a name="help-buttons-in-managed-code"></a>受控碼中的說明按鈕
+ 在 managed 程式碼中，您可以輕鬆覆寫視窗標題列的 [說明] 按鈕的預設行為。 以下是示範此行為的完整示範應用程式。 基本上，您需要覆寫表單的 **WndProc** 方法，然後在攔截 **SC_CONTEXTHELP** 訊息時引發 F1 說明要求。
 
 ```
 using System;
@@ -423,4 +423,4 @@ public class HelpForm : Form
 ```
 
 ## <a name="see-also"></a>另請參閱
- [視覺化工作室佈局的字體和格式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)[，用於視覺化工作室](../../extensibility/ux-guidelines/layout-for-visual-studio.md)[通知和視覺化工作室進度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
+ Visual Studio 的[Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md) [通知和進度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)Visual Studio 配置的字型[和格式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)

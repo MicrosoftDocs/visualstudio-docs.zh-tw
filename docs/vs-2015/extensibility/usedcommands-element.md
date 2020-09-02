@@ -14,18 +14,18 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ba37458e0f8abca27047574170ab8aa3cc7a44ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186285"
 ---
 # <a name="usedcommands-element"></a>UsedCommands 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-UsedCommands 元素分組 UsedCommand 元素和其他 UsedCommands 分組。  
+UsedCommands 元素會將 UsedCommand 元素和其他 UsedCommands 群組分組。  
   
- UsedCommands 元素是選擇性的。 如果您未呼叫您的套件之外定義的命令，您不必在.vsct 檔案中加入此區段。  
+ UsedCommands 元素是選擇性的。 如果您未呼叫在套件之外定義的命令，就不需要在 .vsct 檔案中包含此區段。  
   
 ## <a name="syntax"></a>語法  
   
@@ -36,25 +36,25 @@ UsedCommands 元素分組 UsedCommand 元素和其他 UsedCommands 分組。
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
+|條件|選擇性。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
-|[UsedCommand 元素](../extensibility/usedcommand-element.md)|其他程式碼實作命令。|  
+|[UsedCommand 元素](../extensibility/usedcommand-element.md)|由其他程式碼所執行的命令。|  
   
 ### <a name="parent-elements"></a>父項目  
   
 |項目|描述|  
 |-------------|-----------------|  
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表整合式的開發環境 (IDE) 的 VSPackage 提供的命令 （例如，功能表項目、 功能表、 工具列和下拉式方塊） 的所有項目。|  
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表命令 (的所有元素，例如，功能表項目、功能表、工具列和下拉式方塊) VSPackage 提供給整合式開發環境 (IDE) 。|  
   
 ## <a name="example"></a>範例  
   

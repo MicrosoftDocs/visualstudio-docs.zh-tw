@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 145525dc12070d98dae83d592ae86a675bb605d2
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893407"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>How to：產生程式碼度量資料
@@ -48,7 +48,7 @@ ms.locfileid: "88893407"
 </RuleSet>
 ```
 
-### <a name="configuration"></a>組態
+### <a name="configuration"></a>設定
 
 您可以設定程式碼計量規則引發的臨界值。
 
@@ -336,7 +336,7 @@ Visual Studio 2015 包含的命令列程式碼度量工具也稱為 *Metrics.exe
 
 其他的度量（例如和）會 `CyclomaticComplexity` `MaintainabilityIndex` 使用與舊版 *Metrics.exe*相同的公式，但新的工具會計算 `IOperations` (邏輯來源指令的數目，) 而非中繼語言 (IL) 指令。 這些數位將與 Visual Studio IDE 和舊版 *Metrics.exe*所產生的數位稍有不同。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用程式碼度量結果視窗](../code-quality/working-with-code-metrics-data.md)
 - [程式碼度量值](../code-quality/code-metrics-values.md)

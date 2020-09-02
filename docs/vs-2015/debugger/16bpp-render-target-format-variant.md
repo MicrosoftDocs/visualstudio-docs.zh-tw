@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7b315c7ab9bb10d039e81ba26b1beb9c4447a205
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157563"
 ---
 # <a name="16bpp-render-target-format-variant"></a>16bpp 呈現目標格式變異
@@ -43,11 +43,11 @@ ms.locfileid: "68157563"
   
 - Usage 成員設定為 D3D11_USAGE_DEFAULT。  
   
-## <a name="restrictions-and-limitations"></a>限制  
+## <a name="restrictions-and-limitations"></a>限制事項  
  因為 B5G6R5 格式沒有 Alpha 色板，所以此變異不會保留 Alpha 內容。 如果您應用程式的呈現需要呈現目標中有 Alpha 色板，則不能只是切換至 B5G6R5 格式。  
   
 ## <a name="example"></a>範例  
- **16bpp 呈現目標格式**變體，即可重現建立使用呈現目標的`CreateTexture2D`使用如下的程式碼：  
+ 使用與下列類似的程式碼，即可針對使用所建立的呈現目標，重現 **16bpp 轉譯目標格式** 變異 `CreateTexture2D` ：  
   
 ```  
 D3D11_TEXTURE2D_DESC target_description;  

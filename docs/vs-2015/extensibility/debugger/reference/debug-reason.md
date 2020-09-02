@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON | Microsoft Docs
+title: DEBUG_REASON |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 95a537c703d4afd68bb291205e0c7da8d9b8fc59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143022"
 ---
-# <a name="debugreason"></a>DEBUG_REASON
+# <a name="debug_reason"></a>DEBUG_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定處理序已啟動偵錯，原因。  
+指定啟動處理常式以進行偵錯工具的原因。  
   
 ## <a name="syntax"></a>語法  
   
@@ -49,30 +49,30 @@ public enum enum_DEBUG_REASON {
   
 #### <a name="parameters"></a>參數  
  DEBUG_REASON_ERROR  
- 發生非特定的錯誤 （這用做預設條件時沒有其他理由調整）。  
+ 發生非特定的錯誤 (當其他原因都不符合) 時，就會使用此錯誤作為預設條件。  
   
  DEBUG_REASON_USER_LAUNCHED  
- 在使用者的要求啟動程序。  
+ 此程式是在使用者的要求上啟動。  
   
  DEBUG_REASON_USER_ATTACHED  
- 已在執行程序已附加至使用者。  
+ 已由使用者附加已在執行中的進程。  
   
  DEBUG_REASON_AUTO_ATTACHED  
- 此程序已自動附加至其啟動時。  
+ 進程會在啟動時自動附加至。  
   
  DEBUG_REASON_CAUSALITY  
- 處理序已啟動，因為*Just In Time* (JIT) 偵錯事件。  
+ 此程式是因為及時 (JIT) 的調試 *程式* 而啟動。  
   
 ## <a name="remarks"></a>備註  
- 傳回從[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)方法。  
+ 從 [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) 方法傳回。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

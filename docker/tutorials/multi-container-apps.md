@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.workload:
 - azure
 ms.openlocfilehash: 9513a3414a38aa02f6a4607a8c95bbf02c0e1cf6
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89178193"
 ---
 # <a name="multi-container-apps"></a>多容器應用程式
@@ -136,7 +136,7 @@ ms.locfileid: "89178193"
 
 ## <a name="run-your-app-with-mysql"></a>使用 MySQL 執行您的應用程式
 
-Todo 應用程式支援設定一些環境變數來指定 MySQL 連線設定。 分別是：
+Todo 應用程式支援設定一些環境變數來指定 MySQL 連線設定。 這些包括：
 
 - `MYSQL_HOST` -正在執行之 MySQL 伺服器的主機名稱
 - `MYSQL_USER` -用於連接的使用者名稱

@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 9da78f4c8e76f4e5b79f4cbdb0739d34fc465330
-ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89091447"
 ---
-# <a name="install-third-party-analyzers"></a>安裝協力廠商分析器
+# <a name="install-third-party-analyzers"></a>安裝第三方分析器
 
 Visual Studio 包含一組核心 .NET Compiler Platform (*Roslyn*) 分析器。 這些分析器一律為開啟。 您可以將其他分析器安裝為 NuGet 套件，或作為 *VSIX* 檔案中的 Visual Studio 延伸模組。
 

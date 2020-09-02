@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 12/13/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: 4247e5cfb936d79c2b2bea5ac68a16164f0c0ef0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79303334"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315014"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>使用 Visual Studio for Mac Tools for Unity
 
@@ -29,7 +29,7 @@ ms.locfileid: "79303334"
 Visual Studio for Mac Tools for Unity 包含存取 Unity API 文件的捷徑。 若要從 Visual Studio for Mac 存取 Unity API 文件，請將游標放在您要了解的 Unity API 上方，然後按 **⌘ 命令 + ‘**。
 
 ## <a name="intellisense-for-unity-messages"></a>Unity 訊息的 IntelliSense
-Unity 引擎將消息廣播給 MonoBehaviour 腳本，允許開發人員編寫對消息（如 OnMouseDown、OnTriggerEnter 等）做出反應的代碼。由於這些不是基本單行為類中的虛擬方法，因此某些 IDI（如 Mono開發）缺少 Unity 消息的代碼完成功能。
+Unity 引擎會將訊息廣播至 MonoBehaviour 腳本，讓開發人員能夠撰寫程式碼來回應訊息，例如 OnMouseDown、OnTriggerEnter 等等。因為這些不是基底 MonoBehaviour 類別中的虛擬方法，所以某些 Ide （例如 MonoDevelop）沒有 Unity 訊息的程式碼完成功能。
 
 不過，Visual Studio for Mac Tools for Unity 會將其 IntelliSense 功能擴充為 Unity 訊息。 這可在 MonoBehaviour 指令碼中輕鬆地實作 Unity 訊息，並協助了解 Unity API。 使用適用於 Unity 訊息的 IntelliSense：
 
@@ -71,7 +71,7 @@ Unity 引擎將消息廣播給 MonoBehaviour 腳本，允許開發人員編寫�
 
 ### <a name="add-a-new-unity-shader"></a>新增 Unity 著色器
 
-要添加新的 Unity 底片，**請按右鍵"解決方案**"鍵盤中的"資產"資料夾或子目錄，然後選擇"**添加>新底片**。
+若要新增 Unity 著色器，請以 **滑鼠右鍵按一下 Solution pad 中的 [資產] 資料夾** 或子目錄，然後選取 [ **新增 > 新的著色器**。
 
 ### <a name="add-a-new-folder"></a>新增資料夾
 

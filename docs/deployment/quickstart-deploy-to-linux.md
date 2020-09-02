@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - azure
 ms.openlocfilehash: 5b0b45d586fb6eb89eb458329f611d980d9415e0
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285465"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>使用 Visual Studio 將 ASP.NET Core 應用程式發行至 Linux 上的 App Service
@@ -28,33 +28,33 @@ ms.locfileid: "85285465"
 
 [!INCLUDE [quickstart-prereqs-azure-linux](includes/quickstart-prereqs-azure-linux.md)]
 
-## <a name="publish-to-azure-app-service-on-linux"></a>發行至 Linux 上的 Azure App Service
+## <a name="publish-to-azure-app-service-on-linux"></a>發佈至 Linux 上的 Azure App Service
 
 1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]**** (或使用 [建置]**** > [發行]**** 功能表項目)。
 
-    ![[專案] 內容功能表上的 [發佈] 命令方案總管](../deployment/media/quickstart-publish.png "選擇 [發行]")
+    ![方案總管的專案內容功能表上的 [發行] 命令](../deployment/media/quickstart-publish.png "選擇 [發行]")
 
-1. 在 [**發佈**] 對話方塊中，選取 [ **Azure**]。
+1. 在 [ **發行** ] 對話方塊中，選取 [ **Azure**]。
 
-    ![選擇發行目標](../deployment/media/quickstart-publish-azure-new.png)
+    ![選擇發佈目標](../deployment/media/quickstart-publish-azure-new.png)
 
-1. 選取 [ **Azure App Service （Linux）** **] 和 [下一步]**。
+1. 選取 **Azure App Service (Linux) ** 和 **下一步]**。
 
     ![選擇 Linux 上的 Azure App Service](../deployment/media/quickstart-publish-linux-select-azure-service.png)
 
-1. 如有需要，請使用您的 Azure 帳戶登入。 選取 [**建立新的 Azure App Service ...** ]
+1. 如有必要，請使用您的 Azure 帳戶登入。 選取 [ **建立新的 Azure App Service ...**
 
-    ![用來建立新實例 Azure App Service 的連結](../deployment/media/quickstart-publish-linux-create-new-link.png)
+    ![Azure App Service 建立新實例的連結](../deployment/media/quickstart-publish-linux-create-new-link.png)
 
-1. 在 [**建立 Azure App Service （Linux）** ] 對話方塊中，會填入 [**應用程式名稱**]、[**資源群組**] 和 [ **App Service 方案**] 專案欄位。 您可以保留這些名稱，或變更它們。 準備好時，請選取 [**建立**]。
+1. 在 [ **建立 Azure App Service (Linux) ** ] 對話方塊中，會填入 [ **應用程式名稱**]、[ **資源群組**] 和 [ **App Service 方案** ] 專案欄位。 您可以保留這些名稱，或變更它們。 準備好時，請選取 [ **建立**]。
 
     ![選擇 Azure App Service](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
 
-1. 在 [**發行**] 對話方塊中，已自動選取新建立的實例。 準備好時，按一下 **[完成]**。
+1. 在 [ **發行** ] 對話方塊中，會自動選取新建立的實例。 準備好時，按一下 **[完成]**。
 
     ![選擇 Azure App Service](../deployment/media/quickstart-publish-linux-select-instance.png)
 
-1. 選取 [發佈] 。 Visual Studio 會將應用程式部署至 Azure App Service，並在瀏覽器中載入 Web 應用程式。 專案屬性 [發行]**** 窗格會顯示網站 URL 和其他詳細資料。
+1. 選取 [發佈]。 Visual Studio 會將應用程式部署至 Azure App Service，並在瀏覽器中載入 Web 應用程式。 專案屬性 [發行]**** 窗格會顯示網站 URL 和其他詳細資料。
 
     ![顯示設定檔摘要的 [發行] 屬性窗格](../deployment/media/quickstart-publish-linux-summary-page.png)
 

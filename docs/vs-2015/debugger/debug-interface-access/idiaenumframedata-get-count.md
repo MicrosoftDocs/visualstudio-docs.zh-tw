@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumframedata:: Get_count |Microsoft Docs'
+title: IDiaEnumFrameData：： get_Count |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 29fcbf0dced646ec33c9ba8e54a9041f87bc01d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157954"
 ---
-# <a name="idiaenumframedatagetcount"></a>IDiaEnumFrameData::get_Count
+# <a name="idiaenumframedataget_count"></a>IDiaEnumFrameData::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取畫面格的資料元素的數目。  
+捕獲框架資料元素的數目。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,10 +35,10 @@ HRESULT get_Count ( 
   
 #### <a name="parameters"></a>參數  
  pRetVal  
- [out]傳回框架資料元素數目。  
+ 擴展傳回框架資料元素的數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   

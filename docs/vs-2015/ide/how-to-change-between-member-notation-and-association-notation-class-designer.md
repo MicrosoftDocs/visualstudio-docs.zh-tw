@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6a9a15b7284c647cb115c34b5655bdcaa7402ce0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663573"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>如何：在成員標記法和關聯標記法之間變更 (類別設計工具)
@@ -33,18 +33,18 @@ ms.locfileid: "72663573"
 
 1. 從方案總管的專案中開啟類別圖表 (.cd) 檔。
 
-2. 在類別圖表的類型圖形中，以滑鼠右鍵按一下代表關聯的成員屬性或欄位，然後選擇 [顯示為關聯]。
+2. 在類別圖表的類型圖形中，以滑鼠右鍵按一下代表關聯的成員屬性或欄位，然後選擇 [顯示為關聯]****。
 
     > [!TIP]
-    > 如果類型圖形中未顯示任何屬性或欄位，圖形區間可能已摺疊起來。 若要展開類型圖形，請按兩下區間名稱，或以滑鼠右鍵按一下類型圖形，然後選擇 [展開]。
+    > 如果類型圖形中未顯示任何屬性或欄位，圖形區間可能已摺疊起來。 若要展開類型圖形，請按兩下區間名稱，或以滑鼠右鍵按一下類型圖形，然後選擇 [展開]****。
 
      類型圖形區間的成員隨即消失，並出現連接兩種類型的關聯線。 關聯線會標示屬性或欄位的名稱。
 
 ### <a name="to-change-association-notation-to-member-notation"></a>若要將關聯標記法變更為成員標記法
 
-- 在類別圖表中，以滑鼠右鍵按一下關聯線，然後視需要選擇 [顯示為屬性] 或 [顯示為欄位]。
+- 在類別圖表中，以滑鼠右鍵按一下關聯線，然後視需要選擇 [顯示為屬性]**** 或 [顯示為欄位]****。
 
      關聯線隨即消失，而在圖表內該類型圖案的適當區間中會顯示屬性。
 
-## <a name="see-also"></a>請參閱
- [如何：建立類型之間的繼承（類別設計工具）](../ide/how-to-create-inheritance-between-types-class-designer.md) [如何：檢視類型之間的繼承（類別設計工具）](../ide/how-to-view-inheritance-between-types-class-designer.md) [查看類型和關聯性（類別設計工具）](../ide/viewing-types-and-relationships-class-designer.md) [如何：視覺效果集合關聯（類別設計工具）](../ide/how-to-visualize-a-collection-association-class-designer.md)
+## <a name="see-also"></a>另請參閱
+ [如何：建立類型之間的繼承 (類別設計工具) ](../ide/how-to-create-inheritance-between-types-class-designer.md) [如何：檢視類型之間的繼承 (類別設計工具](../ide/how-to-view-inheritance-between-types-class-designer.md)) 視圖[類型和關聯性 (](../ide/viewing-types-and-relationships-class-designer.md)類別設計工具[如何：視覺效果集合關聯) ](../ide/how-to-visualize-a-collection-association-class-designer.md) (類別設計工具

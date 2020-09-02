@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2::GetName |Microsoft Docs
+title: IDebugDocument2：： GetName |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09456b20faf4d5f5ea09baa55e0a7fd78a19a95c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186653"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得數種形式之一的文件的名稱。  
+以數種形式的其中一種取得檔的名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,16 +42,16 @@ int GetName( 
   
 #### <a name="parameters"></a>參數  
  `gnType`  
- [in]值，以從[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)列舉，決定要傳回名稱的類型。  
+ 在 [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) 列舉中的值，可決定要傳回的名稱類型。  
   
  `pbstrFileName`  
- [out]傳回字串，包含文件名稱。  
+ 擴展傳回包含檔案名稱的字串。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 為標題或檔案名稱或甚至是檔案名稱的一部分，這個方法可以比方說，會傳回文件的名稱。  
+ 例如，這個方法可以將檔的名稱以標題或檔案名或檔案名的一部分傳回。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   

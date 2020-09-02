@@ -1,5 +1,5 @@
 ---
-title: 作法：在 Managed 程式碼中設定執行緒名稱 |Microsoft Docs
+title: 如何：在 Managed 程式碼中設定執行緒名稱 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,16 +20,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b800fbd2f39d75f110a059c70b87a203eb72e7d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157667"
 ---
-# <a name="how-to-set-a-thread-name-in-managed-code"></a>作法：在受控碼中設定執行緒名稱
+# <a name="how-to-set-a-thread-name-in-managed-code"></a>如何：在 Managed 程式碼中設定執行緒名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在所有 Visual Studio 版本中，都可以將執行緒命名。 將執行緒命名後，在 [執行緒]  視窗中追蹤執行緒會很方便。 因為**執行緒**視窗無法使用 Visual Studio Express 版本中，執行緒命名在 Express 版中有不太有用。  
+在所有 Visual Studio 版本中，都可以將執行緒命名。 將執行緒命名後，在 [執行緒]**** 視窗中追蹤執行緒會很方便。 因為 [ **執行緒** ] 視窗無法在 Visual Studio Express 版本中使用，所以執行緒命名在 Express 版本中沒有足夠的公用程式。  
   
  若要在 Managed 程式碼內設定執行緒名稱，請使用 <xref:System.Threading.Thread.Name%2A> 屬性。  
   
@@ -56,5 +56,5 @@ End Sub
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Debug 多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：在機器碼中設定執行緒名稱](../debugger/how-to-set-a-thread-name-in-native-code.md)

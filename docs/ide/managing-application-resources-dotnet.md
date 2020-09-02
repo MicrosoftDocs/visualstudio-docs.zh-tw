@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1815b0efeebf98587fe07384ea0b2c8d1f5e1d90
-ms.sourcegitcommit: f4d734329c82f2c8005b36af4b2b5516d90e6c63
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88992364"
 ---
 # <a name="manage-application-resources-net"></a>管理應用程式資源 (.NET)

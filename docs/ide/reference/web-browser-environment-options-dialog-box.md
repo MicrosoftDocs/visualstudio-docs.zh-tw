@@ -22,13 +22,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8915bef3bba477dd515b1d176971cfb9949e9899
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596498"
 ---
-# <a name="options-dialog-box-environment--web-browser"></a>選項對話方塊：環境\>Web 瀏覽器
+# <a name="options-dialog-box-environment--web-browser"></a>選項對話方塊：環境 \> 網頁瀏覽器
 
 設定內部網頁瀏覽器和 Internet Explorer 的選項。 若要存取這個對話方塊，請按一下 [工具]**** 功能表中的 [選項]****，展開 [環境]**** 資料夾，然後選取 [網頁瀏覽器]****。
 
@@ -52,7 +52,7 @@ ms.locfileid: "75596498"
 
 - **原始檔編輯器**：選取即可在[編輯器](../../ide/writing-code-in-the-code-and-text-editor.md)中檢視原始檔。
 
-- **HTML 編輯器**選擇以查看[HTML 設計器](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)中的源。 使用此選項可在下列兩種檢視之一編輯網頁：設計檢視或標準文字原始檔檢視。
+- **HTML 編輯器** 選取即可在 [HTML 設計](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)工具中查看來源。 使用此選項可在下列兩種檢視之一編輯網頁：設計檢視或標準文字原始檔檢視。
 
 - **外部編輯器**：選取即可在其他編輯器中檢視原始檔。 請指定您選擇的任何編輯器路徑，例如 Notepad.exe。
 
@@ -65,5 +65,5 @@ ms.locfileid: "75596498"
 
 ## <a name="see-also"></a>另請參閱
 
-- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)
+- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
 - [HTML 設計工具](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

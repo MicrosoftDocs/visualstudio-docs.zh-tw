@@ -1,5 +1,5 @@
 ---
-title: '&lt;描述&gt;項目 （ClickOnce 部署） |Microsoft Docs'
+title: '&lt;&gt; (ClickOnce 部署) 的 description 元素 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,16 +18,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cadf4a0b525e5603247748edd63516dc26d8a0b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187751"
 ---
-# <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;描述&gt;項目 （ClickOnce 部署）
+# <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;&gt;ClickOnce 部署 (description 元素) 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-識別用來建立 shell 的存在的應用程式資訊和**新增或移除程式**控制台 中的項目。  
+識別用來建立 shell 存在性的應用程式資訊，以及主控台中的 [ **新增或移除程式** ] 專案。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,21 +41,21 @@ ms.locfileid: "68187751"
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>項目和屬性  
- `description` 項目是必要的，且位於 `urn:schemas-microsoft-com:asm.v1` 命名空間。 它包含沒有子項目，並具有下列屬性。  
+## <a name="elements-and-attributes"></a>元素和屬性  
+ `description` 項目是必要的，且位於 `urn:schemas-microsoft-com:asm.v1` 命名空間。 它不包含任何子項目，而且具有下列屬性。  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
-|`publisher`|必要項。 識別在 Windows 中的圖示位置所使用的公司名稱**開始** 功能表並**新增或移除程式**在控制台中，當部署已安裝的項目。|  
-|`product`|必要項。 識別完整的產品名稱。 用來做為安裝在 Windows 中的圖示的標題**啟動**功能表。|  
-|`suiteName`|選擇性。 識別的子資料夾中`publisher`在 Windows 中的資料夾**啟動**功能表。|  
-|`supportUrl`|選擇性。 指定支援 URL 所示**新增或移除程式**控制台 中的項目。 此 URL 的捷徑也會建立在 Windows 中的應用程式支援**啟動**功能表上，當將部署設定進行安裝。|  
+|`publisher`|必要。 當部署已設定為安裝時，識別用於 Windows [ **開始** ] 功能表中的圖示位置，以及主控台中的 [ **新增或移除程式** ] 專案的公司名稱。|  
+|`product`|必要。 識別完整的產品名稱。 用來當做 Windows [ **開始** ] 功能表中所安裝圖示的標題。|  
+|`suiteName`|選擇性。 `publisher`在 Windows [**開始**] 功能表中，識別資料夾內的子資料夾。|  
+|`supportUrl`|選擇性。 指定主控台中的 [ **新增或移除程式** ] 專案所顯示的支援 URL。 當部署設定為安裝時，也會針對 Windows [ **開始** ] 功能表中的應用程式支援，建立此 URL 的快捷方式。|  
   
 ## <a name="remarks"></a>備註  
- 所有的部署設定中需要的 description 項目。  
+ 所有部署設定中都需要 description 元素。  
   
 ## <a name="example"></a>範例  
- 下列程式碼範例說明`description`中的項目[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署資訊清單。 此程式碼範例是針對提供之較大範例的一部分[ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)主題。  
+ 下列程式碼範例說明 `description` [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署資訊清單中的元素。 這個程式碼範例是針對 [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md) 主題提供之較大範例的一部分。  
   
 ```  
 <description   
