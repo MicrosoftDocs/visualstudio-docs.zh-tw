@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 06fbc7f8574a5b66e731bb2e7975203866f3eb72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195506"
 ---
 # <a name="per-thread-summary-report"></a>個別執行緒摘要報表
@@ -26,10 +26,10 @@ ms.locfileid: "68195506"
 此橫條圖會顯示目前可見的時間範圍內，每個未隱藏執行緒在每個活動類別所花費的時間比例。 「執行」表示執行緒正在執行；所有其他分類則表示執行緒正在等待某個項目。  
   
 ## <a name="see-also"></a>另請參閱  
- [執行時間 (執行緒檢視)](../profiling/execution-time-threads-view.md)   
- [I/O 時間 (執行緒檢視)](../profiling/i-o-time-threads-view.md)   
+ [執行時間 (執行緒視圖) ](../profiling/execution-time-threads-view.md)   
+ [ (執行緒 View) 的 i/o 時間 ](../profiling/i-o-time-threads-view.md)   
  [記憶體管理時間](../profiling/memory-management-time.md)   
- [先佔時間](../profiling/preemption-time.md)   
+ [搶先時間](../profiling/preemption-time.md)   
  [睡眠時間](../profiling/sleep-time.md)   
  [同步處理時間](../profiling/synchronization-time.md)   
  [UI 處理時間](../profiling/ui-processing-time.md)   

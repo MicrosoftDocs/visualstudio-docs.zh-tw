@@ -34,13 +34,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80472829"
 ---
-# <a name="options-dialog-box-text-editor--general"></a>選項對話框:文字編輯器\>總
+# <a name="options-dialog-box-text-editor--general"></a>選項對話方塊：文字編輯器 \> 一般
 
 此對話方塊可讓您變更 Visual Studio 程式碼和文字編輯器的全域設定。 若要顯示這個對話方塊，請選取 [工具]**** 功能表上的 [選項]****，並展開 [文字編輯器]**** 資料夾，然後選取 [一般]****。
 
@@ -72,7 +72,7 @@ ms.locfileid: "80472829"
 
 選取 [在預覽檢視中開啟定義]**** 核取方塊，以在視窗中顯示元素的定義，而不需從您目前在程式碼編輯器中的位置尋覽到他處。
 
-## <a name="display"></a>顯示器
+## <a name="display"></a>顯示
 
 ### <a name="selection-margin"></a>選取範圍邊界
 
@@ -94,9 +94,9 @@ ms.locfileid: "80472829"
 
 選取時，編輯器中會出現對齊結構化程式碼區塊的垂直線，可讓您輕鬆地識別個別程式碼區塊。
 
-### <a name="show-file-health-indicator"></a>顯示檔案執行狀況指示器
+### <a name="show-file-health-indicator"></a>顯示檔案健康情況指標
 
-勾選此選項後,包含程式碼清理選項的檔運行狀況指示器狀態(錯誤、警告)欄將顯示在編輯器的左下角。
+選取時，會在編輯器的左下角顯示檔案健康情況指標狀態 (錯誤、警告) 列和程式碼清除選項。
 
 ## <a name="see-also"></a>另請參閱
 
@@ -105,4 +105,4 @@ ms.locfileid: "80472829"
 - [選項、文字編輯器、副檔名](../../ide/reference/options-text-editor-file-extension.md)
 - [識別及自訂鍵盤快速鍵](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [自訂編輯器](../how-to-change-text-case-in-the-editor.md)
-- [Using IntelliSense](../../ide/using-intellisense.md)
+- [使用 IntelliSense](../../ide/using-intellisense.md)

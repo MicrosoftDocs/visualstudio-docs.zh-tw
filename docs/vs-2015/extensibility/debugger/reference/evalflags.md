@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS | Microsoft Docs
+title: EVALFLAGS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9e6ee00402c13b2a79e4e6757a127211eda9c3c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149391"
 ---
 # <a name="evalflags"></a>EVALFLAGS
@@ -53,39 +53,39 @@ public enum enum_EVALFLAGS {
   
 ## <a name="members"></a>成員  
  EVAL_RETURNVALUE  
- 指定的評估傳回的值，如果有的話。  
+ 指定要評估的傳回值（如果有的話）。  
   
  EVAL_NOSIDEEFFECTS  
  指定不允許副作用。  
   
  EVAL_ALLOWBPS  
- 指定中斷點停止。  
+ 指定在中斷點上停止。  
   
  EVAL_ALLOWERRORREPORT  
- 指定允許主應用程式報告的錯誤。 主要用於在 Internet Explorer 中的指令碼中的運算式評估。  
+ 指定要允許的主機錯誤報表。 主要用於 Internet Explorer 中腳本的運算式評估。  
   
  EVAL_FUNCTION_AS_ADDRESS  
- 要評估做為位址，而不是叫用函式的強制函式。  
+ 強制將函數評估為位址，而不是叫用函數。  
   
  EVAL_NOFUNCEVAL  
- 函式可防止進行評估。 例如，請考慮`int`運算式中的語彙基元`myExpression(int) + 10`。 為位址，但不是能作為值，就可以正確評估此函式。  
+ 防止評估函數。 例如，請考慮 `int` 運算式中的 token `myExpression(int) + 10` 。 此函數可以正確地評估為位址，但不能作為值。  
   
  EVAL_NOEVENTS  
- 旗標，指出工作階段的偵錯管理員 (SDM) 或 ide，不應該傳送之運算式評估期間發生的事件。  
+ 旗標，表示在運算式評估期間發生的事件，不應該傳送至會話 debug manager (SDM) 或 IDE。  
   
 ## <a name="remarks"></a>備註  
- 這些旗標會傳遞做為引數[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)並[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)方法。  
+ 這些旗標會以引數的形式傳遞至 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 和 [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 方法。  
   
- 這些旗標可能會與位元 OR 運算結合。  
+ 這些旗標可以結合位 OR。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)

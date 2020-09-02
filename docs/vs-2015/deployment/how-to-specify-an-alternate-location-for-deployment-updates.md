@@ -1,5 +1,5 @@
 ---
-title: 如何:為部署更新指定備用位置 |微軟文件
+title: 如何：指定部署更新的替代位置 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,54 +17,54 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8b6388833e6574fc1d631d391fa7b67d5f0a3372
-ms.sourcegitcommit: c1339f64fbeee6f17bf80fedea81afc8dac40dc0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82037216"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>如何：指定部署更新的其他位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-最初可以從[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]CD 或檔共享安裝應用程式,但應用程式必須檢查 Web 上的定期更新。 您可以為部署清單中的更新指定備用位置,以便應用程式可以在初始安裝後從 Web 進行更新。  
+您可以 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 從 CD 或檔案共用一開始就安裝您的應用程式，但應用程式必須檢查網路上的定期更新。 您可以在部署資訊清單中指定更新的替代位置，讓您的應用程式可以在初始安裝之後，從 Web 更新自己的位置。  
   
 > [!NOTE]
-> 必須將應用程式設定為在本地安裝才能使用此功能。 有關詳細資訊,請參閱[演練:手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 此外,如果從網路安裝[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式,則設置備用位置會導致[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]將該位置用於初始安裝和所有後續更新。 如果在本地安裝應用程式(例如,從CD),則使用原始媒體執行初始安裝,並且所有後續更新都將使用備用位置。  
+> 您的應用程式必須設定為在本機安裝，才能使用此功能。 如需詳細資訊，請參閱 [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 此外，如果您 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 從網路安裝應用程式，則設定替代位置會導致 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 初始安裝和所有後續更新都使用該位置。 如果您在本機安裝應用程式 (例如，從 CD) ，則會使用原始媒體來執行初始安裝，而所有後續的更新都會使用替代位置。  
   
-### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>使用 MageUI.exe(基於 Windows 表單的實用程式)指定更新的備用位置  
+### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>使用 MageUI.exe (Windows Forms 型公用程式來指定更新的替代位置)   
   
-1. 開啟 .NET 框架指令提示符並鍵入:  
+1. 開啟 .NET Framework 命令提示字元，然後輸入：  
   
      **mageui.exe**  
   
-2. 在 **「檔案**」選單上,選擇 **「打開」** 以開啟應用程式的部署清單。  
+2. 在 [檔案 **] 功能表上，選擇 [** **開啟** ] 以開啟應用程式的部署資訊清單。  
   
 3. 選取 [部署選項]**** 索引標籤。  
   
-4. 在名為 **「啟動位置」** 的文字框中,輸入包含應用程式更新的部署清單的目錄的網址。  
+4. 在名為 [ **啟動位置**] 的文字方塊中，輸入將包含應用程式更新部署資訊清單之目錄的 URL。  
   
-5. 保存部署清單。  
+5. 儲存部署資訊清單。  
   
-### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>使用 Mage.exe 指定更新的備用位置  
+### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>使用 Mage.exe 指定更新的替代位置  
   
 1. 開啟 .NET Framework 命令提示字元。  
   
-2. 使用以下命令設置更新位置。 在此示例中 **,HelloWorld.exe.應用程式**是[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式清單的路徑,該清單始終具有 .`http://adatum.com/Update/Path`應用程式擴展,並且[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]是檢查應用程式更新的 URL。  
+2. 使用下列命令來設定更新位置。 在此範例中， **HelloWorld.exe** 是應用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 程式資訊清單的路徑，其一律為應用程式副檔名，而 `http://adatum.com/Update/Path` 是 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 將檢查應用程式更新的 URL。  
   
-     **馬age - 更新HelloWorld.exe.應用程式\/-提供者 Url http: /adatum.com/Update/Path**  
+     **Mage-更新 HelloWorld.exe. 應用程式 ProviderUrl HTTP： \/ /adatum.com/Update/Path**  
   
 3. 儲存檔案。  
   
     > [!NOTE]
-    > 現在,您需要使用 Mage.exe 重新簽名檔。 有關詳細資訊,請參閱[演練:手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+    > 您現在需要使用 Mage.exe 重新簽署檔案。 如需詳細資訊，請參閱 [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
- 如果從離線媒體(如 CD)安裝應用程式,並且電腦處於連線狀態,請[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]首先檢查部署清單中`<deploymentProvider>`標記指定的 URL,以確定更新位置是否包含應用程式的較新版本。 如果是,[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]請直接從那裡安裝應用程式,而不是從初始安裝目錄安裝應用程式,並且通用語言運行時 (CLR) 使用`<deploymentProvider>`確定應用程式的信任級別。 如果電腦處於離線狀態或`<deploymentProvider>`無法存取,則從[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]CD 進行安裝,CLR 會根據安裝點授予信任;否則,CLR 會根據安裝點授予信任。對於CD安裝,這意味著您的應用程式獲得完全信任。 所有後續更新都將繼承該信任級別。  
+ 如果您是從離線媒體（如 CD）安裝您的應用程式，且電腦已上線，則會 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 先檢查部署資訊清單中的標記所指定的 URL， `<deploymentProvider>` 以判斷更新位置是否包含較新版本的應用程式。 如果有，則會 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 直接從該處安裝應用程式，而不是從初始安裝目錄，而 common language runtime (CLR) 會使用來決定您應用程式的信任層級 `<deploymentProvider>` 。 如果電腦已離線或無法連線 `<deploymentProvider>` ，則會 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 從 CD 安裝，且 CLR 會根據安裝點來授與信任; 若為 CD 安裝，這表示您的應用程式會收到完全信任。 所有後續的更新都會繼承該信任層級。  
   
- 使用[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]`<deploymentProvider>`的所有應用程式都應在其應用程式清單中顯式聲明所需的許可權,以便應用程式不會在不同的電腦上接收不同級別的信任。  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]使用的所有應用程式都 `<deploymentProvider>` 應該在其應用程式資訊清單中明確宣告所需的許可權，讓應用程式不會在不同的電腦上收到不同的信任層級。  
   
 ## <a name="see-also"></a>另請參閱  
- [演練:手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [單擊"一次性部署清單"](../deployment/clickonce-deployment-manifest.md)   
- [保護點選次數應用程式](../deployment/securing-clickonce-applications.md)   
+ [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
+ [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)   
+ [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
  [選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)

@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 488caf02a20b4f0855df1ba2ef64c85e70e1a6a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149638"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 工作
@@ -66,7 +66,7 @@ ms.locfileid: "68149638"
   
 - `BootstrapperItems`  
   
-   選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。  
+   選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。  
   
    指定要在啟動載入器內建置的產品。 傳遞給此參數的項目應具有下列語法：  
   
@@ -95,11 +95,11 @@ ms.locfileid: "68149638"
   
    指定啟動載入器用來尋找要安裝之安裝必要條件的位置。 此參數的值如下：  
   
-  - `HomeSite`：表示必要條件已由元件廠商所裝載。  
+  - `HomeSite`︰表示必要條件已由元件廠商所裝載。  
   
-  - `Relative`：表示必要條件位於應用程式相同的位置。  
+  - `Relative`︰表示必要條件位於應用程式的相同位置。  
   
-  - `Absolute`：表示可在集中式 URL 中找到所有元件。 此值應該與 `ComponentsUrl` 輸入參數搭配使用。  
+  - `Absolute`︰表示可在集中式 URL 中找到所有元件。 此值應該與 `ComponentsUrl` 輸入參數搭配使用。  
   
     如果未指定 `ComponentsLocation`，預設會使用 `HomeSite`。  
   
@@ -152,7 +152,7 @@ ms.locfileid: "68149638"
    如果是 `true`，啟動載入器會在指定的輸入啟動載入器項目上執行 XSD 驗證。 此參數的預設值為 `false`。  
   
 ## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="example"></a>範例  
  下列範例會使用 `GenerateBootstrapper` 工作，來安裝必須安裝 [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] 做為必要條件的應用程式。  
@@ -179,5 +179,5 @@ ms.locfileid: "68149638"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [工作](../msbuild/msbuild-tasks.md)   
+ [任務](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

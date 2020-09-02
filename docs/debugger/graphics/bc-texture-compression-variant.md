@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c5faf19632d746105deed3a36af6943627594175
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72736153"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 紋理壓縮變異
@@ -54,11 +54,11 @@ ms.locfileid: "72736153"
 
  如果未列出您紋理的格式，則不會修改紋理。
 
-## <a name="restrictions-and-limitations"></a>限制
+## <a name="restrictions-and-limitations"></a>限制事項
  有時，使用 B8G8R8A8 或 R8G8B8A8 影像格式變化所建立的紋理，沒有確實使用 Alpha 色板，但是變異沒有方法知道是否有使用它。 為了在使用 Alpha 色板時維護正確性，變異一律會將這些格式編碼為效率較低的 BC3 格式。 您可以透過此變異，協助圖形畫面格分析更了解您應用程式的潛在呈現效能，方法是在未使用 Alpha 色板時，使用 B8G8R8X8 影像格式變化，讓變異可以使用效率較高的 BC1 格式。
 
 ## <a name="example"></a>範例
  此變異會先在執行階段對紋理進行區塊壓縮，再呼叫 `CreateTexture2D`。 建議您不要對實際執行程式碼使用此方式，因為未壓縮的紋理會耗用較多的磁碟空間，而且因為額外步驟可能會大幅增加應用程式中的載入時間，畢竟區塊壓縮需要大量計算資源來進行編碼。 建議您改用屬於您組建管線的影像編輯器或影像處理器，來離線壓縮紋理。 這些方式會減少磁碟空間需求、去除應用程式中的執行階段額外負荷，以及提供更多的處理時間，讓您可以保留最佳影像品質。
 
-## <a name="see-also"></a>請參閱
-- [二分之一/四分之一紋理維度變化](half-quarter-texture-dimensions-variant.md)
+## <a name="see-also"></a>另請參閱
+- [半/季材質維度變異](half-quarter-texture-dimensions-variant.md)

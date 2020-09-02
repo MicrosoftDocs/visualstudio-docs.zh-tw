@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c1f00b0ad5eae835e4ed5aacb4819cb25b342e2f
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468256"
 ---
 # <a name="idiaenuminjectedsourcesreset"></a>IDiaEnumInjectedSources::Reset
-將列舉序列重設為開頭。
+將列舉順序重設為開頭。
 
 ## <a name="syntax"></a>語法
 

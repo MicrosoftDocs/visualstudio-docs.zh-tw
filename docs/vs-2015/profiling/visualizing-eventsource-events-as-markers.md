@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690209"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>將 EventSource 事件顯示為標記
@@ -37,21 +37,21 @@ ms.locfileid: "65690209"
   
 |ETW 層級|並行視覺化檢視重要性|  
 |---------------|---------------------------------------|  
-|win:LogAlways|一般|  
-|win:Critical|Critical|  
-|win:Error|Critical|  
-|win:Warning|High|  
-|win:Informational|一般|  
+|win:LogAlways|正常|  
+|win:Critical|重要|  
+|win:Error|重要|  
+|win:Warning|高|  
+|win:Informational|正常|  
 |win:Verbose|低|  
 |大於 win:verbose|低|  
   
-### <a name="series-name"></a>序列名稱  
+### <a name="series-name"></a>系列名稱  
  用來當成序列名稱的事件工作名稱。 如果事件未定義任何工作，序列名稱為空白。  
   
-### <a name="category"></a>分類  
+### <a name="category"></a>類別  
  如果層級為 win:Critical 或 win:Error，則分類會是警示 (-1)。 否則，該分類為預設值 (0)。  
   
-### <a name="text"></a>文字  
+### <a name="text"></a>Text  
  如果事件定義為 printf 類型的格式化文字訊息，其會顯示為標記的描述。 否則，描述會是事件名稱和每個裝載欄位的值。  
   
 ## <a name="customizing-visualization-of-eventsource-events"></a>自訂 EventSource 事件的視覺化  
@@ -73,21 +73,21 @@ ms.locfileid: "65690209"
   
 |cvImportance 值|並行視覺化檢視重要性|  
 |------------------------|---------------------------------------|  
-|0|一般|  
-|1|Critical|  
-|2|High|  
-|3|High|  
-|4|一般|  
+|0|正常|  
+|1|重要|  
+|2|高|  
+|3|高|  
+|4|正常|  
 |5|低|  
 |所有其他的值|低|  
   
-### <a name="series-name"></a>序列名稱  
+### <a name="series-name"></a>系列名稱  
  使用 `cvSeries` 事件欄位 (一個字串)，來控制並行視覺化檢視提供給 EventSource 事件的序列名稱。  
   
-### <a name="category"></a>分類  
+### <a name="category"></a>類別  
  使用 `cvCategory` 欄位 (一個位元組)，來控制並行視覺化檢視提供給 EventSource 事件的分類。  
   
-### <a name="text"></a>文字  
+### <a name="text"></a>Text  
  使用 `cvTextW` 欄位 (一個字串)，來控制並行視覺化檢視提供給 EventSource 事件的描述。  
   
 ### <a name="spanid"></a>SpanID  
@@ -97,4 +97,4 @@ ms.locfileid: "65690209"
 > 使用 SpanID 將延伸範圍巢狀化，不支援允許其在相同執行緒上部分重疊，或允許其在一個執行緒上開始並在另一個執行緒上結束。  
   
 ## <a name="see-also"></a>另請參閱  
- [並行視覺化檢視標記](../profiling/concurrency-visualizer-markers.md)
+ [並行視覺化檢視中的標記](../profiling/concurrency-visualizer-markers.md)

@@ -1,5 +1,5 @@
 ---
-title: 建立使用快取資料集的主版詳細資料關聯性
+title: 使用快取資料集建立主要詳細資料關聯性
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,182 +14,182 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0acf84dd983a8c10f2af526ae0bb904eaa90a360
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67328358"
 ---
-# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>逐步解說：建立使用快取的資料集的主版詳細資料關聯性
-  本逐步解說會示範在工作表，來建立主從式關聯和快取資料，以便可以離線使用方案。
+# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>逐步解說：使用快取資料集建立主要詳細資料關聯
+  本逐步解說將示範如何在工作表上建立主要/詳細資料關聯，以及如何快取資料，讓方案可以離線使用。
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
  在這個逐步解說期間，您將了解如何：
 
-- 將控制項加入工作表。
+- 將控制項新增至工作表。
 
-- 設定快取的工作表中的資料集。
+- 設定要在工作表中快取的資料集。
 
-- 加入程式碼，以啟用捲動記錄。
+- 加入程式碼以啟用記錄的滾動。
 
 - 測試您的專案。
 
 > [!NOTE]
-> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱 [個人化 VISUAL STUDIO IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>必要條件
- 您需要下列元件才能完成此逐步解說：
+ 您需要下列元件才能完成這個逐步解說：
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
-- Northwind SQL Server 範例資料庫的存取。 資料庫可以是您的開發電腦或伺服器上。
+- 存取 Northwind SQL Server 範例資料庫。 資料庫可以位於開發電腦或伺服器上。
 
-- 讀取和寫入至 SQL Server 資料庫的權限。
+- 從 SQL Server 資料庫讀取和寫入的許可權。
 
 ## <a name="create-a-new-project"></a>建立新專案
- 在此步驟中，您將建立的 Excel 活頁簿專案。
+ 在這個步驟中，您將建立 Excel 活頁簿專案。
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 建立 Excel 活頁簿專案同名**我的主版詳細資料**，使用 Visual Basic 或 C#。 請確定**建立新的文件**已選取。 如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 使用 Visual Basic 或 c #，建立具有「 **我的主版-詳細資料**」名稱的 Excel 活頁簿專案。 確定已選取 [ **建立新檔** ]。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-   Visual Studio 設計工具中開啟新的 Excel 活頁簿，並將**我的主版詳細資料**專案加入**方案總管 中**。
+   Visual Studio 會在設計工具中開啟新的 Excel 活頁簿，並將 [ **我的主版-詳細資料** ] 專案加入 **方案總管**。
 
 ## <a name="create-the-data-source"></a>建立資料來源
  使用 [ **資料來源** ] 視窗將型別資料集加入專案。
 
 ### <a name="to-create-the-data-source"></a>若要建立資料來源
 
-1. 如果**資料來源**看不到視窗，顯示，請在功能表列選擇**檢視** > **其他 Windows**  >  **資料來源**。
+1. 如果看不到 [**資料來源**] 視窗，請在功能表列上選擇 [ **View**  >  **Other Windows**  >  **資料來源**]。
 
 2. 選擇 [ **加入新資料來源** ] 以啟動 [ **資料來源組態精靈**]。
 
-3. 選取 [**資料庫**，然後按一下**下一步]** 。
+3. 選取 [ **資料庫** ]，然後按 **[下一步]**。
 
-4. 選取資料連接至 Northwind 範例 SQL Server 資料庫，或使用 [新增連線**新的連接**] 按鈕。
+4. 選取與 Northwind 範例 SQL Server 資料庫的資料連線，或使用 [ **新增連接** ] 按鈕來加入新的連接。
 
-5. 選取或建立連線後, 按一下 [**下一步]** 。
+5. 選取或建立連接之後，請按 **[下一步]**。
 
-6. 清除 [可儲存連線，如果已選取，選項，然後按**下一步]** 。
+6. 如果已選取連接，請清除選項來儲存連接，然後按 **[下一步]**。
 
-7. 依序展開**資料表**中的節點**資料庫物件**視窗。
+7. 展開 [**資料庫物件**] 視窗中的 [**資料表**] 節點。
 
-8. 選取**訂單**資料表並**Order Details**資料表。
+8. 選取 [ **Orders** ] 資料表和 [ **Order Details** ] 資料表。
 
-9. 按一下 [ **完成**]。
+9. 按一下 [完成]  。
 
-   精靈會新增兩個資料表**Zdroje dat**視窗。 它也將具類型資料集加入專案中可見**方案總管 中**。
+   Wizard 會將這兩個數據表加入至 [ **資料來源** ] 視窗。 它也會將具類型的資料集加入至 **方案總管**中可見的專案。
 
-## <a name="add-controls-to-the-worksheet"></a>將控制項加入工作表
- 在此步驟中，您會將已命名的範圍、 list 物件和兩個按鈕新增至第一個工作表。 首先，新增已命名的範圍及清單中的物件**Zdroje dat**視窗，讓它們自動繫結至資料來源。 接下來，新增按鈕等，從**工具箱**。
+## <a name="add-controls-to-the-worksheet"></a>將控制項新增至工作表
+ 在此步驟中，您將會在第一個工作表中加入一個命名範圍、清單物件和兩個按鈕。 首先，從 [ **資料來源** ] 視窗加入命名範圍和清單物件，讓它們自動系結至資料來源。 接下來，從 [ **工具箱**] 加入按鈕。
 
-### <a name="to-add-a-named-range-and-a-list-object"></a>將已命名的範圍和清單物件
+### <a name="to-add-a-named-range-and-a-list-object"></a>若要加入命名範圍和清單物件
 
-1. 確認**我的主要 Detail.xlsx**活頁簿是在 Visual Studio 設計工具中開啟具有**Sheet1**顯示。
+1. 確認 **Master-Detail.xlsx** 活頁簿已在 Visual Studio 設計工具中開啟，並顯示 **Sheet1** 。
 
-2. 開啟**資料來源**視窗中，展開**訂單**節點。
+2. 開啟 [ **資料來源** ] 視窗，並展開 [ **Orders** ] 節點。
 
-3. 選取  **OrderID**資料行，然後按一下出現的下拉式箭號。
+3. 選取 [ **訂單 id** ] 資料行，然後按一下出現的下拉箭號。
 
-4. 按一下  **NamedRange**在下拉式清單，然後拖曳**OrderID**加入儲存格的資料行**A2**。
+4. 按一下下拉式清單中的 [ **NamedRange** ]，然後將 [ **訂單** ] 資料行拖曳至儲存格 **A2**。
 
-     A<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項，名為`OrderIDNamedRange`會建立在資料格中**A2**。 在此同時<xref:System.Windows.Forms.BindingSource>名為`OrdersBindingSource`，資料表配接器和<xref:System.Data.DataSet>執行個體加入至專案。 控制項所繫結<xref:System.Windows.Forms.BindingSource>，它接著會繫結至<xref:System.Data.DataSet>執行個體。
+     <xref:Microsoft.Office.Tools.Excel.NamedRange> `OrderIDNamedRange` 在儲存格**A2**中會建立名為的控制項。 同時， <xref:System.Windows.Forms.BindingSource> 已命名的 `OrdersBindingSource` 、資料表介面卡和 <xref:System.Data.DataSet> 實例會加入至專案。 控制項系結至 <xref:System.Windows.Forms.BindingSource> ，後者接著會系結至 <xref:System.Data.DataSet> 實例。
 
-5. 向下捲動過去的資料行底下**訂單**資料表。 清單底部**訂單明細**資料表; 這裡是因為它的子系**訂單**資料表。 選取此選項**訂單明細**資料表，不是位於相同的層級**訂單**資料表，然後按一下出現的下拉式箭號。
+5. 將 [ **Orders** ] 資料表底下的資料行向下移動。 清單底部是 **訂單詳細資料** 表格;這是因為它是 **Orders** 資料表的子系。 選取此 **訂單詳細資料** 資料表，而不是與 **Orders** 資料表位於相同層級的資料表，然後按一下出現的下拉箭號。
 
-6. 按一下  **ListObject**在下拉式清單，然後拖曳**OrderDetails**資料表以儲存格**A6**。
+6. 按一下下拉式清單中的 [ **ListObject** ]，然後將 [ **OrderDetails** ] 資料表拖曳到 [資料格 **A6**]。
 
-7. A<xref:Microsoft.Office.Tools.Excel.ListObject>控制項，名為**Order_DetailsListObject**建立在資料格中**A6**，並繫結至<xref:System.Windows.Forms.BindingSource>。
+7. <xref:Microsoft.Office.Tools.Excel.ListObject>名為**Order_DetailsListObject**的控制項會在儲存格**A6**中建立，並系結至 <xref:System.Windows.Forms.BindingSource> 。
 
-### <a name="to-add-two-buttons"></a>若要新增兩個按鈕
+### <a name="to-add-two-buttons"></a>加入兩個按鈕
 
-1. 從**通用控制項**索引標籤**工具箱**，加入<xref:System.Windows.Forms.Button>控制項加入儲存格**A3**工作表。
+1. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤，將 <xref:System.Windows.Forms.Button> 控制項加入工作表的儲存格**A3** 。
 
-    此欄位稱為`Button1`。
+    此按鈕的名稱為 `Button1` 。
 
-2. 新增另一個<xref:System.Windows.Forms.Button>控制項加入儲存格**B3**工作表。
+2. 將另一個 <xref:System.Windows.Forms.Button> 控制項新增至工作表的儲存格 **B3** 。
 
-    此欄位稱為`Button2`。
+    此按鈕的名稱為 `Button2` 。
 
-   接下來，將標示要快取文件中的資料集。
+   接下來，標記要在檔中快取的資料集。
 
 ## <a name="cache-the-dataset"></a>快取資料集
- 將標示要由讓資料集，公開並設定快取文件中的資料集**CacheInDocument**屬性。
+ 將資料集設為公用，並設定 **CacheInDocument** 屬性，以標記要在檔中快取的資料集。
 
 ### <a name="to-cache-the-dataset"></a>快取資料集
 
-1. 選取  **NorthwindDataSet**元件匣中。
+1. 選取元件匣中的 [ **NorthwindDataSet** ]。
 
-2. 在 **屬性**視窗中，變更**修飾詞**屬性設**公用**。
+2. 在 [ **屬性** ] 視窗中， **將 [修飾** 詞] 屬性變更為 [ **Public**]。
 
-    在啟用快取之前，必須是公用資料集。
+    在啟用快取之前，資料集必須是公用的。
 
-3. 變更**CacheInDocument**屬性設 **，則為 True**。
+3. 將 [ **CacheInDocument** ] 屬性變更為 [ **True**]。
 
-   下一個步驟是將文字加入至按鈕，並在 C# 中，加入程式碼來連結事件處理常式。
+   下一步是要在按鈕中加入文字，而在 c # 中加入程式碼來連結事件處理常式。
 
-## <a name="initialize-the-controls"></a>初始化的控制項
- 設定按鈕文字，並新增事件處理常式期間<xref:Microsoft.Office.Tools.Excel.Workbook.Startup>事件。
+## <a name="initialize-the-controls"></a>初始化控制項
+ 設定按鈕文字並在事件期間新增事件處理常式 <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> 。
 
-### <a name="to-initialize-the-data-and-the-controls"></a>若要初始化的資料和控制項
+### <a name="to-initialize-the-data-and-the-controls"></a>若要初始化資料和控制項
 
-1. 在**方案總管 中**，以滑鼠右鍵按一下**Sheet1.vb**或**Sheet1.cs**，然後按一下**檢視程式碼**快顯功能表。
+1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **Sheet1** ] 或 [ **Sheet1.cs**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
 
-2. 將下列程式碼加入`Sheet1_Startup`方法來設定按鈕的文字。
+2. 將下列程式碼加入至 `Sheet1_Startup` 方法，以設定按鈕的文字。
 
      [!code-vb[Trin_VstcoreDataExcel#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#15)]
      [!code-csharp[Trin_VstcoreDataExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#15)]
 
-3. 僅適用 C#，加入事件處理常式按鈕按一下事件`Sheet1_Startup`方法。
+3. 針對 c #，請將按鈕 click 事件的事件處理常式加入至 `Sheet1_Startup` 方法。
 
      [!code-csharp[Trin_VstcoreDataExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#16)]
 
-## <a name="add-code-to-enable-scrolling-through-the-records"></a>加入程式碼來啟用捲動記錄
- 將程式碼加入<xref:System.Windows.Forms.Control.Click>記錄之間移動的每個按鈕事件處理常式。
+## <a name="add-code-to-enable-scrolling-through-the-records"></a>新增程式碼以啟用記錄的滾動
+ 將程式碼加入至 <xref:System.Windows.Forms.Control.Click> 每個按鈕的事件處理常式，以移動記錄。
 
 ### <a name="to-scroll-through-the-records"></a>捲動資料列
 
-1. 新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`Button1`，並新增下列程式碼，向後移動記錄：
+1. 加入事件的事件處理常式 <xref:System.Windows.Forms.Control.Click> `Button1` ，並加入下列程式碼，以便在記錄中向前移動：
 
      [!code-vb[Trin_VstcoreDataExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#17)]
      [!code-csharp[Trin_VstcoreDataExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#17)]
 
-2. 新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`Button2`，並新增下列程式碼，記錄中向前推進：
+2. 加入事件的事件處理常式 <xref:System.Windows.Forms.Control.Click> `Button2` ，並加入下列程式碼以前進記錄：
 
      [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]
      [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]
 
 ## <a name="test-the-application"></a>測試應用程式
- 現在您可以測試您的活頁簿，確定資料會出現如預期般運作，而且您可以離線使用方案。
+ 現在您可以測試您的活頁簿，以確定資料會如預期般顯示，而且您可以離線使用方案。
 
-### <a name="to-test-the-data-caching"></a>若要測試資料的快取
+### <a name="to-test-the-data-caching"></a>測試資料快取
 
-1. 請按 **F5**。
+1. 按 **F5**。
 
-2. 請確認已命名的範圍和清單物件會填入來自資料來源的資料。
+2. 確認已命名範圍和清單物件已填入資料來源中的資料。
 
-3. 按一下按鈕，捲動瀏覽某些記錄。
+3. 按一下按鈕以滾動記錄部分記錄。
 
-4. 儲存活頁簿，然後關閉活頁簿和 Visual Studio。
+4. 儲存活頁簿，然後關閉活頁簿並 Visual Studio。
 
-5. 停用資料庫的連接。 拔除網路纜線從您的電腦，如果資料庫位於伺服器上，或如果資料庫是在您的開發電腦上停止 SQL Server 服務。
+5. 停用資料庫的連接。 如果資料庫位於伺服器上，請從電腦拔下網路纜線，或如果資料庫位於您的開發電腦上，請停止 SQL Server 服務。
 
-6. 開啟 Excel，然後再開啟**我的主要 Detail.xlsx**從 *\bin*目錄 ( *\My Master-Detail\bin*在 Visual Basic 或 *\My Master-Detail\bin\偵錯*C# 中)。
+6. 開啟 Excel，然後從*\bin*目錄中開啟**我的 Master-Detail.xlsx** ， (*\My Master-Detail\bin*中的 Visual Basic 或*\My Master-Detail\bin\debug*中的 c # ) 。
 
-7. 捲動以查看工作表運作正常中斷連線時記錄的一些問題。
+7. 滾動某些記錄，以查看工作表在中斷連接時正常運作。
 
-8. 重新連接到資料庫。 將電腦連線到網路再如果資料庫位於伺服器上，或如果資料庫是在您的開發電腦上啟動 SQL Server 服務。
+8. 重新連接至資料庫。 如果資料庫位於伺服器上，請再次將您的電腦連接到網路，如果資料庫是在您的開發電腦上，請啟動 SQL Server 服務。
 
 ## <a name="next-steps"></a>後續步驟
- 本逐步解說會示範在工作表上建立主版/詳細資料關聯性和快取資料集的基本概念。 接著可以執行下列一些工作：
+ 本逐步解說會示範如何在工作表上建立主/詳細資料關聯性，以及快取資料集的基本概念。 接著可以執行下列一些工作：
 
-- 部署方案。 如需詳細資訊，請參閱[部署 Office 方案](../vsto/deploying-an-office-solution.md)
+- 部署該方案。 如需詳細資訊，請參閱[部署 Office 方案](../vsto/deploying-an-office-solution.md)。
 
 ## <a name="see-also"></a>另請參閱
-- [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)
+- [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Office 方案中的資料](../vsto/data-in-office-solutions.md)
 - [快取資料](../vsto/caching-data.md)
-- [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)
+- [主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: 分析 CPU 使用量資料(C#,視覺化基礎)
+title: '分析 CPU 使用量資料 (c #、Visual Basic) '
 description: 在 C++ 和 Visual Basic 中使用 CPU 使用量診斷工具測量應用程式效能
 ms.custom: mvc
 ms.date: 02/14/2020
@@ -13,50 +13,50 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 663a9c9e5e76792b4478d6ecca3043a8a2893268
-ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80411992"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>快速入門:分析可視化工作室中的 CPU 使用率數據(C#,可視化基礎)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>快速入門：在 Visual Studio (c #、Visual Basic) 中分析 CPU 使用量資料
 
 Visual Studio 提供許多功能強大的功能，可協助您分析應用程式中的效能問題。 本主題提供了解一些基本功能的快速方法。 在這裡，我們會查看工具，找出因高 CPU 使用量而造成的效能瓶頸。 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。
 
-診斷中樞提供許多其他選項來執行和管理診斷工作階段。 如果這裡所述的 [CPU 使用量]**** 工具未提供您所需的資料，則[其他分析工具](../profiling/profiling-feature-tour.md)可提供不同種類的資訊，這可能會很有幫助。 在許多情況下，應用程式的效能瓶頸可能是 CPU 以外的問題所導致，例如記憶體、呈現 UI 或網路要求時間。 診斷中樞提供許多其他選項來記錄和分析這類資料。 [PerfTips](../profiling/perftips.md)是另一個除錯器整合的分析工具,還允許您單步執行代碼並確定完成特定函數或代碼塊所需的時間。
+診斷中樞提供許多其他選項來執行和管理診斷工作階段。 如果這裡所述的 [CPU 使用量]**** 工具未提供您所需的資料，則[其他分析工具](../profiling/profiling-feature-tour.md)可提供不同種類的資訊，這可能會很有幫助。 在許多情況下，應用程式的效能瓶頸可能是 CPU 以外的問題所導致，例如記憶體、呈現 UI 或網路要求時間。 診斷中樞提供許多其他選項來記錄和分析這類資料。 [效能提示](../profiling/perftips.md)是另一個偵錯工具整合的程式碼剖析工具，它也可讓您逐步執行程式碼，並識別特定函式或程式碼區塊完成的時間。
 
 Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具]**** 視窗)。 在 Windows 7 及更新版本，您可以使用事後分析工具：[效能分析工具](../profiling/profiling-feature-tour.md).
 
 ## <a name="create-a-project"></a>建立專案
 
-1. 打開可視化工作室並創建專案。
+1. 開啟 Visual Studio 並建立專案。
 
    ::: moniker range="vs-2017"
    從頂端功能表列中，選擇 [檔案]** [新增]** > ** [專案]** > ****。
 
-   在左邊窗格中的 **「新項目**」 對話框中,展開**C#** 或**視覺化基本**,然後選擇 **.NET Core**。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]****。 然後命名專案*MyProfilerApp*。
+   在左窗格的 [ **新增專案** ] 對話方塊中，展開 [ **c #** ] 或 [ **Visual Basic**]，然後選擇 [ **.net Core**]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]****。 然後將專案命名為 *MyProfilerApp*。
 
    如果您沒有看到 [主控台應用程式 (.NET Core)]**** 專案範本，請在 [新增專案]**** 對話方塊的左窗格中，選擇 [開啟 Visual Studio 安裝程式]**** 連結。 Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發]**** 工作負載，然後選擇 [修改]****。
    ::: moniker-end
    ::: moniker range="vs-2019"
-   如果啟動視窗未開啟,請選擇 **「檔案**>**開始視窗**」。。
+   如果 [開始] 視窗未開啟，請 **選擇 [** 檔案 > **開始視窗]**。
 
-   在啟動視窗中,選擇 **「創建新專案**」。
+   在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
-   在 [建立新專案]**** 視窗的搜尋方塊中輸入或鍵入 ASP.NET**。 接下來,從"語言"清單中選擇**C#** 或**可視化基本,** 然後從"平臺"清單中選擇**Windows。**
+   在 [建立新專案]**** 視窗的搜尋方塊中輸入或鍵入 ASP.NET**。 接下來，從語言清單中選擇 **c #** 或 **Visual Basic** ，然後從 [平臺] 清單中選擇 [ **Windows** ]。
 
    在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)]**** 範本，然後選擇 [下一步]****。
 
    > [!NOTE]
    > 如果您未看到 [主控台應用程式 (.NET Core)]**** 範本，您可以從 [建立新專案]**** 視窗中安裝。 在 [找不到您要找的資料嗎?]**** 訊息中，選擇 [安裝更多工具和功能]**** 連結。 接下來，在 Visual Studio 安裝程式中選擇 **.NET Core 跨平台開發**工作負載。
 
-   在 **「設定新專案**」視窗中,在 **「專案名稱**」框中鍵入或輸入*MyProfilerApp。* 然後,選擇 **"創建**"。
+   在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中輸入或輸入*MyProfilerApp* 。 然後，選擇 [ **建立**]。
 
    ::: moniker-end
 
    Visual Studio 會隨即開啟您的新專案。
 
-2. 開啟*Program.cs,* 並將所有代碼取代為以下代碼:
+2. 開啟 *Program.cs* ，並以下列程式碼取代所有程式碼：
 
     ```csharp
     using System;
@@ -175,7 +175,7 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
     ```
 
     > [!NOTE]
-    > 在`Sub Main`可視化基本中,請確保啟動物件設置為 (**屬性** > **應用程式** > **啟動物件**)。
+    > 在 Visual Basic 中，確定啟始物件設定為 `Sub Main` (**屬性**  >  **應用程式**  >  **啟始物件**) 。
 
 ## <a name="step-1-collect-profiling-data"></a>步驟 1︰收集分析資料
 
@@ -195,9 +195,9 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
 
     藉由設定兩個中斷點，您可以將資料收集的範圍限制在您想分析的程式碼部分。
 
-3. 除非您關閉 [診斷工具]**** 視窗，否則該視窗已出現。 要再次打開視窗,請按下 **「除錯** > **」** > **顯示診斷工具**。
+3. 除非您關閉 [診斷工具]**** 視窗，否則該視窗已出現。 若要再次顯示視窗，請按一下 [ **Debug**  >  **Windows**  >  **Show 診斷工具**]。
 
-4. 點選 **「除錯** > **」 開始除錯**(或工具列上**啟動**)或**F5**。
+4. 按一下 [ **Debug**  >  **開始**錯 (] 或 [**啟動**] 工具列上的 [啟動]，或按**F5**) 。
 
      應用程式完成載入時，會出現 [診斷工具] 的 [摘要]**** 檢視。
 
@@ -225,7 +225,7 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
 
 1. 在函式清單中，檢查執行最多工作的函式。
 
-     ![診斷工具 CPU 使用量索引標籤](../profiling/media/quickstart-cpu-usage-cpu.png "直徑工具CPU使用選項卡")
+     ![診斷工具 CPU 使用量索引標籤](../profiling/media/quickstart-cpu-usage-cpu.png "DiagToolsCPUUsageTab")
 
     > [!TIP]
     > 執行工作最多的函式會優先列出 (不是以呼叫順序列出)。 這可協助您快速找出執行時間最長的函式。
@@ -234,7 +234,7 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
 
     當您按兩下函式時，[呼叫端/被呼叫端]**** 檢視會在左窗格中開啟。
 
-    ![診斷工具的呼叫端/被呼叫端檢視](../profiling/media/quickstart-cpu-usage-caller-callee.png "迪亞格·ToolsCallerCallee")
+    ![診斷工具的呼叫端/被呼叫端檢視](../profiling/media/quickstart-cpu-usage-caller-callee.png ">diagtoolscallercallee")
 
     在此檢視中，選取的函式會出現在標題和 [目前的函式]**** 方塊中 (在此範例中為 `GetNumber`)。 呼叫目前函式的函式顯示在左邊的 [Calling Function (呼叫的函式)]**** 下方，而目前函式所呼叫的任何函式會顯示在右邊的 [Called Functions (所呼叫函式)]**** 方塊。 (您可以選取任一個方塊來變更目前的函式。)
 

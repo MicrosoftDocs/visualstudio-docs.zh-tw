@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 5010761213cf79756cf8da3d2fffe60dd0b61efd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302613"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315183"
 ---
 # <a name="static-helper-classes"></a>靜態協助程式類別
 
@@ -48,7 +48,7 @@ public void TestSomething(int i, int j) {
 }
 ```
 
-**言論**
+**備註**
 
 上述程式碼幾乎等同於：
 
@@ -95,7 +95,7 @@ public void TestSomething(int i) {
 
 * 針對特定測試案例所產生的程式碼，會以特定方式設定選擇提供者，以便重新執行此類測試案例時會做出特定的選擇，觸發特定的執行路徑。
 
-**使用**
+**使用量**
 
 * 簡單呼叫 **PexChoose.Value** 以產生新值：
 
@@ -141,7 +141,7 @@ public partial class MathExTests {
 
 靜態類別，可用來略過參數上的條件約束，以及列印與值建立關聯的符號資訊。
 
-**使用**
+**使用量**
 
 在執行期間，IntelliTest 一般會嘗試涵蓋程式碼的所有執行路徑。 不過，它不應該探索所有可能的案例，特別是在運算假設和判斷提示條件時。
 

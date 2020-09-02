@@ -13,23 +13,23 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 62dddacaea1846c8e5d5da404ad7a16fde90f209
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662410"
 ---
 # <a name="options-page-text-editor-node-properties"></a>文字編輯器節點屬性、選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本文件描述與 [選項]  對話方塊的 [文字編輯器]  分類 `DTE.Properties("TextEditor", <Property Page>)` 相關聯的一些頁面 (或屬性集合)。 每一小節的標題就是用來存取 `Properties` 集合的呼叫，而每一小節中的表格會列出集合中的屬性。
+本文件描述與 [選項]**** 對話方塊的 [文字編輯器]**** 分類 `DTE.Properties("TextEditor", <Property Page>)` 相關聯的一些頁面 (或屬性集合)。 每一小節的標題就是用來存取 `Properties` 集合的呼叫，而每一小節中的表格會列出集合中的屬性。
 
- [控制選項設定](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)中的 Visual Basic 巨集會示範，如何顯示 [選項]  對話方塊中每一個頁面目前的選項及其值。
+ [控制選項設定](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)中的 Visual Basic 巨集會示範，如何顯示 [選項]**** 對話方塊中每一個頁面目前的選項及其值。
 
 ## <a name="general"></a>一般
  `DTE.Properties("TextEditor", "General")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (布林值)|如果為 `True`，在有選取範圍時按 Escape 鍵會將插入點移至建立選取範圍這個動作的起始位置。 如果為 `False`，則會將插入點移至選取範圍的結束位置。|
 |DragNDropTextEditing|Get/Set (布林值)|決定您能否在文件中拖曳選取的文字區域，執行複製或剪貼作業。|
@@ -46,9 +46,9 @@ ms.locfileid: "72662410"
 ## <a name="plain-text"></a>純文字
  `DTE.Properties("TextEditor", "PlainText")`
 
- `PlainText` 編輯器選項會影響編輯文字檔時的編輯器設定。 每個程式語言和 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 套件都有各自特定的 [文字編輯器]  設定。 例如，若要檢視或變更 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 的編輯器設定，請使用 `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`。 [SQL 指令碼]  編輯器設定請使用 `DTE.Properties("TextEditor", "SQL ")`。
+ `PlainText` 編輯器選項會影響編輯文字檔時的編輯器設定。 每個程式語言和 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 套件都有各自特定的 [文字編輯器]**** 設定。 例如，若要檢視或變更 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 的編輯器設定，請使用 `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`。 [SQL 指令碼]**** 編輯器設定請使用 `DTE.Properties("TextEditor", "SQL ")`。
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |AutoListMembers|Get/Set (布林值)|決定當使用者在變數參考後面輸入句號時，是否自動顯示可用的成員清單|
 |AutoListParams|Get/Set (布林值)|決定當使用者在函式名稱後面輸入 "(" 時，是否自動顯示引數清單描述|
@@ -58,7 +58,7 @@ ms.locfileid: "72662410"
 |WordWrapGlyphs|Get/Set (布林值)|在一行的結尾顯示圖像；這表示該行會換行至下一行。|
 |EnableLeftClickForURLs|Get/Set (布林值)|決定編輯器是否為 URL 加底線，以及是否只要按一下滑鼠左鍵即可跳至系統登錄之 Web 瀏覽器中的 URL|
 |IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|判斷縮排樣式：預設、智慧或無。|
-|TabSize|Get/Set (長整數)|表示一個定位點相當於幾個空格。如果設定的整數超出 1 到 60 (含) 的範圍就會失敗|
+|TabSize|Get/Set (長整數)|表示等於索引標籤的空格數目。將整數的範圍從1到60， (包含) 會失敗。|
 |InsertTabs|Get/Set (布林值)|如果為 `True`，則縮排時會使用定位字元|
 |IndentSize|Get/Set (長整數)|表示一個縮排層次相當於幾個空格。 如果設定的整數值超出 1 到 60 (含) 的範圍就會失敗|
 |ShowLineNumbers|Get/Set (布林值)|決定核心編輯器文件檢視表是否在左邊界顯示行號碼|
@@ -66,4 +66,4 @@ ms.locfileid: "72662410"
 |CutCopyBlankLines|Get/Set (布林值)|在選取時剪下或複製空白行。|
 
 ## <a name="see-also"></a>另請參閱
- [控制選項設定](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)在 [選項頁[選項] 頁面、[環境節點屬性](../../ide/reference/options-page-environment-node-properties.md)[選項] 頁面、[字型和色彩] 節點屬性](../../ide/reference/options-page-fonts-and-colors-node-properties.md)[上判斷屬性專案的名稱](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+ [控制選項設定](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)在選項頁[選項頁面、環境節點屬性](../../ide/reference/options-page-environment-node-properties.md)[選項頁面、字型和色彩節點屬性](../../ide/reference/options-page-fonts-and-colors-node-properties.md)[上決定屬性專案的名稱](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)

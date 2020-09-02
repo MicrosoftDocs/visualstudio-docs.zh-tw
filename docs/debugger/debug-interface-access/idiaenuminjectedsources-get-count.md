@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f332a7427431f5cd481530030e18d9a10368f67
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468284"
 ---
 # <a name="idiaenuminjectedsourcesget_count"></a>IDiaEnumInjectedSources::get_Count
@@ -33,10 +33,10 @@ HRESULT get_Count ( 
 #### <a name="parameters"></a>參數
  pRetVal
 
-脫銷傳回插入的來源數目。
+擴展傳回插入的來源數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

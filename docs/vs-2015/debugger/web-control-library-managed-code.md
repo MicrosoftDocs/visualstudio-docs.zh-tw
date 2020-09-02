@@ -1,5 +1,5 @@
 ---
-title: Web 控制項程式庫 （Managed 程式碼） |Microsoft Docs
+title: Web 控制項程式庫 (Managed 程式碼) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,16 +18,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 031f894eb2e117a213f4f9fbbf08ac57a1512d61
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688168"
 ---
 # <a name="web-control-library-managed-code"></a>Web 控制項程式庫 (Managed 程式碼)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Web 控制項程式庫專案範本會建立 DLL。 因為類別庫是 DLL，所以您不能直接執行。 您必須建立嵌入該控制項的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 頁面。 如需詳細資訊，請參閱 < [Web 控制項程式庫範本](https://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372)。  
+Web 控制項程式庫專案範本會建立 DLL。 因為類別庫是 DLL，所以您不能直接執行。 您必須建立嵌入該控制項的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 頁面。 如需詳細資訊，請參閱 [Web 控制項程式庫範本](https://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372)。  
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>若要偵錯 Web 控制項程式庫 (方法 1)  
   
@@ -43,11 +43,11 @@ Web 控制項程式庫專案範本會建立 DLL。 因為類別庫是 DLL，所�
   
 6. 開啟瀏覽器視窗，輸入指向 Test Harness 的 URL。 該控制項的中斷點會被叫用，然後您就可以開始偵錯。  
   
-### <a name="to-debug-a-web-control-library-method-2"></a>若要偵錯 Web 控制項程式庫 (方法 2)  
+### <a name="to-debug-a-web-control-library-method-2"></a>若要將 Web 控制項程式庫 (的方法 2)   
   
 1. 在同一方案中建立主應用程式專案和 Web 控制項專案。  
   
-2. 在 [**方案總管] 中**，以滑鼠右鍵按一下主應用程式，然後選擇**加入參考**。  
+2. 在 **方案總管**中，以滑鼠右鍵按一下主應用程式，然後選擇 [ **加入參考**]。  
   
 3. 將參考加入至 Web 控制項專案。  
   

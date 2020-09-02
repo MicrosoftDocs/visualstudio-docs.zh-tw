@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 050799ba0191c9de3f74874d3cd35455278c7730
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468312"
 ---
 # <a name="idiaenumframedatareset"></a>IDiaEnumFrameData::Reset
-將列舉序列重設為開頭。
+將列舉順序重設為開頭。
 
 ## <a name="syntax"></a>語法
 

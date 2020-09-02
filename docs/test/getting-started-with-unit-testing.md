@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c167e98f9419842876aed713e008b8746064669a
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82153041"
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
@@ -26,7 +26,7 @@ ms.locfileid: "82153041"
 
 1. 在 Visual Studio 中開啟您要測試的專案。
 
-   為了示範範例單元測試，本文會測試名為**helloworld**的簡單 "Hello World" 專案。 此類專案的範例程式碼如下所示：
+   為了示範範例單元測試的目的，本文會測試名為 **helloworld**的簡單 "Hello World" 專案。 此類專案的範例程式碼如下所示：
 
    ```csharp
    namespace HelloWorldCore
@@ -40,7 +40,7 @@ ms.locfileid: "82153041"
       }
    ```
 
-1. 在 [方案總管]**** 中，選取解決方案節點。 然後，從頂端功能表列中 **，選取** > **Add** > [檔案] [新增] [**新專案**]。
+1. 在 [方案總管]**** 中，選取解決方案節點。 然後，從頂端功能表列選取 [檔案**File**  >  **加入**  >  **新專案**]。
 
 1. 在新的專案對話方塊中，尋找並選取您希望使用之測試架構的單元測試專案範本。
 
@@ -72,7 +72,7 @@ ms.locfileid: "82153041"
 
 1. 將程式碼新增至單元測試方法。
 
-   例如，針對 MSTest 專案，您可以使用下列程式碼。
+   例如，您可以使用下列程式碼，針對 MSTest 專案使用下列程式碼。
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -101,7 +101,7 @@ ms.locfileid: "82153041"
    }
    ```
 
-   或者，針對 NUnit 專案，您可以使用下列程式碼。
+   或者，若為 NUnit 專案，您可以使用下列程式碼。
 
    ```csharp
    using NUnit.Framework;
@@ -135,17 +135,17 @@ ms.locfileid: "82153041"
    ```
 
 > [!TIP]
-> 如需有關建立單元測試的詳細資訊，請參閱[建立和執行 managed 程式碼的單元測試](walkthrough-creating-and-running-unit-tests-for-managed-code.md)。
+> 如需有關建立單元測試的詳細資訊，請參閱 [針對 managed 程式碼建立和執行單元測試](walkthrough-creating-and-running-unit-tests-for-managed-code.md)。
 
 ## <a name="run-unit-tests"></a>執行單元測試
 
-1. 開啟 [[測試瀏覽器](../test/run-unit-tests-with-test-explorer.md)]。
+1. 開啟 [ [測試瀏覽器](../test/run-unit-tests-with-test-explorer.md)]。
 
    ::: moniker range=">=vs-2019"
-   若要開啟 [測試瀏覽器]，請從頂端功能表列中選擇 [**測試** > ] **[測試]** 。
+   若要開啟 [測試流覽**Test**器]，請 > 從頂端功能表列中選擇 [測試**測試瀏覽器**]。
    ::: moniker-end
    ::: moniker range="vs-2017"
-   若要開啟 [測試] Explorer，請從頂端功能表列中選擇 [**測試** > ] [ **Windows** > **測試瀏覽器**]。
+   若要開啟 test explorer， **Test**請 > **Windows** > 從頂端功能表列中選擇 [測試 Windows **test explorer** ]。
    ::: moniker-end
 
 1. 按一下 [全部執行]**** 執行您的單元測試。
@@ -201,7 +201,7 @@ ms.locfileid: "82153041"
 
 ## <a name="analyze-code-coverage"></a>分析程式碼涵蓋範圍
 
-若要判斷單元測試等自動程式碼測試實際測試的專案程式碼比例，您可以使用 Visual Studio 程式碼涵蓋範圍功能。 為有效防範錯誤 (bug)，您的測試應該要使用大部分的程式碼。 若要瞭解作法，請參閱[使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
+若要判斷單元測試等自動程式碼測試實際測試的專案程式碼比例，您可以使用 Visual Studio 程式碼涵蓋範圍功能。 為有效防範錯誤 (bug)，您的測試應該要使用大部分的程式碼。 若要瞭解作法，請參閱 [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
 
 ## <a name="use-a-third-party-test-framework"></a>使用協力廠商測試架構
 

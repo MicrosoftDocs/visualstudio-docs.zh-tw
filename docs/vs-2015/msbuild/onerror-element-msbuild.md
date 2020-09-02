@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 46f6907bea5954cffae92b41398717a8247350e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195665"
 ---
 # <a name="onerror-element-msbuild"></a>OnError 項目 (MSBuild)
@@ -43,11 +43,11 @@ ms.locfileid: "68195665"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
 |`ExecuteTargets`|必要屬性。<br /><br /> 工作失敗時要執行的目標。 以分號分隔多個目標。 多個目標會以指定的順序執行。|  
@@ -57,14 +57,14 @@ ms.locfileid: "68195665"
   
 ### <a name="parent-elements"></a>父項目  
   
-|元素|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[Target](../msbuild/target-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工作的容器元素。|  
   
 ## <a name="remarks"></a>備註  
  如果其中一個 `Target` 元素的工作失敗，且 `ContinueOnError` 屬性設為 `ErrorAndStop` (或 `false`)，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 便會執行 `OnError` 元素。 工作失敗時，便會執行 `ExecuteTargets` 屬性指定的目標。 如果目標中有多個 `OnError` 元素，則工作失敗時會依序執行 `OnError` 元素。  
   
- 如需 `ContinueOnError` 屬性的相關資訊，請參閱 [Task 項目 (MSBuild)](../msbuild/task-element-msbuild.md)。 如需目標的詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。  
+ 如需屬性的詳細資訊 `ContinueOnError` ，請參閱 [ (MSBuild) 的 Task ](../msbuild/task-element-msbuild.md)專案。 如需目標的詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。  
   
 ## <a name="example"></a>範例  
  下列程式碼會執行 `TaskOne` 和 `TaskTwo` 工作。 如果 `TaskOne` 失敗，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會評估 `OnError` 元素，並執行 `OtherTarget` 目標。  
@@ -80,5 +80,5 @@ ms.locfileid: "68195665"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
+ [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)   
  [目標](../msbuild/msbuild-targets.md)

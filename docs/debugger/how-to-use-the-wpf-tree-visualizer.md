@@ -1,5 +1,5 @@
 ---
-title: 如何-使用 WPF 樹狀檢視工具 |Microsoft Docs
+title: 如何-使用 WPF 樹狀結構視覺化 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,19 +17,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e210d41541ef2fe0f7f8da149c23dc17645e44f
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348492"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>如何：使用 WPF 樹狀架構視覺化檢視
-您可以使用 [WPF 樹狀架構視覺化檢視] 瀏覽 WPF 物件的視覺化樹狀結構，以及檢視該樹狀結構內含物件的 WPF 相依性屬性。 如需視覺化樹狀結構的詳細資訊，請參閱[WPF 中的樹狀](/dotnet/framework/wpf/advanced/trees-in-wpf)結構。 如需相依性屬性的詳細資訊，請參閱相依性[屬性總覽](/dotnet/framework/wpf/advanced/dependency-properties-overview)。
+您可以使用 [WPF 樹狀架構視覺化檢視] 瀏覽 WPF 物件的視覺化樹狀結構，以及檢視該樹狀結構內含物件的 WPF 相依性屬性。 如需視覺化樹狀結構的詳細資訊，請參閱 [WPF 中的樹狀](/dotnet/framework/wpf/advanced/trees-in-wpf)結構。 如需相依性屬性的詳細資訊，請參閱相依性 [屬性總覽](/dotnet/framework/wpf/advanced/dependency-properties-overview)。
 
- 當您開啟 WPF 樹狀檢視工具時，您會看到兩個窗格：左側的**視覺化樹狀結構**，以及右邊的 [_名稱_**：**_類型_] 窗格的**屬性**。 在 [**視覺化樹狀結構**] 窗格中選取任何物件，[_名稱_**：**_類型_] 窗格的**屬性**會自動更新，以顯示該物件的屬性。
+ 當您開啟 WPF 樹狀結構視覺效果時，您會看到兩個窗格：左邊的**視覺化樹狀結構**和右邊的 [_名稱_**：**_類型_的**屬性**] 窗格。 在**視覺化樹狀結構**窗格中選取任何物件，[ **Properties of** _名稱_**：**_類型_] 窗格的屬性會自動更新，以顯示該物件的屬性。
 
  > [!NOTE]
- > 您也可以使用 [[即時視覺化樹狀結構] 和 [即時屬性瀏覽器](../xaml-tools/inspect-xaml-properties-while-debugging.md)] 來檢查 WPF 物件的視覺化樹狀結構。 WPF 樹狀檢視是舊版的功能，並不在開發中。
+ > 您也可以使用 [ [即時視覺化樹狀結構] 和 [即時屬性瀏覽器](../xaml-tools/inspect-xaml-properties-while-debugging.md) ] 來檢查 WPF 物件的視覺化樹狀結構。 WPF 樹狀檢視器是舊版功能，不是在開發中。
 
 ### <a name="to-open-the-wpf-tree-visualizer"></a>若要開啟 WPF 樹狀架構視覺化檢閱
 
@@ -53,7 +53,7 @@ ms.locfileid: "85348492"
 
 ### <a name="to-search-the-properties-list"></a>若要搜尋屬性清單
 
-- 在 [ **Properties of** _名稱_**：**_輸入_] 窗格的 [屬性] 中，于 [**篩選**] 方塊中輸入您要搜尋的字串。
+- 在 [ **Properties of** _名稱_**：**_類型_的屬性] 窗格的 [**篩選**] 方塊中，輸入您要搜尋的字串。
 
   [WPF 樹狀架構視覺化檢視] 會立即尋找符合您輸入之字串的屬性；現在，清單只會顯示符合您所輸入字串的屬性。 輸入越多字元，尋找的相符項目越精確。
 

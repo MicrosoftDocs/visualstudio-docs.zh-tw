@@ -1,5 +1,5 @@
 ---
-title: '&#39;設計的新內容'
+title: 設計&#39;的新功能
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -14,13 +14,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6c68db12f8ecea523327250fec1f600639a2f267
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302368"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315326"
 ---
-# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>視覺工作室 2015 視覺化工作室中的新設計內容
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Visual Studio 2015 中 Visual Studio 的設計新功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 這個版本的 Visual Studio 包括下列改進，協助您進一步了解和設計程式碼。
 
@@ -30,7 +30,7 @@ ms.locfileid: "79302368"
 
  在最終 (RTM) 發行版本中，我們將命令分組成與選取、編輯和管理群組相關的區段，並變更群組內容的配置，以更容易使用程式碼項目和連結的捷徑功能表。 另請注意，測試專案的顯示樣式會與其他專案不同，並且我們已將對應上的項目圖示更新為更適當的版本。
 
- ![在新的 Code Map 上顯示選取的項目](../ide/media/codemapsshowonnewmap.png "代碼映射顯示新地圖")
+ ![在新的 Code Map 上顯示選取的項目](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
 
  其他改進還包括：
 
@@ -58,24 +58,24 @@ ms.locfileid: "79302368"
 
   **本版中的其他設計和模型變更：**
 
-- **圖層圖**。 使用類別檢視和物件瀏覽器來更新這些圖表。 為了達到軟體設計需求，請使用分層圖來描述軟體所需的相依性。 透過尋找不符合這些條件約束的程式碼，並使用這個基準來驗證未來的程式碼，讓程式碼與這個設計保持一致。
+- **圖層圖表**。 使用類別檢視和物件瀏覽器來更新這些圖表。 為了達到軟體設計需求，請使用分層圖來描述軟體所需的相依性。 透過尋找不符合這些條件約束的程式碼，並使用這個基準來驗證未來的程式碼，讓程式碼與這個設計保持一致。
 
 - **UML 圖表**。 您已無法再從程式碼建立 UML 類別圖和循序圖。 但您還是可以使用新的 UML 元素來建立這些圖表。
 
-- **體系結構資源管理器**。 您已無法再使用架構總管來建立圖表。 但您還是可以使用方案總管。
+- **架構瀏覽器**。 您已無法再使用架構總管來建立圖表。 但您還是可以使用方案總管。
 
-## <a name="edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport"></a>對體系結構和建模工具的版式支援
+## <a name="edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport"></a> 架構和模型工具的版本支援
 
-Visual Studio 2015 有多種版本版本。 並非所有這些都為體系結構和建模工具提供支援。 下表顯示每個工具的可用性。
+Visual Studio 2015 提供數種版本。 並非所有這些都提供架構和模型工具的支援。 下表顯示每個工具的可用性。
 
-|**特徵**|**Enterprise**|**Professional**|**社群**|**Express**|
+|**功能**|**企業**|**Professional**|**社群**|**Express** \(英文\)|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Code Map**|是|僅支援讀取和篩選代碼映射、添加新的泛型節點以及從所選內容創建新的定向圖形。|-|-|
-|**UML 類圖**|是|-|-|-|
-|**UML 序列圖**|是|-|-|-|
-|**UML 用例圖**|是|-|-|-|
+|**Code Map**|是|僅支援讀取和篩選 code map、加入新的泛型節點，以及從選取範圍建立新的引導式圖形。|-|-|
+|**UML 類別圖表**|是|-|-|-|
+|**UML 順序圖表**|是|-|-|-|
+|**UML 使用案例圖**|是|-|-|-|
 |**UML 活動圖表**|是|-|-|-|
 |**UML 元件圖**|是|-|-|-|
-|**層圖**|是|-|-|-|
-|**定向圖**（DGML 圖表）|是|是|-|-|
-|**代碼克隆**|是|-|-|-|
+|**分層圖**|是|-|-|-|
+| (DGML 圖表的**導向圖形**) |是|是|-|-|
+|**程式碼複製**|是|-|-|-|

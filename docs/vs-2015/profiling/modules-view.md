@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d396aec92b43aebca9b398c6d481962138354e0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195603"
 ---
 # <a name="modules-view"></a>模組檢視
@@ -29,13 +29,13 @@ ms.locfileid: "68195603"
   
  請展開或摺疊模組名稱來顯示或關閉模組效能資料的檢視。  
   
- 若要新增或移除資料行，請以滑鼠右鍵按一下報表視窗，然後選取 [新增/移除資料行]  。 您可以按一下資料行名稱來排序資料。 如需詳細資訊，請參閱[如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)。  
+ 若要新增或移除資料行，請以滑鼠右鍵按一下報表視窗，然後選取 [新增/移除資料行]****。 您可以按一下資料行名稱來排序資料。 如需詳細資訊，請參閱[如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)。  
   
  [模組] 檢視中可用的資料行取決於用來收集資料的分析方法 (取樣或檢測)，以及是否在分析回合中收集 .NET 記憶體資料。  
   
 ## <a name="see-also"></a>另請參閱  
- [模組檢視](../profiling/modules-view-sampling-data.md)   
- [模組檢視](../profiling/modules-view-instrumentation-data.md)   
- [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [模組檢視 - 取樣](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [模組視圖](../profiling/modules-view-sampling-data.md)   
+ [模組視圖](../profiling/modules-view-instrumentation-data.md)   
+ [模組視圖-檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [模組視圖-取樣](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [模組檢視](../profiling/modules-view-contention-data.md)

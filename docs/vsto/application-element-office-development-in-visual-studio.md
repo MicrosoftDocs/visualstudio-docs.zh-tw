@@ -1,5 +1,5 @@
 ---
-title: '&lt;application &gt; 元素（Visual Studio 中的 Office 程式開發）'
+title: '&lt;&gt;在 Visual Studio) 中 (Office 程式開發的應用程式元素'
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3540df77b4498376dcde389730e17e7506647fb8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543737"
 ---
-# <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;application &gt; 元素（Visual Studio 中的 Office 程式開發）
+# <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;&gt;在 Visual Studio) 中 (Office 程式開發的應用程式元素
   `application` 命名空間的 `vstav3` 項目會包裝 Office 方案的描述。 文件層級自訂與 VSTO 增益集的子項目不同。
 
 ## <a name="syntax-for-document-level-customizations"></a>檔層級自訂的語法
@@ -61,7 +61,7 @@ ms.locfileid: "85543737"
  `application` 項目具有下列項目。
 
 ### <a name="customization"></a>自訂
- `customization`命名空間中元素的角色 `vstov3` 定義于[&#60;自訂&#62; 元素中，&#40;Visual Studio&#41;中的 Office 開發](../vsto/customization-element-office-development-in-visual-studio.md)。
+ `customization`命名空間中專案的角色 `vstov3` 會定義在[&#60;自訂&#62; 專案中，&#40;Visual Studio&#41;中的 Office 程式開發](../vsto/customization-element-office-development-in-visual-studio.md)。
 
 ## <a name="document-level-customization-example"></a>檔層級自訂範例
 

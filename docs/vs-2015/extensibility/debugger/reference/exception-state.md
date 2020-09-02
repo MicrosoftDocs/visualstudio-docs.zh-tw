@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_STATE | Microsoft Docs
+title: EXCEPTION_STATE |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4e30d9cc9df592cc6feb97c14449dbc6a122ec63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149363"
 ---
-# <a name="exceptionstate"></a>EXCEPTION_STATE
+# <a name="exception_state"></a>EXCEPTION_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定的例外狀況狀態。  
+指定例外狀況狀態。  
   
 ## <a name="syntax"></a>語法  
   
@@ -77,37 +77,37 @@ public enum enum_EXCEPTION_STATE { 
   
 ## <a name="members"></a>成員  
  EXCEPTION_NONE  
- 不會停止在例外狀況。  
+ 請勿在例外狀況時停止。  
   
  EXCEPTION_STOP_FIRST_CHANCE  
- 停止在第一個引發的例外狀況。 描述例外狀況事件，當此旗標會指出例外狀況事件是第一個可能發生的例外狀況的事件。  
+ 在第一次引發例外狀況時停止。 描述例外狀況事件時，此旗標表示例外狀況事件是第一個可能發生的例外狀況事件。  
   
  EXCEPTION_STOP_SECOND_CHANCE  
- 停止在第二個引發的例外狀況。 當描述例外狀況事件，表示例外狀況事件的第二個可能發生例外狀況事件。  
+ 在第二次引發例外狀況時停止。 描述例外狀況事件時，表示例外狀況事件是第二個例外狀況事件。  
   
  EXCEPTION_STOP_USER_FIRST_CHANCE  
- 在使用者模式例外狀況的第一次引發處停止。 當描述例外狀況事件，表示例外狀況事件的第一個可能發生使用者例外狀況事件。  
+ 在第一次引發使用者模式例外狀況時停止。 描述例外狀況事件時，表示例外狀況事件是第一個可能發生的使用者例外狀況事件。  
   
  EXCEPTION_STOP_USER_UNCAUGHT  
- 當未攔截到的使用者模式例外狀況時停止。 當描述例外狀況事件，表示例外狀況事件無法攔截的使用者模式例外狀況事件。  
+ 當未攔截到使用者模式例外狀況時停止。 描述例外狀況事件時，表示例外狀況事件是未攔截的使用者模式例外狀況事件。  
   
  EXCEPTION_STOP_ALL  
- 停止的任何例外狀況。 描述例外狀況事件時，無法使用。  
+ 在任何例外狀況時停止。 描述例外狀況事件時未使用。  
   
  EXCEPTION_CANNOT_BE_CONTINUED  
- 描述例外狀況事件，表示例外狀況，無法繼續從。  
+ 描述例外狀況事件時，表示例外狀況無法繼續。  
   
  EXCEPTION_CODE_SUPPORTED  
- 表示例外狀況有支援它的程式碼。 用來顯示例外狀況  
+ 指出例外狀況具有支援的程式碼。 用於顯示例外狀況  
   
  EXCEPTION_CODE_DISPLAY_IN_HEX  
- 表示以十六進位方式，應該會顯示例外狀況代碼。 用來顯示例外狀況。  
+ 指出例外狀況程式碼應以十六進位顯示。 用來顯示例外狀況。  
   
  EXCEPTION_JUST_MY_CODE_SUPPORTED  
- 表示例外狀況的程式碼支援 JustMyCode。 用來顯示例外狀況。  
+ 指出例外狀況程式碼支援 JustMyCode。 用來顯示例外狀況。  
   
  EXCEPTION_MANAGED_DEBUG_ASSISTANT  
- 表示 managed 程式碼偵錯工具應該處理的例外狀況。 如果沒有設定，預設偵錯工具處理的例外狀況。 這會傳遞至[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)方法並不會用於[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)結構。  
+ 指出 managed 程式碼偵錯工具應該處理例外狀況。 如果未設定，則預設偵錯工具會處理例外狀況。 這會傳遞至 [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) 方法，而不會用於 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 結構中。  
   
  EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT  
  已淘汰，請勿使用。  
@@ -122,20 +122,20 @@ public enum enum_EXCEPTION_STATE { 
  已淘汰，請勿使用。  
   
 ## <a name="remarks"></a>備註  
- 做`dwState`隸屬[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)結構來表示的狀態，以及例外狀況有關它可以做什麼。  
+ 當做 `dwState` [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 結構的成員，用來表示例外狀況的狀態以及可以完成的工作。  
   
- 這些值也會傳遞給[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)方法來設定所有的例外狀況的狀態。  
+ 這些值也會傳遞至 [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) 方法，以設定所有例外狀況的狀態。  
   
- 這些旗標可能會與位元 OR 運算結合。  
+ 這些旗標可以結合位 OR。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)   
  [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)

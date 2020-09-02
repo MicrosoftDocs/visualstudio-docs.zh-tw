@@ -1,5 +1,5 @@
 ---
-title: '&lt;產品&gt;項目 （啟動載入器） |Microsoft Docs'
+title: '&lt; (啟動載入器) 的 Product &gt; 元素 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d6dca2c7838ce40f8d24e3afbd898206d0cb9191
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747445"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;產品&gt;項目 （啟動載入器）
-`Product`項目是最上層 XML 元素內的產品檔案。
+# <a name="ltproductgt-element-bootstrapper"></a>&lt; (啟動載入器) 的產品 &gt; 元素
+專案 `Product` 是產品檔案內的最上層 XML 元素。
 
 ## <a name="syntax"></a>語法
 
@@ -138,14 +138,14 @@ ProductCode
 ```
 
 ## <a name="elements-and-attributes"></a>元素和屬性
- `Product`項目必要的產品檔案中。 它具有下列屬性。
+ `Product`產品檔中需要有元素。 它具有下列屬性。
 
 |屬性|描述|
 |---------------|-----------------|
 |`ProductCode`|產品的唯一識別碼。|
 
 ## <a name="example"></a>範例
- 下列程式碼範例會顯示完整的產品檔案安裝.NET Framework。
+ 下列程式碼範例顯示安裝 .NET Framework 的完整產品檔。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -250,4 +250,4 @@ ProductCode
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [產品和套件結構描述參考](../deployment/product-and-package-schema-reference.md)
+- [產品和套件架構參考](../deployment/product-and-package-schema-reference.md)

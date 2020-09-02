@@ -24,21 +24,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5eba30fce1a2333d04db8485498700853372d154
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691662"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>偵錯前景程式時，如何使用偵錯工具視窗？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 問題說明  
- 我試著偵錯螢幕圖片問題。 若要觀察這個問題，我必須將我的程式保持在前景，這表示我無法存取偵錯視窗。 我該怎麼做？  
+ 我試著偵錯螢幕圖片問題。 若要觀察這個問題，我必須將我的程式保持在前景，這表示我無法存取偵錯視窗。 我該怎麼處理？  
   
-## <a name="solution"></a>方案  
- 如果您有第二台電腦，您可以使用遠端偵錯。 有了兩台電腦設定，當您在主機上操作偵錯工具時，您可以查看遠端電腦上的螢幕圖片。 如需有關遠端偵錯的詳細資訊，請參閱 <<c0> [ 設定遠端偵錯](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)。  
+## <a name="solution"></a>解決方法  
+ 如果您有第二台電腦，您可以使用遠端偵錯。 有了兩台電腦設定，當您在主機上操作偵錯工具時，您可以查看遠端電腦上的螢幕圖片。 如需遠端偵錯程式的詳細資訊，請參閱 [設定遠端偵錯](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)程式。  
   
 ## <a name="see-also"></a>另請參閱  
- [對機器碼進行偵錯的常見問題集](../debugger/debugging-native-code-faqs.md)   
+ [原生程式碼的偵錯工具常見問題](../debugger/debugging-native-code-faqs.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)
