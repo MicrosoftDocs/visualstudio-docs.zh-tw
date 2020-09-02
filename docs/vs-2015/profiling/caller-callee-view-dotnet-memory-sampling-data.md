@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c43ba87fea6af474975c759cc18dab74b12e8eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145650"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>呼叫端/被呼叫端檢視 - .NET 記憶體取樣資料
@@ -31,18 +31,18 @@ ms.locfileid: "68145650"
   
  按兩下呼叫端或被呼叫端函式資料列，讓該資料列變成目前的函式。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
-|**處理序 ID**|分析執行的處理序 ID (PID)。|  
-|**處理序名稱**|處理序的名稱。|  
+|**處理序識別碼**|分析執行的處理序 ID (PID)。|  
+|**進程名稱**|處理序的名稱。|  
 |**模組名稱**|包含該函式的模組名稱。|  
 |**模組路徑**|包含該函式的模組路徑。|  
-|**原始程式檔**|含有這個函式定義的原始程式檔。|  
-|**函式名稱**|函式的完整格式名稱。|  
+|**來源檔案**|含有這個函式定義的原始程式檔。|  
+|**函數名稱**|函式的完整格式名稱。|  
 |**函式行號**|原始程式檔中這個函式的開頭行號。|  
-|**函式位址**|函式的位址。|  
-|**Type**|函式的內容︰<br /><br /> **0** - 目前的函式<br /><br /> **1** - 呼叫目前函式的函式<br /><br /> **2** - 目前的函式所呼叫的函式<br /><br /> 只存在於 [VSPerfReport](../profiling/vsperfreport.md) 命令列報表中。|  
-|**層級**|函式在呼叫樹狀圖中的深度。 只存在於 [VSPerfReport](../profiling/vsperfreport.md) 命令列報表中。|  
+|**函數位址**|函式的位址。|  
+|**類型**|函式的內容︰<br /><br /> **0** - 目前的函式<br /><br /> **1** - 呼叫目前函式的函式<br /><br /> **2** - 目前的函式所呼叫的函式<br /><br /> 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|  
+|**Level**|函式在呼叫樹狀圖中的深度。 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|  
 |**內含配置**|- 若為目前的函式，這是函式在分析執行中所配置的物件數目。 這個數目包括在被呼叫端函式中所建立的物件。<br />- 若為呼叫端函式，這是目前函式 (從此函式的呼叫所產生) 的內含配置數目。<br />- 若為被呼叫端函式，這是此函式之執行個體 (由目前函式呼叫) 所配置的物件數目。 這個數目包含由被呼叫端函式所呼叫之函式所做的配置。|  
 |**內含配置 %**|在分析執行中建立的所有物件中，屬於此函式之內含配置的百分比。|  
 |**專有配置**|- 若為目前的函式，這是當函式執行函式主體程式碼時 (即函式位於呼叫堆疊的最上方) 所建立的物件數目。 這個數目不包含由此函式呼叫之函式建立的物件。<br />- 若為呼叫端函式，這是目前函式 (從此函式的呼叫所產生) 的專有配置數目。<br />- 若為被呼叫端函式，這是此函式之執行個體 (由目前函式呼叫) 所建立的物件數目。 這個數目不包含被呼叫端函式呼叫之函式建立的物件。|  
@@ -54,6 +54,6 @@ ms.locfileid: "68145650"
   
 ## <a name="see-also"></a>另請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
- [呼叫端/被呼叫端檢視 - .NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [呼叫端/被呼叫端檢視 - 取樣資料](../profiling/caller-callee-view-sampling-data.md)   
- [呼叫者/被呼叫者檢視 - 檢測資料](../profiling/caller-callee-view-instrumentation-data.md)
+ [呼叫端/被呼叫端視圖-.NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [呼叫端/被呼叫端視圖-取樣資料](../profiling/caller-callee-view-sampling-data.md)   
+ [呼叫端/被呼叫端視圖-檢測資料](../profiling/caller-callee-view-instrumentation-data.md)

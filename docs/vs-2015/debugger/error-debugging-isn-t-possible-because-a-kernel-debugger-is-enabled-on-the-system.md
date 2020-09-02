@@ -1,5 +1,5 @@
 ---
-title: 錯誤：偵錯不&#39;t，可能因為在系統上啟用核心偵錯 |Microsoft Docs
+title: 錯誤：因為系統上已啟用內核偵錯工具，所以無法進行&#39;t 的偵錯工具 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4f2f963ad2fbdad9453f6c6b853bc720034f613c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197069"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤：偵錯不&#39;t，可能因為在系統上啟用核心偵錯
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤：因為系統上已啟用內核偵錯工具，所以無法進行&#39;t 的偵錯工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 當您對 Managed 程式碼進行偵錯時，可能會收到下列錯誤訊息：  
@@ -43,7 +43,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 - 使用 CLR 2.0、3.0 或 3.5 版的應用程式。  
   
-## <a name="solution"></a>方案  
+## <a name="solution"></a>解決方法  
   
 #### <a name="to-fix-this-problem"></a>若要修復這個問題  
   
@@ -77,7 +77,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     bcdedit /debug off   
     ```  
   
-2. 重新啟動電腦。  
+2. 將電腦重新開機。  
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>若要停用所有工作階段的核心偵錯 (其他 Windows 作業系統)  
   
@@ -95,7 +95,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     /baudrate  
     ```  
   
-3. 重新啟動電腦。  
+3. 將電腦重新開機。  
   
 #### <a name="to-debug-with-the-kernel-debugger"></a>若要使用核心偵錯工具進行偵錯  
   

@@ -1,5 +1,5 @@
 ---
-title: 加入命令列參數 |Microsoft Docs
+title: 新增命令列參數 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,56 +14,56 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e28a3f303849458a407b212d3aad1a8c198f6d25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62562272"
 ---
 # <a name="adding-command-line-switches"></a>新增命令列參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以新增 devenv.exe 執行時，套用至 VSPackage 的命令列參數。 使用<xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute>宣告的參數和其屬性的名稱。 在此範例中，加入名為 VSPackage 的子類別 myswitch 之交換器**AddCommandSwitchPackage**搭配任何引數與自動載入 VSPackage。  
+您可以在執行 devenv.exe 時，新增適用于 VSPackage 的命令列參數。 用 <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> 來宣告參數的名稱和其屬性。 在此範例中，會針對名為 **AddCommandSwitchPackage** 的 VSPackage 子類別加入 MySwitch 參數，但不含任何引數，且會自動載入 VSPackage。  
   
 ```csharp  
 [ProvideAppCommandLine("MySwitch", typeof(AddCommandSwitchPackage), Arguments = "0", DemandLoad = 1)]  
 ```  
   
- 下表顯示的具名的參數  
+ 下表顯示具名引數  
   
  引數  
- 參數的引數數目。 可以是 「 * 」，或引數清單。  
+ 切換的引數數目。 可以是 "*" 或引數清單。  
   
  DemandLoad  
- 如果這設定為 1，否則設為 0，如果要自動載入 VSPackage。  
+ 如果此設定為1，則自動載入 VSPackage，否則設定為0。  
   
  HelpString  
- 說明字串或資源識別碼的字串來顯示具有**devenv /？**。  
+ 要以 **devenv/？** 顯示之字串的說明字串或資源識別碼。  
   
- 名稱  
- 此參數。  
+ Name  
+ 參數。  
   
  PackageGuid  
  封裝的 GUID。  
   
- 第一個引數的值通常是 0 或 1。 特殊值為 ' *' 可用來表示整個的其餘部分的命令列引數。 這可以是適用於偵錯的案例，其中使用者必須在偵錯工具命令字串中傳遞。  
+ 引數的第一個值通常是0或1。 您可以使用 ' * ' 的特殊值，表示命令列的整個其餘部分都是引數。 當使用者必須傳入偵錯工具命令字串時，這會很有用。  
   
- DemandLoad 值是`true`(1) 或`false`(0) 表示，應該會自動載入 VSPackage。  
+ DemandLoad 值可能是 `true` (1) 或 `false` (0) 表示應該自動載入 VSPackage。  
   
- HelpString 值會出現在 devenv 中字串的資源識別碼 /？說明顯示。 這個值應該是格式 「 #nnn"其中 nnn 是整數。 資源檔中的字串值應在新行字元結尾。  
+ HelpString 值是出現在 devenv/？中的字串資源識別碼。說明顯示。 此值的格式應該是 "#nnn"，其中 nnn 是整數。 資源檔中的字串值應該以換行字元結尾。  
   
  名稱值是參數的名稱。  
   
- PackageGuid 值是可實作此交換器封裝的 GUID。 IDE 會使用此 GUID 在命令列參數適用於的登錄中尋找的 VSPackage。  
+ PackageGuid 值是用來執行此參數之封裝的 GUID。 IDE 會使用此 GUID，在命令列參數套用的登錄中尋找 VSPackage。  
   
-## <a name="retrieving-command-line-switches"></a>擷取命令列參數  
- 當載入封裝時，您可以藉由完成下列步驟來擷取命令列參數。  
+## <a name="retrieving-command-line-switches"></a>正在抓取命令列參數  
+ 載入封裝時，您可以完成下列步驟來取得命令列參數。  
   
-1. 在您的 VSPackage 中<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>實作中，呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine>以取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>介面。  
+1. 在 VSPackage 的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> 執行中，呼叫 `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> 以取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> 介面。  
   
-2. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A>擷取使用者輸入的命令列參數。  
+2. 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> 以取得使用者所輸入的命令列參數。  
   
-   下列程式碼顯示如何找出是否 myswitch 之命令列參數中所輸入的使用者：  
+   下列程式碼示範如何找出使用者是否已輸入 MySwitch 命令列參數：  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  
@@ -74,7 +74,7 @@ string optionValue = "";
 cmdline.GetOption("MySwitch", out isPresent, out optionValue);  
 ```  
   
- 您必須負責每次載入封裝時檢查命令列參數。  
+ 您必須負責在每次載入封裝時檢查命令列參數。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>   

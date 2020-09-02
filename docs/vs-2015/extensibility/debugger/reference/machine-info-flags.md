@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FLAGS | Microsoft Docs
+title: MACHINE_INFO_FLAGS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3b5819368c91590bbc1973e4c6097f29bb2ba9db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546833"
 ---
-# <a name="machineinfoflags"></a>MACHINE_INFO_FLAGS
+# <a name="machine_info_flags"></a>MACHINE_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-用來描述機器。  
+用來描述電腦。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,18 +41,18 @@ public enum enum_MACHINE_INFO_FLAGS { 
   
 ## <a name="members"></a>成員  
  MCIFLAG_TERMINAL_SERVICES_AVAILABLE  
- 指出使用終端機服務。  
+ 指出終端機服務可供使用。  
   
 ## <a name="remarks"></a>備註  
- 做`Flags`隸屬[MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)結構。  
+ 當做 `Flags` [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) 結構的成員使用。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)

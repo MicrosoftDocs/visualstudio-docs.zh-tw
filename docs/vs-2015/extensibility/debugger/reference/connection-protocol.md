@@ -1,5 +1,5 @@
 ---
-title: CONNECTION_PROTOCOL | Microsoft Docs
+title: CONNECTION_PROTOCOL |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 72ed9b8a747814d9537739c8dc27e5f113547756
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62561848"
 ---
-# <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
+# <a name="connection_protocol"></a>CONNECTION_PROTOCOL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-表示用來偵錯伺服器和偵錯封裝 (DE) 之間進行通訊的通訊協定。  
+表示用來在 debug server 與 debug 封裝之間進行通訊的通訊協定 (DE) 。  
   
 ## <a name="syntax"></a>語法  
   
@@ -52,36 +52,36 @@ public enum CONNECTION_PROTOCOL {
   
 #### <a name="parameters"></a>參數  
  CONNECTION_NONE  
- 沒有已連接到伺服器。  
+ 尚未對伺服器進行連接。  
   
  CONNECTION_UNKNOWN  
- 已建立的連接，但它是未知的類型。  
+ 已進行連接，但其類型為未知。  
   
  CONNECTION_LOCAL  
- 連接是在本機伺服器。  
+ 連接到本機伺服器。  
   
  CONNECTION_PIPE  
- 連線是透過具名管道。  
+ 連接是透過具名管道。  
   
  CONNECTION_TCPIP  
- 連線使用 TCP/IP。  
+ 連接使用 TCP/IP。  
   
  CONNECTION_HTTP  
- 連線使用 HTTP （透過 Web 伺服器）。  
+ 連接會透過 Web 服務器) 來使用 HTTP (。  
   
  CONNECTION_OTHER  
- 已建立其他類型的連接 （這個值目前未使用）。  
+ 已建立其他類型的連接 (此值目前未用) 。  
   
 ## <a name="remarks"></a>備註  
- 會傳回這些值從[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)方法。  
+ 這些值是從 [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) 方法傳回。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)

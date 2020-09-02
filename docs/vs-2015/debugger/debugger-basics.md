@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1228b75b1e0e579012f0c2a04a100cb615ae1687
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145711"
 ---
 # <a name="debugger-basics"></a>偵錯工具基礎
@@ -48,10 +48,10 @@ Visual Studio 偵錯工具讓您能夠觀察程式的執行階段行為，並找
  [例外狀況處理](../debugger/managing-exceptions-with-the-debugger.md)  
  描述例外狀況，偵錯工具會如何處理它們和變更該處理的方式、如何檢視例外狀況發生位置並檢視變數內容、Managed 程式碼內未處理例外狀況的限制，以及修復原生 (C++) 程式碼內的例外狀況。  
   
- [附加到執行中的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
+ [附加到正在執行的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
  說明如何附加至已在執行中的處理序。  
   
- [指定符號 (.pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+ [指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
  說明如何指定偵錯符號和來源檔案。  
   
  [偵錯 64 位元應用程式](../debugger/debug-64-bit-applications.md)  

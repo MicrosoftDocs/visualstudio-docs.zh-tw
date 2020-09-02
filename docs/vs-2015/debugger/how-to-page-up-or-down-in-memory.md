@@ -1,5 +1,5 @@
 ---
-title: HOW TO：Page Up 或在記憶體中的向下 |Microsoft Docs
+title: 如何：在記憶體中向上或向下翻頁 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,16 +24,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc05772e6376dbe151d5ca71b9ee221e61a7be88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157849"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>作法：在記憶體中向上或向下翻頁
+# <a name="how-to-page-up-or-down-in-memory"></a>如何：在記憶體中向上或向下翻頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-當您在 [記憶體]  視窗或 [反組譯碼]  視窗中檢視記憶體內容時，可以使用垂直捲軸在記憶體空間中上下移動。  
+當您在 [記憶體]**** 視窗或 [反組譯碼]**** 視窗中檢視記憶體內容時，可以使用垂直捲軸在記憶體空間中上下移動。  
   
 ### <a name="to-page-up-or-down-in-memory"></a>若要在記憶體中向上或向下翻頁  
   
@@ -53,5 +53,5 @@ ms.locfileid: "68157849"
   
 ## <a name="see-also"></a>另請參閱  
  [記憶體視窗](../debugger/memory-windows.md)   
- [如何：使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)   
+ [如何：使用反組解碼視窗](../debugger/how-to-use-the-disassembly-window.md)   
  [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)

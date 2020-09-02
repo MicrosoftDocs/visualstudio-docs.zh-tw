@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 437ef1f72d3b766a0fc59d602af814a64b735c7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157540"
 ---
 # <a name="about-microsoft-spy"></a>關於 Microsoft Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-使用此對話方塊以顯示著作權、 版本、 擁有權，以及關於 Spy + + 的其他資訊。
+使用此對話方塊來顯示著作權、版本、擁有權，以及 Spy + + 的其他相關資訊。

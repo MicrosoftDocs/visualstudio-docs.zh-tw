@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FIELDS | Microsoft Docs
+title: MACHINE_INFO_FIELDS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cce5300a795922162f2e0b979e553f4235ceacc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147443"
 ---
-# <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
+# <a name="machine_info_fields"></a>MACHINE_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定要擷取特定電腦的資訊種類。  
+指定要針對特定電腦取出的資訊類型。  
   
 ## <a name="syntax"></a>語法  
   
@@ -45,29 +45,29 @@ public enum enum_MACHINE_INFO_FIELDS { 
   
 ## <a name="members"></a>成員  
  MCIF_NAME  
- 初始化/使用`bstrName`欄位在結構中。  
+ 初始化/使用 `bstrName` 結構中的欄位。  
   
  MCIF_FLAGS  
- 初始化/使用`Flags`欄位在結構中。  
+ 初始化/使用 `Flags` 結構中的欄位。  
   
  MIF_ALL  
- 初始化/使用的所有欄位在結構中。  
+ 初始化/使用結構中的所有欄位。  
   
 ## <a name="remarks"></a>備註  
- 這些值會傳遞給[GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)方法，以表示哪些成員[MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)結構會進行初始化。  
+ 這些值會傳遞至 [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) 方法，以指出要初始化 [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) 結構的哪些成員。  
   
- 也用於`Fields`隸屬`MACHINE_INFO`表示哪些欄位已使用且有效的結構。  
+ 也可用於結構的成員中， `Fields` `MACHINE_INFO` 以指出哪些欄位已使用且有效。  
   
- 這些旗標可能會結合的位元`OR`。  
+ 這些旗標可以與位結合 `OR` 。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)   
  [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

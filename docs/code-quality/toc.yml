@@ -12,7 +12,7 @@
           href: roslyn-analyzers-overview.md
         - name: 安裝第三方分析器
           href: install-roslyn-analyzers.md
-        - name: 組態
+        - name: 設定
           items:
             - name: 設定來源程式碼分析
               href: use-roslyn-analyzers.md
@@ -348,7 +348,7 @@
                   href: ca2210.md
             - name: 文件警告
               items:
-                - name: 總覽
+                - name: 概觀
                   displayName: documentation warnings
                   href: documentation-warnings.md
                 - name: CA1200：請避免使用具有前置詞的 cref 標記
@@ -372,12 +372,14 @@
                   href: ca1305.md
                 - name: 'CA1306:必須設定資料類型的地區設定'
                   href: ca1306.md
-                - name: 'CA1307:必須指定 StringComparison'
+                - name: 'CA1307:指定 StringComparison 以提升明確性'
                   href: ca1307.md
                 - name: 'CA1308:必須將字串標準化為大寫字母'
                   href: ca1308.md
                 - name: 'CA1309:使用循序的 StringComparison'
                   href: ca1309.md
+                - name: CA1310：指定 StringComparison 以提升正確性
+                  href: ca1310.md
                 - name: 'CA2101:必須指定 P-Invoke 字串引數的封送處理'
                   href: ca2101.md
             - name: 互通性警告
@@ -569,6 +571,8 @@
                   href: ca1835.md
                 - name: CA1836：建議使用 IsEmpty，而不要使用 Count (如果有的話)
                   href: ca1836.md
+                - name: CA1837：請使用 Environment.ProcessId 而非 Process.GetCurrentProcess().Id
+                  href: ca1837.md
                 - name: CA1838：請勿對 P/Invoke 使用 StringBuilder 參數
                   href: ca1838.md
             - name: 可攜性警告
@@ -601,6 +605,8 @@
                   href: ca2006.md
                 - name: 'CA2007:不直接等候工作'
                   href: ca2007.md
+                - name: CA2008：建立工作時請務必傳遞 TaskScheduler
+                  href: ca2008.md
                 - name: CA2009：請勿對 ImmutableCollection 值呼叫 TolmmutableCollection
                   href: ca2009.md
                 - name: CA2011：請勿在屬性 setter 中指派屬性
@@ -985,6 +991,8 @@
                   href: ca2247.md
                 - name: CA2248：請提供正確的列舉引數給 Enum.HasFlag
                   href: ca2248.md
+                - name: CA2249：請考慮使用 String.Contains 而非 String.IndexOf
+                  href: ca2249.md
             - name: 自動功能暫停
               href: automatic-feature-suspension.md
             - name: 發佈警告

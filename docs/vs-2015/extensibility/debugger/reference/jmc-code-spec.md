@@ -1,5 +1,5 @@
 ---
-title: JMC_CODE_SPEC | Microsoft Docs
+title: JMC_CODE_SPEC |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ca7d6bfb799f0a9460702c4b581ef3f5261672b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147490"
 ---
-# <a name="jmccodespec"></a>JMC_CODE_SPEC
+# <a name="jmc_code_spec"></a>JMC_CODE_SPEC
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此結構用來設定模組的 JustMyCode 資訊。  
+此結構是用來設定模組的 JustMyCode 資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,20 +42,20 @@ public struct JMC_CODE_SPEC {
   
 ## <a name="members"></a>成員  
  fIsUserCode  
- 非零 (`TRUE`) 模組時才會被視為使用者程式碼; 否則為零 (`FALSE`) 如果模組已被視為外部程式碼，而不進行偵錯。  
+ `TRUE`如果模組要視為使用者程式碼，則為非零 () ; 否則， `FALSE` 如果模組要視為外部程式碼而不是要進行調試，則為零 () 。  
   
  bstrModuleName  
  有問題的模組名稱。  
   
 ## <a name="remarks"></a>備註  
- 此結構會當做一份這類的結構，以傳遞[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)方法。  
+ 此結構會以這類結構的清單傳遞給 [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) 方法。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

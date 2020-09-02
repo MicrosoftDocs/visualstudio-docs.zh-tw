@@ -15,19 +15,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5723506415a0ddbf816b896e23e93eaa706bf7e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158732"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002：遺漏 VSPerfCorProf.dll
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-規則 Id |DA0002 |  
-|類別目錄 |分析工具使用方式 |  
-|程式碼剖析方法 |使用 VSPerfCmd 和 VSPerfASPNETCmd 命令列工具進行分析 |  
-|訊息 |它會顯示該檔案已收集未正確設定 VSPerfCLREnv.cmd 的環境變數。 可能無法解析受控二進位檔的符號。|  
+規則識別碼 |DA0002 |  
+|類別 |分析工具使用量 |  
+|分析方法 |使用 >vsperfcmd 和 VSPerfASPNETCmd 命令列工具進行程式碼剖析 |  
+|訊息 |在未使用 VSPerfCLREnv 適當設定環境變數的情況下，會顯示已收集的檔案。 可能無法解析受控二進位檔的符號。|  
 |規則類型 |資訊 |  
   
 ## <a name="cause"></a>原因  

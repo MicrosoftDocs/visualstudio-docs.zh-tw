@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_RETVAL | Microsoft Docs
+title: METADATA_ADDRESS_RETVAL |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f685bcfad5cf576215aa50aa26540ba207de2e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546859"
 ---
-# <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
+# <a name="metadata_address_retval"></a>METADATA_ADDRESS_RETVAL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此結構表示從方法或函式的傳回值。  
+此結構代表方法或函數的傳回值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,26 +46,26 @@ public struct METADATA_ADDRESS_RETVAL {
   
 ## <a name="terms"></a>詞彙  
  tokMethod  
- 這個傳回值是針對方法的識別碼。  
+ 這個傳回值適用之方法的識別碼。  
   
  dwCorType  
- 傳回值的基底型別。 這是介於`CorElementType`列舉型別中定義[!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]SDK corhdr.h 檔案。  
+ 傳回值的基底類型。 這是在 `CorElementType` SDK corhdr.h .h 檔案中定義之列舉的值 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 。  
   
  dwSigSize  
- 傳回值的簽章的大小 (儲存在`rgSig`)。  
+ 傳回值簽章的大小 (儲存在) 中 `rgSig` 。  
   
  rgSig  
- 建構簽章的傳回值的位元組陣列。  
+ 形成傳回值簽章的位元組陣列。  
   
 ## <a name="remarks"></a>備註  
- 此結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構的時機`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設定為`ADDRESS_KIND_RETVAL`(中的值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。  
+ 當結構的[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 欄位 `DEBUG_ADDRESS_UNION` 設定為 `ADDRESS_KIND_RETVAL` ([ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉) 中的值時，此結構就是 DEBUG_ADDRESS_UNION 結構中聯集的一部分。  
   
 ## <a name="requirements"></a>需求  
- 標頭： sh.h  
+ 標頭： sh. h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

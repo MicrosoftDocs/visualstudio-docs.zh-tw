@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts2 | Microsoft Docs
+title: IEnumDebugCodeCoNtexts2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f36da19e6bc47d70010dd96a26256537803ccb29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551614"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此介面列舉與偵錯工作階段中，或特定的程式或文件相關聯的程式碼內容。  
+這個介面會列舉與 debug 會話相關聯的程式碼內容，或是與特定程式或檔相關聯的程式碼內容。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,36 +30,36 @@ ms.locfileid: "62551614"
 IEnumDebugCodeContexts2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- 偵錯引擎 (DE) 會實作這個介面來代表在程式中，特定的文字位置的程式碼內容的清單或一份特定文件內容的程式碼內容。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ Debug engine (DE) 會執行這個介面，以代表程式中特定文字位置的程式碼內容清單，或特定檔內容的程式碼內容清單。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 呼叫[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)來取得這個介面，表示該應用程式的來源文件中的特定文字位置的程式碼內容的清單。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 呼叫 [EnumCodeCoNtexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) 來取得這個介面，此介面代表程式之來源文件中特定文字位置的程式碼內容清單。  
   
- 呼叫[EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md)來取得這個介面，表示特定的來源文件中的所有程式碼內容的清單。  
+ 呼叫 [EnumCodeCoNtexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md) 以取得這個介面，此介面代表特定來源文件中的所有程式碼內容清單。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IEnumDebugCodeContexts2`。  
+ 下表顯示的方法 `IEnumDebugCodeContexts2` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[下一步](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|擷取指定的數目的列舉型別序列中的程式碼內容。|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|略過指定的數目的列舉型別序列中的程式碼內容。|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-reset.md)|將列舉型別序列重設到開頭。|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|建立列舉值，包含目前的列舉值相同的列舉型別狀態。|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|取得列舉值中的程式碼內容的數目。|  
+|[下一個](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|抓取列舉序列中指定數目的程式碼內容。|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|略過列舉序列中指定數目的程式碼內容。|  
+|[重設](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-reset.md)|將列舉順序重設為開頭。|  
+|[複製](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|取得列舉值中的程式碼內容數目。|  
   
 ## <a name="remarks"></a>備註  
- Visual Studio 呼叫[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)來填入清單的程式碼內容的使用者可以選擇從時設定下一個陳述式，或顯示反組譯的原始程式檔。 多個程式碼內容時可能發生，例如，有多個執行個體C++-樣式範本。  
+ Visual Studio 會呼叫 [EnumCodeCoNtexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) ，以填入使用者在設定下一個語句或顯示來源檔案的反組解碼時，可從中選擇的程式碼內容清單。 例如，當有多個 c + + 樣式範本的實例時，可能會發生多個程式碼內容。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
- [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)   
+ [EnumCodeCoNtexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)   
  [EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md)

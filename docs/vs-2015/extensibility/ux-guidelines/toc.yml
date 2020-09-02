@@ -1,0 +1,38 @@
+- name: Visual Studio 使用者體驗方針
+  href: visual-studio-user-experience-guidelines.md
+  items:
+    - name: 適用於 Visual Studio 的 UX 基本項目
+      href: ux-essentials-for-visual-studio.md
+    - name: 適用於 Visual Studio 的字型和格式設定
+      href: fonts-and-formatting-for-visual-studio.md
+    - name: 適用於 Visual Studio 的色彩和樣式設定
+      href: colors-and-styling-for-visual-studio.md
+      items:
+        - name: 適用於 Visual Studio 的共用色彩
+          href: shared-colors-for-visual-studio.md
+    - name: 適用於 Visual Studio 的影像和圖示
+      href: images-and-icons-for-visual-studio.md
+      items:
+        - name: 適用於 Visual Studio 的視覺化語言字典
+          href: visual-language-dictionary-for-visual-studio.md
+    - name: 適用於 Visual Studio 的功能表和命令
+      href: menus-and-commands-for-visual-studio.md
+    - name: 適用於 Visual Studio 的互動模式
+      href: interaction-patterns-for-visual-studio.md
+      items:
+        - name: 適用於 Visual Studio 的應用程式模式
+          href: application-patterns-for-visual-studio.md
+        - name: 適用於 Visual Studio 的通用控制項模式
+          href: common-control-patterns-for-visual-studio.md
+        - name: 適用於 Visual Studio 的複合模式
+          href: composite-patterns-for-visual-studio.md
+    - name: 適用於 Visual Studio 的 UI 文字和說明
+      href: ui-text-and-help-for-visual-studio.md
+    - name: 適用於 Visual Studio 的配置
+      href: layout-for-visual-studio.md
+    - name: 適用於 Visual Studio 的通知和進度
+      href: notifications-and-progress-for-visual-studio.md
+    - name: 適用於 Visual Studio 的動畫
+      href: animations-for-visual-studio.md
+    - name: 適用於 Visual Studio 的評估工具
+      href: evaluation-tools-for-visual-studio.md

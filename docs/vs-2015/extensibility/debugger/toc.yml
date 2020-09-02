@@ -1,0 +1,286 @@
+- name: Visual Studio 偵錯工具的擴充性
+  href: visual-studio-debugger-extensibility.md
+- name: 選擇偵錯引擎的實作策略
+  href: choosing-a-debug-engine-implementation-strategy.md
+- name: 建立自訂的偵錯引擎
+  href: creating-a-custom-debug-engine.md
+  items:
+    - name: 註冊自訂的偵錯引擎
+      href: registering-a-custom-debug-engine.md
+    - name: 啟用要偵錯的程式
+      href: enabling-a-program-to-be-debugged.md
+      items:
+        - name: 取得連接埠
+          href: getting-a-port.md
+        - name: 註冊程式
+          href: registering-the-program.md
+        - name: 附加至程式
+          href: attaching-to-the-program.md
+        - name: 啟動時附加
+          href: launch-based-attachment.md
+        - name: 傳送所需的事件
+          href: sending-the-required-events.md
+    - name: 執行控制和狀態評估
+      href: execution-control-and-state-evaluation.md
+      items:
+        - name: 程式控制
+          href: program-control.md
+        - name: 中斷點相關的方法
+          href: breakpoint-related-methods.md
+        - name: 呼叫堆疊評估
+          href: call-stack-evaluation.md
+        - name: 運算式評估
+          href: expression-evaluation-visual-studio-debugging-sdk.md
+        - name: 控制項事件
+          href: control-events.md
+    - name: 傳送事件
+      href: sending-events.md
+      items:
+        - name: 事件來源
+          href: event-sources-visual-studio-sdk.md
+        - name: 支援的事件類型
+          href: supported-event-types.md
+        - name: 事件描述
+          href: event-descriptions.md
+    - name: 終止並中斷連結
+      href: termination-and-detaching.md
+    - name: 呼叫偵錯工具事件
+      href: calling-debugger-events.md
+      items:
+        - name: 附加至程式及中斷連結程式
+          href: attaching-and-detaching-to-a-program.md
+        - name: 啟動偵錯工具
+          href: launching-the-debugger.md
+        - name: 終止程式
+          href: terminating-a-program.md
+        - name: 建立中斷點
+          href: creating-a-breakpoint.md
+        - name: 當中斷點繫結或變成未繫結時
+          href: when-a-breakpoint-binds-or-becomes-unbound.md
+        - name: 中斷點錯誤
+          href: breakpoint-errors.md
+        - name: 到達中斷點
+          href: hitting-a-breakpoint.md
+        - name: 刪除中斷點
+          href: deleting-a-breakpoint.md
+        - name: 進入中斷模式
+          href: entering-break-mode.md
+        - name: 在中斷模式中逐步執行
+          href: stepping-in-break-mode.md
+        - name: 中斷模式中的運算式評估
+          href: expression-evaluation-in-break-mode.md
+        - name: 例外狀況處理
+          href: exception-handling-visual-studio-sdk.md
+    - name: 如何：對自訂的偵錯引擎進行偵錯
+      href: how-to-debug-a-custom-debug-engine.md
+- name: 開始使用
+  href: getting-started-with-debugger-extensibility.md
+  items:
+    - name: 擴充偵錯工具的藍圖
+      href: roadmap-for-extending-the-debugger.md
+    - name: 偵錯工具元件
+      href: debugger-components.md
+      items:
+        - name: 偵錯套件
+          href: debug-package.md
+        - name: 處理序偵錯管理員
+          href: process-debug-manager.md
+        - name: 工作階段偵錯管理員
+          href: session-debug-manager.md
+        - name: 偵錯引擎
+          href: debug-engine.md
+        - name: 作業模式
+          href: operational-modes.md
+        - name: 運算式評估工具
+          href: expression-evaluator.md
+        - name: 符號提供者
+          href: symbol-provider.md
+        - name: 類型視覺化檢視和自訂檢視器
+          href: type-visualizer-and-custom-viewer.md
+    - name: 偵錯工具概念
+      href: debugger-concepts.md
+      items:
+        - name: 偵錯工作階段
+          href: debug-session.md
+        - name: 伺服器
+          href: servers-visual-studio-sdk.md
+        - name: 連接埠提供者
+          href: port-suppliers.md
+        - name: 連接埠
+          href: ports.md
+        - name: 處理序
+          href: processes.md
+        - name: 程式節點
+          href: program-nodes.md
+        - name: 程式
+          href: programs.md
+        - name: Threads
+          href: threads.md
+        - name: 堆疊框架
+          href: stack-frames.md
+        - name: 單元
+          href: modules.md
+        - name: 中斷點
+          href: breakpoints-visual-studio-sdk.md
+    - name: 偵錯工具內容
+      href: debugger-contexts.md
+      items:
+        - name: 程式碼內容
+          href: code-context.md
+        - name: 文件位置
+          href: document-position.md
+        - name: 文件內容
+          href: document-context.md
+        - name: 運算式評估內容
+          href: expression-evaluation-context.md
+    - name: 偵錯工作
+      href: debugging-tasks.md
+      items:
+        - name: 安全性問題
+          href: security-issues.md
+        - name: 啟動程式
+          href: launching-a-program.md
+          items:
+            - name: 通知連接埠
+              href: notifying-the-port.md
+            - name: 在啟動後附加
+              href: attaching-after-a-launch.md
+        - name: 直接附加至程式
+          href: attaching-directly-to-a-program.md
+        - name: 在啟動後傳送啟動事件
+          href: sending-startup-events-after-a-launch.md
+        - name: 控制執行
+          href: control-of-execution.md
+        - name: 繫結中斷點
+          href: binding-breakpoints.md
+        - name: 評估運算式
+          href: evaluating-expressions.md
+        - name: 視覺化及檢視資料
+          href: visualizing-and-viewing-data.md
+- name: 撰寫 CLR 運算式評估工具
+  href: writing-a-common-language-runtime-expression-evaluator.md
+  items:
+    - name: Common Language Runtime 和運算式評估
+      href: common-language-runtime-and-expression-evaluation.md
+    - name: 運算式評估工具架構
+      href: expression-evaluator-architecture.md
+      items:
+        - name: 評估內容
+          href: evaluation-context.md
+        - name: 主要的運算式評估工具介面
+          href: key-expression-evaluator-interfaces.md
+    - name: 註冊運算式評估工具
+      href: registering-an-expression-evaluator.md
+    - name: 實作運算式評估工具
+      href: implementing-an-expression-evaluator.md
+      items:
+        - name: 運算式評估工具的實作策略
+          href: expression-evaluator-implementation-strategy.md
+    - name: 顯示區域變數
+      href: displaying-locals.md
+      items:
+        - name: 區域變數的範例實作
+          href: sample-implementation-of-locals.md
+          items:
+            - name: 實作 GetMethodProperty
+              href: implementing-getmethodproperty.md
+            - name: 列舉區域變數
+              href: enumerating-locals.md
+            - name: 取得區域變數的屬性
+              href: getting-local-properties.md
+            - name: 取得區域變數值
+              href: getting-local-values.md
+            - name: 評估區域變數
+              href: evaluating-locals.md
+    - name: 評估監看式視窗的運算式
+      href: evaluating-a-watch-window-expression.md
+      items:
+        - name: 運算式評估的範例實作
+          href: sample-implementation-of-expression-evaluation.md
+        - name: 評估監看運算式
+          href: evaluating-a-watch-expression.md
+    - name: 變更區域變數的值
+      href: changing-the-value-of-a-local.md
+      items:
+        - name: 變更值的範例實作
+          href: sample-implementation-of-changing-values.md
+    - name: 實作類型視覺化檢視和自訂檢視器
+      href: implementing-type-visualizers-and-custom-viewers.md
+- name: 實作連接埠提供者
+  href: implementing-a-port-supplier.md
+  items:
+    - name: 實作和註冊連接埠提供者
+      href: implementing-and-registering-a-port-supplier.md
+    - name: 必要的連接埠提供者介面
+      href: required-port-supplier-interfaces.md
+- name: .NET Framework 適用的平行延伸模組內部資訊
+  href: parallel-extension-internals-for-the-dotnet-framework.md
+  items:
+    - name: Task 類別
+      href: task-class-internal-members.md
+      items:
+        - name: m_action 欄位
+          href: m-action-field.md
+        - name: m_contingentProperties 欄位
+          href: m-contingentproperties-field.md
+        - name: m_parent 欄位
+          href: m-parent-field.md
+        - name: m_stateFlags 欄位
+          href: m-stateflags-field.md
+        - name: m_stateObject 欄位
+          href: m-stateobject-field.md
+        - name: m_taskId 欄位
+          href: m-taskid-field.md
+        - name: s_taskIdCounter 欄位
+          href: s-taskidcounter-field.md
+        - name: TASK_STATE_CANCELED 欄位
+          href: task-state-canceled-field.md
+        - name: TASK_STATE_EXECUTED 欄位
+          href: task-state-executed-field.md
+        - name: TASK_STATE_FAULTED 欄位
+          href: task-state-faulted-field.md
+        - name: TASK_STATE_RAN_TO_COMPLETION 欄位
+          href: task-state-ran-to-completion-field.md
+        - name: TASK_STATE_WAITING_ON_CHILDREN 欄位
+          href: task-state-waiting-on-children-field.md
+        - name: SetNotificationForWaitCompletion 方法
+          href: setnotificationforwaitcompletion-method.md
+        - name: NotifyDebuggerOfWaitCompletion 方法
+          href: notifydebuggerofwaitcompletion-method.md
+    - name: TaskScheduler 類別
+      href: taskscheduler-class-internal-members.md
+      items:
+        - name: GetScheduledTasksForDebugger 方法
+          href: getscheduledtasksfordebugger-method.md
+        - name: GetTaskSchedulersForDebugger 方法
+          href: gettaskschedulersfordebugger-method.md
+    - name: ContingentProperties 類別
+      href: contingentproperties-class-internal-members.md
+      items:
+        - name: m_children 欄位
+          href: m-children-field.md
+    - name: AsyncTaskMethodBuilder 結構
+      href: asynctaskmethodbuilder-structure-internal-members.md
+      items:
+        - name: ObjectIdForDebugger 屬性
+          href: asynctaskmethodbuilder-objectidfordebugger-property.md
+        - name: m_builder 欄位
+          href: asynctaskmethodbuilder-m-builder-field.md
+    - name: AsyncTaskMethodBuilder\<TResult> 結構
+      href: asynctaskmethodbuilder-tresult-structure-internal-members.md
+      items:
+        - name: ObjectIdForDebugger 屬性
+          href: asynctaskmethodbuilder-tresult-objectidfordebugger-property.md
+        - name: m_task 欄位
+          href: asynctaskmethodbuilder-tresult-m-task-field.md
+    - name: AsyncVoidMethodBuilder 結構
+      href: asyncvoidmethodbuilder-structure-internal-members.md
+      items:
+        - name: ObjectIdForDebugger 屬性
+          href: asyncvoidmethodbuilder-objectidfordebugger-property.md
+        - name: m_objectIdForDebugger 欄位
+          href: asyncvoidmethodbuilder-m-objectidfordebugger-field.md
+- name: 參考
+  href: reference/reference-visual-studio-debugging-apis.md
+- name: 範例
+  href: visual-studio-debugging-samples.md

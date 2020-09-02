@@ -1,5 +1,5 @@
 ---
-title: HOW TO：清除復原堆疊 |Microsoft Docs
+title: 如何：清除復原堆疊 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,20 +11,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db77f93fd7f6af16b5358b75b6ffcd5927430653
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62549108"
 ---
-# <a name="how-to-clear-the-undo-stack"></a>HOW TO：清除復原堆疊
+# <a name="how-to-clear-the-undo-stack"></a>如何：清除復原堆疊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-下列程序說明如何清除復原堆疊。  
+下列程式說明如何清除復原堆疊。  
   
-### <a name="to-clear-the-undo-stack"></a>若要清除復原堆疊  
+### <a name="to-clear-the-undo-stack"></a>清除復原堆疊  
   
-1. 若要清除復原堆疊使用[IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom)方法。 這個範例如下：  
+1. 若要清除復原堆疊，請使用 [IOleUndoManager：:D iscardfrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) 方法。 以下是這種情況的範例：  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  

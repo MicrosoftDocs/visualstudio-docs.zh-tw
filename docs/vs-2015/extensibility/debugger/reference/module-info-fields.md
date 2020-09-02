@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FIELDS | Microsoft Docs
+title: MODULE_INFO_FIELDS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b80235f4ae769acbe3c61ad4b597898ee774d6a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547321"
 ---
-# <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
+# <a name="module_info_fields"></a>MODULE_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定偵錯模組資訊旗標。  
+指定 debug 模組資訊的旗標。  
   
 ## <a name="syntax"></a>語法  
   
@@ -65,59 +65,59 @@ public enum enum_MODULE_INFO_FIELDS { 
   
 ## <a name="members"></a>成員  
  MIF_NONE  
- 初始化/使用無結構中的欄位。  
+ 初始化/使用結構中的任何欄位。  
   
  MIF_NAME  
- 初始化/使用`m_bstrName`欄位中[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)結構。  
+ 初始化/使用 `m_bstrName` [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 結構中的欄位。  
   
  MIF_URL  
- 初始化/使用`m_bstrUrl`欄位中`MODULE_INFO`結構。  
+ 初始化/使用 `m_bstrUrl` 結構中的欄位 `MODULE_INFO` 。  
   
  MIF_VERSION  
- 初始化/使用`m_bstrVersion`欄位中`MODULE_INFO`結構。  
+ 初始化/使用 `m_bstrVersion` 結構中的欄位 `MODULE_INFO` 。  
   
  MIF_DEBUGMESSAGE  
- 初始化/使用`m_bstrDebugMessage`欄位中`MODULE_INFO`結構。  
+ 初始化/使用 `m_bstrDebugMessage` 結構中的欄位 `MODULE_INFO` 。  
   
  MIF_LOADADDRESS  
- 初始化/使用`m_addrLoadAddress`欄位中`MODULE_INFO`結構。  
+ 初始化/使用 `m_addrLoadAddress` 結構中的欄位 `MODULE_INFO` 。  
   
  MIF_PREFFEREDADDRESS  
- 初始化/使用`m_addrPreferredLoadAddress`欄位中`MODULE_INFO`結構。  
+ 初始化/使用 `m_addrPreferredLoadAddress` 結構中的欄位 `MODULE_INFO` 。  
   
  MIF_SIZE  
- 初始化/使用`m_dwSize`欄位中`MODULE_INFO`結構。  
+ 初始化/使用 `m_dwSize` 結構中的欄位 `MODULE_INFO` 。  
   
  MIF_LOADORDER  
- 初始化/使用`m_dwLoadOrder`欄位中`MODULE_INFO`結構。  
+ 初始化/使用 `m_dwLoadOrder` 結構中的欄位 `MODULE_INFO` 。  
   
  MIF_TIMESTAMP  
- 初始化/使用`m_TimeStamp`欄位中`MODULE_INFO`結構。  
+ 初始化/使用 `m_TimeStamp` 結構中的欄位 `MODULE_INFO` 。  
   
  MIF_URLSYMBOLLOCATION  
- 初始化/使用`m_bstrUrlSymbolLocation`欄位中`MODULE_INFO`結構。  
+ 初始化/使用 `m_bstrUrlSymbolLocation` 結構中的欄位 `MODULE_INFO` 。  
   
  MIF_FLAGS  
- 初始化/使用`m_dwModuleFlags`欄位中`MODULE_INFO`結構。  
+ 初始化/使用 `m_dwModuleFlags` 結構中的欄位 `MODULE_INFO` 。  
   
  MIF_ALLFIELDS  
- 初始化/使用中的欄位的所有`MODULE_INFO`結構。  
+ 初始化/使用結構中的所有欄位 `MODULE_INFO` 。  
   
 ## <a name="remarks"></a>備註  
- 這些值會傳遞做為引數[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)方法，以表示哪些欄位[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)結構會進行初始化。  
+ 這些值會以引數的形式傳遞至 [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) 方法，以指出要初始化 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 結構的哪些欄位。  
   
- 這些值也會在`MODULE_INFO`表示哪些欄位已使用且有效的結構。  
+ 結構中也會使用這些值 `MODULE_INFO` 來指出哪些欄位已使用且有效。  
   
- 這些旗標可能會結合的位元`OR`。  
+ 這些旗標可以與位結合 `OR` 。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

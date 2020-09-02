@@ -1,5 +1,5 @@
 ---
-title: IDebugField::Equal |Microsoft Docs
+title: IDebugField：：等於 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: aa630a6f2084f7ff79a9c89b685658cf694fcab9
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547308"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個方法會比較此欄位與指定欄位相等。  
+這個方法會比較此欄位與指定的欄位是否相等。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,10 +40,10 @@ int Equal(
   
 #### <a name="parameters"></a>參數  
  `pField`  
- [in]要與這個比較的欄位。  
+ 在要與此一比較的欄位。  
   
 ## <a name="return-value"></a>傳回值  
- 如果欄位是相同時，會傳回`S_OK`。 如果欄位不相同，就會傳回`S_FALSE.`否則會傳回錯誤碼。  
+ 如果欄位相同，則會傳回 `S_OK` 。 如果欄位不同，則會傳回 `S_FALSE.` ，否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

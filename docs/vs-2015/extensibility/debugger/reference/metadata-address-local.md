@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_LOCAL | Microsoft Docs
+title: METADATA_ADDRESS_LOCAL |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5928f6092adc62dc8f0eb075f20367c056fc50c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547165"
 ---
-# <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
+# <a name="metadata_address_local"></a>METADATA_ADDRESS_LOCAL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此結構表示 （通常是函式或方法） 的範圍內的區域變數的位址。  
+此結構代表範圍內的區域變數位址， (通常是) 的函式或方法。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,20 +44,20 @@ public struct METADATA_ADDRESS_LOCAL {
   
 ## <a name="terms"></a>詞彙  
  tokMethod  
- 方法或函式識別碼的本機變數是的一部分。  
+ 區域變數所屬方法或函數的識別碼。  
   
- [C++]`_mdToken`是`typedef`適用於 32 位元`int`。  
+ [C + +] `_mdToken` 是 `typedef` 32 位的 `int` 。  
   
  pLocal  
- 這個結構是表示其位址之語彙基元。  
+ 此結構所代表之位址的標記。  
   
  dwIndex  
- 可以是方法或函式或其他值 （語言特有） 中的這個本機變數的索引。  
+ 可以是方法或函式中這個區域變數的索引，也可以是 (語言特定) 的其他值。  
   
 ## <a name="remarks"></a>備註  
- 此結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構的時機`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設定為`ADDRESS_KIND_LOCAL`(中的值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。  
+ 當結構的[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 欄位 `DEBUG_ADDRESS_UNION` 設定為 `ADDRESS_KIND_LOCAL` ([ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉) 中的值時，此結構就是 DEBUG_ADDRESS_UNION 結構中聯集的一部分。  
   
- `Warning:` [C++只] 如果`pLocal`不是 null，則您必須呼叫`Release`語彙基元的指標 (`addr`是中的欄位[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)結構):  
+ `Warning:` [僅限 c + +] 如果不 `pLocal` 是 null，則您必須在 `Release` token 指標上呼叫， (`addr` 是 [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) 結構) 中的欄位：  
   
 ```  
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal != NULL)  
@@ -67,11 +67,11 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal !=
 ```  
   
 ## <a name="requirements"></a>需求  
- 標頭： sh.h  
+ 標頭： sh. h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

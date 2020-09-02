@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::Next |Microsoft Docs
+title: IEnumDebugCustomAttributes：： Next |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f6ce0a8199bfb279c8f8d628de0b174d7f03369
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551399"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取列舉型別序列中的自訂屬性指定的數目。  
+抓取列舉序列中指定數目的自訂屬性。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,16 +44,16 @@ int Next(
   
 #### <a name="parameters"></a>參數  
  `celt`  
- [in]若要擷取的元素數目。 也會指定的大小上限`rgelt`陣列。  
+ 在要取出的元素數目。 也指定陣列的大小上限 `rgelt` 。  
   
  `rgelt`  
- [out]陣列[IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)来填入的物件。  
+ 擴展要填入的 [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) 物件陣列。  
   
  `pceltFetched`  
- [out]傳回的項目數中實際傳回`rgelt`。  
+ 擴展傳回實際傳回的元素數目 `rgelt` 。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`更少的項目要求的數目可能會傳回; 否則會傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果可以傳回小於所要求的元素數目，則傳回，否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)   

@@ -1,5 +1,5 @@
 ---
-title: MODULE_FLAGS | Microsoft Docs
+title: MODULE_FLAGS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,13 +13,13 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae51d604f455b12fd6933a54954b75a97aea4eb7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547464"
 ---
-# <a name="moduleflags"></a>MODULE_FLAGS
+# <a name="module_flags"></a>MODULE_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 用來描述模組。  
@@ -51,35 +51,35 @@ public enum enum_MODULE_FLAGS { 
   
 ## <a name="members"></a>成員  
  MODULE_FLAG_NONE  
- 指定沒有模組。  
+ 未指定模組。  
   
  MODULE_FLAG_SYSTEM  
  指定系統模組。  
   
  MODULE_FLAG_SYMBOLS  
- 指定符號的模組。  
+ 指定符號模組。  
   
  MODULE_FLAG_64BIT  
- 指定 64 位元模組。  
+ 指定64位模組。  
   
  MODULE_FLAG_OPTIMIZED  
- 指定模組已經過最佳化。 此狀態會反映在**模組**視窗。  
+ 指定模組已經過優化。 此狀態會反映在 [ **模組** ] 視窗中。  
   
  MODULE_FLAG_UNOPTIMIZED  
- 指定模組尚未經過最佳化。 此狀態會反映在**模組**視窗。 這是預設狀態。  
+ 指定尚未優化的模組。 此狀態會反映在 [ **模組** ] 視窗中。 這是預設狀態。  
   
 ## <a name="remarks"></a>備註  
- 用於`m_dwModuleFlags`隸屬[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)結構。  
+ 用於 `m_dwModuleFlags` [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 結構的成員。  
   
- 這些旗標可能會結合的位元`OR`。  
+ 這些旗標可以與位結合 `OR` 。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)

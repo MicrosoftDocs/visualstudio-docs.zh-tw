@@ -1,5 +1,5 @@
 ---
-title: HOW TO：執行背景工作處理序，使用者帳戶 |Microsoft Docs
+title: 如何：在使用者帳戶下執行背景工作進程 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,20 +21,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ebb8ec1fe10f6fbc5c367cb0ed127e048351b0e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157863"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>作法：在使用者帳戶下執行背景工作處理序
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在使用者帳戶下執行背景工作處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要設定電腦以便在某個使用者帳戶下執行 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序 (aspnet_wp.exe 或 w3wp.exe)，請依照下列步驟執行。  
   
 ## <a name="procedure"></a>程序  
   
-#### <a name="to-run-aspnetwpexe-under-a-user-account"></a>若要在使用者帳戶下執行 aspnet_wp.exe  
+#### <a name="to-run-aspnet_wpexe-under-a-user-account"></a>若要在使用者帳戶下執行 aspnet_wp.exe  
   
 1. 開啟 machine.config 檔，這個檔案位於電腦中安裝執行階段之路徑下的 CONFIG 資料夾內。  
   
@@ -60,18 +60,18 @@ ms.locfileid: "68157863"
     iisreset  
     ```  
 
-    — 或 —  
+    — 或者—  
   
     ```  
     net stop iisadmin /y  
     net start w3svc  
     ```  
   
-6. 找出 Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files 資料夾，它應該與 CONFIG 資料夾位於相同的路徑中。 以滑鼠右鍵按一下 [Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files] 資料夾，然後選擇捷徑功能表上的 [屬性]  。  
+6. 找出 Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files 資料夾，它應該與 CONFIG 資料夾位於相同的路徑中。 以滑鼠右鍵按一下 [Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files] 資料夾，然後選擇捷徑功能表上的 [屬性] **** 。  
   
 7. 在 [ **暫存 ASP.NET 檔案屬性** ] 對話方塊內，按一下 [ **安全性** ] 索引標籤。  
   
-8. 按一下 [ **進階**]。  
+8. 按一下 **[進階]** 。  
   
 9. 在 [ **暫存 ASP.NET 檔案的進階安全性設定** ] 對話方塊中，按一下 [ **加入**]。  
   
@@ -81,9 +81,9 @@ ms.locfileid: "68157863"
   
 11. 在 [ **暫存 ASP.NET 檔的使用權限項目** ] 對話方塊中，授與使用者 [ **完全控制**]，然後按一下 [ **確定** ] 來關閉 [ **暫存 ASP.NET 檔案的項目** ] 對話方塊。  
   
-12. [ **安全性** ] 對話方塊隨即出現，詢問您是否真的想要變更系統資料夾的使用權限。 按一下 [ **是**]。  
+12. [ **安全性** ] 對話方塊隨即出現，詢問您是否真的想要變更系統資料夾的使用權限。 按一下 [是]  。  
   
 13. 按一下 [ **確定** ] 以關閉此 [ **暫存 ASP.NET 檔案屬性** ] 對話方塊。  
   
 ## <a name="see-also"></a>另請參閱  
-[ASP.NET 偵錯：系統需求](../debugger/aspnet-debugging-system-requirements.md)  
+[ASP.NET 調試：系統需求](../debugger/aspnet-debugging-system-requirements.md)  

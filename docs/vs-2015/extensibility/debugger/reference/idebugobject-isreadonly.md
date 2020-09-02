@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsReadOnly |Microsoft Docs
+title: IDebugObject：： IsReadOnly |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 74b55895e440f900e59cd3b517e22dd8a0191414
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159088"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-判斷這個物件是否為唯讀。  
+判斷此物件是否為唯讀。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,13 +40,13 @@ int IsReadOnly(
   
 #### <a name="parameters"></a>參數  
  `pfIsReadOnly`  
- [out]會傳回非零 (`TRUE`) 如果此物件是唯讀的; 否則會傳回零 (`FALSE`)。  
+ 擴展如果這個物件是唯讀的，則傳回非零的 (`TRUE`) ; 否則傳回零 (`FALSE`) 。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 唯讀的物件不能有它建立之後變更其值。  
+ 唯讀物件在建立之後，即無法變更其值。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

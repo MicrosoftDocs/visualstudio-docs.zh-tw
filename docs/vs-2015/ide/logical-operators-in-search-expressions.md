@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3d56f2dfc2924008a6be293fe1498f0ffe32abaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651433"
 ---
 # <a name="logical-operators-in-search-expressions"></a>搜尋運算式中的邏輯運算子
@@ -27,7 +27,7 @@ ms.locfileid: "72651433"
 > [!IMPORTANT]
 > 您必須輸入全部大寫的邏輯運算子，搜尋引擎才能辨識它們。
 
-|搜尋|使用|範例|結果|
+|搜尋|用法|範例|結果|
 |-------------------|---------|-------------|------------|
 |相同主題中的兩個詞彙|AND|dib AND palette|包含 "dib" 和 "palette" 的主題。|
 |主題中的任一個詞彙|OR|raster OR vector|包含 "raster" 或 "vector" 的主題。|
@@ -35,4 +35,4 @@ ms.locfileid: "72651433"
 |主題中接近的兩個詞彙|NEAR|user NEAR kernel|包含十分接近 "kernel" 之 "user" 的主題。|
 
 ## <a name="see-also"></a>另請參閱
- [全文檢索搜尋秘訣](../ide/full-text-search-tips.md)[尋找資訊](../ide/locate-information.md)
+ [全文檢索搜尋提示](../ide/full-text-search-tips.md)[找出資訊](../ide/locate-information.md)
