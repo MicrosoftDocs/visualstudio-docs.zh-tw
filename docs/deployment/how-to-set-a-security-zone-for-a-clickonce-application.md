@@ -1,5 +1,5 @@
 ---
-title: 如何設定 ClickOnce 應用程式的安全性區域 |Microsoft Docs
+title: 如何-設定 ClickOnce 應用程式的安全性區域 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51515339c24ea8a0507c47d0399cde9e423f71a0
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382129"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>How to: Set a security zone for a ClickOnce application (如何：設定 ClickOnce 應用程式的安全性區域)
@@ -30,9 +30,9 @@ ms.locfileid: "85382129"
 
 ### <a name="to-set-a-security-zone"></a>設定安全性區域
 
-1. 在**方案總管**中選取專案時，按一下 [**專案**] 功能表上的 [**屬性**]。
+1. 在 **方案總管**中選取專案時，在 [ **專案** ] 功能表上按一下 [ **屬性**]。
 
-2. 按一下 [安全性]**** 索引標籤。
+2. 按一下 [安全性] 索引標籤。
 
 3. 選取 [啟用 ClickOnce 安全性設定] **** 核取方塊。
 

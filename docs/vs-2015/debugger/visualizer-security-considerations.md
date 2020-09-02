@@ -1,5 +1,5 @@
 ---
-title: 視覺化檢視安全性考量 |Microsoft Docs
+title: 視覺化檢視安全性考慮 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 51c79c34520c36e51599d4d6135784f493673b62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146457"
 ---
 # <a name="visualizer-security-considerations"></a>視覺化檢視安全性考量
@@ -41,7 +41,7 @@ ms.locfileid: "68146457"
  若要減輕這項弱點，請留意視覺化檢視所公開的介面。  
   
 ## <a name="see-also"></a>另請參閱  
- [視覺化檢視架構](../debugger/visualizer-architecture.md)   
- [如何：撰寫視覺化檢視](../debugger/how-to-write-a-visualizer.md)   
- [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
+ [視覺化架構](../debugger/visualizer-architecture.md)   
+ [How to：撰寫視覺化](../debugger/how-to-write-a-visualizer.md)   
+ [建立自訂的視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
  [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d0e177f1d41655ffa6fb6b6bbfa52cfc29d15fd6
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382181"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>How to: Retrieve query string information in an online ClickOnce application (如何：在線上 ClickOnce 應用程式中擷取查詢字串資訊)
@@ -39,14 +39,14 @@ ms.locfileid: "85382181"
 > [!NOTE]
 > 當您決定啟用這項功能之前，請參閱本主題後面的＜安全性＞一節。
 
- 如需如何 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用*Mage.exe*或*MageUI.exe*建立部署的詳細資訊，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
+ 如需有關如何 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用 *Mage.exe* 或 *MageUI.exe*建立部署的詳細資訊，請參閱 [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
 
 > [!NOTE]
 > 從 .NET Framework 3.5 SP1 開始，可以將命令列引數傳遞至離線 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 如果您要提供應用程式的引數，則可以將參數傳入副檔名為 .APPREF-MS 的捷徑檔案。
 
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>從 ClickOnce 應用程式取得查詢字串資訊
 
-1. 請在專案中放入下列程式碼。 為了讓此程式碼能夠運作，您必須參考 system.web 和 add 或指示詞，以取得 system.web `using` `Imports` 、System.web、Deployment 和 System.web 應用程式。
+1. 請在專案中放入下列程式碼。 為了讓此程式碼能夠運作，您必須有 system.string 的參考，以及 `using` `Imports` 適用于 system.object、System.string 和 system.object 的 add 或指示詞。
 
      [!code-csharp[ClickOnceQueryString#1](../deployment/codesnippet/CSharp/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.cs)]
      [!code-vb[ClickOnceQueryString#1](../deployment/codesnippet/VisualBasic/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.vb)]
@@ -76,7 +76,7 @@ ms.locfileid: "85382181"
  如果您的應用程式只能在線上時使用，則一律會透過 URL 予以啟用。 不過，如果查詢字串參數遺失或損毀，則即使在此情況下，您的應用程式還是必須寫入才能正常運作。
 
 ## <a name="net-framework-security"></a>.NET Framework 安全性
- 只有在使用之前想要清理任何惡意字元的輸入時，才允許將 URL 參數傳入 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 例如，如果在資料庫的 SQL 查詢中未進行篩選，則內嵌引號、斜線或分號的字串可能會執行任意資料作業。 如需查詢字串安全性的詳細資訊，請參閱[腳本攻擊總覽](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。
+ 只有在使用之前想要清理任何惡意字元的輸入時，才允許將 URL 參數傳入 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 例如，如果在資料庫的 SQL 查詢中未進行篩選，則內嵌引號、斜線或分號的字串可能會執行任意資料作業。 如需查詢字串安全性的詳細資訊，請參閱 [腳本攻擊總覽](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。
 
 ## <a name="see-also"></a>另請參閱
 - [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)

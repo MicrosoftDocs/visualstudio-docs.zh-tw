@@ -1,5 +1,5 @@
 ---
-title: CA1724：類型名稱不應該符合命名空間 |Microsoft Docs
+title: CA1724：型別名稱不應與命名空間相符 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: aa0b73b6608f0dfd5daa4b770b7d780e64704c99
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544426"
 ---
 # <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724:類型名稱不應該和命名空間相符
@@ -29,7 +29,7 @@ ms.locfileid: "85544426"
 |-|-|
 |TypeName|TypeNamesShouldNotMatchNamespaces|
 |CheckId|CA1724|
-|類別|Microsoft. 命名|
+|類別|Microsoft。命名|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -42,4 +42,4 @@ ms.locfileid: "85544426"
  選取不符合 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 類別庫命名空間名稱的類型名稱。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 針對新的開發，在您必須隱藏此規則的警告的情況下，不會發生任何已知的狀況。 在您隱藏警告之前，請仔細考慮您的媒體櫃使用者可能會因為相符的名稱而感到困惑。 針對運送媒體櫃，您可能必須隱藏此規則的警告。
+ 針對新的開發，不會發生任何已知案例，您必須在此隱藏此規則的警告。 在您隱藏警告之前，請仔細考慮您文件庫的使用者可能會如何受到相符名稱的混淆。 針對寄送程式庫，您可能必須隱藏此規則的警告。

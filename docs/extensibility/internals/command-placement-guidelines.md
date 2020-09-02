@@ -1,5 +1,5 @@
 ---
-title: 命令放置指南 |微軟文件
+title: 命令放置指導方針 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,48 +13,48 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 021a5fd9f9931e3041a431d211c8ab49978bbbab
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709560"
 ---
-# <a name="command-placement-guidelines"></a>命令放置指南
-在 Visual Studio 整合式開發環境 (IDE) 中定位命令的最佳做法因命令集的大小而異。 命令根據 *.vsct*檔案中的資訊定義和定位。
+# <a name="command-placement-guidelines"></a>命令放置指導方針
+在 Visual Studio 整合式開發環境中放置命令的最佳作法 (IDE) 依命令集的大小而有所不同。 命令會根據 *.vsct* 檔案中的資訊來定義和定位。
 
-## <a name="best-practices-for-all-command-sets"></a>所有指令集的最佳做法
- 對於每組命令,請遵循以下準則:
+## <a name="best-practices-for-all-command-sets"></a>所有命令集的最佳作法
+ 針對每一組命令，請遵循下列指導方針：
 
-- 提前準備命令結構圖表。 標識將在多個位置使用的命令、組合框、命令組和快捷功能表。
+- 事先準備命令結構的圖表。 識別將在多個位置使用的命令、下拉式方塊、命令群組和快捷方式功能表。
 
-- 出現在同一組中的命令應相關。
+- 出現在相同群組中的命令應該會相關。
 
-- 只包含一個命令的組是可以接受的。
+- 可以接受只包含一個命令的群組。
 
-- 包不應向現有 Visual Studio 功能表添加大量命令。 相反,他們應該創建功能表或子菜單來承載新命令。
+- 套件不應將許多命令新增至現有的 Visual Studio 功能表中。 相反地，他們應該建立功能表或子功能表來裝載新的命令。
 
-- 將命令放在現有功能表上時,命名該命令,使其用途明確,並且不會與現有命令混淆。
+- 當您在現有的功能表上放入命令時，請將命令命名，使其目的更清楚，而且不會與現有的命令混淆。
 
-## <a name="best-practices-for-small-command-sets"></a>小型指令集的最佳做法
- 如果您正在開發一個僅包含幾個命令的 VSPackage,請遵循以下準則:
+## <a name="best-practices-for-small-command-sets"></a>小型命令集的最佳作法
+ 如果您正在開發只有一些命令的 VSPackage，也請遵循下列指導方針：
 
-- 如果可能,請使用命令、組合框、組或子功能表的[父](../../extensibility/parent-element.md)元素將其放入相應的組中。
+- 可能的話，請使用命令、下拉式方塊、群組或子功能表的 [父](../../extensibility/parent-element.md) 元素，將它放在適當的群組中。
 
-- 將這些組分配給 VSPackage 顯示的功能表。
+- 將這些群組指派給 VSPackage 所顯示的功能表。
 
-- 子功能表或命令的父級必須是[組](../../extensibility/group-element.md)元素。 將命令和子功能表分配給組,然後將組分配給父菜單。
+- 子功能表或命令的父系必須是 [Group](../../extensibility/group-element.md) 元素。 將命令和子功能表指派給群組，然後將群組指派給父功能表。
 
-- 通過在指令定義後添加[命令放置](../../extensibility/commandplacements-element.md)元素部分,然後將命令`CommandPlacements`添加到 元素中,從而將命令放入其他[CommandPlacement](../../extensibility/commandplacement-element.md)組中。
+- 您可以藉由在命令的定義之後新增 [CommandPlacements](../../extensibility/commandplacements-element.md) 元素區段，然後將 `CommandPlacements` 每個額外群組的 [CommandPlacement](../../extensibility/commandplacement-element.md) 專案新增至專案，將命令放在其他群組中。
 
-## <a name="best-practices-for-large-command-sets"></a>大型指令集的最佳做法
- 如果您的 VSPackage 將有許多指令會顯示在多個上下文中,請遵循以下準則:
+## <a name="best-practices-for-large-command-sets"></a>大型命令集的最佳作法
+ 如果您的 VSPackage 會有許多將出現在多個內容中的命令，也請遵循下列指導方針：
 
-- 使功能表、組和命令自父母。 也就是說,不要在項的定義中`Parent`分配元素。
+- 讓功能表、群組和命令成為自我父代。 也就是說，請勿 `Parent` 在專案的定義中指派專案。
 
-- 使用`CommandPlacement``CommandPlacements`元素部分中的元素條目將功能表、組和命令放在其父功能表和組中。
+- 使用 `CommandPlacement` 元素區段中的專案專案，將 `CommandPlacements` 功能表、群組和命令放在其父功能表和群組中。
 
-- 在`CommandPlacements`元素部分中,填充給定菜單或組的條目應彼此相鄰。 這有助於可讀性,`Priority`使排名更容易確定。
+- 在 [ `CommandPlacements` 元素] 區段中，填入指定功能表或群組的專案應該彼此相鄰。 這有助於提高可讀性，並讓 `Priority` 排名更容易判斷。
 
 ## <a name="see-also"></a>另請參閱
-- [VS 套件如何新增使用者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [視覺化工作室指令表 (.vsct) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Vspackage 如何新增使用者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Visual Studio 命令表格 (. .vsct) 檔](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
