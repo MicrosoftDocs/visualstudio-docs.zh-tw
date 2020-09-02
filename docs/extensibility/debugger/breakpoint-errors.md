@@ -1,5 +1,5 @@
 ---
-title: 斷點錯誤 |微軟文件
+title: 中斷點錯誤 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,24 +13,24 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0766792f19faf7c1933c6576ab41f65ec1b31ae9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739225"
 ---
-# <a name="breakpoint-errors"></a>斷點錯誤
-當斷點嘗試綁定到代碼但失敗時,下面描述了該過程。
+# <a name="breakpoint-errors"></a>中斷點錯誤
+以下說明中斷點嘗試系結至程式碼但失敗時的進程。
 
-## <a name="troubleshoot-a-breakpoint-error"></a>排除斷點錯誤
+## <a name="troubleshoot-a-breakpoint-error"></a>針對中斷點錯誤進行疑難排解
 
-1. 除錯引擎 (DE) 向工作階段除錯管理員 (SDM) 傳送[IDebugBreakpointErrorEvent2。](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)
+1. Debug engine (DE) 會將 [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) 傳送至會話 debug MANAGER (SDM) 。
 
-2. SDM 調用[IDebugBreakpointErrorEvent2::獲取錯誤斷點](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)(IDebugErrorBreakpoint2+)`ppErrorBP`以獲取錯誤斷點。
+2. SDM 會呼叫 [IDebugBreakpointErrorEvent2：： GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) (IDebugErrorBreakpoint2 * * `ppErrorBP`) 以取得錯誤中斷點。
 
-3. SDM 調用[IDebugError 斷點2::獲取待定斷點](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)以獲取錯誤斷點源自的掛起斷點。
+3. SDM 會呼叫 [IDebugErrorBreakpoint2：： GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md) ，以取得產生錯誤中斷點的暫止中斷點。
 
-4. SDM 調用[IDebugErrorBreakpoint2::獲取斷點解析](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md),以獲取有關錯誤斷點未能綁定的原因。
+4. SDM 會呼叫 [IDebugErrorBreakpoint2：： GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) ，以取得錯誤中斷點無法系結的原因。
 
 ## <a name="see-also"></a>另請參閱
-- [呼叫除錯器事件](../../extensibility/debugger/calling-debugger-events.md)
+- [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)

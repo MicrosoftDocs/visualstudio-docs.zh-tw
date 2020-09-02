@@ -1,5 +1,5 @@
 ---
-title: 已使用指令元素 ( C) :微軟文件
+title: UsedCommands 元素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 76732b2a9700f1737af495098c8c23aa4b618819
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80698744"
 ---
 # <a name="usedcommands-element"></a>UsedCommands 項目
-「已用命令」元素對「已命令」元素和其他「已用命令」群組。
+UsedCommands 元素會將 UsedCommand 元素和其他 UsedCommands 群組分組。
 
- 「已使用命令」元素是可選的。 如果不調用套件外定義的命令,則不必在 .vsct 檔中包含此部分。
+ UsedCommands 元素是選擇性的。 如果您未呼叫在套件之外定義的命令，就不需要在 .vsct 檔案中包含此區段。
 
 ## <a name="syntax"></a>語法
 
@@ -40,19 +40,19 @@ ms.locfileid: "80698744"
 
 |屬性|描述|
 |---------------|-----------------|
-|條件|選擇性。 請參考[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|條件|選擇性。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[UsedCommand 元素](../extensibility/usedcommand-element.md)|由其他代碼實現的命令。|
+|[UsedCommand 元素](../extensibility/usedcommand-element.md)|由其他程式碼所執行的命令。|
 
 ### <a name="parent-elements"></a>父項目
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定義 VSPackage 向整合式開發環境 (IDE) 提供的命令(例如,選單項、功能表、工具列和組合框)的所有元素。|
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表命令 (的所有元素，例如，功能表項目、功能表、工具列和下拉式方塊) VSPackage 提供給整合式開發環境 (IDE) 。|
 
 ## <a name="example"></a>範例
 

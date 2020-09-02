@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 962c724e231275c9fa716d6c823b7451292392cf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75848390"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
@@ -48,7 +48,7 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 
 - 支援自訂 IntelliSense 與 XML 文件註解，以及 JavaScript IntelliSense 擴充性。
 
-  此主題包括下列章節：
+  本主題包含下列幾節：
 
 - [判斷 IntelliSense 的內容](#DeterminingIntelliSenseContext)
 
@@ -62,7 +62,7 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 
   如需 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 之 IntelliSense 功能的詳細資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md)。
 
-## <a name="DeterminingIntelliSenseContext"></a> 判斷 IntelliSense 的內容
+## <a name="determining-intellisense-context"></a><a name="DeterminingIntelliSenseContext"></a> 判斷 IntelliSense 內容
  JavaScript IntelliSense 會根據您目前的指令碼內容相關的所有指令碼，提供程式碼撰寫的選擇。 這包括目前檔案內的指令碼項目。 它同時也包含任何從指令碼直接參考或間接參考的程式碼，例如：指令碼檔參考、組件 (Assembly) 指令碼參考、服務參考和關聯頁面參考。
 
  您目前的指令碼內容會根據下列項目而建立：
@@ -84,7 +84,7 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
     > [!NOTE]
     > IntelliSense 不支援在 HTML 項目上使用事件處理常式屬性的指令碼，或定義於 `href` 屬性的指令碼。
 
-## <a name="ProcessingIntelliSenseInformation"></a> 處理 IntelliSense 資訊
+## <a name="processing-intellisense-information"></a><a name="ProcessingIntelliSenseInformation"></a> 處理 IntelliSense 資訊
  為了提供 JavaScript IntelliSense，語言服務會執行下列作業：
 
 - 根據主動式文件 (Active Document) 內的參考建立 JavaScript 相依檔案清單，並遞迴地檢查參考之檔案的指令碼參考。
@@ -95,7 +95,7 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 
 - 監控可能影響 IntelliSense 清單的檔案變更，並視需要更新清單。 遠端存放區上的指令碼 (例如使用 HTTP 參考的那些指令碼) 不會受到監視。
 
-## <a name="Features"></a> JavaScript IntelliSense 功能
+## <a name="javascript-intellisense-features"></a><a name="Features"></a> JavaScript IntelliSense 功能
  JavaScript IntelliSense 支援下列物件：
 
 - [文件物件模型 (DOM) 元素](#HTMLDom)
@@ -118,21 +118,21 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 
   當 IntelliSense 無法決定物件的類型時，它會利用使用中文件中的識別項提供陳述式完成的選項。 如需詳細資訊，請參閱[識別項的陳述式完成](../ide/statement-completion-for-identifiers.md)。
 
-### <a name="HTMLDom"></a> HTML DOM 元素
+### <a name="html-dom-elements"></a><a name="HTMLDom"></a> HTML DOM 元素
  JavaScript IntelliSense 提供動態超文字標記語言 (DHTML) DOM 項目的程式設計參考，例如：`body`、`form` 和 `div`。 IntelliSense 只會顯示包含在目前文件內的項目和主版頁面 (Master Page)。 JavaScript IntelliSense 也支援 `window` 和 `document` 物件及其成員。
 
-### <a name="IntrinsicObjects"></a> 內建物件
+### <a name="intrinsic-objects"></a><a name="IntrinsicObjects"></a> 內建物件
  JavaScript IntelliSense 提供了內建物件 `Array`、`String`、`Math`、`Date` 和 `Number` 的程式設計參考。 如需有關內建物件的詳細資訊，請參閱[標準的內建物件](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects)。
 
-### <a name="UserDefined"></a> 使用者定義的變數、函式和物件
+### <a name="user-defined-variables-functions-and-objects"></a><a name="UserDefined"></a> 使用者自訂變數、函式和物件
  變更 JavaScript 檔時，[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 會掃描已開啟及已參考的文件，以判斷所有可用的程式碼資源。 這包括您建立的變數、函式和物件。 隨後 JavaScript IntelliSense 便可以使用這些資源。
 
  如需使用者定義之變數、函式和物件的詳細資訊，請參閱 MSDN 網站上的[建立您自己的物件](https://msdn.microsoft.com/library/202863ha.aspx)。
 
-### <a name="External"></a> 外部檔案參考
+### <a name="external-file-references"></a><a name="External"></a> 外部檔案參考
  您可以加入外部檔案參考的各種類型，以便在您的程式碼中提供 IntelliSense 支援。 外部檔案參考可能是指令碼參考、參考指示詞或是使用參考群組指定。
 
-#### <a name="Script"></a> 指令碼參考
+#### <a name="script-references"></a><a name="Script"></a> 指令碼參考
  除了在網頁內撰寫所有用戶端指令碼之外，您還可以參考包含指令碼的外部檔案。 這種方式可以很方便的在各個網頁間重複使用程式碼，並且可讓瀏覽器快取用戶端指令碼。
 
  如果您目前未使用具備 ASP.NET AJAX 能力的網頁，則可以使用 `src` 項目之開頭標記內的 `script` 屬性參考外部指令碼檔。 `src` 屬性指定了包含原始程式碼或資料之外部檔案的 URL。
@@ -157,9 +157,9 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 </asp:ScriptManager>
 ```
 
- IntelliSense 也支援在 ASP.NET AJAX Web 應用程式內的組件中，內嵌為資源的指令碼檔。 如需內嵌指令碼資源的詳細資訊，請參閱[逐步解說：將 JavaScript 檔案內嵌為組件中的資源](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89) \(英文\)。
+ IntelliSense 也支援在 ASP.NET AJAX Web 應用程式內的組件中，內嵌為資源的指令碼檔。 如需內嵌指令碼資源的詳細資訊，請參閱[逐步解說：將 JavaScript 檔案內嵌為組件中的資源](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89)。
 
-#### <a name="ReferenceDirectives"></a> Reference 指示詞
+#### <a name="reference-directives"></a><a name="ReferenceDirectives"></a> Reference 指示詞
  `reference` 指示詞可讓 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 在您目前正編輯的指令碼和其他指令碼之間，建立關聯性 (Relationship)。 `reference` 指令詞可讓您在目前指令碼檔的指令碼內容中包含指令碼檔。 如此可讓 IntelliSense 參考外部定義的函式、類型及欄位，將其當做您的程式碼使用。
 
  您可以以 XML 註解的格式建立 `reference` 指示詞。 指示詞在檔案內的宣告必須早於任何指令碼。 `reference` 指示詞可以包含磁碟架構的指令碼參考、組件架構的指令碼參考、服務架構的指令碼參考，或網頁架構的指令碼參考。
@@ -219,7 +219,7 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 
 - 參考之網頁內的 Reference 指示詞將不會被處理，這表示 reference 指示詞不會遞迴地解析網頁。 只會納入直接由網頁所參考的指令碼。
 
-#### <a name="ReferenceGroups"></a> 參考群組
+#### <a name="reference-groups"></a><a name="ReferenceGroups"></a> 參考群組
  您可以使用預先定義的參考群組指定特殊 IntelliSense .js 檔案於不同 JavaScript 專案範圍中。 下列為可用的參考群組類型：
 
 - 隱含 (Windows)，適用於使用 JavaScript 的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式。 這個群組中包含的檔案會在程式碼編輯器中針對指定類型之專案開啟的每一個 .js 檔案範圍中。
@@ -246,7 +246,7 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 > [!WARNING]
 > 如果啟用了此功能，並觀察到程式碼編輯器的效能變慢，建議您將它停用。
 
-### <a name="XMLDocComments"></a> XML 文件註解
+### <a name="xml-documentation-comments"></a><a name="XMLDocComments"></a> XML 檔批註
  XML 文件註解是您加入至指令碼的程式碼項目文字描述。 這些文字描述會在您參考註解指令碼時，在 IntelliSense 中顯示。 例如，您可以提供函式的參數和傳回值的相關資訊。 XML 文件註解僅能從參考的檔案、組件和服務取得。 如需詳細資訊，請參閱 [XML 文件註解](../ide/xml-documentation-comments-javascript.md)和[建立 XML 文件註解](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)。
 
  IntelliSense 也可以在下列情況顯示 XML 文件註解：
@@ -259,30 +259,30 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 
   當 .aspx 檔案參考另一個 .aspx 檔時，便無法使用 IntelliSense。
 
-### <a name="ASPNet"></a> ASP.NET AJAX 物件
+### <a name="aspnet-ajax-objects"></a><a name="ASPNet"></a> ASP.NET AJAX 物件
  ASP.NET AJAX 也支援 JavaScript IntelliSense。 ASP.NET AJAX 包含了用戶端架構，可擴充 ECMAScript (JavaScript) 內所提供的標準類型。 為了讓 JavaScript IntelliSense 提供與 ASP.NET AJAX 物件有關的詳細資料，在整個 [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)] 中已加入了 XML 文件註解。 這些 XML 文件註解會在您使用 ASP.NET AJAX Library 內含的類型及成員時顯示。
 
 > [!NOTE]
 > JavaScript IntelliSense 不會顯示私用成員。 私用成員在 ASP.NET AJAX 中是以底線 (_) 為起始的成員來代表。
 
-## <a name="Extensibility"></a> JavaScript IntelliSense 擴充性
+## <a name="javascript-intellisense-extensibility"></a><a name="Extensibility"></a> JavaScript IntelliSense 擴充性
  JavaScript 語言服務提供的物件和函式，可讓您為使用協力廠商程式庫的開發人員改變 IntelliSense 經驗。 當預設語言服務無法提供您要為客戶提供的所有資訊時，這些功能特別有用。 如需詳細資訊，請參閱[擴充 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)。
 
-## <a name="Validation"></a> JavaScript 驗證
+## <a name="javascript-validation"></a><a name="Validation"></a> JavaScript 驗證
  JavaScript 指令碼驗證通常會在背景中執行。 當 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 在 JavaScript 程式碼中偵測到語法錯誤時，會以下列方式提供意見：
 
 - 將編輯器內的項目加上底線。 以紅色波浪底線指出錯誤。 如果您將滑鼠指標停留在錯誤上方，則會顯示錯誤描述的工具提示。
 
-- [錯誤清單]  視窗。 [錯誤清單]  視窗會顯示錯誤描述、發生錯誤的檔案位置、行號和欄數，以及專案。 若要顯示 [錯誤清單]  視窗，請按一下 [檢視]  功能表中的 [錯誤清單]  。
+- [**錯誤清單**] 視窗。 [錯誤清單]**** 視窗會顯示錯誤描述、發生錯誤的檔案位置、行號和欄數，以及專案。 若要顯示 [錯誤清單]**** 視窗，請按一下 [檢視]**** 功能表中的 [錯誤清單]****。
 
 - [輸出] 視窗會顯示未載入的參考。
 
 ## <a name="see-also"></a>另請參閱
 - [使用 IntelliSense](../ide/using-intellisense.md)
-- [產生 XML 文件註解](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)
+- [建立 XML 文件註解](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)
 - [擴充 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)
 - [識別項的陳述式完成](../ide/statement-completion-for-identifiers.md)
-- [XML 文件註解](../ide/xml-documentation-comments-javascript.md)
+- [XML 檔批註](../ide/xml-documentation-comments-javascript.md)
 - [關於 DHTML 物件模型](https://msdn2.microsoft.com/library/ms533022.aspx) \(英文\)
-- [列出成員](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8) \(機器翻譯\)
+- [列出成員](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
 - [SRC 屬性 &#124; src 屬性](https://msdn2.microsoft.com/library/ms534642.aspx)

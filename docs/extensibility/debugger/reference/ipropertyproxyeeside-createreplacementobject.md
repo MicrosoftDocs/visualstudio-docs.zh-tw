@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEEside:創建替換物件 |微軟文件
+title: IPropertyProxyEESide：： CreateReplacementObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f449a505c56c180f1bab021007f1b635a2461996
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715045"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
-創建特定於運算式賦值器 (EE) 的資料物件的副本。
+針對 (EE) 的運算式評估工具建立特定資料物件的複本。
 
 ## <a name="syntax"></a>語法
 
@@ -43,18 +43,18 @@ int CreateReplacementObject(
 
 ## <a name="parameters"></a>參數
 `dataIn`\
-[在]保存要複製數據的[IEEData 儲存](../../../extensibility/debugger/reference/ieedatastorage.md)物件。
+在保存要複製之資料的 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 物件。
 
 `dataOut`\
-[出]返回新`IEEDataStorage`物件。
+擴展傳回新的 `IEEDataStorage` 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 此方法被賦予一個[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件,表示位元組陣列。 此傳入數據物件通常不由 EE 實現。 但是,此方法返回的對象始終由 EE 實現,它允許 EE 在`IEEDataStorage`所需的任何類上 實現介面。
+ 系統會為這個方法提供代表位元組陣列的 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 物件。 此內送資料物件通常不是由 EE 所執行。 不過，這個方法所傳回的物件一律會由 EE 執行，這可讓 EE `IEEDataStorage` 在需要的任何類別上執行介面。
 
- 請注意,傳入`IEEDataStorage`物件提供的數據必須是`IEEDataStorage`傳出 物件中相同的數據。
+ 請注意，傳入物件所提供的資料 `IEEDataStorage` 必須是連出物件中的相同資料 `IEEDataStorage` 。
 
 ## <a name="see-also"></a>另請參閱
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

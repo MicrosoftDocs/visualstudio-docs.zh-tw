@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b06190568454977bfcb54d65db9011fc979f7591
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329571"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider 函式
@@ -39,7 +39,7 @@ HRESULT CvInitProvider(
 ## <a name="return-value"></a>傳回值
  成功初始化提供者時傳回 S_OK，發生任何錯誤時則傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。
 
-## <a name="requirements"></a>規格需求
+## <a name="requirements"></a>需求
  **標頭︰** *cvmarkers.h*
 
 ## <a name="see-also"></a>另請參閱

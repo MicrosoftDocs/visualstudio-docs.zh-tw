@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression評估器3::Parse2 |微軟文件
+title: IDebugExpressionEvaluator3：:P arse2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5254d30ed1a656bfd357fca822efa554d895807e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729136"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
-將表達式字串轉換為具有符號提供程式和賦值幀位址的解析表達式。
+給定符號提供者和評估框架的位址，將運算式字串轉換為剖析的運算式。
 
 ## <a name="syntax"></a>語法
 
@@ -53,37 +53,37 @@ HRESULT Parse2 (
 
 ## <a name="parameters"></a>參數
 `upstrExpression`\
-[在]要解析的表達式字串。
+在要剖析的運算式字串。
 
 `dwFlags`\
-[在][PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)常量的集合,用於確定如何解析運算式。
+在 [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) 常數的集合，可決定運算式的剖析方式。
 
 `nRadix`\
-[在]用於解釋任何數值資訊的 Radix。
+在用來解讀任何數值資訊的基數。
 
 `pSymbolProvider`\
-[在]符號提供程式的介面。
+在符號提供者的介面。
 
 `pAddress`\
-[在]評估幀的位址。
+在評估框架的位址。
 
 `pbstrError`\
-[出]將錯誤作為人可讀文字返回。
+擴展以人們可讀取的文字形式傳回錯誤。
 
 `pichError`\
-[出]傳回表示式字串中錯誤開始位置的字元位置。
+擴展傳回運算式字串中錯誤開始的字元位置。
 
 `ppParsedExpression`\
-[出]返回[IDebugParsed 表示式](../../../extensibility/debugger/reference/idebugparsedexpression.md)物件中的解析表達式。
+擴展傳回 [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) 物件中剖析的運算式。
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則,返回錯誤代碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
-此方法生成解析的表達式,而不是實際值。 已解析的表達式已準備好進行計算,即轉換為值。
+這個方法會產生剖析的運算式，而不是實際值。 已剖析的運算式已可供評估，也就是轉換成值。
 
 ## <a name="example"></a>範例
-下面的範例展示如何為公開[IDebugExpression評估器3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)介面的**CEE**物件實現此方法。
+下列範例示範如何針對公開[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)介面的**產生 cee**物件，執行這個方法。
 
 ```cpp
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,

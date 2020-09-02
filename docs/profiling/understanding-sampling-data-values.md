@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 289f92deaceca32a44249ed77c17187743a34fa4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778046"
 ---
 # <a name="understand-sampling-data-values"></a>了解取樣資料值
@@ -52,5 +52,5 @@ Visual Studio 分析工具的「取樣」** 分析方法會依設定的間隔來
 
 ## <a name="see-also"></a>另請參閱
 
-[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)
-[分析性能工具資料](../profiling/analyzing-performance-tools-data.md)
+[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md) 
+[分析效能工具資料](../profiling/analyzing-performance-tools-data.md)

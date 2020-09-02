@@ -1,5 +1,5 @@
 ---
-title: 'Idiainjectedsource:: Get_source |Microsoft Docs'
+title: IDiaInjectedSource：： get_source |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 856d0111e65b51b798dfe44a324c58c4db5457fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192416"
 ---
-# <a name="idiainjectedsourcegetsource"></a>IDiaInjectedSource::get_source
+# <a name="idiainjectedsourceget_source"></a>IDiaInjectedSource::get_source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取來源的程式碼位元組。  
+捕獲原始程式碼位元組。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,16 +37,16 @@ HRESULT get_source ( 
   
 #### <a name="parameters"></a>參數  
  `cbData`  
- [in]表示資料緩衝區的大小的位元組數目。  
+ 在代表資料緩衝區大小的位元組數目。  
   
  `pcbData`  
- [out]傳回表示個位元組的位元組數傳回。 如果`data`已`NULL`，然後`pcbData`可用資料的位元組總數。  
+ 擴展傳回代表傳回位元組的位元組數目。 如果 `data` 為 `NULL` ，則 `pcbData` 為可用的資料位元組總數。  
   
  `data[]`  
- [out]要填入來源位元組的緩衝區。  
+ 擴展要填入來源位元組的緩衝區。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援這個屬性，則傳回。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

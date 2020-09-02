@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f388671f7efeeefa05704d934ccf5307578e7d3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150446"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-傳回對應的內嵌框架的符號的列舉型別到指定的來源位置。  
+傳回對應至指定來源位置之內嵌框架的符號列舉。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,22 +37,22 @@ HRESULT findAcceleratorInlineeLinesByName ( 
   
 #### <a name="parameters"></a>參數  
  `parent`  
- [in]`IDiaSymbol` ，其對應於要搜尋的加速器虛設常式函式。  
+ 在 `IDiaSymbol` ，對應至需要搜尋的加速器存根函式。  
   
  `file`  
- [in]`IDiaSourceFile`來源位置。  
+ 在 `IDiaSourceFile` 來源位置的。  
   
  `linenum`  
- [in]來源位置的行號。  
+ 在來源位置的行號。  
   
  `colnum`  
- [in]來源位置的資料行數目。  
+ 在來源位置的資料行編號。  
   
  `ppResult`  
- [out]指標`IDiaEnumLineNumbers`初始化與結果的介面指標。  
+ 擴展以 `IDiaEnumLineNumbers` 結果初始化之介面指標的指標。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

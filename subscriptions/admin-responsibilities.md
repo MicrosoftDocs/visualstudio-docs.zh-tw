@@ -8,10 +8,10 @@ ms.date: 07/20/2019
 ms.topic: conceptual
 description: 了解訂用帳戶系統管理員的責任。
 ms.openlocfilehash: ff849bbaa1a301979228c558565dc3f2ed0125ad
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238825"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>系統管理員責任概觀
@@ -34,7 +34,7 @@ Visual Studio 訂用帳戶允許開發小組成員安裝和使用軟體來設計
 | 無限制安裝                  | 每個授權的使用者可以在任意數目的裝置上安裝和使用軟體，來設計、開發、測試、評估及示範軟體。 例外情況是 Microsoft Office，僅提供一部桌上型電腦的授權。 您可以在公司、住家、學校，以及客戶辦事處的裝置或協力廠商所裝載的專用硬體上安裝及使用 Visual Studio 授權的軟體。                                                                                                                                                                                                                                  |
 | 不適用於生產環境 | Visual Studio 訂用帳戶軟體未授權用於生產環境，包括終端使用者存取但用於接受度測試或意見反應以外用途的任何環境、連線到生產資料庫的環境、支援災害復原或生產環境備份的環境，或在活動尖峰期間用於生產的環境。 此項目的例外狀況包含 [Visual Studio Licensing White Paper](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf) (Visual Studio 授權白皮書) 中所述之某些訂用帳戶層級的特殊權益。                                                                                            |
 | 授權重新指派                     | 當使用者離開小組而不再需要授權時，您可以在過了 90 天後重新指派授權。 當您重新指派授權時，仍然提供已使用的任何產品金鑰，但將不會被取代。 針對擁有 Enterprise 合約 (EA) 的組織，原始使用者曾使用的任何權益 (例如 Pluralsight 訓練) 都會被重設。                                                                                                                                                                                                                                                 |
-| 終端使用者的例外狀況                  | 在軟體開發專案結束時，終端使用者通常會審核應用程式，並判斷它是否符合發行的必要準則。 此程序稱為使用者接受度測試 (UAT)。 企業贊助商或產品經理等小組成員可作為終端使用者的代理人。 如果以其他方式使用軟體符合所有的 Visual Studio 授權條款，則沒有 Visual Studio 訂用帳戶的終端使用者也可以存取軟體來進行 UAT。 其主要角色是設計、開發或測試軟體的人很罕見，也能以「使用者」的身分來進行。 |
+| 終端使用者的例外狀況                  | 在軟體開發專案結束時，終端使用者通常會審核應用程式，並判斷它是否符合發行的必要準則。 此程序稱為使用者接受度測試 (UAT)。 企業贊助商或產品經理等小組成員可作為終端使用者的代理人。 如果以其他方式使用軟體符合所有的 Visual Studio 授權條款，則沒有 Visual Studio 訂用帳戶的終端使用者也可以存取軟體來進行 UAT。 其主要角色是設計、開發或測試軟體的人很罕見，也是「使用者」的資格。 |
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)

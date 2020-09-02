@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d80e20200966c65258485782fec5865158f114a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464846"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
-提供方法，以使用 .pdb 檔案中的資訊進行堆疊的逐步解說。
+提供方法，以使用 .pdb 檔案中的資訊來進行堆疊逐步解說。
 
 ## <a name="syntax"></a>語法
 
@@ -33,17 +33,17 @@ IDiaStackWalker: IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|抓取 x86 平臺的堆疊框架列舉值。|
+|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|捕獲 x86 平臺的堆疊框架列舉值。|
 |[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|抓取特定平臺類型的堆疊框架列舉值。|
 
 ## <a name="remarks"></a>備註
-這個介面是用來取得已載入模組的堆疊框架清單。 每個方法都會傳遞一個[IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)物件（由用戶端應用程式所執行），以提供建立堆疊框架清單所需的資訊。
+這個介面是用來取得已載入模組的堆疊框架清單。 每個方法都會傳遞 (用戶端應用程式所執行的 [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) 物件，) 提供建立堆疊框架清單所需的資訊。
 
-## <a name="notes-for-callers"></a>呼叫者的注意事項
-這個介面是藉由呼叫 `CoCreateInstance` 具有類別識別碼的方法 `CLSID_DiaStackWalker` ，以及的介面 ID 來取得 `IID_IDiaStackWalker` 。 此範例會顯示如何取得此介面。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+藉由呼叫 `CoCreateInstance` 具有類別識別碼和之介面識別碼的方法，即可取得這個介面 `CLSID_DiaStackWalker` `IID_IDiaStackWalker` 。 此範例顯示如何取得此介面。
 
 ## <a name="example"></a>範例
-這個範例會顯示如何取得 `IDiaStackWalker` 介面。
+此範例顯示如何取得 `IDiaStackWalker` 介面。
 
 ```C++
 
@@ -62,7 +62,7 @@ if (FAILED(hr))
 ## <a name="requirements"></a>需求
 標頭： Dia2。h
 
-程式庫： diaguids
+程式庫： diaguids .lib
 
 DLL： msdia80.dll
 

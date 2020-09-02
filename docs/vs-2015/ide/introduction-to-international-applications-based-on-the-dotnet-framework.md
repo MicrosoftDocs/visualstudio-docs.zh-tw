@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0d57cee8591196d12e51e58fb0e5e6a4a2cdf94a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75848369"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>以 .NET Framework 為基礎的國際應用程式簡介
@@ -46,7 +46,7 @@ ms.locfileid: "75848369"
 
  Windows Forms 和 Web Forms 的專案系統都可讓您使用組件資源檔範本建置資源檔、存取資源，以及建置專案。 附屬組件會和主要組件一起建立。
 
- 執行當地語系化的應用程式時，其外觀是由兩個文化特性值決定。 (「文化特性」  是一組與使用者的語言、環境及文化慣例相關的使用者喜好設定資訊。)UI 文化特性設定會決定載入的資源。 UI 文化特性 (Culture) 在 Web.config 檔案和網頁指示詞中設定為 `UICulture`，在 Visual Basic 或 Visual C# 程式碼中設定為 <xref:System.Globalization.CultureInfo.CurrentUICulture%2A>。 文化特性設定決定日期、數字、貨幣等值的格式。 文化特性在 Web.config 檔案和網頁指示詞中設定為 `Culture`，在 Visual Basic 或 Visual C# 程式碼中設定為 <xref:System.Globalization.CultureInfo.CurrentCulture%2A>。
+ 執行當地語系化的應用程式時，其外觀是由兩個文化特性值決定。  (*文化* 特性是一組與使用者的語言、環境及文化慣例相關的使用者喜好設定資訊。 ) UI 文化特性設定會決定要載入哪些資源。 UI 文化特性 (Culture) 在 Web.config 檔案和網頁指示詞中設定為 `UICulture`，在 Visual Basic 或 Visual C# 程式碼中設定為 <xref:System.Globalization.CultureInfo.CurrentUICulture%2A>。 文化特性設定決定日期、數字、貨幣等值的格式。 文化特性在 Web.config 檔案和網頁指示詞中設定為 `Culture`，在 Visual Basic 或 Visual C# 程式碼中設定為 <xref:System.Globalization.CultureInfo.CurrentCulture%2A>。
 
 ## <a name="see-also"></a>另請參閱
  <xref:System.Globalization> <xref:System.Resources>

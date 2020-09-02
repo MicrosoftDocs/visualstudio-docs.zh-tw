@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5a45568ea62a767d06a33c324f0f05a1f697e93f
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464979"
 ---
 # <a name="idiastackframeget_rawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
-這個方法會將指定的區域變數值抓取為原始位元組。
+這個方法會將指定的區域變數值視為原始位元組。
 
 ## <a name="syntax"></a>語法
 
@@ -36,22 +36,22 @@ HRESULT get_rawLVarInstanceValue(
 #### <a name="parameters"></a>參數
  `pInstance`
 
-在`IDiaLVarInstance`物件，代表要取得其值的本機變數實例。
+在 `IDiaLVarInstance` 物件，代表要取得其值的本機變數實例。
 
  `cbDataMax`
 
-在緩衝區中由所指向的最大位元組數目 `pbData` 。 最多可以有8個位元組（ `sizeof(ULONGLONG)` ）。
+在所指向之緩衝區中的最大位元組數目 `pbData` 。  () 最多可有8個位元組 `sizeof(ULONGLONG)` 。
 
  `pcbData`
 
-脫銷傳回儲存在緩衝區中的實際位元組數目。
+擴展傳回儲存在緩衝區中的實際位元組數目。
 
  `pbData`
 
-脫銷要填入資料的緩衝區。 不可為 `NULL`。
+擴展要填入資料的緩衝區。 不可為 `NULL`。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778137"
 ---
 # <a name="tier-interactions-view"></a>階層互動檢視
@@ -40,8 +40,8 @@ ms.locfileid: "74778137"
 |資料行|描述|
 |------------|-----------------|
 |**名稱**|- 對於最上層資料列，為已進行分析的處理序或網頁名稱。<br />- 對於資料庫連接資料列，為裝載資料庫的伺服器名稱。|
-|**資料庫**|資料庫的名稱 (僅資料庫連接資料列)。|
-|**計數**|處理序、網頁或資料庫連接產生的要求總數。|
+|**Database**|資料庫的名稱 (僅資料庫連接資料列)。|
+|**Count**|處理序、網頁或資料庫連接產生的要求總數。|
 |**總耗用時間**|執行處理序、網頁或資料庫連接的任何一個要求所花費的總時間。|
 |**最大耗用時間**|執行處理序、網頁或資料庫連接的任何一個要求所花費的最大時間。|
 |**最小耗用時間**|執行處理序、網頁或資料庫連接的任何一個要求所花費的最小時間。|

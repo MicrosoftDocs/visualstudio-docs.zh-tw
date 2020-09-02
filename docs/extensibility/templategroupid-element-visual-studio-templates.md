@@ -1,5 +1,5 @@
 ---
-title: 樣本組 ID 元素(可視化工作室範本) |微軟文件
+title: " (Visual Studio 範本的 TemplateGroupID 元素) |Microsoft Docs"
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: affc324418e3745f85fb0b91a0ef7abda0ab28b0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699070"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID 項目 (Visual Studio 範本)
-指定要顯示哪一種專案項目範本。 當[ShowByDefault(可視化工作室範本)](../extensibility/showbydefault-visual-studio-templates.md)`false`設置為 時,此元素非常重要。 當[ShowByDefault(可視化工作室範本)](../extensibility/showbydefault-visual-studio-templates.md)`true`設置為 時,專案範本在所有項目類型中都可用。
+指定要顯示哪一種專案項目範本。 當 [ () 的 Visual Studio 範本 ](../extensibility/showbydefault-visual-studio-templates.md) 設定為時，這個元素相當重要 `false` 。 當 [ShowByDefault (Visual Studio 範本) ](../extensibility/showbydefault-visual-studio-templates.md) 設定為時 `true` ，所有專案類型都可使用專案範本。
 
- \<樣本>\<範本資料>\<範本組id>
+ \<VSTemplate> \<TemplateData>
+ \<TemplateGroupID>
 
 ## <a name="syntax"></a>語法
 
@@ -43,7 +44,7 @@ ms.locfileid: "80699070"
 
 ### <a name="parent-elements"></a>父項目
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
 
@@ -55,7 +56,7 @@ ms.locfileid: "80699070"
 ## <a name="remarks"></a>備註
  `TemplateGroupID` 是元素。
 
- 元素的值`TemplateGroupID`與專案系統註冊(HKEY_LOCAL_MACHINE_SOFTWARE_Microsoft_VisualStudio\\*\<版本號>*[專案\\]一起使用,以篩選「**添加新專案」** 對話框中顯示的範本。
+ 專案的值 `TemplateGroupID` 會與 project system 註冊 (一起使用 HKEY_LOCAL_MACHINE \Software\microsoft\visualstudio \\ *\<version number>* \Projects \\) 來篩選出現在 [**加入新專案**] 對話方塊中的範本。
 
 |Visual C++ 值|意義|
 |------------------------|-------------|

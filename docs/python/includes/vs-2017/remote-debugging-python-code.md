@@ -11,17 +11,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: a1f8c145d7c9c072adcc902cae9f2b6ae36937cd
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88246142"
 ---
-Visual Studio 可以在 Windows 電腦上的本機和遠端啟動和偵測 Python 應用程式 (請參閱 [遠端偵錯](../../../debugger/remote-debugging.md) 程式) 。 它也可在其他作業系統、裝置或使用 [ptvsd 程式庫](https://pypi.python.org/pypi/ptvsd)的 Python 實作 (不同於 CPython) 上進行遠端偵錯。
+Visual Studio 可以在 Windows 電腦本機和遠端啟動 Python 應用程式並進行偵錯工具 (查看 [遠端偵錯](../../../debugger/remote-debugging.md)) 。 它也可在其他作業系統、裝置或使用 [ptvsd 程式庫](https://pypi.python.org/pypi/ptvsd)的 Python 實作 (不同於 CPython) 上進行遠端偵錯。
 
 使用 ptvsd 時，進行偵錯的 Python 程式碼會裝載 Visual Studio 可以附加到的偵錯伺服器。 這項裝載需要稍微修改您的程式碼以匯入和啟用伺服器，並可能需要遠端電腦上的網路或防火牆組態允許 TCP 連線。
 
-![影片的電影攝影機圖示](../../../install/media/video-icon.png "觀看影片") 如需遠端偵錯程式的簡介，請參閱 [深入探討：跨平臺遠端偵錯](https://youtu.be/y1Qq7BrV6Cc) 程式 (youtube.com、6m22s) ，這適用于 Visual Studio 2015 和2017。
+![影片的電影攝影機圖示](../../../install/media/video-icon.png "觀看影片") 如需遠端偵錯程式的簡介，請參閱 [深入探討：跨平臺遠端偵錯](https://youtu.be/y1Qq7BrV6Cc) 程式 (youtube.com，6m22s) ，適用于 Visual Studio 2015 和2017。
 
 ## <a name="set-up-a-linux-computer"></a>設定 Linux 電腦
 
@@ -85,13 +85,13 @@ Visual Studio 可以在 Windows 電腦上的本機和遠端啟動和偵測 Pytho
 
 1. (選擇性) 若要讓本機電腦具有適用於 ptvsd 的 IntelliSense，請將 ptvsd 套件安裝到您的 Python 環境中。
 
-1. 選取 [**調試**程式] [  >  **附加至進程**]。
+1. 選取 [ **Debug**  >  **附加至進程**]。
 
 1. 在隨即顯示的 [附加至處理序]**** 對話方塊中，將 [連線類型]**** 設為 [Python remote (ptvsd)] (Python 遠端 (ptvsd))**** (在舊版 Visual Studio 中，這些命令名稱為 [傳輸]**** 和 [Python 遠端偵錯]****)。
 
 1. 在 [連線目標]**** 欄位 (舊版為 [限定詞]****) 中，輸入 `tcp://<ip_address>:5678`，其中 `<ip_address>` 是遠端電腦的明確位址或名稱 (如 myvm.cloudapp.net)，而 `:5678` 是遠端偵錯的連接埠號碼。
 
-1. 按 **enter** 以填入該電腦上可用的 ptvsd 進程清單：
+1. 按 **enter** 鍵，以填入該電腦上可用的 ptvsd 進程清單：
 
     ![輸入連線目標，並列出處理序](../../media/remote-debugging-qualifier.png)
 
@@ -169,10 +169,10 @@ Visual Studio 可以在 Windows 電腦上的本機和遠端啟動和偵測 Pytho
 
 1. 透過 SSL 連線時，Visual Studio 會提示您潛在的憑證問題。 您可以略過警告並繼續進行，但即使通道仍會加密以防竊聽，依然可能受到攔截式攻擊。
 
-    1. 如果您看到下面的 [ **遠端憑證不受信任** ] 警告，表示您未正確地將憑證新增至受信任的根 CA。 檢查這些步驟，並再試一次。
+    1. 如果您看到下面的 [ **遠端憑證不受信任** ] 警告，表示您未正確將憑證新增至受信任的根 CA。 檢查這些步驟，並再試一次。
 
         ![受信任的 SSL 憑證警告](../../media/remote-debugging-ssl-warning.png)
 
-    1. 如果您看到 [ **遠端憑證名稱** ] 不符合以下的 [主機名稱] 警告，表示您在建立憑證時，未使用適當的主機名稱或 IP 位址做為 **一般名稱** 。
+    1. 如果您看到 **遠端憑證名稱與下方的主機名稱** 警告不符，這表示您在建立憑證時，未使用適當的主機名稱或 IP 位址作為 **一般名稱** 。
 
         ![SSL 憑證主機名稱警告](../../media/remote-debugging-ssl-warning2.png)

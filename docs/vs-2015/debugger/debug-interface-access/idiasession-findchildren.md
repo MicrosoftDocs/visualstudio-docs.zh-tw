@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cf274bb0f572da11a9aa43248da7eaa72a2e73c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150420"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取指定的父識別碼的所有相符的名稱和符號類型的子系。  
+抓取符合名稱和符號類型之指定父識別碼的所有子系。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,25 +39,25 @@ HRESULT findChildren ( 
   
 #### <a name="parameters"></a>參數  
  `parent`  
- [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件表示父代。 如果這個父符號函式、 模組或區塊，則會傳回其子語彙`ppResult`。 如果父符號是型別，則會傳回其子類別。 如果這個參數是`NULL`，然後`symtag`必須設為`SymTagExe`或`SymTagNull`，它會傳回全域範圍 （.exe 檔）。  
+ 在代表父系的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件。 如果這個父系符號是函式、模組或區塊，則會在中傳回其詞法子系 `ppResult` 。 如果父符號是型別，則會傳回其類別子系。 如果這個參數是 `NULL` ，則 `symtag` 必須將設為 `SymTagExe` 或 `SymTagNull` ，這會傳回全域範圍 ( .exe 檔) 。  
   
  `symtag`  
- [in]指定要擷取的子系的符號標記。 值取自[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉型別。 若要設定`SymTagNull`擷取所有子系。  
+ 在指定要抓取之子系的符號標記。 值取自 [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md) 列舉。 設定為 `SymTagNull` 以取得所有子系。  
   
  `name`  
- [in]指定要擷取的子系的名稱。 若要設定`NULL`要擷取的所有子系。  
+ 在指定要抓取之子系的名稱。 `NULL`針對要取出的所有子系，設定為。  
   
  `compareFlags`  
- [in]指定比較選項套用至對應的名稱。 從數值[NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)單獨或合併，就可以使用列舉型別。  
+ 在指定套用至名稱比對的比較選項。 [NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)列舉中的值可以單獨使用或合併使用。  
   
  `ppResult`  
- [out]傳回[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)擷取物件，其中包含的子系符號清單。  
+ 擴展傳回 [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) 物件，其中包含已抓取之子符號的清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 下列範例顯示如何尋找函式的區域變數`pFunc`該相符項目名稱`szVarName`。  
+ 下列範例顯示如何尋找符合名稱之函式的區域變數 `pFunc` `szVarName` 。  
   
 ```cpp#  
 IDiaEnumSymbols* pEnum;  
@@ -65,7 +65,7 @@ pSession->findChildren( pFunc, SymTagData, szVarName, nsCaseSensitive, &pEnum );
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [概觀](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
+ [概述](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

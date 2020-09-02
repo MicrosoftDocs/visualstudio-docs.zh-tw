@@ -1,5 +1,5 @@
 ---
-title: 程式碼品質規則總覽
+title: 程式碼品質規則概觀
 ms.date: 08/27/2020
 ms.topic: reference
 f1_keywords:
@@ -299,10 +299,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 05937cef7187726134a7116edae4d74ee004de1d
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89219747"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Managed 程式碼的程式碼分析警告（依 CheckId）
@@ -385,10 +385,10 @@ ms.locfileid: "89219747"
 | CA1304 | [CA1304:必須指定 CultureInfo](../code-quality/ca1304.md) | 方法或建構函式會呼叫具有接受 System.Globalization.CultureInfo 參數之多載的成員，且方法或建構函式未呼叫採用 CultureInfo 參數的多載。 未提供 CultureInfo 或 System.IFormatProvider 物件時，多載成員所提供的預設值可能不會有您希望在所有地區設定中都有的效果。 |
 | CA1305 | [CA1305:必須指定 IFormatProvider](../code-quality/ca1305.md) | 方法或建構函式所呼叫的一個或多個成員具有可接受 System.IFormatProvider 參數的多載，但該方法或建構函式並未呼叫可接受 IFormatProvider 參數的多載。 未提供 System.Globalization.CultureInfo 或 IFormatProvider 物件時，多載成員所提供的預設值可能不會有您希望在所有地區設定中都有的效果。 |
 | CA1306 | [CA1306:必須設定資料類型的地區設定](../code-quality/ca1306.md) | 地區設定會決定資料的文化特性特定展示項目，例如用於數值、貨幣符號和排序次序的格式。 當您建立 DataTable 或 DataSet 時，您應該明確設定地區設定。 |
-| CA1307 | [CA1307：為清楚起見指定 StringComparison](../code-quality/ca1307.md) | 字串比較作業會使用未設定 StringComparison 參數的方法多載。 |
+| CA1307 | [CA1307:指定 StringComparison 以提升明確性](../code-quality/ca1307.md) | 字串比較作業會使用未設定 StringComparison 參數的方法多載。 |
 | CA1308 |[CA1308:必須將字串標準化為大寫字母](../code-quality/ca1308.md) | 字串應該標準化為大寫字母。 當一小組的字元轉換成小寫字母時，它們無法構成來回行程。 |
 | CA1309 | [CA1309:使用循序的 StringComparison](../code-quality/ca1309.md) | 非語言的字串比較作業未將 StringComparison 參數設定為 Ordinal 或 OrdinalIgnoreCase。 藉由明確地將參數設定為 StringComparison.Ordinal 或 StringComparison.OrdinalIgnoreCase，您的程式碼通常可以提升速度、更為正確，也更加可靠。 |
-| CA1310 | [CA1310：指定 StringComparison 的正確性](../code-quality/ca1310.md) | 字串比較作業會使用未設定 StringComparison 參數的方法多載，並預設使用特定文化特性的字串比較。 |
+| CA1310 | [CA1310：指定 StringComparison 以提升正確性](../code-quality/ca1310.md) | 字串比較作業會使用未設定 StringComparison 參數的方法多載，並預設使用特定文化特性的字串比較。 |
 | CA1400 | [CA1400： P/Invoke 進入點應該存在](../code-quality/ca1400.md) |公用或受保護的方法是使用 System.Runtime.InteropServices.DllImportAttribute 屬性來標記。 有可能是找不到 Unmanaged 程式庫，或是方法不符合程式庫中的函式。 |
 | CA1401 | [CA1401： P/Invoke 不應該為可見的](../code-quality/ca1401.md) | 公用類型中公用或保護的方法具有 System.Runtime.InteropServices.DllImportAttribute 屬性 (也會由 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中的 Declare 關鍵字實作)。 但不得公開 (Expose) 此類方法。 |
 | CA1402 |[CA1402:避免在 COM 可見介面中多載](../code-quality/ca1402.md) | 當多載方法會對 COM 用戶端公開 (Expose) 時，只有第一個方法多載會保留它的名稱。 後續的多載則會透過將名稱附加至底線字元 (_) 和對應於多載宣告之順序的整數，重新命名為唯一的名稱。 |
@@ -483,7 +483,7 @@ ms.locfileid: "89219747"
 | CA2004 | [CA2004:必須移除對 GC.KeepAlive 的呼叫](../code-quality/ca2004.md) | 如果轉換成 SafeHandle 用法，則會移除對 GC.KeepAlive (物件) 的所有呼叫。 在這種情況下，類別應該不需要呼叫 GC.KeepAlive。 這是假設它們沒有完成項，但會根據 SafeHandle 最終處理其 OS 控制代碼。 |
 | CA2006 | [CA2006:必須使用 SafeHandle 封裝原生資源](../code-quality/ca2006.md) | 在 Managed 程式碼中使用 IntPtr，可能會有潛在的安全性和可靠性問題。 必須檢閱所有使用 IntPtr 的情況，判斷是否需要在該處使用 SafeHandle (或類似技術)。 |
 | CA2007 | [CA2007:不直接等候工作](ca2007.md) | 非同步方法會[awaits](/dotnet/csharp/language-reference/keywords/await)直接等候 <xref:System.Threading.Tasks.Task> 。 當非同步方法直接等候時 <xref:System.Threading.Tasks.Task> ，會在建立工作的相同執行緒中發生接續。 這種行為在效能方面可能相當昂貴，而且可能會在 UI 執行緒上產生鎖死。 請考慮呼叫 <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> 以發出接續的意圖。 |
-| CA2008 | [CA2008：不要在不傳遞 TaskScheduler 的情況下建立工作](ca2008.md) | 工作建立或接續運算使用未指定參數的方法多載 <xref:System.Threading.Tasks.TaskScheduler> 。 |
+| CA2008 | [CA2008：建立工作時請務必傳遞 TaskScheduler](ca2008.md) | 工作建立或接續運算使用未指定參數的方法多載 <xref:System.Threading.Tasks.TaskScheduler> 。 |
 | CA2009 | [CA2009：請勿對 ImmutableCollection 值呼叫 TolmmutableCollection](ca2009.md) | `ToImmutable` 方法在命名空間的不可變集合上不必要地呼叫 <xref:System.Collections.Immutable> 。 |
 | CA2011 | [CA2011：請勿在屬性 setter 中指派屬性](ca2011.md) | 屬性在其本身的 [set 存取](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)子中不小心指派了值。 |
 | CA2012 | [CA2012：必須正確使用 ValueTasks](ca2012.md) | 從成員調用傳回的 ValueTasks 是要直接等待。  嘗試多次使用 ValueTask 或在已知完成之前直接存取一個結果可能會導致例外狀況或損毀。  忽略這類 ValueTask 可能表示功能錯誤，而且可能會降低效能。 |

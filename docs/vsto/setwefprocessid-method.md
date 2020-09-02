@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 13a6748e2e3b66f581a3c72c1f847e0329189e64
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537328"
 ---
 # <a name="setwefprocessid-method"></a>SetWefProcessId 方法
-  提供將執行 Web Extensions Framework （WEF）內容的處理序識別碼。
+  提供將執行 Web Extensions Framework (WEF) 內容的處理序識別碼。
 
 ## <a name="syntax"></a>語法
 
@@ -30,7 +30,7 @@ HRESULT SetWefProcessId(
 
 #### <a name="parameters"></a>參數
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |*dwProcessId*|將用來執行 WEF 內容的處理序識別碼。|
 
@@ -38,6 +38,6 @@ HRESULT SetWefProcessId(
  HRESULT 值，表示此方法是否已順利完成。
 
 ## <a name="remarks"></a>備註
- 在建立 WEF 內容程式之後，但在任何 WEF 內容執行之前，都必須呼叫這個方法。
+ 在建立 WEF 內容程式之後，但在任何 WEF 內容執行之前，必須呼叫這個方法。
 
- 如果您想要開發環境將偵錯工具附加至 WEF 內容進程，則環境必須在此方法的實作為執行此作業。
+ 如果您想要讓開發環境將偵錯工具附加至 WEF 內容處理常式，環境必須在此方法的實執行中執行此作業。

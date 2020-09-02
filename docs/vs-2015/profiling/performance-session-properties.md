@@ -14,31 +14,31 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cd521a853d9ec8c1a3fee8e50e87217621a73a89
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75848169"
 ---
 # <a name="performance-session-properties"></a>效能工作階段屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[效能工作階段] 可以讓您進行設定，以決定如何對應用程式進行程式碼剖析。 它也會儲存針對程式碼剖析工作階段所產生的報告。  
+[效能工作階段]**** 可以讓您進行設定，以決定如何對應用程式進行程式碼剖析。 它也會儲存針對程式碼剖析工作階段所產生的報告。  
   
- **Requirements**  
+ **需求**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]中， [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]中， [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
-  您可以執行 [效能精靈] 或手動建立工作階段，以建立 [效能工作階段]。 在 [效能工作階段] 建立完成後，[效能總管] 中便會顯示 [效能工作階段]。  
+  您可以執行 [效能精靈]**** 或手動建立工作階段，以建立 [效能工作階段]****。 在 [效能工作階段]**** 建立完成後，[效能總管]**** 中便會顯示 [效能工作階段]****。  
   
-  若要檢視 [效能工作階段] 屬性，請在 [效能總管] 中選取工作階段名稱，以滑鼠右鍵按一下，然後選取 [屬性]。  
+  若要檢視 [效能工作階段]**** 屬性，請在 [效能總管]**** 中選取工作階段名稱，以滑鼠右鍵按一下，然後選取 [屬性]****。  
   
   效能工作階段具有下列屬性頁︰  
   
 ## <a name="general"></a>一般  
  這些設定可以讓您選取程式碼剖析方法、加入 .NET 物件集合和存留期資料，和指定預設的報告位置和命名慣例。  
   
- 如需詳細資訊，請參閱＜＞。  
+ 如需詳細資訊，請參閱：  
   
  [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)  
   
@@ -66,7 +66,7 @@ ms.locfileid: "75848169"
   
   如需詳細資訊，請參閱[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)  
   
-## <a name="binary"></a>二元  
+## <a name="binary"></a>Binary  
  這些設定可以讓您指定是否要將已檢測的二進位檔重新配置到另一個位置。 例如，如果您正在剖析 My.DLL 並選擇不要重新配置已檢測的二進位檔，則會建立名為 My.Orig.DLL 的 My.DLL 備份複本。 接著會插入探查來修改 My.DLL 以收集資料。 如果您決定要重新配置已檢測的二進位檔，則不會重新命名原始二進位檔，而且會將已檢測的二進位檔複製到指定的位置供檢測期間使用。  
   
  如需詳細資訊，請參閱[如何：指定要啟動的二進位檔](../profiling/how-to-specify-the-binary-to-start.md)  
@@ -74,10 +74,10 @@ ms.locfileid: "75848169"
 ## <a name="tier-interactions"></a>階層互動  
  如需詳細資訊，請參閱[收集階層互動資料](../profiling/collecting-tier-interaction-data.md)  
   
-## <a name="instrumentation"></a>檢測設備  
- 這些設定可以讓您收集 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 網頁中 JScript 程式碼的效能資料，並指定您希望在檢測處理序前後發生的任何 [檢測前置] 和 [檢測後續] 事件。  
+## <a name="instrumentation"></a>測試設備  
+ 這些設定可以讓您收集 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 網頁中 JScript 程式碼的效能資料，並指定您希望在檢測處理序前後發生的任何 [檢測前置]**** 和 [檢測後續]**** 事件。  
   
- 如需詳細資訊，請參閱＜＞。  
+ 如需詳細資訊，請參閱：  
   
  [如何：分析網頁中的 JavaScript 程式碼](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
   
@@ -91,27 +91,27 @@ ms.locfileid: "75848169"
 ## <a name="windows-events"></a>Windows 事件  
  在剖析期間，您可以收集來自事件追蹤提供者的資料。 您可以使用 VSPerfReport.exe 命令列工具的 `/calltrace` 選項來檢視此資料。 如需 Windows 事件追蹤 (ETW) 的詳細資訊，請參閱[關於事件追蹤 (About Event Tracing)](https://msdn2.microsoft.com/library/aa363668.aspx)。  
   
- 如需詳細資訊，請參閱＜＞。  
+ 如需詳細資訊，請參閱：  
   
  [如何：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
   
  [VSPerfReport](../profiling/vsperfreport.md)。  
   
 ## <a name="windows-counters"></a>Windows 計數器  
- 這個選項可以讓您從 Windows 效能監視器計數器收集資料。 若要收集此資料，請選取標記為 [收集 Windows 效能計數器] 的核取方塊。 收集的間隔時間可以在 [收集間隔] 方塊中設定。 另外，您可能也可以指定 [計數器分類] 和 [執行個體]。 部分預設 Windows 效能監視器計數器可供使用。  
+ 這個選項可以讓您從 Windows 效能監視器計數器收集資料。 若要收集此資料，請選取標記為 [收集 Windows 效能計數器]**** 的核取方塊。 收集的間隔時間可以在 [收集間隔]**** 方塊中設定。 另外，您可能也可以指定 [計數器分類]**** 和 [執行個體]****。 部分預設 Windows 效能監視器計數器可供使用。  
   
  如需詳細資訊，請參閱[如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)。  
   
 ## <a name="advanced"></a>進階  
  這些設定可以讓您指定 [VSInstr](../profiling/vsinstr.md) 命令列程式碼剖析工具的一個或多個選項，便能將選項加入至檢測程序。 您也可以指定當應用程式使用超過一個以上版本時，要進行程式碼剖析的 Common Runtime 版本。  
   
- 如需詳細資訊，請參閱＜＞。  
+ 如需詳細資訊，請參閱：  
   
- [如何︰指定 .NET Framework 執行階段](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
+ [如何：指定 .NET Framework 執行時間](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
   
  [如何：指定其他的檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)  
   
-## <a name="see-also"></a>請參閱  
- [概觀](../profiling/overviews-performance-tools.md)   
- [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
+## <a name="see-also"></a>另請參閱  
+ [綜述](../profiling/overviews-performance-tools.md)   
+ [設定效能會話](../profiling/configuring-performance-sessions.md)   
  [控制資料收集](../profiling/controlling-data-collection.md)

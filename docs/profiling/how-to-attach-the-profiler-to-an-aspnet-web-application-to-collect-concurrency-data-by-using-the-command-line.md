@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: d7e9f2e7fe68dc7bc9d7ceec9e677ab98d4ee1d2
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329356"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令列將分析工具附加至 ASP.NET Web 應用程式以收集並行資料
@@ -30,7 +30,7 @@ ms.locfileid: "85329356"
 
 1. 輸入下列命令以啟動程式碼剖析工具︰
 
-    [VSPerfCmd](../profiling/vsperfcmd.md) **/start： concurrency/output：** `OutputFile` [ `Options` ]
+    [>vsperfcmd](../profiling/vsperfcmd.md) **/start： concurrency/output：** `OutputFile` [ `Options` ]
 
    - [/start](../profiling/start.md)選項會初始化程式碼分析工具以收集資源爭用資料。
 
@@ -44,18 +44,18 @@ ms.locfileid: "85329356"
    | [/crosssession](../profiling/crosssession.md) | 在其他登入工作階段啟用處理序程式碼剖析。 |
    | [/wincounter](../profiling/wincounter.md) **：**`WinCounterPath` | 指定程式碼剖析期間要收集的 Windows 效能計數器。 |
    | [/automark](../profiling/automark.md) **：**`Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500。 |
-   | [/events](../profiling/events-vsperfcmd.md) **：**`Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集在不同的（。*etl*）檔案。 |
+   | [/events](../profiling/events-vsperfcmd.md) **：**`Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集在不同的 ( 中。*etl*) 檔。 |
 
 2. 以一般方式啟動 ASP.NET 應用程式。
 
-3. 輸入下列命令，將分析工具附加至 ASP.NET worker 進程：**VSPerfCmd/attach：** `PID` [**/targetclr：** `Version` ]
+3. 輸入下列命令，將分析工具附加至 ASP.NET worker 進程：**>vsperfcmd/attach：** `PID` [**/targetclr：** `Version` ]
 
    - `PID`指定 ASP.NET 背景工作處理序的識別碼或名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序 ID。
 
-   - [/targetclr](../profiling/targetclr.md) **：** `Version` 指定在應用程式中載入多個版本的執行時間時要分析的 common language runtime （CLR）版本。 這是選擇性參數。
+   - [/targetclr](../profiling/targetclr.md) **：** `Version` 指定在應用程式中載入多個版本的執行時間時要分析的 common language runtime (CLR) 的版本。 這是選擇性參數。
 
 ## <a name="control-data-collection"></a>控制資料收集
- 當應用程式正在執行時，您可以使用*VSPerfCmd.exe*選項來啟動和停止將資料寫入檔案，藉以控制資料收集。 透過控制資料收集，您可以收集特定程式執行 (例如啟動或關閉應用程式) 的資料。
+ 當應用程式正在執行時，您可以使用 *VSPerfCmd.exe* 選項來啟動和停止將資料寫入檔案，藉以控制資料收集。 透過控制資料收集，您可以收集特定程式執行 (例如啟動或關閉應用程式) 的資料。
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集
 
@@ -78,7 +78,7 @@ ms.locfileid: "85329356"
 
 2. 在命令提示字元中輸入下列命令，以關閉程式碼剖析工具︰
 
-     **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
+     **>vsperfcmd**  [/shutdown](../profiling/shutdown.md)
 
 ## <a name="see-also"></a>另請參閱
 - [分析 ASP.NET web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)

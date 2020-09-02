@@ -1,5 +1,5 @@
 ---
-title: 樣本 ID 元素(可視化工作室範本) |微軟文件
+title: " (Visual Studio 範本的 TemplateID 元素) |Microsoft Docs"
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8eb5abac9c837b3022354d6da743ac8f21d5e41d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699061"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID 項目 (Visual Studio 範本)
-指定依[樣本組](../extensibility/templategroupid-element-visual-studio-templates.md)ID 元素分類為一組項樣本的項範本的標識符。
+指定專案範本的識別碼，該專案範本會依 [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) 元素分類為一組專案範本。
 
- \<VStemplate>\<範本資料>\<範本ID>
+ \<VSTemplate> \<TemplateData>
+ \<TemplateID>
 
 ## <a name="syntax"></a>語法
 
@@ -43,19 +44,19 @@ ms.locfileid: "80699061"
 
 ### <a name="parent-elements"></a>父項目
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
- 表示`string`項範本的標識碼,該項範本`TemplateGroupID`按 元素分類為一組項範本。
+ `string`，表示專案樣板的識別碼，該專案範本會依專案分類為專案範本群組 `TemplateGroupID` 。
 
 ## <a name="remarks"></a>備註
   是選擇性元素。
 
- 如果 .vstemplate 檔案省`TemplateID`略了 該元素,則[Name](../extensibility/name-element-visual-studio-templates.md)元素將用作範本的識別碼。
+ 如果 .vstemplate 檔案省略了 `TemplateID` 元素，則 [Name](../extensibility/name-element-visual-studio-templates.md) 元素會當做範本的識別碼使用。
 
- 元素的值`TemplateID`與專案系統註冊(HKEY_LOCAL_MACHINE_SOFTWARE_Microsoft_VisualStudio_11.0_\\專案 )一起使用,以篩選"**添加新專案"** 對話框中顯示的範本。
+ 專案的值 `TemplateID` 會與 project system 註冊 (HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\11.0\projects \\) 來篩選出現在 [ **加入新專案** ] 對話方塊中的範本。
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

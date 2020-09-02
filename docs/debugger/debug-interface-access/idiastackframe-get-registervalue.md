@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 42bd724e4f25b5475f89af32f5793ede8d66594a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464965"
 ---
 # <a name="idiastackframeget_registervalue"></a>IDiaStackFrame::get_registerValue
@@ -34,14 +34,14 @@ HRESULT get_registerValue(
 #### <a name="parameters"></a>參數
  `registerIndex`
 
-在其中一個[CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)列舉值。
+在其中一個 [CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md) 列舉值。
 
  `pRetVal`
 
-脫銷儲存在暫存器中的值。
+擴展儲存在暫存器中的值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

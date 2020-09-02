@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba8c77d7d97da75ce82fcbe732db64acf633b8af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150223"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-檢查兩個符號是否相等。  
+查看兩個符號是否相等。  
   
 ## <a name="syntax"></a>語法  
   
@@ -36,13 +36,13 @@ HRESULT symsAreEquiv ( 
   
 #### <a name="parameters"></a>參數  
  `symbolA`  
- [in]第一個[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)用於比較的物件。  
+ 在比較中使用的第一個 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件。  
   
  `symbolB`  
- [in]第二個`IDiaSymbol`用於比較的物件。  
+ 在比較中使用的第二個 `IDiaSymbol` 物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果符號相等，則會傳回`S_OK`; 否則傳回`S_FALSE`，符號不相等。 否則，傳回錯誤碼。  
+ 如果符號相等，則會傳回 `S_OK` ; 否則會傳回 `S_FALSE` ，符號不相等。 否則，會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

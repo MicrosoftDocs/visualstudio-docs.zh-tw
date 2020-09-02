@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f5af6b366a1181187c23327449ade8e03e30107f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778059"
 ---
 # <a name="use-performance-rules-to-analyze-data"></a>使用效能規則分析資料
@@ -23,7 +23,7 @@ ms.locfileid: "74778059"
 > 分析工具效能警告是由程式執行的動態分析所產生，並且和程式碼分析警告無關。 程式碼分析也可以根據原始程式碼的靜態分析，來產生 Managed 程式碼的效能警告。 如需詳細資訊，請參閱[分析受控程式碼品質](../code-quality/code-analysis-for-managed-code-overview.md)和[效能警告](../code-quality/performance-warnings.md)。
 
 ## <a name="in-this-section"></a>本節內容
-- [如何：查看性能警告](../profiling/how-to-view-performance-warnings.md)
+- [如何：查看效能警告](../profiling/how-to-view-performance-warnings.md)
 
  提供如何開啟 [錯誤清單]**** 視窗以檢視分析工具效能警告的相關資訊。
 

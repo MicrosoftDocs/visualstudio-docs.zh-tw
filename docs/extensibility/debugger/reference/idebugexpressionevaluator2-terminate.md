@@ -1,5 +1,5 @@
 ---
-title: IDebug運算式賦值器2::終止 |微軟文件
+title: IDebugExpressionEvaluator2：： Terminate |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5460930cbcc528648c2a6c502ef7eb9acbe00d62
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729151"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
-停止並清理表達式賦值器。
+停止並清除運算式評估工具。
 
 ## <a name="syntax"></a>語法
 
@@ -37,13 +37,13 @@ int Terminate ();
 ```
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則,返回錯誤代碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
-清理表達式賦值器時告訴該表達式賦值器。
+告知運算式評估工具正在清除它。
 
 ## <a name="example"></a>範例
-下面的範例展示如何為公開[IDebugExpression評估器2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)介面的**運算式計算機包**物件實現此方法。
+下列範例示範如何針對公開[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)介面的**ExpressionEvaluatorPackage**物件，執行這個方法。
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)

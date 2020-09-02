@@ -1,5 +1,5 @@
 ---
-title: 控制事件 |微軟文件
+title: 控制事件 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,31 +11,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bc2c3ad9c9b63923bdf2f107e7bc582f3c76cd62
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739095"
 ---
 # <a name="control-events"></a>控制事件
-您必須在程式的受控執行期間發送事件。 所有事件都使用[IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md)介面發送,並且具有需要您實現[IDebugEvent2::getAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md)方法的屬性。
+您必須在受控制的程式執行期間傳送事件。 所有事件都是使用 [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) 介面傳送，而且具有需要您執行 [IDebugEvent2：： GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) 方法的屬性。
 
 ## <a name="additional-methods"></a>其他方法
- 某些事件需要實現其他方法,如下所示:
+ 某些事件需要執行其他方法，如下所示：
 
-- 當調試引擎 (DE) 初始化時,發送[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)介面需要實現[IDebugEngineCreateEvent2:getEngine](../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)方法。
+- 當 debug engine (DE) 初始化時，傳送 [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) 介面需要您執行 [IDebugEngineCreateEvent2：： GetEngine](../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md) 方法。
 
-- 執行控制需要實現[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)和[IDebugStepcompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)介面等控制事件。 **IDebugBreakEvent2**僅適用於非同步中斷。
+- 執行控制項需要將這類控制項事件實作為 [IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md) 和[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) 介面。 只有非同步中斷才需要**IDebugBreakEvent2** 。
 
-- 進入函數需要實現[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)介面及其方法。
+- 逐步執行函式需要 [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) 介面和其方法的實作為。
 
-  從斷點派生的事件需要實現[IDebugBreakpointErrorEvent2、IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)和[IDebugBreakpoint事件2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)介面,以及[IDebugBreakpointBoundEvent2:取得掛起的斷點](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)點和[EnumBoundBreakpoint 方法](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)。 [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)
+  衍生自中斷點的事件需要實 [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)、 [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)和 [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) 介面，以及 [IDebugBreakpointBoundEvent2：： GetPendingBreakpoint](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) 和 [EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) 方法。
 
-  非同步運算要求您實現[IDebugExpression 表示式評估完成事件2 介面](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)及其[IDebugExpression 運算式評估完成事件2::獲取表達式](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getexpression.md)[和 getResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)方法。
+  非同步運算式評估需要您執行 [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) 介面及其 [IDebugExpressionEvaluationCompleteEvent2：： system.componentmodel.design.serialization.codedomserializerbase.getexpression](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getexpression.md)[和 GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) 方法。
 
-  同步事件需要實現[IDebugEngine2::繼續從同步事件](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)方法。
+  同步事件需要執行 [IDebugEngine2：： ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) 方法。
 
-  要編寫字串樣式輸出,必須實現[IDebugStringEvent2::getString](../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)方法。
+  若要讓引擎撰寫字串樣式輸出，您必須執行 [IDebugOutputStringEvent2：： GetString](../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md) 方法。
 
 ## <a name="see-also"></a>另請參閱
-- [執行控制及狀態評估](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+- [執行控制和狀態評估](../../extensibility/debugger/execution-control-and-state-evaluation.md)

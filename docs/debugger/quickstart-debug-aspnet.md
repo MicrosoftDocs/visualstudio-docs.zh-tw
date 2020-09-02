@@ -1,6 +1,6 @@
 ---
-title: 調試ASP.NET核心
-description: 使用視覺化工作室調試器調試ASP.NET核心
+title: Debug ASP.NET Core
+description: 使用 Visual Studio 偵錯工具的 Debug ASP.NET Core
 ms.custom: mvc
 ms.date: 08/06/2018
 ms.topic: quickstart
@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: bbe3d23301f0853626a930855acf4b595c6a2923
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847879"
 ---
-# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>快速入門：使用視覺化工作室調試器調試ASP.NET核心
+# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具來進行 Debug ASP.NET Core
 
 Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用程式。 本主題提供了解一些基本功能的快速方法。
 
@@ -31,7 +31,7 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
     按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，鍵入 **asp.net**，選擇 [範本]****，然後選擇 [建立新的 ASP.NET Core Web 應用程式]****。 在出現的對話方塊中選擇 [建立]****。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂部功能表列中，選擇 **"檔** > **新專案** > **"。** 在 [新增專案]**** 對話方塊左窗格的 [Visual C#]**** 下，選擇 [Web]****，然後在中間窗格中選擇 [ASP.NET Core Web 應用程式]****。 鍵入 **MyDbgApp** 這類名稱，然後按一下 [確定]****。
+    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [新增專案]**** 對話方塊左窗格的 [Visual C#]**** 下，選擇 [Web]****，然後在中間窗格中選擇 [ASP.NET Core Web 應用程式]****。 鍵入 **MyDbgApp** 這類名稱，然後按一下 [確定]****。
 
     在出現的對話方塊中，選擇中間窗格中的 [Web 應用程式]****，然後按一下 [確定]****。
 
@@ -138,4 +138,4 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 在本教學課程中，您已了解如何啟動偵錯工具、逐步執行程式碼，以及檢查變數。 建議您進一步查看偵錯工具功能，以及詳細資訊的連結。
 
 > [!div class="nextstepaction"]
-> [首先查看調試器](../debugger/debugger-feature-tour.md)
+> [偵錯工具簡介](../debugger/debugger-feature-tour.md)

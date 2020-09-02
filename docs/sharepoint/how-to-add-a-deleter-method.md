@@ -20,27 +20,28 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: dd97d28936e9f0cc50e9064fdc1a6a64bb20fc77
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017037"
 ---
-# <a name="how-to-add-a-deleter-method"></a>如何：新增刪除者方法
-  您可以藉由將刪除者方法加入至模型，讓終端使用者從 SharePoint 網站上的外部清單中刪除資料記錄。 如需詳細資訊，請參閱[設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
+# <a name="how-to-add-a-deleter-method"></a>如何：加入刪除者方法
+  您可以藉由將刪除者方法加入至模型，讓終端使用者可以從 SharePoint 網站上的外部清單中刪除資料記錄。 如需詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
 ### <a name="to-create-a-deleter-method"></a>若要建立刪除者方法
 
-1. 在**BDC 設計**工具上，選擇實體。
+1. 在 **BDC 設計**工具上，選擇實體。
 
-2. 在功能表列上，選擇 [**視圖**] [  >  **其他視窗**] [  >  **BDC 方法詳細資料**]。
+2. 在功能表列上，選擇 [**查看**  >  **其他 Windows**  >  **BDC 方法詳細資料**]。
 
-    [ **BDC 方法詳細資料**] 視窗隨即開啟。 如需此視窗的詳細資訊，請參閱[BDC 模型設計工具總覽](../sharepoint/bdc-model-design-tools-overview.md)。
+    [ **BDC 方法詳細資料** ] 視窗隨即開啟。 如需此視窗的詳細資訊，請參閱 [BDC 模型設計工具總覽](../sharepoint/bdc-model-design-tools-overview.md)。
 
-3. 在 [**加入方法**] 清單中，選擇 [**建立刪除者方法**]。
+3. 在 [ **加入方法** ] 清單中，選擇 [ **建立刪除者方法**]。
 
-    Visual Studio 會將下列元素加入至模型。 這些元素會出現在 [ **BDC 方法詳細資料**] 視窗中。
+    Visual Studio 將下列元素加入至模型。 這些專案會出現在 [ **BDC 方法詳細資料** ] 視窗中。
 
-   - 名為**Delete**的方法。
+   - 名為 **Delete**的方法。
 
    - 方法的輸入參數。
 
@@ -48,29 +49,29 @@ ms.locfileid: "86017037"
 
    - 方法的方法實例。
 
-     如需詳細資訊，請參閱[設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
+     如需詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
-4. 在**方案總管**中，開啟針對實體所產生之服務程式代碼檔案的快捷方式功能表，然後選擇 [ **View code**]。
+4. 在 **方案總管**中，開啟針對實體所產生之服務程式代碼檔案的快捷方式功能表，然後選擇 [ **View code**]。
 
-    實體服務程式代碼檔案會在程式碼編輯器中開啟。 如需實體服務程式代碼檔案的詳細資訊，請參閱[建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
+    Entity service 程式碼檔案會在程式碼編輯器中開啟。 如需實體服務程式代碼檔案的詳細資訊，請參閱 [建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
 
-5. 將程式碼新增至刪除者方法以刪除記錄。 下列範例會使用 SQL Server 的 AdventureWorks 範例資料庫，從銷售訂單中刪除明細專案。
+5. 將程式碼加入至刪除者方法以刪除記錄。 下列範例會使用 SQL Server 的 AdventureWorks 範例資料庫，從銷售訂單中刪除明細專案。
 
    > [!NOTE]
    > 此範例中的方法會使用兩個輸入參數。
 
    > [!NOTE]
-   > 將欄位的值取代 `ServerName` 為您的伺服器名稱。
+   > 將欄位的值取代為 `ServerName` 您伺服器的名稱。
 
     [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
     [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]
 
 ## <a name="see-also"></a>另請參閱
 - [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [如何：加入 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)
-- [如何：加入特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)
-- [如何：加入建立者方法](../sharepoint/how-to-add-a-creator-method.md)
-- [如何：新增更新程式方法](../sharepoint/how-to-add-an-updater-method.md)
+- [如何：加入搜尋工具方法](../sharepoint/how-to-add-a-finder-method.md)
+- [如何：新增特定搜尋工具方法](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [如何：新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)
+- [如何：加入更新程式方法](../sharepoint/how-to-add-an-updater-method.md)
 - [BDC 模型設計工具總覽](../sharepoint/bdc-model-design-tools-overview.md)
 - [如何：將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)
 - [如何：定義方法實例](../sharepoint/how-to-define-a-method-instance.md)

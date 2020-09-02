@@ -1,5 +1,5 @@
 ---
-title: 實驗實例 |微軟文件
+title: 實驗實例 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,24 +13,24 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8e2284767a0aa6be58c0f7e38c912783728914cb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699032"
 ---
 # <a name="the-experimental-instance"></a>實驗執行個體
-為了保護您的 Visual Studio 開發環境免受可能更改它的未經測試的應用程式的影響,VSSDK 提供了一個實驗空間,可用於實驗。 像往常一樣使用 Visual Studio 來開發新應用程式,但使用此實驗實例運行它們。
+為了保護您的 Visual Studio 開發環境免于可能變更的未測試應用程式，VSSDK 提供了實驗性的空間，讓您可以用來進行實驗。 您可以像往常一樣使用 Visual Studio 來開發新的應用程式，但您可以使用此實驗性實例來執行這些應用程式。
 
- 每個具有 VSIX 套件的應用程式都會在除錯模式下啟動 Visual Studio 實驗實例。
+ 具有 VSIX 封裝的每個應用程式會在「偵錯工具」模式中啟動 Visual Studio 實驗實例。
 
- 如果要在特定解決方案之外啟動 Visual Studio 的實驗實例,在命令視窗中執行以下命令:
+ 如果您想要在特定解決方案之外啟動 Visual Studio 的實驗性實例，請在命令視窗中執行下列命令：
 
- "*\<視覺工作室安裝路徑>*[公共7_IDE_devenv.exe] /RootSuffix Exp
+ " *\<Visual studio installation path>* \Common7\IDE\devenv.exe"/RootSuffix Exp
 
 > [!NOTE]
-> 實驗實例寫入`<version number>Exp``<version number>Exp_Config`和節點下的註冊表。 例如,Visual Studio 2015 實驗註冊表區域是
+> 實驗實例會寫入至和節點下的登錄 `<version number>Exp` `<version number>Exp_Config` 。 例如，Visual Studio 2015 實驗登錄區是
 >
 > `HKCU\Software\Microsoft\VisualStudio\14.0Exp` 和 `HKCU\Software\Microsoft\VisualStudio\14.0Exp_Config`
 
- 我們建議您在開發擴展時在實驗實例中運行擴展。 部署擴展時,它將在開發實例中運行。 有關註冊應用程式的詳細資訊,請參閱[註冊 VS 包](../extensibility/internals/registering-vspackages.md)。
+ 建議您在開發時，于實驗實例中執行您的擴充功能。 當您部署擴充功能時，它會在開發實例中執行。 如需註冊應用程式的詳細資訊，請參閱 [註冊 vspackage](../extensibility/internals/registering-vspackages.md)。
