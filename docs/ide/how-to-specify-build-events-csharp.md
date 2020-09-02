@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e1a3083b59ad0cec727f753395768a214ff571b7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283992"
 ---
 # <a name="how-to-specify-build-events-c"></a>如何：指定建置事件 (C#)
@@ -32,7 +32,7 @@ ms.locfileid: "85283992"
 
 1. 在 [方案總管]**** 中，選取您想要指定建置事件的專案。
 
-2. 按一下 [專案]**** 功能表上的 [屬性]****。
+2. 按一下 [專案] 功能表上的 [屬性]。
 
 3. 選取 [建置事件]**** 索引標籤。
 
@@ -44,7 +44,7 @@ ms.locfileid: "85283992"
 5. 在 [建置後事件命令列]**** 方塊中，指定建置事件的語法。
 
    > [!NOTE]
-   > `call`在執行 *.bat*檔案的所有後置組建命令前面加入語句。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。
+   > `call`在所有執行 *.bat*檔案的建立後命令之前加入語句。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。
 
 6. 在 [執行建置後事件]**** 方塊中，指定要執行建置後事件的情況。
 
@@ -72,7 +72,7 @@ ms.locfileid: "85283992"
 
 1. 針對命令建立新的**主控台應用程式**專案。 將專案命名為 **ChangeOSVersionCS**。
 
-2. 在*Program.cs*中，將下面這一行新增至檔案頂端的其他指示詞 `using` ：
+2. 在 *Program.cs*中，將下列這一行新增至檔案頂端的其他指示詞 `using` ：
 
    ```csharp
    using System.Xml;
@@ -176,7 +176,7 @@ ms.locfileid: "85283992"
 
 ## <a name="see-also"></a>另請參閱
 
-- [專案設計工具、組建事件頁面（c #）](../ide/reference/build-events-page-project-designer-csharp.md)
-- [預先建立事件/建立後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
+- [專案設計工具、 (c # ) 的 [組建事件] 頁面 ](../ide/reference/build-events-page-project-designer-csharp.md)
+- [預先建立事件/後置事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [如何：指定建置事件 (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
 - [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)

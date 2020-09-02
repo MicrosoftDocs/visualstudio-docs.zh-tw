@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3 | Microsoft Docs
+title: IDebugStackFrame3 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d63d4dcd6e3b7a3b81504b485ee710779cef3c13
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688541"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個介面會擴充[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)處理攔截的例外狀況。  
+這個介面會擴充 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 來處理攔截的例外狀況。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,38 +30,38 @@ ms.locfileid: "65688541"
 IDebugStackFrame3 : IDebugStackFrame2  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- 偵錯引擎 (DE) 實作的相同物件上實作這個介面[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)介面，以支援攔截的例外狀況。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ Debug engine (DE) 在實 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 介面的同一個物件上執行這個介面，以支援攔截的例外狀況。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 呼叫[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上`IDebugStackFrame2`介面，以取得此介面。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 呼叫介面上的 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) `IDebugStackFrame2` 來取得這個介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 除了繼承自方法[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)，`IDebugStackFrame3`會公開下列方法。  
+ 除了繼承自 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)的方法外，也會 `IDebugStackFrame3` 公開下列方法。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|處理目前的堆疊框架之前任何規則的例外狀況處理, 的例外狀況。|  
-|[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|發生堆疊回溯時，會傳回程式碼內容。|  
+|[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|處理任何一般例外狀況處理之前的目前堆疊框架的例外狀況。|  
+|[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|如果發生堆疊回溯，則傳回程序代碼內容。|  
   
 ## <a name="remarks"></a>備註  
- 攔截到例外狀況表示偵錯工具在執行階段所呼叫任何一般的例外狀況處理常式之前，可以處理例外狀況。 攔截例外狀況，基本上指的將假裝是例外狀況處理常式存在，即使沒有執行的階段。  
+ 攔截的例外狀況表示偵錯工具可以在執行時間呼叫任何一般例外狀況處理常式之前處理例外狀況。 攔截例外狀況時，基本上表示即使沒有例外狀況處理常式，執行時間也會發出例外狀況處理常式。  
   
- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)所有一般的例外狀況的回呼事件期間會呼叫 (唯一的例外是如果您正在偵錯混合模式的程式碼 （managed 和 unmanaged 程式碼），在此情況下期間無法攔截的例外狀況最後的機會獲得回呼）。 如果未實作 DE `IDebugStackFrame3`，或 DE 從 IDebugStackFrame3 傳回錯誤::`InterceptCurrentException` (這類`E_NOTIMPL`)，則偵錯工具正常處理例外狀況。  
+ [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) 是在所有正常的例外狀況回呼事件期間呼叫， (唯一的例外狀況是，如果您正在 (managed 和非受控程式碼) 偵測混合模式程式碼，在這種情況下，在最後機會的回呼) 期間無法攔截例外狀況。 如果 DE 未實行 `IDebugStackFrame3` ，或從 IDebugStackFrame3：： (傳回錯誤 `InterceptCurrentException` （例如 `E_NOTIMPL`) ），則偵錯工具會正常處理例外狀況。  
   
- 攔截例外狀況，偵錯工具可以允許使用者變更正在進行偵錯程式的狀態，然後繼續執行擲回的例外狀況之處。  
+ 藉由攔截例外狀況，偵錯工具可讓使用者變更所要進行的程式狀態，然後在擲回例外狀況的位置繼續執行。  
   
 > [!NOTE]
-> 攔截的例外狀況允許只在 managed 程式碼，也就是在 Common Language Runtime (CLR) 中執行的程式中。  
+> 攔截例外狀況只能在 managed 程式碼中使用，也就是在 Common Language Runtime (CLR) 下執行的程式。  
   
- 偵錯引擎表示其支援攔截的例外狀況，方法是設定 「 metricExceptions"設為 1 的值在執行階段使用`SetMetric`函式。 如需詳細資訊，請參閱 <<c0> [ 進行偵錯的 SDK 協助程式](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)。  
+ 偵錯工具引擎表示它支援攔截例外狀況，方法是在執行時間使用函數將 "metricExceptions" 設定為1的值 `SetMetric` 。 如需詳細資訊，請參閱 [SDK helper 以進行調試](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

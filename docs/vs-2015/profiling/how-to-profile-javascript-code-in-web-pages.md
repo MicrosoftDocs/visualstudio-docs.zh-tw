@@ -1,5 +1,5 @@
 ---
-title: 作法：分析網頁中的 JavaScript 程式碼 | Microsoft Docs
+title: 如何：分析網頁中的 JavaScript 程式碼 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa504e961ed8e592f5e3df84ff7a688fa2398200
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688150"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>作法：分析網頁中的 JavaScript 程式碼
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>如何：分析網頁中的 JavaScript 程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具可以使用檢測程式碼剖析方法，針對 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式、任意網頁或 JavaScript 應用程式中執行的 JavaScript 程式碼來收集效能資料。  
@@ -34,7 +34,7 @@ ms.locfileid: "65688150"
 > [!WARNING]
 > 若要對 Windows 市集應用程式中的 JavaScript 進行程式碼剖析，請參閱下列其中一個主題：  
 > 
-> - [JavaScript 函式計時](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)[遠端裝置上的 JavaScript 函式計時](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+> - [JAVAscript](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)函式計時 javascript 函式 [在遠端裝置上的執行時間](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
 >   - [分析 JavaScript 函式計時資料](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
 >   - 
   
@@ -48,17 +48,17 @@ ms.locfileid: "65688150"
   
 ### <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>對 ASP.NET Web 應用程式專案中的 JavaScript 進行程式碼剖析  
   
-1. 在 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 中，開啟 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 專案。  
+1. 在 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]中，開啟 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 專案。  
   
-2. 按一下 [分析]  功能表上的 [啟動效能精靈] 。  
+2. 按一下 [分析] **** 功能表上的 [啟動效能精靈] ****。  
   
-3. 在 [效能精靈] 的第一個頁面上，指定 [檢測]  程式碼剖析方法，然後按一下 [下一步] 。  
+3. 在 [效能精靈] 的第一個頁面上，指定 [檢測] **** 程式碼剖析方法，然後按一下 [下一步] ****。  
   
-4. 在精靈的第二個頁面上，確定已在目標清單中選取目前專案，然後按一下 [下一步]   
+4. 在精靈的第二個頁面上，確定已在目標清單中選取目前專案，然後按一下 [下一步] ****  
   
-5. 在精靈的第三個頁面上，選取 [分析 JavaScript]  核取方塊，然後按一下 [下一步] 。  
+5. 在精靈的第三個頁面上，選取 [分析 JavaScript] **** 核取方塊，然後按一下 [下一步] ****。  
   
-6. 在精靈的第四個頁面上，按一下 [完成]  ，在瀏覽器中啟動 Web 應用程式。  
+6. 在嚮導的第四個頁面上，按一下 **[完成]** ，在瀏覽器中啟動 Web 應用程式。  
   
 7. 執行您要進行程式碼剖析的功能。  
   
@@ -68,19 +68,19 @@ ms.locfileid: "65688150"
   
 1. 開啟 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]。  
   
-2. 按一下 [分析]  功能表上的 [啟動效能精靈] 。  
+2. 按一下 [分析] **** 功能表上的 [啟動效能精靈] ****。  
   
-3. 在 [效能精靈] 的第一個頁面上，指定 [檢測]  程式碼剖析方法，然後按一下 [下一步] 。  
+3. 在 [效能精靈] 的第一個頁面上，指定 [檢測] **** 程式碼剖析方法，然後按一下 [下一步] ****。  
   
-4. 在精靈的第二個頁面上，按一下 ASP.NET 或 JavaScript 應用程式，然後按一下 [下一步]   
+4. 在精靈的第二個頁面上，按一下 ASP.NET 或 JavaScript 應用程式，然後按一下 [下一步] ****  
   
 5. 在精靈的第三個頁面上：  
   
-    1. 在 [您要使用哪個 URL 或路徑執行應用程式?]  方塊中輸入網頁的 URL。  
+    1. 在 [您要使用哪個 URL 或路徑執行應用程式?] **** 方塊中輸入網頁的 URL。  
   
-    2. 選取 [分析 JavaScript]  核取方塊，然後按一下 [下一步] 。  
+    2. 選取 [分析 JavaScript] **** 核取方塊，然後按一下 [下一步] ****。  
   
-6. 在精靈的第四個頁面上，按一下 [完成]  ，在瀏覽器中啟動網頁。  
+6. 在嚮導的第四個頁面上，按一下 **[完成]** ，在瀏覽器中啟動網頁。  
   
 7. 執行您要進行程式碼剖析的功能。  
   

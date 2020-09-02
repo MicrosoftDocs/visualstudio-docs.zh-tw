@@ -1,5 +1,5 @@
 ---
-title: 快速入門：使用主控台偵錯 JavaScript |Microsoft Docs
+title: 快速入門：使用主控台來調試 JavaScript |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,16 +21,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a2256dfde39c761258ffb63ec6bbd9473e1be385
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687586"
 ---
-# <a name="quickstart-debug-javascript-using-the-console"></a>快速入門：使用主控台對 JavaScript 進行偵錯
+# <a name="quickstart-debug-javascript-using-the-console"></a>快速入門：使用主控台偵錯 JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-適用於 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
+適用于 Windows 和 Windows Phone] (。/Image/windows_and_phone_content.png "windows_and_phone_content" )   
   
  您可以使用 [JavaScript 主控台] 視窗進行互動，並且為使用 JavaScript 建置的市集 App 偵錯。 這些功能支援 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] App、Windows Phone 市集 App 和使用 Visual Studio Tools for Apache Cordova 所建立的 App。 如需主控台命令參考，請參閱 [JavaScript Console commands](../debugger/javascript-console-commands.md)。  
   
@@ -52,18 +52,18 @@ ms.locfileid: "65687586"
   
 - [使用 JavaScript 主控台視窗進行偵錯](#InteractiveConsole)  
   
-- [互動式偵錯和中斷模式](#InteractiveDebuggingBreakMode)  
+- [互動式調試和中斷模式](#InteractiveDebuggingBreakMode)  
   
 - [JavaScript 主控台視窗中的單行模式和多行模式](#SinglelineMultilineMode)  
   
 - [切換指令碼執行內容](#Switching)  
   
 > [!TIP]
-> 如果 [JavaScript 主控台] 視窗已關閉，請選擇 [偵錯] > >  以重新開啟。 只有在指令碼偵錯工作階段期間，才會出現此視窗。  
+> 如果 [JavaScript 主控台] 視窗已關閉，請選擇 [ **Debug** > **Windows**  >  **JavaScript 主控台**] 以重新開啟它。 只有在指令碼偵錯工作階段期間，才會出現此視窗。  
   
- 使用 [JavaScript 主控台] 視窗，您可以與 App 互動，而不需要停止和重新啟動偵錯工具。 如需詳細資訊，請參閱 <<c0> [ 重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)。 如需其他 JavaScript 偵錯功能，例如使用 [DOM 總管] 中，以及設定中斷點，詳細資訊，請參閱[快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)並[偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  
+ 使用 [JavaScript 主控台] 視窗，您可以與 App 互動，而不需要停止和重新啟動偵錯工具。 如需詳細資訊，請參閱 [ (JavaScript) 重新整理應用程式 ](../debugger/refresh-an-app-javascript.md)。 如需其他 JavaScript 偵錯工具功能（例如使用 DOM 總管和設定中斷點）的詳細資訊，請參閱快速入門：[在 Visual Studio 中偵錯工具的](../debugger/debug-store-apps-in-visual-studio.md) [HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)和偵錯工具。  
   
-## <a name="InteractiveConsole"></a> 使用 JavaScript 主控台視窗進行偵錯  
+## <a name="debug-by-using-the-javascript-console-window"></a><a name="InteractiveConsole"></a> 使用 JavaScript 主控台視窗進行偵錯工具  
  下列步驟會建立 `FlipView` App，並顯示如何以互動方式為 JavaScript 程式碼錯誤偵錯。  
   
 > [!CAUTION]
@@ -71,11 +71,11 @@ ms.locfileid: "65687586"
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>在 FlipView App 中為 JavaScript 程式碼偵錯  
   
-1. 在 Visual Studio 中建立新的方案，選擇**檔案** > **新專案**。  
+1. **選擇 [** 檔案  >  **新增專案**]，在 Visual Studio 中建立新的方案。  
   
-2. 選擇**JavaScript** > **市集應用程式**，選擇  **Windows 應用程式**或是**Windows Phone 應用程式**，然後選擇  **空白應用程式**。  
+2. 選擇 [ **JavaScript**  >  **Store 應用程式**]，選擇 [ **Windows 應用程式**] 或**Windows Phone 應用程式**]，然後選擇 [**空白應用程式**]。  
   
-3. 輸入專案的名稱，例如 `FlipViewApp`，然後選擇 [確定]  建立應用程式。  
+3. 輸入專案的名稱，例如 `FlipViewApp`，然後選擇 [確定] **** 建立應用程式。  
   
 4. 在 default.html 的 BODY 元素中，將現有的 HTML 程式碼取代為以下程式碼：  
   
@@ -153,19 +153,19 @@ ms.locfileid: "65687586"
     })();  
     ```  
   
-7. 如果尚未選取偵錯目標，請在 [偵錯]  工具列上，從 [裝置]  按鈕旁邊的下拉式清單中選擇 [模擬器]  或 [Emulator 8.1 WVGA 4 英吋 512MB]  (針對 Windows Phone)：  
+7. 如果尚未選取偵錯目標，請在 [偵錯] **** 工具列上，從 [裝置] **** 按鈕旁邊的下拉式清單中選擇 [模擬器] **** 或 [Emulator 8.1 WVGA 4 英吋 512MB] **** (針對 Windows Phone)：  
   
      ![選取偵錯目標清單](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-8. 按 F5 以啟動偵錯工具。  
+8. 按 F5 鍵以啟動偵錯工具。  
   
      App 便會執行，但影像會遺失。 [JavaScript 主控台] 視窗中的 APPHOST 錯誤指出影像遺失。  
   
-9. 與`FlipView`應用程式在模擬器或 Phone 模擬器中，型別執行`Data.items`於主控台視窗輸入提示 (旁">>"符號) 然後按 Enter。  
+9. 在 `FlipView` 模擬器或 Phone 模擬器中執行應用程式時，在 [ `Data.items` 主控台視窗輸入提示字元] 中輸入 (">>" 符號) 然後按 enter 鍵。  
   
      `items` 物件的視覺化檢視便會出現在主控台視窗中。 這表示 `items` 物件已具現化，且可在目前的指令碼內容中使用。 在主控台視窗中，您可以按一下物件的每個節點以檢視屬性值 (或使用方向鍵)。 這表示 `items._data` 物件已具現化，且可在目前的指令碼內容中使用。 預設影像 (logo.png) 仍存在於物件中，但遺失影像與預期影像顛倒。  
   
-     ![JavaScript 主控台 視窗](../debugger/media/js-console-window.png "JS_Console_Window")  
+     ![[JavaScript 主控台] 視窗](../debugger/media/js-console-window.png "JS_Console_Window")  
   
      也請注意， `items._data` 物件中的項目數會比預期多很多。  
   
@@ -197,7 +197,7 @@ ms.locfileid: "65687586"
   
 13. 選擇綠色箭頭符號以執行指令碼。  
   
-14. 按 Ctrl+Alt+M，將主控台輸入提示字元切換至單行模式，然後選擇 [清除輸入]  (紅色 "X") 以刪除輸入提示字元中的程式碼。  
+14. 按 Ctrl+Alt+M，將主控台輸入提示字元切換至單行模式，然後選擇 [清除輸入] **** (紅色 "X") 以刪除輸入提示字元中的程式碼。  
   
 15. 在提示字元中輸入 `Data.items.length = 3` ，然後按 Enter。 這會從資料中移除多餘的項目。  
   
@@ -205,26 +205,26 @@ ms.locfileid: "65687586"
   
 17. 在 [DOM 總管] 中，您可以看到更新的 DIV 項目，而且您可以巡覽至樹狀子目錄，以尋找預期的 IMG 項目。  
   
-18. 依序選擇 [偵錯]  > **Stop ging** 或按 Shift+F5 停止偵錯，接著修正原始程式碼。  
+18. 選擇 [ **Debug**  >  **停止調試**程式] 或按 Shift + F5 來停止偵錯工具，然後修正原始程式碼。  
   
      如需包含已更正範例程式碼的完整 default.html 頁面，請參閱[對 HTML、CSS 和 JavaScript 範例程式碼進行偵錯](../debugger/debug-html-css-and-javascript-sample-code.md)。  
   
-## <a name="InteractiveDebuggingBreakMode"></a> 互動式偵錯和中斷模式  
+## <a name="interactive-debugging-and-break-mode"></a><a name="InteractiveDebuggingBreakMode"></a> 互動式偵錯和中斷模式  
  您可以在使用 JavaScript 偵錯工具 (如 [JavaScript 主控台] 視窗) 的同時，使用中斷點並逐步執行程式碼。 在偵錯工具中執行的程式遇到中斷點時，偵錯工具會暫時停止執行程式。 當執行暫停時，您的程式會從執行模式切換到中斷模式。 您可以隨時繼續執行。  
   
  當程式處於中斷模式時，您可以使用 [JavaScript 主控台] 視窗執行目前的指令碼執行內容中有效的指令碼和命令。 在此程序中，您將使用您先前建立的 `FlipView` App 的修正後版本，示範如何使用中斷模式。  
   
 #### <a name="to-set-a-breakpoint-and-debug-the-app"></a>設定中斷點並為 App 偵錯  
   
-1. 在 default.html 檔案中`FlipView`應用程式，以您先前建立的開啟捷徑功能表`updateImages()`函式，然後再選擇**中斷點** > **插入中斷點**.  
+1. 在 `FlipView` 您先前建立的應用程式 default.html 檔案中，開啟函式的快捷方式功能表， `updateImages()` 然後選擇 [**中斷點**  >  **插入中斷點**]。  
   
-2. 在 [偵錯]  工具列上 [開始偵錯]  按鈕旁邊的下拉式清單中，選擇 [本機電腦]  或 [Emulator 8.1 WVGA 4 inch 512MB]  。  
+2. 在 [偵錯] **** 工具列上 [開始偵錯] **** 按鈕旁邊的下拉式清單中，選擇 [本機電腦] **** 或 [Emulator 8.1 WVGA 4 inch 512MB] **** 。  
   
-3. 依序選擇 [JavaScript]  > **Start ging**，或按 F5。  
+3. 選擇 [ **Debug**  >  **開始調試**]，或按 F5。  
   
      當執行程序到達 `updateImages()` 函式時，App 會進入中斷模式，而程式執行的目前所在行會以黃色反白顯示。  
   
-     ![使用中斷模式搭配 JavaScript 主控台](../debugger/media/js-breakmode.png "JS_BreakMode")  
+     ![使用中斷模式搭配 [JavaScript 主控台]](../debugger/media/js-breakmode.png "JS_BreakMode")  
   
      您可以變更變數的值以立即影響程式狀態，而不需要結束目前的偵錯工作階段。  
   
@@ -234,7 +234,7 @@ ms.locfileid: "65687586"
   
      下圖會顯示目前的主控台視窗。  
   
-     ![JavaScript 主控台視窗顯示視覺化檢視](../debugger/media/js-console-function-visualizer.png "JS_Console_Function_Visualizer")  
+     ![顯示視覺化檢視的 [JavaScript 主控台] 視窗](../debugger/media/js-console-function-visualizer.png "JS_Console_Function_Visualizer")  
   
 6. 將函式的一行從輸出視窗複製到輸入提示中，並將索引值變更為 3：  
   
@@ -250,37 +250,37 @@ ms.locfileid: "65687586"
   
      若要切換回 Visual Studio，請按 F12 或 Alt+Tab。  
   
-## <a name="SinglelineMultilineMode"></a> JavaScript 主控台視窗中的單行模式和多行模式  
+## <a name="single-line-mode-and-multiline-mode-in-the-javascript-console-window"></a><a name="SinglelineMultilineMode"></a> JavaScript 主控台視窗中的單行模式和多行模式  
  [JavaScript 主控台] 視窗的輸入提示同時支援單行模式和多行模式。 本主題中的互動式偵錯程序提供使用這兩種模式的範例。 您可以按 Ctrl+Alt+ M，在兩種模式之間切換。  
   
  單行模式提供輸入歷程記錄。 您可以使用向上鍵和向下鍵巡覽輸入歷程記錄。 當您執行指令碼時，單行模式會清除輸入提示。 若要在單行模式下執行指令碼，請按 Enter。  
   
- 當您執行指令碼時，多行模式不會清除輸入提示。 當您從多行模式切換至單行模式時，可以按下 [清除輸入]  (紅色的 "X") 以清除輸入行。 若要在多行模式下執行指令碼，請按 Ctrl+Enter 或選擇視窗右下角的箭頭符號。  
+ 當您執行指令碼時，多行模式不會清除輸入提示。 當您從多行模式切換至單行模式時，可以按下 [清除輸入] **** (紅色的 "X") 以清除輸入行。 若要在多行模式下執行指令碼，請按 Ctrl+Enter 或選擇視窗右下角的箭頭符號。  
   
-## <a name="Switching"></a> 切換指令碼執行內容  
- [JavaScript 主控台] 視窗可讓您一次與一個單一執行內容 (表示 Web 平台主機 (WWAHost.exe) 的單一執行個體) 互動。 在某些情況下，您的 App 可能會啟動主機的另一個執行個體，例如當您使用 `iframe`、共用合約、Web 背景工作或 `WebView` 控制項時。 如果主機的另一個執行個體正在執行，您可以在 [目標]  清單中選取執行內容，以便在執行 App 的同時，選取不同的執行內容。  
+## <a name="switching-the-script-execution-context"></a><a name="Switching"></a> 切換腳本執行內容  
+ [JavaScript 主控台] 視窗可讓您一次與一個單一執行內容 (表示 Web 平台主機 (WWAHost.exe) 的單一執行個體) 互動。 在某些情況下，您的 App 可能會啟動主機的另一個執行個體，例如當您使用 `iframe`、共用合約、Web 背景工作或 `WebView` 控制項時。 如果主機的另一個執行個體正在執行，您可以在 [目標] **** 清單中選取執行內容，以便在執行 App 的同時，選取不同的執行內容。  
   
  下圖顯示 [JavaScript 主控台] 視窗中的 [目標] 清單。  
   
- ![目標 [JavaScript 主控台] 視窗中的選取項目](../debugger/media/js-console-target.png "JS_Console_Target")  
+ ![JavaScript 主控台視窗中的目標選項](../debugger/media/js-console-target.png "JS_Console_Target")  
   
- 您也可以使用 `cd` 命令來切換執行內容，但是必須知道另一個執行內容的名稱，而且您使用的參考必須在範圍內。 [目標]  清單提供更好的方式讓您存取其他執行內容。  
+ 您也可以使用 `cd` 命令來切換執行內容，但是必須知道另一個執行內容的名稱，而且您使用的參考必須在範圍內。 [目標] **** 清單提供更好的方式讓您存取其他執行內容。  
   
-## <a name="BrowserSupport"></a> 瀏覽器和平台支援  
+## <a name="browser-and-platform-support"></a><a name="BrowserSupport"></a> 瀏覽器和平台支援  
  下列平台支援 [JavaScript 主控台] 視窗：  
   
-- 使用 JavaScript 和 HTML 的[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 和 Windows Phone 市集 App  
+- 使用 JavaScript 和 HTML 的[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 和 Windows Phone 市集應用程式  
   
 - 在 [!INCLUDE[win81](../includes/win81-md.md)]上執行的 Internet Explorer 11  
   
 - 在 [!INCLUDE[win8](../includes/win8-md.md)]上執行的 Internet Explorer 10  
   
 ## <a name="see-also"></a>另請參閱  
- [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [JavaScript Console commands](../debugger/javascript-console-commands.md)   
- [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
+ [在 Visual Studio 中偵錯工具](../debugger/debug-store-apps-in-visual-studio.md)   
+ [JavaScript 主控台命令](../debugger/javascript-console-commands.md)   
+ [ (JavaScript) 重新整理應用程式 ](../debugger/refresh-an-app-javascript.md)   
  [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [對 HTML、CSS 和 JavaScript 範例程式碼進行偵錯](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [快速入門：對 HTML 和 CSS 進行偵錯](../debugger/quickstart-debug-html-and-css.md)   
- [對 WebView 控制項進行偵錯](../debugger/debug-a-webview-control.md)   
+ [Debug HTML、CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [快速入門： Debug HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Debug Web 視圖控制項](../debugger/debug-a-webview-control.md)   
  [產品支援和協助工具](https://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)

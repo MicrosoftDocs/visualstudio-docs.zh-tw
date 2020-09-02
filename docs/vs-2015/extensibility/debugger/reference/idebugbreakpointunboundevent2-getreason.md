@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointUnboundEvent2::GetReason |Microsoft Docs
+title: IDebugBreakpointUnboundEvent2：： GetReason |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6633fa2b3950d49a3db3b286157d50c026261300
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160041"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得中斷點已繫結的原因。  
+取得未系結中斷點的原因。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,16 +40,16 @@ int GetReason( 
   
 #### <a name="parameters"></a>參數  
  `pdwUnboundReason`  
- [out]傳回值，以從[BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md)指定中斷點已繫結的原因的列舉類型。  
+ 擴展從 [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) 列舉傳回值，指定中斷點未系結的原因。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 原因包括正在重新繫結至不同的位置之後的編輯後繼續的作業或判斷中斷點已繫結錯誤的中斷點。  
+ 原因包括在編輯後繼續作業之後，將中斷點重新系結至不同的位置，或判斷中斷點是否已系結錯誤。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法，如**CBreakpointUnboundDebugEventBase**公開 （expose） 的物件[IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)介面。  
+ 下列範例示範如何針對公開[IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)介面的**CBreakpointUnboundDebugEventBase**物件，執行這個方法。  
   
 ```cpp#  
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(  

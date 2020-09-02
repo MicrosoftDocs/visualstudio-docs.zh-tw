@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5d1b659dabed2337013ffb84ff48277f0edacb09
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283979"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>如何：自訂捲軸
@@ -54,7 +54,7 @@ ms.locfileid: "85283979"
 
 ### <a name="map-mode"></a>地圖模式
 
-*對應模式*會在捲軸上顯示程式碼的行數（以縮為單位）。 您可以在 [原始檔概觀]**** 中選擇值，以變更地圖欄的的寬度。 若要在您將指標停在地圖上時顯示大型程式碼預覽，請選擇 [顯示預覽工具提示]**** 選項。 摺疊的區域會以不同的陰影呈現，並且在您按兩下時展開。
+*地圖模式* 會以縮圖顯示捲軸上的程式程式碼。 您可以在 [原始檔概觀]**** 中選擇值，以變更地圖欄的的寬度。 若要在您將指標停在地圖上時顯示大型程式碼預覽，請選擇 [顯示預覽工具提示]**** 選項。 摺疊的區域會以不同的陰影呈現，並且在您按兩下時展開。
 
 > [!TIP]
 > 若要在地圖模式中關閉縮圖程式碼檢視，您可以將 [原始檔檢視]**** 設定為 [關閉]****。 如果已選取 [顯示預覽工具提示]****，當您將指標暫留在捲軸上時，您仍然會看到該位置的程式碼預覽，且當您按一下時，游標仍然會跳至該位置。
@@ -68,7 +68,7 @@ ms.locfileid: "85283979"
 ![具有工具提示的 Visual Studio 捲軸](../ide/media/enhancedscrollbarsearchtooltip.png)
 
 > [!TIP]
-> 若要變更在地圖模式中看到的色彩，請選擇 [**工具**] [選項] [環境] [字型  >  **Options**  >  **Environment**  >  **和色彩**]。 接下來，在 [**顯示專案**] 中，選擇任何前面加上「總覽」的專案，進行您想要的色彩變更，然後選擇 **[確定]**。
+> 若要變更您在地圖模式中看到的色彩，請選擇 [**工具**  >  **選項**  >  **環境**字型  >  **和色彩**]。 接下來，在 [ **顯示專案**] 中，選擇任何前面加上「總覽」的專案，進行您想要的色彩變更，然後選擇 **[確定]**。
 
 ## <a name="see-also"></a>另請參閱
 

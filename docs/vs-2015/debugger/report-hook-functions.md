@@ -1,5 +1,5 @@
 ---
-title: 報告攔截函式 |Microsoft Docs
+title: 報表攔截函式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0a492a1db8b65cad74d02cec0f43bf0c81461730
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687502"
 ---
 # <a name="report-hook-functions"></a>報告攔截函式
@@ -41,7 +41,7 @@ ms.locfileid: "65687502"
 int YourReportHook(int nRptType, char *szMsg, int *retVal);  
 ```  
   
- 將指標傳遞給 **_CrtSetReportHook**別的 **_CRT_REPORT_HOOK**、 CRTDBG 中所定義。H:  
+ 您傳遞給 **_CrtSetReportHook** 的指標是 **_CRT_REPORT_HOOK**類型，如 crtdbg.h 裡中所定義。H：  
   
 ```  
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);  
@@ -49,8 +49,8 @@ typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
   
  當執行階段程式庫呼叫攔截函式時，*nRptType* 引數包含報告的分類 (**_CRT_WARN**、**_CRT_ERROR** 或 **_CRT_ASSERT**)，*szMsg* 包含完整重組報告訊息字串的指標，而 *retVal* 指定 `_CrtDbgReport` 是否應該在產生報告或啟動偵錯工具繼續照常執行。 (*retVal* 值為零時會繼續執行，值為 1 時會啟動偵錯工具。)  
   
- 如果攔截能完整處理該訊息，而不需要進一步的報告，應該就會傳回 **TRUE**。 如果傳回的是 **FALSE`_CrtDbgReport`，** 會以一般方式報告訊息。  
+ 如果攔截能完整處理該訊息，而不需要進一步的報告，應該就會傳回 **TRUE**。 如果傳回 **FALSE**， `_CrtDbgReport` 就會正常回報訊息。  
   
 ## <a name="see-also"></a>另請參閱  
- [撰寫偵錯攔截函式](../debugger/debug-hook-function-writing.md)   
+ [調試攔截函式寫入](../debugger/debug-hook-function-writing.md)   
  [crt_dbg2 範例](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)

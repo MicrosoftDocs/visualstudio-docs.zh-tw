@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::解析運行時類型 |微軟文件
+title: IDebugBinder：： ResolveRuntimeType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4bdbff651618365f3b68a142a6cb1e76836876a3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735950"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
-此方法確定物件的運行時類型。
+這個方法會判斷物件的執行時間類型。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int ResolveRuntimeType(
 
 ## <a name="parameters"></a>參數
 `pObject`\
-[在]要剖析的[IDebug 物件](../../../extensibility/debugger/reference/idebugobject.md)。
+在要解析的 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 。
 
 `ppResolved`\
-[出]將對象的類型作為[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)返回。
+擴展傳回物件的型別為 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 對象的運行時類型在編譯時並不總是已知的。 例如,使用多態性,可以將參數作為基類傳遞給函數,如按鈕類。 實際參數可能是派生類,如單選按鈕類。
+ 在編譯時間，物件的執行時間類型不一定是已知的。 例如，使用多型，可以將引數傳遞至函式作為其基類，例如按鈕類別。 實際的引數可能是衍生類別，例如選項按鈕類別。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

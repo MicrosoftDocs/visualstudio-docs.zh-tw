@@ -1,5 +1,5 @@
 ---
-title: 建立基本的專案系統，第 2 部分 |Microsoft Docs
+title: 建立基本的專案系統，第2部分 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,42 +13,42 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b6d44e99b584ec347abd407753f965170658969b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685417"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>建立基本的專案系統，第 2 部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在此系列中，第一個逐步解說[建立基本專案系統，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)，示範如何建立基本的專案系統。 本逐步解說建立基本專案系統上加上 Visual Studio 範本、 屬性頁和其他功能。 您必須先完成第一個逐步解說，才能啟動它。  
+本系列的第一個逐步解說 [是建立基本的專案系統，第1部分](../extensibility/creating-a-basic-project-system-part-1.md)會顯示如何建立基本的專案系統。 本逐步解說會透過新增 Visual Studio 範本、屬性頁及其他功能，以基本專案系統為基礎。 您必須先完成第一個逐步解說，然後再開始這一項。  
   
- 本逐步解說將說明如何建立具有專案檔案名稱副檔名.myproj 的專案類型。 若要完成本逐步解說，您不必建立您自己的語言，因為現有的 Visual C# 專案系統會藉助本逐步解說。  
+ 本逐步解說會教您如何建立專案副檔名為 myproj.csproj 的專案類型。 若要完成本逐步解說，您不需要建立自己的語言，因為逐步解說會從現有的 Visual c # 專案系統中借用。  
   
- 本逐步解說將說明如何完成這些工作：  
+ 本逐步解說會教您如何完成這些工作：  
   
 - 建立 Visual Studio 範本。  
   
 - 部署 Visual Studio 範本。  
   
-- 建立中的專案類型子節點**新的專案** 對話方塊。  
+- 在 [ **新增專案** ] 對話方塊中，建立專案類型的子節點。  
   
 - 啟用 Visual Studio 範本中的參數替代。  
   
-- 建立在專案屬性頁。  
+- 建立專案屬性頁。  
   
 > [!NOTE]
-> 在本逐步解說的步驟是以 C# 專案為基礎。 不過，除了例如副檔名的檔案和程式碼的詳細資訊，您可以使用相同的步驟針對 Visual Basic 專案。  
+> 本逐步解說中的步驟是以 c # 專案為基礎。 但是，除了副檔名和程式碼以外，您也可以針對 Visual Basic 專案使用相同的步驟。  
   
 ## <a name="creating-a-visual-studio-template"></a>建立 Visual Studio 範本  
- [建立基本專案系統，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)示範如何建立基本的專案範本，並將它新增至專案系統。 它也會示範如何使用 Visual Studio 中註冊此範本，使用<xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute>屬性系統登錄中寫入 \Templates\Projects\SimpleProject\ 資料夾的完整路徑。  
+ [建立基本的專案系統，第1部分](../extensibility/creating-a-basic-project-system-part-1.md) 顯示如何建立基本專案範本，並將它加入至專案系統。 它也會示範如何使用屬性將此範本註冊 Visual Studio <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> ，這會在系統登錄中寫入 \Templates\Projects\SimpleProject\ 資料夾的完整路徑。  
   
- 藉由使用 Visual Studio 範本 （.vstemplate 檔案），而不基本的專案範本，您可以控制在範本的樣子**新的專案**對話方塊，並會取代範本參數的方式。  .Vstemplate 檔案是 XML 檔案，描述使用專案系統範本建立專案時要包含的原始程式檔的方式。 專案系統本身是所收集的.vstemplate 檔案和原始程式檔中為.zip 檔案，建置和部署.zip 檔案複製到 Visual Studio 已知的位置。 更多詳細資料，在此逐步解說稍後會說明此程序。  
+ 藉由使用 Visual Studio 範本 ( .vstemplate 檔) 而不是基本專案範本，您可以控制範本在 [ **新增專案** ] 對話方塊中的顯示方式，以及如何替代範本參數。  .Vstemplate 檔案是一種 XML 檔案，描述當使用專案系統範本建立專案時，如何包含原始程式檔。 專案系統本身的建立方式，是在 .zip 檔案中收集 .vstemplate 檔案和原始程式檔，然後藉由將 .zip 檔案複製到已知要 Visual Studio 的位置來部署。 本逐步解說稍後會更詳細地說明此程式。  
   
-1. 在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，開啟您依照建立 SimpleProject 方案[建立基本專案系統，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)。  
+1. 在中 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，開啟您建立 [基本專案系統（第1部分）](../extensibility/creating-a-basic-project-system-part-1.md)所建立的 SimpleProject 方案。  
   
-2. 在 SimpleProjectPackage.cs 檔案中，尋找 ProvideProjectFactory 屬性。 取代 null，第二個參數 （專案名稱） 和第四個參數 （專案範本資料夾的路徑） 」。\\\NullPath"、，如下所示。  
+2. 在 SimpleProjectPackage.cs 檔案中，尋找 ProvideProjectFactory 屬性。 以 null 取代 (專案名稱) 的第二個參數，而第四個參數 (專案範本資料夾的路徑，) 為 "。 \\\NullPath "，如下所示。  
   
    ```  
    [ProvideProjectFactory(typeof(SimpleProjectFactory), null,  
@@ -57,9 +57,9 @@ ms.locfileid: "65685417"
    LanguageVsTemplate = "SimpleProject")]  
    ```  
   
-3. 加入名為 SimpleProject.vstemplate \Templates\Projects\SimpleProject\ 資料夾的 XML 檔。  
+3. 將名為 SimpleProject 的 XML 檔案加入至 \Templates\Projects\SimpleProject\ 資料夾。  
   
-4. SimpleProject.vstemplate 的內容取代為下列程式碼。  
+4. 以下列程式碼取代 SimpleProject 的內容。  
   
    ```xml  
    <VSTemplate Version="2.0.0" Type="Project"  
@@ -85,44 +85,44 @@ ms.locfileid: "65685417"
    </VSTemplate>  
    ```  
   
-5. 在 **屬性**視窗中，選取所有五個檔案中的 \Templates\Projects\SimpleProject\ 資料夾和組**建置動作**來**ZipProject**。  
+5. 在 [ **屬性** ] 視窗中，選取 [\Templates\Projects\SimpleProject\] 資料夾中的五個檔案，然後將 [ **組建] 動作** 設定為 [ **ZipProject**]。  
   
    ![](../extensibility/media/simpproj2.png "SimpProj2")  
   
-   \<TemplateData > 區段決定的位置和 SimpleProject 專案類型中的外觀**新的專案**對話方塊，如下所示：  
+   \<TemplateData>區段會在 [**新增專案**] 對話方塊中決定 SimpleProject 專案類型的位置和外觀，如下所示：  
   
-- \<名稱 > 項目名稱是 SimpleProject 應用程式的專案範本。  
+- \<Name>元素會將專案範本命名為 SimpleProject 應用程式。  
   
-- \<描述 > 項目包含會出現在描述**新的專案**對話方塊中，選取 [專案] 範本時。  
+- \<Description>專案包含選取專案範本時，出現在 [**新增專案**] 對話方塊中的描述。  
   
-- \<圖示 > 項目會指定所顯示 SimpleProject 專案類型的圖示。  
+- \<Icon>元素指定與 SimpleProject 專案類型一起出現的圖示。  
   
-- \<ProjectType > 項目名稱中的專案類型**新的專案** 對話方塊。 此名稱將專案名稱的參數取代 ProvideProjectFactory 屬性。  
+- \<ProjectType>元素會在 [**新增專案**] 對話方塊中命名專案類型。 這個名稱會取代 ProvideProjectFactory 屬性的專案名稱參數。  
   
   > [!NOTE]
-  > \<ProjectType > 項目必須符合`LanguageVsTemplate`引數`ProvideProjectFactory`SimpleProjectPackage.cs 檔案中的屬性。  
+  > \<ProjectType>元素必須符合 SimpleProjectPackage.cs 檔 `LanguageVsTemplate` 中屬性的引數 `ProvideProjectFactory` 。  
   
-  \<TemplateContent > 一節將說明這些新的專案建立時產生的檔案：  
+  \<TemplateContent>本節說明在建立新專案時所產生的這些檔案：  
   
-- SimpleProject.myproj  
+- SimpleProject. myproj.csproj  
   
 - Program.cs  
   
 - AssemblyInfo.cs  
   
-  這三個檔案有`ReplaceParameters`設為 true，可讓參數替代。  Program.cs 檔案中有`OpenInEditor`設為 true，這會導致要建立專案時，程式碼編輯器中開啟的檔案。  
+  這三個檔案都已 `ReplaceParameters` 設為 true，以啟用參數替代。  Program.cs 檔案已 `OpenInEditor` 設定為 true，這會在建立專案時，在程式碼編輯器中開啟檔案。  
   
-  如需 Visual Studio 範本結構描述中元素的詳細資訊，請參閱[Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)。  
+  如需 Visual Studio 範本架構中專案的詳細資訊，請參閱 [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)。  
   
 > [!NOTE]
-> 如果專案具有一個以上的 Visual Studio 範本，每個範本是在不同的資料夾。 在該資料夾中的每個檔案必須有**建置動作**設為**ZipProject**。  
+> 如果專案有一個以上的 Visual Studio 範本，每個範本都位於不同的資料夾中。 該資料夾中的每個檔案都必須將 **組建動作** 設為 **ZipProject**。  
   
-## <a name="adding-a-minimal-vsct-file"></a>將最小.vsct 檔案  
- Visual Studio 必須以辨識新的或修改 Visual Studio 範本的安裝模式執行。 安裝模式需要.vsct 檔必須存在。 因此，您必須將最小.vsct 檔加入專案。  
+## <a name="adding-a-minimal-vsct-file"></a>新增 .vsct 檔案  
+ Visual Studio 必須在安裝模式中執行，才能辨識新的或修改過的 Visual Studio 範本。 安裝模式需要有 .vsct 檔。 因此，您必須將 .vsct 檔案新增至專案。  
   
-1. 加入名為 SimpleProject.vsct SimpleProject 專案的 XML 檔。  
+1. 將名為 SimpleProject 的 XML 檔案加入至 SimpleProject 專案。  
   
-2. SimpleProject.vsct 檔案的內容取代為下列程式碼。  
+2. 以下列程式碼取代 SimpleProject. .vsct 檔案的內容。  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -131,38 +131,38 @@ ms.locfileid: "65685417"
     </CommandTable>  
     ```  
   
-3. 設定**建置動作**的這個檔案來**VSCTCompile**。 您可以只在.csproj 檔案中，無法顯示於**屬性**視窗。 請確定**建置動作**這個檔案設定為**無**此時。  
+3. 將此檔案的 [ **組建] 動作** 設定為 [ **VSCTCompile**]。 您只能在 .csproj 檔案中，而不是在 [ **屬性** ] 視窗中進行這項作業。 請確定此檔案的 [ **建立] 動作** 在此時設定為 [ **無** ]。  
   
-    1. 以滑鼠右鍵按一下 [SimpleProject] 節點，然後按一下**編輯 SimpleProject.csproj**。  
+    1. 在 [SimpleProject] 節點上按一下滑鼠右鍵，然後按一下 [ **編輯 SimpleProject**]。  
   
-    2. 在.csproj 檔案中，找出 SimpleProject.vsct 項目。  
+    2. 在 .csproj 檔案中，找出 SimpleProject .vsct 專案。  
   
         ```  
         <None Include="SimpleProject.vsct" />  
         ```  
   
-    3. 變更 建置動作設為**VSCTCompile**。  
+    3. 將 [組建] 動作變更為 **VSCTCompile**。  
   
         ```  
         <VSCTCompile Include="SimpleProject.vsct" />  
         ```  
   
-    4. 專案檔案並關閉編輯器。  
+    4. 專案檔，然後關閉編輯器。  
   
-    5. 儲存 SimpleProject] 節點，然後在**方案總管**按一下 [**重新載入專案**。  
+    5. 儲存 [SimpleProject] 節點，然後在 **方案總管** 按一下 [ **重載專案**]。  
   
-## <a name="examining-the-visual-studio-template-build-steps"></a>檢查 Visual Studio 範本建置步驟  
- .Vstemplate 檔案已變更，或重建包含.vstemplate 檔案的專案時，VSPackage 專案建置系統會將 Visual Studio 通常執行安裝模式。 您可以照著藉由設定 MSBuild 的詳細資訊層級設為 Normal 或更高版本。  
+## <a name="examining-the-visual-studio-template-build-steps"></a>檢查 Visual Studio 範本的組建步驟  
+ 當 .vstemplate 檔案變更或重建包含 .vstemplate 檔案的專案時，VSPackage 專案組建系統通常會在安裝程式模式中執行 Visual Studio。 您可以將 MSBuild 的詳細資訊層級設定為 Normal 或更高的版本。  
   
-1. 在 [ **工具** ] 功能表上按一下 [ **選項**]。  
+1. 在 **[工具]** 功能表上，按一下 **[選項]** 。  
   
-2. 依序展開**專案和方案**節點，，然後選取**建置並執行**。  
+2. 展開 [ **專案和方案** ] 節點，然後選取 [ **建立並執行**]。  
   
-3. 設定**MSBuild 專案建置輸出詳細等級**要**Normal**。 按一下 [確定]  。  
+3. 將 **MSBuild 專案組建輸出詳細** 資訊設定為 [ **一般**]。 按一下 [確定]  。  
   
 4. 重建 SimpleProject 專案。  
   
-   組建步驟來建立.zip 專案檔看起來應該像下列的範例。  
+   建立 .zip 專案檔的組建步驟應該類似于下列範例。  
   
 ```  
 ZipProjects:  
@@ -177,55 +177,55 @@ ZipProjects:
 ```  
   
 ## <a name="deploying-a-visual-studio-template"></a>部署 Visual Studio 範本  
- Visual Studio 範本不包含路徑資訊。 因此，範本.zip 檔案必須部署到 Visual Studio 已知的位置。 ProjectTemplates 資料夾的位置通常是 **\<%LOCALAPPDATA%> \Microsoft\VisualStudio\14.0Exp\ProjectTemplates**。  
+ Visual Studio 範本不包含路徑資訊。 因此，必須將範本 .zip 檔案部署至已知 Visual Studio 的位置。 >\templates\projecttemplates\csharp\helloworld\ 資料夾的位置通常是** \<%LOCALAPPDATA%> \Microsoft\VisualStudio\14.0Exp\ProjectTemplates**。  
   
- 若要部署您的專案 factory，安裝程式必須具有系統管理員權限。 它會部署在 Visual Studio 的 [安裝] 節點下的範本： **...\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates**。  
+ 若要部署您的 project factory，安裝程式必須具有系統管理員許可權。 它會在 Visual Studio 安裝節點下部署範本： **. ..\Microsoft Visual Studio 14.0 \ Common7\IDE\ProjectTemplates**。  
   
 ## <a name="testing-a-visual-studio-template"></a>測試 Visual Studio 範本  
- 測試您的專案處理站，以查看是否使用 Visual Studio 範本建立專案階層架構。  
+ 測試您的 project factory，以查看它是否使用 Visual Studio 範本建立專案階層。  
   
-1. 重設 Visual Studio SDK experimental 執行個體。  
+1. 重設 Visual Studio SDK 實驗實例。  
   
-    在 [!INCLUDE[win7](../includes/win7-md.md)]:在 [開始] 功能表中，尋找**Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools**資料夾，然後再選取**重設 Microsoft Visual Studio 實驗執行個體**。  
+    在上 [!INCLUDE[win7](../includes/win7-md.md)] ：在 [[開始] 功能表上，尋找 [ **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** ] 資料夾，然後選取 **[重設 Microsoft Visual Studio 實驗實例**]。  
   
-    在較新版 Windows 的詳細資訊：在 [開始] 畫面上輸入**重設 Microsoft Visual Studio\<版本 > 實驗性執行個體**。  
+    在更新版本的 Windows 上：在開始畫面上，輸入 **重設 Microsoft Visual Studio \<version> 實驗實例**。  
   
-2. 命令提示字元 視窗隨即出現。 您會看到字樣`Press any key to continue`，按 enter 鍵。 在視窗關閉後，開啟 Visual Studio。  
+2. [命令提示字元] 視窗隨即出現。 當您看到這些字詞時 `Press any key to continue` ，請按一下 ENTER。 視窗關閉之後，開啟 Visual Studio。  
   
-3. 重建 SimpleProject 專案並開始偵錯。 實驗執行個體隨即出現。  
+3. 重建 SimpleProject 專案並開始進行調試。 實驗實例隨即出現。  
   
-4. 在實驗執行個體中，建立 SimpleProject 專案。 在 **新的專案**對話方塊中，選取**SimpleProject**。  
+4. 在實驗實例中，建立 SimpleProject 專案。 在 [ **新增專案** ] 對話方塊中，選取 [ **SimpleProject**]。  
   
-5. 您應該會看到 SimpleProject 的新執行個體。  
+5. 您應該會看到 SimpleProject 的新實例。  
   
    ![](../extensibility/media/simpproj2-newproj.png "SimpProj2_NewProj")  
   
    ![](../extensibility/media/simpproj2-myproj.png "SimpProj2_MyProj")  
   
 ## <a name="creating-a-project-type-child-node"></a>建立專案類型的子節點  
- 您可以將子節點新增至中的專案類型節點**新的專案** 對話方塊。  比方說，SimpleProject 專案類型中，您可能有子節點的主控台應用程式視窗的應用程式、 web 應用程式等等。  
+ 您可以在 [ **新增專案** ] 對話方塊中，將子節點加入至 [專案類型] 節點。  例如，針對 SimpleProject 專案類型，您可能會有適用于主控台應用程式、視窗應用程式、web 應用程式等的子節點。  
   
- 子節點藉由變更專案檔，並新增\<OutputSubPath > 子系\<ZipProject > 項目。 複製範本時，建置或部署期間，每個子節點會成為專案範本資料夾的子資料夾。  
+ 藉由改變專案檔並將子系加入至專案，即可建立子節點 \<OutputSubPath> \<ZipProject> 。 在組建或部署期間複製範本時，每個子節點都會變成 [專案範本] 資料夾的子資料夾。  
   
- 本節說明如何建立主控台 SimpleProject 專案類型的子節點。  
+ 本節說明如何建立 SimpleProject 專案類型的主控台子節點。  
   
-1. 將 \Templates\Projects\SimpleProject\ 資料夾重新命名 \Templates\Projects\ConsoleApp\\。  
+1. 將 \Templates\Projects\SimpleProject\ 資料夾重新命名為 \Templates\Projects\ConsoleApp \\ 。  
   
-2. 在 [**屬性**] 視窗中，選取 \Templates\Projects\ConsoleApp\ 資料夾中的所有五個檔案，並確定**建置動作**設定為**ZipProject**。  
+2. 在 [ **屬性** ] 視窗中，選取 [\Templates\Projects\ConsoleApp\] 資料夾中的五個檔案，並確定 [ **組建] 動作** 設定為 [ **ZipProject**]。  
   
-3. 在 SimpleProject.vstemplate 檔案中加入下面這一行的結尾\<TemplateData > 區段中的，將結尾標記之前。  
+3. 在 SimpleProject .vstemplate 檔案中，于區段的結尾處加入下列 \<TemplateData> 這一行，緊接在結束記號之前。  
   
     ```  
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>  
     ```  
   
-     這會導致出現在 [主控台] 子節點和 SimpleProject 父節點，也就是子節點上的一層中的主控台應用程式範本。  
+     這會導致主控台應用程式範本同時出現在主控台子節點和 SimpleProject 父節點中，這是子節點上方的一層。  
   
-4. 儲存 SimpleProject.vstemplate 檔案。  
+4. 儲存 SimpleProject .vstemplate 檔案。  
   
-5. 在.csproj 檔案中，新增\<OutputSubPath > 每個 ZipProject 項目。 卸載專案，與之前，並編輯專案檔。  
+5. 在 .csproj 檔案中，加入 \<OutputSubPath> 每個 ZipProject 元素。 如同之前一樣卸載專案，然後編輯專案檔。  
   
-6. 找出\<ZipProject > 項目。 每個\<ZipProject > 項目，新增\<OutputSubPath > 項目並為它提供主控台的值。 ZipProject  
+6. 尋找 \<ZipProject> 元素。 在每個專案 \<ZipProject> 中加入專案， \<OutputSubPath> 並為它提供值主控台。 ZipProject  
   
     ```  
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">  
@@ -245,7 +245,7 @@ ZipProjects:
         </ZipProject>  
     ```  
   
-7. 將此新增\<PropertyGroup > 專案檔：  
+7. 將此 \<PropertyGroup> 專案新增至專案檔：  
   
     ```  
     <PropertyGroup>  
@@ -253,47 +253,47 @@ ZipProjects:
     </PropertyGroup>  
     ```  
   
-8. 儲存專案檔，並重新載入專案。  
+8. 儲存專案檔案，然後重載專案。  
   
 ## <a name="testing-the-project-type-child-node"></a>測試專案類型的子節點  
- 測試修改過的專案檔案，以查看是否**主控台**子節點會出現在**新的專案** 對話方塊。  
+ 測試已修改的專案檔，以查看 **主控台** 子節點是否出現在 [ **新增專案** ] 對話方塊中。  
   
-1. 執行**重設 Microsoft Visual Studio 實驗執行個體**工具。  
+1. 執行 [ **重設 Microsoft Visual Studio 實驗實例** ] 工具。  
   
-2. 重建 SimpleProject 專案並開始偵錯。 實驗執行個體應該會出現  
+2. 重建 SimpleProject 專案並開始進行調試。 實驗實例應會出現  
   
-3. 在 [**新的專案**] 對話方塊中，按一下**SimpleProject**節點。 **主控台應用程式**範本應該會出現在**範本**窗格。  
+3. 在 [ **新增專案** ] 對話方塊中，按一下 [ **SimpleProject** ] 節點。 **主控台應用程式**範本應該會出現在 [**範本**] 窗格中。  
   
-4. 依序展開**SimpleProject**節點。 **主控台**子節點應該會出現。 **SimpleProject 應用程式**範本仍會出現在**範本**窗格。  
+4. 展開 [ **SimpleProject** ] 節點。 **主控台**子節點應會出現。 **SimpleProject 應用程式**範本會繼續出現在 [**範本**] 窗格中。  
   
-5. 。 按一下 **取消**並停止偵錯  
+5. . 按一下 [ **取消** ] 和 [停止調試]  
   
    ![](../extensibility/media/simpproj2-rollup.png "SimpProj2_Rollup")  
   
    ![](../extensibility/media/simpproj2-subfolder.png "SimpProj2_Subfolder")  
   
-## <a name="substituting-project-template-parameters"></a>取代的專案範本參數  
- [建立基本專案系統，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)示範如何覆寫`ProjectNode.AddFileFromTemplate`方法來執行基本的一種範本參數替代。 本章節將說明如何使用更複雜的 Visual Studio 範本參數。  
+## <a name="substituting-project-template-parameters"></a>替代專案範本參數  
+ [建立基本的專案系統，第1部分](../extensibility/creating-a-basic-project-system-part-1.md) 示範如何覆寫 `ProjectNode.AddFileFromTemplate` 方法，以進行基本的樣板參數替代。 本節說明如何使用更精密的 Visual Studio 範本參數。  
   
- 當您使用 Visual Studio 範本中的，會在建立專案時**新的專案** 對話方塊中，若要自訂專案範本會以取代參數字串。 樣板參數是一種特殊的權杖，開頭和結尾貨幣符號，例如 $time$。 下列兩個參數是啟用自訂範本為基礎的專案中特別有用：  
+ 當您使用 [ **新增專案** ] 對話方塊中的 Visual Studio 範本建立專案時，會以自訂專案的字串取代範本參數。 範本參數是以貨幣符號開頭和結尾的特殊權杖，例如 $time $。 下列兩個參數特別適用于在以範本為基礎的專案中啟用自訂：  
   
-- 新的 Guid 取代 $GUID [1-10] $。 您可以指定最多 10 個唯一的 Guid，例如 $guid1$。  
+- $GUID [1-10] $ 取代為新的 Guid。 您最多可以指定10個唯一的 Guid，例如 $guid $1。  
   
-- $safeprojectname$ 是中的使用者所提供的名稱**新的專案**對話方塊中，修改以移除所有 unsafe 字元和空格。  
+- $safeprojectname $ 是使用者在 [ **新增專案** ] 對話方塊中提供的名稱，修改為移除所有不安全的字元和空格。  
   
-  如需完整的範本參數清單，請參閱[範本參數](../ide/template-parameters.md)。  如果您想要建立您自己的自訂範本參數，請參閱[NIB:作法：將自訂參數傳遞至範本](https://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb)。  
+  如需完整的範本參數清單，請參閱 [範本參數](../ide/template-parameters.md)。  如果您想要建立自己的自訂範本參數，請參閱「 [筆尖：如何：將自訂參數傳遞至範本](https://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb)」。  
   
-#### <a name="to-substitute-project-template-parameters"></a>若要替代專案範本的參數  
+#### <a name="to-substitute-project-template-parameters"></a>替代專案範本參數  
   
-1. 在 SimpleProjectNode.cs 檔案中，移除`AddFileFromTemplate`方法。  
+1. 在 SimpleProjectNode.cs 檔案中，移除 `AddFileFromTemplate` 方法。  
   
-2. 在 \Templates\Projects\ConsoleApp\SimpleProject.myproj 檔案中，找出\<RootNamespace > 屬性並將其值變更為 $safeprojectname$。  
+2. 在 \Templates\Projects\ConsoleApp\SimpleProject.myproj 檔案中，找出 \<RootNamespace> 屬性，並將其值變更為 $safeprojectname $。  
   
     ```  
     <RootNamespace>$safeprojectname$</RootNamespace>  
     ```  
   
-3. 在 \Templates\Projects\SimpleProject\Program.cs 檔案中，取代下列程式碼檔案的內容：  
+3. 在 \Templates\Projects\SimpleProject\Program.cs 檔案中，以下列程式碼取代檔案的內容：  
   
     ```  
     using System;  
@@ -315,11 +315,11 @@ ZipProjects:
     }  
     ```  
   
-4. 重建 SimpleProject 專案並開始偵錯。 實驗執行個體應該會出現。  
+4. 重建 SimpleProject 專案並開始進行調試。 實驗實例應會出現。  
   
-5. 建立新的 SimpleProject 主控台應用程式。 (在**專案類型**窗格中，選取**SimpleProject**。 底下**Visual Studio 安裝的範本**，選取**主控台應用程式**。)  
+5. 建立新的 SimpleProject 主控台應用程式。  (在 [ **專案類型** ] 窗格中，選取 [ **SimpleProject**]。 在 [ **Visual Studio 安裝的範本**] 下，選取 [ **主控台應用程式**]。 )   
   
-6. 在新建的專案中，開啟 Program.cs。 看起來應該如下所示 （在檔案中的 GUID 值會不同）。:  
+6. 在新建立的專案中，開啟 Program.cs。 您的檔案看起來應該會像下面這樣 (GUID 值將有所不同。 ) ：  
   
     ```  
     using System;  
@@ -341,29 +341,29 @@ ZipProjects:
     }  
     ```  
   
-## <a name="creating-a-project-property-page"></a>建立在專案屬性頁  
- 讓使用者可以檢視和變更您的範本為基礎的專案中的屬性時，您便可以建立您的專案類型的屬性頁。 本節將說明如何建立獨立設定的屬性頁。 這個基本的屬性頁會使用 [屬性] 方格來顯示屬性頁類別中公開 （expose） 的公用屬性。  
+## <a name="creating-a-project-property-page"></a>建立專案屬性頁  
+ 您可以建立專案類型的屬性頁，讓使用者可以根據您的範本，來查看和變更專案中的屬性。 本節說明如何建立與設定無關的屬性頁面。 這個基本屬性頁面會使用屬性方格來顯示您在屬性頁類別中公開的公用屬性。  
   
- 衍生您的屬性頁面類別，從`SettingsPage`基底類別。 所提供的 [屬性] 方格`SettingsPage`類別是留意最基本的資料型別，而且知道如何顯示它們。  颾魤 ㄛ`SettingsPage`類別知道如何保存至專案檔的屬性值。  
+ 從基類衍生您的屬性頁類別 `SettingsPage` 。 類別所提供的屬性方格 `SettingsPage` 可感知最基本的資料類型，並知道如何顯示它們。  此外，此 `SettingsPage` 類別也知道如何將屬性值保存到專案檔。  
   
- 您在這一節中建立屬性頁可讓您變更並儲存這些專案屬性：  
+ 您在此區段中建立的屬性頁面可讓您變更和儲存這些專案屬性：  
   
 - AssemblyName  
   
 - OutputType  
   
-- RootNamespace。  
+- RootNamespace.  
   
-1. 在 SimpleProjectPackage.cs 檔案中，新增這`ProvideObject`屬性設定為`SimpleProjectPackage`類別：  
+1. 在 SimpleProjectPackage.cs 檔案中，將下列 `ProvideObject` 屬性新增至 `SimpleProjectPackage` 類別：  
   
    ```  
    [ProvideObject(typeof(GeneralPropertyPage))]  
    public sealed class SimpleProjectPackage : ProjectPackage  
    ```  
   
-    這會註冊屬性頁類別`GeneralPropertyPage`com。  
+    這會向 COM 註冊屬性頁面類別 `GeneralPropertyPage` 。  
   
-2. 在 SimpleProjectNode.cs 檔案中，新增至這兩個覆寫的方法`SimpleProjectNode`類別：  
+2. 在 SimpleProjectNode.cs 檔案中，將這兩個覆寫的方法新增至 `SimpleProjectNode` 類別：  
   
    ```  
    protected override Guid[] GetConfigurationIndependentPropertyPages()  
@@ -380,9 +380,9 @@ ZipProjects:
    }  
    ```  
   
-    這兩種方法會傳回屬性頁 Guid 的陣列。  GeneralPropertyPage GUID 是唯一的項目，在陣列中，因此**屬性頁**對話方塊將會顯示只有一頁。  
+    這兩種方法都會傳回屬性頁 Guid 的陣列。  GeneralPropertyPage GUID 是陣列中唯一的元素，因此 [ **屬性頁** ] 對話方塊只會顯示一個頁面。  
   
-3. 新增名為 GeneralPropertyPage.cs SimpleProject 專案的類別檔案。  
+3. 將名為 GeneralPropertyPage.cs 的類別檔案新增至 SimpleProject 專案。  
   
 4. 使用下列程式碼取代此檔案的內容：  
   
@@ -461,36 +461,36 @@ ZipProjects:
    }  
    ```  
   
-    `GeneralPropertyPage`類別會公開三個公用屬性組件名稱、 OutputType 和 RootNamespace。 因為組件名稱不具 set 方法，它會顯示為唯讀屬性。 OutputType 是列舉的常數，因此它會顯示為下拉式清單中。  
+    `GeneralPropertyPage`類別會公開三個公用屬性 AssemblyName、OutputType 和 RootNamespace。 因為 AssemblyName 沒有 set 方法，所以會顯示為唯讀屬性。 OutputType 是列舉的常數，因此它會顯示為下拉式清單。  
   
-    `SettingsPage`基底類別提供`ProjectMgr`保存的屬性。 `BindProperties`方法會使用`ProjectMgr`擷取保存的屬性值，並設定對應的屬性。  `ApplyChanges`方法會使用`ProjectMgr`取得屬性的值，並將其保存至專案檔。 設定屬性的方法會設定`IsDirty`表示的屬性具有保存為 true。  當您儲存的專案或方案時，就會發生持續性。  
+    `SettingsPage`基類會提供 `ProjectMgr` 以保存屬性。 `BindProperties`方法會使用 `ProjectMgr` 來取出保存的屬性值，並設定對應的屬性。  `ApplyChanges`方法會使用 `ProjectMgr` 來取得屬性的值，並將其保存在專案檔中。 屬性集方法會將設定 `IsDirty` 為 true，以指出必須保存屬性。  當您儲存專案或方案時，會發生持續性。  
   
-5. 重建 SimpleProject 方案並開始偵錯。 實驗執行個體應該會出現。  
+5. 重建 SimpleProject 方案並開始進行調試。 實驗實例應會出現。  
   
-6. 在實驗執行個體中，建立新的 SimpleProject 應用程式。  
+6. 在實驗實例中，建立新的 SimpleProject 應用程式。  
   
-7. Visual Studio 會呼叫您專案的處理站使用 Visual Studio 範本建立專案。 程式碼編輯器中開啟新的 Program.cs 檔案。  
+7. Visual Studio 會呼叫您的 project factory，以使用 Visual Studio 範本建立專案。 新的 Program.cs 檔案會在程式碼編輯器中開啟。  
   
-8. 以滑鼠右鍵按一下專案節點，在**方案總管**，然後按一下**屬性**。 [屬性頁]  對話方塊隨即出現。  
+8. 在 **方案總管**的專案節點上按一下滑鼠右鍵，然後按一下 [ **屬性**]。 [屬性頁面]**** 對話方塊隨即出現。  
   
    ![](../extensibility/media/simpproj2-proppage.png "SimpProj2_PropPage")  
   
-## <a name="testing-the-project-property-page"></a>測試專案屬性頁面  
- 現在您可以測試是否可以修改，並變更屬性值。  
+## <a name="testing-the-project-property-page"></a>測試專案屬性頁  
+ 現在您可以測試是否可以修改及變更屬性值。  
   
-1. 在 [ **MyConsoleApplication 屬性頁**] 對話方塊中，變更**DefaultNamespace**來**MyApplication**。  
+1. 在 [ **MyConsoleApplication 屬性頁** ] 對話方塊中，將 **DefaultNamespace** 變更為 **MyApplication**。  
   
-2. 選取  **OutputType**屬性，，然後選取**類別庫**。  
+2. 選取 [ **OutputType** ] 屬性，然後選取 [ **類別庫**]。  
   
-3. 按一下 **套用**，然後按一下**確定**。  
+3. 按一下 [套用]****，然後按一下 [確定]****。  
   
-4. 重新開啟**屬性頁**對話方塊方塊中，並確認您的變更已保存。  
+4. 重新開啟 [ **屬性頁** ] 對話方塊，並確認已保存您的變更。  
   
 5. 關閉 Visual Studio 的實驗執行個體。  
   
-6. 重新開啟實驗的執行個體。  
+6. 重新開啟實驗實例。  
   
-7. 重新開啟**屬性頁**對話方塊方塊中，並確認您的變更已保存。  
+7. 重新開啟 [ **屬性頁** ] 對話方塊，並確認已保存您的變更。  
   
 8. 關閉 Visual Studio 的實驗執行個體。  
   

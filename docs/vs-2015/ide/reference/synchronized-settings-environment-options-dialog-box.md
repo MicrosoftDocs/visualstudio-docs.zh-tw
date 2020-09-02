@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2bb2f163855196a0580cd1d5a8ddc33b16cbd8f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651015"
 ---
 # <a name="synchronized-settings-environment-options-dialog-box"></a>選項對話方塊、環境、同步設定
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-您可以使用這個頁面，指定是否要在多部電腦之間同步 (漫遊) 您的設定。 如需詳細資訊，請參閱[同步設定](../../ide/synchronized-settings-in-visual-studio.md)。
+您可以使用這個頁面，指定是否要在多部電腦之間同步 (漫遊) 您的設定。 如需詳細資訊，請參閱 [同步處理設定](../../ide/synchronized-settings-in-visual-studio.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)

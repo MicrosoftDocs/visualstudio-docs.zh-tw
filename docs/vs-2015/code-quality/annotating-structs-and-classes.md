@@ -25,10 +25,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 6db2202971facb0419db68c04835c8d5c848f528
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77271578"
 ---
 # <a name="annotating-structs-and-classes"></a>註釋結構和類別
@@ -40,13 +40,13 @@ ms.locfileid: "77271578"
   
 - `_Field_range_(low, high)`  
   
-     欄位位於 `low` 到 `high`的範圍內（含）。  相當於使用適當的前置或後置條件套用至已標註物件的 `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`。  
+     欄位位於 (內含) 的範圍 `low` `high` 。  相當於使用適當的前置或後置條件套用至已標註物件的 `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`。  
   
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`  
   
      欄位，其可寫入的大小是由 `size` 以項目 (或位元組) 為單位指定。  
   
-- `_Field_size_part_(size, count)`、`_Field_size_part_opt_(size, count)`、`_Field_size_bytes_part_(size, count)`、`_Field_size_bytes_part_opt_(size, count)`  
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
   
      欄位，其可寫入的大小是由 `size` 以項目 (或位元組) 為單位指定，而且可以讀取這些項目 (位元組) 的 `count`。  
   
@@ -70,18 +70,18 @@ ms.locfileid: "77271578"
   
     ```  
   
-     `MyStruct *` 類型的參數 `pM` 的緩衝區大小（以位元組為單位），則會被視為：  
+     然後，會將類型參數的緩衝區大小（以位元組為單位）視為 `pM` `MyStruct *` ：  
   
     ```cpp  
     min(pM->nSize, sizeof(MyStruct))  
     ```  
   
 ## <a name="see-also"></a>另請參閱  
- [使用 SAL 注釋減少 C/C++程式碼](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)缺失   
+ [使用 SAL 注釋減少 C/c + + 程式碼瑕疵](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [瞭解 SAL](../code-quality/understanding-sal.md)   
  [標注函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   
- [批註](../code-quality/annotating-function-behavior.md)函式行為   
+ [標注函式行為](../code-quality/annotating-function-behavior.md)   
  [標注鎖定行為](../code-quality/annotating-locking-behavior.md)   
- [指定批註套用的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+ [指定套用注釋的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [內建函式](../code-quality/intrinsic-functions.md)   
  [最佳做法和範例](../code-quality/best-practices-and-examples-sal.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5986576fdf668aba952609dbf241e31d4b3dbf3d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283966"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>如何：指定建置事件 (Visual Basic)
@@ -44,14 +44,14 @@ ms.locfileid: "85283966"
 4. 輸入建置前或建置後動作的命令列引數，然後按一下 [確定]****。
 
     > [!NOTE]
-    > `call`在執行 *.bat*檔案的所有後置組建命令前面加入語句。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。
+    > `call`在所有執行 *.bat*檔案的建立後命令之前加入語句。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。
 
     > [!NOTE]
     > 如果您的建置前或建置後事件未順利完成，您可以將代碼不為零 (0) 的事件動作結束 (若為 0 表示動作成功)，以終止建置。
 
 ## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>範例：如何使用建置後事件變更資訊清單
 
-下列程式說明如何使用從建立後事件（專案目錄中的 *.exe*檔案）呼叫的 *.exe*命令，在應用程式資訊清單中設定最低的作業系統版本。 最低作業系統版本是由四組號碼來表示，例如 4.10.0.0。 若要進行上述作業，請使用命令來變更資訊清單的 `<dependentOS>` 區段：
+下列程式顯示如何在應用程式資訊清單中設定最低作業系統版本，方法是在專案目錄) 中，使用從建立後事件呼叫的 *.exe*命令* (。* 最低作業系統版本是由四組號碼來表示，例如 4.10.0.0。 若要進行上述作業，請使用命令來變更資訊清單的 `<dependentOS>` 區段：
 
 ```xml
 <dependentOS>
@@ -63,11 +63,11 @@ ms.locfileid: "85283966"
 
 ### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>建立 .exe 命令以變更應用程式資訊清單
 
-1. 建立命令的主控台應用程式。 **在 [檔案**] 功能表上，按一下 [**新增**]，然後按一下 [**專案**]。
+1. 建立命令的主控台應用程式。 **在 [檔案**] 功能表中，按一下 [**新增**]，然後按一下 [**專案**]。
 
 2. 在 [新增專案]**** 對話方塊的 [Visual Basic]**** 節點中，依序選取 [Windows]**** 和 [主控台應用程式]**** 範本。 將專案命名為 `ChangeOSVersionVB`。
 
-3. 在 [ *Module1*] 中，將下列這一行新增至檔案頂端的其他 `Imports` 語句：
+3. 在 [在] *中，將*下列這一行新增至檔案頂端的其他 `Imports` 語句：
 
    ```vb
    Imports System.Xml
@@ -116,9 +116,9 @@ ms.locfileid: "85283966"
    End Sub
    ```
 
-   此命令會採用兩個引數。 第一個引數是應用程式資訊清單的路徑（也就是組建進程建立資訊清單的資料夾，通常是* \<ProjectName> publish*）。 第二個引數是新的作業系統版本。
+   此命令會採用兩個引數。 第一個引數是應用程式資訊清單的路徑 (也就是組建程式建立資訊清單的資料夾，通常是* \<ProjectName> 發佈*) 。 第二個引數是新的作業系統版本。
 
-5. 在 [建置]**** 功能表上，按一下 [建置方案]****。
+5. 在 [建置] 功能表上，按一下 [建置方案]。
 
 6. 複製 *.exe* 檔案到例如 *C:\TEMP\ChangeOSVersionVB.exe* 的目錄。
 
@@ -126,7 +126,7 @@ ms.locfileid: "85283966"
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>叫用建置後事件，以變更應用程式資訊清單
 
-1. 針對要發行的專案，建立 Windows 應用程式。 **在 [檔案**] 功能表上，按一下 [**新增**]，然後按一下 [**專案**]。
+1. 針對要發行的專案，建立 Windows 應用程式。 **在 [檔案**] 功能表中，按一下 [**新增**]，然後按一下 [**專案**]。
 
 2. 在 [新增專案]**** 對話方塊的 [Visual Basic]**** 節點中，依序選取 [Windows 桌面]**** 和 [Windows Forms 應用程式]**** 範本。 將專案命名為 `VBWinApp`。
 3. 選取方案總管**** 中的專案，然後按一下 [專案]**** 功能表中的 [屬性]****。
@@ -165,7 +165,7 @@ ms.locfileid: "85283966"
 
 ## <a name="see-also"></a>另請參閱
 
-- [專案設計工具、編譯頁（Visual Basic）](../ide/reference/compile-page-project-designer-visual-basic.md)
+- [編譯頁面、專案設計工具 (Visual Basic) ](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [專案設計工具、發行頁](../ide/reference/publish-page-project-designer.md)
-- [預先建立事件/建立後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
+- [預先建立事件/後置事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [如何：指定建置事件 (C#)](../ide/how-to-specify-build-events-csharp.md)

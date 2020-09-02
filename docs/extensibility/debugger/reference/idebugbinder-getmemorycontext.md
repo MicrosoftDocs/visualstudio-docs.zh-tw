@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder:獲取記憶體上下文 |微軟文件
+title: IDebugBinder：： GetMemoryCoNtext |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8d50126e26b836f7b53ee1abeb5c4988b74a2eed
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735989"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
-此方法將物件位置或記憶體位址轉換為記憶體上下文。
+這個方法會將物件位置或記憶體位址轉換成記憶體內容。
 
 ## <a name="syntax"></a>語法
 
@@ -45,16 +45,16 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>參數
 `pField`\
-[在]描述要定位的物件的[IDebugField。](../../../extensibility/debugger/reference/idebugfield.md) 如果`NULL`,`dwConstant`則改用。
+在描述要尋找之物件的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 。 如果為 `NULL` ，則改用 `dwConstant` 。
 
 `dwConstant`\
-[在]常量記憶體位址,如 0x5000。
+在常數的記憶體位址，例如0x5000。
 
 `ppMemCxt`\
-[出]返回表示物件位址或記憶體中位址的[IDebugMemoryMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)介面。
+擴展傳回 [IDebugMemoryCoNtext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 介面，代表物件的位址或記憶體中的位址。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

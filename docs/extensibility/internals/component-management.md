@@ -1,5 +1,5 @@
 ---
-title: 元件管理 |微軟文件
+title: 元件管理 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,41 +12,41 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b5dcac9fb14a83021b852be2c52436fcdca84bf5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709329"
 ---
 # <a name="component-management"></a>元件管理
-Windows 安裝程式中的任務單元稱為 Windows 安裝程式元件(有時稱為 WIC 或只是元件)。 GUID 識別每個 WIC,這是使用 Windows 安裝程式的安裝和引用計數的基本單元。
+Windows Installer 中的工作單位稱為 Windows Installer 元件 (有時候稱為 WICs 或只是) 的元件。 GUID 會識別每個 WIC，也就是使用 Windows Installer 的安裝程式和參考計數的基本單位。
 
- 儘管可以使用多個產品創建 VSPackage 安裝程式,但此討論假定使用 Windows 安裝程式 *(.msi*) 檔。 創建安裝程式時,必須正確管理檔部署,以便隨時進行正確的引用計數。 因此,在安裝和卸載混合方案中,產品的不同版本不會相互干擾或破裂。
+ 雖然您可以使用數個產品來建立 VSPackage 安裝程式，但這項討論會假設使用 Windows Installer (*.msi*) 檔。 當您建立安裝程式時，必須正確地管理檔案部署，以便正確的參考計數會在任何時間發生。 因此，不同版本的產品在安裝和卸載案例中不會干擾或互相中斷。
 
- 在 Windows 安裝程式中,引用計數發生在元件級別。 您必須仔細將資源(文件、註冊表項等)組織到元件中。 還有其他級別的組織(如模組、功能和產品)可以在不同方案中提供説明。 有關詳細資訊,請參閱[Windows 安裝程式基礎知識](../../extensibility/internals/windows-installer-basics.md)。
+ 在 Windows Installer 中，參考計數會發生在元件層級。 您必須仔細地將資源（檔案、登錄專案等等）組織成元件。 還有其他層級的組織（例如模組、功能和產品）可在不同的案例中有所説明。 如需詳細資訊，請參閱 [Windows Installer 基本概念](../../extensibility/internals/windows-installer-basics.md)。
 
-## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>並行安裝的創作設定指南
+## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>針對並存安裝撰寫安裝程式的指導方針
 
-- 創作在版本之間共用的檔和註冊表項到其自己的元件中。
+- 將在版本之間共用的檔案和登錄機碼，寫入自己的元件。
 
-     這樣做允許您在下一版本中輕鬆使用它們。 例如,鍵入全域註冊的庫、檔副檔名、**在HKEY_CLASSES_ROOT**中註冊的其他專案等。
+     這麼做可讓您輕鬆地在下一版中使用。 例如，在全域註冊的類型程式庫、副檔名、在 **HKEY_CLASSES_ROOT**中註冊的其他專案等等。
 
-- 將共享元件分組到單獨的合併模組中。
+- 將共用元件群組至不同的合併模組。
 
-     此策略可説明您正確創作並行安裝。
+     這項策略可協助您正確地撰寫，以供並存安裝繼續進行。
 
-- 跨版本使用相同的 Windows 安裝程式元件安裝共用檔和註冊表項。
+- 使用相同的 Windows Installer 元件在各版本之間，安裝共用檔案和登錄機碼。
 
-     如果使用其他元件,則在卸載一個版本化的 VSPackage 但仍安裝另一個 VSPackage 時,將卸載檔和註冊表項。
+     如果您使用不同的元件，則會在其中一個已建立版本的 VSPackage 卸載，但仍安裝另一個 VSPackage 時，卸載檔案和登錄專案。
 
-- 不要在同一元件中混合版本控制專案和共用專案。
+- 請勿混用相同元件中的版本設定和共用專案。
 
-     這樣,就無法將共用專案安裝到全域位置,並將專案版本控制到隔離位置。
+     這麼做可讓您無法將共用專案安裝到全域位置，並將版本設定的專案安裝到隔離的位置。
 
-- 沒有指向版本化檔的共享註冊表項。
+- 沒有指向已建立版本之檔案的共用登錄機碼。
 
-     如果這樣做,則在安裝另一個版本化的 VSPackage 時,共用密鑰將被覆蓋。 刪除第二個版本後,鍵指向的檔將消失。
+     如果您這麼做，則在安裝另一個已建立版本的 VSPackage 時，將會覆寫共用金鑰。 移除第二個版本之後，索引鍵指向的檔案就會消失。
 
 ## <a name="see-also"></a>另請參閱
-- [在分享與版本化 VS 套件之間進行選擇](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
-- [VS 套件設定機制](../../extensibility/internals/vspackage-setup-scenarios.md)
+- [在共用和建立版本的 Vspackage 之間進行選擇](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
+- [VSPackage 安裝案例](../../extensibility/internals/vspackage-setup-scenarios.md)
