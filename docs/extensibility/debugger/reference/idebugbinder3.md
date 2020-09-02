@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3 |微軟文件
+title: IDebugBinder3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aa85872337fdc1f7519d0de98cffe1436ef41c67
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735678"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關如何執行 CLR 運算式評估工具的詳細資訊，請參閱 [CLR 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 此介面提供對類型、別名和自定義可視化工具服務的訪問。
+ 此介面提供類型、別名和自訂視覺化服務的存取權。
 
 ## <a name="syntax"></a>語法
 
@@ -31,32 +31,32 @@ ms.locfileid: "80735678"
 IDebugBinder3 : IDebugBinder
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 除錯引擎實現此介面以支援別名、自定義可視化器服務和對物件類型資訊的訪問。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ Debug engine 會執行這個介面，以支援別名、自訂的視覺化檢視服務，以及物件類型資訊的存取。
 
-## <a name="notes-for-callers"></a>通話備註
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)介面使用[查詢介面](/cpp/atl/queryinterface)獲取此介面。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)介面會使用[QueryInterface](/cpp/atl/queryinterface)取得這個介面。
 
-## <a name="methods-in-vtable-order"></a>依 Vtable 順序排列的方法
- 除了[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)介面提供的方法外,此介面還實現了以下功能:
+## <a name="methods-in-vtable-order"></a>採用 Vtable 順序的方法
+ 除了 [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) 介面所提供的方法之外，此介面還會執行下列動作：
 
 |方法|描述|
 |------------|-----------------|
-|[GetMemoryObject](../../../extensibility/debugger/reference/idebugbinder3-getmemoryobject.md)|檢索表示此物件綁定到的記憶體的記憶體物件。|
-|[GetExceptionObjectAndType](../../../extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype.md)|檢索與此對象關聯的異常(如果有),|
-|[FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)|檢索給定其名稱的別名,|
-|[GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)|檢索此物件的所有別名的陣列,|
-|[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)|獲取與此對象關聯的參數類型數,|
-|[GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)|檢索與此物件關聯的參數類型的清單,|
-|[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|獲取可視化工具服務的介面,|
-|[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|將物件位置或 64 位元記憶體位址轉換為記憶體上下文。|
+|[GetMemoryObject](../../../extensibility/debugger/reference/idebugbinder3-getmemoryobject.md)|抓取代表這個物件所系結之記憶體的記憶體物件。|
+|[GetExceptionObjectAndType](../../../extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype.md)|如果有任何) ，則抓取與這個物件相關聯的例外狀況 (|
+|[FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)|抓取別名的指定名稱，|
+|[GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)|抓取此物件之所有別名的陣列。|
+|[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)|取得與此物件相關聯的引數類型數目。|
+|[GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)|抓取與這個物件相關聯的引數類型清單。|
+|[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|取得視覺化程式服務的介面。|
+|[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|將物件位置或64位的記憶體位址轉換成記憶體內容。|
 
 ## <a name="requirements"></a>需求
- 標題: ee.h
+ 標頭： ee. h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)

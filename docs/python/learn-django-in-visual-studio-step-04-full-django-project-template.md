@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c778d830b20797962306700a5af938eb3a3bb142
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62961672"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>步驟 4：使用完整的 Django Web 專案範本
@@ -35,19 +35,19 @@ ms.locfileid: "62961672"
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>步驟 4-1：從範本建立專案
 
-1. 在 Visual Studio 中，轉到**解決方案資源管理器**，按右鍵本教程中較早創建的**LearningDjango**解決方案，然後選擇"**添加新** > **專案**"。 （或者，如果要使用新解決方案 **，請選擇"****檔** > **新專案** > "。
+1. 在 Visual Studio 中，移至**方案總管**，以滑鼠右鍵按一下本教學課程稍早建立的**LearningDjango**方案，然後選取 [**加入**  >  **新專案**]。  (或者，如果您想要使用新的方案，請**選取 [** 檔案  >  **新增**  >  **專案**]。 ) 
 
 1. 在 [新增專案] 對話方塊中，搜尋並選取 [Django Web 專案]**** 範本，接著呼叫 "DjangoWeb" 專案，然後選取 [確定]****。
 
 1. 由於該範本再次包含 *requirements.txt* 檔案，因此 Visual Studio 會詢問要在何處安裝這些相依性。 選擇 [安裝至虛擬環境]**** 選項，然後在 [新增虛擬環境]**** 對話方塊中，選取 [建立]**** 並接受預設值。
 
-1. Visual Studio 設定好虛擬環境後，請遵循所顯示 *readme.html* 中的指示來建立 Django 進階使用者 (也就是系統管理員)。 只需按一下視覺化工作室專案並選擇**Python** > **Django 創建超級使用者**命令，然後按照提示操作。 請務必記下您的使用者名稱和密碼，因為當您執行應用程式的驗證功能時會用到。
+1. Visual Studio 設定好虛擬環境後，請遵循所顯示 *readme.html* 中的指示來建立 Django 進階使用者 (也就是系統管理員)。 只需以滑鼠右鍵按一下 Visual Studio 專案，然後選取 [ **Python**  >  **Django 建立超級使用者**] 命令，然後遵循提示。 請務必記下您的使用者名稱和密碼，因為當您執行應用程式的驗證功能時會用到。
 
 1. 您可以在 [方案總管] **** 中的 **DjangoWeb** 專案上按一下滑鼠右鍵，然後選取 [設定為啟始專案]****，即可將該專案設定為 Visual Studio 方案的預設專案。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
 
     ![方案總管將 DjangoWeb 專案顯示為啟始專案](media/django/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. 選擇**調試** > **啟動調試**（**F5**） 或使用工具列上的**Web 服務器**按鈕運行伺服器：
+1. 選取 [ **Debug**  >  **開始調試**] (**F5**) 或使用工具列上的 [ **Web 服務器**] 按鈕來執行伺服器：
 
     ![Visual Studio 中的 [執行網頁伺服器] 工具列按鈕](media/django/run-web-server-toolbar-button.png)
 
@@ -73,7 +73,7 @@ ms.locfileid: "62961672"
   - *requirements.txt*：包含 Django 1.x 的相依性。
   - *readme.html*：建立專案後，會在 Visual Studio 中顯示的檔案。 如前一節中所述，請遵照此處的指示來建立應用程式的進階使用者 (系統管理員) 帳戶。
 - *app* 資料夾包含所有應用程式檔案，包括檢視、模型、測試、表單、範本和靜態檔案 (請參閱步驟 4-2)。 您通常會重新命名此資料夾，以便使用更特定的應用程式名稱。
-- *DjangoWeb（Django*專案）資料夾包含典型的 Django 專案檔案*\_\_：init\_\_.py、settings.py、urls.py*和*wsgi.py*。 *settings.py* *urls.py* 藉由使用專案範本，便可針對應用程式和資料庫檔案設定好 *settings.py*，而且 *urls.py* 也會設定好所有應用程式頁面的路由，包括登入表單。
+- *DjangoWeb* (Django project) 資料夾包含一般的 Django 專案檔： * \_ \_ init \_ \_ . .py*、 *settings.py*、 *urls.py*和*wsgi.py*。 藉由使用專案範本，便可針對應用程式和資料庫檔案設定好 *settings.py*，而且 *urls.py* 也會設定好所有應用程式頁面的路由，包括登入表單。
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>問題：Visual Studio 專案之間是否可以共用虛擬環境？
 

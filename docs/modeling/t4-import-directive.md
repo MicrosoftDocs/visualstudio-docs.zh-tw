@@ -8,17 +8,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a28bedd01e3a4f6a7a87b025ac9a9a6184da9b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591862"
 ---
 # <a name="t4-import-directive"></a>T4 匯入指示詞
 
-在 Visual Studio T4 文字模板的程式碼區塊中，`import` 指示詞可讓您參考另一個命名空間中的元素，而不需要提供完整名稱。 這個指示詞相當於 C# 中的 `using` 或 `imports` 中的 [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)]。
+在 Visual Studio T4 文字模板的程式碼區塊中，指示詞可 `import` 讓您參考另一個命名空間中的元素，而不需要提供完整名稱。 這個指示詞相當於 C# 中的 `using` 或 `imports` 中的 [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)]。
 
-如需撰寫 T4 文字模板的一般總覽，請參閱[撰寫 T4 文字模板](../modeling/writing-a-t4-text-template.md)。
+如需撰寫 T4 文字模板的一般總覽，請參閱 [撰寫 T4 文字模板](../modeling/writing-a-t4-text-template.md)。
 
 ## <a name="using-the-import-directive"></a>使用匯入指示詞
 
@@ -49,6 +49,6 @@ The file contains: <#=  fileContent #>
 
 - DSL 的命名空間
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [T4 組件指示詞](../modeling/t4-assembly-directive.md)

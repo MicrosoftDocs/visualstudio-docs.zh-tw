@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 41ef89bbb7b3595c24de5a482eed805e75eb2cdb
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235078"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑難排解和已知問題 (Visual Studio Tools for Unity)
@@ -25,7 +25,7 @@ ms.locfileid: "87235078"
 
 ### <a name="confirm-editor-attaching-is-enabled"></a>確認已啟用 [編輯器附加]
 
-在 Unity 功能表中，選取 [**編輯] > 喜好**設定]，然後選取 [**外部工具**] 索引標籤。確認已啟用 [**編輯器附加**] 核取方塊。 如需詳細資訊，請參閱 [Unity 喜好設定文件](https://docs.unity3d.com/Manual/Preferences.html)。
+在 Unity 功能表中，選取 [ **編輯 > 喜好** 設定]，然後選取 [ **外部工具** ] 索引標籤。確認已啟用 [ **編輯器附加** ] 核取方塊。 如需詳細資訊，請參閱 [Unity 喜好設定文件](https://docs.unity3d.com/Manual/Preferences.html)。
 
 ### <a name="unable-to-attach"></a>無法附加
 
@@ -52,7 +52,7 @@ ms.locfileid: "87235078"
 
 ## <a name="visual-studio-stops-responding"></a>Visual Studio 停止回應
 
-剖析、FMOD、UMP (通用媒體播放程式)、ZFBrowser 或 Embedded Browser 這類 Unity 外掛程式會使用原生執行緒。 但當外掛程式最後將原生執行緒附加到執行階段時則會發生問題，因為這會導致作業系統的呼叫受到封鎖。 這表示 Unity 無法中斷偵錯工具（或網域重載）的執行緒，也無法停止回應。
+剖析、FMOD、UMP (通用媒體播放程式)、ZFBrowser 或 Embedded Browser 這類 Unity 外掛程式會使用原生執行緒。 但當外掛程式最後將原生執行緒附加到執行階段時則會發生問題，因為這會導致作業系統的呼叫受到封鎖。 這表示 Unity 無法中斷偵錯工具 (或網域重載) 和停止回應的執行緒。
 
 針對 FMOD，有下列因應措施：您可以傳遞 `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` 初始化[旗標](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags)以停用非同步處理，並在主執行緒上執行所有處理。
 
@@ -168,7 +168,7 @@ USB 偵錯的速度超快，而且 Visual Studio Tools for Unity 現已可偵測
     bt all
     ```
 
-最後，將執行緒傾印傳送至 [vstusp@microsoft.com](mailto:vstusp@microsoft.com) ，並描述當 Visual Studio 變成凍結時所執行的作業。
+最後，將執行緒傾印傳送至 [vstusp@microsoft.com](mailto:vstusp@microsoft.com) ，以及當 Visual Studio 變成凍結時所執行之工作的描述。
 
 ## <a name="see-also"></a>另請參閱
 

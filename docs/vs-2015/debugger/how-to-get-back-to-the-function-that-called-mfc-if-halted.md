@@ -1,5 +1,5 @@
 ---
-title: HOW TO：回到呼叫 MFC，如果暫止的函式 |Microsoft Docs
+title: 如何：在暫停時回到呼叫 MFC 的函式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,26 +26,26 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c19cbf6e892ba8b35f2b92ad9b86aa0b74a64810
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685889"
 ---
-# <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>作法：於暫止時回到呼叫 MFC 的函式
+# <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>如何：如果暫止，回到呼叫 MFC 的函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 注意]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 您看到的對話方塊與功能表命令，可能會因您所使用的設定或版本，而與說明中所述不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [Visual Studio 中的自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
- 如果您使用 [偵錯] 功能表上的 [中斷] 命令來暫止程式並於 MFC 中結束，而且您確定問題位於程式碼時，可以使用 [呼叫堆疊] 視窗巡覽回該函式。 如需詳細資訊，請參閱[如何：使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md)。  
+ 如果您使用 [偵錯]**** 功能表上的 [中斷]**** 命令來暫止程式並於 MFC 中結束，而且您確定問題位於程式碼時，可以使用 [呼叫堆疊] 視窗巡覽回該函式。 如需詳細資訊，請參閱 [如何：使用呼叫堆疊視窗](../debugger/how-to-use-the-call-stack-window.md)。  
   
- 有時候，您的程式碼可能會在訊息幫浦內中斷。 如果發生這種情形，呼叫堆疊上不會有任何使用者程式碼。 若要避免發生此問題，您可以改用中斷點 (可能含條件與叫用次數) 來取代 [中斷] 命令。 如需詳細資訊，請參閱 <<c0> [ 中斷點和追蹤點](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583))。  
+ 有時候，您的程式碼可能會在訊息幫浦內中斷。 如果發生這種情形，呼叫堆疊上不會有任何使用者程式碼。 若要避免發生此問題，您可以改用中斷點 (可能含條件與叫用次數) 來取代 [中斷]**** 命令。 如需詳細資訊，請參閱) 的 [中斷點和追蹤點](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583) 。  
   
 ### <a name="to-navigate-to-the-function-from-which-mfc-was-called"></a>若要巡覽至呼叫 MFC 的函式  
   
-- 使用 [呼叫堆疊] 視窗。  
+- 使用 [ **呼叫堆疊** ] 視窗。  
   
 ## <a name="see-also"></a>另請參閱  
- [對機器碼進行偵錯的常見問題集](../debugger/debugging-native-code-faqs.md)   
+ [原生程式碼的偵錯工具常見問題](../debugger/debugging-native-code-faqs.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)

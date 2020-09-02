@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 08add20b59e3e14897d1870aa45fd6cce8698d96
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591706"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>使用程式碼片段的最佳做法
@@ -31,7 +31,7 @@ ms.locfileid: "75591706"
 
 - 尋找可存取的位置。 使用者可能無法存取電腦的 *Program Files* 資料夾，因此應用程式檔案的存檔作業可能無法正常運作。
 
-- 尋找安全位置。 將檔存儲在根資料夾 （*C：\\*） 中不安全。 對於應用程式資料，我們建議使用*應用程式資料*資料夾。 若是個別使用者資料，應用程式可以在 *Documents* 資料夾中為每位使用者建立檔案。
+- 尋找安全位置。 將檔案儲存在根資料夾 (*C： \\ *) 並不安全。 針對應用程式資料，我們建議 *應用程式資料* 資料夾。 若是個別使用者資料，應用程式可以在 *Documents* 資料夾中為每位使用者建立檔案。
 
 - 使用有效的檔案名稱。 您可以使用 <xref:System.Windows.Forms.OpenFileDialog> 和 <xref:System.Windows.Forms.SaveFileDialog> 控制項，從而減少發生無效檔案名稱的可能性。 請注意，從使用者選取檔案到您的程式碼管理檔案的這段時間，檔案可能會遭到刪除。 此外，使用者可能沒有寫入檔案的權限。
 

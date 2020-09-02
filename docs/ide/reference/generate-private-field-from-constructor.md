@@ -1,5 +1,5 @@
 ---
-title: 從函數產生私用欄位和屬性
+title: 從函式產生私用欄位和屬性
 ms.date: 06/20/2020
 ms.topic: reference
 author: mikadumont
@@ -11,19 +11,19 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 56bd361d2bffb4ff17b03ac6743837032d1934e1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283719"
 ---
-# <a name="generate-private-field-and-property-from-constructor"></a>從函數產生私用欄位和屬性
+# <a name="generate-private-field-and-property-from-constructor"></a>從函式產生私用欄位和屬性
 
 此重構適用於： 
 
 - C# 
 
-**功能：** 從函式產生私用欄位或屬性。 
+事項 **：** 從函式產生私用欄位或屬性。 
 
 時機 **：** 您想要從函式快速新增和初始化私用欄位或屬性。
 
@@ -33,11 +33,11 @@ ms.locfileid: "85283719"
 
 1. 將游標放在函式中的參數名稱上。
 
-2. 按**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
+2. 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
    
 3. 接著，選取下列其中一項：
 
-- **建立並初始化欄位，** 或**建立和初始化屬性**。
+- **建立和初始化欄位，** 或 **建立和初始化屬性**。
 
    ![從建構函式產生私人欄位](media/generate-private-field-from-constructor.png)
 

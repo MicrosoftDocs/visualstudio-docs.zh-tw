@@ -12,20 +12,20 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 866a30279ca2c79f4a490a040f76bc3a86c6a6e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148040"
 ---
 # <a name="about-file-name-extensions"></a>關於副檔名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-當您註冊 VSPackage 的副檔名時，您將它產生關聯的版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 這是重要如果多個版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]安裝在電腦上。  
+當您註冊 VSPackage 的副檔名時，會將它與的版本建立關聯 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。 如果電腦上安裝了一個以上的版本，這就很重要 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。  
   
- 預設值的相關聯的程式設計識別項 (ProgID) 所指向的 HKEY_CLASSES_ROOT 機碼下註冊 Vspackage 的檔案副檔名。  
+ Vspackage 的副檔名是在 HKEY_CLASSES_ROOT 機碼下註冊，其預設值會指向 (ProgID) 的相關聯程式設計識別碼。  
   
- .Vcproj 檔案延伸模組的註冊資訊的範例如下：  
+ 以下是 vcproj 副檔名的註冊資訊範例：  
   
 ```  
 HKEY_CLASSES_ROOT\  
@@ -33,10 +33,10 @@ HKEY_CLASSES_ROOT\
       (default)=" VisualStudio.vcproj.8.0"   
 ```  
   
- 檔案與相關聯[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]必須有已建立版本的 ProgID，例如`VisualStudio.vcproj.8.0`，以便維護產品版本之間的檔案副檔名關聯的產品來並行安裝。 版本特定 ProgID 也可讓您使用標準動詞命令，例如開啟、 編輯、 等等，而不用擔心的覆寫或遭到覆寫其他應用程式或新版[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+ 與相關聯的檔案 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 必須具有已建立版本的 ProgID （例如 `VisualStudio.vcproj.8.0` ），才能讓產品並存安裝，以維護產品版本之間的副檔名關聯。 版本特定的 ProgID 也可讓您使用標準動詞，例如開啟、編輯等，而不需要考慮其他應用程式或版本的覆寫或覆寫 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。  
   
- 在某些情況下，不應該變更副檔名相關聯的 ProgID。 比方說，.htm 副檔名的 ProgID (progid = htmlfile) 設定為固定值中的幾個地方在作業系統中，而且廣泛已知且使用中關聯的.htm 與.html 檔案。  
+ 在某些情況下，與副檔名相關聯的 ProgID 不應變更。 例如，.htm 副檔名 (progid = htmlfile) 的 ProgID 是硬式編碼在作業系統的許多地方，而且很著名並用來與 .htm 和 .html 檔案關聯。  
   
 ## <a name="see-also"></a>另請參閱  
- [並排顯示部署註冊副檔名的檔案](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
+ [註冊並存部署的副檔名](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
  [指定適用於副檔名的檔案處理常式](../extensibility/specifying-file-handlers-for-file-name-extensions.md)

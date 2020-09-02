@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2::RemoveProgramNode |Microsoft Docs
+title: IDebugPortNotify2：： RemoveProgramNode |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc4ac539fdf0a5b27f8e9eb94e7644fa44070b3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188421"
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取消註冊才能進行偵錯連接埠上執行的程式。  
+取消註冊可以從其執行所在之埠進行偵錯工具的程式。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,13 +40,13 @@ int RemoveProgramNode( 
   
 #### <a name="parameters"></a>參數  
  `pProgramNode`  
- [in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，表示要取消註冊計劃。  
+ 在代表要取消註冊之程式的 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法會移除已藉由呼叫程式節點[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)方法。  
+ 這個方法會移除透過呼叫 [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) 方法所新增的程式節點。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)   

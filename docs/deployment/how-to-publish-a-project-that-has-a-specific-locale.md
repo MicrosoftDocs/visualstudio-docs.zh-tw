@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d3b3aa7c2c56b1175c2f280a96ade78ea17ee55
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382220"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>如何：發行具有特定地區設定的專案
@@ -147,19 +147,19 @@ ms.locfileid: "85382220"
 
      請注意，當地語系化資源 DLL 只有在需要時才會建立。 例如，在您指定新的地區設定之後，若變更表單的文字或其中一個控制項，就會建立。
 
-4. 使用 Visual Studio IDE 來發行*PublishLocales* 。
+4. 使用 Visual Studio IDE 發佈 *PublishLocales* 。
 
-     在 [方案總管]**** 中，選取 *PublishLocales*。 選取 [專案]**** 功能表上的 [屬性]****。 在 [專案設計工具] 的 [**發行**] 頁面上，指定的發行位置 **http://localhost/PublishLocales** ，然後按一下 [**立即發佈**]。
+     在 [方案總管]**** 中，選取 *PublishLocales*。 選取 [專案]**** 功能表上的 [屬性]****。 在 [專案設計工具] 的 [ **發行** ] 頁面上，指定的發行位置 **http://localhost/PublishLocales** ，然後按一下 [ **立即發佈**]。
 
      當發行網頁出現時，將其關閉。 (在這個步驟中，您只需要發行專案，而不需要安裝專案)。
 
-5. 藉由在 Visual Studio 命令提示字元] 視窗中叫用宏，再次發行*PublishLocales* 。 若要查看 [命令提示字元] 視窗，請在 [ **view** ] 功能表上，指向 [**其他視窗**]，然後按一下 [**命令視窗]**，或按**Ctrl** + **Alt** + **A**。 在 [命令提示字元] 視窗中，輸入 `macros` ; 自動完成將提供可用宏的清單。 選取下列巨集，然後按 ENTER 鍵：
+5. 藉由在 Visual Studio 的命令提示字元視窗中叫用宏，再次發佈 *PublishLocales* 。 若要查看 [命令提示字元] 視窗，請在 [ **view** ] 功能表上，指向 [**其他視窗**]，然後按一下 [**命令視窗]**，或按**Ctrl** + **Alt** + **A**。 在 [命令提示字元] 視窗中，輸入 `macros` ; 自動完成將提供可用宏的清單。 選取下列巨集，然後按 ENTER 鍵：
 
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`
 
-6. 當發行程式成功時，它會產生一則訊息，指出「發行已成功進行*PublishLocales\PublishLocales.vbproj*。 發行語言為 ' en '」。在訊息方塊中按一下 **[確定]** 。 當發佈網頁出現時，按一下 [安裝]****。
+6. 當發行程式成功時，它會產生一則訊息，指出「已成功發佈 *PublishLocales\PublishLocales.vbproj*。 發行語言為 ' en '。」按一下訊息方塊中的 **[確定]** 。 當發佈網頁出現時，按一下 [安裝]****。
 
-7. 查看*C:\Inetpub\wwwroot\PublishLocales\en*。 除了當地語系化資源 DLL 以外，您應該會看到已安裝的檔案，例如資訊清單、 *setup.exe*和發行網頁檔案。 （根據預設，ClickOnce 會在 Exe 和 Dll 上附加 *.deploy*副檔名，您可以在部署後移除此延伸模組）。
+7. 查看 *C:\Inetpub\wwwroot\PublishLocales\en*。 除了當地語系化資源 DLL 以外，您應該會看到已安裝的檔案，例如資訊清單、 *setup.exe*和發佈網頁檔案。 根據預設，ClickOnce 會在 Exe 和 Dll 上附加 *.deploy* 副檔名; (您可以在部署後移除此延伸模組。 ) 
 
 ## <a name="see-also"></a>另請參閱
 - [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)

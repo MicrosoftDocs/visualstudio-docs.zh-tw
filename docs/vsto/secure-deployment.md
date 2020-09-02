@@ -1,5 +1,5 @@
 ---
-title: 安全的部署
+title: 安全部署
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,35 +16,35 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1000504ad83706bd028af4bd668da7483e478b7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62978364"
 ---
-# <a name="secure-deployment"></a>安全的部署
-  當您建立 Office 方案時，會自動允許之程式碼執行的專案中更新您的開發電腦。 不過，當您部署您的解決方案，您必須提供要簽署的憑證、 解決方案或使用根據信任決策的辨識項[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示的索引鍵。 如需詳細資訊，請參閱 <<c0> [ 授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)。
+# <a name="secure-deployment"></a>安全部署
+  當您建立 Office 方案時，會自動更新您的開發電腦，以允許專案中的程式碼執行。 不過，當您部署方案時，您必須使用憑證來簽署解決方案，或使用信任提示金鑰，以提供信任決策作為基礎的辨識 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 項。 如需詳細資訊，請參閱 [授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- 文件層級自訂中，如果文件部署到網路位置，您也必須將文件的位置加入信任中心 中的 Office 應用程式的信任位置清單。 如需如何設定在使用者電腦上的文件權限的詳細資訊，請參閱[授與信任給文件](../vsto/granting-trust-to-documents.md)。
+ 針對檔層級自訂，如果您將檔部署到網路位置，您也必須將檔的位置加入 Office 應用程式信任中心內的信任位置清單。 如需有關如何在使用者電腦上設定檔許可權的詳細資訊，請參閱 [授與信任給檔](../vsto/granting-trust-to-documents.md)。
 
-## <a name="prevent-office-solutions-from-running-code"></a>避免 Office 方案執行程式碼
- 系統管理員可以使用登錄，以防止所有的 Office 方案的電腦上執行。 具有 managed 程式碼擴充的 Office 方案開啟時，Visual Studio Tools for Office 執行階段檢查是否項目名稱`Disabled`存在於其中一種在電腦上的下列登錄機碼：
+## <a name="prevent-office-solutions-from-running-code"></a>防止 Office 解決方案執行程式碼
+ 系統管理員可以使用登錄來防止所有 Office 方案在電腦上執行。 當開啟具有 managed 程式碼擴充功能的 Office 方案時，Visual Studio Tools for Office 執行時間會檢查 `Disabled` 電腦上下列其中一個登錄機碼下是否有名稱的專案：
 
-- **HKEY_CURRENT_USER\Software\Microsoft\VSTO**
+- **HKEY_CURRENT_USER \Software\Microsoft\VSTO**
 
-- **HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO**
+- **HKEY_LOCAL_MACHINE \Software\Microsoft\VSTO**
 
-  若要避免 Office 方案執行程式碼，建立`Disabled`之一或兩者的這些登錄機碼下的項目，並指定下列資料類型和值的其中一個`Disabled`:
+  若要防止 Office 方案執行程式碼，請 `Disabled` 在其中一個或兩個登錄機碼底下建立一個專案，並指定下列其中一種資料類型和值 `Disabled` ：
 
-- REG_SZ 或 REG_EXPAND_SZ 設為"0"（零） 以外的任何字串中。
+- REG_SZ 或 REG_EXPAND_SZ，其設定為 "0" (零) 以外的任何字串。
 
-- 設定為 0 （零） 以外的任何值 REG_DWORD。
+- 設定為 0 (零) 以外任何值的 REG_DWORD。
 
-  若要啟用 Office 方案執行程式碼，將這兩個`Disabled`項目設為 0 （零），或刪除登錄項目。
+  若要讓 Office 方案可以執行程式碼，請將兩個 `Disabled` 專案設定為 0 (零) ，或刪除登錄專案。
 
 ## <a name="see-also"></a>另請參閱
 - [部署 Office 方案](../vsto/deploying-an-office-solution.md)
-- [準備執行或裝載 Office 方案的電腦](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)
+- [準備要執行或裝載 Office 解決方案的電腦](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)
 - [保護 Office 方案](../vsto/securing-office-solutions.md)

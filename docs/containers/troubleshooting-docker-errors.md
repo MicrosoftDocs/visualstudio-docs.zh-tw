@@ -12,10 +12,10 @@ ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
 ms.openlocfilehash: 31b9d8649abed0f9901aa872ff3939c25e3025b8
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235104"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>對使用 Docker 進行的 Visual Studio 開發進行疑難排解
@@ -35,7 +35,7 @@ ms.locfileid: "87235104"
 ![共用的磁碟機](media/troubleshooting-docker-errors/shareddrives.png)
 
 > [!TIP]
-> 當未設定**共用磁片磁碟機**時，Visual Studio 高於 Visual Studio 2017 15.6 版的版本提示。
+> 當未設定 **共用磁片磁碟機** 時，Visual Studio Visual Studio 2017 15.6 版以後版本的提示。
 
 ### <a name="container-type"></a>容器類型
 
@@ -65,25 +65,25 @@ The current user must be in the 'docker-users' group to use Docker Desktop.
 Add yourself to the 'docker-users' group and then log out of Windows.
 ```
 
-您必須是「docker 使用者」群組的成員，才能擁有使用 Docker 容器的許可權。  若要將自己新增至 Windows 10 中的群組，請遵循下列步驟：
+您必須是「docker 使用者」群組的成員，才能擁有使用 Docker 容器的許可權。  若要將您自己新增至 Windows 10 中的群組，請遵循下列步驟：
 
-1. 在 [開始] 功能表中，開啟 [**電腦管理**]。
-1. 展開 [**本機使用者和群組**]，然後選擇 [**群組**]。
-1. 尋找 [ **docker-使用者**] 群組，按一下滑鼠右鍵並選擇 [**加入群組**]。
+1. 從 [開始] 功能表中，開啟 [ **電腦管理**]。
+1. 展開 [ **本機使用者和群組**]，然後選擇 [ **群組**]。
+1. 尋找 **docker 使用者** 群組，按一下滑鼠右鍵並選擇 [ **加入群組**]。
 1. 新增您的使用者帳戶或帳戶。
 1. 登出後再重新登入，這些變更才會生效。
 
-您也可以在 `net localgroup` 系統管理員命令提示字元中使用命令，將使用者新增至特定群組。
+您也可以 `net localgroup` 在系統管理員命令提示字元中使用命令，將使用者新增至特定群組。
 
 ```cmd
 net localgroup docker-users DOMAIN\username /add
 ```
 
-在 PowerShell 中，使用[LocalGroupMember](/powershell/module/microsoft.powershell.localaccounts/add-localgroupmember)函數。
+在 PowerShell 中，使用 [LocalGroupMember](/powershell/module/microsoft.powershell.localaccounts/add-localgroupmember) 函數。
 
 ## <a name="low-disk-space"></a>磁碟空間不足
 
-根據預設，Docker 會將映射儲存在 *% ProgramData%/Docker/* 資料夾中，這通常是在系統磁片磁碟機 * c:\programdata\docker 目錄上 \* 。 若要防止影像在系統磁片磁碟機上佔用寶貴的空間，您可以變更映射資料夾位置。  從工作列上的 Docker 圖示開啟 [Docker 設定]，選擇 [ **Daemon**]，然後從 [**基本**] 切換至 [ **Advanced**]。 在編輯窗格中， `graph` 使用您想要的 Docker 映射位置值來新增屬性設定：
+根據預設，Docker 會將影像儲存在 *% ProgramData%/Docker/* 資料夾中，此資料夾通常位於系統磁片磁碟機 * C:\ProgramData\Docker \* 。 若要防止映射佔用系統磁片磁碟機上的寶貴空間，您可以變更映射資料夾位置。  從工作列上的 Docker 圖示，開啟 Docker 設定，選擇 [ **Daemon**]，然後從 [ **基本** ] 切換為 [ **Advanced**]。 在編輯窗格中，新增 `graph` 具有您所需 Docker 映射位置值的屬性設定：
 
 ```json
     "graph": "D:\\mypath\\images"
@@ -91,7 +91,7 @@ net localgroup docker-users DOMAIN\username /add
 
 ![Docker 映射位置設定的螢幕擷取畫面](media/troubleshooting-docker-errors/docker-settings-image-location.png)
 
-按一下 **[** 套用] 以重新開機 Docker。 這些步驟會修改位於 *% ProgramData% \docker\config\daemon.js*的設定檔。 先前建立的映射不會移動。
+按一下 **[** 套用] 以重新開機 Docker。 這些步驟會修改 *% ProgramData% \docker\config\daemon.js上*的設定檔。 先前建立的映射不會移動。
 
 ## <a name="microsoftdockertools-github-repo"></a>Microsoft/DockerTools GitHub 存放庫
 

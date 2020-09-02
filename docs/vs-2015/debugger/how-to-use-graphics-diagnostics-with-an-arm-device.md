@@ -1,5 +1,5 @@
 ---
-title: 作法：搭配 ARM 裝置使用圖形診斷 |Microsoft Docs
+title: 如何：搭配 ARM 裝置使用圖形診斷 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5bbe12449849b656af2658c5bab667b0e611515e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685867"
 ---
-# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>作法：搭配 ARM 裝置使用圖形診斷
+# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>如何：搭配 ARM 裝置使用圖形診斷
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 圖形診斷支援遠端偵錯 ARM 裝置上的 Direct3D 應用程式，且 ARM 裝置執行 Windows RT 8.1 或 Windows Phone 8.1。 您可以從在裝置上執行的 Direct3D 應用程式擷取圖形資訊，或使用裝置做為先前擷取之圖形資訊的播放電腦。  
@@ -28,23 +28,23 @@ ms.locfileid: "65685867"
   
 #### <a name="to-enable-remote-debugging-on-your-arm-based-device"></a>在 ARM 裝置上啟用遠端偵錯  
   
-1. 安裝[ARM 套件原則](https://msdn.microsoft.com/windows/desktop/dn469188)ARM 型裝置上。  
+1. 在 ARM 裝置上安裝 [Arm 套件原則](https://msdn.microsoft.com/windows/desktop/dn469188) 。  
   
-2. 安裝[遠端偵錯工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)ARM 型裝置上。  
+2. 在 ARM 裝置上安裝 [遠端偵錯工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) 。  
   
 > [!IMPORTANT]
-> 您可能需要針對 Windows Phone 8.1 裝置，註冊您的電話以進行開發。 若要這麼做，您必須是註冊的開發人員。 如需詳細資訊，請參閱 <<c0> [ 如何部署和執行應用程式，適用於 Windows Phone 8](https://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx)。  
+> 您可能需要針對 Windows Phone 8.1 裝置，註冊您的電話以進行開發。 若要這麼做，您必須是註冊的開發人員。 如需詳細資訊，請參閱 [如何部署和執行 Windows Phone 8 的應用程式](https://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx)。  
   
  在裝置上啟用遠端偵錯之後，請將它設為偵錯目標，並啟動圖形診斷。  
   
 #### <a name="to-configure-and-start-graphics-diagnostics-on-your-device"></a>在裝置上設定和啟動圖形診斷  
   
-1. 在 **方案平台**下拉式清單中，選取**ARM** ，讓您以 ARM 為基礎的裝置可做為遠端偵錯目標。  
+1. 在 [ **方案平臺** ] 下拉式清單中，選取 [ **arm** ]，讓 arm 型裝置可作為遠端偵錯程式目標使用。  
   
-2. 在 **偵錯目標**下拉式清單中，選取您的 ARM 裝置。  
+2. 在 [ **偵錯工具目標** ] 下拉式清單中，選取您的 ARM 裝置。  
   
-3. 在功能表中，選擇**偵錯**，**圖形**，**開始診斷**。 (鍵盤：Alt+F5)  
+3. 在功能表上，選擇 [ **Debug**]、[ **圖形**]、[ **開始診斷**]。 (鍵盤：Alt+F5)  
   
 ## <a name="see-also"></a>另請參閱  
- [在遠端電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)   
- [如何：變更圖形診斷播放電腦](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)
+ [在遠端電腦上執行 Windows Store 應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)   
+ [作法：變更圖形診斷播放電腦](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)

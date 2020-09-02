@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::LaunchSuspended |Microsoft Docs
+title: IDebugPortEx2：： LaunchSuspended |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3c5e57c003257650f5ca60d4a7c3d9becea3e776
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188448"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-會啟動可執行檔。  
+啟動可執行檔。  
   
 ## <a name="syntax"></a>語法  
   
@@ -54,36 +54,36 @@ int LaunchSuspended( 
   
 #### <a name="parameters"></a>參數  
  `pszExe`  
- [in]若要啟動的可執行檔名稱。 這可以是完整路徑或相對於在指定的工作目錄`pszDir`參數。  
+ 在要啟動的可執行檔名稱。 這可以是完整路徑或相對於參數中所指定的工作目錄 `pszDir` 。  
   
  `pszArgs`  
- [in]要傳遞至可執行檔的引數。 如果不有任何引數，則可能是 null 值。  
+ 在要傳遞給可執行檔的引數。 如果沒有引數，則可以是 null 值。  
   
  `pszDir`  
- [in]可執行檔所使用的工作目錄名稱。 可能是 null 值，如果所沒有的工作目錄。  
+ 在可執行檔所使用之工作目錄的名稱。 如果不需要工作目錄，則可以是 null 值。  
   
  `bstrEnv`  
- [in]Null 終止的字串，後面接著其他的 NULL 結束字元的環境區塊。  
+ 在以 null 結束之字串的環境區塊，後面接著額外的 Null 結束字元。  
   
  `hStdInput`  
- [in]替代的輸入資料流的控制代碼。 如果不需要重新導向，則可能是 0。  
+ 在替代輸入資料流程的控制碼。 如果不需要重新導向，則可以是0。  
   
  `hStdOutput`  
- [in]替代的輸出資料流的控制代碼。 如果不需要重新導向，則可能是 0。  
+ 在替代輸出資料流程的控制碼。 如果不需要重新導向，則可以是0。  
   
  `hStdError`  
- [in]替代錯誤輸出資料流的控制代碼。 如果不需要重新導向，則可能是 0。  
+ 在替代錯誤輸出資料流程的控制碼。 如果不需要重新導向，則可以是0。  
   
  `ppPortProcess`  
- [out]傳回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)物件，表示啟動的程序。  
+ 擴展傳回代表已啟動進程的 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法應該啟動的程序，因此它會暫停，而未執行任何程式碼。 [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)呼叫方法來繼續此程序。  
+ 這個方法應該會啟動進程，使其暫停且不執行任何程式碼。 呼叫 [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) 方法以繼續處理常式。  
   
- 也可以從 偵錯引擎啟動程式。 如需詳細資訊，請參閱 <<c0> [ 啟動程式](../../../extensibility/debugger/launching-a-program.md)。  
+ 您也可以從 debug engine 啟動程式。 如需詳細資訊，請參閱 [啟動程式](../../../extensibility/debugger/launching-a-program.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   

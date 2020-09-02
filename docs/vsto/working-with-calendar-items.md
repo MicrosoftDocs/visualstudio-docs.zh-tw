@@ -1,5 +1,5 @@
 ---
-title: 使用行事曆項目
+title: 使用行事曆專案
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,13 +19,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d9c0f634ce95814ba746325e8efd67228653775
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63008725"
 ---
-# <a name="work-with-calendar-items"></a>使用行事曆項目
+# <a name="work-with-calendar-items"></a>使用行事曆專案
   <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 類別包含您用來執行行事曆項目工作的方法和屬性。
 
 |工作|程序|
@@ -35,10 +35,10 @@ ms.locfileid: "63008725"
 |建立 [行事曆] 資料夾並加入約會項目。|[如何：以程式設計方式建立自訂行事曆](../vsto/how-to-programmatically-create-a-custom-calendar.md)|
 |建立並傳送會議邀請。|[如何：以程式設計方式建立會議邀請](../vsto/how-to-programmatically-create-a-meeting-request.md)|
 
- 如需 Outlook 工作和 Outlook 物件模型的詳細資訊，請參閱[Outlook 物件模型概觀](../vsto/outlook-object-model-overview.md)。
+ 如需 Outlook 工作和 Outlook 物件模型的詳細資訊，請參閱 [outlook 物件模型總覽](../vsto/outlook-object-model-overview.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [使用連絡人項目](../vsto/working-with-contact-items.md)
 - [使用資料夾](../vsto/working-with-folders.md)
-- [使用郵件項目](../vsto/working-with-mail-items.md)
+- [使用訊息項目](../vsto/working-with-mail-items.md)
 - [Outlook 方案](../vsto/outlook-solutions.md)

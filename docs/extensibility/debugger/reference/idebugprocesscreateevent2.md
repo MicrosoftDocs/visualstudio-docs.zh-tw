@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess創建事件2 |微軟文件
+title: IDebugProcessCreateEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cfc9b0bbdebde01af48ab1436dbfd17ac0c3241b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723522"
 ---
 # <a name="idebugprocesscreateevent2"></a>IDebugProcessCreateEvent2
-啟動行程時發送此介面。
+此介面會在進程啟動時傳送。
 
 ## <a name="syntax"></a>語法
 
@@ -28,18 +28,18 @@ ms.locfileid: "80723522"
 IDebugProcessCreateEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 除錯引擎 (DE) 或自訂埠供應商實現此介面以報告已創建進程。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須在與此介面相同的對象上實現。 SDM 使用[查詢介面](/cpp/atl/queryinterface)訪問`IDebugEvent2`介面。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ Debug engine (DE) 或自訂埠供應商會執行這個介面，以報告已建立進程。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須在與這個介面相同的物件上執行。 SDM 會使用 [QueryInterface](/cpp/atl/queryinterface) 來存取 `IDebugEvent2` 介面。
 
-## <a name="notes-for-callers"></a>通話備註
- DE 或自定義埠供應商創建併發送此事件物件以報告流程的創建。 DE 使用 SDM 在連接到正在除錯的程式時提供的[IDebugEvent 回檔2](../../../extensibility/debugger/reference/idebugeventcallback2.md)回檔函數發送此事件。 自定義埠供應商使用[IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)介面發送此事件。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ 取消或自訂埠供應商會建立並傳送此事件物件，以報告進程的建立。 當它附加至正在進行偵錯工具的程式時，會使用由 SDM 提供的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 回呼函式來傳送此事件。 自訂埠供應商會使用 [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) 介面傳送此事件。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

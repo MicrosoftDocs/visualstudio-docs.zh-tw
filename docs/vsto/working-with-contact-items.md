@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 325f6b1b7ee489102d1ed4d2ef72350b3a6f5f3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63008634"
 ---
 # <a name="work-with-contact-items"></a>使用連絡人項目
@@ -29,14 +29,14 @@ ms.locfileid: "63008634"
 |----------|---------------|
 |擷取姓氏中包含指定字串的所有連絡人。|[如何：以程式設計方式存取 Outlook 連絡人](../vsto/how-to-programmatically-access-outlook-contacts.md)|
 |先依名字再依姓氏搜尋連絡人。|[如何：以程式設計方式搜尋特定的連絡人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)|
-|建立新的連絡人並填入連絡人資訊。|[如何：以程式設計方式將項目新增至 Outlook 連絡人](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)|
-|搜尋電子郵件地址中包含指定網域的連絡人。|[如何：以程式設計方式在連絡人電子郵件地址搜尋](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)|
+|建立新的連絡人並填入連絡人資訊。|[如何：以程式設計方式將專案新增至 Outlook 連絡人](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)|
+|搜尋電子郵件地址中包含指定網域的連絡人。|[如何：以程式設計方式在連絡人中搜尋電子郵件地址](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)|
 |刪除具有指定名稱的連絡人。|[如何：以程式設計方式刪除 Outlook 連絡人](../vsto/how-to-programmatically-delete-outlook-contacts.md)|
 
- 如需 Outlook 工作和 Outlook 物件模型的詳細資訊，請參閱[Outlook 物件模型概觀](../vsto/outlook-object-model-overview.md)。
+ 如需 Outlook 工作和 Outlook 物件模型的詳細資訊，請參閱 [outlook 物件模型總覽](../vsto/outlook-object-model-overview.md)。
 
 ## <a name="see-also"></a>另請參閱
-- [使用郵件項目](../vsto/working-with-mail-items.md)
+- [使用訊息項目](../vsto/working-with-mail-items.md)
 - [使用資料夾](../vsto/working-with-folders.md)
-- [使用行事曆項目](../vsto/working-with-calendar-items.md)
+- [使用行事曆專案](../vsto/working-with-calendar-items.md)
 - [Outlook 方案](../vsto/outlook-solutions.md)

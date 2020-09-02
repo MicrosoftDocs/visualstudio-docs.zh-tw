@@ -1,5 +1,5 @@
 ---
-title: 啟用偵錯視覺效果中的功能C++(-D_DEBUG) |Microsoft Docs
+title: 在 Visual C++ ( D_DEBUG) 中啟用調試功能 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,13 +26,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cffa8592c2048c6c6b39eee5c4ca654c41448933
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686696"
 ---
-# <a name="enabling-debug-features-in-visual-c-ddebug"></a>啟用 Visual C++ 的偵錯功能 (/D_DEBUG)
+# <a name="enabling-debug-features-in-visual-c-d_debug"></a>啟用 Visual C++ 的偵錯功能 (/D_DEBUG)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 中，當您使用已定義的 **_DEBUG** 符號編譯您的程式時，便會啟用判斷提示之類的偵錯功能。 您可以使用下列兩種方法之一定義 **_DEBUG**：  
@@ -46,5 +46,5 @@ ms.locfileid: "65686696"
   MFC 程式的偵錯組態必須與 MFC 程式庫的偵錯版本連結。 MFC 標頭檔會根據您已定義的符號，例如 **_DEBUG** 和 **_UNICODE**，來決定要連結到哪一個正確版本的 MFC 程式庫。 如需詳細資訊，請參閱 [MFC 程式庫版本](https://msdn.microsoft.com/library/3d7a8ae1-e276-4cf8-ba63-360c2f85ad0e)。  
   
 ## <a name="see-also"></a>另請參閱  
- [偵錯機器碼](../debugger/debugging-native-code.md)   
+ [程式碼的偵錯工具](../debugger/debugging-native-code.md)   
  [C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)

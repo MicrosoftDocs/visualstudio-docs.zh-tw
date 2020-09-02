@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb4abf5352ac6ad78852bd3224df0b22784470db
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903476"
 ---
 # <a name="add-command-line-switches"></a>新增命令列參數
@@ -29,12 +29,12 @@ ms.locfileid: "85903476"
 
  具名引數會顯示在下列描述中。
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 | 引數 | 切換的引數數目。 可以是 "*" 或引數清單。 |
 | DemandLoad | 如果此設定為1，則自動載入 VSPackage，否則設定為0。 |
 | HelpString | 要以 **devenv/？** 顯示之字串的說明字串或資源識別碼。 |
-| 名稱 | 參數。 |
+| Name | 參數。 |
 | PackageGuid | 封裝的 GUID。 |
 
  引數的第一個值通常是0或1。 您可以使用 ' * ' 的特殊值，表示命令列的整個其餘部分都是引數。 當使用者必須傳入偵錯工具命令字串時，這會很有用。

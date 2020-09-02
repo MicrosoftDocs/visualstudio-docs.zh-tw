@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::獲取類型參數計數 |微軟文件
+title: IDebugBinder3：： GetTypeArgumentCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: db43ed4dc178cf5080822e2dc387b5faa4bc5cd1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735706"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
-此方法返回與此物件關聯的參數類型數。
+這個方法會傳回與這個物件相關聯的引數類型數目。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetTypeArgumentCount(
 
 ## <a name="parameters"></a>參數
 `uCount`\
-[出]與此物件關聯的參數類型數。
+擴展與這個物件相關聯的引數類型數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 此方法返回的值可用於分配陣列以用於[GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)方法。
+ 這個方法所傳回的值可以用來配置陣列，以與 [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md) 方法搭配使用。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

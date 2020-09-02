@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a80488408f680530ed3c9b4094b2997e97484ce3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544439"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>逐步解說：將內容控制項系結至自訂 XML 元件
@@ -29,7 +29,7 @@ ms.locfileid: "85544439"
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- Word 可讓您將 XML 資料（命名為*自訂 xml 元件*）儲存在檔中。 將內容控制項繫結至自訂 XML 組件中的項目，即可控制這項資料的顯示。 本逐步解說中的範例文件會顯示自訂 XML 組件中所儲存的員工資訊。 開啟文件時，內容控制項會顯示 XML 項目的值。 您對內容控制項中文字進行的任何變更都會儲存在自訂 XML 組件中。
+ Word 可讓您將 XML 資料（名稱為 *自訂 xml 元件*）儲存在檔中。 將內容控制項繫結至自訂 XML 組件中的項目，即可控制這項資料的顯示。 本逐步解說中的範例文件會顯示自訂 XML 組件中所儲存的員工資訊。 開啟文件時，內容控制項會顯示 XML 項目的值。 您對內容控制項中文字進行的任何變更都會儲存在自訂 XML 組件中。
 
  本逐步解說將說明下列工作：
 
@@ -59,18 +59,18 @@ ms.locfileid: "85544439"
 
 ### <a name="to-create-a-new-word-document-project"></a>建立新的 Word 文件專案
 
-1. 建立名為**employeecontrols.docx**的 Word 檔專案。 建立方案的新文件。 如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 建立名稱為 **employeecontrols.docx**的 Word 檔專案。 建立方案的新文件。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]在設計工具中開啟新的 Word 檔，並將**employeecontrols.docx**專案加入**方案總管**。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在設計工具中開啟新的 Word 檔，並將 **employeecontrols.docx** 專案新增至 **方案總管**。
 
 ## <a name="add-content-controls-to-the-document"></a>將內容控制項新增至檔
  建立包含三種不同類型之內容控制項的資料表，使用者可以使用這些內容控制項來檢視或編輯員工相關資訊。
 
 ### <a name="to-add-content-controls-to-the-document"></a>將內容控制項新增至文件
 
-1. 在設計工具所裝載的 Word 檔中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，選擇功能區上的 [**插入**] 索引標籤。
+1. 在設計工具所裝載的 Word 檔中， [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 選擇功能區上的 [ **插入** ] 索引標籤。
 
-2. 在 [**資料表]** 群組中，選擇 [**資料表**]，然後插入具有2個數據行和3個數據列的資料表。
+2. 在 [ **資料表]** 群組中，選擇 [ **資料表**]，然後插入具有2個數據行和3個數據列的資料表。
 
 3. 在第一個資料行中輸入文字，讓它類似下面資料行：
 
@@ -78,43 +78,43 @@ ms.locfileid: "85544439"
    |-|
    |**員工名稱**|
    |**雇用日期**|
-   |**Title** (標題)|
+   |**標題**|
 
-4. 在資料表的第二個數據行中，選擇第一個資料列（[**員工名稱**] 旁）。
+4. 在資料表的第二個數據行中，選擇 [ **員工名稱** ]) 旁邊 (的第一個資料列。
 
-5. 在功能區上，選擇 [**開發人員**] 索引標籤。
+5. 在功能區上，選擇 [ **開發人員** ] 索引標籤。
 
    > [!NOTE]
-   > 如果 [開發人員] **** 索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
+   > 如果 [開發人員] **** 索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
 
-6. 在 [**控制項**] 群組中，選擇 [**文字**] 按鈕![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") ，將加入 <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> 至第一個資料格。
+6. 在 [ **控制項** ] 群組中，選擇 [ **文字** ] 按鈕 ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") ，將加入 <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> 至第一個儲存格。
 
-7. 在資料表的第二個數據行中，選擇第二個數據列（[**雇用日期**] 旁邊）。
+7. 在資料表的第二個數據行中，選擇 [ **雇用日期** ]) 旁的第二個數據列 (。
 
-8. 在 [**控制項**] 群組中，選擇 [**日期選擇器**] 按鈕![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") ，將加入 <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> 至第二個儲存格。
+8. 在 [ **控制項** ] 群組中，選擇 [ **日期選擇器** ] 按鈕 ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") ，將加入 <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> 至第二個數據格。
 
-9. 在資料表的第二個數據行中，選擇第三個數據列（[**標題**] 旁邊）。
+9. 在資料表的第二個數據行中，選擇 [ **標題**) 旁的第三個數據列 (。
 
-10. 在 [**控制項**] 群組中，選擇**下拉式清單**按鈕![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") ，將加入 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 至最後一個資料格。
+10. 在 [ **控制項** ] 群組中，選擇 **下拉式清單** 按鈕 ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") ，將新增 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 至最後一個儲存格。
 
     這是此專案的整個使用者介面。 如果您立即執行專案，則可以在第一個資料列中輸入文字，並在第二個資料列選取日期。 下一個步驟是將您想要顯示的資料附加至 XML 檔案中的文件。
 
 ## <a name="create-the-xml-data-file"></a>建立 XML 資料檔案
- 通常，您會從外部來源 (例如檔案或資料庫) 取得要儲存在自訂 XML 組件中的 XML 資料。 在本逐步解說中，您會建立包含員工資料的 XML 檔案，而員工資料會標上將繫結至文件中內容控制項的項目。 若要讓資料在執行時間可供使用，請將 XML 檔案內嵌為自訂群組件中的資源。
+ 通常，您會從外部來源 (例如檔案或資料庫) 取得要儲存在自訂 XML 組件中的 XML 資料。 在本逐步解說中，您會建立包含員工資料的 XML 檔案，而員工資料會標上將繫結至文件中內容控制項的項目。 若要在執行時間提供資料，請在自訂群組件中內嵌 XML 檔案做為資源。
 
 #### <a name="to-create-the-data-file"></a>建立資料檔
 
 1. 在 [ **專案** ] 功能表中，選擇 [ **加入新項目**]。
 
-     [加入新項目] **** 對話方塊隨即出現。
+     [加入新項目]  對話方塊隨即出現。
 
-2. 在 [**範本**] 窗格中，選取 [ **XML**檔案]。
+2. 在 [ **範本** ] 窗格中，選取 [ **XML**檔案]。
 
-3. 將檔案命名為**employees.xml**，然後選擇 [**新增**] 按鈕。
+3. 將檔案命名為 **employees.xml**，然後選擇 [ **加入** ] 按鈕。
 
      **employees.xml**檔案隨即在程式碼編輯器中開啟。
 
-4. 將**employees.xml**檔案的內容取代為下列文字。
+4. 以下列文字取代 **employees.xml** 檔案的內容。
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -127,9 +127,9 @@ ms.locfileid: "85544439"
     </employees>
     ```
 
-5. 在**方案總管**中，選擇**employees.xml**檔案。
+5. 在 **方案總管**中，選擇 **employees.xml** 檔案。
 
-6. 在 [**屬性**] 視窗中，選取 [**組建動作**] 屬性，然後將值變更為 [**內嵌資源**]。
+6. 在 [ **屬性** ] 視窗中，選取 [ **組建動作** ] 屬性，然後將值變更為 [ **內嵌資源**]。
 
      此步驟會在您建置專案時，將 XML 檔案內嵌為組件中的資源。 這可讓您在執行階段存取 XML 檔案的內容。
 
@@ -140,17 +140,17 @@ ms.locfileid: "85544439"
 
 1. 在 [ **專案** ] 功能表中，選擇 [ **加入新項目**]。
 
-     [加入新項目] **** 對話方塊隨即出現。
+     [加入新項目]  對話方塊隨即出現。
 
-2. 在 [**範本**] 窗格中，選取 [ **XML 架構**]。
+2. 在 [ **範本** ] 窗格中，選取 [ **XML 架構**]。
 
-3. 將架構命名為 employee，然後選擇 [**新增**]**按鈕。**
+3. 將架構命名為 **employees** ，然後選擇 [ **加入** ] 按鈕。
 
      結構描述設計工具隨即開啟。
 
-4. 在**方案總管**中，開啟**employees**的快捷方式功能表，然後選擇 [ **View Code**]。
+4. 在 **方案總管**中，開啟 [  **employees**] 的快捷方式功能表，然後選擇 [  **View Code**]。
 
-5. **將 employee**檔案的內容取代為下列架構。
+5. 以下列架構取代 **員工 .xsd** 檔案的內容。
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -181,51 +181,51 @@ ms.locfileid: "85544439"
     </xs:schema>
     ```
 
-6. **在 [檔案] 功能表上**，按一下 [**全部儲存**]，將變更儲存到**employees.xml**和**employees**檔案。
+6. **在 [檔案] 功能表上**，按一下 [**全部儲存**]，將您的變更儲存至**employees.xml**和 employee**檔。**
 
 ## <a name="attach-the-xml-schema-to-the-document"></a>將 XML 架構附加至檔
  您必須將 XML 結構描述附加至文件，以將 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 繫結至 `title` 項目的有效值。
 
-### <a name="to-attach-the-xml-schema-to-the-document--word_15_short"></a>若要將 XML 架構附加至檔（ [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ）
+### <a name="to-attach-the-xml-schema-to-the-document--word_15_short"></a>若要將 XML 架構附加至檔 ( [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]) 
 
-1. 在設計工具中啟動**EmployeeControls.docx** 。
+1. 在設計工具中啟動 **EmployeeControls.docx** 。
 
-2. 在功能區上，選擇 [**開發人員**] 索引標籤，然後選擇 [**增益集**] 按鈕。
+2. 在功能區上，選擇 [ **開發人員** ] 索引標籤，然後選擇 [ **增益集** ] 按鈕。
 
-3. 在 [**範本與增益集**] 對話方塊中，選擇 [ **XML 架構**] 索引標籤，然後選擇 [**加入架構**] 按鈕。
+3. 在 [ **範本和增益集** ] 對話方塊中，選擇 [ **XML 架構** ] 索引標籤，然後選擇 [ **加入架構** ] 按鈕。
 
-4. 流覽至您稍早**建立的 employee 架構（** 位於您的專案目錄中），然後選擇 [**開啟**] 按鈕。
+4. 流覽至您稍早建立的 **員工 .xsd** 架構（位於您的專案目錄中），然後選擇 [ **開啟** ] 按鈕。
 
 5. 選擇 [**架構設定**] 對話方塊中的 [**確定]** 按鈕。
 
-6. 選擇 [**確定]** 按鈕以關閉 [**範本與增益集**] 對話方塊。
+6. 選擇 [ **確定]** 按鈕以關閉 [ **範本和增益集** ] 對話方塊。
 
 ### <a name="to-attach-the-xml-schema-to-the-document-word-2010"></a>將 XML 結構描述附加至文件 (Word 2010)
 
-1. 在設計工具中啟動**EmployeeControls.docx** 。
+1. 在設計工具中啟動 **EmployeeControls.docx** 。
 
-2. 在功能區上，選擇 [**開發人員**] 索引標籤。
+2. 在功能區上，選擇 [ **開發人員** ] 索引標籤。
 
-3. 在 [ **XML** ] 群組中，選擇 [**架構**] 按鈕。
+3. 在 [ **XML** ] 群組中，選擇 [ **架構** ] 按鈕。
 
-4. 在 [**範本與增益集**] 對話方塊中，選擇 [ **XML 架構**] 索引標籤，然後選擇 [**加入架構**] 按鈕。
+4. 在 [ **範本和增益集** ] 對話方塊中，選擇 [ **XML 架構** ] 索引標籤，然後選擇 [ **加入架構** ] 按鈕。
 
-5. 流覽至您稍早**建立的 employee 架構（** 位於您的專案目錄中），然後選擇 [**開啟**] 按鈕。
+5. 流覽至您稍早建立的 **員工 .xsd** 架構（位於您的專案目錄中），然後選擇 [ **開啟** ] 按鈕。
 
 6. 選擇 [**架構設定**] 對話方塊中的 [**確定]** 按鈕。
 
-7. 選擇 [**確定]** 按鈕以關閉 [**範本與增益集**] 對話方塊。
+7. 選擇 [ **確定]** 按鈕以關閉 [ **範本和增益集** ] 對話方塊。
 
-     [ **XML 結構**] 工作窗格隨即開啟。
+     [ **XML 結構** ] 工作窗格隨即開啟。
 
-8. 關閉 [ **XML 結構**] 工作窗格。
+8. 關閉 [ **XML 結構** ] 工作窗格。
 
 ## <a name="add-a-custom-xml-part-to-the-document"></a>將自訂 XML 元件新增至檔
  您必須先將 XML 檔案的內容新增至文件中的新自訂 XML 組件，才能將內容控制項繫結至 XML 檔案中的項目。
 
 ### <a name="to-add-a-custom-xml-part-to-the-document"></a>將自訂 XML 組件新增至文件
 
-1. 在**方案總管**中，開啟**ThisDocument.cs**或**ThisDocument**的快捷方式功能表，然後選擇 [ **View Code**]。
+1. 在 **方案總管**中，開啟 [  **ThisDocument.cs** ] 或 [ **ThisDocument**] 的快捷方式功能表，然後選擇 [ **視圖程式碼**]。
 
 2. 將下列宣告新增至 `ThisDocument` 類別： 此程式碼會宣告數個物件，以用來將自訂 XML 組件新增至文件。
 
@@ -245,7 +245,7 @@ ms.locfileid: "85544439"
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#4](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#4)]
 
 ## <a name="bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>將內容控制項系結至自訂 XML 元件中的元素
- 使用每個內容控制項的**XMLMapping**屬性，將每個內容控制項系結至自訂 XML 元件中的元素。
+ 使用每個內容控制項的 **XMLMapping** 屬性，將每個內容控制項系結至自訂 XML 元件中的元素。
 
 ### <a name="to-bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>將內容控制項繫結至自訂 XML 組件中的項目
 
@@ -259,17 +259,17 @@ ms.locfileid: "85544439"
 
 ### <a name="to-run-your-code-when-the-document-is-opened"></a>在開啟文件時執行程式碼
 
-1. 將下面程式碼加新增至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法。 此程式碼會從**employees.xml**檔案取得 xml 字串、將 xml 字串加入檔中的新自訂 xml 元件，並將內容控制項系結至自訂 xml 元件中的元素。
+1. 將下面程式碼加新增至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法。 此程式碼會從 **employees.xml** 檔案取得 xml 字串、將 xml 字串新增至檔中的新自訂 XML 元件，並將內容控制項系結至自訂 xml 元件中的元素。
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#2)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#2)]
 
 ## <a name="test-the-project"></a>測試專案
- 開啟文件時，內容控制項會顯示自訂 XML 組件中項目的資料。 您可以按一下， <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 為專案選取三個有效值的其中一個 `title` ，這些值定義于 employee **.xsd**檔案中。 如果您編輯任何內容控制項中的資料，則新的值會儲存在文件的自訂 XML 組件中。
+ 開啟文件時，內容控制項會顯示自訂 XML 組件中項目的資料。 您可以按一下， <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 為專案選取三個有效值的其中一個 `title` ，這些值是在 **employees** 檔案中定義。 如果您編輯任何內容控制項中的資料，則新的值會儲存在文件的自訂 XML 組件中。
 
 ### <a name="to-test-the-content-controls"></a>測試內容控制項
 
-1. 按**F5**執行專案。
+1. 按 **F5** 執行專案。
 
 2. 請確認文件中的資料表類似於下表。 第二個資料行中的每個字串都會取自文件之自訂 XML 組件中的項目。
 
@@ -277,44 +277,44 @@ ms.locfileid: "85544439"
     |-|-|
     |**員工名稱**|**Karina Leal**|
     |**雇用日期**|**1999 年 4 月 1 日**|
-    |**Title** (標題)|**管理員**|
+    |**標題**|**管理員**|
 
-3. 選擇 [**員工名稱**] 儲存格右邊的儲存格，然後輸入不同的名稱。
+3. 選擇 [ **員工名稱** ] 儲存格右邊的儲存格，然後輸入不同的名稱。
 
-4. 選擇 [**雇用日期**] 儲存格右邊的儲存格，然後在 [日期選擇器] 中選取不同的日期。
+4. 選擇 [ **雇用日期** ] 儲存格右邊的儲存格，並在日期選擇器中選取不同的日期。
 
-5. 選擇 [**標題**] 資料格右邊的儲存格，然後從下拉式清單中選取新的專案。
+5. 選擇 [ **標題** ] 儲存格右邊的儲存格，然後從下拉式清單中選取新專案。
 
 6. 儲存並關閉文件。
 
-7. 在 [檔案管理器] 中，開啟專案位置底下的 [ *\bin\Debug* ] 資料夾。
+7. 在檔案總管中，開啟專案位置底下的 [ *\bin\Debug* ] 資料夾。
 
-8. 開啟**EmployeeControls.docx**的快捷方式功能表，然後選擇 [**重新命名**]。
+8. 開啟 **EmployeeControls.docx** 的快捷方式功能表，然後選擇 [ **重新命名**]。
 
-9. 將檔案命名為**EmployeeControls.docx.zip**。
+9. 將檔案命名為 **EmployeeControls.docx.zip**。
 
-     **EmployeeControls.docx**檔會以 Open XML 格式儲存。 藉由使用 *.zip*副檔名來重新命名此檔，您可以檢查檔的內容。 如需 Open XML 的詳細資訊，請參閱技術文章： [Office （2007） OPEN xml 檔案格式簡介](/previous-versions/office/developer/office-2007/aa338205(v=office.12))。
+     **EmployeeControls.docx**檔會以 Open XML 格式儲存。 藉由使用 *.zip* 副檔名來重新命名此檔，您就可以檢查檔的內容。 如需 Open XML 的詳細資訊，請參閱 [Office (2007) OPEN xml 檔案格式簡介](/previous-versions/office/developer/office-2007/aa338205(v=office.12))的技術檔。
 
-10. 開啟**EmployeeControls.docx.zip**檔案。
+10. 開啟 **EmployeeControls.docx.zip** 檔案。
 
-11. 開啟 [ **customXml** ] 資料夾。
+11. 開啟 **customXml** 資料夾。
 
-12. 開啟**item2.xml**的快捷方式功能表，然後選擇 [**開啟**]。
+12. 開啟 **item2.xml** 的快捷方式功能表，然後選擇 [ **開啟**]。
 
      此檔案包含您已新增至文件的自訂 XML 組件。
 
 13. 請確認 `name`、`hireDate` 和 `title` 項目包含您在文件中的內容控制項中輸入的新值。
 
-14. 關閉**item2.xml**檔案。
+14. 關閉 **item2.xml** 檔案。
 
 ## <a name="next-steps"></a>後續步驟
  您可以透過下列主題，進一步了解如何使用內容控制項：
 
-- 使用所有可用的內容控制項來建立範本。 如需詳細資訊，請參閱[逐步解說：使用內容控制項建立範本](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)。
+- 使用所有可用的內容控制項來建立範本。 如需詳細資訊，請參閱 [逐步解說：使用內容控制項建立範本](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)。
 
 - 在關閉文件時，修改自訂 XML 組件中的資料。 下次使用者開啟文件時，繫結至 XML 項目的內容控制項會顯示新的資料。
 
-- 使用內容控制項保護文件的組件。 如需詳細資訊，請參閱[如何：使用內容控制項保護檔的元件](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。
+- 使用內容控制項保護文件的組件。 如需詳細資訊，請參閱 [如何：使用內容控制項保護檔的元件](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)
@@ -323,4 +323,4 @@ ms.locfileid: "85544439"
 - [如何：使用內容控制項保護檔的元件](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)
 - [主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md)
 - [主專案和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [在執行時間將控制項新增至 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)

@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::CreateReplacementObject |Microsoft Docs
+title: IPropertyProxyEESide：： CreateReplacementObject |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c3a21e640d6661f8066609bdc344299ccbd63d52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147505"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-建立特定運算式評估工具 (EE) 的資料物件的複本。  
+針對 (EE) 的運算式評估工具建立特定資料物件的複本。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,18 +42,18 @@ int CreateReplacementObject(
   
 #### <a name="parameters"></a>參數  
  `dataIn`  
- [in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)含有要複製資料的物件。  
+ 在保存要複製之資料的 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 物件。  
   
  `dataOut`  
- [out]傳回新`IEEDataStorage`物件。  
+ 擴展傳回新的 `IEEDataStorage` 物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法會獲得[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件，表示為位元組陣列。 此內送的資料物件通常不會實作由 EE。 不過，這個方法所傳回的物件一律藉由 EE，它可讓 EE 實作`IEEDataStorage`上想要使用任何類別的介面。  
+ 系統會為這個方法提供代表位元組陣列的 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 物件。 此內送資料物件通常不是由 EE 所執行。 不過，這個方法所傳回的物件一律會由 EE 執行，這可讓 EE `IEEDataStorage` 在需要的任何類別上執行介面。  
   
- 請注意資料提供傳入`IEEDataStorage`物件必須是相同的資料，在傳出`IEEDataStorage`物件。  
+ 請注意，傳入物件所提供的資料 `IEEDataStorage` 必須是連出物件中的相同資料 `IEEDataStorage` 。  
   
 ## <a name="see-also"></a>另請參閱  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

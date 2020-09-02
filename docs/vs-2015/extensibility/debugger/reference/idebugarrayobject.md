@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject | Microsoft Docs
+title: IDebugArrayObject |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,19 +13,19 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8f8ec4c883078663d0e252d6a04ae7441f12f31d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686993"
 ---
 # <a name="idebugarrayobject"></a>IDebugArrayObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關如何執行 CLR 運算式評估工具的詳細資訊，請參閱 [CLR 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 這個介面會表示陣列物件。  
+ 這個介面代表陣列物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,32 +33,32 @@ ms.locfileid: "65686993"
 IDebugArrayObject : IDebugObject  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- 運算式評估工具會實作這個介面來代表陣列。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ 運算式評估工具會執行此介面來代表陣列。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面可以使用，取得這個介面[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)如果物件表示的陣列。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 如果物件代表陣列， [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 介面可以使用 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) 來取得這個介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 上的方法除了`IDebugObject`介面上實作下列方法`IDebugArrayObject`介面。  
+ 除了介面上的方法之外 `IDebugObject` ，下列方法也會在介面上執行 `IDebugArrayObject` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)|取得陣列中的項目數目。|  
-|[GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)|取得陣列的項目。|  
-|[GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)|取得陣列的所有項目。|  
-|[GetRank](../../../extensibility/debugger/reference/idebugarrayobject-getrank.md)|取得陣列的陣序規範。|  
-|[GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md)|取得陣列維度。|  
+|[GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)|取得陣列中的元素計數。|  
+|[GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)|取得陣列的元素。|  
+|[GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)|取得陣列的所有元素。|  
+|[GetRank](../../../extensibility/debugger/reference/idebugarrayobject-getrank.md)|取得陣列的順位。|  
+|[GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md)|取得陣列的維度。|  
   
 ## <a name="remarks"></a>備註  
- 運算式評估工具會使用此介面來代表剖析樹狀結構中的陣列。  
+ 運算式評估工具會使用此介面來表示剖析樹狀結構中的陣列。  
   
 ## <a name="requirements"></a>需求  
- 標頭： ee.h  
+ 標頭： ee. h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

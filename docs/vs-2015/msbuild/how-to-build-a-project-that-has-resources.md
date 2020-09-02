@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fb77db891e824f5f2900ef191049e65cb2c89a98
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686521"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>如何：建置包含資源的專案
@@ -79,8 +79,8 @@ ms.locfileid: "65686521"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
-[MSBuild](msbuild.md)  
+## <a name="see-also"></a>另請參閱  
+[Msbuild](msbuild.md)  
  [GenerateResource 工作](../msbuild/generateresource-task.md)   
  [Csc 工作](../msbuild/csc-task.md)   
- [Resgen.exe (資源檔產生器)](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)
+ [ 資源檔產生器Resgen.exe () ](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)

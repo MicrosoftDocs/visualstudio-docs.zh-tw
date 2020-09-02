@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 57bccfccb77c5a80fd2630680564f88f08d7ca5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591992"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Visual Studio 中的雙向語言支援
@@ -58,7 +58,7 @@ Visual Studio 支援 Unicode，因此如果您的系統已設好適當的地區�
 
 - 屬性值。
 
-   您可以在 **"屬性"** 視窗中使用阿拉伯文或希伯來文文本。 該視窗允許您使用標準 Windows 擊鍵在從右至左和從左至右的讀取順序之間切換（從右到右**的 Ctrl**+**右移位**，從左至右的**Ctrl**+**左移位**）。
+   您可以在 [ **屬性** ] 視窗中使用阿拉伯文或希伯來文文字。 視窗可讓您使用標準 Windows 擊鍵 (**ctrl** + **右 shift** （由右至左）和**ctrl** + **LeftShift** （由) 左至右）從右至左和由左到右的讀取順序進行切換。
 
 - 程式碼和常值文字。
 
@@ -74,11 +74,11 @@ Visual Studio 支援 Unicode，因此如果您的系統已設好適當的地區�
 
 ### <a name="file-encoding"></a>檔案編碼
 
-您可以使用特定語言或 Unicode 編碼儲存及開啟檔案。 有關詳細資訊，請參閱[如何：使用編碼保存和打開檔](../ide/how-to-save-and-open-files-with-encoding.md)。
+您可以使用特定語言或 Unicode 編碼儲存及開啟檔案。 如需詳細資訊，請參閱 [如何：使用編碼方式儲存及開啟](../ide/how-to-save-and-open-files-with-encoding.md)檔案。
 
 ## <a name="right-to-left-reading-order"></a>由右至左的讀取順序
 
-Visual Studio 只能有限地支援從右至左的讀取順序。 根據預設，Visual Studio 中的文字輸入控制項採用由左至右的讀取順序。 在大部分情況下，您可以使用標準 Windows 筆勢來切換讀取順序。 例如，您可以按**Ctrl**+**RightShift**切換 **"屬性"** 視窗以支援屬性值的從右至左讀取順序。
+Visual Studio 只能有限地支援從右至左的讀取順序。 根據預設，Visual Studio 中的文字輸入控制項採用由左至右的讀取順序。 在大部分情況下，您可以使用標準 Windows 筆勢來切換讀取順序。 例如，您可以按**Ctrl** + **右 shift**切換 [**屬性**] 視窗，以支援由右至左讀取屬性值的順序。
 
 Visual Studio 中的下列位置並不支援從右至左的讀取順序：
 

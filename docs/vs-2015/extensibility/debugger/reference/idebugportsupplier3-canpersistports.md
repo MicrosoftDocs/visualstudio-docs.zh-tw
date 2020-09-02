@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::CanPersistPorts |Microsoft Docs
+title: IDebugPortSupplier3：： CanPersistPorts |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: edc989771b41cc4a5cc5b4710de4cbb5632873e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188192"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個方法會判斷是否連接埠提供者可以保存連接埠 （藉由將它們寫入磁碟） 的偵錯工具的引動過程之間。  
+此方法會決定埠供應商是否可以透過將埠寫入至磁片) ，以在偵錯工具的調用之間 (保存埠。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ int CanPersistPorts();
  無。  
   
 ## <a name="return-value"></a>傳回值  
- `S_OK` 如果可以保存連接埠，或`S_FALSE`表示連接埠，不會保存。  
+ `S_OK` 如果可以保存埠，或 `S_FALSE` 表示無法保存埠。  
   
 ## <a name="remarks"></a>備註  
- 如果連接埠提供者可以保存連接埠，它應該這麼做，它會終結時，並再重新載入它們它再次具現化時。  
+ 如果埠供應商可保存埠，則它應該在終結時這麼做，然後在具現化時重載它們。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

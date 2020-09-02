@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af49535233a809006f6109449ae524611b1adc45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645602"
 ---
 # <a name="globalizing-applications"></a>全球化應用程式
@@ -25,14 +25,14 @@ ms.locfileid: "72645602"
 
 「全球化」是針對多種文化特性，設計和開發軟體產品的程序。 本節同時適用於 Windows Forms 和 Web Forms 頁面。
 
-## <a name="in-this-section"></a>本章節內容
- [全域 Windows Forms 和 Web Forms 的文化特性特定類別](../ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)討論根據文化特性設定來格式化日期、時間、數位、貨幣和其他資訊的類別。
+## <a name="in-this-section"></a>本節內容
+ [全域 Windows Forms 和 Web Form 的文化特性特定類別](../ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md) 討論根據文化特性設定來格式化日期、時間、數位、貨幣和其他資訊的類別。
 
 ## <a name="related-sections"></a>相關章節
- [全球化 Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)提供有關 Windows Forms 全球化的說明頁面連結。
+ [全球化 Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5) 提供有關 Windows Forms 全球化之說明頁面的連結。
 
- [全球化和當地語系化](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)提供有關全球化 Web Forms 網頁的說明頁面連結。
+ [全球化和當地語系化](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) 提供有關 Web Form 頁面全球化之說明頁面的連結。
 
- [以 .NET Framework 為基礎的國際應用程式簡介](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)討論使用 Visual Basic 或視覺效果C#，針對國際市場開發軟體的基本概念。
+ [以 .NET Framework 為基礎的國際應用程式簡介](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) 討論有關使用 Visual Basic 或 Visual c # 為國際市場開發軟體的基本概念。
 
  [開發世界性的應用程式的最佳做法](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)提供適用於國際對象的程式設計相關資訊，例如設計問題和技術。

@@ -1,5 +1,5 @@
 ---
-title: 介面 （Visual Studio 偵錯） |Microsoft Docs
+title: 介面 (Visual Studio 調試) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,30 +11,30 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 37ff35e5b073c820f77e5cd861c517bfccbf6ace
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199537"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>介面 (Visual Studio 偵錯)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-方法會依字母順序列之下的內容，並依照 Vtable 順序的介面上的資料表中每個介面。  
+方法會依字母順序列在目錄中的每個介面下，以及在介面頁面上以 Vtable 順序列出。  
   
 ## <a name="in-this-section"></a>本節內容  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)  
- 描述偵錯引擎中使用的介面。  
+ 描述 debug 引擎中使用的介面。  
   
- [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)  
- 描述在中斷模式期間評估運算式，在呼叫堆疊中的介面。  
+ [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)  
+ 描述在中斷模式期間，評估呼叫堆疊中運算式的介面。  
   
- [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)  
- 描述符號提供者建立關聯的識別項的型別所實作的介面。  
+ [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)  
+ 描述項號提供者所執行的介面，以將類型與識別碼產生關聯。  
   
 ## <a name="related-sections"></a>相關章節  
  [API 參考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)  
- 包含介面、 列舉值，與結構的文件[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]偵錯 sdk 》。  
+ 包含適用于偵錯工具之介面、枚舉器和結構的檔 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 。  
   
 ## <a name="see-also"></a>另請參閱  
  [API 參考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78169361"
 ---
 # <a name="template-parameters"></a>範本參數
@@ -50,7 +50,7 @@ ms.locfileid: "78169361"
 |參數|描述|
 |---------------|-----------------|
 |clrversion|通用語言執行平台 (CLR) 的最新版本。|
-|ext_*|將 `ext_` 前置詞新增至任何參數，以參考父代範本的變數。 例如： `ext_safeprojectname` 。|
+|ext_*|將 `ext_` 前置詞新增至任何參數，以參考父代範本的變數。 例如 `ext_safeprojectname`。|
 |guid[1-10]|GUID；用來取代專案檔中的專案 GUID。 您最多可以指定 10 個唯一的 GUID (例如，`guid1`)。|
 |itemname|正在使用該參數的檔案名稱。|
 |machinename|目前的電腦名稱 (例如，Computer01)。|
@@ -61,7 +61,7 @@ ms.locfileid: "78169361"
 |safeitemrootname|與 `safeitemname` 相同。|
 |safeprojectname|使用者在建立專案時時提供的名稱，但已移除所有不安全的字元和空格。|
 |time|目前的時間，格式為 DD/MM/YYYY 00:00:00。|
-|指定的解決方案名稱|方案名稱。 若已核取 [建立方案目錄]，則 `specifiedsolutionname` 具有方案名稱。 若未核取 [建立方案目錄]，`specifiedsolutionname` 則為空白。|
+|specifiedsolutionname|方案名稱。 若已核取 [建立方案目錄]，則 `specifiedsolutionname` 具有方案名稱。 若未核取 [建立方案目錄]，`specifiedsolutionname` 則為空白。|
 |userdomain|目前的使用者網域。|
 |username|目前的使用者名稱。|
 |webnamespace|目前網站的名稱。 這個參數用於 Web 表單範本，以保證唯一的類別名稱。 如果網站位於 Web 伺服器的根目錄，此範本參數會解析為 Web 伺服器的根目錄。|
@@ -119,7 +119,7 @@ namespace $safeprojectname$
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：替換範本中的參數](how-to-substitute-parameters-in-a-template.md)
+- [如何：替代範本中的參數](how-to-substitute-parameters-in-a-template.md)
 - [自訂範本](../ide/customizing-project-and-item-templates.md)
-- [如何：創建專案範本](../ide/how-to-create-project-templates.md)
+- [如何：建立專案範本](../ide/how-to-create-project-templates.md)
 - [範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

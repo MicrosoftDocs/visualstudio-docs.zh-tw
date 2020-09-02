@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3f89b99f15374ef7e0bbc6964ee1ff521eeb469f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903617"
 ---
 # <a name="create-a-breakpoint"></a>建立中斷點
 以下說明建立中斷點的程式。
 
 ## <a name="methods-in-breakpoint-creation"></a>中斷點建立中的方法
- 載入系結中斷點所需的模組時，會話 debug manager （SDM）會呼叫下列方法：
+ 載入系結中斷點所需的模組時，會話 debug manager (SDM) 會呼叫下列方法：
 
 1. [IDebugPendingBreakpoint2::Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)
 
@@ -31,7 +31,7 @@ ms.locfileid: "85903617"
 3. [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)
 
     > [!NOTE]
-    > 只有在使用者從 [**中斷點**] 視窗建立中斷點時，才會呼叫**CanBind** 。
+    > 只有當使用者從 [**中斷點**] 視窗建立中斷點時，才會呼叫**CanBind** 。
 
 4. [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
 

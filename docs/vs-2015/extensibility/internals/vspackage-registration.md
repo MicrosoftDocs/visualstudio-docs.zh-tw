@@ -12,51 +12,51 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a11f05edb4e7d476fdbcab82d365f9327dd4869a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685290"
 ---
 # <a name="vspackage-registration"></a>VSPackage 註冊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vspackage 必須告知[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]它們已安裝，且應該會載入。 此程序，即可將資訊寫入登錄中。 這是典型的工作，安裝程式。  
+Vspackage 必須建議 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 它們已安裝且應該載入。 這項程式的完成方式是在登錄中寫入資訊。 這是安裝程式的一般作業。  
   
 > [!NOTE]
-> 可接受的做法是使用自助式註冊 VSPackage 開發期間。 不過，[!INCLUDE[vsipprvsip](../../includes/vsipprvsip-md.md)]夥伴就無法出貨產品安裝程式的過程中使用自我登錄。  
+> 在 VSPackage 開發期間，使用自我註冊是接受的做法。 不過， [!INCLUDE[vsipprvsip](../../includes/vsipprvsip-md.md)] 在安裝過程中，合作夥伴無法使用自我註冊來傳送產品。  
   
- 登錄資料表通常進行 Windows 安裝程式封裝中的登錄項目。 您也可以註冊副檔名登錄資料表中。 不過，Windows 安裝程式會提供內建支援，透過程式設計識別項 (ProgId)、 類別、 延伸與動詞命令的資料表。 如需詳細資訊，請參閱 <<c0> [ 資料庫資料表](https://msdn.microsoft.com/library/aa368259\(VS.85\).aspx)。  
+ Windows Installer 套件中的登錄專案通常是在登錄表中進行。 您也可以在登錄表中註冊副檔名。 不過，Windows Installer 透過程式設計識別碼 (ProgId) 、類別、延伸和動詞資料表）提供內建支援。 如需詳細資訊，請參閱 [資料庫資料表](https://msdn.microsoft.com/library/aa368259\(VS.85\).aspx)。  
   
- 請確定您的登錄項目是適用於您所選擇的並排顯示策略的元件相關聯。 例如，共用檔案的登錄項目應該與該檔案的 Windows 安裝程式元件相關聯。 同樣地，版本特定檔案的登錄項目應該與該檔案的元件相關聯。 否則，安裝或解除安裝一個版本的 VSPackage[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]可能會中斷其他版本的 VSPackage。 如需詳細資訊，請參閱[支援多個版本的 Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)  
-  
-> [!NOTE]
-> 管理註冊的最簡單方式是在相同的檔案中使用相同的資料，開發人員註冊和安裝階段註冊。 比方說，某些安裝程式開發工具也可以使用.reg 格式檔案，在建置階段。 如果開發人員維護.reg 檔案進行日常開發和偵錯時，這些相同的檔案可以包含在安裝程式自動。 如果您不能自動共用註冊資料時，您必須確定安裝程式之複本的註冊資料是最新。  
-  
-## <a name="registering-unmanaged-vspackages"></a>正在登錄 Unmanaged 的 Vspackage  
- （包括 Visual Studio Package 範本所產生） 的 unmanaged 的 Vspackage 會使用 ATL 樣式.rgs 檔案來儲存註冊資訊。 .Rgs 檔案格式特有 ATL，且通常無法使用以-為撰寫工具的安裝。 VSPackage 安裝程式的註冊資訊必須分開維護。 比方說，開發人員可以保留檔案格式為.reg.rgs 同步檔案變更。 .Reg 檔案可以合併使用 RegEdit 的開發工作，或由安裝程式。  
-  
-## <a name="registering-managed-vspackages"></a>登錄 Managed 的 Vspackage  
- RegPkg 工具會讀取的登錄屬性從 managed VSPackage，可以是直接將資訊寫入登錄或可供安裝程式的寫入.reg 格式檔案。  
+ 確定您的登錄專案與適用于您所選並存策略的元件相關聯。 例如，共用檔案的登錄專案應該與該檔案的 Windows Installer 元件相關聯。 同樣地，版本特定檔案的登錄專案應該與該檔案的元件相關聯。 否則，安裝或卸載其中一個版本的 VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 可能會中斷其他版本的 VSPackage。 如需詳細資訊，請參閱 [支援多個版本的 Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)  
   
 > [!NOTE]
-> RegPkg 工具不是可轉散發套件，並不能用來註冊 VSPackage 使用者的系統上。  
+> 管理註冊最簡單的方式，就是在相同的檔案中使用相同的資料來進行開發人員註冊和安裝時間註冊。 例如，某些安裝程式開發工具可以在組建階段使用 .reg 格式的檔案。 如果開發人員針對自己的日常開發和偵錯工具維護 .reg 檔案，則這些相同的檔案可以自動包含在安裝程式中。 如果您無法自動共用註冊資料，您必須確定安裝程式的註冊資料複本是最新的。  
   
-## <a name="why-vspackages-should-not-self-register-at-install-time"></a>為什麼 Vspackage 應該自我註冊在安裝階段  
- VSPackage 的安裝程式不應依賴自我登錄。 第一眼，只有在本身的 VSPackage 中保留 VSPackage 的登錄值看起來像是個不錯的主意。 提供開發人員在其日常工作需要可用的登錄值，並測試，所以合理避免維護另一份安裝程式中的登錄資料。 安裝程式都可以依賴 VSPackage 本身要寫入登錄值。  
+## <a name="registering-unmanaged-vspackages"></a>註冊非受控 Vspackage  
+ 非受控 Vspackage (包括 Visual Studio 封裝範本所產生的) 使用 ATL 樣式的 .rgs 檔案來儲存註冊資訊。 .Rgs 檔案格式是 ATL 專屬的，而且通常無法由安裝 authoring tool 依原樣使用。 VSPackage 安裝程式的註冊資訊必須分開維護。 例如，開發人員可以讓 .reg 格式的檔案與 .rgs 檔案的變更保持同步。 .Reg 檔案可以與 RegEdit 合併以進行開發工作或安裝程式所使用。  
   
- 好的理論上，同時自我登錄會有讓它更適合使用 VSPackage 安裝的幾個缺點：  
+## <a name="registering-managed-vspackages"></a>註冊 Managed Vspackage  
+ RegPkg 工具會從受控 VSPackage 讀取註冊屬性，並且可以直接將資訊寫入登錄或寫入可供安裝程式使用的 .reg 格式檔案。  
   
-- 正確支援安裝、 解除安裝、 安裝復原和解除安裝回復要求您撰寫自我呼叫 RegPkg 註冊每個 managed VSPackage 的四個自訂動作。  
+> [!NOTE]
+> RegPkg 工具無法轉散發，且無法用來在使用者的系統上註冊 VSPackage。  
   
-- 並排顯示支援的方法可能會要求您撰寫 RegSvr32 或 RegPkg 叫用的每個支援版本的四個自訂動作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
+## <a name="why-vspackages-should-not-self-register-at-install-time"></a>為什麼 Vspackage 不應在安裝時自行註冊  
+ 您的 VSPackage 安裝程式不應依賴自我註冊。 乍看之下，只在 VSPackage 本身保留 VSPackage 的登錄值似乎是個好主意。 由於開發人員需要可用的登錄值來進行例行工作和測試，因此避免在安裝程式中維護個別的登錄資料複本，是合理的。 安裝程式可以依賴 VSPackage 本身來寫入登錄值。  
   
-- 自我登錄模組的安裝無法安全地復原，因為沒有任何方法，告訴自我登錄機碼由其他功能或應用程式。  
+ 在理論上，自我註冊有幾個缺點，讓它不適合用于 VSPackage 安裝：  
   
-- 自我登錄的 Dll 有時會連結到輔助不存在或版本不正確的 Dll。 相反地，Windows 安裝程式可以登錄 Dll 登錄資料表使用不會相依於系統的目前狀態。  
+- 正確支援安裝、卸載、安裝復原和卸載復原，需要您為每個由呼叫 RegPkg 的受控 VSPackage 撰寫四個自訂動作。  
   
-- 自我登錄程式碼可以存取網路資源，例如型別程式庫，如果某個元件有同時指定為執行從來源和 SelfReg 表列出會被拒絕。 這會導致系統管理安裝期間失敗元件的安裝。  
+- 並行支援的方法，可能會要求您撰寫四個自訂動作，以針對每個支援的版本叫用 RegSvr32 或 RegPkg [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。  
+  
+- 具有自我註冊模組的安裝無法安全地復原，因為沒有辦法告知自我註冊的金鑰是否由其他功能或應用程式使用。  
+  
+- 自我註冊的 Dll 有時會連結至不存在或版本錯誤的輔助 Dll。 相反地，Windows Installer 可以使用登錄資料表註冊 Dll，而不會相依于系統目前的狀態。  
+  
+- 如果元件同時指定為從來源執行，而且會列在 SelfReg 資料表中，則可能會拒絕自我註冊程式碼存取網路資源（例如類型程式庫）。 這可能會導致元件的安裝在系統管理安裝期間失敗。  
   
 ## <a name="see-also"></a>另請參閱  
- [Windows 安裝程式](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
- [受管理的套件註冊](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
+ [受控套件註冊](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

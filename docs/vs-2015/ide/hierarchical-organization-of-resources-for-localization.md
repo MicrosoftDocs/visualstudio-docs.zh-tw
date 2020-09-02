@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0a79caca18c7813605ff851eea6bda642e6300a0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645618"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>階層式組織當地語系化的資源
@@ -43,11 +43,11 @@ ms.locfileid: "72645618"
 
   儲存您資源的最佳方式是盡可能地將它們一般化。 也就是盡可能將當地語系化字串、影像等等儲存在中性文化特性的資源檔中，而不是特定文化特性。 舉例來說，如果您有適用於比利時法文 ("fr-BE") 文化特性的資源，而在該資源之上即為使用英文的後援資源，則當某些人在設定為加拿大法文文化特性的系統上使用您的應用程式時，可能會造成問題。 系統將會尋找 "fr-CA" 的附屬組件，但找不到，並且會載入包含後援資源的主要組件 (也就是英文) 而不是載入法文資源。 下圖顯示此不適當的案例。
 
-  ![僅限特定資源](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")
+  ![只限特定資源](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")
 
   如果您遵循建議的做法，盡可能地為 "fr" 文化特性的中性資源檔放入許多資源，則加拿大法文的使用者就不會看到標示為 "fr-BE" 文化特性的資源，但他或她會看到字串以法文顯示。 下列情況顯示此建議的案例。
 
   ![NeutralSpecificResources 圖形](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")
 
-## <a name="see-also"></a>請參閱
- 當地語系化[安全性和當地語系化附屬元件](../ide/security-and-localized-satellite-assemblies.md)[的中性資來源語言](../ide/neutral-resources-languages-for-localization.md)[當地語系化應用](../ide/localizing-applications.md)程式[全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)[如何：設定 Windows Forms 的文化特性和 UI 文化特性全球化](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)[如何：設定 ASP.NET Web 網頁全球化的文化特性和 UI 文化](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)特性
+## <a name="see-also"></a>另請參閱
+ 當地語系化[安全性和當地語系化附屬元件](../ide/security-and-localized-satellite-assemblies.md)[的中性資來源語言](../ide/neutral-resources-languages-for-localization.md)當地語系化應用[程式](../ide/localizing-applications.md)[全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)[如何：設定 Windows Forms 全球化的文化特性和 Ui 文化](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)特性[如何：設定 ASP.NET 網頁全球化的文化特性和 ui 文化](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)特性

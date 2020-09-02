@@ -15,38 +15,38 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 3ea451ac60de971677ee2f7910b28b334c67dff3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283095"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>將程式碼新增至多層式架構 (N-Tier) 應用程式中的 TableAdapter
-您可以擴充 TableAdapter 的功能，方法是建立 TableAdapter 的部分類別檔案，並在其中加入程式碼（而不是將程式碼新增至*DatasetName 設計*工具檔案）。 部分類別可讓特定類別的程式碼劃分到多個實體檔案中。 如需詳細資訊，請參閱[partial](/dotnet/visual-basic/language-reference/modifiers/partial)或[partial （類型）](/dotnet/csharp/language-reference/keywords/partial-type)。
+您可以藉由建立 TableAdapter 的部分類別檔案並在其中加入程式碼，來擴充 TableAdapter 的功能 (而不是將程式碼加入至 *DatasetName 設計* 工具檔案) 。 部分類別可讓特定類別的程式碼分散到多個實體檔案中。 如需詳細資訊，請參閱 [部分](/dotnet/visual-basic/language-reference/modifiers/partial) 或 [部分 (類型) ](/dotnet/csharp/language-reference/keywords/partial-type)。
 
-定義 TableAdapter 的程式碼會在每次對資料集中的 TableAdapter 進行變更時產生。 這段程式碼也會在執行任何修改 TableAdapter 設定的 wizard 期間進行變更時產生。 若要避免在重新產生 TableAdapter 期間刪除您的程式碼，請將程式碼新增至 TableAdapter 的部分類別檔案。
+每次對資料集中的 TableAdapter 進行變更時，就會產生定義 TableAdapter 的程式碼。 當修改 TableAdapter 設定的任何 wizard 執行期間發生變更時，也會產生此程式碼。 為了避免在重新產生 TableAdapter 期間刪除您的程式碼，請將程式碼加入至 TableAdapter 的部分類別檔案。
 
-根據預設，當您分隔資料集和 TableAdapter 程式碼之後，結果會是每個專案中的個別類別檔案。 原始專案具有名為*DatasetName*的檔案，也就是包含 TableAdapter 程式碼的*DatasetName.Designer.cs*。 在**資料集專案**屬性中指定的專案具有名為*DatasetName*的檔案，其中包含資料集程式碼。 *DatasetName.DataSet.Designer.cs*
-
-> [!NOTE]
-> 當您分隔資料集與 TableAdapter 時 (設定 [資料集專案]**** 屬性)，將不會自動移動專案中的現有部份資料集類別。 現有的部分資料集類別必須手動移至 dataset 專案。
+根據預設，在您分隔資料集和 TableAdapter 程式碼之後，結果會是每個專案中的個別類別檔案。 原始專案有一個名為 *DatasetName* 的檔案， (或包含 TableAdapter 程式碼的 *DatasetName.Designer.cs*) 。 在 [ **資料集專案** ] 屬性中指定的專案具有名為 *DatasetName* 的檔案， (或包含資料集程式碼的 *DatasetName.DataSet.Designer.cs*) 。
 
 > [!NOTE]
-> 資料集提供 <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> 在需要驗證時產生和事件處理常式的功能。 如需詳細資訊，請參閱[將驗證新增至多層式資料集](../data-tools/add-validation-to-an-n-tier-dataset.md)。
+> 當您分隔資料集與 TableAdapter 時 (設定 [資料集專案]**** 屬性)，將不會自動移動專案中的現有部份資料集類別。 您必須手動將現有的部分資料集類別移至資料集專案。
+
+> [!NOTE]
+> 資料集提供 <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> 在需要驗證時產生事件處理常式和事件處理常式的功能。 如需詳細資訊，請參閱 [將驗證加入至多層式資料集](../data-tools/add-validation-to-an-n-tier-dataset.md)。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>在多層式應用程式中將使用者程式碼加入 TableAdapter
+## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>將使用者程式碼新增至多層式應用程式中的 TableAdapter
 
-1. 找出包含 *.xsd*檔案的專案。
+1. 找出包含 *.xsd* 檔的專案。
 
-2. 按兩下 *.xsd*檔案以開啟 [ **DataSet 設計工具**]。
+2. 按兩下 *.xsd* 檔案以開啟 **DataSet 設計工具**。
 
-3. 以滑鼠右鍵按一下您想要加入程式碼的 TableAdapter，然後選取 [ **View code**]。
+3. 以滑鼠右鍵按一下您要新增程式碼的 TableAdapter，然後選取 [ **視圖程式碼**]。
 
      部分類別會在程式碼編輯器中建立並開啟。
 
-4. 在部分類別宣告內加入程式碼。
+4. 在部分類別宣告中加入程式碼。
 
 5. 下列範例顯示在中將程式碼加入至的位置 `CustomersTableAdapter` `NorthwindDataSet` ：
 

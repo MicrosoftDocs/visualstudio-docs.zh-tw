@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2::GetResolutionInfo | Microsoft Docs
+title: IDebugBreakpointResolution2：： GetResolutionInfo |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 03cdeb1539fc9811a1692a1f7a768da0114a90c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160101"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
@@ -42,16 +42,16 @@ int GetResolutionInfo( 
   
 #### <a name="parameters"></a>參數  
  `dwFields`  
- [in]從旗標的組合[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)列舉型別，判斷哪些欄位`pBPResolutionInfo`參數都必須填寫。  
+ 在 [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) 列舉中的旗標組合，可決定 `pBPResolutionInfo` 要填入參數的哪些欄位。  
   
  `pBPResolutionInfo`  
- [out][BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)結構以填入此中斷點的相關資訊。  
+ 擴展要填入此中斷點相關資訊的 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 結構。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。  
+ 如果成功，則傳回，否則會傳回 `S_OK` 錯誤碼。  
   
 ## <a name="example"></a>範例  
- 下列範例會實作這個方法來簡單`CDebugBreakpointResolution`公開的物件[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)介面。  
+ 下列範例 `CDebugBreakpointResolution` 會針對公開 [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 介面的簡單物件，執行這個方法。  
   
 ```  
 HRESULT CDebugBreakpointResolution::GetResolutionInfo(  

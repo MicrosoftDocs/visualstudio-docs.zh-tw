@@ -53,7 +53,7 @@ string output = engine.ProcessTemplate(templateString, host);
 ## <a name="in-this-section"></a>本節內容
  [逐步解說：建立自訂文字模板主機](../modeling/walkthrough-creating-a-custom-text-template-host.md) 說明如何建立自訂文字模板主控制項，讓文字模板功能可在 Visual Studio 之外使用。
 
-## <a name="reference"></a>參考
+## <a name="reference"></a>參考資料
  [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
 ## <a name="related-sections"></a>相關章節

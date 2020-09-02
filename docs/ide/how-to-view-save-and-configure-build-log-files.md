@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4acf8ca4e116bfb0ab990f1b0aed66bef95820ad
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283901"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>如何：檢視、儲存和設定組建記錄檔
@@ -22,23 +22,23 @@ ms.locfileid: "85283901"
 
 - 若是 c + + 專案，您也可以在建立專案時所建立和儲存的記錄檔中，查看相同的資訊。 
 
-- 針對 managed 程式碼專案，您可以在 [組建輸出] 視窗中按一下，然後按**Ctrl** + **S**。 Visual Studio 會提示您輸入一個位置，將資訊從 [**輸出**] 視窗儲存到記錄檔中。
+- 針對 managed 程式碼專案，您可以按一下 [組建輸出] 視窗，然後按**Ctrl** + **S**。 Visual Studio 會提示您輸入一個位置，將資訊從 **輸出** 視窗儲存到記錄檔中。
 
 您也可以使用 IDE 來指定您想要檢視每個組建的資訊種類。
 
-如果您使用 MSBuild 來建立任何種類的專案，您可以建立記錄檔來儲存組建的相關資訊。 如需詳細資訊，請參閱[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)。
+如果您使用 MSBuild 建立任何類型的專案，您可以建立記錄檔來儲存組建的相關資訊。 如需詳細資訊，請參閱[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)。
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>檢視 C++ 專案的組建記錄檔
 
-1. 在**Windows Explorer**或檔案**瀏覽器**中，開啟下列檔案（相對於專案根資料夾）： [*發行*] \\ <ProjectName> \> 。Log * 或*Debug \\<專案名稱 \> .log*
+1. 在**Windows 檔案總管**或**檔案總管**中，開啟下列檔 (相對於專案根資料夾) ： *Release* \\ <ProjectName> \> 。Log * 或*Debug \\<專案名稱 \> .log*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>建立受控碼專案的組建記錄檔
 
-1. 在功能表列上，選擇 [**組建**] [組建  >  **方案**]。
+1. 在功能表列上，選擇 [**組建**  >  **組建方案**]。
 
 2. 在 [輸出]**** 視窗中，按一下文字中的某處。
 
-3. 按**Ctrl** + **S**。
+3. 按下**Ctrl** + **S**。
 
    Visual Studio 會提示您輸入要儲存建置輸出的位置。
 
@@ -46,13 +46,13 @@ ms.locfileid: "85283901"
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>變更組建記錄檔中包含的資訊量
 
-1. 在功能表列上，選擇 [**工具**] [  >  **選項**]。
+1. 在功能表列上，選擇 [**工具**  >  **選項**]。
 
 2. 在 [專案和解決方案]**** 頁面上，選擇 [建置並執行]**** 頁面。
 
 3. 在 [MSBuild 專案建置輸出詳細資訊層級]**** 清單中，選擇下列其中一個值，然後選擇 [確定]**** 按鈕。
 
-    |詳細資訊層級|說明|
+    |詳細資訊層級|描述|
     | - |-----------------|
     |**Quiet**|只顯示組建摘要。|
     |**最低限度**|顯示組建的摘要，及已分類為高重要性的錯誤、警告和訊息。|

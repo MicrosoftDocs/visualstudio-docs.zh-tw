@@ -22,15 +22,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb0e1feee1f7e1d271dd436a1879731354cbd8bb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78865332"
 ---
 # <a name="cl-task"></a>CL 工作
 
-包裝微軟C++編譯器工具 *，cl.exe*。 編譯器生成可執行檔 *（.exe）* 檔、動態連結程式庫 *（.dll*） 檔或代碼模組 *（.netmodule）* 檔。 有關詳細資訊，請參閱[編譯器選項](/cpp/build/reference/compiler-options)，[並從命令列使用 MSBuild，](/cpp/build/msbuild-visual-cpp)並使用[命令列中的 Microsoft C++工具集](/cpp/build/building-on-the-command-line)。
+包裝 Microsoft c + + 編譯器工具（ *cl.exe*）。 編譯器會產生可執行檔 (*.exe*) 檔案、動態連結程式庫 (*.dll*) 檔案或程式碼模組 (*. .netmodule*) 檔。 如需詳細資訊，請參閱 [編譯器選項](/cpp/build/reference/compiler-options) 和 [從命令列使用 MSBuild](/cpp/build/msbuild-visual-cpp) ，然後 [從命令列使用 Microsoft c + + 工具](/cpp/build/building-on-the-command-line)組。
 
 ## <a name="parameters"></a>參數
 
@@ -42,15 +42,15 @@ ms.locfileid: "78865332"
 
    將目錄加入至要搜尋 include 檔案的目錄清單。
 
-   有關詳細資訊，請參閱[/I（其他包含目錄）](/cpp/build/reference/i-additional-include-directories)。
+   如需詳細資訊，請參閱 [/i (其他 include 目錄) ](/cpp/build/reference/i-additional-include-directories)。
 
 - **AdditionalOptions**
 
    選擇性的 String 參數。
 
-   命令列選項清單。 例如，"/\<option1> /\<option2> /\<option#>"。 使用此參數，來指定任何其他工作參數未表示的命令列選項。
+   命令列選項清單。 例如，"/ \<option1>  / \<option2>  / \<option#> "。 使用此參數，來指定任何其他工作參數未表示的命令列選項。
 
-   有關詳細資訊，請參閱[編譯器選項](/cpp/build/reference/compiler-options)。
+   如需詳細資訊，請參閱 [編譯器選項](/cpp/build/reference/compiler-options)。
 
 - **AdditionalUsingDirectories**
 
@@ -58,7 +58,7 @@ ms.locfileid: "78865332"
 
    指定編譯器要搜尋的目錄，以解析傳遞給 **#using** 指示詞的檔案參考。
 
-   有關詳細資訊，請參閱[/AI（指定中繼資料目錄）](/cpp/build/reference/ai-specify-metadata-directories)。
+   如需詳細資訊，請參閱 [/AI (指定中繼資料目錄) ](/cpp/build/reference/ai-specify-metadata-directories)。
 
 - **AlwaysAppend**
 
@@ -70,7 +70,7 @@ ms.locfileid: "78865332"
 
    建立包含組譯碼的清單檔案。
 
-   有關詳細資訊，請參閱 **/FA**中的 /Fa 選項[/Fa（清單檔）](/cpp/build/reference/fa-fa-listing-file)。
+   如需詳細資訊，請參閱/Fa 中的 **/Fa** 選項 [，/Fa (清單檔) ](/cpp/build/reference/fa-fa-listing-file)。
 
 - **AssemblerOutput**
 
@@ -80,17 +80,17 @@ ms.locfileid: "78865332"
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-  - **無** - *清單\<無>*
+  - **NoListing** - *\<none>*
 
-  - **裝配代碼** - **/FA**
+  - **AssemblyCode**  - **/FA**
 
-  - **裝配和機器代碼** - **/FAc**
+  - **AssemblyAndMachineCode**  - **/FAc**
 
-  - **程式集和原始程式碼** - **/法**
+  - **AssemblyAndSourceCode**  - **/FAs**
 
-  - **所有** - **/FAc**
+  - **全部**  - **/FAcs**
 
-    有關詳細資訊，請參閱 **/FA** **、/FAc** **、/FA**和 **/FAc**選項[/FA、/Fa（清單檔）](/cpp/build/reference/fa-fa-listing-file)中的選項。
+    如需詳細資訊，請參閱/FA 中的 **/FA**、 **/FAc**、 **/FAs**和 **/FAcs** 選項 [、/FA (清單檔) ](/cpp/build/reference/fa-fa-listing-file)。
 
 - **BasicRuntimeChecks**
 
@@ -100,15 +100,15 @@ ms.locfileid: "78865332"
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-  - **Default**  -                          *預設\<無>*
+  - **預設** -                          *\<none>*
 
-  - **堆疊幀運行時檢查** - **/RTC**
+  - **StackFrameRuntimeCheck**  - **/RTCs**
 
-  - **未初始化的本地用法檢查** - **/RTCu**
+  - **UninitializedLocalUsageCheck**  - **/RTCu**
 
-  - **啟用快速檢查** -                          **/RTC1**
+  - **EnableFastChecks**  -                          **/RTC1**
 
-    有關詳細資訊，請參閱[/RTC（執行階段錯誤檢查）。](/cpp/build/reference/rtc-run-time-error-checks)
+    如需詳細資訊，請參閱 [/rtc (執行階段錯誤檢查) ](/cpp/build/reference/rtc-run-time-error-checks)。
 
 - **BrowseInformation**
 
@@ -116,7 +116,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會建立瀏覽資訊檔。
 
-   有關詳細資訊，請參閱 /FR 中的 **/FR**選項[/Fr（創建 .sbr 檔）](/cpp/build/reference/fr-fr-create-dot-sbr-file)
+   如需詳細資訊，請參閱[/fr、/fr (建立 .sbr 檔) ](/cpp/build/reference/fr-fr-create-dot-sbr-file)中的 **/fr**選項。
 
 - **BrowseInformationFile**
 
@@ -124,7 +124,7 @@ ms.locfileid: "78865332"
 
    指定瀏覽資訊檔的檔案名稱。
 
-   有關詳細資訊，請參閱此表中的 **"流覽資訊"** 參數，並另請參閱[/FR、/Fr（創建 .sbr 檔）。](/cpp/build/reference/fr-fr-create-dot-sbr-file)
+   如需詳細資訊，請參閱此表格中的 **>browseinformation** 參數，也會看到 [/fr、/fr (建立 .sbr 檔) ](/cpp/build/reference/fr-fr-create-dot-sbr-file)。
 
 - **BufferSecurityCheck**
 
@@ -148,13 +148,13 @@ ms.locfileid: "78865332"
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-  - **克德克爾** - **/Gd**
+  - **Cdecl**  - **/Gd**
 
-  - **快速呼叫** -                          **/Gr**
+  - **FastCall**  -                          **/Gr**
 
-  - **斯特呼叫** -                          **/Gz**
+  - **StdCall**  -                          **/Gz**
 
-    有關詳細資訊，請參閱[/Gd、/Gr、/Gv、/Gz（呼叫約定）。](/cpp/build/reference/gd-gr-gv-gz-calling-convention)
+    如需詳細資訊，請參閱 [/gd、/Gr、/Gv、/Gz (呼叫慣例) ](/cpp/build/reference/gd-gr-gv-gz-calling-convention)。
 
 - **CompileAs**
 
@@ -164,13 +164,13 @@ ms.locfileid: "78865332"
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-  - **Default**  - *預設\<無>*
+  - **預設** - *\<none>*
 
-  - **編譯AsC/TC**  -  ** **
+  - **CompileAsC**  - **/Tc**
 
-  - **編譯為** - **Cpp/TP**
+  - **CompileAsCpp**  - **/Tp**
 
-    有關詳細資訊，請參閱[/Tc、/Tp、/TC、/TP（指定源檔案類型）](/cpp/build/reference/tc-tp-tc-tp-specify-source-file-type)。
+    如需詳細資訊，請參閱 [/tc、/tp、/tc、/tp (指定來源檔案類型) ](/cpp/build/reference/tc-tp-tc-tp-specify-source-file-type)。
 
 - **CompileAsManaged**
 
@@ -180,15 +180,15 @@ ms.locfileid: "78865332"
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-  - **false**  - *假\<無>*
+  - **假** - *\<none>*
 
-  - **真** - **/clr**
+  - **true**  - **/clr**
 
-  - **純** - **/克拉：純**
+  - **單純**  - **/clr： pure**
 
-  - **安全** - **/克拉：安全**
+  - **安全**  - **/clr： safe**
 
-  - **舊語法** - **/clr：舊語法**
+  - **OldSyntax**  - **/clr： oldSyntax**
 
     如需詳細資訊，請參閱 [/clr (Common Language Runtime 編譯)](/cpp/build/reference/clr-common-language-runtime-compilation)。
 
@@ -198,23 +198,23 @@ ms.locfileid: "78865332"
 
    如果是 `true`，則會告知編譯器來準備「Hotpatch 功能」** 所需的映像。 此參數會確認每個函式的第一個指令都是兩個位元組，這是 Hotpatch 功能所需要的。
 
-   有關詳細資訊，請參閱[/熱補丁（創建可熱圖像）](/cpp/build/reference/hotpatch-create-hotpatchable-image)。
+   如需詳細資訊，請參閱 [/hotpatch (建立可線上修補映射) ](/cpp/build/reference/hotpatch-create-hotpatchable-image)。
 
 - **DebugInformationFormat**
 
    選擇性的 String 參數。
 
-   選擇為程式創建的調試資訊的類型，以及此資訊是保存在物件 *（.obj*） 檔中還是程式資料庫 （PDB）。
+   選取為您的程式建立的偵錯工具類型，以及此資訊是否保留在物件 (*.obj*) 檔或程式資料庫 (PDB) 中。
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-  - **舊樣式** - **/Z7**
+  - **OldStyle**  - **/Z7**
 
-  - **程式資料庫** - **/子**
+  - **ProgramDatabase**  - **/Zi**
 
-  - **編輯並繼續** - **/ZI**
+  - **EditAndContinue**  - **/Zi**
 
-    有關詳細資訊，請參閱[/Z7、/Zi、/ZI（調試資訊格式）。](/cpp/build/reference/z7-zi-zi-debug-information-format)
+    如需詳細資訊，請參閱 [/Z7、/zi、/zi (Debug 資訊格式) ](/cpp/build/reference/z7-zi-zi-debug-information-format)。
 
 - **DisableLanguageExtensions**
 
@@ -222,7 +222,7 @@ ms.locfileid: "78865332"
 
    如果是 **true**，即會告訴編譯器，針對與 ANSI C 或 ANSI C++ 不相容的語言建構發出錯誤。
 
-   有關詳細資訊，請參閱 /Za 中的 **/Za**選項[/Ze（禁用語言擴展）。](/cpp/build/reference/za-ze-disable-language-extensions)
+   如需詳細資訊，請參閱/Za 中的 **/za** 選項 [、/ze (停用語言延伸模組) ](/cpp/build/reference/za-ze-disable-language-extensions)。
 
 - **DisableSpecificWarnings**
 
@@ -230,7 +230,7 @@ ms.locfileid: "78865332"
 
    停用以分號分隔的清單中所指定的警告編號。
 
-   有關詳細資訊，請參閱`/wd` [/w、/W0、/W1、/W2、/W3、/W4、/w1、/w2、/w3、/w4、/Wall、/wd、/we、/wo、/Wv、/Wv、/WX（警告級別）的選項](/cpp/build/reference/compiler-option-warning-level)。
+   如需詳細資訊，請參閱 `/wd` [/W、/W0、/W1、/W2、/W3、/W4、/W1、/W2、/W3、/W4、/Wall、/wd、/we、/Wo、/WV、/Wx (警告層級) ](/cpp/build/reference/compiler-option-warning-level)的選項。
 
 - **EnableEnhancedInstructionSet**
 
@@ -240,9 +240,9 @@ ms.locfileid: "78865332"
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-  - **流式 SIMD 擴展** - **/arch：SSE**
+  - **StreamingSIMDExtensions**  - **/arch： SSE**
 
-  - **流式 SIMD 擴展2** - **/arch：SSE2**
+  - **StreamingSIMDExtensions2**  - **/arch： SSE2**
 
     如需詳細資訊，請參閱 [/arch (x86)](/cpp/build/reference/arch-x86)。
 
@@ -252,7 +252,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會對使用靜態執行緒區域儲存區配置的資料 (也就是使用 `__declspec(thread)` 配置的資料) 支援 Fiber 安全。
 
-   有關詳細資訊，請參閱[/GT（支援光纖安全線程本機存放區）。](/cpp/build/reference/gt-support-fiber-safe-thread-local-storage)
+   如需詳細資訊，請參閱 [/GT (支援光纖安全線程區域儲存區) ](/cpp/build/reference/gt-support-fiber-safe-thread-local-storage)。
 
 - **EnablePREfast**
 
@@ -260,9 +260,9 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會啟用程式碼分析。
 
-   有關詳細資訊，請參閱[/分析（代碼分析）。](/cpp/build/reference/analyze-code-analysis)
+   如需詳細資訊，請參閱 [/analyze (程式碼分析) ](/cpp/build/reference/analyze-code-analysis)。
 
-- **錯誤報表**
+- **ErrorReporting**
 
    選擇性的 String 參數。
 
@@ -270,15 +270,15 @@ ms.locfileid: "78865332"
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-  - **無** - **/錯誤報表：無**
+  - **無**  - **/errorReport：無**
 
-  - **提示** - **/錯誤報表：提示**
+  - **提示**  - **/errorReport： prompt**
 
-  - **佇列** - **/錯誤報表：佇列**
+  - **佇列**  - **/errorReport： queue**
 
-  - **發送** - **/錯誤報表：發送**
+  - **傳送**  - **/errorReport：傳送**
 
-    有關詳細資訊，請參閱[/錯誤報表（報告內部編譯器錯誤）](/cpp/build/reference/errorreport-report-internal-compiler-errors)。
+    如需詳細資訊，請參閱 [/errorReport (報告內部編譯器錯誤) ](/cpp/build/reference/errorreport-report-internal-compiler-errors)。
 
 - **ExceptionHandling**
 
@@ -288,15 +288,15 @@ ms.locfileid: "78865332"
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-  - **false**  - *假\<無>*
+  - **假** - *\<none>*
 
-  - **非同步** - **/EHa**
+  - **非同步**  - **/Eha**
 
-  - **同步** - **/EHsc**
+  - **同步**  - **/Ehsc**
 
-  - **同步投擲** - **/EHs**
+  - **SyncCThrow**  - **/Ehs**
 
-    有關詳細資訊，請參閱[/EH（異常處理模型）。](/cpp/build/reference/eh-exception-handling-model)
+    如需詳細資訊，請參閱 [/EH (例外狀況處理模型) ](/cpp/build/reference/eh-exception-handling-model)。
 
 - **ExpandAttributedSource**
 
@@ -304,7 +304,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會建立清單檔案，並展開已加入原始程式碼的屬性。
 
-   有關詳細資訊，請參閱[/Fx（合併注入的代碼）](/cpp/build/reference/fx-merge-injected-code)。
+   如需詳細資訊，請參閱 [/fx (合併插入的程式碼) ](/cpp/build/reference/fx-merge-injected-code)。
 
 - **FavorSizeOrSpeed**
 
@@ -314,13 +314,13 @@ ms.locfileid: "78865332"
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-  - **兩者都沒有** - *\<>*
+  - **也** - *\<none>*
 
-  - **大小** - **/O**
+  - **大小**  - **/Os**
 
-  - **速度** - **/Ot**
+  - **速度**  - **/Ot**
 
-    有關詳細資訊，請參閱[/O、/Ot（贊成小代碼，喜歡快速代碼）](/cpp/build/reference/os-ot-favor-small-code-favor-fast-code)。
+    如需詳細資訊，請參閱 [/os、/ot (偏好 small code、偏好快速程式碼) ](/cpp/build/reference/os-ot-favor-small-code-favor-fast-code)。
 
 - **FloatingPointExceptions**
 
@@ -328,7 +328,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會啟用可靠的浮點例外狀況模型。 觸發例外狀況之後，將會立即引發例外狀況。
 
-   有關詳細資訊，請參閱 **/fp：/fp**中的選項[（指定浮點行為）。](/cpp/build/reference/fp-specify-floating-point-behavior)
+   如需詳細資訊，請參閱[/fp (指定浮點數行為) ](/cpp/build/reference/fp-specify-floating-point-behavior)中的/**fp： except**選項。
 
 - **FloatingPointModel**
 
@@ -338,13 +338,13 @@ ms.locfileid: "78865332"
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-  - **精確** - **/fp：精確**
+  - **精確**  - **/fp：精確**
 
-  - **嚴格** - **/fp：嚴格**
+  - **Strict**  - **/fp： strict**
 
-  - **快速** - **/fp：快速**
+  - **快速**  - **/fp： fast**
 
-    有關詳細資訊，請參閱[/fp（指定浮點行為）](/cpp/build/reference/fp-specify-floating-point-behavior)。
+    如需詳細資訊，請參閱 [/fp (指定浮點數行為) ](/cpp/build/reference/fp-specify-floating-point-behavior)。
 
 - **ForceConformanceInForLoopScope**
 
@@ -352,7 +352,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會在使用 Microsoft 擴充功能 ([/Ze](/cpp/build/reference/za-ze-disable-language-extensions)) 的 [for](/cpp/cpp/for-statement-cpp) 迴圈中實作標準的 C++ 行為。
 
-   有關詳細資訊，請參閱[/Zc：forScope（迴圈作用域中的強制一致性）](/cpp/build/reference/zc-forscope-force-conformance-in-for-loop-scope)。
+   如需詳細資訊，請參閱 [/zc： forScope (在 for 迴圈範圍) 中強制執行一致性 ](/cpp/build/reference/zc-forscope-force-conformance-in-for-loop-scope)。
 
 - **ForcedIncludeFiles**
 
@@ -360,15 +360,15 @@ ms.locfileid: "78865332"
 
    導致前置處理器要處理一或多個指定的標頭檔。
 
-   有關詳細資訊，請參閱[/FI（名稱強制包含檔）](/cpp/build/reference/fi-name-forced-include-file)。
+   如需詳細資訊，請參閱 [/fi (命名強制 include 檔) ](/cpp/build/reference/fi-name-forced-include-file)。
 
 - **ForcedUsingFiles**
 
-   可選**字串*** 參數。
+   選擇性的 **String []** 參數。
 
    導致前置處理器要一或多個指定的 **#using** 檔案。
 
-   有關詳細資訊，請參閱[/FU（名稱強制#using檔）](/cpp/build/reference/fu-name-forced-hash-using-file)。
+   如需詳細資訊，請參閱 [/FU (命名強制 #using 檔) ](/cpp/build/reference/fu-name-forced-hash-using-file)。
 
 - **FunctionLevelLinking**
 
@@ -376,15 +376,15 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會讓編譯器以封裝函式 (COMDAT) 的格式封裝個別的函式。
 
-   有關詳細資訊，請參閱[/Gy（啟用函數級連結）](/cpp/build/reference/gy-enable-function-level-linking)。
+   如需詳細資訊，請參閱 [/gy (啟用函數層級連結) ](/cpp/build/reference/gy-enable-function-level-linking)。
 
 - **GenerateXMLDocumentationFiles**
 
    選擇性的 `Boolean` 參數。
 
-   如果`true`，導致編譯器處理原始程式碼檔中的文檔注釋，並為具有文檔注釋的每個原始程式碼檔創建 *.xdc*檔。
+   如果為 `true` ，則會導致編譯器處理原始程式碼檔中的檔批註，並為每個包含檔批註的原始程式碼檔案建立一個 *.xdc 檔案。*
 
-   有關詳細資訊，請參閱[/doc（流程文檔注釋）（C/C++）。](/cpp/build/reference/doc-process-documentation-comments-c-cpp) 另請參閱此表格中的 **XMLDocumentationFileName** 參數。
+   如需詳細資訊，請參閱 [/doc (處理檔批註)  (C/c + +) ](/cpp/build/reference/doc-process-documentation-comments-c-cpp)。 另請參閱此表格中的 **XMLDocumentationFileName** 參數。
 
 - **IgnoreStandardIncludePath**
 
@@ -392,25 +392,25 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會防止編譯器在 PATH 和 INCLUDE 環境變數中指定的目錄內搜尋 Include 檔。
 
-   有關詳細資訊，請參閱[/X（忽略標準包含路徑）](/cpp/build/reference/x-ignore-standard-include-paths)。
+   如需詳細資訊，請參閱 [/x (忽略標準 include 路徑) ](/cpp/build/reference/x-ignore-standard-include-paths)。
 
 - **InlineFunctionExpansion**
 
-   可選**字串**參數。
+   選擇性的 **字串** 參數。
 
    選取組建的內嵌函式展開等級。
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-  - **Default**  - *預設\<無>*
+  - **預設** - *\<none>*
 
-  - **禁用** - **/Ob0**
+  - **已停用**  - **/Ob0**
 
-  - **僅顯式內聯** - **/Ob1**
+  - **OnlyExplicitInline**  - **/Ob1**
 
-  - **任何合適的** - **/Ob2**
+  - **AnySuitable**  - **/Ob2**
 
-    有關詳細資訊，請參閱[/Ob（內聯函數擴展）。](/cpp/build/reference/ob-inline-function-expansion)
+    如需詳細資訊，請參閱 [/Ob (內嵌函數展開) ](/cpp/build/reference/ob-inline-function-expansion)。
 
 - **IntrinsicFunctions**
 
@@ -418,7 +418,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會使用內建函式或特殊形式的函式來取代某些函式呼叫，以協助讓您的應用程式執行得更快。
 
-   有關詳細資訊，請參閱[/Oi（生成內建函式）](/cpp/build/reference/oi-generate-intrinsic-functions)。
+   如需詳細資訊，請參閱 [/Oi (產生內建函式) ](/cpp/build/reference/oi-generate-intrinsic-functions)。
 
 - **MinimalRebuild**
 
@@ -426,7 +426,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會啟用最少重建，其可判定是否必須重新編譯包含已變更 C++ 類別定義 (儲存於標頭檔 (.h)) 的 C++ 原始程式檔。
 
-   有關詳細資訊，請參閱[/Gm（啟用最少的重建）](/cpp/build/reference/gm-enable-minimal-rebuild)。
+   如需詳細資訊，請參閱 [/gm (啟用基本重建) ](/cpp/build/reference/gm-enable-minimal-rebuild)。
 
 - **MultiProcessorCompilation**
 
@@ -434,11 +434,11 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會使用多個處理器來編譯。 這個參數會針對電腦上每個有效的處理器建立處理序。
 
-   有關詳細資訊，請參閱[/MP（使用多個進程構建）](/cpp/build/reference/mp-build-with-multiple-processes)。 另請參閱此表格中的 **ProcessorNumber** 參數。
+   如需詳細資訊，請參閱 [使用多個進程的/mp (組建) ](/cpp/build/reference/mp-build-with-multiple-processes)。 另請參閱此表格中的 **ProcessorNumber** 參數。
 
 - **ObjectFileName**
 
-   可選**字串**參數。
+   選擇性的 **字串** 參數。
 
    指定要使用的目的檔 (.obj) 名稱或目錄，而不使用預設值。
 
@@ -446,7 +446,7 @@ ms.locfileid: "78865332"
 
 - **ObjectFiles**
 
-   可選**字串*** 參數。
+   選擇性的 **String []** 參數。
 
    目的檔清單。
 
@@ -454,9 +454,9 @@ ms.locfileid: "78865332"
 
    選擇性的 `Boolean` 參數。
 
-   如果`true`從 物件 *（.obj*） 檔中省略預設的 C 運行時庫名稱。 預設情況下，編譯器將庫的名稱放入 *.obj*檔中，以將連結器定向到正確的庫。
+   如果為，則會 `true` 從物件 (*.obj*) 檔案中省略預設的 C 執行時間程式庫名稱。 根據預設，編譯器會將程式庫的名稱放入 *.obj* 檔中，以將連結器導向至正確的程式庫。
 
-   有關詳細資訊，請參閱[/Zl（Omit 預設庫名稱）。](/cpp/build/reference/zl-omit-default-library-name)
+   如需詳細資訊，請參閱 [/zl (省略預設程式庫名稱) ](/cpp/build/reference/zl-omit-default-library-name)。
 
 - **OmitFramePointers**
 
@@ -464,7 +464,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會在呼叫堆疊上隱藏框架指標的建立。
 
-   有關詳細資訊，請參閱[/Oy（幀指標省略）。](/cpp/build/reference/oy-frame-pointer-omission)
+   如需詳細資訊，請參閱 [/oy (框架指標省略) ](/cpp/build/reference/oy-frame-pointer-omission)。
 
 - **OpenMPSupport**
 
@@ -472,57 +472,57 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會導致編譯器處理 OpenMP 子句和指示詞。
 
-   有關詳細資訊，請參閱[/openmp（啟用 OpenMP 2.0 支援）。](/cpp/build/reference/openmp-enable-openmp-2-0-support)
+   如需詳細資訊，請參閱 [/openmp (啟用 openmp 2.0 支援) ](/cpp/build/reference/openmp-enable-openmp-2-0-support)。
 
-- **Optimization**
+- **最佳化**
 
-   可選**字串**參數。
+   選擇性的 **字串** 參數。
 
    指定各種適用於速度和規模的程式碼最佳化。
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-  - **禁用** - **/Od**
+  - **已停用**  - **/Od**
 
-  - **最小空間** - **/O1**
+  - **MinSpace**  - **/O1**
 
-  - **最大速度** - **/O2**
+  - **MaxSpeed**  - **/O2**
 
-  - **全** - **/牛**
+  - **完整**  - **/Ox**
 
     如需詳細資訊，請參閱 [/O 選項 (最佳化程式碼)](/cpp/build/reference/o-options-optimize-code)。
 
 - **PrecompiledHeader**
 
-   可選**字串**參數。
+   選擇性的 **字串** 參數。
 
-   在生成期間創建或使用預編譯的標頭 （*.pch*） 檔。
+   在組建期間，建立或使用先行編譯標頭檔 (*.pch*) 檔。
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-  - **不使用** - *無>\<*
+  - **NotUsing** - *\<none>*
 
-  - **創建** - **/Yc**
+  - **建立**  - **/Yc**
 
-  - **使用** - **/宇**
+  - **使用**  - **/Yu**
 
-    有關詳細資訊，請參閱[/Yc（創建預編譯的標標頭檔）](/cpp/build/reference/yc-create-precompiled-header-file)和[/Yu（使用預編譯的標標頭檔）。](/cpp/build/reference/yu-use-precompiled-header-file) 另請參閱此表格中的 **PrecompiledHeaderFile** 和 **PrecompiledHeaderOutputFile** 參數。
+    如需詳細資訊，請參閱 [/yc (建立先行編譯標頭檔) ](/cpp/build/reference/yc-create-precompiled-header-file) 和 [/yu (使用先行編譯標頭檔) ](/cpp/build/reference/yu-use-precompiled-header-file)。 另請參閱此表格中的 **PrecompiledHeaderFile** 和 **PrecompiledHeaderOutputFile** 參數。
 
 - **PrecompiledHeaderFile**
 
-   可選**字串**參數。
+   選擇性的 **字串** 參數。
 
    指定要建立或使用的先行編譯標頭檔名稱。
 
-   有關詳細資訊，請參閱[/Yc（創建預編譯的標標頭檔）](/cpp/build/reference/yc-create-precompiled-header-file)和[/Yu（使用預編譯的標標頭檔）。](/cpp/build/reference/yu-use-precompiled-header-file)
+   如需詳細資訊，請參閱 [/yc (建立先行編譯標頭檔) ](/cpp/build/reference/yc-create-precompiled-header-file) 和 [/yu (使用先行編譯標頭檔) ](/cpp/build/reference/yu-use-precompiled-header-file)。
 
 - **PrecompiledHeaderOutputFile**
 
-   可選**字串**參數。
+   選擇性的 **字串** 參數。
 
    指定先行編譯標頭檔的路徑名稱，而不使用預設的路徑名稱。
 
-   有關詳細資訊，請參閱[/Fp（Name .pch 檔）](/cpp/build/reference/fp-name-dot-pch-file)。
+   如需詳細資訊，請參閱 [/fp (命名 .pch 檔案) ](/cpp/build/reference/fp-name-dot-pch-file)。
 
 - **PreprocessKeepComments**
 
@@ -530,7 +530,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會在前置處理期間保留註解。
 
-   有關詳細資訊，請參閱[/C（在預處理期間保留注釋）](/cpp/build/reference/c-preserve-comments-during-preprocessing)。
+   如需詳細資訊，請參閱 [/c (在前置處理期間保留批註) ](/cpp/build/reference/c-preserve-comments-during-preprocessing)。
 
 - **PreprocessorDefinitions**
 
@@ -538,7 +538,7 @@ ms.locfileid: "78865332"
 
    為原始程式檔定義前置處理符號。
 
-   有關詳細資訊，請參閱[/D（預處理器定義）](/cpp/build/reference/d-preprocessor-definitions)。
+   如需詳細資訊，請參閱 [/d (預處理器定義) ](/cpp/build/reference/d-preprocessor-definitions)。
 
 - **PreprocessOutput**
 
@@ -552,7 +552,7 @@ ms.locfileid: "78865332"
 
    指定 **PreprocessToFile** 參數要將前置處理過的輸出寫入其中的輸出檔名稱。
 
-   有關詳細資訊，請參閱[/Fi（預處理輸出檔案名）。](/cpp/build/reference/fi-preprocess-output-file-name)
+   如需詳細資訊，請參閱 [/fi (前置處理輸出檔名稱) ](/cpp/build/reference/fi-preprocess-output-file-name)。
 
 - **PreprocessSuppressLineNumbers**
 
@@ -560,7 +560,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會前置處理 C 和 C++ 原始程式檔，並將前置處理過的檔案複製到標準輸出裝置。
 
-   有關詳細資訊，請參閱[/EP（預處理到不#line指令的停滯）](/cpp/build/reference/ep-preprocess-to-stdout-without-hash-line-directives)。
+   如需詳細資訊，請參閱 [/EP (前置處理至 stdout，而不 #line ](/cpp/build/reference/ep-preprocess-to-stdout-without-hash-line-directives)指示詞) 。
 
 - **PreprocessToFile**
 
@@ -568,7 +568,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會前置處理 C 和 C++ 原始程式檔，並將前置處理過的輸出寫入檔案。
 
-   有關詳細資訊，請參閱[/P（對檔進行預處理）](/cpp/build/reference/p-preprocess-to-a-file)。
+   如需詳細資訊，請參閱 [/p (](/cpp/build/reference/p-preprocess-to-a-file)前置處理至檔案) 。
 
 - **ProcessorNumber**
 
@@ -582,7 +582,7 @@ ms.locfileid: "78865332"
 
    指定程式資料庫 (PDB) 檔案的檔案名稱。
 
-   有關詳細資訊，請參閱[/Fd（程式資料庫檔案名）。](/cpp/build/reference/fd-program-database-file-name)
+   如需詳細資訊，請參閱 [/fd (程式資料庫檔案名) ](/cpp/build/reference/fd-program-database-file-name)。
 
 - **RuntimeLibrary**
 
@@ -592,15 +592,15 @@ ms.locfileid: "78865332"
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-  - **多執行緒** - **/MT**
+  - **多執行緒**  - **/Mt**
 
-  - **多執行緒調試** - **/MTd**
+  - **MultiThreadedDebug**  - **/MTd**
 
-  - **多執行緒 DLL** - **/MD**
+  - **MultiThreadedDLL**  - **/Md**
 
-  - **多執行緒調試DLL** - **/MDd**
+  - **Multithreadeddll**  - **/MDd**
 
-    有關詳細資訊，請參閱[/MD、/MT、/LD（使用運行時庫）。](/cpp/build/reference/md-mt-ld-use-run-time-library)
+    如需詳細資訊，請參閱 [/md、/mt、/ld (使用執行時間程式庫) ](/cpp/build/reference/md-mt-ld-use-run-time-library)。
 
 - **RuntimeTypeInfo**
 
@@ -608,7 +608,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會加入程式碼，以便在執行階段檢查 C++ 物件類型 (執行階段類型資訊)。
 
-   有關詳細資訊，請參閱[/GR（啟用運行時類型資訊）。](/cpp/build/reference/gr-enable-run-time-type-information)
+   如需詳細資訊，請參閱 [/GR (啟用執行時間類型資訊) ](/cpp/build/reference/gr-enable-run-time-type-information)。
 
 - **ShowIncludes**
 
@@ -616,7 +616,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會導致編譯器輸出 include 檔案清單。
 
-   有關詳細資訊，請參閱[/show 包括（清單包含檔）](/cpp/build/reference/showincludes-list-include-files)。
+   如需詳細資訊，請參閱 [/showIncludes (清單) 中包含 ](/cpp/build/reference/showincludes-list-include-files)檔案。
 
 - **SmallerTypeCheck**
 
@@ -624,7 +624,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，若將某個值指派給較小的資料類型，就會報告執行階段錯誤，並造成資料遺失。
 
-   有關詳細資訊，請參閱 **/RTC 中的 /RTCc**選項[（執行階段錯誤檢查）。](/cpp/build/reference/rtc-run-time-error-checks)
+   如需詳細資訊，請參閱[/rtc (執行階段錯誤檢查) ](/cpp/build/reference/rtc-run-time-error-checks)中的 **/RTCc**選項。
 
 - **來源**
 
@@ -638,7 +638,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，就能讓編譯器在程式映像中建立一份完全相同的字串。
 
-   有關詳細資訊，請參閱[/GF（消除重複字串）。](/cpp/build/reference/gf-eliminate-duplicate-strings)
+   如需詳細資訊，請參閱 [/gf (消除重複的字串) ](/cpp/build/reference/gf-eliminate-duplicate-strings)。
 
 - **StructMemberAlignment**
 
@@ -648,19 +648,19 @@ ms.locfileid: "78865332"
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-  - **預設值** - **/Zp1**
+  - **預設值**  - **/Zp1**
 
-  - **1位元組** - **/Zp1**
+  - **1Byte**  - **/Zp1**
 
-  - **2 位元組** - **/Zp2**
+  - **2Bytes**  - **/Zp2**
 
-  - **4 位元組** - **/Zp4**
+  - **4Bytes**  - **/Zp4**
 
-  - **8 位元組** - **/Zp8**
+  - **8Bytes**  - **了/zp8**
 
-  - **16位元組** - **/Zp16**
+  - **16Bytes**  - **/Zp16**
 
-    有關詳細資訊，請參閱[/Zp（結構成員對齊）](/cpp/build/reference/zp-struct-member-alignment)。
+    如需詳細資訊，請參閱 [/Zp (結構成員對齊) ](/cpp/build/reference/zp-struct-member-alignment)。
 
 - **SuppressStartupBanner**
 
@@ -668,7 +668,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，當工作開始時，會防止顯示著作權和版本號碼訊息。
 
-   有關詳細資訊，請參閱[/nologo（抑制啟動橫幅）（C/C++）](/cpp/build/reference/nologo-suppress-startup-banner-c-cpp)。
+   如需詳細資訊，請參閱 [/nologo (隱藏啟動橫幅)  (C/c + +) ](/cpp/build/reference/nologo-suppress-startup-banner-c-cpp)。
 
 - **TrackerLogDirectory**
 
@@ -680,11 +680,11 @@ ms.locfileid: "78865332"
 
 - **TreatSpecificWarningsAsErrors**
 
-   可選**字串*** 參數。
+   選擇性的 **String []** 參數。
 
    將指定的編譯器警告清單視為錯誤。
 
-   有關詳細資訊，請參閱[/w、/W0、/W1、/W2、/W3、/W4、/w1、/w2、/w3、/w4、/Wall、/wd、/we、/wo、/Wv、/WX（警告級別）中的](/cpp/build/reference/compiler-option-warning-level)**/我們**`n`選項。
+   如需詳細資訊，請 **/we**參閱 `n` [/W、/W0、/W1、/W2、/W3、/W4、/W1、/W2、/W3、/W4、/Wall、/wd、/we、/wo、/Wv、、、、、/wx (警告層級) ](/cpp/build/reference/compiler-option-warning-level)的/we 選項。
 
 - **TreatWarningAsError**
 
@@ -692,7 +692,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會將所有的編譯器警告視為錯誤。
 
-   有關詳細資訊，請參閱 **/WX**選項，包括[/w、/W0、/W1、/W2、/W3、/W4、/w1、/w2、/w3、/w4、/Wall、/wd、/we、/wo、/Wv、/WX（警告級別）。](/cpp/build/reference/compiler-option-warning-level)
+   如需詳細資訊，請參閱/w 中的 **/wx** 選項 [、/W0、/W1、/W2、/W3、/W4、/W1、/W2、/W3、/W4、/Wall、/wd、/we、/wo、/Wv、/wx (警告層級) ](/cpp/build/reference/compiler-option-warning-level)。
 
 - **TreatWChar_tAsBuiltInType**
 
@@ -700,7 +700,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會將 `wchar_t` 類型視為原生類型。
 
-   有關詳細資訊，請參閱[/Zc：wchar_t（wchar_t是本機類型）。](/cpp/build/reference/zc-wchar-t-wchar-t-is-native-type)
+   如需詳細資訊，請參閱 [/zc： wchar_t (wchar_t 是原生類型) ](/cpp/build/reference/zc-wchar-t-wchar-t-is-native-type)。
 
 - **UndefineAllPreprocessorDefinitions**
 
@@ -708,7 +708,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會取消定義編譯器所定義的 Microsoft 特定符號。
 
-   有關詳細資訊，請參閱[/U、/u 中的 /u 選項（取消定義符號）。](/cpp/build/reference/u-u-undefine-symbols) **/u**
+   如需詳細資訊，請參閱/U 中的 **/u** 選項 [，/U (取消定義符號) ](/cpp/build/reference/u-u-undefine-symbols)。
 
 - **UndefinePreprocessorDefinitions**
 
@@ -716,7 +716,7 @@ ms.locfileid: "78865332"
 
    指定要取消定義的一或多個前置處理器符號清單。
 
-   有關詳細資訊，請參閱 /U 中的 **/U**選項[/u（取消定義符號）](/cpp/build/reference/u-u-undefine-symbols)。
+   如需詳細資訊，請參閱/u 中的 **/u** 選項 [，/U (取消定義符號) ](/cpp/build/reference/u-u-undefine-symbols)。
 
 - **UseFullPaths**
 
@@ -724,7 +724,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會顯示在診斷中傳遞給編譯器的原始程式檔完整路徑。
 
-   有關詳細資訊，請參閱[/FC（診斷中原始程式碼檔的完整路徑）](/cpp/build/reference/fc-full-path-of-source-code-file-in-diagnostics)。
+   如需詳細資訊，請參閱 [/FC (診斷) 中原始程式碼檔的完整路徑 ](/cpp/build/reference/fc-full-path-of-source-code-file-in-diagnostics)。
 
 - **UseUnicodeForAssemblerListing**
 
@@ -732,7 +732,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，就會以 UTF-8 格式建立輸出檔。
 
-   有關詳細資訊，請參閱[/FA、/Fa（清單檔）](/cpp/build/reference/fa-fa-listing-file)中的 **/FA**選項。
+   如需詳細資訊，請參閱/FA 中的 **/FAu** 選項 [，/FA (清單檔) ](/cpp/build/reference/fa-fa-listing-file)。
 
 - **WarningLevel**
 
@@ -742,19 +742,19 @@ ms.locfileid: "78865332"
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-  - **關閉所有警告** - **/W0**
+  - **TurnOffAllWarnings**  - **/W0**
 
-  - **級別1** - **/W1**
+  - **級別**  -  1 **/W1**
 
-  - **級別2** - **/W2**
+  - **級別 2**  - **/W2**
 
-  - **級別3** - **/W3**
+  - **3**  -  級 **/W3**
 
-  - **級別4** - **/W4**
+  - **Level4**  - **/W4**
 
-  - **啟用所有警告** - **/牆**
+  - **警告**  - **/Wall**
 
-    有關詳細資訊，請參閱[/w、/W0、/W1、/W2、/W3、/W4、/w1、/w2、/w3、/w4、/Wall、/wd、/we、/wo、/Wv、/WX（警告級別）中的](/cpp/build/reference/compiler-option-warning-level) **/W**_n_選項。
+    如需詳細資訊，請參閱[/w、/W0、/W1、/W2、/W3、/W4、/W1、/W2、/W3、/W4、/Wall、/wd、/we、/wo、/Wv、、、、、/wx (警告層級) ](/cpp/build/reference/compiler-option-warning-level)中的 **/w**_n_選項。
 
 - **WholeProgramOptimization**
 
@@ -762,7 +762,7 @@ ms.locfileid: "78865332"
 
    如果是 `true`，即會啟用整個程式最佳化。
 
-   有關詳細資訊，請參閱[/GL（整個程式優化）。](/cpp/build/reference/gl-whole-program-optimization)
+   如需詳細資訊，請參閱 [/gl (整個程式優化) ](/cpp/build/reference/gl-whole-program-optimization)。
 
 - **XMLDocumentationFileName**
 
@@ -770,7 +770,7 @@ ms.locfileid: "78865332"
 
    指定所產生的 XML 文件檔名稱。 這個參數可以是檔案或目錄的名稱。
 
-   有關詳細資訊，請參閱`name`[/doc（進程文檔注釋）（C/C++）中的](/cpp/build/reference/doc-process-documentation-comments-c-cpp)參數。 另請參閱此表格中的 **GenerateXMLDocumentationFiles** 參數。
+   如需詳細資訊，請參閱 `name` [/Doc (處理檔批註中的引數)  (C/c + +) ](/cpp/build/reference/doc-process-documentation-comments-c-cpp)。 另請參閱此表格中的 **GenerateXMLDocumentationFiles** 參數。
 
 - **MinimalRebuildFromTracking**
 
@@ -784,7 +784,7 @@ ms.locfileid: "78865332"
 
    指定代表「讀取檔案追蹤記錄檔」** 的項目陣列。
 
-   讀取檔跟蹤日誌 *（.tlog*） 包含任務讀取的輸入檔的名稱，並且專案生成系統用於支援增量生成。 如需詳細資訊，請參閱此表格中的 **TrackerLogDirectory** 和 **TrackFileAccess** 參數。
+   讀取檔案追蹤記錄 *檔 () * 包含工作所讀取的輸入檔名稱，且專案組建系統會使用它來支援累加組建。 如需詳細資訊，請參閱此表格中的 **TrackerLogDirectory** 和 **TrackFileAccess** 參數。
 
 - **TLogWriteFiles**
 
@@ -792,7 +792,7 @@ ms.locfileid: "78865332"
 
    指定代表「寫入檔案追蹤記錄檔」** 的項目陣列。
 
-   寫入檔跟蹤日誌 *（.tlog*） 包含由任務編寫的輸出檔案的名稱，並且專案生成系統用於支援增量生成。 如需詳細資訊，請參閱此表格中的 **TrackerLogDirectory** 和 **TrackFileAccess** 參數。
+   寫入檔案追蹤記錄 *檔 () * 包含工作所寫入之輸出檔案的名稱，並由專案組建系統用來支援累加式組建。 如需詳細資訊，請參閱此表格中的 **TrackerLogDirectory** 和 **TrackFileAccess** 參數。
 
 - **TrackFileAccess**
 
@@ -804,4 +804,4 @@ ms.locfileid: "78865332"
 
 ## <a name="see-also"></a>另請參閱
 
-- [任務引用](../msbuild/msbuild-task-reference.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

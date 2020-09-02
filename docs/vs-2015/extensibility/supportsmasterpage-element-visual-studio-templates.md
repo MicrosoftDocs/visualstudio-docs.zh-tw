@@ -1,5 +1,5 @@
 ---
-title: SupportsMasterPage 項目 （Visual Studio 範本） |Microsoft Docs
+title: " (Visual Studio 範本的 SupportsMasterPage 元素) |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,19 +14,19 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 051bde61132d286c3941a12c2e970aa2019fc0b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160467"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-指定是否**選取主版頁面**上已啟用 核取方塊**加入新項目** 對話方塊。  
+指定是否在 [**加入新專案**] 對話方塊中啟用 [**選取主版頁面**] 核取方塊。  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<SupportsMasterPage>  
   
 ## <a name="syntax"></a>語法  
@@ -48,20 +48,20 @@ ms.locfileid: "68160467"
   
 |項目|描述|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|指定分類的範本，並定義中的顯示方式的資料**新的專案**或是**新項目** 對話方塊。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|指定將範本分類的資料，並定義該範本在 [ **新增專案** ] 或 [ **新增專案** ] 對話方塊中顯示的方式。|  
   
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 文字必須是`true`或是`false`，這表示，zda bude**選取主版頁面**上已啟用 核取方塊**加入新項目**對話方塊。  
+ 此文字必須是 `true` 或 `false` ，表示 [**加入新專案**] 對話方塊中是否已啟用 [**選取主版頁面**] 核取方塊。  
   
 ## <a name="remarks"></a>備註  
- `SupportsMasterPage` 是選擇性項目。 預設值為 `false`。  
+  是選擇性元素。 預設值是 `false`。  
   
- `SupportsMasterPage`項目僅適用於 Web 項目範本。  
+ `SupportsMasterPage`元素僅適用于 Web 專案範本。  
   
 ## <a name="example"></a>範例  
- 下列範例說明包含支援主版頁面的 Web 專案的中繼資料。  
+ 下列範例說明包含主版頁面支援的 Web 專案中繼資料。  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  
@@ -86,5 +86,5 @@ ms.locfileid: "68160467"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
