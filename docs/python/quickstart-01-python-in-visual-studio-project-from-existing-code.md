@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8fbbd8c49ecc367a0dd01d9ab775735b93174fe6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62429046"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>快速入門：從現有程式碼建立 Python 專案
@@ -26,7 +26,7 @@ ms.locfileid: "62429046"
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-如果需要，通過按**Ctrl**+**F5** **或選擇** > **"調試開始而不調試 "** 來運行程式。
+如有需要，請按下**Ctrl** + **F5**或選取 [ **Debug**  >  **啟動時不進行調試**程式] 來執行程式。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -36,5 +36,5 @@ ms.locfileid: "62429046"
 ## <a name="see-also"></a>另請參閱
 
 - [手動識別現有的 Python 解譯器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [在 Visual Studio 2015 和更早版本安裝 Python 支援](installing-python-support-in-visual-studio.md)
+- [在 Visual Studio 2015 及更早版本中安裝 Python 支援](installing-python-support-in-visual-studio.md)
 - [安裝位置](installing-python-support-in-visual-studio.md#install-locations)

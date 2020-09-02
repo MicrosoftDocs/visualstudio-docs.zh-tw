@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadULONGLONG |Microsoft Docs
+title: IDiaPropertyStorage：： ReadULONGLONG |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6da509e226a612e80a10ca0759b5e264f31a1e13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538665"
 ---
 # <a name="idiapropertystoragereadulonglong"></a>IDiaPropertyStorage::ReadULONGLONG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-讀取`ULONGLONG`屬性集合中的值。  
+讀取 `ULONGLONG` 屬性集中的值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -36,16 +36,16 @@ HRESULT ReadULONGLONG ( 
   
 #### <a name="parameters"></a>參數  
  `id`  
- [in]要讀取之屬性的識別項 (`PROPID`定義為 WTypes.h 中`ULONG`)。  
+ 在要讀取之屬性的識別碼 (`PROPID` 在 wtypes.h 中定義為 `ULONG`) 。  
   
  `pValue`  
- [out]傳回屬性值。  
+ 擴展傳回屬性值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 傳回`E_INVALIDARG`如果屬性不是型別的`ULONGLONG`。  
+ 如果成功，則傳回，否則會傳回 `S_OK` 錯誤碼。 `E_INVALIDARG`如果屬性不是型別，則會傳回 `ULONGLONG` 。  
   
 ## <a name="remarks"></a>備註  
- A`ULONGLONG`為 64 位元不帶正負號整數的 Windows 所定義。  
+ `ULONGLONG`由 Windows 定義為64位不帶正負號的整數。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

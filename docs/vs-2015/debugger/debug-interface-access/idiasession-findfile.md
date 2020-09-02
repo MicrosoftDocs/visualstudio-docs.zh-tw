@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e791bc09ba3dd4f1811c650926eadb0f7f0462a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431637"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取原始程式檔編譯模組和名稱。  
+依編譯單位和名稱抓取原始程式檔。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,19 +38,19 @@ HRESULT findFile ( 
   
 #### <a name="parameters"></a>參數  
  `pCompiland`  
- [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示要當做內容用於搜尋的編譯。 將此參數設定為`NULL`若要在所有編譯中都尋找原始程式檔。  
+ 在 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件，代表要當做搜尋內容使用的編譯單位。 將此參數設定為， `NULL` 以在所有 compilands 中尋找原始檔。  
   
  `name`  
- [in]指定要擷取的來源檔案的名稱。 將此參數設定為`NULL`所有原始程式檔，來擷取。  
+ 在指定要取出的原始程式檔名稱。 `NULL`針對要取出的所有來源檔案，將此參數設定為。  
   
  `option`  
- [in]指定套用至搜尋名稱的比較選項。 從數值[NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)單獨或合併，就可以使用列舉型別。  
+ 在指定套用至名稱搜尋的比較選項。 [NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)列舉中的值可以單獨使用或合併使用。  
   
  `ppResult`  
- [out]傳回[IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)擷取物件，包含來源檔案的清單。  
+ 擴展傳回 [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) 物件，其中包含已抓取的原始程式檔清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
   

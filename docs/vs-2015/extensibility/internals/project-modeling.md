@@ -1,5 +1,5 @@
 ---
-title: 專案模型化 |Microsoft Docs
+title: 專案模型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,20 +12,20 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e0edca4a45419a4a4c962ebf62b65e99c4732a12
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431359"
 ---
 # <a name="project-modeling"></a>將專案模型化
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-您的專案實作標準專案物件，提供自動化的下一個步驟：<xref:EnvDTE.Projects>並`ProjectItems`集合，而`Project`和<xref:EnvDTE.ProjectItem>物件; 並且您的實作唯一剩餘的物件。 Dteinternal.h 檔案中，會定義這些標準的物件。 BscPrj 範例中，會提供標準的物件的實作。 您可以使用這些類別為模型來建立您自己的標準專案物件，並排顯示，就能從其他專案類型的專案物件。  
+為您的專案提供自動化的下一個步驟是執行標準專案物件： <xref:EnvDTE.Projects> 和集合、 `ProjectItems` `Project` 和 <xref:EnvDTE.ProjectItem> 物件，以及您的實作為唯一的其餘物件。 這些標準物件定義于 Dteinternal 檔中。 BscPrj 範例中提供標準物件的執行。 您可以使用這些類別作為模型來建立您自己的標準專案物件，這些物件與其他專案類型的專案物件並存。  
   
- 自動化取用者會假設要能夠呼叫<xref:EnvDTE.Solution>(「`<UniqueProjName>")`並<xref:EnvDTE.ProjectItems>(`n`) 其中 n 是個取得特定方案的專案中的索引號碼。 進行這個自動化呼叫導致環境呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A>上適當的專案階層架構，傳遞 VSITEMID_ROOT 做 VSHPROPID_ExtObject VSHPROPID 參數做為項目識別碼參數。 `IVsHierarchy::GetProperty` 會傳回`IDispatch`提供核心的 automation 物件的指標`Project`您已實作的介面。  
+ 自動化取用者假設能夠呼叫 <xref:EnvDTE.Solution> (」 `<UniqueProjName>")` 和 <xref:EnvDTE.ProjectItems> (`n`) 其中 n 是取得方案中特定專案的索引編號。 進行此自動化呼叫會使環境在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A> 適當的專案階層上呼叫，並傳遞 VSITEMID_ROOT 作為 ItemID 參數，並 VSHPROPID_ExtObject 為 VSHPROPID 參數。 `IVsHierarchy::GetProperty` 傳回 `IDispatch` automation 物件的指標，該物件提供您所執行的核心 `Project` 介面。  
   
- 以下是語法`IVsHierarchy::GetProperty`。  
+ 以下是的語法 `IVsHierarchy::GetProperty` 。  
   
  `HRESULT GetProperty (`  
   
@@ -37,7 +37,7 @@ ms.locfileid: "62431359"
   
  `);`  
   
- 專案容納巢狀結構，並使用集合來建立群組的專案項目。 階層如下所示。  
+ 專案可容納嵌套並使用集合來建立專案專案的群組。 階層看起來像這樣。  
   
 ```  
 Projects  
@@ -46,14 +46,14 @@ Projects
           |– ProjectItem (single object) or ProjectItems (another collection)  
 ```  
   
- 巢狀結構表示<xref:EnvDTE.ProjectItem>物件可以是<xref:EnvDTE.ProjectItems>集合中的相同時間因為`ProjectItems`集合可以包含巢狀的物件。 在基本的專案範例不會示範這個巢狀結構。 藉由實作`Project`物件時，您參與特性之整體的自動化模型的設計類似樹狀目錄結構。  
+ 「嵌套」（ <xref:EnvDTE.ProjectItem> nested）表示物件可以 <xref:EnvDTE.ProjectItems> 同時集合，因為 `ProjectItems` 集合可以包含嵌套物件。 基本專案範例不會示範這種嵌套。 藉由執行此 `Project` 物件，您就可以參與類似樹狀結構，以反映整體 automation 模型的設計。  
   
- 專案自動化遵循下圖中的路徑。  
+ 專案自動化會遵循下圖中的路徑。  
   
  ![Visual Studio 專案物件](../../extensibility/internals/media/projectobjects.gif "ProjectObjects")  
 專案自動化  
   
- 如果您不會實作`Project`物件時，環境仍會傳回泛型`Project`物件，其中包含專案的名稱。  
+ 如果您未執行 `Project` 物件，則環境仍會傳回 `Project` 只包含專案名稱的泛型物件。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:EnvDTE.Projects>   

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5f13921dea810ab2185e626cc2889f339d9d174f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537177"
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>從命令列建立基本的分析報告
@@ -27,7 +27,7 @@ ms.locfileid: "62537177"
  **VSPerfReport** `VSPFile` **/Summary:All**  
  產生可供 .vsp 或.vsps 檔案使用的所有報表。  
   
- **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...]  
+ **VSPerfReport** `VSPFile`**/Summary：** `ReportType`[,`ReportType`...]  
  產生指定的報表類型。  
   
  **VSPerfReport** `VSPFile` **/CallTrace**  
@@ -41,16 +41,16 @@ ms.locfileid: "62537177"
 |**CallerCallee**|代表函式之間的父/子關聯性。|-   [取樣資料](../profiling/caller-callee-view-sampling-data.md)<br />-   [檢測資料](../profiling/caller-callee-view-instrumentation-data.md)<br />-   [.NET 記憶體取樣資料](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)<br />-   [.NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)<br />-   [爭用資料](../profiling/caller-callee-view-contention-data.md)|  
 |**Function**|依函式列出程式碼剖析資料。|-   [取樣資料](../profiling/functions-view-sampling-data.md)<br />-   [檢測資料](../profiling/functions-view-instrumentation-data.md)<br />-   [.NET 記憶體取樣資料](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [.NET 記憶體檢測資料](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [爭用資料](../profiling/functions-view-contention-data.md)|  
 |**呼叫樹狀結構**|表示執行路徑以及分析執行中的函式分析資料。|-   [檢測資料](../profiling/call-tree-view-instrumentation-data.md)<br />-   [取樣資料](../profiling/call-tree-view-sampling-data.md)<br />-   [.NET 記憶體取樣資料](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [.NET 記憶體檢測資料](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [爭用資料](../profiling/call-tree-view-contention-data.md)|  
-|**Counter**|列出分析執行期間所收集的分析標記以及 Windows 效能計數器值。|-   [標記檢視](../profiling/marks-view.md)|  
+|**計數器**|列出分析執行期間所收集的分析標記以及 Windows 效能計數器值。|-   [標記視圖](../profiling/marks-view.md)|  
 |**Ip**|依指令列出分析資料。|-   [取樣資料](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [.NET 記憶體取樣資料](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [爭用資料](../profiling/instruction-pointers-ips-view-contention-data.md)|  
-|**存留期**|列出配置物件的存留期。|-   [物件存留期檢視](../profiling/object-lifetime-view.md)|  
-|**程式碼**|按原始程式碼列出分析資料。|-   [取樣資料](../profiling/lines-view-sampling-data.md)<br />-   [.NET 記憶體取樣資料](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [爭用資料](../profiling/lines-view-contention-data.md)|  
+|**存留期**|列出配置物件的存留期。|-   [物件存留期視圖](../profiling/object-lifetime-view.md)|  
+|**線條**|按原始程式碼列出分析資料。|-   [取樣資料](../profiling/lines-view-sampling-data.md)<br />-   [.NET 記憶體取樣資料](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [爭用資料](../profiling/lines-view-contention-data.md)|  
 |**標頭**|分析資料檔案標頭資訊。|檔案專用。|  
-|**Mark**|在分析執行中收集的分析標記。|-   [標記檢視](../profiling/marks-view.md)|  
+|**標記**|在分析執行中收集的分析標記。|-   [標記視圖](../profiling/marks-view.md)|  
 |**模組**|列出模組的分析資料。|-   [取樣資料](../profiling/modules-view-sampling-data.md)<br />-   [檢測資料](../profiling/modules-view-instrumentation-data.md)<br />-   [.NET 記憶體取樣資料](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [.NET 記憶體檢測資料](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [爭用資料](../profiling/modules-view-contention-data.md)|  
-|**Process**|列出處理序的分析資料。|-   [處理序檢視](../profiling/process-view.md)<br />-   [爭用資料](../profiling/process-view-contention-data.md)|  
-|**Thread**|列出執行序的分析資料。|-   [處理序檢視](../profiling/process-view.md)|  
-|**Type**|依類型列出配置的分析資料。|-   [配置檢視](../profiling/dotnet-memory-allocations-view.md)|  
-|**爭用**|資源爭用。|-   [資源爭用](../profiling/resource-contentions-view-contention-data.md)|  
+|**處理**|列出處理序的分析資料。|-   [進程視圖](../profiling/process-view.md)<br />-   [爭用資料](../profiling/process-view-contention-data.md)|  
+|**執行緒**|列出執行序的分析資料。|-   [進程視圖](../profiling/process-view.md)|  
+|**類型**|依類型列出配置的分析資料。|-   [配置視圖](../profiling/dotnet-memory-allocations-view.md)|  
+|**爭論**|資源爭用。|-   [資源爭用](../profiling/resource-contentions-view-contention-data.md)|  
 |**RuleWarnings**|列出效能規則問題。|-   列出規則問題的 CheckId、描述和原始程式碼位置。|  
 |**ETW**|列出分析執行中所收集的 Windows 事件追蹤 (ETW) 事件。|-   [ETW 報表](../profiling/event-tracing-for-windows-etw-report.md)|

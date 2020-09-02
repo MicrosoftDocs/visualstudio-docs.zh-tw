@@ -1,5 +1,5 @@
 ---
-title: 移轉 64 位元偵錯工具 COM 類別登錄 |Microsoft Docs
+title: 遷移64位偵錯工具 COM 類別註冊 |Microsoft Docs
 ms.date: 11/10/2016
 ms.topic: conceptual
 ms.assetid: 45cfcee6-7a68-4d4f-b3f6-e2d8a0fa066a
@@ -9,23 +9,23 @@ manager: jillfra
 ms.workload:
 - greggm
 ms.openlocfilehash: 74fbb959f8272be001aad8a576724d5eb1ad6157
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62433691"
 ---
-# <a name="migrate-64-bit-debugger-com-class-registration"></a>移轉 64 位元偵錯工具 COM 類別註冊
+# <a name="migrate-64-bit-debugger-com-class-registration"></a>遷移64位偵錯工具 COM 類別註冊
 
-註冊 COM 的偵錯工具擴充功能中的類別 HKEY_CLASSES_ROOT 使用 regasm，regsvr32，或直接將資料寫入登錄，以及載入*msvsmon.exe* （遠端偵錯工具），就可以提供這項服務而不需要寫入 HKEY_CLASSES_ROOT msvsmon 要註冊。 這會影響舊版的.NET 偵錯工具運算式評估工具或偵錯引擎設定為在載入*msvsmon.exe*程序。
+針對在 HKEY_CLASSES_ROOT 中使用 regasm、regsvr32 或直接寫入登錄並載入至 *msvsmon.exe* (遠端偵錯程式) 的偵錯工具擴充功能，現在可以將此註冊提供給 msvsmon，而不需要寫入至 HKEY_CLASSES_ROOT。 這會影響舊版 .NET 偵錯工具運算式評估工具或設定為在 *msvsmon.exe* 進程中載入的偵錯工具引擎。
 
-## <a name="msvsmon-comclass-def"></a>msvsmon-comclass-def
+## <a name="msvsmon-comclass-def"></a>msvsmon-comclass.zip-def
 
-若要使用這項技術，將 **.msvsmon-comclass-def.json* msvsmon 旁邊的檔案 (InstallDir:* \Common7\IDE\Remote Debugger\x64*)。
+若要使用這項技術，請 ** 在* msvsmon (InstallDir：* \Common7\IDE\Remote Debugger\x64 * ) 旁的檔案上新增.msvsmon-comclass-def.js。
 
-以下是範例 msvsmon-comclass-def 檔註冊管理和一個原生類別：
+以下是一個範例 msvsmon-comclass.zip .def 檔案，其會註冊一個 managed 和一個原生類別：
 
-檔案名稱：*MyCompany.MyExample.msvsmon-comclass-def.json*
+檔案名： *MyCompany.MyExample.msvsmon-comclass-def.js開啟*
 
 ```json
 {

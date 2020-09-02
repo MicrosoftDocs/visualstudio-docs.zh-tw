@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetAddressesFromPosition | Microsoft Docs
+title: IDebugSymbolProvider：： GetAddressesFromPosition |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 27349cfdc438da133c4cea05077649ebb4df376c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547152"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個方法會對應到陣列的文件位置的偵錯位址。  
+這個方法會將檔位置對應到一個 debug 位址陣列中。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,26 +46,26 @@ int GetAddressesFromPosition( 
   
 #### <a name="parameters"></a>參數  
  `pDocPos`  
- [in]文件位置。  
+ 在檔位置。  
   
  `fStatmentOnly`  
- [in]如果為 TRUE，會限制單一陳述式的偵錯位址。  
+ 在若為 TRUE，則會將 debug 位址限制為單一語句。  
   
  `ppEnumBegAddresses`  
- [out]傳回與這個陳述式或列關聯的開始偵錯位址的列舉值。  
+ 擴展傳回與這個語句或行相關聯之起始偵錯工具位址的列舉值。  
   
  `ppEnumEndAddresses`  
- [out]傳回[IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)結束此陳述式或列相關聯的偵錯地址的列舉值。  
+ 擴展傳回與這個語句或行相關之結束 debug 位址的 [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) 列舉值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 文件位置通常表示一組原始程式行。 此方法可讓您提供的開始和結束偵錯位址相關聯這幾行。 有些語言允許跨越多行或包含多個陳述式的行的陳述式。 這個方法會提供要限制為單一陳述式的偵錯位址的旗標。  
+ 檔位置通常表示原始程式列的範圍。 這個方法會提供與這些行相關聯的開始與結束的偵錯工具位址。 某些語言允許跨越多行的語句，或是包含多個語句的行。 這個方法會提供旗標，將 debug 位址限制為單一語句。  
   
- 可以單一的陳述式，才會有多個偵錯位址，如同範本的情況。  
+ 單一語句有可能會有多個 debug 位址，如同範本的情況一樣。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
- [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)   
+ [GetAddressesFromCoNtext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)   
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

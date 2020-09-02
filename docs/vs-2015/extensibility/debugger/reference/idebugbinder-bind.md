@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::Bind | Microsoft Docs
+title: IDebugBinder：： Bind |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 547f94cb4534bcb281cce0fdc2ff7db5fefe3593
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423539"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個方法會取得的記憶體內容或包含符號的目前值的物件。  
+這個方法會取得包含符號目前值的記憶體內容或物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,16 +44,16 @@ int Bind(
   
 #### <a name="parameters"></a>參數  
  `pContainer`  
- [in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)包含所參考的子系`pField`。  
+ 在包含[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)所參考之子系的 IDebugObject `pField` 。  
   
  `pField`  
- [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示符號。  
+ 在代表符號的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 。  
   
  `ppObject`  
- [out]傳回`IDebugObject`表示符號的執行個體。  
+ 擴展傳回 `IDebugObject` 表示符號實例的。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   

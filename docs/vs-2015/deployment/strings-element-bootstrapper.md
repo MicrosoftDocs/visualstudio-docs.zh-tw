@@ -1,5 +1,5 @@
 ---
-title: '&lt;字串&gt;項目 （啟動載入器） |Microsoft Docs'
+title: '&lt; (啟動載入器) 的字串 &gt; 元素 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,16 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd799020e50121e2f3e9a6ba7ad90fd79a1241cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421521"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;字串&gt;項目 （啟動載入器）
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt; (啟動載入器) 的字串 &gt; 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-定義產品名稱、 封裝名稱，以及安裝錯誤訊息的當地語系化的字串。  
+定義產品名稱、封裝名稱和安裝錯誤訊息的當地語系化字串。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,20 +42,20 @@ ms.locfileid: "62421521"
 </Strings>  
 ```  
   
-## <a name="elements-and-attributes"></a>項目和屬性  
- `Strings`項目是子系`Package`項目。 它沒有任何屬性。  
+## <a name="elements-and-attributes"></a>元素和屬性  
+ `Strings`元素是元素的子系 `Package` 。 它沒有任何屬性。  
   
 ## <a name="string"></a>String  
- `String`項目是子系`Strings`項目。 A`Strings`項目可能有一或多個`String`項目。  
+ `String`元素是元素的子系 `Strings` 。 `Strings`元素可以有一或多個 `String` 元素。  
   
  `String` 具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Name`|必要項。 字串的名稱。|  
+|`Name`|必要。 字串的名稱。|  
   
 ## <a name="example"></a>範例  
- 下列程式碼範例會指定英文字串的所有[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]安裝程式。  
+ 下列程式碼範例會指定安裝程式的所有英文字串 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 。  
   
 ```  
 <Strings>  

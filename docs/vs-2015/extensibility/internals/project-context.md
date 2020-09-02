@@ -11,22 +11,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d4ee4da5fdea63cf1bdd33554c72f6dac30d0334
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62429934"
 ---
 # <a name="project-context"></a>專案內容
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-當使用者加入，或適用於專案和專案項目時，則 IDE 會使用專案內容的概念來判斷應該執行各種作業。  
+當使用者加入或使用專案和專案專案時，IDE 會使用專案內容的概念來決定應該如何執行各種作業。  
   
- 一般而言，檔案是藉由選取的使用者明確建立標準專案物件**新的專案**命令或可選取**開啟專案**命令**檔案**功能表。 在這些情況下，建立和開啟專案的內容中的檔案和專案類型可定義進行編輯文件的內容。  
+ 一般而言，檔案是使用者明確建立的標準專案物件，方法是選取 [**新增專案**] 命令，或選取 [檔案 **] 功能表上**的 [**開啟專案**] 命令以提供使用。 在這些情況下，會在專案的內容中建立和開啟檔案，而專案類型會定義編輯檔的內容。  
   
- 有些專案提供非常豐富的內容。 例如，專案管理專案範圍，以程式設計方式命名空間或進行資料繫結的專案範圍的資料庫連接。 使用者經常可以開啟檔案或資料庫連接是直接使用特定的專案物件，例如顯示在 [方案總管] 中的專案項目。  
+ 某些專案提供非常豐富的內容。 例如，專案會管理專案範圍、程式設計的命名空間或專案範圍的資料庫連接以進行資料系結。 使用者通常可以使用特定的專案物件（例如方案總管中顯示的專案專案），直接開啟檔案或資料庫連接。  
   
- 在其他時候，專案項目的內容未明確指定。 比方說，項目無法使用內容的使用者選取 [開啟檔案時**開啟現有的檔案**命令**檔案**時偵錯工具操作檔案，或當使用者按一下的功能表**檔案中尋找**命令**尋找和取代**] 對話方塊。 若要處理這些情況下，IDE 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>管理尋找最佳的專案，以開啟文件的程序。  
+ 在其他情況下，不會明確指定專案的專案內容。 例如，當使用者開啟檔案時，無法使用專案的內容，方法是**選取 [檔案] 功能表上**的 [**開啟現有**檔案] 命令、偵錯工具在檔案上運作，或是當使用者按一下 [**尋找和取代**] 對話方塊中的 [檔案**中尋找**] 命令。 為了處理這些情況，IDE 會呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> 來管理尋找最佳專案以開啟檔的進程。  
   
 ## <a name="see-also"></a>另請參閱  
  [專案優先順序](../../extensibility/internals/project-priority.md)   

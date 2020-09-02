@@ -1,5 +1,5 @@
 ---
-title: IDebugBeforeSymbolSearchEvent2 | Microsoft Docs
+title: IDebugBeforeSymbolSearchEvent2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 26a8d7b28528a79a925207e1ee3794fcbb4ca1d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423513"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 的狀態設定，訊息列符號載入期間，傳送這個介面。  
+Debug engine (DE) 會將這個介面傳送至會話 debug manager (SDM) ，在符號載入期間設定狀態列訊息。  
   
 ## <a name="syntax"></a>語法  
   
@@ -28,22 +28,22 @@ ms.locfileid: "62423513"
 IDebugBeforeSymbolSearchEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- DE 實作這個介面，它必須在符號載入期間設定狀態列訊息時。 只偵錯引擎使用，或屬於指令碼解譯器會實作這個介面。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上 (使用 SDM **QueryInterface**若要存取**IDebugEvent2**介面)。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ 當這個介面必須在符號載入期間設定狀態列訊息時，就會執行這個介面。 這個介面只會由使用或屬於腳本解譯器一部分的偵錯工具引擎來執行。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須在與此介面相同的物件上執行， (SDM 使用**QueryInterface**來存取**IDebugEvent2**介面) 。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- DE 會建立並傳送這個事件物件，它必須在符號載入期間設定狀態列訊息時。 事件會使用傳送[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)它附加到正在偵錯程式時，在 SDM 所提供的回呼函式。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 當此事件物件必須在符號載入期間設定狀態列訊息時，即會建立並傳送此事件物件。 當附加至要進行偵錯工具的程式時，會使用由 SDM 提供的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 回呼函式來傳送事件。  
   
 ## <a name="methods"></a>方法  
- 下表顯示的方法`IDebugBeforeSymbolSearchEvent2`。  
+ 下表顯示的方法 `IDebugBeforeSymbolSearchEvent2` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|擷取目前所偵錯的模組名稱。|  
+|[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|抓取目前正在進行調試的模組名稱。|  
   
 ## <a name="requirements"></a>需求  
- 標頭：Msdbg.h  
+ 標頭： Msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll

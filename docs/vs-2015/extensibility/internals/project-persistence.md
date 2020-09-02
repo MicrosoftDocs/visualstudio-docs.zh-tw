@@ -12,38 +12,38 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: abbcc1fc1048866ef790a4b6779ed15ef80a9be1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62429518"
 ---
 # <a name="project-persistence"></a>專案持續性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-持續性是重要的設計考量，為您的專案。 大部分的專案使用的專案項目代表檔案;[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]也支援其中的資料為非檔案型的專案。 這兩個專案和專案檔案所擁有的檔案必須被 persisted。 IDE 會指示專案，以儲存本身或專案項目。  
+持續性是您專案的重要設計考慮。 大部分的專案都會使用代表檔案的專案專案; [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 也支援以非檔案為基礎之資料的專案。 專案和專案檔案所擁有的兩個檔案都必須保存。 IDE 會指示專案儲存本身或專案專案。  
   
- 專案範本會傳遞至 project factory。 範本應該支援所有的專案項目，根據特定專案類型的需求的初始化。 這些範本稍後會儲存為專案檔，IDE 中透過此解決方案所管理。 如需詳細資訊，請參閱 <<c0> [ 建立專案執行個體所使用 Project Factory](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)並[解決方案](../../extensibility/internals/solutions-overview.md)。  
+ 專案的範本會傳遞至專案 factory。 範本應該根據特定專案類型的需求，支援所有專案專案的初始化。 這些範本之後可以儲存為專案檔，然後由 IDE 透過解決方案來管理。 如需詳細資訊，請參閱[使用專案工廠和方案建立專案實例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)。 [Solutions](../../extensibility/internals/solutions-overview.md)  
   
- 專案項目可以是檔案為基礎，或非檔案型：  
+ 專案專案可以是以檔案為基礎或非檔案型的：  
   
-- 檔案為基礎的項目可以是本機或遠端。 在 C# 中的 Web 專案，比方說，連線到遠端系統上的檔案保存在本機，而檔案本身會保存在遠端系統上。  
+- 以檔案為基礎的專案可以是本機或遠端。 例如，在 c # 中的 Web 專案中，連接至遠端系統上的檔案會保存在本機，而檔案本身會保存在遠端系統上。  
   
-- 非檔案型的項目可以將項目儲存到資料庫或儲存機制。  
+- 非檔案型專案可以將專案儲存至資料庫或存放庫。  
   
 ## <a name="commit-models"></a>認可模型  
- 決定專案項目位於何處之後, 您必須選擇適當的認可模型。 例如，在具有本機檔案的檔案為基礎的模型，每個專案可以儲存自主。 在儲存機制模型中，您可以儲存在單一交易中的數個項目。 如需詳細資訊，請參閱 <<c0> [ 專案類型的設計決策](../../extensibility/internals/project-type-design-decisions.md)。  
+ 決定專案專案的所在位置之後，您必須選擇適當的認可模型。 例如，在具有本機檔案的檔案型模型中，每個專案都可以自主儲存。 在儲存機制模型中，您可以將數個專案儲存在一個交易中。 如需詳細資訊，請參閱 [專案類型設計決策](../../extensibility/internals/project-type-design-decisions.md)。  
   
- 若要判斷副檔名的檔案，請實作專案<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>介面，可提供資訊讓用戶端的物件，實作**另存新檔** 對話方塊中，也就是以填滿**檔案類型**下拉式清單列出並管理的初始檔案名稱副檔名。  
+ 為了判斷副檔名，專案會執行 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> 介面，此介面會提供資訊讓物件的用戶端執行 [ **另存** 新檔] 對話方塊，也就是填入 [ **另存** 新檔] 下拉式清單，並管理初始副檔名。  
   
- IDE 呼叫`IPersistFileFormat`介面來表示專案應該保存其專案的專案項目適當地。 因此，物件會擁有其檔案和格式的所有層面。 這包括物件的格式的名稱。  
+ IDE `IPersistFileFormat` 會呼叫專案上的介面，以指出專案應適當保存專案專案。 因此，物件擁有其檔案和格式的所有層面。 這包括物件的格式名稱。  
   
- 其中的項目不是檔案，萬一`IPersistFileFormat`仍然是如何非檔案型的項目會保存。 專案檔，例如.vbp 檔案[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]專案或.vcproj 檔案[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]專案，也必須 persisted。  
+ 如果專案不是檔案， `IPersistFileFormat` 則仍然會保存非檔案型專案。 專案檔（例如專案的 vbp 檔案 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 或專案的 vcproj 檔案 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] ）也必須保存。  
   
- 針對儲存動作，IDE 會檢查執行的文件資料表 (RDT) 和階層會傳遞到命令<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem>而<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2>介面。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.IsItemDirty%2A>實作方法，以判斷是否已修改的項目。 如果此項目，<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.SaveItem%2A>實作方法，以儲存修改過的項目。  
+ 針對儲存動作，IDE 會檢查執行中的檔資料表 (RDT) ，而且階層會將命令傳遞給 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> 介面。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.IsItemDirty%2A>方法會實作為判斷專案是否已修改。 如果專案具有，則 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.SaveItem%2A> 會執行方法以儲存修改過的專案。  
   
- 上的方法`IVsPersistHierarchyItem2`介面用來判斷是否可以重新載入項目，如果項目可以是的將它重新載入。 此外，<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A>可以實作方法，以造成變更的項目，而不會儲存遭到捨棄。  
+ 介面上的方法 `IVsPersistHierarchyItem2` 是用來判斷專案是否可以重載，而且如果專案可以的話，也可以重載。 此外，您 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> 可以執行方法來使變更的專案在不儲存的情況下捨棄。  
   
 ## <a name="see-also"></a>另請參閱  
  [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [使用 Project Factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
+ [使用專案 Factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

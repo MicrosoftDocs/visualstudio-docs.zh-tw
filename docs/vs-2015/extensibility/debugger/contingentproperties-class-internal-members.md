@@ -12,22 +12,22 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f6778aef90361a7751ccd744fcf93822f8f97db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62414642"
 ---
 # <a name="contingentproperties-class---internal-members"></a>ContingentProperties 類別 - 內部成員
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-包含其他屬性<xref:System.Threading.Tasks.Task>物件。  
+包含物件的其他屬性 <xref:System.Threading.Tasks.Task> 。  
   
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **組件：** mscorlib （在 mscorlib.dll 中)  
+ **元件：** mscorlib.dll) 中的 mscorlib (  
   
- 因為您無法從.NET Framework 來存取這些內部成員，下列語法提供通用中繼語言 (CIL)。  
+ 因為您無法從 .NET Framework 存取這些內部成員，所以會以一般中繼語言 () 的 CIL 來提供下列語法。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,12 +40,12 @@ ms.locfileid: "62414642"
   
 ### <a name="fields"></a>欄位  
   
-|名稱|描述|  
+|Name|描述|  
 |----------|-----------------|  
-|[m_children](../../extensibility/debugger/m-children-field.md)|使用這項工作中註冊的子工作的清單。|  
+|[m_children](../../extensibility/debugger/m-children-field.md)|這項工作所註冊之子工作的清單。|  
   
 ## <a name="remarks"></a>備註  
- 只有在需要時，.NET Framework 會初始化這個類別的欄位。  
+ .NET Framework 只有在需要時，才會初始化此類別的欄位。  
   
 ## <a name="see-also"></a>另請參閱  
  [.NET Framework 適用的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

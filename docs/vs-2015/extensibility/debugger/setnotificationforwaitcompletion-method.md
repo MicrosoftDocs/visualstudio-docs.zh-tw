@@ -11,20 +11,20 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 874e31c331f16e760e030f337dda715473b77af8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423396"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion 方法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-設定或清除 TASK_STATE_WAIT_COMPLETION_NOTIFICATION 狀態位元。  
+設定或清除 TASK_STATE_WAIT_COMPLETION_NOTIFICATION 狀態位。  
   
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **組件：** mscorlib （在 mscorlib.dll 中)  
+ **元件：** mscorlib.dll) 中的 mscorlib (  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,12 +35,12 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 #### <a name="parameters"></a>參數  
  `enabled`  
   
- `true` 若要設定的位元;`false`為未設定此位元。  
+ `true` 設定位;取消設定 `false` 位。  
   
 ## <a name="exceptions"></a>例外狀況  
   
 ## <a name="remarks"></a>備註  
- 偵錯工具設定此位元，以協助從非同步方法主體中的步驟。 如果`enabled`是`true`，必須只能在尚未完成的工作上呼叫這個方法。 如果`enabled`是`false`，可能會在 已完成的工作上呼叫這個方法。 在可能情況下，它應該只用於承諾樣式工作。  
+ 偵錯工具會設定此位，以協助跳出非同步方法主體。 如果 `enabled` 為 `true` ，則必須在尚未完成的工作上呼叫這個方法。 如果 `enabled` 為 `false` ，則可能會在已完成的工作上呼叫這個方法。 在任一事件中，它只能用於承諾樣式的工作。  
   
 ## <a name="requirements"></a>需求  
   

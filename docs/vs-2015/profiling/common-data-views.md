@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 708bb96beab51fa69910deef40dc468a1fd21058
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421404"
 ---
 # <a name="common-data-views"></a>一般資料檢視
@@ -28,10 +28,10 @@ ms.locfileid: "62421404"
  [摘要檢視](../profiling/summary-view.md)  
  描述摘要檢視和報表。 資料行取決於分析方法。  
   
- [呼叫端/被呼叫端檢視](../profiling/caller-callee-view.md)  
+ [呼叫端/被呼叫者視圖](../profiling/caller-callee-view.md)  
  描述呼叫樹狀圖檢視和報表。 資料行取決於分析方法。  
   
- [呼叫樹狀圖檢視](../profiling/call-tree-view.md)  
+ [呼叫樹狀圖檢閱](../profiling/call-tree-view.md)  
  描述呼叫樹狀圖檢視和報表。 資料行取決於分析方法。  
   
  [模組檢視](../profiling/modules-view.md)  

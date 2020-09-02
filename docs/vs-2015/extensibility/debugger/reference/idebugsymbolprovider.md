@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider | Microsoft Docs
+title: IDebugSymbolProvider |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b760b106992b200576258ab6becb1ae3849b8f3a
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62420923"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個介面會表示提供符號和類型，將其傳回做為欄位的符號提供者。  
+此介面代表提供符號和類型的符號提供者，並以欄位形式傳回它們。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,44 +30,44 @@ ms.locfileid: "62420923"
 IDebugSymbolProvider : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- 符號提供者必須實作這個介面來提供符號和類型的運算式評估工具的資訊。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ 符號提供者必須執行這個介面，才能將符號和類型資訊提供給運算式評估工具。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 這個介面由使用 COM 的`CoCreateInstance`函式 （適用於非受控的符號提供者） 或藉由載入適當的受管理的程式碼組件以及該組件中找到的資訊為基礎的符號提供者具現化。 偵錯引擎具現化運算式評估工具搭配運作的符號提供者。 請參閱具現化此介面的其中一種方法的範例。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 您可以使用 COM 的函式 `CoCreateInstance` (針對未受管理的符號提供者) 或載入適當的 managed 程式碼元件，並根據在該元件中找到的資訊，將符號提供者具現化來取得這個介面。 Debug engine 會將符號提供者具現化，以配合運算式評估工具使用。 請參閱將此介面具現化的一個方法範例。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDebugSymbolProvider`。  
+ 下表顯示的方法 `IDebugSymbolProvider` 。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |`Initialize`|已取代。 請勿使用。|  
 |`Uninitialize`|已取代。 請勿使用。|  
-|[GetContainerField](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)|取得包含偵錯位址的欄位。|  
+|[GetContainerField](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)|取得包含此偵錯工具位址的欄位。|  
 |`GetField`|已取代。 請勿使用。|  
-|[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|對應到陣列的文件位置的偵錯位址。|  
-|[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|將文件內容對應到的偵錯位址陣列。|  
-|[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|將偵錯位址對應到文件內容。|  
-|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|取得用來編譯程式碼在偵錯位址的語言。|  
+|[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|將檔位置對應至 debug 位址陣列。|  
+|[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|將檔內容對應到一個 debug 位址陣列。|  
+|[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|將 debug 位址對應至檔內容。|  
+|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|取得用來在偵錯工具位址編譯器代碼的語言。|  
 |`GetGlobalContainer`|已取代。 請勿使用。|  
-|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|取得代表完整的方法名稱的欄位。|  
-|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|取得類別欄位型別，表示完整的類別名稱。|  
-|[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|建立偵錯位址相關聯的命名空間的列舉值。|  
-|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|對應至符號類型的符號名稱。|  
-|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|取得會遵循在方法中的指定偵錯位址的偵錯位址。|  
+|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|取得代表完整方法名稱的欄位。|  
+|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|取得代表完整類別名稱的類別欄位類型。|  
+|[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|建立與 debug 位址相關聯之命名空間的列舉值。|  
+|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|將符號名稱對應至符號類型。|  
+|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|取得在方法中指定的 debug 位址之後的偵錯工具位址。|  
   
 ## <a name="remarks"></a>備註  
- 這個介面會對應到偵錯位址，以及反向的文件位置。  
+ 這個介面會將檔位置對應至 debug 位址，反之亦然。  
   
 ## <a name="requirements"></a>需求  
- 標頭： sh.h  
+ 標頭： sh. h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>範例  
- 此範例示範如何具現化的符號提供者中，指定 （偵錯引擎必須知道此值） 其 GUID。  
+ 這個範例會示範如何將符號提供者具現化，並指定其 GUID (debug engine 必須知道此值) 。  
   
 ```cpp#  
 // A debug engine uses its own symbol provider and would know the GUID  
@@ -106,4 +106,4 @@ IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+ [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

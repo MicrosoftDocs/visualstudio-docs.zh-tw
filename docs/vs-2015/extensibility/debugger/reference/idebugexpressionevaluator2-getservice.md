@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::GetService | Microsoft Docs
+title: IDebugExpressionEvaluator2：： GetService |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: af73b23cfaf0b282403e8e6a94d6f05db419bd41
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540338"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取服務物件指定的唯一識別碼。  
+取得服務物件的唯一識別碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,16 +41,16 @@ int GetService (
   
 #### <a name="parameters"></a>參數  
  `uid`  
- [in]要擷取之服務的唯一識別碼。  
+ 在要抓取之服務的唯一識別碼。  
   
  `ppService`  
- [out]傳回代表服務的物件。  
+ 擴展傳回代表服務的物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這可供從另一個運算式評估工具取得服務的第三方運算式評估工具。 比方說，這個方法可用來取得從預設的運算式評估工具的視覺化檢視服務的介面。 第三方運算式評估工具不太可能會需要實作這個介面。  
+ 這可由協力廠商運算式評估工具取用，以從另一個運算式評估工具取得服務。 例如，這個方法可用來從預設運算式評估工具取得視覺化程式服務的介面。 協力廠商運算式評估工具不太可能需要執行這個介面。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

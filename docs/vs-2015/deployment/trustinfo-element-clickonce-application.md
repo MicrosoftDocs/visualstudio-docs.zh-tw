@@ -1,5 +1,5 @@
 ---
-title: '&lt;trustInfo&gt;項目 （ClickOnce 應用程式） |Microsoft Docs'
+title: '&lt;&gt;ClickOnce 應用程式)  (trustInfo 元素 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -24,13 +24,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ca7e19925288b1509fec08235f546b84b4afffef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62420067"
 ---
-# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;項目 （ClickOnce 應用程式）
+# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;&gt;ClickOnce 應用程式)  (trustInfo 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 描述應用程式在用戶端電腦上執行所需的最低安全性權限。  
@@ -69,42 +69,42 @@ ms.locfileid: "62420067"
 </trustInfo>  
 ```  
   
-## <a name="elements-and-attributes"></a>項目和屬性  
- `trustInfo` 為必要元素，位於 `asm.v2` 命名空間。 其沒有屬性，包含下列元素。  
+## <a name="elements-and-attributes"></a>元素和屬性  
+ `trustInfo` 項目是必要的，且位於 `asm.v2` 命名空間。 其沒有屬性，包含下列元素。  
   
-## <a name="security"></a>安全性  
- 必要項。 這個元素是 `trustInfo` 元素的子項。 其包含 `applicationRequestMinimum` 元素，而沒有屬性。  
+## <a name="security"></a>security  
+ 必要。 這個元素是 `trustInfo` 元素的子項。 其包含 `applicationRequestMinimum` 元素，而沒有屬性。  
   
 ## <a name="applicationrequestminimum"></a>applicationRequestMinimum  
- 必要項。 這個元素是 `security` 元素的子項，並包含 `PermissionSet`、 `assemblyRequest`與 `defaultAssemblyRequest`元素。 這個元素沒有屬性。  
+ 必要。 這個元素是 `security` 元素的子項，並包含 `PermissionSet`、 `assemblyRequest`與 `defaultAssemblyRequest`元素。 這個元素沒有屬性。  
   
 ## <a name="permissionset"></a>PermissionSet  
- 必要項。 這個元素是 `applicationRequestMinimum` 元素的子項，並包含 `IPermission` 元素。 這個項目具有下列屬性。  
+ 必要。 這個元素是 `applicationRequestMinimum` 元素的子項，並包含 `IPermission` 元素。 這個項目具有下列屬性。  
   
 - `ID`  
   
-     必要項。 識別權限集合。 這個屬性可以是任何值。 識別碼在 `defaultAssemblyRequest` 和 `assemblyRequest` 屬性中受參考。  
+     必要。 識別權限集合。 這個屬性可以是任何值。 識別碼在 `defaultAssemblyRequest` 和 `assemblyRequest` 屬性中受參考。  
   
 - `version`  
   
-     必要項。 識別權限版本。 這個值通常是 `1`。  
+     必要。 識別權限版本。 這個值通常是 `1`。  
   
 ## <a name="ipermission"></a>IPermission  
  選擇性。 這個元素是 `PermissionSet` 元素的子項。 `IPermission` 元素完全識別 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]中的權限類別。 `IPermission` 元素有下列屬性，但可以有對應到權限類別上屬性 (property) 的其他屬性 (attribute)。 若要取得特定權限的語法，請查看 Security.config 檔案所列範例。  
   
 - `class`  
   
-     必要項。 依強式名稱識別權限類別。 例如，下列程式碼可識別 `FileDialogPermission` 類型。  
+     必要。 依強式名稱識別權限類別。 例如，下列程式碼可識別 `FileDialogPermission` 類型。  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
 - `version`  
   
-     必要項。 識別權限版本。 這個值通常是 `1`。  
+     必要。 識別權限版本。 這個值通常是 `1`。  
   
 - `Unrestricted`  
   
-     必要項。 識別應用程式是否需要這個權限不受限制的授與。 如果為 `true`，即無條件權限授與。 如果為 `false`或未定義屬性，則根據 `IPermission` 標記上定義的權限特有屬性而受限。 採用下列權限：  
+     必要。 識別應用程式是否需要這個權限不受限制的授與。 如果為 `true`，即無條件權限授與。 如果為 `false`或未定義屬性，則根據 `IPermission` 標記上定義的權限特有屬性而受限。 採用下列權限：  
   
     ```  
     <IPermission  
@@ -124,18 +124,18 @@ ms.locfileid: "62420067"
   
 - `permissionSetReference`  
   
-     必要項。 識別預設權限的權限集合識別碼。 權限集合在 `PermissionSet` 元素中宣告。  
+     必要。 識別預設權限的權限集合識別碼。 權限集合在 `PermissionSet` 元素中宣告。  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
  選擇性。 識別特定組件的權限。 這個元素是 `applicationRequestMinimum` 元素的子項，並具有下列屬性。  
   
 - `Name`  
   
-     必要項。 識別組件名稱。  
+     必要。 識別組件名稱。  
   
 - `permissionSetReference`  
   
-     必要項。 識別這個組件需要的權限集合識別碼。 權限集合在 `PermissionSet` 元素中宣告。  
+     必要。 識別這個組件需要的權限集合識別碼。 權限集合在 `PermissionSet` 元素中宣告。  
   
 ## <a name="requestedprivileges"></a>requestedPrivileges  
  選擇性。 這個元素是 `security` 元素的子項，並包含 `requestedExecutionLevel` 元素。 這個元素沒有屬性。  
@@ -145,7 +145,7 @@ ms.locfileid: "62420067"
   
 - `Level`  
   
-     必要項。 指出應用程式要求的安全性層級。 可能的值為：  
+     必要。 指出應用程式要求的安全性層級。 可能的值包括：  
   
      `asInvoker`，未要求其他權限。 這個層級不需要其他信任提示。  
   
@@ -164,7 +164,7 @@ ms.locfileid: "62420067"
   
  如果部署資訊清單有有效的信任授權，所有使用 `defaultAssemblyRequest` 與 `assemblyRequest` 要求的權限就都會在不提示使用者的情況下授與。  
   
- 如需權限提高的詳細資訊，請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。 如需原則部署的詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
+ 如需許可權提升的詳細資訊，請參閱 [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。 如需原則部署的詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
   
 ## <a name="examples"></a>範例  
  下列三個程式碼範例說明了適用於 `trustInfo` 部署應用程式資訊清單中預設具名安全性區域 (Internet、LocalIntranet 及 FullTrust) 的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 元素。  
@@ -271,5 +271,5 @@ ms.locfileid: "62420067"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)   
- [ndptecclick](../deployment/clickonce-application-manifest.md)
+ [受信任的應用程式部署總覽](../deployment/trusted-application-deployment-overview.md)   
+ [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)

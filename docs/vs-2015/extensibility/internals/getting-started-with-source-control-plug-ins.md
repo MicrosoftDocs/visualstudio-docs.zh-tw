@@ -1,5 +1,5 @@
 ---
-title: 開始使用原始檔控制外掛程式 |Microsoft Docs
+title: 具有原始檔控制外掛程式的消費者入門 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,32 +12,32 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 85aa5727f252ad75c45064d7b885e3d282da36a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538157"
 ---
 # <a name="getting-started-with-source-control-plug-ins"></a>原始檔控制外掛程式的使用者入門
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-若要建立原始檔控制外掛程式，您必須建立可實作定義在原始檔控制外掛程式 API 中，該函式的 DLL，然後註冊 DLL[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]以使其可供使用原始程式碼版本控制中。  
+若要建立原始檔控制外掛程式，您必須建立可執行原始檔控制外掛程式 API 中所定義之函式的 DLL，然後向註冊 DLL， [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 使其可在原始程式碼版本控制中使用。  
   
- 原始檔控制外掛程式 API （版本 1.1、 1.2 和 1.3） 的三個版本可供原始檔控制外掛程式。原始檔控制外掛程式 API，請參閱為 1.3 版。 它被設計為與原始檔控制外掛程式完全相容支援 1.1 和 1.2 版。 [What's New in 原始檔控制外掛程式 API 版本 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)章節將詳細說明支援的原始檔控制外掛程式 API 版本中的新功能。  
+ 有三個版本的原始檔控制外掛程式 API (版本1.1、1.2 和 1.3) 適用于原始檔控制外掛程式。此處所記載的原始檔控制外掛程式 API 是版本1.3。 其設計目的是要與支援1.1 和1.2 版的原始檔控制外掛程式完全相容。 [原始檔控制外掛程式 api 1.3 版的新](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)功能一節將詳細說明最新版原始檔控制外掛程式 api 所支援的新功能。  
   
 ## <a name="in-this-section"></a>本節內容  
- [如何：安裝原始程式碼控制外掛程式](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
- 描述如何進行原始檔控制 DLL 插入所需的登錄項目。  
+ [如何：安裝原始檔控制外掛程式](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
+ 描述如何建立插入原始檔控制 DLL 所需的登錄專案。  
   
- [原始檔控制外掛程式 API 版本 1.3 的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)  
- 提供對原始檔控制外掛程式 API 版本 1.3 所做的變更的簡短概觀。  
+ [原始檔控制外掛程式 API 1.3 版的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)  
+ 提供在版本1.3 中對原始檔控制外掛程式 API 所做變更的簡短總覽。  
   
- [原始檔控制外掛程式 API 版本 1.2 的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)  
- 提供對原始檔控制外掛程式 API，在 1.2 版所做的變更的簡短概觀。  
+ [原始檔控制外掛程式 API 1.2 版的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)  
+ 提供在版本1.2 中對原始檔控制外掛程式 API 所做變更的簡短總覽。  
   
 ## <a name="related-sections"></a>相關章節  
  [原始檔控制外掛程式](../../extensibility/source-control-plug-ins.md)  
- 提供原始檔控制外掛程式 API 中的所有項目的完整清單。  
+ 提供原始檔控制外掛程式 API 中所有元素的完整清單。  
   
  [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)  
- 定義原始檔控制外掛程式 SDK，並說明內含的資源。
+ 定義原始檔控制外掛程式 SDK 並說明包含的資源。

@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 1a53d6fed4b2900aa730f4a5c2e04d528b42d1b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62419839"
 ---
 # <a name="contribute-to-visual-studio-documentation"></a>參與 Visual Studio 文件
@@ -14,7 +14,7 @@ ms.locfileid: "62419839"
 
 ## <a name="code-of-conduct"></a>管理辦法
 
-此專案採用了 [Microsoft 開放原始碼管理辦法](https://opensource.microsoft.com/codeofconduct/)。 有關詳細資訊，請參閱[行為準則常見問題解答](https://opensource.microsoft.com/codeofconduct/faq/)，或聯繫[opencode@microsoft.com](mailto:opencode@microsoft.com)任何其他問題或意見。
+此專案採用了 [Microsoft 開放原始碼管理辦法](https://opensource.microsoft.com/codeofconduct/)。 如需詳細資訊，請參閱管理辦法 [常見問題](https://opensource.microsoft.com/codeofconduct/faq/)，或與 [opencode@microsoft.com](mailto:opencode@microsoft.com) 任何其他問題或意見。
 
 ## <a name="how-can-i-contribute"></a>我能如何參與？
 

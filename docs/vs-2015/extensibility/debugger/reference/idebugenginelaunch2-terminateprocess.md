@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2::TerminateProcess | Microsoft Docs
+title: IDebugEngineLaunch2：： TerminateProcess |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d5636d84a530f4cfa8cda9d9ef48a13cdca3567f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431494"
 ---
 # <a name="idebugenginelaunch2terminateprocess"></a>IDebugEngineLaunch2::TerminateProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-結束處理序。  
+終止進程。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,13 +40,13 @@ int TerminateProcess ( 
   
 #### <a name="parameters"></a>參數  
  `pProcess`  
- [in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示終止程序。  
+ 在 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 物件，表示要結束的進程。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。  
+ 如果成功，則傳回，否則會傳回 `S_OK` 錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 呼叫[CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md)方法之前呼叫這個方法。  
+ 呼叫這個方法之前，請先呼叫 [CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md) 方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)   

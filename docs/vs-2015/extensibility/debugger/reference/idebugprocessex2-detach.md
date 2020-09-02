@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Detach | Microsoft Docs
+title: IDebugProcessEx2：:D etach |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b79f1f80f9b6849c37fc9b6c4c8669f1397f0227
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538131"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個方法會通知程序工作階段不會再偵錯程序。  
+這個方法會通知進程，會話不再將進程進行偵錯工具。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,13 +40,13 @@ int Detach(
   
 #### <a name="parameters"></a>參數  
  `pSession`  
- [in]值，這個值可唯一識別要卸離此程序的工作階段。  
+ 在值，可唯一識別要卸離此處理程式的會話。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 介面傳入`pSession`是被視為只 cookie，唯一識別工作階段的偵錯管理員原來的值附加至此處理序; 提供的介面上的方法沒有任何功能。  
+ 傳入的介面 `pSession` 只視為 cookie，此值可唯一識別原本附加至此進程的會話 debug manager; 提供的介面上沒有任何方法可正常運作。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetSize |Microsoft Docs
+title: IDebugReference2：： GetSize |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9dc6014a0e01f4957f797267f444c84263dd0794
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423422"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得大小，以位元組為單位，值的參考。 保留供未來使用。  
+取得參考值的大小（以位元組為單位）。 保留供未來使用。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,7 +40,7 @@ int GetSize ( 
   
 #### <a name="parameters"></a>參數  
  `pdwSize`  
- [out]傳回大小，以位元組為單位，值的參考。  
+ 擴展傳回參考值的大小（以位元組為單位）。  
   
 ## <a name="return-value"></a>傳回值  
  一律傳回 `E_NOTIMPL`。  

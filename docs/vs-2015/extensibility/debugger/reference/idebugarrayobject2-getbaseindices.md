@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject2::GetBaseIndices | Microsoft Docs
+title: IDebugArrayObject2：： GetBaseIndices |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3c10fb65ec698bf9c5c9b7623b29e2f47851afe8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423593"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取陣列中指定的維度數目的每個索引的基底的索引 （下限）。  
+針對指定陣列中的維度數目的每個索引，抓取基底索引 (下限) 。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,16 +41,16 @@ int GetBaseIndices (
   
 #### <a name="parameters"></a>參數  
  `dwRank`  
- [in]陣列的維度 （陣序） 數目。  
+ 在陣列 (等級) 的維度數目。  
   
  `dwIndices`  
- [out]陣列基底索引 （下限）。  
+ 擴展基底索引 (陣列的下限) 。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 例如，此函式會傳回 '5'，如下列 C# 程式碼所建立的陣列：  
+ 例如，此函式會針對下列 c # 程式碼所建立的陣列傳回 ' 5 '：  
   
 ```  
 int[] lengths = { 12 };  

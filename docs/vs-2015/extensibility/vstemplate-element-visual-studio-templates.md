@@ -1,5 +1,5 @@
 ---
-title: VSTemplate 項目 （Visual Studio 範本） |Microsoft Docs
+title: " (Visual Studio 範本的 .Vstemplate 元素) |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,16 +13,16 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e8219f12eed091858a43c2bd5092b8b06f8320bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422893"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-包含有關專案範本、 項目範本或入門套件的所有中繼資料。  
+包含專案範本、專案範本或入門套件的所有中繼資料。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,21 +35,21 @@ ms.locfileid: "62422893"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Type`|識別為專案範本或項目範本的範本。 這個屬性可以具有的值`Project`或`Item`。|  
-|`Version`|指定範本的版本號碼。 中的範本[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]並[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]有`Version`屬性值`3.0.0`。|  
+|`Type`|將範本識別為專案範本或專案範本。 這個屬性的值可以是 `Project` 或 `Item` 。|  
+|`Version`|指定範本的版本號碼。 和中 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 的範本具有 `Version` 的屬性值 `3.0.0` 。|  
   
 ### <a name="child-elements"></a>子元素  
   
 |項目|描述|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定分類的範本，並定義中的顯示方式的資料**新的專案**或是**加入新項目** 對話方塊。|  
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定範本的內容。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 指定將範本分類的資料，並定義該範本在 [ **新增專案** ] 或 [ **加入新專案** ] 對話方塊中顯示的方式。|  
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必要元素。<br /><br /> 指定範本的內容。|  
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|選擇性項目。|  
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|選擇性項目。|  
   
@@ -57,10 +57,10 @@ ms.locfileid: "62422893"
  無。  
   
 ## <a name="remarks"></a>備註  
- `VSTemplate`項目是.vstemplate 檔案的根項目。  
+ `VSTemplate`元素是 .vstemplate 檔案的根項目。  
   
 ## <a name="example"></a>範例  
- 下列範例顯示的專案範本的中繼資料[!INCLUDE[csprcs](../includes/csprcs-md.md)]應用程式。  
+ 下列範例會顯示應用程式專案範本的中繼資料 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 。  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -87,5 +87,5 @@ ms.locfileid: "62422893"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

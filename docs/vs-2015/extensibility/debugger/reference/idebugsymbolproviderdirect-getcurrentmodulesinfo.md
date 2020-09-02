@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesInfo | Microsoft Docs
+title: IDebugSymbolProviderDirect：： GetCurrentModulesInfo |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4ce4473fca76424f3b737d530997f766da7b219d
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421911"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取符號群組中的模組的相關資訊。  
+抓取符號群組中模組的相關資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -47,22 +47,22 @@ int GetCurrentModulesInfo(
   
 #### <a name="parameters"></a>參數  
  `pCount`  
- [in]中的模組數目`ppGuids`陣列。  
+ 在陣列中的模組數目 `ppGuids` 。  
   
  `ppGuids`  
- [in]陣列，其中包含模組的唯一識別碼。  
+ 在陣列，其中包含模組的唯一識別碼。  
   
  `pADIds`  
- [in]針對應用程式定義域的識別項。  
+ 在應用程式域的識別碼。  
   
  `pCurrentState`  
- [in]目前的符號群組的狀態。  
+ 在符號群組的目前狀態。  
   
  `ppCDModItfs`  
- [out]傳回物件，包含符號群組中的模組。  
+ 擴展傳回物件，該物件包含符號群組中的模組。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

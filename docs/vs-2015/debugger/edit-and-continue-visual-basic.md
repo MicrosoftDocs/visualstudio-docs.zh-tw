@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 24782fee98cff09513ff2b4d1606f2be0bd9fbd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428545"
 ---
 # <a name="edit-and-continue-visual-basic"></a>編輯後繼續 (Visual Basic)
@@ -39,12 +39,12 @@ ms.locfileid: "62428545"
   
  以 .NET Framework 4.5.1 為目標的 64 位元專案支援 [編輯後繼續]。  
   
- 當您使用 [附加至處理序] 開始偵錯時，並不支援 [編輯後繼續]。 在最佳化程式碼、混合 Managed 程式碼和機器碼或 Compact Framework (智慧型裝置) 專案中，皆不支援 [編輯後繼續] 功能。  
+ 當您使用 [附加至處理序]**** 開始偵錯時，並不支援 [編輯後繼續]。 在最佳化程式碼、混合 Managed 程式碼和機器碼或 Compact Framework (智慧型裝置) 專案中，皆不支援 [編輯後繼續] 功能。  
   
  本章節中的主題提供其他詳細資訊，說明使用這項功能的方法以及不允許進行的變更種類。  
   
 ## <a name="in-this-section"></a>本節內容  
- [如何：以編輯後繼續在中斷模式中套用編輯](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
+ [如何：使用編輯後繼續在中斷模式中套用編輯](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
  說明在中斷模式中套用程式碼編輯的方式。  
   
  [Visual Basic 編輯後繼續中不支援的編輯](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)  

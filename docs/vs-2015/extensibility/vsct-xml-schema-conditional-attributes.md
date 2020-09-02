@@ -1,5 +1,5 @@
 ---
-title: VSCT XML 結構描述條件式屬性 |Microsoft Docs
+title: .VSCT XML 架構條件式屬性 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,32 +12,32 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6294ee8027b61840149096561efc91b8a4a3c3ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422145"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML 結構描述條件式屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-條件式屬性可以套用至所有清單和項目。 邏輯運算子和符號展開的運算式評估為 true 或 false。 如果為 true，也是產生的輸出中包含相關聯的清單或項目。  
+條件屬性可套用至所有清單和專案。 邏輯運算子和符號展開運算式的評估結果為 true 或 false。 若為 true，則產生的輸出中會包含相關聯的清單或專案。  
   
- 針對其他語彙基元展開或常數，您可以測試權杖的擴充。 Defined() 函式用來測試是否已定義特定的名稱，即使它沒有任何值。  
+ 您可以針對其他標記展開或常數測試標記擴充。  ( # A1 定義的函式會用來測試是否已定義特定名稱，即使沒有值也是一樣。  
   
- 當條件屬性套用至清單時，條件會套用至清單中每個子元素。 如果子系項目本身包含條件屬性，然後其條件結合的父代運算式 AND 作業。  
+ 當 Condition 屬性套用至清單時，此條件會套用至清單中的每個子項目。 如果子項目本身包含 Condition 屬性，則它的條件會與 AND 運算的父運算式結合。  
   
- 值 1，'1' 和 'true' 會評估為 true，和 0、 '0' 和 'false' 評估為 false。  
+ 值1、' 1 ' 和 ' true ' 會評估為 true，而0、' 0 ' 和 ' false ' 會評估為 false。  
   
-## <a name="operators"></a>運算子  
- 下列運算子可能會用來評估條件運算式中。  
+## <a name="operators"></a>操作員  
+ 您可以使用下列運算子來評估條件運算式。  
   
 |運算子|定義|  
 |--------------|----------------|  
 |(,)|群組|  
 |!|邏輯 NOT|  
 |\<, >, \<=, >=, ==, !=|關係與相等|  
-|和|Boolean|  
+|及|Boolean|  
 |或|Boolean|  
   
 ## <a name="examples"></a>範例  

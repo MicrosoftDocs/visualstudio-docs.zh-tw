@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::Enum |Microsoft Docs
+title: IDiaPropertyStorage：： Enum |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 48b289ed1e376f224ec513e7a118691d75fc9b69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538835"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-取得在這個集合中屬性的列舉值。  
+取得此集合內屬性的列舉值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,10 +35,10 @@ HRESULT Enum ( 
   
 #### <a name="parameters"></a>參數  
  `ppenum`  
- [out]傳回`IEnumSTATPROPSTG`物件 （在 Microsoft.VisualStudio.OLE.Interop 命名空間中），表示屬性的列舉。  
+ 擴展傳回 `IEnumSTATPROPSTG` VisualStudio 命名空間中 (的物件，) 代表屬性的列舉。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。  
+ 如果成功，則傳回，否則會傳回 `S_OK` 錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f018388abc91bc26f1bef30d066a9b6d8aa6f097
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422665"
 ---
 # <a name="zoom-control-utilization-view"></a>縮放控制 (使用率檢視)
@@ -27,5 +27,5 @@ ms.locfileid: "62422665"
   
  您可以在 CPU 使用量圖表或 GPU 活動圖中拖曳滑鼠指標來建立醒目提示的區域。 放開滑鼠按鈕之後，選取的範圍就會在檢視中放大。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用率檢視](../profiling/utilization-view.md)

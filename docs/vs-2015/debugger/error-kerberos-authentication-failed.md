@@ -1,5 +1,5 @@
 ---
-title: 錯誤：Kerberos 驗證失敗 |Microsoft Docs
+title: 錯誤： Kerberos 驗證失敗 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5e85bc7a5bac87692448aab393056fa1db5edbd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62535629"
 ---
 # <a name="error-kerberos-authentication-failed"></a>錯誤：Kerberos 驗證失敗
@@ -38,19 +38,19 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 - 目標電腦或者是偵錯工具主機電腦位於工作群組中，而非網域中。  
   
-   \-或-  
+   \- 或 -  
   
 - 在網域控制站上已停用 Kerberos。  
   
-  如果無法使用 Kerberos 驗證，請將帳戶變更為用於執行 Visual Studio 遠端偵錯監視的帳戶。 程序，請參閱[錯誤：在目標電腦上的 Visual Studio 遠端偵錯工具服務無法連回這部電腦](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)。  
+  如果無法使用 Kerberos 驗證，請將帳戶變更為用於執行 Visual Studio 遠端偵錯監視的帳戶。 如需相關程式，請參閱 [錯誤：目的電腦上的 Visual Studio 遠端偵錯工具服務無法連回這部電腦](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)。  
   
   如果兩部電腦都連接至相同的網域，而您仍然收到這個訊息，請確認目標電腦上的 DNS 有正確解析偵錯工具主機電腦的名稱。 請參閱下列程序。  
   
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>若要確認目標電腦上的 DNS 有正確解析偵錯工具主機電腦的名稱  
   
-1. 在目標電腦上，開啟 [開始] 功能表，指向 [附屬應用程式]，然後按一下 [命令提示字元]。  
+1. 在目標電腦上，開啟 [開始]**** 功能表，指向 [附屬應用程式]****，然後按一下 [命令提示字元]****。  
   
-2. 在 [命令提示字元] 視窗中，鍵入：  
+2. 在 **命令提示** 字元視窗中，輸入：  
   
     ```  
     ping <debugger_host_computer_name>  
@@ -58,10 +58,10 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 3. `ping` 回應的第一行顯示針對指定電腦，DNS 所傳回的電腦全名和 IP 位址。  
   
-4. 在偵錯工具主機電腦上，開啟 [命令提示字元] 視窗，並執行 `ipconfig`。  
+4. 在偵錯工具主機電腦上，開啟 [命令提示字元]**** 視窗，並執行 `ipconfig`。  
   
 5. 比較 IP 位址值。  
   
 ## <a name="see-also"></a>另請參閱  
  [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
+ [遠端偵錯](../debugger/remote-debugging.md)

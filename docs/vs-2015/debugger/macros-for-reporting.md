@@ -1,5 +1,5 @@
 ---
-title: 報告巨集 |Microsoft Docs
+title: 適用于報表的宏 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,23 +25,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e4aee33d571f95e24a359fa2bc7e12ae8d64eae0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431624"
 ---
 # <a name="macros-for-reporting"></a>報告巨集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以使用 **_RPTn**，並 **_RPTFn** CRTDBG 中定義的巨集。H，來取代使用`printf`陳述式中的偵錯。 這些巨集會自動地消失在您的發行組建 **_DEBUG**未定義，因此不需要括住在 **#ifdef**s。  
+您可以使用 CRTDBG.H 裡中定義的 **_RPTn**和 **_RPTFn** 宏。H，取代語句的使用以 `printf` 進行調試。 當 **_DEBUG** 未定義時，這些宏會自動在您的發行組建中消失，因此不需要將它們放在 **#ifdef**s 中。  
   
 |巨集|描述|  
 |-----------|-----------------|  
 |**_RPT0**、**_RPT1**、**_RPT2**、**_RPT3**、**_RPT4**|輸出訊息字串和零至四個引數。 從 _RPT1 到 **_RPT4**，訊息字串作為引數的 printf 樣式格式字串。|  
-|**_RPTF0**, **_RPTF1**, **,_RPTF2**, **_RPTF4**|與相同 **_RPTn** ，但是這些巨集也會輸出巨集所在位置的檔案名稱和行號。|  
+|**_RPTF0**、 **_RPTF1**、 **_RPTF2**、 **_RPTF4**|與 **_RPTn** 相同，但是這些宏也會輸出宏所在的檔案名和行號。|  
   
- 參考下列範例：  
+ 請考慮下列範例：  
   
 ```  
 #ifdef _DEBUG  
@@ -74,7 +74,7 @@ if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d,
 #endif  
 ```  
   
- 若要一次呼叫**ALERT_IF2**無法執行的所有函式**printf**本主題開頭的程式碼：  
+ **ALERT_IF2**的一個呼叫可在本主題開頭執行**printf**程式碼的所有功能：  
   
 ```  
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),   

@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetLanguage | Microsoft Docs
+title: IDebugSymbolProvider：： GetLanguage |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8124e0c6328695da9773edbfd949ec2634dbfdb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421768"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個方法會取得已編譯程式碼在偵錯位址使用的語言。  
+這個方法會取得在 debug 位址編譯器代碼所使用的語言。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,19 +44,19 @@ int GetLanguage(
   
 #### <a name="parameters"></a>參數  
  `pAddress`  
- [in]位址物件，表示所[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。  
+ 在 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 介面所代表的位址物件。  
   
  `pguidLanguage`  
- [out]傳回`GUID`所指定的語言。  
+ 擴展傳回 `GUID` 指定語言的。  
   
  `pguidLanguageVendor`  
- [out]傳回`GUID`，指定的語言廠商。  
+ 擴展傳回 `GUID` 指定語言廠商的。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 偵錯引擎會呼叫此方法來取得所需選取正確的運算式評估工具的資訊。  
+ Debug engine 會呼叫這個方法，以取得所需的資訊，以選取正確的運算式評估工具。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

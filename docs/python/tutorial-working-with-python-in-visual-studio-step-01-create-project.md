@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: ed4fdbfe7090a66d955461f2c3a394f6fb661c5a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62430717"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>教學課程：在 Visual Studio 中使用 Python
@@ -27,7 +27,7 @@ Visual Studio 提供 Python 的第一級語言支援。 此教學課程會指導
 - [步驟 0：安裝](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 - [步驟 1：建立 Python 專案 (此文章)](#step-1-create-a-new-python-project)
 - [步驟 2：撰寫並執行程式碼以查看運作中的 Visual Studio IntelliSense](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
-- [步驟 3：在互動式 REPL 視窗中創建更多代碼](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+- [步驟3：在互動式複製視窗中建立更多程式碼](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 - [步驟 4：在 Visual Studio 偵錯工具中執行已完成的程式](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 - [步驟 5：安裝套件以及管理 Python 環境](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [步驟 6：使用 Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
@@ -40,9 +40,9 @@ Visual Studio 提供 Python 的第一級語言支援。 此教學課程會指導
 
 在本教學課程中，您會從包含單一空白程式碼檔案的簡單專案開始。
 
-1. 在視覺化工作室中，選擇 **"檔** > **新專案** > **Project**"（Ctrl**Ctrl**+**Shift**+**N），** 該對話方塊將彈出 **"新專案**"對話方塊。 在這裡，您可以瀏覽不同語言的範本，然後選取您專案的範本，並指定 Visual Studio 放置檔案的位置。
+1. 在 Visual Studio 中，**選取**  >  [檔案**新增**  >  **專案**] (**Ctrl** + **Shift** + **N**) ，這會顯示 [**新增專案**] 對話方塊。 在這裡，您可以瀏覽不同語言的範本，然後選取您專案的範本，並指定 Visual Studio 放置檔案的位置。
 
-1. 要查看 Python 範本，請選擇左側**的"已安裝** > **Python"** 或搜索"Python"。 使用搜尋十分適合在您不記得範本在語言樹狀結構中的位置時來尋找範本。
+1. 若要查看 Python 範本，請選取左側的 [**已安裝**  >  的**Python** ]，或搜尋 "Python"。 使用搜尋十分適合在您不記得範本在語言樹狀結構中的位置時來尋找範本。
 
     ![顯示 Python 專案的新增專案對話方塊](media/vs-getting-started-python-01-new-project.png)
 
@@ -50,23 +50,23 @@ Visual Studio 提供 Python 的第一級語言支援。 此教學課程會指導
 
 1. 選取 [Python 應用程式]**** 範本，並指定專案的名稱，然後選取 [確定]****。
 
-1. 幾分鐘後，Visual Studio 會在方案總管**** 視窗 (1) 中顯示專案結構。 預設程式碼檔案會在編輯器中開啟 (2)。 **屬性**視窗 （3） 還顯示**解決方案資源管理器**中選擇的任何專案的其他資訊，包括其在磁片上的確切位置。
+1. 幾分鐘後，Visual Studio 會在方案總管**** 視窗 (1) 中顯示專案結構。 預設程式碼檔案會在編輯器中開啟 (2)。 [ **屬性** ] 視窗 (3) 也會顯示在 [ **方案總管**] 中所選取之任何專案的其他資訊，包括其在磁片上的確切位置。
 
     ![方案總管中的 Python 專案](media/vs-getting-started-python-02-windows.png)
 
-1. 花點時間熟悉**解決方案資源管理器**，您可以在其中流覽專案中的檔和資料夾。
+1. 請花幾分鐘的時間熟悉 **方案總管**，也就是您在專案中流覽檔案和資料夾的位置。
 
     ![方案總管已展開以顯示各種功能](media/vs-getting-started-python-03-solution-explorer.png)
 
-    （1） 使用您在 **"新專案"** 對話方塊中提供的名稱突出顯示為粗體是您的專案。 在磁碟上，此專案是由專案資料夾中的 *.pyproj* 檔案所呈現。
+    以粗體反白顯示的 (1) 是您的專案，並使用您在 [ **新增專案** ] 對話方塊中提供的名稱。 在磁碟上，此專案是由專案資料夾中的 *.pyproj* 檔案所呈現。
 
     (2) 最上層是「方案」**，預設其名稱與專案相同。 方案 (以磁碟上的 *.sln* 檔案呈現) 是一或多個相關專案的容器。 例如，如果您撰寫 Python 應用程式的 C++ 延伸模組，則該 C++ 專案可能位在相同的方案內。 方案也可以包含 Web 服務的專案，以及專用測試程式的專案。
 
-    (3) 在您的專案下方，您會看到原始程式檔，在此情況下，只是單一 *.py* 檔案。 選擇檔將在 **"屬性"** 視窗中顯示其屬性。 按兩下檔案即會以該檔案適合的方式開啟。
+    (3) 在您的專案下方，您會看到原始程式檔，在此情況下，只是單一 *.py* 檔案。 選取檔案時會在 [ **屬性** ] 視窗中顯示其屬性。 按兩下檔案即會以該檔案適合的方式開啟。
 
     (4) 在專案下方，也會有 [Python 環境]**** 節點。 展開時，您會看到您可用的 Python 解譯器。 展開解譯器節點，查看已安裝到該環境 (5) 的程式庫。
 
-    按右鍵**解決方案資源管理器**中的任何節點或專案以訪問適用命令的功能表。 例如，**Rename** 命令可讓您變更任何節點或項目的名稱 (包含專案和方案)。
+    以滑鼠右鍵按一下 **方案總管** 中的任何節點或專案，以存取適用命令的功能表。 例如，**Rename** 命令可讓您變更任何節點或項目的名稱 (包含專案和方案)。
 
 ## <a name="next-step"></a>後續步驟
 

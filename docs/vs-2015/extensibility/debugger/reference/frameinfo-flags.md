@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO_FLAGS | Microsoft Docs
+title: FRAMEINFO_FLAGS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e5a930e81ff1105ba93ce3c3cff10ee8bff2f7e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538430"
 ---
-# <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
+# <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定要擷取的堆疊框架物件有關的資訊。  
+指定要針對堆疊框架物件取得的資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -101,112 +101,112 @@ public enum enum_FRAMEINFO_FLAGS {
   
 ## <a name="members"></a>成員  
  FIF_FUNCNAME  
- 初始化/使用`m_bstrFuncName`欄位。  
+ 初始化/使用 `m_bstrFuncName` 欄位。  
   
  FIF_RETURNTYPE  
- 初始化/使用`m_bstrReturnType`欄位。  
+ 初始化/使用 `m_bstrReturnType` 欄位。  
   
  FIF_ARGS  
- 初始化/使用`m_bstrArgs`欄位。  
+ 初始化/使用 `m_bstrArgs` 欄位。  
   
  FIF_LANGUAGE  
- 初始化/使用`m_bstrLanguage`欄位。  
+ 初始化/使用 `m_bstrLanguage` 欄位。  
   
  FIF_MODULE  
- 初始化/使用`m_bstrModule`欄位。  
+ 初始化/使用 `m_bstrModule` 欄位。  
   
  FIF_STACKRANGE  
- 初始化/使用`m_addrMin`和`m_addrMax`（堆疊範圍） 欄位。  
+ 初始化/使用 `m_addrMin` 和 `m_addrMax` (堆疊範圍) 欄位。  
   
  FIF_FRAME  
- 初始化/使用`m_pFrame`欄位。  
+ 初始化/使用 `m_pFrame` 欄位。  
   
  FIF_DEBUGINFO  
- 初始化/使用`m_fHasDebugInfo`欄位。  
+ 初始化/使用 `m_fHasDebugInfo` 欄位。  
   
  FIF_STALECODE  
- 初始化/使用`m_fStaleCode`欄位。  
+ 初始化/使用 `m_fStaleCode` 欄位。  
   
  FIF_ANNOTATEDFRAME  
- 初始化/使用`m_fAnnotatedFrame`欄位。  
+ 初始化/使用 `m_fAnnotatedFrame` 欄位。  
   
  FIF_DEBUG_MODULEP  
- 初始化/使用`m_pModule`欄位。  
+ 初始化/使用 `m_pModule` 欄位。  
   
  FIF_FUNCNAME_FORMAT  
- 格式函式名稱。 在傳回的結果`m_bstrFunName`欄位和任何其他欄位會填入。  
+ 將函數名稱格式化。 結果會在欄位中傳回 `m_bstrFunName` ，而且不會填寫任何其他欄位。  
   
  FIF_FUNCNAME_RETURNTYPE  
- 將傳回的型別以`m_bstrFuncName`欄位。  
+ 將傳回類型加入至 `m_bstrFuncName` 欄位。  
   
  FIF_FUNCNAME_ARGS  
- 將加入的引數`m_bstrFuncName`欄位。  
+ 將引數加入至 `m_bstrFuncName` 欄位。  
   
  FIF_FUNCNAME_LANGUAGE  
- 新增的語言`m_bstrFuncName`欄位。  
+ 將語言新增至 `m_bstrFuncName` 欄位。  
   
  FIF_FUNCNAME_MODULE  
- 將模組名稱來`m_bstrFuncName`欄位。  
+ 將模組名稱加入至 `m_bstrFuncName` 欄位。  
   
  FIF_FUNCNAME_LINES  
- 新增的行數`m_bstrFuncName`欄位。  
+ 將行數加入至 `m_bstrFuncName` 欄位。  
   
  FIF_FUNCNAME_OFFSET  
- 將加入至`m_bstrFuncName`欄位從行開頭的位元組位移，如果`FIF_FUNCNAME_LINES`指定。 如果`FIF_FUNCNAME_LINES`未指定，或如果沒有可用的行號，以位元組為單位將位移從函式的開頭。  
+ `m_bstrFuncName`如果 `FIF_FUNCNAME_LINES` 指定了，就會將從該行開頭算起的位移（以位元組為單位）加入至欄位。 如果未 `FIF_FUNCNAME_LINES` 指定，或如果行號無法使用，則會從函式的開頭處加上位元組位移。  
   
  FIF_FUNCNAME_ARGS_TYPES  
- 將每個函式引數的類型加入`m_bstrFuncName`欄位。  
+ 將每個函數引數的類型加入至 `m_bstrFuncName` 欄位。  
   
  FIF_FUNCNAME_ARGS_NAMES  
- 新增至每個函式引數名稱`m_bstrFuncName`欄位。  
+ 將每個函數引數的名稱加入至 `m_bstrFuncName` 欄位。  
   
  FIF_FUNCNAME_ARGS_VALUES  
- 將每個函式引數的值加入`m_bstrFuncName`欄位。  
+ 將每個函數引數的值加入至 `m_bstrFuncName` 欄位。  
   
  FIF_FUNCNAME_ARGS_ALL  
- 將型別、 名稱和值的所有引數`m_bstrFuncName`欄位。  
+ 將所有引數的類型、名稱和值加入至 `m_bstrFuncName` 欄位。  
   
  FIF_ARGS_TYPES  
- 引數類型會擷取並格式化。  
+ 引數類型會被抓取並格式化。  
   
  FIF_ARGS_NAMES  
- 引數名稱會擷取並格式化。  
+ 引數名稱會被抓取並格式化。  
   
  FIF_ARGS_VALUES  
- 將引數值會擷取並格式化。  
+ 引數值會被取出並格式化。  
   
  FIF_ARGS_ALL  
- 擷取並格式化型別、 名稱和所有的引數的值。  
+ 取出並格式化所有引數的類型、名稱和值。  
   
  FIF_ARGS_NOFORMAT  
- 指定不格式化的引數 （例如，進行不加入開啟和關閉前後的引數清單括號也新增引數之間的分隔符號）。  
+ 指定不將引數格式化 (例如，請勿在引數清單前後加上左括弧和右括弧，也不會在引數) 之間加入分隔符號。  
   
  FIF_ARGS_NO_FUNC_EVAL  
- 指定擷取引數的值時，不應該使用函式 （屬性） 評估。  
+ 指定在抓取引數值時，不應該使用函數 (屬性) 評估。  
   
  FIF_FILTER_NON_USER_CODE  
- 偵錯引擎是篩選非使用者程式碼框架，因此它們都不包含。  
+ 偵錯工具引擎是篩選非使用者程式碼框架，因此不包含它們。  
   
  FIF_ARGS_NO_TOSTRING  
- 不允許`ToString()`函式評估或格式傳回函式引數時。  
+ 傳回函式 `ToString()` 引數時，不允許函數評估或格式化。  
   
  FIF_DESIGN_TIME_EXPR_EVAL  
- 從裝載的應用程式定義域，而不是裝載處理序，就應該取得框架資訊。  
+ 畫面格資訊應從託管的應用程式網域取得，而不是從裝載進程取得。  
   
 ## <a name="remarks"></a>備註  
- 這些旗標會傳遞給[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)並[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)方法以指出哪些欄位是在初始化[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構。  
+ 這些旗標會傳遞至 [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 和 [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) 方法，以指出哪些欄位要在 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 結構或結構中初始化。  
   
- 這些旗標也可用來表示欄位[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構會使用和有效時，會傳回這個結構。 這些值可能會合併的位元`OR`。  
+ 這些旗標也可用來指出當傳回結構時，所使用的 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 結構欄位和有效的欄位。 這些值可能會與位結合 `OR` 。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)   
  [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)

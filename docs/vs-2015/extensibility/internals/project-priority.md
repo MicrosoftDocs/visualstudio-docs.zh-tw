@@ -11,30 +11,30 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b012136c30f72cfdddadfc1a370ed76f567afffd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62429908"
 ---
 # <a name="project-priority"></a>專案優先順序
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-專案項目通常是在方案中只能有一個專案的成員。 因此，IDE 可以輕易地判斷哪一個專案用來開啟項目中。 不過，如果項目是多個專案的成員，IDE 會判斷最佳的專案開啟的項目使用的優先順序配置。  
+專案專案通常是方案中唯一一個專案的成員。 因此，IDE 可以輕鬆地判斷要使用哪個專案來開啟專案。 但是，如果專案是多個專案的成員，則 IDE 會使用優先順序配置來判斷開啟專案的最佳專案。  
   
- 下列清單顯示專案的優先順序配置：  
+ 下列清單顯示專案優先順序配置：  
   
-- IDE 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A>解決方案可以判斷文件是否屬於該專案中每個專案的方法。  
+- IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> 會針對方案中的每個專案呼叫方法，以判斷檔是否為該專案的成員。  
   
-- 如果文件是專案的成員，專案會回應以優先順序專案會指派它處理該文件的根據。 比方說，語言專案以高優先順序，其語言原始程式檔，但具有較低的優先順序，不會在其組建程序無法辨識的檔案類型的回應。  
+- 如果檔是專案的成員，則專案會根據其處理該檔的優先順序，來回應專案所指派的優先順序。 例如，語言專案會以高優先順序回應其語言來源檔案，但會以較低的優先順序回應無法辨識的檔案類型，而不會用來作為其組建程式的一部分。  
   
-- 提供自訂的專案特定的編輯器或設計工具文件的專案也會收到高的優先順序。  
+- 針對檔提供自訂、專案特定編輯器或設計工具的專案也會收到高優先順序。  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>列舉型別提供的文件的優先順序值。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>列舉會提供檔優先權值。  
   
-- 指定的最高優先權的專案有開啟的文件的內容。 如果兩個專案傳回相等的優先順序值，使用中的專案是慣用的。 如果方案中的沒有專案回應，它可以開啟文件，則 IDE 會將文件置於其他檔案專案。 如需詳細資訊，請參閱 <<c0> [ 其他檔案專案](../../extensibility/internals/miscellaneous-files-project.md)。  
+- 指定最高優先順序的專案會提供開啟檔的內容。 如果兩個專案傳回相等的優先順序值，則偏好使用中的專案。 如果方案中沒有任何專案回應可以開啟檔，則 IDE 會將檔放在其他檔案專案中。 如需詳細資訊，請參閱 [其他檔案專案](../../extensibility/internals/miscellaneous-files-project.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [其他檔案專案](../../extensibility/internals/miscellaneous-files-project.md)   
- [如何：開啟編輯器開啟的文件](../../extensibility/how-to-open-editors-for-open-documents.md)   
+ [如何：開啟開啟檔的編輯器](../../extensibility/how-to-open-editors-for-open-documents.md)   
  [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)

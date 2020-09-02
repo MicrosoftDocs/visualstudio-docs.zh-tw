@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::Stop |Microsoft Docs
+title: IDebugEngineProgram2：： Stop |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb74cb2940a91bbc64fa4a06f28d07a828357fc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431481"
 ---
 # <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-停止執行此程式中的所有執行緒。  
+停止在此程式中執行的所有線程。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,12 +37,12 @@ int Stop();
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 在多重程式環境中，正在偵錯此程式時，會呼叫這個方法。 收到停止 」 事件從一些其他程式時，此方法稱為這個方案。 此方法的實作應該是非同步的;也就是並非所有的執行緒應該需要這個方法會傳回之前，先停止。 此方法的實作可能會非常簡單，像是呼叫[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)此方案的方法。  
+ 當在多程式環境中進行此程式的偵錯工具時，會呼叫這個方法。 收到來自某個其他程式的停止事件時，會在此程式上呼叫這個方法。 此方法的實值應該是非同步;也就是說，並非所有線程都必須在此方法傳回之前停止。 此方法的實作為在此程式上呼叫 [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) 方法，可能會很簡單。  
   
- 沒有偵錯事件是傳送以回應這個方法。  
+ 回應此方法時，不會傳送任何偵錯工具事件。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   

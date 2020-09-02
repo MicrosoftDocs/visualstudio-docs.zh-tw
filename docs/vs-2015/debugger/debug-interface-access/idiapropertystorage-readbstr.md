@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadBSTR |Microsoft Docs
+title: IDiaPropertyStorage：： ReadBSTR |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0c7a796a57d5c96d870850bb02051d745fd8473
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538825"
 ---
 # <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-讀取`BSTR`屬性集合中的值。  
+讀取 `BSTR` 屬性集中的值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -36,16 +36,16 @@ HRESULT ReadBSTR ( 
   
 #### <a name="parameters"></a>參數  
  `id`  
- [in]要讀取之屬性的識別項 (`PROPID`定義為 WTypes.h 中`ULONG`)。  
+ 在要讀取之屬性的識別碼 (`PROPID` 在 wtypes.h 中定義為 `ULONG`) 。  
   
  `pValue`  
- [out]傳回屬性值。  
+ 擴展傳回屬性值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 傳回`E_INVALIDARG`如果屬性不是型別的`BSTR`。  
+ 如果成功，則傳回，否則會傳回 `S_OK` 錯誤碼。 `E_INVALIDARG`如果屬性不是型別，則會傳回 `BSTR` 。  
   
 ## <a name="remarks"></a>備註  
- A`BSTR`由 Windows 以零為結尾的寬字元字串所定義。  
+ `BSTR`由 Windows 定義為以零結尾的寬字元字串。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject2::HasBaseIndices |Microsoft Docs
+title: IDebugArrayObject2：： HasBaseIndices |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e9d0c06ad921ad43bcb7a79446062bc6feda8009
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423643"
 ---
 # <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-判斷陣列是否具有定義的基底索引 （下限）。  
+判斷陣列是否有定義 (下限) 的基底索引。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,7 +39,7 @@ int HasBaseIndices (
   
 #### <a name="parameters"></a>參數  
  `pfHasBaseIndices`  
- [out]TRUE 表示指定的陣列，具有基底的索引 （下限）;否則為 FALSE。  
+ 擴展TRUE 表示陣列的基底索引 (下限) ;否則為 FALSE。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。

@@ -1,5 +1,5 @@
 ---
-title: 錯誤：偵錯 Web 服務時的逾時 |Microsoft Docs
+title: 錯誤：調試 Web 服務時發生超時 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5745a23e70f9245d6f1cb34a6d4ccc042f64bdd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538326"
 ---
-# <a name="error-timeout-while-debugging-web-services"></a>錯誤：對 Web 服務進行偵錯時逾時
+# <a name="error-timeout-while-debugging-web-services"></a>錯誤：偵錯 Web 服務時逾時
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 當您從呼叫程式碼逐步執行 XML Web Service 時，呼叫有時可能會逾時，並產生無法繼續偵錯的結果。 您可能會看到像這樣的錯誤訊息。  
@@ -35,7 +35,7 @@ system.Web.services.dll
 Additional information: The operation has timed-out.  
 ```  
   
-## <a name="solution"></a>方案  
+## <a name="solution"></a>解決方法  
  為避免發生這個問題，請將 XML Web Service 呼叫的逾時值設成無限，如這個範例中所示：  
   
 ```  
