@@ -18,17 +18,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbf0c25967d84e930ee97a84709c808d3541e733
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78263089"
 ---
 # <a name="parameter-element"></a>Parameter 元素
 
-包含有關 由 生成的`UsingTask``TaskFactory`任務的特定參數的資訊。  項目的名稱是參數的名稱。  如需詳細資訊，請參閱 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。
+包含所產生之工作的特定參數相關資訊 `UsingTask` `TaskFactory` 。  項目的名稱是參數的名稱。  如需詳細資訊，請參閱 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。
 
- \<Project> \<UsingTask> \<ParameterGroup> \<Parameter>
+ \<Project> \<UsingTask>
+ \<ParameterGroup>
+ \<Parameter>
 
 ## <a name="syntax"></a>語法
 
@@ -56,9 +58,9 @@ ms.locfileid: "78263089"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[ParameterGroup](../msbuild/parametergroup-element.md)|包含將在 由`UsingTask``TaskFactory`生成的任務上存在的參數的可選清單。|
+|[ParameterGroup](../msbuild/parametergroup-element.md)|包含選擇性的參數清單，這些參數將會出現在由產生的工作上 `UsingTask` `TaskFactory` 。|
 
 ## <a name="example"></a>範例
 
@@ -80,5 +82,5 @@ ms.locfileid: "78263089"
 ## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
-- [任務引用](../msbuild/msbuild-task-reference.md)
-- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)
+- [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41c3fd765977a1f92f5cf125bb64bb7f5b0cd2cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664305"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>鍵盤快速鍵 (Blend)
@@ -21,7 +21,7 @@ ms.locfileid: "72664305"
 
 專案快速鍵
 
-|若要執行這項操作|請這樣做|
+|作法|執行方式|
 |----------------|-------------|
 |建立新專案|CTRL+SHIFT+N|
 |開啟專案或解決方案 (非網站)|CTRL+SHIFT+O|
@@ -34,7 +34,7 @@ ms.locfileid: "72664305"
 
 ## <a name="document-shortcuts"></a>文件快速鍵
 
-|若要執行這項操作|請這樣做|
+|作法|執行方式|
 |----------------|-------------|
 |切換開啟的文件|CTRL+TAB|
 |儲存使用中的文件|CTRL+S|
@@ -47,15 +47,15 @@ ms.locfileid: "72664305"
 |剪下|CTRL+X|
 |複製|CTRL+C|
 |貼上|CTRL+V|
-|刪除|Delete|
+|刪除|刪除|
 |尋找文字 (僅限 XAML 檢視或 JavaScript 編輯器)|CTRL+F|
 |尋找文字的下一個出現位置 (僅限 XAML 檢視或 JavaScript 編輯器)|F3 或 CTRL+H|
 
 ## <a name="object-shortcuts"></a>物件快速鍵
 
-|若要執行這項操作|請這樣做|
+|作法|執行方式|
 |----------------|-------------|
-|建立新項目|CTRL+N|
+|建立新的項目|CTRL+N|
 |重複物件|按住 ALT 並拖曳物件|
 |重新設定物件的父項|將物件拖曳至版面配置面板上，並按 ALT|
 |編輯控制項中的文字|F2 (按 ESC 鍵結束)|
@@ -94,9 +94,9 @@ ms.locfileid: "72664305"
 
 ## <a name="view-shortcuts"></a>檢視快速鍵
 
-|若要執行這項操作|請這樣做|
+|作法|執行方式|
 |----------------|-------------|
-|切換 [設計]、[程式碼] 與 [分割] 檢視|F11|
+|切換 [設計]****、[程式碼]**** 與 [分割]**** 檢視|F11|
 |放大畫板|CTRL+等號|
 |縮小畫板|CTRL+減號 (-)|
 |放大或縮小畫板|旋轉滑鼠滾輪|
@@ -106,16 +106,16 @@ ms.locfileid: "72664305"
 |以畫板的實際大小檢視|CTRL+1|
 |顯示或隱藏控點|F9|
 |顯示或隱藏物件邊界|CTRL+SHIFT+H|
-|切換 [設計]、[XAML] 與 [分割] 檢視|F11|
+|切換 [設計]****、[XAML]**** 與 [分割]**** 檢視|F11|
 
 ## <a name="workspace-shortcuts"></a>工作區快速鍵
 
-|若要執行這項操作|請這樣做|
+|作法|執行方式|
 |----------------|-------------|
-|切換 [動畫] 和 [設計] 工作區|CTRL+F11|
-|顯示或隱藏 [資產] 面板|CTRL+句號|
-|顯示或隱藏 [結果] 面板|F12|
+|切換 [動畫]**** 和 [設計]**** 工作區|CTRL+F11|
+|顯示或隱藏 [資產]**** 面板|CTRL+句號|
+|顯示或隱藏 [結果]**** 面板|F12|
 |顯示或隱藏所有面板|F4|
 |重設使用中的工作區版面配置|CTRL+SHIFT+R|
 |移動瀏覽工作區|按住空格鍵|
-|暫時使用 [選取] 工具 (在其他工具仍為選取狀態時)|按住 CTRL|
+|暫時使用 [選取]**** 工具 (在其他工具仍為選取狀態時)|按住 CTRL|

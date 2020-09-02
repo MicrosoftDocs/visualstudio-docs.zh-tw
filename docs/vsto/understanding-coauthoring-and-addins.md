@@ -1,5 +1,5 @@
 ---
-title: 了解共同撰寫與增益集
+title: 瞭解共同撰寫和增益集
 ms.date: 07/20/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62978181"
 ---
-# <a name="understand-coauthoring-and-add-ins"></a>了解共同撰寫與增益集
+# <a name="understand-coauthoring-and-add-ins"></a>瞭解共同撰寫和增益集
 
-共同撰寫是可與其他使用者同時讓您編輯裝載在雲端 （也就是 OneDrive、 OneDrive for Business 或 SharePoint Online） 的活頁簿的 Excel for Windows desktop 的功能。 透過這項功能，您可能需要對 Excel 方案中的調整，以確保它的運作順暢的使用者所共同撰寫同時也。 請參閱[有關在 Excel 中共同撰寫](/office/vba/excel/concepts/about-coauthoring-in-excel)。
+「共同撰寫」是適用于 Windows desktop 的 Excel 功能，可讓您編輯裝載于雲端的活頁簿， (也就是 OneDrive、商務用 OneDrive 或 SharePoint Online) 同時與其他使用者一起使用。 加入這項功能之後，您可能需要對 Excel 方案進行調整，以確保即使在共同作業的情況下，也能順暢地運作。 請參閱 [關於在 Excel 中共同](/office/vba/excel/concepts/about-coauthoring-in-excel)撰寫。
 
-注意:共同撰寫適用於 Windows Desktop Excel 2017 中引進，目前適用於 Office365 訂閱者。 購買 Office 2016 或更早版本的永久授權的使用者目前沒有共同撰寫功能的存取。 （Excel Online，Excel 適用於 Android、 ios、 Excel 和 Excel Mobile，在 Windows 市集中也支援共同撰寫）。
+注意： Windows 桌面 Excel 的共同作業是在2017中引進，目前可供 Office365 訂閱者使用。 針對 Office 2016 或更早版本購買永久授權的使用者，目前無法存取共同作業功能。 Windows 市集中 (Excel Online、適用于 Android 的 excel、適用于 iOS 的 Excel 以及 Excel Mobile，也支援共同撰寫) 。
 
 ## <a name="see-also"></a>另請參閱
 - [Excel 方案](./excel-solutions.md)

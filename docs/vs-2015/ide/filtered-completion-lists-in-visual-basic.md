@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 45a22d7ea9c6d672d7198d7ea253a83993efdc2a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645688"
 ---
 # <a name="filtered-completion-lists-in-visual-basic"></a>Visual Basic 中已篩選的完成清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 Visual Basic 中，IntelliSense 完成清單有兩個接近清單底部的索引標籤控制項。 預設選取的 [通用]  索引標籤會顯示最常用來完成您所撰寫陳述式的項目。 [全部]  索引標籤會顯示所有可用於進行自動完成的項目，包含也在 [通用]  索引標籤上的項目。
+在 Visual Basic 中，IntelliSense 完成清單有兩個接近清單底部的索引標籤控制項。 預設選取的 [通用]**** 索引標籤會顯示最常用來完成您所撰寫陳述式的項目。 [全部]**** 索引標籤會顯示所有可用於進行自動完成的項目，包含也在 [通用]**** 索引標籤上的項目。
 
 ## <a name="see-also"></a>另請參閱
- [使用 intellisense](../ide/using-intellisense.md) [Visual Basic 特定的 intellisense](../ide/visual-basic-specific-intellisense.md)
+ [使用 intellisense](../ide/using-intellisense.md) [Visual Basic 特定 intellisense](../ide/visual-basic-specific-intellisense.md)

@@ -1,5 +1,5 @@
 ---
-title: 支援的程式碼變更 (C++) |Microsoft Docs
+title: " (c + +) 支援的程式碼變更 |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,10 +25,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f167b3e9d27145284defa2ff491bb9ce0085f2a3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684904"
 ---
 # <a name="supported-code-changes-c"></a>支援的程式碼變更 (C++)
@@ -38,7 +38,7 @@ Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 �
   
  如需在 Visual Studio 中使用 C++ 的 [編輯後繼續] 的相關資訊，請參閱 [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) 。  
   
-## <a name="BKMK_Unsupported_changes"></a> 不支援的變更  
+## <a name="unsupported-changes"></a><a name="BKMK_Unsupported_changes"></a> 不支援的變更  
 
 偵錯工作階段期間不能套用下列 C/C++ 變更：  
   
@@ -68,7 +68,7 @@ Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 �
   
 - [編輯後繼續] 不會更新靜態程式庫。 如果您變更靜態程式庫，執行仍會使用舊版繼續進行，而且不會發出任何警告。  
   
-## <a name="BKMK_Unsupported_scenarios"></a> 不支援的情節  
+## <a name="unsupported-scenarios"></a><a name="BKMK_Unsupported_scenarios"></a> 不支援的案例  
  C/C++ 的 [編輯後繼續] 無法用於下列偵錯案例中：  
   
 - 偵錯以 [/Zo (增強最佳化偵錯)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)編譯的原生應用程式  
@@ -87,15 +87,15 @@ Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 �
   
 - 在未選取 [ **發生未處理的例外狀況時回溯呼叫堆疊** ] 選項的情況下，於發生未處理的例外狀況後編輯程式碼。  
   
-- 使用 [附加至]  來進行應用程式偵錯，而不要選擇 [偵錯]  功能表上的 [啟動]  來執行應用程式。  
+- 使用 [附加至] **** 來進行應用程式偵錯，而不要選擇 [偵錯] **** 功能表上的 [啟動] **** 來執行應用程式。  
   
 - 偵錯最佳化程式碼  
   
 - 由於建置錯誤以致新版本建置失敗之後，對舊版程式碼進行偵錯。  
   
-## <a name="BKMK_Linking_limitations"></a> 連結的限制  
+## <a name="linking-limitations"></a><a name="BKMK_Linking_limitations"></a> 連結的限制  
   
-### <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> 停用 [編輯後繼續] 的連結器選項  
+### <a name="linker-options-that-disable-edit-and-continue"></a><a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> 停用 [編輯後繼續] 的連結器選項  
  下列連結器選項停用 [編輯後繼續]：  
   
 - 設定 **/OPT:REF**、 **/OPT:ICF**，或 **/INCREMENTAL:NO** 會停用 [編輯後繼續]，並且產生下列警告：  
@@ -112,7 +112,7 @@ Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 �
   
 - 設定任何能夠防止建立程式資料庫 (.PDB) 檔的選項，即可停用 [編輯後繼續] 並且不顯示任何特定警告。  
   
-### <a name="BKMK_Auto_relinking_limitations"></a> 自動重新連結的限制  
+### <a name="auto-relinking-limitations"></a><a name="BKMK_Auto_relinking_limitations"></a> 自動重新連結的限制  
  根據預設，[編輯後繼續] 會在偵錯工作階段結束後重新連結程式，建立最新的執行檔。  
   
  如果您不是在原來的組建位置上偵錯，[編輯後繼續] 無法重新連結您的程式。 會有一則訊息告訴您必須手動重建。  
@@ -125,23 +125,23 @@ Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 �
   
 1. 在 [ **偵錯** ] 功能表上選擇 [ **選項和設定**]。  
   
-2. 在 [選項]  對話方塊的 [偵錯]  節點下，選取 [編輯後繼續]  節點。  
+2. 在 [選項] **** 對話方塊的 [偵錯] **** 節點下，選取 [編輯後繼續] **** 節點。  
   
 3. 清除 [ **偵錯後重新連結程式碼變更** ] 核取方塊。  
   
-## <a name="BKMK_Precompiled_Header_Limitations"></a> 先行編譯標頭的限制  
+## <a name="precompiled-header-limitations"></a><a name="BKMK_Precompiled_Header_Limitations"></a> 先行編譯標頭的限制  
  根據預設，[編輯後繼續] 會在背景載入並處理預先編譯的標頭，以加速程式碼變更的處理。 載入預先編譯的標頭檔須配置實體記憶體，如果您是在一部 RAM 不足的電腦上進行編譯，這可能會是個問題。 您可以在偵錯時，使用 [Windows 工作管理員] 判斷可用的實體記憶體數量，來判斷這樣是否會發生問題。 如果此一數量大於預先編譯的標頭檔的大小，[編輯後繼續] 應該不會有問題。 如果數量小於您先行編譯的標頭大小，您可以防止 [編輯後繼續] 在背景中載入先行編譯的標頭。  
   
  **若要停用編輯後繼續的先行編譯標頭的背景載入**  
   
 1. 在 [ **偵錯** ] 功能表上選擇 [ **選項和設定**]。  
   
-2. 在 [選項]  對話方塊的 [偵錯]  節點下，選取 [編輯後繼續]  節點。  
+2. 在 [選項] **** 對話方塊的 [偵錯] **** 節點下，選取 [編輯後繼續] **** 節點。  
   
 3. 清除 [ **允許先行編譯** ] 核取方塊。  
   
-## <a name="BKMK_IDL_Attribute_Limitations"></a> IDL 屬性的限制  
+## <a name="idl-attribute-limitations"></a><a name="BKMK_IDL_Attribute_Limitations"></a> IDL 屬性的限制  
  [編輯後繼續] 不會重新產生介面定義 (IDL) 檔， 所以您偵錯時並不會反映出 IDL 屬性的變更。 若要看到 IDL 屬性的變更結果，就必須停止偵錯並重建應用程式。 如果 IDL 屬性有所變更，[編輯後繼續] 並不會產生錯誤或警告。 如需詳細資訊，請參閱 [IDL 屬性](https://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6)。  
   
 ## <a name="see-also"></a>另請參閱  
- [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
+ [Visual C++) 的 [編輯後繼續] (](../debugger/edit-and-continue-visual-cpp.md)

@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：依需求使用設計工具以 ClickOnce 部署 API 下載組件 |Microsoft Docs
+title: 逐步解說：使用設計工具以 ClickOnce 部署 API 依需求下載元件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,10 +19,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a7ff4fe24720f707c8f3faa330f71a8abda3c698
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686340"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>逐步解說：依需求使用設計工具以 ClickOnce 部署 API 下載組件
@@ -34,13 +34,13 @@ ms.locfileid: "65686340"
 > 您的應用程式必須以完全信任執行，才能使用此程序。  
   
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請在 [工具]  功能表上按一下 [匯入和匯出設定]  。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 您看到的對話方塊與功能表命令，可能會因您所使用的設定或版本，而與說明中所述不同。 若要變更設定，請在 [工具] **** 功能表上按一下 [匯入和匯出設定] **** 。 如需詳細資訊，請參閱 [Visual Studio 中的自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="creating-the-projects"></a>建立專案  
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>使用 Visual Studio 建立使用隨選組件的專案  
   
-1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中建立新的 Windows Forms 專案。 在 [檔案]  功能表上，指向 [加入] ，然後按一下 [新增專案] 。 選擇對話方塊中的 [類別庫]  專案，並將它命名為 `ClickOnceLibrary`。  
+1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中建立新的 Windows Forms 專案。 在 [檔案]**** 功能表上，指向 [加入]****，然後按一下 [新增專案]****。 選擇對話方塊中的 [類別庫] **** 專案，並將它命名為 `ClickOnceLibrary`。  
   
     > [!NOTE]
     > 在 Visual Basic 中，建議您修改專案屬性，以將此專案的根命名空間變更為 `Microsoft.Samples.ClickOnceOnDemand` 或您選擇的命名空間。 為求簡單起見，本逐步解說中的兩個專案都位於相同的命名空間中。  
@@ -50,12 +50,12 @@ ms.locfileid: "65686340"
      [!code-csharp[ClickOnceLibrary#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceLibrary/CS/Class1.cs#1)]
      [!code-vb[ClickOnceLibrary#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceLibrary/VB/Class1.vb#1)]  
   
-3. 在方案總管 中，選取 Windows Forms 專案。 將參考新增至 <xref:System.Deployment.Application> 組件，並將專案參考新增至 `ClickOnceLibrary` 專案。  
+3. 在方案總管 **** 中，選取 Windows Forms 專案。 將參考新增至 <xref:System.Deployment.Application> 組件，並將專案參考新增至 `ClickOnceLibrary` 專案。  
   
     > [!NOTE]
     > 在 Visual Basic 中，建議您修改專案屬性，以將此專案的根命名空間變更為 `Microsoft.Samples.ClickOnceOnDemand` 或您選擇的命名空間。 為求簡單起見，本逐步解說中的兩個專案都位於相同的命名空間中。  
   
-4. 以滑鼠右鍵按一下表單，並從功能表中按一下 [檢視程式碼]  ，然後在表單中新增下列參考。  
+4. 以滑鼠右鍵按一下表單，並從功能表中按一下 [檢視程式碼] **** ，然後在表單中新增下列參考。  
   
      [!code-csharp[ClickOnceOnDemand#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs#1)]
      [!code-vb[ClickOnceOnDemand#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb#1)]  
@@ -65,7 +65,7 @@ ms.locfileid: "65686340"
      [!code-csharp[ClickOnceOnDemand#2](../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs#2)]
      [!code-vb[ClickOnceOnDemand#2](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb#2)]  
   
-6. 在 [ **檢視** ] 功能表上，按一下 [ **工具箱**]。 將 <xref:System.Windows.Forms.Button> 從 [工具箱]  拖曳至表單。 按兩下按鈕，並將下列程式碼新增至 <xref:System.Windows.Forms.Control.Click> 事件處理常式。  
+6. 在 [檢視]**** 功能表上，按一下 [工具箱]****。 將 <xref:System.Windows.Forms.Button> 從 [工具箱] **** 拖曳至表單。 按兩下按鈕，並將下列程式碼新增至 <xref:System.Windows.Forms.Control.Click> 事件處理常式。  
   
      [!code-csharp[ClickOnceOnDemand#3](../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs#3)]
      [!code-vb[ClickOnceOnDemand#3](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb#3)]  
@@ -74,23 +74,23 @@ ms.locfileid: "65686340"
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>使用 Visual Studio 將組件標示為 ClickOnce 應用程式中的選用項目  
   
-1. 以滑鼠右鍵按一下方案總管  中的 Windows Forms 專案，然後按一下 [屬性] 。 選取 [發行]  索引標籤。  
+1. 以滑鼠右鍵按一下方案總管 **** 中的 Windows Forms 專案，然後按一下 [屬性] ****。 選取 [發行] **** 索引標籤。  
   
-2. 按一下 [應用程式檔案]  按鈕。  
+2. 按一下 [應用程式檔案] **** 按鈕。  
   
-3. 尋找 ClickOnceLibrary.dll 的清單。 將 [發行狀態]  下拉式方塊設定成 [包含] 。  
+3. 尋找 ClickOnceLibrary.dll 的清單。 將 [發行狀態] **** 下拉式方塊設定成 [包含] ****。  
   
-4. 展開 [群組]  下拉式方塊，然後選取 [新增] 。 輸入名稱 `ClickOnceLibrary` 作為新的群組名稱。  
+4. 展開 [群組] **** 下拉式方塊，然後選取 [新增] ****。 輸入名稱 `ClickOnceLibrary` 作為新的群組名稱。  
   
-5. 繼續發行您的應用程式中所述[How to:使用發佈精靈發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
+5. 繼續發佈您的應用程式，如 [如何：使用發佈嚮導發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)中所述。  
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>使用資訊清單產生和編輯工具 (圖形化用戶端 (MageUI.exe)) 將組件標示為 ClickOnce 應用程式中的選用項目  
   
-1. 建立您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]資訊清單中所述[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+1. 依照 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)中所述，建立您的資訊清單。  
   
-2. 關閉 MageUI.exe 之前，請選取包含您部署之應用程式資訊清單的索引標籤，然後在該索引標籤內選取 [檔案]  索引標籤。  
+2. 關閉 MageUI.exe 之前，請選取包含您部署之應用程式資訊清單的索引標籤，然後在該索引標籤內選取 [檔案] **** 索引標籤。  
   
-3. 在應用程式檔案清單中尋找 ClickOnceLibrary.dll，並將其 [檔案類型]  資料行設定成 [無] 。 在 [群組]  資料行中，輸入 `ClickOnceLibrary.dll`。  
+3. 在應用程式檔案清單中尋找 ClickOnceLibrary.dll，並將其 [檔案類型] **** 資料行設定成 [無] ****。 在 [群組] **** 資料行中，輸入 `ClickOnceLibrary.dll`。  
   
 ## <a name="testing-the-new-assembly"></a>測試新的組件  
   

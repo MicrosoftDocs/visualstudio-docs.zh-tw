@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64779249"
 ---
 # <a name="manage-channels"></a>管理通道
@@ -27,7 +27,7 @@ ms.locfileid: "64779249"
 
 |準則|定義|
 |--------------|----------------|
-|Start Time|依據開始時間來排序執行緒。 這是預設的排序順序。|
+|開始時間|依據開始時間來排序執行緒。 這是預設的排序順序。|
 |結束時間|依據結束時間來排序執行緒。|
 |執行|依據執行時間花費百分比來排序執行緒。|
 |Synchronization|依據同步時間花費百分比來排序執行緒。|
@@ -59,6 +59,6 @@ ms.locfileid: "64779249"
  如果追蹤包含標記事件，您就可以使用此命令將標記通道分組在產生標記事件的執行緒下方。  磁碟通道會移動到通道清單的最上方，而 GPU 通道會移動到最下方。
 
 ## <a name="see-also"></a>另請參閱
-- [縮放控制 (執行緒檢視)](../profiling/zoom-control-threads-view.md)
+- [縮放控制項 (執行緒視圖) ](../profiling/zoom-control-threads-view.md)
 - [開啟/關閉測量模式](../profiling/measure-mode-on-off.md)
 - [執行緒檢視](../profiling/threads-view-parallel-performance.md)

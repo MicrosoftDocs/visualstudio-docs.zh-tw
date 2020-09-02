@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d8f31d24dc6c6c2ea20b50c9bf8af1cb4a9f9af
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62979753"
 ---
 # <a name="span-class"></a>span 類別
@@ -32,9 +32,9 @@ class span;
 
 ### <a name="public-constructors"></a>公用建構函式
 
-|名稱|描述|
+|Name|描述|
 |----------|-----------------|
-|[span::span 建構函式](../profiling/span-span-constructor.md)|將 `span` 類別的新執行個體初始化。|
+|[span::span 建構函式](../profiling/span-span-constructor.md)|初始化 `span` 類別的新執行個體。|
 |[span::~span 解構函式](../profiling/span-tilde-span-destructor.md)|終結 `span` 物件，並釋放其資源。|
 
 ## <a name="inheritance-hierarchy"></a>繼承階層架構

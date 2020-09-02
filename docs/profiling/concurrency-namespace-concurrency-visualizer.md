@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 258cb5964946d5dbf136463538905d970346b8df
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63001076"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency 命名空間 (並行視覺化檢視)
@@ -32,7 +32,7 @@ namespace Concurrency;
 
 ### <a name="namespaces"></a>命名空間
 
-|名稱|描述|
+|Name|描述|
 |----------|-----------------|
 |[診斷命名空間](../profiling/diagnostic-namespace.md)|`diagnostics` 命名空間提供的功能可用來發出並行視覺化檢視標記。|
 
@@ -40,4 +40,4 @@ namespace Concurrency;
  **標頭：** cvmarkersobj.h
 
 ## <a name="see-also"></a>另請參閱
-- [C 庫參考](../profiling/c-library-reference.md)
+- [C 程式庫參考](../profiling/c-library-reference.md)

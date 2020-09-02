@@ -1,5 +1,5 @@
 ---
-title: Office 文件上的密碼保護
+title: Office 檔上的密碼保護
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,28 +17,28 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e3c9521389ce348a482f35ec95c9766edea49f5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62977896"
 ---
-# <a name="password-protection-on-office-documents"></a>Office 文件上的密碼保護
-  您可在您的 Microsoft Office Word 文件和 Microsoft Office Excel 活頁簿設定密碼，以便他們不知道密碼的其他人無法開啟。 此選項稱為**密碼開啟**。
+# <a name="password-protection-on-office-documents"></a>Office 檔上的密碼保護
+  您可以在 Microsoft Office Word 檔上設定密碼，並 Microsoft Office Excel 活頁簿，讓不知道密碼的人可以開啟這些活頁簿。 此選項 **在開啟**時稱為「密碼」。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- 您可以建立使用現有的文件和擁有的活頁簿的文件層級專案**密碼開啟**啟用。 在 Visual Studio 中的行為是不同的 Word 和 Excel 文件是否**密碼開啟**啟用。
+ 您可以使用已啟用「 **開啟」密碼** 的現有檔和活頁簿來建立檔層級專案。 在 [ **開啟] 開啟** 的 Word 和 Excel 檔中，Visual Studio 的行為不同。
 
- 如需啟用資訊**密碼開啟**，請參閱 Word 或 Excel 中的說明。
+ 如需在 **開啟時啟用密碼**的相關資訊，請參閱 Word 或 Excel 中的說明。
 
 ## <a name="behavior-of-excel-and-word"></a>Excel 和 Word 的行為
- 每當您在具有 Visual Studio 中開啟 Excel 活頁簿**密碼開啟**啟用，Excel 會提示您輸入密碼。 當您建置方案時您將會提示輸入密碼同樣地，因為在建置期間開啟文件。
+ 每次在 **開啟 [開啟** ] 的 Visual Studio 中開啟 excel 活頁簿時，excel 都會提示您輸入密碼。 當您建立方案時，系統會再次提示您輸入密碼，因為檔會在組建期間開啟。
 
- 第一次您開啟 Word 文件中有的 Visual Studio**密碼開啟**啟用，Word 會提示您輸入密碼。 在您成功輸入密碼之後,**密碼開啟**從文件中移除並開啟文件將不再會要求輸入密碼。 如果您想在您的方案中的文件可以開啟要求密碼前的，您必須啟用**密碼開啟**您最終建置和部署解決方案之前。
+ 當您第一次在已啟用「 **開啟」密碼** 的 Visual Studio 中開啟 word 檔時，Word 會提示您輸入密碼。 成功輸入密碼之後，開啟的 **密碼** 會從檔中移除，而開啟檔將不再需要密碼。 如果您想要讓方案中的檔在可以開啟之前要求密碼，則必須在最終組建之後，以及部署解決方案之前，先啟用 [ **開啟密碼** ]。
 
 ## <a name="see-also"></a>另請參閱
-- [在文件層級方案中的文件保護](../vsto/document-protection-in-document-level-solutions.md)
-- [資訊版權管理和 managed 程式碼延伸模組概觀](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
-- [如何：允許程式碼的文件背後執行以限制權限](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
+- [檔層級方案的檔案保護](../vsto/document-protection-in-document-level-solutions.md)
+- [資訊版權管理和 managed 程式碼延伸模組總覽](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
+- [如何：允許程式碼在具有限制許可權的檔背後執行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
 - [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)

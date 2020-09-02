@@ -16,45 +16,45 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 24634143a40f7b163c0b658bddb5596041868033
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62988401"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>呼叫 SharePoint 物件模型
-  當您在 Visual Studio 中建立 SharePoint 工具擴充功能時，您可能必須呼叫 SharePoint Api 來執行特定工作。 例如，如果您建立 SharePoint 專案的自訂部署步驟時，您可能在呼叫 SharePoint Api 來執行一些工作，以部署解決方案。
+  當您在 Visual Studio 中建立 SharePoint 工具的延伸模組時，您可能必須呼叫 SharePoint Api 來執行某些工作。 例如，如果您建立 SharePoint 專案的自訂部署步驟，您可能必須呼叫 SharePoint Api 來執行一些工作，以部署方案。
 
- [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 和[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]提供您可以使用 SharePoint 工具擴充功能中的兩個不同的物件模型： 伺服器物件模型和用戶端物件模型。 每個物件模型有優點和缺點 SharePoint 工具擴充功能的內容中。
+ [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 和 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 提供兩種不同的物件模型，可讓您在 SharePoint 工具擴充功能中使用：伺服器物件模型和用戶端物件模型。 每個物件模型在 SharePoint 工具延伸模組的內容中都有其優點和缺點。
 
- 如需 SharePoint 物件模型的概觀，請參閱 <<c0> [ 概觀的程式設計模型的 SharePoint 工具擴充功能](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)。
+ 如需 SharePoint 物件模型的總覽，請參閱 [sharepoint 工具擴充功能的程式設計模型總覽](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)。
 
 ## <a name="use-the-client-object-model-in-extension-projects"></a>在擴充功能專案中使用用戶端物件模型
- 當您開發 SharePoint 工具擴充功能時，您就可以像任何其他的受管理的 Api 集專案中使用用戶端物件模型。 在用戶端物件模型中將組件的參考新增至您的專案，您可以在用戶端物件模型呼叫 Api，直接從程式碼。
+ 當您開發 SharePoint 工具的延伸模組時，您可以在專案中使用用戶端物件模型，就像任何其他受控 Api 集一樣。 您可以將用戶端物件模型中的元件參考加入至專案，也可以直接從程式碼呼叫用戶端物件模型中的 Api。
 
- 不過，用戶端物件模型會在 SharePoint 工具擴充功能的內容中，有兩個缺點：
+ 不過，在 SharePoint 工具擴充功能的環境中，用戶端物件模型有兩個缺點：
 
-- 用戶端物件模型會提供只有伺服器物件模型的子集。 如果您有使用中用戶端物件模型未公開的 SharePoint 功能，您必須使用伺服器物件模型。
+- 用戶端物件模型只會提供伺服器物件模型的子集。 如果您必須使用未在用戶端物件模型中公開的 SharePoint 功能，則必須使用伺服器物件模型。
 
-- 雖然使用用戶端物件模型中 SharePoint 工具擴充功能應該適用於大部分的情況下，您可能會遇到某些情況下，呼叫用戶端物件模型執行未如預期般運作。 用戶端物件模型可用於呼叫 SharePoint 網站上的遠端伺服器或伺服陣列用戶端應用程式。 Visual Studio 中 SharePoint 工具只使用本機 SharePoint 安裝在開發電腦上。 因此，當您使用用戶端物件模型中 SharePoint 工具擴充功能時，您呼叫 SharePoint 網站的本機電腦上，也就是沒有用戶端物件模型的設計方式使用。
+- 雖然在大部分情況下使用 [SharePoint 工具延伸模組] 中的用戶端物件模型，但您可能會遇到某些情況下，用戶端物件模型的呼叫無法如預期般運作。 用戶端物件模型的設計目的是要用於用戶端應用程式，以呼叫遠端伺服器或伺服器陣列上的 SharePoint 網站。 Visual Studio 中的 SharePoint 工具只適用于開發電腦上的本機 SharePoint 安裝。 因此，當您在 SharePoint 工具擴充功能中使用用戶端物件模型時，您會呼叫本機電腦上的 SharePoint 網站，而不是使用設計用戶端物件模型的方式。
 
-  如需示範如何使用用戶端物件模型中的 Visual Studio 中 SharePoint 工具延伸模組的逐步解說，請參閱[逐步解說：呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。
+  如需示範如何在 Visual Studio 的 SharePoint 工具擴充功能中使用用戶端物件模型的逐步解說，請參閱 [逐步解說：在伺服器總管擴充功能中呼叫 sharepoint 用戶端物件模型](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。
 
 ## <a name="use-the-server-object-model-in-extension-projects"></a>在擴充功能專案中使用伺服器物件模型
- 伺服器物件模型是用戶端物件模型的超集。 當您使用伺服器物件模型時，您可以使用所有功能，[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]和[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]以程式設計方式公開。
+ 伺服器物件模型是用戶端物件模型的超集合。 當您使用伺服器物件模型時，您可以使用和以程式設計 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 方式公開的所有功能 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 。
 
- SharePoint 工具擴充功能可以在伺服器物件模型中，使用 Api，但他們不能直接呼叫 Api。 .NET Framework 3.5 為目標時，伺服器物件模型可以是只從 64 位元處理序呼叫。 不過，SharePoint 工具擴充功能需要[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]和其在 32 位元 Visual Studio 處理序中執行。 這可防止直接參考的組件在 SharePoint 伺服器物件模型中 SharePoint 工具擴充功能。
+ SharePoint 工具擴充功能可以使用伺服器物件模型中的 Api，但無法直接呼叫 Api。 伺服器物件模型只能從以 .NET Framework 3.5 為目標的64位進程中呼叫。 不過，SharePoint 工具延伸模組需要， [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 而且它們會在32位 Visual Studio 進程中執行。 這可防止 SharePoint 工具延伸模組直接參考 SharePoint server 物件模型中的元件。
 
- 如果您想要使用 SharePoint 工具擴充功能中的伺服器物件模型，您必須建立自訂*SharePoint 命令*來呼叫 API。 您可以直接呼叫伺服器物件模型的第二個組件中定義之 SharePoint 命令。 在擴充功能專案中，您的 SharePoint 命令間接使用呼叫的 ExecuteCommand 方法<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection>物件。
+ 如果您想要在 SharePoint 工具擴充功能中使用伺服器物件模型，您必須建立自訂 *SharePoint 命令* 以呼叫 API。 您可以在可以直接呼叫伺服器物件模型的次要元件中定義 SharePoint 命令。 在擴充功能專案中，您可以使用物件的 ExecuteCommand 方法，間接呼叫 SharePoint 命令 <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> 。
 
- 如需有關建立和使用 SharePoint 命令的詳細資訊，請參閱[How to:建立 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)和[How to:執行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)。 如需如何部署 SharePoint 命令的詳細資訊，請參閱[部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
+ 如需建立和使用 SharePoint 命令的詳細資訊，請參閱 [如何：建立 sharepoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md) 和 how [To：執行 sharepoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)。 如需如何部署 SharePoint 命令的詳細資訊，請參閱 [Visual Studio 中的部署 sharepoint 工具的擴充](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)功能。
 
- 如需示範如何建立和使用 SharePoint 命令的逐步解說，請參閱[逐步解說：建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)和[逐步解說：擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。
+ 如需示範如何建立和使用 SharePoint 命令的逐步解說，請參閱 [逐步解說：建立 sharepoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) 和 [逐步解說：擴充伺服器總管以顯示 web 元件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。
 
-### <a name="understand-how-sharepoint-commands-are-executed"></a>了解如何執行 SharePoint 命令
- 定義 SharePoint 命令的組件會在名為 64 位元主機處理序中載入*vssphost4.exe*。 您在 SharePoint 工具擴充功能呼叫 SharePoint 命令之後，執行命令*vssphost4.exe*而不是 32 位元 Visual Studio 處理序 (*devenv.exe*)。 您可以控制如何執行 SharePoint 命令的設定值，在登錄中的某些層面。 如需詳細資訊，請參閱 <<c0> [ 偵錯在 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
+### <a name="understand-how-sharepoint-commands-are-executed"></a>瞭解如何執行 SharePoint 命令
+ 定義 SharePoint 命令的元件會載入名為 *vssphost4.exe*的64位主機進程中。 當您在 SharePoint 工具擴充功能中呼叫 SharePoint 命令之後，命令會由 *vssphost4.exe* 執行，而不是32位 Visual Studio 進程 (*devenv.exe*) 。 您可以藉由設定登錄中的值，來控制如何執行 SharePoint 命令的某些層面。 如需詳細資訊，請參閱 [Visual Studio 中 SharePoint 工具的 Debug 擴充](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)功能。
 
 ## <a name="see-also"></a>另請參閱
 - [如何：建立 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)
-- [如何：執行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)
-- [概觀的程式設計模型的 SharePoint 工具擴充功能](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [How to：執行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)
+- [SharePoint 工具擴充功能的程式設計模型總覽](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)

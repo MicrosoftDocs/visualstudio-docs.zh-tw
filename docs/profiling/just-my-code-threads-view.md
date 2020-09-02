@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 607247c6853c59036d1ab386f7371964265a32b8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62995350"
 ---
 # <a name="just-my-code-threads-view"></a>Just My Code (執行緒檢視)
@@ -28,4 +28,4 @@ ms.locfileid: "62995350"
 
 ## <a name="see-also"></a>另請參閱
 - [執行緒檢視](../profiling/threads-view-parallel-performance.md)
-- [減少雜訊百分比](../profiling/noise-reduction-percentage.md)
+- [雜訊減少百分比](../profiling/noise-reduction-percentage.md)

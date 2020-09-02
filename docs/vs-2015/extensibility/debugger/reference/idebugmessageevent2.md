@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2 | Microsoft Docs
+title: IDebugMessageEvent2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e7bb6b014ef8aa662abd42ab2989d47f703880a4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685976"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此介面由偵錯引擎 (DE) 用於將訊息傳送至 Visual Studio 需要來自使用者的回應。  
+偵錯工具引擎會使用這個介面 (DE) 將訊息傳送至需要使用者回應的 Visual Studio。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,35 +30,35 @@ ms.locfileid: "65685976"
 IDebugMessageEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- DE 會實作這個介面來傳送訊息至 Visual Studio 所需的使用者回應。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上。 使用 SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要存取`IDebugEvent2`介面。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ DE 會執行這個介面，將訊息傳送至需要使用者回應的 Visual Studio。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須在與這個介面相同的物件上執行。 SDM 會使用 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) 來存取 `IDebugEvent2` 介面。  
   
- 這個介面的實作必須與其進行通訊的 Visual Studio 呼叫[Responsemanager](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md) DE 到。 比方說，這可以使用訊息，張貼至 DE 的訊息處理執行緒，或實作這個介面的物件可以保存 DE 的參考，並與回應傳遞至回撥 DE `IDebugMessageEvent2::SetResponse`。  
+ 這個介面的執行必須將 Visual Studio 的 [responsemanager](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md) 呼叫傳達給 DE。 例如，您可以使用張貼至解除郵件處理執行緒的訊息來完成這件工作，或者執行這個介面的物件可以保留對 DE 的參考，然後再呼叫傳回的回應 `IDebugMessageEvent2::SetResponse` 。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- DE 建立，並傳送這個事件物件需要回應對使用者顯示一則訊息。 事件會使用傳送[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)附加至正在進行偵錯程式時，會將 SDM 所提供的回呼函式。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 「取消」會建立並傳送此事件物件，向需要回應的使用者顯示訊息。 使用 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 回呼函式來傳送事件，該函式會在附加至要進行偵錯工具的程式時提供。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDebugMessageEvent2`。  
+ 下表顯示的方法 `IDebugMessageEvent2` 。  
   
 |方法|描述|  
 |------------|-----------------|  
 |[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)|取得要顯示的訊息。|  
-|[SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md)|如果有的話，從訊息方塊，請設定所做出的回應。|  
+|[SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md)|從訊息方塊設定回應（如果有的話）。|  
   
 ## <a name="remarks"></a>備註  
- 預設會使用此介面，如果需要使用者的特定回應特定訊息。 比方說，如果 DE 取得 「 拒絕存取 」 訊息，嘗試從遠端將其附加至程式之後，DE 會傳送此特定訊息中的 Visual studio`IDebugMessageEvent2`事件的訊息方塊樣式`MB_RETRYCANCEL`。 這可讓使用者重試一次，或取消在附加作業。  
+ 如果需要特定訊息的使用者特定回應，則 DE 將會使用此介面。 例如，如果在嘗試遠端附加至程式之後，取消了「拒絕存取」訊息，則會將此特定訊息傳送至 `IDebugMessageEvent2` 具有訊息方塊樣式的事件中 Visual Studio `MB_RETRYCANCEL` 。 這可讓使用者重試或取消附加作業。  
   
- DE 指定由下列的 Win32 函式的慣例來處理此訊息有何`MessageBox`(請參閱 < [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8)如需詳細資訊)。  
+ DE 會依照 Win32 函數的慣例來指定如何處理此訊息 `MessageBox` (如需詳細資料，請參閱 [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8)) 。  
   
- 使用[IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)介面將訊息傳送至 Visual Studio 不需要使用者回應。  
+ 使用 [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) 介面，將訊息傳送至不需要使用者回應的 Visual Studio。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

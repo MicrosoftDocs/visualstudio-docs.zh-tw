@@ -1,5 +1,5 @@
 ---
-title: 將 Web 服務加入專案系統 |Microsoft Docs
+title: 將 Web 服務加入至專案系統 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,22 +11,22 @@ ms.assetid: 8efa078b-68b2-45a2-9be2-44f807bc0d7f
 caps.latest.revision: 8
 manager: jillfra
 ms.openlocfilehash: f5b192be8e5f68ad9314fe08fff963c032013cb0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63002661"
 ---
 # <a name="adding-web-services-to-project-systems"></a>將 Web 服務加入專案系統中
-XML Web service 在一般情況下，是以程式設計方式的資訊傳回給專案系統使用的 SOAP (Simple Object Access Protocol) 通訊協定的 URL 定址資源。 您也可以使用 VSPackage 專案系統整合的 Web 服務<xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2>介面。  
+XML Web Service 通常是 URL 可定址的資源，會使用 SOAP (簡易物件存取通訊協定) 通訊協定，將程式設計資訊傳回專案系統。 您可以使用介面將 Web 服務整合到您的 VSPackage 專案系統 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2> 。  
   
-### <a name="to-add-a-web-service-to-your-project-system"></a>若要將 Web 服務新增至您的專案系統  
+### <a name="to-add-a-web-service-to-your-project-system"></a>將 Web 服務加入至您的專案系統  
   
-1. 呼叫`QueryService`for<xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2>介面透過<xref:Microsoft.VisualStudio.Shell.Interop.SVsAddWebReferenceDlg>服務。  
+1. `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2> 透過服務呼叫介面 <xref:Microsoft.VisualStudio.Shell.Interop.SVsAddWebReferenceDlg> 。  
   
-2. 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2.AddWebReferenceDlg%2A> 方法。 如果您傳入`pDiscoverySession`做為參數`NULL`、 為您建立探索工作階段和工作階段會快取，使其可供後續使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2>介面。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2.AddWebReferenceDlg%2A> 方法會傳回的指標<xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult2>。  
+2. 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2.AddWebReferenceDlg%2A> 方法。 如果您將 `pDiscoverySession` 參數傳入 `NULL` ，系統就會為您建立探索會話，並快取會話，讓介面可供後續使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2> 。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2.AddWebReferenceDlg%2A> 方法會傳回的指標 <xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult2> 。  
   
-3. 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult.AddWebReference%2A> 方法。 為 Web 服務參考 資料夾中的 automation 物件傳遞`pUnkWebReferenceFolder`參數。 Visual Studio 環境然後會檢查是否已經有 Web 服務。 如果 Web 服務不存在，則環境下載，並將 Web 服務加入至資料夾和任何其他檔案 （例如.wsdl 檔案） 的資料夾之子節點。  
+3. 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult.AddWebReference%2A> 方法。 傳入 Web 服務 [參考] 資料夾的 automation 物件做為 `pUnkWebReferenceFolder` 參數。 然後 Visual Studio 環境會檢查 Web 服務是否已存在。 如果 Web 服務不存在，則環境會下載 Web 服務，並將其加入至資料夾，以及任何其他檔案 (例如，) 到資料夾的子節點。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2>   

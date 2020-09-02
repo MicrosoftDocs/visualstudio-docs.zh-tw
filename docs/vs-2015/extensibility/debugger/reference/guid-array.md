@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0465188cd44ad14ef3f7df9f5eda619a5ecb6d0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160116"
 ---
-# <a name="guidarray"></a>GUID_ARRAY
+# <a name="guid_array"></a>GUID_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-描述可用的偵錯引擎的唯一識別碼的陣列。  
+描述可用的偵錯工具引擎之唯一識別碼陣列。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,20 +42,20 @@ public struct GUID_ARRAY
   
 ## <a name="terms"></a>詞彙  
  dwCount  
- 陣列中的唯一識別項的數目。  
+ 陣列中的唯一識別碼數目。  
   
  成員  
  包含唯一識別碼的陣列。  
   
 ## <a name="remarks"></a>備註  
- 此結構由[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)方法。  
+ [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)方法會傳回這個結構。  
   
 ## <a name="requirements"></a>需求  
- 標頭：Msdbg.h  
+ 標頭： Msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

@@ -10,16 +10,16 @@ ms.assetid: c4ebac40-0374-4dda-948e-06fdda0e9c81
 caps.latest.revision: 8
 manager: jillfra
 ms.openlocfilehash: 64f2afa6e853978e919e466f91475bed1e8d698c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62971286"
 ---
 # <a name="registering-services"></a>註冊服務
 若要支援依需求載入，服務提供者必須向 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]註冊其全域服務。  
   
- 在開發期間，將屬性加入封裝的原始程式碼，然後在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中建置封裝，受管理服務提供者即會註冊服務和服務覆寫。 這會在產生的組件上執行 RegPkg.exe 公用程式，並註冊封裝，然後準備進行部署。 如需詳細資訊，請參閱[如何：註冊服務](../misc/how-to-register-a-service.md)。  
+ 在開發期間，將屬性加入封裝的原始程式碼，然後在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中建置封裝，受管理服務提供者即會註冊服務和服務覆寫。 這會在產生的組件上執行 RegPkg.exe 公用程式，並註冊封裝，然後準備進行部署。 如需詳細資訊，請參閱 [如何：註冊服務](../misc/how-to-register-a-service.md)。  
   
  未受管理的服務提供者必須在系統登錄的 [services] 區段或 [service overrides] 區段中，向 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 註冊它們所提供的服務。 下列 .reg 檔案片段顯示可能會如何登錄 SVsTextManager 服務：  
   

@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1d672d90254626cfef9bd87bfef9dcf2426aa346
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160304"
 ---
 # <a name="resource-contention-data-views"></a>資源爭用資料檢視
@@ -28,13 +28,13 @@ ms.locfileid: "68160304"
  [摘要檢視 - 分析爭用資料](../profiling/resource-contention-data-views.md)  
  顯示分析資料的圖形化時間軸，並列出參與最多封鎖事件的函式和資源。  
   
- [呼叫樹狀圖檢視](../profiling/call-tree-view-contention-data.md)  
+ [呼叫樹狀圖檢閱](../profiling/call-tree-view-contention-data.md)  
  顯示階層樹狀結構，表示執行的分析中，函式的執行路徑和資源爭用資料。  
   
  [模組檢視](../profiling/modules-view-contention-data.md)  
  依模組整理執行緒和資源爭用資料，並列出封鎖事件發生時正在執行的函式、原始程式碼及指令。  
   
- [呼叫端/被呼叫端檢視 - 爭用資料](../profiling/caller-callee-view-contention-data.md)  
+ [呼叫端/被呼叫端視圖-爭用資料](../profiling/caller-callee-view-contention-data.md)  
  列出所選函式的執行緒和資源爭用資料，以及被呼叫或被所選函式呼叫的函式。  
   
  [資源詳細資料檢視](../profiling/resource-details-view-contention-data.md)  
@@ -58,6 +58,6 @@ ms.locfileid: "68160304"
  [處理序檢視](../profiling/process-view-contention-data.md)  
  按處理序和執行緒列出資源爭用。  
   
-## <a name="reference"></a>參考資料  
+## <a name="reference"></a>參考  
  [函式詳細資料檢視](../profiling/function-details-view.md)  
  顯示選取的函式及所呼叫函式 (由該所選函式呼叫的函式) 之間關聯性的圖形化圖表。

@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2908c8217070196de1b2d3cd4f1c5f8d8f2868a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160440"
 ---
 # <a name="build-loggers"></a>組建記錄器
@@ -44,14 +44,14 @@ ms.locfileid: "68160440"
  [!code-csharp[msbuild_SimpleConsoleLogger#3](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#3)]  
   
 ## <a name="responding-to-logger-verbosity-values"></a>回應記錄器詳細資訊層級值  
- 在某些情況下，如果 MSBuild.exe **/verbosity** 參數包含特定值，您可能只想記錄來自事件的資訊。 在此範例中，<xref:Microsoft.Build.Framework.IEventSource.TargetStarted> 事件處理常式只會在 (由 **/verbosity** 參數所設定的) <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> 屬性等於 <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed` 的情況下，才會記錄訊息。  
+ 在某些情況下，如果 MSBuild.exe **/verbosity** 參數包含特定值，您可能只想記錄來自事件的資訊。 在此範例中， <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> 事件處理常式只 <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> 會在 **/verbosity**參數所設定的屬性等於時，才會記錄訊息 <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed` 。  
   
  [!code-csharp[msbuild_SimpleConsoleLogger#4](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#4)]  
   
 ## <a name="specifying-a-logger"></a>指定記錄器  
- 一旦將記錄器編譯為組件之後，您就必須告訴 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 在建置期間使用該記錄器。 這是使用 **/logger** 參數搭配 MSBuild.exe 來完成。 如需 MSBuild.exe 適用參數的詳細資訊，請參閱[命令列參考](../msbuild/msbuild-command-line-reference.md)。  
+ 一旦將記錄器編譯為組件之後，您就必須告訴 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 在建置期間使用該記錄器。 這是搭配 MSBuild.exe 使用 **/logger** 參數來完成。 如需 MSBuild.exe 可用參數的詳細資訊，請參閱 [命令列參考](../msbuild/msbuild-command-line-reference.md)。  
   
- 下列命令列會建置專案 `MyProject.csproj`，並使用 `SimpleLogger.dll` 中實作的記錄器類別。 **/nologo** 參數會隱藏程式啟始資訊及著作權訊息，而 **/noconsolelogger** 參數會停用預設的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 主控台記錄器。  
+ 下列命令列會建置專案 `MyProject.csproj`，並使用 `SimpleLogger.dll` 中實作的記錄器類別。 **/Nologo**參數會隱藏橫幅和著作權訊息，而 **/noconsolelogger**參數會停用預設的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 主控台記錄器。  
   
 ```  
 MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll  
@@ -65,7 +65,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>範例  
   
-### <a name="description"></a>說明  
+### <a name="description"></a>描述  
  下列範例包含記錄器的完整程式碼。  
   
 ### <a name="code"></a>程式碼  
@@ -75,7 +75,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>範例  
   
-### <a name="description"></a>說明  
+### <a name="description"></a>描述  
  下列範例示範如何實作要將記錄寫入檔案的記錄器，而不是將它顯示在主控台視窗中。  
   
 ### <a name="code"></a>程式碼  

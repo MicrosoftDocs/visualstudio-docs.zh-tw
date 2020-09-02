@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fe77e8cb0f21789c7311d9c337b3b973c4dd44f9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645508"
 ---
 # <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>如何：將註解加入至類別圖表 (類別設計工具)
@@ -33,9 +33,9 @@ ms.locfileid: "72645508"
 
 ### <a name="to-add-a-comment"></a>新增註解
 
-1. 將註解從 [類別設計工具工具箱] 拖曳到類別圖表上。
+1. 將註解從 [類別設計工具工具箱]**** 拖曳到類別圖表上。
 
 2. 在圖表上新的註解圖形中按一下，然後鍵入想要的文字。
 
-## <a name="see-also"></a>請參閱
- 使用[類別圖表（類別設計工具）](../ide/working-with-class-diagrams-class-designer.md)使用[類別圖表（類別設計工具）](../ide/working-with-class-diagrams-class-designer.md) How [To：自訂類別圖表（類別設計工具）](../ide/how-to-customize-class-diagrams-class-designer.md)
+## <a name="see-also"></a>另請參閱
+ 使用[類別圖表 (類別設計工具) ](../ide/working-with-class-diagrams-class-designer.md) [使用類別圖表 (類別設計工具) ](../ide/working-with-class-diagrams-class-designer.md) [如何：自訂類別圖表 (](../ide/how-to-customize-class-diagrams-class-designer.md)類別設計工具) 

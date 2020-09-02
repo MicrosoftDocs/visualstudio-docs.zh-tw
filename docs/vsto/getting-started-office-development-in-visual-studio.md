@@ -1,5 +1,5 @@
 ---
-title: 開始使用（Visual Studio 中的 Office 開發）
+title: 在 Visual Studio) 中開始 (Office 開發
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 08/14/2019
@@ -15,23 +15,23 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1439bef59c621523b74f0e0634cd809deea1f3ee
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986068"
 ---
-# <a name="get-started-office-development-in-visual-studio"></a>開始使用（Visual Studio 中的 Office 開發）
+# <a name="get-started-office-development-in-visual-studio"></a>在 Visual Studio) 中開始 (Office 開發
   本節包含的主題可協助您開始使用 Visual Studio 中的 Microsoft Office Developer Tools。
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>本節內容
-- [Office 方案開發總覽&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Office 方案開發總覽 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
  提供在 Visual Studio 中開發 Office 方案所需的背景資訊。
 
-- [以 .NET Framework 4 或 .NET Framework 4.5 為目標之 Office 專案的設計變更](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
+- [以 .NET Framework 4 或 .NET Framework 4.5 為目標的 Office 專案設計變更](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
 
  描述以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或以後版本為目標的 Office 專案新設計，並列出移轉至 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或以後版本之 Office 專案程式碼的重大變更。
 
@@ -41,13 +41,13 @@ ms.locfileid: "72986068"
 
 - [設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)
 
- 提供安裝 Office 開發工具、可讓 Office 方案在使用者電腦上執行的執行時間，以及 Office 主要 interop 元件的資訊和步驟。
+ 提供安裝 Office 開發工具、可讓 Office 方案在終端使用者電腦上執行的執行時間，以及 Office 主要 interop 元件的相關資訊和步驟。
 
-- [開始撰寫適用于 Excel 的檔層級自訂程式](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
+- [開始程式設計 Excel 的檔層級自訂](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
 
  摘要說明使用 Visual Studio 建立 Excel 文件層級自訂所需的重要概念。
 
-- [Word 檔層級自訂的程式設計入門](../vsto/getting-started-programming-document-level-customizations-for-word.md)
+- [開始程式設計 Word 的檔層級自訂](../vsto/getting-started-programming-document-level-customizations-for-word.md)
 
  摘要說明使用 Visual Studio 建立 Word 文件層級自訂所需的重要概念。
 
@@ -59,7 +59,7 @@ ms.locfileid: "72986068"
 
  描述 Visual Basic for Applications 與 Visual Studio 中的 Office 程式開發工具在開發 Office 方案方面的相對優勢。
 
-- [Office 程式設計的一般工作](../vsto/common-tasks-in-office-programming.md)
+- [Office 程式設計中的一般工作](../vsto/common-tasks-in-office-programming.md)
 
  提供可協助解決常見問題的主題連結。
 
@@ -70,7 +70,7 @@ ms.locfileid: "72986068"
 
 - [Visual Studio 中的 Office 方案架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 
- 描述 Office 方案的元件，以及它們在設計階段和執行時間的使用方式。
+ 描述 Office 方案的元件，以及它們在設計階段和執行時間的運作方式。
 
 - [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)
 
@@ -88,4 +88,4 @@ ms.locfileid: "72986068"
 
  提供有關如何讓使用者使用 Office 方案的資訊，並描述選擇部署方法和設定安全性時所要考慮的主要問題。
 
-- [Visual Studio Tools for Office 技術文章和 Visual](/previous-versions/office/developer/office-2007/bb871648(v=office.12)) how to包含有關使用 Visual Studio 所建立之 Office 方案的影片和技術文章的連結。
+- [Visual Studio Tools for Office 技術文章和視覺效果如何](/previous-versions/office/developer/office-2007/bb871648(v=office.12)) 包含有關使用 Visual Studio 所建立的 Office 方案之影片和技術文章的連結。

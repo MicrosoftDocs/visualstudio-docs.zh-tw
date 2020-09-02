@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c58dd4f6e6a0c8fe1bd468053bf18c3635b1ee9d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78169374"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>逐步解說：使用虛擬使用者活動圖來找出問題
@@ -24,7 +24,7 @@ ms.locfileid: "78169374"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 - Visual Studio Enterprise
 
@@ -40,13 +40,13 @@ ms.locfileid: "78169374"
 
 2. 開啟包含 *LoadTest1.loadtest* 的 **ColorWebApp** 方案。 此負載測試是執行本主題開頭必要條件章節中所列三個逐步解說的步驟所產生。
 
-     本演練中的剩餘步驟假定一個名為 ColorWebApp 的 Web 應用程式、名為*ColorWebAppTest.webtest*的 Web 效能測試以及名為*LoadTest1.loadtest*的負載測試。
+     本逐步解說中的其餘步驟假設有一個名為 ColorWebApp 的 web 應用程式，這是名為 *ColorWebAppTest webtest* 的 web 效能測試，以及一個名為 *loadtest1.loadtest. loadtest*的負載測試。
 
 ## <a name="run-the-load-test"></a>執行負載測試
 
 執行負載測試以收集虛擬使用者活動資料。
 
-- 在 **"載入測試編輯器**"中，選擇工具列上的 **"運行**"按鈕。 LoadTest1 便會開始執行。
+- 在 [ **負載測試編輯器**中，選擇工具列上的 [ **執行** ] 按鈕。 LoadTest1 便會開始執行。
 
 ## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>在虛擬使用者活動圖中找出問題
 
@@ -61,7 +61,7 @@ ms.locfileid: "78169374"
 2. 在 [頁面回應時間]**** 圖形上，於其中一個臨界值違規圖示附近按一下滑鼠右鍵，然後選取 [移至使用者詳細資料]****。
 
     > [!NOTE]
-    > 您也可以使用 [負載測試編輯器]**** 工具列中的 [詳細資料]**** 按鈕，開啟使用者活動圖。 但是，如果您使用 **"轉到使用者詳細資訊**"選項，**虛擬使用者活動圖表**將自動放大您在圖形中按右鍵的測試部分。
+    > 您也可以使用 [負載測試編輯器]**** 工具列中的 [詳細資料]**** 按鈕，開啟使用者活動圖。 但是，如果您使用 [ **移至使用者詳細資料** ] 選項， **虛擬使用者活動圖** 會自動放大您在圖形中以滑鼠右鍵按一下的測試部分。
 
      在顯示的 [詳細資料] 檢視中，[虛擬使用者活動圖]**** 的焦點會在發生臨界值違規的時段上。
 
@@ -73,7 +73,7 @@ ms.locfileid: "78169374"
 
 5. 在 [篩選結果]**** 面板中，清除 [顯示成功的結果]**** 和 [HttpError]**** 核取方塊，但保留選取 [ValidationRuleError]**** 核取方塊。
 
-     **虛擬使用者活動圖表**僅顯示在*Red.aspx*頁上花費超過 3 秒的虛擬使用者，這些使用者由上一演練中配置的閾值衝突指定。
+     [ **虛擬使用者活動圖** ] 只會顯示在 *Red .aspx* 頁面上花費超過3秒的虛擬使用者，如先前逐步解說中設定的臨界值違規所指定。
 
 6. 將滑鼠指標停留在代表發生臨界值違規之驗證規則錯誤的虛擬使用者的水平線上。
 
@@ -87,19 +87,19 @@ ms.locfileid: "78169374"
 
     - **結果**
 
-    - **網路**
+    - **Network**
 
-    - **開始時間**
+    - **Start Time**
 
-    - **時間**
+    - **有效期間**
 
-    - **代理**
+    - **代理程式**
 
     - **測試記錄**
 
 8. 請注意，[測試記錄]**** 是連結。 選擇 [測試記錄]**** 連結。
 
-9. 與日誌關聯的 ColorWebTest Web 效能測試將在 Web**效能測試結果檢視器**中打開。 這樣您就可以找出發生臨界值違規的位置。
+9. 與記錄檔相關聯的 ColorWebTest web 效能測試會在 **Web 效能測試結果檢視器**中開啟。 這樣您就可以找出發生臨界值違規的位置。
 
      您可以使用 [詳細資料圖例]**** 和 [篩選結果]**** 這兩個面版中的各項設定，幫助您找出效能問題和負載測試中的錯誤。 嘗試使用這些設定和 [縮放至時間週期]**** 工具，查看 [虛擬使用者活動圖]**** 如何呈現虛擬使用者資料。
 

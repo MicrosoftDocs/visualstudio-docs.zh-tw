@@ -1,5 +1,5 @@
 ---
-title: 偵錯 ASP.NET 和 AJAX 應用程式 |Microsoft Docs
+title: ASP.NET 和 AJAX 應用程式的偵錯工具 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0645cd28e6124e31e19b03489661c6828799cf4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686735"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>偵錯 ASP.NET 和 AJAX 應用程式
@@ -46,7 +46,7 @@ ms.locfileid: "65686735"
  [使用偵錯工具管理例外狀況](../debugger/managing-exceptions-with-the-debugger.md)  
  說明必須啟用 Just My Code 以便偵錯 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 例外狀況的原因。  
   
- [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
+ [Debugging and Tracing AJAX Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
  討論一些可幫助您進行 AJAX 程式碼偵錯的技術和工具。  
   
  [IntelliTrace](../debugger/intellitrace.md)  
@@ -54,6 +54,6 @@ ms.locfileid: "65686735"
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
- [偵錯 Web 應用程式和指令碼](../debugger/debugging-web-applications-and-script.md)   
- [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
+ [Web 應用程式和腳本的偵錯工具](../debugger/debugging-web-applications-and-script.md)   
+ [偵錯工具設定和準備](../debugger/debugger-settings-and-preparation.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)

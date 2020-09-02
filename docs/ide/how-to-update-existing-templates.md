@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: d5d9726ecbf3cb7c403f682aadb197a26b0dc26b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283914"
 ---
 # <a name="how-to-update-existing-templates"></a>如何：更新現有的範本
@@ -25,19 +25,19 @@ ms.locfileid: "85283914"
 
 Visual Studio 提供可用來更新現有範本的 [匯出範本精靈]****：
 
-1. 從功能表列**選擇 [檔案] [**  >  **新增**  >  **專案**]。
+1. 從功能表列**選擇 [** 檔案  >  **新**  >  **專案**]。
 
 1. 選取您想要更新的範本，然後繼續建立新專案的步驟。
 
 1. 在 Visual Studio 中修改專案。 例如，變更輸出類型，或將新檔案新增至專案。
 
-1. 在 [**專案**] 功能表上，選擇 [**匯出範本**]。
+1. 選擇 [ **專案** ] 功能表上的 [ **匯出範本**]。
 
-    [**匯出範本 Wizard]** 隨即開啟。
+    [ **匯出範本]** 隨即開啟。
 
 1. 遵循精靈中的指示，將範本匯出成 *.zip* 檔案。
 
-1. 選擇性將 *.zip*檔案放在下列目錄中： *%USERPROFILE%\Documents\Visual Studio \<version\> \Templates\ProjectTemplates* ，讓它可供選擇。 如果未在 [匯出範本精靈]**** 選取 [自動將範本匯入 Visual Studio]**** 選項，即必須執行此步驟。
+1.  (選擇性) 將 *.zip* 檔案放在下列目錄中： *%USERPROFILE%\Documents\Visual Studio \<version\> \Templates\ProjectTemplates* ，使其可供選取。 如果未在 [匯出範本精靈]**** 選取 [自動將範本匯入 Visual Studio]**** 選項，即必須執行此步驟。
 
 1. 刪除舊的範本 *.zip* 檔案。
 
@@ -49,7 +49,7 @@ Visual Studio 提供可用來更新現有範本的 [匯出範本精靈]****：
 
 1. 尋找包含範本的 *.zip* 檔。 使用者專案範本位於 *%USERPROFILE%\Documents\Visual Studio \<version\> \Templates\ProjectTemplates*。
 
-1. 將 *.zip*檔案解壓縮。
+1. 將 *.zip* 檔案解壓縮。
 
 1. 修改或刪除目前的範本檔，或將新檔案加入至範本。
 
@@ -57,13 +57,13 @@ Visual Studio 提供可用來更新現有範本的 [匯出範本精靈]****：
 
     如需 *.vstemplate* 結構描述的詳細資訊，請參閱 [Visual Studio 範本結構描述參考 (擴充性)](../extensibility/visual-studio-template-schema-reference.md)。 如需您可以在來源檔案中參數化哪些項目的詳細資訊，請參閱[範本參數](../ide/template-parameters.md)。
 
-1. 在您的範本中選取檔案，然後從滑鼠右鍵或操作功能表中，選擇 [**傳送到**  >  **壓縮的（zipped）資料夾**]。
+1. 在您的範本中選取檔案，然後從滑鼠右鍵功能表或操作功能表中選擇 [**傳送到**  >  **壓縮的 (壓縮的) 資料夾**。
 
-    您選取的檔案會壓縮成 *.zip*檔案。
+    您選取的檔案會壓縮成 *.zip* 檔案。
 
 1. 將新的 *.zip* 檔放在與舊 *.zip* 檔相同的目錄中。
 
-1. 刪除已解壓縮的範本檔案和舊範本 *.zip*檔案。
+1. 刪除已解壓縮的範本檔案和舊的範本 *.zip* 檔。
 
 ## <a name="see-also"></a>另請參閱
 

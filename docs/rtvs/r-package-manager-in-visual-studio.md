@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: d35bfd45e862912ff78ae600eed01ce8dc002493
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62998895"
 ---
 # <a name="package-manager"></a>套件管理員
 
-Visual Studio R 工具 (RTVS) 套件管理員是用來管理 R 套件的 UI。 要打開它，請選擇**R 工具** > **Windows** > **包**或按**Ctrl**+**7**。
+Visual Studio R 工具 (RTVS) 套件管理員是用來管理 R 套件的 UI。 若要開啟它，請選取 [ **R 工具**]  >  **Windows**  >  **封裝**或按下**Ctrl** + **7**。
 
 套件管理員有三個索引標籤。 每個索引標籤都會在左側顯示相關套件清單，並在右側顯示所選取套件的特定詳細資料，包括套件的版本、描述、授權、安裝位置以及其他相關資訊的連結。 右上方的搜尋方塊可讓您篩選清單。
 

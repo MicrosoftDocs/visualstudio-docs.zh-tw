@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2::GetMessage | Microsoft Docs
+title: IDebugMessageEvent2：： GetMessage |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,10 +14,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 14eb540962db3a806273d5c76facb7f9bf25dee7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685901"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
@@ -49,22 +49,22 @@ int GetMessage( 
   
 #### <a name="parameters"></a>參數  
  `pMessageType`  
- [out]傳回值，以從[MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)描述訊息類型的列舉型別。  
+ 擴展傳回 [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) 列舉中的值，這個值會描述訊息的類型。  
   
  `pbstrMessage`  
- [out]傳回訊息。  
+ 擴展傳回訊息。  
   
  `pdwType`  
- [out]傳回的訊息，並使用 Win32 的慣例類型`MessageBox`函式。 請參閱[AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8)函式，如需詳細資訊。  
+ 擴展使用 Win32 函數的慣例，傳回訊息的型別 `MessageBox` 。 如需詳細資訊，請參閱 [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) 函數。  
   
  `pbstrHelpFileName`  
- [in、 out]傳回說明檔名稱。 可能是 null (C++) 或空白 (C#) 值，如果沒有說明檔。  
+ [in，out]傳回說明檔名稱。 如果沒有說明檔，則可以是 null (c + +) 或空的 (c # ) 值。  
   
  `pdwHelpId`  
- [in、 out]傳回的說明識別碼。 可能是 0，如果沒有說明關聯與此訊息。  
+ [in，out]傳回說明識別碼。 如果沒有與此訊息相關聯的說明，則可能為0。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   
