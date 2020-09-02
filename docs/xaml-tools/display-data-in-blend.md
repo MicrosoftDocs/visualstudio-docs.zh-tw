@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd48ac8f5753521240ed3feb6003d945786820a3
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329091"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>在 Blend for Visual Studio 中顯示資料
@@ -21,7 +21,7 @@ ms.locfileid: "85329091"
 您可以在自訂頁面的版面配置時於設計工具中檢視範例資料。 您可以從頭產生範例資料，或使用現有的類別。 您也可以連線到在執行應用程式時會出現於其中的「即時資料」**。
 
 > [!NOTE]
-> Blend 中的**資料**面板僅支援以 .NET Framework 為目標的專案。 不支援以 .NET Core 為目標的 UWP 專案或專案。
+> Blend 中的 [ **資料** ] 面板僅支援以 .NET Framework 為目標的專案。 以 .NET Core 為目標的 UWP 專案或專案則不支援。
 
 ## <a name="generate-sample-data"></a>產生範例資料
 

@@ -8,15 +8,15 @@ ms.date: 02/17/2020
 ms.topic: conceptual
 description: 瞭解新的 Visual Studio + GitHub 供應專案
 ms.openlocfilehash: a87c6927f57e4a5e997fc396382045d6a5f4c03e
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248183"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>含 GitHub Enterprise 的 Visual Studio 訂用帳戶簡介  
 
- (EA) 與 Microsoft 簽訂 Enterprise 合約的客戶，有資格購買新的訂用帳戶供應專案，以結合 Visual Studio 標準訂閱和 GitHub Enterprise。 Visual Studio 訂閱者若想取得 GitHub Enterprise，這是個既簡單又經濟實惠的方法。 
+與 Microsoft (EA) 的 Enterprise 合約客戶，有資格購買新的訂用帳戶供應專案，以結合 Visual Studio 標準訂用帳戶和 GitHub Enterprise。 Visual Studio 訂閱者若想取得 GitHub Enterprise，這是個既簡單又經濟實惠的方法。 
 
 - 利用 Visual Studio 與 GitHub 安全地為您的 IDE 與工作流程帶來開放原始碼、社群及最佳做法，以實現大規模創新。
 - 使用開發人員適用的頂尖開發工具與服務，搭配一組最全方位的資源，來建立、部署及管理出色的應用程式。 
@@ -29,7 +29,7 @@ ms.locfileid: "88248183"
 - 含 GitHub Enterprise 的 Visual Studio Enterprise
 - 含 GitHub Enterprise 的 Visual Studio Professional
 
-如果您的組織有尚未約滿的 EA，可以購買「升級」SKU，將 GitHub Enterprise 新增到您現有的 Visual Studio Enterprise 或 Visual Studio Professional 訂用帳戶。 然後，當您的合約續約時，您就可以購買供應專案。
+如果您的組織有尚未約滿的 EA，可以購買「升級」SKU，將 GitHub Enterprise 新增到您現有的 Visual Studio Enterprise 或 Visual Studio Professional 訂用帳戶。 然後，當您的合約續約時，就可以購買供應專案。
 
 Visual Studio Enterprise、Visual Studio Professional 與 GitHub Enterprise 的現有 SKU 也會各自繼續開放使用。 
 
@@ -51,7 +51,7 @@ Visual Studio + GitHub Enterprise 訂用帳戶分成兩部份指派：
 
 若您剛接觸 GitHub，以下這些資源可能會對您有幫助：
 
-| 主體                                  | GitHub 說明主題                                     |
+| 主旨                                  | GitHub 說明主題                                     |
 |------------------------------------------|-------------------------------------------------------|
 | 一般問題/資訊          | [GitHub 說明](https://help.github.com/en)             |
 | GitHub 是什麼？  如何深入了解？  | [關於 GitHub](https://help.github.com/en/categories/about-github)                                       |
@@ -62,19 +62,19 @@ Visual Studio + GitHub Enterprise 訂用帳戶分成兩部份指派：
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-### <a name="q--where-is-my-github-subscription"></a>問：我的 GitHub 訂閱在哪裡？
-答：設定 GitHub 訂閱的流程可能需要一些時間。  若您已等待多時，而尚未收到任何消息，建議您與 GitHub 系統管理員連絡。  這可能是因為您的系統管理員仍在處理指派，或 決定不指派 GitHub 訂用帳戶給您。 
+### <a name="q--where-is-my-github-subscription"></a>問：我的 GitHub 訂用帳戶在哪裡？
+答：設定 GitHub 訂用帳戶的程式可能需要一段時間。  若您已等待多時，而尚未收到任何消息，建議您與 GitHub 系統管理員連絡。  這可能是因為您的系統管理員仍在處理指派，或 決定不指派 GitHub 訂用帳戶給您。 
 
 ### <a name="q--how-do-i-reach-my-github-administrator"></a>問：如何? 觸及我的 GitHub 系統管理員嗎？
-答：如果您使用 GitHub Enterprise Server，可以選取用戶端底部可見的 **支援** 連結，以與系統管理員連線。
+答：如果您使用 GitHub Enterprise Server，則可以選取用戶端底部可見的 **支援** 連結，以與系統管理員連線。
 
-### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>問：我是否 (Professional 或 Enterprise) 取得完整的 Visual Studio 訂用帳戶，或只是透過此供應專案取得 IDE？
+### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>問：我是否可以 (Professional 或 Enterprise) 取得完整的 Visual Studio 訂用帳戶，或只讓 IDE 使用此供應專案？
 答：除了 GitHub Enterprise 訂用帳戶之外，您還會收到完整的 Visual Studio 訂用帳戶。  您可獲得這些訂用帳戶中包含的所有權益，例如軟體下載、雲端服務、技術支援及合作夥伴權益，就如同單獨購買訂用帳戶。
 
 ## <a name="support-resources"></a>支援資源
 - 您可以在 [GitHub 說明](https://help.github.com/en)中，找到各種 GitHub 各種相關問題的答案。
 - 在 [GitHub Community Forum](https://github.community/) (GitHub 社群論壇) 可以獲得其他 GitHub 使用者的協助。
-- 如需 Visual Studio 訂閱的銷售、訂閱、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 - 取得 GitHub Enterprise 的[技術支援](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
 

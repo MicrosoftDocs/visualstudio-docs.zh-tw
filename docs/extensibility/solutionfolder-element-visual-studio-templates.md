@@ -1,5 +1,5 @@
 ---
-title: 解決方案資料夾元素(可視化工作室範本) |微軟文件
+title: " (Visual Studio 範本的 SolutionFolder 元素) |Microsoft Docs"
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3262a5dcc0f226a0ac1b3aa08219fb89dbf70e83
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699994"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder 項目 (Visual Studio 範本)
 將多專案範本中的專案分組。
 
- \<樣本>\<範本內容>\<專案集合>\<解決方案資料夾>
+ \<VSTemplate> \<TemplateContent>
+ \<ProjectCollection>
+ \<SolutionFolder>
 
 ## <a name="syntax"></a>語法
 
@@ -45,20 +47,20 @@ ms.locfileid: "80699994"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定多專案範本中某一個專案的 .vstemplate 檔路徑。|
 |`SolutionFolder`|選擇性項目。<br /><br /> 將多專案範本中的專案分組。|
 
 ### <a name="parent-elements"></a>父項目
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|指定多專案範本的組織和內容。|
 |`SolutionFolder`|將多專案範本中的專案分組。|
 
 ## <a name="remarks"></a>備註
- 多專案範本是做為兩個以上專案的容器使用。 `SolutionFolder` 項目可將範本中的專案分成群組。 由 `SolutionFolder` 項目所指定的資料夾會建立為 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之專案中的方案資料夾。 有關多項目範本的詳細資訊,請參閱[如何:建立多專案範本](../ide/how-to-create-multi-project-templates.md)。
+ 多專案範本是做為兩個以上專案的容器使用。 `SolutionFolder` 項目可將範本中的專案分成群組。 由 `SolutionFolder` 項目所指定的資料夾會建立為 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之專案中的方案資料夾。 如需多專案範本的詳細資訊，請參閱 [如何：建立多專案範本](../ide/how-to-create-multi-project-templates.md)。
 
 ## <a name="example"></a>範例
  這個範例會使用 `SolutionFolder` 項目將多專案範本分成兩個群組，也就是 `Math Classes` 和 `Graphics Classes`。 範本包含四個專案，每個方案資料夾各包含兩個專案。

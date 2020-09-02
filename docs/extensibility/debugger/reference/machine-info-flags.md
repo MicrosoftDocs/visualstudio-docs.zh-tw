@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FLAGS |微軟文件
+title: MACHINE_INFO_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b74955d65ff34c4787de03c3b03383fe7eb702cc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714493"
 ---
 # <a name="machine_info_flags"></a>MACHINE_INFO_FLAGS
-用於描述機器。
+用來描述電腦。
 
 ## <a name="syntax"></a>語法
 
@@ -42,17 +42,17 @@ public enum enum_MACHINE_INFO_FLAGS { 
 
 ## <a name="fields"></a>欄位
  `MCIFLAG_TERMINAL_SERVICES_AVAILABLE`\
- 指示終端服務可用。
+ 指出終端機服務可供使用。
 
 ## <a name="remarks"></a>備註
- 用作[MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)結構`Flags`的成員。
+ 當做 `Flags` [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) 結構的成員使用。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

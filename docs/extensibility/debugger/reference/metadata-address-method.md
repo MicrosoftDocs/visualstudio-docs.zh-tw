@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_METHOD |微軟文件
+title: METADATA_ADDRESS_METHOD |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bc3dd7a34e4f9a3e1b933781aeaf4e18cad7ec17
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714460"
 ---
 # <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
-此結構表示類方法的位址。
+此結構代表類別方法的位址。
 
 ## <a name="syntax"></a>語法
 
@@ -47,23 +47,23 @@ public struct METADATA_ADDRESS_METHOD {
  `tokMethod`\
  方法的識別碼。
 
- [C++]`_mdToken`是`typedef`32`int`位元的 。
+ [C + +] `_mdToken` 是 `typedef` 32 位的 `int` 。
 
  `dwOffset`\
- 類開始到此方法的偏移量(可以表示 vtable 中的偏移量)。
+ 從類別開始到這個方法的位移 (可以表示 vtable) 中的位移。
 
  `dwVersion`\
- 方法的版本(此值對符號提供程式是唯一的)。
+  (此值的方法版本對符號提供者) 而言是唯一的。
 
 ## <a name="remarks"></a>備註
- 當`DEBUG_ADDRESS_UNION``ADDRESS_KIND_METHOD`結構欄位設置為[(ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)舉中的值)`dwKind`時, 此結構是DEBUG_ADDRESS_UNION結構中的聯合的一部分。
+ 當結構的[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 欄位 `DEBUG_ADDRESS_UNION` 設定為 `ADDRESS_KIND_METHOD` ([ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉) 中的值時，此結構就是 DEBUG_ADDRESS_UNION 結構中聯集的一部分。
 
 ## <a name="requirements"></a>需求
- 標題: sh.h
+ 標頭： sh. h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

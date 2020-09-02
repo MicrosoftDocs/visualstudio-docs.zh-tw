@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2 | Microsoft Docs
+title: IDebugProgramPublisher2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d49173a4c1f10be1544cf07b0b01640321d6d181
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697303"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此介面可讓偵錯引擎 (DE) 或自訂的連接埠提供者註冊進行偵錯的程式。  
+此介面可讓 debug engine (DE) 或自訂埠供應商來註冊程式以進行偵錯工具。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,35 +30,35 @@ ms.locfileid: "65697303"
 IDebugProgramPublisher2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- Visual Studio 會實作這個介面來註冊，才能顯示偵錯可跨多個處理序偵錯的程式。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ Visual Studio 會執行這個介面以註冊要進行偵錯工具的程式，以便在多個進程之間進行跨進程的偵錯工具。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 呼叫 COM 的`CoCreateInstance`函式搭配`CLSID_ProgramPublisher`來取得這個介面 （請參閱範例）。 DE 或自訂的連接埠提供者會使用此介面，以註冊計劃的節點，代表正在偵錯程式。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 使用呼叫 COM 的函式 `CoCreateInstance` `CLSID_ProgramPublisher` 來取得此介面 (請參閱範例) 。 DE 或自訂埠供應商會使用此介面來註冊程式節點，以代表要進行偵錯工具的程式。  
   
-## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 這個介面會實作下列方法：  
+## <a name="methods-in-vtable-order"></a>採用 Vtable 順序的方法  
+ 此介面會執行下列方法：  
   
 |方法|描述|  
 |------------|-----------------|  
-|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|讓程式節點使用 DEs 和工作階段偵錯管理員 (SDM)。|  
-|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|移除程式 節點，使它已無法再使用。|  
-|[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|讓程式使用 DEs 和 SDM。|  
-|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|移除程式，讓它不再提供。|  
-|[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|設定旗標，指出偵錯工具會出現。|  
+|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|使程式節點可供 DEs 和會話 debug manager (SDM) 。|  
+|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|移除程式節點，使其無法再使用。|  
+|[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|使程式可供 DEs 和 SDM 使用。|  
+|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|移除程式，使其無法再使用。|  
+|[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|設定旗標，指出偵錯工具存在。|  
   
 ## <a name="remarks"></a>備註  
- 這個介面提供程式和程式節點 （也就是"「 會加以發佈） 使用 DEs 和工作階段的偵錯管理員 (SDM)。 若要存取已發佈的程式和程式節點，請使用[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)介面。 這是 Visual Studio 可以辨識程式正在偵錯的唯一方法。  
+ 此介面讓程式和程式節點可供使用， (也就是「發佈」它們) 供 DEs 和會話 debug manager (SDM) 使用。 若要存取已發佈的程式和程式節點，請使用 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) 介面。 這是 Visual Studio 可以辨識程式正在進行調試的唯一方法。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>範例  
- 此範例示範如何具現化程式發行者及註冊程式 節點。 這取自教學課程中，[發佈程式節點](https://msdn.microsoft.com/d0100e02-4e2b-4e72-9e90-f7bc11777bae)。  
+ 此範例示範如何將程式發行者具現化，並註冊程式節點。 這是取自教學 [課程的發行程式節點](https://msdn.microsoft.com/d0100e02-4e2b-4e72-9e90-f7bc11777bae)。  
   
 ```cpp#  
 // This is how m_srpProgramPublisher is defined in the class definition:  

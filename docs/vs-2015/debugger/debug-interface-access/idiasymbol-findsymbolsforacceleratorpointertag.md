@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findSymbolsForAcceleratorPointerTag |Microsoft Docs
+title: IDiaSymbol：： findSymbolsForAcceleratorPointerTag |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54f945dcb9f043c48014921680c95669eee33673
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149860"
 ---
 # <a name="idiasymbolfindsymbolsforacceleratorpointertag"></a>IDiaSymbol::findSymbolsForAcceleratorPointerTag
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-傳回的加速器指標中的標記數目C++AMP 虛設常式的函式。  
+傳回 C++ AMP 存根函式中的快速鍵指標標記數目。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,13 +33,13 @@ HRESULT findSymbolsForAccleratorPointerTag (
   
 #### <a name="parameters"></a>參數  
  `tagValue`  
- [in]位於 pointee 符號記錄指標標記值。  
+ 在找到 pointee 符號記錄的指標標記值。  
   
  `ppResult`  
- [out]指標`IDiaEnumSymbols`初始化與結果的介面指標。  
+ 擴展介面指標的指標， `IDiaEnumSymbols` 該指標會以結果初始化。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

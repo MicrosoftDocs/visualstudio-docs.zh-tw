@@ -1,5 +1,5 @@
 ---
-title: 顯示預設元素(視覺化工作室樣本)
+title: " (Visual Studio 範本的 ShowByDefault 元素) "
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700101"
 ---
-# <a name="showbydefault-element-visual-studio-templates"></a>顯示預設元素(視覺化工作室樣本)
-如果`false`指定範本將僅在指定的[樣本組 ID](../extensibility/templategroupid-element-visual-studio-templates.md)下顯示。
+# <a name="showbydefault-element-visual-studio-templates"></a> (Visual Studio 範本的 ShowByDefault 元素) 
+如果為 `false` ，則指定範本只會顯示在指定的 [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)下。
 
- \<VStemplate>\<範本資料>\<顯示預設>
+ \<VSTemplate> \<TemplateData>
+ \<ShowByDefault>
 
 ## <a name="syntax"></a>語法
 
@@ -43,7 +44,7 @@ ms.locfileid: "80700101"
 
 ### <a name="parent-elements"></a>父項目
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
 

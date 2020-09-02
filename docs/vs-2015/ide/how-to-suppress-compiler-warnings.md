@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aeb404c479edec5dec89f28e80584d435f5c370a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670649"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>如何：隱藏編譯器警告
@@ -22,31 +22,31 @@ ms.locfileid: "72670649"
 
 您可以指定不想要組建記錄檔包含的一種或多種編譯器警告，來清理組建記錄檔。 例如，您可以使用這項技術，檢閱將組建記錄檔詳細資訊設定為 [一般]、[詳細] 或 [診斷] 時自動產生的一些資訊，而非所有資訊。 如需詳細資訊的詳細資訊，請參閱[如何：檢視、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。
 
-### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>隱藏視覺效果C#或 F \# 的特定警告
+### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>隱藏 Visual C# 或 F 的特定警告\#
 
-1. 在方案總管中，選擇您想要隱藏警告的專案。
+1. 在方案總管**** 中，選擇您想要隱藏警告的專案。
 
 2. 在功能表列上選擇 [ **檢視**]、[ **屬性頁**]。
 
-3. 選擇 [組建] 頁面。
+3. 選擇 [組建]**** 頁面。
 
-4. 在 [隱藏警告] 方塊中，指定您想要隱藏並以分號分隔之警告的錯誤碼，然後重建方案。
+4. 在 [隱藏警告]**** 方塊中，指定您想要隱藏並以分號分隔之警告的錯誤碼，然後重建方案。
 
 ### <a name="to-suppress-specific-warnings-for-visual-c"></a>隱藏 Visual C++ 的特定警告
 
-1. 在方案總管中，選擇您想要隱藏警告的專案或原始程式檔。
+1. 在方案總管**** 中，選擇您想要隱藏警告的專案或原始程式檔。
 
 2. 在功能表列上選擇 [ **檢視**]、[ **屬性頁**]。
 
-3. 選擇 [組態屬性] 分類，並選擇 [C/C++] 分類，然後選擇 [進階] 頁面。
+3. 選擇 [組態屬性]**** 分類，並選擇 [C/C++]**** 分類，然後選擇 [進階]**** 頁面。
 
 4. 請執行下列其中一個步驟：
 
-    - 在 [停用特定警告] 方塊中，指定您想要隱藏並以分號分隔之警告的錯誤碼。
+    - 在 [停用特定警告]**** 方塊中，指定您想要隱藏並以分號分隔之警告的錯誤碼。
 
-    - 在 [停用特定警告] 方塊中，選擇 [編輯] 以顯示其他選項。
+    - 在 [停用特定警告]**** 方塊中，選擇 [編輯]**** 以顯示其他選項。
 
-5. 選擇 [確定] 按鈕，然後重建方案。
+5. 選擇 [確定]**** 按鈕，然後重建方案。
 
 ## <a name="suppressing-warnings-for-visual-basic"></a>隱藏 Visual Basic 的警告
 
@@ -54,11 +54,11 @@ ms.locfileid: "72670649"
 
 #### <a name="to-suppress-specific-warnings-for-visual-basic"></a>隱藏 Visual Basic 的特定警告
 
-1. 在方案總管中，選擇您想要隱藏警告的專案。
+1. 在方案總管**** 中，選擇您想要隱藏警告的專案。
 
-2. 在功能表列上，依序選擇 [專案] 和 [卸載專案]。
+2. 在功能表列上，依序選擇 [專案]**** 和 [卸載專案]****。
 
-3. 在方案總管中，開啟專案的捷徑功能表，然後選擇 [編輯 _ProjectName_ **.vbproj**]。
+3. 在方案總管**** 中，開啟專案的捷徑功能表，然後選擇 [編輯 _ProjectName_**.vbproj**]****。
 
     該專案檔會在程式碼編輯器中開啟。
 
@@ -100,15 +100,15 @@ ms.locfileid: "72670649"
 
 6. 將變更儲存至 .vbproj 檔案。
 
-7. 在功能表列上，依序選擇 [專案] 和 [重新載入專案]。
+7. 在功能表列上，依序選擇 [專案]**** 和 [重新載入專案]****。
 
-8. 在功能表列上，依序選擇 [建置] 和 [重建方案]。
+8. 在功能表列上，依序選擇 [建置]**** 和 [重建方案]****。
 
-    [輸出] 視窗不會再顯示您所指定的警告。
+    [輸出]**** 視窗不會再顯示您所指定的警告。
 
    如需詳細資訊，請參閱 [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)
 - [如何：檢視、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)

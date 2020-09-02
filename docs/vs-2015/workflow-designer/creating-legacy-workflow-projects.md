@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 644676393a606dfd7fbf6aa400a625dce2db3697
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656883"
 ---
 # <a name="creating-legacy-workflow-projects"></a>建立舊版工作流程活動
@@ -32,14 +32,14 @@ ms.locfileid: "72656883"
 |狀態機器工作流程程式庫|可建立狀態機器工作流程程式庫的專案。|
 |空白工作流程專案|用來建立工作流程應用程式的空白專案。|
 
-## <a name="in-this-section"></a>本章節內容
- [如何：建立工作流程專案 (舊版)](../workflow-designer/how-to-create-workflow-projects-legacy.md)
+## <a name="in-this-section"></a>本節內容
+ [HOW TO：建立工作流程專案 (舊版)](../workflow-designer/how-to-create-workflow-projects-legacy.md)
 
- [如何：建立循序工作流程主控台應用程式 (舊版)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)
+ [HOW TO：建立循序工作流程主控台應用程式 (舊版)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)
 
- [如何：建立循序工作流程程式庫 (舊版)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)
+ [HOW TO：建立循序工作流程程式庫 (舊版)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)
 
- [如何：建立工作流程活動程式庫 (舊版)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)
+ [HOW TO：建立工作流程活動程式庫 (舊版)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)
 
  [如何：建立狀態機器工作流程主控台應用程式 (舊版)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)
 
@@ -49,7 +49,7 @@ ms.locfileid: "72656883"
 
  [如何：設定工作流程專案屬性 (舊版)](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)
 
- [如何：新增項目至工作流程專案 (舊版)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)
+ [HOW TO：將新的項目加入至工作流程專案 (舊版)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)
 
-## <a name="see-also"></a>請參閱
- [連續工作流程視圖（舊版）](../workflow-designer/sequential-workflow-views-legacy.md) [Visual Studio 工作流程視窗（舊版）](../workflow-designer/visual-studio-workflow-windows-legacy.md)
+## <a name="see-also"></a>另請參閱
+ [ (舊版) ](../workflow-designer/sequential-workflow-views-legacy.md) [Visual Studio 工作流程視窗 (舊版) ](../workflow-designer/visual-studio-workflow-windows-legacy.md)的連續工作流程視圖

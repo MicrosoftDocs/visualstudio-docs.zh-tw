@@ -10,26 +10,26 @@ ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
 ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436505"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64805578"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>逐步解說：顯示智慧標籤
-智慧標籤已取代為燈泡。 請參閱[逐步解說：Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)。  
+智慧標籤已取代為燈泡。 請參閱 [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)。  
   
- 智慧標籤是文字上展開以顯示一組動作的標籤。 例如，在 Visual Basic 或 Visual C# 專案中，當您重新命名識別項 (例如變數名稱) 時，會在這個字組下方出現紅線。 當您將指標移至底線上方時，會在指標附近顯示按鈕。 如果您按一下該按鈕，則會顯示建議的動作 (例如，[將 IsRead 重新命名為 IsReady] )。 如果您按一下該動作，專案中的所有 **IsRead** 參考都會重新命名為 **IsReady**。  
+ 智慧標籤是文字上展開以顯示一組動作的標籤。 例如，在 Visual Basic 或 Visual C# 專案中，當您重新命名識別項 (例如變數名稱) 時，會在這個字組下方出現紅線。 當您將指標移至底線上方時，會在指標附近顯示按鈕。 如果您按一下該按鈕，則會顯示建議的動作 (例如，[將 IsRead 重新命名為 IsReady] ****)。 如果您按一下該動作，專案中的所有 **IsRead** 參考都會重新命名為 **IsReady**。  
   
  雖然智慧標籤是編輯器中 IntelliSense 實作的一部分，但是您可以透過子類別化 <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>，然後實作 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> 介面和 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> 介面，來實作智慧標籤。  
   
 > [!NOTE]
 > 其他類型的標籤可以透過類似的方式實作。  
   
- 下列逐步解說示範如何建立智慧標籤會出現在目前的文字，有兩個建議的動作：**轉換為大寫**並**轉換為小寫**。  
+ 下列逐步解說示範如何建立智慧標籤，而智慧標籤出現在目前字組上，而且有兩項建議的動作：[轉換為大寫] **** 和 [轉換為小寫] ****。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
+## <a name="prerequisites"></a>先決條件  
+ 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 [VISUAL STUDIO SDK](../extensibility/visual-studio-sdk.md)。  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF)  
   
@@ -39,7 +39,7 @@ ms.locfileid: "63436505"
   
 2. 在 VSIX 資訊清單編輯器中，開啟 source.extension.vsixmanifest 檔案。  
   
-3. 確定 [資產]  區段包含 `Microsoft.VisualStudio.MefComponent` 類型、[來源]  設定為 `A project in current solution`，並將 [專案]  設定為 SmartTagTest.dll。  
+3. 確定 [資產] **** 區段包含 `Microsoft.VisualStudio.MefComponent` 類型、[來源] **** 設定為 `A project in current solution`，並將 [專案] **** 設定為 SmartTagTest.dll。  
   
 4. 儲存並關閉 source.extension.vsixmanifest。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "63436505"
   
 1. 加入類別檔案，並將它命名為 `TestSmartTag`。  
   
-2. 加入下列匯入：  
+2. 新增下列匯入：  
   
      [!code-csharp[VSSDKSmartTagTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#1)]
      [!code-vb[VSSDKSmartTagTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#1)]  
@@ -180,7 +180,7 @@ ms.locfileid: "63436505"
   
      應該會在指標附近顯示按鈕。  
   
-5. 當您按一下按鈕時，應該會顯示兩個建議的動作：**轉換為大寫**並**轉換為小寫**。 如果您按一下第一個動作，則應該會將目前字組中的所有文字都轉換為大寫。 如果您按一下第二個動作，則應該會將所有文字都轉換為小寫。  
+5. 當您按一下該按鈕時，應該會顯示兩項建議的動作：[轉換為大寫] **** 和 [轉換為小寫] ****。 如果您按一下第一個動作，則應該會將目前字組中的所有文字都轉換為大寫。 如果您按一下第二個動作，則應該會將所有文字都轉換為小寫。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [逐步解說︰將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

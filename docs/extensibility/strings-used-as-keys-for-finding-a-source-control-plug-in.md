@@ -1,5 +1,5 @@
 ---
-title: 用作搜尋原始碼管理外掛程式的鍵的字串 :微軟文件
+title: 用於尋找原始檔控制外掛程式之索引鍵的字串 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,40 +11,40 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7f9333ff1b6742ca14dc5541bd15e92b2eb39085
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699707"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>用作索引鍵以尋找原始檔控制外掛程式的字串
-以下字串是訪問註冊表以查找有關原始程式碼管理外掛程式的資訊。
+下列字串是存取登錄以尋找原始檔控制外掛程式相關資訊的索引鍵。
 
- `STR_SCC_PROVIDER_REG_LOCATION`,是註冊表項或用於將 DLL 註冊為 Visual Studio 的`STR_SCCPROVIDERPATH`原始程式碼管理外掛程式。 `STR_PROVIDERREGKEY` `STR_SCCPROVIDERNAME`
+ `STR_SCC_PROVIDER_REG_LOCATION`、 `STR_PROVIDERREGKEY` 、 `STR_SCCPROVIDERPATH` 和是登錄機 `STR_SCCPROVIDERNAME` 碼或值，可用來將 DLL 註冊為 Visual Studio 的原始檔控制外掛程式。
 
- `SCC_PROJECTNAME_KEY`,和用於描述 MSSCCPRJ`SCC_KEY, SCC_FILE_SIGNATURE`的格式。 `SCC_PROJECTAUX_KEY` `SCC_STATUS_FILE`SCC 檔。
+ `SCC_PROJECTNAME_KEY`、 `SCC_PROJECTAUX_KEY` 、 `SCC_KEY, SCC_FILE_SIGNATURE` 和 `SCC_STATUS_FILE` 會用來描述 mssccprj.scc 的格式。SCC 檔。
 
-## <a name="string-keys-and-values"></a>字串鍵與值
+## <a name="string-keys-and-values"></a>字串索引鍵和值
 
 |Key|值|
 |---------|-----------|
-|`STR_SCC_PROVIDER_REG_LOCATION`|軟體_原始碼控制提供者|
-|`STR_PROVIDERREGKEY`|提供者註冊金鑰|
-|`STR_SCCPROVIDERPATH`|SCCServer路徑|
-|`STR_SCCPROVIDERNAME`|SCCServer 名稱|
+|`STR_SCC_PROVIDER_REG_LOCATION`|Software\SourceCodeControlProvider|
+|`STR_PROVIDERREGKEY`|ProviderRegKey|
+|`STR_SCCPROVIDERPATH`|SCCServerPath|
+|`STR_SCCPROVIDERNAME`|SCCServerName|
 |`STR_SCC_INI_SECTION`|原始程式碼控制|
-|`STR_SCC_INI_KEY`|原始碼管理者|
+|`STR_SCC_INI_KEY`|SourceCodeControlProvider|
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|
-|`SCC_STATUS_FILE`|MSSCCPRJ.Scc|
+|`SCC_STATUS_FILE`|MSSCCPRJ.SCC.Scc|
 |`SCC_KEY`|SCC|
-|`SCC_FILE_SIGNATURE`|原始碼控制檔案|
-|`SCC_NSE`|命名空間延伸|
-|`SCC_NSE_PREFIX`|原前置|
-|`SCC_NSE_DisableOpenSCC`|關閉開源源控制|
-|`STR_SCCHELPCOLLECTION`|說明收集|
+|`SCC_FILE_SIGNATURE`|原始程式碼控制檔案|
+|`SCC_NSE`|命名空間延伸模組|
+|`SCC_NSE_PREFIX`|通訊協定前置詞|
+|`SCC_NSE_DisableOpenSCC`|DisableOpenFromSourceControl|
+|`STR_SCCHELPCOLLECTION`|N|
 |`STR_UI_LANGUAGE`|UILanguage|
-|`STR_SRCSAFE_ROOT_KEY`|軟體\微軟_來源安全|
+|`STR_SRCSAFE_ROOT_KEY`|Software\Microsoft\SourceSafe|
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)

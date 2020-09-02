@@ -1,5 +1,5 @@
 ---
-title: IDebugField:獲取類型資訊 |微軟文件
+title: IDebugField：： GetTypeInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: faa3464f0396999f36604aa88c429235d4849688
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728774"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
-此方法獲取有關符號或類型的資訊與類型無關。
+這個方法會取得與符號或類型無關的類型相關資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -41,15 +41,15 @@ int GetTypeInfo(
 
 ## <a name="parameters"></a>參數
 `pTypeInfo`\
-[出]返回提供的[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)結構中的類型資訊。
+擴展傳回所提供之 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) 結構中的型別資訊。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 與類型無關的資訊將包括 AppDomain、模組和包含符號的類。
+ 與型別無關的資訊會包括 AppDomain、模組，以及包含符號的類別。
 
 ## <a name="see-also"></a>另請參閱
-- [取得類型](../../../extensibility/debugger/reference/idebugfield-gettype.md)
+- [GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)

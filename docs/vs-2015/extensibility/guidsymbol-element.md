@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f11ed48d9dcf961228957cf15db3815c00d14d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204228"
 ---
 # <a name="guidsymbol-element"></a>GuidSymbol 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`GuidSymbol`項目包含 guid: id 配對，表示功能表、 群組或命令的 GUID。 識別碼是來自`IDSymbol`中的項目`GuidSymbol`項目。 `GuidSymbol`項目具有`name`提供的 GUID，包含此功能的易記名稱的屬性`value`屬性。  
+`GuidSymbol`元素包含 guid： ID 組的 guid，代表功能表、群組或命令。 識別碼來自 `IDSymbol` 元素中的元素 `GuidSymbol` 。 專案 `GuidSymbol` 具有屬性， `name` 該屬性會提供 GUID 的易記名稱，該名稱包含在屬性中 `value` 。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,29 +33,29 @@ ms.locfileid: "68204228"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|名稱|必要項。 GUID 符號名稱。|  
-|value|必要項。 GUID 符號的 GUID。|  
+|NAME|必要。 GUID 符號的名稱。|  
+|value|必要。 GUID 符號的 GUID。|  
   
 ### <a name="child-elements"></a>子元素  
   
 |項目|描述|  
 |-------------|-----------------|  
-|[IDSymbol 元素](../extensibility/idsymbol-element.md)|包含 guid: id 配對，表示功能表、 群組或命令的識別碼。|  
+|[IDSymbol 項目](../extensibility/idsymbol-element.md)|包含代表功能表、群組或命令之 GUID： ID 組的識別碼。|  
   
 ### <a name="parent-elements"></a>父項目  
   
 |項目|描述|  
 |-------------|-----------------|  
-|[Symbols 元素](../extensibility/symbols-element.md)|群組`GuidSymbol`.vsct 檔案中的項目。|  
+|[Symbols 元素](../extensibility/symbols-element.md)|`GuidSymbol`將 .vsct 檔案中的元素群組在一起。|  
   
 ## <a name="remarks"></a>備註  
- 一般而言，在.vsct 檔包含三種`GuidSymbol`中的項目及其`Symbols`區段，一個用於封裝本身、 一個命令集 （功能表、 群組和套件提供的命令的集合），，一個提供的點陣圖按鈕和其他視覺化元件的圖示。 每隔`IDSymbol`項目中的指定`GuidSymbol`項目必須具有唯一`value`。不過，`IDSymbol`是在封裝中可以存在的項目具有相同的值，只要它們有不同的父代。  
+ 一般而言，.vsct 檔案 `GuidSymbol` 會在其區段中包含三個元素 `Symbols` ，一個用於封裝本身，一個用於命令集 (封裝提供的功能表、群組和命令的集合) ，另一個則用於提供按鈕和其他視覺效果元件圖示的點陣圖。 `IDSymbol`指定專案中的每個元素都 `GuidSymbol` 必須有唯一的 `value` 。不過， `IDSymbol` 具有相同值的專案可以存在於封裝中，前提是它們有不同的父系。  
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

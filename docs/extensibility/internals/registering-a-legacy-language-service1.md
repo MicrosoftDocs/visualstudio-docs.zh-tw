@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f0076eeee0ebcb0a80925efdde212097a3ec3e7e
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238877"
 ---
 # <a name="registering-a-legacy-language-service-1"></a>註冊舊版語言服務1
-在受管理的封裝架構 (MPF) 中，語言服務是由 VSPackage 所好處 (請參閱 [vspackage](../../extensibility/internals/vspackages.md)) ，並藉 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 由新增登錄機碼和專案來註冊。 此註冊程式會在安裝期間，部分于執行時間執行。
+在受控封裝架構 (MPF) 中，語言服務會由 VSPackage 推出 (請參閱 [vspackage](../../extensibility/internals/vspackages.md)) ，並藉 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 由新增登錄機碼和專案向註冊。 這項註冊程式是在安裝期間，部分于執行時間完成。
 
 ## <a name="register-the-language-service-by-using-attributes"></a>使用屬性註冊語言服務
  下列屬性是用來註冊語言服務。
@@ -33,10 +33,10 @@ ms.locfileid: "88238877"
 
 - <xref:Microsoft.VisualStudio.Shell.ProvideLanguageEditorOptionPageAttribute>
 
-  以下說明這些屬性
+  以下將說明這些屬性
 
 ### <a name="provideserviceattribute"></a>ProvideServiceAttribute
- 此屬性會將您的語言服務註冊為服務。
+ 這個屬性會將您的語言服務註冊為服務。
 
 ### <a name="example"></a>範例
 
@@ -55,7 +55,7 @@ namespace TestLanguagePackage
 ```
 
 ### <a name="providelanguageserviceattribute"></a>ProvideLanguageServiceAttribute
- 此屬性會將您的語言服務特別註冊為語言服務。 它可讓您設定選項來指定語言服務所提供的功能。 此範例會顯示語言服務可提供的選項子集。 如需一組完整的語言服務選項，請參閱 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 。
+ 這個屬性會將您的語言服務明確註冊為語言服務。 它可讓您設定選項，以指定語言服務提供的功能。 此範例顯示語言服務可以提供的選項子集。 如需完整的語言服務選項組，請參閱 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 。
 
 ### <a name="example"></a>範例
 
@@ -80,7 +80,7 @@ namespace TestLanguagePackage
 ```
 
 ### <a name="providelanguageextensionattribute"></a>ProvideLanguageExtensionAttribute
- 此屬性會將您的語言服務與副檔名產生關聯。 每當載入具有該副檔名的檔案時，在任何專案中，您的語言服務就會啟動，並用來顯示檔案的內容。
+ 這個屬性會將您的語言服務與副檔名產生關聯。 每當載入副檔名為的檔案時，在任何專案中，您的語言服務都會啟動並用來顯示檔案的內容。
 
 ### <a name="example"></a>範例
 
@@ -99,7 +99,7 @@ namespace TestLanguagePackage
 ```
 
 ### <a name="providelanguagecodeexpansionattribute"></a>ProvideLanguageCodeExpansionAttribute
- 這個屬性會註冊從中取得程式碼擴充或程式碼片段範本的位置。 當代碼段插入至原始程式檔時， **程式碼片段瀏覽器** 和編輯器會使用這項資訊。
+ 這個屬性會註冊從中取得程式碼展開或程式碼片段範本的位置。 當代碼段插入原始程式檔時， **程式碼片段瀏覽器** 和編輯器會使用這項資訊。
 
 ### <a name="example"></a>範例
 
@@ -125,10 +125,10 @@ namespace TestLanguagePackage
 ```
 
 ### <a name="providelanguageeditoroptionpageattribute"></a>ProvideLanguageEditorOptionPageAttribute
- 這個屬性會註冊屬性頁，以顯示在 [**文字編輯器**] 類別下的 [**選項**] 對話方塊中。 針對您的語言服務，使用這些屬性中的其中一個，以顯示每個頁面。 如果您需要在樹狀結構中組織您的頁面，請使用其他屬性來定義樹狀結構的每個節點。
+ 這個屬性會註冊屬性頁，以顯示在 [**文字編輯器**] 類別下的 [**選項**] 對話方塊中。 針對您的語言服務，使用下列其中一個屬性來顯示每個頁面。 如果您需要在樹狀結構中組織您的頁面，請使用其他屬性來定義樹狀結構的每個節點。
 
 ### <a name="example"></a>範例
- 這個範例會顯示兩個屬性頁、 **選項** 和 **縮**排，以及一個包含第二個屬性頁的節點。
+ 此範例顯示兩個屬性頁、 **選項** 和 **縮**排，以及一個包含第二個屬性頁的節點。
 
 ```csharp
 using Microsoft.VisualStudio.Shell;
@@ -159,11 +159,11 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="proffer-the-language-service-at-run-time"></a>在執行時間提供語言服務
- 載入語言套件時，您必須知道 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 您的語言服務已就緒。 您可以藉由 proffering 服務來完成這項工作。 這是在方法中完成 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 。 此外，您必須啟動在閒置期間呼叫語言服務的計時器，才能完成背景剖析。 如果您已透過類別來執行任何，則此閒置計時器也會用來更新文件屬性 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 。 為了支援計時器，您的封裝必須執行 <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> 介面 (只需要完全實作為 <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> 方法，其餘的方法可以) 傳回預設值。
+## <a name="proffer-the-language-service-at-run-time"></a>在執行時間 Proffer 語言服務
+ 當您的語言套件載入時，您必須知道 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 您的語言服務已準備就緒。 您可以藉由 proffering 服務來完成這項作業。 這是在方法中完成 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 。 此外，您還需要啟動在閒置期間呼叫語言服務的計時器，以便可以完成背景剖析。 如果您已透過類別執行任何工作，則此閒置計時器也會用來更新檔案屬性 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 。 為了支援計時器，您的封裝必須執行 <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> 介面 (只需要完全實作為 <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> 方法，其餘的方法可以) 傳回預設值。
 
 ### <a name="example"></a>範例
- 這個範例顯示 proffering 服務和提供閒置計時器的一般方法。
+ 此範例顯示 proffering 服務和提供閒置計時器的一般方法。
 
 ```csharp
 

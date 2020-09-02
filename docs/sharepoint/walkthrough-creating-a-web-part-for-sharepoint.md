@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：建立 SharePoint 的 Web 元件 |Microsoft Docs
+title: 逐步解說：建立 SharePoint 的網頁元件 |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,29 +15,29 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247647"
 ---
-# <a name="walkthrough-create-a-web-part-for-sharepoint"></a>逐步解說：建立 SharePoint 的 web 元件
+# <a name="walkthrough-create-a-web-part-for-sharepoint"></a>逐步解說：建立 SharePoint 的網頁元件
 
-Web 組件可讓使用者使用瀏覽器直接修改 SharePoint 網站頁面的內容、外觀和行為。 本逐步解說會示範如何使用 Visual Studio 2010 中的 **Web 元件** 專案範本來建立 web 元件。
+Web 組件可讓使用者使用瀏覽器直接修改 SharePoint 網站頁面的內容、外觀和行為。 本逐步解說將示範如何使用 Visual Studio 2010 中的 **Web 元件** 專案範本來建立網頁元件。
 
-Web 元件會在資料方格中顯示員工。 使用者會指定包含員工資料之檔案的位置。 使用者也可以篩選資料方格，讓經理的員工只能出現在清單中。
+Web 元件會顯示資料方格中的員工。 使用者指定包含員工資料之檔案的位置。 使用者也可以篩選資料格，讓只有經理的員工出現在清單中。
 
 本逐步解說將說明下列工作：
 
-- 使用 Visual Studio **Web 元件** 專案範本建立 Web 元件。
+- 使用 Visual Studio **Web 元件** 專案範本建立網頁元件。
 
 - 建立可由 Web 元件的使用者設定的屬性。 這個屬性會指定員工資料檔案的位置。
 
 - 藉由將控制項加入至 Web 元件控制項集合，在 Web 元件中轉譯內容。
 
-- 建立新的功能表項目，稱為 *動詞，* 它會出現在轉譯的 Web 元件的動詞功能表中。 動詞可讓使用者修改 Web 元件中顯示的資料。
+- 建立新的功能表項目（稱為 *動詞）* ，這會出現在轉譯的網頁元件的動詞功能表中。 動詞命令可讓使用者修改出現在 Web 元件中的資料。
 
-- 在 SharePoint 中測試 Web 元件。
+- 測試 SharePoint 中的網頁元件。
 
     > [!NOTE]
     > 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱 [個人化 VISUAL STUDIO IDE](../ide/personalizing-the-visual-studio-ide.md)。
@@ -50,66 +50,66 @@ Web 元件會在資料方格中顯示員工。 使用者會指定包含員工資
 
 ## <a name="create-an-empty-sharepoint-project"></a>建立空白的 SharePoint 專案
 
-首先，建立空白的 SharePoint 專案。 稍後，您會使用 **Web 元件** 專案範本，將 web 元件新增至專案。
+首先，建立空白的 SharePoint 專案。 稍後，您會使用 **Web 元件** 專案範本，將 web 元件加入至專案。
 
-1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用 [**以系統管理員身分執行**] 選項啟動。
+1. 首先 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，使用 [以 **系統管理員身分執行** ] 選項。
 
-2. 在 [男] 列上 **，選擇 [** 檔案] [  >  **新增**  >  **專案**]。
+2. 在 [男性] 列上 **，選擇 [** 檔案  >  **新增**  >  **專案**]。
 
-3. 在 [ **新增專案** ] 對話方塊中，展開您要使用之語言下的 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
+3. 在 [ **新增專案** ] 對話方塊中，展開您要使用之語言底下的 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
 4. 在 [ **範本** ] 窗格中，選擇 [ **SharePoint 2010 專案**]，然後選擇 [ **確定]** 按鈕。
 
-     [ **SharePoint 自訂嚮導]** 隨即出現。 此嚮導可讓您選取要用來對專案進行的網站和方案的信任層級的建立。
+     [ **SharePoint 自訂] Wizard** 隨即出現。 此嚮導可讓您選取要用來將專案和方案的信任層級進行偵測的網站。
 
-5. 選擇 [ **部署為數組方案** ] 選項按鈕，然後選擇 [ **完成]** 按鈕以接受預設的本機 SharePoint 網站。
+5. 選擇 [ **部署為伺服器陣列方案** ] 選項按鈕，然後選擇 [ **完成]** 按鈕以接受預設的本機 SharePoint 網站。
 
-## <a name="add-a-web-part-to-the-project"></a>將 web 元件新增至專案
+## <a name="add-a-web-part-to-the-project"></a>將網頁元件新增至專案
 
-將 **Web 元件** 專案新增至專案。 **Web 元件**專案會加入 web 元件程式碼檔案。 稍後，您會將程式碼新增至 Web 元件程式碼檔案，以呈現 Web 元件的內容。
+將 **Web 元件** 專案加入至專案。 **Web 元件**專案會加入 web 元件的程式碼檔案。 稍後，您會將程式碼加入至 Web 元件程式碼檔案，以轉譯網頁元件的內容。
 
-1. 在功能表列上，選擇 [**專案**] [  >  **加入新專案**]。
+1. 在功能表列上，選擇 [ **Project**  >  **加入新專案**]。
 
 2. 在 [ **加入新專案** ] 對話方塊的 [ **已安裝的範本** ] 窗格中，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
-3. 在 SharePoint 範本清單中，選擇 [ **Web 元件** ] 範本，然後選擇 [ **新增** ] 按鈕。
+3. 在 SharePoint 範本清單中，選擇 [ **Web 元件** ] 範本，然後選擇 [ **加入** ] 按鈕。
 
-     **Web 元件**專案會出現在**方案總管**中。
+     **Web 元件**專案隨即出現在**方案總管**中。
 
-## <a name="rendering-content-in-the-web-part"></a>呈現 web 元件中的內容
+## <a name="rendering-content-in-the-web-part"></a>轉譯網頁元件中的內容
 
-您可以藉由將控制項新增至 Web 元件類別的 controls 集合，指定要在 Web 元件中顯示的控制項。
+您可以藉由將控制項加入網頁元件類別的控制項集合，來指定要在 Web 元件中顯示哪些控制項。
 
-1. 在**方案總管**中，以 c # (中的 Visual Basic) 或*WebPart1.cs* ) 開啟*WebPart1 (。*
+1. 在**方案總管**中， (Visual Basic) 或 c # (中的*WebPart1.cs* ) 開啟*WebPart1。*
 
      Web 元件程式碼檔案會在程式碼編輯器中開啟。
 
-2. 將下列指示詞新增至 Web 元件程式碼檔案的頂端。
+2. 將下列指示詞加入至 Web 元件程式碼檔案的頂端。
 
      [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
      [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
 
 3. 將下列程式碼新增至 `WebPart1` 類別。 此程式碼會宣告下欄欄位：
 
-   - 用來在 Web 元件中顯示員工的資料格。
+   - 在 Web 元件中顯示員工的資料格。
 
-   - 出現在控制項上的文字，用來篩選資料方格。
+   - 顯示在用來篩選資料方格之控制項上的文字。
 
-   - 標籤，如果資料格無法顯示資料，則會顯示錯誤。
+   - 如果資料格無法顯示資料，則為顯示錯誤的標籤。
 
    - 字串，其中包含員工資料檔案的路徑。
 
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
 
-4. 將下列程式碼新增至 `WebPart1` 類別。 此程式碼會將名為的自訂屬性新增 `DataFilePath` 至 Web 元件。 自訂屬性是可由使用者在 SharePoint 中設定的屬性。 這個屬性會取得和設定用來填入資料方格之 XML 資料檔的位置。
+4. 將下列程式碼新增至 `WebPart1` 類別。 此程式碼會將名為的自訂屬性加入 `DataFilePath` 至網頁元件。 自訂屬性是使用者可以在 SharePoint 中設定的屬性。 這個屬性會取得並設定用來填入資料方格的 XML 資料檔案位置。
 
      [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
      [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
 
 5. 以下列程式碼取代 `CreateChildControls` 方法。 此程式碼會執行下列工作：
 
-   - 加入您在上一個步驟中所宣告的資料格和標籤。
+   - 加入您在上一個步驟中宣告的資料格和標籤。
 
    - 將資料格系結至包含員工資料的 XML 檔案。
 
@@ -118,18 +118,18 @@ Web 元件會在資料方格中顯示員工。 使用者會指定包含員工資
 
 6. 將下列方法新增至 `WebPart1` 類別。 此程式碼會執行下列工作：
 
-   - 建立會出現在所呈現 Web 元件之 Web 元件動詞功能表中的動詞。
+   - 建立顯示在所轉譯網頁元件的網頁元件動詞功能表中的動詞命令。
 
-   - 處理當使用者選擇動詞命令功能表中的動詞命令時所引發的事件。 這段程式碼會篩選出現在資料方格中的員工清單。
+   - 處理當使用者選擇動詞命令功能表中的動詞命令時所引發的事件。 此程式碼會篩選出現在資料方格中的員工清單。
 
      [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
      [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]
 
-## <a name="test-the-web-part"></a>測試 web 元件
+## <a name="test-the-web-part"></a>測試網頁元件
 
-當您執行專案時，SharePoint 網站隨即開啟。 網頁元件會自動加入至 SharePoint 中的 Web 元件庫。 您可以將網頁元件新增至任何 Web 元件頁面。
+當您執行專案時，會開啟 SharePoint 網站。 網頁元件會自動加入至 SharePoint 中的 Web 元件庫。 您可以將網頁元件新增至任何網頁元件頁面。
 
-1. 將下列 XML 貼入 [記事本] 檔案。 這個 XML 檔案包含將會出現在 Web 元件中的範例資料。
+1. 將下列 XML 貼到 [記事本] 檔案中。 這個 XML 檔案包含將會出現在網頁元件中的範例資料。
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -162,7 +162,7 @@ Web 元件會在資料方格中顯示員工。 使用者會指定包含員工資
         </employees>
     ```
 
-2. 在 [記事本] 的功能表列上，**選擇 [檔案] [**  >  **另存**新檔]。
+2. 在 [記事本] 的功能表列上，**選擇 [** 檔案  >  **另存**新檔]。
 
 3. 在 [ **另存** 新檔] 對話方塊的 [ **存檔類型** ] 清單中，選擇 [ **所有**檔案]。
 
@@ -178,37 +178,37 @@ Web 元件會在資料方格中顯示員工。 使用者會指定包含員工資
 
 8. 在 [ **建立** ] 頁面中，選擇 [ **Web 元件] 頁面** 類型，然後選擇 [ **建立** ] 按鈕。
 
-9. 在 [ **新增網頁元件** ] 頁面中，將頁面命名為 **SampleWebPartPage**，然後選擇 [ **建立** ] 按鈕。
+9. 在 [ **新增網頁元件** ] 頁面上，將頁面命名為 **SampleWebPartPage .aspx**，然後選擇 [ **建立** ] 按鈕。
 
      [網頁元件] 頁面隨即出現。
 
 10. 在 [網頁元件] 頁面上選取任何區域。
 
-11. 在頁面頂端，選擇 [ **插入** ] 索引標籤，然後選擇 [ **Web 元件** ] 按鈕。
+11. 選擇頁面頂端的 [ **插入** ] 索引標籤，然後選擇 [ **Web 元件** ] 按鈕。
 
-12. 在 [ **類別** ] 窗格中，選擇 [ **自訂** ] 資料夾，選擇 [ **WebPart1** ] 網頁元件，然後選擇 [ **新增** ] 按鈕。
+12. 在 [ **類別目錄** ] 窗格中，選擇 [ **自訂** ] 資料夾，選擇 [ **WebPart1** ] 網頁元件，然後選擇 [ **加入** ] 按鈕。
 
-     網頁元件會顯示在頁面上。
+     網頁元件會出現在頁面上。
 
 ## <a name="test-the-custom-property"></a>測試自訂屬性
 
-若要填入出現在 Web 元件中的資料格，請指定包含每個員工相關資料的 XML 檔案路徑。
+若要填入出現在 Web 元件中的資料格，請指定 XML 檔案的路徑，其中包含每個員工的相關資料。
 
-1. 選擇出現在 Web 元件右側的箭號，然後從出現的功能表中選擇 [ **編輯網頁元件** ]。
+1. 選擇出現在 Web 元件右邊的箭號，然後從出現的功能表中選擇 [ **編輯網頁元件** ]。
 
-     包含 Web 元件屬性的窗格會出現在頁面的右側。
+     包含 Web 元件屬性的窗格會顯示在頁面的右側。
 
 2. 在窗格中，展開 [**其他**] 節點，輸入您稍早建立之 XML 檔案的路徑，選擇 [套用] 按鈕，然後選擇 [**確定]** **按鈕。**
 
      確認員工清單出現在 Web 元件中。
 
-## <a name="test-the-web-part-verb"></a>測試 web 元件動詞
+## <a name="test-the-web-part-verb"></a>測試網頁元件動詞
 
-藉由選取出現在 Web 元件動詞功能表中的專案，顯示和隱藏非管理員的員工。
+選取出現在 [網頁元件] 動詞功能表中的專案，以顯示和隱藏非管理員的員工。
 
-1. 選擇出現在 Web 元件右側的箭號，然後從出現的功能表中選擇 [ **僅顯示經理** ]。
+1. 選擇出現在 Web 元件右邊的箭號，然後從出現的功能表中選擇 [ **僅顯示管理員** ]。
 
-     只有經理的員工才會出現在 Web 元件中。
+     只有經理的員工才會出現在網頁元件中。
 
 2. 再次選擇箭號，然後從出現的功能表中選擇 [ **顯示所有員工** ]。
 
@@ -217,6 +217,6 @@ Web 元件會在資料方格中顯示員工。 使用者會指定包含員工資
 ## <a name="see-also"></a>另請參閱
 
 [建立 SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
- 的 web 元件[如何：建立 SharePoint web 元件](../sharepoint/how-to-create-a-sharepoint-web-part.md) 
+ 的網頁元件[如何：建立 SharePoint web 元件](../sharepoint/how-to-create-a-sharepoint-web-part.md) 
 [如何：使用設計](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) 
- 工具建立 SharePoint web 元件[逐步解說：使用設計工具建立 SharePoint 的 web 元件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
+ 工具建立 SharePoint web 元件[逐步解說：使用設計工具建立 SharePoint 的網頁元件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

@@ -15,17 +15,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: db99a9628992c40ef65699fee72d65b891ed1e24
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89219604"
 ---
 # <a name="reliability-warnings"></a>可靠性警告
 
 可靠性警告支援程式庫和應用程式可靠性，例如正確的記憶體和執行緒的使用。 可靠性規則包括：
 
-|規則|說明|
+|規則|描述|
 |----------|-----------------|
 |[CA2000:必須在超出範圍前處置物件](../code-quality/ca2000.md)|因為可能會發生例外事件以防止執行物件的完成項，所以應在物件的所有參考都超出範圍之前，明確處置物件。|
 |[CA2001:避免呼叫有問題的方法](../code-quality/ca2001.md)|成員呼叫了可能有危險或問題的方法。|
@@ -34,7 +34,7 @@ ms.locfileid: "89219604"
 |[CA2004:必須移除對 GC.KeepAlive 的呼叫](../code-quality/ca2004.md)|如果您要轉換成 SafeHandle 使用方式，請移除所有對 GC 的呼叫。KeepAlive (物件) 。 在此情況下，類別應該不需要呼叫 GC。KeepAlive，假設它們沒有完成項，但依賴 SafeHandle 來完成它們的作業系統控制碼。|
 |[CA2006:必須使用 SafeHandle 封裝原生資源](../code-quality/ca2006.md)|在 Managed 程式碼中使用 IntPtr，可能會有潛在的安全性和可靠性問題。 必須檢閱所有使用 IntPtr 的情況，判斷是否需要在該處使用 SafeHandle (或類似技術)。|
 |[CA2007:不直接等候工作](../code-quality/ca2007.md)|非同步方法會[awaits](/dotnet/csharp/language-reference/keywords/await)直接等候 <xref:System.Threading.Tasks.Task> 。|
-|[CA2008：不要在不傳遞 TaskScheduler 的情況下建立工作](../code-quality/ca2008.md)|工作建立或接續運算使用未指定參數的方法多載 <xref:System.Threading.Tasks.TaskScheduler> 。|
+|[CA2008：建立工作時請務必傳遞 TaskScheduler](../code-quality/ca2008.md)|工作建立或接續運算使用未指定參數的方法多載 <xref:System.Threading.Tasks.TaskScheduler> 。|
 |[CA2009：請勿對 ImmutableCollection 值呼叫 TolmmutableCollection](../code-quality/ca2009.md)|`ToImmutable` 方法在命名空間的不可變集合上不必要地呼叫 <xref:System.Collections.Immutable> 。|
 |[CA2011：請勿在屬性 setter 中指派屬性](../code-quality/ca2011.md) | 屬性在其本身的 [set 存取](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)子中不小心指派了值。 |
 |[CA2012：必須正確使用 ValueTasks](../code-quality/ca2012.md) | 從成員調用傳回的 ValueTasks 是要直接等待。  嘗試多次使用 ValueTask 或在已知完成之前直接存取一個結果可能會導致例外狀況或損毀。  忽略這類 ValueTask 可能表示功能錯誤，而且可能會降低效能。 |

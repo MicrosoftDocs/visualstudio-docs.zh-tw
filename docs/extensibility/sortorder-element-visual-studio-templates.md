@@ -1,5 +1,5 @@
 ---
-title: 排序元素(可視化工作室範本) |微軟文件
+title: " (的 SortOrder 元素 Visual Studio 範本) |Microsoft Docs"
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 935d00335a21d3e129e79ce351e554ea93787447
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699961"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder 項目 (Visual Studio 範本)
-指定用於排列範本的相同類別中的其他樣本的值,因為它顯示在 **「新專案**」或 **「添加新專案」** 對話框中。
+指定一個值，用來排列範本，也就是在 [ **新增專案** ] 或 [ **加入新** 專案] 對話方塊中顯示的其他範本。
 
- \<VStemplate \<\<>模板数据>排序顺序>
+ \<VSTemplate> \<TemplateData>
+ \<SortOrder>
 
 ## <a name="syntax"></a>語法
 
@@ -43,24 +44,24 @@ ms.locfileid: "80699961"
 
 ### <a name="parent-elements"></a>父項目
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- 排`integer`序訂單值的 。
+ `integer`表示排序次序值的。
 
 ## <a name="remarks"></a>備註
-  是選擇性元素。 默認值為 100,所有值必須為 10 倍。
+  是選擇性元素。 預設值為100，而且所有值都必須是10的倍數。
 
- 對於`SortOrder`用戶創建的範本,將忽略該元素。 所有使用者創建的範本都按字母順序排序。
+ `SortOrder`使用者建立的範本會忽略元素。 所有使用者建立的範本會依字母順序排序。
 
- 具有低排序訂單值的範本顯示在具有高排序訂單值的範本之前的新**專案**或**新專案對話**框中。
+ 具有低排序次序值的範本會出現在 [ **新增專案** ] 或 [ **新增** 專案] 對話方塊中，然後才會出現在具有高排序次序值的範本之前。
 
 ## <a name="example"></a>範例
- 下面的範例說明了標準[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]類範本的元數據。
+ 下列範例說明標準類別範本的中繼資料 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -79,7 +80,7 @@ ms.locfileid: "80699961"
 </VSTemplate>
 ```
 
- 此範例中,`SortOrder`元素相對較高。 其他[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]項範`SortOrder`本的值可能`290`低於 ,並且將顯示在"**新建專案"** 對話方塊中此範本之前。
+ 在此範例中， `SortOrder` 元素相對較高。 其他 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 專案範本的值可能會 `SortOrder` 小於 `290` ，而且會出現在 [ **新增專案** ] 對話方塊中的這個範本之前。
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

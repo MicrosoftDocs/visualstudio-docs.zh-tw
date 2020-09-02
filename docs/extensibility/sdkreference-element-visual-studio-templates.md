@@ -1,5 +1,5 @@
 ---
-title: SDK 參考元素(可視化工作室範本) |微軟文件
+title: " (Visual Studio 範本的 SDKReference 元素) |Microsoft Docs"
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2f43c813e688c1e175f1d36e6f06125f92404c48
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700169"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 項目 (Visual Studio 樣板)
@@ -40,7 +40,7 @@ ms.locfileid: "80700169"
 
 ### <a name="parent-elements"></a>父項目
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[參考](../extensibility/reference-element-visual-studio-templates.md)|指定項目加入專案時要加入的組件參考。|
 

@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_PARAM |微軟文件
+title: METADATA_ADDRESS_PARAM |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a0319cfc6f2be817a25126e67cdc470bc727a4ca
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714446"
 ---
 # <a name="metadata_address_param"></a>METADATA_ADDRESS_PARAM
-此結構表示方法或函數的參數。
+此結構代表方法或函數的參數。
 
 ## <a name="syntax"></a>語法
 
@@ -45,7 +45,7 @@ public struct METADATA_ADDRESS_PARAM {
 
 ## <a name="members"></a>成員
  `tokMethod`\
- 參數為之一的方法的 ID。
+ 參數所屬方法的識別碼。
 
  `tokParam`\
  參數的識別碼。
@@ -54,14 +54,14 @@ public struct METADATA_ADDRESS_PARAM {
  參數清單中的參數索引。
 
 ## <a name="remarks"></a>備註
- 當`DEBUG_ADDRESS_UNION``ADDRESS_KIND_PARAM`結構欄位設置為[(ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)舉中的值)`dwKind`時, 此結構是DEBUG_ADDRESS_UNION結構中的聯合的一部分。
+ 當結構的[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 欄位 `DEBUG_ADDRESS_UNION` 設定為 `ADDRESS_KIND_PARAM` ([ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉) 中的值時，此結構就是 DEBUG_ADDRESS_UNION 結構中聯集的一部分。
 
 ## <a name="requirements"></a>需求
- 標題: sh.h
+ 標頭： sh. h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

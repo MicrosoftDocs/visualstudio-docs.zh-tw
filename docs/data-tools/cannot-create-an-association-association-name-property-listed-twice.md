@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 50c9311ef09172ea082d2419495f26b51ff1d6a4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536795"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>無法建立關聯&lt;關聯名稱&gt;：屬性已列出兩次
@@ -32,9 +32,9 @@ ms.locfileid: "85536795"
 
 - 檢查 [關聯屬性]****，並移除重複項目。
 
-- 按一下 [確定] 。
+- 按一下 [確定]  。
 
 ## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [如何：建立 LINQ to SQL 類別之間的關聯（O/R 設計工具）](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [如何：建立 LINQ to SQL 類別之間的關聯 (O/R 設計工具) ](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

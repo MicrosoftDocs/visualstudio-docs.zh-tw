@@ -1,5 +1,5 @@
 ---
-title: IDebug函數物件::創建原始物件 |微軟文件
+title: IDebugFunctionObject：： CreatePrimitiveObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 24b26a072a3bebda2d01a89baaf2910de96e77d1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728528"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
-創建基元數據物件,如簡單整數。
+建立基本資料物件，例如簡單的整數。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int CreatePrimitiveObject(
 
 ## <a name="parameters"></a>參數
 `ot`\
-[在]OBJECT_TYPE[枚舉](../../../extensibility/debugger/reference/object-type.md)的值,表示要創建的基元類型。
+在 [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) 列舉中的值，代表要建立的基本類型。
 
 `ppObject`\
-[出]返回表示新創建物件的[IDebugObject。](../../../extensibility/debugger/reference/idebugobject.md)
+擴展傳回代表新建立之物件的 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回S_OK;否則,返回錯誤代碼。
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 調用此方法以創建一個物件,該物件表示由[IDebug函數物件](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面表示的函數的參數。 例如,如果表達式字串為"myString(5)",則此方法將用於創建表示整數 5 的物件。
+ 呼叫這個方法，以建立代表基本物件的物件，該物件是 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 介面所代表之函式的參數。 例如，如果運算式字串為 "myString (5) "，則會使用這個方法來建立代表整數5的物件。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

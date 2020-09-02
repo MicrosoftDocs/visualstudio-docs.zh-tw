@@ -1,5 +1,5 @@
 ---
-title: 錯誤：只有在使用 Microsoft.NET Framework 2.0 或更新混合的模式偵錯支援 |Microsoft Docs
+title: 錯誤：只有使用 Microsoft .NET Framework 2.0 或更新版本時才支援混合模式的偵錯工具 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0bf0557db3fd4ecc58e81d2b88e8c700c2f3bae0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697407"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>錯誤：只有使用 Microsoft .NET Framework 2.0 或更新版本時才支援混合模式偵錯

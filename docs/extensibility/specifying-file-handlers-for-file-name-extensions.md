@@ -1,5 +1,5 @@
 ---
-title: 為檔案名副檔名指定檔案處理程式 |微軟文件
+title: 指定副檔名的檔案處理常式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: af195aea09c91696843c6be42c20053bb8c095a2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699759"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>指定適用於副檔名的檔案處理常式
-有許多方法可以確定處理具有特定文件副檔名的檔案的應用程式。 OpenWithList 和 OpenWithProgids 謂詞是兩種在檔擴展名的註冊表項下指定檔處理程式的方法。
+有幾種方式可以決定處理具有特定副檔名之檔案的應用程式。 OpenWithList 和 OpenWithProgids 動詞是在副檔名的登錄專案底下指定檔案處理常式的兩種方式。
 
-## <a name="openwithlist-verb"></a>開啟清單謂詞
- 當您右鍵單擊 Windows 資源管理員中的檔案時,您將看到 **「打開**」命令。 如果多個產品與擴展關聯,您將看到 **「打開使用」** 子功能表。
+## <a name="openwithlist-verb"></a>OpenWithList 動詞
+ 當您以滑鼠右鍵按一下 Windows 檔案總管中的檔案時，您會看到 [ **開啟** ] 命令。 如果有一個以上的產品與某個擴充功能相關聯，您會看到 [ **開啟** ] 子功能表。
 
- 您可以通過在HKEY_CLASSES_ROOT中為檔副檔名設置 OpenWithList 密鑰來註冊不同的應用程式以打開副檔名。 這個鍵下列的檔案副檔名下的應用程式將顯示在「**打開」** 對話框中的 **「建議程式**」標題下。 下面的範例顯示註冊以打開 .vcproj 檔副檔名的應用程式。
+ 您可以在 HKEY_CLASSES_ROOT 中設定副檔名的 OpenWithList 機碼，以註冊不同的應用程式來開啟擴充功能。 在 [**開啟**檔案] 對話方塊中的 [**建議的程式**] 標題下，會出現列在此機碼底下的應用程式。 下列範例會顯示已註冊以開啟 vcproj 副檔名的應用程式。
 
 ```
 HKEY_CLASSES_ROOT\
@@ -34,25 +34,25 @@ HKEY_CLASSES_ROOT\
 ```
 
 > [!NOTE]
-> 指定應用程式的鍵來自HKEY_CLASSES_ROOT_應用程式"下的清單中。
+> 指定應用程式的索引鍵位於 HKEY_CLASSES_ROOT 的清單中 \Applications。
 
- 以新增 OpenWithList 金鑰,您可以聲明應用程式支援檔案副檔名,即使另一個應用程式擁有副檔名。 這可能是應用程式或其他應用程式的未來版本。
+ 藉由新增 OpenWithList 機碼，您可以宣告應用程式支援副檔名，即使另一個應用程式取得延伸模組的擁有權也一樣。 這可能是應用程式或其他應用程式的未來版本。
 
-## <a name="openwithprogids"></a>開啟與 ProgID
- 程式設計識別碼 (ProgID) 是識別應用程式或 COM 物件的版本的類識別的友好版本。 每個可創建物件都應有自己的 ProgID。 例如,VisualStudio.DTE.7.1 啟動 Visual Studio .NET 2003,而 VisualStudio.DTE.10.0 啟動[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 作為項目類型或項目項類型的擁有者,必須為檔擴展名創建特定於版本的 ProgID。 這些 ProgID 可能是冗餘的,因為多個 ProgID 可以啟動相同的應用程式。 有關詳細資訊,請參閱[註冊檔名副檔名的謂詞](../extensibility/registering-verbs-for-file-name-extensions.md)。
+## <a name="openwithprogids"></a>OpenWithProgIDs
+  (Progid) 的程式設計識別碼是識別應用程式或 COM 物件版本的易記 Classid 版本。 每個可共同使用的物件都應該有自己的 ProgID。 例如，VisualStudio 會在 VisualStudio 啟動時啟動 Visual Studio .NET [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 2003。 作為專案類型或專案專案類型的擁有者，您必須為您的副檔名建立版本特定的 ProgID。 這些 Progid 可能是多餘的，因為一個以上的 ProgID 可能會啟動相同的應用程式。 如需詳細資訊，請參閱 [註冊副檔名的動詞](../extensibility/registering-verbs-for-file-name-extensions.md)命令。
 
- 對版本化檔 ProgID 使用以下命名約定,以避免與其他供應商的註冊重複:
+ 針對已建立版本的檔案 Progid，請使用下列命名慣例，以避免與其他廠商的註冊重複：
 
-|副檔名|版本化 ProgID|
+|副檔名|已建立版本的 ProgID|
 |--------------------|----------------------|
-|.擴展|產品名稱。 延伸.version 主要.version 次要|
+|. 副檔名|名稱. versionMajor. versionMinor|
 
- 通過將版本化 ProgID 作為值添加\\到 HKEY_CLASSES_ROOT*\<副檔名>*_OpenWithProgids 密鑰,可以註冊能夠打開特定檔副檔名的不同應用程式。 此註冊表項包含與檔副檔名關聯的備用 ProgID 的清單。 與列出的 ProgID 關聯的應用程式將顯示在 **「使用**_產品名稱_打開」子功能表中。 如果在`OpenWithList`和`OpenWithProgids`鍵中都指定了相同的應用程式,則操作系統將合併重複項。
+ 您可以藉由將已建立版本的 Progid 新增為 HKEY_CLASSES_ROOT \OpenWithProgids 索引鍵的值，來註冊可以開啟特定副檔名的不同應用程式 \\ *\<extension>* 。 此登錄機碼包含與副檔名相關聯的替代 Progid 清單。 與列出的 Progid 相關聯的應用程式會出現在 [ **開啟方式**_產品名稱_ ] 子功能表中。 如果同時在和機碼中指定相同的應用程式 `OpenWithList` `OpenWithProgids` ，則作業系統會合並重複專案。
 
 > [!NOTE]
-> 該`OpenWithProgids`密鑰僅在 Windows XP 中受支援。 由於其他作業系統忽略此密鑰,因此不要將其用作檔處理程式的唯一註冊。 使用此鍵在 Windows XP 中提供更好的用戶體驗。
+> `OpenWithProgids`只有在 WINDOWS XP 中才支援此金鑰。 因為其他作業系統會忽略此金鑰，所以請勿將它用作為檔案處理常式的唯一註冊。 您可以使用此金鑰在 Windows XP 中提供更好的使用者體驗。
 
- 將所需的 ProgID 添加為類型REG_NONE的值。 以下代碼提供了註冊檔副檔名 (的 ProgID 的範例(。*ext*)。
+ 將所需的 Progid 新增為 REG_NONE 類型的值。 下列程式碼提供註冊 Progid 副檔名 ( 的範例。*ext*) 。
 
 ```
 HKEY_CLASSES_ROOT\
@@ -63,7 +63,7 @@ HKEY_CLASSES_ROOT\
          otherprogid   REG_NONE (zero-length binary value)
 ```
 
- 指定為檔案副檔名的預設值的 ProgID 是預設檔處理程式。 如果修改以前版本附帶[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的檔副檔名的 ProgID,或者可以由其他應用程式接管的檔案擴展名,則必須註冊檔案`OpenWithProgids`擴展名的密鑰,並在清單中指定新的 ProgID 以及您支援的舊 ProgID。 例如：
+ 指定為副檔名預設值的 ProgID 是預設的檔案處理常式。 如果您針對舊版隨附 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 或可由其他應用程式取得的副檔名修改 ProgID，則必須 `OpenWithProgids` 為您的副檔名註冊金鑰，並在清單中指定新的 progid 以及您支援的舊 progid。 例如：
 
 ```
 HKEY_CLASSES_ROOT\
@@ -75,7 +75,7 @@ HKEY_CLASSES_ROOT\
          VisualStudio.vcproj.14.0 //new progid
 ```
 
- 如果舊的 ProgID 具有與其關聯的謂詞,則這些謂詞也會顯示在快捷菜單中的 **「使用***產品名稱*打開」下。
+ 如果舊的 ProgID 有相關聯的動詞，則這些動詞命令也會出現在快捷方式功能表中的 [開啟檔案] **和**[ *產品名稱* ] 底下。
 
 ## <a name="see-also"></a>另請參閱
 - [關於副檔名](../extensibility/about-file-name-extensions.md)

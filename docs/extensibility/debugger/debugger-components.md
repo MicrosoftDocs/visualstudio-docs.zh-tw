@@ -1,5 +1,5 @@
 ---
-title: 除錯器元件 :微軟文件
+title: 偵錯工具元件 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,54 +13,54 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 03c400fd03c5ee0f2629e9f436b65f53f8f2ac8b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739005"
 ---
-# <a name="debugger-components"></a>除錯器元件
-除錯[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]器作為 VSPackage 實現,並管理整個調試會話。 除錯工作階段包括以下元素:
+# <a name="debugger-components"></a>偵錯工具元件
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯工具會實作為 VSPackage 並管理整個偵錯工具會話。 Debug 會話包含下列元素：
 
-- **除錯包:**[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]除錯器提供相同的使用者介面,無論正在調試什麼。
+- **Debug 封裝：**[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]無論正在進行什麼偵錯工具，偵錯工具都會提供相同的使用者介面。
 
-- **工作階段除錯管理員 (SDM):** 為調試器提供一致的程式設計[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]介面,用於管理各種調試引擎。 它由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]實現。
+- **會話 debug manager (SDM) ：** 提供與偵錯工具一致的程式設計介面，以 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 管理各種不同的偵錯工具引擎。 它是由所執行 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
-- **程序除錯管理員 (PDM):** 管理 所有正在運行的實[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]例 ,可以調試或正在調試的所有程式的清單。 它由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]實現。
+- **進程 debug manager (PDM) ：** 管理所有執行中的實例的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，這是可以進行或正在進行調試的所有程式清單。 它是由所執行 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
-- **除錯引擎 (DE):** 負責監視正在調試的程式,將正在運行的程式的狀態傳達給 SDM 和 PDM,並與表達式賦值器和符號提供程式進行交互,以便對程式記憶體和變數的狀態提供即時分析。 它由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)](對於它支援的語言)和第三方供應商實現,他們希望支援自己的運行時。
+- **Debug engine (DE) ：** 負責監視正在進行程式設計的程式、將執行中程式的狀態傳達給 SDM 和 PDM，以及與運算式評估工具和符號提供者互動，以提供程式記憶體和變數狀態的即時分析。 它是由 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (針對其支援的語言) ，以及想要支援其執行時間的協力廠商廠商所執行。
 
-- **運算式賦值器 (EE):** 支援在程式在特定點停止時動態計算使用者提供的變數和運算式。 它由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)](對於它支援的語言)和第三方供應商(希望支援自己的語言)實現。
+- **運算式評估工具 (EE) ：** 當程式在特定時間點停止時，提供動態評估使用者所提供之變數和運算式的支援。 它是由 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 其支援的語言 (所執行，) 以及想要支援其專屬語言的協力廠商廠商。
 
-- **符號提供者 (SP):** 也稱為符號處理程式,將程式的調試符號映射到程式的運行實例,以便提供有意義的資訊(如原始碼級調試和表達式計算)。 它由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)](對於通用語言運行時 [CLR] 符號和程式資料庫 [PDB] 符號檔格式)和具有自己專有存儲調試資訊方法的第三方供應商實現。
+- ** (SP) 的符號提供者：** 也稱為符號處理常式，會將程式的偵錯工具符號對應至程式的執行中實例，以提供有意義的資訊 (例如原始程式碼層級的偵錯工具和運算式評估) 。 它是由 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Common Language Runtime [CLR] 符號的 (和程式資料庫 [PDB] 符號檔格式所執行，) ，以及由有專屬方法可儲存偵錯工具的協力廠商廠商所執行。
 
-  下圖顯示了可視化工作室調試器的這些元素之間的關係。
+  下圖顯示 Visual Studio 偵錯工具的這些元素之間的關聯性。
 
-  ![除錯元件概述](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")
+  ![調試元件總覽](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")
 
 ## <a name="in-this-section"></a>本節內容
- [除錯套件](../../extensibility/debugger/debug-package.md)討論調試包,該包在shell[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]中運行並處理所有UI。
+ [Debug 封裝](../../extensibility/debugger/debug-package.md) 討論在 shell 中執行， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 並處理所有 UI 的 debug 封裝。
 
- [程序除錯管理員](../../extensibility/debugger/process-debug-manager.md)提供 PDM 功能的概述,PDM 是可調試的進程的經理。
+ [進程偵錯工具管理員](../../extensibility/debugger/process-debug-manager.md) 提供 PDM 功能的總覽，也就是可以進行調試的進程管理員。
 
- [工作階段除錯管理員](../../extensibility/debugger/session-debug-manager.md)定義 SDM,它向 IDE 提供調試會話的統一視圖。 SDM 管理 DE。
+ [會話偵錯工具管理員](../../extensibility/debugger/session-debug-manager.md) 定義 SDM，以提供對 IDE 的偵錯工具的統一觀點。 SDM 管理 DE。
 
- [偵錯引擎](../../extensibility/debugger/debug-engine.md)記錄 DE 提供的調試服務。
+ [Debug 引擎](../../extensibility/debugger/debug-engine.md) 記錄 DE 提供的偵錯工具服務。
 
- [操作模式](../../extensibility/debugger/operational-modes.md)概述了 IDE 可以操作的三種模式:設計模式、運行模式和中斷模式。 還討論了過渡機制。
+ [操作模式](../../extensibility/debugger/operational-modes.md) 概要說明 IDE 可以操作的三種模式：設計模式、執行模式和中斷模式。 也會討論轉換機制。
 
- [運算式賦值器](../../extensibility/debugger/expression-evaluator.md)解釋 EE 在運行時的用途。
+ [運算式評估](../../extensibility/debugger/expression-evaluator.md) 工具說明在執行時間的 EE 用途。
 
- [符號提供者](../../extensibility/debugger/symbol-provider.md)討論符號提供程式在實現時如何計算變數和運算式。
+ [符號提供者](../../extensibility/debugger/symbol-provider.md) 討論在執行時，符號提供者如何評估變數和運算式。
 
- [類型視覺化器和自訂檢視器](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)討論什麼是類型可視化器和自定義查看器,以及表達式評估器在支援兩者方面扮演什麼角色。
+ [型別視覺化器和自訂檢視器](../../extensibility/debugger/type-visualizer-and-custom-viewer.md) 討論何謂型別視覺化程式和自訂檢視器，以及運算式評估工具在支援這兩者時所扮演的角色。
 
 ## <a name="related-sections"></a>相關章節
- [除錯器概念](../../extensibility/debugger/debugger-concepts.md)描述主要的調試體系結構概念。
+ [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md) 描述主要的調試架構概念。
 
- [除錯器上下文](../../extensibility/debugger/debugger-contexts.md)說明 DE 如何在代碼、文檔和運算內容中同時運行。 描述三個上下文中的每一個與它相關的位置、位置或評估。
+ [偵錯工具](../../extensibility/debugger/debugger-contexts.md) 內容說明如何在程式碼、檔和運算式評估內容中同時操作 DE。 描述每個內容的相關位置、位置或評估。
 
- [除錯工作](../../extensibility/debugger/debugging-tasks.md)包含指向各種除錯任務的連結,例如啟動程式和評估運算式。
+ [調試作業](../../extensibility/debugger/debugging-tasks.md) 包含各種偵錯工具的連結，例如啟動程式和評估運算式。
 
 ## <a name="see-also"></a>另請參閱
 - [開始使用](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)
