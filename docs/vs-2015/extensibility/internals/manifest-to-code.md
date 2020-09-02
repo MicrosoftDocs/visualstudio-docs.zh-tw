@@ -7,16 +7,16 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb9b02e10a2d263a39e7ae6a150e452ff8321d9f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537055"
 ---
 # <a name="manifest-to-code"></a>資訊清單至程式碼
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Manifest to Code 工具是一個主控台應用程式，它會使用 Visual Studio 映射服務的 imagemanifest 檔案，並產生包裝函式檔案或檔案，以供參考 Visual Studio 延伸模組之 c + +、c #、VB 或 .vsct 檔案中的映射資訊清單值。 此工具會產生包裝函式檔案，可用來直接從 Visual Studio 映射服務要求影像，或在程式碼不會處理它自己的任何 UI 和轉譯時，透過 Api 傳遞資訊清單值。  
+Manifest to Code 工具是一種主控台應用程式，它會採用 Visual Studio 映射服務的 imagemanifest 檔，並產生包裝函式檔案或檔案，以參考 Visual Studio 擴充功能的 c + +、c #、VB 或 .vsct 檔案中的影像資訊清單值。 此工具會產生包裝函式檔案，這些檔案可用來直接向 Visual Studio 映射服務要求影像，或在程式碼不會處理它自己的任何 UI 和轉譯時，透過 Api 來傳遞資訊清單值。  
   
 ## <a name="how-to-use-the-tool"></a>如何使用工具  
  **語法**  
@@ -25,17 +25,17 @@ Manifest to Code 工具是一個主控台應用程式，它會使用 Visual Stud
   
  **引數**  
   
-|**交換器名稱**|**備註**|**Required 或 Optional**|  
+|**交換器名稱**|**備註**|**必要或選擇性**|  
 |-|-|-|  
-|/manifest|要用來建立或更新程式碼包裝函式之映射資訊清單的路徑。|必要|  
-|/language|要在其中產生程式碼包裝函式的語言。<br /><br /> 有效值： CPP、c + +、CS、CSharp、c #、VB 或 .VSCT，這些值都不區分大小寫。<br /><br /> 針對 .VSCT language 選項，會忽略/monikerClass、/classAccess 和/namespace 選項。|必要|  
-|/imageIdClass|此工具所建立之 imageIdClass 的名稱和相關聯的檔案。 針對 c + + 語言選項，只會產生 .h 檔案。<br /><br /> 預設值： \<Manifest Path> \MyImageIds。\<Lang Ext>|選擇性|  
-|/monikerClass|此工具所建立之 monikerClass 的名稱和相關聯的檔案。 針對 c + + 語言選項，只會產生 .h 檔案。 .VSCT 語言會忽略這種情況。<br /><br /> 預設值： \<Manifest Path> \MyMonikers。\<Lang Ext>|選擇性|  
-|/classAccess|ImageIdClass 和 monikerClass 的存取修飾詞。 請確定存取修飾詞對指定的語言有效。 .VSCT language 選項會忽略這種情況。<br /><br /> 預設：公用|選擇性|  
-|/namespace|在程式碼包裝函式中定義的命名空間。 .VSCT language 選項會忽略這種情況。 可能是 '. ' 不論選擇的語言選項為何，或 '：： ' 都是有效的命名空間分隔符號。<br /><br /> 預設值： MyImages|選擇性|  
-|/noLogo|設定此旗標會阻止產品和著作權資訊進行列印。|選擇性|  
-|/?|印出說明資訊。|選擇性|  
-|/help|印出說明資訊。|選用|  
+|/manifest|要用來建立或更新程式碼包裝函式的影像資訊清單路徑。|必要|  
+|/language|要在其中產生程式碼包裝函式的語言。<br /><br /> 有效值： CPP、c + +、CS、CSharp、c #、VB 或 .VSCT 值不區分大小寫。<br /><br /> 針對 .VSCT language 選項，會忽略/monikerClass、/classAccess 和/namespace 選項。|必要|  
+|/imageIdClass|ImageIdClass 的名稱和工具所建立的相關聯檔案。 針對 c + + 語言選項，只會產生 .h 檔案。<br /><br /> 預設值： \<Manifest Path> \MyImageIds。\<Lang Ext>|選擇性|  
+|/monikerClass|MonikerClass 的名稱和工具所建立的相關聯檔案。 針對 c + + 語言選項，只會產生 .h 檔案。 這會忽略 .VSCT 語言。<br /><br /> 預設值： \<Manifest Path> \MyMonikers。\<Lang Ext>|選擇性|  
+|/classAccess|ImageIdClass 和 monikerClass 的存取修飾詞。 請確定存取修飾詞對指定的語言有效。 .VSCT language 選項會忽略這個選項。<br /><br /> 預設值： Public|選擇性|  
+|/namespace|程式碼包裝函式中定義的命名空間。 .VSCT language 選項會忽略這個選項。 可能是 '. ' 或 '：： ' 是有效的命名空間分隔符號，不論選擇的語言選項為何。<br /><br /> 預設值： MyImages|選擇性|  
+|/noLogo|設定此旗標會停止產品和著作權資訊的列印。|選擇性|  
+|/?|列印出說明資訊。|選擇性|  
+|/help|列印出說明資訊。|選用|  
   
  **範例**  
   
@@ -45,16 +45,16 @@ Manifest to Code 工具是一個主控台應用程式，它會使用 Visual Stud
   
 - ManifestToCode/manifest： D:\MyManifest.imagemanifest/language： .VSCT/imageIdClass： MyImageIds  
   
-## <a name="notes"></a>注意  
+## <a name="notes"></a>附註  
   
-- 我們建議您將此工具與 Manifest from Resources 工具所產生的映射資訊清單搭配使用。  
+- 我們建議您搭配 Manifest from Resources 工具所產生的影像資訊清單來使用此工具。  
   
-- 此工具只會查看符號專案以產生程式碼包裝函式。 如果映射資訊清單未包含任何符號，則產生的程式碼包裝函式將會是空的。 如果映射資訊清單中有一或一組影像未使用符號，則會從程式碼包裝函式中排除它們。  
+- 此工具只會查看符號專案以產生程式碼包裝函式。 如果映射資訊清單未包含符號，則產生的程式碼包裝函式將會是空的。 如果映射資訊清單中有一組影像或映射未使用符號，則會從程式碼包裝函式中排除它們。  
   
 ## <a name="sample-output"></a>範例輸出  
  **C # 包裝函式**  
   
- 適用于 c # 的一組簡單映射識別碼和影像標記類別，會類似下列程式碼：  
+ 適用于 c # 的簡單映射識別碼和影像標記類別，將類似于下列程式碼：  
   
 ```csharp  
 //-----------------------------------------------------------------------------  
@@ -97,7 +97,7 @@ namespace MyImages
   
  **C + + 包裝函式**  
   
- 適用于 c + + 的一對簡單映射識別碼和影像標記類別，將類似下列程式碼：  
+ 適用于 c + + 的一組簡單影像識別碼和影像標記類別，將類似于下列程式碼：  
   
 ```cpp  
 //-----------------------------------------------------------------------------  
@@ -156,7 +156,7 @@ __declspec(selectany) const ImageMoniker MyMonikers::MyImage2 = { MyImageIds::As
   
  **Visual Basic 包裝函式**  
   
- 適用于 Visual Basic 的一對簡單映射識別碼和影像標記類別，會與下列程式碼類似：  
+ Visual Basic 的一對簡單映射識別碼和映射的標記類別，將會類似下列程式碼：  
   
 ```vb  
 ' -----------------------------------------------------------------------------  
@@ -212,7 +212,7 @@ End Namespace
   
  **.VSCT 包裝函式**  
   
- .Vsct 檔案的一組映射識別碼如下所示：  
+ .Vsct 檔案的映射識別碼集如下所示：  
   
 ```xml  
 <?xml version='1.0' encoding='utf-8'?>  

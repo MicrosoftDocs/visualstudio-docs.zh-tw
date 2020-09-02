@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: dcc125f795a29f53abb07920aa11c9a5e6ee966b
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329519"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令列將分析工具附加至原生獨立應用程式並收集並行資料
@@ -35,7 +35,7 @@ ms.locfileid: "85329519"
 
      您可以使用下表中的任一選項搭配 **/start:concurrency** 選項。
 
-    |選項|說明|
+    |選項|描述|
     |------------|-----------------|
     |[/user](../profiling/user-vsperfcmd.md) **：**[ `Domain\` ]`Username`|指定要授與程式碼剖析工具存取權之帳戶的選擇性網域和使用者名稱。|
     |[/crosssession](../profiling/crosssession.md)|在其他登入工作階段啟用處理序程式碼剖析。|
@@ -45,7 +45,7 @@ ms.locfileid: "85329519"
 
 2. 輸入下列命令，將程式碼剖析工具附加至目標應用程式︰
 
-     **VSPerfCmd**  [/attach](../profiling/attach.md) **：**{ `PID`&#124;`ProcName` }
+     **>vsperfcmd**  [/attach](../profiling/attach.md) **：**{ `PID`&#124;`ProcName` }
 
      `PID` 指定目標應用程式的處理序 ID。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序 ID。
 
@@ -56,7 +56,7 @@ ms.locfileid: "85329519"
 
 - 下表中成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
-    |選項|說明|
+    |選項|描述|
     |------------|-----------------|
     |[/globalon/globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|
     |[/processon](../profiling/processon-and-processoff.md) **：** `PID` [/processoff](../profiling/processon-and-processoff.md) **：**`PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|
@@ -73,4 +73,4 @@ ms.locfileid: "85329519"
 
 2. 輸入下列命令以關閉程式碼剖析工具︰
 
-     **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
+     **>vsperfcmd**  [/shutdown](../profiling/shutdown.md)

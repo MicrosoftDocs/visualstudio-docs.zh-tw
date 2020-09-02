@@ -1,5 +1,5 @@
 ---
-title: 群組項目 |Microsoft Docs
+title: Group 元素 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35c332682b609f6620f96cc8eb8499cca921d399
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204271"
 ---
-# <a name="group-element"></a>Group 項目
+# <a name="group-element"></a>Group 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-定義 VSPackage 的命令群組。  
+定義 VSPackage 命令群組。  
   
 ## <a name="syntax"></a>語法  
   
@@ -32,29 +32,29 @@ ms.locfileid: "68204271"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
-|guid|必要項。 GUID/識別碼命令識別碼的 GUID。|  
-|id|必要項。 GUID/識別碼的命令識別項的識別碼。|  
-|priority|選擇性。 數值，指定的優先權。|  
-|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
+|guid|必要。 GUID/識別碼命令識別碼的 GUID。|  
+|id|必要。 GUID/識別碼命令識別碼的識別碼。|  
+|priority|選擇性。 指定優先權的數位值。|  
+|條件|選擇性。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
 |項目|描述|  
 |-------------|-----------------|  
-|父代|選擇性。 按鈕的父項目。|  
-|註釋|選擇性註解。|  
+|父系|選擇性。 按鈕的父元素。|  
+|Annotation|選擇性批註。|  
   
 ### <a name="parent-elements"></a>父項目  
   
 |項目|描述|  
 |-------------|-----------------|  
-|[Groups 元素](../extensibility/groups-element.md)|包含定義 VSPackage 的命令群組的項目。|  
+|[Groups 元素](../extensibility/groups-element.md)|包含定義 VSPackage 之命令群組的專案。|  
   
 ## <a name="example"></a>範例  
   

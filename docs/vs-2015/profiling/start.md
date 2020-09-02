@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 83dc76e3e92a05f936d94c8cd0f6a2b9b69e4cc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192821"
 ---
-# <a name="start"></a>啟動
+# <a name="start"></a>Start
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Start** 選項是一個 VSPerfCmd.exe 選項，可將分析工具初始化為指定的程式碼剖析方法。  
@@ -42,7 +42,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="required-options"></a>必要選項  
  在命令列上指定 **Start** 時，務必要指定 **Output** 選項。  
   
- **Output:** `filename`  
+ **輸出：**`filename`  
  指定輸出檔名稱。  
   
 ## <a name="exclusive-options"></a>專屬選項  
@@ -51,7 +51,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **CrossSession**&#124;**CS**  
  啟用跨處理序進行程式碼剖析。 支援 **CrossSession** 和 **CS** 這兩個選項名稱。  
   
- **User:** [`domain\`]`username`  
+ **使用者：**[ `domain\` ]`username`  
  可讓用戶端透過指定的帳戶存取監視器。  
   
  **WinCounter:** `Path` [**Automark**:`n`]  
@@ -60,10 +60,10 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="invalid-options"></a>無效的選項  
  在命令列上，下列選項無法和 **Start** 選項一起使用。  
   
- **Status**  
+ **狀態**  
  **Status** 適用於已進行程式碼剖析的那些處理序。 其會列出處理序和執行緒，以及其目前的分析狀態 (開啟/關閉)。 例如，如果已停止處理序，**Status** 並不會在報表中指出這點。 **Status** 會顯示該處理序是否已進行程式碼剖析。  
   
- **Shutdown**[ **:** `Timeout`]  
+ **Shutdown**[**：** `Timeout` ]  
  將分析工具關閉。  
   
 ## <a name="example"></a>範例  
@@ -75,7 +75,7 @@ VSPerfCmd.exe /Launch:TestApp.exe
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [>vsperfcmd](../profiling/vsperfcmd.md)   
+ [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)

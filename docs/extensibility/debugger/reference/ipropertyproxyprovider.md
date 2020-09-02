@@ -1,5 +1,5 @@
 ---
-title: IProperty代理供應商 |微軟文件
+title: IPropertyProxyProvider |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f71d993c7f99cade5b866e67298132a325986e3a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714786"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
-此介面提供代理介面來查看和更改物件的數據。
+這個介面會提供 proxy 介面，以查看及變更物件的資料。
 
 ## <a name="syntax"></a>語法
 
@@ -28,28 +28,28 @@ ms.locfileid: "80714786"
 IPropertyProxyProvider : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 運算式賦值器 (EE) 在實現[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面的同一物件上實現此介面,作為 EE 支援類型可視化器的一部分。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ 運算式評估工具 (EE) 會在實 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 介面的相同物件上，將這個介面實作為 EE 的型別視覺化支援的一部分。
 
-## <a name="notes-for-callers"></a>通話備註
- 在`IDebugProperty3`介面上調用[查詢介面](/cpp/atl/queryinterface)以獲取此介面。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ 呼叫介面上的 [QueryInterface](/cpp/atl/queryinterface) `IDebugProperty3` 來取得這個介面。
 
-## <a name="methods-in-vtable-order"></a>依 Vtable 順序排列的方法
- 介面`IPropertyProxyProvider`實作以下方法:
+## <a name="methods-in-vtable-order"></a>採用 Vtable 順序的方法
+ `IPropertyProxyProvider`介面會執行下列方法：
 
 |方法|描述|
 |------------|-----------------|
-|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|檢索屬性代理介面以查看對象上的數據。|
+|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|抓取屬性 proxy 介面，以在物件上查看資料。|
 
 ## <a name="remarks"></a>備註
- 儘管 EE 實現了此介面,但[GetProperty Proxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)的實現通常由[GetProperty Proxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)處理。 有關取得 IEE 視覺化服務介面的詳細資訊,請參閱[可視化和檢視資料](../../../extensibility/debugger/visualizing-and-viewing-data.md)。
+ 雖然 EE 會實作為這個介面，但 [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) 的執行通常是由 [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)處理。 如需取得 IEEVisualizerService 介面的詳細資訊，請參閱 [視覺化和查看資料](../../../extensibility/debugger/visualizing-and-viewing-data.md) 。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

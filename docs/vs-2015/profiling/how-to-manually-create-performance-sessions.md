@@ -1,5 +1,5 @@
 ---
-title: HOW TO：手動建立效能工作階段 | Microsoft Docs
+title: 如何：手動建立效能工作階段 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,26 +16,26 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 622d349fd063cf0a22e3c286003490e088cd4440
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192836"
 ---
-# <a name="how-to-manually-create-performance-sessions"></a>作法：手動建立效能工作階段
+# <a name="how-to-manually-create-performance-sessions"></a>如何：手動建立效能工作階段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以手動建立效能工作階段， 而且不需要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟專案便可以完成。 如需詳細資訊，請參閱[設定效能工作階段](../profiling/configuring-performance-sessions.md)。  
   
 ### <a name="to-manually-create-a-performance-session"></a>手動建立效能工作階段  
   
-1. 在 [分析]  功能表上，指向 [分析工具]  ，然後按一下 [新增效能工作階段]  。  
+1. 在 [分析]**** 功能表上，指向 [分析工具]****，然後按一下 [新增效能工作階段]****。  
   
-     空白的效能工作階段就會加入至 [效能總管]  。  
+     空白的效能工作階段就會加入至 [效能總管]****。  
   
-2. 以滑鼠右鍵按一下 [目標]  ，然後按一下 [加入目標二進位檔]  。  
+2. 以滑鼠右鍵按一下 [目標]****，然後按一下 [加入目標二進位檔]****。  
   
-3. 在 [加入目標二進位檔]  對話方塊中，選取檔案名稱，然後按一下 [開啟]  。  
+3. 在 [加入目標二進位檔]**** 對話方塊中，選取檔案名稱，然後按一下 [開啟]****。  
   
      新的二進位檔就會加入。  
   

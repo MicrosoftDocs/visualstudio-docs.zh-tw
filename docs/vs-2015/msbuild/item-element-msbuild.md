@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc3d606bb890b5f95089bfc7b1e83b2d34cd56ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192601"
 ---
 # <a name="item-element-msbuild"></a>Item 項目 (MSBuild)
@@ -46,11 +46,11 @@ ms.locfileid: "68192601"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`Include`|必要屬性。<br /><br /> 要包含在項目清單中的檔案或萬用字元。|  
 |`Exclude`|選擇性屬性。<br /><br /> 要從項目清單中排除的檔案或萬用字元。|  
@@ -62,20 +62,20 @@ ms.locfileid: "68192601"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|使用者定義的項目中繼資料索引鍵，其中含有項目中繼資料值。 項目中可能有零個或多個 `ItemMetadata` 項目。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|元素|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|項目的群組項目。|  
   
 ## <a name="remarks"></a>備註  
  `Item` 項目定義建置系統的輸入，且會依據使用者定義的集合名稱，分組成為項目集合。 這些項目集合可以用來做為[工作](../msbuild/msbuild-tasks.md)的參數，工作會使用集合中個別的項目來執行建置程序的步驟。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。  
   
- 使用標記法 `@(`*myType*`)`，可讓類型 *myType* 的項目集合展開為以分號分隔的字串清單，並傳遞至參數。 如果參數的類型是 `string`，則參數的值會是以分號分隔的項目清單。 如果參數是字串陣列 (`string[]`)，則每個項目都會根據分號的位置，插入到陣列中。 如果工作參數的類型是 <xref:Microsoft.Build.Framework.ITaskItem>`[]`，則值就是項目集合的內容再加上任何附加的中繼資料。 若要使用分號以外的字元來分隔每個項目，請使用語法 `@(`*myType*`, '`*separator*`')`。  
+ 使用標記法 `@(` *myType*可 `)` 讓類型*myType*的專案集合，展開為以分號分隔的字串清單，並傳遞至參數。 如果參數的類型是 `string`，則參數的值會是以分號分隔的項目清單。 如果參數是字串陣列 (`string[]`)，則每個項目都會根據分號的位置，插入到陣列中。 如果工作參數的類型是 <xref:Microsoft.Build.Framework.ITaskItem>`[]`，則值就是項目集合的內容再加上任何附加的中繼資料。 若要使用分號以外的字元來分隔每個專案，請使用語法 `@(` *myType* `, '` *分隔符號* `')` 。  
   
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 引擎可以評估萬用字元 (例如 `*` 和 `?`) 以及遞迴萬用字元 (例如 `/**/*.cs`)。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。  
   
@@ -92,6 +92,6 @@ ms.locfileid: "68192601"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [項目](../msbuild/msbuild-items.md)   
+ [專案](../msbuild/msbuild-items.md)   
  [MSBuild 屬性](msbuild-properties1.md)   
- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
+ [專案檔結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

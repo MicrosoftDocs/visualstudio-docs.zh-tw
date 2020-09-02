@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::readMemory |Microsoft Docs
+title: IDiaStackWalkHelper：： readMemory |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8bef01cd29bb2312bd682f2f1f1150ee78da293e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150061"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-從記憶體中的可執行檔的映像中讀取資料的區塊。  
+從記憶體中的可執行檔映射讀取資料區塊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,22 +39,22 @@ HRESULT readMemory( 
   
 #### <a name="parameters"></a>參數  
  `type`  
- [in]值，以從[MemoryTypeEnum 列舉](../../debugger/debug-interface-access/memorytypeenum.md)指定要讀取的記憶體類型的列舉類型。  
+ 在 [MemoryTypeEnum 列舉](../../debugger/debug-interface-access/memorytypeenum.md) 列舉中的值，指定要讀取的記憶體類型。  
   
  va  
- [in]要從其中開始讀取的映像中的虛擬位址。  
+ 在映射中要開始讀取的虛擬位址。  
   
  `cbData`  
- [in]以位元組為單位的資料緩衝區的大小。  
+ 在資料緩衝區的大小（以位元組為單位）。  
   
  `pcbData`  
- [out]傳回實際讀取的位元組數目。 如果`pbData`是`NULL`，則這是可用的資料的位元組總數。  
+ 擴展傳回實際讀取的位元組數目。 如果 `pbData` 為 `NULL` ，則表示可用的資料位元組總數。  
   
  `pbData`  
- [in、 out]讀取的記憶體會填入緩衝區。  
+ [in，out]填入記憶體讀取的緩衝區。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   

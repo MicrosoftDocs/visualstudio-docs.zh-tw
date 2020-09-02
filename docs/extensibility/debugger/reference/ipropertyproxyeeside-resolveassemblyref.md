@@ -1,5 +1,5 @@
 ---
-title: IProperty 代理EESide::解析裝配資源 |微軟文件
+title: IPropertyProxyEESide：： ResolveAssemblyRef |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c54945b0c89fb9608fab6aa70dcc63a7c6ae42df
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714881"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
-確定指定的託管程式集引用的位置。
+判斷指定之 managed 元件參考的位置。
 
 ## <a name="syntax"></a>語法
 
@@ -49,25 +49,25 @@ int ResolveAssemblyRef(
 
 ## <a name="parameters"></a>參數
 `assemName`\
-[在]要解析的程式集的名稱。
+在要解析的元件名稱。
 
 `assemBytes`\
-[出]返回包含與引用關聯的程式集位元組的[IEEData儲存](../../../extensibility/debugger/reference/ieedatastorage.md)物件。
+擴展傳回 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 物件，其中包含與參考相關聯的元件位元組。
 
 `assemPdb`\
-[出]返回包含`IEEDataStorage`符號存儲與此引用關聯的數據的物件。
+擴展傳回 `IEEDataStorage` 物件，其中包含與此參考相關聯的符號存放區資料。
 
 `assemLocation`\
-[出]傳回此引用的路徑位置。
+擴展傳回這個參考的路徑位置。
 
 `alr`\
-[出]從[ASSEMBLYLOCE](../../../extensibility/debugger/reference/assemblylocresolution.md)解析枚舉中傳回一個值,指示此引用程式集的位置。
+擴展從 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) 列舉傳回值，指出此參考元件的位置。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 此方法通常不由自定義表達式賦值器實現。
+ 這個方法通常不是由自訂表格達式評估工具所執行。
 
 ## <a name="see-also"></a>另請參閱
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

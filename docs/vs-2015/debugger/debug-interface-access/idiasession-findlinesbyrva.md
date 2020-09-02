@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8c066e183d60a1f7d967cafa1114d6241b28caa4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165492"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取指定的編譯模組中的行，其中包含指定相對虛擬位址 (RVA)。  
+抓取指定編譯單位中包含指定之相對虛擬位址 (RVA) 的行。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,19 +37,19 @@ HRESULT findLinesByRVA ( 
   
 #### <a name="parameters"></a>參數  
  `rva`  
- [in]RVA 為指定的位址。  
+ 在將位址指定為 RVA。  
   
  `length`  
- [in]指定的位址範圍，以涵蓋此查詢使用的位元組數目。  
+ 在指定要包含在此查詢中之位址範圍的位元組數目。  
   
  `ppResult`  
- [out]傳回[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)物件，其中包含一份所有列的數字，涵蓋的指定的位址範圍。  
+ 擴展傳回 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) 物件，其中包含涵蓋指定位址範圍的所有行號的清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 此範例示範會取得所有包含在指定的函式使用函式的相對虛擬位址和長度的行號的功能。  
+ 此範例顯示的函式會使用函式的相對虛擬位址和長度，取得指定函式中包含的所有行號。  
   
 ```cpp#  
 IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSession)  
