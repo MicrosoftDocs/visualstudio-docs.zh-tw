@@ -1,5 +1,5 @@
 ---
-title: 放大縮小字型功能 放大縮小字型功能微軟文件
+title: SccPopulateList 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f518413adba1546bcff4f7cf2e62b4563cf1bcc7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700537"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函式
-此函數更新特定原始程式碼管理命令的檔案清單,並在所有給定檔上提供原始程式碼管理狀態。
+此函式會更新特定原始檔控制命令的檔案清單，並在所有指定的檔案上提供原始檔控制狀態。
 
 ## <a name="syntax"></a>語法
 
@@ -38,56 +38,56 @@ SCCRTN SccPopulateList (
 ```
 
 #### <a name="parameters"></a>參數
- pvContext
+ pvCoNtext
 
-[在]原始程式碼管理外掛程式上下文結構。
+在原始檔控制外掛程式內容結構。
 
  nCommand
 
-[在]將應用於`lpFileNames`數位中的所有檔的原始程式碼控制命令(有關可能的命令清單,請參閱[命令代碼](../extensibility/command-code-enumerator.md))。
+在將套用至陣列中所有檔案的原始檔控制命令 `lpFileNames` (參閱命令程式 [代碼](../extensibility/command-code-enumerator.md) ，以取得可能的命令清單) 。
 
- n 檔案
+ nFiles
 
-[在]陣列中`lpFileNames`的檔案數。
+在陣列中的檔案數目 `lpFileNames` 。
 
- lpFile 名稱
+ lpFileNames
 
-[在]IDE 已知的檔名陣列。
+在IDE 已知的檔案名陣列。
 
- pfn 填充
+ pfnPopulate
 
-[在]用於呼叫以添加和刪除檔的IDE回檔函數(有關詳細資訊,請參閱[POPLISTFUNC)。](../extensibility/poplistfunc.md)
+在要呼叫以新增和移除檔案的 IDE 回呼函式 (如需詳細資料) ，請參閱 [POPLISTFUNC](../extensibility/poplistfunc.md) 。
 
  pvCallerData
 
-[在]要傳遞給回調函數的值保持不變。
+在要原封不動地傳遞給回呼函式的值。
 
- lp狀態
+ lpStatus
 
-[進出]源控件外掛程式的陣列,用於返回每個文件的狀態標誌。
+[in，out]原始檔控制外掛程式的陣列，用來傳回每個檔案的狀態旗標。
 
  fOptions
 
-[在]命令標誌(有關詳細資訊,請參閱[特定命令使用的位標誌的](../extensibility/bitflags-used-by-specific-commands.md)"填充清單標誌"部分)。
+在命令旗標 (查看 [特定命令所使用之位旗標](../extensibility/bitflags-used-by-specific-commands.md) 的「PopulateList 旗標」一節，以取得詳細資料) 。
 
 ## <a name="return-value"></a>傳回值
- 此函數的源碼管理外掛程式實現應返回以下值之一:
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：
 
 |值|描述|
 |-----------|-----------------|
 |SCC_OK|成功。|
-|SCC_E_NONSPECIFICERROR|非特異性故障。|
+|SCC_E_NONSPECIFICERROR|模糊失敗。|
 
 ## <a name="remarks"></a>備註
- 此函數檢查檔案清單的當前狀態。 當檔與`pfnPopulate`的條件`nCommand`不匹配時,它使用回調函數通知調用方。 例如,如果命令是`SCC_COMMAND_CHECKIN`,並且清單中的檔未簽出,則回調用於通知調用方。 有時,原始程式碼管理外掛程式可能會找到其他文件,這些檔可能是命令的一部分,並添加它們。 例如,這允許 Visual Basic 使用者簽出其專案使用的 .bmp 檔,但不顯示在 Visual Basic 專案檔中。 使用者在 IDE 中選擇 **「獲取**」命令。 IDE 將顯示它認為使用者可以獲取的所有檔案的清單,但在顯示清單之前,將調用`SccPopulateList`該 函數以確保要顯示的清單是最新的。
+ 此函式會檢查檔案清單中的目前狀態。 它會使用 `pfnPopulate` 回呼函式，在檔案不符合的條件時通知呼叫端 `nCommand` 。 例如，如果命令為， `SCC_COMMAND_CHECKIN` 而且清單中的檔案尚未簽出，則會使用回呼來通知呼叫者。 有時候，原始檔控制外掛程式可能會找到其他可能是命令的一部分的檔案，並加以新增。 例如，這可讓 Visual Basic 使用者簽出其專案所使用但未出現在 Visual Basic 專案檔中的 .bmp 檔案。 使用者選擇 IDE 中的 **Get** 命令。 IDE 會顯示它認為使用者可以取得的所有檔案清單，但在顯示清單之前，會呼叫此函式， `SccPopulateList` 以確保顯示的清單是最新的。
 
 ## <a name="example"></a>範例
- IDE 生成它認為使用者可以獲取的檔案清單。 在顯示此清單之前,它會調用`SccPopulateList`該函數,使原始程式碼管理外掛程式有機會從清單中添加和刪除檔。 外掛程式透過調用給定的回調函數來修改清單(有關詳細資訊,請參閱[POPLISTFUNC)。](../extensibility/poplistfunc.md)
+ IDE 會建立其認為使用者可以取得的檔案清單。 它會在顯示這份清單之前呼叫函 `SccPopulateList` 式，讓原始檔控制外掛程式有機會從清單中新增及刪除檔案。 外掛程式會藉由呼叫指定的回呼函數來修改清單 (如需詳細資料，請參閱 [POPLISTFUNC](../extensibility/poplistfunc.md)) 。
 
- 外掛程式繼續呼`pfnPopulate`叫 函數,該函數添加和刪除檔,直到它完成,然後從`SccPopulateList`函數返回。 然後,IDE 可以顯示其清單。 陣列`lpStatus`表示 IDE 傳入的原始清單中的所有檔。 除了使用回調功能外,外掛程式還填充所有這些文件的狀態。
+ 外掛程式會繼續呼叫函式 `pfnPopulate` ，該函式會新增和刪除檔案，直到完成，然後從函式傳回 `SccPopulateList` 。 然後，IDE 可以顯示其清單。 `lpStatus`陣列代表 IDE 傳入的原始清單中的所有檔案。 外掛程式除了使用回呼函式之外，還會填入所有這些檔案的狀態。
 
 > [!NOTE]
-> 原始程式碼管理外掛程式始終可以選擇立即從此函數返回,使清單保留為現在。 如果外掛程式實現此函數,它可以通過在[Scc 初始化](../extensibility/sccinitialize-function.md)的第一`SCC_CAP_POPULATELIST`個調用中設置功能位標誌來指示這一點。 預設情況下,外掛程式應始終假定傳入的所有專案都是檔。 但是,如果 IDE`SCC_PL_DIR``fOptions`在 參數中設置標誌,則傳入的所有項都將被視為目錄。 外掛程式應添加屬於目錄中的所有檔。 IDE 永遠不會傳遞檔和目錄的混合。
+> 原始檔控制外掛程式一律會有直接從這個函式傳回的選項，讓清單保持不運作。 如果外掛程式會執行此函式，它可以藉由設定 `SCC_CAP_POPULATELIST` 第一次呼叫 [SccInitialize](../extensibility/sccinitialize-function.md)的功能位來指出這一點。 根據預設，外掛程式應該一律假設傳入的所有專案都是檔案。 但是，如果 IDE 在 `SCC_PL_DIR` 參數中設定旗標 `fOptions` ，則所有傳入的專案都會被視為目錄。 外掛程式應加入目錄中的所有檔案。 IDE 永遠不會傳入檔案和目錄的混合。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

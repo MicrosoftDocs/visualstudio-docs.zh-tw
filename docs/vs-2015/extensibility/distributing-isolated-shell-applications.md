@@ -1,5 +1,5 @@
 ---
-title: 散發 Isolated 的 Shell 應用程式 |Microsoft Docs
+title: 散佈隔離式 Shell 應用程式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -9,26 +9,26 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bf0d8a4cab8d30a56e84d1a6869c2c842b982aea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204669"
 ---
 # <a name="distributing-isolated-shell-applications"></a>散發獨立模式 Shell 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您必須安裝 Visual Studio 和 Visual Studio SDK，才能建立 isolated 的 shell 應用程式。 若要散發到電腦的其他使用者或客戶的應用程式，您必須包含特殊 isolated shell 可轉散發套件。  
+您必須安裝 Visual Studio 和 Visual Studio SDK，才能建立隔離式 shell 應用程式。 若要將應用程式散發給其他使用者或客戶的電腦，您必須包含獨立 shell 的特殊可轉散發套件。  
   
-## <a name="prerequisites-for-distributing-isolated-shell-applications"></a>散發 Isolated 的 Shell 應用程式的必要條件  
+## <a name="prerequisites-for-distributing-isolated-shell-applications"></a>散發隔離式 Shell 應用程式的必要條件  
   
-|名稱|描述|  
+|Name|描述|  
 |----------|-----------------|  
-|Visual Studio SDK|您必須開發和測試的擴充功能 SDK [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 您也可以使用 SDK 來建立您自己的 Visual Studio 隔離 shell 執行個體。<br /><br /> Visual Studio 是 SDK 的必要條件。|  
-|Microsoft Visual Studio 獨立模式 Shell 可轉散發套件|可轉散發套件建置在 Visual Studio 工具環境時，包含您的安裝程式在獨立模式 shell。 獨立模式的 Shell 可轉散發套件包含.NET Framework 4.5。|  
+|Visual Studio SDK|您必須具備的 SDK，才能開發和測試的擴充功能 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。 您也可以使用 SDK 來建立您自己的 Visual Studio 獨立模式 shell 實例。<br /><br /> Visual Studio 是 SDK 的先決條件。|  
+|Microsoft Visual Studio 獨立模式 Shell 可轉散發套件|當您在 Visual Studio 獨立模式 shell 上建立工具環境時，所包含在安裝程式中的可轉散發套件。 獨立模式 Shell 可轉散發套件包含 .NET Framework 4.5。|  
   
 ## <a name="creating-an-installation-program-for-the-application"></a>建立應用程式的安裝程式  
- 整合式或外掛式 shell 應用程式，您必須建立特殊的安裝程式。 如需詳細資訊，請參閱 <<c0> [ 安裝獨立 Shell 應用程式](../extensibility/installing-an-isolated-shell-application.md)。  
+ 您必須為整合式或獨立模式 shell 應用程式建立特殊的安裝程式。 如需詳細資訊，請參閱 [安裝獨立模式 Shell 應用程式](../extensibility/installing-an-isolated-shell-application.md)。  
   
-## <a name="allowing-for-updates-to-your-application"></a>可讓您的應用程式的更新  
- 您的安裝程式必須允許，您的應用程式將會更新，Microsoft 更新或貴公司的更新的可能性。 如需有關更新的詳細資訊，請參閱 <<c0> [ 獨立 Shell 應用程式服務方針](../extensibility/servicing-guidelines-for-isolated-shell-applications.md)。
+## <a name="allowing-for-updates-to-your-application"></a>允許更新您的應用程式  
+ 您的安裝程式必須允許您的應用程式將透過 Microsoft 更新或您公司的更新進行更新。 如需更新的詳細資訊，請參閱 [獨立 Shell 應用程式的服務指導方針](../extensibility/servicing-guidelines-for-isolated-shell-applications.md)。

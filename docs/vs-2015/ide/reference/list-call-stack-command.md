@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9c44ac18468fbd26adab2cf973a21df58ebb28c1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657651"
 ---
 # <a name="list-call-stack-command"></a>列出呼叫堆疊命令
@@ -39,28 +39,28 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 ## <a name="arguments"></a>引數
  `index` 選擇項。 設定目前堆疊框架且不顯示任何輸出。
 
-## <a name="switches"></a>參數
+## <a name="switches"></a>交換器
  每個參數都可以使用其完整格式或簡短形式叫用。
 
- /Count： `number` [或]/C： `number` 選擇性。 要顯示的呼叫堆疊最大數目。 預設值無限制。
+ /Count： `number` [或]/c： `number` 選擇性。 要顯示的呼叫堆疊最大數目。 預設值無限制。
 
- /ShowTypes： `yes`&#124; `no` [或]/t： `yes`&#124; `no` 選擇性。 指定是否顯示參數類型。 預設值為 `yes`。
+ /ShowTypes： `yes`&#124;`no` [或]/t： `yes`&#124;`no` 選擇性。 指定是否顯示參數類型。 預設值為 `yes`。
 
- /ShowNames： `yes`&#124; `no` [或]/n： `yes`&#124; `no` 選擇性。 指定是否顯示參數名稱。 預設值為 `yes`。
+ /ShowNames： `yes`&#124;`no` [或]/n： `yes`&#124;`no` 選擇性。 指定是否顯示參數名稱。 預設值為 `yes`。
 
- /ShowValues： `yes`&#124; `no` [或]/v： `yes`&#124; `no` 選擇性。 指定是否顯示參數值。 預設值為 `yes`。
+ /ShowValues： `yes`&#124;`no` [或]/v： `yes`&#124;`no` 選擇性。 指定是否顯示參數值。 預設值為 `yes`。
 
- /ShowModule： `yes`&#124; `no` [或]/m： `yes`&#124; `no` 選擇性。 指定是否顯示模組名稱。 預設值為 `yes`。
+ /ShowModule： `yes`&#124;`no` [或]/m： `yes`&#124;`no` 選擇性。 指定是否顯示模組名稱。 預設值為 `yes`。
 
- /ShowLineOffset： `yes`&#124; `no` [或]/#： `yes`&#124; `no` 選擇性。 指定是否顯示行位移。 預設值為 `no`。
+ /ShowLineOffset： `yes`&#124;`no` [或]/#： `yes`&#124;`no` 選擇性。 指定是否顯示行位移。 預設值為 `no`。
 
- /ShowByteOffset： `yes`&#124; `no` [或]/b： `yes`&#124; `no` 選擇性。 指定是否顯示位元組位移。 預設值為 `no`。
+ /ShowByteOffset： `yes`&#124;`no` [或]/b： `yes`&#124;`no` 選擇性。 指定是否顯示位元組位移。 預設值為 `no`。
 
- /ShowLanguage： `yes`&#124; `no` [或]/l： `yes`&#124; `no` 選擇性。 指定是否顯示語言。 預設值為 `no`。
+ /ShowLanguage： `yes`&#124;`no` [或]/l： `yes`&#124;`no` 選擇性。 指定是否顯示語言。 預設值為 `no`。
 
- /IncludeCallsAcrossThreads： `yes`&#124; `no` [或]/i： `yes`&#124; `no` 選擇性。 指定是否包含對或來自其他執行緒的呼叫。 預設值為 `no`。
+ /IncludeCallsAcrossThreads： `yes`&#124;`no` [或]/i： `yes`&#124;`no` 選擇性。 指定是否包含對或來自其他執行緒的呼叫。 預設值為 `no`。
 
- /ShowExternalCode： `yes`&#124; `no` 選擇性。 指定是否顯示呼叫堆疊的 Just My Code。 當 Just My Code 關閉時，會顯示所有的非使用者程式碼。 當 Just My Code 開啟時，非使用者程式碼在呼叫堆疊輸出中會顯示為 `[external]`。
+ /ShowExternalCode： `yes`&#124;`no` 選擇性。 指定是否顯示呼叫堆疊的 Just My Code。 當 Just My Code 關閉時，會顯示所有的非使用者程式碼。 當 [Just My Code 開啟時，非使用者程式碼在呼叫堆疊輸出中會顯示為 `[external]`。
 
  Thread： `n` 選擇性。 顯示執行緒 `n` 的呼叫堆疊。 如果不指定任何執行緒，則顯示目前執行緒的呼叫堆疊。
 
@@ -88,4 +88,4 @@ kb 2
 ```
 
 ## <a name="see-also"></a>另請參閱
- [列出反組解碼命令](../../ide/reference/list-disassembly-command.md)[列出執行緒命令](../../ide/reference/list-threads-command.md) [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)[命令視窗](../../ide/reference/command-window.md)[尋找/命令框](../../ide/find-command-box.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ [列出反組解碼命令](../../ide/reference/list-disassembly-command.md)[清單執行緒命令](../../ide/reference/list-threads-command.md) [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)[命令視窗](../../ide/reference/command-window.md)[尋找/命令](../../ide/find-command-box.md)方塊[Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

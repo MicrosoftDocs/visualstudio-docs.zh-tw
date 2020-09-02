@@ -1,5 +1,5 @@
 ---
-title: 事件來源 (Visual Studio SDK) |Microsoft Docs
+title: Visual Studio SDK) 的事件來源 (|Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,19 +11,19 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7a01216f8580e5c366cc6072448a0cf7ef4e6d69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152807"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>事件來源 (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-有兩個來源的事件： 偵錯引擎 (DE) 和工作階段進行偵錯管理員 (SDM)。 從裝置傳送的事件會有非 NULL 引擎，而從 SDM 傳送事件都有 NULL 引擎。  
+事件有兩個來源： debug engine (DE) ，以及會話 debug manager (SDM) 。 從 DE 傳送的事件具有非 Null 的引擎，而從 SDM 傳送的事件則具有 Null 引擎。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何將傳送**IDebugProgramCreateEvent2**從以 SDM DE。  
+ 下列範例示範如何將 **IDebugProgramCreateEvent2** 從 DE 傳送至 SDM。  
   
 ```  
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();  

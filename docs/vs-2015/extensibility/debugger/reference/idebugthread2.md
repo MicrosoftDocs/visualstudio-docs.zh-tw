@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cabc32d33b1d68b96ae074a8bceac0f759b67447
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152941"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個介面表示在程式中執行的執行緒。  
+這個介面代表在程式中執行的執行緒。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,44 +30,44 @@ ms.locfileid: "68152941"
 IDebugThread2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- 偵錯引擎 (DE) 會實作這個介面來代表在單一程式中執行的執行緒。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ Debug engine (DE) 會執行這個介面，以代表單一程式中的執行執行緒。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 呼叫[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)來取得這個介面，表示目前作用中的執行緒。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 呼叫 [GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md) 來取得此介面，以代表目前使用中的執行緒。  
   
- 此介面也會在建立中斷點要求 (請參閱[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md))。  
+ 此介面也用於建立中斷點要求 (請參閱 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)) 。  
   
- 此介面也會傳回解析繫結或錯誤的中斷點時 (請參閱[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)並[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md))。  
+ 解析系結或錯誤中斷點時，也會傳回這個介面 (請參閱 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 和 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)) 。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDebugThread2`。  
+ 下表顯示的方法 `IDebugThread2` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)|擷取一份此執行緒的堆疊框架。|  
+|[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)|抓取這個執行緒的堆疊框架清單。|  
 |[GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md)|取得執行緒的名稱。|  
 |[SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)|設定執行緒的名稱。|  
-|[GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)|取得執行緒正在執行的程式。|  
-|[CanSetNextStatement](../../../extensibility/debugger/reference/idebugthread2-cansetnextstatement.md)|判斷下一個陳述式是否可以設定特定的堆疊框架和程式碼內容。|  
-|[SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)|將下一個陳述式，設定特定的堆疊框架和程式碼內容。|  
+|[GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)|取得執行執行緒的程式。|  
+|[CanSetNextStatement](../../../extensibility/debugger/reference/idebugthread2-cansetnextstatement.md)|判斷下一個語句是否可以設定為指定的堆疊框架和程式碼內容。|  
+|[SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)|將下一個語句設定為給定的堆疊框架和程式碼內容。|  
 |[GetThreadId](../../../extensibility/debugger/reference/idebugthread2-getthreadid.md)|取得系統執行緒識別碼。|  
-|[Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)|暫止的執行緒。|  
-|[Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)|繼續執行緒。|  
-|[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)|取得說明執行緒的屬性。|  
-|[GetLogicalThread](../../../extensibility/debugger/reference/idebugthread2-getlogicalthread.md)|取得此實體的執行緒相關聯的邏輯執行緒。|  
+|[暫止](../../../extensibility/debugger/reference/idebugthread2-suspend.md)|暫停執行緒。|  
+|[繼續](../../../extensibility/debugger/reference/idebugthread2-resume.md)|繼續執行緒。|  
+|[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)|取得描述執行緒的屬性。|  
+|[GetLogicalThread](../../../extensibility/debugger/reference/idebugthread2-getlogicalthread.md)|取得與此實體執行緒相關聯的邏輯執行緒。|  
   
 ## <a name="remarks"></a>備註  
- 因為在單一的實際執行緒可以執行在多個程式中，多個`IDebugThread2`從多個程式可以代表相同的實體執行緒。  
+ 因為單一實體執行緒可以在多個程式中執行，所以一個以上的 `IDebugThread2` 程式可以代表相同的實體執行緒。  
   
- 中斷點或例外狀況發生時，傳送一個事件是藉由呼叫[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)。 這個方法的引數的其中一個是`IDebugThread2`介面，表示目前的執行緒。 [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)用來取得[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)介面目前的堆疊框架。  
+ 發生中斷點或例外狀況時，會呼叫 [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)來傳送事件。 這個方法的其中一個引數是 `IDebugThread2` 代表目前線程的介面。 [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 是用來取得目前堆疊框架的 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 介面。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

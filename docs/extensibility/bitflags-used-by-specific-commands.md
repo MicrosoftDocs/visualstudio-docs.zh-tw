@@ -1,5 +1,5 @@
 ---
-title: 特定命令使用的位標誌 |微軟文件
+title: 特定命令所使用的位旗標 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,99 +11,99 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ffa1fd8bf025d665977e87dc8b88da724ade5a8b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740007"
 ---
-# <a name="bitflags-used-by-specific-commands"></a>特定指令使用的位元號
-可以通過在單個值中設置一個或多個位來修改原始程式碼管理外掛程式 API 中許多函數的行為。 這些值稱為位標誌。 此處詳細介紹了原始程式碼管理外掛程式 API 使用的各種位標誌,由使用它們的函數分組。
+# <a name="bitflags-used-by-specific-commands"></a>特定命令所使用的位旗標
+您可以藉由在單一值中設定一或多個位，來修改原始檔控制外掛程式 API 中許多函數的行為。 這些值稱為位旗標。 原始檔控制外掛程式 API 所使用的各種位旗標詳述于此處，並依使用它們的函式進行分組。
 
 ## <a name="checked-out-flag"></a>簽出旗標
- 可以為[SccAdd](../extensibility/sccadd-function.md)或[SccCheckin](../extensibility/scccheckin-function.md)設置此標誌。
+ 您可以針對 [SccAdd](../extensibility/sccadd-function.md) 或 [SccCheckin](../extensibility/scccheckin-function.md)設定這個旗標。
 
-|旗標|值|描述|
+|旗標|值|說明|
 |----------|-----------|-----------------|
-|`SCC_KEEP_CHECKEDOUT`|0x1000|保持檔簽出狀態。|
+|`SCC_KEEP_CHECKEDOUT`|0x1000|將檔案保持簽出。|
 
 ## <a name="add-flags"></a>新增旗標
- 這些標誌由[SccAdd](../extensibility/sccadd-function.md)使用。
+ [SccAdd](../extensibility/sccadd-function.md)會使用這些旗標。
 
-|旗標|值|描述|
+|旗標|值|說明|
 |----------|-----------|-----------------|
-|`SCC_FILETYPE_AUTO`|0x00|原始程式碼管理外掛程式應自動檢測檔是文本還是二進位檔案。|
-|`SCC_FILETYPE_TEXT`|0x01|檔案類型是文字。|
-|`SCC_FILETYPE_BINARY`|0x04|檔類型是二進位的。 **注意:**`SCC_FILETYPE_TEXT``SCC_FILETYPE_BINARY`和 標誌是互斥的。   完全設置一個或兩個。|
-|`SCC_ADD_STORELATEST`|0x02|僅存儲最新版本(無增量)。|
+|`SCC_FILETYPE_AUTO`|0x00|原始檔控制外掛程式應該會自動偵測檔案是文字或二進位檔。|
+|`SCC_FILETYPE_TEXT`|0x01|檔案類型為 text。|
+|`SCC_FILETYPE_BINARY`|0x04|檔案類型為 binary。 **注意：** `SCC_FILETYPE_TEXT`和 `SCC_FILETYPE_BINARY` 旗標彼此互斥。   只設定一或兩個。|
+|`SCC_ADD_STORELATEST`|0x02|只儲存最新版本 (沒有任何差異) 。|
 
-## <a name="diff-flags"></a>差異標誌
- [SccDiff](../extensibility/sccdiff-function.md)使用這些標誌來定義差異操作的範圍。 標誌`SCC_DIFF_QD_xxx`是互斥的。 如果指定了其中任何一個,則不提供視覺反饋。 在「快速差異」(QD)中,外掛程式不會確定檔的不同方式,僅當檔不同時。 如果未指定這些標誌,則執行"視覺差異";如果未指定這些標誌,則執行「視覺差異」。。」。"。"未指定任何標誌。計算並顯示詳細的文件差異。 如果不支援請求的 QD,外掛程式將移動到下一個最佳外掛程式。 例如,如果 IDE 請求校驗和,而外掛程式不支援它,則外掛程式執行完整內容檢查(仍然比可視顯示快得多)。
+## <a name="diff-flags"></a>差異旗標
+ [SccDiff](../extensibility/sccdiff-function.md)會使用這些旗標來定義差異作業的範圍。 `SCC_DIFF_QD_xxx`旗標彼此互斥。 如果指定了任何一個，則不會提供任何視覺效果的意見反應。 在「快速差異」 (QD) 中，外掛程式不會判斷檔案的不同之處，只有在不同的情況下才會決定。 如果未指定這些旗標，則會完成「視覺化差異」;系統會計算並顯示詳細的檔案差異。 如果要求的 QD 不受支援，則外掛程式會移至下一個最佳的設定。 比方說，如果 IDE 要求總和檢查碼，而且外掛程式不支援總和檢查碼，則外掛程式會進行全內容檢查， (還是比視覺顯示) 快得多。
 
-|旗標|值|描述|
+|旗標|值|說明|
 |----------|-----------|-----------------|
 |`SCC_DIFF_IGNORECASE`|0x0002|忽略大小寫差異。|
-|`SCC_DIFF_IGNORESPACE`|0x0004|忽略空白差異。 **註:** `SCC_DIFF_IGNORECASE`和`SCC_DIFF_IGNORESPACE`標誌是可選的位標誌。|
-|`SCC_DIFF_QD_CONTENTS`|0x0010|通過比較整個文件內容進行 QD。|
-|`SCC_DIFF_QD_CHECKSUM`|0x0020|按校驗和進行QD。|
-|`SCC_DIFF_QD_TIME`|0x0040|按檔日期/時間戳的 QD。|
-|`SCC_DIFF_QUICK_DIFF`|0x0070|這是用於檢查所有 QD 位標誌的蒙版。 它不應傳遞到函數中;三個 QD 位標誌是互斥的。 QD 始終表示不顯示 UI。|
+|`SCC_DIFF_IGNORESPACE`|0x0004|略過空白字元的差異。 **注意：** `SCC_DIFF_IGNORECASE` 和 `SCC_DIFF_IGNORESPACE` 旗標是選擇性的位旗標。|
+|`SCC_DIFF_QD_CONTENTS`|0x0010|藉由比較整個檔案內容來 QD。|
+|`SCC_DIFF_QD_CHECKSUM`|0x0020|依總和檢查碼 QD。|
+|`SCC_DIFF_QD_TIME`|0x0040|依檔案日期/時間戳記來 QD。|
+|`SCC_DIFF_QUICK_DIFF`|0x0070|這是用來檢查所有 QD 位旗標的遮罩。 它不應該傳遞至函式;這三個 QD 位旗標是互斥的。 QD 一律表示不顯示 UI。|
 
-## <a name="populatelist-flag"></a>填滿清單旗標
- 此標誌由`fOptions`參數中的[SccPopulateList](../extensibility/sccpopulatelist-function.md)使用。
+## <a name="populatelist-flag"></a>PopulateList 旗標
+ 參數中的 [SccPopulateList](../extensibility/sccpopulatelist-function.md) 會使用此旗標 `fOptions` 。
 
-|旗標|值|描述|
+|旗標|值|說明|
 |----------|-----------|-----------------|
-|`SCC_PL_DIR`|0x00000001L|IDE 傳遞的是目錄,而不是檔。|
+|`SCC_PL_DIR`|0x00000001L|IDE 正在傳遞目錄，而不是檔案。|
 
-## <a name="populatedirlist-flags"></a>填充 DirList 標誌
- 這些標誌由`fOptions`參數中的[SccpopulateDirList](../extensibility/sccpopulatedirlist-function.md)使用。
+## <a name="populatedirlist-flags"></a>PopulateDirList 旗標
+ [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)會在參數中使用這些旗標 `fOptions` 。
 
-|選項值|值|描述|
+|選項值|值|說明|
 |------------------|-----------|-----------------|
-|SCC_PDL_ONELEVEL|0x0000|只檢查目錄的一個級別(這是預設值)。|
-|SCC_PDL_RECURSIVE|0x0001|遞歸地檢查每個給定目錄下的所有目錄。|
-|SCC_PDL_INCLUDEFILES|0x0002|在檢查過程中包括檔名。|
+|SCC_PDL_ONELEVEL|0x0000|只檢查目錄的一個目錄層級 (這是預設) 。|
+|SCC_PDL_RECURSIVE|0x0001|以遞迴方式檢查每個指定目錄下的所有目錄。|
+|SCC_PDL_INCLUDEFILES|0x0002|在檢查程式中包含檔案名。|
 
-## <a name="openproject-flags"></a>開啟項目旗標
- 這些標誌由`dwFlags`參數中的[SccOpenProject](../extensibility/sccopenproject-function.md)使用。
+## <a name="openproject-flags"></a>File.openproject 旗標
+ [SccOpenProject](../extensibility/sccopenproject-function.md)會在參數中使用這些旗標 `dwFlags` 。
 
-|選項值|值|描述|
+|選項值|值|說明|
 |------------------|-----------|-----------------|
-|SCC_OP_CREATEIFNEW|0x00000001L|如果源控制項中不存在專案,請創建它。 如果未設定此標誌,則提示使用者創建專案(除非`SCC_OP_SILENTOPEN`指定了標誌)。|
-|SCC_OP_SILENTOPEN|0x00000002L|不要提示使用者創建專案;因此,不提示使用者創建專案。只是傳`SCC_E_UNKNOWNPROJECT`回 。|
+|SCC_OP_CREATEIFNEW|0x00000001L|如果專案不存在於原始檔控制中，請加以建立。 如果未設定此旗標，則會提示使用者建立 (除非 `SCC_OP_SILENTOPEN`) 指定旗標。|
+|SCC_OP_SILENTOPEN|0x00000002L|不要提示使用者建立專案;只傳回 `SCC_E_UNKNOWNPROJECT` 。|
 
-## <a name="get-flags"></a>取得標誌
- 這些標誌由[SccGet](../extensibility/sccget-function.md)和[SccCheckout](../extensibility/scccheckout-function.md)使用。
+## <a name="get-flags"></a>取得旗標
+ [SccGet](../extensibility/sccget-function.md)和[SccCheckout](../extensibility/scccheckout-function.md)會使用這些旗標。
 
-|旗標|值|描述|
+|旗標|值|說明|
 |----------|-----------|-----------------|
-|`SCC_GET_ALL`|0x00000001L|IDE 傳遞目錄,而不是檔:獲取這些目錄中的所有檔。|
-|`SCC_GET_RECURSIVE`|0x00000002L|IDE 正在傳遞目錄:獲取這些目錄及其所有子目錄。|
+|`SCC_GET_ALL`|0x00000001L|IDE 會傳遞目錄，而不是檔案：取得這些目錄中的所有檔案。|
+|`SCC_GET_RECURSIVE`|0x00000002L|IDE 會傳遞目錄：取得這些目錄及其所有子目錄。|
 
 ## <a name="noption-values"></a>nOption 值
- 這些標誌由`nOption`參數中的[SccSetOption](../extensibility/sccsetoption-function.md)使用。
+ [SccSetOption](../extensibility/sccsetoption-function.md)會在參數中使用這些旗標 `nOption` 。
 
-|旗標|值|描述|
+|旗標|值|說明|
 |----------|-----------|-----------------|
-|`SCC_OPT_EVENTQUEUE`|0x00000001L|設置事件佇列的狀態。|
-|`SCC_OPT_USERDATA`|0x00000002L|為`SCC_OPT_NAMECHANGEPFN`指定用戶數據。|
-|`SCC_OPT_HASCANCELMODE`|0x0000003L|IDE 可以處理取消。|
-|`SCC_OPT_NAMECHANGEPFN`|0x00000004L|為名稱更改設置回調。|
-|`SCC_OPT_SCCCHECKOUTONLY`|0x0000005L|禁用原始碼管理外掛程式 UI 簽出,並且不設置工作目錄。|
-|`SCC_OPT_SHARESUBPROJ`|0x0000006L|從原始程式碼管理系統添加以指定工作目錄。 如果關聯專案是直接的後代,請嘗試共用到其中。|
+|`SCC_OPT_EVENTQUEUE`|0x00000001L|設定事件佇列的狀態。|
+|`SCC_OPT_USERDATA`|0x00000002L|指定的使用者資料 `SCC_OPT_NAMECHANGEPFN` 。|
+|`SCC_OPT_HASCANCELMODE`|0x00000003L|IDE 可以處理取消。|
+|`SCC_OPT_NAMECHANGEPFN`|0x00000004L|設定名稱變更的回呼。|
+|`SCC_OPT_SCCCHECKOUTONLY`|0x00000005L|停用原始檔控制外掛程式 UI 簽出，並不要設定工作目錄。|
+|`SCC_OPT_SHARESUBPROJ`|0x00000006L|從原始檔控制系統加入，以指定工作目錄。 如果是直接的子系，請嘗試共用到相關聯的專案。|
 
-## <a name="dwval-bitflags"></a>dwVal 位元
- 這些標誌由`dwVal`參數中的[SccSetOption](../extensibility/sccsetoption-function.md)使用。
+## <a name="dwval-bitflags"></a>dwVal 位旗標
+ [SccSetOption](../extensibility/sccsetoption-function.md)會在參數中使用這些旗標 `dwVal` 。
 
-|旗標|值|描述|依`nOption`數值使用|
+|旗標|值|說明|依 `nOption` 值使用|
 |----------|-----------|-----------------|-----------------------------|
-|`SCC_OPT_EQ_DISABLE`|0x00L|掛起事件佇列活動。|`SCC_OPT_EVENTQUEUE`|
-|`SCC_OPT_EQ_ENABLE`|0x01L|啟用事件佇列日誌記錄。|`SCC_OPT_EVENTQUEUE`|
-|`SCC_OPT_HCM_NO`|0L|( 預設 )沒有取消模式;如果需要,外掛程式必須提供。|`SCC_OPT_HASCANCELMODE`|
-|`SCC_OPT_HCM_YES`|1L|IDE 句柄取消。|`SCC_OPT_HASCANCELMODE`|
-|`SCC_OPT_SCO_NO`|0L|( 預設 )可以從外掛程式 UI 簽出;請從外掛程式 UI 中籤出。工作目錄已設置。|`SCC_OPT_SCCCHECKOUTONLY`|
-|`SCC_OPT_SCO_YES`|1L|沒有外掛程式 UI 簽出,沒有工作目錄。|`SCC_OPT_SCCCHECKOUTONLY`|
+|`SCC_OPT_EQ_DISABLE`|0x00L|暫停事件佇列活動。|`SCC_OPT_EVENTQUEUE`|
+|`SCC_OPT_EQ_ENABLE`|0x01L|啟用事件佇列記錄。|`SCC_OPT_EVENTQUEUE`|
+|`SCC_OPT_HCM_NO`|0L| (預設) 沒有取消模式;如有需要，外掛程式必須提供。|`SCC_OPT_HASCANCELMODE`|
+|`SCC_OPT_HCM_YES`|1L|IDE 會處理取消。|`SCC_OPT_HASCANCELMODE`|
+|`SCC_OPT_SCO_NO`|0L| (預設值) 確定從外掛程式 UI 簽出;工作目錄已設定。|`SCC_OPT_SCCCHECKOUTONLY`|
+|`SCC_OPT_SCO_YES`|1L|沒有任何外掛程式 UI 簽出，沒有工作目錄。|`SCC_OPT_SCCCHECKOUTONLY`|
 
 ## <a name="see-also"></a>另請參閱
-- [原始程式管理外掛程式](../extensibility/source-control-plug-ins.md)
+- [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)

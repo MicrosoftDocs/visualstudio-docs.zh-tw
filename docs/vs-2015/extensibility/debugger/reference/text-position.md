@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 210435231f98c19c16715817e2403f95da3d1f43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204828"
 ---
-# <a name="textposition"></a>TEXT_POSITION
+# <a name="text_position"></a>TEXT_POSITION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-描述在指定的文字行和資料行位置。  
+描述指定文字中的行和資料行位置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,15 +42,15 @@ public struct TEXT_POSITION { 
   
 ## <a name="members"></a>成員  
  dwLine  
- 原始程式檔中一行的索引。  
+ 原始程式檔中的行索引。  
   
  dwColumn  
- 符合的字元位移。  
+ 在行中的字元位移。  
   
 ## <a name="remarks"></a>備註  
- 此結構會在[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)並[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)結構。  
+ 此結構會在 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 和 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 結構中使用。  
   
- 會填入這個結構，藉由呼叫下列方法：  
+ 下列方法的呼叫會填入此結構：  
   
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)  
   
@@ -60,7 +60,7 @@ public struct TEXT_POSITION { 
   
 - [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)  
   
-  此結構會做為參數傳遞，下列方法：  
+  此結構會以參數形式傳遞至下列方法：  
   
 - [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)  
   
@@ -73,11 +73,11 @@ public struct TEXT_POSITION { 
 - [onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

@@ -1,5 +1,5 @@
 ---
-title: 圖元素 :微軟文件
+title: Bitmap 元素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2d663351aad7d381dd5bfe4cbaa0a263cc70b821
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740004"
 ---
-# <a name="bitmap-element"></a>點陣圖元素
-定義點陣圖。 點陣圖從資源或檔載入。
+# <a name="bitmap-element"></a>Bitmap 元素
+定義點陣圖。 點陣圖是從資源或檔案載入的。
 
 ## <a name="syntax"></a>語法
 
@@ -34,20 +34,20 @@ ms.locfileid: "80740004"
 
 |屬性|描述|
 |---------------|-----------------|
-|guid|必要。 GUID/ID 命令識別碼的 GUID。<br /><br /> 位圖的 guid 屬性不與任何 VSPackage 或其他命令組關聯。  它應該是位圖定義的唯一,不應用於任何其他目的。|
-|渣 油|GUID/ID 命令識別碼的識別碼。 需要 resID 或 href 屬性。<br /><br /> resID 屬性是一個整數資源 ID,用於確定在命令表合併期間要載入的點陣圖條帶。  載入指令表時,資源 ID 指定的點陣圖將從同一模組的資源載入。|
-|已使用清單|如果存在 resID 屬性,則為必填項。 選擇點陣圖列中的可用影像。|
-|href|位圖的路徑。 需要 resID 或 href 屬性。<br /><br /> 將搜索包含路徑以查找指示的圖像檔,該檔嵌入到生成的二進位檔案中。  在命令表合併期間,將複製映射,無需其他資源查找或載入。  如果使用的 List 屬性不存在,則條帶中的所有圖像都可用。 **註:** 影像可以以多種格式之一提供,包括 *.bmp、.png*和 *.png**.gif*。  早期版本的編譯器不支援具有 Alpha 資訊的 32 位元圖圖像,以便獲得部分透明度。 這些版本的解決方法是使用 *.png*格式。|
-|條件|選擇性。 請參考[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|guid|必要。 GUID/識別碼命令識別碼的 GUID。<br /><br /> 點陣圖的 guid 屬性與任何 VSPackage 或其他命令群組沒有關聯。  它應該是點陣圖定義的唯一的，而且不應該用於任何其他用途。|
+|渣 油|GUID/識別碼命令識別碼的識別碼。 必須是 resID 或 href 屬性。<br /><br /> ResID 屬性是一個整數資源識別碼，可決定要在命令表格合併期間載入的點陣圖區。  載入命令資料表時，將會從相同模組的資源載入資源識別碼所指定的點陣圖。|
+|usedList|如果 resID 屬性存在，則為必要項。 選取點陣圖條紋中的可用影像。|
+|href|點陣圖的路徑。 必須是 resID 或 href 屬性。<br /><br /> 會搜尋包含路徑中指出的影像檔案，並將其內嵌在產生的二進位檔中。  在命令表格合併期間，會複製影像，而不需要額外的資源查閱或載入。  如果 usedList 屬性不存在，則會提供帶狀中的所有影像。 **注意：**  影像可能會以數種格式提供，包括 *.bmp*、 *.png*和 *.gif*。  舊版編譯器不支援具有部分透明度之 Alpha 資訊的32位點陣圖影像。 這些版本的因應措施是使用 *.png* 格式。|
+|條件|選擇性。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
  無。
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[點陣圖元素](../extensibility/bitmaps-element.md)|對位圖元素。|
+|[點陣圖元素](../extensibility/bitmaps-element.md)|群組點陣圖元素。|
 
 ## <a name="example"></a>範例
 
@@ -58,4 +58,4 @@ ms.locfileid: "80740004"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室指令表 (.vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio 命令表格 (. .vsct) 檔](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

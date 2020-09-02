@@ -11,37 +11,37 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98247b894d2db628d508713875ba0ea7d0642729
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204738"
 ---
 # <a name="sending-events"></a>傳送事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-偵錯工具與偵錯引擎 (DE) 之間的通訊機制是 DCOM 所根據的事件模型。 事件會傳送為 COM 物件，以及每個事件都指定下列參數：  
+偵錯工具與 debug engine (DE) 之間的通訊機制是以 DCOM 為基礎的事件模型。 事件會以 COM 物件的形式傳送，且每個事件都有參數，可指定下列各項：  
   
-- 呼叫事件 DE。  
+- 呼叫事件的 DE。  
   
-- 描述發生什麼事。  
+- 發生狀況的描述。  
   
-- 處理程序、 方案，以及識別發生事件的內容的執行緒資訊。 此程序不會傳送規定所傳來的事件。  
+- 處理常式、程式和執行緒資訊，識別發生事件的位置。 不會傳送從 DE 傳送的事件的進程。  
   
-- 事件類型，指出事件是否為同步或非同步。  
+- 表示事件為同步或非同步事件種類。  
   
-  使用方法傳送所有的偵錯事件[IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md)。  
+  所有的 debug 事件都是使用方法 [IDebugEventCallback2：： Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md)來傳送。  
   
 ## <a name="in-this-section"></a>本節內容  
  [事件來源](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  
- 說明兩個來源的事件： 偵錯引擎 (DE) 和工作階段進行偵錯管理員 (SDM)。  
+ 說明兩個事件來源： debug engine (DE) ，以及會話 debug manager (SDM) 。  
   
  [支援的事件類型](../../extensibility/debugger/supported-event-types.md)  
- 討論目前支援的事件類型： 非同步和同步。  
+ 討論目前支援的事件種類：非同步和同步。  
   
  [事件描述](../../extensibility/debugger/event-descriptions.md)  
- 定義事件和其使用的原因。  
+ 定義事件及其使用的原因。  
   
 ## <a name="related-sections"></a>相關章節  
  [建立自訂的偵錯引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
- 說明 DE 解譯器或作業系統，提供偵錯服務的運作方式。
+ 描述 DE 如何搭配解譯器或作業系統來提供偵錯工具。

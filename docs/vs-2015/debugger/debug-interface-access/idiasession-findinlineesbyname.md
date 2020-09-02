@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6c2b540303c3f31f7f6088f2ab9721b1237efbac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151681"
 ---
 # <a name="idiasessionfindinlineesbyname"></a>IDiaSession::findInlineesByName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取列舉型別，可讓用戶端來逐一查看所有符合指定之名稱的內嵌函式行號資訊。  
+抓取列舉，可讓用戶端逐一查看所有符合指定名稱的內嵌函式的行號資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,16 +35,16 @@ HRESULT findInlineesByName ( 
   
 #### <a name="parameters"></a>參數  
  `name`  
- [in]指定要用於比較的名稱。  
+ 在指定要用於比較的名稱。  
   
  `option`  
- [in]指定套用至搜尋名稱的比較選項。 從數值[NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)單獨或合併，就可以使用列舉型別。  
+ 在指定套用至名稱搜尋的比較選項。 [NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)列舉中的值可以單獨使用或合併使用。  
   
  `ppResult`  
- [out]傳回[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)物件，其中包含一份已擷取的行號。  
+ 擴展傳回 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) 物件，其中包含已取出行號的清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

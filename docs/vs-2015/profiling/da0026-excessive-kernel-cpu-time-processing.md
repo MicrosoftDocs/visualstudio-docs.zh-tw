@@ -1,5 +1,5 @@
 ---
-title: DA0026：過多的核心 CPU 時間處理 | Microsoft Docs
+title: DA0026：過多核心 CPU 時間處理 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fef0a3c42be1057bd1217ec676ae43b220d80345
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152664"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026：過多的核心 CPU 時間處理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-規則 Id |TODO |  
-|類別目錄 |分析工具使用方式 |  
-|程式碼剖析方法 |取樣 |  
-|訊息 |測量相對大量的核心模式 CPU 時間。 請考慮啟用 SysCall 取樣來調查來源。|  
+規則識別碼 |TODO |  
+|類別 |分析工具使用量 |  
+|分析方法 |取樣 |  
+|訊息 |測量的核心模式 CPU 時間相當大量。 請考慮啟用 SysCall 取樣來調查來源。|  
 |規則類型 |資訊 |  
   
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  
@@ -38,4 +38,4 @@ ms.locfileid: "68152664"
  應用程式花在核心模式執行很高比例的時間可能需要進一步調查。 使用者模式應用程式會轉換成核心模式以執行 I/O 作業、等候執行緒或處理同步原始物件，或執行系統呼叫。 當您根據系統呼叫選取要收集樣本呼叫堆疊的選項時，可以調查應用程式呼叫的系統呼叫種類，以及負責呼叫這些系統呼叫的函式。  
   
 ## <a name="how-to-fix-violations"></a>如何修正違規  
- 若要調查應用程式呼叫的系統呼叫種類，請再次執行分析並根據系統呼叫選取要收集樣本的選項。 請參閱[How to:選擇取樣事件](../profiling/how-to-choose-sampling-events.md) (如果您在 IDE 內執行分析工具以了解詳細資訊的話)。 如果您要從命令列執行分析工具，請參閱分析工具命令列工具參考中 [VSPerfCmd](../profiling/vsperfcmd.md) 主題中的＜取樣間隔選項＞  一節。
+ 若要調查應用程式呼叫的系統呼叫種類，請再次執行分析並根據系統呼叫選取要收集樣本的選項。 如果您在 IDE 內執行分析工具，請參閱[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)了解詳細資訊。 如果您要從命令列執行分析工具，請參閱分析工具命令列工具參考中 [VSPerfCmd](../profiling/vsperfcmd.md) 主題中的＜取樣間隔選項＞**** 一節。

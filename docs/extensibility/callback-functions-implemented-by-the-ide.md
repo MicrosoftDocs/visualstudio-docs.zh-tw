@@ -1,5 +1,5 @@
 ---
-title: IDE 實現的回調功能 |微軟文件
+title: IDE 所執行的回呼函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,37 +12,37 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 666486f5b800707a4467a129abeed7a13306f10a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739901"
 ---
-# <a name="callback-functions-implemented-by-the-ide"></a>IDE 實作的回檔
-為了使與整合式開發環境 (IDE) 的整合盡可能無縫,並提供統一的最終使用者體驗,原始程式碼管理外掛程式可以使用 IDE 實現的回調功能。 外掛程式可以在原始程式碼管理操作期間的適當時間調用這些函數,以將資訊傳遞給 IDE;然後,IDE 可以將其本地 UI 中的嵌入元素顯示此資訊。 與外掛程式使用其自己的 UI 相比,使用者在此方案中具有較少碎片化的體驗。
+# <a name="callback-functions-implemented-by-the-ide"></a>IDE 所執行的回呼函數
+為了與整合式開發環境整合 (IDE) 盡可能順暢地進行整合，並提供統一的終端使用者體驗，原始檔控制外掛程式可以使用 IDE 所執行的回呼函數。 外掛程式可以在原始檔控制作業期間，于適當的時間呼叫這些函式，以將資訊傳遞至 IDE;然後，IDE 可以將此資訊顯示為其原生 UI 中的內嵌元素。 在此案例中，使用者在此案例中的使用方式不會比外掛程式採用自己的 UI 更少。
 
- 需要的標頭檔是*scc.h*。 預設位置是 *[程式檔案]VSIP 8.0\EnvSDK_common_inc\\*。 它還在 VSIP 資料夾中,該資料夾在 *[程式檔]VSIP\\8.0_MSSCCI*處具有原始程式碼管理外掛程式示例。
+ 必要的標頭檔是 *scc. h*。 預設位置為*\Program Files\VSIP 8.0 \ EnvSDK\common\inc \\ *。 它也在具有原始檔控制外掛程式範例的 VSIP 資料夾中，位於*\Program Files\VSIP 8.0 \ MSSCCI \\ *。
 
 ## <a name="in-this-section"></a>本節內容
-- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)描述[SccOpenProject](../extensibility/sccopenproject-function.md)用於透過 IDE 顯示來自原始碼管理外掛程式的消息的回調功能。
+- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) 描述 [SccOpenProject](../extensibility/sccopenproject-function.md) 使用的回呼函式，以透過 IDE 顯示來自原始檔控制外掛程式的訊息。
 
-- [POPLISTFUNC](../extensibility/poplistfunc.md)描述[SccPopulateList](../extensibility/sccpopulatelist-function.md)在 IDE 無法完全存取僅對原始程式碼管理外掛程式可用的資訊(如版本控制下的檔案的完整清單)時使用的回調功能。
+- [POPLISTFUNC](../extensibility/poplistfunc.md) 描述當 IDE 無法完整存取原始檔控制外掛程式（例如版本控制下的檔案）的完整存取權時， [SccPopulateList](../extensibility/sccpopulatelist-function.md) 所使用的回呼函式。
 
-- [查詢變更](../extensibility/querychangesfunc.md)描述[SccQuery 更改](../extensibility/sccquerychanges-function.md)操作使用的回調功能。
+- [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) 描述 [SccQueryChanges](../extensibility/sccquerychanges-function.md) 作業所使用的回呼函數。
 
-- [波普迪利斯芬奇](../extensibility/popdirlistfunc.md)描述[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)操作使用的回調函數。
+- [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) 描述 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 作業所使用的回呼函數。
 
-- [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)描述對[SccSetOption](../extensibility/sccsetoption-function.md)的呼叫設定的回調功能,該調用使原始程式碼管理外掛程式能夠將名稱更改傳回 IDE。
+- [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) 描述呼叫 [SccSetOption](../extensibility/sccsetoption-function.md) 所設定的回呼函式，此函式可讓原始檔控制外掛程式將名稱變更傳遞回 IDE。
 
 ## <a name="related-sections"></a>相關章節
-- [SccOpen專案](../extensibility/sccopenproject-function.md)打開專案。
+- [SccOpenProject](../extensibility/sccopenproject-function.md) 開啟專案。
 
-- [Scc填充清單](../extensibility/sccpopulatelist-function.md)檢查檔案清單的目前狀態。 此外,當檔與`pfnPopulate`的條件`nCommand`不匹配時,使用函數通知調用方。
+- [SccPopulateList](../extensibility/sccpopulatelist-function.md) 檢查檔案清單中的目前狀態。 此外，當檔案不 `pfnPopulate` 符合的準則時，也會使用函式來通知呼叫端 `nCommand` 。
 
-- [SccpopulateDirlist](../extensibility/sccpopulatedirlist-function.md)檢查受原始碼管理的項目或專案中的目錄和檔案的清單。 找到的每個目錄和檔名都傳遞給回調函數。
+- [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 檢查位於原始檔控制下的專案或專案中的目錄和檔案清單。 每個找到的目錄和檔案名都會傳遞至回呼函式。
 
-- [SccQuery 變更](../extensibility/sccquerychanges-function.md)檢查對檔案清單所做的名稱更改。 每個檔名都傳遞給回調函數及其更改狀態。
+- [SccQueryChanges](../extensibility/sccquerychanges-function.md) 檢查檔案清單所做的名稱變更。 每個檔案名都會連同其變更狀態一起傳遞給回呼函式。
 
-- [SccSetOption](../extensibility/sccsetoption-function.md)設置各種選項。 每個選項都從`SCC_OPT_xxx`並有自己的定義值集開始。
+- [SccSetOption](../extensibility/sccsetoption-function.md) 設定各種不同的選項。 每個選項的開頭都 `SCC_OPT_xxx` 是，而且有自己的定義值集合。
 
-- [原始程式管理外掛程式](../extensibility/source-control-plug-ins.md)描述原始程式碼管理外掛程式 SDK 的參考部分的內容。
+- [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md) 描述原始檔控制外掛程式 SDK 參考區段的內容。

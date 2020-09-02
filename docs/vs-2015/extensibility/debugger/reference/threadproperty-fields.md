@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTY_FIELDS | Microsoft Docs
+title: THREADPROPERTY_FIELDS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc0e0f7cae4aed887809c22bda0cd6a9ed50307f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204807"
 ---
-# <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
+# <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定要擷取執行緒的相關資訊。  
+指定要抓取之執行緒的相關資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -53,41 +53,41 @@ public enum enum_THREADPROPERTY_FIELDS { 
   
 ## <a name="members"></a>成員  
  TPF_ID  
- 初始化/使用`dwThreadId`欄位[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構。  
+ 初始化/使用 `dwThreadId` [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 結構的欄位。  
   
  TPF_SUSPENDCOUNT  
- 初始化/使用`dwSuspendCount`欄位`THREADPROPERTIE`S 結構。  
+ 初始化/使用 `dwSuspendCount` S 結構的欄位 `THREADPROPERTIE` 。  
   
  TPF_STATE  
- 初始化/使用`dwThreadState`欄位`THREADPROPERTIE`S 結構。  
+ 初始化/使用 `dwThreadState` S 結構的欄位 `THREADPROPERTIE` 。  
   
  TPF_PRIORITY  
- 初始化/使用`bstrPriority`欄位`THREADPROPERTIE`S 結構。  
+ 初始化/使用 `bstrPriority` S 結構的欄位 `THREADPROPERTIE` 。  
   
  TPF_NAME  
- 初始化/使用`bstrName`欄位`THREADPROPERTIE`S 結構。  
+ 初始化/使用 `bstrName` S 結構的欄位 `THREADPROPERTIE` 。  
   
  TPF_LOCATION  
- 初始化/使用`bstrLocation`欄位`THREADPROPERTIE`S 結構。  
+ 初始化/使用 `bstrLocation` S 結構的欄位 `THREADPROPERTIE` 。  
   
  TPF_ALLFIELDS  
  指定所有欄位。  
   
 ## <a name="remarks"></a>備註  
- 這些值會傳遞做為引數[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)方法，以表示哪些欄位[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構會進行初始化。  
+ 這些值會以引數的形式傳遞至 [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) 方法，以指出要初始化 [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 結構的哪些欄位。  
   
- 這些值也會在`dwFields`隸屬`THREADPROPERTIES`表示哪些欄位已使用且有效的結構。  
+ 這些值也會用在 `dwFields` 結構的成員中， `THREADPROPERTIES` 以指出哪些欄位已使用且有效。  
   
- 這些旗標可能會結合的位元`OR`。  
+ 這些旗標可以與位結合 `OR` 。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)   
  [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)

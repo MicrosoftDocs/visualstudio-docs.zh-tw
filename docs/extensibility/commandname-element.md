@@ -1,5 +1,5 @@
 ---
-title: 指令名稱元素 |微軟文件
+title: CommandName 元素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8152942d015e21b1b80f735fd921a5ddde3674d5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739758"
 ---
-# <a name="commandname-element"></a>指令名稱元素
-這個`CommandName`元素指定**選項**「對話框中的鍵盤類別中以及 **」自訂「** 對話框中的 **」命令清單**中顯示的文字。
+# <a name="commandname-element"></a>CommandName 元素
+專案 `CommandName` 會在 [選項] 對話方塊的 [**選項**] 對話方塊中，以及在 [**自訂**] 對話方塊的**命令**清單中，指定出現在鍵盤類別中的文字。
 
 ## <a name="syntax"></a>語法
 
@@ -38,9 +38,9 @@ ms.locfileid: "80739758"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[字串元素](../extensibility/strings-element.md)|文字元素(如`ButtonText`與`CommandName`)|
+|[Strings 元素](../extensibility/strings-element.md)|將文字元素分組，例如 `ButtonText` 和 `CommandName` 。|
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室指令表 (.vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio 命令表格 (. .vsct) 檔](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

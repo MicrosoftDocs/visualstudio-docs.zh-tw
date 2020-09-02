@@ -1,5 +1,5 @@
 ---
-title: 指令元素 |微軟文件
+title: 命令元素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3ea2400cca19a02475caecec3d022e0b78794ae4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739681"
 ---
 # <a name="commands-element"></a>Commands 項目
-表示 VSPackage 工具列上的命令集合。 集合最多可以有五個子節,如下所示:功能表、組、按鈕、組合和位圖。
+代表 VSPackage 工具列上的命令集合。 集合最多可有五個子區段，如下所示：功能表、群組、按鈕、combos 和點陣圖。
 
- 每個子節子元素(例如,\<選單>)都由一個唯一的命令 ID 標識,該 ID 是 GUID 和數位識別碼對。 GUID 識別"命令集",用於對邏輯相關命令進行分組。 VSPackage 應定義自己的命令集,以避免與其他 VSPackage 定義的命令指示號發生衝突。
+ 例如，每個子項目 \<Menu> 都是由 GUID 和數位識別碼組的唯一命令識別碼所識別。 GUID 會識別「命令集」，用來將邏輯上相關的命令分組。 VSPackage 應該定義自己的命令集，以避免與其他 Vspackage 所定義的命令識別碼發生衝突。
 
 ## <a name="syntax"></a>語法
 
@@ -44,26 +44,26 @@ ms.locfileid: "80739681"
 
 |屬性|描述|
 |---------------|-----------------|
-|套件|標識提供命令的 VSPackage 的 GUID。<br /><br /> 例如,包="guidV 包1Pkg"。|
+|套件|GUID，可識別提供命令的 VSPackage。<br /><br /> 例如，package = "guidVsPackage1Pkg"。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[選單元素](../extensibility/menus-element.md)|定義 VSPackage 實現的所有功能表。|
-|[群組項目](../extensibility/groups-element.md)|包含在 VSPackage 中定義命令組的項目。|
-|[按鈕項目](../extensibility/buttons-element.md)|對按鈕元素進行分組。|
-|[點陣圖元素](../extensibility/bitmaps-element.md)|對位圖元素。|
-|[組合項目](../extensibility/combos-element.md)|對組合元素進行分組。|
+|[Menu 元素](../extensibility/menus-element.md)|定義 VSPackage 所實行的所有功能表。|
+|[Groups 元素](../extensibility/groups-element.md)|包含在 VSPackage 中定義命令群組的專案。|
+|[按鈕元素](../extensibility/buttons-element.md)|群組按鈕元素。|
+|[點陣圖元素](../extensibility/bitmaps-element.md)|群組點陣圖元素。|
+|[Combos 元素](../extensibility/combos-element.md)|群組組合元素。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[指令表元素](../extensibility/commandtable-element.md)|定義表示 VS 包向 IDE 提供的命令的所有元素。 可能的元素是功能表項、功能表、工具列和組合框。|
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表 VSPackage 提供給 IDE 之命令的所有元素。 可能的元素是功能表項目、功能表、工具列和下拉式方塊。|
 
 ## <a name="example"></a>範例
- 下面的範例展示如何使用[指令元素](../extensibility/commands-element.md)。
+ 下列範例示範如何使用 [命令元素](../extensibility/commands-element.md)。
 
 ```
 <Commands package="guidMyPackage">
@@ -89,5 +89,5 @@ ms.locfileid: "80739681"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [VS 套件如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [命令、選單和工具列](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Vspackage 如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)

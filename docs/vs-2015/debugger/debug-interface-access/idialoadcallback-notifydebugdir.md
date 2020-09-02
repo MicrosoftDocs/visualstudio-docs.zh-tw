@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2e8fe8ffe9d7d495e40c8c84b08aeaefb03e8d17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152004"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-當偵錯已找到的目錄中的.exe 檔案時呼叫。  
+當在 .exe 檔中找到 debug 目錄時呼叫。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,23 +37,23 @@ HRESULT NotifyDebugDir ( 
   
 #### <a name="parameters"></a>參數  
  `fExecutable`  
- [in]`TRUE`如果偵錯目錄唯讀的可執行檔 （而非.dbg 檔案）。  
+ [in] `TRUE` 如果從可執行檔讀取 debug 目錄（而不是) dbg 檔案） (。  
   
  `cbData`  
- [in]偵錯目錄中的資料位元組數目。  
+ 在Debug 目錄中的資料位元組計數。  
   
  `data[]`  
- [in]陣列，其中會填入偵錯目錄。  
+ 在使用 debug 目錄填入的陣列。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回碼通常會被忽略。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 通常會忽略傳回碼。  
   
 ## <a name="remarks"></a>備註  
- [Idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法在處理的可執行檔時發現偵錯目錄時，會叫用這個回呼。  
+ [IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法會在處理可執行檔時，在找到 debug 目錄時叫用此回呼。  
   
- 這個方法會移除用戶端進行反向工程的可執行檔和/或偵錯的檔案需要支援以外的.pdb 檔案中找到的偵錯資訊。 使用此資料，用戶端，可以識別可用的偵錯資訊的類型，以及是否位於可執行檔或.dbg 檔案。  
+ 此方法可讓用戶端不需要對可執行檔和/或 debug 檔案進行反向工程，以支援在 .pdb 檔案中找到的 debug 資訊。 使用這項資料，用戶端可以辨識可用的偵錯工具資訊類型，以及它是否位於可執行檔或 dbg 檔案中。  
   
- 大部分的用戶端將不需要此回撥，因為`IDiaDataSource::loadDataForExe`方法明確地開啟.pdb 和.dbg 檔案時需要符號。  
+ 大部分的用戶端都不需要此回呼 `IDiaDataSource::loadDataForExe` ，因為在提供符號的必要時，方法會以透明方式開啟 .pdb 和 dbg 檔。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)   

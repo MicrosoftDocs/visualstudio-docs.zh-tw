@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 40031567b5339803ccfa7f4a5b3db4f006c6c134
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193217"
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan 函式
@@ -106,7 +106,7 @@ HRESULT CvEnterSpanExVA(
   
 #### <a name="parameters"></a>參數  
  `argList`  
- 列出引數。  
+ 引數的清單。  
   
  `category`  
  範圍的分類  
@@ -115,10 +115,10 @@ HRESULT CvEnterSpanExVA(
  範圍的重要性層級。  
   
  `pMarkerSeries`  
- 有效的標記序列內容。 不可以是 NULL。  
+ 有效的標記系列內容。 不能是 NULL。  
   
  `pMessage`  
- 訊息格式字串。 不可以是 NULL。  
+ 訊息格式字串。 不能是 NULL。  
   
  `ppSpan`  
  將保留產生之範圍物件的變數位址。 位址不能是 NULL，變數可以是任何值。  
@@ -134,4 +134,4 @@ HRESULT CvEnterSpanExVA(
  **ANSI：** CvEnterSpanA、CvEnterSpanVA、CvEnterSpanExA、CvEnterSpanExVW  
   
 ## <a name="see-also"></a>另請參閱  
- [C++ 程式庫參考](../profiling/cpp-library-reference.md)
+ [C + + 程式庫參考](../profiling/cpp-library-reference.md)

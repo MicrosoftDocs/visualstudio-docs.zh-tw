@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 47883395ec12cac60d3a21651432f5ac21cc64a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151758"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-傳回對應到指定的內嵌函式名稱的內嵌框架的符號的列舉。  
+傳回對應至指定內嵌函式名稱之內嵌框架的符號列舉。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,19 +35,19 @@ HRESULT findAcceleratorInlineeLinesByName ( 
   
 #### <a name="parameters"></a>參數  
  `name`  
- [in]要搜尋的內嵌項函式名稱。  
+ 在要搜尋的內嵌項函數名稱。  
   
  `option`  
- [in]搜尋內嵌框架時所要使用的名稱搜尋選項對應至`name`。 如需詳細資訊，請參閱 < [NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)。  
+ 在搜尋對應至的內嵌框架時，所要使用的名稱搜尋選項 `name` 。 如需詳細資訊，請參閱 [NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)。  
   
  `ppResult`  
- [out]指標`IDiaEnumSymbols`初始化與結果的介面指標。  
+ 擴展以 `IDiaEnumSymbols` 結果初始化之介面指標的指標。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 此函式會搜尋只在加速器 stub 函式內的內嵌項屬性。 它會忽略原生C++程序的記錄。  
+ 此函數只會在加速器存根函式內搜尋 inlinees。 它會忽略原生 c + + 程式記錄。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
