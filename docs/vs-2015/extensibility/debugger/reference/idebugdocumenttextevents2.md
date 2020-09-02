@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2 | Microsoft Docs
+title: IDebugDocumentTextEvents2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b574ae45dafed11ed28047859676524054951512
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65678961"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此介面用來偵錯引擎所提供的來源文件變更的相關通知 Visual Studio。  
+這個介面是用來通知 Visual Studio 有關由 debug 引擎提供之來源文件的變更。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,33 +30,33 @@ ms.locfileid: "65678961"
 IDebugDocumentTextEvents2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- DE 會實作這個介面，以支援的原始程式碼進行變更。 通常會實作這個介面上相同的物件會實作[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)介面。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ DE 會執行這個介面，以支援對原始程式碼進行變更。 這個介面通常會在執行 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 介面的相同物件上執行。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 取得這個介面，透過呼叫<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A>方法。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>介面取自呼叫<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A>方法。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>介面由呼叫[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)方法[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)介面。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 透過呼叫方法來取得這個介面 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> 。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>介面是從呼叫方法所取得 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> 。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>介面是藉由在[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)介面上呼叫[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)方法來取得。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDebugDocumentTextEvents2`。  
+ 下表顯示的方法 `IDebugDocumentTextEvents2` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[onDestroy](../../../extensibility/debugger/reference/idebugdocumenttextevents2-ondestroy.md)|表示已終結整份文件。|  
-|[onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)|已插入文件插入文字會告知偵錯封裝。|  
-|[onRemoveText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onremovetext.md)|告知偵錯封裝文字具有從文件中移除。|  
-|[onReplaceText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onreplacetext.md)|文件中，已被取代的文字會告知偵錯封裝。|  
-|[onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)|文件中，已更新文字屬性會告知偵錯封裝。|  
-|[onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)|通知事件的接收者，已更新的文件屬性。|  
+|[onDestroy](../../../extensibility/debugger/reference/idebugdocumenttextevents2-ondestroy.md)|表示整份檔已損毀。|  
+|[onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)|通知偵錯工具封裝文字已插入檔中。|  
+|[onRemoveText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onremovetext.md)|通知偵錯工具封裝文字已從檔中移除。|  
+|[onReplaceText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onreplacetext.md)|通知偵錯工具封裝檔中的文字已被取代。|  
+|[onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)|通知偵錯工具封裝檔中的 text 屬性已更新。|  
+|[onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)|通知接收者已更新檔案屬性的事件。|  
   
 ## <a name="remarks"></a>備註  
- 僅提供自己的文件的偵錯引擎會利用`IDebugDocumentTextEvent2`介面。 這個範例是指令碼的偵錯引擎。 解譯指令碼的過程中新的原始程式碼可能會產生不存在的任何磁碟檔中，只有知道 DE。  
+ 只有提供專屬檔的偵錯工具引擎會利用 `IDebugDocumentTextEvent2` 介面。 其中一個範例就是腳本處理的偵錯工具引擎。 在解讀腳本的過程中，可能會產生不存在於任何磁片檔案中的新原始程式碼，而且只有 DE 才知道。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   

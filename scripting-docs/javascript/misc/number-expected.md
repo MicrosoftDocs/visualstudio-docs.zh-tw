@@ -15,18 +15,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b8148e18fba3fca24cc6615f4f345c4883306ca3
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816432"
 ---
 # <a name="number-expected"></a>必須是數字
-您嘗試在類型的物件上叫用**valueOf** **方法，但**不是**數位**的值。 這種調用類型的物件必須是**Number**類型。  
+您嘗試在其他類型的物件上叫用**valueOf** **方法，但**不是**數位**的物件。 這種調用類型的物件必須是 **數位**類型。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 只會在**number**類型的物件上叫用**valueOf** **方法。**  
+- 只叫用類型為**number**之物件上的**valueOf** **方法。**  
   
 ## <a name="see-also"></a>另請參閱  
  [Number 物件](../../javascript/reference/number-object-javascript.md)   

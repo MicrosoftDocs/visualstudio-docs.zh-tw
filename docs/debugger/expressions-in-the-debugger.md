@@ -1,5 +1,5 @@
 ---
-title: 調試器中的運算式 |微軟文檔
+title: 偵錯工具中的運算式 |Microsoft Docs
 ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
@@ -20,16 +20,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ab66f288ad8442b6f2b5aab3499e2c1f3857632
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302165"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89311452"
 ---
-# <a name="expressions-in-the-visual-studio-debugger"></a>視覺化工作室調試器中的運算式
+# <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中的運算式
 當您在 [ **快速監看式** ] 對話方塊、[ **監看式** ] 視窗或 [ **即時運算** ] 視窗中輸入運算式時，都能使用 Visual Studio 偵錯工具所包含的運算式評估工具。 在 [ **中斷點** ] 視窗和偵錯工具中的其他許多地方，也都可以使用運算式評估工具。
 
-以下各節介紹 Visual Studio 支援的語言的運算式評估限制。
+下列各節描述 Visual Studio 所支援語言的運算式評估限制。
 
 ## <a name="f-expressions-are-not-supported"></a>不支援 F# 運算式
 無法辨識 F# 運算式。 如果您正在偵錯 F# 程式碼，您要先將運算式轉譯成 C# 語法，才能在偵錯工具視窗或對話方塊方塊中輸入運算式。 當您將運算式從 F# 轉譯為 C# 時，務必記得 C# 使用 `==` 運算子來測試是否相等，而 F# 使用單一 `=`。
@@ -99,12 +99,12 @@ int main()
 
 |區域|內建函式|
 |----------|-------------------------|
-|**字串長度**|[斯特倫， wcslen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)，[斯特倫， wcsnlen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
-|**字串比較**|[斯特康普， wcscmp，](https://docs.microsoft.com/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp) [stricmp， wcsicmp，](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp) [_stricmp， _strcmpi， _wcsicmp， _wcscmpi，](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l)[斯特蘭普， wcsncmp，](https://docs.microsoft.com/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l)[斯特尼普， wcsnicmp，](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp) [_strnicmp， _wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
-|**字串搜尋**|[斯特赫， wcschr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l)， [memchr， wmemchr，](https://docs.microsoft.com/cpp/c-runtime-library/reference/memchr-wmemchr)[斯特斯特， wcsstr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
-|**Win32**|[副解碼代理](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy)，[解碼指標](https://docs.microsoft.com/previous-versions/bb432242%28v%3dvs.85%29)，[獲取錯誤](https://docs.microsoft.com/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)， [TlsGetValue](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
-|**視窗 8**|[RoInspect 捕獲的堆疊回溯](https://docs.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace)， [Windows 比較弦樂 ，](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal) [WindowsGetStringLen](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringlen)， [WindowsGetStringrawBuffer](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> 這些函式要求要進行偵錯的處理序必須在 Windows 8 上執行。 對從 Windows 8 裝置產生的傾印檔案進行偵錯也要求 Visual Studio 電腦必須執行 Windows 8。 不過，如果您是對 Windows 8 裝置進行遠端偵錯，則 Visual Studio 電腦可以執行 Windows 7。|
-|**其他**|__log2 // 返回指定整數的日誌基礎 2，四捨五入到最接近的下整數。<br /><br />__findNonNull、解碼HString、解碼溫特限制異常、動態廣播、動態成員查找、GetEnvBlock 長度<br /><br />Stdext_HashMap_Int_OperatorBracket_idx，Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx // 併發：：陣列<>：：運算子[索引<>]和運算子（索引<>）<br /><br />ConcurrencyArray_OperatorBracket_int // 併發：陣列<>：運算子（int，int，...）<br /><br />ConcurrencyArray_OperatorBracket_tidx // 併發：：陣列<>：：運算子[tiled_index<>]和運算子（tiled_index<>）<br /><br />ConcurrencyArrayView_OperatorBracket_idx // 併發：array_view<>：：運算子[索引<>]和運算子（索引<>）<br /><br />ConcurrencyArrayView_OperatorBracket_int // 併發：array_view<>：運算子（int，int，...）<br /><br />ConcurrencyArrayView_OperatorBracket_tidx // 併發：：array_view<>：：操作員[tiled_index<>]和操作員（tiled_index<>）<br /><br />TreeTraverse_Init // 初始化新樹遍歷<br /><br />TreeTraverse_Next // 返回樹中的節點<br /><br />TreeTraverse_Skip // 跳過掛起樹遍歷中的節點"|
+|**字串長度**|[strlen、wcslen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)、 [strnlen、wcsnlen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
+|**字串比較**|[strcmp、wcscmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp)、 [stricmp、wcsicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp)、 [_stricmp、_strcmpi、_wcsicmp、_wcscmpi](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l)、 [strncmp、wcsncmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l)、 [strnicmp、wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp)、 [_strnicmp、_wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
+|**字串搜尋**|[strchr、wcschr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l)、 [memchr、wmemchr](https://docs.microsoft.com/cpp/c-runtime-library/reference/memchr-wmemchr)、 [strstr、wcsstr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
+|**Win32**|[CoDecodeProxy](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy)、 [DecodePointer](https://docs.microsoft.com/previous-versions/bb432242%28v%3dvs.85%29)、 [GetLastError](https://docs.microsoft.com/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)、 [TlsGetValue](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
+|**Windows 8**|[RoInspectCapturedStackBackTrace](https://docs.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace)、 [WindowsCompareStringOrdinal](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal)、 [WindowsGetStringLen](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringlen)、 [WindowsGetStringRawBuffer](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> 這些函式要求要進行偵錯的處理序必須在 Windows 8 上執行。 對從 Windows 8 裝置產生的傾印檔案進行偵錯也要求 Visual Studio 電腦必須執行 Windows 8。 不過，如果您是對 Windows 8 裝置進行遠端偵錯，則 Visual Studio 電腦可以執行 Windows 7。|
+|**其他**|__log2//傳回指定整數的對數底數2，四捨五入為最接近的整數。<br /><br />__findNonNull、DecodeHString、DecodeWinRTRestrictedException、DynamicCast、DynamicMemberLookup、GetEnvBlockLength<br /><br />Stdext_HashMap_Int_OperatorBracket_idx，Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx//Concurrency：： array<>：： operator [index<>] and operator (index<>) <br /><br />ConcurrencyArray_OperatorBracket_int//Concurrency：： array<>：： operator (int，int，... ) <br /><br />ConcurrencyArray_OperatorBracket_tidx//Concurrency：： array<>：： operator [tiled_index<>] 和運算子 (tiled_index<>) <br /><br />ConcurrencyArrayView_OperatorBracket_idx//Concurrency：： array_view<>：： operator [index<>] 和運算子 (index<>) <br /><br />ConcurrencyArrayView_OperatorBracket_int//Concurrency：： array_view<>：： operator (int，int，... ) <br /><br />ConcurrencyArrayView_OperatorBracket_tidx//Concurrency：： array_view<>：： operator [tiled_index<>] 和運算子 (tiled_index<>) <br /><br />TreeTraverse_Init//初始化新的樹狀結構遍歷<br /><br />TreeTraverse_Next//傳回樹狀結構中的節點<br /><br />TreeTraverse_Skip//略過暫止的樹狀結構中的節點|
 
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - 不支援的運算式
 
@@ -121,7 +121,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>c# - 不支援的運算式
 
 ### <a name="dynamic-objects"></a>動態物件
-您可以在偵錯工具運算式中使用靜態設定類型為動態的變數。 在"監視"<xref:System.Dynamic.IDynamicMetaObjectProvider>視窗中計算實現的物件時，將添加動態視圖節點。 [動態檢視] 節點會顯示物件成員，但不允許編輯成員的值。
+您可以在偵錯工具運算式中使用靜態設定類型為動態的變數。 當執行的物件 <xref:System.Dynamic.IDynamicMetaObjectProvider> 在監看式視窗中進行評估時，就會加入動態視圖節點。 [動態檢視] 節點會顯示物件成員，但不允許編輯成員的值。
 
 以下是不支援的動態物件功能：
 
@@ -205,7 +205,7 @@ int main()
 - 命名空間或模組層級關鍵字，例如 `End Sub` 或 `Module`。
 
 ## <a name="see-also"></a>另請參閱
-- [C++格式指定器](../debugger/format-specifiers-in-cpp.md)
-- [Context Operator (C++)](../debugger/context-operator-cpp.md)
-- [格式規格在C#](../debugger/format-specifiers-in-csharp.md)
+- [C + + 中的格式規範](../debugger/format-specifiers-in-cpp.md)
+- [內容運算子 (C++)](../debugger/context-operator-cpp.md)
+- [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)
 - [虛擬變數](../debugger/pseudovariables.md)

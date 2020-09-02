@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: baa6059a1668be5507994921cb96ac3ed1cfd5fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200006"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-此函式會列舉指定的檔案，提供透過回呼函式的每個檔案的名稱變更的相關資訊清單。  
+此函式會列舉指定的檔案清單，並透過回呼函數提供每個檔案的名稱變更相關資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,32 +38,32 @@ SCCRTN SccQueryChanges(
   
 #### <a name="parameters"></a>參數  
  pContext  
- [in]原始檔控制外掛程式的內容指標。  
+ 在原始檔控制外掛程式內容指標。  
   
  nFiles  
- [in]中的檔案數目`lpFileNames`陣列。  
+ 在陣列中的檔案數目 `lpFileNames` 。  
   
  lpFileNames  
- [in]若要取得相關資訊的檔案名稱的陣列。  
+ 在要取得相關資訊的檔案名陣列。  
   
  pfnCallback  
- [in]若要在清單中的每個檔案名稱呼叫的回呼函式 (請參閱[QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)如需詳細資訊)。  
+ 在針對清單中的每個檔案名呼叫回呼函式 (如需詳細資料) ，請參閱 [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) 。  
   
  pvCallerData  
- [in]將會原封不動地傳遞至回呼函式的值。  
+ 在將原封不動地傳遞給回呼函式的值。  
   
 ## <a name="return-value"></a>傳回值  
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：  
   
 |值|描述|  
 |-----------|-----------------|  
-|SCC_OK|查詢處理序已順利完成。|  
-|SCC_E_PROJNOTOPEN|不在原始檔控制開啟專案。|  
-|SCC_E_ACCESSFAILURE|發生問題，存取原始檔控制系統，可能是因為網路或競爭問題。|  
-|SCC_E_NONSPECIFICERROR|發生未指定或一般錯誤。|  
+|SCC_OK|查詢處理已順利完成。|  
+|SCC_E_PROJNOTOPEN|尚未在原始檔控制中開啟專案。|  
+|SCC_E_ACCESSFAILURE|存取原始檔控制系統時發生問題，可能是因為網路或爭用問題。|  
+|SCC_E_NONSPECIFICERROR|發生未指定或一般的錯誤。|  
   
 ## <a name="remarks"></a>備註  
- 要查詢的變更會為命名空間： 具體而言，重新命名、 新增和移除檔案。  
+ 正在查詢的變更是命名空間：具體而言，就是重新命名、新增和移除檔案。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
