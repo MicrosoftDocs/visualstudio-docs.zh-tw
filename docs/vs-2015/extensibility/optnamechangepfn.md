@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4969dff811b6517c0274a35884703a9dc0c693cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194097"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-這是呼叫中指定的回呼函式[SccSetOption](../extensibility/sccsetoption-function.md) (使用選項`SCC_OPT_NAMECHANGEPFN`) 並且用來傳達名稱所做的變更原始檔控制外掛程式傳回給 IDE。  
+這是在 [SccSetOption](../extensibility/sccsetoption-function.md) (中指定的回呼函式，其使用選項 `SCC_OPT_NAMECHANGEPFN`) ，並且用來將原始檔控制外掛程式所做的名稱變更傳遞回 IDE。  
   
 ## <a name="signature"></a>簽章  
   
@@ -36,22 +36,22 @@ typedef void (*OPTNAMECHANGEPFN)(
   
 ## <a name="parameters"></a>參數  
  pvCallerData  
- [in]先前呼叫中指定的使用者值[SccSetOption](../extensibility/sccsetoption-function.md) (使用選項`SCC_OPT_USERDATA`)。  
+ 在先前呼叫 [SccSetOption](../extensibility/sccsetoption-function.md) (中指定的使用者值，) 使用選項 `SCC_OPT_USERDATA` 。  
   
  pszOldName  
- [in]檔案的原始名稱。  
+ 在檔案的原始名稱。  
   
  pszNewName  
- [in]檔案名稱已重新命名為。  
+ 在檔案已重新命名為的名稱。  
   
 ## <a name="return-value"></a>傳回值  
  無。  
   
 ## <a name="remarks"></a>備註  
- 如果檔案已重新命名原始檔控制作業期間，原始檔控制外掛程式可以通知名稱變更，透過此回呼中相關的 IDE。  
+ 如果檔案在原始檔控制作業期間重新命名，原始檔控制外掛程式可透過此回呼通知 IDE 有關名稱變更。  
   
- IDE 不支援此回呼中，如果它不會呼叫[SccSetOption](../extensibility/sccsetoption-function.md)加以指定。 如果外掛程式不支援此回呼中，它會傳回`SCC_E_OPNOTSUPPORTED`從`SccSetOption`函式時，IDE 會嘗試回呼。  
+ 如果 IDE 不支援此回呼，則不會呼叫 [SccSetOption](../extensibility/sccsetoption-function.md) 來指定它。 如果外掛程式不支援此回呼，則 `SCC_E_OPNOTSUPPORTED` `SccSetOption` 當 IDE 嘗試設定回呼時，它會從函式傳回。  
   
 ## <a name="see-also"></a>另請參閱  
- [IDE 所實作的回呼函式](../extensibility/callback-functions-implemented-by-the-ide.md)   
+ [IDE 所執行的回呼函數](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)

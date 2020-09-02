@@ -1,5 +1,5 @@
 ---
-title: 非方法構建器.m_objectIdForDebugger欄位 |微軟文件
+title: AsyncVoidMethodBuilder. m_objectIdForDebugger 欄位 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 10d63a92e2648c269c51faddc9521323c76116b1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739321"
 ---
-# <a name="asyncvoidmethodbuilderm_objectidfordebugger-field"></a>非同步VoidMethodBuilder.m_objectIdForDebugger欄位
-表示調試器用於唯一標識此生成器的懶惰初始化物件。
+# <a name="asyncvoidmethodbuilderm_objectidfordebugger-field"></a>AsyncVoidMethodBuilder，m_objectIdForDebugger 欄位
+表示偵錯工具用來唯一識別此產生器的延遲初始化物件。
 
- **命名空間:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **命名空間：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
- **程式集**:mscorlib(在 mscorlib.dll 中)
+ **元件：** mscorlib.dll) 中的 mscorlib (
 
- 由於您無法從 .NET 框架訪問此內部成員,因此在通用中間語言 (CIL) 中提供了以下語法。
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。
 
 ## <a name="syntax"></a>語法
 
@@ -34,4 +34,4 @@ ms.locfileid: "80739321"
 
 ## <a name="see-also"></a>另請參閱
 - <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
-- [.NET 框架的並行擴展內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET Framework 的平行延伸模組內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

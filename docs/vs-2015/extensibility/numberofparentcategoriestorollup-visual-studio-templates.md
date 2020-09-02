@@ -1,5 +1,5 @@
 ---
-title: NumberOfParentCategoriesToRollUp （Visual Studio 範本） |Microsoft Docs
+title: NumberOfParentCategoriesToRollUp (Visual Studio 範本) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,19 +14,19 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 278d8537ee253d8c79024d5e866befa1d65ded0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194206"
 ---
 # <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-指定的數目會顯示在範本的父類別**新的專案** 對話方塊。  
+指定將在 [ **新增專案** ] 對話方塊中顯示範本的父類別目錄數目。  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<NumberOfParentCategoriesToRollUp>  
   
 ## <a name="syntax"></a>語法  
@@ -38,7 +38,7 @@ ms.locfileid: "68194206"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
  無。  
@@ -50,18 +50,18 @@ ms.locfileid: "68194206"
   
 |項目|描述|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|  
   
 ## <a name="text-value"></a>文字值  
- `integer`是必要的值。  
+ `integer`需要值。  
   
- 這個值會指定將會顯示在範本的父類別的數目**新的專案** 對話方塊。  
+ 這個值會指定要在 [ **新增專案** ] 對話方塊中顯示範本的父類別目錄數目。  
   
 ## <a name="remarks"></a>備註  
- `NumberOfParentCategoriesToRollUp` 是選擇性項目。  
+  是選擇性元素。  
   
 ## <a name="example"></a>範例  
- 此範例說明的中繼資料[!INCLUDE[csprcs](../includes/csprcs-md.md)]Windows 應用程式。 如果此中繼資料的範本放兩個資料夾層級以下的最上層[!INCLUDE[csprcs](../includes/csprcs-md.md)]節點，此範本將顯示在中的最上層節點**新的專案** 對話方塊。 如果`NumberOfParentCategoriesToRollUp`未設定，範本只會出現在節點中實際上是位於。  
+ 此範例說明 [!INCLUDE[csprcs](../includes/csprcs-md.md)] Windows 應用程式的中繼資料。 如果具有此中繼資料的範本放在最上層節點下的兩個資料夾層級 [!INCLUDE[csprcs](../includes/csprcs-md.md)] ，則範本會出現在 [ **新增專案** ] 對話方塊的最上層節點中。 如果 `NumberOfParentCategoriesToRollUp` 未設定，則範本只會顯示在實體所在的節點上。  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -89,5 +89,5 @@ ms.locfileid: "68194206"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: PROGRAM_DESTROY_FLAGS | Microsoft Docs
+title: PROGRAM_DESTROY_FLAGS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 16933eb409f55be209d54c26d0c077ed96f53cb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205001"
 ---
-# <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
+# <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-有效的列舉程式的值會終結旗標。  
+列舉程式損毀旗標的有效值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,18 +41,18 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
   
 ## <a name="terms"></a>詞彙  
  PROGRAM_DESTROY_CONTINUE_DEBUGGING  
- 終結程式，但繼續進行偵錯。  
+ 終結程式，但繼續進行偵錯工具。  
   
 ## <a name="remarks"></a>備註  
- 列舉型別由[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)方法。  
+ 列舉是由 [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) 方法傳回。  
   
 ## <a name="requirements"></a>需求  
- 標頭：Msdbg.h  
+ 標頭： Msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)

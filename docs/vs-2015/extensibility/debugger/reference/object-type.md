@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE | Microsoft Docs
+title: OBJECT_TYPE |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc23045fa70554133eba3a7f1326681bf31ea379
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205146"
 ---
-# <a name="objecttype"></a>OBJECT_TYPE
+# <a name="object_type"></a>Object_Type
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定運算式評估工具中的物件的類型。  
+從運算式評估工具指定物件的類型。  
   
 ## <a name="syntax"></a>語法  
   
@@ -72,7 +72,7 @@ public enum enum_OBJECT_TYPE { 
  指出物件是布林值。  
   
  OBJECT_TYPE_CHAR  
- 指出物件是一個字元。  
+ 表示物件為字元。  
   
  OBJECT_TYPE_I1  
  指出物件是一個位元組帶正負號的整數。  
@@ -81,49 +81,49 @@ public enum enum_OBJECT_TYPE { 
  指出物件是一個位元組不帶正負號的整數。  
   
  OBJECT_TYPE_I2  
- 指出物件是二位元組帶正負號的整數。  
+ 指出物件是雙位元組帶正負號的整數。  
   
  OBJECT_TYPE_U2  
- 指出物件是二位元組不帶正負號的整數。  
+ 指出物件是雙位元組不帶正負號的整數。  
   
  OBJECT_TYPE_I4  
  指出物件是四位元組帶正負號的整數。  
   
  OBJECT_TYPE_U4  
- 指出物件是四位元組不帶正負號的整數。  
+ 表示物件為四位元組不帶正負號的整數。  
   
  OBJECT_TYPE_I8  
- 表示此物件是八位元組帶正負號的整數。  
+ 指出物件是八位元組帶正負號的整數。  
   
  OBJECT_TYPE_U8  
- 表示物件的八位元組不帶正負號的整數。  
+ 指出物件是八位元組不帶正負號的整數。  
   
  OBJECT_TYPE_R4  
  指出物件是四位元組浮點數。  
   
  OBJECT_TYPE_R8  
- 指出物件是 8 位元組浮點數。  
+ 指出物件是八位元組浮點數。  
   
  OBJECT_TYPE_OBJECT  
- 表示物件的物件。  
+ 表示物件是物件。  
   
- OBJECT_TYPE_NULL  
- 表示為 NULL 的物件。  
+ OBJECT_TYPE_Null  
+ 表示物件為 Null。  
   
  OBJECT_TYPE_CLASS  
- 表示物件的類別。  
+ 表示物件為類別。  
   
 ## <a name="remarks"></a>備註  
- 作為引數[CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)並[CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)方法。  
+ 以引數形式傳遞至 [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) 和 [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) 方法。  
   
 ## <a name="requirements"></a>需求  
- 標頭： ee.h  
+ 標頭： ee. h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)   
  [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)

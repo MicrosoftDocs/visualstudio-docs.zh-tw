@@ -1,5 +1,5 @@
 ---
-title: IDebugError事件2::獲取錯誤消息 |微軟文件
+title: IDebugErrorEvent2：： GetErrorMessage |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1ff1da2f2a2d24b958a613e6fe5cb58c0081ed3e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730038"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
-返回允許構造人類可讀錯誤消息的資訊。
+傳回可讓人看得懂的錯誤訊息的資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -51,29 +51,29 @@ int GetErrorMessage(
 
 ## <a name="parameters"></a>參數
 `pMessageType`\
-[出]從[消息類型](../../../extensibility/debugger/reference/messagetype.md)枚舉中返回一個值,描述消息的類型。
+擴展從 [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) 列舉傳回值，描述訊息的類型。
 
 `pbstrErrorFormat`\
-[出]向使用者發送的最後消息的格式(有關詳細資訊,請參閱"備註")。
+擴展使用者的最終訊息格式 (如需詳細資料，請參閱「備註」) 。
 
 `hrErrorReason`\
-[出]消息所講述的錯誤代碼。
+擴展訊息的相關錯誤碼。
 
 `pdwType`\
-[出]錯誤的嚴重性(使用`MessageBox`MB_XXX常量`MB_EXCLAMATION``MB_WARNING`;
+擴展錯誤的嚴重性 (使用 MB_XXX 的常數 `MessageBox` ，例如 `MB_EXCLAMATION` 或 `MB_WARNING`) 。
 
 `pbstrHelpFileName`\
-[出]説明檔的路徑(如果沒有説明檔,則設置為空值)。
+擴展說明檔的路徑 (如果沒有說明檔) ，則設定為 null 值。
 
 `pdwHelpId`\
-[出]要顯示的幫助主題的 ID(如果沒有幫助主題,則設置為 0)。
+擴展要顯示之說明主題的識別碼 (設定為0（如果沒有說明主題) ）。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 錯誤訊息的格式應沿`"What I was doing.  %1"`的行。 然後`"%1"`,調用方將替換為從錯誤代碼派生的錯誤消息(在`hrErrorReason`中返回)。 參數`pMessageType`告訴調用方如何顯示最終錯誤消息。
+ 錯誤訊息應該依照的行格式化 `"What I was doing.  %1"` 。 `"%1"`然後，呼叫端會將取代為) 中所傳回之錯誤碼 (的錯誤訊息取代 `hrErrorReason` 。 `pMessageType`參數會告訴呼叫端應該如何顯示最終的錯誤訊息。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)
-- [訊息類型](../../../extensibility/debugger/reference/messagetype.md)
+- [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)

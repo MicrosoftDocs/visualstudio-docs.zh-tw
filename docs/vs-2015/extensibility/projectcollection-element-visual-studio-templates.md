@@ -1,5 +1,5 @@
 ---
-title: ProjectCollection 項目 （Visual Studio 範本） |Microsoft Docs
+title: " (Visual Studio 範本的 ProjectCollection 元素) |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,10 +14,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9457b1142c94658da489ce7401b7c22d28df903d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193928"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection 項目 (Visual Studio 範本)
@@ -25,7 +25,7 @@ ms.locfileid: "68193928"
 
 指定多專案範本的組織和內容。  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateContent>  
  \<ProjectCollection>  
   
@@ -46,19 +46,19 @@ ms.locfileid: "68193928"
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
-|[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 在多專案範本中指定的專案。|  
+|[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定多專案範本中的專案。|  
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 將多專案範本中的專案分組。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定範本的內容。|  
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必要元素。<br /><br /> 指定範本的內容。|  
   
 ## <a name="remarks"></a>備註  
- 多專案範本是做為兩個以上專案的容器使用。 `ProjectCollection`項目用來指定要包含在範本中的專案。 如需有關多專案範本的詳細資訊，請參閱[How to:建立多專案範本](../ide/how-to-create-multi-project-templates.md)。  
+ 多專案範本是做為兩個以上專案的容器使用。 `ProjectCollection`元素可用來指定要包含在範本中的專案。 如需多專案範本的詳細資訊，請參閱 [如何：建立多專案範本](../ide/how-to-create-multi-project-templates.md)。  
   
 ## <a name="example"></a>範例  
  這個範例將示範簡單的多專案根 .vstemplate 檔案。 在這個範例中，範本包含兩個專案 `My Windows Application` 和 `My Class Library`。 `ProjectName` 項目的 `ProjectTemplateLink` 屬性會設定 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的名稱，以指派此專案。 如果 `ProjectName` 屬性不存在，則 .vstemplate 檔案的名稱會做為專案名稱。  
@@ -86,6 +86,6 @@ ms.locfileid: "68193928"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
- [如何：建立多專案範本](../ide/how-to-create-multi-project-templates.md)
+ [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)   
+ [建立專案和專案範本](../ide/creating-project-and-item-templates.md)   
+ [如何：建立多專案的範本](../ide/how-to-create-multi-project-templates.md)

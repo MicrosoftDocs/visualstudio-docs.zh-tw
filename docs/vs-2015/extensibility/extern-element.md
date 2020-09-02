@@ -14,18 +14,18 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 17477b7eb60aa332f6910019e28f4c53aa31ebf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204406"
 ---
 # <a name="extern-element"></a>Extern 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Extern 元素會參考在編譯時期合併使用.vsct 檔的任何外部標頭 (.h) 檔案。 要合併的檔案必須位於 Include 路徑指定給 VSCT 編譯器，或是參照[包含的項目](../extensibility/include-element.md)。 檔案可能是其他.vsct 檔案或C++標頭檔。  
+Extern 元素會參考任何外部標頭 ( .h) 檔案，以便在編譯時期與 .vsct 檔案合併。 要合併的檔案必須位於提供給 .VSCT 編譯器的 Include 路徑上，或是由 [Include 元素](../extensibility/include-element.md)所參考。 檔案可能是其他 .vsct 檔案或 c + + 標頭檔。  
   
- 標頭檔中的定義的格式必須是"#define [符號] [Value]"的值可能是另一個符號，如果先前已定義。 定義可用於條件陳述式的命令項目。 將捨棄任何並未實際使用的符號。  
+ 標頭檔中的定義必須是 "#define [Symbol] [Value]" 格式，如果先前已定義，該值可能是另一個符號。 定義可以用於命令專案的條件陳述式中。 所有未實際使用的符號都會被捨棄。  
   
  CommandTable 項目  
 Extern 項目  
@@ -37,19 +37,19 @@ Extern 項目
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|href|必要項。 標頭檔路徑：<br /><br /> href="stdidcmd.h"|  
-|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
-|語言|選擇性。 所有的預設語言[\<字串 >](../extensibility/strings-element.md)命令表中的項目：<br /><br /> language="en-us"|  
+|href|必要。 標頭檔的路徑：<br /><br /> href = "stdidcmd .h"|  
+|條件|選擇性。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
+|語言|選擇性。 [\<Strings>](../extensibility/strings-element.md)命令資料表中所有元素的預設語言：<br /><br /> language = "en-us"|  
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |無。|無。|  
   
@@ -57,7 +57,7 @@ Extern 項目
   
 |項目|描述|  
 |-------------|-----------------|  
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定義所有代表命令的項目 — 也就是功能表項目、 功能表、 工具列和下拉式方塊，VSPackage 提供給 IDE。|  
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定義 VSPackage 為 IDE 提供的命令（即功能表項目、功能表、工具列和下拉式方塊）的所有元素。|  
   
 ## <a name="example"></a>範例  
   
@@ -72,6 +72,6 @@ Extern 項目
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 命令資料表 (。Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Vspackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Visual Studio 命令表格 (。.Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [Vspackage 如何新增消費者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [命令、功能表及工具列](../extensibility/internals/commands-menus-and-toolbars.md)

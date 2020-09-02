@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetReference |Microsoft Docs
+title: IDebugProperty2：： GetReference |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 73f6bb556c3f18c8327985ac7c46b77a3a6d2c01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193478"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-傳回屬性的值的參考。  
+傳回屬性值的參考。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,10 +40,10 @@ int GetReference(
   
 #### <a name="parameters"></a>參數  
  `ppRererence`  
- [out]傳回[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，表示屬性的值的參考。  
+ 擴展傳回 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 物件，代表屬性值的參考。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回的錯誤代碼，通常`E_NOTIMPL`或`E_GETREFERENCE_NO_REFERENCE`。  
+ 如果成功，則傳回，否則會傳回 `S_OK` 錯誤碼，通常是 `E_NOTIMPL` 或 `E_GETREFERENCE_NO_REFERENCE` 。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

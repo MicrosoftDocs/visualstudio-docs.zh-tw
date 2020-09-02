@@ -14,28 +14,28 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 05e82002a01e15b26e84e7805b0ee092868eef5d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204434"
 ---
 # <a name="extending-user-settings-and-options"></a>延伸使用者設定和選項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 Visual Studio 中，有兩種主要的方式來維護使用者喜好設定。 **工具 / 選項**頁面可讓使用者設定自己的值為許多不同類型的一般和特定語言的設定。 使用者設定可讓使用者指定一般的 Visual Studio 組態屬性。 更多選項 頁面的詳細資訊，請參閱[選項和選項頁](../extensibility/internals/options-and-options-pages.md)。 如需有關使用者設定的詳細資訊，請參閱[支援的使用者設定](../extensibility/internals/support-for-user-settings.md)。  
+在 Visual Studio 有兩種主要的方式可維護使用者喜好設定。 [ **工具]/[選項** ] 頁面可讓使用者針對許多不同的設定類型（一般和語言特定）設定自己的值。 使用者設定可讓使用者指定一般 Visual Studio 設定屬性。 如需選項頁的詳細資訊，請參閱 [選項和選項頁面](../extensibility/internals/options-and-options-pages.md)。 如需使用者設定的詳細資訊，請參閱 [支援使用者設定](../extensibility/internals/support-for-user-settings.md)。  
   
  [建立選項頁](../extensibility/creating-an-options-page.md)  
- 說明如何建立選項頁面。  
+ 說明如何建立 [選項] 頁面。  
   
  [建立設定分類](../extensibility/creating-a-settings-category.md)  
- 說明如何建立設定類別目錄。  
+ 說明如何建立設定分類。  
   
  [使用設定存放區](../extensibility/using-the-settings-store.md)  
- 說明如何使用 「 設定存放區。  
+ 說明如何使用設定存放區。  
   
  [從設定存放區取得服務資訊](../extensibility/getting-service-information-from-the-settings-store.md)  
  說明如何從設定存放區取得可用的服務。  
   
  [寫入使用者設定存放區](../extensibility/writing-to-the-user-settings-store.md)  
- 說明如何將寫入使用者設定存放區。
+ 說明如何寫入使用者設定存放區。

@@ -1,5 +1,5 @@
 ---
-title: SccEnum更改檔案功能 |微軟文件
+title: SccEnumChangedFiles 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0b1826a87b20d6bc92254fc4a86b8e0b756400ec
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700910"
 ---
-# <a name="sccenumchangedfiles-function"></a>SccEnum 更改檔案功能
-給定本地檔案的清單,此函數確定哪些檔不同於原始程式碼管理資料庫中的相應版本。
+# <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 函式
+指定本機檔案清單之後，此函式會判斷哪些檔案與原始程式碼控制資料庫中的對應版本不同。
 
 ## <a name="syntax"></a>語法
 
@@ -37,26 +37,26 @@ SCCRTN SccEnumChangedFiles(
 ### <a name="parameters"></a>參數
  pContext
 
-[在]源代碼管理外掛程式上下文指標。
+在原始檔控制外掛程式內容指標。
 
  hWnd
 
-[在]源控件外掛程式可以用作它提供的任何對話框的父級的IDE視窗句柄。
+在IDE 視窗的控制碼，原始檔控制外掛程式可以使用它做為它所提供之任何對話方塊的父代。
 
  cFiles
 
-[在]`lpFileNames`陣列中指定的檔名數。 您可以指定陣列的`plIsFileDifferent`大小 。
+在陣列中指定的檔案名 `lpFileNames` 。 也指定陣列的大小 `plIsFileDifferent` 。
 
- lpFile 名稱
+ lpFileNames
 
-[在]要檢查的本地檔名陣列。
+在要檢查的本機檔案名陣列。
 
- PlIsFile 不同
+ plIsFileDifferent
 
-[進出]指示每個文件差異狀態的值陣列(陣列必須至少有`cFiles`項目)。 非零表示檔不同。
+[in，out]值的陣列，表示每個檔案 (陣列的差異狀態，至少必須有 `cFiles`) 的專案。 非零表示檔案不同。
 
 ## <a name="return-value"></a>傳回值
- 此函數的源碼管理外掛程式實現應返回以下值之一:
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：
 
 |值|描述|
 |-----------|-----------------|
@@ -64,4 +64,4 @@ SCCRTN SccEnumChangedFiles(
 |SCC_UNSPECIFIEDERROR|一般錯誤。|
 
 ## <a name="see-also"></a>另請參閱
-- [原始程式碼管理外掛程式 API 功能](../extensibility/source-control-plug-in-api-functions.md)
+- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

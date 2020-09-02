@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::Prse文本 |微軟文件
+title: IDebugExpressionCoNtext2：:P arseText |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a8494c9c90c4cb6e94115c542a25e12e948f7064
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729657"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
-在文本表單中分析表達式,以便以後進行計算。
+剖析文字形式的運算式以供稍後評估之用。
 
 ## <a name="syntax"></a>語法
 
@@ -51,33 +51,33 @@ int ParseText(
 
 ## <a name="parameters"></a>參數
 `pszCode`\
-[在]要解析的表達式。
+在要剖析的運算式。
 
 `dwFlags`\
-[在]控制解析的[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)枚舉中的標誌的組合。
+在 [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) 列舉中的旗標組合，可控制剖析。
 
 `nRadix`\
-[在]用於分析 中任何數值資訊`pszCode`的半徑。
+在用來剖析中任何數值資訊的基數 `pszCode` 。
 
 `ppExpr`\
-[出]返回表示解析表達式的[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)物件,該物件已準備好進行綁定和評估。
+擴展傳回 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) 物件，這個物件表示已剖析的運算式，此運算式已準備好進行系結和評估。
 
 `pbstrError`\
-[出]如果表達式包含錯誤,則返回錯誤消息。
+擴展如果運算式包含錯誤，則傳回錯誤訊息。
 
 `pichError`\
-[出]如果表示式包含錯誤,則返回`pszCode`中的錯誤的字元索引。
+擴展如果運算式包含錯誤，則傳回錯誤的字元索引 `pszCode` 。
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則,返回錯誤代碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
-呼叫此方法時,調試引擎 (DE) 應分析表達式並驗證其正確性。 如果`pbstrError`運算`pichError`式無效,可以填充 和參數。
+當呼叫這個方法時，debug engine (DE) 應該剖析運算式，並驗證它是否正確。 `pbstrError` `pichError` 如果運算式無效，可以填入和參數。
 
-請注意,表達式不計算,僅解析。 稍後對[評估同步](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)或[評估 Async](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)方法的調用將評估解析的運算式。
+請注意，不會評估運算式，只會剖析。 稍後對 [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 或 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 方法的呼叫會評估剖析的運算式。
 
 ## <a name="example"></a>範例
-下面的範例展示如何為公開[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)`CEnvBlock`介面的簡單物件實現此方法。 本示例將表達式視為環境變數的名稱,並從該變數檢索值。
+下列範例顯示如何針對 `CEnvBlock` 公開 [IDebugExpressionCoNtext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) 介面的簡單物件，執行這個方法。 此範例會將運算式視為環境變數的名稱，並從該變數抓取值。
 
 ```cpp
 HRESULT CEnvBlock::ParseText(

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e106b113fd68efb017b532d2407999a96dbbe954
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150462"
 ---
-# <a name="idiasegmentgetrelativevirtualaddress"></a>IDiaSegment::get_relativeVirtualAddress
+# <a name="idiasegmentget_relativevirtualaddress"></a>IDiaSegment::get_relativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取區段開頭的相對虛擬位址 (RVA)。  
+捕獲區段開頭 (RVA) 的相對虛擬位址。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,10 +35,10 @@ HRESULT get_relativeVirtualAddress ( 
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回區段開頭的 RVA。  
+ 擴展傳回區段開頭的 RVA。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援這個屬性，則傳回。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

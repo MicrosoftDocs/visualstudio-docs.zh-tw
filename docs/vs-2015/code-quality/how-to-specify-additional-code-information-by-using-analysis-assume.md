@@ -1,5 +1,5 @@
 ---
-title: 如何：使用 __analysis_assume 指定額外的程式碼資訊 |Microsoft Docs
+title: 如何：使用 __analysis_assume 指定其他程式碼資訊 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -14,28 +14,28 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: f2f18c9284ec96de7a7b8663aff485962d194282
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277969"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-__analysis_assume"></a>如何：使用 __analysis_assume 指定其他程式碼資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以為 C/C++ code 提供程式碼分析工具的提示，以協助分析程式並減少警告。 若要提供其他資訊，請使用下列函數：  
+您可以提供適用于 C/c + + 程式碼的程式碼分析工具提示，以協助分析程式並減少警告。 若要提供其他資訊，請使用下列函數：  
   
  `__analysis_assume(`  `expr`  `)`  
   
- `expr`-假設評估為 true 的任何運算式。  
+ `expr` -假設評估為 true 的任何運算式。  
   
- 程式碼分析工具假設運算式所表示的條件在函式出現的時間點為 true，而且在改變運算式之前會保持為 true，例如，藉由將指派給變數。  
+ 程式碼分析工具假設運算式所表示的條件在函式出現的點為 true，而且在更改運算式之前保持為 true，例如，藉由指派給變數。  
   
 > [!NOTE]
-> `__analysis_assume` 不會影響程式碼優化。 在程式碼分析工具之外，`__analysis_assume` 會定義為無 op。  
+> `__analysis_assume` 不會影響程式碼優化。 在程式碼分析工具之外， `__analysis_assume` 定義為無作業。  
   
 ## <a name="example"></a>範例  
- 下列程式碼會使用 `__analysis_assume` 來更正程式碼分析警告[C6388](../code-quality/c6388.md)：  
+ 下列程式碼會使用 `__analysis_assume` 來修正程式碼分析警告 [C6388](../code-quality/c6388.md)：  
   
 ```  
 #include<windows.h>  

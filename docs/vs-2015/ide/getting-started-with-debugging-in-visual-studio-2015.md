@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 2015 中使用調試消費者入門 |Microsoft Docs
+title: 使用 Visual Studio 2015 中的調試消費者入門 |Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -11,10 +11,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ca3f3806f9097082d71dd80e74ccf48cd78c951b
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386884"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Visual Studio 2015 中的偵錯入門
@@ -44,7 +44,7 @@ Visual Studio 2015 提供一組強大的整合式專案建置和偵錯工具。 
 
  開始之後，只要使用 [偵錯]**** 和 [x86]**** 分別作為您的建置組態和平台。 完成程式碼撰寫和偵錯時，請將組態變更為 [發行]****，並且以特定平台為目標 (舊版 Visual Studio 提供 .Net 程式碼專案的 **AnyCPU** 預設平台)。
 
- 注意：當您建置專案時，組態和平台值也可用來判斷要建立哪些專案目錄路徑來儲存可執行檔。 一般來說，這是** \<path-to-project> \\<專案名稱 \> \\<設定 \> \\<平臺 \> **。 例如，在 `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86` 下會找到組態為 `Debug` 且平台為 `x86` 的專案。 如果您有自己管理這些內建可執行檔的工具或指令碼，則這會非常有用。
+ 注意：當您建置專案時，組態和平台值也可用來判斷要建立哪些專案目錄路徑來儲存可執行檔。 一般來說，這是** \<path-to-project> \\ \> \\<configuration \> \\<平臺 \><專案名稱**。 例如，在 `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86` 下會找到組態為 `Debug` 且平台為 `x86` 的專案。 如果您有自己管理這些內建可執行檔的工具或指令碼，則這會非常有用。
 
 ### <a name="building-your-code"></a>建置您的程式碼
  當您的建置設定完之後，就可以真正開始建置您的專案。 最簡單的作法是按下 F7，但您也可以從主功能表選取 [建置] -> [建置方案]**** 來開始建置。
@@ -60,11 +60,11 @@ Visual Studio 2015 提供一組強大的整合式專案建置和偵錯工具。 
  ![Visual Studio 組建輸出成功](../ide/media/vs-ide-gs-debug-success-build.PNG "vs_ide_gs_debug_success_build")
 
 ### <a name="reviewing-the-error-list"></a>檢閱錯誤清單
- 除非您不修改先前編譯成功的程式碼，否則可能還是會有錯誤。 如果您是撰寫程式碼的新手，您可能會有許多錯誤。 錯誤有時會很明顯，例如簡單的語法錯誤或不正確的變數名稱，但有時候它們會很難了解，只有隱密的程式碼引導您。 如需更清楚地瞭解問題，請流覽至 [組建**輸出**] 視窗底部，然後按一下 [**錯誤清單**] 索引標籤。這會讓您更有條理地看到專案的錯誤和警告，並提供您一些額外的選項。
+ 除非您不修改先前編譯成功的程式碼，否則可能還是會有錯誤。 如果您是撰寫程式碼的新手，您可能會有許多錯誤。 錯誤有時會很明顯，例如簡單的語法錯誤或不正確的變數名稱，但有時候它們會很難了解，只有隱密的程式碼引導您。 若要清楚瞭解問題，請流覽至 [組建 **輸出** ] 視窗底部，然後按一下 [ **錯誤清單** ] 索引標籤。這會讓您更有條理地查看專案的錯誤和警告，也提供您一些額外的選項。
 
  ![Visual Studio 2015 輸出和錯誤清單](../ide/media/vs-ide-gs-debug-bad-build-error-list.PNG "Vs_ide_gs_debug_bad_build_error_list")
 
- 在 [錯誤清單]**** 視窗中按一下錯誤行，然後跳至發生錯誤的行。 （或按一下右上方的 [**快速啟動**] 列來開啟行號，在其中輸入「行號」，然後按 enter 鍵。 這是到達 [選項]**** 視窗項目的最快速方式，您可以在其中開啟行號。 了解如何使用 [快速啟動]**** 列，並且替您省下很多的 UI 點選！)
+ 在 [錯誤清單]**** 視窗中按一下錯誤行，然後跳至發生錯誤的行。  (或開啟行號，請按一下右上方的 **快速啟動** 列，在其中輸入「行號」，然後按 enter 鍵。 這是到達 [選項]**** 視窗項目的最快速方式，您可以在其中開啟行號。 了解如何使用 [快速啟動]**** 列，並且替您省下很多的 UI 點選！)
 
  ![使用行號的 Visual Studio 編輯器](../ide/media/vs-ide-gs-debug-line-numbers.png "Vs_ide_gs_debug_line_numbers")
 
@@ -119,7 +119,7 @@ Visual Studio 2015 提供一組強大的整合式專案建置和偵錯工具。 
 
  有經驗之後，您可以快速地使用方向鍵和 Ctrl+. 來檢查 [快速選項] 重構機會，並清除程式碼！
 
- 如需有關 Light 燈泡的詳細資訊，請參閱[使用 light 燈泡執行快速動作](../ide/perform-quick-actions-with-light-bulbs.md)。
+ 如需 Light 燈泡的詳細資訊，請參閱 [使用輕量燈泡執行快速動作](../ide/perform-quick-actions-with-light-bulbs.md)。
 
 ### <a name="debugging-your-running-code"></a>偵錯您執行的程式碼
  既然您已成功建置程式碼並已稍加清除，請按 F5 或選取 [偵錯] -> [開始偵錯]**** 予以執行。 這會在偵錯環境中啟動您的應用程式，如此一來您可詳細觀察其行為。 當您的應用程式執行下列時，Visual Studio 2015 IDE 會有所變更：[輸出]**** 視窗由兩個新的視窗所取代 (在預設視窗組態中)、[自動變數/區域變數/模組/監看式]**** 索引標籤式視窗和 [呼叫堆疊/中斷點/例外狀況設定/輸出]**** 索引標籤式視窗。 這些視窗有多個索引標籤，可讓您在執行時檢查和評估應用程式變數、執行緒、呼叫堆疊以及各種其他行為。
@@ -136,7 +136,7 @@ Visual Studio 2015 提供一組強大的整合式專案建置和偵錯工具。 
 
  您可以按 Shift+F5 或按一下 [停止]**** 按鈕停止應用程式。 或者，您只需關閉應用程式的主視窗 (或命令列對話方塊)。
 
- 如果您的程式碼完美地如預期運作，那麼恭喜您！ 請將建置組態變更為 [發行]****，並且為部署而重建！ （不過，專業人員可能想要跳到結尾的單元測試）。不過，如果它停止回應或當機，或為您提供一些奇怪的結果，您就必須找出這些問題的來源，並修正錯誤。
+ 如果您的程式碼完美地如預期運作，那麼恭喜您！ 請將建置組態變更為 [發行]****，並且為部署而重建！ 不過， (專業人員可能想要在結束時跳到單元測試的那個部分。 ) 不過，如果它停止回應或當機，或是提供您一些奇怪的結果，您就必須找出這些問題的來源，並修正 bug。
 
 ### <a name="setting-simple-breakpoints"></a>設定簡單的中斷點
  中斷點是可靠偵錯最基本也最重要的功能。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值或記憶體的行為，或查看程式碼分支是否正在執行。 設定及移除中斷點之後，您不需要重建專案。
@@ -149,7 +149,7 @@ Visual Studio 2015 提供一組強大的整合式專案建置和偵錯工具。 
 
  中斷點的常見用途包含：
 
-1. 若要縮小損毀或程式沒有回應的來源，請在您認為會導致失敗的整個方法呼叫程式碼前後散佈它們。 當您逐步執行程式碼時，請移除中斷點，然後將此中斷點重設得更為密集，直到您找出有問題的那一行程式碼。
+1. 若要縮小損毀或程式未回應的來源，請在您認為會導致失敗的方法呼叫程式碼前後散佈它們。 當您逐步執行程式碼時，請移除中斷點，然後將此中斷點重設得更為密集，直到您找出有問題的那一行程式碼。
 
 2. 當您引入新的程式碼時，請在其開頭設定中斷點，並逐步執行程式碼，確定它會如預期地表現。
 
@@ -157,7 +157,7 @@ Visual Studio 2015 提供一組強大的整合式專案建置和偵錯工具。 
 
 4. 如果您要撰寫 C 或 C++ 程式碼，當要偵錯記憶體相關的失敗時，請使用中斷點來停止程式碼，以便您檢查位址值 (尋找 NULL) 和參考計數。
 
-   如需使用中斷點的詳細資訊，請參閱[使用中斷點](../debugger/using-breakpoints.md)
+   如需使用中斷點的詳細資訊，請參閱 [使用中斷點](../debugger/using-breakpoints.md)
 
 ### <a name="setting-conditional-breakpoints"></a>設定條件中斷點
  如果在迴圈或遞迴中有中斷點，或是您有很多經常逐步執行的中斷點，請使用條件中斷點，以確保程式碼只在符合特定條件時暫停。 否則，您要按 F11 非常多次。
@@ -191,4 +191,4 @@ Visual Studio 2015 提供一組強大的整合式專案建置和偵錯工具。 
  若要深入了解 Visual Studio 2015 中的單元測試，以及了解它們會如何協助您建立更高品質的程式碼，請參閱[單元測試基本概念](../test/unit-test-basics.md)。
 
 ## <a name="see-also"></a>另請參閱
- [Visual Studio](../debugger/debugging-in-visual-studio.md)調試[程式的設定和準備](../debugger/debugger-settings-and-preparation.md) [Debug 64 位應用程式](../debugger/debug-64-bit-applications.md)的偵錯工具[基本概念](../debugger/debugger-basics.md)
+ Visual Studio 偵錯工具設定[中的調試](../debugger/debugging-in-visual-studio.md)[程式和準備](../debugger/debugger-settings-and-preparation.md) [Debug 64 位應用程式](../debugger/debug-64-bit-applications.md)的[基本概念](../debugger/debugger-basics.md)

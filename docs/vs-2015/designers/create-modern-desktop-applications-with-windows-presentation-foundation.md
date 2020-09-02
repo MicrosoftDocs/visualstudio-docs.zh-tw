@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cf9842c53f5c10b7fa8364ef2cf9e53c93849aa8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657952"
 ---
 # <a name="create-modern-desktop-applications-with-windows-presentation-foundation"></a>使用 Windows Presentation Foundation 建立新式桌面應用程式
@@ -25,7 +25,7 @@ Visual Studio 2015 中的 Windows Presentation Foundation (WPF) 為開發人員�
 
  [在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../designers/designing-xaml-in-visual-studio.md)
 
- 最新版 .NET Framework 的 WPF 基本上與 4.0 版後的 WPF 一致。 4\.0 版的文件也適用於目前的版本：
+ 最新版 .NET Framework 的 WPF 基本上與 4.0 版後的 WPF 一致。 4.0 版的文件也適用於目前的版本：
 
  [WPF 簡介](https://msdn.microsoft.com/library/aa970268\(v=vs.100\).aspx)
 

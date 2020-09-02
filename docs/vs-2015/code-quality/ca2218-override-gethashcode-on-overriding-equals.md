@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8083edf04aa799c8031fbcd1b53a2e17104dd4a6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538797"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218:覆寫 Equals 時必須一併覆寫 GetHashCode
@@ -29,14 +29,14 @@ ms.locfileid: "85538797"
 |-|-|
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |CheckId|CA2218|
-|類別|Microsoft。使用方式|
+|類別|Microsoft. 使用量|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 公用類型會覆寫 <xref:System.Object.Equals%2A?displayProperty=fullName> ，但不會覆寫 <xref:System.Object.GetHashCode%2A?displayProperty=fullName> 。
+ Public 類型會覆寫 <xref:System.Object.Equals%2A?displayProperty=fullName> ，但不會覆寫 <xref:System.Object.GetHashCode%2A?displayProperty=fullName> 。
 
 ## <a name="rule-description"></a>規則描述
- <xref:System.Object.GetHashCode%2A>根據目前的實例傳回值，這適合用於雜湊演算法和資料結構（例如雜湊資料表）。 相同類型且相等的兩個物件，必須傳回相同的雜湊碼，以確保下列類型的實例能夠正常運作：
+ <xref:System.Object.GetHashCode%2A> 根據目前的實例傳回值，此值適用于雜湊演算法和資料結構（如雜湊資料表）。 兩個相同類型且相等的物件必須傳回相同的雜湊碼，以確保下列類型的實例能正常運作：
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -54,10 +54,10 @@ ms.locfileid: "85538797"
 
 - <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
-- 執行的類型<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- 執行的類型 <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請提供的執行 <xref:System.Object.GetHashCode%2A> 。 對於相同類型的一對物件，您必須確定如果的實作為的傳回，則此實作為會傳回相同的值 <xref:System.Object.Equals%2A> `true` 。
+ 若要修正此規則的違規情形，請提供的實作為 <xref:System.Object.GetHashCode%2A> 。 針對相同類型的一組物件，您必須確定您的實值是否會傳回相同的值 <xref:System.Object.Equals%2A> `true` 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。
@@ -65,7 +65,7 @@ ms.locfileid: "85538797"
 ## <a name="class-example"></a>類別範例
 
 ### <a name="description"></a>描述
- 下列範例顯示違反此規則的類別（參考型別）。
+ 下列範例顯示違反此規則 (參考型別) 的類別。
 
 ### <a name="code"></a>程式碼
  [!code-csharp[FxCop.Usage.GetHashCodeErrorClass#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeErrorClass/cs/FxCop.Usage.GetHashCodeErrorClass.cs#1)]
@@ -79,7 +79,7 @@ ms.locfileid: "85538797"
 ## <a name="structure-example"></a>結構範例
 
 ### <a name="description"></a>描述
- 下列範例顯示違反此規則的結構（實值型別）。
+ 下列範例顯示違反此規則的結構 (數值型別) 。
 
 ### <a name="code"></a>程式碼
  [!code-csharp[FxCop.Usage.GetHashCodeErrorStruct#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeErrorStruct/cs/FxCop.Usage.GetHashCodeErrorStruct.cs#1)]

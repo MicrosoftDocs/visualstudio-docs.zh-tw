@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 88ff2a1da1f937fd4011932979bd95057eb40dfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205058"
 ---
-# <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
+# <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-描述或指定的處理程序的屬性。  
+描述或指定進程的屬性。  
   
 ## <a name="syntax"></a>語法  
   
@@ -47,29 +47,29 @@ enum enum_PROCESS_INFO_FLAGS { 
   
 ## <a name="members"></a>成員  
  PIFLAG_SYSTEM_PROCESS  
- 表示處理程序是系統處理序。  
+ 表示進程是系統進程。  
   
  PIFLAG_DEBUGGER_ATTACHED  
- 表示處理程序正在偵錯的偵錯工具。 它可能是[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]偵錯工具，或它可能是某些其他偵錯工具，例如 WinDbg。  
+ 表示進程正在由偵錯工具進行調試。 它可能是 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 偵錯工具，也可能是一些其他偵錯工具，例如 WinDbg。  
   
  PIFLAG_PROCESS_STOPPED  
- 表示處理程序已停止。 才有效`PIFLAG_DEBUGGER_ATTACHED`同時指定。 用於[!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)]和更新版本。  
+ 表示進程已停止。 只有 `PIFLAG_DEBUGGER_ATTACHED` 在同時指定時才有效。 在 [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] 和更新版本中提供。  
   
  PIFLAG_PROCESS_RUNNING  
- 表示處理序正在執行。 才有效`PIFLAG_DEBUGGER_ATTACHED`同時指定。 用於[!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)]和更新版本。  
+ 表示進程正在執行中。 只有 `PIFLAG_DEBUGGER_ATTACHED` 在同時指定時才有效。 在 [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] 和更新版本中提供。  
   
 ## <a name="remarks"></a>備註  
- 用於`Flags`隸屬[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)結構。  
+ 用於 `Flags` [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) 結構的成員。  
   
- 這些旗標可能會結合的位元`OR`。  
+ 這些旗標可以與位結合 `OR` 。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

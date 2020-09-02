@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b9b229de3818b00379d95a5c19e35c7e83c845e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465423"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
@@ -33,13 +33,13 @@ HRESULT getEnumTables (
 #### <a name="parameters"></a>參數
 `ppEnumTables`
 
-脫銷傳回[IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)物件。 使用此介面來列舉符號存放區中的資料表。
+擴展傳回 [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) 物件。 使用此介面來列舉符號存放區中的資料表。
 
 ## <a name="return-value"></a>傳回值
-如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
-這個範例會呈現一般函式，該函式會使用 `getEnumTables` 方法來取得特定的列舉值物件。 如果找到列舉值，函數會傳回可轉換成所需介面的指標。否則，函數會傳回 `NULL` 。
+此範例會顯示一般函數，其使用 `getEnumTables` 方法來取得特定的列舉值物件。 如果找到列舉值，則函式會傳回可轉換成所需介面的指標;否則，函數會傳回 `NULL` 。
 
 ```C++
 IUnknown *GetTable(IDiaSession *pSession, REFIID iid)

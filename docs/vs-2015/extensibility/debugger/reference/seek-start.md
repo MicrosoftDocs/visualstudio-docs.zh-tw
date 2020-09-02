@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 45e664b153c4d643d8fbe8f1cefb207e0a76e18e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204883"
 ---
-# <a name="seekstart"></a>SEEK_START
+# <a name="seek_start"></a>SEEK_START
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定要啟動的反組譯碼資料流中搜尋的位置。  
+指定要在反組解碼資料流程中開始搜尋的位置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -49,31 +49,31 @@ public enum enum_SEEK_START { 
   
 ## <a name="members"></a>成員  
  SEEK_START_BEGIN  
- 搜尋目前文件的開頭開始。  
+ 在目前檔的開頭開始搜尋。  
   
  SEEK_START_END  
- 啟動搜尋目前文件的結尾。  
+ 開始搜尋目前檔的結尾。  
   
  SEEK_START_CURRENT  
- 啟動搜尋目前文件目前的位置。  
+ 開始搜尋目前檔的目前位置。  
   
  SEEK_START_CODECONTEXT  
- 開始搜尋在目前文件指定的程式碼內容。  
+ 開始搜尋目前檔的指定程式碼內容。  
   
  SEEK_START_CODELOCID  
- 開始搜尋在指定的程式碼位置識別碼。 透過呼叫所取得的程式碼位置識別項[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)。  
+ 開始搜尋指定的程式碼位置識別碼。 藉由呼叫 [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)來取得程式碼位置識別碼。  
   
 ## <a name="remarks"></a>備註  
- 作為引數[搜尋](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)方法。  
+ 以引數的形式傳遞至 [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) 方法。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [搜尋](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [尋求](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)   
  [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)

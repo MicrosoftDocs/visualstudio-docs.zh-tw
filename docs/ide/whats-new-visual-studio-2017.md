@@ -19,15 +19,15 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: f7cc538fed6011dd3d972df7763a221c3deee985
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386845"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 
-**已針對[15.9 版本](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)更新**
+**[15.9 版](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)的更新**
 
 想要從舊版 Visual Studio 升級嗎？ Visual Studio 2017 提供您下列功能：適用於任何開發人員、任何應用程式和任何平台的卓越生產力。 您可使用 Visual Studio 2017 來開發適用於 Android、iOS、Windows、Linux、Web 及雲端的應用程式。 快速編碼、輕鬆偵錯及診斷、頻繁測試，然後自信地發行。 您也可以建置自己的擴充功能來擴充和自訂 Visual Studio 。 使用版本控制、變得敏捷、使用這個版本有效率地共同作業！
 
@@ -36,17 +36,17 @@ ms.locfileid: "86386845"
 
 以下是自舊版 Visual Studio 2015 以來，我們所做變更的高階回顧：
 
-* 已重新**[定義的基本](#redefined-fundamentals)** 概念。 新的安裝體驗意謂著您可以安裝得更快，且可以在需要時安裝所需的項目。
-* **[效能和生產力](#performance-and-productivity)**。 我們已經著重於新的和現代的行動、雲端和桌面開發功能。 而且，與以前相比，Visual Studio 的啟動速度、回應速度都變得更快，使用的記憶體也較少。
+* 重新**[定義基本](#redefined-fundamentals)** 概念。 新的安裝體驗意謂著您可以安裝得更快，且可以在需要時安裝所需的項目。
+* **[效能與生產力](#performance-and-productivity)**。 我們已經著重於新的和現代的行動、雲端和桌面開發功能。 而且，與以前相比，Visual Studio 的啟動速度、回應速度都變得更快，使用的記憶體也較少。
 * **[使用 Azure 進行雲端應用程式開發](#cloud-app-development-with-azure)**。 一套內建的 Azure 工具套件，可讓您輕鬆建立由 Microsoft Azure 提供技術的雲端優先應用程式。 Visual Studio 可讓您在 Azure 上輕鬆設定、建置、偵錯、封裝及部署應用程式與服務。
 * **[Windows 應用程式開發](#windows-app-development)**。 在 Visual Studio 2017 中，您可以使用 UWP 範本建立適用於所有 Windows 10 裝置 (電腦、平板電腦、手機、Xbox、HoloLens、Surface Hub 等) 的單一專案。
-* 行動**[應用程式開發](#mobile-app-development)**。 Xamarin 將您的多平台行動需求整合到一個核心程式碼基底和一組技術，讓您能快速創新並獲得成果。
+* 行動裝置**[應用程式開發](#mobile-app-development)**。 Xamarin 將您的多平台行動需求整合到一個核心程式碼基底和一組技術，讓您能快速創新並獲得成果。
 * **[跨平臺開發](#cross-platform-development)**。 將軟體順暢地提供給任何目標平台。 透過 Redgate Data Tools 將 DevOps 程序延伸到 SQL Server，並從 Visual Studio 安全地將資料庫部署自動化。 或者，使用 .NET Core 來撰寫在未修改的情況下跨 Windows、Linux 和 macOS 作業系統執行的應用程式和程式庫
 * **[遊戲開發](#games-development)**。 透過 Visual Studio Tools for Unity (VSTU)，您可以在 C# 中使用 Visual Studio 來撰寫遊戲和編輯器指令碼，然後使用其強大的偵錯工具來尋找及修正錯誤。
 * **[AI 開發](#ai-development)**。 有了 Visual Studio Tools for AI，您就可以使用 Visual Studio 的生產力功能來加速 AI 的創新。 建置、測試及部署與 Azure Machine Learning 無縫整合的深度學習/AI 解決方案，以獲得強固的測試功能。
 
 > [!NOTE]
-> 如需 Visual Studio 2017 中新特性和功能的完整清單，請參閱[目前的版本](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)資訊。 如需查看未來的功能供應專案，請參閱[預覽版本](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017)資訊。
+> 如需 Visual Studio 2017 中新特性和功能的完整清單，請參閱 [目前的版本](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)資訊。 若要查看未來的功能供應專案，請參閱 [Preview 版本](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017)資訊。
 
 以下是一些最值得注意的 Visual Studio 2017 改善和新功能的詳細資訊。
 
@@ -82,7 +82,7 @@ Visual Studio 可讓您在需要功能時，以更輕鬆、更快的方式只安
 
 我們已在 Visual Studio 中引進新的身分識別服務，可讓您在 Team Explorer、Azure Tools、Microsoft Store 發行等工具之間共用使用者帳戶。
 
-此外，您也可以保持登入的狀態更久。 Visual Studio 將不會每隔 12 小時要求您重新登入一次。 若要深入瞭解，請參閱[較少的 Visual Studio 登入提示](https://devblogs.microsoft.com/visualstudio/fewer-visual-studio-sign-in-prompts/)的 blog 文章。
+此外，您也可以保持登入的狀態更久。 Visual Studio 將不會每隔 12 小時要求您重新登入一次。 若要深入瞭解，請參閱 [較少的 Visual Studio 登入提示](https://devblogs.microsoft.com/visualstudio/fewer-visual-studio-sign-in-prompts/) blog 文章。
 
 ### <a name="start-visual-studio-faster"></a>更快速啟動 Visual Studio
 
@@ -90,7 +90,7 @@ Visual Studio 可讓您在需要功能時，以更輕鬆、更快的方式只安
 
 ### <a name="faster-on-demand-loading-of-extensions"></a>依需求更快速地載入延伸模組
 
-Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充功能)，讓它們變成在需要時載入，而不是在 IDE 啟動時載入。 想要知道哪些延伸模組影響啟動、解決方案載入和輸入效能嗎？ 您可以在**協助**  >  **管理 Visual Studio 效能**中看到這項資訊。
+Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充功能)，讓它們變成在需要時載入，而不是在 IDE 啟動時載入。 想要知道哪些延伸模組影響啟動、解決方案載入和輸入效能嗎？ 您可以在「**協助**  >  **管理 Visual Studio 效能**」中看到此資訊。
 
   ![Visual Studio 2017 中的選項對話方塊](media/vs2017ide-manage-vs-perf.png)
 
@@ -98,7 +98,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 當您登入 Visual Studio 時，可以更輕鬆地使用慣用的擴充功能來設定每個開發環境。 新的「漫遊擴充功能管理員」會在雲端建立一份同步清單，來記錄您的所有慣用擴充功能。
 
-若要查看 Visual Studio 中的延伸模組清單，請按一下 [**工具**] [擴充功能]  >  **& [更新**]，然後按一下 [**漫遊延伸模組管理員**]。
+若要在 Visual Studio 中查看延伸模組的清單，請按一下 [**工具**延伸模組]  >  **& [更新**]，然後按一下 [**漫遊延伸模組管理員**]。
 
 ![Visual Studio 2017 - [延伸模組和更新] 對話方塊](media/vs2017ide-extensions-and-updates.png)
 
@@ -145,7 +145,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 #### <a name="keep-keybinding-profiles-consistent"></a>讓按鍵繫結關係設定檔保持一致
 
-**15.8 中的新功能**：現在，您可以透過兩個新的鍵盤設定檔：Visual Studio Code 和 ReSharper (Visual Studio)，在工具之間保持一致的按鍵繫結關係。 您可以在 [工具] **Tools**  >  [**選項**]  >  **[一般] [**  >  **鍵盤**] 和頂端的下拉式功能表中找到這些配置。
+**15.8 中的新功能**：現在，您可以透過兩個新的鍵盤設定檔：Visual Studio Code 和 ReSharper (Visual Studio)，在工具之間保持一致的按鍵繫結關係。 您可以在 [**工具**  >  **選項**]  >  的 **[一般**  >  **鍵盤**] 和頂端下拉式功能表中找到這些架構。
 
   ![Visual Studio Code 和 ReSharper 的新按鍵繫結關係設定檔](media/vs-keyboard-mappings-code-resharper.png)
 
@@ -174,15 +174,15 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 我們已重新整理瀏覽體驗，以協助您在從 A 移到 B 時更為堅定而不易分心。
 
-* **15.4 的新**功能：**移至定義**（**Ctrl** + **按一下**或**F12**） &ndash; 滑鼠使用者可以更輕鬆地流覽至成員的定義，方法是按下**Ctrl** ，然後按一下該成員。 按住 **Ctrl** 鍵並將滑鼠游標暫留在程式碼符號上，會加上底線並將它轉換成連結。 如需詳細資訊，請參閱[移至定義和查看定義](go-to-and-peek-definition.md)。
+* **15.4 中的新**功能：**移至 [定義**] (**Ctrl** + **click**或**F12**) &ndash; 滑鼠使用者有更簡單的方法，可按**Ctrl**然後按一下成員，以流覽至成員的定義。 按住 **Ctrl** 鍵並將滑鼠游標暫留在程式碼符號上，會加上底線並將它轉換成連結。 如需詳細資訊，請參閱[移至定義和查看定義](go-to-and-peek-definition.md)。
 
-* **移至 [執行**] （**Ctrl** + **F12**） &ndash; 從任何基底類型或成員流覽至其各種不同的部署。
+* **移至 [執行**] (**Ctrl** + **F12**) &ndash; 從任何基底類型或成員流覽至其各種不同的實作為。
 
-* **移至全部**（**ctrl** + **T**或**ctrl** + **，**） &ndash; 直接流覽至任何檔案/類型/成員/符號宣告。 您可以篩選您的結果清單或使用查詢語法 (例如 "f searchTerm" 用於檔案，"t searchTerm" 用於類型等等)。
+* **移至所有** (**ctrl** + **T**或**ctrl** + **，**) &ndash; 直接流覽至任何檔案/類型/成員/符號宣告。 您可以篩選您的結果清單或使用查詢語法 (例如 "f searchTerm" 用於檔案，"t searchTerm" 用於類型等等)。
 
   ![已改善的 [移至全部]](media/vs2017ide-navigation-go-to.png)
 
-* **尋找所有參考**（**Shift** + **F12**） &ndash; 與語法顏色標示，您可以將專案、定義和路徑的組合，分組尋找所有參考結果。 您也可以「鎖定」結果，如此您便可以繼續尋找其他參考，又不會遺失原始結果。
+* 使用語法顏色標示來**尋找所有**參考 (**Shift** + **F12**) &ndash; ，您可以透過專案、定義和路徑的組合，將 [尋找所有參考] 結果分組。 您也可以「鎖定」結果，如此您便可以繼續尋找其他參考，又不會遺失原始結果。
 
   ![新的 [尋找所有參考] 工具](media/vs2017ide-find-all-references.png)
 
@@ -190,15 +190,15 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
   ![Visual Studio 2017 結構視覺化檢視](media/vsIDE-StructureVisualizer.png)
 
-如需新產能功能的詳細資訊，請參閱[Visual Studio 2017：生產力、效能和合作夥伴](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-productivity-performance-and-partners/)的 blog 文章。
+如需新生產力功能的詳細資訊，請參閱 [Visual Studio 2017：生產力、效能和合作夥伴](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-productivity-performance-and-partners/) 的 blog 文章。
 
 ### <a name="visual-c"></a>Visual C++
 
 您將在 Visual Studio 中看到數項改善，例如使用 Visual Studio 來散發「C++ 核心指南」、新增增強的 C++11 和 C++ 功能支援以更新編譯器，以及新增和更新 C++ 程式庫中的功能。 我們還提升了 C++ IDE、安裝工作負載等的效能。
 
-此外，我們已修正編譯器和工具中超過250個 bug 和回報的問題，這些是由客戶透過[c + + 的開發人員社區](https://developercommunity.visualstudio.com/spaces/62/index.html "C + + 開發人員社區")提交。
+此外，我們已修正編譯器和工具中的 250 bug 和回報問題，許多客戶透過 [c + + 的開發人員社群](https://developercommunity.visualstudio.com/spaces/62/index.html "適用于 c + + 的開發人員社群")提交。
 
-如需完整的詳細資訊，請參閱[Visual 2017 中 Visual C++ 的新功能](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)頁面。
+如需完整的詳細資訊，請參閱 [Visual 2017 中 Visual C++ 的新功能](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio) 頁面。
 
 ### <a name="debugging-and-diagnostics"></a>偵錯與診斷
 
@@ -220,9 +220,9 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 **15.5 的新功能**：IntelliTrace 回溯會自動擷取應用程式在每個中斷點和偵錯工具逐步執行事件的快照集。 記錄的快照集可讓您回溯到先前的中斷點或步驟，以檢視應用程式過去的狀態。 如果您想要查看先前的應用程式狀態，但不想要重新啟動偵錯或重新建立所需的應用程式狀態，IntelliTrace 回溯可節省您的時間。
 
-您可以使用 [**調試**程式] 工具列中**的 [回溯**] 和 [**逐步執行**] 按鈕，來流覽和查看快照集。 這些按鈕可巡覽出現在 [診斷工具]**** 視窗之 [事件]**** 索引標籤中的事件。 逐步返回或前進至某個事件會自動啟動所選事件的歷程偵錯。
+您可以使用**調試**程式列中**的 [回溯] 和 [** **下一頁**] 按鈕，流覽和查看快照集。 這些按鈕可巡覽出現在 [診斷工具]**** 視窗之 [事件]**** 索引標籤中的事件。 逐步返回或前進至某個事件會自動啟動所選事件的歷程偵錯。
 
-![Visual Studio 中的新例外狀況協助程式對話方塊](../debugger/media/intellitrace-step-back-icons-description.png  "[逐步執行] 和 [下一頁] 按鈕")
+![Visual Studio 中的新例外狀況協助程式對話方塊](../debugger/media/intellitrace-step-back-icons-description.png  "逐步執行和向前按鈕")
 
 如需詳細資訊，請參閱[使用 IntelliTrace 回溯檢視快照集](../debugger/view-historical-application-state.md)頁面。
 
@@ -243,7 +243,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 我們已包含工具來協助您使用先行編譯的 C# 類別庫來開發 Azure 函式，以作為「Azure 開發」工作負載的一部分。 現在您可以在本機開發電腦上進行建置、執行和偵錯，然後從 Visual Studio 直接發行至 Azure。
 
-如需詳細資訊，請參閱[Visual Studio 的 Azure Functions 工具](/azure/azure-functions/functions-develop-vs)頁面。
+如需詳細資訊，請參閱 [Azure Functions tools for Visual Studio](/azure/azure-functions/functions-develop-vs) 頁面。
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>使用即時 Azure 應用程式中的快照點和記錄點對即時 ASP.NET 應用程式進行偵錯
 
@@ -283,7 +283,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 ### <a name="entitlements-editor"></a>權利編輯器
 
-**15.3 的新功能**：針對 iOS 開發需求，我們已新增獨立權利編輯器。 它包含可輕鬆地瀏覽的使用者易記 UI。 若要啟動它，請按兩下您的*plist*檔案。
+**15.3 的新功能**：針對 iOS 開發需求，我們已新增獨立權利編輯器。 它包含可輕鬆地瀏覽的使用者易記 UI。 若要啟動它，請按兩下 *plist* 檔案。
 
 ![Xamarin 的權利編輯器](media/xamarin-entitlements-editor.png)
 
@@ -309,11 +309,11 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-**15.5 的新**功能： Visual Studio App Center &mdash; 現在已針對 Android、iOS、macOS 和 Windows 應用程式正式運作，可讓 &mdash; 您管理應用程式的生命週期所需的所有專案，包括自動化組建、在雲端中實際裝置上進行測試、散發給 Beta 測試人員與應用程式商店，以及透過損毀和分析資料監視真實世界的使用方式。 所有功能都支援以 Objective-C、Swift、Java、C#、Xamarin 和 React Native 撰寫的應用程式。
+**15.5 的新**功能 Visual Studio App Center：適用于 &mdash; Android、iOS、macOS 和 Windows 應用程式的新功能 &mdash; ，具備管理應用程式生命週期所需的一切，包括自動化組建、在雲端中的實際裝置上進行測試、散發給搶鮮版（Beta）測試人員和應用程式商店，以及透過損毀與分析資料監視實際的使用方式。 所有功能都支援以 Objective-C、Swift、Java、C#、Xamarin 和 React Native 撰寫的應用程式。
 
   ![Visual Studio 應用程式中心測試環境](media/app-center-test-env.png)
 
-如需詳細資訊，請參閱[應用程式中心簡介：在雲端中建立、測試、散發及監視應用程式的](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/)blog 文章。
+如需詳細資訊，請參閱 [應用程式中心簡介：建立、測試、散發及監視雲端 blog 文章中的應用程式](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) 。
 
 ## <a name="cross-platform-development"></a>跨平台開發
 
@@ -342,7 +342,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 **15.3 的新功能**：Visual Studio 2017 版本 15.3 支援 .NET Core 2.0 開發 使用 .NET Core 2.0 需要分別下載和安裝 .NET Core 2.0 SDK。
 
-如需詳細資訊，請參閱[.Net Core 指南](/dotnet/core/index)頁面。
+如需詳細資訊，請參閱 [.Net Core 指南](/dotnet/core/index) 頁面。
 
 ## <a name="games-development"></a>遊戲開發
 
@@ -366,7 +366,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 我們對 Visual Studio 2017 的更新通常附帶可大幅改善您開發體驗的新功能。 以下提供最值得您注意的更新回顧，目前處於實驗性預覽：
 
-* **[Live Share](https://visualstudio.microsoft.com/services/live-share/)**，這是一種新工具，可讓您將程式碼基底和其內容與組員共用，並直接從 Visual Studio 內取得即時雙向協同作業。 組員可透過 Live Share 來閱讀、瀏覽、編輯和偵錯您與其共用的專案，過程相當自然且安全。<br><br>如需詳細資訊，請參閱 [Live Share 常見問題集](/visualstudio/liveshare/faq)。<br><br>
+* **[Live Share](https://visualstudio.microsoft.com/services/live-share/)** 是一種新工具，可讓您透過組員共用程式碼基底和其內容，並直接從 Visual Studio 內取得即時雙向共同作業。 組員可透過 Live Share 來閱讀、瀏覽、編輯和偵錯您與其共用的專案，過程相當自然且安全。<br><br>如需詳細資訊，請參閱 [Live Share 常見問題集](/visualstudio/liveshare/faq)。<br><br>
 * **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**：這項新功能使用了 AI 帶來更棒的內容感知程式碼完成以改善軟體開發，可引導開發人員遵循其小組的模式與風格進行編碼、找出難以發現的程式碼問題，並將程式碼檢閱聚焦於真正重要之處。 <br><br>如需詳細資訊，請參閱 [IntelliCode 常見問題集](/visualstudio/intellicode/faq)。
 
 想深入了解 Visual Studio 2017 中還包含哪些內容嗎？ 請參閱 [Visual Studio 路程圖](/visualstudio/productinfo/vs2018-roadmap)頁面。
@@ -381,7 +381,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 ### <a name="report-a-problem"></a>回報問題
 
-有時候，訊息並不足以表達您所遇到問題的所有影響。 如果您遇到 Visual Studio 停止回應、當機或其他效能問題的問題，您可以使用 [回報**問題**] 工具，輕鬆地與我們分享重現步驟和支援檔案（例如螢幕擷取畫面和追蹤和堆積傾印檔案）。 如需如何使用此工具的詳細資訊，請參閱[如何回報問題](how-to-report-a-problem-with-visual-studio.md)頁面。
+有時候，訊息並不足以表達您所遇到問題的所有影響。 如果您遇到 Visual Studio 停止回應、當機或其他效能問題的問題，您可以輕鬆地共用重現步驟和 (支援檔案（例如螢幕擷取畫面），以及使用「回報 **問題** 」工具) 的追蹤和堆積傾印檔案。 如需如何使用此工具的詳細資訊，請參閱 [如何報告問題](how-to-report-a-problem-with-visual-studio.md) 頁面。
 
 ## <a name="see-also"></a>另請參閱
 

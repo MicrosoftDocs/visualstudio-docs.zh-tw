@@ -23,10 +23,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8307bc2c9efcbbab531754cd2d49fa18b04cc48a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698630"
 ---
 # <a name="cl-task"></a>CL 工作
@@ -49,7 +49,7 @@ ms.locfileid: "65698630"
   
    選擇性的 String 參數。  
   
-   命令列選項清單。 例如，"/*option1* /*option2* /*option#*"。 使用此參數，來指定任何其他工作參數未表示的命令列選項。  
+   命令列選項清單。 例如，"/*option1*  / *option2*  / *option #*"。 使用此參數，來指定任何其他工作參數未表示的命令列選項。  
   
    如需詳細資訊，請參閱[編譯器選項](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c)。  
   
@@ -81,13 +81,13 @@ ms.locfileid: "65698630"
   
   - **NoListing** - *\<none>*  
   
-  - **AssemblyCode** - **/FA**  
+  - **AssemblyCode**  - **/FA**  
   
-  - **AssemblyAndMachineCode** - **/FAc**  
+  - **AssemblyAndMachineCode**  - **/FAc**  
   
-  - **AssemblyAndSourceCode** - **/FAs**  
+  - **AssemblyAndSourceCode**  - **/FAs**  
   
-  - **All** - **/FAcs**  
+  - **全部**  - **/FAcs**  
   
     如需詳細資訊，請參閱 [/FA、/Fa (清單檔)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402) 中的 **/FA**、**/FAc**、**/FAs** 及 **/FAcs** 選項。  
   
@@ -99,13 +99,13 @@ ms.locfileid: "65698630"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **Default** -                          *\<none>*  
+  - **預設** -                          *\<none>*  
   
-  - **StackFrameRuntimeCheck** - **/RTCs**  
+  - **StackFrameRuntimeCheck**  - **/RTCs**  
   
-  - **UninitializedLocalUsageCheck** - **/RTCu**  
+  - **UninitializedLocalUsageCheck**  - **/RTCu**  
   
-  - **EnableFastChecks** -                          **/RTC1**  
+  - **EnableFastChecks**  -                          **/RTC1**  
   
     如需詳細資訊，請參閱 [/RTC (執行階段錯誤檢查)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368)。  
   
@@ -131,7 +131,7 @@ ms.locfileid: "65698630"
   
    如果是 `true`，即會偵測某些會覆寫傳回位址的緩衝區滿溢，此為用來惡意探索不會強制執行緩衝區大小限制之程式碼的常用技巧。  
   
-   如需詳細資訊，請參閱 [/GS (緩衝區安全性檢查)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)。  
+   如需詳細資訊，請參閱 [/gs (緩衝區安全性檢查) ](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)。  
   
 - **BuildingInIDE**  
   
@@ -147,11 +147,11 @@ ms.locfileid: "65698630"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **Cdecl** - **/Gd**  
+  - **Cdecl**  - **/Gd**  
   
-  - **FastCall** -                          **/Gr**  
+  - **FastCall**  -                          **/Gr**  
   
-  - **StdCall** -                          **/Gz**  
+  - **StdCall**  -                          **/Gz**  
   
     如需詳細資訊，請參閱 [/Gd、/Gr、/Gv、/Gz (呼叫慣例)](https://msdn.microsoft.com/library/fd3110cb-2d77-49f2-99cf-a03f9ead00a3)。  
   
@@ -163,11 +163,11 @@ ms.locfileid: "65698630"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **Default** - *\<none>*  
+  - **預設** - *\<none>*  
   
-  - **CompileAsC** - **/TC**  
+  - **CompileAsC**  - **/Tc**  
   
-  - **CompileAsCpp** - **/TP**  
+  - **CompileAsCpp**  - **/Tp**  
   
     如需詳細資訊，請參閱 [/Tc、/Tp、/TC、/TP (指定原始程式檔類型)](https://msdn.microsoft.com/library/7d9d0a65-338b-427c-8b48-fff30e2f9d2b)。  
   
@@ -179,23 +179,23 @@ ms.locfileid: "65698630"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **false** - *\<none>*  
+  - **假** - *\<none>*  
   
-  - **true** - **/clr**  
+  - **true**  - **/clr**  
   
-  - **Pure** - **/clr:pure**  
+  - **單純**  - **/clr： pure**  
   
-  - **Safe** - **/clr:safe**  
+  - **安全**  - **/clr： safe**  
   
-  - **OldSyntax** - **/clr:oldSyntax**  
+  - **OldSyntax**  - **/clr： oldSyntax**  
   
-    如需詳細資訊，請參閱 [/clr (Common Language Runtime 編譯)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)。  
+    如需詳細資訊，請參閱 [/clr (Common Language Runtime 編譯) ](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)。  
   
 - **CreateHotpatchableImage**  
   
    選擇性的 Boolean 參數。  
   
-   如果是 `true`，則會告知編譯器來準備「Hotpatch 功能」所需的映像。 此參數會確認每個函式的第一個指令都是兩個位元組，這是 Hotpatch 功能所需要的。  
+   如果是 `true`，則會告知編譯器來準備「Hotpatch 功能」** 所需的映像。 此參數會確認每個函式的第一個指令都是兩個位元組，這是 Hotpatch 功能所需要的。  
   
    如需詳細資訊，請參閱 [/hotpatch (建立可進行 Hotpatch 的映像)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798)。  
   
@@ -207,11 +207,11 @@ ms.locfileid: "65698630"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **OldStyle** - **/Z7**  
+  - **OldStyle**  - **/Z7**  
   
-  - **ProgramDatabase** - **/Zi**  
+  - **ProgramDatabase**  - **/Zi**  
   
-  - **EditAndContinue** - **/ZI**  
+  - **EditAndContinue**  - **/Zi**  
   
     如需詳細資訊，請參閱 [/Z7、/Zi、/ZI (偵錯資訊格式)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)。  
   
@@ -239,9 +239,9 @@ ms.locfileid: "65698630"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **StreamingSIMDExtensions** - **/arch:SSE**  
+  - **StreamingSIMDExtensions**  - **/arch： SSE**  
   
-  - **StreamingSIMDExtensions2** - **/arch:SSE2**  
+  - **StreamingSIMDExtensions2**  - **/arch： SSE2**  
   
     如需詳細資訊，請參閱 [/arch (x86)](https://msdn.microsoft.com/library/9dd5a75d-06e4-4674-aade-33228486078d)。  
   
@@ -269,13 +269,13 @@ ms.locfileid: "65698630"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **None** - **/errorReport:none**  
+  - **無**  - **/errorReport：無**  
   
-  - **Prompt** - **/errorReport:prompt**  
+  - **提示**  - **/errorReport： prompt**  
   
-  - **Queue** - **/errorReport:queue**  
+  - **佇列**  - **/errorReport： queue**  
   
-  - **Send** - **/errorReport:send**  
+  - **傳送**  - **/errorReport：傳送**  
   
     如需詳細資訊，請參閱 [/errorReport (回報編譯器內部錯誤)](https://msdn.microsoft.com/library/819828f8-b0a5-412c-9c57-bf822f17e667)。  
   
@@ -287,13 +287,13 @@ ms.locfileid: "65698630"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **false** - *\<none>*  
+  - **假** - *\<none>*  
   
-  - **Async** - **/EHa**  
+  - **非同步**  - **/Eha**  
   
-  - **Sync** - **/EHsc**  
+  - **同步**  - **/Ehsc**  
   
-  - **SyncCThrow** - **/EHs**  
+  - **SyncCThrow**  - **/Ehs**  
   
     如需詳細資訊，請參閱 [/EH (例外狀況處理模型)](https://msdn.microsoft.com/library/754b916f-d206-4472-b55a-b6f1b0f2cb4d)。  
   
@@ -313,11 +313,11 @@ ms.locfileid: "65698630"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **Neither** - *\<none>*  
+  - **也** - *\<none>*  
   
-  - **Size** - **/Os**  
+  - **大小**  - **/Os**  
   
-  - **Speed** - **/Ot**  
+  - **速度**  - **/Ot**  
   
     如需詳細資訊，請參閱 [/Os、/Ot (偏好小的程式碼、偏好快的程式碼)](https://msdn.microsoft.com/library/9a340806-fa15-4308-892c-355d83cac0f2)。  
   
@@ -337,11 +337,11 @@ ms.locfileid: "65698630"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **Precise** - **/fp:precise**  
+  - **精確**  - **/fp：精確**  
   
-  - **Strict** - **/fp:strict**  
+  - **Strict**  - **/fp： strict**  
   
-  - **Fast** - **/fp:fast**  
+  - **快速**  - **/fp： fast**  
   
     如需詳細資訊，請參閱 [/fp (指定浮點行為)](https://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e)。  
   
@@ -363,7 +363,7 @@ ms.locfileid: "65698630"
   
 - **ForcedUsingFiles**  
   
-   選擇性的 **String[]** 參數。  
+   選擇性的 **String []** 參數。  
   
    導致前置處理器要一或多個指定的 **#using** 檔案。  
   
@@ -395,19 +395,19 @@ ms.locfileid: "65698630"
   
 - **InlineFunctionExpansion**  
   
-   選擇性的 **String** 參數。  
+   選擇性的 **字串** 參數。  
   
    選取組建的內嵌函式展開等級。  
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **Default** - *\<none>*  
+  - **預設** - *\<none>*  
   
-  - **Disabled** - **/Ob0**  
+  - **已停用**  - **/Ob0**  
   
-  - **OnlyExplicitInline** - **/Ob1**  
+  - **OnlyExplicitInline**  - **/Ob1**  
   
-  - **AnySuitable** - **/Ob2**  
+  - **AnySuitable**  - **/Ob2**  
   
     如需詳細資訊，請參閱 [/Ob (內嵌函式展開)](https://msdn.microsoft.com/library/f134e6df-e939-4980-a01d-47425dbc562a)。  
   
@@ -437,15 +437,15 @@ ms.locfileid: "65698630"
   
 - **ObjectFileName**  
   
-   選擇性的 **String** 參數。  
+   選擇性的 **字串** 參數。  
   
    指定要使用的目的檔 (.obj) 名稱或目錄，而不使用預設值。  
   
-   如需詳細資訊，請參閱 [/Fo (目的檔名稱)](https://msdn.microsoft.com/library/0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6)。  
+   如需詳細資訊，請參閱 [/fo (的目的檔名) ](https://msdn.microsoft.com/library/0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6)。  
   
 - **ObjectFiles**  
   
-   選擇性的 **String[]** 參數。  
+   選擇性的 **String []** 參數。  
   
    目的檔清單。  
   
@@ -473,27 +473,27 @@ ms.locfileid: "65698630"
   
    如需詳細資訊，請參閱 [/openmp (啟用 OpenMP 2.0 支援)](https://msdn.microsoft.com/library/9082b175-18d3-4378-86a7-c0eb95664e13)。  
   
-- **Optimization**  
+- **最佳化**  
   
-   選擇性的 **String** 參數。  
+   選擇性的 **字串** 參數。  
   
    指定各種適用於速度和規模的程式碼最佳化。  
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **Disabled** - **/Od**  
+  - **已停用**  - **/Od**  
   
-  - **MinSpace** - **/O1**  
+  - **MinSpace**  - **/O1**  
   
-  - **MaxSpeed** - **/O2**  
+  - **MaxSpeed**  - **/O2**  
   
-  - **Full** - **/Ox**  
+  - **完整**  - **/Ox**  
   
-    如需詳細資訊，請參閱 [/O 選項 (最佳化程式碼)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)。  
+    如需詳細資訊，請參閱 [/O 選項 (優化程式碼) ](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)。  
   
 - **PrecompiledHeader**  
   
-   選擇性的 **String** 參數。  
+   選擇性的 **字串** 參數。  
   
    在建置期間建立或使用先行編譯標頭檔 (.pch)。  
   
@@ -501,15 +501,15 @@ ms.locfileid: "65698630"
   
   - **NotUsing** - *\<none>*  
   
-  - **Create** - **/Yc**  
+  - **建立**  - **/Yc**  
   
-  - **Use** - **/Yu**  
+  - **使用**  - **/Yu**  
   
     如需詳細資訊，請參閱 [/Yc (建立先行編譯標頭檔)](https://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) 和 [/Yu (使用先行編譯標頭檔)](https://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f)。 另請參閱此表格中的 **PrecompiledHeaderFile** 和 **PrecompiledHeaderOutputFile** 參數。  
   
 - **PrecompiledHeaderFile**  
   
-   選擇性的 **String** 參數。  
+   選擇性的 **字串** 參數。  
   
    指定要建立或使用的先行編譯標頭檔名稱。  
   
@@ -517,7 +517,7 @@ ms.locfileid: "65698630"
   
 - **PrecompiledHeaderOutputFile**  
   
-   選擇性的 **String** 參數。  
+   選擇性的 **字串** 參數。  
   
    指定先行編譯標頭檔的路徑名稱，而不使用預設的路徑名稱。  
   
@@ -591,13 +591,13 @@ ms.locfileid: "65698630"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **MultiThreaded** - **/MT**  
+  - **多執行緒**  - **/Mt**  
   
-  - **MultiThreadedDebug** - **/MTd**  
+  - **MultiThreadedDebug**  - **/MTd**  
   
-  - **MultiThreadedDLL** - **/MD**  
+  - **MultiThreadedDLL**  - **/Md**  
   
-  - **MultiThreadedDebugDLL** - **/MDd**  
+  - **Multithreadeddll**  - **/MDd**  
   
     如需詳細資訊，請參閱 [/MD、/MT、/LD (使用執行階段程式庫)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579)。  
   
@@ -625,7 +625,7 @@ ms.locfileid: "65698630"
   
    如需詳細資訊，請參閱 [/RTC (執行階段錯誤檢查)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368) 中的 **/RTCc** 選項。  
   
-- **Sources**  
+- **來源**  
   
    必要的 `ITaskItem[]` 參數。  
   
@@ -647,17 +647,17 @@ ms.locfileid: "65698630"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **Default** - **/Zp1**  
+  - **預設值**  - **/Zp1**  
   
-  - **1Byte** - **/Zp1**  
+  - **1Byte**  - **/Zp1**  
   
-  - **2Bytes** - **/Zp2**  
+  - **2Bytes**  - **/Zp2**  
   
-  - **4Bytes** - **/Zp4**  
+  - **4Bytes**  - **/Zp4**  
   
-  - **8Bytes** - **/Zp8**  
+  - **8Bytes**  - **了/zp8**  
   
-  - **16Bytes** - **/Zp16**  
+  - **16Bytes**  - **/Zp16**  
   
     如需詳細資訊，請參閱 [/Zp (結構成員對應儲存)](https://msdn.microsoft.com/library/5242f656-ed9b-48a3-bc73-cfcf3ed2520f)。  
   
@@ -679,11 +679,11 @@ ms.locfileid: "65698630"
   
 - **TreatSpecificWarningsAsErrors**  
   
-   選擇性的 **String[]** 參數。  
+   選擇性的 **String []** 參數。  
   
    將指定的編譯器警告清單視為錯誤。  
   
-   如需詳細資訊，請參閱 [/w、/W0、/W1、/W2、/W3、/W4、/w1、/w2、/w3、/w4、/Wall、/wd、/we、/wo、/Wv、/WX (警告層級)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f) 中的 **/we**`n` 選項。  
+   如需詳細資訊，請 **/we**參閱 `n` [/W、/W0、/W1、/W2、/W3、/W4、/W1、/W2、/W3、/W4、/Wall、/wd、/we、/wo、/Wv、、、、、/Wx (警告層級) ](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f)的/we 選項。  
   
 - **TreatWarningAsError**  
   
@@ -741,17 +741,17 @@ ms.locfileid: "65698630"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **TurnOffAllWarnings** - **/W0**  
+  - **TurnOffAllWarnings**  - **/W0**  
   
-  - **Level1** - **/W1**  
+  - **級別**  -  1 **/W1**  
   
-  - **Level2** - **/W2**  
+  - **級別 2**  - **/W2**  
   
-  - **Level3** - **/W3**  
+  - **3**  -  級 **/W3**  
   
-  - **Level4** - **/W4**  
+  - **Level4**  - **/W4**  
   
-  - **EnableAllWarnings** - **/Wall**  
+  - **警告**  - **/Wall**  
   
     如需詳細資訊，請參閱 [/w、/W0、/W1、/W2、/W3、/W4、/w1、/w2、/w3、/w4、/Wall、/wd、/we、/wo、/Wv、/WX (警告層級)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f) 中的 **/W**_n_ 選項。  
   
@@ -781,7 +781,7 @@ ms.locfileid: "65698630"
   
    選擇性的 `ITaskItem[]` 參數。  
   
-   指定代表「讀取檔案追蹤記錄檔」的項目陣列。  
+   指定代表「讀取檔案追蹤記錄檔」** 的項目陣列。  
   
    讀取檔案追蹤記錄檔 (.tlog) 包含工作所讀取的輸入檔名稱，並由專案組建系統用來支援累加建置。 如需詳細資訊，請參閱此表格中的 **TrackerLogDirectory** 和 **TrackFileAccess** 參數。  
   
@@ -789,7 +789,7 @@ ms.locfileid: "65698630"
   
    選擇性的 `ITaskItem[]` 參數。  
   
-   指定代表「寫入檔案追蹤記錄檔」的項目陣列。  
+   指定代表「寫入檔案追蹤記錄檔」** 的項目陣列。  
   
    寫入檔案追蹤記錄檔 (.tlog) 包含工作所寫入的輸出檔名稱，並由專案組建系統用來支援累加建置。 如需詳細資訊，請參閱此表格中的 **TrackerLogDirectory** 和 **TrackFileAccess** 參數。  
   
@@ -803,5 +803,5 @@ ms.locfileid: "65698630"
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

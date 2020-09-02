@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 113d6aafbd09f6b726613405a8c1eb82f9e202e5
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330034"
 ---
 # <a name="cvleavespan-function"></a>CvLeaveSpan 函式
@@ -36,7 +36,7 @@ HRESULT CvLeaveSpan(
 ## <a name="return-value"></a>傳回值
  當訊息成功寫入時傳回 S_OK。 發生任何錯誤時傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。
 
-## <a name="requirements"></a>規格需求
+## <a name="requirements"></a>需求
  **標頭︰** *cvmarkers.h*
 
 ## <a name="see-also"></a>另請參閱

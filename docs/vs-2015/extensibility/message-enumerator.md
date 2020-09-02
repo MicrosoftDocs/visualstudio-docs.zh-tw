@@ -12,18 +12,18 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6bd42c825cd45068e13178856e524268b426ec53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194345"
 ---
 # <a name="message-enumerator"></a>訊息列舉程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-下列旗標會用於`TEXTOUTPROC`函式，也就是 IDE 提供呼叫時的回呼函式[SccOpenProject](../extensibility/sccopenproject-function.md) (請參閱[LPTEXTOUTPROC](../extensibility/lptextoutproc.md)如回呼的詳細資訊函式）。  
+下列旗標用於函式 `TEXTOUTPROC` ，這是 IDE 在呼叫 [SccOpenProject](../extensibility/sccopenproject-function.md) 時所提供的回呼函式 (如需回呼函式) 的詳細資訊，請參閱 [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) 。  
   
- 如果 IDE 會要求取消程序，它可能會取消訊息。 在此情況下，原始檔控制外掛程式會使用`SCC_MSG_STARTCANCEL`詢問顯示 IDE**取消** 按鈕。 在此之後，可能會傳送任何一組一般訊息。 如果任何這些傳回`SCC_MSG_RTN_CANCEL`，則外掛程式，則會結束作業，並傳回。 外掛程式也會輪詢`SCC_MSG_DOCANCEL`定期來判斷是否使用者已取消作業。 當所有作業完成都之後，或如果使用者已取消，外掛程式會傳送`SCC_MSG_STOPCANCEL`。 `SCC_MSG_INFO`，SCC_MSG_WARNING，並且 SCC_MSG_ERROR 類型用於捲動訊息清單中顯示的訊息。 `SCC_MSG_STATUS` 是一種特殊類型，指出文字應該出現在狀態列或暫存的顯示區域中。 它不會永久清單中。  
+ 如果系統要求您取消程式，它可能會取得其中一個取消訊息。 在此情況下，原始檔控制外掛程式會使用 `SCC_MSG_STARTCANCEL` 來要求 IDE 顯示 [ **取消** ] 按鈕。 在此之後，可能會傳送任何一般訊息集。 如果其中任何一項傳回，則外掛程式會結束作業 `SCC_MSG_RTN_CANCEL` 並傳回。 此外掛程式也會定期輪詢 `SCC_MSG_DOCANCEL` ，以判斷使用者是否已取消作業。 當所有作業完成，或使用者已取消時，即會傳送外掛程式 `SCC_MSG_STOPCANCEL` 。 `SCC_MSG_INFO`、SCC_MSG_WARNING 和 SCC_MSG_ERROR 類型用於顯示在訊息滾動清單中的訊息。 `SCC_MSG_STATUS` 是一種特殊類型，表示文字應顯示在狀態列或暫時顯示區域中。 它不會永久保留在清單中。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,31 +43,31 @@ enum { 
   
 ## <a name="members"></a>成員  
  SCC_MSG_RTN_CANCEL  
- 傳回從回呼，指出 [取消]。  
+ 從回呼返回以表示取消。  
   
  SCC_MSG_RTN_OK  
- 傳回從回呼，以繼續。  
+ 從回呼返回以繼續。  
   
  SCC_MSG_INFO  
- 是參考訊息。  
+ 訊息僅供參考。  
   
  SCC_MSG_WARNING  
- 這是一個警告訊息。  
+ 訊息是警告。  
   
  SCC_MSG_ERROR  
- 這是一個錯誤訊息。  
+ 訊息是錯誤。  
   
  SCC_MSG_STATUS  
- 訊息是針對狀態列。  
+ 訊息適用于狀態列。  
   
  SCC_MSG_DOCANCEL  
- 沒有文字;傳回 IDE`SCC_MSG_RTN_OK`或`SCC_MSG_RTN_CANCEL`。  
+ 沒有文字;IDE 會傳回 `SCC_MSG_RTN_OK` 或 `SCC_MSG_RTN_CANCEL` 。  
   
  SCC_MSG_STARTCANCEL  
- 啟動 [取消] 迴圈。  
+ 啟動取消迴圈。  
   
  SCC_MSG_STOPCANCEL  
- 取消迴圈就會停止。  
+ 停止取消迴圈。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)   

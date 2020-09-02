@@ -1,5 +1,5 @@
 ---
-title: IEnum調試程式2::跳過 |微軟文件
+title: IEnumDebugPrograms2：： Skip |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7459e6dae6487fbb9cec3e82a9d8ba01fbfef2a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715596"
 ---
 # <a name="ienumdebugprograms2skip"></a>IEnumDebugPrograms2::Skip
-跳過指定數量的元素。
+略過指定的元素數目。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int Skip(
 
 ## <a name="parameters"></a>參數
 `celt`\
-[在]要跳過的元素數。
+在要略過的元素數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回 `S_OK`。 如果`S_FALSE``celt`大於剩餘元素數,則返回;否則,返回錯誤代碼。
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果 `celt` 大於剩餘元素的數目，則傳回，否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 如果`celt`指定大於剩餘元素數的值,則枚舉將設置為末尾`S_FALSE`並返回。
+ 如果 `celt` 指定的值大於剩餘的元素數目，則列舉會設定為 end，並 `S_FALSE` 傳回。
 
 ## <a name="see-also"></a>另請參閱
 - [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)

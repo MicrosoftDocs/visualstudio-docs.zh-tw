@@ -1,5 +1,5 @@
 ---
-title: 使用 Interop 組件 |Microsoft Docs
+title: 使用 Interop 元件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7df241773d06574f8d070285c2b45b662ccd6403
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675191"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>使用 Visual Studio Interop 組件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio interop 組件可讓受管理的應用程式存取 COM 介面，提供 Visual Studio 擴充性。 有一些直接的 COM 介面和其 interop 版本之間的差異。 比方說，Hresult 通常統稱為 int 值，和需要處理例外狀況，以相同的方式和參數 (尤其是 out 參數） 的處理方式不同。
+Visual Studio interop 元件可讓 managed 應用程式存取提供 Visual Studio 擴充性的 COM 介面。 直接 COM 介面與其 interop 版本之間有一些差異。 例如，Hresult 通常會表示為 int 值，而且需要以與例外狀況相同的方式來處理，而參數 (特別是參數) 的處理方式不同。
 
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>處理從 COM 傳回給 Managed 程式碼的 HRESULT
  當您透過 Managed 程式碼呼叫 COM 介面時，請檢查 HRESULT 值，並視需要擲回例外狀況。 <xref:Microsoft.VisualStudio.ErrorHandler> 類別包含會擲回 COM 例外狀況的 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 方法 (視傳遞給它的 HRESULT 值而定)。
@@ -30,7 +30,7 @@ Visual Studio interop 組件可讓受管理的應用程式存取 COM 介面，�
  根據預設，<xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 只要傳遞的 HRESULT 值小於零就會擲回例外狀況。 如果這類 HRESULT 是可接受值，而且不應該擲回任何例外狀況，則在測試值之後，應該會將其他 HRESULT 的值傳遞給 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>。 如果正在測試的 HRESULT 符合明確傳遞給 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 的任何 HRESULT 值，則不會擲回任何例外狀況。
 
 > [!NOTE]
-> <xref:Microsoft.VisualStudio.VSConstants>類別包含常數常見 hresults，例如<xref:Microsoft.VisualStudio.VSConstants.S_OK>並<xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>，和[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]HRESULT，比方說，<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>和<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>。 <xref:Microsoft.VisualStudio.VSConstants> 也提供 <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> 和 <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> 方法，而這些方法會對應至 COM 中的 SUCCEEDED 和 FAILED 巨集。
+> <xref:Microsoft.VisualStudio.VSConstants>類別包含一般 hresult 的常數，例如 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 和 <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> ，以及 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hresult，例如 <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> 和 <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT> 。 <xref:Microsoft.VisualStudio.VSConstants> 也提供 <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> 和 <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> 方法，而這些方法會對應至 COM 中的 SUCCEEDED 和 FAILED 巨集。
 
  例如，請考慮下列的函式呼叫，其中，<xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> 是可接受的傳回值，但任何其他小於零的 HRESULT 都代表發生錯誤。
 
@@ -50,17 +50,17 @@ Visual Studio interop 組件可讓受管理的應用程式存取 COM 介面，�
 > [!NOTE]
 > 例外狀況會危害效能並用來指出異常程式狀況。 經常發生的狀況應該透過內嵌方式處理，而不是擲回例外狀況。
 
-## <a name="iunknown-parameters-passed-as-type-void"></a>IUnknown 參數傳遞做為類型 void * *
- [Out] 定義為類型的參數尋找`void **`COM 介面，但會定義成`[``iid_is``]`在[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]interop 組件的方法原型。
+## <a name="iunknown-parameters-passed-as-type-void"></a>以 void * * 類型傳遞的 IUnknown 參數
+ 在 COM 介面中尋找定義為類型的 [out] 參數 `void **` ，但是定義為 `[``iid_is``]` [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interop 元件方法原型中的參數。
 
- 某些情況下，會產生 COM 介面`IUnknown`物件，並在 COM 介面然後將它傳遞做為類型`void **`。 這些介面是特別重要因為如果變數定義為 [out] 中的 IDL 中，則`IUnknown`物件是使用參考計數`AddRef`方法。 如果物件未正確地處理，就會發生記憶體流失。
+ 有時候，COM 介面 `IUnknown` 會產生物件，然後 com 介面會將它傳遞為型別 `void **` 。 這些介面特別重要，因為如果變數定義為 IDL 中的 [out]，則 `IUnknown` 會使用方法來計算物件的參考計數 `AddRef` 。 如果物件未正確處理，就會發生記憶體流失。
 
 > [!NOTE]
-> `IUnknown`未明確地釋放時建立的 COM 介面，並在 [out] 的變數中傳回的物件會造成記憶體流失。
+> `IUnknown`COM 介面所建立，並在 [out] 變數中傳回的物件，如果未明確釋放，則會造成記憶體流失。
 
- 處理這類物件的 managed 的方法應該視為<xref:System.IntPtr>為指標`IUnknown`物件，然後呼叫<xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A>方法，以取得物件。 呼叫端應該再將傳回值轉換成任何類型的適用。 當不再需要物件時，呼叫<xref:System.Runtime.InteropServices.Marshal.Release%2A>釋放它。
+ 處理這類物件的 Managed 方法應該視為 <xref:System.IntPtr> 物件的指標 `IUnknown` ，然後呼叫 <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> 方法來取得物件。 接著，呼叫端應該將傳回值轉換成適當的任何類型。 當不再需要物件時，呼叫以釋出該物件 <xref:System.Runtime.InteropServices.Marshal.Release%2A> 。
 
- 以下是呼叫的範例<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>方法，並處理`IUnknown`正確物件：
+ 以下是呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A> 方法並正確處理物件的範例 `IUnknown` ：
 
 ```
 MyClass myclass;
@@ -87,7 +87,7 @@ else
 ```
 
 > [!NOTE]
-> 下列方法將已知`IUnknown`做為類型的物件指標<xref:System.IntPtr>。 在本節中所述，請處理它們。
+> 已知下列方法會將 `IUnknown` 物件指標傳遞為類型 <xref:System.IntPtr> 。 如本節所述進行處理。
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>
 
@@ -101,36 +101,36 @@ else
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>
 
-## <a name="optional-out-parameters"></a>[Out] 參數的選擇性
- 尋找定義為 [out] 參數資料類型 (`int`，`object`等等) 在 COM 介面，但定義為在相同的資料類型的陣列[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]interop 組件的方法原型。
+## <a name="optional-out-parameters"></a>選擇性的 [out] 參數
+ 在 COM 介面中尋找定義為 [out] 資料類型 (、等等) 的參數， `int` `object` 但在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interop 元件方法原型中定義為相同資料類型的陣列。
 
- 某些 COM 介面，例如<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>，將 [out] 參數為選擇性。 如果物件不是必要的這些 COM 介面傳回`null`指標做為該參數，而不是建立 [out] 物件的值。 這是依設計的結果。 這些介面，如`null`指標會假設為一部分的 VSPackage，正確的行為，並會傳回任何錯誤。
+ 某些 COM 介面（例如）會將 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A> [out] 參數視為選擇性。 如果不需要物件，這些 COM 介面會將指標傳回 `null` 為該參數的值，而不是建立 [out] 物件。 這是原廠設定。 針對這些介面， `null` 指標會假設為 VSPackage 正確行為的一部分，而且不會傳回任何錯誤。
 
- 因為 CLR 不允許的值是 [out] 參數`null`，部分這些介面的設計的行為不是 managed 程式碼中直接提供。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Interop 組件之受影響的介面的方法能解決問題，藉由定義為陣列的相關參數，因為 CLR 允許的傳遞`null`陣列。
+ 因為 CLR 不允許將 [out] 參數的值設為 `null` ，所以在 managed 程式碼中無法直接使用這些介面的部分設計行為。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]受影響之介面的 interop 元件方法會藉由將相關的參數定義為數組來解決此問題，因為 CLR 允許傳遞 `null` 陣列。
 
- 這些方法的 managed 的實作應該放置`null`至參數時沒有任何要傳回的陣列。 否則，建立正確型別的其中一個項目陣列，而且陣列中放入的傳回值。
+ 當沒有任何要傳回的專案時，這些方法的 Managed 執行應該會將 `null` 陣列放入參數中。 否則，請建立正確型別的單一元素陣列，並將傳回值放在陣列中。
 
- 管理從介面的選擇性 [out] 接收資訊的方法參數會接收參數做為陣列。 只要檢查陣列的第一個元素的值。 如果不是`null`，如同它是原始的參數，將第一個項目。
+ 使用選擇性的 [out] 參數從介面接收資訊的 Managed 方法會以陣列形式接收參數。 只需要檢查陣列的第一個元素值。 如果不是，則會 `null` 將第一個元素視為原始參數。
 
-## <a name="passing-constants-in-pointer-parameters"></a>傳遞常數指標參數
- 參數定義為 [in] 中的 COM 介面指標，但為定義看起來<xref:System.IntPtr>輸入[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]interop 組件的方法原型。
+## <a name="passing-constants-in-pointer-parameters"></a>在指標參數中傳遞常數
+ 在 COM 介面中尋找定義為 [in] 指標的參數，但在 <xref:System.IntPtr> [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interop 元件方法原型中定義為類型。
 
- 當 COM 介面傳遞特殊的值，例如 0、-1 或 – 2，而不是物件指標時，就會發生類似的問題。 不同於[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]，CLR 不允許轉型為物件的常數。 相反地， [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interop 組件會定義為參數<xref:System.IntPtr>型別。
+ 當 COM 介面傳遞特殊值（例如0、-1 或-2）而非物件指標時，就會發生類似的問題。 與不同 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 的是，CLR 不允許將常數轉換成物件。 相反地， [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interop 元件會將參數定義為 <xref:System.IntPtr> 型別。
 
- 這些方法的 managed 的實作應該利用事實<xref:System.IntPtr>類別同時具有`int`和`void *`建構函式來建立<xref:System.IntPtr>從物件或整數常數，以適當的。
+ 這些方法的 Managed 執行應該會利用這個事實： <xref:System.IntPtr> 類別同時具有和函 `int` 式 `void *` ，以視 <xref:System.IntPtr> 需要從物件或整數常數建立。
 
- 管理接收的方法<xref:System.IntPtr>此類型的參數應該使用<xref:System.IntPtr>型別轉換運算子，來處理結果。 第一次轉換<xref:System.IntPtr>至`int`及測試對相關的整數常數。 如果沒有任何值相符時，將它轉換成所需型別物件，並繼續。
+ 接收 <xref:System.IntPtr> 此型別之參數的 Managed 方法應該使用 <xref:System.IntPtr> 型別轉換運算子來處理結果。 首先，將轉換成 <xref:System.IntPtr> `int` ，並針對相關的整數常數進行測試。 如果沒有相符的值，請將它轉換成所需類型的物件，並繼續進行。
 
- 這個範例，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>。
+ 如需這項的範例，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A> 。
 
-## <a name="ole-return-values-passed-as-out-parameters"></a>OLE 會傳回值傳遞做為 [out] 參數
- 尋找具有方法`retval`傳回的值，在 COM 介面，但有`int`傳回值和額外的 [out] 中的陣列參數[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]interop 組件的方法原型。 應該很清楚這些方法需要特殊處理，因為[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]interop 組件方法原型有一個比 COM 介面方法的參數。
+## <a name="ole-return-values-passed-as-out-parameters"></a>以 [out] 參數傳遞的 OLE 傳回值
+ `retval`在 COM 介面中尋找有傳回值的方法，但在 `int` [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interop 元件方法原型中有傳回值和其他的 [out] 陣列參數。 請注意，這些方法需要特殊處理，因為 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interop 元件方法原型具有比 COM 介面方法更多的參數。
 
- 許多 OLE 活動處理的 COM 介面將 OLE 狀態的相關資訊傳送回呼叫端程式儲存在`retval`介面的傳回值。 而不是使用傳回的值，對應[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]interop 組件的方法將資訊傳送回給呼叫程式中的 [out] 儲存陣列參數。
+ 許多處理 OLE 活動的 COM 介面都會將 OLE 狀態的相關資訊傳送回介面傳回值中所儲存的呼叫程式 `retval` 。 相對應的 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interop 元件方法會將資訊傳回給儲存在 [out] 陣列參數中的呼叫程式，而不是使用傳回值。
 
- 這些方法的 managed 的實作應該建立以 [out] 參數相同類型的單一元素陣列，並將它放在參數中。 陣列元素的值應該是適當的 COM 與相同`retval`。
+ 這些方法的 Managed 執行應該建立與 [out] 參數相同類型的單一元素陣列，並將它放在參數中。 陣列元素的值應該與適當的 COM 相同 `retval` 。
 
- 呼叫此類型的介面的 managed 的方法應該提取從 [out] 陣列的第一個項目。 這個項目可以視為，就好像`retval`自對應的 COM 介面傳回的值。
+ 呼叫此型別之介面的 Managed 方法應該從 [out] 陣列提取第一個元素。 您可以將這個元素視為 `retval` 來自對應 COM 介面的傳回值。
 
 ## <a name="see-also"></a>另請參閱
  [與 Unmanaged 程式碼互通](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

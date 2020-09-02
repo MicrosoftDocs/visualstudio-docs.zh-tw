@@ -1,5 +1,5 @@
 ---
-title: MaxFrameworkVersion 元素 （Visual Studio 範本） |Microsoft Docs
+title: " (Visual Studio 範本的 MaxFrameworkVersion 元素) |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,18 +12,18 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4a1c27e42574429dbb6b2eaeb140db484bf29db5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194322"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-指定最大值範本所需的.NET framework 版本。 它會判斷範本是否會顯示在**範本**一節**新增專案**對話方塊中，根據值中選取**目標 Framework 版本**  方塊**加入新的專案** 對話方塊。  
+指定範本所需之 .NET Framework 的最大版本。 它會根據 [**加入新專案**] 對話方塊的 [**目標 Framework 版本**] 方塊中所選取的值，判斷範本是否顯示在 [**加入新專案**] 對話方塊的 [**範本**] 區段中。  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<MaxFrameworkVersion>  
   
 ## <a name="syntax"></a>語法  
@@ -33,7 +33,7 @@ ms.locfileid: "68194322"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
  無。  
@@ -45,18 +45,18 @@ ms.locfileid: "68194322"
   
 |項目|描述|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，以及定義如何顯示在**新的專案**或**加入新項目** 對話方塊。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [ **新增專案** ] 或 [ **加入新** 專案] 對話方塊中顯示的方式。|  
   
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 此文字必須是範本所允許的.NET framework 的最高版本號碼。  
+ 此文字必須是範本所允許之 .NET Framework 的最高版本號碼。  
   
 ## <a name="remarks"></a>備註  
- `MaxFrameworkVersion` 是選擇性項目。 中的項目`TemplateData`.vstemplate 檔案的區段做為篩選條件**範本**一節**加入新的專案** 對話方塊。 其.NET Framework 需求的範本小於`MaxFrameworkVersion`項目值將會顯示，根據值中選取**目標 Framework 版本**方塊**加入新的專案** 對話方塊。 `MaxFrameworkVersion`應該省略項目，除非它是必要項，來為未使用較新的.NET Framework 版本時，不會再顯示在無意間造成範本。  
+  是選擇性元素。 .Vstemplate 檔案之區段中的專案會當做 `TemplateData` [**加入新專案**] 對話方塊的 [**範本**] 區段的篩選準則。 `MaxFrameworkVersion`根據在 [**加入新專案**] 對話方塊的 [**目標 Framework 版本**] 方塊中選取的值，只會顯示其 .NET Framework 需求小於專案值的範本。 `MaxFrameworkVersion`除非必要，否則應該省略元素，如此一來，當範本與較新版本的 .NET Framework 搭配使用時，不會不慎出現範本。  
   
 ## <a name="example"></a>範例  
- 下列範例說明一種標準的中繼資料[!INCLUDE[csprcs](../includes/csprcs-md.md)]類別樣板。  
+ 下列範例說明標準類別範本的中繼資料 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 。  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -75,8 +75,8 @@ ms.locfileid: "68194322"
 </VSTemplate>  
 ```  
   
- 在此範例中，最大版本的.NET Framework 所需的範本，以表示`MaxFrameworkVersion`，為 3.5。 只有當您選取 3.0 或 3.5 中的時，將會顯示上述的範本**目標 Framework 版本**方塊中**加入新的專案** 對話方塊。  
+ 在此範例中，範本所需 .NET Framework 的最大版本 `MaxFrameworkVersion` 為3.5。 只有當您在 [**加入新專案**] 對話方塊的 [**目標 Framework 版本**] 方塊中選取 [3.0] 或 [3.5] 時，才會顯示上述範本。  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

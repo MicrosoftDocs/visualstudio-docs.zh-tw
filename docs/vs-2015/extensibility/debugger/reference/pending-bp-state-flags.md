@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE_FLAGS | Microsoft Docs
+title: PENDING_BP_STATE_FLAGS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39669e2c1268c2e5d2a294f5b95c314500ead78a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205091"
 ---
-# <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
+# <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定暫止中斷點的狀態旗標。  
+指定暫止的中斷點狀態旗標。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,21 +43,21 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
   
 ## <a name="members"></a>成員  
  PBPSF_NONE  
- 預留位置。  
+ 占 位 符。  
   
  PBPSF_VIRTUALIZED  
- 指定虛擬化暫止中斷點，另一個則是每次載入新的程式碼時，繫結。  
+ 指定虛擬暫止中斷點，這是每次載入新的程式碼時要系結的中斷點。  
   
 ## <a name="remarks"></a>備註  
- 用於`flags`隸屬[PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)結構。  
+ 用於 `flags` [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) 結構的成員。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

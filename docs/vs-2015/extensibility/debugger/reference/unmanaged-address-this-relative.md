@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: aaed99b669946f4d2885009ff328ce4e2e62fcae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204757"
 ---
-# <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
+# <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此結構表示的位址，是相對於`this`指標 (`Me` Visual Basic 中)。  
+此結構代表相對於 `this` Visual Basic) 中之指標 (的位址 `Me` 。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,23 +44,23 @@ public struct UNMANAGED_THIS_RELATIVE {
   
 ## <a name="terms"></a>詞彙  
  dwOffset  
- 位元組位移之基底的位置 （例如，類別 vtable 開頭）。  
+ 基底位置的位元組位移 (例如，從類別 vtable 開始) 。  
   
  dwBitOffset  
- 在基底位置的位元位移 (一律為 0 除非參考是位元欄位)。  
+ 從基底位置位移的位數 (一律為0，除非參考位欄位) 。  
   
  dwBitLength  
- 代表地址的位元數 (一律為 0 除非參考是位元欄位)。  
+ 代表位址 (一律為0的位數目，除非參考位欄位) 。  
   
 ## <a name="remarks"></a>備註  
- 此結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構的時機`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設定為`ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`(中的值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。  
+ 當結構的[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 欄位 `DEBUG_ADDRESS_UNION` 設定為 `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` ([ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉) 中的值時，此結構就是 DEBUG_ADDRESS_UNION 結構中聯集的一部分。  
   
 ## <a name="requirements"></a>需求  
- 標頭： sh.h  
+ 標頭： sh. h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
