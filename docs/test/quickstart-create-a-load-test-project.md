@@ -8,10 +8,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4f186e8c10d894b98e789480046d43fc957edd8a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75566406"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>快速入門：建立負載測試專案
@@ -28,7 +28,7 @@ ms.locfileid: "75566406"
 
 如果您尚未安裝 Web 效能與負載測試工具元件，您需要透過 Visual Studio 安裝程式來安裝它。
 
-1. 從 Windows 的 **"開始"** 功能表打開**視覺化工作室安裝程式**。 您還可以在 Visual Studio 中從新專案對話方塊中或通過從功能表列中選擇 **"工具** > **獲取工具和功能**"來訪問它。
+1. 從 Windows 的 [**開始**] 功能表開啟**Visual Studio 安裝程式**。 您也可以從 [新增專案] 對話方塊，或從功能表列選擇 [**工具**  >  **取得工具和功能**]，在 Visual Studio 中存取它。
 
 1. 在 [Visual Studio 安裝程式]**** 中，選擇 [個別元件]**** 索引標籤，然後向下捲動至 [偵錯和測試]**** 區段。 選取 [Web 效能與負載測試工具]****。
 
@@ -62,15 +62,15 @@ ms.locfileid: "75566406"
 
 1. 開啟 Visual Studio。
 
-2. 在啟動視窗中，選擇 **"創建新專案**"。
+2. 在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
-3. 在 [建立新專案]**** 頁面，於搜尋方塊內鍵入 **web test**，然後選取 C# 的 [Web 效能和負載測試專案] \[已淘汰]**** 範本。 選擇 [下一步]****。
+3. 在 [建立新專案]**** 頁面，於搜尋方塊內鍵入 **web test**，然後選取 C# 的 [Web 效能和負載測試專案] \[已淘汰]**** 範本。 選擇 [下一步]。
 
 4. 如果您不想要使用預設名稱，請輸入專案的名稱，然後選擇 [建立]****。
 
 ::: moniker-end
 
-   視覺化工作室創建專案，並在**解決方案資源管理器**中顯示檔。 該專案最初包含一個名為*WebTest1.webtest 的*Web 測試檔案。
+   Visual Studio 會建立專案，並在 **方案總管**中顯示檔案。 專案一開始會包含一個名為 *webtest1.webtest webtest*的 web 測試檔案。
 
 ## <a name="add-a-load-test-to-the-project"></a>將負載測試新增至專案
 
@@ -82,7 +82,7 @@ ms.locfileid: "75566406"
 
    ![新增負載測試精靈 - 第一頁](media/load-test-wizard-page-1.png)
 
-1. 選擇 [下一步]**** 逐步執行精靈，直到您到達 [將測試新增至負載測試情節，並且編輯測試混合]**** 頁面。 選擇 [加入]**** 按鈕。
+1. 選擇 [下一步]**** 逐步執行精靈，直到您到達 [將測試新增至負載測試情節，並且編輯測試混合]**** 頁面。 選擇 [新增] 按鈕。
 
    [新增測試]**** 對話方塊隨即開啟。
 

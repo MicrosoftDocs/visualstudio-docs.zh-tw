@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778241"
 ---
 # <a name="status"></a>狀態
@@ -62,5 +62,5 @@ VSPerfCmd.exe /Status
 ## <a name="see-also"></a>另請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [設定檔ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [分析 ASP.NET web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [分析服務](../profiling/command-line-profiling-of-services.md)

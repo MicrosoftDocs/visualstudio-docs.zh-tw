@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopevent2::獲取原因 |微軟文件
+title: IDebugCanStopEvent2：： GetReason |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 59e611c3ed69528f92a6085cf74aa44efed09144
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734530"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
-獲取調試引擎 (DE) 想要停止的原因。
+取得 debug engine (DE) 要停止的原因。
 
 ## <a name="syntax"></a>語法
 
@@ -41,15 +41,15 @@ int GetReason( 
 
 ## <a name="parameters"></a>參數
 `pcr`\
-[出]從描述此事件原因[的CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md)枚舉中返回值。
+擴展傳回 [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) 列舉中的值，這個值會描述這個事件的原因。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 此方法通常在[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)方法之前調用,以便調用方可以確定是否將非`TRUE`零 (`IDebugCanStopEvent2::CanStop`) 傳遞給 方法。
+ 通常會在 [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) 方法之前呼叫這個方法，讓呼叫端可以決定是否要將非零的 (`TRUE`) 傳遞給 `IDebugCanStopEvent2::CanStop` 方法。
 
- 停止的原因可以是`CANSTOP_ENTRYPOINT`,這意味著 DE 已達到入口`CANSTOP_STEPIN`點,或者表示 DE 已踏入函數。
+ 停止的原因可能是，也 `CANSTOP_ENTRYPOINT` 就是 de 已到達進入點，或者 `CANSTOP_STEPIN` ，這表示已將 de 帶到函數中。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)

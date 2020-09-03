@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af4123b24ab9286e306a1034de4416a31ae76f2b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533064"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>在模型圖表上定義軌跡處理常式
@@ -48,7 +48,7 @@ ms.locfileid: "85533064"
 
 3. 按 F5 測試軌跡處理常式。 如需詳細資訊，請參閱 [執行軌跡處理常式](#Executing)。
 
-4. 藉由複製您專案所建立的檔案**bin \\ \* \\ \* .vsix** ，在另一部電腦上安裝軌跡處理常式。 如需詳細資訊，請參閱 [安裝和解除安裝擴充功能](#Installing)。
+4. 複製您的專案所建立的檔案**bin \\ \* \\ \* ** ，以在另一部電腦上安裝軌跡處理常式。 如需詳細資訊，請參閱 [安裝和解除安裝擴充功能](#Installing)。
 
    以下是替代程序：
 
@@ -74,7 +74,7 @@ ms.locfileid: "85533064"
 
     `System.Windows.Forms`
 
-    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` – 您只有在要擴充圖層圖表時才需要此項。 如需詳細資訊，請參閱[擴充分層圖](../modeling/extend-layer-diagrams.md)。
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` – 您只有在要擴充圖層圖表時才需要此項。 如需詳細資訊，請參閱 [擴充圖層圖表](../modeling/extend-layer-diagrams.md)。
 
 3. 將類別檔案加入專案，並將其內容設定為下列程式碼。
 
@@ -208,7 +208,7 @@ ms.locfileid: "85533064"
 
 2. 除非您的方案已經包含 VSIX 專案，否則請建立一個。
 
-    1. 在**方案總管**中，在方案的快捷方式功能表上，選擇 [**加入**]、[**新增專案**]。
+    1. 在 **方案總管**中，在方案的快捷方式功能表上，選擇 [ **加入**]、[ **新增專案**]。
 
     2. 在 [已安裝的範本] **** 下，展開 [Visual C#] **** 或 [Visual Basic] ****，然後選取 [擴充性] ****。 在中間的資料行中，選擇 [VSIX 專案] ****。
 
@@ -230,7 +230,7 @@ ms.locfileid: "85533064"
 
          **專案**  = *您的類別庫專案*
 
-## <a name="executing-the-gesture-handler"></a><a name="Executing"></a>執行手勢處理常式
+## <a name="executing-the-gesture-handler"></a><a name="Executing"></a> 執行軌跡處理常式
  基於測試目的，請在偵錯模式中執行軌跡處理常式。
 
 #### <a name="to-test-the-gesture-handler"></a>測試軌跡處理常式
@@ -243,7 +243,7 @@ ms.locfileid: "85533064"
 
    - 您如有多個專案，請確定已將 VSIX 專案設定為解決方案的啟始專案。
 
-   - 在 [方案總管] 中，在啟始專案或唯一專案的捷徑功能表上，選擇 [屬性]。 在 [專案屬性編輯器] 中，選擇 [**調試**程式] 索引標籤。請確定 [**啟動外部程式**] 欄位中的字串是的完整路徑名稱 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，通常是：
+   - 在 [方案總管] 中，在啟始專案或唯一專案的捷徑功能表上，選擇 [屬性]。 在專案屬性編輯器中，選擇 [ **Debug** ] 索引標籤。請確定 [ **啟動外部程式** ] 欄位中的字串是的完整路徑名稱 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，通常是：
 
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -265,12 +265,12 @@ ms.locfileid: "85533064"
 
 - 沒有任何已為此類型的目標和卸除項目定義的內建功能。
 
-## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a>執行手勢處理常式
+## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a> 執行軌跡處理常式
 
 ### <a name="the-gesture-handler-methods"></a>軌跡處理常式方法
  軌跡處理常式類別會實作及匯出 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>。 您需要定義的方法如下所示：
 
-|簽章|描述|
+|簽名|描述|
 |-|-|
 |`bool CanDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|傳回 `true` 以允許 `dragEvent` 中參考的來源項目在此目標上卸除。<br /><br /> 這個方法不應該對模型進行變更。 它應該會運作很快，因為它用來判斷使用者移動滑鼠時的箭號狀態。|
 |`void OnDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|根據 `dragEvent`中所參考來源物件更新模型以及目標。<br /><br /> 當使用者拖曳之後釋放滑鼠按鈕時呼叫。|
@@ -282,7 +282,7 @@ ms.locfileid: "85533064"
 
 - `ShapeElement target`. 使用者已將項目拖曳至其上的圖形或圖表。
 
-    `ShapeElement` 是實作中的一個類別，此實作是 UML 類別模型化工具的基礎。 若要降低使 UML 模型和圖表處於不一致狀態的風險，我們建議不要直接使用這個類別的方法。 相反地，將專案包裝在中 `IShape` ，然後使用在[圖表上顯示 UML 模型](../modeling/display-a-uml-model-on-diagrams.md)中所述的方法。
+    `ShapeElement` 是實作中的一個類別，此實作是 UML 類別模型化工具的基礎。 若要降低使 UML 模型和圖表處於不一致狀態的風險，我們建議不要直接使用這個類別的方法。 相反地，將專案包裝在中 `IShape` ，然後使用在 [圖表上顯示 UML 模型](../modeling/display-a-uml-model-on-diagrams.md)中所述的方法。
 
   - 取得 `IShape`：
 
@@ -319,14 +319,14 @@ ms.locfileid: "85533064"
 
      您可以將許多不同類型的項目拖曳到圖表中 - 從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的不同部分，或是從 Windows 桌面。 不同類型的項目在 `IDataObject`中會以不同方式編碼。 若要從其中擷取項目，請參閱適當物件類型的文件。
 
-     如果您的來源物件是從 [UML 模型瀏覽器] 或另一個 UML 圖表拖曳的 UML 元素，請參閱[從 IDataObject 取得 uml 模型](../modeling/get-uml-model-elements-from-idataobject.md)專案。
+     如果您的來源物件是從 UML 模型瀏覽器或從另一個 UML 圖表拖曳的 UML 專案，請參閱 [從 IDataObject 取得 uml 模型元素](../modeling/get-uml-model-elements-from-idataobject.md)。
 
 ### <a name="writing-the-code-of-the-methods"></a>撰寫方法的程式碼
  如需有關如何撰寫程式碼來讀取和更新模型的詳細資訊，請參閱 [Programming with the UML API](../modeling/programming-with-the-uml-api.md)。
 
- 如需在拖曳作業中存取模型資訊的詳細資訊，請參閱[從 IDataObject 取得 UML 模型元素](../modeling/get-uml-model-elements-from-idataobject.md)。
+ 如需在拖曳作業中存取模型資訊的詳細資訊，請參閱 [從 IDataObject 取得 UML 模型元素](../modeling/get-uml-model-elements-from-idataobject.md)。
 
- 如果您正在處理順序圖表，另請參閱[使用 UML API 編輯 UML 順序圖表](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)。
+ 如果您正在處理順序圖表，另請參閱 [使用 UML API 編輯 uml 順序圖表](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)。
 
  除了方法的參數，您也可以在您的類別中宣告匯入的屬性，提供目前圖表和模型的存取權。
 
@@ -346,9 +346,9 @@ foreach (IDiagram diagram in modelStore.Diagrams) {...}
 foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 ```
 
- 如需詳細資訊，請參閱[導覽 UML 模型](../modeling/navigate-the-uml-model.md)。
+ 如需詳細資訊，請參閱 [流覽 UML 模型](../modeling/navigate-the-uml-model.md)。
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>安裝和卸載擴充功能
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> 安裝和卸載擴充功能
  您可以同時在自己的電腦和其他電腦上安裝 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充功能。
 
 #### <a name="to-install-an-extension"></a>安裝擴充功能
@@ -357,11 +357,11 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
     1. 在 **方案總管**之 VSIX 專案的捷徑功能表上，選擇 [在 Windows 檔案總管開啟資料夾] ****。
 
-    2. 找出**bin \\ \* \\ ** _yourproject。_**.vsix**的檔案
+    2. 找出檔案**bin \\ \* \\ ** _yourproject。_**.vsix**
 
 2. 將 **.vsix** 檔案複製到要安裝擴充功能的目標電腦。 這可以是您自己的電腦或其他電腦。
 
-     目的電腦必須具有 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 您在**extension.vsixmanifest**中指定的其中一個版本。
+     目的電腦必須有 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 您在 **extension.vsixmanifest**中指定的其中一個版本。
 
 3. 在目標電腦上開啟 **.vsix** 檔案。
 
@@ -381,12 +381,12 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
    *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [version] \Extensions**
 
-## <a name="example"></a><a name="DragExample"></a>實例
+## <a name="example"></a><a name="DragExample"></a> 範例
  下列範例示範如何根據從元件圖表拖曳之元件的組件和連接埠，在循序圖中建立生命線。
 
- 若要加以測試，請按 F5。 Visual Studio 的實驗執行個體隨即開啟。 在本例中，開啟 UML 模型，並在元件圖上建立元件。 將某些介面和內部元件組件加入此元件。 選取介面和組件。 然後將介面和組件拖曳到循序圖。 （從 [元件] 圖表拖曳至順序圖表的索引標籤，然後向下拖曳至 [順序] 圖表）。每個介面和元件都會出現一個生命線。
+ 若要加以測試，請按 F5。 Visual Studio 的實驗執行個體隨即開啟。 在本例中，開啟 UML 模型，並在元件圖上建立元件。 將某些介面和內部元件組件加入此元件。 選取介面和組件。 然後將介面和組件拖曳到循序圖。  (從元件圖表拖曳至順序圖表的索引標籤，然後向下拖曳到順序圖表中。 ) 將會顯示每個介面和元件的生命線。
 
- 如需將互動系結至順序圖表的詳細資訊，請參閱[使用 UML API 編輯 UML 順序圖表](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)。
+ 如需將互動系結至順序圖表的詳細資訊，請參閱 [使用 UML API 編輯 uml 順序圖表](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)。
 
 ```
 using System.Collections.Generic;
@@ -517,7 +517,7 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
 
 ```
 
- `GetModelElementsFromDragEvent()`[從 IDATAOBJECT 取得 UML 模型](../modeling/get-uml-model-elements-from-idataobject.md)專案中會說明的程式碼。
+ 的程式碼 `GetModelElementsFromDragEvent()` 會在 [從 IDATAOBJECT 取得 UML 模型](../modeling/get-uml-model-elements-from-idataobject.md)專案中描述。
 
 ## <a name="see-also"></a>另請參閱
- [定義和安裝模型擴充功能](../modeling/define-and-install-a-modeling-extension.md)[擴充 uml 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)[定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)[使用 uml API](../modeling/programming-with-the-uml-api.md)進行程式設計
+ [定義和安裝模型擴充功能](../modeling/define-and-install-a-modeling-extension.md)[擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)[在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)[使用 uml API](../modeling/programming-with-the-uml-api.md) [來定義 uml 模型程式設計的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)

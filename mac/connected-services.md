@@ -7,10 +7,10 @@ ms.author: sayedha
 ms.date: 11/06/2018
 ms.topic: how-to
 ms.openlocfilehash: 8a1287d82096677d20a498756de3d2a9f5af259b
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938769"
 ---
 # <a name="connected-services-walkthrough"></a>已連線的服務逐步解說
@@ -27,7 +27,7 @@ ms.locfileid: "85938769"
 2. [服務詳細資料] 頁面會有該服務的描述，以及要安裝的相依性。
   按一下 [新增]**** 按鈕以將相依性新增至應用程式：
 
-    [![Azure 的行動後端](media/connected-services-image002-sml.png "Azure 的行動後端")](media/connected-services-image002.png#lightbox)
+    [![使用 Azure 的行動後端](media/connected-services-image002-sml.png "使用 Azure 的行動後端")](media/connected-services-image002.png#lightbox)
 
 3. 必須將相依性新增至 PCL 和平台專屬專案，才能運作。
   選取核取方塊以將服務新增至每個將參考它 (直接或間接) 的專案：
@@ -39,7 +39,7 @@ ms.locfileid: "85938769"
 
     [![接受授權合約](media/connected-services-image004-sml.png "接受授權合約")](media/connected-services-image004.png#lightbox)
 
-    ![[接受授權] 視窗](media/connected-services-image005.png "[接受授權] 視窗")
+    ![接受授權視窗](media/connected-services-image005.png "接受授權視窗")
 
 5. 新增相依性之後，系統會要求您使用要用來與 Azure 通訊的帳戶進行登入。
   如果您已經使用 Microsoft ID 登入，Visual Studio for Mac 將會嘗試擷取您的 Azure 訂用帳戶及與其相關的任何應用程式服務。 如果您沒有任何訂用帳戶，則可以在 Azure 入口網站中註冊免費試用或購買訂用帳戶方案，來新增一個訂用帳戶。
@@ -53,11 +53,11 @@ ms.locfileid: "85938769"
 7. 將 `MobileServiceClient` 的範本程式碼複製到 PCL。 在只有一個檔案執行個體的情況下，檔案位置不重要。
   建議的方法是建立一個 `AzureService` 類別來處理所有 Azure 互動和使用 `MobileServiceClient`：
 
-    ![將設定程式碼複製到 ap](media/connected-services-image007.png "將設定程式碼複製到應用程式中")
+    ![將設定程式碼複製到 ap](media/connected-services-image007.png "將設定程式碼複製到應用程式")
 
 8. 依照**後續步驟**中文件的指示，將資料、離線同步處理、驗證及推播通知新增至應用程式：
 
-    [![請參閱後續步驟的指示](media/connected-services-image008-sml.png "請參閱後續步驟的指示")](media/connected-services-image008.png#lightbox)
+    [![請參閱後續步驟指示](media/connected-services-image008-sml.png "請參閱後續步驟指示")](media/connected-services-image008.png#lightbox)
 
 9. 如果您沒有任何現有的應用程式服務，則可以從 Visual Studio for Mac 內建立新的服務。
   按一下服務清單左下角的 [新增]**** 按鈕，以開啟 [新增 App Service]**** 對話方塊：

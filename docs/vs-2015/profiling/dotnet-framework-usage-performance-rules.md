@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: afae57f3223d24a4524f89f1669883de6ef1dd18
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532804"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework 使用效能規則
@@ -21,7 +21,7 @@ ms.locfileid: "85532804"
 
 .Net Framework 使用類別中的效能規則會識別可最佳化的特定方法，也會識別較一般的使用模式 (例如記憶體回收和鎖定爭用)，以用於效能問題調查。  
   
-|規則|描述|  
+|規則|說明|  
 |-|-|  
 |[DA0001：使用 StringBuilder 進行串連](../profiling/da0001-use-stringbuilder-for-concatenations.md)|呼叫 <xref:System.String.Concat%28System.String%2CSystem.String%29?displayProperty=fullName> 佔分析資料的絕大部分。 請考慮使用 <xref:System.Text.StringBuilder> 類別，從多個區段建構字串。|  
 |[DA0005：常見的 GC2 集合](../profiling/da0005-frequent-gc2-collections.md)|數量相對高的 .NET 記憶體物件正在層代 2 記憶體回收中收回。 如果有太多短期物件存留在層代 1 回收中，記憶體管理的成本很容易變得過高。|  

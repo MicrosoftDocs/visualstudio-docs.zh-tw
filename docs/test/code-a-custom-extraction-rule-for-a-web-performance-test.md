@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 00001662667ed7020909d23cf3cfbd4b8437eabf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288880"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂擷取規則程式碼
@@ -46,7 +46,7 @@ ms.locfileid: "85288880"
 
 6. (選擇性) 在測試專案中，新增包含自訂擷取規則的類別庫專案參考。
 
-7. 在測試專案中，開啟**Web 效能測試編輯器**中的 web 效能測試。
+7. 在測試專案中，開啟 **Web 效能測試編輯器**中的 web 效能測試。
 
 8. 若要新增自訂擷取規則，請以滑鼠右鍵按一下 Web 效能測試要求，然後選取 [新增擷取規則]****。
 

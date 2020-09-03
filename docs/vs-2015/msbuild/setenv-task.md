@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 960ebb94cf03ef293011645e732a0f0379d0fd47
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852251"
 ---
 # <a name="setenv-task"></a>SetEnv 工作
@@ -38,10 +38,10 @@ ms.locfileid: "75852251"
 |參數|描述|  
 |---------------|-----------------|  
 |**名稱**|必要的 **String** 參數。<br /><br /> 環境變數的名稱。|  
-|**OutputEnvironmentVariable**|選擇性的 **String** 輸出參數。<br /><br /> 包含指派給環境變數 (由 **Name** 參數所指定) 的值。|  
-|**前置詞**|必要的 `Boolean` 參數。<br /><br /> 如果系統會先將 **Value** 參數的值串連到 **Name** 參數所指定的環境變數值，然後將結果指派給環境變數，則為 `true`。 如果系統只會將 **Value** 參數的值指派給環境變數，則為 `false`。|  
-|**Target**|選擇性的 **String** 參數。<br /><br /> 指定儲存環境變數的位置。 請指定 "`User`" 或 "`Machine`"。<br /><br /> 如需詳細資訊，請參閱 [MSDN](https://msdn.microsoft.com/) 網站上的「EnvironmentVariableTarget 列舉」。|  
-|**值**|選擇性的 **String** 參數。<br /><br /> 指派給環境變數 (由 **Name** 參數所指定) 的值。 如果 **Value** 是空的但存在變數，則會刪除變數。 如果變數不存在，即使無法執行此作業也不會發生任何錯誤。<br /><br /> 如需詳細資訊，請參閱 [MSDN](https://msdn.microsoft.com/) 網站上的「Environment::SetEnvironmentVariable 方法」。|  
+|**OutputEnvironmentVariable**|選擇性 **字串** 輸出參數。<br /><br /> 包含指派給環境變數 (由 **Name** 參數所指定) 的值。|  
+|**Prefix**|必要的 `Boolean` 參數。<br /><br /> 如果系統會先將 **Value** 參數的值串連到 **Name** 參數所指定的環境變數值，然後將結果指派給環境變數，則為 `true`。 如果系統只會將 **Value** 參數的值指派給環境變數，則為 `false`。|  
+|**Target**|選擇性的 **字串** 參數。<br /><br /> 指定儲存環境變數的位置。 請指定 "`User`" 或 "`Machine`"。<br /><br /> 如需詳細資訊，請參閱 [MSDN](https://msdn.microsoft.com/) 網站上的「EnvironmentVariableTarget 列舉」。|  
+|**值**|選擇性的 **字串** 參數。<br /><br /> 指派給環境變數 (由 **Name** 參數所指定) 的值。 如果 **Value** 是空的但存在變數，則會刪除變數。 如果變數不存在，即使無法執行此作業也不會發生任何錯誤。<br /><br /> 如需詳細資訊，請參閱 [MSDN](https://msdn.microsoft.com/) 網站上的「Environment::SetEnvironmentVariable 方法」。|  
   
 ## <a name="remarks"></a>備註  
   

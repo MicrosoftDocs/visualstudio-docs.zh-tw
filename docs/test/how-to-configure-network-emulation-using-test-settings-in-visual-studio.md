@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 55daa1e16af45c153efced3736c46c3c27d748ac
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288178"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>如何：在 Visual Studio 中使用測試設定來設定網路模擬
@@ -32,7 +32,7 @@ ms.locfileid: "85288178"
 ::: moniker-end
 
 > [!NOTE]
-> 網路模擬診斷資料配接器僅適用於 Visual Studio 測試設定。 它不會用於 Microsoft Test Manager 中的測試設定（已在 Visual Studio 2017 中被取代）。
+> 網路模擬診斷資料配接器僅適用於 Visual Studio 測試設定。 它不會用於 Microsoft Test Manager 中 (已在 Visual Studio 2017) 中淘汰的測試設定。
 
 ::: moniker range="vs-2017"
 若要進行網路模擬，必須使用具備系統管理員權限的帳戶。 如果您為執行手動測試的本機角色選取了網路模擬，您就必須使用系統管理員權限啟動 Microsoft Test Manager。 如果您為其他任何角色選取了網路模擬，則您必須驗證該角色在電腦上的測試代理程式所使用的使用者帳戶是 [Administrators] 群組的成員。 如需如何設定測試代理程式帳戶的詳細資訊，請參閱[安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)。

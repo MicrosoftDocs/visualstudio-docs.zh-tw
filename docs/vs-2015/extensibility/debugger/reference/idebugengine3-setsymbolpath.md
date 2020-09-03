@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d3ea3086931ab655209a5ca26d4d1527462fb205
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476803"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-設定搜尋以進行偵錯工具符號的路徑或路徑。  
+設定要搜尋的路徑或路徑以進行偵錯工具符號。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,17 +46,17 @@ int SetSymbolPath(
   
 |參數|描述|  
 |---------------|-----------------|  
-|`szSymbolSearchPath`|在包含符號搜尋路徑或路徑的字串。 如需詳細資訊，請參閱「備註」。 不可為 null。|  
-|`szSymbolCachePath`|在字串，其中包含可快取符號的本機路徑。 不可為 null。|  
+|`szSymbolSearchPath`|在包含符號搜尋路徑或路徑的字串。 如需詳細資訊，請參閱「備註」。 不可以是 null。|  
+|`szSymbolCachePath`|在字串，包含可快取符號的本機路徑。 不可以是 null。|  
 |`Flags`|在未使用;一律設定為0。|  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;否則會傳回錯誤碼。  
+ 如果成功，則傳回 S_OK;否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 字串 `szSymbolSearchPath` 是一個或多個路徑的清單（以分號分隔），用以搜尋符號。 這些路徑可以是本機路徑、UNC 樣式路徑或 URL。 這些路徑也可以混合不同的類型。 如果路徑是 UNC （例如 \\\Symserver\Symbols），則 debug engine 應該判斷路徑是否為符號伺服器，而且應該能夠從該伺服器載入符號，並在 `szSymbolCachePath`所指定的路徑中進行快取。  
+ 字串 `szSymbolSearchPath` 是一個或多個以分號分隔的路徑清單，以搜尋符號。 這些路徑可以是本機路徑、UNC 樣式的路徑或 URL。 這些路徑也可以混合不同的類型。 如果路徑是 UNC (例如， \\ \Symserver\Symbols) ，則 debug engine 應判斷路徑是否為符號伺服器，而且應該能夠從該伺服器載入符號，並將它們快取在指定的路徑中 `szSymbolCachePath` 。  
   
- 符號路徑也可以包含一或多個快取位置。 快取會依優先順序列出，第一次具有最高優先順序的快取，並以 * 符號分隔。 例如：  
+ 符號路徑也可以包含一或多個快取位置。 快取會依優先順序列出，最高優先順序快取優先，並以 * 符號分隔。 例如：  
   
 ```  
 \\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*https://msdl.microsoft.com  

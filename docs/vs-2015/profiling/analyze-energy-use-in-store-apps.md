@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 82f5e6401ba65a0dfaffc268890ece0166432c08
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532947"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>分析市集應用程式中的能源利用
@@ -46,7 +46,7 @@ Visual Studio [ **能源消耗** ] 分析工具可協助您分析 Windows 市集
   
   例如，平板電腦中完全充電的電池有特定的儲存電能量。 當能源用來執行像是網路通訊、計算值或顯示圖形這類工作時，電池的電力會以不同的速率消耗。 任一段時間內的總耗電量也是以能源測量。  
   
-## <a name="identify-scenarios-with-user-marks"></a><a name="BKMK_Identify_scenarios_with_user_marks"></a>識別具有使用者標記的案例  
+## <a name="identify-scenarios-with-user-marks"></a><a name="BKMK_Identify_scenarios_with_user_marks"></a> 識別具有使用者標記的案例  
  您可以將「 *使用者標記* 」(User Mark) 加入至分析資料，以便識別時間軸尺規中的區段。  
   
  ![時間軸中的使用者標記](../profiling/media/profilers-usermarktimeline.png "PROFILERS_UserMarkTimeline")  
@@ -118,9 +118,9 @@ if (performance && performance.mark) {
 ## <a name="analyze-energy-profile-data"></a><a name="BKMK_Analyze_energy_profile_data"></a> 分析能源分析資料  
  能源分析資料會顯示在 Visual Studio 文件視窗中：  
   
- ![能源分析工具報告頁面](../profiling/media/energyprof-all.png "ENERGYPROF_All")  
+ ![能源分析工具報表頁面](../profiling/media/energyprof-all.png "ENERGYPROF_All")  
   
-|映像|描述|  
+|Image|描述|  
 |-|-|  
 |![步驟 1](../profiling/media/procguid-1.png "ProcGuid_1")|報告檔的名稱為 Report*YYYYMMDD-HHMM*.diagsession。 如果您決定儲存報告，可以變更名稱。|  
 |![步驟 2](../profiling/media/procguid-2.png "ProcGuid_2")|時間軸會顯示程式碼剖析工作階段的長度、應用程式週期啟用事件，以及使用者標記。|  
@@ -136,7 +136,7 @@ if (performance && performance.mark) {
 ## <a name="optimize-energy-use"></a><a name="BKMK_Optimize_energy_use"></a> 最佳化能源利用  
  除了傳輸資料之外，網路連線初始化、維護及關閉連線都會產生能源成本。 某些網路在資料已傳送或接收後仍然保持連線一段時間，以便讓更多資料透過單一連線傳輸。 您可以使用 [ **資源 (開啟/關閉)** ] 窗格檢查應用程式與連接互動的方式。  
   
- ![&#47;關閉&#41;] 窗格上的資源 &#40;](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
+ ![&#47;關閉&#41; 窗格的資源 &#40;](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
   
  如果 [ **網路** ] 和 [ **資料傳輸** ] 橫條圖顯示長時間開啟連接，間歇地傳送一系列的小型資料封包，您可以批次處理資料，使其在單一傳輸中傳送，減少開啟網路的時間，因此節省能源成本。  
   
@@ -144,7 +144,7 @@ if (performance && performance.mark) {
   
  對於顯示器的能源成本，您擁有的控制權比較少。 大部分畫面顯示淺色時，所需的能源比顯示深色更多，因此使用深色背景會是節省成本的一種方式。  
   
-## <a name="other-resources"></a><a name="BKMK_Other_resources"></a>其他資源  
+## <a name="other-resources"></a><a name="BKMK_Other_resources"></a> 其他資源  
   
 - Windows 開發人員中心有關 **C#/VB/C++ 和 XAML** 和 [JavaScript 和 HTML](https://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) 的 [連線狀態和成本管理](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) 章節中，描述了提供網路連線資訊的 Windows API，這些資訊可讓您的應用程式用來減少網路流量的成本。  
   

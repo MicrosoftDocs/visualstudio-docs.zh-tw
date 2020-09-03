@@ -14,10 +14,10 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 3fa32e6155959df6e665a807af3b364923ba3f54
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533454"
 ---
 # <a name="language-conventions"></a>語言慣例
@@ -37,12 +37,12 @@ Visual Studio 中 EditorConfig 的語言慣例分為兩類：適用於 Visual Ba
 
 `option_name = value:severity`
 
-您可以針對每個語言慣例，指定一個定義是否有偏好的樣式和偏好樣式使用時機的值。 許多規則都接受值 `true` （偏好使用此樣式）或 `false` （不偏好使用此樣式）。 其他規則接受諸如或之類的值 `when_on_single_line` `never` 。 第二個部分、指定 [嚴重性][](#severity-levels) 的規則。
+您可以針對每個語言慣例，指定一個定義是否有偏好的樣式和偏好樣式使用時機的值。 許多規則接受的值 `true` (偏好以此樣式) 或 `false` (不偏好使用此樣式) 。 其他規則接受值，例如 `when_on_single_line` 或 `never` 。 第二個部分、指定 [嚴重性][](#severity-levels) 的規則。
 
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> 因為分析器會強制語言慣例，所以您也可以流量分析器的預設設定語法來設定其嚴重性。 語法採用的格式為，例如 `dotnet_diagnostic.<rule ID>.severity = <severity>` `dotnet_diagnostic.IDE0040.severity = silent` 。 如需詳細資訊，請參閱[在 EditorConfig 檔案中設定規則嚴重性](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file)。
+> 因為分析器會強制執行語言慣例，所以您也可以流量分析器的預設設定語法來設定其嚴重性。 語法的格式如下 `dotnet_diagnostic.<rule ID>.severity = <severity>` `dotnet_diagnostic.IDE0040.severity = silent` 。 如需詳細資訊，請參閱 [在 EditorConfig 檔中設定規則嚴重性](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file)。
 
 ::: moniker-end
 
@@ -50,33 +50,33 @@ Visual Studio 中 EditorConfig 的語言慣例分為兩類：適用於 Visual Ba
 
 語言慣例嚴重性可指定要強制執行該樣式的層級。 下表列出可能的嚴重性值及其效果：
 
-Severity | 效果
+嚴重性 | 效果
 :------- | ------
 `error` | 違反此樣式規則時，顯示編譯器錯誤。
 `warning` | 違反此樣式規則時，顯示編譯器警告。
 `suggestion` | 當違反這個樣式規則時，會向使用者顯示建議。 建議會顯示為前兩個字元下的三個灰點。
-`silent` | 違反這項規則時，不向使用者顯示任何內容。 但程式碼產生功能會以此樣式產生程式碼。 嚴重性為的規則 `silent` 會參與清除，並出現在 [**快速動作與重構**] 功能表中。
+`silent` | 違反這項規則時，不向使用者顯示任何內容。 但程式碼產生功能會以此樣式產生程式碼。 嚴重性的規則 `silent` 會參與清除，並且會出現在 [ **快速動作與重構** ] 功能表中。
 `none` | 違反這項規則時，不向使用者顯示任何內容。 但程式碼產生功能會以此樣式產生程式碼。 嚴重性為 `none` 的規則永遠不會出現在 [快速動作及重構]**** 功能表中。 在大部分情況下，這會視為「已停用」或「已忽略」。
 
 ::: moniker range=">=vs-2019"
 
 ## <a name="automatically-configure-code-styles"></a>自動設定程式碼樣式
 
-從 Visual Studio 2019 16.3 版開始，您可以在發生樣式違規之後，從 [[快速動作](quick-actions.md)] 燈泡功能表設定程式碼樣式規則。
+從 Visual Studio 2019 版本16.3 開始，您可以在發生樣式違規之後，從 [ [快速動作](quick-actions.md) ] 燈泡功能表設定程式碼樣式規則。
 
 若要變更程式碼樣式慣例：
 
-1. 將滑鼠停留在編輯器中的波浪線上，然後開啟顯示的燈泡功能表。 選擇 [**設定] 或 [隱藏問題**] [  >  **設定程式 \<rule ID> 代碼樣式**]。
+1. 將滑鼠停留在編輯器的波浪線上，然後開啟顯示的燈泡功能表。 選擇 [**設定或隱藏問題**]  >  **設定程式 \<rule ID> 代碼樣式**。
 
-   ![從 Visual Studio 中的燈泡功能表設定程式碼樣式](media/vs-2019/configure-code-style.png)
+   ![Visual Studio 中的燈泡功能表設定程式碼樣式](media/vs-2019/configure-code-style.png)
 
 2. 從該處選擇其中一個程式碼樣式選項。
 
    ![設定程式碼樣式設定](media/vs-2019/configure-code-style-setting.png)
 
-   Visual Studio 在 EditorConfig 檔案中新增或修改設定，如 [預覽] 方塊所示。
+   Visual Studio 新增或修改 EditorConfig 檔案中的設定，如預覽方塊中所示。
 
-若要變更程式碼樣式違規的嚴重性，請遵循相同的步驟，但選擇 [**設定 \<rule ID> 嚴重性**]，而不是 [**設定程式 \<rule ID> 代碼樣式**]。 如需詳細資訊，請參閱[自動設定規則嚴重性](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)。
+若要變更程式碼樣式違規的嚴重性，請遵循相同的步驟，但選擇 [ **設定 \<rule ID> 嚴重性** ]，而不是 [ **設定程式 \<rule ID> 代碼樣式**]。 如需詳細資訊，請參閱 [自動設定規則嚴重性](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)。
 
 ::: moniker-end
 
@@ -89,7 +89,7 @@ Severity | 效果
   - dotnet\_style\_qualification\_for_property
   - dotnet\_style\_qualification\_for_method
   - dotnet\_style\_qualification\_for_event
-- [語言關鍵字，而不是類型參考的架構類型名稱](#language-keywords)
+- [語言關鍵字而非類型參考的架構類型名稱](#language-keywords)
   - dotnet\_style\_predefined\_type\_for\_locals\_parameters_members
   - dotnet\_style\_predefined\_type\_for\_member_access
 - [修飾詞喜好設定](#normalize-modifiers)
@@ -1047,7 +1047,7 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 | **規則名稱** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
 | **規則識別碼** | IDE0041 |
 | **適用的語言** | C# 6.0+ 和 Visual Basic 14+ |
-| **值** | `true`-偏好對參考相等方法進行 null 檢查<br /><br />`false`-慣用的參考相等方法是 null 檢查 |
+| **值** | `true` -偏好為參考相等方法的 null 檢查<br /><br />`false` -偏好參考相等的方法為 null 檢查 |
 | **Visual Studio 預設值** | `true:silent` |
 
 ## <a name="net-code-quality-settings"></a>.NET 程式碼品質設定
@@ -1607,7 +1607,7 @@ csharp_prefer_braces = true:silent
 | **規則名稱** | csharp_prefer_braces |
 | **規則識別碼** | IDE0011 |
 | **適用的語言** | C# |
-| **值** | `true` - 偏好使用大括弧，即使只有一行程式碼<br /><br />`false` - 如果可以，偏好不使用大括弧<br /><br />`when_multiline`-在多行上偏好使用大括弧 |
+| **值** | `true` - 偏好使用大括弧，即使只有一行程式碼<br /><br />`false` - 如果可以，偏好不使用大括弧<br /><br />`when_multiline` -在多行上偏好大括弧 |
 | **Visual Studio 預設值** | `true:silent` |
 
 程式碼範例：
@@ -1937,5 +1937,5 @@ switch (x)
 ## <a name="see-also"></a>另請參閱
 
 - [格式設定慣例](editorconfig-formatting-conventions.md)
-- [命名規範](editorconfig-naming-conventions.md)
+- [命名慣例](editorconfig-naming-conventions.md)
 - [EditorConfig 的 .NET 編碼慣例設定](editorconfig-code-style-settings-reference.md)

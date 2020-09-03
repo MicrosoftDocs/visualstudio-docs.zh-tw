@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 925df819b903be3de3d44127243f3b18d1e9aff5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288243"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>如何：將測試控制器或測試代理程式繫結至網路介面卡
@@ -133,4 +133,4 @@ ms.locfileid: "85288243"
 - [安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)
 - [修改負載測試記錄設定](../test/modify-load-test-logging-settings.md)
 - [設定測試控制器和測試代理程式的通訊埠](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [如何：指定測試控制器和測試代理程式的超時時間週期](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [如何：指定測試控制器和測試代理程式的超時期間](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

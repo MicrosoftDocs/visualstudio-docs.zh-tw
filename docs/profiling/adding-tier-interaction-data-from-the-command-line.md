@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779866"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>從命令列新增階層互動資料
@@ -32,7 +32,7 @@ ms.locfileid: "74779866"
 
 **在遠端電腦上收集 TIP 資料**
 
-要在遠端電腦上收集層交互資料，必須將**\_vs_profiler**_\<平臺>_**\_**_\<語言>_ **.exe**檔從 Visual Studio 電腦的 _%VSInstallDir%_**>團隊工具_性能工具_安裝程式**資料夾複製到遠端電腦並安裝它。 您無法使用[遠端偵錯](../debugger/remote-debugging.md)下載套件中的程式碼剖析工具。
+若要在遠端電腦上收集階層互動資料， ** \_ **您必須 _\<Platform>_ **\_** _\<Language>_ 從 Visual Studio 機的 _% VSInstallDir%_**\Team Tools\Performance Tools\Setups**資料夾中，將 vs_profiler **.exe**檔案複製到遠端電腦，並加以安裝。 您無法使用[遠端偵錯](../debugger/remote-debugging.md)下載套件中的程式碼剖析工具。
 
 **TIP 報告**
 
@@ -50,7 +50,7 @@ VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整�
 
 ### <a name="profile-a-windows-desktop-application-example"></a>對 Windows 傳統型應用程式進行分析的範例
 
-1. 使用系統管理員權限開啟命令提示視窗。 按一下 [開始]****，然後依序指向 [所有程式]**** 和 [附屬應用程式]****。 按右鍵**命令提示**，然後按一下"**以管理員身份運行**"。
+1. 使用系統管理員權限開啟命令提示視窗。 按一下 [開始]****，然後依序指向 [所有程式]**** 和 [附屬應用程式]****。 以滑鼠右鍵按一下 [ **命令提示**字元]，然後按一下 [以 **系統管理員身分執行**]。
 
 2. 初始化 .NET 程式碼剖析和 TIP 環境變數。 輸入下列命令：
 
@@ -93,7 +93,7 @@ VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整�
 
 1. 如有必要，請安裝服務。
 
-2. 使用系統管理員權限開啟命令提示視窗。 按一下 [開始]****，然後依序指向 [所有程式]**** 和 [附屬應用程式]****。 按右鍵**命令提示**，然後按一下"**以管理員身份運行**"。
+2. 使用系統管理員權限開啟命令提示視窗。 按一下 [開始]****，然後依序指向 [所有程式]**** 和 [附屬應用程式]****。 以滑鼠右鍵按一下 [ **命令提示**字元]，然後按一下 [以 **系統管理員身分執行**]。
 
 3. 初始化 .NET 程式碼剖析環境變數。 輸入以下命令：
 
@@ -141,7 +141,7 @@ VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整�
 
 如需詳細資訊，請參閱下列其中一個主題：
 
-[設定檔ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+[分析 ASP.NET web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 
 [分析服務](../profiling/command-line-profiling-of-services.md)
 
@@ -155,4 +155,4 @@ VSPerfASPNETCmd 命令列工具可讓您輕鬆地分析 [!INCLUDE[vstecasp](../c
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 
-有關 VSPerfASPNETCmd 的詳細資訊，請參閱[使用 VSPerfASPNETCmd 進行快速網站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)。
+如需 VSPerfASPNETCmd 的詳細資訊，請參閱 [使用 VSPerfASPNETCmd 快速進行網站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)。

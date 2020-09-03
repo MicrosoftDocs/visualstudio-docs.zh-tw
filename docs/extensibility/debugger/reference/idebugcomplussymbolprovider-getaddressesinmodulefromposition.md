@@ -1,5 +1,5 @@
 ---
-title: IDebugcomPlus符號提供者::從位置獲取位址 |微軟文件
+title: IDebugComPlusSymbolProvider：： GetAddressesInModuleFromPosition |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f7295d49faa8799731a13f500b31d436df6dc66a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734027"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
-將指定模組中的文件位置映射到調試位址陣列。
+將指定模組中的檔位置對應至 debug 位址陣列。
 
 ## <a name="syntax"></a>語法
 
@@ -50,28 +50,28 @@ int GetAddressesInModuleFromPosition(
 
 ## <a name="parameters"></a>參數
 `ulAppDomainID`\
-[在]應用程式域識別碼。
+在應用程式域識別碼。
 
 `guidModule`\
-[在]模組的唯一標識碼。
+在模組的唯一識別碼。
 
 `pDocPos`\
-[在]文檔位置。
+在檔位置。
 
 `fStatmentOnly`\
-[在]如果`TRUE`,則將調試位址限制為單個語句。
+在如果 `TRUE` 為，則將 debug 位址限制為單一語句。
 
 `ppEnumBegAddresses`\
-[出]返回與此語句或行關聯的起始調試位址的枚舉器。
+擴展傳回與這個語句或行相關聯之起始偵錯工具位址的列舉值。
 
 `ppEnumEndAddresses`\
-[出]返回與此語句或行關聯的結束調試位址的枚舉器。
+擴展傳回與這個語句或行相關聯之結束 debug 位址的列舉值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
- 下面的範例展示如何為公開[IDebugComPlusSymbol提供程式](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbol提供程式**物件實現此方法。
+ 下列範例示範如何針對公開[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbolProvider**物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(

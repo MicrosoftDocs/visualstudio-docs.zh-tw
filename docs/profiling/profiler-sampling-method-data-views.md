@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d845d84d421ca44f5b936df0a7138fefa848d8d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772154"
 ---
 # <a name="profiler-sampling-method-data-views"></a>分析工具取樣方法資料檢視
@@ -30,7 +30,7 @@ ms.locfileid: "74772154"
 
  列出收集樣本時最常執行的函式，以及執行最多個別工作的函式。
 
-- [呼叫樹狀圖檢視](../profiling/call-tree-view-sampling-data.md)
+- [呼叫樹狀檢視](../profiling/call-tree-view-sampling-data.md)
 
  顯示階層式樹狀結構中函式的執行路徑。
 
@@ -38,7 +38,7 @@ ms.locfileid: "74772154"
 
  依模組組織分析資料，並列出收集樣本時正在執行的函式、原始程式碼行及指令。
 
-- [調用方/被叫方視圖 - 採樣資料](../profiling/caller-callee-view-sampling-data.md)
+- [呼叫端/被呼叫端視圖-取樣資料](../profiling/caller-callee-view-sampling-data.md)
 
  顯示所選函式及所呼叫函式 (由該所選函式呼叫的函式) 的分析資料。
 
@@ -46,16 +46,16 @@ ms.locfileid: "74772154"
 
  依函式組織分析，並列出收集樣本時正在執行的函式。
 
-- [線視圖](../profiling/lines-view-sampling-data.md)
+- [線條視圖](../profiling/lines-view-sampling-data.md)
 
  列出收集樣本時正在執行的原始程式碼行。
 
-- [指令指標 （IP） 視圖](../profiling/instruction-pointers-ips-view-sampling-data.md)
+- [ (Ip) 視圖的指令指標](../profiling/instruction-pointers-ips-view-sampling-data.md)
 
  列出收集樣本時正在執行的原始程式碼行。
 
 ## <a name="reference"></a>參考
-- [流程視圖](../profiling/process-view.md)
+- [進程視圖](../profiling/process-view.md)
 
  列出處理序和執行緒開始和結束時間。
 
@@ -63,7 +63,7 @@ ms.locfileid: "74772154"
 
  列出已插入程式碼剖析資料檔中的 ETW 和取樣事件。
 
-- [功能詳細資訊視圖](../profiling/function-details-view.md)
+- [函數詳細資料檢視](../profiling/function-details-view.md)
 
  顯示選取的函式及所呼叫函式 (由該所選函式呼叫的函式) 之間關聯性的圖形化圖表。
 

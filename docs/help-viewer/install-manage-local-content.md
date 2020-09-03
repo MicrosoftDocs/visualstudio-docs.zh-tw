@@ -24,17 +24,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70bb90856fb88738bbc82434c47e375ea453fd08
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284902"
 ---
 # <a name="install-and-manage-local-content"></a>安裝與管理本機內容
 
 藉由使用 Microsoft Help Viewer，您可以加入、移除、更新和移動安裝於您電腦上的說明內容，以符合您的軟體開發需求。
 
-若要管理本機電腦上的內容，您必須以具有系統管理員權限的帳戶登入。 此外，如果您在企業環境中使用，可能會無法管理本機內容，因為系統管理員可能會為您的組織做決策。 如需詳細資訊，請參閱[Help Viewer 系統管理員指南](../help-viewer/administrator-guide.md)。
+若要管理本機電腦上的內容，您必須以具有系統管理員權限的帳戶登入。 此外，如果您在企業環境中使用，可能會無法管理本機內容，因為系統管理員可能會為您的組織做決策。 如需詳細資訊，請參閱說明 [檢視器系統管理員指南](../help-viewer/administrator-guide.md)。
 
 ## <a name="change-the-content-installation-source"></a>變更內容安裝來源
 
@@ -45,13 +45,13 @@ ms.locfileid: "85284902"
 1. 在 [管理內容]**** 索引標籤上，選擇 [磁碟]**** 選項按鈕。
 
     > [!NOTE]
-    > 如果系統管理員阻止您修改內容安裝來源，則 [磁碟]**** 選項無法使用。 如需詳細資訊，請參閱[Help Viewer 系統管理員指南](../help-viewer/administrator-guide.md)。
+    > 如果系統管理員阻止您修改內容安裝來源，則 [磁碟]**** 選項無法使用。 如需詳細資訊，請參閱說明 [檢視器系統管理員指南](../help-viewer/administrator-guide.md)。
 
 2. 請執行下列其中一個步驟：
 
-    - 輸入 *.msha*檔案的路徑或服務端點的 URL。
+    - 輸入 *.msha* 檔案的路徑或服務端點的 URL。
 
-    - 選擇 [流覽] （**...**）按鈕以流覽至 *.msha*檔案。
+    - 選擇 [流覽 (**...**) ] 按鈕流覽至 *.msha* 檔案。
 
     - 在清單中，選擇最近使用的項目。
 
@@ -104,7 +104,7 @@ ms.locfileid: "85284902"
 狀態列會指出您所安裝內容的更新何時可用。
 
 > [!IMPORTANT]
-> 如果您想要**讓說明檢視器**自動檢查線上更新，則必須開啟 [**檢視器選項**] 對話方塊，然後選取 [**上線以檢查內容更新**] 核取方塊。
+> 如果您想要 **讓說明檢視器** 自動檢查線上更新，則必須開啟 [ **檢視器選項** ] 對話方塊，然後選取 [ **上線以檢查內容更新** ] 核取方塊。
 
 ### <a name="to-update-local-content"></a>更新本機內容
 

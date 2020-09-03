@@ -15,20 +15,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eaba2f099f2a4d04574acd5bcdd2ba8f8f44b4ce
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852356"
 ---
-# <a name="da0006-override-equals-for-value-types"></a>DA0006：覆寫實值類型的 Equals()
+# <a name="da0006-override-equals-for-value-types"></a>DA0006：覆寫實值型別的 Equals()
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 規則識別碼 |DA0006 |  
-|Category |。NET Framework 使用方式 |  
+|類別 |。NET Framework 使用方式 |  
 |分析方法 |取樣 |  
 |訊息 |在實數值型別上覆寫 Equals 和等號比較運算子。 |  
-|Eai 訊息類型 |警告 |  
+|訊息類型 |警告 |  
   
 ## <a name="cause"></a>原因  
  Equals 方法呼叫或公用實值型別的相等運算子大部分是分析資料。 請考慮實作更有效率的方法。  

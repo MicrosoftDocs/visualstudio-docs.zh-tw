@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b11449626050c4da75b09f2d348a4b1b0190ec4d
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476925"
 ---
 # <a name="project-element-msbuild"></a>Project 項目 (MSBuild)
@@ -50,8 +50,8 @@ ms.locfileid: "77476925"
 </Project>  
 ```  
   
-## <a name="attributes-and-elements"></a>屬性和元素  
- 下列章節說明屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和項目  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
@@ -60,14 +60,14 @@ ms.locfileid: "77476925"
 |    `DefaultTargets`    |                                                                                                                                                                                                                                                                                                 選擇性屬性。<br /><br /> 如果未指定任何目標，則為一或多個做為組建進入點的預設目標。 請以分號 (;) 來分隔多個目標。<br /><br /> 如果未在 `DefaultTargets` 屬性或 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 命令列中指定任何預設目標，則引擎會在已評估 [Import](../msbuild/import-element-msbuild.md) 項目之後執行專案中的第一個目標。                                                                                                                                                                                                                                                                                                  |
 |    `InitialTargets`    |                                                                                                                                                                                                                                                                                                                                                                                                                                             選擇性屬性。<br /><br /> 要在 `DefaultTargets` 屬性中或命令列上指定目標之前執行的一或多個初始目標。 請以分號 (;) 來分隔多個目標。                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |     `ToolsVersion`     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                             選擇性屬性。<br /><br /> MSBuild 用來判斷 $(MSBuildBinPath) 和 $(MSBuildToolsPath) 之值的工具組版本。                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| `TreatAsLocalProperty` | 選擇性屬性。<br /><br /> 將不會被視為全域的屬性名稱。 這個屬性可防止特定的命令列屬性覆寫專案檔或目標檔案及所有後續匯入中設定的屬性值。 請以分號 (;) 來分隔多個屬性。<br /><br /> 一般來說，全域屬性值會覆寫專案檔或目標檔案中所設定的屬性值。 如果此屬性列於 `TreatAsLocalProperty` 值中，則全域屬性值不會覆寫該檔案及任何後續匯入中所設定的屬性值。 如需詳細資訊，請參閱[如何：使用不同選項來建置相同的原始程式檔](../msbuild/how-to-build-the-same-source-files-with-different-options.md)。 **注意︰** 您可以使用 **/property** (或 **/p**) 參數，在命令提示字元中設定全域屬性。 您也可以使用 MSBuild 工作的 `Properties` 屬性，針對多專案組建中的子專案設定或修改全域屬性。 如需詳細資訊，請參閱 [MSBuild 工作](../msbuild/msbuild-task.md)。 |
-|        `Xmlns`         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Required 屬性（在 MSBuild 15. x 和更早版本中）。<br /><br /> `xmlns` 屬性的值必須是 `http://schemas.microsoft.com/developer/msbuild/2003`。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `TreatAsLocalProperty` | 選擇性屬性。<br /><br /> 將不會被視為全域的屬性名稱。 這個屬性可防止特定的命令列屬性覆寫專案檔或目標檔案及所有後續匯入中設定的屬性值。 請以分號 (;) 來分隔多個屬性。<br /><br /> 一般來說，全域屬性值會覆寫專案檔或目標檔案中所設定的屬性值。 如果此屬性列於 `TreatAsLocalProperty` 值中，則全域屬性值不會覆寫該檔案及任何後續匯入中所設定的屬性值。 如需詳細資訊，請參閱 [如何：使用不同的選項建立相同的原始](../msbuild/how-to-build-the-same-source-files-with-different-options.md)程式檔。 **注意：**  您可以使用 **/property** (或 **/p**) 參數，在命令提示字元中設定全域屬性。 您也可以使用 MSBuild 工作的 `Properties` 屬性，針對多專案組建中的子專案設定或修改全域屬性。 如需詳細資訊，請參閱 [MSBuild 工作](../msbuild/msbuild-task.md)。 |
+|        `Xmlns`         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 在 MSBuild 6.x 和較早的) 中 (必要的屬性。<br /><br /> `xmlns`屬性必須具有的值 `http://schemas.microsoft.com/developer/msbuild/2003` 。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|項目|描述|  
 |-------------|-----------------|  
-|[Choose](../msbuild/choose-element-msbuild.md)|選擇性項目。<br /><br /> 評估子項目，以選取一組要評估的 `ItemGroup` 項目和/或 `PropertyGroup` 項目。|  
+|[選擇](../msbuild/choose-element-msbuild.md)|選擇性項目。<br /><br /> 評估子項目，以選取一組要評估的 `ItemGroup` 項目和/或 `PropertyGroup` 項目。|  
 |[匯入](../msbuild/import-element-msbuild.md)|選擇性項目。<br /><br /> 可讓專案檔案匯入另一個專案檔。 專案中可能有零或多個 `Import` 項目。|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|選擇性項目。<br /><br /> 個別項目 (Item) 的群組項目 (Element)。 使用 [Item](../msbuild/item-element-msbuild.md) 項目 (Element) 來指定項目 (Item)。 專案中可能有零或多個 `ItemGroup` 項目。|  
 |[ProjectExtensions](../msbuild/projectextensions-element-msbuild.md)|選擇性項目。<br /><br /> 提供一種方式，在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔保存非 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 的資訊。 專案中可能有零或一個 `ProjectExtensions` 項目。|  
@@ -79,7 +79,7 @@ ms.locfileid: "77476925"
  無。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何：指定要優先建置的目標](../msbuild/how-to-specify-which-target-to-build-first.md)   
+ [如何：指定要先建立的目標](../msbuild/how-to-specify-which-target-to-build-first.md)   
  [命令列參考](../msbuild/msbuild-command-line-reference.md)   
- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
+ [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)   
  [MSBuild](msbuild.md)

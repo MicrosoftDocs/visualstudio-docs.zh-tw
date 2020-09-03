@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::枚外數位 |微軟文件
+title: IDebugClassField：： EnumNestedEnums |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 38ee3ccd1ffd3130bc918da18c631cf08683f064
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734403"
 ---
 # <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
-為此類的嵌套枚舉器創建枚舉器。
+建立此類別之嵌套列舉值的枚舉器。
 
 ## <a name="syntax"></a>語法
 
@@ -41,15 +41,15 @@ int EnumNestedEnums(
 
 ## <a name="parameters"></a>參數
 `ppEnum`\
-[出]返回表示嵌套枚舉清單的[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件。 如果沒有嵌套枚舉,則返回 null 值。
+擴展傳回代表嵌套列舉清單的 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 物件。 如果沒有任何嵌套列舉，則會傳回 null 值。
 
 ## <a name="return-value"></a>傳回值
-如果成功,則返回S_OK或返回S_FALSE如果沒有嵌套的枚舉器。 否則會傳回錯誤碼。
+如果成功，會傳回 S_OK，或如果沒有任何嵌套列舉值，則傳回 S_FALSE。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
-枚舉的每個元素都是描述嵌套枚舉的[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)物件。
+列舉的每個元素都是描述嵌套列舉的 [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) 物件。
 
-在類中聲明的枚舉被視為嵌套枚舉。 例如，假設：
+在類別內宣告的列舉會被視為嵌套列舉。 例如，假設：
 
 ```
 class RootClass {
@@ -57,7 +57,7 @@ class RootClass {
 };
 ```
 
-該方法`EnumNestedEnums`將返回一個[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件,該物件包含一個表示枚舉`NestedEnum`的[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)物件。
+`EnumNestedEnums`方法會傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，其中包含代表列舉的一個[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)物件 `NestedEnum` 。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

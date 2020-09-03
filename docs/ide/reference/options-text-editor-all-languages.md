@@ -43,13 +43,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9815bdec94ce32a3bfcc170dd95d834bc43ea58f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75566874"
 ---
-# <a name="options-dialog-box-text-editor--all-languages"></a>選項對話方塊：文字編輯器\>所有語言
+# <a name="options-dialog-box-text-editor--all-languages"></a>選項對話方塊：文字編輯器 \> 所有語言
 
 編輯樣式表時，這個對話方塊可讓您變更程式碼編輯器的預設行為。 這些設定也適用於以程式碼編輯器為基礎的其他編輯器，例如 HTML 設計工具的來源檢視。 若要開啟此對話方塊，請從 [工具]**** 功能表選取 [選項]****。 在 [文字編輯器]**** 資料夾內，展開 [所有語言]**** 子資料夾，然後選擇 [一般]****。
 
@@ -78,7 +78,7 @@ ms.locfileid: "75566874"
 
 選取這個選項，並清除 [自動換行]**** 時，您可以在 [程式碼編輯器] 中，按一下行尾之外的任何位置，然後輸入內容。 這個功能可以用來將註解放置在程式碼旁邊的一致位置上。
 
-**換行**
+**自動換行**
 
 選取時，如果某行的水平延伸部分超過可檢視的編輯器區域，超過的部分會自動顯示於下一行。 選取這個選項，會啟用 [顯示自動換行的視覺化圖像]**** 選項。
 
@@ -127,5 +127,5 @@ ms.locfileid: "75566874"
 ## <a name="see-also"></a>另請參閱
 
 - [索引標籤、所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages-tabs.md)
-- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)
-- [Using IntelliSense](../../ide/using-intellisense.md)
+- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
+- [使用 IntelliSense](../../ide/using-intellisense.md)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f7e6a79198ad54d3432f30fe9b57b3133a94165e
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288958"
 ---
 # <a name="combinepath-task"></a>CombinePath 工作
@@ -31,7 +31,7 @@ ms.locfileid: "85288958"
  下表描述 [CombinePath 工作](../msbuild/combinepath-task.md)的參數。
 
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`BasePath`|必要的 `String` 參數。<br /><br /> 要與其他路徑結合的基底路徑。 可以是相對路徑、絕對路徑或空白。|
 |`Paths`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要與 BasePath 結合以形成結合路徑的個別路徑清單。 路徑可為相對或絕對路徑。|
@@ -39,9 +39,9 @@ ms.locfileid: "85288958"
 
 ## <a name="remarks"></a>備註
 
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱[TaskExtension 基類](../msbuild/taskextension-base-class.md)。
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些額外參數的清單及其描述，請參閱 [TaskExtension 基類（base class](../msbuild/taskextension-base-class.md)）。
 
- 下列範例示範如何使用建立輸出檔案夾結構， `CombinePath` `$(OutputDirectory)` 方法是結合 `$(PublishRoot)` 與 `$(ReleaseDirectory)` 和子資料夾清單串連的根路徑來建立屬性 `$(LangDirectories)` 。
+ 下列範例示範如何藉 `CombinePath` `$(OutputDirectory)` 由結合串連的根路徑 `$(PublishRoot)` 與 `$(ReleaseDirectory)` 子資料夾清單，使用來建立輸出檔案夾結構，以建立屬性 `$(LangDirectories)` 。
 
  ```xml
   <PropertyGroup>
@@ -62,7 +62,7 @@ ms.locfileid: "85288958"
   </Target>
 ```
 
-唯一允許為清單的屬性 `CombinePath` 是 `Paths` ，在此情況下，輸出也是清單。 因此，如果 `$(PublishRoot)` 是*C:\Site1 \\ *，而且 `$(ReleaseDirectory)` 是*Release \\ *，而且 `@(LangDirectories)` 是*en-us \; fr-fr \\ *，則此範例會建立資料夾：
+唯一允許為清單的屬性 `CombinePath` 是 `Paths` ，在此情況下，輸出也是清單。 因此，如果 `$(PublishRoot)` 是*C:\Site1 \\ *，而且 `$(ReleaseDirectory)` 是*Release \\ *，而且 `@(LangDirectories)` 是*en-us \; fr \\ *，則這個範例會建立資料夾：
 
 - C:\Site1\Release\en-us\
 - C:\Site1\Release\fr-fr\

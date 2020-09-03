@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e568a9fa844802ddab934264cbc316d3514fe577
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579376"
 ---
 # <a name="step-8-customize-the-quiz"></a>步驟 8：自訂測驗
@@ -29,7 +29,7 @@ ms.locfileid: "77579376"
 
 ## <a name="to-customize-the-quiz"></a>自訂測驗
 
-- 當測驗中僅保留五秒鐘時，通過設置其**BackColor**屬性將**時間Label**控制項變為紅色。
+- 當測驗中只剩下五秒時，請設定其**背景**色彩屬性以將**timeLabel**控制項變成紅色。
 
   ```csharp
   timeLabel.BackColor = Color.Red;
@@ -47,6 +47,6 @@ ms.locfileid: "77579376"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 要轉到下一教程，請參閱**[教程 3：創建匹配的遊戲](../ide/tutorial-3-create-a-matching-game.md)**。
+- 若要移至下一個教學課程，請參閱 **[教學課程3：建立配對遊戲](../ide/tutorial-3-create-a-matching-game.md)**。
 
-- 要返回到前面的教程步驟，請參閱步驟[7：添加乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。
+- 若要回到上一個教學課程步驟，請參閱 [步驟7：新增乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。

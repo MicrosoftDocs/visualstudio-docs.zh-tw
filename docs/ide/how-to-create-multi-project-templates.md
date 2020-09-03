@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b71af98c7d72e0b3a510f3968f3d0770cd5401df
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284408"
 ---
 # <a name="how-to-create-multi-project-templates"></a>如何：建立多專案範本
@@ -30,9 +30,9 @@ ms.locfileid: "85284408"
 
 多專案範本必須包含下列項目，且壓縮成 *.zip* 檔案：
 
-- 整個多專案範本的根 *.vstemplate*檔案。 此根 *vstemplate* 檔案包含您建立新專案所在之對話方塊中顯示的中繼資料。 也會指定何處可找到範本中專案的 *vstemplate* 檔案。 這個檔案必須位於 *.zip* 檔案的根目錄。
+- 整個多專案範本的根 *.vstemplate* 檔案。 此根 *vstemplate* 檔案包含您建立新專案所在之對話方塊中顯示的中繼資料。 也會指定何處可找到範本中專案的 *vstemplate* 檔案。 這個檔案必須位於 *.zip* 檔案的根目錄。
 
-- 包含完整專案範本所需之檔案的兩個或多個資料夾。 資料夾包括專案的所有程式碼檔案，以及專案的 *.vstemplate*檔案。
+- 包含完整專案範本所需之檔案的兩個或多個資料夾。 這些資料夾包括專案的所有程式碼檔案，以及專案的 *.vstemplate* 檔案。
 
 例如，有兩個專案的多專案範本 *.zip* 檔，可能有下列檔案和目錄：
 
@@ -44,7 +44,7 @@ ms.locfileid: "85284408"
 - *\Project2\Project2.vbproj*
 - *\Project2\Class.vb*
 
-多專案範本的根 *.vstemplate*檔案與單一專案範本有下列不同之處：
+多專案範本的根 *.vstemplate* 檔案與單一專案範本的差異如下：
 
 - **VSTemplate** 項目的 **Type** 屬性具有 **ProjectGroup** 值，而非 **Project**。 例如：
 
@@ -88,15 +88,15 @@ ms.locfileid: "85284408"
 2. 自訂專案，直到它們可以匯出成範本為止。
 
    > [!TIP]
-   > 如果您使用[範本參數](template-parameters.md)且您想要從父代範本參考變數，請在參數名稱加上前置詞 `ext_`。 例如： `$ext_safeprojectname$` 。 此外，請將 **ProjectTemplateLink** 元素的 **CopyParameters** 屬性設定為 **true**。
+   > 如果您使用[範本參數](template-parameters.md)且您想要從父代範本參考變數，請在參數名稱加上前置詞 `ext_`。 例如 `$ext_safeprojectname$`。 此外，請將 **ProjectTemplateLink** 元素的 **CopyParameters** 屬性設定為 **true**。
    >
    > ```xml
    > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>
    > ```
 
-3. 在 [**專案**] 功能表上，選擇 [**匯出範本**]。
+3. 選擇 [ **專案** ] 功能表上的 [ **匯出範本**]。
 
-   [**匯出範本 Wizard]** 隨即開啟。
+   [ **匯出範本]** 隨即開啟。
 
 4. 在 [選擇範本類型]**** 頁面上，選取 [專案範本]****。 選取其中一個您想要匯出至範本的專案，然後選擇 [下一步]****。 (對解決方案中的每個專案重複這些步驟)。
 
@@ -111,19 +111,19 @@ ms.locfileid: "85284408"
 
 7. 將每個專案的 *.zip* 檔案內容解壓縮至您建立的對應子目錄。
 
-8. 在基底目錄中，建立檔案副檔名為 *.vstemplate* 的 XML 檔案。 此檔案包含多專案範本的中繼資料。 請參閱接下來的檔案結構範例。 請務必指定每個專案的 *.vstemplate*檔案的相對路徑。
+8. 在基底目錄中，建立檔案副檔名為 *.vstemplate* 的 XML 檔案。 此檔案包含多專案範本的中繼資料。 請參閱接下來的檔案結構範例。 請務必指定每個專案的 *.vstemplate* 檔案的相對路徑。
 
-9. 選取基底目錄中的所有檔案，然後從滑鼠右鍵或操作功能表中，選擇 [**傳送到**  >  **壓縮的（zipped）資料夾**]。
+9. 選取基底目錄中的所有檔案，然後從滑鼠右鍵功能表或操作功能表中，選擇 [**傳送到**  >  **壓縮 (壓縮的) 資料夾**。
 
    檔案和資料夾即會壓縮成 *.zip* 檔案。
 
 10. 將 *.zip* 檔案複製到使用者專案範本目錄中。 此目錄預設為 *%USERPROFILE%\Documents\Visual Studio \<version\> \Templates\ProjectTemplates*。
 
-11. 在 Visual Studio 中，**選擇 [** 檔案] [新增] [專案]，  >  **New**  >  **Project**並確認您的範本出現。
+11. 在 [Visual Studio 中 **，選擇 [** 檔案  >  **新**  >  **專案**]，並確認範本是否出現。
 
 ## <a name="two-project-example"></a>雙專案範例
 
-這個範例會顯示基本的多專案根 *.vstemplate*檔案。 在本範例中，範本有兩個專案：**My Windows Application** 和 **My Class Library**。 **ProjectTemplateLink** 項目上的 **ProjectName** 屬性會指定要提供給專案的名稱。
+此範例顯示基本的多專案根 *.vstemplate* 檔案。 在本範例中，範本有兩個專案：**My Windows Application** 和 **My Class Library**。 **ProjectTemplateLink** 項目上的 **ProjectName** 屬性會指定要提供給專案的名稱。
 
 > [!TIP]
 > 如果未指定 **ProjectName** 屬性，則請使用 vstemplate** 檔案的名稱作為專案名稱。
@@ -191,5 +191,5 @@ ms.locfileid: "85284408"
 - [建立專案和專案範本](../ide/creating-project-and-item-templates.md)
 - [如何：建立專案範本](../ide/how-to-create-project-templates.md)
 - [Visual Studio 範本結構描述參考 (擴充性)](../extensibility/visual-studio-template-schema-reference.md)
-- [SolutionFolder 元素（Visual Studio 範本）](../extensibility/solutionfolder-element-visual-studio-templates.md)
-- [ProjectTemplateLink 元素（Visual Studio 範本）](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+- [ (Visual Studio 範本的 SolutionFolder 元素) ](../extensibility/solutionfolder-element-visual-studio-templates.md)
+- [ (Visual Studio 範本的 ProjectTemplateLink 元素) ](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

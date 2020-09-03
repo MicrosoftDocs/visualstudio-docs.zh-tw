@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eddb9804378a4c32de9d1b68f952bc715f32ffd6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288906"
 ---
 # <a name="delete-task"></a>Delete 工作
@@ -33,7 +33,7 @@ ms.locfileid: "85288906"
 
 下表說明 `Delete` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`DeletedFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定已成功刪除的檔案。|
 |`Files`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要刪除的檔案。|
@@ -41,14 +41,14 @@ ms.locfileid: "85288906"
 
 ## <a name="remarks"></a>備註
 
-除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱[TaskExtension 基類](../msbuild/taskextension-base-class.md)。
+除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些額外參數的清單及其描述，請參閱 [TaskExtension 基類（base class](../msbuild/taskextension-base-class.md)）。
 
 > [!WARNING]
-> 當您使用萬用字元搭配工作時，請務必小心 `Delete` 。 您可以使用或之類的運算式輕鬆地刪除錯誤的檔案 `$(SomeProperty)\**\*.*` `$(SomeProperty)/**/*.*` ，特別是當屬性評估為空字串時，在這種情況下， `Files` 參數可以評估為磁片磁碟機的根目錄，而且刪除的次數比您想要刪除的還要多。
+> 當您在工作中使用萬用字元時，請務必小心 `Delete` 。 您可以使用或之類的運算式輕鬆地刪除錯誤的檔案， `$(SomeProperty)\**\*.*` `$(SomeProperty)/**/*.*` 尤其是當屬性評估為空字串時，此 `Files` 參數可以評估為磁片磁碟機的根目錄，並刪除超過您想要刪除的內容。
 
 ## <a name="example"></a>範例
 
-下列範例會在您建立目標時，刪除檔案*MyApp. pdb。* `DeleteDebugSymbolFile`
+下列範例會在您建立目標時刪除檔案*MyApp。* `DeleteDebugSymbolFile`
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -71,7 +71,7 @@ ms.locfileid: "85288906"
 
 ```
 
-如果您需要追蹤已刪除的檔案，請將設定 `TaskParameter` 為， `DeletedFiles` 並使用專案名稱，如下所示：
+如果您需要追蹤已刪除的檔案，請 `TaskParameter` 使用專案名稱設定為，如下所示 `DeletedFiles` ：
 
 ```xml
       <Target Name="DeleteDebugSymbolFile">
@@ -82,11 +82,11 @@ ms.locfileid: "85288906"
     </Target>
 ```
 
-`Delete`請建立檔案 `ItemGroup` 的以刪除並執行該工作，而不是直接在工作中使用萬用字元 `Delete` 。 但是，請務必 `ItemGroup` 小心地放置。 如果您將放在 `ItemGroup` 專案檔的最上層，在組建開始之前，它會及早評估，因此不會包含任何在組建程式中建立的檔案。 因此，請在 `ItemGroup` 靠近工作的目標中，放入建立要刪除之專案清單的 `Delete` 。 您也可以指定條件來檢查屬性是否不是空的，這樣您就不會建立具有從磁片磁碟機根目錄開始之路徑的專案清單。
+您 `Delete` 可以建立要刪除的檔案， `ItemGroup` 並在上面執行工作，而不是直接在工作中使用萬用字元 `Delete` 。 但是，請務必 `ItemGroup` 小心地進行。 如果您在 `ItemGroup` 專案檔的最上層放置，它會在組建開始之前先評估，因此它不會包含組建程式中所建立的任何檔案。 因此，請將 `ItemGroup` 建立要在接近工作的目標中刪除之專案清單的 `Delete` 。 您也可以指定條件來檢查屬性不是空的，如此一來，就不會使用從磁片磁碟機根目錄開始的路徑建立專案清單。
 
-此工作適用 `Delete` 于刪除檔案。 如果您想要刪除目錄，請使用[RemoveDir](removedir-task.md)。
+工作 `Delete` 是用來刪除檔案。 如果您想要刪除目錄，請使用 [RemoveDir](removedir-task.md)。
 
-工作 `Delete` 不會提供刪除唯讀檔案的選項。 若要刪除唯讀檔案，您可以使用工作 `Exec` 來執行 `del` 命令或對等的，並使用適當的選項來啟用刪除唯讀檔案。 您必須注意輸入專案清單的長度，因為命令列上有長度限制，也請務必處理具有空格的檔案名，如下列範例所示：
+此工作 `Delete` 不會提供刪除唯讀檔案的選項。 若要刪除唯讀檔案，您可以使用此工作 `Exec` 來執行 `del` 命令或對等專案，並提供可讓您刪除唯讀檔案的適當選項。 您必須注意輸入專案清單的長度，因為命令列上有長度限制，以及務必處理具有空格的檔案名，如此範例所示：
 
 ```xml
 <Target Name="DeleteReadOnly">
@@ -97,7 +97,7 @@ ms.locfileid: "85288906"
 </Target>
 ```
 
-一般來說，在撰寫組建腳本時，請考慮您的刪除是否為作業的邏輯部分 `Clean` 。 如果您需要設定一些要在正常作業中清除的檔案 `Clean` ，您可以將它們新增到清單中， `@(FileWrites)` 然後在下一步將它們刪除 `Clean` 。 如果需要更多自訂處理，請定義一個目標，並藉由設定屬性 `BeforeTargets="Clean"` 或 `AfterTargets="Clean"` ，或定義或目標的自訂版本來指定它要執行 `BeforeClean` `AfterClean` 。 請參閱[自訂您的組建](customize-your-build.md)。
+一般來說，在撰寫組建腳本時，請考慮您的刪除是否在邏輯上是作業的一部分 `Clean` 。 如果您需要將某些檔案設定為一般作業的一部分 `Clean` ，您可以將它們新增至 `@(FileWrites)` 清單，然後在下一步將其刪除 `Clean` 。 如果需要更多的自訂處理，請定義目標，並指定要執行它，方法是設定屬性 `BeforeTargets="Clean"` 或 `AfterTargets="Clean"` ，或是定義或目標的自訂版本 `BeforeClean` `AfterClean` 。 請參閱 [自訂您的組建](customize-your-build.md)。
 
 ## <a name="see-also"></a>另請參閱
 

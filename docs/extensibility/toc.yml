@@ -442,7 +442,7 @@
       href: ux-guidelines/layout-for-visual-studio.md
     - name: 通知與進度
       href: ux-guidelines/notifications-and-progress-for-visual-studio.md
-    - name: Animations
+    - name: 動畫
       href: ux-guidelines/animations-for-visual-studio.md
     - name: 評估工具
       href: ux-guidelines/evaluation-tools-for-visual-studio.md
@@ -828,7 +828,7 @@
       href: creating-a-software-development-kit.md
     - name: SDK 與 NuGet 套件
       href: nuget-versus-sdk-references.md
-    - name: '逐步解說︰使用 C# 或 Visual Basic 建立 SDK'
+    - name: 逐步解說︰使用 C# 或 Visual Basic 建立 SDK
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: 逐步解說：使用 C++ 建立 SDK
       href: walkthrough-creating-an-sdk-using-cpp.md
