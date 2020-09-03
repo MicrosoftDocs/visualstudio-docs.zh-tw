@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8400c5afcb81215078617cca00cef9aa8ce018d6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287541"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>如何：選取負載測試的使用中回合設定
@@ -26,7 +26,7 @@ ms.locfileid: "85287541"
 > [!NOTE]
 > 如需回合設定屬性及其描述的完整清單，請參閱[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。
 
-如果您的負載測試在 [回合設定]**** 資料夾下只有一個回合設定節點，該節點則一律為使用中的節點。 如果您的負載測試包含多個回合設定節點，則可以在執行負載測試時選取其中一個使用。 請參閱[如何：將其他回合設定加入至負載測試](../test/how-to-add-additional-run-settings-to-a-load-test.md)。
+如果您的負載測試在 [回合設定]**** 資料夾下只有一個回合設定節點，該節點則一律為使用中的節點。 如果您的負載測試包含多個回合設定節點，則可以在執行負載測試時選取其中一個使用。 請參閱 [如何：將其他回合設定加入至負載測試](../test/how-to-add-additional-run-settings-to-a-load-test.md)。
 
 在 [負載測試編輯器]**** 中，使用中的回合設定可由 "[Active]" 後置字元加以辨識。
 

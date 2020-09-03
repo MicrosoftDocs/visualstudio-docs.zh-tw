@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_SCOPE |微軟文件
+title: DISASSEMBLY_STREAM_SCOPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fae1f22c6db22cd6cff93cfb1b98a28620a1537c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737267"
 ---
 # <a name="disassembly_stream_scope"></a>DISASSEMBLY_STREAM_SCOPE
-指定拆解流的範圍。
+指定反組解碼資料流程的範圍。
 
 ## <a name="syntax"></a>語法
 
@@ -48,28 +48,28 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
 
 ## <a name="fields"></a>欄位
 `DSS_HUGE`\
-指定拆解代碼上下文產生的輸出將超過用戶端在單個調用中通常希望檢索的輸出數。
+指定反組譯程式碼內容會產生比用戶端通常想要在單一呼叫中取得更多的輸出。
 
 `DSS_FUNCTION`\
-指定應拆解代碼上下文中包含的函數。 指定拆解流表示函數,當由[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)方法返回時。
+指定應拆解程式碼內容所包含的函式。 指定當 [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) 方法傳回時，反組解碼資料流程表示函式。
 
 `DSS_MODULE`\
-當由`IDebugDisassemblyStream2::GetScope`方法返回時,指定拆解流表示模組。
+當方法傳回時 `IDebugDisassemblyStream2::GetScope` ，會指定反組解碼資料流程代表模組。
 
 `DSS_ALL`\
-指定整個位址空間的拆解。
+指定整個位址空間的反組譯。
 
 ## <a name="remarks"></a>備註
-作為參數傳遞給[GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)方法,並由[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)方法返回。
+傳遞為 [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) 方法的引數，並由 [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) 方法傳回。
 
-這些值可以稍微結合`OR`。
+這些值可能會與位結合 `OR` 。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

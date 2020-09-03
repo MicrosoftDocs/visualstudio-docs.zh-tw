@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 0bb76de0d62ab504090d9ac1864ba7ee5627f69d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537276"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>分析資源耗用量和 UI 執行緒活動 (XAML)
@@ -32,11 +32,11 @@ ms.locfileid: "85537276"
 - Windows 7
 
 > [!NOTE]
-> 除了 [時間軸] **** 資料之外，您還可以收集並分析 CPU 使用量資料和能源消耗資料。 請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
+> 除了 [時間軸] **** 資料之外，您還可以收集並分析 CPU 使用量資料和能源消耗資料。 請參閱 [使用或不使用偵錯工具來執行程式碼剖析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
 
 ## <a name="collect-application-timeline-data"></a>收集應用程式時間軸資料
 
-您可以在本機電腦、連接的裝置、Visual Studio 模擬器 (Simulator 或 Emulator) 或遠端裝置上分析應用程式的回應性。 請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
+您可以在本機電腦、連接的裝置、Visual Studio 模擬器 (Simulator 或 Emulator) 或遠端裝置上分析應用程式的回應性。 請參閱 [使用或不使用偵錯工具來執行程式碼剖析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
 
 > [!TIP]
 > 請盡可能直接在裝置上執行應用程式。 在模擬器上或透過遠端桌面連接觀察到的應用程式效能，可能與裝置上的實際效能不同。 相反地，使用 Visual Studio 遠端工具收集資料並不會影響效能資料。
@@ -45,14 +45,14 @@ ms.locfileid: "85537276"
 
 1. 開啟 XAML 應用程式。
 
-2. 按一下 [ **Debug/Performance Profiler**]。 您應該會在 .diagsession 視窗中看到一份程式碼剖析工具清單。
+2. 按一下 [ **Debug/效能分析工具**]。 您應該會在 .diagsession 視窗中看到一份程式碼剖析工具清單。
 
 3. 選取 [應用程式時間軸] **** ，然後在視窗底部按一下 [開始] **** 。
 
    ![已選取應用程式時間軸工具](../profiling/media/apptimelineselect.png "應用程式時間軸工具")
 
    > [!NOTE]
-   > 您可能會看到一個 [使用者帳戶控制] 視窗，要求您執行*VsEtwCollector.exe*的許可權。 按一下 [是] 。
+   > 您可能會看到 [使用者帳戶控制] 視窗要求您執行 *VsEtwCollector.exe*的許可權。 按一下 [是]  。
 
 4. 執行您感興趣用來在應用程式中程式碼剖析的案例，來收集效能資料。
 
@@ -70,7 +70,7 @@ ms.locfileid: "85537276"
 
 2. 使用 [UI 執行緒使用率]**** 或 [視覺輸送量 (FPS)]**** 圖形中的資訊，檢查 [時間軸詳細資料]**** 檢視中的詳細資料，找出任何明顯缺乏回應性的可能原因。
 
-### <a name="report-scenarios-categories-and-events"></a><a name="BKMK_Report_scenarios_categories_and_events"></a>報表案例、類別和事件
+### <a name="report-scenarios-categories-and-events"></a><a name="BKMK_Report_scenarios_categories_and_events"></a> 報表案例、類別和事件
 
 [應用程式時間軸] **** 工具會顯示與 XAML 效能相關之情節、分類和事件的計時資料。
 
@@ -100,10 +100,10 @@ ms.locfileid: "85537276"
 
 支援的事件如下：
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**剖析**|剖析 XAML 檔案和建立物件所花費的時間。<br /><br /> 展開 [時間軸詳細資料]**** 中的 [剖析]**** 節點，會顯示由於根事件而剖析的所有 XAML 檔案相依性鏈結。 這可讓您識別效能敏感情節中不必要的檔案剖析和物件建立作業，並排除這些作業以取得最佳化。|
-|**配置**|在大型應用程式裡，螢幕上可能會同時顯示數千個項目。 此顯示可能導致低 UI 畫面播放速率和對應不佳的應用程式回應性。 配置事件準確地判斷每個項目的配置成本 (也就是在 Arrange、Measure、ApplyTemplate、ArrangeOverride 和 MeasureOverride 中所花的時間)。 也會建置參與版面配置階段的視覺化樹狀結構。 您可以使用此視覺效果，來判斷要清除哪些邏輯樹狀結構，或評估其他延遲機制以最佳化版面配置階段。|
+|**版面配置**|在大型應用程式裡，螢幕上可能會同時顯示數千個項目。 此顯示可能導致低 UI 畫面播放速率和對應不佳的應用程式回應性。 配置事件準確地判斷每個項目的配置成本 (也就是在 Arrange、Measure、ApplyTemplate、ArrangeOverride 和 MeasureOverride 中所花的時間)。 也會建置參與版面配置階段的視覺化樹狀結構。 您可以使用此視覺效果，來判斷要清除哪些邏輯樹狀結構，或評估其他延遲機制以最佳化版面配置階段。|
 |**轉譯**|將 XAML 項目繪製到螢幕所花費的時間。|
 |**I/0**|從本機磁碟或網路資源 (透過 [Microsoft Windows 網際網路 (WinINet) API](/windows/desktop/WinInet/portal)存取) 擷取資料所花費的時間。|
 |**應用程式程式碼**|執行與剖析或配置不相關應用程式 (使用者) 程式碼所花費的時間。|
@@ -112,11 +112,11 @@ ms.locfileid: "85537276"
 > [!TIP]
 > 當您開始進行程式碼剖析以檢視 UI 執行緒上所執行的應用程式時，請選擇 [CPU 使用量] **** 工具和 [應用程式時間軸] **** 工具。 將長時間執行的應用程式程式碼移到背景執行緒可以改善 UI 回應性。
 
-#### <a name="customizing-timeline-details"></a><a name="BKMK_Customizing_Timeline_details_"></a>自訂時間軸詳細資料
+#### <a name="customizing-timeline-details"></a><a name="BKMK_Customizing_Timeline_details_"></a> 自訂時間軸詳細資料
 
 您可以使用 [時間軸詳細資料] **** 工具列來排序、篩選及指定 [時間軸詳細資料] **** 檢視項目的註釋。
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**排序依據**|依開始時間或事件長度排序。|
 |![依畫面格分組事件](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|加入或移除依框架分組事件的最上層 [框架] **** 分類。|
@@ -125,7 +125,7 @@ ms.locfileid: "85537276"
 
 ## <a name="see-also"></a>另請參閱
 
-- [WPF 小組 blog：適用于 WPF 應用程式的新 UI 效能分析工具](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
+- [WPF team blog：適用于 WPF 應用程式的新 UI 效能分析工具](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
 - [使用 C++、C# 及 Visual Basic 的 UWP App 效能最佳做法](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [最佳化 WPF 應用程式效能](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
 - [Visual Studio 中的分析](../profiling/index.yml)

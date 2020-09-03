@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1c66e8b281f27e13a1176dd32f21856367e5f1ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189735"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取列舉型別序列中的堆疊框架項目指定的數目。  
+從列舉序列中抓取指定數目的堆疊框架元素。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,16 +37,16 @@ HRESULT Next( 
   
 #### <a name="parameters"></a>參數  
  celt  
- [in]要擷取列舉值中的 stackframe 元素數目。  
+ 在要抓取的列舉值中 stackframe 元素的數目。  
   
  rgelt  
- [out]陣列，是要填入所要求[IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)物件。  
+ 擴展要以要求的 [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) 物件填入的陣列。  
   
  pceltFetched  
- [out]擷取列舉值中傳回的堆疊框架項目。  
+ 擴展傳回已提取枚舉器中堆疊框架專案的數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`有沒有更多的堆疊框架。 否則會傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果沒有其他堆疊框架，則會傳回。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   

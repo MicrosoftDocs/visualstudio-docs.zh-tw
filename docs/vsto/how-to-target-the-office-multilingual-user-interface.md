@@ -18,22 +18,22 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5217f2d6cf67eced00c0c84b9bacda94573c5a09
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537497"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>如何：以 Office 多語系使用者介面為目標
-  多語系使用者介面（MUI）是一項 Microsoft Office 功能，可讓使用者變更使用者介面（UI）的語言。 例如，使用英文 UI 的使用者可以將 UI 的語言變更為西班牙文。
+  多語系消費者介面 (MUI) 是 Microsoft Office 功能，可讓終端使用者變更使用者介面 (UI) 的語言。 例如，使用英文 UI 的終端使用者可以將 UI 的語言變更為西班牙文。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- 如果您的應用程式將由使用許多 Office 語言的人員使用，您可以加入程式碼，以自動變更 UI 字串的語言，使其符合使用者電腦上的 Office 所使用的語言（如果使用者已安裝正確的資源）。
+ 如果您的應用程式將由使用許多語言 Office 的人員使用，您可以新增程式碼，以自動變更 UI 字串的語言，使其符合使用者電腦上的 Office 所使用的語言 (如果使用者已安裝正確的資源) 。
 
 ## <a name="to-check-the-current-office-ui-setting"></a>若要檢查目前的 Office UI 設定
 
-1. 使用 <xref:System.Threading.Thread.CurrentUICulture%2A> 目前線程的屬性。 設定 UI 字串的語言，使其符合目前在使用者電腦上執行之 Office 版本所使用的語言。
+1. 使用 <xref:System.Threading.Thread.CurrentUICulture%2A> 目前線程的屬性。 將 UI 字串的語言設定為符合目前在使用者電腦上執行的 Office 版本所使用的語言。
 
      [!code-vb[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#10)]
      [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]

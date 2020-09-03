@@ -9,10 +9,10 @@ caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 68bff8dbe2d0e5d85c8b18eeafaeaad06ba3982e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540071"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>使用測試總管針對現有 C++ 應用程式執行單元測試
@@ -29,21 +29,21 @@ ms.locfileid: "85540071"
 
  有幾種方式可以測試產品程式碼，這取決於產品是否有公開您要測試的介面。 請選擇下列其中一種方式：
 
- **單元測試只會使用從受測程式碼匯出的**函式：新增個別的測試專案。 在測試專案中，加入受測專案的參考。
+ **單元測試只會使用從受測程式碼匯出** 的函式：新增個別的測試專案。 在測試專案中，加入受測專案的參考。
 
  移至[從測試專案參考匯出的函式](#projectRef)程序。
 
- 受測程式**代碼會建立為 .exe 檔案：** 新增個別的測試專案。 將它連結至輸出目的檔。
+ **測試中的程式碼是以 .exe 檔案的形式建立：** 新增個別的測試專案。 將它連結至輸出目的檔。
 
  移至[將測試連結至物件或程式庫檔案](#objectRef)程序。
 
- **單元測試必須使用私用函式和資料，而且受測程式碼可以建立為靜態程式庫：** 變更受測專案，使其編譯為 .lib 檔案。 加入會參考受測專案的個別測試專案。
+ **單元測試必須使用私用函式和資料，且受測程式碼可以建立為靜態程式庫：** 變更受測專案，使其編譯為 .lib 檔案。 加入會參考受測專案的個別測試專案。
 
  這個方法有一個優點，就是可讓您的測試使用私用成員，但仍然將測試保留在個別專案中。 不過，這可能不適用於某些應用程式，在這類應用程式中您必須具有動態連結程式庫 (.dll)。
 
  請移至[將受測程式碼變更為靜態程式庫](#staticLink)程序。
 
- **單元測試必須使用私用函式和資料，而程式碼必須建立為動態連結程式庫（DLL）：** 將單元測試加入至與產品程式碼相同的專案中。
+ **單元測試必須使用私用函式和資料，而程式碼必須建立為動態連結程式庫， (DLL) ：** 將單元測試加入至與產品程式碼相同的專案中。
 
  請移至[在相同專案中新增單元測試](#sameProject)程序。
 
@@ -121,7 +121,7 @@ ms.locfileid: "85540071"
 
        |屬性|值|
        |-|-|
-       |**Include 目錄**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
+       |**包含目錄**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
        |**程式庫目錄**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
 2. 加入 C++ 單元測試檔案：
@@ -160,6 +160,6 @@ ms.locfileid: "85540071"
 
 1. 在 [ **檢視** ] 功能表上，選擇 [ **其他視窗**]、[ **測試總管**]。
 
-2. 在 [測試] Explorer 中，選擇 [**全部執行**]。
+2. 在 [測試瀏覽器] 中，選擇 [ **全部執行**]。
 
    如需詳細資訊，請參閱[快速入門：搭配測試總管進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)。

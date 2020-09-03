@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5bdfae6235e7efb833eca0b87631af9204b4a678
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387105"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 的新功能
@@ -28,7 +28,7 @@ ms.locfileid: "86387105"
 
 本頁的重點在於說明自 Visual Studio 2013 RTM 以後新增的一些最重要功能，包括其中一個 Visual Studio 2013 更新第一次引進的功能。 如需 Visual Studio 2015 新功能的完整清單，請參閱 [版本資訊](https://www.visualstudio.com/news/vs2015-vs)。
 
-若要深入瞭解 Visual Studio ALM 中的許多改進功能和新功能，請參閱[TFS 2015 的新](/azure/devops/server/whats-new#tfs-2015)功能。
+若要深入瞭解 Visual Studio ALM 的許多增強功能和新功能，請參閱 [TFS 2015 的新](/azure/devops/server/whats-new#tfs-2015)功能。
 
 ## <a name="a-new-setup-experience"></a>新的安裝經驗
  [!INCLUDE[downloadvs](./includes/downloadvs-md.md)]
@@ -50,10 +50,10 @@ ms.locfileid: "86387105"
  此外，對於傳統桌面應用程式的支援也比過去更好，無論在語言、程式庫及工具上，都有多項的改進。
 
 ### <a name="cross-platform-mobile-apps-in-c-with-xamarin-for-visual-studio"></a>搭配使用 C# 和適用於 Visual Studio 的 Xamarin 的跨平台行動應用程式
- Xamarin 是可讓您以 C# 撰寫程式碼的行動架構，以原生繫結至 iOS 和 Android API。 Microsoft 也與 Xamarin 密切合作，共同發行了適用於 Visual Studio 的 Xamarin 這項擴充功能，讓您可以在單一方案中使用同一組程式碼，進行 Android、iOS 和 Windows Phone 的開發工作。 使用 Xamarin，您將使用一種語言和一種程式碼基底 (平台間的差異極小)。  Visual Studio 2010 和更新版本支援適用於 Visual Studio 的 Xamarin。 Visual Studio 2015 中已包括 Xamarin 的入門版本。 若要開始，請參閱[在 Visual Studio 中使用 Xamarin 建立具有原生 UI 的應用程式](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)。
+ Xamarin 是可讓您以 C# 撰寫程式碼的行動架構，以原生繫結至 iOS 和 Android API。 Microsoft 也與 Xamarin 密切合作，共同發行了適用於 Visual Studio 的 Xamarin 這項擴充功能，讓您可以在單一方案中使用同一組程式碼，進行 Android、iOS 和 Windows Phone 的開發工作。 使用 Xamarin，您將使用一種語言和一種程式碼基底 (平台間的差異極小)。  Visual Studio 2010 和更新版本支援適用於 Visual Studio 的 Xamarin。 Visual Studio 2015 中已包括 Xamarin 的入門版本。 若要開始使用，請參閱 [在 Visual Studio 中使用 Xamarin 建立具有原生 UI 的應用程式](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)。
 
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>搭配使用 HTML/JavaScript 撰寫的跨平台行動應用程式與 Apache Cordova
- Visual Studio Tools for Apache Cordova 是 Microsoft 與開放原始碼 Apache Cordova 社群密切合作的結果。 這些工具允許使用 HTML、CSS 和 JavaScript (或 Typescript) 進行跨平台行動開發。 您只須使用一組程式碼，就能執行目標平台為 Android、iOS 和 Windows 的開發工作，同時使用 Visual Studio IDE 所提供的豐富功能，包括 JavaScript IntelliSense、DOM 總管、JavaScript 主控台、中斷點、監看功能、區域變數、Just My Code 等等。  透過 Visual Studio Tools for Apache Cordova，您的應用程式可以透過提供一般 JavaScript API 的外掛程式，存取所有平台上的原生裝置功能。 若要開始進行，請參閱[開始使用 Visual Studio Tools 以取得 Apache Cordova](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)。
+ Visual Studio Tools for Apache Cordova 是 Microsoft 與開放原始碼 Apache Cordova 社群密切合作的結果。 這些工具允許使用 HTML、CSS 和 JavaScript (或 Typescript) 進行跨平台行動開發。 您只須使用一組程式碼，就能執行目標平台為 Android、iOS 和 Windows 的開發工作，同時使用 Visual Studio IDE 所提供的豐富功能，包括 JavaScript IntelliSense、DOM 總管、JavaScript 主控台、中斷點、監看功能、區域變數、Just My Code 等等。  透過 Visual Studio Tools for Apache Cordova，您的應用程式可以透過提供一般 JavaScript API 的外掛程式，存取所有平台上的原生裝置功能。 若要開始使用，請參閱 [開始與 Visual Studio Tools 以取得 Apache Cordova](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)。
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>搭配使用 C# 和 Unity 的跨平台行動遊戲
  Unity 是用於開發多平台 2D 和 3D 遊戲之廣為使用的平台。 您可以使用 C# 撰寫遊戲，並以原生形態在 Android、iOS、Windows Phone 和許多其他平台上執行。 Visual Studio Tools for Unity 是整合 Unity 和 Visual Studio IDE 的擴充功能。 透過這項擴充功能，您可以取得 Visual Studio IDE 和偵錯工具的所有功能，以及專為 Unity 開發人員設計的生產力功能。 Visual Studio Tools for Unity 2.0 Preview 2 不僅增加許多新功能，還加入對 Visual Studio 2015 的支援，例如提升物件在 [區域變數] 視窗及 [監看式] 視窗的顯示能力。 Microsoft 最近併購了創造 Visual Studio Tools for Unity 的公司 SyntaxTree。 若要下載 Visual Studio Tools for Unity 2.0 Preview 2，以及如需 Visual Studio Tools for Unity 的詳細資訊，請參閱 [Visual Studio Tools for Unity 2.0](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)。
@@ -61,7 +61,7 @@ ms.locfileid: "86387105"
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>跨平台應用程式及原生 C++ 的程式庫
  C++ 是跨大部分行動裝置的原生可用語言。 您可以使用它來撰寫可針對多個行動平台目標建置的跨平台共用程式碼程式庫。 您甚至可以使用 C++ 建立整個行動應用程式。 Visual C++ 可提供工具來編輯、建置和部署跨平台程式碼，並對其進行偵錯。 除了 Windows 應用程式的範本之外，您還可以使用適用於 Android Native Activity 應用程式、iOS 應用程式或多種平台的共用程式碼程式庫專案 (包括 Xamarin 混合式應用程式)。 需要區分平台的 IntelliSense 可讓您探索各種 API，進而產生適用於目標平台為 Android、iOS 或 Windows 的正確程式碼。 您可以設定您的 x86 或 ARM 原生平台組建，並將您的程式碼部署到 iOS 模擬器、連接網路之 Mac 上的 iOS 裝置、直接附加的 Android 裝置，或是使用高效能 Microsoft Visual Studio Emulator for Android 進行測試。 您可以在 Visual Studio 偵錯工具中設定中斷點、監看變數、檢視堆疊，以及逐步執行 C++ 程式碼。 除了需要區分平台的程式碼之外，您還可以跨多個應用程式平台共用所有的程式碼，而且只需要在 Visual Studio 中建立一個方案，就能建置所有的應用程式。
 
- 若要開始使用跨平臺 c + +，請參閱[使用 Visual C++ 建立跨平臺行動應用程式](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
+ 若要開始使用跨平臺 c + +，請參閱 [使用 Visual C++ 建立跨平臺行動應用程式](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 
 ### <a name="universal-windows-apps-for-any-windows-10-device"></a>適用於任何 Windows 10 裝置的通用 Windows 應用程式
  透過通用 Windows 平台和單一 Windows 核心，您可以在從手機到桌上型電腦的任何 Windows 10 裝置上執行相同的應用程式。 您可以使用 Visual Studio 2015 和通用 Windows 應用程式開發工具，來建立這些通用 Windows 應用程式。
@@ -87,12 +87,12 @@ ms.locfileid: "86387105"
 
  C# 和 Visual Basic 語言在核心語言及 IDE 支援方面都有許多微幅改進。 這些改進項目整合在一起，可以讓您擁有更加直覺式的 .NET 程式設計經驗，而且更加方便、生產效率更高。
 
- 如需詳細資訊，請參閱[新功能](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)和[.net Blog](https://devblogs.microsoft.com/dotnet/)。
+ 如需詳細資訊，請參閱 [新功能](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) 和 [.net Blog](https://devblogs.microsoft.com/dotnet/)。
 
 #### <a name="c"></a>C++
  Visual C++ 在 C++11/14 的語言相容性上有顯著的改善；支援跨平台行動裝置的開發；支援可繼續函式及 Await (目前規劃在 C++17 時進行標準化)；改良 C 執行階段程式庫 (CRT) 及 C++ 標準程式庫 (STL) 實作並修復其 Bug；MFC 中的可調整大小對話方塊；新增編譯器最佳化；提升建置效能；在程式碼編譯器中新增診斷功能及生產力工具。
 
- 如需詳細資訊，請參閱[Visual C++ 的新功能](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)和[Visual C++ 的 Blog](https://devblogs.microsoft.com/cppblog/)。
+ 如需詳細資訊，請參閱 [Visual C++ 的新功能](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) 和 [Visual C++ 的 Blog](https://devblogs.microsoft.com/cppblog/)。
 
 ## <a name="device-preview-menu-bar"></a>裝置預覽功能表列
  在通用 Windows 平台專案中，裝置預覽功能表列可讓您查看如何以各種螢幕大小呈現以 XAML 為基礎的 UI。
@@ -125,7 +125,7 @@ ms.locfileid: "86387105"
 
 - **JavaScript / Cordova**。 使用 [Visual Studio Tools for Apache Cordova](https://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) 來建置 Windows、iOS 和 Android 的 JavaScript 原生應用程式。
 
-     您可在 MSDN Library 中進行[應用程式](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)的「檢查」，深入探討 Cordova 的 Visual Studio 偵錯工具支援。
+     您可以在 MSDN Library 中進行[應用程式的偵錯工具](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)，以詳細瞭解 Cordova 的 Visual Studio 偵錯工具支援。
 
 - **C# / Xamarin**。 使用 [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) 在 Visual Studio 中以 C# 建置 Windows、iOS 和 Android 的原生應用程式。
 
@@ -135,7 +135,7 @@ ms.locfileid: "86387105"
 
 ## <a name="debugging-and-diagnostics"></a>偵錯和診斷
 
-如需診斷新功能的相關資訊，請參閱[分析工具的新功能](./profiling/what-s-new-in-profiling-tools.md)。
+如需診斷新功能的相關資訊，請參閱 [分析工具中的新功能](./profiling/what-s-new-in-profiling-tools.md)。
 
 下列新的或改進的工具可對程式碼執行不同類型的診斷和分析：
 
@@ -233,7 +233,7 @@ ms.locfileid: "86387105"
 
   **本版中的其他設計和模型變更：**
 
-- **分層圖**。 使用類別檢視和物件瀏覽器來更新這些圖表。 為了達到軟體設計需求，請使用分層圖來描述軟體所需的相依性。 透過尋找不符合這些條件約束的程式碼，並使用這個基準來驗證未來的程式碼，讓程式碼與這個設計保持一致。
+- **圖層圖表**。 使用類別檢視和物件瀏覽器來更新這些圖表。 為了達到軟體設計需求，請使用分層圖來描述軟體所需的相依性。 透過尋找不符合這些條件約束的程式碼，並使用這個基準來驗證未來的程式碼，讓程式碼與這個設計保持一致。
 
 - **UML 圖表**。 您已無法再從程式碼建立 UML 類別圖和循序圖。 但您還是可以使用新的 UML 元素來建立這些圖表。
 
@@ -259,10 +259,10 @@ ms.locfileid: "86387105"
 
  只要按一下標題列上的黃色笑臉，然後再按一下 [傳送苦臉] **** 就可以了。 請告訴我們您不喜歡的原因，然後按一下 [傳送苦臉] 按鈕。 如需詳細資訊，請參閱 [Talk to Us](./ide/talk-to-us.md)。
 
-### <a name="report-crashes-unresponsive-and-performance-issues"></a>報告當機、沒有回應和效能問題
- 有些時候，傳送苦臉中的簡短文字並無法盡述您為什麼不喜歡某項功能。 對於 Visual Studio 停止回應、當機或發生另一個效能問題的時間，您可以使用傳送苦臉後顯示的對話方塊，輕鬆地共用重現步驟、損毀傾印和追蹤檔案。
+### <a name="report-crashes-unresponsive-and-performance-issues"></a>報告損毀、沒有回應和效能問題
+ 有些時候，傳送苦臉中的簡短文字並無法盡述您為什麼不喜歡某項功能。 當 Visual Studio 停止回應、當機或發生另一個效能問題時，您可以使用傳送苦臉之後所顯示的對話方塊，輕鬆地共用重現步驟、損毀傾印和追蹤檔案。
 
- 首先，請依照前述步驟傳送苦臉。 接著在隨後顯示的對話方塊上，您可以使用任何預設標籤，或是建立您自己的標籤來標記您的意見反應。 使用標籤可以協助我們將您的意見反應分立到正確的功能團隊。 從 [選擇類別] **** 下拉式清單中，選取可代表您回報之問題的選項，然後遵循所示步驟重現問題。 此外也會提供如何使用 Visual Studio 提供意見反應的詳細步驟。 如需詳細資訊，請參閱[Visual Studio 傳送笑臉指示](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)。
+ 首先，請依照前述步驟傳送苦臉。 接著在隨後顯示的對話方塊上，您可以使用任何預設標籤，或是建立您自己的標籤來標記您的意見反應。 使用標籤可以協助我們將您的意見反應分立到正確的功能團隊。 從 [選擇類別] **** 下拉式清單中，選取可代表您回報之問題的選項，然後遵循所示步驟重現問題。 此外也會提供如何使用 Visual Studio 提供意見反應的詳細步驟。 如需詳細資訊，請參閱 [Visual Studio 傳送笑臉指示](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)。
 
 ## <a name="see-also"></a>另請參閱
 
@@ -273,4 +273,4 @@ ms.locfileid: "86387105"
 * [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md)
 * [建立自訂視窗配置](./misc/create-custom-window-layouts.md)
 * [執行燈泡提示的快速動作](./ide/perform-quick-actions-with-light-bulbs.md)
-* [2017 Visual Studio 的新功能](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+* [Visual Studio 2017 的新功能](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

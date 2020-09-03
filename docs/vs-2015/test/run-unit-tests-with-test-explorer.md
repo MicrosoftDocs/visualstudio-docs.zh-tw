@@ -11,10 +11,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d6c6ebe39cf0d32480aee1019aa5ea47496bd793
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548131"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
@@ -22,7 +22,7 @@ ms.locfileid: "85548131"
 
 您可使用測試總管，透過 Visual Studio 或協力廠商單元測試專案來執行單元測試、將測試依分類分組、篩選測試清單，以及建立、儲存和執行測試播放清單。 您也可以偵錯測試和分析測試效能和程式碼涵蓋範圍。
 
-## <a name="contents"></a><a name="BKMK_Contents"></a>編制
+## <a name="contents"></a><a name="BKMK_Contents"></a> 內容
  [單元測試架構和測試專案](#BKMK_Unit_test_frameworks_and_test_projects)
 
  [在 [測試總管] 中執行測試](#BKMK_Run_tests_in_Test_Explorer)
@@ -33,7 +33,7 @@ ms.locfileid: "85548131"
 
  [建立自訂播放清單](#BKMK_Create_custom_playlists)
 
- [Debug 和分析單元測試](#BKMK_Debug_and_analyze_unit_tests)
+ [調試和分析單元測試](#BKMK_Debug_and_analyze_unit_tests)
 
  [外部資源](#BKMK_External_resources)
 
@@ -42,9 +42,9 @@ ms.locfileid: "85548131"
 
  [測試總管] 可以從方案中的多個測試專案，以及屬於實際執行程式碼專案的測試類別執行測試。 測試專案可以使用不同的單元測試架構。 當進行測試的程式碼是為 .NET Framework 撰寫時，測試專案可以用任何同樣以 .NET Framework 為目標的語言撰寫，而不管目標程式碼的語言為何。 原生 C/C++ 程式碼專案必須使用 C++ 單元測試架構進行測試。
 
- ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
+ ![回到頂端](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
-## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Run_tests_in_Test_Explorer"></a>在測試瀏覽器中執行測試
+## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Run_tests_in_Test_Explorer"></a> 在測試瀏覽器中執行測試
  [執行測試](#BKMK_Run_tests) **&#124;** [每次建置後執行測試](#BKMK_Run_tests_after_every_build)
 
  在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果看不到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試]****，並選擇 [Windows]****，然後選擇 [測試總管]****。
@@ -57,9 +57,9 @@ ms.locfileid: "85548131"
 
  ![從 [測試總管] 的工具列執行測試](../test/media/ute-toolbar.png "UTE_ToolBar")
 
- ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
+ ![回到頂端](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
-### <a name="run-tests"></a><a name="BKMK_Run_tests"></a>執行測試
+### <a name="run-tests"></a><a name="BKMK_Run_tests"></a> 執行測試
  您可以執行方案中的所有測試、群組中的所有測試，或是您選取的一組測試。 執行下列其中一個動作：
 
 - 若要執行方案中的所有測試，請選擇 [全部執行] ****。
@@ -72,20 +72,20 @@ ms.locfileid: "85548131"
 
   執行測試時，測試總管視窗頂端會動畫呈現成功/失敗列。 測試回合結束時，如果所有測試皆成功，成功/失敗列會變成綠色；如果有任何一個測試失敗，則會變成紅色。
 
-  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
+  ![回到頂端](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
 ### <a name="run-tests-after-every-build"></a><a name="BKMK_Run_tests_after_every_build"></a> 每次建置後執行測試
 
 > [!WARNING]
 > 只有 Visual Studio Enterprise 支援在每次建置後執行單元測試。
 
-|映像|描述|
+|Image|描述|
 |-|-|
 |![建置後執行](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|若要在每次本機建置之後執行單元測試，請在標準功能表中選擇 [測試]****，然後選擇 [測試總管] 工具列上的 [建置之後執行測試]****。|
 
- ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
+ ![回到頂端](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
-## <a name="view-test-results"></a><a name="BKMK_View_test_results"></a>查看測試結果
+## <a name="view-test-results"></a><a name="BKMK_View_test_results"></a> 查看測試結果
  [檢視測試詳細資料](#BKMK_View_test_details) **&#124;** [檢視測試方法的原始程式碼](#BKMK_View_the_source_code_of_a_test_method)
 
  當您執行、寫入、重新執行您的測試時，測試總管會顯示 [失敗的測試] ****、[通過的測試] ****、[略過的測試] **** 和 [未執行的測試] **** 群組中的結果。 在測試總管底部的詳細資料窗格會顯示測試回合的摘要。
@@ -109,12 +109,12 @@ ms.locfileid: "85548131"
 
 - 測試失敗時的堆疊追蹤。
 
-  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
+  ![回到頂端](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
 ### <a name="view-the-source-code-of-a-test-method"></a><a name="BKMK_View_the_source_code_of_a_test_method"></a> 檢視測試方法的原始程式碼
- 若要在 Visual Studio 編輯器中顯示測試方法的原始程式碼，請選取測試，然後選擇內容功能表上的 [**開啟測試**] （鍵盤： F12）。
+ 若要在 Visual Studio 編輯器中顯示測試方法的原始程式碼，請選取測試，然後選擇內容功能表上的 [ **開啟測試** ] (鍵盤： F12) 。
 
- ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
+ ![回到頂端](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
 ## <a name="group-and-filter-the-test-list"></a><a name="BKMK_Group_and_filter_the_test_list"></a> 群組和篩選測試清單
  [分組測試清單](#BKMK_Grouping_the_test_list) **&#124;** [依據特性群組](#BKMK_Group_by_traits) **&#124;** [搜尋和篩選測試清單](#BKMK_Search_and_filter_the_test_list)
@@ -135,7 +135,7 @@ ms.locfileid: "85548131"
 |**特性**|依據您定義的分類/值組群組測試。 指定特性分類和值的語法是由單元測試架構所定義。|
 |**專案**|依據名稱專案群組測試。|
 
- ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
+ ![回到頂端](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
 ### <a name="group-by-traits"></a><a name="BKMK_Group_by_traits"></a> 依據特性群組
  特性通常是分類名稱/值組，但也可以是單一分類。 您可將特性指派給方法，其中單元測試架構可將其識別為測試方法。 單元測試架構可以定義特性分類。 您可以將值加入特性分類以定義自己的分類名稱/值組。 指定特性分類和值的語法是由單元測試架構所定義。
@@ -183,7 +183,7 @@ TEST_METHOD(Method1)
 |`TEST_OWNER(ownerAlias)`|使用預先定義的擁有者特性，指定測試方法的擁有者。|
 |`TEST_PRIORITY(priority)`|使用預先定義的優先權特性，將相對優先權指派給測試方法。|
 
- ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
+ ![回到頂端](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
 ### <a name="search-and-filter-the-test-list"></a><a name="BKMK_Search_and_filter_the_test_list"></a> 搜尋和篩選測試清單
  您可以使用測試總管篩選條件，以在檢視和執行的專案中限制測試方法。
@@ -227,7 +227,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 
  傳回名稱包含「MyClass」的所有測試，但排除名稱中也包含「PerfTest」的那些測試。
 
- ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
+ ![回到頂端](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
 ## <a name="create-custom-playlists"></a><a name="BKMK_Create_custom_playlists"></a> 建立自訂播放清單
  您可以建立和儲存想要執行或檢視為群組的測試清單。 當您選取播放清單時，即會在 [測試總管] 中顯示清單中的測試。 您可以將在測試中加入一個以上的播放清單，當您選擇預設的 [所有測試] **** 播放清單時，就可以使用專案中的所有測試。
@@ -242,7 +242,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 
  如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-小型") 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
- ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
+ ![回到頂端](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
 ## <a name="debug-and-analyze-unit-tests"></a><a name="BKMK_Debug_and_analyze_unit_tests"></a> 偵錯和分析單元測試
  [對單元測試進行偵錯](#BKMK_Debug_unit_tests) **&#124;** [診斷測試方法的效能問題](#BKMK_Diagnose_test_method_performance_issues) **&#124;** [分析單元測試程式碼涵蓋範圍](#BKMK_Analyzeunit_test_code_coverage)
@@ -259,7 +259,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    如需偵錯工具的詳細資訊，請參閱 [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)。
 
-   ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
+   ![回到頂端](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
 ### <a name="diagnose-test-method-performance-issues"></a><a name="BKMK_Diagnose_test_method_performance_issues"></a> 診斷測試方法效能問題
  若要診斷測試方法為何花費太多時間，請在測試總管中選取該方法，然後選取操作功能表上的 [設定檔]。 請參閱[效能總管](../profiling/performance-explorer.md)。
@@ -285,12 +285,12 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    如需詳細資訊，請參閱[使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
 
-   ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
+   ![回到頂端](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
-## <a name="external-resources"></a><a name="BKMK_External_resources"></a>外部資源
+## <a name="external-resources"></a><a name="BKMK_External_resources"></a> 外部資源
 
-### <a name="guidance"></a><a name="BKMK_Guidance"></a>指引
+### <a name="guidance"></a><a name="BKMK_Guidance"></a> 指導
  [使用 Visual Studio 2012 測試持續傳遞 – 第 2 章：單元測試：測試內部](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>另請參閱
- 進行[單元測試您的程式碼](../test/unit-test-your-code.md)以[64 位進程的形式執行單元測試](../test/run-a-unit-test-as-a-64-bit-process.md)
+ [單元測試您的程式碼](../test/unit-test-your-code.md)以 [64 位進程的形式執行單元測試](../test/run-a-unit-test-as-a-64-bit-process.md)

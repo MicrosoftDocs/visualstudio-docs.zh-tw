@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8db3960aebe4edc1669f2e7fbe4d40b60618bd0
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466466"
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
-可讓用戶端應用程式以檔案位置指定的方式提供可執行檔的位元組。
+讓用戶端應用程式提供檔案位置所指定的可執行檔位元組。
 
 ## <a name="syntax"></a>語法
 
@@ -33,18 +33,18 @@ IDiaReadExeAtOffsetCallback : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|從可執行檔的指定位移開始，讀取指定的位元組數目。|
+|[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|從可執行檔中的指定位移開始讀取指定的位元組數目。|
 
 ## <a name="remarks"></a>備註
- 用戶端應用程式會執行此介面，以便使用可執行檔的絕對位移來提供可執行檔的位元組。 若要使用相對虛擬位址，請執行[IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)介面。
+ 用戶端應用程式會執行這個介面，以便使用可執行檔的絕對位移來提供可執行檔的位元組。 若要使用相對虛擬位址，請執行 [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) 介面。
 
-## <a name="notes-for-callers"></a>呼叫者的注意事項
- 這個方法是由用戶端應用程式所執行，並傳遞至[IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法，做為讀取檔案的替代方法。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ 這個方法是由用戶端應用程式所執行，並傳遞至 [IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法，作為讀取檔案的替代方法。
 
 ## <a name="requirements"></a>需求
  標頭： Dia2。h
 
- 程式庫： diaguids
+ 程式庫： diaguids .lib
 
  DLL： msdia80.dll
 

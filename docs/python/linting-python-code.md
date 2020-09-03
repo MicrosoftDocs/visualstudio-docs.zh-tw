@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d410fd7575b6f71f272f6924d15249f89aa6ebcc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540097"
 ---
 # <a name="use-pylint-to-check-python-code"></a>使用 PyLint 檢查 Python 程式碼
@@ -29,7 +29,7 @@ ms.locfileid: "85540097"
 
 使用這個命令會提示您將 PyLint 安裝到使用中的環境，如果還沒有 PyLint 的話。
 
-PyLint 警告和錯誤會出現在**錯誤清單**視窗中：
+PyLint 警告和錯誤會出現在 [ **錯誤清單** ] 視窗中：
 
 ![PyLint 錯誤清單](media/code-pylint-error-list.png)
 
@@ -50,7 +50,7 @@ PyLint 文件的 [command-line options](https://pylint.readthedocs.io/en/latest/
    pylint --generate-rcfile > .pylintrc
    ```
 
-1. 在 Visual Studio 方案總管中，以滑鼠右鍵按一下您的專案，選取 [**新增**]  >  [**現有專案**]，流覽至 *.pylintrc*檔案，加以選取，然後選取 [**新增**]。
+1. 在 Visual Studio 方案總管中，以滑鼠右鍵按一下您的專案，選取 [**加入**  >  **現有專案**]，流覽至 *>.pylintrc*檔案並選取它，然後選取 [**新增**]。
 
 1. 開啟檔案進行編輯，它包含您可以使用的各種設定。 若要停用警告，請找出 `[MESSAGES CONTROL]` 區段，然後找出該區段的 `disable` 設定。 您會看到一長串的特定訊息，可以在其中附加您想要的任何警告。 在此範例中，請附加 `,missing-docstring` (包括其中的逗號)。
 

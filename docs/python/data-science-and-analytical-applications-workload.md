@@ -10,10 +10,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 44906d70be05891fe52096adec2f61f2261b5db5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70154884"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>在 Visual Studio 中安裝資料科學支援
@@ -42,7 +42,7 @@ Python 是用於資料科學的主要指令碼語言。 Python 很容易學習�
 ::: moniker-end
 
 <!--Note link on the image because this one is large -->
-[![帶有 R、Python 和 F 的視覺化工作室的螢幕截圖#](media/workload/data-science-workload-screens.png)](media/workload/data-science-workload-screens.png#lightbox)
+[![R、Python 和 F Visual Studio 的螢幕擷取畫面#](media/workload/data-science-workload-screens.png)](media/workload/data-science-workload-screens.png#lightbox)
 
 ## <a name="workload-options"></a>工作負載選項
 
@@ -59,7 +59,7 @@ Python 是用於資料科學的主要指令碼語言。 Python 很容易學習�
 - F# 語言支援
 - Python：
   - Python 語言支援
-  - [Anaconda3 64 位](https://www.continuum.io)，一個包含大量資料科學庫和 Python 解譯器的 Python 發行版本。
+  - [Anaconda3 64](https://www.continuum.io)位，這是包含大量資料科學程式庫和 python 解譯器的 python 發行版本。
   - Python Web 支援
   - Cookiecutter 範本支援
 - R：
@@ -80,21 +80,21 @@ SQL Server 支援使用 Python，以直接在 SQL Server 內執行進階分析�
 
 執行已有資料的程式碼將會有下列優點：
 
-- **消除資料移動**：可以在資料庫中生成應用程式，而不是將資料從資料庫移動到應用程式或模型。 此功能可消除安全性障礙、合規性、控管、完整性，以及 移動大量資料相關類似問題的主機。 您也可以使用無法放入用戶端電腦記憶體的資料集。
+- **消除資料移動**：您可以在資料庫中建立應用程式，而不是將資料從資料庫移至應用程式或模型。 此功能可消除安全性障礙、合規性、控管、完整性，以及 移動大量資料相關類似問題的主機。 您也可以使用無法放入用戶端電腦記憶體的資料集。
 
-- **簡單部署**：一旦模型準備就緒，將其部署到生產中只需將其嵌入到 T-SQL 腳本中即可。 以任何語言撰寫的任何 SQL 用戶端應用程式接著可以透過預存程序呼叫來運用模型和智慧。 不需要任何特定的語言整合。
+- **輕鬆部署**：當您準備好模型之後，將它部署至生產環境，就可以簡單地將它內嵌在 t-sql 腳本中。 以任何語言撰寫的任何 SQL 用戶端應用程式接著可以透過預存程序呼叫來運用模型和智慧。 不需要任何特定的語言整合。
 
-- **企業級性能和規模**：您可以使用 SQL Server 的高級功能，如記憶體表和列存儲索引以及 RevoScale 包中的高性能可擴展 API。 不需要移動資料也表示在您的資料成長或您想要增加應用程式效能時，避免用戶端記憶體條件約束。
+- **企業級效能和規模**：您可以使用 SQL Server 的 advanced 功能，例如記憶體內部資料表和資料行存放區索引，以及 RevoScale 套件中高效能可擴充的 api。 不需要移動資料也表示在您的資料成長或您想要增加應用程式效能時，避免用戶端記憶體條件約束。
 
-- **豐富的可擴充性**：您可以在 SQL Server 中安裝和運行任何最新的開源包，以在 SQL Server 中構建深度學習和 AI 應用程式。 在 SQL Server 中安裝套件，就像在本機電腦上安裝套件一樣簡單。
+- **豐富**的擴充性：您可以在 SQL Server 中安裝並執行任何最新的開放原始碼套件，以在 SQL Server 的大量資料上建立深度學習和 AI 應用程式。 在 SQL Server 中安裝套件，就像在本機電腦上安裝套件一樣簡單。
 
-- **廣泛的可用性，無需額外費用**：語言集成可在 SQL Server 2017 及更高版本（包括 Express 版本）中提供。
+- 完全免費且**不需額外費用**：語言整合適用于所有版本的 SQL Server 2017 和更新版本（包括 Express edition）。
 
 若要完整利用 SQL Server 整合，請使用 Visual Studio 安裝程式，透過 [SQL Server Data Tools]**** 選項來安裝 [資料儲存和處理]**** 工作負載。 後述選項可啟用 SQL IntelliSense、語法醒目提示和部署。
 
 ![資料儲存和處理工作負載](media/workload/data-storage-workload.png) &nbsp;&nbsp;&nbsp;&nbsp; ![資料儲存和處理工作負載選項](media/workload/data-storage-workload-options.png)
 
-其他資訊：
+如需詳細資訊：
 
 ::: moniker range="vs-2017"
 - [使用 SQL Server 和 R](../rtvs/integrating-sql-server-with-r.md)
@@ -106,9 +106,9 @@ SQL Server 支援使用 Python，以直接在 SQL Server 內執行進階分析�
 
 除了資料科學與分析應用程式工作負載中的直接內容之外，Azure Notebooks 服務和 Azure SDK for Python 也適用於資料科學。
 
-Azure SDK for Python 可讓您更輕鬆地從 Windows、Mac 和 Linux 上所執行的應用程式使用及管理 Microsoft Azure 服務。 有關詳細資訊，請參閱[Python 的 Azure SDK。](/azure/python/)
+Azure SDK for Python 可讓您更輕鬆地從 Windows、Mac 和 Linux 上所執行的應用程式使用及管理 Microsoft Azure 服務。 如需詳細資訊，請參閱 [適用于 Python 的 AZURE SDK](/azure/python/)。
 
 Azure Notebooks (目前為預覽版本) 可在 Microsoft Azure 上免費線上存取雲端中執行的 Jupyter Notebooks。 此服務會在 Python、R 和 F# 中包含範例筆記本，協助您開始使用。 請瀏覽 [notebooks.azure.com](https://notebooks.azure.com/)。
 
 <!--Note link on the image because this one is large -->
-[![帶有 R 簡介示例的 Azure 筆記本螢幕截圖](media/workload/data-science-workload-notebooks.png)](media/workload/data-science-workload-notebooks.png#lightbox)
+[![簡介 R 範例 Azure Notebooks 的螢幕擷取畫面](media/workload/data-science-workload-notebooks.png)](media/workload/data-science-workload-notebooks.png#lightbox)

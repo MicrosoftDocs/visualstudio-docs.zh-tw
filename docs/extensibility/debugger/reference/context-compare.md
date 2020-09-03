@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_COMPARE |微軟文件
+title: CONTEXT_COMPARE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1c88b50644d1adda2dd0eaa3b74a828f9739d70b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737612"
 ---
 # <a name="context_compare"></a>CONTEXT_COMPARE
-指定比較兩個記憶體上下文的條件。
+指定比較兩個記憶體內容的準則。
 
 ## <a name="syntax"></a>語法
 
@@ -58,43 +58,43 @@ public enum enum_CONTEXT_COMPARE {
 
 ## <a name="fields"></a>欄位
 `CONTEXT_EQUAL`\
-在清單中尋找與目標記憶體上下文相等的第一個記憶體上下文。
+在清單中找出與目標記憶體內容相等的第一個記憶體內容。
 
 `CONTEXT_LESS_THAN`\
-查找清單中的第一個記憶體上下文,該上下文小於目標記憶體上下文。
+找出清單中小於目標記憶體內容的第一個記憶體內容。
 
 `CONTEXT_GREATER_THAN`\
-尋找清單中大於目標記憶體上下文的第一個記憶體上下文。
+找出清單中大於目標記憶體內容的第一個記憶體內容。
 
 `CONTEXT_LESS_THAN_OR_EQUAL`\
-尋找清單中小於或等於目標記憶體上下文的第一個記憶體上下文。
+找出清單中小於或等於目標記憶體內容的第一個記憶體內容。
 
 `CONTEXT_GREATER_THAN_OR_EQUAL`\
-尋找清單中大於或等於目標記憶體上下文的第一個記憶體上下文。
+找出清單中大於或等於目標記憶體內容的第一個記憶體內容。
 
 `CONTEXT_SAME_SCOPE`\
-尋找清單中與目標記憶體上下文位於同一作用域中的第一個記憶體上下文。
+找出清單中與目標記憶體內容相同範圍中的第一個記憶體內容。
 
 `CONTEXT_SAME_FUNCTION`\
-尋找清單中與目標記憶體作用域具有相同函數的第一個記憶體上下文。
+找出清單中的第一個記憶體內容，此內容位於與目標記憶體範圍相同的函式中。
 
 `CONTEXT_SAME_MODULE`\
-尋找清單中與目標記憶體上下文位於同一模組中的第一個記憶體上下文。
+在與目標記憶體內容相同的模組中，尋找清單中的第一個記憶體內容。
 
 `CONTEXT_SAME_PROCESS`\
-尋找清單中與目標記憶體上下文處於相同進程的第一個記憶體上下文。
+在清單中尋找第一個記憶體內容，此內容位於與目標記憶體內容相同的進程中。
 
 ## <a name="remarks"></a>備註
-作為參數傳遞給[比較](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)方法。
+以引數形式傳遞至 [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) 方法。
 
-這些值用於查找清單中滿足指定比較條件的第一個記憶體上下文。 為記憶體上下文提供記憶體上下文的清單,以便通過方法`IDebugMemoryContext2::Compare`比較自身。 然後返回清單中的第一個記憶體上下文,`true`然後返回比較運算符。
+這些值是用來尋找清單中符合指定之比較準則的第一個記憶體內容。 記憶體內容會提供記憶體內容清單，以透過方法進行比較 `IDebugMemoryContext2::Compare` 。 接著會傳回清單中的第一個記憶體內容，比較運算子 `true` 接著會傳回。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -1,5 +1,5 @@
 ---
-title: CA2229：執行序列化的函數 |Microsoft Docs
+title: CA2229：執行序列化的函式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ba654496d80654f0d9790a01bbc41326f7a5f13e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540487"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229:必須實作序列化建構函式
@@ -29,29 +29,29 @@ ms.locfileid: "85540487"
 |-|-|
 |TypeName|ImplementSerializationConstructors|
 |CheckId|CA2229|
-|類別|Microsoft。使用方式|
+|類別|Microsoft. 使用量|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
  型別 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 會實作為介面，不是委派或介面，且下列其中一個條件成立：
 
-- 型別沒有接受 <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> 物件和物件（序列化程式的簽章）的函式 <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> 。
+- 型別沒有會將 <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> 物件和 <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> 物件 (序列化函式) 之簽章的函式。
 
-- 類型未密封，且其序列化的存取修飾詞不受保護（系列）。
+- 此類型為未密封，而且其序列化函式的存取修飾詞未受保護 (系列) 。
 
-- 型別是密封的，而且其序列化程式的存取修飾詞不是私用。
+- 類型是密封的，而且其序列化函式的存取修飾詞並非私用。
 
 ## <a name="rule-description"></a>規則描述
- 此規則與支援自訂序列化的類型有關。 類型支援自訂序列化（如果它會執行 <xref:System.Runtime.Serialization.ISerializable> 介面）。 若要還原序列化或重新建立已使用方法序列化的物件，必須要有序列化的函式 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> 。
+ 此規則與支援自訂序列化的類型有關。 如果型別實作為介面，則支援自訂序列化 <xref:System.Runtime.Serialization.ISerializable> 。 需要序列化的函式才能還原序列化，或重新建立已經使用方法序列化的物件 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> 。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請實作序列化建構函式。 針對密封類別，讓建構函式成為 private，否則為 protected。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏規則的違規。 此類型不會還原序列化，且在許多情況下都不會運作。
+ 請勿抑制規則違規。 此類型將不會還原序列化，而且在許多情況下將無法運作。
 
 ## <a name="example"></a>範例
- 下列範例顯示符合規則的類型。
+ 下列範例顯示符合規則的型別。
 
  [!code-csharp[FxCop.Usage.ISerializableCtor#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ISerializableCtor/cs/FxCop.Usage.ISerializableCtor.cs#1)]
 

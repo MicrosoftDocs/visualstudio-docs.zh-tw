@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: badb88abdf4b3ffd6140cb587b2b0add20630925
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672706"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
@@ -36,10 +36,10 @@ devenv {/LCID|/l} LocaleID
 ```
 
 ## <a name="arguments"></a>引數
- `LocaleID` 必要項。 所指定語言的 LCID (地區設定識別碼)。
+ 需要 `LocaleID`。 所指定語言的 LCID (地區設定識別碼)。
 
 ## <a name="remarks"></a>備註
- 載入 IDE，並設定環境的預設自然語言。 在工作階段之間會持續保存這項變更，並在 IDE 中，將其反映在 [選項]  對話方塊中 [環境]  選項的 [國際設定]  窗格中。
+ 載入 IDE，並設定環境的預設自然語言。 在工作階段之間會持續保存這項變更，並在 IDE 中，將其反映在 [選項]**** 對話方塊中 [環境]**** 選項的 [國際設定]**** 窗格中。
 
  如果使用者系統未提供指定的語言，則會忽略 /LCID 參數。
 
@@ -47,8 +47,8 @@ devenv {/LCID|/l} LocaleID
 
 |語言|LCID|
 |--------------|----------|
-|中文 (簡體)|2052|
-|和 SharePoint 2010 顯示的|1028|
+|簡體中文|2052|
+|繁體中文|1028|
 |英文|1033|
 |法文|1036|
 |德文|1031|
@@ -65,4 +65,4 @@ devenv /LCID 1033
 ```
 
 ## <a name="see-also"></a>另請參閱
- [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)[[國際設定]、[環境]、[選項] 對話方塊](../../ide/reference/international-settings-environment-options-dialog-box.md)[自訂視窗版面](../../ide/customizing-window-layouts-in-visual-studio.md)配置
+ [Devenv 命令列切換](../../ide/reference/devenv-command-line-switches.md)[國際設定、環境、選項對話方塊](../../ide/reference/international-settings-environment-options-dialog-box.md)[自訂視窗版面](../../ide/customizing-window-layouts-in-visual-studio.md)配置

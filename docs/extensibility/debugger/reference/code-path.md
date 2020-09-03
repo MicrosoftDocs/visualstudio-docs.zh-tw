@@ -1,5 +1,5 @@
 ---
-title: CODE_PATH |微軟文件
+title: CODE_PATH |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d3148b75e56b61ee545c6bc82b972c13572199af
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737674"
 ---
 # <a name="code_path"></a>CODE_PATH
-描述方法或函數調用。
+描述方法或函式呼叫。
 
 ## <a name="syntax"></a>語法
 
@@ -43,20 +43,20 @@ public struct CODE_PATH {
 
 ## <a name="members"></a>成員
 `bstrName`\
-代碼路徑的名稱。
+程式碼路徑的名稱。
 
 `pCode`\
-[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件,用於標識代碼中要踏入函數的位置。
+[IDebugCodeCoNtext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，可識別程式碼中要逐步執行函式的位置。
 
 ## <a name="remarks"></a>備註
-此結構用於實現步進到函數中。 [EnumCodePath](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)傳回來自正在除錯的程式中當前位置的所有調用。 此結構表示一個此類調用。
+此結構是用來將逐步執行至函式。 [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) 會從正在進行調試的程式中，傳回目前位置的所有呼叫。 此結構代表一種這類呼叫。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

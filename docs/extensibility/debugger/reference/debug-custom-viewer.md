@@ -1,5 +1,5 @@
 ---
-title: DEBUG_CUSTOM_VIEWER |微軟文件
+title: DEBUG_CUSTOM_VIEWER |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3de9b8f7ef30cffbdd78399dc831060e413ba51b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737540"
 ---
 # <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
-標識自定義查看器或類型可視化工具的結構。
+識別自訂檢視器或型別視覺化的結構。
 
 ## <a name="syntax"></a>語法
 
@@ -51,32 +51,32 @@ public struct DEBUG_CUSTOM_VIEWER {
 
 ## <a name="members"></a>成員
 `dwID`\
-一個 ID,用於區分由一`GUID`個 實現的多個檢視器或可視化工具。
+用來區別多個由一個檢視器或視覺化程式所執行的識別碼 `GUID` 。
 
 `bstrMenuName`\
-下拉選單中顯示的文本。
+將會出現在下拉式功能表中的文字。
 
 `bstrDescription`\
-自定義查看器或類型可視化工具的說明(如果未使用,則必須是空值)。
+如果未使用) ，則 [自訂檢視器] 或 [類型] 視覺化 (的描述必須為 null 值。
 
 `guidLang`\
-提供表達式賦值器的語言。
+提供運算式評估工具的語言。
 
 `guidVendor`\
-提供表達式賦值器的供應商。
+提供運算式評估工具的廠商。
 
 `bstrMetric`\
-存儲自定義查看器或類型可視化工具`CLSID`的指標。
+用來儲存自訂檢視器或類型視覺化的度量 `CLSID` 。
 
 ## <a name="remarks"></a>備註
-此結構的清單通過調用[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)方法(以及通過擴展[返回 GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)方法)返回。
+呼叫 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 方法時，會傳回這個結構的清單 (以及 [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) 方法) 的擴充方法。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

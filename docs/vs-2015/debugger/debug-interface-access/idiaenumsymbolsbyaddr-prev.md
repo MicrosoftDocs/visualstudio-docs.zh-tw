@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f7a5debb0ffccffed4077c367d5b008a2a2a7cc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189631"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取位址中順序的上一個符號。  
+依位址來抓取之前的符號。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,19 +37,19 @@ HRESULT Prev ( 
   
 #### <a name="parameters"></a>參數  
  celt  
- [in]要擷取列舉值中的符號數目。  
+ 在要抓取的列舉值中的符號數目。  
   
  rgelt  
- [out]陣列，其中是要在以填滿[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，代表所需的符號。  
+ 擴展要填入 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件的陣列，這些物件代表所需的符號。  
   
  pceltFetched  
- [out]擷取列舉值中傳回符號的數。  
+ 擴展傳回已提取列舉值中的符號數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`如果不有任何先前的符號。 否則會傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果沒有先前的符號，則會傳回。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法會更新列舉值位置所擷取的項目數目。  
+ 這個方法會依提取的元素數目來更新列舉值位置。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   

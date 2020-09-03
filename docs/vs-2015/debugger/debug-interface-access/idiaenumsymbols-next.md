@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsymbols:: Next |Microsoft Docs'
+title: IDiaEnumSymbols：： Next |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cdea32ece50e83c046a67399a0d5f36410edb9a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189696"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取指定的列舉型別序列中的符號數。  
+抓取列舉序列中指定的符號數目。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,16 +37,16 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>參數  
  celt  
- [in]要擷取列舉值中的符號數目。  
+ 在要抓取的列舉值中的符號數目。  
   
  rgelt  
- [out]陣列，其中是要在以填滿[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，代表所需的符號。  
+ 擴展要填入 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件的陣列，這些物件代表所需的符號。  
   
  pceltFetched  
- [out]擷取列舉值中傳回符號的數。  
+ 擴展傳回已提取列舉值中的符號數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`有沒有更多的符號。 否則會傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果沒有其他符號，則會傳回。 否則會傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
   
@@ -59,5 +59,5 @@ pEnum->Next( 1, &pSym, &celt );
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
+ [IDiaSession：： findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

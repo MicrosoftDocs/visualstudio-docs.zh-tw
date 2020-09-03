@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetBreakpointResolution |Microsoft Docs
+title: IDebugBoundBreakpoint2：： GetBreakpointResolution |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 134b4e2d58b0581a14d387e8601cc0bdc57cb56b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156250"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得描述此中斷點的中斷點解析。  
+取得描述此中斷點的中斷點解析度。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,20 +41,20 @@ int GetBreakpointResolution( 
   
 #### <a name="parameters"></a>參數  
  `ppBPResolution`  
- [out]傳回[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)表示下列其中一種介面：  
+ 擴展傳回代表下列其中一項的 [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 介面：  
   
-- 中斷點解析物件，描述其中的程式碼中斷點已繫結程式碼的位置。  
+- 中斷點解析物件，描述程式碼中已系結程式碼中斷點的位置。  
   
-- 資料的位置已經在繫結資料中斷點。  
+- 資料中斷點已系結的資料位置。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果繫結的中斷點物件的狀態設為`BPS_DELETED`(屬於[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉型別)。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 如果系結 `E_BP_DELETED` 中斷點物件的狀態設定為 `BPS_DELETED` [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) 列舉) 的 (部分，則會傳回。  
   
 ## <a name="remarks"></a>備註  
- 呼叫[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)方法，以判斷中斷點解析是否為程式碼或資料。  
+ 呼叫 [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) 方法來判斷中斷點解析是否適用于程式碼或資料。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CBoundBreakpoint`公開的物件[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)介面。  
+ 下列範例顯示如何針對 `CBoundBreakpoint` 公開 [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) 介面的簡單物件，執行這個方法。  
   
 ```  
 HRESULT CBoundBreakpoint::GetBreakpointResolution(  

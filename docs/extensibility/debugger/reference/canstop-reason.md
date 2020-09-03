@@ -1,5 +1,5 @@
 ---
-title: CANSTOP_REASON |微軟文件
+title: CANSTOP_REASON |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d7be361d4468584c109db52f487b3de3c1fdff0a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737690"
 ---
 # <a name="canstop_reason"></a>CANSTOP_REASON
-用於確定程式在到達執行中的特定點后是否可以停止執行。
+用來判斷程式是否可以在到達執行的特定點之後停止執行。
 
 ## <a name="syntax"></a>語法
 
@@ -44,20 +44,20 @@ public enum enum_CANSTOP_REASON {
 
 ## <a name="fields"></a>欄位
 `CANSTOP_ENTRYPOINT`\
-指定給定程式的入口點。
+指定指定程式的進入點。
 
 `CANSTOP_STEPIN`\
-指定單步執行到函數。
+指定逐步執行至函式。
 
 ## <a name="remarks"></a>備註
-作為參數傳遞給[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)方法,以與會話調試管理器 (SDM) 確認是否可以在到達程式的入口點後或踏入函數或方法后停止。
+以引數的形式傳遞至 [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) 方法，以確認會話 Debug MANAGER (SDM) 是否可以在到達程式的進入點之後，或逐步執行至函式或方法之後停止運作。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -1,5 +1,5 @@
 ---
-title: GETHOSTNAME_TYPE |微軟文件
+title: GETHOSTNAME_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5a7da1486f0edf52f3f0d96db699f60f24e36827
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736779"
 ---
 # <a name="gethostname_type"></a>GETHOSTNAME_TYPE
-指定主機名的類型。
+指定主機名稱的類型。
 
 ## <a name="syntax"></a>語法
 
@@ -44,20 +44,20 @@ public enum enum_GETHOSTNAME_TYPE {
 
 ## <a name="fields"></a>欄位
 `GHN_FRIENDLY_NAME`\
-指定主機的友好名稱。
+指定主機的易記名稱。
 
 `GHN_FILE_NAME`\
-指定主機的檔名。
+指定主控制項的檔案名。
 
 ## <a name="remarks"></a>備註
-這些值作為參數傳遞給[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)方法,以檢索不同格式的主機名。
+這些值會以引數的形式傳遞至 [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) 方法，以取得不同格式的主機名稱。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

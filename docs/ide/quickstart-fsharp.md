@@ -12,13 +12,13 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 990106f7f3ca97ae38a20170ca6ed2e1d699d4e4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70180321"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>快速入門：使用視覺化工作室在 F 中創建第一個ASP.NET核心 Web 服務\#
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>快速入門：使用 Visual Studio 在 F 中建立您的第一個 ASP.NET Core web 服務\#
 
 在 Visual Studio 中 F# 的這個 5-10 分鐘簡介中，您將建立 F# ASP.NET Core Web 應用程式。
 
@@ -50,7 +50,7 @@ ms.locfileid: "70180321"
 
      ![VS 安裝程式中的 ASP.NET 工作負載](../ide/media/quickstart-aspnet-workload.png)
 
-4. 在 [新增 ASP.NET Core Web 應用程式]**** 對話方塊中，從上方的下拉式功能表中選取 [ASP.NET Core 2.1]**** （如果在清單中看不到**ASP.NET酷睿 2.1，** 請按照對話方塊頂部附近的黃色欄中的 **"下載"** 連結進行安裝。選擇 **"確定**"。
+4. 在 [新增 ASP.NET Core Web 應用程式]**** 對話方塊中，從上方的下拉式功能表中選取 [ASP.NET Core 2.1]****  (如果您在清單中看不到 **ASP.NET Core 2.1** ，請遵循應該出現在接近對話方塊頂端之黃色列中的 **下載** 連結進行安裝。 ) 選擇 **[確定]**。
 
 ::: moniker-end
 
@@ -58,9 +58,9 @@ ms.locfileid: "70180321"
 
 1. 開啟 Visual Studio。
 
-2. 在啟動視窗中，選擇 **"創建新專案**"。
+2. 在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
-3. 在 [建立新專案]**** 頁面上，於搜尋方塊中輸入 **f# web**，然後選擇 [ASP.NET Core Web 應用程式]**** 專案範本。 選擇 [下一步]****。
+3. 在 [建立新專案]**** 頁面上，於搜尋方塊中輸入 **f# web**，然後選擇 [ASP.NET Core Web 應用程式]**** 專案範本。 選擇 [下一步]。
 
 4. 在 [設定新專案]**** 頁面上輸入名稱，然後選擇 [建立]****。
 
@@ -91,7 +91,7 @@ ms.locfileid: "70180321"
 
 ## <a name="run-the-application"></a>執行應用程式
 
-1. 按**Ctrl**+**F5**運行應用程式並在 Web 瀏覽器中打開它。
+1. 按下**Ctrl** + **F5**執行應用程式，並在網頁瀏覽器中開啟它。
 
 2. 此頁面應該瀏覽至 `/api/values` 路由，但如果不存在，則請將 `https://localhost:44396/api/values` 輸入瀏覽器中。
 

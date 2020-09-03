@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 27b535af260d205c74ef87d0325680389d1dbe58
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286117"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek 工作
@@ -41,11 +41,11 @@ ms.locfileid: "85286117"
 
 ## <a name="remarks"></a>備註
 
- 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱[TaskExtension 基類](../msbuild/taskextension-base-class.md)。
+ 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些額外參數的清單及其描述，請參閱 [TaskExtension 基類（base class](../msbuild/taskextension-base-class.md)）。
 
 ## <a name="example"></a>範例
 
-以下是要讀取的範例 XML 檔案 `settings.config` ：
+以下是要讀取的 XML 範例檔案 `settings.config` ：
 
 ```xml
 <appSettings>
@@ -53,7 +53,7 @@ ms.locfileid: "85286117"
 </appSettings>
 ```
 
-在此範例中，如果您想要讀取 `value` ，請使用如下的程式碼：
+在此範例中，如果您想要讀取 `value` ，請使用如下所示的程式碼：
 
 ```xml
 <Target Name="BeforeBuild">
@@ -84,7 +84,7 @@ ms.locfileid: "85286117"
 </class>
 ```
 
-和下列 `Target` 定義于專案檔中：
+以及專案檔 `Target` 中定義的下列專案：
 
 ```xml
   <Target Name="TestPeek" BeforeTargets="Build">
@@ -105,7 +105,7 @@ ms.locfileid: "85286117"
   </Target>
 ```
 
-輸出包含下列來自 `TestPeek` 目標的：
+輸出包含來自目標的下列 `TestPeek` 內容：
 
 ```output
   TestPeek output:

@@ -1,5 +1,5 @@
 ---
-title: IDebug屬性2::獲取內存位元組 |微軟文件
+title: IDebugProperty2：： GetMemoryBytes |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7d13fa3821a6d7bf861cd160a5588d0788b92243
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721473"
 ---
 # <a name="idebugproperty2getmemorybytes"></a>IDebugProperty2::GetMemoryBytes
-獲取構成屬性值的記憶體位元組。
+取得組成屬性值的記憶體位元組。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ int GetMemoryBytes ( 
 
 ## <a name="parameters"></a>參數
 `ppMemoryBytes`\
-[出]返回可用於檢索包含屬性值的記憶體的[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)物件。
+擴展傳回 [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) 物件，這個物件可用於取出包含屬性值的記憶體。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則返回錯誤代碼。 如果沒有`S_GETMEMORYBYTES_NO_MEMORY_BYTES`要檢索的記憶體位元組,則返回。
+ 如果成功，則傳回，否則會傳回 `S_OK` 錯誤碼。 `S_GETMEMORYBYTES_NO_MEMORY_BYTES`如果沒有要取出的記憶體位元組，則會傳回。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

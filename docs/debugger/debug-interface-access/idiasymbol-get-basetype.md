@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aea1205abf5c7a4bf7e4fd6b035651cc7ad52be6
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464202"
 ---
 # <a name="idiasymbolget_basetype"></a>IDiaSymbol::get_baseType
-抓取這個符號的基底類型<em>。</em>
+抓取此符號的基底類型<em>。</em>
 
 ## <a name="syntax"></a>語法
 
@@ -33,16 +33,16 @@ HRESULT get_baseType (
 #### <a name="parameters"></a>參數
 `pRetVal`
 
-脫銷傳回[BasicType 列舉](../../debugger/debug-interface-access/basictype.md)列舉中的值，指定符號的基底類型。
+擴展傳回 [BasicType 列舉](../../debugger/debug-interface-access/basictype.md) 列舉中的值，指定符號的基底類型。
 
 ## <a name="return-value"></a>傳回值
-如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
-您可以先取得符號的類型，然後詢問該基底類型傳回的類型，以判斷符號的基本類型。 請注意，有些符號可能沒有基底類型，例如結構名稱。
+您可以先取得符號的型別，然後針對基底型別詢問傳回的型別，藉以判斷符號的基本類型。 請注意，某些符號可能沒有基底類型，例如結構名稱。
 
 ## <a name="example"></a>範例
 

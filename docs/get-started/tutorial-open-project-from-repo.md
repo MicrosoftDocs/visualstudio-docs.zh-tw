@@ -1,5 +1,5 @@
 ---
-title: 教程：從回購中打開專案
+title: 教學課程：從存放庫開啟專案
 description: 了解如何使用 Visual Studio，在 Git 或 Azure DevOps 存放庫中開啟專案。
 ms.custom: get-started
 ms.date: 03/30/2019
@@ -15,13 +15,13 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 3af54d663cee1ad2b2dd4e8241678b88c635d376
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70180435"
 ---
-# <a name="tutorial-open-a-project-from-a-repo"></a>教程：從回購中打開專案
+# <a name="tutorial-open-a-project-from-a-repo"></a>教學課程：從存放庫開啟專案
 
 在本教學課程中，您將第一次使用 Visual Studio 連線到存放庫，然後從中開啟專案。
 
@@ -177,7 +177,7 @@ ms.locfileid: "70180435"
 
 如果您已準備好使用 Visual Studio 來撰寫程式碼，請深入了解下列任一個語言特定的教學課程：
 
-- [視覺工作室教程 |**C#**](./csharp/index.yml)
+- [Visual Studio 教學課程 | **C #**](./csharp/index.yml)
 - [Visual Studio 教學課程 | **Visual Basic**](./visual-basic/index.yml)
 - [Visual Studio 教學課程 | **C++**](/cpp/get-started/tutorial-console-cpp)
 - [Visual Studio 教學課程 | **Python**](/visualstudio/python/)
@@ -185,5 +185,5 @@ ms.locfileid: "70180435"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Azure DevOps 服務：開始使用 Azure 存儲庫和視覺化工作室](/azure/devops/repos/git/gitquickstart/)
-- [微軟學習：開始使用 Azure DevOps](/learn/modules/get-started-with-devops/)
+- [Azure DevOps Services：開始使用 Azure Repos 和 Visual Studio](/azure/devops/repos/git/gitquickstart/)
+- [Microsoft Learn：開始使用 Azure DevOps](/learn/modules/get-started-with-devops/)

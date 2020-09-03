@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: cd8ebd706d9228d23eb5d5ce3b1429063bae55e5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72289713"
 ---
 # <a name="step-6-work-with-git"></a>步驟 6：使用 Git
@@ -32,7 +32,7 @@ Visual Studio 在 GitHub 和 Azure Repos 之類的服務上，提供與本機 Gi
 
     ![將滑鼠指標停留在 Visual Studio 視窗的 Git 控制項上方時，會顯示其他資訊](media/working-with-git-01.png)
 
-1. 當您建立新的存放庫或選取任何 Git 控制項時，Visual Studio 會開啟 [Team Explorer]**** 視窗。 （您可以隨時使用 **"查看** > **Team 總管"** 功能表命令打開視窗。該視窗有三個主窗格，在使用**Team 總管**標頭上的下拉式功能表之間切換。 當您選擇 **"推送"** 控制項（向上箭號圖示）時，也會顯示提供發佈操作的**Sync**窗格：
+1. 當您建立新的存放庫或選取任何 Git 控制項時，Visual Studio 會開啟 [Team Explorer]**** 視窗。  (您可以使用**View**  >  **Team Explorer** menu 命令隨時開啟視窗。 ) 視窗有三個主要窗格，您可以使用**Team Explorer**標頭上的下拉式清單來切換。 提供發行作業的 [ **同步** 處理] 窗格也會在您選取 **推送** 控制項 (向上箭號圖示) ：
 
     ![Visual Studio 中建立本機存放庫之後的 Team Explorer](media/working-with-git-02.png)
 
@@ -48,13 +48,13 @@ Visual Studio 在 GitHub 和 Azure Repos 之類的服務上，提供與本機 Gi
 
     ![Visual Studio 中顯示分支的 Team Explorer](media/working-with-git-04.png)
 
-1. 使用存儲庫名稱選擇 Git 控制項（在上一個映射中**加入 CosineWave），Team** **Explorer**顯示了一個**Connect**介面，您可以快速切換到另一個存儲庫。
+1. 在先前的映射中選取具有存放庫名稱 (**CosineWave** 的 Git 控制項) ， **Team Explorer** 會顯示 **連接** 介面，讓您可以快速地切換到另一個存放庫。
 
-1. 使用本機存放庫時，已認可的變更會直接進入存放庫。 如果已連接到遠端存放庫，請選擇 **"Team 總管**"中的下拉標頭，選擇 **"同步**"以切換到 **"同步"** 部分，然後使用其中提供的 **"拉取**"和 **"提取**"命令。
+1. 使用本機存放庫時，已認可的變更會直接進入存放庫。 如果您已連線到遠端存放庫，請選取 [ **Team Explorer**] 中的下拉式清單，選擇 [ **同步** ] 以切換至 [ **同步** 處理] 區段，然後使用此處顯示的 **提取** 和 **提取** 命令。
 
 ## <a name="go-deeper"></a>深入了解
 
-有關從遠端 Git 存儲庫創建專案的簡短演練，請參閱[快速入門：在 Visual Studio 中克隆 Python 代碼的存儲庫](quickstart-03-python-in-visual-studio-project-from-repository.md)。
+如需從遠端 Git 存放庫建立專案的簡短逐步解說，請參閱 [快速入門：在 Visual Studio 複製 Python 程式碼的存放庫](quickstart-03-python-in-visual-studio-project-from-repository.md)。
 
 如需包括處理合併衝突、檢閱具有提取要求的程式碼、重定基底，以及揀選分支之間的變更等更完整的教學課程，請參閱 [Git 與 Azure Repos 使用者入門](/azure/devops/repos/git/gitquickstart)。
 
@@ -64,7 +64,7 @@ Visual Studio 在 GitHub 和 Azure Repos 之類的服務上，提供與本機 Gi
 
 - 建立專案，以及檢視專案內容。
 - 使用程式碼編輯器，並執行專案。
-- 使用**互動式**視窗開發新代碼並輕鬆地將該代碼複製到編輯器中。
+- 使用 **互動式** 視窗來開發新的程式碼，並輕鬆地將該程式碼複製到編輯器中。
 - 在 Visual Studio 偵錯工具中執行已完成的程式。
 - 安裝套件以及管理 Python 環境。
 - 使用 Git 存放庫中的程式碼。
@@ -72,6 +72,6 @@ Visual Studio 在 GitHub 和 Azure Repos 之類的服務上，提供與本機 Gi
 在這裡，探索概念和作法指南，包含下列文章：
 
 - [建立適用於 Python 的 C++ 延伸模組](working-with-c-cpp-python-in-visual-studio.md)
-- [發佈到 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
-- [分析](profiling-python-code-in-visual-studio.md)
+- [發佈至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [程式碼剖析](profiling-python-code-in-visual-studio.md)
 - [單元測試](unit-testing-python-in-visual-studio.md)

@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ba0f7cb33ef0bf7fde63d53997d014536e46a85b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204971"
 ---
-# <a name="providerfields"></a>PROVIDER_FIELDS
+# <a name="provider_fields"></a>PROVIDER_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定的程式提供者相關聯的屬性。  
+指定與程式提供者相關聯的屬性。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,23 +43,23 @@ public enum enum_PROVIDER_FIELDS {
   
 ## <a name="members"></a>成員  
  PFIELD_PROGRAM_NODES  
- `ProgramNodes`欄位無效。  
+ `ProgramNodes`欄位有效。  
   
  PFIELD_IS_DEBUGGER_PRESENT  
- `fIsDebuggerPresent`欄位無效。  
+ `fIsDebuggerPresent`欄位有效。  
   
 ## <a name="remarks"></a>備註  
- 這些值會傳回在`Fields`隸屬[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)結構，以表示哪些欄位結構的明確已填入。  
+ 這些值會在 `Fields` [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) 結構的成員中傳回，以指出已明確填入結構的欄位。  
   
- 這些值可以合併的位元`OR`。  
+ 這些值可以與位結合 `OR` 。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)

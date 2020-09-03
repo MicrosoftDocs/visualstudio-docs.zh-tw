@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 04a8756fd7eb2a4b938ebcd2d5f4754509b704e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205214"
 ---
-# <a name="moduleinfo"></a>MODULE_INFO
+# <a name="module_info"></a>MODULE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-描述特定模組 （DLL、 EXE 或組件）。  
+描述 (DLL、EXE 或元件) 的特定模組。  
   
 ## <a name="syntax"></a>語法  
   
@@ -62,52 +62,52 @@ public struct MODULE_INFO { 
   
 ## <a name="members"></a>成員  
  dwValidFields  
- 從旗標的組合[MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)列舉，指定哪些欄位都已填寫。  
+ [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)列舉中的旗標組合，可指定要填寫的欄位。  
   
  m_bstrName  
  模組名稱。  
   
  m_bstrUrl  
- 模組的 URL。  
+ 模組 URL。  
   
  m_bstrVersion  
  模組版本。  
   
  m_bstrDebugMessage  
- 是選擇性的訊息相關模組，比方說，「 無法載入符號。 」  
+ 關於此模組的選擇性訊息，例如「無法載入符號」。  
   
  m_addrLoadAddress  
- 模組載入地址。  
+ 模組載入位址。  
   
  m_addrPreferredLoadAddress  
- 模組的慣用的載入位址。  
+ 模組慣用的載入位址。  
   
  m_dwSize  
  模組大小。  
   
  m_dwLoadOrder  
- 模組的載入順序。  
+ 模組載入順序。  
   
  m_TimeStamp  
- 符號檔案上次修改時間。  
+ 上次修改符號檔的時間。  
   
  m_bstrUrlSymbolLocation  
- 符號檔的位置 (例如，"。\\") 指定模組中。 用做為起始的位置來尋找符號的模組。  
+ 符號檔的位置 (例如 ". \\ "模組中指定的 ) 。 作為尋找模組符號的起始位置。  
   
  m_dwModuleFlags  
- 從旗標的組合[MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)說明模組的列舉型別。  
+ 描述模組的 [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) 列舉中的旗標組合。  
   
 ## <a name="remarks"></a>備註  
- 此結構會傳遞至[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)填滿其中的方法。  
+ 此結構會傳遞至其填入的 [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) 方法。  
   
- 此結構會對應至每個模組中所列**模組**視窗。  
+ 此結構會對應至 [ **模組** ] 視窗中所列的每個模組。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

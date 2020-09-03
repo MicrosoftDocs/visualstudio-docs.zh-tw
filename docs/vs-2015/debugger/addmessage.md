@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f01d4e80c3740ae27b5df8badbc74989c2da2c60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156518"
 ---
 # <a name="addmessage"></a>AddMessage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在圖形診斷會將自訂訊息*抬頭顯示器*（抬頭顯示器）。  
+將自訂訊息新增至 [圖形診斷] *抬頭顯示器* (上層顯示) 。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,6 +34,6 @@ void AddMessage(
  要加入至抬頭顯示器的訊息。  
   
 ## <a name="remarks"></a>備註  
- 圖形診斷抬頭顯示器會顯示在圖形診斷下執行的應用程式的左上角。 它會顯示有關應用程式和圖形資訊擷取，並藉由呼叫此函式會新增訊息的執行階段資訊。  
+ [圖形診斷] 抬頭顯示器會顯示在 [圖形診斷] 下執行之應用程式的左上角。 它會顯示應用程式的執行時間資訊，以及有關圖形資訊捕捉的執行時間資訊，以及藉由呼叫這個函式所加入的訊息。  
   
- 若要將訊息新增至抬頭顯示器，您不需要主動擷取圖形資訊 — 也就是新增的訊息，透過的執行個體`VsgDbg`類別，但[Init](../debugger/init.md)成員函式不適用於第一次呼叫。 訊息只會顯示在抬頭顯示器，所以不會記錄在圖形記錄檔中。
+ 若要將訊息新增至抬頭顯示器，您不需要主動捕捉圖形資訊，也就是可以透過類別的實例加入訊息 `VsgDbg` ，但不會先呼叫 [Init](../debugger/init.md) 成員函式。 訊息只會顯示在抬頭顯示器中，而不會記錄在圖形記錄檔中。

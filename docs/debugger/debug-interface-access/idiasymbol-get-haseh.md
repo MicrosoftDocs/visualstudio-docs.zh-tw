@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 178bc2744e74867c1954474a20e8c3640ade49c5
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463754"
 ---
 # <a name="idiasymbolget_haseh"></a>IDiaSymbol::get_hasEH
-抓取旗標，指定函式是否包含任何未受管理的 c + + 樣式例外狀況處理（例如 try/catch 區塊）。
+抓取旗標，這個旗標會指定函數是否包含任何非受控 c + + 樣式例外狀況處理 (例如 try/catch 區塊) 。
 
 ## <a name="syntax"></a>語法
 
@@ -33,13 +33,13 @@ HRESULT get_hasEH(
 #### <a name="parameters"></a>參數
  `pFlag`
 
-脫銷`TRUE`如果函式具有任何 c + + 樣式的例外狀況處理，則傳回，否則傳回 `FALSE` 。
+擴展 `TRUE` 如果函式具有任何 c + + 樣式例外狀況處理，則傳回，否則傳回 `FALSE` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功， `S_OK` 則傳回; 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
-> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
 ## <a name="requirements"></a>需求
 
