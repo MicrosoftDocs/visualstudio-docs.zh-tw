@@ -42,6 +42,13 @@
       "breadcrumb_path": "/visualstudio/docker/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "None",
+      "ms.prod": "visual-studio-windows",
+      "manager": "jillfra",
+      "author": "jillre",
+      "ms.author": "jillfra",
+      "ms.topic": "conceptual",
+      "audience": "developer",
+      "uhfHeaderId": "MSDocsHeader-VisualStudio",
       "disable_contribution_on_translation_quality": [
         "MT",
         "MTE75",
