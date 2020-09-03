@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f1e2997ebf6916c684751b3d19f68cf044d992f
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467453"
 ---
 # <a name="idiaenumtables"></a>IDiaEnumTables
@@ -33,21 +33,21 @@ IDiaEnumTables : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaEnumTables::get__NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|抓取此列舉值的[IEnumVARIANT 介面](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)版本。|
+|[IDiaEnumTables::get__NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|抓取此列舉值的 [IEnumVARIANT 介面](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) 版本。|
 |[IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)|抓取資料表的數目。|
 |[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|藉由索引或名稱來抓取資料表。|
-|[IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)|抓取列舉序列中指定數目的資料表。|
-|[IDiaEnumTables::Skip](../../debugger/debug-interface-access/idiaenumtables-skip.md)|在列舉序列中略過指定數目的資料表。|
-|[IDiaEnumTables::Reset](../../debugger/debug-interface-access/idiaenumtables-reset.md)|將列舉序列重設為開頭。|
-|[IDiaEnumTables::Clone](../../debugger/debug-interface-access/idiaenumtables-clone.md)|建立枚舉器，其中包含與目前列舉值相同的列舉狀態。|
+|[IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)|捕獲列舉序列中指定的資料表數目。|
+|[IDiaEnumTables::Skip](../../debugger/debug-interface-access/idiaenumtables-skip.md)|略過列舉序列中指定數目的資料表。|
+|[IDiaEnumTables::Reset](../../debugger/debug-interface-access/idiaenumtables-reset.md)|將列舉順序重設為開頭。|
+|[IDiaEnumTables::Clone](../../debugger/debug-interface-access/idiaenumtables-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
 
 ## <a name="remarks"></a>備註
 
-## <a name="notes-for-callers"></a>呼叫者的注意事項
-藉由呼叫[IDiaSession：： getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)方法來取得此介面。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+藉由呼叫 [IDiaSession：： getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) 方法來取得這個介面。
 
 ## <a name="example"></a>範例
-這個範例顯示如何 `IDiaEnumTables` 從會話取得介面。 如需更完整的使用資料表範例，請參閱[IDiaTable](../../debugger/debug-interface-access/idiatable.md)介面。
+此範例顯示如何 `IDiaEnumTables` 從會話取得介面。 如需使用資料表的完整範例，請參閱 [IDiaTable](../../debugger/debug-interface-access/idiatable.md) 介面。
 
 ```C++
 void ShowTableNames(IDiaSession *pSession)
@@ -64,7 +64,7 @@ void ShowTableNames(IDiaSession *pSession)
 ## <a name="requirements"></a>需求
 標頭： Dia2。h
 
-程式庫： diaguids
+程式庫： diaguids .lib
 
 DLL： msdia80.dll
 

@@ -11,13 +11,13 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 0517d03db180ce76940723ca935be258d0cf1818
-ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80256227"
 ---
-# <a name="first-look-at-testing-tools-in-visual-studio"></a>首先查看視覺化工作室中的測試控管
+# <a name="first-look-at-testing-tools-in-visual-studio"></a>先查看 Visual Studio 中的測試控管
 
 Visual Studio 測試工具可協助您和小組開發及維持絕佳的高標準程式碼表現。
 
@@ -37,7 +37,7 @@ Visual Studio 測試工具可協助您和小組開發及維持絕佳的高標準
 ::: moniker-end
 
 * [開始使用單元測試](unit-test-your-code.md)
-* [使用測試資源管理器運行單元測試](run-unit-tests-with-test-explorer.md)
+* [使用測試總管執行單元測試](run-unit-tests-with-test-explorer.md)
 * [測試清單編輯器常見問題集](test-explorer-faq.md)
 * [安裝協力廠商單元測試架構](install-third-party-unit-test-frameworks.md)
 
@@ -56,7 +56,7 @@ IntelliTest 會自動產生受控碼的單元測試和測試資料。 IntelliTes
 ![IntelliTest 作用中](media/devtest-intellitest.png)
 
 * [使用 IntelliTest 為程式碼產生單元測試](generate-unit-tests-for-your-code-with-intellitest.md)
-* [IntelliTest – 一個測試來統治它們](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
+* [IntelliTest –一個測試以將它們全部加以規則](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
 * [IntelliTest 參考手冊](intellitest-manual/index.md)
 
 ## <a name="code-coverage"></a>程式碼涵蓋範圍
@@ -67,8 +67,8 @@ IntelliTest 會自動產生受控碼的單元測試和測試資料。 IntelliTes
 
 當您使用 [測試總管] 執行測試方法程式時，可以選擇程式碼涵蓋範圍。 結果表會顯示程式碼在每個組件、類別和方法中執行的百分比。 此外，原始檔編輯器會顯示已測試的程式碼。
 
-* [使用代碼覆蓋率確定要測試的代碼量](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [使用 Visual Studio （實驗室）進行單元測試、代碼覆蓋率和代碼克隆分析](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
+* [使用程式碼涵蓋範圍來決定所測試的程式碼數量](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+* [使用 Visual Studio (Lab) 的單元測試、程式碼涵蓋範圍和程式碼複製分析 ](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
 * [自訂程式碼涵蓋範圍分析](customizing-code-coverage-analysis.md)
 
 ## <a name="microsoft-fakes"></a>Microsoft Fakes
@@ -84,13 +84,13 @@ IntelliTest 會自動產生受控碼的單元測試和測試資料。 IntelliTes
 ![使用自動程式化 UI 執行 UI 測試](media/devtest-codeduitest.png)
 
 * [使用 UI 自動化來測試您的程式碼](use-ui-automation-to-test-your-code.md)
-* [開始創建、編輯和維護編碼的 UI 測試](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [使用編碼的 UI 測試測試 UWP 應用](test-uwp-app-with-coded-ui-test.md)
-* [使用視覺化工作室企業（實驗室）進行編碼 UI 測試簡介](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
+* [開始建立、編輯和維護自動程式碼 UI 測試](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+* [使用自動程式碼 UI 測試來測試 UWP 應用程式](test-uwp-app-with-coded-ui-test.md)
+* [使用 Visual Studio Enterprise (Lab) 的自動程式碼 UI 測試簡介 ](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
 
 ## <a name="load-testing"></a>負載測試
 
-[負載測試](../test/quickstart-create-a-load-test-project.md)通過運行單元測試和 Web 效能測試來類比伺服器應用程式的負載。
+[負載測試](../test/quickstart-create-a-load-test-project.md) 會執行單元測試和 web 效能測試，模擬伺服器應用程式的負載。
 
 ## <a name="related-scenarios"></a>相關案例
 

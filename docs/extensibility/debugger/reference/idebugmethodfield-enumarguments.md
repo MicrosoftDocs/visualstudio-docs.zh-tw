@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::枚舉 |微軟文件
+title: IDebugMethodField：： EnumArguments |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: adbb1ea4c9172a5f1cee877d04b81aed938bf7a5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727257"
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
-為調用方法所需的每個參數的類型創建枚舉器。
+針對呼叫方法所需的每個引數，建立其類型的列舉值。
 
 ## <a name="syntax"></a>語法
 
@@ -41,15 +41,15 @@ int EnumArguments(
 
 ## <a name="parameters"></a>參數
 `ppParams`\
-[出]返回表示參數類型清單的[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件。 如果沒有參數,則返回 null 值。
+擴展傳回代表引數類型清單的 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 物件。 如果沒有引數，則傳回 null 值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,則返回S_OK或返回S_FALSE如果沒有參數。 否則會傳回錯誤碼。
+ 如果成功，會傳回 S_OK，如果沒有任何引數，則傳回 S_FALSE。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 每個元素都是表示每個參數類型的[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。 調用[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)方法以檢索有關每個參數類型的資訊。
+ 每個元素都是代表每個參數類型的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 物件。 呼叫 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) 方法來取得每個參數類型的相關資訊。
 
- 如果需要參數的名稱和類型,則調用[Enum 參數](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md)方法。
+ 如果需要參數的名稱以及型別，則呼叫 [microsoft.sqlserver.replication.agentprofile.enumparameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) 方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

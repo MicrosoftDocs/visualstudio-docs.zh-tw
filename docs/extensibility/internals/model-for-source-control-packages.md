@@ -1,5 +1,5 @@
 ---
-title: 源控制套件模型 |微軟文件
+title: 原始檔控制套件的模型 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,27 +11,27 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 46845be1bc22a67d6703af12933945bdfcfa7f4b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707076"
 ---
 # <a name="model-for-source-control-packages"></a>原始檔控制套件的模型
-以下模型表示原始程式碼管理實現的範例。 在模型中,您將看到必須實現的介面和必須調用的環境服務。 與所有服務一樣,您實際上調用通過服務獲取的特定介面的方法。 標識類的名稱是為了更輕鬆地查看原始程式碼管理是如何執行的。
+下列模型代表原始檔控制執行的範例。 在模型中，您會看到必須執行的介面，以及您必須呼叫的環境服務。 就像所有的服務一樣，您實際上會呼叫透過服務所取得之特定介面的方法。 系統會識別類別的名稱，讓您更輕鬆地查看如何執行原始檔控制。
 
- ![SCC&#95;TUP 範例](../../extensibility/internals/media/scc_tup.gif "SCC_TUP")來源控制項目範例
+ ![SCC&#95;設定範例](../../extensibility/internals/media/scc_tup.gif "SCC_TUP") 範例原始檔控制專案
 
 ## <a name="interfaces"></a>介面
- 您可以使用下表中顯示的介面清單在 Visual Studio 中實現新項目類型的原始程式碼管理。
+ 您可以使用下表所示的介面清單，在 Visual Studio 中為新的專案類型執行原始檔控制。
 
-|介面|使用|
+|介面|用途|
 |---------------|---------|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|在專案和編輯器保存或更改(臟)檔之前調用它們。 使用此<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>服務訪問此介面。|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|由專案呼叫以請求添加、刪除或重命名檔案或目錄的許可權。 專案還會調用此介面,以便在完成已批准的添加、刪除或重命名操作時通知環境。 使用<xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>服務訪問它。|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|由註冊在專案添加、重新命名或刪除檔或目錄時收到通知的任何實體實現。 要註冊事件通知,請呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>。|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|被專案調用以註冊原始程式碼管理包並獲取有關原始程式碼管理狀態的資訊。 使用此<xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>服務訪問此介面。|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|由項目實現,以回應源控制請求,以獲取有關文件的資訊,並獲取專案檔所需的原始程式碼管理設置。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|由專案和編輯器呼叫，然後再儲存或變更 (的變更) 檔。 您可以使用服務來存取這個介面 <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> 。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|由專案呼叫，以要求新增、移除或重新命名檔案或目錄的許可權。 專案也會呼叫這個介面，以在已核准的新增、移除或重新命名動作完成時通知環境。 您可以使用服務來存取它 <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> 。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|由註冊要在專案新增、重新命名或移除檔案或目錄時收到通知的任何實體所執行。 若要註冊事件通知，請呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A> 。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|由專案呼叫，以向原始檔控制封裝註冊，以及取得原始檔控制狀態的資訊。 您可以使用服務來存取這個介面 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> 。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|由專案執行以回應原始檔控制要求，以取得檔案的相關資訊，並取得專案檔所需的原始檔控制設定。|
 
 ## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>

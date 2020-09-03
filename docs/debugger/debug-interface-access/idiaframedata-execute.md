@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2587d10b613200b1bf850636f613abbb497e04de
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467446"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
-執行堆疊回溯，並在堆疊引導框架介面中傳回結果。
+執行堆疊回溯，並且在堆疊引導框架介面中傳回結果。
 
 ## <a name="syntax"></a>語法
 
@@ -33,20 +33,20 @@ HRESULT execute ( 
 #### <a name="parameters"></a>參數
  `frame`
 
-在保存框架暫存器狀態的[IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)物件。
+在保存框架暫存器狀態的 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。 下表顯示這個方法的可能傳回值。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 下表顯示此方法可能傳回的值。
 
 |值|描述|
 |-----------|-----------------|
-|E_DIA_INPROLOG|在序言碼中，無法執行堆疊框架。|
-|E_DIA_SYNTAX|框架程式中發生剖析錯誤。|
+|E_DIA_INPROLOG|在序言程式碼中，無法執行堆疊框架。|
+|E_DIA_SYNTAX|在框架程式中發生剖析錯誤。|
 |E_DIA_FRAME_ACCESS|無法存取暫存器或記憶體。|
-|E_DIA_VALUE|計算值時發生錯誤（例如，除數為零）。|
+|E_DIA_VALUE|計算值時發生錯誤 (例如，零除) 。|
 
 ## <a name="remarks"></a>備註
- 這個方法是在調試過程中呼叫，以便回溯堆疊。 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)物件是由用戶端應用程式所執行，以接收暫存器的更新，以及提供方法所使用的方法 `execute` 。
+ 在偵錯工具期間會呼叫這個方法，以回溯堆疊。 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)物件是由用戶端應用程式所執行，以接收暫存器的更新，並提供方法所使用的方法 `execute` 。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

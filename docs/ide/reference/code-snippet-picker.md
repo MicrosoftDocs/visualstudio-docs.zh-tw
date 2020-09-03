@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb03da430f43bbfd5c7398c147560a9c823f8811
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570488"
 ---
 # <a name="code-snippet-picker"></a>程式碼片段選擇器
@@ -42,7 +42,7 @@ Visual Studio 程式碼編輯器提供了 [程式碼片段選擇器]****，讓�
 
 - SQL - 以滑鼠右鍵按一下 [程式碼編輯器] 中所需的任何位置，即可顯示捷徑功能表，接著按一下 [插入程式碼片段]****。
 
-在大多數 Visual Studio 開發語言中，可以使用**程式碼片段管理器**將資料夾添加到**程式碼片段選取器**掃描的 XML 程式碼片段檔的資料夾清單中。 您也可以建立自己的程式碼片段並新增至清單。 有關詳細資訊，請參閱[演練：創建程式碼片段](../../ide/walkthrough-creating-a-code-snippet.md)。
+在大部分的 Visual Studio 開發語言中，您可以使用 **程式碼片段管理員** ，將資料夾加入至 **程式碼片段選擇器** 掃描 XML 程式碼片段檔案的資料夾清單。 您也可以建立自己的程式碼片段並新增至清單。 如需詳細資訊，請參閱 [逐步解說：建立程式碼片段](../../ide/walkthrough-creating-a-code-snippet.md)。
 
 ## <a name="uielement-list"></a>UIElement 清單
 
@@ -57,6 +57,6 @@ Visual Studio 程式碼編輯器提供了 [程式碼片段選擇器]****，讓�
 ## <a name="see-also"></a>另請參閱
 
 - [使用程式碼片段的最佳作法](../../ide/best-practices-for-using-code-snippets.md)
-- [視覺基本感知代碼片段](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
-- [在代碼中設置書簽](../../ide/setting-bookmarks-in-code.md)
+- [Visual Basic IntelliSense 程式碼片段](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
+- [在程式碼中設定書簽](../../ide/setting-bookmarks-in-code.md)
 - [如何：使用範圍陳述式程式碼片段](../../ide/how-to-use-surround-with-code-snippets.md)

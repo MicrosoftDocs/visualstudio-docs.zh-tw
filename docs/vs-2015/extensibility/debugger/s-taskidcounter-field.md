@@ -11,22 +11,22 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8f902db331105ac5d5da414ecf5f9de8e97fa737
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199429"
 ---
-# <a name="staskidcounter-field"></a>s_taskIdCounter 欄位
+# <a name="s_taskidcounter-field"></a>s_taskIdCounter 欄位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-下一個可用的識別項，如<xref:System.Threading.Tasks.Task>物件。  
+物件的下一個可用識別碼 <xref:System.Threading.Tasks.Task> 。  
   
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **組件：** mscorlib （在 mscorlib.dll 中)  
+ **元件：** mscorlib.dll) 中的 mscorlib (  
   
- 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。  
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。  
   
 ## <a name="syntax"></a>語法  
   

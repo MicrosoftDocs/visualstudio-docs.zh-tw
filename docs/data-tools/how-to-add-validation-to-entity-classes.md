@@ -12,28 +12,28 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 5d408c67b2e54fecd6404bac93d93ecfb35de162
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282341"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>如何：將驗證新增至實體類別
 「驗證」** 實體類別過程會確認資料物件中，輸入的值是否符合物件結構描述中的條件約束，以及是否也符合為應用程式建立的規則。 先驗證資料再將更新傳送至基礎資料庫是減少錯誤的良好做法。 它同時也會降低應用程式與資料庫之間的可能往返次數。
 
-[Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供部分方法，可讓使用者擴充設計工具產生的程式碼，在完成實體的插入、更新和刪除期間，以及個別資料行變更期間和之後執行。
+[Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供部分方法，可讓使用者擴充設計工具產生的程式碼，該程式碼會在完成實體的插入、更新和刪除期間執行，也可以在個別資料行變更期間和之後進行。
 
 > [!NOTE]
-> 本主題提供使用**O/R 設計**工具將驗證加入至實體類別的基本步驟。 因為在不參考特定實體類別的情況下，可能會難以遵循這些一般步驟，所以會提供使用實際資料的逐步解說。
+> 本主題提供使用 **O/R 設計**工具將驗證新增至實體類別的基本步驟。 因為在不參考特定實體類別的情況下，可能很難遵循這些泛型步驟，所以會提供使用實際資料的逐步解說。
 
-## <a name="add-validation-for-changes-to-the-value-in-a-specific-column"></a>為特定資料行中的值新增變更的驗證
+## <a name="add-validation-for-changes-to-the-value-in-a-specific-column"></a>針對特定資料行中的值，新增驗證變更
 這個程序顯示如何在資料行中的值發生變更時驗證資料。 因為驗證是在類別定義 (而不是使用者介面) 內執行，所以如果值無法通過驗證，就會擲回例外狀況。 請在會嘗試變更資料行值的應用程式的程式碼中實作錯誤處理。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>若要在資料行值變更期間驗證資料
 
-1. 在**O/R 設計**工具中開啟或建立新的 LINQ to SQL 類別檔案（**.dbml**檔案）。 (按兩下 [方案總管]**** 中的 **.dbml** 檔案。)
+1. 在**O/R 設計**工具中，開啟或建立 (**.dbml**檔) 的新 LINQ to SQL 類別檔案。 (按兩下 [方案總管]**** 中的 **.dbml** 檔案。)
 
 2. 在 **O/R 設計工具**中，以滑鼠右鍵按一下要新增驗證的類別，然後按一下 [檢視程式碼]****。
 
@@ -62,7 +62,7 @@ ms.locfileid: "85282341"
 
     C# 專案：
 
-    因為 c # 專案不會自動產生事件處理常式，所以您可以使用 IntelliSense 來建立資料行變更的部分方法。 輸入 `partial` 和一個空格，以存取可用部分方法的清單。 針對要加入驗證的資料行按一下在資料行變更時執行的方法。 下列程式碼類似于您選取資料行變更的部分方法時所產生的程式碼：
+    因為 c # 專案不會自動產生事件處理常式，所以您可以使用 IntelliSense 來建立資料行變更的部分方法。 輸入 `partial` 和一個空格，以存取可用部分方法的清單。 針對要加入驗證的資料行按一下在資料行變更時執行的方法。 下列程式碼類似于當您選取資料行變更部分方法時所產生的程式碼：
 
     ```csharp
     partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)
@@ -71,7 +71,7 @@ ms.locfileid: "85282341"
         }
     ```
 
-## <a name="add-validation-for-updates-to-an-entity-class"></a>將更新的驗證加入至實體類別
+## <a name="add-validation-for-updates-to-an-entity-class"></a>將更新的驗證新增至實體類別
 除了可以檢查變更期間的值以外，您還可以在發生整個實體類別的更新時驗證資料。 更新期間執行的驗證可以應商務規則 (Business Rule) 的需要，比較多個資料行的值。 下列程序顯示如何在發生整個實體類別的更新時進行驗證。
 
 > [!NOTE]
@@ -79,7 +79,7 @@ ms.locfileid: "85282341"
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>若要在實體類別更新期間驗證資料
 
-1. 在**O/R 設計**工具中開啟或建立新的 LINQ to SQL 類別檔案（**.dbml**檔案）。 (按兩下 [方案總管]**** 中的 **.dbml** 檔案。)
+1. 在**O/R 設計**工具中，開啟或建立 (**.dbml**檔) 的新 LINQ to SQL 類別檔案。 (按兩下 [方案總管]**** 中的 **.dbml** 檔案。)
 
 2. 以滑鼠右鍵按一下 [O/R 設計工具]**** 中的空白區域，然後按一下 [檢視程式碼]****。
 
@@ -106,7 +106,7 @@ ms.locfileid: "85282341"
 
     C# 專案：
 
-    因為 c # 專案不會自動產生事件處理常式，所以您可以使用 IntelliSense 來建立部分 `UpdateCLASSNAME` 方法。 輸入 `partial` 和一個空格，以存取可用部分方法的清單。 針對您要在其上加入驗證的類別，按一下更新方法。 下列程式碼類似于您選取部分方法時所產生的程式碼 `UpdateCLASSNAME` ：
+    因為 c # 專案不會自動產生事件處理常式，所以您可以使用 IntelliSense 來建立部分 `UpdateCLASSNAME` 方法。 輸入 `partial` 和一個空格，以存取可用部分方法的清單。 針對您要加入驗證的類別，按一下更新方法。 下列程式碼與您選取部分方法時所產生的程式碼類似 `UpdateCLASSNAME` ：
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)
@@ -123,4 +123,4 @@ ms.locfileid: "85282341"
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [驗證資料](../data-tools/validate-data-in-datasets.md)
-- [LINQ to SQL （.NET Framework）](/dotnet/framework/data/adonet/sql/linq/index)
+- [LINQ to SQL ( .NET Framework) ](/dotnet/framework/data/adonet/sql/linq/index)

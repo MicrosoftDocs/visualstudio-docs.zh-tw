@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c2011438f1fcb0230cde0de527216456553e7c64
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75584435"
 ---
 # <a name="load-test-scenario-properties"></a>負載測試情節屬性
@@ -46,7 +46,7 @@ ms.locfileid: "75584435"
 |**IP 切換**|布林值，用來指定是否要使用 IP 切換。<br /><br />IP 切換可讓測試代理程式利用某個不同 IP 位址的範圍，將要求傳送至伺服器。 這會模擬來自不同用戶端電腦的呼叫。 當您對負載平衡 Web 伺服陣列進行測試時，IP 切換很重要。 大多數的負載平衡器會使用用戶端的 IP 位址，將用戶端導引到特定的 Web 伺服器。 如果所有的要求似乎都來自單一用戶端，負載平衡器將不會平衡負載。 若要在 Web 伺服陣列中獲得較佳的負載平衡，讓要求都來自某一範圍的 IP 位址非常重要。<br /><br />IP 切換僅適用於測試代理程式。|
 |**測試反覆項目數目上限**|數值，用來指定情節中要執行的測試數目上限。 0 值指定沒有上限。<br /><br />如需詳細資訊，請參閱[設定情節的測試反覆項目](../test/configure-test-iterations-in-a-load-test-scenario.md)。|
 |**新使用者的百分比**|數值，指定情節中新使用者或初次造訪者的百分比。<br /><br />如需詳細資訊，請參閱[如何：指定使用 Web 快取資料之虛擬使用者的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)。|
-|**考慮特性**|指定情節是否會使用 [常態分佈]****，或考慮特性是 [開啟]**** 或 [關閉]****。<br /><br />如需詳細資訊，請參閱[編輯考慮時間以模擬網站人類互動延遲](../test/edit-think-times-in-load-test-scenarios.md)。|
+|**考慮分析**|指定情節是否會使用 [常態分佈]****，或考慮特性是 [開啟]**** 或 [關閉]****。<br /><br />如需詳細資訊，請參閱[編輯考慮時間以模擬網站人類互動延遲](../test/edit-think-times-in-load-test-scenarios.md)。|
 
 ## <a name="timing"></a>計時
 

@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f23290ebfadd1b6e3d34f808d5ea0ccccbb3c319
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200149"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-提供一份完整的檔案名稱，此函式取出它們的本機磁碟機。 註解適用於正在簽出的所有檔案。註解引數可以是`null`字串。  
+在指定完整檔案名的清單之後，此函式會將它們簽出至本機磁片磁碟機。 批註會套用至所有簽出的檔案。Comment 引數可以是 `null` 字串。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,41 +39,41 @@ SCCRTN SccCheckout (
 ```  
   
 #### <a name="parameters"></a>參數  
- pvContext  
- [in]原始檔控制外掛程式的內容結構。  
+ pvCoNtext  
+ 在原始檔控制外掛程式內容結構。  
   
  hWnd  
- [in]原始檔控制外掛程式時，可以使用當做父代上，它會提供任何對話方塊 IDE 視窗的控制代碼。  
+ 在IDE 視窗的控制碼，原始檔控制外掛程式可以使用它做為它所提供之任何對話方塊的父代。  
   
  nFiles  
- [in]選取要簽出的檔案數目。  
+ 在選取要簽出的檔案數目。  
   
  lpFileNames  
- [in]要簽出檔案的完整格式的本機路徑名稱的陣列。  
+ 在要簽出之檔案的完整本機路徑名稱陣列。  
   
  lpComment  
- [in]要套用至每個選取的檔案簽出的註解。  
+ 在要套用至每個要簽出之所選檔案的批註。  
   
  fOptions  
- [in]命令旗標 (請參閱[特定的命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md))。  
+ 在命令旗標 (查看 [特定命令所使用的位旗標](../extensibility/bitflags-used-by-specific-commands.md)) 。  
   
  pvOptions  
- [in]原始檔控制外掛程式特定選項。  
+ 在原始檔控制外掛程式特定的選項。  
   
 ## <a name="return-value"></a>傳回值  
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：  
   
 |值|描述|  
 |-----------|-----------------|  
 |SCC_OK|簽出成功。|  
-|SCC_E_FILENOTCONTROLLED|選取的檔案不在原始檔控制之下。|  
-|SCC_E_ACCESSFAILURE|發生問題，存取原始檔控制系統，可能是因為網路或競爭問題。 建議使用重試。|  
-|SCC_E_NOTAUTHORIZED|若要執行這項作業不允許的使用者。|  
-|SCC_E_NONSPECIFICERROR|不明確的失敗。 檔案未簽出。|  
+|SCC_E_FILENOTCONTROLLED|選取的檔案不在原始程式碼控制之下。|  
+|SCC_E_ACCESSFAILURE|存取原始檔控制系統時發生問題，可能是因為網路或爭用問題。 建議您重試。|  
+|SCC_E_NOTAUTHORIZED|不允許使用者執行這項操作。|  
+|SCC_E_NONSPECIFICERROR|模糊失敗。 未簽出檔案。|  
 |SCC_E_ALREADYCHECKEDOUT|使用者已簽出檔案。|  
-|SCC_E_FILEISLOCKED|檔案已鎖定，導致無法建立新的版本。|  
-|SCC_E_FILEOUTEXCLUSIVE|另一位使用者已經獨佔簽出這個檔案。|  
-|SCC_I_OPERATIONCANCELED|作業已完成前取消。|  
+|SCC_E_FILEISLOCKED|檔案已鎖定，禁止建立新版本。|  
+|SCC_E_FILEOUTEXCLUSIVE|另一位使用者已完成此檔案的獨佔簽出。|  
+|SCC_I_OPERATIONCANCELED|作業已在完成前取消。|  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   

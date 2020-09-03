@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac184f25d79a47814fee52b99bce1cddce247fc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570462"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
@@ -32,7 +32,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
 ## <a name="arguments"></a>引數
 
-- *解決方案名稱*
+- *SolutionName*
 
   必要。 方案檔的完整路徑和名稱。
 
@@ -40,7 +40,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
   選擇性。 針對 *SolutionName* 中指定的方案清除中繼檔的組態 (例如 `Debug` 或 `Release`)。 如果有多個方案平台可供使用，您也必須指定平台 (例如 `Debug|Win32`)。 如果未指定這個引數或其為空字串 (`""`)，則工具會使用方案的作用中組態。
 
-- `/Project`*ProjName*
+- `/Project` *專案名稱*
 
   選擇性。 方案中專案檔的路徑和名稱。 您可以輸入專案的顯示名稱或從 *SolutionName* 資料夾到專案檔的相對路徑。 您也可以輸入專案檔的完整路徑和名稱。
 
@@ -48,7 +48,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
   選擇性。 清除指定的 `/Project` 時要使用的專案組建組態名稱 (例如 `Debug` 或 `Release`)。 如果有多個方案平台可供使用，您也必須指定平台 (例如 `Debug|Win32`)。 如果指定這個參數，則會覆寫 *SolnConfigName* 引數。
 
-- `/Out`*輸出檔案名*
+- `/Out`*OutputFilename*
 
   選擇性。 您要將工具的輸出傳送到其中的檔案名稱。 如果檔案已經存在，工具就會將輸出附加至檔案結尾。
 
@@ -77,6 +77,6 @@ devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean "Debug" /pr
 ## <a name="see-also"></a>另請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)
-- [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
-- [/重建（德文夫.exe）](../../ide/reference/rebuild-devenv-exe.md)
-- [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
+- [/Build ( # A0) ](../../ide/reference/build-devenv-exe.md)
+- [/Rebuild ( # A0) ](../../ide/reference/rebuild-devenv-exe.md)
+- [/Out ( # A0) ](../../ide/reference/out-devenv-exe.md)

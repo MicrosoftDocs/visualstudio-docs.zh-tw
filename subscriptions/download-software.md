@@ -8,10 +8,10 @@ ms.date: 07/29/2020
 ms.topic: conceptual
 description: 了解如何尋找及下載 Visual Studio 訂用帳戶中的 Microsoft 軟體標題
 ms.openlocfilehash: d1d885bbe9322f6d15cecff7e44d879aceb63d4c
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801824"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>下載 Visual Studio 訂用帳戶中的軟體標題

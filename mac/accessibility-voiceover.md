@@ -8,10 +8,10 @@ ms.date: 09/23/2019
 ms.assetid: 590C325D-AAD0-4889-B1DB-A1090BBFBE89
 ms.topic: how-to
 ms.openlocfilehash: 8d4a70d17fd6798cb95a2b94939aec793d280174
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801746"
 ---
 # <a name="using-voiceover-with-visual-studio-for-mac"></a>使用 VoiceOver 搭配 Visual Studio for Mac

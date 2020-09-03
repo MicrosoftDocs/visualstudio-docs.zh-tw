@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 00ef98c93f02aa8e8a1b4ea53f1998d0ab6713a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200134"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-指定本機檔案的清單，此函式，判斷哪些檔案是從原始程式碼控制資料庫中對應的版本不同。  
+指定本機檔案清單之後，此函式會判斷哪些檔案與原始程式碼控制資料庫中的對應版本不同。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,26 +38,26 @@ SCCRTN SccEnumChangedFiles(
   
 #### <a name="parameters"></a>參數  
  pContext  
- [in]原始檔控制外掛程式的內容指標。  
+ 在原始檔控制外掛程式內容指標。  
   
  hWnd  
- [in]原始檔控制外掛程式時，可以使用當做父代上，它會提供任何對話方塊 IDE 視窗的控制代碼。  
+ 在IDE 視窗的控制碼，原始檔控制外掛程式可以使用它做為它所提供之任何對話方塊的父代。  
   
  cFiles  
- [in]中指定的檔案名稱數目`lpFileNames`陣列。 也會指定大小`plIsFileDifferent`陣列。  
+ 在陣列中指定的檔案名 `lpFileNames` 。 也指定陣列的大小 `plIsFileDifferent` 。  
   
  lpFileNames  
- [in]若要檢查的本機檔案名稱的陣列。  
+ 在要檢查的本機檔案名陣列。  
   
  plIsFileDifferent  
- [in、 out]值，表示每個檔案的不同狀態的陣列 (陣列至少必須有`cFiles`項目)。 非零值的方法，是不同的檔案。  
+ [in，out]值的陣列，表示每個檔案 (陣列的差異狀態，至少必須有 `cFiles`) 的專案。 非零表示檔案不同。  
   
 ## <a name="return-value"></a>傳回值  
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
-|SCC_OK|作業已順利完成。|  
+|SCC_OK|作業順利完成。|  
 |SCC_UNSPECIFIEDERROR|一般錯誤。|  
   
 ## <a name="see-also"></a>另請參閱  

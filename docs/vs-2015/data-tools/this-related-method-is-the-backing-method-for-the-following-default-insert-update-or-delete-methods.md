@@ -1,5 +1,5 @@
 ---
-title: 此關聯方法是下列預設插入、更新或刪除方法的支援方法 |Microsoft Docs
+title: 此相關的方法是下列預設插入、更新或刪除方法的支援方法 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 84d27dc6f5081a36a237748c091429cfdabbe841
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667174"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>此關聯方法是下列預設插入、更新或刪除方法的支援方法
@@ -25,15 +25,15 @@ ms.locfileid: "72667174"
 
 ### <a name="to-delete-the-selected-method-causing-the-entity-class-to-use-runtime-updates"></a>若要刪除選取的方法以讓實體類別使用執行階段更新
 
-- 按一下 [ **是**]。
+- 按一下 [是]  。
 
      會刪除選取的方法，而且任何使用這個方法覆寫更新行為的類別都會還原成使用預設 LINQ to SQL 執行階段行為。
 
 ### <a name="to-close-the-message-box-leaving-the-selected-method-unchanged"></a>若要關閉訊息方塊並保留選取的方法
 
-- 按一下 [否]。
+- 按一下 **[否]** 。
 
      會關閉訊息方塊，不進行任何變更。
 
-## <a name="see-also"></a>請參閱
- [DataCoNtext 方法（O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md) [如何：指派預存程式來執行更新、插入和刪除（O/R 設計工具）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md) [LINQ to SQL Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
+## <a name="see-also"></a>另請參閱
+ [DataCoNtext 方法 (O/r 設計工具) ](../data-tools/datacontext-methods-o-r-designer.md) [如何：指派預存程式來執行更新、插入和刪除 (O/r 設計工具) ](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md) [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)

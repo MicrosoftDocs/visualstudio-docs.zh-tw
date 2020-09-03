@@ -1,5 +1,5 @@
 ---
-title: 傳統語言服務解析器和掃描器 |微軟文件
+title: 舊版語言服務剖析器和掃描器 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c87f447a4b8bca804d27aae4967f4adaf389c627
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707319"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>舊版語言服務的剖析器和掃描器
-解析器是語言服務的核心。 託管套件框架 (MPF) 語言類需要語言解析器來選擇有關顯示的代碼的資訊。 解析器將文本分隔成詞法標記,然後按類型和功能標識這些標記。
+剖析器是語言服務的核心。 受管理的封裝架構 (MPF) 語言類別需要語言剖析器來選取要顯示之程式碼的相關資訊。 剖析器會將文字分隔為詞法標記，然後根據類型和功能來識別這些權杖。
 
-## <a name="discussion"></a>討論區
- 下面是 C# 方法。
+## <a name="discussion"></a>討論
+ 以下是 c # 方法。
 
 ```csharp
 namespace MyNamespace
@@ -37,99 +37,99 @@ namespace MyNamespace
 }
 ```
 
- 在此示例中,標記是單詞和標點符號。 令牌的種類如下。
+ 在此範例中，標記為單字和標點符號。 權杖的種類如下所示。
 
 |權杖名稱|權杖類型|
 |----------------|----------------|
-|命名空間, 類別, 一般, 不合法, 不合法, int|關鍵字 (keyword)|
+|namespace、class、public、void、int|關鍵字 (keyword)|
 |=|! 運算子之後|
 |{ } ( ) ;|分隔符號|
-|MyNamespace, 我的類別, 我的功能, arg1, var1|識別碼 (identifier)|
-|我的命名空間|namespace|
+|MyNamespace、MyClass、MyFunction、arg1、var1|識別碼 (identifier)|
+|MyNamespace|namespace|
 |MyClass|Class - 類別|
-|我的功能|method|
+|MyFunction|method|
 |arg1|參數 (parameter)|
-|瓦爾1|區域變數 (local variable)|
+|var1|區域變數 (local variable)|
 
- 解析器的作用是標識權杖。 某些權杖可以有多個類型。 解析器標識權杖後,語言服務可以使用該資訊提供有用的功能,如語法突出顯示、大括弧匹配和 IntelliSense 操作。
+ 剖析器的角色是用來識別標記。 某些權杖可以有一種以上的類型。 剖析器識別出標記之後，語言服務可以使用此資訊來提供有用的功能，例如語法醒目提示、括弧對稱和 IntelliSense 作業。
 
-## <a name="types-of-parsers"></a>分析器的類型
- 語言服務解析器與用作編譯器一部分的解析器不同。 但是,這種解析器需要同時使用掃描器和解析器,就像編譯器解析器一樣。
+## <a name="types-of-parsers"></a>剖析器的類型
+ 語言服務剖析器與當做編譯器一部分使用的剖析器不同。 不過，這種剖析器需要同時使用掃描器和剖析器，就像編譯器剖析器一樣。
 
-- 掃描器用於標識權杖的類型。 這項資訊可用於反白顯示語法及快速識別可以觸發其他作業 (例如括號對稱) 的 Token 類型。 此掃描器由<xref:Microsoft.VisualStudio.Package.IScanner>介面表示。
+- 掃描器可用來識別權杖的類型。 這項資訊可用於反白顯示語法及快速識別可以觸發其他作業 (例如括號對稱) 的 Token 類型。 此掃描器由 <xref:Microsoft.VisualStudio.Package.IScanner> 介面表示。
 
-- 解析器用於描述權杖的函數和範圍。 此資訊用於 IntelliSense 操作中,用於標識語言元素,如方法、變數、參數和聲明,並基於上下文提供成員和方法簽名的清單。 此解析器還用於查找匹配的語言元素對,如大括弧和括弧。 此解析器通過<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A><xref:Microsoft.VisualStudio.Package.LanguageService>類中的方法進行訪問。
+- 剖析器用來描述權杖的函式和範圍。 這項資訊會在 IntelliSense 作業中用來識別語言元素，例如方法、變數、參數和宣告，以及根據內容提供成員和方法簽章的清單。 此剖析器也可用來尋找相符的語言專案組，例如大括弧和括弧。 此剖析器可透過 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 類別中的方法來存取 <xref:Microsoft.VisualStudio.Package.LanguageService> 。
 
-  如何為語言服務實現掃描器和分析程式由您決定。 有幾個資源可用於描述解析器的工作原理以及如何編寫自己的解析器。 此外,還有幾種免費和商業產品,有助於創建解析器。
+  您可以自行決定如何為您的語言服務執行掃描器和剖析器。 有幾個資源可描述剖析器的運作方式，以及如何撰寫您自己的剖析器。 此外，有數個免費和商用產品可協助建立剖析器。
 
-### <a name="the-parsesource-parser"></a>The ParseSource Parser
- 與用作編譯器一部分的解析器(其中令牌轉換為某種形式的可執行代碼)不同,可以出於許多不同的原因和許多不同的上下文中調用語言服務解析器。 如何在<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A><xref:Microsoft.VisualStudio.Package.LanguageService>類中的方法中實現此方法由您決定。 請務必記住,<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>該方法可能在後台線程上調用。
+### <a name="the-parsesource-parser"></a>ParseSource 剖析器
+ 不同于當做編譯器一部分使用的剖析器 (其中的標記會轉換成某種可執行程式碼) ，語言服務剖析器可基於許多不同的原因和在許多不同的內容中呼叫。 在類別的方法中，您可以自行決定如何執行此方法 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> 。 請務必記住， <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 方法可能會在背景執行緒上呼叫。
 
 > [!CAUTION]
-> 結構<xref:Microsoft.VisualStudio.Package.ParseRequest>包含對<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>物件的引用。 此<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>物件不能在後台線程中使用。 事實上,許多基本 MPF 類不能在後台線程中使用。 其中包括、<xref:Microsoft.VisualStudio.Package.Source><xref:Microsoft.VisualStudio.Package.ViewFilter><xref:Microsoft.VisualStudio.Package.CodeWindowManager>類和直接或間接與視圖通信的任何其他類。
+> <xref:Microsoft.VisualStudio.Package.ParseRequest>結構包含物件的參考 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 。 這個 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 物件不能用在背景執行緒中。 事實上，許多基礎紙器類別都不能用在背景執行緒中。 其中包括 <xref:Microsoft.VisualStudio.Package.Source> 、 <xref:Microsoft.VisualStudio.Package.ViewFilter> 、 <xref:Microsoft.VisualStudio.Package.CodeWindowManager> 類別，以及直接或間接與視圖通訊的其他任何類別。
 
- 此解析器通常在首次調用整個源檔或給出<xref:Microsoft.VisualStudio.Package.ParseReason>的解析原因值時對其進行分析。 對方法的<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>後續調用處理已分析代碼的一小部分,並且可以使用上一個完整分析操作的結果更快地執行。 該方法<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A><xref:Microsoft.VisualStudio.Package.AuthoringSink>通過<xref:Microsoft.VisualStudio.Package.AuthoringScope>和物件傳達分析操作的結果。 該<xref:Microsoft.VisualStudio.Package.AuthoringSink>物件用於收集特定分析原因的資訊,例如,有關匹配大括弧或具有參數清單的方法簽名範圍的資訊。 提供<xref:Microsoft.VisualStudio.Package.AuthoringScope>聲明和方法簽名的集合,並支援「轉到進階編輯」選項(**轉到定義**、**轉到聲明**、**轉到引用**)。
+ 此剖析器通常會在第一次呼叫時剖析整個來源檔案，或在指定的剖析原因值時剖析 <xref:Microsoft.VisualStudio.Package.ParseReason> 。 後續的方法呼叫 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 會處理剖析程式碼的一小部分，而且可以使用先前的完整剖析作業結果更快速地執行。 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法會透過和物件來傳達剖析作業的結果 <xref:Microsoft.VisualStudio.Package.AuthoringSink> <xref:Microsoft.VisualStudio.Package.AuthoringScope> 。 <xref:Microsoft.VisualStudio.Package.AuthoringSink>物件是用來收集特定剖析原因的資訊，例如，具有參數清單的相符大括弧或方法簽章範圍的相關資訊。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>提供宣告和方法簽章的集合，也支援 [移至 advanced] 編輯選項 (**移至 [定義**]、[**移至**宣告]、[**移至參考**]) 。
 
 ### <a name="the-iscanner-scanner"></a>IScanner 掃描器
- 還必須實現實現<xref:Microsoft.VisualStudio.Package.IScanner>的掃描程式。 但是,由於此掃描器通過<xref:Microsoft.VisualStudio.Package.Colorizer>類逐行運行,因此通常更容易實現。 在每行的開頭,MPF<xref:Microsoft.VisualStudio.Package.Colorizer>為 類提供一個值,用作傳遞給掃描器的狀態變數。 在每行的末尾,掃描器返回更新的狀態變數。 MPF 快取每行的狀態資訊,以便掃描程式可以從任何行開始解析,而無需從源檔的開頭開始。 這種對單行的快速掃描使編輯器能夠向使用者提供快速回饋。
+ 您也必須執行可執行檔掃描器 <xref:Microsoft.VisualStudio.Package.IScanner> 。 不過，因為此掃描器會透過類別逐行執行 <xref:Microsoft.VisualStudio.Package.Colorizer> ，所以通常更容易執行。 在每一行的開頭，MPF 會為類別提供 <xref:Microsoft.VisualStudio.Package.Colorizer> 一個值，以作為傳遞給掃描器的狀態變數使用。 在每一行的結尾，掃描器會傳回更新的狀態變數。 MPF 會快取每一行的這項狀態資訊，讓掃描器可以從任何一行開始剖析，而不需要從原始程式檔的開頭開始剖析。 這一行快速掃描，可讓編輯器為使用者提供快速的意見反應。
 
-## <a name="parsing-for-matching-braces"></a>剖析匹配大括弧
- 此示例顯示用於匹配用戶鍵入的關閉大括弧的控制流。 在此過程中,用於著色的掃描器還用於確定權杖的類型以及權杖是否可以觸發匹配括弧操作。 如果找到觸發器,<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>則呼叫 該方法以查找匹配的大括弧。 最後,兩個大括弧高亮顯示。
+## <a name="parsing-for-matching-braces"></a>剖析成對的大括弧
+ 這個範例會顯示控制項的流程，以比對使用者所輸入的右大括弧。 在此程式中，用於顏色標示的掃描器也會用來判斷權杖的類型，以及標記是否可以觸發符合括弧的作業。 如果找到觸發程式，則 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 會呼叫方法來尋找相符的括弧。 最後，會反白顯示兩個大括弧。
 
- 即使大括弧用於觸發器的名稱和分析原因,此過程也不限於實際大括弧。 支援指定為匹配對的任何字元對。 範例包括\<( 與 ) 與 >, 以及 [ 與 】 與 】 。
+ 即使在觸發程式的名稱和剖析原因中使用大括弧，此程式並不限於實際的大括弧。 支援指定為相符配對的任何字元對。 範例包括 ( 和 ) 、 \< and > 和 [和]。
 
- 假定語言服務支援匹配大括弧。
+ 假設語言服務支援相符的大括弧。
 
-1. 用戶鍵入關閉大括弧 (*)。
+1. 使用者輸入右大括弧 (} ) 。
 
-2. 大括弧插入到源檔中的游標上,游標由 1 前進。
+2. 大括弧會插入至原始程式檔中的資料指標，且資料指標會以一開始。
 
-3. <xref:Microsoft.VisualStudio.Package.Source>類<xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>中的方法使用鍵入的閉合大括弧調用。
+3. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>類別中的方法 <xref:Microsoft.VisualStudio.Package.Source> 會以具類型的右大括弧來呼叫。
 
-4. 方法<xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>調用類<xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A><xref:Microsoft.VisualStudio.Package.Source>中 的方法以在當前游標位置之前的位置獲取令牌。 此令牌對應於鍵入的右大括弧)。
+4. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法會呼叫 <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> 類別中的方法 <xref:Microsoft.VisualStudio.Package.Source> ，以在目前的資料指標位置之前的位置取得權杖。 此標記對應至) 的輸入右大括弧。
 
-    1. 該方法<xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>調<xref:Microsoft.VisualStudio.Package.Colorizer>用<xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>物件上 的方法以獲取當前行上的所有權杖。
+    1. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>方法會 <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> 在物件上呼叫方法 <xref:Microsoft.VisualStudio.Package.Colorizer> ，以取得目前行上的所有標記。
 
-    2. 該方法<xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>使用當前<xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A>行 的文本<xref:Microsoft.VisualStudio.Package.IScanner>調用 物件上的方法。
+    2. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>方法會 <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> <xref:Microsoft.VisualStudio.Package.IScanner> 使用目前行的文字來呼叫物件上的方法。
 
-    3. 該方法<xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>反覆調<xref:Microsoft.VisualStudio.Package.IScanner>用<xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A>物件上 的方法以從當前行收集所有令牌。
+    3. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>方法會重複呼叫 <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> 物件上的方法 <xref:Microsoft.VisualStudio.Package.IScanner> ，以收集目前這一行的所有標記。
 
-    4. 該方法<xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>調用類<xref:Microsoft.VisualStudio.Package.Source>中的 私有方法以獲取包含所需位置的權杖,並<xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>傳遞從方法獲取的權杖清單中。
+    4. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>方法會呼叫類別中的私用方法 <xref:Microsoft.VisualStudio.Package.Source> ，以取得包含所需位置的權杖，並在從方法取得的標記清單中傳遞 <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> 。
 
-5. 該方法<xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>在<xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>從 方法返回的權<xref:Microsoft.VisualStudio.Package.TokenTriggers>杖上 查找 令牌觸發器標誌;即表示關閉大括弧的權杖)。
+5. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法會在從方法傳回的標記上尋找 token 觸發旗標， <xref:Microsoft.VisualStudio.Package.TokenTriggers> <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> 也就是代表右括弧) 的標記。
 
-6. 如果找到<xref:Microsoft.VisualStudio.Package.TokenTriggers>的觸發器標誌,則調<xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A><xref:Microsoft.VisualStudio.Package.Source>用 類中的方法。
+6. 如果找到的觸發旗標 <xref:Microsoft.VisualStudio.Package.TokenTriggers> ，則 <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> <xref:Microsoft.VisualStudio.Package.Source> 會呼叫類別中的方法。
 
-7. 該方法<xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>啟動具有 的解析原因<xref:Microsoft.VisualStudio.Package.ParseReason>值的 解析操作。 此操作最終調用<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A><xref:Microsoft.VisualStudio.Package.LanguageService>類上的方法。 如果啟用非同步分析,則對該方法<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>的此調用將發生在後台線程上。
+7. <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>方法會使用的剖析原因值來啟動剖析作業 <xref:Microsoft.VisualStudio.Package.ParseReason> 。 這種作業最後會呼叫 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 類別上的方法 <xref:Microsoft.VisualStudio.Package.LanguageService> 。 如果已啟用非同步剖析，則這個方法的呼叫 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 會在背景執行緒上發生。
 
-8. 分析操作完成後,`HandleMatchBracesResponse`<xref:Microsoft.VisualStudio.Package.Source>類別中調用名為的內部完成處理程式(也稱為回調方法)。 此調用由<xref:Microsoft.VisualStudio.Package.LanguageService>基類自動進行,而不是由解析器進行。
+8. 當剖析作業完成時， `HandleMatchBracesResponse` 會在類別中呼叫內部完成處理常式 (也稱為回呼方法) 名為 <xref:Microsoft.VisualStudio.Package.Source> 。 此呼叫是由基類自動進行 <xref:Microsoft.VisualStudio.Package.LanguageService> ，而不是由剖析器所建立。
 
-9. 該方法`HandleMatchBracesResponse`從存儲<xref:Microsoft.VisualStudio.Package.AuthoringSink><xref:Microsoft.VisualStudio.Package.ParseRequest>在 物件中的對象獲取範圍清單。 (範圍是指定<xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan>源檔中的行和字元範圍的結構。此範圍清單通常包含兩個範圍,每個範圍用於開口和關閉大括弧。
+9. `HandleMatchBracesResponse`方法 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 會從儲存在物件中的物件取得範圍清單 <xref:Microsoft.VisualStudio.Package.ParseRequest> 。  (範圍是一種 <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> 結構，可指定原始程式檔中的行和字元範圍。 ) 此範圍清單通常包含兩個範圍，每個範圍都是左右大括弧。
 
-10. 該方法`HandleBracesResponse`調<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A>用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView><xref:Microsoft.VisualStudio.Package.ParseRequest>存儲在 物件中的物件上的方法。 這將突出顯示給定的跨度。
+10. `HandleBracesResponse`方法 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 會在儲存于物件中的物件上呼叫方法 <xref:Microsoft.VisualStudio.Package.ParseRequest> 。 這會反白顯示指定的範圍。
 
-11. 如果啟用<xref:Microsoft.VisualStudio.Package.LanguagePreferences><xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>了 該`HandleBracesResponse`屬性, 該方法將獲取匹配範圍包含的文本,並在狀態列中顯示該範圍的前 80 個字元。 如果<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>該方法包含匹配對附帶的語言元素,則此方法效果最佳。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A> 屬性 (Property)。
+11. 如果 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A> 已啟用屬性，方法會取得 `HandleBracesResponse` 相符範圍所包含的文字，並在狀態列中顯示該範圍的前80個字元。 如果 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 方法包含隨附于相符配對的語言專案，這就會有最佳效果。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A> 屬性 (Property)。
 
 12. 大功告成。
 
-### <a name="summary"></a>摘要
- 匹配的大括弧操作通常僅限於簡單的語言元素對。 更複雜的元素,如匹配三重`if(...)`元素("",""`{``}`和""," 或"""""""`else``{`和`}`""), 可以作為單詞完成操作的一部分突出顯示。 例如,當"else"字完成後,可以突出顯示匹配的""`if`語句。 如果有一系列`if`/`else if`語句,則可以使用與匹配大括弧相同的機制突出顯示所有這些語句。 基<xref:Microsoft.VisualStudio.Package.Source>類已經支援此功能,如下所示:掃描程序必須返回令牌觸發器<xref:Microsoft.VisualStudio.Package.TokenTriggers>值 與游標位置之前標記的觸<xref:Microsoft.VisualStudio.Package.TokenTriggers>發器 值組合。
+### <a name="summary"></a>總結
+ 相符的大括弧運算通常僅限於一組簡單的語言專案。 更複雜的元素（例如，比對三 ( ""、""、" `if(...)` `{` "、"" `}` `else` 、" `{` " 和 " `}` " ) ）可以反白顯示為字完成作業的一部分。 例如，當 "else" 單字完成時，可以反白顯示相符的 " `if` " 語句。 如果有一系列的 `if` / `else if` 語句，則可以使用相同的機制來反白顯示所有的語句。 <xref:Microsoft.VisualStudio.Package.Source>基類已支援這項功能，如下所示：掃描器必須傳回 token 觸發程式值， <xref:Microsoft.VisualStudio.Package.TokenTriggers> 並與 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 游標位置之前的標記觸發值結合。
 
- 有關詳細資訊,請參閱[舊語言服務中的"大括弧匹配](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)"。
+ 如需詳細資訊，請參閱 [舊版語言服務中的括弧](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)比對。
 
-## <a name="parsing-for-colorization"></a>色化分析
- 著色原始碼非常簡單,只需標識權杖的類型並返回有關該類型的顏色資訊。 類<xref:Microsoft.VisualStudio.Package.Colorizer>充當編輯器和掃描器之間的仲介,以提供有關每個令牌的顏色資訊。 類<xref:Microsoft.VisualStudio.Package.Colorizer>使用<xref:Microsoft.VisualStudio.Package.IScanner>對象 幫助對行著色,還收集源檔中所有行的狀態資訊。 在 MPF 語言服務<xref:Microsoft.VisualStudio.Package.Colorizer>類中 ,不必重寫該類,因為<xref:Microsoft.VisualStudio.Package.IScanner>它只能通過 介面與掃描器通信。 通過重寫<xref:Microsoft.VisualStudio.Package.LanguageService>類上的方法<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>來<xref:Microsoft.VisualStudio.Package.IScanner>提供 實現介面的物件。
+## <a name="parsing-for-colorization"></a>顏色標示剖析
+ 標示原始程式碼很簡單，只是識別權杖的類型，並傳回與該類型有關的色彩資訊。 <xref:Microsoft.VisualStudio.Package.Colorizer>類別會作為編輯器與掃描器之間的媒介，以提供每個標記的色彩資訊。 <xref:Microsoft.VisualStudio.Package.Colorizer>類別會使用 <xref:Microsoft.VisualStudio.Package.IScanner> 物件來協助標示一行，也會收集原始程式檔中所有行的狀態資訊。 在 MPF 語言服務類別中， <xref:Microsoft.VisualStudio.Package.Colorizer> 不需要覆寫類別，因為它只能透過介面與掃描器進行通訊 <xref:Microsoft.VisualStudio.Package.IScanner> 。 您可以藉 <xref:Microsoft.VisualStudio.Package.IScanner> 由覆寫類別上的方法，提供可執行介面的物件 <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> 。
 
- 通過<xref:Microsoft.VisualStudio.Package.IScanner><xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A>該方法為掃描器提供了一行原始程式碼。 重複對<xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A>方法的調用以獲取行中的下一個令牌,直到行用完令牌。 對於著色,MPF 將所有原始碼視為行序列。 因此,掃描器必須能夠處理源作為行。 此外,任何線路可以隨時傳遞到掃描器,唯一的保證是掃描器在要掃描的行之前從行接收狀態變數。
+ <xref:Microsoft.VisualStudio.Package.IScanner>掃描器會透過方法提供一行原始程式碼 <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> 。 方法的呼叫 <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> 會重複以取得該行中的下一個 token，直到程式程式碼用盡權杖為止。 針對顏色標示，MPF 會將所有原始程式碼視為一連串的行。 因此，掃描器必須能夠以行作為來源。 此外，任何一行都可以隨時傳遞至掃描器，唯一的保證是掃描器會從要掃描的行之前的那一行接收狀態變數。
 
- 該<xref:Microsoft.VisualStudio.Package.Colorizer>類還用於標識令牌觸發器。 這些觸發器告訴 MPF 特定權杖可以啟動更複雜的操作,例如單詞完成或匹配大括弧。 由於識別此類觸發器必須快速,並且必須在任何位置發生,因此掃描器最適合此任務。
+ <xref:Microsoft.VisualStudio.Package.Colorizer>類別也會用來識別權杖觸發程式。 這些觸發程式會告訴 MPF，特定權杖可以起始更複雜的作業，例如文字完成或配對的大括弧。 因為識別這類觸發程式必須很快，而且必須在任何位置進行，掃描器最適合這項工作。
 
- 有關詳細資訊,請參閱[舊語言服務中的語法著色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)。
+ 如需詳細資訊，請參閱 [舊版語言服務中的語法標示](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)。
 
-## <a name="parsing-for-functionality-and-scope"></a>分析功能和範圍
- 分析功能和範圍需要付出更多的努力,而不僅僅是識別遇到的權杖類型。 解析器不僅要標識令牌的類型,還要標識使用令牌的功能。 例如,標識碼只是一個名稱,但在您的語言中,標識符可以是類、命名空間、方法或變數的名稱,具體取決於上下文。 令牌的一般類型可能是標識符,但標識符可能還有其他含義,具體取決於它是什麼和在哪裡定義它。 此標識要求解析器對正在分析的語言有更廣泛的知識。 這就是<xref:Microsoft.VisualStudio.Package.AuthoringSink>課程的用處。 該<xref:Microsoft.VisualStudio.Package.AuthoringSink>類別收集有關識別碼、方法、匹配語言對(如大括弧和括弧)和語言三重(類似於語言對,但有三個部分,例如""""`foreach()``{`和`}`") 的資訊。 此外,還可以重寫<xref:Microsoft.VisualStudio.Package.AuthoringSink>類以支援代碼標識(用於早期驗證斷點,以便不必載入調試器)和**Autos**調試視窗,該視窗在調試程式時自動顯示局部變數和參數,並要求解析器除調試器提供這些變數和參數外,還標識適當的局部變數和參數。
+## <a name="parsing-for-functionality-and-scope"></a>功能和範圍剖析
+ 剖析功能和範圍需要更多的工作，而不只是識別所遇到的權杖類型。 剖析器必須識別權杖的類型，以及使用權杖的功能。 例如，識別碼只是一個名稱，但在您的語言中，識別碼可以是類別、命名空間、方法或變數的名稱（視內容而定）。 權杖的一般類型可以是識別碼，但識別碼也可能有其他意義，視其本身和定義位置而定。 此識別要求剖析器需要更廣泛的知識來剖析所剖析的語言。 這是類別的 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 來源位置。 <xref:Microsoft.VisualStudio.Package.AuthoringSink>類別會收集識別碼、方法、比對語言組的相關資訊 (例如大括弧和括弧) ，以及語言三合一 (類似于語言組，但有三個部分，例如 "" "" `foreach()` `{` 和 " `}` " ) 。 此外，您可以覆寫 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 類別以支援程式碼識別，這項功能可用於早期驗證中斷點，而不需要載入偵錯工具，而 [自動變數偵錯工具] 視窗 **則會** 在偵錯工具時自動顯示本機變數和參數，而且除了偵錯工具所呈現的參數和參數之外，還會要求剖析器識別適當的區域變數和參數。
 
- 對<xref:Microsoft.VisualStudio.Package.AuthoringSink>象<xref:Microsoft.VisualStudio.Package.ParseRequest>作為 物件的一部分傳遞給解析器,並且每次<xref:Microsoft.VisualStudio.Package.AuthoringSink><xref:Microsoft.VisualStudio.Package.ParseRequest>創建新 物件時都會創建新物件。 此外,<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>該方法必須返回一<xref:Microsoft.VisualStudio.Package.AuthoringScope>個 物件,該物件用於處理各種 IntelliSense 操作。 對<xref:Microsoft.VisualStudio.Package.AuthoringScope>象 維護聲明的清單和方法的清單,其中任一都填充,具體取決於分析的原因。 必須<xref:Microsoft.VisualStudio.Package.AuthoringScope>實現類。
+ <xref:Microsoft.VisualStudio.Package.AuthoringSink>物件會傳遞至剖析器作為物件的一部分 <xref:Microsoft.VisualStudio.Package.ParseRequest> ，並在 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 每次建立新物件時建立新的物件 <xref:Microsoft.VisualStudio.Package.ParseRequest> 。 此外，此 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 方法必須傳回 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 用來處理各種 IntelliSense 作業的物件。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>物件會維護宣告的清單，以及方法的清單，這些方法會根據剖析的原因來填入。 必須實作為 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 類別。
 
 ## <a name="see-also"></a>另請參閱
 - [實作舊版語言服務](../../extensibility/internals/implementing-a-legacy-language-service1.md)

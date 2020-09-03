@@ -8,10 +8,10 @@ ms.date: 02/20/2020
 ms.topic: conceptual
 description: 了解無法存取訂用帳戶時，訂閱者資料的匿名方式。
 ms.openlocfilehash: b65673d2fe61f62bf9e7731d20763bcd8c6f74bf
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232730"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>將 Visual Studio 訂閱者資訊匿名化
@@ -37,18 +37,18 @@ ms.locfileid: "80232730"
 ### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>問：我是組織訂用帳戶的系統管理員。  如果訂閱者的其中一項資訊已匿名化，可以將該訂用帳戶重新指派給另一位使用者嗎？
 答：可以，只要訂用帳戶尚未過期，它可以重新指派給另一位訂閱者。
 
-### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>問：如何防止因刪除登錄電子郵件地址而導致的匿名化？
-答：有兩種方法可以防止此問題：
+### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>問：如何避免因刪除登入電子郵件地址而造成匿名化？
+答：有兩種方法可以避免這個問題：
 - 部署單一身分識別管理系統 (MSA 或 AAD)，但不能同時部署。  
 - 透過租用戶建立 AAD 與 MSA 身分識別的關聯。 
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
-- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
-- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 檔](https://docs.microsoft.com/azure/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
-瞭解如何通過[關聯 MSA 和 AAD 標識](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator)來防止匿名化。
+瞭解如何藉由 [關聯 MSA 和 AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator)身分識別來防止匿名化。
 
 

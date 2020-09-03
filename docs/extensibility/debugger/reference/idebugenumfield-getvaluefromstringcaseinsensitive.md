@@ -1,5 +1,5 @@
 ---
-title: IDebugenumfield:從Stringcase敏感獲取價值 |微軟文件
+title: IDebugEnumField：： GetValueFromStringCaseInsensitive |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 551945ded9d1ba3e973f18c21463a896cbd478c8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730248"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
-此方法使用不區分大小寫的搜索來返回與枚舉常量的名稱關聯的值。
+這個方法會使用不區分大小寫的搜尋，傳回與列舉常數名稱相關聯的值。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int GetValueFromStringCaseInsensitive(
 
 ## <a name="parameters"></a>參數
 `pszValue`\
-[在]指定要取得值的名稱的字串。 請注意,對於C++,這是一個寬字元字串。
+在字串，指定要取得其值的名稱。 請注意，在 c + + 中，這是寬字元字串。
 
 `pValue`\
-[出]返回關聯的數值。
+擴展傳回相關聯的數值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,如果`S_FALSE`名稱不是枚舉的一部分,則返回或錯誤代碼。
+ 如果成功， `S_OK` 則傳回; 否則， `S_FALSE` 如果名稱不是列舉的一部分或錯誤碼，則會傳回。
 
 ## <a name="remarks"></a>備註
- 此方法不區分大小寫。 如果需要區分大小寫搜尋(例如,在名稱區分大小寫的C++)C++),請使用[GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)。
+ 這個方法不區分大小寫。 如果需要區分大小寫的搜尋 (例如，使用 c + + 的語言，其中名稱會區分大小寫) ，請使用 [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

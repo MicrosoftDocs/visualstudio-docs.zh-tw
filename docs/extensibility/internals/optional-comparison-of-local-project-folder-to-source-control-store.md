@@ -1,5 +1,5 @@
 ---
-title: 將項目資料夾與來源控制記憶體進行比較 |微軟文件
+title: 比較專案資料夾與原始檔控制存放區 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: facb3b656e0ac50b50fdb0291307aa2fe98b1df4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706870"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>本機專案資料夾與原始檔控制存放區的選擇性比較
-在原始程式碼管理外掛程式 API 1.2 中,使用函數[SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)和[SccDirDiff](../../extensibility/sccdirdiff-function.md)實現了本地項目資料夾和原始程式碼管理之間的比較。
+在原始檔控制外掛程式 API 1.2 中，本機專案資料夾與原始檔控制之間的比較會使用 [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) 和 [SccDirDiff](../../extensibility/sccdirdiff-function.md)函數來完成。
 
- 在**解決方案資源管理員**中,如果選擇了資料夾而不是單個檔,**則比較版本**快捷選單將在原始程式碼管理外掛程式中呼叫新的[SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)和[SccDirDiff。](../../extensibility/sccdirdiff-function.md)
+ 在 **方案總管**中，如果選取資料夾而不是個別檔案，則 **比較版本** 的快捷方式功能表會在原始檔控制外掛程式中叫用新的 [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) 和 [SccDirDiff](../../extensibility/sccdirdiff-function.md) 。
 
 ## <a name="new-capability-flags"></a>新功能旗標
  `SCC_CAP_DIRECTORYDIFF`
@@ -33,10 +33,10 @@ ms.locfileid: "80706870"
 
 - [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)
 
- 之前`SccDirQueryInfo``SccDirDiff`調用函數以確定工作目錄是否受原始程式碼管理。 該`SccDirDiff`函數顯示當前本地目錄和相應的原始程式碼管理資料夾之間的差異。 此命令要求原始程式碼管理外掛程式顯示目錄的更改清單。 原始程式碼管理外掛程式提供其自己的 UI 來顯示差異。
+ 您 `SccDirQueryInfo` 可以先呼叫函數， `SccDirDiff` 以判斷工作目錄是否為原始檔控制。 此函式會 `SccDirDiff` 顯示目前本機目錄與對應原始檔控制資料夾之間的差異。 此命令會要求原始檔控制外掛程式顯示目錄的變更清單。 原始檔控制外掛程式會提供自己的 UI 來顯示差異。
 
 > [!NOTE]
-> 此函數使用與[SccDiff](../../extensibility/sccdiff-function.md)相同的命令標誌。 作為原始程式碼管理外掛程式提供者,您可以選擇不支援目錄的「快速差異」 操作。
+> 此函數會使用與 [SccDiff](../../extensibility/sccdiff-function.md)相同的命令旗標。 作為原始檔控制外掛程式提供者，您可以選擇不支援目錄的「快速差異」作業。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 1.2 版的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

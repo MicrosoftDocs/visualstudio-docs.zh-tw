@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 973e08ca6555f7da7873d3068e2794b8d34e3640
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75569435"
 ---
-# <a name="options-dialog-box-environment--general"></a>選項對話方塊：環境\>一般
+# <a name="options-dialog-box-environment--general"></a>選項對話方塊：環境 \> 一般
 
 使用此頁面來變更整合式開發環境 (IDE) 之色彩佈景主題、狀態列設定和副檔名關聯等其他選項。 開啟 [工具]**** 功能表，並選擇 [選項]****，然後開啟 [環境]**** 資料夾，再選擇 [一般]**** 頁面，即可存取 [選項]**** 對話方塊。 如果此頁面未出現在清單中，請在 [選項]**** 對話方塊中選取 [顯示所有設定]**** 核取方塊。
 
@@ -90,7 +90,7 @@ ms.locfileid: "75569435"
 
 **[關閉] 按鈕只會影響使用中的工具視窗**
 
-指定按一下 [關閉]**** 按鈕時，只會關閉具有焦點的工具視窗，而非停駐集中的所有工具視窗。 依預設，會選取這個選項。
+指定按一下 [關閉]**** 按鈕時，只會關閉具有焦點的工具視窗，而非停駐集中的所有工具視窗。 預設會選取這個選項。
 
 **[自動隱藏] 按鈕只會影響使用中的工具視窗**
 

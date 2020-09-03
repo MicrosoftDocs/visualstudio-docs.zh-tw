@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e70039f361ac3410a8ddcccb0f139d8bdcb32ed9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668083"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>如何：建立多檔案項目範本
@@ -31,13 +31,13 @@ ms.locfileid: "72668083"
 
 - 包含表單內嵌資源的 .resx 檔案。
 
-  多檔案項目範本需要參數，確保在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中建立項目時使用正確的檔案名稱副檔名。 如果您使用 [匯出範本精靈] 建立項目範本，則會自動產生這些參數，而且不需要進行任何進一步編輯。 下列步驟說明如何使用參數，確保建立正確的檔案名稱副檔名。
+  多檔案項目範本需要參數，確保在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中建立項目時使用正確的檔案名稱副檔名。 如果您使用 [匯出範本精靈]**** 建立項目範本，則會自動產生這些參數，而且不需要進行任何進一步編輯。 下列步驟說明如何使用參數，確保建立正確的檔案名稱副檔名。
 
 ### <a name="to-manually-create-a-multi-file-item-template"></a>手動建立多檔案項目範本
 
 1. 當您建立單一檔案項目範本，請建立項目範本。 如需詳細資訊，請參閱[如何：建立項目範本](../ide/how-to-create-item-templates.md)。
 
-2. 將 `TargetFileName` 屬性新增至每個 `ProjectItem` 項目。 將 `TargetFileName` 屬性的值設為 $fileinputname$.*FileExtension*，其中 *FileExtension* 是範本中所含檔案的檔案名稱副檔名。 例如:
+2. 將 `TargetFileName` 屬性新增至每個 `ProjectItem` 項目。 將 `TargetFileName` 屬性的值設為 $fileinputname$.*FileExtension*，其中 *FileExtension* 是範本中所含檔案的檔案名稱副檔名。 例如：
 
     ```
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -51,14 +51,14 @@ ms.locfileid: "72668083"
     </ProjectItem>
     ```
 
-     將衍生自此範本的項目新增至專案時，檔案名稱是根據使用者在 [新增項目] 對話方塊中鍵入的名稱。
+     將衍生自此範本的項目新增至專案時，檔案名稱是根據使用者在 [新增項目]**** 對話方塊中鍵入的名稱。
 
-3. 選取要包含在範本中的檔案，並以滑鼠右鍵按一下選取項目，再按一下 [傳送到]，然後按一下 [壓縮的 (zipped) 資料夾]。 您選取的檔案即會壓縮成 .zip 檔。
+3. 選取要包含在範本中的檔案，並以滑鼠右鍵按一下選取項目，再按一下 [傳送到]****，然後按一下 [壓縮的 (zipped) 資料夾]****。 您選取的檔案即會壓縮成 .zip 檔。
 
-4. 將 .zip 檔案放在使用者項目範本位置中。 此目錄預設為 \My Documents\Visual Studio <版本>\Templates\ItemTemplates\\。 如需詳細資訊，請參閱[如何：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+4. 將 .zip 檔案放在使用者項目範本位置中。 此目錄預設為 \My Documents\Visual Studio <版本>** \Templates\ItemTemplates\\。 如需詳細資訊，請參閱 [如何：尋找和組織範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 ## <a name="example"></a>範例
- 下列範例示範 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Windows Forms 範本。 根據此範本來建立項目時，所建立三個檔案的名稱會符合 [新增項目] 對話方塊中所輸入的名稱。
+ 下列範例示範 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Windows Forms 範本。 根據此範本來建立項目時，所建立三個檔案的名稱會符合 [新增項目]**** 對話方塊中所輸入的名稱。
 
 ```
 <VSTemplate Version="2.0.0" Type="Item"
@@ -83,5 +83,5 @@ ms.locfileid: "72668083"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [建立專案和專案範本](../ide/creating-project-and-item-templates.md)[如何：建立專案範本](../ide/how-to-create-item-templates.md)[範本參數](../ide/template-parameters.md)[如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)

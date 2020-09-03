@@ -15,18 +15,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9edc79002a4a2d7c2fe135d7eb4669f5f010599
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668081"
 ---
 # <a name="how-to-create-item-templates"></a>如何：建立項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的[第一個程序](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box)步驟，說明如何使用 [匯出範本精靈] 建立項目範本。 如果您的範本中包含多個檔案，請參閱[如何：建立多檔案項目範本](../ide/how-to-create-multi-file-item-templates.md)。
+本主題的[第一個程序](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box)步驟，說明如何使用 [匯出範本精靈]**** 建立項目範本。 如果您的範本將包含多個檔案，請參閱 [如何：建立多檔案專案範本](../ide/how-to-create-multi-file-item-templates.md)。
 
- 此精靈會執行許多工作，為您建立基本範本，但在許多情況下，您將需要在匯出了範本之後手動修改.vstemplate 檔案。 例如，如果您想要在 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式專案的 [新增項目] 對話方塊中顯示項目，您必須執行一些額外的步驟。 本主題的[第二個程序](#to-enable-the-item-template-to-be-used-in-a-store-project)可協助您完成上述工作。
+ 此精靈會執行許多工作，為您建立基本範本，但在許多情況下，您將需要在匯出了範本之後手動修改.vstemplate 檔案。 例如，如果您想要在 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式專案的 [新增項目]**** 對話方塊中顯示項目，您必須執行一些額外的步驟。 本主題的[第二個程序](#to-enable-the-item-template-to-be-used-in-a-store-project)可協助您完成上述工作。
 
  在某些情況下，您可能想要或需要從頭開始手動建立項目範本。 [第三個程序](#to-enable-templates-for-specific-project-sub-types)說明如何執行上述作業。
 
@@ -40,26 +40,26 @@ ms.locfileid: "72668081"
 
 3. 修改程式碼檔，指出要執行參數取代的地方。 如需詳細資訊，請參閱[如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
 
-4. 按一下 [檔案] 功能表上的 [匯出範本]。
+4. 按一下 [檔案]**** 功能表上的 [匯出範本]****。
 
-5. 按一下 [項目範本]，然後選取包含項目的專案，並按一下 [下一步]。
+5. 按一下 [項目範本]****，然後選取包含項目的專案，並按一下 [下一步]****。
 
-6. 選取要建立範本的項目，並按一下 [下一步]。
+6. 選取要建立範本的項目，並按一下 [下一步]****。
 
-7. 選取組件參考，以便在範本中包含此參考，然後按一下 [下一步]。
+7. 選取組件參考，以便在範本中包含此參考，然後按一下 [下一步]****。
 
-8. 輸入圖示檔檔名、預覽影像、範本名稱和範本描述，然後按一下 [完成]。
+8. 輸入圖示檔檔名、預覽影像、範本名稱和範本描述，然後按一下 [完成]****。
 
-     範本檔案會加入至.zip 檔案，並複製至您在對話方塊中指定的任何目錄。 預設位置為 **..\Users\\<使用者名稱\>\Documents\Visual Studio \<>\My Exported Templates\\** 資料夾。
+     範本檔案會加入至.zip 檔案，並複製至您在對話方塊中指定的任何目錄。 預設位置為 **。\Users \\<username \> \Documents\Visual Studio \<Version> \My 匯出的 \\ 範本**資料夾。
 
     > [!WARNING]
-    > 在舊版 Visual Studio 中，預設位置為 **..\Users\\<使用者名稱\>\Documents\Visual Studio \<版本>\Templates\ItemTemplates**。
+    > 在舊版 Visual Studio 中，預設位置為 **。\Users \\<username \> \Documents\Visual Studio \<Version> \Templates\ItemTemplates**。
 
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>若要讓項目範本可在市集專案中使用
 
 1. 遵循上述程序的步驟匯出項目範本。
 
-2. 從複製到 ..\Users\\<使用者名稱>\Documents\Visual Studio <版本>\Templates\ItemTemplates\ (或 **My Exported Templates**) 資料夾的 .zip 檔案，解壓縮 .vstemplate 檔案。
+2. 從複製到 ..\Users\\<使用者名稱>** \Documents\Visual Studio <版本>** \Templates\ItemTemplates\ (或 **My Exported Templates**) 資料夾的 .zip 檔案，解壓縮 .vstemplate 檔案。
 
 3. 在 Visual Studio 中開啟 .vstemplate 檔案。
 
@@ -67,7 +67,7 @@ ms.locfileid: "72668081"
 
     C + + Windows 8.1 市集專案使用 `WinRT-Native-6.3` 的值。 若為 Windows 10 及其他專案類型，請參閱 [TemplateGroupID 項目 (Visual Studio 範本)](../extensibility/templategroupid-element-visual-studio-templates.md)。
 
-    下列範例顯示已加入 XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` 程式行之後 .vstemplate 檔案的完整內容。 這個範例是 C# 專案專用的。 您可以修改 \<ProjectType > 和 \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> 元素，以指定其他語言和專案類型。
+    下列範例顯示已加入 XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` 程式行之後 .vstemplate 檔案的完整內容。 這個範例是 C# 專案專用的。 您可以修改 \<ProjectType> 和 \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> 元素，以指定其他語言和專案類型。
 
    ```xml
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
@@ -92,11 +92,11 @@ ms.locfileid: "72668081"
 
 5. 在 Visual Studio 中，儲存並關閉 .vstemplate 檔案。
 
-6. 複製 .vstemplate 檔案，並將其貼至 ..\Users\\<使用者名稱>\Documents\Visual Studio <版本>\Templates\ItemTemplates\ 資料夾中的 .zip 檔案。
+6. 複製 .vstemplate 檔案，並將其貼至 ..\Users\\<使用者名稱>** \Documents\Visual Studio <版本>** \Templates\ItemTemplates\ 資料夾中的 .zip 檔案。
 
-    如果出現 [複製檔案] 對話方塊，請選擇 [複製並取代] 選項。
+    如果出現 [複製檔案]**** 對話方塊，請選擇 [複製並取代]**** 選項。
 
-   您現在可以使用 [新增項目] 對話方塊，將以這個範本為依據的項目新增至 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 專案。
+   您現在可以使用 [新增項目]**** 對話方塊，將以這個範本為依據的項目新增至 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 專案。
 
    如需參數名稱的詳細資訊，請參閱[範本參數](../ide/template-parameters.md)。
 
@@ -157,5 +157,5 @@ ms.locfileid: "72668081"
 
 8. 複製 .zip 檔案，並在使用者項目範本位置中貼上它。 在 Visual Studio 2015 中，預設目錄為 ..\Users\\<使用者名稱\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\。 如需詳細資訊，請參閱＜作法：尋找並組織專案範本和項目範本＞。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [建立專案和專案範本](../ide/creating-project-and-item-templates.md)[如何：建立多檔案專案範本](../ide/how-to-create-multi-file-item-templates.md) [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)

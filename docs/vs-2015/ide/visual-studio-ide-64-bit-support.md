@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d457af78a23d03b4d87de6dd226cf55e8a191f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667109"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE 64 位元支援
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可讓您將應用程式的目標設定為不同的平台，包括 64 位元的平台。 如需 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中 64 位元平台支援的詳細資訊，請參閱 [64 位元應用程式](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)。
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可讓您將應用程式的目標設定為不同的平台，包括 64 位元的平台。 如需有關中64位平臺支援的詳細資訊 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，請參閱 [64 位應用程式](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)。
 
 ## <a name="deploying-a-64-bit-application"></a>部署 64 位元應用程式
  下列主題會討論有關部署 64 位元應用程式的事項：
@@ -35,7 +35,7 @@ ms.locfileid: "72667109"
 ## <a name="configuring-projects-as-64-bit-applications"></a>將專案設定為 64 位元應用程式
  下列主題會討論有關設定專案以建置成 64 位元應用程式的事項：
 
-- [如何：將專案設定成以平台為目標](../ide/how-to-configure-projects-to-target-platforms.md)
+- [如何：將專案設定成以平臺為目標](../ide/how-to-configure-projects-to-target-platforms.md)
 
 ## <a name="debugging-a-64-bit-application"></a>偵錯 64 位元應用程式
  如果 [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] 是在 64 位元的 Windows 作業系統上執行，就無法使用 [編輯後繼續]。 下列主題會討論有關偵錯 64 位元應用程式的事項：
@@ -47,4 +47,4 @@ ms.locfileid: "72667109"
 - [使用傾印檔案](../debugger/using-dump-files.md)
 
 ## <a name="see-also"></a>另請參閱
- [如何：將專案設定成以平台為目標](../ide/how-to-configure-projects-to-target-platforms.md)
+ [如何：將專案設定成以平臺為目標](../ide/how-to-configure-projects-to-target-platforms.md)

@@ -122,13 +122,13 @@
           href: processes.md
         - name: 程式節點
           href: program-nodes.md
-        - name: Programs
+        - name: 程式
           href: programs.md
         - name: Threads
           href: threads.md
         - name: 堆疊框架
           href: stack-frames.md
-        - name: 模組
+        - name: 單元
           href: modules.md
         - name: 中斷點 (Visual Studio SDK)
           href: breakpoints-visual-studio-sdk.md

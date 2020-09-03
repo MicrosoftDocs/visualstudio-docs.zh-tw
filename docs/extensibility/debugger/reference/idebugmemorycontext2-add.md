@@ -1,5 +1,5 @@
 ---
-title: IDebug記憶體上下文2::添加 |微軟文件
+title: IDebugMemoryCoNtext2：： Add |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a21fa2ec6d48bb1d6bf17bbc0d2ebf0d90a25a9f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727478"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
-將指定的值添加到當前上下文並返回新上下文。
+將指定的值加入至目前的內容，並傳回新的內容。
 
 ## <a name="syntax"></a>語法
 
@@ -44,18 +44,18 @@ int Add(
 
 ## <a name="parameters"></a>參數
 `dwCount`\
-[在]要添加到當前上下文的值。
+在要加入至目前內容的值。
 
 `ppMemCxt`\
-[出]返回新的[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件。
+擴展傳回新的 [IDebugMemoryCoNtext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 記憶體上下文是位址,因此向位址添加值會產生需要新上下文介面的新位址。
+ 記憶體內容是位址，因此將值新增至位址會產生新的位址，需要新的內容介面。
 
- 此方法必須始終生成新上下文,即使生成的位址位於與此上下文關聯的記憶體空間之外也是如此。 唯一的例外是,如果無法為新上下文分配記憶體,或者是否`ppMemCxt`為空值(這是一個錯誤)。
+ 即使產生的位址超出與此內容相關聯的記憶體空間，這個方法也一定會產生新的內容。 唯一的例外狀況是，如果無法配置新內容的記憶體，或 `ppMemCxt` 為 null 值 (這是) 錯誤。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

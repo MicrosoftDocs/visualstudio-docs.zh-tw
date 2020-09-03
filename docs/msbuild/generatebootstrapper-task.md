@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6da773fdf6cd84819ea0e73083995f60e3c17e2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634080"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 工作
@@ -78,7 +78,7 @@ ms.locfileid: "77634080"
   </BootstrapperItem>
   ```
 
-   `Include` 屬性代表應該安裝的必要條件名稱。 `ProductName` 項目中繼資料為選擇性，而且萬一找不到套件，建置引擎將使用它作為易記名稱。 除非未指定任何`ApplicationFile`參數，否則不需要這些專案。 您應該基於每個必須針對您應用程式安裝的必要條件包含一個項目。
+   `Include` 屬性代表應該安裝的必要條件名稱。 `ProductName` 項目中繼資料為選擇性，而且萬一找不到套件，建置引擎將使用它作為易記名稱。 除非未指定，否則這些專案不需要 MSBuild 輸入參數 `ApplicationFile` 。 您應該基於每個必須針對您應用程式安裝的必要條件包含一個項目。
 
    如果未指定 `BootstrapperItems` 和 `ApplicationFile` 參數，將會產生建置錯誤。
 
@@ -86,7 +86,7 @@ ms.locfileid: "77634080"
 
    選擇性的 `String` 輸出參數。
 
-   指定*setup.exe*的生成位置
+   指定*setup.exe*的建立位置
 
 - `ComponentsLocation`
 
@@ -152,7 +152,7 @@ ms.locfileid: "77634080"
 
 ## <a name="remarks"></a>備註
 
-除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 有關這些附加參數及其說明的清單，請參閱[任務擴展基類](../msbuild/taskextension-base-class.md)。
+除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些額外參數的清單及其描述，請參閱 [TaskExtension 基類（base class](../msbuild/taskextension-base-class.md)）。
 
 ## <a name="example"></a>範例
 
@@ -182,4 +182,4 @@ ms.locfileid: "77634080"
 ## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
-- [任務引用](../msbuild/msbuild-task-reference.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

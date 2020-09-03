@@ -8,10 +8,10 @@ ms.date: 03/26/2020
 ms.topic: how-to
 description: 了解所選取 Visual Studio 訂用帳戶隨附的 Power BI Pro 訂用帳戶。
 ms.openlocfilehash: 9a16e827c45e600ff3b5edc8579b5941aa80ca90
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801681"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Power BI Pro
@@ -49,7 +49,7 @@ ms.locfileid: "88801681"
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro 權益連絡資訊](_img/vs-pbi/vs-pbi-contact-cropped.png)
 
-9. 下個頁面會確認您的 Power BI Pro 開發人員 (MSDN) 訂用帳戶價格為 0.00 USD。  按 [下一步] 。
+9. 下個頁面會確認您的 Power BI Pro 開發人員 (MSDN) 訂用帳戶價格為 0.00 USD。  按一下 [下一步]  。
 
 10. 最後，我們會收集一些付款資訊。  不要擔心，您不必支付任何費用。  請注意價格仍是 0.00 USD。  支付方式可以選擇信用卡、銀行帳戶或發票。  如果您選擇**發票**，可能需要提供意見反應說明為何偏好此種付款方法。  請提供偏好付款方式所要求的資訊，然後按一下 [下單]****。
     > [!div class="mx-imgBorder"]

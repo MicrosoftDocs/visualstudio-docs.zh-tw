@@ -9,30 +9,30 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: cf30e3294c1a96e64efd47ffd14f03328ebec62c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75573180"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的基本設計方針規則規則集
 
-您可以使用 Microsoft 基本的設計指導方針規則規則，將焦點放在讓您的程式碼更容易瞭解和使用。 如果您的專案包含程式庫程式碼，或如果您想要針對容易維護的程式碼強制執行最佳作法，則應包含此規則集。
+您可以使用 Microsoft 基本設計指導方針規則規則集，專注于讓您的程式碼更容易瞭解和使用。 如果您的專案包含程式庫程式碼，或如果您想要針對容易維護的程式碼強制執行最佳作法，則應該包含此規則集。
 
-基本的設計指導方針規則包含「[受管理的建議規則](managed-recommended-rules-rule-set-for-managed-code.md)」規則集中的所有規則。
+基本的設計指導方針規則包含 [受管理的建議規則](managed-recommended-rules-rule-set-for-managed-code.md) 規則集中的所有規則。
 
-下表描述 Microsoft 基本設計指導方針規則規則集中的所有規則。
+下表說明 Microsoft 基本設計指導方針規則規則集中的所有規則。
 
 |規則|描述|
 |----------|-----------------|
 |[CA1000](../code-quality/ca1000.md)|不要在泛型類型上宣告靜態成員|
 |[CA1001 具有](../code-quality/ca1001.md)|具有可處置欄位的類型應該為可處置|
 |[CA1002](../code-quality/ca1002.md)|不要公開泛型清單|
-|[CA1003 必須](../code-quality/ca1003.md)|使用一般事件處理常式執行個體|
+|[CA1003](../code-quality/ca1003.md)|使用一般事件處理常式執行個體|
 |[CA1004](../code-quality/ca1004.md)|泛型方法應該提供類型參數|
 |[CA1005](../code-quality/ca1005.md)|避免在泛型類型上包含過多參數|
 |[CA1006](../code-quality/ca1006.md)|不要在成員簽章中將泛型類型巢狀化|
-|[CA1007 建議](../code-quality/ca1007.md)|建議在適當時使用泛型|
+|[CA1007](../code-quality/ca1007.md)|建議在適當時使用泛型|
 |[CA1008](../code-quality/ca1008.md)|列舉值中應該要有值為零的成員|
 |[CA1009](../code-quality/ca1009.md)|事件處理常式必須正確宣告|
 |[CA1010](../code-quality/ca1010.md)|集合應該實作泛型介面|
@@ -45,18 +45,18 @@ ms.locfileid: "75573180"
 |[CA1018](../code-quality/ca1018.md)|必須以 AttributeUsageAttribute 標記屬性|
 |[CA1019 必須](../code-quality/ca1019.md)|定義屬性引數的存取子|
 |[CA1023](../code-quality/ca1023.md)|不應該使用多維索引子|
-|[CA1024 建議](../code-quality/ca1024.md)|建議在適當時使用屬性|
+|[CA1024](../code-quality/ca1024.md)|建議在適當時使用屬性|
 |[CA1025 必須](../code-quality/ca1025.md)|以參數陣列取代重複的引數|
 |[CA1026](../code-quality/ca1026.md)|不應該使用預設參數|
-|[CA1027 必須](../code-quality/ca1027.md)|必須以 FlagsAttribute 標記列舉|
+|[CA1027](../code-quality/ca1027.md)|必須以 FlagsAttribute 標記列舉|
 |[CA1028](../code-quality/ca1028.md)|列舉儲存區應該是 Int32|
-|[CA1030 建議](../code-quality/ca1030.md)|建議在適當時使用事件|
+|[CA1030](../code-quality/ca1030.md)|建議在適當時使用事件|
 |[CA1031](../code-quality/ca1031.md)|不要攔截一般例外狀況類型|
 |[CA1032 必須](../code-quality/ca1032.md)|必須實作標準例外狀況建構函式|
 |[CA1033](../code-quality/ca1033.md)|介面方法應該要可以由子類型呼叫|
 |[CA1034](../code-quality/ca1034.md)|巢狀類型不應該為可見的|
 |[CA1035](../code-quality/ca1035.md)|ICollection 的實作有強類型成員|
-|[CA1036 必須](../code-quality/ca1036.md)|必須在 Comparable 類型中覆寫方法|
+|[CA1036](../code-quality/ca1036.md)|必須在 Comparable 類型中覆寫方法|
 |[CA1038](../code-quality/ca1038.md)|列舉程式應該是強類型|
 |[CA1039](../code-quality/ca1039.md)|清單為強類型|
 |[CA1041](../code-quality/ca1041.md)|必須提供 ObsoleteAttribute 訊息|
@@ -78,14 +78,14 @@ ms.locfileid: "75573180"
 |[CA1059](../code-quality/ca1059.md)|成員不應該公開特定的具象類型|
 |[CA1060](../code-quality/ca1060.md)|必須將 P/Invokes 移到 NativeMethods 類別|
 |[CA1061](../code-quality/ca1061.md)|不要隱藏基底類別方法|
-|[CA1063 必須](../code-quality/ca1063.md)|必須正確實作 IDisposable|
+|[CA1063](../code-quality/ca1063.md)|必須正確實作 IDisposable|
 |[CA1064](../code-quality/ca1064.md)|例外狀況必須是公用|
 |[CA1065](../code-quality/ca1065.md)|不要在非預期的位置中引發例外狀況|
 |[CA1301](../code-quality/ca1301.md)|避免使用重複的快速鍵|
 |[CA1400](../code-quality/ca1400.md)|P/Invoke 進入點應該要存在|
 |[CA1401](../code-quality/ca1401.md)|P/Invokes 不應該為可見的|
 |[CA1403](../code-quality/ca1403.md)|自動配置類型不應該是 COM 可見|
-|[CA1404 必須](../code-quality/ca1404.md)|必須在 P/Invoke 之後立即呼叫 GetLastError|
+|[CA1404](../code-quality/ca1404.md)|必須在 P/Invoke 之後立即呼叫 GetLastError|
 |[CA1405](../code-quality/ca1405.md)|COM 可見類型的基底類型應該是 COM 可見|
 |[CA1410](../code-quality/ca1410.md)|應該和 COM 註冊方法對應|
 |[CA1415](../code-quality/ca1415.md)|P/Invokes 必須正確宣告|
@@ -101,13 +101,13 @@ ms.locfileid: "75573180"
 |[CA1812](../code-quality/ca1812.md)|避免使用未執行個體化的內部類別|
 |[CA1813](../code-quality/ca1813.md)|避免使用非密封屬性|
 |[CA1814](../code-quality/ca1814.md)|建議使用不規則陣列取代多維陣列|
-|[CA1815](../code-quality/ca1815.md)|必須覆寫實值類型上的 Equals 方法和等號比較運算子|
+|[>CA1815](../code-quality/ca1815.md)|必須覆寫實值類型上的 Equals 方法和等號比較運算子|
 |[CA1819](../code-quality/ca1819.md)|屬性不應該傳回陣列|
 |[CA1820 應該](../code-quality/ca1820.md)|應該使用字串長度測試空白字串|
 |[CA1821 必須](../code-quality/ca1821.md)|必須移除空的完成項|
 |[CA1822](../code-quality/ca1822.md)|將成員標記為 static|
 |[CA1823](../code-quality/ca1823.md)|避免包含未使用的私用欄位|
-|[CA1900 實](../code-quality/ca1900.md)|實值類型欄位應該為可移植的|
+|[CA1900](../code-quality/ca1900.md)|實值類型欄位應該為可移植的|
 |[CA1901](../code-quality/ca1901.md)|P/Invoke 宣告應該為可移植的|
 |[CA2002](../code-quality/ca2002.md)|不要鎖定具有弱式識別的物件|
 |[CA2100 必須](../code-quality/ca2100.md)|必須檢閱 SQL 查詢中是否有安全性弱點|
@@ -155,7 +155,7 @@ ms.locfileid: "75573180"
 |[CA2226](../code-quality/ca2226.md)|運算子應該有對稱的多載|
 |[CA2227](../code-quality/ca2227.md)|集合屬性應該為唯讀|
 |[CA2229](../code-quality/ca2229.md)|必須實作序列化建構函式|
-|[CA2230 必須](../code-quality/ca2230.md)|必須使用 params 作為變數引數|
+|[CA2230](../code-quality/ca2230.md)|必須使用 params 作為變數引數|
 |[CA2231](../code-quality/ca2231.md)|在覆寫 ValueType.Equals 上多載等號運算子|
 |[CA2232](../code-quality/ca2232.md)|Windows Forms 進入點必須標記 STAThread|
 |[CA2234 必須](../code-quality/ca2234.md)|必須傳遞 System.Uri 物件而非字串|
@@ -165,5 +165,5 @@ ms.locfileid: "75573180"
 |[CA2238](../code-quality/ca2238.md)|必須正確實作序列化方法|
 |[CA2239 必須](../code-quality/ca2239.md)|必須為選擇性欄位提供還原序列化方法|
 |[CA2240 必須](../code-quality/ca2240.md)|必須正確實作 ISerializable|
-|[CA2241 必須](../code-quality/ca2241.md)|必須提供格式化方法的正確引數|
-|[CA2242 必須](../code-quality/ca2242.md)|必須正確測試 NaN|
+|[CA2241](../code-quality/ca2241.md)|必須提供格式化方法的正確引數|
+|[CA2242](../code-quality/ca2242.md)|必須正確測試 NaN|

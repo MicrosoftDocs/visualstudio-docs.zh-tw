@@ -9,19 +9,19 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 52b88e1de91c2b2da629b6b9034ac552b8d88d5d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281314"
 ---
 # <a name="the-selected-connection-uses-an-unsupported-database-provider"></a>選取的連接使用不支援的資料提供者
 
-當您將不使用 .NET Framework Data Provider SQL Server 的專案從**伺服器總管**或**資料庫總管**拖曳至[LINQ to SQL 中的 Visual Studio 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)時，就會出現此訊息。
+當您將不使用 .NET Framework Data Provider SQL Server 的專案從 **伺服器總管** 或 **資料庫總管** 拖曳至 LINQ to SQL [中的 Visual Studio 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)時，會出現此訊息。
 
-**O/R 設計**工具僅支援使用 SQL Server 之 .NET Framework 提供者的資料連線。 只有與 Microsoft SQL Server 或 Microsoft SQL Server 資料庫檔案的連接才是有效的連接。
+**O/R 設計**工具僅支援使用 .NET Framework 提供者進行 SQL Server 的資料連線。 只有與 Microsoft SQL Server 或 Microsoft SQL Server 資料庫檔案的連接才是有效的連接。
 
-若要更正這個錯誤，請只將使用 .NET Framework Data Provider SQL Server 的資料連線中的專案加入至**O/R 設計**工具。
+若要更正這個錯誤，請只將使用 .NET Framework Data Provider SQL Server 的資料連線中的專案加入至 **O/R 設計**工具。
 
 ## <a name="see-also"></a>另請參閱
 

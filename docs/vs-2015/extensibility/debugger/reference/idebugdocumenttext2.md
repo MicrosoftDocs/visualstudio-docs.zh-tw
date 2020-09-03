@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2e81aaccd3af692f4a7e0f708685dbea4a44d5c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200164"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此介面代表文字文件。  
+此介面代表文字檔。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,29 +30,29 @@ ms.locfileid: "68200164"
 IDebugDocumentText2 : IDebugDocument2  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- 以文字形式提供需要的原始程式碼時，偵錯引擎 (DE) 會實作此介面。 由於這是最常見的情況下，如果實作 DE [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)介面，它也應該實作`IDebugDocumentText2`介面。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ 當需要提供的原始程式碼是文字格式時，debug engine (DE) 會執行這個介面。 由於這是最常見的情況，因此，如果 DE 會執行 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 介面，它也應該實作為 `IDebugDocumentText2` 介面。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 使用`QueryInterface`方法，以取得從這個介面`IDebugDocument2`介面。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 您 `QueryInterface` 可以使用方法，從介面取得這個介面 `IDebugDocument2` 。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 上的方法除了`IDebugDocument2`介面，這個介面會實作下列方法：  
+ 除了介面上的方法 `IDebugDocument2` ，這個介面也會執行下列方法：  
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetSize](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|擷取文件中的這個位置的文字的大小。|  
-|[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|從指定之位置的文件中擷取的文字。|  
+|[GetSize](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|抓取檔中這個位置的文字大小。|  
+|[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|從檔中指定的位置抓取文字。|  
   
 ## <a name="remarks"></a>備註  
- 實作此介面的物件，也必須實作<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>介面，其提供<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>介面[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)物件。  
+ 實此介面的物件也必須執行 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> 介面，以提供 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) 物件的介面。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   
