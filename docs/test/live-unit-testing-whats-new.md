@@ -12,10 +12,10 @@ ms.workload:
 - dotnet
 monikerRange: vs-2017
 ms.openlocfilehash: 7f7ab0c257bfed4521e95d9da12eaa0b9e25a71e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114267"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Visual Studio 2017 中 Live Unit Testing 的新功能
@@ -26,7 +26,7 @@ ms.locfileid: "76114267"
 
 從 Visual Studio 2017 15.4 版開始，Live Unit Testing 包含數個區域的改善和增強功能：
 
-- **改善發現能力**. 對於不知道有 Live Unit Testing 功能的使用者，只要使用者開啟內含單元測試但未啟用 Live Unit Testing 的方案，Visual Studio IDE 就會顯示提及 Live Unit Testing 的金色列。 金色列中所呈現的資訊可讓使用者深入了解並啟用 Live Unit Testing。 不符合 Live Unit Testing 必要條件時，金色列也會顯示資訊。 其中包括：
+- **改善發現能力**. 對於不知道有 Live Unit Testing 功能的使用者，只要使用者開啟內含單元測試但未啟用 Live Unit Testing 的方案，Visual Studio IDE 就會顯示提及 Live Unit Testing 的金色列。 金色列中所呈現的資訊可讓使用者深入了解並啟用 Live Unit Testing。 不符合 Live Unit Testing 必要條件時，金色列也會顯示資訊。 其中包含：
 
   - 遺漏測試配接器。
   - 具有舊版測試配接器。
@@ -38,7 +38,7 @@ ms.locfileid: "76114267"
 
 - **可靠性和效能**：Live Unit Testing 現在確保系統可以進一步偵測尚未完成完全載入專案的時間，並避免 Live Unit Testing 損毀。 組建效能改善也可在系統知道專案檔中沒有任何變更的情況下，避免對 MSBuild 專案進行重新評估。
 
-- **其他使用者介面精簡**：按一下滑鼠右鍵手勢中令人混淆的 [Live Test Set – Include/Exclude] (即時測試集 - 包含/排除)**** 選項已重新命名為 [Live Unit Testing Include/Exclude] (Live Unit Testing 包含/排除)****。 已移除 [測試]**** > [Live Unit Testing]**** 功能表上的 [Reset clean] \(全新重設\)**** 選項。 現在可以通過選擇 **"工具** > **選項** > **即時單元測試"** 和"**刪除持久資料**"來訪問它。
+- **其他使用者介面精簡**：按一下滑鼠右鍵手勢中令人混淆的 [Live Test Set – Include/Exclude] (即時測試集 - 包含/排除)**** 選項已重新命名為 [Live Unit Testing Include/Exclude] (Live Unit Testing 包含/排除)****。 已移除 [測試]**** > [Live Unit Testing]**** 功能表上的 [Reset clean] \(全新重設\)**** 選項。 現在您可以選取 [**工具**  >  **選項**]  >  **Live Unit Testing** ，然後選取 [**刪除保存的資料**] 來存取它。
 
 ## <a name="version-153"></a>15.3 版本
 

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7da7414b9cf454e861c8407633de7851dcb86df3
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419220"
 ---
 # <a name="build-page-project-designer-c"></a>專案設計工具、建置頁 (C#)
@@ -34,9 +34,9 @@ ms.locfileid: "85419220"
 下列選項可讓您選取要顯示或修改的組態和平台。
 
 > [!NOTE]
-> 使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 因此不會顯示這些選項。 如需詳細資訊，請參閱[如何：設定偵錯工具和發行設定](../../debugger/how-to-set-debug-and-release-configurations.md)。
+> 使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 因此不會顯示這些選項。 如需詳細資訊，請參閱 [如何：設定 debug 和 Release 設定](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
-**Configuration**
+**設定**
 
 指定要顯示或修改的組態設定。 設定可以是 [使用中 (偵錯)]**** (這是預設值)、[偵錯]****、[發行]**** 或 [所有組態]****。
 
@@ -50,7 +50,7 @@ ms.locfileid: "85419220"
 
 **條件式編譯的符號**
 
-指定執行條件式編譯的符號。 請以分號 (";") 分隔符號。 如需詳細資訊，請參閱[/define （c # 編譯器選項）](/dotnet/csharp/language-reference/compiler-options/define-compiler-option)。
+指定執行條件式編譯的符號。 請以分號 (";") 分隔符號。 如需詳細資訊，請參閱 [/define (c # 編譯器選項) ](/dotnet/csharp/language-reference/compiler-options/define-compiler-option)。
 
 **定義 DEBUG 常數**
 
@@ -68,9 +68,9 @@ ms.locfileid: "85419220"
 
 **可為 Null**
 
-指定整個專案的 c # 可為 null 內容。 這個 UI 選項是在 Visual Studio 16.5 中引進，而且只會針對使用 c # 8.0 或更新版本的專案啟用。
+指定整個專案的 c # 可為 null 內容。 此 UI 選項是在 Visual Studio 16.5 中引進，而且只會針對使用 c # 8.0 或更新版本的專案啟用。
 
-如需詳細資訊，請參閱[可為 null](/dotnet/csharp/nullable-references#nullable-contexts)的內容。
+如需詳細資訊，請參閱 [可為 null](/dotnet/csharp/nullable-references#nullable-contexts)的內容。
 
 **建議使用 32 位元**
 
@@ -92,7 +92,7 @@ ms.locfileid: "85419220"
 
 **最佳化程式碼**
 
-啟用或停用由編譯器執行的最佳化，讓您的輸出檔變得更小、更快且更有效率。 如需詳細資訊，請參閱[/optimize （c # 編譯器選項）](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option)。
+啟用或停用由編譯器執行的最佳化，讓您的輸出檔變得更小、更快且更有效率。 如需詳細資訊，請參閱 [/optimize (c # 編譯器選項) ](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option)。
 
 ## <a name="errors-and-warnings"></a>錯誤和警告
 
@@ -108,16 +108,16 @@ ms.locfileid: "85419220"
 
 ## <a name="treat-warnings-as-errors"></a>警告視為錯誤
 
-您可以使用下列設定，指定要將哪些警告視為錯誤。 請選取下列其中一個選項，以指出在何種情況下當建置出現警告時要傳回錯誤。 如需詳細資訊，請參閱[/warnaserror （c # 編譯器選項）](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)。
+您可以使用下列設定，指定要將哪些警告視為錯誤。 請選取下列其中一個選項，以指出在何種情況下當建置出現警告時要傳回錯誤。 如需詳細資訊，請參閱 [/warnaserror (c # 編譯器選項) ](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)。
 
 **None** -不將警告視為錯誤。
 
-**全部**-將所有警告視為錯誤。
+**All** -將所有警告視為錯誤。
 
-**特定警告**-將指定的警告視為錯誤。 請以逗號或分號分隔多個警告編號。
+**特定警告** -將指定的警告視為錯誤。 請以逗號或分號分隔多個警告編號。
 
 > [!TIP]
-> 如果您不想要將程式碼分析警告視為錯誤，請參閱程式[代碼分析常見問題](../../code-quality/analyzers-faq.md#treat-warnings-as-errors)。
+> 如果您不想要將程式碼分析警告視為錯誤，請參閱程式 [代碼分析常見問題](../../code-quality/analyzers-faq.md#treat-warnings-as-errors)。
 
 ## <a name="output"></a>輸出
 

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99831638219481d7db331f2a4429fffce58ecc96
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76113797"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的協助工具功能
@@ -40,15 +40,15 @@ ms.locfileid: "76113797"
 
 如需詳細資訊，請參閱下列主題：
 
-- [如何：設置 IDE 協助工具選項](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [如何：設定 IDE 協助工具選項](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
-- [如何：獨佔使用鍵盤](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [如何：以獨佔模式使用鍵盤](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 - [預設鍵盤快速鍵](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
 - [協助工具祕訣和訣竅](../../ide/reference/accessibility-tips-and-tricks.md)
 
-- [如何：更改字體和顏色](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [如何：變更字型和色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 > [!IMPORTANT]
 > 此頁面上資訊可能僅適用於美國地區的 Microsoft 產品授權使用者。 如果您在美國以外取得本產品，請瀏覽 [Microsoft 協助工具](https://www.microsoft.com/accessibility/)網站，以取得 Microsoft 支援服務電話號碼及地址的清單。 您可以連絡當地分公司，以了解當地是否有提供此頁面所描述的產品和服務類型。 協助工具資訊也提供其他語言版本。

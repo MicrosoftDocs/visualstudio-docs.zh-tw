@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5865059e60907397ae7d69b230676ac63a5c3386
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543113"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>類別圖表和類別檢視視窗中的鍵盤和滑鼠捷徑 (類別設計工具)
@@ -26,17 +26,17 @@ ms.locfileid: "85543113"
 
 除了滑鼠之外，也可以在 [類別設計工具] 和 [類別細節]**** 視窗中使用鍵盤執行巡覽動作。
 
- **本主題中的**
+ **本主題內容**
 
 - [在類別設計工具中使用滑鼠](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)
 
-- [在類別細節視窗中使用滑鼠](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)
+- [使用類別細節視窗中的滑鼠](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)
 
 - [在類別設計工具中使用鍵盤](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)
 
 - [在類別細節視窗中使用鍵盤](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)
 
-## <a name="using-the-mouse-in-class-designer"></a><a name="MouseClassDesigner"></a>在類別設計工具中使用滑鼠
+## <a name="using-the-mouse-in-class-designer"></a><a name="MouseClassDesigner"></a> 在類別設計工具中使用滑鼠
  類別圖表中可支援下列滑鼠動作：
 
 |滑鼠組合|Context|描述|
@@ -62,7 +62,7 @@ ms.locfileid: "85543113"
 
 - [類別細節] 視窗可提供數個按鈕，供您在目前的類別中建立新的成員，以及在 [類別細節] 視窗方格中的成員區間之間瀏覽。 如需詳細資訊，請參閱類別細節視窗按鈕。
 
-## <a name="using-the-keyboard-in-class-designer"></a><a name="KeyboardClassDesigner"></a>在類別設計工具中使用鍵盤
+## <a name="using-the-keyboard-in-class-designer"></a><a name="KeyboardClassDesigner"></a> 在類別設計工具中使用鍵盤
  類別圖表中可支援下列鍵盤動作：
 
 |Key|Context|描述|
@@ -98,10 +98,10 @@ ms.locfileid: "85543113"
 
 |Key|結果|
 |-|-|
-|, (逗號)|如果游標位於參數資料列中，輸入逗號會將游標移至下一個參數的 [名稱] 欄位。 如果游標位於方法的最後一個參數資料列中，它會將資料指標移至 \<add parameter> 欄位，您可以用它來建立新的參數。<br /><br /> 如果游標位於 [類別細節] 視窗的別處，輸入逗號就會在目前欄位中加入一個逗號。|
+|, (逗號)|如果游標位於參數資料列中，輸入逗號會將游標移至下一個參數的 [名稱] 欄位。 如果資料指標位於方法的最後一個參數資料列中，它會將游標移至 \<add parameter> 欄位，您可以使用此欄位來建立新的參數。<br /><br /> 如果游標位於 [類別細節] 視窗的別處，輸入逗號就會在目前欄位中加入一個逗號。|
 |; (分號)<br /><br /> 或<br /><br /> ) (右括弧)|在 [類別細節] 視窗方格中，將游標移至下一個成員資料列的 [名稱] 欄位。|
-|索引標籤|將游標移到下一個欄位，先從左到右移動，然後由上而下。 如果要從某個您已輸入文字的欄位移動游標，[類別細節] 視窗會先處理該文字，若沒有產生錯誤，則會儲存該文字。<br /><br /> 如果游標位於空白欄位（例如 \<add parameter> ）上，Tab 鍵會將它移到下一個資料列的第一個欄位。|
-|\<space>|將游標移到下一個欄位，先從左到右移動，然後由上而下。 如果游標位於空白欄位（例如 \<add parameter> ）上，它會移至下一個資料列的第一個欄位。 請注意，在 \<space> 逗號之後立即輸入會被忽略。<br /><br /> 如果游標位於 [摘要] 欄位中，輸入空格會加入空白字元。<br /><br /> 如果游標位於指定之資料列的隱藏資料行中，輸入空格會切換 [隱藏] 核取方塊的值。|
+|索引標籤|將游標移到下一個欄位，先從左到右移動，然後由上而下。 如果要從某個您已輸入文字的欄位移動游標，[類別細節] 視窗會先處理該文字，若沒有產生錯誤，則會儲存該文字。<br /><br /> 如果游標位於空白的欄位（例如 \<add parameter> ），Tab 會將它移至下一個資料列的第一個欄位。|
+|\<space>|將游標移到下一個欄位，先從左到右移動，然後由上而下。 如果游標位於空白的欄位（例如 \<add parameter> ），則會移至下一個資料列的第一個欄位。 請注意， \<space> 會忽略在逗號之後立即輸入的型別。<br /><br /> 如果游標位於 [摘要] 欄位中，輸入空格會加入空白字元。<br /><br /> 如果游標位於指定之資料列的隱藏資料行中，輸入空格會切換 [隱藏] 核取方塊的值。|
 |Ctrl+Tab|切換至另一個文件視窗。 例如，從 [類別細節] 視窗切換到開啟的程式碼檔案。|
 |ESC (離開)|如果您已經開始在欄位中輸入文字，按下 ESC 鍵可做為復原索引鍵，將欄位內容還原成先前的值。 如果 [類別細節] 視窗具有一般焦點，但沒有任何特定的儲存格具有焦點，則按下 ESC 鍵會將焦點從 [類別細節] 視窗移開。|
 |向上鍵或向下鍵|這兩個鍵可在 [類別細節] 視窗方格中，以垂直方向逐列移動游標。|
@@ -109,4 +109,4 @@ ms.locfileid: "85543113"
 |向右箭號|如果游標位於 [名稱] 資料行中，按向右鍵可展開階層中目前的節點 (如果已摺疊)。|
 
 ## <a name="see-also"></a>另請參閱
- [建立和設定類型成員（類別設計工具）](../ide/creating-and-configuring-type-members-class-designer.md)
+ [建立和設定類型成員 (類別設計工具) ](../ide/creating-and-configuring-type-members-class-designer.md)

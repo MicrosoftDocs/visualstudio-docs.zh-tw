@@ -14,40 +14,41 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2a8c02cce2f55374b4d62ba5663e8b3fe85b55b5
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016447"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>如何：建立 SharePoint web 元件
-  您可以建立和自訂 web 元件，方法是將**Web 元件**專案加入至任何 SharePoint 專案，然後編輯 web 元件的程式碼檔案，或使用設計工具。 如需詳細資訊，請參閱[如何：使用設計工具建立 SharePoint web 元件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。
+  您可以建立和自訂網頁元件，方法是將 **網頁元件** 專案加入至任何 SharePoint 專案，然後編輯 web 元件的程式碼檔案，或使用設計工具。 如需詳細資訊，請參閱 [如何：使用設計工具建立 SharePoint web 元件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。
 
 ### <a name="to-create-a-sharepoint-web-part"></a>若要建立 SharePoint web 元件
 
 1. 建立或開啟 SharePoint 專案。
 
-     如需詳細資訊，請參閱[SharePoint 專案和專案專案範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。
+     如需詳細資訊，請參閱 [SharePoint 專案和專案專案範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。
 
-2. 選擇**方案總管**中的 SharePoint 專案節點，然後選擇 [**專案**] [  >  **加入新專案**]。
+2. 在**方案總管**中選擇 SharePoint 專案節點，然後選擇 [**專案**  >  **加入新專案**]。
 
-3. 在 [**加入新專案**] 對話方塊中，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
+3. 在 [ **加入新專案** ] 對話方塊中，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
 4. 在 SharePoint 範本清單中，選擇 [ **Web 元件**]。
 
-5. 在 [**名稱**] 方塊中，指定 web 元件的名稱，然後選擇 [**新增**] 按鈕。
+5. 在 [ **名稱** ] 方塊中，指定網頁元件的名稱，然後選擇 [ **加入** ] 按鈕。
 
-     Web 元件會出現在**方案總管**中。 如需網頁元件所包含之檔案的詳細資訊，請參閱[建立 SharePoint 的 web 元件](../sharepoint/creating-web-parts-for-sharepoint.md)。
+     Web 元件會出現在 **方案總管**中。 如需網頁元件所包含檔案的詳細資訊，請參閱 [建立 SharePoint 的網頁元件](../sharepoint/creating-web-parts-for-sharepoint.md)。
 
-6. 在**方案總管**中，開啟您剛才建立之 web 元件的程式碼檔案。
+6. 在 **方案總管**中，開啟您剛才建立之 web 元件的程式碼檔案。
 
-     例如，如果 web 元件的名稱是*WebPart1*，請開啟*WebPart1* （在 Visual Basic 中）或*WebPart1.cs* （在 c # 中）。
+     例如，如果您的網頁元件名稱是 *WebPart1*，請在 Visual Basic) 中開啟 [ *WebPart1* ] (，或在 c # ) 中開啟 *WebPart1.cs* (。
 
 7. 在程式碼檔案中，將控制項加入至 <xref:System.Web.UI.Control.CreateChildControls%2A> 方法。
 
-     如需範例，請參閱[逐步解說：建立 SharePoint 的 web 元件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)。
+     如需範例，請參閱 [逐步解說：建立 SharePoint 的網頁元件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)。
 
 ## <a name="see-also"></a>另請參閱
-- [建立 SharePoint 的 web 元件](../sharepoint/creating-web-parts-for-sharepoint.md)
+- [建立 SharePoint 的網頁元件](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [如何：使用設計工具建立 SharePoint web 元件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)
-- [逐步解說：建立 SharePoint 的 web 元件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
-- [逐步解說：使用設計工具建立 SharePoint 的 web 元件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
+- [逐步解說：建立 SharePoint 的網頁元件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
+- [逐步解說：使用設計工具建立 SharePoint 的網頁元件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: 分析工具命令列-獨立應用程式的計時資料詳細資料
+title: 程式碼剖析工具命令列-獨立應用程式的計時資料詳細資料
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f088a0da0e8525189e4e2addf1464b30e1e98d06
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331826"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>使用分析工具命令列收集獨立應用程式的詳細計時資料
@@ -24,7 +24,7 @@ ms.locfileid: "85331826"
 
 ## <a name="common-tasks"></a>常見工作
 
-|Task|相關內容|
+|工作|相關內容|
 |----------|---------------------|
 |**使用檢測分析 .NET Framework 應用程式**|-   [如何：檢測 .NET 元件並收集詳細計時資料](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|
 |**使用檢測分析 C/C++ 應用程式**|-   [如何：檢測原生元件並收集詳細計時資料](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|
@@ -34,7 +34,7 @@ ms.locfileid: "85331826"
 
 ### <a name="profile-stand-alone-applications"></a>分析獨立應用程式
 
-|Task|相關內容|
+|工作|相關內容|
 |----------|---------------------|
 |**使用取樣分析應用程式**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
 |**分析 .NET 記憶體配置和記憶體回收**|-   [收集 .NET Framework 記憶體資料](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
@@ -42,7 +42,7 @@ ms.locfileid: "85331826"
 
 ### <a name="profile-by-using-the-instrumentation-method"></a>使用檢測方法進行分析
 
-|Task|相關內容|
+|工作|相關內容|
 |----------|---------------------|
 |**分析 ASP.NET 應用程式**|-   [使用檢測設備收集詳細計時資料](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
 |**分析服務**|-   [使用檢測設備收集詳細計時資料](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
@@ -50,5 +50,5 @@ ms.locfileid: "85331826"
 ### <a name="analyze-instrumentation-data-views-and-reports"></a>分析檢測資料檢視和報表
 - [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)
 
-## <a name="reference"></a>參考
+## <a name="reference"></a>參考資料
 - [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)

@@ -11,10 +11,10 @@ caps.latest.revision: 15
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e0c6075f9f95f7dc1d21db91936cf35c76f9b2e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672234"
 ---
 # <a name="sample-coded-ui-test-extension-for-excel"></a>Excel 的範例自動程式碼 UI 測試擴充功能
@@ -22,7 +22,7 @@ ms.locfileid: "72672234"
 
 範例的擴充元件執行於 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 自動程式化 UI 測試處理序，具有一些階層性，並以 `ExtensionPackage` 類別為基底。 `TechnologyManager`、`ActionFilter` 和 `PropertyProvider` 類別位於下一個層級，控制項項目位於最上層。
 
- ![Excel 測試延伸模組架構](../test/media/excel-extarch.png "Excel_ExtArch")Excel 延伸模組架構
+ ![Excel 測試延伸模組架構](../test/media/excel-extarch.png "Excel_ExtArch") Excel 擴充功能架構
 
 ## <a name="extension-points"></a>擴充點
  這些類別代表範例中啟用 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 自動程式化 UI 測試所實作的擴充點。
@@ -34,7 +34,7 @@ ms.locfileid: "72672234"
  繼承自 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager> 類別，這個類別提供技術管理員進行測試錄製和播放。 如需詳細資訊，請參閱 [TechnologyManager 類別](../test/sample-excel-extension-technologymanager-class.md)。
 
 ### <a name="actionfilter"></a>ActionFilter
- 繼承自[microsoft.visualstudio.testtools.uitest.common.uitestactionfilter>](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))類別，這個類別提供基類，將類似的測試動作結果匯總成單一測試結果。 如需詳細資訊，請參閱 [ActionFilter 類別](../test/sample-excel-extension-actionfilter-class.md)。
+ 繼承自 [microsoft.visualstudio.testtools.uitest.common.uitestactionfilter>](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)) 類別，這個類別提供基類，可將類似的測試動作結果匯總成單一測試結果。 如需詳細資訊，請參閱 [ActionFilter 類別](../test/sample-excel-extension-actionfilter-class.md)。
 
 ### <a name="technology-elements"></a>技術項目
  繼承自 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> 類別的基底類別，為 UI 測試中可錄製和播放的技術項目提供基礎。 如需詳細資訊，請參閱 [Element 類別](../test/sample-excel-extension-element-classes.md)。
@@ -42,7 +42,7 @@ ms.locfileid: "72672234"
 ### <a name="propertyprovider"></a>PropertyProvider
  繼承自 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> 類別，這個類別提供基底類別，以支援測試錄製和播放的 UI 項目屬性。 如需詳細資訊，請參閱 [PropertyProvider 類別](../test/sample-excel-extension-propertyprovider-class.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
@@ -50,5 +50,5 @@ ms.locfileid: "72672234"
 - [ExtensionPackage 類別](../test/sample-excel-extension-extensionpackage-class.md)
 - [TechnologyManager 類別](../test/sample-excel-extension-technologymanager-class.md)
 - [ActionFilter 類別](../test/sample-excel-extension-actionfilter-class.md)
-- [Element Class類別](../test/sample-excel-extension-element-classes.md)
+- [Element 類別](../test/sample-excel-extension-element-classes.md)
 - [PropertyProvider 類別](../test/sample-excel-extension-propertyprovider-class.md)
