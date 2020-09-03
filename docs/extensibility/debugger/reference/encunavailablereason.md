@@ -1,5 +1,5 @@
 ---
-title: Enc不可用原因 |微軟文件
+title: EncUnavailableReason |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 28863549ab3eac96322530bc85c52697f20448c8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737165"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
-`This is for internal use only!`表示 **「編輯」和「繼續」** 不可用的原因。
+`This is for internal use only!` 表示無法使用 [ **編輯後繼續** ] 的原因。
 
 ## <a name="syntax"></a>語法
 
@@ -54,35 +54,35 @@ public enum EncUnavailableReason {
 
 ## <a name="fields"></a>欄位
 `ENCUN_NONE`\
-沒有"編輯並繼續"不可用的具體原因。
+無法使用 [編輯後繼續] 的特定原因。
 
 `ENCUN_INTEROP`\
-在互通話務期間,編輯和繼續不可用。
+在 InterOp 呼叫期間無法使用 [編輯後繼續]。
 
 `ENCUN_SQLCLR`\
-在使用通用語言運行時 (CLR) 的 SQL 過程調用期間,編輯和繼續不可用。
+使用 Common Language Runtime (CLR) 的 SQL 程序呼叫期間，無法使用 [編輯後繼續]。
 
 `ENCUN_MINIDUMP`\
-處理小型轉儲時,編輯和繼續不可用。
+處理迷你傾印時，無法使用 [編輯後繼續]。
 
 `ENCUN_EMBEDDED`\
-處理嵌入的代碼時,編輯和繼續不可用。
+處理內嵌程式碼時，無法使用 [編輯後繼續]。
 
 `ENCUN_ATTACH`\
-編輯和繼續不可用,因為會話已附加到調試器,而不是由調試器啟動。
+無法使用 [編輯後繼續]，因為會話已附加至偵錯工具，而不是由偵錯工具所啟動。
 
 `ENCUN_WIN64`\
-在處理 64 位 Windows 代碼時,編輯和繼續不可用。
+處理64位 Windows 程式碼時，無法使用 [編輯後繼續]。
 
 ## <a name="remarks"></a>備註
-此枚舉僅供[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]內部使用。 自訂埠供應商實現的[GetENC 可用狀態](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)與[關閉 ENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)方法`E_NOTIMPL`應傳回 。
+這個列舉僅供內部使用 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。 自訂埠供應商所執行的 [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) 和 [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) 方法應該一律會傳回 `E_NOTIMPL` 。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.idl
+標頭： msdbg .idl
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

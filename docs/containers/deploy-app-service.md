@@ -9,19 +9,19 @@ ms.topic: how-to
 ms.date: 01/27/2020
 ms.author: ghogen
 ms.openlocfilehash: 43bd06fba795c09bfa341ce7b61a3ced0fe15214
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86454159"
 ---
-# <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 將 ASP.NET Core 容器部署至 Azure App Service
+# <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 將 ASP.NET Core 容器部署到 Azure App Service
 
-本教學課程將逐步引導您使用 Visual Studio，將容器化的 ASP.NET Core web 應用程式發佈至[Azure App Service](/azure/app-service)。 針對 Azure 中裝載的單一容器 web 應用程式，Azure App Service 是適當的服務。
+本教學課程會逐步引導您使用 Visual Studio，將容器化 ASP.NET Core web 應用程式發佈至 [Azure App Service](/azure/app-service)。 Azure App Service 是裝載于 Azure 中單一容器 web 應用程式的適當服務。
 
 如果您沒有 Azure 訂用帳戶，請在開始前建立[免費帳戶](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 若要完成本教學課程：
 
@@ -31,7 +31,7 @@ ms.locfileid: "86454159"
 ::: moniker range=">=vs-2019"
 - [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)，其中包含 *ASP.NET 和 Web 部署*工作負載。
 ::: moniker-end
-- 安裝[Docker Desktop](https://docs.docker.com/docker-for-windows/install/)
+- 安裝 [Docker Desktop](https://docs.docker.com/docker-for-windows/install/)
 
 ## <a name="create-an-aspnet-core-web-app"></a>建立 ASP.NET Core Web 應用程式
 
@@ -44,7 +44,7 @@ ms.locfileid: "86454159"
 4. 指定新應用程式的名稱 (或使用預設值)，然後選取 [確定] ****。
 5. 選取 [ **Web 應用程式**]。
 6. 請勾選 [啟用 Docker 支援]**** 核取方塊。
-7. 選取 [ **Linux** ] 容器類型，然後按一下 **[確定]**。 Windows 容器不支援以容器的形式部署至 Azure App Service。
+7. 選取 **Linux** 容器類型，然後按一下 **[確定]**。 不支援將 Windows 容器部署至 Azure App Service 作為容器。
 ::: moniker-end
 ::: moniker range=">= vs-2019"
 1. 從 Visual Studio 的開始視窗中，選擇 [建立新專案]****。
@@ -53,7 +53,7 @@ ms.locfileid: "86454159"
 1. 選擇 [Web 應用程式]****。
 1. 使用 [設定 HTTPS]**** 核取方塊，選擇您是否需要 SSL 支援。
 1. 請勾選 [啟用 Docker 支援]**** 核取方塊。
-1. 選取 [容器類型]，然後按一下 [**建立**]。
+1. 選取容器類型，然後按一下 [ **建立**]。
 ::: moniker-end
 
 ## <a name="deploy-the-container-to-azure"></a>將容器部署至 Azure
@@ -61,18 +61,18 @@ ms.locfileid: "86454159"
 ::: moniker range="vs-2017"
 
 1. 在**方案總管**中以滑鼠右鍵按一下專案，並選擇 [發佈]****。
-1. 在 [發行目標] 對話方塊中，選擇 [ **App Service Linux** ] 或 [ **App Service**]。 這是將裝載 web 伺服器的作業系統。
-1. 您只能發行至 App Service，或者可以同時發行至 App Service 和 Azure Container Registry （ACR）。 若要在 Azure Container Registry （ACR）中發佈容器，請選擇 [**建立容器的新 App Service**]，然後按一下 [**發佈**]。
+1. 在 [發佈目標] 對話方塊中，選擇 **App Service Linux** ] 或 [ **App Service**]。 這是將裝載 web 伺服器的作業系統。
+1. 您只能發行至 App Service，也可以同時發佈至 App Service 和 Azure Container Registry (ACR) 。 若要在 Azure Container Registry (ACR) 中發佈容器，請選擇 [ **建立容器的新 App Service**]，然後按一下 [ **發佈**]。
 
-   ![[發行] 對話方塊的螢幕擷取畫面](media/deploy-app-service/publish-app-service-linux.PNG)
+   ![[發佈] 對話方塊的螢幕擷取畫面](media/deploy-app-service/publish-app-service-linux.PNG)
 
-   若只要發佈至 Azure App Service，而不使用 Azure Container Registry，**請選擇 [新建]**，然後按一下 [**發佈**]。
+   若只要發行至 Azure App Service 而不使用 Azure Container Registry，請選擇 [ **建立新**的]，然後按一下 [ **發佈**]。
 
-1. 請確認您已使用與您的 Azure 訂用帳戶相關聯的帳戶登入，然後選擇唯一的名稱、訂用帳戶、資源群組、主控方案和容器登錄（如果適用），或接受預設值。
+1. 確認您已使用與 Azure 訂用帳戶相關聯的帳戶登入，然後選擇唯一的名稱、訂用帳戶、資源群組、主控方案和容器登錄 (如果適用) ，或接受預設值。
 
    ![發佈設定的螢幕擷取畫面](media/deploy-app-service/publish-app-service-linux2.png)
 
-1. 選擇 **[建立]** 。 您的容器會部署至您選取的資源群組和容器登錄中的 Azure。 此程式需要一些時間。 完成時，[**發佈**] 索引標籤會顯示已發行內容的相關資訊，包括網站 URL。
+1. 選擇 **[建立]** 。 您的容器會部署到您選取的資源群組和容器登錄中的 Azure。 此程式需要一些時間。 完成時，[ **發佈** ] 索引標籤會顯示已發佈內容的相關資訊，包括網站 URL。
 
    ![[發佈] 索引標籤的螢幕擷取畫面](media/deploy-app-service/publish-succeeded.PNG)
 
@@ -80,37 +80,37 @@ ms.locfileid: "86454159"
 
    ![Web 應用程式的螢幕擷取畫面](media/deploy-app-service/web-application-running.png)
 
-1. 發行設定檔會與您選取的所有詳細資料一起儲存，例如資源群組和容器登錄。
+1. 發行設定檔會與您選取的所有詳細資料（例如資源群組和容器登錄）一起儲存。
 
-1. 若要使用相同的發行設定檔再次部署，請使用 [**發佈**] 按鈕、[ **Web 發行活動**] 視窗上的 [**發行**] 按鈕，或以滑鼠右鍵按一下**方案總管**中的專案，然後選擇內容功能表上的 [**發行**] 專案。
+1. 若要使用相同的發行設定檔再次部署，請使用 [**發行**] 按鈕、[ **Web 發行活動**] 視窗上的 [**發行**] 按鈕，或以滑鼠右鍵按一下**方案總管**中的專案，然後選擇內容功能表上的 [**發行**] 專案。
 :::moniker-end
 :::moniker range=">=vs-2019"
 1. 在**方案總管**中以滑鼠右鍵按一下專案，並選擇 [發佈]****。
-1. 在 [**發佈**] 對話方塊中，選擇 [ **Azure** ] 目標。
+1. 在 [ **發行** ] 對話方塊中，選擇 [ **Azure** ] 目標。
 
-   ![發行嚮導的螢幕擷取畫面](media/deploy-app-service/publish-choices.png)
+   ![[發佈嚮導] 的螢幕擷取畫面](media/deploy-app-service/publish-choices.png)
 
-1. 在 [**特定目標**] 索引標籤上，選擇適當的部署目標，例如**App Service （Windows）** 或**App Service （Linux）**，視您的容器類型而定。
+1. 在 [ **特定目標** ] 索引標籤上，根據您的容器類型選擇適當的部署目標，例如 **App Service (Windows) ** 或 **App Service (Linux) **。
 
-   ![發行嚮導特定目標索引標籤的螢幕擷取畫面](media/deploy-app-service/publish-app-service-windows.png)
+   ![[發佈嚮導] 中特定目標索引標籤的螢幕擷取畫面](media/deploy-app-service/publish-app-service-windows.png)
 
-1. 如果您未使用想要使用的訂用帳戶登入正確的 Azure 帳戶，請使用 [**發佈**] 視窗左上方的按鈕進行登入。
+1. 如果您未使用您想要使用的訂用帳戶登入正確的 Azure 帳戶，請使用 [ **發佈** ] 視窗左上角的按鈕登入。
 
-1. 您可以使用現有的 app service，或按一下 [**建立新的 Azure App Service** ] 連結來建立新的應用程式服務。 藉由展開資源群組來尋找 treeview 中現有的 app service，或將**View**設定變更為 [**資源類型**] 以依類型排序。
+1. 您可以使用現有的 app service，或按一下 [ **建立新的 Azure App Service** ] 連結來建立新的應用程式服務。 展開樹狀檢視中的資源群組，以在 treeview 中尋找現有的 app service，或將 **View** 設定變更為 **資源類型** ，以依類型排序。
 
    ![顯示選擇 App Service 的螢幕擷取畫面](media/deploy-app-service/publish-app-service-windows2.png)
 
-1. 如果您建立一個新的資源群組和 app service，將會在 Azure 中產生。 您可以視需要變更名稱，前提是它們是唯一的。
+1. 如果您建立新的資源群組，將會在 Azure 中產生資源群組和應用程式服務。 您可以視需要變更名稱，前提是它們是唯一的。
 
    ![顯示建立 App Service 的螢幕擷取畫面](media/deploy-app-service/publish-app-service-windows3.png)
 
-1. 您可以接受預設的主控方案或立即變更主控方案，或稍後在 Azure 入口網站中。 在 `S1` 其中一個支援的區域中，預設值為（小型）。 若要建立主控方案，請選擇 [**主控方案**] 下拉式清單旁邊的 [**新增**]。 [**主控方案**] 視窗隨即出現。
+1. 您可以接受預設的主控方案或立即變更主控方案，或稍後在 Azure 入口網站中變更。 預設值是 `S1` 在其中一個支援的區域 (small) 。 若要建立主控方案，請選擇 [**主控方案**] 下拉式清單旁的 [**新增**]。 [ **主控方案** ] 視窗隨即出現。
 
    ![顯示主控方案選項的螢幕擷取畫面](media/deploy-app-service/hosting-plan.png)
 
-   您可以在[Azure App Service 計畫] 總覽](/azure/app-service/overview-hosting-plans)中查看這些選項的詳細資料。
+   您可以在 [Azure App Service 計畫總覽](/azure/app-service/overview-hosting-plans)中查看這些選項的詳細資料。
 
-1. 當您完成選取或建立這些資源之後，請選擇 **[完成]**。 您的容器會部署至您所選取之資源群組和應用程式服務中的 Azure。 此程式需要一些時間。 完成時，[**發佈**] 索引標籤會顯示已發行內容的相關資訊，包括網站 URL。
+1. 當您完成選取或建立這些資源之後，請選擇 **[完成]**。 您的容器會部署至您所選取之資源群組和 app service 中的 Azure。 此程式需要一些時間。 完成時，[ **發佈** ] 索引標籤會顯示已發佈內容的相關資訊，包括網站 URL。
 
    ![[發佈] 索引標籤的螢幕擷取畫面](media/deploy-app-service/publish-succeeded-windows.png)
 
@@ -118,31 +118,31 @@ ms.locfileid: "86454159"
 
    ![Web 應用程式的螢幕擷取畫面](media/deploy-app-service/web-application-running2.png)
 
-1. 發行設定檔會儲存您所選取的所有詳細資料，例如資源群組和 app service。
+1. 發行設定檔會隨您選取的所有詳細資料（例如資源群組和 app service）儲存。
 
-1. 若要使用相同的發行設定檔再次部署，請使用 [**發佈**] 按鈕、[ **Web 發行活動**] 視窗上的 [**發行**] 按鈕，或以滑鼠右鍵按一下**方案總管**中的專案，然後選擇內容功能表上的 [**發行**] 專案。
+1. 若要使用相同的發行設定檔再次部署，請使用 [**發行**] 按鈕、[ **Web 發行活動**] 視窗上的 [**發行**] 按鈕，或以滑鼠右鍵按一下**方案總管**中的專案，然後選擇內容功能表上的 [**發行**] 專案。
 :::moniker-end
 
 ## <a name="view-container-settings"></a>查看容器設定
 
-在[Azure 入口網站](https://portal.azure.com)中，您可以開啟已部署的 App Service。
+在 [Azure 入口網站](https://portal.azure.com)中，您可以開啟已部署的 App Service。
 
-您可以藉由開啟 [**容器設定**] 功能表（當您使用 Visual Studio 2019 16.4 版或更新版本），來查看已部署 App Service 的設定。
+當您使用 Visual Studio 2019 16.4 版或更新版本) 時，可以開啟 [ **容器設定** ] 功能表 (，以查看已部署 App Service 的設定。
 
 ![Azure 入口網站中 [容器設定] 功能表的螢幕擷取畫面](media/deploy-app-service/container-settings-menu.png)
 
-您可以從該處查看容器資訊、查看或下載記錄，或設定連續部署。 請參閱[Azure App Service 持續部署 CI/CD](/azure/app-service/containers/app-service-linux-ci-cd)。
+從該處，您可以查看容器資訊、查看或下載記錄，或設定持續部署。 請參閱 [Azure App Service 持續部署 CI/CD](/azure/app-service/containers/app-service-linux-ci-cd)。
 
 ## <a name="clean-up-resources"></a>清除資源
 
-若要移除與本教學課程相關聯的所有 Azure 資源，請使用[Azure 入口網站](https://portal.azure.com)刪除資源群組。 若要尋找與已發佈 web 應用程式相關聯的資源群組，請選擇 [**查看**  >  **其他 Windows**  >  **web 發行活動**]，然後選擇齒輪圖示。 [**發佈**] 索引標籤隨即開啟，其中包含資源群組。
+若要移除與本教學課程相關聯的所有 Azure 資源，請使用 [Azure 入口網站](https://portal.azure.com)刪除資源群組。 若要尋找與已發佈之 web 應用程式相關聯的資源群組，請選擇 [ **View**  >  **Other Windows**  >  **web Publish 活動**]，然後選擇齒輪圖示。 [ **發行** ] 索引標籤隨即開啟，其中包含資源群組。
 
-在 [Azure 入口網站中，選擇 [**資源群組**]，選取資源群組以開啟其詳細資料頁面。 確認這是正確的資源群組，然後選擇 [**移除資源群組**]，輸入名稱，然後選擇 [**刪除**]。
+在 [Azure 入口網站中，選擇 [ **資源群組**]，選取資源群組以開啟其詳細資料頁面。 確認這是正確的資源群組，然後選擇 [ **移除資源群組**]，輸入名稱，然後選擇 [ **刪除**]。
 
 ## <a name="next-steps"></a>後續步驟
 
-深入瞭解[Azure App Service](/azure/app-service/overview)。
+深入瞭解 [Azure App Service](/azure/app-service/overview)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [部署至 Azure Container Registry](hosting-web-apps-in-docker.md)

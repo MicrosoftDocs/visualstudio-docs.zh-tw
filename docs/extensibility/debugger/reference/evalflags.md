@@ -1,5 +1,5 @@
 ---
-title: 埃瓦爾格茲 |微軟文件
+title: EVALFLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4136726e5c8b798121dbd38975d8f2bb935ed04a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737117"
 ---
 # <a name="evalflags"></a>EVALFLAGS
-指定控制表達式計算的標誌。
+指定控制運算式評估的旗標。
 
 ## <a name="syntax"></a>語法
 
@@ -54,37 +54,37 @@ public enum enum_EVALFLAGS {
 
 ## <a name="fields"></a>欄位
 `EVAL_RETURNVALUE`\
-指定計算返回值(如果有)。
+指定要評估的傳回值（如果有的話）。
 
 `EVAL_NOSIDEEFFECTS`\
 指定不允許副作用。
 
 `EVAL_ALLOWBPS`\
-指定在斷點停止。
+指定在中斷點上停止。
 
 `EVAL_ALLOWERRORREPORT`\
-指定允許向主機報告錯誤。 主要用於在 Internet 資源管理器中文本中的運算式計算。
+指定要允許的主機錯誤報表。 主要用於 Internet Explorer 中腳本的運算式評估。
 
 `EVAL_FUNCTION_AS_ADDRESS`\
-強制函數作為位址計算,而不是調用函數。
+強制將函數評估為位址，而不是叫用函數。
 
 `EVAL_NOFUNCEVAL`\
-防止計算函數。 例如,`int`考慮表達`myExpression(int) + 10`式 中的標記。 此功能可以正確計算為位址,但不能作為值。
+防止評估函數。 例如，請考慮 `int` 運算式中的 token `myExpression(int) + 10` 。 此函數可以正確地評估為位址，但不能作為值。
 
 `EVAL_NOEVENTS`\
-標記以指示不應將表達式計算期間發生的事件發送到工作階段調試管理器 (SDM) 或 IDE。
+旗標，表示在運算式評估期間發生的事件，不應該傳送至會話 debug manager (SDM) 或 IDE。
 
 ## <a name="remarks"></a>備註
-這些標誌作為參數傳遞給[評估Async](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)和[評估同步](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)方法。
+這些旗標會以引數的形式傳遞至 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 和 [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 方法。
 
-這些標誌可以與位或組合。
+這些旗標可以結合位 OR。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

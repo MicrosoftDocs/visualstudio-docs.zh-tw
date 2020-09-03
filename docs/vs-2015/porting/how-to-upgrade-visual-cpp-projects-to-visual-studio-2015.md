@@ -13,10 +13,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 23461fb1927cfcbf738d2dbcb82e3977b3be265a
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77278723"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>如何：將 Visual C++ 專案升級為 Visual Studio 2015
@@ -41,7 +41,7 @@ ms.locfileid: "77278723"
   - 若要更新專案，您可允許 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 進行本主題稍後說明的變更。 如果您的方案有一個以上的 Visual C++ 專案，則必須全部更新。
 
     > [!NOTE]
-    > 如果您在第一次提示時拒絕更新，稍後可以選取 [專案]  功能表上的 [更新 VC++ 專案]  更新專案。 如果命令未出現，則不需要更新。
+    > 如果您在第一次提示時拒絕更新，稍後可以選取 [專案] **** 功能表上的 [更新 VC++ 專案] **** 更新專案。 如果命令未出現，則不需要更新。
 
 ## <a name="upgrading-a-visual-c-project"></a>升級 Visual C++ 專案
  如果您允許 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 自動更新專案，則會進行下列變更：

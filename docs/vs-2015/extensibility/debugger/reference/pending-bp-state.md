@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE | Microsoft Docs
+title: PENDING_BP_STATE |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 15ac788bf81ce83c2658b8a88a68ac5281020373
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205076"
 ---
-# <a name="pendingbpstate"></a>PENDING_BP_STATE
+# <a name="pending_bp_state"></a>PENDING_BP_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定的暫止中斷點 （具有尚未已繫結中斷點） 的狀態。  
+指定暫止中斷點的狀態 (尚未系結) 的中斷點。  
   
 ## <a name="syntax"></a>語法  
   
@@ -47,27 +47,27 @@ public enum enum_PENDING_BP_STATE { 
   
 ## <a name="members"></a>成員  
  PBPS_NONE  
- 零的預留位置。 永遠不會傳回此值。  
+ 零的預留位置。 永遠不會傳回這個值。  
   
  PBPS_DELETED  
- 表示已刪除暫止中斷點。  
+ 指出已刪除暫止中斷點。  
   
  PBPS_DISABLED  
- 表示暫止中斷點已停用。  
+ 指出暫止的中斷點已停用。  
   
  PBPS_ENABLED  
- 指出已啟用 暫止中斷點。  
+ 表示已啟用暫止中斷點。  
   
 ## <a name="remarks"></a>備註  
- 用作`state`隸屬[PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)結構。  
+ 使用做為 `state` [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) 結構的成員。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

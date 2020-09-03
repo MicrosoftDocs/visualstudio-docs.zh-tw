@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS90 |微軟文件
+title: EVALFLAGS90 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 01951885541ba4acce33f3e4f06f7106116ccc62
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737097"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
-枚舉控制運算式計算的標誌的有效值。 此枚舉擴展了[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)枚舉。
+列舉控制運算式評估之旗標的有效值。 此列舉會擴充 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 列舉。
 
 ## <a name="syntax"></a>語法
 
@@ -66,41 +66,41 @@ public enum enum_EVALFLAGS90
 
 ## <a name="fields"></a>欄位
 `EVAL90_RETURNVALUE`\
-指定計算返回值(如果有)。
+指定要評估的傳回值（如果有的話）。
 
 `EVAL90_NOSIDEEFFECTS`\
 指定不允許副作用。
 
 `EVAL90_ALLOWBPS`\
-指定在斷點停止。
+指定在中斷點上停止。
 
 `EVAL90_ALLOWERRORREPORT`\
-指定允許向主機報告的錯誤。 主要用於在 Internet 資源管理器中文本中的運算式計算。
+指定要允許的主機錯誤報表。 主要用於 Internet Explorer 中腳本的運算式評估。
 
 `EVAL90_FUNCTION_AS_ADDRESS`\
-強制函數作為位址計算,而不是調用函數。
+強制將函數評估為位址，而不是叫用函數。
 
 `EVAL90_NOFUNCEVAL`\
-防止計算函數。 例如,`int`考慮表達`myExpression(int) + 10`式 中的標記。 此功能可以正確計算為位址,但不能作為值。
+防止評估函數。 例如，請考慮 `int` 運算式中的 token `myExpression(int) + 10` 。 此函數可以正確地評估為位址，但不能作為值。
 
 `EVAL90_NOEVENTS`\
-標記以指示不應將表達式計算期間發生的事件發送到工作階段調試管理器 (SDM) 或 IDE。
+旗標，表示在運算式評估期間發生的事件，不應該傳送至會話 debug manager (SDM) 或 IDE。
 
 `EVAL90_DESIGN_TIME_EXPR_EVAL`\
-啟用設計時表達式計算。
+啟用設計時程表達式評估。
 
 `EVAL90_ALLOW_IMPLICIT_VARS`\
-允許隱式變數創建。
+允許隱含變數建立。
 
 `EVAL90_FORCE_EVALUATION_NOW`\
-強制立即進行評估。 這在服務請求(如使用者請求)時非常有用。
+強制立即進行評估。 這在處理要求時很有用，例如使用者要求。
 
 ## <a name="requirements"></a>需求
-標題: Msdbg90.h
+標頭： Msdbg90。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

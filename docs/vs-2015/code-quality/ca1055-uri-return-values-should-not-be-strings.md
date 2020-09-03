@@ -1,5 +1,5 @@
 ---
-title: CA1055： URI 傳回值不應為字串 |Microsoft Docs
+title: CA1055： URI 傳回值不應該為字串 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 522534d81ef9c87fc93d16a7ee880c7743a3268c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539655"
 ---
 # <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055:URI 傳回值不應該為字串
@@ -29,23 +29,23 @@ ms.locfileid: "85539655"
 |-|-|
 |TypeName|UriReturnValuesShouldNotBeStrings|
 |CheckId|CA1055|
-|類別|Microsoft. Design|
+|類別|Microsoft. 設計|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 方法的名稱包含 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"，而方法會傳回字串。
+ 方法的名稱包含 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"，且方法會傳回字串。
 
 ## <a name="rule-description"></a>規則描述
- 此規則會根據 Pascal 大小寫慣例，將方法名稱分割成權杖，並檢查每個權杖是否等於 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"。 如果相符，此規則會假設方法會傳回統一資源識別元（URI）。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 <xref:System.Uri?displayProperty=fullName>類別以安全且安全的方式提供這些服務。
+ 此規則會根據 Pascal 大小寫慣例，將方法名稱分割成權杖，並檢查每個標記是否等於 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"。 如果有相符的規則，此規則會假設方法會傳回統一資源識別項 (URI) 。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 <xref:System.Uri?displayProperty=fullName>類別以安全且安全的方式提供這些服務。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請將傳回型別變更為 <xref:System.Uri> 。
+ 若要修正此規則的違規情形，請將傳回類型變更為 <xref:System.Uri> 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果傳回值不代表 URI，就可以安全地隱藏此規則的警告。
+ 如果傳回值不代表 URI，則可以安全地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示 `ErrorProne` 違反此規則的類型，以及 `SaferWay` 符合規則的類型。
+ 下列範例顯示違反此規則的型別， `ErrorProne` 以及滿足規則的型別 `SaferWay` 。
 
  [!code-cpp[FxCop.Design.UriNotString#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.UriNotString/cpp/FxCop.Design.UriNotString.cpp#1)]
  [!code-csharp[FxCop.Design.UriNotString#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.UriNotString/cs/FxCop.Design.UriNotString.cs#1)]

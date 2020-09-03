@@ -16,10 +16,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0a20c5e3f30a6d006175e78fc70dab79d0b9bf8a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591277"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用負載測試分析器來分析負載測試中的臨界值規則違規
@@ -36,7 +36,7 @@ ms.locfileid: "75591277"
 
 |資料行|描述|預設為可見|
 |-|-|-|
-|Time|負載測試期間發生違規的時間。|是|
+|時間|負載測試期間發生違規的時間。|是|
 |電腦|發生違規之測試中的電腦名稱。 **注意：** 當您在 Rig 上執行負載測試時，這很重要。|是|
 |類別|發生違規之效能計數器的分類。|是|
 |計數器|發生違規之效能計數器的名稱。|是|
@@ -46,7 +46,7 @@ ms.locfileid: "75591277"
 > [!NOTE]
 > 選擇資料行標頭即可排序資料表。
 
-有關詳細資訊，請參閱[在表視圖中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。
+如需詳細資訊，請參閱在 [資料表視圖中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。
 
 ## <a name="view-threshold-violations-in-the-counters-panel"></a>在計數器面板中檢視臨界值違規
 
@@ -72,10 +72,10 @@ ms.locfileid: "75591277"
 
 您可以在圖形上檢視臨界值違規。 圖示與 [計數器]**** 面板類似，會在圖形上傳達臨界值違規。 在圖形上之資料旁邊出現的圖示，指出發生臨界值違規的位置。 如果臨界值違規是在圖形上未出現的計數器上發生，您可以將該計數器從 [計數器]**** 面板拖曳至圖形上，藉此將它新增至圖形。
 
-有關詳細資訊，請參閱[在圖形視圖中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)。
+如需詳細資訊，請參閱 [在圖形視圖中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)。
 
 ## <a name="see-also"></a>另請參閱
 
 - [在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [分析表視圖中的負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
+- [在資料表視圖中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

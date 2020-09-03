@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c221a572264bf6a6aaed9edbec66fb3c0c3ff4b9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735506"
 ---
 # <a name="graphics-event-call-stack"></a>圖形事件呼叫堆疊
@@ -22,7 +22,7 @@ Visual Studio 圖形分析器中的圖形事件呼叫堆疊可協助您對應有
 
  這是 [事件呼叫堆疊] 視窗：
 
- ![DrawIndexed 事件之前的呼叫堆疊。](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")
+ ![DrawIndexed 事件前面的呼叫堆疊。](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")
 
 ## <a name="understanding-the-graphics-event-call-stack"></a>了解圖形事件呼叫堆疊
  您可以使用 [事件呼叫堆疊] 來了解導致特定 Direct3D 事件的執行流程。 它和 Visual Studio 呼叫堆疊視窗很像，但它不會顯示執行中應用程式中，作用中執行緒的目前呼叫堆疊，只會顯示所選 Direct3D 事件發生時就已存在的呼叫堆疊。 在 [事件呼叫堆疊] 中，您可以跳到所選取 Direct3D 事件的呼叫位置，以檢查周圍的程式碼。
@@ -32,14 +32,14 @@ Visual Studio 圖形分析器中的圖形事件呼叫堆疊可協助您對應有
 ### <a name="graphics-event-call-stack-information"></a>圖形事件呼叫堆疊資訊
  事件呼叫堆疊不支援畫面格前事件或使用者定義事件。 圖形事件呼叫堆疊會以資料表格式顯示。
 
-|Column|描述|
+|資料行|描述|
 |------------|-----------------|
 |**名稱**|特別用來識別含有呼叫位置之函式的符號。 當函式的偵錯符號可用時即會顯示；否則會顯示函式位移。|
 |**檔案**|含有呼叫位置之原始程式檔或程式庫檔案的檔案名稱。|
 |**位置**|呼叫位置的行號。|
 
 ### <a name="links-to-graphics-objects"></a>圖形物件連結
- 若要了解所選取的圖形事件，您可能需要與其相關聯之 Direct3D 物件的相關資訊。 [圖形事件呼叫堆疊] 視窗會提供這項資訊的連結。
+ 若要了解所選取的圖形事件，您可能需要與其相關聯之 Direct3D 物件的相關資訊。 [圖形事件呼叫堆疊]**** 視窗會提供這項資訊的連結。
 
-## <a name="see-also"></a>請參閱
-- [逐步解說：因端點著色而遺漏的物件](walkthrough-missing-objects-due-to-vertex-shading.md)
+## <a name="see-also"></a>另請參閱
+- [逐步解說：因頂點著色而遺漏的物件](walkthrough-missing-objects-due-to-vertex-shading.md)
