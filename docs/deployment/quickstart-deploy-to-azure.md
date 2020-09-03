@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - azure
 ms.openlocfilehash: deef5aeaa802d5f5b46ba81f711173dc81a32357
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800303"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 將 Web 應用程式發行至 Azure App Service

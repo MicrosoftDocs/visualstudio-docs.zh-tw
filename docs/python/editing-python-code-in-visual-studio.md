@@ -11,17 +11,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: eb3e3ca5d18429c60894c42bda12328836dc6fc8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73024727"
 ---
 # <a name="edit-python-code"></a>編輯 Python 程式碼
 
 因為您大部分的開發時間都花在程式碼編輯器中，所以 [Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)提供的功能可協助您提高生產力。 功能包括了 IntelliSense 語法反白顯示、自動完成、簽章說明、方法覆寫、搜尋和瀏覽。
 
-編輯器還與 Visual Studio 中的**互動式**視窗集成，便於在兩者之間交換代碼。 如需詳細資訊，請參閱[教學課程步驟 3：使用互動式 REPL 視窗](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)和[使用互動式視窗 - 傳送至互動式命令](python-interactive-repl-in-visual-studio.md#send-to-interactive-command)。
+編輯器也會與 Visual Studio 中的 **互動式** 視窗整合，讓您輕鬆地在兩者間交換程式碼。 如需詳細資訊，請參閱[教學課程步驟 3：使用互動式 REPL 視窗](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)和[使用互動式視窗 - 傳送至互動式命令](python-interactive-repl-in-visual-studio.md#send-to-interactive-command)。
 
 如需有關在 Visual Studio 中編輯程式碼的一般文件，請參閱[程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)。 另請參閱[大綱](../ide/outlining.md)，這有助您專注於特定的程式碼區段。
 
@@ -31,13 +31,13 @@ ms.locfileid: "73024727"
 
 IntelliSense 提供[自動完成](#completions)、[簽章說明](#signature-help)、[快速諮詢](#quick-info)和[程式碼著色](#code-coloring)。 Visual Studio 2017 15.7 版和更新版本也支援[類型提示](#type-hints)。
 
-為了改善效能，Visual Studio 2017 15.5 版及較舊版本中之 IntelliSense 會仰賴為您專案中每個 Python 環境所產生的完成資料庫。 如果新增、移除或更新套件，資料庫可能需要重新整理。 資料庫狀態顯示在**IntelliSense**選項卡的**Python 環境**視窗（**解決方案資源管理器**的同級）中（請參閱[環境視窗引用](python-environments-window-tab-reference.md)）。
+為了改善效能，Visual Studio 2017 15.5 版及較舊版本中之 IntelliSense 會仰賴為您專案中每個 Python 環境所產生的完成資料庫。 如果新增、移除或更新套件，資料庫可能需要重新整理。 資料庫狀態會顯示在 [ **Python 環境**] 視窗中 ([ **IntelliSense** ] 索引標籤上**方案總管**) 的同級 (查看[環境視窗參考](python-environments-window-tab-reference.md)) 。
 
 Visual Studio 2017 15.6 版及更新版本會使用不同的方式，在不仰賴資料庫的情況下為 IntelliSense 提供完成。
 
 ### <a name="completions"></a>自動完成
 
-自動完成會顯示為陳述式、識別碼和其他適合在編輯器目前的位置中輸入的文字。 清單中顯示的資訊會以內容為依據，並會經過篩選以省略不正確或令人分心的選項。 完成通常是通過鍵入不同的語句`import`（如 ）和運算子（包括句點）觸發的，但您可以通過鍵入**Ctrl**+**J** > **Space**隨時顯示它們。
+自動完成會顯示為陳述式、識別碼和其他適合在編輯器目前的位置中輸入的文字。 清單中顯示的資訊會以內容為依據，並會經過篩選以省略不正確或令人分心的選項。 完成通常是藉由輸入不同的語句 (例如 `import`) 和運算子 (包含句點) 來觸發，但您可以隨時輸入**Ctrl**# + **J**  >  **空格鍵**來顯示它們。
 
 ![Visual Studio 編輯器中的成員自動完成](media/code-editing-completions-simple.png)
 
@@ -72,11 +72,11 @@ Visual Studio 2017 15.6 版及更新版本會使用不同的方式，在不仰�
 ![Visual Studio 編輯器中的裝飾項目自動完成](media/code-editing-completion-decorator.png)
 
 > [!Tip]
-> 您可以通過**工具** > **選項** > **文字編輯器** > **Python** > **高級**配置完成行為。 其中，[依據搜尋字串篩選清單]**** 會在您鍵入時套用自動完成建議的篩選 (預設為核取)，而 [成員自動完成顯示成員的交集]**** 只會顯示所有可能的類型支援的自動完成 (預設為未核取)。 請參閱[選項 - 完成結果](python-support-options-and-settings-in-visual-studio.md#completion-results)。
+> 您可以透過**工具**  >  **選項**  >  **文字編輯器**  >  **Python**  >  **Advanced**來設定完成的行為。 其中，[依據搜尋字串篩選清單]**** 會在您鍵入時套用自動完成建議的篩選 (預設為核取)，而 [成員自動完成顯示成員的交集]**** 只會顯示所有可能的類型支援的自動完成 (預設為未核取)。 請參閱[選項 - 完成結果](python-support-options-and-settings-in-visual-studio.md#completion-results)。
 
 ### <a name="type-hints"></a>類型提示
 
-*Visual Studio 2017 版本 15.7 及更高版本。*
+*Visual Studio 2017 15.7 版和更新版本。*
 
 Python 3.5 以上版本 ([PEP 484](https://www.python.org/dev/peps/pep-0484/) (python.org) 中的「類型提示」是表示引數類型、傳回值和類別屬性的函式和類別的註釋語法。 當您將滑鼠停留在具有這些註釋的函式呼叫、引數和變數上方時，IntelliSense 就會顯示類型提示。
 
@@ -88,7 +88,7 @@ Python 3.5 以上版本 ([PEP 484](https://www.python.org/dev/peps/pep-0484/) (p
 
 ![顯示類型提示的 IntelliSense 完成](media/code-editing-type-hints2.png)
 
-在整個專案中驗證類型提示也很有用，因為通常要到執行階段之後才會出現錯誤。 為此，Visual Studio 通過內容功能表命令**Python** > **運行 Mypy**在**解決方案資源管理器**中集成了行業標準 MyPy 工具：
+在整個專案中驗證類型提示也很有用，因為通常要到執行階段之後才會出現錯誤。 基於此目的，Visual Studio 會在方案總管中透過內容功能表命令**Python**  >  **執行 MyPy**來整合產業標準**Solution Explorer**MyPy 工具：
 
 ![在 [方案總管] 執行 MyPy 操作功能表命令](media/code-editing-type-hints-run-mypy.png)
 
@@ -119,19 +119,19 @@ commas_to_colons(1)
 > [!Tip]
 > 如果是 3.5 之前的 Python 版本，Visual Studio 也會顯示您透過「Typeshed 虛設常式檔案」** (*.pyi*) 提供的類型提示。 只要您不想在程式碼中直接包含類型提示，或者您想要針對不會直接使用類型提示的程式庫建立類型提示時，就可以使用虛設常式檔案。 如需詳細資訊，請參閱 mypy 專案 Wiki 中的 [Create stubs for Python modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (建立 Python 模組的虛設常式)。
 >
-> Visual Studio 包括一組 Python 2 和 3，的配套 Typeshed 檔案，因此不需要下載其他項目。 但是，如果要使用不同的檔集，可以在 **"工具** > **選項** > **Python** > **語言伺服器**"選項中指定路徑。 請參閱[選項 - 語言伺服器](python-support-options-and-settings-in-visual-studio.md#language-server-options)。
+> Visual Studio 包括一組 Python 2 和 3，的配套 Typeshed 檔案，因此不需要下載其他項目。 但是，如果您想要使用一組不同的檔案，您可以在 [**工具**  >  **選項**  >  **Python**  >  **語言伺服器**選項] 中指定路徑。 請參閱[選項 - 語言伺服器](python-support-options-and-settings-in-visual-studio.md#language-server-options)。
 >
 > 目前，Visual Studio 不支援註解的類型提示。
 ::: moniker-end
 
 ### <a name="signature-help"></a>簽章說明
 
-撰寫呼叫函式的程式碼時，簽章說明會在您鍵入左側 `(` 時顯示，並顯示可用的文件和參數資訊。 您還可以在函式呼叫中使用**Ctrl**+**移位**+**空間**使其顯示。 顯示的資訊取決於函式的原始程式碼中的文件字串，但會包括任何預設值。
+撰寫呼叫函式的程式碼時，簽章說明會在您鍵入左側 `(` 時顯示，並顯示可用的文件和參數資訊。 您也可以在**Ctrl** + **Shift** + 函式呼叫內以 Ctrl Shift**空格鍵**來顯示它。 顯示的資訊取決於函式的原始程式碼中的文件字串，但會包括任何預設值。
 
 ![Visual Studio 編輯器中的簽章說明](media/code-editing-signature-help.png)
 
 > [!Tip]
-> 要禁用簽名説明，請轉到**工具** > **選項** > **文字編輯器** > **Python** > **一般**和清除**語句完成** > **參數資訊**。
+> 若要停用簽章說明，請移至 [**工具**  >  **選項**  >  **文字編輯器**  >  **Python**  >  **一般**] 和 [清除**語句完成**  >  **參數資訊**]。
 
 ### <a name="quick-info"></a>快速諮詢
 
@@ -145,12 +145,12 @@ commas_to_colons(1)
 
 ![程式碼和 Visual Studio 編輯器中的語法著色](media/code-editing-code-coloring.png)
 
-要自訂顏色，請轉到 **"工具** > **選項** > **環境** > **字體和顏色**"並修改 **"顯示專案**"清單中的**Python**條目：
+若要自訂色彩，請移至 [**工具**  >  **選項**  >  **環境**字型  >  **和色彩**]，並修改 [**顯示專案**] 清單中的**Python**專案：
 
 ![Visual Studio 中的字型和色彩選項](media/code-editing-customize-colors.png)
 
 > [!Tip]
-> 要禁用代碼著色，請轉到**工具** > **選項** > **文字編輯器** > **Python** > **高級**，並根據類型清除 **"雜項選項** > **顏色顏色名稱**"。 請參閱[選項 - 其他選項](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)。
+> 若要停用程式碼著色，請移至**工具**  >  **選項**  >  **文字編輯器**  >  **Python**  >  **Advanced** ，並根據類型清除**其他選項**  >  **色彩名稱**。 請參閱[選項 - 其他選項](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)。
 
 ## <a name="code-snippets"></a>程式碼片段
 
@@ -160,17 +160,17 @@ commas_to_colons(1)
 
 ![適用於類別捷徑的程式碼片段](media/code-editing-code-snippet-class.png)
 
-按**Tab**生成類的其餘部分。 然後，您可以鍵入名稱和基礎清單，在使用**Tab**的突出顯示欄位之間移動，然後按**Enter**開始鍵入正文。
+按 **Tab 鍵** 會產生類別的其餘部分。 然後，您可以在名稱和基底清單上輸入，在反白顯示的欄位之間 **移動，然後**按 **enter** 鍵以開始鍵入本文。
 
 ![反白顯示待完成的程式碼片段區域](media/code-editing-code-snippets.png)
 
 ### <a name="menu-commands"></a>功能表命令
 
-當您使用 **"編輯** > **IntelliSense** > **插入程式碼片段"** 功能表命令時，首先選擇**Python，** 然後選擇程式碼片段：
+當您使用 [**編輯**  >  **IntelliSense**  >  **插入程式碼片段**] 功能表命令時，請先選取 [ **Python**]，然後選取程式碼片段：
 
 ![透過 [插入程式碼片段] 命令選取程式碼片段](media/code-editing-code-snippet-insert.png)
 
-同樣，"**編輯** > **IntelliSense** > **環繞"** 命令將當前選擇放在所選結構元素內的文字編輯器中。 例如，假設您有類似以下的程式碼：
+**編輯**  >  **IntelliSense**  >  **以命令括住**，同樣地，會將目前的選取專案置於文字編輯器中所選的結構元素內。 例如，假設您有類似以下的程式碼：
 
 ```python
 sum = 0
@@ -203,7 +203,7 @@ Visual Studio 中的 Python 支援提供幾種快速巡覽程式碼 (以及有�
 ![Visual Studio 編輯器中的導覽列](media/code-editing-navigation-bar.png)
 
 > [!Tip]
-> 要隱藏巡覽列，請訪問**工具** > **選項** > **文字編輯器** > **Python** > **一般**和清除**設置** > **巡覽列**。
+> 若要隱藏巡覽列，請移至 [**工具**  >  **選項**  >  **文字編輯器**  >  **Python**  >  **一般**] 和 [清除**設定**]  >  **巡覽列**。
 
 ### <a name="go-to-definition"></a>移至定義
 
@@ -213,7 +213,7 @@ Visual Studio 中的 Python 支援提供幾種快速巡覽程式碼 (以及有�
 
 ### <a name="navigate-to"></a>巡覽至
 
-**"編輯** > **導航到"** 命令 **（Ctrl**+） 在編輯器中顯示一個搜索框 **，** 您可以在其中鍵入任何字串，並在代碼中查看可能匹配項，該匹配項定義包含該字串的函數、類或變數。 此功能提供與 [移至定義]**** 類似的功能，但不需尋找使用的識別碼。
+[**編輯**  >  **流覽至**] 命令 (**Ctrl** + **，**) 在編輯器中顯示搜尋方塊，您可以在編輯器中輸入任何字串，並在您的程式碼中查看可定義包含該字串之函式、類別或變數的可能相符專案。 此功能提供與 [移至定義]**** 類似的功能，但不需尋找使用的識別碼。
 
 按兩下任一名稱，或使用方向鍵選取並按 **Enter** 鍵，即可巡覽至該識別項的定義。
 
@@ -228,5 +228,5 @@ Visual Studio 中的 Python 支援提供幾種快速巡覽程式碼 (以及有�
 ## <a name="see-also"></a>另請參閱
 
 - [格式化](formatting-python-code.md)
-- [Refactoring](refactoring-python-code.md)
+- [重構](refactoring-python-code.md)
 - [使用 Linter](linting-python-code.md)

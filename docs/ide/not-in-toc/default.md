@@ -11,10 +11,10 @@ manager: jillfra
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 0ab7f2d9fac02cf370e7b3803adc7fd3016d22ad
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800446"
 ---
 # <a name="f1-help"></a>F1 說明

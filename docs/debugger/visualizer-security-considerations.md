@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73187155"
 ---
 # <a name="visualizer-security-considerations"></a>視覺化檢視安全性考量
@@ -37,7 +37,7 @@ ms.locfileid: "73187155"
 
  若要減輕這項弱點，請留意視覺化檢視所公開的介面。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [視覺化檢視架構](../debugger/visualizer-architecture.md)
 - [如何：撰寫視覺化檢視](create-custom-visualizers-of-data.md)
 - [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)

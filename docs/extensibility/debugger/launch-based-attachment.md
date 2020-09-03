@@ -1,5 +1,5 @@
 ---
-title: 基於啟動的附件 |微軟文件
+title: 以啟動為基礎的附件 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,26 +12,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4910a97350366500b56593ec0076fdf0990b6d8f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738467"
 ---
-# <a name="launch-based-attachment"></a>建基於開機的附件
-基於啟動的程式附件是自動的。 當託管程式的進程由 SDM 啟動時,基於啟動的附件遵循類似於手動附件方法的路徑。 有關詳細資訊,請參閱[附加到程式](../../extensibility/debugger/attaching-to-the-program.md)。
+# <a name="launch-based-attachment"></a>以啟動為基礎的附件
+以啟動為基礎的程式附件是自動的。 當裝載程式的進程由 SDM 啟動時，以啟動為基礎的附件會遵循與手動附件方法類似的路徑。 如需詳細資訊，請參閱 [附加至程式](../../extensibility/debugger/attaching-to-the-program.md)。
 
-## <a name="the-attaching-process"></a>附加過程
- 主要區別是**附加**調用后的事件序列,如下所示:
+## <a name="the-attaching-process"></a>附加進程
+ 主要差異在於 **附加** 呼叫之後的事件順序，如下所示：
 
-1. 將**IDebugEngineCreateEvent2**事件物件發送到 SDM。 有關詳細資訊,請參閱[傳送事件](../../extensibility/debugger/sending-events.md)。
+1. 將 **IDebugEngineCreateEvent2** 事件物件傳送至 SDM。 如需詳細資訊，請參閱 [傳送事件](../../extensibility/debugger/sending-events.md)。
 
-2. 調用傳遞給`IDebugProgram2::GetProgramId`**附加**方法的**IDebugProgram2**介面上的方法。
+2. `IDebugProgram2::GetProgramId`在傳遞至**附加**方法的**IDebugProgram2**介面上呼叫方法。
 
-3. 發送**IDebugProgramCreateEvent2**事件物件,通知 SDM 本地**IDebugProgram2**物件是為了向 DE 表示程式。
+3. 傳送 **IDebugProgramCreateEvent2** 事件物件，以通知 SDM 已建立本機 **IDebugProgram2** 物件來代表要解除的程式。
 
-4. 發送[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)事件物件,通知 SDM 為啟動的進程創建新線程。
+4. 傳送 [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) 事件物件來通知 SDM，為啟動的進程建立新的執行緒。
 
 ## <a name="see-also"></a>另請參閱
-- [傳送所需事件](../../extensibility/debugger/sending-the-required-events.md)
-- [開啟對程式進行除錯](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [傳送所需的事件](../../extensibility/debugger/sending-the-required-events.md)
+- [啟用要進行調試的程式](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

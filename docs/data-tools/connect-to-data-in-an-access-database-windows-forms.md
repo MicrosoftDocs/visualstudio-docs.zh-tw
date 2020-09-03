@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 3a94467dbfa0c11fdb7bb6ba7aa4d304fef3979f
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800628"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>連線至 Access 資料庫中的資料
 
 您可以使用 Visual Studio， (*.mdb* 檔或 *.accdb* 檔案連接到 Access 資料庫，) 。 在您定義連線後，資料就會出現在 [資料來源]**** 視窗中。 從該處，您可以將資料表或視圖拖曳至設計介面。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 若要使用這些程式，您需要 Windows Forms 或 WPF 專案，以及 Access 資料庫 (*.accdb* 檔案) 或 access 2000-2003 資料庫 (*.mdb* 檔案) 。 依照對應您的檔案類型的程序進行。
 

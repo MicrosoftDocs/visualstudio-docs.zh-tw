@@ -18,10 +18,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 5692589192ee4377194f6c42c25d391636f5f42a
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800238"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
@@ -111,7 +111,7 @@ ms.locfileid: "88800238"
 | Python 套件 <br>探索<br><br>Python 套件 <br>管理<br><br>新增 <br>Python <br> project <br>範本 | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | HTTPs/443 | 提供搜尋 pip 套件的能力<br><br>用來在遺失 pip 的情況下自動安裝它 <br><br>用來將下列新的 Python 專案範本解析成 Cookiecutter 範本 URL：<br> - 分類器專案<br>- 叢集專案 <br> - 迴歸專案 <br> - 使用 PyKinect 的 PyGame <br> - Pyvot 專案 |
 | Office Web <br>Add-In - 增益集 <br> file:/// <br>驗證 <br>服務 | verificationservice.osi.office.net | HTTPs/443 | 用來驗證針對 Office Web 增益集的資訊清單 |
 | SharePoint 和 <br>Office 增益集 | sharepoint.com<br> microsoft.com/microsoft-365<br> microsoftonline.com <br> outlook.com | HTTPs/443 | 用來將 SharePoint 和 Office 增益集發行和測試至 SharePoint Online 和 Microsoft 365 |
-| 工作流程管理員 <br>測試服務<br> Host | | HTTP/12292 | 自動針對搭配工作流程測試 SharePoint 增益集所建立的防火牆規則 |
+| 工作流程管理員 <br>測試服務<br> 主機 | | HTTP/12292 | 自動針對搭配工作流程測試 SharePoint 增益集所建立的防火牆規則 |
 | 自動收集的 <br>可靠性統計資料 <br>及其他 <br>客戶經驗 <br>改進計畫 (CEIP)<br> (針對 Azure SDK 及 <br>SQL 工具) <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | HTTPs/443 | 用來將 (損毀/沒有回應的資料) 從使用者傳送至 Microsoft 的可靠性統計資料。 如果已啟用 Windows 錯誤報告，仍會上傳實際損毀/沒有回應的傾印;只會隱藏統計資訊; <br>用來向 Visual Studio 顯示針對 Azure 工具 SDK 擴充功能的匿名使用模式，以及 SQL 工具的使用模式 |
 | Visual Studio <br> 客戶經驗 <br>改進計畫 (CEIP) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | HTTPs/443 | 用來收集匿名使用模式及錯誤記錄檔 <br><br>用來追蹤 UI 凍結問題 |
 | 建立及<br>管理 <br>Azure 資源 | management.azure.com <br>management.core.windows.net | HTTPs/443 | 用來建立 Azure 網站或其他資源，以支援 Web 應用程式、Azure Functions 或 WebJobs 的發行 |

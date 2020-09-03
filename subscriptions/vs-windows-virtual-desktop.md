@@ -8,10 +8,10 @@ ms.date: 04/20/2020
 ms.topic: conceptual
 description: 瞭解如何透過您的 Visual Studio 訂用帳戶來利用 Microsoft Windows 虛擬桌面
 ms.openlocfilehash: 865e18d7b8672520fcb771a1db56141fb6fd9f0a
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800602"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>存取訂用帳戶中的 Windows 虛擬桌面 

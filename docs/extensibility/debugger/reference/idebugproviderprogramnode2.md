@@ -1,5 +1,5 @@
 ---
-title: IDebug提供程式程序節點2 |微軟文件
+title: IDebugProviderProgramNode2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 815a945f6fb591960ebf0bf4b4fcd9d842ffefd3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720676"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
-此介面跨進程邊界封送程序相關介面。
+此介面會跨進程界限封送處理常式相關的介面。
 
 ## <a name="syntax"></a>語法
 
@@ -28,28 +28,28 @@ ms.locfileid: "80720676"
 IDebugProviderProgramNode2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 除錯引擎 (DE) 在實現[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)以支援跨行程邊界封送介面的同一物件上實現此介面。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ Debug engine (DE) 會在執行 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 的相同物件上執行這個介面，以支援跨進程界限的封送處理介面。
 
-## <a name="notes-for-callers"></a>通話備註
- 在`IDebugProgramNode2`介面上調用[查詢介面](/cpp/atl/queryinterface)以獲取此介面。 如果無法獲取此介面,DE 不支援介面的封送。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ 呼叫介面上的 [QueryInterface](/cpp/atl/queryinterface) `IDebugProgramNode2` 來取得這個介面。 如果無法取得這個介面，則不支援對介面進行封送處理。
 
-## <a name="methods-in-vtable-order"></a>依 Vtable 順序排列的方法
- 此介面實現以下方法:
+## <a name="methods-in-vtable-order"></a>採用 Vtable 順序的方法
+ 此介面會執行下列方法：
 
 |方法|描述|
 |------------|-----------------|
-|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|跨進程邊界獲取指定的介面。|
+|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|取得跨進程界限的指定介面。|
 
 ## <a name="remarks"></a>備註
- 當 DE 在獨立於正在除錯的程式的進程空間中執行時,將實現此介面:例如,當 DE 在 Visual Studio 進程空間中執行時,而不是調試程式的進程空間。
+ 此介面會在從正在進行偵錯工具的不同進程空間中執行時執行：例如，在 Visual Studio 的進程空間中執行取消作業，而非正在進行偵錯工具的進程空間時。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)
