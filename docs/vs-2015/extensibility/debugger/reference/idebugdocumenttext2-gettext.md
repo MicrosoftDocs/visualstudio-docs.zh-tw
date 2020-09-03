@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText |Microsoft Docs
+title: IDebugDocumentText2：： GetText |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 066c2c025fe7b1c83fb30cb3a0e1a7b61d8c2c41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200186"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-從指定之位置的文件中擷取的文字。  
+從檔中指定的位置抓取文字。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,22 +46,22 @@ int GetText( 
   
 #### <a name="parameters"></a>參數  
  `pos`  
- [in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，表示要擷取文字的位置。  
+ 在 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 結構，表示要抓取之文字的位置。  
   
  `cMaxChars`  
- [in]要擷取的文字字元的數目上限。  
+ 在要抓取之文字的最大字元數。  
   
  `pText`  
- [in、 out]要被填入所需的文字緩衝區的指標。 這個緩衝區必須至少包含`cMaxChars`寬字元數。  
+ [in，out]要以所需文字填入的緩衝區指標。 這個緩衝區必須至少要包含 `cMaxChars` 寬字元數。  
   
  `pcNumChars`  
- [out]傳回實際擷取的字元的數。  
+ 擴展傳回實際取出的字元數。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 這個範例會示範如何從 C# 呼叫這個方法。  
+ 這個範例會示範如何從 c # 呼叫這個方法。  
   
 ```csharp  
 using System.Runtime.Interop.Services;  

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9495e5aac16821927f5f61005cd16bd20e82687
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85768994"
 ---
 # <a name="how-to-export-a-shader"></a>如何：匯出著色器
@@ -25,7 +25,7 @@ ms.locfileid: "85768994"
 
 1. 在 Visual Studio 中，開啟**視覺著色器圖形 (.dgsl)** 檔案。
 
-     如果您沒有要開啟的**視覺著色器圖形（. dgsl）** 檔案，請依照[如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)中所述建立一個檔案。
+     如果您沒有 **視覺著色器圖形 ( dgsl) ** 檔案開啟，請依照 how [to：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)中所述建立一個檔案。
 
 2. 在 [著色器設計工具]**** 工具列上，選擇 [進階]**** > [匯出]**** > [匯出成]****。 [匯出著色器]**** 對話方塊隨即出現。
 

@@ -1,5 +1,5 @@
 ---
-title: 文件位置 |Microsoft Docs
+title: 檔位置 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,26 +11,26 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0107befa502d13ada7f5fd9e6081dde5f7c1cdc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200599"
 ---
 # <a name="document-position"></a>文件位置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯**文件位置**:  
+在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 調試中， **檔位置**：  
   
-- 為已知的 ide，請提供抽象的原始程式檔中的位置。 大部分語言的現在，文件位置可以視為的原始程式檔中的位置。  
+- 提供 IDE 已知的原始程式檔中的位置抽象概念。 在現今大部分的語言中，可以將檔位置視為原始程式檔中的位置。  
   
-- 描述偵錯引擎來源文件中的位置。  
+- 描述來源文件中對 debug 引擎的位置。  
   
-- 由實作[IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md)介面。  
+- 是由 [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) 介面所執行。  
   
 ## <a name="see-also"></a>另請參閱  
  [程式碼內容](../../extensibility/debugger/code-context.md)   
- [文件內容](../../extensibility/debugger/document-context.md)   
+ [檔內容](../../extensibility/debugger/document-context.md)   
  [符號提供者](../../extensibility/debugger/symbol-provider.md)   
  [符號提供者介面](../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)

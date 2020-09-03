@@ -13,29 +13,29 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c9322af6bf04e21430ed49be8e631f3a7dc63643
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467824"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
-列舉可用的各種堆疊框架。
+列舉各種可用的堆疊框架。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|從列舉序列中抓取指定的堆疊框架元素數目。|
-|[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|將列舉序列重設為開頭。|
+|[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|從列舉序列中抓取指定數目的堆疊框架元素。|
+|[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|將列舉順序重設為開頭。|
 
 ## <a name="remarks"></a>備註
 
-## <a name="notes-for-callers"></a>呼叫者的注意事項
-藉由呼叫[IDiaStackWalker：： getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)或[IDiaStackWalker：： getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)方法來取得此介面。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+藉由呼叫 [IDiaStackWalker：： getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) 或 [IDiaStackWalker：： getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) 方法來取得這個介面。
 
 ## <a name="example"></a>範例
-這個範例會示範如何取得和使用 `IDiaEnumStackFrames` 介面。 如需函數的執行，請參閱[IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)介面 `PrintStackFrame` 。
+這個範例會示範如何取得和使用 `IDiaEnumStackFrames` 介面。 如需函式的執行，請參閱 [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) 介面 `PrintStackFrame` 。
 
 ```C++
 void DumpStackFrames(IDiaStackWalker*     pStackWalker,
@@ -65,7 +65,7 @@ void DumpStackFrames(IDiaStackWalker*     pStackWalker,
 ## <a name="requirements"></a>需求
 標頭： Dia2。h
 
-程式庫： diaguids
+程式庫： diaguids .lib
 
 DLL： msdia80.dll
 

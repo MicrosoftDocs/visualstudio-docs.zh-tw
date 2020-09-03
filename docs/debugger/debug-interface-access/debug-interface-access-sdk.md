@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: da0ced56e8bf7e61e7fa5251e834a762d4c66650
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468690"
 ---
 # <a name="debug-interface-access-sdk"></a>偵錯 (偵錯介面存取 SDK)
 
-Microsoft Debug Interface Access 軟體發展工具組（DIA SDK）可讓您存取 Microsoft postcompiler 工具所產生的程式資料庫（.pdb）檔案中所儲存的 Debug 資訊。 由於 postcompiler 工具所產生的 .pdb 檔案格式會經歷持續的修訂，因此公開格式並不實用。 您可以使用 DIA API 來開發應用程式，以搜尋及流覽儲存在 .pdb 檔案中的 debug 資訊。 例如，這類應用程式可能會傳回報表堆疊追蹤資訊，並分析效能資料。
+Microsoft Debug Interface Access Software 開發工具組 (DIA SDK) 可存取儲存在程式資料庫中的偵錯工具資訊 ( .pdb) Microsoft postcompiler tools 所產生的檔案。 由於 postcompiler 工具所產生的 .pdb 檔案格式會進行不斷的修訂，所以公開格式並不實用。 您可以使用 DIA API 來開發應用程式，以搜尋和流覽儲存在 .pdb 檔案中的 debug 資訊。 例如，這類應用程式可以報告堆疊追蹤資訊，以及分析效能資料。
 
 ## <a name="in-this-section"></a>本節內容
 
@@ -45,4 +45,4 @@ Microsoft Debug Interface Access 軟體發展工具組（DIA SDK）可讓您存�
 
 [Dia2dump 範例](../../debugger/debug-interface-access/dia2dump-sample.md)
 
-說明如何使用 DIA API 來搜尋和流覽偵錯工具資訊。
+說明如何使用 DIA API 來搜尋和流覽 debug 資訊。

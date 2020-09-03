@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ad9a97dd2e50b5bc131975321306bf8d9d52501e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468564"
 ---
 # <a name="idiaaddressmapput_imagealign"></a>IDiaAddressMap::put_imageAlign
@@ -36,15 +36,15 @@ HRESULT put_imageAlign ( 
 在可執行檔的新影像對齊值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 影像（已載入的可執行檔）會對齊指定的記憶體界限。 這項對齊可能會受到目前系統架構和編譯和連結時間選項的影響。 影像對齊一律會在位元組界限上。 下列影像對齊值有效：1、2、4、8、16、32和64位元組界限。
+  (載入的可執行檔) 的影像會對齊指定的記憶體界限。 這種對齊方式可能會受到目前系統架構和編譯和連結時間選項的影響。 影像對齊一律為位元組界限。 下列影像對齊值有效：1、2、4、8、16、32和64位元組界限。
 
- 您可以呼叫[IDiaAddressMap：： get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)方法來抓取目前的影像對齊。
+ 您可以呼叫 [IDiaAddressMap：： get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md) 方法來抓取目前的影像對齊。
 
 > [!NOTE]
-> 此映射已由呼叫此方法時載入。 `put_imageAlign`當影像已移動或變更，而且需要新的對齊時，通常會使用此方法。
+> 此映射已在可呼叫這個方法時載入。 `put_imageAlign`方法通常是在影像已移動或變更，且需要新的對齊時使用。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

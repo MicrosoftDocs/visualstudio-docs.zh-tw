@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eb6f2f4486f943064ef4c29d16c98003aa3ff088
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467621"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyrva"></a>IDiaEnumSymbolsByAddr::symbolByRVA
-藉由依相對虛擬位址（RVA）執行查閱，來放置列舉值。
+藉由依相對虛擬位址 (RVA) 來執行查閱，來放置列舉值。
 
 ## <a name="syntax"></a>語法
 
@@ -38,10 +38,10 @@ HRESULT symbolByRVA ( 
 
  ppsymbol
 
-脫銷傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，代表找到的符號。
+擴展傳回 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件，代表找到的符號。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回 `S_OK`。 `S_FALSE`如果找不到符號，則傳回。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果找不到符號，則會傳回。 否則會傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

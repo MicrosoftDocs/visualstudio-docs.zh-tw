@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c6a65bdca680bac7c3a5b2e6a5a671045cdef093
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467530"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
-藉由索引或名稱來抓取資料表。
+藉由索引或名稱抓取資料表。
 
 ## <a name="syntax"></a>語法
 
@@ -34,17 +34,17 @@ HRESULT Item ( 
 #### <a name="parameters"></a>參數
  `index`
 
-在要抓取之[IDiaTable](../../debugger/debug-interface-access/idiatable.md)的索引或名稱。 如果使用整數變異，它必須在0到-1 的範圍內 `count` ，其中 `count` 是[IDiaEnumTables：： get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)方法所傳回的。
+在要抓取之 [IDiaTable](../../debugger/debug-interface-access/idiatable.md) 的索引或名稱。 如果使用整數變異數，它必須在0到-1 的範圍內 `count` ，其中 `count` 是 [IDiaEnumTables：： get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) 方法所傳回的。
 
  `table`
 
-脫銷傳回[IDiaTable](../../debugger/debug-interface-access/idiatable.md)物件，代表所需的資料表。
+擴展傳回代表所需資料表的 [IDiaTable](../../debugger/debug-interface-access/idiatable.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 如果指定了字串 variant，則字串會命名特定的資料表。 名稱應該是常數中所定義的其中一個資料表名稱[（Debug Interface ACCESS SDK）](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)。
+ 如果指定了字串變數，則字串會命名為特定的資料表。 名稱應該是常數中所定義的其中一個資料表名稱 [ (Debug Interface ACCESS SDK) ](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)。
 
 ## <a name="example"></a>範例
 
