@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cb199d74ade593d0bc8318c27bc96ffbf70e4dcf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194940"
 ---
-# <a name="markerseries-class"></a>marker_series 類別
+# <a name="marker_series-class"></a>marker_series 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 表示由單一提供者產生之事件的序列通道。  
@@ -35,21 +35,21 @@ class marker_series;
   
 ### <a name="public-constructors"></a>公用建構函式  
   
-|名稱|說明|  
+|Name|描述|  
 |----------|-----------------|  
 |[marker_series::marker_series 建構函式](../profiling/marker-series-marker-series-constructor.md)|初始化 `marker_series` 類別的新執行個體。|  
 |[marker_series::~marker_series 解構函式](../profiling/marker-series-tilde-marker-series-destructor.md)|終結 marker_series 物件並釋放所有配置的資源。|  
   
 ### <a name="public-methods"></a>公用方法  
   
-|名稱|說明|  
+|Name|描述|  
 |----------|-----------------|  
 |[marker_series::is_enabled 方法](../profiling/marker-series-is-enabled-method.md)|判斷是否有任何工作階段啟用該提供者。|  
 |[marker_series::write_alert 方法](../profiling/marker-series-write-alert-method.md)|將警示寫入並行視覺化檢視追蹤檔。|  
 |[marker_series::write_flag 方法](../profiling/marker-series-write-flag-method.md)|將旗標寫入並行視覺化檢視追蹤檔。|  
 |[marker_series::write_message 方法](../profiling/marker-series-write-message-method.md)|將訊息寫入並行視覺化檢視追蹤檔。|  
   
-## <a name="inheritance-hierarchy"></a>繼承階層  
+## <a name="inheritance-hierarchy"></a>繼承階層架構  
  `marker_series`  
   
 ## <a name="requirements"></a>需求  
@@ -58,4 +58,4 @@ class marker_series;
  **命名空間：** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>另請參閱  
- [diagnostic 命名空間](../profiling/diagnostic-namespace.md)
+ [診斷命名空間](../profiling/diagnostic-namespace.md)

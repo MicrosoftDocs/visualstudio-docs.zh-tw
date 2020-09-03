@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetFunctionLineOffset |Microsoft Docs
+title: IDebugComPlusSymbolProvider：： GetFunctionLineOffset |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1b141d7014850076b039afafc1d4637f95360f12
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194710"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取表示指定的行位移的函式內的位址。  
+抓取函式內表示指定之行位移的位址。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,19 +43,19 @@ int GetFunctionLineOffset(
   
 #### <a name="parameters"></a>參數  
  `pAddress`  
- [in]表示函式的位址。  
+ 在代表函式的位址。  
   
  `dwLine`  
- [in]位移從函式的開頭的行。  
+ 在函數開頭的行位移。  
   
  `ppNewAddress`  
- [out]表示行位移函式的開頭的新位址。  
+ 擴展代表從函式開頭算起之行位移的新位址。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
+ 下列範例示範如何針對公開[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbolProvider**物件，執行這個方法。  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetFunctionLineOffset(  

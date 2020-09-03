@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5e3c9a43b6903522fe2caf0e329f8e8faa69cd6b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161084"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此介面代表實作的物件的集合[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面。  
+這個介面代表執行 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 介面的物件集合。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,31 +30,31 @@ ms.locfileid: "68161084"
 IEnumDebugFields : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- 符號提供者來提供實作的物件組實作這個介面[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面。 請注意，這不是標準的 COM 列舉的緣故[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)方法。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ 這個介面是由符號提供者所執行，以提供可執行 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 介面的物件集合。 請注意，這不是標準的 COM 列舉，因為 [GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md) 方法是否存在。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 這個介面由[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)並[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)和[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)會傳回這個介面。  
   
-## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 這個介面會實作下列方法。  
+## <a name="methods-in-vtable-order"></a>採用 Vtable 順序的方法  
+ 這個介面會實作為下列方法。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
-|[下一個](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|擷取下的一組[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)列舉中的物件。|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|略過指定的數目的項目。|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|將列舉重設第一個項目中。|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|擷取一份目前的列舉型別。|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)|擷取列舉中的項目數。|  
+|[下一個](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|從列舉中抓取下一組 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 物件。|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|略過指定數目的專案。|  
+|[重設](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|將列舉重設為第一個專案。|  
+|[複製](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|抓取目前列舉的複本。|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)|捕獲列舉中的專案數。|  
   
 ## <a name="remarks"></a>備註  
   
 ## <a name="requirements"></a>需求  
- 標頭： sh.h  
+ 標頭： sh. h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   

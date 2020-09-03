@@ -15,10 +15,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 2e7e031836c9762d9666a5624e78ecc7c8cc7dd9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77275208"
 ---
 # <a name="options-text-editor-cc-advanced"></a>進階、C/C++、文字編輯器、選項
@@ -52,7 +52,7 @@ ms.locfileid: "77275208"
 
 **停用隱含清除**
 
-程式碼瀏覽資料庫不會清除不再參考的隱含檔案。 此選項會防止從資料庫移除不再使用的隱含檔案。 例如，如果您將參考 mapi.h 的 `#include` 指示詞新增至其中一個原始程式檔，則會找到 mapi.h 並編製其索引。 如果您接著移除 #include，並且未在其他位置參考此檔案，則除非您選擇此選項，否則最後會移除其相關資訊。 （請參閱**重新掃描解決方案間隔**選項。顯式重新掃描解決方案時，將忽略此選項。
+程式碼瀏覽資料庫不會清除不再參考的隱含檔案。 此選項會防止從資料庫移除不再使用的隱含檔案。 例如，如果您將參考 mapi.h 的 `#include` 指示詞新增至其中一個原始程式檔，則會找到 mapi.h 並編製其索引。 如果您接著移除 #include，並且未在其他位置參考此檔案，則除非您選擇此選項，否則最後會移除其相關資訊。  (請參閱 [ **重新掃描方案間隔** ] 選項。當您明確地重新掃描方案時，會忽略這個選項 ) 。
 
 **停用外部相依性資料夾**
 
@@ -64,17 +64,17 @@ ms.locfileid: "77275208"
 
 **重新掃描方案間隔**
 
-以您指定的間隔排定 [立即重新掃描方案] 工作。 您必須指定 0 到 5000 分鐘。 預設值為 60 分鐘。 重新掃描方案時，會檢查檔案時間戳記，以判斷是否在 IDE 外部變更檔案。 （在 IDE 中所做的更改將自動跟蹤，並更新檔。將檢查隱式包含的檔，以確定它們是否仍被引用。
+以您指定的間隔排定 [立即重新掃描方案] 工作。 您必須指定 0 到 5000 分鐘。 預設值為 60 分鐘。 重新掃描方案時，會檢查檔案時間戳記，以判斷是否在 IDE 外部變更檔案。 系統會自動追蹤在 IDE 中進行的 (變更，而且會更新檔案。 ) 隱含包含的檔案會進行檢查，以判斷它們是否仍在參考中。
 
 ## <a name="diagnostic-logging"></a>診斷記錄
 
 如果 Microsoft 要求您收集進階資訊來診斷問題，則會提供這些選項。 記錄資訊不適用於使用者，建議您將它停用。
 
-**啟用日誌記錄**
+**啟用記錄**
 
 啟用診斷記錄至輸出視窗。
 
-**日誌記錄級別**
+**記錄層級**
 
 設定 0 到 5 的記錄詳細資訊。
 
@@ -182,7 +182,7 @@ IntelliSense 更新會延遲到提出 IntelliSense 的實際要求時。 此延�
 
 當成員清單適用時，以 '->' 取代 '.'。
 
-## <a name="references"></a>參考
+## <a name="references"></a>參考資料
 
 **停用解析**
 
@@ -208,4 +208,4 @@ IntelliSense 更新會延遲到提出 IntelliSense 的實際要求時。 此延�
 
 ## <a name="see-also"></a>另請參閱
 
-- [設置特定于語言的編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)
+- [設定語言特定編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)

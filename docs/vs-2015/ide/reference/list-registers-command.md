@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3476244d3044eb80dbfce3559479421b012cc5fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659504"
 ---
 # <a name="list-registers-command"></a>列出暫存器命令
@@ -35,8 +35,8 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 [/Unwatch [{register|registerGroup}...]]
 ```
 
-## <a name="switches"></a>參數
- /Display [{`register`&#124; `registerGroup`} ...]顯示指定之 `register` 或 `registerGroup` 的值。 如果未指定 `register` 或 `registerGroup`，則會顯示暫存器的預設清單。 如果未指定參數，則行為是相同的。 例如:
+## <a name="switches"></a>交換器
+ /Display [{ `register`&#124;`registerGroup` } ...]顯示指定或的值 `register` `registerGroup` 。 如果未指定 `register` 或 `registerGroup`，則會顯示暫存器的預設清單。 如果未指定參數，則行為是相同的。 例如：
 
  `Debug.ListRegisters /Display eax`
 
@@ -44,11 +44,11 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
  `Debug.ListRegisters eax`
 
- /List 顯示清單中的所有暫存器群組。
+ /List 會顯示清單中的所有註冊群組。
 
- /Watch [{`register`&#124; `registerGroup`} ...]將一個或多個 `register` 或 `registerGroup` 值新增至清單。
+ /Watch [{ `register`&#124;`registerGroup` } ...]將一或多個 `register` 或 `registerGroup` 值加入清單中。
 
- /Unwatch [{`register`&#124; `registerGroup`} ...]從清單中移除一或多個 `register` 或 `registerGroup` 值。
+ /Unwatch [{ `register`&#124;`registerGroup` } ...]從清單中移除一或多個 `register` 或 `registerGroup` 值。
 
 ## <a name="remarks"></a>備註
  別名 `r` 可以用來取代 `Debug.ListRegisters`。
@@ -60,5 +60,5 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 r /Display Flags
 ```
 
-## <a name="see-also"></a>請參閱
- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)的[調試基本概念：暫存器視窗](../../debugger/debugging-basics-registers-window.md)[如何：使用](../../debugger/how-to-use-the-registers-window.md)暫存器視窗
+## <a name="see-also"></a>另請參閱
+ [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)[調試基本概念：暫存器視窗](../../debugger/debugging-basics-registers-window.md)[如何：使用](../../debugger/how-to-use-the-registers-window.md)暫存器視窗

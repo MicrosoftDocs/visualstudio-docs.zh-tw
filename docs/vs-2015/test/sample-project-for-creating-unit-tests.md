@@ -12,10 +12,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d495d0bf12c900d34a04a84e950b002494b7b5c3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660402"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>用於建立單元測試的範例專案
@@ -25,11 +25,11 @@ ms.locfileid: "72660402"
 
 - [逐步解說：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)。 此逐步解說會引導您逐步完成建立及自訂單元測試、加以執行，以及檢查測試結果。
 
-- [逐步解說：執行測試並檢視程式碼涵蓋範圍](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)。 此逐步解說將說明如何檢視程式碼涵蓋範圍資料，該資料會顯示專案程式碼中正在受測試的部分。
+- [逐步解說：執行測試並查看程式碼涵蓋範圍](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)。 此逐步解說將說明如何檢視程式碼涵蓋範圍資料，該資料會顯示專案程式碼中正在受測試的部分。
 
 - [逐步解說：使用命令列測試公用程式](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)。 在此逐步解說中，您可以使用 MSTest.exe 命令列公用程式來執行測試及檢視結果。
 
-## <a name="sample-code"></a>程式碼範例
+## <a name="sample-code"></a>範例程式碼
  此範例中唯一刻意設計的錯誤是在 Debit 方法 "m_balance += amount" 中，等號前面應該是減號，而不是加號。
 
 ```
@@ -131,5 +131,5 @@ namespace BankAccountNS
 ## <a name="working-with-the-code"></a>使用程式碼
  若要使用此程式碼，您必須先在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中為其建立專案。 請遵循[逐步解說：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)中＜準備逐步解說＞一節的步驟。
 
-## <a name="see-also"></a>請參閱
- [逐步解說：建立和執行 Managed 程式碼的單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)[逐步解說：執行測試和觀看程式碼涵蓋範圍](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)[逐步解說：使用命令列測試公用程式](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)
+## <a name="see-also"></a>另請參閱
+ [逐步解說：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)[逐步解說：執行測試和查看程式碼涵蓋範圍](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)[逐步解說：使用命令列測試公用程式](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)

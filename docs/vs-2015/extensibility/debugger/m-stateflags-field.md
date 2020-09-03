@@ -11,22 +11,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 794ab8baac441fc14d41c2d30b9db4b0894e88e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149090"
 ---
-# <a name="mstateflags-field"></a>m_stateFlags 欄位
+# <a name="m_stateflags-field"></a>m_stateFlags 欄位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-儲存的目前狀態的相關資訊<xref:System.Threading.Tasks.Task>物件。  
+儲存物件目前狀態的相關資訊 <xref:System.Threading.Tasks.Task> 。  
   
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **組件：** mscorlib （在 mscorlib.dll 中)  
+ **元件：** mscorlib.dll) 中的 mscorlib (  
   
- 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。  
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,9 +35,9 @@ ms.locfileid: "68149090"
 ```  
   
 ## <a name="remarks"></a>備註  
- 您通常會使用<xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName>屬性來存取這個值。  
+ 您通常會使用 <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> 屬性來存取此值。  
   
- 這個成員可以是下列值的任何組合：  
+ 這個成員可以是下列值的任意組合：  
   
 - [TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)  
   

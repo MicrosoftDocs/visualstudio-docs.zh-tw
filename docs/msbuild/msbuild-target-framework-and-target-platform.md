@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c55ce57adb5b86941b5953732d57a642eb4f943
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350832"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 目標 Framework 和目標平台
 
-您可以建置專案，以在特定 .NET Framework 版本的「目標 Framework」**，以及特定軟體架構的「目標平台」** 上執行。  例如，您可以將應用程式設為目標，以便在與80x86 處理器系列（"x86"）相容的32位平臺上，于 .NET Framework 2.0 上執行。 目標 Framework 和目標平台的組合稱為「目標內容」**。
+您可以建置專案，以在特定 .NET Framework 版本的「目標 Framework」**，以及特定軟體架構的「目標平台」** 上執行。  例如，您可以將應用程式設為目標，以在與80x86 處理器系列 ( "x86" ) 相容的32位平臺上，于 .NET Framework 2.0 上執行。 目標 Framework 和目標平台的組合稱為「目標內容」**。
 
 > [!IMPORTANT]
 > 本文說明指定目標 Framework 的舊方式。 SDK 樣式專案可啟用不同的 TargetFrameworks，例如 netstandard。 如需詳細資訊，請參閱[目標 Framework](/dotnet/standard/frameworks)。
@@ -30,13 +30,13 @@ ms.locfileid: "85350832"
 
 - .NET Framework 2.0 (包含在 Visual Studio 2005 中)
 
-- .NET Framework 3.0 （包含在 Windows Vista 中）
+- Windows Vista 隨附的 .NET Framework 3.0 () 
 
-- .NET Framework 3.5 （包含在 Visual Studio 2008）
+- Visual Studio 2008 中包含 .NET Framework 3.5 () 
 
 - .NET Framework 4.5.2
 
-- .NET Framework 4.6 （包含在 Visual Studio 2015）
+- Visual Studio 2015 中包含 .NET Framework 4.6 () 
 
 - .NET Framework 4.6.1
 
@@ -61,7 +61,7 @@ ms.locfileid: "85350832"
  「目標設定檔」** 是目標 Framework 的子集。 例如，.NET Framework 4 用戶端設定檔不包含 MSBuild 組件的參考。
 
  > [!NOTE]
- > 目標設定檔僅適用于[可移植的類別庫](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library)。
+ > 目標設定檔僅適用于 [可移植的類別庫](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library)。
 
  目標設定檔是在專案檔的 `TargetFrameworkProfile` 屬性中指定。 您可以在 IDE 中，使用專案屬性頁中的目標 Framework 控制項來變更目標設定檔。
 

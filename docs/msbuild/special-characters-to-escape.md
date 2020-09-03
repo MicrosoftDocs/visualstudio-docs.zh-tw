@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9c3a0feed4177bd41ee2b77edc49336bfda3171b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184038"
 ---
 # <a name="special-characters-to-escape"></a>要逸出的特殊字元
 
 只有正在使用特殊字元的內容中，特殊字元具有特殊意義時，才必須逸出。 例如，星號 (*) 只有在項目定義的 "Include" 和 "Exclude" 屬性中，或是呼叫  <xref:Microsoft.Build.Tasks.CreateItem> 時，才是特殊字元。 在其他情況下，星號會視為星號常值。 雖然您不需要逸出專案檔中的所有星號，但要這麼做也無妨。
 
- 使用標記法% \<xx> 取代特殊字元，其中 \<xx> 代表 ASCII 字元的十六進位值。 例如，若要使用星號 (*) 做為常值字元，請使用值 `%2A`。
+ 使用標記法% \<xx> 代替特殊字元，其中 \<xx> 代表 ASCII 字元的十六進位值。 例如，若要使用星號 (*) 做為常值字元，請使用值 `%2A`。
 
  要逸出的特殊字元完整清單如下：
 
@@ -43,9 +43,9 @@ ms.locfileid: "84184038"
 |* |%2A|星號，在項目的 Include/Exclude 區段中描述檔案規格時為萬用字元。|
 
 > [!NOTE]
-> 在某些情況下，您可能需要將雙引號（"）字元（例如在工作內使用時）換成引號 `Exec` 。
+> 在某些情況下，您可能需要將雙引號 ( ") 字元，例如在工作中使用時 `Exec` 。
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：在 MSBuild 中轉義特殊字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)
+- [如何：在 MSBuild 中 Escape 特殊字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

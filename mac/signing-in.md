@@ -7,17 +7,17 @@ ms.date: 01/21/2020
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.topic: how-to
 ms.openlocfilehash: 86d701e50b4d9f5b8e4c9af0c736c117cd2e91be
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950542"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>登入 Visual Studio for Mac
 
 登入 Visual Studio for Mac 是您[啟用訂用帳戶](enable-subscription.md)的方式。 當您下載 Visual Studio for Mac 時，預設一律會取得 Community 版本。 如果您有 [Professional 或 Enterprise 授權](https://visualstudio.microsoft.com/vs/compare/)，您應該在第一次執行時登入，以解除鎖定任何其他功能。 此外，您還能獲得以下內容：
 
-* **Visual Studio Dev Essentials 程式的存取權**–此套裝程式含免費的軟體供應專案、訓練、支援等等。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 。
+* **存取 Visual Studio Dev Essentials 程式** –此方案包含免費的軟體供應專案、訓練、支援等等。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 。
 
 * 系統對於相同帳戶不會再次提示輸入認證，即可在 IDE 中**自動連線到 Azure**。
 
@@ -40,7 +40,7 @@ ms.locfileid: "85950542"
 
     ![Microsoft 認證對話方塊](media/signing-in-image13.png)
 
-4. 登入之後，您會看到選取鍵盤快速鍵的選項。 選擇您想要使用並**繼續**的選項。 系統會接著提示您輸入 Visual Studio 2019 for Mac 開始視窗。 您可以在此開啟或建立新的專案：
+4. 登入之後，您會看到選取鍵盤快速鍵的選項。 選擇您想要使用的選項並 **繼續**。 然後，系統會提示您輸入 Visual Studio 2019 for Mac 開始視窗。 您可以在此開啟或建立新的專案：
 
     ![登入成功](media/signing-in-image14.png)
 

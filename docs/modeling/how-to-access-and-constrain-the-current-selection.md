@@ -10,56 +10,56 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1f5aaa106e00f9b10eb88892bcc978b92a01c79
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545687"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>如何：存取及限制目前的選取範圍
 
-當您針對網域指定的語言撰寫命令或軌跡處理常式時，您可以決定使用者以滑鼠右鍵按一下哪個元素。 您也可以防止選取某些圖形或欄位。 例如，您可以在使用者按一下圖示裝飾專案時進行排列，改為選取包含它的圖形。 以這種方式限制選取，可減少您必須撰寫的處理常式數目。 它也可以讓使用者更輕鬆地按一下圖形中的任何位置，而不必避免裝飾專案。
+當您針對特定領域語言撰寫命令或軌跡處理常式時，可以決定使用者以滑鼠右鍵按一下的元素。 您也可以防止選取某些圖形或欄位。 例如，您可以安排在使用者按一下圖示裝飾專案時，改為選取包含該專案的圖形。 以這種方式限制選取，可減少您必須撰寫的處理常式數目。 它也可讓使用者更輕鬆地按一下圖形中的任何位置，而不需要避免裝飾專案。
 
 ## <a name="access-the-current-selection-from-a-command-handler"></a>從命令處理常式存取目前的選取範圍
 
-特定領域語言的命令集類別包含您自訂命令的命令處理常式。 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>類別，這是定義域特定語言所衍生的命令集類別，它會提供幾個成員來存取目前的選取範圍。
+特定領域語言的命令集類別包含您自訂命令的命令處理常式。 從中 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 衍生特定領域語言之命令集類別的類別，可提供幾個成員來存取目前的選取範圍。
 
-視命令而定，命令處理常式可能需要模型設計師、模型瀏覽器或使用中視窗中的選取專案。
+視命令而定，命令處理常式可能需要在模型設計師、模型 explorer 或使用中視窗中選取。
 
 ### <a name="to-access-selection-information"></a>存取選取資訊
 
-1. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>類別會定義可用於存取目前選取範圍的下列成員。
+1. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>類別會定義下列可以用來存取目前選取範圍的成員。
 
     |member|描述|
     |-|-|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A> 方法|`true`如果在模型設計師中選取的任何元素為區間圖形，則傳回，否則傳回 `false` 。|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A> 方法|`true`如果在模型設計師中選取圖表，則傳回，否則傳回 `false` 。|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A> 方法|`true`如果在模型設計師中只選取一個專案，則傳回，否則傳回 `false` 。|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A> 方法|`true`如果在使用中視窗中只選取一個專案，則傳回，否則傳回 `false` 。|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A> 方法|`true`如果模型設計師中選取的任何元素是區間圖形，則傳回，否則傳回 `false` 。|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A> 方法|`true`如果已在模型設計師中選取圖表，則會傳回，否則會傳回 `false` 。|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A> 方法|`true`如果模型設計師中只選取一個元素，則傳回，否則為 `false` 。|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A> 方法|`true`如果在使用中視窗中只選取一個專案，則傳回，否則為 `false` 。|
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> 屬性|取得在模型設計師中選取之元素的唯讀集合。|
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> 屬性|取得在使用中視窗中選取之元素的唯讀集合。|
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> 屬性|取得模型設計師中選取範圍的主要元素。|
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> 屬性|取得使用中視窗中選取範圍的主要元素。|
 
-2. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A>類別的屬性（property） <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 可讓您存取 <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> 代表模型設計師視窗的物件，並在模型設計師中提供其他存取所選取之元素的許可權。
+2. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A>類別的屬性 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 可讓您存取 <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> 代表模型設計師視窗的物件，並提供模型設計師中所選取專案的其他存取權。
 
-3. 此外，所產生的程式碼會針對網域指定的語言，在命令集類別中定義 [explorer 工具視窗] 屬性和 [explorer 選取範圍] 屬性。
+3. 此外，所產生的程式碼會針對網域指定的語言，在命令集類別中定義 explorer 工具視窗屬性和 explorer 選取專案屬性。
 
-    - [Explorer 工具視窗] 屬性會針對網域指定的語言，傳回 explorer 工具視窗類別的實例。 Explorer 工具視窗類別衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.ModelExplorerToolWindow> 類別，並代表特定領域語言的模型瀏覽器。
+    - [Explorer] 工具視窗屬性會傳回網域特定語言的 [explorer] 工具視窗類別的實例。 Explorer 工具視窗類別衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.ModelExplorerToolWindow> 類別，並代表特定領域語言的模型瀏覽器。
 
-    - `ExplorerSelection`屬性會針對特定領域語言，傳回 [模型 explorer] 視窗中選取的專案。
+    - `ExplorerSelection`屬性會在 [模型瀏覽器] 視窗中，針對特定領域語言傳回選取的元素。
 
-## <a name="determine-which-window-is-active"></a>判斷作用中的視窗
+## <a name="determine-which-window-is-active"></a>判斷使用中的視窗
 
-<xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService>介面包含定義成員，可讓您存取 shell 中目前的選取範圍狀態。 您可以 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 透過 `MonitorSelection` 每個的基類中所定義的屬性，從 package 類別或命令集類別取得特定領域語言的物件。 封裝類別衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage> 類別，而命令集類別衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 類別。
+<xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService>介面包含定義成員，可讓您存取 shell 中目前的選取狀態。 您可以 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 透過 `MonitorSelection` 每個類別之基類中所定義的屬性，從 package 類別或命令集類別取得物件。 封裝類別衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage> 類別，而且命令集類別衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 類別。
 
-### <a name="to-determine-from-a-command-handler-what-type-of-window-is-active"></a>從命令處理常式判斷作用中的視窗類型
+### <a name="to-determine-from-a-command-handler-what-type-of-window-is-active"></a>從命令處理常式判斷使用中的視窗類型
 
-1. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.MonitorSelection%2A>類別的屬性 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 會傳回 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 物件，以提供對 shell 中目前選取範圍狀態的存取。
+1. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.MonitorSelection%2A>類別的屬性 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 會傳回 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 物件，此物件可讓您存取 shell 中目前的選取範圍狀態。
 
-2. <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService.CurrentSelectionContainer%2A>介面的屬性 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 會取得使用中的選取容器，這可能與使用中視窗不同。
+2. <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService.CurrentSelectionContainer%2A>介面的屬性 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 會取得作用中的選取範圍容器，此容器可能與使用中視窗不同。
 
-3. 將下列屬性新增至您的網域特定語言的命令集類別，以判斷作用中的視窗類型。
+3. 將下列屬性新增至網域特定語言的命令集類別，以判斷哪一種視窗處於作用中狀態。
 
     ```csharp
     // using Microsoft.VisualStudio.Modeling.Shell;
@@ -89,27 +89,27 @@ ms.locfileid: "85545687"
 
 ## <a name="constrain-the-selection"></a>限制選取範圍
 
-藉由加入選取規則，您可以控制當使用者選取模型中的元素時，所要選取的元素。 例如，若要讓使用者將數個元素視為單一單位，您可以使用選取範圍規則。
+藉由新增選取規則，您可以控制當使用者選取模型中的元素時，所要選取的專案。 例如，若要允許使用者將多個元素視為單一單位，您可以使用選取規則。
 
-### <a name="to-create-a-selection-rule"></a>建立選取範圍規則
+### <a name="to-create-a-selection-rule"></a>若要建立選取規則
 
 1. 在 DSL 專案中建立自訂程式碼檔案
 
-2. 定義衍生自類別的選取範圍規則類別 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules> 。
+2. 定義衍生自類別的選取規則類別 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules> 。
 
 3. 覆寫 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules.GetCompliantSelection%2A> 選取範圍規則類別的方法，以套用選取準則。
 
-4. 將 ClassDiagram 類別的部分類別定義加入至您的自訂程式碼檔案。
+4. 將 ClassDiagram 類別的部分類別定義新增至您的自訂程式碼檔案。
 
-     `ClassDiagram`類別衍生自類別， <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> 並定義于 DSL 專案中產生的程式碼檔案（Diagram.cs）中。
+     `ClassDiagram`類別衍生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> 類別，並定義于所產生的程式碼檔案（Diagram.cs）中（在 DSL 專案中）。
 
-5. 覆寫 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> 類別的屬性 `ClassDiagram` ，以傳回自訂選取範圍規則。
+5. 覆寫 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> 類別的屬性 `ClassDiagram` ，以傳回自訂選取規則。
 
-     屬性的預設執行 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> 會取得不會修改選取範圍的選取範圍規則物件。
+     屬性的預設執行 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> 會取得未修改選取範圍的選取規則物件。
 
 ### <a name="example"></a>範例
 
-下列程式碼檔案會建立展開選取範圍的選取範圍規則，以包含一開始選取之每個網域圖形的所有實例。
+下列程式碼檔案會建立一個選取範圍規則，展開選取範圍，以包含一開始選取之每個網域圖形的所有實例。
 
 ```csharp
 using System;

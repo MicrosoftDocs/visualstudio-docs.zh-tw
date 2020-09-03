@@ -1,5 +1,5 @@
 ---
-title: HOW TO：顯示執行緒屬性 |Microsoft Docs
+title: 如何：顯示執行緒屬性 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,21 +12,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4a9d311563134850a7b2efd04eb6d6ed00dfcc25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205357"
 ---
-# <a name="how-to-display-thread-properties"></a>作法：顯示執行緒屬性
+# <a name="how-to-display-thread-properties"></a>如何：顯示執行緒屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-若要深入了解中所列的執行緒[執行緒檢視](../debugger/threads-view.md)，使用[執行緒屬性對話方塊](../debugger/thread-properties-dialog-box.md)。  
+若要深入瞭解 [ [執行緒視圖](../debugger/threads-view.md)] 中所列的執行緒，請使用 [ [執行緒屬性] 對話方塊](../debugger/thread-properties-dialog-box.md)。  
   
-### <a name="to-open-a-thread-properties-dialog-box"></a>若要開啟的執行緒屬性對話方塊  
+### <a name="to-open-a-thread-properties-dialog-box"></a>若要開啟執行緒屬性對話方塊  
   
-1. 從樹狀結構中顯示選取的執行緒[執行緒檢視](../debugger/threads-view.md)。  
+1. 從樹狀結構中顯示的樹狀結構[中選取執行緒。](../debugger/threads-view.md)  
   
-2. 從**檢視**功能表上，選擇**屬性**。  
+2. 從 **[檢視]** 功能表中選擇 **[屬性]**。  
   
-   屬性 對話方塊不是強制回應，因此您可以按一下 檢視 視窗中的另一個項目，並在對話方塊中會顯示在選取的項目上的資訊。
+   [屬性] 對話方塊並非強制回應，因此您可以按一下 [視圖] 視窗中的另一個專案，對話方塊將會顯示所選取專案的相關資訊。

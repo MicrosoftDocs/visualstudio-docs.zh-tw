@@ -5,16 +5,16 @@ author: jmatthiesen
 ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: d687215bc91dc01a284c49c141a6e52a16ce9e7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 909da0bcb1ad3ca080d6bf4ba4e5184c1c2da98f
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "67692131"
+ms.locfileid: "89402635"
 ---
 # <a name="working-with-subversion"></a>使用 Subversion
 
-Subversion 是集中式的版本控制系統，可讓您簽出集中式資料的單一主要複本。 與 Git 相較之下，簽出 Subversion 存放庫不會複製整個存放庫，而只會取得該時間點的快照集。
+Subversion 是集中式版本控制系統，可讓您簽出集中式資料的單一主要複本。 與 Git 相較之下，簽出 Subversion 存放庫不會複製整個存放庫，而只會取得該時間點的快照集。
 
 Subversion 使用「複製-修改-合併」模型，允許使用者同時處理相同的存放庫。 這表示每位使用者都會建立集中式資料的本機或工作複本，接著就可以獨立處理它們。 會以時間形式合併使用者對工作複本的變更。
 

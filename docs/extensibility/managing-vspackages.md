@@ -1,5 +1,5 @@
 ---
-title: 管理 VS 包 |微軟文件
+title: 管理 Vspackage |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,35 +14,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 60745d07679ae53b85d169473ed37ab314b67624
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702645"
 ---
 # <a name="manage-vspackages"></a>管理 VSPackages
-在大多數情況下,您不必擔心管理 VSPackage,因為專案和專案範本會自動註冊和載入套件。 但是,在某些情況下,您可能需要學習更多,以便管理您的包。
+在大多數情況下，您不需要擔心管理 Vspackage，因為專案和專案範本會自動註冊和載入封裝。 不過，在某些情況下，您可能需要更多的學習，才能管理您的封裝。
 
 ## <a name="use-the-experimental-instance"></a>使用實驗實例
- 要瞭解有關實驗實例的更多,請參閱[實驗實例](../extensibility/the-experimental-instance.md)。
+ 若要瞭解實驗實例的詳細資訊，請參閱 [實驗實例](../extensibility/the-experimental-instance.md)。
 
-## <a name="register-and-unregister-vspackages"></a>註冊與取消註冊 VS 套件
- 要瞭解如何註冊和取消註冊 VS 包和其他類型的擴展,請參閱[註冊和取消註冊 VS 套件](../extensibility/registering-and-unregistering-vspackages.md)。
+## <a name="register-and-unregister-vspackages"></a>註冊和取消註冊 Vspackage
+ 若要瞭解如何註冊及取消註冊 Vspackage 和其他類型的延伸模組，請參閱 [註冊和取消註冊 vspackage](../extensibility/registering-and-unregistering-vspackages.md)。
 
-## <a name="load-a-vspackage"></a>載入 VS 套件
- VSPackages 可以設置為打開特定 CMDUICONTEXT GUID 時自動載入。 有關詳細資訊,請參閱載[入 VS 套件](../extensibility/loading-vspackages.md)。
+## <a name="load-a-vspackage"></a>載入 VSPackage
+ 當特定 CMDUICONTEXT GUID 開啟時，可以將 Vspackage 設定為自動載入。 如需詳細資訊，請參閱 [Load vspackage](../extensibility/loading-vspackages.md)。
 
-## <a name="use-asyncpackage-to-load-vspackages-in-the-background"></a>使用非同步套件在背景中載入 VS 套件
- 該`AsyncPackage`類允許在後台線程上載入包,從而在 Visual Studio 中實現更好的 UI 回應。 有關詳細資訊,請參閱[:使用非同步包在後台載入 VS 套件](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)。
+## <a name="use-asyncpackage-to-load-vspackages-in-the-background"></a>在背景中使用 AsyncPackage 載入 Vspackage
+ `AsyncPackage`類別可讓您在背景執行緒上載入封裝，以提升 Visual Studio 中的 UI 回應性。 如需詳細資訊，請參閱 [如何：在背景中使用 AsyncPackage 載入 vspackage](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)。
 
-## <a name="rule-based-ui-context-for-extensions"></a>擴充的基於規則的 UI 功能
- 基於規則的 UI 上下文允許擴充作者定義使用 UI 上下文並載入關聯的 VS 包的確切條件。 有關詳細資訊,請參閱[操作操作:對可視化工作室擴展使用基於規則的 UI 上下文](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)。
+## <a name="rule-based-ui-context-for-extensions"></a>延伸模組的以規則為基礎的 UI 內容
+ 以規則為基礎的 UI 內容，可讓延伸模組作者定義啟用 UI 內容並載入相關聯 Vspackage 的精確條件。 如需詳細資訊，請參閱 [如何：使用 Visual Studio 擴充功能的以規則為基礎的 UI 內容](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)。
 
 ## <a name="diagnose-extension-performance"></a>診斷延伸模組的效能
-擴展可能會影響啟動和解決方案載入性能。 瞭解如何計算 Visual Studio 擴充影響,以及如何在本地對其進行分析,以測試擴展是否可以顯示為影響擴展的性能。 有關詳細資訊,請參閱[如何:診斷擴展性能](how-to-diagnose-extension-performance.md)。
+擴充功能可能會影響啟動和解決方案載入效能。 瞭解如何計算 Visual Studio 擴充功能的影響，以及如何在本機進行分析以測試擴充功能是否會顯示為影響效能的擴充功能。 如需詳細資訊，請參閱 [如何：診斷延伸模組效能](how-to-diagnose-extension-performance.md)。
 
-## <a name="troubleshoot-vspackages"></a>排除 VS 套件容錯
- 瞭解對未載入或遇到錯誤的 VS 套件進行故障排除的技術:[對 VSPackages 進行故障排除](../extensibility/troubleshooting-vspackages.md)
+## <a name="troubleshoot-vspackages"></a>針對 Vspackage 進行疑難排解
+ 瞭解針對未載入或發生錯誤之 Vspackage 進行疑難排解的技術： [疑難排解 vspackage](../extensibility/troubleshooting-vspackages.md)
 
 ## <a name="see-also"></a>另請參閱
-- [VSPackage](../extensibility/internals/vspackages.md)
+- [VSPackages](../extensibility/internals/vspackages.md)

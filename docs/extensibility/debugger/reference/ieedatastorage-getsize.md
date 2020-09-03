@@ -1,5 +1,5 @@
 ---
-title: IEEData儲存:獲取大小 |微軟文件
+title: IEEDataStorage：： GetSize |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e7d9000889d082826f46bdceb0476dd5d06c24d2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718203"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
-返回此物件中包含的位元組數。
+傳回此物件中包含的位元組數目。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetSize(
 
 ## <a name="parameters"></a>參數
 `size`\
-[出]此物件中包含的位元組數。
+擴展此物件中包含的位元組數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 使用[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)方法檢索實際數據位元組。
+ 您可以 [使用 [已](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) 執行] 方法來取出實際的資料位元組。
 
 ## <a name="see-also"></a>另請參閱
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

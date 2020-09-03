@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: 8825BBAD-65C0-480F-9868-A01E64F28250
 ms.topic: troubleshooting
 ms.openlocfilehash: c631bae40d06a000e2e90c26ae5a9862c1e09aaa
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950576"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>疑難排解：更新程式在擷取資訊時發生錯誤

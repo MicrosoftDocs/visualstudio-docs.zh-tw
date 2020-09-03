@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.workload:
 - multiple
 ms.openlocfilehash: de0d2521f73da21ca7b6fc40edaecfadd5d703ed
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85371556"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>在 Visual Studio 中從範本建立 AI 專案

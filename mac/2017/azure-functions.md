@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: f2621ab30099baae5521c8b2226f288ec1a2531b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 009df6525696405914aeeb224e3817bbfbe27155
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938856"
+ms.locfileid: "89402622"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 簡介
 
@@ -161,4 +161,4 @@ Visual Studio for Mac 會建立包含預設函數的 .NET Standard 專案。 其
 
 - **影像大小調整工具** - 每當有 Blob 新增到容器時，這個函式都會建立調整過大小的影像。 這個範本接受路徑和連接字串、小型影像輸出及中型影像輸出。
 
-- **SAS 權杖** - 這個函式會為指定的 Azure 儲存體容器和 Blob 名稱產生 SAS 權杖。 除了函式名稱之外，這個範本也接受路徑和連線屬性。 路徑屬性是觸發程序會監視的儲存體帳戶內部路徑。 連線帳戶是包含儲存體帳戶連接字串的應用程式設定名稱。 **存取權限**也需要設定。 授權等級會控制是否函式需要 API 金鑰，以及使用哪一個金鑰；函式會使用函式金鑰；管理員則使用您的主要金鑰。 如需詳細資訊，請參閱 [C# Azure Function for generating SAS tokens](https://github.com/Azure-Samples/functions-dotnet-sas-token/) (用於產生 SAS 權杖的 C# Azure 函式) 樣本。
+- **SAS 權杖** - 這個函式會為指定的 Azure 儲存體容器和 Blob 名稱產生 SAS 權杖。 除了函式名稱之外，這個範本也接受路徑和連線屬性。 路徑屬性是觸發程序會監視的儲存體帳戶內部路徑。 連線帳戶是包含儲存體帳戶連接字串的應用程式設定名稱。 **存取權限**也需要設定。 授權層級可控制函數是否需要 API 金鑰和要使用的金鑰;函數會使用函式金鑰;系統管理員會使用您的帳戶存取金鑰。 如需詳細資訊，請參閱 [C# Azure Function for generating SAS tokens](https://github.com/Azure-Samples/functions-dotnet-sas-token/) (用於產生 SAS 權杖的 C# Azure 函式) 樣本。

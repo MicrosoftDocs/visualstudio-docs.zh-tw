@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator3::Parse2 |Microsoft Docs
+title: IDebugExpressionEvaluator3：:P arse2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3c8629fb996dd020882ce81ae9975ccd799d863c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148964"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-要剖析的運算式，指定的符號提供者和鑑定框架的位址，將轉換的運算式字串。  
+給定符號提供者和評估框架的位址，將運算式字串轉換為剖析的運算式。  
   
 ## <a name="syntax"></a>語法  
   
@@ -52,37 +52,37 @@ HRESULT Parse2 (
   
 #### <a name="parameters"></a>參數  
  `upstrExpression`  
- [in]要剖析的運算式字串。  
+ 在要剖析的運算式字串。  
   
  `dwFlags`  
- [in]集合[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)常數，以判斷要如何剖析運算式。  
+ 在 [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) 常數的集合，可決定運算式的剖析方式。  
   
  `nRadix`  
- [in]用來解譯任何數字資訊的基數。  
+ 在用來解讀任何數值資訊的基數。  
   
  `pSymbolProvider`  
- [in]符號提供者的介面。  
+ 在符號提供者的介面。  
   
  `pAddress`  
- [in]評估的畫面格的位址。  
+ 在評估框架的位址。  
   
  `pbstrError`  
- [out]以人類看得懂的文字，會傳回錯誤。  
+ 擴展以人們可讀取的文字形式傳回錯誤。  
   
  `pichError`  
- [out]傳回字元位置開始的錯誤中的運算式字串。  
+ 擴展傳回運算式字串中錯誤開始的字元位置。  
   
  `ppParsedExpression`  
- [out]在剖析的運算式會傳回[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)物件。  
+ 擴展傳回 [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) 物件中剖析的運算式。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法會產生剖析的運算式，不是實際的值。 剖析的運算式已準備好進行評估，也就是轉換成值。  
+ 這個方法會產生剖析的運算式，而不是實際值。 已剖析的運算式已可供評估，也就是轉換成值。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法，如**CEE**公開 （expose） 的物件[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)介面。  
+ 下列範例示範如何針對公開[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)介面的**產生 cee**物件，執行這個方法。  
   
 ```cpp#  
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,  

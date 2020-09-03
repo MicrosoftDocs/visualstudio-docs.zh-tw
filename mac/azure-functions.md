@@ -1,32 +1,32 @@
 ---
 title: Azure Functions 簡介
 description: 在 Visual Studio for Mac 中使用 Azure Functions。
-author: sayedihashimi
-ms.author: sayedha
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 600c4a21b6c9db8a6adb14e8fc96092f1782339f
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: 586d03e88ba3a2523dde00a6826980830ad54fbc
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938649"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402313"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 簡介
 
 Azure 函式是一種不必明確佈建或管理基礎結構，就能在雲端建立和執行事件驅動程式碼片段 (函式) 的方法。 如需 Azure Functions 的詳細資訊，請參閱 [Azure Functions 文件](/azure/azure-functions/)。
 
-## <a name="requirements"></a>規格需求
+## <a name="requirements"></a>需求
 
 Azure 函式工具隨附於 **Visual Studio for Mac 7.5** 和更新版本。
 
-若要建立和部署函式，您也需要 Azure 訂用帳戶。 如果您沒有 Azure 帳戶，您可以立即免費註冊，並收到12個月免費的熱門服務、$200 的免費點數，以及25個以上永遠免費的服務-> [https://azure.com/free](https://azure.com/free/dotnet) 。
+若要建立和部署函式，您也需要 Azure 訂用帳戶。 如果您沒有 Azure 帳戶，您可以立即免費註冊，並獲得12個月免費的熱門服務、$200 的免費點數和25項以上永遠免費的服務-> [https://azure.com/free](https://azure.com/free/dotnet) 。
 
 ## <a name="creating-your-first-azure-functions-project"></a>建立您的第一個 Azure Functions 專案
 
-1. 在 Visual Studio for Mac 中，選取 [檔案 **> 新增方案**]。
+1. 在 Visual Studio for Mac 中，選取 [檔案] **> [新方案**]。
 2. 從 [新增專案] 對話方塊，選取 [雲端] > [一般]**** 下的 Azure Functions 範本，然後按一下 [下一步]****：
 
     ![顯示 Azure 函式選項的 [新增專案] 對話方塊](media/azure-functions-image1.png)
@@ -91,16 +91,16 @@ Visual Studio for Mac 會建立包含預設函數的 .NET Standard 專案。 其
 
     [可用函數範本](#available-function-templates)一節提供 Azure 函數範本的清單。
 
-您可以使用上述程序，對函式應用程式專案新增更多函式。 專案中的每個函式都可以有不同的觸發程序，但函式必須只有一個觸發程序。 如需詳細資訊，請參閱[Azure Functions 觸發程式和](/azure/azure-functions/functions-triggers-bindings)系結概念。
+您可以使用上述程序，對函式應用程式專案新增更多函式。 專案中的每個函式都可以有不同的觸發程序，但函式必須只有一個觸發程序。 如需詳細資訊，請參閱 [Azure Functions 觸發程式和](/azure/azure-functions/functions-triggers-bindings)系結概念。
 
 ## <a name="publish-to-azure"></a>發佈至 Azure
 
-1. 以滑鼠右鍵按一下專案名稱，然後選取 [**發佈] > [發行至**azure]： [ ![ 發行至 azure] 功能表選項](media/azure-functions-image5.png)
+1. 以滑鼠右鍵按一下專案名稱，然後選取 [ **發行 > 發佈到 azure**：  ![ 發佈至 azure] 功能表選項](media/azure-functions-image5.png)
 2. 如果您已將 Azure 帳戶連線至 Visual  Studio for Mac，則會顯示可用的應用程式服務清單。 如果您尚未登入，則系統會提示您這麼做。
 3. 從 [Publish to Azure App Service] \(發行至 Azure App Service\)**** 對話方塊中，您可以選取現有應用程式服務，或按一下 [新增]**** 來建立新的應用程式服務。
 4. 在 [建立新的 App Service]**** 對話方塊中，輸入您的設定：![[發行至 Azure] 功能表選項](media/azure-functions-image7.png)
 
-    |設定  |說明  |
+    |設定  |描述  |
     |---------|---------|
     |**App Service 名稱**|識別新函數應用程式的全域唯一名稱。|
     |**訂用帳戶**|要使用的 Azure 訂用帳戶。|
@@ -121,7 +121,7 @@ Visual Studio for Mac 會建立包含預設函數的 .NET Standard 專案。 其
 
 您在 local.settings.json 中所新增的所有設定，也必須新增至 Azure 中的函式應用程式。 當您發行專案時，不會自動上傳這些設定。
 
-若要存取您的應用程式設定，請移至位於的 Azure 入口網站 [https://ms.portal.azure.com/](https://ms.portal.azure.com/) 。 在 [函數應用程式]**** 下，選取 [函數應用程式]****，並反白顯示您的函數名稱：
+若要存取您的應用程式設定，請移至 Azure 入口網站 [https://ms.portal.azure.com/](https://ms.portal.azure.com/) 。 在 [函數應用程式]**** 下，選取 [函數應用程式]****，並反白顯示您的函數名稱：
 
 ![Azure 函數功能表](media/azure-functions-image9.png)
 
@@ -159,4 +159,4 @@ Visual Studio for Mac 會建立包含預設函數的 .NET Standard 專案。 其
 
 - **影像大小調整工具** - 每當有 Blob 新增到容器時，這個函式都會建立調整過大小的影像。 這個範本接受路徑和連接字串、小型影像輸出及中型影像輸出。
 
-- **SAS 權杖** - 這個函式會為指定的 Azure 儲存體容器和 Blob 名稱產生 SAS 權杖。 除了函式名稱之外，這個範本也接受路徑和連線屬性。 路徑屬性是觸發程序會監視的儲存體帳戶內部路徑。 連線帳戶是包含儲存體帳戶連接字串的應用程式設定名稱。 **存取權限**也需要設定。 授權等級會控制是否函式需要 API 金鑰，以及使用哪一個金鑰；函式會使用函式金鑰；管理員則使用您的主要金鑰。 如需詳細資訊，請參閱 [C# Azure Function for generating SAS tokens](https://github.com/Azure-Samples/functions-dotnet-sas-token/) (用於產生 SAS 權杖的 C# Azure 函式) 樣本。
+- **SAS 權杖** - 這個函式會為指定的 Azure 儲存體容器和 Blob 名稱產生 SAS 權杖。 除了函式名稱之外，這個範本也接受路徑和連線屬性。 路徑屬性是觸發程序會監視的儲存體帳戶內部路徑。 連線帳戶是包含儲存體帳戶連接字串的應用程式設定名稱。 **存取權限**也需要設定。 授權層級可控制函數是否需要 API 金鑰和要使用的金鑰;函數會使用函式金鑰;系統管理員會使用您的帳戶存取金鑰。 如需詳細資訊，請參閱 [C# Azure Function for generating SAS tokens](https://github.com/Azure-Samples/functions-dotnet-sas-token/) (用於產生 SAS 權杖的 C# Azure 函式) 樣本。

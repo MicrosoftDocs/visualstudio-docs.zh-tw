@@ -1,5 +1,5 @@
 ---
-title: 作法：使用物件管理員註冊程式庫 |Microsoft Docs
+title: 如何：使用物件管理員註冊程式庫 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,30 +15,30 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c40c695a912e97269263ba14747b72382847324d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162037"
 ---
-# <a name="how-to-register-a-library-with-the-object-manager"></a>作法：使用物件管理員註冊程式庫
+# <a name="how-to-register-a-library-with-the-object-manager"></a>如何︰使用物件管理員註冊程式庫
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-符號瀏覽工具，例如**類別檢視**，**物件瀏覽器**，**呼叫瀏覽器**並**尋找符號結果**，讓您檢視在您的專案或外部元件的符號。 這些符號包括命名空間、 類別、 介面、 方法和其他語言項目。 程式庫追蹤這些符號，並公開 （expose） 才能[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]物件管理員，以填入資料的工具。  
+符號流覽工具（例如 **類別檢視**、 **物件瀏覽器**、 **呼叫瀏覽器** 和 **尋找符號結果**）可讓您在專案或外部元件中查看符號。 這些符號包括命名空間、類別、介面、方法和其他語言元素。 這些程式庫會追蹤這些符號，並將它們公開給以 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 資料填入工具的物件管理員。  
   
- 物件管理員會追蹤的所有可用媒體櫃。 每個程式庫必須向 object manager 之後，才提供符號瀏覽工具的符號。  
+ 物件管理員會持續追蹤所有可用的程式庫。 每個程式庫都必須先向物件管理員註冊，才能提供符號流覽工具的符號。  
   
- 一般而言，當載入 VSPackage 註冊程式庫。 不過，也可以在另一次所需。 VSPackage 關閉時，您取消註冊文件庫。  
+ 通常，您會在 VSPackage 載入時註冊程式庫。 不過，您可以視需要在另一次完成。 當 VSPackage 關機時，您會將程式庫取消註冊。  
   
- 若要註冊文件庫，請使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A>方法。 在 managed 程式碼庫的情況下使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>方法。  
+ 若要註冊程式庫，請使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A> 方法。 在 managed 程式碼程式庫的案例中，請使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> 方法。  
   
- 若要取消註冊文件庫，請使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A>方法。  
+ 若要取消註冊媒體櫃，請使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> 方法。  
   
- 若要取得物件管理員 中，參考<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>，傳遞<xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager>服務識別碼`GetService`方法。  
+ 若要取得物件管理員的參考， <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> 請將 <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> 服務識別碼傳遞給 `GetService` 方法。  
   
-## <a name="registering-and-unregistering-a-library-with-the-object-manager"></a>註冊及取消註冊的程式庫使用物件管理員  
+## <a name="registering-and-unregistering-a-library-with-the-object-manager"></a>使用物件管理員註冊和取消註冊程式庫  
   
-#### <a name="to-register-a-library-with-the-object-manager"></a>若要使用物件管理員註冊程式庫  
+#### <a name="to-register-a-library-with-the-object-manager"></a>使用物件管理員註冊程式庫  
   
 1. 建立程式庫。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "68162037"
   
     ```  
   
-2. 取得物件的參考<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>輸入，然後呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>方法。  
+2. 取得類型之物件的參考 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> ，並呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> 方法。  
   
     ```vb  
     Private Sub RegisterLibrary()  
@@ -111,9 +111,9 @@ ms.locfileid: "68162037"
   
     ```  
   
-#### <a name="to-unregister-a-library-with-the-object-manager"></a>若要取消登錄程式庫，與物件管理員  
+#### <a name="to-unregister-a-library-with-the-object-manager"></a>若要使用物件管理員取消註冊媒體櫃  
   
-1. 取得物件的參考<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>輸入，然後呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A>方法。  
+1. 取得類型之物件的參考 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> ，並呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> 方法。  
   
     ```vb  
     Private Sub UnregisterLibrary()  
@@ -168,5 +168,5 @@ ms.locfileid: "68162037"
   
 ## <a name="see-also"></a>另請參閱  
  [舊版語言服務擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)   
- [支援符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [如何：將程式庫提供的符號清單公開至物件管理員](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [支援符號流覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
+ [如何︰將程式庫提供的符號清單公開至物件管理員](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

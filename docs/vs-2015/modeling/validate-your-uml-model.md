@@ -13,23 +13,23 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8dfaf19e358d96b7737b06880d6fa4581b5c54f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659377"
 ---
 # <a name="validate-your-uml-model"></a>驗證 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以在 Visual Studio 中繪製的一些 UML 模型可能會在您的專案中被視為無效。 例如，您可能需要使用案例一律必須連結到具有生命線的循序圖，而生命線代表使用案例的執行者。 您可以安裝或定義*條件約束*，協助您的小組符合這類需求。 當使用者儲存或開啟模型時，可以套用條件約束，也可以用功能表命令來叫用條件約束。
+您可以在 Visual Studio 中繪製的一些 UML 模型可能會在您的專案中被視為無效。 例如，您可能需要使用案例一律必須連結到具有生命線的循序圖，而生命線代表使用案例的執行者。 您可以安裝或定義 *條件約束* ，協助您的小組符合這類需求。 當使用者儲存或開啟模型時，可以套用條件約束，也可以用功能表命令來叫用條件約束。
 
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 沒有提供條件約束，因為它們取決於您的小組如何解譯和使用 UML 模型。 但是，您可以定義自己的條件約束，以及安裝其他使用者所定義的條件約束。 若要瞭解如何定義條件約束並封裝它們以進行散發，請參閱[定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)。
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 沒有提供條件約束，因為它們取決於您的小組如何解譯和使用 UML 模型。 但是，您可以定義自己的條件約束，以及安裝其他使用者所定義的條件約束。 若要瞭解如何定義條件約束，並封裝它們來散發，請參閱 [定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)。
 
 ## <a name="invoking-validation"></a>叫用驗證
  當您已安裝驗證延伸模組時，它提供的條件約束可能會套用在下列情況。 某些條件約束已設定為只在這些部分情況下套用。
 
-- **驗證命令。** 若要在任何時候叫用驗證，請按一下 [**架構**] 功能表上的 [**驗證 UML 模型**]。
+- **驗證命令。** 若要在任何時間叫用驗證，請按一下 [**架構**] 功能表上的 [**驗證 UML 模型**]。
 
   > [!NOTE]
   > 已安裝驗證條件約束時，才會出現命令。
@@ -38,7 +38,7 @@ ms.locfileid: "72659377"
 
    如果發生錯誤，會詢問您是否仍要儲存模型。 您可以選擇要更正錯誤，還是依舊儲存模型。
 
-- **開啟模型時。** 當您開啟模型時，可以套用驗證方法以還原在您儲存模型時已存在的錯誤訊息。 處理模型不同部分的使用者所做的變更不一致時，也可能引入錯誤。 如需詳細資訊，請參閱[共用模型及匯出圖表](../modeling/share-models-and-exporting-diagrams.md)。
+- **開啟模型時。** 當您開啟模型時，可以套用驗證方法以還原在您儲存模型時已存在的錯誤訊息。 處理模型不同部分的使用者所做的變更不一致時，也可能引入錯誤。 如需詳細資訊，請參閱 [共用模型和匯出圖表](../modeling/share-models-and-exporting-diagrams.md)。
 
   驗證錯誤會在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 錯誤視窗中報告。
 
@@ -49,7 +49,7 @@ ms.locfileid: "72659377"
 
 #### <a name="to-install-a-visual-studio-extension"></a>安裝 Visual Studio 擴充功能
 
-1. 按兩下 [Windows Explorer] 中的 **.vsix**檔案（或 [檔案瀏覽器]）。
+1. 按兩下 Windows 檔案總管 (中的 **.vsix** 檔，或檔案總管) 。
 
 2. 重新啟動已在執行的任何 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 執行個體。
 
@@ -58,15 +58,15 @@ ms.locfileid: "72659377"
 
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>停用或解除安裝 Visual Studio 擴充功能
 
-1. 在 [[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**工具**] 功能表上，按一下 [**擴充功能和更新**]。
+1. 按一下 [ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具** ] 功能表上的 [ **擴充功能和更新**]。
 
-2. 在延伸模組旁，按一下 [**停**用] 以暫時停用延伸模組。 您可以稍後返回 [**擴充功能和更新**] 視窗重新啟用它。
+2. 在擴充功能旁，按一下 [ **停** 用] 以暫時停用擴充功能。 您可以在稍後返回 [ **擴充功能和更新** ] 視窗重新啟用它。
 
-     \-或-
+     \- 或 -
 
-     按一下 [**卸載**] 以移除延伸模組。
+     按一下 [ **卸載** ] 以移除擴充功能。
 
 3. 重新啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。
 
-## <a name="see-also"></a>請參閱
- [定義 UML 模型的驗證條件約束針對](../modeling/define-validation-constraints-for-uml-models.md)[您的應用程式建立模型](../modeling/create-models-for-your-app.md)[在開發過程中使用模型](../modeling/use-models-in-your-development-process.md)
+## <a name="see-also"></a>另請參閱
+ [定義 UML 模型的驗證條件約束為](../modeling/define-validation-constraints-for-uml-models.md)[您的應用程式建立模型](../modeling/create-models-for-your-app.md)[在開發過程中使用模型](../modeling/use-models-in-your-development-process.md)

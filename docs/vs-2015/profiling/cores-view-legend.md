@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05f768f6ff928ab00ebbd503c1ae9826dab8cd38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161298"
 ---
 # <a name="cores-view-legend"></a>核心檢視圖例
@@ -31,7 +31,7 @@ ms.locfileid: "68161298"
   
  下表描述圖例項目。  
   
-|元素|定義|  
+|項目|定義|  
 |-------------|----------------|  
 |執行緒名稱|顯示前一個核心時間軸中執行緒的名稱和執行緒的色彩。|  
 |跨核心內容切換|執行緒也從一個邏輯核心切換到另一個的內容切換次數。 它不會區分從一個處理器晶粒跨越到另一個的跨核心內容切換，與留在相同晶粒上的跨核心內容切換。|  

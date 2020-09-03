@@ -1,5 +1,5 @@
 ---
-title: VSTemplate 元素(視覺工作室範本) |微軟文件
+title: " (Visual Studio 範本的 .Vstemplate 元素) |Microsoft Docs"
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 651e8b6dbbe11c450b105f3185e7e987bb30da9b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697872"
 ---
-# <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate 元素(視覺化工作室範本)
-包含有關專案範本、專案範本或初學者工具組的所有元資料。
+# <a name="vstemplate-element-visual-studio-templates"></a> (Visual Studio 範本的 .Vstemplate 元素) 
+包含專案範本、專案範本或入門套件的所有中繼資料。
 
 ## <a name="syntax"></a>語法
 
@@ -40,14 +40,14 @@ ms.locfileid: "80697872"
 
 | 屬性 | 描述 |
 |-----------| - |
-| `Type` | 將範本標識為專案範本或專案範本。 此屬性可以具有`Project`或`Item`的值。 |
-| `Version` | 指定範本的版本號。 的[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]樣本,並且[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]`Version`具有的屬性`3.0.0`值 。 |
+| `Type` | 將範本識別為專案範本或專案範本。 這個屬性的值可以是 `Project` 或 `Item` 。 |
+| `Version` | 指定範本的版本號碼。 和中 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 的範本具有 `Version` 的屬性值 `3.0.0` 。 |
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 指定對範本進行分類的資料,並定義範本在 **「新專案**」或 **「添加新專案**」對話框中的顯示方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 指定將範本分類的資料，並定義該範本在 [ **新增專案** ] 或 [ **加入新專案** ] 對話方塊中顯示的方式。|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必要元素。<br /><br /> 指定範本的內容。|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|選擇性項目。|
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|選擇性項目。|
@@ -56,10 +56,10 @@ ms.locfileid: "80697872"
  無。
 
 ## <a name="remarks"></a>備註
- 該`VSTemplate`元素是 *.vstemplate*檔案的根元素。
+ `VSTemplate`元素是 *.vstemplate*檔案的根項目。
 
 ## <a name="example"></a>範例
- 下面的範例顯示了[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式的專案範本的元數據。
+ 下列範例會顯示應用程式專案範本的中繼資料 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -86,5 +86,5 @@ ms.locfileid: "80697872"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
-- [建立項目與專案樣本](../ide/creating-project-and-item-templates.md)
+- [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [建立專案和專案範本](../ide/creating-project-and-item-templates.md)

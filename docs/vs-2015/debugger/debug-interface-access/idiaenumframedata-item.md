@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d0db365738e7c41c4a4e9f36b1942c5a64dedada
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161265"
 ---
 # <a name="idiaenumframedataitem"></a>IDiaEnumFrameData::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-透過索引中擷取的畫面格的資料元素。  
+藉由索引來抓取框架資料元素。  
   
 ## <a name="syntax"></a>語法  
   
@@ -36,13 +36,13 @@ HRESULT Item ( 
   
 #### <a name="parameters"></a>參數  
  索引  
- [in]索引[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)要擷取的物件。 索引是在範圍介於 0 到`count`-1，其中`count`會傳回[idiaenumframedata:: Get_count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)方法。  
+ 在要抓取之 [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) 物件的索引。 索引位於0到-1 的範圍內 `count` ，其中 `count` 是 [IDiaEnumFrameData：： get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md) 方法所傳回的。  
   
  section  
- [out]傳回[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)物件，表示所需的畫面格的資料元素。  
+ 擴展傳回 [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) 物件，代表所需的框架資料元素。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   

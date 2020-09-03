@@ -1,5 +1,5 @@
 ---
-title: IDebugModule2::GetInfo | Microsoft Docs
+title: IDebugModule2：： GetInfo |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,10 +14,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 476ffb2901dfe6a8d09ca707fc47089f4d99d97d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162490"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
@@ -43,16 +43,16 @@ int GetInfo( 
   
 #### <a name="parameters"></a>參數  
  `dwFields`  
- [in]從旗標的組合[MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)列舉，指定哪些欄位`pInfo`要填寫。  
+ 在 [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) 列舉中的旗標組合，可指定 `pInfo` 要填寫的欄位。  
   
  `pInfo`  
- [in、 out]A [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)結構，其中會填入模組的描述。  
+ [in，out]填入模組描述的 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 結構。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)結構包含模組中所顯示的名稱**模組**視窗。  
+ [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)結構包含 [**模組**] 視窗中顯示的模組名稱。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   

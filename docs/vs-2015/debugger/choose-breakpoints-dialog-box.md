@@ -26,25 +26,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5977eb6bad9063e1ef08502cac53159a37c27151
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161617"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>[選擇中斷點] 對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**選擇中斷點** 對話方塊隨即開啟，當您嘗試從模稜兩可的輸入中設定中斷點**新中斷點** 對話方塊。 模稜兩可的常見範例是輸入的多載函式名稱。  
+當您嘗試在 [**新增中斷點**] 對話方塊中，從不明確的輸入設定中斷點時，會開啟 [**選擇中斷點**] 對話方塊。 不明確輸入的常見範例是多載函數名稱。  
   
- **中斷點**  
- 清單可能中斷點可以設定為基礎的模稜兩可的輸入。 您可以選取一或多個設定的中斷點。  
+ **[中斷點]**  
+ 列出可根據不明確的輸入設定的可能中斷點。 您可以選取一或多個要設定的中斷點。  
   
- **All**  
- 選取所有列中的中斷點**中斷點** 方塊中。  
+ **全部**  
+ 選取 [ **中斷點** ] 方塊中列出的所有中斷點。  
   
  **無**  
- 清除所有列中的中斷點**中斷點** 方塊中。  
+ 清除 [ **中斷點** ] 方塊中列出的所有中斷點。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用中斷點](../debugger/using-breakpoints.md)

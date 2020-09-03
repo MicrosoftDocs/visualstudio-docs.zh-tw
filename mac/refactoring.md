@@ -1,17 +1,17 @@
 ---
 title: 重構程式碼
 description: 使用 Visual Studio for Mac 和快速動作來細分程式碼。
-author: cobey
-ms.author: cobey
-ms.date: 03/29/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 07/03/2020
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3892117e5c84a71f258d4e019105fca0a8cf9c5b
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "67691290"
+ms.locfileid: "89402574"
 ---
 # <a name="refactoring"></a>重構
 
@@ -31,9 +31,9 @@ Visual Studio for Mac 與 Roslyn (Microsoft 的開放原始碼 .NET 編譯器平
 
 ![重新命名和識別碼](media/refactoring-renaming2.png)
 
-## <a name="quick-actions"></a>快速動作
+## <a name="quick-actions-and-refactorings"></a>快速動作及重構
 
-快速動作可讓您輕鬆地重構、產生或用其他方式以單一動作修改程式碼。
+快速動作和重構可讓您輕鬆地重構、產生或以單一動作修改程式碼。
 
 快速動作可用於：
 
@@ -55,7 +55,7 @@ Visual Studio for Mac 與 Roslyn (Microsoft 的開放原始碼 .NET 編譯器平
 
    ![當滑鼠游標暫留時的燈泡](media/refactoring-lightbulb-hover.png)
 
-- 燈泡和螺絲起子會在您將游標移到可使用快速動作的程式碼上時，顯示在編輯器的左側邊界。
+- 當您將插入號移至可使用快速動作或重構的程式程式碼時，會在編輯器的左邊界中顯示 Light 燈泡和螺絲起子。
 
 - 按**選項 (⌥) ** + 在行上的任意處**輸入**，以查看可用的快速動作和重構清單。
 

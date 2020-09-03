@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解如何取得及管理您的 Visual Studio 訂用帳戶產品金鑰。
 ms.openlocfilehash: 10b09275dc1ba3d20e47c097888677e733e21ced
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183921"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的產品金鑰
@@ -23,7 +23,7 @@ Visual Studio 訂用帳戶能讓您存取各種用於設計、開發、測試以
 大部分的產品金鑰也允許每個金鑰可多次啟用產品。  許多產品也允許您在不啟用的情況下，安裝和使用產品長達 30 天或以上。  對大多數的訂閱者而言，這種比足夠還多的啟用更符合其需求。  不過，如果您已用完產品的可用啟用次數，您可以透過 [Visual Studio 訂用帳戶客戶服務](https://visualstudio.microsoft.com/subscriptions/support/)要求額外的金鑰。
 
 > [!NOTE]
-> 如果您的訂用帳戶是由您的公司或學校提供給您，則您的訂用帳戶管理員會控制您是否可以存取軟體下載。  如果您的訂用帳戶已停用下載的存取權，則也會停用對產品金鑰的存取。  如果您需要下載及/或產品金鑰，請[洽詢您的系統管理員](contact-my-admin.md)。
+> 如果您的訂用帳戶是由公司或學校提供給您，則您的訂用帳戶管理員會控制您是否可以存取軟體下載。  如果您的訂用帳戶已停用下載的存取權，則也會停用對產品金鑰的存取。  如果您需要下載及/或產品金鑰，請 [洽詢您的系統管理員](contact-my-admin.md)。
 
 ## <a name="activating-a-product"></a>啟用產品
 某些產品需要啟用。  在 Visual Studio 訂用帳戶中，通常只有 Windows、Windows Server、Microsoft Office 用戶端應用程式及 Expression Studio 需要啟用。 許多需要啟用的產品 (包括 Windows 及 Office)，會允許您在不啟用的情況下，安裝並使用該產品長達 30 天或以上。 如果您經常要重新製作電腦映像 (至少每隔 30 天一次)，不妨考慮「不」啟用產品。 隨 Visual Studio 訂用帳戶一起提供的產品金鑰，不允許無限次地啟用產品。
