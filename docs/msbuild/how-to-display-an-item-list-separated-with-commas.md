@@ -12,23 +12,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5493d3b95f7e9c0aa08ed3b06a99108e15697349
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633898"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>如何：顯示以逗號分隔的項目清單
 
-當您在 Microsoft 生成引擎 （MSBuild） 中處理專案清單時，有時以易於閱讀的方式顯示這些專案清單的內容很有用。 否則，您可能必須進行以特殊分隔符號字串分隔項目清單的工作。 在這兩種情況下，您都可以為項目清單指定分隔符號字串。
+當您使用 Microsoft Build Engine (MSBuild) 中的專案清單時，以易於閱讀的方式來顯示這些專案清單的內容，有時會很有用。 否則，您可能必須進行以特殊分隔符號字串分隔項目清單的工作。 在這兩種情況下，您都可以為項目清單指定分隔符號字串。
 
 ## <a name="separate-items-in-a-list-with-commas"></a>以逗號分隔清單中的項目
 
-預設情況下，MSBuild 使用分號來分隔清單中的專案。 例如，假設是含有下列值的 `Message` 項目：
+根據預設，MSBuild 會使用分號來分隔清單中的專案。 例如，假設是含有下列值的 `Message` 項目：
 
 `<Message Text="This is my list of TXT files: @(TXTFile)"/>`
 
-當`@(TXTFile)`專案清單包含*App1.txt、App2.txt*和*App3.txt*項時，消息為： *App2.txt*
+當 `@(TXTFile)` 專案清單包含 *App1.txt*、 *App2.txt*和 *App3.txt*的專案時，訊息為：
 
 `This is my list of TXT files: App1.txt;App2.txt;App3.txt`
 
@@ -46,7 +46,7 @@ ms.locfileid: "77633898"
 
 ## <a name="example"></a>範例
 
-在此示例中[，Exec](../msbuild/exec-task.md)任務運行 findstr 工具來查找檔中指定的文本字串 *，短語.txt*。 在 findstr 命令中，文本搜索字串由 **-c：** 開關指示，因此項分隔符號`-c:`將插入`@(Phrase)`到項清單中的項之間。
+在此範例中， [Exec](../msbuild/exec-task.md) 工作會執行 findstr 工具，以在檔案中尋找指定的文字字串， *Phrases.txt*。 在 findstr 命令中，常值搜尋字串會以 **-c：** switch 表示，因此專案分隔符號 `-c:` 會插入專案清單中的專案之間 `@(Phrase)` 。
 
 此範例中，對等的命令列命令是：
 

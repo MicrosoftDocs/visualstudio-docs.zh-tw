@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f61ec7fafba66f241d737205de45153a46cec4c
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461988"
 ---
 # <a name="idiasymbolget_signature"></a>IDiaSymbol::get_signature
@@ -33,10 +33,10 @@ HRESULT get_signature ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回符號的簽章值。
+擴展傳回符號的簽章值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。

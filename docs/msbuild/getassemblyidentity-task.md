@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a09bd4955cee6e50368f7155fb2e03c2c1758bf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634015"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity 工作
@@ -33,7 +33,7 @@ ms.locfileid: "77634015"
 
 下表說明 `GetAssemblyIdentity` 工作的參數。
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |`Assemblies`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含擷取的組件識別。|
 |`AssemblyFiles`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要從中擷取識別的檔案。|
@@ -42,7 +42,7 @@ ms.locfileid: "77634015"
 
 `Assemblies` 參數所輸出的項目包含名為 `Version`、`PublicKeyToken` 和 `Culture` 的項目中繼資料項目。
 
-除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 有關這些附加參數及其說明的清單，請參閱[任務擴展基類](../msbuild/taskextension-base-class.md)。
+除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些額外參數的清單及其描述，請參閱 [TaskExtension 基類（base class](../msbuild/taskextension-base-class.md)）。
 
 ## <a name="example"></a>範例
 
@@ -64,4 +64,4 @@ ms.locfileid: "77634015"
 ## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
-- [任務引用](../msbuild/msbuild-task-reference.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

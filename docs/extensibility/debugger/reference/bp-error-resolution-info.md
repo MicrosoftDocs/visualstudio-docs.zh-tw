@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_RESOLUTION_INFO |微軟文件
+title: BP_ERROR_RESOLUTION_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d48c4bc888db0ad8be6a0d6e98eeea2223a27e8a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738093"
 ---
 # <a name="bp_error_resolution_info"></a>BP_ERROR_RESOLUTION_INFO
-描述錯誤斷點的解析度,包括位置、程式和線程。
+描述錯誤中斷點的解決方式，包括位置、程式和執行緒。
 
 ## <a name="syntax"></a>語法
 
@@ -51,32 +51,32 @@ public struct BP_ERROR_RESOLUTION_INFO {
 
 ## <a name="members"></a>成員
 `dwFields`\
-[BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)枚舉中的值的組合,指定填充此結構的欄位。
+[BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)列舉值的組合，指定要填入此結構的哪些欄位。
 
 `bpResLocation`\
-[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)聯合,它指定斷點解析位置。
+[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)聯集，指定中斷點解析位置。
 
 `pProgram`\
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件,表示發生斷點錯誤的應用程式。
+[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，代表發生中斷點錯誤的應用程式。
 
 `pThread`\
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件,表示生成斷點錯誤的應用程式在其上運行的線程。
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，代表產生中斷點錯誤的應用程式正在其上執行的執行緒。
 
 `bstrMessage`\
-包含此錯誤解決方法引起的任何警告或錯誤訊息的字串。
+字串，包含此錯誤解決所產生的任何警告或錯誤訊息。
 
 `dwType`\
-[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)枚舉中指定斷點錯誤類型的值。
+[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)列舉中的值，指定中斷點錯誤類型。
 
 ## <a name="remarks"></a>備註
-此結構從[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)方法返回。
+[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)方法會傳回這個結構。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

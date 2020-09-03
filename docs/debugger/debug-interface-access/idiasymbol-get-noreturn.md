@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8ff5eb9baf0fa1eecdb1921d6281fd0a9400d7c2
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462795"
 ---
 # <a name="idiasymbolget_noreturn"></a>IDiaSymbol::get_noReturn
-抓取指定函式是否已標示為永不以[noreturn](/cpp/cpp/noreturn)屬性來傳回的旗標。
+抓取旗標，這個旗標會指定函式是否已標示為永遠不會以 [noreturn](/cpp/cpp/noreturn) 屬性傳回。
 
 ## <a name="syntax"></a>語法
 
@@ -33,13 +33,13 @@ HRESULT get_noReturn(
 #### <a name="parameters"></a>參數
  pFlag
 
-脫銷如果函式已宣告 `TRUE` 為永不以屬性傳回，則會傳回 `noreturn` ，否則會傳回 `FALSE` 。
+擴展如果函式已宣告 `TRUE` 為從未以屬性傳回，則傳回 `noreturn` ，否則傳回 `FALSE` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
-> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
 ## <a name="requirements"></a>需求
 

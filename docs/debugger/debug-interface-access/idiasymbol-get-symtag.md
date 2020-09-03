@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9336bece2713c69f4fbb88df9703405cdd161e54
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461890"
 ---
 # <a name="idiasymbolget_symtag"></a>IDiaSymbol::get_symTag
@@ -33,13 +33,13 @@ HRESULT get_symTag ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷從指定符號類型分類器的[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉傳回值。
+擴展傳回 [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md) 列舉中的值，這個值會指定符號類型分類器。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
-> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
 ## <a name="example"></a>範例
 

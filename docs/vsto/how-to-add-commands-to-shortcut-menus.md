@@ -14,24 +14,24 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1ad27481799718d9d2b0872d7a43837fc822ca40
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546194"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>如何：將命令新增至快捷方式功能表
-  本主題示範如何使用 VSTO 增益集，將命令新增至 Office 應用程式中的快捷方式功能表。
+  本主題示範如何使用 VSTO 增益集，將命令加入 Office 應用程式中的快捷方式功能表。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>將命令加入 Office 的捷徑功能表
 
-1. 將 **功能區 XML** 項目加入文件層級或 VSTO 增益集專案。 如需詳細資訊，請參閱[如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。 位於
+1. 將 **功能區 XML** 項目加入文件層級或 VSTO 增益集專案。 如需詳細資訊，請參閱 [如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。 位於
 
 2. 在方案總管**** 中，選取 **ThisAddin.cs** 或 **ThisAddin.vb**。
 
-3. 在功能表列上，選擇 [ **View**  >  **Code**]。
+3. 在功能表列上，選擇 [**視圖**程式  >  **代碼**]。
 
      **ThisAddin** 類別隨即在程式碼編輯器中開啟。
 
@@ -40,15 +40,15 @@ ms.locfileid: "85546194"
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. 在方案總管 **** 中選取功能區 XML 檔案。 根據預設，功能區 XML 檔案的名稱為*Ribbon1.xml*。
+5. 在方案總管 **** 中選取功能區 XML 檔案。 依預設，功能區 XML 檔案的名稱為 *Ribbon1.xml*。
 
-6. 在功能表列上，選擇 [ **View**  >  **Code**]。
+6. 在功能表列上，選擇 [**視圖**程式  >  **代碼**]。
 
      功能區 XML 檔案隨即在程式碼編輯器中開啟。
 
 7. 在程式碼編輯器中，加入描述捷徑功能表以及您想要加入捷徑功能表之控制項的 XML。
 
-     下列範例會將按鈕、功能表和圖庫控制項加入 Word 文件的捷徑功能表。 這個捷徑功能表的控制項 ID 是 ContextMenuText。 如需 Office 2010 快捷方式控制項 ID 的完整清單，請參閱[office 2010 說明檔： office 流暢的使用者介面控制項識別碼](https://www.microsoft.com/download/details.aspx?id=6627)。
+     下列範例會將按鈕、功能表和圖庫控制項加入 Word 文件的捷徑功能表。 這個捷徑功能表的控制項 ID 是 ContextMenuText。 如需 Office 2010 快捷方式控制項 ID 的完整清單，請參閱 [office 2010 說明檔： office 流暢的使用者介面控制項識別碼](https://www.microsoft.com/download/details.aspx?id=6627)。
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -72,7 +72,7 @@ ms.locfileid: "85546194"
 
 8. 在方案總管 **** 中，選擇 **MyRibbon.cs** 或 **MyRibbon.vb**。
 
-9. `Ribbon1`針對您要處理的每個控制項，將回呼方法新增至類別。
+9. `Ribbon1`針對您要處理的每個控制項，將回呼方法加入至類別。
 
      下列回呼方法會處理 [My Button] **** 按鈕。 此程式碼會在使用中文件的目前游標位置加入字串。
 

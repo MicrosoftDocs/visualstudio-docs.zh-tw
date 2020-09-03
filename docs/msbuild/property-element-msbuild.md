@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e50a6dd66c2dca7fa4159c578ccd334ed1d26cae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632949"
 ---
 # <a name="property-element-msbuild"></a>Property 元素 (MSBuild)
 
-包含使用者定義的屬性名稱和值。 MSBuild 專案中使用的每個屬性都必須指定為`PropertyGroup`元素的子級。
+包含使用者定義的屬性名稱和值。 MSBuild 專案中使用的每個屬性都必須指定為元素的子系 `PropertyGroup` 。
 
  \<Project> \<PropertyGroup>
 
@@ -43,7 +43,7 @@ ms.locfileid: "77632949"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|描述|
+|屬性|說明|
 |---------------|-----------------|
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
 
@@ -53,7 +53,7 @@ ms.locfileid: "77632949"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|屬性的群組項目。|
 
@@ -65,7 +65,7 @@ ms.locfileid: "77632949"
 
 ## <a name="remarks"></a>備註
 
- 屬性名稱只能使用 ASCII 字元。 將專案名稱放在 "`$(`" 和 "`)`" 之間，以參考專案中的屬性值。 例如，`$(builddir)\classes`如果`builddir`屬性具有 值`build`，則解析*為生成_類*。 有關屬性的詳細資訊，請參閱[MSBuild 屬性](../msbuild/msbuild-properties.md)。
+ 屬性名稱只能使用 ASCII 字元。 將專案名稱放在 "`$(`" 和 "`)`" 之間，以參考專案中的屬性值。 例如， `$(builddir)\classes` 如果屬性具有值，就會解析為 *build\classes* `builddir` `build` 。 如需屬性的詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。
 
 ## <a name="example"></a>範例
 
@@ -81,4 +81,4 @@ ms.locfileid: "77632949"
 ## <a name="see-also"></a>另請參閱
 
 - [MSBuild 屬性](../msbuild/msbuild-properties.md)
-- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)
+- [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)

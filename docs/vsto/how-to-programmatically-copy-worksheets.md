@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8226f337994c686d4d370e91831bc1262d3ef85e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546077"
 ---
 # <a name="how-to-programmatically-copy-worksheets"></a>如何：以程式設計方式複製工作表
@@ -26,7 +26,7 @@ ms.locfileid: "85546077"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 > [!NOTE]
-> 無論您是以程式設計的方式複製工作表，或是使用者手動複製工作表，新的工作表背後都沒有程式碼，而新工作表上的控制項也不會作用。 這是因為新複製的工作表是 <xref:Microsoft.Office.Interop.Excel.Worksheet> 物件，不是 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目。 Windows Form 控制項和主控制項只能加入主項目。 如需詳細資訊，請參閱[主專案和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
+> 無論您是以程式設計的方式複製工作表，或是使用者手動複製工作表，新的工作表背後都沒有程式碼，而新工作表上的控制項也不會作用。 這是因為新複製的工作表是 <xref:Microsoft.Office.Interop.Excel.Worksheet> 物件，不是 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目。 Windows Form 控制項和主控制項只能加入主項目。 如需詳細資訊，請參閱 [主專案和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
 
 ## <a name="to-add-a-copied-worksheet-to-a-workbook-in-a-document-level-customization"></a>在文件層級自訂的活頁簿中加入複製的工作表
 

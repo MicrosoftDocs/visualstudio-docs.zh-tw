@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: f54ee1191dd998d34e46a442debafc175ce98c8b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545427"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新 Visual Studio 的網路型安裝
@@ -29,23 +29,23 @@ ms.locfileid: "85545427"
 ## <a name="how-to-update-a-network-layout"></a>如何更新網路配置
 
 > [!IMPORTANT]
-> 這些指示假設您先前已建立網路安裝版面配置。 如需有關如何執行這項操作的詳細資訊，請參閱[建立 Visual Studio 的網路安裝](create-a-network-installation-of-visual-studio.md)頁面。
+> 這些指示假設您先前已建立網路安裝版面配置。 如需如何進行這項操作的詳細資訊，請參閱 [建立 Visual Studio 的網路安裝](create-a-network-installation-of-visual-studio.md) 頁面。
 
 若要重新整理您的網路安裝共用，以便其包含最新的更新，請執行 `--layout` 命令，以累加方式下載更新的套件。
 
 ::: moniker range="vs-2017"
 
-**15.3 的新**功能：如果您在[第一次建立網路](create-a-network-installation-of-visual-studio.md)配置時選取了部分版面配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項 但是如果您要使用舊版本的配置，則應該使用您最初建立網路安裝配置時所使用的相同命令列參數 (亦即，相同的工作負載和語言) 來更新其內容。
+**15.3 中的新**功能：如果您在 [第一次建立網路](create-a-network-installation-of-visual-studio.md)配置時已選取部分版面配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項 但是如果您要使用舊版本的配置，則應該使用您最初建立網路安裝配置時所使用的相同命令列參數 (亦即，相同的工作負載和語言) 來更新其內容。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-如果您在[第一次建立網路](create-a-network-installation-of-visual-studio.md)配置時選取了部分版面配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項
+如果您在 [第一次建立網路](create-a-network-installation-of-visual-studio.md)配置時已選取部分版面配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項
 
 ::: moniker-end
 
-如果您在檔案共用上裝載配置，則應該更新配置的私用複本（例如，c:\VSLayout），然後在下載所有更新的內容之後，將它複製到您的檔案共用（例如 \\ server\products\VS）。 如果不這麼做，則在您更新配置時執行安裝程式的任何使用者，都很有可能無法取得配置的所有內容，因為配置尚未完全更新。
+如果您在檔案共用上裝載配置，則應該更新配置的私用複本 (例如 c:\VSLayout) ，然後在下載所有已更新的內容之後，將它複製到您的檔案共用 (例如 \\ server\products\VS) 。 如果不這麼做，則在您更新配置時執行安裝程式的任何使用者，都很有可能無法取得配置的所有內容，因為配置尚未完全更新。
 
 讓我們以一些範例來逐步解說如何在建立後更新配置：
 
@@ -67,18 +67,18 @@ ms.locfileid: "85545427"
   vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
-* 以下是如何新增額外的工作負載和當地語系化語言  （此命令會新增*Azure 開發*工作負載）。 現在，受管理的桌面和 Azure 都會包含在此配置中。  所有這些工作負載也會包含英文和德文的語言資源。  而且，配置會更新為最新的可用版本。
+* 以下是如何新增額外的工作負載和當地語系化語言   (此命令會新增 *Azure 開發* 工作負載。 ) 現在會在此版面配置中包含受管理的桌面和 Azure。  所有這些工作負載也會包含英文和德文的語言資源。  而且，配置會更新為最新的可用版本。
 
   ```cmd
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
     > [!IMPORTANT]
-    > 更新作業不會安裝新加入的選擇性元件。 如果您需要新增的選擇性元件，請移除回應檔案中的舊選用元件，並在的 `Layout.JSON` [response file](automated-installation-with-response-file.md) [新增] 區段中包含所需的元件 `Layout.JSON` 。 
+    > 更新作業不會安裝新增的選擇性元件。 如果您需要新增的選用元件，請移除回應檔中的舊選用元件，並在的 `Layout.JSON` [response file](automated-installation-with-response-file.md) [新增] 區段中包含所需的元件 `Layout.JSON` 。 
     >
     > 因應**措施：在升級之後執行個別**的修改作業，以安裝遺失的元件。
 
-* 最後，以下是如何新增額外的工作負載和當地語系化語言，而不需要更新版本。 （此命令會新增*ASP.NET 和 網頁程式開發*工作負載）。 現在，受管理的桌面、Azure 和 ASP.NET & 的 Web 開發工作負載會包含在此版面配置中。 所有這些工作負載也會包含英文、德文和法文的語言資源。  不過，執行此命令時，不會將配置更新為最新可用版本。 它會保持現有的版本。
+* 最後，以下是如何新增額外的工作負載和當地語系化語言，而不需要更新版本。  (此命令會新增 *ASP.NET 和 網頁程式開發* 工作負載。現在 ) 此配置中包含受管理的桌面、Azure 和 ASP.NET & 網頁程式開發工作負載。 所有這些工作負載也會包含英文、德文和法文的語言資源。  不過，執行此命令時，不會將配置更新為最新可用版本。 它會保持現有的版本。
 
   ```cmd
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
@@ -160,7 +160,7 @@ vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-pat
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <file-path-of-catalog2> …
 ```
 
-您也可以叫用 &lt;layoutDir&gt; 內的 vs_enterprise.exe。 以下是範例：
+您也可以叫用 &lt;layoutDir&gt; 內的 vs_enterprise.exe。 以下為範例：
 
 ```cmd
 c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json

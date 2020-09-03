@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a6cde83fa59f45cbc45e56738f09ccf3099f5c02
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546129"
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>如何：以程式設計方式將檔案附加至 Outlook 電子郵件專案
-  這個範例會將檔案附加到新的訊息項目，並將它傳送至 Armando Pinto。 此範例假設名為 Armando Pinto 的人員以收件者的身分存在。
+  此範例會將檔案附加至新的訊息項目，並將其傳送至 Armando Pinto。 此範例假設有一個名為 Armando Pinto 的人員做為收件者。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 

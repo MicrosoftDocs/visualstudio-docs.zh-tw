@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01bc4d1bd1109b3e481449dae164001257da3415
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466725"
 ---
 # <a name="idialoadcallbackrestrictsymbolserveraccess"></a>IDiaLoadCallback::RestrictSymbolServerAccess
-決定是否允許對符號伺服器進行存取，以解析符號。
+決定是否允許符號伺服器存取符號，以解析符號。
 
 ## <a name="syntax"></a>語法
 
@@ -29,10 +29,10 @@ HRESULT RestrictSymbolServerAccess();
 ```
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 以外的任何傳回碼都會 `S_OK` 阻止使用符號伺服器來解析符號。
+ 除了 `S_OK` 防止使用符號伺服器來解析符號以外的任何傳回碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

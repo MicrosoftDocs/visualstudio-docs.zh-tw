@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 07baa23b6fd276e8fb8452934dc6361544d16038
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546103"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>如何：以程式設計方式跨工作表複製資料和格式
-  您可以使用方法，將資料從一個工作表中的某個範圍複製到活頁簿中的所有其他工作表 <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> 。 指定範圍，以及是否要複製資料、格式化或兩者。
+  您可以使用方法，將資料從某個工作表的某個範圍複製到活頁簿中的所有其他工作表 <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> 。 指定範圍，以及是否要複製資料、格式化或兩者。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -32,10 +32,10 @@ ms.locfileid: "85546103"
  [!code-vb[Trin_VstcoreExcelAutomation#44](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#44)]
 
 ## <a name="compile-the-code"></a>編譯程式碼
- 這個範例需要 `rangeData` 在工作表中命名的範圍。
+ 此範例需要 `rangeData` 在工作表中命名的範圍。
 
 ## <a name="see-also"></a>另請參閱
 - [使用工作表](../vsto/working-with-worksheets.md)
 - [如何：以程式設計方式在活頁簿中加入新的工作表](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
-- [如何：以程式設計方式在包含選取儲存格的工作表資料列中變更格式](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)
+- [如何：以程式設計方式變更包含選定儲存格的工作表資料列格式](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)

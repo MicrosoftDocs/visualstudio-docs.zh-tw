@@ -1,5 +1,5 @@
 ---
-title: 如何限制檢測特定函式 |Microsoft Docs
+title: 如何-限制檢測特定函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ca92b9f4b7594abc0815038799147ac44091cb3
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85327630"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>如何：限制檢測特定函式
@@ -42,7 +42,7 @@ ms.locfileid: "85327630"
 
     **/include：** `FuncSpec`**[;** `FuncSpec`**]**`...`
 
-    `FuncSpec` 是命名空間和函式名稱。 其格式為 `Namespace` **：：** `FunctionName` 。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如，**/include:MyNS::\\*** 可指定 MyNS 命名空間中的所有函式。
+    `FuncSpec` 是命名空間和函式名稱。 它的格式 `Namespace` **如下：：** `FunctionName` 。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如，**/include:MyNS::\\*** 可指定 MyNS 命名空間中的所有函式。
 
    > [!NOTE]
    > 若要列出二進位檔中的函式，請在分析工具安裝目錄中開啟命令提示字元視窗 (請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md))，然後鍵入 **vsinstr /DumpFuncs**
@@ -61,7 +61,7 @@ ms.locfileid: "85327630"
 
     **/include：** `FuncSpec`**[;** `FuncSpec`**]**`...`
 
-    `FuncSpec` 是命名空間和函式名稱。 其格式為 `Namespace` **：：** `FunctionName` 。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如，**/include:MyNS::\\*** 可指定 MyNS 命名空間中的所有函式。
+    `FuncSpec` 是命名空間和函式名稱。 它的格式 `Namespace` **如下：：** `FunctionName` 。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如，**/include:MyNS::\\*** 可指定 MyNS 命名空間中的所有函式。
 
    > [!NOTE]
    > 若要列出二進位檔中的函式，請在分析工具安裝目錄中開啟命令提示字元視窗 (請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md))，然後鍵入 **vsinstr /DumpFuncs**

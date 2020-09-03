@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8d5b3d32b23b336dc86a92c33bcb97d02312f2dc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84182949"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>為程式碼符號重新命名的重構
@@ -70,7 +70,7 @@ ms.locfileid: "84182949"
 
 ## <a name="remarks"></a>備註
 
-- 從 Visual Studio 2019 版本16.3 開始，當您重新命名符合其所在檔案名稱的類型時，會出現一個核取方塊，可讓您同時重新命名檔案。 當您重新命名類別、介面或列舉時，會出現此選項。 具有多個定義的部分類型不支援此選項。
+- 從 Visual Studio 2019 16.3 版開始，當您重新命名符合其所在檔案名的型別時，會出現一個核取方塊，讓您可以同時重新命名檔案。 當您重新命名類別、介面或列舉時，會出現此選項。 具有多個定義的部分類型不支援此選項。
 
    ![使用 file-C 重新命名動畫#](media/rename-with-file-animated-cs.gif)
 
@@ -78,7 +78,7 @@ ms.locfileid: "84182949"
 
    ![重新命名衝突](media/rename-conflict-cs.png)
 
-- 重新命名符號的另一個方法是在編輯器中變更其名稱。 然後，將游標放在符號名稱中，按下**Ctrl** + **。** 或直接展開顯示的燈泡圖示功能表，然後選擇 [**重新 \<old name> 命名 \<new name> 為**]。
+- 重新命名符號的另一個方法是在編輯器中變更其名稱。 然後，將游標放在符號名稱中，然後按下**Ctrl** + **。** 或直接展開出現的燈泡圖示功能表，然後選擇 [**重新 \<old name> 命名 \<new name> 為**]。
 
    ![在編輯器中重新命名](media/rename-with-editor-cs.png)
 

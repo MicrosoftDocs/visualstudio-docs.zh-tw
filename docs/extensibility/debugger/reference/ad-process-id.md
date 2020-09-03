@@ -1,5 +1,5 @@
 ---
-title: AD_PROCESS_ID |微軟文件
+title: AD_PROCESS_ID |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 96a834725f1cf5b14f12a4c1554e67477768ef23
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738160"
 ---
 # <a name="ad_process_id"></a>AD_PROCESS_ID
-指定程序識別碼,可以是系統 ID 或 GUID。
+指定處理序識別碼，此識別碼可能是系統識別碼或 GUID。
 
 ## <a name="syntax"></a>語法
 
@@ -49,18 +49,18 @@ public struct AD_PROCESS_ID {
 
 ## <a name="members"></a>成員
 `ProcessIdType`\
-[AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)枚舉中的值,用於解釋如何`ProcessId`解釋 聯合(或者對於託管代碼,該結構要訪問的哪個成員)。
+[AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)列舉中的值，指定如何解讀等位 `ProcessId` (，或針對 managed 程式碼，用來存取) 之結構的成員。
 
 `dwProcessId`\
-進程 ID 作為來自系統的值。
+系統中做為值的處理序識別碼。
 
 `guidProcessId`\
-進程識別碼作為 GUID。
+GUID 形式的處理序識別碼。
 
-dwunused 填充。
+dwUnused 填補。
 
 ## <a name="remarks"></a>備註
-此結構傳遞給以下方法:
+此結構會傳遞至下列方法：
 
 - [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)
 
@@ -68,24 +68,24 @@ dwunused 填充。
 
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
 
-- [抓取程序](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
+- [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 
-並從以下方法傳回:
+和會從下列方法傳回：
 
 - [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
 
 - [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
-- [抓取程序](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
+- [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 - [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)
 - [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)
 - [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)

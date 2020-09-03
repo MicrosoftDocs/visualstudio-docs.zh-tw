@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d947eed08ba28cfdd68e2cd7d34998412fc8bc3a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461682"
 ---
 # <a name="idiasymbolget_types"></a>IDiaSymbol::get_types
-抓取此符號之編譯器特定類型的陣列。
+針對這個符號抓取編譯器特定類型的陣列。
 
 ## <a name="syntax"></a>語法
 
@@ -35,21 +35,21 @@ HRESULT get_types ( 
 #### <a name="parameters"></a>參數
  `cTypes`
 
-在用來保存資料的緩衝區大小。
+在保存資料的緩衝區大小。
 
  `pcTypes`
 
-脫銷傳回寫入的類型數目，或者，如果 `types` 參數為 `NULL` ，則為可用的類型總數。
+擴展傳回寫入的類型數目，如果 `types` 參數為 `NULL` ，則為可用的類型總數。
 
  `types[]`
 
-脫銷要填入的陣列，其中包含代表此符號所有類型的[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。
+擴展要填入 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件的陣列，這些物件代表此符號的所有類型。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
-> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

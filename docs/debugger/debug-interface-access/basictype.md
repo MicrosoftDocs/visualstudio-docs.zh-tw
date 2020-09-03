@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7d9df59d5a3075bf63d619a03e8fe31da6991a1
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462278"
 ---
 # <a name="basictype"></a>BasicType
@@ -54,40 +54,40 @@ btNoType 未指定任何基本類型。
 
 btVoid 基本類型為 `void` 。
 
-btChar 基本類型是 `char` （c/c + + 類型）。
+btChar 基本類型是 `char`)  (C/c + + 類型。
 
-btWChar 基本類型是寬（Unicode）字元（ `WCHAR` ）。
+btWChar Basic type 是) 字元 () 的寬 (Unicode `WCHAR` 。
 
-btInt 基本類型為 `signed int` （c/c + + 類型）。
+btInt 基本類型是 `signed int`)  (C/c + + 類型。
 
-btUInt 基本類型為 `unsigned int` （c/c + + 類型）。
+btUInt 基本類型是 `unsigned int`)  (C/c + + 類型。
 
-btFloat 基本類型是浮點數（ `FLOAT` ）。
+btFloat 基本類型是 () 的浮點數 `FLOAT` 。
 
-btBCD 基本類型是二進位編碼的十進位數（ `BCD` ）。
+btBCD 基本類型是二進位編碼的十進位 (`BCD`) 。
 
-btBool 基本類型是布林值（ `BOOL` ）。
+btBool 基本類型是 () 的布林值 `BOOL` 。
 
-btLong 基本類型是 `long int` （c/c + + 類型）。
+btLong 基本類型是 `long int`)  (C/c + + 類型。
 
-btULong Basic 型別是 `unsigned long int` （c/c + + 型別）。
+btULong 基本類型是 `unsigned long int`)  (C/c + + 類型。
 
 btCurrency 基本類型為 currency。
 
-btDate 基本類型是日期/時間（ `DATE` ）。
+btDate 基本類型是日期/時間 (`DATE`) 。
 
-btVariant 基本類型是變數類型結構（ `VARIANT` ）。
+btVariant 基本類型是)  (變數類型結構 `VARIANT` 。
 
 btComplex 基本類型是複數。
 
-btBit 基本類型為 bit。
+btBit 基本類型是 bit。
 
-btBSTR 基本類型是基本或二進位字串（ `BSTR` ）。
+btBSTR 基本類型是 () 的基本或二進位字串 `BSTR` 。
 
 btHresult 基本類型為 `HRESULT` 。
 
 ## <a name="remarks"></a>備註
-此列舉中的值是由[IDiaSymbol：： get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)方法所傳回。
+[IDiaSymbol：： get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)方法會傳回這個列舉中的值。
 
 ## <a name="requirements"></a>需求
 標頭： cvconst。h

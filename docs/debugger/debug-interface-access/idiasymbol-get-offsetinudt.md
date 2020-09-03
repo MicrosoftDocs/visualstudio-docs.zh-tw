@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb70f66ca23f9710b2d41e39b4cd626829a095d0
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462606"
 ---
 # <a name="idiasymbolget_offsetinudt"></a>IDiaSymbol::get_offsetInUdt
-抓取 UDT 中成員之使用者定義類型（UDT）開頭的位移。
+抓取 UDT 中成員 (UDT) 的使用者定義型別開頭的位移。
 
 ## <a name="syntax"></a>語法
 
@@ -33,21 +33,21 @@ HRESULT get_offsetInUdt( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回符號位置的位移（以位元組為單位）。
+擴展傳回符號位置的位移（以位元組為單位）。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
-> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
 ## <a name="remarks"></a>備註
- 此函式只會用於優化組建中的本機記錄。
+ 此函數只會用於優化組建中的本機記錄。
 
 ## <a name="requirements"></a>需求
  標頭： Dia2。h
 
- 程式庫： diaguids
+ 程式庫： diaguids .lib
 
  DLL： msdia100.dll
 

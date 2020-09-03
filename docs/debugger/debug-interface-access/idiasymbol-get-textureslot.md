@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 050e2b4db8a29ab0b80774f4e135624109729405
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461813"
 ---
 # <a name="idiasymbolget_textureslot"></a>IDiaSymbol::get_textureSlot
@@ -30,10 +30,10 @@ HRESULT get_textureSlot(
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷包含材質位置之的指標 `DWORD` 。
+擴展保存材質位置之的指標 `DWORD` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
