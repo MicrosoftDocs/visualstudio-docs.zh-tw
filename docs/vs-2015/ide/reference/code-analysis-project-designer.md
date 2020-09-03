@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7c14396c8ebaba2b45587d70e44fa41ba8f2742b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660862"
 ---
 # <a name="code-analysis-project-designer"></a>專案設計工具、程式碼分析
@@ -27,7 +27,7 @@ ms.locfileid: "72660862"
 包含您可以選擇在您的程式碼上執行的程式碼分析工具。 此工具會報告您組件的相關資訊，例如違反 Microsoft .NET Framework 設計方針所制定的程式設計和設計規則。
 
 ## <a name="uielement-list"></a>UIElement 清單
- [啟用程式碼分析] 會啟用或停用專案的程式碼分析。
+ 啟用程式碼分析可啟用或停用專案的程式碼分析。
 
  設計規則會啟用或停用設計規則。 您也可以展開此項目來啟用或停用個別規則。
 
@@ -52,4 +52,4 @@ ms.locfileid: "72660862"
  使用規則會啟用或停用使用規則。 您也可以展開此項目來啟用或停用個別規則。
 
 ## <a name="see-also"></a>另請參閱
- [適用于 managed 程式碼的程式碼分析警告](../../code-quality/code-analysis-for-managed-code-warnings.md)[受控碼的程式碼分析總覽](../../code-quality/code-analysis-for-managed-code-overview.md)[逐步解說：分析受控碼的程式](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)代碼缺失
+ 受控碼警告程式碼分析 managed 程式碼的程式碼[分析](../../code-quality/code-analysis-for-managed-code-warnings.md)[總覽](../../code-quality/code-analysis-for-managed-code-overview.md)[逐步解說：針對程式碼缺失分析 managed 程式碼](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

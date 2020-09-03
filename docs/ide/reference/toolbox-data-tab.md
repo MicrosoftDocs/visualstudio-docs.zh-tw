@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e79b80890925bdf4d6d191db759516b5545fc403
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590250"
 ---
 # <a name="toolbox-data-tab"></a>工具箱, 資料索引標籤
@@ -30,7 +30,7 @@ ms.locfileid: "75590250"
 
 若要直接前往元件的 .NET 參考頁面，請在 [工具箱]**** 中的項目上，或是設計工具匣的元件項目上按 **F1**。
 
-|名稱|描述|
+|Name|描述|
 |----------|-----------------|
 |<xref:System.Data.DataSet>|將具類型或不具類型資料集的執行個體新增至表單或元件。 當您將此物件拖曳至設計工具時，會顯示一個對話方塊，讓您選取現有具類型資料集類別，或指定您想要建立的不具類型的空白新資料集。 **注意：** 您不要使用 [工具箱]**** 上的 <xref:System.Data.DataSet> 物件來建立新的具類型資料集結構描述和類別。 如需詳細資訊，請參閱[建立和設定資料集](../../data-tools/create-and-configure-datasets-in-visual-studio.md)。|
 |<xref:System.Windows.Forms.DataGridView>|以表格形式顯示資料，是一項功能強大並具彈性的方式。|
@@ -39,7 +39,7 @@ ms.locfileid: "75590250"
 
 ## <a name="see-also"></a>另請參閱
 
-- [訪問視覺化工作室中的資料](../../data-tools/accessing-data-in-visual-studio.md)
+- [存取 Visual Studio 中的資料](../../data-tools/accessing-data-in-visual-studio.md)
 - [適用於 .NET 的 Visual Studio Data Tools](../../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Visual Studio 中的資料集工具](../../data-tools/dataset-tools-in-visual-studio.md)
 - [將控制項繫結至 Visual Studio 中的資料](../../data-tools/bind-controls-to-data-in-visual-studio.md)

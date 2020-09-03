@@ -1,5 +1,5 @@
 ---
-title: 嚮導 |微軟文件
+title: 嚮導 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,48 +11,48 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d65cf2dcc10380b0ac750c8e1b0e7fd56eab95b5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703215"
 ---
 # <a name="wizards"></a>精靈
-創建精靈後,通常需要將其添加到[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境(IDE),以便其他人可以使用它。 然後,添加的嚮導將顯示在「**添加新專案**」或 **「新增新專案」** 對話框中。 要檢視「**新增新專案**」 或 **「新增新專案」** 對話框,請右鍵單擊**解決方案資源管理器**中的打開解決方案,指向 **「新增**」,然後按一下新**專案**「或 **」新專案**」。
+建立嚮導之後，您通常會想要將它加入至 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) ，讓其他人可以使用它。 加入的 wizard 接著會出現在 [ **加入新專案** ] 或 [ **加入新** 專案] 對話方塊中。 若要查看 [ **加入新專案** ] 或 [ **加入新** 專案] 對話方塊，請以滑鼠右鍵按一下 **方案總管**中開啟的方案，指向 [ **加入**]，然後按一下 [ **新增專案** ] 或 [ **新增專案**]。
 
- 嚮導可以實現,以便使用者[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]在打開 **「添加新項目**」對話方塊或 **「新增新專案**」對話框時,或在**解決方案資源管理器**中右鍵單擊專案時,從可用值的樹視圖中選擇。
+ 您可以在中執行嚮導 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，讓使用者在開啟 [ **加入新專案** ] 對話方塊或 [ **加入新** 專案] 對話方塊，或在 **方案總管**中的專案上按一下滑鼠右鍵時，從可用值的樹狀檢視中進行選取。
 
- 在嚮導中,可以提供當地語系化新專案或 ites 名稱的選項,還可以確定使用者在選擇精靈時將看到的圖示。 您還可以控制新專案相對於其他可用項的顯示順序;專案不必按字母順序排列。
+ 在您的 wizard 中，您可以提供將新專案或 ites 的名稱當地語系化的選項，也可以決定使用者在選取嚮導時會看到的圖示。 您也可以控制新專案相對於其他可用專案的顯示順序;專案不需要依字母順序組織。
 
- 還可以提供不同啟動的嚮導,該嚮導基於打開嚮導時傳遞給嚮導的自定義參數。
+ 您也可以根據在開啟時傳遞給 wizard 的自訂參數，提供以不同方式啟動的 wizard。
 
- 本節中的主題討論您實現的檔,以便導致[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**「添加新專案和****添加新專案」** 對話方塊,以在可用的嚮導和範本中列出嚮導,以及嚮導必須滿足的要求才能在 IDE 中正常運行。
+ 本章節中的主題會討論您所執行的檔案，使 [ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **加入新專案** ] 和 [ **加入新專案** ] 對話方塊可在可用的嚮導和範本中列出您的 wizard，以及您的 WIZARD 必須符合才能在 IDE 中正確運作的需求。
 
 ## <a name="in-this-section"></a>本節內容
 - [範本目錄描述檔 (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
 
- 提供哪些範本目錄描述檔的概述,並解釋它們如何在IDE中工作以顯示對話方塊中與專案關聯的資料夾、嚮導 .vsz 文件和範本檔。
+ 提供範本目錄描述檔案的總覽，並說明這些檔案在 IDE 中的運作方式，以顯示資料夾、wizard .vsz 檔案，以及與對話方塊中專案相關聯的範本檔案。
 
 - [精靈檔 (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
 
- 解釋 IDE 如何啟動精靈並列出 .vsz 檔的三個部分。
+ 說明 IDE 如何啟動嚮導，並列出 .vsz 檔案的三個部分。
 
 - [精靈介面 (IDTWizard)](../../extensibility/internals/wizard-interface-idtwizard.md)
 
- 描述精靈`IDTWizard`在 IDE 中工作時必須實現的介面。
+ 描述 `IDTWizard` 嚮導必須在 IDE 中執行才能運作的介面。
 
 - [內容參數](../../extensibility/internals/context-parameters.md)
 
- 說明如何實現嚮導,以及當IDE將上下文參數傳遞給實現時會發生什麼。
+ 說明如何執行嚮導，以及當 IDE 將內容參數傳遞至執行時，會發生什麼事。
 
 - [自訂參數](../../extensibility/internals/custom-parameters.md)
 
- 說明在嚮導啟動后如何使用自定義參數來控制嚮導的操作。
+ 說明如何使用自訂參數，在啟動嚮導之後控制 wizard 的操作。
 
 ## <a name="related-sections"></a>相關章節
 - [專案類型](../../extensibility/internals/project-types.md)
 
- 提供指向其他主題的連結,這些主題提供有關如何設計新項目類型的資訊。
+ 提供其他主題的連結，這些主題提供如何設計新專案類型的相關資訊。
 
 - [擴充專案](../../extensibility/extending-projects.md)
 

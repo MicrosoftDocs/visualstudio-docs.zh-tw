@@ -9,31 +9,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3217835571ac659ac2cef2b46cb45a1c02ba2584
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703045"
 ---
 # <a name="launch-visual-studio-using-dte"></a>使用 DTE 啟動 Visual Studio
 
-從 Visual Studio 2017 開始,使用 DTE 啟動視覺工作室的機制不同於推出早期版本的 Visual Studio。 此更改是必需的,因為 Visual Studio 2017 和更高版本支援主要版本的並行安裝(例如,您可以並排安裝預覽版和發佈版本)。
+從 Visual Studio 2017 開始，使用 DTE 啟動 Visual Studio 的機制與啟動舊版 Visual Studio 不同。 這是必要的變更，因為 Visual Studio 2017 和更新版本支援主要版本的並存安裝 (例如，您可以將預覽和發行版本安裝在並存) 。
 
-本文的其餘部分顯示了您可以使用 DTE 啟動 Visual Studio 2019 的代碼。
+本文的其餘部分將說明您可以使用 DTE 來啟動 Visual Studio 2019 的程式碼。
 
 ## <a name="set-up-the-project"></a>設定專案
 
-要查看啟動代碼的操作,請按照以下步驟創建專案。
+若要查看作用中的啟動程式碼，請遵循下列步驟來建立專案。
 
-1. 為 .NET 框架創建新的**控制台應用**專案。
+1. 建立 .NET Framework 的新 **主控台應用程式** 專案。
 
-2. 安裝[Microsoft.VisualStudio.安裝程式.配置.Interop](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet 包,並添加對程式集的引用。
+2. 安裝 [Microsoft.VisualStudio.Setup.Configuration。Interop](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet 封裝並加入元件的參考。
 
-3. 添加對 EnvDTE 的引用。
+3. 加入 EnvDTE 的參考。
 
-4. 將後面的[範例代碼](#example-code)貼上到*Program.cs*檔中。
+4. 將接下來的 [範例程式碼](#example-code) 貼到 *Program.cs* 檔案中。
 
-5. 按**F5**以運行該程式。 您應該看到 Visual Studio 2019 在程式退出之前打開。
+5. 按 **F5** 以執行程式。 在程式結束之前，您應該會看到 Visual Studio 2019 開啟。
 
 ## <a name="example-code"></a>程式碼範例
 
@@ -188,4 +188,4 @@ namespace ConsoleLauncherApp
 ## <a name="see-also"></a>另請參閱
 
 - [尋找 Visual Studio](locating-visual-studio.md)
-- [演練:從編輯器延伸器存取 DTE 物件](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)
+- [逐步解說：從編輯器延伸模組存取 DTE 物件](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)

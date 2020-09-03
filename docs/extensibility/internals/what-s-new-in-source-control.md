@@ -1,5 +1,5 @@
 ---
-title: 視覺工作室 2015 SDK 中的原始程式碼控制新增功能 |微軟文件
+title: Visual Studio 2015 SDK 中原始檔控制的新功能 |Microsoft Docs
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,37 +13,37 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f90ae3e1d327b10e99713ad28aa2d5a06c0be34b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703402"
 ---
-# <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>視覺化工作室 2015 SDK 的原始碼管理新增功能
+# <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>Visual Studio 2015 SDK 原始檔控制的新功能
 
-在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]中,可以通過實現原始程式碼管理 VSPackage 提供深度整合的原始程式碼管理解決方案。 本節介紹原始程式碼管理 VS包的功能,並提供實現步驟的概述。
+在中 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ，您可以藉由執行原始檔控制 VSPackage，提供更緊密整合的原始檔控制解決方案。 本節說明原始檔控制 Vspackage 的功能，並提供執行步驟的總覽。
 
-## <a name="the-source-control-vspackage"></a>原始碼管理 VS 套件
+## <a name="the-source-control-vspackage"></a>原始檔控制 VSPackage
 
-Visual Studio 支援兩種類型的原始程式碼管理解決方案。 在所有版本的 Visual Studio 中,您仍然可以整合式基於原始碼管理外掛程式 API 的外掛程式。 您還可以為原始程式碼管理建立 VSPackage,該路徑提供深度整合[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]路徑, 適用於需要高度複雜和自主的原始程式碼管理解決方案。
+Visual Studio 支援兩種類型的原始檔控制解決方案。 在所有版本的 Visual Studio 中，您仍然可以整合原始檔控制外掛程式 API 型外掛程式。 您也可以建立原始檔控制的 VSPackage，以提供 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 適用于原始檔控制解決方案的深層整合路徑，而這些解決方案需要高層級的複雜和自主性。
 
-VSPackage 幾乎可以向 Visual Studio 添加任何類型的功能。 原始碼管理 VSPackage 為 Visual Studio 提供了完整的原始碼管理功能,從向使用者呈現的 UI 到與原始碼管理系統的後端通訊。
+VSPackage 可將幾乎任何一種功能新增至 Visual Studio。 原始檔控制 VSPackage 提供 Visual Studio 的完整原始檔控制功能，從向使用者呈現的 UI 到與原始檔控制系統的後端通訊。
 
-實現原始碼管理 VSPackage 需要"全無"策略。 原始碼管理 VSPackage 的建立者必須投入大量精力來實現許多原始碼管理介面和新的 UI 元素(對話框、功能表和工具列),以涵蓋整個原始碼管理功能,以及任何包成功與 Visual Studio 整合所需的介面。
+執行原始檔控制 VSPackage 需要「全部」或「無」策略。 原始檔控制 VSPackage 的建立者必須投資大量的工作，以執行一些原始檔控制介面和新的 UI 元素， (對話方塊、功能表和工具列) 來涵蓋整個原始檔控制功能，以及任何封裝成功與 Visual Studio 整合所需的介面。
 
-以下步驟概述了實現原始程式碼管理包所需的內容。 關於詳細資訊,請參考[原始碼管理 VS 套件](../../extensibility/internals/creating-a-source-control-vspackage.md)。
+下列步驟提供執行原始檔控制封裝所需功能的一般總覽。 如需詳細資訊，請參閱 [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)。
 
-1. 創建提供專用原始程式碼管理服務的 VSPackage。
+1. 建立這個私用原始檔控制服務的 VSPackage。
 
-2. 在 Visual Studio 提供的原始程式碼管理<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2><xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>相關服務中實現介面(例如,和介面)。
+2. 在 Visual Studio (所推出的原始檔控制相關服務中執行介面，例如， <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> 介面) 。
 
-3. 註冊原始碼管理 VSPackage。
+3. 註冊您的原始檔控制 VSPackage。
 
-4. 實現所有原始碼管理 UI,包括選單項、對話框、工具列和上下文選單。
+4. 執行所有原始檔控制 UI，包括功能表項目、對話方塊、工具列和快顯功能表。
 
-5. 所有與原始程式碼管理相關的事件在啟動時都會傳遞到原始程式碼管理 VSackage,並且必須由您的 VSPackage 處理。
+5. 所有原始檔控制相關事件都會傳遞至您的原始檔控制 VSackage （當其為使用中時），而且必須由您的 VSPackage 處理。
 
-6. 原始碼管理 VSPackage 必須偵聽事件,<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>例如實現介面的事件以及追蹤專案文檔 (TPD) 事件(由<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>介面實現),並採取必要的操作。
+6. 您的原始檔控制 VSPackage 必須接聽事件（例如，執行介面的事件），以及 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> 追蹤專案檔案 (TPD 由) 介面所執行的) 事件 (<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> 並採取必要動作。
 
 ## <a name="see-also"></a>另請參閱
 

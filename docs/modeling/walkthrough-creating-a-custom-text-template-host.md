@@ -14,20 +14,20 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 3979f93de6040078a5b1e4315cadc4f7faa4728e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532219"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>逐步解說：建立自訂文字範本主機
 
-*文字模板主機*提供的環境可讓*文字模板轉換引擎*執行。 這個主應用程式負責管理引擎與檔案系統之間的互動。 需要檔案或元件的引擎或指示詞*處理器*可以向主機要求資源。 主機便會搜尋目錄和全域組件快取來找出要求的資源。 如需詳細資訊，請參閱[文字模板轉換](../modeling/the-text-template-transformation-process.md)程式。
+*文字模板主機*提供可讓*文字模板轉換引擎*執行的環境。 這個主應用程式負責管理引擎與檔案系統之間的互動。 需要檔案或元件的引擎或指示詞 *處理器* 可以從主機要求資源。 主機便會搜尋目錄和全域組件快取來找出要求的資源。 如需詳細資訊，請參閱 [文字模板轉換流程](../modeling/the-text-template-transformation-process.md)。
 
-如果您想要使用來自外部 Visual Studio 的*文字模板轉換*功能，或想要將該功能整合到自訂工具，您可以撰寫自訂主機。 若要建立自訂主機，您必須建立繼承自[ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))的類別。 如需個別方法的檔，請參閱[ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))。
+如果您想要從外部 Visual Studio 使用 *文字模板轉換* 功能，或想要將該功能整合至自訂工具，您可以撰寫自訂主機。 若要建立自訂主機，您必須建立繼承自 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))的類別。 如需個別方法的檔，請參閱 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))。
 
 > [!WARNING]
-> 如果您要撰寫 Visual Studio 延伸模組或封裝，請考慮使用文字模板化服務，而不是建立您自己的主機。 如需詳細資訊，請參閱叫[用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
+> 如果您要撰寫 Visual Studio 的延伸模組或套件，請考慮使用文字模板化服務，而不是建立您自己的主機。 如需詳細資訊，請參閱 [在 VS 延伸模組中叫用文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
 
 本逐步解說將說明下列工作：
 
@@ -35,7 +35,7 @@ ms.locfileid: "85532219"
 
 - 測試自訂主應用程式。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 若要完成這個逐步解說，您必須具有下列各項：
 
@@ -51,7 +51,7 @@ ms.locfileid: "85532219"
 
 2. 加入下列組件的參考：
 
-   - **VisualStudio. TextTemplating. \* 。0**
+   - **VisualStudio \* . TextTemplating .。。0**
 
    - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 (含) 以後版本**
 
@@ -714,11 +714,11 @@ ms.locfileid: "85532219"
    End Namespace
    ```
 
-4. 若為 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ，請開啟 [**專案**] 功能表，然後按一下 [ **CustomHost 屬性**]。 在 [**啟始物件**] 清單中，按一下 [ **CustomHost 程式**]。
+4. 若 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 只是，請開啟 [ **專案** ] 功能表，然後按一下 [ **CustomHost 屬性**]。 在 [ **啟始物件** ] 清單中，按一下 [ **CustomHost**]。
 
 5. 按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。
 
-6. 在 [建置]**** 功能表上，按一下 [建置方案]****。
+6. 在 [建置] 功能表上，按一下 [建置方案]。
 
 ## <a name="test-the-custom-host"></a>測試自訂主機
 
@@ -786,7 +786,7 @@ ms.locfileid: "85532219"
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > 您可以在**Windows Explorer**中流覽至檔案 CustomHost.exe，然後將檔案拖曳到 [命令提示字元] 視窗中，而不需要輸入位址。
+    > 您可以流覽至 **Windows 檔案總管** 中的檔案 CustomHost.exe，然後將檔案拖曳到 [命令提示字元] 視窗中，而不是輸入位址。
 
 3. 輸入空格。
 
@@ -797,11 +797,11 @@ ms.locfileid: "85532219"
      `C:\<YOUR PATH>TestTemplate.tt`
 
     > [!NOTE]
-    > 您可以在**Windows Explorer**中流覽至檔案 TestTemplate.tt，然後將檔案拖曳到 [命令提示字元] 視窗中，而不需要輸入位址。
+    > 您可以流覽至 **Windows 檔案總管** 中的檔案 TestTemplate.tt，然後將檔案拖曳到 [命令提示字元] 視窗中，而不是輸入位址。
 
      自訂主應用程式隨即執行並完成文字範本轉換流程。
 
-5. 在**Windows Explorer**中，流覽至包含 TestTemplate.tt 檔案的資料夾。
+5. 在 **Windows 檔案總管**中，流覽至包含 TestTemplate.tt 檔案的資料夾。
 
      該資料夾也會包含 TestTemplate1.txt 檔。
 
@@ -819,7 +819,7 @@ ms.locfileid: "85532219"
 
 ## <a name="next-steps"></a>後續步驟
 
-在本逐步解說中，您已經建立支援基本轉換功能的文字範本轉換主應用程式。 您可以擴充這個主應用程式，支援呼叫自訂或產生之指示詞處理器的文字範本。 如需詳細資訊，請參閱[逐步解說：將主機連接至產生的](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)指示詞處理器。
+在本逐步解說中，您已經建立支援基本轉換功能的文字範本轉換主應用程式。 您可以擴充這個主應用程式，支援呼叫自訂或產生之指示詞處理器的文字範本。 如需詳細資訊，請參閱 [逐步解說：將主機連接至產生的](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)指示詞處理器。
 
 ## <a name="see-also"></a>另請參閱
 

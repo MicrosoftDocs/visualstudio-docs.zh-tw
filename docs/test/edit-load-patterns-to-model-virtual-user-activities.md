@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0836fdb085ab33b2a646d9774c94bd859b5ca5ad
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590302"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>編輯負載模式以建構虛擬使用者活動模型
@@ -42,7 +42,7 @@ ms.locfileid: "75590302"
 
 步驟負載模式是用來指定會隨著時間增加至所定義之最大使用者負載的使用者負載。 您可以針對逐步執行負載，指定 [初始使用者計數]****、[最大使用者計數]****、[逐步執行持續期間 (秒)]**** 和 [逐步執行使用者計數]****。
 
-例如，**初始使用者計數**為 1、**最大使用者計數**為 100、**步長持續時間（秒）** 為 1）和**步進使用者計數**1 的步驟載入創建使用者負載模式，該模式從 1 開始，每 10 秒增加 1，直到達到 100 個使用者。
+例如，第一個步驟負載的 **初始使用者計數** 為1、 **最大使用者計數** 為100、 **步驟持續時間 (秒) ** 10，而且 **步驟使用者計數** 1 會建立從1開始，每隔10秒增加1，直到達到100使用者為止。
 
 > [!NOTE]
 > 如果總測試持續期間小於逐漸增加至最大使用者負載所需的時間，在經過持續期間之後，測試就會停止，並且不會到達 [最大使用者計數]**** 目標。
@@ -65,7 +65,7 @@ ms.locfileid: "75590302"
 
 - 逐步執行使用者計數****：100
 
-  這些設定會以使用者負載為 100、200、300 位 (最多到 2,000 位使用者) 的情況下，執行負載測試 30 分鐘 (1,800 秒)。 **Step Ramp Time**屬性值得特別提及，因為它是這些屬性中唯一一個無法在 **"新負載測試精靈**"中選擇的屬性。 這個屬性允許步驟之間的增加作業 (例如，從 100 位增加至 200 位使用者) 逐漸進行，而非立即進行。 在此範例中，使用者負載會在 20 秒的期間內從 100 位增加至 200 位使用者 (每秒增加五位使用者)。 有關詳細資訊，請參閱[如何：為步長載入模式指定步長坡時間屬性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)。
+  這些設定會以使用者負載為 100、200、300 位 (最多到 2,000 位使用者) 的情況下，執行負載測試 30 分鐘 (1,800 秒)。 [ **逐步遞增時間** ] 屬性特別值得一提，因為它是唯一無法在 **新負載測試精靈**中選取的屬性。 這個屬性允許步驟之間的增加作業 (例如，從 100 位增加至 200 位使用者) 逐漸進行，而非立即進行。 在此範例中，使用者負載會在 20 秒的期間內從 100 位增加至 200 位使用者 (每秒增加五位使用者)。 如需詳細資訊，請參閱 [如何：指定步驟負載模式的逐步遞增時間屬性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)。
 
 ### <a name="goal-based"></a>以目標為依據
 
@@ -109,35 +109,35 @@ ms.locfileid: "75590302"
 
 |工作|相關主題|
 |-|-----------------------|
-|**為負載測試指定初始負載模式：** 使用 **"新負載測試精靈**"創建負載測試時，請選擇載入模式。|-   [更改負載模式](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
-|**編輯負載測試的負載模式：** 創建負載測試後，可以在**負載測試編輯器**中編輯負載模式。|-   [如何：為步進載入模式指定步進斜坡時間屬性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
-|**指定負載測試情節中的虛擬使用者是否應包括 Web 緩存資料：** 您可以更改**新使用者的百分比**屬性，以影響負載測試類比 Web 瀏覽器為虛擬使用者執行的 Web 緩存的方式。|-   [如何：指定使用 Web 緩存資料的虛擬使用者的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
-|**指定步驟負載模式的逐步遞增時間：**[逐步遞增時間]**** 屬性允許步驟之間的增加作業 (例如，從 100 位增加至 200 位使用者) 逐漸進行，而非立即進行。|-   [如何：為步進載入模式指定步進斜坡時間屬性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**指定負載測試的初始負載模式：** 當您使用 **新的負載測試精靈**來建立負載測試時，您會選取負載模式。|-   [變更負載模式](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
+|**編輯負載測試的負載模式：** 建立負載測試之後，您可以在 **負載測試編輯器**中編輯負載模式。|-   [如何：指定步驟負載模式的逐步遞增時間屬性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**指定負載測試情節中的虛擬使用者是否應該包含 web 快取資料：** 您可以變更 [ **新使用者的百分比** ] 屬性，以影響負載測試模擬虛擬使用者網頁瀏覽器所執行之 web 快取的方式。|-   [如何：指定使用 web 快取資料之虛擬使用者的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
+|**指定步驟負載模式的逐步遞增時間：**[逐步遞增時間]**** 屬性允許步驟之間的增加作業 (例如，從 100 位增加至 200 位使用者) 逐漸進行，而非立即進行。|-   [如何：指定步驟負載模式的逐步遞增時間屬性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
 ## <a name="change-the-load-pattern"></a>變更負載模式
 
 在您使用 [新增負載測試精靈]**** 建立負載測試之後，就可以使用 [負載測試編輯器]****，將與情節建立關聯的負載模式屬性變更為符合您測試目標的層級。
 
 > [!NOTE]
-> 有關負載測試情節屬性及其描述的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。
+> 如需負載測試情節屬性及其描述的完整清單，請參閱 [負載測試情節屬性](../test/load-test-scenario-properties.md)。
 
 負載模式會指定能夠在負載測試期間使用的虛擬使用者數目，以及加入新使用者的比例。 共有三個可用的模式供您選擇：逐步執行、常數和以目標為依據。 如需詳細資訊，請參閱[指定在負載測試情節中使用負載模式之虛擬使用者的數目](../test/edit-load-patterns-to-model-virtual-user-activities.md)。
 
 > [!NOTE]
-> 您也可以使用負載測試外掛程式，以程式設計方式變更負載屬性。 有關詳細資訊，請參閱[如何：創建負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
+> 您也可以使用負載測試外掛程式，以程式設計方式變更負載屬性。 如需詳細資訊，請參閱 [如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
 
 ### <a name="to-change-the-load-pattern"></a>若要變更負載模式
 
 1. 開啟負載測試。
 
-2. 在"*方案"* 資料夾中的**負載測試編輯器**中，展開要編輯載入模式的方案，並為方案選擇載入模式。
+2. 在 **負載測試編輯器**的 [ *情節* ] 資料夾中，展開您要編輯其負載模式的情節，然後選擇該案例的負載模式。
 
     > [!NOTE]
     > 就如同負載測試的情節樹狀目錄中所顯示的負載模式節點一樣，它的用字會反映您在建立負載測試時所選擇的載入設定檔。 它可能是 [常數負載設定檔]**** 或 [逐步執行負載設定檔]****。
 
 3. 按 **F4** 顯示 [屬性]**** 視窗。
 
-     **"載入模式**"和 **"參數"** 類別顯示在 **"屬性"** 視窗中。
+     [ **負載模式** ] 和 [ **參數** ] 分類都會顯示在 [ **屬性** ] 視窗中。
 
 4. (選擇性) 變更 [負載模式]**** 分類中的 [模式]**** 屬性。
 
@@ -153,5 +153,5 @@ ms.locfileid: "75590302"
 ## <a name="see-also"></a>另請參閱
 
 - [編輯負載測試情節](../test/edit-load-test-scenarios.md)
-- [如何：指定使用 Web 緩存資料的虛擬使用者的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
-- [如何：為步進載入模式指定步進斜坡時間屬性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)
+- [如何：指定使用 web 快取資料之虛擬使用者的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
+- [如何：指定步驟負載模式的逐步遞增時間屬性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)

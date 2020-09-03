@@ -1,5 +1,5 @@
 ---
-title: 嚮導 (.Vsz) 檔案 |微軟文件
+title: Wizard (。.Vsz) 檔案 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,19 +13,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0fedf409c0ca320c054ddf1cc16318d08d25463a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703316"
 ---
 # <a name="wizard-vsz-file"></a>精靈檔 (.Vsz)
 
-整合式開發環境 (IDE) 使用 .vsz 檔案啟動精靈。 這些 .vsz 檔包含 IDE 用於確定呼叫哪個精靈以及要傳遞給精靈的資訊的資訊。
+整合式開發環境 (IDE) 使用 .vsz 檔案來啟動嚮導。 這些 .vsz 檔案包含的資訊，可讓 IDE 用來判斷要呼叫的 wizard 以及要傳遞給嚮導的資訊。
 
-.vsz 檔案是 .ini 格式的文本檔的版本,該檔沒有節。 IDE 已知的資訊存儲在檔的開頭。 這提供了 IDE 調用的嚮導和要傳遞給 IDE 的 .vsz 檔案中的參數之間的連結。 檔的其餘部分提供特定於嚮導的參數,這些參數將由IDE收集並傳遞給特定嚮導。
+.Vsz 檔案是沒有區段的 .ini 格式文字檔的版本。 IDE 已知的資訊會儲存在檔案的開頭。 這會在嚮導之間提供一個連結，IDE 會在此呼叫，以及要傳遞至 IDE 的 .vsz 檔案中的參數。 檔案的其餘部分會提供 wizard 專屬的參數，以及 IDE 所要收集並傳遞至特定 wizard 的參數。
 
-下面的範例顯示 .vsz 文件的內容。
+下列範例會顯示 .vsz 檔案的內容。
 
 ```
 VSWizard 8.0
@@ -38,16 +38,16 @@ Param="WIZARDUI = FALSE"
 
 |部分|描述|
 |----------|-----------------|
-|VSWizard|檔案中的第一個參數是範本檔案格式的版本號。 此版本號必須為 6.0、7.0、7.1 或 8.0。 無法啟動其他數位並導致格式無效錯誤。|
-|精靈|此欄位包含精靈的 OLE ProgID,或者包含由 IDE 共同建立的嚮導 CLSID 的 GUID 字串表示形式。|
-|Param|這些部件是可選的。 您可以根據需要添加盡可能多的。|
+|VSWizard|檔案中的第一個參數是範本檔案格式的版本號碼。 此版本號碼必須是6.0、7.0、7.1 或8.0。 無法啟動其他數位，而且會導致不正確格式錯誤。|
+|精靈|此欄位包含 wizard 的 OLE ProgID，或 IDE 所 cocreated 的 wizard CLSID 的 GUID 字串表示。|
+|Param|這些部分是選擇性的。 您可以視需要新增多個。|
 
-這些參數使 .vsz 檔案能夠將其他自定義參數傳遞給嚮導。 每個值都作為字串元素傳遞給嚮導的變數組中。 有關詳細資訊,請參閱[自訂參數](../../extensibility/internals/custom-parameters.md)。
+參數可讓 .vsz 檔案將其他自訂參數傳遞至 wizard。 每個值都會以 variant 陣列中的字串元素形式傳遞給 wizard。 如需詳細資訊，請參閱 [自訂參數](../../extensibility/internals/custom-parameters.md)。
 
-要將預設區域設定 ID 添加到 .vsz 檔案`FALLBACK_LCID`,請指定 _xxxx,其中 xxx 是區域設定 ID,例如,英語為 1033。 定義`FALLBACK_LCID`參數時,如果未找到當前 ID,嚮導將使用提供的回退區域設置 ID。
+若要將預設的地區設定識別碼加入至 .vsz 檔案，請指定 `FALLBACK_LCID` = xxxx，其中 xxxx 是地區設定識別碼，例如，1033代表英文。 當 `FALLBACK_LCID` 參數已定義時，如果找不到目前的識別碼，則嚮導會使用提供的 fallback 地區設定識別碼。
 
 ## <a name="see-also"></a>另請參閱
 
 - [自訂參數](../../extensibility/internals/custom-parameters.md)
-- [嚮導](../../extensibility/internals/wizards.md)
+- [精靈](../../extensibility/internals/wizards.md)
 - [範本目錄描述檔 (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
