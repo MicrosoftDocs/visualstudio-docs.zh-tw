@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 63e99bf7b247856815fd3e8de0f4932fed4881dc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535287"
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>無法刪除屬性 \<property name>
 
-\<property name>無法刪除屬性，因為它已設定為與之間的繼承的**鑒別**子屬性 \<class name>\<class name>
+\<property name>無法刪除屬性，因為它設定為和之間繼承的**鑒別子屬性** \<class name>\<class name>
 
 選取的屬性已為在錯誤訊息指出的類別 (Class) 之間的繼承設定為**鑑別子屬性**。 如果屬性已參與資料類別之間的繼承組態，就無法刪除屬性。
 

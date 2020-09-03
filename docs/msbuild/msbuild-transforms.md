@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34394ba35a349a1564f6c3fdd43052be3e1fdf03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633105"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 轉換
 
-轉換是指某個項目清單和另一個項目清單的一對一轉換作業。 轉換作業除了可讓專案轉換項目清單，還能讓目標識別其輸入和輸出之間的直接對應。 本主題介紹轉換以及 MSBuild 如何使用它們更有效地構建專案。
+轉換是指某個項目清單和另一個項目清單的一對一轉換作業。 轉換作業除了可讓專案轉換項目清單，還能讓目標識別其輸入和輸出之間的直接對應。 本主題說明轉換，以及 MSBuild 如何使用它們來更有效率地建立專案。
 
 ## <a name="transform-modifiers"></a>轉換修飾詞
 
-轉換並非任意性質，而是受到特殊語法的限制，該語法中所有轉換修飾詞都必須為 %(\<ItemMetaDataName>) 格式。 任何項目中繼資料均可作為轉換修飾詞。 這包括每個項目建立時指派給項目的已知項目中繼資料。 如需已知項目中繼資料的清單，請參閱[已知項目中繼資料](../msbuild/msbuild-well-known-item-metadata.md)。
+轉換不是任意的，但受限於特殊語法，其中所有轉換修飾詞的格式都必須是% (\<ItemMetaDataName>) 。 任何項目中繼資料均可作為轉換修飾詞。 這包括每個項目建立時指派給項目的已知項目中繼資料。 如需已知項目中繼資料的清單，請參閱[已知項目中繼資料](../msbuild/msbuild-well-known-item-metadata.md)。
 
 下列範例會將一份 *.resx* 檔案清單轉換為 *.resources* 檔案清單。 %(filename) 轉換修飾詞會指定每個 *.resources* 檔案使用與對應 *.resx* 檔案相同的檔案名稱。
 
@@ -49,7 +49,7 @@ ms.locfileid: "77633105"
 
 ## <a name="dependency-analysis"></a>相依性分析
 
- 轉換作業可保證轉換後的項目清單與原始項目清單之間的一對一對應。 因此，如果目標創建的輸出是輸入的轉換，MSBuild 可以分析輸入和輸出的時間戳記，並決定是跳過、生成還是部分重建目標。
+ 轉換作業可保證轉換後的項目清單與原始項目清單之間的一對一對應。 因此，如果目標建立的輸出是輸入的轉換，MSBuild 可以分析輸入和輸出的時間戳記，並決定要跳過、建立還是部分重建目標。
 
  在下列範例的 [Copy 工作](../msbuild/copy-task.md)中，`BuiltAssemblies` 項目清單中的每個檔案都會對應至工作目的地資料夾中的檔案 (透過在 `Outputs` 屬性中使用轉換來指定)。 如果 `BuiltAssemblies` 項目清單中的檔案有所變更，系統就只會針對已變更的檔案執行 `Copy` 工作，並略過所有其他檔案。 如需相依性分析以及如何使用轉換的詳細資訊，請參閱[如何：累加建置](../msbuild/how-to-build-incrementally.md)。
 
@@ -69,7 +69,7 @@ ms.locfileid: "77633105"
 
 ### <a name="description"></a>描述
 
- 下面的示例顯示了使用轉換的 MSBuild 專案檔案。 這個範例假設 *c:\sub0\sub1\sub2\sub3* 目錄中只有一個 *.xsd* 檔案，而工作目錄是 *c:\sub0*。
+ 下列範例顯示使用轉換的 MSBuild 專案檔。 這個範例假設 *c:\sub0\sub1\sub2\sub3* 目錄中只有一個 *.xsd* 檔案，而工作目錄是 *c:\sub0*。
 
 ### <a name="code"></a>程式碼
 
@@ -111,4 +111,4 @@ extension: .xsd
 
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
-- [如何：增量生成](../msbuild/how-to-build-incrementally.md)
+- [如何：以累加方式建立](../msbuild/how-to-build-incrementally.md)

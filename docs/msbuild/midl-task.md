@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a43975244eaf064c9ed7608fa41c16854ca140f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633469"
 ---
 # <a name="midl-task"></a>MIDL 工作
@@ -43,7 +43,7 @@ ms.locfileid: "77633469"
 
 - **AdditionalIncludeDirectories**
 
-     可選**字串*** 參數。
+     選擇性的 **String []** 參數。
 
      將目錄加入要在其中搜尋匯入的 IDL 檔案、包含的標頭檔及應用程式組態檔 (ACF) 的目錄清單。
 
@@ -51,15 +51,15 @@ ms.locfileid: "77633469"
 
 - **AdditionalOptions**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
-     命令列選項清單。 例如，/\<option1> /\<option2> /\<option#>。 使用此參數，來指定任何其他 MIDL 工作參數未表示的命令列選項。
+     命令列選項清單。 例如，/ \<option1>  / \<option2>  / \<option#> 。 使用此參數，來指定任何其他 MIDL 工作參數未表示的命令列選項。
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考)。
 
 - **ApplicationConfigurationMode**
 
-     可選**布林參數**。
+     選擇性的 **布林值** 參數。
 
      如果是 `true`，可讓您在 IDL 檔案中使用某些 ACF 關鍵字。
 
@@ -67,7 +67,7 @@ ms.locfileid: "77633469"
 
 - **ClientStubFile**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      指定 RPC 介面的用戶端 Stub 檔案名稱。
 
@@ -75,7 +75,7 @@ ms.locfileid: "77633469"
 
 - **CPreprocessOptions**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      指定要傳遞至 C/C++ 前置處理器的選項。 指定以空格分隔的前置處理器選項清單。
 
@@ -83,7 +83,7 @@ ms.locfileid: "77633469"
 
 - **DefaultCharType**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      指定預設的字元類型，C 編譯器將使用此類型來編譯產生的程式碼。
 
@@ -99,7 +99,7 @@ ms.locfileid: "77633469"
 
 - **DllDataFileName**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      指定針對 Proxy DLL 所產生之 *dlldata* 檔案的檔名。
 
@@ -107,7 +107,7 @@ ms.locfileid: "77633469"
 
 - **EnableErrorChecks**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      指定錯誤檢查的類型，產生的 Stub 將會在執行階段加以執行。
 
@@ -116,14 +116,14 @@ ms.locfileid: "77633469"
     |值|命令列選項|
     |-----------|--------------------------|
     |**無**|**/error none**|
-    |**EnableCustom**|**/錯誤**|
-    |**所有**|**/error all**|
+    |**EnableCustom**|**/error**|
+    |**全部**|**/error all**|
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/error** 選項。
 
 - **ErrorCheckAllocations**
 
-     可選**布林參數**。
+     選擇性的 **布林值** 參數。
 
      如果是 `true`，即會檢查有無記憶體不足的錯誤。
 
@@ -131,7 +131,7 @@ ms.locfileid: "77633469"
 
 - **ErrorCheckBounds**
 
-     可選**布林參數**。
+     選擇性的 **布林值** 參數。
 
      如果是 `true`，即會根據傳輸長度規格來檢查不一致的各種陣列大小。
 
@@ -139,7 +139,7 @@ ms.locfileid: "77633469"
 
 - **ErrorCheckEnumRange**
 
-     可選**布林參數**。
+     選擇性的 **布林值** 參數。
 
      如果是 `true`，即會檢查列舉值位於允許的範圍內。
 
@@ -147,7 +147,7 @@ ms.locfileid: "77633469"
 
 - **ErrorCheckRefPointers**
 
-     可選**布林參數**。
+     選擇性的 **布林值** 參數。
 
      如果是 `true`，即會檢查未將任何 Null 參考指標傳遞到用戶端 Stub。
 
@@ -155,7 +155,7 @@ ms.locfileid: "77633469"
 
 - **ErrorCheckStubData**
 
-     可選**布林參數**。
+     選擇性的 **布林值** 參數。
 
      如果是 `true`，即會產生 Stub，來攔截伺服器端的解除封送處理例外狀況，並將它們傳播回用戶端。
 
@@ -163,7 +163,7 @@ ms.locfileid: "77633469"
 
 - **GenerateClientFiles**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      指定編譯器是否要針對 RPC 介面產生用戶端的 C 原始程式檔。
 
@@ -178,7 +178,7 @@ ms.locfileid: "77633469"
 
 - **GenerateServerFiles**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      指定編譯器是否要針對 RPC 介面產生伺服器端的 C 原始程式檔。
 
@@ -193,7 +193,7 @@ ms.locfileid: "77633469"
 
 - **GenerateStublessProxies**
 
-     可選**布林參數**。
+     選擇性的 **布林值** 參數。
 
      如果是 `true`，即會透過物件介面的 Stubless Proxies 一併產生完全解譯的 Stub。
 
@@ -201,7 +201,7 @@ ms.locfileid: "77633469"
 
 - **GenerateTypeLibrary**
 
-     可選**布林參數**。
+     選擇性的 **布林值** 參數。
 
      若為 `true`，就不會產生類型程式庫 (*.tlb*) 檔案。
 
@@ -209,7 +209,7 @@ ms.locfileid: "77633469"
 
 - **HeaderFileName**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      指定所產生的標頭檔名稱。
 
@@ -217,7 +217,7 @@ ms.locfileid: "77633469"
 
 - **IgnoreStandardIncludePath**
 
-     可選**布林參數**。
+     選擇性的 **布林值** 參數。
 
      如果是 `true`，則 MIDL 工作只會搜尋使用 **AdditionalIncludeDirectories** 參數指定的目錄，並忽略目前的目錄以及 INCLUDE 環境變數所指定的目錄。
 
@@ -225,13 +225,13 @@ ms.locfileid: "77633469"
 
 - **InterfaceIdentifierFileName**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      針對 COM 介面指定「介面識別項檔」** 的名稱。 這會覆寫透過在 IDL 檔名中加入 "_i.c" 而取得的預設名稱。
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/iid** 選項。
 
-- **區域 ID**
+- **LocaleID**
 
      選擇性的 **int** 參數。
 
@@ -241,15 +241,15 @@ ms.locfileid: "77633469"
 
 - **MkTypLibCompatible**
 
-     可選**布林參數**。
+     選擇性的 **布林值** 參數。
 
      若為 `true`，則輸入檔的格式必須與 mktyplib.exe** 2.03 版相容。
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/mktyplib203** 選項。 另請參閱 MSDN 網站上的 [ODL 檔案語法](/previous-versions/windows/desktop/automat/odl-file-syntax)。
 
-- **輸出目錄**
+- **OutputDirectory**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      指定 MIDL 工作寫入輸出檔的預設目錄。
 
@@ -257,7 +257,7 @@ ms.locfileid: "77633469"
 
 - **PreprocessorDefinitions**
 
-     可選**字串*** 參數。
+     選擇性的 **String []** 參數。
 
      指定一或多個「定義」**；也就是要傳遞到 C 前置處理器的名稱和選擇性的值，如同透過 `#define` 指示詞。 每個定義的格式是 *name[=value]*。
 
@@ -265,7 +265,7 @@ ms.locfileid: "77633469"
 
 - **ProxyFileName**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      針對 COM 介面指定介面 Proxy 檔案的名稱。
 
@@ -273,7 +273,7 @@ ms.locfileid: "77633469"
 
 - **RedirectOutputAndErrors**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      將輸出 (例如錯誤訊息和警告) 從標準輸出重新導向到指定的檔案。
 
@@ -281,13 +281,13 @@ ms.locfileid: "77633469"
 
 - **ServerStubFile**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      指定 RPC 介面的伺服器 Stub 檔案名稱。
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/sstub** 選項。 另請參閱此表格中的 **ClientStubFile** 參數。
 
-- **來源**
+- **Source**
 
      必要的 `ITaskItem[]` 參數。
 
@@ -295,7 +295,7 @@ ms.locfileid: "77633469"
 
 - **StructMemberAlignment**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      指定目標系統中結構的對應儲存 (「封裝層級」**)。
 
@@ -303,7 +303,7 @@ ms.locfileid: "77633469"
 
     |值|命令列選項|
     |-----------|--------------------------|
-    |**NotSet**|*\<沒有>*|
+    |**NotSet**|*\<none>*|
     |**1**|**/Zp1**|
     |**2**|**/Zp2**|
     |**4**|**/Zp4**|
@@ -313,7 +313,7 @@ ms.locfileid: "77633469"
 
 - **SuppressCompilerWarnings**
 
-     可選**布林參數**。
+     選擇性的 **布林值** 參數。
 
      如果是 `true`，即會隱藏來自 MIDL 工作的警告訊息。
 
@@ -329,7 +329,7 @@ ms.locfileid: "77633469"
 
 - **TargetEnvironment**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      指定執行應用程式的環境。
 
@@ -337,10 +337,10 @@ ms.locfileid: "77633469"
 
     |值|命令列選項|
     |-----------|--------------------------|
-    |**NotSet**|*\<沒有>*|
+    |**NotSet**|*\<none>*|
     |**Win32**|**/env win32**|
     |**Itanium**|**/env ia64**|
-    |**X64**|**/env x64**|
+    |**64**|**/env x64**|
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/env** 選項。
 
@@ -352,7 +352,7 @@ ms.locfileid: "77633469"
 
 - **TypeLibFormat**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      指定類型程式庫檔案的格式。
 
@@ -367,7 +367,7 @@ ms.locfileid: "77633469"
 
 - **TypeLibraryName**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      指定類型程式庫檔案的名稱。
 
@@ -375,7 +375,7 @@ ms.locfileid: "77633469"
 
 - **UndefinePreprocessorDefinitions**
 
-     可選**字串*** 參數。
+     選擇性的 **String []** 參數。
 
      將名稱傳遞到 C 前置處理器 (如同透過 `#undefine` 指示詞)，藉以移除名稱所有先前的定義。 指定一或多個先前定義的名稱。
 
@@ -389,7 +389,7 @@ ms.locfileid: "77633469"
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/robust** 和 **/no_robust** 選項。
 
-- **警告錯誤**
+- **WarnAsError**
 
      選擇性的 `Boolean` 參數。
 
@@ -401,7 +401,7 @@ ms.locfileid: "77633469"
 
 - **WarningLevel**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      指定要發出的警告嚴重性 (「警告層級」**)。 值為 0，就會不發出任何警告。 否則，如果其警告層級是小於或等於指定值的數字，就會發出警告。
 
@@ -419,4 +419,4 @@ ms.locfileid: "77633469"
 
 ## <a name="see-also"></a>另請參閱
 
-- [任務引用](../msbuild/msbuild-task-reference.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: 建立項目型態 :微軟文件
+title: 建立專案類型 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,61 +12,61 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d2398b63b8cd52784252cfc764bb6c6a30e1accc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709074"
 ---
-# <a name="create-project-types"></a>建立項目型態
-您可以通過建立新[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]項目 類型進行擴充。 要創建新的項目類型,必須瞭解多個概念並完成多個步驟。 以下主題概述了如何創建項目類型。
+# <a name="create-project-types"></a>建立專案類型
+您可以藉 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 由建立新的專案類型來擴充。 若要建立新的專案類型，您必須瞭解數個概念並完成一些步驟。 下列主題提供如何建立專案類型的總覽。
 
 ## <a name="in-this-section"></a>本節內容
-- [專案類型設計決策](../../extensibility/internals/project-type-design-decisions.md)
+- [專案類型的設計決策](../../extensibility/internals/project-type-design-decisions.md)
 
- 討論在創建新專案類型之前必須做出的專案、專案檔持久性和承諾機制設計決策。
+ 討論在建立新的專案類型之前，您必須建立的專案、專案檔持續性和承諾用量技師修理設計決策。
 
-- [檢查表:建立新的項目型態](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)
 
- 概述了創建支援編輯代碼和編譯、構建、調試和部署專案中應用程式等程式設計任務的新項目類型時必須遵循的步驟。
+ 概述您必須遵循的步驟，以建立新的專案類型，以支援在專案中編輯程式碼及編譯、建立、偵測和部署應用程式的程式設計工作。
 
-- [使用項目工廠建立項目實體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
+- [使用 project factory 建立專案實例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
 
- 提供有關如何提供和使用專案工廠創建新專案實例的資訊。
+ 提供如何提供和使用專案 factory 來建立新專案實例的相關資訊。
 
-- [註冊項目類型](../../extensibility/internals/registering-a-project-type.md)
+- [註冊專案類型](../../extensibility/internals/registering-a-project-type.md)
 
- 提供提供預設路徑和數據的註冊表中的語句的代碼示例,以及包含每個語句註冊表腳本中的條目的表。
+ 提供登錄中提供預設路徑和資料之語句的程式碼範例，以及包含每個語句的登入指令檔之專案的資料表。
 
-- [專案持久性](../../extensibility/internals/project-persistence.md)
+- [專案持續性](../../extensibility/internals/project-persistence.md)
 
- 討論`IPersistFileFormat`使用 來保留檔和非基於檔的專案物件。
+ 討論 `IPersistFileFormat` 如何使用來保存檔案和非檔案型專案物件。
 
 - [使用 MSBuild](../../extensibility/internals/using-msbuild.md)
 
- 描述項目類型如何使用[!INCLUDE[vstecmsbuild](../../extensibility/internals/includes/vstecmsbuild_md.md)]生成引擎來允許使用者[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]從 命令列和命令行生成。
+ 描述您的專案類型如何使用 [!INCLUDE[vstecmsbuild](../../extensibility/internals/includes/vstecmsbuild_md.md)] 組建引擎讓使用者在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 命令列中建立。
 
 ## <a name="related-sections"></a>相關章節
-- [支援符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)
+- [支援符號流覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 
- 解釋程式碼檢視工具(如**物件瀏覽器**和**類視圖**視窗)的體系結構。 描述用於在 VSPackage 中實現物件瀏覽的介面和方法。
+ 說明程式碼查看工具的架構，例如 **物件瀏覽器** 和 **類別檢視** 視窗。 描述在 VSPackage 中用來執行物件流覽的介面和方法。
 
-- [新增項目和項目項目樣本](../../extensibility/internals/adding-project-and-project-item-templates.md)
+- [新增專案與專案專案範本](../../extensibility/internals/adding-project-and-project-item-templates.md)
 
- 討論專案在確定打開專案項時使用哪個編輯器以及如何操縱專案資源方面的重要性。
+ 討論專案在決定開啟專案專案時所使用的編輯器，以及如何操作專案資源時所扮演的意義。
 
-- [使用 Windows 安裝程式安裝 VS 套件](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+- [使用 Windows Installer 安裝 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
 
- 展示如何為 VSPackage 提供其自己的唯一識別,以及如何在 Windows 安裝程式套件(中包裝 VSPackage DLL 和其他資訊 *)用於*部署到客戶的 MSI 檔)。
+ 說明如何為您的 VSPackage 提供自己的唯一身分識別，以及如何 (Windows Installer 套件中包裝您的 VSPackage Dll 和其他資訊 *。MSI* 檔案) 部署至您的客戶。
 
 - [Visual Studio 中的階層](../../extensibility/internals/hierarchies-in-visual-studio.md)
 
- 描述視圖[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]和位址層次結構的方式。
+ 描述 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 查看和定址階層的方式。
 
-- [VSPackage](../../extensibility/internals/vspackages.md)
+- [VSPackages](../../extensibility/internals/vspackages.md)
 
- 提供 VSPackage 的概述,這是一個可安裝[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]的 COM 物件,可擴展環境並討論如何實現自己的 VSPackage。
+ 提供 VSPackage 的總覽，此為可安裝的 COM 物件，可延伸 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 環境並討論如何執行您自己的 VSPackage。
 
 - [專案類型](../../extensibility/internals/project-types.md)
 
- 討論如何使用專案來修改代碼、編譯和生成代碼以及運行和調試代碼,並提供有關如何創建專案類型的詳細主題的連結。
+ 討論如何使用專案來修改程式碼、編譯和建立程式碼、執行和偵錯工具代碼，以及提供有關如何建立專案類型的詳細主題連結。

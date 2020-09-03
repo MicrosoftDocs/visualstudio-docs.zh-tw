@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 74da305b69a9561573466d385c5d7b686da3693f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620331"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>使用程式碼片段的最佳作法
@@ -45,13 +45,13 @@ ms.locfileid: "72620331"
 
 - 保護資源 (例如事件記錄檔、登錄)
 
-- 儲存密碼
+- 儲存祕密
 
 - 驗證輸入
 
 - 將資料傳遞至指令碼技術
 
-  如需詳細資訊，請參閱[設定應用程式的安全性](../ide/securing-applications.md)。
+  如需詳細資訊，請參閱 [保護應用程式](../ide/securing-applications.md)。
 
 ## <a name="downloaded-code-snippets"></a>已下載的程式碼片段
  Visual Studio 所安裝的 IntelliSense 程式碼片段本身並沒有安全性方面的危險。 不過，這些程式碼片段在您的應用程式中可能會產生安全性風險。 從網際網路下載的程式碼片段應視為任何其他下載的內容，因此必須格外謹慎處理。

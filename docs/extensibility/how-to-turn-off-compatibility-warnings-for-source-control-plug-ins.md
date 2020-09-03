@@ -1,5 +1,5 @@
 ---
-title: 關閉源控制外掛程式的相容性警告 |微軟文件
+title: 關閉原始檔控制外掛程式的相容性警告 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,34 +12,34 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 22dd3821426aa1dae6265c520ddac60dd93e1c5e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710718"
 ---
-# <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>如何:關閉原始碼管理外掛程式的相容性警告
-在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中 使用原始碼時,使用者可能會看到多個相容性警告。 顯示的警告取決於原始程式碼管理外掛程式的功能,可以在此處禁用,如下所示。
+# <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>如何：關閉原始檔控制外掛程式的相容性警告
+使用中的原始檔控制時，使用者可能會看到數個相容性警告 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 所顯示的警告取決於原始檔控制外掛程式的功能，您可以依照此處的詳細說明來加以停用。
 
-### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>禁用警告:"確保與 Visual Studio 的最佳源代碼管理集成"
+### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>若要停用警告：「確保與 Visual Studio 的最佳原始檔控制整合」
 
-- 設定以下註冊表項(如有必要,添加值):
+- 如有必要，請設定下列登錄專案 (新增值) ：
 
-   **HKEY_CURRENT_USER_軟體_微軟_VisualStudio_8.0_原始程式碼控制\不要顯示檢查DotNET相容 = dword:0000001**
+   **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = dword：00000001**
 
-   將顯示此警告,用於所有非[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]外掛程式。
+   所有非外掛程式都會顯示此警告 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] 。
 
-### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>禁用警告:"已安裝的原始程式碼管理提供程式不支援所有功能"
+### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>若要停用警告：「安裝的原始檔控制提供者不支援所有功能」
 
-- 設定以下兩個註冊表值(如有必要添加值):
+- 如有必要，請設定下列兩個登錄值 (新增值) ：
 
-     **HKEY_CURRENT_USER_軟體\微軟_VisualStudio_8.0_原始程式碼控制\警告OldMSSCCI提供者 = dword:0000000**
+     **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = dword：00000000**
 
-    **HKEY_CURRENT_USER_軟體\微軟_VisualStudio_8.0_原始程式碼控制\使用OldSCC = dword:00000001**
+    **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = dword：00000001**
 
-     如果原始程式碼管理外掛程式不顯式支援多個專案的重化(也就是說,如果一次只能簽入一個檔和專案),則顯示此警告。
+     如果原始檔控制外掛程式未明確支援多個專案的重新進入，則會顯示此警告 (也就是，如果一次只能簽入一個檔案和專案) 。
 
-     最好支援重化(`SCC_CAP_REENTRANT`能力);這樣做將刪除此警告。 但是,如果無法進行此支援,則可以設置這些註冊表項。
+     最好支援重新進入 (的 `SCC_CAP_REENTRANT` 功能) ; 這樣做會移除此警告。 但是，如果無法進行這項支援，則可以設定這些登錄專案。
 
 ## <a name="see-also"></a>另請參閱
 - [功能旗標](../extensibility/capability-flags.md)

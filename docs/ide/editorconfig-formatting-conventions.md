@@ -14,10 +14,10 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 0490912683fd683398c89e8e69b62dd3824ee04b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533467"
 ---
 # <a name="formatting-conventions"></a>格式設定慣例
@@ -1175,7 +1175,7 @@ public int MyProperty
 
 ### <a name="using-directive-options"></a>Using 指示詞選項
 
-此格式化規則會考慮使用 using 指示詞放在命名空間的內部與外部。
+此格式設定規則會考慮使用在命名空間內部與外部的 using 指示詞。
 
 Editorconfig ** 檔案範例︰
 
@@ -1193,7 +1193,7 @@ csharp_using_directive_placement = inside_namespace
 | **規則名稱** | csharp_using_directive_placement |
 | **適用的語言** | C# |
 | **引進的版本** | Visual Studio 2019 16.1 版 |
-| **值** | `outside_namespace`-在命名空間外保留 using 指示詞<br /><br />`inside_namespace`-在命名空間內保留 using 指示詞 |
+| **值** | `outside_namespace` -離開命名空間以外的 using 指示詞<br /><br />`inside_namespace` -保留命名空間內的 using 指示詞 |
 
 程式碼範例：
 
@@ -1216,5 +1216,5 @@ namespace Conventions
 ## <a name="see-also"></a>另請參閱
 
 - [語言慣例](editorconfig-language-conventions.md)
-- [命名規範](editorconfig-naming-conventions.md)
+- [命名慣例](editorconfig-naming-conventions.md)
 - [EditorConfig 的 .NET 編碼慣例設定](editorconfig-code-style-settings-reference.md)

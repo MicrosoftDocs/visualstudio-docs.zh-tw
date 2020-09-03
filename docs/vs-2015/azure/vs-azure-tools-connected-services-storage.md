@@ -12,14 +12,14 @@ ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
 ms.openlocfilehash: 3acb009d27a9fa47f890235f6957d1f29ed2f4a0
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916687"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>使用 Visual Studio 的已連接服務加入 Azure 儲存體
-使用 Visual Studio 時，您可以使用 [加入已連接服務] 對話方塊，將下列任何服務連接到「Azure 儲存體」：
+使用 Visual Studio 時，您可以使用 [加入已連接服務]**** 對話方塊，將下列任何服務連接到「Azure 儲存體」：
 
 - C# 雲端服務
 - .NET 後端行動服務
@@ -29,36 +29,36 @@ ms.locfileid: "75916687"
 
 已連接服務功能會將所有必要的參考和連接程式碼新增到您的專案中，並適當地修改組態檔。
 
-完成之後，[加入已連接服務] 對話方塊會自動顯示文件，當中會詳細說明開始使用 Blob 儲存體、佇列及資料表所需的步驟。
+完成之後，[加入已連接服務]**** 對話方塊會自動顯示文件，當中會詳細說明開始使用 Blob 儲存體、佇列及資料表所需的步驟。
 
 ## <a name="connect-to-azure-storage-using-the-connected-services-dialog"></a>使用已連接服務對話方塊連接到 Azure 儲存體
 1. 在 Visual Studio 中開啟您的專案
 
-1. 在 [方案總管] 中，於 [已連接服務] 節點上按一下滑鼠右鍵，然後從操作功能表中選取 [加入已連接服務]。
+1. 在 [方案總管]**** 中，於 [已連接服務]**** 節點上按一下滑鼠右鍵，然後從操作功能表中選取 [加入已連接服務]****。
 
     ![新增 Azure 已連接服務](./media/vs-azure-tools-connected-services-storage/IC796702.png)
 
-1. 在 [已連接服務] 頁面中，選取 [使用 Azure 儲存體的雲端儲存體]。
+1. 在 [已連接服務]**** 頁面中，選取 [使用 Azure 儲存體的雲端儲存體]****。
 
     ![新增 Azure 儲存體](./media/vs-azure-tools-connected-services-storage/add-azure-storage.png)
 
-1. 在 [Azure 儲存體] 對話方塊中，選取現有的儲存體帳戶，然後選取 [新增]。
+1. 在 [Azure 儲存體]**** 對話方塊中，選取現有的儲存體帳戶，然後選取 [新增]****。
 
-    如果您需要建立儲存體帳戶，請移至下一個步驟。 否則，跳到步驟 6。
+    如果您需要建立儲存體帳戶，請移至下一個步驟。 否則，請前往步驟 6。
 
     ![將現有的儲存體帳戶新增到專案](./media/vs-azure-tools-connected-services-storage/select-azure-storage-account.png)
 
 1. 建立儲存體帳戶：
 
-   1. 選取對話方塊底部的 [建立新的儲存體帳戶]。
+   1. 選取對話方塊底部的 [建立新的儲存體帳戶]****。
 
-   1. 填寫 [建立儲存體帳戶] 對話方塊，然後選取 [建立]。
+   1. 填寫 [建立儲存體帳戶]**** 對話方塊，然後選取 [建立]****。
 
        ![新的 Azure 儲存體帳戶](./media/vs-azure-tools-connected-services-storage/create-storage-account.png)
 
-   1. 顯示 [Azure 儲存體] 對話方塊時，新的儲存體帳戶會出現在清單中。 選取清單中的新儲存體帳戶，然後選取 [新增]。
+   1. 顯示 [Azure 儲存體]**** 對話方塊時，新的儲存體帳戶會出現在清單中。 選取清單中的新儲存體帳戶，然後選取 [新增]****。
 
-1. 儲存體已連接服務會出現在您專案的 [服務參考] 節點之下。
+1. 儲存體已連接服務會出現在您專案的 [服務參考]**** 節點之下。
 
 ## <a name="how-your-project-is-modified"></a>您的專案修改方式
 當您完成對話方塊時，Visual Studio 會加入參考並修改某些組態檔。 特定變更會視專案類型而定：

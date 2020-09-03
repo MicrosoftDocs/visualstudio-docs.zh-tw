@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20f9328b7e048eaf68184925fa1b7ac7a56540af
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533636"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 
-您可以藉由選擇適當的鍵盤快速鍵，在 Visual Studio 中存取各種[命令](reference/visual-studio-commands.md)和視窗。 此頁面會針對您可能已經在安裝 Visual Studio 時選擇的 [一般]**** 設定檔，列出預設命令捷徑。 無論您選擇哪一個設定檔，都可以開啟 [**選項**] 對話方塊，展開 [**環境**] 節點，然後選擇 [**鍵盤**] 來識別命令[的快捷方式](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。 您也可以為指定的命令指派不同的捷徑，以自訂捷徑。
+您可以選擇適當的鍵盤快速鍵，在 Visual Studio 中存取各種 [命令](reference/visual-studio-commands.md) 和視窗。 此頁面會針對您可能已經在安裝 Visual Studio 時選擇的 [一般]**** 設定檔，列出預設命令捷徑。 無論您選擇哪一個設定檔，都可以開啟 [**選項**] 對話方塊，展開 [**環境**] 節點，然後選擇 [**鍵盤**] 來識別命令[的快捷方式](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。 您也可以為指定的命令指派不同的捷徑，以自訂捷徑。
 
 如需常用鍵盤快速鍵的清單和其他產能資訊，請參閱：
 
@@ -30,16 +30,16 @@ ms.locfileid: "85533636"
 - [鍵盤祕訣](../ide/productivity-shortcuts.md)
 - [生產力秘訣](../ide/productivity-features.md)。
 
-如需 Visual Studio 中協助工具的詳細資訊，請參閱[協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)和[如何：以獨佔模式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
+如需 Visual Studio 中協助工具的詳細資訊，請參閱 [協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md) 和 how [to：以獨佔方式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
 
 - [分析](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
 - [編輯](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
 - [專案](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)
-- [測驗](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
+- [測試](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
 - [架構](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)
-- [編輯器操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
-- [專案和方案操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
-- [測試瀏覽器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)
+- [編輯器內容功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
+- [專案和方案內容功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
+- [測試總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)
 - [建置](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)
 - [檔案](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)
 - [重構](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)
@@ -50,7 +50,7 @@ ms.locfileid: "85533636"
 - [檢視](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)
 - [偵錯](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)
 - [負載測試](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)
-- [小組](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)
+- [球隊](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)
 - [Window](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)
 - [偵錯工具內容功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)
 - [其他內容功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)
@@ -62,20 +62,20 @@ ms.locfileid: "85533636"
 
 這些鍵盤快速鍵都是*全域*的，也就是說，您可以在任何 Visual Studio 視窗有焦點時使用這些快速鍵。
 
-### <a name="analyze"></a><a name="bkmk_analyze"></a>分析
+### <a name="analyze"></a><a name="bkmk_analyze"></a> 分析
 
 |命令|鍵盤快速鍵|
 |--------------| - |
 |Analyze.NavigateBackward|**Shift+Alt+3**|
 |Analyze.NavigateForward|**Shift+Alt+4**|
 
-### <a name="architecture"></a><a name="bkmk_architecture"></a>結構
+### <a name="architecture"></a><a name="bkmk_architecture"></a> 架構
 
 |命令|鍵盤快速鍵|
 |--------------| - |
 |Architecture.NewDiagram|**Ctrl + \\ 、ctrl + N**|
 
-### <a name="build"></a><a name="bkmk_build"></a>建置
+### <a name="build"></a><a name="bkmk_build"></a> 建立
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -85,13 +85,13 @@ ms.locfileid: "85533636"
 |Build.Compile|**Ctrl+F7**|
 |Build.RunCodeAnalysisonSolution|**Alt+F11**|
 
-### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a>類別檢視內容功能表
+### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a> 類別檢視內容功能表
 
 |命令|鍵盤快速鍵|
 |--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**Alt+Enter**|
 
-### <a name="debug"></a><a name="bkmk_debug"></a>Debug.exe
+### <a name="debug"></a><a name="bkmk_debug"></a> 調試
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -106,7 +106,7 @@ ms.locfileid: "85533636"
 |Debug.DOMExplorer|**Ctrl + Alt + V、D**|
 |Debug.EnableBreakpoint|**Ctrl + F9**|
 |Debug.Exceptions|**Ctrl + Alt + E**|
-|Debug.FunctionBreakpoint|**Ctrl+K、B** (Visual Studio 2019)<br />**Ctrl** +**B** （Visual Studio 2017）|
+|Debug.FunctionBreakpoint|**Ctrl+K、B** (Visual Studio 2019)<br />**Ctrl** +**B** (Visual Studio 2017) |
 |Debug.GoToPreviousCallorIntelliTraceEvent|**Ctrl+Shift+F11**|
 |Debug.Graphics.StartDiagnostics|**Alt + F5**|
 |Debug.Immediate|**Ctrl + Alt + I**|
@@ -146,8 +146,8 @@ ms.locfileid: "85533636"
 |Debug.StepIntoSpecific|**Shift + Alt + F11**|
 |Debug.StepOut|**Shift + F11**|
 |Debug.StepOutCurrentProcess|**Ctrl+Shift+Alt+F11**|
-|Debug.StepOver|**F10** （當進行調試時：執行不進入動作的步驟）|
-|Debug.StepOver|**F10** （當不進行偵錯工具時：開始在使用者程式碼的第一行進行偵錯工具和停止）|
+|Debug.StepOver|在進行調試時， **F10** (：執行不進入動作的步驟) |
+|Debug.StepOver|在不進行偵錯工具時， **F10** (：開始偵錯工具，並在使用者程式碼的第一行停止) |
 |Debug.StepOverCurrentProcess|**Ctrl+Alt+F10**|
 |Debug.StopDebugging|**Shift + F5**|
 |Debug.StopPerformanceAnalysis|**Shift+Alt+F2**|
@@ -160,7 +160,7 @@ ms.locfileid: "85533636"
 |Debug.Watch3|**Ctrl + Alt + W、3**|
 |Debug.Watch4|**Ctrl + Alt + W、4**|
 
-### <a name="debugger-context-menus"></a><a name="bkmk_debugger"></a>偵錯工具內容功能表
+### <a name="debugger-context-menus"></a><a name="bkmk_debugger"></a> 偵錯工具內容功能表
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -168,9 +168,9 @@ ms.locfileid: "85533636"
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**Alt+F9、A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**Alt+F9、S**|
 
-### <a name="diagnostics-hub"></a><a name="bkmk_diagnostics"></a>診斷中樞
+### <a name="diagnostics-hub"></a><a name="bkmk_diagnostics"></a> 診斷中樞
 
-|Command|鍵盤快速鍵|
+|命令|鍵盤快速鍵|
 |-------------| - |
 |DiagnosticsHub.StopCollection|**Ctrl + Alt + F2**|
 
@@ -178,8 +178,8 @@ ms.locfileid: "85533636"
 
 |命令|鍵盤快速鍵|
 |--------------|-|
-|Edit.Copy|**Ctrl + C**<br /><br /> 或<br /><br /> **Ctrl + Ins**|
-|Edit.Cut|**Ctrl + X**<br /><br /> 或<br /><br /> **Shift + Delete**|
+|Edit.Copy|**Ctrl+C**<br /><br /> 或<br /><br /> **Ctrl + Ins**|
+|Edit.Cut|**Ctrl+X**<br /><br /> 或<br /><br /> **Shift + Delete**|
 |Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> 或<br /><br /> **Ctrl+Shift+Ins**|
 |Edit.Delete|**刪除**|
 |Edit.Duplicate|**Ctrl+D**|
@@ -191,7 +191,7 @@ ms.locfileid: "85533636"
 |Edit.FindPrevious|**Shift + F3**|
 |Edit.FindPreviousSelected|**Ctrl + Shift + F3**|
 |Edit.GenerateMethod|**Ctrl+K、Ctrl+M**|
-|Edit.GoTo|**Ctrl + G**|
+|Edit.GoTo|**Ctrl+G**|
 |Edit.GoToAll|**Ctrl+,** 或 **Ctrl+T**|
 |Edit.GoToDeclaration|**Ctrl+F12**|
 |Edit.GoToDefinition|**F12**|
@@ -200,9 +200,9 @@ ms.locfileid: "85533636"
 |Edit.GoToPrevLocation|**Shift+F8** (錯誤清單或 [輸出] 視窗中的上一個錯誤)|
 |Edit.InsertSnippet|**Ctrl + K、Ctrl + X**|
 |Edit.MoveControlDown|**Ctrl + 向下鍵**|
-|Edit.MoveControlDownGrid|**向下鍵**|
+|Edit.MoveControlDownGrid|**向下箭號**|
 |Edit.MoveControlLeft|**Ctrl+向左鍵**|
-|Edit.MoveControlLeftGrid|**向左鍵**|
+|Edit.MoveControlLeftGrid|**向左箭號**|
 |Edit.MoveControlRight|**Ctrl+向右鍵**|
 |Edit.MoveControlRightGrid|**向右箭號**|
 |Edit.MoveControlUp|**Ctrl + 向上鍵**|
@@ -210,7 +210,7 @@ ms.locfileid: "85533636"
 |Edit.NextBookmark|**Ctrl + K、Ctrl + N**|
 |Edit.NextBookmarkInFolder|**Ctrl + Shift + K、Ctrl + Shift + N**|
 |Edit.OpenFile|**Ctrl+Shift+G** (開啟資料指標底下的檔案名稱)|
-|Edit.Paste|**Ctrl + V**<br /><br /> 或<br /><br /> **Shift + Ins**|
+|Edit.Paste|**Ctrl+V**<br /><br /> 或<br /><br /> **Shift + Ins**|
 |Edit.PreviousBookmark|**Ctrl + K、Ctrl + P**|
 |Edit.PreviousBookmarkInFolder|**Ctrl + Shift + K、Ctrl + Shift + P**|
 |Edit.QuickFindSymbol|**Shift+Alt+F12**|
@@ -218,10 +218,10 @@ ms.locfileid: "85533636"
 |Edit.RefreshRemoteReferences|**Ctrl + Shift + J**|
 |Edit.Replace|**Ctrl + H**|
 |Edit.ReplaceinFiles|**Ctrl + Shift + H**|
-|Edit.SelectAll|**Ctrl + A**|
+|Edit.SelectAll|**Ctrl+A**|
 |Edit.SelectNextControl|**索引標籤**|
 |Edit.SelectPreviousControl|**Shift + Tab**|
-|Edit.ShowTileGrid|**輸入**|
+|Edit.ShowTileGrid|**進入**|
 |Edit.SizeControlDown|**Ctrl+Shift+向下鍵**|
 |Edit.SizeControlDownGrid|**Shift + 向下鍵**|
 |Edit.SizeControlLeft|**Ctrl+Shift+向左鍵**|
@@ -232,9 +232,9 @@ ms.locfileid: "85533636"
 |Edit.SizeControlUpGrid|**Shift + 向上鍵**|
 |Edit.StopSearch|**Alt + F3、S**|
 |Edit.SurroundWith|**Ctrl + K、Ctrl + S**|
-|Edit.Undo|**Ctrl + Z**<br /><br /> 或<br /><br /> **Alt + 倒退鍵**|
+|Edit.Undo|**Ctrl+Z**<br /><br /> 或<br /><br /> **Alt + 倒退鍵**|
 
-### <a name="editor-context-menus"></a><a name="bkmk_editorContext"></a>編輯器操作功能表
+### <a name="editor-context-menus"></a><a name="bkmk_editorContext"></a> 編輯器內容功能表
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -245,7 +245,7 @@ ms.locfileid: "85533636"
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**Ctrl+K、Ctrl+O** (字母 'O')|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**Ctrl+K、Ctrl+T**<br /><br /> 或<br /><br /> **Ctrl+K、T**|
 
-### <a name="file"></a><a name="bkmk_file"></a>文字檔
+### <a name="file"></a><a name="bkmk_file"></a> 檔
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -258,10 +258,10 @@ ms.locfileid: "85533636"
 |File.OpenWebSite|**Shift+Alt+O** (字母 'O')|
 |File.Print|**Ctrl + P**|
 |File.SaveAll|**Ctrl + Shift + S**|
-|File.SaveSelectedItems|**Ctrl + S**|
+|File.SaveSelectedItems|**Ctrl+S**|
 |File.ViewinBrowser|**Ctrl + Shift + W**|
 
-### <a name="help"></a><a name="bkmk_help"></a>説明
+### <a name="help"></a><a name="bkmk_help"></a> 説明
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -272,13 +272,13 @@ ms.locfileid: "85533636"
 
 ### <a name="load-test"></a><a name="bkmk_loadtest"></a> 負載測試
 
-|Command|鍵盤快速鍵|
+|命令|鍵盤快速鍵|
 |-------------| - |
 |LoadTest.JumpToCounterPane|**Ctrl+R、Q**|
 
 ### <a name="other-context-menus"></a><a name="bkmk_otherContext"></a> 其他操作功能表
 
-|Command|鍵盤快速鍵|
+|命令|鍵盤快速鍵|
 |-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**插入**|
 
@@ -301,7 +301,7 @@ ms.locfileid: "85533636"
 |ProjectandSolutionContextMenus.Item.MoveDown|**Alt + 向下鍵**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**Alt+向上箭**|
 
-### <a name="refactor"></a><a name="bkmk_refactor"></a>重構
+### <a name="refactor"></a><a name="bkmk_refactor"></a> 重 構
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -312,7 +312,7 @@ ms.locfileid: "85533636"
 |Refactor.Rename|**Ctrl+R、Ctrl+R**|
 |Refactor.ReorderParameters|**Ctrl+R、Ctrl+O** (字母 'O')|
 
-### <a name="solution-explorer"></a><a name="bkmk_solutionexplorerGLOBAL"></a>方案總管
+### <a name="solution-explorer"></a><a name="bkmk_solutionexplorerGLOBAL"></a> 方案總管
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -320,7 +320,7 @@ ms.locfileid: "85533636"
 |SolutionExplorer.PendingChangesFilter|**Ctrl + [**、 **P**<br /><br /> 或<br /><br /> **Ctrl + [**、 **Ctrl + P**|
 |SolutionExplorer.SyncWithActiveDocument|**Ctrl + [**、 **S**<br /><br /> 或<br /><br /> **Ctrl + [**、 **Ctrl + S**|
 
-### <a name="team"></a><a name="bkmk_team"></a>人員
+### <a name="team"></a><a name="bkmk_team"></a> 團隊
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -329,7 +329,7 @@ ms.locfileid: "85533636"
 |Team.Git.GoToGitCommits|**Ctrl+0** (零)、**Ctrl+O** (字母 'O')<br /><br /> 或<br /><br /> **Ctrl+0、O**|
 |Team.TeamExplorerSearch|**Ctrl + '**|
 
-### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a>Team Foundation 內容功能表
+### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a> Team Foundation 內容功能表
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -344,7 +344,7 @@ ms.locfileid: "85533636"
 |TeamFoundationContextMenus.Commands.GoToWebAccess|**Ctrl+0** (零)、**Ctrl+A**<br /><br /> 或<br /><br /> **Ctrl+0、A**|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|**Ctrl+0** (零)、**Ctrl+W**<br /><br /> 或<br /><br /> **Ctrl+0、W**|
 
-### <a name="test"></a><a name="bkmk_test"></a>測驗
+### <a name="test"></a><a name="bkmk_test"></a> 測試
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -373,7 +373,7 @@ ms.locfileid: "85533636"
 |Tools.CodeSnippetsManager|**Ctrl + K、Ctrl + B**|
 |Tools.ForceGC|**Ctrl+Shift+Alt+F12、Ctrl+Shift+Alt+F12**|
 
-### <a name="view"></a><a name="bkmk_view"></a>視圖
+### <a name="view"></a><a name="bkmk_view"></a> 視圖
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -423,7 +423,7 @@ ms.locfileid: "85533636"
 |View.ZoomOut|**Ctrl + Shift +、**|
 |TestExplorer.ShowTestExplorer|**Ctrl + E、T**|
 
-### <a name="window"></a><a name="bkmk_window"></a>範圍
+### <a name="window"></a><a name="bkmk_window"></a> 視窗
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -432,7 +432,7 @@ ms.locfileid: "85533636"
 |Window.CloseDocumentWindow|**Ctrl + F4**|
 |Window.CloseToolWindow|**Shift + Esc**|
 |Window.KeepTabOpen|**Ctrl+Alt+Home**|
-|Window.MovetoNavigationBar|**Ctrl + F2**|
+|Window.MovetoNavigationBar|**Ctrl+F2**|
 |Window.NextDocumentWindow|**Ctrl + F6**|
 |Window.NextDocumentWindowNav|**Ctrl + Tab**|
 |Window.NextPane|**Alt + F6**|
@@ -454,7 +454,7 @@ ms.locfileid: "85533636"
 |Window.SolutionExplorerSearch|**Ctrl +;**|
 |Window.WindowSearch|**Alt + '**|
 
-### <a name="azure"></a><a name="bkmk_windowsazure"></a>Azure
+### <a name="azure"></a><a name="bkmk_windowsazure"></a> 蔚藍
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -480,22 +480,22 @@ ms.locfileid: "85533636"
 
 |命令|鍵盤快速鍵|
 |--------------| - |
-|ClassDiagram.Collapse|**子女**|
+|ClassDiagram.Collapse|**號**|
 |ClassDiagram.Expand|**Num +**|
 |Edit.Delete|**Ctrl+Del**|
 |Edit.ExpandCollapseBaseTypeList|**Shift+Alt+B**|
 |Edit.NavigateToLollipop|**Shift+Alt+L**|
 |Edit.RemovefromDiagram|**刪除**|
-|View.ViewCode|**輸入**|
+|View.ViewCode|**進入**|
 
 ## <a name="coded-ui-test-editor"></a>自動程式碼 UI 測試編輯器
 
 |命令|鍵盤快速鍵|
 |--------------| - |
-|OtherContextMenus.UITestEditorContextMenu.CopyReferencetoClipboard|**Ctrl + C**|
+|OtherContextMenus.UITestEditorContextMenu.CopyReferencetoClipboard|**Ctrl+C**|
 |OtherContextMenus.UITestEditorContextMenu.InsertDelayBefore|**Ctrl + Alt + D**|
 |OtherContextMenus.UITestEditorContextMenu.LocateAll|**Shift+Alt+L**|
-|OtherContextMenus.UITestEditorContextMenu.LocatetheUIControl|**Ctrl + Shift + L**|
+|OtherContextMenus.UITestEditorContextMenu.LocatetheUIControl|**Ctrl+Shift+L**|
 |OtherContextMenus.UITestEditorContextMenu.Movecode|**Ctrl + Alt + C**|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**Ctrl + Shift + T**|
 
@@ -532,7 +532,7 @@ ms.locfileid: "85533636"
 
 ## <a name="f-interactive"></a>F# Interactive
 
-|Command|鍵盤快速鍵|
+|命令|鍵盤快速鍵|
 |-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**Ctrl + Break**|
 
@@ -542,8 +542,8 @@ ms.locfileid: "85533636"
 |--------------| - |
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|**插入**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**怎樣**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**O**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**輸出**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**Ctrl+Shift+K**<br /><br /> 或<br /><br /> **Ctrl+E、C**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**刪除**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
@@ -552,7 +552,7 @@ ms.locfileid: "85533636"
 
 |命令|鍵盤快速鍵|
 |--------------| - |
-|Debug.Graphics.CaptureFrame|None|
+|Debug.Graphics.CaptureFrame|無|
 |Graphics.MovePixelSelectionDown|**Shift + Alt + 向下鍵**|
 |Graphics.MovePixelSelectionLeft|**Shift + Alt + 向左鍵**|
 |Graphics.MovePixelSelectionRight|**Shift + Alt + 向右鍵**|
@@ -564,7 +564,7 @@ ms.locfileid: "85533636"
 
 ## <a name="html-editor"></a>HTML 編輯器
 
-|Command|鍵盤快速鍵|
+|命令|鍵盤快速鍵|
 |-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**Ctrl+M、Ctrl+G**|
 
@@ -576,9 +576,9 @@ ms.locfileid: "85533636"
 |Edit.MoveControlUp|**Ctrl + 向上鍵**|
 |Format.Bold|**Ctrl + B**|
 |Format.ConverttoHyperlink|**Ctrl + L**|
-|Format.InsertBookmark|**Ctrl + Shift + L**|
+|Format.InsertBookmark|**Ctrl+Shift+L**|
 |Format.Italic|**Ctrl+I**|
-|Format.Underline|**Ctrl + U**|
+|Format.Underline|**Ctrl+U**|
 |Project.AddContentPage|**Ctrl+M、Ctrl+C**|
 |Table.ColumntotheLeft|**Ctrl + Alt + 向左鍵**|
 |Table.ColumntotheRight|**Ctrl+Alt+向右鍵**|
@@ -603,7 +603,7 @@ ms.locfileid: "85533636"
 
 ## <a name="layer-diagram"></a>分層圖
 
-|Command|鍵盤快速鍵|
+|命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.Delete|**Shift + Delete**|
 
@@ -614,7 +614,7 @@ ms.locfileid: "85533636"
 |Edit.EditCell|**F2**|
 |Edit.Remove|**刪除**|
 |Edit.RemoveRow|**Ctrl + Delete**|
-|Edit.SelectionCancel|**符**|
+|Edit.SelectionCancel|**ESC 鍵**|
 |Resources.Audio|**Ctrl + 4**|
 |Resources.Files|**Ctrl + 5**|
 |Resources.Icons|**Ctrl + 3**|
@@ -690,7 +690,7 @@ ms.locfileid: "85533636"
 
 ## <a name="page-inspector"></a>Page Inspector
 
-|Command|鍵盤快速鍵|
+|命令|鍵盤快速鍵|
 |-------------| - |
 |PageInspector.Minimize|**F12**|
 
@@ -702,7 +702,7 @@ ms.locfileid: "85533636"
 |QueryDesigner.Criteria|**Ctrl + 2**|
 |QueryDesigner.Diagram|**Ctrl + 1**|
 |QueryDesigner.ExecuteSQL|**Ctrl + R**|
-|QueryDesigner.GotoRow|**Ctrl + G**|
+|QueryDesigner.GotoRow|**Ctrl+G**|
 |QueryDesigner.JoinMode|**Ctrl + Shift + J**|
 |QueryDesigner.Results|**Ctrl + 4**|
 |QueryDesigner.SQL|**Ctrl + 3**|
@@ -719,13 +719,13 @@ ms.locfileid: "85533636"
 
 |命令|鍵盤快速鍵|
 |--------------| - |
-|Edit.BreakLine|**輸入**|
-|Edit.CharLeft|**向左鍵**|
+|Edit.BreakLine|**進入**|
+|Edit.CharLeft|**向左箭號**|
 |Edit.CharLeftExtend|**Shift + 向左鍵**|
 |Edit.CharRight|**向右箭號**|
 |Edit.CharRightExtend|**Shift + 向右鍵**|
 |Edit.InsertTab|**索引標籤**|
-|Edit.LineDown|**向下鍵**|
+|Edit.LineDown|**向下箭號**|
 |Edit.LineDownExtend|**Shift + 向下鍵**|
 |Edit.LineUp|**向上鍵**|
 |Edit.LineUpExtend|**Shift + 向上鍵**|
@@ -759,13 +759,13 @@ ms.locfileid: "85533636"
 
 ## <a name="solution-explorer"></a>方案總管
 
-|Command|鍵盤快速鍵|
+|命令|鍵盤快速鍵|
 |-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**Ctrl+K、Ctrl+G**|
 
 ## <a name="team-explorer"></a>Team Explorer
 
-|Command|鍵盤快速鍵|
+|命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.Delete|**刪除**|
 |File.Rename|**F2**|
@@ -790,7 +790,7 @@ ms.locfileid: "85533636"
 
 ## <a name="test-explorer"></a>測試總管
 
-|Command|鍵盤快速鍵|
+|命令|鍵盤快速鍵|
 |-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
@@ -798,8 +798,8 @@ ms.locfileid: "85533636"
 
 | 命令 | 鍵盤快速鍵 |
 | - | - |
-| Edit.BreakLine | **輸入**<br /><br /> 或<br /><br /> **Shift+Enter** |
-| Edit.CharLeft | **向左鍵** |
+| Edit.BreakLine | **進入**<br /><br /> 或<br /><br /> **Shift+Enter** |
+| Edit.CharLeft | **向左箭號** |
 | Edit.CharLeftExtend | **Shift + 向左鍵** |
 | Edit.CharLeftExtendColumn | **Shift + Alt + 向左鍵** |
 | Edit.CharRight | **向右箭號** |
@@ -815,11 +815,11 @@ ms.locfileid: "85533636"
 | Edit.CompleteWord | **Ctrl + 空格鍵**<br /><br /> 或<br /><br /> **Alt + 向右鍵** |
 | Edit.CopyParameterTip | **Ctrl + Shift + Alt + C** |
 | Edit.DecreaseFilterLevel | **Alt +、** |
-| Edit.DeleteBackwards | **倒退鍵**<br /><br /> 或<br /><br /> **Shift+退格鍵** |
+| Edit.DeleteBackwards | **退格鍵**<br /><br /> 或<br /><br /> **Shift+退格鍵** |
 | Edit.DeleteHorizontalWhiteSpace | **Ctrl + K、Ctrl +\\** |
-| Edit.DocumentEnd | **Ctrl + End** |
+| Edit.DocumentEnd | **Ctrl+End** |
 | Edit.DocumentEndExtend | **Ctrl + Shift + End** |
-| Edit.DocumentStart | **Ctrl + Home** |
+| Edit.DocumentStart | **Ctrl+Home** |
 | Edit.DocumentStartExtend | **Ctrl + Shift + Home** |
 | Edit.ExpandAllOutlining | **Ctrl + M、Ctrl + X** |
 | Edit.ExpandCurrentRegion | **Ctrl + M、Ctrl + E** |
@@ -840,24 +840,24 @@ ms.locfileid: "85533636"
 | Edit.InsertNextMatchingCaret | **Shift + Alt +。** |
 | Edit.InsertTab | **索引標籤** |
 | Edit.LineCut | **Ctrl + L** |
-| Edit.LineDelete | **Ctrl + Shift + L** |
-| Edit.LineDown | **向下鍵** |
+| Edit.LineDelete | **Ctrl+Shift+L** |
+| Edit.LineDown | **向下箭號** |
 | Edit.LineDownExtend | **Shift + 向下鍵** |
 | Edit.LineDownExtendColumn | **Shift + Alt + 向下鍵** |
 | Edit.LineEnd | **結束** |
 | Edit.LineEndExtend | **Shift + End** |
 | Edit.LineEndExtendColumn | **Shift + Alt + End** |
-| Edit.LineOpenAbove | **Ctrl + Enter** |
-| Edit.LineOpenBelow | **Ctrl + Shift + Enter** |
+| Edit.LineOpenAbove | **Ctrl+Enter** |
+| Edit.LineOpenBelow | **Ctrl+Shift+Enter** |
 | Edit.LineStart | **首頁** |
-| Edit.LineStartExtend | **Shift + Home** |
+| Edit.LineStartExtend | **Shift + 首頁** |
 | Edit.LineStartExtendColumn | **Shift + Alt + Home** |
 | Edit.LineTranspose | **Shift + Alt + T** |
 | Edit.LineUp | **向上鍵** |
 | Edit.LineUpExtend | **Shift + 向上鍵** |
 | Edit.LineUpExtendColumn | **Shift+Alt+向上鍵** |
 | Edit.ListMembers | **Ctrl + J** |
-| Edit.MakeLowercase | **Ctrl + U** |
+| Edit.MakeLowercase | **Ctrl+U** |
 | Edit.MakeUppercase | **Ctrl + Shift + U** |
 | Edit.MoveSelectedLinesDown | **Alt + 向下鍵** |
 | Edit.MoveSelectedLinesUp | **Alt+向上箭** |
@@ -878,7 +878,7 @@ ms.locfileid: "85533636"
 | Edit.ScrollLineDown | **Ctrl + 向下鍵** |
 | Edit.ScrollLineUp | **Ctrl + 向上鍵** |
 | Edit.SelectCurrentWord | **Ctrl + W** |
-| Edit.SelectionCancel | **符** |
+| Edit.SelectionCancel | **ESC 鍵** |
 | Edit.SelectToLastGoBack | **Ctrl + =** |
 | Edit.ShowCodeLensMenu | **Ctrl + K、Ctrl +\`** |
 | Edit.ShowNavigateMenu | **Alt +\`** |
@@ -915,25 +915,25 @@ ms.locfileid: "85533636"
 
 ## <a name="uml-activity-diagram"></a>UML 活動圖表
 
-|Command|鍵盤快速鍵|
+|命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.Delete|**Shift+Del**|
 
 ## <a name="uml-class-diagram"></a>UML 類別圖表
 
-|Command|鍵盤快速鍵|
+|命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
 ## <a name="uml-component-diagram"></a>UML 元件圖表
 
-|Command|鍵盤快速鍵|
+|命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
 ## <a name="uml-use-case-diagram"></a>UML 使用案例圖表
 
-|Command|鍵盤快速鍵|
+|命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
@@ -948,8 +948,8 @@ ms.locfileid: "85533636"
 
 |命令|鍵盤快速鍵|
 |--------------| - |
-|Edit.MoveControlDown|**向下鍵**|
-|Edit.MoveControlLeft|**向左鍵**|
+|Edit.MoveControlDown|**向下箭號**|
+|Edit.MoveControlLeft|**向左箭號**|
 |Edit.MoveControlRight|**向右箭號**|
 |Edit.MoveControlUp|**向上鍵**|
 |Edit.ScrollColumnLeft|**Ctrl+向左鍵**|
@@ -970,19 +970,19 @@ ms.locfileid: "85533636"
 |Format.ButtonRight|**Ctrl + R**|
 |Format.CenterHorizontal|**Ctrl + Shift + F9**|
 |Format.CenterVertical|**Ctrl + F9**|
-|Format.CheckMnemonics|**Ctrl + M**|
+|Format.CheckMnemonics|**Ctrl+M**|
 |Format.SizetoContent|**Shift+F7**|
 |Format.SpaceAcross|**Alt + 向右鍵**<br /><br /> 或<br /><br /> **Alt+向左箭**|
 |Format.SpaceDown|**Alt+向上箭**<br /><br /> 或<br /><br /> **Alt + 向下鍵**|
 |Format.TabOrder|**Ctrl+D**|
 |Format.TestDialog|**Ctrl + T**|
-|Format.ToggleGuides|**Ctrl + G**|
+|Format.ToggleGuides|**Ctrl+G**|
 
 ## <a name="vc-image-editor"></a>VC 影像編輯器
 
 |命令|鍵盤快速鍵|
 |--------------| - |
-|Image.AirbrushTool|**Ctrl + A**|
+|Image.AirbrushTool|**Ctrl+A**|
 |Image.BrushTool|**Ctrl + B**|
 |Image.CopyandOutlineSelection|**Ctrl + Shift + U**|
 |Image.DrawOpaque|**Ctrl + J**|
@@ -996,7 +996,7 @@ ms.locfileid: "85533636"
 |Image.FlipVertical|**Shift+Alt+H**|
 |Image.LargerBrush|**Ctrl + =**|
 |Image.LineTool|**Ctrl + L**|
-|Image.MagnificationTool|**Ctrl + M**|
+|Image.MagnificationTool|**Ctrl+M**|
 |Image.Magnify|**Ctrl + Shift + M**|
 |Image.NewImageType|**插入**|
 |Image.NextColor|**Ctrl +]**<br /><br /> 或<br /><br /> **Ctrl+向右鍵**|
@@ -1016,13 +1016,13 @@ ms.locfileid: "85533636"
 |Image.SmallBrush|**Ctrl +。**|
 |Image.SmallerBrush|**Ctrl +-**|
 |Image.TextTool|**Ctrl + T**|
-|Image.UseSelectionasBrush|**Ctrl + U**|
+|Image.UseSelectionasBrush|**Ctrl+U**|
 |Image.ZoomIn|**Ctrl + Shift +。**<br /><br /> 或<br /><br /> **Ctrl + 向上鍵**|
 |Image.ZoomOut|**Ctrl + Shift +、**<br /><br /> 或<br /><br /> **Ctrl + 向下鍵**|
 
 ## <a name="vc-string-editor"></a>VC 字串編輯器
 
-|Command|鍵盤快速鍵|
+|命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.NewString|**插入**|
 
@@ -1034,14 +1034,14 @@ ms.locfileid: "85533636"
 |QueryDesigner.Criteria|**Ctrl + 2**|
 |QueryDesigner.Diagram|**Ctrl + 1**|
 |QueryDesigner.ExecuteSQL|**Ctrl + R**|
-|QueryDesigner.GotoRow|**Ctrl + G**|
+|QueryDesigner.GotoRow|**Ctrl+G**|
 |QueryDesigner.JoinMode|**Ctrl + Shift + J**|
 |QueryDesigner.Results|**Ctrl + 4**|
 |QueryDesigner.SQL|**Ctrl + 3**|
 
 ## <a name="visual-studio"></a>Visual Studio
 
-|Command|鍵盤快速鍵|
+|命令|鍵盤快速鍵|
 |-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**Ctrl + 1**|
 
@@ -1049,17 +1049,17 @@ ms.locfileid: "85533636"
 
 |命令|鍵盤快速鍵|
 |--------------| - |
-|Edit.BreakLine|**輸入**|
-|Edit.CharLeft|**向左鍵**|
+|Edit.BreakLine|**進入**|
+|Edit.CharLeft|**向左箭號**|
 |Edit.CharLeftExtend|**Shift + 向左鍵**|
 |Edit.CharRight|**向右箭號**|
 |Edit.CharRightExtend|**Shift + 向右鍵**|
 |Edit.DocumentEnd|**結束**|
 |Edit.DocumentEndExtend|**Shift + End**|
 |Edit.DocumentStart|**首頁**|
-|Edit.DocumentStartExtend|**Shift + Home**|
+|Edit.DocumentStartExtend|**Shift + 首頁**|
 |Edit.InsertTab|**索引標籤**|
-|Edit.LineDown|**向下鍵**|
+|Edit.LineDown|**向下箭號**|
 |Edit.LineDownExtend|**Shift + 向上鍵**|
 |Edit.LineUp|**向上鍵**|
 |Edit.LineUpExtend|**Shift + 向下鍵**|
@@ -1067,7 +1067,7 @@ ms.locfileid: "85533636"
 |Edit.MoveControlLeft|**Ctrl+向左鍵**|
 |Edit.MoveControlRight|**Ctrl+向右鍵**|
 |Edit.MoveControlUp|**Ctrl + 向上鍵**|
-|Edit.SelectionCancel|**符**|
+|Edit.SelectionCancel|**ESC 鍵**|
 |Edit.SizeControlDown|**Ctrl+Shift+向下鍵**|
 |Edit.SizeControlLeft|**Ctrl+Shift+向左鍵**|
 |Edit.SizeControlRight|**Ctrl + Shift + 向右鍵**|
@@ -1138,7 +1138,7 @@ ms.locfileid: "85533636"
 
 |命令|鍵盤快速鍵|
 |--------------| - |
-|Design.FitAll|**Ctrl + 0** （零）|
+|Design.FitAll|**Ctrl + 0** (零) |
 |Design.ShowHandles|**F9**|
 |Design.ZoomIn|**Ctrl + Alt + =**|
 |Design.ZoomOut|**Ctrl + Alt +-**|
@@ -1149,7 +1149,7 @@ ms.locfileid: "85533636"
 |Timeline.Hide (僅限混合)|**Ctrl + H**|
 |Timeline.Lock (僅限混合)|**Ctrl + L**|
 |Timeline.Show (僅限混合)|**Ctrl + Shift + H**|
-|Timeline.Unlock (僅限混合)|**Ctrl + Shift + L**|
+|Timeline.Unlock (僅限混合)|**Ctrl+Shift+L**|
 |View.EdgeLeftMoveLeft|**Ctrl + Shift +、**|
 |View.EdgeLeftMoveRight|**Ctrl + Shift +。**|
 |View.EdgeRightMoveLeft|**Ctrl+Shift+Alt+,**|

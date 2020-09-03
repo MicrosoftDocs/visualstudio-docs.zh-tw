@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633703"
 ---
 # <a name="item-definitions"></a>項目定義
 
-MSBuild 2.0 通過使用[ItemGroup](../msbuild/itemgroup-element-msbuild.md)元素支援專案檔案中項的靜態聲明。 不過，您只能在項目層級新增中繼資料，即使所有項目的中繼資料都相同也是如此。 從 MSBuild 3.5 開始，名為[ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md)的專案元素克服了此限制。 *ItemDefinitionGroup* 可讓您定義一組項目定義，這些項目定義會將預設的中繼資料值，新增到具名項目類型中的所有項目。
+MSBuild 2.0 使用 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素，啟用專案檔中專案的靜態宣告。 不過，您只能在項目層級新增中繼資料，即使所有項目的中繼資料都相同也是如此。 從 MSBuild 3.5 開始，名為 [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) 的專案元素會克服這項限制。 *ItemDefinitionGroup* 可讓您定義一組項目定義，這些項目定義會將預設的中繼資料值，新增到具名項目類型中的所有項目。
 
 *ItemDefinitionGroup* 元素會緊接在專案檔的 [Project](../msbuild/project-element-msbuild.md) 元素之後出現。 項目定義提供下列功能：
 
@@ -27,7 +27,7 @@ MSBuild 2.0 通過使用[ItemGroup](../msbuild/itemgroup-element-msbuild.md)元�
 
 - 項目類型可以有多個定義。 將額外的中繼資料規格新增到類型時，最後一個規格會具有最高的優先順序。 \(中繼資料的匯入順序會比照屬性所依循的相同順序。\)
 
-- 中繼資料可供附加。 例如，CDefines 值會根據所要設定的屬性，有條件地累加。 例如： `MT;STD_CALL;DEBUG;UNICODE` 。
+- 中繼資料可供附加。 例如，CDefines 值會根據所要設定的屬性，有條件地累加。 例如 `MT;STD_CALL;DEBUG;UNICODE`。
 
 - 中繼資料可被移除。
 
@@ -74,13 +74,13 @@ ItemDefinitionGroup 中所定義之中繼資料的值可以來自許多不同的
 
 - 環境變數
 
-- 全域屬性（來自*MSBuild.exe*命令列）
+- 從 *MSBuild.exe* 命令列 (的全域屬性) 
 
 - 保留的屬性
 
 - 來自 ItemDefinitionGroup 之項目上的常見中繼資料
 
-- CDATA 區段 \<\!\[CDATA\[此處的任何項目都不會剖析\]\]\>
+- CDATA 區段 \<\!\[CDATA\[anything here is not parsed\]\]\>
 
 > [!NOTE]
 > 來自 ItemGroup 的項目中繼資料在 ItemDefinitionGroup 中繼資料宣告中沒有用處，因為系統會先處理 ItemDefinitionGroup 元素，然後才處理 ItemGroup 元素。
@@ -195,7 +195,7 @@ ItemDefinitionGroup 中所定義之中繼資料的值可以來自許多不同的
 
 ## <a name="override-and-delete-metadata"></a>覆寫及刪除中繼資料
 
-通過在後續的 ItemDefinedGroup 元素中定義在 ItemDefinedGroup 元素中定義的中繼資料，可以通過將中繼資料值設置為另一個值來覆蓋中繼資料。 您也可以藉由將中繼資料項目設定為空值，來有效地刪除中繼資料項目。 例如：
+在 ItemDefinitionGroup 元素中定義的中繼資料，可以藉由將中繼資料值設定為另一個值，在後續的 ItemDefinitionGroup 元素中覆寫。 您也可以藉由將中繼資料項目設定為空值，來有效地刪除中繼資料項目。 例如：
 
 ```xml
 <ItemDefinitionGroup>
@@ -247,7 +247,7 @@ ItemDefinitionGroup 中所定義之中繼資料的值可以來自許多不同的
 </ItemDefinitionGroup>
 ```
 
-從 MSBuild 3.5 開始，專案組也可以是自參考的。 例如：
+從 MSBuild 3.5 開始，ItemGroups 也可以是自我參考。 例如：
 
 ```xml
 <ItemGroup>
@@ -260,4 +260,4 @@ ItemDefinitionGroup 中所定義之中繼資料的值可以來自許多不同的
 
 ## <a name="see-also"></a>另請參閱
 
-- [配料](../msbuild/msbuild-batching.md)
+- [批次處理](../msbuild/msbuild-batching.md)

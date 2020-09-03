@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94f2d88aa19bf01ebe6f25c7d80772c812abcc59
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632962"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions 元素 (MSBuild)
 
-允許 MSBuild 專案檔案包含非 MSBuild 資訊。 MSBuild 將`ProjectExtensions`忽略元素內部的任何內容。
+允許 MSBuild 專案檔包含非 MSBuild 資訊。 `ProjectExtensions`MSBuild 會忽略元素內的任何專案。
 
  \<Project> \<ProjectExtensions>
 
@@ -45,21 +45,21 @@ ms.locfileid: "77632962"
 
 ### <a name="attributes"></a>屬性
 
- None
+ 無
 
 ### <a name="child-elements"></a>子元素
 
- None
+ 無
 
 ### <a name="parent-elements"></a>父元素
 
-| 元素 | 描述 |
+| 項目 | 描述 |
 | - | - |
-| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔案所需的根項目。 |
+| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
 
 ## <a name="remarks"></a>備註
 
- 在`ProjectExtensions`MSBuild 專案中只能使用一個元素。
+ `ProjectExtensions`MSBuild 專案中只能使用一個元素。
 
 ## <a name="example"></a>範例
 
@@ -79,5 +79,5 @@ ms.locfileid: "77632962"
 
 ## <a name="see-also"></a>另請參閱
 
-- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)
+- [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

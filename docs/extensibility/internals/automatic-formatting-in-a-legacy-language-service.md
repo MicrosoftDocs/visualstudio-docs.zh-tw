@@ -1,5 +1,5 @@
 ---
-title: 舊語言服務中的自動格式 :微軟文件
+title: 舊版語言服務中的自動格式化 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a11e9c1fdef60e71f46cee9986d925e876dcac35
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709984"
 ---
-# <a name="automatic-formatting-in-a-legacy-language-service"></a>舊語言服務中的自動格式設定
-使用自動格式,當用戶開始鍵入已知代碼建構時,語言服務會自動插入代碼段。
+# <a name="automatic-formatting-in-a-legacy-language-service"></a>舊版語言服務中的自動格式化
+使用自動格式化時，語言服務會在使用者開始鍵入已知的程式碼結構時，自動插入程式碼片段。
 
 ## <a name="automatic-formatting-behavior"></a>自動格式化行為
- 例如,當您鍵入*if,* 語言服務會自動插入匹配的大括弧,或者如果按 ENTER 鍵時,語言服務會強制新行上的插入點到相應的縮進級別,具體取決於前面的行是否打開新作用域。
+ 例如，當您輸入 *if*時，語言服務會自動插入相符的大括弧，或者，如果您按下 enter 鍵，語言服務會強制新行上的插入點成為適當的縮排層級，取決於前一行是否開啟新的範圍。
 
- 用於其餘語言服務的命令篩選器也可用於自動格式化。 您還可以透過調用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A>突出顯示匹配的大括弧。
+ 用於其他語言服務的命令篩選也可以用於自動格式化。 您也可以藉由呼叫來反白顯示成對的大括弧 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A> 。
 
 ## <a name="see-also"></a>另請參閱
-- [開發傳統語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)
+- [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)

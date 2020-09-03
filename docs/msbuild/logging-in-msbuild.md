@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a66164426b760798571fc35e5288158a8dae9943
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633547"
 ---
 # <a name="logging-in-msbuild"></a>MSBuild 中的記錄
@@ -25,7 +25,7 @@ ms.locfileid: "77633547"
 
 - [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)
 
- 描述 MSBuild 中日誌記錄的各個方面。
+ 描述 MSBuild 中記錄的各個層面。
 
 - [組建記錄器](../msbuild/build-loggers.md)
 

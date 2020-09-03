@@ -8,14 +8,14 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解合作夥伴如何為其客戶管理 Visual Studio 訂用帳戶。
 ms.openlocfilehash: 5afe34b0a28e950225e18761d22854703f466f60
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289023"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>代替客戶管理訂用帳戶的合作夥伴
-若要在 Visual Studio 訂用帳戶[管理入口網站](https://manage.visualstudio.com)中管理訂用帳戶，合作夥伴需要遵循幾個步驟。 
+若要在 Visual Studio 訂用帳戶 [管理入口網站](https://manage.visualstudio.com)中管理訂用帳戶，您必須遵循幾個步驟。 
 
 程序將會：
 - 夥伴將代表客戶下單，並輸入客戶的公司電子郵件地址。
@@ -23,7 +23,7 @@ ms.locfileid: "85289023"
 - 若要讓夥伴代表客戶管理訂用帳戶，他們需要在系統管理入口網站上註冊。 下面列出取得存取權的各種方式 (與 add-open 程序類似)。
 
 ## <a name="existing-partners-adding-a-new-license"></a>新增授權的現有夥伴
-這適用于已具備 Visual Studio 訂用帳戶系統[管理入口網站](https://manage.visualstudio.com)存取權的合作夥伴，但已將 Open 授權的訂單放在他們需要管理的 Visual Studio 訂閱。  
+這適用于已可存取 [Visual Studio 訂閱系統管理入口網站](https://manage.visualstudio.com)的合作夥伴，但已針對需要管理的 Visual Studio 訂用帳戶，將 Open 授權的訂單放在其中。  
 
 <br> 
 
@@ -31,7 +31,7 @@ ms.locfileid: "85289023"
 
 合作夥伴新增授權的步驟：
 - 登入 <https://manage.visualstudio.com>。
-- 選取 [合約] 下拉式清單，然後在底部向下流覽至 [**新增 open license**] 的選項。
+- 選取 [合約] 下拉式清單，並將其向下滾動至有 **新 open 授權**選項的底部。
 - 在快顯面板中，輸入合約上的授權號碼 (authorization number)、授權號碼 (license number) 和客戶電子郵件地址，並選取核取方塊，然後按一下 [提交]****。
 
 > [!NOTE]
@@ -39,7 +39,7 @@ ms.locfileid: "85289023"
 
 ## <a name="new-partners-who-register-on-the-volume-licensing-service-center-vlsc"></a>在大量授權服務中心 (VLSC) 上註冊的新夥伴
 
-這適用于放置新 Open License 訂單的新合作夥伴，但在嘗試存取 Visual Studio[訂閱系統管理入口網站](https://manage.visualstudio.com)之前，會透過「新增-開啟流程」在[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx)上註冊。 合作夥伴應遵循下列步驟：
+這適用于放置新 Open License 訂單的新夥伴，但在嘗試存取 Visual Studio 訂用帳戶[管理入口網站](https://manage.visualstudio.com)之前，會透過新增開啟流程註冊[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 。 合作夥伴應遵循下列步驟：
 - 登入 VLSC 並巡覽至 [關聯摘要]。
 - 選取想要的 Open License。
 - 接下來，在 [授權詳細資料] 的 [Visual Studio 訂用帳戶] 下，選取選項透過 [按一下這裡]**** 連結來管理訂用帳戶。
@@ -51,7 +51,7 @@ ms.locfileid: "85289023"
 
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>直接瀏覽 Visual Studio 訂用帳戶管理入口網站的新夥伴
-此案例適用于已加入新 Open License 訂單，但尚未在[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx)上註冊，並直接移至 Visual Studio 訂用帳戶系統[管理入口網站](https://manage.visualstudio.com)的新合作夥伴。  請遵循下列步驟：
+此案例適用于已放置新 Open License 訂單，但未在 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 上註冊並直接移至 [Visual Studio 訂閱系統管理入口網站](https://manage.visualstudio.com)的新夥伴。  請遵循下列步驟：
 - 瀏覽 <https://manage.visualstudio.com>。
 - 您會收到錯誤，指出您是無法辨識的使用者。
 - 選取 [OLP Partners] \(OLP 夥伴\)**** 註冊選項，並輸入訂單上所使用的授權號碼 (authorization number)、授權號碼 (license number) 和客戶電子郵件地址，然後選取核取方塊並按一下 [提交]****。

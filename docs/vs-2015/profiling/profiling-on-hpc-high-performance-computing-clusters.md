@@ -22,18 +22,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b63f9ddf29ff74a4aa4bf089c266e12e37bb2f50
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535534"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>程式碼剖析 HPC (高效能運算) 叢集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以使用 [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] 或 [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] 程式碼剖析工具的取樣方法，在 Microsoft Windows HPC 叢集的計算節點上進行程式碼剖析。 如需 HPC 的詳細資訊，請參閱 Microsoft 網站上的[Big Compute： hpc & Batch](https://azure.microsoft.com/solutions/big-compute/) 。  
+您可以使用 [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] 或 [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] 程式碼剖析工具的取樣方法，在 Microsoft Windows HPC 叢集的計算節點上進行程式碼剖析。 如需有關 HPC 的詳細資訊，請參閱 Microsoft 網站上的 [Big Compute： hpc & Batch](https://azure.microsoft.com/solutions/big-compute/) 。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先決條件  
  若要在 HPC 計算節點上進行程式碼剖析，您必須執行下列動作︰  
   
 - 在和 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 相同的電腦上安裝 Microsoft HPC Pack 2008。 電腦不一定要是 HPC 叢集的一部分。 您可以在 [Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=2800)安裝 HPC Pack。  
@@ -73,7 +73,7 @@ ms.locfileid: "85535534"
   
     - 若要進行程式碼剖析的二進位檔不在開啟專案中，請選取 [可執行檔 (.EXE 檔)]**** 選項。  
   
-4. 按 [下一步] 。  
+4. 按一下 [下一步]  。  
   
 5. 在精靈的第三個頁面上：  
   
@@ -85,7 +85,7 @@ ms.locfileid: "85535534"
   
     - 在 [部署位置]**** 中，指定 HPC 伺服器用以佈置部署映像的目錄路徑。  
   
-6. 按 [下一步] 。  
+6. 按一下 [下一步]  。  
   
 7. 在精靈的第四個頁面上：  
   
@@ -99,13 +99,13 @@ ms.locfileid: "85535534"
   
          若要進行程式碼剖析的處理序在 HPC 叢集中特定節點上執行，請選取 [依節點排列的設定檔]**** 選項，然後從下拉式清單中選取該節點。  
   
-8. 按 [下一步] 。  
+8. 按一下 [下一步]  。  
   
 9. 在精靈的第五個頁面上，您可以選擇立即啟動分析工具和程式碼剖析處理序，或稍後使用 [效能總管] 來啟動程式碼剖析。  
   
     - 選取 [在精靈完成後啟動分析]**** 以立即啟動程式碼剖析，或清除該核取方塊以手動方式啟動程式碼剖析。  
   
-10. 按一下 [完成] 。  
+10. 按一下 [完成]  。  
   
 ## <a name="setting-hpc-profiling-properties-by-using-performance-session-property-pages"></a>使用效能工作階段屬性頁來設定 HPC 程式碼剖析屬性  
  您可以在效能工作階段屬性頁的 [HPC 啟動屬性] 頁面上，變更在 HPC 程式碼剖析精靈上設定的效能工作階段屬性。 您可以在 [HPC 進階屬性] 頁面上設定其他選項。  
@@ -114,7 +114,7 @@ ms.locfileid: "85535534"
   
 1. 如有必要，請在 [效能總管] 中開啟效能工作階段 (.psess) 檔案。 在 [檔案]**** 功能表上，按一下 [開啟]****，然後選擇檔案。  
   
-2. 在效能總管中，以滑鼠右鍵按一下效能會話名稱，然後按一下 [**屬性**]。  
+2. 在效能總管中，以滑鼠右鍵按一下效能會話名稱，然後按一下 [ **屬性**]。  
   
 3. 在 [屬性頁] 對話方塊中，請使用下列其中一種方法：  
   

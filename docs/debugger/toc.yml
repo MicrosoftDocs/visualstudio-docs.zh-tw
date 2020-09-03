@@ -12,7 +12,7 @@
   items:
     - name: 偵錯工具簡介
       href: debugger-feature-tour.md
-    - name: '對 C# 或 Visual Basic 應用程式進行偵錯'
+    - name: 對 C# 或 Visual Basic 應用程式進行偵錯
       href: quickstart-debug-with-managed.md
     - name: 對 C++ 應用程式進行偵錯
       href: quickstart-debug-with-cplusplus.md
@@ -20,7 +20,7 @@
       href: quickstart-debug-aspnet.md
 - name: 教學課程
   items:
-    - name: '了解如何對 C# 偵錯'
+    - name: 了解如何對 C# 偵錯
       href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
     - name: 了解如何對 C++ 偵錯
       href: getting-started-with-the-debugger-cpp.md
@@ -30,7 +30,7 @@
       href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
     - name: 對即時 Azure 應用程式進行偵錯
       href: debug-live-azure-applications.md
-    - name: '對 C# 和 C++ 程式碼偵錯'
+    - name: 對 C# 和 C++ 程式碼偵錯
       href: how-to-debug-managed-and-native-code.md
     - name: 檢查先前的應用程式狀態
       href: view-historical-application-state.md
@@ -46,7 +46,7 @@
           href: using-breakpoints.md
         - name: 針對中斷點進行疑難排解
           href: troubleshooting-breakpoints.md
-        - name: '針對 C# 資料中斷點進行疑難排解'
+        - name: 針對 C# 資料中斷點進行疑難排解
           href: troubleshoot-data-breakpoint-errors.md
     - name: 資料檢查
       items:
@@ -68,7 +68,7 @@
                   href: format-specifiers-in-cpp.md
                 - name: 內容運算子 (C++)
                   href: context-operator-cpp.md
-                - name: 'C# 中的格式規範'
+                - name: C# 中的格式規範
                   href: format-specifiers-in-csharp.md
                 - name: 虛擬變數
                   href: pseudovariables.md
@@ -118,11 +118,11 @@
               href: edit-and-continue-visual-cpp.md
             - name: 支援的程式碼變更 (C++)
               href: supported-code-changes-cpp.md
-        - name: '編輯後繼續 (Visual C#)'
+        - name: 編輯後繼續 (Visual C#)
           items:
-            - name: 'C# 的編輯後繼續'
+            - name: C# 的編輯後繼續
               href: edit-and-continue-visual-csharp.md
-            - name: '使用編輯後繼續 (C#)'
+            - name: 使用編輯後繼續 (C#)
               href: how-to-use-edit-and-continue-csharp.md
             - name: 支援的程式碼變更
               href: supported-code-changes-csharp.md
@@ -138,7 +138,7 @@
               href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
             - name: 對 XAML 熱重新載入進行疑難排解
               href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
-        - name: 'F# 不支援編輯後繼續'
+        - name: F# 不支援編輯後繼續
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: 紀錄到輸出視窗
       href: using-tracepoints.md
@@ -210,7 +210,7 @@
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Web 專案的屬性頁設定
                   href: property-pages-settings-for-web-projects.md
-                - name: 'C# 偵錯組態的專案設定'
+                - name: C# 偵錯組態的專案設定
                   href: project-settings-for-csharp-debug-configurations.md
                 - name: Visual Basic 偵錯組態的專案設定
                   href: project-settings-for-a-visual-basic-debug-configuration.md
@@ -254,7 +254,7 @@
                   href: create-custom-visualizers-of-data.md
                 - name: 視覺化檢視架構
                   href: visualizer-architecture.md
-                - name: '逐步解說：以 C# 撰寫視覺化檢視'
+                - name: 逐步解說：以 C# 撰寫視覺化檢視
                   href: walkthrough-writing-a-visualizer-in-csharp.md
                 - name: 逐步解說：以 Visual Basic 撰寫視覺化檢視
                   href: walkthrough-writing-a-visualizer-in-visual-basic.md
@@ -282,7 +282,7 @@
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
         - name: 在 Azure 上對 ASP.NET Core 進行遠端偵錯
           href: remote-debugging-azure.md
-        - name: '對 C# 或 Visual Basic 專案進行遠端偵錯'
+        - name: 對 C# 或 Visual Basic 專案進行遠端偵錯
           href: remote-debugging-csharp.md
         - name: 對 C++ 專案進行遠端偵錯
           href: remote-debugging-cpp.md
@@ -466,13 +466,13 @@
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
             - name: 預先擷取 Microsoft Store 應用程式的內容
               href: prefetch-content-for-windows-store-apps.md
-        - name: '受控程式碼 (C#、Visual Basic、F#)'
+        - name: 受控程式碼 (C#、Visual Basic、F#)
           items:
             - name: 對受控碼進行偵錯
               href: debugging-managed-code.md
             - name: 偵錯準備
               items:
-                - name: '偵錯準備：C#、F# 和 Visual Basic 專案類型'
+                - name: 偵錯準備：C#、F# 和 Visual Basic 專案類型
                   href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
                 - name: 受控偵錯：建議的屬性設定
                   href: managed-debugging-recommended-property-settings.md
@@ -512,7 +512,7 @@
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: 顯示 WPF 追蹤資訊
                   href: how-to-display-wpf-trace-information.md
-            - name: '對 F# 進行偵錯'
+            - name: 對 F# 進行偵錯
               href: debugging-f-hash.md
         - name: C/C++ 程式碼
           items:

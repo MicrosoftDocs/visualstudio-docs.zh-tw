@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ccb29f0ea6322a3f6bbfac5c3c0817892f74644
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288893"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>如何：設定目標和工作
@@ -115,4 +115,4 @@ MSBuild 會在執行工作之前，先檢查看看它是否是指定為在目前
 ## <a name="see-also"></a>另請參閱
 
 - [設定目標和工作](../msbuild/configuring-targets-and-tasks.md)
-- [UsingTask 元素](../msbuild/usingtask-element-msbuild.md)
+- [UsingTask 項目](../msbuild/usingtask-element-msbuild.md)

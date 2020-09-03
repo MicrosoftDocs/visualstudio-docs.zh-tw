@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
-ms.sourcegitcommit: 98421670ed0b8170aaa32d3d6f8681298f401a1d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81638038"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 內嵌工作
@@ -26,7 +26,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
  在 MSBuild 15.8 中，已新增 [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md)，以建立 .NET Standard 跨平台內嵌工作。  如果您需要在 .NET Core 上使用內嵌工作，則必須使用 RoslynCodeTaskFactory。
 ## <a name="the-structure-of-an-inline-task"></a>內嵌工作的結構
 
- 內嵌工作包含於 [UsingTask](../msbuild/usingtask-element-msbuild.md) 項目中。 內聯任務及其包含`UsingTask`它的元素通常包含在 *.target*檔中,並根據需要導入到其他專案檔中。 以下是基本的內嵌工作。 請注意，它不會執行任何動作。
+ 內嵌工作包含於 [UsingTask](../msbuild/usingtask-element-msbuild.md) 項目中。 內嵌工作和 `UsingTask` 包含它的元素通常會包含在 *.targets* 檔案中，並視需要匯入其他專案檔。 以下是基本的內嵌工作。 請注意，它不會執行任何動作。
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -52,11 +52,11 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 
 - `TaskFactory` 屬性會為實作內嵌工作 Factory 的類別命名。
 
-- `AssemblyFile` 屬性會提供內嵌工作 Factory 的位置。 或者,可以使用`AssemblyName`屬性 指定內聯任務工廠類的完全限定名稱,該類通常位於`$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll`中。
+- `AssemblyFile` 屬性會提供內嵌工作 Factory 的位置。 或者，您可以使用 `AssemblyName` 屬性來指定內嵌工作 factory 類別的完整名稱，此名稱通常位於 `$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll` 。
 
 `DoNothing` 工作的其餘項目是空的，它們的用途是用來說明內嵌工作的順序和結構。 本主題後續內容中將提供更強固的範例。
 
-- `ParameterGroup` 則是選擇性元素。 指定時，它將會宣告工作的參數。 有關輸入與輸出參數的詳細資訊,請參閱本主題後面的[輸入和輸出參數](#input-and-output-parameters)。
+- `ParameterGroup` 則是選擇性元素。 指定時，它將會宣告工作的參數。 如需輸入和輸出參數的詳細資訊，請參閱本主題稍後的 [輸入和輸出參數](#input-and-output-parameters) 。
 
 - `Task` 項目會描述並包含工作原始程式碼。
 
@@ -83,7 +83,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 
 - 如果 `Type` 的值是 `Fragment`，則程式碼會定義 `Execute` 方法的內容，但不會定義簽章或 `return` 陳述式。
 
-程式碼本身通常會出現在 `<![CDATA[` 標記和 `]]>` 標記之間。 因為此程式碼是在 CDATA 區段中，所以您不必擔心逸出保留的字元，如 "\<" 或 ">"。
+程式碼本身通常會出現在 `<![CDATA[` 標記和 `]]>` 標記之間。 因為程式碼是在 CDATA 區段中，所以您不必擔心如何轉義保留字元，例如 " \<" or "> "。
 
 或者，您可以使用 `Code` 項目的 `Source` 屬性，來指定包含您工作程式碼的檔案位置。 原始程式檔中的程式碼必須是 `Type` 屬性所指定的類型。 如果 `Source` 屬性存在，`Type` 的預設值為 `Class`。 如果 `Source` 不存在，預設值為 `Fragment`。
 
@@ -117,7 +117,7 @@ Log.LogError("Hello, world!");
 </Project>
 ```
 
- 您可以將 HelloWorld 任務保存在名為*HelloWorld.target*的檔中,然後從專案中調用它,如下所示。
+ 您可以將 HelloWorld 工作儲存在名為 *HelloWorld*的檔案中，然後從專案叫用它，如下所示。
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

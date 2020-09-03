@@ -22,53 +22,53 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7a8ff19ab503efe58e207d36a87babb5b8a80b28
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645386"
 ---
 # <a name="text-editor-options-dialog-box"></a>文字編輯器選項對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[選項] 對話方塊中的編輯器選項提供方式來自訂編輯器的外觀和行為。
+[選項]**** 對話方塊中的編輯器選項提供方式來自訂編輯器的外觀和行為。
 
 ## <a name="in-this-section"></a>本節內容
- [如何：變更編輯器中的字型和色彩 ](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md) 說明如何變更編輯器的字型和色彩。
+ [如何：在編輯器中變更字型和色彩](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md) 說明如何變更編輯器的字型和色彩。
 
- [如何：管理編輯器中的自動換行 ](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md) 說明自動換行選項。
+ [如何：管理編輯器中的自動換行](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md) 說明自動換行選項。
 
- [如何：在編輯器中顯示行號 ](../../ide/reference/how-to-display-line-numbers-in-the-editor.md) 說明如何開啟行號。
+ [如何：在編輯器中顯示行號](../../ide/reference/how-to-display-line-numbers-in-the-editor.md) 說明如何開啟行號。
 
- [如何：在編輯器中將 Url 顯示為連結 ](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md) 說明如何格式化 Url，使其顯示為連結。
+ [如何：在編輯器中將 Url 顯示為連結](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md) 說明如何格式化 Url，使其顯示為連結。
 
- [設定語言特定編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)說明如何設定僅適用于一個開發語言的編輯器選項。
+ [設定語言特定編輯器選項](../../ide/reference/setting-language-specific-editor-options.md) 說明如何設定僅適用于一種開發語言的編輯器選項。
 
- [選項、文字編輯器、一般](../../ide/reference/options-text-editor-general.md)說明一般編輯器選項。
+ [選項、文字編輯器、一般](../../ide/reference/options-text-editor-general.md) 說明一般編輯器選項。
 
- [選項、文字編輯器、副檔名](../../ide/reference/options-text-editor-file-extension.md)說明副檔名選項。
+ [副檔名、文字編輯器、選項](../../ide/reference/options-text-editor-file-extension.md) 說明副檔名選項。
 
- [選項、文字編輯器、所有語言](../../ide/reference/options-text-editor-all-languages.md)說明適用于所有語言的選項。
+ [選項、文字編輯器、所有語言](../../ide/reference/options-text-editor-all-languages.md) 說明適用于所有語言的選項。
 
- [選項、文字編輯器、所有語言、](../../ide/reference/options-text-editor-all-languages-tabs.md)索引標籤說明適用于所有語言的索引標籤選項。
+ [選項、文字編輯器、所有語言、](../../ide/reference/options-text-editor-all-languages-tabs.md) 索引標籤說明適用于所有語言的索引標籤選項。
 
- [選項、文字編輯器、基本（Visual Basic）](../../ide/reference/options-text-editor-basic-visual-basic.md)說明 Visual Basic 選項。
+ [選項、文字編輯器、基本 (Visual Basic) ](../../ide/reference/options-text-editor-basic-visual-basic.md) 說明 Visual Basic 選項。
 
- [選項、文字編輯器、C/C++、格式](../../ide/reference/options-text-editor-c-cpp-formatting.md)會說明 cC++ /格式化選項。
+ [選項、文字編輯器、c/c + +、格式](../../ide/reference/options-text-editor-c-cpp-formatting.md) 說明 C/c + + 格式化選項。
 
- [選項、文字編輯器、C/C++、Advanced](../../ide/reference/options-text-editor-c-cpp-advanced.md)說明 c/C++ Advanced 選項。
+ [選項、文字編輯器、C/c + +、Advanced](../../ide/reference/options-text-editor-c-cpp-advanced.md) 說明 C/c + + advanced 選項。
 
- [[選項]、[ C#文字編輯器](../../ide/reference/options-text-editor-csharp-formatting.md)] C# 、[格式] 會說明格式選項。
+ [選項、文字編輯器、c #、格式](../../ide/reference/options-text-editor-csharp-formatting.md) 說明 c # 格式化選項。
 
- [[選項]、[ C#文字編輯器](../../ide/reference/options-text-editor-csharp-advanced.md)] C# 、[advanced] 說明 advanced 選項。
+ [選項、文字編輯器、c #、Advanced](../../ide/reference/options-text-editor-csharp-advanced.md) 說明 c # advanced 選項。
 
- [[文字編輯器C# ](../../ide/reference/options-text-editor-csharp-intellisense.md) ]、[選項] C# 、[intellisense] 會說明 intellisense 選項。
+ [選項、文字編輯器、c #、IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) 說明 c # IntelliSense 選項。
 
- [選項、文字編輯器、JavaScript、格式](../../ide/reference/options-text-editor-javascript-formatting.md)說明 JavaScript 格式化選項。
+ [選項、文字編輯器、JavaScript、格式](../../ide/reference/options-text-editor-javascript-formatting.md) 說明 JavaScript 格式化選項。
 
- [選項、文字編輯器、JavaScript、IntelliSense](../../ide/reference/options-text-editor-javascript-intellisense.md)說明 JavaScript IntelliSense 選項。
+ [選項、文字編輯器、JavaScript、IntelliSense](../../ide/reference/options-text-editor-javascript-intellisense.md) 說明 JavaScript IntelliSense 選項。
 
- [選項、文字編輯器、XAML、格式](../../ide/reference/options-text-editor-xaml-formatting.md)說明 XAML 格式化選項。
+ [選項、文字編輯器、XAML、格式化](../../ide/reference/options-text-editor-xaml-formatting.md) 說明 XAML 格式化選項。
 
 ## <a name="related-sections"></a>相關章節
- [撰寫程式碼](../../ide/writing-code-in-the-code-and-text-editor.md)說明不同的程式碼編輯器使用方式。
+ [撰寫程式碼](../../ide/writing-code-in-the-code-and-text-editor.md) 描述不同的程式碼編輯器使用方式。

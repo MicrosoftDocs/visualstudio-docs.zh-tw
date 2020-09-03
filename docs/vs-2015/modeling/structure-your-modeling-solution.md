@@ -1,5 +1,5 @@
 ---
-title: 建立模型化解決方案的結構 |Microsoft Docs
+title: 結構化您的模型化解決方案 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 83c8d8e7a1afe0946c1b1f5eb25c8650e2b512f5
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917319"
 ---
 # <a name="structure-your-modeling-solution"></a>建構模型方案
@@ -26,7 +26,7 @@ ms.locfileid: "75917319"
 
 本主題假設您正在處理的專案，大到需要多個小組成員，而且可能有多個小組。 專案的程式碼和模型儲存在原始檔控制系統上，例如 [!INCLUDE[esprtfs](../includes/esprtfs-md.md)]。 至少有部分小組成員使用 Visual Studio 開發模型，而其他小組成員可以使用其他 Visual Studio 版本檢視模型。
 
-若要查看哪些版本的 Visual Studio 支援每項工具和模型化功能，請參閱[架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看 Visual Studio 支援每項工具和模型化功能的版本，請參閱 [架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="solution-structure"></a>方案結構
 
@@ -34,13 +34,13 @@ ms.locfileid: "75917319"
 
 #### <a name="to-divide-an-application-into-layers"></a>將應用程式分割到各圖層
 
-1. 以應用程式結構為方案結構的基礎，例如 Web 應用程式、服務應用程式或桌面應用程式。 [Microsoft 應用程式架構指南中的應用程式 archetype 中](/previous-versions/msp-n-p/ee658107(v=pandp.10))會討論各種常見的架構。
+1. 以應用程式結構為方案結構的基礎，例如 Web 應用程式、服務應用程式或桌面應用程式。 [Microsoft 應用程式架構指南中的應用程式原型](/previous-versions/msp-n-p/ee658107(v=pandp.10))會討論各種常見的架構。
 
 2. 建立 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案，我們稱之為架構方案。 這個方案會用以建立系統的整體設計。 它包含模型，但不含程式碼。
 
     將分層圖加入此方案。 在分層圖上繪製您為應用程式選擇的架構。 例如，圖表可能會顯示這些圖層及其彼此之間的相依性：簡報、商務邏輯和資料。
 
-    您可以使用 [**架構**] 功能表上的 [**新增 UML 或分層圖**] 命令，同時建立圖層圖表和新的 Visual Studio 方案。
+    您可以使用 [**架構**] 功能表上的 [**新增 UML 或分層圖**] 命令，同時建立分層圖和新的 Visual Studio 方案。
 
 3. 加入代表重要商務概念的架構模型 UML 圖表，以及參考所有圖層設計的使用案例。
 
@@ -60,7 +60,7 @@ ms.locfileid: "75917319"
 
     現在每個圖層都有一個模型，再加上一個應用程式架構模型。 每個模型都包含在自己的方案中。 這可讓小組成員同時在圖層上工作。
 
-2. 請在架構方案中，加入每個圖層方案的模型專案。 若要執行此工作，請開啟架構方案。 在方案總管中，以滑鼠右鍵按一下方案節點，指向 [加入]，然後按一下 [**現有專案**]。 巡覽至某個圖層方案的模型專案 (.modelproj)。
+2. 請在架構方案中，加入每個圖層方案的模型專案。 若要執行此工作，請開啟架構方案。 在方案總管中，以滑鼠右鍵按一下方案節點，指向 [新增]，然後按一下 [ **現有專案**]。 巡覽至某個圖層方案的模型專案 (.modelproj)。
 
     現在每個模型都會顯示在兩個方案中：其「主」方案和架構方案。
 
@@ -80,9 +80,9 @@ ms.locfileid: "75917319"
 
 ###### <a name="to-use-a-separate-package-for-each-layer"></a>為每個圖層使用個別的套件
 
-1. 在每個圖層的方案中，加入架構模型專案。 在方案總管中，以滑鼠右鍵按一下方案節點，指向 [**加入**]，然後按一下 [**現有專案**]。 現在從每個方案都可以存取單一模型專案：架構專案及每個圖層的開發專案。
+1. 在每個圖層的方案中，加入架構模型專案。 在方案總管中，以滑鼠右鍵按一下方案節點，指向 [ **新增**]，然後按一下 [ **現有專案**]。 現在從每個方案都可以存取單一模型專案：架構專案及每個圖層的開發專案。
 
-2. 在共用的 UML 模型中，為每個圖層建立套件：在 [方案總管] 中選取模型專案。 在 [UML 模型瀏覽器] 中，以滑鼠右鍵按一下模型根節點，指向 [**加入**]，然後按一下 [**封裝**]。
+2. 在共用的 UML 模型中，為每個圖層建立套件：在 [方案總管] 中選取模型專案。 在 [UML 模型瀏覽器] 中，以滑鼠右鍵按一下模型根節點，指向 [ **加入**]，然後按一下 [ **封裝**]。
 
     每個套件都會包含 UML 圖表，描述對應圖層的需求和設計。
 
@@ -90,7 +90,7 @@ ms.locfileid: "75917319"
 
     這個方法可讓每個圖層的設計項目直接參考圖層的設計項目，及其依存的通用架構。
 
-    雖然在不同套件上同時執行工作可能會導致某些衝突，但也很容易管理，因為套件存放在不同的檔案中。 主要的困難是刪除相依套件所參考的項目所造成。 如需詳細資訊，請參閱[在版本控制下管理模型和圖表](../modeling/manage-models-and-diagrams-under-version-control.md)。
+    雖然在不同套件上同時執行工作可能會導致某些衝突，但也很容易管理，因為套件存放在不同的檔案中。 主要的困難是刪除相依套件所參考的項目所造成。 如需詳細資訊，請參閱 [在版本控制下管理模型和圖表](../modeling/manage-models-and-diagrams-under-version-control.md)。
 
 ## <a name="creating-architecture-templates"></a>建立架構範本
 
@@ -100,24 +100,24 @@ ms.locfileid: "75917319"
 
 #### <a name="to-create-a-solution-template"></a>建立方案範本
 
-1. 如果您尚未這麼做，請[下載並安裝 [匯出範本]](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard)。
+1. 如果您尚未這麼做，請[下載並安裝「匯出範本嚮導](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard)」。
 
 2. 建立要用做未來專案起點的方案結構。
 
-3. 按一下 [檔案] 功能表上的 [匯出範本為 VSIX]。 [**匯出範本為 VSIX Wizard]** 隨即開啟。
+3. 按一下 [檔案] **** 功能表上的 [匯出範本為 VSIX] ****。 [ **匯出範本 AS VSIX Wizard]** 隨即開啟。
 
 4. 遵循精靈中的指示，選取要包含在範本中的專案，提供範本的名稱和描述，並指定輸出位置。
 
 > [!NOTE]
-> 本主題中的資料是摘錄自《Visual Studio 架構工具指南》，作者為 Visual Studio ALM Rangers，這是最有價值專家 (MVP)、Microsoft 服務及 Visual Studio 產品小組和作者的合作。 [按一下這裡下載完整的指引套件。](https://archive.codeplex.com/?p=vsarchitectureguide)
+> 本主題中的資料是摘錄自《Visual Studio 架構工具指南》，作者為 Visual Studio ALM Rangers，這是最有價值專家 (MVP)、Microsoft 服務及 Visual Studio 產品小組和作者的合作。 [按一下這裡以下載完整的指引套件。](https://archive.codeplex.com/?p=vsarchitectureguide)
 
 ## <a name="related-materials"></a>相關資料
 
-[組織和管理您的模型](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)-Clint Edmondson 的影片。
+[組織及管理您的模型](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models) -Clint Edmondson 的影片。
 
-[Visual Studio 架構工具指引](../modeling/visual-studio-architecture-tooling-guidance.md)-在小組中管理模型的進一步指引
+[Visual Studio 架構工具指引](../modeling/visual-studio-architecture-tooling-guidance.md) -管理小組中模型的進一步指引
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-在[版本控制下管理模型和圖表](../modeling/manage-models-and-diagrams-under-version-control.md)
-在[開發過程中使用模型](../modeling/use-models-in-your-development-process.md)
+[在版本控制](../modeling/manage-models-and-diagrams-under-version-control.md) 
+ 下管理模型和圖表[在開發過程中使用模型](../modeling/use-models-in-your-development-process.md)

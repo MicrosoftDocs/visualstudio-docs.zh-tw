@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ec5ea0b52c5d0708630a30b7d2b80be2275f3a9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173673"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>使用 Visual Studio 將 Web 應用程式發行至網站
@@ -30,23 +30,23 @@ ms.locfileid: "84173673"
 
 1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]**** (或使用 [建置]**** > [發行]**** 功能表項目)。
 
-    ![[專案] 內容功能表上的 [發佈] 命令方案總管](../deployment/media/quickstart-publish.png "選擇 [發行]")
+    ![方案總管的專案內容功能表上的 [發行] 命令](../deployment/media/quickstart-publish.png "選擇 [發行]")
 
 1. 如果您之前已設定任何發行設定檔，[發行]**** 窗格會隨即出現。 選取 [建立新設定檔]****。
 
-1. 在 [**發行**] 對話方塊中，選擇 [**網頁伺服器（IIS）**]。
+1. 在 [ **發行** ] 對話方塊中，選擇 [ **WEB 伺服器 (IIS) **。
 
-    ![選擇發行目標](../deployment/media/quickstart-publish-iis.png "選擇 [IIS、FTP 等等]。")
+    ![選擇發佈目標](../deployment/media/quickstart-publish-iis.png "選擇 [IIS、FTP 等等]。")
 
 1. 選擇 [ **Web Deploy** ] 作為部署方法。 Web Deploy 可簡化將 Web 應用程式和網站部署到 IIS 伺服器的作業，而且必須安裝為伺服器上的應用程式。 請使用 [Web platform installer](https://www.microsoft.com/web/downloads/platform.aspx) 進行安裝。
 
     ![選擇部署方法](../deployment/media/quickstart-publish-iis-web-deploy.png "選擇 [IIS、FTP 等等]。")
 
-1. 設定 publish 方法所需的設定，然後選取 **[完成]**。 
+1. 設定 publish 方法的必要設定，然後選取 **[完成]**。 
 
-    ![Web Deploy 連線詳細資料](../deployment/media/quickstart-publish-iis-web-deploy-connection-details.png)
+    ![Web Deploy 連接詳細資料](../deployment/media/quickstart-publish-iis-web-deploy-connection-details.png)
 
-1. 若要發佈，請在 [摘要] 頁面中選取 [**發佈**]。 [輸出] 視窗會顯示部署進度和結果。
+1. 若要發行，請在 [摘要] 頁面中選取 [ **發行** ]。 [輸出] 視窗會顯示部署進度和結果。
 
 ## <a name="next-steps"></a>後續步驟
 

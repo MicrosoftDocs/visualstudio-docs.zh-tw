@@ -13,21 +13,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b95ed9b6473c156d1bdf8a20eb927ee044aa47cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621099"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>說明檢視器的協助工具功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft 致力於使其產品和服務對於每個人都更容易使用。 本主題包含功能、產品和服務的相關資訊，協助各類人士存取 Microsoft Help Viewer 2.2。
+Microsoft 致力於讓所有使用者都能輕鬆使用其產品與服務。 本主題包含功能、產品和服務的相關資訊，協助各類人士存取 Microsoft Help Viewer 2.2。
 
 ## <a name="keyboard-access"></a>存取鍵盤
  您可以使用鍵盤來存取說明檢視器的所有功能。 如需詳細資訊，請參閱[快速鍵 (說明檢視器)](../ide/shortcut-keys-help-viewer.md)。
 
-## <a name="font-size"></a>Font size
+## <a name="font-size"></a>字型大小
  您可以修改出現在文件視窗中的主題文字的字型大小。 如需詳細資訊，請參閱[自訂說明檢視器](../ide/customize-the-help-viewer.md)。
 
 ## <a name="window-size"></a>視窗大小

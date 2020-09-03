@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: b8002d9e911c8d8c07a5aaf5286168e49a374a7c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85292133"
 ---
 
@@ -13,7 +13,7 @@ ms.locfileid: "85292133"
 
     ![設定 Web Deploy 組態](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
 
-   如果您看不到 [**部署**] 功能表，請參閱上一節，確認 Web Deploy 正在執行。
+   如果您沒有看到 [ **部署** ] 功能表，請參閱上一節，確認 Web Deploy 正在執行。
 
 3. 查看 [設定 Web Deploy 發行]**** 對話方塊中的設定。
 

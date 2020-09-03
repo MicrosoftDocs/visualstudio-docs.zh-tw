@@ -1,5 +1,5 @@
 ---
-title: 編輯後繼續的錯誤和警告C#（） |Microsoft Docs
+title: '編輯並繼續 (c # ) 的錯誤和警告 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -62,10 +62,10 @@ caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eec40bc584e831f8b43b79c9bc7cee5a48a291aa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850965"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>編輯後繼續的錯誤和警告 (C#)
@@ -75,9 +75,9 @@ ms.locfileid: "75850965"
   
  通常會禁止影響類別之公用結構的宣告式程式碼編輯，而且不允許對類別內的方法、屬性主體或私用宣告進行某些編輯。 [編輯後繼續] 會盡可能將無法編輯的程式碼標示為淺灰色，並顯示錯誤訊息。  
   
- 如需 [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]的 [編輯後繼續] 中支援之編輯的詳細資訊，請參閱支援的程式[代碼變更（C#）](../debugger/supported-code-changes-csharp.md)。 如需特定錯誤或警告的詳細資訊，您可以在 MSDN [Visual C# IDE 論壇](https://social.msdn.microsoft.com/Forums/en-US/csharpide/threads)上搜尋或張貼。  
+ 如需的 [編輯後繼續] 中支援之編輯的詳細資訊 [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)] ，請參閱 [ (c # ) 支援的程式碼變更 ](../debugger/supported-code-changes-csharp.md)。 如需特定錯誤或警告的詳細資訊，您可以在 MSDN [Visual C# IDE 論壇](https://social.msdn.microsoft.com/Forums/en-US/csharpide/threads)上搜尋或張貼。  
   
-### <a name="to-correct-this-error"></a>若要改正這項錯誤  
+### <a name="to-correct-this-error"></a>更正這個錯誤  
   
 1. 從 [ **偵錯** ] 功能表上選擇 [ **復原** ]，復原變更。  
   
@@ -85,5 +85,5 @@ ms.locfileid: "75850965"
   
 2. 停止偵錯工作階段，進行編輯，然後開始新的偵錯工作階段。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [編輯後繼續 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

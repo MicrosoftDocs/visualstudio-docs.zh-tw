@@ -10,10 +10,10 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.openlocfilehash: 9899b7367e6ae9255755ae04fe06d8c8733043ae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633820"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>如何：忽略工作中的錯誤
@@ -26,7 +26,7 @@ ms.locfileid: "77633820"
 
 `ContinueOnError` 屬性可包含一或多個下列值：
 
-- **WarnAndContinue** 或 **true**。 當任務失敗時[，Target](../msbuild/target-element-msbuild.md)元素和生成中的後續任務將繼續執行，並且任務中的所有錯誤都被視為警告。
+- **WarnAndContinue** 或 **true**。 當工作失敗時， [目標](../msbuild/target-element-msbuild.md) 專案和組建中的後續工作會繼續執行，並將工作中的所有錯誤視為警告。
 
 - **ErrorAndContinue**。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。
 
@@ -66,6 +66,6 @@ ms.locfileid: "77633820"
 
 ## <a name="see-also"></a>另請參閱
 
-- [MSBuild](../msbuild/msbuild.md)
-- [任務引用](../msbuild/msbuild-task-reference.md)
+- [Msbuild](../msbuild/msbuild.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

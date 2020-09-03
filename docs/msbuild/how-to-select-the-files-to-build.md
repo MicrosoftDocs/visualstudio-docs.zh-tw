@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633807"
 ---
 # <a name="how-to-select-the-files-to-build"></a>如何：選取要建置的檔案
@@ -27,7 +27,7 @@ ms.locfileid: "77633807"
 
 項目代表建置的輸入。 如需項目的詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
 
-要包括生成的檔，必須將其包含在 MSBuild 專案檔案中的項清單中。 多個檔案可以新增至項目清單，方法是個別包含檔案，或是使用萬用字元來一次包含許多檔案。
+若要包含組建的檔案，這些檔案必須包含在 MSBuild 專案檔的專案清單中。 多個檔案可以新增至項目清單，方法是個別包含檔案，或是使用萬用字元來一次包含許多檔案。
 
 #### <a name="to-declare-items-individually"></a>個別宣告項目
 
@@ -101,7 +101,7 @@ ms.locfileid: "77633807"
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
-> 您必須將萬用字元與項一起指定生成輸入;但是，對於專案，必須使用萬用字元來指定生成中的輸入。不能在 MSBuild 任務`Sources`（如[Csc](../msbuild/csc-task.md)或[Vbc）](../msbuild/vbc-task.md)中使用屬性指定輸入。 下列範例在專案檔案中無效︰
+> 您必須使用萬用字元搭配專案來指定組建的輸入;您無法使用 `Sources` MSBuild 或[Vbc](../msbuild/vbc-task.md)等 MSBuild 工作中的屬性來[Csc](../msbuild/csc-task.md)指定輸入。 下列範例在專案檔案中無效︰
 >
 > `<CSC Sources="*.cs">...</CSC>`
 

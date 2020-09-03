@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 95927385ce3218d73ba6b94819429163178bb65b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917340"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>使用 NuGet 和擴充功能 SDK 兩種方式新增參考
@@ -26,27 +26,27 @@ ms.locfileid: "75917340"
 
 - NuGet 是開放原始碼套件管理系統，可簡化程式庫併入專案方案的程序。 如需詳細資訊，請參閱 [NuGet 概觀](/nuget/what-is-nuget)。
 
-- SDK 是檔案集合，Visual Studio 會將這個集合視為單一參考項目。 [參考管理員]  對話方塊會列出所有與在您顯示該對話方塊時已開啟之專案相關的 SDK。 當您將 SDK 新增到專案時，可以透過 IntelliSense、[工具箱]  、設計工具、[物件瀏覽器]  、MSBuild、部署、偵錯和封裝，存取該 SDK 的所有內容。 如需 SDK 的詳細資訊，請參閱[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)。
+- SDK 是檔案集合，Visual Studio 會將這個集合視為單一參考項目。 [ **參考管理員** ] 對話方塊會列出與您在顯示該對話方塊時已開啟之專案相關的所有 sdk。 當您將 SDK 新增到專案時，可以透過 IntelliSense、[工具箱]****、設計工具、[物件瀏覽器]****、MSBuild、部署、偵錯和封裝，存取該 SDK 的所有內容。 如需 SDK 的詳細資訊，請參閱[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)。
 
 ## <a name="which-mechanism-should-i-use"></a>應該使用哪一種機制？
  下表可協助您比較 SDK 的參考功能與 NuGet 的參考功能。
 
 |功能|SDK 支援|SDK 資訊|NuGet 支援|NuGet 資訊|
 |-------------|-----------------|---------------|-------------------|-----------------|
-|機制會參考一個實體，然後即可使用所有檔案和功能。|Y|使用 [參考管理員]  對話方塊新增 SDK，即可在開發工作流程期間使用所有檔案和功能。|Y||
+|機制會參考一個實體，然後即可使用所有檔案和功能。|Y|使用 [參考管理員]**** 對話方塊新增 SDK，即可在開發工作流程期間使用所有檔案和功能。|Y||
 |MSBuild 會自動使用組件和 Windows 中繼資料 (.winmd) 檔案。|Y|SDK 中的參考會自動傳遞給編譯器。|Y||
-|MSBuild 會自動使用 .h 或 .lib 檔案。|Y|<SDK 名稱>  .props 檔案會告知 Visual Studio 如何設定 Visual C++ 目錄，以此類推，以自動使用 .h 或 .lib 檔案。|N||
-|MSBuild 會自動使用 .js 或 .css 檔案。|Y|在方案總管中  ，您可以展開 JavaScript SDK 參考節點以顯示個別的 .js 或 .css 檔案，然後將這些檔案拖曳至來源檔案以產生 `<source include/>` 標記。 SDK 支援 F5 及自動套件設定。|Y||
-|MSBuild 會自動在 [工具箱]  中新增控制項。|Y|[工具箱]  可以使用 SDK，並在您指定的索引標籤中顯示控制項。|N||
+|MSBuild 會自動使用 .h 或 .lib 檔案。|Y|*SDKName*. .props 檔案會告訴 Visual Studio 如何針對自動 .h 或 .lib 檔案的使用設定 Visual C++ 目錄等等。|N||
+|MSBuild 會自動使用 .js 或 .css 檔案。|Y|在 [方案總管] 中****，您可以展開 JavaScript SDK 參考節點以顯示個別的 .js 或 .css 檔案，然後將這些檔案拖曳至來源檔案以產生 `<source include/>` 標記。 SDK 支援 F5 及自動套件設定。|Y||
+|MSBuild 會自動在 [工具箱]**** 中新增控制項。|Y|[工具箱]**** 可以使用 SDK，並在您指定的索引標籤中顯示控制項。|N||
 |機制會支援 Visual Studio 延伸模組安裝程式 (VSIX)。|Y|VSIX 有用以建立 SDK 套件的特殊資訊清單和邏輯|Y|VSIX 可以內嵌在另一個安裝程式中。|
-|[物件瀏覽器]  會列舉參考。|Y|[物件瀏覽器]  會自動取得 SDK 中的參考清單，並列舉它們。|N||
-|檔案和連結會自動新增至 [參考管理員]  對話方塊 (說明連結等會自動填入)|Y|[參考管理員]  對話方塊會自動列舉 SDK、說明連結和 SDK 相依性的清單。|N|NuGet 提供它自己的 [管理 NuGet 套件]  對話方塊。|
+|[物件瀏覽器]**** 會列舉參考。|Y|[物件瀏覽器]**** 會自動取得 SDK 中的參考清單，並列舉它們。|N||
+|檔案和連結會自動新增至 [參考管理員]**** 對話方塊 (說明連結等會自動填入)|Y|[參考管理員]**** 對話方塊會自動列舉 SDK、說明連結和 SDK 相依性的清單。|N|NuGet 提供它自己的 [管理 NuGet 套件]**** 對話方塊。|
 |機制支援多個架構。|Y|SDK 可以運送多個組態。 MSBuild 會針對每個專案組態使用適當的檔案。|N||
 |機制支援多個組態。|Y|SDK 可以運送多個組態。 根據專案的架構，MSBuild 會針對每個專案架構使用適當的檔案。|N||
 |機制可以指定「不複製」。|Y|根據檔案是否都會放在 \redist 或 \designtime 資料夾中，您可以控制要複製到取用應用程式套件的檔案。|N|您在套件資訊清單中宣告要複製的檔案。|
 |內容會出現在已當地語系化的檔案中。|Y|SDK 中的當地語系化 XML 文件會自動包含以獲得更佳的設計階段體驗。|N||
 |MSBuild 支援同時使用多個版本的 SDK。|Y|SDK 支援同時使用多個版本。|N|這不參考。 同一時間內，您不能在專案中有多個版本的 NuGet 檔案。|
-|機制支援指定適用的目標 Framework、Visual Studio 版本和專案類型。|Y|[參考管理員]  對話方塊和 [工具箱]  只會顯示適用於專案的 SDK，讓使用者可以更輕鬆地選擇適當的 SDK。|Y (部分)|樞紐分析是目標 Framework。 使用者介面上沒有任何篩選。 在安裝時，它可能會傳回錯誤。|
+|機制支援指定適用的目標 Framework、Visual Studio 版本和專案類型。|Y|[參考管理員]**** 對話方塊和 [工具箱]**** 只會顯示適用於專案的 SDK，讓使用者可以更輕鬆地選擇適當的 SDK。|Y (部分)|樞紐分析是目標 Framework。 使用者介面上沒有任何篩選。 在安裝時，它可能會傳回錯誤。|
 |機制支援指定原生 WinMD 的註冊資訊。|Y|您可以在 SDKManifest.xml 中指定 .winmd 檔案和 .dll 檔案之間的相互關聯。|N||
 |機制支援指定對其他 SDK 的相依性。|Y|SDK 只會通知使用者。使用者仍必須手動安裝它們並加以參考。|Y|NuGet 會自動提取它們，且不會通知使用者。|
 |機制與應用程式資訊清單和 Framework 識別碼等 [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)] 概念整合。|Y|SDK 必須傳遞 [!INCLUDE[win8_appstore_short](../includes/win8-appstore-short-md.md)] 的特定概念，以便封裝和 F5 能正確地搭配 [!INCLUDE[win8_appstore_short](../includes/win8-appstore-short-md.md)] 中可用的 SDK 使用。|N||

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633911"
 ---
 # <a name="how-to-clean-a-build"></a>如何：清除組建
@@ -106,6 +106,6 @@ ms.locfileid: "77633911"
 ## <a name="see-also"></a>另請參閱
 
 - [MakeDir 工作](../msbuild/makedir-task.md)
-- [刪除 Dir 任務](../msbuild/removedir-task.md)
+- [RemoveDir 工作](../msbuild/removedir-task.md)
 - [Csc 工作](../msbuild/csc-task.md)
 - [目標](../msbuild/msbuild-targets.md)

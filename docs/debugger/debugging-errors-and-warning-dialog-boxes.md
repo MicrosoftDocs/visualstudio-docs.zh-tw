@@ -1,5 +1,5 @@
 ---
-title: '[調試錯誤] 和 [警告] 對話方塊 |Microsoft Docs'
+title: 調試錯誤和警告對話方塊 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,23 +22,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916440"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>偵錯錯誤和警告對話方塊
 底下列出一些偵錯應用程式時可能會碰到的錯誤和警告對話方塊。
 
-## <a name="in-this-section"></a>本章節內容
- [判斷提示失敗對話方塊](../debugger/assertion-failed-dialog-box.md)
+## <a name="in-this-section"></a>本節內容
+ [判斷提示已失敗對話方塊](../debugger/assertion-failed-dialog-box.md)
 
  [無法變更值對話方塊](../debugger/cannot-change-value-dialog-box.md)
 
  [偵錯工具無法顯示原始程式碼或反組譯碼](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
  
- [偵錯工具服務記憶體不足](../debugger/error-debugger-services-no-memory.md)
+ [記憶體不足的偵錯工具服務](../debugger/error-debugger-services-no-memory.md)
 
  [偵錯工作階段的可執行檔對話方塊](../debugger/executable-for-debugging-session-dialog-box.md)
 
@@ -56,7 +56,7 @@ ms.locfileid: "75916440"
 
  [無法連線至電腦](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 
- [錯誤：無法進行偵錯，系統中已啟動一個核心偵錯工具](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
+ [錯誤：無法進行偵錯工具，因為系統上已啟用內核偵錯工具](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
 ## <a name="related-sections"></a>相關章節
  [Debugging Script and Web: Errors and Troubleshooting](../debugger/debugging-web-applications-errors-and-troubleshooting.md) (對指令碼和 Web 進行偵錯：錯誤和疑難排解)
@@ -67,6 +67,6 @@ ms.locfileid: "75916440"
 
  [針對 SQL 偵錯安裝程式進行疑難排解](/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
- [對機器碼進行偵錯的常見問題集](../debugger/debugging-native-code-faqs.md)
+ [原生程式碼的偵錯工具常見問題](../debugger/debugging-native-code-faqs.md)
 
  [偵錯工具安全性](../debugger/debugger-security.md)

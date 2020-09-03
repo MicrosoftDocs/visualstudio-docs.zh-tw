@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ed93d852e385a6130cd37b0f66c99b4f0ab467bc
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586797"
 ---
 # <a name="concurrency-visualizer-sdk"></a>並行視覺化檢視 SDK
@@ -31,7 +31,7 @@ ms.locfileid: "82586797"
 
 ### <a name="c-and-visual-basic"></a>C# 和 Visual Basic
 
-在 C#、Visual Basic 和其他受控程式碼中，透過呼叫 [Markers](/previous-versions/hh694099(v=vs.140)) 類別中的方法來使用預設提供者。 它會公開四種產生標記的方法： [WriteFlag](/previous-versions/hh694185(v=vs.140))、 [EnterSpan](/previous-versions/hh694205(v=vs.140))、 [WriteMessage](/previous-versions/hh694161(v=vs.140))和[WriteAlert](/previous-versions/hh694180(v=vs.140))。 視您是否要使用屬性的預設值而定，這些函式有多個多載。  最簡單的多載採用只有字串的參數，指定事件的描述。 描述會顯示在並行視覺化檢視報表中。
+在 C#、Visual Basic 和其他受控程式碼中，透過呼叫 [Markers](/previous-versions/hh694099(v=vs.140)) 類別中的方法來使用預設提供者。 它會公開四個產生標記的方法： [WriteFlag](/previous-versions/hh694185(v=vs.140))、 [>enterspan](/previous-versions/hh694205(v=vs.140))、 [WriteMessage](/previous-versions/hh694161(v=vs.140))和 [WriteAlert](/previous-versions/hh694180(v=vs.140))。 視您是否要使用屬性的預設值而定，這些函式有多個多載。  最簡單的多載採用只有字串的參數，指定事件的描述。 描述會顯示在並行視覺化檢視報表中。
 
 #### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>將 SDK 支援新增至 c # 或 Visual Basic 專案
 
@@ -84,7 +84,7 @@ ms.locfileid: "82586797"
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>在 C++ 或 C 專案中使用新的標記提供者
 
-1. 使用 `CvInitProvider` 函式來初始化 PCV_PROVIDER。 此函式會採用 GUID *，\*並 PCV_PROVIDER。
+1. 使用 `CvInitProvider` 函式來初始化 PCV_PROVIDER。 此函式會採用 GUID * 並 PCV_PROVIDER \* 。
 
 2. 若要註冊提供者，請開啟 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊。 選取 [標記]**** 索引標籤，然後選擇 [加入新提供者]**** 按鈕。 在此對話方塊中，輸入用來建立提供者的 GUID 和提供者的描述。
 
@@ -123,9 +123,9 @@ ms.locfileid: "82586797"
 
 ## <a name="related-topics"></a>[相關主題]
 
-|Title|描述|
+|標題|描述|
 |-----------|-----------------|
 |[C + + 程式庫參考](../profiling/cpp-library-reference.md)|描述 C++ 的並行視覺化檢視 API。|
 |[C 程式庫參考](../profiling/c-library-reference.md)|描述 C 的並行視覺化檢視 API。|
-|[校驗](/previous-versions/hh694104(v=vs.140))|描述 Managed 程式碼的並行視覺化檢視 API。|
+|[儀錶](/previous-versions/hh694104(v=vs.140))|描述 Managed 程式碼的並行視覺化檢視 API。|
 |[並行視覺化檢視](../profiling/concurrency-visualizer.md)|使用並行方法所產生且包含執行緒執行資料的程式碼剖析資料檔案之檢視和報告的參考資訊。|

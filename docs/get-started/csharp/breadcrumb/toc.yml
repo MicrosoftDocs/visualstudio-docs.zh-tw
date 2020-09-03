@@ -6,6 +6,6 @@
       tocHref: /visualstudio/
       topicHref: /visualstudio/ide/
       items:
-        - name: 'C#'
+        - name: C#
           tocHref: /visualstudio/csharp/
           topicHref: /visualstudio/get-started/csharp/index

@@ -30,10 +30,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a095cd909dcd4d378fddc91c9151cf28e34a8ee5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852200"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>類別設計工具錯誤的其他相關資訊
@@ -43,9 +43,9 @@ ms.locfileid: "75852200"
 
  您可以在下列資源中找到其他錯誤和警告的協助：
 
- [使用 Visual C++ Code （類別設計工具）](../ide/working-with-visual-cpp-code-class-designer.md)包含在類別圖表中顯示C++的疑難排解資訊。
+ 使用[Visual C++ 程式碼 (類別設計工具) ](../ide/working-with-visual-cpp-code-class-designer.md)包含有關在類別圖中顯示 c + + 的疑難排解資訊。
 
- [Visual Studio 類別設計工具論壇](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1)提供類別設計工具相關問題的論壇。
+ [Visual Studio 類別設計工具論壇](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1) 提供有關類別設計工具問題的論壇。
 
 ## <a name="see-also"></a>另請參閱
  [設計和檢視類別與類型](../ide/designing-and-viewing-classes-and-types.md)
