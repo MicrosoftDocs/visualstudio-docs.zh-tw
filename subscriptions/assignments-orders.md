@@ -8,17 +8,17 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 description: 深入了解系統管理員要追蹤使用者指派及處理訂單的責任。
 ms.openlocfilehash: 200a6d5f83e762bb91451a0d8d7a1871afab4304
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232691"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>追蹤使用者指派和處理訂單
 Visual Studio 訂用帳戶系統管理員應該要根據大量授權合約或 Microsoft 產品和服務合約中所述的時間表，追蹤 Visual Studio 使用量，並處理任何使用量增加而產生的訂單。 新的 Visual Studio 訂用帳戶系統管理入口網站提供可顯示可用和已使用之授權的實用追蹤器，進而簡化了此作業。
 
 ## <a name="maximum-usage"></a>使用量上限
-**貴公司購買 Visual Studio 訂用帳戶的義務，會在下列情況立即生效：**
+**貴公司購買 Visual Studio 訂用帳戶的義務會立即生效：**
 - 已將授權指派給使用者，**或**
 - 使用者會與 Visual Studio 軟體互動。
 
@@ -29,13 +29,13 @@ Visual Studio 訂用帳戶系統管理員應該要根據大量授權合約或 Mi
 - 如果從原始指派以來已經過 90 天，Visual Studio 訂用帳戶系統管理員就可以將某個訂閱者的訂用帳戶重新指派給另一個訂閱者。 
     > [!NOTE]
     > 若要避免虛高的使用量上限層級，請務必要先移除現有的訂用帳戶，再新增新的訂用帳戶。 
-- 為協助您監視組織的最大使用量，Visual Studio 訂用帳戶系統[管理入口網站](https://manage.visualstudio.com)中會出現 [[最高使用量](maximum-usage.md)] 報告。 
+- 為協助您監視組織的最大使用量，Visual Studio 訂用帳戶[管理入口網站](https://manage.visualstudio.com)中會有[最大使用量](maximum-usage.md)報告。 
 
-## <a name="monthly-subscriptions-open-license-or-open-value"></a>每月訂閱、Open License 或開放值
-您可以透過 Open License 和 Open 值之類的程式或每月的 Visual Studio Marketplace 來指派訂閱。 如果是這樣，您必須在使用者 (員工或外部承包商) 開始與 Visual Studio 授權軟體進行互動的當月內處理額外使用者的訂單。
+## <a name="monthly-subscriptions-open-license-or-open-value"></a>每月訂閱、Open License 或開啟值
+您可以透過 Open License 和 Open 值之類的程式指派訂用帳戶，或透過每月的 Visual Studio Marketplace 來指派訂閱。 如果是這樣，您必須在使用者 (員工或外部承包商) 開始與 Visual Studio 授權軟體進行互動的當月內處理額外使用者的訂單。
 
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Enterprise、MPSA 和 Select 合約
-Microsoft Enterprise 合約 (EA)、MPSA 及 Select Plus 合約可讓您隨著時間變化，靈活使用 Visual Studio 軟體並進行授權。 Visual Studio 系統管理員必須提出每年的實際訂單，才能將其軟體授權的最高可達合約期間所建立的使用量上限。
+Microsoft Enterprise 合約 (EA)、MPSA 及 Select Plus 合約可讓您隨著時間變化，靈活使用 Visual Studio 軟體並進行授權。 Visual Studio 系統管理員必須進行年度的訂購單，才能讓其軟體授權達到合約期間所建立的最大使用量。
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)

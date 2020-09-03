@@ -1,5 +1,5 @@
 ---
-title: 如何-顯示和隱藏暫存器群組 |Microsoft Docs
+title: 如何-顯示和隱藏註冊群組 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -20,13 +20,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f08e31f67f9626c15dee0b6b4b8202a0370c976b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349896"
 ---
-# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>如何：顯示和隱藏暫存器群組（c #、c + +、Visual Basic、F #）
+# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>如何：顯示和隱藏暫存器群組 (c #、c + +、Visual Basic、F # ) 
 
 只有在透過 [選項]**** 對話方塊 [一般]**** 分類的 [偵錯]**** 節點啟用位址層級偵錯時，才可以使用 [暫存器]**** 視窗。
 
@@ -35,7 +35,7 @@ ms.locfileid: "85349896"
 > [!NOTE]
 > 您看到的對話方塊與功能表命令，可能會因您所使用的設定或版本，而與說明中所述不同。 若要變更您的設定，請在 [工具]**** 功能表上選擇 [匯入和匯出設定]****。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
 
-## <a name="display-or-hide-register-groups"></a>顯示或隱藏暫存器群組
+## <a name="display-or-hide-register-groups"></a>顯示或隱藏註冊群組
 
 1. 在 [暫存器]**** 視窗上按一下滑鼠右鍵。
 

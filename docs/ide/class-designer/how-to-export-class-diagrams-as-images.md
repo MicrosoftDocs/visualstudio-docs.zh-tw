@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fdecb8834f296d24cbd53d6725b800612f9bcf57
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770146"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>如何：將類別圖表匯出為影像
@@ -25,7 +25,7 @@ ms.locfileid: "85770146"
 
 ## <a name="export-a-diagram"></a>匯出圖表
 
-1. 開啟您的類別圖表（*.cd*）檔案。
+1. 開啟您的類別圖表 (*光碟*) 檔。
 
 2. 從 [類別圖表]**** 功能表或圖表介面捷徑功能表，選擇 [將圖表匯出為影像]****。
 

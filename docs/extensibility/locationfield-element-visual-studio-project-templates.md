@@ -1,5 +1,5 @@
 ---
-title: LocationField 元素（Visual Studio 專案範本） |Microsoft Docs
+title: " (Visual Studio 專案範本的 LocationField 元素) |Microsoft Docs"
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8a5f2f47eef9c3cb047b5550e466585ef70e8f4e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770016"
 ---
-# <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 元素（Visual Studio 專案範本）
-指定是否為專案範本啟用、停用或隱藏 [**新增專案**] 對話方塊中的 [**位置**] 文字方塊。
+# <a name="locationfield-element-visual-studio-project-templates"></a> (Visual Studio 專案範本的 LocationField 元素) 
+指定是否針對專案範本啟用、停用或隱藏 [**新增專案**] 對話方塊中的 [**位置**] 文字方塊。
 
  \<VSTemplate> \<TemplateData>
  \<LocationField>
@@ -43,27 +43,27 @@ ms.locfileid: "85770016"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義它在**新專案**中的顯示方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義它在 **新專案**中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
 
  有效的文字值為：
 
-- `Enabled`，指定已啟用 [**新增專案**] 對話方塊的 [**位置**] 方塊。
+- `Enabled`，指定啟用 [**新增專案**] 對話方塊的 [**位置**] 方塊。
 
 - `Disabled`，指定 [**新增專案**] 對話方塊的 [**位置**] 方塊已停用。
 
 - `Hidden`，指定隱藏 [**新增專案**] 對話方塊的 [**位置**] 方塊。
 
 ## <a name="remarks"></a>備註
- 預設值為 `Enabled`。
+ 預設值是 `Enabled`。
 
- [**新增專案**] 對話方塊中的 [**位置**] 文字方塊，可讓使用者變更儲存新專案的預設目錄。
+ [**新增專案**] 對話方塊中的 [**位置**] 文字方塊可讓使用者變更儲存新專案的預設目錄。
 
- `Location`只有當基礎專案系統支援此元素中指定的值時，這個對話方塊才會接受該值。
+ `Location`只有當基礎專案系統支援時，才會接受元素中指定的值。
 
 ## <a name="example"></a>範例
  下列範例說明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 範本的中繼資料。

@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetCustomViewerCount |Microsoft Docs
+title: IEEVisualizerService：： GetCustomViewerCount |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6a167fc504bb1a6486cf69ed7eb155aac73f9d3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197029"
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個方法會從這項服務，取得類型視覺化檢視可用的數目。  
+這個方法會取得此服務可用的視覺化類型數目。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,13 +40,13 @@ int GetCustomViewerCount(
   
 #### <a name="parameters"></a>參數  
  `pcelt`  
- [out]傳回類型視覺化檢視可用的數目。  
+ 擴展傳回可用的視覺化類型數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)類型視覺化檢視將要求傳遞至其支援這個方法。  
+ [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) 會將要求傳遞給此方法，其支援型別視覺化。  
   
 ## <a name="see-also"></a>另請參閱  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   

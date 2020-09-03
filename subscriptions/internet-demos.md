@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解如何透過終端機服務使用產品金鑰來支援網際網路示範並啟用 RDS 存取
 ms.openlocfilehash: 2d5f23f0d161ee9f50569e0ff7f8ce585c8c49ff
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232433"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>透過終端機服務存取網際網路示範
@@ -36,11 +36,11 @@ Windows Server 2008 R2 提供每種類型各五組金鑰，每組金鑰支援 20
 - 允許使用者連線的產品金鑰必須由 Visual Studio 訂閱者取得。
 
 ## <a name="see-also"></a>另請參閱
-- [Windows 伺服器身份驗證](https://docs.microsoft.com/windows-server/)
-- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
-- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
-- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
+- [Windows Server 檔](https://docs.microsoft.com/windows-server/)
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 檔](https://docs.microsoft.com/azure/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
 如果您需要部署 RDS 的指引，請參閱**遠端桌面服務 (RDS) 2012 工作階段部署** (網址為 https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf) 的多部分部落格系列。 

@@ -23,10 +23,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: befa47e5718d3d2f5d492c49e173b22fc63310e0
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769670"
 ---
 # <a name="install-dotfuscator-community"></a>安裝 Dotfuscator Community
@@ -64,7 +64,7 @@ Dotfuscator Community 是 Visual Studio 的選用元件。
 1. 在 [快速啟動]**** \(Ctrl + Q) 搜尋列中鍵入 `dotfuscator`。 <br/> <br/> ![快速啟動](media/install_from_vs_12.png) <br/> <br/>
 
 2. 在 [快速啟動] 結果顯示畫面的「安裝」** 標題下，選取 [PreEmptive Protection - Dotfuscator (個別元件)]****。
-   * 如果您改為看到，請在*功能表*標題底下，[工具-先占式**保護-Dotfuscator**]，然後 Dotfuscator CE 已安裝。 選取該選項，就可以[開始使用][get-started]。
+   * 如果您看到，請在 [**工具-先占式保護-Dotfuscator**] 下的*功能表*標題底下，Dotfuscator CE 已安裝。 選取該選項，就可以[開始使用][get-started]。
 
 3. 預先設定為安裝 Dotfuscator CE 的 [Visual Studio 安裝程式] 視窗，隨即會啟動。
    > [!NOTE]
@@ -74,7 +74,7 @@ Dotfuscator Community 是 Visual Studio 的選用元件。
 
 ::: moniker-end
 
-安裝完成之後，您就可以[開始使用 Dotfuscator][get-started]的 [社區]。
+安裝完成之後，您就可以 [開始使用 Dotfuscator 社區][get-started]。
 
 ## <a name="during-visual-studio-installation"></a>Visual Studio 安裝期間
 

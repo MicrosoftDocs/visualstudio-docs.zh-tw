@@ -11,10 +11,10 @@ ms.workload:
 - dotnet
 monikerRange: vs-2019
 ms.openlocfilehash: 58d2757fa8798b67c8e597f5f82bc65a279f4a90
-ms.sourcegitcommit: 8ff6c6975148ce43bdac21c8995fbab910c312fe
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80375573"
 ---
 # <a name="move-type-to-namespace"></a>將類型移至命名空間
@@ -23,16 +23,16 @@ ms.locfileid: "80375573"
 
 - C#
 
-**內容：** 將類型移動到命名空間。
+事項 **：** 將類型移至命名空間。
 
-**何時：** 您希望將類型移動到其他命名空間或資料夾。 
+時機 **：** 您想要將類型移到不同的命名空間或資料夾。 
 
-**原因：** 您希望重構解決方案的某些部分，並快速將類型移動到其他命名空間或資料夾。 
+**原因：** 您想要重構解決方案的元件，並快速地將類型移至不同的命名空間或資料夾。 
 
 ## <a name="how-to"></a>操作方式
 
 1. 將游標放在類別名稱中。
-2. 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
+2. 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
 3. 選取 [移至命名空間]****。
 
    ![移至命名空間重構](media/move-to-namespace.png)
@@ -43,4 +43,4 @@ ms.locfileid: "80375573"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Refactoring](../refactoring-in-visual-studio.md)
+- [重構](../refactoring-in-visual-studio.md)

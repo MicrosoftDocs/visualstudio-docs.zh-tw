@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 68665acfcc3ea00f118dc19cf155cb3e6f5d1b36
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769666"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中不使用專案或方案來開發程式碼
@@ -28,7 +28,7 @@ ms.locfileid: "85769666"
 
 您可以透過下列方式在 Visual Studio 中開啟程式碼：
 
-- 在 [Visual Studio] 功能表列上 **，選擇 [** 檔案] [  >  **開啟**  >  **資料夾**]，然後流覽至程式碼位置。
+- 在 [Visual Studio] 功能表列上 **，選擇 [** 檔案  >  **開啟**  >  **資料夾**]，然後流覽至程式碼位置。
 
 - 在包含程式碼之資料夾 (按一下滑鼠右鍵) 的操作功能表上，選擇 [在 Visual Studio 中開啟]**** 命令。
 
@@ -36,7 +36,7 @@ ms.locfileid: "85769666"
 - 在 Visual Studio [起始頁]**** 上，選擇 [開啟資料夾]**** 連結。
 
     > [!IMPORTANT]
-    > 並非所有程式碼都可以使用 [Visual Studio**起始頁**] 中的 [**開啟資料夾**] 連結來開啟。 例如，如果您的程式碼檔案已另存為方案的一部分 &mdash; ，則在 .sln 檔案中， &mdash; 您必須使用此處所列的其中一個其他選項來開啟您的程式碼。
+    > 並非所有程式碼都可以使用 Visual Studio**起始頁**的 [**開啟資料夾**] 連結來開啟。 例如，如果您的程式碼檔案儲存為方案的一部分 &mdash; ，則在 .sln 檔案中， &mdash; 您必須使用此處所列的其中一個其他選項來開啟您的程式碼。
 
 ::: moniker-end
 
@@ -44,11 +44,11 @@ ms.locfileid: "85769666"
 - 在 [開始] 視窗上，選擇 [開啟資料夾]**** 連結。
 
     > [!IMPORTANT]
-    > 並非所有程式碼都可以使用 [Visual Studio 開始] 視窗中的 [**開啟資料夾**] 連結來開啟。 例如，如果您的程式碼檔案已另存為方案的一部分 &mdash; ，則在 .sln 檔案中， &mdash; 您必須使用此處所列的其中一個其他選項來開啟您的程式碼。
+    > 並非所有程式碼都可以使用 Visual Studio 開始視窗中的 [ **開啟資料夾** ] 連結來開啟。 例如，如果您的程式碼檔案儲存為方案的一部分 &mdash; ，則在 .sln 檔案中， &mdash; 您必須使用此處所列的其中一個其他選項來開啟您的程式碼。
 
 ::: moniker-end
 
-- 如果您是鍵盤使用者，請**Ctrl** + 在 Visual Studio 中按 Ctrl**Shift** + **Alt** + **O** 。
+- 如果您是鍵盤使用者，請按**Ctrl** + **Shift** + Visual Studio 中的 Ctrl Shift**Alt** + **O** 。
 
 - 從複製的 GitHub 存放庫開啟程式碼。
 
@@ -62,7 +62,7 @@ ms.locfileid: "85769666"
 
    ![GitHub 複製按鈕](./media/VSIDE_Code_Clone.png)
 
-1. 在 Visual Studio 中，選擇 [Team Explorer]**** 索引標籤以開啟 [Team Explorer]****。 如果您看不到此索引標籤，請從 [ **View**  >  **Team Explorer**開啟]。
+1. 在 Visual Studio 中，選擇 [Team Explorer]**** 索引標籤以開啟 [Team Explorer]****。 如果您沒有看到此索引標籤，請從 [ **View**  >  **Team Explorer**] 開啟它。
 
 1. 在 [Team Explorer] 中的 [本機 Git 儲存機制]**** 區段底下，選擇 [複製]**** 命令，然後將 GitHub 頁面的 URL 貼到文字方塊中。
 
@@ -70,7 +70,7 @@ ms.locfileid: "85769666"
 
 1. 選擇 [複製]**** 按鈕，以將專案的檔案複製到本機 Git 儲存機制。 視儲存機制的大小而定，此程序可能會花費數分鐘的時間。
 
-1. 將存放庫複製到您的系統之後，在**Team Explorer**中，選擇新複製之存放庫的內容（以滑鼠右鍵按一下）功能表上的 [**開啟**] 命令。
+1. 將存放庫複製到您的系統之後，在 **Team Explorer**中，選擇 [ **開啟** ] 命令， (以滑鼠右鍵按一下新複製的存放庫) 功能表。
 
    ![複製的存放庫](./media/VSIDE_Code_Clone3.png)
 

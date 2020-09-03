@@ -17,30 +17,30 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: c14067d58289dd0b41fa526937a0553c10934ea7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349603"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>尋找 ASP.NET 處理序的名稱
 
-若要 debug 執行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 中的應用程式，Visual Studio 偵錯工具必須 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 依名稱附加至進程。
+若要對執行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 中的應用程式進行偵錯工具，Visual Studio 偵錯工具必須 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 依名稱附加至進程。
 
-**若要找出哪個進程正在執行 ASP.NET 應用程式：**
+**若要找出正在執行 ASP.NET 應用程式的進程：**
 
-1. 在執行應用程式的情況下，在 Visual Studio 中選取 [ **Debug**] [  >  **附加至進程**]。
+1. 當應用程式執行時，在 Visual Studio 中，選取 [ **Debug**  >  **附加至進程**]。
 
-1. 在 [**附加至進程**] 對話方塊中，輸入下列清單中處理常式名稱的前幾個字母，或在 [搜尋] 方塊中輸入。 正在執行的是執行 ASP.NET 應用程式的帳戶。 附加至該進程以對應用程式進行 debug。
+1. 在 [ **附加至進程** ] 對話方塊中，從下列清單輸入進程名稱的第一個字母，或在 [搜尋] 方塊中輸入。 正在執行的應用程式是執行 ASP.NET 應用程式的那個。 附加至該進程以進行應用程式的偵錯工具。
 
-    - *w3wp.exe*是 IIS 6.0 和更新版本。
-    - *aspnet_wp.exe*是舊版的 IIS。
-    - *iisexpress.exe*是 IISExpress。
-    - ASP.NET Core *dotnet.exe* 。
-    - *inetinfo.exe*是以同進程方式執行的舊版 ASP 應用程式。
+    - *w3wp.exe* 是 IIS 6.0 和更新版本。
+    - *aspnet_wp.exe* 是較早的 IIS 版本。
+    - *iisexpress.exe* 為 IISExpress。
+    - *dotnet.exe* 是 ASP.NET Core。
+    - *inetinfo.exe* 是執行同進程的較舊 ASP 應用程式。
 
 >[!NOTE]
->Visual Studio 2012 和舊版程式 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 代碼可以位於檔案系統上，並在測試伺服器*WebDev.WebServer.exe*或*WebDev.WebServer40.exe*上執行。 在此情況下，若要進行本機的調試，請附加至*WebDev.WebServer.exe*或*WebDev.WebServer40.exe* ，而不是 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 進程。
+>Visual Studio 2012 和先前的程式 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 代碼可位於檔案系統上，並在測試伺服器上執行 *WebDev.WebServer.exe* 或 *WebDev.WebServer40.exe*。 在此情況下，若要進行本機調試，請附加至 *WebDev.WebServer.exe* 或 *WebDev.WebServer40.exe* ，而不是 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 處理常式。
 
 **另請參閱：**
 

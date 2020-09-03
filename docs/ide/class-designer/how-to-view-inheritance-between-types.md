@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d5c35279421ad17e62afe707d62dbc879d03b384
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769899"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>如何：在類別設計工具中檢視類型之間的繼承
 
-您可以在 [類別設計工具]**** 中，尋找類別圖表上基底類型及其衍生類型之間的繼承關聯性 (如果存在的話)。 若要建立繼承關聯性，如果兩個類型之間不存在，請參閱[如何：建立類型之間的繼承](how-to-create-inheritance-between-types.md)。
+您可以在 [類別設計工具]**** 中，尋找類別圖表上基底類型及其衍生類型之間的繼承關聯性 (如果存在的話)。 若要建立繼承關聯性，如果不存在，請在兩個型別之間參閱 [如何：建立類型之間的繼承](how-to-create-inheritance-between-types.md)。
 
 ## <a name="to-find-the-base-type"></a>尋找基底類型
 

@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8930bba76830a6116c3182f3fb2936cd4f1a3e47
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657601"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>使用異動連結 UML 模型更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-當您在 Visual Studio 中定義 UML 設計工具的擴充功能時，您可以將數個變更組成單一交易，稱為*連結的復原內容*。 若要查看哪些 Visual Studio 版本支援 UML 模型，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+當您在 Visual Studio 中定義 UML 設計工具的延伸模組時，您可以將數個變更群組為單一交易，稱為 *連結的復原內容*。 若要查看哪些 Visual Studio 版本支援 UML 模型，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
  根據預設，您對模型進行的每項修改都可以由使用者分別復原。 例如，如果您定義功能表命令，其交換兩個 UML 類別的名稱，則使用者可以叫用該命令，然後執行單一復原。 這樣會復原對一個名稱的變更，而不會復原其他名稱的變更，從而使模型處於非預期的狀態。
 
@@ -32,7 +32,7 @@ ms.locfileid: "72657601"
 ## <a name="to-group-changes-into-a-single-transaction"></a>將變更群組為單一異動
  請確保您的專案參考包含這個 .NET 組件：
 
- **VisualStudio. 模型化 Sdk。[version] .dll**
+ **VisualStudio. 模型. Sdk。[version] .dll**
 
  請在您的類別中宣告具有 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoContext> 類型的已匯入屬性：
 
@@ -60,7 +60,7 @@ ms.locfileid: "72657601"
 
  `}`
 
- 請注意以下各點：
+ 請注意：
 
 - 您必須一律將 `Commit()` 包含於此異動的結尾。 如果在沒有得到認可的情況下處置異動，則會復原該異動。 也就是說，該模型會還原至此異動開始時的狀態。
 
@@ -108,5 +108,5 @@ ms.locfileid: "72657601"
  }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)[擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)

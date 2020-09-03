@@ -21,17 +21,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ac5bee0ffa05aa275782c57fc9b7b1c369bf65d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349402"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在使用者帳戶下執行背景工作處理序
 若要設定電腦以便在某個使用者帳戶下執行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序 (aspnet_wp.exe 或 w3wp.exe)，請依照下列步驟執行。
 
  > [!IMPORTANT]
- > 從 Windows Server 2008 R2 開始，我們建議使用[ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities)做為每個應用程式集區的身分識別。
+ > 從 Windows Server 2008 R2 開始，建議使用 [>applicationpoolidentity](/iis/manage/configuring-security/application-pool-identities) 作為每個應用程式集區的身分識別。
 
 ## <a name="procedure"></a>程序
 
@@ -72,7 +72,7 @@ ms.locfileid: "85349402"
 
 7. 在 [ **暫存 ASP.NET 檔案屬性** ] 對話方塊內，按一下 [ **安全性** ] 索引標籤。
 
-8. 按一下 [進階]****。
+8. 按一下 **[進階]** 。
 
 9. 在 [ **暫存 ASP.NET 檔案的進階安全性設定** ] 對話方塊中，按一下 [ **加入**]。
 
@@ -82,10 +82,10 @@ ms.locfileid: "85349402"
 
 11. 在 [ **暫存 ASP.NET 檔的使用權限項目** ] 對話方塊中，授與使用者 [ **完全控制**]，然後按一下 [ **確定** ] 來關閉 [ **暫存 ASP.NET 檔案的項目** ] 對話方塊。
 
-12. [ **安全性** ] 對話方塊隨即出現，詢問您是否真的想要變更系統資料夾的使用權限。 按一下 [是] 。
+12. [ **安全性** ] 對話方塊隨即出現，詢問您是否真的想要變更系統資料夾的使用權限。 按一下 [是]  。
 
 13. 按一下 [ **確定** ] 以關閉此 [ **暫存 ASP.NET 檔案屬性** ] 對話方塊。
 
 ## <a name="see-also"></a>另請參閱
-- [Debug ASP.NET 應用程式](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [ASP.NET 的調試：系統需求](../debugger/aspnet-debugging-system-requirements.md)
+- [ASP.NET 應用程式的偵錯工具](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+- [ASP.NET 調試：系統需求](../debugger/aspnet-debugging-system-requirements.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffd0f7378893b52e93480272c73acc2aa413320d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533715"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>針對「開啟資料夾」自訂建置及對工作進行偵錯
@@ -46,11 +46,11 @@ Visual Studio 知道如何執行許多不同的語言和程式碼基底，但它
 
 這會建立 (或開啟) *.vs* 資料夾中的 *tasks.vs.json* 檔案。 您可以在此檔案中定義組建工作或任意工作，然後使用您從 [方案總管]**** 右鍵功能表中給予它的名稱來叫用它。
 
-您可以將自訂工作新增到個別檔案中，也可以新增到特定類型的所有檔案中。 例如，您可以將 NuGet 套件檔案設定為具有「還原套件」工作，或是將所有原始程式檔設定為具有靜態分析工作（例如所有 *.js*檔案的 linter）。
+您可以將自訂工作新增到個別檔案中，也可以新增到特定類型的所有檔案中。 比方說，您可以將 NuGet 套件檔案設定為具有「還原套件」工作，或是將所有原始程式檔設定為具有靜態分析工作，例如所有 *.js* 檔案的 linter。
 
 ### <a name="define-custom-build-tasks"></a>定義自訂建置工作
 
-如果您的程式碼基底使用 Visual Studio 無法辨識的自訂組建工具，則在您完成一些設定步驟前，將無法在 Visual Studio 中執行程式碼並對它進行偵錯。 Visual Studio 有提供*建置工作*，可讓您告訴 Visual Studio 建置、重新建置及清除您程式碼的方式。 組建工作檔案*上的tasks.vs.js*會將 Visual Studio 內部開發迴圈耦合至程式碼基底所使用的自訂群組建工具。
+如果您的程式碼基底使用 Visual Studio 無法辨識的自訂組建工具，則在您完成一些設定步驟前，將無法在 Visual Studio 中執行程式碼並對它進行偵錯。 Visual Studio 有提供*建置工作*，可讓您告訴 Visual Studio 建置、重新建置及清除您程式碼的方式。 組建工作檔案 * 上的tasks.vs.js* 會將 Visual Studio 內部開發迴圈與您程式碼基底所使用的自訂群組建工具結合在一起。
 
 我們以包含名為 *hello.cs* 之單一 C# 檔案的程式碼基底為例。 這類程式碼基底的 Makefile** 看起來可能會像這樣：
 
@@ -130,7 +130,7 @@ bin:
 
 您可以在 *tasks.vs.json* 檔案中定義任意工作，以執行幾乎任何您想要的動作。 例如，您可以定義工作以顯示目前在 [輸出]**** 視窗中已選取之檔案的名稱，或是列出指定目錄中的檔案。
 
-下列範例會顯示定義單一工作之檔案的*tasks.vs.js* 。 叫用該工作時，它會顯示目前已選取之 *.js* 檔案的檔案名稱。
+下列範例顯示定義單一工作的檔案 *tasks.vs.js* 。 叫用該工作時，它會顯示目前已選取之 *.js* 檔案的檔案名稱。
 
 ```json
 {
@@ -201,7 +201,7 @@ bin:
 
 您可以在 `appliesTo` 欄位中指定任何檔案或資料夾的名稱來針對它們建立工作，例如 `"appliesTo": "hello.js"`。 下列檔案遮罩可作為值使用：
 
-|檔案遮罩|描述|
+|檔案遮罩|說明|
 |-|-|
 |`"*"`| 工作可供工作區中的所有檔案及資料夾使用|
 |`"*/"`| 工作可供工作區中的所有資料夾使用|
@@ -213,19 +213,19 @@ bin:
 
 #### <a name="macros-for-tasksvsjson"></a>適用於 tasks.vs.json 的巨集
 
-|巨集|描述|
+|巨集|說明|
 |-|-|
 |`${env.<VARIABLE>}`| 指定針對開發人員命令提示字元所設定的任何環境變數 (例如 ${env.PATH}、${env.COMSPEC} 等)。 如需詳細資訊，請參閱[適用於 Visual Studio 的開發人員命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs)。|
 |`${workspaceRoot}`| 工作區資料夾的完整路徑 (例如 C:\sources\hello**)|
 |`${file}`| 選取來執行此工作之檔案或資料夾的完整路徑 (例如 C:\sources\hello\src\hello.js**)|
 |`${relativeFile}`| 檔案或資料夾的相對路徑 (例如 src\hello.js**)|
 |`${fileBasename}`| 沒有路徑或副檔名的檔案名稱 (例如 hello**)|
-|`${fileDirname}`| 檔案的完整路徑，檔案名除外（例如， *C:\sources\hello\src*）|
+|`${fileDirname}`| 檔案的完整路徑，檔案名 (（例如， *C:\sources\hello\src*) |
 |`${fileExtname}`| 所選取檔案的副檔名 (例如 .js**)|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>搭配 launch.vs.json 設定偵錯
 
-若要設定 CMake 專案以進行調試，請參閱[設定 CMake 的調試](/cpp/build/configure-cmake-debugging-sessions)程式。
+若要設定 CMake 專案以進行偵錯工具，請參閱 [設定 CMake 調試](/cpp/build/configure-cmake-debugging-sessions)程式。
 
 1. 若要針對偵錯設定您的程式碼基底，請在 [方案總管]**** 中，從可執行檔的右鍵功能表或操作功能表選擇 [偵錯並啟動設定]**** 功能表項目。
 
@@ -260,7 +260,7 @@ bin:
    當您選擇 **F5** 時，偵錯工具會啟動，並於您可能已經設定的所有中斷點上停止。 所有您熟悉的偵錯工具視窗都會可供使用並運作。
 
    > [!IMPORTANT]
-   > 如需 c + + 開啟資料夾專案中自訂群組建和偵錯工具工作的其他詳細資料，請參閱[Visual Studio 中的 c + + 組建系統的開啟資料夾支援](/cpp/build/open-folder-projects-cpp)。
+   > 如需 c + + 開啟資料夾專案中自訂群組建和偵錯工具工作的其他詳細資料，請參閱 [Visual Studio 中的 c + + 組建系統的開啟資料夾支援](/cpp/build/open-folder-projects-cpp)。
 
 ### <a name="specify-arguments-for-debugging"></a>指定偵錯的引數
 

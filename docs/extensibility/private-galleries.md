@@ -1,5 +1,5 @@
 ---
-title: 私人畫廊 |微軟文件
+title: 私用資源庫 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,42 +12,42 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81444644"
 ---
-# <a name="private-galleries"></a>私人畫廊
-以將控制項、樣本和工具發布到組織 Intranet 上的*專用函式庫*,可以共用這些控制項、樣本和工具,如下所示:
+# <a name="private-galleries"></a>私用資源庫
+您可以藉由將控制項、範本和工具張貼到組織內部網路上的私用資源 *庫* ，來共用您所開發的控制項、範本和工具，如下所示：
 
-- 創建 Atom (RSS) 源,以連接到 Intranet 上配置適當的中央位置(儲存庫)。 有關詳細資訊,請參閱[如何:為專用庫創建 Atom 源](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)。
+- 建立 Atom (RSS) 摘要至您內部網路上 (存放庫) 適當設定的中央位置。 如需詳細資訊，請參閱 [如何：建立私用資源庫的 Atom](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)摘要。
 
-- 分發描述私有庫的 *.pkgdef*檔。 我們建議對希望同時將專用庫連接到多台計算機的管理員進行此配置。
+- 散發描述私用資源庫的 *.pkgdef* 檔案。 如果系統管理員想要同時將私人資源庫連線到多部電腦，建議使用此設定。
 
-## <a name="add-a-private-gallery-to-extensions-and-updates-in-visual-studio"></a>將專用函式庫加入視覺化工作室中的擴充與更新
- 當專用函式庫可用時,您可以將新增到 Visual Studio 中**延伸與更新**。
+## <a name="add-a-private-gallery-to-extensions-and-updates-in-visual-studio"></a>在 Visual Studio 中將私人資源庫新增至擴充功能和更新
+ 當私人資源庫可供使用時，您可以將它新增至 Visual Studio 中的 **擴充功能和更新** 。
 
  ![[擴充管理員] 的 [新增] 對話方塊](../extensibility/media/em_adddialog.png "EM_AddDialog")
 
-### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>新增專用函式庫加入到延伸
+### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>將私用資源庫新增至擴充功能和更新
 
-1. 在選單欄上,選擇 **「工具** > **選項**」。
+1. 在功能表列上，選擇 [**工具**  >  **選項**]。
 
-2. 在 **"環境'** 節點中,選擇 **"擴展"和"更新**"。
+2. 在 [ **環境** ] 節點中，選取 [ **擴充功能和更新**]。
 
-3. 選擇 [加入]**** 按鈕。
+3. 選擇 [新增] 按鈕。
 
-4. 在 **「名稱」** 欄位中,輸入專用庫的名稱,`My Gallery`例如。
+4. 在 [ **名稱** ] 欄位中，輸入私用資源庫的名稱，例如 `My Gallery` 。
 
-5. 在**URL**欄位中,輸入託管專用庫的 Atom 源或 SharePoint 網站的 URL。
+5. 在 [ **URL** ] 欄位中，輸入裝載私用資源庫之 Atom 摘要或 SharePoint 網站的 url。
 
-    1. 如果主機是連線到專用函式庫的 Atom 源,則網址將`http://www.mywebsite/mygallery/atom.xml`類似於此網址: 。  此網址可以引用檔案或網路路徑。
+    1. 如果主機是連接至私用資源庫的 Atom 摘要，則 URL 會類似下列內容： `http://www.mywebsite/mygallery/atom.xml` 。  這個 URL 可以參考檔案或網路路徑。
 
-    2. 如果主機是 SharePoint 站點,則網址將`http://mysharepoint/sites/mygallery/forms/AllItems.aspx`類似於此 網站: 。
+    2. 如果主機是 SharePoint 網站，則 URL 會類似下列內容： `http://mysharepoint/sites/mygallery/forms/AllItems.aspx` 。
 
-### <a name="manage-private-galleries"></a>管理私人畫廊
- 管理員可以通過修改每台電腦上的系統註冊表,同時使專用庫可供多台電腦使用。 為此,請創建一個 *.pkgdef*檔,描述新的註冊表項及其值。  此檔的格式如下。
+### <a name="manage-private-galleries"></a>管理私用資源庫
+ 系統管理員可以藉由在每部電腦上修改系統登錄，讓多部電腦都能使用私用資源庫。 若要完成此動作，請建立 *.pkgdef* 檔案，以描述新的登錄機碼及其值。  此檔案的格式如下所示。
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
@@ -61,34 +61,34 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
- 有關詳細資訊,請參閱[操作方式:使用註冊表設置管理專用庫](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md)。
+ 如需詳細資訊，請參閱 [如何：使用登錄設定管理私用圖庫](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md)。
 
-## <a name="install-extensions-from-a-private-gallery"></a>從專用函式庫安裝擴充
- 您可以在**擴充和更新**中從專用庫搜索和安裝 Visual Studio 擴充。 以下步驟使用名為`My Gallery`的 私有庫。
+## <a name="install-extensions-from-a-private-gallery"></a>從私用資源庫安裝擴充功能
+ 您可以在 [ **擴充功能和更新**] 中，從私用庫搜尋並安裝 Visual Studio 延伸模組。 下列步驟會使用名為的私用資源庫 `My Gallery` 。
 
  ![安裝私人組件庫的 [擴充管理員]](../extensibility/media/em_.png "EM_")
 
-### <a name="to-search-for-and-install-extensions-from-a-private-gallery"></a>從專用函式庫搜尋並安裝擴充
+### <a name="to-search-for-and-install-extensions-from-a-private-gallery"></a>從私用元件庫搜尋及安裝延伸模組
 
-1. 在選單列上,選擇 **「工具** > **擴展」和「更新**」。
+1. 在功能表列上，選擇 [**工具**  >  **擴充功能和更新**]。
 
-2. 在左側窗格中,選擇 **「連線擴展**」,然後選擇 **「我的庫**」。
+2. 在左窗格中，選取 [ **線上擴充**功能]，然後選取 [我的資源 **庫**]。
 
-3. 在右邊窗格中,選擇副檔名,然後選擇「**下載**」按鈕。
+3. 選取右窗格中的延伸模組，然後選擇 [ **下載** ] 按鈕。
 
-## <a name="update-extensions-from-a-private-gallery"></a>從專用函式庫更新延伸
- 當 Visual Studio 擴充的新版本發布到專用庫中時,您可以更新已安裝的擴展。 以下步驟使用名為`My Repository`的 私有庫。
+## <a name="update-extensions-from-a-private-gallery"></a>更新私人資源庫中的延伸模組
+ 當私人資源庫中張貼新版本的 Visual Studio 延伸模組時，您可以更新已安裝的擴充功能。 下列步驟會使用名為的私用資源庫 `My Repository` 。
 
  ![[擴充管理員] 更新私人組件庫](../extensibility/media/em_update.png "EM_Update")
 
-### <a name="to-update-an-installed-extension-from-a-private-gallery"></a>從專用函式庫更新已安裝的延伸
+### <a name="to-update-an-installed-extension-from-a-private-gallery"></a>從私用資源庫更新已安裝的擴充功能
 
-1. 在選單列上,選擇 **「工具** > **擴展」和「更新**」。
+1. 在功能表列上，選擇 [**工具**  >  **擴充功能和更新**]。
 
-2. 在左側窗格中,選擇 **「更新**」,然後選擇 **「我的存儲庫**」 。。
+2. 在左窗格中，選取 [ **更新**]，然後選取 [我的存放 **庫**]。
 
-3. 在右邊窗格中,選擇副檔名,然後選擇 **「更新**」按鈕。
+3. 選取右窗格中的擴充功能，然後選擇 [ **更新** ] 按鈕。
 
 ## <a name="see-also"></a>另請參閱
 - [尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)
-- [船舶視覺工作室擴展](../extensibility/shipping-visual-studio-extensions.md)
+- [寄送 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)

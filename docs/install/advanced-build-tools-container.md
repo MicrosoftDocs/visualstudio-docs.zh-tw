@@ -12,10 +12,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 92d0e984d4ccf595af2821dff9c02d069b16404d
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80273838"
 ---
 # <a name="advanced-example-for-containers"></a>容器的進階範例
@@ -174,7 +174,7 @@ docker build -t buildtools2019:16.0.28714.193 -t buildtools2019:latest -m 2GB .
 選擇性地使用 `--build-arg` 命令列參數傳遞 `FROM_IMAGE` 或 `CHANNEL_URL` 引數中的任一者或兩者都傳遞，以指定不同的基底映像或內部配置的位置，以維護固定的映像。
 
    > [!TIP]
-   > 有關工作負載和元件的清單，請參閱[視覺化工作室構建工具元件目錄](workload-component-id-vs-build-tools.md)。
+   > 如需工作負載和元件的清單，請參閱 [Visual Studio Build Tools 元件目錄](workload-component-id-vs-build-tools.md)。
    >
 
 ## <a name="diagnosing-install-failures"></a>診斷安裝失敗
@@ -219,6 +219,6 @@ The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' return
 
 ## <a name="see-also"></a>另請參閱
 
-* [將生成工具安裝到容器中](build-tools-container.md)
+* [將建置工具安裝至容器](build-tools-container.md)
 * [容器的已知問題](build-tools-container-issues.md)
 * [Visual Studio Build Tools 工作負載和元件識別碼](workload-component-id-vs-build-tools.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4e8e4665790aa228bb30aac05ea4782cfe4a62f1
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770172"
 ---
 # <a name="how-to-customize-class-diagrams"></a>如何：自訂類別圖表
@@ -29,13 +29,13 @@ ms.locfileid: "85770172"
 > [!NOTE]
 > 自訂圖形出現在圖表中的方式不會改變圖表呈現類型的基礎程式碼。
 
-包含類型成員的區段（例如類別中的**Properties**區段）稱為區間。 您可以隱藏或顯示個別區間和類型成員。
+包含類型成員的區段（例如類別中的 **Properties** 區段）稱為區間。 您可以隱藏或顯示個別區間和類型成員。
 
 ## <a name="zoom-in-and-out-of-the-class-diagram"></a>放大或縮小類別圖
 
-1. 在**類別設計工具**中，開啟並選取類別圖表檔案。
+1. 在 **類別設計工具**中，開啟並選取類別圖表檔案。
 
-2. 在 [**類別設計工具**] 工具列上，按一下 [**放大**] 或 [**縮小**] 按鈕，以變更設計工具介面的縮放層級。
+2. 在 [ **類別設計工具** ] 工具列上，按一下 [ **放大** ] 或 [ **縮小** ] 按鈕，以變更設計工具介面的縮放層級。
 
      或
 
@@ -46,7 +46,7 @@ ms.locfileid: "85770172"
 
 ## <a name="customize-grouping-and-sorting-of-type-members"></a>自訂類型成員的群組和排序方式
 
-1. 在**類別設計工具**中，開啟並選取類別圖表檔案。
+1. 在 **類別設計工具**中，開啟並選取類別圖表檔案。
 
 2. 以滑鼠右鍵按一下設計介面的空白區域，再指向 [群組成員]****。
 
@@ -60,7 +60,7 @@ ms.locfileid: "85770172"
 
 ## <a name="hide-compartments-on-a-type"></a>隱藏類型上的區間
 
-1. 在 [**類別設計工具**中開啟並選取類別圖表檔案。
+1. 在 **類別設計工具**中，開啟並選取類別圖表檔案。
 
 2. 以滑鼠右鍵按一下類型中要自訂的成員分類 (例如，選取類別中的 [方法]**** 節點)。
 
@@ -70,7 +70,7 @@ ms.locfileid: "85770172"
 
 ## <a name="hide-individual-members-on-a-type"></a>隱藏類型上的個別成員
 
-1. 在**類別設計工具**中，開啟並選取類別圖表檔案。
+1. 在 **類別設計工具**中，開啟並選取類別圖表檔案。
 
 2. 以滑鼠右鍵按一下您要隱藏的類型成員。
 
@@ -80,7 +80,7 @@ ms.locfileid: "85770172"
 
 ## <a name="show-hidden-compartments-and-members-on-a-type"></a>在類型上顯示隱藏的區間和成員
 
-1. 在**類別設計工具**中，開啟並選取類別圖表檔案。
+1. 在 **類別設計工具**中，開啟並選取類別圖表檔案。
 
 2. 以滑鼠右鍵按一下含有隱藏區間的類型名稱。
 
@@ -90,7 +90,7 @@ ms.locfileid: "85770172"
 
 ## <a name="hide-relationships"></a>隱藏關聯性
 
-1. 在**類別設計工具**中，開啟並選取類別圖表檔案。
+1. 在 **類別設計工具**中，開啟並選取類別圖表檔案。
 
 2. 以滑鼠右鍵按一下您要隱藏的關聯線或繼承線。
 
@@ -102,7 +102,7 @@ ms.locfileid: "85770172"
 
 ## <a name="show-hidden-relationships"></a>顯示隱藏的關聯性
 
-1. 在**類別設計工具**中，開啟並選取類別圖表檔案。
+1. 在 **類別設計工具**中，開啟並選取類別圖表檔案。
 
 2. 以滑鼠右鍵按一下含有關聯線或繼承線的類型。
 

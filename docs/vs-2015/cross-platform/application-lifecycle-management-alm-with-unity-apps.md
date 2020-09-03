@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 90efd4e72ea172822e0bcc424bdbbc4bc7589098
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80233283"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>應用程式生命週期管理 (ALM) (含 Unity 應用程式)
@@ -93,7 +93,7 @@ ms.locfileid: "80233283"
 |測試管理員 (錄製和播放測試)|僅限 Windows 裝置及 Android 模擬器||  
 |程式碼涵蓋範圍|n/a|不適用，因為是在 Unity 內進行單元測試，而非 Visual Studio 內，請見下文。|  
 |[對程式碼進行單元測試](../test/unit-test-your-code.md)|在 Unity 內，而非 Visual Studio 內|Unity 提供專屬單元測試架構做為 [Unity 測試工具 (英文)](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (Unity Asset Store) 的一部分。 單元測試結果會在 Unity 內報告，但不會顯示在 Visual Studio 內。|  
-|[使用 UI 自動化測試代碼](../test/use-ui-automation-to-test-your-code.md)|否|自動程式化 UI 測試會依賴應用程式 UI 中的可讀取控制項；Unity 應用程式在本質上是圖形，因此，自動程式化 UI 測試工具無法讀取內容。|  
+|[使用消費者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)|否|自動程式化 UI 測試會依賴應用程式 UI 中的可讀取控制項；Unity 應用程式在本質上是圖形，因此，自動程式化 UI 測試工具無法讀取內容。|  
   
 ## <a name="improve-code-quality"></a>改善程式碼品質  
  參考連結︰**[改善程式碼品質](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
@@ -113,7 +113,7 @@ ms.locfileid: "80233283"
 |-------------|--------------------------|-------------------------|  
 |管理發行處理序|是||  
 |部署至伺服器以便透過指令碼進行側面載入|是||  
-|上傳至應用程式存放區|部分|您可以針對某些應用程式存放區，使用擴充功能來自動化此程序。  請參閱[適用於 Visual Studio Team Services 的擴充功能 (英文)](https://marketplace.visualstudio.com/VSTS)；例如[適用於 Google Play 的擴充功能 (英文)](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play)。|  
+|上傳至應用程式存放區|Partial|您可以針對某些應用程式存放區，使用擴充功能來自動化此程序。  請參閱[適用於 Visual Studio Team Services 的擴充功能 (英文)](https://marketplace.visualstudio.com/VSTS)；例如[適用於 Google Play 的擴充功能 (英文)](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play)。|  
   
 ## <a name="monitor-with-hockeyapp"></a>使用 HockeyApp 監視  
  參考連結︰**[使用 HockeyApp 監視 (英文)](https://www.hockeyapp.net/features/)**  

@@ -1,5 +1,5 @@
 ---
-title: 如何在記憶體中向上或向下翻頁 |Microsoft Docs
+title: 如何-在記憶體中向上或向下翻頁 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 79216ba29047101c9b9d2c6618cae013640542b8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349415"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>如何：在記憶體中向上或向下翻頁

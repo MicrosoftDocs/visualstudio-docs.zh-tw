@@ -1,5 +1,5 @@
 ---
-title: 嚮導擴展元素(可視化工作室範本) |微軟文件
+title: " (Visual Studio 範本的 WizardExtension 元素) |Microsoft Docs"
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fd81b32861114d654aa794b992826589406b1df9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740382"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension 項目 (Visual Studio 範本)
-包含用於自定義範本嚮導的註冊元素。
+包含用於自訂範本 wizard 的註冊專案。
 
- \<VSTemplate> ...\<精靈延伸>
+ \<VSTemplate> ... \<WizardExtension>
 
 ## <a name="syntax"></a>語法
 
@@ -43,22 +43,22 @@ ms.locfileid: "80740382"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[裝配](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|必要元素。<br /><br /> 指定出現在全域程式集緩存中的程式集的名稱或強名稱。 元素中必須至少有一`Assembly`個`WizardExtension`元素。|
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|必要元素。<br /><br /> 實現`IWizard`介面的類的完全限定名稱。 元素中必須至少有一`FullClassName`個`WizardExtension`元素。|
+|[裝配](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|必要元素。<br /><br /> 指定出現在全域組件快取中之元件的名稱或強式名稱。 元素中必須至少有一個 `Assembly` 元素 `WizardExtension` 。|
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|必要元素。<br /><br /> 實介面之類別的完整名稱 `IWizard` 。 元素中必須至少有一個 `FullClassName` 元素 `WizardExtension` 。|
 
 ### <a name="parent-elements"></a>父項目
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|包含專案範本、專案範本或初學者工具組的所有元資料。|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|包含專案範本、專案範本或入門套件的所有中繼資料。|
 
 ## <a name="remarks"></a>備註
  `WizardExtension` 是 `VSTemplate` 的選擇性子項目。
 
 ## <a name="example"></a>範例
- 下面的範例展示[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 應用程式的標準項目樣本的中繼資料。
+ 下列範例說明適用于 Windows 應用程式的標準專案範本中繼資料 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"

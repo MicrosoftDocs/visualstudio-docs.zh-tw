@@ -1,5 +1,5 @@
 ---
-title: 如何-尋找程式損毀所在的 DLL |Microsoft Docs
+title: 如何-找出程式損毀的 DLL |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -23,13 +23,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 155fd74dc6e01f88bf04fe21b77ebdae6b04437f
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349532"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>如何：尋找程式損毀的 DLL （c #、c + +、Visual Basic、F #）
+# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>如何：找出您的程式在 (c #、c + +、Visual Basic、F # ) 中損毀的 DLL
 
  如果您的應用程式在呼叫系統 DLL 或其他程式碼時損毀，您就必須找出發生損毀時作用中的 DLL。 如果您遇到的損毀是由程式以外的 DLL 所致，您可以使用 [模組]**** 視窗來辨識其位置。
 
@@ -37,7 +37,7 @@ ms.locfileid: "85349532"
 
 1. 記下發生毀損的位址。
 
-    如果錯誤訊息中未顯示位址，您可能需要使用替代方法來識別 DLL。 如果您懷疑系統 DLL，您可以在進行調試時，從 Microsoft 符號伺服器[載入符號](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。 否則，您可能需要改為[建立](../debugger/using-dump-files.md)含有堆積資訊的傾印檔案。 有各種[工具](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/)可用來建立傾印檔案。
+    如果錯誤訊息中沒有顯示位址，您可能需要使用替代方法來識別 DLL。 如果您懷疑系統 DLL，您可以在調試時從 Microsoft 符號伺服器 [載入符號](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) 。 否則，您可能需要改為 [建立](../debugger/using-dump-files.md) 包含堆積資訊的傾印檔案。 您可以使用各種 [工具](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) 來建立傾印檔案。
 
 2. 在 [偵錯]**** 功能表上選擇 [Windows]****，然後按一下 [模組]****。
 

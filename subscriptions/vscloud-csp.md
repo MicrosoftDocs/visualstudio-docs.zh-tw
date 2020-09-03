@@ -8,10 +8,10 @@ ms.date: 03/24/2020
 ms.topic: conceptual
 description: 如何為您的客戶購買和管理 Visual Studio 雲端訂用帳戶的雲端解決方案提供者資訊。
 ms.openlocfilehash: 76c56759fdc07104290c45d1c4fc345bf0bad8b7
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80273864"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>為您的客戶購買及管理 Visual Studio 雲端訂閱
@@ -20,9 +20,9 @@ ms.locfileid: "80273864"
 [比較雲端訂閱選項](https://visualstudio.microsoft.com/vs/pricing)
 
 > [!NOTE]
-> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新客戶前往[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)探索購買 Visual Studio 的不同選項。
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶移至，以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索購買 Visual Studio 的不同選項。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 您必須先在合作夥伴中心設定您的客戶租用戶，為此租用戶建立 Azure 訂用帳戶。
 
 [深入了解](/azure/devops/organizations/billing/csp/set-up-csp-customer)
@@ -37,7 +37,7 @@ ms.locfileid: "80273864"
 0. 選擇 [服務管理]****。
 0. 選擇 [Visual Studio Marketplace]****。
 0. 確定您的客戶名稱出現在右上角。
-0. 選擇**訂閱**。
+0. 選擇 [ **訂閱**]。
 0. 選擇 Visual Studio Enterprise 或 Professional。
 0. 選擇 [購買]****。
 0. 選擇以 Azure 訂用帳戶支付。
@@ -69,9 +69,9 @@ ms.locfileid: "80273864"
 
 以下是您所見此試算表內容的解讀方法：
 
-| 計量類別    |   名稱                 |  單位                                |           說明                          |
+| 計量類別    |   Name                 |  單位                                |           說明                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
-| Visual Studio     | Enterprise             |  訂用帳戶                         | Visual Studio Enterprise 月租方案   |
+| Visual Studio     | 企業             |  訂用帳戶                         | Visual Studio Enterprise 月租方案   |
 | Visual Studio     | Professional           |  訂用帳戶                         | Visual Studio Professional 月租方案 |
 
 我們為您購買的每個 Visual Studio 訂閱，每月從第 6 個單位起提供 5% 折扣 (適用於特定客戶)。 這就是每個訂閱選項您會看到兩列資料列的原因。 一個資料列顯示「最小值」為 0，這個應該解讀為 1 至 5 個單位的基本價格。 另一個資料列顯示「最小值」為 5，這是適用於從 6 個單位起的 5% 折扣價格。
@@ -107,10 +107,10 @@ ms.locfileid: "80273864"
  答：目前沒有。 您的客戶可以充分利用 [Azure 開發/測試定價](https://azure.microsoft.com/pricing/dev-test/)，但我們並沒有任何針對 CSP 的特殊優惠。
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
-- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
-- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 檔](https://docs.microsoft.com/azure/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
-有關常見計費問題的答案，請參閱[雲計費常見問題解答](vscloud-billing-faq.md)。  
+如需常見帳單問題的解答，請參閱 [雲端帳單常見問題](vscloud-billing-faq.md) 。  

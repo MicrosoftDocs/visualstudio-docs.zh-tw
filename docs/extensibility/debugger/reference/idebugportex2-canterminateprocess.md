@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::可終止流程 |微軟文件
+title: IDebugPortEx2：： CanTerminateProcess |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bbc5c5128c1235c7ee46300a1cd45f92b53d243d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725154"
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
-確定是否可以終止進程。
+判斷是否可以終止進程。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ HRESULT CanTerminateProcess( 
 
 ## <a name="parameters"></a>參數
 `pPortProcess`\
-[在]表示要終止的進程的[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件。
+在代表要終止之進程的 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果`S_OK`進程可以終止,則返回;否則,傳`S_FALSE`回 。
+ `S_OK`如果可以終止進程，則傳回，否則傳回 `S_FALSE` 。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

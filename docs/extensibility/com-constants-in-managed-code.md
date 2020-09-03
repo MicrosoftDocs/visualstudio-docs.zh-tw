@@ -1,5 +1,5 @@
 ---
-title: 託管代碼中的 COM 常量 :微軟文件
+title: Managed 程式碼中的 COM 常數 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 919d000e44b90e975543f8aa6419968a40149adf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739836"
 ---
-# <a name="com-constants-in-managed-code"></a>託管代碼中的 COM 常量
-託管套件框架 (MPF) 使一些標準 COM 常量可用於託管代碼。 下面列出了這些常量,供參考。
+# <a name="com-constants-in-managed-code"></a>Managed 程式碼中的 COM 常數
+Managed Package Framework (MPF) 會讓 managed 程式碼可以使用一些標準的 COM 常數。 以下列出這些常數以供您參考。
 
-## <a name="boolean-hresult-values"></a>布林 HRESULT 值
+## <a name="boolean-hresult-values"></a>布林值 HRESULT 值
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>
 
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>
@@ -89,7 +89,7 @@ ms.locfileid: "80739836"
 
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_WRONGCOMPOBJ>
 
-## <a name="ole-dispatch-errors"></a>OLE 排程錯誤
+## <a name="ole-dispatch-errors"></a>OLE 分派錯誤
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_ARRAYISLOCKED>
 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_BADCALLEE>
@@ -127,4 +127,4 @@ ms.locfileid: "80739836"
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>
 
 ## <a name="see-also"></a>另請參閱
-- [錯誤處理與傳回值](../extensibility/error-handling-and-return-values.md)
+- [錯誤處理和傳回值](../extensibility/error-handling-and-return-values.md)

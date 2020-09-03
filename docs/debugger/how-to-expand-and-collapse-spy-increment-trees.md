@@ -1,5 +1,5 @@
 ---
-title: 如何展開和折迭 Spy + + 樹狀結構 |Microsoft Docs
+title: 如何-展開和折迭 Spy + + 樹狀結構 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f67a88c153e5bfef2644eb731d68229a54ffcbc
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349584"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>如何：展開和摺疊 Spy++ 樹狀結構
-您可以使用兩種方法來展開和折迭視窗、進程和執行緒的流覽：按一下視窗中的圖示，或使用 [**樹狀**] 功能表。 樹狀結構中的 + 和-圖示的作用就如同在 c + + 專案視窗中一樣。
+您可以使用兩種方法來展開和折迭視窗、進程和執行緒的流覽：按一下視窗中的圖示，或使用 [ **樹狀** ] 功能表。 樹狀結構中的 + 和-圖示的運作方式，與在 c + + 專案視窗中的行為相同。
 
  **樹狀目錄**功能表包含四個命令：
 
@@ -30,13 +30,13 @@ ms.locfileid: "85349584"
 |**摺疊**|完全折迭目前選取的專案。|
 
 > [!TIP]
-> 如果您展開進程，就會看到該進程擁有的所有線程。 如果您展開執行緒，您會看到它擁有的所有視窗清單。
+> 如果您展開進程，就會看到進程擁有的所有線程。 如果您展開執行緒，就會看到它擁有的所有視窗清單。
 
 ### <a name="to-expand-or-collapse-spy-trees"></a>展開或折迭 Spy + + 樹狀結構
 
-1. 反白顯示 [視窗]、[進程] 或 [執行緒] 視圖中的其中一個專案。
+1. 反白顯示 [Windows]、[進程] 或 [執行緒] 視圖中的其中一個專案。
 
-2. 從 [**樹狀**] 功能表中，選擇其中一個 [展開] 或 [折迭] 命令。
+2. 從 **樹狀目錄** 功能表中，選擇其中一個 [展開] 或 [折迭] 命令。
 
 ## <a name="see-also"></a>另請參閱
 - [使用 Spy++](../debugger/using-spy-increment.md)

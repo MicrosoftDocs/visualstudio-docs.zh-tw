@@ -10,10 +10,10 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: e42a746761b09e99e158ecef8e9054bc0049c03d
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81489632"
 ---
 # <a name="optimizing-your-azure-code"></a>最佳化您的 Azure 程式碼
@@ -23,10 +23,10 @@ ms.locfileid: "81489632"
 Azure Code Analysis 工具會在找到已知會影響效能的問題時，使用下列規則自動為 Azure 程式碼加上旗標。 偵測到的問題會顯示為警告或編譯器錯誤。 系統常會透過燈泡圖示提供用來解決警告或錯誤的程式碼修正或建議。
 
 ## <a name="avoid-using-default-in-process-session-state-mode"></a>避免使用預設 (同處理序) 工作階段狀態模式
-### <a name="id"></a>ID
+### <a name="id"></a>識別碼
 AP0000
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
 如果您對雲端應用程式使用預設 (同處理序) 工作階段狀態模式，您可能會遺失工作階段狀態。
 
 請在 [Azure Code Analysis 意見反應](https://social.msdn.microsoft.com/Forums/en-US/home)分享您的想法和意見。
@@ -40,10 +40,10 @@ ASP.NET 工作階段狀態支援數種不同的工作階段狀態資料儲存選
 有一個建議的解決方案是在受控快取服務儲存工作階段狀態。 了解如何使用 [適用於 Redis 的 Azure 工作階段狀態提供者](https://devblogs.microsoft.com/aspnet/announcing-asp-net-session-state-provider-for-redis-preview-release/) 來儲存工作階段狀態。 您也可以在其他位置儲存工作階段狀態，以確保應用程式可在雲端上進行調整。 若要深入了解替代解決方案，請參閱 [工作階段狀態模式](https://msdn.microsoft.com/library/ms178586)。
 
 ## <a name="run-method-should-not-be-async"></a>執行方法必須同步
-### <a name="id"></a>ID
+### <a name="id"></a>識別碼
 AP1000
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
 在 [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) 方法外部建立非同步方法 (例如 [await](https://msdn.microsoft.com/library/hh156528.aspx))，然後從 [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) 呼叫非同步方法。 將 [[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) 宣告為非同步方法會導致背景工作角色輸入重新啟動迴圈。
 
 請在 [Azure Code Analysis 意見反應](https://social.msdn.microsoft.com/Forums/en-US/home)分享您的想法和意見。
@@ -85,10 +85,10 @@ public async Task RunAsync()
 ```
 
 ## <a name="use-service-bus-shared-access-signature-authentication"></a>使用服務匯流排共用存取簽章驗證
-### <a name="id"></a>ID
+### <a name="id"></a>識別碼
 AP2000
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
 使用共用存取簽章 (SAS) 進行驗證。 存取控制服務 (ACS) 將不可再用於進行服務匯流排驗證。
 
 請在 [Azure Code Analysis 意見反應](https://social.msdn.microsoft.com/Forums/en-US/home)分享您的想法和意見。
@@ -112,10 +112,10 @@ BrokeredMessage receivedMessage = sc.Receive();
 * 如須專案範例，請參閱 [搭配使用共用存取簽章 (SAS) 驗證與服務匯流排訂用帳戶](https://code.msdn.microsoft.com/windowsapps/Shared-Access-Signature-0a88adf8)
 
 ## <a name="consider-using-onmessage-method-to-avoid-receive-loop"></a>考慮使用 OnMessage 方法來避免「接收迴圈」
-### <a name="id"></a>ID
+### <a name="id"></a>識別碼
 AP2002
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
 若要避免陷入「接收迴圈」，呼叫 **OnMessage** 方法會比呼叫 **Receive** 方法更適合用來接收訊息。 不過，如果您必須使用 **Receive** 方法，而且您指定了非預設的伺服器等待時間，請確定伺服器等待時間超過一分鐘。
 
 請在 [Azure Code Analysis 意見反應](https://social.msdn.microsoft.com/Forums/en-US/home)分享您的想法和意見。
@@ -216,10 +216,10 @@ while (true)
 ```
 
 ## <a name="consider-using-asynchronous-service-bus-methods"></a>考慮使用非同步服務匯流排方法
-### <a name="id"></a>ID
+### <a name="id"></a>識別碼
 AP2003
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
 使用非同步服務匯流排方法可改善代理傳訊的效能。
 
 請在 [Azure Code Analysis 意見反應](https://social.msdn.microsoft.com/Forums/en-US/home)分享您的想法和意見。
@@ -233,10 +233,10 @@ AP2003
 若要改善 Azure 傳訊基礎結構的效能，請參閱設計模式 [非同步傳訊入門](https://msdn.microsoft.com/library/dn589781.aspx)。
 
 ## <a name="consider-partitioning-service-bus-queues-and-topics"></a>考慮分割服務匯流排佇列和主題
-### <a name="id"></a>ID
+### <a name="id"></a>識別碼
 AP2004
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
 分割服務匯流排佇列和主題以獲得更好的服務匯流排傳訊效能。
 
 請在 [Azure Code Analysis 意見反應](https://social.msdn.microsoft.com/Forums/en-US/home)分享您的想法和意見。
@@ -258,10 +258,10 @@ ns.CreateTopic(td);
 如需詳細資訊，請參閱[分割的服務匯流排佇列和主題 | Microsoft Azure 部落格](https://azure.microsoft.com/blog/2013/10/29/partitioned-service-bus-queues-and-topics/)和 [Microsoft Azure 服務匯流排分割的佇列範例](https://code.msdn.microsoft.com/windowsazure/Service-Bus-Partitioned-7dfd3f1f)。
 
 ## <a name="do-not-set-sharedaccessstarttime"></a>不要設定 SharedAccessStartTime
-### <a name="id"></a>ID
+### <a name="id"></a>識別碼
 AP3001
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
 您應該避免使用設定為目前時間的 SharedAccessStartTime，以立即啟動共用存取原則。 除非您想要稍後再啟動共用存取原則，才需要設定這個屬性。
 
 請在 [Azure Code Analysis 意見反應](https://social.msdn.microsoft.com/Forums/en-US/home)分享您的想法和意見。
@@ -290,10 +290,10 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 ```
 
 ## <a name="shared-access-policy-expiry-time-must-be-more-than-five-minutes"></a>共用存取原則的到期時間必須超過五分鐘
-### <a name="id"></a>ID
+### <a name="id"></a>識別碼
 AP3002
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
 由於有稱為「時鐘誤差」的狀況，不同位置的資料中心之間，最多會差上五分鐘。 為了防止 SAS 原則權杖在預計時間前提早到期，請將到期時間設定為超過五分鐘。
 
 請在 [Azure Code Analysis 意見反應](https://social.msdn.microsoft.com/Forums/en-US/home)分享您的想法和意見。
@@ -340,10 +340,10 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 如需詳細資訊，請參閱 [建立和使用共用存取簽章](https://msdn.microsoft.com/library/azure/jj721951.aspx)。
 
 ## <a name="use-cloudconfigurationmanager"></a>使用 CloudConfigurationManager
-### <a name="id"></a>ID
+### <a name="id"></a>識別碼
 AP4000
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
 對 Azure 網站和 Azure 行動服務等專案使用 [ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) 類別不會產生執行階段問題。 不過，最佳做法是使用雲端 [ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) 做為所有 Azure 雲端應用程式組態的統一管理方式。
 
 請在 [Azure Code Analysis 意見反應](https://social.msdn.microsoft.com/Forums/en-US/home)分享您的想法和意見。
@@ -356,7 +356,7 @@ CloudConfigurationManager 會讀取適合應用程式環境使用的組態檔。
 ### <a name="solution"></a>解決方法
 重新建構程式碼以使用 [CloudConfigurationManager 類別](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx)。 Azure Code Analysis 工具有提供此問題的程式碼修正。
 
-下列程式碼片段示範此問題的程式碼修正程式。 Replace
+下列程式碼片段示範此問題的程式碼修正程式。 取代
 
 `var settings = ConfigurationManager.AppSettings["mySettings"];`
 
@@ -377,10 +377,10 @@ CloudConfigurationManager 會讀取適合應用程式環境使用的組態檔。
 ```
 
 ## <a name="avoid-using-hard-coded-connection-strings"></a>避免使用硬式編碼的連接字串
-### <a name="id"></a>ID
+### <a name="id"></a>識別碼
 AP4001
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
 如果您使用硬式編碼的連接字串，並且需要在稍後加以更新，您必須對原始程式碼進行變更並重新編譯應用程式。 不過，如果您將連接字串儲存在組態檔中，之後只要更新組態檔就能變更連接字串。
 
 請在 [Azure Code Analysis 意見反應](https://social.msdn.microsoft.com/Forums/en-US/home)分享您的想法和意見。
@@ -398,10 +398,10 @@ AP4001
 如需使用 web.config 或 app.config 等組態檔的相關資訊，請參閱 [ASP.NET Web 組態指導方針](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations)。 如需 Azure 環境變數運作方式的相關資訊，請參閱 [Azure 網站：應用程式字串與連接字串的運作方式](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/)。 如需在原始檔控制中儲存連接字串的相關資訊，請參閱 [避免將敏感資訊 (例如連接字串) 放在儲存於原始程式碼儲存機制的檔案](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control)。
 
 ## <a name="use-diagnostics-configuration-file"></a>使用診斷組態檔
-### <a name="id"></a>ID
+### <a name="id"></a>識別碼
 AP5000
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
 與其在程式碼中設定診斷設定 (例如使用 Microsoft.WindowsAzure.Diagnostics 程式設計 API)，不如在 diagnostics.wadcfg 檔案中設定診斷設定。 (或者，如果您使用 Azure SDK 2.5，則在 diagnostics.wadcfgx 中設定)。 如此一來，您就可以變更診斷設定而不必重新編譯程式碼。
 
 請在 [Azure Code Analysis 意見反應](https://social.msdn.microsoft.com/Forums/en-US/home)分享您的想法和意見。
@@ -423,10 +423,10 @@ AP5000
    如需詳細資訊，請參閱 [為 Azure 雲端服務和虛擬機器設定診斷功能](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md) 。
 
 ## <a name="avoid-declaring-dbcontext-objects-as-static"></a>避免將 DbContext 物件宣告為靜態
-### <a name="id"></a>ID
+### <a name="id"></a>識別碼
 AP6000
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
 為了節省記憶體，請避免將 DBContext 物件宣告為靜態。
 
 請在 [Azure Code Analysis 意見反應](https://social.msdn.microsoft.com/Forums/en-US/home)分享您的想法和意見。

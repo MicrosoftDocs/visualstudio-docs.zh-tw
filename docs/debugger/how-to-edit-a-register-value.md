@@ -20,13 +20,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f7a341fa3f8d41bf4788db5bb4b4957fd8cca81
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349818"
 ---
-# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>如何：編輯暫存器值（c #、c + +、Visual Basic、F #）
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>如何：編輯暫存器值 (c #、c + +、Visual Basic、F # ) 
 
 只有在透過 [選項]**** 對話方塊的 [偵錯]**** 節點啟用位址層級偵錯時，才可以使用 [暫存器] 視窗。
 

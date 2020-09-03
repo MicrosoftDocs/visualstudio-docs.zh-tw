@@ -14,10 +14,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 61ec972bd5e361c4417e49092de5976000a6da5f
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80273890"
 ---
 # <a name="install-build-tools-into-a-container"></a>將 Build Tools 安裝至容器
@@ -87,7 +87,7 @@ ms.locfileid: "80273890"
    ```
 
    > [!TIP]
-   > 有關工作負載和元件的清單，請參閱[視覺化工作室構建工具元件目錄](workload-component-id-vs-build-tools.md)。
+   > 如需工作負載和元件的清單，請參閱 [Visual Studio Build Tools 元件目錄](workload-component-id-vs-build-tools.md)。
    >
 
    > [!WARNING]
@@ -129,7 +129,7 @@ ms.locfileid: "80273890"
    ```
 
    > [!TIP]
-   > 有關工作負載和元件的清單，請參閱[視覺化工作室構建工具元件目錄](workload-component-id-vs-build-tools.md)。
+   > 如需工作負載和元件的清單，請參閱 [Visual Studio Build Tools 元件目錄](workload-component-id-vs-build-tools.md)。
    >
 
    > [!WARNING]
@@ -140,7 +140,7 @@ ms.locfileid: "80273890"
    ::: moniker-end
    
    > [!NOTE]
-   > 錯誤代碼`3010`用於指示需要重新開機的成功，有關詳細資訊，請參閱[MsiExec.exe 錯誤訊息](/windows/win32/msi/error-codes)。
+   > 錯誤碼 `3010` 可用來表示成功，需要重新開機，請參閱 [MsiExec.exe 錯誤訊息](/windows/win32/msi/error-codes) 以取得詳細資訊。
 
 1. 從該目錄內執行下列命令。
 
@@ -195,11 +195,11 @@ ms.locfileid: "80273890"
 若要將此映像用於您的 CI/CD 工作流程，您可以將其發佈至自己的 [Azure 容器登錄](https://azure.microsoft.com/services/container-registry)或其他內部 [Docker 登錄](https://docs.docker.com/registry/deploying)，讓伺服器只需要加以提取。
 
    > [!NOTE]
-   > 如果 Docker 容器無法啟動，則可能是 Visual Studio 安裝問題。 您可以更新 Dockerfile 以刪除調用 Visual Studio 批次處理命令的步驟。 這使您能夠啟動 Docker 容器並讀取安裝錯誤日誌。
+   > 如果 Docker 容器無法啟動，可能是 Visual Studio 安裝問題。 您可以更新 Dockerfile，以移除呼叫 Visual Studio 批次命令的步驟。 這可讓您啟動 Docker 容器，並讀取安裝錯誤記錄檔。
    >
-   > 在 Dockerfile 檔中，從`C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat``&&``ENTRYPOINT`命令中刪除 和 參數。 該命令現在應為`ENTRYPOINT ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]`。 接下來，重建 Dockerfile 並執行`run`命令以訪問容器檔案。 要查找安裝錯誤日誌，`$env:TEMP`請轉到目錄並找到該檔。 `dd_setup_<timestamp>_errors.log`
+   > 在 Dockerfile 檔案中， `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` `&&` 從命令移除和參數 `ENTRYPOINT` 。 命令現在應該是 `ENTRYPOINT ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]` 。 接下來，重建 Dockerfile 並執行 `run` 命令以存取容器檔案。 若要找出安裝錯誤記錄檔，請移至 `$env:TEMP` 目錄並找出檔案 `dd_setup_<timestamp>_errors.log` 。
    >
-   > 確定並修復安裝問題後，可以將`C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat`和`&&`參數添加回`ENTRYPOINT`命令並重新生成 Dockerfile。
+   > 找出並修正安裝問題之後，您可以將 `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` 和參數新增 `&&` 回 `ENTRYPOINT` 命令，並重建您的 Dockerfile。
    >
    > 如需詳細資訊，請參閱[容器的已知問題](build-tools-container-issues.md)。
 
@@ -207,6 +207,6 @@ ms.locfileid: "80273890"
 
 ## <a name="see-also"></a>另請參閱
 
-* [容器高級示例](advanced-build-tools-container.md)
+* [容器的進階範例](advanced-build-tools-container.md)
 * [容器的已知問題](build-tools-container-issues.md)
 * [Visual Studio Build Tools 工作負載和元件識別碼](workload-component-id-vs-build-tools.md)

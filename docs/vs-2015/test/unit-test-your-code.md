@@ -13,10 +13,10 @@ caps.latest.revision: 64
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7a8b9a4b52fce5fb838c12ccf057fd0e80619cd7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851251"
 ---
 # <a name="unit-test-your-code"></a>對程式碼進行單元測試
@@ -26,7 +26,7 @@ ms.locfileid: "75851251"
 
  單元測試工具包括：
 
-1. **測試總管。** 測試總管可讓您執行單元測試並檢視其結果。 測試總管可以使用任何具有測試總管配接器的單元測試架構，包括協力廠商架構。
+1. **測試瀏覽器。** 測試總管可讓您執行單元測試並檢視其結果。 測試總管可以使用任何具有測試總管配接器的單元測試架構，包括協力廠商架構。
 
 2. **適用於 Managed 程式碼的 Microsoft 單元測試架構。** 適用於 Managed 程式碼的 Microsoft 單元測試架構是與 Visual Studio 一起安裝的，可提供用於測試 .NET 程式碼的架構。
 
@@ -41,13 +41,13 @@ ms.locfileid: "75851251"
 ## <a name="key-tasks"></a>主要工作
  下列主題可協助您了解及建立單元測試：
 
-|工作|相關的主題|
+|工作|相關主題|
 |-----------|-----------------------|
-|**快速入門和逐步解說：** 使用下列主題從程式碼範例來了解 Visual Studio 中的單元測試。|-   [逐步解說：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [快速入門：搭配測試總管進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [將單元測試加入至現有的 C++ 應用程式](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)<br />-   [使用測試總管針對機器碼執行單元測試](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)|
-|**使用測試總管進行單元測試：** 了解測試總管如何協助建立更具生產力且更有效率的單元測試。|-   [單元測試基本概念](../test/unit-test-basics.md)<br />-   [建立單元測試專案](../test/create-a-unit-test-project.md)<br />-   [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)<br />-   [安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)<br />-   [升級 Visual Studio 2010 的單元測試](https://msdn.microsoft.com/9bb75856-f68a-4de2-a084-b08a947a1172)|
+|**快速入門和逐步解說：** 使用下列主題從程式碼範例來了解 Visual Studio 中的單元測試。|-   [逐步解說：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [快速入門：使用 Test Explorer 進行測試導向開發](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [將單元測試加入至現有的 c + + 應用程式](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)<br />-   [使用 Test Explorer 單元測試機器碼](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)|
+|**使用測試總管進行單元測試：** 了解測試總管如何協助建立更具生產力且更有效率的單元測試。|-   [單元測試基本概念](../test/unit-test-basics.md)<br />-   [建立單元測試專案](../test/create-a-unit-test-project.md)<br />-   [使用 Test Explorer 執行單元測試](../test/run-unit-tests-with-test-explorer.md)<br />-   [安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)<br />-   [升級 Visual Studio 2010 的單元測試](https://msdn.microsoft.com/9bb75856-f68a-4de2-a084-b08a947a1172)|
 |**對 Managed 程式碼進行單元測試：**|-   [使用適用於 Managed 程式碼的 Microsoft 單元測試架構撰寫適用於 .NET Framework 的單元測試](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)|
-|**對 C++ 程式碼進行單元測試**|-   [使用適用於 C++ 的 Microsoft 單元測試架構撰寫適用於 C/C++ 的單元測試](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
-|**隔離單元測試**|-   [使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)|
+|**對 C++ 程式碼進行單元測試**|-   [使用適用于 c + + 的 Microsoft 單元測試架構撰寫適用于 C/c + + 的單元測試](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
+|**隔離單元測試**|-   [使用 Microsoft Fakes 隔離測試中的程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**使用程式碼涵蓋範圍來識別您的專案程式碼的哪個部分，是使用單元測試進行測試：** 了解 [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 測試工具的程式碼涵蓋範圍功能。|-   [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
 |**在單元測試中運用負載測試來執行壓力與效能分析：** 您可以建立負載測試，並將單元測試加入其中，以便找出應用程式中的效能與壓力問題。 **注意：** 若要建立和使用負載測試，您必須安裝 Visual Studio Enterprise。|-   [建立和編輯負載測試](https://msdn.microsoft.com/e2985d15-60a7-4177-93b4-f986c2936337)<br />-   [如何：將 Web 效能測試和單元測試加入負載測試情節](https://msdn.microsoft.com/03cc073e-9bdf-4530-ae46-504a51884594)<br />-   [如何：將 Web 效能測試和單元測試從負載測試情節中移除](https://msdn.microsoft.com/3d6128d2-82b0-42fc-bda2-23a8aa03be07)|
 |**設立並嚴守品質閘門：** 您可以樹立品質閘門，確定程式碼在簽入之前都必須先經過測試，以確保程式碼的品質。|-   [設立並嚴守品質閘門](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|
@@ -64,16 +64,16 @@ ms.locfileid: "75851251"
  提供有關使用 Visual Studio 執行自動化測試 (相對於使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)]) 的資訊連結。
 
 ## <a name="reference"></a>參考資料
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting> 描述 UnitTesting 命名空間，它會提供屬性、例外狀況、判斷提示和其他支援單元測試的類別。
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting> 描述 UnitTesting 命名空間，此命名空間會提供屬性、例外狀況、判斷提示和其他支援單元測試的類別。
 
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> 描述 UnitTesting 命名空間，其藉由提供 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 和 Web 服務單元測試的支援，來擴充 UnitTesting 命名空間。
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> 描述 UnitTesting 命名空間，此命名空間會藉由提供 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 和 Web 服務單元測試的支援來擴充 UnitTesting 命名空間。
 
 ## <a name="external-resources"></a>外部資源
 
-### <a name="videos"></a>Videos
+### <a name="videos"></a>影片
  [Channel 9：Unit testing your Windows Store apps built using XAML (單元測試使用 XAML 建置的 Windows 市集應用程式)](https://channel9.msdn.com/Events/BUILD/BUILD2011/TOOL-529T)
 
-### <a name="forums"></a>Forums
+### <a name="forums"></a>論壇
  [Visual Studio 單元測試](https://social.msdn.microsoft.com/Forums/en/vsunittest/threads)
 
 ### <a name="guidance"></a>指引
@@ -82,5 +82,5 @@ ms.locfileid: "75851251"
 ### <a name="reference"></a>參考資料
  [單元測試的內容索引](https://blogs.msdn.com/b/mathew_aniyan/archive/2012/05/17/content-index-for-unit-test.aspx)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [改善](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)[應用程式的程式](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)代碼品質測試

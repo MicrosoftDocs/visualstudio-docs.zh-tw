@@ -1,5 +1,5 @@
 ---
-title: 將屬性新增到項目項目 :微軟文件
+title: 將屬性加入至專案專案 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 059eef0b6a215f1f02c77df63f777fbfda5dff19
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740197"
 ---
-# <a name="add-an-attribute-to-a-project-item"></a>新增屬性到項目項目
-方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A><xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>以及獲取和設置項目項屬性的值。 SetItemAttribute 創建屬性(如果不存在),將其添加到專案項元資料。
+# <a name="add-an-attribute-to-a-project-item"></a>將屬性新增至專案專案
+方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> 以及 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 取得和設定專案專案的屬性值。 SetItemAttribute 會建立屬性（如果它不存在），並將它加入至專案專案中繼資料。
 
-## <a name="add-an-attribute-to-a-project-item"></a>新增屬性到項目項目
+## <a name="add-an-attribute-to-a-project-item"></a>將屬性新增至專案專案
 
-- 以下代碼使用<xref:EnvDTE.DTE>自動化物件和方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>向專案項添加屬性。 項目項 ID 從專案項名稱"program.cs"獲取。 屬性"MyAttribute"將添加到此專案項中,並給出值"MyValue"。
+- 下列程式碼會使用 <xref:EnvDTE.DTE> automation 物件和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 方法，將屬性加入至專案專案。 專案專案識別碼是從專案專案名稱 "program.cs" 取得的。 屬性 "MyAttribute" 會新增至這個專案專案，並指定值 "MyValue"。
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -44,4 +44,4 @@ ms.locfileid: "80740197"
     ```
 
 ## <a name="see-also"></a>另請參閱
-- [MSBuild 專案檔中的持久資料](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
+- [在 MSBuild 專案檔中保存資料](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

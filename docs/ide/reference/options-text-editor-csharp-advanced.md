@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88214663"
 ---
 # <a name="options-text-editor-c-advanced"></a>進階、C#、文字編輯器、選項
 
-使用 [進階]**** 選項頁面來修改 C# 的編輯器格式、程式碼重構和 XML 文件註解設定。 若要存取此選項頁面，請選擇 [**工具**] [  >  **選項**]，然後選擇 [**文字編輯器**  >  **c #**  >  **Advanced**]。
+使用 [進階]**** 選項頁面來修改 C# 的編輯器格式、程式碼重構和 XML 文件註解設定。 若要存取此選項頁面，請選擇 [**工具**  >  **選項**]，然後選擇 [**文字編輯器**  >  **c #**  >  **Advanced**]。
 
 > [!NOTE]
 > 並非所有選項都會列在此處。
@@ -28,13 +28,13 @@ ms.locfileid: "88214663"
 
 - 即時程式碼分析或背景分析範圍
 
-   設定 managed 程式碼的背景分析範圍。 如需詳細資訊，請參閱 [如何：設定受控碼的即時程式碼分析範圍](../../code-quality/configure-live-code-analysis-scope-managed-code.md)。
+   設定 managed 程式碼的背景分析範圍。 如需詳細資訊，請參閱 [如何：設定 managed 程式碼的即時程式碼分析範圍](../../code-quality/configure-live-code-analysis-scope-managed-code.md)。
 
 ## <a name="using-directives"></a>using 指示詞
 
 - 排序 using 時先放置 'System' 指示詞
 
-   選取時，滑鼠右鍵功能表中的 [ **移除並排序 using** ] 命令會排序指示詞 `using` ，並將 ' System ' 命名空間放在清單頂端。
+   選取時，右鍵功能表中的 [ **移除] 和 [排序 using** ] 命令會排序指示詞 `using` ，並將 ' System ' 命名空間置於清單頂端。
 
    排序之前：
 
@@ -125,7 +125,7 @@ ms.locfileid: "88214663"
 
 ## <a name="block-structure-guides"></a>區塊結構輔助線
 
-選取這些核取方塊，在 **{}** 您的程式碼中 () 的大括弧之間顯示虛線垂直線條。 然後，您可以輕鬆查看宣告層級和程式碼層級建構的個別程式碼區塊。
+選取這些核取方塊， **{}** 在您的程式碼中 () 的大括弧之間顯示虛線垂直線。 然後，您可以輕鬆查看宣告層級和程式碼層級建構的個別程式碼區塊。
 
 ## <a name="editor-help"></a>編輯器說明
 ::: moniker range=">=vs-2019"
@@ -139,10 +139,10 @@ ms.locfileid: "88214663"
 
    選取此選項時，會在您鍵入 `///` 註解簡介後插入 XML 文件註解的 XML 元素。 如需有關 XML 文件的詳細資訊，請參閱 [XML 文件註解 (C# 程式設計指南)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何：在文件產生中插入 XML 註解](../../ide/reference/generate-xml-documentation-comments.md)
-- [XML 檔批註 (c # 程式設計指南) ](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
+- [XML 檔批註 (c # 程式設計手冊) ](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [使用 XML 註解記錄您的程式碼 (C# 指南)](/dotnet/csharp/codedoc)
 - [設定語言專用編輯器的選項](../../ide/reference/setting-language-specific-editor-options.md)
 - [C# IntelliSense](../../ide/visual-csharp-intellisense.md)

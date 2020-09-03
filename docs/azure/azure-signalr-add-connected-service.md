@@ -10,10 +10,10 @@ ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 0e44416bd6a55796b62a7590856caab8466a6401
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88643382"
 ---
 # <a name="add-azure-signalr-by-using-visual-studio-connected-services"></a>使用 Visual Studio 已連線的服務新增 Azure SignalR
@@ -34,7 +34,7 @@ ms.locfileid: "88643382"
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 若是 Visual Studio for Mac，請參閱 [Visual Studio for Mac 中已連線的服務](/visualstudio/mac/connected-services)。
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
 - 已安裝 Azure 工作負載的 Visual Studio。
 - 其中一個支援類型的專案

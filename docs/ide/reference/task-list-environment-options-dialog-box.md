@@ -23,13 +23,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e28b3b9c3fe4d6e89228dc18ba8b98aa5e0d2e76
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80233121"
 ---
-# <a name="options-dialog-box-environment--task-list"></a>選項對話方塊：環境\>工作清單
+# <a name="options-dialog-box-environment--task-list"></a>選項對話方塊：環境 \> 工作清單
 
 此 [選項] 頁面可讓您新增、刪除和變更產生 [工作清單]**** 提醒的註解語彙基元。 若要顯示這些設定，請從 [工具]**** 功能表中選取 [選項]****，並展開 [環境]**** 資料夾，然後選擇 [工作清單]****。
 
@@ -64,4 +64,4 @@ ms.locfileid: "80233121"
 ## <a name="see-also"></a>另請參閱
 
 - [使用工作清單](../../ide/using-the-task-list.md)
-- [在程式碼中設定書籤](../../ide/setting-bookmarks-in-code.md)
+- [在程式碼中設定書簽](../../ide/setting-bookmarks-in-code.md)

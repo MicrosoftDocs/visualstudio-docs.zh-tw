@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::恢復進程 |微軟文件
+title: IDebugPortEx2：： ResumeProcess |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0fdbd8e409208c28fbfc1ce728df3591be655c75
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725017"
 ---
 # <a name="idebugportex2resumeprocess"></a>IDebugPortEx2::ResumeProcess
-恢復進程的執行。
+繼續執行進程。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ int ResumeProcess( 
 
 ## <a name="parameters"></a>參數
 `pPortProcess`\
-[在]表示要恢復的進程的[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件。
+在代表要繼續之進程的 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

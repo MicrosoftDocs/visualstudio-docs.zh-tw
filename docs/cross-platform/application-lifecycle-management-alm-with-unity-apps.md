@@ -10,10 +10,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 17bdd86829da199e01a527aa382b8ed3bdfade17
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232938"
 ---
 # <a name="devops-with-unity-apps"></a>使用 Unity 應用程式進行 DevOps
@@ -73,7 +73,7 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 
 3. Unity 專案中的二進位資產 (例如紋理或音訊檔) 可能會佔用大量儲存體。 各種原始檔控制系統 (如 Git) 會針對進行的每一項變更儲存唯一的檔案複本，即使變更只影響一小部分的檔案也是一樣。 這可能會讓 Git 儲存機制變得過大。 若要解決這個問題，Unity 開發人員通常會選擇只將最後一個資產加入其儲存機制，並使用不同的方法來保留其資產的工作歷程記錄 (例如 OneDrive、DropBox 或 git-annex)。 因為這類資產一般不需要進行版本控制以及原始程式碼變更，所以這種方式適用。 開發人員一般也會將專案編輯器的 [資產序列化模式] 設定為 [強制文字]，以文字格式 (非允許在原始檔控制中進行合併的二進位格式) 來儲存場景檔案。 如需詳細資訊，請參閱[編輯器設定 (英文)](https://docs.unity3d.com/Manual/class-EditorManager.html) (Unity 文件)。
 
-## <a name="build"></a>組建
+## <a name="build"></a>Build
 
 參考連結：**[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 
@@ -93,7 +93,7 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 |手動測試|是||
 |測試管理員 (錄製和播放測試)|僅限 Windows 裝置及 Android 模擬器||
 |程式碼涵蓋範圍|n/a|不適用，因為是在 Unity 內進行單元測試，而非 Visual Studio 內，請見下文。|
-|[對程式碼進行單元測試](../test/unit-test-your-code.md)|在 Unity 內，而非 Visual Studio 內|Unity 提供自己的單元測試架構做為[unity 測試控管](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802)（Unity 資產存放區）的一部分。 單元測試結果會在 Unity 內報告，但不會顯示在 Visual Studio 內。|
+|[對程式碼進行單元測試](../test/unit-test-your-code.md)|在 Unity 內，而非 Visual Studio 內|Unity 提供自己的單元測試架構，作為 [unity 測試控管](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (Unity 資產存放區) 的一部分。 單元測試結果會在 Unity 內報告，但不會顯示在 Visual Studio 內。|
 |[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)|否|自動程式化 UI 測試會依賴應用程式 UI 中的可讀取控制項；Unity 應用程式在本質上是圖形，因此，自動程式化 UI 測試工具無法讀取內容。|
 
 ## <a name="improve-code-quality"></a>改善程式碼品質
