@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9e28caf7f71af7c7a07634d1732a1001a32a4aee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568317"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>選項、文字編輯器、HTML (Web Form)、格式
 
-使用 [格式]**** 選項頁面，可設定在程式碼編輯器中用於程式碼格式設定的 HTML 專案選項。 要訪問此頁面，在功能表列上，請選擇 **"工具** > **選項**"，然後展開**文字編輯器** > **HTML（Web 表單）** > **格式**設置 。
+使用 [格式]**** 選項頁面，可設定在程式碼編輯器中用於程式碼格式設定的 HTML 專案選項。 若要存取此頁面，請在功能表列上選擇 [**工具**  >  **選項**]，然後展開 [**文字編輯器**  >  **HTML (Web Form) **  >  **格式**]。
 
-## <a name="capitalization"></a>大小寫
+## <a name="capitalization"></a>大寫
 
 選取這些選項時，[原始碼] 檢視和 XML 編輯器會在首次建立元素時和自動格式化期間，將大小寫格式套用至元素和屬性的名稱。 [套用自動格式化]**** 設定會決定自動重新格式化的時機。
 
@@ -62,21 +62,21 @@ ms.locfileid: "75568317"
 
 - **輸入時插入屬性值引號**
 
-   選擇此選項後，編輯器會在鍵入時自動在屬性上放置引號（例如：ID="Select1"）。 如果想要手動插入標記的引號，請清除這個選項。
+   選取此選項時，編輯器會在您輸入 (時，自動在屬性前後加上引號，例如： ID = "Select1" ) 。 如果想要手動插入標記的引號，請清除這個選項。
 
    > [!NOTE]
    > 無論是否選取這個選項，都會保留標記中的所有現有引號，永遠不會移除引號。
 
 - **格式化時插入屬性值引號**
 
-   選擇此選項後，自動格式設置會在屬性值周圍添加引號（例如：ID="Select1"）。
+   選取此選項時，自動格式化會在屬性值前後加上引號 (例如： ID = "Select1" ) 。
 
    > [!NOTE]
    > 無論是否選取這個選項，都會保留標記中的所有現有引號。
 
 - **自動插入結尾標記**
 
-   選擇此選項後，編輯器會自動在關閉打開標記時創建一個結束標記（例如**\</b>**）。
+   選取此選項時，編輯器會自動建立結束記號 (例如， **\</b>** 當您關閉開頭標記時) 。
 
 ## <a name="tag-wrapping"></a>標記換行
 
@@ -91,7 +91,7 @@ ms.locfileid: "75568317"
    > [!NOTE]
    > 您指定的值是做為最小值使用。 編輯器不會分開個別屬性。
 
-- **Length**
+- **長度**
 
    指定一行顯示的字元數，超過此長度後即換行顯示。 選取 [標記超出指定長度時換行]**** 方塊後才能使用此輸入方塊。
 
@@ -101,4 +101,4 @@ ms.locfileid: "75568317"
 
 ## <a name="see-also"></a>另請參閱
 
-- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)
+- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

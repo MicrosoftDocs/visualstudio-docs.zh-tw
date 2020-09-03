@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f9b1a639dd655f4f75b21555396866858b144010
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75569279"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>在 Visual Studio 中產生 Equals 與 GetHashCode 方法覆寫
@@ -43,11 +43,11 @@ ms.locfileid: "75569279"
 
 1. 接著，執行下列其中一項操作：
 
-   - 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
+   - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
 
    - 以滑鼠右鍵按一下並選取 [快速動作與重構]**** 功能表。
 
-   - 按一下 ![出現於左邊界的螺絲起子](../media/screwdriver-icon.png) 圖示。
+   - 按一下 ![螺絲起子](../media/screwdriver-icon.png) 圖示。
 
    ![「產生覆寫」預覽](media/overrides-preview-cs.png)
 
@@ -66,5 +66,5 @@ ms.locfileid: "75569279"
 
 ## <a name="see-also"></a>另請參閱
 
-- [代碼生成](../code-generation-in-visual-studio.md)
+- [程式碼產生](../code-generation-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3821262a456f9e3e764555fce5fc883b42d4ae9e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85768661"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>作法：在遊戲或應用程式中使用 3D 資產
@@ -71,8 +71,8 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 
 |項目類型|原始程式檔類型|輸出檔案格式|
 |---------------| - | - |
-|**影像內容管線**|Portable Network Graphics (*.png*)<br /><br /> JPEG (*.jpg*、*.jpeg*、*.jpe*、*.jfif*)<br /><br /> DirectDraw 表面 (*.dds*)<br /><br /> 圖形交換格式 (*.gif*)<br /><br /> 點陣圖（*.bmp*、 *.dib*）<br /><br /> 標記的影像檔案格式（*.tif*、 *tiff*）<br /><br /> Targa (*.tga*)|DirectDraw 表面（*dds*）|
-|**網狀內容管線**|AutoDesk FBX 交換檔案 (*.fbx*)<br /><br /> Collada DAE 檔案 (*.dae*)<br /><br /> Wavefront OBJ 檔案 (*.obj*)|3D 網狀檔案（*. cmo*）|
+|**影像內容管線**|可移植網狀圖形 (*.png*) <br /><br /> JPEG (*.jpg*、*.jpeg*、*.jpe*、*.jfif*)<br /><br /> DirectDraw 表面 (*.dds*)<br /><br /> 圖形交換格式 (*.gif*) <br /><br /> 點陣圖 (*.bmp*、 *.dib*) <br /><br /> 標記的影像檔案格式 (*.tif*、 *tiff*) <br /><br /> Targa (*.tga*)|DirectDraw 介面 (*. dd*) |
+|**網狀內容管線**|AutoDesk FBX 交換檔案 (*.fbx*)<br /><br /> Collada DAE 檔案 (*.dae*)<br /><br /> Wavefront OBJ 檔案 (*.obj*)|3D 網格檔 (*. cmo*) |
 |**著色器內容管線**|視覺著色器圖形 (*.dgsl*)|已編譯的著色器輸出 (*.cso*)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>設定資產內容管線屬性
@@ -97,7 +97,7 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 
 |屬性|描述|
 |--------------|-----------------|
-|**縮短**|指定用於輸出檔案的壓縮類型。<br /><br /> 可用的選項如下：<br /><br /> -   **無壓縮**<br />-   **BC1_UNORM 壓縮**<br />-   **BC1_UNORM_SRGB 壓縮**<br />-   **BC2_UNORM 壓縮**<br />-   **BC2_UNORM_SRGB 壓縮**<br />-   **BC3_UNORM 壓縮**<br />-   **BC3_UNORM_SRGB 壓縮**<br />-   **BC4_UNORM 壓縮**<br />-   **BC4_SNORM 壓縮**<br />-   **BC5_UNORM 壓縮**<br />-   **BC5_SNORM 壓縮**<br />-   **BC6H_UF16 壓縮**<br />-   **BC6H_SF16 壓縮**<br />-   **BC7_UNORM 壓縮**<br />-   **BC7_UNORM_SRGB 壓縮**<br /><br /> 如需不同 DirectX 版本所支援壓縮格式的資訊，請參閱 [DXGI 程式設計指南](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews)。|
+|**壓縮**|指定用於輸出檔案的壓縮類型。<br /><br /> 可用的選項如下：<br /><br /> -   **無壓縮**<br />-   **BC1_UNORM 壓縮**<br />-   **BC1_UNORM_SRGB 壓縮**<br />-   **BC2_UNORM 壓縮**<br />-   **BC2_UNORM_SRGB 壓縮**<br />-   **BC3_UNORM 壓縮**<br />-   **BC3_UNORM_SRGB 壓縮**<br />-   **BC4_UNORM 壓縮**<br />-   **BC4_SNORM 壓縮**<br />-   **BC5_UNORM 壓縮**<br />-   **BC5_SNORM 壓縮**<br />-   **BC6H_UF16 壓縮**<br />-   **BC6H_SF16 壓縮**<br />-   **BC7_UNORM 壓縮**<br />-   **BC7_UNORM_SRGB 壓縮**<br /><br /> 如需不同 DirectX 版本所支援壓縮格式的資訊，請參閱 [DXGI 程式設計指南](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews)。|
 |轉換成預乘的 Alpha 格式|[是]**** 在輸出檔案中將影像轉換成預乘的 Alpha 格式，否則為 [否]****。 只會變更輸出檔案，來源影像並不會變更。|
 |**產生 Mips**|[是]**** 在建置時產生完整 MIP 鏈結，並將它併入輸出檔案中；否則為 [否]****。 如果為 [否]****，而且原始程式檔已包含 MIP 對應鏈結，則輸出檔案會有 MIP 鏈結；否則，輸出檔案沒有 MIP 鏈結。|
 |**內容輸出**|指定輸出檔案的名稱。 **重要事項：** 變更輸出檔案的副檔名並不會影響其檔案格式。|
@@ -106,7 +106,7 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 
 當您使用網狀內容管線工具建置網狀資產時，可以變更輸出檔案的名稱。
 
-|屬性|說明|
+|屬性|描述|
 |--------------|-----------------|
 |**內容輸出**|指定輸出檔案的名稱。 **重要事項：** 變更輸出檔案的副檔名並不會影響其檔案格式。|
 
@@ -114,7 +114,7 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 
 當您使用著色器內容管線工具建置著色器資產時，可以變更輸出檔案的名稱。
 
-|屬性|說明|
+|屬性|描述|
 |--------------|-----------------|
 |**內容輸出**|指定輸出檔案的名稱。 **重要事項：** 變更輸出檔案的副檔名並不會影響其檔案格式。|
 
@@ -209,9 +209,9 @@ cbuffer MiscVars : register(b3)
 };
 ```
 
-## <a name="related-topics"></a>相關的主題
+## <a name="related-topics"></a>相關主題
 
-|Title|描述|
+|標題|描述|
 |-----------|-----------------|
 |[如何：匯出包含 mipmap 的材質](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|描述如何使用影像內容管線，匯出含有預先計算之 MIP 對應的紋理。|
 |[如何：匯出包含預乘 Alpha 的材質](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|描述如何使用影像內容管線，匯出含有預乘的 Alpha 值的紋理。|

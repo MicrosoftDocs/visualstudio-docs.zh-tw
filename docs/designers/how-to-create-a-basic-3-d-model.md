@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbd0b2a092e47eab053d4150fd2139fb0dbdf6ea
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769266"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>如何：建立基本 3D 模型
@@ -70,7 +70,7 @@ ms.locfileid: "85769266"
 
    ![精簡化房屋完成後的模型](../designers/media/gfx_model_demo_house_final.png)
 
-   下一步可以將著色器套用至這個 3D 模型。 如需相關資訊，請參閱[如何：將著色器套用至3d 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
+   下一步可以將著色器套用至這個 3D 模型。 如需詳細資訊，請參閱 [如何：將著色器套用至3d 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
 
 ## <a name="see-also"></a>另請參閱
 

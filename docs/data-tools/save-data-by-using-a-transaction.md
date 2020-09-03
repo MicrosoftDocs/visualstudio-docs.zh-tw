@@ -17,35 +17,35 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 40894adefb42d6de077a2e2812d26f90bc5f40dd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281691"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>如何：使用交易儲存資料
 
-您可以使用命名空間，將資料儲存在交易中 <xref:System.Transactions> 。 使用 <xref:System.Transactions.TransactionScope> 物件來參與自動為您管理的交易。
+您可以使用命名空間將資料儲存在交易中 <xref:System.Transactions> 。 <xref:System.Transactions.TransactionScope>您可以使用物件來參與自動為您管理的交易。
 
-不會使用對*system.object*元件的參考來建立專案，因此您必須手動加入使用交易之專案的參考。
+*系統*不會使用對 system.string 元件的參考來建立專案，因此您需要手動加入使用交易之專案的參考。
 
-執行交易最簡單的方式，就是 <xref:System.Transactions.TransactionScope> 在語句中具現化物件 `using` 。 （如需詳細資訊，請參閱[using 語句](/dotnet/visual-basic/language-reference/statements/using-statement)和[using](/dotnet/csharp/language-reference/keywords/using-statement)語句）。在語句內執行的程式碼會 `using` 參與交易。
+若要執行交易，最簡單的方式就是 <xref:System.Transactions.TransactionScope> 在語句中具現化物件 `using` 。  (如需詳細資訊，請參閱 [using 語句](/dotnet/visual-basic/language-reference/statements/using-statement)和 [using 語句](/dotnet/csharp/language-reference/keywords/using-statement)。 ) 在語句中執行的程式碼會 `using` 參與交易。
 
 若要認可交易，請呼叫 <xref:System.Transactions.TransactionScope.Complete%2A> 方法做為 using 區塊中的最後一個語句。
 
-若要復原交易，請在呼叫方法之前擲回例外狀況 <xref:System.Transactions.TransactionScope.Complete%2A> 。
+若要回復交易，請在呼叫方法之前擲回例外狀況 <xref:System.Transactions.TransactionScope.Complete%2A> 。
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>若要加入 System.Transactions.dll 的參考
 
 1. 在 [專案]**** 功能表上，選取 [新增參考]****。
 
-2. 在 [ **.net** ] 索引標籤（SQL Server 專案的**SQL Server** ] 索引標籤）上，選取 [**系統**]，然後選取 **[確定]**。
+2. 在 [ **.net** (] 索引標籤上，) SQL Server 專案的 **SQL Server** ] 索引標籤中，選取 [ **系統交易**]，然後選取 **[確定]**。
 
      *System.Transactions.dll*的參考會加入至專案。
 
 ## <a name="to-save-data-in-a-transaction"></a>若要將資料儲存在交易中
 
-- 加入程式碼，以在包含交易的 using 語句中儲存資料。 下列程式碼示範如何在 using 語句中建立和具現化 <xref:System.Transactions.TransactionScope> 物件：
+- 加入程式碼，以在包含交易的 using 語句內儲存資料。 下列程式碼示範如何在 using 語句中建立和具現化 <xref:System.Transactions.TransactionScope> 物件：
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]

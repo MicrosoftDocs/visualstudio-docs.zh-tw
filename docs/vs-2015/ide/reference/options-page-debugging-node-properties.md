@@ -10,21 +10,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 10537fb64e6ae0ebbe185024b76442704437e273
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668834"
 ---
 # <a name="options-page-debugging-node-properties"></a>偵錯節點屬性、選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-下表描述與 [選項]  對話方塊的 [偵錯]  分類 `DTE.Properties("Debugging", <Property Page>)` 相關聯的頁面 (或屬性集合)。
+下表描述與 [選項]**** 對話方塊的 [偵錯]**** 分類 `DTE.Properties("Debugging", <Property Page>)` 相關聯的頁面 (或屬性集合)。
 
 ## <a name="general"></a>一般
  `DTE.Properties("Debugging", "General")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (布林值)|判斷偵錯工具是否先提示權限，再刪除專案中的所有中斷點。|
 |BreakAllProcesses|Get/Set (布林值)|決定是否只要單一處理序中斷，偵錯工具即中斷所有處理序。|
@@ -54,11 +54,11 @@ ms.locfileid: "72668834"
 ## <a name="edit-and-continue"></a>編輯後繼續
  `DTE.Properties("Debugging", "EditAndContinue")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |EnableEditAndContinue|Get/Set (布林值)|決定是否啟用 [編輯後繼續]。 此選項適用於所有支援 [編輯後繼續] 的語言。|
-|InvokedByCommands|Get/Set (布林值)|當使用者選取 [步驟]  或 [繼續]  等偵錯命令時，決定 [編輯後繼續] 是否自動套用程式碼變更。 此選項僅適用於原生程式碼。|
-|InvokedByCommandsAskFirst|Get/Set (布林值)|當使用者選取 [步驟]  或 [繼續]  等偵錯命令時，決定 [編輯後繼續] 是否提示使用者提供權限以套用程式碼變更。 此選項僅適用於原生程式碼。|
+|InvokedByCommands|Get/Set (布林值)|當使用者選取 [步驟]**** 或 [繼續]**** 等偵錯命令時，決定 [編輯後繼續] 是否自動套用程式碼變更。 此選項僅適用於原生程式碼。|
+|InvokedByCommandsAskFirst|Get/Set (布林值)|當使用者選取 [步驟]**** 或 [繼續]**** 等偵錯命令時，決定 [編輯後繼續] 是否提示使用者提供權限以套用程式碼變更。 此選項僅適用於原生程式碼。|
 |WarnAboutStaleCode|Get/Set (布林值)|當 [編輯後繼續] 導致過期或過時的程式碼執行時，決定偵錯工具是否發出警告訊息。 此選項僅適用於原生程式碼。|
 |RelinkChangesOnStop|Get/Set (短整數)|當應用程式停止執行時，決定 Visual Studio 是否重新連結 [編輯後繼續] 套用的程式碼變更。 此選項僅適用於原生程式碼。|
 |AllowPrecompiling|Get/Set (短整數)|決定是否允許 [編輯後繼續] 在背景中載入先行編譯標頭檔。 此選項僅適用於原生程式碼。|
@@ -66,7 +66,7 @@ ms.locfileid: "72668834"
 ## <a name="just-in-time"></a>Just-In-Time
  `DTE.Properties("Debugging", "JustInTime")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |JitManaged|Get/Set (布林值)|決定 Managed 程式碼是否啟用 Just-In-Time 偵錯。|
 |JitNative|Get/Set (布林值)|決定原生程式碼是否啟用 Just-In-Time 偵錯。|
@@ -75,10 +75,10 @@ ms.locfileid: "72668834"
 ## <a name="native"></a>原生
  `DTE.Properties("Debugging", "Native")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |LoadDllExports|Get/Set (布林值)|決定偵錯工具是否載入 DLL 匯出表。|
 |EnableRPC|Get/Set (布林值)|決定偵錯工具是否可以逐步執行至 COM 遠端程序呼叫。|
 
 ## <a name="see-also"></a>另請參閱
- [控制選項設定 ](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [Determining [選項] 頁面上的屬性專案名稱 ](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) [Options 頁面、[字型] 和 [色彩] 節點屬性](../../ide/reference/options-page-fonts-and-colors-node-properties.md) [Options 頁面、[文字編輯器] 節點屬性](../../ide/reference/options-page-text-editor-node-properties.md) [General、[調試]、[選項] 對話方塊](../../debugger/general-debugging-options-dialog-box.md) [Edit 並繼續、[調試]、[選項] 對話方塊](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103) [[1Just 時間]、[調試]、[選項] 對話方塊](../../debugger/just-in-time-debugging-options-dialog-box.md)
+ [控制選項設定](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)[在選項頁](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)[選項頁面、字型和色彩節點屬性](../../ide/reference/options-page-fonts-and-colors-node-properties.md)[選項頁、文字編輯器節點屬性](../../ide/reference/options-page-text-editor-node-properties.md)、調試[程式、選項](../../debugger/general-debugging-options-dialog-box.md)對話方塊[編輯後繼續、](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)偵錯工具、選項對話方塊[即時、偵錯工具、選項對話方塊](../../debugger/just-in-time-debugging-options-dialog-box.md)

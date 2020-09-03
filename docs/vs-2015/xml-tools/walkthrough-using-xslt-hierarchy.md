@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 46e6acc8f65a9c9589348508f57cc75b04c61ccc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669554"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>逐步解說：使用 XSLT 階層
@@ -114,5 +114,5 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
 
 6. 當偵錯工具停在指示 `<xsl:include href="xslincludefile.xsl" />` 時，按下逐步執行按鈕。 請注意，參考的樣式表中的偵錯可以繼續進行。 您會看見階層，同時設計工具會顯示正確的路徑。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [逐步解說：XSLT 分析工具](../xml-tools/walkthrough-xslt-profiler.md)

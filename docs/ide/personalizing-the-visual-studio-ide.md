@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39c9edbf5e96a59912c0cf16d7b4178f6fba2a62
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585739"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>將 Visual Studio IDE 個人化
@@ -29,22 +29,22 @@ ms.locfileid: "75585739"
 
 許多個人化選項會透過[環境選項](../ide/reference/general-environment-options-dialog-box.md)對話方塊來公開。 有兩種方法可以存取此對話方塊：
 
-- 在功能表列上，選擇 **"工具** > **選項**"，如果尚未展開，請展開 **"環境"** 節點。
+- 在功能表列上選擇 [**工具**  >  **選項**]，如果尚未展開，請展開 [**環境**] 節點。
 
-- 在搜索框中按**Ctrl**+**Q**，鍵入**環境**，然後從結果中選擇 **"環境>一般**"。
+- 在搜尋方塊中按下**Ctrl** + **Q**，輸入**環境**，然後從結果中選擇 [**環境 > 一般**]。
 
 > [!TIP]
 > 當 [選項] 對話方塊出現時，您可以在該頁面上按 **F1**，以取得各種不同設定的說明。
 
 ## <a name="environment-color-themes"></a>環境色彩佈景主題
 
-要更改淺色、深色和藍色之間的顏色主題，請在搜索框中鍵入**環境**，然後選擇 **"環境>一般**"。 在 [選項]**** 對話方塊中，變更 [色彩佈景主題]**** 選項。
+若要在 [淺色]、[深色] 和 [藍色] 之間變更色彩主題，請在 [搜尋] 方塊中輸入 **環境** ，然後選擇 [ **環境 > 一般**]。 在 [選項]**** 對話方塊中，變更 [色彩佈景主題]**** 選項。
 
-要更改編輯器中的著色選項，請在搜索框中鍵入**環境**，然後選擇 **"環境>字體和顏色**"。 請參閱[如何：變更字型和色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)。
+若要變更編輯器中的顏色標示選項，請在 [搜尋] 方塊中輸入 **環境** ，然後選擇 [ **環境 > 字型和色彩**]。 請參閱[如何：變更字型和色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)。
 
 ### <a name="main-menu-casing"></a>主功能表大小寫
 
-您可以變更主功能表的下列兩種大小寫設定：[字首大寫]**** ("File") 與 [全部大寫]**** ("FILE")。 在搜索框中鍵入**環境**，選擇 **"環境>常規**"，然後將 **"應用標題框"樣式更改為功能表列**選項。
+您可以變更主功能表的下列兩種大小寫設定：[字首大寫]**** ("File") 與 [全部大寫]**** ("FILE")。 在 [搜尋] 方塊中輸入 **環境** ，選取 **[環境 > 一般**]，然後將 [ **套用標題案例樣式] 變更為 [功能表列** ] 選項。
 
 ### <a name="customize-menus-and-toolbars"></a>自訂功能表與工具列
 
@@ -70,5 +70,5 @@ ms.locfileid: "75585739"
 
 - [環境設定](environment-settings.md)
 - [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)
-- [快速入門：首先查看視覺工作室 IDE](../ide/quickstart-ide-orientation.md)
+- [快速入門：先查看 Visual Studio IDE](../ide/quickstart-ide-orientation.md)
 - [自訂 Visual Studio for Mac IDE](/visualstudio/mac/customizing-the-ide)

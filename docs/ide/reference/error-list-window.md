@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75569659"
 ---
 # <a name="error-list-window"></a>[錯誤清單] 視窗
@@ -41,7 +41,7 @@ ms.locfileid: "75569659"
 
 - 搜尋特定詞彙，以及將搜尋範圍限制在目前的專案或文件。
 
-要顯示**錯誤清單**，請選擇 **"查看** > **錯誤清單**"，或按**Ctrl**+**\\**+**E**。
+若要顯示 [**錯誤清單**]，請選擇 [**視圖**  >  **錯誤清單**]，或按**Ctrl** + **\\** + **E**。
 
 您可以選擇 [錯誤]****、[警告]**** 和 [訊息]**** 索引標籤來查看不同的層級資訊。
 
@@ -76,7 +76,7 @@ ms.locfileid: "75569659"
 
 ## <a name="ui-element-list"></a>UI 項目清單
 
-Severity
+嚴重性
 
 會顯示不同類型的 [錯誤清單]**** 項目 ([錯誤]****、[訊息]****、[警告]****、[警告 (使用中)]**** 和 [警告 (非使用中)]****)。
 
@@ -88,7 +88,7 @@ Severity
 
 會顯示項目的文字。
 
-隨附此逐步解說的專案
+專案
 
 會顯示目前專案的名稱。
 
@@ -96,6 +96,6 @@ Severity
 
 會顯示檔案名稱。
 
-折線圖
+線
 
 會顯示發生錯誤的行。

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3ed1bd914655109606c1472227fb73c10d5b7a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547611"
 ---
 # <a name="user-accounts-and-updates"></a>使用者帳戶和更新
@@ -21,13 +21,13 @@ ms.locfileid: "85547611"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!WARNING]
-> Visual Studio 2015 無法存取為條件式存取設定的資源。 若要使用這些資源，請升級至 Visual Studio 2019 16.6 版或更新版本，並遵循[如何搭配使用 Visual Studio 與需要多重要素驗證的帳戶](../../ide/work-with-multi-factor-authentication.md)。
+> Visual Studio 2015 無法存取針對條件式存取設定的資源。 若要使用這些資源，請升級至 Visual Studio 2019 16.6 版或更新版本，並遵循 [如何使用 Visual Studio 搭配需要多重要素驗證的帳戶](../../ide/work-with-multi-factor-authentication.md) 。
 
 Visual Studio 本身為連線的環境。 透過登入可存取所有與您使用者帳戶及連結至該帳戶的所有帳戶相關聯的服務。 無論您在何處使用 Visual Studio，您的帳戶設定皆與您一同漫遊。 您可以針對個別使用者的特定 Visual Studio 執行個體設定使用權限層級。 此外，Visual Studio 會在任何安裝元件 (例如 SDK) 有可用更新時通知您。
 
 ## <a name="in-this-section"></a>本節內容
 
-|Title|描述|
+|標題|描述|
 |-|-|
 |[登入 Visual Studio](../ide/signing-in-to-visual-studio.md)|描述如何及為何要登入 Visual Studio。|
 |[Work with multiple user accounts](../ide/work-with-multiple-user-accounts.md)|描述如何將多個 Microsoft 帳戶和/或工作或學校帳戶相關聯，以存取您所有帳戶的資源和服務。|

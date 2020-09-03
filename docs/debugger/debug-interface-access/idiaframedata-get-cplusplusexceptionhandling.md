@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b23221b9b1efcfb4b13e5713b94a8acb4bf86a29
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467397"
 ---
 # <a name="idiaframedataget_cplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
-抓取表示 c + + 例外狀況處理是否有效的旗標。
+抓取指出 c + + 例外狀況處理是否有效的旗標。
 
 ## <a name="syntax"></a>語法
 
@@ -33,13 +33,13 @@ HRESULT get_cplusplusExceptionHandling ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷`TRUE`如果 c + + 例外狀況處理已生效，則傳回，否則傳回 `FALSE` 。
+擴展 `TRUE` 如果 c + + 例外狀況處理有效，則傳回，否則傳回 `FALSE` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援此屬性，則傳回。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援這個屬性，則傳回。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 若要判斷結構化例外狀況處理是否有效（這與 c + + 例外狀況處理非常不同），請呼叫[IDiaFrameData：： get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)方法。
+ 若要判斷結構化例外狀況處理是否有效 (這與 c + + 例外狀況處理) 非常不同，請呼叫 [IDiaFrameData：： get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) 方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

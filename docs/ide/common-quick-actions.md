@@ -1,6 +1,6 @@
 ---
 title: 一般的快速動作
-description: C# 和 Visual Basic 的最常用的快速操作包括修復拼寫錯誤的關鍵字或符號、解決合併衝突、刪除必要的導入、組建類型、引入本地變數等。
+description: '最熱門 c # 和 Visual Basic 的快速動作，包括修正拼錯的關鍵字或符號、解決合併衝突、移除必要的匯入、產生類型、引入區域變數等。'
 ms.date: 03/28/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585518"
 ---
 # <a name="common-quick-actions"></a>一般的快速動作
@@ -30,7 +30,7 @@ ms.locfileid: "75585518"
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>修正拼字錯誤的符號或關鍵字
 
-如果您不小心拼錯 Visual Studio 中的類型或關鍵字，這個快速動作會自動加以修正。 在燈泡功能表中，您將看到這些專案為 **"更改拼寫\<錯誤的單詞>"到"\<正確的單詞>"。** 例如：
+如果您不小心拼錯 Visual Studio 中的類型或關鍵字，這個快速動作會自動加以修正。 您會在燈泡功能表中看到這些專案，並將其顯示為「 **變更 \<misspelled word> \<correct word> **」。 例如：
 
 ```csharp
 // Before
@@ -90,17 +90,17 @@ private void MyMethod()
 
 | 錯誤識別碼 | 適用語言 | 支援的版本 |
 | ------- | -------------------- | ---------------- |
-| CS8300、BC37284 | C# 和 Visual Basic | 視覺工作室 2017 版本 15.3 及更高版本 |
+| CS8300、BC37284 | C# 和 Visual Basic | Visual Studio 2017 15.3 版和更新版本 |
 
 ## <a name="actions-that-remove-unnecessary-code"></a>移除不必要程式碼的動作
 
 ### <a name="remove-unnecessary-usingsimports"></a>移除不必要的 using/Import
 
-**刪除不必要的使用/導入**快速操作將刪除當前檔的任何`using`未`Import`使用和指令。 當您選取此項目時，將會移除未使用的命名空間匯入。
+[ **移除不必要的 using/Imports** ] 快速動作會移除目前檔案的任何未使用和指示詞 `using` `Import` 。 當您選取此項目時，將會移除未使用的命名空間匯入。
 
 | 適用語言 | 支援的版本 |
 | - | - |
-| C# 和 Visual Basic | 視覺工作室 2015 及更高版本 |
+| C# 和 Visual Basic | Visual Studio 2015 和更新版本 |
 
 ### <a name="remove-unnecessary-cast"></a>移除不必要的 Cast
 
@@ -128,7 +128,7 @@ Dim number as Integer = 3
 
 | 診斷識別碼 | 適用語言 | 支援的版本 |
 | ------- | -------------------- | ---------------- |
-| IDE0004 | C# 和 Visual Basic | 視覺工作室 2015 及更高版本 |
+| IDE0004 | C# 和 Visual Basic | Visual Studio 2015 和更新版本 |
 
 ### <a name="remove-unused-variables"></a>移除未使用的變數
 
@@ -155,7 +155,7 @@ public MyMethod()
 
 | 診斷識別碼 | 適用語言 | 支援的版本 |
 | ------- | -------------------- | ---------------- |
-| CS0219、BC42024 | C# 和 Visual Basic | 視覺工作室 2017 版本 15.3 及更高版本 |
+| CS0219、BC42024 | C# 和 Visual Basic | Visual Studio 2017 15.3 版和更新版本 |
 
 ### <a name="remove-type-from-default-value-expression"></a>從預設值運算式中移除類型
 
@@ -173,7 +173,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 
 | 診斷識別碼 | 適用語言 | 支援的版本 |
 | ------- | -------------------- | ---------------- |
-| IDE0034 | C# 7.1+ | 視覺工作室 2017 版本 15.3 及更高版本 |
+| IDE0034 | C# 7.1+ | Visual Studio 2017 15.3 版和更新版本 |
 
 ## <a name="actions-that-add-missing-code"></a>新增遺漏程式碼的動作
 
@@ -184,7 +184,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 - 針對參考組件中的類型建議 using/Import
 - 針對 NuGet 套件中的類型建議 using/Import
 
-啟用後，如果在命名空間中使用當前未導入但存在於參考程式集或 NuGet 包中的類型，則創建 using 或導入指令。
+啟用時，如果您在目前未匯入但存在於參考元件或 NuGet 封裝中的命名空間中使用類型，則會建立 using 或 import 指示詞。
 
 ```csharp
 // Before
@@ -281,7 +281,7 @@ End Select
 
 | 診斷識別碼 | 適用語言 | 支援的版本 |
 | ------- | -------------------- | ---------------- |
-| IDE0010 | C# 和 Visual Basic| 視覺工作室 2017 版本 15.3 及更高版本 |
+| IDE0010 | C# 和 Visual Basic| Visual Studio 2017 15.3 版和更新版本 |
 
 ### <a name="add-null-checks-for-parameters"></a>新增參數的 Null 檢查
 
@@ -315,7 +315,7 @@ class MyClass
 
 | 適用語言 | 支援的版本 |
 | -------------------- | ---------------- |
-| C# 和 Visual Basic| 視覺工作室 2017 版本 15.3 及更高版本 |
+| C# 和 Visual Basic| Visual Studio 2017 15.3 版和更新版本 |
 
 ### <a name="add-argument-name"></a>新增引數名稱
 
@@ -331,7 +331,7 @@ var date = new DateTime(year: 1997, month: 7, day: 8);
 
 | 適用語言 | 支援的版本 |
 | -------------------- | ---------------- |
-| C# 和 Visual Basic| 視覺工作室 2017 版本 15.3 及更高版本 |
+| C# 和 Visual Basic| Visual Studio 2017 15.3 版和更新版本 |
 
 ### <a name="add-braces"></a>新增大括弧
 
@@ -353,7 +353,7 @@ if (true)
 
 | 診斷識別碼 | 適用語言 | 支援的版本 |
 | ------- | -------------------- | ---------------- |
-| IDE0011 | C# | 視覺工作室 2017 及更高版本 |
+| IDE0011 | C# | Visual Studio 2017 和更新版本 |
 
 ### <a name="add-and-order-modifiers"></a>新增及排序修飾詞
 
@@ -445,7 +445,7 @@ End Select
 
 | 適用語言 | 支援的版本 |
 | -------------------- | ---------------- |
-| C# 和 Visual Basic| 視覺工作室 2017 版本 15.3 及更高版本 |
+| C# 和 Visual Basic| Visual Studio 2017 15.3 版和更新版本 |
 
 ### <a name="convert-to-interpolated-string"></a>轉換成字串插值
 
@@ -477,7 +477,7 @@ Dim s As String = $"My string with {num} in the middle"
 
 | 適用語言 | 支援的版本 |
 | -------------------- | ---------------- |
-| C# 6.0+ 和 Visual Basic 14+ | 視覺工作室 2017 及更高版本 |
+| C# 6.0+ 和 Visual Basic 14+ | Visual Studio 2017 和更新版本 |
 
 ### <a name="use-object-initializers"></a>使用物件初始設定式
 
@@ -507,7 +507,7 @@ Dim c = New Customer() With {.Age = 21}
 
 | 診斷識別碼 | 適用語言 | 支援的版本 |
 | ------- | -------------------- | ---------------- |
-| IDE0017 | C# 和 Visual Basic | 視覺工作室 2017 及更高版本 |
+| IDE0017 | C# 和 Visual Basic | Visual Studio 2017 和更新版本 |
 
 ### <a name="use-collection-initializers"></a>使用集合初始設定式
 
@@ -541,7 +541,7 @@ Dim list = New List(Of Integer) From {1, 2, 3}
 
 | 診斷識別碼 | 適用語言 | 支援的版本 |
 | ------- | -------------------- | ---------------- |
-| IDE0028 | C# 和 Visual Basic | 視覺工作室 2017 及更高版本 |
+| IDE0028 | C# 和 Visual Basic | Visual Studio 2017 和更新版本 |
 
 ### <a name="convert-auto-property-to-full-property"></a>將自動屬性轉換為完整屬性
 
@@ -635,7 +635,7 @@ class MyClass4
 
 | 診斷識別碼 | 適用語言 | 支援的版本 |
 | ------- | -------------------- | ---------------- |
-| IDE0021-27 | C# 6.0+ | 視覺工作室 2017 及更高版本 |
+| IDE0021-27 | C# 6.0+ | Visual Studio 2017 和更新版本 |
 
 ### <a name="convert-anonymous-function-to-local-function"></a>將匿名函式轉換成區域函式
 
@@ -686,7 +686,7 @@ if (value is null)
 
 | 診斷識別碼 | 適用語言 | 支援的版本 |
 | ------- | -------------------- | ---------------- |
-| IDE0039 | C# 7.0+ | 視覺工作室 2017 版本 15. 及更新版本 |
+| IDE0039 | C# 7.0+ | Visual Studio 2017 第15版。 及更新版本 |
 
 ### <a name="introduce-pattern-matching"></a>引進模式比對
 
@@ -728,8 +728,8 @@ if (o is string s)
 
 | 診斷識別碼 | 適用語言 | 支援的版本 |
 | ------- | -------------------- | ---------------- |
-| IDE0020 | C# 7.0+ | 視覺工作室 2017 及更高版本 |
-| IDE0019 | C# 7.0+ | 視覺工作室 2017 及更高版本 |
+| IDE0020 | C# 7.0+ | Visual Studio 2017 和更新版本 |
+| IDE0019 | C# 7.0+ | Visual Studio 2017 和更新版本 |
 
 ### <a name="change-base-for-numeric-literals"></a>變更數值常值的基底
 
@@ -757,7 +757,7 @@ Dim countdown As Integer = &H200000
 
 | 適用語言 | 支援的版本 |
 | ------- | -------------------- | ---------------- |
-| C# 7.0+ 及 Visual Basic 14+ | 視覺工作室 2017 版本 15.3 及更高版本 |
+| C# 7.0+ 及 Visual Basic 14+ | Visual Studio 2017 15.3 版和更新版本 |
 
 ### <a name="insert-digit-separators-into-literals"></a>將數字分隔符號插入到常值中
 
@@ -785,7 +785,7 @@ Dim countdown As Integer = 1_000_000
 
 | 適用語言 | 支援的版本 |
 | ------- | -------------------- | ---------------- |
-| C# 7.0+ 及 Visual Basic 14+ | 視覺工作室 2017 版本 15.3 及更高版本 |
+| C# 7.0+ 及 Visual Basic 14+ | Visual Studio 2017 15.3 版和更新版本 |
 
 ### <a name="use-explicit-tuple-names"></a>使用明確的元組名稱
 
@@ -817,7 +817,7 @@ Dim name = customer.name
 
 | 診斷識別碼 | 適用語言 | 支援的版本 |
 | ------- | -------------------- | ---------------- |
-| IDE0033 | C# 7.0+ 和 Visual Basic 15+ | 視覺工作室 2017 及更高版本 |
+| IDE0033 | C# 7.0+ 和 Visual Basic 15+ | Visual Studio 2017 和更新版本 |
 
 ### <a name="use-inferred-names"></a>使用推斷名稱
 
@@ -948,8 +948,8 @@ End Function
 
 | 錯誤識別碼 | 適用語言 | 支援的版本 |
 | ------- | -------------------- | ---------------- |
-| CS4032、BC37057 | C# 和 Visual Basic | 視覺工作室 2017 及更高版本 |
+| CS4032、BC37057 | C# 和 Visual Basic | Visual Studio 2017 和更新版本 |
 
 ## <a name="see-also"></a>另請參閱
 
-- [快速操作](../ide/quick-actions.md)
+- [快速動作](../ide/quick-actions.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 201d01d5891b1d788245b2ce61b09f43a50731b1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281470"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>連接字串包含具有純文字密碼的認證，並且不使用整合式安全性
@@ -26,11 +26,11 @@ ms.locfileid: "85281470"
 
 ## <a name="save-options"></a>[儲存] 選項
 
-- 若要儲存含有敏感性資訊的連接字串，請選擇 [**是]**。
+- 若要儲存具有敏感性資訊的連接字串，請選擇 [ **是]**。
 
    連接字串會儲存為應用程式設定。 連接字串會包含純文字的敏感資訊。 DBML 檔案不包含敏感資訊。
 
-- 若要儲存不含敏感性資訊的連接字串，請選擇 [**否**]。
+- 若要儲存不含敏感性資訊的連接字串，請選擇 [ **否**]。
 
    連接字串會儲存為應用程式設定，但是不包含密碼。
 

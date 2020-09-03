@@ -10,20 +10,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: bef208dbcb4c1017840602d198b5099267b25a99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667632"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的擴充正確性規則規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft Extended 正確性規則規則集會將程式碼分析所報告的邏輯和架構使用錯誤最大化。 額外的強調會放在特定案例，例如 COM 互通性和行動應用程式。 如果其中一個案例適用于您的專案，或在您的專案中找出其他問題，您應該考慮包含這個規則集。
+Microsoft 擴充正確性規則規則集會最大化程式碼分析所報告的邏輯和架構使用錯誤。 在特定案例（例如 COM 互通性和行動應用程式）上，會有額外的強調。 如果其中一種情況適用于您的專案，或在您的專案中找出其他問題，您應該考慮包含此規則集。
 
- Microsoft Extended 正確性規則規則集包含 Microsoft Basic 正確性規則規則集內的規則。 基本正確性規則包括 Microsoft 最小建議規則規則集中的規則。 如需詳細資訊，請參閱適用于 managed 程式[代碼的基本正確性規則規則集](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)和受控[碼的 managed 建議規則規則集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+ Microsoft 擴充正確性規則規則集包含 Microsoft 基本正確性規則規則集中的規則。 基本正確性規則包含 Microsoft 建議規則規則集中的規則。 如需詳細資訊，請參閱適用于 managed 程式碼的 [基本正確性規則規則集](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) 和 managed [程式碼的 managed 建議規則規則集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
 
- 下表描述 Microsoft Extended 正確性規則規則集中的所有規則。
+ 下表說明 Microsoft 擴充正確性規則規則集中的所有規則。
 
 |規則|描述|
 |----------|-----------------|
@@ -34,18 +34,18 @@ Microsoft Extended 正確性規則規則集會將程式碼分析所報告的邏�
 |[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|具有原生資源的類型應該要可呼叫 Dispose 方法明確釋放資源|
 |[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|必須將 P/Invokes 移到 NativeMethods 類別|
 |[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|不要隱藏基底類別方法|
-|[CA1063 必須](../code-quality/ca1063-implement-idisposable-correctly.md)|必須正確實作 IDisposable|
+|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|必須正確實作 IDisposable|
 |[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|不要在非預期的位置中引發例外狀況|
 |[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|避免使用重複的快速鍵|
 |[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|P/Invoke 進入點應該要存在|
 |[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|P/Invokes 不應該為可見的|
 |[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|自動配置類型不應該是 COM 可見|
-|[CA1404 必須](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|必須在 P/Invoke 之後立即呼叫 GetLastError|
+|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|必須在 P/Invoke 之後立即呼叫 GetLastError|
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|COM 可見類型的基底類型應該是 COM 可見|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|應該和 COM 註冊方法對應|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invokes 必須正確宣告|
 |[CA1821 必須](../code-quality/ca1821-remove-empty-finalizers.md)|必須移除空的完成項|
-|[CA1900 實](../code-quality/ca1900-value-type-fields-should-be-portable.md)|實值類型欄位應該為可移植的|
+|[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|實值類型欄位應該為可移植的|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|P/Invoke 宣告應該為可移植的|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|不要鎖定具有弱式識別的物件|
 |[CA2100 必須](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|必須檢閱 SQL 查詢中是否有安全性弱點|
@@ -87,8 +87,8 @@ Microsoft Extended 正確性規則規則集會將程式碼分析所報告的邏�
 |[CA2237 必須](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|ISerializable 類型必須標記 SerializableAttribute|
 |[CA2238](../code-quality/ca2238-implement-serialization-methods-correctly.md)|必須正確實作序列化方法|
 |[CA2240 必須](../code-quality/ca2240-implement-iserializable-correctly.md)|必須正確實作 ISerializable|
-|[CA2241 必須](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|必須提供格式化方法的正確引數|
-|[CA2242 必須](../code-quality/ca2242-test-for-nan-correctly.md)|必須正確測試 NaN|
+|[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|必須提供格式化方法的正確引數|
+|[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|必須正確測試 NaN|
 |[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|列舉值中應該要有值為零的成員|
 |[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|多載加號和減號運算子時必須一併多載等號比較運算子|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|不要將常值當作已當地語系化的參數傳遞|
@@ -98,7 +98,7 @@ Microsoft Extended 正確性規則規則集會將程式碼分析所報告的邏�
 |[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|屬性不應該傳回陣列|
 |[CA1820 應該](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|應該使用字串長度測試空白字串|
 |[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|只使用來自目標架構的 API|
-|[CA2004 必須](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|必須移除對 GC.KeepAlive 的呼叫|
+|[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|必須移除對 GC.KeepAlive 的呼叫|
 |[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|必須使用 SafeHandle 封裝原生資源|
 |[CA2102](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|必須使用一般處理常式攔截非 CLSCompliant 例外狀況|
 |[CA2104](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|不要宣告唯讀的可變動參考類型|
@@ -106,7 +106,7 @@ Microsoft Extended 正確性規則規則集會將程式碼分析所報告的邏�
 |[CA2106 必須](../code-quality/ca2106-secure-asserts.md)|必須保護判斷提示|
 |[CA2115](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)|使用原生資源時必須呼叫 GC.KeepAlive|
 |[CA2119](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|密封方法以滿足私用介面的要求|
-|[CA2120 必須](../code-quality/ca2120-secure-serialization-constructors.md)|必須保護序列化建構函式|
+|[CA2120](../code-quality/ca2120-secure-serialization-constructors.md)|必須保護序列化建構函式|
 |[CA2121](../code-quality/ca2121-static-constructors-should-be-private.md)|靜態建構函式應該為私用的|
 |[CA2130](../code-quality/ca2130-security-critical-constants-should-be-transparent.md)|安全性關鍵常數應該是透明的|
 |[CA2205 必須](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|必須使用 Win32 API 的受控對應項|
@@ -151,7 +151,7 @@ Microsoft Extended 正確性規則規則集會將程式碼分析所報告的邏�
 |[CA2219](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)|不要在 exception 子句中引發例外狀況|
 |[CA2225](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|運算子多載必須有具名的替代方法|
 |[CA2228](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|不要使用尚未發行版本所支援的格式建置資源|
-|[CA2230 必須](../code-quality/ca2230-use-params-for-variable-arguments.md)|必須使用 params 作為變數引數|
+|[CA2230](../code-quality/ca2230-use-params-for-variable-arguments.md)|必須使用 params 作為變數引數|
 |[CA2233 運算](../code-quality/ca2233-operations-should-not-overflow.md)|運算不應該發生溢位|
 |[CA2234 必須](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)|必須傳遞 System.Uri 物件而非字串|
 |[CA2243](../code-quality/ca2243-attribute-string-literals-should-parse-correctly.md)|屬性字串常值必須正確剖析|

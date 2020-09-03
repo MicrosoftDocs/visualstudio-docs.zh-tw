@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 434b2ad0f2a6ca4d84c6d82bf9a1a85876a4d975
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570397"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
@@ -31,7 +31,7 @@ devenv /Command CommandName
 
 ## <a name="arguments"></a>引數
 
-*命令名稱*
+*CommandName*
 
 必要。 Visual Studio 命令的完整名稱或其別名，以雙引號括住。 如需命令和別名語法的詳細資訊，請參閱 [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)。
 
@@ -45,7 +45,7 @@ devenv /Command CommandName
 
 ::: moniker-end
 
-如果增益集公開某個命令，則可從命令列中使用此參數啟動增益集。 有關詳細資訊，請參閱[：使用外接程式管理器控制外接程式](/previous-versions/xwdatdwh(v=vs.140))。
+如果增益集公開某個命令，則可從命令列中使用此參數啟動增益集。 如需詳細資訊，請參閱 [如何：使用增益集管理員來控制增益集](/previous-versions/xwdatdwh(v=vs.140))。
 
 ## <a name="example"></a>範例
 
@@ -66,5 +66,5 @@ devenv /command "nf some_file.cs"
 ## <a name="see-also"></a>另請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)
-- [視覺化工作室命令別名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
 - [命令視窗](command-window.md)

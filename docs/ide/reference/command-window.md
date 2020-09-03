@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb855cbed67bffc5ff2fb63b1785c577dd9fea25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570345"
 ---
 # <a name="command-window"></a>命令視窗
@@ -44,7 +44,7 @@ ms.locfileid: "75570345"
 ## <a name="entering-commands"></a>輸入命令
 大於符號 (`>`) 會出現在 [命令] 視窗的左邊緣作為新行的提示。 使用向上鍵和向下鍵來捲動先前所發出的命令。
 
-|Task|解決方法|範例|
+|工作|解決方法|範例|
 |----------|--------------|-------------|
 |評估運算式。|在運算式前面加上問號 (`?`)。|`? myvar`|
 |切換至 [即時運算] 視窗。|將 `immed` 輸入到視窗但沒有大於符號 (>)|`immed`|
@@ -111,5 +111,5 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 
 ## <a name="see-also"></a>另請參閱
 
-- [視覺化工作室命令別名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)

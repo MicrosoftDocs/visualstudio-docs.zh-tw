@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 00461f73059198f5e9028658100c9ccf400be607
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467173"
 ---
 # <a name="idiaimagedataget_imagebase"></a>IDiaImageData::get_imageBase
@@ -33,13 +33,13 @@ HRESULT get_imageBase ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回建議的影像基底值。
+擴展傳回建議的影像基底值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 由於映射基底衝突，映射可能會在載入時自動重定基底至未使用的記憶體位置。 這個方法會傳回在編譯時期儲存在模組中的基底提示（建議的記憶體位置）。
+ 由於映射基底衝突，映射可能會在載入時自動重定基底至未使用的記憶體位置。 這個方法會傳回基底提示， (在編譯時期儲存在模組中的建議記憶體位置) 。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

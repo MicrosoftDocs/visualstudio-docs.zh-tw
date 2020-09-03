@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39bc89e9b41f4d1c384476e673d116cb1cd08159
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467131"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
@@ -33,18 +33,18 @@ IDiaImageData : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|抓取模組虛擬記憶體中相對於應用程式的位置。|
-|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|抓取映射虛擬記憶體中的位置。|
+|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|抓取模組的虛擬記憶體中相對於應用程式的位置。|
+|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|捕獲映射虛擬記憶體中的位置。|
 |[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|抓取影像應依據的記憶體位置。|
 
 ## <a name="remarks"></a>備註
-某些 debug 資料流程（.XDATA，PDATA）包含也儲存在影像中的資料複本。 可以查詢介面的這些資料流程資料物件 `IDiaImageData` 。 如需詳細資訊，請參閱本主題中的「呼叫者的注意事項」一節。
+某些 debug 串流 (.XDATA，.PDATA) 包含也儲存在映射中的資料複本。 這些資料流程資料物件可以針對介面進行查詢 `IDiaImageData` 。 如需詳細資訊，請參閱本主題的「呼叫者的備註」一節。
 
-## <a name="notes-for-callers"></a>呼叫者的注意事項
-`QueryInterface`在[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)物件上呼叫，以取得此介面。 請注意，並非所有的偵錯工具資料流程都支援 `IDiaImageData` 介面。 例如，目前只有 .XDATA 和 PDATA 資料流程支援 `IDiaImageData` 介面。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+`QueryInterface`在[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)物件上呼叫，以取得這個介面。 請注意，並非所有的 debug 資料流程都支援此 `IDiaImageData` 介面。 例如，目前只有 .XDATA 和 .PDATA 資料流程支援此 `IDiaImageData` 介面。
 
 ## <a name="example"></a>範例
-這個範例會在所有支援介面的資料流程上搜尋所有的 debug 資料流程 `IDiaImageData` 。 如果找到這類資料流程，則會顯示有關該資料流程的部分資訊。
+這個範例會在所有支援介面的資料流程上搜尋所有的 debug 資料流程 `IDiaImageData` 。 如果找到這類的資料流程，則會顯示該資料流程的一些相關資訊。
 
 ```C++
 void ShowImageData(IDiaSession *pSession)
@@ -113,7 +113,7 @@ void ShowImageData(IDiaSession *pSession)
 ## <a name="requirements"></a>需求
 標頭： Dia2。h
 
-程式庫： diaguids
+程式庫： diaguids .lib
 
 DLL： msdia80.dll
 

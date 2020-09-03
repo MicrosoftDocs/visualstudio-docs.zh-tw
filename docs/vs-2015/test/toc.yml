@@ -100,7 +100,7 @@
           href: making-coded-ui-tests-wait-for-specific-events-during-playback.md
         - name: 使用不同的 Web 瀏覽器搭配自動程式化 UI 測試
           href: using-different-web-browsers-with-coded-ui-tests.md
-        - name: 使用自動程式碼 UI 測試編輯器，編輯自動程式碼 UI 測試
+        - name: 使用自動程式化 UI 測試編輯器，編輯自動程式化 UI 測試
           href: editing-coded-ui-tests-using-the-coded-ui-test-editor.md
         - name: 使用自動程式化 UI 測試記錄分析自動程式化 UI 測試
           href: analyzing-coded-ui-tests-using-coded-ui-test-logs.md
@@ -158,7 +158,7 @@
               href: create-and-run-unit-tests-for-a-store-app-in-visual-studio.md
             - name: 對 C++ DLL 進行單元測試
               href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-            - name: '對 C# 程式碼進行單元測試'
+            - name: 對 C# 程式碼進行單元測試
               href: unit-testing-visual-csharp-code-in-a-store-app.md
             - name: 在測試總管中執行單元測試
               href: run-unit-tests-for-store-apps-in-visual-studio.md
@@ -166,7 +166,7 @@
           items:
             - name: 使用靜態程式碼分析來分析程式碼品質
               href: analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md
-            - name: '分析 Visual Basic 和 C# 程式碼品質'
+            - name: 分析 Visual Basic 和 C# 程式碼品質
               href: analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md
             - name: 分析 C++ 程式碼品質
               href: analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md

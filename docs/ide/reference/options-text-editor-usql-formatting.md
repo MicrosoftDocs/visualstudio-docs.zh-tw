@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 200ec41a1295178f1127d10053985384a7813158
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568265"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>選項、文字編輯器、U-SQL、格式化
 
-使用 **"格式化**"選項頁設置代碼編輯器中代碼格式的選項。 要訪問此選項頁，請選擇 **"工具** > **選項**"。 在 [選項]**** 對話方塊中，選擇 [文字編輯器]**** > [U-SQL]**** > [格式化]****。
+您可以使用 [ **格式化** 選項] 頁面，設定在程式碼編輯器中格式化程式碼的選項。 若要存取此選項頁面，請選擇 [**工具**  >  **選項**]。 在 [選項]**** 對話方塊中，選擇 [文字編輯器]**** > [U-SQL]**** > [格式化]****。
 
 ## <a name="general-page"></a>[一般] 頁面
 
@@ -44,7 +44,7 @@ ms.locfileid: "75568265"
 
 ### <a name="indentation-remarks"></a>縮排備註
 
-每種語言的 **"選項卡"** 頁上的縮進選項僅確定代碼編輯器在按行末尾的**Enter**時放置游標的位置。 [格式化]**** 下的縮排選項適用於自動格式化程式碼的情況，例如：
+每種語言的索引卷 **標頁上** 的縮排選項只會決定當您在行尾按下 **enter** 時，程式碼編輯器放置游標的位置。 [格式化]**** 下的縮排選項適用於自動格式化程式碼的情況，例如：
 
 - 當您將程式碼貼到檔案中，同時已選取 [貼上時自動格式化]**** 時
 - 當正在格式化的區塊是手動輸入時

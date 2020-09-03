@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetManagedViewerCreationData |Microsoft Docs
+title: IPropertyProxyEESide：： GetManagedViewerCreationData |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b5161894875ac683e5a6e49ae623bd6025531006
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199527"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取此屬性類型的檢視器的相關資訊，才能具現化該檢視器。  
+抓取此屬性類型的檢視器相關資訊，以便具現化該檢視器。  
   
 ## <a name="syntax"></a>語法  
   
@@ -50,28 +50,28 @@ int GetManagedViewerCreationData(
   
 #### <a name="parameters"></a>參數  
  `assemName`  
- [out]傳回保存此物件的組件的名稱。  
+ 擴展傳回保存此物件的元件名稱。  
   
  `assemBytes`  
- [out]傳回[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件，其中包含這個物件 （如果不可用的任何位元組，這是 null 值） 的組件位元組。  
+ 擴展傳回 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 物件，其中包含此物件的元件位元組 (如果沒有可用的位元組) ，此值為 null 值。  
   
  `assemPdb`  
- [out]傳回`IEEDataStorage`物件，包含符號儲存這個物件的資訊 （如果不可用的任何符號存放區，這是 null 值）。  
+ 擴展傳回 `IEEDataStorage` 物件，其中包含這個物件的符號存放區資訊 (如果沒有) 可用的符號存放區，則此值為 null 值。  
   
  `className`  
- [out]傳回包含此物件的類別名稱。  
+ 擴展傳回包含這個物件的類別名稱。  
   
  `alr`  
- [out]傳回值，以從[ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)列舉，指出組件的位置。  
+ 擴展從 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) 列舉傳回值，指出元件的位置。  
   
  `replacementOk`  
- [out]傳回非零值 (`TRUE`)，可以變更這個物件的值; 如果零 (`FALSE`) 的物件是否唯讀。  
+ 擴展 `TRUE` 如果可以變更這個物件的值，則傳回非零的 () ; `FALSE` 如果物件是唯讀的，則傳回零 () 。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 類型視覺化檢視使用這個方法來具現化受管理的檢視器。  
+ 型別視覺化程式會使用這個方法來具現化 managed viewer。  
   
 ## <a name="see-also"></a>另請參閱  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

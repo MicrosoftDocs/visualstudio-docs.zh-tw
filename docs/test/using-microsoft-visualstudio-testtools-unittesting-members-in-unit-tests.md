@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e45df63f36947b5f6f0aad77bb8eebcab4aca731
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585557"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>在單元測試中使用 MSTest 架構
@@ -31,7 +31,7 @@ ms.locfileid: "75585557"
 
 ### <a name="members-used-for-data-driven-testing"></a>用於資料驅動型測試的成員
 
-使用下列項目設定資料驅動型單元測試。 有關詳細資訊，請參閱[創建資料驅動的單元測試](../test/how-to-create-a-data-driven-unit-test.md)和使用[設定檔來定義資料來源](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)。
+使用下列項目設定資料驅動型單元測試。 如需詳細資訊，請參閱 [建立資料驅動型單元測試](../test/how-to-create-a-data-driven-unit-test.md) ，並 [使用設定檔來定義資料來源](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)。
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 
@@ -43,7 +43,7 @@ ms.locfileid: "75585557"
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>用來建立呼叫順序的屬性
 
-以下列屬性裝飾的程式碼項目會在您指定的時間呼叫。 有關詳細資訊，請參閱[單元測試的剖析](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)。
+以下列屬性裝飾的程式碼項目會在您指定的時間呼叫。 如需詳細資訊，請參閱 [單元測試的剖析](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)。
 
 ### <a name="attributes-for-assemblies"></a>組件的屬性
 
@@ -69,7 +69,7 @@ ClassInitialize 和 ClassCleanup 會在載入您的類別之後以及卸載您�
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>用來識別測試類別和方法的屬性
 
-每個測試類別必須具有 `TestClass` 屬性，且每個測試方法必須具有 `TestMethod` 屬性。 有關詳細資訊，請參閱[單元測試的剖析](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)。
+每個測試類別必須具有 `TestClass` 屬性，且每個測試方法必須具有 `TestMethod` 屬性。 如需詳細資訊，請參閱 [單元測試的剖析](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)。
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -77,7 +77,7 @@ ClassInitialize 和 ClassCleanup 會在載入您的類別之後以及卸載您�
 
 ## <a name="assert-classes-and-related-exceptions"></a>Assert 類別和相關的例外狀況
 
-單元測試可以依照其使用各種判斷提示、例外狀況及屬性的方式，確認特定的應用程式行為。 有關詳細資訊，請參閱[使用斷言類](../test/using-the-assert-classes.md)。
+單元測試可以依照其使用各種判斷提示、例外狀況及屬性的方式，確認特定的應用程式行為。 如需詳細資訊，請參閱 [使用 assert 類別](../test/using-the-assert-classes.md)。
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 

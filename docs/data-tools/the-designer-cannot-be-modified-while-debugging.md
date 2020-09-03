@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 483267e2e570efbcc3cc1842560014ee9ba73d11
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281444"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>偵錯期間無法修改設計工具
 
-如果應用程式是以偵錯模式執行，則嘗試修改 **O/R 設計工具** 上的項目時，就會出現這則訊息。 當應用程式在「偵測模式」中執行時， **O/R 設計**工具會是唯讀的。
+如果應用程式是以偵錯模式執行，則嘗試修改 **O/R 設計工具** 上的項目時，就會出現這則訊息。 當應用程式在「偵錯工具」模式中執行時， **O/R 設計** 工具會是唯讀的。
 
-若要更正這個錯誤，請選取 [**調試**] 功能表上的 [**停止調試**]。 應用程式會停止偵錯工具，而且您可以在**O/R 設計**工具中修改專案。
+若要更正這個錯誤，請選取 [**調試**] 功能表上的 [**停止調試**]。 應用程式會停止偵錯工具，您可以在 **O/R 設計**工具中修改專案。
 
 ## <a name="see-also"></a>另請參閱
 

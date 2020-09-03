@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b21cdb9136abe1e960e5b74bbf09e7d1694519d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568954"
 ---
 # <a name="immediate-window"></a>即時運算視窗
@@ -78,7 +78,7 @@ ms.locfileid: "75568954"
 
     [即時運算]**** 視窗會執行 `MyFunction`，並顯示 `4`。
 
-如果函式或副程式含有中斷點，Visual Studio 會在適當的點中斷執行。 然後，您就可以使用偵錯工具視窗來檢查程式狀態。 有關詳細資訊，請參閱[演練：設計階段調試](../../debugger/walkthrough-debugging-at-design-time.md)。
+如果函式或副程式含有中斷點，Visual Studio 會在適當的點中斷執行。 然後，您就可以使用偵錯工具視窗來檢查程式狀態。 如需詳細資訊，請參閱 [逐步解說：在設計階段的調試](../../debugger/walkthrough-debugging-at-design-time.md)程式。
 
 若是必須啟動執行環境的專案類型 (包括 Visual Studio Tools for Office 專案、Web 專案、智慧型裝置專案和 SQL 專案)，您就無法使用設計階段運算式評估。
 
@@ -90,7 +90,7 @@ ms.locfileid: "75568954"
 
 在 [即時運算]**** 視窗中發出 Visual Studio 命令時，必須輸入大於符號 (>)。 使用**向上鍵**和**向下鍵**，捲動並檢視先前使用的命令。
 
-|Task|解決方法|範例|
+|工作|解決方法|範例|
 |----------|--------------|-------------|
 |評估運算式。|在運算式前面加上問號 (?)。|`? a+b`|
 |在即時模式中時，暫時進入命令模式 (以執行單一命令)。|輸入命令，並在前面加上大於符號 (>)。|`>alias`|
@@ -133,7 +133,7 @@ Expression has been evaluated and has no value
 
 - [使用偵錯工具巡覽程式碼](../../debugger/navigating-through-code-with-the-debugger.md)
 - [命令視窗](../../ide/reference/command-window.md)
-- [首先查看調試器](../../debugger/debugger-feature-tour.md)
-- [演練：在設計時調試](../../debugger/walkthrough-debugging-at-design-time.md)
-- [視覺化工作室命令別名](../../ide/reference/visual-studio-command-aliases.md)
+- [偵錯工具簡介](../../debugger/debugger-feature-tour.md)
+- [逐步解說：在設計階段進行調試](../../debugger/walkthrough-debugging-at-design-time.md)
+- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
 - [在 Visual Studio 中使用規則運算式](../../ide/using-regular-expressions-in-visual-studio.md)

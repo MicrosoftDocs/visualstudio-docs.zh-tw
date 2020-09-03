@@ -1,13 +1,13 @@
 ---
 ms.topic: include
 ms.openlocfilehash: 4c17c2c28504ee8f1491173b5d72ceba8f430ab9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85570194"
 ---
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 ::: moniker range="vs-2017"
 - 已安裝 Python 工作負載的 Visual Studio 2017。 如需相關指示，請參閱[在 Visual Studio 中使用 Python - 步驟 0](../tutorial-working-with-python-in-visual-studio-step-00-installation.md)。

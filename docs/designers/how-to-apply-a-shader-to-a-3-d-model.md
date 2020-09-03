@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f1ae981704287a74bb4e37117190b8b6111d0a9
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769237"
 ---
 # <a name="how-to-apply-a-shader-to-a-3d-model"></a>如何：將著色器套用至 3D 模型
@@ -25,7 +25,7 @@ ms.locfileid: "85769237"
 
 開始之前，請確定已顯示 [屬性]**** 視窗。
 
-1. 開始使用包含一或多個模型的 3D 場景。 如果您沒有適當的3D 場景，請建立一個，如[如何：建立基本3D 模型](../designers/how-to-create-a-basic-3-d-model.md)中所述。 您也必須要有可套用至模型的 DGSL 著色器。 如果您沒有適當的著色器，請依照[如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)中所述建立一個著色器，並確定您已將其儲存為檔案後，再繼續進行。
+1. 開始使用包含一或多個模型的 3D 場景。 如果您沒有適當的3D 場景，請依照 [如何：建立基本3D 模型](../designers/how-to-create-a-basic-3-d-model.md)中所述，建立一個場景。 您也必須要有可套用至模型的 DGSL 著色器。 如果您沒有適當的著色器，請依照[如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)中所述建立一個著色器，並確定您已將其儲存為檔案後，再繼續進行。
 
 2. 在 [選取]**** 模式中，選取您要套用著色器的模型，然後在 [屬性]**** 視窗中，於 [效果]**** 屬性群組的 [檔名]**** 屬性中，指定您想要套用至模型的 DGSL 著色器。
 

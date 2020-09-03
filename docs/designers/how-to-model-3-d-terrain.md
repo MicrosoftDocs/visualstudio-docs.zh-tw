@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 12f19363d9024f8e7e2deb69a8038b8854eb50e4
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85768966"
 ---
 # <a name="how-to-model-3d-terrain"></a>如何：建立 3D 地形模型
@@ -29,7 +29,7 @@ ms.locfileid: "85768966"
 
 開始之前，請確定已顯示 [屬性]**** 視窗和 [工具箱]****。
 
-1. 建立要使用的 3D 模型。 如需如何將模型加入至專案的詳細資訊，請參閱[模型編輯器](../designers/model-editor.md)中的消費者入門一節。
+1. 建立要使用的 3D 模型。 如需如何將模型加入至專案的詳細資訊，請參閱 [模型編輯器](../designers/model-editor.md)中的消費者入門一節。
 
 2. 將平面加入場景。 在 [工具箱]**** 的 [形狀]**** 下，選取 [平面]****，並將其移至設計介面。
 
@@ -53,7 +53,7 @@ ms.locfileid: "85768966"
 
 ![顯示地形模型的 3D 場景](../designers/media/digit-terrain-model.png)
 
-您可以使用此地形模型來示範漸層著色器的效果，如[如何：建立以幾何為基礎](../designers/how-to-create-a-geometry-based-gradient-shader.md)的漸層著色器中所述。
+您可以使用這個地形模型來示範 [如何：建立以幾何為基礎](../designers/how-to-create-a-geometry-based-gradient-shader.md)的漸層著色器中所述漸層著色器的效果。
 
 ## <a name="see-also"></a>另請參閱
 

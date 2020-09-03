@@ -138,9 +138,9 @@
           href: develop-tests-from-a-model.md
         - name: 使用分層圖驗證程式碼
           href: validate-code-with-layer-diagrams.md
-    - name: Extend UML models and diagrams
+    - name: 擴充 UML 模型和圖表
       items:
-        - name: Extend UML models and diagrams
+        - name: 擴充 UML 模型和圖表
           href: extend-uml-models-and-diagrams.md
         - name: 定義和安裝模型擴充功能
           href: define-and-install-a-modeling-extension.md

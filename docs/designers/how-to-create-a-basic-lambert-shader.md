@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6f9e5cf95b3766b6c6ceb93c740870a91cfc6af
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769196"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>如何：建立基本 Lambert 著色器
@@ -48,7 +48,7 @@ Lambert 光源模型結合環境與定向光源來為 3D 場景中的物件加�
 
 ![已套用至模型的 Lambert 光源。](../designers/media/digit-lambert-effect-result.png)
 
-如需如何將著色器套用至3D 模型的詳細資訊，請參閱[如何：將著色器套用至3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
+如需如何將著色器套用至3D 模型的詳細資訊，請參閱 [如何：將著色器套用至3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
 
 ## <a name="see-also"></a>另請參閱
 

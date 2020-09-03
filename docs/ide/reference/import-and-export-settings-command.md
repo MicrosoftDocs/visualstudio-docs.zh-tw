@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 409c0f40adfd374065dedb842965d2d1237bc9a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568824"
 ---
 # <a name="import-and-export-settings-command"></a>匯入和匯出設定命令
@@ -61,4 +61,4 @@ Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 - [環境設定](../../ide/environment-settings.md)
 - [同步處理您的設定](../../ide/synchronized-settings-in-visual-studio.md)
 - [將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)
-- [視覺化工作室命令](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)

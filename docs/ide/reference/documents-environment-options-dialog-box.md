@@ -32,13 +32,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7813a2e7686bef5a146e7472bce7f2c24baf9cd2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570059"
 ---
-# <a name="options-dialog-box-environment--documents"></a>選項對話方塊：環境\>文檔
+# <a name="options-dialog-box-environment--documents"></a>選項對話方塊：環境 \> 檔
 
 使用 [選項]**** 對話方塊的這個頁面，即可控制整合式開發環境 (IDE) 中的文件顯示，以及管理文件和檔案的外部變更。 按一下 [工具]**** 功能表上的 [選項]****，然後選取 [環境]**** > [文件]****，即可存取此對話方塊。
 
@@ -71,7 +71,7 @@ ms.locfileid: "75570059"
 選取此選項，可在方案總管**** 中顯示 [其他檔案]**** 節點。 其他檔案是與專案或方案無關，但為了方便您使用而出現在方案總管**** 中。
 
 > [!NOTE]
-> 選擇此選項可為活動 Web 應用程式中未包括的 Web 文檔在 **"檔**"功能表上啟用 **"瀏覽器中查看**"命令。
+> 選取此選項，即可在 [檔案] 功能表上的 [檔案] 功能表上，針對未包含在使用中 web 應用程式的 web**檔**啟用 [**流覽**] 命令
 
 **儲存在其他檔案專案中的項目**
 

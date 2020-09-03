@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fabbd4dc42ac4f66c7f53b639c6e7ed1f432878c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667133"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自訂建置事件
@@ -50,10 +50,10 @@ ms.locfileid: "72667133"
 
 - 視需要包含萬用字元。
 
-     範例：`for %I in (*.txt *.doc *.html) do copy %I c:\`<我的目錄>`\`
+     範例： `for %I in (*.txt *.doc *.html) do copy %I c:\` *mydirectory*`\`
 
     > [!NOTE]
     > 在批次指令碼中，上述程式碼中的 `%I` 應該是 `%%I`。
 
-## <a name="see-also"></a>請參閱
- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)[建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)[逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)
+## <a name="see-also"></a>另請參閱
+ [編譯和建置](../ide/compiling-and-building-in-visual-studio.md) [建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild 特殊字元](../msbuild/msbuild-special-characters.md) [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)

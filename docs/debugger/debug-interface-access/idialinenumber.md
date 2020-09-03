@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c5b1bafd47f4888d9fa352553c4337d0c6c932bd
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466788"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
-存取描述從影像文字位元組區塊對應至原始程式檔行號之程式的資訊。
+存取描述從影像文字位元組區塊對應至原始程式檔行號之進程的資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -33,28 +33,28 @@ IDiaLineNumber : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaLineNumber::get_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|抓取提供影像文字位元組之編譯模組符號的參考。|
+|[IDiaLineNumber::get_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|抓取編譯單位的符號參考，以提供影像文字的位元組。|
 |[IDiaLineNumber::get_sourceFile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)|抓取來源檔案物件的參考。|
-|[IDiaLineNumber::get_lineNumber](../../debugger/debug-interface-access/idialinenumber-get-linenumber.md)|抓取原始程式檔中的行號。|
-|[IDiaLineNumber::get_lineNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-linenumberend.md)|抓取語句或運算式結束的以一為基底的原始程式列號。|
-|[IDiaLineNumber::get_columnNumber](../../debugger/debug-interface-access/idialinenumber-get-columnnumber.md)|抓取運算式或語句開始處的資料行編號。|
+|[IDiaLineNumber::get_lineNumber](../../debugger/debug-interface-access/idialinenumber-get-linenumber.md)|捕獲原始程式檔中的行號。|
+|[IDiaLineNumber::get_lineNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-linenumberend.md)|抓取語句或運算式結束時，以一為基礎的來源行號。|
+|[IDiaLineNumber::get_columnNumber](../../debugger/debug-interface-access/idialinenumber-get-columnnumber.md)|抓取運算式或語句開始的資料行編號。|
 |[IDiaLineNumber::get_columnNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-columnnumberend.md)|抓取運算式或語句結束的資料行編號。|
 |[IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)|抓取區塊開始之記憶體位址的區段部分。|
 |[IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)|抓取區塊開始之記憶體位址的位移部分。|
-|[IDiaLineNumber::get_relativeVirtualAddress](../../debugger/debug-interface-access/idialinenumber-get-relativevirtualaddress.md)|抓取區塊的映射相對虛擬位址（RVA）。|
-|[IDiaLineNumber::get_virtualAddress](../../debugger/debug-interface-access/idialinenumber-get-virtualaddress.md)|抓取區塊的虛擬位址（VA）。|
-|[IDiaLineNumber::get_length](../../debugger/debug-interface-access/idialinenumber-get-length.md)|抓取區塊中的位元組數目。|
-|[IDiaLineNumber::get_sourceFileId](../../debugger/debug-interface-access/idialinenumber-get-sourcefileid.md)|針對產生這一行的原始程式檔，抓取唯一的原始程式檔識別碼。|
-|[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|抓取表示此行資訊的旗標，其描述程式來源中的語句開頭。|
-|[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|抓取提供這一行之編譯模組的唯一識別碼。|
+|[IDiaLineNumber::get_relativeVirtualAddress](../../debugger/debug-interface-access/idialinenumber-get-relativevirtualaddress.md)|抓取區塊 (RVA) 的影像相對虛擬位址。|
+|[IDiaLineNumber::get_virtualAddress](../../debugger/debug-interface-access/idialinenumber-get-virtualaddress.md)|抓取區塊 (VA) 的虛擬位址。|
+|[IDiaLineNumber::get_length](../../debugger/debug-interface-access/idialinenumber-get-length.md)|捕獲區塊中的位元組數目。|
+|[IDiaLineNumber::get_sourceFileId](../../debugger/debug-interface-access/idialinenumber-get-sourcefileid.md)|抓取提供此行之原始程式檔的唯一來源檔案識別碼。|
+|[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|抓取旗標，指出這行資訊描述程式來源中的語句開頭。|
+|[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|抓取提供此行的編譯單位唯一識別碼。|
 
 ## <a name="remarks"></a>備註
 
-## <a name="notes-for-callers"></a>呼叫者的注意事項
-藉由呼叫[IDiaEnumLineNumbers：： Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)或[IDiaEnumLineNumbers：： Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)方法來取得此介面。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+藉由呼叫 [IDiaEnumLineNumbers：： Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md) 或 [IDiaEnumLineNumbers：： Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md) 方法來取得這個介面。
 
 ## <a name="example"></a>範例
-下列函式會顯示函式中所使用的行號（以表示 `pSymbol` ）。
+下列函式會顯示函式中所使用的行號 (由 `pSymbol`) 表示。
 
 ```C++
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
@@ -137,7 +137,7 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 ## <a name="requirements"></a>需求
 標頭： Dia2。h
 
-程式庫： diaguids
+程式庫： diaguids .lib
 
 DLL： msdia80.dll
 

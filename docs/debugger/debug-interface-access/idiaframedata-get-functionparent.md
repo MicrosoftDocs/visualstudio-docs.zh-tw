@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef646016433ecfe19106a17dff391c2dd8ce8382
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467383"
 ---
 # <a name="idiaframedataget_functionparent"></a>IDiaFrameData::get_functionParent
-抓取封閉式函數的框架資料介面。
+抓取封閉函數的框架資料介面。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_functionParent ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回封閉式函數的[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)物件。
+擴展傳回封閉函數的 [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

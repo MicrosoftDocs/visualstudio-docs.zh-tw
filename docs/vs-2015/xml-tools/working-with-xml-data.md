@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1692403d61c99febd30fe3829e5fadd7dd1c51a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669504"
 ---
 # <a name="working-with-xml-data"></a>使用 XML 資料
@@ -47,17 +47,17 @@ ms.locfileid: "72669504"
 > [!NOTE]
 > XSLT 偵錯在 Professional 版及 Team 版中可用。
 
-## <a name="in-this-section"></a>本章節內容
- [XML 編輯器](../xml-tools/xml-editor.md)介紹 XML 編輯器。
+## <a name="in-this-section"></a>本節內容
+ [XML 編輯器](../xml-tools/xml-editor.md) 介紹 XML 編輯器。
 
- [XML 架構設計](../xml-tools/xml-schema-designer.md)工具討論 XML 架構設計工具，並使用 XML 架構定義語言（XSD）架構。
+ [XML 架構設計](../xml-tools/xml-schema-designer.md) 工具討論 XML 架構設計工具，並使用 XML 架構定義語言 (XSD) 架構。
 
 ## <a name="related-sections"></a>相關章節
- [調試 XSLT](../xml-tools/debugging-xslt.md)討論如何使用 Visual Studio 偵錯工具來調試樣式表單。
+ [調試 XSLT](../xml-tools/debugging-xslt.md) 討論如何使用 Visual Studio 偵錯工具來進行樣式表單的偵錯工具。
 
- [XML 標準參考](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)提供 XML 技術的相關資訊，包括 XML、檔案類型定義（DTD）、XML 架構定義語言（XSD）和 XSLT。
+ [XML 標準參考](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) 提供 XML 技術的相關資訊，包括 XML、檔案類型定義 (DTD) 、XML 架構定義語言 (XSD) 和 XSLT。
 
- [Managed 程式碼中的 XML Web Service](https://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)討論如何建立和部署 XML Web 服務，以及如何存取 XML Web Service。
+ [Managed 程式碼中的 XML Web Service](https://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) 討論如何建立和部署 XML Web Service，以及如何存取 XML Web Service。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d9a5a29cd63f9d51f86d41d2f0f5986a77666318
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666870"
 ---
 # <a name="log-command-window-output-command"></a>記錄命令視窗輸出命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-將來自 [命令]  視窗的所有輸入和輸出複製到檔案中。
+將來自 [命令]**** 視窗的所有輸入和輸出複製到檔案中。
 
 ## <a name="syntax"></a>語法
 
@@ -38,10 +38,10 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 > [!TIP]
 > 若要變更儲存記錄檔的位置，請輸入檔案的完整路徑，如果路徑包含任何空格則以引號括住。
 
-## <a name="switches"></a>參數
- /on 選擇性。 開始在指定的檔案中記錄 [命令]  視窗，並將新資訊附加至檔案。
+## <a name="switches"></a>交換器
+ /on 選擇性。 開始在指定的檔案中記錄 [命令]**** 視窗，並將新資訊附加至檔案。
 
- /off 選擇性。 停止 [命令]  視窗的記錄。
+ /off 選擇性。 停止 [命令]**** 視窗的記錄。
 
  /overwrite 選擇性。 如果在 `filename` 引數指定的檔案符合現有檔案，即會覆寫該檔案。
 
@@ -68,4 +68,4 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ```
 
 ## <a name="see-also"></a>另請參閱
- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)[命令視窗](../../ide/reference/command-window.md)[尋找/命令框](../../ide/find-command-box.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio](../../ide/reference/visual-studio-commands.md)命令[視窗](../../ide/reference/command-window.md)[尋找/命令箱](../../ide/find-command-box.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

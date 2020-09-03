@@ -26,7 +26,7 @@
               href: securing-clickonce-applications.md
             - name: ClickOnce 和 Authenticode
               href: clickonce-and-authenticode.md
-            - name: 受信任的應用程式部署概觀
+            - name: Trusted Application Deployment Overview
               href: trusted-application-deployment-overview.md
             - name: ClickOnce 應用程式的程式碼存取安全性
               href: code-access-security-for-clickonce-applications.md
@@ -168,41 +168,41 @@
               items:
                 - name: ndptecclick
                   href: clickonce-application-manifest.md
-                - name: \<assembly> 元素
+                - name: \<assembly> 項目
                   href: assembly-element-clickonce-application.md
-                - name: \<assemblyIdentity> 元素
+                - name: \<assemblyIdentity> 項目
                   href: assemblyidentity-element-clickonce-application.md
-                - name: \<trustInfo> 元素
+                - name: \<trustInfo> 項目
                   href: trustinfo-element-clickonce-application.md
-                - name: \<entryPoint> 元素
+                - name: \<entryPoint> 項目
                   href: entrypoint-element-clickonce-application.md
-                - name: \<dependency> 元素
+                - name: \<dependency> 項目
                   href: dependency-element-clickonce-application.md
-                - name: \<file> 元素
+                - name: \<file> 項目
                   href: file-element-clickonce-application.md
-                - name: \<fileAssociation> 元素
+                - name: \<fileAssociation> 項目
                   href: fileassociation-element-clickonce-application.md
             - name: ClickOnce 部署資訊清單
               items:
                 - name: ClickOnce 部署資訊清單
                   href: clickonce-deployment-manifest.md
-                - name: \<assembly> 元素
+                - name: \<assembly> 項目
                   href: assembly-element-clickonce-deployment.md
-                - name: \<assemblyIdentity> 元素
+                - name: \<assemblyIdentity> 項目
                   href: assemblyidentity-element-clickonce-deployment.md
-                - name: \<description> 元素
+                - name: \<description> 項目
                   href: description-element-clickonce-deployment.md
-                - name: \<deployment> 元素
+                - name: \<deployment> 項目
                   href: deployment-element-clickonce-deployment.md
-                - name: \<compatibleFrameworks> 元素
+                - name: \<compatibleFrameworks> 項目
                   href: compatibleframeworks-element-clickonce-deployment.md
-                - name: \<dependency> 元素
+                - name: \<dependency> 項目
                   href: dependency-element-clickonce-deployment.md
-                - name: \<publisherIdentity> 元素
+                - name: \<publisherIdentity> 項目
                   href: publisheridentity-element-clickonce-deployment.md
-                - name: \<Signature> 元素
+                - name: \<Signature> 項目
                   href: signature-element-clickonce-deployment.md
-                - name: \<customErrorReporting> 元素
+                - name: \<customErrorReporting> 項目
                   href: customerrorreporting-element-clickonce-deployment.md
             - name: ClickOnce Unmanaged API 參考
               href: clickonce-unmanaged-api-reference.md
@@ -228,21 +228,21 @@
           items:
             - name: 產品和封裝結構描述參考
               href: product-and-package-schema-reference.md
-            - name: \<Product> 元素
+            - name: \<Product> 項目
               href: product-element-bootstrapper.md
-            - name: \<Package> 元素
+            - name: \<Package> 項目
               href: package-element-bootstrapper.md
-            - name: \<RelatedProducts> 元素
+            - name: \<RelatedProducts> 項目
               href: relatedproducts-element-bootstrapper.md
-            - name: \<InstallChecks> 元素
+            - name: \<InstallChecks> 項目
               href: installchecks-element-bootstrapper.md
-            - name: \<Commands> 元素
+            - name: \<Commands> 項目
               href: commands-element-bootstrapper.md
-            - name: \<PackageFiles> 元素
+            - name: \<PackageFiles> 項目
               href: packagefiles-element-bootstrapper.md
-            - name: \<Strings> 元素
+            - name: \<Strings> 項目
               href: strings-element-bootstrapper.md
-            - name: \<Schedules> 元素
+            - name: \<Schedules> 項目
               href: schedules-element-bootstrapper.md
     - name: InstallShield 限量版
       href: installshield-limited-edition.md

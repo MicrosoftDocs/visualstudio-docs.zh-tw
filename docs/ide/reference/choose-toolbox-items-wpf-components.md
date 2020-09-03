@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 731fe05e90e01c60f0a7ff3a14917d6d7625bc1e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570553"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>選擇工具箱項目、WPF 元件
 
-[選擇工具箱項目]**** 對話方塊的這個索引標籤會顯示您的本機電腦上可用的 Windows Presentation Foundation (WPF) 控制項清單。 要顯示此清單，請從"**工具**"功能表**中選擇"工具箱專案**"以顯示"**選擇工具箱專案"** 對話方塊，然後選擇其**WPF 元件**選項卡。要對列出的元件進行排序，請選擇任何列標題。
+[選擇工具箱項目]**** 對話方塊的這個索引標籤會顯示您的本機電腦上可用的 Windows Presentation Foundation (WPF) 控制項清單。 若要顯示這份清單，請從 [**工具**] 功能表選取 **[選擇工具箱專案**]，以顯示 [**選擇工具箱專案**] 對話方塊，然後選取其 [ **WPF 元件**] 索引標籤。若要排序列出的元件，請選取任何資料行標題。
 
 - 如果選取了某個元件旁的核取方塊，[工具箱]**** 中會顯示該元件的圖示。
 
@@ -43,7 +43,7 @@ ms.locfileid: "75570553"
 
 顯示 [.NET API](/dotnet/api/?view=netframework-4.7) 命名空間的階層，其能定義元件的結構。 依此欄排序以列出安裝在您電腦上之每個 .NET 命名空間內的可用元件。
 
-**程式集名稱**
+**元件名稱**
 
 顯示 .NET 組件的名稱，其中包含每個元件的命名空間。 依此欄排序以列出安裝在您電腦上之每個 .NET 組件中所包含的命名空間。
 
@@ -57,7 +57,7 @@ ms.locfileid: "75570553"
 
 根據您在文字方塊中提供的字串來篩選 WPF 控制項清單。 這會顯示四個欄位中的所有相符項。
 
-**清楚**
+**Clear**
 
 清除篩選字串。
 

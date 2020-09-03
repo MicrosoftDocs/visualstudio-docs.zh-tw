@@ -1,5 +1,5 @@
 ---
-title: 如何：使用工作流程設計工具 Debug XAML |Microsoft Docs
+title: 如何：使用工作流程設計工具來對 XAML 進行 Debug |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a696123551c24fd0d14fecde67826cf14f88826f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668653"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>HOW TO：使用工作流程設計工具偵測 XAML
@@ -26,13 +26,13 @@ ms.locfileid: "72668653"
 
 1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟工作流程或活動專案。
 
-2. 如[如何：在工作流程中設定中斷點中](../workflow-designer/how-to-set-breakpoints-in-workflows.md)所述，在您想要進行 debug 的活動或活動上設定中斷點。
+2. 在活動或您想要進行調試的活動上設定中斷點，如 [如何：在工作流程中設定中斷點](../workflow-designer/how-to-set-breakpoints-in-workflows.md)所述。
 
 3. 以滑鼠右鍵按一下包含您工作流程定義的 .xaml 檔案，然後選取 [ **View Code**]。 在設計檢視中設定中斷點的活動之後，您會看到該活動 XAML 項目宣告的同一行上顯示中斷點。
 
-4. 如[如何：叫用工作流程偵錯工具](../workflow-designer/how-to-invoke-the-workflow-debugger.md)中所述，叫用偵錯工具。
+4. 如 how to：叫用 [工作流程偵錯工具](../workflow-designer/how-to-invoke-the-workflow-debugger.md)中所述，叫用偵錯工具。
 
-5. 當程式碼執行到您的其中一個中斷點時，該中斷點關聯的 XAML 項目會出現醒目顯示。 若要移到下一個中斷點，請使用**F10**或**F11**鍵。
+5. 當程式碼執行到您的其中一個中斷點時，該中斷點關聯的 XAML 項目會出現醒目顯示。 若要移至下一個中斷點，請使用 **F10** 或 **F11** 鍵。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [如何：在工作流程中設定中斷點](../workflow-designer/how-to-set-breakpoints-in-workflows.md)[如何：叫用工作流程偵錯工具](../workflow-designer/how-to-invoke-the-workflow-debugger.md)
