@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b6d01a95b7e0872d6bb36c6d9f3917bc6a05b3b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779814"
 ---
 # <a name="args"></a>Args
@@ -28,10 +28,10 @@ VSPerfCmd.exe /Launch:AppName /Args:Arguments [Options]
 ```
 
 #### <a name="parameters"></a>參數
- `Arguments`啟動**命令的目標**應用程式的參數清單。
+ `Arguments`**啟動**命令之目標應用程式的引數清單。
 
 ## <a name="required-options"></a>必要選項
- **啟動：**`AppName`啟動指定的應用程式並開始使用採樣方法進行分析。
+ **啟動：** `AppName` 啟動指定的應用程式，並開始使用取樣方法進行程式碼剖析。
 
 ## <a name="example"></a>範例
  下列範例使用 **Args** 選項將引數傳遞至 TestApp.exe。
@@ -44,5 +44,5 @@ VSPerfCmd.exe /Launch:TestApp.exe /Args:"123, 'Hello World'"
 ## <a name="see-also"></a>另請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [分析ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [分析 ASP.NET web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [分析服務](../profiling/command-line-profiling-of-services.md)

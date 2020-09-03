@@ -1,5 +1,5 @@
 ---
-title: 自訂工具 |微軟文件
+title: 自訂工具 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,44 +13,44 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e60f1d8cb8b25ed50b0b20c5ebb538286687ad72
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708951"
 ---
 # <a name="custom-tools"></a>自訂工具
-*自訂工具*允許您將工具與專案中的項目相關聯,並在保存檔時運行該工具。 某些自定義工具(有時稱為*單檔產生器*)通常用於實現從資料生成代碼的轉換器,反之亦然。 例如,單檔產生器從 *.設定*和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] *.resx*檔案建立[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和原始碼。 生成的原始碼提供對 *.設定*和 *.resx*檔案中的數據的強類型存取。 和[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)][!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]專案類型支援自定義工具;[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]項目類型不。 您自己的項目類型也可以支援自定義工具。
+*自訂工具* 可讓您將工具與專案中的專案建立關聯，並在儲存檔案時執行該工具。 某些自訂工具有時稱為 *單一*檔案產生器，經常用來執行從資料產生程式碼的轉譯程式，反之亦然。 例如，單一檔案產生器會 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 從 *設定* 和 *.resx* 檔建立和原始程式碼。 產生的原始程式碼會提供對 *. 設定* 和 *.resx* 檔中資料的強型別存取。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 專案類型支援自訂工具， [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 專案類型則不支援。 您自己的專案類型也可以支援自訂工具。
 
- 自定義工具是實現介面的`IVsSingleFileGenerator`註冊元件。
+ 自訂工具是用來執行介面的註冊元件 `IVsSingleFileGenerator` 。
 
- 自定義工具與`ProjectItem`介面物件相關聯,並且類似於設計器和編輯器。 自訂工具將表示為輸入的文件`ProjectItem`作為輸入,並寫入其檔名`DefaultExtension`由方法提供的新檔。
+ 自訂工具會與 `ProjectItem` 介面物件相關聯，而且類似于設計工具和編輯器。 自訂工具會採用以 `ProjectItem` 做為輸入的檔案，並寫入新檔案，該檔案的檔案名是由 `DefaultExtension` 方法所提供。
 
 ## <a name="in-this-section"></a>本節內容
-- [實現單檔產生器](../../extensibility/internals/implementing-single-file-generators.md)
+- [執行單一檔案產生器](../../extensibility/internals/implementing-single-file-generators.md)
 
- 描述如何使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>介面實現自定義工具。
+ 描述如何使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> 介面來執行自訂工具。
 
 - [註冊單一檔案產生器](../../extensibility/internals/registering-single-file-generators.md)
 
- 提供自定義工具的所有註冊表項的說明。
+ 提供自訂工具所有登錄專案的描述。
 
-- [以視覺化設計器公開類型](../../extensibility/internals/exposing-types-to-visual-designers.md)
+- [將類型公開至視覺化設計工具](../../extensibility/internals/exposing-types-to-visual-designers.md)
 
- 說明專案系統如何支援可視化設計人員通過臨時可移植可執行 (PE) 檔案存取生成的類和類型。
+ 說明專案系統如何提供視覺化設計工具支援，透過暫時性可執行檔 (PE) 檔來存取產生的類別和類型。
 
-- [保留項目項目的屬性](../../extensibility/persisting-the-property-of-a-project-item.md)
+- [保存專案專案的屬性](../../extensibility/persisting-the-property-of-a-project-item.md)
 
- 展示如何在專案檔中保留專案項屬性(如源檔的作者)。
+ 顯示如何在專案檔中保存專案專案屬性，例如原始程式檔的作者。
 
-## <a name="reference"></a>參考
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>提供有關的詳細資訊,<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>該檔將單個輸入檔案轉換為單個輸出檔,該檔可以編譯或添加到專案中。
+## <a name="reference"></a>參考資料
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> 提供的詳細資料 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> ，它會將單一輸入檔轉換成單一輸出檔案，該檔案可以編譯或新增至專案。
 
- <xref:EnvDTE.ProjectItem>解釋`ProjectItem`表示專案中的項的介面。
+ <xref:EnvDTE.ProjectItem> 說明 `ProjectItem` 代表專案中專案的介面。
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>提供有關`DefaultExtension`方法的詳細資訊,該方法檢索提供給輸出檔名的檔名副檔名。
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> 提供方法的詳細資料 `DefaultExtension` ，該方法會抓取提供給輸出檔名稱的副檔名。
 
 ## <a name="related-sections"></a>相關章節
-- [延伸項目](../../extensibility/extending-projects.md)
+- [擴充專案](../../extensibility/extending-projects.md)
 
  描述如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 專案和解決方案組織程式碼檔案和資源檔，以及如何實作原始檔控制。

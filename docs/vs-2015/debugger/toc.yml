@@ -28,7 +28,7 @@
                   href: format-specifiers-in-cpp.md
                 - name: 內容運算子 (C++)
                   href: context-operator-cpp.md
-                - name: 'C# 中的格式規範'
+                - name: C# 中的格式規範
                   href: format-specifiers-in-csharp.md
                 - name: 虛擬變數
                   href: pseudovariables.md
@@ -118,7 +118,7 @@
                   href: enabling-debug-features-in-visual-cpp-d-debug.md
             - name: Web 專案的屬性頁設定
               href: property-pages-settings-for-web-projects.md
-            - name: 'C# 偵錯組態的專案設定'
+            - name: C# 偵錯組態的專案設定
               href: project-settings-for-csharp-debug-configurations.md
             - name: Project Settings for a Visual Basic Debug Configuration
               href: project-settings-for-a-visual-basic-debug-configuration.md
@@ -170,7 +170,7 @@
                   href: how-to-write-a-visualizer.md
                 - name: 視覺化檢視架構
                   href: visualizer-architecture.md
-                - name: '以 C# 撰寫視覺化檢視'
+                - name: 以 C# 撰寫視覺化檢視
                   href: walkthrough-writing-a-visualizer-in-csharp.md
                 - name: 在 Visual Basic 中撰寫視覺化檢視
                   href: walkthrough-writing-a-visualizer-in-visual-basic.md
@@ -204,13 +204,13 @@
               href: edit-and-continue-visual-cpp.md
             - name: 支援的程式碼變更 (C++)
               href: supported-code-changes-cpp.md
-        - name: '編輯後繼續 (Visual C#)'
+        - name: 編輯後繼續 (Visual C#)
           items:
-            - name: '編輯後繼續 (Visual C#)'
+            - name: 編輯後繼續 (Visual C#)
               href: edit-and-continue-visual-csharp.md
-            - name: '使用編輯後繼續 (C#)'
+            - name: 使用編輯後繼續 (C#)
               href: how-to-use-edit-and-continue-csharp.md
-            - name: '支援的程式碼變更 (C#)'
+            - name: 支援的程式碼變更 (C#)
               href: supported-code-changes-csharp.md
         - name: 編輯後繼續 (Visual Basic)
           items:
@@ -220,7 +220,7 @@
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
             - name: Visual Basic 編輯後繼續中不支援的編輯
               href: unsupported-edits-in-visual-basic-edit-and-continue.md
-        - name: 'F# 不支援編輯後繼續'
+        - name: F# 不支援編輯後繼續
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: 使用傾印檔案
       items:
@@ -396,15 +396,15 @@
                   href: quickstart-debug-javascript-using-the-console.md
                 - name: JavaScript Console commands
                   href: javascript-console-commands.md
-            - name: '啟動偵錯工作階段 (VB、C#、C++ 和 XAML)'
+            - name: 啟動偵錯工作階段 (VB、C#、C++ 和 XAML)
               href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
             - name: 在 Blend for Visual Studio 中對 XAML 進行偵錯
               href: debug-xaml-in-blend.md
-            - name: '巡覽偵錯工作階段 (Xaml 和 C#)'
+            - name: 巡覽偵錯工作階段 (Xaml 和 C#)
               items:
-                - name: '巡覽偵錯工作階段 (Xaml 和 C#)'
+                - name: 巡覽偵錯工作階段 (Xaml 和 C#)
                   href: navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md
-                - name: '偵錯工具巡覽範例程式碼 (Xaml 和 C#)'
+                - name: 偵錯工具巡覽範例程式碼 (Xaml 和 C#)
                   href: debugger-navigation-sample-code-xaml-and-csharp.md
             - name: 觸發 Microsoft Store 的暫止、繼續和背景事件
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
@@ -414,9 +414,9 @@
       items:
         - name: 偵錯 Managed 程式碼
           href: debugging-managed-code.md
-        - name: 'C#、F# 和 Visual Basic 專案類型'
+        - name: C#、F# 和 Visual Basic 專案類型
           items:
-            - name: 'C#、F# 和 Visual Basic 專案類型'
+            - name: C#、F# 和 Visual Basic 專案類型
               href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
             - name: 建議的屬性設定
               href: managed-debugging-recommended-property-settings.md
@@ -454,7 +454,7 @@
               href: how-to-use-the-wpf-tree-visualizer.md
             - name: 顯示 WPF 追蹤資訊
               href: how-to-display-wpf-trace-information.md
-        - name: '偵錯 F#'
+        - name: 偵錯 F#
           href: debugging-f-hash.md
     - name: 偵錯機器碼
       items:

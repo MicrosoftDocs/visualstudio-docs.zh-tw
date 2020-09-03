@@ -1,5 +1,5 @@
 ---
-title: IDSymbol 元素 |微軟文件
+title: IDSymbol 元素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d02a26a6874165738d917a14986d16d142c01915
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710367"
 ---
 # <a name="idsymbol-element"></a>IDSymbol 元素
-該`IDSymbol`元素包含表示功能表、組或命令的 GUID:ID 對的 ID。 GUID 來自`GuidSymbol`父 元素。 元素`IDSymbol`具有一`name`個 屬性,該屬性為 ID 提供友好名稱,`value`該名稱包含在 屬性中。
+`IDSymbol`元素包含 GUID： id 組的識別碼，代表功能表、群組或命令。 GUID 來自父 `GuidSymbol` 元素。 專案 `IDSymbol` 具有屬性， `name` 該屬性會提供識別碼的易記名稱，該名稱包含在屬性中 `value` 。
 
 ## <a name="syntax"></a>語法
 
@@ -34,20 +34,20 @@ ms.locfileid: "80710367"
 
 |屬性|描述|
 |---------------|-----------------|
-|NAME|必要。 ID 符號的名稱。|
-|value|必要。 ID 符號的數字 ID 值。|
+|NAME|必要。 識別碼符號的名稱。|
+|value|必要。 識別碼符號的數值識別碼值。|
 
 ### <a name="child-elements"></a>子元素
  無。
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[吉德符號元素](../extensibility/guidsymbol-element.md)|包含表示功能表、組或命令的 GUID:ID 對的 GUID。 將 `IDSymbol` 項目設為群組。|
+|[GuidSymbol 元素](../extensibility/guidsymbol-element.md)|包含代表功能表、群組或命令之 GUID： ID 組的 GUID。 將 `IDSymbol` 項目設為群組。|
 
 ## <a name="remarks"></a>備註
- 指定元素`IDSymbol``GuidSymbol`的元素必須具有唯一的`value`。 但是,`IDSymbol`具有相同值的元素可以存在於包中,只要它們具有不同的父項。
+ `IDSymbol`指定專案中的每個元素都 `GuidSymbol` 必須有唯一的 `value` 。 不過， `IDSymbol` 具有相同值的專案可以存在於封裝中，前提是它們有不同的父系。
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室指令表 (.vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio 命令表格 (. .vsct) 檔](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

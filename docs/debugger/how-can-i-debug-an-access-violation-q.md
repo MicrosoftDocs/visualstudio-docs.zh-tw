@@ -1,5 +1,5 @@
 ---
-title: Debug c + + 存取違規 |Microsoft Docs
+title: 對 c + + 存取違規進行 Debug |Microsoft Docs
 ms.custom: seodec18
 ms.date: 02/05/2019
 ms.topic: how-to
@@ -20,19 +20,19 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 803f81d1a26438c2134349a85369d341353e17cf
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350416"
 ---
-# <a name="how-can-i-debug-a-c-access-violation"></a>我要如何在 c + + 存取違規中進行調試？
+# <a name="how-can-i-debug-a-c-access-violation"></a>如何將 c + + 存取違規進行調試
 
 ## <a name="problem-description"></a>問題說明
 
 我的程式產生存取違規。 該如何偵錯？
 
-## <a name="solution"></a>解決方案
+## <a name="solution"></a>解決方法
 
 如果您在對多個指標取值的程式碼行上取得存取違規，可能很難找出哪個指標造成存取違規。 從 Visual Studio 2015 Update 1 開始，例外狀況對話方塊現在會明確地指出造成存取違規的指標。
 
@@ -77,7 +77,7 @@ int main() {
 
 ![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")
 
-如果您無法判斷指標造成存取違規的原因，請追蹤整個程式碼，確定已正確指派造成問題的指標。  如果以參數的形式傳遞，請確定它已正確傳遞，而且您不會不小心建立[淺層複製](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy)。 然後確認這些值未在程式中的某處意外變更，方法是為有問題的指標建立資料中斷點，以確定此指標未在程式中的其他位置修改。 如需資料中斷點的詳細資訊，請參閱 [Using Breakpoints](../debugger/using-breakpoints.md)中的＜資料中斷點＞一節。
+如果您無法判斷指標造成存取違規的原因，請追蹤整個程式碼，確定已正確指派造成問題的指標。  如果以參數形式傳遞，請確定其已正確傳遞，且您不會意外地建立 [淺層複製](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy)。 然後確認這些值未在程式中的某處意外變更，方法是為有問題的指標建立資料中斷點，以確定此指標未在程式中的其他位置修改。 如需資料中斷點的詳細資訊，請參閱 [Using Breakpoints](../debugger/using-breakpoints.md)中的＜資料中斷點＞一節。
 
 ## <a name="see-also"></a>另請參閱
 - [機器碼偵錯 FAQ](../debugger/debugging-native-code-faqs.md)

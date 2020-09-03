@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ac671c3b0ba40c462403b2afa850c3936156d6d2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74774122"
 ---
 # <a name="lineoff"></a>LineOff
@@ -28,12 +28,12 @@ VSPerfCmd.exe /Launch:AppName /LineOff [Options]
 ```
 
 #### <a name="parameters"></a>參數
- None
+ 無
 
 ## <a name="required-options"></a>必要選項
  **LineOff** 選項只能用在包含 [啟動]**** 選項的命令列中。
 
- **啟動：**`AppName`啟動指定的應用程式並開始使用採樣方法進行分析。
+ **啟動：** `AppName` 啟動指定的應用程式，並開始使用取樣方法進行程式碼剖析。
 
 ## <a name="example"></a>範例
  這個範例會啟動應用程式和分析工具，並停用程式碼層級的取樣。
@@ -46,5 +46,5 @@ VSPerfCmd.exe /Launch:TestApp.exe /LineOff
 ## <a name="see-also"></a>另請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [設定檔ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [分析 ASP.NET web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [分析服務](../profiling/command-line-profiling-of-services.md)

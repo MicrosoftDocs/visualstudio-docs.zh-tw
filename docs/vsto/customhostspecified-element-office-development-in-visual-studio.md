@@ -1,5 +1,5 @@
 ---
-title: '&lt;d &gt; 元素（Visual Studio 中的 Office 開發）'
+title: '&lt;&gt;在 Visual Studio) 中 (Office 開發的 d 元素'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -17,14 +17,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 689848f14b4540a54489b4ea5bbad67e493fe276
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544907"
 ---
-# <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;d &gt; 元素（Visual Studio 中的 Office 開發）
-  `customHostSpecified`元素表示此方案不是獨立應用程式。 Office 方案包含裝載于 Microsoft Office 應用程式內的元件。
+# <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;&gt;在 Visual Studio) 中 (Office 開發的 d 元素
+  `customHostSpecified`元素表示此方案不是獨立的應用程式。 Office 方案包含在 Microsoft Office 應用程式中裝載的元件。
 
 ## <a name="syntax"></a>語法
 
@@ -33,14 +33,14 @@ ms.locfileid: "85544907"
 ```
 
 ## <a name="elements-and-attributes"></a>元素和屬性
- `customHostSpecified`Office 方案需要元素。 此元素位於 `co.v1` 命名空間中，指定此部署包含將部署在自訂主機內且不是獨立應用程式的元件。
+ `customHostSpecified`Office 方案需要元素。 此元素位於 `co.v1` 命名空間中，並指定此部署包含將在自訂主機內部署的元件，而不是獨立的應用程式。
 
- 這個元素是 `<entrypoint>` 應用程式資訊清單中第一個元素的子系。 該元素中不能有其他子項目， `<entrypoint>` 或在 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 安裝期間將會引發驗證錯誤。
+ 此專案是 `<entrypoint>` 應用程式資訊清單中第一個元素的子系。 該元素中不能有其他子項目， `<entrypoint>` 或在 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 安裝期間會引發驗證錯誤。
 
- 這個元素沒有屬性，而且沒有子專案。
+ 此元素沒有屬性和子項目。
 
 ## <a name="example"></a>範例
- 下列程式碼範例說明 `customHostSpecified` Office 方案的應用程式資訊清單中的元素。 這個程式碼範例是[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中提供之較大範例的一部分。
+ 下列程式碼範例說明 `customHostSpecified` Office 方案的應用程式資訊清單中的元素。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ```xml
 <entryPoint>

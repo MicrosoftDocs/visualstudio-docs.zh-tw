@@ -1,5 +1,5 @@
 ---
-title: IntelliSenseHostFlags |微軟文件
+title: IntelliSenseHostFlags |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0df05e7363db01bd4f16fee5d75141dc93df1c0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710262"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
-指定 IntelliSense 主機標誌。
+指定 IntelliSense 主機旗標。
 
 ## <a name="syntax"></a>語法
 
@@ -40,14 +40,14 @@ enum IntellisenseHostFlags
 
 |成員|描述|
 |-------------|-----------------|
-|`IHF_READONLYCONTEXT`|上下文緩衝區是唯讀的。|
-|`IHF_NOSEPARATESUBJECT`|無主題文本。 上下文緩衝區包含 IntelliSense 目標`!IHF_READONLYCONTEXT`(暗示 )。|
-|`IHF_SINGLELINESUBJECT`|主題文本不支援多行。|
+|`IHF_READONLYCONTEXT`|內容緩衝區是唯讀的。|
+|`IHF_NOSEPARATESUBJECT`|沒有主體文字。 內容緩衝區包含 IntelliSense-目標 (意指 `!IHF_READONLYCONTEXT`) 。|
+|`IHF_SINGLELINESUBJECT`|主體文字無法支援多行功能。|
 |`IHF_FORCECOMMITTOCONTEXT`|與 `CanCommitIntoReadOnlyBuffer` 相同。|
-|`IHF_OVERTYPE`|編輯(在主題或上下文中)應在過度類型模式下完成。|
+|`IHF_OVERTYPE`|在 [主體] 或 [內容]) 中編輯 (應該在 [改寫] 模式中完成。|
 
 ## <a name="requirements"></a>需求
- 單檔案編輯器.idl
+ SingleFileeditor .idl
 
 ## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.TextManager.Interop>

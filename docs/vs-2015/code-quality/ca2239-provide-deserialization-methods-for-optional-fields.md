@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: dfbb9082d557c8e67ddebf0237293364d54a65cf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545128"
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239:必須為選擇性欄位提供還原序列化方法
@@ -29,23 +29,23 @@ ms.locfileid: "85545128"
 |-|-|
 |TypeName|ProvideDeserializationMethodsForOptionalFields|
 |CheckId|CA2239|
-|類別|Microsoft。使用方式|
+|類別|Microsoft. 使用量|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 型別具有以屬性標記的欄位 <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> ，而且型別不提供還原序列化事件處理方法。
+ 類型具有以屬性標記的欄位 <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> ，而類型不提供還原序列化事件處理方法。
 
 ## <a name="rule-description"></a>規則描述
- <xref:System.Runtime.Serialization.OptionalFieldAttribute>屬性不會影響序列化; 以屬性標記的欄位會序列化。 不過，還原序列化時會忽略欄位，並保留與其類型相關聯的預設值。 還原序列化的事件處理常式應該宣告為在還原序列化過程中設定欄位。
+ <xref:System.Runtime.Serialization.OptionalFieldAttribute>屬性對序列化沒有任何作用; 以屬性標記的欄位會序列化。 不過，還原序列化時，會忽略此欄位，並保留與其類型相關聯的預設值。 還原序列化事件處理常式時，應該宣告以在取消序列化程式期間設定欄位。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規，請將還原序列化事件處理方法加入至類型。
+ 若要修正此規則的違規情形，請將還原序列化事件處理方法加入至類型。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果在還原序列化程式期間應該忽略欄位，則可以放心地隱藏此規則的警告。
+ 如果在還原序列化程式期間應該忽略欄位，就可以安全地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示具有選擇性欄位和還原序列化事件處理方法的類型。
+ 下列範例顯示具有選擇性欄位和還原序列化事件處理方法的型別。
 
  [!code-csharp[FxCop.Usage.OptionalFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OptionalFields/cs/FxCop.Usage.OptionalFields.cs#1)]
  [!code-vb[FxCop.Usage.OptionalFields#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.OptionalFields/vb/FxCop.Usage.OptionalFields.vb#1)]

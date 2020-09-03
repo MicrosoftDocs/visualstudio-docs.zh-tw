@@ -1,5 +1,5 @@
 ---
-title: CA2235 必須：標記所有非可序列化的欄位 |Microsoft Docs
+title: CA2235 必須：標記所有不可序列化的欄位 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: fab79fd4daab98c6cade9271b32c45b5ae4b4332
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545193"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235:必須標記所有不可序列化的欄位
@@ -29,23 +29,23 @@ ms.locfileid: "85545193"
 |-|-|
 |TypeName|MarkAllNonSerializableFields|
 |CheckId|CA2235|
-|類別|Microsoft。使用方式|
+|類別|Microsoft. 使用量|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
  可序列化之類型中所宣告之類型的執行個體 (Instance) 欄位是不可序列化的。
 
 ## <a name="rule-description"></a>規則描述
- 可序列化型別是以屬性標記的類型 <xref:System.SerializableAttribute?displayProperty=fullName> 。 當類型序列化時， <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> 如果類型包含無法序列化之類型的實例欄位，則會擲回例外狀況。
+ 可序列化的型別是以屬性標記的型別 <xref:System.SerializableAttribute?displayProperty=fullName> 。 當類型已序列化時， <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> 如果類型包含無法序列化之類型的實例欄位，就會擲回例外狀況。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請將屬性套用至不可序列化的 <xref:System.NonSerializedAttribute?displayProperty=fullName> 欄位。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果宣告 <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName> 的類型允許將欄位的實例序列化和還原序列化，則只會隱藏此規則的警告。
+ 只有當宣告 <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName> 的型別允許序列化和還原序列化欄位的實例時，才隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示違反規則的類型，以及符合規則的類型。
+ 下列範例顯示違反規則的型別，以及滿足規則的型別。
 
  [!code-csharp[FxCop.Usage.MarkNonSerializable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.MarkNonSerializable/cs/FxCop.Usage.MarkNonSerializable.cs#1)]
  [!code-vb[FxCop.Usage.MarkNonSerializable#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.MarkNonSerializable/vb/FxCop.Usage.MarkNonSerializable.vb#1)]

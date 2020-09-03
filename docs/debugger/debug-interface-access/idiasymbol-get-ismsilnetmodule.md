@@ -44,9 +44,9 @@ HRESULT get_isMSILNetmodule(
 ## <a name="remarks"></a>備註
  您可以從符號類型取得這個屬性 `SymTagCompilandDetails` (請參閱 [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)) 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
-|需求|描述|
+|需求|說明|
 |-----------------|-----------------|
 |標頭：|dia2。h|
 |版本：|DIA SDK v8.0|

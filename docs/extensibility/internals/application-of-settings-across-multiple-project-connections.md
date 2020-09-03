@@ -1,5 +1,5 @@
 ---
-title: 跨多個項目連接應用設定 |微軟文件
+title: 跨多個專案連接的設定應用程式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,28 +11,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bcaed0f7f2380dd36bcbffd776839025fe9efa16
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710066"
 ---
-# <a name="application-of-settings-across-multiple-project-connections"></a>跨一個多個項目連線設定設定
-使用原始碼管理外掛程式 API 版本 1.2 建構的原始程式碼管理外掛程式可以使用批次處理操作跨多個專案或多個連接上下文執行相同的原始程式碼管理操作。 批次處理可用於從使用者體驗中消除冗餘的每個項目對話框。
+# <a name="application-of-settings-across-multiple-project-connections"></a>跨多個專案連接的設定應用程式
+使用原始檔控制外掛程式 API 版本1.2 所建立的原始檔控制外掛程式，可以使用批次作業，跨多個專案或多個連接內容執行相同的原始檔控制作業。 您可以使用批次來消除使用者體驗中的多餘、每個專案的對話方塊。
 
- 如果用戶選擇多個項屬於使用原始程式碼管理外掛程式 API 版本 1.1 構建的原始程式碼管理外掛程式中的多個連接,並檢查它們,則使用者會反覆看到同一對話方塊。 即使使用者按下對話方塊中的「**適用於所有」** 複選框,也會發生此情況,因為 IDE 會為每個連接上下文重置其狀態。
+ 如果使用者在使用原始檔控制外掛程式 API 版本1.1 所建立的原始檔控制外掛程式中，選取多個屬於一個以上連接的專案 (例如，不同檔案共用電腦上的兩個 Web 專案) 並簽出，則使用者會重複看到相同的對話方塊。 即使使用者在對話方塊中按一下 [套用 **到全部** ] 核取方塊，還是會發生此情況，因為 IDE 會重設其每個連接內容的狀態。
 
-## <a name="new-capability-flag"></a>新功能旗標
- 該`SccBeginBatch`函數`SCC_CAP_BATCH`設置 標誌以指示批處理操作正在進行。
+## <a name="new-capability-flag"></a>新增功能旗標
+ 此函式 `SccBeginBatch` `SCC_CAP_BATCH` 會設定旗標，表示批次作業正在進行中。
 
 ## <a name="new-functions"></a>新的函式
-以下新功能支援批次處理操作:
+下列新函數支援批次作業：
 
 - [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
 
 - [SccEndBatch](../../extensibility/sccendbatch-function.md)
 
-該`SCCBeginBatch`函數啟動一組原始程式碼管理操作。 函數`SccEndBatch`關閉組。 組可能無法嵌套。
+`SCCBeginBatch`函數會啟動一組原始檔控制作業。 `SccEndBatch`函數會關閉群組。 這些群組可能不會被嵌套。
 
 ## <a name="see-also"></a>另請參閱
-- [原始程式碼管理外掛程式 API 版本 1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+- [原始檔控制外掛程式 API 版本1.2 的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

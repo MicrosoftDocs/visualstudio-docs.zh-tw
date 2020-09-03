@@ -9,13 +9,13 @@ caps.latest.revision: 11
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac9a4517fcf13dbb0e1d7a6f994092168723e660
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672157"
 ---
-# <a name="sample-excel-extension-technologymanager-class"></a>範例 Excel 延伸模組：TechnologyManager 類別
+# <a name="sample-excel-extension-technologymanager-class"></a>範例 Excel 擴充功能：TechnologyManager 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 此類別會擴充 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager> 類別，並負責提供 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 延伸模組的核心服務。 雖然基底類別有許多方法，但在這個範例中只會使用一部分的子集。
@@ -60,7 +60,7 @@ ms.locfileid: "72672157"
 ## <a name="getexcelelement-internal-method"></a>GetExcelElement 內部方法
  這個內部方法會取得 Excel 項目的視窗控制代碼和資訊，並傳回要求的 Excel 項目。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager> <xref:System.NotSupportedException>
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>

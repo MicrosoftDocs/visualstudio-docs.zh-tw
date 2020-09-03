@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 05b0d20ba7bd560fc60090bba84b78691bb3e753
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546090"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>如何：以程式設計方式在 Visio 檔中複製並貼上圖形
@@ -36,7 +36,7 @@ ms.locfileid: "85546090"
 ## <a name="copy-and-paste-shapes-with-the-same-positions"></a>複製並貼上具有相同位置的圖形
  如需物件模型的詳細資訊，請參閱 [Microsoft.Office.Interop.Visio.Shape.DrawRectangle](/office/vba/api/Visio.Shape.DrawRectangle)、 [Microsoft.Office.Interop.Visio.Shape.DrawOval](/office/vba/api/Visio.Shape.DrawOval)、 [Microsoft.Office.Interop.Visio.Shape.Copy](/office/vba/api/Visio.Shape.Copy)和 [Microsoft.Office.Interop.Visio.Shape.Paste](/office/vba/api/Visio.Shape.Paste) 方法以及 [Microsoft.Office.Interop.Visio.VisCutCopyPasteCodes.visCopyPasteNoTranslate](/office/vba/api/Visio.viscutcopypastecodes) 旗標的 VBA 參考文件。
 
- 如果您需要控制貼上資訊的格式，以及（選擇性）建立來源檔案的連結（例如，Microsoft Office Word 檔），請使用 PasteSpecial 方法。
+ 如果您需要控制貼上資訊的格式，並 (選擇性地) 建立原始程式檔的連結 (例如 Microsoft Office Word 檔) ，請使用 PasteSpecial 方法。
 
 ### <a name="to-copy-shapes-and-shape-locations-to-another-page"></a>若要將圖形和圖形位置複製到另一頁
 
@@ -46,7 +46,7 @@ ms.locfileid: "85546090"
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#15)]
 
 ## <a name="see-also"></a>另請參閱
-- [Visio 解決方案](../vsto/visio-solutions.md)
+- [Visio 方案](../vsto/visio-solutions.md)
 - [Visio 物件模型總覽](../vsto/visio-object-model-overview.md)
 - [使用 Visio 圖形](../vsto/working-with-visio-shapes.md)
 - [如何：以程式設計方式將圖形新增至 Visio 檔](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)

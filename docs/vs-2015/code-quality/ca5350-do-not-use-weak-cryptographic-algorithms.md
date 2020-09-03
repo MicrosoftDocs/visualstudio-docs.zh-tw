@@ -9,10 +9,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: afadf41fc753051047e858758bfe0677987d726d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545063"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350：請勿使用弱式密碼編譯演算法
@@ -43,7 +43,7 @@ ms.locfileid: "85545063"
 
 - 若為 TripleDES 加密，請使用 <xref:System.Security.Cryptography.Aes> 加密。
 
-- 若為 SHA1 或 RIPEMD160 雜湊函式，請使用 Sha-1 系列中的函[式](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx)（例如、 <xref:System.Security.Cryptography.SHA512> <xref:System.Security.Cryptography.SHA384> 、 <xref:System.Security.Cryptography.SHA256> ）。
+- 針對 SHA1 或 RIPEMD160 雜湊函式，請使用 [sha-1](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) 系列中的雜湊函式 (例如 <xref:System.Security.Cryptography.SHA512> 、 <xref:System.Security.Cryptography.SHA384> <xref:System.Security.Cryptography.SHA256>) 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  當資料所需的保護層級不需要安全性保證時，隱藏此規則的警告。
@@ -60,7 +60,7 @@ var hashAlg = SHA1.Create();
 
 ```
 
-### <a name="solution"></a>解決方案
+### <a name="solution"></a>解決方法
 
 ```
 using System.Security.Cryptography;
@@ -78,7 +78,7 @@ var hashAlg = RIPEMD160Managed.Create();
 
 ```
 
-### <a name="solution"></a>解決方案
+### <a name="solution"></a>解決方法
 
 ```
 using System.Security.Cryptography;
@@ -98,7 +98,7 @@ using (TripleDES encAlg = TripleDES.Create())
 }
 ```
 
-### <a name="solution"></a>解決方案
+### <a name="solution"></a>解決方法
 
 ```
 using System.Security.Cryptography;

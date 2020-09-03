@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Basic 中撰寫視覺化檢視 |Microsoft Docs
+title: 在 Visual Basic 中撰寫視覺化Microsoft Docs
 ms.custom: seodec18
 ms.date: 05/27/2020
 ms.topic: conceptual
@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25720f31c721cae44ed5425631a86b3a41bf475e
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84180528"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>逐步解說：在 Visual Basic 中撰寫視覺化檢視
@@ -40,13 +40,13 @@ ms.locfileid: "84180528"
 1. 建立新的類別庫專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 輸入**Ctrl + Q**開啟 [搜尋] 方塊，輸入**visual basic**，選擇 [**範本**]，然後選擇 [**建立新的類別庫（.NET Framework）**]。 在出現的對話方塊中選擇 [建立]****。
+    按 **Esc** 關閉開始視窗。 輸入 **Ctrl + Q** 以開啟 [搜尋] 方塊，輸入 [ **visual basic**]，選擇 [ **範本**]，然後選擇 [ **建立新的類別庫 ( .NET Framework) **。 在出現的對話方塊中選擇 [建立]****。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中 **，選擇 [** 檔案] [新增] [  >  **New**  >  **專案**]。 在 [**新增專案**] 對話方塊的左窗格中，選擇 [ **Visual Basic**] 底下的 [ **.NET Standard**]，然後在中間窗格中選擇 [**類別庫（.NET Standard）**]。
+    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [ **新增專案** ] 對話方塊的左窗格中，選擇 [ **Visual Basic**] 下的 [ **.NET Standard**]，然後在中間窗格中選擇 [ **類別庫] ( .NET Standard) **。
     ::: moniker-end
 
-2. 為類別庫輸入適當的名稱，例如 `MyFirstVisualizer` ，然後按一下 [**建立** **] 或 [確定]**。
+2. 輸入類別庫的適當名稱（例如），然後 `MyFirstVisualizer` 按一下 [ **建立** **] 或 [確定]**。
 
    建立類別庫之後，必須加入 Microsoft.VisualStudio.DebuggerVisualizers.DLL 的參考，如此您才能使用這個位置中定義的類別。 但請先為專案提供一個有意義的名稱。
 
@@ -57,15 +57,15 @@ ms.locfileid: "84180528"
 2. 將 Class1.vb 變更成有意義的名稱，例如 DebuggerSide.vb。
 
    > [!NOTE]
-   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]會自動變更 Debuggerside.vb 中的類別宣告，以符合新的檔案名。
+   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 自動變更 Debuggerside.vb 中的類別宣告，使其符合新的檔案名。
 
 3. 在 [方案總管]**** 中，以滑鼠右鍵按一下 [My First Visualizer]****，然後在捷徑功能表上按一下 [新增參考]****。
 
-4. 在 [**加入參考**] 對話方塊的 [**流覽**] 索引標籤上，選取 **[流覽**]，然後尋找 VisualStudio. microsoft.visualstudio.debuggervisualizers.dll .dll。
+4. 在 [ **加入參考** ] 對話方塊的 [ **流覽** ] 索引標籤上，選取 **[流覽** ] 並尋找 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
 
-    您可以在 Visual Studio 的安裝目錄的* \<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies*子目錄中找到此 DLL。
+    您可以在 Visual Studio 的安裝目錄的* \<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies*子目錄中找到 DLL。
 
-5. 按一下 [確定]。
+5. 按一下 [確定]  。
 
 6. 在 DebuggerSide.vb 中，將下列陳述式加入至 `Imports` 陳述式：
 
@@ -91,7 +91,7 @@ ms.locfileid: "84180528"
    Inherits DialogDebuggerVisualizer
    ```
 
-   `DialogDebuggerVisualizer`具有一個 `Show` 您必須覆寫的抽象方法。
+   `DialogDebuggerVisualizer` 有一個抽象方法， `Show` 您必須覆寫這個方法。
 
 ### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>若要覆寫 DialogDebuggerVisualizer.Show 方法
 
@@ -109,11 +109,11 @@ ms.locfileid: "84180528"
 
 1. 在 [方案總管]**** 中，以滑鼠右鍵按一下 [參考]****，並從捷徑功能表中按一下 [新增參考]****。
 
-2. 在 [**加入參考**] 對話方塊的 [**流覽**] 索引標籤上，選取 **[流覽**]，然後尋找 [system.web]。
+2. 在 [ **加入參考** ] 對話方塊的 [ **流覽** ] 索引標籤上，選取 **[流覽**]，然後尋找 System.Windows.Forms.DLL。
 
-    您可以在*C:\Windows\Microsoft.NET\Framework\v4.0.30319*中找到此 DLL。
+    您可以在 *C:\Windows\Microsoft.NET\Framework\v4.0.30319*中找到 DLL。
 
-3. 按一下 [確定]。
+3. 按一下 [確定]  。
 
 4. 在 DebuggerSide.cs 中，將下列陳述式加入至 `Imports` 陳述式：
 
@@ -139,9 +139,9 @@ ms.locfileid: "84180528"
 ## <a name="add-the-necessary-attribute"></a>加入必要屬性
  這是偵錯工具端的程式碼結尾。 但是還有一個步驟，就是加入告知偵錯項目端構成視覺化檢視類別集合的屬性。
 
-### <a name="to-add-the-type-to-visualize-for-the-debuggee-side-code"></a>若要加入型別以視覺化偵錯工具端程式碼
+### <a name="to-add-the-type-to-visualize-for-the-debuggee-side-code"></a>若要加入型別，以針對偵錯工具端程式碼將型別視覺化
 
-在偵錯工具端程式碼中，您可以使用屬性指定偵錯工具的視覺化（物件來源）型別 <xref:System.Diagnostics.DebuggerVisualizerAttribute> 。 `Target`屬性會設定要視覺化的類型。
+在偵錯工具端程式碼中，您可以使用屬性來指定要將物件來源) 視覺化 (物件來源的型別 <xref:System.Diagnostics.DebuggerVisualizerAttribute> 。 `Target`屬性會設定要視覺化的型別。
 
 1. 將下列屬性程式碼加入至 DebuggerSide.vb，放置在 `Imports` 陳述式之後，`namespace MyFirstVisualizer` 之前：
 
@@ -171,16 +171,16 @@ ms.locfileid: "84180528"
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>若要將主控台應用程式專案加入至方案
 
-1. 在方案總管中，以滑鼠右鍵按一下方案，選擇 [**加入**]，然後按一下 [**新增專案**]。
+1. 在方案總管中，以滑鼠右鍵按一下方案，選擇 [ **加入**]，然後按一下 [ **新增專案**]。
 
     ::: moniker range=">=vs-2019"
-    在搜尋方塊中，輸入**visual basic**，選擇 [**範本**]，然後選擇 [**建立新的主控台應用程式（.NET Framework）**]。 在出現的對話方塊中選擇 [建立]****。
+    在 [搜尋] 方塊中，輸入 **visual basic**，選擇 [ **範本**]，然後選擇 [ **建立新的主控台應用程式 ( .NET Framework) **。 在出現的對話方塊中選擇 [建立]****。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中 **，選擇 [** 檔案] [新增] [  >  **New**  >  **專案**]。 在 [新增專案]**** 對話方塊左窗格的 [Visual Basic]**** 下，選擇 [Windows Desktop]****，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]****。
+    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [新增專案]**** 對話方塊左窗格的 [Visual Basic]**** 下，選擇 [Windows Desktop]****，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]****。
     ::: moniker-end
 
-2. 為類別庫輸入適當的名稱，例如 `MyTestConsole` ，然後按一下 [**建立** **] 或 [確定]**。
+2. 輸入類別庫的適當名稱（例如），然後 `MyTestConsole` 按一下 [ **建立** **] 或 [確定]**。
 
    此時，你必須加入必要的參考，如此 MyTestConsole 才能呼叫 MyFirstVisualizer。
 
@@ -188,15 +188,15 @@ ms.locfileid: "84180528"
 
 1. 在 [方案總管]**** 中以滑鼠右鍵按一下 [MyTestConsole]****，然後在捷徑功能表中按一下 [新增參考]****。
 
-2. 在 [**加入參考**] 對話方塊的 [**流覽**] 索引標籤上，按一下 [VisualStudio microsoft.visualstudio.debuggervisualizers.dll]。
+2. 在 [ **加入參考** ] 對話方塊的 [ **流覽** ] 索引標籤上，按一下 [VisualStudio. microsoft.visualstudio.debuggervisualizers.dll]。
 
-3. 按一下 [確定]。
+3. 按一下 [確定]  。
 
 4. 以滑鼠右鍵按一下 [MyTestConsole]****，然後再次按一下 [新增參考]****。
 
 5. 在 [新增參考]**** 對話方塊中，按一下 [專案]**** 索引標籤，然後選取 [MyFirstVisualizer]。
 
-6. 按一下 [確定]。
+6. 按一下 [確定]  。
 
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>完成 Test Harness 並測試視覺化檢閱
  現在，您就可以加入程式碼來完成測試載入器。
@@ -234,7 +234,7 @@ ms.locfileid: "84180528"
 
    恭喜。 您已完成建置和測試第一個視覺化檢視。
 
-   如果您想在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用視覺化檢閱，而不只是從測試控管中進行呼叫，就必須安裝該視覺化檢閱。 如需詳細資訊，請參閱[如何：安裝視覺化](../debugger/how-to-install-a-visualizer.md)程式。
+   如果您想在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用視覺化檢閱，而不只是從測試控管中進行呼叫，就必須安裝該視覺化檢閱。 如需詳細資訊，請參閱 [如何：安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)。
 
 ## <a name="see-also"></a>另請參閱
 

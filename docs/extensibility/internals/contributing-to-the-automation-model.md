@@ -1,5 +1,5 @@
 ---
-title: 為自動化模型做出貢獻 |微軟文件
+title: 參與 Automation 模型 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,59 +11,59 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d660edc740229c3e91b99e1f59eb37b4e9312098
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709262"
 ---
-# <a name="contribute-to-the-automation-model"></a>為自動化模型做出貢獻
-Visual Studio 提供了一組用於自定義環境的自動化介面。 自動化模型是使最終使用者能夠創建 Visual Studio 外接程式和擴展的物件模型。
+# <a name="contribute-to-the-automation-model"></a>參與 automation 模型
+Visual Studio 提供一組自動化介面來自訂環境。 Automation 模型是物件模型，可讓使用者建立 Visual Studio 的增益集和延伸模組。
 
- 此外,作為 VSPackage 開發人員,您適合為自動化模型做出貢獻;通過執行此操作,可以使 VSPackage 的最終使用者創建外接程式,並且通常在中使用 VSPackage 時[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]提供一致的用戶體驗。
+ 此外，它也適合做為 VSPackage 開發人員，以提供給 automation 模型;如此一來，您就可以讓 VSPackage 的終端使用者建立增益集，而且通常會在使用您的 VSPackage 時提供一致的使用者模型體驗 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
- 為了使最終用戶體驗保持一致,您可以在設計 VSPackage 時遵循一組準則,以便 VSPackage 的自動化[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]模型遵循 中的想法。
+ 若要讓終端使用者體驗保持一致，您可以在設計 VSPackage 時遵循一組指導方針，讓 VSPackage 的自動化模型遵循中的想法 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
 ## <a name="in-this-section"></a>本節內容
-- [自動化模型概述](../../extensibility/internals/automation-model-overview.md)
+- [Automation 模型總覽](../../extensibility/internals/automation-model-overview.md)
 
- 將自動化模型定義為控制公共環境主要方面的相關物件組。 這組物件在自動化模型的圖表中繪製。
+ 將 automation 模型定義為控制常見環境之主要 facet 的相關物件群組。 這組物件會以自動化模型的圖表來圖解。
 
-- [為 VS 套件提供自動化](../../extensibility/internals/providing-automation-for-vspackages.md)
+- [為 Vspackage 提供自動化](../../extensibility/internals/providing-automation-for-vspackages.md)
 
- 討論為 VSPackage 提供自動化的兩種主要方法。
+ 討論為 VSPackage 提供自動化的兩個主要方式。
 
-- [公開項目物件](../../extensibility/internals/exposing-project-objects.md)
+- [公開專案物件](../../extensibility/internals/exposing-project-objects.md)
 
- 提供用於創建特定於 VSPackage 物件的分步說明。
+ 提供建立 VSPackage 特定物件的逐步指示。
 
-- [專案建模](../../extensibility/internals/project-modeling.md)
+- [專案模型](../../extensibility/internals/project-modeling.md)
 
- 解釋為新專案類型創建自動化所需的標準專案物件,並說明專案自動化遵循的路徑。 本主題還提供類的聲明和實現的清單。
+ 說明為新的專案類型建立自動化所需的標準專案物件，並說明專案自動化遵循的路徑。 本主題也提供類別的宣告和執行清單。
 
 - [公開事件](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md)
 
- 提供為自動化模型創建事件的分步說明。
+ 提供逐步指示，說明如何為您的 automation 模型建立事件。
 
 - [選項頁的自動化支援](../../extensibility/internals/automation-support-for-options-pages.md)
 
- 描述如何透過擴充物件來傳回用於支援 **「工具**」功能表上`DTE.Properties`VSPackage 自訂**選項**對話方塊屬性的自動化物件。
+ 描述如何藉由擴充物件，在**工具**功能表上，傳回 VSPackage 的 [自訂**選項**] 對話方塊支援屬性的自動化物件 `DTE.Properties` 。
 
-- [提供程式碼自動化](../../extensibility/internals/providing-automation-for-code.md)
+- [為程式碼提供自動化](../../extensibility/internals/providing-automation-for-code.md)
 
- 說明不需要為代碼創建自動化模型。 但是,本主題中提供了一個連結,該連結提供了代碼模型的有見地資訊。
+ 說明不需要為您的程式碼建立 automation 模型。 不過，本主題提供的連結可提供程式碼模型的相關資訊。
 
-- [如何:Windows 提供自動化](../../extensibility/internals/how-to-provide-automation-for-windows.md)
+- [如何：為 Windows 提供自動化](../../extensibility/internals/how-to-provide-automation-for-windows.md)
 
- 說明,每當您想要在視窗中提供自動化物件,並且環境尚未提供現成的自動化物件時,提供自動化都是一個好主意。 討論工具視窗和文檔視窗的自動化。
+ 說明當您想要讓自動化物件可在視窗上使用，且環境尚未提供現成的 automation 物件時，提供自動化是很好的想法。 討論工具視窗和文件視窗的自動化。
 
-- [使用自動化模型](../../extensibility/internals/using-the-automation-model.md)
+- [使用 automation 模型](../../extensibility/internals/using-the-automation-model.md)
 
- 提供了兩個代碼示例,顯示自動化消費者如何獲取初始專案自動化物件。
+ 提供兩個程式碼範例，示範 automation 取用者如何取得初始專案自動化物件。
 
-- [設定與選取項目的自動化](../../extensibility/internals/automation-for-configuration-and-selecteditem-objects.md)
+- [Configuration 和 SelectedItem 物件的自動化](../../extensibility/internals/automation-for-configuration-and-selecteditem-objects.md)
 
- 提供有關配置和選定專案物件的自動化的資訊。
+ 提供 Configuration 和 SelectedItems 物件自動化的相關資訊。
 
-## <a name="reference"></a>參考
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>提供一個程式碼範例,用於顯示 VSPackage 如何參與 DTE 自動化物件模型。 列出參數、返回值和所選備註。
+## <a name="reference"></a>參考資料
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> 提供的程式碼範例會顯示 VSPackage 如何參與 DTE automation 物件模型。 列出參數、傳回值和選取的備註。

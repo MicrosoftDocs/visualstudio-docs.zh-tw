@@ -1,5 +1,5 @@
 ---
-title: 如何設定目前的會話 |Microsoft Docs
+title: 如何-設定目前的會話 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: eb60a431ae1fd1f6d44b8aa1477d74705eb532d7
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328358"
 ---
 # <a name="how-to-set-the-current-session"></a>如何：設定目前的工作階段

@@ -1,5 +1,5 @@
 ---
-title: 如何：以程式設計方式建立 Word 資料表
+title: 如何：以程式設計方式建立 Word 表格
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a1bc20b277df90ae963d257137373457a0196e72
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544751"
 ---
-# <a name="how-to-programmatically-create-word-tables"></a>如何：以程式設計方式建立 Word 資料表
+# <a name="how-to-programmatically-create-word-tables"></a>如何：以程式設計方式建立 Word 表格
   <xref:Microsoft.Office.Interop.Word.Tables> 集合是 <xref:Microsoft.Office.Interop.Word.Document>、<xref:Microsoft.Office.Tools.Word.Document>、<xref:Microsoft.Office.Interop.Word.Selection> 及 <xref:Microsoft.Office.Interop.Word.Range> 類別的成員，表示您可以在其中任何一個內容中建立資料表。 您使用 <xref:Microsoft.Office.Interop.Word.Tables> 集合的 <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> 方法，加入指定範圍的表格。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -94,5 +94,5 @@ ms.locfileid: "85544751"
 ## <a name="see-also"></a>另請參閱
 - [如何：以程式設計方式在 Word 表格的儲存格中加入文字和格式](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
 - [如何：以程式設計方式將資料列和資料行加入至 Word 資料表](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
-- [如何：以程式設計方式使用文件屬性填入 Word 資料表](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)
+- [如何：以程式設計方式將文件屬性填入 Word 表格](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)

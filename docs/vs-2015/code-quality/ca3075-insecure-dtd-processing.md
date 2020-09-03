@@ -9,10 +9,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d8cd78b529618504b5f14905a764c369da249fe2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545167"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075:不安全的 DTD 處理
@@ -35,31 +35,31 @@ ms.locfileid: "85545167"
 
 - XML 中有設定 <xref:System.Xml.XmlNode.InnerXml%2A> 屬性。
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>屬性設定為 Parse。
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 屬性設定為 Parse。
 
 - 使用 <xref:System.Xml.XmlResolver> 來處理未受信任的輸入，而不是 <xref:System.Xml.XmlSecureResolver> 。
 
-- XmlReader。<xref:System.Xml.XmlReader.Create%2A> 使用不安全的 <xref:System.Xml.XmlReaderSettings> 實例或完全沒有實例叫用方法。
+- XmlReader。<xref:System.Xml.XmlReader.Create%2A> 方法是使用不安全的 <xref:System.Xml.XmlReaderSettings> 實例或沒有實例來叫用。
 
-- <xref:System.Xml.XmlReader>會使用不安全的預設設定或值來建立。
+- <xref:System.Xml.XmlReader> 是使用不安全的預設設定或值所建立。
 
   上述每個案例皆會造成一樣的結果：如果內容是來自處理 XML 之電腦的檔案系統或網路共用，這些內容就會公開給攻擊者，而被用來當做 DoS 向量。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-- 適當地攔截並處理所有的 XmlTextReader 例外狀況，以避免路徑資訊洩漏。
+- 適當地攔截並處理所有 XmlTextReader 例外狀況，以避免路徑資訊洩漏。
 
 - 使用  <xref:System.Xml.XmlSecureResolver> 來限制 XmlTextReader 可以存取的資源。
 
-- 將  <xref:System.Xml.XmlReader> 屬性設定為 null，不允許開啟任何外部資源 <xref:System.Xml.XmlResolver> 。 ** **
+- 不允許  <xref:System.Xml.XmlReader> 開啟任何外部資源，方法是將屬性設 <xref:System.Xml.XmlResolver> 為 **null**。
 
 - 請確認 <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> 的 <xref:System.Data.DataViewManager> 屬性是從受信任的來源位置指派。
 
   .NET 3.5 和更早的版本
 
-- 如果您正在處理不受信任的來源，請將  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> 屬性設定為 **true**以停用 DTD 處理。
+- 如果您正在處理不受信任的來源，請將  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> 屬性設定為 **true** ，以停用 DTD 處理。
 
-- XmlTextReader 類別具有完全信任的繼承要求。 如需詳細資訊，請參閱 [繼承需求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)。
+- XmlTextReader 類別具有完全信任的繼承要求。 如需詳細資訊，請參閱 [繼承需求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) 。
 
   .NET 4 和更新版本
 
@@ -96,7 +96,7 @@ class TestClass
 }
 ```
 
-### <a name="solution"></a>解決方案
+### <a name="solution"></a>解決方法
 
 ```csharp
 using System.IO;
@@ -137,7 +137,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>解決方案
+### <a name="solution"></a>解決方法
 
 ```csharp
 using System.Xml;
@@ -193,7 +193,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>解決方案
+### <a name="solution"></a>解決方法
 
 ```csharp
 using System.Xml;
@@ -227,7 +227,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>解決方案
+### <a name="solution"></a>解決方法
 
 ```csharp
 using System.IO;
@@ -266,7 +266,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>解決方案
+### <a name="solution"></a>解決方法
 
 ```csharp
 using System.Xml;
@@ -299,7 +299,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>解決方案
+### <a name="solution"></a>解決方法
 
 ```csharp
 using System.Xml;
@@ -365,7 +365,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>解決方案
+### <a name="solution"></a>解決方法
 
 ```csharp
 using System.Xml;
