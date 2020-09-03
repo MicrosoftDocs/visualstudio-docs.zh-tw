@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 66d1c3feb33ae1a42478f7742fb0491bff3441e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72605431"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的安全性規則規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您應該包含 Microsoft 安全性規則規則集，以最大化回報的潛在安全性問題數目。
+您應該包含 Microsoft 安全性規則規則集，以最大化所報告的潛在安全性問題數目。
 
 |規則|描述|
 |----------|-----------------|
@@ -29,7 +29,7 @@ ms.locfileid: "72605431"
 |[CA2104](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|不要宣告唯讀的可變動參考類型|
 |[CA2105](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|陣列欄位不應該為唯讀|
 |[CA2106 必須](../code-quality/ca2106-secure-asserts.md)|必須保護判斷提示|
-|[CA2107 必須](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|必須檢閱 Deny 和 Permit Only 的使用方式|
+|[CA2107](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|必須檢閱 Deny 和 Permit Only 的使用方式|
 |[CA2108](../code-quality/ca2108-review-declarative-security-on-value-types.md)|必須檢閱實值類型上的宣告式安全性|
 |[CA2109 必須](../code-quality/ca2109-review-visible-event-handlers.md)|必須檢閱可見的事件處理常式|
 |[CA2111](../code-quality/ca2111-pointers-should-not-be-visible.md)|指標不應該為可見的|
@@ -40,7 +40,7 @@ ms.locfileid: "72605431"
 |[CA2117](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)|APTCA 類型應該只擴充 APTCA 基底類型|
 |[CA2118](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)|檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法|
 |[CA2119](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|密封方法以滿足私用介面的要求|
-|[CA2120 必須](../code-quality/ca2120-secure-serialization-constructors.md)|必須保護序列化建構函式|
+|[CA2120](../code-quality/ca2120-secure-serialization-constructors.md)|必須保護序列化建構函式|
 |[CA2121](../code-quality/ca2121-static-constructors-should-be-private.md)|靜態建構函式應該為私用的|
 |[CA2122](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|不要間接公開具有連結要求的方法|
 |[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|覆寫連結要求應該與基底相同|

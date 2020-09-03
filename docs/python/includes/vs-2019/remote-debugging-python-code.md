@@ -11,18 +11,18 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5307684bde56955f2a4ed77d2ac66b6b30cb1c1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541063"
 ---
-Visual Studio 可以在 Windows 電腦上，于本機和遠端啟動和偵測 Python 應用程式（請參閱[遠端偵錯](../../../debugger/remote-debugging.md)程式）。 它也可以使用[debugpy 程式庫](https://pypi.org/project/debugpy/)，在不同的作業系統、裝置或 Python 執行上進行遠端偵錯。
+Visual Studio 可以在 Windows 電腦本機和遠端啟動 Python 應用程式並進行偵錯工具 (查看 [遠端偵錯](../../../debugger/remote-debugging.md)) 。 它也可以使用 [debugpy 程式庫](https://pypi.org/project/debugpy/)，在 CPython 以外的不同作業系統、裝置或 Python 執行上進行遠端偵錯。
 
-使用 debugpy 時，所要調試的 Python 程式碼會裝載 Visual Studio 可以附加的 debug 伺服器。 這項裝載需要稍微修改您的程式碼以匯入和啟用伺服器，並可能需要遠端電腦上的網路或防火牆組態允許 TCP 連線。
+使用 debugpy 時，所要調試的 Python 程式碼會裝載 Visual Studio 可以附加的 debug server。 這項裝載需要稍微修改您的程式碼以匯入和啟用伺服器，並可能需要遠端電腦上的網路或防火牆組態允許 TCP 連線。
 
 > [!NOTE]
-> 若為 Visual Studio 2019 16.4 版和更早版本，則使用[ptvsd 程式庫](https://pypi.python.org/pypi/ptvsd)。 Debugpy 程式庫已取代 Visual Studio 2019 16.5 版中的 ptvsd 4。
+> 針對 Visual Studio 2019 16.4 版及更早版本，會使用 [ptvsd 程式庫](https://pypi.python.org/pypi/ptvsd) 。 Debugpy 程式庫已取代 Visual Studio 2019 16.5 版中的 ptvsd 4。
 
 ## <a name="set-up-a-linux-computer"></a>設定 Linux 電腦
 
@@ -32,7 +32,7 @@ Visual Studio 可以在 Windows 電腦上，于本機和遠端啟動和偵測 Py
 - 已開啟上述電腦的防火牆連接埠 5678 (輸入)，其為遠端偵錯的預設值。
 
 > [!NOTE]
-> 本逐步解說是以 Visual Studio 2019 版本16.6 為基礎。
+> 本逐步解說是以 Visual Studio 2019 16.6 版為基礎。
 
 您可以輕鬆地建立 [Azure 上的 Linux 虛擬機器](/azure/virtual-machines/linux/creation-choices)，並透過 Windows [使用遠端桌面進行存取](/azure/virtual-machines/linux/use-remote-desktop)。 適用於 VM 的 Ubuntu 預設會安裝 Python，因此是很方便的選項；否則，請參閱[安裝您所選的 Python 解譯器](../../installing-python-interpreters.md)上的清單，以取得其他的 Python 下載位置。
 
@@ -67,7 +67,7 @@ Visual Studio 可以在 Windows 電腦上，于本機和遠端啟動和偵測 Py
 
 1. 使用 `pip3 install debugpy`，將 `debugpy` 封裝安裝到您的環境。
    >[!NOTE]
-   >建議您記錄已安裝的 debugpy 版本，以在需要時進行疑難排解的情況;[debugpy 清單](https://pypi.org/project/debugpy/)也會顯示可用的版本。
+   >最好記錄安裝的 debugpy 版本，以防您需要它進行疑難排解; [debugpy 清單](https://pypi.org/project/debugpy/) 也會顯示可用的版本。
 
 1. 盡早在 *guessing-game.py* 中的其他程式碼之前加入下列程式碼，以啟用遠端偵錯。 (雖然不是嚴格要求，但在呼叫 `listen` 函式前，無法對繁衍 (Spawn) 的任何背景執行緒進行偵錯。)
 
@@ -79,7 +79,7 @@ Visual Studio 可以在 Windows 電腦上，于本機和遠端啟動和偵測 Py
 1. 請儲存檔案，然後執行 `python3 guessing-game.py`。 `listen` 的呼叫會在背景執行，並等待您與程式互動時的連入連線。 如有需要，可以在 `listen` 之後呼叫 `wait_for_client` 函式來封鎖程式，直到偵錯工具附加為止。
 
 > [!Tip]
-> 除了和之外 `listen` `wait_for_client` ，debugpy 也會提供 helper 函式，此函式 `breakpoint` 可作為程式設計中斷點（如果已附加偵錯工具）。 還有一個 `is_client_connected` 函式會在偵錯工具附加時傳回 `True` (請注意，在呼叫其他 `debugpy` 之前，不需檢查這個結果)。
+> 除了和之外 `listen` `wait_for_client` ，debugpy 也會提供 helper 函式 `breakpoint` ，以在附加偵錯工具時做為程式設計的中斷點。 還有一個 `is_client_connected` 函式會在偵錯工具附加時傳回 `True` (請注意，在呼叫其他 `debugpy` 之前，不需檢查這個結果)。
 
 ## <a name="attach-remotely-from-python-tools"></a>從 Python 工具遠端附加
 
@@ -87,15 +87,15 @@ Visual Studio 可以在 Windows 電腦上，于本機和遠端啟動和偵測 Py
 
 1. 在本機電腦上建立遠端檔案的複本，然後在 Visual Studio 中開啟它。 檔案所在位置並不重要，但其名稱應符合遠端電腦上的指令碼名稱。
 
-1. 選擇性若要在您的本機電腦上使用 IntelliSense 進行 debugpy，請將 debugpy 套件安裝到您的 Python 環境中。
+1.  (選擇性) 在本機電腦上具有 debugpy 的 IntelliSense，請將 debugpy 套件安裝到您的 Python 環境中。
 
-1. 選取 [**調試**程式] [  >  **附加至進程**]。
+1. 選取 [ **Debug**  >  **附加至進程**]。
 
-1. 在出現的 [**附加至進程**] 對話方塊中，將 [**連線類型**] 設定為 [ **Python 遠端（debugpy）**]。
+1. 在出現的 [ **附加至進程** ] 對話方塊中，將 [ **連線類型** ] 設定為 [ **Python 遠端 (debugpy) **。
 
-1. 在 [連線**目標**] 欄位中，輸入 `tcp://<ip_address>:5678` 遠端電腦的所在位置 `<ip_address>` （可以是明確的位址或名稱，例如 myvm.cloudapp.net），而 `:5678` 是遠端偵錯程式的埠號碼。
+1. 在 [ **連接目標** ] 欄位中，輸入 `tcp://<ip_address>:5678` `<ip_address>` 遠端電腦 (的位置，它可以是明確的位址或名稱，例如 myvm.cloudapp.net) ，而 `:5678` 是遠端偵錯程式埠號碼。
 
-1. 按**enter**以填入該電腦上可用的 debugpy 進程清單：
+1. 按 **enter** 鍵，以填入該電腦上可用的 debugpy 進程清單：
 
     ![輸入連線目標，並列出處理序](../../media/remote-debugging-attach.png)
 
@@ -111,23 +111,23 @@ Visual Studio 可以在 Windows 電腦上，于本機和遠端啟動和偵測 Py
 
 ### <a name="connection-troubleshooting"></a>連線疑難排解
 
-1. 請確定您已針對 [連線**類型**] 選取 [ **Python 遠端（debugpy）** ]
-1. 檢查**連接目標**中的密碼是否完全符合遠端程式碼中的密碼。
-1. 檢查連線**目標**中的 IP 位址是否與遠端電腦相符。
+1. 確定您已為連線**類型**選取**Python 遠端 (debugpy) **
+1. 檢查 **連接目標** 中的密碼是否完全符合遠端程式碼中的密碼。
+1. 檢查 **連接目標** 中的 IP 位址是否與遠端電腦的 IP 位址相符。
 1. 請確認您已在遠端電腦上開啟遠端偵錯程式埠，而且您已在連接目標中包含埠尾碼，例如 `:5678` 。
-    - 如果您需要使用不同的埠，您可以在中指定它 `listen` ，如中所示 `debugpy.listen((host, port))` 。 在此情況下，請開啟防火牆中的特定連接埠。
-1. 檢查遠端電腦上所安裝的 debugpy 版本是否 `pip3 list` 符合您在下表 Visual Studio 所使用的 Python 工具版本所使用的版本。 如有必要，請更新遠端電腦上的 debugpy。
+    - 如果您需要使用不同的埠，您可以在中指定它 `listen` ，如下所示 `debugpy.listen((host, port))` 。 在此情況下，請開啟防火牆中的特定連接埠。
+1. 檢查在遠端電腦上安裝的 debugpy 版本 `pip3 list` 是否符合您在下表 Visual Studio 中所使用的 Python 工具版本所使用的版本，以符合所傳回的版本。 如有必要，請更新遠端電腦上的 debugpy。
 
-    | Visual Studio 版本 | Python 工具/debugpy 版本 |
+    | Visual Studio 版本 | Python tools/debugpy 版本 |
     | --- | --- |
     | 2019 16。6 | 1.0.0 b5 |
     | 2019 16。5 | 1.0.0 b1 |
 
 > [!NOTE]
-> Visual Studio 2019 版本 16.0-16.4 已使用 ptvsd，而非 debugpy。 本逐步解說中針對這些版本的程式很類似，但函數名稱不同。 Visual Studio 2019 16.5 版使用 debugpy，但函數名稱與 ptvsd 中的相同。 `listen`您會使用，而不是 `enable_attach` 。 `wait_for_client`您會使用，而不是 `wait_for_attach` 。 `breakpoint`您會使用，而不是 `break_into_debugger` 。
+> Visual Studio 2019 16.0 版-16.4 利用 ptvsd，而非 debugpy。 本逐步解說中針對這些版本的程式很類似，但函數名稱不同。 Visual Studio 2019 16.5 版使用 debugpy，但函數名稱與 ptvsd 中的名稱相同。 相反地 `listen` ，您會使用 `enable_attach` 。 相反地 `wait_for_client` ，您會使用 `wait_for_attach` 。 相反地 `breakpoint` ，您會使用 `break_into_debugger` 。
 
 ## <a name="using-ptvsd-3x-for-legacy-debugging"></a>使用 ptvsd 3.x 進行舊版的偵錯工具
-Visual Studio 2017 15.8 版及更新版本使用以 ptvsd 4.1+ 版為基礎的偵錯工具。 Visual Studio 2019 16.5 版和更新版本會使用以 debugpy 為基礎的偵錯工具。 這些版本的偵錯工具與 Python 2.7 和 Python 3.5 + 相容。 如果您使用的是 Python 2.6、3.1 到3.4 或 IronPython，Visual Studio 會顯示錯誤，**偵錯工具不支援此 Python 環境**。 下列資訊僅適用于使用 ptvsd 3.x 進行遠端偵錯。
+Visual Studio 2017 15.8 版及更新版本使用以 ptvsd 4.1+ 版為基礎的偵錯工具。 Visual Studio 2019 版本16.5 和更新版本會使用以 debugpy 為基礎的偵錯工具。 這些版本的偵錯工具相容于 Python 2.7 和 Python 3.5 +。 如果您是使用 Python 2.6、3.1 到3.4 或 IronPython，Visual Studio 會顯示錯誤， **偵錯工具不支援此 Python 環境**。 下列資訊僅適用于使用 ptvsd 3.x 進行遠端偵錯。
 
 1. 使用 ptvsd 3.x 時，`enable_attach` 函式會要求您傳遞 "secret"，作為限制存取執行中指令碼的第一個引數。 連結遠端偵錯工具時，您可以輸入此密碼。 您也可以使用 `enable_attach(secret=None)`，允許任何人連線，但並不建議這麼做。
 
@@ -168,10 +168,10 @@ Visual Studio 2017 15.8 版及更新版本使用以 ptvsd 4.1+ 版為基礎的�
 
 1. 透過 SSL 連線時，Visual Studio 會提示您潛在的憑證問題。 您可以略過警告並繼續進行，但即使通道仍會加密以防竊聽，依然可能受到攔截式攻擊。
 
-    1. 如果您看到下面的 [**遠端憑證不受信任**] 警告，表示您未正確地將憑證新增至受信任的根 CA。 檢查這些步驟，並再試一次。
+    1. 如果您看到下面的 [ **遠端憑證不受信任** ] 警告，表示您未正確將憑證新增至受信任的根 CA。 檢查這些步驟，並再試一次。
 
         ![受信任的 SSL 憑證警告](../../media/remote-debugging-ssl-warning.png)
 
-    1. 如果您看到 [**遠端憑證名稱**] 不符合以下的 [主機名稱] 警告，表示您在建立憑證時，未使用適當的主機名稱或 IP 位址做為**一般名稱**。
+    1. 如果您看到 **遠端憑證名稱與下方的主機名稱** 警告不符，這表示您在建立憑證時，未使用適當的主機名稱或 IP 位址作為 **一般名稱** 。
 
         ![SSL 憑證主機名稱警告](../../media/remote-debugging-ssl-warning2.png)

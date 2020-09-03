@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO |微軟文件
+title: CONTEXT_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4838df34c14b936af15b8a7a582a6d30ea12bee1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737563"
 ---
 # <a name="context_info"></a>CONTEXT_INFO
-此結構描述記憶體上下文或代碼上下文。
+此結構描述記憶體內容或程式碼內容。
 
 ## <a name="syntax"></a>語法
 
@@ -53,37 +53,37 @@ public struct CONTEXT_INFO {
 
 ## <a name="members"></a>成員
 `dwFields`\
-[他CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)的旗標中的旗標的組合,用於指定填寫哪些欄位<strong>。</strong>
+[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)列舉的旗標組合，可指定要填寫的欄位<strong>。</strong>
 
 `bstrModuleUrl`\
-上下文所在的模組的名稱。
+內容所在的模組名稱。
 
 `bstrFunction`\
-上下文所在的函數名稱。
+內容所在的函式名稱。
 
 `posFunctionOffset`\
-標識與代碼上下文關聯的函數的行和列偏移的[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構。
+[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，識別與程式碼內容相關聯之函式的行和資料行位移。
 
 `bstrAddress`\
-給定上下文所在的代碼中的位址。
+程式碼中指定內容所在的位址。
 
 `bstrAddressOffset`\
-給定上下文所在的代碼中位址的偏移量。
+程式碼中指定內容所在位置的位址位移。
 
 `bstrAddressAbsolute`\
-給定上下文所在的記憶體中的絕對位址。
+記憶體中指定內容所在的絕對位址。
 
 ## <a name="remarks"></a>備註
-此結構從對[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)方法的調用返回。
+從呼叫 [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) 方法時，會傳回這個結構。
 
-此結構的典型用途是支援**記憶體**調試視窗。
+此結構的一般用途是支援 **記憶體** 偵錯工具視窗。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

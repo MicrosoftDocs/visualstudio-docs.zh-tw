@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 624fffb9c86a7ad874f27797dfd5251c8585870f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664032"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>逐步解說：建立連接至 Azure 行動服務的 WPF 桌面應用程式
@@ -21,7 +21,7 @@ ms.locfileid: "72664032"
 
 您可以使用 Windows Presentation Foundation (WPF) 快速建立現代桌面應用程式，以使用 Azure 行動服務來儲存與提供資料。
 
-## <a name="Requirements"></a> 先決條件
+## <a name="prerequisites"></a><a name="Requirements"></a> 必要條件
  您需要下列項目才能完成本逐步解說：
 
 - Visual Studio 2015 – 支援 WPF 開發的任何版本。
@@ -30,53 +30,53 @@ ms.locfileid: "72664032"
 
   - 您可以在 [這裡](https://azure.microsoft.com/pricing/free-trial/)註冊免費試用帳戶。
 
-  - 您可以啟動 [MSDN 訂閱者權益](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)。 MSDN 訂閱可每月提供信用額度，讓您使用付費型 Azure 服務。
+  - 您可以啟動 [MSDN 訂閱者權益](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)。 您的 MSDN 訂用帳戶每月會提供您額度，您可以用在 Azure 付費服務。
 
 ## <a name="create-a-project-and-add-references"></a>建立專案並加入參考
  第一個步驟是建立 WPF 專案，並加入可讓您連接到 Azure 行動服務的 NuGet 封裝。
 
-#### <a name="to-create-the-project"></a>建立專案
+#### <a name="to-create-the-project"></a>若要建立專案
 
-1. 在功能表列上，選擇 [ **檔案**]、[ **新增**]、[ **專案**]。
+1. 從功能表列依序選擇 [**檔案**]、[**新增**] 及 [**專案**]。
 
-2. 在 [新增專案] 對話方塊中，展開 [Visual C#] 或 [Visual Basic] 節點，選擇 [Windows] 節點，然後展開 [Windows] 並選擇 [傳統桌面] 節點。
+2. 在 [新增專案] **** 對話方塊中，展開 [Visual C#] **** 或 [Visual Basic] **** 節點，選擇 [Windows] **** 節點，然後展開 [Windows] **** 並選擇 [傳統桌面] **** 節點。
 
-3. 在範本清單中選擇 [WPF 應用程式] 範本。
+3. 在範本清單中選擇 [WPF 應用程式] **** 範本。
 
-4. 在 [新增專案] 文字方塊中，輸入 `WPFQuickStart`，然後選擇 [確定] 按鈕。
+4. 在 [新增專案] **** 文字方塊中，輸入 `WPFQuickStart`，然後選擇 [確定] **** 按鈕。
 
-     即建立專案並將專案檔案加入 **方案總管**，並顯示名為 **MainWindow.xaml** 之預設應用程式視窗的設計工具。
+     隨即建立專案並將專案檔案加入 **方案總管**，並顯示名為 **MainWindow.xaml** 的預設應用程式視窗的設計工具。
 
 #### <a name="to-add-a-reference-to-the-windows-azure-mobile-services-sdk"></a>若要加入 Windows Azure Mobile Services SDK 的參考
 
-1. 在 **方案總管**中，開啟 [參考] 節點的捷徑功能表，然後選擇 [管理 NuGet 套件]。
+1. 在 **方案總管**中，開啟 [ **參考** ] 節點的快捷方式功能表，然後選擇 [ **管理 NuGet 封裝**]。
 
-2. 在 [NuGet 封裝管理員] 中，選擇 [搜尋] 欄位並輸入 `mobileservices`。
+2. 在 [NuGet 封裝管理員]**** 中，選擇 [搜尋]**** 欄位並輸入 `mobileservices`。
 
-3. 在左窗格中選擇 **WindowsAzure.MobileServices**，然後在右窗格中選擇 [安裝] 按鈕。
+3. 在左窗格中選擇 **WindowsAzure.MobileServices**，然後在右窗格中選擇 [安裝] **** 按鈕。
 
     > [!NOTE]
-    > 如果出現 [預覽] 對話方塊，請檢閱建議的變更，然後選擇 [確定] 按鈕。
+    > 如果出現 [預覽] **** 對話方塊，請檢閱建議的變更，然後選擇 [確定] **** 按鈕。
 
-4. 在 [接受授權] 對話方塊中，檢閱授權條款並選擇 [我接受] 按鈕以接受條款。
+4. 在 [接受授權] **** 對話方塊中，檢閱授權條款並選擇 [我接受] **** 按鈕以接受條款。
 
      必要的參考即會加入 **方案總管**。
 
     > [!NOTE]
-    > 如果您不同意授權條款，請選擇 [我拒絕] 按鈕。 這樣一來，您將無法完成此逐步解說的其餘部分。
+    > 如果您不同意授權條款，請選擇 [我拒絕] **** 按鈕。 這樣一來，您將無法完成此逐步解說的其餘部分。
 
 ## <a name="create-the-user-interface"></a>建立使用者介面
  下一步是建立應用程式的使用者介面。 首先您要建立可重複使用的使用者控制項，其會顯示兩個窗格並排的標準版面配置。 您要將使用者控制項加入主應用程式視窗，並加入控制項以輸入和顯示資料，然後撰寫程式碼來定義與行動服務後端的互動。
 
 #### <a name="to-add-a-user-control"></a>若要加入使用者控制項
 
-1. 在 **方案總管**中，開啟 [WPFQuickStart] 節點的捷徑功能表，然後依序選擇 [加入]和 [新增資料夾]。
+1. 在 **方案總管**中，開啟 [WPFQuickStart] **** 節點的捷徑功能表，然後依序選擇 [加入] **** 和 [新增資料夾] ****。
 
 2. 將資料夾命名為 `Common`註冊免費試用帳戶。
 
-3. 開啟 [Common] 資料夾的捷徑功能表，然後依序選擇 [加入]和 [使用者控制項]。
+3. 開啟 [Common] **** 資料夾的捷徑功能表，然後依序選擇 [加入] **** 和 [使用者控制項] ****。
 
-4. 在 [新增專案] 對話方塊中，選擇 [名稱] 欄位並輸入 `QuickStartTask`，然後選擇 [確定] 按鈕。
+4. 在 [新增專案] **** 對話方塊中，選擇 [名稱] 欄位並輸入 `QuickStartTask`，然後選擇 [確定] **** 按鈕。
 
      隨即將使用者控制項加入專案，並會在設計工具中開啟 **QuickStartTask.xaml** 檔案。
 
@@ -98,9 +98,9 @@ ms.locfileid: "72664032"
 
      這個 XAML 程式碼會建立可重複使用的版面配置，其中含有數字、標題和描述欄位的預留位置。 在執行階段時，可將預留位置取代為文字，如下圖所示。
 
-     ![Quickstarttask.xaml 使用者控制項](../designers/media/wpfquickstart1.PNG "WPFQuickStart1")
+     ![QuickStartTask 使用者控制項](../designers/media/wpfquickstart1.PNG "WPFQuickStart1")
 
-6. 在 **方案總管**中，展開 [QuickStartTask.xaml] 節點並開啟 **QuickStartTask.xaml.cs** 或 **QuickStartTask.xaml.vb** 檔案。
+6. 在 **方案總管**中，展開 [QuickStartTask.xaml] **** 節點並開啟 **QuickStartTask.xaml.cs** 或 **QuickStartTask.xaml.vb** 檔案。
 
 7. 在程式碼編輯器中，將 `namespace WPFQuickStart.Common` (C#) 命名空間或 `Public Class QuickStartTask` (VB) 方法取代為下面程式碼：
 
@@ -200,25 +200,25 @@ ms.locfileid: "72664032"
 
      此程式碼會使用相依性屬性，在執行階段時設定數字、標題和描述欄位的值。
 
-8. 在功能表列上，依序選擇 [建置]、[建置 WPFQuickStart] 以建置使用者控制項。
+8. 在功能表列上，依序選擇 [建置] ****、[建置 WPFQuickStart] **** 以建置使用者控制項。
 
 #### <a name="to-create-and-modify-the-main-window"></a>若要建立及修改主視窗
 
-1. 在 **方案總管**中，開啟 **MainWindow.xaml** 檔。
+1. 在 [方案總管] 中，開啟 [MainWindow.xaml] 檔案。
 
-2. **重要事項**： 這個步驟只適用於 C#。 如果您使用 Visual Basic，請跳至下一個步驟。 在設計工具下方窗格中，找到 `xmlns:local=”clr-namespace:WPFQuickStart”` 行，並將它取代成下列 XAML 程式碼：
+2. **重要**： 這個步驟只適用於 C#。 如果您使用 Visual Basic，請跳至下一個步驟。 在設計工具下方窗格中，找到 `xmlns:local=”clr-namespace:WPFQuickStart”` 行，並將它取代成下列 XAML 程式碼：
 
     ```xaml
     xmlns:local=”clr-namespace:WPFQuickStart.Common”
     ```
 
-3. 在 [新增專案] 視窗中，展開 [通用] **Common** 分類節點並選擇 [標題] 屬性，然後輸入 `WPF Todo List` 按下 **Enter** 鍵。
+3. 在 [新增專案] **** 視窗中，展開 [通用] **** 分類節點並選擇 [標題] **** 屬性，然後輸入 `WPF Todo List` 並按下 **Enter** 鍵。
 
-     請注意，XAML 視窗中的 [標題] 項目會變更以符合新的值。 您可以在 XAML 視窗或 [屬性] 視窗中修改 XAML 屬性，變更會同步處理。
+     請注意，XAML 視窗中的 [標題] **** 元素會變更以符合新的值。 您可以在 XAML 視窗或 [屬性] **** 視窗中修改 XAML 屬性，變更會同步處理。
 
-4. 在 XAML 視窗中，將 [高度] 項目的值設為 `768`，將 [寬度] 屬性的值設為 `1280`。
+4. 在 XAML 視窗中，將 [高度]**** 項目的值設為 `768`，將 [寬度]**** 屬性的值設為 `1280`。
 
-     對應到 [高度] 和 [寬度] 屬性的這些元素，可在 [屬性] 視窗的 [版面配置] 分類中找到。
+     對應到 [高度] **** 和 [寬度] **** 屬性的這些元素，可在 [屬性] **** 視窗的 [版面配置] **** 分類中找到。
 
 5. 選取 `<Grid>` 和 `</Grid>` 標記，並將它們取代成下列 XAML 程式碼：
 
@@ -281,16 +281,16 @@ ms.locfileid: "72664032"
         </Grid>
     ```
 
-     請注意，所做的變更會反映在 [設計] 視窗中。 同樣地，您也可以從 [工具箱] 視窗加入控制項，並在 [屬性] 視窗中設定屬性，以定義使用者介面。 任何可在設計工具中完成的項目，皆可在 XAML 程式碼中完成，反之亦然。
+     請注意，所做的變更會反映在 [設計] 視窗中。 同樣地，您也可以從 [工具箱] **** 視窗加入控制項，並在 [屬性] **** 視窗中設定屬性，以定義使用者介面。 任何可在設計工具中完成的項目，皆可在 XAML 程式碼中完成，反之亦然。
 
      此時，您的設計看起來應該像下圖：
 
-     ![設計工具中的 Mainwindow.xaml](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")
+     ![設計工具中的 MainWindow](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")
 
     > [!NOTE]
-    > 遵循接下來的幾個程序時，您可能會在開啟的 [錯誤清單] 中看到一些錯誤。 別擔心；一旦完成其餘的程序後，這些錯誤就會消失。
+    > 遵循接下來的幾個程序時，您可能會在開啟的 [錯誤清單] **** 中看到一些錯誤。 別擔心；一旦完成其餘的程序後，這些錯誤就會消失。
 
-6. 在 **方案總管**中，展開 [MainWindow.xaml] 節點並開啟 **MainWindow.xaml.cs** 檔或 **MainWindow.xaml.vb** 檔。
+6. 在 **方案總管**中，展開 [MainWindow.xaml] **** 節點並開啟 **MainWindow.xaml.cs** 檔或 **MainWindow.xaml.vb** 檔。
 
 7. 在程式碼編輯器中，將 `using` 或 `Imports` 指示詞加入檔案的頂端：
 
@@ -475,47 +475,47 @@ ms.locfileid: "72664032"
 
 #### <a name="to-create-a-mobile-service"></a>若要建立行動服務
 
-1. 開啟網頁瀏覽器，並登入 Microsoft Azure 入口網站，然後選擇 [行動服務] 索引標籤。
+1. 開啟網頁瀏覽器，並登入 Microsoft Azure 入口網站，然後選擇 [行動服務] **** 索引標籤。
 
-2. 選擇 [新增] 按鈕，然後在快顯對話方塊中依序選擇 [計算]、[行動服務]、[建立]。
+2. 選擇 [新增]**** 按鈕，然後在快顯對話方塊中依序選擇 [計算]****、[行動服務]、[建立]****。
 
-3. 在 [新的行動服務] 對話方塊中，選擇 [URL] 文字方塊並輸入 `wpfquickstart01`。
+3. 在 [新的行動服務]**** 對話方塊中，選擇 [URL]**** 文字方塊並輸入 `wpfquickstart01`。
 
     > [!NOTE]
     > 您可能需要變更 URL 的數字部分。 Microsoft Azure 要求每個行動服務皆具備唯一的 URL。
 
-     這會將服務的 URL 設定為 `https://wpfquickstart01.azure-mobile.net/`。
+     這會將服務的 URL 設定為 `https://wpfquickstart01.azure-mobile.net/` 。
 
-4. 在 [資料庫] 清單中，選擇資料庫選項。 由於這個應用程式應該不常使用，您可以選擇 [建立免費的 20MB SQL 資料庫] 選項，或選擇已與訂閱相關聯的免費資料庫。
+4. 在 [資料庫] **** 清單中，選擇資料庫選項。 由於這個應用程式應該不常使用，您可以選擇 [建立免費的 20MB SQL 資料庫] **** 選項，或選擇已與訂閱相關聯的免費資料庫。
 
-5. 在 [區域] 清單中，選擇您要部署行動服務的資料中心，然後選擇 [下一步]\(向右箭號) 按鈕。
+5. 在 [區域] **** 清單中，選擇您要部署行動服務的資料中心，然後選擇 [下一步]\ ****(向右箭號) 按鈕。
 
     > [!NOTE]
-    > 針對這項服務，您要使用預設 [後端] 設定與 [JavaScript]。
+    > 針對這項服務，您要使用預設 [後端] **** 設定與 [JavaScript] ****。
 
-6. 如果您要建立新的資料庫，請在 [指定資料庫設定] 頁面上的 [伺服器] 清單中選擇 [新的 SQL 資料庫伺服器]，輸入您的 **SQL 登入名稱** 和 **密碼**，然後選擇 [完成]\(勾選記號) 按鈕。
+6. 如果您要建立新的資料庫，請在 [指定資料庫設定] **** 頁面上的 [伺服器] **** 清單中選擇 [新的 SQL 資料庫伺服器] ****，輸入您的 **SQL 登入名稱** 和 **密碼**，然後選擇 [完成]\****(勾選記號) 按鈕。
 
-7. 如果您選擇現有的資料庫，請在 [資料庫設定] 頁面上，輸入您的 **登入密碼** ，然後選擇 [完成]\(勾選記號) 按鈕。
+7. 如果您選擇現有的資料庫，請在 [資料庫設定] **** 頁面上，輸入您的 **登入密碼** ，然後選擇 [完成]\****(勾選記號) 按鈕。
 
-     建立行動服務的程序隨即開始。 程序完成時，狀態會變更為 [就緒] ，您即可移至下一個步驟。
+     建立行動服務的程序隨即開始。 程序完成時，狀態會變更為 [就緒] **** ，您即可移至下一個步驟。
 
-8. 在入口網站中，選取新建立的行動服務，然後選擇 [管理金鑰] 按鈕。
+8. 在入口網站中，選取新建立的行動服務，然後選擇 [管理金鑰] **** 按鈕。
 
-9. 在 [管理存取金鑰] 對話方塊中，複製 **應用程式金鑰**，
+9. 在 [管理存取金鑰] **** 對話方塊中，複製 **應用程式金鑰**，
 
      以便在下一個程序使用。
 
 #### <a name="to-create-a-table"></a>若要建立資料表
 
-1. 在 Microsoft Azure 入口網站中，選擇行動服務名稱旁的向右箭號，並在功能表列上選擇 [資料]，然後選擇 [加入資料表] 連結。
+1. 在 Microsoft Azure 入口網站中，選擇行動服務名稱旁的向右箭號，並在功能表列上選擇 [資料] ****，然後選擇 [加入資料表] **** 連結。
 
-2. 在 [新增專案] 對話方塊的 [資料表名稱] 文字方塊中，輸入 `TodoItem`，然後選擇 [確定]\(勾選記號) 按鈕。
+2. 在 [新增專案] **** 對話方塊的 [資料表名稱] **** 文字方塊中，輸入 `TodoItem`，然後選擇 [確定] **** \(勾選記號) 按鈕。
 
      等候資料表建立，即可移至最後的程序。
 
 #### <a name="to-add-a-declaration-for-the-mobile-service"></a>若要加入行動服務的宣告
 
-1. 返回 Visual Studio。 在 **方案總管**中，展開 [App.xaml]\(C#) 或 [Application.xaml]\(Visual Basic) 節點並開啟 **App.xaml.cs** 檔或 **App.xaml.vb** 檔。
+1. 返回 Visual Studio。 在 **方案總管**中，展開 [App.xaml]\**** (C#) 或 [Application.xaml]\**** (Visual Basic) 節點並開啟 **App.xaml.cs** 檔或 **App.xaml.vb** 檔。
 
 2. 在程式碼編輯器中，將 `using` 或 **Imports** 指示詞加入檔案的頂端：
 
@@ -547,15 +547,15 @@ ms.locfileid: "72664032"
 
 #### <a name="to-run-the-application"></a>若要執行應用程式
 
-1. 在功能表列上，選擇 [偵錯]、[開始偵錯] 或按 F5。
+1. 在功能表列上，選擇 [ **Debug**]、[開始 (的 **調試** ]，或按 F5) 。
 
-2. 在 [新增專案] 文字方塊中輸入 `Do something`，然後選擇 [確定] 按鈕。
+2. 在 [新增專案] **** 文字方塊中輸入 `Do something`，然後選擇 [確定] **** 按鈕。
 
-3. Enter `Do something else`，然後選擇 [確定] 按鈕。
+3. Enter `Do something else`，然後選擇 [確定] **** 按鈕。
 
-     請注意，[查詢及更新資料] 清單會加入兩個項目，如下圖所示。
+     請注意，[查詢及更新資料] **** 清單會加入兩個項目，如下圖所示。
 
-     ![待辦事項專案會加入清單中。](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")
+     ![待辦項目會加入清單。](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")
 
 4. 選取清單中 **Do something else** 的項目核取方塊。
 
@@ -568,5 +568,5 @@ ms.locfileid: "72664032"
 
  您可以連接到現有的 SQL 資料庫或其他使用 Azure 行動服務的資料來源。 請參閱 [行動服務文件](https://azure.microsoft.com/services/app-service/mobile/)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [逐步解說：我的第一個 WPF 桌面應用程式](../designers/walkthrough-my-first-wpf-desktop-application2.md)[使用 Windows Presentation Foundation 建立新式桌面應用程式](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

@@ -18,10 +18,10 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d8a171d393f629d0b6ab3a7fc61ad37862b0da1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77279260"
 ---
 # <a name="parallelcustombuild-task"></a>ParallelCustomBuild 工作
@@ -36,9 +36,9 @@ ms.locfileid: "77279260"
 |---------------|-----------------|
 |**BreakOnFirstFailure**|選擇性的 **bool** 參數。|
 |**MaxItemsInBatch**|選擇性的 **int** 參數。|
-|**最大進程**|選擇性的 **int** 參數。|
-|**來源**|必需**的 ITaskItem]** 參數。|
+|**MaxProcesses**|選擇性的 **int** 參數。|
+|**來源**|必要的 **ITaskItem []** 參數。|
 
 ## <a name="see-also"></a>另請參閱
 
-[任務引用](../msbuild/msbuild-task-reference.md)
+[工作參考](../msbuild/msbuild-task-reference.md)

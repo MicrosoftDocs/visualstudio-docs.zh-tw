@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::獲取調試屬性 |微軟文件
+title: IDebugProgram2：： GetDebugProperty |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 33bc10aadf25eb95414cc5fd334c572b2f270429
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722888"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
-獲取程式的屬性。
+取得程式的屬性。
 
 ## <a name="syntax"></a>語法
 
@@ -41,15 +41,15 @@ int GetDebugProperty( 
 
 ## <a name="parameters"></a>參數
 `ppProperty`\
-[出]返回表示程式屬性的[IDebug Property2](../../../extensibility/debugger/reference/idebugproperty2.md)物件。
+擴展傳回代表程式屬性的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 此方法返回的屬性特定於程式。 如果程式需要返回多個屬性,則此方法返回的[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件是附加屬性的容器,調用[EnumSs 方法](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)返回所有屬性的清單。
+ 這個方法所傳回的屬性是程式特有的屬性。 如果程式需要傳回一個以上的屬性，則這個方法所傳回的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 物件會是其他屬性的容器，而呼叫 [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 方法會傳回所有屬性的清單。
 
- 程式可能會公開可透過`IDebugProperty2`介面描述的任何數量和類型的其他屬性。 IDE 可能會透過通用屬性瀏覽器使用者介面顯示其他程序屬性。
+ 程式可能會公開可透過介面描述的任何其他屬性數目和類型 `IDebugProperty2` 。 IDE 可能會透過一般的屬性瀏覽器使用者介面來顯示其他程式屬性。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

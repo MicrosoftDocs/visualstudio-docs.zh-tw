@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c84b4760760fefd7950eaa5d91a5e06d8b782414
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183127"
 ---
-# <a name="idiasymbolgetobjectfilename"></a>IDiaSymbol::get_objectFileName
+# <a name="idiasymbolget_objectfilename"></a>IDiaSymbol::get_objectFileName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取物件的檔案名稱。  
+抓取物件的檔案名。  
   
 ## <a name="syntax"></a>語法  
   
@@ -32,10 +32,10 @@ HRESULT get_objectFilename(
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]指標`BSTR`存有物件檔案名稱。  
+ 擴展的指標 `BSTR` ，包含目的檔名。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

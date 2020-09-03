@@ -12,22 +12,22 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c4251779593e237713258fd54c80dcb311ce4b80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182257"
 ---
 # <a name="entering-break-mode"></a>進入中斷模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-以下說明逐步執行函式、 執行中，有資料指標的原始碼的行，或執行至中斷點之後遇到中斷點時所發生的程序。  
+以下說明在逐步執行函式、執行至具有資料指標的源程式碼，或執行至中斷點的程式程式碼之後，遇到中斷點時發生的進程。  
   
-## <a name="break-mode-process"></a>中斷模式處理序  
+## <a name="break-mode-process"></a>中斷模式進程  
   
-1. 偵錯引擎 (DE) 會傳送[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)， [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)，或任何其他停止事件，讓 IDE 進入中斷模式。  
+1. Debug engine (DE) 傳送 [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)、 [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)或任何其他停止事件，使 IDE 進入中斷模式。  
   
-2. 在 SDM 執行緒，從取得呼叫堆疊資訊的如下所示：  
+2. SDM 會從執行緒取得呼叫堆疊資訊，如下所示：  
   
     - [IDebugThread2::EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)  
   
@@ -35,13 +35,13 @@ ms.locfileid: "68182257"
   
     - [IEnumDebugFrameInfo2::Next](../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)  
   
-    - [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)來取得來源的程式碼資訊  
+    - [IDebugStackFrame2：： GetDocumentCoNtext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) 以取得原始程式碼資訊  
   
-    - [IDebugDocumentContext2::GetName](../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)取得檔案名稱  
+    - [IDebugDocumentCoNtext2：： GetName](../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md) 以取得檔案名  
   
-    - [IDebugDocumentContext2::GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)取得陳述式範圍  
+    - [IDebugDocumentCoNtext2：： GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) 可取得語句範圍  
   
-    - [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)取得記憶體資訊  
+    - [IDebugStackFrame2：： GetCodeCoNtext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) 可取得記憶體資訊  
   
 ## <a name="see-also"></a>另請參閱  
  [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)

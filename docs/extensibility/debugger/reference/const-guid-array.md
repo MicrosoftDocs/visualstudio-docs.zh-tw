@@ -1,5 +1,5 @@
 ---
-title: CONST_GUID_ARRAY |微軟文件
+title: CONST_GUID_ARRAY |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c0021ef24e0cafec0119263d2c74175f0d38d784
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737630"
 ---
 # <a name="const_guid_array"></a>CONST_GUID_ARRAY
-儲存 s 清單`GUID`的結構 。
+保存清單的結構 `GUID` 。
 
 ## <a name="syntax"></a>語法
 
@@ -43,22 +43,22 @@ public struct CONST_GUID_ARRAY {
 
 ## <a name="members"></a>成員
 `dwCount`\
-陣列中的`GUID``Members`s 數。
+`GUID`陣列中的數目 `Members` 。
 
 `Members`\
-s`GUID`陣組。
+的陣列 `GUID` 。
 
 ## <a name="remarks"></a>備註
-此結構傳遞給[發佈程式](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)方法,並從[獲取提供程式處理數據和](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) [WatchForProvider 事件](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)方法返回。
+此結構會傳遞至 [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 方法，並從 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 和 [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) 方法傳回。
 
-此結構實例的所有者負責釋放分配的任何記憶體。
+此結構之實例的擁有者負責釋放任何配置的記憶體。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

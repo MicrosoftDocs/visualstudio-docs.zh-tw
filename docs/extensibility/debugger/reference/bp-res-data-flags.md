@@ -1,5 +1,5 @@
 ---
-title: BP_RES_DATA_FLAGS |微軟文件
+title: BP_RES_DATA_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d0b687a54ddc1ed111b664a819dacfed6709196d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737873"
 ---
 # <a name="bp_res_data_flags"></a>BP_RES_DATA_FLAGS
-指定數據斷點是在硬體中模擬還是實現。
+指定是否要在硬體中模擬或執行資料中斷點。
 
 ## <a name="syntax"></a>語法
 
@@ -42,17 +42,17 @@ public enum enum_BP_RES_DATA_FLAGS {
 
 ## <a name="fields"></a>欄位
 `BP_RES_DATA_EMULATED`\
-指定正在模擬數據斷點。
+指定正在模擬資料中斷點。
 
 ## <a name="remarks"></a>備註
-用於[BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)結構`dwFlags`的成員。
+用於 `dwFlags` [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) 結構的成員。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

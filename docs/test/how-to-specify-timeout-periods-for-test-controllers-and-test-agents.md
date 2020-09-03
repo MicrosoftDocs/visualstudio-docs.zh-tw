@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7b06dc7d363cefd568a6e1432582744f486fa222
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287281"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>如何：指定測試控制器和測試代理程式的逾時期限
@@ -28,7 +28,7 @@ ms.locfileid: "85287281"
 
 - 測試控制器：*QTController.exe.config*
 
-    |機碼名稱|描述|值|
+    |索引鍵名稱|描述|值|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|在連接被視為遺失之前候代理程式 Ping 要求的秒數。|"n" 秒。|
     |AgentSyncTimeoutInSeconds|當您啟動同步處理的測試回合時，在中止回合之前等候所有代理程式同步的秒數。|"n" 秒。|
@@ -37,7 +37,7 @@ ms.locfileid: "85287281"
 
 - 測試代理程式：*QTAgentService.exe.config*
 
-    |機碼名稱|描述|值|
+    |索引鍵名稱|描述|值|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|對控制器之連接嘗試的相隔秒數。|"n" 秒。 預設值："30" (30 秒)。|
     |RemotingTimeoutSeconds|遠端呼叫可存留的最大時間 (以秒為單位)。|"n" 秒。 預設值："600" (10 分鐘)。|
@@ -46,7 +46,7 @@ ms.locfileid: "85287281"
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>指定測試控制器的代理程式逾時選項
 
-1. 開啟位於 *% ProgramFiles （x86）% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*的*QTCcontroller.exe.config* XML 設定檔案。
+1. 開啟位於 *% ProgramFiles (x86) % \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*的*QTCcontroller.exe.config* XML 設定檔。
 
 2. 找出 `<appSettings>` 標記。
 
@@ -80,7 +80,7 @@ ms.locfileid: "85287281"
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>指定測試代理程式的代理程式逾時選項
 
-1. 開啟位於 *% ProgramFiles （x86）% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*的*QTAgentService.exe.config* XML 設定檔案。
+1. 開啟位於 *% ProgramFiles (x86) % \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*的*QTAgentService.exe.config* XML 設定檔。
 
 2. 找出 `<appSettings>` 標記。
 

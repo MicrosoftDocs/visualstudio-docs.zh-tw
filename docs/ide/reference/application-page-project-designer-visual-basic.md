@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fe303f86b282e7e803dacc1dd8f4d3c1d6b72121
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595809"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
 使用 [專案設計工具] 的 [應用程式]**** 頁面來指定專案的應用程式設定和屬性。
 
-若要存取 [應用程式]**** 頁面，請在方案總管**** 中選擇專案節點 (而不是 [方案]**** 節點)。 然後在功能表列上選擇 **"專案** > **屬性**"。 當**專案設計器**出現時，選擇"**應用程式**"選項卡。
+若要存取 [應用程式]**** 頁面，請在方案總管**** 中選擇專案節點 (而不是 [方案]**** 節點)。 然後選擇**Project**  >  功能表列上的 [專案**屬性**]。 當 [ **專案設計** 工具] 出現時，請選取 [ **應用程式** ] 索引標籤。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -47,7 +47,7 @@ ms.locfileid: "75595809"
 如果您清除 [根命名空間]****，則可以在程式碼中指定專案的命名空間結構。
 
 > [!NOTE]
-> 如果您在[命名空間陳述式](/dotnet/visual-basic/language-reference/statements/namespace-statement)中使用 `Global` 關鍵字，則可以從專案的根命名空間定義一個命名空間。 如果清除**根命名空間**，`Global`則成為頂級命名空間，這將刪除`Global``Namespace`語句中對關鍵字的需求。 如需詳細資訊，請參閱 [Visual Basic 中的命名空間](/dotnet/visual-basic/programming-guide/program-structure/namespaces)中的＜Namespace 陳述式中的 Global 關鍵字＞。
+> 如果您在[命名空間陳述式](/dotnet/visual-basic/language-reference/statements/namespace-statement)中使用 `Global` 關鍵字，則可以從專案的根命名空間定義一個命名空間。 如果您清除 **根命名空間**， `Global` 就會成為最上層命名空間，而不需要在 `Global` 語句中使用關鍵字 `Namespace` 。 如需詳細資訊，請參閱 [Visual Basic 中的命名空間](/dotnet/visual-basic/programming-guide/program-structure/namespaces)中的＜Namespace 陳述式中的 Global 關鍵字＞。
 
 如需如何在程式碼中建立命名空間的資訊，請參閱 [Namespace 陳述式](/dotnet/visual-basic/language-reference/statements/namespace-statement)。
 
@@ -86,7 +86,7 @@ ms.locfileid: "75595809"
 
 如果選取 [啟用應用程式架構]**** \(預設)，此清單的標題為 [啟動表單]****，而且因為應用程式架構只支援啟動表單，而非物件，所以只會顯示表單。
 
-如果專案是 WPF 瀏覽器應用程式，此清單的標題為 [啟動 URI]****，而且預設值為 **Page1.xaml**。 [啟動 URI]**** 清單可讓您指定應用程式在啟動時顯示的使用者介面資源 (XAML 項目)。 如需詳細資訊，請參閱 <xref:System.Windows.Application.StartupUri%2A>。
+如果專案是 WPF 瀏覽器應用程式，此清單的標題為 [啟動 URI]****，而且預設值為 **Page1.xaml**。 [啟動 URI]**** 清單可讓您指定應用程式在啟動時顯示的使用者介面資源 (XAML 項目)。 如需詳細資訊，請參閱<xref:System.Windows.Application.StartupUri%2A>。
 
 如果清除 [啟用應用程式架構]****，此清單會成為 [啟始物件]****，並顯示具有 `Sub Main` 的表單和類別或模組。
 
@@ -94,7 +94,7 @@ ms.locfileid: "75595809"
 
 ### <a name="icon"></a>圖示
 
-設定想要用來當作程式圖示的 .ico 檔案。 選擇**\<"流覽...">** 流覽現有圖形。 如需詳細資訊，請參閱 [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (或 [/win32icon (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option))。 若要以程式設計方式存取此屬性，請參閱 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>。
+設定想要用來當作程式圖示的 .ico 檔案。 選取 **\<Browse...>** 即可流覽現有的圖形。 如需詳細資訊，請參閱 [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (或 [/win32icon (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option))。 若要以程式設計方式存取此屬性，請參閱 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>。
 
 ### <a name="assembly-information"></a>組件資訊
 
@@ -102,7 +102,7 @@ ms.locfileid: "75595809"
 
 ### <a name="enable-application-framework"></a>啟用應用程式架構
 
-指定專案是否使用應用程式架構。 此選項的設置會影響**啟動表單**/**啟始物件**中可用的選項。
+指定專案是否使用應用程式架構。 此選項的設定會影響 [**啟動表單** / **啟始物件**] 中可用的選項。
 
 如果選取此核取方塊，您的應用程式會使用標準 `Sub Main`。 選取此核取方塊可啟用 [Windows 應用程式架構屬性]**** 區段中的功能，也需要您選取啟動表單。
 
@@ -110,7 +110,7 @@ ms.locfileid: "75595809"
 
 ### <a name="view-windows-settings"></a>檢視 Windows 設定
 
-按一下此按鈕可生成並打開*app.manifest*檔。 Visual Studio 會使用此檔案，來產生應用程式的資訊清單資料。 然後通過修改`<requestedExecutionLevel>`*app.清單*中的標記來設置 UAC 要求的執行層級，如下所示：
+按一下這個按鈕，以產生並開啟 *應用程式資訊清單* 檔。 Visual Studio 會使用此檔案，來產生應用程式的資訊清單資料。 然後藉由修改 app.config 中的標記，來設定 UAC 要求的執行層級，如下所示 `<requestedExecutionLevel>` ： *app.manifest*
 
 `<requestedExecutionLevel level="asInvoker" />`
 
@@ -153,7 +153,7 @@ ClickOnce 使用 `asInvoker` 層級或透過虛擬化模式 (無資訊清單產�
 
 ### <a name="splash-screen"></a>啟動顯示畫面
 
-選取您想要用來當作啟動顯示畫面的表單。 您必須先前已使用表單或範本來建立啟動顯示畫面。 預設值為 **（無）。**
+選取您想要用來當作啟動顯示畫面的表單。 您必須先前已使用表單或範本來建立啟動顯示畫面。 預設值為 [ ** 無] () **。
 
 ### <a name="view-application-events"></a>檢視應用程式事件
 
@@ -177,7 +177,7 @@ ClickOnce 使用 `asInvoker` 層級或透過虛擬化模式 (無資訊清單產�
 
 ### <a name="edit-xaml"></a>編輯 XAML
 
-此按鈕會在 XAML 編輯器中開啟應用程式定義檔案 (Application.xaml)。 按一下此按鈕時，*應用程式.xaml*將在應用程式定義節點處打開。 您可能必須編輯此檔案，才能執行特定工作 (例如定義資源)。 如果應用程式定義檔案不存在，則 [專案設計工具] 會建立一個應用程式定義檔案。
+此按鈕會在 XAML 編輯器中開啟應用程式定義檔案 (Application.xaml)。 當您按一下此按鈕時，會在應用程式定義節點開啟 *app.xaml* 。 您可能必須編輯此檔案，才能執行特定工作 (例如定義資源)。 如果應用程式定義檔案不存在，則 [專案設計工具] 會建立一個應用程式定義檔案。
 
 ### <a name="view-application-events"></a>檢視應用程式事件
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::獲取內存位元組 |微軟文件
+title: IDebugProgram2：： GetMemoryBytes |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2cc0be42ace78dbd46fd64ce42f446a9449998b0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722818"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
-檢索程式佔用的記憶體位元組。
+抓取程式所佔用的記憶體位元組。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetMemoryBytes( 
 
 ## <a name="parameters"></a>參數
 `ppMemoryBytes`\
-[出]返回表示程式記憶體位元組的[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)物件。
+擴展傳回代表程式記憶體位元組的 [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)物件表示的記憶體位元組用於程式在記憶體中的映射,而不是執行程式時分配的任何記憶體。
+ [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)物件所代表的記憶體位元組是針對程式在記憶體中的映射，而不是在執行程式時配置的任何記憶體。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

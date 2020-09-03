@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac7f2299dcfbef53c510c9e9689f92cde2132974
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465794"
 ---
 # <a name="idiasessionfindinlineelinesbylinenum"></a>IDiaSession::findInlineeLinesByLinenum
-抓取列舉型別，可讓用戶端逐一查看指定的原始程式檔和行號中，直接或間接內嵌之所有函式的行號資訊。
+抓取列舉，可讓用戶端逐一查看在指定的原始程式檔和行號中，直接或間接內嵌的所有函式的行號資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -35,29 +35,29 @@ HRESULT findInlineeLinesByVA ( 
 #### <a name="parameters"></a>參數
  `compiland`
 
-在[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示要在其中搜尋行號的編譯模組。 這個參數不可以是 `NULL`。
+在 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件，代表要在其中搜尋行號的編譯單位。 這個參數不可以是 `NULL`。
 
  `file`
 
-在[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)物件，表示要在其中搜尋的來源檔案。 這個參數不可以是 `NULL`。
+在 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 物件，代表要在其中搜尋的原始程式檔。 這個參數不可以是 `NULL`。
 
  `linenum`
 
-在指定以一為基礎的行號。
+在指定以一個為基礎的行號。
 
 > [!NOTE]
-> 您不能使用零來指定所有行（使用[IDiaSession：： findLines](../../debugger/debug-interface-access/idiasession-findlines.md)方法來尋找所有行）。
+> 您無法使用零來指定所有的行 (使用 [IDiaSession：： findLines](../../debugger/debug-interface-access/idiasession-findlines.md) 方法來尋找) 的所有行。
 
  `column`
 
-在指定資料行編號。 使用零來指定所有資料行。 「資料行」是一行中的位元組位移。
+在指定資料行編號。 使用零來指定所有資料行。 資料行是一行的位元組位移。
 
  `ppResult`
 
-脫銷傳回[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)物件，其中包含已抓取的行號清單。
+擴展傳回 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) 物件，其中包含已取出行號的清單。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

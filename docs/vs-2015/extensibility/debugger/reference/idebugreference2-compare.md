@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::Compare |Microsoft Docs
+title: IDebugReference2：： Compare |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 41b183baa00f86c7a6e54d35b6188cd8c04946b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182489"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-比較到另一個參考。 保留供未來使用。  
+比較某個參考與另一個參考。 保留供未來使用。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,10 +42,10 @@ int Compare ( 
   
 #### <a name="parameters"></a>參數  
  `dwCompare`  
- [in]值，以從[REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md)列舉，指定的比較作業，例如，等於、 小於或大於。  
+ 在 [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) 列舉中的值，可指定比較作業，例如，等於、小於或大於。  
   
  `pReference`  
- [in][IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，表示要比較的參考。  
+ 在 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 物件，表示要比較的參考。  
   
 ## <a name="return-value"></a>傳回值  
  一律傳回 `E_NOTIMPL`。  

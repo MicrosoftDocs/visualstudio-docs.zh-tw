@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5332b6d9ec087f4e1b127d93563dc0f2fe5fdd15
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876147"
 ---
 # <a name="compensate-activity-designer"></a>Compensate 活動設計工具
 
-[**補償**] 活動設計工具會用來建立及設定 <xref:System.Activities.Statements.Compensate> 活動。
+[ **補償** ] 活動設計工具會用來建立及設定 <xref:System.Activities.Statements.Compensate> 活動。
 
 ## <a name="the-compensate-activity"></a>Compensate 活動
 
@@ -29,9 +29,9 @@ ms.locfileid: "86876147"
 
 ### <a name="using-the-compensate-activity-designer"></a>使用 Compensate 活動設計工具
 
-[**補償**] 活動設計工具可以在 [**工具箱**] 的 [**交易**] 類別中找到。 若要開啟 [**工具箱**]，請選取工作流程設計工具左側的 [**工具箱**] 索引標籤。 或者，從 [ **View** ] 功能表中選取 [**工具箱**]，或按**Ctrl** + **Alt** + **X**。
+[**補償**] 活動設計工具可在 [**工具箱**] 的 [**交易**] 類別中找到。 若要開啟 [ **工具箱**]，請選取工作流程設計工具左側的 [ **工具箱** ] 索引標籤。 或者，從 [ **View** ] 功能表選取 [**工具箱**]，或按**Ctrl** + **Alt** + **X**。
 
-[**補償**] 活動設計工具可以從 [**工具箱**] 拖曳出來，放到工作流程設計工具介面上放置活動的任一處，例如內部 <xref:System.Activities.Statements.Sequence> 。 卸載活動設計工具會建立 <xref:System.Activities.Statements.Compensate> 活動，其預設值 <xref:System.Activities.Activity.DisplayName%2A> 為 [補償]。 此 <xref:System.Activities.Activity.DisplayName%2A> 值可以在 [**補償**] 活動設計工具的標頭中編輯，或是在屬性方格的 [ **DisplayName** ] 方塊中編輯。
+[ **補償** ] 活動設計工具可以從 [ **工具箱** ] 拖曳出來，放到工作流程設計工具介面上放置活動的任一處，例如內部 <xref:System.Activities.Statements.Sequence> 。 卸載活動設計工具會建立 <xref:System.Activities.Statements.Compensate> 具有預設值補償的活動 <xref:System.Activities.Activity.DisplayName%2A> 。 <xref:System.Activities.Activity.DisplayName%2A>值可以在 [**補償**] 活動設計工具的標頭中編輯，或是在屬性方格的 [ **DisplayName** ] 方塊中編輯。
 
 ### <a name="the-compensate-properties"></a>Compensate 屬性
 

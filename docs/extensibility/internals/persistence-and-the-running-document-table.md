@@ -1,5 +1,5 @@
 ---
-title: 持久性和正在運行的文件表 |微軟文件
+title: 持續性與執行中的檔資料表 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,19 +14,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ba698f20b83d1a7af42aeca046aa2a8c943838ef
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706724"
 ---
 # <a name="persistence-and-the-running-document-table"></a>持續性與執行中的文件資料表
-在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE中,專案完全負責管理其專案項的持久性,它們使用服務<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>完成。 文檔是可視化工作室環境中持久性的基本單元。 專案使用正在執行的文件表 (RDT) 協調文檔的打開、保存和重命名,這是追蹤所有打開文件狀態的資源。
+在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 中，專案會完全負責管理其專案專案的持續性，而這些專案專案是使用服務來完成 <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> 。 檔是 Visual Studio 環境中的基本持續性單位。 專案會協調檔的開啟、儲存和重新命名，以及執行中的檔資料表 (RDT) ，此資源會追蹤所有開啟檔的狀態。
 
-## <a name="managing-persistence"></a>管理持久性
- 項目通過實現<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem>介面來控制環境的持久性服務。 雖然環境從不直接要求文檔持久化,但它要求擁有的專案(或層次結構)保存文檔。 這使得專案能夠將其專案項資料保存到本地檔案、遠端檔、資料庫、存儲庫或其他介質中。
+## <a name="managing-persistence"></a>管理持續性
+ 專案會藉由執行介面來控制環境的持續性服務 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> 。 雖然環境永遠不會直接要求檔保存，但是它會要求擁有專案 (或階層) 儲存檔。 如此一來，專案就可以將專案專案資料儲存至本機檔案、遠端檔案、資料庫、儲存機制或其他媒體。
 
- 全域環境維護 RDT。 環境維護 RDT 中所有打開的視窗和文件的條目,這使他們能夠接收特殊通知,例如關閉解決方案時。 此外,RDT使環境能夠追蹤**其相應的節點在解決方案資源管理器**中。 RDT 維護每個打開的可持久物件一條記錄,包括專案檔和專案項目文檔。
+ 全域環境會維護 RDT。 環境會維護 RDT 中所有開啟的視窗和檔的專案，讓他們可以接收特殊通知，例如關閉方案時。 此外，RDT 可讓環境在 **方案總管**中追蹤對應的節點。 RDT 會維護每個 open、永久性物件的一筆記錄，包括專案檔和專案專案檔案。
 
 ## <a name="see-also"></a>另請參閱
 - [執行中的文件資料表](../../extensibility/internals/running-document-table.md)

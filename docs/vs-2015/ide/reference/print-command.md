@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 136edf7fa91e4caeb9303edfd4441ee178fa6038
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662148"
 ---
 # <a name="print-command"></a>列印命令
@@ -34,7 +34,7 @@ Debug.Print text
 ```
 
 ## <a name="arguments"></a>引數
- `text` 必要項。 要評估的運算式或要顯示的文字。
+ 需要 `text`。 要評估的運算式或要顯示的文字。
 
 ## <a name="remarks"></a>備註
  您可以使用問號 (?) 作為此命令的別名。 因此；例如，命令
@@ -58,4 +58,4 @@ Debug.Print text
 ```
 
 ## <a name="see-also"></a>另請參閱
- [評估語句命令](../../ide/reference/evaluate-statement-command.md) [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)[命令視窗](../../ide/reference/command-window.md)[尋找/命令框](../../ide/find-command-box.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ [評估語句命令](../../ide/reference/evaluate-statement-command.md) [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)[命令視窗](../../ide/reference/command-window.md)[尋找/命令](../../ide/find-command-box.md)方塊[Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

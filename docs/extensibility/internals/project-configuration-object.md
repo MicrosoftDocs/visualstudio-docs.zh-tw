@@ -1,5 +1,5 @@
 ---
-title: 專案設定物件 |微軟文件
+title: 專案設定物件 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,40 +12,40 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 001509b56e3bac6a8fd585eb0efe0bd57018acea
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706648"
 ---
 # <a name="project-configuration-object"></a>專案組態物件
-專案配置物件管理向 UI 顯示配置資訊。
+專案設定物件可管理對 UI 的設定資訊顯示。
 
- ![視覺化工作室項目設定](../../extensibility/internals/media/vsprojectcfg.gif "vs 專案Cfg")專案設定屬性頁
+ ![Visual Studio 專案](../../extensibility/internals/media/vsprojectcfg.gif "vsProjectCfg") 設定專案設定屬性頁
 
- 專案配置提供程式管理專案配置。 若要訪問和檢索有關專案配置的資訊,環境和其他包調用附加到專案配置提供程式物件的介面。
-
-> [!NOTE]
-> 無法以程式設計方式創建或編輯解決方案配置檔。 您必須使用 `DTE.SolutionBuilder`。 有關詳細資訊,請參考[解決方案設定](../../extensibility/internals/solution-configuration.md)。
-
- 要發表您要設定 UI 中使用的顯示名稱,<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_DisplayName%2A>專案應實現 。 環境調用<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>,它返回可用於獲取`IVsCfg`要 在環境 UI 中列出的配置和平臺資訊的顯示名稱的指標清單。 活動配置和平臺由存儲在活動解決方案配置中的專案配置決定。 該方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager.FindActiveProjectCfg%2A>可用於檢索活動專案配置。
-
- 物件<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>可以選擇<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>在 物件上與物件一起<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProviderEventsHelper>實現, 以允許您基於規範專案配置`IVsProjectCfg2`名稱檢索 物件。
-
- 向環境和其他專案提供專案配置訪問許可權的另一種方法是,專案提供方法的`IVsCfgProvider2::GetCfgs`實現以返回一個或多個配置物件。 專案還可以實現<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>,從繼承`IVsProjectCfg`,`IVsCfg`從而從 中繼承 , 以提供特定於配置的資訊。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>支援用於添加、刪除和重新命名專案設定的平臺和功能。
+ 專案設定提供者會管理專案設定。 環境和其他封裝：若要取得和取得專案設定的相關資訊，請呼叫附加至專案設定提供者物件的介面。
 
 > [!NOTE]
-> 由於 Visual Studio 不再局限於兩種配置類型,因此處理配置的代碼不應與配置數量的假設一起編寫,也不應假定只有一個配置的專案必然是調試或零售。 這使得使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A>過時。
+> 您無法以程式設計方式建立或編輯解決方案設定檔。 您必須使用 `DTE.SolutionBuilder`。 如需詳細資訊，請參閱 [方案](../../extensibility/internals/solution-configuration.md) 設定。
 
- 呼叫`QueryInterface``IVsGetCfgProvider::GetCfgProvider`從 檢索傳`IVsCfgProvider2`回的物件 。 如果`IVsGetCfgProvider`通過調`QueryInterface``IVsProject3`用 專案物件找不到,則可以`QueryInterface`通過`IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_BrowseObject)`調用 返回的物件的層次結構根瀏覽器物件或通過指向返回的`IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_ConfigurationProvider)`配置提供程式的指標來訪問配置提供程式物件。
+ 若要發佈要在設定 UI 中使用的顯示名稱，您的專案應該執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_DisplayName%2A> 。 環境會呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A> ，這會傳回指標清單， `IVsCfg` 您可以使用這些指標來取得要在環境的 UI 中列出的設定和平臺資訊的顯示名稱。 作用中的設定和平臺取決於儲存在使用中解決方案設定中的專案設定。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager.FindActiveProjectCfg%2A>方法可以用來取得使用中的專案設定。
 
- `IVsProjectCfg2`主要提供對生成、調試和部署管理對象的訪問,並允許專案自由分組輸出。 的方法`IVsProjectCfg``IVsProjectCfg2`可用於<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>實現管理生成過程,<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup>以及配置的輸出組的指標。
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>您可以選擇性地使用物件，在物件上執行物件， <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProviderEventsHelper> 讓您 `IVsProjectCfg2` 根據標準專案設定名稱來取得物件。
 
- 項目必須為其支援的每個配置返回相同數量的組,即使組中包含的輸出數可能因配置而異。 從專案中的配置到配置,組還必須具有相同的標識符資訊(規範名稱、顯示名稱和組資訊)。 有關詳細資訊,請參閱[輸出的項目設定](../../extensibility/internals/project-configuration-for-output.md)。
+ 提供環境和其他專案存取專案設定的另一種方式，是讓專案提供方法的執行 `IVsCfgProvider2::GetCfgs` ，以傳回一或多個設定物件。 專案也可能會在中執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> ，而繼承自 `IVsProjectCfg` 和 `IVsCfg` ，以提供設定特定的資訊。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> 支援平臺，以及新增、刪除和重新命名專案設定的功能。
 
- 要開啟除錯,您的設定應實<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>作 。 `IVsDebuggableProjectCfg`是項目實現的可選介面,允許除錯器啟動配置,並在配置物件上實現`IVsCfg``IVsProjectCfg`, 當用戶選擇通過按 F5 啟動調試器時,環境將調用它。
+> [!NOTE]
+> 由於 Visual Studio 已不再限制為兩個設定類型，因此處理設定的程式碼不應該使用設定數目的假設來撰寫，也不應該在假設只有一個設定的專案必須是 Debug 或 Retail 的情況下撰寫。 這會讓使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A> 淘汰。
 
- `ISpecifyPropertyPages`並`IDispatch`結合屬性頁向使用者檢索和顯示與配置相關的資訊。 有關詳細資訊,請參閱[屬性頁](../../extensibility/internals/property-pages.md)。
+ 呼叫 `QueryInterface` 從抓取傳回的物件 `IVsGetCfgProvider::GetCfgProvider` `IVsCfgProvider2` 。 如果 `IVsGetCfgProvider` 在專案物件上呼叫時找不到 `QueryInterface` `IVsProject3` ，您可以 `QueryInterface` 在階層根瀏覽器物件上，針對所傳回的物件呼叫 `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_BrowseObject)` ，或透過傳回的設定提供者指標，來存取設定提供者物件 `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_ConfigurationProvider)` 。
+
+ `IVsProjectCfg2` 主要會提供組建、偵測和部署管理物件的存取權，並允許專案自由分組輸出。 和的方法 `IVsProjectCfg` `IVsProjectCfg2` 可以用來執行， <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> 以管理組建進程，以及設定 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> 輸出群組的指標。
+
+ 專案必須針對其支援的每個設定傳回相同的群組數目，即使群組中包含的輸出數目可能會因設定而異。 這些群組也必須具有相同的識別碼資訊 (正式名稱、顯示名稱和群組資訊) 從設定到專案內的設定。 如需詳細資訊，請參閱 [輸出的專案](../../extensibility/internals/project-configuration-for-output.md)設定。
+
+ 若要啟用偵錯工具，您的設定應該執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> 。 `IVsDebuggableProjectCfg` 是由專案所執行的選用介面，可讓偵錯工具啟動設定，並使用和在設定物件上 `IVsCfg` 執行 `IVsProjectCfg` 。 當使用者按下 F5 鍵以啟動偵錯工具時，環境就會呼叫它。
+
+ `ISpecifyPropertyPages` 和 `IDispatch` 會搭配屬性頁使用，以抓取和顯示與設定相關的資訊給使用者。 如需詳細資訊，請參閱 [屬性頁](../../extensibility/internals/property-pages.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [管理組態選項](../../extensibility/internals/managing-configuration-options.md)

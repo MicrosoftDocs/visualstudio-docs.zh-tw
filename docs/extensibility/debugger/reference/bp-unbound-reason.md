@@ -1,5 +1,5 @@
 ---
-title: BP_UNBOUND_REASON |微軟文件
+title: BP_UNBOUND_REASON |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737781"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
-給出斷點未綁定的原因。
+提供中斷點未系結的原因。
 
 ## <a name="syntax"></a>語法
 
@@ -51,23 +51,23 @@ public enum enum_BP_UNBOUND_REASON {
 原因不明。
 
 `BPUR_CODE_UNLOADED`\
-已卸載包含斷點的代碼。
+包含中斷點的程式碼已經卸載。
 
 `BPUR_BREAKPOINT_REBIND`\
-斷點已反彈到其他位置。 當斷點移動時,或者斷點綁定到具有不再有效的路徑的檔時,可以在"編輯並繼續"操作之後發生這種情況。
+中斷點已重新綁定至不同的位置。 當中斷點移動時，或當中斷點系結至路徑不再有效的檔案時，就會發生這種情況。
 
 `BPUR_ BREAKPOINT_ERROR`\
-斷點在綁定後被確定為錯誤。 這種情況不再有效的託管斷點會發生這種情況。
+中斷點會在系結之後判斷為錯誤。 這會發生在其條件不再有效的 managed 中斷點上。
 
 ## <a name="remarks"></a>備註
-由[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)方法返回。
+由 [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) 方法傳回。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

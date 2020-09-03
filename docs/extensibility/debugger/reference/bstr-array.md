@@ -1,5 +1,5 @@
 ---
-title: BSTR_ARRAY |微軟文件
+title: BSTR_ARRAY |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7e9859267cc26ec012852a1150e458c81383dfd3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737715"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
@@ -43,22 +43,22 @@ struct BSTR_ARRAY {
 
 ## <a name="members"></a>成員
 `dwCount`\
-陣列中的`Members`字串數。
+陣列中的字串數目 `Members` 。
 
 `Members`\
-字串陣列。
+字串的陣列。
 
 ## <a name="remarks"></a>備註
-此結構從[枚舉持久埠](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)方法返回。
+[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)方法會傳回這個結構。
 
- [僅C++]必須使用`SysFreeString`釋放每個單獨的字串,`Members`並且必須`CoTaskMemFree`使用釋放陣列。
+ [僅限 c + +]每個個別字串都必須使用來釋 `SysFreeString` 出，而 `Members` 陣列必須使用來釋放 `CoTaskMemFree` 。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

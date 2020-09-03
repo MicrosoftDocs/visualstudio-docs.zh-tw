@@ -1,5 +1,5 @@
 ---
-title: COMPUTER_INFO |微軟文件
+title: COMPUTER_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 27794dff51646b72dbbfda81ead02e5206ade78b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737663"
 ---
 # <a name="computer_info"></a>COMPUTER_INFO
-描述運行調試器的電腦。
+描述正在執行偵錯工具的電腦。
 
 ## <a name="syntax"></a>語法
 
@@ -45,24 +45,24 @@ public struct COMPUTER_INFO
 
 ## <a name="members"></a>成員
 `wProcessorArchitecture`\
-標識微處理器的體系結構。
+識別微處理器的架構。
 
 `wSuiteMask`\
-標識套件掩碼。
+識別套件遮罩。
 
 `dwOperatingSystemVersion`\
-操作系統版本號。
+作業系統版本號碼。
 
 ## <a name="remarks"></a>備註
-此結構由[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)方法返回。
+[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)方法會傳回這個結構。
 
 ## <a name="requirements"></a>需求
-標題: Msdbg.h
+標頭： Msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
-- [取得電腦資訊](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)
+- [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)

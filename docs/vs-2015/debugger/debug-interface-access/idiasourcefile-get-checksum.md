@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f87f5cdd937c0e172e7b96cf0858423b14686d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190744"
 ---
-# <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
+# <a name="idiasourcefileget_checksum"></a>IDiaSourceFile::get_checksum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取的總和檢查碼位元組。  
+捕獲總和檢查碼位元組。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,23 +37,23 @@ HRESULT get_checksum ( 
   
 #### <a name="parameters"></a>參數  
  `cbData`  
- [in]資料緩衝區，以位元組為單位的大小。  
+ 在資料緩衝區的大小（以位元組為單位）。  
   
  `pcbData`  
- [out]傳回總和檢查碼位元組數目。 這個參數不可以是 `NULL`。  
+ 擴展傳回總和檢查碼位元組數目。 這個參數不可以是 `NULL`。  
   
  `data`  
- [in、 out]緩衝區填滿的總和檢查碼位元組。 如果這個參數是`NULL`，然後`pcbData`傳回所需的位元組數目。  
+ [in，out]填滿總和檢查碼位元組的緩衝區。 如果這個參數是 `NULL` ，則會傳回 `pcbData` 所需的位元組數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 若要判斷用來產生總和檢查碼位元組的總和檢查碼演算法的類型，請呼叫[idiasourcefile:: Get_checksumtype](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)方法。  
+ 若要判斷用來產生總和檢查碼位元組的總和檢查碼演算法類型，請呼叫 [IDiaSourceFile：： get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) 方法。  
   
- 總和檢查碼通常會產生從原始程式檔的映像，因此原始程式檔中的變更會反映在總和檢查碼位元組中的變更。 如果不相符的總和檢查碼位元組產生從載入的映像的檔案，則應該視為檔案的總和檢查碼損毀或竄改。  
+ 總和檢查碼通常是從原始程式檔的影像產生，因此原始程式檔中的變更會反映在總和檢查碼位元組的變更中。 如果總和檢查碼位元組不符合從載入的檔案影像產生的總和檢查碼，則應該將檔案視為損毀或遭篡改。  
   
- 典型的總和檢查碼不能超過 32 個位元組的大小，但不是假設這是最大大小的總和檢查碼。 設定`data`參數來`NULL`取得擷取總和檢查碼時所需的位元組數目。 然後配置適當大小的緩衝區，並呼叫這個方法一次使用新的緩衝區。  
+ 一般總和檢查碼的大小絕對不會超過32個位元組，但不會假設這是總和檢查碼的大小上限。 將 `data` 參數設定為， `NULL` 以取得取出總和檢查碼所需的位元組數目。 然後，配置適當大小的緩衝區，然後再使用新的緩衝區呼叫這個方法一次。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   

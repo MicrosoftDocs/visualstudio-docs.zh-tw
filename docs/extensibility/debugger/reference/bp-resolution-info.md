@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_INFO |微軟文件
+title: BP_RESOLUTION_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 70e66a936ec1eaf1f818ad249aa4eb14b0b63749
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737834"
 ---
 # <a name="bp_resolution_info"></a>BP_RESOLUTION_INFO
-描述代碼斷點或數據斷點的邊界斷點資訊。
+描述程式碼中斷點或資料中斷點的系結中斷點資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -47,26 +47,26 @@ public struct BP_RESOLUTION_INFO {
 
 ## <a name="members"></a>成員
 `dwFields`\
-[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)枚舉中標記的集合,用於指定填寫哪些欄位。
+[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)列舉中的旗標集合，可指定要填寫的欄位。
 
 `bpResLocation`\
-在代碼或數據中指定斷點位置的[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)結構。
+[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)結構，用來指定程式碼或資料中中斷點的位置。
 
 `pProgram`\
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件,表示發生斷點錯誤的應用程式。
+[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，代表發生中斷點錯誤的應用程式。
 
 `pThread`\
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件,表示包含斷點錯誤的應用程式在其中運行的線程。
+代表執行緒的 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 物件，其中包含中斷點錯誤的應用程式正在執行中。
 
 ## <a name="remarks"></a>備註
-此結構由[Get決議資訊傳回](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)。
+[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)會傳回這個結構。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

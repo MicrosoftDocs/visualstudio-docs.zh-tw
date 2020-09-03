@@ -1,5 +1,5 @@
 ---
-title: 在傳統語言服務中概述 |微軟文件
+title: 舊版語言服務中的大綱 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,40 +13,40 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: be485a0e7406d49c4dcce77958c720e0b62504b6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706816"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>在舊版語言服務中製作大綱
-大綱使複雜的程序摺疊成概述或大綱成為可能。 例如,在 C# 中,所有方法都可以摺疊到一行,僅顯示方法簽名。 此外,可以摺疊結構和類,僅顯示結構和類的名稱。 在單個方法內,可以通過僅顯示 語句的第一行`foreach`(`if`如`while`、 和)來摺疊複雜邏輯以顯示總體流。
+大綱可將複雜的程式折迭到總覽或大綱中。 例如，在 c # 中，所有方法都可以折迭成單一行，只顯示方法簽章。 此外，您可以將結構和類別折迭，只顯示結構和類別的名稱。 在單一方法中，您可以藉由只顯示第一行的語句（例如、和），折迭複雜邏輯以顯示整體流程 `foreach` `if` `while` 。
 
- 舊語言服務是作為 VSPackage 的一部分實現的,但實現語言服務功能的較新方法是使用 MEF 擴展。 要瞭解更多資訊,請參閱[演練:概述](../../extensibility/walkthrough-outlining.md)。
+ 舊版語言服務會實作為 VSPackage 的一部分，但是執行語言服務功能的較新方法是使用 MEF 延伸模組。 若要深入瞭解，請參閱 [逐步解說：大綱](../../extensibility/walkthrough-outlining.md)。
 
 > [!NOTE]
-> 我們建議您儘快開始使用新的編輯器 API。 這將提高語言服務的性能,並允許您利用新的編輯器功能。
+> 建議您儘快開始使用新的編輯器 API。 這可改善您的語言服務效能，並讓您利用新的編輯器功能。
 
-## <a name="enabling-support-for-outlining"></a>支援大綱
- 註冊表`AutoOutlining`項設置為 1 以啟用自動大綱。 自動大綱在載入或更改檔時設置整個源的解析,以便識別隱藏區域並顯示大綱字形。 大綱也可以由用戶手動控制。
+## <a name="enabling-support-for-outlining"></a>啟用大綱支援
+ `AutoOutlining`登錄專案會設定為1，以啟用自動大綱。 自動大綱會在載入或變更檔案時，設定整個來源的剖析，以便識別隱藏的區域並顯示大綱字元。 大綱也可以由使用者手動控制。
 
- `AutoOutlining`註冊表項的值可以<xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A><xref:Microsoft.VisualStudio.Package.LanguagePreferences>通過 類上的屬性獲取。 註冊表`AutoOutlining`項可以<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>使用 屬性的命名參數進行初始化(有關詳細資訊,請參閱[註冊舊語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md))。
+ 您 `AutoOutlining` 可以透過類別上的屬性來取得登錄專案的值 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 。 您 `AutoOutlining` 可以使用屬性的具名引數來初始化登錄專案 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> (如需詳細資訊) ，請參閱 [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md) 。
 
-## <a name="the-hidden-region"></a>隱藏區域
- 要提供大綱,您的語言服務必須支援隱藏區域。 這些是可以展開或摺疊的文本範圍。 隱藏區域可以由標準語言符號(如大括弧)或自定義符號分隔。 例如,C#`#region`/`#endregion`具有分隔隱藏區域的對。
+## <a name="the-hidden-region"></a>隱藏的區域
+ 若要提供大綱，您的語言服務必須支援隱藏區域。 這些是可展開或折迭的文字範圍。 隱藏的區域可以用標準語言符號來分隔，例如大括弧或自訂符號。 例如，c # 具有 `#region` / `#endregion` 分隔隱藏區域的配對。
 
- 隱藏區域由隱藏區域管理員管理,該管理器作為<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>介面公開。
+ 隱藏的區域是由隱藏的區域管理員所管理，它會公開為 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> 介面。
 
- 大綱使用隱藏區域介面<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion>,並包含隱藏區域的範圍、當前可見狀態和摺疊時要顯示的橫幅。
+ 大綱會使用隱藏區域 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion> 介面並包含隱藏區域的範圍、目前的可見狀態，以及在範圍折迭時要顯示的橫幅。
 
- 語言服務解析器使用<xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A>方法添加具有隱藏區域預設行為的新隱藏區域,<xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A>而 該方法允許您自定義大綱的外觀和行為。 將隱藏區域提供給隱藏區域工作階段後,[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]管理語言服務的隱藏區域。
+ 語言服務剖析器會使用 <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> 方法，以隱藏區域的預設行為來新增隱藏的區域，而此 <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> 方法可讓您自訂大綱的外觀和行為。 一旦將隱藏的區域提供給隱藏的區域會話，就會 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 管理語言服務的隱藏區域。
 
- 如果需要確定何時銷毀隱藏區域會話,則更改隱藏區域,或者需要確保特定隱藏區域可見;否則,需要確保隱藏區域可見。必須從<xref:Microsoft.VisualStudio.Package.Source>類派生一個類,並分別重寫相應的<xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A>方法<xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A>、<xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A>和。
+ 如果您需要判斷隱藏區域會話的終結時間，隱藏的區域會變更，或者您需要確定可以看見特定的隱藏區域;您必須從類別衍生類別， <xref:Microsoft.VisualStudio.Package.Source> 並分別覆寫適當的方法：、 <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A> <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A> 和 <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A> 。
 
 ### <a name="example"></a>範例
- 下面是為所有大括弧創建隱藏區域的簡化範例。 假定語言提供大括弧匹配,並且要匹配的大括弧至少包括大括弧 (* 和 *)。 這種方法僅用於說明目的。 全面實施將完全處理<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>中的案例。 此示例還演示如何<xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A>`true`暫時設置首選項。 另一種方法是在語言包`AutoOutlining``ProvideLanguageServiceAttribute`中的屬性中指定命名參數。
+ 以下是針對所有成對大括弧建立隱藏區域的簡化範例。 假設語言提供括弧對稱，而且要比對的括弧至少包含大括弧 ( {和} ) 。 這種方法僅供說明之用。 完整的實作為中的案例完整處理 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 。 此範例也會示範如何將喜好設定設 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> 為 `true` 暫時。 替代方法是在 `AutoOutlining` 您的語言套件中指定屬性中的具名引數 `ProvideLanguageServiceAttribute` 。
 
- 此範例假定註釋、字串和文字的 C# 規則。
+ 這個範例會假設 c # 規則適用于批註、字串和常值。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
