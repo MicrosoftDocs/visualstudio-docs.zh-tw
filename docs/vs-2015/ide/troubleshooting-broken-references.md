@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1dd1312fc5728fbb68994fb6e70e253fa19172e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654792"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
@@ -43,26 +43,26 @@ ms.locfileid: "72654792"
 > 組件中的檔案是使用專案檔中的絕對路徑來參考的。 因此，在多開發人員環境中工作的使用者，可能會遺漏本機環境中參考的組件。 若要避免這些錯誤，您最好在這些情況下新增專案對專案參考。 如需詳細資訊，請參閱 [NIB 如何：使用加入參考對話方塊加入或移除參考](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)和[使用組件設計程式](https://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)。
 
 ## <a name="reference-path-is-incorrect"></a>參考路徑不正確
- 如果在不同的電腦上共用專案，則當元件位於每部電腦的不同目錄時，可能會找不到某些參考。 參考會儲存在元件檔名稱 (例如 MyComponent) 之下。 將參考新增至專案時，會將元件檔的資料夾位置 (例如 C:\MyComponents\\) 附加至 **ReferencePath** 專案屬性。
+ 如果在不同的電腦上共用專案，則當元件位於每部電腦的不同目錄時，可能會找不到某些參考。 參考會儲存在元件檔名稱 (例如 MyComponent) 之下。 將參考新增至專案時，會將元件檔的資料夾位置 (例如C:\MyComponents\\) 附加至 **ReferencePath** 專案屬性。
 
  當專案開啟時，它會藉由尋找參考路徑中的目錄，嘗試找出這些參考的元件檔。 如果用來開啟專案的電腦將元件儲存在不同的目錄 (例如 D:\MyComponents\\)，則找不到參考且 [工作清單] 中會出現錯誤。
 
- 若要修正這個問題，您可以刪除中斷的參考，然後使用 [加入參考] 對話方塊將它取代。 另一個解決方法是使用專案屬性頁中的 [參考路徑]  項目，然後修改清單中的資料夾以指向正確的位置。 每部電腦上每位使用者的 [參考路徑]  屬性都會保留。 因此，修改您的參考路徑並不會影響專案的其他使用者。
+ 若要修正這個問題，您可以刪除中斷的參考，然後使用 [加入參考] 對話方塊將它取代。 另一個解決方法是使用專案屬性頁中的 [參考路徑]**** 項目，然後修改清單中的資料夾以指向正確的位置。 每部電腦上每位使用者的 [參考路徑]**** 屬性都會保留。 因此，修改您的參考路徑並不會影響專案的其他使用者。
 
 > [!TIP]
 > 專案對專案參考沒有這些問題。 因此，請盡可能以此取代檔案參考。
 
 #### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>藉由修正參考路徑來修復中斷的專案參考
 
-1. 在方案總管  中，以滑鼠右鍵按一下您的專案節點，然後按一下 [屬性]  。
+1. 在方案總管**** 中，以滑鼠右鍵按一下您的專案節點，然後按一下 [屬性]****。
 
-2. [專案設計工具]  隨即出現。
+2. [ **專案設計** 工具] 隨即出現。
 
-3. 如果使用 Visual Basic，請選取 [參考]  頁面，然後按一下 [參考路徑]  按鈕。 在 [參考路徑]  對話方塊的 [資料夾]  欄位中，輸入包含所要參考之項目的資料夾路徑，然後按一下 [加入資料夾]  按鈕。
+3. 如果使用 Visual Basic，請選取 [參考]**** 頁面，然後按一下 [參考路徑]**** 按鈕。 在 [參考路徑]**** 對話方塊的 [資料夾]**** 欄位中，輸入包含所要參考之項目的資料夾路徑，然後按一下 [加入資料夾]**** 按鈕。
 
      -或-
 
-     如果使用 Visual C#，請選取 [參考路徑]  頁面。 在 [資料夾]  欄位中，輸入包含所要參考之項目的資料夾路徑，然後按一下 [加入資料夾]  按鈕。
+     如果使用 Visual C#，請選取 [參考路徑]**** 頁面。 在 [資料夾]**** 欄位中，輸入包含所要參考之項目的資料夾路徑，然後按一下 [加入資料夾]**** 按鈕。
 
 ## <a name="referenced-file-has-been-deleted"></a>參考的檔案已被刪除
  參考的檔案有可能已被刪除，而不再存在於磁碟機中。
@@ -91,4 +91,4 @@ ms.locfileid: "72654792"
  如果一位使用者加入了 COM 元件的參考，而第二位使用者嘗試在未安裝此元件的電腦上執行程式碼，則第二位使用者將收到參考中斷的錯誤。 在第二部電腦上安裝元件將會修正此錯誤。 如需如何在您的專案中使用 COM 元件參考的詳細資訊，請參閱 [.NET Framework 應用程式中的 COM 互通性](https://msdn.microsoft.com/library/f5a72143-c268-4dff-a019-974ad940e17d)。
 
 ## <a name="see-also"></a>另請參閱
- 專案設計工具[參考頁面、專案設計工具（Visual Basic）](../ide/reference/references-page-project-designer-visual-basic.md) [的簡介](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)[如何：使用 [加入參考] 對話方塊來加入或移除參考](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)
+ [專案設計](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)工具 [參考頁面的簡介頁面、專案設計工具 (Visual Basic) ](../ide/reference/references-page-project-designer-visual-basic.md) [筆尖：使用加入參考對話方塊加入或移除參考](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

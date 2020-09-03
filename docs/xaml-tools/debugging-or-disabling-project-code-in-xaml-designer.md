@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: fba240c29cb8142a9ec4b4d28c71112c1974a5b1
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331060"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>偵錯或停用 XAML 設計工具的專案程式碼
@@ -35,7 +35,7 @@ ms.locfileid: "85331060"
 
 1. 在未處理的例外狀況對話方塊中，選擇 [按一下此處可重新載入設計工具] **** 連結。
 
-2. 在功能表列上選擇 [ **Debug**] [  >  **開始調試**程式]，以建立並執行應用程式。
+2. 在功能表列上，選擇 [ **Debug**  >  **開始調試**程式] 來建立和執行應用程式。
 
      如果應用程式順利建置並執行，則設計階段的例外狀況可能是由在設計工具中執行的專案程式碼所造成。
 
@@ -53,7 +53,7 @@ ms.locfileid: "85331060"
 
 5. 設定專案程式碼的中斷點。
 
-6. 在新的 Visual Studio 實例的功能表列上，選擇 [ **Debug**] [  >  **附加至進程**]。
+6. 在 Visual Studio 的新實例的功能表列上，選擇 [ **Debug**  >  **附加至進程**]。
 
 7. 在 [附加至處理序] **** 對話方塊的 [可使用的處理序] **** 清單中，選擇 [XDesProc.exe] ****，然後選擇 [附加] **** 按鈕。
 
@@ -61,7 +61,7 @@ ms.locfileid: "85331060"
 
      這是 Visual Studio 第一個執行個體的 XAML 設計工具處理序。
 
-8. 在第一個 Visual Studio 實例的功能表列上，選擇 [ **Debug**] [  >  **開始調試**]。
+8. 在 Visual Studio 的第一個實例的功能表列上，選擇 [ **Debug**  >  **開始調試**程式]。
 
      您現在可以進入正在設計工具中執行的程式碼。
 

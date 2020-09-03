@@ -1,5 +1,5 @@
 ---
-title: IDebug 參考2::獲取最參考 |微軟文件
+title: IDebugReference2：： GetDerivedMostReference |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 15e98884d040cfb2ebf1b33a56c7edea331fbff0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720610"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
-獲取引用的派生最大引用。 保留供未來使用。
+取得參考的衍生最多參考。 保留供未來使用。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetDerivedMostReference( 
 
 ## <a name="parameters"></a>參數
 `ppDerivedMost`\
-[出]返回表示派生最派生屬性的[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件。
+擴展傳回 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 物件，這個物件表示衍生的最多屬性。
 
 ## <a name="return-value"></a>傳回值
- 永遠會傳回 `E_NOTIMPL`。
+ 一律傳回 `E_NOTIMPL`。
 
 ## <a name="remarks"></a>備註
- 例如,如果`ClassRoot`此屬性描述實現但實際上是派生自`ClassDerived``ClassRoot`的物件的物件,則此方法返回表示對物件的引用`ClassDerived`的[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件。
+ 例如，如果這個屬性描述的物件會執行， `ClassRoot` 但實際上是 `ClassDerived` 衍生自的具現化 `ClassRoot` ，則這個方法會傳回代表物件參考的 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 物件 `ClassDerived` 。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

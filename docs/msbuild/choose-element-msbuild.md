@@ -20,17 +20,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c4f699b4ffc9372af0c803d094390544932d652b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634470"
 ---
 # <a name="choose-element-msbuild"></a>Choose 項目 (MSBuild)
 
 評估子項目，以選取一組要評估的 `ItemGroup` 項目和/或 `PropertyGroup` 項目。
 
- \<專案>\<選擇>\<當>\<選擇>...\<否則>\<選擇>...
+ \<Project> \<Choose>
+ \<When>
+ \<Choose>
+... \<Otherwise>
+ \<Choose>
+...
 
 ## <a name="syntax"></a>語法
 
@@ -51,17 +56,17 @@ ms.locfileid: "77634470"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[否則](../msbuild/otherwise-element-msbuild.md)|選擇性項目。<br /><br /> 指定只有當所有 `When` 項目的條件評估為 `false` 時，才需評估的程式碼 `PropertyGroup` 和 `ItemGroup` 項目的區塊。 `Choose` 項目中可能有零或一個 `Otherwise` 項目，而且它必須是最後一個項目。|
 |[當](../msbuild/when-element-msbuild.md)|必要元素。<br /><br /> 指定 `Choose` 元素的可能程式碼區塊以選取。 `Choose` 項目中可能有一或多個 `When` 項目。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 元素 | 描述 |
+| 項目 | 描述 |
 | - | - |
 | [否則](../msbuild/otherwise-element-msbuild.md) | 指定如果所有 `When` 項目的條件評估為 `false`，才需執行的程式碼區塊。 |
-| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔案所需的根項目。 |
+| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
 | [當](../msbuild/when-element-msbuild.md) | 指定 `Choose` 元素的可能程式碼區塊以選取。 |
 
 ## <a name="remarks"></a>備註
@@ -119,5 +124,5 @@ ms.locfileid: "77634470"
 
 ## <a name="see-also"></a>另請參閱
 
-- [條件構造](../msbuild/msbuild-conditional-constructs.md)
-- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)
+- [條件式結構](../msbuild/msbuild-conditional-constructs.md)
+- [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)

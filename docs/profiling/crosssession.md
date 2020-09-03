@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 019a7b74deb70176f214aefdcec4db86cec86829
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331167"
 ---
 # <a name="crosssession"></a>CrossSession
@@ -35,7 +35,7 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 
  **開始：** `Method`**Start**選項會將分析工具初始化為指定的程式碼剖析方法。
 
- **Attach：** _PID_[**，**_PID_] 開始分析指定的進程。
+ **Attach：** _PID_[**，**_pid_] 開始分析指定的進程。
 
  **Detach**[**:**_PID_[,_PID_]] 停止分析指定的處理序。
 

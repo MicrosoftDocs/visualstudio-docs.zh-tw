@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ca8f049da83b99da7d36ebf74e756dd95f738d64
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546467"
 ---
 # <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143:透明方法不可以使用安全性要求
@@ -29,10 +29,10 @@ ms.locfileid: "85546467"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 透明類型或方法會以宣告方式標記 <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` 要求，或方法會呼叫 <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> 方法。
+ 透明型別或方法會以宣告方式標示為 <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` 要求，或方法會呼叫 <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> 方法。
 
 ## <a name="rule-description"></a>規則描述
- 安全性透明程式碼不應負責驗證作業的安全性，因此不應要求權限。 安全性透明程式碼應使用完整的要求做出安全性決策，而且安全關鍵程式碼不應依賴透明程式碼提出完全要求。 執行安全性檢查的任何程式碼（例如安全性需求），都應該是安全關鍵。
+ 安全性透明程式碼不應負責驗證作業的安全性，因此不應要求權限。 安全性透明程式碼應使用完整的要求做出安全性決策，而且安全關鍵程式碼不應依賴透明程式碼提出完全要求。 任何執行安全性檢查的程式碼，例如安全性要求，都應該是安全關鍵的。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  一般而言，若要修正此規則的違規情形，請使用屬性來標記方法 <xref:System.Security.SecuritySafeCriticalAttribute> 。 您也可以移除需求。
@@ -41,7 +41,7 @@ ms.locfileid: "85546467"
  請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列程式碼上的規則檔，因為透明方法會提出宣告式安全性需求。
+ 因為透明方法會提出宣告式安全性要求，所以會在下列程式碼上使用規則檔。
 
  [!code-csharp[FxCop.Security.CA2143.TransparentMethodsShouldNotDemand#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2143.transparentmethodsshouldnotdemand/cs/ca2143 - transparentmethodsshouldnotdemand.cs#1)]
 

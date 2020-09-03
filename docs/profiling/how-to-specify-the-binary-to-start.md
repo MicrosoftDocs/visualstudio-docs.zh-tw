@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f7cfd0d7a578d2ddaff28e9821f1d190bb2e10d
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331458"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>如何：指定要啟動的二進位檔
@@ -37,7 +37,7 @@ ms.locfileid: "85331458"
 
 6. 在 [工作目錄]**** 文字方塊中，指定目錄位置。
 
-7. 按一下 [確定]。
+7. 按一下 [確定]  。
 
 ## <a name="see-also"></a>另請參閱
 

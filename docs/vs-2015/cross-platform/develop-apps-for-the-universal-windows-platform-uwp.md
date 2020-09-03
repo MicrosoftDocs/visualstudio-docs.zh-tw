@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b3f38f519444de7876046baf242f74a18b8c5a59
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844361"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
@@ -25,7 +25,7 @@ ms.locfileid: "75844361"
 
  在 Windows 10 手機、Windows 10 桌上型電腦或 Xbox 上執行您的應用程式。 全部使用相同的應用程式套件！ 有了 Windows 10 單一整合核心，一個應用程式套件可以在所有平台上執行。 數個平台都有擴充功能 SDK，可供您加入應用程式以利用平台專屬行為。 例如，手機的擴充功能 SDK 會處理在 Windows 手機上按下返回鍵的行為。 如果您在專案中參考擴充功能 SDK，只要加入執行階段檢查，就能測試該平台是否可以使用這個 SDK。 因此，您可以針對每一個平台使用相同的應用程式套件！
 
- **Windows Core 是什麼？**
+ **什麼是 Windows Core？**
 
  這是第一次 Windows 在重整後擁有一個所有 Windows 10 平台通用的核心。 這個核心 (Core) 包含一個通用來源、一個通用 Windows 核心 (Kernel)、一個檔案 I/O 堆疊，還有一個應用程式模型。 針對 UI，只有一個 XAML UI 架構和一個 HTML UI 架構。 由於在不同的 Windows 10 裝置上執行應用程式變得很容易，因此您可以專注於建立絕佳的應用程式。
 

@@ -17,10 +17,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
 ms.openlocfilehash: afce5c9587a5b1a54e688197b0d8010920693d2d
-ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87805668"
 ---
 # <a name="visual-studio-test-agent-component-directory"></a>Visual Studio Test Agent 元件目錄

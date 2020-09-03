@@ -15,18 +15,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54626c07fb8d15f585e800f03911dd465395d795
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850251"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012：大量的反射
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 規則識別碼 |DA0012 |  
-|Category |。NET Framework 使用方式 |  
-|程式碼剖析方法 |取樣 |  
+|類別 |。NET Framework 使用方式 |  
+|分析方法 |取樣 |  
 |訊息 |您可能會過度使用反映。 這是很消耗資源的作業。|  
 |規則類型 |警告 |  
   

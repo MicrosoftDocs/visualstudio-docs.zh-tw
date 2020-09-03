@@ -1,5 +1,5 @@
 ---
-title: 在 Blend 中 Debug XAML |Microsoft Docs
+title: 在 Blend 中調試 XAML |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: d5d40878e40641b9a54a411af122f6207a02a7a1
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331040"
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中偵錯 XAML
 
-您可以使用 Blend for Visual Studio 中的工具，在您的應用程式中進行 XAML 的「偵測」。 當您建置專案時，所有錯誤都會顯示在 [結果]**** 面板中。 只要按兩下錯誤，即可找到與該錯誤相關的標記。 如果您需要更多工作空間，您可以按**F12**隱藏 [**結果**] 面板。
+您可以使用 Blend for Visual Studio 中的工具，在您的應用程式中進行 XAML 的偵錯工具。 當您建置專案時，所有錯誤都會顯示在 [結果]**** 面板中。 只要按兩下錯誤，即可找到與該錯誤相關的標記。 如果您需要更多空間來工作，您可以按**F12**隱藏 [**結果**] 面板。
 
 ## <a name="syntax-errors"></a>語法錯誤
 
@@ -38,23 +38,23 @@ ms.locfileid: "85331040"
 
 如需一般 XAML 語法的詳細資訊，請參閱[基本 XAML 語法指南](/windows/uwp/xaml-platform/xaml-syntax-guide)。
 
-您也可以識別並解決 Blend 中的簡單程式碼後置語法錯誤、編譯錯誤和執行階段錯誤。 但是，在 Visual Studio 中能夠較容易辨識並解決程式碼後置語法錯誤。
+您也可以在 Blend 中找出並解決簡單的程式碼後端語法錯誤、編譯錯誤和執行階段錯誤。 但是，在 Visual Studio 中能夠較容易辨識並解決程式碼後置語法錯誤。
 
 ### <a name="debugging-sample-xaml-code"></a>偵錯範例 XAML 程式碼
 
-下列範例將逐步引導您完成 Blend 中的簡單 XAML 調試階段。
+下列範例將逐步引導您完成 Blend 中的簡單 XAML 調試過程。
 
 #### <a name="to-create-a-project"></a>若要建立專案
 
-1. 在 Blend 中，開啟 **[檔案**] 功能表，然後按一下 [**新增專案**]。
+1. 在 Blend 中，開啟 **[檔案** ] 功能表，然後按一下 [ **新增專案**]。
 
     專案類型清單隨即出現在 [新增專案]**** 對話方塊的左邊。 當您按一下專案類型時，與該類型有關聯的專案範本會顯示在右邊。
 
 2. 在專案類型清單中，按一下 [ **Windows 通用**]。
 
-3. 在專案範本清單中，按一下 [**空白應用程式（通用 Windows）**]。
+3. 在專案範本清單中，按一下 [ ** (通用 Windows) 的 [空白應用程式 **]。
 
-4. 在 [**名稱**] 文字方塊中，輸入 `DebuggingSample` 。
+4. 在 [ **名稱** ] 文字方塊中，輸入 `DebuggingSample` 。
 
 5. 在 [位置]**** 文字方塊中，確認專案的位置。
 
@@ -102,13 +102,13 @@ ms.locfileid: "85331040"
 
 1. 按兩下清單中的第一個錯誤。 此描述為「值 '<' 不是有效的屬性」。 當您按兩下錯誤時，指標隨即找到程式碼中對應的位置。 `<` 前面的 `Button` 為有效字元，並非錯誤訊息中建議的屬性。 如果查看前一行程式碼，您會注意到 `Top` 屬性的右引號不見了。 請輸入右引號。 請注意，[結果]**** 面板中的錯誤清單隨即更新以反映您的變更。
 
-2. 按兩下描述 "' 0 ' 在名稱開頭無效。" `Margin="0,149,0,0"`外觀的格式正確。 但是，請注意 `Margin` 的色彩標示與程式碼中的其他 `Margin` 執行個體不符。 由於這個 `VerticalAlignment="Top` 前方的名稱/值組少了右引號 (`Margin="`)，因此就被視為屬於前一個屬性的值，導致 0 被視為名稱/值組的開頭。 請輸入 `Top` 的右引號。 [結果]**** 面板中的錯誤清單隨即更新以反映您的變更。
+2. 按兩下名稱開頭的描述 "' 0 ' 無效。" `Margin="0,149,0,0"` 外觀正確。 但是，請注意 `Margin` 的色彩標示與程式碼中的其他 `Margin` 執行個體不符。 由於這個 `VerticalAlignment="Top` 前方的名稱/值組少了右引號 (`Margin="`)，因此就被視為屬於前一個屬性的值，導致 0 被視為名稱/值組的開頭。 請輸入 `Top` 的右引號。 [結果]**** 面板中的錯誤清單隨即更新以反映您的變更。
 
 3. 按兩下剩餘的錯誤 [關閉的 XML 標籤 "Button" 不相符]。 指標隨即移至結尾**方格**標記處 (`</Grid>`)，提示錯誤是發生在 `Grid` 物件內。 請注意，第二個 `Button` 物件少了結尾標記。 在您新增結尾 `/` 之後，[結果]**** 面板清單也隨即更新。 我們現在已經解決一開始出現的錯誤，但是又出現了兩個錯誤。
 
 4. 按兩下 [無法識別或無法存取成員 "content"。]， `c` 中的 `content` 應該是大寫才對。 請將小寫 "c" 改成大寫 "C"。
 
-5. 按兩下 [屬性 ' Mame ' 不存在於 `http://schemas.microsoft.com/winfx/2006/xaml` 命名空間中」。 "Mame" 中的 "M" 應該是 "N" 才對。 請將 "M" 改成 "N"。 現在已經可以解析 XAML，應用程式也隨即顯示在設計介面上。
+5. 按兩下 [屬性 ' Mame ' 不存在於 `http://schemas.microsoft.com/winfx/2006/xaml` 命名空間中]。 "Mame" 中的 "M" 應該是 "N" 才對。 請將 "M" 改成 "N"。 現在已經可以解析 XAML，應用程式也隨即顯示在設計介面上。
 
     ![在 Blend for Visual Studio 中偵錯 XAML](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")
 
@@ -116,10 +116,10 @@ ms.locfileid: "85331040"
 
 ## <a name="debug-in-visual-studio"></a>在 Visual Studio 中偵錯
 
-您可以在 Visual Studio 中開啟 Blend 專案，以更輕鬆地在應用程式中進行程式碼的偵錯工具。 若要在 Visual Studio 中開啟 Blend 專案，請以滑鼠右鍵按一下 [**專案**] 面板中的專案，然後按一下 [**在 Visual Studio 中編輯**]。 在 Visual Studio 中完成偵錯工具會話之後，請按 Ctrl + Shift + S 儲存所有變更，然後切換回 Blend。 此時會出現要您重新載入專案的提示畫面。 按一下 **[全部都是]** ，即可繼續使用 Blend。
+您可以在 Visual Studio 中開啟 Blend 專案，以便更輕鬆地在應用程式中進行程式碼的偵錯工具。 若要在 Visual Studio 中開啟 Blend 專案，請以滑鼠右鍵按一下 [ **專案** ] 面板中的專案，然後按一下 [ **在 Visual Studio 中編輯**]。 當您在 Visual Studio 中完成偵錯工具之後，請按 Ctrl + Shift + S 儲存所有變更，然後切換回 Blend。 此時會出現要您重新載入專案的提示畫面。 按一下 **[是]** 以繼續在 Blend 中工作。
 
-如需有關偵錯工具的詳細資訊，請參閱[Visual Studio 中的 DEBUG UWP apps](../debugger/debugging-windows-store-and-windows-universal-apps.md)。
+如需有關偵錯工具的詳細資訊，請參閱 [Visual Studio 中的 DEBUG UWP 應用程式](../debugger/debugging-windows-store-and-windows-universal-apps.md)。
 
-## <a name="get-help"></a>取得協助
+## <a name="get-help"></a>取得說明
 
-如果您需要更多協助以進行 Blend 應用程式的調試，您可以搜尋[UWP app 社區論壇](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps)以取得問題的相關文章或張貼問題。
+如果您需要更多的 Blend 應用程式調試協助，您可以在 [UWP app 社區論壇](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) 中搜尋您問題的相關文章或張貼問題。

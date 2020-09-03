@@ -1,5 +1,5 @@
 ---
-title: BuildProjectOnload 元素 （Visual Studio 範本） |Microsoft Docs
+title: " (Visual Studio 範本的 BuildProjectOnload 元素) |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,19 +9,19 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 464c427008c739f23431c58bd647aaa3b1f5609d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184657"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload 項目 (Visual Studio 樣板)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-當您建立並將它們新增至方案，請建立新的專案。 不會建置整個方案。  
+建立新的專案，並將其新增至方案。 整個方案都不會建立。  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<BuildProjectOnLoad>  
   
 ## <a name="syntax"></a>語法  
@@ -31,7 +31,7 @@ ms.locfileid: "68184657"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
  無。  
@@ -41,20 +41,20 @@ ms.locfileid: "68184657"
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
-|TemplateData|將範本分類，並定義出現在兩者的方式**新的專案**並**加入新項目**對話方塊。|  
+|TemplateData|將範本分類，並定義該範本在 [ **新增專案** ] 和 [ **加入新專案** ] 對話方塊中的顯示方式。|  
   
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 文字必須是`true`或`false`，指出要從範本建立時建置新的專案。  
+ 文字必須是 `true` 或 `false` ，以指出從範本建立新專案時，是否只建立新專案。  
   
 ## <a name="remarks"></a>備註  
- `BuildProjectOnLoad` 是選擇性項目。 預設值為 `false`。  
+  是選擇性元素。 預設值是 `false`。  
   
 ## <a name="example"></a>範例  
- 下列範例說明 Visual C# 範本的中繼資料。  
+ 下列範例說明 Visual c # 範本的中繼資料。  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -82,5 +82,5 @@ ms.locfileid: "68184657"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
+ [建立專案和專案範本](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

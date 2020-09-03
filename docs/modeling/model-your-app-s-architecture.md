@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 449f528264f2101a45bc809a5002ce4e88659d05
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711725"
 ---
 # <a name="model-your-app39s-architecture"></a>將您的應用程式模型&#39;s 架構
@@ -102,7 +102,7 @@ ms.locfileid: "88711725"
 
 - 開發人員能夠採用之變化的描述。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [視覺化程式碼](../modeling/visualize-code.md)
 - [模型使用者需求](../modeling/model-user-requirements.md)

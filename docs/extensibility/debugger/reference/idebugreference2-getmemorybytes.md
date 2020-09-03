@@ -1,5 +1,5 @@
 ---
-title: IDebug參考2::獲取內存位元組 |微軟文件
+title: IDebugReference2：： GetMemoryBytes |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 958c38d6650c7152efef9fe72481a46a70090660
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720607"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
-獲取物理包含引用值的記憶體位元組。 保留供未來使用。
+取得實際包含參考值的記憶體位元組。 保留供未來使用。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ int GetMemoryBytes ( 
 
 ## <a name="parameters"></a>參數
 `ppMemoryBytes`\
-[出]返回可用於檢索包含引用值的記憶體的[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)物件。
+擴展傳回 [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) 物件，這個物件可以用來取出包含參考值的記憶體。
 
 ## <a name="return-value"></a>傳回值
- 永遠會傳回 `E_NOTIMPL`。
+ 一律傳回 `E_NOTIMPL`。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

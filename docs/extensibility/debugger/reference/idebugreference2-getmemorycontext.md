@@ -1,5 +1,5 @@
 ---
-title: IDebug參考2::獲取記憶體上下文 |微軟文件
+title: IDebugReference2：： GetMemoryCoNtext |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7f7f49262c0efe9f856ba01a73382541067335f0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720585"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
-獲取引用的記憶體上下文。 保留供未來使用。
+取得參考的記憶體內容。 保留供未來使用。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ int GetMemoryContext ( 
 
 ## <a name="parameters"></a>參數
 `ppMemory`\
-[出]返回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件,該物件表示與引用的值關聯的記憶體。
+擴展傳回 [IDebugMemoryCoNtext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 物件，代表與參考值相關聯的記憶體。
 
 ## <a name="return-value"></a>傳回值
- 永遠會傳回 `E_NOTIMPL`。
+ 一律傳回 `E_NOTIMPL`。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

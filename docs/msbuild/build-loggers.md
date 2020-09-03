@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a00bbb8ce239275ff140dbedf2157e4cdc41d44c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634522"
 ---
 # <a name="build-loggers"></a>組建記錄器
@@ -44,15 +44,15 @@ ms.locfileid: "77634522"
 
 ## <a name="respond-to-logger-verbosity-values"></a>回應記錄器詳細資訊層級值
 
-在某些情況下，如果**MSBuild.exe-verbosity 開關**包含特定值，則可能只想記錄事件的資訊。 <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>在此示例中，如果由 **-verbosity**開關設置<xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`<xref:Microsoft.Build.Utilities.Logger.Verbosity%2A>的屬性等於 ，則事件處理常式僅記錄一條消息。
+在某些情況下，如果 MSBuild.exe **詳細** 資訊參數包含特定值，您可能只想記錄來自事件的資訊。 在此範例中， <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> 事件處理常式只 <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> 會在由 **-詳細**資訊參數設定的屬性等於時，才會記錄訊息 <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed` 。
 
 [!code-csharp[msbuild_SimpleConsoleLogger#4](../msbuild/codesnippet/CSharp/build-loggers_3.cs)]
 
 ## <a name="specify-a-logger"></a>指定記錄器
 
-將記錄器編譯到程式集後，您需要告訴 MSBuild 在生成期間使用該記錄器。 這是使用*MSBuild.exe*的 **-logger**開關完成的。 如需 *MSBuild.exe* 適用參數的詳細資訊，請參閱[命令列參考](../msbuild/msbuild-command-line-reference.md)。
+當記錄器編譯成元件之後，您需要告知 MSBuild 在組建期間使用該記錄器。 這是使用 **-記錄器** 參數搭配 *MSBuild.exe*完成的。 如需 *MSBuild.exe* 適用參數的詳細資訊，請參閱[命令列參考](../msbuild/msbuild-command-line-reference.md)。
 
-下列命令列會建置 *MyProject.csproj* 專案，並使用 *SimpleLogger.dll* 中實作的記錄器類別。 **-nologo**開關隱藏橫幅和版權消息 **，-noconsolelogger**開關禁用預設的 MSBuild 主控台記錄器。
+下列命令列會建置 *MyProject.csproj* 專案，並使用 *SimpleLogger.dll* 中實作的記錄器類別。 **-Nologo**參數會隱藏橫幅和著作權訊息，而 **-noconsolelogger**參數會停用預設的 MSBuild 主控台記錄器。
 
 ```cmd
 MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll

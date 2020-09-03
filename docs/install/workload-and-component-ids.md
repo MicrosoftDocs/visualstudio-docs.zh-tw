@@ -18,10 +18,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
 ms.openlocfilehash: e5a4cca61b32772f47c5fa350123bc45c8f8d671
-ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87805796"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio 工作負載與元件識別碼
@@ -30,7 +30,7 @@ ms.locfileid: "87805796"
 
 ::: moniker range="vs-2017"
 
-**已針對[15.9 版本](/visualstudio/releasenotes/vs2017-relnotes/)更新**
+**[15.9 版](/visualstudio/releasenotes/vs2017-relnotes/)的更新**
 
 | **版本(Edition)** | **識別碼** | **描述** |
 | ----------- | ------ | --------------- |
@@ -51,7 +51,7 @@ ms.locfileid: "87805796"
 
 ::: moniker range="vs-2019"
 
-**已針對[16.7 版本](/visualstudio/releases/2019/release-notes/)更新**
+**[16.7 版](/visualstudio/releases/2019/release-notes/)的更新**
 
 | **版本(Edition)** | **識別碼** | **描述** |
 | ----------- | ------ | --------------- |
@@ -63,7 +63,7 @@ ms.locfileid: "87805796"
 | [Visual &nbsp; Studio Test &nbsp; Agent &nbsp; 2019](workload-component-id-vs-test-agent.md?vs-2019)  | Microsoft.VisualStudio.Product.TestAgent | 支援在遠端執行自動化的測試與負載測試 |
 | [Visual &nbsp; Studio 負載 &nbsp; 測試 &nbsp; 控制器2019](workload-component-id-vs-test-controller.md?vs-2019) | Microsoft.VisualStudio.Product.TestController | 將自動化的測試散發至多部電腦 |
 
-如需如何使用這些清單的詳細資訊，請參閱[使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019)頁面和如何：將擴充性[專案遷移至 Visual Studio](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019)頁面。
+如需如何使用這些清單的詳細資訊，請參閱 [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) 頁面和如何：將擴充性 [專案遷移至 Visual Studio](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019) 頁面。
 
 > [!NOTE]
 > 如需先前版本的工作負載和元件識別碼清單，請參閱 [Visual Studio 2017 工作負載和元件識別碼](workload-and-component-ids.md?view=vs-2017)

@@ -12,13 +12,13 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
 ms.openlocfilehash: c35e6a12262083d09575b51f6c9f918ba30a27b1
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88714420"
 ---
-# <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Visual Studio 安裝程式專案擴充功能和 .NET Core 3。1
+# <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Visual Studio 安裝程式專案延伸模組與 .NET Core 3.1
 
 將應用程式封裝為 MSI 通常是使用 Visual Studio 安裝程式 Projects 擴充功能來完成。
 
@@ -54,7 +54,7 @@ ms.locfileid: "88714420"
 >[!NOTE]
 >這些專案會在 Visual Studio 2019 Update 7 版本開始存在。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [必要條件對話方塊](../ide/reference/prerequisites-dialog-box.md)
 - [應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)

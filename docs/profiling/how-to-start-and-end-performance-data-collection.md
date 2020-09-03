@@ -1,5 +1,5 @@
 ---
-title: 如何-啟動和結束效能資料收集 |Microsoft Docs
+title: 如何-開始和結束效能資料收集 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: eedc7f42f2372452fa2cb96279e8b936bdc15e27
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331330"
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>如何：啟動和結束效能資料收集

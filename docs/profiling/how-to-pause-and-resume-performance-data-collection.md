@@ -1,5 +1,5 @@
 ---
-title: 如何暫停和繼續效能資料收集 |Microsoft Docs
+title: 如何-暫停和繼續效能資料收集 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ee17d8fa40be710fd18026a66e0a74680c5da087
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331472"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>如何：暫停和繼續效能資料收集

@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634405"
 ---
 # <a name="compare-properties-and-items"></a>比較屬性和項目
 
 MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以及儲存可在整個專案檔中參考的值。
 
-- 屬性是名稱/值組。 有關詳細資訊，請參閱[MSBuild 屬性](../msbuild/msbuild-properties.md)。
+- 屬性是名稱/值組。 如需詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。
 
 - 項目是通常代表檔案的物件。 項目物件可具有相關聯的中繼資料集合。 中繼資料是名稱/值組。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
 

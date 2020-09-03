@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 913fec8b820b5f32f564c84aba52a78df82efac1
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711751"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>原始檔控制外掛程式 API 版本1.2 的新功能&#39;
@@ -32,5 +32,5 @@ ms.locfileid: "88711751"
 
 - [從移除原始檔控制資訊。Proj 和。.Sln](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md) 檔案說明原始檔控制外掛程式 API 版本1.2 如何儲存專案和方案的相關資訊。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [快速入門](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

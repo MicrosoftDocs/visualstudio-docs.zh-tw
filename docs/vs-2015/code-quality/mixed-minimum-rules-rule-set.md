@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 36681eaa7a9e384c10d92ab26b214c782d2378a6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654863"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>混合最小規則規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft 混合的最低規則會著重于您C++的專案中支援 Common Language Runtime 的最嚴重問題，包括潛在的安全性漏洞和應用程式損毀。 您應該將此規則集包含在您為支援 Common Language Runtime 之C++專案所建立的任何自訂規則集中。
+Microsoft 混合的最小規則會將重點放在 c + + 專案中支援 Common Language Runtime 的最重大問題，包括潛在的安全性漏洞和應用程式損毀。 您應該在為支援 Common Language Runtime 的 c + + 專案所建立的任何自訂規則集中包含此規則集。
 
-|                                            規則                                             |                                                  描述                                                  |
+|                                            規則                                             |                                                  說明                                                  |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 |                              [C6001](../code-quality/c6001.md)                              |                                          使用尚未初始化的記憶體                                           |
 |                              [C6011](../code-quality/c6011.md)                              |                                          取值的指標為 NULL                                           |
@@ -101,7 +101,7 @@ Microsoft 混合的最低規則會著重于您C++的專案中支援 Common Langu
 |                             [C28215](../code-quality/c28215.md)                             |                    typefix 不能套用到已經有 typefix 的參數                    |
 |                             [C28216](../code-quality/c28216.md)                             |        checkReturn 註釋只適用於特定函式參數的後置條件。         |
 |                             [C28217](../code-quality/c28217.md)                             |            對於函式，註釋的參數數目不符合檔案中找到的參數數目             |
-|                             [C28218](../code-quality/c28218.md)                             |             針對函式參數，注釋的參數不符合檔案中找到的              |
+|                             [C28218](../code-quality/c28218.md)                             |             針對函式參數，注釋的參數不符合檔案中找到的參數              |
 |                             [C28219](../code-quality/c28219.md)                             |                 註釋中標註的參數需要列舉的成員                 |
 |                             [C28220](../code-quality/c28220.md)                             |                  註釋中標註的參數需要整數運算式                   |
 |                             [C28221](../code-quality/c28221.md)                             |                        註釋中的參數需要字串運算式                         |

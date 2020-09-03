@@ -1,5 +1,5 @@
 ---
-title: m_children欄位 |微軟文件
+title: m_children 欄位 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 07933fd4c9f359e72714600abdf8b4ee29268f84
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738421"
 ---
-# <a name="m_children-field"></a>m_children欄位
-在此任務中註冊的子任務的清單。
+# <a name="m_children-field"></a>m_children 欄位
+這項工作所註冊之子工作的清單。
 
- **命名空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **程式集**:mscorlib(在*mscorlib.dll*中)
+ **元件：** *mscorlib.dll*) 中的 mscorlib (
 
- 由於您無法從 .NET 框架訪問此內部成員,因此在通用中間語言 (CIL) 中提供了以下語法。
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。
 
 ## <a name="syntax"></a>語法
 
@@ -33,9 +33,9 @@ ms.locfileid: "80738421"
 ```
 
 ## <a name="remarks"></a>備註
- 當任務運行時,只有執行該任務的線程應訪問此陣組。
+ 當工作正在執行時，只有執行工作的執行緒才能存取此陣列。
 
- 如果任務已完成,則其他線程可以訪問此欄位,只要它們不向該欄位添加任何內容或從中刪除任何內容。
+ 如果工作已完成，其他執行緒就可以存取此欄位，只要它們不會在其中新增任何任何值，或從中移除任何檔案。
 
 ## <a name="see-also"></a>另請參閱
-- [或有屬性類別](../../extensibility/debugger/contingentproperties-class-internal-members.md)
+- [ContingentProperties 類別](../../extensibility/debugger/contingentproperties-class-internal-members.md)

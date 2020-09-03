@@ -1,5 +1,5 @@
 ---
-title: IDebug參考2::獲取參考資訊 |微軟文件
+title: IDebugReference2：： GetReferenceInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4fa198a3ded56a0dd054cf225bfb6b10968d1da3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720416"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
-獲取描述引用[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構。 保留供未來使用。
+取得描述參考的 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 結構。 保留供未來使用。
 
 ## <a name="syntax"></a>語法
 
@@ -51,25 +51,25 @@ int GetReferenceInfo ( 
 
 ## <a name="parameters"></a>參數
 `dwFields`\
-[在]DEBUGREF_INFO_FLAGS[枚舉](../../../extensibility/debugger/reference/debugref-info-flags.md)中的標誌的組合,用於確定要在[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構中填寫的欄位。
+在 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) 列舉中的旗標組合，可決定要在 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 結構中填寫的欄位。
 
 `nRadix`\
-[在]用於格式化任何數值資訊的半徑。
+在用來格式化任何數值資訊的基數。
 
 `dwTimeout`\
-[在]從此方法返回之前等待的最大時間(以毫秒為單位)。 用於`INFINITE`無限期等待。
+在從這個方法傳回之前等候的最長時間（以毫秒為單位）。 使用 `INFINITE` 可無限期等候。
 
 `rgpArgs`\
-[在][IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件的陣列。 保留供將來使用;設置為空值。
+在 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 物件的陣列。 保留供日後使用;設定為 null 值。
 
 `dwArgCount`\
-[在]陣列中的`rgpArgs`引為參數數。 保留供將來使用;設置為 0。
+在陣列中的參考引數數目 `rgpArgs` 。 保留供日後使用;設定為0。
 
 `pReferenceInfo`\
-[出]一[個DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構,該結構填充了屬性的說明。
+擴展填入屬性描述的 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 結構。
 
 ## <a name="return-value"></a>傳回值
- 永遠會傳回 `E_NOTIMPL`。
+ 一律傳回 `E_NOTIMPL`。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

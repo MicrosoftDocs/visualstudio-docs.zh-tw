@@ -18,10 +18,10 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: 9fdc2b7fc459d655748444759913cab903dfe782
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331414"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析通用 Windows App 中 HTML UI 的回應性
@@ -40,7 +40,7 @@ ms.locfileid: "85331414"
 
 1. 如果您是從 Visual Studio 執行應用程式，請在 [標準]**** 工具列上的 [開始偵錯]**** 清單中選擇部署目標，例如 [本機電腦]**** 或 [裝置]****。
 
-2. 在 [**調試**] 功能表上，選擇 [**效能**分析工具]。
+2. 在 [ **調試** ] 功能表上，選擇 [ **效能分析工具**]。
 
      如果您要變更分析工具的分析目標，請選擇 [變更目標]****。
 
@@ -76,11 +76,11 @@ ms.locfileid: "85331414"
 
 1. 在 Visual Studio 中開啟應用程式。
 
-2. 測試您的應用程式是否存在 UI 回應性問題 （按**Ctrl** +按**F5**以啟動您的應用程式而不進行調試。）
+2. 測試您的應用程式是否存在 UI 回應性問題  (按下**Ctrl** + **F5**以啟動您的應用程式，而不進行偵錯工具。 ) 
 
      如果您發現問題，請繼續測試以嘗試縮小發生問題的時間範圍，或者嘗試找出造成行為的觸發程序。
 
-3. 切換至 Visual Studio （按**Alt** + **Tab**）並停止您的應用程式（**Shift** + **F5**）。
+3. 切換至 Visual Studio (按下**Alt** + **Tab**) 並停止應用程式 (**Shift** + **F5**) 。
 
 4. 選擇性地將使用者標記加入程式碼，請使用 [標記程式碼以供分析](#ProfileMark)]。
 
@@ -128,7 +128,7 @@ ms.locfileid: "85331414"
 
 13. 放大時，請選取 CPU 使用率或視覺輸送量圖形的一部分。 確定選取範圍時，分析工具下方窗格的時間軸詳細資料圖形會變成只顯示選取的時段。
 
-### <a name="isolate-a-visual-throughput-problem"></a><a name="IsolateVisualThroughput"></a>找出視覺輸送量問題
+### <a name="isolate-a-visual-throughput-problem"></a><a name="IsolateVisualThroughput"></a> 找出視覺輸送量問題
  CPU 使用率超量期間可能會導致畫面播放速率降低或不一致。 如果您開發多媒體應用程式和遊戲，視覺輸送量圖表可能會比 CPU 使用率圖表提供更重要的資料。
 
  若要找出視覺輸送量問題，請依照上一節中所述的步驟執行，但是使用視覺輸送量圖表做為其中一個關鍵資料點。
@@ -276,7 +276,7 @@ if (performance.mark && performance.measure) {
 
  ![篩選事件的時間軸](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")
 
-### <a name="filter-events"></a><a name="FilterEvents"></a>篩選事件
+### <a name="filter-events"></a><a name="FilterEvents"></a> 篩選事件
  您可以從時間軸詳細資料圖表篩選掉一些事件以精煉資料，或是排除對效能方案而言不必要的資料。 您可以依事件名稱或事件持續時間進行篩選，或是依此處所說明的特定篩選條件進行篩選。
 
  若要篩選掉影像解碼、理論式下載和 GC 事件，請從下方窗格中的篩選圖示取消選取 [背景活動] **** 選項。 由於這些事件幾乎都不必採取動作，因此預設並不會顯示。
@@ -307,15 +307,15 @@ if (performance.mark && performance.measure) {
 ## <a name="profiler-event-reference"></a>Profiler event reference
  在 UI 回應性分析工具中，分析工具事件已分類和色彩標示。 這些是事件分類：
 
-- **載入.** 指出當應用程式第一次載入時，花在擷取應用程式資源和剖析 HTML 和 CSS 的時間。 這可能包括網路要求。
+- **載入。** 指出當應用程式第一次載入時，花在擷取應用程式資源和剖析 HTML 和 CSS 的時間。 這可能包括網路要求。
 
-- **位.** 指出花在剖析及執行 JavaScript 的時間。 這包括 DOM 事件、計時器、指令碼評估和動畫畫面格工作。 它包含使用者程式碼和程式庫程式碼。
+- **腳本。** 指出花在剖析及執行 JavaScript 的時間。 這包括 DOM 事件、計時器、指令碼評估和動畫畫面格工作。 它包含使用者程式碼和程式庫程式碼。
 
-- **GC.** 指出花在記憶體回收的時間。
+- **Gc。** 指出花在記憶體回收的時間。
 
-- **樣式.** 指出花在剖析 CSS 以及計算項目展示和配置的時間。
+- **造型。** 指出花在剖析 CSS 以及計算項目展示和配置的時間。
 
-- **轉譯.** 指出花在繪製螢幕的時間。
+- **渲染。** 指出花在繪製螢幕的時間。
 
 - **影像解碼中：** 指出花在解壓縮及解碼影像的時間。
 

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5994e3f5b17f50d707c4c5a00666d60c2efd3184
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711699"
 ---
 # <a name="msbuild-conditions"></a>MSBuild 條件
@@ -64,7 +64,7 @@ MSBuild 支援一組特定的條件，可在允許屬性的任何地方套用 `C
 
 MSBuild 會執行一些特殊的處理規則，讓您更輕鬆地使用做為布林值的字串屬性。 布林常值會被接受，因此 `Condition="true"` 並 `Condition="false"` 如預期般運作。 MSBuild 也包含支援布林值負運算子的特殊規則。 因此，如果 `$(Prop)` 是 ' true '，則會將 `!$(Prop)` 展開為， `!true` 而且這 `false` 會與您預期的相等比較。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
 - [條件式結構](../msbuild/msbuild-conditional-constructs.md)

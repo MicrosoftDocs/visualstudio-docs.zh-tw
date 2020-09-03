@@ -1,5 +1,5 @@
 ---
-title: 將屬性加入至專案項目 |Microsoft Docs
+title: 將屬性加入至專案專案 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1740ac4dfdeb64d5b4b2b0aab264845de9c186dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184824"
 ---
 # <a name="adding-an-attribute-to-a-project-item"></a>將屬性新增至專案項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>取得和設定的專案項目屬性的值。 SetItemAttribute 建立屬性如果已經存在，將它新增至專案項目中繼資料。  
+方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> 以及 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 取得和設定專案專案的屬性值。 SetItemAttribute 會建立屬性（如果它不存在），並將它加入至專案專案中繼資料。  
   
-## <a name="adding-an-attribute-to-a-project-item"></a>將屬性加入至專案項目  
+## <a name="adding-an-attribute-to-a-project-item"></a>將屬性加入至專案專案  
   
-#### <a name="to-add-an-attribute-to-a-project-item"></a>若要將屬性加入專案項目  
+#### <a name="to-add-an-attribute-to-a-project-item"></a>將屬性加入至專案專案  
   
-- 下列程式碼會使用<xref:EnvDTE.DTE>automation 物件和<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>方法，將屬性加入至專案項目。 專案項目 ID 被取自專案項目名稱"program.cs"。 屬性"MyAttribute"會加入至這個專案項目，而且 「 MyValue"的值。  
+- 下列程式碼會使用 <xref:EnvDTE.DTE> automation 物件和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 方法，將屬性加入至專案專案。 專案專案識別碼是從專案專案名稱 "program.cs" 取得的。 屬性 "MyAttribute" 會新增至這個專案專案，並指定值 "MyValue"。  
   
     ```  
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));  

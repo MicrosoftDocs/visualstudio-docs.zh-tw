@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1723fba810450fe5e31a43d63f3704ab74f455f4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634496"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>使用 MSBuild 同時建置多個專案
@@ -46,7 +46,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 
 ## <a name="buildinparallel-task-parameter"></a>BuildInParallel 工作參數
 
-`BuildInParallel`是 MSBuild 任務的可選布林參數。 將 `BuildInParallel` 設為 `true` (其預設值為 `true`) 時，會產生多個背景工作處理序，以盡可能同時建置最多個專案。 若要使其能正常運作，必須將 `-maxcpucount` 參數設為大於 1 的值，而且系統必須至少是雙核心或具有兩或多個處理器。
+`BuildInParallel` 在 MSBuild 工作上是選擇性的布林值參數。 將 `BuildInParallel` 設為 `true` (其預設值為 `true`) 時，會產生多個背景工作處理序，以盡可能同時建置最多個專案。 若要使其能正常運作，必須將 `-maxcpucount` 參數設為大於 1 的值，而且系統必須至少是雙核心或具有兩或多個處理器。
 
 以下範例取自 microsoft.common.targets**，說明如何設定 `BuildInParallel` 參數。
 

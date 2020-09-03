@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3582dd63b2324b061684f1f6ad446d84734e2d3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850150"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend 中的鍵盤快速鍵和輔助按鍵
@@ -23,15 +23,15 @@ ms.locfileid: "75850150"
 
 - **便捷鍵**：按下鍵盤上的特定按鍵，您即可使用便捷鍵存取功能表命令或對話方塊中的區域。 便捷鍵可透過目前選取之命令或對話方塊中的底線來識別。
 
-   若要使用便捷鍵，請先按 ALT 或 F10 以顯示底線，然後再按特定功能表或對話方塊項目的對應字母。 您也可以使用 TAB 鍵或方向鍵來瀏覽功能表或對話方塊。 例如，如果在 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 中按 ALT，[檔案] 功能表的 **F** 字母下方會出現底線以識別為便捷鍵。 若要開啟專案，您可以按住 ALT、按 F，然後再按 O。
+   若要使用便捷鍵，請先按 ALT 或 F10 以顯示底線，然後再按特定功能表或對話方塊項目的對應字母。 您也可以使用 TAB 鍵或方向鍵來瀏覽功能表或對話方塊。 例如，如果您在中按下 ALT [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] ，[檔案] 功能表中的字母**F**底下會出現底線，以將其識別為存取金鑰。 **File** 若要開啟專案，您可以按住 ALT、按 F，然後再按 O。
 
-   ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64")按 ALT 鍵後出現加底線的存取金鑰
+   ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64") 按 ALT 後出現加底線的便捷鍵
 
 - **快速鍵**：您可以按鍵盤快速鍵以使用快速鍵來執行動作 (例如，選取功能表命令或修改工具的行為)。
 
-   [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 使用者介面中的鍵盤快速鍵大多很容易識別；它們會顯示在功能表命令的右邊。 例如，在 [檔案] 功能表上，[開啟專案] 功能表命令即包含鍵盤快速鍵 CTRL+SHIFT+O。 若要查看 [工具] 面板中某個工具的快速鍵，請將指標停留在該工具上方。
+   [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 使用者介面中的鍵盤快速鍵大多很容易識別；它們會顯示在功能表命令的右邊。 例如，在 [檔案 **] 功能表上** ，[ **開啟專案** ] 功能表命令包含鍵盤快速鍵 CTRL + SHIFT + O。 若要查看 [工具]**** 面板中某個工具的快速鍵，請將指標停留在該工具上方。
 
-   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")出現在具有快捷方式的功能表項目旁邊的快速鍵
+   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595") 有捷徑的功能表項目旁邊會顯示快速鍵
 
   如需協助工具和功能的詳細資訊，請參閱 [Accessibility at Microsoft](https://www.microsoft.com/enable) (Microsoft 協助工具)。
 

@@ -1,5 +1,5 @@
 ---
-title: 新增工具列 |Microsoft Docs
+title: 加入工具列 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,32 +12,32 @@ caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: de74961715a82dde4e184509094d05145ad0f79c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184861"
 ---
 # <a name="adding-a-toolbar"></a>新增工具列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本逐步解說示範如何將工具列新增至 Visual Studio IDE。  
+本逐步解說將示範如何將工具列加入 Visual Studio IDE。  
   
- 工具列是水平或垂直的區域，其中包含繫結至命令的按鈕。 根據它的實作，IDE 中的工具列可以重新定位、 停駐的主要 IDE 視窗中，任何一側或待前其他視窗。  
+ 工具列是包含系結至命令之按鈕的水準或分隔號紋。 根據其執行方式，IDE 中的工具列可以重新置放、停駐于主要 IDE 視窗的任何一端，或保持在其他視窗前方。  
   
- 此外，使用者可以將命令加入至工具列，或移除它們，方法是使用**自訂** 對話方塊。 一般而言，在 Vspackage 中的工具列是使用者可自訂的。 IDE 會處理所有自訂項目，並回應命令的 VSPackage。 VSPackage 不必知道命令的實體所在的位置。  
+ 此外，使用者可以使用 [ **自訂** ] 對話方塊，將命令加入至工具列或從中移除。 一般而言，Vspackage 中的工具列可供使用者自訂。 IDE 會處理所有自訂，而 VSPackage 會回應命令。 VSPackage 不需要知道命令實際所在的位置。  
   
- 如需功能表的詳細資訊，請參閱[命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)。  
+ 如需功能表的詳細資訊，請參閱 [命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)。  
   
-## <a name="prerequisites"></a>必要條件  
- 從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+## <a name="prerequisites"></a>Prerequisites  
+ 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-## <a name="creating-an-extension-with-a-toolbar"></a>Creating an Extension with 工具列  
- 建立 VSIX 專案，名為`IDEToolbar`。 加入名為功能表命令項目範本**ToolbarTestCommand**。 如需如何執行這項操作的資訊，請參閱[建立具有功能表命令的擴充](../extensibility/creating-an-extension-with-a-menu-command.md)。  
+## <a name="creating-an-extension-with-a-toolbar"></a>使用工具列建立延伸模組  
+ 建立名為的 VSIX 專案 `IDEToolbar` 。 加入名為 **ToolbarTestCommand**的功能表命令專案範本。 如需有關如何這麼做的詳細資訊，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)模組。  
   
-## <a name="creating-a-toolbar-for-the-ide"></a>Ide 中建立工具列  
+## <a name="creating-a-toolbar-for-the-ide"></a>建立 IDE 的工具列  
   
-1. 在 ToolbarTestCommandPackage.vsct，尋找的 Symbols 區段。 在名為 guidToolbarTestCommandPackageCmdSet GuidSymbol 元素中，加入宣告一個工具列和工具列群組，如下所示。  
+1. 在 ToolbarTestCommandPackage. .vsct 中，尋找 [符號] 區段。 在名為 guidToolbarTestCommandPackageCmdSet 的 GuidSymbol 元素中，加入工具列和工具列群組的宣告，如下所示。  
   
     ```xml  
     <IDSymbol name="Toolbar" value="0x1000" />  
@@ -45,7 +45,7 @@ ms.locfileid: "68184861"
   
     ```  
   
-2. 在 [命令] 區段頂端，建立功能表一節。 定義您的工具列的 [功能表] 區段中加入功能表項目。  
+2. 在 [命令] 區段的頂端，建立功能表區段。 將功能表項目新增至 [功能表] 區段，以定義您的工具列。  
   
     ```xml  
     <Menus>  
@@ -60,9 +60,9 @@ ms.locfileid: "68184861"
     </Menus>  
     ```  
   
-     工具列不能巢狀，像是子功能表。 因此，您不必將父群組指派。 此外，您不需要設定優先順序，因為使用者可以移動工具列。 一般而言，以程式設計的方式，定義工具列的初始位置，但使用者的後續變更會保存。  
+     工具列不能像子功能表一樣地嵌套。 因此，您不需要指派父群組。 此外，您不需要設定優先順序，因為使用者可以移動工具列。 通常，會以程式設計的方式定義工具列的初始位置，但是會保存使用者的後續變更。  
   
-3. 在 [群組](../extensibility/groups-element.md)區段中，現有的群組項目之後, 定義[群組](../extensibility/group-element.md)来包含工具列命令項目。  
+3. 在 [ [群組](../extensibility/groups-element.md) ] 區段的 [現有群組] 專案之後，定義一個 [群組](../extensibility/group-element.md) 專案以包含工具列的命令。  
   
     ```xml  
     <Group guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarGroup"  
@@ -71,7 +71,7 @@ ms.locfileid: "68184861"
     </Group>  
     ```  
   
-4. 請在工具列上顯示的按鈕。 在 [按鈕] 區段中，將父系區塊，在工具列按鈕中。 產生按鈕區塊看起來應該像這樣：  
+4. 讓按鈕出現在工具列上。 在 [按鈕] 區段中，將按鈕中的父區塊取代為工具列。 產生的按鈕區塊看起來應該像這樣：  
   
     ```xml  
     <Button guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarTestCommandId" priority="0x0100" type="Button">  
@@ -83,13 +83,13 @@ ms.locfileid: "68184861"
     </Button>  
     ```  
   
-     根據預設，如果工具列上不有任何命令，它不會出現。  
+     依預設，如果工具列沒有任何命令，則不會出現。  
   
-5. 建置此專案並開始偵錯。 實驗執行個體應該會出現。  
+5. 建置此專案並開始偵錯。 實驗實例應會出現。  
   
-6. 以滑鼠右鍵按一下 Visual Studio 功能表列，以取得工具列的清單。 選取 **測試工具列**。  
+6. 以滑鼠右鍵按一下 Visual Studio 的功能表列，以取得工具列清單。 選取 [ **測試] 工具列**。  
   
-7. 您現在應該看到圖示右邊的 [檔案] 圖示中尋找您的工具列。 當您按一下圖示時，您應該會看到出現訊息方塊，指出**ToolbarTestCommandPackage。內 IDEToolbar.ToolbarTestCommand.MenuItemCallback()** 。  
+7. 您現在應該會看到工具列顯示為 [檔案中尋找] 圖示右邊的圖示。 當您按一下圖示時，應該會看到一個訊息方塊，指出 **ToolbarTestCommandPackage。在 IDEToolbar 中，ToolbarTestCommand. MenuItemCallback ( # B1 **。  
   
 ## <a name="see-also"></a>另請參閱  
  [命令、功能表及工具列](../extensibility/internals/commands-menus-and-toolbars.md)

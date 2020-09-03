@@ -1,5 +1,5 @@
 ---
-title: IDebug參考2::枚舉兒童 |微軟文件
+title: IDebugReference2：： EnumChildren |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 96b2fec782ce88dfb2200df35f56b35b304beda5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720628"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
-取得選取的引言子級的清單。 保留供未來使用。
+取得參考的選定子系列表。 保留供未來使用。
 
 ## <a name="syntax"></a>語法
 
@@ -51,25 +51,25 @@ int EnumChildren ( 
 
 ## <a name="parameters"></a>參數
 `dwFields`\
-[在][DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)枚舉中的標誌的組合,指定要填充枚舉[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構中的欄位。
+在 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) 列舉中的旗標組合，可指定要填入列舉 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 結構中的哪些欄位。
 
 `dwRadix`\
-[在]用於格式化任何數值資訊的半徑。
+在用來格式化任何數值資訊的基數。
 
 `dwAttribFilter`\
-[在][DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)枚舉中的標誌`pszNameFilter`與 參數結合使用,以選擇要枚舉的結構的組合。
+在 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) 列舉中的旗標組合，用來做為結合參數的篩選準則， `pszNameFilter` 以選取要列舉的結構。
 
 `pszNameFilter`\
-[在]指定篩選器的字串,如"MyX",與`dwAttribFilter`參數結合使用,用於選擇要枚舉的結構。
+在指定篩選器的字串，例如 "MyX"，與參數搭配使用 `dwAttribFilter` 以選取要列舉的結構。
 
 `dwTimeout`\
-[在]從此方法返回之前等待的最大時間(以毫秒為單位)。 用於`INFINITE`無限期等待。
+在從這個方法傳回之前等候的最長時間（以毫秒為單位）。 使用 `INFINITE` 可無限期等候。
 
 `ppEnum`\
-[出]返回包含請求子屬性清單的[IEnumDebugReference Info2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)物件。
+擴展傳回 [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) 物件，其中包含所要求之子屬性的清單。
 
 ## <a name="return-value"></a>傳回值
- 永遠會傳回 `E_NOTIMPL`。
+ 一律傳回 `E_NOTIMPL`。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

@@ -1,5 +1,5 @@
 ---
-title: m_parent欄位 |微軟文件
+title: m_parent 欄位 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,21 +11,21 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2d9d21cdd7fd89e075d15c0db1b0696deaa5cb46
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738406"
 ---
-# <a name="m_parent-field"></a>m_parent欄位
+# <a name="m_parent-field"></a>m_parent 欄位
 
-任務父<xref:System.Threading.Tasks.Task>項的備份欄位。
+工作父系的支援欄位 <xref:System.Threading.Tasks.Task> 。
 
-**命名空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
+**命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>
 
-**程式集**:mscorlib(在*mscorlib.dll*中)
+**元件：** *mscorlib.dll*) 中的 mscorlib (
 
-由於您無法從 .NET 框架訪問此內部成員,因此在通用中間語言 (CIL) 中提供了以下語法。
+因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。
 
 ## <a name="syntax"></a>語法
 
@@ -35,4 +35,4 @@ ms.locfileid: "80738406"
 
 ## <a name="see-also"></a>另請參閱
 
-- [工作類別](../../extensibility/debugger/task-class-internal-members.md)
+- [Task 類別](../../extensibility/debugger/task-class-internal-members.md)

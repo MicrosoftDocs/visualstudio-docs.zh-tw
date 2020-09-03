@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8bea9faa315fbd6ec41c667836dac7216f1f8f81
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986268"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>開發 Office 方案的其他資源
@@ -28,9 +28,9 @@ ms.locfileid: "72986268"
 
 適合 Office 開發人員的最新資源中央入口網站 (不是專屬於使用 Visual Studio 的 Office 程式開發)。
 
-[MSDN Library 的 Microsoft Office 開發 區段](/previous-versions/office/office-12/bb726434(v=office.12))
+[MSDN Library 的 Microsoft Office 開發] 區段](/previous-versions/office/office-12/bb726434(v=office.12))
 
 您可以在 MSDN Library 中，找到有關開發數種版本的 Office 方案 (不限於使用 Visual Studio 的 Office 開發工作) 之文章和參考文件的區域。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Office 方案中錯誤的其他支援](../vsto/additional-support-for-errors-in-office-solutions.md)
