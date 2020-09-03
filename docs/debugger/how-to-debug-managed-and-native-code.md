@@ -1,5 +1,5 @@
 ---
-title: '教學課程： Debug c # 和 c + + 程式碼（混合模式）'
+title: '教學課程：將 c # 和 c + + 程式碼 (混合模式進行偵錯工具) '
 description: 了解如何使用混合模式偵錯，從 .NET Core 或 .NET Framework 應用程式偵錯原生 DLL
 ms.custom: seodec18
 ms.date: 11/02/2018
@@ -16,10 +16,10 @@ ms.workload:
 - dotnet
 - cplusplus
 ms.openlocfilehash: 9f3fd94f8c294dce81bc69011e7d6f5fdd505325
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84182634"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教學課程：在同一個偵錯工作階段中進行 C# 和 C++ 偵錯
@@ -38,10 +38,10 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 > * 在受控應用程式中叫用中斷點
 > * 逐步執行機器碼
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
 您必須安裝具有下列工作負載的 Visual Studio：
-- **使用 C++ 的傳統型開發**
+- **使用 C++ 開發桌面**
 - **.NET 桌面開發**或 **.NET Core 跨平台開發**，視您要建立的應用程式類型而定。
 
 如果您沒有 Visual Studio，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)]   頁面免費進行安裝。
@@ -55,10 +55,10 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 1. 開啟 Visual Studio 並建立專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 輸入**Ctrl + Q**開啟 [搜尋] 方塊，輸入**空白專案**，選擇 [**範本**]，然後選擇 [適用于 c + + 的**空白專案**]。 在出現的對話方塊中選擇 [建立]****。 然後，鍵入像 **Mixed_Mode_Debugging** 的名稱，並按一下 [建立]****。
+    按 **Esc** 關閉開始視窗。 輸入 **Ctrl + Q** 以開啟 [搜尋] 方塊，輸入 **空白專案**，選擇 [ **範本**]，然後選擇 [針對 c + + **空白專案** ]。 在出現的對話方塊中選擇 [建立]****。 然後，鍵入像 **Mixed_Mode_Debugging** 的名稱，並按一下 [建立]****。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中 **，選擇 [** 檔案] [新增] [  >  **New**  >  **專案**]。 在 [新專案]**** 對話方塊的左窗格中，於 [Visual C++]**** 下，選擇 [其他]****，然後在中間的窗格中選擇 [空白專案]****。 然後，鍵入像 **Mixed_Mode_Debugging** 的名稱，並按一下 [確定]****。
+    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [新專案]**** 對話方塊的左窗格中，於 [Visual C++]**** 下，選擇 [其他]****，然後在中間的窗格中選擇 [空白專案]****。 然後，鍵入像 **Mixed_Mode_Debugging** 的名稱，並按一下 [確定]****。
     ::: moniker-end
 
     如果您未看到 [空白專案]**** 專案範本，請前往 [工具]**** > [取得工具與功能...]****，以開啟 Visual Studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 [使用 C++ 的桌面開發]**** 工作負載，然後選擇 [修改]**** 按鈕。
@@ -98,7 +98,7 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
     #endif
     ```
 
-1. 選取**File**[檔案] [  >  **全部儲存**] 或按**Ctrl** + **Shift** + **S**以儲存檔案。
+1. 選取**File**  >  [**全部儲存**]，或按**Ctrl** + **Shift** + **S**以儲存檔案。
 
 **若要設定並建置 DLL 專案：**
 
@@ -126,20 +126,20 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 1. 開啟 Visual Studio 並建立新專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 輸入**Ctrl + Q**來開啟搜尋方塊，輸入**主控台**，選擇 [**範本**]，然後選擇 [**主控台應用程式（.Net Core）** ] 或 [**主控台應用程式（.NET Framework）] （** 適用于 c #）。 在出現的對話方塊中選擇 [建立]****。
+    按 **Esc** 關閉開始視窗。 輸入 **Ctrl + Q** 以開啟 [搜尋] 方塊，輸入 **主控台**，選擇 [ **範本**]，然後選擇 [ **主控台應用程式 ( .net Core) ** 或 **主控台應用程式 ( .NET Framework) ** for c #。 在出現的對話方塊中選擇 [建立]****。
 
     然後，鍵入像 **Mixed_Mode_Calling_App** 的名稱，並按一下 [建立]****。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中 **，選擇 [** 檔案] [新增] [  >  **New**  >  **專案**]。 在 [新專案]**** 對話方塊的左窗格中，於 [Visual C#]**** 下選擇 [Windows Desktop]****，然後在中間的窗格中選擇 [主控台應用程式 (.NET Framework)]**** 或 [主控台應用程式 (.NET Core)]****。
+    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [新專案]**** 對話方塊的左窗格中，於 [Visual C#]**** 下選擇 [Windows Desktop]****，然後在中間的窗格中選擇 [主控台應用程式 (.NET Framework)]**** 或 [主控台應用程式 (.NET Core)]****。
 
     然後，鍵入像 **Mixed_Mode_Calling_App** 的名稱，並按一下 [確定]****。
     ::: moniker-end
 
-    如果您未看到 [主控台應用程式]**** 專案範本，請前往 [工具]**** > [取得工具與功能...]****，以開啟 Visual Studio 安裝程式。 選擇 [ **.net 桌面開發**] 工作負載，然後選擇 [**修改**]。
+    如果您未看到 [主控台應用程式]**** 專案範本，請前往 [工具]**** > [取得工具與功能...]****，以開啟 Visual Studio 安裝程式。 選擇 **.net 桌面開發** 工作負載，然後選擇 [ **修改**]。
 
     > [!NOTE]
-    > 您也可以將新的 managed 專案加入至現有的 c + + 方案。 我們會在新的方案中建立專案，讓混合模式的調試工作變得更棘手。
+    > 您也可以將新的 managed 專案加入至現有的 c + + 方案。 我們要在新的方案中建立專案，讓混合模式的調試工作變得更困難。
 
    Visual Studio 會建立空白專案，並在 [方案總管]**** 中顯示。
 
@@ -173,7 +173,7 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 
 1. 在新的程式碼中，將 `[DllImport]` 中檔案路徑取代為您剛建立的 *Mixed_Mode_Debugging.dll* 檔案路徑。 請參閱程式碼註解以取得提示。 請務必取代 *username* 預留位置。
 
-1. 選取 **[** 檔案] [  >  **儲存 Program.cs** ] 或按**Ctrl** + **S**以儲存檔案。
+1. 選取**File**  >  [檔案**儲存 Program.cs** ] 或按**Ctrl** + **S**以儲存檔案。
 
 ## <a name="configure-mixed-mode-debugging"></a>設定混合模式偵錯
 
@@ -245,7 +245,7 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 
 1. 再按一次 **F11** 鍵，將偵錯工具前移一行。
 
-1. 按**Shift** + **F11**或選取 [ **Debug**  >  **跳出**] 以繼續執行，並在受管理的應用程式中再次暫停。
+1. 按**Shift** + **F11**或選取 [ **Debug**  >  **跳出**] 以繼續執行，然後在受管理的應用程式中再次暫停。
 
 1. 按 **F5** 鍵或選取綠色箭號，以繼續偵錯應用程式。
 

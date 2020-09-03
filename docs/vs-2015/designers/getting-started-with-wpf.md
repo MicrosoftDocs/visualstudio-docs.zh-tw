@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3b005b55e0079b7db6486a8cde08f81f62ac7399
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542034"
 ---
 # <a name="getting-started-with-wpf"></a>WPF 使用者入門
@@ -23,7 +23,7 @@ Windows Presentation Foundation (WPF) 是建立桌面用戶端應用程式的 UI
 
 ## <a name="where-should-i-start"></a>我該從哪裡開始？
 
-|狀況|文章|
+|案例|發行項|
 |-|-|
 |我想直接開始|[逐步解說：我的第一個 WPF 桌面應用程式](../designers/walkthrough-my-first-wpf-desktop-application2.md)<br /><br /> [逐步解說：建立連接至 Azure 行動服務的 WPF 傳統型應用程式](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)|
 |我該如何設計應用程式 UI？|[在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../designers/designing-xaml-in-visual-studio.md)|
@@ -32,4 +32,4 @@ Windows Presentation Foundation (WPF) 是建立桌面用戶端應用程式的 UI
 |您是 Windows Form 開發人員嗎？|[Windows Form 控制項和對等 WPF 控制項](https://msdn.microsoft.com/library/ms750559\(v=vs.100\).aspx)<br /><br /> [WPF 和 Windows Form 互通的支援案例](https://msdn.microsoft.com/library/ms751797\(v=vs.100\).aspx)|
 
 ## <a name="see-also"></a>另請參閱
- [類別庫（WPF）](https://msdn.microsoft.com/library/ms753307\(v=vs.100\).aspx) [應用程式開發總覽](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx) [.NET Framework 開發人員中心](https://dotnet.microsoft.com/)[使用 Windows Presentation Foundation 建立新式桌面應用程式](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+ [類別庫 (WPF) ](https://msdn.microsoft.com/library/ms753307\(v=vs.100\).aspx) [應用程式開發總覽](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx) [.NET Framework 開發人員中心](https://dotnet.microsoft.com/)[利用 Windows Presentation Foundation 建立新式桌面應用程式](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

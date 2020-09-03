@@ -20,10 +20,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 3361b04900e549d037338abfba0911b232c9e1bd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919095"
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>移植、遷移及升級 Visual Studio 專案
@@ -39,14 +39,14 @@ ms.locfileid: "75919095"
 
 如果您將 Visual Studio 2015 與 Visual Studio 2013、Visual Studio 2012 或 Visual Studio 2010 SP1 一起使用，就可以使用這些版本其中任何一個建立和修改專案及檔案。 只要您未加入一或多個版本不支援的功能，您就可以在版本之間傳輸專案與檔案。
 
-## <a name="project"></a> 專案
+## <a name="projects"></a><a name="project"></a> 專案
 
 下列清單描述 Visual Studio 2015 與 Visual Studio 2013 中對在 Visual Studio 2012 或 Visual Studio 2010 SP1 中建立之專案的支援。 使用此清單可協助您判斷是否可以在 Visual Studio 2015、Visual Studio 2013、Visual Studio 2012 或 Visual Studio 2010 SP1 中以「原樣」開啟專案，或您是否必須加以修改以確保相容性。
 
 |專案類型|相容性|
 |---------------------|-------------------|
-|通用 Windows 平台應用程式|若要安裝通用 Windows 應用程式工具，請在 Visual Studio 安裝程式中，選取 [自訂]  或 [修改]  ，然後選取 [通用 Windows 應用程式開發工具]  。<br /><br /> 只有在 Windows 10 或 [!INCLUDE[win81](../includes/win81-md.md)] 上的 Visual Studio 2015 中，才支援適用於 Windows 10 的通用 Windows 平台 (UWP) 應用程式開發。|
-|Windows 市集應用程式|Windows 市集應用程式開發，包含以 Windows 8.1 和 Windows Phone 8.1 為目標的通用應用程式都受 [!INCLUDE[win81](../includes/win81-md.md)] 和 Windows 10 支援。 現有的 [!INCLUDE[win8](../includes/win8-md.md)] 專案可以繼續接收服務，但是無法建立新的 [!INCLUDE[win8](../includes/win8-md.md)] 專案。 [!INCLUDE[win81](../includes/win81-md.md)] 專案只能取決於特定的參考類型。 如需詳細資訊，請參閱[管理專案中的參考](../ide/managing-references-in-a-project.md)。 **注意：** 您使用 Visual Studio 2015 或 Visual Studio 2013 建立的 [!INCLUDE[win81](../includes/win81-md.md)] 專案無法在 Visual Studio 2012 中開啟。 這是因為使用 Visual Studio 2015 與 Visual Studio 2013 以那些版本與 Visual Studio 2012 為目標所建立的 [!INCLUDE[win81](../includes/win81-md.md)] 專案只支援以 [!INCLUDE[win8](../includes/win8-md.md)] 為目標的 [!INCLUDE[win8](../includes/win8-md.md)] 專案。|
+|通用 Windows 平台應用程式|若要安裝通用 Windows 應用程式工具，請在 Visual Studio 安裝程式中，選取 [自訂] **** 或 [修改] ****，然後選取 [通用 Windows 應用程式開發工具] ****。<br /><br /> 只有在 Windows 10 或 [!INCLUDE[win81](../includes/win81-md.md)] 上的 Visual Studio 2015 中，才支援適用於 Windows 10 的通用 Windows 平台 (UWP) 應用程式開發。|
+|Windows 市集應用程式|Windows 市集應用程式開發，包含以 Windows 8.1 和 Windows Phone 8.1 為目標的通用應用程式都受 [!INCLUDE[win81](../includes/win81-md.md)] 和 Windows 10 支援。 現有的 [!INCLUDE[win8](../includes/win8-md.md)] 專案可以繼續接收服務，但是無法建立新的 [!INCLUDE[win8](../includes/win8-md.md)] 專案。 [!INCLUDE[win81](../includes/win81-md.md)] 專案只能取決於特定的參考類型。 如需詳細資訊，請參閱 [管理專案中的參考](../ide/managing-references-in-a-project.md)。 **注意：您使用 Visual Studio 2015 或 Visual Studio 2013 建立的 **  [!INCLUDE[win81](../includes/win81-md.md)] 專案無法在 Visual Studio 2012 中開啟。 這是因為使用 Visual Studio 2015 與 Visual Studio 2013 以那些版本與 Visual Studio 2012 為目標所建立的 [!INCLUDE[win81](../includes/win81-md.md)] 專案只支援以 [!INCLUDE[win8](../includes/win8-md.md)] 為目標的 [!INCLUDE[win8](../includes/win8-md.md)] 專案。|
 |[!INCLUDE[net_v451](../includes/net-v451-md.md)]|在安裝適當的多目標套件之後，您可以在 Visual Studio 2015 和 Visual Studio 2013 中建立及使用這些專案。 Visual Studio 2010 SP1 不支援這些專案。|
 |[!INCLUDE[net_v45](../includes/net-v45-md.md)]|您可以在 Visual Studio 2015、Visual Studio 2013 與 Visual Studio 2012 中建立及開啟這些專案，但無法在 Visual Studio 2010 SP1 中進行。|
 |BizTalk|BizTalk Server 專案與 Visual Studio 2015 或 Visual Studio 2013 不相容。|
@@ -56,11 +56,11 @@ ms.locfileid: "75919095"
 |自動程式碼 UI 測試|若您允許 Visual Studio 自動更新專案，您可以在 Visual Studio 2013、Visual Studio 2012 與 Visual Studio 2010 SP1 中開啟它。|
 |F#|若您允許 Visual Studio 升級在 Visual Studio 2010 SP1 中建立的專案，您可以在 Visual Studio 2013 與 Visual Studio 2012 中加以開啟。 不過，您無法將以舊版 Visual Studio 建立的 Silverlight 專案升級到 Visual Studio 2013。 相反地，您必須在 Visual Studio 2013 中建立 Silverlight 專案，然後將您的程式碼複製到其中。 在 Visual Studio 2013 中建立的 Silverlight 專案會以 Silverlight 5 為目標。|
 |LightSwitch|若您允許 Visual Studio 自動升級專案，您只能在 Visual Studio 2013 中加以開啟。|
-|本機資料庫快取|[本機資料庫快取] 範本與 [設定資料同步處理]  對話方塊不包含在 Visual Studio 2013 中。 若已安裝 Microsoft 同步處理服務 v1.0，您可以使用 Visual Studio 2013 來開啟並執行在 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 中建立的專案，但若您想要在 Visual Studio 2013 中更新它們，您必須在程式碼中手動進行所有變更。 或者，您可以繼續使用 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 來維護和更新這些專案。  若要進行新開發，請以 Microsoft Sync Framework 提供的新同步處理模型為目標。 如需相關資訊，請參閱 [Microsoft Sync Framework Developer Center](https://msdn.microsoft.com/sync/default)(Microsoft Sync Framework 開發人員中心)|
-|模型檢視控制器 (MVC) 架構|Visual Studio 2010 SP1 只支援 MVC 2 與 MVC 3、Visual Studio 2012 只支援 MVC 3 與 MVC 4，而 Visual Studio 2013 只支援 MVC 4。 如需關於如何從 MVC 2 自動升級到 MVC 3 的詳細資訊，請參閱 [ASP.NET MVC 3 Application Upgrader](https://aspnet.codeplex.com/releases/view/59008) (ASP.NET MVC 3 應用程式升級程式)。 如需關於如何從 MVC 2 手動升級至 MVC 3 的詳細資訊，請參閱 [Upgrading an ASP.NET MVC 2 Project to ASP.NET MVC 3 Tools Update](https://aspnet.codeplex.com/releases/view/59008)(將 ASP.NET MVC 2 專案升級至 ASP.NET MVC 3 工具更新)。 如需關於如何從 MVC 3 手動升級至 MVC 4 的詳細資訊，請參閱 [Upgrading an ASP.NET MVC 3 Project to ASP.NET MVC 4](/aspnet/whitepapers/mvc4-release-notes) (將 ASP.NET MVC 3 專案升級至 ASP.NET MVC 4)。 如果您的專案以 .NET Framework 3.5 SP1 為目標，專案必須重定目標為使用 .NET Framework 4。|
+|本機資料庫快取|[本機資料庫快取] 範本與 [設定資料同步處理]**** 對話方塊不包含在 Visual Studio 2013 中。 若已安裝 Microsoft 同步處理服務 v1.0，您可以使用 Visual Studio 2013 來開啟並執行在 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 中建立的專案，但若您想要在 Visual Studio 2013 中更新它們，您必須在程式碼中手動進行所有變更。 或者，您可以繼續使用 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 來維護和更新這些專案。  若要進行新開發，請以 Microsoft Sync Framework 提供的新同步處理模型為目標。 如需相關資訊，請參閱 [Microsoft Sync Framework Developer Center](https://msdn.microsoft.com/sync/default)(Microsoft Sync Framework 開發人員中心)|
+|模型檢視控制器 (MVC) 架構|Visual Studio 2010 SP1 只支援 MVC 2 與 MVC 3、Visual Studio 2012 只支援 MVC 3 與 MVC 4，而 Visual Studio 2013 只支援 MVC 4。 如需關於如何從 MVC 2 自動升級到 MVC 3 的詳細資訊，請參閱 [ASP.NET MVC 3 Application Upgrader](https://aspnet.codeplex.com/releases/view/59008) (ASP.NET MVC 3 應用程式升級程式)。 如需關於如何從 MVC 2 手動升級至 MVC 3 的詳細資訊，請參閱 [Upgrading an ASP.NET MVC 2 Project to ASP.NET MVC 3 Tools Update](https://aspnet.codeplex.com/releases/view/59008)(將 ASP.NET MVC 2 專案升級至 ASP.NET MVC 3 工具更新)。 如需關於如何從 MVC 3 手動升級至 MVC 4 的詳細資訊，請參閱 [Upgrading an ASP.NET MVC 3 Project to ASP.NET MVC 4](/aspnet/whitepapers/mvc4-release-notes)(將 ASP.NET MVC 3 專案升級至 ASP.NET MVC 4)。 如果您的專案以 .NET Framework 3.5 SP1 為目標，專案必須重定目標為使用 .NET Framework 4。|
 |模型化|如果您允許 Visual Studio 自動更新專案，則可以在 Visual Studio 2013、Visual Studio 2012 或 Visual Studio 2010 SP1 中開啟專案。<br /><br /> 當 Team Foundation 建置模型專案時，它會嘗試驗證專案中的各層。 在 Visual Studio 2013 中，Team Foundation Build 無法驗證在 Visual Studio 2010 SP1 中建立之模型專案的層級。 不過，在 Visual Studio 2010 SP1 中，Team Foundation Build 可以驗證在 Visual Studio 2013 中建立之模型專案的層級。|
 |MPI/叢集偵錯|若執行 Visual Studio 2013、Visual Studio 2012 或 Visual Studio 2010 SP1 的電腦上已安裝相同版本的執行階段或工具，您可以在這三個版本中開啟此專案。|
-|MSI 安裝程式 (.vdproj)|無法在 Visual Studio 2013 中開啟此專案，因為它不支援該專案類型。 我們建議您使用 InstallShield Limited Edition for Visual Studio (ISLE)，它是直接支援大部分 Windows 平台和應用程式執行階段的免費部署方案。 您也可以使用 ISLE 從 Visual Studio Installer 專案匯入資料和設定。 中修改就能執行。|
+|MSI 安裝程式 (.vdproj)|無法在 Visual Studio 2013 中開啟此專案，因為它不支援該專案類型。 我們建議您使用 InstallShield Limited Edition for Visual Studio (ISLE)，它是直接支援大部分 Windows 平台和應用程式執行階段的免費部署方案。 您也可以使用 ISLE 從 Visual Studio Installer 專案匯入資料和設定。 .|
 |Office 2007 VSTO|若您將專案升級為以 Office 2013 與 .NET Framework 4 為目標，您可以在 Visual Studio 2013、Visual Studio 2012 或 Visual Studio 2010 SP1 中開啟此專案。|
 |Office 2010 VSTO|若專案以 .NET Framework 4 為目標，您可以在 Visual Studio 2013、Visual Studio 2012 與 Visual Studio 2010 SP1 中加以開啟。 所有其他專案則需要單向升級。|
 |豐富網際網路應用程式|若您升級專案，您可以在 Visual Studio 2013、Visual Studio 2012 與 Visual Studio 2010 SP1 中加以開啟。|
@@ -77,7 +77,7 @@ ms.locfileid: "75919095"
 |Visual Studio 2010 Visual Database Tools|您可以在 Visual Studio 2013、Visual Studio 2012 和 Visual Studio 2010 SP1 中開啟這類專案。|
 |Visual Studio Lab Management|您可以使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)]、Visual Studio 2013、Visual Studio 2012 與 Visual Studio 2010 SP1 來開啟在這些版本中建立的環境。 不過，Microsoft Test Manager 的版本必須符合 Team Foundation Server 的版本才能建立環境。|
 |Visual Studio 巨集|無法在 Visual Studio 2013 中開啟此專案，因為它不支援此專案類型。|
-|Visual Studio SDK/VSIX|將 Visual Studio SDK 專案升級為 Visual Studio 2013 之後，就無法在 Visual Studio 2012 中加以開啟。 如需詳細資訊，請參閱[如何：將擴充性專案移轉至 Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)。|
+|Visual Studio SDK/VSIX|將 Visual Studio SDK 專案升級為 Visual Studio 2013 之後，就無法在 Visual Studio 2012 中加以開啟。 如需詳細資訊，請參閱[如何︰將擴充性專案移轉至 Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)。|
 |Microsoft Azure Tools for Visual Studio|若您使用的是 Microsoft Azure Tools for Visual Studio 2.1 版，您可以在 Visual Studio 2013、Visual Studio 2012 與 Visual Studio 2010 SP1 中開啟專案。 針對以較早版本為目標的專案，若您允許 Visual Studio 將專案升級到 2.1 版，您可以在 Visual Studio 2013、Visual Studio 2012 與 Visual Studio 2010 SP1 中加以開啟。|
 |Windows Communication Foundation、Windows Presentation Foundation|您可以在 Visual Studio 2013、Visual Studio 2012 和 Visual Studio 2010 SP1 中開啟這類專案。|
 |Windows Mobile|無法在 Visual Studio 2013 中開啟此專案，因為它不支援此專案類型。|
@@ -90,9 +90,9 @@ ms.locfileid: "75919095"
 ## <a name="troubleshooting-project-compatibility-issues"></a>疑難排解專案相容性問題
  以下是當專案無法在 Visual Studio 2015 或 Visual Studio 2013 中開啟時，您可以執行的一些動作：
 
-- 若您嘗試開啟 Visual Studio 2015 或 Visual Studio 2013 不支援的專案，而且未安裝相關聯的 Visual Studio 版本，則可能會出現專案類型不受支援的訊息，而且專案類型可能會列在 [檢閱專案和方案變更]  對話方塊中的 [不支援的專案]  下。 若要解決這個問題，請開啟 Windows [ **控制台**] 的 [程式和功能] 頁面，選取 [ **Visual Studio**]，然後選擇 [ **變更**]、[ **修復**]。 然後您就可以安裝遺漏的版本。
+- 若您嘗試開啟 Visual Studio 2015 或 Visual Studio 2013 不支援的專案，而且未安裝相關聯的 Visual Studio 版本，則可能會出現專案類型不受支援的訊息，而且專案類型可能會列在 [檢閱專案和方案變更]**** 對話方塊中的 [不支援的專案]**** 下。 若要解決這個問題，請開啟 Windows [ **控制台**] 的 [程式和功能] 頁面，選取 [ **Visual Studio**]，然後選擇 [ **變更**]、[ **修復**]。 然後您就可以安裝遺漏的版本。
 
-- 若您嘗試在 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] 中開啟傳統型應用程式的專案，會發生錯誤並顯示下列其中一個訊息：「此 Visual Studio 版本僅支援 [!INCLUDE[win81](../includes/win81-md.md)] 應用程式」或「此專案與目前的 Visual Studio 不相容。」 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] 只能用於開發、測試和部署針對 Windows 8.1 所設計的 Windows 市集應用程式。 若要開啟桌面應用程式專案，您必須使用支援該專案類型的 Visual Studio 版本。
+- 如果您嘗試在 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]中開啟桌面應用程式的專案，將會發生錯誤並顯示下列其中一個訊息：「這個版本的 Visual Studio 僅支援 [!INCLUDE[win81](../includes/win81-md.md)] 應用程式」或「這個專案與目前的 Visual Studio 版本不相容」。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] 只能用於開發、測試和部署針對 Windows 8.1 所設計的 Windows 市集應用程式。 若要開啟桌面應用程式專案，您必須使用支援該專案類型的 Visual Studio 版本。
 
    如需 Visual Studio 版本的詳細資訊，請參閱 [Microsoft Visual Studio 產品](https://visualstudio.microsoft.com/products/)
 
@@ -104,7 +104,7 @@ ms.locfileid: "75919095"
 
   如需其他疑難排解資訊，請參閱 [Visual Studio 2013 相容性](https://support.microsoft.com/help/2863286/roundtrip-issues-for-visual-studio-2012-and-visual-studio-2013-preview) 知識庫文章。
 
-## <a name="file"></a> 檔案
+## <a name="files"></a><a name="file"></a> 檔
 
 下列清單會識別 Visual Studio 2013 是否支援每種類型的檔案、是否可以在 Visual Studio 2012 與 Visual Studio 2010 SP1 中開啟檔案，以及是否必須加以修改以確保相容性。
 
@@ -125,7 +125,7 @@ ms.locfileid: "75919095"
 |[!INCLUDE[vs2010](../includes/vs2010-md.md)] 的 IntelliTrace 記錄檔|您可以在 Visual Studio 2012、Visual Studio 2013 與 Visual Studio 2010 SP1 中開啟這些檔案。|
 |JavaScript 記憶體分析器 (.diagsession) 檔案|您可以在 Visual Studio 2013 中檢視舊版 Visual Studio 所建立的檔案。 不過，視收集的資訊而定，在 Visual Studio 2013 中建立的檔案可能無法在 Visual Studio 2012 或 Visual Studio 2010 SP1 中開啟。|
 
-## <a name="integration"></a> 整合資產
+## <a name="integration-assets"></a><a name="integration"></a> 整合資產
 
 如果您的用戶端與伺服器使用不同版本的 Visual Studio Team Foundation Server，可能會遇到相容性問題。
 

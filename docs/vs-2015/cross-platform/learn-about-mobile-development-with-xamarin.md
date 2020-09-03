@@ -7,10 +7,10 @@ caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: a362bd4eef2a48667c67c03e940e213fc960418b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919009"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>了解 Xamarin 的行動應用程式開發
@@ -39,7 +39,7 @@ ms.locfileid: "75919009"
   
   下圖描述這些關聯性，您可以從 [Xamarin.iOS for Visual Studio 簡介](/xamarin/ios/get-started/installation/windows/introduction-to-xamarin-ios-for-visual-studio) (xamarin.com) 進一步了解如何使用 iOS 應用程式。  
   
-  ![Xamarin 環境中 Windows 與 Mac dev 電腦之間的關聯性](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin 學習1")  
+  ![Xamarin 環境中 Windows 與 Mac 開發電腦之間的關聯性](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin 學習1")  
   
 ## <a name="essentials-how-projects-are-structured"></a>基本概念：專案的結構方式  
  *10-30 分鐘*  
@@ -59,15 +59,15 @@ ms.locfileid: "75919009"
   
  您不需要決定要優先採取哪種方法，應用程式可以使用 Xamarin Native 和 Xamarin.Forms 的組合來實作：  
   
-- 使用 Xamarin.Forms 建置一般目的螢幕，在不同平台之間提供類似的 UI 和功能，例如登入、連絡人表單和搜尋結果。  
+- 使用 Xamarin.Forms 建置一般目的畫面，在不同平台之間提供類似的 UI 和功能，例如登入、連絡人表單和搜尋結果。  
   
-- 使用 Xamarin.Forms 中的各種自訂功能，根據平台來調整 UI。 {2&gt;其中包括可從程式碼和 XAML 使用的 OnPlatform API、建立自訂檢視、擴充現有的轉譯器，以及建立自訂轉譯器。&lt;2}  
+- 使用 Xamarin.Forms 中的各種自訂功能，根據平台來調整 UI。 其中包括可從程式碼和 XAML 使用的 OnPlatform API、建立自訂檢視、擴充現有的轉譯器，以及建立自訂轉譯器。  
   
-- {2&gt;如有必要，請使用 Xamarin Native 建置螢幕，以使用每個平台的唯一 UI 功能，例如使用相機擷取和影像操作的螢幕。&lt;2}  
+- 如有必要，請使用 Xamarin Native 建置畫面，以使用各平台特有的 UI 功能，例如使用原生相機擷取和影像操作的畫面。  
   
   建議一律從 Xamarin.Forms 方案開始設定可跨平台共用的 UI 程式碼，以及使用自訂功能來進行平台專屬的調整。 如果您需要完全為平台專屬的螢幕，您可以使用 Xamarin Native 個別加入這些螢幕。  
   
-  若要進一步了解：  
+  若要深入了解：  
   
 1. [Xamarin.Forms](/xamarin/xamarin-forms/) (xamarin.com) 提供 Xamarin.Forms 與原生 UI 層 (亦即 Xamarin.iOS 和 Xamarin.Android) 的簡要概觀和優缺點比較。  
   
@@ -86,15 +86,15 @@ ms.locfileid: "75919009"
   
 1. **Android 模擬器。** ：根據您使用的 Windows 版本，建議使用 Microsoft Visual Studio Emulator for Android 或 Xamarin Player，這兩個模擬器都提供快速效能，並支援各種裝置功能：  
   
-    - **Windows 8+ 電腦** ：強烈建議使用隨 Visual Studio 安裝的 Microsoft [Visual Studio Emulator for Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx)。  [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) 影片 (Channel9，5 分 55 秒) 提供概觀和示範。  
+    - **Windows 8+ 電腦** ：強烈建議使用隨 Visual Studio 安裝的 Microsoft [Visual Studio Emulator for Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx)。  [適用于 Android 的 Visual Studio 模擬器](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711)影片 (Channel9、5m55s) 提供總覽和示範。  
   
     - **Windows 7 或舊版/在 Mac OS X 上執行的 Windows**：使用 [Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com)。  
   
-2. **Apple iOS 模擬器：** 若要深入了解，請閱讀 [iOS 模擬器使用者入門 (英文)](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com)。  
+2. **Apple 的 iOS 模擬器。** 若要深入了解，請閱讀 [iOS 模擬器使用者入門 (英文)](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com)。  
   
 3. **Microsoft 的 Windows Phone 模擬器** 若要深入了解，請閱讀 [Windows Phone 8 的 Windows Phone 模擬器](https://msdn.microsoft.com/library/dn632391.aspx)。  
   
-## <a name="components"></a> Deeper Dive: Xamarin Components  
+## <a name="deeper-dive-xamarin-components"></a><a name="components"></a> 深入探討： Xamarin 元件  
  *10 分鐘*  
   
- Xamarin 應用程式中的許多擴充功能是透過 Xamarin 元件來提供。 您可以在 [http://components.xamarin.com/](/xamarin/cross-platform/troubleshooting/component-nuget?tabs=windows)上找到可供下載的完整目錄，其中包括其他 UI 控制項、驗證、各種不同雲端服務 (例如 Microsoft Azure) 等等的元件。
+ Xamarin 應用程式中的許多擴充功能是透過 Xamarin 元件來提供。 您可以在上找到可供下載的完整目錄 [http://components.xamarin.com/](/xamarin/cross-platform/troubleshooting/component-nuget?tabs=windows) ，其中包括其他 UI 控制項的元件、驗證、各種不同的雲端服務，例如 Microsoft Azure 等等。

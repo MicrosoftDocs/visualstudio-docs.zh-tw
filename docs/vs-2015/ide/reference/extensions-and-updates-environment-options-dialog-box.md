@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 693738e1751e580e32d7223d150438717fc63d27
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651048"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>選項對話方塊、環境、擴充功能和更新
@@ -24,7 +24,7 @@ ms.locfileid: "72651048"
 您可以使用這個頁面，設定有關 Visual Studio 如何執行更新，以及如何更新和探索擴充功能的選項。
 
 ### <a name="automatically-check-for-updates"></a>自動檢查更新
- 核取時，Visual Studio 會定期檢查自身、已安裝的 SDK 和工具以及擴充功能是否有更新，並在有可用更新時，於功能表列中顯示通知。 如需詳細資訊，請參閱[通知](../../ide/visual-studio-notifications.md)。
+ 核取時，Visual Studio 會定期檢查自身、已安裝的 SDK 和工具以及擴充功能是否有更新，並在有可用更新時，於功能表列中顯示通知。 如需詳細資訊，請參閱 [Microsoft Azure 快取服務 (預覽) 通知](../../ide/visual-studio-notifications.md)。
 
 ### <a name="automatically-update-extensions"></a>自動更新擴充功能
  核取時，會直接更新擴充功能而不提示。 如需詳細資訊，請參閱[尋找和使用 Visual Studio 延伸模組](../../ide/finding-and-using-visual-studio-extensions.md)。
@@ -33,7 +33,7 @@ ms.locfileid: "72651048"
  如需詳細資訊，請參閱[尋找和使用 Visual Studio 延伸模組](../../ide/finding-and-using-visual-studio-extensions.md)。
 
 ### <a name="additional-extension-galleries"></a>其他擴充組件庫
- 這個企業版功能可支援專屬擴充功能的組件庫。 如需詳細資訊，請參閱[私用組件庫](../../extensibility/private-galleries.md)。
+ 這個企業版功能可支援專屬擴充功能的組件庫。 如需詳細資訊，請參閱 [Private Galleries](../../extensibility/private-galleries.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9eb8aee0048ae861aa460c7a8286f168bf150bd9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76111320"
 ---
 # <a name="error-handling-activity-designers"></a>Error Handling 活動設計工具
 
-[錯誤處理] 活動設計工具會用來管理工作流程設計工具中的錯誤處理。 本節所包含的主題提供如何使用工作流程設計工具活動和範本設計工具的指引。
+「錯誤處理」活動設計工具是用來管理工作流程設計工具中的錯誤處理。 本節所包含的主題提供如何使用工作流程設計工具活動和範本設計工具的指引。

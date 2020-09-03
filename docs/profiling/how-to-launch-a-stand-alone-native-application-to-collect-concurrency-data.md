@@ -1,5 +1,5 @@
 ---
-title: Profiler 命令列-開啟 native client 應用程式，取得並行資料
+title: Profiler 命令列-開啟原生用戶端應用程式，取得並行資料
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e5aed651-afed-4b70-9a7e-1a6032cc614f
@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 0aeebe82e3c7b574b65ab463a7bfd986d43d46ef
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85327659"
 ---
 # <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令列以分析工具啟動獨立的原生應用程式來收集並行資料
@@ -37,13 +37,13 @@ ms.locfileid: "85327659"
 
 1. 在命令提示字元中，輸入下列命令：
 
-     [VSPerfCmd](../profiling/vsperfcmd.md) **/start： concurrency/output：** `OutputFile` [ `Options` ]
+     [>vsperfcmd](../profiling/vsperfcmd.md) **/start： concurrency/output：** `OutputFile` [ `Options` ]
 
      /Start 需要[/output](../profiling/output.md)**：** `OutputFile` 選項。 **/start** `OutputFile` 指定程式碼剖析資料 (.vsp) 檔案的名稱和位置。
 
      您可以使用下表中的任一選項搭配 **/start:concurrency** 選項。
 
-    |選項|說明|
+    |選項|描述|
     |------------|-----------------|
     |[/wincounter](../profiling/wincounter.md) **：**`WinCounterPath`|指定程式碼剖析期間要收集的 Windows 效能計數器。|
     |[/automark](../profiling/automark.md) **：**`Interval`|只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500。|
@@ -51,24 +51,24 @@ ms.locfileid: "85327659"
 
 2. 輸入下列命令以啟動目標應用程式：
 
-     **VSPerfCmd**  [/launch](../profiling/launch.md) **：** `AppName` [ `Options` ]
+     **>vsperfcmd**  [/launch](../profiling/launch.md) **：** `AppName` [ `Options` ]
 
      您可以使用下表中的任一選項搭配 **/launch** 選項。
 
-    |選項|說明|
+    |選項|描述|
     |------------|-----------------|
     |[/args](../profiling/args.md) **：**`Arguments`|指定包含要傳遞至目標應用程式的命令列引數的字串。|
     |[/console](../profiling/console.md)|在個別的視窗中啟動目標命令列應用程式。|
     |[/targetclr](../profiling/targetclr.md) **：**`CLRVersion`|指定當應用程式載入多個版本的 Common Language Runtime (CLR) 時要分析的 CLR 版本。|
 
 ## <a name="control-data-collection"></a>控制資料收集
- 當目標應用程式正在執行時，您可以使用*VSPerfCmd.exe*選項來啟動和停止將資料寫入檔案，藉以控制資料收集。 透過控制資料收集，您可以收集特定程式執行 (例如啟動或關閉應用程式) 的資料。
+ 當目標應用程式正在執行時，您可以使用 *VSPerfCmd.exe* 選項啟動和停止將資料寫入檔案，以控制資料收集。 透過控制資料收集，您可以收集特定程式執行 (例如啟動或關閉應用程式) 的資料。
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集
 
 - 下表中成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
-    |選項|說明|
+    |選項|描述|
     |------------|-----------------|
     |[/globalon/globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|
     |[/processon](../profiling/processon-and-processoff.md) **：** `PID` [/processoff](../profiling/processon-and-processoff.md) **：**`PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|
@@ -87,4 +87,4 @@ ms.locfileid: "85327659"
 
 2. 在命令提示字元中輸入下列命令，以關閉程式碼剖析工具︰
 
-     **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
+     **>vsperfcmd**  [/shutdown](../profiling/shutdown.md)

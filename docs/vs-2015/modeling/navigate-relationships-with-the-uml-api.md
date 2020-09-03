@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8d54964cc74422d34ae6c6df489d02768e6d4bbd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918251"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>使用 UML API 巡覽關聯性
@@ -152,7 +152,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>列舉關聯性
- 傳回多個值的 UML 模型的所有屬性都符合 IEnumerable < > 介面。 這表示您可以使用[Linq 查詢運算式](/dotnet/csharp/linq/index)，以及在**System. Linq**命名空間中定義的擴充方法。
+ 傳回多個值的 UML 模型的所有屬性都符合 IEnumerable<> 介面。 這表示您可以使用 [Linq 查詢運算式](/dotnet/csharp/linq/index) 和在 **system.object** 命名空間中定義的擴充方法。
 
  例如：
 
@@ -163,5 +163,5 @@ select shape.Element
 
 ```
 
-## <a name="see-also"></a>請參閱
- [擴充 uml 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)[導覽 uml 模型](../modeling/navigate-the-uml-model.md)
+## <a name="see-also"></a>另請參閱
+ [擴充 uml 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)[流覽 uml 模型](../modeling/navigate-the-uml-model.md)

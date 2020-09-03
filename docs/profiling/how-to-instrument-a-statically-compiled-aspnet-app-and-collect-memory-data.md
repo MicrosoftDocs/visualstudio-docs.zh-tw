@@ -1,5 +1,5 @@
 ---
-title: Profiler 命令列-檢測靜態 ASP.NET 應用程式，取得記憶體資料
+title: Profiler 命令列檢測靜態 ASP.NET 應用程式，取得記憶體資料
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 427ece50dc2e8add6cc05e944907a9e0e1a890ae
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85327930"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用分析工具命令列檢測靜態編譯的 ASP.NET Web 應用程式並收集記憶體資料
@@ -48,13 +48,13 @@ ms.locfileid: "85327930"
 
    - **/globaltracegclife** 會收集 .NET 記憶體配置、物件存留期和詳細的計時資料。
 
-4. 重新啟動電腦。
+4. 將電腦重新開機。
 
 5. 開啟 [命令提示字元] 視窗。
 
 6. 啟動分析工具。 在 [命令提示字元] 視窗中鍵入：
 
-    **VSPerfCmd/start： trace/output：** `OutputFile`[`Options`]
+    **>vsperfcmd/start： trace/output：** `OutputFile` [`Options`]
 
    - [/start](../profiling/start.md)**:trace** 選項會初始化程式碼剖析工具。
 
@@ -65,10 +65,10 @@ ms.locfileid: "85327930"
    > [!NOTE]
    > **/user** 和 **/crosssession** 選項通常是 ASP.NET 應用程式的必要選項。
 
-   | 選項 | 說明 |
+   | 選項 | 描述 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **：**[ `Domain` **\\** ]`UserName` | 指定擁有 ASP.NET 背景工作處理序之帳戶的選用網域和使用者名稱。 如果不是使用登入使用者的使用者身分執行處理序，就需要此選項。名稱會列在 [Windows 工作管理員] 之 [處理程序]**** 索引標籤上的 [使用者名稱]**** 資料行中。 |
-   | [/crosssession](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 會話識別碼會列在 [Windows 工作管理員] 之 [**處理**程式] 索引標籤上的 [會話識別碼] 欄中。 **/crosssession** 可縮寫成 **/CS**。 |
+   | [/crosssession](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 會話識別碼會列在 Windows 工作管理員的 [ **處理** 程式] 索引標籤上的 [會話識別碼] 欄中。 **/crosssession** 可縮寫成 **/CS**。 |
    | [/wincounter](../profiling/wincounter.md) **：**`WinCounterPath` | 指定程式碼剖析期間要收集的 Windows 效能計數器。 |
    | [/automark](../profiling/automark.md) **：**`Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。 |
    | [/events](../profiling/events-vsperfcmd.md) **：**`Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。 |
@@ -83,7 +83,7 @@ ms.locfileid: "85327930"
 
 - 下列成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
-    |選項|說明|
+    |選項|描述|
     |------------|-----------------|
     |[/globalon/globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|
     |[/processon](../profiling/processon-and-processoff.md) **：** `PID` [/processoff](../profiling/processon-and-processoff.md) **：**`PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|
@@ -104,11 +104,11 @@ ms.locfileid: "85327930"
 
     **VSPerfCmd /shutdown**
 
-4. (選擇性)。 清除分析環境變數。 輸入：
+4. (選擇性) 清除分析環境變數。 輸入：
 
     **VSPerfCmd /globaloff**
 
-5. 重新啟動電腦。 如有必要，請重新啟動 IIS。 輸入：
+5. 將電腦重新開機。 如有必要，請重新啟動 IIS。 輸入：
 
     **IISReset /start**
 

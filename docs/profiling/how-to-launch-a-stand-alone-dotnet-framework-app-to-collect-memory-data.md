@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6378ea021d089027c19d28e927d5772ef5f35e0f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85327697"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令列以分析工具啟動獨立的 .NET Framework 應用程式來收集記憶體資料
@@ -41,7 +41,7 @@ ms.locfileid: "85327697"
 
 2. 啟動分析工具。 輸入：
 
-    **VSPerfCmd/start：範例/output：** `OutputFile`[`Options`]
+    **>vsperfcmd/start：/output 範例：** `OutputFile` [`Options`]
 
    - [/start](../profiling/start.md)**:sample** 選項會初始化程式碼剖析工具。
 
@@ -49,25 +49,25 @@ ms.locfileid: "85327697"
 
      您可以使用下列任一選項搭配 **/start:sample** 選項。
 
-   | 選項 | 說明 |
+   | 選項 | 描述 |
    | - | - |
    | [/wincounter](../profiling/wincounter.md) **：**`WinCounterPath` | 指定程式碼剖析期間要收集的 Windows 效能計數器。 |
    | [/automark](../profiling/automark.md) **：**`Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。 |
 
 3. 啟動目標應用程式。 輸入：
 
-    **VSPerfCmd**  [/launch](../profiling/launch.md) **：** `appName` **/gc：**{**配置**&#124;**存留期**} [ `Options` ]
+    **>vsperfcmd**  [/launch](../profiling/launch.md) **：** `appName` **/gc：**{**配置**&#124;**存留期**} [ `Options` ]
 
-   - 需要[/gc](../profiling/gc-vsperfcmd.md)**：** `Keyword` 選項才能收集 .NET Framework 記憶體資料。 關鍵字參數指定要收集記憶體配置資料，或收集記憶體配置和物件存留期資料。
+   - 需要[/gc](../profiling/gc-vsperfcmd.md)**：** `Keyword` 選項才能收集 .NET Framework 的記憶體資料。 關鍵字參數指定要收集記憶體配置資料，或收集記憶體配置和物件存留期資料。
 
      |關鍵字|描述|
      |-------------|-----------------|
      |**分配**|僅收集記憶體配置資料。|
-     |**期**|收集記憶體配置和物件存留期資料。|
+     |**一生**|收集記憶體配置和物件存留期資料。|
 
      您可以使用下列任一選項搭配 **/launch** 選項。
 
-   |選項|說明|
+   |選項|描述|
    |------------|-----------------|
    |[/args](../profiling/args.md) **：**`Arguments`|指定包含要傳遞至目標應用程式的命令列引數的字串。|
    |[/console](../profiling/console.md)|在個別的視窗中啟動目標命令列應用程式。|
@@ -81,7 +81,7 @@ ms.locfileid: "85327697"
 
 - 下列成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
-    |選項|說明|
+    |選項|描述|
     |------------|-----------------|
     |[/globalon/globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|
     |[/processon](../profiling/processon-and-processoff.md) **：** `PID` [processoff](../profiling/processon-and-processoff.md) **：**`PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|
@@ -100,11 +100,11 @@ ms.locfileid: "85327697"
 
          -或-
 
-    - 輸入**VSPerfCmd/detach**
+    - 輸入 **>vsperfcmd/detach**
 
 2. 關閉程式碼剖析工具。 輸入：
 
-     **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
+     **>vsperfcmd**  [/shutdown](../profiling/shutdown.md)
 
 ## <a name="see-also"></a>另請參閱
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
