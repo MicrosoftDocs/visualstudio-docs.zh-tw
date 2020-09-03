@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a5b3ecd4abb05148130b0d87e287cbe199557951
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284499"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：建立和編輯組態
@@ -40,7 +40,7 @@ ms.locfileid: "85284499"
 若要開發 [組態管理員]**** 對話方塊，請在**方案總管**中，開啟方案的捷徑功能表，然後選擇 [組態管理員]****。
 
 > [!NOTE]
-> 如果 **Configuration Manager** 命令未出現在捷徑功能表，請查看功能表列上的 [建置]**** 功能表底下。 如果沒有出現在功能表列上，請選擇 [**工具**] [  >  **選項**]，然後在 [**選項**] 對話方塊的左窗格中，展開 [**專案和方案**]  >  **[一般**]，然後在右窗格中，選取 [**顯示先進的組建**設定] 核取方塊。
+> 如果 **Configuration Manager** 命令未出現在捷徑功能表，請查看功能表列上的 [建置]**** 功能表底下。 如果未出現在功能表列上，請選擇 [**工具**  >  **選項**]，然後在 [**選項**] 對話方塊的左窗格中，展開 [**專案和方案**]，然後  >  **General**在右窗格中選取 [**顯示 advanced build** configuration] 核取方塊。
 
 在 [Configuration Manager]**** 對話方塊中，您可以使用 [使用中的方案組態]**** 下拉式清單選取整個方案的組建組態、修改現有的組建組態，或建立新的組態。 您可以使用 [使用中的方案平台]**** 下拉式清單選取組態目標針對的平台、修改現有的方案平台，或新增平台。 [專案內容]**** 窗格會列出方案中的專案。 針對每個專案，您可以選取專案特定的組態與平台、修改現有的組態與平台，或建立新的組態或新增平台。 您也可以選取核取方塊，指出當您使用整個方案的組態來建置或部署方案時，是否包含每個專案。
 

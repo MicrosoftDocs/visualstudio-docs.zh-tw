@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField:獲取封閉類 |微軟文件
+title: IDebugClassField：： GetEnclosingClass |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e5a68e32da370d6881eb2b74cbca157f7b899329
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734402"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
-獲取包含此類的類。
+取得括住這個類別的類別。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetEnclosingClass(
 
 ## <a name="parameters"></a>參數
 `ppClassField`\
-[出]返回表示封閉類的[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)物件。 如果沒有封閉類,則返回 null 值。
+擴展傳回代表封閉類別的 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 物件。 如果沒有封入類別，則會傳回 null 值。
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回S_OK;否則,返回錯誤代碼。
+如果成功，則傳回 S_OK;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
-如果此[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)物件表示的類是嵌套類`ppClassField`,則 參數將`IDebugClassField`返回表示封閉 類的物件。 例如,給定此類定義:
+如果這個 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 物件所代表的類別是嵌套類別，則參數會傳回 `ppClassField` 代表封入 `IDebugClassField` 類別的物件。 例如，假設有這個類別定義：
 
 ```
 class RootClass {
@@ -55,7 +55,7 @@ class RootClass {
 };
 ```
 
-在表示`GetEnclosingClass``IDebugClassField``NestedClass`類的物件上調用 方法返回`IDebugClassField``RootClass`表示類 的物件。
+`GetEnclosingClass`在代表類別的物件上呼叫方法，會傳回 `IDebugClassField` `NestedClass` `IDebugClassField` 代表類別的物件 `RootClass` 。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

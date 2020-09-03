@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ecbc5421562ca79466ace0d93a16ac4e3635ddfb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284239"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：尋找並整理專案範本和項目範本
@@ -36,9 +36,9 @@ ms.locfileid: "85284239"
 
 ::: moniker range="vs-2017"
 
-- *% ProgramFiles （x86）% \\ Microsoft Visual Studio \\ 2017 \\ \<edition> \\ Common7\IDE\ProjectTemplates \\<Language \> \\<地區設定識別碼\>*
+- *% ProgramFiles (x86) % \\ Microsoft Visual Studio \\ 2017 \\ \<edition> \\ Common7\IDE\ProjectTemplates \\<Language \> \\<地區設定識別碼\>*
 
-- *% ProgramFiles （x86）% \\ Microsoft Visual Studio \\ 2017 \\ \<edition> \Common7\IDE\ItemTemplates \\<Language \> \\<地區設定識別碼\>*
+- *% ProgramFiles (x86) % \\ Microsoft Visual Studio \\ 2017 \\ \<edition> \Common7\IDE\ItemTemplates \\<Language \> \\<地區設定識別碼\>*
 
 例如，下列目錄有適用於英文的 Visual Basic 項目範本 (LCID 1033)：
 
@@ -48,9 +48,9 @@ ms.locfileid: "85284239"
 
 ::: moniker range=">=vs-2019"
 
-- *% ProgramFiles （x86）% \\ Microsoft Visual Studio \\ 2019 \\ \<edition> \\ Common7\IDE\ProjectTemplates \\<Language \> \\<地區設定識別碼\>*
+- *% ProgramFiles (x86) % \\ Microsoft Visual Studio \\ 2019 \\ \<edition> \\ Common7\IDE\ProjectTemplates \\<Language \> \\<地區設定識別碼\>*
 
-- *% ProgramFiles （x86）% \\ Microsoft Visual Studio \\ 2019 \\ \<edition> \Common7\IDE\ItemTemplates \\<Language \> \\<地區設定識別碼\>*
+- *% ProgramFiles (x86) % \\ Microsoft Visual Studio \\ 2019 \\ \<edition> \Common7\IDE\ItemTemplates \\<Language \> \\<地區設定識別碼\>*
 
 例如，下列目錄有適用於英文的 Visual Basic 項目範本 (LCID 1033)：
 
@@ -87,7 +87,7 @@ ms.locfileid: "85284239"
 ::: moniker-end
 
 > [!TIP]
-> 您可以在 [**工具**] [選項] [  >  **Options**  >  **專案] 和 [方案**  >  **位置**] 中變更使用者範本的已知位置。
+> 您可以在 [**工具**  >  **選項**]  >  **專案和方案**  >  **位置**中變更使用者範本的已知位置。
 
 ::: moniker range="vs-2017"
 
@@ -128,7 +128,7 @@ ms.locfileid: "85284239"
 
 1. 尋找包含範本的 *.zip* 檔。
 
-1. 將 *.zip*檔案解壓縮。
+1. 將 *.zip* 檔案解壓縮。
 
 1. 在 Visual Studio 中開啟 *.vstemplate* 檔案。
 
@@ -144,13 +144,13 @@ ms.locfileid: "85284239"
     </TemplateData>
     ```
 
-1. 儲存並關閉 *.vstemplate*檔案。
+1. 儲存並關閉 *.vstemplate* 檔案。
 
 1. 在範本中選取檔案，以滑鼠右鍵按一下選項，選擇 [傳送至] ** [壓縮的 (zipped) 資料夾]** > ****。
 
-   檔案會壓縮成 *.zip*檔案。
+   檔案會壓縮成 *.zip* 檔案。
 
-1. 刪除已解壓縮的範本檔案和舊範本 *.zip*檔案。
+1. 刪除已解壓縮的範本檔案和舊的範本 *.zip* 檔。
 
 1. 將新的 *.zip* 檔案放在有已刪除 *.zip* 檔案的目錄。
 

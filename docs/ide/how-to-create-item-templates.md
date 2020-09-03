@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 0a0d4122d36c0946b6c1c98ef0f1523ce35751a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284473"
 ---
 # <a name="how-to-create-item-templates"></a>如何：建立項目範本
@@ -24,9 +24,9 @@ ms.locfileid: "85284473"
 
 1. 如有需要，可將項目新增至專案並加以修改。
 
-1. 修改程式碼檔，指出要執行參數取代的地方。 如需詳細資訊，請參閱[如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
+1. 修改程式碼檔，指出要執行參數取代的地方。 如需詳細資訊，請參閱 [如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
 
-1. 在 [**專案**] 功能表上，選擇 [**匯出範本**]。
+1. 選擇 [ **專案** ] 功能表上的 [ **匯出範本**]。
 
 1. 在 [選擇範本類型]**** 頁面上，選擇 [項目範本]****，選取包含項目的專案，然後選擇 [下一步]****。
 
@@ -42,7 +42,7 @@ ms.locfileid: "85284473"
 
 1. 結束再重新開啟 Visual Studio。
 
-1. 建立新的專案，或開啟現有的專案，然後選擇 [**專案**] [  >  **加入新專案**] 或按**Ctrl** + **Shift** + **a**。
+1. 建立新的專案，或開啟現有的專案，然後選擇 [ **project**  >  **加入新專案**] 或按**Ctrl** + **Shift** + **a**。
 
    項目範本會出現在 [新增項目]**** 對話方塊中。 如已在 [匯出範本精靈]**** 中新增描述，該描述會出現在對話方塊的右邊。
 
@@ -83,7 +83,7 @@ ms.locfileid: "85284473"
     - 資料庫
     - Web
 
-例如： `<ProjectSubType>Database</ProjectSubType>` 。
+例如：`<ProjectSubType>Database</ProjectSubType>`。
 
 下列範例顯示 **Office** 專案的項目範本。
 
@@ -119,7 +119,7 @@ ms.locfileid: "85284473"
 
 6. 儲存並關閉 *.vstemplate* 檔案。
 
-7. 在 **Windows 檔案總管**中選取您想要併入範本的檔案。 以滑鼠右鍵按一下選取範圍，然後選擇 [**傳送到**  >  **壓縮的（zipped）資料夾**]。 您選取的檔案會壓縮成 *.zip*檔案。
+7. 在 **Windows 檔案總管**中選取您想要併入範本的檔案。 以滑鼠右鍵按一下選取專案，然後選擇 [**傳送到**  >  **壓縮 (壓縮的) 資料夾**。 您選取的檔案會壓縮成 *.zip* 檔案。
 
 ::: moniker range="vs-2017"
 

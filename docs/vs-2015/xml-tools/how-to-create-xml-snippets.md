@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2e08821f1289927c4183a1639ae37136c220a88c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670912"
 ---
 # <a name="how-to-create-xml-snippets"></a>HOW TO：建立 XML 片段
@@ -22,28 +22,28 @@ ms.locfileid: "72670912"
 XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippet 的 XML 片段，其為建立新 XML 片段的重複使用片段。
 
 ## <a name="to-create-a-new-xml-snippet"></a>建立新的 XML 片段
- 若要建立新的 XML 程式碼片段，請建立新的 XML 檔案，並使用 [**插入程式碼片段**] 功能。
+ 若要建立新的 XML 程式碼片段，請建立新的 XML 檔案，並使用 [ **插入程式碼片段** ] 功能。
 
-1. **在 [檔案**] 功能表上 **，按一下 [** **新增**]，然後按一下 [檔案]。
+1. **在 [檔案**] 功能表上 **，按一下 [****新增**]，然後按一下 [檔案]。
 
-2. 按一下 [ **XML**檔案]，然後按一下 [**開啟**]。
+2. 按一下 [ **XML** 檔案]，然後按一下 [ **開啟**]。
 
-3. 在編輯器窗格中按一下滑鼠右鍵，然後選取 [**插入程式碼片段**]。
+3. 在編輯器窗格中按一下滑鼠右鍵，然後選取 [ **插入程式碼片段**]。
 
-4. 從清單中選取 [**程式碼片段**]，然後按 enter 鍵。
+4. 從清單中選取 [ **程式碼片段** ]，然後按 enter 鍵。
 
 5. 對新片段進行任何變更。
 
-6. 從 [**檔案**] 功能表中，選取 [**儲存 XMLFile**]。
+6. 在 [ **檔案** ] 功能表中，選取 [ **儲存 XMLFile.xml**。
 
-     [**另存**新檔] 對話方塊隨即顯示。
+     [ **另存** 新檔] 對話方塊隨即顯示。
 
-7. 輸入新程式碼片段的名稱，然後從 [**存檔類型**] 下拉式視窗中選取 [**程式碼片段**檔案]。
+7. 輸入新程式碼片段的名稱，然後從 [**存檔類型**] 下拉式清單中選取 [**程式碼片段**檔案]。
 
-8. 使用 [**儲存于**] 下拉式清單，將檔案位置變更為 My Documents\Visual Studio 2005 \ CODE Snippets\XML\My XML 程式碼片段資料夾，然後按 [**儲存**]。
+8. 使用 [ **儲存于** ] 下拉式清單，將檔案位置變更為 [My Documents\Visual Studio 2005 \ CODE Snippets\XML\My XML 程式碼片段] 資料夾，然後按 [ **儲存**]。
 
 ## <a name="snippet-description"></a>片段說明
- 本節說明重複使用片段中的某些索引鍵項目。 如需 XML 片段所使用之架構元素的詳細資訊，請參閱[程式碼片段架構參考](../ide/code-snippets-schema-reference.md)。
+ 本節說明重複使用片段中的某些索引鍵項目。 如需 XML 程式碼片段所使用之架構元素的詳細資訊，請參閱 [程式碼片段架構參考](../ide/code-snippets-schema-reference.md)。
 
 ### <a name="snippettype-element"></a>SnippetType 項目
  編輯器支援兩種片段型別：
@@ -55,7 +55,7 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
 </SnippetTypes>
 ```
 
- @No__t_0 類型會決定當您叫用 [**插入程式碼片段**] 命令時，程式碼片段是否出現。 @No__t_0 類型會決定當您叫**用 [環繞于**] 命令時，是否顯示程式碼片段。
+ `Expansion`當您叫用 [**插入程式碼片段**] 命令時，此類型會決定是否要顯示程式碼片段。 此 `SurroundsWith` 類型會決定當您叫 **用 [使用圍住** ] 命令時，是否要顯示程式碼片段。
 
 ### <a name="code-element"></a>Code 項目
  `Code` 項目定義叫用片段時將插入的 XML 文字。
@@ -101,7 +101,7 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
 </Literal
 ```
 
- 常值亦可參考函式。 XML 編輯器包含名為**LookupPrefix**的函式。 **LookupPrefix**函式會從 XML 檔中用來叫用此程式碼片段的位置查閱指定的命名空間 URI，並傳回為該命名空間定義的命名空間前置詞（如果有的話），並包含冒號（:)在該名稱中。 以下是使用**LookupPrefix**函數之 `Literal` 專案的範例。
+ 常值亦可參考函式。 XML 編輯器包含名為 **LookupPrefix**的函數。 **LookupPrefix**函式會從 XML 檔中的位置查閱指定的命名空間 URI，以從中叫用此程式碼片段，並傳回為該命名空間定義的命名空間前置詞（如果有的話），並在該名稱中包含冒號 (： ) 。 以下是 `Literal` 使用 **LookupPrefix** 函數的元素範例。
 
 ```
 <Literal Editable="false">
@@ -112,5 +112,5 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
 
  $prefix$ 變數即可在 XML 片段中的其他位置使用。
 
-## <a name="see-also"></a>請參閱
- [XML 程式碼片段](../xml-tools/xml-snippets.md)[如何：使用 xml 片段](../xml-tools/how-to-use-xml-snippets.md)[如何：從 Xml 架構產生 xml 程式碼片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+## <a name="see-also"></a>另請參閱
+ [Xml 程式碼片段](../xml-tools/xml-snippets.md)how [TO：使用 xml 程式碼片段](../xml-tools/how-to-use-xml-snippets.md)[如何：從 xml 架構產生 xml 片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

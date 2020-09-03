@@ -11,57 +11,57 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0f8dd5567fb21fafbac3c63b84dae1e0e33b0b91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200625"
 ---
 # <a name="debugger-concepts"></a>偵錯工具概念
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-若要建置 Visual Studio 偵錯封裝，您需要先熟悉中設計封裝所使用的架構概念。  
+若要建立 Visual Studio 的 debug 封裝，您必須熟悉設計封裝時所使用的架構概念。  
   
 ## <a name="in-this-section"></a>本節內容  
  [偵錯工作階段](../../extensibility/debugger/debug-session.md)  
- 說明工作階段的偵錯的架構中的角色。  
+ 說明在偵錯工具架構中會話的角色。  
   
  [伺服器](../../extensibility/debugger/servers-visual-studio-sdk.md)  
- 定義哪一部伺服器是以偵錯架構，同時為 abstract 和實體的條款。  
+ 以抽象和實體詞彙定義伺服器在偵錯工具架構方面的意義。  
   
  [連接埠提供者](../../extensibility/debugger/port-suppliers.md)  
- 定義連接埠提供者是以偵錯架構。  
+ 定義埠供應商在偵測架構方面的意義。  
   
  [連接埠](../../extensibility/debugger/ports.md)  
- 定義哪些連接埠是以偵錯架構。  
+ 定義埠在偵錯工具架構方面的意義。  
   
  [處理序](../../extensibility/debugger/processes.md)  
- 定義哪個處理程序是以偵錯架構。  
+ 定義處理常式在偵測架構方面的意義。  
   
  [程式節點](../../extensibility/debugger/program-nodes.md)  
- 定義以偵錯架構，包括如何，它能識別本身和它正在中執行的程序的程式節點。  
+ 根據偵測架構來定義程式節點，包括它本身的識別方式，以及其執行所在的進程。  
   
  [程式](../../extensibility/debugger/programs.md)  
- 定義偵錯架構方面的程式。  
+ 根據偵錯工具架構來定義程式。  
   
  [執行緒](../../extensibility/debugger/threads.md)  
- 定義偵錯架構方面的執行緒的特性。  
+ 定義執行緒在偵錯工具架構方面的特性。  
   
  [堆疊框架](../../extensibility/debugger/stack-frames.md)  
- 定義偵錯架構方面的堆疊框架。 堆疊框架是堆疊提供執行緒的執行內容的抽象概念。  
+ 根據偵錯工具架構來定義堆疊框架。 堆疊框架是堆疊的抽象概念，可提供執行緒的執行內容。  
   
- [模組](../../extensibility/debugger/modules.md)  
- 定義模組，以進行架構，為實體容器的程式碼，例如可執行檔或 DLL 的偵錯。  
+ [單元](../../extensibility/debugger/modules.md)  
+ 將模組以偵錯工具架構的形式定義為程式碼的實體容器，例如可執行檔或 DLL。  
   
- [中斷點](../../extensibility/debugger/breakpoints-visual-studio-sdk.md)  
- 定義三種中斷點類型 — 暫止、 繫結和錯誤，以偵錯架構。  
+ [[中斷點]](../../extensibility/debugger/breakpoints-visual-studio-sdk.md)  
+ 根據偵測架構，定義三種類型的中斷點，包括暫止、系結和錯誤。  
   
 ## <a name="related-sections"></a>相關章節  
  [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)  
- 說明偵錯引擎 (DE) 的運作方式同時在程式碼、 文件和運算式評估內容。 描述三個內容、 位置、 位置或評估與它相關的每個軸。  
+ 說明 debug engine (DE) 如何在程式碼、檔和運算式評估內容中同時運作。 描述每個內容的相關位置、位置或評估。  
   
  [偵錯工具元件](../../extensibility/debugger/debugger-components.md)  
- 提供 Visual Studio 偵錯元件，包括偵錯引擎 (DE)、 運算式評估工具 (EE)，以及符號處理常式 (SH) 的概觀。  
+ 概要說明 Visual Studio 的偵錯工具元件，其中包括 debug engine (DE) 、運算式評估工具 (EE) ，以及符號處理常式 (SH) 。  
   
  [偵錯工作](../../extensibility/debugger/debugging-tasks.md)  
- 包含各種不同的偵錯工作，例如啟動程式，以及評估運算式的連結。
+ 包含各種偵錯工具的連結，例如啟動程式和評估運算式。

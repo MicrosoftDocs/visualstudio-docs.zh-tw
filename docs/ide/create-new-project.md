@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f7cecf6a68296b3bffd07cca13fc3a3d0d5bc836
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770733"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>在 Visual Studio 中建立新專案
@@ -24,7 +24,7 @@ ms.locfileid: "85770733"
 
 ## <a name="open-the-new-project-dialog"></a>開啟 [新增專案] 對話方塊
 
-有多種方式可在 Visual Studio 2017 中建立新的專案。 在 [開始] 頁面，您可在 [搜尋專案範本]**** 方塊中鍵入專案範本的名稱，或選擇 [建立新專案]**** 連結以開啟 [新增專案]**** 對話方塊。 除了 [起始頁] 之外，您也可以在功能表列上**選擇 [檔案] [**  >  **新增**  >  **專案**]，或是按一下工具列上的 [**新增專案**] 按鈕。
+有多種方式可在 Visual Studio 2017 中建立新的專案。 在 [開始] 頁面，您可在 [搜尋專案範本]**** 方塊中鍵入專案範本的名稱，或選擇 [建立新專案]**** 連結以開啟 [新增專案]**** 對話方塊。 除了 [開始] 頁面之外，您也可以選擇功能表列上**的 [檔案**  >  **新**  >  **專案**]，或按一下工具列上的 [**新增專案**] 按鈕。
 
 ![[開始] 頁面和 [檔案] > [新增] > [專案]](./media/vside-newproject1.png)
 

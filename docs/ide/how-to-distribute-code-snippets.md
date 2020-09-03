@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c283d5ca29b67e772df2a0bb2e25dee70cd63fd3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284369"
 ---
 # <a name="how-to-distribute-code-snippets"></a>如何：散發程式碼片段
@@ -31,7 +31,7 @@ ms.locfileid: "85284369"
 
 ## <a name="set-up-the-extension"></a>設定延伸模組
 
-在此程式中，您將使用在[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)中所建立的相同 Hello World 程式碼片段。 本文提供程式碼片段 XML，所以您不必回頭建立程式碼片段。
+在此程式中，您將使用在 [逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)中所建立的相同 Hello World 程式碼片段。 本文提供程式碼片段 XML，所以您不必回頭建立程式碼片段。
 
 1. 從 [空的 VSIX 專案]**** 範本建立新專案，並將專案命名為 **TestSnippet**。
 
@@ -111,7 +111,7 @@ ms.locfileid: "85284369"
 
    Visual Studio 的第二個執行個體隨即出現。
 
-3. 在實驗實例中，移至 [**工具**] [  >  **程式碼片段管理員**]，並將**語言**設定為 [**基本**]。 您應該會看到 *HelloWorldVB* 作為其中一個資料夾，而且您應該能夠展開此資料夾，以查看 *HelloWorldVB* 程式碼片段。
+3. 在實驗性實例中，移至 [**工具**  >  **程式碼片段管理員**]，並將**語言**設定為 [**基本**]。 您應該會看到 *HelloWorldVB* 作為其中一個資料夾，而且您應該能夠展開此資料夾，以查看 *HelloWorldVB* 程式碼片段。
 
 4. 測試程式碼片段。 在實驗性執行個體中，開啟 Visual Basic 專案，並開啟其中一個程式碼檔案。 將游標放在程式碼中的某處，按一下滑鼠右鍵，然後在 [操作功能表] 上選取 [插入程式碼片段]****。
 

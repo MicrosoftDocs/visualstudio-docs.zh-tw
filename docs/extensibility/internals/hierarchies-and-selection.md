@@ -1,5 +1,5 @@
 ---
-title: 層次結構和選擇 |微軟文件
+title: 階層和選取專案 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,33 +13,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0e38c2cea464abded5ecf6ee2c8ac087868b07e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708132"
 ---
-# <a name="hierarchies-and-selection"></a>層次結構與選擇
-自定義[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]時,應瞭解如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]處理 層次結構(如專案)以及如何使用選擇上下文來確定向使用者顯示的內容。 位置討論層次結構與選擇的概念[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
+# <a name="hierarchies-and-selection"></a>階層和選取範圍
+當您自訂時 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，您應該瞭解如何 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 處理專案等階層，以及它如何使用選取內容來判斷要向使用者顯示的內容。 本節討論階層 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 和選取的概念。
 
 ## <a name="in-this-section"></a>本節內容
 - [Visual Studio 中的階層](../../extensibility/internals/hierarchies-in-visual-studio.md)
 
- 描述專案層次結構和層次結構的一般概念。
+ 描述專案階層和階層的一般概念。
 
-- [IDE 選擇與貨幣](../../extensibility/internals/selection-and-currency-in-the-ide.md)
+- [IDE 中的選取專案和貨幣](../../extensibility/internals/selection-and-currency-in-the-ide.md)
 
- 描述[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) 如何維護有關使用者當前活動物件的資訊,並允許 VSPackages 追蹤貨幣。
+ 描述 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 如何維護使用者目前作用中物件的相關資訊，並讓 vspackage track 的貨幣。
 
-- [選擇內容物件](../../extensibility/internals/selection-context-objects.md)
+- [選取專案內容物件](../../extensibility/internals/selection-context-objects.md)
 
- 討論如何確定用戶選擇上下文對視窗的關注模型。
+ 討論如何在視窗上判斷使用者的選取內容焦點的模型。
 
-- [向使用者的回饋](../../extensibility/internals/feedback-to-the-user.md)
+- [對使用者的意見反應](../../extensibility/internals/feedback-to-the-user.md)
 
- 討論[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]中的 可用功能如何基於使用者的當前選擇上下文和整體 IDE 上下文。
+ 討論中的可用功能如何 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 根據使用者目前的選取範圍內容和整體的 IDE 內容。
 
 ## <a name="related-sections"></a>相關章節
-- [專案類型架構結構](../../extensibility/internals/project-types-architecture.md)
+- [專案類型架構](../../extensibility/internals/project-types-architecture.md)
 
- 提供有關項目類型的詳細技術資訊。
+ 提供有關專案類型的詳細技術資訊。

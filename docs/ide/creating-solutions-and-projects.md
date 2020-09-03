@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19a836847aa01038bdbb015612c4fb4a3964d9a9
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770548"
 ---
 # <a name="create-solutions-and-projects"></a>建立方案和專案
@@ -46,7 +46,7 @@ ms.locfileid: "85770548"
 
 如果您有程式碼來源檔案的集合，您可以輕鬆地將其新增至專案。
 
-1. 在功能表上 **，選擇 [**  >  **New**  >  **從現有的程式碼**檔案新增專案]。
+1. 在功能表上 **，選擇 [**  >  **New**  >  **從現有程式碼**檔案新增專案]。
 
 1. 在 [從現有程式碼檔建立專案精靈]**** 的 [您要建立的專案類型為何?]**** 下拉式清單方塊中，選擇您想要的專案類型，然後選擇 [下一步]**** 按鈕。
 
@@ -65,7 +65,7 @@ ms.locfileid: "85770548"
 
 ::: moniker range="vs-2017"
 
-若要指定 .NET Framework 版本，請選擇 [**新增專案**] 對話方塊中的 [ **Framework** ] 下拉式功能表。
+若要指定 .NET Framework 版本，請選擇 [**新增專案**] 對話方塊中的 [**架構**] 下拉式功能表。
 
 ![[新增專案] 對話方塊中的 [Framework] 下拉式清單](./media/vside-newproject-framework.png)
 
@@ -76,7 +76,7 @@ ms.locfileid: "85770548"
 
 ::: moniker range=">=vs-2019"
 
-若要指定 .NET Framework 版本，請選擇 [**建立新專案**] 頁面上的 [ **Framework** ] 下拉式功能表。
+若要指定 .NET Framework 版本，請選擇 [**建立新專案**] 頁面上的 [**架構**] 下拉式功能表。
 
 ![[設定新專案] 中的 Framework 選取器](media/vs-2019/configure-new-project-framework.png)
 
@@ -88,7 +88,7 @@ ms.locfileid: "85770548"
 
 ### <a name="to-create-an-empty-solution"></a>建立空的方案
 
-1. 在功能表列上 **，選擇 [** 檔案] [新增] [  >  **New**  >  **專案**]。
+1. 在功能表列上 **，選擇 [** 檔案  >  **新增**  >  **專案**]。
 
 ::: moniker range="vs-2017"
 
@@ -122,7 +122,7 @@ ms.locfileid: "85770548"
 
 如果您建立 .NET 專案而不指定磁碟位置，它會是暫存專案。 暫存專案可讓您試驗 .NET 專案。 使用暫存專案時，隨時都可以選擇儲存或捨棄它。
 
-若要建立暫存專案，請先移至 [**工具**] [  >  **選項**  >  ] [**專案和方案**  >  ]**[一般**]，然後取消核取 [**建立新的專案時儲存**] 然後像往常一樣開啟 [新增專案]**** 對話方塊。
+若要建立暫存專案，請先移至 [**工具**  >  **選項**  >  **專案和方案**  >  **一般**]，並取消核取 [**建立新專案時，儲存新專案**] 核取方塊。 然後像往常一樣開啟 [新增專案]**** 對話方塊。
 
 ::: moniker-end
 

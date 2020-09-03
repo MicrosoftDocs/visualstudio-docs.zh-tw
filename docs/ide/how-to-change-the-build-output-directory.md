@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4c2f2445bc7139c5bbc80a35905e24c319c9dfa
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284642"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>如何：變更組建輸出目錄
@@ -45,7 +45,7 @@ ms.locfileid: "85284642"
    ![適用於 Visual Studio C# 專案的輸出路徑](media/output-path.png)
    
    > [!NOTE]
-   > 某些專案預設會在組建路徑中包含架構和執行時間。 若要變更此項，請以滑鼠右鍵按一下**方案總管**中的專案節點，並選取 [**編輯專案**檔]，然後加入下列內容：
+   > 某些專案預設會在組建路徑中包含架構和執行時間。 若要變更此專案，請在 **方案總管**中的專案節點上按一下滑鼠右鍵，選取 [ **編輯專案**檔]，然後新增下列專案：
    > ```xml
    > <PropertyGroup>
    >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -60,6 +60,6 @@ ms.locfileid: "85284642"
 
 ## <a name="see-also"></a>另請參閱
 
-- [專案設計工具、組建頁（c #）](../ide/reference/build-page-project-designer-csharp.md)
-- [一般屬性頁（專案）](/cpp/build/reference/general-property-page-project)
+- [專案設計工具、組建頁 (c # ) ](../ide/reference/build-page-project-designer-csharp.md)
+- [ (專案) 的一般屬性頁 ](/cpp/build/reference/general-property-page-project)
 - [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)

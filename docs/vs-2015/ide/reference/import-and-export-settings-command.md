@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e3ee8549fd8cf1a4551818c013551ba24128f95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671044"
 ---
 # <a name="import-and-export-settings-command"></a>匯入和匯出設定命令
@@ -32,15 +32,15 @@ ms.locfileid: "72671044"
 Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ```
 
-## <a name="switches"></a>參數
+## <a name="switches"></a>交換器
  /export:`filename` 選擇性。 將目前的設定匯出至指定的檔案。
 
- /import： `filename` 選用。 匯入指定檔案中的設定。
+ /import： `filename` 選擇性。 匯入指定檔案中的設定。
 
  /reset 選擇項。 重設目前的設定。
 
 ## <a name="remarks"></a>備註
- 執行此命令而不使用切換參數，會開啟 [匯入和匯出設定精靈]  。 如需詳細資訊，請參閱[如何：在電腦與 Visual Studio 版本之間共用設定](https://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882)。
+ 執行此命令而不使用切換參數，會開啟 [匯入和匯出設定精靈]****。 如需詳細資訊，請參閱[如何：在電腦與 Visual Studio 版本之間共用設定](https://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882)。
 
 ## <a name="example"></a>範例
  下列命令會將目前的設定匯出至檔案 `MyFile.vssettings`。

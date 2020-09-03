@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f8f86d635e1e57d82dd2d18084c91a9267f9a0b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284200"
 ---
 # <a name="how-to-manage-editor-modes"></a>如何：管理編輯器模式
@@ -40,9 +40,9 @@ ms.locfileid: "85284200"
 
 ## <a name="enable-full-screen-mode"></a>啟用全螢幕模式
 
-您可以選擇隱藏所有工具視窗，並藉由啟用**全螢幕**模式來只查看文件視窗。
+您可以藉由啟用 **全螢幕** 模式，選擇隱藏所有工具視窗，並只查看文件視窗。
 
-- 按**Alt** + **Shift** + **Enter**鍵，進入或離開**全螢幕**模式。
+- 按**Alt** + **Shift** + **enter**進入或離開**全螢幕**模式。
 
      -- 或 --
 

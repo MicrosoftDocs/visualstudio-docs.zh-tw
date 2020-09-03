@@ -1,5 +1,5 @@
 ---
-title: 偵錯工具使用者介面（XSLT） |Microsoft Docs
+title: 偵錯工具消費者介面 (XSLT) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1d35ec92a76c9ecbf933256229b64ce06a03a4fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670981"
 ---
 # <a name="debugger-user-interface-xslt"></a>偵錯工具使用者介面 (XSLT)
@@ -21,31 +21,31 @@ ms.locfileid: "72670981"
 
 本主題說明偵錯工具的視窗及對話方塊。 它僅討論具有 XSLT 特定偵錯行為的使用者介面片段。
 
- 如需詳細資訊，請參閱[偵錯工具使用者介面參考](../debugger/debugging-user-interface-reference.md)。
+ 如需詳細資訊，請參閱 [偵錯工具消費者介面參考](../debugger/debugging-user-interface-reference.md)。
 
 ## <a name="locals-window"></a>本機視窗
  [本機] 視窗會顯示樣式表中定義之任何變數的相關資訊。 [本機] 視窗包含資訊的三個資料行：
 
- **名稱**此資料行包含目前範圍中所有本機變數的名稱。 節點集具有樹狀目錄控制項，您可向下展開以查看其子資料夾。
+ **名稱** 此資料行包含目前範圍中所有區域變數的名稱。 節點集具有樹狀目錄控制項，您可向下展開以查看其子資料夾。
 
- **值**此欄顯示每個變數所包含的值。 屬性、處理指示、註解、文字及 CData 節點都顯示節點的文字值。 命名空間節點會顯示命名空間 URI。
+ **值** 此資料行顯示每個變數所包含的值。 屬性、處理指示、註解、文字及 CData 節點都顯示節點的文字值。 命名空間節點會顯示命名空間 URI。
 
- **類型**此資料行會識別 [**名稱**] 資料行中所列之每個變數的資料類型。
+ **類型** 此資料行會識別 [ **名稱** ] 資料行中所列之每個變數的資料類型。
 
  [本機] 視窗還顯示追蹤 XSLT 轉換內容之預先定義的內容變數。 下表說明 XSLT 偵錯工具使用之預先定義的內容變數。
 
-|[屬性]|描述|
+|Name|描述|
 |----------|-----------------|
 |`last()`|內容大小。|
 |`position()`|內容節點的位置或索引編號 (相對於內容大小)。|
 |`self::node()`|內容節點的值。|
 
- 如需詳細資訊，請參閱[如何：變更偵錯工具內容](https://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e)。
+ 如需詳細資訊，請參閱 [如何：變更偵錯工具內容](https://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e)。
 
 ## <a name="output-window"></a>輸出視窗
  [輸出] 視窗會顯示偵錯時發生的任何錯誤訊息或安全性例外狀況。
 
- XSLT 偵錯工具使用分開的視窗顯示偵錯工具輸出。 這是用來顯示 [**顯示 XSL 輸出**] 命令輸出的相同視窗。
+ XSLT 偵錯工具使用分開的視窗顯示偵錯工具輸出。 這是用來顯示 [ **顯示 XSL 輸出** ] 命令輸出的相同視窗。
 
 ## <a name="task-list"></a>工作清單
  [工作清單] 會列出樣式表中的所有編譯錯誤。 按兩下錯誤，即可將游標移至發生錯誤的程式行。
@@ -78,7 +78,7 @@ ms.locfileid: "72670981"
  按一下非清單頂部的項目，會使用標準的綠色反白顯示及綠色箭頭，向檢視器表示 XSLT 執行分支所在的位置。
 
 ## <a name="quickwatch-dialog-box"></a>快速監看式對話方塊
- [**快速**監看式] 對話方塊是用來評估 XPath 1.0 運算式。 內容節點 ([本機] 視窗中的 `self::node()` 節點) 提供 XPath 運算式執行的內容。 執行 XPath 運算式的結果會顯示於 [監看式] 視窗中。
+ [ **快速** 監看式] 對話方塊是用來評估 XPath 1.0 運算式。 內容節點 ([本機] 視窗中的 `self::node()` 節點) 提供 XPath 運算式執行的內容。 執行 XPath 運算式的結果會顯示於 [監看式] 視窗中。
 
  下列清單說明對 XPath 運算式評估的某些限制。
 
@@ -88,12 +88,12 @@ ms.locfileid: "72670981"
 
 - 不允許使用者定義函式。
 
-  如需詳細資訊，請參閱[如何：評估 XPath 運算式](../xml-tools/how-to-evaluate-an-xpath-expression.md)。
+  如需詳細資訊，請參閱 [如何：評估 XPath 運算式](../xml-tools/how-to-evaluate-an-xpath-expression.md)。
 
 ## <a name="disassembly-window"></a>反組譯碼視窗
  [反組譯碼] 視窗會顯示由 XSLT 編譯器產生的組譯程式碼。 此視窗的使用方式可以與所有其他 Visual Studio 反組譯碼視窗相同。
 
- 如需詳細資訊，請[注意：使用 [](../debugger/how-to-use-the-disassembly-window.md)反組解碼] 視窗。
+ 如需詳細資訊，請使用 [反組解碼 [] 視窗](../debugger/how-to-use-the-disassembly-window.md)。
 
-## <a name="see-also"></a>請參閱
- 將[XSLT](../xml-tools/debugging-xslt.md)調試[程式基本概念](../debugger/debugger-basics.md)[變數視窗](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+## <a name="see-also"></a>另請參閱
+ [XSLT](../xml-tools/debugging-xslt.md)調試[程式基本概念](../debugger/debugger-basics.md)[變數視窗](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)的偵錯工具
