@@ -9,39 +9,39 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3e953d9051b9bc7e95dc29e02eb580c4d93fca26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148823"
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>逐步解說：使用 JavaScript 建立 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本逐步解說將說明如何使用 JavaScript 來建立簡單的數學 SDK 作為 Visual Studio 擴充功能 (VSIX)。  本逐步解說分為下列部分：  
+本逐步解說將說明如何使用 JavaScript 來建立簡單的數學 SDK，作為 (VSIX) 的 Visual Studio 延伸模組。  本逐步解說分成下列幾個部分：  
   
-- [若要建立 SimpleMathVSIX 擴充功能 SDK 專案](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  
+- [建立 SimpleMathVSIX 延伸模組 SDK 專案](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  
   
-- [若要建立範例應用程式使用 SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)  
+- [建立使用 SDK 的範例應用程式](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)  
   
-  適用於 JavaScript，沒有任何類別庫專案型別。 在本逐步解說中，直接在 VSIX 專案中建立範例 arithmetic.js 檔案。 在實務上，我們建議您先建置和測試 Windows 市集應用程式的 JavaScript 和 CSS 檔案 — 例如，藉由使用**空白應用程式**範本 — 您將它們放在 VSIX 專案之前。  
+  針對 JavaScript，沒有類別庫專案類型。 在這個逐步解說中，範例 arithmetic.js 檔會直接建立在 VSIX 專案中。 在實務上，建議您先以 Windows Store 應用程式（例如，使用 **空白應用程式** 範本）建立並測試 JAVASCRIPT 和 CSS 檔案，然後再將它們放入 VSIX 專案中。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
+## <a name="prerequisites"></a>Prerequisites  
+ 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 [VISUAL STUDIO SDK](../extensibility/visual-studio-sdk.md)。  
   
-## <a name="createSimpleMathVSIX"></a> 若要建立 SimpleMathVSIX 擴充功能 SDK 專案  
+## <a name="to-create-the-simplemathvsix-extension-sdk-project"></a><a name="createSimpleMathVSIX"></a> 建立 SimpleMathVSIX 延伸模組 SDK 專案  
   
-1. 在功能表列上，選擇 [檔案]  、[新增]  、[專案]  。  
+1. 從功能表列依序選擇 [**檔案**]、[**新增**] 及 [**專案**]。  
   
-2. 在範本類別清單中下**Visual C#** ，選取**擴充性**，然後選取**VSIX 專案**範本。  
+2. 在範本類別目錄清單中 **，選取 [** **Visual c #**] 底下的 [擴充性]，然後選取 [ **VSIX 專案**] 範本。  
   
-3. 在 [**名稱**文字方塊中，指定`SimpleMathVSIX`，然後選擇 **[確定]** ] 按鈕。  
+3. 在 [ **名稱** ] 文字方塊中，指定， `SimpleMathVSIX` 然後選擇 [ **確定]** 按鈕。  
   
-4. 如果**Visual Studio 封裝精靈**出現時，請選擇**下一步**按鈕**歡迎**頁面上，然後在**第 1 頁的 7**，選擇**完成** 按鈕。  
+4. 如果 [ **Visual Studio 套件] 嚮導**出現，請選擇 [**歡迎使用**] 頁面上的 [**下一步**] 按鈕，然後在**7 的第1頁**選擇 [**完成]** 按鈕。  
   
-     雖然**資訊清單設計工具**隨即開啟，我們將會保留這個逐步解說簡單藉由直接修改資訊清單檔案。  
+     雖然 **資訊清單設計** 工具會開啟，但我們會藉由直接修改資訊清單檔，將此逐步解說保持簡單。  
   
-5. 在 **方案總管**，開啟 source.extension.vsixmanifest 檔案中，捷徑功能表，然後選擇**檢視程式碼**。 您可以使用此程式碼取代檔案中的現有內容。  
+5. 在 **方案總管**中，開啟 extension.vsixmanifest 檔案的快捷方式功能表，然後選擇 [ **View Code**]。 使用此程式碼取代檔案中的現有內容。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -63,13 +63,13 @@ ms.locfileid: "68148823"
     </PackageManifest>  
     ```  
   
-6. 在 **方案總管**，開啟 SimpleMathVSIX 專案的捷徑功能表，然後選擇**新增**，**新項目**。  
+6. 在 **方案總管**中，開啟 SimpleMathVSIX 專案的快捷方式功能表，然後選擇 [ **加入**]、[ **新增專案**]。  
   
-7. 在 **資料**類別目錄中，選取**XML 檔案**，將檔案命名為`SDKManifest.xml`，，然後選擇 **新增** 按鈕。  
+7. 在 [ **資料** ] 類別中，選取 [ **XML**檔案]，為檔案命名 `SDKManifest.xml` ，然後選擇 [ **加入** ] 按鈕。  
   
-8. 在 [**方案總管] 中**，開啟 SDKManifest.xml 檔案的捷徑功能表，然後選擇**開啟**顯示中的檔案**XML 編輯器**。  
+8. 在 **方案總管**中，開啟 SDKManifest.xml 檔案的快捷方式功能表，然後選擇 [ **開啟** ]，即可在 **XML 編輯器**中顯示檔案。  
   
-9. SDKManifest.xml 檔案中加入下列程式碼。  
+9. 將下列程式碼新增至 SDKManifest.xml 檔案。  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -86,21 +86,21 @@ ms.locfileid: "68148823"
   
     ```  
   
-10. 在 **方案總管**，在 SDKManifest.xml 檔案的捷徑功能表，選擇**屬性**。  
+10. 在 **方案總管**的 SDKManifest.xml 檔案的快捷方式功能表上，選擇 [ **屬性**]。  
   
-11. 在 **屬性**視窗中，將**Include in VSIX**屬性設 **，則為 True**。  
+11. 在 [ **屬性** ] 視窗中，將 [ **包含于 VSIX** ] 屬性設定為 [ **True**]。  
   
-12. 中**方案總管**，在 SimpleMathVSIX 專案的捷徑功能表，選擇 **新增**，**新資料夾**，並接著將資料夾命名`Redist`。  
+12. 在 **方案總管**中，在 SimpleMathVSIX 專案的快捷方式功能表上，選擇 [ **加入**]、[ **新增資料夾**]，然後命名資料夾 `Redist` 。  
   
-13. 加入子資料夾下建立此資料夾結構的可轉散發套件：  
+13. 在可轉散發套件下新增子資料夾，以建立此資料夾結構：  
   
      \Redist\CommonConfiguration\Neutral\SimpleMath\js\  
   
-14. 在 \js\ 資料夾的捷徑功能表，選擇**新增**，**新項目**。  
+14. 在 [\js\] 資料夾的快捷方式功能表上，選擇 [ **加入**]、[ **新增專案**]。  
   
-15. 底下**Visual C# 項目**，選取**Web**類別，然後再選取**JavaScript 檔案**項目。 將檔案命名`arithmetic.js`，然後選擇**新增** 按鈕。  
+15. 在 [ **Visual c # 專案**] 下，選取 [ **Web** ] 類別，然後選取 [ **JavaScript** 檔案] 專案。 為檔案命名 `arithmetic.js` ，然後選擇 [ **加入** ] 按鈕。  
   
-16. 您可以將下列程式碼插入 arithmetic.js:  
+16. 將下列程式碼插入 arithmetic.js：  
   
     ```  
     (function (global) {  
@@ -126,37 +126,37 @@ ms.locfileid: "68148823"
   
     ```  
   
-17. 在 **方案總管**，在 arithmetic.js 檔案的捷徑功能表，選擇**屬性**。 這些屬性變更：  
+17. 在 **方案總管**的 arithmetic.js 檔案的快捷方式功能表上，選擇 [ **屬性**]。 進行這些屬性變更：  
   
-    - 設定**Include in VSIX**屬性設 **，則為 True**。  
+    - 將 [ **包含于 VSIX** ] 屬性設定為 [ **True**]。  
   
-    - 設定**複製到輸出目錄**屬性設**永遠複製**。  
+    - 將 [ **複製到輸出目錄** ] 屬性設定為 [ **永遠複製**]。  
   
-18. 在 **方案總管**，在 SimpleMathVSIX 專案的捷徑功能表，選擇 **建置**。  
+18. 在 **方案總管**中，在 SimpleMathVSIX 專案的快捷方式功能表上，選擇 [ **建立**]。  
   
-19. 建置專案的捷徑功能表上成功完成之後，選擇**在檔案總管 中開啟資料夾**。 瀏覽至 \bin\debug\\，並執行`SimpleMathVSIX.vsix`進行安裝。  
+19. 組建順利完成後，在專案的快捷方式功能表上，選擇 [ **在檔案總管中開啟資料夾**]。 流覽至 \bin\debug \\ ，然後執行 `SimpleMathVSIX.vsix` 以安裝它。  
   
-20. 選擇**安裝** 按鈕，讓安裝完成。  
+20. 選擇 [ **安裝** ] 按鈕，讓安裝完成。  
   
 21. 重新啟動 Visual Studio。  
   
-## <a name="createSampleApp"></a> 若要建立範例應用程式使用 SDK  
+## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a> 建立使用 SDK 的範例應用程式  
   
-1. 在功能表列上，選擇 [檔案]  、[新增]  、[專案]  。  
+1. 從功能表列依序選擇 [**檔案**]、[**新增**] 及 [**專案**]。  
   
-2. 在範本類別清單中下**JavaScript**，選取**Windows 市集**，然後選取**空白應用程式**範本。  
+2. 在範本類別目錄清單中的 [ **JavaScript**] 底下，選取 [ **Windows Store**]，然後選取 [ **空白應用程式** ] 範本。  
   
-3. 在 **名稱**方塊中，指定`ArithmeticUI`。 選擇 [確定] 按鈕。   
+3. 在 [ **名稱** ] 方塊中指定 `ArithmeticUI` 。 選擇 [確定] **** 按鈕。  
   
-4. 在 **方案總管**，開啟 ArithmeticUI 專案的捷徑功能表，然後選擇**新增**，**參考**。  
+4. 在 **方案總管**中，開啟 ArithmeticUI 專案的快捷方式功能表，然後選擇 [ **加入**]、[ **參考**]。  
   
-5. 底下**Windows**，選擇**擴充功能**，並注意**簡單數學**隨即出現。  
+5. 在 [ **Windows**] 下，選擇 [ **擴充**功能]，並注意會顯示 **簡單的數學** 。  
   
-6. 選取 [**簡單的數學**核取方塊，然後選擇**確定**] 按鈕。  
+6. 選取 [ **簡單數學** ] 核取方塊，然後選擇 [ **確定]** 按鈕。  
   
-7. 在**方案總管 中**下方**參考**，注意**簡單的數學**參考會顯示。 展開它，並請注意，有包含 arithmetic.js \js\ 資料夾。 您可以開啟 arithmetic.js 來確認已安裝您的原始程式碼。  
+7. 在 **方案總管**的 [ **參考**] 下，請注意，會顯示 **簡單的數學** 參考。 將它展開，並注意有一個包含 arithmetic.js 的 \js\ 資料夾。 您可以開啟 arithmetic.js 來確認已安裝您的原始程式碼。  
   
-8. 您可以使用下列程式碼來取代 default.htm 的內容。  
+8. 使用下列程式碼取代 default.htm 的內容。  
   
     ```  
     <!DOCTYPE html>  
@@ -194,7 +194,7 @@ ms.locfileid: "68148823"
     </html>  
     ```  
   
-9. 您可以使用下一個程式碼來取代 \js\default.js 的內容。  
+9. 使用下一個程式碼取代 \js\default.js 的內容。  
   
     ```  
     (function () {  
@@ -252,7 +252,7 @@ ms.locfileid: "68148823"
     })();  
     ```  
   
-10. 取代此程式碼的 \css\default.css 內容：  
+10. 以下列程式碼取代 \css\default.css 的內容：  
   
     ```  
     form {  
@@ -311,9 +311,9 @@ ms.locfileid: "68148823"
   
     ```  
   
-11. 選擇 F5 鍵以建置並執行應用程式。  
+11. 選擇 F5 鍵來建立並執行應用程式。  
   
-12. 在應用程式 UI 中，輸入任何兩個數字，選取作業，然後選擇 **=**  按鈕。 正確的結果會出現。  
+12. 在應用程式 UI 中，輸入任何兩個數字，選取一個作業，然後選擇該 **=** 按鈕。 正確的結果隨即出現。  
   
 ## <a name="see-also"></a>另請參閱  
  [建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)

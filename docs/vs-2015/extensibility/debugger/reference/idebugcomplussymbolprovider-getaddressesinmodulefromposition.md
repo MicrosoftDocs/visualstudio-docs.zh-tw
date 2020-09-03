@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition |Microsoft Docs
+title: IDebugComPlusSymbolProvider：： GetAddressesInModuleFromPosition |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4471997a5497413869c3c4662592f4c585c2d76d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194831"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-將指定的模組中的文件位置對應的偵錯位址陣列。  
+將指定模組中的檔位置對應至 debug 位址陣列。  
   
 ## <a name="syntax"></a>語法  
   
@@ -51,28 +51,28 @@ int GetAddressesInModuleFromPosition(
   
 #### <a name="parameters"></a>參數  
  `ulAppDomainID`  
- [in]應用程式定義域識別項。  
+ 在應用程式域識別碼。  
   
  `guidModule`  
- [in]模組的唯一識別碼。  
+ 在模組的唯一識別碼。  
   
  `pDocPos`  
- [in]文件位置。  
+ 在檔位置。  
   
  `fStatmentOnly`  
- [in]如果`TRUE`，限制為單一陳述式的偵錯位址。  
+ 在如果 `TRUE` 為，則將 debug 位址限制為單一語句。  
   
  `ppEnumBegAddresses`  
- [out]傳回與這個陳述式或列相關聯的開始偵錯位址的列舉值。  
+ 擴展傳回與這個語句或行相關聯之起始偵錯工具位址的列舉值。  
   
  `ppEnumEndAddresses`  
- [out]傳回與這個陳述式或列相關聯的結束偵錯位址的列舉值。  
+ 擴展傳回與這個語句或行相關聯之結束 debug 位址的列舉值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
+ 下列範例示範如何針對公開[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbolProvider**物件，執行這個方法。  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(  

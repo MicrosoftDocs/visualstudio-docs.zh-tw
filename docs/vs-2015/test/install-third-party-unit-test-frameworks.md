@@ -9,10 +9,10 @@ caps.latest.revision: 12
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c2bd087dc0b06cbf8ffe4c08f84d819e8ef1c2f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660518"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>安裝協力廠商單元測試架構
@@ -20,7 +20,7 @@ ms.locfileid: "72660518"
 
 Visual Studio 測試總管可以執行任何已針對總管開發配接器介面的單元測試架構。 架構的安裝程式會安裝二進位檔，並加入支援語言版本的 Visual Studio 專案範本。 當您使用範本來建立專案時，系統會向測試總管註冊架構。 Visual Studio 方案可包含多個單元測試專案，這些專案使用不同的架構並提供不同的語言版本。 測試總管會全部一起執行。
 
- **Requirements**
+ **需求**
 
 - Visual Studio Enterprise、Visual Studio Professional
 
@@ -29,22 +29,22 @@ Visual Studio 測試總管可以執行任何已針對總管開發配接器介面
 
 ### <a name="installing-from-visual-studio"></a>從 Visual Studio 安裝
 
-1. 選擇標準功能表上的 [工具]，然後選擇 [延伸模組和更新]。
+1. 選擇標準功能表上的 [工具]****，然後選擇 [延伸模組和更新]****。
 
-2. 依序展開 [線上]、[Visual Studio 組件庫] 和 [工具]。 選擇 [測試]。
+2. 依序展開 [線上]****、[Visual Studio 組件庫]**** 和 [工具]****。 選擇 [測試]****。
 
 3. 瀏覽清單以尋找架構。
 
-4. 選取架構並選擇 [下載]。
+4. 選取架構並選擇 [下載]****。
 
-   如需詳細資訊，請參閱[尋找及使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)。
+   如需詳細資訊，請參閱 [尋找和使用 Visual Studio 擴充](../ide/finding-and-using-visual-studio-extensions.md)功能。
 
 ### <a name="installing-from-the-web"></a>從 Web 安裝
  如果您知道對哪個架構感興趣：
 
 1. 開啟 [Visual Studio Marketplace](https://marketplace.visualstudio.com)。
 
-2. 在 [尋找] 方塊中鍵入架構的名稱。
+2. 在 [尋找]**** 方塊中鍵入架構的名稱。
 
 3. 在結果清單中選擇架構，以巡覽至該工具的 [Visual Studio 組件庫] 頁面。
 
@@ -52,11 +52,11 @@ Visual Studio 測試總管可以執行任何已針對總管開發配接器介面
 
 4. 開啟 [Visual Studio Marketplace](https://marketplace.visualstudio.com)。
 
-5. 選擇 [瀏覽]。
+5. 選擇 **[流覽]**。
 
-6. 在 [分類] 清單中，展開 [工具] 節點，然後選擇 [測試]。
+6. 在 [分類]**** 清單中，展開 [工具]**** 節點，然後選擇 [測試]****。
 
 7. 在結果清單中選擇一個架構，以巡覽至該工具的 [Visual Studio 組件庫] 頁面。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [對程式碼進行單元測試](../test/unit-test-your-code.md)

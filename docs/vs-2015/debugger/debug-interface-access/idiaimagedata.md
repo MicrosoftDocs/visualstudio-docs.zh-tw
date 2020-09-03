@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54d09a037fff08b1c34f9a0b5e1fbf018cd10bc3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161403"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-公開 （expose) 的基底的位置和記憶體位移的模組或映像的詳細資料。  
+公開模組或映射的基底位置和記憶體位移的詳細資料。  
   
 ## <a name="syntax"></a>語法  
   
@@ -32,22 +32,22 @@ IDiaImageData : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDiaImageData`。  
+ 下表顯示的方法 `IDiaImageData` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|擷取虛擬記憶體中的位置，相對於應用程式的模組。|  
-|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|擷取映像的虛擬記憶體位置。|  
-|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|擷取以為基礎的映像的記憶體位置。|  
+|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|抓取模組的虛擬記憶體中相對於應用程式的位置。|  
+|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|捕獲映射虛擬記憶體中的位置。|  
+|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|抓取影像應依據的記憶體位置。|  
   
 ## <a name="remarks"></a>備註  
- 某些偵錯資料流 （XDATA、 PDATA） 包含的資料也儲存在映像的複本。 這些物件可以查詢的資料串流`IDiaImageData`介面。 請參閱本主題的詳細資料 」 的呼叫端資訊 」 區段。  
+ 某些 debug 串流 (.XDATA，.PDATA) 包含也儲存在映射中的資料複本。 這些資料流程資料物件可以針對介面進行查詢 `IDiaImageData` 。 如需詳細資訊，請參閱本主題的「呼叫者的備註」一節。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 取得這個介面，藉由呼叫`QueryInterface`上[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)物件。 請注意，並非所有偵錯資料流支援`IDiaImageData`介面。 例如，目前只有 XDATA 和 PDATA 資料流支援`IDiaImageData`介面。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ `QueryInterface`在[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)物件上呼叫，以取得這個介面。 請注意，並非所有的 debug 資料流程都支援此 `IDiaImageData` 介面。 例如，目前只有 .XDATA 和 .PDATA 資料流程支援此 `IDiaImageData` 介面。  
   
 ## <a name="example"></a>範例  
- 此範例會搜尋所有偵錯資料流的任何支援的資料流`IDiaImageData`介面。 如果找到這類資料流，則會顯示該資料流的一些資訊。  
+ 這個範例會在所有支援介面的資料流程上搜尋所有的 debug 資料流程 `IDiaImageData` 。 如果找到這類的資料流程，則會顯示該資料流程的一些相關資訊。  
   
 ```cpp#  
 void ShowImageData(IDiaSession *pSession)  
@@ -114,12 +114,12 @@ void ShowImageData(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>需求  
- 標頭：dia2.h  
+ 標頭： Dia2。h  
   
- 程式庫： diaguids.lib  
+ 程式庫： diaguids .lib  
   
- DLL: msdia80.dll  
+ DLL： msdia80.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [ (Debug 介面存取 SDK) 介面 ](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

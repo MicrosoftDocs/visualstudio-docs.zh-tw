@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9fbe6099a8928397a7d885ac72c4f34da2da6af0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545882"
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>如何：以程式設計方式從 Outlook 電子郵件專案儲存附件
@@ -27,7 +27,7 @@ ms.locfileid: "85545882"
 這個範例會在收件匣中收到郵件時，將電子郵件附件儲存至指定的資料夾。
 
 > [!IMPORTANT]
-> 只有當您在 C 目錄的根目錄新增名為**TestFileSave**的資料夾時，此範例才能運作。
+> 此範例僅適用于您在 C 目錄的根目錄下新增名為 **TestFileSave** 的資料夾。
 
 [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -38,6 +38,6 @@ ms.locfileid: "85545882"
 ## <a name="see-also"></a>另請參閱
 
 - [使用訊息項目](../vsto/working-with-mail-items.md)
-- [如何：以程式設計方式依名稱取得資料夾](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [如何：以程式設計方式依名稱取出資料夾](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
 - [如何：以程式設計方式在收到電子郵件訊息時執行動作](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
-- [如何：以程式設計方式在特定資料夾內搜尋](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [如何：以程式設計方式在特定資料夾中搜尋](../vsto/how-to-programmatically-search-within-a-specific-folder.md)

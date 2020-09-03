@@ -12,26 +12,26 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f40c523c058bf215cc4574b3aa4a2e038c833beb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196648"
 ---
 # <a name="exposing-project-objects"></a>公開專案物件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-自訂專案類型可提供 automation 物件，以便使用自動化介面專案的存取權。 預期每個專案類型提供的標準<xref:EnvDTE.Project>自動化物件，從存取<xref:EnvDTE.Solution>，其中包含已經在 IDE 中開啟的所有專案集合。 在專案中的每個項目應該由<xref:EnvDTE.ProjectItem>物件使用存取<xref:EnvDTE.Project.ProjectItems>。 除了這些標準 automation 物件，可以選擇專案的方案專案特定的自動化物件。  
+自訂專案類型可以提供 automation 物件，以允許使用自動化介面存取專案。 每個專案類型都應提供 <xref:EnvDTE.Project> 從存取的標準 automation 物件 <xref:EnvDTE.Solution> ，其中包含在 IDE 中開啟的所有專案的集合。 專案中的每個專案都必須由 <xref:EnvDTE.ProjectItem> 使用存取的物件所公開 <xref:EnvDTE.Project.ProjectItems> 。 除了這些標準 automation 物件，專案也可以選擇提供專案特定的 automation 物件。  
   
- 您可以建立自訂的根層級自動化物件，您可以存取晚期繫結從根 DTE 物件使用`DTE.<customeObjectName>`或`DTE.GetObject(“<customObjectName>”)`。 例如，視覺效果C++建立C++名為"VCProjects 」，您可以使用 DTE 存取特定專案的專案集合。VCProjects 或 DTE。GetObject("VCProjects")。 您也可以建立 Project.Object，也就是唯一的專案類型中 Project.CodeModel，可以查詢其最高衍生性的物件，而會公開 ProjectItem.Object 和 ProjectItem.FileCodeModel 專案，項目。  
+ 您可以建立自訂的根層級 automation 物件，您可以使用或從根 DTE 物件存取晚期 `DTE.<customeObjectName>` 綁定 `DTE.GetObject(“<customObjectName>”)` 。 例如，Visual C++ 會建立名為 "VCProjects" 的 c + + 專案特定專案集合，而您可以使用 DTE 來存取它。VCProjects 或 DTE。GetObject ( "VCProjects" ) 。 您也可以建立專案，這個物件是專案類型的唯一專案。 CodeModel，可查詢其最常衍生的物件，也就是會公開專案物件和 FileCodeModel 的專案。  
   
- 它是常見的慣例來公開為自訂的特定專案的專案集合的專案。 例如，[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]建立C++，然後您可以存取使用特定的專案集合`DTE.VCProjects`或是`DTE.GetObject("VCProjects")`。 您也可以建立`Project.Object`，這是唯一的專案類型中`Project.CodeModel`，其最高衍生性的物件，可查詢`ProjectItem`，以公開`ProjectItem.Object`，和`ProjectItem.FileCodeModel`。  
+ 這是專案公開自訂、專案特定專案集合的常見慣例。 例如， [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 建立一個可供您使用或存取的 c + + 特定專案集合 `DTE.VCProjects` `DTE.GetObject("VCProjects")` 。 您也可以建立專案類型的唯一，也就是 `Project.Object` `Project.CodeModel` 可查詢其最大衍生物件的，也就是 `ProjectItem` 公開 `ProjectItem.Object` 和的 `ProjectItem.FileCodeModel` 。  
   
-### <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>若要參與專案的 VSPackage 特定物件  
+### <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>提供專案的 VSPackage 特定物件  
   
-1. VSPackage 的.pkgdef 檔中加入適當的索引鍵。  
+1. 將適當的金鑰新增至 VSPackage 的 .pkgdef 檔案。  
   
-     例如，以下是.pkgdef 設定C++語言專案：  
+     例如，以下是 c + + 語言專案的 .pkgdef 設定：  
   
     ```  
     [$RootKey$\Packages\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\Automation]  
@@ -40,7 +40,7 @@ ms.locfileid: "68196648"
     "VCProjectEngineEventsObject"=""  
     ```  
   
-2. 實作中的程式碼<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法，如下列範例所示。  
+2. 在方法中執行程式碼 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> ，如下列範例所示。  
   
     ```cpp  
     STDMETHODIMP CVsPackage::GetAutomationObject(  
@@ -70,7 +70,7 @@ ms.locfileid: "68196648"
     }   
     ```  
   
-     在程式碼的`g_wszAutomationProjects`是您的專案集合的名稱。 `GetAutomationProjects`方法會建立該物件會實作`Projects`介面，並傳回`IDispatch`呼叫物件，如下列程式碼範例所示的指標。  
+     在程式碼中， `g_wszAutomationProjects` 是專案集合的名稱。 `GetAutomationProjects`方法會建立一個物件來執行 `Projects` 介面，並將指標傳回 `IDispatch` 給呼叫的物件，如下列程式碼範例所示。  
   
     ```cpp  
     HRESULT CVsPackage::GetAutomationProjects(/* [out] */ IDispatch ** ppIDispatch)  
@@ -88,9 +88,9 @@ ms.locfileid: "68196648"
     }  
     ```  
   
-     您應該選擇您的 automation 物件的唯一名稱。 會無法預期，名稱衝突，衝突會造成衝突的物件名稱任意時擲多個專案類型使用相同的名稱。 您應該包含您公司的名稱或唯一的某種程度的 automation 物件的名稱及其產品名稱。  
+     您應該為 automation 物件選擇唯一的名稱。 名稱衝突無法預期，而且如果有多個專案類型使用相同的名稱，衝突會造成衝突的物件名稱被隨機擲回。 您應在 automation 物件的名稱中包含公司名稱或其產品名稱的某些獨特層面。  
   
-     自訂`Projects`集合物件是您專案的自動化模型的其餘部分的便利性進入點。 您的專案物件也是從可存取<xref:EnvDTE.Solution>專案集合。 建立提供取用者使用適當的程式碼和登錄項目之後`Projects`物件集合，您的實作必須提供其餘專案模型的標準物件。 如需詳細資訊，請參閱 <<c0> [ 專案模型化](../../extensibility/internals/project-modeling.md)。  
+     自訂 `Projects` 集合物件是專案自動化模型其餘部分的便利進入點。 專案集合也可以存取您的專案物件 <xref:EnvDTE.Solution> 。 在您建立適當的程式碼和登錄專案以提供取用者的 `Projects` 集合物件之後，您的執行必須為專案模型提供剩餘的標準物件。 如需詳細資訊，請參閱 [專案模型](../../extensibility/internals/project-modeling.md)化。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

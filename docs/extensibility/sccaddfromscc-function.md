@@ -1,5 +1,5 @@
 ---
-title: Sccaddfromscc 功能 |微軟文件
+title: SccAddFromScc 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1dd32e31330cdce958e463a40a4d92f88b09afb2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701240"
 ---
-# <a name="sccaddfromscc-function"></a>Sccaddfromscc 功能
-此功能允許使用者流覽原始程式碼管理系統中已有的檔案,並隨後使這些文件成為當前專案的一部分。 例如,此函數可以在不複製該文件的情況下將公共標頭檔獲取到當前專案中。 檔的`lplpFileNames`傳回數位 包含使用者要新增到 IDE 專案的檔案清單。
+# <a name="sccaddfromscc-function"></a>SccAddFromScc 函式
+這個函式可讓使用者流覽已在原始檔控制系統中的檔案，然後再將這些檔案設為目前專案的一部分。 例如，此函式可以在不復制檔案的情況下，取得目前專案的通用標頭檔。 傳回的檔案陣列， `lplpFileNames` 包含使用者想要新增至 IDE 專案的檔案清單。
 
 ## <a name="syntax"></a>語法
 
@@ -34,43 +34,43 @@ SCCRTN SccAddFromScc (
 ```
 
 ### <a name="parameters"></a>參數
- pvContext
+ pvCoNtext
 
-[在]原始程式碼管理外掛程式上下文結構。
+在原始檔控制外掛程式內容結構。
 
  hWnd
 
-[在]源控件外掛程式可以用作它提供的任何對話框的父級的IDE視窗句柄。
+在IDE 視窗的控制碼，原始檔控制外掛程式可以使用它做為它所提供之任何對話方塊的父代。
 
  lpnFiles
 
-[進出]要添加到的文件數的緩衝區。 (這是`NULL`如果指向`lplpFileNames`的 記憶體要釋放。 有關詳細資訊,請參閱備註。
+[in，out]要加入之檔案數目的緩衝區。  (這是 `NULL` 為了釋放所指向的記憶體 `lplpFileNames` 。 如需詳細資訊，請參閱備註。 ) 
 
- lplFile 名稱
+ lplpFileNames
 
-[進出]指向所有檔名的指標陣列,沒有目錄路徑。 此陣列由原始程式碼管理外掛程式分配和釋放。 如果`lpnFiles` `lplpFileNames` =`NULL`1 和`lplpFileNames`不是 ,則指向的陣列中的第一個名稱包含目標資料夾。
+[in，out]所有檔案名的指標陣列，而不包含目錄路徑。 這個陣列是由原始檔控制外掛程式配置和釋放。 如果 `lpnFiles` = 1 且不 `lplpFileNames` 是 `NULL` ，則由所指向之陣列中的第一個名稱 `lplpFileNames` 包含目的資料夾。
 
 ## <a name="return-value"></a>傳回值
- 此函數的源碼管理外掛程式實現應返回以下值之一:
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|已成功找到檔並添加到專案中。|
-|SCC_I_OPERATIONCANCELED|操作已取消,無效。|
-|SCC_I_RELOADFILE|需要重新載入檔或專案。|
+|SCC_OK|檔案已成功找出並新增至專案。|
+|SCC_I_OPERATIONCANCELED|作業已取消，沒有任何作用。|
+|SCC_I_RELOADFILE|需要重載檔案或專案。|
 
 ## <a name="remarks"></a>備註
- IDE 調用此函數。 如果原始程式管理外掛程式支援指定本地目標資料夾,則 IDE`lpnFiles`將傳遞 = 1`lplpFileNames`並將本地資料夾名稱傳遞到中。
+ IDE 會呼叫這個函數。 如果原始檔控制外掛程式支援指定本機目的資料夾，則 IDE 會傳遞 `lpnFiles` = 1，並將本機資料夾名稱傳遞至 `lplpFileNames` 。
 
- 當`SccAddFromScc`對函數的調用返回時,外掛程式已根據需要`lpnFiles`為`lplpFileNames`和分配了檔名陣列的記憶體(請注意,此分配將替換中的`lplpFileNames`指標。 原始程式碼管理外掛程式負責將所有檔案放入使用者的目錄或指定的指定資料夾中。 然後,IDE 將檔添加到IDE專案中。
+ 當函式的呼叫傳回時 `SccAddFromScc` ，外掛程式已將值指派給 `lpnFiles` 和 `lplpFileNames` ，視需要設定檔案名稱陣列的記憶體 (請注意，此配置會取代) 中的指標 `lplpFileNames` 。 原始檔控制外掛程式負責將所有檔案放入使用者的目錄或指定的指定資料夾中。 IDE 接著會將檔案新增至 IDE 專案。
 
- 最後,IDE 會第二次呼叫此函數,傳`NULL``lpnFiles`入 。 這被解釋為原始程式碼管理外掛程式的特殊訊號,用於釋放為檔名陣組分配的記憶體。`lplpFileNames``.`
+ 最後，IDE 會第二次呼叫此函式，並 `NULL` 傳入 `lpnFiles` 。 這會被原始檔控制外掛程式解釋為特殊信號，以釋放配置給中的檔案名陣列的記憶體。 `lplpFileNames``.`
 
- `lplpFileNames`是指針`char ***`。 原始程式碼管理外掛程式放置指向指向檔名的指標陣列的指標,從而以此 API 的標準方式傳遞清單。
+ `lplpFileNames` 是 `char ***` 指標。 原始檔控制外掛程式會放置指向檔案名之指標陣列的指標，進而以標準方式傳遞此 API 的清單。
 
 > [!NOTE]
-> VSSCI API 的初始版本沒有提供指示所添加文件的目標專案的方法。 為了適應這種情況,參數的`lplpFIleNames`語義得到了增強,使其成為輸入/輸出參數,而不是輸出參數。 如果只指定一個檔,即`lpnFiles`由 = 1 指向的值`lplpFileNames`,則的第一個元素包含目標資料夾。 要使用這些新語義,IDE`SccSetOption`將函數呼叫`nOption`, 參數`SCC_OPT_SHARESUBPROJ`設定為 。 如果原始碼管理外掛程式不支援語意,會傳`SCC_E_OPTNOTSUPPORTED`回 。 這樣做將關閉使用從**源控制添加**功能。 如果外掛程式支援 **「從源碼管理新增**」功能`SCC_CAP_ADDFROMSCC`(), 則必須支援新的`SCC_I_SHARESUBPROJOK`語意並傳回 。
+> VSSCI API 的初始版本並未提供方法來指出新增檔案的目標專案。 為了因應這種情況， `lplpFIleNames` 已增強參數的語法，使其成為 in/out 參數，而非 output 參數。 如果只指定單一檔案，也就是由 = 1 指向的值， `lpnFiles` 則的第一個元素會 `lplpFileNames` 包含目的檔案夾。 若要使用這些新的語義，IDE 會呼叫 `SccSetOption` 函數，並將 `nOption` 參數設定為 `SCC_OPT_SHARESUBPROJ` 。 如果原始檔控制外掛程式不支援此語義，則會傳回 `SCC_E_OPTNOTSUPPORTED` 。 這麼做會停用 [ **從原始檔控制加入** ] 功能。 如果外掛程式支援 [ **從原始檔控制加入** ] 功能 (`SCC_CAP_ADDFROMSCC`) ，則必須支援新的語義並傳回 `SCC_I_SHARESUBPROJOK` 。
 
 ## <a name="see-also"></a>另請參閱
-- [原始程式碼管理外掛程式 API 功能](../extensibility/source-control-plug-in-api-functions.md)
+- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)

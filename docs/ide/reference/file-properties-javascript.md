@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68926227"
 ---
 # <a name="file-properties-javascript"></a>JavaScript、檔案屬性
@@ -79,7 +79,7 @@ ms.locfileid: "68926227"
 ### <a name="identity"></a>身分識別
 顯示專案中所使用參考的身分識別，這儲存在專案檔中。
 
-### <a name="package"></a>Package
+### <a name="package"></a>套件
 顯示與參考建立關聯的套件資訊清單名稱。
 
 ### <a name="resolved-path"></a>已解析路徑

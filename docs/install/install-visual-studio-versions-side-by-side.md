@@ -12,10 +12,10 @@ author: ornellaalt
 ms.author: ornella
 manager: jillfra
 ms.openlocfilehash: 717a9cd3f4157c276ce7d0dd5c41cac625581ba6
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250257"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>並存安裝 Visual Studio 版本
@@ -48,11 +48,11 @@ ms.locfileid: "88250257"
 
 ## <a name="install-minor-visual-studio-versions-side-by-side"></a>並存安裝次要 Visual Studio 版本
 
-從 Visual Studio 的一個次要版本升級到下一個時，Visual Studio 安裝程式預設會將您目前的安裝更新為該通道中的下一個版本。 例如，安裝 16.6.4 Preview 時，安裝程式會嘗試取代您目前的16.6.3 預覽安裝，因為這兩個版本都在 16.6 Preview 通道中。 這有助於確保較舊版本的 Visual Studio 不會佔用您電腦上的空間。 在某些特定情況下，並存安裝次要版本可能會很有説明。 在我們的範例中，這表示在同一部電腦上同時有16.6.3 和16.6.4。
+從 Visual Studio 的次要版本升級到下一個版本時，Visual Studio 安裝程式預設會將您目前的安裝更新至該通道中的下一個版本。 例如，安裝 16.6.4 Preview 時，安裝程式會嘗試取代您目前的 16.6.3 Preview 安裝，因為這兩個版本都在 16.6 Preview 通道中。 這有助於確保舊版 Visual Studio 不佔用您電腦上的空間。 在某些特定情況下，並存安裝次要版本可能會很有説明。 在我們的範例中，這表示在同一部電腦上同時有16.6.3 和16.6.4。
 
-1. 針對您想要與現有 Visual Studio 版本並存安裝的次要版本，下載 [Visual Studio](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) 啟動載入器檔案。
-2. 在系統管理員模式中開啟命令提示字元。 若要這麼做，請開啟 Windows [開始] 功能表，輸入 "cmd"，以滑鼠右鍵按一下命令提示字元搜尋結果，然後選取 [以 **系統管理員身分執行**]。 在命令提示字元中，將目錄變更為 Visual Studio 啟動載入器檔案所在的資料夾。
-3. 執行下列命令，為安裝位置指定新的資料夾路徑，並以您要安裝之 Visual Studio 版本的適當啟動載入器名稱取代 .exe 檔案名。 .Exe 檔案名應符合或類似下列其中一個檔案：
+1. 針對您要與現有 Visual Studio 版本並存安裝的次要版本，下載 [Visual Studio](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) 的啟動載入器檔案。
+2. 以系統管理員模式開啟命令提示字元。 若要這樣做，請開啟 Windows [開始] 功能表，輸入 "cmd"，以滑鼠右鍵按一下命令提示字元搜尋結果，然後選取 [以 **系統管理員身分執行**]。 在命令提示字元中，將目錄變更為您 Visual Studio 啟動載入器檔案所在的資料夾。
+3. 執行下列命令，指定安裝位置的新資料夾路徑，並將 .exe 檔案名取代為您要安裝之 Visual Studio 版本的適當啟動載入器名稱。 .Exe 檔案名應符合或類似下列其中一個檔案：
    * vs_community.exe (適用於 Visual Studiofor Community)
    * vs_professional.exe (適用於 Visual Studio Professional)
    * vs_enterprise.exe (適用於 Visual Studio Enterprise)
@@ -61,7 +61,7 @@ ms.locfileid: "88250257"
    vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<2019 AddNewPath>"
    ```
 
-4. 依照 [安裝程式] 對話方塊，選取安裝所需的元件。 如需詳細資訊，請參閱 [Install Visual Studio](install-visual-studio.md#step-4---choose-workloads)。
+4. 遵循安裝程式對話方塊來選取安裝所需的元件。 如需詳細資訊，請參閱 [安裝 Visual Studio](install-visual-studio.md#step-4---choose-workloads)。
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework 的版本和並存安裝
 

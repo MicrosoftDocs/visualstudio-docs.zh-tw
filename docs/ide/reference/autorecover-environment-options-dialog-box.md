@@ -18,25 +18,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f35424089b293b858c609d19f59459693373eb4d
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250297"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>選項對話方塊、環境、自動回復
 
 使用 [選項]**** 對話方塊的這個頁面，即可指定是否自動備份檔案。 如果 Visual Studio 意外關閉，您也可以指定是否要還原已修改的檔案。
 
-若要存取此對話方塊，請前往 [**工具**] [選項] [  >  **Options**  >  **環境**] [  >  **自動**]。
+若要存取此對話方塊，請移至 [**工具**  >  **選項**  >  **環境**  >  **自動**回復]。
 
 :::image type="content" source="media/autorecover-options.png" alt-text="[選項] 對話方塊中 [自動回復] 區段的螢幕擷取畫面":::
 
-**每隔 [n] 分鐘儲存自動回復資訊**
+**每隔 [n] 分鐘儲存一次自動回復資訊**
 
 ::: moniker range="vs-2019"
 
-使用此選項，可自訂在編輯器中自動儲存檔案的頻率。 針對先前儲存的檔案，Visual Studio 2019 16.2 版和更新版本會將檔案的複本儲存在 ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles \\ [專案名稱]*** 中。 如果檔案是新檔案，而且尚未儲存，請 Visual Studio 使用隨機產生的檔案名來 autosaves 它。
+使用此選項，可自訂在編輯器中自動儲存檔案的頻率。 針對先前儲存的檔案，Visual Studio 2019 16.2 版和更新版本會在 ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles \\ [專案名稱]*** 中儲存檔案的複本。 如果檔案是新檔案，但尚未儲存，Visual Studio 使用隨機產生的檔案名來 autosaves 它。
 
 > [!NOTE]
 > 如果您使用 Visual Studio 2019 16.1 版或更早版本，檔案位置是 *%USERPROFILE%\Documents\Visual Studio [version] \Backup Files \\ [專案名稱]*。 如需詳細資訊，請參閱 [Visual Studio 2019 版本資訊歷程記錄](/visualstudio/releases/2019/release-notes-history/) 頁面。
@@ -45,7 +45,7 @@ ms.locfileid: "88250297"
 
 ::: moniker range="vs-2017"
 
-使用此選項，可自訂在編輯器中自動儲存檔案的頻率。 針對先前儲存的檔案，Visual Studio 2017 會將檔案的複本儲存在 *%USERPROFILE%\Documents\Visual Studio [版本] \Backup 檔案 \\ [專案名稱]* 中。 如果檔案是新檔案，而且尚未儲存，請 Visual Studio 使用隨機產生的檔案名來 autosaves 它。
+使用此選項，可自訂在編輯器中自動儲存檔案的頻率。 針對先前儲存的檔案，Visual Studio 2017 會將檔案的複本儲存在 *%USERPROFILE%\Documents\Visual Studio [version] \Backup files \\ [專案名稱]* 中。 如果檔案是新檔案，但尚未儲存，Visual Studio 使用隨機產生的檔案名來 autosaves 它。
 
 ::: moniker-end
 

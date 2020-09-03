@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 49985589c021192454bf0dd58929c9ef5646aec9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545778"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>如何：顯示增益集使用者介面錯誤
-  根據預設，如果 VSTO 增益集嘗試操作 Microsoft Office 的使用者介面（UI）但失敗，則不會顯示任何錯誤訊息。 不過，您可以設定 Microsoft Office 應用程式，顯示與 UI 相關的錯誤訊息。 您可以使用這些訊息來協助判斷自訂功能區未出現的原因，或是功能區出現但沒有控制項出現的原因。
+  根據預設，如果 VSTO 增益集嘗試操作 Microsoft Office 使用者介面 (UI) 且失敗，則不會顯示任何錯誤訊息。 不過，您可以設定 Microsoft Office 應用程式，顯示與 UI 相關的錯誤訊息。 您可以使用這些訊息來協助判斷自訂功能區未出現的原因，或為什麼會出現功能區但不會顯示任何控制項。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 

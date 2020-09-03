@@ -19,10 +19,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68918890"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>選項對話方塊、專案和方案、VC++ 專案設定
@@ -31,7 +31,7 @@ ms.locfileid: "68918890"
 
 ## <a name="to-access-this-dialog-box"></a>若要存取此對話方塊
 
-1. 在 **[工具]** 功能表上，按一下 **[選項]**。
+1. 在 **[工具]** 功能表上，按一下 **[選項]** 。
 
 2. 選取 [專案和方案]****，然後選取 [VC++ 專案設定]****。
 

@@ -9,10 +9,10 @@ caps.latest.revision: 10
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bfc85b0616fdf8f30732f2409a1a15040967dbb3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660644"
 ---
 # <a name="create-a-unit-test-project"></a>建立單元測試專案
@@ -25,19 +25,19 @@ ms.locfileid: "72660644"
 
 ## <a name="to-create-a-unit-test-project"></a>建立單元測試專案：
 
-1. 在 [檔案] 功能表上，選擇 [新增] ，然後選擇 [專案]\(鍵盤 Ctrl + Shift + N)。
+1. 在 [檔案] **** 功能表上，選擇 [新增] **** ，然後選擇 [專案] **** (鍵盤 Ctrl + Shift + N)。
 
-2. 在 [新增專案] 對話方塊中，展開 [已安裝] 節點，選擇您想要用於測試專案的語言，然後選擇 [測試]。
+2. 在 [新增專案] 對話方塊中，展開 [已安裝]**** 節點，選擇您想要用於測試專案的語言，然後選擇 [測試]****。
 
-3. 若要使用其中一個 Microsoft 單元測試架構，請從專案範本清單中選擇 [單元測試專案] 。 否則，請選擇您所要使用單元測試架構的專案範本。 若要測試本範例的 Accounts 專案，您要將專案命名為 AccountsTests。
+3. 若要使用其中一個 Microsoft 單元測試架構，請從專案範本清單中選擇 [單元測試專案] **** 。 否則，請選擇您所要使用單元測試架構的專案範本。 若要測試本範例的 Accounts 專案，您要將專案命名為 AccountsTests。
 
 4. 在單元測試專案中，加入受測程式碼的參考。  以下是在相同方案中建立程式碼專案參考的方式：
 
     1. 在 [方案總管] 中選取專案。
 
-    2. 在 [專案] 功能表上，選擇 [加入參考]。
+    2. 在 [專案]**** 功能表上，選擇 [加入參考]****。
 
-    3. 在 [參考管理員] 對話方塊上，開啟 [方案] 節點，然後選擇 [專案]。 檢查程式碼專案名稱，然後關閉對話方塊。
+    3. 在 [參考管理員] 對話方塊上，開啟 [方案]**** 節點，然後選擇 [專案]****。 檢查程式碼專案名稱，然後關閉對話方塊。
 
 5. 如果您要測試的程式碼在另一個位置，請參閱[管理專案中的參考](../ide/managing-references-in-a-project.md)了解加入參考的相關資訊。
 
@@ -48,7 +48,7 @@ ms.locfileid: "72660644"
 
 - [使用適用於 Managed 程式碼的 Microsoft 單元測試架構撰寫適用於 .NET Framework 的單元測試](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
 
-- [使用適用於 C++ 的 Microsoft 單元測試架構撰寫適用於 C/C++ 的單元測試](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)
+- [使用適用于 c + + 的 Microsoft 單元測試架構撰寫適用于 C/c + + 的單元測試](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)
 
   **執行單元測試**
 

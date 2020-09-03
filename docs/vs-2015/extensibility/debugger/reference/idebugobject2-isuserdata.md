@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::IsUserData |Microsoft Docs
+title: IDebugObject2：： IsUserData |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fd595ce041ae1968e085e3b63b49d308cfd14452
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194587"
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
@@ -40,13 +40,13 @@ int IsUserData(
   
 #### <a name="parameters"></a>參數  
  `pfUser`  
- [out]傳回非零值 (`TRUE`) 該物件所代表的使用者資料; 如果零 (`FALSE`) 如果沒有。  
+ 擴展 `TRUE` 如果物件代表使用者資料，則傳回非零的 () ; 如果不是，則傳回零 (`FALSE`) 。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 使用者資料是任何物件，是指定為 JustMyCode （使用者可設定選項，將模組標記為使用者程式碼，並因此出現在堆疊追蹤） 模組的一部分。  
+ 使用者資料是屬於指定為 JustMyCode 之模組一部分的任何物件 (可設定的選項，可將模組標記為使用者程式碼，因此可在堆疊追蹤) 中看到。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

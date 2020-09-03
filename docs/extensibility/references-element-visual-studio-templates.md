@@ -1,5 +1,5 @@
 ---
-title: 參考元素(可視化工作室範本) |微軟文件
+title: " (Visual Studio 範本的參考元素) |Microsoft Docs"
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ef31c5e7550ec7c6e4570d156d364afcf4ad6819
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701607"
 ---
-# <a name="references-element-visual-studio-templates"></a>參考元素(視覺化工作室範本)
-對範本加入專案中的程式集引用進行分組。
+# <a name="references-element-visual-studio-templates"></a> (Visual Studio 範本的參考元素) 
+將範本加入至專案的元件參考組成群組。
 
- \<VStemplate \<\<>模板内容>引用>
+ \<VSTemplate> \<TemplateContent>
+ \<References>
 
 ## <a name="syntax"></a>語法
 
@@ -44,23 +45,23 @@ ms.locfileid: "80701607"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[參考](../extensibility/reference-element-visual-studio-templates.md)|必要元素。<br /><br /> 指定項目加入專案時要加入的組件參考。 元素中必須存在一`Reference``References`個或多個元素。|
+|[參考](../extensibility/reference-element-visual-studio-templates.md)|必要元素。<br /><br /> 指定項目加入專案時要加入的組件參考。 元素中必須有一個或多個 `Reference` 元素 `References` 。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|指定範本的內容。|
 
 ## <a name="remarks"></a>備註
  `References` 是 `TemplateContent` 的選擇性子項目。
 
- `Reference`和`References`元素只能在具有`Type`屬性值`Item`的 *.vstemplate*檔案中使用。
+ `Reference`和 `References` 元素只能用在具有屬性值 *.vstemplate*的 .vstemplate 檔案中。 `Type` `Item`
 
 ## <a name="example"></a>範例
- 下面的示例說明了項範本`TemplateContent`的元素。 此 XML 添加對*System.dll*和*System.Data.dll*程式集的引用。
+ 下列範例說明 `TemplateContent` 專案範本的元素。 這個 XML 會將參考加入 *System.dll* 和 *System.Data.dll* 元件。
 
 ```xml
 <TemplateContent>
@@ -81,5 +82,5 @@ ms.locfileid: "80701607"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
-- [建立項目與專案樣本](../ide/creating-project-and-item-templates.md)
+- [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [建立專案和專案範本](../ide/creating-project-and-item-templates.md)

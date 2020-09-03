@@ -12,30 +12,30 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6510df2cc9cc1e504f09af033548e0d1c9b4ae74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195017"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>攔截舊版語言服務命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-使用[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，您可以讓 [文字] 檢視會處理的語言服務截距命令。 這是適用於文字檢視不會管理的特定語言的行為。 您可以攔截這些命令加入 [文字] 檢視中的一或多個命令篩選器，從您的語言服務。  
+使用 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ，您可以讓語言服務攔截文字視圖原本會處理的命令。 這適用于文字視圖無法管理的語言特定行為。 您可以從語言服務將一或多個命令篩選器新增至文字視圖，以攔截這些命令。  
   
-## <a name="getting-and-routing-the-command"></a>取得與路由命令  
- 命令篩選器是<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>監視特定的字元序列或命令的物件。 您可以關聯多個命令篩選使用單一文字檢視。 每個文字檢視會維護鏈結的命令篩選器。 建立新的命令篩選器之後，您會將篩選新增至適當的文字檢視的鏈結中。  
+## <a name="getting-and-routing-the-command"></a>取得和路由傳送命令  
+ 命令篩選器是 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 監視特定字元序列或按鍵命令的物件。 您可以將一個以上的命令篩選器與單一文字視圖產生關聯。 每個文字視圖都會維護一鏈的命令篩選準則。 建立新的命令篩選器之後，您可以將篩選新增至適當文字視圖的鏈。  
   
- 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>命令篩選器加入鏈結。 當您呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]傳回另一個您可以傳遞命令篩選器不會處理命令的命令篩選條件。  
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>在上呼叫方法 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> ，將您的命令篩選器新增至鏈。 當您呼叫時 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> ， [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 會傳回另一個命令篩選準則，您可以傳遞命令篩選器未處理的命令。  
   
- 您有命令處理的下列選項：  
+ 您有下列命令處理選項：  
   
-- 處理命令，，然後將鏈結中的傳遞到下一個命令篩選器的命令。  
+- 處理命令，然後將命令傳遞至鏈中的下一個命令篩選準則。  
   
-- 處理命令，並不會傳遞至下一個命令篩選器的命令。  
+- 處理命令，並不要將命令傳遞給下一個命令篩選器。  
   
-- 未處理命令，但傳遞到下一個命令篩選器的命令。  
+- 請勿處理命令，但是將命令傳遞給下一個命令篩選器。  
   
-- 忽略命令。 不在目前的篩選器中處理它，並請勿將它傳遞到下一個篩選器。  
+- 略過命令。 請勿在目前的篩選中處理它，也不要將它傳遞給下一個篩選準則。  
   
-  您的語言服務應處理哪些命令的相關資訊，請參閱[語言服務篩選器的重要命令](../../extensibility/internals/important-commands-for-language-service-filters.md)。
+  如需語言服務應處理哪些命令的相關資訊，請參閱 [語言服務篩選的重要命令](../../extensibility/internals/important-commands-for-language-service-filters.md)。

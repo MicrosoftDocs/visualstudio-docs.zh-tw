@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d5fc0f5a11d29fdb1ee570dc32066fdd492ed8db
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871543"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>逐步解說：使用分析工具 API
@@ -34,9 +34,9 @@ ms.locfileid: "68871543"
 
  針對原生程式碼，Visual Studio 分析工具 API 位在 VSPerf.dll 中。 標頭檔 (VSPerf.h) 和匯入程式庫 (VSPerf.lib) 位在 Microsoft Visual Studio 9\Team Tools\Performance Tools 目錄中。
 
- 針對受控碼，分析工具 API 位在 Microsoft.VisualStudio.Profiler.dll 中。 此 DLL 位在 Microsoft Visual Studio 9\Team Tools\Performance Tools 目錄中。 如需詳細資訊, 請參閱[Profiler](/previous-versions/ms242704(v=vs.140))。
+ 針對受控碼，分析工具 API 位在 Microsoft.VisualStudio.Profiler.dll 中。 此 DLL 位在 Microsoft Visual Studio 9\Team Tools\Performance Tools 目錄中。 如需詳細資訊，請參閱[分析工具](/previous-versions/ms242704(v=vs.140))。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
  本逐步解說假設您所選擇的開發環境設定成支援偵錯和取樣。 下列主題概述這些必要條件：
 
  [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)
@@ -119,15 +119,15 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>在 Visual Studio IDE 中收集和檢視資料
 
-1. 開啟 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE。 在 [分析] 功能表上，指向 [分析工具]，然後選取 [新增效能工作階段]。
+1. 開啟 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE。 在 [分析]**** 功能表上，指向 [分析工具]****，然後選取 [新增效能工作階段]****。
 
-2. 在 [效能總管] 視窗中，將已編譯的二進位檔新增至 [目標] 清單。 以滑鼠右鍵按一下 [目標]，然後選取 [新增目標二進位檔]。 在 [新增目標二進位檔] 對話方塊中，找到二進位檔，然後按一下 [開啟]。
+2. 在 [效能總管]**** 視窗中，將已編譯的二進位檔新增至 [目標]**** 清單。 以滑鼠右鍵按一下 [目標]****，然後選取 [新增目標二進位檔]****。 在 [新增目標二進位檔]**** 對話方塊中，找到二進位檔，然後按一下 [開啟]****。
 
-3. 在 [效能總管] 工具列的 [方法] 清單中，選取 [檢測]。
+3. 在 [效能總管]**** 工具列的 [方法]**** 清單中，選取 [檢測]****。
 
-4. 按一下 [啟動並啟用分析]。
+4. 按一下 [啟動並啟用分析]****。
 
-    分析工具會檢測和執行二進位檔，並建立效能報表檔案。 效能報表檔案會出現在 [效能總管] 的 [報表] 節點中。
+    分析工具會檢測和執行二進位檔，並建立效能報表檔案。 效能報表檔案會出現在 [效能總管]**** 的 [報表]**** 節點中。
 
 5. 開啟產生的效能報表檔案。
 
@@ -147,9 +147,9 @@ DataCollection.CurrentId);
 
      **VsPefCLREnv /traceon**
 
-3. 鍵入下列命令：**VSInstr \<檔案名稱>.exe**
+3. 輸入下列命令：**VSInstr \<filename> .exe**
 
-4. 鍵入下列命令：**VSPerfCmd /start:trace /output:\<檔案名稱>.vsp**
+4. 輸入下列命令：**>vsperfcmd/start： trace/output： \<filename> .vsp**
 
 5. 鍵入下列命令：**VSPerfCmd /globaloff**
 
@@ -157,13 +157,13 @@ DataCollection.CurrentId);
 
 7. 鍵入下列命令：**VSPerfCmd /shutdown**
 
-8. 鍵入下列命令：**VSPerfReport /calltrace:\<檔案名稱>.vsp**
+8. 輸入下列命令：**VSPerfReport/calltrace： \<filename> .vsp**
 
      在目前目錄中，會使用產生的效能資料來建立 .csv 檔案。
 
 ## <a name="see-also"></a>另請參閱
 
 - [程式碼剖析工具](/previous-versions/ms242704(v=vs.140))
-- [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio Profiler API 參考 (原生) ](../profiling/visual-studio-profiler-api-reference-native.md)
 - [快速入門](../profiling/getting-started-with-performance-tools.md)
-- [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)
+- [從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

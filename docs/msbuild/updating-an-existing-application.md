@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c141d1e35db1e5ce334606b255d99ce2c0afc29b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184025"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>MSBuild 15 的現有應用程式更新
@@ -65,7 +65,7 @@ MSBuild 套件的主要和次要版本，必須小於或等於您要支援的 Vi
 
 #### <a name="binding-redirects"></a>繫結重新導向
 
-參考 Microsoft. Build. 定位器套件，以確保您的應用程式會自動使用所需的系結重新導向至版本15.1.0.0。 此版本的系結重新導向支援 MSBuild 15 和 MSBuild 16。
+參考 Microsoft. 定位器套件，以確保您的應用程式會自動使用必要的系結重新導向至版本15.1.0.0。 此版本的系結重新導向支援 MSBuild 15 和 MSBuild 16。
 
 ### <a name="ensure-output-is-clean"></a>確定輸出是乾淨的
 
@@ -86,7 +86,7 @@ MSBuild 套件的主要和次要版本，必須小於或等於您要支援的 Vi
 ### <a name="register-instance-before-calling-msbuild"></a>註冊執行個體，然後呼叫 MSBuild
 
 > [!IMPORTANT]
-> 您無法 `Microsoft.Build` 在呼叫 MSBuildLocator 的方法中參考任何 MSBuild 類型（來自命名空間）。 例如，您無法執行下列動作：
+> 您無法 `Microsoft.Build` 在呼叫 MSBuildLocator 的方法中，從命名空間) 參考任何 MSBuild 類型 (。 例如，您不能這樣做：
 >
 > ```csharp
 > void ThisWillFail()

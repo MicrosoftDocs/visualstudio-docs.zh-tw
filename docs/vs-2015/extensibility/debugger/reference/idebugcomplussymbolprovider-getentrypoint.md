@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetEntryPoint |Microsoft Docs
+title: IDebugComPlusSymbolProvider：： GetEntryPoint |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b6f7e1c588c18f06e8be19d506d5f2b676a56056
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194761"
 ---
 # <a name="idebugcomplussymbolprovidergetentrypoint"></a>IDebugComPlusSymbolProvider::GetEntryPoint
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取應用程式進入點。  
+抓取應用程式進入點。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,19 +43,19 @@ int GetEntryPoint(
   
 #### <a name="parameters"></a>參數  
  `ulAppDomainID`  
- [in]應用程式定義域的識別項。  
+ 在應用程式域的識別碼。  
   
  `guidModule`  
- [in]模組的唯一識別碼。  
+ 在模組的唯一識別碼。  
   
  `ppAddress`  
- [out]傳回所代表的進入點[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。  
+ 擴展傳回 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 介面所代表的進入點。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
+ 下列範例示範如何針對公開[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbolProvider**物件，執行這個方法。  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetEntryPoint(  

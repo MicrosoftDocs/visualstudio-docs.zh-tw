@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3 |微軟文件
+title: IDebugCoreServer3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d110e66e937249fdee34f424d4f68a9b914113d5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732815"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
-此介面允許訪問有關進程運行中的伺服器的資訊。
+這個介面可讓您存取執行進程之伺服器的相關資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -28,35 +28,35 @@ ms.locfileid: "80732815"
 IDebugCoreServer3 : IDebugCoreServer2
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 可視化工作室實現此介面。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ Visual Studio 會執行這個介面。
 
-## <a name="notes-for-callers"></a>通話備註
- 使用[查詢介面](/cpp/atl/queryinterface)從[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)介面獲取此介面。 對[GetServer 的](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)調用也可以返回此介面。 此介面最常由自訂埠供應商用於在伺服器上啟動程式(本地或遠端)。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ 使用 [QueryInterface](/cpp/atl/queryinterface) 從 [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) 介面取得這個介面。 對 [teamfoundationserverfactory.getserver](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) 的呼叫也可以傳回這個介面。 自訂埠供應商最常使用此介面，在伺服器上啟動程式 (本機或遠端) 。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 除了[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)介面上的方法外,此介面還實現了以下方法:
+ 除了 [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) 介面上的方法，這個介面也會執行下列方法：
 
 |方法|描述|
 |------------|-----------------|
-|[取得伺服器名稱](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)|檢索伺服器的名稱。|
-|[GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)|檢索伺服器名稱的友好版本|
-|[EnableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-enableautoattach.md)|告訴特定的調試引擎在這些進程啟動時自動附加到進程。|
-|[DiagnoseWebDebuggingError](../../../extensibility/debugger/reference/idebugcoreserver3-diagnosewebdebuggingerror.md)|自動附加失敗時檢索特定的錯誤代碼。|
-|[CreateInstanceInServer](../../../extensibility/debugger/reference/idebugcoreserver3-createinstanceinserver.md)|在伺服器上創建調試引擎的實例。|
-|[QueryIsLocal](../../../extensibility/debugger/reference/idebugcoreserver3-queryislocal.md)|檢索指示伺服器是否與調用方位於同一台電腦上的標記。|
-|[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)|檢索指示用於與伺服器通信的協議的值。|
-|[DisableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-disableautoattach.md)|禁用此伺服器知道的所有調試引擎的所有自動附加設置。|
+|[GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)|抓取伺服器的名稱。|
+|[GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)|抓取伺服器名稱的易記版本|
+|[EnableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-enableautoattach.md)|告知特定的偵錯工具引擎在這些處理常式啟動時自動附加至進程。|
+|[DiagnoseWebDebuggingError](../../../extensibility/debugger/reference/idebugcoreserver3-diagnosewebdebuggingerror.md)|當自動附加失敗時，會抓取特定的錯誤碼。|
+|[CreateInstanceInServer](../../../extensibility/debugger/reference/idebugcoreserver3-createinstanceinserver.md)|在伺服器上建立 debug 引擎的實例。|
+|[QueryIsLocal](../../../extensibility/debugger/reference/idebugcoreserver3-queryislocal.md)|抓取旗標，指出伺服器是否與呼叫端位於同一部電腦上。|
+|[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)|抓取值，指出用來與伺服器通訊的通訊協定。|
+|[DisableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-disableautoattach.md)|針對此伺服器所知道的所有偵錯工具引擎停用所有自動附加設定。|
 
 ## <a name="remarks"></a>備註
- 自定義埠供應商在調用[事件](../../../extensibility/debugger/reference/idebugportevents2-event.md)時接收[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)介面。 可以從`IDebugCoreServer3`該介面獲取介面。
+ 自訂埠供應商會在呼叫[事件](../../../extensibility/debugger/reference/idebugportevents2-event.md)時收到[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)介面。 您 `IDebugCoreServer3` 可以從該介面取得介面。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

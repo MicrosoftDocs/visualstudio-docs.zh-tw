@@ -12,31 +12,31 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 08bb0a296daca0de1c02b905a75fb10ce05f254e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68206001"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 結構 (原始檔控制 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-原始檔控制封裝 SDK 提供的指導方針建立 VSPackage，允許將他或她原始檔控制功能與原始檔控制實施者[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]環境。 VSPackage 是 COM 元件，通常會視需要而載入[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]及其登錄項目中的封裝會通告服務為基礎的整合式的開發環境 (IDE)。 每個 VSPackage 必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>。 VSPackage 通常會使用所提供的服務[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE 並提供其本身的某些服務。  
+原始檔控制封裝 SDK 提供建立 VSPackage 的指導方針，可讓原始檔控制實施者將其原始檔控制功能與環境進行整合 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。 VSPackage 是一種 COM 元件，通常是由 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 整合式開發環境視需要載入 (IDE) 根據封裝在其登錄專案中所公告的服務。 每個 VSPackage 都必須執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> 。 VSPackage 通常會取用 IDE 所提供的服務 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ，並這個本身的一些服務。  
   
- VSPackage 會宣告其功能表項目，並建立透過.vsct 檔的預設項目狀態。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 會顯示在此狀態的功能表項目直到載入 VSPackage。 接著，VSPackage 實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>呼叫方法來啟用或停用功能表項目。  
+ VSPackage 會宣告其功能表項目，並透過 .vsct 檔案建立預設專案狀態。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE 會顯示處於此狀態的功能表項目，直到載入 VSPackage 為止。 接著，會呼叫方法的 VSPackage 執行， <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 以啟用或停用功能表項目。  
   
 ## <a name="source-control-package-characteristics"></a>原始檔控制封裝特性  
- 原始檔控制 VSPackage 深度整合到[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
+ 原始檔控制 VSPackage 已緊密整合至 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。  
   
- VSPackage 語意包括：  
+ VSPackage 語義包括：  
   
-- 因為 VSPackage 實作介面 (`IVsPackage`介面)  
+- 藉由 VSPackage 介面 (介面所執行的介面 `IVsPackage`)   
   
-- UI 命令實作 (.vsct 檔並實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面)  
+- UI 命令執行 ( .vsct 檔案和介面的執行 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>)   
   
-- 使用 VSPackage 註冊[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
+- 使用註冊 VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。  
   
-  原始檔控制 VSPackage 必須與這些其他[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]實體：  
+  原始檔控制 VSPackage 必須與下列其他 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 實體通訊：  
   
 - 專案  
   
@@ -44,11 +44,11 @@ ms.locfileid: "68206001"
   
 - 方案  
   
-- 視窗  
+- Windows  
   
-- 執行中的文件表格  
+- 執行中的檔資料表  
   
-### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Visual Studio 環境服務使用  
+### <a name="visual-studio-environment-services-that-may-be-consumed"></a>可能耗用的 Visual Studio 環境服務  
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>  
@@ -65,15 +65,15 @@ ms.locfileid: "68206001"
   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>  
   
-### <a name="vsip-interfaces-implemented-and-called"></a>VSIP 介面實作，並呼叫  
- 原始檔控制套件的 VSPackage，且因此可直接與其他已向的 Vspackage 中互動[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 為了提供原始檔控制功能的完整範圍，原始檔控制 VSPackage 可以處理專案或殼層所提供的介面。  
+### <a name="vsip-interfaces-implemented-and-called"></a>執行並呼叫 VSIP 介面  
+ 原始檔控制封裝是 VSPackage，因此可以直接與向註冊的其他 Vspackage 互動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。 為了提供原始檔控制功能的完整廣度，原始檔控制 VSPackage 可以處理專案或 shell 所提供的介面。  
   
- 每個專案中的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>中的專案被視為[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE。 不過，此介面不特製化足夠用於原始檔控制。 應該是來源底下的專案控制實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>。 這個介面是由原始檔控制 VSPackage 來查詢其內容的專案，並提供它圖像 （glyph） 和繫結資訊 （所需的資訊來建立的伺服器位置與專案下的磁碟位置之間的連線原始檔控制）。  
+ 中的每個專案 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 都必須執行， <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3> 才能辨識為 IDE 內的專案 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。 不過，這個介面並非專門用於原始檔控制。 預期在原始檔控制下的專案會執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> 。 原始檔控制 VSPackage 會使用此介面來查詢專案的內容，並提供它的圖像和系結資訊 (所需的資訊，以建立伺服器位置與原始檔控制) 之專案的磁片位置之間的連接。  
   
- 原始檔控制 VSPackage 實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>，這可讓專案以註冊其本身的原始檔控制，並擷取其狀態的圖像 （glyph）。  
+ 原始檔控制 VSPackage 會執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> ，進而允許專案自行註冊原始檔控制，並取得其狀態圖像。  
   
- 原始檔控制 VSPackage 必須考量的介面的完整清單，請參閱 <<c0> [ 相關的服務與介面](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)。  
+ 如需原始檔控制 VSPackage 必須考慮的介面完整清單，請參閱 [相關的服務和介面](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [設計元素](../../extensibility/internals/source-control-vspackage-design-elements.md)   
+ [設計項目](../../extensibility/internals/source-control-vspackage-design-elements.md)   
  [相關的服務和介面](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)

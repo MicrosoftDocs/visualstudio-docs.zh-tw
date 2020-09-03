@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolsForAcceleratorPointerTag |Microsoft Docs
+title: IDiaSession：： findSymbolsForAcceleratorPointerTag |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 55e69ae6380faa58d2b63074734cfe3c065759e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196349"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-父項加速器虛設常式的函式中傳回指定的標記值會對應到變數的符號的列舉。  
+傳回指定之標記值在父快速鍵對應存根函式中對應之變數的符號列舉。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,16 +35,16 @@ HRESULT findSymbolsForAcceleratorPointerTag ( 
   
 #### <a name="parameters"></a>參數  
  `parent`  
- [in]對應至要搜尋的加速器虛設常式函數 IDiaSymbol。  
+ 在對應至要搜尋之快速鍵對應函式的 IDiaSymbol。  
   
  `tagValue`  
- [in]指標的標記值。  
+ 在指標標記值。  
   
  `ppResult`  
- [out]指標`IDiaEnumSymbols`初始化與結果的介面指標。  
+ 擴展以 `IDiaEnumSymbols` 結果初始化之介面指標的指標。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

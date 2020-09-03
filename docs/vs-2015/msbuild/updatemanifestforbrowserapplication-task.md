@@ -20,28 +20,28 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6dffa98a8abbf74bd6eee8761d91f09a7c022666
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68740225"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-會執行 <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> 工作，以便在建置 [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] 專案時，將 **\<hostInBrowser />** 項目新增至應用程式資訊清單 (*projectname*.exe.manifest)。  
+工作 <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> 會在建立專案時，執行以將 **\<hostInBrowser />** 專案新增至*projectname*應用程式資訊清單中 (的專案資訊清單) 。 [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)]  
   
 ## <a name="task-parameters"></a>工作參數  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
-|`ApplicationManifest`|必要的 **ITaskItem[]** 參數。<br /><br /> 指定要加入 `<hostInBrowser />` 項目的應用程式資訊清單檔案的路徑和名稱。|  
-|`HostInBrowser`|必要的 **Boolean** 參數。<br /><br /> 指定是否要修改應用程式資訊清單以包含 **\<hostInBrowser />** 元素。 若為 **true**， **\<entryPoint />** 元素中會包含新的 `<`**hostInBrowser />** 元素。 請注意，元素的包含是累計的：如果 **\<hostInBrowser />** 元素已經存在，就不會移除或覆寫它。 相反地，會建立額外的 **\<hostInBrowser />** 元素。 若為 **false**，則不會修改應用程式資訊清單。|  
+|`ApplicationManifest`|必要的 **ITaskItem []** 參數。<br /><br /> 指定要加入 `<hostInBrowser />` 項目的應用程式資訊清單檔案的路徑和名稱。|  
+|`HostInBrowser`|必要的 **Boolean** 參數。<br /><br /> 指定是否要修改應用程式資訊清單以包含 **\<hostInBrowser />** 元素。 若**為 true**，則表示新 `<` 的 **>hostinbrowser/>** 專案包含在 **\<entryPoint />** 元素中。 請注意，元素包含是累計的：如果專案 **\<hostInBrowser />** 已經存在，則不會移除或覆寫它。 相反地， **\<hostInBrowser />** 會建立額外的元素。 若為 **false**，則不會修改應用程式資訊清單。|  
   
 ## <a name="remarks"></a>備註  
  [!INCLUDE[TLA2#tla_xbap#plural](../includes/tla2sharptla-xbapsharpplural-md.md)] 是利用 [!INCLUDE[TLA#tla_clickonce](../includes/tlasharptla-clickonce-md.md)] 部署執行，因此，必須使用支援的部署和應用程式資訊清單加以發行。 [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] 使用 [GenerateApplicationManifest](/dotnet/api/microsoft.build.tasks.generateapplicationmanifest) 工作來產生應用程式資訊清單。  
   
- 接著，若要設定從瀏覽器裝載應用程式，必須將其他的 **\<hostInBrowser />** 元素加入至應用程式資訊清單，如下列範例所述：  
+ 然後，若要設定從瀏覽器裝載的應用程式，必須將額外的元素 **\<hostInBrowser />** 加入至應用程式資訊清單，如下列範例所示：  
   
 ```  
 <!--MyXBAPApplication.exe.manifest-->  
@@ -80,5 +80,5 @@ ms.locfileid: "68740225"
  [工作參考](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)   
- [建置 WPF 應用程式 (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [ (WPF) 建立 WPF 應用程式 ](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [WPF XAML 瀏覽器應用程式概觀](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)

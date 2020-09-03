@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: beeed84db240ecf57ca18dd9aef08622f14b06fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161346"
 ---
 # <a name="special-characters-to-escape"></a>要逸出的特殊字元
@@ -46,5 +46,5 @@ ms.locfileid: "68161346"
 |*|星號，在項目的 Include/Exclude 區段中描述檔案規格時為萬用字元。|  
   
 ## <a name="see-also"></a>另請參閱  
- [如何：在 MSBuild 中逸出特殊字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
+ [如何：在 MSBuild 中 Escape 特殊字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)

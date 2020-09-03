@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20ec2a10210517f291a3bb21db9e1689942786c9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184272"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>逐步解說：從頭開始建立 MSBuild 專案檔
 
 以 .NET Framework 為目標的程式設計語言，使用 MSBuild 專案檔描述及控制應用程式建置流程。 當您使用 Visual Studio 建立 MSBuild 專案檔時，系統會自動將適當的 XML 加入該檔案。 不過，您可能會發現，了解 XML 的組織方式，以及您如何對其進行變更以控制組建會非常有用。
 
- 如需為 c + + 專案建立專案檔的詳細資訊，請參閱[MSBuild （c + +）](/cpp/build/msbuild-visual-cpp)。
+ 如需有關為 c + + 專案建立專案檔的詳細資訊，請參閱 [MSBuild (c + +) ](/cpp/build/msbuild-visual-cpp)。
 
  此逐步解說顯示如何僅使用文字編輯器以累加方式建立基本專案檔。 此逐步解說遵循下列步驟：
 
@@ -45,19 +45,19 @@ ms.locfileid: "84184272"
 
 此逐步解說會顯示如何在命令提示字元處建置專案，並檢查結果。 如需有關 MSBuild，以及如何在命令提示字元中執行 MSBuild 的詳細資訊，請參閱[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。
 
-若要完成此逐步解說，您必須安裝 Visual Studio，因為它包含了逐步解說所需的 MSBuild 和 Visual c # 編譯器。
+若要完成本逐步解說，您必須安裝 Visual Studio，因為它包含了逐步解說所需的 MSBuild 和 Visual c # 編譯器。
 
 ## <a name="extend-the-path"></a>擴充路徑
 
-在您可以使用 MSBuild 之前，您必須擴充 PATH 環境變數，以包含所有必要的工具。 您可以使用**Visual Studio 的開發人員命令提示字元**。 在 windows 工作列的 [搜尋] 方塊中搜尋 Windows 10。 若要在一般命令提示字元或腳本環境中設定環境，請在 Visual Studio 安裝的*Common7/Tools*子資料夾中執行*vsdevcmd.bat。*
+在您可以使用 MSBuild 之前，您必須擴充 PATH 環境變數，以包含所有必要的工具。 您可以使用 **Visual Studio 的開發人員命令提示字元**。 在 Windows 工作列的 [搜尋] 方塊中，于 Windows 10 上搜尋。 若要在一般命令提示字元或腳本環境中設定環境，請在 Visual Studio 安裝的*Common7/Tools*子資料夾中執行*VSDevCmd.bat* 。
 
 ## <a name="create-a-minimal-application"></a>建立最小應用程式
 
- 本節說明如何使用文字編輯器建立最基本的 c # 應用程式來源檔案。
+ 本節說明如何使用文字編輯器來建立基本的 c # 應用程式原始程式檔。
 
 1. 在命令提示字元中，流覽至您要建立應用程式的資料夾，例如*\My Documents \\ *或*\Desktop \\ *。
 
-2. 輸入**Md HelloWorld**以建立名為*\HelloWorld \\ *的子資料夾。
+2. 輸入**Md HelloWorld**來建立名為*\HelloWorld \\ *的子資料夾。
 
 3. 輸入 **cd HelloWorld**，以變更至新的資料夾。
 
@@ -79,7 +79,7 @@ ms.locfileid: "84184272"
     }
     ```
 
-5. 儲存此原始程式碼檔，並將其命名為*Helloworld.cs*。
+5. 儲存此原始程式碼檔案，並將它命名為 *Helloworld.cs*。
 
 6. 在命令提示字元中輸入 **csc helloworld.cs**，以建置應用程式。
 
@@ -135,7 +135,7 @@ ms.locfileid: "84184272"
     <Csc Sources="@(Compile)"/>
     ```
 
-5. 儲存此專案檔，並將它命名為*Helloworld*。
+5. 儲存這個專案檔，並將它命名為 *Helloworld .csproj*。
 
 您的最小專案檔應該類似下列程式碼：
 
@@ -150,10 +150,10 @@ ms.locfileid: "84184272"
 </Project>
 ```
 
-建置目標中的工作會循序執行。 在此情況下，Visual C# 編譯器 `Csc` 工作是唯一的工作。 它會預期要編譯的原始程式檔清單，由 `Compile` 項目的值提供。 此 `Compile` 專案只會參考一個原始檔*Helloworld.cs*。
+建置目標中的工作會循序執行。 在此情況下，Visual C# 編譯器 `Csc` 工作是唯一的工作。 它會預期要編譯的原始程式檔清單，由 `Compile` 項目的值提供。 `Compile`專案只會參考一個原始檔*Helloworld.cs*。
 
 > [!NOTE]
-> 在 item 元素中，您可以使用星號萬用字元（ \* ）來參考副檔名為 *.cs*的所有檔案，如下所示：
+> 在 item 專案中，您可以使用星號萬用字元 (\*) 來參考副檔名為 *.cs* 的所有檔案，如下所示：
 >
 > ```xml
 > <Compile Include="*.cs" />
@@ -163,7 +163,7 @@ ms.locfileid: "84184272"
 
  現在，若要建置應用程式，請使用您剛剛建立的專案檔。
 
-1. 在命令提示字元中，輸入**msbuild helloworld. .csproj-t:Build**。
+1. 在命令提示字元中，輸入 **msbuild helloworld .csproj-t:Build**。
 
      叫用 Visual C# 編譯器來建立 Helloworld 應用程式，即可建置 Helloworld 專案檔的建置目標。
 
@@ -250,7 +250,7 @@ ms.locfileid: "84184272"
 
  現在，您可以使用專案檔建置應用程式，您在該檔案中使用建置屬性來指定輸出資料夾和應用程式名稱。
 
-1. 在命令提示字元中，輸入**msbuild helloworld. .csproj-t:Build**。
+1. 在命令提示字元中，輸入 **msbuild helloworld .csproj-t:Build**。
 
      這會建立*\bin \\ *資料夾，然後叫用 Visual c # 編譯器來建立*MSBuildSample*應用程式，並將它放在*\bin \\ *資料夾中。
 
@@ -327,9 +327,9 @@ ms.locfileid: "84184272"
 
 ### <a name="to-test-the-build-targets"></a>測試建置目標
 
-1. 在命令提示字元中，輸入**msbuild helloworld. .csproj-p:AssemblyName = 問候語**。
+1. 在命令提示字元中，輸入 **msbuild helloworld .csproj-p:AssemblyName = 問候語**。
 
-     由於您未使用 **-t**參數來明確設定目標，因此 MSBuild 會執行預設的組建目標。 **-P**參數會覆寫 `AssemblyName` 屬性，並為其提供新的值 `Greetings` 。 這會導致在*\bin \\ *資料夾中建立新的應用*程式。*
+     因為您未使用 **-t** 參數明確地設定目標，因此 MSBuild 會執行預設的組建目標。 **-P**參數會覆寫 `AssemblyName` 屬性，並為其提供新值 `Greetings` 。 這會導致在*\bin \\ *資料夾中建立新的應用程式*Greetings.exe*。
 
 2. 若要確認*\bin \\ *資料夾同時包含*MSBuildSample*應用程式和新的*問候語*應用程式，請輸入**dir Bin**。
 
@@ -337,11 +337,11 @@ ms.locfileid: "84184272"
 
      此時應該會顯示 [Hello, world!]**** 訊息。
 
-4. 輸入**msbuild helloworld. .csproj-t:clean**來刪除 MSBuildSample 應用程式。
+4. 輸入 **msbuild helloworld t:clean**，以刪除 MSBuildSample 應用程式。
 
      這會執行 Clean 工作，以移除具有預設 `AssemblyName` 屬性值 `MSBuildSample` 的應用程式。
 
-5. 輸入**msbuild helloworld. .csproj-t:clean-p:AssemblyName = 問候語**來刪除問候語應用程式。
+5. 輸入 msbuild helloworld 來刪除問候語應用程式 **。 .csproj-t:clean-p:AssemblyName = 問候語**。
 
      這會執行 Clean 工作，以移除具有指定 **AssemblyName** 屬性值 `Greetings` 的應用程式。
 
@@ -349,7 +349,7 @@ ms.locfileid: "84184272"
 
 7. 輸入 **msbuild**。
 
-     雖然沒有指定專案檔，但 MSBuild 會建立*helloworld .csproj*檔案，因為目前的資料夾中只有一個專案檔。 這會導致在*\bin \\ *資料夾中建立*MSBuildSample*應用程式。
+     雖然未指定專案檔，但 MSBuild 會建立 *helloworld .csproj* 檔案，因為目前的資料夾中只有一個專案檔。 這會導致在*\bin \\ *資料夾中建立*MSBuildSample*應用程式。
 
      若要確認*\bin \\ *資料夾包含*MSBuildSample*應用程式，請輸入**dir Bin**。
 
@@ -376,9 +376,9 @@ ms.locfileid: "84184272"
     </Target>
     ```
 
-2. 在命令提示字元中輸入**msbuild-v:d** ，以測試組建目標。
+2. 在命令提示字元中輸入 **msbuild-v:d** ，以測試組建目標。
 
-     請記住， *helloworld*是預設的專案檔案，而該組建是預設的目標。
+     請記住， *helloworld* 是預設的專案檔案，而該組建是預設的目標。
 
      **-V:d**參數會指定組建進程的詳細描述。
 
@@ -394,7 +394,7 @@ ms.locfileid: "84184272"
 
 ## <a name="c-example"></a>C# 範例
 
-下列範例顯示的專案檔會編譯 c # 應用程式，並記錄包含輸出檔案名的訊息。
+下列範例顯示的專案檔會編譯 c # 應用程式，並記錄包含輸出檔名稱的訊息。
 
 ### <a name="code"></a>程式碼
 
@@ -431,7 +431,7 @@ ms.locfileid: "84184272"
 
 ## <a name="visual-basic-example"></a>Visual Basic 範例
 
-下列範例顯示的專案檔會編譯 Visual Basic 應用程式，並記錄包含輸出檔案名的訊息。
+下列範例顯示的專案檔會編譯 Visual Basic 的應用程式，並記錄包含輸出檔名稱的訊息。
 
 ### <a name="code"></a>程式碼
 
@@ -466,7 +466,7 @@ ms.locfileid: "84184272"
 </Project>
 ```
 
-## <a name="whats-next"></a>下一步
+## <a name="whats-next"></a>接下來要做什麼？
 
  Visual Studio 可以自動執行本逐步解說中提及的大量工作。 若要了解如何使用 Visual Studio 建立、編輯、建置及測試 MSBuild 專案檔，請參閱[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。
 
