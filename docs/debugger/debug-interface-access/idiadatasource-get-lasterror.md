@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 231c6b082f7a641ee78d10003d544c3fb9644c1c
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468522"
 ---
 # <a name="idiadatasourceget_lasterror"></a>IDiaDataSource::get_lastError
-抓取上一個載入錯誤的檔案名。
+抓取最後載入錯誤的檔案名。
 
 ## <a name="syntax"></a>語法
 
@@ -33,7 +33,7 @@ HRESULT get_lastError (
 #### <a name="parameters"></a>參數
  pRetVal
 
-脫銷傳回字串，其中包含與上次載入錯誤相關聯的 .pdb 檔案名。
+擴展傳回字串，其中包含與上次載入錯誤相關聯的 .pdb 檔案名。
 
 ## <a name="return-value"></a>傳回值
  傳回載入作業所造成的最後一個錯誤碼。 `E_INVALIDARG`如果參數為，則傳回 `pRetVal` `NULL` 。

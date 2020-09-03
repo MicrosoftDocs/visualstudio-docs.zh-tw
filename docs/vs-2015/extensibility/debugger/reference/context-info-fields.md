@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO_FIELDS | Microsoft Docs
+title: CONTEXT_INFO_FIELDS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fbfa24733644067b3f79fc7b6e8450df2130116d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179960"
 ---
-# <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
+# <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定要擷取記憶體內容的相關資訊。  
+指定要對記憶體內容取得哪些資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -53,38 +53,38 @@ public enum enum_CONTEXT_INFO_FIELDS {
   
 ## <a name="members"></a>成員  
  CIF_MODULEURL  
- 初始化/使用`bstrModuleUrl`欄位[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)結構。  
+ 初始化/使用 `bstrModuleUrl` [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 結構的欄位。  
   
  CIF_FUNCTION  
- 初始化/使用`bstrFunction`欄位`CONTEXT_INFO`結構。  
+ 初始化/使用 `bstrFunction` 結構的欄位 `CONTEXT_INFO` 。  
   
  CIF_FUNCTIONOFFSET  
- 初始化/使用`posFunctionOffset`欄位`CONTEXT_INFO`結構。  
+ 初始化/使用 `posFunctionOffset` 結構的欄位 `CONTEXT_INFO` 。  
   
  CIF_ADDRESS  
- 初始化/使用`bstrAddress`欄位`CONTEXT_INFO`結構。  
+ 初始化/使用 `bstrAddress` 結構的欄位 `CONTEXT_INFO` 。  
   
  CIF_ADDRESSOFFSET  
- 初始化/使用`bstrAddressOffset`欄位`CONTEXT_INFO`結構。  
+ 初始化/使用 `bstrAddressOffset` 結構的欄位 `CONTEXT_INFO` 。  
   
  CIF_ALLFIELDS  
- 初始化/使用的所有欄位`CONTEXT_INFO`結構。  
+ 初始化/使用結構的所有欄位 `CONTEXT_INFO` 。  
   
 ## <a name="remarks"></a>備註  
- 這些值會傳遞的參數[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)方法，以表示哪些欄位[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)結構會進行初始化。  
+ 這些值會以參數傳遞給 [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) 方法，以指出要初始化 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 結構的哪些欄位。  
   
- 這些旗標也可用來表示欄位`CONTEXT_INFO`結構會使用和有效時，會傳回這個結構。  
+ 這些旗標也可用來指出 `CONTEXT_INFO` 當傳回結構時，所使用的結構欄位和有效的欄位。  
   
- 這些值可能會與位元 OR 運算結合。  
+ 這些值可能會與位 OR 合併。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)

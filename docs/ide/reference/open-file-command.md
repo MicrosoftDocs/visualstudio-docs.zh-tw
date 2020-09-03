@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 50e29e3182a19c9f3a667d41725327110b415fd0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591511"
 ---
 # <a name="open-file-command"></a>開啟檔案命令
@@ -65,8 +65,8 @@ File.OpenFile filename [/e:editorname]
 
 ## <a name="see-also"></a>另請參閱
 
-- [視覺化工作室命令](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
 - [即時運算視窗](../../ide/reference/immediate-window.md)
-- [查找/命令框](../../ide/find-command-box.md)
+- [尋找/命令方塊](../../ide/find-command-box.md)
 - [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

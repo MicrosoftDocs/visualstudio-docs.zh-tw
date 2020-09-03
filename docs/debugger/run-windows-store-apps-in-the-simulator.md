@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 1c208e435e63891c71fe47ebd64c5fe1307e0c82
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348137"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>在模擬器中執行 UWP 應用程式
 
-UWP 應用程式的 Visual Studio 模擬器是用來模擬 UWP 應用程式的桌面應用程式。 一般來說，您會想要在本機電腦、已連線的裝置或遠端電腦上進行調試。 不過，在某些情況下，您可能會想要使用 Visual Studio 模擬器來模擬不同的實體螢幕大小和解析度。 您也可以模擬常見的觸控和旋轉事件，並模擬網路連接屬性。
+適用于 UWP 應用程式的 Visual Studio 模擬器是可模擬 UWP 應用程式的桌面應用程式。 一般而言，您會想要在本機電腦、連線的裝置或遠端電腦上進行調試。 不過，在某些情況下，您可能會想要使用 Visual Studio 模擬器來模擬不同的實體螢幕大小和解析度。 您也可以模擬一般觸控和旋轉事件，以及模擬網路連接屬性。
 
-模擬器提供的環境可讓您設計、開發、偵測及測試 UWP 應用程式。 不過，在您將應用程式發佈至 Microsoft Store 之前，您應該先在實際裝置上測試您的應用程式。
+模擬器會提供一個環境，讓您可以在其中設計、開發、偵測及測試 UWP 應用程式。 不過，在您將應用程式發佈至 Microsoft Store 之前，您應該先在實際裝置上測試您的應用程式。
 
 UWP 應用程式的 Visual Studio 模擬器不會在本機電腦的隔離環境中執行。 因此，發生在模擬器中的錯誤，例如無法修復的全系統錯誤，也會影響到整部電腦。
 
@@ -33,7 +33,7 @@ UWP 應用程式的 Visual Studio 模擬器不會在本機電腦的隔離環境�
 
 ## <a name="set-the-simulator-as-the-target"></a><a name="BKMK_Set_the_simulator_as_the_target"></a> 將模擬器設定為目標
 
-若要在模擬器中執行您的 UWP 應用程式，**請從調試**程式 [**標準**] 工具列上 [**開始調試**程式] 按鈕旁邊的下拉式清單中，選取 [模擬器]。 只有當您的應用程式的**目標平臺最低版本**小於或等於開發電腦上的作業系統時，才可以使用此選項。
+若要在模擬器中執行 UWP 應用程式，**請從調試**程式 [**標準**] 工具列上 [**開始調試**程式] 按鈕旁的下拉式清單中選取 [模擬器]。 只有當您的應用程式的 **目標平臺最低版本** 小於或等於開發電腦上的作業系統時，才能使用此選項。
 
 ![在模擬器中執行](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")
 
@@ -41,9 +41,9 @@ UWP 應用程式的 Visual Studio 模擬器不會在本機電腦的隔離環境�
 
 您可以選擇下列互動模式：
 
-- ![滑鼠模式按鈕](../debugger/media/simulator_mousemodebtn.png "SIMULATOR_MouseModeBtn")滑鼠模式：將互動模式設定為滑鼠手勢。 滑鼠動作包括按一下、按兩下和拖曳。
+- ![滑鼠模式按鈕](../debugger/media/simulator_mousemodebtn.png "SIMULATOR_MouseModeBtn") 滑鼠模式：將互動模式設定為滑鼠手勢。 滑鼠動作包括按一下、按兩下和拖曳。
 
-- [![啟動觸控模擬] 按鈕](../debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn")啟動觸控模擬：將互動模式設定為單一手指的觸控手勢。 單指事件包括點選，拖曳和撥動。
+- ![啟動觸控模擬按鈕](../debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") 啟動觸控模擬：將互動模式設定為單一手指的觸控手勢。 單指事件包括點選，拖曳和撥動。
 
    ![模擬器單指目標](../debugger/media/simulator_onefinger.png "SIMULATOR_OneFinger")
    
@@ -57,7 +57,7 @@ UWP 應用程式的 Visual Studio 模擬器不會在本機電腦的隔離環境�
 
 將互動模式設定為兩指的縮小和放大手勢。
 
-![模擬器兩個手指目標](../debugger/media/simulator_twofinger.png)
+![模擬器雙指目標](../debugger/media/simulator_twofinger.png)
 
 雙目標圖示表示裝置螢幕上的兩指位置。
 
@@ -96,13 +96,13 @@ UWP 應用程式的 Visual Studio 模擬器不會在本機電腦的隔離環境�
 ## <a name="change-the-simulated-screen-size-and-resolution"></a><a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> 變更模擬的螢幕大小和解析度
  若要變更模擬的螢幕大小與解析度，請從調色盤上選擇 [變更解析度] **** 按鈕，並從清單中選擇新的大小與解析度。
 
- 螢幕大小和解析度列示為 *螢幕寬度英吋，像素 X 像素高度*。 請注意，螢幕大小和解析度都是模擬的。 模擬器上的位置座標會轉譯成選取的裝置大小和解析度。
+ 螢幕大小和解析度列示為 *螢幕寬度英吋，像素 X 像素高度*。 請注意，螢幕大小和解析度都是模擬的。 模擬器上的位置座標會轉譯為選取的裝置大小和解析度。
 
 > [!NOTE]
-> 您可以將點陣圖影像的已調整版本儲存在您的應用程式中，Windows 會載入目前比例的正確影像。 如需詳細資訊，請參閱[設計和 UI 簡介](/windows/uwp/layout/design-and-ui-intro)。 不過，如果您變更了模擬器解析度，因此 Windows 選擇了不同的影像來符合解析度，則您必須停止並重新開始偵錯工作階段，才能檢視新影像。
+> 您可以將點陣圖影像的已調整版本儲存在您的應用程式中，Windows 會載入目前比例的正確影像。 如需詳細資訊，請參閱 [設計和 UI 簡介](/windows/uwp/layout/design-and-ui-intro)。 不過，如果您變更了模擬器解析度，因此 Windows 選擇了不同的影像來符合解析度，則您必須停止並重新開始偵錯工作階段，才能檢視新影像。
 
-## <a name="capture-a-screenshot-of-your-app-for-submission-to-microsoft-store"></a><a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a>捕獲應用程式的螢幕擷取畫面以提交至 Microsoft Store
- 當您提交應用程式以 Microsoft Store 時，您必須包含應用程式的螢幕擷取畫面。
+## <a name="capture-a-screenshot-of-your-app-for-submission-to-microsoft-store"></a><a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> 捕捉您的應用程式的螢幕擷取畫面，以提交給 Microsoft Store
+ 當您將應用程式提交至 Microsoft Store 時，您必須包含應用程式的螢幕擷取畫面。
 
 > [!NOTE]
 > 螢幕擷取畫面會以模擬器的目前解析度儲存。 若要變更解析度，請選擇 [ **變更解析度** ] 按鈕。
@@ -137,7 +137,7 @@ UWP 應用程式的 Visual Studio 模擬器不會在本機電腦的隔離環境�
 
 7. 選擇 [設定屬性] **** ，透過觸發前景 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 事件和 [NetworkStateChange](/uwp/api/windows.applicationmodel.background.systemtrigger) 類型的背景 **SystemTrigger**來模擬網路屬性。
 
-如需管理網路連線的詳細資訊，請參閱：
+如需管理網路連接的詳細資訊，請參閱：
 
 [快速入門：管理計量付費網路費用限制](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
 
@@ -155,9 +155,9 @@ UWP 應用程式的 Visual Studio 模擬器不會在本機電腦的隔離環境�
 
 ## <a name="navigate-the-simulator-with-the-keyboard"></a><a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> 使用鍵盤巡覽模擬器
 
-您可以按**CTRL + ALT + 向上鍵**將焦點從模擬器視窗切換至模擬器工具列，以流覽模擬器工具列。 使用 **向上鍵** 和 **向下鍵** 可以在工具列按鈕之間移動。
+您可以按 **CTRL + ALT + 向上鍵** 流覽模擬器工具列，將焦點從模擬器視窗切換至模擬器工具列。 使用 **向上鍵** 和 **向下鍵** 可以在工具列按鈕之間移動。
 
-您可以按下**CTRL + ALT + F4**來關閉模擬器。
+您可以按 **CTRL + ALT + F4**來關閉模擬器。
 
 ## <a name="see-also"></a>另請參閱
 

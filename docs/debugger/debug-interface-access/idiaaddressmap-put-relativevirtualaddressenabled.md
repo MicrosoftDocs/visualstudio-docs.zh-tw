@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5a2e69bf6626cd11d82164a707c2611884b36411
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468557"
 ---
 # <a name="idiaaddressmapput_relativevirtualaddressenabled"></a>IDiaAddressMap::put_relativeVirtualAddressEnabled
-允許用戶端啟用或停用計算和使用相對虛擬位址（RVA）。
+允許用戶端啟用或停用相對虛擬位址 (RVA) 的計算和使用。
 
 ## <a name="syntax"></a>語法
 
@@ -36,14 +36,14 @@ HRESULT put_relativeVirtualAddressEnabled ( 
 在將設定為 `TRUE` ，以啟用或 `FALSE` 停用。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- DIA 介面所描述之 debug 物件的位址，以及可執行檔的影像基底，可以抓取為相對虛擬位址。
+ DIA 介面所描述的 debug 物件位址，以及可執行檔的映射基底，可以抓取為相對虛擬位址。
 
- 第一次從 PDB 檔案載入區段時，會啟用 Rva 的使用。 若要取得使用 Rva 的目前狀態，請呼叫[IDiaAddressMap：： get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)方法。
+ 從 PDB 檔案開始載入區段時，會啟用使用 Rva。 若要取得使用 Rva 的目前狀態，請呼叫 [IDiaAddressMap：： get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) 方法。
 
- `put_relativeVirtualAddress`成功呼叫[IDiaAddressMap：： set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)方法之後，必須呼叫方法來啟用 rva，以建立新的影像標頭。
+ 在 `put_relativeVirtualAddress` 成功呼叫 [IDiaAddressMap：： set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) 方法之後，必須呼叫方法來啟用 rva，以建立新的映射標頭。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

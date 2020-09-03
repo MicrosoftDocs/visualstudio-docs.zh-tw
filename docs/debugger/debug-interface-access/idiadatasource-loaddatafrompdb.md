@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 582b211b83ed519470100b7c5b47184c2256894f
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468494"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
-開啟並準備程式資料庫（.pdb）檔案做為 debug 資料來源。
+開啟並準備程式資料庫 ( .pdb) 檔案做為偵錯工具資料來源。
 
 ## <a name="syntax"></a>語法
 
@@ -36,23 +36,23 @@ pdbPath
 在.Pdb 檔案的路徑。
 
 ## <a name="return-value"></a>傳回值
-如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。 下表顯示這個方法的可能傳回值。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 下表顯示此方法可能傳回的值。
 
 |值|描述|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|無法開啟檔案，或判定檔案的格式無效。|
-|E_PDB_FORMAT|嘗試存取具有過時格式的檔案。|
+|E_PDB_FORMAT|嘗試存取已淘汰格式的檔案。|
 |E_INVALIDARG|無效的參數。|
-|E_UNEXPECTED|資料來源已準備就緒。|
+|E_UNEXPECTED|已經備妥資料來源。|
 
 ## <a name="remarks"></a>備註
 這個方法會直接從 .pdb 檔案載入調試資料。
 
-若要根據特定準則來驗證 .pdb 檔案，請使用[IDiaDataSource：： loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)方法。
+若要根據特定準則驗證 .pdb 檔案，請使用 [IDiaDataSource：： loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) 方法。
 
-若要取得資料載入進程（透過回呼機制）的存取權，請使用[IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。
+若要透過) 的回呼機制取得資料載入進程 (的存取權，請使用 [IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法。
 
-若要直接從記憶體載入 .pdb 檔案，請使用[IDiaDataSource：： loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)方法。
+若要直接從記憶體載入 .pdb 檔案，請使用 [IDiaDataSource：： loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) 方法。
 
 ## <a name="example"></a>範例
 

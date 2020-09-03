@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 89ab553fdbe75470853db4506261ab719061f10d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150627"
 ---
 # <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-候選.pdb 檔案開啟時呼叫。  
+在開啟候選 .pdb 檔案時呼叫。  
   
 ## <a name="syntax"></a>語法  
   
@@ -36,13 +36,13 @@ HRESULT NotifyOpenPDB ( 
   
 #### <a name="parameters"></a>參數  
  `pdbPath`  
- [in].Pdb 檔案的完整路徑。  
+ 在.Pdb 檔案的完整路徑。  
   
  `resultCode`  
- [in]表示成功的程式碼 (`S_OK`) 或失敗的負載套用至這個檔案。  
+ 在此程式碼表示套用至這個檔案的負載成功 (`S_OK`) 或失敗。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回碼通常會被忽略。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 通常會忽略傳回碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

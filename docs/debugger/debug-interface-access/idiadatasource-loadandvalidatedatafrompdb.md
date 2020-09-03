@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3e3a4b73cbbfe16cb87108c5f157dada135e71ee
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468536"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
-開啟並確認程式資料庫（.pdb）檔案符合提供的簽章資訊，並準備 .pdb 檔案做為偵錯工具資料來源。
+開啟並確認程式資料庫 ( .pdb) 檔與提供的簽章資訊相符，並將 .pdb 檔案準備為 debug 資料來源。
 
 ## <a name="syntax"></a>語法
 
@@ -40,36 +40,36 @@ HRESULT loadAndValidateDataFromPdb ( 
 
 `pcsig70`
 
-在要針對 .pdb 檔案簽章驗證的 GUID 簽章。 只有和更新版本中的 .pdb 檔案 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 具有 GUID 簽章。
+在要針對 .pdb 檔案簽章進行驗證的 GUID 簽章。 只有和更新版本中的 .pdb 檔案 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 有 GUID 簽章。
 
 `sig`
 
-在要針對 .pdb 檔案簽章驗證的32位簽章。
+在要針對 .pdb 檔案簽章進行驗證的32位簽章。
 
 `age`
 
-在要驗證的存留期值。 年齡不一定會對應到任何已知的時間值，而是用來判斷 .pdb 檔案是否與對應的 .exe 檔案不同步。
+在要驗證的存留期值。 年齡不一定會對應到任何已知的時間值，它是用來判斷 .pdb 檔案是否與對應的 .exe 檔案不同步。
 
 ## <a name="return-value"></a>傳回值
-如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。 下表顯示這個方法的可能傳回值。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 下表顯示此方法可能傳回的值。
 
 |值|描述|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|無法開啟檔案，或檔案的格式無效。|
-|E_PDB_FORMAT|嘗試存取具有過時格式的檔案。|
+|E_PDB_FORMAT|嘗試存取已淘汰格式的檔案。|
 |E_PDB_INVALID_SIG|簽章不相符。|
-|E_PDB_INVALID_AGE|年齡不相符。|
+|E_PDB_INVALID_AGE|Age 不符。|
 |E_INVALIDARG|無效的參數。|
-|E_UNEXPECTED|資料來源已準備就緒。|
+|E_UNEXPECTED|資料來源已經備妥。|
 
 ## <a name="remarks"></a>備註
-.Pdb 檔案同時包含簽章和 age 值。 這些值會在 .exe 或 .dll 檔案中複寫，以符合 .pdb 檔案。 準備資料來源之前，這個方法會驗證指定的 .pdb 檔案的簽章和年齡是否符合所提供的值。
+.Pdb 檔案同時包含簽章和存留期值。 這些值會複寫到與 .pdb 檔案相符的 .exe 或 .dll 檔案中。 準備資料來源之前，這個方法會驗證指定的 .pdb 檔案的簽章和存留期是否符合所提供的值。
 
-若要載入不具驗證的 .pdb 檔案，請使用[IDiaDataSource：： loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)方法。
+若要載入不含驗證的 .pdb 檔，請使用 [IDiaDataSource：： loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) 方法。
 
-若要取得資料載入進程（透過回呼機制）的存取權，請使用[IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。
+若要透過) 的回呼機制取得資料載入進程 (的存取權，請使用 [IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法。
 
-若要直接從記憶體載入 .pdb 檔案，請使用[IDiaDataSource：： loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)方法。
+若要直接從記憶體載入 .pdb 檔案，請使用 [IDiaDataSource：： loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) 方法。
 
 ## <a name="example"></a>範例
 

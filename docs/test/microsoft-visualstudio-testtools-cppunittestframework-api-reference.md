@@ -8,23 +8,23 @@ ms.workload:
 - multiple
 author: corob-msft
 ms.openlocfilehash: 16ea629312237dd859e9eb1aad21b9b219de7229
-ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82109425"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考
 
 本主題列出 `Microsoft::VisualStudio::CppUnitTestFramework` 命名空間的公用成員。 您可以使用這些 API 來撰寫以 Microsoft 原生單元測試架構為基礎的 C++ 單元測試。 本主題結尾有[使用範例](#example)。
 
-標頭檔和 lib 檔案位於* \<Visual Studio 安裝資料夾> \vc\auxiliary\vs\unittest*。
+標頭和程式庫檔案位於* \<Visual Studio installation folder> \VC\Auxiliary\VS\UnitTest*下。
 
 標頭和 lib 路徑會自動在原生測試專案中設定。
 
-## <a name="in-this-topic"></a><a name="In_this_topic"></a>本主題中的
+## <a name="in-this-topic"></a><a name="In_this_topic"></a> 本主題中
 
-[CppUnitTest。h](#cppUnitTest_h)
+[Cppunittest.h。h](#cppUnitTest_h)
 
 - [建立測試類別和方法](#create_test_classes_and_methods)
 
@@ -84,11 +84,11 @@ ms.locfileid: "82109425"
 
   - [例外狀況判斷提示](#exception_asserts)
 
-    - [預期的例外狀況](#expect_exception)
+    - [預期例外狀況](#expect_exception)
 
       [CppUnitTestLogger.h](#cppunittestlogger_h)
 
-    - [記錄](#logger)
+    - [記錄器](#logger)
 
     - [寫入訊息](#write_message)
 
@@ -102,7 +102,7 @@ ms.locfileid: "82109425"
 TEST_CLASS(className)
 ```
 
-針對每個包含測試方法的類別為必要。 識別 *className* 為測試類別。 `TEST_CLASS`必須在命名空間範圍中宣告。
+針對每個包含測試方法的類別為必要。 識別 *className* 為測試類別。 `TEST_CLASS` 必須在命名空間範圍中宣告。
 
 ```cpp
 TEST_METHOD(methodName)
@@ -115,7 +115,7 @@ TEST_METHOD(methodName)
 
 ### <a name="initialize-and-cleanup"></a><a name="Initialize_and_cleanup"></a> 初始化和清除
 
-#### <a name="test-methods"></a><a name="test_methods"></a>測試方法
+#### <a name="test-methods"></a><a name="test_methods"></a> 測試方法
 
 ```cpp
 TEST_METHOD_INITIALIZE(methodName)
@@ -174,7 +174,7 @@ TEST_MODULE_CLEANUP(methodName)
 
 ### <a name="create-test-attributes"></a><a name="create_test_attributes"></a> 建立測試屬性
 
-#### <a name="test-method-attributes"></a><a name="test_method_attributes"></a>測試方法屬性
+#### <a name="test-method-attributes"></a><a name="test_method_attributes"></a> 測試方法屬性
 
 ```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
@@ -200,7 +200,7 @@ END_TEST_CLASS_ATTRIBUTE()
 
 `TEST_CLASS_ATTRIBUTE` 巨集會以名稱 *attributeName* 和值 *attributeValue* 來定義屬性。
 
-#### <a name="test-module-attributes"></a><a name="test_module_attributes"></a>測試模組屬性
+#### <a name="test-module-attributes"></a><a name="test_module_attributes"></a> 測試模組屬性
 
 ```cpp
 BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)
@@ -213,7 +213,7 @@ END_TEST_MODULE_ATTRIBUTE()
 
 `TEST_MODULE_ATTRIBUTE` 巨集會以名稱 *attributeName* 和值 *attributeValue* 來定義屬性。
 
-#### <a name="pre-defined-attributes"></a><a name="pre_defined_attributes"></a>預先定義的屬性
+#### <a name="pre-defined-attributes"></a><a name="pre_defined_attributes"></a> 預先定義的屬性
 
 這些預先定義的屬性巨集是提供來為常見案例提供方便性。 它們可以被上述巨集 `TEST_METHOD_ATTRIBUTE` 取代。
 
@@ -247,7 +247,7 @@ TEST_IGNORE()
 
 以名稱 `Ignore` 和 `true` 的屬性值定義 `TEST_METHOD_ATTRIBUTE`。
 
-## <a name="cppunittestasserth"></a><a name="cppUnitTestAssert_h"></a>CppUnitTestAssert。h
+## <a name="cppunittestasserth"></a><a name="cppUnitTestAssert_h"></a> CppUnitTestAssert。h
 
 ### <a name="general-asserts"></a><a name="general_asserts"></a> 一般判斷提示
 
@@ -387,7 +387,7 @@ static void Assert::AreNotSame (
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="is-null"></a><a name="general_is_null"></a>為 Null
+#### <a name="is-null"></a><a name="general_is_null"></a> 為 Null
 確認指標為 NULL。
 
 ```cpp
@@ -398,7 +398,7 @@ static void Assert::IsNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="is-not-null"></a><a name="general_is_not_null"></a>不是 Null
+#### <a name="is-not-null"></a><a name="general_is_not_null"></a> 不是 Null
 確認指標不是 NULL
 
 ```cpp
@@ -409,7 +409,7 @@ static void Assert::IsNotNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="is-true"></a><a name="general_is_True"></a>為 True
+#### <a name="is-true"></a><a name="general_is_True"></a> 為 True
 確認條件為 True
 
 ```cpp
@@ -419,7 +419,7 @@ static void Assert::IsTrue(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="is-false"></a><a name="general_is_false"></a>為 False
+#### <a name="is-false"></a><a name="general_is_false"></a> 為 False
 確認條件為 False
 
 ```cpp
@@ -429,7 +429,7 @@ static void Assert::IsFalse(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="fail"></a><a name="general_Fail"></a>無法
+#### <a name="fail"></a><a name="general_Fail"></a> 失敗
 強制測試案例結果為失敗
 
 ```cpp
@@ -510,7 +510,7 @@ static void Assert::AreNotSame(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="is-null"></a><a name="winrt_is_null"></a>為 Null
+#### <a name="is-null"></a><a name="winrt_is_null"></a> 為 Null
 確認 Windows 執行階段指標為 nullptr。
 
 ```cpp
@@ -521,7 +521,7 @@ static void Assert::IsNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="is-not-null"></a><a name="winrt_is_not_null"></a>不是 Null
+#### <a name="is-not-null"></a><a name="winrt_is_not_null"></a> 不是 Null
 確認 Windows 執行階段指標不是 nullptr。
 
 ```cpp
@@ -555,9 +555,9 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)
 ```
 
-## <a name="cppunittestloggerh"></a><a name="cppunittestlogger_h"></a>CppUnitTestLogger。h
+## <a name="cppunittestloggerh"></a><a name="cppunittestlogger_h"></a> CppUnitTestLogger。h
 
-### <a name="logger"></a><a name="logger"></a>記錄
+### <a name="logger"></a><a name="logger"></a> 記錄
 記錄器類別包含要寫入至 [輸出視窗]**** 的靜態方法。
 
 ### <a name="write-message"></a><a name="write_message"></a> 寫入訊息
@@ -571,7 +571,7 @@ static void Logger::WriteMessage(const wchar_t* message)
 static void Logger::WriteMessage(const char* message)
 ```
 
-## <a name="example"></a><a name="example"></a>實例
+## <a name="example"></a><a name="example"></a> 範例
 此程式碼是 VSCppUnit 的使用範例。 其中包含屬性中繼資料、裝置、使用判斷提示的單元測試及自訂記錄等範例。
 
 ```cpp

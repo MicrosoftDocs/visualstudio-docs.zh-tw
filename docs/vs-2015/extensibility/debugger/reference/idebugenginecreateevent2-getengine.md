@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineCreateEvent2::GetEngine |Microsoft Docs
+title: IDebugEngineCreateEvent2：： GetEngine |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 714aadbcdaf84f0d971fc499be8339234471b24f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195767"
 ---
 # <a name="idebugenginecreateevent2getengine"></a>IDebugEngineCreateEvent2::GetEngine
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取物件，表示新建立的偵錯引擎 (DE)。  
+抓取物件，該物件表示新建立的 debug engine (DE) 。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,10 +40,10 @@ int GetEngine( 
   
 #### <a name="parameters"></a>參數  
  `pEngine`  
- [out]傳回[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)物件，表示新建立的裝置。  
+ 擴展傳回代表新建立之 DE 的 [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) 物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)   

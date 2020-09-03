@@ -1,5 +1,5 @@
 ---
-title: 從編輯器延伸器存取 DTE 物件
+title: 從編輯器延伸模組存取 DTE 物件
 ms.date: 04/24/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,48 +11,48 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e37bdb21b7c8132f0dfb166d19e03d36e838245d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697655"
 ---
-# <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>演練:從編輯器延伸器存取 DTE 物件
+# <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>逐步解說：從編輯器延伸模組存取 DTE 物件
 
-在 VSPackages 中,可以通過使用<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>DTE 物件的類型調用 方法來獲取 DTE 物件。 在託管擴充性框架 (MEF) 擴充中,<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>可以導入<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A><xref:EnvDTE.DTE>然後使用類型呼叫方法。
+在 Vspackage 中，您可以 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 使用 dte 物件的型別來呼叫方法，以取得 dte 物件。 在 Managed Extensibility Framework (MEF) 擴充功能的情況下，您可以匯入， <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> 然後 <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> 使用的類型來呼叫方法 <xref:EnvDTE.DTE> 。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
-若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 有關詳細資訊,請參閱[可視化工作室 SDK](../extensibility/visual-studio-sdk.md)。
+若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 [VISUAL STUDIO SDK](../extensibility/visual-studio-sdk.md)。
 
 ## <a name="get-the-dte-object"></a>取得 DTE 物件
 
-1. 建立 C# VSIX 專案並將使用**DTETest**。 新增**編輯器類別器**專案樣本並將使用**DTETest**。
+1. 建立 c # VSIX 專案，並將它命名為 **DTETest**。 加入 **編輯器分類** 專案範本，並將它命名為 **DTETest**。
 
-   關於詳細資訊,請參考[使用編輯器項目樣本建立延伸](../extensibility/creating-an-extension-with-an-editor-item-template.md)。
+   如需詳細資訊，請參閱 [使用編輯器專案範本建立延伸](../extensibility/creating-an-extension-with-an-editor-item-template.md)。
 
 ::: moniker range=">=vs-2019"
 
-2. 新增以下程式集參考:
+2. 將下列元件參考新增至專案：
 
-    - 微軟.VisualStudio.shell.Framework.Framework
-    - 微軟.VisualStudio.shell.不可改變.10.0
+    - VisualStudio 架構
+    - VisualStudio，不變的10。0
 
-3. 在*DTETestProvider.cs*檔案中,`using`新增以下 指令:
+3. 在 *DTETestProvider.cs* 檔案中，新增下列指示詞 `using` ：
 
     ```csharp
     using EnvDTE;
     using Microsoft.VisualStudio.Shell;
     ```
 
-4. 在`DTETestProvider`類別中,匯<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>入 。
+4. 在 `DTETestProvider` 類別中，匯入 <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> 。
 
     ```csharp
     [Import]
     internal SVsServiceProvider ServiceProvider = null;
     ```
 
-5. 在`GetClassifier()`方法中,在`return`敘述之前加入以下代碼:
+5. 在 `GetClassifier()` 方法中，于語句之前加入下列程式碼 `return` ：
 
     ```csharp
    ThreadHelper.ThrowIfNotOnUIThread();
@@ -63,26 +63,26 @@ ms.locfileid: "80697655"
 
 ::: moniker range="vs-2017"
 
-2. 新增以下程式集參考:
+2. 將下列元件參考新增至專案：
 
    - EnvDTE
-   - 微軟.VisualStudio.shell.Framework.Framework
+   - VisualStudio 架構
 
-3. 在*DTETestProvider.cs*檔案中,`using`新增以下 指令:
+3. 在 *DTETestProvider.cs* 檔案中，新增下列指示詞 `using` ：
 
     ```csharp
     using EnvDTE;
     using Microsoft.VisualStudio.Shell;
     ```
 
-4. 在`DTETestProvider`類別中,匯<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>入 。
+4. 在 `DTETestProvider` 類別中，匯入 <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> 。
 
     ```csharp
     [Import]
     internal SVsServiceProvider ServiceProvider = null;
     ```
 
-5. 在`GetClassifier()`方法中,在`return`敘述之前加入以下代碼:
+5. 在 `GetClassifier()` 方法中，于語句之前加入下列程式碼 `return` ：
 
     ```csharp
    DTE dte = (DTE)ServiceProvider.GetService(typeof(DTE));

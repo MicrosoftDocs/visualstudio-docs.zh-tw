@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0c011a530bbd4323546257a40334a4b8a0f57bdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195903"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個介面會表示偵錯引擎 (DE)。 它用來管理各方面的偵錯工作階段中，從建立中斷點，設定及清除例外狀況。  
+這個介面表示 (DE) 的 debug engine。 它是用來管理偵錯工具會話的各個層面，從建立中斷點到設定和清除例外狀況。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,37 +30,37 @@ ms.locfileid: "68195903"
 IDebugEngine2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- 實作這個介面是由管理程式的偵錯自訂的規定。 此介面必須由 DE 實作。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ 這個介面是由自訂的 DE 來執行，以管理程式的偵錯工具。 這個介面必須由 DE 來執行。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 這個介面是由工作階段的偵錯管理員 (SDM) 來管理偵錯工作階段，包括管理例外狀況、 建立中斷點，以及回應裝置所傳送的事件同步呼叫。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 會話 debug manager (SDM) 呼叫此介面來管理偵錯工具，包括管理例外狀況、建立中斷點，以及回應 DE 傳送的同步事件。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDebugEngine2`。  
+ 下表顯示的方法 `IDebugEngine2` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|建立所有正在偵錯程式所規定的列舉值。|  
-|[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)|附加至程式的規定。|  
-|[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)|DE 中建立暫止中斷點。|  
+|[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|針對正在由 DE 進行調試的所有程式建立列舉值。|  
+|[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)|將 DE 附加至程式。|  
+|[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)|在 DE 中建立暫止中斷點。|  
 |[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)|指定 DE 應該如何處理指定的例外狀況。|  
-|[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)|移除指定的例外狀況，讓它不再由偵錯引擎。|  
-|[RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)|移除 IDE 已設定特定的執行階段架構或語言的例外狀況的清單。|  
+|[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)|移除指定的例外狀況，使它不再由 debug 引擎處理。|  
+|[RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)|移除 IDE 已針對特定執行時間架構或語言設定的例外狀況清單。|  
 |[GetEngineID](../../../extensibility/debugger/reference/idebugengine2-getengineid.md)|取得 DE 的 GUID。|  
-|[DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)|會通知 DE 4mb 已終止指定的程式和 DE 應該清除至程式的所有參考，並傳送程式損毀的事件。|  
-|[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)|表示同步的偵錯事件，先前傳送給 SDM，德國已收到並處理 SDM 由呼叫。|  
-|[SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)|設定預設的地區設定。|  
-|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugengine2-setregistryroot.md)|DE 使用目前設定的登錄根目錄。|  
-|[SetMetric](../../../extensibility/debugger/reference/idebugengine2-setmetric.md)|設定計量。|  
-|[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|所有由這個 DE 正在偵錯的程式停止執行的其中一個其執行緒嘗試執行下一次要求。|  
+|[DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)|告知刪除指定的程式已被異常終止，而 DE 應該清除程式的所有參考，並傳送程式損毀事件。|  
+|[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)|由 SDM 呼叫，以表示已接收並處理之前由 DE 傳送給 SDM 的同步偵錯工具事件。|  
+|[SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)|設定 DE 的地區設定。|  
+|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugengine2-setregistryroot.md)|設定 DE 目前正在使用的登錄根目錄。|  
+|[SetMetric](../../../extensibility/debugger/reference/idebugengine2-setmetric.md)|設定度量。|  
+|[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|要求所有由這個取消執行的程式會在下一個執行緒嘗試執行時停止執行。|  
   
 ## <a name="requirements"></a>需求  
- 標頭：Msdbg.h  
+ 標頭： Msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   

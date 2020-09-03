@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::設置局部性 |微軟文件
+title: IDebugEngine2：： SetLocale |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8616dd827f99dfcfbc337cb5cdf5ac5a7d392e88
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730910"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
-設置調試引擎 (DE) 區域設置。
+設定 debug engine (DE) 的地區設定。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int SetLocale( 
 
 ## <a name="parameters"></a>參數
 `wLangID`\
-[在]指定語言區域設置。 例如,英語為 1033。
+在指定語言地區設定。 例如，1033（英文）。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 工作階段除錯管理員 (SDM) 呼叫此方法來傳播 IDE 的區域設定,以便 DE 傳回的字串正確當地語系化。
+ 會話 debug manager (SDM) 呼叫這個方法，以傳播 IDE 的地區設定，讓 DE 所傳回的字串適當地當地語系化。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

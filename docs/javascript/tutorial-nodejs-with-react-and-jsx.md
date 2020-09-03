@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: c6813e0ad482bb211269c9da3950842dda7f6abd
-ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81760095"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 React 應用程式
@@ -55,28 +55,28 @@ JSX 是 JavaScript 語法延伸模組，通常搭配 React 使用以描述 UI �
 
 Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它也可以轉換或封裝其他資源和資產。 它經常用來指定編譯器，例如 Babel 或 TypeScript，將 JSX 或 TypeScript 程式碼轉換為純文字 JavaScript。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
 * 您必須安裝 Visual Studio 和 Node.js 開發工作負載。
 
     ::: moniker range=">=vs-2019"
-    如果您尚未安裝 Visual Studio 2019,請轉到 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費安裝它。
+    如果您尚未安裝 Visual Studio 2019，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)   頁面，免費進行安裝。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    如果您尚未安裝 Visual Studio 2017,請轉到 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費安裝它。
+    如果您尚未安裝 Visual Studio 2017，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)   頁面，免費進行安裝。
     ::: moniker-end
 
-    如果您需要安裝工作負載,但已經擁有可視化工作室,請轉到 **「工具** > **獲取工具和功能...",** 這將打開可視化工作室安裝程式。 選擇 [Node.js 開發]**** 工作負載，然後選擇 [修改]****。
+    如果您需要安裝工作負載，但已有 Visual Studio，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 [Node.js 開發]**** 工作負載，然後選擇 [修改]****。
 
     ![VS 安裝程式中的 Node.js 工作負載](../ide/media/quickstart-nodejs-workload.png)
 
 * 您必須安裝 Node.js 執行階段。
 
-    本教程已使用版本 12.6.2 進行了測試。
+    本教學課程已使用版本12.6.2 進行測試。
 
-    如果您沒有安裝它,我們建議您從[Node.js](https://nodejs.org/en/download/)網站安裝 LTS 版本,以便與外部框架和庫進行最佳相容性。 Node.js 是為 32 位元和 64 位體系結構構建的。 Visual Studio 中的 Node.js 工具(包含在 Node.js 工作負荷中)支援這兩個版本。 只需要一個,Node.js 安裝程式一次只支援安裝一個。
+    如果您沒有安裝它，建議您從 [Node.js](https://nodejs.org/en/download/) 網站安裝 LTS 版本，以提供與外部架構和程式庫的最佳相容性。 Node.js 是針對32位和64位架構所建立。 Visual Studio 中的 Node.js 工具（包含在 Node.js 工作負載中）支援兩種版本。 只有一個是必要的，而且 Node.js 安裝程式只支援一次安裝一個。
     
-    一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果未檢測到已安裝的運行時,則可以將專案配置為引用屬性頁中的已安裝運行時(在創建專案後,右鍵單擊專案節點,選擇**屬性**,並設置**Node.exe 路徑**)。 您可以使用 Node.js 的全域安裝,也可以在每個 Node.js 專案中指定本地解釋器的路徑。 
+    一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果未偵測到已安裝的執行時間，您可以在建立專案之後，將專案設定為參考已安裝的執行時間 (在專案節點上按一下滑鼠右鍵，選擇 [ **屬性**]，然後設定 **Node.exe 路徑**) 。 您可以使用 Node.js 的全域安裝，也可以在每個 Node.js 專案中指定本機解譯器的路徑。 
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -87,14 +87,14 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 1. 建立新專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 鍵入**Ctrl + Q**以開啟搜尋框,鍵入**Node.js,** 然後選擇**空白 Node.js Web 應用程式 - JAvaScript**。 (儘管本教程使用 TypeScript 編譯器,但這些步驟要求您從**JAvaScript**範本開始。
+    按 **Esc** 關閉開始視窗。 輸入 **Ctrl + Q** 以開啟 [搜尋] 方塊，輸入 **Node.js**，然後選擇 [ **空白 Node.js Web 應用程式-JavaScript**]。  (雖然本教學課程使用 TypeScript 編譯器，但這些步驟都需要您從 **JavaScript** 範本開始。 ) 
     
     在出現的對話方塊中選擇 [建立]****。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂部功能表欄中,選擇 **「檔** > **新專案** > **」。。** 在 [新增專案]**** 對話方塊的左窗格中，展開 **JavaScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [空白的 Node.js Web 應用程式]****、輸入名稱 **NodejsWebAppBlank**，然後選擇 [確定]****。
+    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [新增專案]**** 對話方塊的左窗格中，展開 **JavaScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [空白的 Node.js Web 應用程式]****、輸入名稱 **NodejsWebAppBlank**，然後選擇 [確定]****。
     ::: moniker-end
-    如果看不到**空白 Node.js Web 應用程式**專案範本,則必須添加**Node.js 開發**工作負荷。 如需詳細指示，請參閱[必要條件](#prerequisites)。
+    如果您沒有看到 **空白 Node.js Web 應用程式** 專案範本，則必須新增 **Node.js 開發** 工作負載。 如需詳細指示，請參閱[必要條件](#prerequisites)。
 
     Visual Studio 會建立新的方案，並開啟專案。
 
@@ -106,7 +106,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
     (3) npm 節點會顯示任何已安裝的 npm 套件。 您可以用滑鼠右鍵按一下 npm 節點，使用對話方塊來搜尋及安裝 npm 套件，或者使用 *package.json* 中的設定來安裝及更新套件，並以滑鼠右鍵按一下 npm 節點中的選項。
 
-    (4) *package.json* 是 npm 用來管理本機安裝套件之套件相依性和套件版本的檔案。 有關詳細資訊,請參閱管理[npm 包](../javascript/npm-package-management.md)。
+    (4) *package.json* 是 npm 用來管理本機安裝套件之套件相依性和套件版本的檔案。 如需詳細資訊，請參閱 [管理 npm 封裝](../javascript/npm-package-management.md)。
 
     (5) *server.js* 之類的專案檔會顯示在專案節點下。 *server.js* 是專案啟動檔案，這也是它會以**粗體**顯示的原因。 以滑鼠右鍵按一下專案中的檔案，然後選取 [設定為 Node.js 啟動檔案]****，即可設定啟動檔案。
 
@@ -125,7 +125,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
 1. 在 [方案總管] (右窗格) 中，以滑鼠右鍵按一下專案中的 [npm]**** 節點，然後選擇 [安裝新的 npm 套件]****。
 
-    在 [安裝新的 npm 套件]**** 對話方塊中，您可以選擇安裝最新的套件版本或指定版本。 如果選擇安裝這些包的當前版本,但稍後遇到意外錯誤,則可能需要安裝這些步驟後面介紹的確切包版本。
+    在 [安裝新的 npm 套件]**** 對話方塊中，您可以選擇安裝最新的套件版本或指定版本。 如果您選擇安裝這些套件的最新版本，但稍後遇到未預期的錯誤，您可能會想要安裝這些步驟稍後所述的確切套件版本。
 
 1. 在 [安裝新的 npm 套件]**** 對話方塊中，搜尋 react 套件，然後選取 [安裝套件]**** 來安裝它。
 
@@ -135,7 +135,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
     專案的 *package.json* 檔案會以新的套件資訊 (包括套件版本) 進行更新。
 
-1. 而不是使用 UI 來搜尋和添加套件的其餘部分一次一個,將以下代碼貼上到*套件.* 若要這樣做，請新增具有下列程式碼的 `dependencies` 區段：
+1. 您可以將下列程式碼貼入的 *package.js*，而不是使用 UI 來一次搜尋和新增其餘套件。 若要這樣做，請新增具有下列程式碼的 `dependencies` 區段：
 
     ```json
     "dependencies": {
@@ -150,13 +150,13 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
     }
     ```
 
-    如果在您的空白範本版本中已經有 `dependencies` 區段，只需將它取代為上述 JSON 程式碼。 有關使用此檔案的詳細資訊,請參閱[package.json 設定](../javascript/configure-packages-with-package-json.md)。
+    如果在您的空白範本版本中已經有 `dependencies` 區段，只需將它取代為上述 JSON 程式碼。 如需使用此檔案的詳細資訊，請參閱設定 [ 上的package.js](../javascript/configure-packages-with-package-json.md)。
 
 1. 儲存變更。
 
-1. 右鍵按一下專案中**的 npm**節點,然後選擇 **「安裝 npm 包**」。
+1. 以滑鼠右鍵按一下專案中的 [ **npm** ] 節點，然後選擇 [ **安裝 npm 套件**]。
 
-    此命令直接運行 npm 安裝命令。
+    此命令會直接執行 npm install 命令。
 
     在下方窗格中，選取 [輸出]**** 視窗以查看套件安裝進度。 安裝可能需要幾分鐘的時間，您可能無法立即查看結果。 若要查看輸出，請務必選取 [輸出]**** 視窗中 [顯示輸出來源]**** 欄位中的 [Npm]****。
 
@@ -173,14 +173,14 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
 * *app.tsx*
 * *webpack-config.js*
-* *索引.html*
+* *index.html*
 * *tsconfig.json*
 
 針對這個簡單的應用程式，您可以在專案根目錄中新增專案檔。 (在大部分的應用程式中，您通常會將檔案新增至子資料夾，並據以調整相對路徑參考。)
 
 1. 在 [方案總管] 中，以滑鼠右鍵按一下專案 **NodejsWebAppBlank**，然後選擇 [新增]**** > [新增項目]****。
 
-1. 在 **「新增新項目」** 對話方塊中,選擇**TypeScript JSX 檔**,鍵入名稱*應用程式.tsx,* 然後選擇 **「添加**」**或「確定**」 。
+1. 在 [**加入新專案**] 對話方塊中，選擇 [ **TypeScript JSX**檔案]，輸入名稱*App.config*，然後選取**Add** [新增 **] 或 [確定]**。
 
 1. 重複這些步驟來新增 *webpack-config.js*。 選擇 [JavaScript 檔案]****，而非 TypeScript JSX 檔案。
 
@@ -300,7 +300,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
     }
     ```
 
-    *app.tsx*被指定為源檔。
+    已將*app.config*指定為來源檔案。
 
 ## <a name="transpile-the-jsx"></a>轉換 JSX
 
@@ -316,7 +316,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
     如果看到任何錯誤，而不是上述的輸出，您必須在應用程式運作之前解決這些錯誤。 如果您的 npm 套件版本與本教學課程中顯示的版本不同，這可能是錯誤的來源。 修正錯誤的其中一種方法是使用先前步驟中所顯示的確切版本。 此外，如果這些套件版本的其中一或多個版本已遭取代而導致錯誤，您可能需要安裝較新的版本來修正錯誤。 如需使用 *package.json*控制 npm 套件版本的資訊，請參閱 [package.json 組態](../javascript/configure-packages-with-package-json.md)。
 
-1. 在「解決方案資源管理器」中,右鍵單擊專案節點並選擇 **「添加** > **現有資料夾**」,然後選擇 *「分離資料夾*」並選擇 **「選擇資料夾**」 。
+1. 在方案總管中，以滑鼠右鍵按一下專案節點，然後選擇 [**加入**  >  **現有資料夾**]，再選擇 [ *dist* ] 資料夾，然後選擇 [**選取資料夾**]。
 
     Visual Studio 會將 *dist* 資料夾新增至專案，其中包含 *app-bundle.js* 和 *app-bundle.js.map*。
 
@@ -342,7 +342,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
 ## <a name="run-the-app"></a>執行應用程式
 
-1. 選擇**Web 伺服器(Google Chrome)** 或**Web 伺服器(微軟邊緣)** 作為當前調試目標。
+1. 選取 [ **Web 服務器 (Google Chrome) ** 或 [ **web 伺服器 (] Microsoft Edge) ** 作為目前的 debug 目標。
 
     ::: moniker range=">=vs-2019"
     ![選取 Chrome 作為偵錯目標](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
@@ -379,7 +379,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
 1. 按 **F5** 繼續執行應用程式。
 
-1. 如果您想使用 Chrome 開發人員工具或 F12 工具進行微軟邊緣,請按**F12**。 您可以使用這些工具來檢查 DOM，並使用 JavaScript 主控台與應用程式互動。
+1. 如果您想要使用 Chrome Developer Tools 或 F12 工具進行 Microsoft Edge，請按 **F12**。 您可以使用這些工具來檢查 DOM，並使用 JavaScript 主控台與應用程式互動。
 
 1. 關閉網頁瀏覽器和主控台。
 
@@ -387,31 +387,31 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
 在上一節中，您已將偵錯工具附加到伺服器端 Node.js 程式碼。 若要從 Visual Studio 附加偵錯工具，並叫用用戶端 React 程式碼的中斷點，偵錯工具必須協助識別正確的處理序。 以下是啟用此功能的其中一種方式。
 
-### <a name="prepare-the-browser-for-debugging"></a>準備瀏覽器進行除錯
+### <a name="prepare-the-browser-for-debugging"></a>準備要進行偵錯工具的瀏覽器
 
 ::: moniker range=">=vs-2019"
-對於此方案,請使用當前在IDE中命名為Microsoft**邊緣測試版的**Microsoft邊緣(鉻)或Chrome。
+在此案例中，請使用 Microsoft Edge (Chromium) ，目前在 IDE 中名為 **Microsoft Edge Beta** 或 Chrome。
 ::: moniker-end
 ::: moniker range="vs-2017"
-對於此方案,請使用 Chrome。
+針對此案例，請使用 Chrome。
 ::: moniker-end
 
 1. 關閉目標瀏覽器的所有視窗。
 
-   其他瀏覽器實例可能會阻止瀏覽器在啟用調試后打開。 (瀏覽器擴展程式可能正在運行並阻止完全調試模式,因此您可能需要打開任務管理器才能查找 Chrome 的意外實例。
+   其他瀏覽器實例可能會讓瀏覽器無法在啟用調試功能的情況下開啟。  (瀏覽器擴充功能可能正在執行並無法進行完整的偵測模式，所以您可能需要開啟工作管理員以找出未預期的 Chrome 實例。 ) 
 
    ::: moniker range=">=vs-2019"
-   對於微軟邊緣(鉻),也關閉所有Chrome實例。 由於兩個瀏覽器共用鉻代碼庫,因此可提供最佳結果。
+   針對 Microsoft Edge (Chromium) ，也會關閉 Chrome 的所有實例。 因為這兩個瀏覽器都會共用 chromium 程式碼基底，所以這會產生最佳結果。
    ::: moniker-end
 
-2. 啟用調試後啟動瀏覽器。
+2. 在啟用偵錯工具的情況下啟動您的瀏覽器。
 
     ::: moniker range=">=vs-2019"
-    從 Visual Studio`--remote-debugging-port=9222`2019 開始, 您可以通過從 **「除錯」** 工具列中選擇 **「瀏覽與...** >,然後選擇 **「新增**」,然後在 **「參數」** 欄位中設定標誌,從而在瀏覽器啟動時設定標誌。 對瀏覽器使用不同的友好名稱,如 **「使用調試邊緣」** 或 **「使用調試的 Chrome」。。** 如需詳細資訊，請參閱[版本資訊](/visualstudio/releases/2019/release-notes-v16.2)。
+    從 Visual Studio 2019 開始，您可以 `--remote-debugging-port=9222` 在瀏覽器啟動時設定旗標，方法是從 [**調試**程式] 工具列中選取 **[流覽 ...]** >，然後選擇 [**加入**]，然後在 [**引數**] 欄位中設定旗標。 針對瀏覽器使用不同的易記名稱，例如 **具有** 偵錯工具的邊緣和 **具有調試**程式的 Chrome。 如需詳細資訊，請參閱[版本資訊](/visualstudio/releases/2019/release-notes-v16.2)。
 
-    ![將瀏覽器設定為啟用除錯後開啟](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
+    ![將您的瀏覽器設定為在啟用偵錯工具的情況下開啟](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
-    或者,從 Windows**開始**按鈕打開 **「執行」** 命令(右鍵按一下並選擇 **」執行**「執行」」,然後輸入以下命令:
+    或者，從 Windows [**開始**] 按鈕開啟 [**執行**] 命令 (按一下滑鼠右鍵並選擇 [**執行**]) ，然後輸入下列命令：
 
     `msedge --remote-debugging-port=9222`
 
@@ -426,25 +426,25 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
 
-    這將在啟用調試後啟動瀏覽器。
+    這會啟動您的瀏覽器並啟用偵錯工具。
 
-    該應用程式尚未運行,因此您將獲得一個空瀏覽器頁面。
+    應用程式尚未執行，因此您會看到空白的瀏覽器頁面。
 
-### <a name="attach-the-debugger-to-client-side-script"></a>將除錯程式附加到客戶端文稿
+### <a name="attach-the-debugger-to-client-side-script"></a>將偵錯工具附加至用戶端腳本
 
-1. 切換到 Visual Studio,然後在原始碼中設定斷點,無論是*應用捆綁.js*還是*app.tsx*。
+1. 切換至 Visual Studio，然後在原始程式碼中設定中斷點， *app-bundle.js*  或 *app.config*。
 
-    對於*應用捆綁.js*,設置函`render()`數中的 斷點,如下圖所示:
+    針對 *app-bundle.js*，請在函式中設定中斷點，如下 `render()` 圖所示：
 
     ![設定中斷點](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    要在`render()`轉貼*應用 bundle.js*檔中尋找函數,請使用**Ctrl**+**F(****編輯** > **查找和替換** > **快速搜尋**)。
+    若要 `render()` 在轉換*app-bundle.js*檔案中尋找函式，請使用**Ctrl** + **F** (**編輯**  >  **尋找和取代**  >  **快速尋找**) 。
 
-    對於*app.tsx*`render()``return`,在語句上設置函數內的斷點。
+    若是 *app.config*，請在語句中設定函數內部的中斷點 `render()` `return` 。
 
     ![設定中斷點](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
 
-2. 如果要在 *.tsx*檔中設定斷點(而不是*套用 bundle.js),* 則需要更新*Webpack-config.js*。 將下列程式碼：
+2. 如果您要在 *tsx* 檔案中設定中斷點 (而不是 *app-bundle.js*) ，則需要更新 *webpack-config.js*。 將下列程式碼：
 
     ```javascript
     output: {
@@ -461,36 +461,36 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
     },
     ```
 
-    這是一個僅開發設置,用於在 Visual Studio 中啟用調試。 此設定允許您在生成應用時覆蓋源映射檔*app-bundle.js.map*中的生成引用。 預設情況下,源地圖檔中的 Webpack 引用包含*webpack:///* 前置前置前置,這阻止 Visual Studio 尋找來源*檔案 app.tsx*。 具體而言,當您進行此更改時,對源檔的*引用 app.tsx*將從*webpack:///./app.tsx*更改為 *./app.tsx*,這支持調試。
+    這是僅限開發設定，可在 Visual Studio 中啟用偵錯工具。 這項設定可讓您在建立應用程式時，覆寫來源對應檔中所產生的參考（ *app-bundle.js 對應*）。 根據預設，來源對應檔案中的 webpack 參考包含 *webpack:///* 前置詞，這可防止 Visual Studio 尋找來源檔案（ *tsx*）。 具體來說，當您進行這種變更時，來源檔案（app.config）的參考會從*webpack:///./app.tsx*變更為 */app.tsx*，以啟用調試*程式*。
 
-3. 選擇目標瀏覽器作為 Visual Studio 中的調試目標,然後按**Ctrl**+**Debug** > **F5(****除錯啟動而不調試**)在瀏覽器中運行應用。
+3. 在 Visual Studio 中選取您的目標瀏覽器做為偵錯工具目標，然後按下**Ctrl** + **F5** (**debug**  >  **啟動但不) 調試**程式，以在瀏覽器中執行應用程式。
 
     ::: moniker range=">=vs-2019"
-    如果建立具有友好名稱的瀏覽器配置,請選擇該配置作為調試目標。
+    如果您建立了具有易記名稱的瀏覽器設定，請選擇該設定做為您的 debug 目標。
     ::: moniker-end
 
     應用程式會在新的瀏覽器索引標籤中開啟。
 
-4. 選擇**除錯** > **附加到行程**。
+4. 選擇 [ **Debug**  >  **附加至進程**]。
 
     > [!TIP]
-    > 從 Visual Studio 2017 開始,一旦您第一次通過執行這些步驟附加到流程,您可以通過選擇**調試** > **重新附加到進程**來快速重新附加到同一進程。
+    > 從 Visual Studio 2017 開始，當您第一次依照下列步驟附加至進程之後，您可以選擇 [ **Debug**重新  >  **附加至進程**]，快速地重新附加至相同的進程。
 
-5. 在 **「附加到行程」** 對話方塊中,獲取可附加到的瀏覽器實例的篩選清單。
+5. 在 [ **附加至進程** ] 對話方塊中，取得您可以附加之瀏覽器實例的篩選清單。
 
     ::: moniker range=">=vs-2019"
-    在 Visual Studio 2019 中,在「附加到欄位」中為目標瀏覽器選擇正確的調試器,在 **「附加到**欄位」中為**JAVAScript(Chrome)** 或**JavaScript(微軟邊緣 - 鉻)** 選擇,在篩選器框中鍵入**鑲邊**或**邊緣**以篩選搜尋結果。
+    在 Visual Studio 2019 中，為您的目標瀏覽器選擇正確的偵錯工具、 **javascript (Chrome) ** 或 **javascript (Microsoft Edge-Chromium) ** 在 [ **附加至** ] 欄位中，在 [篩選] 方塊中輸入 **Chrome** 或 **Edge** 以篩選搜尋結果。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    在 Visual Studio 2017 中,在 **『附加到**欄位』中選擇**Webkit 程式碼**,在篩選器框中鍵入**鑲邊**以篩選搜尋結果。
+    在 Visual Studio 2017 中，選擇 [**附加至**] 欄位中的 [ **Webkit 程式碼**]，在 [篩選] 方塊中輸入**chrome**以篩選搜尋結果。
     ::: moniker-end
 
-6. 選擇有正確主機連接埠(本範例的本地主機)的瀏覽器程序,然後選擇**附加**。
+6. 在此範例中，選取具有正確主機埠 (localhost 的瀏覽器進程) ，然後選取 [ **附加**]。
 
-    埠 (1337) 也可能顯示在 **「標題」** 欄位中,以説明您選擇正確的瀏覽器實例。
+    埠 (1337) 可能也會出現在 [ **標題** ] 欄位中，以協助您選取正確的瀏覽器實例。
 
     ::: moniker range=">=vs-2019"
-    下面的示例顯示了 Microsoft 邊緣(鉻)瀏覽器的外觀。
+    下列範例會顯示 Microsoft Edge (Chromium) 瀏覽器的外觀。
 
     ![附加至處理序](../javascript/media/tutorial-nodejs-react-attach-to-process-edge.png)
     ::: moniker-end
@@ -501,22 +501,22 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
     ::: moniker-end
 
     > [!TIP]
-    > 如果偵錯工具未附加，而且您看到訊息「無法附加到處理序。 操作在當前狀態下不合法。" 在以除錯模式啟動瀏覽器之前,使用任務管理器關閉目標瀏覽器的所有實例。 瀏覽器擴展可能正在運行並阻止完全除錯模式。
+    > 如果偵錯工具未附加，而且您看到訊息「無法附加到處理序。 作業在目前狀態中不合法。」，請使用工作管理員關閉目標瀏覽器的所有實例，然後在偵測模式中啟動瀏覽器。 瀏覽器擴充功能可能正在執行，且無法進行完整的偵測模式。
 
 7. 因為已執行具有中斷點的程式碼，所以請重新整理瀏覽器頁面以叫用中斷點。
 
-    在偵錯工具中暫停時，您可以將滑鼠指標停留在變數上，並使用偵錯工具視窗，藉以檢查應用程式狀態。 您可以逐步執行程式碼 (**F5**、**F10** 和 **F11**) 來推進偵錯工具。 有關基本除錯功能的詳細資訊,請參閱[首先檢視除錯器](../debugger/debugger-feature-tour.md)。
+    在偵錯工具中暫停時，您可以將滑鼠指標停留在變數上，並使用偵錯工具視窗，藉以檢查應用程式狀態。 您可以逐步執行程式碼 (**F5**、**F10** 和 **F11**) 來推進偵錯工具。 如需基本偵錯工具功能的詳細資訊，請參閱 [偵錯工具的第一次查看](../debugger/debugger-feature-tour.md)。
 
-    您可以在*應用 bundle.js*中命中斷點,也可以在*app.tsx*中在其映射的位置命中斷點,具體取決於您之前遵循的步驟以及您的環境和瀏覽器狀態。 不論哪一種方式，您都可以逐步執行程式碼並檢查變數。
+    您可能會在*應用程式*中的*app-bundle.js*或其對應的位置點擊中斷點，視您先前遵循的步驟，以及您的環境和瀏覽器狀態而定。 不論哪一種方式，您都可以逐步執行程式碼並檢查變數。
 
-   * 如果您需要在 *app.tsx* 內中斷程式碼，但無法這麼做，請使用上一步中所述的 [附加至處理序]**** 來附加偵錯工具。 確保環境設定正確:
+   * 如果您需要在 *app.tsx* 內中斷程式碼，但無法這麼做，請使用上一步中所述的 [附加至處理序]**** 來附加偵錯工具。 請確定您的環境已正確設定：
 
-      * 您關閉了所有瀏覽器實例,包括 Chrome 擴展名(使用任務管理器),以便您可以在調試模式下運行瀏覽器。 請確保在除錯模式下啟動瀏覽器。
+      * 您已關閉所有瀏覽器實例，包括使用工作管理員) 的 Chrome 延伸模組 (，讓您可以在偵錯工具模式中執行瀏覽器。 請務必在 [偵測模式] 中啟動瀏覽器。
 
-      * 請確保您的來源地圖檔包含對 *./app.tsx*的引用,而不是*webpack:///./app.tsx,* 這可以防止 Visual Studio 調試器尋找*app.tsx*。
-       或者,如果您需要在*app.tsx*中侵入代碼,但無法做到這一點,請`debugger;`嘗試在*app.tsx*中使用 語句,或者在 Chrome 開發人員工具(或適用於 Microsoft 邊緣的 F12 工具)中設置斷點。
+      * 請確定您的來源對應檔包含 */app.tsx* 的參考，而不是 *webpack:///./app.tsx*，這可防止 Visual Studio 偵錯工具找到 *app.config*。
+       或者，如果您需要在 app.config 中中斷 *程式* 代碼，但無法這麼做，請嘗試使用 `debugger;` *app.config*中的語句，或在 Chrome 開發人員工具 (或 F12 工具中設定中斷點，以便改為 Microsoft Edge) 。
 
-   * 如果需要在*app-bundle.js*中侵入代碼,但無法做到這一點,請刪除原始檔*app-bundle.js.map*。
+   * 如果您需要中斷 *app-bundle.js* 中的程式碼，但無法這麼做，請移除 *app-bundle.js 對應*的來源對應檔。
 
 ## <a name="next-steps"></a>後續步驟
 

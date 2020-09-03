@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a6a19d926ead4c2c38ff69544311caa1f726b3e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468508"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
-準備儲存在程式資料庫（.pdb）檔案中的 debug 資料，此檔案會透過記憶體中的資料流程來存取。
+準備程式資料庫中儲存的 debug 資料 ( .pdb) 透過記憶體中資料流程存取的檔案。
 
 ## <a name="syntax"></a>語法
 
@@ -33,25 +33,25 @@ HRESULT loadDataFromIStream ( 
 #### <a name="parameters"></a>參數
  pIStream
 
-在<xref:IStream>物件，代表要使用的資料流程。
+在 <xref:IStream> 物件，表示要使用的資料流程。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。 下表顯示這個方法的可能傳回值。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 下表顯示此方法可能傳回的值。
 
 |值|描述|
 |-----------|-----------------|
-|E_PDB_FORMAT|嘗試存取具有過時格式的檔案。|
+|E_PDB_FORMAT|嘗試存取已淘汰格式的檔案。|
 |E_INVALIDARG|無效的參數。|
-|E_UNEXPECTED|資料來源已準備就緒。|
+|E_UNEXPECTED|已經備妥資料來源。|
 
 ## <a name="remarks"></a>備註
- 這個方法可讓您透過物件從記憶體中取得可執行檔的偵錯工具資料 <xref:IStream> 。
+ 這個方法可讓您透過物件從記憶體取得可執行檔的偵錯工具資料 <xref:IStream> 。
 
- 若要載入不具驗證的 .pdb 檔案，請使用[IDiaDataSource：： loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)方法。
+ 若要載入不含驗證的 .pdb 檔，請使用 [IDiaDataSource：： loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) 方法。
 
- 若要根據特定準則來驗證 .pdb 檔案，請使用[IDiaDataSource：： loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)方法。
+ 若要根據特定準則驗證 .pdb 檔案，請使用 [IDiaDataSource：： loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) 方法。
 
- 若要取得資料載入進程（透過回呼機制）的存取權，請使用[IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。
+ 若要透過) 的回呼機制取得資料載入進程 (的存取權，請使用 [IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

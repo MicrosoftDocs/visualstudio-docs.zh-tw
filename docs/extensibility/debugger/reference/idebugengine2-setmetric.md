@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::設置指標 |微軟文件
+title: IDebugEngine2：： SetMetric |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: caada8db1791d94e7a9632394cd4659bf8cec3a0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730905"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
-此方法設置稱為指標的註冊表值。
+這個方法會設定稱為度量的登錄值。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int SetMetric(
 
 ## <a name="parameters"></a>參數
 `pszMetric`\
-[在]指標名稱。
+在度量名稱。
 
 `varValue`\
-[在]指定指標值。
+在指定度量值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 指標是用於更改調試引擎的行為或通告支援的功能的註冊表值。 此方法可以將呼叫到用於除錯功能的 SDK[協助器](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)的適當`SetMetric`形式 。
+ 計量是一個登錄值，可用來變更 debug 引擎的行為或通告支援的功能。 這個方法可以將呼叫轉送至適當形式的 SDK helper， [以進行偵錯工具的](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) 偵測功能 `SetMetric` 。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

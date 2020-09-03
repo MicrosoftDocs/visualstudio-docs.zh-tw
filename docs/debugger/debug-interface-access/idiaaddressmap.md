@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ddf4b1c2a6a22170fb52da200bbd53c2b6b96e62
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468529"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
-可讓您控制 DIA SDK 如何計算 debug 物件的虛擬和相對虛擬位址。
+提供控制 DIA SDK 如何計算 debug 物件的虛擬和相對虛擬位址。
 
 ## <a name="syntax"></a>語法
 
@@ -33,25 +33,25 @@ IDiaAddressMap : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|指出是否已建立特定會話的位址對應。|
-|[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|指定是否應使用位址對應來轉譯符號位址。|
+|[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|指出是否已為特定會話建立位址對應。|
+|[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|指定是否應該使用位址對應來轉譯符號位址。|
 |[IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)|指出是否已啟用相對虛擬位址的計算和使用。|
 |[IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)|允許用戶端啟用或停用相對虛擬位址的計算。|
 |[IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)|抓取目前的影像對齊。|
 |[IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)|設定影像對齊。|
 |[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|設定影像標頭，以啟用相對虛擬位址的轉譯。|
-|[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|提供位址對應以支援影像版面配置翻譯。|
+|[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|提供可支援影像版面配置翻譯的位址對應。|
 
 ## <a name="remarks"></a>備註
- 這個介面所提供的控制項會封裝在您提供的兩組資料中：影像標頭和位址對應。 大部分的用戶端會使用[IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法來尋找影像的適當偵錯工具資訊，而方法通常會探索所有必要的標頭並對應資料本身。 不過，有些用戶端會執行特殊處理和搜尋資料。 這類用戶端會使用介面的方法 `IDiaAddressMap` ，為 DIA SDK 提供搜尋結果。
+ 此介面提供的控制項封裝在您提供的兩組資料中：影像標頭和位址對應。 大部分的用戶端會使用 [IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法來尋找影像的適當 debug 資訊，而且方法通常可以探索所有必要的標頭和地圖資料本身。 不過，有些用戶端會執行特殊處理和搜尋資料。 這類用戶端會使用介面的方法 `IDiaAddressMap` ，以搜尋結果提供 DIA SDK。
 
-## <a name="notes-for-callers"></a>呼叫者的注意事項
- 此介面可從 DIA 會話物件取得。 用戶端會 `QueryInterface` 在 DIA 會話物件介面（通常是[IDiaSession](../../debugger/debug-interface-access/idiasession.md)）上呼叫方法，以取得 `IDiaAddressMap` 介面。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ 此介面可從 DIA 會話物件取得。 用戶端會 `QueryInterface` 在 DIA 會話物件介面（通常是 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)）上呼叫方法，以取得 `IDiaAddressMap` 介面。
 
 ## <a name="requirements"></a>需求
  標頭： Dia2。h
 
- 程式庫： diaguids
+ 程式庫： diaguids .lib
 
  DLL： msdia80.dll
 

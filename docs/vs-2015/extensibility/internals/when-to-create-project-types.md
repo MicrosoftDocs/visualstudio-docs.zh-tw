@@ -11,55 +11,55 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5b5bc2bacb53973bd552b983b742e4f9e68fe31b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687704"
 ---
 # <a name="when-to-create-project-types"></a>建立專案類型的時機
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-建立新的專案類型提供基礎自訂[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]為您的使用者。 不過，建立新的專案類型不需要所有[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]自訂項目。 下列指導方針可協助您判斷新的專案類型是否需要針對您的案例。  
+建立新的專案類型可為使用者提供自訂的基礎 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。 但是，並非所有自訂都需要建立新的專案類型 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。 下列指導方針可協助您判斷您的案例是否需要新的專案類型。  
   
 ## <a name="create-a-new-project-type"></a>建立新的專案類型  
- 您必須先建立專案類型，如果您想要自訂[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]以扮演一或多個下列的方式：  
+ 如果您想要自訂 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 以下列一或多種方式執行動作，您必須建立專案類型：  
   
-- 參與建置、 部署、 設定和原始檔控制。  
+- 參與組建、部署、設定和原始檔控制。  
   
-- 偵錯支援的供應項目。  
+- 提供調試支援。  
   
-- 顯示專案中的項目**方案總管 中**。  
+- 顯示 **方案總管**中的專案專案。  
   
-- 使用**開啟專案**或是**新的專案** 對話方塊。  
+- 使用 [ **開啟專案** ] 或 [ **新增專案** ] 對話方塊。  
   
-- 支援專案巢狀結構。  
+- 支援專案嵌套。  
   
 ## <a name="extend-an-existing-project-type"></a>擴充現有的專案類型  
- 您可能想要建立新的專案類型可供[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]下列方式來修改或擴充現有的專案類型的行為，例如，修改的建置程序[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]專案：  
+ 您可能會想要建立新的專案類型，以利用 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 下列方式來修改或擴充現有專案類型的行為，例如，修改專案的組建流程 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] ：  
   
-- 使用多個檔案當做單一單位。  
+- 以單一單位使用多個檔案。  
   
-- 顯示單一檔案的子項目階層。  
+- 將單一檔案顯示為子專案的階層。  
   
-- 顯示編輯器命令內容。  
+- 在編輯器周圍顯示命令內容。  
   
-- 編輯器中顯示的服務內容。  
+- 顯示編輯器的服務內容。  
   
 ## <a name="use-an-existing-project-type"></a>使用現有的專案類型  
- 建立新的專案則有時候不需要。 下表顯示您沒有建立的專案類型的工作。  
+ 有時不需要建立新專案。 下表顯示您不需要為其建立專案類型的工作。  
   
 |工作|描述|  
 |----------|-----------------|  
-|處理命令|任何的 VSPackage 可以處理命令。|  
-|建置編輯器|您可以註冊自訂編輯器。 如需詳細資訊，請參閱 <<c0> [ 文件的 Windows 和編輯器](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)。|  
-|擁有 windows|您可以建立工具和文件視窗，而不會增加新的專案類型。|  
-|在 [屬性] 視窗中公開的屬性|所有物件都可以都公開屬性。|  
+|處理命令|任何 VSPackage 都可以處理命令。|  
+|建立編輯器|您可以註冊自訂編輯器。 如需詳細資訊，請參閱 [檔視窗和編輯器](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)。|  
+|擁有視窗|您可以建立工具和文件視窗，而不需要加入新的專案類型。|  
+|公開屬性視窗中的屬性|所有物件都可以公開屬性。|  
   
 ## <a name="create-a-project-subtype"></a>建立專案子類型  
- 您可以使用專案子類型，來擴充受管理的專案類型，而不需要建立新的專案類型。 專案子類型來擴充 Microsoft 以撰寫的 managed 的專案中使用 COM 彙總[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../../includes/csprcs-md.md)]。 COM 彙總，您可以重複使用大部分的 managed 的專案系統實作，並仍然透過彙總，以及使用支援的介面的特定案例自訂。 如需有關專案子類型的詳細資訊，請參閱[專案子類型](../../extensibility/internals/project-subtypes.md)。  
+ 您可以使用專案子類型來擴充 managed 專案類型，而不需要建立新的專案類型。 專案子類型使用 COM 匯總來擴充以 Microsoft 或撰寫的 managed 專案 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 。 使用 COM 匯總，您可以重複使用大部分的 managed 專案系統，並且仍可透過匯總和使用支援介面來自訂特定案例。 如需專案子類型的詳細資訊，請參閱 [專案子類型](../../extensibility/internals/project-subtypes.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [文件的 Windows 和編輯器](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
+ [檔視窗和編輯器](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
  [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Visual Studio 中的階層](../../extensibility/internals/hierarchies-in-visual-studio.md)

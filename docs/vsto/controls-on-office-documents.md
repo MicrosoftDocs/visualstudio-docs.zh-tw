@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 160897a37ff6a8b335479b42a80f4186f176cab6
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254407"
 ---
 # <a name="controls-on-office-documents"></a>Office 檔上的控制項
@@ -45,7 +45,7 @@ ms.locfileid: "71254407"
 
  提供使用 Excel 和 Word 文件上的 Windows Forms 控制項和 Windows Forms 上的控制項有何差異的詳細資訊。
 
-- [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [在執行時間將控制項新增至 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)
 
  描述如何加入 Windows Forms 控制項和主控制項至 Word 和 Excel 文件，並描述這些控制項如何在文件中保存的限制。
 

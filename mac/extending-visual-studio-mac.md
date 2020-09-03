@@ -7,10 +7,10 @@ ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
 ms.openlocfilehash: dd4db2502c65e9330bde5f475fc97b2e86a49e4a
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80544032"
 ---
 # <a name="extending-visual-studio-for-mac"></a>擴充 Visual Studio for Mac
@@ -23,7 +23,7 @@ Visual Studio for Mac 包含一組稱為「延伸模組套件」** 的模組。 
 
 ![增益集架構](media/extending-visual-studio-mac-addin1.png)
 
-為了讓延伸模組套件從 Visual Studio for Mac 建置，它必須具有從 Visual Studio for Mac IDE 內現有擴充點建置的延伸模組。 當延伸模組 _套件依賴載入_宏主機中所定義的擴充點時，就表示該延伸模組套件具有相依性   。
+為了讓延伸模組套件從 Visual Studio for Mac 建置，它必須具有從 Visual Studio for Mac IDE 內現有擴充點建置的延伸模組。 當延伸模組套件依賴增益集主機中所定義的擴充點時，即表示 _相依于_   該擴充功能套件。
 
 此模組化設計的好處是，Visual Studio for Mac 可以擴充 -- 有許多擴充點可供自訂延伸模組套件建置之用。 目前的延伸模組套件範例包括支援 C# 和 F#、偵錯工具和專案範本。
 
@@ -180,13 +180,13 @@ Visual Studio for Mac [引進新的原生 Cocoa 文字編輯器 UI](https://docs
 * [語言服務及編輯器擴充點](/visualstudio/extensibility/language-service-and-editor-extension-points)
 * [編輯器架構影片簡介](https://www.youtube.com/watch?v=PkYVztKjO9A) \(英文\)
 
-有了這些資源，您必須熟悉的主要概念是 [`ITextBuffer`](/dotnet/api/microsoft.visualstudio.text.itextbuffer) 和 [`ITextView`](/dotnet/api/microsoft.visualstudio.text.editor.itextview) ：
+有了這些資源之後，您需要熟悉的主要概念是 [`ITextBuffer`](/dotnet/api/microsoft.visualstudio.text.itextbuffer) 和 [`ITextView`](/dotnet/api/microsoft.visualstudio.text.editor.itextview) ：
 
 * `ITextBuffer` 是可隨時間變更的文字記憶體內代表。 `ITextBuffer`上的 `CurrentSnapshot` 屬性會傳回緩衝區 (`ITextSnapshot` 執行個體) 目前內容的「不可變」** 代表。 對緩衝區進行變更時，CurrentSnapshot 屬性會更新為最新版本。 分析器可以檢查任何執行緒上的文字快照集，且其內容保證永遠不會變更。
 
 * `ITextView` 是 `ITextBuffer` 如何在編輯器控項畫面中轉譯的 UI 代表。 它有其文字緩衝區的參考，以及 `Caret`、`Selection`和其他 UI 相關的概念。
 
-針對指定的 [`MonoDevelop.Ide.Gui.Document`](http://source.monodevelop.com/#MonoDevelop.Ide/MonoDevelop.Ide.Gui/Document.cs,4e960d4735f089b5) ，您可以分別抓取相關的基礎 `ITextBuffer` 和 `ITextView` via `Document.GetContent<ITextBuffer>()` 和 `Document.GetContent<ITextView>()` 。
+針對指定的 [`MonoDevelop.Ide.Gui.Document`](http://source.monodevelop.com/#MonoDevelop.Ide/MonoDevelop.Ide.Gui/Document.cs,4e960d4735f089b5) ，您可以分別取得相關聯的基礎 `ITextBuffer` 和 `ITextView` via `Document.GetContent<ITextBuffer>()` `Document.GetContent<ITextView>()` 。
 
 ## <a name="additional-information"></a>其他資訊
 

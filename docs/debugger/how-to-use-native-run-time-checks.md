@@ -38,14 +38,14 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5fccf510719aa5e960c12fdc807d6375ee31d3d0
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348843"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>如何：使用原生執行階段檢查
-在 Visual Studio c + + 專案中，您可以使用原生[runtime_checks](/cpp/preprocessor/runtime-checks)來攔截常見的執行階段錯誤，例如：
+在 Visual Studio c + + 專案中，您可以使用原生 [runtime_checks](/cpp/preprocessor/runtime-checks) 來攔截常見的執行階段錯誤，例如：
 
 - 堆疊指標損壞
 
@@ -59,7 +59,7 @@ ms.locfileid: "85348843"
 
   如果使用具有最佳化 ( **/O** ) 組建的 **/RTC**，便會造成編譯器錯誤。 如果您在最佳化組建中使用 `runtime_checks` Pragma，此 Pragma 會失效。
 
-  如果要偵錯的程式已啟用執行階段錯誤檢查，則當這個程式發生執行階段錯誤時，預設動作是停止和中斷偵錯工具。 您可以變更任何執行階段檢查的這個預設行為。 如需詳細資訊，請參閱[使用偵錯工具管理例外](../debugger/managing-exceptions-with-the-debugger.md)狀況。
+  如果要偵錯的程式已啟用執行階段錯誤檢查，則當這個程式發生執行階段錯誤時，預設動作是停止和中斷偵錯工具。 您可以變更任何執行階段檢查的這個預設行為。 如需詳細資訊，請參閱 [使用偵錯工具管理例外](../debugger/managing-exceptions-with-the-debugger.md)狀況。
 
   下列程序描述如何在偵錯組建中啟用原生執行階段檢查，以及如何修改原生執行階段檢查行為。
 

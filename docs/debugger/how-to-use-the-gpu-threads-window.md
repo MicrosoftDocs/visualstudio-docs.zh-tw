@@ -19,14 +19,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cbbb49a1017fb0bc65300f3c16050db4954e1103
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348713"
 ---
-# <a name="how-to-use-the-gpu-threads-window-c"></a>如何：使用 GPU 執行緒視窗（c + +）
-在 [GPU 執行緒] 視窗中，您可以檢查和處理正在偵錯的應用程式中，於 GPU 上執行的執行緒。 如需在 GPU 上執行之應用程式的詳細資訊，請參閱[C++ AMP 總覽](/cpp/parallel/amp/cpp-amp-overview)。
+# <a name="how-to-use-the-gpu-threads-window-c"></a>如何：使用 GPU 執行緒視窗 (c + +) 
+在 [GPU 執行緒] 視窗中，您可以檢查和處理正在偵錯的應用程式中，於 GPU 上執行的執行緒。 如需在 GPU 上執行之應用程式的詳細資訊，請參閱 [C++ AMP 總覽](/cpp/parallel/amp/cpp-amp-overview)。
 
  [GPU 執行緒] 視窗包含一個資料表，其中每一個資料列代表一組在所有資料行中具有相同值的 GPU 執行緒。 您可以將資料行中的項目排序、重新排列、移除和設為群組。 您可以從 [GPU 執行緒] 視窗將執行緒加上旗標、取消旗標、凍結 (暫止) 和解除凍結 (繼續)。 下列各資料行會在 [GPU 執行緒] 視窗中顯示：
 
@@ -52,7 +52,7 @@ ms.locfileid: "85348713"
 
 ### <a name="to-display-the-gpu-threads-window"></a>若要顯示 GPU 執行緒視窗
 
-1. 在**方案總管**中，開啟專案的快捷方式功能表，然後選擇 [**屬性**]。
+1. 在 **方案總管**中，開啟專案的快捷方式功能表，然後選擇 [ **屬性**]。
 
 2. 在專案的 [屬性頁]**** 視窗中，選擇 [組態屬性]**** 中的 [偵錯]****。
 

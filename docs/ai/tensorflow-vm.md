@@ -12,10 +12,10 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 6cd833a687591ba4f49e785746381f9a5d738f5e
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80638759"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>在雲端中定型 TensorFlow 模型
@@ -24,7 +24,7 @@ ms.locfileid: "80638759"
 
 MNIST 資料庫具有 60,000 個範例的定型集，以及 10,000 個手寫數字範例的測試集。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 開始之前，請確定您已安裝並設定下列項目：
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>設定 Azure 深度學習虛擬機器
@@ -69,9 +69,9 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 - 在 [使用叢集]**** 清單中，選取要提交作業的目標遠端電腦 (字首為 "rm:")。
 
-- 輸入 [**作業名稱**]。
+- 輸入 **作業名稱**。
 
-- 按一下 [提交] 。
+- 按一下 [提交]  。
 
 ## <a name="check-status-of-job"></a>檢查作業的狀態
 若要查看作業的狀態和詳細資料：在**伺服器總管**中展開您提交作業的目標虛擬機器。 按兩下 [作業]****。

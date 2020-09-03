@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 117d16a9c010bbed2c14544f6cc94c4782701e34
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468445"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
-抓取列舉序列中指定數目的記錄。
+捕獲列舉序列中指定的記錄數目。
 
 ## <a name="syntax"></a>語法
 
@@ -37,7 +37,7 @@ HRESULT Next ( 
 #### <a name="parameters"></a>參數
  celt
 
-在要抓取的記錄數目。
+在要取出的記錄數目。
 
  cbData
 
@@ -45,15 +45,15 @@ HRESULT Next ( 
 
  pcbData
 
-脫銷傳回傳回的位元組數目。 如果 `data` 是 Null，則會 `pcbData` 包含所有要求的記錄可用的資料位元組總數。
+擴展傳回傳回的位元組數目。 如果 `data` 是 Null，則 `pcbData` 包含所有所要求記錄的可用資料位元組總數。
 
  data[]
 
-脫銷要填入 debug 資料流程記錄資料的緩衝區。
+擴展要填入 debug stream 記錄資料的緩衝區。
 
  pceltFetched
 
-[in、out]傳回中的記錄數目 `data` 。
+[in，out]傳回中的記錄數目 `data` 。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回 `S_OK`。 如果沒有其他記錄，則傳回 `S_FALSE` 。 否則會傳回錯誤碼。

@@ -12,13 +12,13 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: f696f5c2696ef15c133c9011b4235bf6714742e7
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80638570"
 ---
-# <a name="visual-studio-tools-for-ai"></a>適用於 AI 的 Visual Studio Tools
+# <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
 Visual Studio Tools for AI 是建置、測試及部署深度學習/ AI 解決方案的延伸模組。 它與 Azure Machine Learning 緊密整合以取得強大的測試功能，包括 (但不限於) 將資料準備和模型定型作業明確提交至不同的計算目標。 此外，它也提供自訂計量的支援並執行歷程記錄追蹤，以便進行資料科學重現與稽核。 符合企業需求的共同作業，可安全地與其他人共同處理專案。
 

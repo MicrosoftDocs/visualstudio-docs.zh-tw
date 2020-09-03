@@ -1,5 +1,5 @@
 ---
-title: 巢狀專案的精靈支援 |Microsoft Docs
+title: 針對嵌套專案的 Wizard 支援 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,22 +13,22 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 206fd12ea8f198e1659a49ed566e726e49878c53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180344"
 ---
 # <a name="wizard-support-for-nested-projects"></a>巢狀專案的精靈支援
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-IDE 執行兩個可實作巢狀專案的父專案的精靈：**新的專案**精靈並**加入項目**精靈。  
+IDE 會執行兩個嚮導，讓嵌套專案的父專案可以執行： [ **新增專案** ] 和 [ **加入專案** ] wizard。  
   
- 如果使用者啟動**新的專案**精靈選取**新增專案**，然後按一下**新專案**[檔案] 功能表上，或藉由選取**新增**然後按一下滑鼠右鍵**新的專案**在 [方案總管] 中，IDE 會執行**AddProject**命令和父專案的實作**AddProject**命令會傳回範本專案檔中或具有一組內容參數的精靈 (.vsz) 檔案。  
+ 如果使用者在 [檔案] 功能表上選取 [**加入專案**]，然後按一下 [**新增**專案]，或在 [方案總管] 中選取 [**加入**] 和 [以滑鼠右鍵按一下**新專案**] 來啟動 [**新增**專案]，IDE 會執行**AddProject**命令，而**AddProject**命令的父專案執行會傳回範本專案檔，或包含一組內容參數的 wizard ( .vsz) 檔。  
   
- 同樣地，父專案的實作**AddItem**精靈會傳回具有一組不同的內容參數的.vsz 檔案。  
+ 同樣地，父專案的 **AddItem** 嚮導的執行會傳回具有不同內容參數集的 .vsz 檔案。  
   
- 如需有關精靈的詳細資訊，請參閱[精靈 (。在 Vsz) 檔案](../../extensibility/internals/wizard-dot-vsz-file.md)，[內容參數](../../extensibility/internals/context-parameters.md)並[註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)。  
+ 如需有關嚮導的詳細資訊，請參閱 [Wizard (。.Vsz) ](../../extensibility/internals/wizard-dot-vsz-file.md)檔案、 [內容參數](../../extensibility/internals/context-parameters.md) ，以及 [註冊專案和專案範本](../../extensibility/internals/registering-project-and-item-templates.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   
