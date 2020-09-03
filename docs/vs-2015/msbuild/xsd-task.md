@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0c9dcc0d09887cacca7e6cdaa2e4f2b719c6451c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826251"
 ---
 # <a name="xsd-task"></a>XSD 工作
@@ -38,25 +38,25 @@ ms.locfileid: "67826251"
   
 - **AdditionalOptions**  
   
-     選擇性的 **String** 參數。  
+     選擇性的 **字串** 參數。  
   
-     選項的清單，如命令列上所指定。 例如 " */option1 /option2 /option#* "。 使用這個參數來指定任何其他 **XSD** 工作參數未表示的選項。  
+     選項的清單，如命令列上所指定。 例如，"*/option1/option2/option #*"。 使用這個參數來指定任何其他 **XSD** 工作參數未表示的選項。  
   
 - **GenerateFromSchema**  
   
-  選擇性的 **String** 參數。  
+  選擇性的 **字串** 參數。  
 
   指定從指定的結構描述產生的類型。  
 
   指定下列其中一個值，每個值會分別對應至一個 XSD 選項。  
 
-  - **classes** -  **/classes**  
+  - **類別**  - **/classes**  
 
-  - **dataset** -  **/dataset**  
+  - **資料集**  - **/dataset**  
   
-- **Language**  
+- **語言**  
   
-     選擇性的 **String** 參數。  
+     選擇性的 **字串** 參數。  
   
      指定產生的程式碼要使用的程式語言。  
   
@@ -64,11 +64,11 @@ ms.locfileid: "67826251"
   
 - **Namespace**  
   
-     選擇性的 **String** 參數。  
+     選擇性的 **字串** 參數。  
   
      指定產生的型別的執行階段命名空間。  
   
-- **Sources**  
+- **來源**  
   
      必要的 `ITaskItem[]` 參數。  
   
@@ -76,13 +76,13 @@ ms.locfileid: "67826251"
   
 - **SuppressStartupBanner**  
   
-     選擇性的 **Boolean** 參數。  
+     選擇性的 **布林值** 參數。  
   
      如果是 `true`，當工作開始時，會防止顯示著作權和版本號碼訊息。  
   
 - **TrackerLogDirectory**  
   
-     選擇性的 **String** 參數。  
+     選擇性的 **字串** 參數。  
   
      指定追蹤器記錄檔的目錄。  
   

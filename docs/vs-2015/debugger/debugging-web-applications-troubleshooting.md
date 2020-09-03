@@ -1,5 +1,5 @@
 ---
-title: 偵錯 Web 應用程式：疑難排解 | Microsoft Docs
+title: Web 應用程式的偵錯工具：疑難排解 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ac45b72b97a759e79a984f62421997125c5f1a0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152867"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>偵錯 Web 應用程式：疑難排解
@@ -31,7 +31,7 @@ ms.locfileid: "68152867"
 本節包含可以用來解決錯誤的通用程序。  
   
 ## <a name="in-this-section"></a>本節內容  
- [如何：檢查 IIS 屬性設定](../debugger/how-to-verify-iis-property-settings.md)  
+ [如何：驗證 IIS 屬性設定](../debugger/how-to-verify-iis-property-settings.md)  
  本節將會解釋如何正確地設定 IIS 的屬性以啟用偵錯。  
   
 ## <a name="related-sections"></a>相關章節  

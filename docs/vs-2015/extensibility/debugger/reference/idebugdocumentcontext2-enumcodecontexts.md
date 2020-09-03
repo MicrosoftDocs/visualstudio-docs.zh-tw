@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::EnumCodeContexts |Microsoft Docs
+title: IDebugDocumentCoNtext2：： EnumCodeCoNtexts |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f34013a827b97234c87e98c6022c64aca3d1a736
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144984"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取與此文件內容相關聯的所有程式碼內容的清單。  
+抓取與此檔內容相關聯的所有程式碼內容清單。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,16 +40,16 @@ int EnumCodeContexts( 
   
 #### <a name="parameters"></a>參數  
  `ppEnumCodeCxts`  
- [out]傳回[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)物件，其中包含一份程式碼內容。  
+ 擴展傳回 [IEnumDebugCodeCoNtexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) 物件，其中包含程式碼內容的清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 單一文件內容可以產生多個程式碼內容，文件使用範本時，或包含檔案。  
+ 當檔使用範本或包含檔案時，單一檔內容可以產生多個程式碼內容。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CDebugContext`公開的物件[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面。  
+ 下列範例顯示如何針對 `CDebugContext` 公開 [IDebugDocumentCoNtext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 介面的簡單物件，執行這個方法。  
   
 ```cpp#  
 HRESULT CDebugContext::EnumCodeContexts(IEnumDebugCodeContexts2 **ppEnumCodeCxts)    
@@ -108,5 +108,5 @@ HRESULT CDebugContext::EnumCodeContexts(IEnumDebugCodeContexts2 **ppEnumCodeCxts
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
+ [IDebugDocumentCoNtext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

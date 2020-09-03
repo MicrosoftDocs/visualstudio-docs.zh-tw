@@ -11,16 +11,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1ad768419786f78277b791997538785265a24c0f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153101"
 ---
 # <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-表示符號提供者可直接存取中繼資料和核心符號的介面。  
+代表可直接存取中繼資料和核心符號介面的符號提供者。  
   
 ## <a name="syntax"></a>語法  
   
@@ -29,23 +29,23 @@ IDebugSymbolProviderDirect: IUnknown
 ```  
   
 ## <a name="methods"></a>方法  
- 這個介面會實作下列方法：  
+ 此介面會執行下列方法：  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
-|[GetAppIDFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getappidfromaddress.md)|擷取指定的偵錯位址的應用程式網域識別碼。|  
-|[GetCurrentModulesInfo](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesinfo.md)|擷取符號群組中的模組的相關資訊。|  
-|[GetCurrentModulesState](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesstate.md)|擷取符號提供者為成員的符號群組的相關資訊。|  
-|[GetMetaDataImport](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmetadataimport.md)|擷取中繼資料匯入資訊。|  
-|[GetMethodFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmethodfromaddress.md)|擷取在指定的偵錯位址之方法的相關資訊。|  
-|[GetSymUnmanagedReader](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getsymunmanagedreader.md)|擷取未受管理的程式碼的符號讀取器。|  
+|[GetAppIDFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getappidfromaddress.md)|根據指定的 debug 位址，抓取應用程式域識別碼。|  
+|[GetCurrentModulesInfo](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesinfo.md)|抓取符號群組中模組的相關資訊。|  
+|[GetCurrentModulesState](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesstate.md)|抓取符號提供者為其成員之符號群組的相關資訊。|  
+|[GetMetaDataImport](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmetadataimport.md)|捕獲中繼資料匯入資訊。|  
+|[GetMethodFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmethodfromaddress.md)|在指定的 debug 位址抓取方法的相關資訊。|  
+|[GetSymUnmanagedReader](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getsymunmanagedreader.md)|捕獲非受控碼的符號讀取器。|  
   
 ## <a name="remarks"></a>備註  
- 使用這個介面時，來取代大部分的其他符號提供者介面。 它提供直接存取中繼資料和`CorSym`介面。  
+ 這個介面可以用來取代大部分其他的符號提供者介面。 它可直接存取中繼資料和 `CorSym` 介面。  
   
 ## <a name="requirements"></a>需求  
- 標頭：Sh.h  
+ 標頭： Sh. h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f72b403d4c6c9cc71bc2a3fdbff8f778a44b3b55
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663067"
 ---
 # <a name="ltvargt-javascript"></a>&lt;var&gt; (JavaScript)
@@ -48,7 +48,7 @@ ms.locfileid: "72663067"
 
   `domElement` 選擇項。 這個屬性已取代為優先於其的 `type` 屬性。 這個屬性會指定所記錄的變數是否為 DOM 元素。 設定為 `true` 指定變數為 DOM 元素；否則設定為 `false`。 如果未設定 `type` 屬性，而且 `domElement` 設定為 `true`，IntelliSense 就會在執行陳述式完成時，將所記錄的變數視為 `HTMLElement`。
 
-  `mayBeNull` 選擇項。 指定所記錄的變數是否可設定為 Null。 設定為 `true` 指定變數可設定為 Null；否則設定為 `false`。 預設值為 `false`。 Visual Studio 未使用這個屬性來提供 IntelliSense 資訊。
+  `mayBeNull` 選擇項。 指定所記錄的變數是否可設定為 Null。 設定為 `true` 指定變數可設定為 Null；否則設定為 `false`。 預設值是 `false`。 Visual Studio 未使用這個屬性來提供 IntelliSense 資訊。
 
   `elementType` 選擇項。 如果 `type` 是 `Array`，這個屬性會指定陣列中的元素類型。
 
@@ -56,11 +56,11 @@ ms.locfileid: "72663067"
 
   `elementDomElement` 選擇項。 這個屬性已取代為優先於其的 `elementType` 屬性。 如果 `type` 是 `Array`，這個屬性會指定陣列中的元素是否為 DOM 元素。 設定為 `true` 指定該元素為 DOM 元素；否則設定為 `false`。 如果未設定 `elementType` 屬性，而且 `elementDomElement` 設定為 `true`，IntelliSense 就會在執行陳述式完成時，將陣列中的每個元素視為 `HTMLElement`。
 
-  `elementMayBeNull` 選擇項。 如果 `type` 是 `Array`，會指定陣列中的元素是否可設定為 Null。 設定為 `true` 指出陣列中的元素可設定為 Null；否則設定為 `false`。 預設值為 `false`。 Visual Studio 未使用這個屬性來提供 IntelliSense 資訊。
+  `elementMayBeNull` 選擇項。 如果 `type` 是 `Array`，會指定陣列中的元素是否可設定為 Null。 設定為 `true` 指出陣列中的元素可設定為 Null；否則設定為 `false`。 預設值是 `false`。 Visual Studio 未使用這個屬性來提供 IntelliSense 資訊。
 
   `helpKeyword` 選擇項。 F1 說明的關鍵字。
 
-  `locid` 選擇項。 關於變數的當地語系化資訊識別項。 該識別項會是成員識別碼，或對應由 OpenAjax 中繼資料所定義訊息包中的 `name` 屬性值。 識別項類型會依據在 [\<loc>](../ide/loc-javascript.md) 標籤中指定的格式而有所不同。
+  `locid` 選擇項。 關於變數的當地語系化資訊識別項。 該識別項會是成員識別碼，或對應由 OpenAjax 中繼資料所定義訊息包中的 `name` 屬性值。 識別碼類型取決於在標記中指定的格式 [\<loc>](../ide/loc-javascript.md) 。
 
   `description` 選擇項。 變數的描述。
 
@@ -82,4 +82,4 @@ var Rectangle = {
 ```
 
 ## <a name="see-also"></a>另請參閱
- [XML 文件註解](../ide/xml-documentation-comments-javascript.md)
+ [XML 檔批註](../ide/xml-documentation-comments-javascript.md)

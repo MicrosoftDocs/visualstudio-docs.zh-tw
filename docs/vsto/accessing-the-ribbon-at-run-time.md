@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7c7fdda6234f1e98117cdb1bf047762ed9d4621a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255750"
 ---
 # <a name="access-the-ribbon-at-run-time"></a>在執行時間存取功能區
@@ -31,15 +31,15 @@ ms.locfileid: "71255750"
 ## <a name="access-the-ribbon-by-using-the-globals-class"></a>使用 Globals 類別存取功能區
  您可以使用 `Globals` 類別，從專案中任意位置存取文件層級專案或 VSTO 增益集專案中的功能區。
 
- 如需類別的`Globals`詳細資訊，請參閱[全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。
+ 如需類別的詳細資訊 `Globals` ，請參閱 [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。
 
  以下範例將使用 `Globals` 類別存取名為 `Ribbon1` 的自訂功能區，並且將出現在功能區下拉式方塊中的文字設定為 `Hello World`。
 
  [!code-vb[Trin_Outlook_FR_Access#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#4)]
  [!code-csharp[Trin_Outlook_FR_Access#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#4)]
 
-## <a name="access-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>存取出現在特定 Outlook Inspector 視窗中的功能區集合
- 您可以存取出現*在 Outlook 偵測*器中的功能區集合。 [檢查] 是一個視窗，會在使用者執行特定工作 (例如建立電子郵件訊息) 時，在 Outlook 中開啟。 若要存取 [檢查] 視窗的功能區，請呼叫 `Globals` 類別的 `Ribbons` 屬性，並傳入代表 [檢查] 的 <xref:Microsoft.Office.Interop.Outlook.Inspector> 物件。
+## <a name="access-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>存取出現在特定 [Outlook 檢查] 視窗中的功能區集合
+ 您可以存取出現在 Outlook *檢查*器中的功能區集合。 [檢查] 是一個視窗，會在使用者執行特定工作 (例如建立電子郵件訊息) 時，在 Outlook 中開啟。 若要存取 [檢查] 視窗的功能區，請呼叫 `Globals` 類別的 `Ribbons` 屬性，並傳入代表 [檢查] 的 <xref:Microsoft.Office.Interop.Outlook.Inspector> 物件。
 
  以下範例將取得目前擁有焦點之 [檢查] 中的功能區集合。 然後這個範例會存取名為 `Ribbon1` 的功能區，並且將出現在功能區上下拉式方塊中的文字設定為 `Hello World`。
 

@@ -1,5 +1,5 @@
 ---
-title: Web 專案的基本資訊 |Microsoft Docs
+title: Web 專案基本概念 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,53 +11,53 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 95c9f7c530d50a7eb89ebe33fad3862f036972d1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825620"
 ---
 # <a name="web-project-essentials"></a>Web 專案的基本資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Web 專案建立 Web 應用程式。 您可以使用 Web 專案來建立智慧型 Web 網頁的 Web 應用程式。 智慧型的網頁上具有呈現網頁上，依需求的伺服器端程式碼。  
+Web 專案會建立 Web 應用程式。 您可以使用 Web 專案建立具有智慧型網頁的 Web 應用程式。 智慧型網頁具有可隨選轉譯網頁的伺服器端程式碼。  
   
- 使用傳統的程式設計語言，例如[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../../includes/csprcs-md.md)]，您可以建立智慧型 Web 頁面，來收集和處理來自使用者的資訊、 將它儲存在資料庫中，等等。  
+ 使用傳統的程式設計語言（例如 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 或 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] ），您可以建立智慧型網頁來收集和處理使用者的資訊，將資訊儲存在資料庫中等等。  
   
-- 程式碼後置模型會將相依的原始程式碼檔案擁有.asmx 的檔案副檔名.aspx 網頁關聯。 比方說，hello.aspx 可能有相依的原始程式碼檔案 hello.aspx.cs。  
+- 程式碼後端模型會將相依原始程式碼檔與副檔名為 .aspx 或 .asmx 的網頁產生關聯。 例如，default.aspx 可能會有相依的原始程式碼檔 hello.aspx.cs。  
   
-- 智慧網頁相關聯的伺服器端程式碼會編譯為可執行檔位於網站的 /bin 資料夾中。  
+- 與智慧網頁相關聯的伺服器端程式碼會編譯成位於網站/bin 資料夾中的可執行檔。  
   
-- 其他來源的程式碼檔案，例如與特定的網頁上，使用的協助程式類別位於網站 /App_Code 資料夾中。  
+- 其他原始程式碼檔（例如與特定網頁沒有關聯的 helper 類別）位於網站/App_Code 資料夾中。  
   
-  - 網站專案 (WSP) 會產生一個可執行檔，每個智慧的網頁。 從存放在 /App_Code 資料夾任何原始程式碼檔，會產生額外的可執行檔。  
+  -  (WSP) 的網站專案會為每個智慧型網頁產生一個可執行檔。 其他可執行檔是從/App_Code 資料夾中的任何原始程式碼檔產生。  
 
-  - Web 應用程式專案 (WAP) 會產生單一的可執行檔的所有智慧網頁，以及在 /App_Code 資料夾中的所有原始程式檔中結合程式碼。  
+  -  (WAP) 的 Web 應用程式專案會產生單一可執行檔，結合所有智慧型網頁的程式碼，以及/App_Code 資料夾中的所有原始程式檔。  
   
-- Web 專案的方案檔位於與網站本身分開。 根據預設，方案檔會位於 \Documents and 設定\\*YourAccount*\My 文件\\ *\<Visual Studio # # # >* \Projects\\ *YourWebSite*。  
+- Web 專案的方案檔是與網站本身分開定位。 根據預設，解決方案檔位於 \Documents and Settings \\ *您帳戶*\My Documents \\ *\<Visual Studio ####>* \Projects \\ *YourWebSite*。  
   
     > [!NOTE]
-    > 如果您想要保留與網站的方案檔，只要那里移動，並重新開啟它。  
+    > 如果您想要將方案檔與網站保持在一起，只要將它移到該處，然後重新開啟即可。  
   
-- 如果您開啟 Visual Studio 中沒有方案檔的網站時，新的方案檔會自動產生它。  
+- 如果您在 Visual Studio 中開啟沒有方案檔的網站，則會自動產生新的方案檔。  
   
-- Web 專案會有任何專案檔案。 專案資訊會儲存在方案檔、 web.config 檔案中，和其他位置。  
+- Web 專案沒有任何專案檔。 專案資訊儲存在方案檔、web.config 檔案和其他位置。  
   
-- 將通用的屬性加入至 Web 專案會自動建立 Web 專案的方案資料夾中的儲存體檔案。  
+- 將全域屬性加入至 Web 專案時，會自動在 Web 專案方案資料夾中建立儲存體檔案。  
   
-- 使用頁面指示詞，智慧型 Web 頁面可以是相關聯的伺服器端程式設計語言或\<指令碼 runat ="server"> 標記。  
+- 您可以使用 Page 指示詞或標記，將智慧型網頁與伺服器端程式設計語言相關聯 \<script runat="server"> 。  
   
-- 此外，網頁可以有任意任何的數目指令碼語言撰寫的用戶端指令碼區塊。  
+- 此外，Web pages 可以有任意數目的用戶端腳本區塊，以任何指令碼語言撰寫。  
   
-- 藉由加入專案和項目範本和註冊，以實作網站專案系統[!INCLUDE[vwprvw](../../includes/vwprvw-md.md)]專案。  
+- 網站專案系統是藉由將專案和專案範本和註冊新增至專案來執行 [!INCLUDE[vwprvw](../../includes/vwprvw-md.md)] 。  
   
-- WAP 系統會實作為專案子類型，也稱為專案的類別。 [!INCLUDE[vwprvw](../../includes/vwprvw-md.md)]專案 WAP 子類型，來建立 WAP 系統的特色。 如需有關專案子類型的詳細資訊，請參閱[專案子類型](../../extensibility/internals/project-subtypes.md)。  
+- WAP 系統會實作為專案子類型，也稱為專案類別。 [!INCLUDE[vwprvw](../../includes/vwprvw-md.md)]Wap 子類型會 flavored 專案，以建立 wap 系統。 如需專案子類型的詳細資訊，請參閱 [專案子類型](../../extensibility/internals/project-subtypes.md)。  
   
-- 智慧型的網頁會結合伺服器端程式設計語言中的 HTML。 伺服器端語言稱為自主的語言。 若要支援包含的語言，必須實作的 Web 專案系統<xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage>系列的介面。  
+- 智慧型網頁結合了 HTML 與伺服器端程式設計語言。 伺服器端語言稱為「包含的語言」。 為了支援包含的語言，Web 專案系統必須執行 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> 介面系列。  
   
-  - 自主的語言支援在編輯器中，HTML 語言服務必須延後到自主的語言服務顯示包含的語言代碼。  
+  - 為了在編輯器中支援包含的語言，HTML 語言服務必須延後將內含的語言程式碼顯示為內含語言服務。  
 
-  - 錯誤標記 （紅色曲線） 一定要建立程式碼編輯器的主要緩衝區中。  
+  - 錯誤標記 (red 標記) 應該一律在程式碼編輯器的主要緩衝區中建立。  
   
 ## <a name="see-also"></a>另請參閱  
  [Web 專案](../../extensibility/internals/web-projects.md)

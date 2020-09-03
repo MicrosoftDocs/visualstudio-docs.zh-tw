@@ -1,5 +1,5 @@
 ---
-title: IEE視覺化服務::獲取自訂檢視器清單 |微軟文件
+title: IEEVisualizerService：： GetCustomViewerList |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f3808ad6fb511270ee3825601c476f10a8b77124
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718012"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
-此方法返回此服務知道的類型可視化器的清單。
+這個方法會傳回這項服務所知道的視覺化型別清單。
 
 ## <a name="syntax"></a>語法
 
@@ -47,24 +47,24 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>參數
 `celtSkip`\
-[在]要跳過的視覺化工具數。
+在要跳過的視覺化檢視數目。
 
 `celRequested`\
-[在]要檢索的可視化工具數(也指定`rgViewers`數位列的大小)。
+在要抓取的視覺化檢視數目 (也會指定 `rgViewers` 陣列) 的大小。
 
 `rgViewers`\
-[進出]要填充[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)結構的陣列。
+[in，out]要填入之 [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) 結構的陣列。
 
 `pceltFetched`\
-[出]實際檢索的可視化工具數。
+擴展實際抓取的視覺化檢視數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
-- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)將請求傳遞給此方法,作為其對類型可視化工具的支援的一部分。 如果表示式評估器還提供相同類型的自訂檢視器,則可以將這些自定義檢視器的[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)結構追加到清單中。 確保[GetCustomViewerCount 反映](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)這些額外的查看器。
+- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 會將要求傳遞給這個方法，作為其對視覺化類型的支援。 如果運算式評估工具也提供相同類型的自訂檢視器，它可以將這些自訂檢視器的適當填滿 [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) 結構附加至清單。 請確定 [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) 會反映這些額外的檢視器。
 
- 有關可視化工具和查看器之間的差異的詳細資訊,請參閱["類型可視化器"和"自定義檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)"。
+ 如需視覺化程式和檢視器之間差異的詳細資訊，請參閱 [型別視覺化程式和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) 。
 
 ## <a name="see-also"></a>另請參閱
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

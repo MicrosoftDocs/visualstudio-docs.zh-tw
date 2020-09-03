@@ -9,10 +9,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0ec4c0a9594202b6755500d683c426238264aec3
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586977"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>使用自動程式化 UI 測試來測試 SharePoint 2010 應用程式
@@ -20,23 +20,23 @@ ms.locfileid: "82586977"
 
 在 SharePoint 應用程式中包含自動程式碼 UI 測試，可讓您驗證整個應用程式 (包括其 UI 控制項) 是否正常運作。 自動程式碼 UI 測試也可以驗證使用者介面中的值和邏輯。
 
- **Requirements**
+ **需求**
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>有關自動程式碼 UI 測試，還有什麼是我應該知道的?
  若要深入了解使用自動程式化 UI 測試的優點，請參閱[使用使用者介面自動化測試程式碼](../test/use-ui-automation-to-test-your-code.md)和[使用 Visual Studio 2012 測試持續傳遞 - 第 5 章：自動化系統測試 (英文)](https://msdn.microsoft.com/library/jj159335.aspx)。
 
- **注意事項**
+ **備註**
 
-- ![必要條件 prereq](../test/media/prereq.png "Prereq")SharePoint 應用程式的自動程式碼 UI 測試僅支援 SharePoint 2010。
+- ![必要條件](../test/media/prereq.png ">prereq") 只有 SharePoint 2010 支援 SharePoint 應用程式的自動程式碼 UI 測試。
 
-- ![必要條件 prereq](../test/media/prereq.png "Prereq")不支援 SharePoint 應用程式中的 Visio 和 PowerPoint 2010 控制項。
+- ![必要條件](../test/media/prereq.png ">prereq") 不支援 SharePoint 應用程式中的 Visio 和 PowerPoint 2010 控制項。
 
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>建立 SharePoint 應用程式的自動程式碼 UI 測試
  為您的 SharePoint 2010 應用程式[建立自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) 的方式，與為其他類型應用程式建立測試的方式相同。 所有控制項都可在 Web 編輯介面上錄製和播放。 選取分類和 Web 組件的介面都是標準的 Web 控制項。
 
- ![SharePoint web 元件](../test/media/cuit-sharepoint.png "CUIT_SharePoint")
+ ![SharePoint 網頁元件](../test/media/cuit-sharepoint.png "CUIT_SharePoint")
 
 > [!NOTE]
 > 如果您正在錄製動作，請在產生程式碼之前驗證動作。 由於有多個行為與滑鼠停留相關聯，因此它預設為開啟狀態。 從您的自動程式碼 UI 測試中移除多餘的停留動作時務必小心。 您可以編輯用於測試的程式碼來進行這項作業，或是使用 [自動程式碼 UI 測試編輯器](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
@@ -60,7 +60,7 @@ Mouse.DoubliClick(uiItemCell,new Point(31,14));
 uiGridKeyboardInputEdit.Text=value;
 ```
 
- 如果您在非空白儲存格上錄製動作，則錄製過程會變得較複雜，因為您將文字加入至儲存格時，會加入一個新的 \<div> 控制項做為儲存格的子系。 新的 \<div> 控制項會包含您剛輸入的文字。 錄製器需要錄製新 \<div> 控制項上的動作，但是卻無法錄製，因為在輸入測試之前，新的 \<div> 控制項並不存在。 您必須手動進行下列程式碼變更，才能解決這個問題。
+ 如果您在非空白儲存格上錄製動作，則錄製會變得更複雜，因為當您將文字加入至儲存格時，會將新的 \<div> 控制項加入成為儲存格的子系。 新的 \<div> 控制項包含您剛輸入的文字。 錄製器需要錄製新控制項上的動作 \<div> ，但無法完成，因為在 \<div> 輸入測試之前，新的控制項不存在。 您必須手動進行下列程式碼變更，才能解決這個問題。
 
 1. 移至儲存格初始化，並將 `RowIndex` 和 `ColumnIndex` 設為主要屬性：
 
@@ -137,11 +137,11 @@ uiGridKeyboardInputEdit.Text=value;
 
  [自動程式碼 UI 測試的內容索引](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
-### <a name="guidance"></a>指導
+### <a name="guidance"></a>指引
  [使用 Visual Studio 2012 測試持續傳遞 - 第 5 章：自動化系統測試](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="forum"></a>論壇
  [Visual Studio ALM + Team Foundation Server 部落格](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)
 
 ## <a name="see-also"></a>另請參閱
- [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md) [Web 效能和負載測試 sharepoint 2010 和2013應用程式](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)[建立 sharepoint 方案](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)[驗證和](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)偵測 sharepoint 程式碼[建立和](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)程式碼剖析 sharepoint 方案[分析 sharepoint 應用程式的效能](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)
+ [使用消費者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md) [Web 效能和負載測試 sharepoint 2010 和2013應用程式](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)[建立 sharepoint 方案](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)[驗證和](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)偵測 sharepoint 程式碼[建立和調試](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)[程式分析 sharepoint 應用程式效能的](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)sharepoint 方案

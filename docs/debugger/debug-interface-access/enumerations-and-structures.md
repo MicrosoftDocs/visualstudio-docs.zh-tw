@@ -16,15 +16,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c7441e25533ca29f84d55779942b0bfb785dd9f
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468655"
 ---
 # <a name="enumerations-and-structures"></a>列舉和結構
 
-這些是 DIA SDK 所使用的列舉和結構。
+這些是 DIA SDK 使用的列舉和結構。
 
 ## <a name="in-this-section"></a>本節內容
 
@@ -36,11 +36,11 @@ ms.locfileid: "85468655"
 
 - [CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)
 
- 指定成員函式和變數的可見度範圍（存取層級）。
+ 指定成員函式和變數的可視性範圍 (存取層級) 。
 
 - [CV_call_e 列舉](../../debugger/debug-interface-access/cv-call-e.md)
 
- 指定函式的呼叫慣例。
+ 指定函數的呼叫慣例。
 
 - [CV_CFL_LANG 列舉](../../debugger/debug-interface-access/cv-cfl-lang.md)
 
@@ -52,7 +52,7 @@ ms.locfileid: "85468655"
 
 - [CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)
 
- 指定目標暫存器。
+ 指定目標注冊。
 
 - [DataKind 列舉](../../debugger/debug-interface-access/datakind.md)
 
@@ -60,7 +60,7 @@ ms.locfileid: "85468655"
 
 - [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)
 
- 表示符號中包含的位置資訊類型。
+ 指出符號中包含的位置資訊種類。
 
 - [MemoryTypeEnum 列舉](../../debugger/debug-interface-access/memorytypeenum.md)
 
@@ -84,7 +84,7 @@ ms.locfileid: "85468655"
 
 - [UdtKind 列舉](../../debugger/debug-interface-access/udtkind.md)
 
- 描述各種不同的使用者定義型別（UDT）。
+ 描述 (UDT) 的各種使用者定義型別。
 
 ### <a name="structures"></a>結構
 

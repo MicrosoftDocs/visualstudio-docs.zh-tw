@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject2::Evaluate |Microsoft Docs
+title: IDebugFunctionObject2：：評估 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c25e62dbfc0778fb1bf07c9108c9111f3520d87f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180962"
 ---
 # <a name="idebugfunctionobject2evaluate"></a>IDebugFunctionObject2::Evaluate
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-呼叫函式，並傳回產生的值當做物件。  
+呼叫函數，並傳回產生的值做為物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,22 +46,22 @@ int Evaluate (
   
 #### <a name="parameters"></a>參數  
  `ppParams`  
- [in]陣列[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)代表輸入的參數的物件。 每個參數建立這個介面中使用其中一種建立方法。  
+ 在 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 物件的陣列，表示輸入參數。 這些參數都是使用這個介面中的其中一個 Create 方法來建立。  
   
  `dwParams`  
- [in]中的參數數目`ppParams`陣列。  
+ 在陣列中的參數數目 `ppParams` 。  
   
  `dwEvalFlags`  
- [in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列舉，指定要如何進行評估。  
+ 在 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 列舉中的旗標組合，指定評估的執行方式。  
   
  `dwTimeout`  
- [in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用**無限**無限期等候。  
+ 在指定從這個方法傳回之前等候的最長時間（以毫秒為單位）。 使用 **無限** 期等候無限期等候。  
   
  `ppResult`  
- [out]傳回**IDebugObject**表示函式物件的值。  
+ 擴展傳回 **IDebugObject** ，表示函式的值做為物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

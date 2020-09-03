@@ -11,10 +11,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: b9cfa5fb04f56795d2e49d98e9d43ed6a9fb8c33
-ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87842009"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-professional-2019"></a>Visual Studio 核心編輯器 (隨附於 Visual Studio Professional 2019)
@@ -34,7 +34,7 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ 使用者的 Visu
 
 **識別碼：** Microsoft.VisualStudio.Workload.Azure
 
-**描述：** 用來開發雲端應用程式和使用 .NET Core 和 .NET Framework 建立資源的 Azure Sdk、工具和專案。 也包含用來容器化應用程式的工具，包括 Docker 支援。
+**描述：** 使用 .NET Core 和 .NET Framework 開發雲端應用程式及建立資源的 Azure Sdk、工具和專案。 也包含容器化應用程式的工具，包括 Docker 支援。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -48,17 +48,17 @@ Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目標套件 | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 16.7.30310.162 | 必要
-Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 必要
+Net.tcp. 4.8。 | .NET Framework 4.8 SDK | 16.4.29313.120 | 必要
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開發工具 | 16.3.29207.166 | 必要
-NetCore. Component. DevelopmentTools | .NET Core 開發工具 | 16.5.29721.120 | 必要
-NetCore. Component. 3。1 | .NET Core 3.1 LTS 執行時間 | 16.7.30310.162 | 必要
-NetCore. Component SDK | .NET Core SDK | 16.7.30310.162 | 必要
-NetCore。 Web | .NET Core 開發工具 | 16.5.29721.120 | 必要
+NetCore. DevelopmentTools | .NET Core 開發工具 | 16.5.29721.120 | 必要
+NetCore. 3.1 版 | .NET Core 3.1 LTS 執行時間 | 16.7.30310.162 | 必要
+NetCore。 | .NET Core SDK | 16.7.30310.162 | 必要
+NetCore。 | .NET Core 開發工具 | 16.5.29721.120 | 必要
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 16.0.28315.86 | 必要
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 16.7.30310.162 | 必要
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 儲存體模擬器 | 16.4.29313.120 | 必要
-Microsoft.VisualStudio.Component.CloudExplorer | 雲端總管 | 16.0.28625.61 | 必要
+Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 16.4.29409.204 | 必要
 Microsoft.VisualStudio.Component.DockerTools | 容器開發工具 | 16.4.29409.204 | 必要
 Microsoft.VisualStudio.Component.FSharp | F# 語言支援 | 16.0.28315.86 | 必要
@@ -79,7 +79,7 @@ Microsoft.VisualStudio.Component.SQL.DataSources | SQL Server 支援的資料來
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 16.3.29207.166 | 必要
 Microsoft.VisualStudio.Component.TextTemplating | 文字範本轉換 | 16.0.28625.61 | 必要
-VisualStudio. Component. 3。9 | TypeScript 3.9 SDK | 16.0.30310.162 | 必要
+VisualStudio，. 3。9 | TypeScript 3.9 SDK | 16.0.30310.162 | 必要
 Microsoft.VisualStudio.Component.Web | ASP.NET 與網頁程式開發工具 | 16.0.28517.75 | 必要
 Microsoft.VisualStudio.ComponentGroup.Azure.Prerequisites | Azure 開發必要條件 | 16.7.30310.162 | 必要
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Azure WebJobs 工具 | 16.0.28621.142 | 必要
@@ -93,7 +93,7 @@ Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 �
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 執行時間 (LTS)  | 16.7.30310.162 | 建議
 Microsoft.VisualStudio.Component.AspNet45 | 進階的 ASP.NET 功能 | 16.0.28315.86 | 建議
 Microsoft.VisualStudio.Component.Azure.Kubernetes.Tools | 適用於 Kubernetes 的 Visual Studio Tools | 16.7.30310.162 | 建議
-VisualStudio. Azure Powershell | Azure Powershell | 16.5.29515.121 | 建議
+VisualStudio，Azure Powershell | Azure Powershell | 16.5.29515.121 | 建議
 Microsoft.VisualStudio.Component.Azure.ResourceManager.Tools | Azure Resource Manager 核心工具 | 16.4.29409.204 | 建議
 Microsoft.VisualStudio.Component.Azure.ServiceFabric.Tools | Service Fabric 工具 | 16.4.29313.120 | 建議
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure 雲端服務核心工具 | 16.4.29409.204 | 建議
@@ -105,7 +105,7 @@ Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools | Azure Resour
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 16.0.28517.75 | 選擇性
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 16.7.30310.162 | 選擇性
 Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 16.7.30310.162 | 選擇性
-Microsoft.Net. TargetingPack | .NET Framework 4.8 目標套件 | 16.4.29313.120 | 選擇性
+Microsoft.Net. 4.8. TargetingPack | .NET Framework 4.8 目標套件 | 16.4.29313.120 | 選擇性
 Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | .NET Framework 4.6.1 開發工具 | 16.3.29207.166 | 選擇性
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 16.3.29207.166 | 選擇性
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 16.3.29207.166 | 選擇性
@@ -133,19 +133,19 @@ Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目標套件 | 16.0.28517.75 | 建議
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目標套件 | 16.0.28517.75 | 建議
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 16.7.30310.162 | 建議
-Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 建議
+Net.tcp. 4.8。 | .NET Framework 4.8 SDK | 16.4.29313.120 | 建議
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 16.0.28517.75 | 建議
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開發工具 | 16.3.29207.166 | 建議
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開發工具 | 16.0.28516.191 | 建議
-NetCore. Component. 3。1 | .NET Core 3.1 LTS 執行時間 | 16.7.30310.162 | 建議
-NetCore. Component SDK | .NET Core SDK | 16.7.30310.162 | 建議
+NetCore. 3.1 版 | .NET Core 3.1 LTS 執行時間 | 16.7.30310.162 | 建議
+NetCore。 | .NET Core SDK | 16.7.30310.162 | 建議
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 16.0.28315.86 | 建議
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 16.7.30310.162 | 建議
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 儲存體模擬器 | 16.4.29313.120 | 建議
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure 雲端服務核心工具 | 16.4.29409.204 | 建議
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure 雲端服務建置工具 | 16.3.29207.166 | 建議
-Microsoft.VisualStudio.Component.CloudExplorer | 雲端總管 | 16.0.28625.61 | 建議
+Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 16.4.29409.204 | 建議
 Microsoft.VisualStudio.Component.DockerTools | 容器開發工具 | 16.4.29409.204 | 建議
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | 建議
@@ -163,7 +163,7 @@ Microsoft.VisualStudio.Component.SQL.DataSources | SQL Server 支援的資料來
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 16.3.29207.166 | 建議
 Microsoft.VisualStudio.Component.TextTemplating | 文字範本轉換 | 16.0.28625.61 | 建議
-VisualStudio. Component. 3。9 | TypeScript 3.9 SDK | 16.0.30310.162 | 建議
+VisualStudio，. 3。9 | TypeScript 3.9 SDK | 16.0.30310.162 | 建議
 Microsoft.VisualStudio.Component.Web | ASP.NET 與網頁程式開發工具 | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 開發工具的必要條件 | 16.4.29318.151 | 建議
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 開發 | 16.7.30310.162 | 建議
@@ -190,7 +190,7 @@ Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 與 TypeScri
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.1.28829.92 | 建議
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 建議
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.7.30310.162 | 建議
-VisualStudio. Component. 3。9 | TypeScript 3.9 SDK | 16.0.30310.162 | 建議
+VisualStudio，. 3。9 | TypeScript 3.9 SDK | 16.0.30310.162 | 建議
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 開發 | 16.7.30310.162 | 建議
 Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python 原生開發工具 | 16.2.29020.229 | 選擇性
@@ -205,7 +205,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362
 
 **識別碼：** Microsoft.VisualStudio.Workload.ManagedDesktop
 
-**描述：** 使用 c #、Visual Basic 和 F # 搭配 .NET Core 和 .NET Framework，建立 WPF、Windows Forms 和主控台應用程式。
+**描述：** 使用 c #、Visual Basic 和 F # 搭配 .NET Core 和 .NET Framework 來建立 WPF、Windows Forms 和主控台應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -213,10 +213,10 @@ Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | 必要
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 16.7.30310.162 | 必要
-Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 必要
+Net.tcp. 4.8。 | .NET Framework 4.8 SDK | 16.4.29313.120 | 必要
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開發工具 | 16.3.29207.166 | 必要
-NetCore. Component. 3。1 | .NET Core 3.1 LTS 執行時間 | 16.7.30310.162 | 必要
-NetCore. Component SDK | .NET Core SDK | 16.7.30310.162 | 必要
+NetCore. 3.1 版 | .NET Core 3.1 LTS 執行時間 | 16.7.30310.162 | 必要
+NetCore。 | .NET Core SDK | 16.7.30310.162 | 必要
 Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.2 | 必要
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed 桌面工作負載核心 | 16.4.29318.151 | 必要
 Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | .NET 桌面開發工具 | 16.7.30310.162 | 必要
@@ -234,11 +234,11 @@ Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目標套件 | 16
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 16.0.28517.75 | 建議
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開發工具 | 16.0.28516.191 | 建議
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 執行時間 (LTS)  | 16.7.30310.162 | 建議
-NetCore. Component. DevelopmentTools | .NET Core 開發工具 | 16.5.29721.120 | 建議
+NetCore. DevelopmentTools | .NET Core 開發工具 | 16.5.29721.120 | 建議
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 16.4.29409.204 | 建議
 Microsoft.VisualStudio.Component.Debugger.JustInTime | Just-in-Time 偵錯工具 | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 16.7.30310.162 | 建議
-VisualStudio. Component. DotNetModelBuilder | ML.NET 模型產生器 (預覽)  | 16.7.30310.162 | 建議
+VisualStudio. DotNetModelBuilder | ML.NET Model Builder (Preview)  | 16.7.30310.162 | 建議
 Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 工具 | 16.0.28315.86 | 建議
 Microsoft.VisualStudio.Component.FSharp | F# 語言支援 | 16.0.28315.86 | 建議
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.1.28829.92 | 建議
@@ -248,7 +248,7 @@ Component.Microsoft.Web.LibraryManager | 程式庫管理員 | 16.0.28315.86 | �
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 16.0.28517.75 | 選擇性
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 16.7.30310.162 | 選擇性
 Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 16.7.30310.162 | 選擇性
-Microsoft.Net. TargetingPack | .NET Framework 4.8 目標套件 | 16.4.29313.120 | 選擇性
+Microsoft.Net. 4.8. TargetingPack | .NET Framework 4.8 目標套件 | 16.4.29313.120 | 選擇性
 Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | .NET Framework 4.6.1 開發工具 | 16.3.29207.166 | 選擇性
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 16.3.29207.166 | 選擇性
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 16.3.29207.166 | 選擇性
@@ -266,7 +266,7 @@ Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 執行階段 | 16.0.28517.7
 Microsoft.VisualStudio.Component.SQL.DataSources | SQL Server 支援的資料來源 | 16.0.28315.86 | 選擇性
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | 選擇性
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 16.3.29207.166 | 選擇性
-VisualStudio. Component. 3。9 | TypeScript 3.9 SDK | 16.0.30310.162 | 選擇性
+VisualStudio，. 3。9 | TypeScript 3.9 SDK | 16.0.30310.162 | 選擇性
 Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 16.0.28625.61 | 選擇性
 Microsoft.VisualStudio.Component.Web | ASP.NET 與網頁程式開發工具 | 16.0.28517.75 | 選擇性
 Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362.0) | 16.1.28829.92 | 選擇性
@@ -310,11 +310,11 @@ Component.Linux.CMake | 適用於 Linux 的 C++ CMake 工具 | 16.2.29003.222 | 
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 開發 | 16.7.30310.162 | 建議
 Component.MDD.Linux.GCC.arm | 內嵌與 IoT 開發工具 | 16.5.29515.121 | 選擇性
 
-## <a name="desktop-development-with-c"></a>使用 C++ 的桌面開發
+## <a name="desktop-development-with-c"></a>使用 C++ 的傳統型開發
 
 **識別碼：** Microsoft.VisualStudio.Workload.NativeDesktop
 
-**描述：** 使用您選擇的工具（包括 MSVC、Clang、CMake 或 MSBuild），建立適用于 Windows 的新式 c + + 應用程式。
+**描述：** 使用您選擇的工具建立適用于 Windows 的新式 c + + 應用程式，包括 MSVC、Clang、CMake 或 MSBuild。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -331,7 +331,7 @@ Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.2517 | 建議
 Microsoft.VisualStudio.Component.Debugger.JustInTime | Just-in-Time 偵錯工具 | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.Component.Graphics.Tools | 適用於 DirectX 的圖形偵錯工具與 GPU 分析工具 | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.1.28829.92 | 建議
-VisualStudio. Component. ASAN | C + + AddressSanitizer (實驗性)  | 16.5.29515.121 | 建議
+VisualStudio. ASAN。 | C + + AddressSanitizer (實驗性)  | 16.5.29515.121 | 建議
 Microsoft.VisualStudio.Component.VC.ATL | 適用于最新適用于 v142 build tools (x86 & x64) 的 c + + ATL | 16.4.29313.120 | 建議
 Microsoft.VisualStudio.Component.VC.CMake.Project | 適用於 Windows 的 C++ CMake 工具 | 16.3.29103.31 | 建議
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ 分析工具 | 16.5.29515.121 | 建議
@@ -344,11 +344,11 @@ Component.Incredibuild | IncrediBuild - 組建加速 | 16.5.29721.120 | 選擇�
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.13 | 選擇性
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows 通用 CRT SDK | 16.0.28625.61 | 選擇性
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 16.0.28517.75 | 選擇性
-Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 選擇性
+Net.tcp. 4.8。 | .NET Framework 4.8 SDK | 16.4.29313.120 | 選擇性
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 16.0.28517.75 | 選擇性
 Microsoft.VisualStudio.Component.VC.140 | MSVC v140 - VS 2015 C++ 建置工具 (v14.00) | 16.7.30310.162 | 選擇性
 Microsoft.VisualStudio.Component.VC.ATLMFC | 適用于最新適用于 v142 build tools (x86 & x64) 的 c + + MFC | 16.4.29313.120 | 選擇性
-Microsoft.VisualStudio.Component.VC.CLI.Support | 適用于 v142 組建工具的 c + +/CLI 支援 (14.27)  | 16.7.30310.162 | 選擇性
+Microsoft.VisualStudio.Component.VC.CLI.Support | 適用于 v142 build tools (14.27) 的 c + +/CLI 支援 | 16.7.30310.162 | 選擇性
 Microsoft.VisualStudio.Component.VC.Llvm.Clang | 適用于 Windows (10.0.0) 的 c + + Clang 編譯器 | 16.7.30310.162 | 選擇性
 Microsoft.VisualStudio.Component.VC.Llvm.ClangToolset | 適用於 v142 建置工具的 C++ Clang-cl (x64/86) | 16.3.29207.166 | 選擇性
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | 適用於 v142 建置工具的 C++ 模組 (x64/x86 – 實驗性) | 16.0.28625.61 | 選擇性
@@ -374,7 +374,7 @@ Microsoft.VisualStudio.Component.VC.Redist.14.Latest | C++ 2019 可轉散發更�
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC 適用于 v142-VS 2019 c + + x64/x86 build tools (v 14.27)  | 16.7.30310.162 | 必要
 Microsoft.VisualStudio.Component.Windows10SDK | Windows 通用 C 執行階段 | 16.4.29409.204 | 必要
 Microsoft.VisualStudio.Component.Graphics.Tools | 適用於 DirectX 的圖形偵錯工具與 GPU 分析工具 | 16.0.28625.61 | 建議
-VisualStudio. Component. ASAN | C + + AddressSanitizer (實驗性)  | 16.5.29515.121 | 建議
+VisualStudio. ASAN。 | C + + AddressSanitizer (實驗性)  | 16.5.29515.121 | 建議
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ 分析工具 | 16.5.29515.121 | 建議
 Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362.0) | 16.1.28829.92 | 建議
 Component.Android.NDK.R16B | Android NDK (R16B) | 16.7.30316.201 | 選擇性
@@ -393,7 +393,7 @@ Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目標套件 | 16
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 16.0.28517.75 | 選擇性
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目標套件 | 16.0.28517.75 | 選擇性
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 16.7.30310.162 | 選擇性
-Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 選擇性
+Net.tcp. 4.8。 | .NET Framework 4.8 SDK | 16.4.29313.120 | 選擇性
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 16.0.28517.75 | 選擇性
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開發工具 | 16.3.29207.166 | 選擇性
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開發工具 | 16.0.28516.191 | 選擇性
@@ -445,12 +445,12 @@ Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目標套件 | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 16.7.30310.162 | 必要
-Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 必要
+Net.tcp. 4.8。 | .NET Framework 4.8 SDK | 16.4.29313.120 | 必要
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開發工具 | 16.3.29207.166 | 必要
-NetCore. Component. DevelopmentTools | .NET Core 開發工具 | 16.5.29721.120 | 必要
-NetCore. Component. 3。1 | .NET Core 3.1 LTS 執行時間 | 16.7.30310.162 | 必要
-NetCore. Component SDK | .NET Core SDK | 16.7.30310.162 | 必要
-NetCore。 Web | .NET Core 開發工具 | 16.5.29721.120 | 必要
+NetCore. DevelopmentTools | .NET Core 開發工具 | 16.5.29721.120 | 必要
+NetCore. 3.1 版 | .NET Core 3.1 LTS 執行時間 | 16.7.30310.162 | 必要
+NetCore。 | .NET Core SDK | 16.7.30310.162 | 必要
+NetCore。 | .NET Core 開發工具 | 16.5.29721.120 | 必要
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 16.4.29409.204 | 必要
 Microsoft.VisualStudio.Component.DockerTools | 容器開發工具 | 16.4.29409.204 | 必要
 Microsoft.VisualStudio.Component.FSharp | F# 語言支援 | 16.0.28315.86 | 必要
@@ -471,7 +471,7 @@ Microsoft.VisualStudio.Component.SQL.DataSources | SQL Server 支援的資料來
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 16.3.29207.166 | 必要
 Microsoft.VisualStudio.Component.TextTemplating | 文字範本轉換 | 16.0.28625.61 | 必要
-VisualStudio. Component. 3。9 | TypeScript 3.9 SDK | 16.0.30310.162 | 必要
+VisualStudio，. 3。9 | TypeScript 3.9 SDK | 16.0.30310.162 | 必要
 Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 開發工具的必要條件 | 16.4.29318.151 | 必要
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 開發 | 16.7.30310.162 | 必要
 Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.2517 | 建議
@@ -482,9 +482,9 @@ Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 16.
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 16.0.28315.86 | 建議
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 16.7.30310.162 | 建議
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 儲存體模擬器 | 16.4.29313.120 | 建議
-Microsoft.VisualStudio.Component.CloudExplorer | 雲端總管 | 16.0.28625.61 | 建議
+Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 16.7.30310.162 | 建議
-VisualStudio. Component. DotNetModelBuilder | ML.NET 模型產生器 (預覽)  | 16.7.30310.162 | 建議
+VisualStudio. DotNetModelBuilder | ML.NET Model Builder (Preview)  | 16.7.30310.162 | 建議
 Microsoft.VisualStudio.Component.Web | ASP.NET 與網頁程式開發工具 | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Azure WebJobs 工具 | 16.0.28621.142 | 建議
@@ -509,11 +509,11 @@ Component.Xamarin.RemotedSimulator | Xamarin Remoted Simulator | 16.0.28315.86 |
 Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | 必要
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 16.7.30310.162 | 必要
-Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 必要
+Net.tcp. 4.8。 | .NET Framework 4.8 SDK | 16.4.29313.120 | 必要
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開發工具 | 16.3.29207.166 | 必要
-NetCore. Component. DevelopmentTools | .NET Core 開發工具 | 16.5.29721.120 | 必要
-NetCore. Component. 3。1 | .NET Core 3.1 LTS 執行時間 | 16.7.30310.162 | 必要
-NetCore. Component SDK | .NET Core SDK | 16.7.30310.162 | 必要
+NetCore. DevelopmentTools | .NET Core 開發工具 | 16.5.29721.120 | 必要
+NetCore. 3.1 版 | .NET Core 3.1 LTS 執行時間 | 16.7.30310.162 | 必要
+NetCore。 | .NET Core SDK | 16.7.30310.162 | 必要
 Microsoft.VisualStudio.Component.FSharp | F# 語言支援 | 16.0.28315.86 | 必要
 Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.2 | 必要
 Microsoft.VisualStudio.Component.Merq | 通用的 Xamarin 內部工具 | 16.2.29012.281 | 必要
@@ -541,12 +541,12 @@ Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目標套件 | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 16.7.30310.162 | 必要
-Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 必要
+Net.tcp. 4.8。 | .NET Framework 4.8 SDK | 16.4.29313.120 | 必要
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開發工具 | 16.3.29207.166 | 必要
-NetCore. Component. DevelopmentTools | .NET Core 開發工具 | 16.5.29721.120 | 必要
-NetCore. Component. 3。1 | .NET Core 3.1 LTS 執行時間 | 16.7.30310.162 | 必要
-NetCore. Component SDK | .NET Core SDK | 16.7.30310.162 | 必要
-NetCore。 Web | .NET Core 開發工具 | 16.5.29721.120 | 必要
+NetCore. DevelopmentTools | .NET Core 開發工具 | 16.5.29721.120 | 必要
+NetCore. 3.1 版 | .NET Core 3.1 LTS 執行時間 | 16.7.30310.162 | 必要
+NetCore。 | .NET Core SDK | 16.7.30310.162 | 必要
+NetCore。 | .NET Core 開發工具 | 16.5.29721.120 | 必要
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 16.4.29409.204 | 必要
 Microsoft.VisualStudio.Component.DockerTools | 容器開發工具 | 16.4.29409.204 | 必要
 Microsoft.VisualStudio.Component.FSharp | F# 語言支援 | 16.0.28315.86 | 必要
@@ -567,7 +567,7 @@ Microsoft.VisualStudio.Component.SQL.DataSources | SQL Server 支援的資料來
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 16.3.29207.166 | 必要
 Microsoft.VisualStudio.Component.TextTemplating | 文字範本轉換 | 16.0.28625.61 | 必要
-VisualStudio. Component. 3。9 | TypeScript 3.9 SDK | 16.0.30310.162 | 必要
+VisualStudio，. 3。9 | TypeScript 3.9 SDK | 16.0.30310.162 | 必要
 Microsoft.VisualStudio.Component.Web | ASP.NET 與網頁程式開發工具 | 16.0.28517.75 | 必要
 Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 開發工具的必要條件 | 16.4.29318.151 | 必要
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 開發 | 16.7.30310.162 | 必要
@@ -584,7 +584,7 @@ Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 16.
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 16.0.28315.86 | 建議
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 16.7.30310.162 | 建議
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 儲存體模擬器 | 16.4.29313.120 | 建議
-Microsoft.VisualStudio.Component.CloudExplorer | 雲端總管 | 16.0.28625.61 | 建議
+Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 16.7.30310.162 | 建議
 Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 工具 | 16.0.28315.86 | 建議
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | 建議
@@ -593,7 +593,7 @@ Microsoft.VisualStudio.ComponentGroup.Web.CloudTools | 適用於 Web 開發的�
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 16.0.28517.75 | 選擇性
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 16.7.30310.162 | 選擇性
 Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 16.7.30310.162 | 選擇性
-Microsoft.Net. TargetingPack | .NET Framework 4.8 目標套件 | 16.4.29313.120 | 選擇性
+Microsoft.Net. 4.8. TargetingPack | .NET Framework 4.8 目標套件 | 16.4.29313.120 | 選擇性
 Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | .NET Framework 4.6.1 開發工具 | 16.3.29207.166 | 選擇性
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 16.3.29207.166 | 選擇性
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 16.3.29207.166 | 選擇性
@@ -616,7 +616,7 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | 開發時間的 IIS 支�
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 16.0.28517.75 | 必要
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 與 TypeScript 語言支援 | 16.7.30310.162 | 必要
 Microsoft.VisualStudio.Component.Node.Tools | Node.js 開發工具 | 16.5.29515.121 | 必要
-VisualStudio. Component. 3。9 | TypeScript 3.9 SDK | 16.0.30310.162 | 必要
+VisualStudio，. 3。9 | TypeScript 3.9 SDK | 16.0.30310.162 | 必要
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 開發 | 16.7.30310.162 | 必要
 Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.2517 | 建議
 Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.2 | 建議
@@ -643,11 +643,11 @@ Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目標套件 | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 16.7.30310.162 | 必要
-Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 必要
+Net.tcp. 4.8。 | .NET Framework 4.8 SDK | 16.4.29313.120 | 必要
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 16.0.28517.75 | 必要
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開發工具 | 16.3.29207.166 | 必要
-NetCore. Component. 3。1 | .NET Core 3.1 LTS 執行時間 | 16.7.30310.162 | 必要
-NetCore. Component SDK | .NET Core SDK | 16.7.30310.162 | 必要
+NetCore. 3.1 版 | .NET Core 3.1 LTS 執行時間 | 16.7.30310.162 | 必要
+NetCore。 | .NET Core SDK | 16.7.30310.162 | 必要
 Microsoft.VisualStudio.Component.AppInsights.Tools | 開發人員分析工具 | 16.5.29515.121 | 必要
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 16.4.29409.204 | 必要
 Microsoft.VisualStudio.Component.DockerTools | 容器開發工具 | 16.4.29409.204 | 必要
@@ -669,7 +669,7 @@ Microsoft.VisualStudio.Component.SQL.DataSources | SQL Server 支援的資料來
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 16.3.29207.166 | 必要
 Microsoft.VisualStudio.Component.TextTemplating | 文字範本轉換 | 16.0.28625.61 | 必要
-VisualStudio. Component. 3。9 | TypeScript 3.9 SDK | 16.0.30310.162 | 必要
+VisualStudio，. 3。9 | TypeScript 3.9 SDK | 16.0.30310.162 | 必要
 Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.Web | ASP.NET 與網頁程式開發工具 | 16.0.28517.75 | 必要
 Microsoft.VisualStudio.Component.Workflow | Windows Workflow Foundation | 16.0.28315.86 | 必要
@@ -680,7 +680,7 @@ Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | 建議
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 16.0.28517.75 | 選擇性
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 16.7.30310.162 | 選擇性
 Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 16.7.30310.162 | 選擇性
-Microsoft.Net. TargetingPack | .NET Framework 4.8 目標套件 | 16.4.29313.120 | 選擇性
+Microsoft.Net. 4.8. TargetingPack | .NET Framework 4.8 目標套件 | 16.4.29313.120 | 選擇性
 Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | .NET Framework 4.6.1 開發工具 | 16.3.29207.166 | 選擇性
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 16.3.29207.166 | 選擇性
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 16.3.29207.166 | 選擇性
@@ -699,18 +699,18 @@ Microsoft.VisualStudio.ComponentGroup.Sharepoint.WIF | Windows Identity Foundati
 元件識別碼 | 名稱 | 版本 | 相依性類型
 --- | --- | --- | ---
 Microsoft.Component.PythonTools | Python 語言支援 | 16.5.29515.121 | 必要
-Component.CPython3.x64 | Python 3 64-bit (3.7.8)  | 3.7.8 | 建議
+Component.CPython3.x64 | Python 3 64 位 (3.7.8)  | 3.7.8 | 建議
 Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.2517 | 建議
 Microsoft.Component.PythonTools.Minicondax64 | Python miniconda | 16.2.29003.222 | 建議
 Microsoft.Component.PythonTools.Web | Python Web 支援 | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 16.4.29409.204 | 建議
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 與 TypeScript 語言支援 | 16.7.30310.162 | 建議
-VisualStudio. Component. 3。9 | TypeScript 3.9 SDK | 16.0.30310.162 | 建議
+VisualStudio，. 3。9 | TypeScript 3.9 SDK | 16.0.30310.162 | 建議
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 開發 | 16.7.30310.162 | 建議
 Component.CPython2.x64 | Python 2 64 位元 (2.7.16) | 2.7.16 | 選擇性
 Component.CPython2.x86 | Python 2 32 位元 (2.7.16) | 2.7.16 | 選擇性
-Component.CPython3.x86 | Python 3 32-bit (3.7.8)  | 3.7.8 | 選擇性
+Component.CPython3.x86 | Python 3 32 位 (3.7.8)  | 3.7.8 | 選擇性
 Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28714.129 | 選擇性
 Component.Microsoft.Web.LibraryManager | 程式庫管理員 | 16.0.28315.86 | 選擇性
 Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | 選擇性
@@ -718,10 +718,10 @@ Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python 原生開發工�
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 | 16.0.28517.75 | 選擇性
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目標套件 | 16.0.28517.75 | 選擇性
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 16.7.30310.162 | 選擇性
-Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 選擇性
+Net.tcp. 4.8。 | .NET Framework 4.8 SDK | 16.4.29313.120 | 選擇性
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開發工具 | 16.3.29207.166 | 選擇性
-NetCore. Component. 3。1 | .NET Core 3.1 LTS 執行時間 | 16.7.30310.162 | 選擇性
-NetCore. Component SDK | .NET Core SDK | 16.7.30310.162 | 選擇性
+NetCore. 3.1 版 | .NET Core 3.1 LTS 執行時間 | 16.7.30310.162 | 選擇性
+NetCore。 | .NET Core SDK | 16.7.30310.162 | 選擇性
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 16.0.28625.61 | 選擇性
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 16.0.28315.86 | 選擇性
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 16.7.30310.162 | 選擇性
@@ -756,7 +756,7 @@ Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 開發工具的必�
 
 **識別碼：** Microsoft.VisualStudio.Workload.Universal
 
-**描述：** 使用 c #、VB 或選擇性的 c + + 來建立通用 Windows 平臺的應用程式。
+**描述：** 使用 c #、VB 或選擇性的 c + + 建立適用于通用 Windows 平臺的應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -765,8 +765,8 @@ Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 開發工具的必�
 Microsoft.Component.NetFX.Native | .NET Native | 16.5.29515.121 | 必要
 Microsoft.ComponentGroup.Blend | Blend for Visual Studio | 16.0.28315.86 | 必要
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目標套件 | 16.0.28517.75 | 必要
-NetCore. Component. 3。1 | .NET Core 3.1 LTS 執行時間 | 16.7.30310.162 | 必要
-NetCore. Component SDK | .NET Core SDK | 16.7.30310.162 | 必要
+NetCore. 3.1 版 | .NET Core 3.1 LTS 執行時間 | 16.7.30310.162 | 必要
+NetCore。 | .NET Core SDK | 16.7.30310.162 | 必要
 Microsoft.VisualStudio.Component.AppInsights.Tools | 開發人員分析工具 | 16.5.29515.121 | 必要
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 16.7.30310.162 | 必要
 Microsoft.VisualStudio.Component.Graphics | 影像與 3D 模型編輯器 | 16.0.28517.75 | 必要
@@ -780,7 +780,7 @@ Microsoft.VisualStudio.ComponentGroup.MSIX. 封裝 | MSIX 封裝工具 | 16.7.30
 Microsoft.VisualStudio.ComponentGroup.UWP.NetCoreAndStandard | .NET Native 和.NET Standard | 16.3.29102.218 | 必要
 Microsoft.VisualStudio.ComponentGroup.UWP.Support | 通用 Windows 平台工具 | 16.4.29409.204 | 必要
 Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | 適用於 Xamarin 的通用 Windows 平台工具 | 16.5.29514.35 | 必要
-Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 選擇性
+Net.tcp. 4.8。 | .NET Framework 4.8 SDK | 16.4.29313.120 | 選擇性
 Microsoft.VisualStudio.Component.Graphics.Tools | 適用於 DirectX 的圖形偵錯工具與 GPU 分析工具 | 16.0.28625.61 | 選擇性
 Microsoft.VisualStudio.Component.UWP.VC.ARM64 | 適用於 v142 建置工具 (ARM64) 的 C++ 通用 Windows 平台支援 | 16.3.29207.166 | 選擇性
 Microsoft.VisualStudio.Component.VC.CoreIde | C++ 核心功能 | 16.7.30310.162 | 選擇性
@@ -811,7 +811,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.VC.v141 | C++ (v141) 通用 Windows �
 Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | 必要
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目標套件 | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 16.7.30310.162 | 必要
-Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 必要
+Net.tcp. 4.8。 | .NET Framework 4.8 SDK | 16.4.29313.120 | 必要
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開發工具 | 16.3.29207.166 | 必要
 Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.2 | 必要
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.1.28829.92 | 必要
@@ -841,7 +841,7 @@ Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 16.4.29409.204
 Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 16.4.29409.204
 Microsoft.Net.Component.4.7.SDK | .NET Framework 4.7 SDK | 16.4.29409.204
 Microsoft.Net.Core.Component.SDK.2.2 | .NET Core 2.2 執行時間 (不支援)  | 16.7.30310.162
-Net.tcp. Core SDK 3。0 | .NET Core 3.0 執行時間 (不支援)  | 16.7.30310.162
+Net.tcp. SDK. 3。0 | .NET Core 3.0 執行時間 (不支援)  | 16.7.30310.162
 Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | 開發工具加上 .NET Core 2。1 | 16.3.29207.166
 Microsoft.NetCore.ComponentGroup.Web.2.1 | Web 開發工具加上 .NET Core 2。1 | 16.3.29207.166
 Microsoft.VisualStudio.Component.AzureDevOps.OfficeIntegration | Azure DevOps Office 整合 | 16.0.28625.61
@@ -892,111 +892,111 @@ VisualStudio. 14.22. ARM | MSVC v142 - VS 2019 C++ ARM 建置工具 (v14.22) | 1
 VisualStudio. 14.22. Spectre。 | MSVC v142 - VS 2019 C++ ARM 已開啟 Spectre 風險降低功能的程式庫 (v14.22) | 16.5.29515.121
 VisualStudio. 14.22. ARM64 | MSVC v142 - VS 2019 C++ ARM64 建置工具 (v14.22) | 16.7.30310.162
 VisualStudio. 14.22. ARM64. Spectre | MSVC v142 - VS 2019 C++ ARM64 已開啟 Spectre 風險降低功能的程式庫 (v14.22) | 16.5.29515.121
-VisualStudio. 14.22. ATL | 適用于適用于 v142 組建工具的 c + + v 14.22 ATL (x86 & x64)  | 16.4.29313.120
-VisualStudio. 14.22 （ARM） | 適用于適用于 v142 組建工具的 c + + v 14.22 ATL (ARM)  | 16.4.29313.120
-VisualStudio. 14.22. Spectre （） | 適用于適用于 v142 組建工具的 c + + v 14.22 ATL (ARM) 的 Spectre 緩和措施 | 16.5.29721.120
-VisualStudio. 14.22. ARM64 的 | 適用于 v142 組建工具的 c + + v 14.22 ATL (ARM64)  | 16.4.29313.120
-VisualStudio. 14.22. ARM64.. Spectre | 具有 Spectre 緩和功能的 c + + v 14.22 ATL for 適用于 v142 build tools (ARM64)  | 16.5.29515.121
-VisualStudio. 14.22. Spectre 的 | C + + v 14.22 ATL for 適用于 v142 build tools with Spectre 緩和 (x86 & x64)  | 16.5.29515.121
-VisualStudio. 14.22. CLI. 支援 | 適用於 v142 建置工具的 C++/CLI 支援 (14.22) | 16.7.30310.162
+VisualStudio. 14.22。 | 適用于適用于 v142 build tools (x86 & x64) 的 c + + v 14.22 ATL | 16.4.29313.120
+VisualStudio. 14.22. ARM。 | 適用于適用于 v142 build tools (ARM) 的 c + + v 14.22 ATL | 16.4.29313.120
+VisualStudio. 14.22. Spectre （） | 適用于適用于 v142 組建工具的 c + + v 14.22 ATL， (ARM) 的 Spectre 緩和措施 | 16.5.29721.120
+VisualStudio. 14.22. ARM64。 | C + + v 14.22 ATL for 適用于 v142 build tools (ARM64)  | 16.4.29313.120
+VisualStudio. 14.22. ARM64.. Spectre | C + + v 14.22 ATL for 適用于 v142 build tools with Spectre 緩和措施 (ARM64)  | 16.5.29515.121
+VisualStudio. 14.22. Spectre。 | C + + v 14.22 ATL for 適用于 v142 build tools (x86 & x64)  | 16.5.29515.121
+VisualStudio. 14.22. 支援服務 | 適用於 v142 建置工具的 C++/CLI 支援 (14.22) | 16.7.30310.162
 VisualStudio. 14.22. MFC | C + + v 14.22 MFC for 適用于 v142 build tools (x86 & x64)  | 16.4.29313.120
-VisualStudio. 14.22. ARM。 | C + + v 14.22 MFC for 適用于 v142 build tools (ARM)  | 16.4.29313.120
-VisualStudio. 14.22. Spectre （）。 | C + + v 14.22 MFC for 適用于 v142 build tools with Spectre 緩和 (ARM)  | 16.5.29515.121
+VisualStudio. 14.22. a.. ARM | C + + v 14.22 MFC for 適用于 v142 build tools (ARM)  | 16.4.29313.120
+VisualStudio. 14.22. Spectre （） | 適用于適用于 v142 的 c + + v 14.22 適用于 Spectre 緩和 (ARM) 的組建工具 | 16.5.29515.121
 VisualStudio. 14.22. ARM64。 | C + + v 14.22 MFC for 適用于 v142 build tools (ARM64)  | 16.4.29313.120
-VisualStudio. 14.22. ARM64.. Spectre | C + + v 14.22 MFC for 適用于 v142 build tools with Spectre 緩和 (ARM64)  | 16.5.29515.121
+VisualStudio. 14.22. ARM64.. Spectre | C + + v 14.22 MFC for 適用于 v142 build tools with Spectre 緩和措施 (ARM64)  | 16.5.29515.121
 VisualStudio. 14.22. Spectre。 | C + + v 14.22 MFC for 適用于 v142 build tools with Spectre 緩和 (x86 & x64)  | 16.5.29515.121
-VisualStudio. 14.22. x86 x64 | MSVC v142 - VS 2019 C++ x64/x86 建置工具 (v14.22) | 16.7.30310.162
-VisualStudio. 14.22. x86. Spectre 的 | MSVC v142 - VS 2019 C++ x64/x86 已開啟 Spectre 風險降低功能的程式庫 (v14.22) | 16.5.29515.121
-VisualStudio. 14.23. ARM | MSVC 適用于 v142-VS 2019 c + + ARM build tools (v 14.23)  | 16.7.30310.162
-VisualStudio. 14.23. Spectre。 | MSVC 適用于 v142-VS 2019 c + + ARM Spectre-減輕程式庫 (v 14.23)  | 16.5.29515.121
-VisualStudio. 14.23. ARM64 | MSVC 適用于 v142-VS 2019 c + + ARM64 build tools (v 14.23)  | 16.7.30310.162
-VisualStudio. 14.23. ARM64. Spectre | MSVC 適用于 v142-VS 2019 c + + ARM64 Spectre-減輕程式庫 (v 14.23)  | 16.5.29515.121
-VisualStudio. 14.23. ATL | 適用于適用于 v142 組建工具的 c + + v 14.23 ATL (x86 & x64)  | 16.5.29515.121
-VisualStudio. 14.23 （ARM） | 適用于適用于 v142 組建工具的 c + + v 14.23 ATL (ARM)  | 16.5.29515.121
-VisualStudio. 14.23. Spectre （） | 適用于適用于 v142 組建工具的 c + + v 14.23 ATL (ARM) 的 Spectre 緩和措施 | 16.5.29721.120
-VisualStudio. 14.23. ARM64 的 | 適用于 v142 組建工具的 c + + v 14.23 ATL (ARM64)  | 16.5.29515.121
-VisualStudio. 14.23. ARM64.. Spectre | 具有 Spectre 緩和功能的 c + + v 14.23 ATL for 適用于 v142 build tools (ARM64)  | 16.5.29515.121
-VisualStudio. 14.23. Spectre 的 | C + + v 14.23 ATL for 適用于 v142 build tools with Spectre 緩和 (x86 & x64)  | 16.5.29515.121
-VisualStudio. 14.23. CLI. 支援 | 適用于 v142 組建工具的 c + +/CLI 支援 (14.23)  | 16.7.30310.162
-VisualStudio. 14.23. MFC | C + + v 14.23 MFC for 適用于 v142 build tools (x86 & x64)  | 16.5.29515.121
-VisualStudio. 14.23. ARM。 | C + + v 14.23 MFC for 適用于 v142 build tools (ARM)  | 16.5.29515.121
-VisualStudio. 14.23. Spectre （）。 | C + + v 14.23 MFC for 適用于 v142 build tools with Spectre 緩和 (ARM)  | 16.5.29515.121
-VisualStudio. 14.23. ARM64。 | C + + v 14.23 MFC for 適用于 v142 build tools (ARM64)  | 16.5.29515.121
-VisualStudio. 14.23. ARM64.. Spectre | C + + v 14.23 MFC for 適用于 v142 build tools with Spectre 緩和 (ARM64)  | 16.5.29515.121
-VisualStudio. 14.23. Spectre。 | C + + v 14.23 MFC for 適用于 v142 build tools with Spectre 緩和 (x86 & x64)  | 16.5.29515.121
-VisualStudio. 14.23. x86 x64 | MSVC 適用于 v142-VS 2019 c + + x64/x86 build tools (v 14.23)  | 16.7.30310.162
-VisualStudio. 14.23. x86. Spectre 的 | MSVC 適用于 v142-VS 2019 c + + x64/x86 Spectre-減輕程式庫 (v 14.23)  | 16.5.29515.121
+VisualStudio. 14.22. x86。 | MSVC v142 - VS 2019 C++ x64/x86 建置工具 (v14.22) | 16.7.30310.162
+VisualStudio. 14.22. Spectre <。 | MSVC v142 - VS 2019 C++ x64/x86 已開啟 Spectre 風險降低功能的程式庫 (v14.22) | 16.5.29515.121
+VisualStudio. v14.23. ARM | MSVC 適用于 v142-VS 2019 c + + ARM build tools (v v14.23)  | 16.7.30310.162
+VisualStudio. v14.23. Spectre。 | MSVC 適用于 v142-VS 2019 c + + ARM Spectre-降低的程式庫 (v v14.23)  | 16.5.29515.121
+VisualStudio. v14.23. ARM64 | MSVC 適用于 v142-VS 2019 c + + ARM64 build tools (v v14.23)  | 16.7.30310.162
+VisualStudio. v14.23. ARM64. Spectre | MSVC 適用于 v142-VS 2019 c + + ARM64 Spectre-降低的程式庫 (v v14.23)  | 16.5.29515.121
+VisualStudio. v14.23。 | 適用于適用于 v142 build tools (x86 & x64) 的 c + + v v14.23 ATL | 16.5.29515.121
+VisualStudio. v14.23. ARM。 | 適用于適用于 v142 build tools (ARM) 的 c + + v v14.23 ATL | 16.5.29515.121
+VisualStudio. v14.23. Spectre （） | 適用于適用于 v142 組建工具的 c + + v v14.23 ATL， (ARM) 的 Spectre 緩和措施 | 16.5.29721.120
+VisualStudio. v14.23. ARM64。 | C + + v v14.23 ATL for 適用于 v142 build tools (ARM64)  | 16.5.29515.121
+VisualStudio. v14.23. ARM64.. Spectre | C + + v v14.23 ATL for 適用于 v142 build tools with Spectre 緩和措施 (ARM64)  | 16.5.29515.121
+VisualStudio. v14.23. Spectre。 | C + + v v14.23 ATL for 適用于 v142 build tools (x86 & x64)  | 16.5.29515.121
+VisualStudio. v14.23. 支援服務 | 適用于 v142 build tools (14.23) 的 c + +/CLI 支援 | 16.7.30310.162
+VisualStudio. v14.23. MFC | C + + v v14.23 MFC for 適用于 v142 build tools (x86 & x64)  | 16.5.29515.121
+VisualStudio. v14.23. a.. ARM | C + + v v14.23 MFC for 適用于 v142 build tools (ARM)  | 16.5.29515.121
+VisualStudio. v14.23. Spectre （） | 適用于適用于 v142 的 c + + v v14.23 適用于 Spectre 緩和 (ARM) 的組建工具 | 16.5.29515.121
+VisualStudio. v14.23. ARM64。 | C + + v v14.23 MFC for 適用于 v142 build tools (ARM64)  | 16.5.29515.121
+VisualStudio. v14.23. ARM64.. Spectre | C + + v v14.23 MFC for 適用于 v142 build tools with Spectre 緩和措施 (ARM64)  | 16.5.29515.121
+VisualStudio. v14.23. Spectre。 | C + + v v14.23 MFC for 適用于 v142 build tools with Spectre 緩和 (x86 & x64)  | 16.5.29515.121
+VisualStudio. v14.23. x86。 | MSVC 適用于 v142-VS 2019 c + + x64/x86 build tools (v v14.23)  | 16.7.30310.162
+VisualStudio. v14.23. Spectre <。 | MSVC 適用于 v142-VS 2019 c + + x64/x86 Spectre-降低的程式庫 (v v14.23)  | 16.5.29515.121
 VisualStudio. 14.24. ARM | MSVC 適用于 v142-VS 2019 c + + ARM build tools (v 14.24)  | 16.7.30310.162
-VisualStudio. 14.24. Spectre。 | MSVC 適用于 v142-VS 2019 c + + ARM Spectre-減輕程式庫 (v 14.24)  | 16.5.29721.120
+VisualStudio. 14.24. Spectre。 | MSVC 適用于 v142-VS 2019 c + + ARM Spectre-降低的程式庫 (v 14.24)  | 16.5.29721.120
 VisualStudio. 14.24. ARM64 | MSVC 適用于 v142-VS 2019 c + + ARM64 build tools (v 14.24)  | 16.7.30310.162
-VisualStudio. 14.24. ARM64. Spectre | MSVC 適用于 v142-VS 2019 c + + ARM64 Spectre-減輕程式庫 (v 14.24)  | 16.5.29721.120
-VisualStudio. 14.24. ATL | 適用于適用于 v142 組建工具的 c + + v 14.24 ATL (x86 & x64)  | 16.5.29721.120
-VisualStudio. 14.24 （ARM） | 適用于適用于 v142 組建工具的 c + + v 14.24 ATL (ARM)  | 16.5.29721.120
-VisualStudio. 14.24. Spectre （） | 適用于適用于 v142 組建工具的 c + + v 14.24 ATL (ARM) 的 Spectre 緩和措施 | 16.5.29721.120
-VisualStudio. 14.24. ARM64 的 | 適用于 v142 組建工具的 c + + v 14.24 ATL (ARM64)  | 16.5.29721.120
-VisualStudio. 14.24. ARM64.. Spectre | 具有 Spectre 緩和功能的 c + + v 14.24 ATL for 適用于 v142 build tools (ARM64)  | 16.5.29721.120
-VisualStudio. 14.24. Spectre 的 | C + + v 14.24 ATL for 適用于 v142 build tools with Spectre 緩和 (x86 & x64)  | 16.5.29721.120
-VisualStudio. 14.24. CLI. 支援 | 適用于 v142 組建工具的 c + +/CLI 支援 (14.24)  | 16.7.30310.162
+VisualStudio. 14.24. ARM64. Spectre | MSVC 適用于 v142-VS 2019 c + + ARM64 Spectre-降低的程式庫 (v 14.24)  | 16.5.29721.120
+VisualStudio. 14.24。 | 適用于適用于 v142 build tools (x86 & x64) 的 c + + v 14.24 ATL | 16.5.29721.120
+VisualStudio. 14.24. ARM。 | 適用于適用于 v142 build tools (ARM) 的 c + + v 14.24 ATL | 16.5.29721.120
+VisualStudio. 14.24. Spectre （） | 適用于適用于 v142 組建工具的 c + + v 14.24 ATL， (ARM) 的 Spectre 緩和措施 | 16.5.29721.120
+VisualStudio. 14.24. ARM64。 | C + + v 14.24 ATL for 適用于 v142 build tools (ARM64)  | 16.5.29721.120
+VisualStudio. 14.24. ARM64.. Spectre | C + + v 14.24 ATL for 適用于 v142 build tools with Spectre 緩和措施 (ARM64)  | 16.5.29721.120
+VisualStudio. 14.24. Spectre。 | C + + v 14.24 ATL for 適用于 v142 build tools (x86 & x64)  | 16.5.29721.120
+VisualStudio. 14.24. 支援服務 | 適用于 v142 build tools (14.24) 的 c + +/CLI 支援 | 16.7.30310.162
 VisualStudio. 14.24. MFC | C + + v 14.24 MFC for 適用于 v142 build tools (x86 & x64)  | 16.5.29721.120
-VisualStudio. 14.24. ARM。 | C + + v 14.24 MFC for 適用于 v142 build tools (ARM)  | 16.5.29721.120
-VisualStudio. 14.24. Spectre （）。 | C + + v 14.24 MFC for 適用于 v142 build tools with Spectre 緩和 (ARM)  | 16.5.29721.120
+VisualStudio. 14.24. a.. ARM | C + + v 14.24 MFC for 適用于 v142 build tools (ARM)  | 16.5.29721.120
+VisualStudio. 14.24. Spectre （） | 適用于適用于 v142 的 c + + v 14.24 適用于 Spectre 緩和 (ARM) 的組建工具 | 16.5.29721.120
 VisualStudio. 14.24. ARM64。 | C + + v 14.24 MFC for 適用于 v142 build tools (ARM64)  | 16.5.29721.120
-VisualStudio. 14.24. ARM64.. Spectre | C + + v 14.24 MFC for 適用于 v142 build tools with Spectre 緩和 (ARM64)  | 16.5.29721.120
+VisualStudio. 14.24. ARM64.. Spectre | C + + v 14.24 MFC for 適用于 v142 build tools with Spectre 緩和措施 (ARM64)  | 16.5.29721.120
 VisualStudio. 14.24. Spectre。 | C + + v 14.24 MFC for 適用于 v142 build tools with Spectre 緩和 (x86 & x64)  | 16.5.29721.120
-VisualStudio. 14.24. x86 x64 | MSVC 適用于 v142-VS 2019 c + + x64/x86 build tools (v 14.24)  | 16.7.30310.162
-VisualStudio. 14.24. x86. Spectre 的 | MSVC 適用于 v142-VS 2019 c + + x64/x86 Spectre-減輕程式庫 (v 14.24)  | 16.5.29721.120
-VisualStudio. 14.25. ARM | MSVC 適用于 v142-VS 2019 c + + ARM build tools (v 14.25)  | 16.7.30310.162
-VisualStudio. 14.25. Spectre。 | MSVC 適用于 v142-VS 2019 c + + ARM Spectre-減輕程式庫 (v 14.25)  | 16.7.30310.162
-VisualStudio. 14.25. ARM64 | MSVC 適用于 v142-VS 2019 c + + ARM64 build tools (v 14.25)  | 16.7.30310.162
-VisualStudio. 14.25. ARM64. Spectre | MSVC 適用于 v142-VS 2019 c + + ARM64 Spectre-減輕程式庫 (v 14.25)  | 16.7.30310.162
-VisualStudio. 14.25. ATL | 適用于適用于 v142 組建工具的 c + + v 14.25 ATL (x86 & x64)  | 16.7.30310.162
-VisualStudio. 14.25 （ARM） | 適用于適用于 v142 組建工具的 c + + v 14.25 ATL (ARM)  | 16.7.30310.162
-VisualStudio. 14.25. Spectre （） | 適用于適用于 v142 組建工具的 c + + v 14.25 ATL (ARM) 的 Spectre 緩和措施 | 16.7.30310.162
-VisualStudio. 14.25. ARM64 的 | 適用于 v142 組建工具的 c + + v 14.25 ATL (ARM64)  | 16.7.30310.162
-VisualStudio. 14.25. ARM64.. Spectre | 具有 Spectre 緩和功能的 c + + v 14.25 ATL for 適用于 v142 build tools (ARM64)  | 16.7.30310.162
-VisualStudio. 14.25. Spectre 的 | C + + v 14.25 ATL for 適用于 v142 build tools with Spectre 緩和 (x86 & x64)  | 16.7.30310.162
-VisualStudio. 14.25. CLI. 支援 | 適用于 v142 組建工具的 c + +/CLI 支援 (14.25)  | 16.7.30310.162
-VisualStudio. 14.25. MFC | C + + v 14.25 MFC for 適用于 v142 build tools (x86 & x64)  | 16.7.30310.162
-VisualStudio. 14.25. ARM。 | C + + v 14.25 MFC for 適用于 v142 build tools (ARM)  | 16.7.30310.162
-VisualStudio. 14.25. Spectre （）。 | C + + v 14.25 MFC for 適用于 v142 build tools with Spectre 緩和 (ARM)  | 16.7.30310.162
-VisualStudio. 14.25. ARM64。 | C + + v 14.25 MFC for 適用于 v142 build tools (ARM64)  | 16.7.30310.162
-VisualStudio. 14.25. ARM64.. Spectre | C + + v 14.25 MFC for 適用于 v142 build tools with Spectre 緩和 (ARM64)  | 16.7.30310.162
-VisualStudio. 14.25. Spectre。 | C + + v 14.25 MFC for 適用于 v142 build tools with Spectre 緩和 (x86 & x64)  | 16.7.30310.162
-VisualStudio. 14.25. x86 x64 | MSVC 適用于 v142-VS 2019 c + + x64/x86 build tools (v 14.25)  | 16.7.30310.162
-VisualStudio. 14.25. x86. Spectre 的 | MSVC 適用于 v142-VS 2019 c + + x64/x86 Spectre-減輕程式庫 (v 14.25)  | 16.7.30310.162
-VisualStudio. 14.26. ARM | MSVC 適用于 v142-VS 2019 c + + ARM build tools (v 14.26)  | 16.7.30310.162
-VisualStudio. 14.26. Spectre。 | MSVC 適用于 v142-VS 2019 c + + ARM Spectre-減輕程式庫 (v 14.26)  | 16.7.30310.162
-VisualStudio. 14.26. ARM64 | MSVC 適用于 v142-VS 2019 c + + ARM64 build tools (v 14.26)  | 16.7.30310.162
-VisualStudio. 14.26. ARM64. Spectre | MSVC 適用于 v142-VS 2019 c + + ARM64 Spectre-減輕程式庫 (v 14.26)  | 16.7.30310.162
-VisualStudio. 14.26. ATL | 適用于適用于 v142 組建工具的 c + + v 14.26 ATL (x86 & x64)  | 16.7.30310.162
-VisualStudio. 14.26 （ARM） | 適用于適用于 v142 組建工具的 c + + v 14.26 ATL (ARM)  | 16.7.30310.162
-VisualStudio. 14.26. Spectre （） | 適用于適用于 v142 組建工具的 c + + v 14.26 ATL (ARM) 的 Spectre 緩和措施 | 16.7.30310.162
-VisualStudio. 14.26. ARM64 的 | 適用于 v142 組建工具的 c + + v 14.26 ATL (ARM64)  | 16.7.30310.162
-VisualStudio. 14.26. ARM64.. Spectre | 具有 Spectre 緩和功能的 c + + v 14.26 ATL for 適用于 v142 build tools (ARM64)  | 16.7.30310.162
-VisualStudio. 14.26. Spectre 的 | C + + v 14.26 ATL for 適用于 v142 build tools with Spectre 緩和 (x86 & x64)  | 16.7.30310.162
-VisualStudio. 14.26. CLI. 支援 | 適用于 v142 組建工具的 c + +/CLI 支援 (14.26)  | 16.7.30310.162
-VisualStudio. 14.26. MFC | C + + v 14.26 MFC for 適用于 v142 build tools (x86 & x64)  | 16.7.30310.162
-VisualStudio. 14.26. ARM。 | C + + v 14.26 MFC for 適用于 v142 build tools (ARM)  | 16.7.30310.162
-VisualStudio. 14.26. Spectre （）。 | C + + v 14.26 MFC for 適用于 v142 build tools with Spectre 緩和 (ARM)  | 16.7.30310.162
-VisualStudio. 14.26. ARM64。 | C + + v 14.26 MFC for 適用于 v142 build tools (ARM64)  | 16.7.30310.162
-VisualStudio. 14.26. ARM64.. Spectre | C + + v 14.26 MFC for 適用于 v142 build tools with Spectre 緩和 (ARM64)  | 16.7.30310.162
-VisualStudio. 14.26. Spectre。 | C + + v 14.26 MFC for 適用于 v142 build tools with Spectre 緩和 (x86 & x64)  | 16.7.30310.162
-VisualStudio. 14.26. x86 x64 | MSVC 適用于 v142-VS 2019 c + + x64/x86 build tools (v 14.26)  | 16.7.30310.162
-VisualStudio. 14.26. x86. Spectre 的 | MSVC 適用于 v142-VS 2019 c + + x64/x86 Spectre-減輕程式庫 (v 14.26)  | 16.7.30310.162
+VisualStudio. 14.24. x86。 | MSVC 適用于 v142-VS 2019 c + + x64/x86 build tools (v 14.24)  | 16.7.30310.162
+VisualStudio. 14.24. Spectre <。 | MSVC 適用于 v142-VS 2019 c + + x64/x86 Spectre-降低的程式庫 (v 14.24)  | 16.5.29721.120
+VisualStudio. v14.25. ARM | MSVC 適用于 v142-VS 2019 c + + ARM build tools (v v14.25)  | 16.7.30310.162
+VisualStudio. v14.25. Spectre。 | MSVC 適用于 v142-VS 2019 c + + ARM Spectre-降低的程式庫 (v v14.25)  | 16.7.30310.162
+VisualStudio. v14.25. ARM64 | MSVC 適用于 v142-VS 2019 c + + ARM64 build tools (v v14.25)  | 16.7.30310.162
+VisualStudio. v14.25. ARM64. Spectre | MSVC 適用于 v142-VS 2019 c + + ARM64 Spectre-降低的程式庫 (v v14.25)  | 16.7.30310.162
+VisualStudio. v14.25。 | 適用于適用于 v142 build tools (x86 & x64) 的 c + + v v14.25 ATL | 16.7.30310.162
+VisualStudio. v14.25. ARM。 | 適用于適用于 v142 build tools (ARM) 的 c + + v v14.25 ATL | 16.7.30310.162
+VisualStudio. v14.25. Spectre （） | 適用于適用于 v142 組建工具的 c + + v v14.25 ATL， (ARM) 的 Spectre 緩和措施 | 16.7.30310.162
+VisualStudio. v14.25. ARM64。 | C + + v v14.25 ATL for 適用于 v142 build tools (ARM64)  | 16.7.30310.162
+VisualStudio. v14.25. ARM64.. Spectre | C + + v v14.25 ATL for 適用于 v142 build tools with Spectre 緩和措施 (ARM64)  | 16.7.30310.162
+VisualStudio. v14.25. Spectre。 | C + + v v14.25 ATL for 適用于 v142 build tools (x86 & x64)  | 16.7.30310.162
+VisualStudio. v14.25. 支援服務 | 適用于 v142 build tools (14.25) 的 c + +/CLI 支援 | 16.7.30310.162
+VisualStudio. v14.25. MFC | C + + v v14.25 MFC for 適用于 v142 build tools (x86 & x64)  | 16.7.30310.162
+VisualStudio. v14.25. a.. ARM | C + + v v14.25 MFC for 適用于 v142 build tools (ARM)  | 16.7.30310.162
+VisualStudio. v14.25. Spectre （） | 適用于適用于 v142 的 c + + v v14.25 適用于 Spectre 緩和 (ARM) 的組建工具 | 16.7.30310.162
+VisualStudio. v14.25. ARM64。 | C + + v v14.25 MFC for 適用于 v142 build tools (ARM64)  | 16.7.30310.162
+VisualStudio. v14.25. ARM64.. Spectre | C + + v v14.25 MFC for 適用于 v142 build tools with Spectre 緩和措施 (ARM64)  | 16.7.30310.162
+VisualStudio. v14.25. Spectre。 | C + + v v14.25 MFC for 適用于 v142 build tools with Spectre 緩和 (x86 & x64)  | 16.7.30310.162
+VisualStudio. v14.25. x86。 | MSVC 適用于 v142-VS 2019 c + + x64/x86 build tools (v v14.25)  | 16.7.30310.162
+VisualStudio. v14.25. Spectre <。 | MSVC 適用于 v142-VS 2019 c + + x64/x86 Spectre-降低的程式庫 (v v14.25)  | 16.7.30310.162
+VisualStudio. v14.26. ARM | MSVC 適用于 v142-VS 2019 c + + ARM build tools (v v14.26)  | 16.7.30310.162
+VisualStudio. v14.26. Spectre。 | MSVC 適用于 v142-VS 2019 c + + ARM Spectre-降低的程式庫 (v v14.26)  | 16.7.30310.162
+VisualStudio. v14.26. ARM64 | MSVC 適用于 v142-VS 2019 c + + ARM64 build tools (v v14.26)  | 16.7.30310.162
+VisualStudio. v14.26. ARM64. Spectre | MSVC 適用于 v142-VS 2019 c + + ARM64 Spectre-降低的程式庫 (v v14.26)  | 16.7.30310.162
+VisualStudio. v14.26。 | 適用于適用于 v142 build tools (x86 & x64) 的 c + + v v14.26 ATL | 16.7.30310.162
+VisualStudio. v14.26. ARM。 | 適用于適用于 v142 build tools (ARM) 的 c + + v v14.26 ATL | 16.7.30310.162
+VisualStudio. v14.26. Spectre （） | 適用于適用于 v142 組建工具的 c + + v v14.26 ATL， (ARM) 的 Spectre 緩和措施 | 16.7.30310.162
+VisualStudio. v14.26. ARM64。 | C + + v v14.26 ATL for 適用于 v142 build tools (ARM64)  | 16.7.30310.162
+VisualStudio. v14.26. ARM64.. Spectre | C + + v v14.26 ATL for 適用于 v142 build tools with Spectre 緩和措施 (ARM64)  | 16.7.30310.162
+VisualStudio. v14.26. Spectre。 | C + + v v14.26 ATL for 適用于 v142 build tools (x86 & x64)  | 16.7.30310.162
+VisualStudio. v14.26. 支援服務 | 適用于 v142 build tools (14.26) 的 c + +/CLI 支援 | 16.7.30310.162
+VisualStudio. v14.26. MFC | C + + v v14.26 MFC for 適用于 v142 build tools (x86 & x64)  | 16.7.30310.162
+VisualStudio. v14.26. a.. ARM | C + + v v14.26 MFC for 適用于 v142 build tools (ARM)  | 16.7.30310.162
+VisualStudio. v14.26. Spectre （） | 適用于適用于 v142 的 c + + v v14.26 適用于 Spectre 緩和 (ARM) 的組建工具 | 16.7.30310.162
+VisualStudio. v14.26. ARM64。 | C + + v v14.26 MFC for 適用于 v142 build tools (ARM64)  | 16.7.30310.162
+VisualStudio. v14.26. ARM64.. Spectre | C + + v v14.26 MFC for 適用于 v142 build tools with Spectre 緩和措施 (ARM64)  | 16.7.30310.162
+VisualStudio. v14.26. Spectre。 | C + + v v14.26 MFC for 適用于 v142 build tools with Spectre 緩和 (x86 & x64)  | 16.7.30310.162
+VisualStudio. v14.26. x86。 | MSVC 適用于 v142-VS 2019 c + + x64/x86 build tools (v v14.26)  | 16.7.30310.162
+VisualStudio. v14.26. Spectre <。 | MSVC 適用于 v142-VS 2019 c + + x64/x86 Spectre-降低的程式庫 (v v14.26)  | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.ATL.ARM | 適用于最新適用于 v142 build tools (ARM) 的 c + + ATL | 16.4.29313.120
-Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre | 適用于最新適用于 v142 build 工具的 c + + ATL，具備 Spectre 防護功能 (ARM)  | 16.5.29721.120
-Microsoft.VisualStudio.Component.VC.ATL.ARM64 | 最新適用于 v142 組建工具的 c + + ATL (ARM64)  | 16.4.29313.120
-Microsoft.VisualStudio.Component.VC.ATL.ARM64.Spectre | 適用于最新適用于 v142 build 工具的 c + + ATL，具備 Spectre 防護 (ARM64)  | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.ATL.Spectre | 適用于最新適用于 v142 build 工具的 c + + ATL，具備 Spectre 緩和功能 (x86 & x64)  | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre | 適用于 Spectre 緩和功能的最新適用于 v142 build 工具的 c + + MFC (x86 & x64)  | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre | 適用于最新適用于 v142 build 工具的 c + + ATL (ARM) 的緩和措施 | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.ATL.ARM64 | 適用于最新適用于 v142 build tools (ARM64) 的 c + + ATL | 16.4.29313.120
+Microsoft.VisualStudio.Component.VC.ATL.ARM64.Spectre | C + + ATL for 最新的適用于 v142 build tools with Spectre 緩和 (ARM64)  | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.ATL.Spectre | C + + ATL for 適用于 v142 build tools with Spectre 緩和 (x86 & x64)  | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre | C + + MFC 適用于最新的適用于 v142 組建工具，具有 Spectre 緩和 (x86 & x64)  | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.MFC.ARM | 適用于最新適用于 v142 build tools (ARM) 的 c + + MFC | 16.4.29313.120
-Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre | 適用于最新適用于 v142 build 工具的 c + + MFC，具備 Spectre 防護功能 (ARM)  | 16.5.29721.120
-Microsoft.VisualStudio.Component.VC.MFC.ARM64 | 最新適用于 v142 組建工具的 c + + MFC (ARM64)  | 16.4.29313.120
-Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre | 適用于 Spectre 防護的最新適用于 v142 build 工具的 c + + MFC (ARM64)  | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre | C + + MFC 適用于具有 Spectre 緩和 (ARM) 的最新適用于 v142 組建工具 | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.MFC.ARM64 | 適用于最新適用于 v142 build tools (ARM64) 的 c + + MFC | 16.4.29313.120
+Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre | C + + MFC 適用于具有 Spectre 緩和 (的最新適用于 v142 build tools ARM64)  | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.Redist.MSM | C++ 2019 可轉散發 MSM | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | MSVC 適用于 v142-VS 2019 c + + ARM Spectre-減輕程式庫 (v 14.27)  | 16.7.30310.162
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | MSVC 適用于 v142-VS 2019 c + + ARM64 Spectre-減輕程式庫 (v 14.27)  | 16.7.30310.162
-Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | MSVC 適用于 v142-VS 2019 c + + x64/x86 Spectre-減輕程式庫 (v 14.27)   | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | MSVC 適用于 v142-VS 2019 c + + ARM Spectre-降低的程式庫 (v 14.27)  | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | MSVC 適用于 v142-VS 2019 c + + ARM64 Spectre-降低的程式庫 (v 14.27)  | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | MSVC 適用于 v142-VS 2019 c + + x64/x86 Spectre-降低的程式庫 (v 14.27)   | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.v141.ARM.Spectre | MSVC v141 - VS 2017 C++ ARM 已開啟 Spectre 風險降低功能的程式庫 (v14.16) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.v141.ARM64.Spectre | MSVC v141 - VS 2017 C++ ARM64 已開啟 Spectre 風險降低功能的程式庫 (v14.16) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.v141.ATL | 適用於 v141 建置工具的 C++ ALT (x86 & x64) | 16.0.28625.61

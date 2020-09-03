@@ -1,5 +1,5 @@
 ---
-title: Friend （Debug Interface Access SDK） |Microsoft Docs
+title: Friend (Debug 介面存取 SDK) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,14 +15,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4e410b453b9fac97a96e31c4d62fb9d7cccc41d4
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468641"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>friend (偵錯介面存取 SDK)
-Friend 類別和 friend 函式是以 `SymTagFriend` 符號識別。 它們是父使用者定義型別（Udt）的子系，而且具有[IDiaSymbol：： get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)屬性。
+Friend 類別和 friend 函式是以 `SymTagFriend` 符號識別。 它們是父使用者自訂類型的子系 (Udt) ，而且具有 [IDiaSymbol：： get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) 屬性。
 
 ## <a name="properties"></a>屬性
  下表顯示此符號類型的其他有效屬性。
@@ -30,10 +30,10 @@ Friend 類別和 friend 函式是以 `SymTagFriend` 符號識別。 它們是父
 |屬性|資料類型|描述|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|UDT 父系的符號。|
-|[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|類別父符號的識別碼。|
+|[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|類別父系符號的識別碼。|
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|類別或函式的名稱。|
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|符號的索引識別碼。|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|傳回 `SymTagFriend` （其中一個[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)值）。|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|傳回 `SymTagFriend` (其中一個) 的 [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md) 值。|
 |[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|類別或函數的符號。|
 |[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|類型符號的識別碼。|
 

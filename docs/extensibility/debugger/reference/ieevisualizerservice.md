@@ -1,5 +1,5 @@
 ---
-title: IEE可視化服務 |微軟文件
+title: IEEVisualizerService |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 40d21dcc9b1da0e1e2250adcfad59b3ef46a2113
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717936"
 ---
 # <a name="ieevisualizerservice"></a>IEEVisualizerService
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關如何執行 CLR 運算式評估工具的詳細資訊，請參閱 [CLR 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 此介面實現關鍵方法,為[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)和[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)介面提供功能。
+ 這個介面會實提供功能給 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 和 [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) 介面的主要方法。
 
 ## <a name="syntax"></a>語法
 
@@ -31,34 +31,34 @@ ms.locfileid: "80717936"
 IEEVisualizerService : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- Visual Studio 實現此介面,以允許運算式賦值器 (EE) 支援類型可視化器。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ Visual Studio 會執行這個介面，以允許運算式評估工具 (EE) 支援型別視覺化程式。
 
-## <a name="notes-for-callers"></a>通話備註
- EE 呼叫[CreateVisualizer 服務](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)以取得此介面,作為其對類型可視化器的支援的一部分。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ EE 會呼叫 [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md) 來取得此介面，作為其對視覺化類型的支援。
 
-## <a name="methods-in-vtable-order"></a>依 Vtable 順序排列的方法
+## <a name="methods-in-vtable-order"></a>採用 Vtable 順序的方法
 
 |方法|描述|
 |------------|-----------------|
-|[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)|檢索此服務知道的自定義查看器數。|
-|[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)|檢索自定義檢視器的清單。|
-|[GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)|返回屬性的代理物件。|
-|[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)|檢索要為指定屬性或欄位顯示的值字串數。|
+|[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)|抓取此服務知道的自訂檢視器數目。|
+|[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)|抓取自訂檢視器清單。|
+|[GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)|傳回屬性的 proxy 物件。|
+|[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)|抓取要針對指定的屬性或欄位顯示的值字串數目。|
 
 ## <a name="remarks"></a>備註
- IDE 使用[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面來確定是否有任何自定義查看器或類型可視化器的屬性。 通過創建視覺化工具服務(使用[CreateVisualizer 服務](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)),EE`IDebugProperty3`可以為和[IPropertyProxyEESide(](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)支援查看和更改屬性的值)介面提供功能,從而支援類型可視化器。
+ IDE 會使用 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 介面來判斷屬性是否有任何自訂檢視器或型別視覺化程式。 藉由建立[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)) 的視覺化服務 (，EE 可以提供和 IPropertyProxyEESide (的功能，以 `IDebugProperty3` 支援) 介面查看和變更屬性的值，進而支援型別視覺化程式。 [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 
- 如果 EE 具有自身實現的自訂檢視器,則 EE`CLSID`可以將這些 自訂檢視器的 s 追加到[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)返回的清單末尾。 這允許 EE 同時支援類型可視化器及其自己的自定義查看器。 只需確保[GetCustomViewerCount 反映](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)任何自定義查看器的添加。
+ 如果 EE 具有自行實行的自訂檢視器，則 EE 可將 `CLSID` 這些自訂檢視器的 s 附加至 [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)傳回的清單結尾。 這可讓 EE 支援型別視覺化程式和自己的自訂檢視器。 只要確定 [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) 會反映出新增的任何自訂檢視器。
 
- 有關可視化工具與查看器之間的差異的討論,請參閱["類型可視化器"和"自定義檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)"。
+ 請參閱 [型別視覺化程式和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) ，以取得視覺化檢視和檢視器之間差異的討論。
 
 ## <a name="requirements"></a>需求
- 標題: ee.h
+ 標頭： ee. h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)

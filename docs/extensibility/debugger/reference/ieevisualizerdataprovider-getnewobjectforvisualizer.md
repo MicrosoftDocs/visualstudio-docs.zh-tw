@@ -1,5 +1,5 @@
 ---
-title: IEE視覺化資料提供程式:取得新物件可視化器 |微軟文件
+title: IEEVisualizerDataProvider：： GetNewObjectForVisualizer |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c478ca3fc913f5ab79f37a957b05ff1d665f8aa5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718109"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
-此方法為可視化工具獲取一個新物件。 此方法將始終從現有物件創建新物件。
+這個方法會為視覺化檢視取得新的物件。 這個方法一律會從現有的物件建立新的物件。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetNewObjectForVisualizer(
 
 ## <a name="parameters"></a>參數
 `ppObject`\
-[出]新物件。
+擴展新的物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- `This method`重新評估它當前表示的物件,並將結果作為新物件返回。 現有物件將作為評估結果進行更新。
+ `This method` 重新評估目前表示的物件，並以新物件的形式傳回結果。 現有的物件將會更新為評估的結果。
 
 ## <a name="see-also"></a>另請參閱
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

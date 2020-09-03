@@ -12,32 +12,32 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e823ecb1f7523c1a6f094d5669f4a37a72e84f60
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349285"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在處理序檢視中搜尋處理序
-您可以使用處理序識別碼或模組字串做為搜尋準則，在進程視圖中搜尋特定進程。 您也可以指定搜尋的初始方向。 對話方塊中的欄位會在進程樹狀結構中顯示所選取進程的屬性。
+您可以使用處理序識別碼或模組字串做為搜尋準則，在進程視圖中搜尋特定的進程。 您也可以指定搜尋的初始方向。 對話方塊中的欄位會在進程樹狀結構中顯示所選進程的屬性。
 
 ### <a name="to-search-for-a-process-in-processes-view"></a>在進程視圖中搜尋進程
 
-1. 排列視窗，讓 [Spy + +] 和 [作用中[進程] 視圖](../debugger/processes-view.md)視窗可見。
+1. 排列您的視窗，讓 Spy + + 和作用中 [進程視圖](../debugger/processes-view.md) 視窗可見。
 
 2. 從 [**搜尋**] 功能表中，選擇 [**尋找進程**]
 
-    [[處理搜尋] 對話方塊](../debugger/process-search-dialog-box.md)隨即開啟。
+    [ [進程搜尋] 對話方塊](../debugger/process-search-dialog-box.md) 隨即開啟。
 
-3. 輸入處理序識別碼或模組字串做為搜尋準則。
+3. 輸入處理常式識別碼或模組字串做為搜尋準則。
 
 4. 清除您不想要指定值的任何欄位。
 
    > [!TIP]
-   > 若要尋找模組所擁有的所有進程，請清除 [**進程**] 方塊，並在 [**模組**] 方塊中輸入模組名稱。 然後使用 **[尋找下一個]** 繼續搜尋處理常式。
+   > 若要尋找模組所擁有的所有進程，請清除 [ **處理** ] 方塊，然後在 [ **模組** ] 方塊中輸入模組名稱。 然後使用 **[尋找下一個]** 繼續搜尋進程。
 
-5. 針對搜尋的初始方向，選擇 [**向上**] 或 [**向下**]。
+5. 選擇 [ **向上** ] 或 [ **向下** ] 以取得搜尋的初始方向。
 
-6. 按一下 [確定]。
+6. 按一下 [確定]  。
 
-   如果找到相符的進程，則會在 [**進程視圖**] 視窗中反白顯示。
+   如果找到相符的進程，就會在 [進程] **視圖** 視窗中反白顯示。

@@ -1,5 +1,5 @@
 ---
-title: BSTR_ARRAY | Microsoft Docs
+title: BSTR_ARRAY |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 912537eb632768b3bcb6543dab098126ce02424f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153188"
 ---
-# <a name="bstrarray"></a>BSTR_ARRAY
+# <a name="bstr_array"></a>BSTR_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-結構描述的字串陣列。  
+描述字串陣列的結構。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,22 +42,22 @@ struct BSTR_ARRAY {
   
 ## <a name="terms"></a>詞彙  
  dwCount  
- 中的字串數目`Members`陣列。  
+ 陣列中的字串數目 `Members` 。  
   
  成員  
- 字串陣列。  
+ 字串的陣列。  
   
 ## <a name="remarks"></a>備註  
- 此結構會傳回從[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)方法。  
+ [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)方法會傳回這個結構。  
   
- [C++只]每個個別的字串必須使用釋放`SysFreeString`，而`Members`陣列必須釋放與`CoTaskMemFree`。  
+ [僅限 c + +]每個個別字串都必須使用來釋 `SysFreeString` 出，而 `Members` 陣列必須使用來釋放 `CoTaskMemFree` 。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

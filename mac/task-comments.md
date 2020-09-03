@@ -6,10 +6,10 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
 ms.openlocfilehash: d88b74ab953f97e061f4be3befc227646006f38b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67692317"
 ---
 # <a name="task-comments"></a>工作註解
@@ -24,7 +24,7 @@ ms.locfileid: "67692317"
 //TODO: Finish this for all properties.
 ```
 
-Mac 的 Visual Studio 通過在**工作清單**墊中突出顯示這些標記來吸引人們對這些標記的注意，可以通過導航到**查看>板>任務**來顯示這些標記：
+Visual Studio for Mac 藉由在 **工作清單** 板中反白顯示這些標記來將其醒目提示，您可以藉由流覽來 **查看 > 板 >** 工作來顯示這些標記：
 
 ![工作清單板](media/source-editor-image11.png)
 

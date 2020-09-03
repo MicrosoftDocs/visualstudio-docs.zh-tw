@@ -1,5 +1,5 @@
 ---
-title: IEE可視化服務提供者 |微軟文件
+title: IEEVisualizerServiceProvider |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 44d8a73589a4248736ac6c4d73814166056a1f90
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717880"
 ---
 # <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關如何執行 CLR 運算式評估工具的詳細資訊，請參閱 [CLR 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 此介面允許訪問一個可以創建可視化工具服務的方法,該服務用於處理IDE的類型可視化器任務。
+ 這個介面可讓您存取可建立視覺化程式服務的方法，此服務可用來處理 IDE 的型別視覺化工作。
 
 ## <a name="syntax"></a>語法
 
@@ -31,29 +31,29 @@ ms.locfileid: "80717880"
 IEEVisualizerServiceProvider : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- Visual Studio 實現此介面以建立視覺化工具服務物件,而可視化物件又用於向 Visual Studio IDE`CLSID`提供類型視覺化器的類 IDE。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ Visual Studio 會執行此介面來建立視覺化程式服務物件，該物件接著會用來將型別 `CLSID` 視覺化) 的類別 (識別碼提供給 VISUAL STUDIO IDE。
 
-## <a name="notes-for-callers"></a>通話備註
- 運算式賦值器 (EE) 呼叫[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)以取得此介面。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ 運算式評估工具 (EE) 呼叫 [GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md) 來取得這個介面。
 
-## <a name="methods-in-vtable-order"></a>依 Vtable 順序排列的方法
+## <a name="methods-in-vtable-order"></a>採用 Vtable 順序的方法
 
 |方法|描述|
 |------------|-----------------|
-|[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|建立視覺化工具服務|
+|[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|建立視覺化服務|
 
 ## <a name="remarks"></a>備註
- 該`IEEVisualizerServiceProvider`介面是在[實現評估同步](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)期間獲得的。 此介面創建的可視化工具服務用於向[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面提供功能,EE 負責實現該介面。 EE 還負責實現[IEE 可視化數據提供程式](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)介面,該介面允許類型可視化器查看和修改屬性的值。
+ `IEEVisualizerServiceProvider`介面是在[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)的執行期間取得。 此介面所建立的視覺化程式服務會用來提供功能給 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 介面，而此介面會由 EE 負責執行。 此 EE 也負責實 [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) 介面，讓型別視覺化程式能夠查看和修改屬性的值。
 
- 有關這些介面如何互動的詳細資訊,請參閱[視覺化和檢視資料](../../../extensibility/debugger/visualizing-and-viewing-data.md)。
+ 如需這些介面互動方式的詳細資訊，請參閱 [視覺化和查看資料](../../../extensibility/debugger/visualizing-and-viewing-data.md) 。
 
 ## <a name="requirements"></a>需求
- 標題: ee.h
+ 標頭： ee. h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)

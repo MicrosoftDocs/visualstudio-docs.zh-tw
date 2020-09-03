@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2::QueryIsLocal |Microsoft Docs
+title: IDebugDefaultPort2：： QueryIsLocal |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 77c521a364b33c1bd6fdde544d27237ead12ca46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196263"
 ---
 # <a name="idebugdefaultport2queryislocal"></a>IDebugDefaultPort2::QueryIsLocal
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個方法會判斷此連接埠是否在本機電腦上。  
+這個方法會判斷這個埠是否在本機電腦上。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ int QueryIsLocal();
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 傳回`S_OK`此連接埠是否在本機 （在與呼叫端相同的電腦） 或`S_FALSE`連接埠是否位於另一部電腦上。  
+ `S_OK`如果此埠在與呼叫端相同的電腦上是本機 (，或在 `S_FALSE` 另一部電腦上，則會) 傳回。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)

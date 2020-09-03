@@ -1,5 +1,5 @@
 ---
-title: IEE視覺化資料提供者::為可視化工具設定物件 |微軟文件
+title: IEEVisualizerDataProvider：： CanSetObjectForVisualizer |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c4d3c190195360d37c15be12cef2790610928a95
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718127"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
-此方法確定可視化工具是否可以更新它表示的數據物件。
+這個方法會判斷視覺化檢視是否可以讓它代表更新的資料物件。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int CanSetObjectForVisualizer(
 
 ## <a name="parameters"></a>參數
 `b`\
-[出]如果可視化工具`TRUE`上的物件可以更新,則非零 (`FALSE`), 如果 不能更新, 則為零 ( )。
+擴展非零 (`TRUE`) 如果可以更新視覺化檢視上的物件，則為零 (`FALSE`) 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 例如,如果物件綁定到唯讀記憶體,則該物件可能不是可更改的。
+ 例如，如果物件系結至唯讀記憶體，則物件可能無法變更。
 
 ## <a name="see-also"></a>另請參閱
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

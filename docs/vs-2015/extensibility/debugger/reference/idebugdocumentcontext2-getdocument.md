@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetDocument |Microsoft Docs
+title: IDebugDocumentCoNtext2：： GetDocument |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9fc4c522ace615b3c5d44244fc140d04cacf5387
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144962"
 ---
 # <a name="idebugdocumentcontext2getdocument"></a>IDebugDocumentContext2::GetDocument
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得包含這個文件內容的文件。  
+取得包含此檔內容的檔。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,14 +40,14 @@ int GetDocument( 
   
 #### <a name="parameters"></a>參數  
  `ppDocument`  
- [out]傳回[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)物件，表示包含這個文件內容的文件。  
+ 擴展傳回 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 物件，代表包含此檔內容的檔。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法會提供直接加入 IDE 的文件的偵錯引擎。 否則，此方法應傳回`E_NOTIMPL`。  
+ 這個方法適用于將檔直接提供至 IDE 的偵錯工具引擎。 否則，此方法應該會傳回 `E_NOTIMPL` 。  
   
 ## <a name="see-also"></a>另請參閱  
- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
+ [IDebugDocumentCoNtext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

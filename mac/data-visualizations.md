@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67691736"
 ---
 # <a name="data-visualizations"></a>資料視覺效果
@@ -28,7 +28,7 @@ Point/PointF 或 iOS 和 Mac 中的 CGPoint，會在偵錯板中轉譯為顯示 
 
 ![點視覺效果](media/data-visualizations-image10.png)
 
-## <a name="size"></a>大小
+## <a name="size"></a>Size
 Size/SizeF 或 iOS 和 Mac 中的 CGSize 會轉譯為矩形。 將進行繪製以擴展直到尺寸的增長超過 250 px 為止，此時會將矩形擴展為最大尺寸 250 px：
 
 [大小視覺效果](media/data-visualizations-image11.png)
@@ -43,7 +43,7 @@ Rectangle/RectangleF 或 iOS 和 Mac 的 CGRect 會顯示尺寸和原點。 與�
 
 [座標視覺效果](media/data-visualizations-image13.png)
 
-## <a name="color"></a>Color
+## <a name="color"></a>色彩
 這會顯示 UIColor、CGColor 和 Color 屬性，用來描述彩色預覽、RGBA 元件、色調-飽和-亮度值和色彩的十六進位值：
 
 ![色彩視覺效果](media/data-visualizations-image14.png)
@@ -88,15 +88,15 @@ IEnumerable 會列舉所有值；透過按一下 [顯示值]**** 按鈕，即可
 
 ![其他視覺效果](media/data-visualizations-image23.png)
 
-* **Primitives**
+* **基本型別**
   * 這會顯示基本類型的原始值。
-* **Enum**
+* **列舉**
   * 這會顯示不含 enum 類型限定詞的欄位值。
 * **元**
   * 以格式 (,) 顯示
-* **空**
+* **Null**
   * 顯示 "null" 值。
-* **Url**
+* **URL**
   * 這會顯示可按式超連結。
 * **IntPtr**
   * 這會顯示 IntPtr 的十六進位表示法。

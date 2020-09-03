@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c6895abd85a4394e4ddcaebcd6f09bc0a39936cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663023"
 ---
 # <a name="visual-basic-specific-intellisense"></a>Visual Basic 特定的 IntelliSense
@@ -38,7 +38,7 @@ Visual Basic 原始程式碼編輯器提供下列 IntelliSense 功能：
 
    當陳述式要參考列舉成員時，IntelliSense 會顯示 `Enum` 的成員清單。 當陳述式要參考 `Boolean` 時，IntelliSense 會顯示 true-false 下拉式功能表。
 
-  完成預設可以關閉，只要在 [Visual Basic]  資料夾取消選取 [一般]  屬性頁的 [自動列出成員]  即可。
+  完成預設可以關閉，只要在 [Visual Basic]**** 資料夾取消選取 [一般]**** 屬性頁的 [自動列出成員]**** 即可。
 
   您可以叫用 [列出成員]、[自動完成文字] 或 ALT + 向右鍵，手動叫用完成。 如需詳細資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md)。
 

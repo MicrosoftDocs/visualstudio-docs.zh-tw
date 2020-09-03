@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::SetNextStatement |Microsoft Docs
+title: IDebugThread2：： SetNextStatement |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 755044ec1d713075c1c1fd3165254ba192943288
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152967"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-設定目前的指令指標至指定的程式碼內容。  
+將目前的指令指標設定為指定的程式碼內容。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,22 +42,22 @@ int SetNextStatement ( 
   
 #### <a name="parameters"></a>參數  
  `pStackFrame`  
- 保留供未來使用;設定為 null 的值。  
+ 保留供日後使用;設定為 null 值。  
   
  `pCodeContext`  
- [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)描述將要執行的程式碼位置的物件和其內容。  
+ 在 [IDebugCodeCoNtext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 物件，描述要執行的程式碼位置及其內容。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示其他可能的值。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 下表顯示其他可能的值。  
   
 |值|描述|  
 |-----------|-----------------|  
-|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|下一個陳述式不能在框架的堆疊上更深入的堆疊框架。|  
-|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|找不到任何堆疊框架相關聯的下一步 的陳述式。|  
-|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|有些偵錯引擎不能設定例外狀況之後的下一個陳述式。|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|下一個語句不能在堆疊框架中更深入的框架堆疊。|  
+|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|下一個語句與堆疊中的任何框架沒有關聯。|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|某些偵錯工具引擎無法在例外狀況之後設定下一個語句。|  
   
 ## <a name="remarks"></a>備註  
- 指令指標表示下一個指令或陳述式來執行。 這個方法用來重試一次一行程式碼，來源，或強制在另一個函式，例如繼續執行。  
+ 指令指標表示要執行的下一個指令或語句。 例如，這個方法可用來重試一行原始程式碼或強制繼續執行另一個函式。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

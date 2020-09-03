@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2::GetPortNotify |Microsoft Docs
+title: IDebugDefaultPort2：： GetPortNotify |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c0f5b1faf000ef982e38736b3cd3ea89a1dc2dc0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196289"
 ---
 # <a name="idebugdefaultport2getportnotify"></a>IDebugDefaultPort2::GetPortNotify
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個方法會取得[IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)介面，此連接埠。  
+這個方法會取得此埠的 [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) 介面。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,13 +40,13 @@ int GetPortNotify(
   
 #### <a name="parameters"></a>參數  
  `ppPortNotify`  
- [out][IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)物件。  
+ 擴展 [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) 物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 通常`QueryInterface`物件，實作上呼叫方法[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)介面，以取得[IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)介面。 不過，有在程式所需的介面實作的不同物件的情況。 這個方法會隱藏這些情況下，並傳回`IDebugPortNotify2`介面最適當的物件。  
+ 一般來說， `QueryInterface` 方法是在執行 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) 介面的物件上呼叫，以取得 [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) 介面。 不過，在某些情況下，會在不同的物件上執行所需的介面。 這個方法會隱藏這些情況，並 `IDebugPortNotify2` 從最適當的物件傳回介面。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   

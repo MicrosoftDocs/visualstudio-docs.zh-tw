@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aa064d875d5354ac4ae1fc5fdd8493c5efbbee01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663049"
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>主要和當地語系化附屬組件的版本號碼
@@ -44,4 +44,4 @@ ms.locfileid: "72663049"
 ```
 
 ## <a name="see-also"></a>另請參閱
- [執行時間如何找出元件](https://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34)[設定元件屬性](https://msdn.microsoft.com/library/36a98a81-b5b5-4c19-912a-11f91eff7f4e)[安全性和當地語系化的附屬元件](../ide/security-and-localized-satellite-assemblies.md)[當地語系化應用](../ide/localizing-applications.md)程式[全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)
+ [執行時間如何找出元件](https://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34)[設定元件屬性](https://msdn.microsoft.com/library/36a98a81-b5b5-4c19-912a-11f91eff7f4e)[安全性和當地語系化的附屬元件](../ide/security-and-localized-satellite-assemblies.md)，並將[應用程式當地語系化](../ide/localizing-applications.md)[及當地語系化應用](../ide/globalizing-and-localizing-applications.md)程式

@@ -1,5 +1,5 @@
 ---
-title: IEE視覺化服務::獲取價值顯示字串計數 |微軟文件
+title: IEEVisualizerService：： GetValueDisplayStringCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5c1a664594e55b8db21562a650c2c750668c2584
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717996"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
-檢索要為指定屬性或欄位顯示的值字串數。
+抓取要針對指定的屬性或欄位顯示的值字串數目。
 
 ## <a name="syntax"></a>語法
 
@@ -44,16 +44,16 @@ int GetValueDisplayStringCount (
 
 ## <a name="parameters"></a>參數
 `displayKind`\
-[在][顯示金德](../../../extensibility/debugger/reference/displaykind.md)枚舉中的值。
+在來自 [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) 列舉的值。
 
 `propertyOrField`\
-[在]表示屬性或欄位的[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面。
+在代表屬性或欄位的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 介面。
 
 `pcelt`\
-[出]返回要顯示的值字串數。
+擴展傳回要顯示的值字串數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
