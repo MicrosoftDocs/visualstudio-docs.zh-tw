@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 34f3dc8642e2cf8e965e2ad303bed79931d2645c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579506"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入門：使用 Visual Basic 在 Visual Studio 中建立第一個主控台應用程式
@@ -68,7 +68,7 @@ ms.locfileid: "77579506"
 
 1. 開啟 Visual Studio 2019。
 
-1. 在啟動視窗中，選擇 **"創建新專案**"。
+1. 在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
    ![檢視 [建立新專案] 視窗](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
@@ -89,7 +89,7 @@ ms.locfileid: "77579506"
    >
    > 接下來，選擇 Visual Studio 安裝程式中的 [修改]**** 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續]**** 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
 
-1. 在 [設定您的新專案]**** 視窗的 [專案名稱]**** 方塊中鍵入或輸入 *WhatIsYourName*。 然後，選擇 **"創建**"。
+1. 在 [設定您的新專案]**** 視窗的 [專案名稱]**** 方塊中鍵入或輸入 *WhatIsYourName*。 然後，選擇 [ **建立**]。
 
    ![在 [設定您的新專案] 視窗中，以 'WhatIsYourName' 命名您的專案](../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png)
 
@@ -122,7 +122,7 @@ ms.locfileid: "77579506"
 
     除非您按任一鍵，否則這會暫停程式。
 
-2. 在功能表列上，選擇 **"生成** > **解決方案**"。
+2. 在功能表列上，選取 [**組建**  >  **組建方案**]。
 
    這會將您的程式編譯成中繼語言 (IL)，而該語言是由 Just-In-Time (JIT) 編譯器轉換為二進位程式碼。
 

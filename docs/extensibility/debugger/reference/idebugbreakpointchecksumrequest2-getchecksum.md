@@ -1,5 +1,5 @@
 ---
-title: IDebug 突破點檢查和請求2::獲取校驗和 |微軟文件
+title: IDebugBreakpointChecksumRequest2：： GetChecksum |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6fe1d2828f15b295f42c7fd756f2ffc407a632c9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735180"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-檢索斷點請求的文檔校驗和,給定要使用的校驗和演演演算法的唯一標識符。
+針對指定要使用總和檢查碼演算法的唯一識別碼，抓取中斷點要求的檔總和檢查碼。
 
 ## <a name="syntax"></a>語法
 
@@ -41,16 +41,16 @@ public int GetChecksum(
 
 ## <a name="parameters"></a>參數
 `guidAlgorithm`\
-[在]校驗和演演演算法的唯一標識符。
+在總和檢查碼演算法的唯一識別碼。
 
 `pChecksumData`\
-[出]記錄斷點請求的校驗和。
+擴展記錄中斷點要求的總和檢查碼。
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則,返回錯誤代碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
-下面的範例顯示了一個函數,用於檢查文檔的校驗和(即將綁定)是否與UI中的校驗和匹配。
+下列範例顯示的函式會檢查檔的總和檢查碼（即將系結）是否符合 UI 中的總和檢查碼。
 
 ```cpp
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)

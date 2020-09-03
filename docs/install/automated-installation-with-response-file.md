@@ -17,10 +17,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: ecdda55bbe4e79af01f8fb9a9a2b77f775548b10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115229"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>如何在回應檔中定義設定
@@ -159,4 +159,4 @@ vs_enterprise.exe --in customInstall.json
 ## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)
-* [安裝或使用視覺化工作室時解決與網路相關的錯誤](troubleshooting-network-related-errors-in-visual-studio.md)
+* [當您安裝或使用 Visual Studio 時針對網路相關錯誤進行疑難排解](troubleshooting-network-related-errors-in-visual-studio.md)

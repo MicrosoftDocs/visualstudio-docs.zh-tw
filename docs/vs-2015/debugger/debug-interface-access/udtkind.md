@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9fb22471cea7cd717b8969682a0e1f643f912150
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202388"
 ---
 # <a name="udtkind"></a>UdtKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-描述各種不同的使用者定義型別 (UDT)。  
+描述 (UDT) 的各種使用者定義型別。  
   
 ## <a name="syntax"></a>語法  
   
@@ -36,24 +36,24 @@ enum UdtKind { 
 };  
 ```  
   
-## <a name="elements"></a>項目  
+## <a name="elements"></a>元素  
  UdtStruct  
- UDT 是一種結構。  
+ UDT 是一個結構。  
   
  UdtClass  
- UDT 是一個類別。  
+ UDT 是類別。  
   
  UdtUnion  
- UDT 是等位。  
+ UDT 是聯集。  
   
  UdtInterface  
- UDT 是一種介面。  
+ UDT 是介面。  
   
 ## <a name="remarks"></a>備註  
- 傳回這個列舉型別中的值[idiasymbol:: Get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)方法。  
+ [IDiaSymbol：： get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)方法會傳回這個列舉中的值。  
   
 ## <a name="requirements"></a>需求  
- 標頭： cvconst.h  
+ 標頭： cvconst。h  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   

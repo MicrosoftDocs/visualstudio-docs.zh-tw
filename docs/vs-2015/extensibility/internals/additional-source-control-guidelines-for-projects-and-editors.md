@@ -1,5 +1,5 @@
 ---
-title: 專案和編輯器適用的其他原始檔控制指導方針 |Microsoft Docs
+title: 專案和編輯器的其他原始檔控制指導方針 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,29 +11,29 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 376b297e94cc8e5f429254bdc981aea994b27130
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203839"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>專案和編輯器適用的其他原始檔控制方針
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-有幾個的專案和編輯器應符合以支援原始檔控制的指導方針。  
+為了支援原始檔控制，專案和編輯器必須遵守一些指導方針。  
   
-## <a name="guidelines"></a>方針  
- 您的專案或編輯器應該也會執行以下動作來支援原始檔控制：  
+## <a name="guidelines"></a>指導方針  
+ 您的專案或編輯器也應該執行下列作業，以支援原始檔控制：  
   
 |區域|專案|編輯器|詳細資料|  
 |----------|-------------|------------|-------------|  
-|私用檔案的複本|X||環境支援檔案的私用的複本。 也就是登錄在專案中每個人都他/她自己的私用複本，該專案中的檔案。|  
-|ANSI/Unicode 持續性|X|X|如果您撰寫持續性程式碼時，保存 ANSI 格式的檔案，因為大部分的原始檔控制程式目前不支援 Unicode。|  
-|列舉的檔案|X||專案必須包含特定的清單中的所有檔案，而且必須能夠列舉檔案的清單<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>(VSH_PROPID_First_Child/Next_Sibling)。 專案應該也會公開項目名稱，透過其<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetMkDocument%2A>的實作和支援名稱查閱 （包括特殊的檔案） 透過其<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>實作。|  
-|文字格式|X|X|如果可能的話，檔案應為以文字格式，以支援不同版本的合併。 無法與其他版本的檔案稍後合併並不是文字格式的檔案。 慣用的文字格式為 XML。|  
-|參考架構|X||原始檔控制中輕易地支援參考為基礎的專案。 不過，目錄為基礎的專案也支援原始檔控制，只要專案可能會產生一份其隨，不論這些檔案是否存在於磁碟上的檔案。 當從原始檔控制中開啟專案，會將專案檔關機之前的任何其檔案的第一個。|  
-|將物件和屬性保存在預期的順序|X|X|保存您的檔案，可預測的順序，例如依字母順序排列的順序，以利於進行合併。|  
-|重新載入|X|X|檔案變更時在磁碟上，您的編輯器必須能夠重新載入它。 當您參與原始檔控制時，環境將會重新載入資料，藉由呼叫您<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A>實作。 您有呼叫 IVsQueryEditQuerySave 時，就會發生簽出時，最困難的重新載入案例::<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>和處理資訊。 不過，您的重新載入程式碼必須能夠在此情況下執行。<br /><br /> 環境會自動重新載入專案檔。 不過，專案必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2>如果它有巢狀階層，才能支援重新載入巢狀專案檔案。|  
+|檔案的私用複本|X||環境支援檔的私用複本。 也就是說，在專案中登錄的每個人都有自己的私用該專案中的檔案複本。|  
+|ANSI/Unicode 持續性|X|X|如果您撰寫持續性程式碼，請將檔案保存在 ANSI 格式中，因為大部分的原始檔控制程式目前不支援 Unicode。|  
+|列舉檔案|X||專案必須包含其內所有檔案的特定清單，而且必須能夠使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> 或 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (VSH_PROPID_First_Child/Next_Sibling) 來列舉檔案清單。 專案也應該透過其執行來公開專案名稱 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetMkDocument%2A> ，並支援名稱查閱 (包括透過其執行) 的特殊檔案 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A> 。|  
+|文字格式|X|X|可能的話，檔案應該是文字格式，以支援合併不同的版本。 不是文字格式的檔案，稍後就無法與其他版本的檔案合併。 慣用的文字格式為 XML。|  
+|參考型|X||原始檔控制中可立即支援參考型專案。 不過，原始檔控制也支援目錄型專案，只要專案可以視需要產生其檔案清單，無論這些檔案是否存在於磁片上。 從原始檔控制開啟專案時，專案檔會在其任何檔案之前先關閉。|  
+|以可預測的順序保存物件和屬性|X|X|以可預測的順序（例如依字母順序）保存您的檔案，以促進合併。|  
+|重新載入|X|X|當磁片上的檔案變更時，您的編輯器必須能夠重載它。 當您參與原始檔控制時，環境會藉由呼叫您的執行來為您重載資料 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> 。 最困難的重載案例是當您呼叫 IVsQueryEditQuerySave：： <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> 且正在處理資訊時，簽出時發生。 不過，您的重載程式碼必須能夠在此情況下執行。<br /><br /> 環境會自動重載專案檔。 但是，如果專案有嵌套階層，則必須執行專案， <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> 以支援重載嵌套的專案檔。|  
   
 ## <a name="see-also"></a>另請參閱  
  [支援原始檔控制](../../extensibility/internals/supporting-source-control.md)

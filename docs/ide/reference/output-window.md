@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567979"
 ---
-# <a name="output-window"></a>[輸出] 視窗
+# <a name="output-window"></a>輸出視窗
 
 [輸出]**** 視窗顯示整合式開發環境 (IDE) 中各種功能的狀態訊息。 若要開啟 [輸出]**** 視窗，請在功能表列上選擇 [檢視]**** >  [輸出]****，或按下 **Ctrl**+**Alt**+**O**。
 
@@ -71,12 +71,12 @@ ms.locfileid: "75567979"
 
 ## <a name="scroll-behavior"></a>捲動行為
 
-如果您在 [輸出]**** 視窗中使用自動捲動，然後使用滑鼠或方向鍵進行巡覽，則會停止自動捲動。 要恢復自動滾動，請按**Ctrl**+**結束**。
+如果您在 [輸出]**** 視窗中使用自動捲動，然後使用滑鼠或方向鍵進行巡覽，則會停止自動捲動。 若要繼續自動捲動，請按下**Ctrl** + **End**。
 
 ## <a name="see-also"></a>另請參閱
 
-- [輸出視窗中的診斷消息](../../debugger/diagnostic-messages-in-the-output-window.md)
+- [輸出視窗中的診斷訊息](../../debugger/diagnostic-messages-in-the-output-window.md)
 - [如何：控制輸出視窗](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
 - [編譯和建置](../../ide/compiling-and-building-in-visual-studio.md)
-- [瞭解組建組態](../../ide/understanding-build-configurations.md)
+- [了解組建組態](../../ide/understanding-build-configurations.md)
 - [類別庫概觀](/dotnet/standard/class-library-overview)

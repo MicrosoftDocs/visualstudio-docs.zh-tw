@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76826467"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>如何：使用 MSBuild 專案 SDK
 
-MSBuild 15.0 引入了"專案 SDK"的概念，它簡化了使用需要導入屬性和目標的軟體發展工具組。
+MSBuild 15.0 引進了「專案 SDK」的概念，可簡化使用需要匯入屬性和目標的軟體發展工具組。
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -28,7 +28,7 @@ MSBuild 15.0 引入了"專案 SDK"的概念，它簡化了使用需要導入屬�
 </Project>
 ```
 
-在評估專案期間，MSBuild 在專案檔案的頂部和底部添加了隱式導入：
+在專案評估期間，MSBuild 會在專案檔的頂端和底部加入隱含的匯入：
 
 ```xml
 <Project>
@@ -56,9 +56,9 @@ MSBuild 15.0 引入了"專案 SDK"的概念，它簡化了使用需要導入屬�
     </Project>
     ```
 
-    如前所述，隱式導入將添加到專案的頂部和底部。
+    如先前所述，會將隱含匯入新增至專案的頂端和底部。
     
-    要指定 SDK 的特定版本，請將其追加到`Sdk`屬性：
+    若要指定特定版本的 SDK，請將它附加至 `Sdk` 屬性：
 
     ```xml
     <Project Sdk="My.Custom.Sdk/1.2.3">
@@ -78,7 +78,7 @@ MSBuild 15.0 引入了"專案 SDK"的概念，它簡化了使用需要導入屬�
     </Project>
    ```
 
-   如前所述，隱式導入將添加到專案的頂部和底部。
+   如先前所述，會將隱含匯入新增至專案的頂端和底部。
    
    不需要 `Version` 屬性。
 
@@ -101,19 +101,19 @@ MSBuild 15.0 引入了"專案 SDK"的概念，它簡化了使用需要導入屬�
 
 ## <a name="how-project-sdks-are-resolved"></a>解析專案 SDK 的方式
 
-評估導入時，MSBuild 會根據指定的名稱和版本動態解析到專案 SDK 的路徑。  MSBuild 還具有已註冊的 SDK 解析器清單，該解析器是查找電腦上專案 SDK 的外掛程式。 這些外掛程式包括：
+在評估匯入時，MSBuild 會根據您指定的名稱和版本，動態地解析專案 SDK 的路徑。  MSBuild 也有一個已註冊的 SDK 解析程式清單，這些解析程式是在您的電腦上尋找專案 Sdk 的外掛程式。 這些外掛程式包括：
 
 - 以 NuGet 為基礎的解析程式，可查詢 NuGet 套件的設定套件摘要，以尋找符合您所指定 SDK 的識別碼和版本。
 
-   僅當指定了可選版本時，此解析器才處於活動狀態。 它可用於任何自訂專案 SDK。
+   只有在您指定了選用的版本時，此解析程式才有效。 它可用於任何自訂專案 SDK。
    
-- .NET CLI 解析器，用於解析與[.NET CLI](/dotnet/core/tools/)一起安裝的 SDK。
+- .NET CLI 解析程式，可解析使用 [.NET cli](/dotnet/core/tools/)安裝的 sdk。
 
-   此解析器定位專案 SDK，例如`Microsoft.NET.Sdk`和`Microsoft.NET.Sdk.Web`是產品的一部分。
+   此解析程式會尋找屬於產品一部分的專案 Sdk，例如 `Microsoft.NET.Sdk` 和 `Microsoft.NET.Sdk.Web` 。
    
 - 預設的解析程式，可解析使用 MSBuild 安裝的 SDK。
 
-基於 NuGet 的 SDK 解析器支援在[global.json](/dotnet/core/tools/global-json)檔中指定版本，允許您在一個位置而不是在每個單個專案中控制專案 SDK 版本：
+以 NuGet 為基礎的 SDK 解析程式支援在檔案的 [global.js](/dotnet/core/tools/global-json) 中指定版本，可讓您在單一位置（而不是在每個個別專案中）控制專案 SDK 版本：
 
 ```json
 {
@@ -124,11 +124,11 @@ MSBuild 15.0 引入了"專案 SDK"的概念，它簡化了使用需要導入屬�
 }
 ```
 
-在建置期間每個專案 SDK 都只能使用一個版本。 如果引用同一專案 SDK 的兩個不同版本，MSBuild 會發出警告。 如果在*global.json*檔中指定了版本，則建議**不要**在專案中指定版本。
+在建置期間每個專案 SDK 都只能使用一個版本。 如果您參考相同專案 SDK 的兩個不同版本，MSBuild 會發出警告。 如果在檔案的*global.js*中指定了版本，建議您**不要**在專案中指定版本。
 
 ## <a name="see-also"></a>另請參閱
 
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
-- [自訂您的組建](../msbuild/customize-your-build.md)
+- [自訂組建](../msbuild/customize-your-build.md)
 - [套件、中繼套件和架構](/dotnet/core/packages)
 - [適用於 .NET Core 之 csproj 格式的新增項目](/dotnet/core/tools/csproj)

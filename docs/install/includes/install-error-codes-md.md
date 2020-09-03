@@ -7,13 +7,13 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 4bd769ebd2605d98b4c8a3c473dfca00f86b0f06
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76159329"
 ---
-| **價值** | **結果** |
+| **值** | **結果** |
 | --------- | ---------- |
 | 0 | 作業成功完成 |
 | 1602 | 作業已取消 |

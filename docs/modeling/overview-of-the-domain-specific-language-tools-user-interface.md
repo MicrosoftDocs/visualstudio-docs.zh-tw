@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: af28ca94639b1c6a800c0c43e41d3ccabb74d9bb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532401"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Domain-Specific Language Tools 使用者介面概觀
-當您第一次在 Visual Studio 中開啟特定領域語言工具（DSL 工具）方案時，使用者介面會類似下圖。
+當您第一次在 Visual Studio 中開啟特定領域語言工具 (DSL 工具) 解決方案時，使用者介面會如下圖所示。
 
  ![dsl 設計工具](../modeling/media/dsl_designer.png)
 
  下表說明如何使用 UI 的每個組件。
 
-|**元素**|**[定義]**|
+|**Element**|**定義**|
 |-|-|
 |圖表|圖表顯示領域模型。<br /><br /> 圖表可分成兩側。 一側定義您模型中的項目類型。 另一側定義如何在畫面上顯示您的模型。|
 |工具箱|從 [工具箱] 拖曳工具，以將領域類別和圖形類型新增至圖表。 若要新增關聯、連接線和圖形對應，請按一下工具，然後依序按一下圖表上的來源節點和目標節點。|
@@ -39,7 +39,7 @@ ms.locfileid: "85532401"
 
  下表說明領域模型圖表的一些項目。
 
-|**詞彙**|**[定義]**|
+|**字詞**|**定義**|
 |-|-|
 |領域類別|領域類別是您模型中的項目類型。<br /><br /> 如果領域類別是多個關聯的目標，則可能在圖表中出現多次。<br /><br /> 若要新增領域類別，請將領域類別工具從 [工具箱]**** 拖曳到圖表的 [類別和關係]**** 一側。|
 |領域關聯|領域關聯是您模型中項目之間的連結類型。<br /><br /> 「內嵌關係」** 表示來源項目擁有或包含目標項目，並會顯示為實線。 模型中每個項目都應該是內嵌關係的目標，模型才能形成樹狀。 「參考關聯性」** 表示模型項目之間的一般連結，並顯示為虛線。 所有項目都可以有任意數目的參考連結。<br /><br /> 若要建立關聯，請在 [工具箱]**** 中按一下工具，然後依序按一下來源領域類別和目標類別。|

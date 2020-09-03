@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 76ea78f37cbc8c5e2b6df900aa0e3f320346300a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779762"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>呼叫樹狀圖檢視 - .NET 記憶體取樣資料
@@ -34,14 +34,14 @@ ms.locfileid: "74779762"
 |資料行|描述|
 |------------|-----------------|
 |**處理序識別碼**|分析執行的處理序 ID (PID)。|
-|**流程名稱**|處理序的名稱。|
+|**進程名稱**|處理序的名稱。|
 |**模組名稱**|包含該函式的模組名稱。|
 |**模組路徑**|包含該函式的模組路徑。|
-|**原始檔案**|含有這個函式定義的原始程式檔。|
+|**來源檔案**|含有這個函式定義的原始程式檔。|
 |**函數名稱**|函式的完整格式名稱。|
 |**函式行號**|原始程式檔中這個函式的開頭行號。|
-|**功能位址**|函式的位址。|
-|**水準**|函式在呼叫樹狀圖中的深度。|
+|**函數位址**|函式的位址。|
+|**Level**|函式在呼叫樹狀圖中的深度。|
 |**內含配置**|此函式執行個體所配置的物件數目，而函式執行個體是由呼叫樹狀結構中的父函式所呼叫。 此數目包含子函式所進行的配置。|
 |**內含配置 %**|在分析執行中建立的所有物件中，屬於此函式之內含配置的百分比。|
 |**專有配置**|此函式執行個體所配置的物件數目，而函式執行個體是由呼叫樹狀結構中的父函式所呼叫。 此數目未包含子函式所進行的配置。|
@@ -52,6 +52,6 @@ ms.locfileid: "74779762"
 |**專有位元組 %**|在分析執行中配置的所有記憶體位元組中，屬於此函式之專有配置的百分比。|
 
 ## <a name="see-also"></a>另請參閱
-- [調用樹狀檢視 - 檢測](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
-- [呼叫樹狀圖檢視](../profiling/call-tree-view-sampling-data.md)
-- [呼叫樹狀圖檢視](../profiling/call-tree-view-instrumentation-data.md)
+- [呼叫樹狀檢視-檢測](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
+- [呼叫樹狀檢視](../profiling/call-tree-view-sampling-data.md)
+- [呼叫樹狀檢視](../profiling/call-tree-view-instrumentation-data.md)

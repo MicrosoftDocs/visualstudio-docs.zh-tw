@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1638b16eea9bfa20962359f0b63a7415915d0fc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532700"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中進行偵錯時對應呼叫堆疊上的方法
@@ -41,7 +41,7 @@ ms.locfileid: "85532700"
 
  ![使用 Code Map 上的堆疊呼叫來偵錯](../debugger/media/debuggermap_overview.png)
 
- 您需要：
+ 您將需要：
 
  ::: moniker range="vs-2017"
 
@@ -55,31 +55,31 @@ ms.locfileid: "85532700"
 
 ::: moniker-end
 
-- 可以進行 debug 的程式碼，例如 Visual c #、Visual Basic、c + +、JavaScript 或 X + +
+- 您可以進行 debug 錯的程式碼，例如 Visual c #、Visual Basic、c + +、JavaScript 或 X + +
 
   請參閱：
 
-- [影片：使用 Code Map 偵錯工具整合（Channel 9）以視覺化方式進行調試](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
+- [影片：以視覺化方式使用 Code Map 偵錯工具整合 (Channel 9) ](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
 - [對應呼叫堆疊](#MapStack)
 
-- [建立程式碼的相關注意事項](#MakeNotes)
+- [製作程式碼的注意事項](#MakeNotes)
 
 - [使用下一個呼叫堆疊更新對應](#UpdateMap)
 
-- [將相關程式碼加入至對應](#AddRelatedCode)
+- [將相關程式碼加入至地圖](#AddRelatedCode)
 
-- [使用對應尋找 bug](#FindBugs)
+- [使用地圖尋找 bug](#FindBugs)
 
-- [問 & A](#QA)
+- [問與答](#QA)
 
-  如需您在處理 code map 時可使用的命令和動作的詳細資訊，請參閱[流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)。
+  如需使用 code map 時可使用的命令和動作的詳細資訊，請參閱 [流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)。
 
 ## <a name="map-the-call-stack"></a><a name="MapStack"></a> 對應呼叫堆疊
 
-1. 開始偵錯。 （鍵盤： **F5**）
+1. 開始偵錯。  (鍵盤： **F5**) 
 
-2. 當您的應用程式進入中斷模式，或您逐步執行函式之後，請選擇 [ **Code Map**]。 （鍵盤： **Ctrl**  + **Shift**  +  **`** ）
+2. 當您的應用程式進入中斷模式或您逐步執行函式之後，請選擇 [ **Code Map**]。  (鍵盤： **Ctrl**  +  **Shift**  +  **`**) 
 
      ![選擇 [Code Map] 開始對應堆疊呼叫](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -87,11 +87,11 @@ ms.locfileid: "85532700"
 
      ![查看 Code Map 上的堆疊呼叫](../debugger/media/debuggermap_seeundocallstack.png)
 
-     當您繼續偵錯時，對應會自動更新。 請參閱[使用下一個呼叫堆疊更新對應](#UpdateMap)。
+     當您繼續偵錯時，對應會自動更新。 請參閱 [使用下一個呼叫堆疊更新對應](#UpdateMap)。
 
 ## <a name="make-notes-about-the-code"></a><a name="MakeNotes"></a> 製作程式碼的筆記
 
- 新增批註以追蹤程式碼中發生的狀況。 若要在批註中加入新的一行，請按**Shift + Return**。
+ 新增批註以追蹤程式碼中發生的狀況。 若要在批註中加入新的一行，請按 **Shift + Return**。
 
  ![為 Code Map 上的堆疊呼叫加入註解](../debugger/media/debuggermap_addcomment.png)
 
@@ -103,9 +103,9 @@ ms.locfileid: "85532700"
 
 ## <a name="add-related-code-to-the-map"></a><a name="AddRelatedCode"></a> 將相關程式碼新增至地圖
 
- 現在您已有對應-接下來呢？ 如果您要使用 c # 或 Visual Basic，請加入專案（例如欄位、屬性和其他方法），以追蹤程式碼中的情況。
+ 您現在已有對應，接下來該怎麼做？ 如果您使用 c # 或 Visual Basic，請加入專案（例如欄位、屬性和其他方法），以追蹤程式碼中發生的狀況。
 
- 按兩下某個方法以查看它的程式碼定義，或使用方法的捷徑功能表 （鍵盤：選取地圖上的方法，然後按**F12**）
+ 按兩下某個方法以查看它的程式碼定義，或使用方法的捷徑功能表  (鍵盤：選取地圖上的方法，然後按下 **F12**) 
 
  ![移至 Code Map 上方法的程式碼定義](../debugger/media/debuggermap_gotocodedefinition.png)
 
@@ -114,7 +114,7 @@ ms.locfileid: "85532700"
  ![顯示堆疊呼叫 Code Map 上的方法中的欄位](../debugger/media/debuggermap_showfields.png)
 
 > [!NOTE]
-> 根據預設，將項目加入對應圖也會加入父群組節點，例如類別、命名空間和組件。 雖然這很有用，但您可以使用 [對應] 工具列上的 [**包含**父系] 按鈕關閉這項功能，或在加入專案時按**CTRL 鍵**，讓對應保持簡單。
+> 根據預設，將項目加入對應圖也會加入父群組節點，例如類別、命名空間和組件。 雖然這很有用，但您可以使用 [對應] 工具列上的 [ **包含** 父系] 按鈕關閉這項功能，或在加入專案時按 **CTRL** 鍵，以保持簡單的對應。
 
  ![與堆疊呼叫 Code Map 上的方法相關的欄位](../debugger/media/debuggermap_showedfields.png)
 
@@ -140,51 +140,51 @@ ms.locfileid: "85532700"
 
  ![為 Code Map 上的堆疊呼叫新增方法呼叫](../debugger/media/debuggermap_addnewcallforrepaint.png)
 
-## <a name="q--a"></a><a name="QA"></a>問 & A
+## <a name="q--a"></a><a name="QA"></a> 問 & A
 
-- **並非所有的呼叫都會出現在對應上。因此?**
+- **並非所有的呼叫都會出現在地圖上。為什麼？**
 
-   根據預設，只有您的程式碼會出現在對應圖上。 若要查看外部程式碼，請在 [**呼叫堆疊**] 視窗中開啟它：
+   根據預設，只有您的程式碼會出現在對應圖上。 若要查看外部程式碼，請在 [ **呼叫堆疊** ] 視窗中開啟它：
 
    ![使用 [呼叫堆疊] 視窗來顯示外部程式碼](../debugger/media/debuggermap_callstackmenu.png)
 
-   或在 Visual Studio 調試選項中關閉 [**啟用 Just My Code** ]：
+   或者，在 Visual Studio 調試選項中關閉 [ **啟用 Just My Code** ：
 
    ![使用 [選項] 對話方塊來顯示外部程式碼](../debugger/media/debuggermap_debugoptions.png)
 
 - **變更對應圖是否會影響程式碼？**
 
-   變更對應並不會以任何方式影響程式碼。 請放心地重新命名、移動或移除對應圖上的任何項目。
+   變更地圖不會以任何方式影響程式碼。 請放心地重新命名、移動或移除對應圖上的任何項目。
 
-- **此訊息的意義是：「圖表可能是以舊版的程式碼為基礎」？**
+- **這則訊息表示「圖表可能是以較舊版本的程式碼為基礎」的意思：**
 
    從您上次更新對應圖之後，程式碼可能已經變更。 例如，對應圖上的某個呼叫可能已經不再存在於程式碼中。 關閉訊息，然後先嘗試重建方案後再更新對應圖。
 
-- **如何? 控制地圖的版面配置嗎？**
+- **如何? 控制地圖的版面配置？**
 
-   開啟 [對應] 工具列上的 [**版面**配置] 功能表：
+   開啟地圖工具列上的 [ **版面** 配置] 功能表：
 
   - 變更預設的版面配置。
 
-  - 若要停止自動重新排列地圖，請**在進行調試時關閉自動版面**配置。
+  - 若要停止自動重新排列對應，請 **在調試時關閉自動**配置。
 
-  - 若要在加入專案時盡可能少重新排列地圖，請關閉 [**增量**配置]。
+  - 若要在加入專案時盡可能地重新排列地圖，請關閉 [累加 **式版面**配置]。
 
 - **我是否可以和其他人共用對應圖？**
 
-   如果您有 Microsoft Outlook，您可以匯出對應、將其傳送給其他人，或將它儲存至您的方案，以便將它簽入原始檔控制。
+   如果您有 Microsoft Outlook，您可以匯出地圖、將它傳送給其他人，或是將它儲存到您的方案，以便將它簽入原始檔控制。
 
    ![與其他人共用堆疊呼叫 Code Map](../debugger/media/debuggermap_sharewithothers.png)
 
 - **如何讓對應圖停止自動加入新的呼叫堆疊？**
 
-   選擇 ![ [按鈕] &#45; 在 [對應] 工具列上自動顯示 Code Map 上的 [呼叫堆疊] ](../debugger/media/debuggermap_automaticupdateicon.gif) 。 若要以手動方式將目前的呼叫堆疊加入至地圖，請按**Ctrl**  +  **Shift**  +  **`** 。
+   選擇 ![ [按鈕] &#45; 在地圖工具列上自動顯示 code map 上的呼叫堆疊 ](../debugger/media/debuggermap_automaticupdateicon.gif) 。 若要將目前的呼叫堆疊手動加入至地圖，請按下**Ctrl**  +  **Shift**  +  **`** 。
 
-   當您正在進行調試時，地圖會繼續反白顯示對應上的現有呼叫堆疊。
+   當您正在進行調試時，對應會繼續反白顯示對應上的現有呼叫堆疊。
 
 - **項目圖示和箭號是什麼意思？**
 
-   若要取得專案的詳細資訊，請將滑鼠指標移至其上方，並查看專案的工具提示。 您也可以查看**圖例**，以瞭解每個圖示所代表的意義。
+   若要取得專案的詳細資訊，請將滑鼠指標移至該專案上方，並查看專案的工具提示。 您也可以查看 **圖例** ，以瞭解每個圖示的意義。
 
    ![堆疊呼叫 Code Map 上的圖示代表什麼意思？](../debugger/media/debuggermap_showlegend.png)
 
@@ -192,13 +192,13 @@ ms.locfileid: "85532700"
 
 - [對應呼叫堆疊](#MapStack)
 
-- [建立程式碼的相關注意事項](#MakeNotes)
+- [製作程式碼的注意事項](#MakeNotes)
 
 - [使用下一個呼叫堆疊更新對應](#UpdateMap)
 
-- [將相關程式碼加入至對應](#AddRelatedCode)
+- [將相關程式碼加入至地圖](#AddRelatedCode)
 
-- [使用對應尋找 bug](#FindBugs)
+- [使用地圖尋找 bug](#FindBugs)
 
 ## <a name="see-also"></a>另請參閱
 

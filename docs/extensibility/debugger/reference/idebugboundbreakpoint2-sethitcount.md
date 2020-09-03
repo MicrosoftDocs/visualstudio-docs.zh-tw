@@ -1,5 +1,5 @@
 ---
-title: IDebugBound斷點2::SetHitCount |微軟文件
+title: IDebugBoundBreakpoint2：： SetHitCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e82f12b12c9afbc24f9416ec2639a4b9768d8fd0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735411"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
-設置綁定斷點的命中計數。
+設定系結中斷點的計數。
 
 ## <a name="syntax"></a>語法
 
@@ -42,15 +42,15 @@ int SetHitCount( 
 
 ## <a name="parameters"></a>參數
 `dwHitCount`\
-[在]要設置的命中計數。
+在要設定的計數。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。 如果`E_BP_DELETED`綁定斷點物件的狀態設置`BPS_DELETED`為[(BP_STATE](../../../extensibility/debugger/reference/bp-state.md)枚舉的一部分),則返回。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 如果系結 `E_BP_DELETED` 中斷點物件的狀態設定為 `BPS_DELETED` [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) 列舉) 的 (部分，則會傳回。
 
 ## <a name="remarks"></a>備註
- 命中計數是此斷點在當前會話運行期間觸發的次數。
+ 計數是在目前的會話執行期間引發此中斷點的次數。
 
- 除錯引擎通常調用此方法來更新此斷點的當前命中計數。
+ 這個方法通常會由 debug 引擎呼叫，以更新此中斷點上的目前計數。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

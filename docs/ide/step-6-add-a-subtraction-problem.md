@@ -1,5 +1,5 @@
 ---
-title: 步驟 6：加入減法問題
+title: 步驟 6：新增減法問題
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b6dd2b572074265cca62a45b962c604abf5c849
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579826"
 ---
-# <a name="step-6-add-a-subtraction-problem"></a>步驟 6：加入減法問題
+# <a name="step-6-add-a-subtraction-problem"></a>步驟 6：新增減法問題
 在本教學課程的第六個部分中，您將加入減法問題並學習如何執行下列工作：
 
 - 儲存減法的值。
@@ -74,7 +74,7 @@ ms.locfileid: "77579826"
      [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]
 
-     在 C#`&&`中`logical and`，是運算子。 在 Visual Basic 中，對等的運算子是 `AndAlso`。 這些運算子表示：「如果 addend1 和 addend2 的總和等於 NumericUpDown 的總和值，以及如果 minuend 減 subtrahend 等於 NumericUpDown 的差值」。 只有在加法和減法問題的答案都正確時，`CheckTheAnswer()` 方法才會傳回 `true`。
+     在 c # 中， `&&` 是 `logical and` 運算子。 在 Visual Basic 中，對等的運算子是 `AndAlso`。 這些運算子表示：「如果 addend1 和 addend2 的總和等於 NumericUpDown 的總和值，以及如果 minuend 減 subtrahend 等於 NumericUpDown 的差值」。 只有在加法和減法問題的答案都正確時，`CheckTheAnswer()` 方法才會傳回 `true`。
 
 4. 將計時器之 Tick 事件處理常式的最後一部分取代為下列程式碼，讓事件處理常式在時間結束時填入正確答案。
 
@@ -90,6 +90,6 @@ ms.locfileid: "77579826"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 要轉到下一個教程步驟，請參閱**[步驟 7：添加乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)**。
+- 若要移至下一個教學課程步驟，請參閱 **[步驟7：新增乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)**。
 
 - 若要回到上一個教學課程步驟，請參閱[步驟 5：新增 NumericUpDown 控制項的 Enter 事件處理常式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)。

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 607584b4b41bdfde224bdb35d30eec1c6c8a4197
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585453"
 ---
 # <a name="target-build-order"></a>目標組建順序
@@ -23,7 +23,7 @@ ms.locfileid: "75585453"
 
 - `InitialTargets`. 這個 `Project` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。
 
-- `DefaultTargets`. `Project`此屬性指定在命令列上未顯式指定目標時運行的目標。
+- `DefaultTargets`. `Project`如果未在命令列上明確指定目標，則此屬性會指定要執行的目標。
 
 - `DependsOnTargets`. 這個 `Target` 屬性會指定必須在此目標執行之前執行的目標。
 
@@ -31,7 +31,7 @@ ms.locfileid: "75585453"
 
 目標絕對不會在建置期間執行兩次，即使組建中的後續目標相依於它也一樣。 一旦執行目標之後，它對組建而言就已功成身退了。
 
-目標可能會有 `Condition` 屬性。 如果指定的條件評估為 `false`，則不會執行目標，且不會對組建產生任何作用。 有關條件的詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。
+目標可能會有 `Condition` 屬性。 如果指定的條件評估為 `false`，則不會執行目標，且不會對組建產生任何作用。 如需條件的詳細資訊，請參閱 [條件](../msbuild/msbuild-conditions.md)。
 
 ## <a name="initial-targets"></a>初始目標
 
@@ -45,7 +45,7 @@ ms.locfileid: "75585453"
 
 匯入的專案可能會有自己的 `InitialTargets` 屬性。 所有的初始目標都會彙總在一起，並依序執行。
 
-有關詳細資訊，請參閱[如何：指定首先生成的目標](../msbuild/how-to-specify-which-target-to-build-first.md)。
+如需詳細資訊，請參閱 [如何：指定要先建立的目標](../msbuild/how-to-specify-which-target-to-build-first.md)。
 
 ## <a name="default-targets"></a>預設目標
 
@@ -65,7 +65,7 @@ ms.locfileid: "75585453"
 
 匯入的專案可能會有自己的 `DefaultTargets` 屬性。 第一個遇到的 `DefaultTargets` 屬性會判斷將執行哪些預設目標。
 
-有關詳細資訊，請參閱[如何：指定首先生成的目標](../msbuild/how-to-specify-which-target-to-build-first.md)。
+如需詳細資訊，請參閱 [如何：指定要先建立的目標](../msbuild/how-to-specify-which-target-to-build-first.md)。
 
 ## <a name="first-target"></a>第一個目標
 

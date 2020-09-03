@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::SetJustMyCodeState |Microsoft Docs
+title: IDebugModule3：： SetJustMyCodeState |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2d7e5546465b64d42ab744f4b9cac8c159566701
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203144"
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-將標記視為使用者程式碼模組。  
+將模組標示為使用者程式碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,10 +40,10 @@ int SetJustMyCodeState(
   
 #### <a name="parameters"></a>參數  
  `fIsUserCode`  
- [in]非零值 (`TRUE`) 如果模組應該視為使用者程式碼，以零 (`FALSE`) 如果不應該。  
+ 在非零 (`TRUE`) 如果模組應視為使用者程式碼，則零 (`FALSE`) （如果不應如此）。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`，否則會傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

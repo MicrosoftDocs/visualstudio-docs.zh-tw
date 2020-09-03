@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1cc9c5bab7601a62bacfbbb155227bd5b632f93a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287801"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>如何：在負載測試結果中建立自訂圖表
@@ -26,11 +26,11 @@ ms.locfileid: "85287801"
 
 ## <a name="to-create-a-custom-load-test-results-graph"></a>若要建立自訂負載測試結果圖形
 
-1. 在 [**負載測試**] 工具列上，選擇 [**加入新圖形]**。
+1. 在 [ **負載測試** ] 工具列上，選擇 [ **加入新圖形]**。
 
      \- 或 -
 
-     在 [**負載測試分析器**] 上，以滑鼠右鍵按一下 [**計數器**] 面板或圖形，然後選取 [**新增圖形]**。
+     在 [ **負載測試分析器**] 上，以滑鼠右鍵按一下 [ **計數器** ] 面板或圖形中的，然後選取 [ **加入圖形]**。
 
      [輸入圖形名稱]**** 對話方塊隨即顯示。
 
@@ -38,7 +38,7 @@ ms.locfileid: "85287801"
 
      新的圖表就會出現在 [負載測試分析器]**** 中。 圖形會出現在目前選取的圖形面板中，並取代該面板中原先顯示的圖形。
 
-3. 加入計數器即可自訂新圖形。 如需詳細資訊，請參閱[如何：在圖形上新增和刪除計數器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)。
+3. 加入計數器即可自訂新圖形。 如需詳細資訊，請參閱 [如何：在圖形上新增和刪除計數器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)。
 
 ## <a name="see-also"></a>另請參閱
 

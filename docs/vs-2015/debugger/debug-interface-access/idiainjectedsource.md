@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 59bd1cd56ee36c5e4164549df987f789aafe32e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203611"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-存取插入儲存在 DIA 資料來源中的原始程式碼。  
+存取儲存在 DIA 資料來源中的插入原始碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -32,26 +32,26 @@ IDiaInjectedSource : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDiaInjectedSource`。  
+ 下表顯示的方法 `IDiaInjectedSource` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|擷取從來源程式碼位元組計算的循環冗餘檢查 (CRC)。|  
-|[IDiaInjectedSource::get_length](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|擷取的程式碼的位元組數目。|  
-|[IDiaInjectedSource::get_filename](../../debugger/debug-interface-access/idiainjectedsource-get-filename.md)|擷取來源檔案名稱。|  
-|[IDiaInjectedSource::get_objectFilename](../../debugger/debug-interface-access/idiainjectedsource-get-objectfilename.md)|擷取來源已編譯的物件檔案名稱。|  
-|[IDiaInjectedSource::get_virtualFilename](../../debugger/debug-interface-access/idiainjectedsource-get-virtualfilename.md)|擷取指定給非檔案來源的程式碼; 的名稱也就是插入的程式碼。|  
-|[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|擷取來源所用的壓縮的指標。|  
-|[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|擷取來源的程式碼位元組。|  
+|[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|抓取迴圈冗余檢查 (CRC) 從原始程式碼的位元組計算。|  
+|[IDiaInjectedSource::get_length](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|捕獲程式碼的位元組數目。|  
+|[IDiaInjectedSource::get_filename](../../debugger/debug-interface-access/idiainjectedsource-get-filename.md)|抓取來源的檔案名。|  
+|[IDiaInjectedSource::get_objectFilename](../../debugger/debug-interface-access/idiainjectedsource-get-objectfilename.md)|抓取來源編譯的目標目的檔名。|  
+|[IDiaInjectedSource::get_virtualFilename](../../debugger/debug-interface-access/idiainjectedsource-get-virtualfilename.md)|抓取提供給非檔案原始碼的名稱;也就是插入的程式碼。|  
+|[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|抓取所使用的來源壓縮指標。|  
+|[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|捕獲原始程式碼位元組。|  
   
 ## <a name="remarks"></a>備註  
- 插入的來源是在編譯期間插入的文字。 這不表示前置處理器`#include`用於C++。  
+ 插入的來源是在編譯期間插入的文字。 這並不代表 `#include` 在 c + + 中使用的預處理器。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 取得這個介面，藉由呼叫[idiaenuminjectedsources:: Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)或是[idiaenuminjectedsources:: Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)方法。 請參閱[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)介面，如需範例，取得`IDiaInjectedSource`介面。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 藉由呼叫 [IDiaEnumInjectedSources：： Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md) 或 [IDiaEnumInjectedSources：： Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md) 方法來取得這個介面。 如需取得介面的範例，請參閱 [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) 介面 `IDiaInjectedSource` 。  
   
 ## <a name="example"></a>範例  
- 此範例會顯示可從資料`IDiaInjectedSource`介面。 使用替代方法[IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)介面，請參閱中的範例[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)介面。  
+ 此範例會顯示介面中可用的資料 `IDiaInjectedSource` 。 如需使用 [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) 介面的替代方法，請參閱 [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) 介面中的範例。  
   
 ```cpp#  
 void PrintInjectedSource(IDiaInjectedSource* pSource)  
@@ -116,14 +116,14 @@ void PrintInjectedSource(IDiaInjectedSource* pSource)
 ```  
   
 ## <a name="requirements"></a>需求  
- 標頭：dia2.h  
+ 標頭： Dia2。h  
   
- 程式庫： diaguids.lib  
+ 程式庫： diaguids .lib  
   
- DLL: msdia80.dll  
+ DLL： msdia80.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)   
- [IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)   
+ [ (Debug 介面存取 SDK) 介面 ](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaEnumInjectedSources：： Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)   
+ [IDiaEnumInjectedSources：： Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

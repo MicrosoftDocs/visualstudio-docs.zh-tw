@@ -12,15 +12,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f9b20915d5c320ff8db4da849d20267355c26590
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287749"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>如何：從存放庫匯出負載測試結果
 
-當您執行負載測試時，執行期間所收集到的資訊，都會儲存在負載測試結果儲存機制中。 負載測試結果儲存機制含有效能計數器資料，以及錄製之錯誤的相關資訊。 如需詳細資訊，請參閱[管理負載測試結果存放庫中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
+當您執行負載測試時，執行期間所收集到的資訊，都會儲存在負載測試結果儲存機制中。 負載測試結果儲存機制含有效能計數器資料，以及錄製之錯誤的相關資訊。 如需詳細資訊，請參閱 [在 load 測試結果存放庫中管理負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
 
 您可以使用 [開啟和管理負載測試結果]**** 對話方塊，在負載測試編輯器中管理負載測試結果。 您可以開啟、匯入、匯出及移除負載測試結果。
 
@@ -34,7 +34,7 @@ ms.locfileid: "85287749"
 
      [開啟和管理負載測試結果]**** 對話方塊隨即出現。
 
-3. 在 [輸入控制器名稱以尋找負載測試結果]**** 中，選取控制器。 選取 **\<Local - No controller>** 以存取儲存在本機的結果。
+3. 在 [輸入控制器名稱以尋找負載測試結果]**** 中，選取控制器。 選取 **\<Local - No controller>** 即可存取儲存在本機的結果。
 
 4. 在 [顯示下列負載測試的結果]**** 中，選取您要檢視其結果的負載測試。 選取 **\<Show results for all tests>** 即可查看所有測試的所有結果。
 

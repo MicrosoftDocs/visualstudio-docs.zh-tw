@@ -1,5 +1,5 @@
 ---
-title: 步驟 3：加入倒數計時器
+title: 步驟 3：新增倒數計時器
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ca2dce7f6f9ddc484b67f250f34d69747c6e46e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579866"
 ---
-# <a name="step-3-add-a-countdown-timer"></a>步驟 3：加入倒數計時器
+# <a name="step-3-add-a-countdown-timer"></a>步驟 3：新增倒數計時器
 
 在本教學課程的第三個部分中，您將加入倒數計時器來追蹤受測者可完成作答的剩餘秒數。
 
@@ -62,7 +62,7 @@ ms.locfileid: "77579866"
      您已加入 `if else` 陳述式，讓程式知道如何做判斷。 `if else` 陳述式看起來如下。
 
     > [!NOTE]
-    > 下面的示例僅用於演示-不要將其添加到專案中。
+    > 下列範例僅供示範之用--請勿將它新增至您的專案。
 
     ```vb
     If (something that your program will check) Then
@@ -112,6 +112,6 @@ ms.locfileid: "77579866"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 要轉到下一個教程步驟，請參閱**[步驟 4：添加 CheckTheAnswer（） 方法](../ide/step-4-add-the-checktheanswer-parens-method.md)**。
+- 若要移至下一個教學課程步驟，請參閱 **[步驟4：新增 CheckTheAnswer ( # A1 方法](../ide/step-4-add-the-checktheanswer-parens-method.md)**。
 
 - 若要回到上一個教學課程步驟，請參閱[步驟 2：建立隨機加法問題](../ide/step-2-create-a-random-addition-problem.md)。

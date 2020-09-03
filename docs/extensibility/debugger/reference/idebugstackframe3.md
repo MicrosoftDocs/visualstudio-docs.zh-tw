@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3 |微軟文件
+title: IDebugStackFrame3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d86997d11e124fd5a47981314cf383f5cd8aff7d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719477"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
-此介面擴展[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)以處理截獲的異常。
+這個介面會擴充 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 來處理攔截的例外狀況。
 
 ## <a name="syntax"></a>語法
 
@@ -28,38 +28,38 @@ ms.locfileid: "80719477"
 IDebugStackFrame3 : IDebugStackFrame2
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 除錯引擎 (DE) 在實現[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)介面以支援截獲的異常的同一對象上實現此介面。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ Debug engine (DE) 在實 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 介面的同一個物件上執行這個介面，以支援攔截的例外狀況。
 
-## <a name="notes-for-callers"></a>通話備註
- 在`IDebugStackFrame2`介面上調用[查詢介面](/cpp/atl/queryinterface)以獲取此介面。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ 呼叫介面上的 [QueryInterface](/cpp/atl/queryinterface) `IDebugStackFrame2` 來取得這個介面。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 除了從[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)繼承的方法`IDebugStackFrame3`外, 還公開了以下方法。
+ 除了繼承自 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)的方法外，也會 `IDebugStackFrame3` 公開下列方法。
 
 |方法|描述|
 |------------|-----------------|
-|[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|在任何常規異常處理之前處理當前堆疊幀的異常。|
-|[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|如果要進行堆疊展開,則返回代碼上下文。|
+|[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|處理任何一般例外狀況處理之前的目前堆疊框架的例外狀況。|
+|[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|如果發生堆疊回溯，則傳回程序代碼內容。|
 
 ## <a name="remarks"></a>備註
- 截獲的異常意味著調試器可以在運行時調用任何正常異常處理例程之前處理異常。 攔截異常實質上意味著使運行時假裝存在異常處理程式,即使沒有異常處理程式。
+ 攔截的例外狀況表示偵錯工具可以在執行時間呼叫任何一般例外狀況處理常式之前處理例外狀況。 攔截例外狀況時，基本上表示即使沒有例外狀況處理常式，執行時間也會發出例外狀況處理常式。
 
-- 在所有正常異常回調事件(唯一的例外是調試混合模式代碼(託管和非託管代碼)期間調用[InterceptCurrentException,](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)在這種情況下,在最後一次回叫期間無法截獲異常)。 如果 DE`IDebugStackFrame3`未實現 ,或者 DE 傳回 IDebugStackFrame3::(`InterceptCurrentException`如`E_NOTIMPL`)的錯誤,則調試器將正常處理異常。
+- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) 是在所有正常的例外狀況回呼事件期間呼叫， (唯一的例外狀況是，如果您要將混合模式程式碼 (managed 和非受控碼) ，在此情況下，在最後一次可能回呼) 時無法攔截例外狀況。 如果未執行 DE `IDebugStackFrame3` ，或從 IDebugStackFrame3：： `InterceptCurrentException` (（例如 `E_NOTIMPL`) ）傳回錯誤，偵錯工具就會正常處理例外狀況。
 
- 通過攔截異常,調試器可以允許使用者對正在調試的程式的狀態進行更改,然後在引發異常時恢復執行。
+ 藉由攔截例外狀況，偵錯工具可讓使用者變更所要進行的程式狀態，然後在擲回例外狀況的位置繼續執行。
 
 > [!NOTE]
-> 僅在託管代碼中允許截獲的異常,即在「通用語言運行時 (CLR)」下運行的程式中允許截獲的異常。
+> 攔截例外狀況只能在 managed 程式碼中使用，也就是在 Common Language Runtime (CLR) 下執行的程式。
 
- 除錯引擎表示它支援透過使用`SetMetric`函數在執行時將「metricExceptions」設置為 1 的值來攔截異常。 有關詳細資訊,請參閱[用於除錯 的 SDK 協助器](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)。
+ 偵錯工具引擎表示它支援攔截例外狀況，方法是在執行時間使用函數將 "metricExceptions" 設定為1的值 `SetMetric` 。 如需詳細資訊，請參閱 [SDK helper 以進行調試](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

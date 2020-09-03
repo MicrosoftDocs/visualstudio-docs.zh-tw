@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568007"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
@@ -37,7 +37,7 @@ devenv /Out FileName
 
 ## <a name="arguments"></a>引數
 
-- *檔案名*
+- *FileName*
 
   必要。 當您建置可執行檔時要接收輸出的檔案路徑和名稱。
 
@@ -58,10 +58,10 @@ devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /out "C:\MyEr
 ## <a name="see-also"></a>另請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)
-- [/運行 （devenv.exe）](../../ide/reference/run-devenv-exe.md)
-- [/運行退出 （devenv.exe）](runexit-devenv-exe.md)
-- [/升級（德文夫.exe）](upgrade-devenv-exe.md)
-- [/Clean (devenv.exe)](clean-devenv-exe.md)
-- [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
-- [/重建（德文夫.exe）](../../ide/reference/rebuild-devenv-exe.md)
-- [/部署（devenv.exe）](../../ide/reference/deploy-devenv-exe.md)
+- [/Run ( # A0) ](../../ide/reference/run-devenv-exe.md)
+- [/RunExit ( # A0) ](runexit-devenv-exe.md)
+- [/Upgrade ( # A0) ](upgrade-devenv-exe.md)
+- [/Clean ( # A0) ](clean-devenv-exe.md)
+- [/Build ( # A0) ](../../ide/reference/build-devenv-exe.md)
+- [/Rebuild ( # A0) ](../../ide/reference/rebuild-devenv-exe.md)
+- [/Deploy ( # A0) ](../../ide/reference/deploy-devenv-exe.md)

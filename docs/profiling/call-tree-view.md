@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b932d5f9e4a178c94f3e490c66cec64648ce4f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773331"
 ---
 # <a name="call-tree-view"></a>呼叫樹狀圖檢視
@@ -34,22 +34,22 @@ ms.locfileid: "74773331"
 
  [呼叫樹狀圖] 檢視可以自訂以新增或移除資料行。 以滑鼠右鍵按一下 [Column Name Title Bar] (資料行名稱標題列)****，然後選取 [新增/移除資料行]****。
 
- [呼叫樹狀圖] 檢視可以設定透過限制呈現的資料量來減少雜訊。 使用減少雜訊，可讓檢視中的效能問題更為顯著。 容易區分效能問題時，分析會較容易。 有關詳細資訊，請參閱[如何：在報表檢視中配置降噪](../profiling/how-to-configure-noise-reduction-in-report-views.md)。
+ [呼叫樹狀圖] 檢視可以設定透過限制呈現的資料量來減少雜訊。 使用減少雜訊，可讓檢視中的效能問題更為顯著。 容易區分效能問題時，分析會較容易。 如需詳細資訊，請參閱 [如何：在報表檢視中設定減少雜訊](../profiling/how-to-configure-noise-reduction-in-report-views.md)。
 
 > [!NOTE]
 > 如果設定減少雜訊在啟用時顯示警告，則會在報表中顯示資訊列。
 
  如需 [呼叫樹狀圖] 檢視中資料行定義的詳細資訊，請參閱下列各項：
 
-- [呼叫樹狀圖檢視](../profiling/call-tree-view-sampling-data.md)
+- [呼叫樹狀檢視](../profiling/call-tree-view-sampling-data.md)
 
-- [呼叫樹狀圖檢視](../profiling/call-tree-view-instrumentation-data.md)
+- [呼叫樹狀檢視](../profiling/call-tree-view-instrumentation-data.md)
 
-- [調用樹狀檢視 - 採樣](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
+- [呼叫樹狀檢視-取樣](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
 
-- [呼叫樹狀圖檢視](../profiling/call-tree-view-contention-data.md)
+- [呼叫樹狀檢視](../profiling/call-tree-view-contention-data.md)
 
 ## <a name="see-also"></a>另請參閱
-- [性能報表檢視](../profiling/performance-report-views.md)
+- [效能報表檢視](../profiling/performance-report-views.md)
 - [認識檢測資料值](../profiling/understanding-instrumentation-data-values.md)
-- [了解取樣資料值](../profiling/understanding-sampling-data-values.md)
+- [認識取樣資料值](../profiling/understanding-sampling-data-values.md)

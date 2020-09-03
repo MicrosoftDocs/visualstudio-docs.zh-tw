@@ -8,10 +8,10 @@ ms.workload:
 - dotnet
 author: mikejo5000
 ms.openlocfilehash: 670ec672c55d591496e26435db5a3112c345a44d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288165"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：設定以舊版 .NET Framework 為目標的單元測試
@@ -24,7 +24,7 @@ ms.locfileid: "85288165"
 
 - 您可以在本機電腦上的 Visual Studio 執行以特定版本 .NET Framework 為目標的單元測試。
 
-- 您可以從命令提示字元使用*MSTest.exe* ，來執行以特定 .NET Framework 版本為目標的單元測試。
+- 您可以從命令提示字元使用 *MSTest.exe* ，來執行以特定 .NET Framework 版本為目標的單元測試。
 
 - 您可以於建置過程中在組建代理程式上執行單元測試。
 
@@ -54,7 +54,7 @@ ms.locfileid: "85288165"
 
      隨即會顯示您的 Visual Basic 測試專案屬性。
 
-3. 在 [**編譯**] 索引標籤上，選擇 [**先進的編譯選項**]，如下圖所示。
+3. 在 [ **編譯** ] 索引標籤上，選擇 [ **Advanced Compile 選項** ]，如下圖所示。
 
      ![進階編譯選項](../test/media/howtoconfigureunittest35frameworka.png)
 
@@ -64,7 +64,7 @@ ms.locfileid: "85288165"
 
 ## <a name="retargeting-for-c-unit-test-projects"></a>為 C# 單元測試專案重定目標
 
-1. 建立新的 c #**單元測試專案**專案。
+1. 建立新的 c # **單元測試專案** 專案。
 
 2. 在 [方案總管]**** 中，從新的 C# 測試專案右鍵功能表選擇 [屬性]****。
 
@@ -83,9 +83,9 @@ ms.locfileid: "85288165"
 
 2. 在 [方案總管]**** 中，從新的 C++ 測試專案選擇 [卸載專案]****。
 
-3. 在**方案總管**中，選擇 [卸載的 c + +] 測試專案，然後選擇 [**編輯 \<project name> .vcxproj**]。
+3. 在 **方案總管**中，選擇已卸載的 c + + 測試專案，然後選擇 [ **編輯 \<project name> .vcxproj**]。
 
-   *.Vcxproj*檔案會在編輯器中開啟。
+   .Vcxproj 檔案會在編輯器中開啟 *。*
 
 4. 將標籤為 `"Globals"` 的 `PropertyGroup` 中的 `TargetFrameworkVersion` 設定為版本 3.5 或更新版本。 您不應指定用戶端版本：
 
@@ -100,7 +100,7 @@ ms.locfileid: "85288165"
       </PropertyGroup>
     ```
 
-5. 儲存並關閉 *.vcxproj*檔案。
+5. 儲存並關閉 *.vcxproj* 檔案。
 
 6. 在 [方案總管]**** 中，從新的 C++ 測試專案右鍵功能表選取 [重新載入專案]****。
 
@@ -108,4 +108,4 @@ ms.locfileid: "85288165"
 
 - [建立 SharePoint 方案](../sharepoint/create-sharepoint-solutions.md)
 - [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Advanced 編譯器設定對話方塊（Visual Basic）](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+- [[Advanced 編譯器設定] 對話方塊 (Visual Basic) ](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

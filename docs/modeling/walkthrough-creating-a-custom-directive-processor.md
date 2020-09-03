@@ -14,15 +14,15 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 4efe12b9871dc07bd7427e1567973701d3c6c527
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532232"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>逐步解說：建立自訂指示詞處理器
 
-指示詞*處理器*的工作方式是將程式碼加入至*產生的轉換類別*。 如果您從*文字模板*呼叫指示詞，則您在文字*範本中撰寫*的其餘程式碼，都可以依賴指示詞所提供的功能。
+指示詞*處理器*的運作方式是將程式碼加入至*產生的轉換類別*。 如果您從*文字模板*呼叫指示詞，您在文字*範本中撰寫*的其餘程式碼可以依賴指示詞提供的功能。
 
 您可以撰寫專屬自訂指示詞處理器。 這可讓您自訂文字範本。 若要建立自訂指示詞處理器，您可以建立繼承 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 或 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 的類別。
 
@@ -42,7 +42,7 @@ ms.locfileid: "85532232"
 
 `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`
 
-自訂指示詞處理器會將變數和屬性加入至產生的轉換類別中。 您撰寫的指示詞會使用 <xref:System.CodeDom> 類別來建立引擎要加入至產生之轉換類別中的程式碼。 類別會根據指示詞 <xref:System.CodeDom> 的參數中指定的語言，在 Visual c # 或 Visual Basic 中建立程式碼 `language` `template` 。 指示詞處理器的語言與存取指示詞處理器之文字範本的語言不一定要相符。
+自訂指示詞處理器會將變數和屬性加入至產生的轉換類別中。 您撰寫的指示詞會使用 <xref:System.CodeDom> 類別來建立引擎要加入至產生之轉換類別中的程式碼。 <xref:System.CodeDom>類別會在 Visual c # 或 Visual Basic 中建立程式碼，視指示詞參數中指定的語言而定 `language` `template` 。 指示詞處理器的語言與存取指示詞處理器之文字範本的語言不一定要相符。
 
 指示詞建立的程式碼如下所示：
 
@@ -80,15 +80,15 @@ End Property
 1. 在 Visual Studio 中建立 C# 或 Visual Basic 類別庫專案，並命名為 CustomDP。
 
     > [!NOTE]
-    > 如果您想要在一部以上的電腦上安裝指示詞處理器，最好是使用 Visual Studio 延伸模組（VSIX）專案，並在擴充功能中包含 .pkgdef 檔案。 如需詳細資訊，請參閱[部署自訂](../modeling/deploying-a-custom-directive-processor.md)指示詞處理器。
+    > 如果您想要在多部電腦上安裝指示詞處理器，最好是使用 (VSIX) 專案的 Visual Studio 擴充功能，並在擴充功能中加入 .pkgdef 檔案。 如需詳細資訊，請參閱 [部署自訂](../modeling/deploying-a-custom-directive-processor.md)指示詞處理器。
 
 2. 新增這些元件的參考：
 
-    - **VisualStudio. TextTemplating. \* 。0**
+    - **VisualStudio \* . TextTemplating .。。0**
 
-    - **VisualStudio. \* TextTemplating. 介面。0**
+    - **VisualStudio. \* TextTemplating. 介面 .。。0**
 
-3. 將**Class1**中的程式碼取代為下列程式碼。 下列程式碼會定義繼承 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 類別的 CustomDirectiveProcessor 類別，並實作必要的方法。
+3. 以下列程式碼取代 **Class1** 中的程式碼。 下列程式碼會定義繼承 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 類別的 CustomDirectiveProcessor 類別，並實作必要的方法。
 
     ```csharp
     using System;
@@ -599,22 +599,22 @@ End Property
     End Namespace
     ```
 
-4. 針對 [僅 Visual Basic]，開啟 [**專案**] 功能表，然後按一下 [ **CustomDP 屬性**]。 在 [**應用程式**] 索引標籤的 [**根命名空間**] 中，刪除預設值 `CustomDP` 。
+4. 若只 Visual Basic，請開啟 [ **專案** ] 功能表，然後按一下 [ **CustomDP 屬性**]。 在 [ **應用程式** ] 索引標籤的 [ **根命名空間**] 中，刪除預設值 `CustomDP` 。
 
 5. 按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。
 
-6. 在 [建置]**** 功能表上，按一下 [建置方案]****。
+6. 在 [建置] 功能表上，按一下 [建置方案]。
 
 ### <a name="build-the-project"></a>建置專案
 
-建置專案。 在 [建置]**** 功能表上，按一下 [建置方案]****。
+建置專案。 在 [建置] 功能表上，按一下 [建置方案]。
 
 ## <a name="register-the-directive-processor"></a>註冊指示詞處理器
 
-您必須先加入指示詞處理器的登錄機碼，才可以從 Visual Studio 中的文字模板呼叫指示詞。
+您必須先加入指示詞處理器的登錄機碼，才能從 Visual Studio 中的文字模板呼叫指示詞。
 
 > [!NOTE]
-> 如果您想要在一部以上的電腦上安裝指示詞處理器，最好是定義一個包含 *.pkgdef*檔案和元件的 Visual Studio 延伸模組（VSIX）。 如需詳細資訊，請參閱[部署自訂](../modeling/deploying-a-custom-directive-processor.md)指示詞處理器。
+> 如果您想要在多部電腦上安裝指示詞處理器，最好是定義 Visual Studio 擴充功能 (VSIX) ，其中包含 *.pkgdef* 檔案以及您的元件。 如需詳細資訊，請參閱 [部署自訂](../modeling/deploying-a-custom-directive-processor.md)指示詞處理器。
 
 指示詞處理器的機碼存在於下列登錄位置：
 
@@ -635,11 +635,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 ### <a name="to-add-a-registry-key-for-the-directive-processor"></a>若要加入指示詞處理器的登錄機碼
 
-1. `regedit`使用 [開始] 功能表或命令列來執行命令。
+1. `regedit`使用 [開始] 功能表或命令列執行命令。
 
-2. 流覽至位置**HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ \* .0 \ TextTemplating\DirectiveProcessors**，然後按一下節點。
+2. 流覽至**HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ \* .0 \ TextTemplating\DirectiveProcessors**的位置，然後按一下節點。
 
-   在64位系統上，使用**HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio \\ \* 。 0 \ TextTemplating\DirectiveProcessors**
+   在64位系統上，請使用**HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio \\ \* . 0 \ TextTemplating\DirectiveProcessors**
 
 3. 加入名為 CustomDirectiveProcessor 的新機碼。
 
@@ -674,14 +674,14 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 若要測試指示詞處理器，您必須撰寫呼叫該處理器的文字範本。
 
-在本範例中，文字範本會呼叫指示詞，並傳入 XML 檔 (包含類別檔案的文件) 的名稱。 文字模板會使用指示詞所 <xref:System.Xml.XmlDocument> 建立的屬性，以流覽 XML 並列印檔案批註。
+在本範例中，文字範本會呼叫指示詞，並傳入 XML 檔 (包含類別檔案的文件) 的名稱。 文字模板使用指示詞所 <xref:System.Xml.XmlDocument> 建立的屬性來導覽 XML 並列印檔案批註。
 
 ### <a name="to-create-an-xml-file-for-use-in-testing-the-directive-processor"></a>若要建立可用於測試指示詞處理器的 XML 檔
 
-1. 使用任何文字編輯器（例如 [記事本]）建立名為*DocFile.xml*的檔案。
+1. 使用任何文字編輯器來建立名為 *DocFile.xml* 的檔案 (例如，[記事本]) 。
 
     > [!NOTE]
-    > 您可以在任何位置（例如*C:\Test\DocFile.xml*）建立此檔案。
+    > 您可以在任何位置建立這個檔案 (例如 *C:\Test\DocFile.xml*) 。
 
 2. 將下列內容新增至 XML 檔案：
 
@@ -732,12 +732,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 2. 新增名為 TestDP.tt 的文字範本檔。
 
-3. 請確定 TestDP.tt 的 [**自訂工具**] 屬性已設為 `TextTemplatingFileGenerator` 。
+3. 請確定 TestDP.tt 的 **自訂工具** 屬性已設定為 `TextTemplatingFileGenerator` 。
 
 4. 將 TestDP.tt 的內容變更為下列文字。
 
     > [!NOTE]
-    > 將字串取代為 `<YOUR PATH>` *DocFile.xml*檔案的路徑。
+    > 將字串取代 `<YOUR PATH>` 為 *DocFile.xml* 檔的路徑。
 
     文字範本的語言與指示詞處理器的語言不一定要相符。
 
@@ -830,11 +830,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 ### <a name="to-test-the-directive-processor"></a>若要測試指示詞處理器
 
-1. 在**方案總管**中，以滑鼠右鍵按一下 [TestDP.tt]，然後按一下 [**執行自訂工具**]。
+1. 在 **方案總管**中，以滑鼠右鍵按一下 TestDP.tt，然後按一下 [ **執行自訂工具**]。
 
-   針對 Visual Basic 使用者，TestDP.txt 預設可能不會出現在**方案總管**中。 若要顯示所有指派給專案的檔案，請開啟 [**專案**] 功能表，然後按一下 [**顯示所有**檔案]。
+   針對 Visual Basic 使用者，根據預設，TestDP.txt 可能不會出現在 [ **方案總管** ] 中。 若要顯示所有指派給專案的檔案，請開啟 [ **專案** ] 功能表，然後按一下 [ **顯示所有**檔案]。
 
-2. 在**方案總管**中，展開 [TestDP.txt] 節點，然後按兩下 [TestDP.txt]，在編輯器中開啟它。
+2. 在 **方案總管**中，展開 [TestDP.txt] 節點，然後按兩下 [TestDP.txt]，在編輯器中開啟它。
 
     產生的文字輸出隨即出現。 輸出應該看起來如下所示：
 
@@ -874,10 +874,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 ### <a name="to-add-html-to-the-generated-text"></a>若要 HTML 將加入至產生的文字
 
-1. 將*TestDP.tt*中的程式碼取代為下列程式碼。 HTML 會反白顯示。 請務必將字串取代為 `YOUR PATH` *DocFile.xml*檔案的路徑。
+1. 將 *TestDP.tt* 中的程式碼取代為下列程式碼。 HTML 會反白顯示。 請務必將字串取代為 `YOUR PATH` *DocFile.xml* 檔的路徑。
 
     > [!NOTE]
-    > 其他的開啟 \<# and close #> 標記會分隔語句程式碼與 HTML 標籤。
+    > 其他開啟的標記會將 \<# and close #> 語句程式碼與 HTML 標籤分開。
 
     ```csharp
     <#@ assembly name="System.Xml" #>
@@ -959,8 +959,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </body></html>
     ```
 
-2. **在 [檔案**] 功能表上，按一下 [**儲存 TestDP.txt**]。
+2. **在 [檔案**] 功能表上，按一下 [**儲存 TestDP.txt**。
 
-3. 若要在瀏覽器中查看輸出，請在**方案總管**中，以滑鼠右鍵按一下 [TestDP.htm]，然後按一下 [**在瀏覽器中查看**]。
+3. 若要在瀏覽器中查看輸出，請在 [ **方案總管**中，以滑鼠右鍵按一下 TestDP.htm，然後按一下 [ **在瀏覽器中查看**]。
 
-   您的輸出應該與原始文字相同，除非它已套用 HTML 格式。 每個專案名稱會以粗體顯示。
+   除了已套用 HTML 格式之外，您的輸出應該與原始文字相同。 每個專案名稱會以粗體顯示。

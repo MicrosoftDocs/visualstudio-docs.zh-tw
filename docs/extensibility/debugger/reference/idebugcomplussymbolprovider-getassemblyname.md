@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlus符號提供程式:獲取裝配名稱 |微軟文件
+title: IDebugComPlusSymbolProvider：： GetAssemblyName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ad546e3cde5106a966ce4533ee059f0ba1e2565d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733986"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
-檢索給定程式集的模組和應用程式域的程式集的名稱。
+根據指定的模組和應用程式域，抓取元件的名稱。
 
 ## <a name="syntax"></a>語法
 
@@ -44,19 +44,19 @@ int GetAssemblyName(
 
 ## <a name="parameters"></a>參數
 `ulAppDomainID`\
-[在]應用程式域的標識碼。
+在應用程式域的識別碼。
 
 `guidModule`\
-[在]模組的唯一標識碼。
+在模組的唯一識別碼。
 
 `pbstrName`\
-[出]返回程式集的名稱。
+擴展傳回元件的名稱。
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則,返回錯誤代碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
-下面的範例展示如何為公開[IDebugComPlusSymbol提供程式](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbol提供程式**物件實現此方法。
+下列範例示範如何針對公開[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbolProvider**物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAssemblyName(

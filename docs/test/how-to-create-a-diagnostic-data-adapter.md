@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 43519a96e0718a0864065864d9dd4fbd2ac16b23
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288074"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>如何：建立診斷資料配接器
@@ -23,7 +23,7 @@ ms.locfileid: "85288074"
 
 您可以建立診斷資料配接器，其會影響執行測試所在機器，或屬於要用來執行待測應用程式環境的機器。 例如，收集執行測試之測試機器上的檔案，或者收集擔任應用程式之 Web 伺服器角色的機器上的檔案。
 
-當您使用 Visual Studio 或 Microsoft Test Manager （在 Visual Studio 2017 中已過時）建立測試設定時，您可以為診斷資料介面卡提供易記的名稱，以顯示。 測試設定可讓您定義在執行測試時，要以環境中的哪個電腦角色執行特定診斷資料配接器。 您也可以在建立測試設定時，設定診斷資料配接器。 例如，您可建立從 Web 伺服器收集自訂記錄檔的診斷資料配接器。 當建立測試設定時，您可以選取在執行這個 Web 伺服器角色的一部或多部電腦上執行此診斷資料配接器，並且可以修改測試設定的組態，以只收集最後建立的三個記錄檔。 如需測試設定的詳細資訊，請參閱[使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)。
+您可以為您的診斷資料介面卡提供一個易記的名稱，當您使用 Visual Studio 或 Microsoft Test Manager Visual Studio 2017) 中的 (淘汰時，即會顯示此名稱。 測試設定可讓您定義在執行測試時，要以環境中的哪個電腦角色執行特定診斷資料配接器。 您也可以在建立測試設定時，設定診斷資料配接器。 例如，您可建立從 Web 伺服器收集自訂記錄檔的診斷資料配接器。 當建立測試設定時，您可以選取在執行這個 Web 伺服器角色的一部或多部電腦上執行此診斷資料配接器，並且可以修改測試設定的組態，以只收集最後建立的三個記錄檔。 如需測試設定的詳細資訊，請參閱 [使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)。
 
 當執行測試時會引發事件，如此診斷資料配接器便可以在該時間點執行工作。
 
@@ -46,7 +46,7 @@ ms.locfileid: "85288074"
 
 使用下列程序建立診斷資料配接器，以收集根據您在建立測試設定時所設定之資訊的資料檔案。
 
-如需診斷資料介面卡專案的完整範例（包括自訂設定編輯器），請參閱[建立診斷資料介面卡的範例專案](../test/quickstart-create-a-load-test-project.md)。
+如需診斷資料介面卡專案的完整範例（包括自訂設定編輯器），請參閱 [建立診斷資料介面卡的範例專案](../test/quickstart-create-a-load-test-project.md)。
 
 ## <a name="create-and-install-a-diagnostic-data-adapter"></a>建立和安裝診斷資料配接器
 
@@ -54,7 +54,7 @@ ms.locfileid: "85288074"
 
 2. 新增組件 **Microsoft.VisualStudio.QualityTools.ExecutionCommon**。
 
-   1. 在**方案總管**中，以滑鼠右鍵按一下 [**參考**]，然後選擇 [**加入參考**] 命令。
+   1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **參考** ]，然後選擇 [ **加入參考** ] 命令。
 
    2. 選擇 [.NET]**** 並尋找 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**。
 
@@ -62,7 +62,7 @@ ms.locfileid: "85288074"
 
 3. 新增組件 **Microsoft.VisualStudio.QualityTools.Common**。
 
-   1. 在**方案總管**中，以滑鼠右鍵按一下 [**參考**]，然後選取 [**新增參考**] 命令。
+   1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **參考** ]，然後選取 [ **加入參考** ] 命令。
 
    2. 選擇 [/.NET]****，尋找 **Microsoft.VisualStudio.QualityTools.Common.dll**。
 
@@ -210,7 +210,7 @@ ms.locfileid: "85288074"
 
      這些檔案會附加至測試結果。 如果從這些測試結果建立 Bug，或當您使用[!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]時，檔案也會附加至 Bug。
 
-     如果您想要使用自己的編輯器收集要在測試設定中使用的資料，請參閱[如何：為您的診斷資料介面卡建立資料的自訂編輯器](../test/quickstart-create-a-load-test-project.md)。
+     如果您想要使用自己的編輯器來收集要在測試設定中使用的資料，請參閱 [如何：為您的診斷資料介面卡建立資料的自訂編輯器](../test/quickstart-create-a-load-test-project.md)。
 
 11. 若要在測試完成時根據使用者在測試設定中進行的設定收集記錄檔，您必須建立 *App.config* 檔並且將它加入方案中。 此檔案的格式如下所示，而且必須包含 URI，診斷資料配接器才能識別該檔案。 請將 "Company/ProductName/Version" 替換為實際值。
 
@@ -247,17 +247,17 @@ ms.locfileid: "85288074"
 
      如需詳細資訊，了解如何進行測試設定以在執行測試時使用環境，請參閱[在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)。
 
-     如需安裝設定檔的詳細資訊，請參閱[如何：安裝自訂的診斷資料介面卡](../test/quickstart-create-a-load-test-project.md)
+     如需安裝設定檔的詳細資訊，請參閱 [如何：安裝自訂診斷資料介面卡](../test/quickstart-create-a-load-test-project.md)
 
 12. 建置方案以建立您的診斷資料配接器組件。
 
-13. 如需安裝自訂編輯器的詳細資訊，請參閱[如何：安裝自訂的診斷資料介面卡](../test/quickstart-create-a-load-test-project.md)。
+13. 如需安裝自訂編輯器的詳細資訊，請參閱 [如何：安裝自訂診斷資料配接器](../test/quickstart-create-a-load-test-project.md)。
 
 14. 如需詳細資訊，了解如何進行測試設定以在執行測試時使用環境，請參閱[在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)。
 
-15. 若要選取診斷資料介面卡，您必須先選取現有的測試設定，或從 Visual Studio 或 Microsoft Test Manager （在 Visual Studio 2017 中已淘汰）建立一個新的。 配接器會顯示在測試設定的 [資料和診斷]**** 索引標籤上，並使用您指派給類別的易記名稱。
+15. 若要選取您的診斷資料介面卡，您必須先選取現有的測試設定，或從 Visual Studio 中建立新的測試設定，或在 Visual Studio 2017) 中 Microsoft Test Manager (淘汰。 配接器會顯示在測試設定的 [資料和診斷]**** 索引標籤上，並使用您指派給類別的易記名稱。
 
-16. 將這些測試設定設定為作用中。 如需測試設定的詳細資訊，請參閱[使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)。
+16. 將這些測試設定設定為作用中。 如需測試設定的詳細資訊，請參閱 [使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)。
 
 17. 使用已選取您診斷資料配接器的測試設定來執行您的測試。
 

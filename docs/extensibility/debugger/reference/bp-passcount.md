@@ -1,5 +1,5 @@
 ---
-title: BP_PASSCOUNT |微軟文件
+title: BP_PASSCOUNT |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0e3177ff093aea9a6f52465bd606b22883249d6b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737909"
 ---
 # <a name="bp_passcount"></a>BP_PASSCOUNT
-描述觸發條件斷點的計數和條件。
+描述引發條件中斷點的計數和條件。
 
 ## <a name="syntax"></a>語法
 
@@ -43,22 +43,22 @@ public struct BP_PASSCOUNT {
 
 ## <a name="members"></a>成員
 `dwPassCount`\
-觸發斷點之前通過斷點的次數。
+在引發之前，要傳遞中斷點的次數。
 
 `stylePassCount`\
-BP_PASSCOUNT_STYLE[枚舉中](../../../extensibility/debugger/reference/bp-passcount-style.md)指定斷點通過計數樣式的值。
+[BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md)列舉中的值，指定中斷點傳遞計數的樣式。
 
 ## <a name="remarks"></a>備註
-此結構是[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)結構的成員。
+此結構是 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 結構的成員。
 
-此結構也作為參數傳遞給[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)和[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)方法。
+此結構也會以參數形式傳遞至[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) 和[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) 方法。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

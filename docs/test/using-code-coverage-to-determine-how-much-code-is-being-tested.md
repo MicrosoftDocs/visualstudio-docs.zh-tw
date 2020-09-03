@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6dd6dde83720c6e6f37bd6827bb5d97526202aa7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585596"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
@@ -46,27 +46,27 @@ ms.locfileid: "75585596"
 
 ::: moniker range=">=vs-2019"
 
-1. 在 **"測試"** 功能表上，選擇 **"分析所有測試的代碼覆蓋率**"。
+1. 在 [ **測試** ] 功能表上，選取 [ **分析所有測試的程式碼涵蓋範圍**]。
 
-   ![分析 VS 2019 中的代碼覆蓋率功能表](../test/media/vs-2019/analyze-code-coverage.png)
+   ![在 VS 2019 中分析程式碼涵蓋範圍功能表](../test/media/vs-2019/analyze-code-coverage.png)
 
-   您還可以從"測試資源管理器"工具視窗運行代碼覆蓋率。
+   您也可以從 Test Explorer 工具視窗執行程式碼涵蓋範圍。
 
 ::: moniker-end
 
-2. 測試回合![後，要查看已運行哪些行，請選擇"代碼覆蓋率著色"圖示](../test/media/codecoverage-showcoloringicon.png)"在**代碼覆蓋率結果**"視窗中**顯示代碼覆蓋率著色**。 預設情況下，測試涵蓋的代碼以淺藍色突出顯示。
+2. 執行測試之後，若要查看已執行的行，請選擇 [顯示程式碼涵蓋 ![ 範圍著色] 圖示， ](../test/media/codecoverage-showcoloringicon.png) 在 [程式碼涵蓋範圍**結果**] 視窗中**顯示程式碼涵蓋範圍著色**。 依預設，測試所涵蓋的程式碼會以淺藍色反白顯示。
 
    > [!TIP]
-   > 要更改顏色或使用粗體面，請選擇 **"工具** > **選項** > **環境** > **"字體和顏色** > **顯示設定：文字編輯器**。 在 **"顯示專案**"下，調整"覆蓋範圍"項的設置，例如"**覆蓋範圍未觸及區域**"。
+   > 若要變更色彩或使用粗體臉部，請選擇 [**工具**  >  **選項**  >  **環境**字型  >  **及色彩**  >  **顯示設定：文字編輯器**]。 在 [ **顯示專案**] 下，調整 [涵蓋範圍] 專案的設定，例如 [ **涵蓋範圍未觸及] 區域**。
    >
-   > ![代碼覆蓋率字體和顏色](media/vs-2019/coverage-fonts-and-colors.png)
+   > ![程式碼涵蓋範圍字型和色彩](media/vs-2019/coverage-fonts-and-colors.png)
 
 3. 如果結果顯示涵蓋範圍較小，請檢查不會執行的部分程式碼，並撰寫更多測試來涵蓋這些項目。 開發小組通常以 80% 的程式碼涵蓋範圍為目標。 某些情況可以接受較小的涵蓋範圍。 例如，從標準範本產生之程式碼涵蓋範圍較小是可接受的。
 
 > [!TIP]
 > - 關閉編譯器優化
-> - 如果您正在使用非託管（本機）代碼，請使用調試生成
-> - 為每個程式集生成 .pdb（符號）檔
+> - 如果您正在使用非受控 (原生) 程式碼，請使用 debug build
+> - 為每個元件產生 .pdb (符號) 檔
 
 如果沒有得到預期的結果，請參閱[針對程式碼涵蓋範圍進行疑難排解](../test/troubleshooting-code-coverage.md)。
 
@@ -83,7 +83,7 @@ ms.locfileid: "75585596"
 
 ## <a name="manage-code-coverage-results"></a>管理程式碼涵蓋範圍結果
 
-"**代碼覆蓋率結果"** 視窗通常顯示最近運行的結果。 如果您變更測試資料，或者每次只執行部分測試，結果就會有所不同。
+[程式 **代碼涵蓋範圍結果** ] 視窗通常會顯示最近執行的結果。 如果您變更測試資料，或者每次只執行部分測試，結果就會有所不同。
 
 [程式碼涵蓋範圍] 視窗也可用來檢視之前的結果，或是在其他電腦上得到的結果。
 
@@ -91,13 +91,13 @@ ms.locfileid: "75585596"
 
 - **若要檢視先前的結果集**，請從下拉式功能表中選取它。 當您開啟新的方案時，功能表會顯示暫存清單。
 
-- **要查看上一個會話的結果**，請選擇 **"導入代碼覆蓋率結果**"，導航到解決方案中的 **"測試結果"** 資料夾，然後導入 *.coverage*檔。
+- **若要查看上一個會話的結果**，請選擇 [匯 **入程式碼涵蓋範圍結果**]，流覽至方案中的 [ **TestResults** ] 資料夾，然後匯入 [ *涵蓋範圍* ] 檔案。
 
-   如果自*生成 .coverage*檔以來原始程式碼已更改，則覆蓋率著色可能不正確。
+   如果原始程式碼自產生的 *涵蓋範圍* 以來已變更，涵蓋範圍著色可能會不正確。
 
-- **若要以文字顯示結果**，請選擇 [匯出程式碼涵蓋範圍結果]****。 這將生成可讀的 *.coveragexml*檔，您可以使用其他工具處理該檔或輕鬆以郵件方式發送。
+- **若要以文字顯示結果**，請選擇 [匯出程式碼涵蓋範圍結果]****。 這會產生一個可讀取的 *>.coveragexml* 檔案，您可以使用其他工具來處理這些檔案，或輕鬆地在 mail 中傳送。
 
-- **要將結果發送給其他人**，請發送 *.coverage*檔或匯出的 *.coveragexml*檔。 然後，他們就可以匯入您所傳送的檔案。 如果他們有相同版本的原始程式碼，就可以看見涵蓋範圍著色。
+- **若要將結果傳送給其他人**，請傳送 *.coverage* 檔案或匯出的 *>.coveragexml* 檔案。 然後，他們就可以匯入您所傳送的檔案。 如果他們有相同版本的原始程式碼，就可以看見涵蓋範圍著色。
 
 ## <a name="merge-results-from-different-runs"></a>合併不同回合的結果
 
@@ -105,7 +105,7 @@ ms.locfileid: "75585596"
 
 例如，假設您在執行輸入 "2" 的測試時發現特定函式的涵蓋範圍是 50%。 當您第二次輸入 "-2" 執行測試時，您會在涵蓋範圍著色檢視中看見函式涵蓋範圍多了另外的 50%。 現在您合併了兩個測試回合的結果，而報告和涵蓋範圍檢視也顯示涵蓋範圍是該函式的 100%。
 
-在![代碼覆蓋率視窗](../test/media/codecoverage-mergeicon.png)**"合併代碼覆蓋率結果**"中使用"圖示"合併按鈕執行此操作。 您可以選擇最近的回合或匯入之結果的任何組合。 如果您要合併匯出的結果，必須先匯入結果。
+![在程式碼涵蓋範圍視窗 ](../test/media/codecoverage-mergeicon.png) **合併程式碼涵蓋範圍結果**中使用 [合併] 按鈕的圖示。 您可以選擇最近的回合或匯入之結果的任何組合。 如果您要合併匯出的結果，必須先匯入結果。
 
 使用 [匯出程式碼涵蓋範圍結果]****，儲存合併作業的結果。
 
@@ -266,9 +266,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 ### <a name="include-or-exclude-additional-elements"></a>包含或排除其他項目
 
-代碼覆蓋率分析僅在載入的程式集上執行，並且 *.pdb*檔與 *.dll*或 *.exe*檔在同一目錄中可用。 因此，在某些情況下，可以通過獲取適當的 *.pdb*檔的副本來擴展包含的程式集集。
+程式碼涵蓋範圍分析只會在已載入的元件上執行，而且可以在與 *.dll*或 *.exe*檔案相同的目錄中使用 *.pdb*檔。 因此，在某些情況下，您可以藉由取得適當 *.pdb* 檔案的複本，來擴充所包含的元件集。
 
-通過編寫 *.run 設置*檔，可以控制為代碼覆蓋率分析選擇哪些程式集和元素。 例如，您可以排除特定種類的組件，而不需要在其類別中加入屬性。 如需詳細資訊，請參閱[自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。
+您可以藉由撰寫 *.runsettings* 檔案，更進一步掌控針對程式碼涵蓋範圍分析選取的元件和元素。 例如，您可以排除特定種類的組件，而不需要在其類別中加入屬性。 如需詳細資訊，請參閱[自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。
 
 ## <a name="analyze-code-coverage-in-azure-pipelines"></a>在 Azure Pipelines 中分析程式碼涵蓋範圍
 
@@ -276,7 +276,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 ## <a name="analyze-code-coverage-from-the-command-line"></a>從命令列分析程式碼涵蓋範圍
 
-要從命令列運行測試，請使用*vstest.console.exe*。 代碼覆蓋率是*vstest.console.exe*實用程式的一個選項。
+若要從命令列執行測試，請使用 *vstest.console.exe*。 程式碼涵蓋範圍是 *vstest.console.exe* 公用程式的選項。
 
 1. 啟動 Visual Studio 的開發人員命令提示字元：
 
@@ -292,7 +292,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
    ::: moniker-end
 
-2. 在命令提示字元中，執行下列命令：
+2. 在命令提示字元中執行以下命令：
 
    ```shell
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage
@@ -308,4 +308,4 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 - [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)
 - [對程式碼涵蓋範圍進行疑難排解](../test/troubleshooting-code-coverage.md)
-- [單元測試代碼](../test/unit-test-your-code.md)
+- [對程式碼進行單元測試](../test/unit-test-your-code.md)

@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_DATA |微軟文件
+title: BP_RESOLUTION_DATA |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 93a78f84c10af047e596459b68211b885d3c3085
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737835"
 ---
 # <a name="bp_resolution_data"></a>BP_RESOLUTION_DATA
-描述綁定數據斷點的結果。
+描述系結資料中斷點的結果。
 
 ## <a name="syntax"></a>語法
 
@@ -47,26 +47,26 @@ public struct BP_RESOLUTION_DATA {
 
 ## <a name="members"></a>成員
 `bstrDataExpr`\
-已綁定的數據表達式。
+已系結的日期運算式。
 
 `bstrFunc`\
-數據斷點綁定的函數的名稱(如果有)。
+如果有任何) ，資料中斷點在 (中系結的函數名稱。
 
 `bstrImage`\
-數據斷點繫結定的模組名稱(例如 MyModule.dll)。
+模組的名稱 ( # A0，例如資料中斷點已系結的) 。
 
 `dwFlags`\
-[BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)枚舉中的值,描述數據斷點是如何實現的。
+[BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)列舉中的值，描述資料中斷點的執行方式。
 
 ## <a name="remarks"></a>備註
-此結構是[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)結構的成員,該結構依次是[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)方法返回[的BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)結構的成員。
+此結構是[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)結構的成員，它會接著[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)方法所傳回之[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)結構的成員。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

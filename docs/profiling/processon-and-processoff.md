@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778384"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn 和 ProcessOff
@@ -29,7 +29,7 @@ VSPerfCmd.exe 的 **ProcessOff** 和 **ProcessOn** 子命令會暫停和繼續�
 
 - **ProcessOn** 可立即將處理序開始/停止計數設定為 1，並因此會繼續分析。
 
-  有關詳細資訊，請參閱[分析工具 API](../profiling/profiling-tools-apis.md)。
+  如需詳細資訊，請參閱 [分析工具 api](../profiling/profiling-tools-apis.md)。
 
 ## <a name="syntax"></a>語法
 
@@ -39,23 +39,23 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 ```
 
 #### <a name="parameters"></a>參數
- `PID` 開始或停止處理序的整數識別碼。 進程指示符列在 Windows 工作管理員的 **"進程**"選項卡上。
+ `PID` 開始或停止處理序的整數識別碼。 處理序識別碼會列在 Windows 工作管理員的 [ **流程** ] 索引標籤上。
 
 ## <a name="required-subcommands"></a>必要的子命令
- None
+ 無
 
 ## <a name="valid-subcommands"></a>有效的子命令
  您可以在也包含下列子命令的命令列上指定 **ProcessOn** 和 **ProcessOff**。
 
- **開始：**`Method`初始化命令列分析會話並設置指定的分析方法。
+ **開始：** `Method` 初始化命令列分析會話，並設定指定的分析方法。
 
- **啟動：**`AppName`啟動指定的應用程式並開始使用採樣方法進行分析。
+ **啟動：** `AppName` 啟動指定的應用程式，並開始使用取樣方法進行程式碼剖析。
 
- **附加：**`PID`開始分析指定的過程。
+ **附加：** `PID` 開始分析指定的進程。
 
  **GlobalOff**&#124;**GlobalOn** 在命令列分析工作階段中，停止或開始分析所有處理序。
 
- [**執行緒關閉**&#124;**執行緒**數 ]**：**`TID`停止或開始分析指定的執行緒（僅限檢測方法）。
+ {**ThreadOff**&#124;**>threadon**}**:**`TID` 只) ，停止或啟動指定之執行緒 (檢測方法的程式碼剖析。
 
 ## <a name="example"></a>範例
  在此範例中，**ProcessOff** 子命令是用來收集應用程式啟動的分析資料。
@@ -75,5 +75,5 @@ VSPerfCmd /Shutdown
 ## <a name="see-also"></a>另請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [設定檔ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [分析 ASP.NET web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [分析服務](../profiling/command-line-profiling-of-services.md)

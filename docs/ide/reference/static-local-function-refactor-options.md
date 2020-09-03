@@ -12,15 +12,15 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: c297457c910c484c05c974c581e89c75e0ad44e5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77144842"
 ---
-# <a name="static-local-function-refactorings-and-quick-actions"></a>靜態局部函數重構和快速操作
+# <a name="static-local-function-refactorings-and-quick-actions"></a>靜態區域函數重構和快速動作
 
-本文概述了與靜態局部函數相關的兩個生產力功能。 一個是使局部函數成為靜態的重構，另一個是快速操作，它生成代碼將變數傳遞到靜態局部函數中。
+本文概述與靜態區域函數相關的兩個生產力功能。 其中一個是將區域函式設為靜態的重構，另一個則是快速動作，它會產生程式碼以將變數傳遞至靜態區域函式。
 
 ## <a name="make-local-function-static"></a>將區域函式設為靜態
 
@@ -28,44 +28,44 @@ ms.locfileid: "77144842"
 
 - C#
 
-**內容：** 使局部函數成為靜態函數，並將在函數外部定義的變數傳遞給函數的聲明和調用。
+事項 **：** 將區域函式設為靜態，並將函數外定義的變數傳遞至函式的宣告和呼叫。
 
-**何時：** 您希望本地函數是靜態的，並且希望在函數的範圍內定義所有變數。
+時機 **：** 您希望區域函式是靜態的，而且會在函式的範圍中定義所有變數。
 
-**原因：** 靜態本地函數提高了可讀性：知道特定代碼是隔離的，可以更容易理解、重讀和重用。 靜態局部函數還提供範圍界定，以防止使用僅在單個方法中調用的靜態函數污染類。
+**原因：** 靜態區域函式可提高可讀性：知道特定程式碼是隔離的，可讓您更容易瞭解、重新讀取和重複使用。 靜態區域函式也提供範圍，以防止使用只在單一方法中呼叫的靜態函式來污染類別。
 
 ### <a name="how-to"></a>操作方式
 
-1. 將您的護理放在本地函數名稱上。
+1. 將插入號放在區域函式名稱上。
 
-2. 按**Ctrl**+**。** （期間）以觸發**快速操作和重構**功能表。
+2. 按下**Ctrl** + **。** ) 觸發 [ **快速動作與重構** ] 功能表的 (期間。
 
    ![將區域函式設為靜態](media/make-local-function-static.png)
 
-3. 選擇 **"使局部函數為"靜態"。**
+3. 選取 [ **建立區域函數 ' static ']。**
 
-## <a name="pass-variable-explicitly-in-a-static-local-function"></a>在靜態局部函數中顯式傳遞變數
+## <a name="pass-variable-explicitly-in-a-static-local-function"></a>在靜態區域函式中明確傳遞變數
 
-此快速操作適用于：
+此快速動作適用于：
 
 - C#
 
-**內容：** 將變數顯式傳遞到本地靜態函數中。
+事項 **：** 將變數明確傳遞至本機靜態函數。
 
-**何時：** 您希望本地函數是靜態的，但仍使用在它外部初始化的變數。
+時機 **：** 您希望區域函式是靜態的，但仍使用在其外部初始化的變數。
 
-**原因：** 使用靜態本地函數向讀者提供說明，因為他們知道只能在程式的特定上下文中聲明和調用它。 它提供了在此上下文之外定義變數的靈活性，但仍能夠將它們作為參數傳遞給靜態局部函數。
+**原因：** 使用靜態區域函式可提供對讀者的澄清，因為它們知道它只能在程式的特定內容中宣告和呼叫。 它可讓您彈性地定義此內容外部的變數，但仍可將其作為靜態區域函式的引數傳遞。
 
 ### <a name="how-to"></a>操作方式
 
-1. 將圖子放在靜態局部函數中使用的變數上。
+1. 將插入號放在用於靜態區域函式的變數上。
 
-2. 按**Ctrl**+**。** （期間）以觸發**快速操作和重構**功能表。
+2. 按下**Ctrl** + **。** ) 觸發 [ **快速動作與重構** ] 功能表的 (期間。
 
-   ![在靜態局部函數中顯式傳遞變數](media/pass-variable-explicitly-static-local-function.png)
+   ![在靜態區域函數中明確傳遞變數](media/pass-variable-explicitly-static-local-function.png)
 
-3. 選取 [在本機靜態函式中明確傳遞變數]****。
+3. 選取 [在本機靜態函式中明確傳遞變數]。
 
 ## <a name="see-also"></a>另請參閱
 
-- [Refactoring](../refactoring-in-visual-studio.md)
+- [重構](../refactoring-in-visual-studio.md)

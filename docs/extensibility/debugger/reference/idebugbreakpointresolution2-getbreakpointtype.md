@@ -1,5 +1,5 @@
 ---
-title: IDebug 突破點決議2::獲取斷點類型 |微軟文件
+title: IDebugBreakpointResolution2：： GetBreakpointType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2949366eeb3e79a732e94a4a8f8e9912048c6452
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734818"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
-獲取此解析度表示的斷點的類型。
+取得這個解析所表示之中斷點的型別。
 
 ## <a name="syntax"></a>語法
 
@@ -41,16 +41,16 @@ int GetBreakpointType( 
 
 ## <a name="parameters"></a>參數
 `pBPType`\
-[出]從[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)枚舉中返回指定此斷點類型的值。
+擴展傳回 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 列舉中的值，這個值會指定這個中斷點的型別。
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則返回錯誤代碼。 如果關聯的BP_RESOLUTION_INFO結構`bpResLocation`中的欄位無效[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md), 則傳回E_FAIL。
+如果成功，則傳回，否則會傳回 `S_OK` 錯誤碼。 如果 `bpResLocation` 相關聯的 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 結構中的欄位無效，則傳回 E_FAIL。
 
 ## <a name="remarks"></a>備註
-例如,斷點可以是代碼或數據斷點。
+例如，中斷點可能是程式碼或資料中斷點。
 
 ## <a name="example"></a>範例
-下面的範例展示如何為公開`CDebugBreakpointResolution`[IDebugBreakpointE2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)介面的簡單物件實現此方法。
+下列範例顯示如何針對 `CDebugBreakpointResolution` 公開 [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 介面的簡單物件，執行這個方法。
 
 ```
 HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::獲取調試屬性 |微軟文件
+title: IDebugStackFrame2：： GetDebugProperty |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: aa98107ada265d232647d27b4050b507d4581df7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719791"
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
-獲取堆疊幀的屬性說明。
+取得堆疊框架屬性的描述。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetDebugProperty ( 
 
 ## <a name="parameters"></a>參數
 `ppDebugProp`\
-[出]返回描述此堆疊幀屬性的[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件。
+擴展傳回 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 物件，這個物件會描述這個堆疊框架的屬性。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 使用適當的篩選器調用[Enum 兒童](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)方法可以檢索與堆疊幀關聯的局部變數、方法參數、寄存器和"此"指標。
+ 使用適當的篩選準則呼叫 [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 方法，可以抓取與堆疊框架相關聯的區域變數、方法參數、暫存器和 "this" 指標。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

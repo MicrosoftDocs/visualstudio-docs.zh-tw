@@ -10,10 +10,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 288fb24c9c1c4ddee1cb59a968e717531e274af1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300588"
 ---
 # <a name="getting-started-with-ptvs-building-a-website-in-azure"></a>開始使用 PTVS：在 Azure 建置網站
@@ -34,5 +34,5 @@ ms.locfileid: "74300588"
  您可以在這段簡短的 [YouTube 影片 (英文)](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) 中觀看這些指示。  
   
 ## <a name="see-also"></a>另請參閱  
- [Wiki 文件 (英文)](https://github.com/Microsoft/PTVS/wiki/Web-Project)   
+ [Wiki 檔](https://github.com/Microsoft/PTVS/wiki/Web-Project)   
  [PTVS 快速入門及深度剖析影片 (英文)](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

@@ -8,10 +8,10 @@ ms.date: 04/17/2020
 ms.topic: how-to
 description: 了解如何下載和安裝 Visual Studio 訂用帳戶中所含的 Visual Studio IDE。
 ms.openlocfilehash: b5c47c6b484d5b74f31ab8569f3895ae9ce0f984
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904434"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 權益
@@ -36,15 +36,15 @@ ms.locfileid: "85904434"
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Enterprise 下載詳細資料](_img/vs-ide-experience/vs-ide-download-details.png)
 6. 按一下所下載的安裝程式套件。  如果提示立即安裝，請按一下 [執行]****。
-7. 在 [使用者帳戶控制] 對話方塊中，按一下 [**是]**。
+7. 在 [使用者帳戶控制] 對話方塊中，按一下 [ **是]**。
 8. 按一下 [繼續]**** 接受授權條款。
 9. 安裝程式啟動時，請選擇您想要的工作負載、個別元件和語言套件，方法是在對應的索引標籤上選擇它們。
    > [!div class="mx-imgBorder"]
    > ![自訂 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
 
-10. 按一下 [安裝] 。
+10. 按一下 [Install] 。
 
-11. 安裝完成時，您可以選擇修改安裝，或啟動 Visual Studio。  按一下 [啟動]**** 開始使用。  如果您已安裝多個版本，則會列出它們。
+11. 安裝完成時，您可以選擇修改安裝，或啟動 Visual Studio。  按一下 [啟動]**** 開始使用。  如果您安裝了多個版本，系統會列出這些版本。
     > [!div class="mx-imgBorder"]
     > ![啟動 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png)
 
@@ -60,35 +60,35 @@ ms.locfileid: "85904434"
 
 ## <a name="eligibility"></a>資格
 
-| 訂用帳戶層級                                                 |     聲道                                            | 優點                                                          | 可續約？    |
+| 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  是          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise   | VL | 可用       |  是          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl | 可用       |  是          |
 | Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                       | 可用                                                            |  是          |
-| 含 GitHub Enterprise 的 Visual Studio Professional | VL   | 可用              |  是          |
+| 含 GitHub Enterprise 的 Visual Studio Professional | Vl   | 可用              |  是          |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  是         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 
-<sup>1</sup>  *包括：禁止轉售（NFR）、Visual Studio 產業夥伴（VSIP）、Microsoft 合作夥伴網路（MPN）、FTE、MCT Software & 服務開發人員、BizSpark、想像、最有價值專家（MVP）、區域主管（RD）。 排除： MCT Software & Services。*
+<sup>1</sup>  *包括：禁止轉售 (NFR) 、Visual Studio 產業合作夥伴 (VSIP) 、Microsoft 合作夥伴網路 (MPN) 、FTE、MCT Software & Services Developer、BizSpark、假想、最有價值專家 (MVP) 、區域主管 (RD) 。 排除： MCT Software & Services。*
 
 > [!NOTE]
-> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶前往以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索 Visual Studio 購買的不同選項。
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶移至，以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索購買 Visual Studio 的不同選項。
 
-不確定您使用哪一個訂用帳戶？  連接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
+不確定您使用哪一個訂用帳戶？  連接至以 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 查看指派給您電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="support-resources"></a>支援資源
 - 如需 Visual Studio IDE 的說明，請查看這些資源：
-  - 技術支援：[https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
-  - [文件](/visualstudio/)
-- 如需 Visual Studio 訂閱的銷售、訂閱、帳戶和計費的協助，請聯絡 Visual Studio[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+  - 技術支援： [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+  - [文件集](/visualstudio/)
+- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Azure 檔](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 安裝 Visual Studio 之後，請別忘了起用這些其他重要的權益：
 - [Azure DevOps](vs-azure-devops.md)
 - [Azure DevTest 個人點數](vs-azure.md)

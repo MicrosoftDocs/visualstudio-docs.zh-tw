@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 74137752900d082c545dd5e5271b7700ec81fa01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778293"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>使用效能資料檔案儲存符號資訊
@@ -62,6 +62,6 @@ VsPerfReport -packsymbols -summary:all filename.vsp
 
 ## <a name="see-also"></a>另請參閱
 
-[保存和匯出性能工具資料](../profiling/saving-and-exporting-performance-tools-data.md)
-[如何：引用 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)
-[VSPerf 報告](../profiling/vsperfreport.md)
+[儲存和匯出效能工具資料](../profiling/saving-and-exporting-performance-tools-data.md) 
+[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md) 
+[VSPerfReport](../profiling/vsperfreport.md)

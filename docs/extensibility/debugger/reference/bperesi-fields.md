@@ -1,5 +1,5 @@
 ---
-title: BPERESI_FIELDS |微軟文件
+title: BPERESI_FIELDS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: af2f20e7d3abd79261dc18753a7eb940666fc186
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737761"
 ---
 # <a name="bperesi_fields"></a>BPERESI_FIELDS
-指定要檢索有關斷點解析失敗的資訊。
+指定要抓取的資訊，以找出中斷點的解析失敗。
 
 ## <a name="syntax"></a>語法
 
@@ -52,36 +52,36 @@ public enum enum_BPERESI_FIELDS {
 
 ## <a name="fields"></a>欄位
 `PERESI_BPRESLOCATION`\
-初始化/使用`bpResLocation`[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)結構的(斷點解析度位置)欄位。
+初始化/使用 `bpResLocation` [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 結構的 (中斷點解析位置) 欄位。
 
 `BPERESI_PROGRAM`\
-初始化/使用`pProgram`結構欄位`BP_ERROR_RESOLUTION_INFO`。
+初始化/使用 `pProgram` 結構的欄位 `BP_ERROR_RESOLUTION_INFO` 。
 
 `BPERESI_THREAD`\
-初始化/使用`pThread`結構欄位`BP_ERROR_RESOLUTION_INFO`。
+初始化/使用 `pThread` 結構的欄位 `BP_ERROR_RESOLUTION_INFO` 。
 
 `BPERESI_MESSAGE`\
-初始化/使用`bstrMessage`結構欄位`BP_ERROR_RESOLUTION_INFO`。
+初始化/使用 `bstrMessage` 結構的欄位 `BP_ERROR_RESOLUTION_INFO` 。
 
 `BPERESI_TYPE`\
-初始化/使用`dwType``BP_ERROR_RESOLUTION_INFO`結構的(斷點類型)欄位。
+初始化/使用 `dwType` 結構的 (中斷點類型) 欄位 `BP_ERROR_RESOLUTION_INFO` 。
 
 `BPERESI_ALLFIELDS`\
-初始化/使用`BP_ERROR_RESOLUTION_INFO`結構的所有欄位。
+初始化/使用結構的所有欄位 `BP_ERROR_RESOLUTION_INFO` 。
 
 ## <a name="remarks"></a>備註
-作為參數傳遞給[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)方法,以指示要初始化[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)結構的欄位。
+以參數形式傳遞至 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) 方法，以指出要初始化 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 結構的哪些欄位。
 
-這些值還用於指示在返回結構時使用結構`BP_ERROR_RESOLUTION_INFO`中的哪些欄位並有效。
+這些值也可用來指出 `BP_ERROR_RESOLUTION_INFO` 當傳回該結構時，會使用結構中的哪些欄位以及有效的欄位。
 
-這些值可以稍微結合`OR`。
+這些值可能會與位結合 `OR` 。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

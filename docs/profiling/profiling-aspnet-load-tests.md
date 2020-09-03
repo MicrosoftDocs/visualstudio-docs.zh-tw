@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 0871be57934b8a970efbca413fae4d1e3d90a625
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772129"
 ---
 # <a name="profile-aspnet-load-tests"></a>對 ASP.NET 負載測試進行分析
@@ -21,10 +21,10 @@ ms.locfileid: "74772129"
 
 - [(NIB) 如何︰從 Web 效能測試編輯器在 Web 應用程式執行效能工作階段 ((NIB) How to: Run a Performance Session on a Web Application from the Web Performance Test Editor)](https://msdn.microsoft.com/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)
 
-- [如何：使用視覺化工作室中的測試設定配置ASP.NET檢測器以進行負載測試](https://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)
+- [如何：使用 Visual Studio 中的測試設定來設定負載測試的 ASP.NET Profiler](https://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)
 
 ## <a name="see-also"></a>另請參閱
 - [了解取樣資料值](../profiling/understanding-sampling-data-values.md)
 - [使用效能規則分析資料](../profiling/using-performance-rules-to-analyze-data.md)
-- [採樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)
-- [層交互視圖](../profiling/tier-interactions-view.md)
+- [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)
+- [階層互動視圖](../profiling/tier-interactions-view.md)
