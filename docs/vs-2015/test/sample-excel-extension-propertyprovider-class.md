@@ -9,10 +9,10 @@ caps.latest.revision: 11
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8ae254f85b00c47ba00250641f7afe0a638ceabc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660427"
 ---
 # <a name="sample-excel-extension-propertyprovider-class"></a>範例 Excel 延伸模組：PropertyProvider 類別
@@ -35,6 +35,6 @@ ms.locfileid: "72660427"
 ## <a name="code-generation-customization-methods"></a>程式碼產生自訂方法
  這些方法並未針對此擴充功能實作。 因此，它們會傳回 `null` 或擲回 <xref:System.NotImplementedException>。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard>
  [擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugEventCallback2::Event |Microsoft Docs
+title: IDebugEventCallback2：： Event |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 37462b5f274ca6e6c2a4a2feb4083ea94ea2f066
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163978"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-傳送通知的偵錯事件。  
+傳送 debug 事件的通知。  
   
 ## <a name="syntax"></a>語法  
   
@@ -52,33 +52,33 @@ int Event( 
   
 #### <a name="parameters"></a>參數  
  `pEngine`  
- [in][IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)物件，表示正在傳送這個事件的偵錯引擎 (DE)。 規定，才能填入此參數。  
+ 在 [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) 物件，表示正在傳送此事件 (DE) 的 debug engine。 填寫此參數必須有 DE。  
   
  `pProcess`  
- [in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示發生事件的程序。 此參數會填入工作階段的偵錯管理員 (SDM)。 DE 一律會傳遞此參數的 null 值。  
+ 在 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 物件，表示發生事件的進程。 會話 debug manager (SDM) 填入此參數。 DE 一律會為此參數傳遞 null 值。  
   
  `pProgram`  
- [in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示的程式發生此事件。 對於大多數事件，此參數不是 null 的值。  
+ 在 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 物件，表示發生此事件的程式。 對於大部分的事件而言，這個參數不是 null 值。  
   
  `pThread`  
- [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示發生此事件的執行緒。 停止事件，此參數不能堆疊框架取自此參數為 null 值。  
+ 在代表發生這個事件之執行緒的 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 物件。 若要停止事件，此參數不能是 null 值，因為堆疊框架是從此參數取得的。  
   
  `pEvent`  
- [in][IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)物件，代表偵錯事件。  
+ 在表示 debug 事件的 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 物件。  
   
  `riidEvent`  
- [in]GUID，識別哪些事件介面，以取得從`pEvent`參數。  
+ 在GUID，識別要從參數取得的事件介面 `pEvent` 。  
   
  `dwAttrib`  
- [in]從旗標的組合[EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)列舉型別。  
+ 在 [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) 列舉中的旗標組合。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 呼叫這個方法時`dwAttrib`參數必須符合從傳回的值[GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)方法，如事件物件上呼叫傳入`pEvent`參數。  
+ 呼叫這個方法時， `dwAttrib` 參數必須符合在參數中傳遞的事件物件上呼叫的 [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) 方法所傳回的值 `pEvent` 。  
   
- 所有偵錯事件是以非同步方式張貼，不論事件本身是否為非同步。 當 DE 呼叫這個方法時，傳回的值不會指出是否處理事件，僅是否收到事件。 事實上，在大部分情況下，事件尚未處理此方法傳回時。  
+ 所有的 debug 事件都是以非同步方式張貼，不論事件本身是否為非同步。 當 DE 呼叫這個方法時，傳回值不會指出是否已處理事件，只會指出是否已收到事件。 事實上，在大部分情況下，此方法傳回時，事件尚未經過處理。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   

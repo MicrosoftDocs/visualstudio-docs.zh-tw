@@ -15,14 +15,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: aab9e14c7fa4b4c70b2e61eca382af2ce787148c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546051"
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>如何：以程式設計方式建立自訂行事曆
-  這個範例會建立名為**PersonalCalendar**的新行事曆資料夾，然後建立新的約會專案，並將它加入行事曆資料夾。 然後，程式碼會顯示行事曆資料夾。
+  這個範例會建立名為 **PersonalCalendar**的新行事曆資料夾，然後建立新的約會專案並將它加入行事曆資料夾中。 然後，程式碼會顯示行事曆資料夾。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 

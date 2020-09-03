@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9083d14c82eb2d283431e28d03bbbf96c14258cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660860"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
@@ -31,7 +31,7 @@ devenv /command CommandName
 ```
 
 ## <a name="arguments"></a>引數
- `CommandName` 必要項。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 命令的完整名稱或其別名，以雙引號括住。 如需命令和別名語法的詳細資訊，請參閱 [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)。
+ 需要 `CommandName`。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 命令的完整名稱或其別名，以雙引號括住。 如需命令和別名語法的詳細資訊，請參閱 [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)。
 
 ## <a name="remarks"></a>備註
  啟動完成後，IDE 會執行具名命令。 如果您使用此參數，IDE 在啟動時就不會顯示 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 起始頁。

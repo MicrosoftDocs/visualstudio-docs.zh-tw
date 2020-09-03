@@ -11,22 +11,22 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 749b7a8da2cbdf8377e7f2e1fcb39787e2f42303
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149067"
 ---
-# <a name="mchildren-field"></a>m_children 欄位
+# <a name="m_children-field"></a>m_children 欄位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-使用這項工作中註冊的子工作的清單。  
+這項工作所註冊之子工作的清單。  
   
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **組件：** mscorlib （在 mscorlib.dll 中)  
+ **元件：** mscorlib.dll) 中的 mscorlib (  
   
- 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。  
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,9 +35,9 @@ ms.locfileid: "68149067"
 ```  
   
 ## <a name="remarks"></a>備註  
- 當工作執行時，只有執行工作的執行緒應該存取此陣列。  
+ 當工作正在執行時，只有執行工作的執行緒才能存取此陣列。  
   
- 如果工作已完成，其他執行緒可以存取這個欄位，只要它們不將任何項目新增至其中或從中移除任何項目。  
+ 如果工作已完成，其他執行緒就可以存取此欄位，只要它們沒有新增任何任何值，或從中移除任何動作。  
   
 ## <a name="see-also"></a>另請參閱  
  [ContingentProperties 類別](../../extensibility/debugger/contingentproperties-class-internal-members.md)

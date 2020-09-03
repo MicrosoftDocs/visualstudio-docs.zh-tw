@@ -11,25 +11,25 @@ caps.latest.revision: 46
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e41c9c5a4e445412c470aca680f4364bcf541897
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205982"
 ---
 # <a name="vspackages"></a>VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vspackage 是可擴充的軟體模組[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]藉由提供 UI 項目、 服務、 專案、 編輯器和設計工具的整合式的開發環境 (IDE)。  
+Vspackage 是藉 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 由提供 UI 元素、服務、專案、編輯器和設計工具來擴充整合式開發環境 (IDE) 的軟體模組。  
   
 ## <a name="in-this-section"></a>本節內容  
  [為 VS Shell 指定 VSPackage 檔案位置](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
  說明如何指定 Visual Studio shell 的 VSPackage 位置。  
   
  [VSPackage 中的資源](../../extensibility/internals/resources-in-vspackages.md)  
- 說明如何在 Vspackage 中管理資源。  
+ 說明如何管理 Vspackage 中的資源。  
   
  [VSPackage 中安全性的最佳做法](../../extensibility/internals/best-practices-for-security-in-vspackages.md)  
- 可協助您了解安全性弱點來建立更安全的產品。  
+ 藉由瞭解安全性弱點，協助您建立更安全的產品。  
   
 ## <a name="related-sections"></a>相關章節

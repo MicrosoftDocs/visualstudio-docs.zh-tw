@@ -10,16 +10,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ac78ffb3455940cf2379af44ff5c2bc5870dc684
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531998"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework 使用效能規則
 .Net Framework 使用類別中的效能規則會識別可最佳化的特定方法，也會識別較一般的使用模式 (例如記憶體回收和鎖定爭用)，以用於效能問題調查。
 
-|規則|描述|
+|規則|說明|
 |-|-|
 |[DA0001：使用 StringBuilder 進行串連](../profiling/da0001-use-stringbuilder-for-concatenations.md)|呼叫 <xref:System.String.Concat(System.String,System.String)?displayProperty=fullName> 佔分析資料的絕大部分。 請考慮使用 <xref:System.Text.StringBuilder> 類別，從多個區段建構字串。|
 |[DA0005：常見的 GC2 集合](../profiling/da0005-frequent-gc2-collections.md)|數量相對高的 .NET 記憶體物件正在層代 2 記憶體回收中收回。 如果有太多短期物件存留在層代 1 回收中，記憶體管理的成本很容易變得過高。|
@@ -33,6 +33,6 @@ ms.locfileid: "85531998"
 |[DA0021：高比率的 Gen 1 記憶體回收](../profiling/da0021-high-rate-of-gen-1-garbage-collections.md)|數量相對高的 .NET 記憶體物件正在層代 1 記憶體回收中收回。 如果有太多短期物件存留在層代 0 回收中，記憶體管理的成本很容易變得過高。|
 |[DA0022：高比率的 Gen 2 記憶體回收](../profiling/da0022-high-rate-of-gen-2-garbage-collections.md)|數量高的 .NET 記憶體物件正在層代 2 記憶體回收中收回。 如果有太多短期物件存留在層代 1 回收中，記憶體管理的成本很容易變得過高。 鎖定爭用率超過規則 DA0005 的上限臨界值時，就會引發此規則。|
 |[DA0023：高記憶體回收 CPU 時間](../profiling/da0023-high-gc-cpu-time.md)|程式碼剖析期間收集的系統效能資料指出，相較於應用程式總處理時間，花費在記憶體回收的時間量極高。|
-|[DA0024：過多的垃圾收集 CPU 時間](../profiling/da0024-excessive-gc-cpu-time.md)|程式碼剖析期間收集的系統效能資料指出，相較於應用程式總處理時間，花費在記憶體回收的時間量過高。 當記憶體回收所花費的時間量超過規則 DA0023 的上限臨界值時，就會引發此規則。|
+|[DA0024：過度的垃圾收集 CPU 時間](../profiling/da0024-excessive-gc-cpu-time.md)|程式碼剖析期間收集的系統效能資料指出，相較於應用程式總處理時間，花費在記憶體回收的時間量過高。 當記憶體回收所花費的時間量超過規則 DA0023 的上限臨界值時，就會引發此規則。|
 |[DA0038：高比率的鎖定爭用](../profiling/da0038-high-rate-of-lock-contentions.md)|分析資料收集的系統效能資料指出，應用程式執行期間發生極高的鎖定爭用率。 請考慮使用並行分析方法再次進行分析，以尋找爭用的原因。|
-|[DA0039：鎖定爭用率非常高](../profiling/da0039-very-high-rate-of-lock-contentions.md)|分析資料收集的系統效能資料指出，應用程式執行期間發生過高的鎖定爭用率。 請考慮使用並行分析方法再次進行分析，以尋找爭用的原因。 鎖定爭用率超過規則 DA0038 的上限臨界值時，就會引發此規則。|
+|[DA0039：極高比率的鎖定爭用](../profiling/da0039-very-high-rate-of-lock-contentions.md)|分析資料收集的系統效能資料指出，應用程式執行期間發生過高的鎖定爭用率。 請考慮使用並行分析方法再次進行分析，以尋找爭用的原因。 鎖定爭用率超過規則 DA0038 的上限臨界值時，就會引發此規則。|

@@ -1,5 +1,5 @@
 ---
-title: '&lt;appAddin &gt; 元素（Visual Studio 中的 Office 開發）'
+title: '&lt;&gt;在 Visual Studio) 中 (Office 開發的 appAddin 元素'
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1bf9ea990d12bd24adee3f6a24a39fa43c74fb71
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531634"
 ---
-# <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin &gt; 元素（Visual Studio 中的 Office 開發）
-  命名空間的**appAddin**元素會 `vstov4` 儲存 VSTO 增益集的自訂特定資訊。
+# <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;&gt;在 Visual Studio) 中 (Office 開發的 appAddin 元素
+  命名空間的 **appAddin** 元素會 `vstov4` 儲存 VSTO 增益集的自訂特定資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -37,31 +37,31 @@ ms.locfileid: "85531634"
 ```
 
 ## <a name="elements-and-attributes"></a>元素和屬性
- **AppAddin**元素是必要專案，且位於 `vstov4` 命名空間中。 應用程式資訊清單中只有一個定義的**appAddin**元素。
+ **AppAddin**元素是必要的，且位於 `vstov4` 命名空間中。 應用程式資訊清單中只定義一個 **appAddin** 元素。
 
  **AppAddin**元素具有下列屬性。
 
-|屬性|描述|
+|屬性|說明|
 |---------------|-----------------|
 |**應用程式**|必要。 識別 Microsoft Office 應用程式。 該值可以為下列其中一種：Excel、InfoPath、Outlook、PowerPoint、Project、Visio 或 Word。|
-|**loadBehavior**|選擇性。 根據預設， **loadBehavior**會藉由將此值設定為來啟用。 若要進行偵錯，可以將此值設定為 2 來停用 VSTO 增益集。 如需詳細資訊，請參閱在[VSTO 增益集的登錄專案](../vsto/registry-entries-for-vsto-add-ins.md)中標題為 LoadBehavior 值的表格。|
-|**名**|必要。 這個值是該應用程式載入 VSTO 增益集時將要使用的登錄機碼名稱。 如需詳細資訊，請參閱[VSTO 增益集的登錄專案](../vsto/registry-entries-for-vsto-add-ins.md)。|
+|**loadBehavior**|選擇性。 根據預設， **loadBehavior** 是藉由將此值設定為來啟用。 若要進行偵錯，可以將此值設定為 2 來停用 VSTO 增益集。 如需詳細資訊，請參閱在 [VSTO 增益集](../vsto/registry-entries-for-vsto-add-ins.md)的登錄專案中標題為 LoadBehavior 值的表格。|
+|**keyName**|必要。 這個值是該應用程式載入 VSTO 增益集時將要使用的登錄機碼名稱。 如需詳細資訊，請參閱 [VSTO 增益集的登錄專案](../vsto/registry-entries-for-vsto-add-ins.md)。|
 
  **AppAddin**元素具有下列子項目。
 
 ### <a name="friendlyname"></a>friendlyName
- 選擇性。 &#60;friendlyName&#62; 元素中說明的**friendlyname**元素[&#40;Visual Studio&#41;中的 Office 開發](../vsto/friendlyname-element-office-development-in-visual-studio.md)。
+ 選擇性。 在**friendlyName** [Visual Studio&#41;中，&#60;friendlyname&#62; 元素 &#40;Office 程式開發](../vsto/friendlyname-element-office-development-in-visual-studio.md)說明。
 
 ### <a name="description"></a>description
- 選擇性。 **描述**元素會在[Visual Studio&#41;中 &#40;Office 開發&#60;描述&#62; 元素](../vsto/description-element-office-development-in-visual-studio.md)中說明。
+ 選擇性。 **Description**元素會在[Visual Studio&#41;中 &#40;Office 程式開發&#60;描述&#62;](../vsto/description-element-office-development-in-visual-studio.md)專案中說明。
 
 ### <a name="formregions"></a>formRegions
- 只有包含表單區域的 Outlook VSTO 增益集需要。 &#60;F s&#62; 元素中會說明**f s**元素[&#40;Visual Studio&#41;中的 Office 開發](../vsto/formregions-element-office-development-in-visual-studio.md)。
+ 只有包含表單區域的 Outlook VSTO 增益集需要。 **F s**元素會在[Visual Studio&#41;中的&#60;f s&#62; 元素 &#40;Office 程式開發](../vsto/formregions-element-office-development-in-visual-studio.md)中加以說明。
 
 ## <a name="vsto-add-in-example"></a>VSTO 增益集範例
 
-### <a name="description"></a>描述
- 下列程式碼範例說明使用所部署之 Outlook 方案中的**appAddin**元素 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 。 這個程式碼範例是[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中提供之較大範例的一部分。
+### <a name="description"></a>說明
+ 下列程式碼範例說明使用部署之 Outlook 方案中的 **appAddin** 元素 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼
 

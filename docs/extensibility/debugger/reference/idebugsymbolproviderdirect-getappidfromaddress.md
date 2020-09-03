@@ -1,5 +1,5 @@
 ---
-title: IDebug符號供應商直接:從地址獲取AppID |微軟文件
+title: IDebugSymbolProviderDirect：： GetAppIDFromAddress |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: df1dbea23cf29809c5f504359ebf02b40c14e6e2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719165"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
-檢索給定調試位址的應用程式域識別碼。
+根據指定的 debug 位址，抓取應用程式域識別碼。
 
 ## <a name="syntax"></a>語法
 
@@ -42,13 +42,13 @@ int GetAppIDFromAddress(
 
 ## <a name="parameters"></a>參數
 `pAddress`\
-[在]由[IDebug 位址](../../../extensibility/debugger/reference/idebugaddress.md)介面表示的調試位址。
+在 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 介面所代表的 Debug 位址。
 
 `pAppID`\
-[出]應用程式域的標識碼。
+擴展應用程式域的識別碼。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

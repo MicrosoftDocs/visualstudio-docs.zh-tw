@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a4b140c1859d3a3a17eb2f48eb02a60a3e9d50c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152633"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030：收集資料庫專案的階層互動量測
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-規則 Id |DA0030 |  
-|類別目錄 |分析工具使用方式 |  
-|程式碼剖析方法 |取樣 |  
-|訊息 |收集多層式應用程式的互動度量將協助您了解資料庫使用模式和關鍵資料存取延遲。 請嘗試在啟用 [階層互動分析] 選項的情況下再次分析應用程式。|  
+規則識別碼 |DA0030 |  
+|類別 |分析工具使用量 |  
+|分析方法 |取樣 |  
+|訊息 |收集多層式應用程式的互動測量，可協助您瞭解資料庫使用模式和重要的資料存取延遲。 請嘗試在啟用 [階層互動分析] 選項的情況下再次分析應用程式。|  
 |規則類型 |資訊 |  
   
 ## <a name="cause"></a>原因  

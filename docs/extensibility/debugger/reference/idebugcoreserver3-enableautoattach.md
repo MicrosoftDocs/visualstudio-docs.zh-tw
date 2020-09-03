@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::啟用自動連接 |微軟文件
+title: IDebugCoreServer3：： EnableAutoAttach |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d529bb80f79a3f2972e9349a2679bb528cc10463
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732919"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
-啟用指定調試引擎的自動連接。
+針對指定的偵錯工具引擎啟用自動附加。
 
 ## <a name="syntax"></a>語法
 
@@ -47,22 +47,22 @@ int EnableAutoAttach(
 
 ## <a name="parameters"></a>參數
 `rgguidSpecificEngines`\
-[在]每個調試引擎的 GUID 陣列,以標記為自動附加。
+在要標示為自動附加的每個偵錯工具引擎的 Guid 陣列。
 
 `celtSpecificEngines`\
-[在]中`rgguidSpecificEngines`指定的引擎數。
+在中指定的引擎數目 `rgguidSpecificEngines` 。
 
 `pszStartPageUrl`\
-[在]自動附加時要使用的起始 URL。
+在自動附加時所要使用的起始 URL。
 
 `pbstrSessionID`\
-[出]自動連接的作業階段的 ID。
+擴展已自動附加之會話的識別碼。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則返回錯誤代碼。 一個錯誤代碼是`E_AUTO_ATTACH_NOT_REGISTERED`,它指示自動附加類工廠尚未註冊。
+ 如果成功，則傳回，否則會傳回 `S_OK` 錯誤碼。 其中一個錯誤碼是 `E_AUTO_ATTACH_NOT_REGISTERED` ，表示尚未註冊自動附加類別 factory。
 
 ## <a name="remarks"></a>備註
- 啟動與指定 URL 關聯的程式時,將自動啟動並附加指定的調試引擎。
+ 當與指定之 URL 相關聯的程式啟動時，會自動啟動並附加指定的偵錯工具引擎。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 620be9ea458d55a8c9610079b357cc9466a03f56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660778"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
@@ -33,9 +33,9 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
 ```
 
 ## <a name="arguments"></a>引數
- `SolnConfigName` 必要項。 將用來建置在 `SolutionName` 中命名之方案的方案組態名稱。
+ 需要 `SolnConfigName`。 將用來建置在 `SolutionName` 中命名之方案的方案組態名稱。
 
- `SolutionName` 必要項。 方案檔的完整路徑和名稱。
+ 需要 `SolutionName`。 方案檔的完整路徑和名稱。
 
  /project `ProjName` 選擇項。 方案中專案檔的路徑和名稱。 您可以輸入從 `SolutionName` 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。
 
@@ -46,7 +46,7 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
 
  請以雙引號括住包含空格的字串。
 
- 組建的摘要資訊 (包括錯誤) 可顯示在 [命令]  視窗中，或使用 `/out` 參數指定的任何記錄檔中。
+ 組建的摘要資訊 (包括錯誤) 可顯示在 [命令]**** 視窗中，或使用 `/out` 參數指定的任何記錄檔中。
 
 ## <a name="example"></a>範例
  此範例使用 `MySolution` 之 `Release` 方案組態內的 `Release` 專案組建組態，來部署 `CSharpConsoleApp` 專案。
@@ -56,4 +56,4 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 ```
 
 ## <a name="see-also"></a>另請參閱
- [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md) [/Project （devenv）](../../ide/reference/project-devenv-exe.md) [/Build （devenv](../../ide/reference/build-devenv-exe.md) ） [/Clean （devenv](../../ide/reference/clean-devenv-exe.md) ） [/Rebuild （devenv）](../../ide/reference/rebuild-devenv-exe.md) [/out （devenv .exe）](../../ide/reference/out-devenv-exe.md)
+ [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md) [/Project ( # A0) ](../../ide/reference/project-devenv-exe.md) [/Build ( # A1) ](../../ide/reference/build-devenv-exe.md) [/Clean ( # A2) ](../../ide/reference/clean-devenv-exe.md) [/Rebuild ( # A3) ](../../ide/reference/rebuild-devenv-exe.md) [/out ( # A4) ](../../ide/reference/out-devenv-exe.md)

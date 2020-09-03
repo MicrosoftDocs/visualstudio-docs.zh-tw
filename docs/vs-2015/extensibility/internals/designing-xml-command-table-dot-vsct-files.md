@@ -1,5 +1,5 @@
 ---
-title: 設計 XML 命令資料表 (。Vsct) 檔案 |Microsoft Docs
+title: 設計 XML 命令表 (。.Vsct) Files |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,117 +11,117 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 987536af051de4a66b3eccadb105fd98455ddf06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196854"
 ---
-# <a name="designing-xml-command-table-vsct-files"></a>設計 XML 命令資料表 (。Vsct) 檔案
+# <a name="designing-xml-command-table-vsct-files"></a>設計 XML 命令表檔案 (.Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-XML 命令表 (.vsct) 檔案描述的版面配置和外觀 VSPackage 的命令項目。 命令的項目包括按鈕、 下拉式方塊、 功能表、 工具列和命令項目的群組。 本主題說明 XML 命令表檔案、 它們如何影響命令的項目和功能表，以及如何加以建立。  
+XML 命令表 ( .vsct) 檔描述 VSPackage 的命令專案的配置和外觀。 命令專案包括按鈕、下拉式方塊、功能表、工具列和命令專案群組。 本主題說明 XML 命令表格檔案、它們如何影響命令專案和功能表，以及如何建立它們。  
   
-## <a name="commands-menus-groups-and-the-vsct-file"></a>命令、 功能表、 群組和.vsct 檔  
- .vsct 檔會組織周圍命令、 功能表和命令群組。 .Vsct 檔案中的 XML 標記代表每個這些項目，以及其他相關聯的項目，例如命令按鈕、 命令位置與點陣圖。  
+## <a name="commands-menus-groups-and-the-vsct-file"></a>命令、功能表、群組和 .vsct 檔案  
+ .vsct 檔案會根據命令、功能表和命令群組來組織。 .Vsct 檔案中的 XML 標記代表每一個專案，以及其他相關聯的專案，例如命令按鈕、命令位置和點陣圖。  
   
- 當您建立新的 VSPackage 執行[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]封裝範本，範本會產生.vsct 檔的必要項目與功能表命令、 工具視窗中，或自訂編輯器中，視您的選擇而定。 然後可以修改此.vsct 檔案，以符合特定 VSPackage 的需求。 如需如何修改.vsct 檔案的範例，請參閱中的範例[擴充的功能表和命令](../../extensibility/extending-menus-and-commands.md)。  
+ 當您藉由執行套件範本來建立新的 VSPackage 時 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ，範本會根據您的選取專案，使用功能表命令、工具視窗或自訂編輯器的必要元素來產生 .vsct 檔案。 然後您可以修改這個 .vsct 檔案，以符合特定 VSPackage 的需求。 如需如何修改 .vsct 檔的範例，請參閱 [擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)中的範例。  
   
- 若要建立新的空白.vsct 檔案時，請參閱[How to:建立。Vsct 檔案](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)。 建立之後，您加入 XML 項目、 屬性和值來描述命令項目配置的檔案。 詳細的 XML 結構描述，請參閱 < [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)。  
+ 若要建立新的空白 .vsct 檔案，請參閱 [如何：建立。.Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)檔案。 一旦建立之後，您可以將 XML 元素、屬性和值加入至檔案，以描述命令專案配置。 如需詳細的 XML 架構，請參閱 [.VSCT Xml 架構參考](../../extensibility/vsct-xml-schema-reference.md)。  
   
-## <a name="differences-between-ctc-and-vsct-files"></a>.Ctc 和.vsct 檔之間的差異  
- 雖然為中現在已被取代.ctc 檔格式.vsct 檔案中的 XML 標記背後的意義都是相同的其實作會有點不同。  
+## <a name="differences-between-ctc-and-vsct-files"></a>.Ctc 和. .vsct 檔案之間的差異  
+ 雖然 .vsct 檔案中的 XML 標記背後的意義與現在已被取代的 .ctc 檔案格式中的意義相同，但其執行方式有點不同。  
   
-- 新 **\<extern >** 標記是您用來參考其他的.h 檔案進行編譯，例如[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]工具列。  
+- 新 **\<extern>** 標記是您參考其他 .h 檔案的位置，例如工具列的檔案。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]  
   
-- 雖然.vsct 檔案支援 **/include**陳述式，.ctc 檔一樣，它也擁有全新\<**匯入 >** 項目。 差別在於**包含**帶入**所有**的資訊，但\<**匯入 >** 帶入只有名稱。  
+- .Vsct 檔案支援 **/include** 語句，如同 .ctc 檔一樣，它也會提供新的 \<**import> * * 元素功能。 差別在於， **/include** 會帶出 **所有** 資訊，但 \<**import> * * 只會帶入名稱。  
   
-- 雖然.ctc 檔需要您在其中定義您的前置處理器指示詞的標頭檔，其中一個不需要.vsct 檔案。 相反地，將您的指示詞放在符號表中，位於 **\<符號 >** 項目，位於.vsct 檔的底部。  
+- .Ctc 檔案需要您定義預處理器指示詞的標頭檔，而 .vsct 檔案則不需要。 相反地，請將您的指示詞放在位於 .vsct 檔案底部的元素中的符號表中 **\<Symbol>** 。  
   
-- .vsct 檔案功能 **\<註釋 >** 標記，可讓您內嵌任何您喜歡，例如資訊或甚至是圖片的資訊。  
+- .vsct 檔案是一個 **\<Annotation>** 標記，可讓您內嵌任何您想要的資訊，例如便箋或甚至是圖片。  
   
-- 值會儲存為項目上的屬性。  
+- 值會儲存為專案上的屬性。  
   
-- 可以儲存個別或堆疊命令旗標。  Intellisense，不過，不適用於堆疊的命令旗標。 如需有關命令旗標的詳細資訊，請參閱[Command Flag 元素](../../extensibility/command-flag-element.md)。  
+- 您可以個別或堆疊地儲存命令旗標。  不過，Intellisense 在堆疊的命令旗標上無法運作。 如需命令旗標的詳細資訊，請參閱 [命令旗標元素](../../extensibility/command-flag-element.md)。  
   
-- 您可以指定多個類型，例如分割下拉式清單、 combos 等等。  
+- 您可以指定多個類型，例如分割下拉清單、combos 等。  
   
-- 未驗證的 Guid。  
+- Guid 不會驗證。  
   
-- 每個 UI 項目具有與它所顯示的文字表示的字串。  
+- 每個 UI 元素都有一個字串，代表顯示的文字。  
   
-- 父代是選擇性的。 如果省略，則會使用 「 群組不明 」 的值。  
+- 父系是選擇性的。 如果省略，則會使用「群組不明」值。  
   
-- 圖示引數是選擇性的。  
+- Icon 引數是選擇性的。  
   
-- 檔案 [點陣圖] 區段-.ctc 相同，不同之處在於您現在可以指定檔案名稱，透過將 vsct.exe 編譯器提取，在編譯時期的 href。  
+- Bitmap 區段--與 .ctc 檔案相同，不同之處在于您現在可以透過 href 指定檔案名，以在編譯時期由 vsct.exe 編譯器提取。  
   
-- ResID-舊的點陣圖資源識別碼可用，而且仍然運作方式相同，如.ctc 檔所示。  
+- ResID--舊的點陣圖資源識別碼可以使用，而且仍可與 .ctc 檔案相同。  
   
-- HRef-新的方法，可讓您指定點陣圖資源的檔案名稱。 它會假設所有會使用，因此您可以略過使用的區段。 編譯器會先搜尋本機資源的檔案，然後在任何網路共用，以及/I 參數所定義的任何資源。  
+- HRef--可讓您為點陣圖資源指定檔案名的新方法。 它會假設全部都已使用，因此您可以省略使用的區段。 編譯器會先搜尋檔案的本機資源，然後在任何 net 共用上搜尋任何由/I 參數定義的資源。  
   
-- 按鍵繫結關係，您不必指定模擬器。 如果您指定其中一個，編譯器會假設編輯器和模擬器都相同。  
+- Keybinding--您不再需要指定模擬器。 如果您指定一個，則編譯器會假設編輯器和模擬器相同。  
   
-- 已經卸除 Keychord。 新的格式是 Key1、 Mod1、 Key2、 Mod2。  您可以指定字元、 十六進位或 VK 常數。  
+- Keychord--已卸載。 新的格式為 Key1、Mod1、Key2、Mod2。  您可以指定字元、十六進位或 VK 常數。  
   
-  新的編譯器、 vsct.exe，編譯.ctc 和.vsct 檔。 舊的 ctc.exe 編譯器，不過，將不辨識或編譯.vsct 檔。  
+  新的編譯器 vsct.exe 會編譯 .ctc 和 .vsct 檔案。 不過，舊的 ctc.exe 編譯器將不會辨識 .vsct 檔案，也不會進行編譯。  
   
-  您可以將現有的.cto 檔轉換成.vsct 檔使用 vsct.exe 編譯器所在。 如需詳細資訊，請參閱[How to:建立。從現有的 Vsct 檔案。Cto 檔案](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)。  
+  您可以使用 vsct.exe 編譯器，將現有的 cto 檔案轉換成 .vsct 檔案。 如需有關這個的詳細資訊，請參閱 [如何：建立。從現有的 .vsct 檔案。Cto](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)檔案。  
   
-## <a name="the-vsct-file-elements"></a>.Vsct 檔項目  
- 命令資料表具有下列階層和項目：  
+## <a name="the-vsct-file-elements"></a>.Vsct 檔案元素  
+ 命令資料表具有下列階層和元素：  
   
- [CommandTable 元素](../../extensibility/commandtable-element.md)— 表示所有的命令、 功能表群組和 VSPackage 相關聯的功能表。  
+ [CommandTable 元素](../../extensibility/commandtable-element.md) -表示與 VSPackage 相關聯的所有命令、功能表群組和功能表。  
   
- [Extern 元素](../../extensibility/extern-element.md)-參考任何您想要合併.vsct 檔的外部的.h 檔案。  
+ [Extern 元素](../../extensibility/extern-element.md) —參考任何您想要與 .vsct 檔案合併的外部 .h 檔案。  
   
- [包含項目](../../extensibility/include-element.md)-參考任何您想要編譯以及 your.vsct 檔案的其他標頭 (.h) 檔案。 .Vsct 檔可以包含.h 檔案包含定義命令、 功能表群組和功能表的 IDE 或另一個 VSPackage 提供的常數。  
+ [Include 元素](../../extensibility/include-element.md) —參考您要與 .vsct 檔案一起編譯的任何額外標頭 ( .h) 檔案。 .Vsct 檔案可以包含包含常數的 .h 檔案，以定義 IDE 或其他 VSPackage 提供的命令、功能表群組和功能表。  
   
- [命令元素](../../extensibility/commands-element.md)— 表示所有的個別可執行的命令。 每個命令有下列 4 個子元素：  
+ [命令元素](../../extensibility/commands-element.md) -代表所有可以執行的個別命令。 每個命令都有下列四個子項目：  
   
- [功能表項目](../../extensibility/menus-element.md)— 表示所有的功能表和工具列在 VSPackage 中的。 功能表是容器群組的命令。  
+ Menu[元素](../../extensibility/menus-element.md)—表示 VSPackage 中的所有功能表和工具列。 功能表是命令群組的容器。  
   
- [群組項目](../../extensibility/groups-element.md)— 代表所有在 VSPackage 中的群組。 群組為個別命令的集合。  
+ [Groups 元素](../../extensibility/groups-element.md) —表示 VSPackage 中的所有群組。 群組是個別命令的集合。  
   
- [按鈕項目](../../extensibility/buttons-element.md)— 表示的所有命令按鈕和功能表項目，在 VSPackage 中的。 按鈕是可以與命令相關聯的視覺控制項。  
+ [按鈕元素](../../extensibility/buttons-element.md) —表示 VSPackage 中的所有命令按鈕和功能表項目。 按鈕是可以與命令相關聯的視覺控制項。  
   
- [Bitmaps 元素](../../extensibility/bitmaps-element.md)— 表示所有為所有的按鈕，在 VSPackage 中的點陣圖。 點陣圖是顯示旁，或在 [命令] 按鈕，視內容而定的圖片。  
+ [點陣圖元素](../../extensibility/bitmaps-element.md) —表示 VSPackage 中所有按鈕的所有點陣圖。 點陣圖是在命令按鈕旁邊顯示的圖片，視內容而定。  
   
- [CommandPlacements 元素](../../extensibility/commandplacements-element.md)— 表示額外的位置，其中個別的命令應該要位於功能表的 VSPackage。  
+ [CommandPlacements 元素](../../extensibility/commandplacements-element.md) -表示個別命令應放置在 VSPackage 功能表中的其他位置。  
   
- [VisibilityConstraints 元素](../../extensibility/visibilityconstraints-element.md)-指定是否命令會顯示所有時間，或只在特定內容中，例如特定的對話方塊或視窗會顯示。 功能表和命令的值，這個項目會顯示指定的內容為作用中時，才。 預設行為是以隨時顯示命令。  
+ [VisibilityConstraints 元素](../../extensibility/visibilityconstraints-element.md) ：指定命令是否會在任何時間顯示，或只顯示在特定的內容中，例如當特定對話方塊或視窗顯示時。 只有當指定的內容為作用中時，才會顯示具有這個元素值的功能表和命令。 預設行為是隨時顯示命令。  
   
- [KeyBindings 元素](../../extensibility/keybindings-element.md)— 指定命令的任何索引鍵繫結。 也就是一或多個按鍵組合，必須執行的命令，例如按下**CTRL + S**。  
+ [Keybindings.json 元素](../../extensibility/keybindings-element.md) -指定命令的任何按鍵系結。 也就是說，必須按下一或多個按鍵組合，才能執行命令，例如 **CTRL + S**。  
   
- [UsedCommands 元素](../../extensibility/usedcommands-element.md)— Informs[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]環境雖然指定的命令由其他程式碼中，實作，使用目前的 VSPackage 時，它會提供命令的實作。  
+ [UsedCommands 元素](../../extensibility/usedcommands-element.md) ：告知 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 環境，雖然指定的命令是由其他程式碼執行，但當目前的 VSPackage 為使用中時，它會提供命令執行。  
   
- `Symbols Element` 包含的符號名稱和所有您在封裝中的命令的 GUID 識別碼。  
+ `Symbols Element` —包含封裝中所有命令的符號名稱和 GUID 識別碼。  
   
-## <a name="vsct-file-design-guidelines"></a>.Vsct 檔的設計指導方針  
- 若要成功設計.vsct 檔，請遵循這些指導方針。  
+## <a name="vsct-file-design-guidelines"></a>..Vsct 檔案設計指導方針  
+ 若要成功設計 .vsct 檔，請遵循這些指導方針。  
   
-- 命令可以放置群組中僅限、 群組只能置於功能表和功能表可以放置只在群組中。 只有功能表會實際顯示在 IDE 中，群組和命令不是。  
+- 命令只能放在群組中，群組只能放在功能表中，而且只能在群組中放入功能表。 IDE 中只會顯示功能表，不會實際顯示群組和命令。  
   
-- 子功能表不能直接指派至 功能表中，但必須指派給群組，依序指派給一個功能表。  
+- 子功能表無法直接指派給功能表，但必須指派給群組，然後再指派給功能表。  
   
-- 命令、 子功能表和群組，都可以指派給一個父群組或使用其定義的指示詞的父欄位的功能表。  
+- 您可以使用其定義指示詞的父欄位，將命令、子功能表和群組指派至一個父群組或功能表。  
   
-- 組織只會透過指示詞中的父欄位的命令資料表有相當大的限制。 定義物件的指示詞可以採用只有一個父引數。  
+- 只透過指示詞中的父欄位來組織命令資料表有很大的限制。 定義物件的指示詞只能採用一個父引數。  
   
-- 重複使用的命令、 群組或子功能表需要使用新的指示詞，以建立物件的新執行個體有其專屬`GUID:ID`組。  
+- 重複使用命令、群組或子功能表時，必須使用新的指示詞，以它自己的配對來建立物件的新實例 `GUID:ID` 。  
   
-- 每個`GUID:ID`組必須是唯一的。 重複使用的命令，例如放在功能表上，工具列，或在內容功能表上，由<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。  
+- 每個 `GUID:ID` 配對都必須是唯一的。 例如，重複使用已放在功能表、工具列或內容功能表上的命令，會由 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面處理。  
   
-- 命令和子功能表也可以指派多個群組，並使用多個功能表指派給群組[Commands 元素](../../extensibility/commands-element.md)。  
+- 您也可以將命令和子功能表指派給多個群組，並使用 [ [命令] 元素](../../extensibility/commands-element.md)將群組指派給多個功能表。  
   
-## <a name="vsct-file-notes"></a>.Vsct 檔案資訊  
- 如果同時進行編譯並將它放在原生的附屬 DLL 之後，您可以進行.vsct 檔的任何變更，您應該執行**devenv.exe /setup /nosetupvstemplates**。 執行此動作會強制在實驗性的登錄，以可重新讀取及描述的內部資料庫中指定的 VSPackage 資源[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]重建。  
+## <a name="vsct-file-notes"></a>..Vsct 檔案注意事項  
+ 如果您在編譯後對 .vsct 檔案進行任何變更，並將它放在原生附屬 DLL 中，則應該執行 **devenv.exe/setup/nosetupvstemplates**。 這麼做會強制將實驗登錄中指定的 VSPackage 資源重新讀取，以及描述要重建的內部資料庫 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。  
   
- 在開發期間，可能會建立並註冊在實驗登錄區可能會導致令人困惑的雜亂，在 IDE 中的多個 VSPackage 專案。 若要修正此問題，您可以將實驗登錄區重設的預設設定值，來移除所有已註冊的 Vspackage 和可能的 ide 所做的變更。 若要重設實驗登錄區，請使用 CreateExpInstance.exe 工具隨附於 Visual Studio SDK。 您可以找到在  
+ 在開發期間，有可能會在實驗登錄區中建立並註冊多個 VSPackage 專案，這可能會導致 IDE 中的雜亂混淆。 若要修正此問題，您可以將實驗性 hive 重設為預設值，以移除所有已註冊的 Vspackage 以及它們可能對 IDE 進行的任何變更。 若要重設實驗性 hive，請使用 Visual Studio SDK 隨附的 CreateExpInstance.exe 工具。 您可以在此找到  
   
- **%PROGRAMFILES(x86)%\Visual Studio \<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**  
+ **% PROGRAMFILES (x86) % \ Visual Studio \<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**  
   
- 使用命令列執行此工具**CreateExpInstance /Reset**。 請記住，此工具會移除從實驗登錄區通常不會安裝使用的所有已註冊的 Vspackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
+ 使用命令列 **CreateExpInstance/Reset**來執行工具。 請記住，此工具會從實驗性 hive 中移除所有未隨一般安裝的已註冊 Vspackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。  
   
 ## <a name="see-also"></a>另請參閱  
- [擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)
+ [延伸功能表和命令](../../extensibility/extending-menus-and-commands.md)

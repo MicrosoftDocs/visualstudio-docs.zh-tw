@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbol供應商::獲取下一個位址 |微軟文件
+title: IDebugSymbolProvider：： GetNextAddress |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9b314ab7006d6bbe65136451aeee6c5200cf7980
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719202"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
-獲取方法中給定調試位址後面的調試位址。
+取得在方法中指定的 debug 位址之後的偵錯工具位址。
 
 ## <a name="syntax"></a>語法
 
@@ -45,16 +45,16 @@ int GetNextAddress( 
 
 ## <a name="parameters"></a>參數
 `pAddress`\
-[在]給定的調試位址。
+在指定的 debug 位址。
 
 `fStatementOnly`\
-[在]如果為 TRUE,則將調試位址限制為單個語句。
+在若為 TRUE，則會將 debug 位址限制為單一語句。
 
 `ppAddress`\
-[出]返回下一個調試位址。
+擴展傳回下一個 debug 位址。
 
 ## <a name="return-value"></a>傳回值
- 返回有效的`HRESULT`,通常是S_OK。
+ 傳回有效的 `HRESULT` ，通常是 S_OK。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277838"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 程式碼片段
@@ -24,13 +24,13 @@ ms.locfileid: "77277838"
 
 ## <a name="insert-a-code-snippet"></a>插入程式碼片段
 
-要插入程式碼片段，請打開C++代碼檔 *（.cpp*或 *.h），* 按一下檔內的某處，然後執行以下操作之一：
+若要插入程式碼片段，請開啟 c + + 程式碼檔 (*.cpp* 或 *.H*) ，按一下檔案內的某個位置，然後執行下列其中一項：
 
 - 按一下滑鼠右鍵以取得操作功能表，然後選取 [插入程式碼片段]****
 
 - 在 [編輯/IntelliSense]**** 功能表中，選取 [插入程式碼片段]****
 
-- 使用熱鍵 **：Ctrl**+**K**+**X**
+- 使用**快速鍵： Ctrl** + **K** + **X**
 
 您應該會看到開頭為 **#if** 的選擇清單。 當您選取 [#if]**** 時，應該會看到下列程式碼已新增至檔案：
 
@@ -40,19 +40,19 @@ ms.locfileid: "77277838"
 #endif // 0
 ```
 
-然後，您可以將**0**替換為正確的條件。
+然後，您可以使用正確的條件來取代 **0** 。
 
 ## <a name="use-a-code-snippet-to-surround-selected-code"></a>使用程式碼片段圍繞已選取的程式碼
 
 若要使用程式碼片段來圍繞已選取的程式碼，請選取其中一行 (或多行)，然後執行下列其中一項動作：
 
-- 按右鍵可獲取內容功能表，然後選擇 **"環繞"與**
+- 以滑鼠右鍵按一下以取得內容功能表，**然後選取 [** 範圍語句]
 
-- 從 **"編輯** > **感知"** 功能表中，選擇 **"環繞"與**
+- 從 [**編輯**  >  **IntelliSense** ] 功能表中**Surround With** ，選取 [範圍語句]
 
-- 使用鍵盤，按 **：Ctrl**+**K**+**S**
+- 使用鍵盤，按下： **Ctrl** + **K** + **S**
 
-選取 [#if]****。 您應該會看到如下的結果：
+選取 [#if]****。 您應該會看到如下內容：
 
 ```cpp
 #if 0
@@ -115,7 +115,7 @@ private:
 
 共有三個不同的 **for** 程式碼片段，提供不同類型的 `for` 迴圈。
 
-**rfor**程式碼片段提供[基於範圍的](/cpp/cpp/range-based-for-statement-cpp)迴圈（連結）。 會優先使用此建構，而非索引式 `for` 迴圈。
+**Rfor**程式碼片段提供以[範圍為基礎](/cpp/cpp/range-based-for-statement-cpp)的 for 迴圈 (連結) 。 會優先使用此建構，而非索引式 `for` 迴圈。
 
 ```cpp
 for (auto& i : v)
@@ -124,7 +124,7 @@ for (auto& i : v)
 }
 ```
 
-**for**程式碼片段提供`for`一個迴圈，其中條件基於物件的長度（在`size_t`中）。
+**For**程式碼片段提供 `for` 迴圈，其中的條件是以物件) 中 (的長度為依據 `size_t` 。
 
 ```cpp
 for (size_t i = 0; i < length; i++)
@@ -133,7 +133,7 @@ for (size_t i = 0; i < length; i++)
 }
 ```
 
-**前位**程式碼片段提供一個`for`反向迴圈，其中條件基於物件的長度（整數）。
+**Forr**程式碼片段提供反向 `for` 迴圈，其中的條件是以物件的整數) 長度 (為基礎。
 
 ```cpp
 for (int i = length - 1; i >= 0; i--)
@@ -144,7 +144,7 @@ for (int i = length - 1; i >= 0; i--)
 
 ## <a name="the-destructor-snippet-"></a>解構函式程式碼片段 (~)
 
-析構函數程式碼片段**~**（ ） 顯示不同上下文中的不同行為。 如果您將此程式碼片段插入類別時，它會提供該類別的解構函式。 例如，假設有以下的程式碼：
+ () 的「函式」程式碼片段會 **~** 在不同的內容中顯示不同的行為。 如果您將此程式碼片段插入類別時，它會提供該類別的解構函式。 例如，假設有以下的程式碼：
 
 ```cpp
 class SomeClass {

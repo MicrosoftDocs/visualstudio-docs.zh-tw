@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba30f3ab75504c0115b8a881f2014910f3b9fd0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68177773"
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled 函式
@@ -48,7 +48,7 @@ HRESULT CvIsEnabledEx(
  重要性層級。  
   
  `pProvider`  
- 有效的提供者物件。 不可以是 NULL。  
+ 有效的提供者物件。 不能是 NULL。  
   
 ## <a name="return-value"></a>傳回值  
  如果提供者目前已啟用，傳回 S_OK。 如果提供者目前已停用，傳回 S_FALSE。 發生任何錯誤時傳回錯誤碼。 使用 FAILED 巨集可檢查是否有錯誤狀況，然後檢查是 S_OK/S_FALSE。  
@@ -57,4 +57,4 @@ HRESULT CvIsEnabledEx(
  **標頭︰** cvmarkers.h  
   
 ## <a name="see-also"></a>另請參閱  
- [C++ 程式庫參考](../profiling/cpp-library-reference.md)
+ [C + + 程式庫參考](../profiling/cpp-library-reference.md)

@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce7d30b66106b8d0d861fcf782a77ee7f461196b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532037"
 ---
 # <a name="memory-usage-without-debugging"></a>記憶體使用量 (不偵錯)
@@ -34,7 +34,7 @@ ms.locfileid: "85532037"
   
   本主題說明如何使用記憶體使用量工具，分析 Windows 通用 XAML 應用程式。 如果您想要對使用 JavaScript 和 HTML 的 Windows 通用應用程式分析記憶體使用情況，請參閱[分析記憶體使用量 (JavaScript)](https://msdn.microsoft.com/library/windows/apps/jj819176.aspx)。  
   
-## <a name="start-a-memory-usage-diagnostic-session"></a><a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a>啟動記憶體使用量診斷會話  
+## <a name="start-a-memory-usage-diagnostic-session"></a><a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> 啟動記憶體使用量診斷會話  
   
 1. 在 Visual Studio 中開啟 C# 通用 Windows 專案。  
   
@@ -44,7 +44,7 @@ ms.locfileid: "85532037"
   
      ![開始記憶體使用量診斷工作階段](../profiling/media/memuse-start-diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-## <a name="monitor-memory-use"></a><a name="BKMK_Monitor_memory_use"></a>監視記憶體使用量  
+## <a name="monitor-memory-use"></a><a name="BKMK_Monitor_memory_use"></a> 監視記憶體使用量  
  您可以使用 [記憶體使用量]**** 工具產生詳細報表，用來尋找和修正問題，也可以用來研究您正在積極開發之案例的即時記憶體效果。  
   
  當您開始診斷工作階段時，您的應用程式會啟動，且 [診斷工具]**** 視窗會顯示應用程式記憶體使用量的時間軸圖形。  
@@ -63,7 +63,7 @@ ms.locfileid: "85532037"
   
  若要收集快照，請開始新的診斷工作階段。 想要擷取記憶體資料時，選擇 [擷取快照]****。 若要產生報表，請選擇 [停止]****。  
   
-## <a name="memory-usage-overview-page"></a><a name="BKMK_Memory_Usage_overview_page"></a>記憶體使用量總覽頁面  
+## <a name="memory-usage-overview-page"></a><a name="BKMK_Memory_Usage_overview_page"></a> 記憶體使用量總覽頁面  
  停止資料收集之後，[記憶體使用量] 工具會停止應用程式，並顯示概觀報表。  
   
  ![記憶體使用量概觀頁面](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
@@ -79,7 +79,7 @@ ms.locfileid: "85532037"
   
   在快照檢視的圖片中，有編號的項目是開啟 [記憶體使用量] 報表檢視的連結。  
   
-|映像|描述|  
+|Image|說明|  
 |-|-|  
 |![步驟 1](../profiling/media/procguid-1.png "ProcGuid_1")|連結文字顯示在擷取快照時，記憶體中的總位元組數。<br /><br /> 選擇這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的大小總計進行排序。|  
 |![步驟 2](../profiling/media/procguid-2.png "ProcGuid_2")|連結文字顯示擷取快照時記憶體中的總物件數。<br /><br /> 選擇這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的計數進行排序。|  
@@ -94,7 +94,7 @@ ms.locfileid: "85532037"
 #### <a name="managed-heap"></a><a name="BKMK_Managed_Heap"></a>Managed 堆積  
  Managed 堆積樹狀目錄 [Managed 堆積樹狀目錄 (快照詳細資料)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_details_) 和 [Managed 堆積樹狀目錄 (快照差異)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_diff_) 會在報表中顯示類型和執行個體。 選取類型或執行個體會顯示選取項目的 [根的路徑]**** 和 [參考的物件]**** 樹狀目錄。  
   
-#### <a name="paths-to-root"></a><a name="BKMK_Paths_to_Root"></a>根的路徑  
+#### <a name="paths-to-root"></a><a name="BKMK_Paths_to_Root"></a> 根目錄的路徑  
  [根的路徑樹狀目錄 (快照詳細資料)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_details_) 和[根的路徑樹狀目錄 (快照差異)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_diff_) 會顯示參考類型或執行個體的物件鏈結。 .NET Framework 記憶體回收行程只會在對物件的所有參考都已釋放時才清除物件的記憶體。  
   
 #### <a name="referenced-objects"></a><a name="BKMK_Referenced_Objects"></a>參考的物件  
@@ -112,13 +112,13 @@ ms.locfileid: "85532037"
   
  ![排序和篩選選項](../profiling/media/memuse-sortandfilter.png "MEMUSE_SortAndFilter")  
   
-#### <a name="filter"></a><a name="BKMK_Filter"></a>出  
+#### <a name="filter"></a><a name="BKMK_Filter"></a> 濾波器  
  在 [篩選條件]**** 方塊中輸入字串，將樹狀目錄顯示限制在包含指定文字的類型。 篩選條件不會區分大小寫，且它會辨識類型名稱任何部分中的指定字串。  
   
 #### <a name="collapse-small-objects"></a><a name="BKMK_Collapse_Small_Objects"></a>摺疊小物件  
  套用此篩選條件時，[大小 (位元組)]**** 小於快照記憶體大小總計 0.5% 的類型，會在 [Managed 堆積]**** 清單中隱藏。  
   
-#### <a name="just-my-code"></a><a name="BKMK_Just_My_Code"></a>Just My Code  
+#### <a name="just-my-code"></a><a name="BKMK_Just_My_Code"></a> Just My Code  
  [Just My Code]**** 篩選條件會隱藏由外部程式碼所產生的大多數執行個體。 外部類型是由作業系統或 Framework 元件所擁有，或者由編輯器產生。  
   
 ## <a name="snapshot-details-reports"></a><a name="BKMK_Snapshot_details_reports"></a>快照詳細資料報表  
@@ -128,18 +128,18 @@ ms.locfileid: "85532037"
   
 - [MB]**** 連結會依據 [內含大小 (位元組)]**** 欄來排序報表。  
   
-- [**物件**] 連結會依據 [**計數**] 資料行來排序報表。  
+- [ **物件** ] 連結會依據 [ **計數** ] 資料行來排序報表。  
   
 ### <a name="managed-heap-tree-snapshot-details"></a><a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a>Managed 堆積樹狀目錄 (快照詳細資料)  
  [Managed 堆積]**** 樹狀目錄會列出保留在記憶體中的物件類型。 您可以展開類型名稱，檢視依大小排序的前十大類型執行個體。 選取類型或執行個體會顯示選取項目的 [根的路徑]**** 和 [參考的物件]**** 樹狀目錄。  
   
  ![Managed 堆積樹狀](../profiling/media/memuse-snapshotdetails-managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
   
-|名稱|描述|  
+|Name|說明|  
 |-|-|  
 |**物件類型**|類型或物件執行個體的名稱。|  
 |**Count**|類型的物件執行個體數目。 一個執行個體的數目一律為 1。|  
-|**大小（位元組）**|對於類型，此為記憶體快照中，類型的所有執行個體大小，但排除執行個體中包含的物件大小。<br /><br /> 對於執行個體、類型，此為物件的大小，但排除執行個體中包含的物件大小。 執行個體。|  
+|** (位元組大小) **|對於類型，此為記憶體快照中，類型的所有執行個體大小，但排除執行個體中包含的物件大小。<br /><br /> 對於執行個體、類型，此為物件的大小，但排除執行個體中包含的物件大小。 執行個體。|  
 |**內含大小 (位元組)**|類型執行個體的大小，或是單一執行個體的大小，且包括所包含物件的大小。|  
   
 ### <a name="paths-to-root-tree-snapshot-details"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a>根的路徑樹狀目錄 (快照詳細資料)  
@@ -154,10 +154,10 @@ ms.locfileid: "85532037"
   
  ![執行個體的參考物件樹狀](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|名稱|描述|  
+|Name|說明|  
 |-|-|  
 |**物件類型 / 執行個體**|類型或物件執行個體的名稱。|  
-|**大小（位元組）**|對於類型，此為類型的所有執行個體大小，但排除類型中包含的物件大小。<br /><br /> 對於執行個體，此為物件的大小，但排除物件中包含的物件大小。|  
+|** (位元組大小) **|對於類型，此為類型的所有執行個體大小，但排除類型中包含的物件大小。<br /><br /> 對於執行個體，此為物件的大小，但排除物件中包含的物件大小。|  
 |**內含大小 (位元組)**|類型執行個體的大小總計，或是執行個體的大小，且包括所包含物件的大小。|  
   
 ## <a name="snapshot-difference-diff-reports"></a><a name="BKMK_Snapshot_difference__diff__reports"></a>快照差異 (diff) 報表  
@@ -167,7 +167,7 @@ ms.locfileid: "85532037"
   
 - [MB]**** 連結會依據 [內含大小 (位元組)]**** 欄來排序報表。  
   
-- [**物件**] 連結會依據 [**計數**] 資料行來排序報表。  
+- [ **物件** ] 連結會依據 [ **計數** ] 資料行來排序報表。  
   
 ### <a name="managed-heap-tree-snapshot-diff"></a><a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a>Managed 堆積樹狀目錄 (快照差異)  
  [Managed 堆積]**** 樹狀目錄會列出保留在記憶體中的物件類型。 您可以展開類型名稱，檢視依大小排序的前十大類型執行個體。 選取類型或執行個體會顯示選取項目的 [根的路徑]**** 和 [參考的物件]**** 樹狀目錄。  
@@ -176,12 +176,12 @@ ms.locfileid: "85532037"
   
  請注意，圖片中已摺疊 [計數]****、[大小 (位元組)]**** 和 [內含大小 (位元組)]**** 欄。  
   
-|名稱|描述|  
+|Name|說明|  
 |-|-|  
 |**物件類型**|類型或物件執行個體的名稱。|  
-|**Count**|主要快照中類型的執行個體數目。 實例的 [**計數**] 一律為1。|  
+|**Count**|主要快照中類型的執行個體數目。 實例的**計數**一律為1。|  
 |**計數差異**|對於類型，此為主要快照和上一個快照中的類型執行個體數目差異。 執行個體的欄位空白。|  
-|**大小（位元組）**|主要快照中的物件大小，但排除物件中包含的物件大小。 對於類型，[大小 (位元組)]**** 和 [內含大小 (位元組)]**** 是類型執行個體的大小總計。|  
+|** (位元組大小) **|主要快照中的物件大小，但排除物件中包含的物件大小。 對於類型，[大小 (位元組)]**** 和 [內含大小 (位元組)]**** 是類型執行個體的大小總計。|  
 |**總大小差異 (位元組)**|對於類型，此為主要快照與上一個快照之間，類型的執行個體大小總計，但排除執行個體中包含的物件大小。 執行個體的欄位空白。|  
 |**內含大小 (位元組)**|主要快照中的物件大小，包括物件中包含的物件大小。|  
 |**內含大小差異 (位元組)**|對於類型，此為主要快照與上一個快照之間，類型的所有執行個體大小差異，包括物件中包含的物件大小。 執行個體的欄位空白。|  
@@ -196,15 +196,15 @@ ms.locfileid: "85532037"
   
  ![執行個體的參考物件樹狀](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|名稱|描述|  
+|Name|說明|  
 |-|-|  
 |**物件類型 / 執行個體**|類型或物件執行個體的名稱。|  
-|**大小（位元組）**|對於執行個體，此為主要快照中的物件大小，但排除執行個體中包含的物件大小。<br /><br /> 對於類型，此為主要快照中，類型的執行個體大小總計，但排除執行個體中包含的物件大小。|  
+|** (位元組大小) **|對於執行個體，此為主要快照中的物件大小，但排除執行個體中包含的物件大小。<br /><br /> 對於類型，此為主要快照中，類型的執行個體大小總計，但排除執行個體中包含的物件大小。|  
 |**內含大小 (位元組)**|主要快照中的物件大小，包括物件中包含的物件大小。|  
   
 ## <a name="see-also"></a>另請參閱  
  [JavaScript 記憶體](../profiling/javascript-memory.md)   
  [分析應用程式效能](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
- [執行效能及診斷工具](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
- [使用 c + +、c # 和 Visual Basic 之 Windows Store 應用程式的效能最佳作法](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [執行效能和診斷工具](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
+ [使用 c + +、c # 和 Visual Basic 的 Windows Store 應用程式的效能最佳作法](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [使用 Visual Studio 中的新記憶體使用量工具來診斷記憶體問題](https://devblogs.microsoft.com/devops/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio/)

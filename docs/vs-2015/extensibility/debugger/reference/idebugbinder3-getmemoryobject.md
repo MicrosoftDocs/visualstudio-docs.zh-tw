@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetMemoryObject |Microsoft Docs
+title: IDebugBinder3：： GetMemoryObject |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0019b1691cb36b9d23be546cdfdb0e061779647d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193031"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個方法會擷取表示這個物件會繫結至記憶體的記憶體物件。  
+這個方法會抓取代表這個物件所系結之記憶體的記憶體物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,16 +44,16 @@ int GetMemoryObject(
   
 #### <a name="parameters"></a>參數  
  `pField`  
- [in]指定要取得的記憶體物件的欄位。  
+ 在指定要取得記憶體物件的欄位。  
   
  `uConstant`  
- [in]代表記憶體位址或常數值的值。  
+ 在代表常數值的記憶體位址或值。  
   
  `ppObject`  
- [out][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示此物件的繫結至的記憶體。  
+ 擴展代表此物件所系結之記憶體的 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   

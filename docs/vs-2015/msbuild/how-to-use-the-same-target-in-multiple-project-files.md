@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d388d32b288e47a7e92f5d0f727230ffa00a2621
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178318"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>如何：使用多個專案檔內相同的目標
@@ -37,7 +37,7 @@ ms.locfileid: "68178318"
   
 3. 在 `Import` 元素之後，定義必須覆寫所匯入專案中預設屬性和項目定義的所有屬性和項目。  
   
-## <a name="order-of-evaluation"></a>評估的順序  
+## <a name="order-of-evaluation"></a>評估順序  
  當 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 到達 `Import` 元素時，會將所匯入之專案有效地插入到匯入端專案中 `Import` 元素的位置。 因此，`Import` 元素的位置會影響屬性和項目的值。 請務必了解所匯入之專案所設定的屬性和項目，以及所匯入之專案所使用的屬性和項目。  
   
  在組建專案時，會先評估所有屬性，然後才評估項目。 例如，下列 XML 定義了所匯入的專案檔 MyCommon.targets：  
@@ -115,5 +115,5 @@ ms.locfileid: "68178318"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md)   
+ [ (MSBuild) 匯入元素 ](../msbuild/import-element-msbuild.md)   
  [目標](../msbuild/msbuild-targets.md)

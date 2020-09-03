@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c04ef8f015b081e29891d7439b783e3851376210
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531544"
 ---
 # <a name="shortcut-keys-help-viewer"></a>快速鍵 (說明檢視器)
@@ -82,9 +82,9 @@ ms.locfileid: "85531544"
 |檢視器選項|Alt + H|將焦點變更至 [儲存的記錄項目上限]**** 清單。|
 |檢視器選項|Alt + E|選取或清除 [將英文內容包含在所有巡覽索引標籤和 F1 要求中]**** 核取方塊 (若啟用的話)。|
 |檢視器選項|Alt + O|選取或清除 [連線檢查內容更新]**** 核取方塊。|
-|尋找|Enter|將焦點變更至下一個項目。|
-|尋找|Shift + Enter|將焦點變更至前一個項目。|
-|尋找|Esc|隱藏 [尋找]**** 文字方塊。|
+|Find|Enter|將焦點變更至下一個項目。|
+|Find|Shift + Enter|將焦點變更至前一個項目。|
+|Find|Esc|隱藏 [尋找]**** 文字方塊。|
 |狀態列|Alt + E|在狀態列顯示錯誤發生時，開啟 [錯誤]**** 對話方塊。|
 |狀態列|Alt + U|在狀態列顯示更新可供使用時，下載內容。|
 
@@ -104,7 +104,7 @@ ms.locfileid: "85531544"
 |Alt + D|將安裝來源變更為磁碟。|
 |Alt + O|將安裝來源變更為線上。|
 |索引標籤|將焦點變更至 [本機存放區路徑]**** 文字方塊。|
-|索引標籤|將焦點變更到**移動 ...** 按鈕。|
+|索引標籤|將焦點變更到 **移動 ...** 按鈕。|
 |Alt + V|開啟 [移動內容]**** 對話方塊。|
 |Ctrl + Alt + F|將焦點變更至 [篩選文件]**** 文字方塊。|
 |索引標籤|將焦點變更至文件清單。|

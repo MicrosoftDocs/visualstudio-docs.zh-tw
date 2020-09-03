@@ -1,5 +1,5 @@
 ---
-title: '&lt;InstallChecks &gt; 元素（啟動載入器） |Microsoft Docs'
+title: '&lt;啟動載入器 &gt;)  (InstallChecks 元素 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,16 +17,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e78f3c1174d2a288a9ffc432f0206aed4956fe8f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531816"
 ---
-# <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks &gt; 元素（啟動載入器）
+# <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;啟動載入器 &gt;)  (InstallChecks 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`InstallChecks`元素支援對本機電腦啟動各種測試，以確保已安裝應用程式的所有適當必要條件。  
+`InstallChecks`元素支援針對本機電腦啟動各種測試，以確保已安裝應用程式的所有適當必要條件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -73,81 +73,81 @@ ms.locfileid: "85531816"
 ```  
   
 ## <a name="assemblycheck"></a>AssemblyCheck  
- 這個元素是的選擇性子項目 `InstallChecks` 。 對於的每個實例，啟動載入器 `AssemblyCheck` 會確保專案所識別的元件存在於全域組件快取（GAC）中。 它不包含任何元素，而且具有下列屬性。  
+ 這個元素是的選擇性子項目 `InstallChecks` 。 針對的每個實例，啟動載入器將確保專案所 `AssemblyCheck` 識別的元件存在於全域組件快取 (GAC) 中。 它不包含任何元素，而且具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Property`|必要。 要儲存結果的屬性名稱。 這個屬性可以從專案底下的測試參考 `InstallConditions` ，這是元素的子系 `Command` 。 如需詳細資訊，請參閱[ \<Commands> 元素](../deployment/commands-element-bootstrapper.md)。|  
+|`Property`|必要。 要儲存結果的屬性名稱。 這個屬性可以從專案下的測試參考 `InstallConditions` ，也就是專案的子系 `Command` 。 如需詳細資訊，請參閱[ \<Commands> 元素](../deployment/commands-element-bootstrapper.md)。|  
 |`Name`|必要。 要檢查之元件的完整名稱。|  
-|`PublicKeyToken`|必要。 與這個強式名稱元件相關聯之公開金鑰的縮寫格式。 儲存在 GAC 中的所有元件都必須有名稱、版本和公開金鑰。|  
-|`Version`|必要。 組件的版本。<br /><br /> 版本號碼的格式為 \<*major version*> ... \<*minor version*> \<*build version*> \<*revision version*> 。|  
-|`Language`|選擇性。 當地語系化元件的語言。 預設值為 `neutral`。|  
-|`ProcessorArchitecture`|選擇性。 此安裝的目的電腦處理器。 預設值為 `msil`。|  
+|`PublicKeyToken`|必要。 與此強式名稱元件相關聯之公開金鑰的縮寫形式。 儲存在 GAC 中的所有元件都必須具有名稱、版本和公開金鑰。|  
+|`Version`|必要。 組件的版本。<br /><br /> 版本號碼的格式 ...。 \<*major version*> \<*minor version*> \<*build version*> \<*revision version*>|  
+|`Language`|選擇性。 當地語系化元件的語言。 預設為 `neutral`。|  
+|`ProcessorArchitecture`|選擇性。 此安裝的目的電腦處理器。 預設為 `msil`。|  
   
 ## <a name="externalcheck"></a>ExternalCheck  
- 這個元素是的選擇性子項目 `InstallChecks` 。 對於的每個實例，啟動載入器 `ExternalCheck` 將會在個別的進程中執行已命名的外部程式，並將其結束代碼儲存在所指示的屬性中 `Property` 。 `ExternalCheck`適用于執行複雜的相依性檢查，或當檢查元件是否存在的唯一方法是將它具現化。  
+ 這個元素是的選擇性子項目 `InstallChecks` 。 針對的每個實例，啟動載入器 `ExternalCheck` 會在個別的進程中執行命名的外部程式，並將它的結束代碼儲存在所指示的屬性中 `Property` 。 `ExternalCheck` 適用于執行複雜的相依性檢查，或檢查元件是否存在的唯一方法是將它具現化。  
   
- `ExternalCheck`不包含任何元素，且具有下列屬性。  
+ `ExternalCheck` 未包含任何元素，而且具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Property`|必要。 要儲存結果的屬性名稱。 這個屬性可以從專案底下的測試參考 `InstallConditions` ，這是元素的子系 `Command` 。 如需詳細資訊，請參閱[ \<Commands> 元素](../deployment/commands-element-bootstrapper.md)。|  
-|`PackageFile`|必要。 要執行的外部程式。 程式必須是安裝散發套件的一部分。|  
+|`Property`|必要。 要儲存結果的屬性名稱。 這個屬性可以從專案下的測試參考 `InstallConditions` ，也就是專案的子系 `Command` 。 如需詳細資訊，請參閱[ \<Commands> 元素](../deployment/commands-element-bootstrapper.md)。|  
+|`PackageFile`|必要。 要執行的外部程式。 程式必須是安裝程式散發套件的一部分。|  
 |`Arguments`|選擇性。 提供命令列引數給所命名的可執行檔 `PackageFile` 。|  
   
 ## <a name="filecheck"></a>FileCheck  
- 這個元素是的選擇性子項目 `InstallChecks` 。 對於的每個實例，啟動載入器 `FileCheck` 會判斷指定的檔案是否存在，並傳回檔案的版本號碼。 如果檔案沒有版本號碼，啟動載入器會將名為的屬性設定 `Property` 為0。 如果檔案不存在， `Property` 則不會設定為任何值。  
+ 這個元素是的選擇性子項目 `InstallChecks` 。 針對的每個實例，啟動載入器 `FileCheck` 會判斷指定的檔案是否存在，並傳回檔案的版本號碼。 如果檔案沒有版本號碼，啟動載入器會將名為的屬性設定 `Property` 為0。 如果檔案不存在， `Property` 則不會設定為任何值。  
   
- `FileCheck`不包含任何元素，且具有下列屬性。  
+ `FileCheck` 未包含任何元素，而且具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Property`|必要。 要儲存結果的屬性名稱。 這個屬性可以從專案底下的測試參考 `InstallConditions` ，這是元素的子系 `Command` 。 如需詳細資訊，請參閱[ \<Commands> 元素](../deployment/commands-element-bootstrapper.md)。|  
+|`Property`|必要。 要儲存結果的屬性名稱。 這個屬性可以從專案下的測試參考 `InstallConditions` ，也就是專案的子系 `Command` 。 如需詳細資訊，請參閱[ \<Commands> 元素](../deployment/commands-element-bootstrapper.md)。|  
 |`FileName`|必要。 要尋找的檔案名。|  
-|`SearchPath`|必要。 要在其中尋找檔案的磁片或資料夾。 如果已指派，這必須是相對路徑 `SpecialFolder` ，否則必須是絕對路徑。|  
-|`SpecialFolder`|選擇性。 具有特殊重要性的資料夾，可以是 Windows 或 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 。 預設值是將解讀 `SearchPath` 為絕對路徑。 有效值如下：<br /><br /> `AppDataFolder`. 此應用程式的 [應用程式資料] 資料夾 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ; 專屬於目前的使用者。<br /><br /> `CommonAppDataFolder`. 所有使用者所使用的應用程式資料檔案夾。<br /><br /> `CommonFilesFolder`. 目前使用者的一般檔案資料夾。<br /><br /> `LocalDataAppFolder`. 非漫遊應用程式的 data 資料夾。<br /><br /> `ProgramFilesFolder`. 32位應用程式的 standard Program Files 資料夾。<br /><br /> `StartUpFolder`. 包含在系統啟動時啟動之所有應用程式的資料夾。<br /><br /> `SystemFolder`. 包含32位系統 Dll 的資料夾。<br /><br /> `WindowsFolder`. 包含 Windows 系統安裝的資料夾。<br /><br /> `WindowsVolume`. 包含 Windows 系統安裝的磁片磁碟機或磁碟分割。|  
-|`SearchDepth`|選擇性。 要在其中搜尋指定檔案之子資料夾的深度。 搜尋是深度優先。 預設值為0，這會將搜尋限制為和 SearchPath 所指定的最上層資料夾 `SpecialFolder` 。 **SearchPath**|  
+|`SearchPath`|必要。 要在其中尋找檔案的磁片或資料夾。 如果已指派，這必須是相對路徑 `SpecialFolder` ; 否則，它必須是絕對路徑。|  
+|`SpecialFolder`|選擇性。 對 Windows 或而言具有特殊意義的資料夾 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 。 預設值是解讀為 `SearchPath` 絕對路徑。 有效值如下：<br /><br /> `AppDataFolder`. 此應用程式的應用程式資料夾，專 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 屬於目前的使用者。<br /><br /> `CommonAppDataFolder`. 所有使用者所使用的應用程式資料檔案夾。<br /><br /> `CommonFilesFolder`. 目前使用者的 Common Files 資料夾。<br /><br /> `LocalDataAppFolder`. 非漫遊應用程式的 [資料] 資料夾。<br /><br /> `ProgramFilesFolder`. 32位應用程式的標準 [Program Files] 資料夾。<br /><br /> `StartUpFolder`. 此資料夾包含在系統啟動時啟動的所有應用程式。<br /><br /> `SystemFolder`. 包含32位系統 Dll 的資料夾。<br /><br /> `WindowsFolder`. 包含 Windows 系統安裝的資料夾。<br /><br /> `WindowsVolume`. 包含 Windows 系統安裝的磁片磁碟機或磁碟分割。|  
+|`SearchDepth`|選擇性。 要在其中搜尋指定檔案之子資料夾的深度。 搜尋是深度優先。 預設值為0，這會將搜尋限制為由和 SearchPath 指定的最上層資料夾 `SpecialFolder` 。 **SearchPath**|  
   
 ## <a name="msiproductcheck"></a>MsiProductCheck  
- 這個元素是的選擇性子項目 `InstallChecks` 。 對於的每個實例，啟動載入器 `MsiProductCheck` 會檢查指定的 Microsoft Windows Installer 安裝是否已執行，直到完成為止。 屬性值會根據該已安裝產品的狀態進行設定。 正數值表示已安裝產品，0或-1 表示未安裝。 （如需詳細資訊，請參閱 Windows Installer SDK 函數 MsiQueryFeatureState）。. 如果 Windows Installer 未安裝在電腦上， `Property` 則不會設定。  
+ 這個元素是的選擇性子項目 `InstallChecks` 。 針對的每個實例，啟動載入器 `MsiProductCheck` 會先檢查指定的 Microsoft Windows Installer 安裝是否已執行，直到完成為止。 屬性值會根據所安裝產品的狀態進行設定。 正值表示已安裝產品，0或-1 表示未安裝。  (如需詳細資訊，請參閱 Windows Installer SDK 函數 MsiQueryFeatureState。 ) 。 如果電腦上未安裝 Windows Installer， `Property` 則不會設定。  
   
- `MsiProductCheck`不包含任何元素，且具有下列屬性。  
+ `MsiProductCheck` 未包含任何元素，而且具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Property`|必要。 要儲存結果的屬性名稱。 這個屬性可以從專案底下的測試參考 `InstallConditions` ，這是元素的子系 `Command` 。 如需詳細資訊，請參閱[ \<Commands> 元素](../deployment/commands-element-bootstrapper.md)。|  
+|`Property`|必要。 要儲存結果的屬性名稱。 這個屬性可以從專案下的測試參考 `InstallConditions` ，也就是專案的子系 `Command` 。 如需詳細資訊，請參閱[ \<Commands> 元素](../deployment/commands-element-bootstrapper.md)。|  
 |`Product`|必要。 已安裝產品的 GUID。|  
 |`Feature`|選擇性。 已安裝應用程式之特定功能的 GUID。|  
   
 ## <a name="registrycheck"></a>RegistryCheck  
- 這個元素是的選擇性子項目 `InstallChecks` 。 對於的每個實例，啟動載入器會 `RegistryCheck` 檢查指定的登錄機碼是否存在，或是否具有指示的值。  
+ 這個元素是的選擇性子項目 `InstallChecks` 。 針對的每個實例，啟動載入器會 `RegistryCheck` 檢查指定的登錄機碼是否存在，或是否有指定的值。  
   
- `RegistryCheck`不包含任何元素，且具有下列屬性。  
+ `RegistryCheck` 未包含任何元素，而且具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Property`|必要。 要儲存結果的屬性名稱。 這個屬性可以從專案底下的測試參考 `InstallConditions` ，這是元素的子系 `Command` 。 如需詳細資訊，請參閱[ \<Commands> 元素](../deployment/commands-element-bootstrapper.md)。|  
+|`Property`|必要。 要儲存結果的屬性名稱。 這個屬性可以從專案下的測試參考 `InstallConditions` ，也就是專案的子系 `Command` 。 如需詳細資訊，請參閱[ \<Commands> 元素](../deployment/commands-element-bootstrapper.md)。|  
 |`Key`|必要。 登錄機碼的名稱。|  
-|`Value`|選擇性。 要取出的登錄值名稱。 預設為傳回預設值的文字。 `Value`必須是字串或 DWORD。|  
+|`Value`|選擇性。 要取出的登錄值名稱。 預設值是傳回預設值的文字。 `Value` 必須是字串或 DWORD。|  
   
 ## <a name="registryfilecheck"></a>RegistryFileCheck  
- 這個元素是的選擇性子項目 `InstallChecks` 。 對於的每個實例，啟動載入器會先嘗試從指定的登錄機碼抓取檔案的路徑，以取得指定檔案的 `RegistryFileCheck` 版本。 如果您想要在登錄中指定為值的目錄中查閱檔案，這會特別有用。  
+ 這個元素是的選擇性子項目 `InstallChecks` 。 針對的每個實例，啟動載入器會 `RegistryFileCheck` 先嘗試從指定的登錄機碼取出檔案的路徑，以抓取指定檔案的版本。 如果您想要在指定為登錄中值的目錄中查詢檔案，這會特別有用。  
   
- `RegistryFileCheck`不包含任何元素，且具有下列屬性。  
+ `RegistryFileCheck` 未包含任何元素，而且具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Property`|必要。 要儲存結果的屬性名稱。 這個屬性可以從專案底下的測試參考 `InstallConditions` ，這是元素的子系 `Command` 。 如需詳細資訊，請參閱[ \<Commands> 元素](../deployment/commands-element-bootstrapper.md)。|  
-|`Key`|必要。 登錄機碼的名稱。 除非設定了屬性，否則它的值會解讀為檔案的路徑 `File` 。 如果此機碼不存在， `Property` 則不會設定。|  
-|`Value`|選擇性。 要取出的登錄值名稱。 預設為傳回預設值的文字。 `Value`必須是字串。|  
-|`FileName`|選擇性。 檔案名。 如果指定，則會假設從登錄機碼取得的值是目錄路徑，並將此名稱附加至其中。 如果未指定，則會假設從登錄傳回的值是檔案的完整路徑。|  
+|`Property`|必要。 要儲存結果的屬性名稱。 這個屬性可以從專案下的測試參考 `InstallConditions` ，也就是專案的子系 `Command` 。 如需詳細資訊，請參閱[ \<Commands> 元素](../deployment/commands-element-bootstrapper.md)。|  
+|`Key`|必要。 登錄機碼的名稱。 除非已設定屬性，否則它的值會被解釋為檔案的路徑 `File` 。 如果此機碼不存在， `Property` 則不會設定。|  
+|`Value`|選擇性。 要取出的登錄值名稱。 預設值是傳回預設值的文字。 `Value` 必須是字串。|  
+|`FileName`|選擇性。 檔案名。 如果指定，則會假設從登錄機碼取得的值是目錄路徑，並將此名稱附加至該路徑。 如果未指定，則會假設從登錄傳回的值為檔案的完整路徑。|  
 |`SearchDepth`|選擇性。 要在其中搜尋指定檔案之子資料夾的深度。 搜尋是深度優先。 預設值為0，這會將搜尋限制為登錄機碼值所指定的最上層資料夾。|  
   
 ## <a name="remarks"></a>備註  
- 雖然下的元素會 `InstallChecks` 定義要執行的測試，但它們不會執行它們。 若要執行測試，您必須在專案 `Command` 底下建立元素 `Commands` 。  
+ 當下的元素 `InstallChecks` 定義要執行的測試時，不會執行這些測試。 若要執行測試，您必須在專案 `Command` 底下建立元素 `Commands` 。  
   
 ## <a name="example"></a>範例  
- 下列程式碼範例將示範在的 `InstallChecks` 產品檔案中使用的元素 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 。  
+ 下列程式碼範例將示範在的 `InstallChecks` 產品檔中使用的元素 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 。  
   
 ```  
 <InstallChecks>  
@@ -157,25 +157,25 @@ ms.locfileid: "85531816"
 ```  
   
 ## <a name="installconditions"></a>InstallConditions  
- 當 `InstallChecks` 評估時，它們會產生屬性。 然後會使用這些屬性 `InstallConditions` 來判斷封裝是否應該安裝、略過或失敗。 下表列出 `InstallConditions` ：  
+ 當 `InstallChecks` 評估時，它們會產生屬性。 然後，會使用屬性 `InstallConditions` 來判斷封裝是否應該安裝、略過或失敗。 下表列出 `InstallConditions` ：  
   
-|名稱|描述|
+|Name|說明|
 |-|-|  
-|`FailIf`|如果有任何 `FailIf` 條件評估為 true，封裝將會失敗。 不會評估其餘的條件。|  
-|`BypassIf`|如果有任何 `BypassIf` 條件評估為 true，則會略過此封裝。 不會評估其餘的條件。|  
+|`FailIf`|如果任何 `FailIf` 條件評估為 true，則封裝會失敗。 其餘的條件將不會進行評估。|  
+|`BypassIf`|如果有任何 `BypassIf` 條件評估為 true，則會略過封裝。 其餘的條件將不會進行評估。|  
   
 ## <a name="predefined-properties"></a>預先定義的屬性  
  下表列出 `BypassIf` 和 `FailIf` 元素：  
   
-|屬性|注意|可能的值|  
+|屬性|附註|可能的值|  
 |--------------|-----------|---------------------|  
 |`Version9X`|Windows 9X 作業系統的版本號碼。|4.10 = Windows 98|  
-|`VersionNT`|以 Windows NT 為基礎的作業系統版本號碼。|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|  
-|`VersionNT64`|64位 Windows NT 作業系統的版本號碼。|與先前所述相同。|  
+|`VersionNT`|以 Windows NT 為基礎之作業系統的版本號碼。|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|  
+|`VersionNT64`|以64位 Windows NT 為基礎之作業系統的版本號碼。|如同稍早所述。|  
 |`VersionMsi`|Windows Installer 服務的版本號碼。|2.0 = Windows Installer 2。0|  
-|`AdminUser`|指定使用者是否具有 Windows NT 作業系統的系統管理員許可權。|0 = 無系統管理員許可權<br /><br /> 1 = 系統管理員許可權|  
+|`AdminUser`|指定使用者是否擁有以 Windows NT 為基礎之作業系統的系統管理員許可權。|0 = 無系統管理員許可權<br /><br /> 1 = 系統管理員許可權|  
   
- 例如，若要在執行 Windows 95 的電腦上封鎖安裝，請使用如下的程式碼：  
+ 例如，若要在執行 Windows 95 的電腦上封鎖安裝，請使用如下所示的程式碼：  
   
 ```  
 <!-- Block install on Windows 95 -->  
@@ -183,5 +183,5 @@ ms.locfileid: "85531816"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [\<Commands>元素](../deployment/commands-element-bootstrapper.md)   
+ [\<Commands> 元素](../deployment/commands-element-bootstrapper.md)   
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)

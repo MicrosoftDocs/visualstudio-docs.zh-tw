@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa9fc04df3e817730492353e54d74c1e46c3775e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589795"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>使用 3D 資產來打造遊戲和應用程式
@@ -35,7 +35,7 @@ DirectX 應用程式通常會結合程式設計邏輯、DirectX API 和高階著
 
 ### <a name="3d-models"></a>3D 模型
 
-3D 模型會在遊戲和應用程式中建立空間和圖形。 最小，模型對 3D 空間中的點的位置（稱為*頂點*）進行編碼，並結合索引資料來定義表示模型形狀的線或三角形。 其他資料可以與這些頂點建立關聯；例如，色彩資訊、標準向量或應用程式特定屬性。 每個模型也可以定義整個物件屬性；例如，使用哪一個著色器來計算物件介面的外觀，或要套用的紋理。
+3D 模型會在遊戲和應用程式中建立空間和圖形。 通常，模型會將資料點在3D 空間中的位置（稱為 *頂點*）編碼，並將資料編制索引，以定義代表模型圖形的線條或三角形。 其他資料可以與這些頂點建立關聯；例如，色彩資訊、標準向量或應用程式特定屬性。 每個模型也可以定義整個物件屬性；例如，使用哪一個著色器來計算物件介面的外觀，或要套用的紋理。
 
 您可以使用 Visual Studio 模型編輯器來處理數種常見格式的 3D 模型。
 
@@ -46,17 +46,17 @@ DirectX 應用程式通常會結合程式設計邏輯、DirectX API 和高階著
 您可以使用 Visual Studio 著色器設計工具 (即圖形式著色器設計工具) 來建立自訂視覺效果，而不需要知道 HLSL 程式設計。
 
 > [!NOTE]
-> 如需如何開始 DirectX 程式設計的詳細資訊，請參閱 [DirectX](/windows/win32/directx)。 有關如何調試基於 DirectX 的應用的詳細資訊，請參閱[圖形診斷（調試 DirectX 圖形）。](../debugger/graphics/visual-studio-graphics-diagnostics.md)
+> 如需如何開始 DirectX 程式設計的詳細資訊，請參閱 [DirectX](/windows/win32/directx)。 如需有關如何將 DirectX 應用程式進行偵錯工具的詳細資訊，請參閱 [圖形診斷 (偵測 directx 圖形) ](../debugger/graphics/visual-studio-graphics-diagnostics.md)。
 
 ## <a name="directx-version-compatibility"></a>DirectX 版本相容性
 
-Visual Studio 使用 DirectX 轉譯 2D 和 3D 資產。 您可以選取 DirectX 11 轉譯器或 Windows Advanced Rasterization Platform (WARP) 軟體轉譯器。 DirectX 11 轉譯器對 DirectX 11 和 DirectX 10 GPU 提供高效能硬體加速呈現轉譯。 WARP 轉譯器有助於確定您的資產適用於各種不同的電腦，包含未配備現代化圖形硬體的電腦，以及具有整合式圖形硬體的電腦。 有關 WARP 的詳細資訊，請參閱[Windows 高級柵格平臺 （WARP） 指南](/windows/win32/direct3darticles/directx-warp)。
+Visual Studio 使用 DirectX 轉譯 2D 和 3D 資產。 您可以選取 DirectX 11 轉譯器或 Windows Advanced Rasterization Platform (WARP) 軟體轉譯器。 DirectX 11 轉譯器對 DirectX 11 和 DirectX 10 GPU 提供高效能硬體加速呈現轉譯。 WARP 轉譯器有助於確定您的資產適用於各種不同的電腦，包含未配備現代化圖形硬體的電腦，以及具有整合式圖形硬體的電腦。 如需有關變形的詳細資訊，請參閱 [Windows Advanced 點陣化平臺 (變形) 指南](/windows/win32/direct3darticles/directx-warp)。
 
 ## <a name="related-topics"></a>相關主題
 
-|Title|描述|
+|標題|說明|
 |-----------|-----------------|
-|[使用紋理和圖像](../designers/working-with-textures-and-images.md)|描述如何使用 Visual Studio 來使用影像和紋理。|
-|[使用 3D 模型](../designers/working-with-3-d-models.md)|描述如何使用 Visual Studio 來使用 3D 模型。|
-|[使用掃描器](../designers/working-with-shaders.md)|描述如何使用 Visual Studio 著色器設計工具來建立和修改自訂著色器效果。|
-|[在遊戲或應用中使用 3D 資源](../designers/using-3-d-assets-in-your-game-or-app.md)|描述如何在遊戲或應用程式中使用資產，而資產是使用影像編輯器、模型編輯器或著色器設計工具所建立。|
+|[使用紋理和影像](../designers/working-with-textures-and-images.md)|描述如何使用 Visual Studio 來使用影像和紋理。|
+|[使用3D 模型](../designers/working-with-3-d-models.md)|描述如何使用 Visual Studio 來使用 3D 模型。|
+|[使用著色器](../designers/working-with-shaders.md)|描述如何使用 Visual Studio 著色器設計工具來建立和修改自訂著色器效果。|
+|[在遊戲或應用程式中使用3D 資產](../designers/using-3-d-assets-in-your-game-or-app.md)|描述如何在遊戲或應用程式中使用資產，而資產是使用影像編輯器、模型編輯器或著色器設計工具所建立。|

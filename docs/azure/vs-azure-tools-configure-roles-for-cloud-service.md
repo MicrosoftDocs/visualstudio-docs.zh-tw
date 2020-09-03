@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 6f05f97155427d75b88bb509a6bfb09644d8c686
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250848"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>使用 Visual Studio 設定 Azure 雲端服務角色
@@ -21,7 +21,7 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
 您的雲端服務資訊儲存在下列檔案中：
 
-- **ServiceDefinition** -服務定義檔會定義雲端服務的執行時間設定，包括需要哪些角色、端點和虛擬機器大小。 當您的角色正在執行時，不可以變更儲存在 `ServiceDefinition.csdef` 中的任何資料。
+- **ServiceDefinition** ：服務定義檔可定義雲端服務的執行時間設定，包括需要哪些角色、端點和虛擬機器大小。 當您的角色正在執行時，不可以變更儲存在 `ServiceDefinition.csdef` 中的任何資料。
 - **ServiceConfiguration.cscfg** - 服務組態檔可設定一個角色可以執行的執行個體數目，以及為角色定義的設定值。 當您的角色正在執行時，可以變更儲存在 `ServiceConfiguration.cscfg` 中的資料。
 
 若要為可控制角色執行方式的設定儲存不同的值，您可以定義多個服務組態。 您可以將不同的服務組態用於每個部署環境。 例如，您可以設定儲存體帳戶連接字串，在本機服務組態中使用本機 Azure 儲存體模擬器，並建立另一個服務組態，在雲端中使用 Azure 儲存體。
@@ -72,7 +72,7 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
     ![更新執行個體計數](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-instance-count.png)
 
-1. 從 [Visual Studio] 工具列，選取 [ **儲存**]。
+1. 從 Visual Studio 的工具列中，選取 [ **儲存**]。
 
 ## <a name="manage-connection-strings-for-storage-accounts"></a>管理儲存體帳戶的連接字串
 您可以新增、移除或修改服務組態的連接字串。 例如，針對具有 `UseDevelopmentStorage=true`值的本機服務組態，您可能想要本機連接字串。 您也能也會想要設定在 Azure 中使用儲存體帳戶的雲端服務組態。
@@ -112,13 +112,13 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
 1. 在 [建立儲存體連接字串]**** 對話方塊中，針對 [連接方式]**** 選取一個選項。 針對您選取的選項依照指示操作：
 
-    - **Microsoft Azure 儲存體模擬器** -如果您選取此選項，對話方塊上的其餘設定會停用，因為它們僅適用于 Azure。 選取 [確定]。
+    - **Microsoft Azure 儲存體模擬器** -如果您選取此選項，對話方塊上的其餘設定會停用，因為它們只適用于 Azure。 選取 [確定]。
     - **您的訂用帳戶** - 如果您選取此選項，請使用下拉式清單來選取並登入 Microsoft 帳戶，或新增 Microsoft 帳戶。 選取 Azure 訂用帳戶和儲存體帳戶。 選取 [確定]。
-    - **手動輸入的認證** - 輸入儲存體帳戶名稱，以及主要或次要金鑰。 針對大部分案例，請選取 [ **連線 (HTTPS] 的選項** 。 ) 選取 **[確定]**。
+    - **手動輸入的認證** - 輸入儲存體帳戶名稱，以及主要或次要金鑰。 針對大部分的案例，請選取 [ **連線 (HTTPS** 的選項。 ) 選取 **[確定]**。
 
 1. 若要刪除連接字串，請選取連接字串，然後選取 [移除設定]****。
 
-1. 從 [Visual Studio] 工具列，選取 [ **儲存**]。
+1. 從 Visual Studio 的工具列中，選取 [ **儲存**]。
 
 ## <a name="programmatically-access-a-connection-string"></a>以程式設計方式存取連接字串
 
@@ -174,7 +174,7 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
 1. 若要刪除自訂設定，請選取設定，然後選取 [移除設定]****。
 
-1. 從 [Visual Studio] 工具列，選取 [ **儲存**]。
+1. 從 Visual Studio 的工具列中，選取 [ **儲存**]。
 
 ## <a name="programmatically-access-a-custom-settings-value"></a>以程式設計方式存取自訂設定的值
 
@@ -225,7 +225,7 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
 1. 若要刪除本機儲存體項目，請選取此項目，然後選取 [移除本機儲存體]****。
 
-1. 從 [Visual Studio] 工具列，選取 [ **儲存**]。
+1. 從 Visual Studio 的工具列中，選取 [ **儲存**]。
 
 ## <a name="programmatically-accessing-local-storage"></a>以程式設計方式存取本機儲存體
 

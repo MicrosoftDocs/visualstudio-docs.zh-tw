@@ -1,5 +1,5 @@
 ---
-title: SccClose專案功能 |微軟文件
+title: SccCloseProject 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 71df385bc0cf42c2437abfd117c2f84bda5b5432
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701053"
 ---
-# <a name="scccloseproject-function"></a>SccClose 專案功能
-此函數關閉項目,標誌著特定會話的結束。
+# <a name="scccloseproject-function"></a>SccCloseProject 函式
+此函式會關閉專案，並標示特定會話的結尾。
 
 ## <a name="syntax"></a>語法
 
@@ -31,22 +31,22 @@ SCCRTN SccCloseProject (
 ```
 
 ### <a name="parameters"></a>參數
- pvContext 原始程式碼管理外掛程式上下文結構。
+ pvCoNtext 原始檔控制外掛程式內容結構。
 
 ## <a name="return-value"></a>傳回值
- 此函數的源碼管理外掛程式實現應返回以下值之一:
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：
 
 |值|描述|
 |-----------|-----------------|
 |SCC_OK|專案已成功關閉。|
-|SCC_E_PROJNOTOPEN|當前未打開任何專案。|
-|SCC_E_NOTAUTHORIZED|不允許使用者執行此操作。|
-|SCC_E_NONSPECIFICERROR|非特異性故障。|
+|SCC_E_PROJNOTOPEN|目前未開啟任何專案。|
+|SCC_E_NOTAUTHORIZED|不允許使用者執行這項操作。|
+|SCC_E_NONSPECIFICERROR|模糊失敗。|
 
 ## <a name="remarks"></a>備註
- 在此函數之前始終調用[SccOpenProject。](../extensibility/sccopenproject-function.md) 然後調用此函數後,調用`SccOpenProject`函數或[SccUn 初始化](../extensibility/sccuninitialize-function.md),從而完全結束與原始程式碼管理系統的連接。
+ [SccOpenProject](../extensibility/sccopenproject-function.md)一律會在此函式之前呼叫。 接著呼叫這個函式，接著呼叫函式 `SccOpenProject` 或 [SccUninitialize](../extensibility/sccuninitialize-function.md)，以完全結束與原始檔控制系統的連接。
 
 ## <a name="see-also"></a>另請參閱
-- [原始程式碼管理外掛程式 API 功能](../extensibility/source-control-plug-in-api-functions.md)
+- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)

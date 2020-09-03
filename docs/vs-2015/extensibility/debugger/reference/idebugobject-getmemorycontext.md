@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetMemoryContext |Microsoft Docs
+title: IDebugObject：： GetMemoryCoNtext |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5e69e5a77e93df2d338eb7d2e7114129ea9ac8d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162455"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得代表物件的值的位址的記憶體內容。  
+取得表示物件值之位址的記憶體內容。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,13 +40,13 @@ int GetMemoryContext(
   
 #### <a name="parameters"></a>參數  
  `pContext`  
- [out]傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，表示物件的值的位址。  
+ 擴展傳回 [IDebugMemoryCoNtext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 物件，代表物件值的位址。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 傳回的記憶體內容會指定值的位址，表示這個[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件。  
+ 傳回的記憶體內容會指定這個 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 物件所表示之值的位址。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

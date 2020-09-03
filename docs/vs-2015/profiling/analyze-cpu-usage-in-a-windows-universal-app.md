@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: def581f547db19a8db4cebc4d63739ff09bb5fab
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531660"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>分析 Windows 通用 App 中的 CPU 使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-適用于 Windows 和 Windows Phone] （.。/Image/windows_and_phone_content.png "windows_and_phone_content"）  
+適用于 Windows 和 Windows Phone] (。/Image/windows_and_phone_content.png "windows_and_phone_content" )   
   
- 當您需要調查應用程式的效能問題時，了解應用程式如何使用 CPU 是不錯的起點。 [CPU 使用量] **** 工具顯示 CPU 花時間執行程式碼的地方。 若要將焦點放在特定案例，可以在單一診斷會話中使用[XAML UI 回應](https://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480)性工具、 [cpu 使用量工具](../profiling/cpu-usage.md)工具或這兩種工具來執行 cpu 使用量。  
+ 當您需要調查應用程式的效能問題時，了解應用程式如何使用 CPU 是不錯的起點。 [CPU 使用量] **** 工具顯示 CPU 花時間執行程式碼的地方。 若要將焦點放在特定案例中，您可以使用 [XAML UI 回應](https://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) 性工具、 [cpu 使用量工具](../profiling/cpu-usage.md) ，或在單一診斷會話中，使用這兩種工具來執行 cpu 使用率。  
   
 > [!NOTE]
 > **CPU 使用量**工具不得與 Windows Phone Silverlight 8.1 應用程式搭配使用。  
@@ -45,7 +45,7 @@ ms.locfileid: "85531660"
   
 3. 以[此程式碼](#BKMK_MainPage_xaml_cs)取代 MainPage.xaml.cs。  
   
-4. 建立應用程式並立即試用。應用程式很簡單，足以顯示一些常見的 CPU 使用量資料分析案例。  
+4. 建立應用程式並立即試用。應用程式很簡單，可顯示 CPU 使用量資料分析的一些常見案例。  
   
 ## <a name="collect-cpu-usage-data"></a><a name="BKMK_Collect_CPU_usage_data"></a> 收集 CPU 使用量資料  
  ![在模擬器中執行應用程式的發行組建](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
@@ -56,7 +56,7 @@ ms.locfileid: "85531660"
   
    - 在 [Release (發行)]**** 模式中執行此應用程式，可讓您更適當地檢視應用程式的實際效能。  
   
-2. 在 [**調試**] 功能表上，選擇 [**效能**分析工具]。  
+2. 在 [ **調試** ] 功能表上，選擇 [ **效能分析工具**]。  
   
 3. 在效能與診斷中樞中，選擇 [CPU Usage (CPU 使用量)]****，然後選擇 [Start (開始)]****。  
   
@@ -88,7 +88,7 @@ ms.locfileid: "85531660"
   
  現在，選取 `GetMaxNumberAsyncButton_Click` 區段。  
   
- ![GetMaxNumberAsyncButton&#95;按一下 [報表選取專案]](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
+ ![GetMaxNumberAsyncButton&#95;按一下報表選取專案](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
   
  此方法完成的速度大約比 `GetMaxNumberButton_Click` 快 1 秒，但是呼叫樹狀圖項目的意義較不明顯。  
   
@@ -98,14 +98,14 @@ ms.locfileid: "85531660"
 #### <a name="call-tree-structure"></a><a name="BKMK_Call_tree_structure"></a> 呼叫樹狀圖結構  
  ![GetMaxNumberButton&#95;按一下呼叫樹狀結構](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
-|映像|描述|  
+|Image|描述|  
 |-|-|  
 |![步驟 1](../profiling/media/procguid-1.png "ProcGuid_1")|CPU 使用量呼叫樹狀圖中的最上層節點是虛擬節點|  
 |![步驟 2](../profiling/media/procguid-2.png "ProcGuid_2")|在大部分的應用程式中，停用 [顯示外部程式碼] **** 選項時，第二層節點是一個含有系統和 Framework 程式碼的 [外部程式碼] **** 節點，而系統和 Framework 程式碼會啟動和停止應用程式、繪製 UI、控制執行緒排程，以及提供應用程式的其他低階服務。|  
 |![步驟 3](../profiling/media/procguid-3.png "ProcGuid_3")|第二層節點的子系是第二層系統和 Framework 程式碼所呼叫或建立的使用者程式碼方法和非同步常式。|  
 |![步驟4](../profiling/media/procguid-4.png "ProcGuid_4")|某個方法的子節點只包含父系方法呼叫的資料。 停用 [顯示外部程式碼] **** 時，應用程式方法也可包含 [外部程式碼] **** 節點。|  
   
-#### <a name="external-code"></a><a name="BKMK_External_Code"></a>外部程式碼  
+#### <a name="external-code"></a><a name="BKMK_External_Code"></a> 外部程式碼  
  外部程式碼包含在系統和架構元件中由您撰寫之程式碼所執行的函式。 外部程式碼包含啟動和停止應用程式、繪製 UI、控制執行緒，以及將其他低階服務提供給應用程式的函式。 在大多數情況下，您對外部程式碼並不感興趣，因此 [CPU 使用量] 呼叫樹狀圖會將使用者方法的外部函式，收集成一個 [外部程式碼] **** 節點。  
   
  當您想要檢視外部程式碼的呼叫路徑時，請從 [篩選檢視] **** 清單中選擇 [顯示外部程式碼] **** ，然後選擇 [套用] ****。  
@@ -135,7 +135,7 @@ ms.locfileid: "85531660"
   
  若要在範例中查看此情況，請重新選取時間軸中的 `GetMaxNumberAsyncButton_Click` 區段。  
   
- ![GetMaxNumberAsyncButton&#95;按一下 [報表選取專案]](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
+ ![GetMaxNumberAsyncButton&#95;按一下報表選取專案](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
   
  [外部程式碼] **** 下的前兩個節點是狀態機器類別之編譯器產生的方法。 第三個節點是原始方法的呼叫。 展開產生的方法可顯示正在進行的作業。  
   
@@ -156,7 +156,7 @@ ms.locfileid: "85531660"
   
      在診斷和效能中樞中建立新的工作階段，並加入 XAML UI 回應性工具和 CPU 使用量工具。 執行收集案例。 如果您閱讀到此，報告可能未告訴您任何尚未了解的內容，除了兩種方法的 [UI 執行緒使用率]**** 時間軸圖形差異十分驚人以外。 在複雜的實際應用程式中，合併使用這些工具會十分有用。  
   
-## <a name="mainpagexaml"></a><a name="BKMK_MainPage_xaml"></a>MainPage .xaml  
+## <a name="mainpagexaml"></a><a name="BKMK_MainPage_xaml"></a> MainPage .xaml  
   
 ```csharp  
 <Page  
@@ -191,7 +191,7 @@ ms.locfileid: "85531660"
   
 ```  
   
-## <a name="mainpagexamlcs"></a><a name="BKMK_MainPage_xaml_cs"></a>MainPage.xaml.cs  
+## <a name="mainpagexamlcs"></a><a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
   
 ```csharp  
 using System;  

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7762e67b1676f72030cae8d958bef19c501660c3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545817"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>如何：調整 NamedRange 控制項的大小
@@ -36,7 +36,7 @@ ms.locfileid: "85545817"
 
 - [在 VSTO 增益集專案中，于執行時間調整 NamedRange 控制項的大小](#runtimeaddin)
 
-## <a name="resize-namedrange-controls-at-design-time"></a><a name="designtime"></a>在設計階段調整 NamedRange 控制項的大小
+## <a name="resize-namedrange-controls-at-design-time"></a><a name="designtime"></a> 在設計階段調整 NamedRange 控制項的大小
  您可以在 [定義名稱] **** 對話方塊中重新定義已命名範圍的大小，以調整其大小。
 
 ### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>若要使用 [定義名稱] 對話方塊調整已命名範圍的大小
@@ -53,9 +53,9 @@ ms.locfileid: "85545817"
 
 5. 選取您要用於定義已命名範圍大小的儲存格。
 
-6. 按一下 [確定] 。
+6. 按一下 [確定]  。
 
-## <a name="resize-namedrange-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>在檔層級專案中，于執行時間調整 NamedRange 控制項的大小
+## <a name="resize-namedrange-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> 在檔層級專案中，于執行時間調整 NamedRange 控制項的大小
  您可以使用 <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> 屬性，以程式設計方式調整已命名範圍的大小。
 
 > [!NOTE]
@@ -73,8 +73,8 @@ ms.locfileid: "85545817"
      [!code-csharp[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]
 
-## <a name="resize-namedrange-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>在 VSTO 增益集專案中，于執行時間調整 NamedRange 控制項的大小
- 您可以在執行階段調整任何開啟之工作表上 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項的大小。 如需如何 <xref:Microsoft.Office.Tools.Excel.NamedRange> 使用 VSTO 增益集將控制項加入工作表的詳細資訊，請參閱[如何：將 NamedRange 控制項加入至工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)。
+## <a name="resize-namedrange-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> 在 VSTO 增益集專案中，于執行時間調整 NamedRange 控制項的大小
+ 您可以在執行階段調整任何開啟之工作表上 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項的大小。 如需如何 <xref:Microsoft.Office.Tools.Excel.NamedRange> 使用 VSTO 增益集將控制項加入工作表的詳細資訊，請參閱 [如何：將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)。
 
 ### <a name="to-resize-a-named-range-programmatically"></a>若要以程式的方式調整已命名範圍的大小
 
@@ -90,7 +90,7 @@ ms.locfileid: "85545817"
 
 ## <a name="see-also"></a>另請參閱
 - [在 VSTO 增益集的執行時間中擴充 Word 檔和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
-- [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [在執行時間將控制項新增至 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Office 檔上的控制項](../vsto/controls-on-office-documents.md)
 - [主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md)
 - [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)

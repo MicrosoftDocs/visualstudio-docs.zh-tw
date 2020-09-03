@@ -8,10 +8,10 @@ ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
 ms.openlocfilehash: 33d00d853c7496e23cb5cd97a0b9abbe05e3accc
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950587"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>連線到 Team Foundation 版本控制
@@ -21,7 +21,7 @@ ms.locfileid: "85950587"
 >
 > 如果您之前使用的是 Visual Studio for Mac 的 TFVC 延伸模組預覽版本，當您升級至 Visual Studio 2019 for Mac 後即不再支援。
 
-Azure Repos 提供兩種版本控制模型： [Git](/azure/devops/repos/git/?view=azure-devops)、分散式版本控制系統，以及[Team Foundation 版本控制](/azure/devops/repos/tfvc/index?view=azure-devops)（TFVC），這是集中式版本控制系統。
+Azure Repos 提供兩種版本控制模型： [Git](/azure/devops/repos/git/?view=azure-devops)、分散式版本控制系統，以及 [Team Foundation 版本控制](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC) ，也就是集中式版本控制系統。
 
 Visual Studio for Mac 提供對 Git 存放庫的完整支援，但需要一些的因應措施才能使用 TFVC。 如果您今天使用 TFVC 進行版本控制，可以使用以下解決方案來存取 TFVC 中裝載的原始程式碼：
 
@@ -31,7 +31,7 @@ Visual Studio for Mac 提供對 Git 存放庫的完整支援，但需要一些�
 
 本文的其餘部分會向您逐步介紹以上所列的選項。
 
-## <a name="requirements"></a>規格需求
+## <a name="requirements"></a>需求
 
 * Visual Studio Community、Professional 或 Enterprise for Mac 7.8 版及更新版本。
 * Azure DevOps Services、Team Foundation Server 2013 及更新版本，或 Azure DevOps Server 2018 及更新版本。
@@ -125,7 +125,7 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 
 ### <a name="updating-the-extension"></a>更新延伸模組
 
-TFVC 延伸模組的更新會定期進行。 若要存取更新，請從功能表選擇 [ **Visual Studio > 延伸 ...** ]，然後選取 [**更新**] 索引標籤。選取清單中的延伸模組，然後按 [**更新**] 按鈕：
+TFVC 延伸模組的更新會定期進行。 若要存取更新，請從功能表中選擇 [ **Visual Studio > 擴充功能 ...** ]，然後選取 [ **更新** ] 索引標籤。選取清單中的延伸模組，然後按下 [ **更新** ] 按鈕：
 
 在下一個對話方塊上按 [安裝]****，以解除安裝舊套件並安裝新套件。
 
