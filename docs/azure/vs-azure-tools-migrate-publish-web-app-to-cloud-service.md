@@ -10,25 +10,25 @@ ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
 ms.openlocfilehash: c95c96815872c259cab761d8b4af36141f866dbd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280553"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>如何：從 Visual Studio 遷移 web 應用程式並將其發佈至 Azure 雲端服務
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>如何：從 Visual Studio 將 web 應用程式遷移和發佈至 Azure 雲端服務
 
 若要利用 Azure 的主機服務和延展性，您可以將 Web 應用程式移轉並部署至 Azure 雲端服務。 僅需要最低程度的變更。 本文僅涵蓋至雲端服務的部署，關於 App Service 的部分，請參閱[在 Azure App Service 中部署 Web 應用程式](/azure/app-service/app-service-deploy-local-git)。
 
 > [!Important]
-> 只有特定的 ASP.NET、WCF 及 WCF 工作流程專案支援此遷移。 ASP.NET Core 專案不支援。 請參閱[支援的專案範本](#supported-project-templates)。
+> 只有特定 ASP.NET、WCF 和 WCF 工作流程專案支援此遷移。 ASP.NET Core 專案不支援。 請參閱[支援的專案範本](#supported-project-templates)。
 
 ## <a name="migrate-a-project-to-cloud-services"></a>將專案移轉至雲端服務
 
-1. 以滑鼠右鍵按一下方案節點，然後選取 [**新增] > 新專案 ...** ]，並將新的**Azure 雲端服務（傳統）** 專案新增至現有的方案。
-1. 在 [**新增 Microsoft Azure 雲端服務（傳統）** ] 對話方塊中，按一下 [確定]，而不將任何角色新增至專案。
-1. 以滑鼠右鍵按一下新加入的雲端服務專案底下的 [角色] 節點，然後選取 [**在方案中新增 Web 角色專案 ...**]。
-1. 在 [**與角色專案關聯**] 對話方塊中，選取您想要與 web 角色建立關聯的專案。
+1. 以滑鼠右鍵按一下方案節點，然後選取 [ **新增 > 新增專案** ]，並將新的 **Azure 雲端服務 (傳統) ** 專案加入至現有的方案。
+1. 在 [ **新的 Microsoft Azure 雲端服務 (傳統) ** ] 對話方塊中，按一下 [確定]，而不將任何角色新增至專案。
+1. 以滑鼠右鍵按一下新增的雲端服務專案底下的 [角色] 節點，然後選取 [ **在方案中新增 Web 角色專案**]。
+1. 在 [ **與角色專案建立關聯** ] 對話方塊中，選取您要與 web 角色建立關聯的專案。
 
    > [!Important]
    > 如果此 Web 應用程式有其他必要組件或檔案，您必須手動設定這些檔案的屬性。 如需如何設定這些屬性的資訊，請參閱[將檔案包含在服務封裝內](vs-azure-tools-publishing-a-cloud-service.md#include-files-in-the-service-package)。

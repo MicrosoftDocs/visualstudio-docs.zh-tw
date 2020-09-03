@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPortSuppliers2 | Microsoft Docs
+title: IEnumDebugPortSuppliers2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f8ed12c0ba9c6263968c51a7e8cfcdfe2fe47011
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179158"
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此介面列舉連接埠提供者。  
+此介面會列舉埠供應商。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,32 +30,32 @@ ms.locfileid: "68179158"
 IEnumDebugPortSuppliers2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- Visual Studio 會實作這個介面來代表一份連接埠提供者。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ Visual Studio 會執行此介面來代表埠供應商的清單。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 呼叫[EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)取得一份連接埠提供者。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 呼叫 [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md) 來取得埠供應商的清單。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IEnumDebugPortSuppliers2`。  
+ 下表顯示的方法 `IEnumDebugPortSuppliers2` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[下一個](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md)|擷取指定的數目的列舉順序中的連接埠提供者。|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-skip.md)|略過指定的數目的列舉順序中的連接埠提供者。|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-reset.md)|將列舉型別序列重設到開頭。|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-clone.md)|建立列舉值，包含目前的列舉值相同的列舉型別狀態。|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-getcount.md)|取得列舉值中的連接埠供應商的數目。|  
+|[下一個](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md)|以列舉順序抓取指定的埠供應商數目。|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-skip.md)|略過列舉序列中指定的埠供應商數目。|  
+|[重設](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-reset.md)|將列舉順序重設為開頭。|  
+|[複製](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-getcount.md)|取得枚舉器中的埠供應商數目。|  
   
 ## <a name="remarks"></a>備註  
- 偵錯引擎通常不需要取得此介面。  
+ Debug engine 通常不需要取得這個介面。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

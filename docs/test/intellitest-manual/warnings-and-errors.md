@@ -10,17 +10,17 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77275446"
 ---
 # <a name="warnings-and-errors"></a>警告和錯誤
 
 ## <a name="warnings-and-errors-by-category"></a>警告與錯誤分類
 
-* **邊界**
+* **界限**
   * [超過 MaxBranches](#maxbranches-exceeded)
   * [超過 MaxConstraintSolverTime](#maxconstraintsolvertime-exceeded)
   * [超過 MaxConditions](#maxconditions-exceeded)
@@ -30,27 +30,27 @@ ms.locfileid: "77275446"
   * [超過 MaxRunsWithoutNewTests](#maxrunswithoutnewtests-exceeded)
 
 * **限制式求解**
-  * [無法具體化解決方案](#cannot-concretize-solution)
+  * [無法將實體化方案](#cannot-concretize-solution)
 
-* **域或運行時**
-  * [需要幫助構造物件](#help-construct)
-  * [需要幫助查找類型](#help-types)
-  * [已猜到的可用類型](#usable-type-guessed)
+* **網域或執行時間**
+  * [需要協助來建立物件](#help-construct)
+  * [需要協助以尋找類型](#help-types)
+  * [猜測的可用類型](#usable-type-guessed)
 
 * **執行**
-  * [勘探過程中的意外故障](#unexpected-exploration)
+  * [探索期間發生非預期的失敗](#unexpected-exploration)
   * [TargetInvocationException](#targetinvocationexception)
 
 * **儀錶**
-  * [未檢測方法調用](#uninstrumented-method-called)
-  * [外部方法調用](#external-method-called)
-  * [調用的不可檢測方法](#uninstrumentable-method-called)
+  * [呼叫的未經檢測方法](#uninstrumented-method-called)
+  * [呼叫的外部方法](#external-method-called)
+  * [呼叫的了無法檢測方法](#uninstrumentable-method-called)
   * [可測試性問題](#testability-issue)
   * [限制](#limitation)
 
 * **解譯器**
-  * [觀察到的呼叫不匹配](#observed-call-mismatch)
-  * [存儲在靜態欄位中的值](#value-static-field)
+  * [觀察到的呼叫不相符](#observed-call-mismatch)
+  * [儲存在靜態欄位中的值](#value-static-field)
 
 <a name="maxbranches-exceeded"></a>
 ## <a name="maxbranches-exceeded"></a>超過 MaxBranches
@@ -99,7 +99,7 @@ IntelliTest 會限制在[輸入產生](input-generation.md)期間探索之任何
 
 每個與[參數化單元測試](test-generation.md#parameterized-unit-testing)輸入相依的條件式分支都會計入這項限制。
 
-例如，以下代碼中的每個路徑都使用**n+1**條件：
+例如，下列程式碼中的每個路徑都會使用 **n + 1** 個條件：
 
 ```csharp
 [PexMethod]
@@ -254,7 +254,7 @@ IntelliTest 會為所有 .NET 類型[產生測試輸入](input-generation.md)。
 
 IntelliTest 會為所有 .NET 類型[產生測試輸入](input-generation.md)。 當類型為抽象或介面時，IntelliTest 必須選擇該類型的特定實作。 它需要知道有哪些類型，才能進行這種選擇。
 
-顯示此警告時，它指示 IntelliTest 查看了某些引用的程式集並找到了實現類型，但不確定是否應使用該類型，或者是否有更合適的類型可用於其他位置。 IntelliTest 只要選擇有希望的類型即可。
+顯示此警告時，表示 IntelliTest 已查看部分參考的元件並找到實作為型別，但是不確定是否應該使用該型別，或其他地方是否有更適當的型別可供使用。 IntelliTest 只要選擇有希望的類型即可。
 
 為避免此警告，您可以接受 IntelliTest 選擇的類型，或新增對應的 [PexUseType](attribute-glossary.md#pexusetype)，協助 IntelliTest 使用其他類型。
 

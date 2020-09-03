@@ -1,5 +1,5 @@
 ---
-title: IDebug自定義屬性查詢2::獲取按名稱獲取自定義屬性 |微軟文件
+title: IDebugCustomAttributeQuery2：： GetCustomAttributeByName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 47471f2743e705b06fb9a1bda6752b24a7836d1b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732557"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
-獲取給定自定義屬性名稱的自定義屬性位元組。
+取得自訂屬性的名稱的自訂屬性（property）。
 
 ## <a name="syntax"></a>語法
 
@@ -45,23 +45,23 @@ int GetCustomAttributeByName(
 
 ## <a name="parameters"></a>參數
 `pszCustomAttributeName`\
-[在]包含要尋找的自訂屬性的名稱的字串。
+在字串，包含要尋找之自訂屬性的名稱。
 
 `ppBlob`\
-[進出]使用自定義屬性位元組填充的陣列。
+[in，out]以自訂屬性位元組填入的陣列。
 
 `pdwLen`\
-[進出]指定要在`ppBlob`陣列中傳回的最大位元,並返回實際寫入陣列的位元組數。
+[in，out]指定要在陣列中傳回的最大位元組數目 `ppBlob` ，並傳回實際寫入陣列的位元組數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,則返回S_OK或返回S_FALSE自定義屬性不存在。 否則會傳回錯誤碼。
+ 如果成功，會傳回 S_OK，或如果自訂屬性不存在，則傳回 S_FALSE。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 將`ppBlob`參數設定為空值以返回可用屬性位元數。 然後分配一個陣列,並將該陣列傳遞給該`ppBlob`參數。
+ 將 `ppBlob` 參數設定為 null 值，以傳回可用的屬性位元組數目。 然後配置陣列，並針對參數傳遞該陣列 `ppBlob` 。
 
- 屬性位元表示自定義屬性的原始數據。
+ 屬性位元組代表自訂屬性的原始資料。
 
- 如果`ppBlob``pdwLen`和 參數設定為 null 值,則此方法可用於確定自訂屬性是否僅存在。 但是,一個更簡單的替代方法是調用[IsCustom屬性定義](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)方法。
+ 如果 `ppBlob` 和 `pdwLen` 參數設定為 null 值，則可以使用這個方法來判斷自訂屬性是否只存在。 不過，較簡單的替代方法是呼叫 [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) 方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

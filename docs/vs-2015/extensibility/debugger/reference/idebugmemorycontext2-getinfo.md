@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::GetInfo |Microsoft Docs
+title: IDebugMemoryCoNtext2：： GetInfo |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e46af3af34a31a1c13c89482b62f319591e483cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164076"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)結構描述內容。  
+抓取描述內容的 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 結構。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,15 +43,15 @@ int GetInfo(
   
 #### <a name="parameters"></a>參數  
  `dwFields`  
- [in]從旗標的組合[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)列舉，指出欄位[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)結構要填寫。  
+ 在 [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) 列舉中的旗標組合，指出要填入 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 結構的哪些欄位。  
   
  `pInfo`  
- [in、 out]`CONTEXT_INFO`會填入的結構。  
+ [in，out] `CONTEXT_INFO` 填入的結構。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
- [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)   
+ [IDebugMemoryCoNtext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)   
  [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)   
  [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)

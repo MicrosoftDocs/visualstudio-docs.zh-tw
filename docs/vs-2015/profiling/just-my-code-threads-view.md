@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 85126a7816fa583db94bb93659a7d4cbb29078ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154770"
 ---
 # <a name="just-my-code-threads-view"></a>Just My Code (執行緒檢視)
@@ -30,5 +30,5 @@ ms.locfileid: "68154770"
  在某些情況下，選取此選項可能會篩選掉封鎖的呼叫。 如果您需要完整的呼叫堆疊詳細資料進行判斷，請清除此選項以公開完整的呼叫堆疊。  
   
 ## <a name="see-also"></a>另請參閱  
- [執行緒檢視](../profiling/threads-view-parallel-performance.md)   
+ [執行緒視圖](../profiling/threads-view-parallel-performance.md)   
  [雜訊減少百分比](../profiling/noise-reduction-percentage.md)

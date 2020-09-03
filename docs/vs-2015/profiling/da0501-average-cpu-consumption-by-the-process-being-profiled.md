@@ -1,5 +1,5 @@
 ---
-title: DA0501：所分析之處理序的平均 CPU 消耗。 | Microsoft Docs
+title: DA0501：進行程式碼剖析之處理序所需的平均 CPU 使用量。 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1462ac73e599b870f015a02998c069f7613be0ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155780"
 ---
-# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501：所分析之處理序的平均 CPU 消耗。
+# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501：進行程式碼剖析之處理序所需的平均 CPU 使用量。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-規則 Id |DA501 |  
-|類別目錄 |資源監視 |  
-|程式碼剖析方法 |所有 |  
-|訊息 |正在分析之處理序的 CPU 耗用量的平均。 |  
+規則識別碼 |DA501 |  
+|類別 |資源監視 |  
+|分析方法 |全部 |  
+|訊息 |所分析之進程的平均 CPU 耗用量。 |  
 |規則類型 |資訊 |  
   
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  

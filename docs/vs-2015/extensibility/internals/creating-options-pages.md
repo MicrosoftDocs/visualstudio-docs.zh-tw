@@ -12,73 +12,73 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8c2b993a6c6947adfa3b01f2947b992b23236b8f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196941"
 ---
 # <a name="creating-options-pages"></a>建立選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-在[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]managed 的封裝架構類別衍生自<xref:Microsoft.VisualStudio.Shell.DialogPage>擴充[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]藉由新增 IDE**選項**頁面下**工具**功能表。  
+在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] managed 封裝架構中，從 [工具] 功能表底下新增 [選項] 頁面，衍生自的類別會 <xref:Microsoft.VisualStudio.Shell.DialogPage> 延伸 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE。 **Options** **Tools**  
   
- 物件，實作給定**工具選項**頁面是特定的 Vspackage，由相關聯<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>物件。  
+ 執行指定 **工具選項** 頁面的物件與物件的特定 vspackage 相關聯 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 。  
   
- 因為環境實作特定的物件會具現化**工具選項**頁面時，IDE 會顯示該特定網頁：  
+ 因為環境會在 IDE 顯示特定頁面時，將執行特定 [ **工具選項** ] 頁面的物件具現化：  
   
-- A**工具選項**應該實作頁面，在其本身的物件，而不是在實作 VSPackage 的物件。  
+- [ **工具] 選項** 頁應該在其本身的物件上執行，而不是在執行 VSPackage 的物件上。  
   
-- 物件不能實作多個**工具選項**頁面。  
+- 物件無法執行多個 **工具選項** 頁面。  
   
-## <a name="registering-as-a-tools-options-page-provider"></a>註冊工具選項頁面提供者為  
- VSPackage 支援使用者透過設定**工具選項**頁面會指出提供這些物件**工具選項**藉由套用的執行個體的頁面<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>套用至<xref:Microsoft.VisualStudio.Shell.Package>實作。  
+## <a name="registering-as-a-tools-options-page-provider"></a>註冊為工具選項頁面提供者  
+ 透過 [ **工具選項** ] 頁面支援使用者設定的 VSPackage，會透過套用套用至執行的實例，表示提供這些 **工具選項** 頁面的物件 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> <xref:Microsoft.VisualStudio.Shell.Package> 。  
   
- 必須有一個執行個體<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>針對每個<xref:Microsoft.VisualStudio.Shell.DialogPage>-衍生實作的型別**工具選項**頁面。  
+ <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>針對每個衍生的 [ <xref:Microsoft.VisualStudio.Shell.DialogPage> **工具選項**] 頁面的衍生類型，都必須有一個實例。  
   
- 每個執行個體<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>會使用實作的型別**工具選項**頁面上，包含類別和子類別，用來識別字串**工具選項** 頁面上，與資源若要註冊為提供的類型資訊**工具選項**頁面。  
+ 的每個實例都使用可執行 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> [ **工具選項** ] 頁面的型別、包含用來識別 [ **工具選項** ] 頁面之類別目錄和子類別的字串，以及將類型註冊為提供 [ **工具選項** ] 頁面的資源資訊。  
   
-## <a name="persisting-tools-options-page-state"></a>保存的工具選項頁面狀態  
- 如果**工具選項**啟用的自動化支援註冊頁面實作，IDE 會保存頁面的狀態，以及所有其他**工具選項**頁面。  
+## <a name="persisting-tools-options-page-state"></a>保存工具選項頁面狀態  
+ 如果已在啟用 automation 支援的情況下註冊 **工具選項** 頁面執行，IDE 會保存頁面的狀態以及所有其他 **工具選項** 頁面。  
   
- VSPackage 可以使用來管理它自己的持續性<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>。 應該使用其中之一或持續性的另一個方法。  
+ VSPackage 可以使用來管理自己的持續性 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 。 只應使用一個或另一個持續性方法。  
   
-## <a name="implementing-dialogpage-class"></a>實作 DialogPage 類別  
- 這個物件提供 VSPackage 實作<xref:Microsoft.VisualStudio.Shell.DialogPage>-衍生的型別可以利用下列繼承的功能：  
+## <a name="implementing-dialogpage-class"></a>執行 DialogPage 類別  
+ 提供 VSPackage 之 <xref:Microsoft.VisualStudio.Shell.DialogPage> 衍生型別的物件可利用下列繼承的功能：  
   
 - 預設使用者介面視窗。  
   
-- 預設持續性機制，可以使用任一 if<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>套用至類別，或者如果<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A>屬性設定為`true`的<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>套用至類別。  
+- 如果套用 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 至類別，或如果將套用 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> 至類別的屬性設為，則可以使用預設的持續性機制 `true` <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 。  
   
 - 自動化支援。  
   
-  物件，實作的最低需求**工具選項**頁面上使用<xref:Microsoft.VisualStudio.Shell.DialogPage>是加入的公用屬性。  
+  使用執行 [ **工具選項** ] 頁面之物件的最低需求 <xref:Microsoft.VisualStudio.Shell.DialogPage> 是新增公用屬性。  
   
-  如果類別已正確註冊為**工具選項**頁面上提供者，則其公用屬性位於**選項**一節**工具**功能表中的表單屬性方格。  
+  如果類別已正確註冊為 [**工具選項**] 頁面提供者，則可以在 [**工具**] 功能表的 [**選項**] 區段中，以屬性方格的形式取得其公用屬性。  
   
-  所有這些預設的功能可以被覆寫。 例如，若要建立更複雜的使用者介面需要只覆寫的預設實作<xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>。  
+  所有這些預設功能都可以覆寫。 例如，若要建立更複雜的使用者介面，則只需要覆寫的預設執行 <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A> 。  
   
 ## <a name="example"></a>範例  
- 以下是 [選項] 頁面的簡單"hello world"實作。 將下列程式碼加入預設專案由 Visual Studio Package 範本，使用**功能表命令**選項選取適當地將示範選項頁面的功能。  
+ 接下來是簡單的「hello world」選項頁面執行。 將下列程式碼新增至 Visual Studio 套件範本所建立的預設專案，並選取 [ **功能表命令** ] 選項，可充分示範選項頁面功能。  
   
-### <a name="description"></a>說明  
- 下列類別定義的最小的"hello world"選項頁面。 開啟時，使用者可以設定公用`HelloWorld`在屬性方格中的屬性。  
+### <a name="description"></a>描述  
+ 下列類別會定義最短的 "hello world" 選項頁面。 開啟時，使用者可以 `HelloWorld` 在屬性方格中設定公用屬性。  
   
 ### <a name="code"></a>程式碼  
  [!code-csharp[UI_UserSettings_ToolsOptionPages#11](../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/class1.cs#11)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#11](../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/class1.vb#11)]  
   
-### <a name="description"></a>說明  
- 將下列屬性套用至套件類別讓頁面上的選項可載入封裝時。 數字是任意的資源識別碼分類的頁面上，並在結束的布林值可讓您指定的頁面是否支援自動化。  
+### <a name="description"></a>描述  
+ 將下列屬性套用至 package 類別，可讓您在封裝載入時使用 [選項] 頁面。 這些數位是類別和頁面的任意資源識別碼，而結尾的布林值會指定頁面是否支援 automation。  
   
 ### <a name="code"></a>程式碼  
  [!code-csharp[UI_UserSettings_ToolsOptionPages#07](../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/uiusersettingstoolsoptionspagespackage.cs#07)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#07](../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/uiusersettingstoolsoptionspagespackage.vb#07)]  
   
-### <a name="description"></a>說明  
- 下列事件處理常式會顯示 [選項] 頁面中設定的屬性值而定的結果。 它會使用<xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A>結果的方法，明確轉換成的自訂選項頁面型別存取頁面所公開的屬性。  
+### <a name="description"></a>描述  
+ 下列事件處理常式會根據 [選項] 頁面中設定的屬性值來顯示結果。 它會使用 <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> 方法，並將結果明確轉換成自訂選項頁面類型，以存取頁面所公開的屬性。  
   
- 封裝範本所產生的專案，在呼叫這個函式從`MenuItemCallback`函式，將它附加至的預設命令新增至**工具**功能表。  
+ 如果是封裝範本所產生的專案，請從函式呼叫這個函式，將 `MenuItemCallback` 它附加至新增至 [ **工具** ] 功能表的預設命令。  
   
 ### <a name="code"></a>程式碼  
  [!code-csharp[UI_UserSettings_ToolsOptionPages#08](../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/uiusersettingstoolsoptionspagespackage.cs#08)]

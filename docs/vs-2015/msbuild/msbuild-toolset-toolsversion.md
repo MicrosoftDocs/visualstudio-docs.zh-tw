@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cf22fdf3d0cd9196794aa3929e9952f57bbfa2f0
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871990"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
@@ -38,7 +38,7 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
 
  當在專案檔中定義 `ToolsVersion` 值時，MSBuild 會使用該值來判定可用於該專案的工具組屬性值。 一個工具組屬性為 `$(MSBuildToolsPath)`，它會指定 .NET Framework 工具的路徑。 僅需要該工具組屬性 (或 `$(MSBuildBinPath)`)。
 
- 從 Visual Studio 2013 開始，MSBuild 工具組版本就與 Visual Studio 版本號碼相同。 MSBuild 預設為 Visual Studio 中的這個工具組，且位於命令列上，與專案檔中指定的工具組版本無關。  您可以使用 /ToolsVersion 旗標覆寫此行為。 如需詳細資訊，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。
+ 從 Visual Studio 2013 開始，MSBuild 工具組版本就與 Visual Studio 版本號碼相同。 MSBuild 預設為 Visual Studio 中的這個工具組，且位於命令列上，與專案檔中指定的工具組版本無關。  您可以使用 /ToolsVersion 旗標覆寫此行為。 如需詳細資訊，請參閱覆 [寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。
 
  在下列範例中，MSBuild 會使用 `MSBuildToolsPath` 保留屬性，即可尋找 Microsoft.CSharp.targets 檔案。
 
@@ -46,9 +46,9 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 ```
 
- 透過定義自訂工具組，您就可以修改 `MSBuildToolsPath` 的值。 如需詳細資訊，請參閱[標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)。
+ 透過定義自訂工具組，您就可以修改 `MSBuildToolsPath` 的值。 如需詳細資訊，請參閱[標準和自訂工具](../msbuild/standard-and-custom-toolset-configurations.md)組設定
 
- 當您在命令列上建置方案並針對 msbuild.exe 指定 `ToolsVersion` 時，所有專案及其專案對專案相依性都會根據該 `ToolsVersion` 建置，即使方案中的每個專案都指定其自己的 `ToolsVersion` 也是如此。 若要根據專案來定義 `ToolsVersion` 值，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。
+ 當您在命令列上建置方案並針對 msbuild.exe 指定 `ToolsVersion` 時，所有專案及其專案對專案相依性都會根據該 `ToolsVersion` 建置，即使方案中的每個專案都指定其自己的 `ToolsVersion` 也是如此。 若要針對 `ToolsVersion` 每個專案定義值，請參閱覆 [寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。
 
  `ToolsVersion` 屬性也用於專案移轉。 例如，如果您在 Visual Studio 2010 中開啟 Visual Studio 2008 專案，則會上傳專案檔，以包括 ToolsVersion="4.0"。 如果您隨後嘗試在 Visual Studio 2008 中開啟該專案，它不會識別已升級的 `ToolsVersion`，因此會像該屬性仍設為 3.5 那樣建置專案。
 
@@ -71,7 +71,7 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
 
 - 透過使用 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 方法
 
-  工具組屬性會指定工具的路徑。 MSBuild 會使用專案檔中的 `ToolsVersion` 屬性值，以尋找對應的登錄機碼，然後使用登錄機碼中的資訊設定工具組屬性。 例如，如果 `ToolsVersion` 的值為 `12.0`，MSBuild 會根據以下登錄機碼設定工具組屬性：HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.
+  工具組屬性會指定工具的路徑。 MSBuild 會使用專案檔中的 `ToolsVersion` 屬性值，以尋找對應的登錄機碼，然後使用登錄機碼中的資訊設定工具組屬性。 例如，如果 `ToolsVersion` 的值為 `12.0`，MSBuild 會根據以下登錄機碼，來設定工具組屬性：HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0。
 
   以下為工具組屬性：
 
@@ -91,7 +91,7 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
 
 - <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> 會傳回通常位於 Managed 工具資料夾中的檔案路徑。
 
-- [GetPathToBuildTools](/previous-versions/visualstudio/visual-studio-2013/dn251121(v=vs.121))會傳回組建工具的路徑。
+- [GetPathToBuildTools](/previous-versions/visualstudio/visual-studio-2013/dn251121(v=vs.121)) 會傳回建置工具的路徑。
 
 ### <a name="sub-toolsets"></a>子工具組
  如本主題先前所述，MSBuild 會使用登錄機碼指定基本工具的路徑。 如果機碼具有子機碼，MSBuild 會使用它指定包含其他工具之子工具組的路徑。 在此情況下，該工具組的定義方式為組合在兩個機碼中定義的屬性定義。
@@ -117,5 +117,5 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
 
 ## <a name="see-also"></a>另請參閱
 
-- [標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)
+- [標準和自訂工具組設定](../msbuild/standard-and-custom-toolset-configurations.md)
 - [多目標](../msbuild/msbuild-multitargeting-overview.md)

@@ -8,10 +8,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 0d0903db05b193b3318dc30c250bfdb21e76b093
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155277"
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Visual Studio Tools for Apache Cordova
@@ -31,4 +31,4 @@ ms.locfileid: "68155277"
   
 若您正在考慮這些工具，但尚未準備嘗試，請造訪 [功能](https://www.visualstudio.com/explore/cordova-vs) 頁面，我們會告訴您更多相關資訊。  
   
-如果您準備好開始，請參閱[使用 JavaScript 進行行動開發](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)。
+如果您已經準備好開始使用，請參閱 [使用 JavaScript 的](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)行動裝置開發。

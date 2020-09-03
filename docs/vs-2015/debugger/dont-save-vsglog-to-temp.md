@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 449c6c1ecdb0644b9b52b6ec12ce867dc34d66c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156095"
 ---
-# <a name="dontsavevsglogtotemp"></a>DONT_SAVE_VSGLOG_TO_TEMP
+# <a name="dont_save_vsglog_to_temp"></a>DONT_SAVE_VSGLOG_TO_TEMP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 出現時，定義圖形記錄檔是否儲存到使用者的暫存檔目錄。  
@@ -28,15 +28,15 @@ ms.locfileid: "68156095"
 ```  
   
 ## <a name="value"></a>值  
- 前置處理器符號會由其存在與否決定是否圖形記錄檔會儲存到使用者的 temporary files 目錄中。 如果這個符號已定義，則所定義的檔名`VSG_DEFAULT_RUN_FILENAME`擷取應用程式中，目前目錄的相對或絕對路徑; 檔案名稱所定義的否則為`VSG_DEFAULT_RUN_FILENAME`相對於使用者的暫存檔案目錄，而且不能是絕對路徑。  
+ 以其目前狀態或缺席為依據的預處理器符號，決定圖形記錄檔是否儲存至使用者的暫存檔案目錄。 如果已定義此符號，則由所定義的檔案名 `VSG_DEFAULT_RUN_FILENAME` 會相對於所捕捉應用程式的目前的目錄，或者是絕對路徑; 否則，所定義的檔案名 `VSG_DEFAULT_RUN_FILENAME` 會相對於使用者的暫存檔案目錄，而不能是絕對路徑。  
   
 ## <a name="remarks"></a>備註  
- 根據使用者的權限，圖形記錄檔可能無法儲存在任意位置。 我們建議您先想要將圖形記錄檔儲存到使用者的 temporary files 目錄或另一個已知良好的位置，如果您不確定是否要選擇的位置可以寫入至使用者。  
+ 根據使用者的許可權，圖形記錄檔可能無法儲存在任意位置。 如果您不確定使用者是否可寫入您所選擇的位置，建議您最好將圖形記錄儲存到使用者的 [暫存檔案] 目錄或另一個已知良好的位置。  
   
- 若要避免圖形記錄檔儲存到 temporary files 目錄，您必須定義`DONT_SAVE_VSGLOG_TO_TEMP`您加入之前`vsgcapture.h`。  
+ 為了避免將圖形記錄檔儲存至暫存檔案目錄，您必須在 `DONT_SAVE_VSGLOG_TO_TEMP` 包含之前先定義 `vsgcapture.h` 。  
   
 ## <a name="example"></a>範例  
- 此範例示範如何將圖形記錄檔儲存至絕對路徑，在主機電腦上。  
+ 此範例示範如何將圖形記錄檔儲存至主機電腦上的絕對路徑。  
   
 ```  
 // Define DONT_SAVE_VSGLOG_TO_TEMP and VSG_DEFAULT_RUN_FILENAME before including vsgcapture.h  

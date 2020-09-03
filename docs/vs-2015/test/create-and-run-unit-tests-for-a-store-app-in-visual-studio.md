@@ -1,5 +1,5 @@
 ---
-title: 為商店應用程式建立及執行單元測試
+title: 針對 Store 應用程式建立和執行單元測試
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -12,10 +12,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a7efb5fe4484fdd0ce7d2fcb0a1988e9b089509e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660614"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>在 Visual Studio 中對市集應用程式建立及執行單元測試
@@ -33,7 +33,7 @@ Visual Studio 2012 Express for Windows 8 單元測試工具的設計支援在軟
 >   如需詳細資訊，請參閱 MSDN Library 中的[對程式碼進行單元測試](../test/unit-test-your-code.md)。
 
 ## <a name="in-this-section"></a>本節內容
- [對 C# 程式碼進行單元測試](../test/unit-testing-visual-csharp-code-in-a-store-app.md)
+ [單元測試 c # 程式碼](../test/unit-testing-visual-csharp-code-in-a-store-app.md)
 
  [對 C++ DLL 進行單元測試](../test/unit-testing-a-visual-cpp-dll-for-store-apps.md)
 

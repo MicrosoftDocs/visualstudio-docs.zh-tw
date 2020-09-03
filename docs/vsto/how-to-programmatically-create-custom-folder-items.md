@@ -13,14 +13,14 @@ ms.author: johnhart
 ms.workload:
 - office
 ms.openlocfilehash: 652768fa23902722a9b071a4ad12de4cbf774ab6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546025"
 ---
 # <a name="how-to-programmatically-create-custom-folder-items"></a>如何：以程式設計方式建立自訂資料夾專案
-  這個範例會在 Microsoft Office Outlook 中建立新的資料夾。 登入的使用者名稱會用於資料夾名稱。
+  此範例會在 Microsoft Office Outlook 中建立新資料夾。 用來登入的使用者名稱會用於資料夾名稱。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 

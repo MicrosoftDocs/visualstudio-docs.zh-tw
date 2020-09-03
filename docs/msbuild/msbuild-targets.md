@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bfdbbf0f585ea02bfdb32f47728ab0cd26e9af3e
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250663"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目標
@@ -42,7 +42,7 @@ ms.locfileid: "88250663"
 </Target>
 ```
 
- 如果 `AfterBuild` 執行，它只會顯示「第二次出現」，因為的第二個定義會 `AfterBuild` 隱藏第一個。
+ 如果 `AfterBuild` 執行，它只會顯示「第二次發生」，因為的第二個定義會 `AfterBuild` 隱藏第一個。
 
  MSBuild 需相依於匯入順序，且目標的最後一個定義將會是系統所使用的定義。
 
@@ -64,11 +64,11 @@ ms.locfileid: "88250663"
 
 目標絕對不會在單一建置期間執行兩次，即使組建中的後續目標相依於它也一樣。 執行目標之後，它對組建而言就已功成身退了。
 
-如需有關目標群組建順序的詳細資料和詳細資訊，請參閱 [目標群組建順序](../msbuild/target-build-order.md)。
+如需目標群組建順序的詳細資訊和詳細資訊，請參閱 [目標群組建順序](../msbuild/target-build-order.md)。
 
 ## <a name="target-batching"></a>目標批次處理
 
-目標專案可能有 `Outputs` 屬性，其以% () 形式指定中繼資料 \<Metadata> 。 如果是這樣，MSBuild 會為每個唯一的中繼資料值執行一次目標，並分組或「批次處理」具有該中繼資料值的項目。 例如，
+目標專案可能有屬性， `Outputs` 其以% () 形式指定中繼資料 \<Metadata> 。 如果是這樣，MSBuild 會為每個唯一的中繼資料值執行一次目標，並分組或「批次處理」具有該中繼資料值的項目。 例如，
 
 ```xml
 <ItemGroup>
@@ -98,11 +98,11 @@ Reference: 4.0
 
  目標批次處理很少用於真實的組建。 工作批次處理較為常見。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。
 
-## <a name="incremental-builds"></a>累加組建
+## <a name="incremental-builds"></a>累加建置
 
  累加組建是已最佳化的建置，因此不會執行輸出檔案與其相關對應輸入檔案為最新的目標。 目標項目可能有 `Inputs` 和 `Outputs` 屬性，並指出目標預期作為輸入的項目，以及它產生作為輸出的項目。
 
- 如果所有輸出項目都是最新的，則 MSBuild 會略過目標，這可大幅改善建置速度。 這稱為目標的累加組建。 如果只有某些檔案是最新的，則 MSBuild 會執行沒有最新項目的目標。 這稱為目標的部分累加組建。 如需詳細資訊，請參閱 [增量組建](../msbuild/incremental-builds.md)。
+ 如果所有輸出項目都是最新的，則 MSBuild 會略過目標，這可大幅改善建置速度。 這稱為目標的累加組建。 如果只有某些檔案是最新的，則 MSBuild 會執行沒有最新項目的目標。 這稱為目標的部分累加組建。 如需詳細資訊，請參閱累加 [組建](../msbuild/incremental-builds.md)。
 
 ## <a name="default-build-targets"></a>預設組建目標
 

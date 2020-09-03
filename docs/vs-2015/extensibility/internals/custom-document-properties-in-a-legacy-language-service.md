@@ -13,27 +13,27 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a2062932f5c9b0c1d51b0503742f7387b7da3dec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196899"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>舊版語言服務中的自訂文件屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-中可顯示文件屬性[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]**屬性**視窗。 程式設計語言通常不需要個別的原始程式檔相關聯的屬性。 不過，XML 支援會影響編碼方式、 結構描述和樣式表的文件屬性。  
+文件屬性可以在 [ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **屬性** ] 視窗中顯示。 程式設計語言通常沒有與個別原始程式檔相關聯的屬性。 不過，XML 支援會影響編碼、架構和樣式表單的檔案屬性。  
   
 ## <a name="discussion"></a>討論  
- 如果您的語言需要自訂文件屬性，您必須在衍生類別，以從<xref:Microsoft.VisualStudio.Package.DocumentProperties>類別和衍生類別上實作必要的屬性。  
+ 如果您的語言需要自訂文件屬性，您必須從類別衍生類別， <xref:Microsoft.VisualStudio.Package.DocumentProperties> 並在您的衍生類別上執行必要的屬性。  
   
- 此外，文件屬性通常會儲存在原始程式檔本身。 需要剖析原始程式檔中顯示的屬性資訊的語言服務**屬性** 視窗，並更新原始程式檔，當變更中的文件屬性**屬性**視窗。  
+ 此外，檔案屬性通常會儲存在原始檔本身。 這需要語言服務剖析來源檔案中的屬性資訊，以便在 **[屬性] 視窗中** 顯示，並在變更 [ **屬性** ] 視窗中的檔案屬性時，更新原始程式檔。  
   
 ## <a name="customizing-the-documentproperties-class"></a>自訂 DocumentProperties 類別  
- 若要支援自訂文件屬性，您必須衍生的類別<xref:Microsoft.VisualStudio.Package.DocumentProperties>類別，然後將您所需要的屬性。 您也應該提供組織中的使用者屬性**屬性**視窗中顯示。 如果屬性只能具有`get`存取子，就會以唯讀模式中顯示出來**屬性**視窗。 如果屬性同時具有`get`並`set`存取子，屬性也可以在更新**屬性**視窗。  
+ 若要支援自訂文件屬性，您必須從類別衍生類別 <xref:Microsoft.VisualStudio.Package.DocumentProperties> ，並新增所需的多個屬性。 您也應該提供使用者屬性，以便在 [ **屬性** ] 視窗顯示中組織它們。 如果屬性只有 `get` 存取子，則會在 [ **屬性** ] 視窗中顯示為 [唯讀]。 如果屬性同時具有 `get` 和 `set` 存取子，也可以在 [ **屬性** ] 視窗中更新屬性。  
   
 ### <a name="example"></a>範例  
- 以下是範例類別衍生自<xref:Microsoft.VisualStudio.Package.DocumentProperties>，顯示兩個屬性，檔案名稱和描述。 更新屬性時，自訂的方法上<xref:Microsoft.VisualStudio.Package.LanguageService>類別呼叫以將屬性寫至原始程式檔。  
+ 以下是衍生自的範例類別 <xref:Microsoft.VisualStudio.Package.DocumentProperties> ，顯示兩個屬性：檔案名和描述。 更新屬性時，會呼叫類別上的自訂方法， <xref:Microsoft.VisualStudio.Package.LanguageService> 以將屬性寫入原始程式檔。  
   
 ```csharp  
 using System.ComponentModel;  
@@ -123,7 +123,7 @@ namespace TestLanguagePackage
 ```  
   
 ## <a name="instantiating-the-custom-documentproperties-class"></a>具現化自訂 DocumentProperties 類別  
- 若要具現化您的自訂文件屬性類別，您必須覆寫<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>方法，在您的版本<xref:Microsoft.VisualStudio.Package.LanguageService>類別，以傳回的單一執行個體您<xref:Microsoft.VisualStudio.Package.DocumentProperties>類別。  
+ 若要具現化您的自訂文件屬性類別，您必須覆寫 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A> 類別版本中的方法， <xref:Microsoft.VisualStudio.Package.LanguageService> 以傳回類別的單一實例 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 。  
   
 ### <a name="example"></a>範例  
   
@@ -149,20 +149,20 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="properties-in-the-source-file"></a>原始程式檔中的屬性  
- 由於文件屬性通常特有的原始程式檔，值會儲存原始程式檔本身。 這需要支援的語言剖析器或掃描器來定義這些屬性。 比方說，XML 文件的內容會儲存在根節點上。 上的根節點的值會修改**屬性**視窗值變更，並在編輯器中更新的根節點。  
+## <a name="properties-in-the-source-file"></a>來源檔案中的屬性  
+ 由於檔案屬性通常是原始檔的特定版本，因此這些值會儲存在原始檔中。 這需要語言剖析器或掃描器的支援才能定義這些屬性。 例如，XML 檔的屬性會儲存在根節點上。 當 **屬性** 視窗值變更時，根節點上的值會被修改，且編輯器中的根節點會更新。  
   
 ### <a name="example"></a>範例  
- 這個範例會儲存"Filename"和"Description"中的前兩行的原始程式檔中，特殊註解標頭中內嵌為屬性：  
+ 此範例會將 "Filename" 和 "Description" 屬性儲存在原始程式檔中的前兩行，並內嵌在特殊批註標頭中，如下所示：  
   
 ```  
 //!Filename = file.testext  
 //!Description = A sample file  
 ```  
   
- 這個範例示範兩種方法來取得和設定從原始程式檔的前兩行的文件屬性，方式更新屬性，如果使用者直接修改原始程式檔所需。 `SetPropertyValue`方法，顯示下面是相同的範例中呼叫其中一個從`TestDocumentProperties`類別中的 < 自訂 DocumentProperties 類別 」 一節所示。  
+ 此範例顯示從原始程式檔的前兩行取得和設定檔案屬性所需的兩種方法，以及當使用者直接修改原始程式檔時，如何更新屬性。 `SetPropertyValue`此處所示之範例中的方法，與從類別呼叫的方法相同， `TestDocumentProperties` 如「自訂 DocumentProperties 類別」一節所示。  
   
- 此範例會使用掃描器來判斷前兩行中語彙基元的型別。 這個範例是僅供示範用途。 這種情況的更常見方法是剖析原始程式檔到所謂剖析樹狀結構其中樹狀結構的每個節點都包含特定權杖的相關資訊。 根節點會包含文件屬性。  
+ 此範例會使用掃描器來判斷前兩行中的權杖類型。 此範例僅供說明之用。 在此情況下，較常見的方法是將原始程式檔剖析為剖析樹狀結構，其中樹狀結構的每個節點都包含特定標記的相關資訊。 根節點會包含檔案屬性。  
   
 ```csharp  
 using System.ComponentModel;  

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId |Microsoft Docs
+title: IDebugDocumentChecksum2：： GetChecksumAndAlgorithmId |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a8a603a025d6a9b5b2ba4f0418807666bba4d8b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156484"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取指定要使用的位元組數目上限的文件的總和檢查碼和演算法識別項。  
+使用指定的最大位元組數目，抓取檔總和檢查碼和演算法識別碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -45,22 +45,22 @@ public int GetChecksumAndAlgorithmId(
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]總和檢查碼演算法的唯一識別碼。  
+ 擴展總和檢查碼演算法的唯一識別碼。  
   
  `cMaxBytes`  
- [in]要用於總和檢查碼的位元組數目上限。  
+ 在要用於總和檢查碼的最大位元組數目。  
   
  `pChecksum`  
- [out]總和檢查碼值。  
+ 擴展總和檢查碼的值。  
   
  `pcNumBytes`  
- [out]實際使用的總和檢查碼的位元組數目。  
+ 擴展用於總和檢查碼的實際位元組數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 下列範例會使用這個方法，以取得總和檢查碼和文件的演算法。  
+ 下列範例會使用這個方法來取得檔的總和檢查碼和演算法。  
   
 ```cpp#  
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)  

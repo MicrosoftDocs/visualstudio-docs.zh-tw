@@ -1,5 +1,5 @@
 ---
-title: '&lt;assemblyIdentity&gt;項目 （ClickOnce 部署） |Microsoft Docs'
+title: '&lt;assemblyIdentity &gt; 元素 (ClickOnce 部署) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,16 +18,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bfc2ff97a2eb465fe7306ebe368a20e2a7fd8638
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155718"
 ---
-# <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity&gt;項目 （ClickOnce 部署）
+# <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;&gt;ClickOnce 部署 (的 assemblyIdentity 元素) 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-識別主要組件的[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式。  
+識別應用程式的主要元件 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,21 +42,21 @@ ms.locfileid: "68155718"
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>項目和屬性  
- `assemblyIdentity`是必要元素。 它包含沒有子項目，並具有下列屬性。  
+## <a name="elements-and-attributes"></a>元素和屬性  
+ `assemblyIdentity`需要元素。 它不包含任何子項目，而且具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`name`|必要項。 識別部署的人類看得懂的名稱僅供參考之用。<br /><br /> 如果`name`包含特殊字元，例如單引號或雙引號括住，應用程式可能無法啟動。|  
-|`version`|必要項。 指定的組件的版本號碼，格式如下： `major.minor.build.revision`。<br /><br /> 此值必須遞增來觸發應用程式更新的更新資訊清單中。|  
-|`publicKeyToken`|必要項。 指定 16 個字元的十六進位字串，表示用以簽署部署資訊清單的公開金鑰的 sha-1 雜湊值的最後 8 個位元組。 公開金鑰用來登入必須是 2048 位元或更高。<br /><br /> 雖然是簽署組件的建議但非必要，這個屬性是必要的。 如果組件是不帶正負號，您應該從自我簽署的組件複製值，或使用 「 虛擬 」 全部為零的值。|  
-|`processorArchitecture`|必要項。 指定的處理器。 有效的值為`msil`對所有處理器來說`x86`的 32 位元 Windows`IA64`的 64 位元 Windows 和`Itanium`適用於 Intel 64 位元 Itanium 處理器。|  
-|`type`|必要項。 使用 Windows 來並行安裝技術的相容性。 唯一允許的值是`win32`。|  
+|`name`|必要。 識別部署的人類可讀取名稱，以供參考之用。<br /><br /> 如果 `name` 包含特殊字元，例如單引號或雙引號，則應用程式可能無法啟動。|  
+|`version`|必要。 指定元件的版本號碼，格式如下： `major.minor.build.revision` 。<br /><br /> 此值必須在更新的資訊清單中遞增，以觸發應用程式更新。|  
+|`publicKeyToken`|必要。 指定16個字元的十六進位字串，表示用來簽署部署資訊清單之公開金鑰的 SHA-1 雜湊值最後8個位元組。 用來簽署的公開金鑰必須是2048位或更高的版本。<br /><br /> 雖然建議簽署元件，但卻是選擇性的，但這是必要屬性。 如果元件未簽署，您應該從自我簽署的元件複製值，或使用所有零的「虛擬」值。|  
+|`processorArchitecture`|必要。 指定處理器。 有效的值適用 `msil` 于所有處理器、 `x86` 32 位 windows、 `IA64` 64 位 windows 和 `Itanium` Intel 64 位 Itanium 處理器。|  
+|`type`|必要。 與 Windows 並存安裝技術的相容性。 唯一允許的值為 `win32` 。|  
   
 ## <a name="remarks"></a>備註  
   
 ## <a name="example"></a>範例  
- 下列程式碼範例說明`assemblyIdentity`中的項目[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署資訊清單。 此程式碼範例是針對提供之較大範例的一部分[ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)主題。  
+ 下列程式碼範例說明 `assemblyIdentity` [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署資訊清單中的元素。 這個程式碼範例是針對 [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md) 主題提供之較大範例的一部分。  
   
 ```  
 <!-- Identify the deployment. -->  

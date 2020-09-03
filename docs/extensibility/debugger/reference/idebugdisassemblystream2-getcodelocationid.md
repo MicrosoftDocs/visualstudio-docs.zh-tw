@@ -1,5 +1,5 @@
 ---
-title: IDebugdisassemblystream2::獲取代碼定位Id |微軟文件
+title: IDebugDisassemblyStream2：： GetCodeLocationId |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 32be70e11776177a0e68f09689c2262497703ab1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732248"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
-返回特定代碼上下文的代碼位置識別碼。
+傳回特定程式碼內容的程式碼位置識別碼。
 
 ## <a name="syntax"></a>語法
 
@@ -43,17 +43,17 @@ int GetCodeLocationId( 
 
 ## <a name="parameters"></a>參數
 `pCodeContext`\
-[在]要轉換為識別碼的[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件。
+在要轉換成識別碼的 [IDebugCodeCoNtext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 物件。
 
-`puCodeLocationId`[出]返回代碼位置識別碼。 請參閱＜備註＞。
+`puCodeLocationId` 擴展傳回程序代碼位置識別碼。 請參閱＜備註＞。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。 如果`E_CODE_CONTEXT_OUT_OF_SCOPE`代碼上下文有效但超出範圍,請返回。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 `E_CODE_CONTEXT_OUT_OF_SCOPE`如果程式碼內容有效但超出範圍，則傳回。
 
 ## <a name="remarks"></a>備註
- 代碼位置識別碼特定於支援拆卸的調試引擎 (DE)。 此位置識別碼由 DE 在內部用於追蹤程式碼中的位置,通常是某種位址或偏移量。 唯一的要求是,如果一個位置的代碼上下文小於另一個位置的代碼上下文,則第一個代碼上下文的相應代碼位置標識符也必須小於第二個代碼上下文的代碼位置標識符。
+ 程式碼位置識別碼專屬於 debug engine (DE) 支援反組解碼。 這個位置識別碼會由 DE 在內部使用，以追蹤程式碼中的位置，而且通常是某個位址或某種類型的位移。 唯一的要求是，如果某個位置的程式碼內容小於另一個位置的程式碼內容，則第一個程式碼內容的對應程式碼位置識別碼也必須小於第二個程式碼內容的程式碼位置識別碼。
 
- 若要檢索代碼位置識別碼的程式碼上下文,請呼叫[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)方法。
+ 若要取出程式碼位置識別碼的程式碼內容，請呼叫 [GetCodeCoNtext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) 方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

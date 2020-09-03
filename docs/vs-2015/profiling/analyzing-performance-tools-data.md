@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a141e6f02c8457adaee45ddc6905470a747123d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156440"
 ---
 # <a name="analyzing-performance-tools-data"></a>分析效能工具資料
@@ -34,7 +34,7 @@ ms.locfileid: "68156440"
 |工作|相關內容|  
 |----------|---------------------|  
 |**使用效能規則快速找出問題︰** 程式碼剖析工具效能規則會找出常見問題，並協助您輕鬆地瀏覽至有問題的原始程式碼。 詳細的說明主題通常會建議解決方案。|-   [使用效能規則分析資料](../profiling/using-performance-rules-to-analyze-data.md)|  
-|**了解報告檢視詳細資料︰** 程式碼剖析工具報告檢視提供處理序、執行緒、模組及分析執行的函式等的彙總效能資料。 所顯示的資料取決於用來收集資料的程式碼剖析方法。|-   [效能報告檢視](../profiling/performance-report-views.md)|  
+|**了解報告檢視詳細資料︰** 程式碼剖析工具報告檢視提供處理序、執行緒、模組及分析執行的函式等的彙總效能資料。 所顯示的資料取決於用來收集資料的程式碼剖析方法。|-   [效能報表檢視](../profiling/performance-report-views.md)|  
 |**設定、排序和篩選報告檢視︰** 您可以指定和排序在報告中顯示的資料欄、排序報告資料列，或是篩選資料，使報告中只包含您指定的時間區段。|-   [自訂效能工具報表檢視](../profiling/customizing-performance-tools-report-views.md)|  
   
 ## <a name="related-sections"></a>相關章節  

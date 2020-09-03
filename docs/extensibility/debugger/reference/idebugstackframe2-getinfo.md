@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::獲取資訊 |微軟文件
+title: IDebugStackFrame2：： GetInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 09768fc58640d79a3b5628bafc16b2267f1f8a4c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719719"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
-獲取堆疊幀的說明。
+取得堆疊框架的描述。
 
 ## <a name="syntax"></a>語法
 
@@ -45,16 +45,16 @@ int GetInfo ( 
 
 ## <a name="parameters"></a>參數
 `dwFieldSpec`\
-[在][FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)枚舉中的標誌的組合,用於指定要填充`pFrameInfo`參數 的欄位。
+在 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) 列舉中的旗標組合，可指定 `pFrameInfo` 要填入參數的哪些欄位。
 
 `nRadix`\
-[在]用於格式化任何數值資訊的半徑。
+在用來格式化任何數值資訊的基數。
 
 `pFrameInfo`\
-[出]用堆疊幀的說明填充的[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構。
+擴展以堆疊框架的描述填入的 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 結構。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

@@ -12,63 +12,63 @@ caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a6e9eaf69be62b38a880b07fd8eb51cfc9c256a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195067"
 ---
 # <a name="command-design"></a>命令設計
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-當您將命令加入 VSPackage 時，您必須指定所要出現，時，它的方式處理。  
+當您將命令新增至 VSPackage 時，您必須指定其出現的位置、可用的位置，以及處理方式。  
   
 ## <a name="defining-commands"></a>定義命令  
- 若要定義新的命令，Visual Studio Command Table (.vsct) 檔案在專案中包含 VSPackage。 如果您已經使用 Visual Studio Package 範本建立 VSPackage，專案會包含其中一個檔案。 如需詳細資訊，請參閱 [Visual Studio Command Table (.Vsct) Files](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
+ 若要定義新的命令，請在您的 VSPackage 專案中包含 Visual Studio 的命令資料表 (. .vsct) 檔。 如果您已經使用 Visual Studio 套件範本來建立 VSPackage，專案會包含這些檔案的其中一個。 如需詳細資訊，請參閱 [Visual Studio Command Table (.Vsct) Files](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
   
- Visual Studio 合併所有.vsct 檔案中找到，讓它可以顯示的命令。 因為這些檔案是二進位 VSPackage 有所區別，所以 Visual Studio 並沒有載入的封裝，若要尋找的命令。 如需詳細資訊，請參閱 <<c0> [ 如何 Vspackage 加入使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)。  
+ Visual Studio 會合並找到的所有 .vsct 檔案，讓它可以顯示命令。 因為這些檔案與 VSPackage 二進位檔不同，Visual Studio 不需要載入封裝來尋找命令。 如需詳細資訊，請參閱 [Vspackage 如何新增消費者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)。  
   
- Visual Studio 會使用<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>註冊屬性來定義功能表資源和命令。 如需詳細資訊，請參閱 <<c0> [ 實作](../../extensibility/internals/command-implementation.md)。  
+ Visual Studio 使用 <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> 註冊屬性來定義功能表資源和命令。 如需詳細資訊，請參閱 [執行](../../extensibility/internals/command-implementation.md)。  
   
- 命令可以在執行階段變更，在幾個不同的方式。 它們可以顯示或隱藏、 啟用或停用。 它們可以顯示不同的文字或圖示，或包含不同的值。 可能會執行大量自訂，Visual Studio 會載入 VSPackage。 如需詳細資訊，請參閱 <<c0> [ 如何 Vspackage 加入使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)。  
+ 您可以透過數種不同的方式，在執行時間變更命令。 這些使用者可以顯示、隱藏、啟用或停用。 它們可以顯示不同的文字或圖示，或包含不同的值。 在 Visual Studio 載入您的 VSPackage 之前，可能會先執行許多自訂作業。 如需詳細資訊，請參閱 [Vspackage 如何新增消費者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)。  
   
 ## <a name="command-handlers"></a>命令處理常式  
- 當您建立命令時，您必須提供事件處理常式執行命令。 如果使用者選取命令時，它必須適當地路由傳送。 路由命令，表示傳送至正確的 VSPackage，以啟用或停用、 隱藏或顯示，並執行它，如果使用者選擇要執行這項操作。 如需詳細資訊，請參閱 <<c0> [ 路由演算法](../../extensibility/internals/command-routing-algorithm.md)。  
+ 當您建立命令時，您必須提供事件處理常式來執行命令。 如果使用者選取命令，就必須適當地路由傳送。 路由傳送命令表示將它傳送到正確的 VSPackage 來啟用或停用、隱藏或顯示它，並在使用者選擇執行此動作時執行。 如需詳細資訊，請參閱 [路由演算法](../../extensibility/internals/command-routing-algorithm.md)。  
   
 ## <a name="the-visual-studio-command-environment"></a>Visual Studio 命令環境  
- Visual Studio 可以裝載任何數目的 Vspackage，以及每個可以參與它自己的命令集。 環境會顯示適用於目前工作的命令。 如需詳細資訊，請參閱 <<c0> [ 可用性](../../extensibility/internals/command-availability.md)並[選取內容物件](../../extensibility/internals/selection-context-objects.md)。  
+ Visual Studio 可以裝載任意數量的 Vspackage，而且每個都可以提供自己的命令集。 環境只會顯示適用于目前工作的命令。 如需詳細資訊，請參閱 [可用性](../../extensibility/internals/command-availability.md) 和 [選取範圍內容物件](../../extensibility/internals/selection-context-objects.md)。  
   
- 定義新的命令、 功能表、 工具列或捷徑功能表的 VSPackage 提供其命令資訊給 Visual Studio 在安裝期間，透過參考原生或 managed 組件中的資源的登錄項目。 每個資源，然後參考二進位資料資源 (.cto) 檔案中，當您編譯的 Visual Studio Command Table (.vsct) 檔案產生。 這可讓 Visual Studio，而不必載入每個已安裝的 VSPackage 提供合併的命令集、 功能表和工具列。  
+ 定義新命令、功能表、工具列或快捷方式功能表的 VSPackage，會透過參考原生或 managed 元件中資源的登錄專案，在安裝時提供其命令資訊給 Visual Studio。 然後，每個資源都會參考二進位資料資源 (. cto) 檔案，此檔案會在您編譯 Visual Studio 命令資料表 (. .vsct) 檔時產生。 這可讓 Visual Studio 提供合併的命令集、功能表和工具列，而不必載入每個已安裝的 VSPackage。  
   
-### <a name="command-organization"></a>命令的組織  
- 環境將依照群組、 優先權和功能表命令。  
+### <a name="command-organization"></a>命令組織  
+ 環境依群組、優先順序和功能表來定位命令。  
   
-- 群組是邏輯集合的相關命令，例如，**剪下**，**複製**，並**貼上**命令群組。 群組會出現在功能表的命令。  
+- 群組是相關命令的邏輯集合，例如 **剪**下、 **複製**和 **貼** 上命令群組。 群組是出現在功能表上的命令。  
   
-- 優先順序會決定在群組中的個別命令功能表出現的順序。  
+- 優先權決定群組中個別命令出現在功能表上的順序。  
   
-- 功能表做為容器的群組。  
+- 功能表可作為群組的容器。  
   
-  某些命令、 群組和功能表會預先定義的環境。 如需詳細資訊，請參閱 <<c0> [ 預設的命令、 群組及工具列位置](../../extensibility/internals/default-command-group-and-toolbar-placement.md)。  
+  環境會預先定義一些命令、群組和功能表。 如需詳細資訊，請參閱 [預設的命令、群組和工具列位置](../../extensibility/internals/default-command-group-and-toolbar-placement.md)。  
   
-  命令可以指派給主要群組。 主要群組控制項的命令，在主功能表結構和位置**自訂** 對話方塊。 命令可以出現在多個群組;例如，命令可以是主功能表上、 快顯功能表和工具列。 如需詳細資訊，請參閱 <<c0> [ 如何 Vspackage 加入使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)。  
+  您可以將命令指派給主要群組。 主要群組會在主功能表結構和 [ **自訂** ] 對話方塊中控制命令的位置。 命令可出現在多個群組中;例如，命令可以位於主功能表、快捷方式功能表和工具列上。 如需詳細資訊，請參閱 [Vspackage 如何新增消費者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)。  
   
 ### <a name="command-routing"></a>命令傳送  
- 叫用和路由命令的 Vspackage 的程序與不同的物件執行個體上呼叫方法的程序。  
+ 針對 Vspackage 叫用和路由命令的程式，與在物件實例上呼叫方法的進程不同。  
   
- 環境將路由傳送到最外層的 （全域） 內容從 (local) 的最內層命令內容，此作業取決於目前的選取項目，依序命令。 無法執行命令的第一個內容是處理它。 如需詳細資訊，請參閱 <<c0> [ 路由演算法](../../extensibility/internals/command-routing-algorithm.md)。  
+ 環境會依序將命令從最內層的 (本機) 命令內容（根據目前的選取範圍）路由到最外層的 (全域) 內容。 可以執行此命令的第一個內容是處理它的內容。 如需詳細資訊，請參閱 [路由演算法](../../extensibility/internals/command-routing-algorithm.md)。  
   
- 在大部分情況下，環境會處理命令使用<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。 命令路由配置可讓許多不同的物件來處理命令，因為<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>可以實作任意數目的物件，這些包括 Microsoft ActiveX 控制項、 視窗檢視實作、 文件物件、 專案階層並 （適用於全域命令） VSPackage 物件本身。 在某些特殊的情況下，例如，路由命令 」 在階層中，<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>必須實作介面。  
+ 在大部分的情況下，環境會使用介面來處理命令 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 。 由於命令路由配置可讓許多不同的物件處理命令，因此 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 可由任意數目的物件來執行，這些物件包括 Microsoft ActiveX 控制項、視窗視圖執行、檔物件、專案階層和 VSPackage 物件本身 (用於全域命令) 。 在某些特殊情況下（例如，在階層中路由傳送命令），必須實作為 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 介面。  
   
-## <a name="related-topics"></a>相關主題  
+## <a name="related-topics"></a>[相關主題]  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
-|[實作](../../extensibility/internals/command-implementation.md)|描述如何在 VSPackage 中實作命令。|  
-|[可用性](../../extensibility/internals/command-availability.md)|描述 Visual Studio 內容如何決定哪些命令。|  
-|[路由演算法](../../extensibility/internals/command-routing-algorithm.md)|描述 Visual Studio 命令路由架構如何讓由不同的 Vspackage 的命令。|  
-|[放置方針](../../extensibility/internals/command-placement-guidelines.md)|會建議如何放置在 Visual Studio 環境中的命令。|  
-|[VSPackage 如何新增使用者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)|描述 Vspackage 如何最佳利用 Visual Studio 命令架構。|  
-|[預設的命令、群組及工具列位置](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|描述 Vspackage 如何最佳使用隨附於 Visual Studio 的命令。|  
-|[管理 VSPackage](../../extensibility/managing-vspackages.md)|描述 Visual Studio 載入 Vspackage 的方式。|  
-|[Visual Studio 命令表檔案 (.Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|提供用來描述的版面配置和外觀的命令，在 Vspackage 中的 XML.vsct 檔案的相關資訊。|
+|[實作](../../extensibility/internals/command-implementation.md)|描述如何在 VSPackage 中執行命令。|  
+|[可用性](../../extensibility/internals/command-availability.md)|描述 Visual Studio 內容如何判斷哪些命令可供使用。|  
+|[路由演算法](../../extensibility/internals/command-routing-algorithm.md)|描述 Visual Studio 命令路由架構如何讓命令由不同的 Vspackage 來處理。|  
+|[放置方針](../../extensibility/internals/command-placement-guidelines.md)|建議在 Visual Studio 環境中放置命令的方式。|  
+|[VSPackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)|描述 Vspackage 如何充分利用 Visual Studio 的命令架構。|  
+|[預設的命令、群組及工具列放置](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|描述 Vspackage 如何充分利用 Visual Studio 中包含的命令。|  
+|[管理 VSPackage](../../extensibility/managing-vspackages.md)|描述 Visual Studio 如何載入 Vspackage。|  
+|[Visual Studio 命令表檔案 (.Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|提供 XML .vsct 檔案的相關資訊，這些檔案可用來描述 Vspackage 中命令的版面配置和外觀。|
