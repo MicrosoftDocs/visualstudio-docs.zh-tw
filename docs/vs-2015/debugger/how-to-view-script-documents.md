@@ -1,5 +1,5 @@
 ---
-title: HOW TO：檢視指令碼文件 |Microsoft Docs
+title: 如何：查看指令檔 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,26 +17,26 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189595"
 ---
-# <a name="how-to-view-script-documents"></a>作法：檢視指令碼文件
+# <a name="how-to-view-script-documents"></a>如何：檢視指令碼文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在舊版的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，從伺服器端指令碼產生的用戶端指令碼檔會出現在 [指令碼總管] 視窗中。 [指令碼總管] 視窗通常會隱藏起來，因此用戶端指令碼的存在不一定那麼明顯。  
   
  在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中，從伺服器端指令碼產生的用戶端指令碼檔會出現在 [指令碼總管] 視窗中，而 [方案總管] 預設為可見狀態。 今後將不再有 [指令碼總管] 視窗。  
   
- 只有在您處於偵錯模式或中斷模式時，才會看得見用戶端指令碼檔。 這些檔案會出現在 [指令碼文件]  節點中。  
+ 只有在您處於偵錯模式或中斷模式時，才會看得見用戶端指令碼檔。 這些檔案會出現在 [指令碼文件]**** 節點中。  
   
- 伺服器端指令碼檔一律可見。 這些檔案會出現在 [\<網站路徑名稱>]  節點中。 節點的名稱會類似以下範例： `c:\...\Website2\`  
+ 伺服器端指令碼檔一律可見。 它們會出現在 **\<Website Pathname>** 節點中。 節點的名稱類似于此範例： `c:\...\Website2\`  
   
 ### <a name="to-view-a-server-side-script-document"></a>若要檢視伺服器端指令碼文件  
   
-1. 在 [方案總管]  中，開啟 [\<網站路徑名稱>]  節點。  
+1. 在 **方案總管**中，開啟 **\<Website Pathname>** 節點。  
   
 2. 按兩下您想要檢視的指令碼檔。  
   
@@ -44,7 +44,7 @@ ms.locfileid: "68189595"
   
 ### <a name="to-view-a-client-side-script-document"></a>若要檢視用戶端指令碼文件  
   
-1. 在 [方案總管]  中，開啟 [指令碼文件]  節點。  
+1. 在 [方案總管]**** 中，開啟 [指令碼文件]**** 節點。  
   
 2. 按兩下您想要檢視的指令碼檔。  
   

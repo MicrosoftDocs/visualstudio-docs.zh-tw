@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 78c80bc015ffbf39949b5295d85396dc84154208
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189578"
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio 偵錯
@@ -31,23 +31,23 @@ Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出
 
  如需在 Visual Studio 中偵錯和診斷的快速簡介，請參閱 [偵錯、設定檔和診斷](https://www.visualstudio.com/features/debugging-and-diagnostics-vs)。
 
-- [偵錯工具 Windows](../debugger/debugger-windows.md)列出不同的偵錯工具視窗。
+- [偵錯工具視窗](../debugger/debugger-windows.md) 列出不同的偵錯工具視窗。
 
-- [偵錯工具基礎](../debugger/debugger-basics.md)討論使用 Visual Studio 偵錯工具的基本概念。 主題包括偵錯的基本概念、執行控制項、附加到執行程式上、Just-In-Time 偵錯、自動啟動偵錯工具、傾印、中斷點、查看您的程式、處理例外狀況、編輯後繼續，以及在偵錯工具中使用運算式。
+- [偵錯工具基本概念](../debugger/debugger-basics.md) 討論使用 Visual Studio 偵錯工具的基本概念。 主題包括偵錯的基本概念、執行控制項、附加到執行程式上、Just-In-Time 偵錯、自動啟動偵錯工具、傾印、中斷點、查看您的程式、處理例外狀況、編輯後繼續，以及在偵錯工具中使用運算式。
 
-- [更多偵錯功能](../debugger/more-debugging-features.md)描述不同的偵錯功能。
+- [更多調試功能](../debugger/more-debugging-features.md) 描述不同的調試功能。
 
-- [遠端偵錯](../debugger/remote-debugging.md)說明如何設定和使用遠端偵錯。
+- [遠端偵錯](../debugger/remote-debugging.md) 說明如何設定和使用遠端偵錯。
 
-- [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)描述如何偵錯多執行緒應用程式。
+- [Debug 多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md) 描述如何調試多執行緒應用程式。
 
-- [IntelliTrace](../debugger/intellitrace.md)說明 IntelliTrace 功能。
+- [IntelliTrace](../debugger/intellitrace.md) 描述 IntelliTrace 功能。
 
-- [偵錯應用程式](../debugger/debugging-applications.md)描述如何偵錯不同種類的應用程式。
+- [偵錯工具](../debugger/debugging-applications.md) 說明如何針對不同類型的應用程式進行偵錯工具。
 
-- [偵錯使用者介面參考](../debugger/debugging-user-interface-reference.md)提供參考資訊的視窗和對話方塊上您在偵錯您的應用程式時使用。 這些主題的另一種存取方法，是將焦點置於偵錯使用者介面項目，例如 [中斷點]  視窗，然後按下 F1 鍵。
+- [消費者介面參考的調試](../debugger/debugging-user-interface-reference.md) 提供在您對應用程式進行偵錯工具時所使用之 windows 和對話方塊的參考資訊。 這些主題的另一種存取方法，是將焦點置於偵錯使用者介面項目，例如 [中斷點] **** 視窗，然後按下 F1 鍵。
 
-- [偵錯介面存取 SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md)描述 Microsoft 偵錯介面存取軟體開發套件 (DIA SDK)。 DIA SDK 可讓您存取儲存在程式資料庫 (.pdb) 檔中，Microsoft 後置編輯器工具所產生的偵錯資訊。
+- [Debug Interface ACCESS SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md) 描述 Microsoft Debug Interface Access Software 開發工具組 (DIA SDK) 。 DIA SDK 可讓您存取儲存在程式資料庫 (.pdb) 檔中，Microsoft 後置編輯器工具所產生的偵錯資訊。
 
 ## <a name="see-also"></a>另請參閱
- [程式碼剖析工具](../profiling/profiling-tools.md) [Visual Studio IDE](../ide/visual-studio-ide.md)
+ [分析工具](../profiling/profiling-tools.md) [Visual Studio IDE](../ide/visual-studio-ide.md)

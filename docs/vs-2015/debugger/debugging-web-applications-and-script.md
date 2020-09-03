@@ -1,5 +1,5 @@
 ---
-title: Web 應用程式和指令碼進行偵錯 |Microsoft Docs
+title: Web 應用程式和腳本的偵錯工具 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ca10653fd177826e2b236d432c685535993fbba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155907"
 ---
 # <a name="debugging-web-applications-and-script"></a>偵錯 Web 應用程式和指令碼
@@ -34,7 +34,7 @@ ms.locfileid: "68155907"
 
 表格圖例：  
   
- 本節將描述 Web 應用程式的通用偵錯技術。 如需詳細資訊，請參閱 <<c0> [ 偵錯工具基本概念](../debugger/debugger-basics.md)。  
+ 本節將描述 Web 應用程式的通用偵錯技術。 如需詳細資訊，請參閱 [偵錯工具基本概念](../debugger/debugger-basics.md)。  
   
 ## <a name="in-this-section"></a>本節內容  
  [偵錯 ASP.NET 和 AJAX 應用程式](../debugger/debugging-aspnet-and-ajax-applications.md)  
@@ -43,8 +43,8 @@ ms.locfileid: "68155907"
  [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  列出您在偵錯 Web 應用程式時可能遇到的錯誤，並建議修正方式。  
   
- [逐步解說：對平行處理應用程式進行偵錯](../debugger/walkthrough-debugging-a-parallel-application.md)  
- 描述如何使用 [平行工作]  和 [平行堆疊]  工具視窗來偵錯平行應用程式。  
+ [逐步解說：偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ 描述如何使用 [平行工作]**** 和 [平行堆疊]**** 工具視窗來偵錯平行應用程式。  
   
 ## <a name="related-sections"></a>相關章節  
  [ASP.NET Web 應用程式](../debugger/debugging-preparation-aspnet-web-applications.md)  
