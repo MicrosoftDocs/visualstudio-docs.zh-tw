@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::Seek |Microsoft Docs
+title: IDebugDisassemblyStream2：： Seek |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d774cc0bf6bca1278423249960bbc5233aa6ad37
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203021"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-反組譯碼資料流指定數目的相對於指定位置的指示中移動讀取的指標。  
+移動反組解碼資料流程中的讀取指標，指定的指示數目相對於指定的位置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,25 +46,25 @@ int Seek( 
   
 #### <a name="parameters"></a>參數  
  `dwSeekStart`  
- [in]值，以從[SEEK_START](../../../extensibility/debugger/reference/seek-start.md)列舉，指定 開始搜尋程序的相對位置。  
+ 在 [SEEK_START](../../../extensibility/debugger/reference/seek-start.md) 列舉中的值，這個值會指定開始搜尋進程的相對位置。  
   
  `pCodeContext`  
- [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示相對於搜尋作業的程式碼內容。 使用這個參數才`dwSeekStart`  =  `SEEK_START_CODECONTEXT`，否則會忽略此參數，而且可以是 null 的值。  
+ 在代表搜尋作業相對的程式碼內容的 [IDebugCodeCoNtext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 物件。 只有在時才會使用這個參數 `dwSeekStart`  =  `SEEK_START_CODECONTEXT` ; 否則會忽略此參數，而且可以是 null 值。  
   
  `uCodeLocationId`  
- [in]搜尋作業的相對之程式碼位置識別碼。 如果使用這個參數`dwSeekStart`  =  `SEEK_START_CODELOCID`，否則會忽略這個參數，而且可以設定為 0。 請參閱 < 備註 > 一節[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)方法的程式碼的位置識別項的描述。  
+ 在搜尋作業相對的程式碼位置識別碼。 如果為，則會使用這個參數 `dwSeekStart`  =  `SEEK_START_CODELOCID` ; 否則會忽略此參數，而且可以設定為0。 如需程式碼位置識別碼的描述，請參閱 [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) 方法的備註一節。  
   
  `iInstructions`  
- [in]將相對於位置中指定的指令數目`dwSeekStart`。 這個值可以是負數以向後移動。  
+ 在要移動的指令數目，相對於中指定的位置 `dwSeekStart` 。 這個值可以是負數，以向後移動。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`如果搜尋位置是要提供的指示清單以外的點。 否則會傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果搜尋位置是指向可用指令清單以外的某個點，則會傳回。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 如果搜尋到清單的開頭之前的位置，會將讀取的位置設在清單中的第一個指令。 時，請參閱至位置清單的結尾之後，讀取的位置設定的最後一個指示清單中。  
+ 如果搜尋的位置早于清單開頭的位置，則讀取位置會設定為清單中的第一個指令。 如果看到的位置是清單結尾之後的位置，則讀取位置會設定為清單中的最後一個指令。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [SEEK_START](../../../extensibility/debugger/reference/seek-start.md)   
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
+ [IDebugCodeCoNtext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)

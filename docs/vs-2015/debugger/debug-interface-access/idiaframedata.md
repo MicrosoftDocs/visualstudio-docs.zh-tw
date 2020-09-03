@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9619d4f3d5670d3692c21d850201a2f39d96b922
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202583"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-公開 （expose) 堆疊框架的詳細的資料。  
+公開堆疊框架的詳細資料。  
   
 ## <a name="syntax"></a>語法  
   
@@ -32,37 +32,37 @@ IDiaFrameData : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDiaFrameData`。  
+ 下表顯示的方法 `IDiaFrameData` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDiaFrameData::get_addressSection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|擷取框架的程式碼位址中區段的一部分。|  
-|[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|擷取框架的程式碼位址位移的一部分。|  
-|[IDiaFrameData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaframedata-get-relativevirtualaddress.md)|擷取的映像相對虛擬位址 (RVA) 框架的程式碼。|  
-|[IDiaFrameData::get_virtualAddress](../../debugger/debug-interface-access/idiaframedata-get-virtualaddress.md)|擷取框架的程式碼的虛擬位址 (VA)。|  
-|[IDiaFrameData::get_lengthBlock](../../debugger/debug-interface-access/idiaframedata-get-lengthblock.md)|擷取的長度，以位元組為單位的畫面格所描述的程式碼區塊。|  
-|[IDiaFrameData::get_lengthLocals](../../debugger/debug-interface-access/idiaframedata-get-lengthlocals.md)|擷取推送到堆疊上的本機變數的位元組的數目。|  
-|[IDiaFrameData::get_lengthParams](../../debugger/debug-interface-access/idiaframedata-get-lengthparams.md)|擷取位元組的推送到堆疊上的參數數目。|  
-|[IDiaFrameData::get_maxStack](../../debugger/debug-interface-access/idiaframedata-get-maxstack.md)|擷取推入堆疊框架中的位元組的數目上限。|  
-|[IDiaFrameData::get_lengthProlog](../../debugger/debug-interface-access/idiaframedata-get-lengthprolog.md)|擷取的初構程式碼區塊中的位元組數目。|  
-|[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|擷取已儲存的暫存器推送到堆疊上的位元組數目。|  
-|[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|擷取用來計算目前的函式的呼叫之前設定的暫存器的程式字串。|  
-|[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|擷取指出該系統例外狀況處理的旗標是作用中。|  
-|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|擷取旗標，表示C++例外狀況處理是作用中。|  
-|[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|擷取指出區塊包含函式的進入點的旗標。|  
-|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|擷取指出基底的指標會配置此位址範圍中的程式碼的旗標。 這個方法已淘汰。|  
-|[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|擷取編緝器特定畫面格型別。|  
-|[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|擷取框架資料介面以提供封入函式。|  
-|[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|執行堆疊回溯並傳回在堆疊查核行程框架介面中的暫存器的目前狀態。|  
+|[IDiaFrameData::get_addressSection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|抓取框架的程式碼位址區段部分。|  
+|[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|抓取框架的程式碼位址位移部分。|  
+|[IDiaFrameData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaframedata-get-relativevirtualaddress.md)|抓取框架的程式碼 (RVA) 的影像相對虛擬位址。|  
+|[IDiaFrameData::get_virtualAddress](../../debugger/debug-interface-access/idiaframedata-get-virtualaddress.md)|抓取框架的程式碼 (VA) 的虛擬位址。|  
+|[IDiaFrameData::get_lengthBlock](../../debugger/debug-interface-access/idiaframedata-get-lengthblock.md)|抓取框架所描述之程式碼區塊的長度（以位元組為單位）。|  
+|[IDiaFrameData::get_lengthLocals](../../debugger/debug-interface-access/idiaframedata-get-lengthlocals.md)|抓取推播于堆疊上的本機變數位元組數目。|  
+|[IDiaFrameData::get_lengthParams](../../debugger/debug-interface-access/idiaframedata-get-lengthparams.md)|抓取堆疊上推送之參數的位元組數目。|  
+|[IDiaFrameData::get_maxStack](../../debugger/debug-interface-access/idiaframedata-get-maxstack.md)|抓取框架中堆疊上推送的位元組數目上限。|  
+|[IDiaFrameData::get_lengthProlog](../../debugger/debug-interface-access/idiaframedata-get-lengthprolog.md)|抓取區塊中序言程式碼的位元組數目。|  
+|[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|抓取推送至堆疊的已儲存暫存器位元組數目。|  
+|[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|抓取在呼叫目前的函式之前，用來計算暫存器集的程式字串。|  
+|[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|抓取表示系統例外狀況處理作用中的旗標。|  
+|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|抓取指出 c + + 例外狀況處理作用中的旗標。|  
+|[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|抓取指出區塊包含函式進入點的旗標。|  
+|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|抓取旗標，這個旗標表示已為此位址範圍內的程式碼配置基底指標。 此方法已被取代。|  
+|[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|抓取編譯器特定的框架型別。|  
+|[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|抓取封閉函數的框架資料介面。|  
+|[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|執行堆疊回溯，並傳回堆疊逐步解說框架介面中暫存器的目前狀態。|  
   
 ## <a name="remarks"></a>備註  
- 適用於框架的詳細資料適用於位址和區塊長度所指定的位址範圍內的執行點。  
+ 框架的可用詳細資料，是位址範圍內的執行點，以位址和區塊長度表示。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 取得這個介面，藉由呼叫[idiaenumframedata:: Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)或是[idiaenumframedata:: Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)方法。 請參閱[IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)介面，如需詳細資訊。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 藉由呼叫 [IDiaEnumFrameData：： Next](../../debugger/debug-interface-access/idiaenumframedata-next.md) 或 [IDiaEnumFrameData：： Item](../../debugger/debug-interface-access/idiaenumframedata-item.md) 方法來取得這個介面。 如需詳細資訊，請參閱 [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) 介面。  
   
 ## <a name="example"></a>範例  
- 此範例會列印出的屬性`IDiaFrameData`物件。 請參閱[IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)介面，如需如何的範例`IDiaFrameData`介面取得。  
+ 這個範例會列印出物件的屬性 `IDiaFrameData` 。 如需如何取得介面的範例，請參閱 [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) 介面 `IDiaFrameData` 。  
   
 ```cpp#  
 void PrintFrameData(IDiaFrameData* pFrameData){  
@@ -116,14 +116,14 @@ void PrintFrameData(IDiaFrameData* pFrameData){
 ```  
   
 ## <a name="requirements"></a>需求  
- 標頭：dia2.h  
+ 標頭： Dia2。h  
   
- 程式庫： diaguids.lib  
+ 程式庫： diaguids .lib  
   
- DLL: msdia80.dll  
+ DLL： msdia80.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [ (Debug 介面存取 SDK) 介面 ](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
- [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)   
+ [IDiaEnumFrameData：： Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)   
  [IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)

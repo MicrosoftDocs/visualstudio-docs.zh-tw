@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 50e278e858ea086c83b29ef4eebf6b48ee8e477e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773305"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>呼叫端/被呼叫端檢視 - .NET 記憶體取樣資料
@@ -32,15 +32,15 @@ ms.locfileid: "74773305"
 |資料行|描述|
 |------------|-----------------|
 |**處理序識別碼**|分析執行的處理序 ID (PID)。|
-|**流程名稱**|處理序的名稱。|
+|**進程名稱**|處理序的名稱。|
 |**模組名稱**|包含該函式的模組名稱。|
 |**模組路徑**|包含該函式的模組路徑。|
-|**原始檔案**|含有這個函式定義的原始程式檔。|
+|**來源檔案**|含有這個函式定義的原始程式檔。|
 |**函數名稱**|函式的完整格式名稱。|
 |**函式行號**|原始程式檔中這個函式的開頭行號。|
-|**功能位址**|函式的位址。|
+|**函數位址**|函式的位址。|
 |**類型**|函式的內容︰<br /><br /> **0** - 目前的函式<br /><br /> **1** - 呼叫目前函式的函式<br /><br /> **2** - 目前的函式所呼叫的函式<br /><br /> 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|
-|**水準**|函式在呼叫樹狀圖中的深度。 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|
+|**Level**|函式在呼叫樹狀圖中的深度。 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|
 |**內含配置**|- 若為目前的函式，這是函式在分析執行中所配置的物件數目。 這個數目包括在被呼叫端函式中所建立的物件。<br />- 若為呼叫端函式，這是目前函式 (從此函式的呼叫所產生) 的內含配置數目。<br />- 若為被呼叫端函式，這是此函式之執行個體 (由目前函式呼叫) 所配置的物件數目。 這個數目包含由被呼叫端函式所呼叫之函式所做的配置。|
 |**內含配置 %**|在分析執行中建立的所有物件中，屬於此函式之內含配置的百分比。|
 |**專有配置**|- 若為目前的函式，這是當函式執行函式主體程式碼時 (即函式位於呼叫堆疊的最上方) 所建立的物件數目。 這個數目不包含由此函式呼叫之函式建立的物件。<br />- 若為呼叫端函式，這是目前函式 (從此函式的呼叫所產生) 的專有配置數目。<br />- 若為被呼叫端函式，這是此函式之執行個體 (由目前函式呼叫) 所建立的物件數目。 這個數目不包含被呼叫端函式呼叫之函式建立的物件。|
@@ -51,7 +51,7 @@ ms.locfileid: "74773305"
 |**專有位元組 %**|在分析執行中配置的所有記憶體位元組中，屬於此函式之專有配置的百分比。|
 
 ## <a name="see-also"></a>另請參閱
-- [操作方式：自訂報表檢視列](../profiling/how-to-customize-report-view-columns.md)
-- [調用方/被叫方視圖 - .NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)
+- [呼叫端/被呼叫端視圖-.NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
 - [呼叫端/被呼叫端檢視 - 取樣資料](../profiling/caller-callee-view-sampling-data.md)
-- [調用方/被叫方視圖 - 檢測資料](../profiling/caller-callee-view-instrumentation-data.md)
+- [呼叫端/被呼叫端視圖-檢測資料](../profiling/caller-callee-view-instrumentation-data.md)

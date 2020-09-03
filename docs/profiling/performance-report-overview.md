@@ -14,19 +14,19 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 517156677a6d3711fa5dc2e4a15629a55229cfe2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772228"
 ---
 # <a name="performance-report-overview"></a>效能報表概觀
 您可以在 Visual Studio Team System Development Edition 整合式開發環境 (IDE) 的 [效能報告]**** 視窗中檢視效能工作階段的程式碼剖析資料。 程式碼剖析資料儲存在 .vsp 和 .vsps 檔案中。 [報表檢視] 視窗可讓您檢視和分析應用程式效能問題。
 
 > [!CAUTION]
-> 程式碼剖析資料檔案包含機密資訊，例如電腦名稱、作業系統版本、檔案路徑、記憶體資訊和其他電腦設定資訊。 您應該嚴格控制資料的分佈，這兩個數據都位於其本機 中。*vsp*格式以及匯出到 時。*csv*或 。*xml*檔。
+> 程式碼剖析資料檔案包含機密資訊，例如電腦名稱、作業系統版本、檔案路徑、記憶體資訊和其他電腦設定資訊。 您應該在其原生中維持對資料散發的嚴格控制。*.vsp* 格式以及將它匯出至時。*csv* 或。*xml* 檔案。
 >
-> 如果作為性能會話的一部分收集事件跟蹤資料，則事件跟蹤日誌 （中可能會出現其他資訊。*etl*） 檔。 這項資訊包括您的網域和使用者名稱；因此，您應嚴格控管記錄檔的散發。
+> 如果在效能會話中收集事件追蹤資料，其他資訊可能會出現在事件追蹤記錄檔 ( 中。*etl*) 檔。 這項資訊包括您的網域和使用者名稱；因此，您應嚴格控管記錄檔的散發。
 
 ## <a name="performance-report-window"></a>效能報表視窗
  [效能報告] 視窗是用來檢視、管理及篩選效能資料的工具視窗，並包含可自訂的查詢控制項。
@@ -64,7 +64,7 @@ ms.locfileid: "74772228"
  [函式] 檢視列出程式碼剖析期間呼叫的函式。 如需詳細資訊，請參閱[函式檢視](../profiling/functions-view.md)。
 
 ### <a name="line-view"></a>程式行檢視
- [程式行] 檢視可讓您檢視取樣程式碼剖析期間所執行的特定原始程式碼行。 有關詳細資訊，請參閱[行視圖](../profiling/lines-view.md)。
+ [程式行] 檢視可讓您檢視取樣程式碼剖析期間所執行的特定原始程式碼行。 如需詳細資訊，請參閱 [線條視圖](../profiling/lines-view.md)。
 
 ### <a name="instruction-pointer-ip-view"></a>指令指標 (IP) 檢視
  [指令指標] 檢視可讓您檢視取樣程式碼剖析期間所執行的特定指標。 如需詳細資訊，請參閱[指令指標 (IP) 檢視](../profiling/instruction-pointers-ips-view.md)。
@@ -95,5 +95,5 @@ ms.locfileid: "74772228"
 - **匯出** - 將目前的報告儲存在 .CVS 格式或 .XML 格式檔案，提供選項以儲存不同的檢視。
 
 ## <a name="see-also"></a>另請參閱
-- [分析性能工具資料](../profiling/analyzing-performance-tools-data.md)
-- [性能報表檢視](../profiling/performance-report-views.md)
+- [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)
+- [效能報表檢視](../profiling/performance-report-views.md)

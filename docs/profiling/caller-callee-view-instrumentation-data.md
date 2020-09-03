@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 551c183dd9c368b1af16c1fe52b36762f4e71504
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773292"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>呼叫端/被呼叫端檢視 - 檢測資料
@@ -32,15 +32,15 @@ ms.locfileid: "74773292"
 
 |資料行|描述|
 |------------|-----------------|
-|**函數名稱**|函數的名稱。|
-|**功能位址**|函式的位址。|
+|**函數名稱**|函式的名稱。|
+|**函數位址**|函式的位址。|
 |**函式行號**|原始程式檔中這個函式的開頭行號。|
 |**呼叫次數**|呼叫此函式的總次數。|
-|**原始檔案**|含有這個函式定義的原始程式檔。|
+|**來源檔案**|含有這個函式定義的原始程式檔。|
 |**模組名稱**|包含該函式的模組名稱。|
 |**模組路徑**|包含該函式的模組路徑。|
 |**處理序識別碼**|分析執行的處理序 ID (PID)。|
-|**流程名稱**|處理序的名稱。|
+|**進程名稱**|處理序的名稱。|
 |**時間專有探查額外負荷**|檢測對這個函式造成的時間額外負荷。 已經從所有專有時間減去探查額外負荷。|
 |**時間內含探查額外負荷**|檢測對這個函式及其子函式所造成的時間額外負荷。 已經從所有內含時間減去探查額外負荷。|
 |**類型**|函式的內容︰<br /><br /> **0** - 目前的函式<br /><br /> **1** - 呼叫目前函式的函式<br /><br /> **2** - 目前的函式所呼叫的函式<br /><br /> 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|
@@ -91,7 +91,7 @@ ms.locfileid: "74773292"
 |**最小應用程式專屬 (Application Exclusive) 時間**|在此內容中呼叫此函式的最小應用程式專屬 (Application Exclusive) 時間。|
 
 ## <a name="see-also"></a>另請參閱
-- [操作方式：自訂報表檢視列](../profiling/how-to-customize-report-view-columns.md)
+- [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)
 - [呼叫端/被呼叫端檢視 - 取樣資料](../profiling/caller-callee-view-sampling-data.md)
-- [調用方/被叫方視圖 - .NET 記憶體採樣資料](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
-- [調用方/被叫方視圖 - .NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [呼叫端/被呼叫端視圖-.NET 記憶體取樣資料](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [呼叫端/被呼叫端視圖-.NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

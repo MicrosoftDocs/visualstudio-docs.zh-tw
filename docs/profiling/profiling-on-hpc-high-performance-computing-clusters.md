@@ -21,10 +21,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772116"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>在 HPC (高效能運算) 叢集上進行分析
@@ -47,13 +47,13 @@ ms.locfileid: "74772116"
 
     1. `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`
 
-    2. `clusrun /all /scheduler:`*%頭諾德%*`shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
+    2. `clusrun /all /scheduler:`*% 前端節點%*`shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
 | | |
 |------------------| - |
-| *%頭諾德%* | 叢集前端節點的名稱。 |
+| *頭* | 叢集前端節點的名稱。 |
 | *%FxPath%* | .NET Framework 4 安裝程式的路徑。 在 Visual Studio 安裝媒體的路徑是︰WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
 | *%ProfilerPath%* | 獨立版本的程式碼剖析工具安裝程式路徑。 在 Visual Studio 安裝媒體的路徑是︰Standalone Profiler\x64\vs_profiler.exe |
 
@@ -71,7 +71,7 @@ ms.locfileid: "74772116"
 
    - 若要進行程式碼剖析的二進位檔不在開啟專案中，請選取 [可執行檔 (.EXE 檔)]**** 選項。
 
-4. 按 [下一步]****。
+4. 按一下 [下一步]  。
 
 5. 在精靈的第三個頁面上：
 
@@ -83,7 +83,7 @@ ms.locfileid: "74772116"
 
     - 在 [部署位置]**** 中，指定 HPC 伺服器用以佈置部署映像的目錄路徑。
 
-6. 按 [下一步]****。
+6. 按一下 [下一步]  。
 
 7. 在精靈的第四個頁面上：
 
@@ -97,13 +97,13 @@ ms.locfileid: "74772116"
 
          若要進行程式碼剖析的處理序在 HPC 叢集中特定節點上執行，請選取 [依節點排列的設定檔]**** 選項，然後從下拉式清單中選取該節點。
 
-8. 按 [下一步]****。
+8. 按一下 [下一步]  。
 
 9. 在精靈的第五個頁面上，您可以選擇立即啟動分析工具和程式碼剖析處理序，或稍後使用 [效能總管] 來啟動程式碼剖析。
 
     - 選取 [在精靈完成後啟動分析]**** 以立即啟動程式碼剖析，或清除該核取方塊以手動方式啟動程式碼剖析。
 
-10. 按一下 **[完成]**。
+10. 按一下 [完成]  。
 
 ## <a name="set-hpc-profiling-properties-by-using-performance-session-property-pages"></a>使用效能工作階段屬性頁來設定 HPC 程式碼剖析屬性
 
@@ -113,7 +113,7 @@ ms.locfileid: "74772116"
 
 1. 如有必要，請在 [效能總管] 中開啟效能工作階段 (.psess) 檔案。 在 [檔案]**** 功能表上，按一下 [開啟]****，然後選擇檔案。
 
-2. 在性能資源管理器中，按右鍵性能會話名稱，然後按一下**屬性**。
+2. 在效能總管中，以滑鼠右鍵按一下效能會話名稱，然後按一下 [ **屬性**]。
 
 3. 在 [屬性頁] 對話方塊中，請使用下列其中一種方法：
 

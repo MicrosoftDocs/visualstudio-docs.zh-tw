@@ -11,10 +11,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 986186c0fb4a6819d85f9b3771d89eeb6d96e893
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76158835"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Visual Studio 核心編輯器 (隨附於 Visual Studio Team Explorer 2017)
@@ -28,7 +28,7 @@ ms.locfileid: "76158835"
 元件識別碼 | 名稱 | 版本 | 相依性類型
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.CoreEditor | Visual Studio 核心編輯器 | 15.8.27729.1 | 必要
-Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ 使用者的 Visual Studio 起始畫面 | 15.0.27128.1 | 選用
+Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ 使用者的 Visual Studio 起始畫面 | 15.0.27128.1 | 選擇性
 
 ## <a name="unaffiliated-components"></a>非附屬元件
 

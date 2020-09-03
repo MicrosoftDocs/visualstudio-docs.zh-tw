@@ -10,17 +10,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772663"
 ---
 # <a name="overviews-performance-tools"></a>概觀 (效能工具)
 本節提供 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具的概念與術語概觀；您可以使用這套工具來測量開發中應用程式的效能特性。
 
 ## <a name="in-this-section"></a>本節內容
-- [性能會話概述](../profiling/performance-session-overview.md)
+- [效能工作階段概觀](../profiling/performance-session-overview.md)
 
  學習使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具進行效能分析的基本概念。
 
@@ -58,5 +58,5 @@ ms.locfileid: "74772663"
 
 ## <a name="see-also"></a>另請參閱
 
-- [開始使用](../profiling/getting-started-with-performance-tools.md)
+- [快速入門](../profiling/getting-started-with-performance-tools.md)
 - [效能總管](../profiling/performance-explorer.md)

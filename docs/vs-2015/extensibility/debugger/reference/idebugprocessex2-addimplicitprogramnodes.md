@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::AddImplicitProgramNodes |Microsoft Docs
+title: IDebugProcessEx2：： AddImplicitProgramNodes |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: faca728144bde572d8a1d3424fbfcf908403d679
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202824"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個方法會將每個偵錯引擎 (DE) 指定的程式 節點。  
+這個方法會為每個偵錯工具新增程式節點， (DE) 指定。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,19 +44,19 @@ int AddImplicitProgramNodes(
   
 #### <a name="parameters"></a>參數  
  `guidLaunchingEngine`  
- [in]`GUID`的規定是用來啟動程式 （並加入自己的程式節點會假設）。  
+ 在 `GUID` 要用來啟動程式 (的 DE，並假設為) 加入自己的程式節點。  
   
  `rgguidSpecificEngines`  
- [in]陣列`GUID`的 DEs 節點將會新增的程式。  
+ 在 `GUID`將新增程式節點的 DEs 陣列。  
   
  `celtSpecificEngines`  
- [in]數目`GUID`中的 s`rgguidSpecificEngines`陣列。  
+ 在 `GUID`陣列中的數目 `rgguidSpecificEngines` 。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- [程式節點](../../../extensibility/debugger/program-nodes.md)將會加入每個 DE 列於`rgguidSpecificEngines`— 但不包括啟動引擎 (中所指定`guidLaunchingEngine`)，它會啟動程式時，將其本身的程式節點會假定為。  
+ 系統會為中所列的每個取消加入[程式節點](../../../extensibility/debugger/program-nodes.md)， `rgguidSpecificEngines` 包括) 中所指定的啟動引擎 (`guidLaunchingEngine` ，這會在啟動程式時，假設要加入自己的程式節點。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   

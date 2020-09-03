@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d8ec7d6508ec025a2b2005754da03bdd4db38943
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300260"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>在 Visual Studio 中編譯與建置
@@ -29,10 +29,10 @@ ms.locfileid: "74300260"
 ## <a name="choosing-a-build-method"></a>選擇建置方法
  您可以在 IDE 中使用預設組建選項、在命令提示字元，或使用 Team Foundation Build 來建置應用程式。 每個選項都使用 MSBuild 作為基礎的技術，且每一種方法都具有特定的優點，如下表所示。
 
-|建置方法|優點|詳細資訊|
+|建置方法|優點|取得詳細資訊|
 |------------------|--------------|--------------------------|
 |使用 IDE|- 您可以更輕鬆地立即建立和執行組建。<br />- 您可以針對 C++ 和 C# 專案執行多處理器組建。<br />- 您可以自訂建置系統的某些層面。|[在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)|
-|執行 MSBuild 命令列|- 您可以建置專案，而不需要安裝 Visual Studio。<br />- 您可以針對所有專案類型執行多處理器組建。<br />- 您可以自訂大部分的建置系統。|[ MSBuild](../msbuild/msbuild.md)|
+|執行 MSBuild 命令列|- 您可以建置專案，而不需要安裝 Visual Studio。<br />- 您可以針對所有專案類型執行多處理器組建。<br />- 您可以自訂大部分的建置系統。|[Msbuild](../msbuild/msbuild.md)|
 |使用 Team Foundation Build|-  您可以自動化您的建置流程。 例如，您可以每晚或在每次簽入程式碼時建置一或多個專案。 您也可以在共用的組置伺服器上建置專案，而不是在開發電腦上建置。<br />- 您可以快速指定您想要建置的程式碼、想要執行的測試，和其他常見的選項。<br />- 您可以修改建置工作流程，並視需要建立建置活動執行深入自訂的工作。|[建置應用程式](/azure/devops/pipelines/index)|
 
 ## <a name="building-from-the-ide"></a>從 IDE 建置
@@ -53,4 +53,4 @@ ms.locfileid: "74300260"
 - 使用平行組建，以改善建置效能。 如需詳細資訊，請參閱[同時建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)或部落格文章 [Tuning C++ build parallelism](https://blogs.msdn.microsoft.com/msbuild/2010/03/07/tuning-c-build-parallelism-in-vs2010/) (調整 C++ 組建平行處理原則)。
 
 ## <a name="see-also"></a>另請參閱
- [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)[了解組建組態](../ide/understanding-build-configurations.md)[了解組建平台](../ide/understanding-build-platforms.md)[建置 （編譯） 網站專案](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [操作說明：建立及移除專案相依性](../ide/how-to-create-and-remove-project-dependencies.md)
+ [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md) [了解組建組態](../ide/understanding-build-configurations.md) [了解組建平台](../ide/understanding-build-platforms.md) [建置 （編譯） 網站專案](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [操作說明：建立及移除專案相依性](../ide/how-to-create-and-remove-project-dependencies.md)

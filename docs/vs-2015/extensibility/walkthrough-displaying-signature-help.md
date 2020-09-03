@@ -11,50 +11,50 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 280b5b517089ad9e5b38cb00dc9b14c68253d1e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202052"
 ---
-# <a name="walkthrough-displaying-signature-help"></a>逐步解說：顯示簽章說明
+# <a name="walkthrough-displaying-signature-help"></a>逐步解說︰顯示簽章說明
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-簽章說明 (也稱為*參數資訊*) 方法的簽章顯示工具提示中，當使用者輸入的參數清單開始字元 （通常是左括號）。 依照所輸入的參數和參數分隔符號 （通常為逗號），工具提示會更新以顯示下一個參數以粗體顯示。 您可以定義簽章說明中的內容語言服務，或您可以定義您自己的檔案名稱擴充功能和內容類型，並顯示只是該類型的簽章說明或您可以顯示其簽章說明現有的內容類型 (例如，"text")。 本逐步解說示範如何以顯示簽章說明 「 文字 」 內容類型。  
+簽章說明 (也稱為 *參數資訊*) 當使用者輸入參數清單開始字元 (通常是左括弧) 時，就會在工具提示中顯示方法的簽章。 作為參數和參數分隔符號 (通常會輸入逗點) ，工具提示會更新以顯示下一個參數（以粗體顯示）。 您可以在語言服務的內容中定義簽章說明，也可以定義自己的副檔名和內容類型，並只顯示該類型的簽章說明，或者可以針對現有的內容類型顯示簽章說明 (例如「文字」 ) 。 本逐步解說會示範如何顯示「文字」內容類型的簽章說明。  
   
- 簽章說明通常會觸發輸入特定的字元，例如，"("（左括號），以及輸入另一個字元，例如已解除 」) 」 （右括號）。 IntelliSense 功能所觸發的輸入字元可以使用來實作命令處理常式的按鍵輸入 (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面) 和實作的處理常式提供者<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>介面。 若要建立簽章說明來源，也就是加入簽章說明中的簽章的清單，實作<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>介面和實作的來源提供者<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>介面。 提供者是 Managed Extensibility Framework (MEF) 元件組件，而且會負責將匯出的來源和控制器類別及匯入服務和代理程式，比方說， <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>，可以讓您在文字緩衝區中，瀏覽，<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>，此觸發程序的簽章說明工作階段。  
+ 簽章說明通常是藉由輸入特定字元來觸發，例如 " (" (左括弧) ，然後輸入另一個字元來關閉，例如 ") " (右括弧) 。 藉由輸入字元所觸發的 IntelliSense 功能，可以使用命令處理常式來處理 (介面) 的按鍵 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ，以及處理介面的處理常式提供者 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> 。 若要建立簽章說明來源（這是參與簽章說明的簽章清單），請執行 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> 介面和實介面的來源提供者 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> 。 提供者 Managed Extensibility Framework (MEF) 元件部分，並負責匯出來源和控制器類別，以及匯入服務和訊息代理程式，例如，可 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> 讓您在文字緩衝區中流覽，以及觸發簽章說明 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker> 會話的。  
   
- 本逐步解說示範如何實作簽章說明識別碼的硬式編碼集。 在完整的實作中，語言則是負責提供該內容項目。  
+ 本逐步解說示範如何針對一組硬式編碼的識別碼來執行簽章說明。 在完整的執行中，語言會負責提供該內容。  
   
-## <a name="prerequisites"></a>必要條件  
- 從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+## <a name="prerequisites"></a>Prerequisites  
+ 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-a-mef-project"></a>建立 MEF 專案  
   
 #### <a name="to-create-a-mef-project"></a>建立 MEF 專案  
   
-1. 建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為 `SignatureHelpTest`。  
+1. 建立 c # VSIX 專案。  (在 [ **新增專案** ] 對話方塊中，選取 [ **Visual c #/** 擴充性]，然後選取 [ **VSIX 專案**]。 ) 為方案命名 `SignatureHelpTest` 。  
   
-2. 將編輯器分類器項目範本加入專案。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
+2. 將編輯器分類專案範本加入至專案。 如需詳細資訊，請參閱 [使用編輯器專案範本建立延伸](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
 3. 刪除現有類別檔案。  
   
-4. 將下列參考加入專案，並確認**CopyLocal**設定為`false`:  
+4. 將下列參考加入至專案，並確認 **CopyLocal** 設定為 `false` ：  
   
-     Microsoft.VisualStudio.Editor  
+     VisualStudio 編輯器  
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-     Microsoft.VisualStudio.OLE.Interop  
+     VisualStudio： Interop  
   
-     Microsoft.VisualStudio.Shell.14.0  
+     VisualStudio. 14。0  
   
-     Microsoft.VisualStudio.TextManager.Interop  
+     VisualStudio. TextManager. Interop  
   
-## <a name="implementing-signature-help-signatures-and-parameters"></a>實作簽章協助簽章和參數  
- 簽章協助來源為基礎實作的簽章<xref:Microsoft.VisualStudio.Language.Intellisense.ISignature>，其中每一個包含實作的參數<xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>。 在完整的實作中，這項資訊會取自語言文件中，但在此範例中，簽章是硬式編碼。  
+## <a name="implementing-signature-help-signatures-and-parameters"></a>執行簽章說明簽章和參數  
+ 簽章說明來源是以執行的簽章為基礎 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature> ，其中每一個都包含可執行檔參數 <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter> 。 在完整的執行中，這項資訊是從語言檔取得的，但在此範例中，簽章是硬式編碼的。  
   
-#### <a name="to-implement-the-signature-help-signatures-and-parameters"></a>若要實作的簽章說明的簽章和參數  
+#### <a name="to-implement-the-signature-help-signatures-and-parameters"></a>若要執行簽章說明簽名和參數  
   
 1. 加入類別檔案，並將它命名為 `SignatureHelpSource`。  
   
@@ -63,188 +63,188 @@ ms.locfileid: "68202052"
      [!code-csharp[VSSDKSignatureHelpTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#1)]
      [!code-vb[VSSDKSignatureHelpTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#1)]  
   
-3. 新增名為類別`TestParameter`實作<xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>。  
+3. 加入名為 `TestParameter` 的類別，該類別會執行 <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter> 。  
   
      [!code-csharp[VSSDKSignatureHelpTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#2)]
      [!code-vb[VSSDKSignatureHelpTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#2)]  
   
-4. 新增將所有屬性的建構函式。  
+4. 加入可設定所有屬性的函式。  
   
      [!code-csharp[VSSDKSignatureHelpTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#3)]
      [!code-vb[VSSDKSignatureHelpTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#3)]  
   
-5. 新增的屬性<xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>。  
+5. 加入的屬性 <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter> 。  
   
      [!code-csharp[VSSDKSignatureHelpTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#4)]
      [!code-vb[VSSDKSignatureHelpTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#4)]  
   
-6. 新增名為類別`TestSignature`實作<xref:Microsoft.VisualStudio.Language.Intellisense.ISignature>。  
+6. 加入名為 `TestSignature` 的類別，該類別會執行 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature> 。  
   
      [!code-csharp[VSSDKSignatureHelpTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#5)]
      [!code-vb[VSSDKSignatureHelpTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#5)]  
   
-7. 加入一些私用欄位。  
+7. 新增一些私用欄位。  
   
      [!code-csharp[VSSDKSignatureHelpTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#6)]
      [!code-vb[VSSDKSignatureHelpTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#6)]  
   
-8. 新增的建構函式設定的欄位，並訂閱<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>事件。  
+8. 加入可設定欄位及訂閱事件的函式 <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> 。  
   
      [!code-csharp[VSSDKSignatureHelpTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#7)]
      [!code-vb[VSSDKSignatureHelpTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#7)]  
   
-9. 宣告`CurrentParameterChanged`事件。 當使用者填滿其中一種簽章中的參數時，會引發這個事件。  
+9. 宣告 `CurrentParameterChanged` 事件。 當使用者填入簽章中的其中一個參數時，就會引發此事件。  
   
      [!code-csharp[VSSDKSignatureHelpTest#8](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#8)]
      [!code-vb[VSSDKSignatureHelpTest#8](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#8)]  
   
-10. 實作<xref:Microsoft.VisualStudio.Language.Intellisense.ISignature.CurrentParameter%2A>屬性，因此它會引發`CurrentParameterChanged`事件屬性值變更時。  
+10. 執行 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature.CurrentParameter%2A> 屬性，以便在 `CurrentParameterChanged` 屬性值變更時引發事件。  
   
      [!code-csharp[VSSDKSignatureHelpTest#9](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#9)]
      [!code-vb[VSSDKSignatureHelpTest#9](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#9)]  
   
-11. 新增方法以引發`CurrentParameterChanged`事件。  
+11. 加入引發事件的方法 `CurrentParameterChanged` 。  
   
      [!code-csharp[VSSDKSignatureHelpTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#10)]
      [!code-vb[VSSDKSignatureHelpTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#10)]  
   
-12. 新增方法，藉由比較中的逗號數目來計算目前參數<xref:Microsoft.VisualStudio.Language.Intellisense.ISignature.ApplicableToSpan%2A>簽章中的逗號數目。  
+12. 藉由比較中的逗號數目與簽章中的逗號數目，來新增計算目前參數的方法 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature.ApplicableToSpan%2A> 。  
   
      [!code-csharp[VSSDKSignatureHelpTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#11)]
      [!code-vb[VSSDKSignatureHelpTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#11)]  
   
-13. 新增事件處理常式<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>呼叫的事件`ComputeCurrentParameter()`方法。  
+13. 加入呼叫方法之事件的事件處理常式 <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> `ComputeCurrentParameter()` 。  
   
      [!code-csharp[VSSDKSignatureHelpTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#12)]
      [!code-vb[VSSDKSignatureHelpTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#12)]  
   
-14. 實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature.ApplicableToSpan%2A> 屬性。 此屬性會保留<xref:Microsoft.VisualStudio.Text.ITrackingSpan>對應的簽章套用至緩衝區中的文字範圍。  
+14. 實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature.ApplicableToSpan%2A> 屬性。 這個屬性會保留 <xref:Microsoft.VisualStudio.Text.ITrackingSpan> 對應到簽章所套用的緩衝區中之文字範圍的。  
   
      [!code-csharp[VSSDKSignatureHelpTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#13)]
      [!code-vb[VSSDKSignatureHelpTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#13)]  
   
-15. 實作其他參數。  
+15. 執行其他參數。  
   
      [!code-csharp[VSSDKSignatureHelpTest#14](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#14)]
      [!code-vb[VSSDKSignatureHelpTest#14](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#14)]  
   
-## <a name="implementing-the-signature-help-source"></a>實作簽章說明來源  
- 簽章說明來源是您要為其提供資訊的簽章組。  
+## <a name="implementing-the-signature-help-source"></a>執行簽章說明來源  
+ 簽章說明來源是一組您提供資訊的簽章。  
   
-#### <a name="to-implement-the-signature-help-source"></a>若要實作的簽章說明來源  
+#### <a name="to-implement-the-signature-help-source"></a>若要執行簽章說明來源  
   
-1. 新增名為類別`TestSignatureHelpSource`實作<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>。  
+1. 加入名為 `TestSignatureHelpSource` 的類別，該類別會執行 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> 。  
   
      [!code-csharp[VSSDKSignatureHelpTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#15)]
      [!code-vb[VSSDKSignatureHelpTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#15)]  
   
-2. 加入至文字的緩衝區的參考。  
+2. 加入文字緩衝區的參考。  
   
      [!code-csharp[VSSDKSignatureHelpTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#16)]
      [!code-vb[VSSDKSignatureHelpTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#16)]  
   
-3. 新增設定文字緩衝區和簽章說明來源提供者的建構函式。  
+3. 加入可設定文字緩衝區和簽章說明來源提供者的函式。  
   
      [!code-csharp[VSSDKSignatureHelpTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#17)]
      [!code-vb[VSSDKSignatureHelpTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#17)]  
   
-4. 實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.AugmentSignatureHelpSession%2A> 方法。 在此範例中，簽章是以硬式編碼，但完整的實作中您會從語言文件取得這項資訊。  
+4. 實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.AugmentSignatureHelpSession%2A> 方法。 在此範例中，簽章是硬式編碼的，但在完整的執行中，您可以從語言檔取得這項資訊。  
   
      [!code-csharp[VSSDKSignatureHelpTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#18)]
      [!code-vb[VSSDKSignatureHelpTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#18)]  
   
-5. Helper 方法`CreateSignature()`提供僅供說明。  
+5. Helper 方法 `CreateSignature()` 僅提供說明。  
   
      [!code-csharp[VSSDKSignatureHelpTest#19](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#19)]
      [!code-vb[VSSDKSignatureHelpTest#19](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#19)]  
   
-6. 實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.GetBestMatch%2A> 方法。 在此範例中，有兩個簽章，每個都有兩個參數。 因此，這個方法不需要。 在更完整的實作中，在其中多個簽章說明來源可供使用，這個方法用來決定最高優先順序簽章說明來源是否可以提供相符的簽章。 如果不行，方法會傳回 null，並提供符合項目要求的下一個最高優先順序的來源。  
+6. 實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.GetBestMatch%2A> 方法。 在此範例中，只有兩個簽章，每個都有兩個參數。 因此，不需要這個方法。 在更完整的執行中，有一個以上的簽章說明來源可供使用時，此方法會用來決定最高優先順序的簽章說明來源是否可以提供相符的簽章。 如果無法這樣做，方法會傳回 null，並要求下一個最高優先順序的來源提供相符的結果。  
   
      [!code-csharp[VSSDKSignatureHelpTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#20)]
      [!code-vb[VSSDKSignatureHelpTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#20)]  
   
-7. 實作 dispose （） 方法：  
+7. 執行 Dispose ( # A1 方法：  
   
      [!code-csharp[VSSDKSignatureHelpTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#21)]
      [!code-vb[VSSDKSignatureHelpTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#21)]  
   
-## <a name="implementing-the-signature-help-source-provider"></a>實作簽章說明來源提供者  
- 簽章說明來源提供者是負責匯出 Managed Extensibility Framework (MEF) 元件組件，以及具現化的簽章說明來源。  
+## <a name="implementing-the-signature-help-source-provider"></a>執行簽章協助來源提供者  
+ 簽章說明來源提供者負責匯出 Managed Extensibility Framework (MEF) 元件部分，以及將簽章說明來源具現化。  
   
-#### <a name="to-implement-the-signature-help-source-provider"></a>若要實作的簽章說明來源提供者  
+#### <a name="to-implement-the-signature-help-source-provider"></a>若要執行簽章協助來源提供者  
   
-1. 新增名為的類別`TestSignatureHelpSourceProvider`可實<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>，並將它與匯出<xref:Microsoft.VisualStudio.Utilities.NameAttribute>，則<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>為"text"，和<xref:Microsoft.VisualStudio.Utilities.OrderAttribute>的 Before ="default"。  
+1. 加入名為的類別， `TestSignatureHelpSourceProvider` 該類別 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> 會執行，並使用 <xref:Microsoft.VisualStudio.Utilities.NameAttribute> <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text" 的、，以及 <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> Before = "default" 的來匯出。  
   
      [!code-csharp[VSSDKSignatureHelpTest#22](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#22)]
      [!code-vb[VSSDKSignatureHelpTest#22](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#22)]  
   
-2. 實作<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider.TryCreateSignatureHelpSource%2A>具現化`TestSignatureHelpSource`。  
+2. 藉 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider.TryCreateSignatureHelpSource%2A> 由具現化來實行 `TestSignatureHelpSource` 。  
   
      [!code-csharp[VSSDKSignatureHelpTest#23](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#23)]
      [!code-vb[VSSDKSignatureHelpTest#23](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#23)]  
   
-## <a name="implementing-the-command-handler"></a>實作命令處理常式  
- 簽章說明通常會觸發 (字元和已解除的) 字元。 您可以藉由實作來處理這些按鍵<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>以便觸發當它收到的簽章說明工作階段 (字元加上已知的方法名稱，並關閉工作階段，當它收到) 字元。  
+## <a name="implementing-the-command-handler"></a>執行命令處理常式  
+ 簽章說明通常是由 ( 字元所觸發，並由 ) 字元所關閉。 您可以藉由執行來處理這些按鍵， <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 使其在收到 ( 字元（前面有已知的方法名稱）時觸發簽章說明會話，並在收到 ) 字元時，關閉會話。  
   
-#### <a name="to-implement-the-command-handler"></a>若要實作的命令處理常式  
+#### <a name="to-implement-the-command-handler"></a>若要執行命令處理常式  
   
-1. 新增名為類別`TestSignatureHelpCommand`實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>。  
+1. 加入名為 `TestSignatureHelpCommand` 的類別，該類別會執行 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 。  
   
      [!code-csharp[VSSDKSignatureHelpTest#24](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#24)]
      [!code-vb[VSSDKSignatureHelpTest#24](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#24)]  
   
-2. 新增私用欄位<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>配接器 （可讓您將命令處理常式新增至鏈結的命令處理常式）、 [文字] 檢視、 簽章說明中的訊息代理程式和工作階段中， <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>，和 [下一步] <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>。  
+2. 新增 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 介面卡 (的私用欄位，可讓您將命令處理常式新增至命令處理常式鏈) 、文字視圖、簽章說明訊息代理程式和會話、 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> 和下一個 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 。  
   
      [!code-csharp[VSSDKSignatureHelpTest#25](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#25)]
      [!code-vb[VSSDKSignatureHelpTest#25](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#25)]  
   
-3. 加入建構函式來初始化這些欄位，並將命令篩選器新增至鏈結的命令篩選器。  
+3. 新增用來初始化這些欄位的函式，並將命令篩選器新增至命令篩選鏈。  
   
      [!code-csharp[VSSDKSignatureHelpTest#26](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#26)]
      [!code-vb[VSSDKSignatureHelpTest#26](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#26)]  
   
-4. 實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>方法來觸發命令篩選器時收到的簽章說明工作階段 (一個已知的方法名稱，並關閉工作階段，當它收到一次之後的字元) 字元仍在作用中工作階段時。 在每個案例中，會轉送命令。  
+4. <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>當命令篩選器在其中一個已知方法名稱之後收到 ( 字元時，請執行方法來觸發簽章說明會話，並在會話仍在使用中時，于接收 ) 的字元時關閉會話。 在每個案例中，都會轉送此命令。  
   
      [!code-csharp[VSSDKSignatureHelpTest#27](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#27)]
      [!code-vb[VSSDKSignatureHelpTest#27](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#27)]  
   
-5. 實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法，讓它一律會將轉送的命令。  
+5. 執行 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 方法，讓它一律轉寄命令。  
   
      [!code-csharp[VSSDKSignatureHelpTest#28](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#28)]
      [!code-vb[VSSDKSignatureHelpTest#28](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#28)]  
   
-## <a name="implementing-the-signature-help-command-provider"></a>實作簽章說明命令提供者  
- 您可以藉由實作提供的簽章說明命令<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>建立文字檢視時，具現化的命令處理常式。  
+## <a name="implementing-the-signature-help-command-provider"></a>執行 Signature Help 命令提供者  
+ 您可以藉由在建立文字視圖時，藉由執行來將命令處理常式具現化，以提供 Signature Help 命令 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> 。  
   
-#### <a name="to-implement-the-signature-help-command-provider"></a>若要實作的簽章說明命令提供者  
+#### <a name="to-implement-the-signature-help-command-provider"></a>若要執行 Signature Help 命令提供者  
   
-1. 新增名為類別`TestSignatureHelpController`可實<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>並將它與匯出<xref:Microsoft.VisualStudio.Utilities.NameAttribute>， <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>，和<xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>。  
+1. 加入名為的類別，這個類別會 `TestSignatureHelpController` <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> 使用、和來進行執行和匯出 <xref:Microsoft.VisualStudio.Utilities.NameAttribute> <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> 。  
   
      [!code-csharp[VSSDKSignatureHelpTest#29](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#29)]
      [!code-vb[VSSDKSignatureHelpTest#29](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#29)]  
   
-2. 匯入<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>(用來取得<xref:Microsoft.VisualStudio.Text.Editor.ITextView>，給定<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>物件)，則<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>（用來尋找目前的字組），而<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>（以觸發簽章說明工作階段）。  
+2. 匯入 <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> 用來取得的 (（ <xref:Microsoft.VisualStudio.Text.Editor.ITextView> 假設 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 物件) ）、 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> 用來尋找目前單字) 的 (，以及用來觸發簽章說明 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker> 會話 (的) 。  
   
      [!code-csharp[VSSDKSignatureHelpTest#30](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#30)]
      [!code-vb[VSSDKSignatureHelpTest#30](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#30)]  
   
-3. 實作<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A>方法以具現化`TestSignatureCommandHandler`。  
+3. 藉由具現 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> 化來執行方法 `TestSignatureCommandHandler` 。  
   
      [!code-csharp[VSSDKSignatureHelpTest#31](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#31)]
      [!code-vb[VSSDKSignatureHelpTest#31](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#31)]  
   
 ## <a name="building-and-testing-the-code"></a>建置和測試程式碼  
- 若要測試此程式碼，建置 SignatureHelpTest 方案，並在實驗執行個體中執行它。  
+ 若要測試此程式碼，請建立 SignatureHelpTest 方案，並在實驗實例中執行它。  
   
-#### <a name="to-build-and-test-the-signaturehelptest-solution"></a>若要建置和測試 SignatureHelpTest 方案  
+#### <a name="to-build-and-test-the-signaturehelptest-solution"></a>若要建立及測試 SignatureHelpTest 方案  
   
 1. 建置方案。  
   
 2. 當您在偵錯工具中執行這個專案時，會具現化第二個 Visual Studio 執行個體。  
   
-3. 建立文字檔案和一些文字，其中包含單字"add"的類型加上左括號。  
+3. 建立文字檔，並輸入一些文字，其中包含 "add" 這個字加上左括弧。  
   
-4. 輸入左括號之後，您應該會看到工具提示會顯示一份兩個簽章`add()`方法。  
+4. 輸入左括弧之後，您應該會看到工具提示，顯示該方法的兩個簽章清單 `add()` 。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [逐步解說︰將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

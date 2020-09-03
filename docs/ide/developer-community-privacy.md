@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f5b8e2d65454d75c08d3efc26af2fd93b22153b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284798"
 ---
 # <a name="developer-community-data-privacy"></a>開發人員社群資料隱私權
@@ -40,8 +40,8 @@ ms.locfileid: "85284798"
 3. 新增描述，以及重現所需的任何其他資訊、影像和檔案附件。 選擇 [送出]**** 按鈕以私下傳送這些資訊。
 
    > [!NOTE]
-   > 在開發人員的社區網站上，附加的檔案有 2 GB 的限制，最多可有10個檔案。 如果您需要上傳較大的檔案，則可以提交新的問題報表，或在私用留言中向 Microsoft 員工要求上傳 URL。
-   > 當我們關閉問題時，相關聯的附件會在90天后刪除。
+   > 在開發人員社群網站上，連接的檔案有 2 GB 的限制，最多10個檔案。 如果您需要上傳較大的檔案，則可以提交新的問題報表，或在私用留言中向 Microsoft 員工要求上傳 URL。
+   > 當我們關閉問題時，會在90天后刪除相關聯的附件。
 
 若要維護您的隱私權，並讓機密資訊不要公開檢視，請小心地將所有與 Microsoft 的互動保持在這個可見性受限的留言下回覆。 對其他留言的回覆可能會導致您不小心公開機密資訊。
 
@@ -69,7 +69,7 @@ ms.locfileid: "85284798"
 
 - Python 記錄 (若存在)
 
-- Windows Forms 記錄（如果有的話）
+- Windows Forms 記錄檔（如果有的話）
 
 - 螢幕擷取畫面 (若您選擇包含它的話)
 
@@ -82,8 +82,8 @@ ms.locfileid: "85284798"
   - 傾印檔案
 
 > [!NOTE]
-> 您所傳送的記錄檔、螢幕擷取畫面和記錄資料，可能會大幅增加 Microsoft 對您問題的瞭解和回應。  因此，我們建議您將其包含在內。 為了保護您的隱私權，任何附加的記錄檔、螢幕擷取畫面和記錄資料，只會在您透過提交所包含的問題報告來提供許可權時，傳送給 Microsoft。 您可以在提交報告之前，看到哪些檔案包含在 [回報問題] 視窗的 [摘要] 步驟中。 您可以取消核取 [摘要] 步驟中的 [附加系統記錄]，以排除報表中的系統記錄檔。 如需參考，請參閱下列螢幕擷取畫面。 
-  > ![回報問題-收集的記錄摘要](media/report-a-problem-logs-collected.png)
+> 您傳送的記錄檔、螢幕擷取畫面和記錄資料，可以大幅增加 Microsoft 的能力，並回應您的問題。  因此我們建議您將其納入。 為了保護您的隱私權，任何附加的記錄檔、螢幕擷取畫面和記錄資料都只會在您透過提交包含的問題報告來提供許可權時，傳送給 Microsoft。 提交報告之前，您可以在 [回報問題] 視窗的 [摘要] 步驟中看到哪些檔案包含在中。 您可以取消核取 [摘要] 步驟中的 [附加系統記錄檔]，以將系統記錄檔從報告中排除。 如需參考，請參閱下列螢幕擷取畫面。 
+  > ![回報問題-已收集記錄的摘要](media/report-a-problem-logs-collected.png)
 
 
 ## <a name="see-also"></a>另請參閱

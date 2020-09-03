@@ -1,5 +1,5 @@
 ---
-title: IDebugNoSymbolevent2 |微軟文件
+title: IDebugNoSymbolsEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9483c5a434ddfddb3f877111deabea9be6520b05
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726717"
 ---
 # <a name="idebugnosymbolsevent2"></a>IDebugNoSymbolsEvent2
-向[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]調試器 UI 發出訊號,警告使用者無法為啟動的可執行檔找到符號。
+通知 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 偵錯工具 UI 警告使用者，找不到已啟動可執行檔的符號。
 
 ## <a name="syntax"></a>語法
 
@@ -26,12 +26,12 @@ ms.locfileid: "80726717"
 IDebugNoSymbolsEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 由調試引擎實現,並由[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]調試器 UI 使用。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ 由偵錯工具 UI 所執行，並由調試 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 程式 UI 使用。
 
 ## <a name="requirements"></a>需求
- 標題: Msdbg.h
+ 標頭： Msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll

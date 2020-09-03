@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c9a0537e146ead1c163941a0f552bdea7a28b89c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773964"
 ---
 # <a name="marks-view"></a>標記檢視
@@ -26,7 +26,7 @@ ms.locfileid: "74773964"
 
  在報告中預先填入的預設標記會標示程式的開始和結束。
 
- 此檢視也會顯示來自自動產生之標記的 Windows 計數器資料。 有關詳細資訊，請參閱[如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)。
+ 此檢視也會顯示來自自動產生之標記的 Windows 計數器資料。 如需詳細資訊，請參閱 [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)。
 
  若要在兩個標記之間建立篩選，請選取標記，按一下滑鼠右鍵，然後按一下 [依標記加入篩選條件]**** 或 [依時間戳記加入篩選條件]****。
 
@@ -41,6 +41,6 @@ ms.locfileid: "74773964"
  Windows 效能計數器資料 收集 Windows 效能計數器資料時，值會顯示在含有計數器名稱的資料行中。
 
 ## <a name="see-also"></a>另請參閱
-- [績效報告概述](../profiling/performance-report-overview.md)
+- [效能報告總覽](../profiling/performance-report-overview.md)
 - [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)
-- [&#91;NIB&#93;資料收集控制視窗](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+- [&#91;筆尖&#93; 資料收集控制視窗](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

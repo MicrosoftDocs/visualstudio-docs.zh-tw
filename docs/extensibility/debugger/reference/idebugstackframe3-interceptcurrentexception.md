@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3::攔截電流異常 |微軟文件
+title: IDebugStackFrame3：： InterceptCurrentException |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7debd5323e753c6c5fd1476eac3c062fb63393b9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719488"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
-當前堆疊幀上的調試器在要攔截當前異常時調用它。
+當偵錯工具想要攔截目前的例外狀況時，在目前的堆疊框架上呼叫它。
 
 ## <a name="syntax"></a>語法
 
@@ -43,31 +43,31 @@ int InterceptCurrentException(
 
 ## <a name="parameters"></a>參數
 `dwFlags`\
-[在]指定不同的操作。 目前,僅支援[INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)INTERCEPT_EXCEPTION_ACTION`IEA_INTERCEPT`值 ,並且必須指定。
+在指定不同的動作。 目前只支援 [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) 值， `IEA_INTERCEPT` 而且必須指定。
 
 `pqwCookie`\
-[出]標識特定異常的唯一值。
+擴展識別特定例外狀況的唯一值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回S_OK;否則,返回錯誤代碼。
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。
 
- 以下是最常見的錯誤返回。
+ 以下是最常見的錯誤傳回。
 
 |錯誤|描述|
 |-----------|-----------------|
-|`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|無法截獲當前異常。|
-|`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|當前執行幀尚未搜索處理程式。|
-|`E_INTERCEPT_CURRENT_EXCEPTION_NOT_SUPPORTED`|此幀不支援此方法。|
+|`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|無法攔截目前的例外狀況。|
+|`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|尚未在目前的執行框架中搜尋處理常式。|
+|`E_INTERCEPT_CURRENT_EXCEPTION_NOT_SUPPORTED`|此框架不支援這個方法。|
 
 ## <a name="remarks"></a>備註
- 引發異常時,調試器在異常處理過程中從關鍵點的運行時獲得控制。 在這些關鍵時刻,調試器可以詢問當前堆疊幀,如果幀想要攔截異常。 這樣,被截獲的異常實質上是堆疊幀的即時異常處理程式,即使該堆疊幀沒有異常處理程式(例如,程式代碼中的 try/catch 塊)。
+ 擲回例外狀況時，偵錯工具會在例外狀況處理常式期間，從執行時間取得控制權。 在這些按鍵期間，偵錯工具可以在框架想要攔截例外狀況時詢問目前的堆疊框架。 如此一來，攔截的例外狀況基本上是堆疊框架的即時例外狀況處理常式，即使該堆疊框架沒有例外狀況處理常式 (例如，程式碼中的 try/catch 區塊) 。
 
- 當調試器想知道是否應截獲異常時,它會在當前堆疊幀對象上調用此方法。 此方法負責處理異常的所有詳細資訊。 如果未實現[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)介面`InterceptStackException`,或者 該方法返回任何錯誤,則調試器將繼續正常處理異常。
+ 當偵錯工具想要知道是否應該攔截例外狀況時，它會在目前的堆疊框架物件上呼叫這個方法。 這個方法會負責處理例外狀況的所有詳細資料。 如果未執行 [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) 介面或 `InterceptStackException` 方法傳回任何錯誤，則偵錯工具會繼續正常處理例外狀況。
 
 > [!NOTE]
-> 異常只能在託管代碼中截獲,也就是說,當正在調試的程式在 .NET 運行時運行時。 當然,如果第三方語言實現者願意,`InterceptStackException`可以在自己的調試引擎中實現。
+> 例外狀況只能在 managed 程式碼中攔截，也就是當正在進行偵錯工具的程式是在 .NET 執行時間執行時。 當然，協力廠商語言實施者可以 `InterceptStackException` 在自己的偵錯工具引擎中執行，如果有的話，也可以選擇。
 
- 攔截完成後,發出[IDebug攔截異常完成事件2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)的信號。
+ 攔截完成之後， [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) 就會收到信號。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)

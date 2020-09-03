@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a499b5ca5ea64dd9ded10f82b1af43258f346d3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284772"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>如何：建置到通用輸出目錄
@@ -28,7 +28,7 @@ ms.locfileid: "85284772"
 
 1. 按一下方案中的一個專案。
 
-2. 按一下 [專案]**** 功能表上的 [屬性]****。
+2. 按一下 [專案] 功能表上的 [屬性]。
 
 3. 根據專案類型，按一下 [編譯]**** 索引標籤或 [建置]**** 索引標籤，然後將 [輸出路徑]**** 設為要用於方案中所有專案的資料夾。
 

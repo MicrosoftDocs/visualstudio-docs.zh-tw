@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ad21aeae2d348f56cb722365cd1e2ded249bbefe
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284460"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>如何：建立和移除專案相依性
@@ -31,7 +31,7 @@ ms.locfileid: "85284460"
 
 ## <a name="to-assign-dependencies-to-projects"></a>指派專案相依性
 
-1. 在 [**方案總管**中，選取專案。
+1. 在 **方案總管**中，選取專案。
 
 2. 在 [專案]**** 功能表上，選擇 [專案相依性]****。
 
@@ -48,7 +48,7 @@ ms.locfileid: "85284460"
 
 ## <a name="to-remove-dependencies-from-projects"></a>若要從專案移除相依性
 
-1. 在 [**方案總管**中，選取專案。
+1. 在 **方案總管**中，選取專案。
 
 2. 在 [專案]**** 功能表上，選擇 [專案相依性]****。
 

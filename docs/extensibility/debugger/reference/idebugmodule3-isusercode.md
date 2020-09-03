@@ -1,5 +1,5 @@
 ---
-title: IDebugmodule3::用戶代碼 |微軟文件
+title: IDebugModule3：： IsUserCode |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 435ec50ef5437e5aca5d3722a2041115882d15f2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726825"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
-檢索有關模組是否表示用戶代碼的資訊。
+捕獲模組是否代表使用者程式碼的資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ int IsUserCode(
 
 ## <a name="parameters"></a>參數
 `pfUser`\
-[出]如果模組表示`TRUE`用戶代碼,則非零`FALSE`() 如果不表示用戶代碼( )。
+擴展非零 (`TRUE`) 如果模組代表使用者程式碼，則零 () （如果沒有的話） `FALSE` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

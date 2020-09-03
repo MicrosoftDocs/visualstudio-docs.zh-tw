@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetHostingProcessLanguage |Microsoft Docs
+title: IDebugProcess3：： GetHostingProcessLanguage |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd338443a6cad0a772d3780c4dbf361f2634240c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202830"
 ---
 # <a name="idebugprocess3gethostingprocesslanguage"></a>IDebugProcess3::GetHostingProcessLanguage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個方法會傳回`GUID`表示此程序的語言設定，藉由呼叫[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)。  
+這個方法會傳回， `GUID` 代表這個進程的語言，如 [SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)的呼叫所設定。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,10 +40,10 @@ int GetHostingProcessLanguage(
   
 #### <a name="parameters"></a>參數  
  `pguidLang`  
- [out]`GUID`此程序使用的語言。 `GUID_NULL` (C++) 或`Guid.Empty`(C#) 表示未設定的語言。  
+ 擴展 `GUID` 此進程語言的。 `GUID_NULL` (c + +) 或 `Guid.Empty` (c # ) 表示未設定語言。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`，否則會傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

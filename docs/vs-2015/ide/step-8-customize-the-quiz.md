@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ded65e85a2ae11e96c21fdd852ea12daa4bbcdf4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299988"
 ---
 # <a name="step-8-customize-the-quiz"></a>步驟 8：自訂測驗
@@ -23,11 +23,11 @@ ms.locfileid: "74299988"
 
 ### <a name="to-customize-the-quiz"></a>自訂測驗
 
-- 測驗只剩五秒時，請將 [timeLabel] 控制項轉換為紅色，方法是設定其 [BackColor] 屬性 (`timeLabel.BackColor = Color.Red;`)。 在測驗結束時重設色彩。
+- 測驗只剩五秒時，請將 [timeLabel]**** 控制項轉換為紅色，方法是設定其 [BackColor]**** 屬性 (`timeLabel.BackColor = Color.Red;`)。 在測驗結束時重設色彩。
 
 - 在 NumericUpDown 控制項中輸入正確答案時，播放音效來提供受測者的提示 (您必須撰寫每個控制項之 `ValueChanged()` 事件的事件處理常式，而只要受測者變更控制項的值時就會引發該事件)。
 
-### <a name="to-continue-or-review"></a>繼續或檢視
+### <a name="to-continue-or-review"></a>若要繼續或檢視
 
 - 若要移到下一個教學課程，請參閱[教學課程 3：建立配對遊戲](../ide/tutorial-3-create-a-matching-game.md)。
 

@@ -15,10 +15,10 @@ metadata:
   dev_langs:
   - VB
   ms.openlocfilehash: 3462f85ea571e163617c6c5f315a28c98342acab
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/21/2020
+  ms.lasthandoff: 09/02/2020
   ms.locfileid: "74188609"
 landingContent:
 - title: 開始使用
@@ -59,7 +59,7 @@ landingContent:
       url: ../../ide/compiling-and-building-in-visual-studio.md
     - text: 偵錯程式碼
       url: ../csharp/tutorial-debugger.md
-    - text: 測試您的程式碼
+    - text: 測試程式碼
       url: ../../test/getting-started-with-unit-testing.md
   - linkListType: how-to-guide
     links:

@@ -1,5 +1,5 @@
 ---
-title: WizardData 項目 （Visual Studio 範本） |Microsoft Docs
+title: " (Visual Studio 範本的 WizardData 元素) |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,10 +14,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d7cd59266a69140ba2ea5a7fd1d1b0b0c72f14c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201936"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData 項目 (Visual Studio 範本)
@@ -25,8 +25,8 @@ ms.locfileid: "68201936"
 
 指定自訂 XML  
   
- \<VSTemplate >  
- \<WizardData >  
+ \<VSTemplate>  
+ \<WizardData>  
   
 ## <a name="syntax"></a>語法  
   
@@ -48,22 +48,22 @@ ms.locfileid: "68201936"
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必要項目。<br /><br /> 包含專案範本、 項目範本，或入門套件的所有中繼資料。|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必要元素。<br /><br /> 包含專案範本、專案範本或入門套件的所有中繼資料。|  
   
 ## <a name="text-value"></a>文字值  
  可選擇使用文字值。  
   
- 此文字會指定要傳遞給自訂精靈延伸模組中所指定的自訂 XML [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)項目。  
+ 此文字指定要傳遞至 [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) 專案中所指定自訂 wizard 擴充功能的自訂 XML。  
   
 ## <a name="remarks"></a>備註  
- 此項目中，可以指定任何的 XML。 XML 將會傳遞做為參數自訂精靈延伸模組，讓此擴充功能使用此項目的內容。 這項資料不進行任何驗證。  
+ 可以在這個元素中指定任何 XML。 XML 會以參數的形式傳遞至自訂的 wizard 擴充功能，讓擴充功能可以使用此專案的內容。 這項資料不會進行任何驗證。  
   
- 內容`WizardData`傳遞項目，保持不變，做為參數字串字典中的參數內`IWizard.RunStarted`方法。 參數的名稱為 $WizardData$。  
+ 專案的內容 `WizardData` 會以參數形式傳遞（不變），作為方法中參數的字串字典內的參數 `IWizard.RunStarted` 。 參數的名稱為 $WizardData $。  
   
 ## <a name="example"></a>範例  
- 下列範例說明的標準專案範本的中繼資料[!INCLUDE[csprcs](../includes/csprcs-md.md)]Windows 應用程式。  
+ 下列範例說明適用于 Windows 應用程式的標準專案範本中繼資料 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 。  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -97,7 +97,7 @@ ms.locfileid: "68201936"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
- [WizardExtension 項目 （Visual Studio 範本）](../extensibility/wizardextension-element-visual-studio-templates.md)   
+ [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)   
+ [建立專案和專案範本](../ide/creating-project-and-item-templates.md)   
+ [ (Visual Studio 範本的 WizardExtension 元素) ](../extensibility/wizardextension-element-visual-studio-templates.md)   
  [如何：搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2066959578987e358f8c1c91dcbda1eeb6f79f26
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773593"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>呼叫樹狀結構檢視 - .NET 記憶體檢測資料
@@ -35,18 +35,18 @@ ms.locfileid: "74773593"
 
 |資料行|描述|
 |------------|-----------------|
-|**函數名稱**|函數的名稱。|
-|**功能位址**|函式的位址。|
+|**函數名稱**|函式的名稱。|
+|**函數位址**|函式的位址。|
 |**函式行號**|原始程式檔中這個函式的開頭行號。|
 |**呼叫次數**|呼叫此函式的總次數。|
-|**原始檔案**|含有這個函式定義的原始程式檔。|
+|**來源檔案**|含有這個函式定義的原始程式檔。|
 |**模組名稱**|包含該函式的模組名稱。|
 |**模組路徑**|包含該函式的模組路徑。|
 |**處理序識別碼**|分析執行的處理序 ID (PID)。|
-|**流程名稱**|指派給處理序的名稱。|
+|**進程名稱**|指派給處理序的名稱。|
 |**時間專有探查額外負荷**|檢測對這個函式造成的時間額外負荷。 已經從所有專有時間減去探查額外負荷。|
 |**時間內含探查額外負荷**|檢測對這個函式及其子函式所造成的時間額外負荷。 已經從所有內含時間減去探查額外負荷。|
-|**類型**|函式的內容︰<br /><br /> -   **0** - 當前函數<br />-   **1** - 調用當前函數的函數<br />-   **2** - 由當前函式呼叫的函數<br /><br /> 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|
+|**類型**|函式的內容︰<br /><br /> -   **0** -目前的函式<br />-   **1** -呼叫目前函式的函式<br />-   **2** -目前的函式所呼叫的函式<br /><br /> 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|
 |**根函式名稱**|目前函數的名稱。 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|
 
 ## <a name="net-memory-values"></a>.NET 記憶體值

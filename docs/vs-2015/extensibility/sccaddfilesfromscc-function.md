@@ -13,16 +13,16 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d5af748c9180644cae928d1b6db3a3f880b6b286
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200916"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-此函式會將一份檔案從原始檔控制加入至目前開啟的專案。  
+此函式會將檔案清單從原始檔控制加入目前開啟的專案。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,42 +42,42 @@ SCCRTN SccAddFilesFromSCC(
   
 #### <a name="parameters"></a>參數  
  pContext  
- [in]原始檔控制外掛程式的內容指標。  
+ 在原始檔控制外掛程式內容指標。  
   
  hWnd  
- [in]原始檔控制外掛程式時，可以使用當做父代上，它會提供任何對話方塊 IDE 視窗的控制代碼。  
+ 在IDE 視窗的控制碼，原始檔控制外掛程式可以使用它做為它所提供之任何對話方塊的父代。  
   
  lpUser  
- [in、 out]（最多 SCC_USER_SIZE，包括 null 結束字元) 使用者名稱。  
+ [in，out]使用者名稱 (SCC_USER_SIZE，包括 null 結束字元) 。  
   
  lpAuxProjPath  
- [in、 out]識別專案的輔助字串 (最多`SCC_PRJPATH_`大小，包括 null 結束字元)。  
+ [in，out]識別專案 (的輔助字串，最大的 `SCC_PRJPATH_` 大小，包括 null 結束字元) 。  
   
  cFiles  
- [in]所指定的檔案數目`lpFilePaths`。  
+ 在提供的檔案數目 `lpFilePaths` 。  
   
  lpFilePaths  
- [in、 out]將加入至目前專案的檔案名稱的陣列。  
+ [in，out]要加入至目前專案的檔案名陣列。  
   
  lpDestination  
- [in]其中的檔案已寫入目的地路徑。  
+ 在要寫入檔案的目的地路徑。  
   
  lpComment  
- [in]要套用至每個檔案要加入的註解。  
+ 在要套用至每個要加入之檔案的批註。  
   
  pbResults  
- [in、 out]設定為表示作業成功 （非零值或 TRUE） 或失敗的旗標的陣列 （「 零 」 或 「 FALSE 」） 針對每個檔案 (陣列的大小必須至少是`cFiles`長)。  
+ [in，out]旗標的陣列，這些旗標會設定為表示成功 (非零或 TRUE) 或失敗 (零或錯誤) 每個檔案的大小上限必須至少為 `cFiles` long (。  
   
 ## <a name="return-value"></a>傳回值  
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：  
   
 |值|描述|  
 |-----------|-----------------|  
-|SCC_E_PROJNOTOPEN|無法開啟專案。|  
-|SCC_E_OPNOTPERFORMED|不連接到與所指定相同的專案 `lpAuxProjPath.`|  
-|SCC_E_NOTAUTHORIZED|使用者未獲授權可更新資料庫。|  
+|SCC_E_PROJNOTOPEN|專案未開啟。|  
+|SCC_E_OPNOTPERFORMED|連接與指定的專案不同 `lpAuxProjPath.`|  
+|SCC_E_NOTAUTHORIZED|使用者未經授權，無法更新資料庫。|  
 |SCC_E_NONSPECIFICERROR|未知的錯誤。|  
-|SCC_I_RELOADFILE|必須重新載入檔案或專案。|  
+|SCC_I_RELOADFILE|需要重載檔案或專案。|  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

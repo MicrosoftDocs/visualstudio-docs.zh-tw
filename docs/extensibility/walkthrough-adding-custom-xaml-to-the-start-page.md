@@ -13,21 +13,21 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: a13aada6cca9b54d8469885ab4c314a89cd06d6c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905954"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>逐步解說：將自訂 XAML 新增至起始頁
 
-本逐步解說說明如何建立包含網頁瀏覽器的自訂 Visual Studio 起始頁。
+本逐步解說示範如何建立包含網頁瀏覽器的自訂 Visual Studio 起始頁。
 
 ## <a name="add-custom-xaml"></a>新增自訂 XAML
 
-1. 遵循[建立自訂起始頁](../extensibility/creating-a-custom-start-page.md)中的指示，建立起始頁。
+1. 遵循 [建立自訂起始頁](../extensibility/creating-a-custom-start-page.md)中的指示，建立起始頁。
 
-2. 在*mainwindow.xaml .xaml*檔案中，尋找 \<Grid> 區段。
+2. 在 *MainWindow .xaml* 檔案中，尋找 \<Grid> 區段。
 
 3. 在專案 \<TabControl> 內加入元素和 \<TabItem> \< Grid> ，如下列範例所示。
 
@@ -41,7 +41,7 @@ ms.locfileid: "85905954"
     </Grid>
     ```
 
-4. 新增第二個 \<TabItem> ，其中包含 \<Button> 可開啟新專案的元素：
+4. 新增第二個 \<TabItem> ，具有 \<Button> 開啟新專案的元素：
 
     ```xml
     <Grid>
@@ -63,29 +63,29 @@ ms.locfileid: "85905954"
 
 1. 按 **F5**。
 
-     Visual Studio 的實驗實例隨即開啟，並已安裝自訂起始頁但未選取。
+     Visual Studio 的實驗實例隨即開啟，並已安裝自訂起始頁，但未選取。
 
-2. 在 Visual Studio 的實驗實例中，開啟 [**工具]/Options/[環境**] 頁面。
+2. 在 Visual Studio 的實驗實例中，開啟 [ **工具/Options]/[環境** ] 頁面。
 
-3. 選取 [**啟動**]。 在 [**自訂起始頁**] 清單中，選取您的 *.xaml*檔案，然後按一下 **[確定]**。
+3. 選取 [ **啟動**]。 在 [ **自訂起始頁** ] 清單中，選取您的 *.xaml* 檔案，然後按一下 **[確定]**。
 
 4. 在 [檢視] **** 功能表上，按一下 [起始頁] ****。
 
 5. 按一下 [ **Bing** ] 索引標籤。
 
-     您應該會看到 [Bing] 網頁。
+     您應該會看到 Bing 網頁。
 
 6. 按一下 [ **MyButton** ] 索引標籤。
 
-     您應該會看到 [ **MyProject** ] 按鈕，這會開啟 [**新增專案**] 對話方塊。
+     您應該會看到 [ **MyProject** ] 按鈕，這會開啟 [ **新增專案** ] 對話方塊。
 
 7. 關閉實驗實例。
 
-若要套用自訂起始頁，請在 [**工具**選項] [環境] 中選取 [  >  **Options**  >  ** ****啟動**]。 在 [**自訂起始頁**] 清單中，選取您的 *.xaml*檔案，然後按一下 **[確定]**。
+若要套用自訂起始頁，請在 [**工具**  >  **選項**]  >  **環境**中選取 [**啟動**]。 在 [ **自訂起始頁** ] 清單中，選取您的 *.xaml* 檔案，然後按一下 **[確定]**。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
-[Visual Studio 起始頁] 現在包含一個索引標籤，其中顯示網頁瀏覽器索引標籤和 [MyButton] 索引標籤。您可以使用程式*代碼後*置模型加入自訂的 .dll，以建立具有其他功能的自訂起始頁，如[將使用者控制項新增至起始頁](../extensibility/adding-user-control-to-the-start-page.md)所示。 您可以將產生的 .vsix 檔案發行至[Visual Studio Marketplace](https://marketplace.visualstudio.com/)網站，或另一個網站或網路共用，藉此與其他使用者共用自訂起始頁。 如需詳細資訊，請參閱 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。
+[Visual Studio 開始] 頁面現在包含一個索引標籤，可顯示網頁瀏覽器索引標籤和 [MyButton] 索引標籤。您可以使用程式 *代碼後端* 模型加入自訂 .dll，以建立具有其他功能的自訂起始頁，如 [將使用者控制項新增至起始頁](../extensibility/adding-user-control-to-the-start-page.md)所示。 您可以將產生的 .vsix 檔案發佈至 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 網站或另一個網站或網路共用，以與其他使用者共用自訂起始頁。 如需詳細資訊，請參閱 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。
 
 ## <a name="see-also"></a>另請參閱
 

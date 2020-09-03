@@ -1,5 +1,5 @@
 ---
-title: 錯誤：Web 伺服器已經鎖定，並會封鎖 DEBUG 動詞命令 |Microsoft Docs
+title: 錯誤： Web 服務器已經鎖定，正在封鎖 DEBUG 動詞命令 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b85efc44b39485476154d0f41f3261b2aeb1ea7c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203217"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>錯誤：Web 伺服器已經鎖定，並會封鎖 DEBUG 動詞命令
@@ -53,5 +53,5 @@ ms.locfileid: "68203217"
 7. 重新啟動伺服器或重新啟動 IIS。  
   
 ## <a name="see-also"></a>另請參閱  
- [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [錯誤：Web 伺服器找不到要求的資源](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
+ [Web 應用程式的偵錯工具：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [錯誤： Web 服務器找不到要求的資源](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

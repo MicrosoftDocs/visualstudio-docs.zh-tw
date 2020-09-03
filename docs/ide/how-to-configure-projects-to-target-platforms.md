@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a58b60e23bf08fb86a8dd7bc09d760085b6ea25f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284593"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>如何：將專案設定成以平台為目標
 
-Visual Studio 可讓您將應用程式的目標設定為不同的平台，包括 64 位元的平台。 如需 Visual Studio 中64位平臺支援的詳細資訊，請參閱[64 位應用程式](/dotnet/framework/64-bit-apps)。
+Visual Studio 可讓您將應用程式的目標設定為不同的平台，包括 64 位元的平台。 如需 Visual Studio 中64位平臺支援的詳細資訊，請參閱 [64 位應用程式](/dotnet/framework/64-bit-apps)。
 
 ## <a name="target-platforms-with-the-configuration-manager"></a>使用組態管理員設定目標平台
 
@@ -35,11 +35,11 @@ Visual Studio 可讓您將應用程式的目標設定為不同的平台，包括
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>將專案設定成以 64 位元平台為目標
 
-1. 在功能表列上，選擇 [**組建**  >  **Configuration Manager**]。
+1. 在功能表列上，選擇 [**建立**  >  **Configuration Manager**]。
 
 2. 在 [使用中的方案平台]**** 清單中，選擇 64 位元平台作為方案的目標，然後選擇 [關閉]**** 按鈕。
 
-    1. 如果您想要的平臺未出現在 [使用中的**方案平臺**] 清單中，請選擇 [**新增**]。
+    1. 如果您想要的平臺未出現在 [使用中的 **方案平臺** ] 清單中，請選擇 [ **新增**]。
 
          [新增方案平台]**** 對話方塊隨即出現。
 
@@ -53,8 +53,8 @@ Visual Studio 可讓您將應用程式的目標設定為不同的平台，包括
 以 64 位元平台為目標的所有專案的屬性會進行更新，而專案的下一個組建會針對 64 位元平台進行最佳化。
 
 > [!NOTE]
-> **Win32**平臺名稱用於 c + + 專案，而這表示**x86**。 Visual Studio 會考慮專案層級平臺和解決方案層級平臺，而專案平臺則來自語言特定的專案系統。 C + + 專案使用**Win32**和**x64**，但是解決方案平臺使用**x86**和**x64**。 當您選擇 [ **x86** ] 做為解決方案設定時，Visual Studio 會選取 c + + 專案的**Win32**平臺。 若要查看專案層級平臺和解決方案層級平臺設定，請開啟**Configuration Manager**並記下兩個平臺設定。 方案層級平臺會顯示在 [使用中的**方案平臺**] 下拉式清單中，而下表顯示每個專案的專案層級平臺。
-> ![顯示方案平臺和專案平臺的螢幕擷取畫面](media/project-platform-win32.png)
+> **Win32**平臺名稱用於 c + + 專案，這表示**x86**。 Visual Studio 同時考慮專案層級平臺和方案層級的平臺，而專案平臺則來自特定語言的專案系統。 C + + 專案使用 **Win32** 和 **x64**，但是解決方案平臺使用 **x86** 和 **x64**。 當您選擇 **x86** 作為方案設定時，Visual Studio 會選取 c + + 專案的 **Win32** 平臺。 若要查看專案層級平臺和方案層級的平臺設定，請開啟 **Configuration Manager** 並記下兩個平臺設定。 方案層級平臺會顯示在 [使用中的 **方案平臺** ] 下拉式清單中，而資料表會顯示每個專案的專案層級平臺。
+> ![顯示解決方案平臺和專案平臺的螢幕擷取畫面](media/project-platform-win32.png)
 
 ## <a name="target-platforms-in-the-project-designer"></a>在專案設計工具中設定目標平台
 

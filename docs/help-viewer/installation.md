@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7ec23d81310628c2bb369cc0cea3ba121088634
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284941"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Help Viewer 安裝
@@ -33,7 +33,7 @@ ms.locfileid: "85284941"
 
 另一個輕鬆安裝 Microsoft Help Viewer 的方法是透過搜尋方塊：
 
-1. 按**Ctrl** + **Q** ，然後在 [搜尋] 方塊中鍵入或輸入說明**檢視器**。
+1. 按**Ctrl** + **Q**鍵，然後在 [搜尋] 方塊中輸入或輸入**help viewer** 。
 
    ![搜尋方塊](media/installation/quick-launch.png)
 

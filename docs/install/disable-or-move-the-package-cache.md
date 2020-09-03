@@ -19,10 +19,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 3f38757931cb22e9072571d96b015f37882dd500
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114786"
 ---
 # <a name="disable-or-move-the-package-cache"></a>停用或移動套件快取
@@ -58,6 +58,6 @@ ms.locfileid: "76114786"
 
 ## <a name="see-also"></a>另請參閱
 
-* [安裝視覺化工作室](install-visual-studio.md)
+* [安裝 Visual Studio](install-visual-studio.md)
 * [設定企業部署的預設](set-defaults-for-enterprise-deployments.md)
-* [使用命令列參數安裝視覺化工作室](use-command-line-parameters-to-install-visual-studio.md)
+* [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

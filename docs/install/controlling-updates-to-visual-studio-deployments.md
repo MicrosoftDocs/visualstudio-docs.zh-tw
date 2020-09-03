@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 8743f042c7c33da34895f93e5df3990f6e0b2ed2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115307"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>控制網路型 Visual Studio 部署的更新
@@ -90,7 +90,7 @@ ms.locfileid: "76115307"
 
 如上所述，Visual Studio 會檢查其安裝來源位置 (例如，網路共用或網際網路)，以查看是否有任何可用的更新。 有可用更新時，Visual Studio 會使用視窗右下角的通知圖示通知使用者。
 
-   ![視覺化工作室 IDE 中的通知圖示](media/vs-2019/notification-bar.png "視覺化工作室 IDE 中的通知圖示")
+   ![Visual Studio IDE 中的通知圖示](media/vs-2019/notification-bar.png "Visual Studio IDE 中的通知圖示")
 
 ::: moniker-end
 
@@ -125,8 +125,8 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterpris
 
 ## <a name="see-also"></a>另請參閱
 
-* [安裝視覺化工作室](install-visual-studio.md)
+* [安裝 Visual Studio](install-visual-studio.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
-* [使用命令列參數安裝視覺化工作室](use-command-line-parameters-to-install-visual-studio.md)
+* [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [管理 Visual Studio 執行個體的工具](tools-for-managing-visual-studio-instances.md)
-* [視覺化工作室產品生命週期和服務](/visualstudio/releases/2019/servicing/)
+* [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing/)

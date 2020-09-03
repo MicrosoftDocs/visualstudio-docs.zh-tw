@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d94a525f9938b6845584b6d5872bd486e947025d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115405"
 ---
 # <a name="walkthrough-build-an-application"></a>逐步解說：建置應用程式
@@ -35,13 +35,13 @@ ms.locfileid: "76115405"
 
    ![[組態管理員] 命令、[建置] 功能表](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. 在 **"活動解決方案配置**"清單中，選擇**\<"新建..."\>**.
+1. 在 [使用中的 **方案** 設定] 清單中，選擇 [] **\<New...\>** 。
 
 1. 在 [新增方案組態]**** 對話方塊中，將新的組態命名為 `Test`，從現有的 [偵錯]**** 組態複製設定，然後選擇 [確定]**** 按鈕。
 
    ![[新增方案組態] 對話方塊](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. 在 **"活動解決方案平臺**"清單中，選擇**\<"新建"\>**.
+1. 在 [使用中的 **方案平臺** ] 清單中，選擇 [] **\<New...\>** 。
 
 1. 在 [新增方案平台]**** 對話方塊中，選擇 [x64]****，而不要從 x86 平台複製設定。
 
@@ -65,7 +65,7 @@ ms.locfileid: "76115405"
 
 ### <a name="build-the-solution"></a>建立解決方案
 
-- 在功能表列上，選擇 **"構建** > **解決方案**"，或按**Ctrl**+**Shift**+**B**。
+- 在功能表列上，選擇 [**組建**  >  **組建方案**] 或按**Ctrl** + **Shift** + **B**。
 
     [輸出]**** 視窗顯示組建的結果。 組建成功。
 
@@ -93,7 +93,7 @@ ms.locfileid: "76115405"
 
 1. 在**方案總管**中，選擇頂層專案節點。
 
-1. 在功能表列上，選擇 **"查看** > **屬性頁**"。
+1. 在功能表列上，選擇 [ **View**  >  **Property Pages**]。
 
      [專案設計工具]**** 隨即開啟。
 
@@ -113,7 +113,7 @@ ms.locfileid: "76115405"
 
 1. 在**方案總管**中，選擇頂層專案節點。
 
-2. 在功能表列上，選擇 **"查看** > **屬性頁**"。
+2. 在功能表列上，選擇 [ **View**  >  **Property Pages**]。
 
      [專案設計工具]**** 隨即開啟。
 
@@ -148,13 +148,13 @@ ms.locfileid: "76115405"
 
 1. 在 [MSBuild 專案建置輸出詳細等級]**** 清單中，選擇 [一般]****，然後選擇 [確定]**** 按鈕。
 
-1. 在功能表列上，選擇 **"構建** > **乾淨解決方案**"。
+1. 在功能表列上，選擇 [**建立**  >  **全新方案**]。
 
 1. 建置方案，然後檢閱 [輸出]**** 視窗中的資訊。
 
      組建資訊包含組建的開始時間 (位於開頭) 以及檔案的處理順序。 這項資訊也包含 Visual Studio 在建置期間執行的實際編譯器語法。
 
-     例如，在 C# 生成中[，/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)選項列出了您在本主題前面指定的警告代碼**0168，** 以及另外三個警告。
+     例如，在 c # 組建中， [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) 選項會列出您稍早在本主題中指定的警告碼 **0168**，以及其他三個警告。
 
      在 Visual Basic 組建中，[/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) 不包含要排除的特定警告，因此不會出現任何警告。
 
@@ -223,6 +223,6 @@ ms.locfileid: "76115405"
 
 ## <a name="see-also"></a>另請參閱
 
-- [逐步解說：建置專案 (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
+- [逐步解說： (c + + 建立專案) ](/cpp/ide/walkthrough-building-a-project-cpp)
 - [ASP.NET Web 應用程式專案先行編譯概觀](/previous-versions/aspnet/aa983464\(v\=vs.110\))
 - [逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPending突破點2::Delete |微軟文件
+title: IDebugPendingBreakpoint2：:D elete |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fd6e2d61eb7a7ce927a966281bba2f0cbf470dc6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725911"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
-刪除此掛起的斷點和所有從其綁定的斷點。
+刪除這個暫止中斷點及其系結的所有中斷點。
 
 ## <a name="syntax"></a>語法
 
@@ -39,10 +39,10 @@ int Delete();
 ```
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則,返回錯誤代碼。 如果`E_BP_DELETED`斷點已被刪除,則返回。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 `E_BP_DELETED`如果中斷點已刪除，則會傳回。
 
 ## <a name="example"></a>範例
-下面的示例演示如何實現[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)`CPendingBreakpoint`介面的簡單物件實現此方法。
+下列範例示範如何針對實 IDebugPendingBreakpoint2 介面的簡單物件，執行這個方法 `CPendingBreakpoint` 。 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 
 ```cpp
 HRESULT CPendingBreakpoint::Delete(void)
