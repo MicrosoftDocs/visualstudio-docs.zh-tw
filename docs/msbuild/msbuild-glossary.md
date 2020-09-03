@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f20fdb4cd809e422bc33535f3143b45db99842f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633339"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 字彙表
@@ -64,7 +64,7 @@ AssemblyFoldersEx\
 項目定義群組包含要將預設中繼資料加入任何項目類型的項目定義。 如同已知的中繼資料，預設的中繼資料會與指定項目類型的所有項目相關聯。 您可以在項目定義中明確覆寫預設的中繼資料。 如需詳細資訊，請參閱[項目定義](../msbuild/item-definitions.md)。
 
 項目函式\
-項目函式會在專案中取得項目的相關資訊。 這些函式會簡化取得 Distinct() 項目的方式，速度比執行項目迴圈還快。 有一些函式可用來管理項目路徑和字串。 有關詳細資訊，請參閱[專案函數](../msbuild/item-functions.md)。
+項目函式會在專案中取得項目的相關資訊。 這些函式會簡化取得 Distinct() 項目的方式，速度比執行項目迴圈還快。 有一些函式可用來管理項目路徑和字串。 如需詳細資訊，請參閱 [專案函數](../msbuild/item-functions.md)。
 
 項目中繼資料\
 請參閱＜中繼資料，項目＞**。
@@ -88,10 +88,10 @@ AssemblyFoldersEx\
 專案檔包含控制組建的 MSBuild 指令碼。 專案檔的副檔名結尾通常是 *proj*，例如 *.csproj* 或 *.vbproj*。 專案檔可匯入屬性檔和目標檔案。
 
 屬性\
-屬性是用來控制建置程序的索引鍵/值組。 有關詳細資訊，請參閱[MSBuild 屬性](../msbuild/msbuild-properties.md)。
+屬性是用來控制建置程序的索引鍵/值組。 如需詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。
 
 屬性，環境\
-環境屬性是會自動初始化為具相同名稱之系統環境變數值的屬性。 有關詳細資訊，請參閱[MSBuild 屬性](../msbuild/msbuild-properties.md)。
+環境屬性是會自動初始化為具相同名稱之系統環境變數值的屬性。 如需詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。
 
 屬性檔\
 屬性檔是包含大部分屬性群組及可引導建置之項目群組的專案檔。 依照慣例，其副檔名為 *.props*。 通常會在相關聯的專案檔開始時匯入屬性檔。
@@ -107,16 +107,16 @@ AssemblyFoldersEx\
 如需詳細資訊，請參閱 [Property 函式](../msbuild/property-functions.md)。
 
 屬性，全域\
-全域屬性是用來控制建置程序的索引鍵/值組。 您可以在命令提示字元上，或使用 [MSBuild 工作](../msbuild/msbuild-task.md)的 `Properties` 屬性來設定全域屬性，而且無法在組建的評估階段加以修改。 有關詳細資訊，請參閱[MSBuild 屬性](../msbuild/msbuild-properties.md)。
+全域屬性是用來控制建置程序的索引鍵/值組。 您可以在命令提示字元上，或使用 [MSBuild 工作](../msbuild/msbuild-task.md)的 `Properties` 屬性來設定全域屬性，而且無法在組建的評估階段加以修改。 如需詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。
 
 屬性，本地\
 區域屬性是用來控制建置程序的索引鍵/值組。 這個詞彙只能用於區分非全域屬性的屬性。
 
 屬性，登錄\
-登錄屬性的值是使用可讀取系統登錄子機碼值的特殊語法來設定。 有關詳細資訊，請參閱[MSBuild 屬性](../msbuild/msbuild-properties.md)。
+登錄屬性的值是使用可讀取系統登錄子機碼值的特殊語法來設定。 如需詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。
 
 屬性，已保留\
-保留的屬性是用來控制建置程序的索引鍵/值組。 保留的屬性會自動初始化為預先定義的值。 有關詳細資訊，請參閱[MSBuild 屬性](../msbuild/msbuild-properties.md)。
+保留的屬性是用來控制建置程序的索引鍵/值組。 保留的屬性會自動初始化為預先定義的值。 如需詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。
 
 專案範圍\
 專案範圍會說明一個 MSBuild 物件 (例如，區域屬性)，此物件只能在包含專案檔以及它匯入的任何專案中看見。
@@ -140,7 +140,7 @@ MSBuild 工作會在專案建置期間建立子專案。 這個新的專案是�
 請參閱＜目標，執行＞。
 
 目標，評估\
-由於累加編譯的緣故，因此必須針對屬性和項目的潛在變更來分析目標。 即使會略過目標，還是必須進行這些變更。 評估目標表示會執行此分析並進行這些變更。 有關詳細資訊，請參閱[增量生成](../msbuild/incremental-builds.md)。
+由於累加編譯的緣故，因此必須針對屬性和項目的潛在變更來分析目標。 即使會略過目標，還是必須進行這些變更。 評估目標表示會執行此分析並進行這些變更。 如需詳細資訊，請參閱累加 [組建](../msbuild/incremental-builds.md)。
 
 目標，執行 (executing)\
 執行目標表示會評估該目標，並執行所有不含任何條件的工作，或其條件評估為 true 的工作。 在累加編譯期間，可能會略過或執行目標，但一律會評估它們。 如需詳細資訊，請參閱＜目標，評估＞。
@@ -161,7 +161,7 @@ MSBuild 工作會在專案建置期間建立子專案。 這個新的專案是�
 目標檔案是一個專案檔，其中包含大部分的目標及可引導組建的工作。 依照慣例，其副檔名為 *.targets*。 通常會在相關聯的專案檔結束時匯入目標檔案。
 
 工作\
-任務是 MSBuild 專案用於執行生成操作的可執行代碼單元。 例如，工作可能是編譯輸入檔，或是執行外部工具。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。
+工作是 MSBuild 專案用來執行組建作業的可執行程式碼單位。 例如，工作可能是編譯輸入檔，或是執行外部工具。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。
 
 轉換\
 轉換是從一個項目集合到另一個的一對一轉換。 除了啟用專案來轉換項目集合，轉換還能讓目標識別其輸入和輸出之間的直接對應。 如需詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。

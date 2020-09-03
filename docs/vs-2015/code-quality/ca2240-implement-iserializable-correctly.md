@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 217f95b7d3658db107fc482040686eea9ee47604
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543659"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240:必須正確實作 ISerializable
@@ -29,23 +29,23 @@ ms.locfileid: "85543659"
 |-|-|
 |TypeName|ImplementISerializableCorrectly|
 |CheckId|CA2240|
-|類別|Microsoft。使用方式|
+|類別|Microsoft. 使用量|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 外部可見類型可指派給 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 介面，而下列其中一個條件為 true：
+ 外部可見類型可指派給 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 介面，且下列其中一個條件成立：
 
-- 型別會繼承，但不會覆寫 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> 方法，而且型別會宣告未以屬性標記的實例欄位 <xref:System.NonSerializedAttribute?displayProperty=fullName> 。
+- 此類型會繼承，但不會覆寫 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> 方法，而類型會宣告未以屬性標記的實例欄位 <xref:System.NonSerializedAttribute?displayProperty=fullName> 。
 
-- 型別不是密封的，而且型別會實作為 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 外部可見且可覆寫的方法。
+- 型別不是密封的，而且型別會執行 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 非外部可見和可覆寫的方法。
 
 ## <a name="rule-description"></a>規則描述
- 在繼承介面的類型中宣告的實例欄位 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 不會自動包含在序列化進程中。 若要包含欄位，類型必須執行 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 方法和序列化的函式。 如果欄位不應序列化，請將屬性套用 <xref:System.NonSerializedAttribute> 至欄位，以明確指出決策。
+ 在繼承介面的類型中宣告的實例欄位， <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 不會自動包含在序列化程式中。 若要包含這些欄位，類型必須執行 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 方法和序列化的函式。 如果欄位不應序列化，請將屬性套用 <xref:System.NonSerializedAttribute> 至欄位，以明確指出決策。
 
- 在未密封的類型中，方法的執行 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 應該是外部可見的。 因此，方法可由衍生型別呼叫，而且可以覆寫。
+ 在未密封的類型中，方法的執行 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 應該是外部可見的。 因此，方法可以由衍生型別呼叫，並且可覆寫。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規，請將 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 方法設為可見且可覆寫，並確定所有實例欄位都包含在序列化程式中，或明確地以 <xref:System.NonSerializedAttribute> 屬性標示。
+ 若要修正此規則的違規情形，請將方法設為 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 可見和可覆寫，並確定所有實例欄位都包含在序列化程式中，或以屬性明確標記 <xref:System.NonSerializedAttribute> 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。
@@ -58,7 +58,7 @@ ms.locfileid: "85543659"
  [!code-vb[FxCop.Usage.ImplementISerializableCorrectly#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly/vb/FxCop.Usage.ImplementISerializableCorrectly.vb#1)]
 
 ## <a name="example"></a>範例
- 下列範例藉由提供 [ISerializable GetObjectData] 的覆寫執行，來修正先前的兩個違規（<!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  -->）在 Book 類別上，並提供的執行 <!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  --> 在 Library 類別上。
+ 下列範例會藉由提供 [ISerializable. GetObjectData] 的覆寫執行來修正先前的兩個違規 (<!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  -->在 Book 類別上 ) ，並提供 <!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  --> 程式庫類別。
 
  [!code-cpp[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/cpp/FxCop.Usage.ImplementISerializableCorrectly2.cpp#1)]
  [!code-csharp[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/cs/FxCop.Usage.ImplementISerializableCorrectly2.cs#1)]

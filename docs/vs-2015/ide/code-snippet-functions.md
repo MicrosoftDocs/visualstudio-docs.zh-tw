@@ -14,28 +14,28 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 92533b90e6a2da9f29a67d13c6e0eee2c31dbcfe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620222"
 ---
 # <a name="code-snippet-functions"></a>程式碼片段函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-有三個函式可用來與 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 程式碼片段搭配使用。 函式指定於程式碼片段的 [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) 項目中。 如需建立程式碼片段的資訊，請參閱[程式碼片段](../ide/code-snippets.md)。
+有三個函式可用來與 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 程式碼片段搭配使用。 函式指定於程式碼片段的 [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) 項目中。 如需建立程式碼片段的詳細資訊，請參閱 [程式碼片段](../ide/code-snippets.md)。
 
 ## <a name="functions"></a>函式
  下表描述可用於與程式碼片段中的 `Function` 項目搭配使用的函式。
 
-|函數|說明|語言|
+|函式|描述|語言|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|針對 `EnumerationLiteral` 參數所指定列舉的成員，產生 switch 陳述式和一組 case 陳述式。 `EnumerationLiteral` 參數必須是列舉常值或列舉類型的參考。|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
 |`ClassName()`|傳回包含已插入程式碼片段的類別名稱。|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
 |`SimpleTypeName(` `TypeName` `)`|在叫用程式碼片段的內容中，將 *TypeName* 參數降低為其最簡單形式。|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
 
 ## <a name="example"></a>範例
- 下列範例示範如何使用 `GenerateSwitchCases` 函式。 插入此程式碼片段並將列舉輸入至 `$switch_on$` 常值時，`$cases$` 常值會為列舉中的每個值產生 `case` 陳述式。
+ 下列範例會示範如何使用 `GenerateSwitchCases` 函式。 插入此程式碼片段並將列舉輸入至 `$switch_on$` 常值時，`$cases$` 常值會為列舉中的每個值產生 `case` 陳述式。
 
 ```
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -76,7 +76,7 @@ ms.locfileid: "72620222"
 ```
 
 ## <a name="example"></a>範例
- 下列範例示範如何使用 `ClassName` 函式。 插入此程式碼片段時，會將 `$classname$` 常值取代為程式碼檔案中該位置的封入類別名稱。
+ 下列範例會示範如何使用 `ClassName` 函式。 插入此程式碼片段時，會將 `$classname$` 常值取代為程式碼檔案中該位置的封入類別名稱。
 
 ```
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -154,4 +154,4 @@ ms.locfileid: "72620222"
 ```
 
 ## <a name="see-also"></a>另請參閱
- [Function 專案（Intellisense 程式碼片段）](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) [程式碼片段架構參考](../ide/code-snippets-schema-reference.md)
+ [函數元素 (Intellisense 程式碼片段) ](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) [程式碼片段架構參考](../ide/code-snippets-schema-reference.md)

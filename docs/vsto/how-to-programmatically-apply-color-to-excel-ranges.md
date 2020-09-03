@@ -15,19 +15,19 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0d4a99e2e71e6a87b304ceea45a3cd595f911ff1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543451"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>如何：以程式設計方式將色彩套用至 Excel 範圍
-  若要將色彩套用至資料格範圍內的文字，請使用 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項或原生 Excel 範圍物件。
+  若要將色彩套用至儲存格範圍內的文字，請使用 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項或原生 Excel 範圍物件。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="use-a-namedrange-control"></a>使用 NamedRange 控制項
- 這個範例適用于檔層級自訂。
+ 此範例適用于檔層級自訂。
 
 ### <a name="to-apply-color-to-a-namedrange-control"></a>將色彩套用至 NamedRange 控制項
 
@@ -45,7 +45,7 @@ ms.locfileid: "85543451"
 
 ### <a name="to-apply-color-to-a-native-excel-range-object"></a>將色彩套用至原生 Excel 範圍物件
 
-1. 在儲存格 A1 建立範圍，然後設定文字的色彩。
+1. 在儲存格 A1 上建立範圍，然後設定文字的色彩。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#67)]
      [!code-vb[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#67)]

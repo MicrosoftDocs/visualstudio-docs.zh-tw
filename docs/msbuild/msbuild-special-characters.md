@@ -13,23 +13,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fdc9024db06fe27fab5dfdf9589300a6eb671368
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633209"
 ---
 # <a name="msbuild-special-characters"></a>MSBuild 特殊字元
 
-MSBuild 保留一些字元，用於特定上下文中的特殊用途。 如果您想要在保留這些字元的內容中按字面使用這些字元，只需要將其逸出即可。 比方說，星號僅在項目定義的 `Include` 和 `Exclude` 屬性，以及 `CreateItem` 呼叫中具有特殊意義。 如果您想要將這些內容之一的星號顯示為星號，則必須將其逸出。 而在其他內容中，您只要在想要顯示的位置鍵入星號即可。
+MSBuild 會在特定內容中保留一些特殊用途的字元。 如果您想要在保留這些字元的內容中按字面使用這些字元，只需要將其逸出即可。 比方說，星號僅在項目定義的 `Include` 和 `Exclude` 屬性，以及 `CreateItem` 呼叫中具有特殊意義。 如果您想要將這些內容之一的星號顯示為星號，則必須將其逸出。 而在其他內容中，您只要在想要顯示的位置鍵入星號即可。
 
- 若要逸出特殊字元，請使用 %\<xx> 語法，其中 \<xx> 代表字元的 ASCII 十六進位值。 有關詳細資訊，請參閱[如何：在 MSBuild 中轉義特殊字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)。
+ 若要對特殊字元進行 escape，請使用語法% \<xx> ，其中 \<xx> 代表字元的 ASCII 十六進位值。 如需詳細資訊，請參閱 [如何：在 MSBuild 中 Escape 特殊字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)。
 
 ## <a name="special-characters"></a>特殊字元
 
- 下表列出了 MSBuild 特殊字元：
+ 下表列出 MSBuild 特殊字元：
 
-|**字元**|**Ascii**|**保留的使用方式**|
+|**字元**|**ASCII**|**保留的使用方式**|
 |-------------------|---------------|------------------------|
 |%|%25|參考中繼資料|
 |$|%24|參考屬性|

@@ -1,5 +1,5 @@
 ---
-title: CA1704：識別碼應正確拼寫 |Microsoft Docs
+title: CA1704：識別碼應該正確拼寫 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b5e078fc1bb7fe247d541e7695e98c2de76c2466
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544062"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704:識別項應該使用正確的拼字
@@ -29,35 +29,35 @@ ms.locfileid: "85544062"
 |-|-|
 |TypeName|IdentifiersShouldBeSpelledCorrectly|
 |CheckId|CA1704|
-|類別|Microsoft. 命名|
+|類別|Microsoft。命名|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 識別碼的名稱包含一或多個 Microsoft 拼寫檢查程式庫無法辨識的文字。 此規則不會檢查函數或特殊命名的成員，例如 get 和 set 屬性存取子。
+ 識別碼的名稱包含一或多個 Microsoft 拼寫檢查庫無法辨識的字詞。 此規則不會檢查函式或特殊命名的成員，例如 get 和 set 屬性存取子。
 
 ## <a name="rule-description"></a>規則描述
  此規則會將識別碼剖析為權杖，並檢查每個權杖的拼寫。 剖析演算法會執行下列轉換：
 
-- 大寫字母會開始新的權杖。 例如，MyNameIsJoe token 化 to "My"，"Name"，"Is"，"Joe"。
+- 大寫字母會開始新的權杖。 例如，MyNameIsJoe token 化 to "My"，"Name"，"Name"，"Joe"。
 
-- 若使用多個大寫字母，則最後一個大寫字母會啟動新的 token。 例如，GUIEditor token 化 to "GUI"，"Editor"。
+- 針對多個大寫字母，最後一個大寫字母會開始新的權杖。 例如，GUIEditor token 化至 "GUI"、"Editor"。
 
-- 開頭和尾端的撇號會被移除。 例如，「寄件者」 token 化為「寄件者」。
+- 開頭和尾端的單引號會遭到移除。 例如，「寄件者」 token 化至「寄件者」。
 
-- 底線表示標記的結尾，並已移除。 例如，Hello_world token 化為 "Hello"、"world"。
+- 底線表示權杖的結尾，並被移除。 例如，Hello_world token 化為 "Hello"、"world"。
 
-- 已移除內嵌的符號。 例如，&的 token 化為「格式」。
+- 移除內嵌的 & 符號。 例如，針對&token 化] 的 [格式]。
 
-  根據預設，會使用拼寫檢查的英文（en）版本。 目前未提供任何其他語言字典。
+  根據預設，會使用拼寫檢查程式的英文 (en) 版本。 目前沒有其他語言字典可用。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請更正單字的拼寫，或將此單字加入名為 CustomDictionary.xml 的自訂字典中。 將字典放在工具的安裝目錄、專案目錄，或與使用者設定檔（%USERPROFILE%\Application Data ...）下的工具相關聯的目錄中 \\ 。若要瞭解如何將自訂字典加入至中的專案 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，請參閱[如何：自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ 若要修正此規則的違規情形，請更正單字的拼寫，或將文字加入名為 CustomDictionary.xml 的自訂字典。 將字典放在工具的安裝目錄、專案目錄中，或是與使用者設定檔（位於 [使用者 (%USERPROFILE%\Application Data ... ) ] 下的工具相關聯的目錄中。 \\若要瞭解如何將自訂字典新增至中的專案 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，請參閱 [如何：自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
-- 新增不應在字典/單字/已辨識路徑下造成違規的文字。
+- 在字典/單字/無法辨識的路徑下新增不應造成違規的單字。
 
-- 新增在字典/單字/無法辨識的路徑底下應造成違規的文字。
+- 新增在字典/單字/無法辨識的路徑下出現違規的單字。
 
-- 新增在字典/單字/已取代路徑底下應標示為過時的文字。 如需詳細資訊，請參閱相關的規則主題[ca1726 建議：使用慣用的字詞](../code-quality/ca1726-use-preferred-terms.md)。
+- 新增在字典/單字/已被取代的路徑下應標示為過時的單字。 如需詳細資訊，請參閱相關的規則主題 [ca1726 建議：使用慣用詞彙](../code-quality/ca1726-use-preferred-terms.md)。
 
 - 將縮寫大小寫規則的例外狀況新增至字典/縮略字/CasingExceptions 路徑。
 
@@ -87,7 +87,7 @@ ms.locfileid: "85544062"
 ```
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 只有在 word 故意拼錯，而且該單字適用于一組有限的程式庫時，才會隱藏此規則的警告。 拼寫正確的文字會減少新軟體程式庫所需的學習曲線。
+ 只有當單字刻意拼錯，且該單字適用于一組有限的程式庫時，才會隱藏此規則的警告。 拼寫正確的單字可減少新軟體程式庫所需的學習曲線。
 
 ## <a name="related-rules"></a>相關規則
  [CA2204:常值必須使用正確的拼字](../code-quality/ca2204-literals-should-be-spelled-correctly.md)

@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6aaa6309e04f5143b70ff233c0b621ab2350b9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633118"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 
-MSBuild 使用工作、目標和工具的工具組建置應用程式。 通常，MSBuild Toolset 包括*microsoft.common.tasks*檔 *、microsoft.common.target*檔以及編譯器（如*csc.exe*和*vbc.exe）。* 大部分的工具組都可用來將應用程式編譯為多個版本的 .NET Framework 和多個系統平台。 不過，MSBuild 2.0 工具組僅能以 .NET Framework 2.0 為使用目標。
+MSBuild 使用工作、目標和工具的工具組建置應用程式。 MSBuild 工具組通常會包含一組 *microsoft* 一般的 *.targets* 檔案，以及像是 *csc.exe* 和 *vbc.exe*的編譯器。 大部分的工具組都可用來將應用程式編譯為多個版本的 .NET Framework 和多個系統平台。 不過，MSBuild 2.0 工具組僅能以 .NET Framework 2.0 為使用目標。
 
 ## <a name="toolsversion-attribute"></a>ToolsVersion 屬性
 
@@ -61,7 +61,7 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 通常�
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 ```
 
- 透過定義自訂工具組，您就可以修改 `MSBuildToolsPath` 的值。 有關詳細資訊，請參閱[標準和自訂工具集配置](../msbuild/standard-and-custom-toolset-configurations.md)。
+ 透過定義自訂工具組，您就可以修改 `MSBuildToolsPath` 的值。 如需詳細資訊，請參閱 [標準和自訂工具](../msbuild/standard-and-custom-toolset-configurations.md)組設定。
 
  當您在命令列上建置方案並針對 *msbuild.exe* 指定 `ToolsVersion` 時，所有專案及其專案對專案相依性都會根據該 `ToolsVersion` 建置，即使方案中的每個專案都指定其自己的 `ToolsVersion` 也是如此。 若要根據專案來定義 `ToolsVersion` 值，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。
 
@@ -87,7 +87,7 @@ MSBuild 會提供兩種方法來存取工具組：
 
 - 透過使用 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 方法
 
-工具組屬性會指定工具的路徑。 自 Visual Studio 2017 起，MSBuild 不再具有固定位置。 預設情況下，它位於*MSBuild_15.0_Bin*資料夾中，相對於 Visual Studio 安裝位置。 在先前的版本中，MSBuild 會使用專案檔中的 `ToolsVersion` 屬性值來尋找對應的登錄機碼，然後使用登錄機碼中的資訊設定工具組屬性。 例如，如果`ToolsVersion`值`12.0`為 ，則 MSBuild 會根據此登錄機碼設置工具集屬性 **：HKLM_軟體_Microsoft_MSBuild_ToolsVersions_12.0**。
+工具組屬性會指定工具的路徑。 自 Visual Studio 2017 起，MSBuild 不再具有固定位置。 根據預設，它位於 *MSBuild\15.0\Bin* 資料夾中，相對於 Visual Studio 安裝位置。 在先前的版本中，MSBuild 會使用專案檔中的 `ToolsVersion` 屬性值來尋找對應的登錄機碼，然後使用登錄機碼中的資訊設定工具組屬性。 例如，如果 `ToolsVersion` 有值 `12.0` ，則 MSBuild 會根據以下登錄機碼來設定工具組屬性： **HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0**。
 
  以下為工具組屬性：
 
@@ -134,5 +134,5 @@ MSBuild 會提供 `ToolLocationHelper` 方法的多載，這些方法可加入 `
 
 ## <a name="see-also"></a>另請參閱
 
-- [標準和自訂工具集配置](../msbuild/standard-and-custom-toolset-configurations.md)
+- [標準和自訂工具組設定](../msbuild/standard-and-custom-toolset-configurations.md)
 - [多目標](../msbuild/msbuild-multitargeting-overview.md)

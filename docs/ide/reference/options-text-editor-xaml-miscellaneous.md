@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: f646d52e3aae3d52f6cd24d75421fbdc71d30d66
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544088"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>選項、文字編輯器、XAML、其他
@@ -43,7 +43,7 @@ ms.locfileid: "85544088"
 
 使用此設定可控制標記和引號的自動產生時機。
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**結尾標記**|指定當您關閉具有大於字元 (>) 的開始標記時，是否自動產生項目的結尾標記。|
 |**屬性引號**|指定從陳述式完成下拉式清單中選取屬性值時，是否產生封閉式引號。|

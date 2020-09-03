@@ -21,15 +21,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77630778"
 ---
 # <a name="xsd-task"></a>XSD 工作
 
-包裝 XML 架構定義工具 *（xsd.exe），* 該工具從源生成架構或類檔。
+包裝 XML 架構定義工具 (*xsd.exe*) ，它會從來源產生架構或類別檔案。
 
 > [!NOTE]
 > 從 Visual Studio 2017 開始，*xsd.exe* 的 C++ 專案支援已過時。 您仍然可以將 *CppCodeProvider.dll* 手動新增至 GAC 來使用**Microsoft.VisualC.CppCodeProvider** API。
@@ -40,25 +40,25 @@ ms.locfileid: "77630778"
 
 - **AdditionalOptions**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
-     選項的清單，如命令列上所指定。 例如，/\<option1> /\<option2> /\<option#>。 使用這個參數來指定任何其他 **XSD** 工作參數未表示的選項。
+     選項的清單，如命令列上所指定。 例如，/ \<option1>  / \<option2>  / \<option#> 。 使用這個參數來指定任何其他 **XSD** 工作參數未表示的選項。
 
 - **GenerateFromSchema**
 
-  可選**字串**參數。
+  選擇性的 **字串** 參數。
 
   指定從指定的結構描述產生的類型。
 
   指定下列其中一個值，每個值會分別對應至一個 XSD 選項。
 
-  - **類** - **/類**
+  - **類別**  - **/classes**
 
-  - **資料集** - **/資料集**
+  - **資料集**  - **/dataset**
 
 - **語言**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      指定產生的程式碼要使用的程式語言。
 
@@ -66,7 +66,7 @@ ms.locfileid: "77630778"
 
 - **Namespace**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      指定產生的型別的執行階段命名空間。
 
@@ -78,16 +78,16 @@ ms.locfileid: "77630778"
 
 - **SuppressStartupBanner**
 
-     可選**布林參數**。
+     選擇性的 **布林值** 參數。
 
      如果是 `true`，當工作開始時，會防止顯示著作權和版本號碼訊息。
 
 - **TrackerLogDirectory**
 
-     可選**字串**參數。
+     選擇性的 **字串** 參數。
 
      指定追蹤器記錄檔的目錄。
 
 ## <a name="see-also"></a>另請參閱
 
-- [任務引用](../msbuild/msbuild-task-reference.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

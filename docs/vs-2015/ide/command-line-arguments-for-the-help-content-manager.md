@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a3e7cc942550c979ca4b3f3138da252321b4c983
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619693"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Help Content Manager 的命令列引數
@@ -44,7 +44,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 ## <a name="switches-and-arguments"></a>參數和引數
  下表定義的參數和引數可讓您在 Help Content Manager 的命令列工具使用：
 
-|參數|是否為必要項？|引數|
+|交換器|必要？|引數|
 |------------|---------------|---------------|
 |/operation|是|-   **安裝** -- 從指定的安裝來源將書籍新增至本機內容存放區。<br />     這個參數需要 /booklist 引數或 /sourceURI 引數，或是兩者同時使用。 如果您沒有指定 /sourceURI 引數，則會把預設的 Visual Studio URI 當成安裝來源。 如果您未指定 /booklist 引數，就會安裝 /sourceUri 上的所有書籍。<br />-   **解除安裝** -- 從本機內容存放區中移除您指定的書籍。<br />     這個參數需要 /booklist 引數或 /sourceURI 引數。  如果您指定 /sourceURI 引數，則會移除所有書籍，並會忽略 /booklist 引數。<br />-   **移動** -- 將本機存放區移至您指定的路徑。 預設本機存放區路徑是由 %PROGRAMDATA% 之下的說明安裝程式所設定<br />     這個參數需要 /locationPath 和 /catalogName 引數。 如果您指定無效的路徑或磁碟機未包含足夠的可用空間來容納內容，錯誤訊息將被記錄在事件記錄檔中。<br />-   **重新整理** -- 更新已變更的主題，因為它們已安裝或最近更新過。<br />     這個參數需要 /sourceURI 引數。|
 |/catalogName|是|指定內容目錄的名稱。|
@@ -59,7 +59,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 |/locationpath|否|指定本機說明內容的預設資料夾。 您只能用這個參數安裝或移動內容。 如果您指定這個參數，則您也必須指定 /silent 參數。|
 |/silent|否|安裝或移除說明內容，而不提示使用者，或顯示任何包括狀態通知區域中圖示的 UI。 輸出會被記錄在 %Temp% 目錄中的檔案。 **重要：** 若要以無訊息方式安裝內容，您必須使用數位簽署的 .cab 檔案，而非 .mshc 檔案。|
 |/launchingApp|否|在沒有父應用程式時啟動說明檢視器，請定義應用程式和目錄的內容。 此切換參數的引數是 *CompanyName*、*ProductName* 和 *VersionNumber* (例如 `/launchingApp Microsoft,VisualStudio,11.0`)。<br /><br /> 若要使用 /silent 參數安裝內容，這是必要的。|
-|/wait 秒 |否|暫停安裝、解除安裝和重新整理作業。 如果已經為了目錄而正在進行作業，處理序會在等候指定的秒數後繼續。 指定 0 會無限期等待。|
+|/wait 秒**|否|暫停安裝、解除安裝和重新整理作業。 如果已經為了目錄而正在進行作業，處理序會在等候指定的秒數後繼續。 使用 0 表示永遠等候。|
 |/?|否|列出 Help Content Manager 命令列工具的參數及描述。|
 
 ### <a name="exit-codes"></a>結束代碼
@@ -89,4 +89,4 @@ UpdateAlreadyRunning = 1300 – (Signals that the update didn't run because anot
 ```
 
 ## <a name="see-also"></a>另請參閱
- 說明[檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)[協助內容管理員覆寫](../ide/help-content-manager-overrides.md)
+ [Help Viewer 系統管理員指南](../ide/help-viewer-administrator-guide.md)說明 [內容管理員覆寫](../ide/help-content-manager-overrides.md)

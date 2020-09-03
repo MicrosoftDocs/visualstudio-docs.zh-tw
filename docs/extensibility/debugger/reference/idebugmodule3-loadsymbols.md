@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::載入符號 |微軟文件
+title: IDebugModule3：： LoadSymbols |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4c61339305200acc9a6c572a1a96595dc4cb6f50
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726783"
 ---
 # <a name="idebugmodule3loadsymbols"></a>IDebugModule3::LoadSymbols
-載入目前的模組的符號。
+載入目前模組的符號。
 
 ## <a name="syntax"></a>語法
 
@@ -41,9 +41,9 @@ int LoadSymbols();
  如果方法成功，它會傳回 `S_OK`。 如果方法失敗，則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 此方法從當前搜索路徑載入符號(可以通過調用[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)方法來更改)。
+ 這個方法會從目前的搜尋路徑載入符號， (可以藉由呼叫 [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md) 方法) 來變更。
 
- 此方法優先於[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)方法。
+ 這個方法在 [ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md) 方法上是慣用的。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

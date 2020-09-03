@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0b2e8ebcc7720f5cd9dc6c700bcc08b68f89e275
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542489"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028:列舉儲存區應該是 Int32
@@ -29,25 +29,25 @@ ms.locfileid: "85542489"
 |-|-|
 |TypeName|EnumStorageShouldBeInt32|
 |CheckId|CA1028|
-|類別|Microsoft. Design|
+|類別|Microsoft. 設計|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
  公用列舉的基礎類型不是 <xref:System.Int32?displayProperty=fullName> 。
 
 ## <a name="rule-description"></a>規則描述
- 列舉類型是一種實值類型 (Value Type)，用以定義一組相關的具名常數。 根據預設， <xref:System.Int32?displayProperty=fullName> 資料類型會用來儲存常數值。 雖然您可以變更此基礎類型，但在大部分的情況下並不需要或不建議這麼做。 請注意，您可以使用小於的資料類型來達到顯著的效能提升 <xref:System.Int32> 。 如果您無法使用預設資料類型，您應該使用其中一個通用語言系統（CLS）相容整數類型、、、 <xref:System.Byte> 或， <xref:System.Int16> <xref:System.Int32> <xref:System.Int64> 以確保列舉的所有值都能以符合 CLS 標準的程式設計語言表示。
+ 列舉類型是一種實值類型 (Value Type)，用以定義一組相關的具名常數。 根據預設， <xref:System.Int32?displayProperty=fullName> 資料類型會用來儲存常數值。 雖然您可以變更此基礎類型，但在大部分情況下並不需要或建議您這樣做。 請注意，使用小於的資料類型，並不會達到顯著的效能提升 <xref:System.Int32> 。 如果您無法使用預設的資料類型，您應該使用其中一個 Common Language System (符合 cls) 規範的整數類型、、、 <xref:System.Byte> <xref:System.Int16> 或， <xref:System.Int32> <xref:System.Int64> 以確定列舉的所有值都能以符合 CLS 標準的程式設計語言表示。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規，除非存在大小或相容性問題，請使用 <xref:System.Int32> 。 對於 <xref:System.Int32> 不夠大而無法保存值的情況，請使用 <xref:System.Int64> 。 如果回溯相容性需要較小的資料類型，請使用 <xref:System.Byte> 或 <xref:System.Int16> 。
+ 若要修正此規則的違規，除非有大小或相容性問題，請使用 <xref:System.Int32> 。 如果 <xref:System.Int32> 是不夠大而無法容納值的情況，請使用 <xref:System.Int64> 。 如果回溯相容性需要較小的資料類型，請使用 <xref:System.Byte> 或 <xref:System.Int16> 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 只有在回溯相容性問題需要時，才隱藏此規則的警告。 在應用程式中，如果無法符合此規則，通常不會造成問題。 在需要語言互通性的程式庫中，如果不符合此規則，可能會對使用者造成不良影響。
+ 只有在回溯相容性問題需要時，才隱藏此規則的警告。 在應用程式中，無法符合此規則通常不會造成問題。 在需要語言互通性的程式庫中，無法符合此規則可能會對您的使用者造成負面影響。
 
-## <a name="example-of-a-violation"></a>違規的範例
+## <a name="example-of-a-violation"></a>違規範例
 
 ### <a name="description"></a>描述
- 下列範例顯示兩個不使用建議之基礎資料類型的列舉。
+ 下列範例顯示兩個未使用建議基礎資料類型的列舉。
 
 ### <a name="code"></a>程式碼
  [!code-csharp[FxCop.Design.EnumIntegralType#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EnumIntegralType/cs/FxCop.Design.EnumIntegralType.cs#1)]
@@ -56,7 +56,7 @@ ms.locfileid: "85542489"
 ## <a name="example-of-how-to-fix"></a>如何修正的範例
 
 ### <a name="description"></a>描述
- 下列範例會將基礎資料類型變更為，藉以修正先前的違規 <xref:System.Int32> 。
+ 下列範例會藉由將基礎資料類型變更為來修正先前的違規 <xref:System.Int32> 。
 
 ### <a name="code"></a>程式碼
  [!code-csharp[FxCop.Design.EnumIntegralTypeFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EnumIntegralTypeFixed/cs/FxCop.Design.EnumIntegralTypeFixed.cs#1)]

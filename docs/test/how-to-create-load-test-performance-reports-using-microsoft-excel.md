@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a94a44d0a826cbda1d50b212f61bef86ad29f05c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287814"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>如何：使用 Microsoft Excel 建立負載測試效能報告
@@ -58,7 +58,7 @@ ms.locfileid: "85287814"
    - 完成負載測試後，在 [負載測試結果]**** 頁面中，選擇工具列的 [建立 Excel 報表]**** 按鈕。
 
       > [!NOTE]
-      > 如果 [ **Web 效能測試結果檢視器]** 工具列中的 [**建立 excel 報表**] 按鈕已停用，您可能需要執行一次 Microsoft Excel，才能加以啟用。 安裝 Visual Studio Enterprise 時，會將 Visual Studio Enterprise 負載測試增益集複製到您的電腦以供 Microsoft Excel 使用，但這個增益集的安裝程序要到執行 Microsoft Excel 後才算完成。
+      > 如果 [ **Web 效能測試結果檢視器]** 工具列中的 [**建立 excel 報表**] 按鈕已停用，您可能需要在啟用 Microsoft Excel 前一次執行。 安裝 Visual Studio Enterprise 時，會將 Visual Studio Enterprise 負載測試增益集複製到您的電腦以供 Microsoft Excel 使用，但這個增益集的安裝程序要到執行 Microsoft Excel 後才算完成。
 
       Microsoft Excel 隨即開啟 [產生負載測試報告精靈]****。
 
@@ -85,7 +85,7 @@ ms.locfileid: "85287814"
    > [!NOTE]
    > 您只能為兩個負載測試結果產生比較報告。 如果選取一個或超過兩個的負載測試結果，則會出現警告訊息。
 
-8. 在 [**選取報告的計數器**] 頁面的 [**選取一或多個要加入報告的計數器**] 下方，有一個可展開的計數器清單，可以用來自訂您的報告。 在報告中，從兩個已選取之測試回合選取您要比較的計數器，然後選擇 [完成]****。
+8. 在 [ **選取報表的計數器** ] 頁面的 [ **選取一或多個要加入至報表的計數器** ] 下，可以使用可展開的計數器清單來自訂報表。 在報告中，從兩個已選取之測試回合選取您要比較的計數器，然後選擇 [完成]****。
 
 9. 隨即產生 Excel 活頁簿報告，其中包含下列試算表索引標籤：
 
@@ -113,7 +113,7 @@ ms.locfileid: "85287814"
    - 完成負載測試後，在 [負載測試結果]**** 頁面中，選擇工具列的 [建立 Excel 報表]**** 按鈕。
 
       > [!NOTE]
-      > 如果 [ **Web 效能測試結果檢視器]** 工具列中的 [**建立 excel 報表**] 按鈕已停用，您可能需要執行一次 Microsoft Excel，才能加以啟用。 安裝 Visual Studio Enterprise 時，會將 Visual Studio Enterprise 負載測試增益集複製到您的電腦以供 Microsoft Excel 使用，但這個增益集的安裝程序要到執行 Microsoft Excel 後才算完成。
+      > 如果 [ **Web 效能測試結果檢視器]** 工具列中的 [**建立 excel 報表**] 按鈕已停用，您可能需要在啟用 Microsoft Excel 前一次執行。 安裝 Visual Studio Enterprise 時，會將 Visual Studio Enterprise 負載測試增益集複製到您的電腦以供 Microsoft Excel 使用，但這個增益集的安裝程序要到執行 Microsoft Excel 後才算完成。
 
       Microsoft Excel 隨即開啟 [產生負載測試報告精靈]****。
 

@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 25943a6b3edc1a55c6d27d3c2737a9893edf5032
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84179956"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>使用 Windows PowerShell 指令碼來發行至開發和測試環境
@@ -22,7 +22,7 @@ ms.locfileid: "84179956"
 
 使用這些指令碼，您可以佈建網站的自訂版本 (也稱為開發和測試環境)，以做臨時使用。 例如，您可以在 Azure 虛擬機器上或網站的預備位置上設定網站的特定版本，以執行測試套件、重現錯誤、測試錯誤修正、試驗提議的變更，或設定用來進行示範或展示的自訂環境。 在建立用來發佈專案的指令碼後，您可以視需要重新執行指令碼來重建相同環境，或對 Web 應用程式的自有組建執行指令碼以建立用於測試的自訂環境。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
 * 已安裝 **Azure 工作負載**的 Visual Studio 2015 或更新版本，或 Visual Studio 2013 和 Azure SDK 2.3 或更新版本。 請參閱 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)。 (要產生 Web 專案的指令碼並不需要用到 Azure SDK。 這項功能是供 Web 專案使用，而非供雲端服務中的 Web 角色使用。)
 * Azure PowerShell 0.7.4 或更新版本。 請參閱 [如何安裝和設定 Azure PowerShell](/powershell/azure/overview)。
@@ -250,7 +250,7 @@ JSON 檔案建立於 **Configurations** 資料夾中，而且包含可明確指�
         #Write a function to build and package your web application
     ```
 
-    若要建置 Web 應用程式，使用 MsBuild.exe。 如需說明，請參閱[MSBuild 命令列參考](../msbuild/msbuild-command-line-reference.md)
+    若要建置 Web 應用程式，使用 MsBuild.exe。 如需協助，請參閱 [MSBuild 命令列參考](../msbuild/msbuild-command-line-reference.md)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -306,7 +306,7 @@ return $WebDeployPackage
     若要自動測試應用程式，請將程式碼加入 `Test-WebApplication`。 請務必要將 **Publish-WebApplication.ps1** 中呼叫這些函式的程式行取消註解。 如果您沒有提供實作，您可以使用 Visual Studio 手動建置專案，然後執行發佈指令碼以發佈至 Azure。
 
 ## <a name="publishing-function-summary"></a>發佈函式摘要
-若要取得可以在 Windows PowerShell 命令提示字元使用之函式的說明，請使用 `Get-Help function-name`命令。 說明中會包括參數說明和範例。 腳本來源檔案中也有相同的解說文字**azurewebapppublishmodule.psm1. .psm1**和**publish-webapplication.ps1**。 指令碼和說明都已當地語系化為 Visual Studio 所使用的語言。
+若要取得可以在 Windows PowerShell 命令提示字元使用之函式的說明，請使用 `Get-Help function-name`命令。 說明中會包括參數說明和範例。 腳本來源檔案中也會有相同的解說文字 **azurewebapppublishmodule.psm1. .psm1** 及 **Publish-WebApplication.ps1**。 指令碼和說明都已當地語系化為 Visual Studio 所使用的語言。
 
 **AzureWebAppPublishModule**
 
@@ -322,7 +322,7 @@ return $WebDeployPackage
 | Find-AzureVM |取得指定的 Azure 虛擬機器。 |
 | Format-DevTestMessageWithTime |在訊息前面加上日期和時間。 此函式是專為寫入 Error 和 Verbose 串流的訊息所設計。 |
 | Get-AzureSQLDatabaseConnectionString |組合連接字串來連線到 Azure SQL 資料庫。 |
-| Get-AzureVMStorage |傳回指定位置或同質群組中，名稱模式為 "devtest *" （不區分大小寫）的第一個儲存體帳戶名稱。如果 "devtest*" 儲存體帳戶不符合位置或同質群組，則函式會忽略它。 指定位置或同質群組。 |
+| Get-AzureVMStorage |傳回指定位置或同質群組中，) 名稱模式為 "devtest *" (不區分大小寫之第一個儲存體帳戶的名稱。如果 "devtest*" 儲存體帳戶不符合位置或同質群組，則函式會忽略它。 指定位置或同質群組。 |
 | Get-MSDeployCmd |傳回執行 MsDeploy.exe 工具的命令。 |
 | New-AzureVMEnvironment |在訂用帳戶中尋找或建立符合 JSON 組態檔中的值的虛擬機器。 |
 | Publish-WebPackage |使用 MsDeploy.exe 和 Web 發佈封裝 .Zip 檔案將資源部署至網站。 此函式不會產生任何輸出。 如果呼叫 MSDeploy.exe 失敗，此函式會擲回例外狀況。 若要取得更詳細的輸出，請使用 **-Verbose** 選項。 |

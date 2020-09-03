@@ -1,5 +1,5 @@
 ---
-title: 執行商店應用程式的單元測試
+title: 針對商店應用程式執行單元測試
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -10,10 +10,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b70e3a24cd4cb05dc1a28ff855498496f5665ddc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542853"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>在 Visual Studio 中對市集應用程式執行單元測試
@@ -29,12 +29,12 @@ ms.locfileid: "85542853"
 >
 >   如需詳細資訊，請參閱 MSDN Library 中的[對程式碼進行單元測試](../test/unit-test-your-code.md)。
 
-## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a>本主題中的
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> 本主題中
  [單元測試架構和測試專案](#BKMK_Unit_test_frameworks_and_test_projects)
 
  [在 [測試總管] 中執行測試](#BKMK_Running_tests_in_Test_Explorer)
 
-- [正在執行測試](#BKMK_Running_tests)
+- [執行測試](#BKMK_Running_tests)
 
   [查看測試結果](#BKMK_Viewing_test_results)
 
@@ -44,16 +44,16 @@ ms.locfileid: "85542853"
 
   [組織測試清單](#BKMK_Organizing_the_test_list)
 
-- [群組測試](#BKMK_Grouping_tests)
+- [分組測試](#BKMK_Grouping_tests)
 
 - [搜尋和篩選測試清單](#BKMK_Searching_and_filtering_the_test_list)
 
-  [進行單元測試的調試](#BKMK_Debugging_unit_tests)
+  [調試單元測試](#BKMK_Debugging_unit_tests)
 
 ## <a name="unit-test-frameworks-and-test-projects"></a><a name="BKMK_Unit_test_frameworks_and_test_projects"></a> 單元測試架構和測試專案
  適用於 Windows 市集應用程式的 Visual Studio Express，包括用於 Managed 和原生 C++ 程式碼的 Microsoft 單元測試架構。 [測試總管] 可以從方案中的多個測試專案，以及屬於實際執行程式碼專案的測試類別執行測試。 測試專案可以是 Visual C++ 或 Visual C# 和 Visual Basic 單元測試架構的任意組合。 只要寫好 .NET Framework 的待測程式碼，不論目標程式碼語言為何，就可使用任何 .NET Framework 語言撰寫測試專案。 原生 C/C++ 程式碼專案必須使用 C++ 單元測試架構進行測試。
 
-## <a name="running-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a>在測試瀏覽器中執行測試
+## <a name="running-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a> 在測試瀏覽器中執行測試
  在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果看不到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試]****，並選擇 [Windows]****，然後選擇 [測試總管]****。
 
  ![單元測試總管](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
@@ -64,7 +64,7 @@ ms.locfileid: "85542853"
 
  ![從 [測試總管] 的工具列執行測試](../test/media/ute-toolbar.png "UTE_ToolBar")
 
-### <a name="running-tests"></a><a name="BKMK_Running_tests"></a>正在執行測試
+### <a name="running-tests"></a><a name="BKMK_Running_tests"></a> 執行測試
  您可以執行方案中的所有測試、群組中的所有測試，或是您選取的一組測試。 執行下列其中一個動作：
 
 - 若要執行方案中的所有測試，請選擇 [全部執行] ****。
@@ -98,16 +98,16 @@ ms.locfileid: "85542853"
 ### <a name="viewing-the-source-code-of-a-test-method"></a><a name="BKMK_Viewing_the_source_code_of_a_test_method"></a>檢視測試方法的原始程式碼
  若要在 Visual Studio 編輯器中顯示測試方法的原始程式碼，請選取該測試，然後選擇捷徑功能表上的 [開啟測試]**** \(鍵盤：F12)。
 
-## <a name="organizing-the-test-list"></a><a name="BKMK_Organizing_the_test_list"></a>組織測試清單
+## <a name="organizing-the-test-list"></a><a name="BKMK_Organizing_the_test_list"></a> 組織測試清單
 
 ### <a name="grouping-tests"></a><a name="BKMK_Grouping_tests"></a>將測試分組
  [測試總管] 預設將測試顯示為子節點：[失敗的測試]****、[成功的測試]****、[略過的測試]**** 和 [未執行的測試]****。
 
-|映像|描述|
+|Image|描述|
 |-|-|
 |![[測試總管] 的 [群組] 按鈕](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|若要將測試按執行耗用時間分組，請開啟 [群組依據]**** 清單，然後選擇 [持續時間]****。 選擇 [測試結果]****，切換到原始群組。|
 
-### <a name="searching-and-filtering-the-test-list"></a><a name="BKMK_Searching_and_filtering_the_test_list"></a>搜尋和篩選測試清單
+### <a name="searching-and-filtering-the-test-list"></a><a name="BKMK_Searching_and_filtering_the_test_list"></a> 搜尋和篩選測試清單
  當有大量測試時，您可以在 [測試總管] 的搜尋方塊中輸入指定字串以篩選清單。 您可以先在篩選清單中選擇，限制篩選特定類型的字串，再輸入搜尋字串。
 
  ![搜尋篩選條件分類](../test/media/ute-searchfilter.png "UTE_SearchFilter")

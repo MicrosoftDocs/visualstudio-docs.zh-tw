@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8f3de9a4f2fe848e1cbd41e14e82498845ca2cf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77578658"
 ---
 # <a name="getfilehash-task"></a>GetFileHash 工作
@@ -67,4 +67,4 @@ ms.locfileid: "77578658"
 
 - [工作](../msbuild/msbuild-tasks.md)
 
-- [任務引用](../msbuild/msbuild-task-reference.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

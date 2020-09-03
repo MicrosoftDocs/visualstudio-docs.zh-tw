@@ -1,5 +1,5 @@
 ---
-title: 使用 IntelliTrace 進行 SharePoint 應用程式的 Debug
+title: 使用 IntelliTrace 來將 SharePoint 應用程式進行偵錯工具
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,18 +17,19 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015758"
 ---
-# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>逐步解說：使用 IntelliTrace 來對 SharePoint 應用程式進行 Debug
+# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>逐步解說：使用 IntelliTrace 來對 SharePoint 應用程式進行偵錯工具
 
-藉由使用 IntelliTrace，您可以更輕鬆地對 SharePoint 方案進行偵錯工具。 傳統的偵錯工具會在目前的時間提供方案的快照集。 不過，您可以使用 IntelliTrace 來檢查解決方案中發生的過去事件及其發生的內容，並流覽至程式碼。
+藉由使用 IntelliTrace，您可以更輕鬆地進行 SharePoint 方案的偵錯工具。 傳統的偵錯工具目前只提供解決方案的快照。 不過，您可以使用 IntelliTrace 來檢查您的解決方案中發生的過去事件以及它們發生的內容，然後流覽至程式碼。
 
- 本逐步解說示範如何使用 Microsoft Monitoring Agent 從已部署的應用程式收集 IntelliTrace 資料，以在 Visual Studio 中進行 SharePoint 2010 或 SharePoint 2013 專案的偵錯工具。 若要分析該資料，您必須使用 Visual Studio Enterprise。 此專案包含功能接收器，當功能啟動時，會將工作新增至 [工作清單]，並將公告加入至 [公告] 清單。 停用此功能時，會將工作標示為已完成，並將第二個公告新增至 [公告] 清單。 不過，此套裝程式含導致專案無法正確執行的邏輯錯誤。 藉由使用 IntelliTrace，您將找出並更正錯誤。
+ 本逐步解說將示範如何使用 Microsoft Monitoring Agent 來從已部署的應用程式收集 IntelliTrace 資料，以在 Visual Studio 中將 SharePoint 2010 或 SharePoint 2013 專案進行 debug 錯。 若要分析該資料，您必須使用 Visual Studio Enterprise。 此專案會併入功能接收器，在功能啟用時，會將工作新增至 [工作清單]，並將公告新增至 [公告] 清單。 停用此功能時，會將工作標示為已完成，並將第二個公告新增至公告清單中。 不過，此套裝程式含導致專案無法正確執行的邏輯錯誤。 藉由使用 IntelliTrace，您將會找出並更正錯誤。
 
- **適用物件：** 本主題中的資訊適用于在 Visual Studio 中建立的 SharePoint 2010 和 SharePoint 2013 解決方案。
+ **適用于：** 本主題中的資訊適用于在 Visual Studio 中建立的 SharePoint 2010 和 SharePoint 2013 方案。
 
  本逐步解說將說明下列工作：
 
@@ -56,25 +57,25 @@ ms.locfileid: "86015758"
 
 首先，您要建立一個具有功能接收器的空白 SharePoint 專案。
 
-1. 建立 SharePoint 2010 或 SharePoint 2013 方案專案，並將其命名為**IntelliTraceTest**。
+1. 建立 SharePoint 2010 或 SharePoint 2013 方案專案，並將它命名為 **IntelliTraceTest**。
 
-     [ **Sharepoint 自訂嚮導]** 隨即出現，您可以在其中指定專案的 SharePoint 網站和方案的信任層級。
+     [ **Sharepoint 自訂] Wizard** 隨即出現，您可以在其中指定專案的 SharePoint 網站和方案的信任層級。
 
-2. 選擇 [**部署為伺服器陣列方案**] 選項按鈕，然後選擇 [**完成]** 按鈕。
+2. 選擇 [ **部署為伺服器陣列方案** ] 選項按鈕，然後選擇 [ **完成]** 按鈕。
 
      IntelliTrace 只會在伺服器陣列方案上運作。
 
-3. 在**方案總管**中，開啟 [**功能**] 節點的快捷方式功能表，然後選擇 [**加入功能**]。
+3. 在 **方案總管**中，開啟 [ **功能** ] 節點的快捷方式功能表，然後選擇 [ **加入功能**]。
 
-     *Feature1。功能*隨即出現。
+     *Feature1。功能* 隨即出現。
 
-4. 開啟 [Feature1] 的快捷方式功能表，然後選擇 [**加入事件接收器**]，將程式碼模組加入至功能。
+4. 開啟 Feature1 的快捷方式功能表，然後選擇 [ **加入事件接收器** ]，將程式碼模組加入至功能。
 
-## <a name="add-code-to-the-feature-receiver"></a>將程式碼加入至功能接收器
+## <a name="add-code-to-the-feature-receiver"></a>將程式碼新增至功能接收器
 
-接下來，將程式碼新增至功能接收器中的兩個方法： `FeatureActivated` 和 `FeatureDeactivating` 。 每當 SharePoint 中的功能分別啟用或停用時，這些方法就會觸發。
+接下來，將程式碼新增至功能接收器中的兩個方法： `FeatureActivated` 和 `FeatureDeactivating` 。 每次在 SharePoint 中啟用或停用功能時，都會觸發這些方法。
 
-1. 在類別的頂端 `Feature1EventReceiver` ，新增下列程式碼，以宣告指定 SharePoint 網站和子網站的變數：
+1. 在類別的頂端 `Feature1EventReceiver` ，新增下列程式碼，此程式碼會宣告指定 SharePoint 網站和子網站的變數：
 
     ```vb
     ' SharePoint site and subsite.
@@ -246,90 +247,90 @@ ms.locfileid: "86015758"
 
 ## <a name="test-the-project"></a>測試專案
 
-既然程式碼已新增至功能接收器，而資料收集器正在執行，請部署並執行 SharePoint 方案來測試它是否正常運作。
+現在已將程式碼新增至功能接收器，且資料收集器正在執行，請部署和執行 SharePoint 方案來測試它是否正常運作。
 
 > [!IMPORTANT]
-> 在此範例中，FeatureDeactivating 事件處理常式中會擲回錯誤。 稍後在本逐步解說中，您會使用資料收集器所建立的 .Itrace 檔案來找出這個錯誤。
+> 在此範例中，FeatureDeactivating 事件處理常式中會擲回錯誤。 稍後在此逐步解說中，您會使用資料收集器所建立的 .Itrace 檔案來找出此錯誤。
 
 1. 將方案部署到 SharePoint，然後在瀏覽器中開啟 SharePoint 網站。
 
-     此功能會自動啟動，使其功能接收器加入公告和工作。
+     這項功能會自動啟動，使其功能接收器新增公告和工作。
 
 2. 顯示 [公告] 和 [工作] 清單的內容。
 
-     [公告] 清單應該有一個名為 [已**啟用功能： IntelliTraceTest_Feature1**] 的新公告，而 [工作] 清單應該有一個名為 [**停用功能： IntelliTraceTest_Feature1**] 的新工作。 如果其中一個專案遺失，請確認是否已啟用此功能。 如果未啟用，請加以啟用。
+     公告清單應該會有一個名為「已啟動 **功能： IntelliTraceTest_Feature1**」的新宣告，而 [工作] 清單應該有一個名為 [ **停用功能： IntelliTraceTest_Feature1**] 的新工作。 如果其中一個專案遺失，請確認此功能是否已啟用。 如果未啟用，請加以啟用。
 
-3. 執行下列步驟來停用此功能：
+3. 藉由執行下列步驟來停用功能：
 
-   1. 在 SharePoint 的 [**網站動作**] 功能表上，選擇 [**網站設定**]。
+   1. 在 SharePoint 的 [ **網站動作** ] 功能表上，選擇 [ **網站設定**]。
 
-   2. 在 [**網站動作**] 下，選擇 [**管理網站功能**] 連結。
+   2. 在 [ **網站動作**] 下，選擇 [ **管理網站功能** ] 連結。
 
-   3. 在 [ **IntelliTraceTest Feature1**] 旁，選擇 [**停用**] 按鈕。
+   3. 選擇 [ **IntelliTraceTest Feature1**] 旁的 [ **停用** ] 按鈕。
 
-   4. 在 [警告] 頁面上，選擇 [**停用此功能**] 連結。
+   4. 在 [警告] 頁面上，選擇 [ **停用此功能** ] 連結。
 
-      FeatureDeactivating （）事件處理常式會擲回錯誤。
+      FeatureDeactivating ( # A1 事件處理常式會擲回錯誤。
 
 ## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>使用 Microsoft Monitoring Agent 收集 IntelliTrace 資料
 
-如果您在執行 SharePoint 的系統上安裝 Microsoft Monitoring Agent，您可以使用比 IntelliTrace 所傳回之一般資訊更特定的資料來進行 SharePoint 方案的偵錯工具。 當您的 SharePoint 方案執行時，代理程式會使用 PowerShell Cmdlet 來捕捉 debug 資訊，以在 Visual Studio 外部運作。
+如果您將 Microsoft Monitoring Agent 安裝在執行 SharePoint 的系統上，您可以使用比 IntelliTrace 傳回的一般資訊更明確的資料，來對 SharePoint 方案進行 debug。 當您的 SharePoint 方案執行時，代理程式會使用 PowerShell Cmdlet 來捕捉 debug 資訊，以在 Visual Studio 外部運作。
 
 > [!NOTE]
-> 本節中的設定資訊是此範例特有的。 如需其他設定選項的詳細資訊，請參閱[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。
+> 本節中的設定資訊是此範例特有的。 如需其他設定選項的詳細資訊，請參閱 [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。
 
-1. 在執行 SharePoint 的電腦上，[設定 Microsoft Monitoring Agent 並開始監視您的解決方案](../debugger/using-the-intellitrace-stand-alone-collector.md)。
+1. 在執行 SharePoint 的電腦上， [設定 Microsoft Monitoring Agent 並開始監視您的解決方案](../debugger/using-the-intellitrace-stand-alone-collector.md)。
 
 2. 停用功能：
 
-   1. 在 SharePoint 的 [**網站動作**] 功能表上，選擇 [**網站設定**]。
+   1. 在 SharePoint 的 [ **網站動作** ] 功能表上，選擇 [ **網站設定**]。
 
-   2. 在 [**網站動作**] 下，選擇 [**管理網站功能**] 連結。
+   2. 在 [ **網站動作**] 下，選擇 [ **管理網站功能** ] 連結。
 
-   3. 在 [ **IntelliTraceTest Feature1**] 旁，選擇 [**停用**] 按鈕。
+   3. 選擇 [ **IntelliTraceTest Feature1**] 旁的 [ **停用** ] 按鈕。
 
-   4. 在 [警告] 頁面上，選擇 [**停用此功能**] 連結。
+   4. 在 [警告] 頁面上，選擇 [ **停用此功能** ] 連結。
 
-      發生錯誤（在此情況下，因為 FeatureDeactivating （）事件處理常式中擲回錯誤）。
+      在此情況下， (發生錯誤，因為 FeatureDeactivating ( # A2 事件處理常式) 擲回錯誤。
 
-3. 在 PowerShell 視窗中，執行[stop-webapplicationmonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472753(v=sc.20))命令來建立 .itrace 檔案、停止監視，然後重新開機您的 SharePoint 方案。
+3. 在 PowerShell 視窗中，執行 [stop-webapplicationmonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472753(v=sc.20)) 命令來建立 .itrace 檔案、停止監視，然後重新開機您的 SharePoint 方案。
 
-     **停止-stop-webapplicationmonitoring***" \<SharePointSite> \\<SharePointAppName \> "*  
+     **Stop-webapplicationmonitoring***" \<SharePointSite> \\<SharePointAppName \> "*  
 
-## <a name="debug-and-fix-the-sharepoint-solution"></a>偵錯工具和修正 SharePoint 方案
+## <a name="debug-and-fix-the-sharepoint-solution"></a>偵錯工具並修正 SharePoint 方案
 
 現在您可以在 Visual Studio 中查看 IntelliTrace 記錄檔，以尋找並修正 SharePoint 方案中的錯誤。
 
-1. 在 \IntelliTraceLogs 資料夾中，開啟 Visual Studio 中的 .Itrace 檔案。
+1. 在 [\IntelliTraceLogs] 資料夾中，開啟 Visual Studio 中的 .Itrace 檔案。
 
-     [ **IntelliTrace 摘要**] 頁面隨即出現。 因為錯誤並未處理，所以 SharePoint 相互關聯識別碼（GUID）會出現在 [**分析**] 區段的 [未處理的例外狀況] 區域中。 如果您想要在發生錯誤的情況下查看呼叫堆疊，請選擇 [**呼叫堆疊**] 按鈕。
+     [ **IntelliTrace 摘要** ] 頁面隨即出現。 因為未處理錯誤，所以 GUID)  (的 SharePoint 相互關聯識別碼會出現在 [ **分析** ] 區段的未處理例外狀況區域中。 如果您想要查看發生錯誤的呼叫堆疊，請選擇 [ **呼叫堆疊** ] 按鈕。
 
-2. 選擇 [ **Debug Exception** ] 按鈕。
+2. 選擇 [ **Debug 例外** 狀況] 按鈕。
 
      如果出現提示，請載入符號檔。 在 [ **IntelliTrace** ] 視窗中，例外狀況會反白顯示為「擲回：發生嚴重錯誤！」。
 
-     在 [IntelliTrace] 視窗中，選擇 [例外狀況] 以顯示失敗的程式碼。
+     在 [IntelliTrace] 視窗中，選擇例外狀況以顯示失敗的程式碼。
 
-3. 開啟 SharePoint 方案，然後將 FeatureDeactivating （）程式頂端的**throw**語句批註化或移除，以修正錯誤。
+3. 請開啟 SharePoint 方案，然後在 FeatureDeactivating ( # A1 程式的頂端批註或移除 **throw** 語句，以修正錯誤。
 
-4. 在 Visual Studio 中重建方案，然後將它重新部署至 SharePoint。
+4. 在 Visual Studio 中重建方案，然後將它重新部署到 SharePoint。
 
-5. 執行下列步驟來停用此功能：
+5. 藉由執行下列步驟來停用功能：
 
-    1. 在 SharePoint 的 [**網站動作**] 功能表上，選擇 [**網站設定**]。
+    1. 在 SharePoint 的 [ **網站動作** ] 功能表上，選擇 [ **網站設定**]。
 
-    2. 在 [**網站動作**] 下，選擇 [**管理網站功能**] 連結。
+    2. 在 [ **網站動作**] 下，選擇 [ **管理網站功能** ] 連結。
 
-    3. 在 [ **IntelliTraceTest Feature1**] 旁，選擇 [**停用**] 按鈕。
+    3. 選擇 [ **IntelliTraceTest Feature1**] 旁的 [ **停用** ] 按鈕。
 
-    4. 在 [警告] 頁面上，選擇 [**停用此功能**] 連結。
+    4. 在 [警告] 頁面上，選擇 [ **停用此功能** ] 連結。
 
-6. 開啟 [工作清單]，並確認 [停用] 工作的 [**狀態**] 值為 [已完成]，而且其 [%] 的 [**完成**] 值為 [100%]。
+6. 開啟 [工作清單]，並確認 [停用] 工作的 [ **狀態** ] 值為 [已完成]，而且其 [ **完成的百分比** ] 值為100%。
 
      程式碼現在會正確執行。
 
 ## <a name="see-also"></a>另請參閱
 
-- [驗證和 debug SharePoint 程式碼](../sharepoint/verifying-and-debugging-sharepoint-code.md)
+- [驗證和偵錯工具代碼](../sharepoint/verifying-and-debugging-sharepoint-code.md)
 - [IntelliTrace](../debugger/intellitrace.md)
 - [逐步解說：使用單元測試來驗證 SharePoint 程式碼](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))

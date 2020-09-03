@@ -19,17 +19,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 21e3b6554a9d6e0024cc21fd898962177acfffa7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633625"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup 元素 (MSBuild)
 
 `ItemDefinitionGroup` 元素可讓您定義一組項目定義，這些項目定義預設為套用至專案中所有項目的中繼資料值。 ItemDefinitionGroup 可取代使用 [CreateItem 工作](../msbuild/createitem-task.md)和 [CreateProperty 工作](../msbuild/createproperty-task.md)的需求。 如需詳細資訊，請參閱[項目定義](../msbuild/item-definitions.md)。
 
-\<Project> \<ItemDefinitionGroup>
+\<Project>
+\<ItemDefinitionGroup>
 
 ## <a name="syntax"></a>語法
 
@@ -52,15 +53,15 @@ ms.locfileid: "77633625"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[專案](../msbuild/item-element-msbuild.md)|定義建置程序的輸入。 `ItemDefinitionGroup` 中可能有零或多個 `Item` 項目。|
+|[Item](../msbuild/item-element-msbuild.md)|定義建置程序的輸入。 `ItemDefinitionGroup` 中可能有零或多個 `Item` 項目。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 元素 | 描述 |
+| 項目 | 描述 |
 | - | - |
-| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔案所需的根項目。 |
+| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
 
 ## <a name="example"></a>範例
 
@@ -86,5 +87,5 @@ ms.locfileid: "77633625"
 
 ## <a name="see-also"></a>另請參閱
 
-- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)
+- [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [項目](../msbuild/msbuild-items.md)

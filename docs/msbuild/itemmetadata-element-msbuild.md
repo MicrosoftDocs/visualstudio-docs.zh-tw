@@ -17,17 +17,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633612"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata 項目 (MSBuild)
 
 包含使用者定義的項目中繼資料索引鍵，其中含有項目中繼資料值。 項目可能有任何數目的中繼資料索引鍵值組。
 
- \<Project> \<ItemGroup> \<Item>
+ \<Project> \<ItemGroup>
+ \<Item>
 
 ## <a name="syntax"></a>語法
 
@@ -51,9 +52,9 @@ ms.locfileid: "77633612"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[專案](../msbuild/item-element-msbuild.md)|使用者定義的元素，可定義建置程序的輸入。|
+|[Item](../msbuild/item-element-msbuild.md)|使用者定義的元素，可定義建置程序的輸入。|
 
 ## <a name="text-value"></a>文字值
 
@@ -75,5 +76,5 @@ ms.locfileid: "77633612"
 
 ## <a name="see-also"></a>另請參閱
 
-- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)
+- [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [項目](../msbuild/msbuild-items.md)

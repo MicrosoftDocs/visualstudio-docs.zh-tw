@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 700aca059c6ef18f0c8e43aa127c99eaeee4fa2a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541449"
 ---
 # <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>如何：以程式設計方式列出活頁簿中的所有工作表

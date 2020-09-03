@@ -16,58 +16,58 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b164d3d141c66817afd0eb88054fd9220656c0f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633261"
 ---
 # <a name="msbuild-reference"></a>MSBuild 參考
 
-MSBuild 是 Visual Studio 的建置系統。 以下連結指向包含 MSBuild 參考資訊的主題。
+MSBuild 是 Visual Studio 的建置系統。 下列連結會引導至包含 MSBuild 參考資訊的主題。
 
 ## <a name="in-this-section"></a>本節內容
 
-- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)\
- 描述構成 MSBuild 檔案格式的 XML 元素。
+- [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)\
+ 描述組成 MSBuild 檔案格式的 XML 元素。
 
-- [任務引用](../msbuild/msbuild-task-reference.md)\
- 描述 MSBuild 中包含的一些典型任務。
+- [工作參考](../msbuild/msbuild-task-reference.md)\
+ 描述 MSBuild 隨附的一些一般工作。
 
 - [條件](../msbuild/msbuild-conditions.md)\
- 描述 MSBuild 檔中可用的條件。
+ 描述 MSBuild 檔案中可用的條件。
 
-- [條件構造](../msbuild/msbuild-conditional-constructs.md)\
+- [條件式結構](../msbuild/msbuild-conditional-constructs.md)\
  說明如何使用 `Choose`、`When` 及 `Otherwise` 項目。
 
-- [MSBuild 保留和知名屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)\
- 描述 MSBuild 保留屬性。
+- [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)\
+ 描述 MSBuild 保留的屬性。
 
-- [常見 MSBuild 專案屬性](../msbuild/common-msbuild-project-properties.md)\
+- [一般 MSBuild 專案屬性](../msbuild/common-msbuild-project-properties.md)\
  說明通用於所有專案類型的專案屬性，也會說明通常是供特定專案類型使用的屬性。
 
-- [常見 MS 生成專案項](../msbuild/common-msbuild-project-items.md)\
+- [一般 MSBuild 專案專案](../msbuild/common-msbuild-project-items.md)\
  說明通用於所有專案類型的專案項目，也會說明通常是供特定專案類型使用的項目。
 
-- [命令列引用](../msbuild/msbuild-command-line-reference.md)\
- 描述可用於 MSBuild.exe 的參數和開關。
+- [命令列參考](../msbuild/msbuild-command-line-reference.md)\
+ 描述可搭配 MSBuild.exe 使用的引數和參數。
 
-- [.目的檔案](../msbuild/msbuild-dot-targets-files.md)\
- 描述 *.目標*包含在 MSBuild 中的檔。
+- [.目標檔案](../msbuild/msbuild-dot-targets-files.md)\
+ 描述 *。* MSBuild 中包含的目標檔案。
 
-- [已知項中繼資料](../msbuild/msbuild-well-known-item-metadata.md)\
+- [已知的專案中繼資料](../msbuild/msbuild-well-known-item-metadata.md)\
  列出與每個項目一起建立的中繼資料。
 
 - [回應檔](../msbuild/msbuild-response-files.md)\
  說明包含命令列參數的 *.rsp* 檔案。
 
 - [其他資源](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)\
- 提供指向 MS 構建網站和新聞群組的連結。
+ 提供 MSBuild 網站和新聞群組的連結。
 
 - [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)\
- 包含用於 Windows 演示文稿基礎 （WPF） 的 MSBuild 目標和任務引用。
+ 包含 Windows Presentation Foundation (WPF) 的 MSBuild 目標和工作參考。
 
-- [要轉義的特殊字元](../msbuild/special-characters-to-escape.md)\
+- [要 escape 的特殊字元](../msbuild/special-characters-to-escape.md)\
  列出可能必須「逸出」才能正確解譯的字元。 逸出序列是一系列的字元，表示隨之而來的是替代的解譯。
 
 ## <a name="see-also"></a>另請參閱

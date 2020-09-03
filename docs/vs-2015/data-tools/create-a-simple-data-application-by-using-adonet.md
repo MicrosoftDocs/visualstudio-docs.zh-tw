@@ -15,18 +15,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b524c9d630f30edd226265ac150ef7ec4f6c60d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651067"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單的資料應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-建立應用程式來管理資料庫中的資料時，您會執行基本工作，例如定義連接字串、插入資料及執行預存程序。 遵循本主題，您可以探索如何使用 Visual C#或 Visual Basic 和 ADO.NET，從簡單的 Windows Forms 「表單資料」應用程式內與資料庫互動。  所有 .NET 資料技術（包括資料集、LINQ to SQL 和 Entity Framework）最後都會執行與本文中所示類似的步驟。
+建立應用程式來管理資料庫中的資料時，您會執行基本工作，例如定義連接字串、插入資料及執行預存程序。 藉由遵循本主題，您可以探索如何使用 Visual c # 或 Visual Basic 和 ADO.NET，從簡單 Windows Forms 「資料格式」應用程式內與資料庫互動。  所有的 .NET 資料技術（包括資料集、LINQ to SQL 和 Entity Framework）最終都會執行與本文中所顯示的步驟非常類似的步驟。
 
- 本文示範以非常快速的方式從資料庫中取得資料的簡單方式。 如果您的應用程式需要以不常用的方式修改資料並更新資料庫，您應該考慮使用 Entity Framework 並使用資料系結，將使用者介面控制項自動同步處理至基礎資料中的變更。
+ 本文示範簡單的方法，讓您以非常快速的方式從資料庫中取得資料。 如果您的應用程式需要以非一般方式修改資料並更新資料庫，您應該考慮使用 Entity Framework，並使用資料系結來自動將使用者介面控制項同步處理到基礎資料中的變更。
 
 > [!IMPORTANT]
 > 為了簡化程式碼，它不會包含可實際執行的例外狀況處理。
@@ -39,37 +39,37 @@ ms.locfileid: "72651067"
 
 - [儲存連接字串](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)
 
-- [取出連接字串](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)
+- [擷取連接字串](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)
 
 - [撰寫表單的程式碼](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)
 
 - [測試您的應用程式](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
  若要建立應用程式，您需要：
 
-- Visual Studio Community 版本。
+- Visual Studio Community 版。
 
 - SQL Server Express LocalDB。
 
-- 您依照[使用腳本建立 SQL 資料庫](../data-tools/create-a-sql-database-by-using-a-script.md)中的步驟所建立的小型範例資料庫。
+- 您可以遵循 [使用腳本建立 SQL database](../data-tools/create-a-sql-database-by-using-a-script.md)中的步驟建立的小型範例資料庫。
 
-- 您設定之後的資料庫連接字串。 若要尋找此值，請開啟**SQL Server 物件總管**，開啟資料庫的快捷方式功能表，選取 [**屬性**]，然後將它滾動至**ConnectionString**屬性。
+- 您設定之後的資料庫連接字串。 您可以開啟 **SQL Server 物件總管**，開啟資料庫的快捷方式功能表，選取 [ **屬性**]，然後將它滾動至 **ConnectionString**  屬性，以找到此值。
 
-  本主題假設您熟悉 Visual Studio IDE 的基本功能，且可以建立 Windows Form 應用程式、將表單加入至該專案、將按鈕和其他控制項放置在這些表單上、設定這些控制項的屬性，以及編碼簡單事件。 如果您不熟悉這些工作，建議您先完成[Visual C#和 Visual Basic 的消費者入門](../ide/getting-started-with-visual-csharp-and-visual-basic.md)，再開始本主題。
+  本主題假設您熟悉 Visual Studio IDE 的基本功能，且可以建立 Windows Form 應用程式、將表單加入至該專案、將按鈕和其他控制項放置在這些表單上、設定這些控制項的屬性，以及編碼簡單事件。 如果您不熟悉這些工作，我們建議您先 [使用 Visual c # 和 Visual Basic 完成消費者入門](../ide/getting-started-with-visual-csharp-and-visual-basic.md) ，再開始本主題。
 
-## <a name="BKMK_setupthesampledatabase"></a>設定範例資料庫
- 本逐步解說的範例資料庫包含 Customer 和 Orders 資料表。 資料表一開始不包含任何資料，但是當您執行建立的應用程式時，您會加入資料。 此資料庫也會有五個簡單的預存程序。 [使用腳本建立 SQL 資料庫](../data-tools/create-a-sql-database-by-using-a-script.md)，其中包含可建立資料表、主鍵和外鍵、條件約束和預存程式的 transact-sql 腳本。
+## <a name="set-up-the-sample-database"></a><a name="BKMK_setupthesampledatabase"></a> 設定範例資料庫
+ 本逐步解說的範例資料庫包含 Customer 和 Orders 資料表。 資料表一開始不包含任何資料，但是當您執行建立的應用程式時，您會加入資料。 此資料庫也會有五個簡單的預存程序。 [使用腳本建立 SQL 資料庫時](../data-tools/create-a-sql-database-by-using-a-script.md) ，會包含可建立資料表、主鍵和外鍵、條件約束和預存程式的 transact-sql 腳本。
 
-## <a name="BKMK_createtheformsandaddcontrols"></a>建立表單並加入控制項
+## <a name="create-the-forms-and-add-controls"></a><a name="BKMK_createtheformsandaddcontrols"></a> 建立表單並加入控制項
 
-1. 建立 Windows Forms 應用程式的專案，然後將它命名為命名為 simpledataapp。
+1. 建立 Windows Form 應用程式的專案，然後將其命名為 SimpleDataApp。
 
     Visual Studio 會建立專案和數個檔案，包括名為 Form1 的空白 Windows Form。
 
 2. 將兩個 Windows 表單新增至專案，使其具有三種形式，然後提供下列名稱：
 
-   - 巡覽
+   - 導覽
 
    - NewCustomer
 
@@ -82,9 +82,9 @@ ms.locfileid: "72651067"
 
    **巡覽表單**
 
-   ![導覽對話方塊](../data-tools/media/simpleappnav.png "SimpleAppNav")
+   ![[巡覽] 對話方塊](../data-tools/media/simpleappnav.png "SimpleAppNav")
 
-|瀏覽表單的控制項|內容|
+|瀏覽表單的控制項|屬性|
 |--------------------------------------|----------------|
 |按鈕|Name = btnGoToAdd|
 |按鈕|Name = btnGoToFillOrCancel|
@@ -92,9 +92,9 @@ ms.locfileid: "72651067"
 
  **NewCustomer 表單**
 
- ![新增客戶並下訂單](../data-tools/media/simpleappnewcust.png "SimpleAppNewCust")
+ ![新增客戶以及下訂單](../data-tools/media/simpleappnewcust.png "SimpleAppNewCust")
 
-|NewCustomer 表單的控制項|內容|
+|NewCustomer 表單的控制項|屬性|
 |---------------------------------------|----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
@@ -109,7 +109,7 @@ ms.locfileid: "72651067"
 
  ![填寫或取消訂單](../data-tools/media/simpleappcancelfill.png "SimpleAppCancelFill")
 
-|FillOrCancel 表單的控制項|內容|
+|FillOrCancel 表單的控制項|屬性|
 |----------------------------------------|----------------|
 |TextBox|Name = txtOrderID|
 |按鈕|Name = btnFindByOrderID|
@@ -119,31 +119,31 @@ ms.locfileid: "72651067"
 |按鈕|Name = btnFillOrder|
 |按鈕|Name = btnFinishUpdates|
 
-## <a name="BKMK_storetheconnectionstring"></a>儲存連接字串
- 當您的應用程式嘗試開啟資料庫的連接時，應用程式必須存取連接字串。 若要避免在每個表單上手動輸入字串，請將字串儲存在專案的應用程式佈建檔中，然後建立方法，以便在從應用程式中的任何表單呼叫方法時，傳回字串。
+## <a name="store-the-connection-string"></a><a name="BKMK_storetheconnectionstring"></a> 儲存連接字串
+ 當您的應用程式嘗試開啟資料庫的連接時，應用程式必須存取連接字串。 若要避免在每個表單上手動輸入字串，請將字串儲存在專案的應用程式佈建檔中，並在從應用程式中的任何表單呼叫方法時，建立傳回字串的方法。
 
- 以滑鼠右鍵按一下資料庫，選取 [**屬性**]，然後尋找 [ConnectionString] 屬性，即可在**SQL Server 物件總管**中找到連接字串。 使用 Ctrl + A 來選取字串。
+ 以滑鼠右鍵按一下資料庫，選取 [**屬性**]，然後尋找 ConnectionString 屬性，就可以在**SQL Server 物件總管**中找到連接字串。 使用 Ctrl + A 選取字串。
 
-1. 在 [**方案總管**] 中，選取專案下的 [**屬性**] 節點，然後選取 [**設定**]。
+1. 在 **方案總管**中，選取專案底下的 [ **屬性** ] 節點，然後選取 [ **設定**]。
 
-2. 在 [**名稱**] 資料行中，輸入 `connString`。
+2. 在 [ **名稱** ] 欄中，輸入 `connString` 。
 
-3. 在 [**類型**] 清單中，選取 **[（連接字串）** ]。
+3. 在 [ **類型** ] 清單中，選取 [ ** (連接字串]) **。
 
-4. 在 [**範圍**] 清單中，選取 [**應用程式**]。
+4. 在 [ **範圍** ] 清單中，選取 [ **應用程式**]。
 
-5. 在 [**值**] 資料行中，輸入您的連接字串（不含任何外引號），然後儲存您的變更。
+5. 在 [ **值** ] 欄中，輸入您的連接字串 (不含任何外引號) ，然後儲存您的變更。
 
 > [!NOTE]
-> 在實際的應用程式中，您應該安全地儲存連接字串，如[連接字串和設定檔](https://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)中所述。
+> 在實際的應用程式中，您應該以安全的方式儲存連接字串，如 [連接字串和設定檔](https://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)中所述。
 
-## <a name="BKMK_retrievetheconnectionstring"></a>取出連接字串
+## <a name="retrieve-the-connection-string"></a><a name="BKMK_retrievetheconnectionstring"></a> 取出連接字串
 
-1. 在功能表列上，選取 [**專案**]  >  [**加入參考**]，然後加入 [system.object] 的參考。
+1. 在功能表列上，選取 [**專案**  >  **加入參考**]，然後加入 System.Configuration.dll 的參考。
 
-2. 在功能表列上，選取 **專案**  > **新增類別**，將類別檔案加入至您的專案，然後將檔案命名為 `Utility`。
+2. 在功能表列上，選取 [**專案**  >  **加入類別**]，將類別檔案加入至您的專案，然後為檔案命名 `Utility` 。
 
-     Visual Studio 會建立檔案，並將它顯示在**方案總管**中。
+     Visual Studio 會建立檔案，並將它顯示在 **方案總管**中。
 
 3. 在 [公用程式] 檔案中，將預留位置程式碼取代為下列程式碼。 請注意編號的註解 (以 Util- 為前置詞)，來識別程式碼區段。 下表顯示程式碼呼叫關鍵點。
 
@@ -217,16 +217,16 @@ ms.locfileid: "72651067"
     |-------------|-----------------|
     |Util-1|加入 `System.Configuration` 命名空間。|
     |Util-2|定義變數 `returnValue`，並將它初始化為 `null` (C#) 或 `Nothing` (Visual Basic)。|
-    |Util-3|雖然您在 [**屬性**] 視窗中輸入 `connString` 做為連接字串的名稱，但您必須在程式C#代碼中指定 `"SimpleDataApp.Properties.Settings.connString"` （）或 `"SimpleDataApp.My.MySettings.connString"` （Visual Basic）。|
+    |Util-3|即使您在 `connString` [ **屬性** ] 視窗中輸入為連接字串的名稱，您也必須在程式 `"SimpleDataApp.Properties.Settings.connString"` 代碼中指定 (c # ) 或 `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) 。|
 
-## <a name="BKMK_writethecodefortheforms"></a>撰寫表單的程式碼
+## <a name="write-the-code-for-the-forms"></a><a name="BKMK_writethecodefortheforms"></a> 撰寫表單的程式碼
  本章節包含每個表單的工作，而且會顯示建立表單之程式碼的簡短概觀。 編號的註解會識別程式碼區段。
 
 ### <a name="navigation-form"></a>導覽表單
- 當您執行應用程式時，瀏覽表單隨即開啟。 [新增帳戶] 按鈕會開啟 NewCustomer 表單。 [填寫或取消訂單] 按鈕會開啟 FillOrCancel 表單。 [結束] 按鈕會關閉應用程式。
+ 當您執行應用程式時，瀏覽表單隨即開啟。 [新增帳戶]**** 按鈕會開啟 NewCustomer 表單。 [填寫或取消訂單]**** 按鈕會開啟 FillOrCancel 表單。 [結束]**** 按鈕會關閉應用程式。
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>讓瀏覽表單成為啟動表單
- 如果您使用C#的是，請在**方案總管**中開啟 Program.cs，然後將 `Application.Run` 行變更為： `Application.Run(new Navigation());`
+ 如果您使用的是 c #，請在 **方案總管**中開啟 Program.cs，然後將 `Application.Run` 這一行變更為： `Application.Run(new Navigation());`
 
  如果您使用 Visual Basic，請在**方案總管**中開啟 [**屬性**] 視窗，選取 [**應用程式**] 索引標籤，然後選取 [**啟動表單**] 清單中的 [**命名為 simpledataapp]。**
 
@@ -319,7 +319,7 @@ End Namespace
 ```
 
 ### <a name="newcustomer-form"></a>NewCustomer 表單
- 當您輸入客戶名稱，然後選取 [**建立帳戶**] 按鈕時，NewCustomer 表單會建立客戶帳戶，而 SQL Server 會傳回身分識別值做為新的帳戶號碼。 接著，您可以藉由指定金額和訂單日期，然後選取 [訂購**單**] 按鈕，為新的帳戶下單。
+ 當您輸入客戶名稱，然後選取 [ **建立帳戶** ] 按鈕時，NewCustomer 表單會建立客戶帳戶，而 SQL Server 會傳回身分識別值作為新的帳戶號碼。 然後，您可以藉由指定金額和訂單日期，然後選取 [ **下訂單** ] 按鈕，來為新的帳戶下單。
 
 #### <a name="create-event-handlers"></a>建立事件處理常式
  為表單上的每個按鈕建立空白 Click 事件處理常式。
@@ -712,22 +712,22 @@ End Namespace
 
 |註解|描述|
 |-------------|-----------------|
-|NC-1|將 `System.Data.SqlClient` 和 `System.Configuration` 新增至命名空間清單。|
+|NC-1|將 `System.Data.SqlClient` 和新增 `System.Configuration` 至命名空間清單。|
 |NC-2|宣告您稍後將會使用的 `parsedCustomerID` 和 `orderID` 變數。|
 |NC-3|呼叫 `GetConnectionString` 方法從應用程式組態檔中取得連接字串，並且在 `connstr` 字串變數中儲存值。|
 |NC-4|為 `btnCreateAccount` 按鈕將程式碼加入至 Click 事件處理常式。|
 |NC-5|將呼叫包裝至 Click 事件處理常式周圍的 `isCustomerName`，讓 `uspNewCustomer` 只有在客戶名稱存在時執行。|
 |NC-6|建立 `SqlConnection` 物件 (`conn`)，並且在 `connstr` 中傳入連接字串。|
-|NC-7|建立 `SqlCommand` 物件 `cmdNewCustomer`。<br /><br /> -指定 `Sales.uspNewCustomer` 做為要執行的預存程式。<br />-使用 `CommandType` 屬性來指定命令為預存程式。|
-|NC-8|從預存程序加入 `@CustomerName` 輸入參數。<br /><br /> -將參數新增至 `Parameters` 集合。<br />-使用 `SqlDbType` 列舉，將參數類型指定為 Nvarchar （40）。<br />-指定 `txtCustomerName.Text` 做為來源。|
-|NC-9|從預存程序加入輸出參數。<br /><br /> -將參數新增至 `Parameters` 集合。<br />-使用 `ParameterDirection.Output` 將參數識別為 output。|
-|NC-10|加入 Try-catch-Finally 區塊以開啟連接、執行預存程式、處理例外狀況，然後關閉連接。|
+|NC-7|建立 `SqlCommand` 物件 `cmdNewCustomer`。<br /><br /> -指定 `Sales.uspNewCustomer` 為要執行的預存程式。<br />-使用 `CommandType` 屬性來指定命令為預存程式。|
+|NC-8|從預存程序加入 `@CustomerName` 輸入參數。<br /><br /> -將參數加入至 `Parameters` 集合。<br />-使用 `SqlDbType` 列舉，將參數類型指定為 Nvarchar (40) 。<br />-指定 `txtCustomerName.Text` 為來源。|
+|NC-9|從預存程序加入輸出參數。<br /><br /> -將參數加入至 `Parameters` 集合。<br />-用 `ParameterDirection.Output` 來將參數識別為輸出。|
+|NC-10|新增 Try-catch Catch 區塊來開啟連接、執行預存程式、處理例外狀況，然後關閉連接。|
 |NC-11|開啟您在 NC-6 建立的連接 (`conn`)。|
-|NC-12|使用 `cmdNewCustomer` 的 `ExecuteNonQuery` 方法來執行 `Sales.uspNewCustomer` 預存程式。 這個預存程式會執行 `INSERT` 語句，而不是查詢。|
-|NC-13|會從資料庫傳回 `@CustomerID` 值做為 IDENTITY 值。 因為它是一個整數，所以您必須將它轉換成字串，才能將它顯示在 [**客戶識別碼**] 文字方塊中。<br /><br /> -您已在 NC-2 宣告 `parsedCustomerID`。<br />-將 `@CustomerID` 值儲存在 `parsedCustomerID` 中，以供稍後使用。<br />-將傳回的客戶識別碼轉換成字串，然後將它插入 `txtCustomerID.Text`。|
-|NC-14|針對此範例，請加入簡單的（非生產品質） catch 子句。|
-|NC-15|使用完畢之後一律關閉連接，讓它可以釋放至連接集區。 請參閱[SQL Server 連接共用（ADO.NET）](https://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx)。|
-|NC-16|定義方法以驗證客戶名稱會顯示出來。<br /><br /> -如果文字方塊是空的，則會顯示訊息並傳回 `false`，因為必須有名稱才能建立帳戶。<br />-如果文字方塊不是空的，則會傳回 `true`。|
+|NC-12|使用的 `ExecuteNonQuery` 方法  `cmdNewCustomer` 來執行 `Sales.uspNewCustomer` 預存程式。 這個預存程式 `INSERT` 會執行語句，而不是查詢。|
+|NC-13|會從資料庫傳回 `@CustomerID` 值做為 IDENTITY 值。 因為它是一個整數，所以您必須將它轉換成字串，才能將它顯示在 [ **客戶識別碼** ] 文字方塊中。<br /><br /> -您 `parsedCustomerID` 在 NC-2 宣告。<br />-將 `@CustomerID` 值儲存在中 `parsedCustomerID` ，以供稍後使用。<br />-將傳回的客戶識別碼轉換成字串，並將其插入 `txtCustomerID.Text` 。|
+|NC-14|針對此範例，請新增簡單 (非生產品質) catch 子句。|
+|NC-15|使用完畢之後一律關閉連接，讓它可以釋放至連接集區。 請參閱 [SQL Server 連接共用 (ADO.NET) ](https://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx)。|
+|NC-16|定義方法以驗證客戶名稱會顯示出來。<br /><br /> -如果文字方塊是空的，則會顯示訊息並傳回 `false` ，因為建立帳戶需要有名稱。<br />-如果文字方塊不是空的，則傳回 `true` 。|
 |NC-17|為 `btnPlaceOrder` 按鈕將程式碼加入至 Click 事件處理常式。|
 |NC-18|將呼叫包裝至 `btnPlaceOrder_Click` 事件程式碼周圍的 `isPlaceOrderReady`，讓 `uspPlaceNewOrder` 在必要的輸入未顯示時不執行。|
 |NC-19 到 NC-25|這些程式碼區段類似於您為 `btnCreateAccount_Click` 事件處理常式加入的程式碼。<br /><br /> -NC-19。 建立 `SqlCommand` 物件 `cmdNewOrder`，並且指定 `Sales.uspPlaceOrder` 為預存程序。<br />-NC-20 到 NC-23 是預存程式的輸入參數。<br />-NC-24。 `@RC` 將包含傳回值，這是從資料庫產生的順序 ID。 此參數的說明指定為 `ReturnValue`。<br />-NC-25。 在您於 NC-2 宣告的 `orderID` 變數中儲存順序 ID 值，並且在訊息方塊中顯示值。|
@@ -737,7 +737,7 @@ End Namespace
 |NC29|關閉 NewCustomer 表單，並將焦點返回到瀏覽表單。|
 
 ### <a name="fillorcancel-form"></a>FillOrCancel 表單
- 當您輸入訂單識別碼並選取 [**尋找訂單**] 按鈕時，FillorCancel 表單會執行查詢以傳回訂單。 傳回的資料列會顯示在唯讀的資料格。 如果您選取 [**取消訂單**] 按鈕，可以將訂單標示為 [已取消] （X），或者，如果您選取 [**填滿訂單**] 按鈕，則可以將訂單標示為已填滿（F）。 如果您再次選取 [**尋找訂單**] 按鈕，則會顯示更新的資料列。
+ 當您輸入訂單識別碼並選取 [ **尋找訂單** ] 按鈕時，FillorCancel 表單會執行查詢來傳回訂單。 傳回的資料列會顯示在唯讀的資料格。 如果您選取 [ **取消訂單** ] 按鈕，可以將訂單標示為已取消 (X) ; 或者，如果您選取 [ **填滿順序** ] 按鈕，可以將訂單標示為已填滿 (F) 。 如果您再次選取 [ **尋找訂單** ] 按鈕，就會顯示更新的資料列。
 
 #### <a name="create-event-handlers"></a>建立事件處理常式
  為表單上的四個按鈕建立空白 Click 事件處理常式。
@@ -1129,15 +1129,15 @@ End Namespace
 
 |註解|描述|
 |-------------|-----------------|
-|FC-1|將 `System.Data.SqlClient`、`System.Configuration` 和 `System.Text.RegularExpressions` 新增至命名空間清單。|
+|FC-1|將 `System.Data.SqlClient` 、 `System.Configuration` 和新增 `System.Text.RegularExpressions` 至命名空間清單。|
 |FC-2|宣告 `parsedOrderID` 變數。|
 |FC-3|呼叫 `GetConnectionString` 方法從應用程式組態檔中取得連接字串，並且在 `connstr` 字串變數中儲存值。|
 |FC-4|為 `btnFindOrderByID` 將程式碼加入至 Click 事件處理常式。|
 |FC-5|您嘗試執行 SQL 陳述式或預存程序之前，需要執行這些工作。<br /><br /> -建立 `SqlConnection` 物件。<br />-定義 SQL 語句或指定預存程式的名稱。 (在這個範例中，您將會執行 `SELECT` 陳述式。)<br />-建立 `SqlCommand` 物件。<br />-定義 SQL 語句或預存程式的任何參數。|
-|FC-6|此程式碼使用 `SqlDataReader` 和 `DataTable` 以擷取及顯示查詢結果。<br /><br /> -開啟連接。<br />-藉由執行 `cmdOrderID` 的 `ExecuteReader` 方法，建立 `SqlDataReader` 物件，`rdr`。<br />-建立用來保存所抓取資料的 `DataTable` 物件。<br />-從 `SqlDataReader` 物件將資料載入 `DataTable` 物件。<br />-藉由指定 `DataTable` 做為資料方格視圖的 `DataSource`，在資料方格視圖中顯示資料。<br />-關閉 `SqlDataReader`。|
+|FC-6|此程式碼使用 `SqlDataReader` 和 `DataTable` 以擷取及顯示查詢結果。<br /><br /> -開啟連接。<br />-藉 `SqlDataReader` `rdr` 由執行的方法來建立物件 `ExecuteReader` `cmdOrderID` 。<br />-建立 `DataTable` 物件以保存抓取的資料。<br />-將資料從物件載入 `SqlDataReader` 至 `DataTable` 物件。<br />- `DataTable` `DataSource` 為數據方格視圖指定 as，以顯示資料方格視圖中的資料。<br />-Close `SqlDataReader` 。|
 |FC-7|為 `btnCancelOrder` 將程式碼加入至 Click 事件處理常式。 此程式碼會執行 `Sales.uspCancelOrder` 預存程序。|
 |FC-8|為 `btnFillOrder` 將程式碼加入至 Click 事件處理常式。 此程式碼會執行 `Sales.uspFillOrder` 預存程序。|
-|FC-9|建立方法，以確認 `OrderID` 已準備好提交為 `SqlCommand` 物件的參數。<br /><br /> -請確定已在 `txtOrderID` 中輸入識別碼。<br />-使用 `Regex.IsMatch` 來定義非整數位符的簡單檢查。<br />-您在 FC-2 宣告了 `parsedOrderID` 變數。<br />-如果輸入有效，請將文字轉換成整數，並將值儲存在 `parsedOrderID` 變數中。<br />-包裝 `btnFindByOrderID`、`btnCancelOrder` 和 `btnFillOrder` Click 事件處理常式周圍的 `isOrderID` 方法。|
+|FC-9|建立方法，以確認 `OrderID` 是否已準備好提交做為物件的參數 `SqlCommand` 。<br /><br /> -請確定已在中輸入識別碼 `txtOrderID` 。<br />-用 `Regex.IsMatch` 來定義非整數位符的簡單檢查。<br />-您在 `parsedOrderID` FC-2 宣告了變數。<br />-如果輸入有效，請將文字轉換成整數，並將值儲存在 `parsedOrderID` 變數中。<br />-包裝 `isOrderID` `btnFindByOrderID` 、 `btnCancelOrder` 和 `btnFillOrder` Click 事件處理常式周圍的方法。|
 
-## <a name="BKMK_testyourapplication"></a>測試您的應用程式
- 選取 F5 鍵，在您撰寫每一個 Click 事件處理常式的程式碼，然後在完成編碼之後，建立並測試您的應用程式。
+## <a name="test-your-application"></a><a name="BKMK_testyourapplication"></a> 測試您的應用程式
+ 在您編碼每一個 Click 事件處理常式，然後完成撰寫程式碼之後，選取 F5 鍵來建置及測試您的應用程式。

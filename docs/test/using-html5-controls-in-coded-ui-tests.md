@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 3519d1cc030c69880bcc047b4b4123785c4fb8b2
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289335"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在自動程式化 UI 測試中使用 HTML5 控制項
@@ -22,7 +22,7 @@ ms.locfileid: "85289335"
 
 **需求**
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
 > [!WARNING]
 > 在 Internet Explorer 10 之前的版本，可以在相較於 Internet Explorer 處理序更高的權限層級中，執行自動程式碼 UI 測試。 在 Internet Explorer 10 執行自動程式碼 UI 測試時，自動程式碼 UI 測試和 Internet Explorer 程序必須是相同的權限層級。 這是因為 Internet Explorer 10 中的 AppContainer 功能更安全。
@@ -38,16 +38,16 @@ ms.locfileid: "85289335"
 
 |動作|記錄|產生的程式碼|
 |-|---------------|-|
-|**播放音訊**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|播放 \<name> 00:00:00 的音訊|HtmlAudio.Play(TimeSpan)|
-|**搜尋音訊的特定時間**|搜尋 \<name> 音訊到00:01:48|HtmlAudio.Seek(TimeSpan)|
-|**暫停音訊**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|將 \<name> 音訊暫停于00:01:53|HtmlAudio.Pause(TimeSpan)|
-|**音訊靜音**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|靜音 \<name> 音訊|HtmlAudio.Mute()|
-|**音訊取消靜音**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|將 \<name> 音訊取消靜音|HtmlAudio.Unmute()|
-|**變更音訊的音量**|將音訊音量設 \<name> 為79%|HtmlAudio.SetVolume(float)|
+|**播放音訊**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|\<name>從00:00:00 播放音訊|HtmlAudio.Play(TimeSpan)|
+|**搜尋音訊的特定時間**|\<name>將音訊搜尋至00:01:48|HtmlAudio.Seek(TimeSpan)|
+|**暫停音訊**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|\<name>在00:01:53 暫停音訊|HtmlAudio.Pause(TimeSpan)|
+|**音訊靜音**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|將 \<name> 音訊靜音|HtmlAudio.Mute()|
+|**音訊取消靜音**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|取消靜音 \<name> 音訊|HtmlAudio.Unmute()|
+|**變更音訊的音量**|將音訊的音量設定 \<name> 為79%|HtmlAudio.SetVolume(float)|
 
 請參閱 [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement)，以取得您可以在其上新增判斷提示的屬性清單。
 
-**搜尋屬性：** 的搜尋屬性 `HtmlAudio` 是 `Id` 、 `Name` 和 `Title` 。
+**搜尋屬性：** 的搜尋屬性為 `HtmlAudio` `Id` 、 `Name` 和 `Title` 。
 
 **篩選屬性：** 的篩選屬性為 `HtmlAudio` `Src` 、 `Class` `ControlDefinition` 和 `TagInstance` 。
 
@@ -61,16 +61,16 @@ ms.locfileid: "85289335"
 
 |動作|記錄|產生的程式碼|
 |-|---------------|-|
-|**播放視訊**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|播放 \<name> 00:00:00 的影片|HtmlVideo.Play(TimeSpan)|
-|**搜尋視訊的特定時間**|\<name>將影片搜尋到00:01:48|HtmlVideo.Seek(TimeSpan)|
-|**暫停視訊**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|將 \<name> 影片暫停于00:01:53|HtmlVideo.Pause(TimeSpan)|
+|**播放視訊**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|\<name>從00:00:00 播放影片|HtmlVideo.Play(TimeSpan)|
+|**搜尋視訊的特定時間**|搜尋 \<name> 影片至00:01:48|HtmlVideo.Seek(TimeSpan)|
+|**暫停視訊**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|\<name>在00:01:53 暫停影片|HtmlVideo.Pause(TimeSpan)|
 |**視訊靜音**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|靜音 \<name> 影片|HtmlVideo.Mute()|
 |**視訊取消靜音**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|取消靜音 \<name> 影片|HtmlVideo.Unmute()|
-|**變更視訊的音量**|將影片數量設定 \<name> 為79%||
+|**變更視訊的音量**|將影片的音量設定 \<name> 為79%||
 
 請參閱 [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video)，以取得您可以在其上新增判斷提示的屬性清單。
 
-**搜尋屬性：** 的搜尋屬性 `HtmlVideo` 是 `Id` 、 `Name` 和 `Title` 。
+**搜尋屬性：** 的搜尋屬性為 `HtmlVideo` `Id` 、 `Name` 和 `Title` 。
 
 **篩選屬性：** 的篩選屬性為 `HtmlVideo` `Src` 、 `Poster` 、 `Class` `ControlDefinition` 和 `TagInstance` 。
 

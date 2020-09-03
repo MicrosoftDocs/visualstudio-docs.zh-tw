@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d45461c7dab250cd43d7a25d8693658c7b8e164
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74566965"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>逐步解說：建立 Excel 的第一個檔層級自訂
@@ -27,7 +27,7 @@ ms.locfileid: "74566965"
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- 這個逐步解說將說明下列工作：
+ 本逐步解說將說明下列工作：
 
 - 建立 Excel 活頁簿專案。
 
@@ -41,9 +41,9 @@ ms.locfileid: "74566965"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必要條件：
+## <a name="prerequisites"></a>必要條件
 
- 您需要下列元件才能完成此逐步解說：
+ 您需要下列元件才能完成這個逐步解說：
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -53,44 +53,44 @@ ms.locfileid: "74566965"
 
 ### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>在 Visual Studio 中建立新的 Excel 活頁簿專案
 
-1. 啟動[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
+1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在 [檔案] **Deploying Office Solutions** 功能表中，指向 [新增]，然後按一下 [專案]。
+2. 在 **[檔案]** 功能表上，指向 **[開新檔案]** ，然後按一下 **[專案]** 。
 ::: moniker range="vs-2017"
-3. 在範本窗格中，展開 [Visual C#] **Deploying Office Solutions** 或 [Visual Basic]，然後展開 [Office/SharePoint]。
+3. 在範本窗格中，展開 [Visual C#] **Deploying Office Solutions** 或 [Visual Basic] ****，然後展開 [Office/SharePoint] ****。
 
-4. 在展開的 [ **Office/SharePoint** ] 節點下，選取 [ **VSTO 增益集**] 節點。
+4. 在展開的 [ **Office/SharePoint** ] 節點下，選取 [ **VSTO 增益集** ] 節點。
 
 5. 在專案範本清單中，選擇 Excel VSTO 活頁簿專案。
 
-6. 在 [**名稱**] 方塊中，輸入**FirstWorkbookCustomization**。
+6. 在 [ **名稱** ] 方塊中，輸入 **FirstWorkbookCustomization**。
 
-7. 按一下 [確定]。
+7. 按一下 [確定]  。
 
-8. 從 [ **Visual Studio Tools for Office Project Wizard]** 選取 [**建立新檔**]，然後按一下 **[確定]** 。
+8. 從 [ **Visual Studio Tools for Office 專案] Wizard**中選取 [**建立新檔**]，然後按一下 **[確定]**。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-3. 在 [**建立新專案**] 對話方塊中，選取 [ **Excel VSTO 活頁簿**] 專案。
+3. 在 [ **建立新專案** ] 對話方塊中，選取 [ **Excel VSTO 活頁簿** ] 專案。
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. 按 [ **下一步**]。
+4. 按一下 [下一步]  。
 
 5. 在 [**設定您的新專案**] 對話方塊的 [**名稱**] 方塊中輸入**FirstWorkbookCustomization** ，然後按一下 [**建立**]。
 
-6. 從 [ **Visual Studio Tools for Office Project Wizard]** 選取 [**建立新檔**]，然後按一下 **[確定]** 。
+6. 從 [ **Visual Studio Tools for Office 專案] Wizard**中選取 [**建立新檔**]，然後按一下 **[確定]**。
 ::: moniker-end
-   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會建立**FirstWorkbookCustomization**專案，並將下列檔案加入至專案。
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立 **FirstWorkbookCustomization** 專案，並將下列檔案加入至專案。
 
-   - *FirstWorkbookCustomization*.Xlsx-代表專案中的 Excel 活頁簿。 包含所有工作表和圖表。
+   - *FirstWorkbookCustomization*，表示專案中的 Excel 活頁簿。 包含所有工作表和圖表。
 
-   - Sheet1 （適用于 Visual Basic 的 *.vb*檔案或 Visual C#的 .Cs 檔案）-這是一份工作表，提供活頁簿中第一個工作表的設計介面和程式碼。 如需詳細資訊，請參閱[工作表主專案](../vsto/worksheet-host-item.md)。
+   - Sheet1 (Visual Basic 的 *.vb* 檔案或 Visual c # 的 *.cs* 檔案 ) -提供活頁簿中第一個工作表的設計介面和程式碼的工作表。 如需詳細資訊，請參閱 [工作表主專案](../vsto/worksheet-host-item.md)。
 
-   - Sheet2 （適用于 Visual Basic 的 *.vb*檔案或適用于 Visual C#的 *.cs*檔案）-提供活頁簿中第二個工作表的設計介面和程式碼的工作表。
+   - Sheet2 (Visual Basic 的 *.vb* 檔案或 Visual c # 的 *.cs* 檔案 ) -此工作表提供活頁簿中第二個工作表的設計介面和程式碼。
 
-   - Sheet3 （適用于 Visual Basic 的 *.vb*檔案或適用于 Visual C#的 *.cs*檔案）-一份工作表，提供活頁簿中第三個工作表的設計介面和程式碼。
+   - 適用于 Visual c # 的 Visual Basic 或 *.cs*檔案的 Sheet3 (*.vb*檔 ) -提供活頁簿中第三個工作表的設計介面和程式碼的工作表。
 
-   - ThisWorkbook （適用于 Visual Basic 的 *.vb*檔案或適用于 Visual C#的 *.cs*檔案）-包含活頁簿層級自訂的設計介面和程式碼。 如需詳細資訊，請參閱活頁[簿主專案](../vsto/workbook-host-item.md)。
+   - 適用于 Visual Basic 的 ThisWorkbook (*.vb* 檔案或 Visual c # 的 *.cs* 檔案 ) -包含活頁簿層級自訂的設計介面和程式碼。 如需詳細資訊，請參閱活頁 [簿主專案](../vsto/workbook-host-item.md)。
 
      Sheet1 程式碼檔案會在此設計工具中自動開啟。
 
@@ -100,38 +100,38 @@ ms.locfileid: "74566965"
 
 ### <a name="to-close-and-reopen-a-worksheet-in-the-designer"></a>使用設計工具關閉並重新開啟工作表
 
-1. 按一下設計工具視窗的 [**關閉**] 按鈕（X），以關閉活頁簿。
+1. 按一下設計工具視窗的 [ **關閉** ] 按鈕 (X) ，關閉活頁簿。
 
-2. 在**方案總管**中，以滑鼠右鍵按一下**Sheet1**程式碼檔案，然後按一下 [ **View Designer**]。
+2. 在 **方案總管**中，以滑鼠右鍵按一下 **Sheet1** 程式碼檔案，然後按一下 [ **視圖設計**工具]。
 
-     \-或-
+     \- 或 -
 
-     在**方案總管**中，按兩下**Sheet1**程式碼檔案。
+     在 **方案總管**中，按兩下 **Sheet1** 程式碼檔案。
 
 ## <a name="add-text-to-a-worksheet-in-the-designer"></a>在設計工具中將文字加入工作表
 
- 您可以修改設計工具中開啟的工作表，藉此設計自訂的使用者介面 (UI)。 例如，您可以將文字加入儲存格、套用公式，或加入 Excel 控制項。 如需如何使用設計工具的詳細資訊，請參閱[Visual Studio 環境中的 Office 專案](../vsto/office-projects-in-the-visual-studio-environment.md)。
+ 您可以修改設計工具中開啟的工作表，藉此設計自訂的使用者介面 (UI)。 例如，您可以將文字加入儲存格、套用公式，或加入 Excel 控制項。 如需如何使用設計工具的詳細資訊，請參閱 [Visual Studio 環境中的 Office 專案](../vsto/office-projects-in-the-visual-studio-environment.md)。
 
 ### <a name="to-add-text-to-a-worksheet-by-using-the-designer"></a>使用設計工具將文字加入工作表
 
-1. 在設計工具中開啟的工作表中，選取 [儲存格**A1**]，然後輸入下列文字。
+1. 在設計工具中開啟的工作表中，選取 [儲存格 **A1**]，然後輸入下列文字。
 
-     **這是使用設計工具加入的文字。**
+     **This text was added by using the designer.**
 
 > [!WARNING]
-> 如果您將這行文字加入至儲存格**A2**，此範例中的其他程式碼將會覆寫它。
+> 如果您將這行文字加入至儲存格 **A2**，此範例中的其他程式碼將會覆寫此文字。
 
 ## <a name="add-text-to-a-worksheet-programmatically"></a>以程式設計方式將文字加入工作表
 
  接著，將程式碼加入 Sheet1 程式碼檔案。 新程式碼會使用 Excel 物件模型，將第二行文字加入活頁簿。 根據預設，Sheet1 程式碼檔案包含下列產生的程式碼：
 
-- `Sheet1` 類別的部分定義，此定義代表該工作表的程式設計模型，而且會提供 Excel 物件模型的存取。 如需詳細資訊，請查看[工作表主專案](../vsto/worksheet-host-item.md)和[Word 物件模型總覽](../vsto/word-object-model-overview.md)。 `Sheet1` 類別的其餘部分則定義於您不應修改的隱藏程式碼檔中。
+- `Sheet1` 類別的部分定義，此定義代表該工作表的程式設計模型，而且會提供 Excel 物件模型的存取。 如需詳細資訊，請查看 [工作表主專案](../vsto/worksheet-host-item.md) 和 [Word 物件模型總覽](../vsto/word-object-model-overview.md)。 `Sheet1` 類別的其餘部分則定義於您不應修改的隱藏程式碼檔中。
 
-- `Sheet1_Startup` 和 `Sheet1_Shutdown` event h和lers. 當 Excel 載入和卸載您的自訂時，會呼叫這些事件處理常式。 請使用這些事件處理常式，在自訂載入時將它初始化，以及在自訂卸載時清除它所用的資源。 如需詳細資訊，請參閱[Office 專案中的事件](../vsto/events-in-office-projects.md)。
+- `Sheet1_Startup` 和 `Sheet1_Shutdown` 事件處理常式。 當 Excel 載入和卸載您的自訂時，會呼叫這些事件處理常式。 請使用這些事件處理常式，在自訂載入時將它初始化，以及在自訂卸載時清除它所用的資源。 如需詳細資訊，請參閱 [Office 專案中的事件](../vsto/events-in-office-projects.md)。
 
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>使用程式碼將第二行文字加入工作表
 
-1. 在**方案總管**中，以滑鼠右鍵按一下 [ **Sheet1**]，然後按一下 [ **View Code**]。
+1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **Sheet1**]，然後按一下 [ **視圖程式碼**]。
 
      程式碼檔案隨即在 Visual Studio 中開啟。
 
@@ -146,11 +146,11 @@ ms.locfileid: "74566965"
 
 1. 按 **F5** 建置及執行專案。
 
-     當您建置專案時，程式碼會編譯為與活頁簿相關聯的組件。 Visual Studio 會將活頁簿複本和組件置於專案的建置輸出資料夾中，而且會設定開發電腦中的安全性設定以執行自訂。 如需詳細資訊，請參閱[組建 Office 方案](../vsto/building-office-solutions.md)。
+     當您建置專案時，程式碼會編譯為與活頁簿相關聯的組件。 Visual Studio 會將活頁簿複本和組件置於專案的建置輸出資料夾中，而且會設定開發電腦中的安全性設定以執行自訂。 如需詳細資訊，請參閱 [建立 Office 方案](../vsto/building-office-solutions.md)。
 
 2. 確認活頁簿中出現下列文字：
 
-     **這是使用設計工具加入的文字。**
+     **This text was added by using the designer.**
 
      **This text was added by using code.**
 
@@ -162,34 +162,34 @@ ms.locfileid: "74566965"
 
 ### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>清除開發電腦上已完成的專案
 
-1. 在 Visual Studio 中，按一下 [建置] 功能表上的 [清除方案]。
+1. 在 Visual Studio 中，按一下 [建置] **** 功能表上的 [清除方案] ****。
 
 ## <a name="next-steps"></a>後續步驟
 
  現在您已經建立 Excel 的基本文件層級自訂，可以從下列主題進一步了解如何開發自訂：
 
-- 您可以在檔層級自訂中執行的一般程式設計工作：[檔層級自訂](../vsto/programming-document-level-customizations.md)。
+- 您可以在檔層級自訂中執行的一般程式設計工作： [檔層級自訂程式](../vsto/programming-document-level-customizations.md)。
 
-- 適用于 Excel 檔層級自訂的程式設計工作： [excel 方案](../vsto/excel-solutions.md)。
+- 適用于 Excel 的檔層級自訂專屬的程式設計工作： [excel 方案](../vsto/excel-solutions.md)。
 
 - 使用 Excel 的物件模型： [excel 物件模型總覽](../vsto/excel-object-model-overview.md)。
 
 - 自訂 Excel 的 UI，例如，將自訂索引標籤加入功能區，或建立您自己的動作窗格： [OFFICE UI 自訂](../vsto/office-ui-customization.md)。
 
-- 使用 Visual Studio 中的 Office 開發工具所提供的擴充 Excel 物件，執行無法使用 Excel 物件模型進行的工作（例如，在檔上裝載 managed 控制項，以及使用 Windows Forms 資料系結模型將 Excel 控制項系結至資料）：[使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)。
+- 使用 Visual Studio 中的 Office 開發工具提供的擴充 Excel 物件，執行無法使用 Excel 物件模型執行的工作 (例如，在檔上裝載 managed 控制項，以及使用 Windows Forms 資料系結模型將 Excel 控制項系結至資料) ： [使用擴充物件自動化 excel](../vsto/automating-excel-by-using-extended-objects.md)。
 
-- 建立和調試 Excel 的檔層級自訂：[組建 Office 方案](../vsto/building-office-solutions.md)。
+- 建立和調試 Excel 的檔層級自訂： [組建 Office 方案](../vsto/building-office-solutions.md)。
 
-- 部署 Excel 的檔層級自訂：[部署 Office 方案](../vsto/deploying-an-office-solution.md)。
+- 部署適用于 Excel 的檔層級自訂： [部署 Office 方案](../vsto/deploying-an-office-solution.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [Office 方案開發總覽&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Office 方案開發總覽 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Excel 方案](../vsto/excel-solutions.md)
 - [程式檔層級自訂](../vsto/programming-document-level-customizations.md)
 - [Excel 物件模型總覽](../vsto/excel-object-model-overview.md)
 - [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)
 - [Office UI 自訂](../vsto/office-ui-customization.md)
-- [組建 Office 方案](../vsto/building-office-solutions.md)
+- [建立 Office 方案](../vsto/building-office-solutions.md)
 - [部署 Office 方案](../vsto/deploying-an-office-solution.md)
 - [Office 專案範本總覽](../vsto/office-project-templates-overview.md)

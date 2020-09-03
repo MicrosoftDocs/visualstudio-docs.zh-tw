@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c2f019af21beba231a5f135c49fb00dcb463e110
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671006"
 ---
 # <a name="installvstemplates-devenvexe"></a>/InstallVSTemplates (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-註冊位於 \<Visual Studio 安裝路徑>  \Common7\IDE\ProjectTemplates\ 或  \<Visual Studio 安裝路徑>\Common7\IDE\ItemTemplates\ 中的專案或項目範本，以透過 [新增專案]  和 [新增項目]  對話方塊存取它們。
+註冊位於 \Common7\IDE\ProjectTemplates\ 或 \Common7\IDE\ItemTemplates\ 中的專案或專案範本， *\<Visual Studio installation path>* *\<Visual Studio installation path>* 以便透過 [ **新增專案** ] 和 [ **加入新** 專案] 對話方塊來存取這些範本。
 
 > [!WARNING]
 > 此參數僅支援進行 Visual Studio 合作夥伴開發，不適用於 Express 版本。 您必須以系統管理員身分執行 devenv，才能使用 [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) 和 [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) 參數。 如需詳細資訊，請參閱[使用者權限](../../ide/user-permissions-and-visual-studio.md)。

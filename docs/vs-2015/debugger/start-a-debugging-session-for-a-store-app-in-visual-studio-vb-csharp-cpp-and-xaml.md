@@ -1,5 +1,5 @@
 ---
-title: '啟動存放區應用程式的偵測會話（VB、c #、c + + 和 XAML） |Microsoft Docs'
+title: '啟動 Store 應用程式的偵錯工具 (VB、c #、c + + 和 XAML) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -35,23 +35,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd0a89ac1d96e2d1af829ba04e6e164f8fae7f8f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542177"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>在 Visual Studio 中，為市集應用程式啟動偵錯工作階段 (VB、C#、C++ 和 XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-適用于 Windows 和 Windows Phone] （.。/Image/windows_and_phone_content.png "windows_and_phone_content"）
+適用于 Windows 和 Windows Phone] (。/Image/windows_and_phone_content.png "windows_and_phone_content" ) 
 
  本主題說明如何對於以 XAML 和 Visual  C++、Visual C# 或 Visual Basic撰寫的市集應用程式，開始偵錯工作階段。 要對應用程式進行偵錯，必須設定偵錯工作階段並選擇應用程式的啟動方式。
 
 > [!NOTE]
-> 針對以 JavaScript 和 HTML 撰寫的應用程式，請參閱[啟動 debug 會話（JavaScript）](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)。
+> 針對以 JavaScript 和 HTML 撰寫的應用程式，請參閱 [開始 (javascript) 的偵錯工具會話 ](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)。
 
-## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a>本主題中的
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> 本主題中
  [開始偵錯的簡易方式](#BKMK_The_easy_way_to_start_debugging)
 
  [設定偵錯工作階段](#BKMK_Configure_the_debugging_session)
@@ -74,7 +74,7 @@ ms.locfileid: "85542177"
 
   [開始偵錯工作階段](#BKMK_Start_the_debugging_session)
 
-- [開始調試（F5）](#BKMK_Start_debugging__F5_)
+- [開始 (F5) 進行調試 ](#BKMK_Start_debugging__F5_)
 
 - [開始偵錯 (F5)，但延遲啟動應用程式](#BKMK_Start_debugging__F5__but_delay_the_app_start)
 
@@ -86,17 +86,17 @@ ms.locfileid: "85542177"
 
   - [附加偵錯工具](#BKMK_Attach_the_debugger)
 
-## <a name="the-easy-way-to-start-debugging"></a><a name="BKMK_The_easy_way_to_start_debugging"></a>開始進行調試的簡單方式
+## <a name="the-easy-way-to-start-debugging"></a><a name="BKMK_The_easy_way_to_start_debugging"></a> 開始調試的簡單方式
 
 1. 在 Visual Studio 中開啟應用程式方案。
 
 2. 選擇 F5。
 
-   Visual Studio 會建置附加了偵錯工具的應用程式，並加以啟動。 執行會持續到中斷點為止，若以手動方式暫停執行，就會發生未處理的例外狀況，或結束應用程式。 如需詳細資訊，請參閱[流覽 debug 會話（Xaml 和 c #）](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) 。
+   Visual Studio 會建置附加了偵錯工具的應用程式，並加以啟動。 執行會持續到中斷點為止，若以手動方式暫停執行，就會發生未處理的例外狀況，或結束應用程式。 如需詳細資訊，請參閱 [ (Xaml 和 c # ) 流覽 debug 會話 ](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) 。
 
-## <a name="configure-the-debugging-session"></a><a name="BKMK_Configure_the_debugging_session"></a>設定調試會話
+## <a name="configure-the-debugging-session"></a><a name="BKMK_Configure_the_debugging_session"></a> 設定調試會話
 
-### <a name="open-the-debugging-property-page-for-the-project"></a><a name="BKMK_Open_the_debugging_property_page_for_the_project"></a>開啟專案的 [偵錯工具] 屬性頁
+### <a name="open-the-debugging-property-page-for-the-project"></a><a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> 開啟專案的 [偵錯工具] 屬性頁
 
 1. 在 [方案總管] 中選取專案。 在捷徑功能表上選擇 [ **屬性**]。
 
@@ -104,19 +104,19 @@ ms.locfileid: "85542177"
 
     - 針對 Visual C# 與 Visual Basic 應用程式，請選擇 [ **偵錯**]。
 
-         ![C&#35; &#47; VB 專案 debug 屬性頁](../debugger/media/dbg-csvb-debugpropertypage.png "DBG_CsVb_DebugPropertyPage")
+         ![C&#35; &#47; VB 專案調試屬性頁面](../debugger/media/dbg-csvb-debugpropertypage.png "DBG_CsVb_DebugPropertyPage")
 
     - 針對 Visual C++ 應用程式，請展開 [ **組態屬性**  ] 節點，然後選擇 [ **偵錯**]。
 
-         ![C&#43;&#43; Windows Store 應用程式的偵錯工具屬性頁](../debugger/media/dbg-cpp-debugpropertypage.png "DBG_CPP_DebugPropertyPage")
+         ![C&#43;&#43; Windows Store 應用程式偵錯工具屬性頁面](../debugger/media/dbg-cpp-debugpropertypage.png "DBG_CPP_DebugPropertyPage")
 
-### <a name="choose-the-build-configuration-options"></a><a name="BKMK_Choose_the_build_configuration_options"></a>選擇組建設定選項
+### <a name="choose-the-build-configuration-options"></a><a name="BKMK_Choose_the_build_configuration_options"></a> 選擇組建設定選項
 
 1. 請從 [ **組態** ] 清單中選擇 [ **偵錯** ] 或 [ **使用中 (偵錯)**]。
 
 2. 從 [ **平台** ] 清單中選擇要為其建置的目標平台。 在大部分情況下，[ **任何 CPU** ] (在 Visual C++ 中是 [**所有平台** ]) 是最佳選擇。
 
-### <a name="choose-the-deployment-target"></a><a name="BKMK_Choose_the_deployment_target"></a>選擇部署目標
+### <a name="choose-the-deployment-target"></a><a name="BKMK_Choose_the_deployment_target"></a> 選擇部署目標
  ![僅適用於 Windows](../debugger/media/windows-only-content.png "windows_only_content")
 
  您可以在 Visual Studio 電腦、本機電腦上的 Visual Studio 模擬器或遠端裝置上部署和偵錯 Windows 市集應用程式。
@@ -129,9 +129,9 @@ ms.locfileid: "85542177"
 
 |選項|描述|
 |-|-|
-|**本機電腦**|在本機電腦上對目前工作階段中的應用程式進行偵錯。 請參閱在[本機電腦上執行 Windows Store 應用程式](../debugger/run-windows-store-apps-on-the-local-machine.md)。|
-|**類比**|在 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的 Visual Studio 模擬器中進行應用程式偵錯。 模擬器是可讓您對本機電腦上無法使用的裝置功能 (例如觸控筆勢與裝置旋轉) 進行偵錯的桌面視窗。 請參閱[在模擬器中執行 Windows Store 應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)。|
-|**遠端電腦**|在透過內部網路連接到本機電腦的裝置上，或使用乙太網路纜線直接連接的裝置上，對應用程式進行偵錯。 若要遠端偵錯，必須在遠端裝置上安裝並執行 Visual Studio 遠端工具。 請參閱[在遠端電腦上執行 Windows Store 應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。|
+|**本機電腦**|在本機電腦上對目前工作階段中的應用程式進行偵錯。 請參閱在 [本機電腦上執行 Windows Store 應用程式](../debugger/run-windows-store-apps-on-the-local-machine.md)。|
+|**模擬器**|在 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的 Visual Studio 模擬器中進行應用程式偵錯。 模擬器是可讓您對本機電腦上無法使用的裝置功能 (例如觸控筆勢與裝置旋轉) 進行偵錯的桌面視窗。 請參閱 [在模擬器中執行 Windows Store 應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)。|
+|**遠端電腦**|在透過內部網路連接到本機電腦的裝置上，或使用乙太網路纜線直接連接的裝置上，對應用程式進行偵錯。 若要遠端偵錯，必須在遠端裝置上安裝並執行 Visual Studio 遠端工具。 請參閱 [在遠端電腦上執行 Windows Store 應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。|
 
  如果您選擇 [ **遠端電腦**]，請透過下列其中一種方法指定遠端電腦的名稱或 IP 位址：
 
@@ -147,7 +147,7 @@ ms.locfileid: "85542177"
 
   - 針對 C# 與 Visual Basic 應用程式，請選擇 [ **尋找**]。
 
-  - 若是 c + + 應用程式，請選擇 [**電腦名稱稱**] 方塊中的向下箭號，然後選擇 **\<Locate...>** 。
+  - 若是 c + + 應用程式，請選擇 [ **電腦名稱稱** ] 方塊中的向下箭號，然後選擇 **\<Locate...>** 。
 
     ![[選取遠端偵錯工具連接] 對話方塊](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
@@ -158,7 +158,7 @@ ms.locfileid: "85542177"
 
   您可以將 Windows Phone 市集應用程式部署至裝置或其中一個 Visual Studio Phone 模擬器，以及進行偵錯。 從 [目標裝置] **** 清單選取裝置或模擬器。
 
-### <a name="choose-the-debugger-to-use"></a><a name="BKMK_Choose_the_debugger_to_use"></a>選擇要使用的偵錯工具
+### <a name="choose-the-debugger-to-use"></a><a name="BKMK_Choose_the_debugger_to_use"></a> 選擇要使用的偵錯工具
  根據預設，Visual Studio 會在 C# 與 Visual Basic 應用程式中對 Managed 程式碼進行偵錯。
 
  針對 C# 與 Visual Basic 應用程式，您可以選擇在您的應用程式中對 Managed 與原生 C/C++ 程式碼進行偵錯。 請選取 [ **啟用 Unmanaged 程式碼偵錯** ] 核取方塊，將機器碼納入您的偵錯工作階段中。
@@ -181,7 +181,7 @@ ms.locfileid: "85542177"
 
  針對 Windows Phone 市集應用程式，您也可以從 [背景工作處理序] **** 選擇要用於背景處理序的偵錯工具。
 
-### <a name="optional-delay-starting-the-debug-session"></a><a name="BKMK__Optional__Delay_starting_the_debug_session"></a>選擇性延遲啟動 debug 會話
+### <a name="optional-delay-starting-the-debug-session"></a><a name="BKMK__Optional__Delay_starting_the_debug_session"></a> (選擇性) 延遲啟動 debug 會話
  根據預設，Visual Studio 會在您開始偵錯時立即啟動應用程式。 您也可以僅開始偵錯工作階段，而延遲啟動您的應用程式。 如果您選擇此選項，當應用程式從 [開始] 畫面或由啟用合約啟動，或是由其他處理序或方法啟動時，即會在偵錯工具中啟動。 在應用程式本身並未執行時，若要偵錯背景工作，您也會延遲應用程式的啟動。
 
  若要延遲啟動應用程式，您可以：
@@ -190,7 +190,7 @@ ms.locfileid: "85542177"
 
 - 針對 Visual C++ 應用程式，請從 [ **偵錯** ] 屬性頁上的 [ **啟動應用程式** ] 清單中選擇 [ **是** ]。
 
-### <a name="optional-disable-network-loopbacks"></a><a name="BKMK__Optional__Disable_network_loopbacks"></a>選擇性停用網路回送
+### <a name="optional-disable-network-loopbacks"></a><a name="BKMK__Optional__Disable_network_loopbacks"></a> (選用) 停用網路回送
  ![僅適用於 Windows](../debugger/media/windows-only-content.png "windows_only_content")
 
  基於安全性考量，不允許以標準模式安裝的 Windows 市集應用程式，對於其安裝所在的裝置進行網路呼叫。 根據預設，Visual Studio 部署會針對部署應用程式建立此規則的豁免。 此豁免可讓您測試在單一機器上的通訊程序。 在將您的應用程式提交至 Windows 市集之前，您應該在沒有豁免的情況下測試您的應用程式。
@@ -201,10 +201,10 @@ ms.locfileid: "85542177"
 
 - 針對 Visual C++ 應用程式，請從 [ **偵錯** ] 屬性頁上的 [ **允許網路回送** ] 清單中選擇 [ **否** ]。
 
-### <a name="optional-reinstall-the-app-when-you-start-debugging"></a><a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a>選擇性當您開始進行偵錯工具時，請重新安裝應用程式
+### <a name="optional-reinstall-the-app-when-you-start-debugging"></a><a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> (選擇性) 在您啟動偵錯工具時重新安裝應用程式
  若要診斷 Visual C# 或 Visual Basic 應用程式的安裝與初始組態問題，請選擇 [ **偵錯** ] 屬性頁上的 [ **解除安裝再重新安裝我的套件**  ]，以便在開始偵錯時重新建立原始安裝。 Visual C++ 專案無法使用這個選項。
 
-### <a name="optional-disable-authentication-requirement-to-start-the-remote-debugger"></a><a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a>選擇性停用驗證需求以啟動遠端偵錯程式
+### <a name="optional-disable-authentication-requirement-to-start-the-remote-debugger"></a><a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> (選擇性) 停用驗證需求以啟動遠端偵錯程式
  ![僅適用於 Windows](../debugger/media/windows-only-content.png "windows_only_content")
 
  根據預設，您必須提供認證才能執行遠端偵錯工具。
@@ -218,14 +218,14 @@ ms.locfileid: "85542177"
 
 2. 針對 Visual C++ 應用程式，請從 [ **偵錯** ] 屬性頁上的 [ **需要驗證** ] 清單中選擇 [ **否** ]。
 
-   [本主題中的](#BKMK_In_this_topic)
+   [本主題內容](#BKMK_In_this_topic)
 
-## <a name="start-the-debugging-session"></a><a name="BKMK_Start_the_debugging_session"></a>啟動調試階段
+## <a name="start-the-debugging-session"></a><a name="BKMK_Start_the_debugging_session"></a> 啟動調試會話
 
-### <a name="start-debugging-f5"></a><a name="BKMK_Start_debugging__F5_"></a>開始調試（F5）
- 當您選擇 [**調試**程式] 功能表上的 [**開始調試**] （鍵盤： F5）時，Visual Studio 會啟動附加偵錯工具的應用程式。 執行會持續到中斷點為止，若以手動方式暫停執行，就會發生例外狀況，或結束應用程式。
+### <a name="start-debugging-f5"></a><a name="BKMK_Start_debugging__F5_"></a> 開始 (F5) 進行調試
+ 當您在**調試**程式功能表上選擇 [**開始調試**程式] (鍵盤： F5) 時，Visual Studio 會啟動附加偵錯工具的應用程式。 執行會持續到中斷點為止，若以手動方式暫停執行，就會發生例外狀況，或結束應用程式。
 
-### <a name="start-debugging-f5-but-delay-the-app-start"></a><a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a>開始偵錯工具（F5），但延遲應用程式啟動
+### <a name="start-debugging-f5-but-delay-the-app-start"></a><a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> 開始 (F5) 的偵錯工具，但延遲啟動應用程式
  您可以將應用程式設定成以偵錯模式執行，但卻是藉由偵錯工具以外的方式啟動。 例如，您可能會希望在應用程式從 [開始] 功能表啟動時進行偵錯，或是偵錯應用程式中的背景處理程序而不啟動應用程式。若要延遲啟動應用程式，請執行下列作業：
 
 - 在應用程式的 [ **偵錯** ] 屬性頁上 (在 Visual C++ 中為 [**偵錯** ])
@@ -234,18 +234,18 @@ ms.locfileid: "85542177"
 
   - 針對 Visual C++ 應用程式，請從 [ **啟動應用程式** ] 清單中選擇 [ **是** ]。
 
-- 選擇 [**調試**] 功能表上的 [**開始調試**] （鍵盤： F5）。
+- 選擇 [**調試**] 功能表上的 [**開始調試**] (鍵盤： F5) 。
 
 - 從 [開始] 功能表、執行合約或透過其他程序啟動您的應用程式。
 
   應用程式會以偵錯模式啟動。 執行會持續到中斷點為止，若以手動方式暫停執行，就會發生未處理的例外狀況，或結束應用程式。
 
-  . 如需有關偵錯工具背景工作的詳細資訊，請參閱[觸發 Windows Store 的暫止、繼續和背景事件](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。
+  . 如需有關偵錯工具背景工作的詳細資訊，請參閱 [觸發 Windows Store) 的暫止、繼續及背景事件 ](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。
 
-### <a name="start-an-installed-app-in-the-debugger"></a><a name="BKMK_Start_an_installed_app_in_the_debugger"></a>在偵錯工具中啟動已安裝的應用程式
+### <a name="start-an-installed-app-in-the-debugger"></a><a name="BKMK_Start_an_installed_app_in_the_debugger"></a> 在偵錯工具中啟動已安裝的應用程式
  使用 F5 開始偵錯時，Visual Studio 會建置並部署應用程式、將應用程式設定成以偵錯模式執行，然後再啟動應用程式。 若要啟動已安裝在裝置上的應用程式，請使用 [偵錯已安裝的應用程式套件] 對話方塊。 當您必須偵錯從 Windows 市集安裝的應用程式，或者有應用程式的原始程式檔，卻沒有應用程式的 Visual Studio 專案時，這個方式就很有用。 例如，您可能會有未使用 Visual Studio 專案或方案的自訂建置系統。
 
- 應用程式可以安裝在本機裝置，也可以安裝在遠端裝置上。  您可以立即啟動應用程式，也可以設定應用程式，使其藉由其他處理序或方式啟動 (例如從 [開始] 功能表或透過啟用合約) 後再於偵錯工具中執行。如果您只希望偵錯背景處理程序而不啟動應用程式，還可以將應用程式設定成以偵錯模式執行。 如需詳細資訊，請參閱[觸發 Windows Store 的暫止、繼續和背景事件](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。
+ 應用程式可以安裝在本機裝置，也可以安裝在遠端裝置上。  您可以立即啟動應用程式，也可以設定應用程式，使其藉由其他處理序或方式啟動 (例如從 [開始] 功能表或透過啟用合約) 後再於偵錯工具中執行。如果您只希望偵錯背景處理程序而不啟動應用程式，還可以將應用程式設定成以偵錯模式執行。 如需詳細資訊，請參閱 [觸發 Windows Store) 的暫止、繼續及背景事件 ](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。
 
  若要將已安裝的應用程式設定成以偵錯模式執行，請執行下列作業：
 
@@ -258,19 +258,19 @@ ms.locfileid: "85542177"
 
    |                    |                                                                                                                                                                                                                                                                                                                                                                                                           |
    |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | **本機電腦**  |                                                                                                                在本機電腦上對目前工作階段中的應用程式進行偵錯。 請參閱在[本機電腦上執行 Windows Store 應用程式](../debugger/run-windows-store-apps-on-the-local-machine.md)。                                                                                                                 |
-   |   **類比**    | 在 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的 Visual Studio 模擬器中進行應用程式偵錯。 模擬器是可讓您對本機電腦上無法使用的裝置功能 (例如觸控筆勢與裝置旋轉) 進行偵錯的桌面視窗。 請參閱[在模擬器中執行 Windows Store 應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)。 |
-   | **遠端電腦** |                          在透過內部網路連接到本機電腦的裝置上，或使用乙太網路纜線直接連接的裝置上，對應用程式進行偵錯。 若要遠端偵錯，必須在遠端裝置上安裝並執行 Visual Studio 遠端工具。 請參閱[在遠端電腦上執行 Windows Store 應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。                           |
+   | **本機電腦**  |                                                                                                                在本機電腦上對目前工作階段中的應用程式進行偵錯。 請參閱在 [本機電腦上執行 Windows Store 應用程式](../debugger/run-windows-store-apps-on-the-local-machine.md)。                                                                                                                 |
+   |   **模擬器**    | 在 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的 Visual Studio 模擬器中進行應用程式偵錯。 模擬器是可讓您對本機電腦上無法使用的裝置功能 (例如觸控筆勢與裝置旋轉) 進行偵錯的桌面視窗。 請參閱 [在模擬器中執行 Windows Store 應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)。 |
+   | **遠端電腦** |                          在透過內部網路連接到本機電腦的裝置上，或使用乙太網路纜線直接連接的裝置上，對應用程式進行偵錯。 若要遠端偵錯，必須在遠端裝置上安裝並執行 Visual Studio 遠端工具。 請參閱 [在遠端電腦上執行 Windows Store 應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。                           |
 
 3. 從 [ **已安裝的應用程式套件** ] 清單中選擇應用程式。
 
 4. 從 [ **偵錯這種程式碼類型** ] 清單中選擇要使用的偵錯引擎。
 
-5. (選擇性)。 選擇 [ **不啟動，但在我的程式碼啟動時進行偵錯** ]，如此當其他方法啟動應用程式時，即可偵錯應用程式，或者偵錯背景處理程序。
+5. (選擇性) 選擇 [ **不啟動，但在我的程式碼啟動時進行偵錯** ]，如此當其他方法啟動應用程式時，即可偵錯應用程式，或者偵錯背景處理程序。
 
    當您按一下 [ **開始**] 時，就會啟動應用程式或是將其設定成以偵錯模式執行。
 
-### <a name="attach-the-debugger-to-a-running-app"></a><a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>將偵錯工具附加至執行中的應用程式
+### <a name="attach-the-debugger-to-a-running-app"></a><a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> 將偵錯工具附加至正在執行的應用程式
  若要將偵錯工具附加至 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式，您必須使用 [Debuggable Package 管理員] 將應用程式設定成以偵錯模式執行。 [Debuggable Package 管理員] 會隨 Visual Studio 遠端工具一起安裝。
 
  當您需要偵錯已安裝的應用程式 (例如從 [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]安裝的應用程式) 時，將偵錯工具附加至應用程式將有所幫助。 當您具有應用程式的原始程式檔，但沒有應用程式的 Visual Studio 專案時，就必須進行附加。 例如，您可能會有未使用 Visual Studio 專案或方案的自訂建置系統。
@@ -283,7 +283,7 @@ ms.locfileid: "85542177"
 
 3. 將偵錯工具附加至執行中的應用程式。
 
-#### <a name="set-the-app-to-run-in-debug-mode"></a><a name="BKMK_Set_the_app_to_run_in_debug_mode"></a>將應用程式設定為以 debug 模式執行
+#### <a name="set-the-app-to-run-in-debug-mode"></a><a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> 將應用程式設定為在 debug 模式中執行
 
 1. 在已安裝應用程式的裝置上，安裝 Visual Studio 遠端工具。 請參閱 [安裝遠端工具](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools)。
 
@@ -295,7 +295,7 @@ ms.locfileid: "85542177"
 
 4. 在 PowerShell 命令提示字元中，輸入 `Enable-AppxDebug` *PackageFullName* ，其中 *PackageFullName* 是應用程式的 PackageFullName 識別項。
 
-#### <a name="attach-the-debugger"></a><a name="BKMK_Attach_the_debugger"></a>附加偵錯工具
+#### <a name="attach-the-debugger"></a><a name="BKMK_Attach_the_debugger"></a> 附加偵錯工具
  若要附加偵錯工具：
 
 1. 在 [ **偵錯** ] 功能表上，選擇 [ **附加至處理序**]
@@ -324,7 +324,7 @@ ms.locfileid: "85542177"
 
    Visual Studio 會將偵錯工具附加至處理序。 執行會持續到中斷點為止，若以手動方式暫停執行，就會發生未處理的例外狀況，或結束應用程式。
 
-   [本主題中的](#BKMK_In_this_topic)
+   [本主題內容](#BKMK_In_this_topic)
 
 ## <a name="see-also"></a>另請參閱
- [在 Visual Studio 中的偵錯工具](../debugger/debug-store-apps-in-visual-studio.md)[流覽 Debug 會話（Xaml 和 c #）](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)
+ [在 Visual Studio 中偵錯工具](../debugger/debug-store-apps-in-visual-studio.md)會 [ (Xaml 和 c # 流覽 debug 會話 ) ](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)

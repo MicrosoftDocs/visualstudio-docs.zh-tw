@@ -1,5 +1,5 @@
 ---
-title: 步驟 1：建立專案並將標籤加入至表單
+title: 步驟 1：建立專案並將標籤新增至表單
 ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bf904fca84fba88e81306ff91add6c2156b4544
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579454"
 ---
-# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>步驟 1：建立專案並將標籤加入至表單
+# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>步驟 1：建立專案並將標籤新增至表單
 
 開發這個測驗的前幾個步驟是建立專案，然後將標籤、按鈕和其他控制項加入至表單。 另外也會設定您所加入每個控制項的屬性。 專案將包含表單、控制項和程式碼 (稍後在本教學課程中加以說明)。 按鈕用於開始測驗，標籤用於顯示測驗問題，而其他控制項則顯示測驗的答案及完成測驗所剩餘的時間。
 
@@ -28,7 +28,7 @@ ms.locfileid: "77579454"
 
 ::: moniker range="vs-2017"
 
-1. 在功能表列上，選擇 **"檔**>**新專案**>**"。**
+1. 在功能表列上 **，選擇 [** 檔案 > **新增** > **專案**]。
 
 1. 在 [新增專案]**** 對話方塊左側，選擇 [Visual C#]**** 或 [Visual Basic]****，然後選擇 [Windows 桌面]****。
 
@@ -43,15 +43,15 @@ ms.locfileid: "77579454"
 
 ::: moniker range="vs-2019"
 
-1. 在啟動視窗中，選擇 **"創建新專案**"。
+1. 在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
    ![檢視 [建立新專案] 視窗](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. 在 [建立新專案]**** 視窗中，在搜尋方塊內輸入或鍵入 *Windows Forms*。 接下來，從 **"專案類型**"清單中選擇 **"桌面**"。
+1. 在 [建立新專案]**** 視窗中，在搜尋方塊內輸入或鍵入 *Windows Forms*。 接下來，從 [**專案類型**] 清單中選擇 [**桌面**]。
 
-   應用**專案類型**篩選器後，為 C# 或 Visual Basic 選擇**Windows 表單應用 （.NET 框架）** 範本，然後選擇 **"下一步**"。
+   套用 **專案類型** 篩選準則之後，請選擇 [ **Windows Forms 應用程式] ( [.NET Framework]) ** 範本或 [Visual Basic]，然後選擇 **[下一步]**。
 
-   ![選擇 Windows 表單應用的 C# 或視覺化基本範本 （.NET 框架）](./media/create-new-project-search-winforms-filtered.png)
+   ![選擇 Windows Forms 應用程式 ( .NET Framework 的 c # 或 Visual Basic 範本) ](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > 如果您未看到 [Windows Forms 應用程式 (.NET Framework)]**** 範本，您可以從 [建立新專案]**** 視窗中安裝。 在 [找不到您要找的資料嗎?]**** 訊息中，選擇 [安裝更多工具和功能]**** 連結。
@@ -64,7 +64,7 @@ ms.locfileid: "77579454"
    >
    > 接下來，選擇 Visual Studio 安裝程式中的 [修改]**** 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續]**** 以安裝工作負載。
 
-1. 在 [設定您的新專案]**** 視窗的 [專案名稱]**** 方塊中，鍵入或輸入 *MathQuiz*。 然後，選擇 **"創建**"。
+1. 在 [設定您的新專案]**** 視窗的 [專案名稱]**** 方塊中，鍵入或輸入 *MathQuiz*。 然後，選擇 [ **建立**]。
 
 ::: moniker-end
 
@@ -100,9 +100,9 @@ ms.locfileid: "77579454"
 
 6. 在 [屬性]**** 視窗中，選擇 [Text]**** 屬性，然後選擇 **Backspace** 鍵清除其值。
 
-7. 選擇 **"字體"** 屬性**+** 旁邊的加號 （ ）， 然後將**Size**屬性的值更改為**15.75**。
+7. 選擇 [ **+** **字型** ] 屬性旁邊的加號 () ，然後將 [ **Size** ] 屬性的值變更為 **15.75**。
 
-     您可以更改多個字體屬性，如下圖所示。
+     您可以變更數個字型屬性，如下列螢幕擷取畫面所示。
 
      ![顯示字型大小的 [屬性] 視窗](../ide/media/express_setfontsize.png)
 
@@ -130,7 +130,7 @@ ms.locfileid: "77579454"
 
 8. 選擇 [plusLeftLabel]**** 標籤，然後選擇 **Ctrl**+**C** 鍵或 [編輯]**** 功能表上的 [複製]****。
 
-9. 通過選擇**Ctrl**+**V**鍵或在 **"編輯"** 功能表上**粘貼**標籤三次。
+9. 選擇**Ctrl** + **V**鍵，或在 [**編輯**] 功能表上**貼**上，以貼上標籤三次。
 
 10. 排列這三個新標籤，讓它們在 [plusLeftLabel]**** 標籤右邊排成一列。
 
@@ -150,7 +150,7 @@ ms.locfileid: "77579454"
 
 16. 將 NumericUpDown 控制項的 **(Name)** 屬性值變更為 **sum**。
 
-     您已創建第一行，如下圖所示。
+     您已建立第一個資料列，如下圖所示。
 
      ![數學測驗的第一列](../ide/media/express_firstrow.png)
 
@@ -196,11 +196,11 @@ ms.locfileid: "77579454"
 6. 將 [startButton]**** 控制項的 [TabIndex]**** 屬性值設定為 [1]****。
 
     > [!NOTE]
-    > **TabIndex** 屬性會設定受測者選擇 **Tab** 鍵時的控制項順序。 要查看其工作原理，請打開任何對話方塊（例如，在功能表列上，選擇 **"檔** > **打開**"），然後選擇**Tab**鍵幾次。 觀察每次您選擇 **Tab** 鍵時，游標從一個控制項移至另一個控制項的情況。 程式設計人員在建立該表單時就已決定順序。
+    > **TabIndex** 屬性會設定受測者選擇 **Tab** 鍵時的控制項順序。 若要查看其運作方式，請開啟任何對話方塊 (例如，在功能表列上 **，選擇 [** 檔案  >  **開啟**]) ，然後選擇**Tab**鍵幾次。 觀察每次您選擇 **Tab** 鍵時，游標從一個控制項移至另一個控制項的情況。 程式設計人員在建立該表單時就已決定順序。
 
 7. 將 NumericUpDown sum 控制項的 [TabIndex]**** 屬性值設定為 [2]****、針對 difference 控制項設定為 [3]****、針對 product 控制項設定為 [4]****，以及針對 quotient 控制項設定為 [5]****。
 
-     該表單應類似于以下螢幕截圖。
+     表單看起來應該類似下列螢幕擷取畫面。
 
      ![初始數學測驗表單](../ide/media/express_formlaidout.png)
 
@@ -208,6 +208,6 @@ ms.locfileid: "77579454"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 要轉到下一個教程步驟，請參閱**[步驟 2：創建隨機添加問題](../ide/step-2-create-a-random-addition-problem.md)**。
+- 若要移至下一個教學課程步驟，請參閱 **[步驟2：建立隨機加法問題](../ide/step-2-create-a-random-addition-problem.md)**。
 
 - 若要回到概觀主題，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。

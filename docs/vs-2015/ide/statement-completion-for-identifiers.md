@@ -13,18 +13,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f5e52bf174e5a41d79fa23bfca39121db668e40e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72643864"
 ---
 # <a name="statement-completion-for-identifiers"></a>識別項的陳述式完成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-JavaScript 不允許針對變數宣告進行明確類型的輸入。 因此，IntelliSense 不一定可以提供物件的完成清單。 在各種情況下可能會發生這種情況。 以下是幾個常見的範本。
+JavaScript 不允許明確輸入變數宣告。 因此，IntelliSense 永遠不能提供物件的完成清單。 這可能會在各種情況下發生。 以下是一些常見的情況。
 
-- 已宣告參數，但尚未在使用中檔的其他位置呼叫它，如下列範例所示。
+- 已宣告參數，但未在使用中檔的其他地方呼叫它，如下列範例所示。
 
   ```javascript
   function illuminate(light) {
@@ -48,17 +48,17 @@ JavaScript 不允許針對變數宣告進行明確類型的輸入。 因此，In
   // var x = illuminate(1);
   ```
 
-- 物件是在回應事件時呼叫的函式中。 在設計階段，IntelliSense 引擎無法判斷在此情況下使用的物件類型。
+- 物件位於為了回應事件而呼叫的函式中。 在設計階段，IntelliSense 引擎無法判斷在這種情況下使用的物件類型。
 
-   如果 IntelliSense 引擎可以判斷應該呼叫事件，通常會透過使用作用中檔中的事件 `addEventListener`，提供更精確的 IntelliSense 資訊。
+   如果 IntelliSense 引擎可以判斷應該呼叫事件（通常是透過使用 `addEventListener` 使用中的檔案中的事件），則會提供更精確的 IntelliSense 資訊。
 
-  當 IntelliSense 無法識別物件時，IntelliSense 引擎會在使用中檔中顯示的已命名實體（或識別碼）中填入完成清單。 當完成清單包含這些識別碼時，就會在其旁邊顯示資訊圖示。 此外，每個識別碼的工具提示會指出運算式是未知的。 下圖顯示類型為 `light` 的物件的語句完成選項，因為物件及其屬性未定義，所以無法識別。 不過，`intensity` 屬性可在 [識別碼] 清單中使用，因為它已在 `illuminate` 函式中使用。
+  當 IntelliSense 無法識別物件時，IntelliSense 引擎會以使用中檔中的命名實體或識別碼填入完成清單。 當完成清單包含這些識別碼時，資訊圖示旁邊會出現資訊圖示。 此外，每個識別碼的工具提示都會指出運算式未知。 下圖顯示無法識別之類型物件的語句完成選項， `light` 因為物件和其屬性是未定義的。 但是， `intensity` 屬性會出現在 [識別碼] 清單中，因為它已在函式中使用 `illuminate` 。
 
   **無法識別之物件的完成選項**
 
-  ![適用於識別碼的 JavaScript IntelliSense](../ide/media/js-intellisense-identifiers.png "|::ref1::|")
+  ![適用於識別碼的 JavaScript IntelliSense](../ide/media/js-intellisense-identifiers.png "js_intellisense_identifiers")
 
-  您可以使用 XML 檔批註或 JavaScript IntelliSense 擴充性功能，覆寫物件的完成清單。 使用這些功能時，您可以在可能無法使用時，提供類型資訊和更具描述性的 IntelliSense 資訊。 如需詳細資訊，請參閱[擴充 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)和[建立 XML 檔批註](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)。
+  您可以使用 XML 檔批註或 JavaScript IntelliSense 擴充性功能，覆寫物件的完成清單。 使用這些功能時，您可以在可能無法使用時，提供型別資訊和更具描述性的 IntelliSense 資訊。 如需詳細資訊，請參閱 [擴充 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md) 和 [建立 XML 檔批註](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)。
 
 ## <a name="see-also"></a>另請參閱
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)

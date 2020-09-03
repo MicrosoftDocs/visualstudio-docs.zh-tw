@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7283d67710a3b5b319b2d25a1c5d6535fed83b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633716"
 ---
-# <a name="incremental-builds"></a>累加組建
+# <a name="incremental-builds"></a>累加建置
 
 累加組建是已最佳化的組置，因此不會執行輸出檔案與其相關對應輸入檔案為最新的目標。 目標項目可能有 `Inputs` 屬性可指出目標預期作為輸入的項目，以及 `Outputs` 屬性可指出它產生作為輸出的項目。 MSBuild 嘗試尋找這些屬性值之間的 1 對 1 對應。 如果具有 1 對 1 對應，MSBuild 會比較每個輸入項目的時間戳記與其對應輸出項目的時間戳記。 沒有 1 對 1 對應的輸出檔案會與所有輸入檔案進行比較。 如果項目的輸出檔與輸入檔同齡或是前者較新，該項目則可視為最新狀態。
 
 > [!NOTE]
-> 當 MSBuild 評估輸入檔時，只考慮當前執行中清單的內容。 上次生成清單中的更改不會自動使目標過期。
+> 當 MSBuild 評估輸入檔時，只會考慮目前執行中清單的內容。 最後一個組建清單中的變更不會自動將目標設為過期。
 
 如果所有輸出項目都是最新的，則 MSBuild 會跳過目標。 目標的這個「累加組建」** 可以大幅改善建置速度。 如果只有某些檔案是最新的，則 MSBuild 會執行目標，但跳過最新項目，進而讓所有項目都具有最新狀態。 此程序稱為「部分累加組建」**。
 
