@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f78fdb1769cf9ea4cbc9c22792fed890601b2fe
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467208"
 ---
 # <a name="idiaframedataget_relativevirtualaddress"></a>IDiaFrameData::get_relativeVirtualAddress
-抓取框架之程式碼的相對虛擬位址（RVA）。
+抓取框架的程式碼 (RVA) 的相對虛擬位址。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_relativeVirtualAddress ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回框架之程式碼的相對虛擬位址。
+擴展傳回框架程式碼的相對虛擬位址。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援此屬性，則傳回。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援這個屬性，則傳回。 否則會傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

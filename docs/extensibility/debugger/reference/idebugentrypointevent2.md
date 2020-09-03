@@ -1,5 +1,5 @@
 ---
-title: IDebugentryPoint事件2 |微軟文件
+title: IDebugEntryPointEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 531ff846f2488193ed7f3d9f200a1a4ea04df6f9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730326"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
-當程式即將執行其用戶代碼的第一個指令時,調試引擎 (DE) 會將此介面發送到工作階段調試管理員 (SDM)。
+當程式即將執行其第一個使用者程式碼指令時，debug engine (DE) 會將此介面傳送至會話 debug manager (SDM) 。
 
 ## <a name="syntax"></a>語法
 
@@ -28,23 +28,23 @@ ms.locfileid: "80730326"
 IDebugEntryPointEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- DE 實現此介面作為其正常操作的一部分。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須在與此介面相同的對象上實現。 SDM 使用[查詢介面](/cpp/atl/queryinterface)訪問`IDebugEvent2`介面。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ 這會將此介面實作為其一般作業的一部分。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須在與這個介面相同的物件上執行。 SDM 會使用 [QueryInterface](/cpp/atl/queryinterface) 來存取 `IDebugEvent2` 介面。
 
-## <a name="notes-for-callers"></a>通話備註
- 當正在除錯的程式已載入並準備執行用戶代碼的第一個指令時,DE 將創建並發送此事件物件。 該事件使用 SDM 在連接到正在調試的程式時提供的[IDebugEvent 回檔2](../../../extensibility/debugger/reference/idebugeventcallback2.md)回檔函數進行發送。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ 當正在進行程式設計的程式已載入，而且已準備好執行使用者程式碼的第一個指令時，取消會建立並傳送此事件物件。 使用 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 回呼函式來傳送事件，該函式會在附加至要進行偵錯工具的程式時提供。
 
 ## <a name="remarks"></a>備註
-- [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)在程式即將執行第一個指令時發送。 例如,`IDebugEntryPoint2`在程式即將執行`main`使用者函數時發送。
+- 當程式即將執行第一個指令時，會傳送[IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) 。 例如， `IDebugEntryPoint2` 當程式即將執行使用者的函式時，就會傳送 `main` 。
 
- 當`IDebugEntryPointEvent2`DE 傳送 時,目前代碼位置應位於使用者代碼的第`main`一個指令, 如 。
+ 當取消傳送時 `IDebugEntryPointEvent2` ，目前的程式碼位置應該在使用者程式碼的第一個指令中，例如 `main` 。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

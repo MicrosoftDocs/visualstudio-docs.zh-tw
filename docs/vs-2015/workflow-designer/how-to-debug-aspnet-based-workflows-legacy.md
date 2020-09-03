@@ -1,5 +1,5 @@
 ---
-title: 如何： Debug ASP.NET 為基礎的工作流程（舊版） |Microsoft Docs
+title: 如何：以 ASP.NET 為基礎的工作流程 Debug (舊版) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3bed38f5229cb489f663878759517480b48302c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668661"
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>HOW TO：ASP.NET 工作流程偵錯 (舊版)
@@ -28,29 +28,29 @@ ms.locfileid: "72668661"
 
 ### <a name="to-debug-an-aspnet-based-workflow"></a>若要偵錯 ASP.NET 工作流程
 
-1. 藉由在 web.config 檔案中設定**debug = true** ，啟用 ASP.NET 應用程式的偵錯工具。
+1. 在 web.config 檔案中設定 **debug = true** ，以啟用 ASP.NET 應用程式的偵錯工具。
 
 2. 將工作流程程式庫設為啟始專案，並在工作流程中設定中斷點。
 
-3. 在工作流程專案屬性 [**調試**] 選項 [**以外部 URL 啟動瀏覽器**] 文字方塊中，輸入預設網頁的 URL。
+3. 在 [工作流程專案屬性] **調試** 程式的 [ **使用外部 URL 啟動瀏覽器** ] 文字方塊中，輸入預設 Web 網頁的 url。
 
 4. 在 [**調試**程式] 功能表上選取 [**附加至進程**]。
 
-5. 從 [**可用的進程**] 清單中選取要附加的進程。
+5. 從 [ **可用的進程** ] 清單中選取要附加的進程。
 
      附加至裝載工作流程的 w3wp.exe、webdev.webserver 或 aspnet_wp 處理序。
 
 6. 按一下 [**附加至**] 文字方塊旁的 [**選取**]。
 
-     [**選取程式碼類型**] 對話方塊隨即出現。
+     [ **選取程式碼類型** ] 對話方塊隨即出現。
 
-7. 選取 [偵錯工具] [程式**代碼類型**] 並選取 [**工作流程**]。
+7. 選取 [ **Debug 這些程式碼類型** ]，然後選取 [ **工作流程**]。
 
-8. 按一下 [確定]。
+8. 按一下 [確定]  。
 
-9. 按一下 [附加]。
+9. 按一下 [附加] ****。
 
 10. 在瀏覽器中開啟預設網頁，並啟動工作流程。
 
-## <a name="see-also"></a>請參閱
- 叫用[適用于 Windows Workflow Foundation 的 Visual Studio 偵錯工具（舊版）](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md) [如何：在工作流程中設定中斷點（舊版）](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md) [偵錯工具的舊版工作流程](../workflow-designer/debugging-legacy-workflows.md)
+## <a name="see-also"></a>另請參閱
+ 叫用[Visual Studio 偵錯工具以 Windows Workflow Foundation (舊版) ](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md) [如何：在工作流程中設定中斷點 (舊版) ](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)偵錯工具的舊版[工作流程](../workflow-designer/debugging-legacy-workflows.md)

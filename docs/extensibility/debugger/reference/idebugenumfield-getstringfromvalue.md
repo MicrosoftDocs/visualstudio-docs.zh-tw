@@ -1,5 +1,5 @@
 ---
-title: IDebugenumfield::從價值中獲取字串 |微軟文件
+title: IDebugEnumField：： GetStringFromValue |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5de59c573f7e233ea2aacb0dfa38826051c59373
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730282"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
-此方法獲取給定其值的枚舉常量的名稱。
+這個方法會根據指定的值來取得列舉常數的名稱。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int GetStringFromValue(
 
 ## <a name="parameters"></a>參數
 `value`\
-[在]要獲取枚舉常量名稱的值。
+在要取得列舉常數名稱的值。
 
 `pbstrValue`\
-[出]返回枚舉常量的名稱。
+擴展傳回列舉常數的名稱。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,如果`S_FALSE`值沒有關聯名稱,則返回,或者返回錯誤代碼。
+ 如果成功， `S_OK` 則傳回; 否則， `S_FALSE` 如果值沒有相關聯的名稱，則傳回，否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 如果有多個名稱與同一值關聯,則將返回枚舉中定義的第一個名稱。
+ 如果有多個與相同值相關聯的名稱，則會傳回列舉中所定義的第一個名稱。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

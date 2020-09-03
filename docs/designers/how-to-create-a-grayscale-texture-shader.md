@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a311456fd3f8eab12c24e26c32349f208e0a723
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769073"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>如何：建立灰階紋理著色器
@@ -25,7 +25,7 @@ ms.locfileid: "85769073"
 
 開始之前，請確定已顯示 [屬性]**** 視窗和 [工具箱]****。
 
-1. 建立基本紋理著色器，如[如何：建立基本材質著色器](../designers/how-to-create-a-basic-texture-shader.md)中所述。
+1. 建立基本紋理著色器，如 [如何：建立基本材質著色器](../designers/how-to-create-a-basic-texture-shader.md)中所述。
 
 2. 將 [材質範例]**** 節點的 [RGB]**** 端點和 [完稿色彩]**** 節點的 [RGB]**** 端點中斷連接。 在 [選取]**** 模式中，選擇 [材質範例]**** 節點的 [RGB]**** 端點，然後選擇 [中斷連結]****。 這樣會替下一個步驟加入的節點留出空間。
 

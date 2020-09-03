@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 9a3aee5dc1c2d1272c3814fa6cfb2561f6cb4564
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801304"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>發佈至 Windows 上的 Azure App Service
@@ -30,7 +30,7 @@ Visual Studio 2017 和更新版本以及 Visual Studio 2015 的發佈程序有�
 > [!Note]
 > 若要了解 Visual Studio 2015 以及 Visual Studio 2017 和更新版本之間的變更背景，請參閱 [Publish to Azure in Visual Studio 2017](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/) (使用 Visual Studio 2017 發佈到 Azure) 部落格文章。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 針對此逐步解說，您必須具備 Bottle、Flask 或 Django 架構的 Web 應用程式專案。 如果您還沒有專案，但想要嘗試發佈程序，則可以建立簡單的測試專案，如下所示：
 

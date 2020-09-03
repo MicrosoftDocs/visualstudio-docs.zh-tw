@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a1325b5bc0009ba0c022d37be70ca6aab7cc8084
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85768918"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>如何：匯出包含預乘 Alpha 的材質
@@ -38,11 +38,11 @@ ms.locfileid: "85768918"
 
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>建立使用預乘 Alpha 的材質
 
-1. 從基本材質著手。 載入現有的影像檔案，或建立一個，如[如何：建立基本材質](../designers/how-to-create-a-basic-texture.md)中所述。
+1. 從基本材質著手。 載入現有的影像檔案，或依照 [如何：建立基本材質](../designers/how-to-create-a-basic-texture.md)中所述，建立一個影像檔案。
 
-2. 設定材質檔案，以便供「影像內容管線」處理。 在方案總管**** 中，開啟材質檔案的捷徑功能表，然後選擇 [屬性]****。 在 [設定**屬性**] 的  >  **[一般**] 頁面上，將 [**專案類型**] 屬性設為 [**影像內容管線**]。 確定 [內容]**** 屬性是設定為 [是]****，且 [從組建中排除]**** 是設定為 [否]****，然後選擇 [套用]**** 按鈕。 此時會顯示 [影像內容管線]**** 組態屬性頁面。
+2. 設定材質檔案，以便供「影像內容管線」處理。 在方案總管**** 中，開啟材質檔案的捷徑功能表，然後選擇 [屬性]****。 在 [設定**屬性**] 的  >  **[一般**] 頁面上，將 [**專案類型**] 屬性設定為 [**影像內容管線**]。 確定 [內容]**** 屬性是設定為 [是]****，且 [從組建中排除]**** 是設定為 [否]****，然後選擇 [套用]**** 按鈕。 此時會顯示 [影像內容管線]**** 組態屬性頁面。
 
-3. 設定影像內容管線以產生預乘 Alpha。 在 [設定**屬性**] [  >  **影像內容管線**  >  ]**[一般**] 頁面上，將 [**轉換成前置字母格式**] 屬性設為 **[是] （/generatepremultipliedAlpha）**。
+3. 設定影像內容管線以產生預乘 Alpha。 在 [設定**屬性**  >  **影像內容管線**  >  **一般**] 頁面上，將 [**轉換成前置字母格式**] 屬性設定為 **[是] (/generatepremultipliedAlpha) **。
 
 4. 選擇 [確定] **** 按鈕。
 

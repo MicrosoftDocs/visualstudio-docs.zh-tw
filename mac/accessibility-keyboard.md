@@ -7,10 +7,10 @@ ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
 ms.topic: how-to
 ms.openlocfilehash: f5fe827566d9949f5dca2a1a3e1dcfb1bf191c6e
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801785"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的鍵盤流覽
@@ -37,7 +37,7 @@ Visual Studio for Mac 具有各種工作的鍵盤快速鍵範圍。 您可以如
 
 1. 選取 [ **按鍵**系結]，然後輸入按鍵組合。
 
-1. 選取 [ **套用**]。
+1. 選取 [套用]。
 
 > [!TIP]
 > 如果您熟悉其他常用的鍵盤快捷 (方式，您可以從按鍵系結配置清單中進行選擇，以最符合您的需求，例如，Windows) 中的 Visual Studio。

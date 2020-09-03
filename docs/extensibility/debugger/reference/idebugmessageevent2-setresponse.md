@@ -1,5 +1,5 @@
 ---
-title: IDebug消息事件2::設置回應 |微軟文件
+title: IDebugMessageEvent2：： Responsemanager |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cc0ca743deac3e7e635d378f8172ddb4c7e39c72
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727387"
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
-從消息框中設置回應(如果有)。
+從訊息方塊設定回應（如果有的話）。
 
 ## <a name="syntax"></a>語法
 
@@ -42,10 +42,10 @@ int SetResponse( 
 
 ## <a name="parameters"></a>參數
 `dwResponse`\
-[在]使用 Win32`MessageBox`函數的約定指定回應。 有關詳細資訊,請參閱[AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)功能。
+在使用 Win32 函數的慣例來指定回應 `MessageBox` 。 如需詳細資訊，請參閱 [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) 函數。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)

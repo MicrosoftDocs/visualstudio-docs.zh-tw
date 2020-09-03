@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b8dd62c01bad3ac50a57062729fe96588a7ef5be
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801863"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>建立 Windows Forms 工具箱控制項
 
 包含在 Visual Studio 擴充性工具 (VS SDK) 的 Windows Forms 工具箱控制項專案範本，可讓您建立在安裝擴充功能時自動新增的 [ **工具箱** ] 控制項。 本逐步解說示範如何使用範本建立可散發給其他使用者的簡單計數器控制項。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 

@@ -1,5 +1,5 @@
 ---
-title: IDebuggeneric現場定義::獲取正式類型參數 |微軟文件
+title: IDebugGenericFieldDefinition：： GetFormalTypeParams |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4926d94e4ba032f3ff10ca8fdf7027ac6f6e751c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728252"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
-檢索給定參數數的類型參數。
+根據參數數目來抓取類型參數。
 
 ## <a name="syntax"></a>語法
 
@@ -44,19 +44,19 @@ int GetFormalTypeParams(
 
 ## <a name="parameters"></a>參數
 `cParams`\
-[在]參數數。
+在參數的數目。
 
 `ppParams`\
-[出]類型參數的陣列。
+擴展型別參數的陣列。
 
 `pcParams`\
-[進出]陣列中的`ppParams`參數數。
+[in，out]陣列中的參數數目 `ppParams` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 按從左至右的順序返回類型參數。 例如,字典\<K,V>返回 IDebug 形式泛型參數 [K,V]。
+ 從左至右依序傳回類型參數。 例如，Dictionary 會傳回 \<K,V> IDebugFormalGenericParameters {K，V}。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

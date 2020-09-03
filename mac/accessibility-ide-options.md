@@ -7,10 +7,10 @@ ms.date: 09/23/2019
 ms.assetid: 87D22340-2BE6-40EE-ACFD-3CF1BA886175
 ms.topic: how-to
 ms.openlocfilehash: 7b0959c8a2f91e340a8b173d94fb2dbd9e2d9474
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801811"
 ---
 # <a name="set-ide-accessibility-options"></a>設定 IDE 協助工具選項

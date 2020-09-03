@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericField實例::獲取類型參數 |微軟文件
+title: IDebugGenericFieldInstance：： GetTypeArguments |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c41a3f314f641ed4bff116959b6d70f0a5fb9dcb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728188"
 ---
 # <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
-檢索此實例的類型參數參數參數。
+抓取這個實例的型別參數引數。
 
 ## <a name="syntax"></a>語法
 
@@ -44,16 +44,16 @@ int GetTypeArguments(
 
 ## <a name="parameters"></a>參數
 `cArgs`\
-[在]類型參數數。
+在類型參數的數目。
 
 `ppArgs`\
-[出]返回類型參數陣組。
+擴展傳回型別參數的陣列。
 
 `pcArgs`\
-[進出]`ppArgs`陣列中的成員數。
+[in，out]陣列中的成員數目 `ppArgs` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

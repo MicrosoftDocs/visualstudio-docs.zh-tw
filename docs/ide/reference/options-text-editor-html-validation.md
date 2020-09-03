@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ede4600cb1fa1df118b4635a193d8bff348d5119
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568278"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>選項、文字編輯器、HTML (Web Form)、驗證
 
-使用 [驗證]**** 選項頁面來設定 HTML 編輯器如何檢查文件中 HTML 標記語法的喜好設定。 要訪問此頁面，在功能表列上，請選擇 **"工具** > **選項**"，然後展開**文字編輯器** > **HTML（Web 表單）** > **驗證**。
+使用 [驗證]**** 選項頁面來設定 HTML 編輯器如何檢查文件中 HTML 標記語法的喜好設定。 若要存取此頁面，請在功能表列上選擇 [**工具**  >  **選項**]，然後展開 [**文字編輯器**  >  **HTML (Web Form) **  >  **驗證**]。
 
 ## <a name="validation"></a>驗證
 
@@ -44,4 +44,4 @@ ms.locfileid: "75568278"
 
 ## <a name="see-also"></a>另請參閱
 
-- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)
+- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

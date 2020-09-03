@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ad891030cb9cf54855e6bef69a8b6926d6ae17aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568473"
 ---
 # <a name="options-text-editor-f-codelens"></a>選項、文字編輯器、F#、CodeLens
 
-使用 [CodeLens]**** 選項頁面修改 F# 的文字編輯器 CodeLens 設定。 要訪問此選項頁，請選擇 **"工具** > **選項**"，然後選擇**文字編輯器** > **F#** > **代碼鏡頭**。
+使用 [CodeLens]**** 選項頁面修改 F# 的文字編輯器 CodeLens 設定。 若要存取此選項頁面，請選擇 [**工具**  >  **選項**]，然後選擇 [**文字編輯器**]  >  **F #**  >  **CodeLens**。
 
 ## <a name="codelens"></a>CodeLens
 
@@ -40,5 +40,5 @@ ms.locfileid: "75568473"
 
 ## <a name="see-also"></a>另請參閱
 
-- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)
+- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
 - [尋找 CodeLens 的程式碼變更和其他記錄](../../ide/find-code-changes-and-other-history-with-codelens.md)

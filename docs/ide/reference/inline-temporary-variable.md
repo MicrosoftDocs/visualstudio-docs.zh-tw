@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8f0199436f5f9b1013a4c49cfb5909e760c73dcc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568863"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>內嵌暫存變數重構
@@ -46,7 +46,7 @@ ms.locfileid: "75568863"
 2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
+      - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
    - **滑鼠**
       - 在程式碼上按一下滑鼠右鍵，然後選取 [快速動作與重構]**** 功能表。
 
@@ -64,4 +64,4 @@ ms.locfileid: "75568863"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Refactoring](../refactoring-in-visual-studio.md)
+- [重構](../refactoring-in-visual-studio.md)

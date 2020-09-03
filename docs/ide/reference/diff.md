@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bb74501c15e961d8da8e1e29dd0d9979c79a305
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570085"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
@@ -31,11 +31,11 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
 ## <a name="arguments"></a>引數
 
-- *原始檔案*
+- *SourceFile*
 
   必要。 要比較之第一個檔案的完整路徑和名稱。
 
-- *目的檔案*
+- *TargetFile*
 
   必要。 要比較之第二個檔案的完整路徑和名稱。
 

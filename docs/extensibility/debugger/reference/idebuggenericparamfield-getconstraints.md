@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField:獲取約束 |微軟文件
+title: IDebugGenericParamField：： GetConstraints |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8a078beaac1cf9ef0255ff7b8d0bcbc4f568fdb8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728019"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
-檢索與此泛型參數關聯的約束。
+捕獲與這個泛型參數相關聯的條件約束。
 
 ## <a name="syntax"></a>語法
 
@@ -44,19 +44,19 @@ int GetConstraints(
 
 ## <a name="parameters"></a>參數
 `cConstraints`\
-[在]約束數。
+在條件約束的數目。
 
 `ppConstraints`\
-[出]返回包含與此欄位關聯的約束的陣列。
+擴展傳回陣列，其中包含與此欄位相關聯的條件約束。
 
 `pcConstraints`\
-[進出]陣列中`ppConstraints`的約束數。
+[in，out]陣列中的條件約束數目 `ppConstraints` 。
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則,返回錯誤代碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
-下面的範例展示如何為公開[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面的**CDebugGenericParamFieldType**物件實現此方法。
+下列範例示範如何針對公開[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面的**CDebugGenericParamFieldType**物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetConstraints(

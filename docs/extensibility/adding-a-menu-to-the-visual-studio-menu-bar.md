@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3eb5afbbe688c15f429054d50210a68769173e73
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801850"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>將功能表新增至 Visual Studio 的功能表列
@@ -33,7 +33,7 @@ ms.locfileid: "88801850"
 > 從 Visual Studio 2019 開始，擴充功能所貢獻的最上層功能表會放置在 [ **延伸** 模組] 功能表下。
 :::moniker-end
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
