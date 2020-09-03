@@ -1,5 +1,5 @@
 ---
-title: 原始檔控制整合的基本資訊 |Microsoft Docs
+title: 原始檔控制整合基本概念 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,46 +13,46 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b9189b647baa29d72975f84172696ecb54cd7f87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183438"
 ---
 # <a name="source-control-integration-essentials"></a>原始檔控制整合的基本資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 支援兩種類型的原始檔控制整合： 原始檔控制外掛程式提供基本功能，使用原始檔控制外掛程式 API （前身為 MSSCCI API） 和 VSPackage 型原始檔控制整合解決方案建置，提供更強大的功能。  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 支援兩種類型的原始檔控制整合：提供基本功能的原始檔控制外掛程式，以及使用原始檔控制外掛程式 API 建立的 (先前稱為 MSSCCI API) ，以及以 VSPackage 為基礎的原始檔控制整合解決方案，可提供更強大的功能。  
   
 ## <a name="source-control-plug-in"></a>原始檔控制外掛程式  
- 原始檔控制外掛程式會寫入做為實作原始檔控制外掛程式 API 的 DLL。 透過 API 提供註冊和原始檔控制整合功能。 這個方法會比原始檔控制 VSPackage，容易實作，並使用[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]大部分的原始檔控制作業的使用者介面 (UI)。  
+ 原始檔控制外掛程式會以 DLL 的形式寫入，以執行原始檔控制外掛程式 API。 註冊和原始檔控制整合功能是透過 API 所提供。 這種方法比原始檔控制 VSPackage 更容易執行，而且會 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 針對大部分的原始檔控制作業使用使用者介面 (UI) 。  
   
- 若要實作原始檔控制外掛程式使用原始檔控制外掛程式 API，請遵循下列步驟：  
+ 若要使用原始檔控制外掛程式 API 來執行原始檔控制外掛程式，請遵循下列步驟：  
   
-1. 建立一個實作中指定的函式的 DLL[原始檔控制外掛程式](../../extensibility/source-control-plug-ins.md)。  
+1. 建立可執行 [原始檔控制外掛程式](../../extensibility/source-control-plug-ins.md)中所指定之函式的 DLL。  
   
-2. 中所述，藉由適當的登錄項目中，登錄 DLL [How to:安裝原始檔控制外掛程式](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)。  
+2. 依照 [如何：安裝原始檔控制外掛程式](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)所述，建立適當的登錄專案以註冊 DLL。  
   
-3. 建立協助程式 UI，並顯示原始檔控制配接器套件出現提示時 ([!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]會處理透過原始檔控制外掛程式的原始檔控制功能的元件)。  
+3. 當原始檔控制介面卡封裝的提示 ([!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 透過原始檔控制外掛程式處理原始檔控制功能的元件時，請建立協助程式 UI 並顯示它) 。  
   
-   如需詳細資訊，請參閱 <<c0> [ 建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)。  
+   如需詳細資訊，請參閱 [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)。  
   
 ## <a name="source-control-vspackage"></a>原始檔控制 VSPackage  
- 原始檔控制 VSPackage 實作可讓您開發自訂的取代[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]原始檔控制 UI。 這種方法可讓您完整控制原始檔控制整合，但它會要求您提供的 UI 項目，並實作來源控制介面，否則會在可提供的外掛程式方法。  
+ 原始檔控制 VSPackage 執行可讓您針對原始檔控制 UI 開發自訂的取代 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。 這種方法可提供原始檔控制整合的完整控制權，但需要您提供 UI 元素，並執行在外掛程式方法下提供的原始檔控制介面。  
   
- 若要實作原始檔控制 VSPackage，您必須：  
+ 若要執行原始檔控制 VSPackage，您必須：  
   
-1. 建立並註冊您自己的原始檔控制 VSPackage，如中所述[註冊和選取](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)。  
+1. 建立並註冊您自己的原始檔控制 VSPackage （如 [註冊和選取專案](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)所述）。  
   
-2. 取代您自訂的 UI 中的預設原始檔控制 UI。 請參閱[自訂使用者介面](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)。  
+2. 以您的自訂 UI 取代預設的原始檔控制 UI。 請參閱 [自訂消費者介面](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)。  
   
-3. 指定使用，並處理字符**方案總管 中**圖像 （glyph） 的事件。 請參閱[字符控制](../../extensibility/internals/glyph-control-source-control-vspackage.md)。  
+3. 指定要使用的字元，並處理 **方案總管** 的圖像事件。 請參閱圖像 [控制](../../extensibility/internals/glyph-control-source-control-vspackage.md)。  
   
-4. 處理查詢編輯並查詢儲存的事件，如中所示[查詢編輯查詢儲存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)。  
+4. 處理查詢編輯和查詢儲存事件，如 [查詢編輯查詢儲存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)所示。  
   
-   如需詳細資訊，請參閱 <<c0> [ 建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)。  
+   如需詳細資訊，請參閱 [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [概觀](../../extensibility/internals/source-control-integration-overview.md)   
+ [概述](../../extensibility/internals/source-control-integration-overview.md)   
  [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)

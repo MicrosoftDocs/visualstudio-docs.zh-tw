@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f7df74624ea602b5c996d5523a45826137119f5
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330712"
 ---
 # <a name="marker_series-class"></a>marker_series 類別
@@ -34,8 +34,8 @@ class marker_series;
 
 |Name|說明|
 |----------|-----------------|
-|[marker_series：： marker_series 的構造函式](../profiling/marker-series-marker-series-constructor.md)|將 `marker_series` 類別的新執行個體初始化。|
-|[marker_series：： ~ marker_series 的析構函式](../profiling/marker-series-tilde-marker-series-destructor.md)|終結 marker_series 物件並釋放所有配置的資源。|
+|[marker_series：： marker_series 的函式](../profiling/marker-series-marker-series-constructor.md)|初始化 `marker_series` 類別的新執行個體。|
+|[marker_series：： ~ marker_series 的函式](../profiling/marker-series-tilde-marker-series-destructor.md)|終結 marker_series 物件並釋放所有配置的資源。|
 
 ### <a name="public-methods"></a>公用方法
 
@@ -49,7 +49,7 @@ class marker_series;
 ## <a name="inheritance-hierarchy"></a>繼承階層
  `marker_series`
 
-## <a name="requirements"></a>規格需求
+## <a name="requirements"></a>需求
  **標頭：** *cvmarkersobj.h*
 
  **命名空間：** Concurrency::diagnostic

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d78f20116552c34d36def4eaf28e5e5bc56f7875
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652336"
 ---
 # <a name="text-template-control-blocks"></a>文字範本控制區塊
@@ -66,7 +66,7 @@ Found another one!
 ```
 
 > [!WARNING]
-> 一律使用 {...} 分隔包含內嵌純文字的嵌套語句。 下列範例可能無法正常運作：
+> 一律使用 {...} 分隔包含內嵌純文字的內嵌語句。 下列範例可能無法正常運作：
 >
 > `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
@@ -122,7 +122,7 @@ Some text.
 > [!NOTE]
 > 類別功能控制區塊後面不得接著相同的範本檔案中的標準控制區塊。 不過，這項限制不適用於使用 `<#@include#>` 指示詞的結果。 每個包含的檔案的類別功能區塊後可以有標準區塊。
 
- 您可以建立函式，其會透過在類別功能控制區塊內內嵌文字和運算式區塊來產生輸出。 例如:
+ 您可以建立函式，其會透過在類別功能控制區塊內內嵌文字和運算式區塊來產生輸出。 例如：
 
 ```
 <#+
@@ -146,11 +146,11 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>如何使用控制區塊
- 在單一範本 (包括包含的範本中的所有程式碼) 中的所有標準和運算式控制區塊中的所有程式碼會結合，以形成所產生程式碼的 `TransformText()` 方法。 （如需有關使用 `include` 指示詞來包含其他文字模板的詳細資訊，請參閱[T4 文字模板](../modeling/t4-text-template-directives.md)指示詞）。
+ 在單一範本 (包括包含的範本中的所有程式碼) 中的所有標準和運算式控制區塊中的所有程式碼會結合，以形成所產生程式碼的 `TransformText()` 方法。  (如需有關使用指示詞來包含其他文字模板的詳細資訊 `include` ，請參閱 [T4 文字模板](../modeling/t4-text-template-directives.md)指示詞。 ) 
 
  使用控制區塊時，您應該記住下列考量：
 
-- **語言.** 您可以在文字範本中使用 C# 或 Visual Basic 程式碼。 預設語言是 C# 中，但是您可以使用 `template` 指示詞的 `language` 參數指定 Visual Basic。 （如需 `template` 指示詞的詳細資訊，請參閱[T4 文字模板](../modeling/t4-text-template-directives.md)指示詞）。
+- **語言。** 您可以在文字範本中使用 C# 或 Visual Basic 程式碼。 預設語言是 C# 中，但是您可以使用 `template` 指示詞的 `language` 參數指定 Visual Basic。  (如需指示詞的詳細資訊 `template` ，請參閱 [T4 文字模板](../modeling/t4-text-template-directives.md)指示詞。 ) 
 
      您在控制區塊中使用的語言，與您在文字範本中產生的文字的語言或格式無關。 您可以使用 Visual Basic 程式碼產生 C#，反之亦然。
 
@@ -160,7 +160,7 @@ Some text.
 
      在宣告變數時以合理的值初始化您的區域變數，也是不錯的主意，尤其是在包含多個文字範本時。
 
-- **控制區塊的嵌套。** 控制區塊不能在彼此間形成巢狀結構。 開啟另一個之前，您永遠必須終止特定的控制區塊。 例如，以下顯示如何在運算式區塊中列印某些文字做為標準控制區塊的一部分。
+- **控制區塊的巢狀結構。** 控制區塊不能在彼此間形成巢狀結構。 開啟另一個之前，您永遠必須終止特定的控制區塊。 例如，以下顯示如何在運算式區塊中列印某些文字做為標準控制區塊的一部分。
 
     ```
     <#
@@ -172,4 +172,4 @@ Some text.
     <# } #>
     ```
 
-- **重構.** 為了讓您的文字範本保持簡潔和易於了解，強烈建議您避免重複的程式碼，方法是將可重複使用的程式碼重構到類別功能區塊中的 helper 函式，或建立繼承自 Microsoft.VisualStudio.TextTemplating.TextTransformation 類別的自己的文字範本類別。
+- **重 構。** 為了讓您的文字範本保持簡潔和易於了解，強烈建議您避免重複的程式碼，方法是將可重複使用的程式碼重構到類別功能區塊中的 helper 函式，或建立繼承自 Microsoft.VisualStudio.TextTemplating.TextTransformation 類別的自己的文字範本類別。

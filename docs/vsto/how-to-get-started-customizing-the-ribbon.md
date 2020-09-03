@@ -16,24 +16,24 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: be311f87862f4447d903294508927735d3507b08
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520064"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>如何：開始自訂功能區
-  若要自訂 Microsoft Office 應用程式的功能區，請將 [**功能區（視覺化設計工具）** ] 或 **[功能區（XML）** ] 專案加入至 Office 專案。
+  若要自訂 Microsoft Office 應用程式的功能區，請將 **功能區 (視覺化設計工具) ** 或 **功能區 (XML) ** 專案加入 Office 專案。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 ### <a name="to-add-a-ribbon-to-a-project"></a>將功能區加入至專案
 
-1. 在 [**專案**] 功能表上，按一下 [**加入新專案**]。
+1. 在 [ **專案** ] 功能表上，按一下 [ **加入新專案**]。
 
-2. 在 [**加入新專案**] 對話方塊中，選取 [**功能區（視覺化設計工具）** ] 或 [**功能區（XML）**]。 如需這些範本的詳細資訊，請參閱[功能區總覽](../vsto/ribbon-overview.md)。
+2. 在 [ **加入新專案** ] 對話方塊中，選取 [ **功能區 (的視覺化設計工具) ** 或 **功能區 (XML) **。 如需這些範本的詳細資訊，請參閱 [功能區總覽](../vsto/ribbon-overview.md)。
 
-3. 在 [**名稱**] 方塊中，輸入功能區專案的名稱。
+3. 在 [ **名稱** ] 方塊中，輸入功能區專案的名稱。
 
     名稱不可包含以下字元：
 
@@ -63,11 +63,11 @@ ms.locfileid: "85520064"
 
    - 開頭或尾端空白 (' ')
 
-   - 保留給 Windows 或 DOS 的名稱，例如（"nul"、"aux"、"con"、"com1"、"lpt1" 等等）
+   - 保留給 Windows 或 DOS 的名稱，例如 ( "nul"、"aux"、"con"、"com1"、"lpt1" 等等) 
 
-4. 按一下 [確定] 。
+4. 按一下 [確定]  。
 
-   功能區專案會出現在**方案總管**中。 如需後續步驟的詳細資訊，請參閱[功能區總覽](../vsto/ribbon-overview.md)。
+   功能區專案隨即出現在 **方案總管**中。 如需後續步驟的詳細資訊，請參閱 [功能區總覽](../vsto/ribbon-overview.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [在執行時間存取功能區](../vsto/accessing-the-ribbon-at-run-time.md)

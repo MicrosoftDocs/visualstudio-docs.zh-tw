@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597304"
 ---
 # <a name="toolbox-components-tab"></a>工具箱, 元件索引標籤
 
 顯示您可以新增至 Windows Forms 之 Visual Basic 和 C# 設計工具的元件。 除了 Visual Studio 隨附的 .NET 元件 (例如 <xref:System.Messaging.MessageQueue> 和 <xref:System.Diagnostics.EventLog> 元件) 之外，您還可以將您自己的元件或協力廠商元件新增至這個索引標籤。
 
-若要顯示此索引標籤，請開啟 Windows Forms 設計工具。 選擇 **"查看** > **工具箱**"。 在 [工具箱]**** 中，選取 [元件]**** 索引標籤。
+若要顯示此索引標籤，請開啟 Windows Forms 設計工具。 選取 [ **View**  >  **工具箱**]。 在 [工具箱]**** 中，選取 [元件]**** 索引標籤。
 
 ## <a name="components"></a>元件
 
@@ -56,7 +56,7 @@ ms.locfileid: "75597304"
 
 建立 <xref:System.Windows.Forms.HelpProvider> 元件執行個體，以提供控制項的快顯畫面或線上說明。 如需詳細資訊，請參閱 [HelpProvider 元件](/dotnet/framework/winforms/controls/helpprovider-component-windows-forms)。
 
-**圖片清單**
+**ImageList**
 
 建立 <xref:System.Windows.Forms.ImageList> 元件執行個體，以提供方法來管理 <xref:System.Drawing.Image> 物件集合。 如需詳細資訊，請參閱 [ImageList 元件](/dotnet/framework/winforms/controls/imagelist-component-windows-forms)。
 
@@ -64,11 +64,11 @@ ms.locfileid: "75597304"
 
 建立可用來與訊息佇列互動的 <xref:System.Messaging.MessageQueue> 元件執行個體，包括從佇列中讀取訊息與將訊息寫入其中、處理交易，以及執行佇列管理工作。
 
-**效能計數器**
+**PerformanceCounter**
 
 建立可用來與 Windows 效能計數器互動的 <xref:System.Diagnostics.PerformanceCounter> 元件執行個體，包括建立新的類別和執行個體、讀取計數器中的值，以及對計數器資料執行計算。
 
-**處理程序**
+**處理**
 
 建立 <xref:System.Diagnostics.Process> 元件執行個體，以用來停止、啟動和操作與系統上的處理序建立關聯的資料。
 
@@ -80,15 +80,15 @@ ms.locfileid: "75597304"
 
 建立可用來操作現有服務的 <xref:System.ServiceProcess.ServiceController> 元件執行個體，包括啟動和停止服務，以及將命令傳送給它們。
 
-**計時 器**
+**計時器**
 
-建立 <xref:System.Windows.Forms.Timer> 元件執行個體，以用來將以時間為基礎的功能新增至 Windows 應用程式。 有關詳細資訊，請參閱[計時器元件](/dotnet/framework/winforms/controls/timer-component-windows-forms)。
+建立 <xref:System.Windows.Forms.Timer> 元件執行個體，以用來將以時間為基礎的功能新增至 Windows 應用程式。 如需詳細資訊，請參閱 [計時器元件](/dotnet/framework/winforms/controls/timer-component-windows-forms)。
 
 > [!NOTE]
 > 還會有以系統為基礎的 <xref:System.Timers.Timer> 可以新增至 [工具箱]****。這個 <xref:System.Timers.Timer> 已針對伺服器應用程式最佳化，而且 Windows Forms <xref:System.Windows.Forms.Timer> 最適合在 Windows Forms 上使用。
 
 ## <a name="see-also"></a>另請參閱
 
-- [要在 Windows 表單上使用的控制項](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
+- [要在 Windows Forms 上使用的控制項](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
 - [選擇工具箱項目、WPF 元件](choose-toolbox-items-wpf-components.md)
 - [工具箱](../../ide/reference/toolbox.md)

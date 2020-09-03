@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_numberOfRegisterIndices |Microsoft Docs
+title: IDiaSymbol：： get_numberOfRegisterIndices |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 18506739ca113679590b63a3a6bec981374da144
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183151"
 ---
-# <a name="idiasymbolgetnumberofregisterindices"></a>IDiaSymbol::get_numberOfRegisterIndices
+# <a name="idiasymbolget_numberofregisterindices"></a>IDiaSymbol::get_numberOfRegisterIndices
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取註冊索引的數目。  
+抓取註冊索引的數目。  
   
 ## <a name="syntax"></a>語法  
   
@@ -32,10 +32,10 @@ HRESULT get_numberOfRegisterIndices(
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]指標`DWORD`保存暫存索引鍵的數目。  
+ 擴展的指標 `DWORD` ，其中包含註冊索引的數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: 如何：以程式設計方式新增和刪除工作表批註
+title: 如何：以程式設計方式新增及刪除工作表批註
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: dc02a659c50a5b207f2f53d0a8781b0d23419301
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520077"
 ---
-# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>如何：以程式設計方式新增和刪除工作表批註
+# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>如何：以程式設計方式新增及刪除工作表批註
   您可以透過程式設計方式，加入及刪除 Microsoft Office Excel 工作表中的註解。 註解只能加入單一儲存格，而不能加入多個儲存格範圍。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "85520077"
      [!code-csharp[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#29)]
      [!code-vb[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#29)]
 
-## <a name="add-and-delete-a-comment-in-a-vsto-add-in-project"></a>在 VSTO 增益集專案中新增和刪除批註
+## <a name="add-and-delete-a-comment-in-a-vsto-add-in-project"></a>在 VSTO 增益集專案中加入及刪除批註
  下列範例假設使用中工作表上有名為 <xref:Microsoft.Office.Interop.Excel.Range> 的單一儲存格 `dateComment` 。
 
 ### <a name="to-add-a-new-comment-to-an-excel-range"></a>將新註解加入 Excel 範圍

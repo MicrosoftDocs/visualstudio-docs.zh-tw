@@ -1,5 +1,5 @@
 ---
-title: IDebugsettings回調2::enumEEs |微軟文件
+title: IDebugSettingsCallback2：： EnumEEs |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 19e0763ad74b3486b8bc2548ec129d9e95feb771
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720234"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
-枚舉給定語言和供應商識別符的可用運算式賦值器。
+使用指定的語言和廠商識別碼，列舉可用的運算式評估工具。
 
 ## <a name="syntax"></a>語法
 
@@ -45,19 +45,19 @@ public int EnumEEs(
 
 ## <a name="parameters"></a>參數
 `celtBuffer`\
-[在]`pceltEEs`緩衝區中的元素數。
+在緩衝區中的元素數目 `pceltEEs` 。
 
 `rgguidLang`\
-[進出]程式設計語言的唯一標識符。
+[in，out]程式設計語言的唯一識別碼。
 
 `rgguidVendor`\
-[進出]供應商的唯一標識碼。
+[in，out]廠商的唯一識別碼。
 
 `pceltEEs`\
-[進出]表達式賦值器陣組。
+[in，out]運算式評估工具的陣列。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

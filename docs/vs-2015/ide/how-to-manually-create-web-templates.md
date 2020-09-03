@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4bf604e747158c651f284c6463c2c2f65ae3c47a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651808"
 ---
 # <a name="how-to-manually-create-web-templates"></a>如何：以手動方式建立網站範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-建立網站範本與建立其他種類的範本不同。 因為 Web 專案範本出現在 [新增網站] 對話方塊中，並且依程式語言分類 Web 專案項目，所以 .vstemplate 檔案必須將範本指定為網站範本，並識別程式設計語言。
+建立網站範本與建立其他種類的範本不同。 因為 Web 專案範本出現在 [新增網站]**** 對話方塊中，並且依程式語言分類 Web 專案項目，所以 .vstemplate 檔案必須將範本指定為網站範本，並識別程式設計語言。
 
 > [!NOTE]
 > 網站範本必須包含使用 `Project` 項目的 `File` 屬性所指定的空 .webproj 檔案。 雖然 Web 專案不需要專案檔，但需要這個檔案，網站範本才能正常運作。
@@ -47,7 +47,7 @@ ms.locfileid: "72651808"
 
    - VisualBasic
 
-     例如:
+     例如：
 
    ```
    <TemplateData>
@@ -58,9 +58,9 @@ ms.locfileid: "72651808"
    </TemplateData>
    ```
 
-7. 在包含 .vstemplate 檔案的範本中選取檔案，並以滑鼠右鍵按一下選取範圍，再按一下 [傳送到]，然後按一下 [壓縮的 (zipped) 資料夾]。 檔案即會壓縮成 .zip 檔案。
+7. 在包含 .vstemplate 檔案的範本中選取檔案，並以滑鼠右鍵按一下選取範圍，再按一下 [傳送到]****，然後按一下 [壓縮的 (zipped) 資料夾] ****。 檔案即會壓縮成 .zip 檔案。
 
-8. 將 .zip 範本檔放在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案範本目錄中。 此檔案預設位於 \My Documents\Visual Studio <版本>\My Exported Templates\\。
+8. 將 .zip 範本檔放在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案範本目錄中。 此檔案預設位於 \My Documents\Visual Studio <版本>** \My Exported Templates\\。
 
 ## <a name="example"></a>範例
  下列範例示範 Web 專案範本的基本 .vstemplate 檔案。
@@ -86,5 +86,5 @@ ms.locfileid: "72651808"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [建立專案和專案範本](../ide/creating-project-and-item-templates.md) [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)

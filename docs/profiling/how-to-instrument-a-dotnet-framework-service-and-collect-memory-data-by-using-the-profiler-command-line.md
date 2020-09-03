@@ -1,5 +1,5 @@
 ---
-title: Profiler 命令列-檢測 .NET 服務，取得記憶體資料
+title: Profiler 命令列檢測 .NET 服務，取得記憶體資料
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 042f01bcc53f12c240276374bdce5fb965c67be4
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330126"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用分析工具命令列以檢測 .NET Framework 服務並收集記憶體資料
@@ -55,13 +55,13 @@ ms.locfileid: "85330126"
        |**/globaltracegc**|僅收集記憶體配置資料。|
        |**/globaltracegclife**|收集記憶體配置和物件存留期資料。|
 
-5. 重新啟動電腦。
+5. 將電腦重新開機。
 
 6. 開啟 [命令提示字元] 視窗。
 
 7. 啟動分析工具。 輸入：
 
-    **VSPerfCmd**  [/start](../profiling/start.md) **： trace**  [/output](../profiling/output.md) **：** `OutputFile` [ `Options` ]
+    **>vsperfcmd**  [/start](../profiling/start.md) **： trace**  [/output](../profiling/output.md) **：** `OutputFile` [ `Options` ]
 
    - **/start: contention** 選項會將分析工具初始化。
 
@@ -75,13 +75,13 @@ ms.locfileid: "85330126"
    | 選項 | 說明 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **：**[ `Domain` **\\** ]`UserName` | 指定擁有 ASP.NET 背景工作處理序之帳戶的網域和使用者名稱。 如果以登入的使用者之外的使用者身分執行處理序，就需要這個選項。 處理序擁有者會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [使用者名稱] 欄。 |
-   | [/crosssession](../profiling/crosssession.md) | 在其他登入工作階段啟用處理序程式碼剖析。 如果 ASP.NET 應用程式在不同的工作階段中執行，則需要這個選項。 會話識別碼會列在 [Windows 工作管理員] 之 [**處理**程式] 索引標籤上的 [**會話識別碼**] 欄中。 **/crosssession** 可縮寫成 **/CS**。 |
+   | [/crosssession](../profiling/crosssession.md) | 在其他登入工作階段啟用處理序程式碼剖析。 如果 ASP.NET 應用程式在不同的工作階段中執行，則需要這個選項。 會話識別碼會列在 Windows 工作管理員的 [**處理**程式] 索引標籤上的 [**會話識別碼**] 欄中。 **/crosssession** 可縮寫成 **/CS**。 |
    | [/waitstart](../profiling/waitstart.md)[**：** `Interval` ] | 指定在分析工具傳回錯誤之前，等候它初始化的秒數。 如果未指定 `Interval`，分析工具會無限期等候。 根據預設，**/start** 會立即傳回。 |
    | [/globaloff](../profiling/globalon-and-globaloff.md) | 若要啟動暫停資料收集的程式碼剖析工具，請將 **/globaloff** 選項新增到 **/start** 命令列。 使用 **/globalon** 以繼續程式碼剖析。 |
-   | [/counter](../profiling/counter.md) **：**`Config` | 從 Config 中指定的處理器效能計數器收集資訊。計數器資訊會新增至每個分析事件所收集的資料。 |
+   | [/counter](../profiling/counter.md) **：**`Config` | 從 Config 中指定的處理器效能計數器收集資訊。計數器資訊會新增至每個程式碼剖析事件所收集的資料。 |
    | [/wincounter](../profiling/wincounter.md) **：**`WinCounterPath` | 指定程式碼剖析期間要收集的 Windows 效能計數器。 |
    | [/automark](../profiling/automark.md) **：**`Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。 |
-   | [/events](../profiling/events-vsperfcmd.md) **：**`Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集在不同的（。*etl*）檔案。 |
+   | [/events](../profiling/events-vsperfcmd.md) **：**`Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集在不同的 ( 中。*etl*) 檔。 |
 
 8. 如有必要，請啟動該服務。
 
@@ -96,7 +96,7 @@ ms.locfileid: "85330126"
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集
 
-- 下列成對的**VSPerfCmd**選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
+- 下列 **>vsperfcmd** 選項配對會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
     |選項|說明|
     |------------|-----------------|
@@ -121,7 +121,7 @@ ms.locfileid: "85330126"
 
      以原始模組取代檢測過的模組。 如有必要，請重新設定服務的啟動類型。
 
-4. 重新啟動電腦。
+4. 將電腦重新開機。
 
 ## <a name="see-also"></a>另請參閱
 - [分析服務](../profiling/command-line-profiling-of-services.md)

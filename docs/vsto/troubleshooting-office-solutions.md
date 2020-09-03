@@ -1,5 +1,5 @@
 ---
-title: Office 方案疑難排解
+title: 針對 Office 方案進行疑難排解
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 dev_langs:
@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 82fbb41bb1bf0d7ba3da046eb7d22eb8606a7529
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234714"
 ---
-# <a name="troubleshoot-office-solutions"></a>Office 方案疑難排解
+# <a name="troubleshoot-office-solutions"></a>針對 Office 方案進行疑難排解
   本節所包含的秘訣，可解決使用 Visual Studio 中的 Office 開發工具建立方案時可能遇到的常見問題。
 
 ## <a name="in-this-section"></a>本節內容
@@ -31,7 +31,7 @@ ms.locfileid: "87234714"
 
 - [如何：重新啟用已停用的 VSTO 增益集](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)
 
- 說明如何重新啟用已硬性或已停用的 VSTO 增益集。
+ 說明如何重新啟用已硬式或已停用的 VSTO 增益集。
 
 - [Office 方案中錯誤的其他支援](../vsto/additional-support-for-errors-in-office-solutions.md)
 
@@ -54,7 +54,7 @@ ms.locfileid: "87234714"
 
  包含相關主題，說明 Office 方案如何加入 .NET Framework 所提供的安全性功能。
 
-- [Office 程式設計的一般工作](../vsto/common-tasks-in-office-programming.md)
+- [Office 程式設計中的一般工作](../vsto/common-tasks-in-office-programming.md)
 
  列出有關 Office 方案程式設計的常見問題集，並提供可協助解決常見問題的主題連結。
 

@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: eb21d201c282461cbe82005f56bed023bb022209
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519986"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>如何：以程式設計方式開啟 Visio 檔
-  有兩種方法可以開啟現有的 Microsoft Office Visio 檔：開啟和 Microsoft.office.interop.visio.documents.open。 Microsoft.office.interop.visio.documents.open 方法與 Open 方法完全相同，不同之處在于它會提供引數，供呼叫者指定檔開啟的方式。
+  開啟現有 Microsoft Office Visio 檔的方法有兩種：開啟和 OpenEx。 OpenEx 方法與 Open 方法相同，不同之處在于它會提供引數，讓呼叫端指定檔的開啟方式。
 
  如需此物件模型的詳細資訊，請參閱 [Microsoft.Office.Interop.Visio.Documents.Open](/office/vba/api/Visio.Documents.Open) 方法和 [Microsoft.Office.Interop.Visio.Documents.OpenEx](/office/vba/api/Visio.Documents.OpenEx) 方法的 VBA 參考文件。
 
@@ -46,10 +46,10 @@ ms.locfileid: "85519986"
 ## <a name="compile-the-code"></a>編譯程式碼
  這段程式碼範例需要下列項目：
 
-- 名為的 Visio 檔 `myDrawing.vsd` 必須位於 `Test` [*我的文件*] 資料夾（windows XP 及更早版本）或 [*檔*] 資料夾（windows Vista）中名為的目錄中。
+- 名為的 Visio 檔必須位在 `myDrawing.vsd` `Test` windows XP 和舊版) 的 *我的檔* 資料夾 (的目錄中，或是 windows Vista) 的 [ *檔* ] 資料夾 (。
 
 ## <a name="see-also"></a>另請參閱
-- [Visio 解決方案](../vsto/visio-solutions.md)
+- [Visio 方案](../vsto/visio-solutions.md)
 - [Visio 物件模型總覽](../vsto/visio-object-model-overview.md)
 - [如何：以程式設計方式建立新的 Visio 檔](../vsto/how-to-programmatically-create-new-visio-documents.md)
 - [如何：以程式設計方式關閉 Visio 檔](../vsto/how-to-programmatically-close-visio-documents.md)

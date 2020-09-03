@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e7559ffe33c5e53ef882962d04e0e6f69b49a6e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182574"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取透過索引或名稱的偵錯資料流。  
+藉由索引或名稱來抓取 debug 資料流程。  
   
 ## <a name="syntax"></a>語法  
   
@@ -36,13 +36,13 @@ HRESULT Item ( 
   
 #### <a name="parameters"></a>參數  
  索引  
- [in]索引或偵錯資料流的名稱來擷取。 如果使用整數變數，則它必須是範圍介於 0 到`count`-1，其中`count`會傳回[idiaenumdebugstreams:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)方法。  
+ 在要抓取之 debug 資料流程的索引或名稱。 如果使用整數變異數，它必須在0到-1 的範圍內 `count` ，其中 `count` 是 [IDiaEnumDebugStreams：： get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) 方法所傳回的。  
   
  資料流  
- [out]傳回[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)物件，表示指定的偵錯資料流。  
+ 擴展傳回代表指定之 debug 資料流程的 [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) 物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
   

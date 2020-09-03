@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 58d2a7b7c83f1260427ff0d805510e08ae35c019
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329806"
 ---
 # <a name="how-to-customize-report-view-columns"></a>如何：自訂報表檢視資料行
@@ -32,7 +32,7 @@ Visual Studio Team System Development 版的效能工具已完全整合至整合
 
 - [指令指標 (IP) 檢視](../profiling/instruction-pointers-ips-view.md)
 
-- [呼叫端/被呼叫端視圖](../profiling/caller-callee-view.md)
+- [呼叫端/被呼叫者視圖](../profiling/caller-callee-view.md)
 
 - [呼叫樹狀圖檢閱](../profiling/call-tree-view.md)
 
@@ -56,4 +56,4 @@ Visual Studio Team System Development 版的效能工具已完全整合至整合
 
 4. 按一下箭號按鈕以重新排列資料行。
 
-5. 按一下 [確定]。
+5. 按一下 [確定] 。

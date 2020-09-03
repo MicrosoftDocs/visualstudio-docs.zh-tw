@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO | Microsoft Docs
+title: BP_REQUEST_INFO |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c514f43f39f0b002da0f01b1804120b98530990b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182954"
 ---
-# <a name="bprequestinfo"></a>BP_REQUEST_INFO
+# <a name="bp_request_info"></a>BP_REQUEST_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-包含中斷點的實作所需的資訊。  
+包含執行中斷點所需的資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -58,46 +58,46 @@ public struct BP_REQUEST_INFO {
   
 ## <a name="members"></a>成員  
  `dwFields`  
- 從旗標的組合[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列舉，指定哪些欄位都已填寫。  
+ [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列舉中的旗標組合，可指定要填寫的欄位。  
   
  `guidLanguage`  
  語言 GUID。  
   
  `bpLocation`  
- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構，指定之中斷點位置的類型。  
+ 指定中斷點位置類型的 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 結構。  
   
  `pProgram`  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示中斷點發生的應用程式。  
+ 代表中斷點發生所在之應用程式的 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 物件。  
   
  `bstrProgramName`  
- 中斷點會發生在應用程式的名稱。  
+ 發生中斷點的應用程式名稱。  
   
  `pThread`  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示中斷點發生的執行緒。  
+ 代表中斷點發生所在之執行緒的 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 物件。  
   
  `bstrThreadName`  
- 中斷點會發生執行緒的名稱。  
+ 發生中斷點的執行緒名稱。  
   
  `bpCondition`  
- [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)結構，描述在其下會引發中斷點的條件。  
+ 描述中斷點將引發之條件的 [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) 結構。  
   
  `bpPassCount`  
- [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)結構，其中包含中斷點的傳遞計數資訊。  
+ 包含中斷點之傳遞計數資訊的 [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) 結構。  
   
  `dwFlags`  
- 從旗標的組合[BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)指定要求之中斷點的旗標的列舉型別。  
+ [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)列舉中的旗標組合，可指定所要求中斷點的旗標。  
   
 ## <a name="remarks"></a>備註  
- 此結構由[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)方法。  
+ [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)方法會傳回這個結構。  
   
- 如果您需要取得偵錯引擎廠商的 GUID，中斷點條件約束或追蹤點，請參閱[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。  
+ 如果您需要取得 debug engine 廠商 GUID、中斷點條件約束或追蹤點，請參閱 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 結構。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

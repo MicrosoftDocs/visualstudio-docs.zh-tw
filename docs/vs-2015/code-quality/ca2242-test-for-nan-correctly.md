@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: a0c832b7eb4a94506c5e15dfa5858bb9f6753912
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546259"
 ---
 # <a name="ca2242-test-for-nan-correctly"></a>CA2242:必須正確測試 NaN
@@ -28,23 +28,23 @@ ms.locfileid: "85546259"
 |-|-|
 |TypeName|TestForNaNCorrectly|
 |CheckId|CA2242|
-|類別|Microsoft。使用方式|
+|類別|Microsoft. 使用量|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
  運算式會針對或測試值 <xref:System.Single.NaN?displayProperty=fullName> <xref:System.Double.NaN?displayProperty=fullName> 。
 
 ## <a name="rule-description"></a>規則描述
- <xref:System.Double.NaN?displayProperty=fullName>表示非數位的，未定義算數運算時的結果。 測試值是否相等並一律傳回的任何運算式 <xref:System.Double.NaN?displayProperty=fullName> `false` 。 測試值是否不相等，且一律會傳回的任何運算式 <xref:System.Double.NaN?displayProperty=fullName> `true` 。
+ <xref:System.Double.NaN?displayProperty=fullName>當算數運算未定義時，表示非數位的結果。 測試值是否相等且一律會傳回的任何運算式 <xref:System.Double.NaN?displayProperty=fullName> `false` 。 測試值是否不相等，且一律會傳回的任何運算式 <xref:System.Double.NaN?displayProperty=fullName> `true` 。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規，並準確判斷某個值是否代表 <xref:System.Double.NaN?displayProperty=fullName> ，請使用 <xref:System.Single.IsNaN%2A?displayProperty=fullName> 或 <xref:System.Double.IsNaN%2A?displayProperty=fullName> 來測試值。
+ 若要修正此規則的違規，並精確判斷值是否代表 <xref:System.Double.NaN?displayProperty=fullName> ，請使用 <xref:System.Single.IsNaN%2A?displayProperty=fullName> 或 <xref:System.Double.IsNaN%2A?displayProperty=fullName> 來測試值。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示兩個不正確測試值的運算式 <xref:System.Double.NaN?displayProperty=fullName> ，以及正確地用 <xref:System.Double.IsNaN%2A?displayProperty=fullName> 來測試值的運算式。
+ 下列範例顯示兩個不正確測試值的運算式 <xref:System.Double.NaN?displayProperty=fullName> ，以及正確用 <xref:System.Double.IsNaN%2A?displayProperty=fullName> 來測試值的運算式。
 
  [!code-csharp[FxCop.Usage.TestForNaN#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.TestForNaN/cs/FxCop.Usage.TestForNaN.cs#1)]
  [!code-vb[FxCop.Usage.TestForNaN#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.TestForNaN/vb/FxCop.Usage.TestForNaN.vb#1)]

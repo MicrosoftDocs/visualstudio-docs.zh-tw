@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f13689b6e3ac4db2d58c1def3a5d0dd05c219f2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672325"
 ---
 # <a name="list-source-command"></a>列出原始碼命令
@@ -34,16 +34,16 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 [/Line:number] [/ShowLineNumbers:yes|no]
 ```
 
-## <a name="switches"></a>參數
- /Count： `number` 選用。 指定要顯示的行數。
+## <a name="switches"></a>交換器
+ /Count： `number` 選擇性。 指定要顯示的行數。
 
  /Current 選擇性。 顯示目前這行。
 
- /File： `filename` 選用。 要顯示之檔案的路徑。 如果未指定檔名，則此命令會顯示目前陳述式行的原始程式碼。
+ /File： `filename` 選擇性。 要顯示之檔案的路徑。 如果未指定檔名，則此命令會顯示目前陳述式行的原始程式碼。
 
- /Line： `number` 選用。 顯示特定行號。
+ /Line： `number` 選擇性。 顯示特定行號。
 
- /ShowLineNumbers： `yes|no` 選用。 指定是否顯示行號。
+ /ShowLineNumbers： `yes|no` 選擇性。 指定是否顯示行號。
 
 ## <a name="remarks"></a>備註
 

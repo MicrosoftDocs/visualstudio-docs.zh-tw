@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreams:: Next |Microsoft Docs'
+title: IDiaEnumDebugStreams：： Next |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d25b7cf505f0aa049d0faceb093599a1cd0b78cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182593"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取指定的數目的列舉型別序列中的偵錯資料流。  
+抓取列舉順序中指定數目的 debug 資料流程。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,16 +37,16 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>參數  
  celt  
- [in]要擷取列舉值中的偵錯資料流數目。  
+ 在要抓取的列舉值中的 debug 資料流程數目。  
   
  rgelt  
- [out]傳回的陣列[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)物件，表示偵錯資料流擷取。  
+ 擴展傳回 [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) 物件的陣列，表示要抓取的偵錯工具資料流程。  
   
  pceltFetched  
- [out]傳回傳回的偵錯資料流的數目。  
+ 擴展傳回傳回的偵錯工具資料流程數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`如果沒有更多資料流。 否則會傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果沒有資料流程，則傳回。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

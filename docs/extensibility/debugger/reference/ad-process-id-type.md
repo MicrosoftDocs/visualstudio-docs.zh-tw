@@ -1,5 +1,5 @@
 ---
-title: AD_PROCESS_ID_TYPE |微軟文件
+title: AD_PROCESS_ID_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a88fbe97cede8d343f1a96bc1917a69b8905b02b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738196"
 ---
 # <a name="ad_process_id_type"></a>AD_PROCESS_ID_TYPE
-指定如何在[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構中解釋進程 ID。
+指定如何解讀 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 結構中的處理序識別碼。
 
 ## <a name="syntax"></a>語法
 
@@ -44,20 +44,20 @@ public enum enum_AD_PROCESS_ID {
 
 ## <a name="fields"></a>欄位
 `AD_PROCESS_ID_SYSTEM`\
-進程識別碼是系統識別碼。 使用AD_PROCESS_ID`ProcessId.dwProcessId`結構的欄位[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)。
+處理序識別碼是系統識別碼。 使用 `ProcessId.dwProcessId` [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 結構的欄位。
 
 `AD_PROCESS_ID_GUID`\
-進程識別碼是GUID。 `ProcessId.guidProcessId`使用結構欄位`AD_PROCESS_ID`。
+處理序識別碼是 GUID。 使用 `ProcessId.guidProcessId` 結構的欄位 `AD_PROCESS_ID` 。
 
 ## <a name="remarks"></a>備註
-用於AD_PROCESS_ID結構`ProcessIdType`的成員,用於[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)標識結構中包含的進程 ID 的類型。 確定如何解釋結構中的`ProcessId`聯合。
+用於 `ProcessIdType` [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 結構的成員，以識別包含在結構中的處理序識別碼類型。 決定如何解讀 `ProcessId` 結構中的聯集。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

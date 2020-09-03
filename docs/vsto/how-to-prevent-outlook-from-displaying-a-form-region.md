@@ -14,26 +14,26 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 90da255beb0a85a302158feb1f9d5cc4981437eb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520130"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>如何：防止 Outlook 顯示表單區域
-  在某些情況下，您可能不希望 Microsoft Office Outlook 顯示特定專案的表單區域。 例如，如果連絡人項目不包含商務位址，您可以防止表單區域顯示地圖中的商務位置，而不會出現。
+  在某些情況下，您可能不想 Microsoft Office Outlook 顯示特定專案的表單區域。 例如，如果連絡人項目不包含商務位址，您可以防止在地圖中顯示企業位置的表單區域出現。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>防止 Outlook 顯示表單區域
 
-1. 開啟您要修改之表單區域的程式碼檔案。
+1. 開啟您想要修改之表單區域的程式碼檔案。
 
-2. 展開 [**表單區域 Factory**程式碼區域]。
+2. 展開 **表單區域 Factory** 程式碼區域。
 
-3. 將程式碼加入至 `FormRegionInitializing` 事件處理常式，將 <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> 類別的屬性設定 <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> 為**true**。
+3. 將程式碼加入至 `FormRegionInitializing` 事件處理常式，將 <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> 類別的屬性設定 <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> 為 **true**。
 
-   在此範例中，如果連絡人項目不包含位址， <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> 屬性會設定為**true**，且表單區域不會出現。
+   在此範例中，如果連絡人項目不包含位址， <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> 屬性會設定為 **true**，而且不會顯示表單區域。
 
 ## <a name="example"></a>範例
  [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]

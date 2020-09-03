@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2f6d64512af660392c10082e3bcd3c26b6bc6885
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520090"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>如何：以程式設計方式存取 Outlook 連絡人
-  這個範例會尋找姓氏包含指定搜尋字串的所有連絡人。
+  此範例會尋找姓氏包含指定之搜尋字串的所有連絡人。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "85520090"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要：
 
-- 姓氏在 [**連絡人**] 資料夾中包含字串 "**Na"** （例如，Tzipi Butnaru）的連絡人。
+- 姓氏包含 "**Na"** 字串的連絡人 (例如，在 [ **連絡人** ] 資料夾中的 Tzipi Butnaru) 。
 
 ## <a name="see-also"></a>另請參閱
 - [使用連絡人項目](../vsto/working-with-contact-items.md)

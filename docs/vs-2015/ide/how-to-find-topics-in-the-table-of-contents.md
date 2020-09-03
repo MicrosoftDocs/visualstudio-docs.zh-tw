@@ -17,28 +17,28 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4dccd82ea260c6d113ffaf077922c5e22946bbbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651878"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>HOW TO：在目錄中尋找主題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 [內容] 索引標籤上，您可以使用目錄 (TOC) 來尋找資訊。 目錄是一個可展開的清單，其中包含已安裝書籍中的所有主題。 如需有關目錄巡覽方法的協助工具資訊，請參閱[快速鍵 (說明檢視器)](../ide/shortcut-keys-help-viewer.md)。
+在 [內容]**** 索引標籤上，您可以使用目錄 (TOC) 來尋找資訊。 目錄是一個可展開的清單，其中包含已安裝書籍中的所有主題。 如需有關目錄巡覽方法的協助工具資訊，請參閱[快速鍵 (說明檢視器)](../ide/shortcut-keys-help-viewer.md)。
 
 > [!IMPORTANT]
 > 目錄中可用的主題範圍取決於您選取的篩選條件。
 
 ## <a name="filter-the-toc"></a>篩選目錄
- 您可以篩選目錄來縮小 [**內容**] 索引標籤中出現的主題範圍。只有當標題包含您指定之詞彙的根目錄時，才會出現在清單中。 例如，如果您指定「疑難排解」做為篩選條件，則只會出現包含「進行疑難排解」或「疑難排解」的標題。 標題不包含該詞彙的節點會以省略符號 (...) 摺疊成單一節點。
+ 您可以篩選目錄來縮小 [ **內容** ] 索引標籤中顯示的主題範圍。只有當標題包含您指定之詞彙的根目錄時，標題才會出現在清單中。 例如，如果您指定「疑難排解」做為篩選條件，則只會出現包含「進行疑難排解」或「疑難排解」的標題。 標題不包含該詞彙的節點會以省略符號 (...) 摺疊成單一節點。
 
 #### <a name="to-filter-the-toc"></a>篩選目錄
 
-1. 請選擇 [內容] 索引標籤。
+1. 請選擇 [內容]**** 索引標籤。
 
-2. 在 [篩選內容] 文字方塊中輸入詞彙。
+2. 在 [篩選內容]**** 文字方塊中輸入詞彙。
 
 > [!NOTE]
 > 如果執行篩選條件要花很長的時間，則您可使用 `title:` 進階搜尋運算子來快速顯示結果。
@@ -50,9 +50,9 @@ ms.locfileid: "72651878"
 
 1. 檢視主題。
 
-2. 按一下工具列上的 [顯示內容中的主題] 按鈕，或按 Ctrl+S。
+2. 按一下工具列上的 [ **顯示內容中的主題** ] 按鈕，或按 Ctrl + S。
 
-     [內容] 索引標籤隨即開啟，並在目錄中顯示主題的位置。
+     [內容]**** 索引標籤隨即開啟，並在目錄中顯示主題的位置。
 
-## <a name="see-also"></a>請參閱
- [尋找資訊](../ide/locate-information.md) [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
+## <a name="see-also"></a>另請參閱
+ [找出資訊](../ide/locate-information.md) [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 828768b59e4ab465e4723d399d406b994fa8c8ce
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330425"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
@@ -101,7 +101,7 @@ VSPerfCmd /Attach:MyService.exe
 
 |選項|說明|
 |------------|-----------------|
-|**停止**|刪除標準 .NET 程式碼剖析的環境變數。 使用非全域 VSPerfClrEnv 選項來設定分析工具環境變數時，請使用此選項。|
+|**關閉**|刪除標準 .NET 程式碼剖析的環境變數。 使用非全域 VSPerfClrEnv 選項來設定分析工具環境變數時，請使用此選項。|
 |**GlobalOff**|刪除全域 .NET 程式碼剖析的環境變數。 當應用程式由作業系統啟動且不是分析工具時，請使用此選項。|
 
 ## <a name="remarks"></a>備註

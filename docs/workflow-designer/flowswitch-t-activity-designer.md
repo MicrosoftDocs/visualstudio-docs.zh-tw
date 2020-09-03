@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d6637682bd6ba649f27c1a53f3b1448629f03736
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711569"
 ---
 # <a name="flowswitcht-activity-designer"></a>FlowSwitch\<T> 活動設計工具
@@ -46,7 +46,7 @@ ms.locfileid: "88711569"
 |<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|否|指定從評估<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> 所取得的可能結果到一組<xref:System.Activities.Statements.FlowNode> 物件的唯一對應。|
 |<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|是|指定對應，時機是當 <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> 的評估結果與包含於 <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> 物件的值不相符時。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [流程圖](../workflow-designer/flowchart-activity-designers.md)
 - [流程圖](../workflow-designer/flowchart-activity-designer.md)

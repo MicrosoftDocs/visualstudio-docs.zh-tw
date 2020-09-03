@@ -1,5 +1,5 @@
 ---
-title: IDebugSettings 回撥2::獲取MetricDword |微軟文件
+title: IDebugSettingsCallback2：： GetMetricDword |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3b8890cb76d8f15ff0519db5e20d3b8e8866d4eb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720037"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
-檢索給定指標名稱的指標的值。
+取得度量的值（指定其名稱）。
 
 ## <a name="syntax"></a>語法
 
@@ -45,19 +45,19 @@ private int GetMetricDword(
 
 ## <a name="parameters"></a>參數
 `pszType`\
-[在]指標的類型。
+在度量的類型。
 
 `guidSection`\
-[在]節的唯一標識碼。
+在區段的唯一識別碼。
 
 `pszMetric`\
-[在]指標的名稱。
+在度量的名稱。
 
 `pdwValue`\
-[出]返回指標的值。
+擴展傳回度量的值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

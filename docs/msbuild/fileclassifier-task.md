@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 46ed1b1f94cd2ef23ff0704912cb2a2194ba7dab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634184"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier 工作
@@ -35,11 +35,11 @@ ms.locfileid: "77634184"
 |`CLREmbeddedResource`|未使用的。|
 |`CLRResourceFiles`|未使用的。|
 |`CLRSatelliteEmbeddedResource`|未使用的。|
-|`Culture`|可選**字串**參數。<br /><br /> 指定組建的文化特性。 如果組建為不可當地語系化，則此值可以是 **null**。 如果是 **null**，預設值即為 **CultureInfo.InvariantCulture** 所傳回的小寫值。|
+|`Culture`|選擇性的 **字串** 參數。<br /><br /> 指定組建的文化特性。 如果組建為不可當地語系化，則此值可以是 **null**。 如果是 **null**，預設值即為 **CultureInfo.InvariantCulture** 所傳回的小寫值。|
 |`MainEmbeddedFiles`|選擇性的 **ITaskItem[]** 輸出參數。<br /><br /> 指定內嵌於主組件的不可當地語系化資源。|
 |`OutputType`|必要的 **String** 參數。<br /><br /> 指定要內嵌所指定原始程式檔的檔案類型。 有效值為 **exe**、**winexe** 或 **library**。|
 |`SatelliteEmbeddedFiles`|選擇性的 **ITaskItem[]** 輸出參數。<br /><br /> 針對 **Culture** 參數所指定的文化特性，指定要內嵌到附屬組件的可當地語系化檔案。|
-|`SourceFiles`|必需**的 ITaskItem]** 參數。<br /><br /> 指定要分類的檔案清單。|
+|`SourceFiles`|必要的 **ITaskItem []** 參數。<br /><br /> 指定要分類的檔案清單。|
 
 ## <a name="remarks"></a>備註
 
@@ -69,7 +69,7 @@ ms.locfileid: "77634184"
 ## <a name="see-also"></a>另請參閱
 
 - [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)
-- [任務引用](../msbuild/wpf-msbuild-task-reference.md)
+- [工作參考](../msbuild/wpf-msbuild-task-reference.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
-- [任務引用](../msbuild/msbuild-task-reference.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)
 - [建置 WPF 應用程式 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: caf145213c41215d518cf42d0a69975c8580e817
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330004"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
@@ -39,19 +39,19 @@ VSPerfCmd [/U] [/options]
 |[CrossSession&#124;CS](../profiling/crosssession.md)|允許在 Windows 工作階段中進行分析。 只能與 **Start**、**Attach** 或 **Launch** 搭配使用。|
 |[使用者](../profiling/user-vsperfcmd.md) **：**[ `domain\` ]`username`|允許指定的帳戶存取分析工具服務。 只能與 **Start** 搭配使用。|
 |[WaitStart](../profiling/waitstart.md)[**：** `n` ]|等候資料收集記錄器初始化。 如有指定 `n`，**VSPerfCmd** 最多會等候 `n` 秒。 若未指定 `n`，**VSPerfCmd** 會無限期等候。 這減輕了 **VSPerfCmd** 在批次程序中的使用。|
-|[計數器](../profiling/counter.md) **：**`cfg`|使用樣本分析方法時，會指定要用作取樣間隔的 CPU 計數器及事件數。 您可以只取樣一個計數器值。<br /><br /> 使用檢測分析方法時，會指定在每個檢測點要收集的 CPU 計數器。 只能與**Start：** `Trace` 、 **Attach**或**啟動**搭配使用。|
+|[計數器](../profiling/counter.md) **：**`cfg`|使用樣本分析方法時，會指定要用作取樣間隔的 CPU 計數器及事件數。 您可以只取樣一個計數器值。<br /><br /> 使用檢測分析方法時，會指定在每個檢測點要收集的 CPU 計數器。 只能搭配**Start：** `Trace` 、 **Attach**或**啟動**使用。|
 |[QueryCounters](../profiling/querycounters.md)|顯示目前電腦的有效 CPU 計數器清單。|
-|[WinCounter](../profiling/wincounter.md) **：** *路徑*|指定要加入設定檔標記資料的 Windows 效能計數器事件。 只能與 **Start** 搭配使用。|
+|[WinCounter](../profiling/wincounter.md) **：** *path*|指定要加入設定檔標記資料的 Windows 效能計數器事件。 只能與 **Start** 搭配使用。|
 |[AutoMark](../profiling/automark.md) **：** *n*|指定 Windows 效能計數器資料收集事件之間的時間間隔 (毫秒)。 搭配 **WinCounter** 使用。|
 |[事件](../profiling/events-vsperfcmd.md) **：**`option`|控制指定的 Windows 事件追蹤 (ETW) 事件集合。 ETW 資料會收集到不是分析資料 (.*vsp*) 檔案的 .*itl* 檔案中。|
 |[狀態](../profiling/status.md)|顯示分析工具的狀態、目前分析的處理序資訊以及有權控制分析工具的帳戶。|
-|[關機](../profiling/shutdown.md)[**：** `n` ]|關閉分析資料檔案並關閉分析工具。|
+|[Shutdown](../profiling/shutdown.md)[**：** `n` ]|關閉分析資料檔案並關閉分析工具。|
 |[GlobalOn](../profiling/globalon-and-globaloff.md)|在對 **VSPerfCmdGlobalOff** 進行呼叫後恢復資料收集。|
 |[GlobalOff](../profiling/globalon-and-globaloff.md)|停止所有資料收集，但不結束分析工作階段。|
 |[ProcessOn](../profiling/processon-and-processoff.md) **：**`pid`|在對 **VSPerfCmdProcessOff** 的呼叫暫停分析後，恢復指定處理序的資料收集。|
 |[ProcessOff](../profiling/processon-and-processoff.md) **：**`pid`|停止指定處理序的資料收集。|
-|[ThreadOn 和 ThreadOff](../profiling/threadon-and-threadoff.md) **：** *tid*|在對 **VSPerfCmdThreadOff** 的呼叫暫停分析後，恢復指定處理序的分析。 請只在使用檢測方法進行分析時使用 **ThreadOn**。|
-|[ThreadOn 和 ThreadOff](../profiling/threadon-and-threadoff.md) **：** *tid*|暫停指定執行緒的分析。 請只在使用檢測方法進行分析時使用 **ThreadOff**。|
+|[>threadon 和 ThreadOff](../profiling/threadon-and-threadoff.md) **：** *tid*|在對 **VSPerfCmdThreadOff** 的呼叫暫停分析後，恢復指定處理序的分析。 請只在使用檢測方法進行分析時使用 **ThreadOn**。|
+|[>threadon 和 ThreadOff](../profiling/threadon-and-threadoff.md) **：** *tid*|暫停指定執行緒的分析。 請只在使用檢測方法進行分析時使用 **ThreadOff**。|
 |[Mark](../profiling/mark.md) **：** _MarkNum_[**，**_MarkText_**]**|在分析資料檔案中插入標記，以及選擇性文字。|
 
 ## <a name="sample-method-options"></a>取樣方法選項
@@ -82,7 +82,7 @@ VSPerfCmd [/U] [/options]
 
 |選項|說明|
 |------------|-----------------|
-|**Admin： Security**、 \<**ALLOW&#124;DENY**> 、 *Right*[ *right*]、\<*User*&#124;*Group*>|允許或拒絕指定的使用者或群組存取分析服務。<br /><br /> `Right` 可以是：<br /><br /> CrossSession - 將服務存取權提供給使用者，以進行交叉工作階段分析。<br /><br /> SampleProfiling - 將驅動程式存取權提供給使用者，以進行取樣分析。 也可用來在追蹤分析期間存取核心轉換資訊。<br /><br /> FullAccess - 將 CrossSession 和 SampleProfiling 存取權都提供給使用者。|
+|**Admin： Security**， \<**ALLOW&#124;DENY**> ， *right*[ *right*]， \<*User*&#124;*Group*>|允許或拒絕指定的使用者或群組存取分析服務。<br /><br /> `Right` 可以是：<br /><br /> CrossSession - 將服務存取權提供給使用者，以進行交叉工作階段分析。<br /><br /> SampleProfiling - 將驅動程式存取權提供給使用者，以進行取樣分析。 也可用來在追蹤分析期間存取核心轉換資訊。<br /><br /> FullAccess - 將 CrossSession 和 SampleProfiling 存取權都提供給使用者。|
 |**Admin:Security, List**|列出分析服務的目前狀態，並列出使用者權限。|
 |**管理員：**\<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|啟動、停止、安裝或解除安裝分析服務元件 (service) 或核心模式裝置驅動程式 (driver)。|
 |**管理員：** \<*Service*&#124;*Driver*>**自動啟動**\<**ON**&#124;**OFF**>|啟用或停用在重新開機後自動啟動分析服務 (service) 或核心模式裝置驅動程式 (driver)。|

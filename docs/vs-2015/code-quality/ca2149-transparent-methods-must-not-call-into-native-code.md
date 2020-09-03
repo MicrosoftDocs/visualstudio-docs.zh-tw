@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 5c1e254ae7912efbb6773155ed834e54a1db1832
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546324"
 ---
 # <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149:透明方法不可以呼叫機器碼
@@ -29,10 +29,10 @@ ms.locfileid: "85546324"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 方法會透過方法存根（例如 P/Invoke）呼叫原生函式。
+ 方法會透過方法 stub （例如 P/Invoke）呼叫原生函式。
 
 ## <a name="rule-description"></a>規則描述
- 任何直接呼叫機器碼的透明方法都會引發此規則，例如透過 P/Invoke。 違反此規則會導致 <xref:System.MethodAccessException> 層級2透明度模型中的成為， <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> 層級1透明度模型中的完整需求。
+ 任何直接呼叫機器碼的透明方法都會引發此規則，例如透過 P/Invoke。 違規此規則會導致 <xref:System.MethodAccessException> 層級2透明度模型中的，以及 <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> 層級1透明度模型中的完整需求。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請將呼叫機器碼的方法標記為 <xref:System.Security.SecurityCriticalAttribute> 或 <xref:System.Security.SecuritySafeCriticalAttribute> 屬性。

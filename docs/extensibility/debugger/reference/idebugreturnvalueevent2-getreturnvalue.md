@@ -1,5 +1,5 @@
 ---
-title: IDebug返回值事件2::獲取返回值 |微軟文件
+title: IDebugReturnValueEvent2：： GetReturnValue |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: da81b293055325c949387cb8584e18c6034f14f2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720272"
 ---
 # <a name="idebugreturnvalueevent2getreturnvalue"></a>IDebugReturnValueEvent2::GetReturnValue
-獲取從函數執行或執行函數時返回的值。
+取得在函式執行時傳回的值。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ int GetReturnValue ( 
 
 ## <a name="parameters"></a>參數
 `ppReturnValue`\
-[出]返回表示要檢索的值的[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件。
+擴展傳回代表要抓取之值的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugReturnValueEvent2](../../../extensibility/debugger/reference/idebugreturnvalueevent2.md)

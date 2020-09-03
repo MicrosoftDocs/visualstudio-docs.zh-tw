@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bffb1f7fe6449f078c21c14b0a070cbd23db539
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652129"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Domain-Specific Language Tools 使用者介面概觀
@@ -43,7 +43,7 @@ ms.locfileid: "72652129"
 
  下表說明領域模型圖表的一些項目。
 
-|**術語**|**定義**|
+|**字詞**|**定義**|
 |--------------|--------------------|
 |領域類別|領域類別是您模型中的項目類型。<br /><br /> 如果領域類別是多個關聯的目標，則可能在圖表中出現多次。<br /><br /> 若要新增領域類別，請將領域類別工具從 [工具箱]**** 拖曳到圖表的 [類別和關係]**** 一側。|
 |領域關聯|領域關聯是您模型中項目之間的連結類型。<br /><br /> 「內嵌關係」** 表示來源項目擁有或包含目標項目，並會顯示為實線。 模型中每個項目都應該是內嵌關係的目標，模型才能形成樹狀。 「參考關聯性」** 表示模型項目之間的一般連結，並顯示為虛線。 所有項目都可以有任意數目的參考連結。<br /><br /> 若要建立關聯，請在 [工具箱]**** 中按一下工具，然後依序按一下來源領域類別和目標類別。|
@@ -51,4 +51,4 @@ ms.locfileid: "72652129"
 |圖形對應|圖形對應會顯示為領域模型圖表中的線條，將圖形連結到其所顯示的領域類別，或將連接線連結到其所顯示的領域關聯。|
 
 ## <a name="see-also"></a>另請參閱
- [域特定語言工具](../modeling/overview-of-domain-specific-language-tools.md)[概述域特定語言工具詞彙表](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)[自訂和擴展特定于域的語言](../modeling/customizing-and-extending-a-domain-specific-language.md)
+ [特定領域語言工具](../modeling/overview-of-domain-specific-language-tools.md)[特定領域語言工具詞彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)的摘要

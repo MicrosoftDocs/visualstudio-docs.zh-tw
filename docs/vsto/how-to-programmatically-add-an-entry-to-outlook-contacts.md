@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c4d692833f7dba49a539bbaafec2156f7426170b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520102"
 ---
 # <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>如何：以程式設計方式將專案新增至 Outlook 連絡人

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75776148"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
@@ -32,7 +32,7 @@ ms.locfileid: "75776148"
 
 - 使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 類別存取資料來源。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 若要完成這個逐步解說，您需要：
 
@@ -159,7 +159,7 @@ ms.locfileid: "75776148"
 </microsoft.visualstudio.testtools>
 ```
 
-最終*的應用程式.config*檔應如下所示：
+最終的 *app.config* 檔案看起來應該像這樣：
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -269,5 +269,5 @@ ms.locfileid: "75776148"
 
 ## <a name="see-also"></a>另請參閱
 
-- [單元測試代碼](../test/unit-test-your-code.md)
+- [對程式碼進行單元測試](../test/unit-test-your-code.md)
 - [如何：建立資料驅動型單元測試](../test/how-to-create-a-data-driven-unit-test.md)

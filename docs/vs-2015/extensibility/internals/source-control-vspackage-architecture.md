@@ -11,43 +11,43 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3cca9e39714f87024b01ab2c925189aacbe22785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183419"
 ---
 # <a name="source-control-vspackage-architecture"></a>原始檔控制 VSPackage 架構
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-原始檔控制封裝是使用 VSPackage 的服務會[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE 所提供。 原始檔控制套件提供原始檔控制服務的功能。 此外，原始檔控制封裝是一個更靈活的替代方式，比原始檔控制整合到原始檔控制外掛程式[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
+原始檔控制封裝是使用 IDE 所提供之服務的 VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。 在傳回時，原始檔控制封裝會以原始檔控制服務的形式提供其功能。 此外，原始檔控制封裝比原始檔控制外掛程式更具彈性，可將原始檔控制整合至其中 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。  
   
- 原始檔控制外掛程式實作原始檔控制外掛程式 API 會遵守嚴格的合約。 比方說，外掛程式無法取代預設[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]使用者介面 (UI)。 此外，原始檔控制外掛程式 API 不會啟用外掛程式，以實作自己的原始檔控制模型。 不過，原始檔控制封裝，克服了這兩個這些限制。 原始檔控制封裝具有完整控制權的原始檔控制體驗[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]使用者。 此外，原始檔控制封裝可使用它自己的原始檔控制模型和邏輯，而且它可以定義所有原始檔控制相關的使用者介面。  
+ 原始檔控制外掛程式，它會執行嚴格合約所遵守的原始檔控制外掛程式 API。 例如，外掛程式無法取代 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (UI) 的預設使用者介面。 此外，原始檔控制外掛程式 API 不會讓外掛程式執行它自己的原始檔控制模型。 不過，原始檔控制封裝會克服這兩項限制。 原始檔控制套件可以完全掌控使用者的原始檔控制體驗 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。 此外，原始檔控制封裝可以使用自己的原始檔控制模型和邏輯，也可以定義所有原始檔控制相關的使用者介面。  
   
 ## <a name="source-control-package-components"></a>原始檔控制封裝元件  
- 架構圖表所示[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]名為原始檔控制虛設常式的元件是整合的原始檔控制封裝的 VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
+ 如架構圖所示，名為「 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 原始檔控制存根」的元件是一種整合原始檔控制套件的 VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。  
   
- 原始檔控制虛設常式會處理下列工作。  
+ 原始檔控制存根會處理下列工作。  
   
-- 提供所需的原始檔控制套件登錄的共同 UI。  
+- 提供原始檔控制套件註冊所需的通用 UI。  
   
-- 載入原始檔控制封裝。  
+- 載入原始檔控制套件。  
   
-- 將原始檔控制封裝設定為 作用中/非作用中。  
+- 將原始檔控制封裝設定為主動/非使用中。  
   
-  原始檔控制虛設常式會尋找原始檔控制封裝的作用中的服務，並將路由從 IDE 所有內送的服務呼叫，該封裝。  
+  原始檔控制存根會尋找原始檔控制封裝的作用中服務，並將所有傳入的服務呼叫從 IDE 路由到該套件。  
   
-  原始檔控制配接器套件是特殊的原始檔控制套件[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]提供。 此封裝是用於支援原始檔控制外掛程式原始檔控制外掛程式 API 為基礎的主要元件。 外掛程式使用原始檔控制外掛程式時，原始檔控制虛設常式其將事件傳送至原始檔控制配接器套件。 接著，原始檔控制配接器套件會使用原始檔控制外掛程式 API 通訊協定與原始檔控制外掛程式，同時也提供 預設值是很常見的所有原始檔控制外掛程式的 UI。  
+  原始檔控制介面卡封裝是提供的特殊原始檔控制套件 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。 這個套件是根據原始檔控制外掛程式 API 來支援原始檔控制外掛程式的核心元件。 當原始檔控制外掛程式是使用中的外掛程式時，原始檔控制存根會將其事件傳送至原始檔控制介面卡封裝。 接著，原始檔控制介面卡封裝會使用原始檔控制外掛程式 API 與原始檔控制外掛程式進行通訊，也提供所有原始檔控制外掛程式通用的預設 UI。  
   
-  原始檔控制套件的使用中的封裝時，相反地，原始檔控制虛設常式，直接進行通訊與封裝使用[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]原始檔控制封裝的介面。 原始檔控制封裝負責裝載自己的原始檔控制 UI。  
+  另一方面，當原始檔控制封裝是使用中的封裝時，原始檔控制的存根會使用 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 原始檔控制封裝介面直接與封裝進行通訊。 原始檔控制套件負責裝載本身的原始檔控制 UI。  
   
   ![Source Control Architecture 圖形](../../extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
   
-  原始檔控制封裝，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]不提供原始程式碼控制或 API 整合。 這與中所述的方法相反[建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)原始檔控制外掛程式必須實作固定的一份函式和回呼的位置。  
+  針對原始檔控制封裝，不 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供原始檔控制程式代碼或 API 來進行整合。 將此與 [建立原始](../../extensibility/internals/creating-a-source-control-plug-in.md) 檔控制外掛程式時所述的方法相比較，原始檔控制外掛程式必須執行一組固定的函式和回呼。  
   
-  任何的 VSPackage，例如原始檔控制封裝是一個 COM 物件，可以建立使用`CoCreateInstance`。 VSPackage 會使本身能夠[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]藉由實作 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>。 VSPackage 建立執行個體後，收到的站台的指標和<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>提供 VSPackage 存取可用的服務和介面，在 IDE 中的介面。  
+  如同任何 VSPackage，原始檔控制封裝是可使用建立的 COM 物件 `CoCreateInstance` 。 VSPackage 可讓您藉由實作為 IDE，讓它成為 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> 。 建立實例之後，VSPackage 會接收網站指標和 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> 介面，提供 IDE 中可用服務和介面的 VSPackage 存取。  
   
-  撰寫 VSPackage 為基礎的原始檔控制套件需要更進階的程式設計專業知識，比起撰寫以原始檔控制外掛程式 API 為基礎的外掛程式。  
+  撰寫以 VSPackage 為基礎的原始檔控制套件需要比撰寫原始檔控制外掛程式 API 型外掛程式更先進的程式設計專長。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   

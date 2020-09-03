@@ -94,10 +94,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f18ef8a0bf8ffc6b7478f307b6c2a37247bef034
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234727"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於針對整合式開發環境錯誤進行疑難排解的資源
@@ -109,7 +109,7 @@ ms.locfileid: "87234727"
 
 ## <a name="knowledge-base-articles"></a>知識庫文章
 
-您可以搜尋線上知識庫 (KB) 中有關產品問題的文章。 並非所有問題都有對應的 KB 文章，但一般會記錄大量客戶遇到的錯誤。 您可以在 [ [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/)] 頁面上，查看 VISUAL STUDIO 的知識庫文章。
+您可以搜尋線上知識庫 (KB) 中有關產品問題的文章。 並非所有問題都有對應的 KB 文章，但一般會記錄大量客戶遇到的錯誤。 您可以在 [ [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/) ] 頁面上查看 VISUAL STUDIO 的知識庫文章。
 
 ## <a name="developer-forums"></a>開發人員論壇
 
@@ -119,10 +119,10 @@ ms.locfileid: "87234727"
 
 ## <a name="product-support"></a>產品支援
 
-如果您在嘗試其他資源之後仍有疑問，則可以前往 [Microsoft 支援服務](https://support.microsoft.com/en-us)網站，連絡 Microsoft 支援服務。 如需區域中可用產品支援的詳細資訊，請參閱[Visual Studio 意見反應選項](../../ide/feedback-options.md)頁面。
+如果您在嘗試其他資源之後仍有疑問，則可以前往 [Microsoft 支援服務](https://support.microsoft.com/en-us)網站，連絡 Microsoft 支援服務。 如需您所在地區中可用產品支援的相關資訊，請參閱 [Visual Studio 意見反應選項](../../ide/feedback-options.md) 頁面。
 
 ## <a name="see-also"></a>另請參閱
 
 * [對網路相關錯誤或 Proxy 錯誤進行疑難排解](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
-* [疑難排解（適用于 Windows 的 Visual Studio）](/troubleshoot/visualstudio/welcome-visual-studio/)
+* [針對 Windows) 的 (Visual Studio 進行疑難排解 ](/troubleshoot/visualstudio/welcome-visual-studio/)
 * [疑難排解 (Visual Studio for Mac)](/visualstudio/mac/troubleshooting)

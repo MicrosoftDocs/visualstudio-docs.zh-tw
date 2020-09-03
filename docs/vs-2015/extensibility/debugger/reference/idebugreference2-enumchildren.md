@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::EnumChildren |Microsoft Docs
+title: IDebugReference2：： EnumChildren |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4df5ad26db3ad519f162c62150d822ae2bc4b687
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182477"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得一份所選的子系的參考。 保留供未來使用。  
+取得參考的選定子系列表。 保留供未來使用。  
   
 ## <a name="syntax"></a>語法  
   
@@ -50,22 +50,22 @@ int EnumChildren ( 
   
 #### <a name="parameters"></a>參數  
  `dwFields`  
- [in]從旗標的組合[DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)列舉，指定哪些欄位中列舉[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構要進行填寫。  
+ 在 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) 列舉中的旗標組合，可指定要填入列舉 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 結構中的哪些欄位。  
   
  `dwRadix`  
- [in]要用於格式化數字的任何資訊基數。  
+ 在用來格式化任何數值資訊的基數。  
   
  `dwAttribFilter`  
- [in]從旗標的組合[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)列舉，可做為篩選條件結合`pszNameFilter`參數來選取要列舉的結構。  
+ 在 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) 列舉中的旗標組合，用來做為結合參數的篩選準則， `pszNameFilter` 以選取要列舉的結構。  
   
  `pszNameFilter`  
- [in]字串，指定的篩選，例如 「 MyX"，搭配`dwAttribFilter`參數來選取要列舉的結構。  
+ 在指定篩選器的字串，例如 "MyX"，與參數搭配使用 `dwAttribFilter` 以選取要列舉的結構。  
   
  `dwTimeout`  
- [in]最大時間 （毫秒），這個方法返回之前等候。 使用`INFINITE`無限期等候。  
+ 在從這個方法傳回之前等候的最長時間（以毫秒為單位）。 使用 `INFINITE` 可無限期等候。  
   
  `ppEnum`  
- [out]傳回[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)物件，其中包含一份要求的子屬性。  
+ 擴展傳回 [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) 物件，其中包含所要求之子屬性的清單。  
   
 ## <a name="return-value"></a>傳回值  
  一律傳回 `E_NOTIMPL`。  

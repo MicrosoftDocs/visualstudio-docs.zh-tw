@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2301ce14fcd3d2d8a9c5d003a05186513d950cd4
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330114"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何建立和套用資源
@@ -54,7 +54,7 @@ XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體
 
 2. 執行下列其中一個動作：
 
-   - 將資源套用至屬性。 在 [**屬性**] 視窗中，選擇屬性值旁邊的屬性標記，選擇 [**本機資源**] 或 [**系統資源**]，然後從出現的清單中選擇可用的資源。
+   - 將資源套用至屬性。 在 [ **屬性** ] 視窗中，選擇屬性值旁邊的屬性標記，選擇 [ **本機資源** ] 或 [ **系統資源**]，然後從顯示的清單中選擇可用的資源。
 
       如果您看不到預期應出現的資源，可能是因為資源類型不符合屬性類型。
 
