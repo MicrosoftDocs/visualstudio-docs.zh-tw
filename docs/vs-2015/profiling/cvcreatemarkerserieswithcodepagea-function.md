@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 635a872372ab775eceb00854a616884f3fc19fef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155523"
 ---
 # <a name="cvcreatemarkerserieswithcodepagea-function"></a>CvCreateMarkerSeriesWithCodePageA 函式
@@ -38,7 +38,7 @@ HRESULT CvCreateMarkerSeriesWithCodePageA(
   
 #### <a name="parameters"></a>參數  
  `pProvider`  
- CvInitProvider 先前初始化的提供者物件。 不可以是 NULL。  
+ CvInitProvider 先前初始化的提供者物件。 不能是 NULL。  
   
  `pSeriesName`  
  標記系列名稱。 不可以是 NULL，但允許空字串。  
@@ -47,7 +47,7 @@ HRESULT CvCreateMarkerSeriesWithCodePageA(
  有效的字碼頁。  
   
  `ppMarkerSeries`  
- 將儲存標記系列內容的輸出變數位址。 不可以是 NULL。  
+ 將儲存標記系列內容的輸出變數位址。 不能是 NULL。  
   
 ## <a name="return-value"></a>傳回值  
  成功建立標記系列時傳回 S_OK，發生任何錯誤時則傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。  
@@ -56,4 +56,4 @@ HRESULT CvCreateMarkerSeriesWithCodePageA(
  **標頭︰** cvmarkers.h  
   
 ## <a name="see-also"></a>另請參閱  
- [C++ 程式庫參考](../profiling/cpp-library-reference.md)
+ [C + + 程式庫參考](../profiling/cpp-library-reference.md)

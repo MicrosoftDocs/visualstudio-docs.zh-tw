@@ -14,20 +14,20 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 187ca5ea0d0232e0ca8b99165e77ee265b81e801
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285084"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>不使用方案或專案在 Visual Studio 中開發 JavaScript 和 TypeScript 程式碼
 
 自 Visual Studio 2017 開始可以[不使用專案或解決方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)，這讓您可以開啟程式碼的資料夾，並立即開始使用豐富的編輯器支援，例如 IntelliSense、搜尋、重構及偵錯等。 除了這些功能之外，適用於 Visual Studio 的 Node.js 工具還新增了建置 TypeScript 檔案、管理 npm 套件及執行 npm 指令碼的支援。
 
-若要開始使用，**請**  >  **Open**  >  從工具列中選取 [檔案] [開啟**資料夾**]。 [方案總管] 顯示資料夾中的所有檔案，您可以開啟任何檔案以開始編輯。 在背景中，Visual Studio 會編製檔案的索引，以啟用 npm、建置功能，以及對功能進行偵錯。
+若要開始使用，**請**  >  **Open**  >  從工具列選取 [開啟**資料夾**]。 [方案總管] 顯示資料夾中的所有檔案，您可以開啟任何檔案以開始編輯。 在背景中，Visual Studio 會編製檔案的索引，以啟用 npm、建置功能，以及對功能進行偵錯。
 
 > [!IMPORTANT]
-> 本文中描述的許多功能，包括 npm 整合，都需要 Visual Studio 2017 15.8 版或更新版本。 必須安裝 Visual Studio **Node.js 開發**工作負載。
+> 本文中描述的許多功能，包括 npm 整合，都需要 Visual Studio 2017 15.8 版或更新版本。 必須安裝 Visual Studio **Node.js 開發** 工作負載。
 
 ## <a name="npm-integration"></a>npm 整合
 
@@ -79,7 +79,7 @@ ms.locfileid: "85285084"
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))
 
-開啟 [測試瀏覽器] （選擇 [**測試**] [  >  **Windows**  >  **test Explorer**]）之後，Visual Studio 會探索並顯示測試。
+開啟 test explorer 之後 (選擇 [**測試**  >  **Windows**  >  **test explorer**) ]，Visual Studio 探索並顯示測試。
 
 > [!NOTE]
 > 測試執行器只會列舉測試根目錄中的 JavaScript 檔案，如果您的應用程式以 TypeScript 撰寫，您需要先建置它們。

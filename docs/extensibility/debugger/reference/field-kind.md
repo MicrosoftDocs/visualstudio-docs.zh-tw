@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND |微軟文件
+title: FIELD_KIND |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cafe4a34745f3b34070f7d8fed1a246c806375a4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736869"
 ---
 # <a name="field_kind"></a>FIELD_KIND
-指定[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件中包含的欄位類型。
+指定 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 物件中所含的欄位種類。
 
 ## <a name="syntax"></a>語法
 
@@ -126,115 +126,115 @@ public enum enum_FIELD_KIND {
 
 ## <a name="fields"></a>欄位
 `FIELD_KIND_TYPE`\
-指示該欄位僅為類型。
+表示欄位只是型別。
 
 `FIELD_KIND_SYMBOL`\
-指示該欄位是符號,具有類型、名稱和其他資訊。
+表示欄位是符號，其類型、名稱和其他資訊。
 
 `FIELD_TYPE_PRIMITIVE`\
-指示該欄位是基元數據類型。
+表示欄位是基本資料類型。
 
 `FIELD_TYPE_STRUCT`\
-指示該欄位是一個結構。
+表示欄位為結構。
 
 `FIELD_TYPE_CLASS`\
-指示該欄位是類。
+表示欄位為類別。
 
 `FIELD_TYPE_INTERFACE`\
-指示該欄位是介面。
+表示欄位為介面。
 
 `FIELD_TYPE_UNION`\
-指示該欄位是聯合。
+表示欄位為聯集。
 
 `FIELD_TYPE_ARRAY`\
-指示該欄位是陣組。
+表示欄位為數組。
 
 `FIELD_TYPE_METHOD`\
-指示該欄位是一個方法。
+表示欄位是方法。
 
 `FIELD_TYPE_BLOCK`\
-指示該欄位是塊。
+表示此欄位為區塊。
 
 `FIELD_TYPE_POINTER`\
-指示該字段是指針。
+表示欄位是指標。
 
 `FIELD_TYPE_ENUM`\
-指示該欄位是枚舉數據類型。
+表示欄位是列舉資料類型。
 
 `FIELD_TYPE_LABEL`\
-指示該欄位是一個標籤。
+表示欄位是標籤。
 
 `FIELD_TYPE_TYPEDEF`\
-指示該欄位是 typedef。
+表示此欄位為 typedef。
 
 `FIELD_TYPE_BITFIELD`\
-指示該欄位是位欄位。
+表示欄位是位位。
 
 `FIELD_TYPE_NAMESPACE`\
-指示該欄位是命名空間。
+表示此欄位為命名空間。
 
 `FIELD_TYPE_MODULE`\
-指示該欄位是模組。
+表示欄位為模組。
 
 `FIELD_TYPE_DYNAMIC`\
-指示該欄位是動態的。
+表示欄位為動態。
 
 `FIELD_TYPE_PROP`\
-指示該欄位是屬性。
+表示欄位是屬性。
 
 `FIELD_TYPE_INNERCLASS`\
-指示該欄位是內部類。
+表示欄位是內部類別。
 
 `FIELD_TYPE_REFERENCE`\
-指示該欄位是引用。
+表示欄位為參考。
 
 `FIELD_TYPE_EXTENDED`\
 保留供未來使用。
 
 `FIELD_SYM_MEMBER`\
-指示該欄位是成員。
+表示欄位是成員。
 
 `FIELD_SYM_LOCAL`\
-指示該欄位是本地的。
+表示欄位為本機。
 
 `FIELD_SYM_PARAMETER`\
-指示該欄位是參數。
+表示欄位是參數。
 
 `FIELD_SYM_THIS`\
-指示該欄位是「此」指標。
+表示此欄位為 "this" 指標。
 
 `FIELD_SYM_GLOBAL`\
-指示該欄位是全域的。
+表示此欄位為 global。
 
 `FIELD_SYM_PROP_GETTER`\
-指示該欄位檢索屬性。
+表示欄位會抓取屬性。
 
 `FIELD_SYM_PROP_SETTER`\
-指示該欄位設置屬性。
+表示欄位會設定屬性。
 
 `FIELD_SYM_EXTENDED`\
 保留供未來使用。
 
 `FIELD_KIND_MASK`\
-指示欄位類型的掩碼。
+表示欄位種類的遮罩。
 
 `FIELD_TYPE_MASK`\
-指示欄位類型的掩碼。
+表示欄位類型的遮罩。
 
 `FIELD_SYM_MASK`\
-指示符號資訊的蒙版。
+表示符號資訊的遮罩。
 
 ## <a name="remarks"></a>備註
-從調用[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)方法返回。
+從對 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 方法的呼叫傳回。
 
-根據欄位的種類,可以在[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面上調用[查詢介面](/cpp/atl/queryinterface),以進行更具體的介面形式。 例如,如果[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)`FIELD_TYPE_METHOD`返回,則可以`QueryInterface`調`DebugField`用 我 以獲取[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)介面。
+根據欄位類型，可以在[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面上呼叫[QueryInterface](/cpp/atl/queryinterface) ，以取得更明確的介面形式。 例如，如果 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 傳回 `FIELD_TYPE_METHOD` ，您就可以呼叫 `QueryInterface` I `DebugField` 來取得 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) 介面。
 
 ## <a name="requirements"></a>需求
-標題: sh.h
+標頭： sh. h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

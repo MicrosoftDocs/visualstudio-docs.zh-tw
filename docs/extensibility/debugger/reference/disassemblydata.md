@@ -1,5 +1,5 @@
 ---
-title: 拆解資料 |微軟文件
+title: DisassemblyData |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9dcf3316ba57bbb25ee171cba7e4edc4923fa270
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737279"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
-描述要顯示的整合式開發環境 (IDE) 的一個拆解指令。
+描述要顯示之整合式開發環境 (IDE) 的一個反組解碼指令。
 
 ## <a name="syntax"></a>語法
 
@@ -65,56 +65,56 @@ public struct DisassemblyData { 
 
 ## <a name="members"></a>成員
 `dwFields`\
-DISASSEMBLY_STREAM_FIELDS[常](../../../extensibility/debugger/reference/disassembly-stream-fields.md)量,用於指定填寫哪些欄位。
+[DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)常數，指定要填寫的欄位。
 
 `bstrAddress`\
-位址作為某個起點的偏移量(通常是關聯函數的開頭)。
+從某個起點開始的位址，通常是關聯函數) 的開頭 (。
 
 `bstrCodeBytes`\
-此指令的代碼位元組。
+此指令的程式碼位元組。
 
 `bstrOpcode`\
-此指令的操作碼。
+此指令的 opcode。
 
 `bstrOperands`\
-此指令的操作數。
+此指令的運算元。
 
 `bstrSymbol`\
-與地址關聯的符號名稱(如果有)(公共符號、標籤等)。
+與位址相關聯的符號名稱（如果有的話） (公用符號、標籤等等) 。
 
 `uCodeLocationId`\
-此拆解行的代碼位置識別碼。 如果一行的代碼上下文位址大於另一行的代碼上下文位址,則第一行的拆解代碼位置標識符也將大於第二行的代碼位置標識符。
+此拆解行的程式碼位置識別碼。 如果一行的程式碼內容位址大於另一個行的程式碼內容位址，則第一個行的反組譯程式碼位置識別碼也會大於第二行的程式碼位置識別碼。
 
 `posBeg`\
-對應於開始拆解數據的文件中的位置的[TEXT_POSITION。](../../../extensibility/debugger/reference/text-position.md)
+對應至檔中反組解碼資料開始位置的 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 。
 
 `posEnd`\
-對應於分解資料結束文檔中位置的[TEXT_POSITION。](../../../extensibility/debugger/reference/text-position.md)
+對應于檔中反組解碼資料結束位置的 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 。
 
 `bstrDocumentUrl`\
-對於可以表示為檔名的文本文檔,使用`bstrDocumentUrl``file://file name`格式填充該欄位,其中可以找到源。
+若為可以檔案名表示的文字檔， `bstrDocumentUrl` 欄位會填入可找到來源的檔案名，並使用格式 `file://file name` 。
 
-對於不能表示為檔名的文本文檔`bstrDocumentUrl`, 是文檔的唯一標識符,調試引擎必須實現[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)方法。
+對於無法以檔案名表示的文字檔，是檔的 `bstrDocumentUrl` 唯一識別碼，而且 debug engine 必須執行 [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) 方法。
 
-此欄位還可以包含有關校驗和的其他資訊。 有關詳細資訊,請參閱備註。
+此欄位也可包含總和檢查碼的其他相關資訊。 如需詳細資訊，請參閱備註。
 
 `dwByteOffset`\
-指令的位元組數是從代碼行的開頭開始的。
+指令從程式程式碼的開頭算起的位元組數目。
 
 `dwFlags`\
-指定哪些標誌處於活動狀態[的DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)常量。
+[DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)常數，指定使用中的旗標。
 
 ## <a name="remarks"></a>備註
-每個`DisassemblyData`結構描述一個拆解指令。 這些結構的陣列從[Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)方法返回。
+每個結構都描述一個反組解碼 `DisassemblyData` 指令。 從 [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) 方法傳回這些結構的陣列。
 
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構僅用於基於文本的文檔。 此指令的原始程式碼範圍僅針對從語句或行生成的第一個指令(例如,`dwByteOffset == 0`當時 )填寫。
+[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構僅用於以文字為基礎的檔。 此指令的原始程式碼範圍只會填入語句或程式列所產生的第一個指令，例如，when `dwByteOffset == 0` 。
 
-對於非文字文件,可以從代碼獲取文檔上下文`bstrDocumentUrl`, 並且該欄位應為 null 值。 如果`bstrDocumentUrl`欄位與前`bstrDocumentUrl``DisassemblyData`一陣列元素中的欄位相同,`bstrDocumentUrl`則將設置為 null 值。
+若為非文字檔，則可以從程式碼中取得檔內容，而且 `bstrDocumentUrl` 欄位應為 null 值。 如果 `bstrDocumentUrl` 欄位與 `bstrDocumentUrl` 上一個陣列元素中的欄位相同 `DisassemblyData` ，則將設定 `bstrDocumentUrl` 為 null 值。
 
-如果`dwFlags`欄位設置`DF_DOCUMENT_CHECKSUM`了標誌,則其他校驗和資訊將遵循欄位指向`bstrDocumentUrl`的字串。 具體而言,在空字串終止符之後,後面跟著一個 GUID 標識校驗和演演演算法,該演演演算法依次是 4 位元組值,指示校驗和中的位元數,然後依次為校驗和位元組。 請參閱本主題中有關如何編碼和解碼此欄位[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]的示例。
+如果 `dwFlags` 欄位已 `DF_DOCUMENT_CHECKSUM` 設定旗標，則會在欄位所指向的字串後面加上其他總和檢查碼資訊 `bstrDocumentUrl` 。 具體而言，在 null 字串結束字元之後，會有可識別總和檢查碼演算法的 GUID，後面接著4位元組值，指出總和檢查碼中的位元組數目，然後再接著總和檢查碼位元組。 請參閱本主題中的範例，以瞭解如何在中編碼和解碼此欄位 [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] 。
 
 ## <a name="example"></a>範例
-如果`bstrDocumentUrl`設定了標誌`DF_DOCUMENT_CHECKSUM`, 則該欄位可以包含字串以外的其他資訊。 創建和讀取此編碼字串的過程在 中[!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]非常簡單。 但是,在[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]中,這是另一回事。 對於好奇的人,下面的示例顯示了從[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]創建編碼字串的一種方法和在 中[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]解碼編碼字串的一種方法。
+`bstrDocumentUrl`如果設定了旗標，欄位可以包含字串以外的其他資訊 `DF_DOCUMENT_CHECKSUM` 。 在中，建立和讀取此編碼字串的程式很簡單 [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] 。 不過，在中 [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] ，這也是另一種方式。 針對好奇的人，下列範例示範從建立編碼字串的方法， [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] 以及在中解碼編碼字串的一種方式 [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] 。
 
 ```csharp
 using System;
@@ -228,7 +228,7 @@ namespace MyNamespace
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
-- [讀](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+- [讀取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
 - [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

@@ -1,5 +1,5 @@
 ---
-title: 將參考字串附加至 UML 模型專案 |Microsoft Docs
+title: 將參考字串附加至 UML 模型元素 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7726379258ef474b57f1ca4a924413cd93cf80bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672797"
 ---
 # <a name="attach-reference-strings-to-uml-model-elements"></a>將參考字串附加至 UML 模型項目
@@ -34,7 +34,7 @@ ms.locfileid: "72672797"
 
  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`
 
-|方法呼叫|描述|
+|方法呼叫|說明|
 |-----------------|-----------------|
 |`element.AddReference (nameString, valueString, duplicatesAllowed)`|以指定名稱和值字串建立 `IReference`，並將其連結至 `element`。 傳回 `IReference`。<br /><br /> 如果 `duplicatesAllowed` 為 false，而且已經有同名的 `IReference` 附加至 `element`，則擲回例外狀況。|
 |`element.GetReferences(name)`|傳回連結至 `IReference`，且有指定 `element` 的所有 `name` 物件。|
@@ -42,5 +42,5 @@ ms.locfileid: "72672797"
 |`reference.Delete()`|刪除這個 `IReference`。|
 |`ReferenceConstants.WorkItem`|用於命名工作項目參考的值。|
 
-## <a name="see-also"></a>請參閱
- [定義工作專案連結處理常式](../modeling/define-a-work-item-link-handler.md)[定義和安裝模型擴充](../modeling/define-and-install-a-modeling-extension.md)功能[使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)
+## <a name="see-also"></a>另請參閱
+ [定義工作專案連結處理常式](../modeling/define-a-work-item-link-handler.md)[使用 UML API](../modeling/programming-with-the-uml-api.md) [定義和安裝模型擴充](../modeling/define-and-install-a-modeling-extension.md)功能程式設計

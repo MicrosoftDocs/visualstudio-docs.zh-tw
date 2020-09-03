@@ -1,5 +1,5 @@
 ---
-title: CA1056： URI 屬性不應該是字串 |Microsoft Docs
+title: CA1056： URI 屬性不應該為字串 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 87ed8f7a291c95e500196f511c6fec0f38cef68e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539408"
 ---
 # <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056:URI 屬性不應該為字串
@@ -29,14 +29,14 @@ ms.locfileid: "85539408"
 |-|-|
 |TypeName|UriPropertiesShouldNotBeStrings|
 |CheckId|CA1056|
-|類別|Microsoft. Design|
+|類別|Microsoft. 設計|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 類型會宣告字串屬性，其名稱包含 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"。
+ 類型會宣告名稱包含 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url" 的字串屬性。
 
 ## <a name="rule-description"></a>規則描述
- 此規則會根據 Pascal 大小寫慣例，將屬性名稱分割成權杖，並檢查每個權杖是否等於 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"。 如果相符，此規則會假設屬性代表統一資源識別元（URI）。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 <xref:System.Uri?displayProperty=fullName>類別以安全且安全的方式提供這些服務。
+ 此規則會根據 Pascal 大小寫慣例，將屬性名稱分割成權杖，並檢查每個標記是否等於 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"。 如果有相符的規則，此規則會假設屬性代表統一資源識別項 (URI) 。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 <xref:System.Uri?displayProperty=fullName>類別以安全且安全的方式提供這些服務。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請將屬性變更為 <xref:System.Uri> 類型。
@@ -45,7 +45,7 @@ ms.locfileid: "85539408"
  如果屬性不代表 URI，則可以安全地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示 `ErrorProne` 違反此規則的類型，以及 `SaferWay` 符合規則的類型。
+ 下列範例顯示違反此規則的型別， `ErrorProne` 以及滿足規則的型別 `SaferWay` 。
 
  [!code-cpp[FxCop.Design.UriNotString#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.UriNotString/cpp/FxCop.Design.UriNotString.cpp#1)]
  [!code-csharp[FxCop.Design.UriNotString#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.UriNotString/cs/FxCop.Design.UriNotString.cs#1)]

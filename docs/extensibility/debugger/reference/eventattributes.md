@@ -1,5 +1,5 @@
 ---
-title: 事件屬性 |微軟文件
+title: EVENTATTRIBUTES |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c479058a5e6abb61fb419425706d2a8b26858d04
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737055"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
@@ -54,37 +54,37 @@ public enum enum_EVENTATTRIBUTES {
 
 ## <a name="fields"></a>欄位
 `EVENT_ASYNCHRONOUS`\
-指示事件是異步的,不需要對該事件進行回復。
+表示事件是非同步，而且不需要回復事件。
 
 `EVENT_SYNCHRONOUS`\
-指示事件是同步的;通過[「繼續從同步事件](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)」進行回覆。
+表示事件是同步的;以 [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)的方式回復。
 
 `EVENT_STOPPING`\
-指示這是停止事件。 必須與或`EVENT_ASYNCHRONOUS``EVENT_SYNCHRONOUS`合併。
+表示這是停止事件。 必須與 `EVENT_ASYNCHRONOUS` 或結合 `EVENT_SYNCHRONOUS` 。
 
 `EVENT_ASYNC_STOP`\
-指示非同步停止事件。 目前沒有此類事件。 此標誌僅是占位符。
+表示非同步停止事件。 目前沒有這類事件。 此旗標只是預留位置。
 
 `EVENT_SYNC_STOP`\
-指示同步停止事件(和`EVENT_SYNCHRONOUS``EVENT_STOPPING`的組合)。 當調試引擎 (DE) 傳送停止事件時,將使用此值。 答覆是透過呼叫[執行](../../../extensibility/debugger/reference/idebugprogram2-execute.md)、[步驟](../../../extensibility/debugger/reference/idebugprogram2-step.md)或[繼續](../../../extensibility/debugger/reference/idebugprogram2-continue.md)。
+表示同步停止事件 (和) 的組合 `EVENT_SYNCHRONOUS` `EVENT_STOPPING` 。 此值是由偵錯工具引擎在傳送停止事件時 (DE) 使用。 回復是藉由呼叫 [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)、 [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)或 [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md)來進行。
 
 `EVENT_IMMEDIATE`\
-指示立即同步發送到 IDE 的事件。 此標誌與其他標誌(如`EVENT_ASYNCHRONOUS``EVENT_SYNCHRONOUS`,)`EVENT_SYNC_STOP`結合 使用,或指示事件的類型以及已知答覆機制(如果有)的事實。
+表示立即和同步傳送至 IDE 的事件。 此旗標會與其他旗標（例如 `EVENT_ASYNCHRONOUS` 、 `EVENT_SYNCHRONOUS` 或）結合， `EVENT_SYNC_STOP` 以表示事件的類型，以及當已知任何) 時，回復機制 (的事實。
 
 `EVENT_EXPRESSION_EVALUATION`\
-該事件是表達式計算的結果。
+事件是運算式評估的結果。
 
 ## <a name="remarks"></a>備註
-這些值在[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)方法的`dwAttrib`參數中傳遞。
+這些值會以 `dwAttrib` [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 方法的參數傳遞。
 
-這些值可以稍微結合`OR`。
+這些值可能會與位結合 `OR` 。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

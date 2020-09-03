@@ -1,5 +1,5 @@
 ---
-title: 視覺化工作室命令表 (.Vsct) 檔案 :微軟文件
+title: Visual Studio 命令表格 (。.Vsct) Files |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d18367436d1ee1b889558a35723e4e3cec865945
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704030"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio 命令表檔案 (.Vsct)
-指令表設定檔是描述 VSPackage 包含的命令集的文字檔。 命令[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]表 (VSCT) 編譯器將基於 XML 的設定檔 (.vsct 檔案) 編譯為二進位指令表輸出 (.cto) 檔。 產生的 .cto 檔案與使用指令表 (CTC) 編譯器編譯 .ctc 設定檔時創建的檔案相同。 但是,基於 XML 的 .vsct 檔具有一些優點,例如 XML 編輯器和 XML IntelliSense。
+命令表格設定檔是一個文字檔，描述 VSPackage 所包含的一組命令。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令表格 (.vsct) 編譯器會將 XML 架構設定檔 ( .vsct 檔案，) 到二進位命令表格輸出 (. cto) 檔中。 Cto 檔案與使用命令表格建立的檔案相同， (.CTC) 編譯器來編譯 .ctc 設定檔。 不過，以 XML 為基礎的 .vsct 檔案有一些優點，例如 XML 編輯器和 XML IntelliSense。
 
- 要瞭解有關 .vsct 檔的語法和語義的更多內容,請參閱[設計 XML 命令表 (。Vsct) 檔案](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)
+ 若要深入瞭解 .vsct 檔案的語法和語義，請參閱[設計 XML 命令表格 (。.Vsct) ](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)檔案
 
 ## <a name="in-this-section"></a>本節內容
  [設計 XML 命令表檔案 (.Vsct)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)
@@ -30,22 +30,22 @@ ms.locfileid: "80704030"
 
  [如何：建立 .Vsct 檔案](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)
 
- 比較建立 .vsct 檔案的方法。 描述手動創建新的 .vsct 文件的過程。
+ 比較用來建立 .vsct 檔案的方法。 描述手動建立新 .vsct 檔案的程式。
 
 ## <a name="related-sections"></a>相關章節
  [VSCT XML 結構描述參考](../../extensibility/vsct-xml-schema-reference.md)
 
- 提供有關命令表 XML 配置檔的每個部分的詳細資訊。
+ 提供命令表格 XML 設定檔的每個區段的詳細資料。
 
- [指令表設定 (.Ctc) 檔案](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c)概述了已棄用的 .ctc 檔案格式。
+ [命令資料表設定 (。.Ctc) ](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c) 檔案提供 .ctc 檔案格式的總覽。
 
  [VSPackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 
- 描述命令表格式規範。
+ 描述命令表格格式規格。
 
  [VSPackage 中的資源](../../extensibility/internals/resources-in-vspackages.md)
 
- 介紹如何在託管 VS 包中使用託管和非託管資源。
+ 描述如何在 managed Vspackage 中使用受控和非受控資源。
 
  [命令、功能表及工具列](../../extensibility/internals/commands-menus-and-toolbars.md)
 

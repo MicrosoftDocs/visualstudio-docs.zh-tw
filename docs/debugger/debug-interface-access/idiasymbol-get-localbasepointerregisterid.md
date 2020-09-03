@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fee917c4d275ec0f76cd3442d1ae56887667ca6c
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462984"
 ---
 # <a name="idiasymbolget_localbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
-抓取暫存器的識別碼，該暫存器會保存堆疊上本機變數的基底指標。 當[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設定為時，請使用 `SymTagFunction` 。
+抓取暫存器的識別碼，該暫存器會在堆疊上保存區域變數的基底指標。 當 [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md) 設定為時，請使用 `SymTagFunction` 。
 
 ## <a name="syntax"></a>語法
 
@@ -33,20 +33,20 @@ HRESULT get_localBasePointerRegisterId ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回暫存器的識別碼，這個暫存器會保存堆疊上本機變數的基底指標。
+擴展傳回暫存器的識別碼，該暫存器會在堆疊上保存區域變數的基底指標。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
-> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
 ## <a name="remarks"></a>備註
 
 ## <a name="requirements"></a>需求
  標頭： Dia2。h
 
- 程式庫： diaguids
+ 程式庫： diaguids .lib
 
  DLL： msdia100.dll
 

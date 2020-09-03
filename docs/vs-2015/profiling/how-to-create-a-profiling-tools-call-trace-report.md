@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fbf92b38f9408455e10048fbd4a5e84fdf822ea2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547988"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>如何：建立程式碼剖析工具呼叫追蹤報表
@@ -42,5 +42,5 @@ ms.locfileid: "85547988"
     |Xml|產生 XML 格式化的報表。|  
   
 ## <a name="see-also"></a>另請參閱  
- [如何：收集 Windows 事件追蹤（ETW）資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
+ [如何：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
  [程式碼剖析工具 API](../profiling/profiling-tools-apis.md)

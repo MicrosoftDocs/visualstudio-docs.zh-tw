@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 24bb6160f9895f129c4d7d36c2b0aa8a56ca282a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657905"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
@@ -51,4 +51,4 @@ devenv "MyProject.sln" /upgrade
 ```
 
 ## <a name="see-also"></a>另請參閱
- [如何：疑難排解不成功 Visual Studio 專案升級](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md) [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)
+ [如何：疑難排解不成功的專案升級](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md) [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)Visual Studio

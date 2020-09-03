@@ -13,32 +13,32 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f961249ff584f7767dc2505bb20b1fb0961b7dd3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704294"
 ---
 # <a name="using-msbuild"></a>使用 MSBuild
-MSBuild 提供了定義良好的可擴展 XML 格式,用於創建專案檔,這些檔完全描述要生成的專案項、生成任務和生成配置。
+MSBuild 提供定義完善、可擴充的 XML 格式，可建立專案檔，以完整描述要建立的專案專案、組建工作和組建設定。
 
-## <a name="general-msbuild-considerations"></a>一般 MS 建置注意事項
- MSBuild 專案檔([!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]例如 .csproj[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]和 .vbproj 檔)包含在生成時使用的數據,但也可能包含在設計時使用的數據。 生成時間數據使用 MSBuild 基元儲存,包括[專案元素 (MSBuild)](../../msbuild/item-element-msbuild.md)和[屬性元素 (MSBuild)。](../../msbuild/property-element-msbuild.md) 設計時資料(特定於項目類型的數據和任何相關的專案子類型)存儲在為其保留的自由格式 XML 中。
+## <a name="general-msbuild-considerations"></a>一般 MSBuild 考慮
+ MSBuild 專案檔（例如 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] .csproj 和 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . vbproj 檔案）包含在組建階段使用的資料，但也可以包含在設計階段使用的資料。 組建時間資料是使用 MSBuild 基本專案儲存，包括 [ (msbuild) 的 Item 元素 ](../../msbuild/item-element-msbuild.md) ，以及 [ (Msbuild) 的屬性元素 ](../../msbuild/property-element-msbuild.md)。 設計階段資料是專案類型和任何相關專案子類型的特定資料，會以保留給它的自由格式 XML 來儲存。
 
- MSBuild 對配置物件沒有本機支援,但確實提供了用於指定特定於配置的數據的條件屬性。 例如：
+ MSBuild 沒有設定物件的原生支援，但會提供條件屬性來指定設定特定的資料。 例如：
 
 ```xml
 <OutputDir Condition="'$(Configuration)'=="release'">Bin\MyReleaseConfig</OutputDir>
 ```
 
- 有關條件屬性的詳細資訊,請參閱[條件建構](../../msbuild/msbuild-conditional-constructs.md)。
+ 如需條件式屬性的詳細資訊，請參閱 [條件式結構](../../msbuild/msbuild-conditional-constructs.md)。
 
-### <a name="extending-msbuild-for-your-project-type"></a>延伸項目型態的 MSBuild
- MSBuild 介面與 API[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可能會在的未來版本中更改 。 因此,謹慎使用託管包框架 (MPF) 類,因為它們提供遮罩,使其免受更改。
+### <a name="extending-msbuild-for-your-project-type"></a>為您的專案類型擴充 MSBuild
+ MSBuild 介面和 Api 在未來的版本中可能會變更 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 因此，請謹慎使用 managed package framework (MPF) 類別，因為它們提供了變更的防護。
 
- 專案管理套件框架 (MPFProj) 提供用於創建和管理新專案系統的幫助程式類。 您可以在[專案 MPF - Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10)找到原始碼和編譯說明。
+ 適用于專案的 Managed 封裝架構 (MPFProj) 提供協助程式類別來建立和管理新的專案系統。 您可以在 [適用于專案的 MPF](https://github.com/tunnelvisionlabs/MPFProj10)上找到原始程式碼和編譯指示-Visual Studio 2013。
 
- 特定於項目的 MPF 類別的以下的名稱:
+ 專案特定的 MPF 類別如下所示：
 
 |類別|實作|
 |-----------|--------------------|
@@ -48,12 +48,12 @@ MSBuild 提供了定義良好的可擴展 XML 格式,用於創建專案檔,這�
 |`Microsoft.VisualStudio.Package.ProjectConfig`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>|
 |`Microsoft.VisualStudio.Package.SettingsPage`|<xref:Microsoft.VisualStudio.OLE.Interop.IPropertyPageSite>|
 
- `Microsoft.VisualStudio.Package.ProjectElement`類是MSBuild項的包裝器。
+ `Microsoft.VisualStudio.Package.ProjectElement` 類別是 MSBuild 專案的包裝函式。
 
-#### <a name="single-file-generators-vs-msbuild-tasks"></a>單個檔案產生器與 MS 建構工作
- 單個檔生成器僅在設計時訪問,但 MSBuild 任務可以在設計時間和生成時使用。 因此,為了獲得最佳靈活性,請使用 MSBuild 任務來轉換和生成代碼。 有關詳細資訊,請參閱[自訂工具](../../extensibility/internals/custom-tools.md)。
+#### <a name="single-file-generators-vs-msbuild-tasks"></a>單一檔案產生器與 MSBuild 工作
+ 單一檔案產生器只能在設計階段存取，但是 MSBuild 工作可以在設計階段和組建階段使用。 因此，若要獲得最大的彈性，請使用 MSBuild 工作來轉換和產生程式碼。 如需詳細資訊，請參閱 [自訂工具](../../extensibility/internals/custom-tools.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [MSBuild 參考](../../msbuild/msbuild-reference.md)
-- [MSBuild](../../msbuild/msbuild.md)
+- [Msbuild](../../msbuild/msbuild.md)
 - [自訂工具](../../extensibility/internals/custom-tools.md)

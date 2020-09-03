@@ -22,24 +22,24 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7015583fef2323e3c53b8e786c9e8a529e0fab6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590523"
 ---
 # <a name="create-models-for-your-app"></a>建立應用程式模型
 
 模型圖表可幫助您了解、釐清和溝通程式碼和軟體必須支援之使用者需求的想法。
 
-若要查看哪些版本的 Visual Studio 支援每種類型的圖表，請參閱[架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看 Visual Studio 支援每種圖表類型的版本，請參閱 [架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 若要將系統或現有程式碼的架構視覺化，請建立下列圖表：
 
 |**圖表**|**顯示**|
 |-|-|
 |[相依性圖表︰方針](../modeling/layer-diagrams-guidelines.md)<br /><br /> [相依性圖表︰參考](../modeling/layer-diagrams-reference.md)|系統的高階架構|
-|程式碼對應<br /><br /> [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)|現有程式碼中的相依性和其他關聯性|
+|Code Map<br /><br /> [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)|現有程式碼中的相依性和其他關聯性|
 |程式碼產生的類別圖<br /><br /> [使用類別圖表 (類別設計工具)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|.NET 程式碼中的類型及其關聯性|
 
 ## <a name="related-tasks"></a>相關工作

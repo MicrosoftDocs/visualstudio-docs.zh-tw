@@ -1,5 +1,5 @@
 ---
-title: DEBUG_CUSTOM_VIEWER | Microsoft Docs
+title: DEBUG_CUSTOM_VIEWER |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d10e0811044d7169eaf46f48f53389fa7b3076ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179165"
 ---
-# <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
+# <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-識別自訂檢視器的結構，或輸入視覺化檢視。  
+識別自訂檢視器或型別視覺化的結構。  
   
 ## <a name="syntax"></a>語法  
   
@@ -50,32 +50,32 @@ public struct DEBUG_CUSTOM_VIEWER {
   
 ## <a name="members"></a>成員  
  dwID  
- 識別碼來區別多個檢視器或藉由將其中一個視覺化檢視`GUID`。  
+ 用來區別多個由一個檢視器或視覺化程式所執行的識別碼 `GUID` 。  
   
  bstrMenuName  
- 文字會出現在下拉式選單中。  
+ 將會出現在下拉式功能表中的文字。  
   
  bstrDescription  
- 自訂檢視器或 （必須是 null 的值如果不使用） 的類型視覺化檢視的描述。  
+ 如果未使用) ，則 [自訂檢視器] 或 [類型] 視覺化 (的描述必須為 null 值。  
   
  guidLang  
- 提供的運算式評估工具的語言。  
+ 提供運算式評估工具的語言。  
   
  guidVendor  
- 提供的運算式評估工具的廠商。  
+ 提供運算式評估工具的廠商。  
   
  bstrMetric  
- 計量在其下的自訂檢視器或類型視覺化檢視`CLSID`儲存。  
+ 用來儲存自訂檢視器或類型視覺化的度量 `CLSID` 。  
   
 ## <a name="remarks"></a>備註  
- 此結構的清單由呼叫[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)方法 (和延伸[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)方法)。  
+ 呼叫 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 方法時，會傳回這個結構的清單 (以及 [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) 方法) 的擴充方法。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab0d62efb8abc3cfbae365312a009bc6d2efea43
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286348"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio 中的部署簡介
@@ -40,7 +40,7 @@ ms.locfileid: "85286348"
 
 部署至本機資料夾通常用於測試，或是用來開始使用另一個工具進行最終部署的分段部署。
 
-- **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python** 及 .**NET Core**：使用發行工具以部署至本機資料夾。 確切的可用選項取決於您的應用程式類型。 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]**** （如果您先前尚未設定任何發行設定檔，則必須按一下 [**建立新的設定檔**]）。接下來，選擇 [**資料夾**]。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
+- **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python** 及 .**NET Core**：使用發行工具以部署至本機資料夾。 確切的可用選項取決於您的應用程式類型。 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]****  (如果您先前尚未設定任何發行設定檔，則必須按一下 [ **建立新設定檔**]。 ) 下一步]，請選擇 [ **資料夾**]。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
 
     ![選擇 [發行]](../deployment/media/quickstart-publish.png)
 
@@ -48,7 +48,7 @@ ms.locfileid: "85286348"
 
 ## <a name="publish-to-azure"></a>發佈至 Azure
 
-- **ASP.NET**、 **ASP.NET Core**、 **Python**和**Node.js**：使用下列其中一種方法，發佈至 Azure App Service 或 Azure App Service Linux （使用容器）。
+- **ASP.NET**、 **ASP.NET Core**、 **Python**和 **Node.js**：使用下列其中一種方法，使用容器 (發佈至 Azure App Service 或 Azure App Service Linux) 。
 
   - 針對連續 (或自動) 部署應用程式，使用 Azure DevOps 與 [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops)。
 
@@ -56,7 +56,7 @@ ms.locfileid: "85286348"
 
   針對提供伺服器自訂組態的部署，您也可以使用 [發行]**** 工具將應用程式部署至 Azure 虛擬機器。
 
-  若要使用 [發行]**** 工具，以滑鼠右鍵按一下 [方案總管] 中的專案，然後選擇 [發行]****。 （如果您先前已設定任何發行設定檔，則必須按一下 [**建立新的設定檔**]）。在 [發佈] 對話方塊中，選擇 [ **App Service** ] 或 [ **Azure 虛擬機器**]，然後依照設定步驟進行。
+  若要使用 [發行]**** 工具，以滑鼠右鍵按一下 [方案總管] 中的專案，然後選擇 [發行]****。  (如果您先前已設定任何發行設定檔，則必須按一下 [ **建立新設定檔**]。 ) 在 [發佈] 對話方塊中，選擇 [ **App Service** ] 或 [ **Azure 虛擬機器**]，然後遵循設定步驟。
 
   ![選擇 Azure App Service](../deployment/media/quickstart-publish-azure-new.png "選擇 Azure App Service")
 
@@ -75,7 +75,7 @@ ms.locfileid: "85286348"
 
 - **ASP.NET**、**ASP.NET Core**、**Node.js** 及 **Python**：您可以使用發行工具，利用 FTP 或 Web Deploy 部署至網站。 如需詳細資訊，請參閱[部署至網站](quickstart-deploy-to-a-web-site.md)。
 
-    在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [**發佈**]。 （如果您先前已設定任何發行設定檔，則必須按一下 [**建立新的設定檔**]）。在 [發行] 工具中，選擇您想要的選項，並遵循設定步驟。
+    在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [ **發行**]。  (如果您先前已設定任何發行設定檔，則必須按一下 [ **建立新設定檔**]。 ) 在發佈工具中，選擇您想要的選項，然後遵循設定步驟。
 
     ![選擇 IIS](../deployment/media/quickstart-publish-iis.png)
 
@@ -110,7 +110,7 @@ ms.locfileid: "85286348"
 - 可以使用 Flexera Software 的 [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) 來建立 MSI 或 EXE 安裝程式套件。 InstallShield 可能會與 Visual Studio 2017 和更新版本 (不支援 Community Edition) 搭配使用。 
 
   > [!NOTE]
-  > InstallShield 限量版已不再隨附于 Visual Studio，Visual Studio 2017 和更新版本中不支援;請洽詢[參閱 flexera software 軟體](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio)以瞭解未來的可用性。
+  > InstallShield 限量版已不再隨附于 Visual Studio，Visual Studio 2017 和更新版本中不支援。請查看 [>flexera 軟體](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) 是否有未來的可用性。
 
 - 可以使用安裝專案 (vdproj) 建立 MSI 或 EXE 安裝程式套件。 若要使用此選項，請安裝 [Visual Studio 安裝程式專案擴充功能](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview) \(英文\)。
 
@@ -130,9 +130,9 @@ ms.locfileid: "85286348"
 
 - [部署 Analysis Services 專案 (SSAS)](/sql/analysis-services/multidimensional-tutorial/lesson-2-5-deploying-an-analysis-services-project)
 
-- [部署 Integration Services （SSIS）專案和套件](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
+- [部署 Integration Services (SSIS) 專案和套件](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
 
-- [建立及部署至本機資料庫](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
+- [建立並部署至本機資料庫](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
 
 ## <a name="deployment-for-other-app-types"></a>其他應用程式類型的部署
 

@@ -1,5 +1,5 @@
 ---
-title: 執行存放區應用程式
+title: 執行 Store 應用程式
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2ac3e8ec68553159972e88538d8a4bc1ec49ce50
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540305"
 ---
 # <a name="run-store-apps-from-visual-studio"></a>從 Visual Studio 執行市集應用程式
@@ -30,7 +30,7 @@ ms.locfileid: "85540305"
 
 ## <a name="in-this-section"></a>本節內容
 
-|Title|描述|
+|標題|描述|
 |-|-|
 |[在本機電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-the-local-machine.md)|在 Visual Studio 裝置上執行 Windows 市集應用程式。|
 |[在模擬器中執行 Windows 市集應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)|在模擬 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 功能 (例如觸控和方向) 的桌面視窗中，執行 Windows 市集應用程式。|

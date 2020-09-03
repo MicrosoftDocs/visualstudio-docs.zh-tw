@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_INFO |微軟文件
+title: EXCEPTION_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a305d34123d02b1fdbd545a438db4461643ed185
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737027"
 ---
 # <a name="exception_info"></a>EXCEPTION_INFO
-描述正在調試的程式引發的異常或運行時錯誤。
+描述正在進行調試的程式擲回的例外狀況或執行階段錯誤。
 
 ## <a name="syntax"></a>語法
 
@@ -51,32 +51,32 @@ public struct EXCEPTION_INFO {
 
 ## <a name="members"></a>成員
 `pProgram`\
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件,表示發生異常的程式。
+[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，代表發生例外狀況的程式。
 
 `bstrProgramName`\
-發生異常的程式的名稱。
+發生例外狀況的程式名稱。
 
 `bstrExceptionName`\
-異常的名稱。
+例外狀況的名稱。
 
 `dwCode`\
-異常或運行時錯誤的標識代碼。
+例外狀況或執行階段錯誤的識別程式碼。
 
 `dwState`\
-定義異常狀態[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)枚舉的值。
+[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)列舉中的值，這個值會定義例外狀況的狀態。
 
 `guidType`\
-GUID 語言識別碼(`guidLang``guidEng`或 "
+GUID 語言識別項， `guidLang` 也就是或 `guidEng` 。
 
 ## <a name="remarks"></a>備註
-此結構作為參數傳遞給[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)和[RemoveSetexception](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)方法。 此結構也會傳遞到要填充的[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)方法。
+此結構會以參數形式傳遞至 [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) 和 [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) 方法。 此結構也會傳遞至要填入的 [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) 方法。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

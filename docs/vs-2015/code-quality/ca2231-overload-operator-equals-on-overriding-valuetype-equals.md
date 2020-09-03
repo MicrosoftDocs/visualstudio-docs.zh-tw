@@ -1,5 +1,5 @@
 ---
-title: CA2231：覆寫 ValueType. Equals 時的多載運算子 equals |Microsoft Docs
+title: CA2231：覆寫 ValueType equals 上的多載運算子 equals |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f01495e4238461d0b1dfe5a13a208b528df1581f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540292"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231:在覆寫 ValueType.Equals 上多載等號運算子
@@ -30,16 +30,16 @@ ms.locfileid: "85540292"
 |-|-|
 |TypeName|OverloadOperatorEqualsOnOverridingValueTypeEquals|
 |CheckId|CA2231|
-|類別|Microsoft。使用方式|
+|類別|Microsoft. 使用量|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
  實值型別 <xref:System.Object.Equals%2A?displayProperty=fullName> 會覆寫，但不會執行等號比較運算子。
 
 ## <a name="rule-description"></a>規則描述
- 在大部分的程式設計語言中，實數值型別的等號比較運算子（= =）並沒有預設的執行方式。 如果您的程式設計語言支援運算子多載，您應該考慮執行等號比較運算子。 其行為應該與相同 <xref:System.Object.Equals%2A> 。
+ 在大部分的程式設計語言中，實值型別沒有相等運算子的預設實 (= =) 。 如果您的程式設計語言支援運算子多載，您應該考慮執行等號比較運算子。 其行為應該與的行為相同 <xref:System.Object.Equals%2A> 。
 
- 在等號比較運算子的多載執行中，不能使用預設的等號比較運算子。 這麼做會造成堆疊溢位。 若要執行等號比較運算子，請在您的執行中使用 Equals 方法。 例如：
+ 您無法在等號比較運算子的多載執行中使用預設的等號比較運算子。 這樣做會導致堆疊溢位。 若要執行等號比較運算子，請在您的實中使用物件. Equals 方法。 例如：
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -56,10 +56,10 @@ return left.Equals(right);
 ```
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規，請執行等號比較運算子。
+ 若要修正此規則的違規情形，請執行等號比較運算子。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 您可以放心地隱藏此規則的警告;不過，我們建議您盡可能提供等號比較運算子。
+ 隱藏此規則的警告是安全的;不過，我們建議您盡可能提供等號比較運算子。
 
 ## <a name="example"></a>範例
  下列範例會定義違反此規則的類型。

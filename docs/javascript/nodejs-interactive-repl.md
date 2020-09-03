@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 8b2bbbdf478f27f936d4897f2ff773baa4cca1d6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285000"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>使用 Node.js 互動式視窗
@@ -28,7 +28,7 @@ ms.locfileid: "85285000"
 
 ![專案操作功能表中的 Node.js 互動式視窗](../javascript/media/interactivewindow-open-from-project.png)
 
-開啟 Node.js 互動式視窗的預設快速鍵是 **[CTRL] + K、N**。或者，您可以選擇 [**視圖**  >  **視窗**  >  **]Node.js [互動式視窗]**，從工具列開啟視窗。
+開啟 Node.js 互動式視窗的預設短暫按鍵是 **[CTRL] + K、N**。或者，您可以選擇 [ **View**  >  **Windows**  >  **Node.js Interactive window]**，從工具列開啟視窗。
 
 ## <a name="use-the-repl"></a>使用 REPL
 

@@ -15,16 +15,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f8c64bb19d65540f8c72be9acb1c5f59deb3c8f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156652"
 ---
 # <a name="how-to-clean-a-build"></a>如何：清除組建
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-當您清除組建時，會刪除所有中繼和輸出檔案，只留下專案檔和元件檔案。 從專案和元件檔案中，接著可以建置新的中繼和輸出檔案執行個體。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 所提供的一般工作程式庫包含 [Exec](../msbuild/exec-task.md) 工作，讓您可用來執行系統命令。 如需工作程式庫的詳細資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。  
+當您清除組建時，會刪除所有中繼和輸出檔案，只留下專案檔和元件檔案。 從專案和元件檔案中，接著可以建置新的中繼和輸出檔案執行個體。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 所提供的一般工作程式庫包含 [Exec](../msbuild/exec-task.md) 工作，讓您可用來執行系統命令。 如需工作程式庫的詳細資訊，請參閱工作 [參考](../msbuild/msbuild-task-reference.md)。  
   
 ## <a name="creating-a-directory-for-output-items"></a>建立輸出項目的目錄  
  編譯專案時所建立的 .exe 檔案預設位於與專案和原始程式檔相同的目錄中。 不過，一般而言，會在不同的目錄中建立輸出項目。  
@@ -53,11 +53,11 @@ ms.locfileid: "68156652"
 ## <a name="example"></a>範例  
  下列程式碼範例專案包含新的目標 `Clean`，以使用 `RemoveDir` 工作來刪除目錄以及其中所含的所有檔案和目錄。 在此範例中，`Compile` 目標也會為要在清除組建時刪除的輸出項目建立個別目錄。  
   
- `Compile` 定義為預設目標，因此除非您指定不同的目標，否則都會自動予以使用。 您使用命令列參數 **/target** 來指定不同的目標。 例如：  
+ `Compile` 定義為預設目標，因此除非您指定不同的目標，否則都會自動予以使用。 您可以使用命令列參數 **/target** 來指定不同的目標。 例如：  
   
  `msbuild <file name>.proj /target:Clean`  
   
- **/target** 參數可以縮短為 **/t**，而且可以指定多個目標。 例如，若要依序使用目標 `Clean` 和目標 `Compile`，請鍵入：  
+ **/Target**參數可以縮短為 **/t** ，而且可以指定一個以上的目標。 例如，若要依序使用目標 `Clean` 和目標 `Compile`，請鍵入：  
   
  `msbuild <file name>.proj /t:Clean;Compile`  
   

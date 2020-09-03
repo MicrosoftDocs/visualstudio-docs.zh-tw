@@ -1,5 +1,5 @@
 ---
-title: PORT_SUPPLIER_DESCRIPTION_FLAGS | Microsoft Docs
+title: PORT_SUPPLIER_DESCRIPTION_FLAGS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9a66ff327659ab44958c412f6f5b1f4a6390de39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205042"
 ---
-# <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
+# <a name="port_supplier_description_flags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-定義可以擷取有關連接埠提供者的中繼資料。  
+定義可針對埠供應商抓取的中繼資料。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,18 +41,18 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
   
 ## <a name="terms"></a>詞彙  
  PSDFLAG_SHOW_WARNING_ICON  
- 如果選取，警告圖示將會顯示在 UI 中。  
+ 如果選取此選項，則會在 UI 中顯示警告圖示。  
   
 ## <a name="remarks"></a>備註  
- 這個列舉型別由[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)方法。  
+ 這個列舉是由 [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) 方法傳回。  
   
 ## <a name="requirements"></a>需求  
- 標頭：Msdbg.h  
+ 標頭： Msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)

@@ -13,10 +13,10 @@ caps.latest.revision: 34
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f669c4dcfb91579ac50270914112cd6388e2743
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547975"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
@@ -34,10 +34,10 @@ ms.locfileid: "85547975"
 
 - 使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 類別存取資料來源。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
  若要完成這個逐步解說，您將需要：
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
 - Microsoft Access 或 Microsoft Excel，以便提供至少其中一種測試方法的資料。
 
@@ -47,7 +47,7 @@ ms.locfileid: "85547975"
 
 #### <a name="to-add-an-appconfig-file-to-the-project"></a>若要在專案中加入 app.config 檔案
 
-1. 如果您的測試專案已經有 app.config 檔案，請移至[定義自訂設定一節](#DefineCustomConfigurationSection)。
+1. 如果您的測試專案已有 app.config 檔案，請移至 [ [定義自訂](#DefineCustomConfigurationSection)設定] 區段。
 
 2. 在方案總管**** 中，以滑鼠右鍵按一下您的測試專案，並指向 [新增]****，然後按一下 [新增項目]****。
 
@@ -55,7 +55,7 @@ ms.locfileid: "85547975"
 
 3. 選取 [應用程式組態檔]**** 範本，然後按一下 [新增]****。
 
-## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a>定義自訂設定區段
+## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a> 定義自訂設定區段
  檢查 app.config 檔。 這個檔案至少會包含 XML 宣告和一個根項目。
 
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>若要將自訂組態區段加入 app.config 檔案
@@ -269,4 +269,4 @@ ms.locfileid: "85547975"
 > 部署項目 (例如資料來源)，使其能供部署目錄中的測試存取。
 
 ## <a name="see-also"></a>另請參閱
- [對您的程式碼進行單元測試](../test/unit-test-your-code.md)[針對現有程式碼](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)[測試應用程式](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)建立及執行單元測試[如何：建立資料驅動型單元測試](../test/how-to-create-a-data-driven-unit-test.md)
+ 針對[應用程式](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)[如何：建立資料驅動型單元測試](../test/how-to-create-a-data-driven-unit-test.md)的現有程式碼，對程式碼[建立和執行](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)單元測試的[單元測試](../test/unit-test-your-code.md)

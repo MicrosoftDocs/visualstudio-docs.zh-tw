@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1455c67c3cb6d8dc99aeab91a7bfa63cce009c51
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590796"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>使用圖表檢視圖例來分析負載測試
@@ -42,7 +42,7 @@ ms.locfileid: "75590796"
     > [!NOTE]
     > 當負載測試正在執行時，[最後一筆] 資料行只會顯示在 [負載測試分析器] 的圖例中。
 
-     有關詳細資訊，請參閱[如何：放大圖形的區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
+     如需詳細資訊，請參閱 [如何：放大圖形的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 
 在圖例中選取項目就會進行下列作業：
 
@@ -59,5 +59,5 @@ ms.locfileid: "75590796"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：放大圖形的區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
+- [如何：放大圖形中的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [在圖表檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)

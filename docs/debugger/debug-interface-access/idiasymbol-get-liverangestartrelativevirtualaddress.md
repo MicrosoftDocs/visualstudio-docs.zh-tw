@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a594ad4db1d06e541da93a4efb1b6f30a000f51
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463019"
 ---
 # <a name="idiasymbolget_liverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
-傳回本機符號有效的位址範圍開頭。
+傳回本機符號有效之位址範圍的開頭。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
 #### <a name="parameters"></a>參數
  `address`
 
-脫銷傳回位址範圍的開頭。
+擴展傳回位址範圍的開頭。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。 傳回的相對虛擬位址是符號有效範圍的開頭。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 傳回的相對虛擬位址是符號有效的範圍開頭。
 
 > [!NOTE]
 > 傳回的錯誤碼表示符號沒有即時範圍資訊。
@@ -46,7 +46,7 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
 ## <a name="requirements"></a>需求
  標頭： Dia2。h
 
- 程式庫： diaguids
+ 程式庫： diaguids .lib
 
  DLL： msdia100.dll
 

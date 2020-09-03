@@ -1,69 +1,67 @@
 ---
-title: IDebugFunctionObject::Evaluate |Microsoft Docs
-ms.date: 11/04/2016
+title: IDebugFunctionObject：：評估 |Microsoft Docs
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugFunctionObject::Evaluate
 helpviewer_keywords:
 - IDebugFunctionObject::Evaluate method
 ms.assetid: 29349ea3-d5c1-4135-aa76-ced073ab9683
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: e19baa193bb015056b9e5abde4c7a274f635c0c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179416"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
-呼叫函式，並傳回產生的值當做物件。
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>語法
-
-```cpp
-HRESULT Evaluate( 
-   IDebugObject** ppParams,
-   DWORD          dwParams,
-   DWORD          dwTimeout,
-   IDebugObject** ppResult
-);
-```
-
-```csharp
-int Evaluate(
-   IDebugObject[]   ppParams,
-   IntPtr           dwParams,
-   uint             dwTimeout,
-   out IDebugObject ppResult
-);
-```
-
-#### <a name="parameters"></a>參數
- `ppParams`
-
- [in]陣列[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)代表輸入的參數的物件。 每個參數經由之一`Create`中的方法[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面。
-
- `dwParams`
-
- [in]中的參數數目`ppParams`陣列。
-
- `dwTimeout`
-
- [in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用`INFINITE`無限期等候。
-
- `ppResult`
-
- [out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示函式物件的值。
-
-## <a name="return-value"></a>傳回值
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。
-
-## <a name="remarks"></a>備註
- 這個方法會設定並執行所表示之函式呼叫[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)物件。
-
-## <a name="see-also"></a>另請參閱
-- [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+呼叫函數，並傳回產生的值做為物件。  
+  
+## <a name="syntax"></a>語法  
+  
+```cpp#  
+HRESULT Evaluate(   
+   IDebugObject** ppParams,  
+   DWORD          dwParams,  
+   DWORD          dwTimeout,  
+   IDebugObject** ppResult  
+);  
+```  
+  
+```csharp  
+int Evaluate(  
+   IDebugObject[]   ppParams,   
+   IntPtr           dwParams,   
+   uint             dwTimeout,   
+   out IDebugObject ppResult  
+);  
+```  
+  
+#### <a name="parameters"></a>參數  
+ `ppParams`  
+ 在代表輸入參數之 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 物件的陣列。 這些參數都是使用 `Create` [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 介面中的其中一個方法所建立。  
+  
+ `dwParams`  
+ 在陣列中的參數數目 `ppParams` 。  
+  
+ `dwTimeout`  
+ 在指定從這個方法傳回之前等候的最長時間（以毫秒為單位）。 使用 `INFINITE` 可無限期等候。  
+  
+ `ppResult`  
+ 擴展傳回 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) ，表示函式的值做為物件。  
+  
+## <a name="return-value"></a>傳回值  
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。  
+  
+## <a name="remarks"></a>備註  
+ 這個方法會設定並執行 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 物件所代表之函式的呼叫。  
+  
+## <a name="see-also"></a>另請參閱  
+ [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

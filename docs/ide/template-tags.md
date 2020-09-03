@@ -14,17 +14,17 @@ helpviewer_keywords:
 - template tagging, updating
 - template tags, updating
 ms.openlocfilehash: 37a1965712920420bdc4d784a003dbfbd2f2167a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285214"
 ---
 # <a name="add-tags-to-project-templates"></a>將標籤新增到專案範本
 
 從 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) 16.1 版 Preview 2 開始，您可以將語言、平台和專案類型標籤新增到您的專案範本。 
 
-標記用於 [**新增專案**] 對話方塊中的兩個位置：
+標記會在 [ **新增專案** ] 對話方塊的兩個位置中使用：
 
 - 標籤會出現在範本描述下面。
 
@@ -41,7 +41,7 @@ ms.locfileid: "85285214"
 當您採取下列其中一個動作時，您可以在專案範本的 *.vstemplate* XML 中新增或編輯標籤：
 
 * 使用 [匯出範本] 嚮導來[建立新的專案範本](how-to-create-project-templates.md)。
-* [更新您現有的專案範本](how-to-update-existing-templates.md)。
+* [更新現有的專案範本](how-to-update-existing-templates.md)。
 * [建立新的 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)。
 
 ## <a name="syntax"></a>語法
@@ -56,7 +56,7 @@ ms.locfileid: "85285214"
 
 您可以在進階使用者案例中使用下列選擇性屬性：
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Package`|指定 Visual Studio 套件識別碼的 GUID。|
 |`ID`|指定 Visual Studio 資源識別碼。|
@@ -77,7 +77,7 @@ ms.locfileid: "85285214"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|說明|
+|項目|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(必要) 將範本分類，並定義範本在 [新增專案]**** 對話方塊或 [加入新項目]**** 對話方塊中的顯示方式。|
 

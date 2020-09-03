@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 9d2bfa0a3ca4a751637204ef156a609f4ee0c3e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155261"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
@@ -24,7 +24,7 @@ ms.locfileid: "68155261"
 ## <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity  
  **Unity** 是建立跨平台遊戲的遊戲引擎和開發環境。 Unity 引擎可在十幾個平台上執行，涵蓋範圍從高效能電腦，到遊戲主機、觸控式平板電腦和行動電話，甚至到網站。 Unity Editor 提供容易使用的介面，可建置出豐富的遊戲世界。 Unity 的功能、使用容易和涵蓋範圍，使其成為現今遊戲開發人員之間的熱門選擇。  
   
- Unity 編輯器適合用來組合您的遊戲世界，但無法在該編輯器中撰寫程式碼。 您可運用 **Visual Studio Tools for Unity**，使用熟悉的 Visual Studio 程式碼編輯、偵錯與提升生產力的功能，用 C# 為 Unity 專案建立編輯器與遊戲指令碼，也可以使用 Visual Studio 的強大偵錯功能，對這些指令碼進行偵錯。  
+ Unity 編輯器適合用來組合您的遊戲世界，但無法在該編輯器中撰寫程式碼。 有了 **Visual Studio Tools for Unity**，您可以使用 Visual Studio 的熟悉程式碼編輯、偵錯工具和生產力功能，使用 c # 建立 Unity 專案的編輯器和遊戲腳本，也可以使用 Visual Studio 功能強大的偵錯工具來進行 debug。  
   
  不僅如此，Visual Studio Tools for Unity 還與 Unity Editor 緊密整合，因此您可以花較少時間來回切換執行簡單工作，它也提供 Unity 特有的提升產能功能，並將 Unity 文件放在您可以隨時取得的位置。  
   

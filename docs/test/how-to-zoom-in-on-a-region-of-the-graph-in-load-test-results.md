@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 836e4f30e2c84bf0093366f4cc38a2cb7f58b545
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287021"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>如何：放大負載測試結果圖表中的某個區域
@@ -43,7 +43,7 @@ ms.locfileid: "85287021"
 
 在上圖中，已放大**待測系統**圖表來調查閾值問題。 臨界值違規已透過工具列之 [圖形選項]**** 下拉式清單中的 [在圖形上顯示臨界值違規]**** 來啟用。
 
-如需詳細資訊，請參閱[在圖形視圖中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)。
+如需詳細資訊，請參閱 [在圖形視圖中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)。
 
 ## <a name="display-graphs"></a>顯示圖表
 
@@ -57,7 +57,7 @@ ms.locfileid: "85287021"
 
      \- 或 -
 
-     檢視先前執行的負載測試的詳細資料。 如需詳細資訊，請參閱[如何：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)。
+     檢視先前執行的負載測試的詳細資料。 如需詳細資訊，請參閱 [如何：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)。
 
 3. 如果沒有顯示圖形，請選擇 [圖形]****。
 
@@ -73,7 +73,7 @@ ms.locfileid: "85287021"
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>若要同步縮放和捲動
 
-1. 在 [**負載測試分析器**] 上，選擇 [**同步水準縮放控制**]。
+1. 在 [ **負載測試分析器**] 上，選擇 [ **同步水準縮放控制**]。
 
      在選取 [同步水平縮放控制]**** 按鈕的情況下，對個別圖表時間刻度的縮放和捲動，也會縮放和捲動其他圖表的時間刻度。
 
