@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0fc84e2726cd7a70b8fc59b0f1ac2b3377f9c4af
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543360"
 ---
 # <a name="how-to-programmatically-display-worksheet-comments"></a>如何：以程式設計方式顯示工作表批註
@@ -41,5 +41,5 @@ ms.locfileid: "85543360"
 
 ## <a name="see-also"></a>另請參閱
 - [使用工作表](../vsto/working-with-worksheets.md)
-- [如何：以程式設計方式新增和刪除工作表批註](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)
+- [如何：以程式設計方式新增及刪除工作表批註](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)
 - [主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md)

@@ -10,11 +10,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b8b8a67e7cdde73fc8596b6c7e6ccc33737a38cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671888"
 ---
 # <a name="walkthrough-getting-information-from-a-selected-link"></a>逐步解說：從選取的連結取得資訊
-這個主題已經過時。 請參閱[在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
+這個主題已經過時。 請參閱 [流覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。

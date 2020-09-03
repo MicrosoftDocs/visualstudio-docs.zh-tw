@@ -1,5 +1,5 @@
 ---
-title: CA1034：不應該看到嵌套的類型 |Microsoft Docs
+title: CA1034：巢狀型別不應該為可見的 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 04a982c993ffbb04a3e7600dfb93a00e80727b84
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542164"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034:巢狀類型不應該為可見的
@@ -29,23 +29,23 @@ ms.locfileid: "85542164"
 |-|-|
 |TypeName|NestedTypesShouldNotBeVisible|
 |CheckId|CA1034|
-|類別|Microsoft. Design|
+|類別|Microsoft. 設計|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 外部可見的類型包含外部可見的類型宣告。 此規則會豁免嵌套列舉和受保護的類型。
+ 外部可見類型包含外部可見的類型宣告。 嵌套列舉和受保護的型別豁免于此規則。
 
 ## <a name="rule-description"></a>規則描述
- 巢狀型別是在另一個類型的範圍內宣告的類型。 巢狀型別適用于封裝包含類型的私用實作為詳細資料。 因為有這樣的用途，所以巢狀類型不應為外部可見的。
+ 巢狀型別是在另一個類型的範圍內宣告的型別。 巢狀型別適用于封裝包含型別的私用實作為詳細資料。 因為有這樣的用途，所以巢狀類型不應為外部可見的。
 
- 請不要針對邏輯群組使用外部可見的巢狀型別，或避免名稱衝突;請改用命名空間。
+ 請勿使用外部可見的巢狀型別進行邏輯分組，或避免名稱衝突;請改用命名空間。
 
- 巢狀型別包含成員存取範圍的概念，而有些程式設計人員並不清楚瞭解。
+ 巢狀型別包含成員存取範圍的概念，某些程式設計人員無法清楚瞭解。
 
- 在預先自訂的情況下，可在子類別和巢狀型別中使用受保護的類型。
+ 在預先定義的情況下，可以在子類別和巢狀型別中使用受保護的類型。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 如果您不想要讓巢狀型別成為外部可見的，請變更類型的存取範圍。 否則，請從其父系移除巢狀型別。 如果嵌套的目的是要將巢狀型別分類，請改用命名空間來建立階層。
+ 如果您不想讓巢狀型別成為外部可見的，請變更類型的存取範圍。 否則，請從其父代移除巢狀型別。 如果嵌套的目的是要將巢狀型別分類，請改用命名空間來建立階層。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。

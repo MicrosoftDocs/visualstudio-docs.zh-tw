@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9f4f8f1e2fb014dc812bb5980d333e0a851f9222
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476808"
 ---
 # <a name="limitations-on-script-debugging"></a>指令碼偵錯的限制
@@ -35,7 +35,7 @@ ms.locfileid: "77476808"
   
 - 中斷點必須在 `<script>` 區塊內部設定。 內嵌指令碼或 `<% %>` 區塊內的中斷點無法對應。  
   
-- 頁面的瀏覽器 URL 必須包含頁面名稱。 例如： `http://microsoft.com/default.apsx` 。 中斷點對應無法辨識來自位址重新導向例如 [http://microsoft.com](`http://microsoft.com`) 預設頁面。  
+- 頁面的瀏覽器 URL 必須包含頁面名稱。 例如 `http://microsoft.com/default.apsx`。 中斷點對應無法辨識來自位址重新導向例如 [http://microsoft.com](`http://microsoft.com`) 預設頁面。  
   
 - 中斷點必須在瀏覽器 URL 中指定的頁面中設定，而不是在 ASPX 控制項 (ascx) 檔、主版頁面或該頁面包含的其他檔案中設定。 在所包含頁面中設定的中斷點無法對應。  
   

@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ef8254433fc67291b47247f376e22a5ac8f2bf0
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461634"
 ---
 # <a name="idiasymbolget_udtkind"></a>IDiaSymbol::get_udtKind
-抓取使用者定義型別（UDT）的各種。
+抓取不同的使用者定義型別 (UDT) 。
 
 ## <a name="syntax"></a>語法
 
@@ -33,13 +33,13 @@ HRESULT get_udtKind ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷從指定 UDT 類型的[UdtKind 列舉](../../debugger/debug-interface-access/udtkind.md)列舉傳回值：結構、類別或等位。
+擴展傳回 [UdtKind 列舉](../../debugger/debug-interface-access/udtkind.md) 列舉中的值，這個列舉型別會指定 UDT 的種類： structure、class 或 union。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功， `S_OK` 則傳回; 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
-> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

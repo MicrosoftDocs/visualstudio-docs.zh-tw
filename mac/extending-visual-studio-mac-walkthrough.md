@@ -7,10 +7,10 @@ ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
 ms.topic: how-to
 ms.openlocfilehash: 8b0f1213d500563e9fa6f3574c6b622e3214e03a
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85939167"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>擴充 Visual Studio for Mac 逐步解說

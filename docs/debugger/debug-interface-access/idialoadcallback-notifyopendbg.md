@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d4572df216e04e645cae92bf479d17166edc256
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466746"
 ---
 # <a name="idialoadcallbacknotifyopendbg"></a>IDiaLoadCallback::NotifyOpenDBG
-當候選的 dbg 檔案已開啟時呼叫。
+在開啟候選的 dbg 檔案時呼叫。
 
 ## <a name="syntax"></a>語法
 
@@ -38,10 +38,10 @@ HRESULT NotifyOpenDBG ( 
 
  `resultCode`
 
-在指出套用至此檔案的成功（ `S_OK` ）或負載失敗的程式碼。
+在此程式碼表示套用至這個檔案的負載成功 (`S_OK`) 或失敗。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。 傳回碼通常會被忽略。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 通常會忽略傳回碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

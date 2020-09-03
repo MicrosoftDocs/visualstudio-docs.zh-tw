@@ -1,5 +1,5 @@
 ---
-title: 使用 [平行堆疊] 視窗 |Microsoft Docs
+title: 使用平行堆疊視窗 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,23 +19,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e89125c8e1dea25ab02fe64c21b8166e9d65194a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542216"
 ---
 # <a name="using-the-parallel-stacks-window"></a>使用平行堆疊視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-當您要進行多執行緒應用程式的調試時，[**平行堆疊**] 視窗會很有用。 其 [**執行緒] 視圖**會顯示應用程式中所有線程的呼叫堆疊資訊。 這個檢視可讓您巡覽執行緒和其上的堆疊框架。 在 managed 程式碼中，[工作]**視圖**會顯示物件的呼叫堆疊 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 。 在機器碼中，[工作]**視圖**會顯示[工作組](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077)、[平行演算法](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473)、[非同步代理](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)程式和[輕量](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90)工作的呼叫堆疊。  
+當您正在對多執行緒應用程式進行偵錯工具時，[ **平行堆疊** ] 視窗相當有用。 其 **執行緒視圖** 會顯示您應用程式中所有線程的呼叫堆疊資訊。 這個檢視可讓您巡覽執行緒和其上的堆疊框架。 在 managed 程式碼中，[工作] **視圖** 會顯示物件的呼叫堆疊 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 。 在機器碼中，[工作] **視圖** 會顯示 [工作組](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077)、 [平行演算法](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473)、 [非同步代理](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)程式和 [輕量](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90)工作的呼叫堆疊。  
   
 ## <a name="threads-view"></a>執行緒檢視  
  下圖顯示的執行緒是從「主要」流到 A 再流到 B，然後再流到某個外部程式碼。 其他兩個執行緒是從某個外部程式碼開始，然後再流到 A，但是其中一個執行緒繼續流到 B，然後流到某個外部程式碼，而另一個執行緒則繼續流到 C，然後流到某個 AnonymousMethod。  
   
  ![[平行堆疊] 視窗中的執行緒檢視](../debugger/media/parallel-stacksthread.png "Parallel_StacksThread")  
   
- 在本圖中，是用藍色醒目提示目前執行緒的呼叫路徑，並用黃色箭號表示作用中堆疊框架。 您可以在 [**平行堆疊**] 視窗中選取不同的方法，以變更目前的堆疊框架。 這可能也會導致切換目前執行緒，取決於您選取的方法已是目前執行緒的一部分還是另一個執行緒的一部分。 下表描述 [**平行堆疊**] 視窗的主要功能，如下圖所示。  
+ 在本圖中，是用藍色醒目提示目前執行緒的呼叫路徑，並用黃色箭號表示作用中堆疊框架。 您可以在 [ **平行堆疊** ] 視窗中選取不同的方法，以變更目前的堆疊框架。 這可能也會導致切換目前執行緒，取決於您選取的方法已是目前執行緒的一部分還是另一個執行緒的一部分。 下表描述 [ **平行堆疊** ] 視窗的主要功能，如圖所示。  
   
 |圖說文字字母|元素名稱|描述|  
 |--------------------|------------------|-----------------|  
@@ -44,9 +44,9 @@ ms.locfileid: "85542216"
 |C|帶箭號的線條|連接節點，以構成執行緒的整個呼叫路徑。|  
 |D|節點標題的工具提示|顯示其呼叫路徑共用這個節點之每個執行緒的 ID 和由使用者定義的名稱。|  
 |E|方法內容|表示相同方法中的一個或多個堆疊框架。|  
-|F|方法內容的工具提示|在 [執行緒] 視圖中，它會顯示資料表中的所有線程，與 [**執行緒**] 視窗類似。 在工作視圖中，它會顯示資料表中的所有工作，類似于 [**平行**工作] 視窗。|  
+|F|方法內容的工具提示|在 [執行緒] 視圖中，它會顯示資料表中的所有線程，類似于 [ **執行緒** ] 視窗。 在工作檢視中，它會顯示資料表中的所有工作，類似于 [ **平行** 工作] 視窗。|  
   
- 此外，當圖形太大而無法放入視窗中時，[平行堆疊] 視窗會在主窗格中顯示**鳥瞰**圖圖示。 您可以按一下圖示，在視窗中查看整個圖形。  
+ 此外，當圖形太大而無法放入視窗中時，[平行堆疊] 視窗會在主窗格中顯示 **鳥的眼睛** 圖示。 您可以按一下圖示，在視窗中查看整個圖形。  
   
 ## <a name="method-context-icons"></a>方法內容圖示  
  下表所說明的圖示提供作用中和目前堆疊框架的詳細資訊：  
@@ -65,10 +65,10 @@ ms.locfileid: "85542216"
 |圖說文字字母|控制|描述|  
 |--------------------|-------------|-----------------|  
 |A|執行緒/工作下拉式方塊|切換執行緒呼叫堆疊檢閱和工作呼叫堆疊檢閱。 如需詳細資訊，請參閱＜工作檢視＞和＜執行緒檢視＞。|  
-|B|僅顯示有旗標的項目|只會顯示在其他偵錯工具視窗中加上旗標之執行緒的呼叫堆疊，例如 [ **GPU 執行緒**] 視窗和 [**平行監看**式] 視窗。|  
+|B|僅顯示有旗標的項目|只針對在其他偵錯工具視窗（例如 [ **GPU 執行緒** ] 視窗和 [ **平行監看** 式] 視窗）中加上旗標的執行緒顯示呼叫堆疊。|  
 |C|切換方法檢視|切換 [堆疊檢視] 和 [方法檢視]。 如需詳細資訊，請參閱＜方法檢視＞。|  
 |D|自動捲動到目前堆疊框架|自動捲動圖表，讓目前堆疊框架出現在檢視中。 當您要從其他視窗變更目前堆疊框架，或是到達大型圖表中的新中斷點時，這項功能會很有用。|  
-|E|切換縮放控制|顯示或隱藏縮放控制項。 您也可以按下 CTRL 鍵並開啟滑鼠滾輪（不論縮放控制項的可見度為何），或使用**ctrl + shift + ' + '** 放大和**ctrl + shift + '-'** 來縮小。按**CTRL + F8**會縮放以符合螢幕大小。|  
+|E|切換縮放控制|顯示或隱藏縮放控制項。 您也可以按 CTRL 鍵，並開啟滑鼠滾輪（不論縮放控制項的可見度為何），或使用 **ctrl + shift + ' + '** 來放大和 **ctrl + shift + '-'** 以縮小。按下 **CTRL + F8** 將會縮放以符合螢幕。|  
   
 ### <a name="context-menu-items"></a>操作功能表項目  
  下圖和下表說明當您以滑鼠右鍵按一下 [執行緒檢閱] 或 [工作檢閱] 中的方法內容時，可用的捷徑功能表項目。 後六個項目是直接從 [呼叫堆疊] 視窗借用，並未引入新的行為。  
@@ -91,7 +91,7 @@ ms.locfileid: "85542216"
 |符號設定|顯示對應的對話方塊。|  
   
 ## <a name="tasks-view"></a>工作檢閱  
- 如果您的應用程式使用 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 物件（managed 程式碼）或 `task_handle` 物件（機器碼）來表示平行處理，您可以使用 [平行堆疊] 視窗工具列中的下拉式方塊來切換至 [工作]*視圖*。 [工作檢視] 會顯示工作 (而非執行緒) 的呼叫堆疊。 [工作檢閱] 有別於 [執行緒檢閱] 之處在於：  
+ 如果您的應用程式使用 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 物件 (managed 程式碼) 或 `task_handle` 物件 (機器碼) 以表示平行處理原則，您可以使用 [平行堆疊] 視窗工具列中的下拉式方塊來切換至工作 *視圖*。 [工作檢視] 會顯示工作 (而非執行緒) 的呼叫堆疊。 [工作檢閱] 有別於 [執行緒檢閱] 之處在於：  
   
 - 如果執行緒沒有在執行工作，則不會顯示該執行緒的呼叫堆疊。  
   
@@ -103,7 +103,7 @@ ms.locfileid: "85542216"
   
   ![[平行堆疊] 視窗中的工作檢閱](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
   
-  若要查看整個呼叫堆疊，只要以滑鼠右鍵按一下堆疊框架，然後按一下 [**移至執行緒**]，即可切換回 [執行緒] View。  
+  若要查看整個呼叫堆疊，只要以滑鼠右鍵按一下堆疊框架，然後按一下 [ **移至執行緒**]，即可切換回執行緒的觀點。  
   
   如前表所述，將滑鼠游標停留在方法內容上，就可以看到其他資訊。 下圖為 [執行緒檢閱] 和 [工作檢閱] 的工具提示中所顯示的資訊。  
   
@@ -117,10 +117,10 @@ ms.locfileid: "85542216"
  切換至新的堆疊框架，就可以將該方法變成目前的方法，並讓視窗顯示新方法的所有呼叫端和被呼叫端。 有些執行緒可能會因此顯示或不見，視該方法是否出現在這些執行緒的呼叫堆疊中。 若要回到 [堆疊檢視]，請再按一下 [方法檢視] 工具列按鈕。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說：調試平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)   
+ [逐步解說：進行平行應用程式的偵錯工具](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [偵錯工具基本概念](../debugger/debugger-basics.md)   
- [對 Managed 程式碼進行偵錯工具](../debugger/debugging-managed-code.md)   
+ [Managed 程式碼的偵錯工具](../debugger/debugging-managed-code.md)   
  [平行程式設計](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [使用工作視窗](../debugger/using-the-tasks-window.md)   
- [逐步解說：調試平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)   
+ [逐步解說：進行平行應用程式的偵錯工具](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Task 類別](../extensibility/debugger/task-class-internal-members.md)

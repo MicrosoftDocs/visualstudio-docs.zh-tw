@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f18ac0aa983c36ec52cac22962d9639a30027c28
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461445"
 ---
 # <a name="idiasymbolget_virtualbasepointeroffset"></a>IDiaSymbol::get_virtualBasePointerOffset
-抓取虛擬基底指標的位移。
+捕獲虛擬基底指標的位移。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_virtualBasePointerOffset ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回虛擬基底指標的位移。
+擴展傳回虛擬基底指標的位移。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。

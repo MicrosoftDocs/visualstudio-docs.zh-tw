@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99596442f3aef9e4cb2d890438d29b96cdf4f083
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671926"
 ---
 # <a name="open-project-command"></a>開啟專案命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-開啟現有專案。
+開啟現有的專案。
 
 ## <a name="syntax"></a>語法
 
@@ -34,7 +34,7 @@ File.OpenProject filename
 ```
 
 ## <a name="arguments"></a>引數
- `filename` 必要項。 要開啟之專案的完整路徑和檔案名稱。
+ 需要 `filename`。 要開啟之專案的完整路徑和檔案名稱。
 
  `filename` 引數的語法需要包含空格的路徑使用引號。
 
@@ -51,4 +51,4 @@ File.OpenProject filename
 ```
 
 ## <a name="see-also"></a>另請參閱
- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)[命令視窗](../../ide/reference/command-window.md)[尋找/命令框](../../ide/find-command-box.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio](../../ide/reference/visual-studio-commands.md)命令[視窗](../../ide/reference/command-window.md)[尋找/命令箱](../../ide/find-command-box.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

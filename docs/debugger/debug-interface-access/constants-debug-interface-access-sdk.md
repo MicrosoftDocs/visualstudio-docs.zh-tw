@@ -1,5 +1,5 @@
 ---
-title: 常數（Debug Interface Access SDK） |Microsoft Docs
+title: " (Debug 介面存取 SDK) 的常數 |Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,22 +14,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3fa6037253141df1111ef3bc57fac9c718d826dc
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462236"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>常數 (偵錯介面存取 SDK)
-這些字串常數可以透過 DIA SDK，用來識別程式 debug 資料庫（PDB）檔案的各種區段。
+這些字串常數可以用來識別程式的各個區段， (PDB 透過 DIA SDK) 檔。
 
 ## <a name="constants"></a>常數
 下列宣告為 C/c + + 宏。
 
 |巨集|值|
 |-----------|-----------|
-|`DiaTable_Symbols`|L 「符號」|
-|`DiaTable_Sections`|L "Sections"|
+|`DiaTable_Symbols`|L "符號"|
+|`DiaTable_Sections`|L "章節"|
 |`DiaTable_SrcFiles`|L "SourceFiles"|
 |`DiaTable_LineNums`|L"LineNumbers"|
 |`DiaTable_SegMap`|L"SegmentMap"|

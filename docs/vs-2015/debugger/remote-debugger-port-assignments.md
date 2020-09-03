@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2628d8929a0d2b6fd3561f88c81cfaa3b62564f0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542099"
 ---
 # <a name="remote-debugger-port-assignments"></a>遠端偵錯工具連接埠指派
@@ -32,11 +32,11 @@ Visual Studio 遠端偵錯工具可以應用程式或背景服務的形式執行
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>32 位元作業系統上的遠端偵錯工具連接埠  
  (在 Visual Studio 2015 中) TCP 4020 是主要的連接埠，在所有情況下都需要。 您可以從命令列或遠端偵錯工具視窗來進行此設定。  
   
- 在 [遠端偵錯程式] 視窗中，按一下 [**工具]/[選項**]，然後設定 tcp/ip 通訊埠編號。  
+ 在 [遠端偵錯程式] 視窗中，按一下 [ **工具]/[選項**]，然後設定 tcp/ip 通訊埠編號。  
   
  在命令列上，使用 **/port**參數啟動遠端偵錯程式： **msvsmon/port \<port number> **。  
   
- 您可以在 [遠端偵錯程式] 說明中找到所有遠端偵錯程式命令列參數（按**F1**或按一下 [遠端偵錯程式] 視窗中的 [說明] **/[使用**方式]）。  
+ 您可以在遠端偵錯程式說明中找到所有遠端偵錯程式命令列參數 (在遠端偵錯程式視窗中按 **F1** 或按一下 [說明 **/使用** 方式]) 。  
   
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>64 位元作業系統上的遠端偵錯工具連接埠  
  當啟動 64 位元版本的遠端偵錯工具時，它預設會使用 4020 連接埠。  如果您偵錯 32 位元處理序，64 位元版本的遠端偵錯工具會在連接埠 4021 啟動遠端偵錯工具的 32 位元版本。 如果您執行 32 位元遠端偵錯工具，它會使用 4020，而不會使用 4021。  

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7701bf0ba1467b481f6da64d3c2e229be77a7fe7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542580"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>設定圖表上的背景影像
@@ -23,37 +23,37 @@ ms.locfileid: "85542580"
 
 1. 將您要用來做為圖表背景的影像檔複製到目前專案的 Dsl\Resources 目錄中。
 
-2. 在**方案總管**中，以滑鼠右鍵按一下 [Dsl\Resources] 資料夾，指向 [**新增**]，然後按一下 [**現有專案**]。
+2. 在 **方案總管**中，以滑鼠右鍵按一下 [Dsl\Resources] 資料夾，指向 [ **加入**]，然後按一下 [ **現有專案**]。
 
-3. 在 [**加入現有專案**] 對話方塊中，流覽至 [Dsl\Resources] 資料夾。
+3. 在 [ **加入現有專案** ] 對話方塊中，流覽至 [Dsl\Resources] 資料夾。
 
-4. 在 [**檔案類型**] 清單中，按一下 [**影像檔**案]。
+4. 在 [ **檔案類型** ] 清單中，按一下 [ **影像檔**]。
 
-5. 按一下您複製到目錄的影像檔案，然後按一下 [**新增**]。
+5. 按一下您複製到目錄的影像檔案，然後按一下 [ **新增**]。
 
-6. 以滑鼠右鍵按一下 [Dsl]，然後按一下 [**屬性**] 以開啟 dsl 專案的屬性。
+6. **以滑鼠右鍵按一下 [** dsl]，然後按一下 [內容] 以開啟 dsl 專案的屬性。
 
-7. 在 [**資源**] 索引標籤上，按一下 [**這個專案不包含預設資源檔]。按一下這裡建立一個。**
+7. 在 [ **資源** ] 索引標籤上，按一下 [ **此專案不包含預設資源檔]。按一下這裡以建立一個。**
 
-8. 將圖片從 [**方案總管**拖曳至 [資源] 視窗，以將影像檔新增至資源檔。
+8. 將影像從 **方案總管** 拖曳至資源視窗，以將影像檔新增至資源檔。
 
 9. 開啟 [檔案] 功能表，然後按一下選項以儲存專案屬性。
 
 10. 確認檔案 Dsl\Properties\Resources.resx 存在且其下有檔案 Resources.Designer.cs。
 
-11. 如果遺漏 Resources.Designer.cs，請按一下**方案總管**中的檔案 Resources。
+11. 如果 Resources.Designer.cs 遺失，請按一下 **方案總管**中的檔案資源 .resx。
 
 12. 在 [屬性] **** 視窗中，將 `Custom Tool` 屬性設定為 `ResXFileCodeGenerator`。
 
-13. 在**方案總管**中，以滑鼠右鍵按一下 Dsl 專案，指向 [**加入**]，然後按一下 [**新增資料夾**]。
+13. 在 **方案總管**中，以滑鼠右鍵按一下 Dsl 專案，指向 [ **加入**]，然後按一下 [ **新增資料夾**]。
 
-14. 將資料夾命名為**Custom**。
+14. 將資料夾命名為 **Custom**。
 
-15. 以滑鼠右鍵按一下自訂資料夾，指向 [**加入**]，然後按一下 [**新增專案**]。
+15. 在 [自訂] 資料夾上按一下滑鼠右鍵，指向 [ **加入**]，然後按一下 [ **新增專案**]。
 
-16. 在 [**加入新專案**] 對話方塊的 [**範本**] 清單中，按一下 [程式**代碼**檔案]。
+16. 在 [ **加入新專案** ] 對話方塊的 [ **範本** ] 清單中，按一下 [程式 **代碼**檔案]。
 
-17. 在 [**名稱**] 方塊中，輸入 `BackgroundImage.cs` ，然後按一下 [**新增**]。
+17. 在 [ **名稱** ] 方塊中，輸入 `BackgroundImage.cs` ，然後按一下 [ **新增**]。
 
 18. 將下列程式碼複製到 BackgroundImage.cs 檔，調整的命名空間、圖表類別名稱和影像檔資源名稱。
 
@@ -98,7 +98,7 @@ ms.locfileid: "85542580"
     }
     ```
 
-     如需使用程式碼自訂模型的詳細資訊，請參閱[在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
+     如需使用程式碼自訂模型的詳細資訊，請參閱 [在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
 ## <a name="see-also"></a>另請參閱
 

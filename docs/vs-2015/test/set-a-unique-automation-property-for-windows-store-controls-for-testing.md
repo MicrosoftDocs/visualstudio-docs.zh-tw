@@ -9,10 +9,10 @@ caps.latest.revision: 12
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d4ccf10f3ce085aa8f0275c40644f1a109616daf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672143"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>為用於測試的 Windows 市集控制項設定唯一自動化屬性
@@ -34,10 +34,10 @@ ms.locfileid: "72672143"
 
 ## <a name="use-methods-to-assign-a-unique-automation-property"></a>使用方法來指派唯一自動化屬性
 
-### <a name="UniquePropertyWindowsStoreControlsStaticXAML"></a> 靜態 XAML 定義
+### <a name="static-xaml-definition"></a><a name="UniquePropertyWindowsStoreControlsStaticXAML"></a> 靜態 XAML 定義
  若要指定 XAML 檔案中所定義之控制項的唯一自動化屬性，您可以隱含或明確地設定 AutomationProperties.AutomationId 或 AutomationProperties.Name，如下列範例所示。 設定任一值會提供控制項的唯一自動化屬性，以用來在建立自動程式碼 UI 測試或動作記錄時識別控制項。
 
- **隱含地設定屬性**
+ **隱含設定屬性**
 
  在 XAML 中，使用 Name 屬性，將控制項的 AutomationProperties.AutomationId 設定為 **ButtonX**。
 
@@ -62,18 +62,18 @@ ms.locfileid: "72672143"
 
 ```
 
- 在 XAML 中，將控制項的 AutomationProperties.Name 明確地設定為 **ButtonY**。
+ 在 XAML 中，將控制項的 **AutomationProperties.Name** 明確設定為 ButtonY。
 
 ```
 <Button AutomationProperties.Name="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />
 ```
 
-### <a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> 使用 Visual Studio 或 Blend for Visual Studio 指派唯一自動化屬性
+### <a name="assign-unique-automation-properties-using-visual-studio-or-blend-for-visual-studio"></a><a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> 使用 Visual Studio 或 Blend for Visual Studio 指派唯一的 automation 屬性
  您可以使用 Visual Studio 或 Blend for Visual Studio 將唯一名稱指派給互動項目，例如按鈕、清單方塊、下拉式方塊和文字方塊。 這裡提供控制項之 AutomationProperties.Name 的唯一值。
 
- **Visual Studio：** 在 [工具] 功能表上，指向 [選項]，然後依序選擇 [文字編輯器]、[XAML] 和 [其他]。
+ **Visual Studio：** 在 [工具]**** 功能表上，指向 [選項]****，然後依序選擇 [文字編輯器]****、[XAML]**** 和 [其他]****。
 
- 選取 [建立時自動命名互動項目]，然後選擇 [確定]。
+ 選取 [建立時自動命名互動項目]****，然後選擇 [確定]****。
 
  ![XAML 其他選項](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")
 
@@ -84,17 +84,17 @@ ms.locfileid: "72672143"
 
  **提供現有控制項的唯一名稱**
 
- 在 [工具] 功能表上，選擇 [命名互動項目]，如下所示：
+ 在 [工具]**** 功能表上，選擇 [命名互動項目]****，如下所示：
 
  ![從 [工具] 功能表選擇 [命名互動元素]](../test/media/cuit-windowsstoreproperty-blend-1.png "CUIT_WindowsStoreProperty_Blend_1")
 
  **自動提供所建立控制項的唯一名稱**
 
- 在 [工具] 功能表上，指向 [選項]，然後選擇 [專案]。 選取 [建立時自動命名互動項目]，然後選擇 [確定]，如下所示：
+ 在 [工具]**** 功能表上，指向 [選項]****，然後選擇 [專案]****。 選取 [建立時自動命名互動項目]****，然後選擇 [確定]****，如下所示：
 
  ![設定專案以命名互動元素](../test/media/cuit-windowsstoreproeprty-blend-2.png "CUIT_WindowsStoreProeprty_Blend_2")
 
-### <a name="UniquePropertyWindowsStoreControlsDataTemplate"></a> 使用資料範本
+### <a name="use-a-data-template"></a><a name="UniquePropertyWindowsStoreControlsDataTemplate"></a> 使用資料範本
  您可以使用下列 XAML 定義使用 ItemTemplate 的簡單範本，以將清單方塊中的值繫結至變數。
 
 ```xaml
@@ -157,7 +157,7 @@ public override string ToString()
 
 ```
 
-### <a name="UniquePropertyWindowsStoreControlsControlTemplate"></a> 使用控制項範本
+### <a name="use-a-control-template"></a><a name="UniquePropertyWindowsStoreControlsControlTemplate"></a> 使用控制項範本
  您可以使用控制項範本，讓特定類型的每個執行個體取得在程式碼中所定義的唯一自動化屬性。 您必須建立範本，以讓 AutomationProperty 繫結至控制項執行個體中的唯一識別碼。 下列 XAML 示範如何使用控制項範本建立此繫結的一種方法。
 
 ```xaml
@@ -185,7 +185,7 @@ public override string ToString()
 <Button Content=”Button2” Style="{StaticResource MyButton}" Width="140"/>
 ```
 
-### <a name="UniquePropertyWindowsStoreControlsDynamicControls"></a> 動態控制項
+### <a name="dynamic-controls"></a><a name="UniquePropertyWindowsStoreControlsDynamicControls"></a> 動態控制項
  如果您的控制項是從程式碼動態建立，而不是靜態建立或透過 XAML 檔案中的範本建立，則必須設定控制項的 Content 或 Name 屬性。 如此可確保每個動態控制項都具有唯一自動化屬性。 例如，如果您有必須在選取清單項目時顯示的核取方塊，則可以設定這些屬性，如下所示︰
 
 ```csharp

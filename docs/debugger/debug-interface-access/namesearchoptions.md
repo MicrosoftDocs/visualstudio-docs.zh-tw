@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 696ad3e659b503b27da73056dafb57c5852d5133
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461172"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
@@ -45,18 +45,18 @@ enum NameSearchOptions {
 ## <a name="elements"></a>元素
 `nsNone`未指定任何選項。
 
-`nsfCaseSensitive`套用區分大小寫的名稱相符。
+`nsfCaseSensitive` 適用區分大小寫的名稱比對。
 
-`nsfCaseInsensitive`套用不區分大小寫的名稱相符。
+`nsfCaseInsensitive` 套用不區分大小寫的名稱比對。
 
-`nsfFNameExt`將名稱視為路徑，並套用 filename。 ext name match。
+`nsfFNameExt` 將名稱視為路徑，並套用副檔名名稱。
 
-`nsfRegularExpression`使用星號（*）和問號（？）做為萬用字元，來套用區分大小寫的名稱比對。 （不支援其他常見的正則運算式字元）。
+`nsfRegularExpression` 使用星號 ( * ) 和問號 (？ ) 為萬用字元，套用區分大小寫的名稱比對。 不支援 (其他常見的正則運算式字元。 ) 
 
-`nsfUndecoratedName`僅適用于同時具有未修飾和裝飾名稱的符號。
+`nsfUndecoratedName` 只適用于同時具有未修飾和裝飾名稱的符號。
 
 ## <a name="remarks"></a>備註
-此列舉中的值會傳遞至下列方法：
+此列舉的值會傳遞至下列方法：
 
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
 

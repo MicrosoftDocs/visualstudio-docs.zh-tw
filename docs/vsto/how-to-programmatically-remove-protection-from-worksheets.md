@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 72448f9d1e5c24c917459b8c2c59e317190e0a11
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519869"
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>如何：以程式設計方式移除工作表的保護
@@ -31,14 +31,14 @@ ms.locfileid: "85519869"
 
 ## <a name="to-unprotect-a-worksheet-in-a-document-level-customization"></a>取消文件層級自訂工作表的保護
 
-1. 呼叫 <xref:Microsoft.Office.Tools.Excel.Worksheet.Unprotect%2A> 工作表的方法並傳入密碼（如有必要）。 這個範例會假設您是使用名為 `Sheet1`的工作表。
+1. <xref:Microsoft.Office.Tools.Excel.Worksheet.Unprotect%2A>如有需要，請呼叫工作表的方法並傳入密碼。 這個範例會假設您是使用名為 `Sheet1`的工作表。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#28)]
      [!code-vb[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#28)]
 
-## <a name="to-unprotect-a-worksheet-in-a-vsto-add-in"></a>若要在 VSTO 增益集中解除工作表的保護
+## <a name="to-unprotect-a-worksheet-in-a-vsto-add-in"></a>若要取消保護 VSTO 增益集中的工作表
 
-1. 呼叫 <xref:Microsoft.Office.Interop.Excel._Worksheet.Unprotect%2A> 活動工作表的方法並傳入密碼（如有必要）。
+1. <xref:Microsoft.Office.Interop.Excel._Worksheet.Unprotect%2A>如有需要，請呼叫活動工作表的方法並傳入密碼。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#18)]

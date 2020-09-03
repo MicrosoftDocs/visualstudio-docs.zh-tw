@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a66242554de28ab45cc797d523ea7b5a967e9e5d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542970"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011：CompareTo 高度耗費資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 的最新檔，請參閱[DA0011：昂貴的 CompareTo](/visualstudio/profiling/da0011-expensive-compareto)。  
+如需 Visual Studio 的最新檔，請參閱 [DA0011：昂貴的 CompareTo](/visualstudio/profiling/da0011-expensive-compareto)。  
   
 |Item|值|  
 |-|-|  

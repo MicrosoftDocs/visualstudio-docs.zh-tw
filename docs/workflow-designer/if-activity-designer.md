@@ -1,5 +1,5 @@
 ---
-title: 工作流程設計工具 If 活動設計工具
+title: 工作流程設計工具-If 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 099be38c5585fe19c00b31c00ac3a7ddcd3d7fe2
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76111469"
 ---
 # <a name="if-activity-designer"></a>If 活動設計工具
@@ -25,14 +25,14 @@ ms.locfileid: "76111469"
 
 下表顯示最為實用的 <xref:System.Activities.Statements.If> 活動屬性，並且說明它們在設計工具中的使用方式。
 
-|內容名稱|必要|使用|
+|屬性名稱|必要|使用方式|
 |-|--------------|-|
-|<xref:System.Activities.Statements.If.Condition%2A>|True|判斷要執行哪個子活動的條件。 若要設定 <xref:System.Activities.Statements.If.Condition%2A>，請在 [ **If** ] 活動設計工具上或在屬性方格的 [**條件**] 方塊中，輸入 Visual Basic 運算式。|
-|<xref:System.Activities.Statements.If.Else%2A>|False|<xref:System.Activities.Statements.If.Condition%2A> 為**false**時要執行的活動。 若要加入 <xref:System.Activities.Statements.If.Else%2A> 分支所執行的活動，請從 [工具箱] 將活動拖放到 [ **If** ] 活動設計**工具**上的 [ **Else** ] 方塊中，並加上提示文字「在此放置活動」。|
-|<xref:System.Activities.Statements.If.Then%2A>|False|當 <xref:System.Activities.Statements.If.Condition%2A> 為**true**時要執行的活動。 若要加入 <xref:System.Activities.Statements.If.Then%2A> 分支所執行的活動，請從 [工具箱] 將活動拖放到 [ **If** ] 活動設計**工具**上的 [ **Then** ] 方塊中，並加上提示文字「在此放置活動」。|
+|<xref:System.Activities.Statements.If.Condition%2A>|是|判斷要執行哪個子活動的條件。 若要設定 <xref:System.Activities.Statements.If.Condition%2A> ，請在 [ **If** ] 活動設計工具上或在屬性方格的 [**條件**] 方塊中輸入 Visual Basic 運算式。|
+|<xref:System.Activities.Statements.If.Else%2A>|否|如果為 false 時要執行的活動 <xref:System.Activities.Statements.If.Condition%2A> 。 **false** 若要加入由分支執行的活動 <xref:System.Activities.Statements.If.Else%2A> ，請從 [工具箱] 將活動拖放到 [ **If** ] 活動設計**工具**上的 [ **Else** ] 方塊，並在 [在此放置活動] 提示文字。|
+|<xref:System.Activities.Statements.If.Then%2A>|否|當為 true 時要執行的活動 <xref:System.Activities.Statements.If.Condition%2A> 。 **true** 若要加入由分支執行的活動 <xref:System.Activities.Statements.If.Then%2A> ，請從 [工具箱] 將活動拖放到 [ **If** ] 活動設計**工具**上的 [ **Then** ] 方塊，並在 [在此放置活動] 提示文字。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [Sequence](../workflow-designer/sequence-activity-designer.md)
+- [序列](../workflow-designer/sequence-activity-designer.md)
 - [Parallel](../workflow-designer/parallel-activity-designer.md)
 - [控制流程](../workflow-designer/control-flow-activity-designers.md)

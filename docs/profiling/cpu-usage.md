@@ -10,17 +10,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543386"
 ---
 # <a name="analyze-cpu-usage"></a>分析 CPU 使用量
 
 要開始調查應用程式中效能問題的好方法是了解其 CPU 使用量。 [CPU 使用量]**** 效能工具顯示花在 C++、C#/Visual Basic 和 JavaScript 應用程式中執行程式碼的 CPU 時間和百分比。
 
-[CPU 使用量]**** 工具可以在開啟的 Visual Studio 專案上及已安裝的 Microsoft Store 應用程式上執行，或是附加至執行中的應用程式或處理程序。 如需詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
+[CPU 使用量]**** 工具可以在開啟的 Visual Studio 專案上及已安裝的 Microsoft Store 應用程式上執行，或是附加至執行中的應用程式或處理程序。 如需詳細資訊，請參閱 [使用或不使用偵錯工具來執行程式碼剖析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
 
 執行 [CPU 使用量]**** 工具時不一定需要包含偵錯。 在偵錯工具中，您可以開啟和關閉 CPU 分析，並查看每個函式的 CPU 使用量明細。 執行暫停時，例如在中斷點，您可以檢視 CPU 使用量的結果。
 
@@ -33,11 +33,11 @@ ms.locfileid: "85543386"
 
 ## <a name="collect-cpu-usage-data"></a>收集 CPU 使用量資料
 
-1. 在 Visual Studio 專案中，將解決方案設定設為 [**發行**]，並選取 [**本機 Windows 偵錯工具**] （或 [**本機電腦**]）作為部署目標。
+1. 在 Visual Studio 專案中，將 [方案設定] 設定為 [ **發行** ]，然後選取 [ **本機 Windows 偵錯工具** ] (或 [ **本機電腦** ]) 作為部署目標。
 
     ![選取版本和本機電腦](../profiling/media/cpuuse_selectreleaselocalmachine.png "選取版本和本機電腦")
 
-1. 選取 [ **Debug**  >  **Performance Profiler**]。
+1. 選取 [ **Debug**  >  **效能分析工具**]。
 
 1. 在 [可用的工具]**** 下，選取 [CPU 使用量]****，然後選取 [啟動]****。
 
@@ -49,7 +49,7 @@ ms.locfileid: "85543386"
 
    CPU 使用量工具會分析資料，以及顯示報告。
 
-   ![CPU 使用量報告](../profiling/media/cpu_use_wt_report.png "CPU 使用量報告")
+   ![CPU 使用量報表](../profiling/media/cpu_use_wt_report.png "CPU 使用量報表")
 
 ## <a name="analyze-the-cpu-usage-report"></a>分析 CPU 使用量報告
 
@@ -61,7 +61,7 @@ ms.locfileid: "85543386"
 
 ### <a name="cpu-usage-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a> [CPU 使用量] 資料行
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**CPU 總計 [單位, %]**|![總計 % 資料方程式](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> 在選取的時間範圍內，呼叫函式和該函式所呼叫函式使用的毫秒數及 CPU 百分比。 這與 [CPU 使用率] **** 時間軸圖表不同，其會將時間範圍內的 CPU 活動總計與可用的 CPU 總計進行比較。|
 |**自我 CPU [單位, %]**|![自我 % 方程式](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 在選取的時間範圍內，呼叫函式使用的毫秒數及 CPU 百分比，不包含函式所呼叫的函式。|
@@ -80,14 +80,14 @@ ms.locfileid: "85543386"
 ![呼叫樹狀結構](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "呼叫樹狀圖結構")
 ::: moniker-end
 
-|映像|描述|
+|Image|描述|
 |-|-|
 |![步驟 1](../profiling/media/procguid_1.png "ProcGuid_1")|[CPU 使用量] 呼叫樹狀結構中的最上層節點是一個虛擬節點。|
 |![步驟 2](../profiling/media/procguid_2.png "ProcGuid_2")|在大部分的應用程式中，已停用 [顯示外部程式碼]**** 選項時，第二層節點是一個 [外部程式碼]**** 節點。 節點包含系統和架構程式碼，程式碼會啟動和停止應用程式、繪製 UI、控制執行緒排程，並提供其他低階服務給應用程式。|
 |![步驟 3](../profiling/media/procguid_3.png "ProcGuid_3")|第二層節點的子系是第二層系統和 Framework 程式碼所呼叫或建立的使用者程式碼方法和非同步常式。|
 |![步驟4](../profiling/media/procguid_4.png "ProcGuid_4")|某個方法的子節點只有父方法呼叫的資料。 停用 [顯示外部程式碼] **** 時，應用程式方法也可包含 [外部程式碼] **** 節點。|
 
-#### <a name="external-code"></a><a name="BKMK_External_Code"></a>外部程式碼
+#### <a name="external-code"></a><a name="BKMK_External_Code"></a> 外部程式碼
 
 您程式碼所執行的系統和架構函式稱為「外部程式碼」**。 外部程式碼函式會啟動和停止應用程式、繪製 UI、控制執行緒，以及將其他低階服務提供給應用程式。 在大多數情況下，您對外部程式碼並不感興趣，因此 [CPU 使用量] 呼叫樹狀結構會將使用者方法的外部函式，收集成一個 [外部程式碼]**** 節點。
 
@@ -108,7 +108,7 @@ ms.locfileid: "85543386"
 ![搜尋巢狀外部程式碼](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "搜尋巢狀外部程式碼")
 ::: moniker-end
 
-### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a>CPU 使用量呼叫樹狀結構中的非同步函式
+### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用量呼叫樹狀結構中的非同步函式
 
  當編譯器發現非同步方法時，它會建立隱藏的類別來控制方法的執行。 就概念而言，類別是狀態機器。 類別具有編譯器產生的函式，以非同步方式呼叫原始方法，以及若要執行它們所需的回呼、排程器和迭代器。 父方法呼叫原始方法時，編譯器會從父代的執行內容移除該方法，並在控制應用程式執行的系統和架構程式碼內容中執行隱藏類別方法。 非同步方法通常 (但不一定永遠) 會在一個或多個不同的執行緒上執行。 這段程式碼會在 [CPU 使用量]**** 呼叫樹狀結構中，顯示為樹狀結構最上層節點正下方 [外部程式碼]**** 節點的子系。
 

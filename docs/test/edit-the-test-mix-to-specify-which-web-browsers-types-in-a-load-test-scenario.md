@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 394331ae06760e0547cfc2b5a37a6dcd357e3614
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114529"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>編輯測試混合以指定負載測試情節中的網頁瀏覽器類型
@@ -74,10 +74,10 @@ ms.locfileid: "76114529"
 > [!WARNING]
 > [均分]**** 按鈕會覆寫所有已鎖定的項目。
 
-還可以直接在列中鍵入百分比值，**%** 而不是使用滑塊。 如果您直接輸入百分比值，其他項目就不會自動調整。
+您也可以直接在資料行中輸入百分比值， **%** 而不是使用滑杆。 如果您直接輸入百分比值，其他項目就不會自動調整。
 
 > [!NOTE]
-> 當總計未累積到 100% 或輸入到列中的百分比值為十進位時，**%** 將禁用滑塊。
+> 當總計未新增至100%，或輸入資料行的百分比值為十進位時，滑杆會停用 **%** 。
 
 當您手動輸入百分比值時，應確認所有項目的總和為 100%。 當您儲存混合時，如果總和不是 100%，系統會提示您接受該百分比值，或返回予以調整。 如果您選擇接受此設定，則會按比例分配至 100%。  例如，如果您有兩個項目，而且手動設定為 80% 和 40%。第一個項目會被設定為 66.67% (80 除以 120)，而第二個項目則會被設定為 33.33% (40 除以 120)。
 

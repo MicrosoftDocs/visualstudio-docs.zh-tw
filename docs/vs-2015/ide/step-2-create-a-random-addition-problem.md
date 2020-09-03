@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 54dee9c25fc9b8ddf1f8cf6c54c40d68ce53dc6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671850"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>步驟 2：建立隨機加法問題
@@ -22,13 +22,13 @@ ms.locfileid: "72671850"
 在本教學課程的第二個部分中，您會加入以隨機數字為基礎的數學問題，藉此增加測驗的挑戰性。 您也會建立名為 `StartTheQuiz()` 的方法，這個方法會填入問題並啟動倒數計時器。 稍後在本教學課程中，您將加入減法、乘法和除法問題。
 
 > [!NOTE]
-> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
+> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的總覽，請參閱 [教學課程2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
 
 ### <a name="to-create-a-random-addition-problem"></a>若要建立隨機加法問題
 
 1. 在表單設計工具中選擇表單 (Form1)。
 
-2. 在功能表列上選擇 [檢視]、[程式碼]。
+2. 在功能表列上選擇 [檢視] ****、[程式碼] ****。
 
      依您使用的程式設計語言而定，會出現 Form1.cs 或 Form1.vb，如此您就可以檢視表單的後置程式碼。
 
@@ -72,9 +72,9 @@ ms.locfileid: "72671850"
      [!code-csharp[VbExpressTutorial3Step2#18](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#18)]
      [!code-vb[VbExpressTutorial3Step2#18](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#18)]
 
-     這些陳述式會設定 [plusLeftLabel] 和 [plusRightLabel] 的 [Text] 屬性，讓它們顯示兩個隨機數字。 您必須使用整數的 `ToString()` 方法將數字轉換為文字。 在程式設計中，字串表示文字。 Label 控制項只會顯示文字，不會顯示數字。
+     這些陳述式會設定 [plusLeftLabel]**** 和 [plusRightLabel]**** 的 [Text]**** 屬性，讓它們顯示兩個隨機數字。 您必須使用整數的 `ToString()` 方法將數字轉換為文字。 在程式設計中，字串表示文字。 Label 控制項只會顯示文字，不會顯示數字。
 
-6. 在設計視窗中，按兩下 [開始] 按鈕，或是選擇該按鈕，然後選擇 Enter 鍵。
+6. 在設計視窗中，按兩下 [開始]**** 按鈕，或是選擇該按鈕，然後選擇 Enter 鍵。
 
      當受測者選擇這個按鈕時，測驗就會開始，而您剛加入了 Click 事件處理常式來實作該行為。
 
@@ -83,9 +83,9 @@ ms.locfileid: "72671850"
      [!code-csharp[VbExpressTutorial3Step2#4](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#4)]
      [!code-vb[VbExpressTutorial3Step2#4](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#4)]
 
-     第一個陳述式會呼叫新的 `StartTheQuiz()` 方法。 第二個陳述式會將 [startButton] 控制項的 [Enabled] 屬性設定為 [False]，如此受測者就無法在測驗期間選擇該按鈕。
+     第一個陳述式會呼叫新的 `StartTheQuiz()` 方法。 第二個陳述式會將 [startButton]**** 控制項的 [Enabled]**** 屬性設定為 [False]****，如此受測者就無法在測驗期間選擇該按鈕。
 
-8. 儲存您的程式碼，並執行程式碼，然後選擇 [開始] 按鈕。
+8. 儲存您的程式碼，並執行程式碼，然後選擇 [開始]**** 按鈕。
 
      隨機加法問題就會出現，如下圖所示。
 
@@ -93,8 +93,8 @@ ms.locfileid: "72671850"
 
      在本教學課程的下一個步驟中，您將加入總和。
 
-### <a name="to-continue-or-review"></a>繼續或檢視
+### <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要移到下一個教學課程步驟，請參閱[步驟 3：新增倒數計時器](../ide/step-3-add-a-countdown-timer.md)。
+- 若要移至下一個教學課程步驟，請參閱 [步驟3：加入倒數計時器](../ide/step-3-add-a-countdown-timer.md)。
 
-- 若要回到上一個教學課程步驟，請參閱[步驟 1：建立專案並將標籤新增至表單](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)。
+- 若要回到上一個教學課程步驟，請參閱 [步驟1：建立專案並將標籤新增至您的表單](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)。

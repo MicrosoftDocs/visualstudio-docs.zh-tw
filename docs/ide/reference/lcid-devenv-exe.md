@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77557929"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
@@ -37,22 +37,22 @@ devenv {/LCID|/L} LocaleID
 
 ## <a name="arguments"></a>引數
 
-- *區域 ID*
+- *LocaleID*
 
   必要。 所指定語言的地區設定識別碼 (LCID)。
 
 ## <a name="remarks"></a>備註
 
-載入 IDE，並設定環境的預設自然語言。 此更改在會話之間保留，IDE 在 **"工具** > **選項** > **環境** > **國際設置** > **語言"** 框中顯示此更改。
+載入 IDE，並設定環境的預設自然語言。 這項變更會在會話之間保存，IDE 會在 [**工具**  >  **選項**  >  **環境**  >  **國際設定**  >  **語言**] 方塊中顯示這項變更。
 
 如果您的系統不適用指定的語言，則會忽略 `/LCID` 參數。
 
 下表列出 Visual Studio 所支援語言的 LCID。
 
-|Language|LCID|
+|語言|LCID|
 |--------------|----------|
-|中文 (簡體)|2052|
-|中文 (繁體)|1028|
+|簡體中文|2052|
+|繁體中文|1028|
 |捷克文|1029|
 |英文|1033|
 |法文|1036|

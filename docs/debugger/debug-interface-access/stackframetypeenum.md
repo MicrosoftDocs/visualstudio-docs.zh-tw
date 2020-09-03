@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f83cdb163881366a1a0bede95a07e1dae1fc50a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461095"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
@@ -36,20 +36,20 @@ enum StackFrameTypeEnum {
 ```
 
 ## <a name="elements"></a>元素
-`FrameTypeFPO`省略框架指標;可用的 FPO 資訊。
+`FrameTypeFPO` 已省略框架指標;可用的 FPO 資訊。
 
-`FrameTypeTrap`核心陷阱框架。
+`FrameTypeTrap` 核心陷阱框架。
 
-`FrameTypeTSS`核心陷阱框架。
+`FrameTypeTSS` 核心陷阱框架。
 
-`FrameTypeStandard`標準 EBP 堆疊框架。
+`FrameTypeStandard` 標準 EBP 堆疊框架。
 
-`FrameTypeFrameData`省略框架指標;可用的畫面格資料資訊。
+`FrameTypeFrameData` 已省略框架指標;可用的畫面格資料資訊。
 
-`FrameTypeUnknown`沒有任何偵錯工具資訊的框架。
+`FrameTypeUnknown` 沒有任何偵錯工具資訊的框架。
 
 ## <a name="remarks"></a>備註
-這個列舉中的值是由[IDiaStackFrame：： get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)方法的呼叫所傳回。
+呼叫 [IDiaStackFrame：： get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) 方法時，會傳回此列舉中的值。
 
 ## <a name="requirements"></a>需求
 標頭： cvconst。h

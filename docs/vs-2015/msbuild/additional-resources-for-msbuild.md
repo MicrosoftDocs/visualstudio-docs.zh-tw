@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3557e830ba90b1e9f32b01c344867c5370e7425c
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586190"
 ---
 # <a name="additional-resources-for-msbuild"></a>MSBuild 的其他資源
@@ -41,6 +41,6 @@ ms.locfileid: "82586190"
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專屬的社群論壇。  
   
 ## <a name="see-also"></a>另請參閱  
- [Msbuild.exe](msbuild.md)   
+ [Msbuild](msbuild.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)

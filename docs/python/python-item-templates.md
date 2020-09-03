@@ -11,15 +11,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 528606356c2d976de71ab2c0317a1a0236d2e63f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533389"
 ---
 # <a name="python-item-templates"></a>Python 項目範本
 
-專案範本可透過 [**專案**] [  >  **加入新專案**] 功能表命令，或內容功能表中的 [**加入**  >  **新專案**] 命令（位於**方案總管**），在 Python 專案中提供。
+您可以透過 [**專案**  >  **加入新專案**] 功能表命令，在 Python 專案中取得專案範本，或在方案總管的內容功能表上使用 [**加入**  >  **新專案**] 命令。 **Solution Explorer**
 
 ![[加入新項目] 對話方塊](media/project-item-templates.png)
 
