@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97c1034fbbafa04af2d62526fdbb48812d64e050
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565808"
 ---
 # <a name="open-project-command"></a>開啟專案命令
@@ -57,7 +57,7 @@ File.OpenProject filename
 
 ## <a name="see-also"></a>另請參閱
 
-- [視覺化工作室命令](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
-- [查找/命令框](../../ide/find-command-box.md)
+- [尋找/命令方塊](../../ide/find-command-box.md)
 - [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

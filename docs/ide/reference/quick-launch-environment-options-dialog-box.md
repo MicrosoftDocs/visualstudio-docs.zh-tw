@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 706b54e3ee925b1833f860da2f84c8d28af9617e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565665"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>選項對話方塊、環境、快速啟動
@@ -30,7 +30,7 @@ ms.locfileid: "75565665"
 
 ## <a name="category-list"></a>類別目錄清單
 
-[快速啟動] 搜尋結果會出現在四個分類中：[最近用過的函式]****、[功能表]****、[選項]**** 和 [開啟文件]****，並提供該分類的項目數。 要按類別遍歷搜尋結果，請選擇**Ctrl**+**Q**鍵以顯示下一個類別中的所有結果。 出現最後一個類別後 **，Ctrl**+**Q**將顯示每個類別中的幾個結果。 按**Ctrl**+**移位**+**Q**以以相反的順序流覽類別。 若要檢視某個分類底下的所有搜尋結果，請選擇該分類名稱。
+[快速啟動] 搜尋結果會出現在四個分類中：[最近用過的函式]****、[功能表]****、[選項]**** 和 [開啟文件]****，並提供該分類的項目數。 若要依類別逐頁流覽搜尋結果，請選擇**Ctrl** + **Q**鍵，以顯示下一個類別的所有結果。 最後一個分類出現之後， **Ctrl** + **Q**會顯示每個類別的一些結果。 按下**Ctrl** + **Shift** + **Q**以反向順序流覽類別。 若要檢視某個分類底下的所有搜尋結果，請選擇該分類名稱。
 
 您可以使用下列快速鍵，限制搜尋特定分類。
 
@@ -42,7 +42,7 @@ ms.locfileid: "75565665"
 |文件|@doc<br /><br /> 例如， `@doc program.cs`|限制搜尋符合搜尋準則之開啟文件的檔案名稱和路徑，但不會搜尋檔案本身內的文字。|
 
 > [!NOTE]
-> 您可以在"**選項"** 對話方塊中更改 **"常規** > **鍵盤"** 頁上的快速鍵。
+> 您可以在 [ **General**  >  **選項**] 對話方塊的 [一般**鍵盤**] 頁面上，變更快速鍵。
 
 ## <a name="show-previous-results"></a>顯示先前的結果
 

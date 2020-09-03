@@ -5,10 +5,10 @@ author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
 ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75405812"
 ---
 # <a name="intellisense"></a>IntelliSense
@@ -23,18 +23,18 @@ IntelliSense 提供數個功能，可協助增強撰寫和編輯程式碼的體�
 
 完成視窗也支援依類型篩選包含的完成項目。 例如，您可以限制清單的成員只代表類型 (如類別或委派)。 您可以透過按一下代表所要篩選類型的特定圖示，或經由對應於指定類型的鍵盤快速鍵來啟用此篩選程序。 這些圖示位於完成視窗的底部，如下所示：
 
-| 圖示                         | 名稱          | 關鍵字    | 熱鍵 |
+| 圖示                         | Name          | 關鍵字    | 熱鍵 |
 | -----------------------------|---------------| -----------|--------|
-| ![類別圖示](media/classes-icon.png)  | class         | `class`    |  ⌥C
+| ![類別圖示](media/classes-icon.png)  | Class - 類別         | `class`    |  ⌥C
 | ![常數圖示](media/constant-icon.png) | 常數      | `const`    |  ⌥O
-| ![委派圖示](media/delegate-icon.png) | 委派      | `delegate` |  ⌥D
+| ![委派圖示](media/delegate-icon.png) | Delegate - 委派      | `delegate` |  ⌥D
 | ![列舉圖示](media/enums-icon.png)    | 列舉          | `enum`     |  ⌥E
 | ![事件圖示](media/event-icon.png)    | event         |            |  ⌥V
 | ![欄位圖示](media/fields-icon.png)   | field         |            |  ⌥F
-| ![介面圖示](media/interface-icon.png)| 介面     | `interface`|  ⌥I
+| ![介面圖示](media/interface-icon.png)| interface     | `interface`|  ⌥I
 | ![關鍵字圖示](media/keyword-icon.png)  | 關鍵字 (keyword)       |            |  ⌥K
 | ![方法圖示](media/method-icon.png)   | method        |            |  ⌥M
-| ![命名空間圖示](media/namespace-icon.png)| 命名空間     | `namespace`|  ⌥N
+| ![命名空間圖示](media/namespace-icon.png)| namespace     | `namespace`|  ⌥N
 | ![屬性圖示](media/props-icon.png)    | 屬性      |            |  ⌥P
 | ![程式碼片段圖示](media/snippet-icon.png)  | 程式碼片段       | `class`    |  ⌥S
 | ![結構圖示](media/struct-icon.png)   | structure     | `struct`   |  ⌥S

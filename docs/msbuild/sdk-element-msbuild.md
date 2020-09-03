@@ -18,17 +18,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a704744032c5dea70246463a816ba8e1f5c84e8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632468"
 ---
 # <a name="sdk-element-msbuild"></a>Sdk 元素 (MSBuild)
 
-引用 MSBuild 專案 SDK。
+參考 MSBuild 專案 SDK。
 
- \<Project> \<SDK>
+ \<Project> \<Sdk>
 
 ## <a name="syntax"></a>語法
 
@@ -54,12 +54,12 @@ ms.locfileid: "77632468"
 
 ### <a name="parent-elements"></a>父元素
 
-| 元素 | 描述 |
+| 項目 | 描述 |
 | - | - |
-| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔案所需的根項目。 |
+| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
 
 ## <a name="see-also"></a>另請參閱
 
 - [如何：參考 MSBuild 專案 SDK](../msbuild/how-to-use-project-sdk.md)
-- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)
+- [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)
