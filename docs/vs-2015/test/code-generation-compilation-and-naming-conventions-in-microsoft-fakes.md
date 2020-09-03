@@ -9,10 +9,10 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ffcab2800168ab6d66426c2e7beb77a158ced1eb
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851824"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的程式碼產生、編譯和命名慣例
@@ -22,9 +22,9 @@ ms.locfileid: "75851824"
 
  **需求**
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
-## <a name="BKMK_In_this_topic"></a>本主題內容
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> 本主題中
  [程式碼產生和編譯](#BKMK_Code_generation_and_compilation)
 
 - [設定 Stub 的程式碼產生](#BKMK_Configuring_code_generation_of_stubs) • [類型篩選](#BKMK_Type_filtering) • [設定具象類別及虛擬方法的 Stub](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [內部類型](#BKMK_Internal_types) • [最佳化建置時間](#BKMK_Optimizing_build_times) • [避免組件名稱發生衝突](#BKMK_Avoiding_assembly_name_clashing)
@@ -37,9 +37,9 @@ ms.locfileid: "75851824"
 
 - [指引](#BKMK_Guidance)
 
-## <a name="BKMK_Code_generation_and_compilation"></a> 程式碼產生和編譯
+## <a name="code-generation-and-compilation"></a><a name="BKMK_Code_generation_and_compilation"></a> 程式碼產生和編譯
 
-### <a name="BKMK_Configuring_code_generation_of_stubs"></a> 設定 Stub 的程式碼產生
+### <a name="configuring-code-generation-of-stubs"></a><a name="BKMK_Configuring_code_generation_of_stubs"></a> 設定 Stub 的程式碼產生
  虛設常式類型會在有 .fakes 副檔名的 XML 檔中設定產生 。 Fakes 框架會在建置流程中透過自訂 MSBuild 工作整合，並在建置期間偵測這些檔案。 Fakes 程式碼產生器會編譯虛設常式類型至組件內，並加入專案參考。
 
  下列範例說明在 FileSystem.dll 中定義的虛設常式類型：
@@ -51,7 +51,7 @@ ms.locfileid: "75851824"
 
 ```
 
-### <a name="BKMK_Type_filtering"></a> 類型篩選
+### <a name="type-filtering"></a><a name="BKMK_Type_filtering"></a> 類型篩選
  篩選條件可以在 .fakes 檔案中設定，以限制應該設定哪些虛設常式類型。 您可以在 StubGeneration 項目下加入 Clear、Add、Remove 項目的未繫結數目，已建置所選類型的清單。
 
  例如，這個 .fakes 檔案會針對在 System 和 System.IO 命名空間下的類型產生虛設常式，但是排除 System 中任何包含 "Handle" 的類型：
@@ -74,13 +74,13 @@ ms.locfileid: "75851824"
 
 - 篩選條件預設不區分大小寫；篩選條件會執行子字串比對：
 
-     `el` 比對 "hello"
+     `el` 比對符合 "hello"
 
 - 將 `!` 加入篩選條件結尾會讓它變成精確區分大小寫的比對：
 
      `el!` 不符合 "hello"
 
-     `hello!` 比對 "hello"
+     `hello!` 比對符合 "hello"
 
 - 將 `*` 加入篩選條件的結尾會讓它符合字串的前置詞：
 
@@ -92,7 +92,7 @@ ms.locfileid: "75851824"
 
      `el;wo` 比對符合 "hello" 和 "world"
 
-### <a name="BKMK_Stubbing_concrete_classes_and_virtual_methods"></a> 設定具象類別及虛擬方法的 Stub
+### <a name="stubbing-concrete-classes-and-virtual-methods"></a><a name="BKMK_Stubbing_concrete_classes_and_virtual_methods"></a> 設定象具體類別和虛擬方法
  預設會為所有非密封類別產生虛設常式類型。 透過 .fakes 組態檔可將虛設常式類型限制為抽象類別：
 
 ```xml
@@ -109,7 +109,7 @@ ms.locfileid: "75851824"
 </Fakes>
 ```
 
-### <a name="BKMK_Internal_types"></a> 內部類型
+### <a name="internal-types"></a><a name="BKMK_Internal_types"></a> 內部類型
  Fakes 程式碼產生器會針對所產生之 Fakes 組件的可見類型產生填充碼和虛設常式類型。 若要讓 Fakes 和測試組件看見填充組件的內部類型，請將 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 屬性加入填充組件的程式碼，以提供可視性給所產生的 Fakes 組件和測試組件。 以下為範例：
 
 ```csharp
@@ -142,7 +142,7 @@ ms.locfileid: "75851824"
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
- 您可以針對 Fakes 組件指定不同的公用金鑰，例如您已針對填充組件建立的金鑰，方法是指定 **.snk** 檔案的完整路徑，其中包含替代金鑰做為 **.fakes** 檔案之 `Fakes`\\`Compilation` 項目中的 `KeyFile` 屬性值。 例如：
+ 您可以指定 Fakes 元件的不同公開金鑰，例如您針對填充元件建立的索引鍵，方法是指定 **.snk**檔案的完整路徑，該檔案中包含的替代索引鍵做為 `KeyFile` `Fakes` \\ `Compilation` **Fakes**檔案之元素中的屬性值。 例如：
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -164,7 +164,7 @@ ms.locfileid: "75851824"
 
  在上面的範例中，`Alternate_public_key` 和 `Test_assembly_public_key` 兩個值可以是相同的。
 
-### <a name="BKMK_Optimizing_build_times"></a> 最佳化建置時間
+### <a name="optimizing-build-times"></a><a name="BKMK_Optimizing_build_times"></a> 最佳化建置時間
  編譯 Fakes 組件可能大幅增加建置時間。 您也可以藉由在不同的集中式專案中產生 .NET System 組件的 Fake 組件和協力廠商組件，以最小化建置時間。 因為這類組件在電腦上極少變動，您可以在其他專案中重複使用產生的 Fakes 組件。
 
  從單元測試專案中，您可以取得已編譯 Fakes 組件的參考，這些組件是放置在專案資料夾中的 FakesAssemblies 底下。
@@ -183,7 +183,7 @@ ms.locfileid: "75851824"
 
     - 對於您已建立 Fakes 的每個組件，加入專案之 Fakes.Prebuild\FakesAssemblies 資料夾中對應 DLL 檔案的參考。
 
-### <a name="BKMK_Avoiding_assembly_name_clashing"></a> 避免組件名稱發生衝突
+### <a name="avoiding-assembly-name-clashing"></a><a name="BKMK_Avoiding_assembly_name_clashing"></a> 避免元件名稱衝突
  在 Team Build 環境中，所有組建輸出會合併到單一目錄。 在多個專案使用 Fakes 的情況下，可能會發生不同版本的 Fakes 組件彼此覆寫的情形。 例如，.NET Framework 2.0 的 TestProject1 fakes mscorlib.dll 與 .NET Framework 4 的 TestProject2 fakes mscorlib.dll 都會產生 mscorlib.Fakes.dll Fakes 組件。
 
  若要避免這個問題，當加入 .fakes 檔時，Fake 應該會自動為非專案參考建立版本限定的 Fake 組件名稱。 當您建立 Fakes 組件名稱時，版本限定的 Fakes 組件名稱會嵌入版本號碼：
@@ -201,9 +201,9 @@ attribute of the Assembly element in the .fakes:
 
 ```
 
-## <a name="BKMK_Fakes_naming_conventions"></a> Fakes 命名慣例
+## <a name="fakes-naming-conventions"></a><a name="BKMK_Fakes_naming_conventions"></a> Fakes 命名慣例
 
-### <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> 填充碼類型和 Stub 類型命名慣例
+### <a name="shim-type-and-stub-type-naming-conventions"></a><a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> 填充碼類型和 Stub 類型命名慣例
  **命名空間**
 
 - .Fakes 後置字元會加入命名空間。
@@ -212,7 +212,7 @@ attribute of the Assembly element in the .fakes:
 
 - Global.Fakes 包含空白命名空間的填充碼類型。
 
-  **類型名稱**
+  **型別名稱**
 
 - 填充碼前置詞會加入類型名稱，以建置填充碼類型名稱。
 
@@ -228,7 +228,7 @@ attribute of the Assembly element in the .fakes:
 
 - 會針對填充碼類型複製巢狀類型結構。
 
-### <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> 填充碼委派屬性或 stub 委派欄位命名慣例
+### <a name="shim-delegate-property-or-stub-delegate-field-naming-conventions"></a><a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> 填充碼委派屬性或 stub 委派欄位命名慣例
  欄位命名適用的**基本規則**，從空白名稱開始：
 
 - 會附加方法名稱。
@@ -237,11 +237,11 @@ attribute of the Assembly element in the .fakes:
 
 - 如果方法為泛型，則會附加 `Of`*n*，其中 *n* 是泛型方法引數的數目。
 
-  **特殊方法名稱**，例如屬性 getter 或 setter，會依照下表所述加以處理。
+  **特殊方法名稱** ，例如屬性 getter 或 setter，會依照下表所述的方式來處理。
 
 |如果方法是...|範例|附加的方法名稱|
 |-------------------|-------------|--------------------------|
-|**建構函式**|`.ctor`|`Constructor`|
+|**函數**|`.ctor`|`Constructor`|
 |靜態**建構函式**|`.cctor`|`StaticConstructor`|
 |方法名稱由兩個以 "_" 分隔的部分 (例如屬性 getter) 組成的**存取子**|*kind_name* (一般情況，但 ECMA 不會強制執行)|*NameKind*，其中這兩個部分會改成大寫並互換|
 ||`Prop` 屬性的 getter|`PropGet`|
@@ -260,32 +260,32 @@ attribute of the Assembly element in the .fakes:
 
 - 除非有多載模稜兩可的情況，否則會忽略**傳回類型**。 如果是這種情況，則傳回型別將會附加在名稱結尾。
 
-### <a name="BKMK_Parameter_type_naming_conventions"></a> 參數類型命名慣例
+### <a name="parameter-type-naming-conventions"></a><a name="BKMK_Parameter_type_naming_conventions"></a> 參數類型命名慣例
 
 |假設|附加的字串是...|
 |-----------|-------------------------|
 |**類型**`T`|T<br /><br /> 命名空間、巢狀結構和泛型 tics 會被丟棄。|
-|**out 參數**`out T`|`TOut`|
+|**Out 參數**`out T`|`TOut`|
 |**ref 參數** `ref T`|`TRef`|
 |**陣列類型**`T[]`|`TArray`|
 |**多維陣列**類型 `T[ , , ]`|`T3`|
 |**指標**類型 `T*`|`TPtr`|
-|**泛型類型**`T<R1, …>`|`TOfR1`|
-|類型 `C<TType>` 的**泛型類型引數**`!i`|`Ti`|
-|方法 `M<MMethod>` 的**泛型方法引數**`!!i`|`Mi`|
-|**巢狀類型**`N.T`|會附加 `N`，後接 `T`|
+|**泛型型**別`T<R1, …>`|`TOfR1`|
+|型**別的泛型型別引數** `!i``C<TType>`|`Ti`|
+|方法的**泛型方法引數** `!!i``M<MMethod>`|`Mi`|
+|**巢狀型別**`N.T`|會附加 `N`，後接 `T`|
 
-### <a name="BKMK_Recursive_rules"></a> 遞迴規則
+### <a name="recursive-rules"></a><a name="BKMK_Recursive_rules"></a> 遞迴規則
  下列規則會遞迴套用：
 
 - 由於 Fakes 會使用 C# 來產生 Fakes 組件，因此任何會產生無效 C# 語彙基元的字元都會逸出為 "_" (底線)。
 
 - 如果產生的名稱與宣告類型的任何成員發生衝突，則會使用編號配置，方法是附加兩位數計數器，從 01 開始。
 
-## <a name="BKMK_External_resources"></a> 外部資源
+## <a name="external-resources"></a><a name="BKMK_External_resources"></a> 外部資源
 
-### <a name="BKMK_Guidance"></a> 指引
- [使用 Visual Studio 2012 測試持續傳遞 – 第 2 章：單元測試：測試 Inside](https://msdn.microsoft.com/library/jj159340.aspx)
+### <a name="guidance"></a><a name="BKMK_Guidance"></a> 指導
+ [使用 Visual Studio 2012 測試持續傳遞 – 第 2 章：單元測試：測試內部](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>另請參閱
  [使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)

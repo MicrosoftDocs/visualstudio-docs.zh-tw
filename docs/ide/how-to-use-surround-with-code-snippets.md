@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bbbd283186ed31960b2f84bd862a762abae748de
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769769"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>如何：使用範圍陳述式程式碼片段
@@ -29,7 +29,7 @@ ms.locfileid: "85769769"
 
 1. 輸入**ctrl** + **K**、 **ctrl** + **S**。
 
-1. 使用滑鼠從程式碼片段清單中選取程式碼片段，或輸入程式碼片段的名稱，然後按**tab**或**enter**鍵。
+1. 使用滑鼠從程式碼片段清單中選取程式碼片段，或輸入程式碼片段的名稱並按 **tab** 鍵或 **enter**鍵。
 
 ## <a name="to-use-surround-with-code-snippets-through-the-edit-menu"></a>透過 [編輯] 功能表使用範圍陳述式程式碼片段
 
@@ -39,9 +39,9 @@ ms.locfileid: "85769769"
 
 1. 從 [編輯]**** 功能表，選取 [IntelliSense]****，然後選取 [範圍陳述式]**** 命令。
 
-1. 從程式碼片段插入器中選取程式碼片段，然後按**tab**或**enter**。
+1. 從程式碼片段插入器中選取程式碼片段，然後按 **tab** 或 **enter**鍵。
 
-     或者，您可以鍵入程式碼片段的名稱，然後按**tab**或**enter**。
+     或者，您可以輸入程式碼片段的名稱，然後按 **tab** 或 **enter**鍵。
 
 ## <a name="to-use-surround-with-code-snippets-through-the-context-menu"></a>透過操作功能表使用範圍陳述式程式碼片段
 
@@ -51,9 +51,9 @@ ms.locfileid: "85769769"
 
 1. 以滑鼠右鍵按一下選取的文字，然後從內容功能表中選取 [範圍語句 **] 命令。**
 
-1. 從程式碼片段插入器中選取程式碼片段，然後按**tab**或**enter**。
+1. 從程式碼片段插入器中選取程式碼片段，然後按 **tab** 或 **enter**鍵。
 
-     或者，您可以鍵入程式碼片段的名稱，然後按**tab**或**enter**。
+     或者，您可以輸入程式碼片段的名稱，然後按 **tab** 或 **enter**鍵。
 
 ## <a name="see-also"></a>另請參閱
 

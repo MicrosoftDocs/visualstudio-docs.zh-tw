@@ -1,5 +1,5 @@
 ---
-title: FullClassName 元素（VS template wizard extension）
+title: 'FullClassName 元素 (VS template wizard 擴充) '
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ed9ceb57f49d8c08b75aa140e45a0f4268f4336c
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769597"
 ---
-# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName 元素（Visual Studio 範本 wizard 延伸模組）
-執行介面之類別的完整名稱 `IWizard` 。
+# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Visual Studio 範本 wizard 擴充功能 (的 FullClassName 元素) 
+實介面之類別的完整名稱 `IWizard` 。
 
  \<VSTemplate> \<WizardExtension>
 ... \<FullClassName>
@@ -43,14 +43,14 @@ ms.locfileid: "85769597"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|包含自訂範本 wizard 的註冊元素。|
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|包含用於自訂範本 wizard 的註冊專案。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- 此文字會指定用來執行介面的類別 `IWizard` 。 指定的類別必須存在於[assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)元素所指定的元件中。
+ 此文字指定實介面的類別 `IWizard` 。 指定的類別必須存在於 [assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) 元素所指定的元件中。
 
 ## <a name="remarks"></a>備註
  `FullClassName` 是 `WizardExtension` 的必要子項目。

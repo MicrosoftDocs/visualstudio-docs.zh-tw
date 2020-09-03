@@ -18,19 +18,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 98e489a37e5d75cbc17d17c32a1fa3b53f9993f8
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770220"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>如何：使用類別設計工具建立類型
 
 若要為 C# 和 Visual Basic 專案設計新的類型，請在類別圖上建立這些類型。 若要查看現有的類型，請參閱[如何：檢視現有類型](how-to-view-existing-types.md)。
 
-## <a name="create-a-new-type"></a><a name="CreateType"></a>建立新的類型
+## <a name="create-a-new-type"></a><a name="CreateType"></a> 建立新的類型
 
-1. 在 [**工具箱**] 的 [**類別設計工具**] 底下，將其中一個拖曳至類別圖上：
+1. 在 [ **工具箱**] 的 [ **類別設計工具**] 下，將下列其中一個拖曳至類別圖：
 
     - [類別]**** 或 [抽象類別]****
 
@@ -56,7 +56,7 @@ ms.locfileid: "85770220"
 
 4. 現在請加入其他項目以定義類型：
 
-    |**對於**|**加入**|
+    |**出於**|**加入**|
     |-|-|
     |Class、Abstract Class、Structure 或 Struct|定義類別的方法、屬性、欄位、事件、建構函式 (方法)、解構函式 (方法) 和常數。|
     |列舉|構成列舉的欄位值|
@@ -76,7 +76,7 @@ ms.locfileid: "85770220"
 
    自訂屬性會套用至類型。
 
-## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>將自訂屬性套用至類型成員
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a> 將自訂屬性套用至類型成員
 
 1. 在類別圖上的成員類型圖案中按一下成員名稱，或是在 [類別細節] 視窗的成員列上按一下成員名稱。
 

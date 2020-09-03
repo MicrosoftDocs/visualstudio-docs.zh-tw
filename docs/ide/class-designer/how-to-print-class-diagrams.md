@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2fb7b22c523216a41cddfc5c6cf8e87a915a9e38
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770074"
 ---
 # <a name="how-to-print-class-diagrams"></a>如何：列印類別圖表
@@ -28,7 +28,7 @@ ms.locfileid: "85770074"
 
 2. 按一下 [檔案]**** 功能表中的 [列印]****。
 
-整份類別圖表隨即列印。 您可能需要調整 [版面**設定**] 對話方塊中的設定，才能以適當的大小列印。
+整份類別圖表隨即列印。 您可能需要調整 [版面 **設定** ] 對話方塊中的設定，才能以適當的大小進行列印。
 
 ## <a name="see-also"></a>另請參閱
 

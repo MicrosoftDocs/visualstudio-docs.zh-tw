@@ -9,10 +9,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c4cac9981a582d5ba9527e0f8dc47d14b6fba18b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851758"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel
@@ -20,13 +20,13 @@ ms.locfileid: "75851758"
 
 自動程式化 UI 測試的測試架構和動作記錄並不支援所有可能的使用者介面。 它可能不支援您要測試的特定 UI。 例如，您無法立即為 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 試算表建立自動程式碼 UI 測試或動作記錄。 不過，您可以利用自動程式碼 UI 測試架構的擴充性，在自動程式碼 UI 測試架構中自行建立可以支援特定 UI 的擴充功能。 以下主題會透過範例說明如何擴充架構，以支援 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 的自動程式碼 UI 測試和動作記錄建立作業。 如需支援平台的詳細資訊，請參閱[自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)。
 
- **Requirements**
+ **需求**
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
   本節介紹可記錄及播放 Excel 工作表測試的自動程式碼 UI 測試擴充功能。 本節將說明該擴充功能的每個部分，想要建立此類擴充功能的開發人員可搭配程式碼註解依序操作。
 
-  ![UI 測試架構](../test/media/ui-testarch.png "UI_TestArch")架構總覽
+  ![UI 測試架構](../test/media/ui-testarch.png "UI_TestArch") 架構總覽
 
 ## <a name="download-the-sample"></a>下載範例
  此範例包含 `CodedUIExtensibilitySample.sln` 解決方案中的四個專案：
@@ -70,12 +70,12 @@ ms.locfileid: "75851758"
 ### <a name="testing-excel-with-the-sampletestproject"></a>使用 SampleTestProject 測試 Excel
  您可以在提供的測試專案中執行測試 (該專案可能會使用您沒有的特定版本 Excel)，或是自行建立測試專案並自行記錄測試。 如需詳細資訊，請參閱[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
 - [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
-- [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
-- [自動程式化 UI 測試的最佳做法](../test/best-practices-for-coded-ui-tests.md)
-- [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [使用消費者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
+- [自動程式化 UI 測試的最佳作法](../test/best-practices-for-coded-ui-tests.md)
+- [自動程式碼 UI 測試和動作記錄的支援設定和平臺](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -14,19 +14,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1ffae72a3fe171b6bd16cfbc623a777f4d4d2e4
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770203"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>如何：在類別設計工具中建立類型之間的繼承
 
-若要使用**類別設計工具**在類別圖表上建立兩個類型之間的繼承關聯性，請將基底類型連接到其衍生類型或類型。 您可以建立兩個類別之間的繼承關係、一個類別和一個介面之間的繼承關係，或兩個介面之間的繼承關係。
+若要使用 **類別設計工具**在類別圖上建立兩個類型之間的繼承關係，請將基底類型連接至其衍生類型或類型。 您可以建立兩個類別之間的繼承關係、一個類別和一個介面之間的繼承關係，或兩個介面之間的繼承關係。
 
 ## <a name="to-create-an-inheritance-between-types"></a>建立兩個類型之間的繼承
 
-1. 從**方案總管**的專案中，開啟類別圖表（.cd）檔案。
+1. 從 **方案總管**的專案中，開啟 ( .cd) 檔案的類別圖表。
 
      如果您還沒有類別圖，請先建立類別圖。 請參閱[如何：將類別圖新增至專案](how-to-add-class-diagrams-to-projects.md)。
 

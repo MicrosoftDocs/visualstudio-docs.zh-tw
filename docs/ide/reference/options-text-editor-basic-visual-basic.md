@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 778cd1f9c126b176cafad8b33a147d284bea1b67
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88214650"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>選項、文字編輯器、基本 (Visual Basic)、進階
@@ -32,13 +32,13 @@ ms.locfileid: "88214650"
 
 - 即時程式碼分析或背景分析範圍
 
-   設定 managed 程式碼的背景分析範圍。 如需詳細資訊，請參閱 [如何：設定受控碼的即時程式碼分析範圍](../../code-quality/configure-live-code-analysis-scope-managed-code.md)。
+   設定 managed 程式碼的背景分析範圍。 如需詳細資訊，請參閱 [如何：設定 managed 程式碼的即時程式碼分析範圍](../../code-quality/configure-live-code-analysis-scope-managed-code.md)。
 
 ## <a name="using-directives"></a>using 指示詞
 
 - 排序 using 時先放置 'System' 指示詞
 
-   選取時，滑鼠右鍵功能表中的 [ **移除並排序 using** ] 命令會排序指示詞 `using` ，並將 ' System ' 命名空間放在清單頂端。
+   選取時，右鍵功能表中的 [ **移除] 和 [排序 using** ] 命令會排序指示詞 `using` ，並將 ' System ' 命名空間置於清單頂端。
 
 - 使用指示詞群組來進行分隔
 
@@ -55,7 +55,7 @@ ms.locfileid: "88214650"
 
  **啟用參考和關鍵字的反白顯示**
 
-文字編輯器可以反白顯示符號的所有執行個體或子句中的所有關鍵字，例如 `If..Then`、`While...End While` 或 `Try...Catch...Finally`。 您可以按**ctrl**  +  **shift**  +  **向下**鍵或**ctrl**  +  **shift**  +  **向上鍵**，在反白顯示的參考或關鍵字之間流覽。
+文字編輯器可以反白顯示符號的所有執行個體或子句中的所有關鍵字，例如 `If..Then`、`While...End While` 或 `Try...Catch...Finally`。 您可以按下**ctrl**  +  **shift**  +  **鍵**或**ctrl**  +  **shift**  +  **向上**箭號，在反白顯示的參考或關鍵字之間流覽。
 
 ## <a name="outlining"></a>大綱
 
@@ -104,7 +104,7 @@ ms.locfileid: "88214650"
 
 **自動插入 End 建構**
 
-當您輸入（例如程式宣告的第一行）， `Sub Main` 然後按 **enter**鍵時，文字編輯器會加入相符的 `End Sub` 行。 同樣地，如果新增 [For](/dotnet/visual-basic/language-reference/statements/for-next-statement) 迴圈，則文字編輯器會新增對稱的 `Next` 陳述式。 選取此選項後，程式碼編輯器會自動新增 End 建構。
+當您輸入（例如，程式宣告的第一行） `Sub Main` 並按下 **enter**時，文字編輯器會新增相符的 `End Sub` 行。 同樣地，如果新增 [For](/dotnet/visual-basic/language-reference/statements/for-next-statement) 迴圈，則文字編輯器會新增對稱的 `Next` 陳述式。 選取此選項後，程式碼編輯器會自動新增 End 建構。
 
 **自動插入 Interface 及 MustOverride 成員**
 
@@ -114,7 +114,7 @@ ms.locfileid: "88214650"
 
 文字編輯器可以提供一般錯誤的解決方案建議，並讓您選取要套用到程式碼的適當修正措施。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
 - [索引標籤、所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages-tabs.md)

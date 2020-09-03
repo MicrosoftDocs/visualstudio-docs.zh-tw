@@ -1,13 +1,13 @@
 ---
 ms.topic: include
 ms.openlocfilehash: 47c390fbc7a6f84c25d4bde0317985bd149cae2f
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68159592"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89325434"
 ---
-1. 啟動視覺化工作室並選擇 **"檔** > **新專案** > **"。**
+1. 啟動 Visual Studio，然後**選取 [** 檔案  >  **新增**  >  **專案**]。
 
 1. 在 [新增專案]**** 對話方塊中，搜尋 "Python"，並選取 [從現有 Python 程式碼]**** 範本，再提供專案名稱和位置，然後選取 [確定]****。
 
@@ -15,7 +15,7 @@ ms.locfileid: "68159592"
 
     ![從現有程式碼新增專案 - 步驟 1](../media/projects-from-existing-1.png)
 
-1. 在下一個對話方塊中，選取您專案的啟動檔案，然後選取 [下一步]**** （如果需要，請選擇環境;否則接受預設值。請注意，該對話方塊僅顯示根資料夾中的檔;因此，該對話方塊僅顯示根資料夾中的檔。如果所需的檔位於子資料夾中，請將開機檔案留空，並在以後在**解決方案資源管理器**中將其設置（如下所述）。
+1. 在下一個對話方塊中，選取您專案的啟動檔案，然後選取 [下一步]****  (如有需要，請選取環境;否則，請接受預設值。 ) 請注意，此對話方塊只會顯示根資料夾中的檔案;如果您想要的檔案是在子資料夾中，請將啟動檔案留白，並在稍後的 **方案總管** 中設定， (如下所述) 。
 
     ![從現有程式碼新增專案 - 步驟 2](../media/projects-from-existing-2.png)
 
