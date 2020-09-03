@@ -2,21 +2,23 @@
 title: 開始使用訂閱系統管理入口網站 | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
-ms.date: 03/03/2020
+ms.date: 09/03/2020
 ms.topic: overview
 description: 了解如何開始使用訂閱系統管理入口網站管理組織的 Visual Studio 訂閱。
-ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d857d4a1c9bb5568a6e4330851e0cc8a21988146
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249861"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426872"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio 訂閱系統管理員入口網站的總覽
 
 Visual Studio 訂閱管理入口網站可讓您使用工具，在單一位置管理您組織的訂用帳戶。 
+
+流覽入口網站。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
@@ -34,15 +36,15 @@ Visual Studio 訂閱管理入口網站可讓您使用工具，在單一位置管
 - 已指派給他們的訂用帳戶層級。
 - 訂用帳戶指派給他們的日期。
 - 訂用帳戶到期日。
-- 選擇性的文字描述。
-- 指出訂閱者下載啟用或停用。
+- 其他附注的參考欄位。
+- 指出是否啟用或停用訂閱者下載的指示。
 - 他們所在的國家/地區。
 - 他們在管理入口網站指派通訊電子郵件的語言設定。
 - 選擇性欄位，用於登入通訊以外的其他電子郵件地址。
 
 在頁面的左上方有幾個圖示可供您選擇，以顯示訂用帳戶指派總覽、合約詳細資料和使用量上限報表。
 
-若要查看針對每份合約購買、指派和仍可在組織中使用的訂用帳戶授權數目的其他相關資訊，請選取上方圖示來啟用滑出面板。
+若要查看針對每份合約購買、指派和仍可在組織中使用的訂用帳戶授權數目的其他相關資訊，請按一下上方圖示來啟用滑出面板。
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 訂用帳戶管理入口網站訂閱者頁面](_img/using-admin-portal/subscribers-page.png)
 

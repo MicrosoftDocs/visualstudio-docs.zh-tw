@@ -1,18 +1,18 @@
 ---
 title: 管理入口網站中的超級管理員和系統管理員角色
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 04/07/2020
+ms.date: 09/03/2020
 ms.topic: conceptual
 description: 了解超級管理員和系統管理員角色，以及如何指派系統管理員。
-ms.openlocfilehash: bf10b95d44a960fea50bff6b2fba7b9a8dc98a26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f70545de45e0de284788ff3552667e9fa9bfb73f
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248449"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426755"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Visual Studio 訂用帳戶合約的超級管理員和系統管理員
 
@@ -22,23 +22,24 @@ ms.locfileid: "88248449"
 
 系統**管理員：** 系統管理員只能由超級管理員指派。系統管理員只能管理超級管理員指派給他們的合約中的「訂閱者」。
 
+觀看有關如何管理系統管理員的示範。 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6L]
 
 ## <a name="assigning-administrators"></a>指派系統管理員
 指派新的系統管理員：
 1. 使用指派為用於購買訂用帳戶的合約上超級管理員電子郵件地址登入 https://manage.visualstudio.com。
-2. 選取標示為 [ **管理系統管理員**] 的索引標籤。
-3. 選取 [新增]  。
+2. 按一下標示為 [管理系統管理員]**** 的索引標籤。
+3. 按一下 [新增] 。
    > [!div class="mx-imgBorder"]
-   > ![新增系統管理員](_img/admin-roles/add-admins.png "選取 [管理系統管理員] 分頁，然後選取 [新增] 以指派新的系統管理員。")
+   > ![新增系統管理員](_img/admin-roles/add-admins.png "按一下 [管理系統管理員] 分頁，然後按一下 [新增] 以指派新的系統管理員。")
 4. 使用新系統管理員的資訊來完成表單。  
    > [!div class="mx-imgBorder"]
-   > ![新增系統管理員表單](_img/admin-roles/add-form.png "輸入新系統管理員的登入資訊，並選擇是否要讓他們成為超級系統管理員。 然後選取 [新增]。")
+   > ![新增系統管理員表單](_img/admin-roles/add-form.png "輸入新系統管理員的登入資訊，並選擇是否要讓他們成為超級系統管理員。 然後按一下 [新增]。")
 
    > [!NOTE]
    > 如果您想要讓此系統管理員能夠指派其他系統管理員，請記得核取 [超級管理員]**** 方塊。
 
-5. 當 **您選取 [新增]** 以指派新的系統管理員之後，他們會收到一封電子郵件，邀請他們登入入口網站。  
+5. 當您按一下 [新增]**** 指派新的系統管理員之後，他們會收到一封電子郵件，邀請他們登入入口網站。  
 
 ## <a name="resources"></a>資源
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)

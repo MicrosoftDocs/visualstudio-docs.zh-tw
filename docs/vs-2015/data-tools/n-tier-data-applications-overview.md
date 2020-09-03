@@ -19,17 +19,17 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0f124e997669370e71819cf37423d0c2d6a414d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c8e0b0eb1c1016ac8e5351ff55df23b44d26824
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72658062"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426703"
 ---
 # <a name="n-tier-data-applications-overview"></a>多層式架構資料應用程式概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-多層式 * 資料應用程式是分割成多 *層*的資料應用程式。 也稱為「分散式應用程式」和「多層式應用程式」，多層式應用程式會將處理區分為在用戶端與伺服器之間散發的離散層。 當您開發可存取資料的應用程式時，您應該在組成應用程式的各層之間進行清楚的分隔。
+多*層式*資料應用程式是分割成多*層*的資料應用程式。 也稱為「分散式應用程式」和「多層式應用程式」，多層式應用程式會將處理區分為在用戶端與伺服器之間散發的離散層。 當您開發可存取資料的應用程式時，您應該在組成應用程式的各層之間進行清楚的分隔。
 
  一般的 N-Tier 應用程式包含展示層、中介層和資料層。 將多層式應用程式中的各種階層分開的最簡單方式，就是為您要包含在應用程式中的每一層建立離散專案。 例如，展示層可能是 Windows Forms 的應用程式，而資料存取邏輯可能是位於中介層的類別庫。 此外，展示層可能會透過服務（例如服務），與仲介層中的資料存取邏輯進行通訊。 將應用程式元件分隔成不同的層級會提升應用程式的可維護性和延展性 (Scalability)。 這樣做的方法是讓採用可套用至單一層的新技術變得更容易，而不需要重新設計整個解決方案。 此外，多層式應用程式通常會在仲介層中儲存機密資訊，以維護與展示層的隔離。
 

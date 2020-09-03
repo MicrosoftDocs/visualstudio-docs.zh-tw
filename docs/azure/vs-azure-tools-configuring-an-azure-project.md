@@ -9,18 +9,18 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: 1776aebbe827295cbc7902f72417bc57e03a4196
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f207afc600402924969e4d2eee6df229c3d6f09
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280631"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426716"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>使用 Visual Studio 來設定 Azure 雲端服務專案
 您可以根據 Azure 雲端服務專案的需求來設定專案。 您可以設定下列類別的專案的屬性：
 
 - **將雲端服務發佈至 Azure** - 您可以設定屬性以確保部署至 Azure 的現有雲端服務不會被意外刪除。
-- **在本機電腦上執行雲端服務或對其進行偵錯** - 您可以選取一個要使用的服務組態，並指示是否要啟動 Azure 儲存體模擬器。
+- 在**本機電腦上執行或偵測雲端服務**-您可以選取要使用的服務設定，並指出您是否要啟動 Azure 儲存體模擬器。
 - **在建立雲端服務套件時加以驗證** - 您可以決定將任何警告都視為錯誤，以便確保在部署雲端服務套件時不會發生任何問題。
 
 ## <a name="steps-to-configure-an-azure-cloud-service-project"></a>設定 Azure 雲端服務專案的步驟
@@ -36,7 +36,7 @@ ms.locfileid: "85280631"
 
 1. 選取想要的 [服務組態]****，以指出您在本機執行雲端服務或對其進行偵錯時，所想要使用的服務組態。 如需有關如何修改某個角色之服務組態的詳細資訊，請參閱[如何使用 Visual Studio 來設定 Azure 雲端服務的角色](./vs-azure-tools-configure-roles-for-cloud-service.md)。
 
-1. 將 [啟動 Azure 儲存體模擬器]**** 設定為 [True]****，以在您於本機執行雲端服務或對其進行偵錯時，啟動 Azure 儲存體模擬器。
+1. 將 [ **啟動 Azure 儲存體模擬器** ] 設定為 [ **True** ]，在您于本機執行或偵測雲端服務時啟動 Azure 儲存體模擬器。
 
 1. 將 [將警告視為錯誤]**** 設定為 [True]****，以確保您在套件驗證發生錯誤時無法發佈。
 

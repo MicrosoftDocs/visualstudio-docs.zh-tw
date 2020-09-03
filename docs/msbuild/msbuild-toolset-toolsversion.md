@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6aaa6309e04f5143b70ff233c0b621ab2350b9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b77ea7f04377a1c531efeff780e9303f0bd3eb79
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633118"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426959"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 
@@ -45,7 +45,7 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 MSBuild 
 ::: moniker-end
 
 > [!NOTE]
-> 某些專案類型會使用 `sdk` 屬性，而非 `ToolsVersion` 屬性。 如需詳細資訊，請參閱[套件、中繼資料和架構](/dotnet/core/packages)，以及[適用於 .NET Core 之 csproj 格式的新增項目](/dotnet/core/tools/csproj)。
+> 某些專案類型會使用 `sdk` 屬性，而非 `ToolsVersion` 屬性。 如需詳細資訊，請參閱 [適用于 .Net Core 的 .csproj 格式新增](/dotnet/core/tools/csproj)專案。
 
 ## <a name="how-the-toolsversion-attribute-works"></a>ToolsVersion 屬性如何運作
 

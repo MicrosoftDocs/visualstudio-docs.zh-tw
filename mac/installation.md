@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 632ba9aa12eb1fa6550d0f9567e686366cfbcb00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8020106ed189b1b67b7cc2f475784809fc93aa1e
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250554"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426898"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>安裝 Visual Studio 2019 for Mac
 
@@ -22,9 +22,9 @@ ms.locfileid: "88250554"
  > [!div class="button"]
  > [下載 Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
-- 具有 macOS High Sierra 10.12 或更高版本的 Mac。
+- 具有 macOS High Sierra 10.13 或以上版本的 Mac。
 
 若要建置適用於 iOS 或 macOS 的 Xamarin 應用程式，您還需要：
 
@@ -53,7 +53,7 @@ ms.locfileid: "88250554"
 
    如果您不想要安裝所有平台，請使用以下指南以協助您決定要安裝的平台：
 
-   |應用程式類型  |目標  |選取  |附註  |
+   |應用程式類型  |目標  |選取  |注意  |
    |---------|---------|---------|---------|
    |**使用 Xamarin 的應用程式**| Xamarin.Forms|選取 **Android** 和 **iOS** 平臺 |您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/) |
    ||僅限 iOS|選取 **iOS** 平臺|您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/)|

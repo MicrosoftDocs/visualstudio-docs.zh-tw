@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
-ms.date: 06/23/2020
+ms.date: 09/03/2020
 ms.topic: how-to
 description: 瞭解如何在訂用帳戶管理入口網站中，新購買的每月 Visual Studio 訂閱
-ms.openlocfilehash: 778a3adbc9ca2117b0328a10d52904921bd0b80c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 209484968e85613da7cf38af3dce6944413c678a
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904702"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426822"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>將新的每月 Visual Studio 訂用帳戶新增至訂用帳戶管理入口網站
 當您使用 Azure 訂用帳戶購買新的每月 Visual Studio 訂用帳戶時，您可能需要將這些訂用帳戶新增至訂用帳戶管理入口網站，才能將它們指派給使用者。  

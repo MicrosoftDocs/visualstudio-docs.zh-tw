@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f90faadeaf9e1f8965aea7850fa1a12bb43b183c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4aefa741352e80f4a20a51fa1ab36e617403c9c
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88214586"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426998"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 效能祕訣和訣竅
 
@@ -82,7 +82,7 @@ Visual Studio 會在自動文件還原導致解決方案載入時間明顯變慢
 
 ### <a name="managed-language-service-roslyn"></a>受控語言服務 (Roslyn)
 
-如需 .NET Compiler Platform ("Roslyn") 效能考量的資訊，請參閱[大型解決方案的效能考量](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)。
+如需 .NET Compiler Platform ("Roslyn") 效能考量的資訊，請參閱[大型解決方案的效能考量](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)。
 
 - **停用完整解決方案分析**
 

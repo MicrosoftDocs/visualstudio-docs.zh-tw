@@ -1,5 +1,5 @@
 ---
-title: 多層式架構資料應用程式概觀
+title: 多層式資料應用程式總覽
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14527e84d5bbd2d06b2d091ba7a9d4daa9763462
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 445826a2ada7b22201b7dd82948bc8bd5dd3d296
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281951"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426859"
 ---
 # <a name="n-tier-data-applications-overview"></a>多層式架構 (N-Tier) 資料應用程式概觀
 多*層式*資料應用程式是分割成多*層*的資料應用程式。 也稱為「分散式應用程式」和「多層式應用程式」，多層式應用程式會將處理區分為在用戶端與伺服器之間散發的離散層。 當您開發可存取資料的應用程式時，您應該在組成應用程式的各層之間進行清楚的分隔。

@@ -1,31 +1,31 @@
 ---
 title: Microsoft 產品和服務合約 (MPSA) 中的 Visual Studio 訂閱 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
-ms.date: 03/03/2020
+ms.date: 09/03/2020
 ms.topic: conceptual
 description: Microsoft 產品和服務合約 (MPSA) 中的 Visual Studio 訂閱
-ms.openlocfilehash: 90bfb27fcb80910f6add41c30d4c03ece1520ef4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5ba75038c1e87415eecdcb669698cfe5bbcacd2
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801460"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426742"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Microsoft 產品和服務合約 (MPSA) 中的 Visual Studio 訂閱
 如果您已透過 MPSA 方案購買「Visual Studio 訂閱」，必須先了解幾個事項，才能成為 Visual Studio 訂閱系統管理員並將訂閱指派給您的使用者。 如果您已具備系統管理員身分，則可以直接前往 Visual Studio 訂閱[系統管理入口網站](https://manage.visualstudio.com/)。
 
-MPSA 客戶現在可以在稱為[商務中心](https://businessaccount.microsoft.com/Customer)的新入口網站管理透過 MPSA 購買的資產，此中心支援一些與大量授權服務中心 (VLSC) 類似的功能。 這些包括查看您的授權摘要、訂單、下載、金鑰、使用者等等。不過，MPSA 中的 Visual Studio 訂用帳戶與雲端服務的運作方式很類似。 「商務中心」同樣使用「工作帳戶」來登入，而不是使用 Microsoft 帳戶 (MSA)。 如果您的組織使用 Microsoft 365 或 Azure Active Directory 之類的雲端服務，而您的電子郵件是這兩項服務之一的一部分，則該帳戶已經是公司帳戶。 這將可讓您使用現有密碼向「商務中心」註冊。 如果組織未使用雲端服務，而且您的電子郵件也不是「工作帳戶」，您可以使用它向「商務中心」註冊。
+MPSA 客戶管理在入口網站中透過 MPSA 購買的資產（稱為「 [商務中心](https://businessaccount.microsoft.com/Customer)」），其支援的功能與大量授權服務中心 (VLSC) 。 這些包括查看您的授權摘要、訂單、下載、金鑰、使用者等等。不過，MPSA 中的 Visual Studio 訂用帳戶與雲端服務的運作方式很類似。 「商務中心」同樣使用「工作帳戶」來登入，而不是使用 Microsoft 帳戶 (MSA)。 如果組織使用 Office 365 或 Azure Active Directory 之類的雲端服務，而且您的電子郵件已是這兩項服務中任何一項的成員，則此電子郵件已經是「工作帳戶」。 這將可讓您使用現有密碼向「商務中心」註冊。 如果組織未使用雲端服務，而且您的電子郵件也不是「工作帳戶」，您可以使用它向「商務中心」註冊。
 
-此外，在您成為 Visual Studio 訂閱系統管理員之後，將會在 Visual Studio 訂閱[系統管理入口網站](https://manage.visualstudio.com/)將訂閱指派給訂閱者。 在 MPSA 中，必須將 Visual Studio 訂閱佈建至它們個別的系統管理入口網站，亦即「Visual Studio 訂閱管理入口網站」。 若要這樣做，您必須將「購買帳戶」與租用戶 (亦即 contoso.onmicrosoft.com) 建立關聯。
+此外，Visual Studio 訂用帳戶系統管理員 [入口網站](https://manage.visualstudio.com/) 可讓您在成為 Visual Studio 訂用帳戶管理員之後，指派訂用帳戶。 在 MPSA 中，必須將 Visual Studio 訂閱佈建至它們個別的系統管理入口網站，亦即「Visual Studio 訂閱管理入口網站」。 若要這樣做，您必須將「購買帳戶」與租用戶 (亦即 contoso.onmicrosoft.com) 建立關聯。
 
-請注意，有兩種類型的租用戶 (受控租用戶和非受控租用戶)。 受控租用戶係指已由組織內的系統管理員管理的租用戶。
+請注意，有兩種類型的租使用者管理的租使用者和不受管理的租使用者。 受控租用戶係指已由組織內的系統管理員管理的租用戶。
 
-未受管理的租使用者是指沒有任何系統管理員的租使用者，且不適用於 Microsoft 365 之類的線上服務。 使用非「工作帳戶」的電子郵件向「商務中心」進行註冊時，也會建立非受控租用戶。 如果向「商務中心」進行註冊時，系統要求您建立密碼，即表示您的電子郵件不是「工作帳戶」，而所建立的即是非受控租用戶。
+未受管理的租使用者是指未獲指派任何系統管理員的租使用者，不適用於 Office 365 等線上服務。 使用非工作帳戶的電子郵件向「商務中心」註冊時，也會建立未受管理的租使用者。 如果系統要求您在註冊至「商務中心」時建立密碼，這表示您的電子郵件不是工作帳戶，而是建立未受管理的租使用者。
 
-以下是在完成租用戶關聯程序之前，成為「Visual Studio 訂閱」系統管理員所需的幾個需求和步驟。
+以下是在完成租使用者關聯之前，成為 Visual Studio 訂閱系統管理員的幾個需求/步驟。
 
 ## <a name="pre-tenant-association-managed-tenant"></a>建立租用戶關聯之前 (受控租用戶)
 - 您必須是「商務中心」的已註冊使用者。
@@ -39,14 +39,14 @@ MPSA 客戶現在可以在稱為[商務中心](https://businessaccount.microsoft
 
 在您符合上述準則之後，即可依照下面的步驟繼續將「購買帳戶」與租用戶建立關聯。
 1. 登入[商務中心](https://businessaccount.microsoft.com/Customer)。
-2. 選取 [ **帳戶** ] 索引標籤，然後選擇 [ **關聯網域**]。
+2. 按一下 [帳戶]**** 索引標籤，然後選擇 [建立網域關聯]****。
 3. 選取您的 [購買帳戶]**** (如果您有多個)。
 4. 選取您的**租用戶** (亦即 contoso.onmicrosoft.com)。
-5. 選取 [ **關聯網域**]。
+5. 按一下 [建立網域關聯]****。
 
 建立關聯時，所有符合準則的使用者通常在幾分鐘內就會佈建成 Visual Studio 訂閱系統管理員。 不過，有時可能會花費長達 24 小時的時間。 您的租用戶佈建完成之後，您將能夠存取「Visual Studio 訂閱系統管理入口網站」。 如果這花費的時間超過24小時，請使用下列步驟來 MPSA 支援人員：
 1. 連接到 <https://www.microsoft.com/licensing/mpsa/default>
-2. 選取頁面頂端的 [ **更多** ] 功能表。 
+2. 按一下頁面頂端的 [ **更多** ] 功能表。 
 3. 選擇 **支援**
 4. 選擇 **授權支援**
 5. 選取最符合您需求的支援選項。 
@@ -55,7 +55,7 @@ MPSA 客戶現在可以在稱為[商務中心](https://businessaccount.microsoft
 > 如果在建立關聯之後，有符合步驟 2 和 5 的新使用者，您必須連絡 MPSA 支援服務。 MPSA 支援服務將會提供協助來佈建新的「Visual Studio 訂閱」系統管理員。
 
 ## <a name="tenant-association-unmanaged"></a>建立租用戶關聯 (非受控)
-如果您已如上面所述，使用非「工作帳戶」(未在 Azure Active Directory “Azure AD” 中註冊) 的電子郵件向「商務中心」進行註冊，租用戶關聯將會有些微不同。 您將需要執行所謂的「網域接管」程序。 進行此程序時，您將使自己成為「全域管理員」，這會將您的租用戶從非受控變更為受控。
+如果您已如上面所述，使用非「工作帳戶」(未在 Azure Active Directory “Azure AD” 中註冊) 的電子郵件向「商務中心」進行註冊，租用戶關聯將會有些微不同。 您將需要執行所謂的「網域接管」程序。 在此程式期間，您將會讓自己成為全域管理員，這會將您的租使用者從取消管理變更為受控。
 
 如需此程序的更詳細說明，您可以使用[快速入門指南](https://www.microsoft.com/Licensing/existing-customer/business-center-training-and-resources.aspx)。 請下載名為《設定及使用您的線上服務》** 的指南，此指南將會引導您逐步完成網域接管程序。 完成此程序之後，您的「購買帳戶」就也會與您的租用戶建立關聯。
 

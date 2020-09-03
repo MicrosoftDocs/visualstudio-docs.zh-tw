@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：建立 N-Tier 資料應用程式
+title: 逐步解說：建立多層式資料應用程式
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a88f0382a93027cc952dfe44f0027e6ab1076a45
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a09ef4cec4b7c2921322b934eef39ba660d02587
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916501"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426651"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>逐步解說：建立多層式資料應用程式
 「多層式架構」(N-tier)** 資料應用程式是可存取資料而且分成多個邏輯層或「層級」(tier)** 的應用程式。 將應用程式元件分成離散層級，可增加應用程式的可維護性和延展性。 原因是可以更輕鬆地採用套用至單一層級的新技術，而且您不需要重新設計整個方案。 多層式架構包括呈現層、中介層和資料層。 中介層通常包括資料存取層、商務邏輯層和共用元件 (如驗證 (authentication) 和驗證 (validation))。 資料層包括關聯式資料庫。 多層式架構應用程式通常會將敏感性資訊儲存至中介層的資料存取層，以與存取呈現層的使用者隔離。 如需詳細資訊，請參閱多 [層式資料應用程式總覽](../data-tools/n-tier-data-applications-overview.md)。
@@ -50,7 +50,7 @@ ms.locfileid: "75916501"
 
 ![影片連結](../data-tools/media/playvideo.gif)如本主題的影片版本，請參閱[視訊 HOW TO：建立 N-Tier 資料應用程式](/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90))。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
 1. 如果您沒有 LocalDB SQL Server Express，請從 [SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)或透過 **Visual Studio 安裝程式**進行安裝。 在 **Visual Studio 安裝程式**中，您可以將 SQL Server Express LocalDB 安裝為 **.net 桌面開發** 工作負載的一部分或個別元件。

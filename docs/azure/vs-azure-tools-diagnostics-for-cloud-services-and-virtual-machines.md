@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: d8da94fc7b4735198eafa33edfe72cba0eb1ea59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2312c636f465bd39cdcbc4ca0ab63c107151c5be
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911859"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426729"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>針對 Azure 雲端服務與虛擬機器設定診斷
 需要針對 Azure 雲端服務或 Azure 虛擬機器進行疑難排解時，您可以使用 Visual Studio 更輕鬆地設定 Azure 診斷。 診斷會在執行雲端服務的虛擬機器和虛擬機器執行個體上擷取系統資料和記錄資料。 診斷資料會傳輸到您選擇的儲存體帳戶。 如需 Azure 中診斷記錄的詳細資訊，請參閱[在 Azure App Service 中針對 Web 應用程式啟用診斷記錄](/azure/app-service/web-sites-enable-diagnostic-log)。
@@ -28,7 +28,7 @@ ms.locfileid: "72911859"
 ## <a name="azure-sdk-26-diagnostics-changes"></a>Azure SDK 2.6 診斷變更
 下列變更適用於 Visual Studio 中的 Azure SDK 2.6 和更新版本專案：
 
-* 本機模擬器現在支援診斷。 這表示您可以收集診斷資料，並確保您在 Visual Studio 中進行開發及測試時，您的應用程式會建立正確的追蹤。 當您在 Visual Studio 中使用 Azure 儲存體模擬器來執行您的雲端服務專案時，連接字串 `UseDevelopmentStorage=true` 會開啟診斷資料收集。 所有的診斷資料都會收集到「開發儲存體」儲存體帳戶中。
+* 本機模擬器現在支援診斷。 這表示您可以收集診斷資料，並確保您在 Visual Studio 中進行開發及測試時，您的應用程式會建立正確的追蹤。 `UseDevelopmentStorage=true`當您使用 Azure 儲存體模擬器在 Visual Studio 中執行雲端服務專案時，連接字串會開啟診斷資料收集。 所有的診斷資料都會收集到「開發儲存體」儲存體帳戶中。
 * 診斷儲存體帳戶連接字串 `Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString` 會儲存在服務設定 (.cscfg) 檔案中。 在 Azure SDK 2.5 中，診斷儲存體帳戶會在 diagnostics.wadcfgx 檔案中指定。
 
 在 Azure SDK 2.6 和更新版本與 Azure SDK 2.4 及更舊版本中，連接字串的運作方式不同於其中某些索引鍵的運作方式：
@@ -73,11 +73,11 @@ ms.locfileid: "72911859"
 3. 若要指定診斷資料的儲存體帳戶，請選擇省略符號 (...) 按鈕。
 
     ![指定要使用的儲存體帳戶](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796661.png)
-4. 在 [建立儲存體連接字串] **** 對話方塊中，指定要使用 Azure 儲存體模擬器、Azure 訂用帳戶或手動輸入的認證來連接。
+4. 在 [ **建立儲存體連接字串** ] 對話方塊中，指定您要使用 Azure 儲存體模擬器、Azure 訂用帳戶或手動輸入的認證來連接。
 
     ![儲存體帳戶對話方塊](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796662.png)
 
-   * 如果您選取**Microsoft Azure 儲存體模擬器**，則連接字串會設定為 `UseDevelopmentStorage=true`。
+   * 如果您選取 **Microsoft Azure 儲存體模擬器**，則連接字串會設定為 `UseDevelopmentStorage=true` 。
    * 如果選取 [您的訂用帳戶]****，您可以選取要使用的 Azure 訂用帳戶，並輸入帳戶名稱。 若要管理您的 Azure 訂用帳戶，請選取 [管理帳戶]****。
    * 如果您選取 [手動輸入的認證]****，請輸入您想要使用之 Azure 帳戶的名稱和金鑰。
 5. 若要檢視 [診斷設定]**** 對話方塊，請選取 [設定]**** 對話方塊。 除了 [一般]**** 和 [記錄目錄]**** 之外，每個索引標籤都代表您可以收集的診斷資料來源。 預設 [一般]**** 索引標籤提供下列診斷資料收集選項：[只記錄錯誤]****、[所有資訊]**** 和 [自訂計劃]****。 預設 [只記錄錯誤]**** 選項會佔用最少的儲存體，因為它不會傳輸警告或追蹤訊息。 [所有資訊] **** 選項會傳輸大部分的資訊、使用最多的儲存體，因此它是最昂貴的選項。
