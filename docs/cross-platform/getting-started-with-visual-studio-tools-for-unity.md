@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: a8f3e183bd72e9894eae55a5ed7c4f9322d44953
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250099"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 使用者入門
@@ -49,7 +49,7 @@ Unity 安裝所隨附的 Visual Studio 版本可能不是最新的。 如果系�
 
 ### <a name="manual-installation"></a>手動安裝
 
-如果您已安裝 Visual Studio，或想要手動安裝，請執行 Visual Studio 安裝程式。
+如果您已經安裝 Visual Studio，或想要以手動方式安裝，請執行 Visual Studio 安裝程式。
 
 1. [下載 Visual Studio 安裝程式](../install/install-visual-studio.md)或開啟它 (若已安裝)。
 

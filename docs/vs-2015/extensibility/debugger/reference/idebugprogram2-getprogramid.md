@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetProgramId |Microsoft Docs
+title: IDebugProgram2：： GetProgramId |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 19c29b5cec555f9e3ad5157d7b4581777be42c98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148669"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
@@ -40,15 +40,15 @@ int GetProgramId( 
   
 #### <a name="parameters"></a>參數  
  `pguidProgramId`  
- [out]傳回`GUID`此計劃。  
+ 擴展傳回 `GUID` 此程式的。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 偵錯引擎 (DE) 必須傳回原本傳遞至程式識別碼[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)或是[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法。 這可讓程式識別在偵錯工具元件。  
+ Debug engine (DE) 必須傳回原本傳遞給 [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) 或 [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) 方法的程式識別碼。 這可讓您跨偵錯工具元件識別程式。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   
- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+ [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)

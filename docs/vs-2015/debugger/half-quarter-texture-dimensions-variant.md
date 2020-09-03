@@ -1,5 +1,5 @@
 ---
-title: 半 / 四分之一紋理維度變異 |Microsoft Docs
+title: 半季紋理維度變異數 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03485a3b9df9c06b1ef4755a5758cf2c8c997d1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161162"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>半/四分之一紋理維度變異
@@ -47,5 +47,5 @@ ms.locfileid: "68161162"
  此變異會先在執行階段調整紋理大小，再呼叫 `CreateTexture2D`。 建議您不要對實際執行程式碼使用此方式，因為完整大小的紋理會耗用較多的磁碟空間，而且因為額外步驟可能會增加應用程式中的載入時間，特別是針對壓縮過的紋理，畢竟這類紋理需要大量計算資源來進行編碼。 建議您改用屬於您組建管線的影像編輯器或影像處理器，來離線調整紋理大小。 這些方式會減少磁碟空間需求，並去除應用程式中的執行階段額外負荷，以及提供更多的處理時間，讓您可以在壓縮紋理時保留最佳影像品質。  
   
 ## <a name="see-also"></a>另請參閱  
- [Mip-map 產生變化](../debugger/mip-map-generation-variant.md)   
+ [Mip 對應產生變異](../debugger/mip-map-generation-variant.md)   
  [BC 紋理壓縮變異](../debugger/bc-texture-compression-variant.md)

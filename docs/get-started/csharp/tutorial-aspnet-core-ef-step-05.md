@@ -17,10 +17,10 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 55dd48ed2c319984fcc96e806c97a7ae24ce7170
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248687"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>步驟5：將您的 ASP.NET Core 應用程式部署至 Azure
@@ -37,41 +37,41 @@ _觀看此影片並跟著操作，以將您的第一個 ASP.NET Core 應用程�
 
 ## <a name="publish-to-azure-app-service"></a>發佈至 Azure App Service
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]****。 在 [ **發佈** 嚮導] 中，選擇 [ **Azure** ] 做為目標。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]****。 在 [ **發佈** ] 嚮導中，選擇 [ **Azure** ] 作為目標。
 
    ![Azure App Service 1 的螢幕擷取畫面](media/vs-2019/app-service-screen-1.png)
 
-1. 針對特定目標，選擇 [ **Azure App Service (Windows) **]。
+1. 針對特定的目標，請選擇 **Azure App Service (Windows) **。
 
    ![Azure App Service 2 的螢幕擷取畫面](media/vs-2019/app-service-screen-2.png)
 
-1. 選擇 [ **建立新的 Azure App Service**。 如果您還沒有 Azure 帳戶，請按一下 [建立您的免費 Azure 帳戶]**** 並完成簡短的註冊程序。
+1. 選擇 [ **建立新的 Azure App Service**]。 如果您還沒有 Azure 帳戶，請按一下 [建立您的免費 Azure 帳戶]**** 並完成簡短的註冊程序。
 
    ![Azure App Service 3 的螢幕擷取畫面](media/vs-2019/app-service-screen-3.png)
 
-1. 指定名稱和資源群組，或接受預設值，然後選擇 [ **建立**]。 資源群組只是在 Azure 中組織相關資源的一種方式，例如與儲存體帳戶、金鑰保存庫和資料庫搭配使用的服務。
+1. 指定名稱和資源群組，或接受預設值，然後選擇 [ **建立**]。 資源群組只是在 Azure 中組織相關資源的一種方式，例如與儲存體帳戶、金鑰保存庫和資料庫搭配運作的服務。
 
    ![Azure App Service 4 的螢幕擷取畫面](media/vs-2019/app-service-screen-4.png)
 
-1. 選擇 [完成]****。 資源會在 Azure 中建立、部署應用程式，而 [ **發佈** ] 索引標籤會填入您剛建立的內容的相關資訊。 [ **發行** ] 索引標籤提供一次使用相同設定來發佈的按鈕、顯示設定詳細資料，或讓您新增服務（例如資料庫）。
+1. 選擇 [完成]****。 這些資源會在 Azure 中建立、部署應用程式，且 [ **發佈** ] 索引標籤會填入您剛才建立之內容的相關資訊。 [ **發行** ] 索引標籤可讓您使用相同的設定來發佈按鈕、顯示設定詳細資料，或讓您新增服務（例如資料庫）。
 
 現在，新增 Azure SQL Server 資料庫。
 
-1. 在 [ **發佈** ] 索引標籤的 [ **服務**相依性] 底下，選擇 [ **SQL Server 資料庫**] 旁的 [ **設定**]。
+1. 在 [ **發行** ] 索引標籤的 [ **服務**相依性] 下的 [ **SQL Server 資料庫**] 旁，選擇 [ **設定**]。
 
 1. 在下一個畫面上，選擇 [ **Azure SQL Database**]。
 
    ![Azure SQL Database 畫面的螢幕擷取畫面](media/vs-2019/app-service-azure-sql-db.png)
 
-1. 在 [ **設定 SQL Database** ] 畫面上，選擇 [ **建立 SQL Database**]。
+1. 在 [ **設定 SQL Database** ] 畫面上，選擇 [ **建立 SQL Database**。
 
-   ![[設定 SQL Database] 畫面的螢幕擷取畫面](media/vs-2019/app-service-azure-sql-db-2.png)
+   ![設定 SQL Database 畫面的螢幕擷取畫面](media/vs-2019/app-service-azure-sql-db-2.png)
 
 1. 在 [ **Azure SQL Database：建立新** 的畫面] 上，建立新的資料庫伺服器。
 
    ![螢幕擷取畫面 Azure SQL Database：新建](media/vs-2019/app-service-azure-sql-db-3.png)
 
-1. 在 [ **SQL Server：建立新** 畫面] 上，選擇 [名稱]、[位置]，並指定系統管理員使用者名稱和密碼。
+1. 在 [ **SQL Server：建立新** 的畫面上，選擇名稱、位置，然後指定系統管理員使用者名稱和密碼。
 
    ![Visual Studio 2019 建立 Azure SQL Server](media/vs-2019/app-service-azure-sql-db-overlayed.png)
 
@@ -83,7 +83,7 @@ _觀看此影片並跟著操作，以將您的第一個 ASP.NET Core 應用程�
 
 ### <a name="scalability"></a>延展性
 
-您可以檢查選項，將應用程式相應增加和相應放大。相應增加指的是將指定給裝載應用程式的每個實例的資源提高。 相應放大是指增加裝載您應用程式之執行個體的數目。 您可以為應用程式設定自動調整，這樣系統會增加裝載您應用程式之執行個體的數量，以回應負載增加，然後會在負載減少時減少執行個體。
+您可以檢查選項，將應用程式相應增加及相應放大。相應增加是指將提供給裝載您應用程式的每個實例的資源。 相應放大是指增加裝載您應用程式之執行個體的數目。 您可以為應用程式設定自動調整，這樣系統會增加裝載您應用程式之執行個體的數量，以回應負載增加，然後會在負載減少時減少執行個體。
 
 ### <a name="security-and-compliance"></a>安全性與合規性
 
