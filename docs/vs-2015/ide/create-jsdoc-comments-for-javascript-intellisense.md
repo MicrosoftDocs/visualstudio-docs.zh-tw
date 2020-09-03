@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b974f3450b88ab22e58e284881f270c1b3d72298
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619267"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>建立 JavaScript IntelliSense 的 JSDoc 註解
@@ -24,19 +24,19 @@ Visual Studio 中的 IntelliSense 會顯示您使用標準 JSDoc 註解加入指
 ## <a name="jsdoc-comment-tags"></a>JSDoc 註解標記
  下列標準 JSDoc 註解標記是由 IntelliSense 用於顯示您程式碼的相關資訊。
 
-|  JSDoc 標記   |                       語法                        |                                                     注意                                                      |
+|  JSDoc 標記   |                       語法                        |                                                     備註                                                      |
 |--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| @deprecated  |              @deprecated *description*              |                                   指定取代函式或方法。                                   |
-| @description |             @description *description*              |                              指定函式或方法的描述。                               |
-|    @param    | @param {*type*} *parameterName*<em>description</em> | 指定函式或方法中之參數的資訊。<br /><br /> TypeScript 也支援 @paramTag。 |
+| @deprecated  |              @deprecated*描述*              |                                   指定取代函式或方法。                                   |
+| @description |             @description*描述*              |                              指定函式或方法的描述。                               |
+|    @param    | @param {*type*} *parameterName*<em>description</em> | 指定函式或方法中之參數的資訊。<br /><br /> TypeScript 也支援 @paramTag 。 |
 |  @property   |          @property {*type*} *propertyName*          |   指定欄位或物件上所定義成員的資訊，包括描述。    |
-|   @returns   |                  @returns {*type*}                  |           指定傳回值。<br /><br /> 若為 TypeScript，請使用 @returnType，而不是 @returns。           |
-|   @summary   |               @summary *description*                |                   指定函數或方法的描述（與 @description 相同）。                   |
+|   @returns   |                  @returns {*type*}                  |           指定傳回值。<br /><br /> 若為 TypeScript，請使用 @returnType 而不是 @returns 。           |
+|   @summary   |               @summary*描述*                |                   指定函數或方法的描述 (與 @description) 相同。                   |
 |    @type     |                   @type {*type*}                    |                                指定常數或變數的類型。                                |
 |   @typedef   |         @typedef {*type*} *customTypeName*          |                                            指定自訂類型。                                            |
 
 ### <a name="examples"></a>範例
- 下列範例示範如何使用 @description、@param 和 @return JSDoc 標記來取得名為 `getArea` 的函式。
+ 下列範例示範如何針對名為的函式使用 @description 、 @param 和 @return JSDoc 標記 `getArea` 。
 
 ```javascript
 /** @description Determines the area of a circle that has the specified radius parameter.
@@ -54,7 +54,7 @@ function getArea(radius) {
 
  ![函式的 IntelliSense 資訊](../ide/media/js-intellisense-jsdoc-comments.png "JS_IntelliSense_JSDoc_Comments")
 
- 下列範例示範如何使用 @typedef 標記搭配 @property 標記。
+ 下列範例顯示如何搭配使用 @typedef 標記與 @property 標記。
 
 ```javascript
 /**
@@ -67,7 +67,7 @@ function getForecast(Weather) {
 var w = new Weather();
 ```
 
- 下列範例示範如何使用 @type 的 JSDoc 標記。 如本範例所示，在初始星號配對 (\*\*) 之後不需要單一星號 (*)。
+ 下列範例示範如何使用 @type JSDoc 標記。 如本範例所示，在初始星號配對 (\*\*) 之後不需要單一星號 (*)。
 
 ```javascript
 /**
