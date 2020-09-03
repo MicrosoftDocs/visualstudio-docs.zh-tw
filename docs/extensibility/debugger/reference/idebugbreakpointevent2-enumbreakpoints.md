@@ -1,5 +1,5 @@
 ---
-title: IDebug 突破點事件2::枚舉斷點 |微軟文件
+title: IDebugBreakpointEvent2：： EnumBreakpoints |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8744ec272fa121630e67f516ef1839c70b1a2d41
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735039"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
-為在當前代碼位置觸發的所有斷點創建枚舉器。
+針對在目前程式碼位置引發的所有中斷點建立枚舉器。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int EnumBreakpoints(
 
 ## <a name="parameters"></a>參數
 `ppEnum`\
-[出]返回[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)物件,該物件枚舉與當前代碼位置關聯的所有斷點。
+擴展傳回 [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) 物件，這個物件會列舉與目前程式碼位置相關聯的所有中斷點。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 特定位置的所有斷點在特定時間都可能觸發(例如,在滿足該條件之前,具有條件的斷點不會觸發)。
+ 並非特定位置的所有中斷點可能會在特定時間引發 (例如，具有條件的中斷點將不會引發，直到符合該條件為止) 。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)

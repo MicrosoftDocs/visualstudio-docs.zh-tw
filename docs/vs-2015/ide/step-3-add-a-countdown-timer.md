@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bae5b4a81864cc591491c21218a5d8253dfc61bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671837"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>步驟 3：加入倒數計時器
@@ -22,7 +22,7 @@ ms.locfileid: "72671837"
 在本教學課程的第三個部分中，您將加入倒數計時器來追蹤受測者可完成作答的剩餘秒數。
 
 > [!NOTE]
-> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
+> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的總覽，請參閱 [教學課程2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
 
 ### <a name="to-add-a-countdown-timer"></a>若要加入倒數計時器
 
@@ -33,11 +33,11 @@ ms.locfileid: "72671837"
 
      現在您需要實際計算秒數的方法，例如計時器，它會在經過您指定的時間後引發事件。
 
-2. 在設計視窗中，將 `Timer` 控制項從 [工具箱] 的 [元件] 分類移至表單。
+2. 在設計視窗中，將 `Timer` 控制項從 [工具箱] 的 [元件]**** 類別移至表單。
 
      控制項會出現在設計視窗底部的灰色區域中。
 
-3. 在表單上選擇您剛新增的 [timer1] 圖示，並將其 [Interval] 屬性設定為 [1000]。
+3. 在表單上選擇您剛新增的 [timer1]**** 圖示，並將其 [Interval]**** 屬性設定為 [1000]****。
 
      由於間隔值為毫秒，因此 1000 這個值會讓 Tick 事件每秒引發一次。
 
@@ -50,9 +50,9 @@ ms.locfileid: "72671837"
      [!code-csharp[VbExpressTutorial3Step3#6](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs#6)]
      [!code-vb[VbExpressTutorial3Step3#6](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb#6)]
 
-     根據您新增的項目，計時器會藉由判斷 **timeLeft** 整數變數是否大於 0，每秒檢查一次時間是否已結束。 如果是，表示仍有剩餘時間。 計時器會先將 timeLeft 減 1，然後更新 `timeLabel` 控制項的 [Text] 屬性，讓受測者看到還剩多少秒。
+     根據您新增的項目，計時器會藉由判斷 **timeLeft** 整數變數是否大於 0，每秒檢查一次時間是否已結束。 如果是，表示仍有剩餘時間。 計時器會先將 timeLeft 減 1，然後更新 `timeLabel` 控制項的 [Text]**** 屬性，讓受測者看到還剩多少秒。
 
-     如果沒有剩餘時間，計時器就會停止，並將 `timeLabel` 控制項的文字變更為顯示 **Time's up!** 。 此時會出現訊息方塊宣布測驗結束，並且公布答案，這個案例為 addend1 和 addend2 相加。 `startButton` 控制項的 [Enabled] 屬性會設定為 `true`，如此受測者就能開始另一項測驗。
+     如果沒有剩餘時間，計時器就會停止，並將 `timeLabel` 控制項的文字變更為顯示 **Time's up!**。 此時會出現訊息方塊宣布測驗結束，並且公布答案，這個案例為 addend1 和 addend2 相加。 `startButton` 控制項的 [Enabled]**** 屬性會設定為 `true`，如此受測者就能開始另一項測驗。
 
      您已加入 `if else` 陳述式，讓程式知道如何做判斷。 `if else` 陳述式看起來如下。
 
@@ -87,25 +87,25 @@ ms.locfileid: "72671837"
      [!code-csharp[VbExpressTutorial3Step3#24](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs#24)]
      [!code-vb[VbExpressTutorial3Step3#24](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb#24)]
 
-     `addend1 + addend2` 陳述式會將兩個變數中的值相加。 第一個部分 (`sum.Value`) 會使用 sum (總和) `NumericUpDown` 控制項的 [Value] 屬性來顯示正確答案。 稍後您會使用相同屬性檢查測驗的答案。
+     `addend1 + addend2` 陳述式會將兩個變數中的值相加。 第一個部分 (`sum.Value`) 會使用 sum (總和) `NumericUpDown` 控制項的 [Value]**** 屬性來顯示正確答案。 稍後您會使用相同屬性檢查測驗的答案。
 
-     受測者透過使用 `NumericUpDown` 控制項就能更輕鬆地輸入數字，這就是為何使用其中一個控制項輸入數學問題答案的原因。 所有可能的答案包括從 0 到 100 的整數。 藉由保留 [Minimum]、[Maximum] 和 [DecimalPlaces] 屬性的預設值，就能確保受測者無法輸入小數、負數或太大的數字 (如果您要允許受測者輸入 3.141 而不是 3.1415，可以將 [DecimalPlaces] 屬性設定為 3)。
+     受測者透過使用 `NumericUpDown` 控制項就能更輕鬆地輸入數字，這就是為何使用其中一個控制項輸入數學問題答案的原因。 所有可能的答案包括從 0 到 100 的整數。 藉由保留 [Minimum]****、[Maximum]**** 和 [DecimalPlaces]**** 屬性的預設值，就能確保受測者無法輸入小數、負數或太大的數字 (如果您要允許受測者輸入 3.141 而不是 3.1415，可以將 [DecimalPlaces]**** 屬性設定為 3)。
 
 6. 將三行程式碼加入至 `StartTheQuiz()` 方法的結尾，使程式碼看起來如下。
 
      [!code-csharp[VbExpressTutorial3Step3#7](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs#7)]
      [!code-vb[VbExpressTutorial3Step3#7](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb#7)]
 
-     現在，當測驗開始時，[timeLeft] 變數會設定為 30，而且 `timeLabel` 控制項的 [Text] 屬性會設定為 30 秒。 然後，`Timer` 控制項的 `Start()` 方法就會開始倒數計時 (測驗還不會檢查答案，這是下一個部分)。
+     現在，當測驗開始時，[timeLeft]**** 變數會設定為 30，而且 `timeLabel` 控制項的 [Text]**** 屬性會設定為 30 秒。 然後，`Timer` 控制項的 `Start()` 方法就會開始倒數計時 (測驗還不會檢查答案，這是下一個部分)。
 
-7. 儲存您的程式，並執行程式，然後選擇表單上的 [開始] 按鈕。
+7. 儲存您的程式，並執行程式，然後選擇表單上的 [開始]**** 按鈕。
 
      計時器就會開始倒數。 當時間結束時，測驗就會結束，答案也會出現。 下圖將顯示進行中的測驗。
 
      ![數學測驗正進行中](../ide/media/express-addcountdown.png "Express_AddCountdown") 數學測驗正進行中
 
-### <a name="to-continue-or-review"></a>繼續或檢視
+### <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要移到下一個教學課程步驟，請參閱[步驟 4：新增 CheckTheAnswer() 方法](../ide/step-4-add-the-checktheanswer-parens-method.md)。
+- 若要移至下一個教學課程步驟，請參閱 [步驟4：新增 CheckTheAnswer ( # A1 方法](../ide/step-4-add-the-checktheanswer-parens-method.md)。
 
-- 若要回到上一個教學課程步驟，請參閱[步驟 2：建立隨機加法問題](../ide/step-2-create-a-random-addition-problem.md)。
+- 若要回到上一個教學課程步驟，請參閱 [步驟2：建立隨機加法問題](../ide/step-2-create-a-random-addition-problem.md)。

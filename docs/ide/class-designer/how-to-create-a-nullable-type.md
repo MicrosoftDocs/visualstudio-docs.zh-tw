@@ -15,17 +15,17 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: ad371f987ab7ff0e50dc7d2fe4effeba5205e74e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770985"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>如何：在類別設計工具中建立可為 Null 的型別
 
 特定實值型別不一定具有 (或需要) 定義的值。 這種情況在資料庫中為常見做法，其中的部分欄位不會指派任何值。 比方說，您可能將 null 值指派給資料庫欄位，以表示該欄位尚未指派值。
 
-「可為 Null 的型別」** 是一種延伸的實值型別，其可接受該類型的一般範圍值，也可接受 null 值。 例如，可為 null 的 `Int32` （也稱為 nullable \<Int32> ）可以指派任何從-2147483648 到2147483647的值，也可以將 null 值指派給它。 可以為 Nullable \<bool> 指派值 `True` 、 `False` 或 null （完全沒有值）。
+「可為 Null 的型別」** 是一種延伸的實值型別，其可接受該類型的一般範圍值，也可接受 null 值。 例如，可為 null 的 `Int32` （也表示為 nullable \<Int32> ）可以指派任何-2147483648 到2147483647的值，也可以指派 null 值給它。 可以為 null \<bool> 指派值 `True` 、 `False` 或 null (沒有任何) 的值。
 
 可為 Null 的型別是 <xref:System.Nullable%601> 結構的執行個體。 每個可為 Null 的型別，其執行個體皆有 `HasValue` 和 `Value` 這兩個公用唯讀屬性：
 

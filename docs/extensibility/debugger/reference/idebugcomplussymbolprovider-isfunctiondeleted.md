@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlus符號提供者::功能刪除 |微軟文件
+title: IDebugComPlusSymbolProvider：： IsFunctionDeleted |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d7dd8b5b86b6b8c89d11326b817f2718a3ee4ad3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733713"
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
-確定已指定調試位址的函數已被刪除。
+判斷已刪除指定之偵錯工具位址的函式。
 
 ## <a name="syntax"></a>語法
 
@@ -39,13 +39,13 @@ int IsFunctionDeleted(
 
 ## <a name="parameters"></a>參數
 `pAddress`\
-[在]由[IDebug 位址](../../../extensibility/debugger/reference/idebugaddress.md)介面表示的調試位址。 此地址必須是METHOD_ADDRESS。
+在 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 介面所代表的偵錯工具位址。 此位址必須是 METHOD_ADDRESS。
 
 ## <a name="return-value"></a>傳回值
-如果刪除此函數,請傳`S_OK`回 。 如果函數存在,則傳`S_FALSE`回 。
+如果函數已刪除，則會傳回 `S_OK` 。 如果函數存在，會傳回 `S_FALSE` 。
 
 ## <a name="example"></a>範例
-下面的範例展示如何為公開[IDebugComPlusSymbol提供程式](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbol提供程式**物件實現此方法。
+下列範例示範如何針對公開[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbolProvider**物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsFunctionDeleted(

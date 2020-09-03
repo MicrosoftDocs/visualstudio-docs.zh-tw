@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b551e3f980e962733d2797924331e4cd6dbefa5
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770853"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>識別及自訂 Visual Studio 中的鍵盤快速鍵
@@ -43,7 +43,7 @@ ms.locfileid: "85770853"
 
 ## <a name="identify-a-keyboard-shortcut"></a>識別鍵盤快速鍵
 
-1. 在功能表列上，選擇 [**工具**] [  >  **選項**]。
+1. 在功能表列上，選擇 [**工具**  >  **選項**]。
 
 2. 展開 [環境]****，然後選擇 [鍵盤]****。
 
@@ -63,7 +63,7 @@ ms.locfileid: "85770853"
 
 ## <a name="customize-a-keyboard-shortcut"></a>自訂鍵盤快速鍵
 
-1. 在功能表列上，選擇 [**工具**] [  >  **選項**]。
+1. 在功能表列上，選擇 [**工具**  >  **選項**]。
 
 2. 展開 [環境]****，然後選擇 [鍵盤]****。
 
@@ -105,7 +105,7 @@ ms.locfileid: "85770853"
 
 ### <a name="to-export-only-keyboard-shortcuts"></a>只匯出鍵盤快速鍵
 
-1. 在功能表列上，選擇 [**工具**] [匯  >  **入和匯出設定**]。
+1. 在功能表列上，選擇 [**工具**匯  >  **入和匯出設定**]。
 
 2. 選擇 [匯出選取的環境設定]****，然後選擇 [下一步]****。
 
@@ -119,7 +119,7 @@ ms.locfileid: "85770853"
 
 ::: moniker range="vs-2017"
 
-根據預設，您的快捷方式會儲存在 *%USERPROFILE%\Documents\Visual Studio 2017 \ Settings*資料夾的檔案中。 當您匯出設定時，檔案的名稱會反映日期，其副檔名為 *.vssettings*。
+根據預設，您的快捷方式會儲存在 *%USERPROFILE%\Documents\Visual Studio 2017 \ 設定* 資料夾的檔案中。 當您匯出設定時，檔案的名稱會反映日期，其副檔名為 *.vssettings*。
 
 ::: moniker-end
 
@@ -131,7 +131,7 @@ ms.locfileid: "85770853"
 
 ### <a name="to-import-only-keyboard-shortcuts"></a>只匯入鍵盤快速鍵
 
-1. 在功能表列上，選擇 [**工具**] [匯  >  **入和匯出設定**]。
+1. 在功能表列上，選擇 [**工具**匯  >  **入和匯出設定**]。
 
 2. 選擇 [匯入選取的環境設定]**** 選項按鈕，然後選擇 [下一步]****。
 

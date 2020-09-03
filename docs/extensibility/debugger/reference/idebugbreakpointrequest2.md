@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpoint請求2 |微軟文件
+title: IDebugBreakpointRequest2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f30f9698c9c81322edd6935b40c16cad6f46024c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734911"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
-此介面表示創建和綁定任何類型的斷點所需的資訊。
+此介面代表建立和系結任何類型中斷點所需的資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -28,31 +28,31 @@ ms.locfileid: "80734911"
 IDebugBreakpointRequest2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 會話調試管理員 (SDM) 通常實現此介面。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ 會話 debug manager (SDM) 通常會執行這個介面。
 
-## <a name="notes-for-callers"></a>通話備註
- 調試引擎 (DE) 通過調用[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)接收此介面,以創建掛起的斷點。 對[GetBreakpoint 請求的](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)調用可以從 DE 檢索此介面。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ Debug engine (DE) 透過呼叫 [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) 接收這個介面，以便建立暫止中斷點。 呼叫 [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md) 可以從 DE 取出這個介面。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 下表顯示的方法`IDebugBreakpointRequest2`。
+ 下表顯示的方法 `IDebugBreakpointRequest2` 。
 
 |方法|描述|
 |------------|-----------------|
-|[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|獲取此斷點請求的斷點位置類型。|
-|[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)|獲取描述此斷點請求的斷點請求資訊。|
+|[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|取得此中斷點要求的中斷點位置型別。|
+|[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)|取得描述此中斷點要求的中斷點要求資訊。|
 
 ## <a name="remarks"></a>備註
- 載入正在除錯的程式後,對[Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)的調用將掛起的斷點綁定到程式中的請求位置。
+ 在 [載入要進行](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) 偵錯工具的程式之後，呼叫系結會將暫止中斷點系結至程式中要求的位置。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)
 - [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)
-- [綁定](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+- [繫結](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

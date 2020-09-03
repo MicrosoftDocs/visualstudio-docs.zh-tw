@@ -1,5 +1,5 @@
 ---
-title: 自訂使用者介面 (來源控制 VS 套件) |微軟文件
+title: 自訂消費者介面 (原始檔控制 VSPackage) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,48 +12,48 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a6ef807cef17a6ca3cddfee05ba57ace27e34a9e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708935"
 ---
-# <a name="custom-user-interface-source-control-vspackage"></a>自訂使用者介面 (原始碼管理 VS 套件)
-VSPackage 通過 Visual Studio 命令表 *(.vsct*) 檔聲明其功能表項及其預設狀態。 整合[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]式開發環境 (IDE) 以預設狀態顯示選單項,直到載入 VSPackage。 隨後,調用<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>該方法以啟用或禁用功能表項。
+# <a name="custom-user-interface-source-control-vspackage"></a>自訂使用者介面 (原始檔控制 VSPackage) 
+VSPackage 會透過 Visual Studio 的命令資料表 (*. .vsct*) 檔來宣告其功能表項目和其預設狀態。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) 會顯示預設狀態下的功能表項目，直到載入 VSPackage 為止。 接著 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 會呼叫方法來啟用或停用功能表項目。
 
- VSPackage 可以設置註冊表項,以便 VSPackage 可以根據命令使用者介面 (UI) 上下文自動載入,儘管通常原始程式碼管理 VSPackage 應按需載入,而不是僅切換到特定的 UI 上下文。 有關**自動載入套件**註冊表項的詳細資訊,請參閱[管理 VS 套件](../../extensibility/managing-vspackages.md)。
+ VSPackage 可以設定登錄機碼，以便根據命令使用者介面 (UI) 內容來自動載入 VSPackage，不過通常原始檔控制 VSPackage 應該視需要載入，而不只是切換至特定的 UI 內容。 如需 **AutoLoadPackages** 登錄機碼的詳細資訊，請參閱 [管理 vspackage](../../extensibility/managing-vspackages.md)。
 
 ## <a name="vspackage-ui"></a>VSPackage UI
- 原始碼管理套件作為 VSPackage 實現,不使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]中的任何 UI。 每個原始程式碼管理 VSPackage 必須指定其自己的 UI 元素,如選單項、選單組、工具視窗、工具列和任何所需的 UI 來設置特定於原始碼管理 VSPackage 的選項。 這些 UI 元素可以靜態或動態啟用。 靜態 UI 元素在 *.vsct*檔中定義,無論是否載入 VS 套件,都顯示。 動態 UI 元素可能可見,具體取決於特定命令 UI<xref:EnvDTE.Constants.vsContextNoSolution>上下文(<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>如 )或由於對方法調用的結果。 動態 UI 元素的可見性符合延遲載入 VS 套件的策略。
+ 原始檔控制封裝會實作為 VSPackage，而且不會使用中的任何 UI [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 每個原始檔控制 VSPackage 都必須指定自己的 UI 元素，例如功能表項目、功能表群組、工具視窗、工具列，以及設定原始檔控制 VSPackage 特定選項的任何必要 UI。 這些 UI 元素可以靜態或動態方式啟用。 靜態 UI 元素是在 *.vsct* 檔案中定義，而且會顯示 VSPackage 是否已載入。 根據特定的命令 UI 內容（例如 <xref:EnvDTE.Constants.vsContextNoSolution> ）或呼叫方法的結果，可能會顯示動態 UI 元素 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 。 動態 UI 元素的可見度符合延遲載入 Vspackage 的策略。
 
-## <a name="ui-constraints-on-source-control-vspackages"></a>原始碼管理 VSPackages 的 UI 規範
- 由於源控件 VSPackage 在載入後無法從 IDE 中刪除,因此 VSPackage 必須能夠進入非活動狀態。 當 VS 包收到其不再處於活動狀態的通知時,VS 包將禁用其 UI 並忽略任何外部 IDE 交互。 當 VSPackage 不處於活動<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>狀態時 ,VSPackage 的方法的實現應隱藏命令。
+## <a name="ui-constraints-on-source-control-vspackages"></a>原始檔控制 Vspackage 上的 UI 條件約束
+ 因為原始檔控制 VSPackage 在載入後無法從 IDE 中移除，所以 VSPackage 必須能夠進入非使用中狀態。 當 VSPackage 收到不再使用的通知時，VSPackage 會停用其 UI，並忽略任何外部 IDE 互動。 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>當 VSPackage 非使用中時，VSPackage 的方法的執行應該會隱藏命令。
 
- 每個原始程式碼管理 VSPackage`IVsSccProvider`都必須 實現介面。 介面上的兩種方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A><xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>和 必須由 VSPackage 實現。
+ 每個原始檔控制 VSPackage 都必須執行 `IVsSccProvider` 介面。 介面上的兩個方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A> 都必須由 VSPackage 執行。
 
- 原始碼管理 VSPackage 可能已訂閱了各種 IDE 事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>,<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>這些事件由、 等實現。 此外,VSPackage 可能已實現啟用註冊表的回調介面<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>, 例如 。 這些介面都必須在非活動時被忽略。
+ 原始檔控制 VSPackage 可能已訂閱各種 IDE 事件，這些事件是由 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> 、等等所執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> 。 此外，VSPackage 可能已執行啟用登錄的回呼介面，例如 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> 。 這些介面必須在非使用中時全部忽略。
 
- 下面的清單顯示受原始碼管理 VSPackage 的活動狀態影響的介面:
+ 下列清單顯示受原始檔控制 VSPackage 之作用中狀態影響的介面：
 
-- 跟蹤項目文件事件。
+- 追蹤專案檔案事件。
 
 - 解決方案事件。
 
-- 解決方案持久性介面。 當處於非活動狀態時,包不應寫入 *.sln*和 *.suo*檔。
+- 解決方案持續性介面。 非使用中時，套件不應寫入 *.sln* 和 *.suo* 檔案中。
 
-- 屬性擴展器。
+- 屬性擴充項。
 
-  當原始碼<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>管理<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>VSPackage 處於非活動狀態時,不會呼叫所需的 和以及與原始程式碼管理關聯的任何可選介面。
+  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> 當原始檔控制 VSPackage 為非使用中時，不會呼叫所需的和以及與原始檔控制相關聯的任何選用介面。
 
-  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]當 IDE[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]啟動 時,將指令 UI 上下文設定為目前預設源控制項 VSPackage ID 的 ID。 這將導致活動源控件 VSPackage 的靜態 UI 顯示在 IDE 中,而無需實際載入 VSPackage。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]暫停 VSPackage 在對 VSPackage 進行[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]任何呼<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider>叫之前 透過註冊 。
+  當 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 啟動時，會 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 將命令 UI 內容設定為目前預設原始檔控制 VSPackage 識別碼的識別碼。 這會導致作用中原始檔控制 VSPackage 的靜態 UI 出現在 IDE 中，而不會實際載入 VSPackage。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 在對 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> VSPackage 進行任何呼叫之前，暫停 VSPackage 透過進行註冊。
 
-  下表描述了有關[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE如何隱藏不同UI項的具體詳細資訊。
+  下表說明 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 如何隱藏不同的 UI 專案的特定詳細資料。
 
-| UI 項 | 描述 |
+| UI 專案 | 描述 |
 | - | - |
-| 功能表與工具列 | 原始碼管理套件必須在 *.vsct*檔案的[可見性約束](../../extensibility/visibilityconstraints-element.md)部分中將初始選單和工具列可見性狀態設置為原始碼管理包 ID。 這使[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 能夠適當地設置功能表項的狀態,而無需載入 VSPackage<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>並調用 方法的實現。 |
-| 工具視窗 | 原始碼管理 VSPackage 隱藏它位於非活動狀態時擁有的任何工具視窗。 |
-| 原始碼管理 VSPackage 特定選項頁 | 註冊表項**HKLM_SOFTWARE_Microsoft_VisualStudio_X.Y_ToolsOptionsPages_可見性CmdUIContexts**允許 VSPackage 設置它需要顯示其選項頁的上下文。 必須使用此密鑰下的註冊表項使用原始程式碼管理服務的服務ID (SID)併為其分配DWORD值1。 每當在註冊源代碼管理 VSPackage 的上下文中發生 UI 事件時,如果 VSPackage 處於活動狀態,則將調用它。 |
+| 功能表與工具列 | 原始檔控制封裝必須在 *.vsct*檔案的[VisibilityConstraints](../../extensibility/visibilityconstraints-element.md)區段中，將初始功能表和工具列可見度狀態設定為原始檔控制封裝識別碼。 這可讓 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 適當地設定功能表項目的狀態，而不需要載入 VSPackage 和呼叫方法的執行 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 。 |
+| 工具視窗 | 當它變成非使用中時，原始檔控制 VSPackage 會隱藏它所擁有的任何工具視窗。 |
+| 原始檔控制 VSPackage 特定的選項頁面 | 登錄機碼 **HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUICoNtexts** 可讓 VSPackage 設定需要顯示其 [選項] 頁面的內容。 您必須使用原始檔控制服務的服務識別碼 (SID) 來建立此機碼底下的登錄專案，並為其指派 DWORD 值1。 每當 UI 事件發生在與原始檔控制 VSPackage 的內容中時，就會呼叫 VSPackage （如果它是使用中）。 |
 
 ## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>

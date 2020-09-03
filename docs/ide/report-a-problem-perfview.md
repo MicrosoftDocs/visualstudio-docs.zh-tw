@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.description: Use perfview.exe to collect ETL traces for troubleshooting issues with Visual Studio
 ms.openlocfilehash: 9ac4d90a0da15fe2415ada02d6e8e1cdbe11af56
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770818"
 ---
 # <a name="collect-an-etl-trace-with-perfview"></a>利用 PerfView 收集 ETL 追蹤
@@ -28,7 +28,7 @@ PerfView 是建立 ETL (事件追蹤記錄檔) 檔案的工具，它是以適合
 
 ## <a name="install-perfview"></a>安裝 PerfView
 
-從[GitHub](https://github.com/Microsoft/perfview/blob/master/documentation/Downloading.md)下載 PerfView。
+從 [GitHub](https://github.com/Microsoft/perfview/blob/master/documentation/Downloading.md)下載 PerfView。
 
 ## <a name="run-perfview"></a>執行 PerfView
 

@@ -1,6 +1,6 @@
 - name: Visual Basic 教學課程
   href: index.yml
-- name: 總覽
+- name: 概觀
   items:
     - name: Visual Studio 概觀
       href: visual-studio-ide.md

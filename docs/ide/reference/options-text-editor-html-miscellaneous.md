@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8aa26144a7c0a2f7edad58ecfb26e3a7d402a994
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770904"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>選項、文字編輯器、HTML (Web Form)、其他
 
-使用 [其他]**** 選項頁面設定 HTML 編輯器如何處理貼到頁面中之元素的喜好設定。 若要存取此頁面，請在功能表列上選擇 [**工具**] [  >  **選項**]，然後展開 [**文字編輯器**] [  >  **HTML （Web form）**] [  >  **其他**]。
+使用 [其他]**** 選項頁面設定 HTML 編輯器如何處理貼到頁面中之元素的喜好設定。 若要存取此頁面，請在功能表列上選擇 [**工具**  >  **選項**]，然後展開 [**文字編輯器**  >  **HTML (Web Form) **  >  **其他**]。
 
 ## <a name="miscellaneous-html-options"></a>其他 HTML 選項
 
@@ -29,7 +29,7 @@ ms.locfileid: "85770904"
 
 - **必須是 '<' 才能觸發標記完成視窗**
 
-   如果選取此核取方塊，當您輸入小於字元（"<"）時，標記完成視窗就會出現。
+   如果選取此核取方塊，當您輸入小於字元 ( "<" ) 時，就會顯示標記完成視窗。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,5 +1,5 @@
 ---
-title: WizardExtension 項目 （Visual Studio 範本） |Microsoft Docs
+title: " (Visual Studio 範本的 WizardExtension 元素) |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,18 +14,18 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 69e35d4bebf7a16a1429be674ba3533b4f082b05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201918"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-包含自訂範本精靈 的註冊項目。  
+包含用於自訂範本 wizard 的註冊專案。  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  ...  
  \<WizardExtension>  
   
@@ -46,22 +46,22 @@ ms.locfileid: "68201918"
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
-|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|必要項目。<br /><br /> 指定的名稱或組件出現在全域組件快取中的強式名稱。 必須有至少一個`Assembly`中的項目`WizardExtension`項目。|  
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|必要項目。<br /><br /> 實作的類別完整的名稱`IWizard`介面。 必須有至少一個`FullClassName`中的項目`WizardExtension`項目。|  
+|[裝配](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|必要元素。<br /><br /> 指定出現在全域組件快取中之元件的名稱或強式名稱。 元素中必須至少有一個 `Assembly` 元素 `WizardExtension` 。|  
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|必要元素。<br /><br /> 實介面之類別的完整名稱 `IWizard` 。 元素中必須至少有一個 `FullClassName` 元素 `WizardExtension` 。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|包含專案範本、 項目範本，或入門套件的所有中繼資料。|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|包含專案範本、專案範本或入門套件的所有中繼資料。|  
   
 ## <a name="remarks"></a>備註  
  `WizardExtension` 是 `VSTemplate` 的選擇性子項目。  
   
 ## <a name="example"></a>範例  
- 下列範例說明的標準專案範本的中繼資料[!INCLUDE[csprcs](../includes/csprcs-md.md)]Windows 應用程式。  
+ 下列範例說明適用于 Windows 應用程式的標準專案範本中繼資料 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 。  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -92,6 +92,6 @@ ms.locfileid: "68201918"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
+ [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)   
+ [建立專案和專案範本](../ide/creating-project-and-item-templates.md)   
  [如何：搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)
