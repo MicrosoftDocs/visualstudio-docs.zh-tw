@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fb07e9bc6c308e27e3ad054c5aeb0b12c092054
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534000"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>使用或不使用偵錯工具來執行程式碼剖析工具
@@ -43,7 +43,7 @@ Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無
   
 1. 開啟您想要偵錯的專案，然後按一下[偵錯/開始偵錯]\**** (或工具列上的 [開始] **** 或 **F5**)。  
   
-2. [**診斷工具**] 視窗會自動出現，除非您將它關閉。 如需再次顯示視窗，請按一下 [偵錯] / [視窗] / [顯示診斷工具]****。  
+2. 除非您已關閉 **診斷工具** 視窗，否則它會自動顯示。 如需再次顯示視窗，請按一下 [偵錯] / [視窗] / [顯示診斷工具]****。  
   
 3. 執行您要收集資料的案例。  
   
@@ -74,7 +74,7 @@ Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無
   
 1. 在 Visual Studio 中開啟專案。  
   
-2. 在 [**調試**] 功能表上，選擇 [效能分析工具 **...** ] （快速鍵： Alt + F2）。  
+2. 在 [ **調試** ] 功能表上，選擇 [ **效能分析工具 ...** (快速鍵： Alt + F2) 。  
   
 3. 在診斷啟動頁面上，選擇要在工作階段中執行的一項或多項工具。 只有適用於該專案類型、作業系統與程式設計語言的工具才會顯示。 當您選擇一項診斷工具時，將會停用無法在相同診斷工作階段中執行的工具選項。 以下是 C# Windows 通用應用程式中可能會有的選項：  
   
@@ -99,7 +99,7 @@ Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無
 ## <a name="the-profiling-report"></a>程式碼剖析報表  
  ![診斷工具報告](../profiling/media/diag-report.png "DIAG_Report")  
   
-|映像|描述|  
+|Image|說明|  
 |-|-|  
 |![步驟 1](../profiling/media/procguid-1.png "ProcGuid_1")|時間軸會顯示程式碼剖析工作階段的長度、應用程式週期啟用事件，以及使用者標記。|  
 |![步驟 2](../profiling/media/procguid-2.png "ProcGuid_2")|您可以拖曳藍色巡覽列，選取時間軸的區域，將報告限制在時間軸的一部分。|  

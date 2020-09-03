@@ -1,5 +1,5 @@
 ---
-title: 如何在機器碼中設定執行緒名稱 |Microsoft Docs
+title: 如何-在機器碼中設定執行緒名稱 |Microsoft Docs
 ms.date: 12/17/2018
 ms.topic: how-to
 dev_langs:
@@ -17,33 +17,33 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ce6281a87900247cc54422a5175714d5f05b8e07
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349142"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>如何：在機器碼中設定執行緒名稱
-在所有 Visual Studio 版本中，都可以將執行緒命名。 執行緒命名有助於在偵錯工具執行中的進程時，識別 [**執行緒**] 視窗中感興趣的執行緒。 當透過損毀傾印檢查和使用各種工具來分析效能捕捉時，擁有 recognizably 名稱的執行緒也會很有説明。
+在所有 Visual Studio 版本中，都可以將執行緒命名。 執行緒命名適用于在偵測執行中的進程時，在 [ **執行緒** ] 視窗中找出感興趣的執行緒。 當您透過損毀傾印檢查，以及使用各種工具來分析效能捕捉時，具有 recognizably 命名的執行緒也會很有説明。
 
 ## <a name="ways-to-set-a-thread-name"></a>設定執行緒名稱的方式
 
-有兩種方式可以設定執行緒名稱。 第一個是透過[SetThreadDescription](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription)函數。 第二種方式是在 Visual Studio 偵錯工具附加至進程時擲回特定的例外狀況。 每種方法都有其優點和注意事項。 `SetThreadDescription`從 Windows 10 1607 版或 Windows Server 2016 開始，支援使用。
+有兩種方式可以設定執行緒名稱。 第一個是透過 [>setthreaddescription](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription) 函數。 第二個方法是在 Visual Studio 偵錯工具附加至進程時擲回特定的例外狀況。 每種方法都有其優點和注意事項。 `SetThreadDescription`從 Windows 10、1607版或 Windows Server 2016 開始支援的使用。
 
-值得注意的是，如果有需要，_這兩_種方法都可以一起使用，因為它們的工作機制彼此獨立。
+值得注意的是， _這兩_ 種方法都可以搭配使用，因為它們的運作機制彼此獨立。
 
-### <a name="set-a-thread-name-by-using-setthreaddescription"></a>使用來設定執行緒名稱`SetThreadDescription`
+### <a name="set-a-thread-name-by-using-setthreaddescription"></a>使用來設定執行緒名稱 `SetThreadDescription`
 
 優點：
-* 在 Visual Studio 中進行調試時，不論偵錯工具是否附加至進程（在叫用 SetThreadDescription 時），都會顯示執行緒名稱。
-* 藉由在 Visual Studio 中載入損毀傾印來執行事後剖析後的偵錯工具時，會顯示執行緒名稱。
-* 使用其他工具（例如[WinDbg](/windows-hardware/drivers/debugger/debugger-download-tools)偵錯工具和[Windows performance analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)效能分析器）時，也會顯示執行緒名稱。
+* 在 Visual Studio 中進行偵錯工具時，不論偵錯工具是否在叫用 >setthreaddescription 時附加至進程，都可以看見執行緒名稱。
+* 在 Visual Studio 中載入損毀傾印來執行事後剖析後的偵錯工具時，會顯示執行緒名稱。
+* 使用其他工具（例如 [WinDbg](/windows-hardware/drivers/debugger/debugger-download-tools) 偵錯工具和 [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) 效能分析器）時，也會顯示執行緒名稱。
 
 警告：
-* 只有在 Visual Studio 2017 15.6 版和更新版本中，才會顯示執行緒名稱。
-* 在事後剖析錯損毀傾印檔案時，只有當損毀是在 Windows 10 1607 版、Windows Server 2016 或更新版本的 Windows 上建立時，才會顯示執行緒名稱。
+* 只有在 Visual Studio 2017 15.6 版和更新版本中才會顯示執行緒名稱。
+* 事後剖析錯損毀傾印檔案時，只有當損毀是 1607 Windows 10 在 Windows Server 2016 或更新版本的 Windows 上建立時，才會顯示執行緒名稱。
 
-*範例︰*
+*範例：*
 
 ```C++
 #include <windows.h>
@@ -69,12 +69,12 @@ int main()
 * 適用于所有版本的 Visual Studio。
 
 警告：
-* 只有在使用以例外狀況為基礎的方法時附加偵錯工具時，才會運作。
-* 使用此方法設定的執行緒名稱，將無法在傾印或效能分析工具中使用。
+* 只有在使用以例外狀況為基礎的方法時附加偵錯工具時，才適用。
+* 使用這個方法所設定的執行緒名稱將無法在傾印或效能分析工具中使用。
 
-*範例︰*
+*範例：*
 
-`SetThreadName`下面所示的函式示範此以例外狀況為基礎的方法。 請注意，執行緒名稱會自動複製到執行緒，因此 `threadName` 可以在呼叫完成之後釋放參數的記憶體 `SetThreadName` 。
+`SetThreadName`下面顯示的函式會示範這個以例外狀況為基礎的方法。 請注意，執行緒名稱將會自動複製到執行緒，因此 `threadName` 可以在呼叫完成之後釋放參數的記憶體 `SetThreadName` 。
 
 ```C++
 //

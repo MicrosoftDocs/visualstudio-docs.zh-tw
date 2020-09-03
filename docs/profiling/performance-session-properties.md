@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b3bafa976c8e57f468a3f3f59a3b6b19308fd1b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772198"
 ---
 # <a name="performance-session-properties"></a>效能工作階段屬性
@@ -33,19 +33,19 @@ ms.locfileid: "74772198"
 
 這些設定可以讓您選取程式碼剖析方法、加入 .NET 物件集合和存留期資料，和指定預設的報告位置和命名慣例。
 
-如需詳細資訊，請參閱
+如需詳細資訊，請參閱：
 
 [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)
 
-[收集 .NET 記憶體分配和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
+[收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
 - [如何：設定效能資料檔案名稱選項](../profiling/how-to-set-performance-data-file-name-options.md)
 
-## <a name="launch"></a>Launch
+## <a name="launch"></a>啟動
 
 這些設定可以讓您從二進位檔的清單中選擇，並指定二進位檔啟動的順序。
 
-有關詳細資訊，請參閱[如何：指定要啟動的二進位檔案](../profiling/how-to-specify-the-binary-to-start.md)
+如需詳細資訊，請參閱[如何：指定要啟動的二進位](../profiling/how-to-specify-the-binary-to-start.md)檔。
 
 ## <a name="sampling"></a>取樣
 
@@ -57,12 +57,12 @@ ms.locfileid: "74772198"
 - 效能計數器 - 針對低階效能問題
 - 您可以根據可用的效能計數器來指定其他取樣事件
 
-有關詳細資訊，請參閱[：選擇採樣事件](../profiling/how-to-choose-sampling-events.md)
+如需詳細資訊，請參閱 [如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)
 
 ## <a name="binary"></a>Binary
-這些設定可以讓您指定是否要將已檢測的二進位檔重新配置到另一個位置。 例如，如果您正在分析*My.DLL*並選擇不重新置放已檢測的二進位檔案，則將創建名為*My.Orig.DLL*的*My.DLL*的備份副本。 隨後，通過插入探測器來收集資料來修改*My.DLL。* 如果您決定要重新配置已檢測的二進位檔，則不會重新命名原始二進位檔，而且會將已檢測的二進位檔複製到指定的位置供檢測期間使用。
+這些設定可以讓您指定是否要將已檢測的二進位檔重新配置到另一個位置。 例如，如果您要分析*My.DLL*並選擇不重新配置已檢測的二進位檔，則會建立名為*My.Orig.DLL* *My.DLL*的備份副本。 接著，藉由插入探查來收集資料來修改 *My.DLL* 。 如果您決定要重新配置已檢測的二進位檔，則不會重新命名原始二進位檔，而且會將已檢測的二進位檔複製到指定的位置供檢測期間使用。
 
-有關詳細資訊，請參閱[如何：指定要啟動的二進位檔案](../profiling/how-to-specify-the-binary-to-start.md)
+如需詳細資訊，請參閱[如何：指定要啟動的二進位](../profiling/how-to-specify-the-binary-to-start.md)檔。
 
 ## <a name="tier-interactions"></a>階層互動
 
@@ -72,9 +72,9 @@ ms.locfileid: "74772198"
 
 這些設定可以讓您收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 網頁中 JScript 程式碼的效能資料，並指定您希望在檢測處理序前後發生的任何 [檢測前置]**** 和 [檢測後續]**** 事件。
 
-如需詳細資訊，請參閱
+如需詳細資訊，請參閱：
 
-[如何：在網頁中設定檔JavaScript代碼](../profiling/how-to-profile-javascript-code-in-web-pages.md)
+[如何：分析網頁中的 JavaScript 程式碼](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
 [如何：指定檢測前置和檢測後續命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
 
@@ -82,29 +82,29 @@ ms.locfileid: "74772198"
 
 這些設定可讓您收集在使用檢測程式碼剖析方法時，有關 CPU 效能計數器的資料。 不論 CPU 設計或製造商為何，您都可以使用可移植的效能計數器。 平台事件需視 CPU 設計和製造商而定。 如需晶片上之效能計數器的詳細資訊，請參閱特定處理器的說明文件。
 
-有關詳細資訊，請參閱[如何：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)
+如需詳細資訊，請參閱 [如何：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)
 
 ## <a name="windows-events"></a>Windows 事件
 
-在剖析期間，您可以收集來自事件追蹤提供者的資料。 您可以使用*VSPerfReport.exe*命令列工具`/calltrace`選項查看資料。 如需 Windows 事件追蹤 (ETW) 的詳細資訊，請參閱[關於事件追蹤 (About Event Tracing)](/windows/win32/etw/about-event-tracing)。
+在剖析期間，您可以收集來自事件追蹤提供者的資料。 您可以使用 [ *VSPerfReport.exe* 命令列工具] 選項來查看資料 `/calltrace` 。 如需 Windows 事件追蹤 (ETW) 的詳細資訊，請參閱[關於事件追蹤 (About Event Tracing)](/windows/win32/etw/about-event-tracing)。
 
-如需詳細資訊，請參閱
+如需詳細資訊，請參閱：
 
-[如何：收集 Windows （ETW） 資料的事件跟蹤](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+[如何：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 
-[VSPerf報告](../profiling/vsperfreport.md)。
+[VSPerfReport](../profiling/vsperfreport.md)。
 
 ## <a name="windows-counters"></a>Windows 計數器
 
 這個選項可以讓您從 Windows 效能監視器計數器收集資料。 若要收集此資料，請選取標記為 [收集 Windows 效能計數器]**** 的核取方塊。 收集的間隔時間可以在 [收集間隔]**** 方塊中設定。 另外，您可能也可以指定 [計數器分類]**** 和 [執行個體]****。 部分預設 Windows 效能監視器計數器可供使用。
 
- 有關詳細資訊，請參閱[如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)。
+ 如需詳細資訊，請參閱 [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)。
 
 ## <a name="advanced"></a>進階
 
 這些設定可以讓您指定 [VSInstr](../profiling/vsinstr.md) 命令列程式碼剖析工具的一個或多個選項，便能將選項加入至檢測程序。 您也可以指定當應用程式使用超過一個以上版本時，要進行程式碼剖析的 Common Runtime 版本。
 
-如需詳細資訊，請參閱
+如需詳細資訊，請參閱：
 
 [如何：指定 .NET Framework 執行階段](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 
@@ -112,6 +112,6 @@ ms.locfileid: "74772198"
 
 ## <a name="see-also"></a>另請參閱
 
-[概述](../profiling/overviews-performance-tools.md)
-[配置性能會話](../profiling/configuring-performance-sessions.md)
+[概覽](../profiling/overviews-performance-tools.md) 
+[設定效能會話](../profiling/configuring-performance-sessions.md) 
 [控制資料收集](../profiling/controlling-data-collection.md)

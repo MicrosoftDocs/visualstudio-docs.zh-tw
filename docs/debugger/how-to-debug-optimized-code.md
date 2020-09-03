@@ -1,5 +1,5 @@
 ---
-title: 如何-Debug 優化程式碼 |Microsoft Docs
+title: 如何-調試優化的程式碼 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3c08ce9605560173d6f29817372dee4af8d622e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349974"
 ---
 # <a name="how-to-debug-optimized-code"></a>如何：偵錯最佳化程式碼
@@ -52,7 +52,7 @@ ms.locfileid: "85349974"
 
   全域變數和靜態變數一定會正確顯示， 結構配置也會。 如果您有結構的指標，而且指標的值是正確的，則結構的每個成員變數都會顯示正確的值。
 
-  由於這些限制，您應該盡可能地使用程式的非最佳化版本來進行偵錯。 根據預設，優化會在 c + + 程式的 Debug 設定中關閉，並在發行設定中開啟。
+  由於這些限制，您應該盡可能地使用程式的非最佳化版本來進行偵錯。 根據預設，c + + 程式的 Debug 設定中會關閉優化，並在發行設定中開啟。
 
   然而，有時錯誤可能只出現在程式的最佳化版本中。 在這種情況下，您必須偵錯最佳化程式碼。
 
@@ -70,11 +70,11 @@ ms.locfileid: "85349974"
 
 6. 在 **C++** 資料夾下方，選取 `Optimization`。
 
-7. 在右邊的屬性清單裡，尋找 `Optimization`。 旁邊的設定可能會顯示 `Disabled (` [/od](/cpp/build/reference/od-disable-debug) `)` 。 選擇其中一個其他選項（ `Minimum Size``(` [/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed) `)` 、 `Maximum Speed``(` [/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed) `)` 、 `Full Optimization``(` [/ox](/cpp/build/reference/ox-full-optimization) `)` 或 `Custom` ）。
+7. 在右邊的屬性清單裡，尋找 `Optimization`。 它旁的設定可能會顯示為 `Disabled (` [/od](/cpp/build/reference/od-disable-debug) `)` 。 選擇其中一個其他選項 (`Minimum Size``(` [/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed) `)` 、 `Maximum Speed``(` [/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed) `)` 、 `Full Optimization``(` [/ox](/cpp/build/reference/ox-full-optimization) `)` 或 `Custom`) 。
 
 8. 如果您選擇 `Custom` 的 `Optimization` 選項，現在就可以為其他顯示在屬性清單裡的任一屬性設定其選項。
 
-9. 選取 [專案屬性] 頁面的 [設定屬性]、[C/c + +]、[命令列] 節點，然後將 [/Zo] 新增 `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` 至 [**其他選項**] 文字方塊。
+9. 選取 [專案屬性] 頁面的 [設定屬性]、[C/c + +]、[命令列] 節點，然後將 `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging)加入 `)` [**其他選項**] 文字方塊中。
 
     > [!WARNING]
     > `/Zo` 需要 Visual Studio 2013 Update 3 或更新版本。

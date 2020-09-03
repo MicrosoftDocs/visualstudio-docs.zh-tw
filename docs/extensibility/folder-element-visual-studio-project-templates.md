@@ -1,5 +1,5 @@
 ---
-title: Folder 元素（Visual Studio 專案範本） |Microsoft Docs
+title: ) 的 Visual Studio 專案範本 (資料夾元素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769582"
 ---
-# <a name="folder-element-visual-studio-project-templates"></a>Folder 元素（Visual Studio 專案範本）
-指定將加入至專案的資料夾。
+# <a name="folder-element-visual-studio-project-templates"></a>Visual Studio 專案範本 (資料夾元素) 
+指定將新增至專案的資料夾。
 
  \<VSTemplate> \<TemplateContent>
  \<Project>
@@ -41,30 +41,30 @@ ms.locfileid: "85769582"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|描述|
+|屬性|說明|
 |---------------|-----------------|
 |`Name`|必要屬性。<br /><br /> 專案資料夾的名稱。|
-|`TargetFolderName`|選擇性屬性。<br /><br /> 指定從範本建立專案時，要提供資料夾的名稱。 此屬性適用于使用參數取代來建立資料夾名稱，或以不能直接在 *.zip*檔案中使用的國際字串來命名資料夾。|
+|`TargetFolderName`|選擇性屬性。<br /><br /> 指定從範本建立專案時，要提供資料夾的名稱。 這個屬性適用于使用參數取代來建立資料夾名稱，或使用無法直接在 *.zip* 檔案中使用的國際字串來命名資料夾。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|`Folder`|指定要加入至專案的資料夾。 `Folder`元素可以包含子 `Folder` 元素。|
+|`Folder`|指定要加入至專案的資料夾。 `Folder` 元素可以包含子 `Folder` 元素。|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|指定要加入至專案的檔案。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[專案](../extensibility/project-element-visual-studio-templates.md)|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)的選擇性子項目。|
 
 ## <a name="remarks"></a>備註
- `Folder`是的選擇性子系 `Project` 。
+ `Folder` 是的選擇性子系 `Project` 。
 
- 您可以使用下列任何方法，將專案專案組織成範本中的資料夾：
+ 您可以使用下列任何一種方法，將專案專案組織為範本中的資料夾：
 
-- 在範本 *.zip*檔案中包含資料夾，並藉由在元素中指定檔案的路徑 *.vstemplate* `ProjectItem` ，而不含任何元素，將它們加入至 .vstemplate 檔案中的專案 `Folder` 。 這是建議的方法。 例如：
+- 將資料夾包含在 *.zip*檔案中，並在專案中指定檔案的路徑 *.vstemplate* `ProjectItem` （不含任何元素），以將它們新增至 .vstemplate 檔案中的專案 `Folder` 。 這是建議的方法。 例如：
 
      `...`
 
@@ -74,7 +74,7 @@ ms.locfileid: "85769582"
 
      `...`
 
-- 在範本 *.zip*檔案中包含資料夾，並將其新增至 *.vstemplate*檔案中具有元素的專案 `Folder` 。 例如：
+- 將資料夾包含在 *.zip* 檔案中，並將它們新增至 *.vstemplate* 檔案中具有專案的專案 `Folder` 。 例如：
 
      `...`
 
@@ -88,7 +88,7 @@ ms.locfileid: "85769582"
 
      `...`
 
-- 請勿在範本 *.zip*檔案中包含資料夾，但使用專案的 `TargetFileName` 屬性來新增資料夾 `ProjectItem` 。 例如：
+- 請勿在範本 *.zip* 檔案中包含資料夾，但請使用 `TargetFileName` 元素的屬性來加入資料夾 `ProjectItem` 。 例如：
 
      `...`
 

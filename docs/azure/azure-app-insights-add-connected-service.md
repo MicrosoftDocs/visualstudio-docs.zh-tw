@@ -10,10 +10,10 @@ ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: c15e7a14052efdab82388a950865557cb4425771
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88643433"
 ---
 # <a name="add-azure-application-insights-by-using-visual-studio-connected-services"></a>使用 Visual Studio 來新增 Azure 應用程式見解已連線的服務
@@ -34,7 +34,7 @@ ms.locfileid: "88643433"
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 若是 Visual Studio for Mac，請參閱 [Visual Studio for Mac 中已連線的服務](/visualstudio/mac/connected-services)。
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
 - 已安裝 Azure 工作負載的 Visual Studio。
 - 其中一個支援類型的專案

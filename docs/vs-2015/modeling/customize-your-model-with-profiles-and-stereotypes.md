@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b634b11418ef2d4220dc4eb07c825b514ab5494c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74301202"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>使用設定檔和造型自訂您的模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 Visual Studio 中，您可以採用標準 UML 模型項目，例如類別和元件，針對特定用途自訂它們。 您可以將造型*套用至模型專案，以*變更元素的屬性清單。 造型是在稱為*設定檔*的集合中定義。
+在 Visual Studio 中，您可以採用標準 UML 模型項目，例如類別和元件，針對特定用途自訂它們。 您 *可以將造型套用至模型* 專案，以變更元素的屬性清單。 造型定義在稱為 *設定檔*的集合中。
 
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
@@ -31,14 +31,14 @@ ms.locfileid: "74301202"
 
  在項目的屬性清單中，可以設定造型。 針對圖表上的主要圖形類型，已套用的造型也會出現在圖形中，如範例中所示。
 
- ![具有造型的 UML 類別。](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
+ ![包含造型的 UML 類別。](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
 
 > [!NOTE]
 > 如果您使用設定檔來建立模型，然後與其他人共用模型，他們將無法看到造型，除非他們的電腦上安裝了相同的設定檔。
 
-## <a name="related-topics"></a>相關主題
+## <a name="related-topics"></a>[相關主題]
 
-|標題|描述|
+|標題|說明|
 |-----------|-----------------|
 |[將造型新增至 UML 模型項目](../modeling/add-stereotypes-to-uml-model-elements.md)|將模型項目放在套件中、將套件連結至設定檔，然後將造型套用至項目。|
 |[UML 模型的標準造型](../modeling/standard-stereotypes-for-uml-models.md)|UML 標準設定檔 L2 和 L3 隨 Visual Studio 一起安裝，且依預設每個模型會連結到它們。 它們提供您可以用來為模型加上註解的造型。<br /><br /> 例如，您可以套用 «規格» 造型到類別，表示它只是要定義其執行個體的外在可見行為。|

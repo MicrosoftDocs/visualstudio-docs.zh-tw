@@ -1,5 +1,5 @@
 ---
-title: 如何顯示視窗屬性 |Microsoft Docs
+title: 如何-顯示視窗屬性 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d90ecf7745c609bac6267eaa9abd75b5bfe755c7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349766"
 ---
 # <a name="how-to-display-window-properties"></a>如何：顯示視窗屬性
-若要進一步瞭解[Windows View](../debugger/windows-view.md)中所列的視窗，請使用 [[視窗屬性] 對話方塊](../debugger/window-properties-dialog-box.md)。
+若要深入瞭解 [Windows View](../debugger/windows-view.md)中所列的視窗，請使用 [ [視窗屬性] 對話方塊](../debugger/window-properties-dialog-box.md)。
 
-### <a name="to-open-the-window-properties-dialog-box"></a>若要開啟視窗屬性對話方塊
+### <a name="to-open-the-window-properties-dialog-box"></a>開啟視窗屬性對話方塊
 
-1. 選取專案，然後從 [ **View** ] 功能表中選擇 [**屬性**]。
+1. 選取專案，然後從 [ **View** ] 功能表選擇 [**屬性**]。
 
-   [屬性] 對話方塊不是強制回應。 當您在 [視圖] 視窗中按一下 [從專案到專案] 時，對話方塊會自動重新整理，並顯示每個所選項目的資訊。
+   [屬性] 對話方塊並非強制回應。 當您在 [視圖] 視窗中按一下 [從專案到專案] 時，對話方塊會自動重新整理每個已選取專案的資訊。

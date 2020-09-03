@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 91d2af8bfcd8c9d80b589e01aedd535afbd1a913
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769470"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>選項、文字編輯器、U-SQL、IntelliSense
 
-使用 [IntelliSense]**** 選項頁面修改 U-SQL 的一些文字編輯器設定。 若要存取此選項頁面，請選擇 [**工具**] [  >  **選項**]，然後選擇 [**文字編輯器**] [  >  **U-SQL**  >  **IntelliSense**]。
+使用 [IntelliSense]**** 選項頁面修改 U-SQL 的一些文字編輯器設定。 若要存取此選項頁面，請選擇 [**工具**  >  **選項**]，然後選擇 [**文字編輯器**]-[文字編輯器]  >  **U-SQL**  >  ** **。
 
 ## <a name="intellisense-settings"></a>IntelliSense 設定
 
@@ -27,9 +27,9 @@ ms.locfileid: "85769470"
 
 ## <a name="completion-lists"></a>完成清單
 
-- **輸入字元後顯示完成清單**
+- **在輸入字元之後顯示完成清單**
 
-   選取這個選項時，IntelliSense 會在您開始輸入時自動顯示完成清單。 如果您未選取此選項，則您仍然可以從 [intellisense] 功能表或按**Ctrl**空格鍵來使用 intellisense 完成  +  ** **。
+   選取這個選項時，IntelliSense 會在您開始輸入時自動顯示完成清單。 如果您未選取此選項，則可以從 [intellisense] 功能表或按**Ctrl**空格鍵來使用 intellisense 完成  +  ** **。
 
 - **將關鍵字置於完成清單中**
 
@@ -56,4 +56,4 @@ ms.locfileid: "85769470"
 ## <a name="see-also"></a>另請參閱
 
 - [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
-- [Using IntelliSense](../../ide/using-intellisense.md)
+- [使用 IntelliSense](../../ide/using-intellisense.md)

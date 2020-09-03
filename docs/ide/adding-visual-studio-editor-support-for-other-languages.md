@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 247567030d47a55b29a3fca901e12948ddd85916
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533753"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>新增其他語言的 Visual Studio 編輯器支援
@@ -103,13 +103,13 @@ Visual Studio 藉由使用 [TextMate 文法](https://manual.macromates.com/en/la
 
 如果適用於您的情況，在此基底路徑下，新增下列資料夾︰
 
-|資料夾名稱|描述|
+|資料夾名稱|說明|
 |-----------------|-----------------|
-|\\*\<language name>*|語言資料夾。 *\<language name>* 以語言的名稱取代。 例如 *\Matlab*。|
-|*\Syntaxes*|文法資料夾。 包含語言的文法 *. json*檔案，例如*上的Matlab.js*。|
-|*\Snippets <*|程式碼片段資料夾。 包含語言的程式碼片段。|
+|\\*\<language name>*|語言資料夾。 取代 *\<language name>* 為語言的名稱。 例如 *\Matlab*。|
+|*\Syntaxes*|文法資料夾。 包含語言的 *文法檔案* ，例如 *Matlab.json*。|
+|*\Snippets*|程式碼片段資料夾。 包含語言的程式碼片段。|
 
-在 Windows 中， *% userprofile%* 會解析為路徑 *： \\ \<user name> c:\Users*。 如果您的系統上沒有*Extensions*資料夾，您就必須建立它。 如果資料夾已存在，它會隱藏。
+在 Windows 中， *% userprofile%* 會解析為路徑 *： \\ \<user name> c:\Users*。 如果您的系統上沒有 [ *擴充* 功能] 資料夾，您將需要建立它。 如果資料夾已存在，它會隱藏。
 
 > [!TIP]
 > 如果您在編輯器中有檔案，您將需要關閉它們再重新開啟，以在您新增 TextMate 文法之後查看語法醒目提示。

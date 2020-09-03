@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: a033c0fe1fd80edc7959c5f49993714982ecc805
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238176"
 ---
 # <a name="learn-to-use-the-code-editor-for-javascript"></a>瞭解如何使用 JavaScript 的程式碼編輯器
@@ -52,7 +52,7 @@ IntelliSense 是您撰寫程式碼時的重要資源。 它可以顯示類型可
 
 ## <a name="check-syntax"></a>檢查語法
 
-語言服務使用 ESLint 提供語法檢查和 Lint 檢查。 如果您需要在編輯器中設定語法檢查的選項，請選取 [**工具**] [選項] [  >  **Options**  >  **JavaScript/TypeScript**  >  **Linting**]。 [Linting] 選項會將您導向至全域 ESLint 組態檔。
+語言服務使用 ESLint 提供語法檢查和 Lint 檢查。 如果您需要在編輯器中設定語法檢查的選項，請選取 [**工具**  >  **選項**  >  **JavaScript/TypeScript**  >  **Linting**]。 [Linting] 選項會將您導向至全域 ESLint 組態檔。
 
 在下列程式碼中，您會看到運算式上的綠色語法醒目提示 (綠色波浪線)。 將滑鼠停留在語法醒目提示上方。
 
@@ -72,7 +72,7 @@ IntelliSense 是您撰寫程式碼時的重要資源。 它可以顯示類型可
 
 工具列是 Visual Studio 功能表列下的按鈕列，有助您提高撰寫程式碼的效率。 例如，您可以切換 IntelliSense 完成模式 ([IntelliSense](../ide/using-intellisense.md) 是程式碼撰寫的輔助工具，可顯示其他項目中符合的方法清單)，增加或減少行的縮排，也可以為不要編譯的程式碼加上註解。 在本節中，我們會為一些程式碼加上註解。
 
-在編輯器中選取一或多行程式碼，然後選擇工具列上的 [註解選取行]**** 按鈕 ![加上註解按鈕](../javascript/media/write-code-comment-out.png)。 如果您想要使用鍵盤，請按**ctrl** + **K**、 **ctrl** + **C**。
+在編輯器中選取一或多行程式碼，然後選擇工具列上的 [註解選取行]**** 按鈕 ![加上註解按鈕](../javascript/media/write-code-comment-out.png)。 如果您想要使用鍵盤，請按下**ctrl** + **K**、 **ctrl** + **C**。
 
 JavaScript 註解字元 `//` 會新增至每個選取行的開頭，為程式碼加上註解。
 
@@ -82,11 +82,11 @@ JavaScript 註解字元 `//` 會新增至每個選取行的開頭，為程式碼
 
 ![大綱摺疊按鈕](../javascript/media/write-code-collapse-code.png)
 
-程式碼區塊只會摺疊到第一行，並且後面接著省略符號 (`...`)。 若要再次展開程式碼區塊，請按一下現在具有加號的相同灰色方塊，或再次按**ctrl** + **m**、 **ctrl** + **m** 。 這項功能稱為[大綱](../ide/outlining.md)，而且特別適用於摺疊較長的函式或整個類別。
+程式碼區塊只會摺疊到第一行，並且後面接著省略符號 (`...`)。 若要再次展開程式碼區塊，請按一下現在具有加號的相同灰色方塊，或再次按下**ctrl** + **m**、 **ctrl** + **m** 。 這項功能稱為[大綱](../ide/outlining.md)，而且特別適用於摺疊較長的函式或整個類別。
 
 ## <a name="view-definitions"></a>檢視定義
 
-Visual Studio 編輯器可讓您輕鬆檢查類型、函數等的定義。其中一種方式是流覽至包含定義的檔案，例如，在參考程式設計項目的任何位置選擇 [ **移至定義** ]。 不會將焦點移離所處理檔案的較快速方式是使用[查看定義](../ide/go-to-and-peek-definition.md#peek-definition)。 讓我們查看下列範例中 `render` 方法的定義。
+Visual Studio 編輯器可讓您輕鬆檢查類型、函式等的定義。其中一種方式是導覽至包含定義的檔案，例如，在參考程式設計專案的任何位置選擇 [ **移至定義** ]。 不會將焦點移離所處理檔案的較快速方式是使用[查看定義](../ide/go-to-and-peek-definition.md#peek-definition)。 讓我們查看下列範例中 `render` 方法的定義。
 
 以滑鼠右鍵按一下 `render`，然後從操作功能表選擇 [查看定義]****。 或者，按**Alt** + **F12**。
 
@@ -100,7 +100,7 @@ Visual Studio 編輯器可讓您輕鬆檢查類型、函數等的定義。其中
 
 Visual Studio 提供實用的「程式碼片段」**，讓您可以用來快速且輕鬆地產生常用的程式碼區塊。 [程式碼片段](../ide/code-snippets.md)適用於不同的程式設計語言 (包括 JavaScript)。 請在程式碼檔案中新增 `for` 迴圈。
 
-將游標放在您想要插入程式碼片段的位置，以滑鼠右鍵按一下並選擇 [**程式碼片段**] [  >  **插入程式碼片段**]。
+將游標放在您想要插入程式碼片段的位置，按一下滑鼠右鍵，然後選擇 [**程式碼片段**  >  **插入代碼**段]。
 
 ![Visual Studio 中的程式碼片段](../javascript/media/write-code-insert-snippet.png)
 
@@ -116,7 +116,7 @@ for (var i = 0; i < length; i++) {
 }
 ```
 
-您可以藉由選擇 [**編輯**] [IntelliSense] [  >  **IntelliSense**  >  **插入程式碼片段**]，然後選擇您的語言資料夾，來查看您語言的可用程式碼片段。
+您可以選擇 [**編輯**  >  **IntelliSense**  >  **插入程式碼片段**]，然後選擇語言的資料夾，以查看語言的可用程式碼片段。
 
 ## <a name="see-also"></a>另請參閱
 

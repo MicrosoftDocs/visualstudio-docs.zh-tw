@@ -6,10 +6,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
 ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74538579"
 ---
 # <a name="team-explorer-reference"></a>Team Explorer 參考
@@ -102,7 +102,7 @@ ms.locfileid: "74538579"
 
 [設定]**** 頁面可讓您為專案或專案集合設定管理功能。 查看下列文章：
 
-| 隨附此逐步解說的專案 | 專案集合 | 其他 |
+| 專案 | 專案集合 | 其他 |
 | - | - | - |
 | [安全性、群組成員資格](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[安全性、原始檔控制 (TFVC)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[工作項目區域](/azure/devops/organizations/settings/set-area-paths)<br/>[工作項目反覆項目](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[入口網站設定](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[專案警示](/azure/devops/notifications/howto-manage-team-notifications) | [安全性、群組成員資格](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[原始檔控制 (TFVC)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[流程範本管理員](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Git 全域設定](/azure/devops/repos/git/git-config)<br/>[Git 存放庫設定](/azure/devops/repos/git/git-config) |
 

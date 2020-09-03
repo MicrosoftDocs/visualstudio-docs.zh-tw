@@ -7,10 +7,10 @@ ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
 ms.openlocfilehash: 29c5bb9c45ae8d859316bd9c63eec10a6a425571
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851961"
 ---
 # <a name="extending-visual-studio-for-mac"></a>擴充 Visual Studio for Mac
@@ -23,7 +23,7 @@ Visual Studio for Mac 包含一組稱為「延伸模組套件」** 的模組。 
 
 ![增益集架構](media/extending-visual-studio-mac-addin1.png)
 
-為了讓延伸模組套件從 Visual Studio for Mac 建置，它必須具有從 Visual Studio for Mac IDE 內現有擴充點建置的延伸模組。 當擴展包依賴于外接程式主機中定義的擴充點時，據說 _它_ 依賴于該擴展包。
+為了讓延伸模組套件從 Visual Studio for Mac 建置，它必須具有從 Visual Studio for Mac IDE 內現有擴充點建置的延伸模組。 當延伸模組套件依賴增益集主機中所定義的擴充點時，即表示 _相依于_   該擴充功能套件。
 
 此模組化設計的好處是，Visual Studio for Mac 可以擴充 -- 有許多擴充點可供自訂延伸模組套件建置之用。 目前的延伸模組套件範例包括支援 C# 和 F#、偵錯工具和專案範本。
 
@@ -96,7 +96,7 @@ Visual Studio for Mac 包含一組稱為「延伸模組套件」** 的模組。 
 </Extension>
 ```
 
-CommandItem 將其 id 屬性中指定的命令放入功能表。 此 CommandItem 會擴充 `/MonoDevelop/Ide/MainMenu/Edit` 擴充點，讓命令的標籤出現在 [編輯] 功能表****。 請注意，命令項中的**ID**對應于命令節點 的`InsertDate`ID。 如果您要移除 CommandItem，[插入日期]**** 選項就會從 [編輯] 功能表消失。
+CommandItem 將其 id 屬性中指定的命令放入功能表。 此 CommandItem 會擴充 `/MonoDevelop/Ide/MainMenu/Edit` 擴充點，讓命令的標籤出現在 [編輯] 功能表****。 請注意，CommandItem 中的 **識別碼** 對應到命令節點的識別碼 `InsertDate` 。 如果您要移除 CommandItem，[插入日期]**** 選項就會從 [編輯] 功能表消失。
 
 ### <a name="command-handlers"></a>命令處理常式
 
@@ -155,7 +155,7 @@ public enum DateInserterCommands
 * 目標 Framework
 * 目標執行階段
 * VC 後端
-* Refactoring
+* 重構
 * 執行處理常式
 * 語法醒目提示
 

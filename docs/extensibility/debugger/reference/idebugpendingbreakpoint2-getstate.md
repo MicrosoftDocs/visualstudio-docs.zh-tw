@@ -1,5 +1,5 @@
 ---
-title: IDebug 待定突破點2::獲取狀態 |微軟文件
+title: IDebugPendingBreakpoint2：： >getstate |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4ad65ff6fcebb18ac1b8852c08195e9a8b062749
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725749"
 ---
 # <a name="idebugpendingbreakpoint2getstate"></a>IDebugPendingBreakpoint2::GetState
-獲取掛起斷點的狀態。
+取得暫止中斷點的狀態。
 
 ## <a name="syntax"></a>語法
 
@@ -42,10 +42,10 @@ int GetState( 
 
 ## <a name="parameters"></a>參數
 `pState`\
-[進出]PENDING_BP_STATE_INFO[結構,](../../../extensibility/debugger/reference/pending-bp-state-info.md)該結構填寫了此掛起的斷點說明。
+[in，out]填入此暫止中斷點描述的 [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) 結構。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

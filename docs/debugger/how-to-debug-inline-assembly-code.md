@@ -1,5 +1,5 @@
 ---
-title: 如何-Debug 內嵌組譯程式碼 |Microsoft Docs
+title: 如何-調試內嵌組解碼程式碼 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 528defb516b704f0425ac4389a2fd65befef7063
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350026"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>如何：偵錯內嵌組譯程式碼

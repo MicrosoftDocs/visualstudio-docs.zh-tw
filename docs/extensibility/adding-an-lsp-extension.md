@@ -1,5 +1,5 @@
 ---
-title: 新增語言伺服器協定擴展 |微軟文件
+title: 新增語言伺服器通訊協定延伸模組 |Microsoft Docs
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
@@ -9,150 +9,150 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ef2093915538f09f425fc961420c4a3078043c91
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740228"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>新增語言伺服器通訊協定延伸模組
 
-語言伺服器協定 (LSP) 是一種通用協定,其形式為 JSON RPC v2.0,用於向各種代碼編輯器提供語言服務功能。 使用該協定,開發人員可以編寫一個語言伺服器,向支援 LSP 的各種代碼編輯器提供語言服務功能,如 IntelliSense、錯誤診斷、查找所有引用等。 傳統上,可以使用 TextMate 語法檔提供語法突出顯示等基本功能,或者編寫使用全套 Visual Studio 擴展 API 提供更豐富數據的自定義語言服務來添加 Visual Studio 中的語言服務。 借助 Visual Studio 對 LSP 的支援,有第三個選項。
+Language Server Protocol (LSP) 是一種通用的通訊協定，採用 JSON RPC v2.0 的形式，用來為各種程式碼編輯器提供語言服務功能。 開發人員可以使用此通訊協定撰寫單一語言伺服器，為支援 LSP 的各種程式碼編輯器提供語言服務功能，例如 IntelliSense、錯誤診斷、尋找所有參考等等。 傳統上，您可以使用 TextMate 文法檔來新增 Visual Studio 中的語言服務，以提供基本功能，例如語法醒目提示或撰寫自訂語言服務，以使用完整的 Visual Studio 擴充性 Api 來提供更豐富的資料。 有了 LSP 的 Visual Studio 支援，還有第三個選項。
 
-![視覺化工作室中的語言伺服器協定服務](media/lsp-service-in-VS.png)
+![Visual Studio 中的語言伺服器通訊協定服務](media/lsp-service-in-VS.png)
 
 ## <a name="language-server-protocol"></a>語言伺服器通訊協定
 
-![語言伺服器協定實現](media/lsp-implementation.png)
+![語言伺服器通訊協定實行](media/lsp-implementation.png)
 
-本文介紹如何創建使用基於 LSP 的語言伺服器的 Visual Studio 擴展。 它假定您已經開發了基於 LSP 的語言伺服器,並且只想將其集成到 Visual Studio 中。
+本文說明如何建立使用以 LSP 為基礎之語言伺服器的 Visual Studio 延伸模組。 它假設您已經開發了 LSP 型語言伺服器，而且只想要將它整合到 Visual Studio 中。
 
-為了在 Visual Studio 中提供支援,語言伺服器可以透過任何基於串流的傳輸機制與用戶端(Visual Studio) 通訊,例如:
+針對 Visual Studio 內的支援，語言伺服器可以透過任何以資料流程為基礎的傳輸機制與用戶端 (Visual Studio) 進行通訊，例如：
 
-* 標準輸入/輸出串流
+* 標準輸入/輸出資料流程
 * 具名管道
-* Socket(僅限 TCP)
+* 僅限通訊端 (TCP) 
 
-LSP 和 Visual Studio 中支援它的目的是將不屬於 Visual Studio 產品的語言服務載入。 它不打算擴展視覺工作室中的現有語言服務(如 C#)。 要延伸現有語言,請參閱語言服務的擴充性指南(例如[,"Roslyn".NET 編譯器平臺](../extensibility/dotnet-compiler-platform-roslyn-extensibility.md)),或請參閱[擴展編輯器和語言服務](../extensibility/extending-the-editor-and-language-services.md)。
+在 Visual Studio 中，LSP 和支援的目的是要將不是 Visual Studio 產品一部分的語言服務上架。 它不是用來擴充現有的語言服務 (例如 Visual Studio 中的 c # ) 。 若要擴充現有的語言，請參閱 language service 的擴充性指南 (例如， ["Roslyn" .NET Compiler Platform](../extensibility/dotnet-compiler-platform-roslyn-extensibility.md)) 或參閱 [擴充編輯器和語言服務](../extensibility/extending-the-editor-and-language-services.md)。
 
-有關協定本身的詳細資訊,請參閱[此處](https://github.com/Microsoft/language-server-protocol)的文檔。
+如需有關通訊協定本身的詳細資訊，請參閱 [此處](https://github.com/Microsoft/language-server-protocol)的檔。
 
-有關如何創建範例語言伺服器或如何將現有語言伺服器整合到 Visual Studio Code 中的詳細資訊,請參閱[此處](https://code.visualstudio.com/docs/extensions/example-language-server)的文檔。
+如需有關如何建立範例語言伺服器，或如何將現有的語言伺服器整合到 Visual Studio Code 的詳細資訊，請參閱 [此處](https://code.visualstudio.com/docs/extensions/example-language-server)的檔。
 
-## <a name="language-server-protocol-supported-features"></a>語言伺服器協定支援功能
+## <a name="language-server-protocol-supported-features"></a>語言伺服器通訊協定支援的功能
 
-下表顯示了可視化工作室中支援哪些 LSP 功能:
+下表顯示 Visual Studio 支援的 LSP 功能：
 
-訊息 | 在視覺工作室中提供支援
+訊息 | 支援 Visual Studio
 --- | ---
 initialize | 是
 初始化 | 是
 shutdown | 是
 exit | 是
-$/取消請求 | 是
-視窗/顯示訊息 | 是
-視窗/顯示訊息要求 | 是
-視窗/記錄訊息 | 是
+$/cancelRequest | 是
+window/showMessage | 是
+window/showMessageRequest | 是
+window/logMessage | 是
 遙測/事件 |
-用戶端/寄存器能力 |
-用戶端/取消註冊功能 |
-工作區/已更改設定 | 是
-工作區/已更改監視檔 | 是
+用戶端/registerCapability |
+用戶端/unregisterCapability |
+工作區/didChangeConfiguration | 是
+工作區/didChangeWatchedFiles | 是
 工作區/符號 | 是
-工作區/執行命令 | 是
-工作區/應用編輯 | 是
-文字文件/發佈診斷 | 是
-文字文件/已開啟 | 是
-文字文件/已變更 | 是
-文字文件/儲存 |
-文字文件/將儲存等待,直到 |
-文字文件/已儲存 | 是
-文字文件/關閉 | 是
-文字文件/完成 | 是
+工作區/executeCommand | 是
+工作區/applyEdit | 是
+textDocument/publishDiagnostics | 是
+textDocument/didOpen | 是
+textDocument/didChange | 是
+textDocument/willSave |
+textDocument/willSaveWaitUntil |
+textDocument/didSave | 是
+textDocument/didClose | 是
+textDocument/完成 | 是
 完成/解決 | 是
-文字文件/懸停 | 是
-文字文件/簽署說明 | 是
-文字文件/引用 | 是
-文字文件/文件突顯 | 是
-文字文件/文件符號 | 是
-文字文件/格式 | 是
-文字文件/範圍格式 | 是
-文字文件/開啟類型格式 |
-文字文件/定義 | 是
-文字文件/代碼操作 | 是
-文字文件/代碼鏡頭 |
-代碼鏡頭/解析 |
-文字文件/文件連結 |
-文件連結/解析 |
-文字文件/重新命名 | 是
+textDocument/停留 | 是
+textDocument/signatureHelp | 是
+textDocument/參考 | 是
+textDocument/documentHighlight | 是
+textDocument/documentSymbol | 是
+textDocument/格式化 | 是
+textDocument/rangeFormatting | 是
+textDocument/onTypeFormatting |
+textDocument/定義 | 是
+textDocument/codeAction | 是
+textDocument/codeLens |
+codeLens/解析 |
+textDocument/documentLink |
+documentLink/解析 |
+textDocument/重新命名 | 是
 
 ## <a name="get-started"></a>開始使用
 
 > [!NOTE]
-> 從 Visual Studio 2017 版本 15.8 開始,對通用語言伺服器協定的支援內置於可視化工作室中。 如果您已使用預覽[語言伺服器用戶端 VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)版本構建 LSP 擴展,則升級至版本 15.8 或更高版本後,它們將停止工作。 您需要執行以下操作才能讓 LSP 延伸再次工作:
+> 從 Visual Studio 2017 15.8 版開始，Visual Studio 內建 common Language Server 通訊協定的支援。 如果您使用預覽 [語言伺服器用戶端 VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) 版本建立了 LSP 擴充功能，當您升級至15.8 版或更高版本時，它們將會停止運作。 您將需要執行下列動作，才能讓 LSP 延伸模組再次運作：
 >
-> 1. 卸載微軟可視化工作室語言伺服器協定預覽 VSIX。
+> 1. 卸載 Microsoft Visual Studio Language Server Protocol Preview VSIX。
 >
->    從版本 15.8 開始,每次在 Visual Studio 中執行升級時,將自動檢測並刪除預覽 VSIX。
+>    從15.8 版開始，每次您在 Visual Studio 中執行升級時，就會自動偵測並移除 preview VSIX。
 >
-> 2. 更新您的 Nuget 引用到[LSP 套件](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client)的最新非預覽版本。
+> 2. 針對 [LSP 套件](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client)將 Nuget 參考更新為最新的非預覽版本。
 >
-> 3. 刪除 VSIX 清單中對 Microsoft 視覺化工作室語言伺服器協定預覽 VSIX 的依賴項。
+> 3. 移除 VSIX 資訊清單中 Microsoft Visual Studio Language Server Protocol Preview VSIX 的相依性。
 >
-> 4. 確保 VSIX 指定 Visual Studio 2017 版本 15.8 預覽 3 作為安裝目標的下限。
+> 4. 請確定您的 VSIX 指定 Visual Studio 2017 15.8 版 Preview 3 作為安裝目標的下限。
 >
 > 5. 重建並重新部署。
 
 ### <a name="create-a-vsix-project"></a>建立 VSIX 專案
 
-要使用基於 LSP 的語言伺服器創建語言服務擴展,首先請確保為 VS 實例安裝了**Visual Studio 擴充開發**工作負載。
+若要使用以 LSP 為基礎的語言伺服器來建立語言服務延伸模組，請先確定您已針對 VS 的實例安裝 **Visual Studio 延伸模組開發** 工作負載。
 
-接下來,透過瀏覽**到檔案** > **新項目** > **視覺化 C_** > **擴充性** > VSIX 專案建立新的**VSIX 專案**:
+接下來，**流覽至 [**  >  **新增專案**  >  **Visual c #** 擴充性  >  **Extensibility**  >  **VSIX 專案**] 來建立新的 VSIX 專案：
 
 ![建立 vsix 專案](media/lsp-vsix-project.png)
 
-### <a name="language-server-and-runtime-installation"></a>語言伺服器與執行時安裝
+### <a name="language-server-and-runtime-installation"></a>語言伺服器與執行時間安裝
 
-預設情況下,為支援 Visual Studio 中基於 LSP 的語言伺服器而創建的擴展不包含語言伺服器本身或執行它們所需的執行時。 擴展開發人員負責分發語言伺服器和所需的運行時。 有幾種方法可以做到這一點:
+根據預設，為了在 Visual Studio 中支援 LSP 型語言伺服器而建立的擴充功能，不包含語言伺服器本身或執行它們所需的執行時間。 延伸模組開發人員負責散發語言伺服器和所需的執行時間。 有幾種方式可以執行這項操作：
 
-* 語言伺服器可以作為內容檔嵌入到 VSIX 中。
-* 創建 MSI 以安裝語言伺服器和/或所需的執行時。
-* 在應用商店上提供說明,告知使用者如何獲取運行時和語言伺服器。
+* 語言伺服器可以內嵌在 VSIX 中做為內容檔案。
+* 建立 MSI 以安裝語言伺服器和/或需要的執行時間。
+* 提供 Marketplace 通知使用者如何取得執行時間和語言伺服器的指示。
 
-### <a name="textmate-grammar-files"></a>文字Mate語法檔
+### <a name="textmate-grammar-files"></a>TextMate 文法檔
 
-LSP 不包括有關如何為語言提供文本著色的規範。 要為 Visual Studio 中的語言提供自訂著色,擴展開發人員可以使用 TextMate 語法檔。 要新增自訂 TextMate 語法或主題檔,請按照以下步驟操作:
+LSP 不包含如何提供語言文字顏色標示的規格。 為了在 Visual Studio 中提供語言的自訂顏色標示，延伸模組開發人員可以使用 TextMate 文法檔案。 若要加入自訂 TextMate 文法或主題檔案，請遵循下列步驟：
 
-1. 在延伸室內建立名為「語法」的資料夾(也可以是您選擇的任何名稱)。
+1. 在您的延伸模組中建立名為 "文法" 的資料夾 (或者可以是您選擇的任何名稱) 。
 
-2. 在*語法*資料夾中,包括任何*\*.tm 語言**\***\*、.plist、.tmtheme*或*\*.json*檔,您希望提供自定義著色。
+2. *在 [文法*] 資料夾內，包含您想要提供自訂顏色標示的任何* \* . tmlanguage*、 * \* . plist*、 * \* . tmtheme*或* \* . json*檔案。
 
    > [!TIP]
-   > *.tmtheme*檔案定義作用域如何映射到 Visual Studio 分類(命名顏色鍵)。 有關指導,您可以在 *%程式檔 (x86)%_Microsoft\\\<Visual Studio\\\<版本>SKU>_Common7_IDE_共同扩展\Microsoft_TextMate_starterkit_Themesg*目錄中引用全域 *.tmtheme*檔。
+   > *Tmtheme*檔案會定義範圍如何對應至 Visual Studio 分類 (命名的色彩索引鍵) 。 如需指導方針，您可以參考 *% ProgramFiles (x86) % \ Microsoft Visual Studio \\ \<version> \\ \<SKU> \Common7\IDE\CommonExtensions\Microsoft\TextMate\Starterkit\Themesg*目錄中的*tmtheme*檔案。
 
-3. 建立 *.pkgdef*檔案並新增類似於此行:
+3. 建立 *.pkgdef* 檔案，並新增類似以下的行：
 
     ```
     [$RootKey$\TextMate\Repositories]
     "MyLang"="$PackageFolder$\Grammars"
     ```
 
-4. 右鍵按下檔案並選擇**屬性**。 將 **'產生'** 操作**變更為內容**,並將**VSIX 屬性中的「 包含」** 變更為**true**。
+4. 以滑鼠右鍵按一下檔案，然後選取 [ **屬性**]。 將 [ **組建** ] 動作變更為 [ **內容** ]，並將 [ **包含于 VSIX** ] 屬性變更為 [ **true**]。
 
-完成上述步驟後,*語法*文件夾將作為名為"MyLang"的儲存庫源添加到包的安裝目錄中("MyLang"只是消除歧義的名稱,可以是任何唯一的字串)。 此目錄中的所有語法 *(.tm語言*檔)和主題檔 *(.tmtheme*檔案)都作為潛在內容被拾起,它們取代了 TextMate 提供的內置語法。 如果語法檔的聲明副檔名與正在打開的文件的副檔名匹配,TextMate 將介入。
+完成上述步驟之後， *會將文法資料夾新增* 至套件的安裝目錄，作為名為 ' MyLang ' 的存放庫來源 ( ' MyLang ' 只是要去除混淆的名稱，而且可以是) 的任何唯一字串。 所有的文法 (*tmlanguage* 檔案) 和 (主題檔案中，) 在此目錄中的 *tmtheme* 檔案會被挑選為潛力，並取代 TextMate 提供的內建文法。 如果文法檔的宣告延伸符合要開啟之檔案的副檔名，TextMate 將會逐步執行。
 
-## <a name="create-a-simple-language-client"></a>建立簡單的語言客戶端
+## <a name="create-a-simple-language-client"></a>建立簡單的語言用戶端
 
-### <a name="main-interface---ilanguageclient"></a>主介面 - [I語言用戶端](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)
+### <a name="main-interface---ilanguageclient"></a>主要介面- [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)
 
-建立 VSIX 專案後,向專案新增以下 NuGet 套件:
+建立您的 VSIX 專案之後，將下列 NuGet 套件新增 (s) 至您的專案：
 
-* [微軟.VisualStudio.語言伺服器.用戶端](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client)
+* [VisualStudio. LanguageServer. 用戶端](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client)
 
 > [!NOTE]
-> 完成上述步驟后依賴 NuGet 包時,牛頓軟.Json 和 StreamJsonRpc 包也添加到您的專案中。 **不要更新這些套件,除非您確定這些新版本將安裝在您的擴展目標 Visual Studio 版本上**。 程式集將不包含在 VSIX 中;因此,這些程式集將不包含在 VSIX 中。相反,它們將從可視化工作室安裝目錄中拾取。 如果引用的程式集版本較用戶電腦上安裝的程式集版本要大,則擴展將不起作用。
+> 當您在完成先前的步驟之後相依于 NuGet 套件時，也會將 Newtonsoft.Js和 StreamJsonRpc 套件新增至您的專案。 **除非您確定這些新版本將會安裝在您的延伸模組目標 Visual Studio 版本上，否則請勿更新這些套件**。 元件不會包含在您的 VSIX 中;相反地，系統會從 Visual Studio 安裝目錄中挑選它們。 如果您參考的元件版本與使用者電腦上安裝的版本不同，您的延伸模組將無法運作。
 
-然後,您可以創建實現[I語言用戶端](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)介面的新類,該介面是連接到基於 LSP 的語言伺服器的語言用戶端所需的主介面。
+然後，您可以建立新的類別來執行 [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017) 介面，這是連接到 LSP 語言伺服器的語言用戶端所需的主要介面。
 
 以下是範例︰
 
@@ -215,13 +215,13 @@ namespace MockLanguageExtension
 }
 ```
 
-需要實現的主要方法是[「上載Async」](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017)和[「啟動Async」。](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017) 當 Visual Studio 載入了擴展並準備好啟動語言伺服器時,將調用[OnLoadedAsync。](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) 在此方法中,您可以立即調用[StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017)委託以發出語言伺服器應啟動的訊號,或者可以執行其他邏輯並在以後調用[StartAsync。](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) **要啟動語言伺服器,您必須在某個時間點調用 StartAsync。**
+需要實作為的主要方法是 [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) 和 [ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017)。 當 Visual Studio 已載入您的延伸模組，而且您的語言伺服器準備好要啟動時，就會呼叫[OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) 。 在這個方法中，您可以立即叫用 [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) 委派，以表示應該啟動語言伺服器，或者您可以進行額外的邏輯，稍後再叫用 [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) 。 **若要啟用您的語言伺服器，您必須在某個時間點呼叫 StartAsync。**
 
-[ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017)是最終調用[StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017)委託調用的方法。 它包含啟動語言伺服器並建立與它連接的邏輯。 必須返回包含用於寫入伺服器和從伺服器讀取的流的連接物件。 此處引發的任何異常都通過 Visual Studio 中的資訊列消息捕獲並顯示給使用者。
+[ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017) 是最後藉由呼叫 [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) 委派叫用的方法。 它包含啟動語言伺服器，以及建立其連接的邏輯。 必須傳回連線物件，其中包含寫入伺服器和從伺服器讀取的資料流程。 此處擲回的任何例外狀況，都會透過 Visual Studio 中的資訊列訊息來攔截並顯示給使用者。
 
 ### <a name="activation"></a>啟用
 
-實現語言用戶端類後,需要為其定義兩個屬性,以定義如何將其載入到 Visual Studio 並啟動:
+一旦執行您的語言用戶端類別之後，您必須定義兩個屬性，以定義如何將它載入 Visual Studio 並啟用：
 
 ```csharp
   [Export(typeof(ILanguageClient))]
@@ -230,27 +230,27 @@ namespace MockLanguageExtension
 
 ### <a name="mef"></a>MEF
 
-Visual Studio 使用[MEF(](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md)託管擴充性框架)來管理其擴展點。 ["導出"](/dotnet/api/system.componentmodel.composition.exportattribute)屬性指示 Visual Studio 應作為擴展點選取此類並在適當的時間載入。
+Visual Studio 使用 [MEF](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (Managed Extensibility Framework) 來管理其擴充點。 [ [匯出](/dotnet/api/system.componentmodel.composition.exportattribute) ] 屬性會指出要 Visual Studio 此類別應挑選為擴充點，並在適當的時間載入。
 
-要使用 MEF,還必須在 VSIX 清單中將 MEF 定義為資產。
+若要使用 MEF，您也必須在 VSIX 資訊清單中將 MEF 定義為資產。
 
-開啟 VSIX 清單設計器並瀏覽到「**資產**」選項卡:
+開啟您的 VSIX 資訊清單設計工具，然後流覽至 [ **資產** ] 索引標籤：
 
 ![新增 MEF 資產](media/lsp-add-asset.png)
 
-按下 **'新增**'建立新資產:
+按一下 [ **新增** ] 以建立新的資產：
 
 ![定義 MEF 資產](media/lsp-define-asset.png)
 
-* **型態**: 微軟.VisualStudio.Mef 元件
-* **來源**: 目前解決方案中的項目
-* **專案**: [您的項目]
+* **類型**： Microsoft. VisualStudio. [microsoft.visualstudio.mefcomponent]
+* **來源**：目前方案中的專案
+* **專案**： [您的專案]
 
 ### <a name="content-type-definition"></a>內容類型定義
 
-目前,載入基於 LSP 的語言伺服器擴展名的唯一方法是按檔內容類型。 也就是說,在定義語言用戶端類(實現[I語言用戶端](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017))時,您需要定義檔案類型,這些檔在打開時將導致載入擴展名。 如果未打開與您的定義的內容類型匹配的檔,則不會載入副檔名。
+目前，載入 LSP 型語言伺服器延伸模組的唯一方法是使用檔案內容類型。 也就是說，在定義 [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)) 的語言用戶端類別 (時，您必須定義在開啟時，將會導致擴充功能載入的檔案類型。 如果未開啟任何符合您定義之內容類型的檔案，則不會載入您的延伸模組。
 
-這是透過定義一個或多個`ContentTypeDefinition`類別完成的:
+這是透過定義一或多個 `ContentTypeDefinition` 類別來完成：
 
 ```csharp
 namespace MockLanguageExtension
@@ -270,9 +270,9 @@ namespace MockLanguageExtension
 }
 ```
 
-在前面的範例中,為以 *.bar*檔案副檔名結尾的文件創建內容類型定義。 內容類型定義的名稱為"bar",必須派生自[代碼遠端內容類型名稱](/dotnet/api/microsoft.visualstudio.languageserver.client.coderemotecontentdefinition.coderemotecontenttypename?view=visualstudiosdk-2017)。
+在上述範例中，會針對以 *bar* 副檔名結尾的檔案建立內容類型定義。 內容類型定義的名稱為 "bar"，必須衍生自 [CodeRemoteContentTypeName](/dotnet/api/microsoft.visualstudio.languageserver.client.coderemotecontentdefinition.coderemotecontenttypename?view=visualstudiosdk-2017)。
 
-新增內容型態定義後,可以定義何時在語言用戶端類別中載入語言客戶端延伸:
+新增內容類型定義之後，您可以接著定義在 language client 類別中載入語言用戶端延伸模組的時機：
 
 ```csharp
     [ContentType("bar")]
@@ -282,17 +282,17 @@ namespace MockLanguageExtension
     }
 ```
 
-添加對 LSP 語言伺服器的支援不需要您在 Visual Studio 中實現自己的項目系統。 客戶可以在 Visual Studio 中打開單個檔案或資料夾,以開始使用您的語言服務。 事實上,對 LSP 語言伺服器的支援設計僅在打開的資料夾/檔案方案中工作。 如果實現了自定義項目系統,則某些功能(如設置)將不起作用。
+新增 LSP 語言伺服器的支援，不需要您在 Visual Studio 中執行自己的專案系統。 客戶可以在 Visual Studio 中開啟單一檔案或資料夾，以開始使用您的語言服務。 事實上，對 LSP 語言伺服器的支援是設計成隻能在開啟的資料夾/檔案案例中運作。 如果已執行自訂專案系統，某些功能 (如設定) 將無法運作。
 
 ## <a name="advanced-features"></a>進階功能
 
 ### <a name="settings"></a>設定
 
-支援自定義語言伺服器特定的設置,但仍處於改進過程中。 設置特定於語言伺服器支援的內容,通常控制語言伺服器如何發出數據。 例如,語言伺服器可能具有報告的最大錯誤數設置。 擴展作者將定義一個預設值,使用者可以更改特定專案。
+有提供自訂語言伺服器特定設定的支援，但仍在改進的過程中。 設定是語言伺服器支援的特定設定，而且通常會控制語言伺服器發出資料的方式。 例如，語言伺服器可能會有所報告錯誤數目上限的設定。 延伸模組作者會定義預設值，使用者可以針對特定專案進行變更。
 
-依以下步驟向 LSP 語言服務擴展新增對設定的支援:
+請遵循下列步驟，將設定的支援新增至您的 LSP 語言服務延伸模組：
 
-1. 包含設定及其預設值的專案添加 JSON 檔(例如 *,Mock語言副檔設定.json)。* 例如：
+1. 將 JSON 檔案新增 (例如， *MockLanguageExtensionSettings.js在* 包含設定和其預設值的專案) 上。 例如：
 
     ```json
     {
@@ -300,9 +300,9 @@ namespace MockLanguageExtension
     }
     ```
 
-2. 右鍵按下 JSON 檔並選擇**屬性**。 將**產生**操作變更為「內容」,將「包含在 VSIX」 屬性變更為**true**。
+2. 以滑鼠右鍵按一下 JSON 檔案，然後選取 [ **屬性**]。 將 [ **組建** ] 動作變更為 [內容]，並將 [包含在 VSIX 中] 屬性變更為 [ **true**]。
 
-3. 實現設定節並傳回 JSON 檔中定義的設定的前置字串清單(在可視化工作室代碼中,這將映射到包.json 中的設定節名稱):
+3. 針對 Visual Studio Code 中的 JSON 檔案 (所定義的設定，執行 ConfigurationSections 並傳回首碼的清單，這會對應到) 上 package.js中的設定區段名稱：
 
     ```csharp
     public IEnumerable<string> ConfigurationSections
@@ -314,7 +314,7 @@ namespace MockLanguageExtension
     }
     ```
 
-4. 加入專案加入 .pkgdef 檔(新增新文字檔並將檔副檔名更改為 .pkgdef)。 pkgdef 檔案應包含此資訊:
+4. 將 .pkgdef 檔案加入至專案 (加入新的文字檔，然後將副檔名變更為 .pkgdef) 。 .Pkgdef 檔案應該包含此資訊：
 
     ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
@@ -328,21 +328,21 @@ namespace MockLanguageExtension
     @="$PackageFolder$\MockLanguageExtensionSettings.json"
     ```
 
-5. 右鍵按下 .pkgdef 檔案並選擇**屬性**。 將 **'產生****'''變更為'內容**',將**VSIX 屬性中的' 變更**為**true**。
+5. 以滑鼠右鍵按一下 .pkgdef 檔案，然後選取 [ **屬性**]。 將 [ **組建** ] 動作變更為 [ **內容** ]，並將 [ **包含于 VSIX** ] 屬性變更為 **true**。
 
-6. 開啟*source.延伸.vsix清單*檔,並在 **「資產**」選項卡中新增資產:
+6. 開啟 *extension.vsixmanifest* 檔案，並在 [ **資產** ] 索引標籤中新增資產：
 
-   ![編輯與套件資產](media/lsp-add-vspackage-asset.png)
+   ![編輯 vspackage 資產](media/lsp-add-vspackage-asset.png)
 
-   * **型態**: 微軟.VisualStudio.Vs 包
-   * **來源**: 檔案系統上的檔案
-   * **路徑**: [對 *.pkgdef*檔案的路徑]
+   * **類型**： Microsoft. VisualStudio. VsPackage
+   * **來源**：檔案系統上的檔案
+   * **Path**： [ *.Pkgdef* 檔案的路徑]
 
-### <a name="user-editing-of-settings-for-a-workspace"></a>使用者編輯工作區的設定
+### <a name="user-editing-of-settings-for-a-workspace"></a>使用者編輯工作區設定
 
-1. 用戶打開一個工作區,其中包含伺服器擁有的檔。
-2. 使用者在名為*VSWorkspaceSettings.json*的 *.vs*資料夾中添加一個檔。
-3. 使用者為伺服器提供的設置向*VSWorkspaceSettings.json*檔添加一行。 例如：
+1. 使用者會開啟包含您的伺服器所擁有之檔案的工作區。
+2. 使用者會在名為*VSWorkspaceSettings.js*的*vs*資料夾中新增檔案。
+3. 使用者針對伺服器提供的設定，在檔案的 *VSWorkspaceSettings.js中* 加入一行。 例如：
 
     ```json
     {
@@ -350,12 +350,12 @@ namespace MockLanguageExtension
     }
     ```
 
-### <a name="enable-diagnostics-tracing"></a>開啟診斷追蹤
+### <a name="enable-diagnostics-tracing"></a>啟用診斷追蹤
 
-可以啟用診斷追蹤以在用戶端和伺服器之間輸出所有消息,這在調試問題時非常有用。 要啟用診斷追蹤,可以執行以下操作:
+您可以啟用診斷追蹤來輸出用戶端與伺服器之間的所有訊息，這在對問題進行調試時很實用。 若要啟用診斷追蹤，請執行下列動作：
 
-1. 打開或創建工作區設定檔*VSWorkspaceSettings.json(* 請參閱"工作區設置的使用者編輯")。
-2. 在設定 json 檔中添加以下行:
+1. 開啟或建立工作區設定檔 *VSWorkspaceSettings.js* (請參閱「使用者編輯工作區的設定」 ) 。
+2. 在設定 json 檔案中新增下列程式程式碼：
 
 ```json
 {
@@ -363,21 +363,21 @@ namespace MockLanguageExtension
 }
 ```
 
-追蹤詳細性有三個可能的值:
+追蹤詳細資訊有三個可能的值：
 
-* 關閉「:」% 關閉
-* "消息":已打開但僅跟蹤方法名稱和响應 ID。
-* "詳細":已打開跟蹤;跟蹤整個 rpc 消息。
+* "Off"：追蹤已完全關閉
+* 「訊息」：開啟追蹤，但只會追蹤方法名稱和回應識別碼。
+* "Verbose"：開啟追蹤;追蹤整個 rpc 訊息。
 
-開啟追蹤後,內容將寫入 *%temp%_VisualStudio_LSP*目錄中的檔案。 紀錄遵循命名格式 *[語言用戶端名稱] -[日期時間戳]日誌*。 目前,只能為打開的資料夾方案啟用跟蹤。 打開單個檔以啟動語言伺服器沒有診斷跟蹤支援。
+開啟追蹤時，內容會寫入 *%temp%\VisualStudio\LSP* 目錄中的檔案。 記錄檔會遵循命名格式 *[LanguageClientName]-[Datetime 戳記] .log*。 目前，只能針對開啟資料夾案例啟用追蹤。 開啟單一檔案以啟動語言伺服器，並沒有診斷追蹤支援。
 
 ### <a name="custom-messages"></a>自訂訊息
 
-有 API 用於方便將訊息傳遞到非標準語言伺服器協定一部分的語言伺服器和接收消息。 要處理自訂訊息,請在語言用戶端類別中實現[I語言用戶端訊息介面](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017)。 [VS-StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md)庫用於在語言用戶端和語言伺服器之間傳輸自定義消息。 由於 LSP 語言用戶端擴展與任何其他 Visual Studio 擴展類似,因此您可以透過自訂訊息決定在擴展中向 Visual Studio(使用其他 Visual Studio API)添加其他功能(LSP 不支援)。
+有一些 Api 可協助您在不屬於標準語言伺服器通訊協定的語言伺服器中傳遞和接收訊息。 若要處理自訂訊息，請在您的語言用戶端類別中執行 [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) 介面。 [VS-StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) 程式庫是用來在您的語言用戶端和語言伺服器之間傳輸自訂訊息。 由於您的 LSP 語言用戶端擴充功能就像任何其他 Visual Studio 擴充功能一樣，因此您可以決定將 LSP) 不支援的其他功能 (，以透過自訂訊息在擴充功能中使用其他 (Api Visual Studio Visual Studio) 。
 
 #### <a name="receive-custom-messages"></a>接收自訂訊息
 
-要從語言伺服器接收自定義消息,請在[I語言ClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017)上實現[自訂MessageTarget](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.custommessagetarget?view=visualstudiosdk-2017)屬性,並返回知道如何處理自訂郵件的物件。 以下範例:
+若要從語言伺服器接收自訂訊息，請在[ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017)上執行[CustomMessageTarget](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.custommessagetarget?view=visualstudiosdk-2017)屬性，並傳回知道如何處理自訂訊息的物件。 範例如下：
 
 ```csharp
 internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCustomMessage
@@ -412,7 +412,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
 
 #### <a name="send-custom-messages"></a>傳送自訂訊息
 
-要向語言伺服器發送自訂訊息,請在[I語言用戶端自訂訊息](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017)上實現[附加ForCustomMessageAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.attachforcustommessageasync?view=visualstudiosdk-2017)方法。 當您的語言伺服器啟動並準備接收消息時,將調用此方法。 [JsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/src/StreamJsonRpc/JsonRpc.cs)物件作為參數傳遞,然後您可以保留該參數,使用[VS-StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) API 將消息發送到語言伺服器。 以下範例:
+若要將自訂訊息傳送至語言伺服器，請在[ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017)上執行[AttachForCustomMessageAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.attachforcustommessageasync?view=visualstudiosdk-2017)方法。 當您的語言伺服器已啟動且已準備好接收訊息時，就會叫用這個方法。 [JsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/src/StreamJsonRpc/JsonRpc.cs)物件會以參數的形式傳遞，然後您可以繼續使用[VS StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) api 將訊息傳送至語言伺服器。 範例如下：
 
 ```csharp
 internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCustomMessage
@@ -445,9 +445,9 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
 
 ### <a name="middle-layer"></a>中介層
 
-有時,擴展開發人員可能想要攔截發送到語言伺服器並從語言伺服器接收的 LSP 消息。 例如,擴展開發人員可能希望更改為特定 LSP 消息發送的消息參數,或修改從語言伺服器返回的 LSP 功能的結果(例如完成)。 必要時,擴展開發人員可以使用中間層 API 攔截 LSP 消息。
+有時，延伸模組開發人員可能會想要攔截傳送至和接收自語言伺服器的 LSP 訊息。 例如，延伸模組開發人員可能會想要改變針對特定 LSP 訊息傳送的訊息參數，或修改從 language server 針對 LSP 功能所傳回的結果 (例如完成) 。 當需要這項功能時，延伸模組開發人員可以使用 MiddleLayer API 來攔截 LSP 訊息。
 
-每個 LSP 消息都有自己的中間層介面進行攔截。 要攔截特定消息,請創建一個類,該類為該消息實現中間層介面。 然後,在語言用戶端類中實現[I語言ClientCustomMessage介面](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017),並在[「中間層」](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.middlelayer?view=visualstudiosdk-2017)屬性中返回物件的實例。 以下範例:
+每個 LSP 訊息都有自己的中介層介面可進行攔截。 若要攔截特定訊息，請建立一個類別來執行該訊息的中介層介面。 然後，在您的語言用戶端類別中執行 [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) 介面，並傳回 [MiddleLayer](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.middlelayer?view=visualstudiosdk-2017) 屬性中物件的實例。 範例如下：
 
 ```csharp
 public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
@@ -474,29 +474,29 @@ public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
 }
 ```
 
-中間層特徵仍在開發中,尚未全面。
+中介層功能仍在開發中，尚未全面完成。
 
-## <a name="sample-lsp-language-server-extension"></a>範例 LSP 語言伺服器延伸
+## <a name="sample-lsp-language-server-extension"></a>範例 LSP 語言伺服器延伸模組
 
-要檢視 Visual Studio 中使用 LSP 用戶端 API 的範例延伸的原始碼,請參閱 VSSDK-可擴充性-範例[LSP 範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/LanguageServerProtocol)。
+若要使用 Visual Studio 中的 LSP 用戶端 API 來查看範例延伸模組的原始程式碼，請參閱 VSSDK-擴充性-範例 [LSP 範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/LanguageServerProtocol)。
 
 ## <a name="faq"></a>常見問題集
 
-**我想構建一個自定義專案系統來補充我的 LSP 語言伺服器,在 Visual Studio 中提供更豐富的功能支援,我該怎麼做?**
+**我想要建立一個自訂的專案系統來補充我的 LSP 語言伺服器，以便在 Visual Studio 中提供更豐富的功能支援，該怎麼做呢？**
 
-Visual Studio 中基於 LSP 的語言伺服器的支援依賴於[打開的資料夾功能](https://devblogs.microsoft.com/visualstudio/open-any-folder-with-visual-studio-15-preview/),並且設計為不需要自定義專案系統。 您可以[按照此處](https://github.com/Microsoft/VSProjectSystem)的說明構建自己的自定義專案系統,但某些功能(如設置)可能無法正常工作。 LSP 語言伺服器的預設初始化邏輯是傳遞當前打開的資料夾的根資料夾位置,因此,如果您使用自定義專案系統,則可能需要在初始化期間提供自定義邏輯,以確保語言伺服器可以正確啟動。
+Visual Studio 中以 LSP 為基礎的語言伺服器支援依賴 [開啟資料夾功能](https://devblogs.microsoft.com/visualstudio/open-any-folder-with-visual-studio-15-preview/) ，並設計為不需要自訂專案系統。 您可以遵循 [此處](https://github.com/Microsoft/VSProjectSystem)的指示來建立您自己的自訂專案系統，但某些功能（例如設定）可能無法運作。 LSP 語言伺服器的預設初始化邏輯是傳入目前開啟之資料夾的根資料夾位置，因此，如果您使用自訂的專案系統，您可能需要在初始化期間提供自訂邏輯，以確保您的語言伺服器可以正常啟動。
 
-**如何添加調試器支援?**
+**如何? 新增偵錯工具支援？**
 
-我們將在將來的版本中為[通用調試協定](https://code.visualstudio.com/docs/extensionAPI/api-debugging)提供支援。
+我們將在未來的版本中提供 [常見的偵錯工具通訊協定](https://code.visualstudio.com/docs/extensionAPI/api-debugging) 支援。
 
-**如果已經安裝了 VS 支援的語言服務(例如 JavaScript),我是否仍可以安裝提供其他功能(如 linting)的 LSP 語言伺服器擴展?**
+**如果已安裝 VS 支援的語言服務 (例如，JavaScript) ，我仍然可以安裝可提供額外 (功能的 LSP 語言伺服器延伸模組，例如 linting) ？**
 
-可以,但並非所有功能都正常工作。 LSP 語言伺服器擴展的最終目標是啟用 Visual Studio 不支援的本機語言服務。 您可以使用 LSP 語言伺服器創建提供其他支援的擴展,但某些功能(如 IntelliSense)不會是流暢的體驗。 通常,建議使用 LSP 語言伺服器擴展來提供新的語言體驗,而不是擴展現有語言體驗。
+是，但並非所有功能都能正常運作。 LSP 語言伺服器延伸的最終目標是要啟用 Visual Studio 原本不支援的語言服務。 您可以使用 LSP 語言伺服器來建立提供其他支援的延伸模組，但某些功能 (例如 IntelliSense) 將不會有順暢的體驗。 一般情況下，建議使用 LSP 語言伺服器擴充功能來提供新的語言體驗，而不是擴充現有的語言體驗。
 
-**在哪裡發佈已完成的 LSP 語言伺服器 VSIX?**
+**我要在哪裡發佈已完成的 LSP language server VSIX？**
 
-在此處查看[市場說明。](walkthrough-publishing-a-visual-studio-extension.md)
+請參閱 [此處](walkthrough-publishing-a-visual-studio-extension.md)的 Marketplace 指示。
 
 ## <a name="see-also"></a>另請參閱
 

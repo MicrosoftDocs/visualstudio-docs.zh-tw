@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 1ef2d51e35a198dbe6da3c1a034dd7c8d1bf8922
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851018"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>並存安裝 Visual Studio 版本
@@ -32,7 +32,7 @@ ms.locfileid: "75851018"
 
 - 如果您使用 Visual Studio 2015 開啟 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]所建立的方案，只要未實作 Visual Studio 2015 特定的任何功能，稍後就可以在舊版中開啟和修改該方案。
 
-- 如果您嘗試使用 Visual Studio 2015 開啟 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 或以前版本所建立的方案，可能需要修改專案和檔案，才能與 Visual Studio 2015 相容。 如需詳細資訊，請參閱[移植、移轉和升級 Visual Studio 專案](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)頁面。
+- 如果您嘗試使用 Visual Studio 2015 開啟 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 或以前版本所建立的方案，可能需要修改專案和檔案，才能與 Visual Studio 2015 相容。 如需詳細資訊，請參閱 [埠、遷移及升級 Visual Studio 專案](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015) 頁面。
 
 - 如果在已經安裝多個 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的電腦上解除安裝其中一個版本，則會移除所有版本的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 檔案關聯。 您可以使用 **選項** 對話方塊中，位於 [**環境**] 的 [**一般**] 頁面上的 [還原檔案關聯](../ide/reference/general-environment-options-dialog-box.md) 按鈕來重新對應這些檔案關聯。
 
@@ -40,23 +40,23 @@ ms.locfileid: "75851018"
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework 的版本和並存安裝
 
-- Visual Basic、Visual C# 或 Visual F# 專案中 [專案設計工具]  使用 [目標 Framework]  選項，指定專案的目標 .NET Framework 版本。 對於 C++ 專案，您可以手動修改 .vcxproj 檔案來變更目標 Framework。 如需詳細資訊，請參閱[版本相容性](https://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f)。
+- Visual Basic、Visual C# 或 Visual F# 專案中 [專案設計工具] **** 使用 [目標 Framework] **** 選項，指定專案的目標 .NET Framework 版本。 對於 C++ 專案，您可以手動修改 .vcxproj 檔案來變更目標 Framework。 如需詳細資訊，請參閱[版本相容性](https://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f)。
 
-     當您建立專案時，您可以在 [新增專案]  對話方塊的 [.NET Framework]  清單中指定專案的目標 .NET Framework 版本。
+     當您建立專案時，您可以在 [新增專案] **** 對話方塊的 [.NET Framework] **** 清單中指定專案的目標 .NET Framework 版本。
 
      如需語言特定的資訊，請參閱下表中適當的主題。
 
     |語言|主題|
     |--------------|-----------|
-    |[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]|[專案設計工具、應用程式頁面 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)|
-    |Visual C#|[專案設計工具，應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md)|
+    |[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]|[Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)|
+    |Visual C#|[專案設計工具，應用程式頁 (C#)](../ide/reference/application-page-project-designer-csharp.md)|
     |Visual F#|[設定專案](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
-    |C++|[如何：修改目標 Framework 和平台工具組](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
+    |C++|[如何：修改目標 Framework 和平臺工具組](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
     |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[在舊版的通用語言執行平台上執行 JScript 應用程式](https://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
 ## <a name="see-also"></a>另請參閱
 
 - [安裝 Visual Studio](../install/install-visual-studio-2015.md)
-- [移植、移轉及升級 Visual Studio 專案](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)
-- [建置 C/C++ 隔離應用程式和並存組件](https://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
-- [Visual Studio 中的自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+- [移植、遷移及升級 Visual Studio 專案](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)
+- [建立 C/c + + 隔離應用程式和並存元件](https://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
+- [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

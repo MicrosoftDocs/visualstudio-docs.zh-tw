@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e66432fd2f5d8b1532bece9d76e7dfc2a261e4b7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74771585"
 ---
 # <a name="resource-details-view---contention-data"></a>資源詳細資料檢視 - 爭用資料
@@ -55,7 +55,7 @@ ms.locfileid: "74771585"
 
 - 在時間軸圖形中，按一下 [總計]****。
 
-     資源的爭用檢視隨即顯示。 有關詳細資訊，請參閱[資源爭用視圖](../profiling/resource-contentions-view-contention-data.md)。
+     資源的爭用檢視隨即顯示。 如需詳細資訊，請參閱 [資源爭用視圖](../profiling/resource-contentions-view-contention-data.md)。
 
 #### <a name="to-view-all-the-contention-events-of-a-thread"></a>檢視執行緒的所有爭用事件
 

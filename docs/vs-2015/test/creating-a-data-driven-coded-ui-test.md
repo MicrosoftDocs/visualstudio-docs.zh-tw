@@ -11,10 +11,10 @@ caps.latest.revision: 58
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1db35e1eb98ad23a4414a48389092a3b05485527
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851858"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>建立資料驅動自動程式化 UI 測試
@@ -22,9 +22,9 @@ ms.locfileid: "75851858"
 
 若要測試不同的情況，您可以使用不同的參數值，多次執行您的測試。 資料驅動自動程式碼 UI 測試是方便進行這項作業的方法。 您可以在資料來源中定義參數值，而且資料來源中的每個資料列都是自動程式碼 UI 測試的反覆項目。 整體測試結果將會根據所有反覆項目的結果。 例如，如果其中一個測試反覆項目失敗，則整體測試結果就是失敗。
 
- **Requirements**
+ **需求**
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
 ## <a name="create-a-data-driven-coded-ui-test"></a>建立資料驅動自動程式碼 UI 測試
  這個範例會建立在 Windows 計算機應用程式上執行的自動程式碼 UI 測試。 它將兩個數字相加，並使用判斷提示來驗證總和是否正確。 接下來，會編碼兩個數字的判斷提示和參數值使其成為資料驅動並儲存在逗號分隔值 (.csv) 檔案中。
@@ -33,11 +33,11 @@ ms.locfileid: "75851858"
 
 1. 建立專案。
 
-     ![建立自動程式碼 UI 測試專案](../test/media/cuit-datadriven.png "CUIT_dataDriven_")
+     ![建立自動程式碼 UI 測試](../test/media/cuit-datadriven.png "CUIT_dataDriven_")
 
 2. 選擇錄製動作。
 
-     ![選擇記錄動作](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")
+     ![選擇錄製動作](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")
 
 3. 開啟計算機應用程式，並開始錄製測試。
 
@@ -59,17 +59,17 @@ ms.locfileid: "75851858"
     }
     ```
 
-5. 使用 `AddNumbers()` 方法，確認執行測試。 將游標放在上面顯示的測試方法中，開啟操作功能表，然後選擇 [執行測試]。 (快速鍵：Ctrl + R、T)。
+5. 使用 `AddNumbers()` 方法，確認執行測試。 將游標放在上面顯示的測試方法中，開啟操作功能表，然後選擇 [執行測試]****。 (快速鍵：Ctrl + R、T)。
 
-     [測試總管] 視窗中會顯示測試結果，而測試結果顯示測試成功還是失敗。 若要開啟 [測試總管] 視窗，請從 [測試] 功能表中選擇 [視窗]，然後選擇 [測試總管]。
+     [測試總管] 視窗中會顯示測試結果，而測試結果顯示測試成功還是失敗。 若要開啟 [測試瀏覽器] 視窗，請從 [ **測試** ] 功能表選擇 [ **視窗** ]，然後選擇 [ **測試瀏覽器**]。
 
-6. 因為資料來源也可以用於判斷提示參數值 (測試用來確認預期的值)；讓我們加入判斷提示來驗證兩個數字的總和是否正確。 將游標放在上面顯示的測試方法中，開啟操作功能表，然後依序選擇 [產生自動程式化 UI 測試的程式碼] 和 [使用自動程式化 UI 測試產生器]。
+6. 因為資料來源也可以用於判斷提示參數值 (測試用來確認預期的值)；讓我們加入判斷提示來驗證兩個數字的總和是否正確。 將游標放在上面顯示的測試方法中，開啟操作功能表，然後依序選擇 [產生自動程式化 UI 測試的程式碼]**** 和 [使用自動程式化 UI 測試產生器]****。
 
      對應計算機中顯示總和的文字控制項。
 
      ![對應 UI 文字控制項](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")
 
-7. 加入判斷提示，以驗證總和的值是否正確。 選擇值為 **3** 的 [顯示文字] 屬性，然後選擇 [加入判斷提示]。 使用 **AreEqual** 比較子，並確認比較值為 **3**。
+7. 加入判斷提示，以驗證總和的值是否正確。 選擇值為 **3** 的 [顯示文字]**** 屬性，然後選擇 [加入判斷提示]****。 使用 **AreEqual** 比較子，並確認比較值為 **3**。
 
      ![設定判斷提示](../test/media/cuit-datadriven-builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")
 
@@ -90,7 +90,7 @@ ms.locfileid: "75851858"
     }
     ```
 
-9. 使用 `ValidateSum()` 方法，確認測試執行。 將游標放在上面顯示的測試方法中，開啟操作功能表，然後選擇 [執行測試]。 (快速鍵：Ctrl + R、T)。
+9. 使用 `ValidateSum()` 方法，確認測試執行。 將游標放在上面顯示的測試方法中，開啟操作功能表，然後選擇 [執行測試]****。 (快速鍵：Ctrl + R、T)。
 
      目前，所有參數值在其方法中都會定義為常數。 接下來，讓我們建立資料集，以將測試設為資料驅動。
 
@@ -98,7 +98,7 @@ ms.locfileid: "75851858"
 
 1. 將文字檔加入至名稱為 `data.csv` 的 dataDrivenSample 專案。
 
-     ![將逗號分隔值檔案加入至專案](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
+     ![將逗號分隔值檔案加入專案](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
 
 2. 將下列資料填入.csv 檔案：
 
@@ -110,9 +110,9 @@ ms.locfileid: "75851858"
 
      加入資料之後，該檔案應該會顯示如下：
 
-     ![填入。含有資料的 CSV 檔案](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
+     ![填入。具有資料的 CSV 檔案](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
 
-3. 務必使用正確的編碼來儲存 .csv 檔案。 在 [檔案] 功能表上，選擇 [進階儲存選項]，然後選擇 [Unicode (UTF-8 無簽章) - 字碼頁 65001] 做為編碼。
+3. 務必使用正確的編碼來儲存 .csv 檔案。 在 [檔案 **] 功能表上，選擇 [** **Advanced Save Options** ]，然後選擇 [ **Unicode (utf-8 （不含簽章) –字碼頁 65001** ] 做為編碼方式）。
 
 4. .csv 檔案必須複製至輸出目錄，否則無法執行測試。 使用 [屬性] 視窗來複製它。
 
@@ -189,13 +189,13 @@ ms.locfileid: "75851858"
 
     - 選擇 UI 動作，並觀察對應的 UI 控制項對應。 請注意，對應如何對應至程式碼 (例如，`this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`)。
 
-         ![使用自動程式化 UI 測試編輯器來協助程式碼](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
+         ![使用自動程式碼 UI 測試編輯器來協助您的程式碼](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
 
-    - 在 [屬性] 視窗中，開啟 [搜尋屬性]。 搜尋屬性 **Name** 值是程式碼中使用資料來源所操作的值。 例如，會將每個資料列的第一欄中的值指派給 `SearchProperties`：`UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`。 對於三個反覆項目，這項測試會依序將搜尋屬性的 **Name** 值變更為 3、5 和 6。
+    - 在 [屬性] 視窗中，開啟 [搜尋屬性]****。 搜尋屬性 **Name** 值是程式碼中使用資料來源所操作的值。 例如，會將每個資料列的第一欄中的值指派給 `SearchProperties`：`UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`。 對於三個反覆項目，這項測試會依序將搜尋屬性的 **Name** 值變更為 3、5 和 6。
 
-         ![使用搜尋屬性來協助撰寫程式碼](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
+         ![使用搜尋屬性來協助編碼](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
 
-3. 儲存組態。
+3. 儲存方案。
 
 #### <a name="step-5--run-the-data-driven-test"></a>步驟 5 - 執行資料驅動測試
 
@@ -205,11 +205,11 @@ ms.locfileid: "75851858"
 
    **指引**
 
-   如需詳細資訊，請參閱[使用 Visual Studio 2012 測試持續傳遞 – 第 2 章：單元測試：內部測試 (英文)](https://msdn.microsoft.com/library/jj159340.aspx) 和[使用 Visual Studio 2012 測試持續傳遞 – 第 5 章：自動化系統測試 (英文)](https://msdn.microsoft.com/library/jj159335.aspx)
+   如需其他資訊，請參閱 [使用 Visual Studio 2012 來測試持續傳遞–第2章：單元測試：測試內部](https://msdn.microsoft.com/library/jj159340.aspx) 和 [測試是否持續傳遞 Visual Studio 2012 –第5章：自動化系統測試](https://msdn.microsoft.com/library/jj159335.aspx)
 
-## <a name="q--a"></a>問與答
+## <a name="q--a"></a>問答集
 
-### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> 其他資料來源類型 (例如 SQL Express 或 XML) 的資料來源屬性為何？
+### <a name="what-are-the-data-source-attributes-for-other-data-source-types-such-as-sql-express-or-xml"></a><a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> 其他資料來源類型 (例如 SQL Express 或 XML) 的資料來源屬性為何？
  您可以使用下表中的範例資料來源字串，方法是將它們複製至您的程式碼，並進行必要的自訂。
 
  **資料來源類型和屬性**
@@ -235,7 +235,7 @@ ms.locfileid: "75851858"
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 
 ### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>問：我是否可以在 Windows Phone 應用程式上使用資料驅動型測試？
- **答：** 可以。 Windows Phone 的資料驅動型自動程式碼 UI 測試是透過測試方法上的 DataRow 屬性來定義。 在下列範例中，x 和 y 針對測試的第一個反覆項目使用值 1 和 2，並針對第二個反覆項目使用 -1 和 -2。
+ **答：** 是。 Windows Phone 的資料驅動型自動程式碼 UI 測試是透過測試方法上的 DataRow 屬性來定義。 在下列範例中，x 和 y 針對測試的第一個反覆項目使用值 1 和 2，並針對第二個反覆項目使用 -1 和 -2。
 
 ```
 [DataRow(1, 2, DisplayName = "Add positive numbers")]
@@ -250,11 +250,11 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 
  如果您需要修改錄製的方法，必須將它複製到 UIMap.cs 檔案並重新命名。 UIMap.cs 檔案可用來覆寫 UIMapDesigner.cs 檔案中的方法和屬性。 您必須移除 Coded UITest.cs 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
+- [使用消費者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
 - [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
-- [自動程式化 UI 測試的最佳做法](../test/best-practices-for-coded-ui-tests.md)
-- [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [自動程式化 UI 測試的最佳作法](../test/best-practices-for-coded-ui-tests.md)
+- [自動程式碼 UI 測試和動作記錄的支援設定和平臺](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

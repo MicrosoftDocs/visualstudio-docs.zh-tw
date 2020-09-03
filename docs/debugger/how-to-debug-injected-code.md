@@ -1,5 +1,5 @@
 ---
-title: 如何-Debug 插入的程式碼 |Microsoft Docs
+title: 如何-調試插入的程式碼 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a63a593a907908205d6724f3faf2c06d405bf0e2
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350039"
 ---
 # <a name="how-to-debug-injected-code"></a>如何：偵錯插入程式碼
@@ -36,7 +36,7 @@ ms.locfileid: "85350039"
 > [!NOTE]
 > 您看到的對話方塊與功能表命令，可能會因您所使用的設定或版本，而與說明中所述不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
 
-使用屬性可以大幅簡化 C++ 程式設計。 如需詳細資訊，請參閱[概念](/cpp/windows/attributed-programming-concepts)。 有些屬性 (Attribute) 可以直接由編譯器 (Compiler) 解譯。 其他屬性 (Attribute) 會將程式碼插入到編譯器將編譯的程式來源中。 這種插入的程式碼可藉著減少必須由您撰寫的程式碼數量，使程式設計更為容易。 然而，有時一個錯誤便可能會造成應用程式在執行插入程式碼時失敗。 當這種情況發生時，您可能要查看插入程式碼。 Visual Studio 提供兩種讓您查看插入程式碼的方法：
+使用屬性可以大幅簡化 C++ 程式設計。 如需詳細資訊，請參閱 [概念](/cpp/windows/attributed-programming-concepts)。 有些屬性 (Attribute) 可以直接由編譯器 (Compiler) 解譯。 其他屬性 (Attribute) 會將程式碼插入到編譯器將編譯的程式來源中。 這種插入的程式碼可藉著減少必須由您撰寫的程式碼數量，使程式設計更為容易。 然而，有時一個錯誤便可能會造成應用程式在執行插入程式碼時失敗。 當這種情況發生時，您可能要查看插入程式碼。 Visual Studio 提供兩種讓您查看插入程式碼的方法：
 
 - 您可以在 [反組譯碼]**** 視窗中檢視插入程式碼。
 

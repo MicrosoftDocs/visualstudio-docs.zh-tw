@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ed4fef32c04d68f37df71101447a4e24f39eecba
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772073"
 ---
 # <a name="profiling-tools-apis"></a>程式碼剖析工具 API
@@ -22,15 +22,15 @@ ms.locfileid: "74772073"
 
 ## <a name="in-this-section"></a>本節內容
 
-[視覺化工作室探測器 API 參考（本機）](../profiling/visual-studio-profiler-api-reference-native.md)
+[Visual Studio Profiler API 參考 (原生) ](../profiling/visual-studio-profiler-api-reference-native.md)
 
 描述 ++ 程式碼剖析工具的方法。
 
-[分析器](/previous-versions/ms242704(v=vs.140))
+[程式碼剖析工具](/previous-versions/ms242704(v=vs.140))
 
 描述 .NET 程式碼剖析工具的方法。
 
-[演練：使用探測器 API](../profiling/walkthrough-using-profiler-apis.md)
+[逐步解說：使用 Profiler Api](../profiling/walkthrough-using-profiler-apis.md)
 
 了解如何在此完整範例中使用 .NET 程式碼剖析工具的方法。
 

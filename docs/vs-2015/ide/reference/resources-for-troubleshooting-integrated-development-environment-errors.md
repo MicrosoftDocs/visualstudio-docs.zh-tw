@@ -95,10 +95,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 07a84648a24a709b47b60ee9e2a6e5d342777d77
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851643"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於疑難排解整合式開發環境錯誤的資源

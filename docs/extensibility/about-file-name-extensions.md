@@ -1,5 +1,5 @@
 ---
-title: 關於檔案名副檔名 |微軟文件
+title: 關於副檔名 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 03e07ec233ef975441a1f10507f0db872051558f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740354"
 ---
-# <a name="about-file-name-extensions"></a>關於檔案名副檔名
-註冊 VSPackage 的檔副檔名時,將其[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]與的版本 相關聯。 若電腦上安裝了多個版本的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
+# <a name="about-file-name-extensions"></a>關於副檔名
+當您註冊 VSPackage 的副檔名時，會將它與的版本建立關聯 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 如果電腦上安裝了一個以上的版本，這就很重要 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。
 
- VS包的檔副檔名在**HKEY_CLASSES_ROOT**鍵下註冊,預設值指向關聯的程式設計標識符 (ProgID)。
+ Vspackage 的副檔名是在 **HKEY_CLASSES_ROOT** 機碼下註冊，其預設值會指向 (ProgID) 的相關聯程式設計識別碼。
 
- 下面的範例顯示 *.vcproj*檔副檔名的註冊資訊:
+ 下列範例顯示 *vcproj* 副檔名的註冊資訊：
 
 ```
 HKEY_CLASSES_ROOT\
@@ -31,10 +31,10 @@ HKEY_CLASSES_ROOT\
       (default)=" VisualStudio.vcproj.8.0"
 ```
 
- 與 關聯[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的檔案必須具有版本化的 ProgID,`VisualStudio.vcproj.8.0`如 。 版本化 ProgID 允許產品並行安裝,以維護產品版本之間的檔擴展關聯。 特定於版本的 ProgID 還允許您使用標準的無字(如開啟、編輯等),而無需擔心覆蓋或被其他應用程式[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]或版本覆蓋 。
+ 與相關聯的檔案 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 必須具有已建立版本的 ProgID，例如 `VisualStudio.vcproj.8.0` 。 已建立版本的 ProgID 允許產品的並存安裝，以維護產品版本之間的副檔名關聯。 版本特定的 ProgID 也可讓您使用標準動詞，例如開啟、編輯等，而不需要考慮其他應用程式或版本的覆寫或覆寫 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。
 
- 在某些情況下,不應更改與文件擴展名關聯的 ProgID。 例如 *,.htm*檔副檔名(progid = htmlfile)的 ProgID 在作業系統中的多個位置進行硬編碼,並且與 *.htm*和 *.html*檔關聯廣為人知和使用。
+ 在某些情況下，與副檔名相關聯的 ProgID 不應變更。 例如， *.htm* 副檔名 (progid = htmlfile) 的 progid 會以作業系統中的數個位置進行硬式編碼，並且可與 *.htm* 和 *.html* 檔案相關聯。
 
 ## <a name="see-also"></a>另請參閱
-- [註冊並行部署的檔案名副檔名](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
-- [為檔案名副檔名指定檔案處理程式](../extensibility/specifying-file-handlers-for-file-name-extensions.md)
+- [註冊並存部署的副檔名](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
+- [指定副檔名的檔案處理常式](../extensibility/specifying-file-handlers-for-file-name-extensions.md)
