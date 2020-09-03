@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2de844867e9c0a8d95abdaa13f860a6487254bfe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74780009"
 ---
 # <a name="modules-view---contention-data"></a>模組檢視 - 爭用資料
@@ -40,13 +40,13 @@ ms.locfileid: "74780009"
 |**模組路徑**|包含該模組、函式、程式行或指令指標的模組路徑。|
 |**名稱**|模組或函式的名稱。|
 |**處理序識別碼**|分析執行的處理序 ID (PID)。|
-|**流程名稱**|處理序的名稱。|
-|**原始檔案**|含有這個函式定義的原始程式檔。|
+|**進程名稱**|處理序的名稱。|
+|**來源檔案**|含有這個函式定義的原始程式檔。|
 
 ## <a name="see-also"></a>另請參閱
 - [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)
 - [模組檢視](../profiling/modules-view.md)
-- [模組視圖 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [模組視圖-檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [模組檢視 - 取樣](../profiling/modules-view-dotnet-memory-sampling-data.md)
 - [模組檢視](../profiling/modules-view-instrumentation-data.md)
 - [模組檢視](../profiling/modules-view-sampling-data.md)

@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6d0fd8cff2f352c8ede674be64062a738c1f3d02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198790"
 ---
-# <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
+# <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定的準則來比較兩個文件內容。  
+指定用於比較兩個檔內容的準則。  
   
 ## <a name="syntax"></a>語法  
   
@@ -47,29 +47,29 @@ enum enum_DOCCONTEXT_COMPARE { 
   
 ## <a name="members"></a>成員  
  DOCCONTEXT_EQUAL  
- 找到的第一個文件內容等於目標文件內容的清單中。  
+ 在清單中尋找與目的檔案內容相等的第一個檔內容。  
   
  DOCCONTEXT_LESS_THAN  
- 小於目標文件內容的清單中找到的第一個文件內容。  
+ 在清單中尋找小於目的檔案內容的第一個檔內容。  
   
  DOCCONTEXT_GREATER_THAN  
- 大於目標文件內容的清單中找到的第一個文件內容。  
+ 在清單中尋找大於目的檔案內容的第一個檔內容。  
   
  DOCCONTEXT_SAME_DOCUMENT  
- 在目標文件內容相同文件中的清單中找到的第一個文件內容。  
+ 在與目的檔案內容相同的檔中，尋找清單中的第一個檔內容。  
   
 ## <a name="remarks"></a>備註  
- 作為引數[比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)方法。  
+ 以引數形式傳遞至 [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) 方法。  
   
- 這些值會用來指定在清單中尋找第一個文件內容的比較準則。 文件內容有一份文件內容來比較自行針對透過`IDebugDocumentContext2::Compare`方法。 在清單中的比較運算子的第一個文件內容`true`再傳回。  
+ 這些值用來指定在清單中尋找第一個檔內容的比較準則。 檔內容會取得一份檔內容清單，以透過方法進行比較 `IDebugDocumentContext2::Compare` 。 接著會傳回清單中的第一個檔內容，其比較運算子會 `true` 傳回。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

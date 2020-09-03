@@ -1,5 +1,5 @@
 ---
-title: 運算子摘要（JavaScript） |Microsoft Docs
+title: JavaScript)  (的運算子摘要 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 995a286140464e58635bc485478bb570871f5e09
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816783"
 ---
 # <a name="operator-summary-javascript"></a>運算子摘要 (JavaScript)
@@ -26,12 +26,12 @@ ms.locfileid: "85816783"
   
 |運算子|符號|  
 |--------------|------------|  
-|[額外](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
+|[除了](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[遞減](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[部門](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[連續](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
-|[數量](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
-|[倍增](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
+|[[遞增]](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
+|[餘數](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[乘法](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[減法](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
 |[一元負運算](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
   
@@ -39,13 +39,13 @@ ms.locfileid: "85816783"
   
 |運算子|符號|  
 |--------------|------------|  
-|[Comma (逗號)](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
-|[條件式（三元）](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
+|[逗號](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
+|[條件式 (三元) ](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
 |[等式](../../javascript/reference/comparison-operators-javascript.md)|==|  
 |[大於](../../javascript/reference/comparison-operators-javascript.md)|>|  
 |[大於或等於](../../javascript/reference/comparison-operators-javascript.md)|>=|  
 |[身分識別](../../javascript/reference/comparison-operators-javascript.md)|===|  
-|[不等](../../javascript/reference/comparison-operators-javascript.md)|!=|  
+|[不等於](../../javascript/reference/comparison-operators-javascript.md)|!=|  
 |[小於](../../javascript/reference/comparison-operators-javascript.md)|<|  
 |[小於或等於](../../javascript/reference/comparison-operators-javascript.md)|<=|  
 |[邏輯 AND](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  

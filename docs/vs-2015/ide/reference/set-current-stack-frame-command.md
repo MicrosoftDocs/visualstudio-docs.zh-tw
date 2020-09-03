@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4fcb38e565ea4f30ed6e669f8b98df09c9d733ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665462"
 ---
 # <a name="set-current-stack-frame-command"></a>設定目前堆疊框架命令
@@ -33,7 +33,7 @@ Debug.SetCurrentStackFrame index
 ```
 
 ## <a name="arguments"></a>引數
- `index` 必要項。 依索引選取堆疊框架。
+ 需要 `index`。 依索引選取堆疊框架。
 
 ## <a name="example"></a>範例
 
@@ -42,4 +42,4 @@ Debug.SetCurrentStackFrame index
 ```
 
 ## <a name="see-also"></a>另請參閱
- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)[命令視窗](../../ide/reference/command-window.md)[尋找/命令框](../../ide/find-command-box.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio](../../ide/reference/visual-studio-commands.md)命令[視窗](../../ide/reference/command-window.md)[尋找/命令箱](../../ide/find-command-box.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

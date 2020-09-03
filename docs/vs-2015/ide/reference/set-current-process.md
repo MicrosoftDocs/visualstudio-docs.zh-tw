@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c362d3f5dda5015e91ac88dd8f0abd60a185ba72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665471"
 ---
 # <a name="set-current-process"></a>設定目前處理序
@@ -31,7 +31,7 @@ Debug.SetCurrentProcess index
 ```
 
 ## <a name="arguments"></a>引數
- `index` 必要項。 處理序的索引。
+ 需要 `index`。 處理序的索引。
 
 ## <a name="remarks"></a>備註
  進行偵錯時，您可以附加至多個處理序，但是無論在任何時間，偵錯工具一次只能有一個使用中處理序。 您可以使用 `SetCurrentProcess` 命令設定使用中處理序。
@@ -43,4 +43,4 @@ Debug.SetCurrentProcess index
 ```
 
 ## <a name="see-also"></a>另請參閱
- [Visual Studio](../../ide/reference/visual-studio-commands.md)命令[命令視窗](../../ide/reference/command-window.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio](../../ide/reference/visual-studio-commands.md)命令 [命令視窗](../../ide/reference/command-window.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

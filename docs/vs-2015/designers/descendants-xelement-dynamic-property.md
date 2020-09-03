@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b0496a04219c88573b3b555ef879a046d90faa3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664775"
 ---
 # <a name="descendants-xelement-dynamic-property"></a>Descendants (XElement 動態屬性)
@@ -37,5 +37,5 @@ elem.Descendants[{namespaceName}localName]
 
  這個屬性會使用延後執行。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [System.xml.linq.xelement> 類別動態屬性](../designers/xelement-class-dynamic-properties.md)[元素](../designers/elements-xelement-dynamic-property.md)

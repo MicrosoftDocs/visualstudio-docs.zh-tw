@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7ba633999925e86b753dbd815babe6e52c75ca53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665621"
 ---
 # <a name="replace-command"></a>取代命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-使用在 [尋找和取代]  視窗 [檔案中取代]  索引標籤提供的選項子集，取代檔案中的文字。
+使用在 [尋找和取代]**** 視窗 [檔案中取代]**** 索引標籤提供的選項子集，取代檔案中的文字。
 
 ## <a name="syntax"></a>語法
 
@@ -35,18 +35,18 @@ Edit.Replace findwhat replacewith [/all] [/case]
 ```
 
 ## <a name="arguments"></a>引數
- `findwhat` 必要項。 要比對的文字。
+ 需要 `findwhat`。 要比對的文字。
 
- `replacewith` 必要項。 要用來取代相符文字的文字。
+ 需要 `replacewith`。 要用來取代相符文字的文字。
 
-## <a name="switches"></a>參數
- /all 或/a 選擇性。 以取代文字來取代所有出現的搜尋文字。
+## <a name="switches"></a>交換器
+ /all 或/a 選用。 以取代文字來取代所有出現的搜尋文字。
 
  /case 或 /c 選擇項。 只有當大寫和小寫字元完全符合 `findwhat` 引數中所指定的項目時，才會出現相符項目。
 
  /doc 或 /d 選擇項。 僅搜尋目前的文件。 只指定其中一個可用的搜尋範圍，`/doc`、`/proc`、`/open` 或 `/sel`。
 
- /hidden 或/h 選擇性。 搜尋隱藏和摺疊的文字，例如設計階段控制項的中繼資料、大綱文字的隱藏區域，或是摺疊的類別或方法。
+ /hidden 或/h 是選擇性的。 搜尋隱藏和摺疊的文字，例如設計階段控制項的中繼資料、大綱文字的隱藏區域，或是摺疊的類別或方法。
 
  /open 或 /o 選擇項。 將所有開啟的文件當成一份文件搜尋。 只指定其中一個可用的搜尋範圍，`/doc`、`/proc`、`/open` 或 `/sel`。
 
@@ -74,4 +74,4 @@ Edit.Replace findwhat replacewith [/all] [/case]
 ```
 
 ## <a name="see-also"></a>另請參閱
- [尋找和取代文字](../../ide/finding-and-replacing-text.md)[命令視窗](../../ide/reference/command-window.md)[尋找/命令框](../../ide/find-command-box.md) [Visual Studio](../../ide/reference/visual-studio-commands.md)命令[Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ [尋找和取代文字](../../ide/finding-and-replacing-text.md)[命令視窗](../../ide/reference/command-window.md)[尋找/命令](../../ide/find-command-box.md)方塊[Visual Studio 命令](../../ide/reference/visual-studio-commands.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

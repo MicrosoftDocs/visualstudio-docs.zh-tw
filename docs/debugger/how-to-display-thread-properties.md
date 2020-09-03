@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab3f98b5a47c6d950f2d95e732e05e5734c783b5
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349870"
 ---
 # <a name="how-to-display-thread-properties"></a>如何：顯示執行緒屬性
-若要進一步瞭解 [執行緒][視圖](../debugger/threads-view.md)中所列的執行緒，請使用 [[執行緒屬性] 對話方塊](../debugger/thread-properties-dialog-box.md)。
+若要深入瞭解 [ [執行緒視圖](../debugger/threads-view.md)] 中所列的執行緒，請使用 [ [執行緒屬性] 對話方塊](../debugger/thread-properties-dialog-box.md)。
 
 ### <a name="to-open-a-thread-properties-dialog-box"></a>若要開啟執行緒屬性對話方塊
 
-1. 從 [[執行緒] 視圖](../debugger/threads-view.md)中顯示的樹狀結構中選取一個執行緒。
+1. 從樹狀結構中顯示的樹狀結構[中選取執行緒。](../debugger/threads-view.md)
 
 2. 從 **[檢視]** 功能表中選擇 **[屬性]**。
 
-   [屬性] 對話方塊不是強制回應，因此您可以按一下 [視圖] 視窗中的另一個專案，對話方塊就會顯示所選取專案的相關資訊。
+   [屬性] 對話方塊並非強制回應，因此您可以按一下 [視圖] 視窗中的另一個專案，對話方塊將會顯示所選取專案的相關資訊。

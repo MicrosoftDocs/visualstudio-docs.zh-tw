@@ -1,5 +1,5 @@
 ---
-title: 將主機連接至產生的指示詞處理器
+title: 將主機連線至產生的指示詞處理器
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,24 +14,24 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 8dfca47159192c1f6fe25f703b54745b55d8e384
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88237993"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連線至產生的指示詞處理器
 
-您可以撰寫自己的主控制項來處理文字模板。 基本的自訂主機會在 [逐步解說：建立自訂文字模板主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)中示範。 您可以擴充該主機來新增函式，例如產生多個輸出檔案。
+您可以撰寫自己的主機來處理文字模板。 在 [逐步解說：建立自訂文字模板主](../modeling/walkthrough-creating-a-custom-text-template-host.md)控制項時，會示範基本的自訂主機。 您可以擴充該主機，以新增產生多個輸出檔案的功能。
 
-在此逐步解說中，您會展開自訂主機，使其支援呼叫指示詞處理器的文字模板。 當您定義特定領域語言時，它會為領域模型產生指示詞 *處理器* 。 指示詞處理器可讓使用者更輕鬆地撰寫可存取模型的範本，而不需要在範本中撰寫元件和匯入指示詞。
+在這個逐步解說中，您會展開自訂主機，讓它支援呼叫指示詞處理器的文字模板。 當您定義網域指定的語言時，它會產生網域模型的指示詞 *處理器* 。 指示詞處理器可讓使用者更輕鬆地撰寫存取模型的範本，減少在範本中撰寫元件和匯入指示詞的需求。
 
 > [!NOTE]
-> 本逐步解說是以 [逐步解說：建立自訂文字模板主機為](../modeling/walkthrough-creating-a-custom-text-template-host.md)基礎。 請先執行該逐步解說。
+> 本逐步解說是根據 [逐步解說：建立自訂文字模板主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 先執行該逐步解說。
 
 本逐步解說包含下列工作：
 
-- 使用 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 來產生以領域模型為基礎的指示詞處理器。
+- 使用 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 產生以網域模型為基礎的指示詞處理器。
 
 - 將自訂文字模板主機連接至產生的指示詞處理器。
 
@@ -49,36 +49,36 @@ ms.locfileid: "88237993"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-此外，您必須在 [逐步解說：建立自訂文字模板主](../modeling/walkthrough-creating-a-custom-text-template-host.md)控制項中建立自訂文字模板轉換。
+此外，您必須在 [逐步解說：建立自訂文字模板主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)中建立自訂文字模板轉換。
 
 ## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>使用特定領域語言工具來產生指示詞處理器
 
-在此逐步解說中，您會使用定義域專屬的語言設計工具 Wizard，為方案 DSLMinimalTest 建立特定領域語言。
+在這個逐步解說中，您會使用特定領域語言設計工具 Wizard 為方案 DSLMinimalTest 建立特定領域語言。
 
-1. 建立具有下列特性的特定領域語言解決方案：
+1. 建立具有下列特性的特定領域語言方案：
 
    - 名稱： DSLMinimalTest
 
-   - 解決方案範本：最小語言
+   - 解決方案範本：基礎語言
 
    - 副檔名：分鐘
 
    - 公司名稱： Fabrikam
 
-   如需有關建立特定領域語言方案的詳細資訊，請參閱 [如何：建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
+   如需有關建立特定領域語言解決方案的詳細資訊，請參閱 [如何：建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
 2. 在 [建置] 功能表上，按一下 [建置方案]。
 
    > [!IMPORTANT]
-   > 此步驟會產生指示詞處理器，並在登錄中新增其金鑰。
+   > 此步驟會產生指示詞處理器，並在登錄中新增該處理器的金鑰。
 
 3. 在 **[偵錯]** 功能表上，按一下 **[開始偵錯]** 。
 
     Visual Studio 的第二個實例隨即開啟。
 
-4. 在實驗性組建的 **方案總管**中，按兩下檔案 **範例. min**。
+4. 在實驗組建的**方案總管**中，按兩下檔案**範例。**
 
-    檔案隨即在設計工具中開啟。 請注意，此模型有兩個元素： ExampleElement1 和 ExampleElement2，以及它們之間的連結。
+    檔案隨即在設計工具中開啟。 請注意，此模型有兩個元素： ExampleElement1 和 ExampleElement2，以及兩者之間的連結。
 
 5. 關閉 Visual Studio 的第二個實例。
 
@@ -86,7 +86,7 @@ ms.locfileid: "88237993"
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>將自訂文字模板主機連接至指示詞處理器
 
-在您產生指示詞處理器之後，您可以連接指示詞處理器和您在 [逐步解說：建立自訂文字模板主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)中所建立的自訂文字模板主機。
+產生指示詞處理器之後，您可以連接指示詞處理器和您在 [逐步解說：建立自訂文字模板主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)中所建立的自訂文字模板主機。
 
 1. 開啟 CustomHost 方案。
 
@@ -96,19 +96,19 @@ ms.locfileid: "88237993"
 
 3. 加入下列參考：
 
-    - VisualStudio。建立 Sdk 11。0
+    - VisualStudio （node.js）
 
-    - VisualStudio. 建立 Sdk 的關係圖
+    - VisualStudio （node.js）。
+
+    - VisualStudio. TextTemplating 11。0
 
     - VisualStudio. TextTemplating. 11。0
 
-    - VisualStudio. TextTemplating. 介面11。0
+    - VisualStudio. TextTemplating. 11。0
 
-    - VisualStudio. TextTemplating. 建立11。0
+    - VisualStudio. TextTemplating. Vshost.exe 11。0
 
-    - VisualStudio. TextTemplating. .Vshost.exe. 11。0
-
-4. 在 Program.cs 或 Module1 的頂端，新增下列程式程式碼：
+4. 在 Program.cs 或 Module1 的頂端，加入下列程式程式碼：
 
     ```csharp
     using Microsoft.Win32;
@@ -118,10 +118,10 @@ ms.locfileid: "88237993"
     Imports Microsoft.Win32
     ```
 
-5. 找出屬性的程式碼 `StandardAssemblyReferences` ，並取代為下列程式碼：
+5. 找出屬性的程式碼 `StandardAssemblyReferences` ，並將它取代為下列程式碼：
 
     > [!NOTE]
-    > 在此步驟中，您會加入主機將支援之產生的指示詞處理器所需的元件參考。
+    > 在此步驟中，您會將參考新增至您的主機將支援之產生的指示詞處理器所需的元件。
 
     ```csharp
     //the host can provide standard assembly references
@@ -154,10 +154,10 @@ ms.locfileid: "88237993"
     }
     ```
 
-6. 找出函式的程式碼 `ResolveDirectiveProcessor` ，並取代為下列程式碼：
+6. 找出函式的程式碼 `ResolveDirectiveProcessor` ，並將它取代為下列程式碼：
 
     > [!IMPORTANT]
-    > 此程式碼包含您要連接之產生的指示詞處理器名稱的硬式編碼參考。 您可以輕鬆地簡化此程式，在此情況下，它會尋找登錄中列出的所有指示詞處理器，並嘗試尋找相符的。 在此情況下，主機會使用任何產生的指示詞處理器。
+    > 此程式碼包含您想要連接之所產生之指示詞處理器名稱的硬式編碼參考。 您可以輕鬆地使其更為普遍，在這種情況下，它會尋找登錄中列出的所有指示詞處理器，並嘗試尋找相符項。 在此情況下，主機會使用任何產生的指示詞處理器。
 
     ```csharp
     //the engine calls this method based on the directives the user has
@@ -234,7 +234,7 @@ ms.locfileid: "88237993"
 
 ## <a name="test-the-custom-host-with-the-directive-processor"></a>使用指示詞處理器測試自訂主機
 
-若要測試自訂文字模板主機，您必須先撰寫一個呼叫所產生指示詞處理器的文字模板。 然後執行自訂主機，將文字模板的名稱傳遞給它，並確認已正確處理指示詞。
+若要測試自訂文字模板主機，您必須先撰寫可呼叫所產生之指示詞處理器的文字模板。 然後您執行自訂主機，將文字模板的名稱傳遞給它，並確認指示詞已正確處理。
 
 ### <a name="create-a-text-template-to-test-the-custom-host"></a>建立文字模板以測試自訂主機
 
@@ -243,7 +243,7 @@ ms.locfileid: "88237993"
 2. 將下列程式碼加入至此文字檔中：
 
     > [!NOTE]
-    > 文字模板的程式設計語言不需要與自訂主機相符。
+    > 文字模板的程式設計語言不需要與自訂主控制項的程式設計語言相符。
 
     ```csharp
     Text Template Host Test
@@ -312,7 +312,7 @@ ms.locfileid: "88237993"
     #>
     ```
 
-3. 在程式碼中，將取代 \<YOUR PATH> 為您在第一個程式中建立之設計特定語言的 Sample 檔案路徑。
+3. 在程式碼中，將取代 \<YOUR PATH> 為您在第一個程式中所建立之設計特定語言的範例檔案路徑。
 
 4. 儲存並關閉檔案。
 
@@ -327,7 +327,7 @@ ms.locfileid: "88237993"
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > 除了輸入位址，您可以在 **Windows Explorer**中流覽至檔案 CustomHost.exe，然後將檔案拖曳到 [命令提示字元] 視窗中。
+    > 您可以流覽至 **Windows 檔案總管**中的檔案 CustomHost.exe，然後將檔案拖曳到 [命令提示字元] 視窗中，而不是輸入位址。
 
 3. 輸入空格。
 
@@ -338,17 +338,17 @@ ms.locfileid: "88237993"
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    > 除了輸入位址，您可以在 **Windows Explorer**中流覽至檔案 TestTemplateWithDP.txt，然後將檔案拖曳到 [命令提示字元] 視窗中。
+    > 您可以流覽至 **Windows 檔案總管**中的檔案 TestTemplateWithDP.txt，然後將檔案拖曳到 [命令提示字元] 視窗中，而不是輸入位址。
 
-     自訂主應用程式會執行並啟動文字模板轉換進程。
+     自訂主應用程式會執行並啟動文字模板轉換流程。
 
-5. 在 **Windows Explorer**中，流覽至包含檔案的資料夾 TestTemplateWithDP.txt。
+5. 在 **Windows 檔案總管**中，流覽至包含檔案 TestTemplateWithDP.txt 的資料夾。
 
-     資料夾也包含 TestTemplateWithDP1.txt 的檔案。
+     此資料夾也包含 TestTemplateWithDP1.txt 的檔案。
 
 6. 開啟這個檔案來查看文字範本轉換的結果。
 
-     產生的文字輸出結果隨即出現，看起來應該如下所示：
+     產生之文字輸出的結果隨即出現，且看起來應該像這樣：
 
     ```
     Text Template Host Test

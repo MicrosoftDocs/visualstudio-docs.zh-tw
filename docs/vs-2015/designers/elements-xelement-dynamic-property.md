@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 383101679827f19b9a85d36f0f5a39eb772c68ec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664685"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elements (XElement 動態屬性)
@@ -42,4 +42,4 @@ elem.Elements[{namespaceName}localName]
  這個屬性會使用延後執行。
 
 ## <a name="see-also"></a>另請參閱
- [System.xml.linq.xelement> 類別動態屬性](../designers/xelement-class-dynamic-properties.md)[元素](../designers/element-xelement-dynamic-property.md) [子系](../designers/descendants-xelement-dynamic-property.md)
+ [System.xml.linq.xelement> 類別動態屬性](../designers/xelement-class-dynamic-properties.md)[元素](../designers/element-xelement-dynamic-property.md)[子代](../designers/descendants-xelement-dynamic-property.md)

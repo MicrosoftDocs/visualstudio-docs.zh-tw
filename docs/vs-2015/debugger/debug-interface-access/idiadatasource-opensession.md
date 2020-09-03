@@ -1,5 +1,5 @@
 ---
-title: 'Idiadatasource:: Opensession |Microsoft Docs'
+title: IDiaDataSource：： openSession |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4bec5507d15374e6e88afd4567d4b0fec9ca6cb7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198606"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-開啟查詢符號的工作階段。  
+開啟用於查詢符號的會話。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,21 +35,21 @@ HRESULT openSession ( 
   
 #### <a name="parameters"></a>參數  
  ppSession  
- [out]傳回[IDiaSession](../../debugger/debug-interface-access/idiasession.md)物件，表示開啟的工作階段。  
+ 擴展傳回代表開啟會話的 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示可能的傳回值，這個方法。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 下表顯示此方法可能傳回的值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
-|E_UNEXPECTED|[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)物件先前尚未初始化符號的來源。|  
+|E_UNEXPECTED|[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)物件先前尚未以符號來源進行初始化。|  
 |E_INVALIDARG|無效的 `ppSession` 參數。|  
-|E_OUTOFMEMORY|若要開啟 工作階段的記憶體不足。|  
+|E_OUTOFMEMORY|記憶體不足，無法開啟會話。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會開啟[IDiaSession](../../debugger/debug-interface-access/idiasession.md)資料來源的物件。  
+ 這個方法會開啟資料來源的 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 物件。  
   
- `IDiaSession` 物件會實作到資料來源的查詢。 工作階段會管理每一組偵錯符號的一個位址空間。 資料來源符號所描述的.exe 或.dll 檔案是否作用中多個位址範圍 （例如，因為多個處理序已經載入它），則應該使用每個位址範圍的一個工作階段。  
+ `IDiaSession` 物件會在資料來源中執行查詢。 會話會管理每一組 debug 符號的一個位址空間。 如果資料來源符號所描述的 .exe 或 .dll 檔在多個位址範圍中為使用中 (例如，因為多個進程已載入) ，所以應該使用每個位址範圍的一個會話。  
   
 ## <a name="example"></a>範例  
   
@@ -64,6 +64,6 @@ if (FAILED(hr))
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
- [概觀](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
+ [概述](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [查詢 .Pdb 檔案](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

@@ -1,5 +1,5 @@
 ---
-title: 生成專案載入元素(可視化工作室範本) |微軟文件
+title: " (Visual Studio 範本的 BuildProjectOnload 元素) |Microsoft Docs"
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,16 +10,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739965"
 ---
-# <a name="buildprojectonload-element-visual-studio-templates"></a>產生專案載入元素(視覺化工作室範本)
-僅在創建新專案時生成新專案,並將這些專案添加到解決方案中。 整個解決方案不是構建的。
+# <a name="buildprojectonload-element-visual-studio-templates"></a> (Visual Studio 範本的 BuildProjectOnload 元素) 
+建立新的專案，並將其新增至方案。 整個方案都不會建立。
 
-元素層次結構:
+元素階層：
 
 ```xml
 <VSTemplate>
@@ -44,20 +44,20 @@ ms.locfileid: "80739965"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|`TemplateData`|對樣本進行分類,並定義範本在 **「新專案**」和「**新增新項目**」對話框中的顯示方式。|
+|`TemplateData`|將範本分類，並定義該範本在 [ **新增專案** ] 和 [ **加入新專案** ] 對話方塊中的顯示方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- 文本必須或`true``false`指示是否僅在從範本創建新專案時生成該專案。
+ 文字必須是 `true` 或 `false` ，以指出從範本建立新專案時，是否只建立新專案。
 
 ## <a name="remarks"></a>備註
   是選擇性元素。 預設值是 `false`。
 
 ## <a name="example"></a>範例
- 下面的範例說明了 Visual C++ 範本的元數據。
+ 下列範例說明 Visual c # 範本的中繼資料。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -86,6 +86,6 @@ ms.locfileid: "80739965"
 
 ## <a name="see-also"></a>另請參閱
 
-- [產生載入屬性和元素](buildonload-visual-studio-templates.md)
-- [建立項目與專案樣本](../ide/creating-project-and-item-templates.md)
-- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [BuildOnLoad 屬性和元素](buildonload-visual-studio-templates.md)
+- [建立專案和專案範本](../ide/creating-project-and-item-templates.md)
+- [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)

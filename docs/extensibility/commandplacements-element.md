@@ -1,5 +1,5 @@
 ---
-title: 命令放置元素 |微軟文件
+title: CommandPlacements 元素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a72b087652a654b563fd4e00bacc52290a29fe1c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739694"
 ---
-# <a name="commandplacements-element"></a>命令放置元素
-命令放置元素對命令放置元素和其他命令放置分組。
+# <a name="commandplacements-element"></a>CommandPlacements 元素
+CommandPlacements 元素會將 CommandPlacement 元素和其他 CommandPlacements 群組分組。
 
- 命令放置元素是可選的。 如果輔助位置中不得包含任何命令、組或功能表,則不必在 *.vsct*檔中包含此部分。
+ CommandPlacements 元素是選擇性的。 如果次要位置中必須未包含任何命令、群組或功能表，您就不需要在 *.vsct* 檔案中包含此區段。
 
 ## <a name="syntax"></a>語法
 
@@ -41,20 +41,20 @@ ms.locfileid: "80739694"
 
 |屬性|描述|
 |---------------|-----------------|
-|條件|選擇性。 請參考[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|條件|選擇性。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|命令放置|對命令放置元素和其他命令放置分組。|
-|[命令放置元素](../extensibility/commandplacement-element.md)|使按鈕、組和功能表包含在多個組或功能表中。|
+|CommandPlacements|群組 CommandPlacement 元素和其他 CommandPlacements 群組。|
+|[CommandPlacement 元素](../extensibility/commandplacement-element.md)|可將按鈕、群組和功能表包含在一個以上的群組或功能表中。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[指令表元素](../extensibility/commandtable-element.md)|定義表示命令的所有元素。|
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表命令的所有元素。|
 
 ## <a name="example"></a>範例
 
@@ -68,5 +68,5 @@ ms.locfileid: "80739694"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [命令放置元素](../extensibility/commandplacement-element.md)
-- [視覺化工作室指令表 (.vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [CommandPlacement 元素](../extensibility/commandplacement-element.md)
+- [Visual Studio 命令表格 (. .vsct) 檔](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

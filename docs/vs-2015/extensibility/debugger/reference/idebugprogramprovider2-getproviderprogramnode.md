@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::GetProviderProgramNode |Microsoft Docs
+title: IDebugProgramProvider2：： GetProviderProgramNode |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5fa9f4db6aa71e9bba1f456b13ba52abd24ab966
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198721"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取針對特定程式的 [程式] 節點。  
+抓取特定程式的程式節點。  
   
 ## <a name="syntax"></a>語法  
   
@@ -50,31 +50,31 @@ int GetProviderProgramNode(
   
 #### <a name="parameters"></a>參數  
  `Flags`  
- [in]從旗標的組合[PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列舉型別。 此呼叫一般會在下列旗標：  
+ 在 [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) 列舉中的旗標組合。 以下是此呼叫的典型旗標：  
   
-|旗標|說明|  
+|旗標|描述|  
 |----------|-----------------|  
-|`PFLAG_REMOTE_PORT`|呼叫端在遠端電腦上執行。|  
-|`PFLAG_DEBUGGEE`|呼叫端目前正在偵錯 （每個節點會傳回封送處理的其他資訊）。|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|已附加至呼叫端，但不是啟動偵錯工具。|  
+|`PFLAG_REMOTE_PORT`|呼叫端正在遠端電腦上執行。|  
+|`PFLAG_DEBUGGEE`|目前正在調試呼叫端 (針對每個節點) 會傳回封送處理的其他相關資訊。|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|呼叫端已附加至，但不是由偵錯工具啟動。|  
   
  `pPort`  
- [in]呼叫處理序的連接埠上執行。  
+ 在正在執行呼叫進程的埠。  
   
  `processId`  
- [in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構包含該程式處理序的識別碼有問題。  
+ 在 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 結構，其中包含有問題之程式的進程識別碼。  
   
  `guidEngine`  
- [in]（如果有的話） 的程式附加到偵錯引擎的 GUID。  
+ 在程式附加到 (（如果有任何) ）的 debug engine GUID。  
   
  `programId`  
- [in]要取得 [程式] 節點的程式識別碼。  
+ 在要取得程式節點的程式識別碼。  
   
  `ppProgramNode`  
- [out][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，表示要求的程式 節點。  
+ 擴展代表所要求之程式節點的 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)   

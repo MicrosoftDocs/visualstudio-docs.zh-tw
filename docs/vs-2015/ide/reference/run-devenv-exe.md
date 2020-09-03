@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b2716995e8ff3a318262284b5733a471086c68c1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665518"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
@@ -35,16 +35,16 @@ devenv {/run|/r} {SolutionName|ProjectName}
 ```
 
 ## <a name="arguments"></a>引數
- `SolutionName` 必要項。 方案檔的完整路徑和名稱。
+ 需要 `SolutionName`。 方案檔的完整路徑和名稱。
 
- `ProjectName` 必要項。 專案檔的完整路徑和名稱。
+ 需要 `ProjectName`。 專案檔的完整路徑和名稱。
 
 ## <a name="remarks"></a>備註
  根據為使用中方案組態所指定的設定，編譯並執行指定的專案或方案。 此參數會啟動整合式開發環境 (IDE)，並在專案或方案完成執行之後讓它保持使用中。
 
 - 請以雙引號括住包含空格的字串。
 
-- 摘要資訊 (包含錯誤) 可以顯示在 [命令]  視窗中，或使用 `/out` 參數指定的任何記錄檔中。
+- 摘要資訊 (包含錯誤) 可以顯示在 [命令]**** 視窗中，或使用 `/out` 參數指定的任何記錄檔中。
 
 ## <a name="example"></a>範例
  此範例會利用使用中部署組態來執行方案 `MySolution`。
@@ -54,4 +54,4 @@ devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Proje
 ```
 
 ## <a name="see-also"></a>另請參閱
- [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md) [/Runexit （devenv）](../../ide/reference/runexit-devenv-exe.md) [/Build （devenv）](../../ide/reference/build-devenv-exe.md) [/Rebuild （devenv）](../../ide/reference/rebuild-devenv-exe.md) [/out （devenv .exe）](../../ide/reference/out-devenv-exe.md)
+ [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md) [/Runexit ( # A0) ](../../ide/reference/runexit-devenv-exe.md) [/Build ( # A1) ](../../ide/reference/build-devenv-exe.md) [/Rebuild ( # A2) ](../../ide/reference/rebuild-devenv-exe.md) [/out ( # A3) ](../../ide/reference/out-devenv-exe.md)

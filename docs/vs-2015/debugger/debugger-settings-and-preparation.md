@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1199a28d83dc519b40466cda37ed966cc7ee51e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198869"
 ---
 # <a name="debugger-settings-and-preparation"></a>偵錯設定及準備
@@ -46,7 +46,7 @@ ms.locfileid: "68198869"
  [ASP.NET Web 應用程式](../debugger/debugging-preparation-aspnet-web-applications.md)  
  提供如何設定 ASP.NET Web 應用程式的指示。  
   
- [如何：對不屬於 Visual Studio 方案的可執行檔進行偵錯](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
+ [如何：對不屬於 Visual Studio 方案的可執行檔進行偵錯工具](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  說明如何對不是建立為 Visual Studio 專案一部分的可執行檔進行偵錯。  
   
  [如何：以 Code Center Premium 來源進行偵錯](../debugger/how-to-debug-with-code-center-premium-source.md)  
@@ -58,7 +58,7 @@ ms.locfileid: "68198869"
  [偵錯和裝載處理序](../debugger/debugging-and-the-hosting-process.md)  
  描述裝載處理序的不同層面。  
   
- [如何：指定偵錯的 .NET Framework 版本](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
+ [如何：指定要進行偵錯工具的 .NET Framework 版本](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  描述如何設定登錄機碼以向偵錯工具表示使用何版本。  
   
 ## <a name="see-also"></a>另請參閱  

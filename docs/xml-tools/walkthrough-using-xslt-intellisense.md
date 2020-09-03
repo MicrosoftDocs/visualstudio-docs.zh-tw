@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a085627d598bfcc969c2e76d717a2f49a31922b2
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817277"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>逐步解說：使用 XSLT IntelliSense
@@ -45,7 +45,7 @@ ms.locfileid: "85817277"
     </xsl:stylesheet>
     ```
 
-2. 在之後插入游標 `<xsl:template name="msg23" match="msg23">` ，然後按**enter**鍵。 接著開始輸入下列 `xsl:call-template` 項目：
+2. 將游標插入之後 `<xsl:template name="msg23" match="msg23">` ，然後按 **enter**。 接著開始輸入下列 `xsl:call-template` 項目：
 
     ```xml
     <xsl:call-template name="localized-message">
@@ -54,7 +54,7 @@ ms.locfileid: "85817277"
 
      當您輸入時，範本名稱的清單會出現在 `name=""` 項目的 `xsl:call-template` 屬性中。
 
-3. 在之後插入游標 `<xsl:call-template name="localized-message">` ，然後按**enter**鍵。 接著開始輸入下列 `xsl:with-param` 項目：
+3. 將游標插入之後 `<xsl:call-template name="localized-message">` ，然後按 **enter**。 接著開始輸入下列 `xsl:with-param` 項目：
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -111,7 +111,7 @@ ms.locfileid: "85817277"
     </xsl:stylesheet>
     ```
 
-2. 在之後插入游標 `<xsl:apply-templates select="phone" />` ，然後按**enter**鍵。 接著開始輸入下列 `xsl: apply-templates` 項目：
+2. 將游標插入之後 `<xsl:apply-templates select="phone" />` ，然後按 **enter**。 接著開始輸入下列 `xsl: apply-templates` 項目：
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -152,7 +152,7 @@ ms.locfileid: "85817277"
     </xsl:stylesheet>
     ```
 
-2. 在之後插入游標 `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` ，然後按**enter**鍵。 接著開始輸入下列 `xsl:namespace-alias` 項目：
+2. 將游標插入之後 `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` ，然後按 **enter**。 接著開始輸入下列 `xsl:namespace-alias` 項目：
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>

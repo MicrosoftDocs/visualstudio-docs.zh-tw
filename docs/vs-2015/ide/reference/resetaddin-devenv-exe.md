@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9958e6e9a540dce1a405df8991780600b8f4a702
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665593"
 ---
 # <a name="resetaddin-devenvexe"></a>/ResetAddin (devenv.exe)
@@ -35,7 +35,7 @@ Devenv /ResetAddin AddIn
  `AddIn` 選擇項。 增益集的命令名稱。
 
 ## <a name="remarks"></a>備註
- 根據預設，增益集的命令名稱等於 \<增益集方案名稱>  .Connect.\<增益集方案名稱>，並出現在 Connect.cs 中作為 `Exec` 方法的 `commandName` 參數。 您也可以確認命令名稱，方法是在 Visual Studio 的 [命令] 視窗中開始輸入增益集名稱，並使用 Intellisense 填入其餘部分。
+ 根據預設，增益集的命令名稱等於 *\<AddInSolutionName>* 。連接，並以方法的參數形式出現在 Connect.cs 中。<em> \<AddInSolutionName> </em> `commandName` `Exec` 您也可以確認命令名稱，方法是在 Visual Studio 的 [命令] 視窗中開始輸入增益集名稱，並使用 Intellisense 填入其餘部分。
 
 ## <a name="example"></a>範例
  下列範例會啟動 Visual Studio，並防止在啟動時執行 `MyAddin` 增益集。

@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetNumberOfElements |Microsoft Docs
+title: IDebugArrayField：： GetNumberOfElements |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4d5627f263d743c4f8c83de683c24baf21cf594a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198747"
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
@@ -40,13 +40,13 @@ int GetNumberOfElements(
   
 #### <a name="parameters"></a>參數  
  `pdwNumElements`  
- [out]傳回陣列中的項目數目。  
+ 擴展傳回陣列中的元素數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 傳回的值是在陣列中，不論的維度數目的項目總數。  
+ 傳回的值是陣列中的元素總數（不論維度的數目為何）。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

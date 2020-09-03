@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bbeeb3d65e50e4cd3e33d4cab63dc619a1ad7a8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534312"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
@@ -67,7 +67,7 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 ### <a name="personalizing-the-ide"></a>個人化 IDE
  您可以自訂視窗配置以符合您的開發樣式。 您隨時都可以停駐、浮動或隱藏任何視窗，也可在全螢幕模式中執行編輯器。 您可以建立並儲存多個自訂視窗配置，這些只會顯示您所需特定內容的視窗。 例如，您可以建立全螢幕的配置，這樣一來您看到的就是所有程式碼編輯器。 而且，您可以建立不同的版面配置，來進行偵錯和小組作業。 如需詳細資訊，請參閱[自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)。
 
- 您可以用許多其他的方式自訂 Visual Studio，而且若您在多部電腦上工作，也可以漫遊設定。 如需詳細資訊，請參閱[將 IDE 個人](../ide/personalizing-the-visual-studio-ide.md)化。
+ 您可以用許多其他的方式自訂 Visual Studio，而且若您在多部電腦上工作，也可以漫遊設定。 如需詳細資訊，請參閱 [將 IDE 個人](../ide/personalizing-the-visual-studio-ide.md)化。
 
  幾乎所有項目都有鍵盤快速鍵，而且您也能加以自訂。 若要建立新的快速鍵，請在 [快速啟動] 中輸入 "Keyboard"，以開啟 [鍵盤] 對話方塊。 如果您需要選項的詳細資訊，您可在這按 F1 鍵，移至 MSDN 說明頁面。 如需詳細資訊，請參閱 [Visual Studio 中的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
@@ -94,7 +94,7 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 
  ![畫板](../ide/media/b5-artboard.png "b5_artboard")
 
-|映像|描述|
+|Image|描述|
 |-|-|
 |![](../designers/media/b1-1.png "B1_1")|**設計檢視** ：可顯示文件的視覺化設計。 在這個檢視中，您可以繪製或修改設計介面上的物件。|
 |![](../designers/media/b1-2.png "B1_2")|**階層連結** ：可讓您在所選物件的範本編輯模式、樣式編輯模式及物件編輯範圍之間快速切換。|
@@ -193,7 +193,7 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 - [使用者帳戶和更新](../ide/user-accounts-and-updates.md)
 - [將 IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)
 - [何：在 IDE 中四處移動](../ide/how-to-move-around-in-the-visual-studio-ide.md)
-- [開始使用 Visual Studio 進行開發](../ide/get-started-developing-with-visual-studio.md)
+- [使用 Visual Studio 進行開始開發](../ide/get-started-developing-with-visual-studio.md)
 - [尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)
 - [方案和專案](../ide/solutions-and-projects-in-visual-studio.md)
 - [撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)
@@ -217,4 +217,4 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 - [編輯程式碼](https://www.visualstudio.com/features/ide-vs)
 - [Visual Studio 2015 的新功能](../what-s-new-in-visual-studio-2015.md)
 - [移植、移轉和升級 Visual Studio 專案](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
-- [告訴我們](../ide/talk-to-us.md)
+- [與我們交談](../ide/talk-to-us.md)

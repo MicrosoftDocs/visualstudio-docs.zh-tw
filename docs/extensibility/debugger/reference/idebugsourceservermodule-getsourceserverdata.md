@@ -1,5 +1,5 @@
 ---
-title: IDebugSource伺服器模組::獲取源伺服器數據 |微軟文件
+title: IDebugSourceServerModule：： GetSourceServerData |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c0388e4a1916a16f7e429fa4f32c45ed62fdb02e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719925"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
-檢索源伺服器資訊陣組。
+捕獲來源伺服器資訊的陣列。
 
 ## <a name="syntax"></a>語法
 
@@ -41,16 +41,16 @@ public int GetSourceServerData(
 
 ## <a name="parameters"></a>參數
 `pDataByteCount`\
-[出]數據陣列中的位元組數。
+擴展資料陣列中的位元組數目。
 
 `ppData`\
-[出]對數據陣列的引用。
+擴展資料陣列的參考。
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則,返回錯誤代碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
-下面的範例展示如何為公開[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)介面的**CModule**物件實現此方法。
+下列範例示範如何針對公開[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)介面的**CModule**物件，執行這個方法。
 
 ```cpp
 HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)

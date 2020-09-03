@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d2973f4e1d775d1b71642ea60b8cf00b1430c77
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664704"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Blend 中的直接選取工具輔助按鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-下表列出您可以用來修改使用**直接選取**工具![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362")之現有路徑圖形的快捷方式。 若要新增或移除現有路徑上的點，或結合兩個現有路徑，請使用**畫筆**工具。
+下表列出您可以用來修改現有路徑圖形的**直接選取**工具 ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362") 快速鍵。 若要新增或移除現有路徑上的點，或結合兩個現有路徑，請使用**畫筆**工具。
 
-|若要執行這項操作|請這樣做|Pointer|
+|若要執行這項操作|執行方式|Pointer|
 |-----------------------|-------------|-------------|
 |使路徑上的點顯示正切函數控點|按一下路徑上的點|![](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png "cfcc5f41-a666-4524-a958-50b9051130ca")<br /><br /> 移動點的指標|
 |移動路徑上的點|拖曳路徑上的點|![](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png "cfcc5f41-a666-4524-a958-50b9051130ca")<br /><br /> 移動點的指標|
@@ -34,5 +34,5 @@ ms.locfileid: "72664704"
 |選取線段並將其彎成曲線，以通過指標的位置。|將滑鼠指標停在路徑中的線段上，按住 ALT 鍵，然後拖曳線段|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441f-97ed-2f1496e416bf")<br /><br /> 轉換線段的指標|
 |個別調整另一側正切函數的一端|直接選取點或線段，按住 ALT 鍵，然後拖曳正切函數的結束點|![](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png "923951da-4081-4f8b-bebc-0f1f64d87504")<br /><br /> 轉換正切函數的指標|
 
-## <a name="see-also"></a>請參閱
- [鍵盤快速鍵和輔助按鍵](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)[畫板輔助按鍵](../designers/artboard-modifier-keys-in-blend.md)[畫筆工具輔助按鍵](../designers/pen-tool-modifier-keys-in-blend.md)[繪製圖案和路徑](../designers/draw-shapes-and-paths.md)
+## <a name="see-also"></a>另請參閱
+ [鍵盤快速鍵和輔助按鍵](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)[畫板輔助按鍵](../designers/artboard-modifier-keys-in-blend.md)[畫筆工具](../designers/pen-tool-modifier-keys-in-blend.md)按鍵[繪製圖案和路徑](../designers/draw-shapes-and-paths.md)

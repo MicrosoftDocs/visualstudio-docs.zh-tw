@@ -1,5 +1,5 @@
 ---
-title: CA2212：不要使用 WebMethod 標記已服務的元件 |Microsoft Docs
+title: CA2212：不要以 WebMethod 標記服務元件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: a3c707fef5562b932b6232300131f6e6e6efef6a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534559"
 ---
 # <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212:不要以 WebMethod 標記 Serviced 元件
@@ -29,20 +29,20 @@ ms.locfileid: "85534559"
 |-|-|
 |TypeName|DoNotMarkServicedComponentsWithWebMethod|
 |CheckId|CA2212|
-|類別|Microsoft。使用方式|
+|類別|Microsoft. 使用量|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 在繼承自的型別中的方法 <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> 會以標記 <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName> 。
+ 型別中繼承自的方法 <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> 會標示為 <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName> 。
 
 ## <a name="rule-description"></a>規則描述
- <xref:System.Web.Services.WebMethodAttribute>適用于使用 ASP.NET 所建立之 XML Web Service 中的方法;它可從遠端 Web 用戶端呼叫方法。 方法和類別必須是公用的，而且在 ASP.NET Web 應用程式中執行。 <xref:System.EnterpriseServices.ServicedComponent>類型是由 COM + 應用程式所裝載，而且可以使用 COM + 服務。 <xref:System.Web.Services.WebMethodAttribute>不會套用至 <xref:System.EnterpriseServices.ServicedComponent> 類型，因為它們不適用於相同的案例。 具體而言，將屬性新增至 <xref:System.EnterpriseServices.ServicedComponent> 方法並不會讓方法從遠端 Web 用戶端呼叫。 由於 <xref:System.Web.Services.WebMethodAttribute> 和 <xref:System.EnterpriseServices.ServicedComponent> 方法具有內容和交易流程的衝突行為和需求，因此在某些情況下，方法的行為會不正確。
+ <xref:System.Web.Services.WebMethodAttribute> 適用于使用 ASP.NET 建立的 XML Web Service 內的方法。它會讓方法可從遠端 Web 用戶端呼叫。 方法和類別必須是公用的，而且在 ASP.NET Web 應用程式中執行。 <xref:System.EnterpriseServices.ServicedComponent> 類型是由 COM + 應用程式所裝載，而且可以使用 COM + 服務。 <xref:System.Web.Services.WebMethodAttribute> 不會套用至 <xref:System.EnterpriseServices.ServicedComponent> 類型，因為它們並非適用于相同的案例。 具體而言，將屬性加入至 <xref:System.EnterpriseServices.ServicedComponent> 方法並不會讓方法從遠端 Web 用戶端進行呼叫。 因為 <xref:System.Web.Services.WebMethodAttribute> 和 <xref:System.EnterpriseServices.ServicedComponent> 方法有衝突的行為和內容和交易流程的需求，所以在某些案例中，方法的行為會是不正確的。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請從方法中移除該屬性 <xref:System.EnterpriseServices.ServicedComponent> 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。 沒有任何案例結合這些專案是正確的。
+ 請勿隱藏此規則的警告。 沒有將這些元素組合在一起的案例。
 
 ## <a name="see-also"></a>另請參閱
  <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>

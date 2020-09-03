@@ -32,10 +32,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 537223aab878aee2fb00e9417d0415f0a17d2dd5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534130"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>格式、XAML、文字編輯器、選項
@@ -59,7 +59,7 @@ ms.locfileid: "85534130"
 
   您可以指定哪些事件會導致自動格式化。
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**結束標記或簡單標記完成時**|輸入結束標記或簡單標記完成時，會進行自動格式化。 簡單標記沒有屬性，例如 `<Button />`。|
 |**開始標記完成時**|完成鍵入開始標記時，會進行自動格式化。|
@@ -70,7 +70,7 @@ ms.locfileid: "85534130"
 
 設定此選項之後，只會影響使用設計工具所後續新增的屬性或在 XAML 檢視中手動新增的屬性。
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**雙引號 (")**|屬性值會括在雙引號中。<br /><br /> `<Button Name="button1">Hello</Button>`|
 |**單引號 (')**|屬性值會括在單引號中。<br /><br /> `<Button Name='button1'>Hello</Button>`|
@@ -78,7 +78,7 @@ ms.locfileid: "85534130"
 ## <a name="tag-wrapping"></a>標記換行
 您可以指定進行標記換行的行長度。 啟用標記換行時，使用設計工具所後續新增的任何 XAML 都會適當地換行。
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**將超過指定長度的標記換行**|指定是否在 [長度]**** 所指定的行長度處換行。|
 |**長度**|一行可以包含的字元數。 必要時，有些 XAML 行可能會超過指定的行長度。|
@@ -86,7 +86,7 @@ ms.locfileid: "85534130"
 ## <a name="attribute-spacing"></a>屬性間距
 使用此設定可控制 XAML 文件中的屬性排列方式
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**保留屬性間的新行與空格**|自動格式化不會影響屬性間的新行與空格。<br /><br /> `<Button Height="23" Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
 |**在屬性之間插入單一空格**|屬性會佔用一行，並以一個空格分隔相鄰的屬性。 套用標記換行設定。<br /><br /> `<Button Height="23" Name="button1" Width="75">Hello</Button>`|
@@ -105,7 +105,7 @@ ms.locfileid: "85534130"
 ## <a name="auto-insert"></a>自動插入
 使用此設定可控制標記和引號的自動產生時機。
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**結尾標記**|指定當您關閉具有大於字元 (>) 的開始標記時，是否自動產生項目的結尾標記。|
 |**屬性引號**|指定從陳述式完成下拉式清單中選取屬性值時，是否產生封閉式引號。|
@@ -115,14 +115,14 @@ ms.locfileid: "85534130"
 ## <a name="default-view"></a>預設檢視
 使用此設定可控制載入 XAML 文件時是否出現設計檢視。
 
-|名稱|描述|
+|Name|描述|
 |-|-|
-|**一律以完整的 XAML 視圖開啟檔**|指定 XAML 檔是否只會出現在 XAML 視圖中，而不設計檢視。 適用于載入大型檔。|
+|**一律以完整的 XAML 視圖開啟檔**|指定 XAML 檔是否只出現在 XAML 視圖中，沒有設計檢視。 適用于載入大型檔。|
 
 ## <a name="toolbox"></a>工具箱
-使用此設定可指定是否要在 [工具箱] 中顯示使用者控制項和自訂控制項。
+您可以使用此設定來指定是否要在 [工具箱] 中顯示使用者控制項和自訂控制項。
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**自動填入工具箱項目**|指定目前方案中的使用者控制項和自訂控制項是否自動顯示在工具箱。|
 

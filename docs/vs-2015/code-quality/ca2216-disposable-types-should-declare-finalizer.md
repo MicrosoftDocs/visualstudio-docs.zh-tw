@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 5268cb90544088742c6fda7c751bab943503cacc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534468"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216:可處置的類型應該宣告完成項
@@ -29,14 +29,14 @@ ms.locfileid: "85534468"
 |-|-|
 |TypeName|DisposableTypesShouldDeclareFinalizer|
 |CheckId|CA2216|
-|類別|Microsoft。使用方式|
+|類別|Microsoft. 使用量|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 型別會 <xref:System.IDisposable?displayProperty=fullName> 執行，而且有欄位會建議使用非受控資源，並不會依照所述的方式來實作為完成項 <xref:System.Object.Finalize%2A?displayProperty=fullName> 。
+ 實作為的型別 <xref:System.IDisposable?displayProperty=fullName> ，而且有一些欄位建議使用非受控資源，並不會依照所述的方式來執行完成項 <xref:System.Object.Finalize%2A?displayProperty=fullName> 。
 
 ## <a name="rule-description"></a>規則描述
- 如果可處置的類型包含下列類型的欄位，則會報告此規則的違規：
+ 如果可處置的型別包含下列類型的欄位，就會回報此規則的違規：
 
 - <xref:System.IntPtr?displayProperty=fullName>
 
@@ -45,10 +45,10 @@ ms.locfileid: "85534468"
 - <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規，請執行呼叫您方法的完成項 <xref:System.IDisposable.Dispose%2A> 。
+ 若要修正此規則的違規情形，請執行呼叫您方法的完成項 <xref:System.IDisposable.Dispose%2A> 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果型別不是為了釋出非受控資源而執行，則隱藏此規則的警告是安全的 <xref:System.IDisposable> 。
+ 如果型別不是 <xref:System.IDisposable> 為了釋出非受控資源而執行，則可以放心隱藏此規則的警告。
 
 ## <a name="example"></a>範例
  下列範例顯示違反此規則的類型。

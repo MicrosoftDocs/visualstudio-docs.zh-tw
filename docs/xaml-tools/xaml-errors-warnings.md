@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b740f0882edb2eae9f00bd7826543e7fe1b4597f
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817264"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML 錯誤和警告
 
-撰寫 XAML 時，Visual Studio 會在您鍵入的同時分析程式碼。 偵測到錯誤時，程式碼行上會出現曲線。 將滑鼠指標停留在曲線上時，即會顯示錯誤或警告的詳細資訊。 針對某些錯誤和警告，會顯示 [快速動作] 燈泡，並使用**Ctrl** + **。** 鍵盤快速鍵以顯示可修正問題的選項。
+撰寫 XAML 時，Visual Studio 會在您鍵入的同時分析程式碼。 偵測到錯誤時，程式碼行上會出現曲線。 將滑鼠指標停留在曲線上時，即會顯示錯誤或警告的詳細資訊。 針對某些錯誤和警告，會顯示快速動作燈泡，並使用**Ctrl** + **。** 鍵盤快速鍵以顯示可修正問題的選項。
 
 ## <a name="error-types"></a>錯誤類型
 

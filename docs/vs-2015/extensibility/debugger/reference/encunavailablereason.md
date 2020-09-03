@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0ebdc5518579223a0081f30a0affd3a45e91604e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198766"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-`This is for internal use only!` 表示的原因，**編輯後繼續**不提供。  
+`This is for internal use only!` 表示無法使用 [ **編輯後繼續** ] 的原因。  
   
 ## <a name="syntax"></a>語法  
   
@@ -53,37 +53,37 @@ public enum EncUnavailableReason {
   
 #### <a name="parameters"></a>參數  
  ENCUN_NONE  
- 沒有特定的理由為何無法使用 編輯後繼續。  
+ 無法使用 [編輯後繼續] 的特定原因。  
   
  ENCUN_INTEROP  
- 編輯後繼續不提供 InterOp 呼叫期間。  
+ 在 InterOp 呼叫期間無法使用 [編輯後繼續]。  
   
  ENCUN_SQLCLR  
- 編輯後繼續提供期間不會使用 Common Language Runtime (CLR) 的 SQL 程序呼叫。  
+ 使用 Common Language Runtime (CLR) 的 SQL 程序呼叫期間，無法使用 [編輯後繼續]。  
   
  ENCUN_MINIDUMP  
- 編輯後繼續不提供在處理小型傾印。  
+ 處理迷你傾印時，無法使用 [編輯後繼續]。  
   
  ENCUN_EMBEDDED  
- 編輯後繼續使用時不處理內嵌程式碼。  
+ 處理內嵌程式碼時，無法使用 [編輯後繼續]。  
   
  ENCUN_ATTACH  
- 編輯後繼續 無法使用工作階段已附加到，因為無法啟動的偵錯工具。  
+ 無法使用 [編輯後繼續]，因為會話已附加至偵錯工具，而不是由偵錯工具所啟動。  
   
  ENCUN_WIN64  
- 編輯後繼續不提供處理 64 位元 Windows 程式碼時。  
+ 處理64位 Windows 程式碼時，無法使用 [編輯後繼續]。  
   
 ## <a name="remarks"></a>備註  
- 這個列舉僅供內部使用由[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]。 [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)並[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)方法所實作的自訂連接埠供應商應該一律會傳回`E_NOTIMPL`。  
+ 這個列舉僅供內部使用 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 。 自訂埠供應商所執行的 [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) 和 [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) 方法應該一律會傳回 `E_NOTIMPL` 。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.idl  
+ 標頭： msdbg .idl  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)   
  [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)
