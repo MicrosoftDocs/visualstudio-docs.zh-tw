@@ -1,5 +1,5 @@
 ---
-title: 為 VS 套件提供自動化 |微軟文件
+title: 為 Vspackage 提供自動化 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,33 +12,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6364f9cbaf3409e076eeb77365e5d793c7be96cb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705955"
 ---
 # <a name="providing-automation-for-vspackages"></a>為 VSPackage 提供自動化
-提供 VSPackage 自動化的兩種主要方法:通過實現特定於 VSPackage 的物件和實現標準自動化物件。 通常,這些用於擴展環境的自動化模型。
+有兩種主要的方式可為您的 Vspackage 提供自動化：藉由執行 VSPackage 專屬的物件和執行標準 automation 物件。 一般而言，這些會一起用來擴充環境的自動化模型。
 
-## <a name="vspackage-specific-objects"></a>VS 套件指定物件
- 自動化模型中的某些位置要求您提供 VSPackage 獨有的自動化物件。 例如,新專案需要僅提供 VSPackage 的不同物件。 這些物件的名稱在註冊表中輸入,並通過對環境`DTE`物件的調用獲得。
+## <a name="vspackage-specific-objects"></a>VSPackage 特定物件
+ Automation 模型內的特定位置需要您提供 VSPackage 專屬的自動化物件。 比方說，新的專案需要只有您的 VSPackage 提供的不同物件。 這些物件的名稱會在登錄中輸入，並透過呼叫環境物件來取得 `DTE` 。
 
- 當自動化消費者使用透過標準物件的Object 屬性提供的物件時,也可以獲取特定於 VSPackage 的物件。 例如,標準`Window`物件具有一`Object`個 屬性,通常稱為`Windows.Object`屬性。 當消費者調用`Window.Object`VSPackage 中實現的視窗時,將傳遞自己設計的特定自動化物件。
+ 當自動化取用者使用透過標準物件的 Object 屬性提供的物件時，也可以取得 VSPackage 特定的物件。 例如，標準 `Window` 物件有一個 `Object` 屬性，通常稱為屬性（property） `Windows.Object` 。 當取用者在 `Window.Object` VSPackage 中執行的視窗上呼叫時，您會傳回您自己設計的特定 automation 物件。
 
 #### <a name="projects"></a>專案
- VSPackage 可以通過自己的 VSPackage 特定物件擴展新項目類型的自動化模型。 為 VSPackage 提供新的自動化物件的主要目的是將<xref:Microsoft.VisualStudio.VCProjectEngine.VCProject><xref:VSLangProj80.VSProject2>唯一 專案物件與 物件區分開來。 當您希望提供一種從其他項目類型中並排顯示的專案類型以外的單一或反覆運算專案類型的方法時,這種差別化是很方便的。 有關詳細資訊,請參閱[公開項目物件](../../extensibility/internals/exposing-project-objects.md)。
+ Vspackage 可以透過自己的 VSPackage 專屬物件，為新的專案類型延伸 automation 模型。 為您的 VSPackage 提供新 automation 物件的主要目的是要區分您的唯一專案物件與 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProject> 或 <xref:VSLangProj80.VSProject2> 物件。 當您想要提供一種方式，讓您的專案與其他專案類型分開或逐一查看專案類型時，這項差異很方便，因為它們會在解決方案中並存顯示。 如需詳細資訊，請參閱 [公開專案物件](../../extensibility/internals/exposing-project-objects.md)。
 
 #### <a name="events"></a>事件
- 環境的事件體系結構為您提供了另一個位置來追加自己的 VSPackage 特定物件。 例如,通過創建自己的唯一事件物件,可以擴展環境的事件模型。 當新專案添加到您自己的項目類型時,您可能希望提供您自己的事件。 有關詳細資訊,請參閱[公開事件](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md)。
+ 環境的事件架構會提供另一個位置，供您附加自己的 VSPackage 專屬物件。 例如，藉由建立您自己的唯一事件物件，您可以擴充專案的環境事件模型。 當新專案新增至您自己的專案類型時，您可能會想要提供自己的事件。 如需詳細資訊，請參閱 [公開事件](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md)。
 
 #### <a name="window-objects"></a>視窗物件
- Windows 可以在調用時將特定於 VSPackage 的自動化物件傳回環境。 實現派生自<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>的<xref:EnvDTE.IExtensibleObject>物件`IDispatch`或 該回手屬性,擴展其駐點的視窗物件。 例如,可以使用此方法為視窗框架中設置的控制項提供自動化。 此物件及其可能擴展的任何其他對象的語義是您設計的。 有關詳細資訊,請參閱[如何:為 Windows 提供自動化](../../extensibility/internals/how-to-provide-automation-for-windows.md)。
+ Windows 可以在呼叫時將 VSPackage 特定的 automation 物件傳回給環境。 您可以執行衍生自的物件 <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject> ， <xref:EnvDTE.IExtensibleObject> 或將 `IDispatch` 屬性（property）擴充到其所在的視窗物件。 例如，您可以使用這個方法，為視窗框架中的控制項提供自動化功能。 此物件的語法及其可能擴充的任何其他物件，都是您要設計的。 如需詳細資訊，請參閱 [如何：為 Windows 提供自動化](../../extensibility/internals/how-to-provide-automation-for-windows.md)。
 
-#### <a name="options-pages-on-the-tools-menu"></a>「工具」選單上的選項頁面
- 您可以通過實現頁面和向註冊表添加資訊來創建頁面來擴展工具、選項自動化模型,以創建您自己的選項。 然後,可以通過環境物件模型與任何其他選項頁一樣調用您的頁面。 如果透過 VSPackages 添加到環境的功能的設計需要選項頁,則還應添加自動化支援。 關於詳細資訊,請參閱[選項頁的自動化支援](../../extensibility/internals/automation-support-for-options-pages.md)。
+#### <a name="options-pages-on-the-tools-menu"></a>[工具] 功能表上的 [選項] 頁面
+ 您可以建立頁面來擴充工具、透過執行頁面的選項自動化模型，以及將資訊新增至登錄，以建立您自己的選項。 然後您可以透過環境物件模型來呼叫您的頁面，就像任何其他選項頁面一樣。 如果您要透過 Vspackage 新增至環境的功能設計需要 [選項] 頁面，則您也應該新增自動化支援。 如需詳細資訊，請參閱 [選項頁的自動化支援](../../extensibility/internals/automation-support-for-options-pages.md)。
 
-## <a name="standard-automation-objects"></a>標準自動化物件
- 要擴展專案的自動化,您還可以實現標準自動化物件(派生自`IDispatch`),該物件位於其他專案物件旁邊,並實現標準方法和屬性。 標準物件`Projects`的範例包括插入到解決方案層次結構(如`Project`、`ProjectItem``ProjectItems`和) 的專案物件。 每個新項目類型都應實現這些物件(可能還有其他物件,具體取決於專案的語義)。
+## <a name="standard-automation-objects"></a>標準 Automation 物件
+ 若要擴充專案的自動化，您也可以執行標準 automation 物件， (衍生自 `IDispatch` 其他專案物件以外的) ，並執行標準方法和屬性。 標準物件的範例包括插入至方案階層的專案物件，例如 `Projects` 、 `Project` 、 `ProjectItem` 和 `ProjectItems` 。 每個新的專案類型都應該根據您專案的)  (，來執行這些物件，也可能是其他物件。
 
- 從某種意義上說,這些物件提供了 VSPackage 特定專案物件的相反優勢。 標準自動化物件允許以通用方式使用專案,就像支援相同物件的任何其他項目一樣。 因此,針對常規`Project`和`ProjectItem`物件編寫的外接程式可以針對任何類型的專案運行。 有關詳細資訊,請參閱[專案建模](../../extensibility/internals/project-modeling.md)。
+ 就某個方面來說，這些物件會提供 VSPackage 特定專案物件的相反優點。 標準 automation 物件可讓您以一般化的方式使用您的專案，就像任何其他支援相同物件的專案一樣。 因此，針對一般和物件撰寫的增益集 `Project` `ProjectItem` 可以針對任何類型的專案運作。 如需詳細資訊，請參閱 [專案模型](../../extensibility/internals/project-modeling.md)化。

@@ -1,5 +1,5 @@
 ---
-title: DA0003-多個核心範例 |Microsoft Docs
+title: DA0003-許多核心範例 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d0523f9a21dbdb655a02fb6263a6eb644458ab6d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548222"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003：許多核心樣本
@@ -35,7 +35,7 @@ ms.locfileid: "85548222"
  針對應用程式收集的大部分呼叫堆疊範例是以核心模式執行。 請考慮使用不同的分析方法來分析應用程式。
 
 ## <a name="rule-description"></a>規則描述
- 在 Windows 中，您可以使用核心模式或使用者模式來執行程式碼  （核心模式也稱為「特殊許可權模式」）。只有低層級的系統程式碼（例如設備磁碟機）才會以核心模式執行。 使用者模式應用程式可以轉換為核心模式以執行 I/O 作業、等候執行緒或處理序同步原始物件，或執行系統呼叫。
+ 在 Windows 中，您可以使用核心模式或使用者模式來執行程式碼   (核心模式也稱為「特殊許可權模式」。 ) 只有低層級的系統程式碼（例如設備磁碟機）才會以核心模式執行。 使用者模式應用程式可以轉換為核心模式以執行 I/O 作業、等候執行緒或處理序同步原始物件，或執行系統呼叫。
 
  當您要分析將大部分時間都用在以使用者模式工作的分析應用程式時，取樣最為有效。 以核心模式執行應用程式時所收集的樣本數目可能指出經常執行的 I/O 作業，或可能指出正在發生內容參數。 無法使用取樣方法來調查其中任一項作業。 如果取得太多核心模式樣本，則取樣資料可能未包含足夠的使用者模式樣本來進行統計。
 

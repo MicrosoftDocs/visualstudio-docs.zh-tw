@@ -1,5 +1,5 @@
 ---
-title: 偵錯封裝 |Microsoft Docs
+title: Debug 封裝 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,25 +11,25 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dda8b1ac6eaa2cd5352d441600ae720c3aac321c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181299"
 ---
 # <a name="debug-package"></a>偵錯套件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-偵錯封裝在 Visual Studio shell 中執行，並會處理所有的使用者介面。 它會使用 Visual Studio 偵錯介面，並與工作階段的偵錯管理員 (SDM) 通訊。  
+Debug 封裝會在 Visual Studio shell 中執行，並處理所有的 UI。 它會取用 Visual Studio 的偵錯工具，並與會話 debug manager (SDM) 進行通訊。  
   
- 透過在 SDM 傳送 break 事件切換偵錯工具執行模式下從中斷模式，並將焦點變更為在發生中斷的程式。 偵錯封裝會從資訊傳送給它的事件追蹤的堆疊框架和執行緒。  
+ 中斷透過 SDM 傳送的事件將偵錯工具從執行模式切換到中斷模式，並將焦點變更至發生中斷的程式。 Debug 封裝會從事件傳送給它的資訊中追蹤堆疊框架和執行緒。  
   
- 偵錯封裝有任何語言或執行階段環境相依性。 您不需要實作或修改套件偵錯。  
+ Debug 封裝沒有語言或執行時間環境相依性。 不需要執行或修改偵錯工具封裝。  
   
- 偵錯封裝是由 vsdebug.dll 實作。  
+ Debug 封裝是由 vsdebug.dll 所執行。  
   
 ## <a name="see-also"></a>另請參閱  
- [工作階段偵錯管理員](../../extensibility/debugger/session-debug-manager.md)   
+ [會話偵錯工具管理員](../../extensibility/debugger/session-debug-manager.md)   
  [堆疊框架](../../extensibility/debugger/stack-frames.md)   
  [執行緒](../../extensibility/debugger/threads.md)   
  [偵錯工具元件](../../extensibility/debugger/debugger-components.md)

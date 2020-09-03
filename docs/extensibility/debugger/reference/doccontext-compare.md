@@ -1,5 +1,5 @@
 ---
-title: DOCCONTEXT_COMPARE |微軟文件
+title: DOCCONTEXT_COMPARE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 75e4453cae63f484961cb2d0f3385a703709f83b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737224"
 ---
 # <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
-指定比較兩個文檔上下文的條件。
+指定用於比較兩個檔內容的準則。
 
 ## <a name="syntax"></a>語法
 
@@ -48,28 +48,28 @@ enum enum_DOCCONTEXT_COMPARE {
 
 ## <a name="fields"></a>欄位
 `DOCCONTEXT_EQUAL`\
-尋找清單中與目標文件上下文相等的第一個文檔上下文。
+在清單中尋找與目的檔案內容相等的第一個檔內容。
 
 `DOCCONTEXT_LESS_THAN`\
-尋找清單中的第一個小於目標文件上下文的文件上下文。
+在清單中尋找小於目的檔案內容的第一個檔內容。
 
 `DOCCONTEXT_GREATER_THAN`\
-尋找清單中大於目標文件上下文的第一個文檔上下文。
+在清單中尋找大於目的檔案內容的第一個檔內容。
 
 `DOCCONTEXT_SAME_DOCUMENT`\
-尋找清單中與目標文件上下文位於同一文檔中的第一個文件上下文。
+在與目的檔案內容相同的檔中，尋找清單中的第一個檔內容。
 
 ## <a name="remarks"></a>備註
-作為參數傳遞給[比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)方法。
+以引數形式傳遞至 [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) 方法。
 
-這些值用於指定查找清單中的第一個文檔上下文的比較條件。 文檔上下文將給出文檔上下文的清單,以便`IDebugDocumentContext2::Compare`通過方法 比較自身。 然後傳回清單中的第一個文件上下文`true`, 然後傳回比較運算符。
+這些值用來指定在清單中尋找第一個檔內容的比較準則。 檔內容會取得一份檔內容清單，以透過方法進行比較 `IDebugDocumentContext2::Compare` 。 接著會傳回清單中的第一個檔內容，其比較運算子會 `true` 傳回。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -8,10 +8,10 @@ ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
 ms.openlocfilehash: 76c04680b63eb362e02fdf26d817660d671b3b52
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548352"
 ---
 # <a name="shared-colors"></a>共用色彩
@@ -35,7 +35,7 @@ ms.locfileid: "85548352"
   
 ### <a name="command-structures"></a>命令結構  
   
-#### <a name="menus"></a><a name="BKMK_CommandMenus"></a>彈出式  
+#### <a name="menus"></a><a name="BKMK_CommandMenus"></a> 功能表  
  功能表可能會發生在 Visual Studio 2013 的數個位置：主要功能表列、內嵌在文件或工具視窗中，或 IDE 各位置的滑鼠右鍵功能表上。 針對個別項目的一節中會討論與其他 UI 項目相關聯之功能表的實作。 您應該一律使用 Visual Studio 環境所提供的標準功能表實作。 不過，在一些罕見情況下，您可能無法存取標準 Visual Studio 功能表。 在這些情況下，請使用下列語彙基元名稱，確保您的 UI 與 Visual Studio 中的其他功能表一致。  
   
  ![功能表紅線](../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303-000_MenuRedline")  
@@ -63,16 +63,16 @@ ms.locfileid: "85548352"
   
   **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![功能表標題預設值](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303-002_MenuTitleDefault")<br /><br /> **功能表標題**|背景|None|  
+|![功能表標題預設值](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303-002_MenuTitleDefault")<br /><br /> **功能表標題**|背景|無|  
 |![功能表標題預設值](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303-002_MenuTitleDefault")<br /><br /> **功能表標題**|前景 (文字)|`Environment.CommandBarTextActive`|  
 |![使用字符的功能表標題預設值](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")<br /><br /> **使用字符的功能表標題**|前景 (字符)|`Environment.CommandBarMenuGlyph`|  
-|![使用字符的功能表標題預設值](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")<br /><br /> **使用字符的功能表標題**|框線|None|  
+|![使用字符的功能表標題預設值](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")<br /><br /> **使用字符的功能表標題**|框線|無|  
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![停留時顯示功能表標題](../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303-004_MenuTitleHover")<br /><br /> **功能表標題**|背景|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![停留時顯示功能表標題](../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303-004_MenuTitleHover")<br /><br /> **功能表標題**|前景 (文字)|`Environment.CommandBarTextHover`|  
@@ -81,21 +81,21 @@ ms.locfileid: "85548352"
   
  **Pressed**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已按下功能表標題](../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303-006_MenuTitlePressed")<br /><br /> **功能表標題**|背景|`Environment.CommandBarMenuBackgroundGradientBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![已按下功能表標題](../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303-006_MenuTitlePressed")<br /><br /> **功能表標題**|前景 (文字)|`Environment.CommandBarTextActive`|  
 |![已按下使用字符的功能表標題](../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303-007_MenuTitleWithGlyphPressed")<br /><br /> **使用字符的功能表標題**|前景 (字符)|`Environment.CommandBarMenuMouseDownGlyph`|  
 |![已按下使用字符的功能表標題](../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303-007_MenuTitleWithGlyphPressed")<br /><br /> **使用字符的功能表標題**|框線|`Environment.CommandBarMenuBorder`<br /><br /> 只有左側、上方和右側。|  
   
- **Disabled**  
+ **已停用**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![已停用使用字符的功能表標題](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **使用字符的功能表標題**|背景|None|  
+|![已停用使用字符的功能表標題](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **使用字符的功能表標題**|背景|無|  
 |![已停用使用字符的功能表標題](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **使用字符的功能表標題**|前景 (文字)|`Environment.CommandBarTextInactive`|  
 |![已停用使用字符的功能表標題](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **使用字符的功能表標題**|前景 (字符)|`Environment.CommandBarTextInactive`|  
-|![已停用使用字符的功能表標題](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **使用字符的功能表標題**|框線|None|  
+|![已停用使用字符的功能表標題](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **使用字符的功能表標題**|框線|無|  
   
 ##### <a name="menu"></a>功能表  
  個別功能表項目包含功能表文字和選用圖示、核取方塊或子功能表字符。 其背景和文字色彩會在滑鼠游標暫留時變更。 這個色彩語彙基元是背景/前景配對。  
@@ -112,7 +112,7 @@ ms.locfileid: "85548352"
   
   **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![功能表預設值](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **功能表**|背景|`Environment.CommandBarMenuBackgroundGradientBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![功能表預設值](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **功能表**|前景 (文字)|`Environment.CommandBarTextActive`|  
@@ -121,31 +121,31 @@ ms.locfileid: "85548352"
 |![功能表預設值](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **功能表**|圖示通道背景|`Environment.CommandBarMenuIconBackground`|  
 |![功能表預設值](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **功能表**|Separator|`Environment.CommandBarMenuSeparator`|  
 |![功能表預設值](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **功能表**|陰影|`Environment.DropShadowBackground`|  
-|![已核取功能表](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **當選**|核取標記|`Environment.CommandBarCheckBox`|  
-|![已核取功能表](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **當選**|核取記號背景|`Environment.CommandBarSelectedIcon`|  
+|![已核取功能表](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **檢查**|核取標記|`Environment.CommandBarCheckBox`|  
+|![已核取功能表](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **檢查**|核取記號背景|`Environment.CommandBarSelectedIcon`|  
 |![已選取功能表](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **Selected**|圖示背景|`Environment.CommandBarSelected`|  
 |![已選取功能表](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **Selected**|圖示框線|`Environment.CommandBarSelectedBorder`|  
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![功能表動態顯示](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **功能表項目**|背景|`Environment.CommandBarMenuItemMouseOver`|  
 |![功能表動態顯示](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **功能表項目**|前景 (文字)|`Environment.CommandBarMenuItemMouseOver`|  
 |![功能表動態顯示](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **功能表項目**|前景 (子功能表字符)|`Environment.CommandBarMenuMouseOverSubmenuGlyph`|  
-|![已核取功能表動態顯示](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **當選**|核取標記|`Environment.CommandBarCheckBoxMouseOver`|  
-|![已核取功能表動態顯示](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **當選**|核取記號背景|`Environment.CommandBarHoverOverSelectedIcon`|  
+|![已核取功能表動態顯示](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **檢查**|核取標記|`Environment.CommandBarCheckBoxMouseOver`|  
+|![已核取功能表動態顯示](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **檢查**|核取記號背景|`Environment.CommandBarHoverOverSelectedIcon`|  
 |![已選取功能表動態顯示](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")<br /><br /> **Selected**|圖示背景|`Environment.CommandBarHoverOverSelected`|  
 |![已選取功能表動態顯示](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")<br /><br /> **Selected**|圖示框線|`Environment.CommandBarHoverOverSelectedIconBorder`|  
   
- **Disabled**  
+ **已停用**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已停用功能表](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")<br /><br /> 功能表項目|前景 (文字)|`Environment.CommandBarTextInactive`|  
 |![已停用功能表](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")<br /><br /> 功能表項目|前景 (子功能表字符)|`Environment.CommandBarMenuSubmenuGlyph`|  
-|![已核取停用的功能表](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")<br /><br /> 已檢查|核取標記|`Environment.CommandBarCheckBoxDisabled`|  
-|![已核取停用的功能表](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")<br /><br /> 已檢查|核取記號背景|`Environment.CommandBarSelectedIconDisabled`|  
+|![已核取停用的功能表](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")<br /><br /> 已核取|核取標記|`Environment.CommandBarCheckBoxDisabled`|  
+|![已核取停用的功能表](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")<br /><br /> 已核取|核取記號背景|`Environment.CommandBarSelectedIconDisabled`|  
   
 #### <a name="command-bar"></a>命令列  
  命令列可以出現在 Visual Studio IDE 的多個位置中，最值得注意的是命令櫃並內嵌在工具或文件視窗中。  
@@ -177,9 +177,9 @@ ms.locfileid: "85548352"
 
 - 不屬於語彙基元名稱所指定的命令列元件。  
   
-  **預設值**（沒有其他狀態）  
+  **預設** (沒有其他狀態)   
   
-|元素|語彙基元名稱：Category.color|  
+|項目|語彙基元名稱：Category.color|  
 |-------------|--------------------------------|  
 |背景|`Environment.CommandBarGradientBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |框線|`Environment.CommandBarToolBarBorder`|  
@@ -201,7 +201,7 @@ ms.locfileid: "85548352"
   
   **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![命令圖示預設值](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")<br /><br /> **預設值**|背景|N/A (繼承自命令列背景)|  
 |![命令圖示預設值](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")<br /><br /> **預設值**|前景 (文字)|`Environment.CommandBarTextActive`|  
@@ -212,7 +212,7 @@ ms.locfileid: "85548352"
   
  **暫留和鍵盤已取得焦點**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![命令圖示動態顯示](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303-025_CommandIconHover")<br /><br /> **暫留時的標準項目**|背景|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![命令圖示動態顯示](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303-025_CommandIconHover")<br /><br /> **暫留時的標準項目**|前景 (文字)|`Environment.CommandBarTextHover`|  
@@ -223,21 +223,21 @@ ms.locfileid: "85548352"
   
  **Pressed**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已按下命令圖示](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")<br /><br /> **已按下的命令圖示**|背景|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![已按下命令圖示](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")<br /><br /> **已按下的命令圖示**|前景 (文字)|`Environment.CommandBarTextMouseDown`|  
 |![已按下命令圖示](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")<br /><br /> **已按下的命令圖示**|框線|`Environment.CommandBarBorder`|  
   
- **Disabled**  
+ **已停用**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已停用命令圖示](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **已停用的命令圖示**|背景|N/A (繼承自命令列背景)|  
 |![已停用命令圖示](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **已停用的命令圖示**|前景 (文字)|`Environment.CommandBarTextInactive`|  
 |![已停用命令圖示](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **已停用的命令圖示**|框線|N/A|  
   
-##### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a>下拉式方塊  
+##### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a> 下拉式方塊  
   
 > [!IMPORTANT]
 > 下拉式方塊與下拉式清單類似，但包括可編輯的文字區域。 如果下拉式清單未包括可編輯的文字區域，請使用 [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown)下找到的色彩語彙基元。  
@@ -256,7 +256,7 @@ ms.locfileid: "85548352"
   
   **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![下拉式方塊輸入欄位](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")<br /><br /> **輸入欄位**|背景|`Environment.ComboBoxBackground`|  
 |![下拉式方塊輸入欄位](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")<br /><br /> **輸入欄位**|前景 (文字)|`Environment.ComboBoxText`|  
@@ -264,63 +264,63 @@ ms.locfileid: "85548352"
 |![下拉式方塊輸入欄位](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")<br /><br /> **輸入欄位**|Separator|沒有分隔符號|  
 |![下拉式方塊下拉&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")<br /><br /> **下拉式按鈕**|背景|N/A (繼承)|  
 |![下拉式方塊下拉&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")<br /><br /> **下拉式按鈕**|前景 (字符)|`Environment.ComboBoxGlyph`|  
-|![下拉式方塊&#47;下拉&#45;清單](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **下拉式清單**|背景|`Environment.ComboBoxPopupBackgroundBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
-|![下拉式方塊&#47;下拉&#45;清單](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **下拉式清單**|前景 (文字)|`Environment.ComboBoxItemText`|  
-|![下拉式方塊&#47;下拉&#45;清單](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **下拉式清單**|框線|`Environment.ComboBoxPopupBorder`|  
+|![下拉式方塊&#47;下拉清單&#45;](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **下拉式清單**|背景|`Environment.ComboBoxPopupBackgroundBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
+|![下拉式方塊&#47;下拉清單&#45;](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **下拉式清單**|前景 (文字)|`Environment.ComboBoxItemText`|  
+|![下拉式方塊&#47;下拉清單&#45;](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **下拉式清單**|框線|`Environment.ComboBoxPopupBorder`|  
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![停留時顯示下拉式方塊輸入欄位](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br /><br /> **輸入欄位**|背景|`Environment.ComboBoxMouseOverBackgroundBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![停留時顯示下拉式方塊輸入欄位](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br /><br /> **輸入欄位**|前景 (文字)|`Environment.ComboBoxMouseOverText`|  
 |![停留時顯示下拉式方塊輸入欄位](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br /><br /> **輸入欄位**|框線|`Environment.ComboBoxMouseOverBorder`|  
 |![停留時顯示下拉式方塊輸入欄位](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br /><br /> **輸入欄位**|Separator|`Environment.ComboBoxMouseOverSeparator`|  
-|![下拉式方塊&#47;[在滑鼠停留時下拉&#45;] 按鈕](../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br /><br /> **下拉式按鈕**|背景|`Environment.ComboBoxButtonMouseOverBackground`|  
-|![下拉式方塊&#47;[在滑鼠停留時下拉&#45;] 按鈕](../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br /><br /> **下拉式按鈕**|前景 (字符)|`Environment.ComboBoxMouseOverGlyph`|  
-|![下拉式方塊&#47;在滑鼠停留時顯示&#45;下拉清單](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br /><br /> **下拉式清單**|背景 (功能表項目)|`Environment.ComboBoxItemMouseOverBackground`|  
-|![下拉式方塊&#47;在滑鼠停留時顯示&#45;下拉清單](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br /><br /> **下拉式清單**|前景 (文字)|`Environment.ComboBoxItemMouseOverText`|  
-|![下拉式方塊&#47;在滑鼠停留時顯示&#45;下拉清單](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br /><br /> **下拉式清單**|框線 (功能表項目)|`Environment.ComboBoxItemMouseOverBorder`|  
+|![下拉式方塊&#47;停留時下拉&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br /><br /> **下拉式按鈕**|背景|`Environment.ComboBoxButtonMouseOverBackground`|  
+|![下拉式方塊&#47;停留時下拉&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br /><br /> **下拉式按鈕**|前景 (字符)|`Environment.ComboBoxMouseOverGlyph`|  
+|![下拉式方塊&#47;停留時下拉&#45;清單](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br /><br /> **下拉式清單**|背景 (功能表項目)|`Environment.ComboBoxItemMouseOverBackground`|  
+|![下拉式方塊&#47;停留時下拉&#45;清單](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br /><br /> **下拉式清單**|前景 (文字)|`Environment.ComboBoxItemMouseOverText`|  
+|![下拉式方塊&#47;停留時下拉&#45;清單](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br /><br /> **下拉式清單**|框線 (功能表項目)|`Environment.ComboBoxItemMouseOverBorder`|  
   
  **Focused**  
   
-|元件|元素|語彙基元名稱：Color.category|  
+|元件|項目|語彙基元名稱：Color.category|  
 |---------------|-------------|--------------------------------|  
 |![下拉式方塊輸入欄位已取得焦點](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br /><br /> **輸入欄位**|背景|`Environment.ComboBoxFocusedBackground`|  
 |![下拉式方塊輸入欄位已取得焦點](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br /><br /> **輸入欄位**|前景 (文字)|`Environment.ComboBoxFocusedText`|  
 |![下拉式方塊輸入欄位已取得焦點](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br /><br /> **輸入欄位**|框線|`Environment.ComboBoxFocusedBorder`|  
 |![下拉式方塊輸入欄位已取得焦點](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br /><br /> **輸入欄位**|Separator|`Environment.ComboBoxFocusedButtonSeparator`|  
-|![下拉式方塊&#47;下拉&#45;向下按鈕的焦點](../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")<br /><br /> **下拉式按鈕**|背景|`Environment.ComboBoxFocusedButtonBackground`|  
-|![下拉式方塊&#47;下拉&#45;向下按鈕的焦點](../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")<br /><br /> **下拉式按鈕**|前景 (字符)|`Environment.ComboBoxFocusedGlyph`|  
+|![下拉式方塊&#47;將焦點&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")<br /><br /> **下拉式按鈕**|背景|`Environment.ComboBoxFocusedButtonBackground`|  
+|![下拉式方塊&#47;將焦點&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")<br /><br /> **下拉式按鈕**|前景 (字符)|`Environment.ComboBoxFocusedGlyph`|  
   
  **Pressed**  
   
-|元件|元素|語彙基元名稱：Color.category|  
+|元件|項目|語彙基元名稱：Color.category|  
 |---------------|-------------|--------------------------------|  
 |![已按下下拉式方塊輸入欄位](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br /><br /> **輸入欄位**|背景|`Environment.ComboBoxMouseDownBackground`|  
 |![已按下下拉式方塊輸入欄位](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br /><br /> **輸入欄位**|前景 (文字)|`Environment.ComboBoxMouseDownText`|  
 |![已按下下拉式方塊輸入欄位](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br /><br /> **輸入欄位**|框線|`Environment.ComboBoxMouseDownBorder`|  
 |![已按下下拉式方塊輸入欄位](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br /><br /> **輸入欄位**|Separator|`Environment.ComboBoxMouseDownSeparator`|  
-|![下拉式方塊&#47;下拉&#45;按下按鈕](../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br /><br /> **下拉式按鈕**|背景|`Environment.ComboBoxButtonMouseDownBackground`|  
-|![下拉式方塊&#47;下拉&#45;按下按鈕](../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br /><br /> **下拉式按鈕**|前景 (字符)|`Environment.ComboBoxMouseDownGlyph`|  
+|![下拉式方塊&#47;按下&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br /><br /> **下拉式按鈕**|背景|`Environment.ComboBoxButtonMouseDownBackground`|  
+|![下拉式方塊&#47;按下&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br /><br /> **下拉式按鈕**|前景 (字符)|`Environment.ComboBoxMouseDownGlyph`|  
   
- **Disabled**  
+ **已停用**  
   
-|元件|元素|語彙基元名稱：Color.category|  
+|元件|項目|語彙基元名稱：Color.category|  
 |---------------|-------------|--------------------------------|  
 |![已停用下拉式方塊輸入欄位](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br /><br /> **輸入欄位**|背景|`Environment.ComboBoxDisabledBackground`|  
 |![已停用下拉式方塊輸入欄位](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br /><br /> **輸入欄位**|前景 (文字)|`Environment.ComboBoxDisabledText`|  
 |![已停用下拉式方塊輸入欄位](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br /><br /> **輸入欄位**|框線|`Environment.ComboBoxDisabledBorder`|  
 |![已停用下拉式方塊輸入欄位](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br /><br /> **輸入欄位**|Separator|沒有分隔符號|  
-|![下拉式方塊&#47;下拉&#45;關閉按鈕已停用](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **下拉式按鈕**|背景|None|  
-|![下拉式方塊&#47;下拉&#45;關閉按鈕已停用](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **下拉式按鈕**|前景 (字符)|`Environment.ComboBoxDisabledGlyph`|  
+|![下拉式方塊&#47;下拉&#45;向下按鈕已停用](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **下拉式按鈕**|背景|無|  
+|![下拉式方塊&#47;下拉&#45;向下按鈕已停用](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **下拉式按鈕**|前景 (字符)|`Environment.ComboBoxDisabledGlyph`|  
   
-##### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a>下拉式  
+##### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a> 下拉式清單  
   
 > [!IMPORTANT]
 > 下拉式清單與下拉式方塊類似，但沒有可編輯的文字區域。 如果下拉式清單包括可編輯的文字區域，請使用 [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox)下找到的色彩語彙基元。  
   
- ![卸載&#45;向下紅線](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")  
+ ![捨棄&#45;紅線](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")  
   
  請使用於…  
  建立自訂下拉式清單控制項時。  
@@ -332,54 +332,54 @@ ms.locfileid: "85548352"
   
   **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![下拉&#45;向下選取欄位](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **選取欄位**|背景|`Environment.DropDownBackground`|  
 |![下拉&#45;向下選取欄位](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **選取欄位**|前景 (文字)|`DropDownText`|  
 |![下拉&#45;向下選取欄位](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **選取欄位**|框線|`DropDownBorder`|  
 |![下拉&#45;向下選取欄位](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **選取欄位**|Separator|沒有分隔符號|  
-|![下拉&#45;向下鍵](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")<br /><br /> **下拉式按鈕**|背景|None|  
-|![下拉&#45;向下鍵](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")<br /><br /> **下拉式按鈕**|前景 (字符)|`Environment.DropDownGlyph`|  
-|![下拉&#45;清單](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **下拉式清單**|背景|`Environment.DropDownPopupBackgroundBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
-|![下拉&#45;清單](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **下拉式清單**|前景 (文字)|`Environment.ComboBoxItemText`|  
-|![下拉&#45;清單](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **下拉式清單**|框線|`Environment.DropDownPopupBorder`|  
-|![下拉&#45;清單](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **下拉式清單**|陰影|`Environment.DropShadowBackground`|  
+|![下拉&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")<br /><br /> **下拉式按鈕**|背景|無|  
+|![下拉&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")<br /><br /> **下拉式按鈕**|前景 (字符)|`Environment.DropDownGlyph`|  
+|![下拉清單&#45;](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **下拉式清單**|背景|`Environment.DropDownPopupBackgroundBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
+|![下拉清單&#45;](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **下拉式清單**|前景 (文字)|`Environment.ComboBoxItemText`|  
+|![下拉清單&#45;](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **下拉式清單**|框線|`Environment.DropDownPopupBorder`|  
+|![下拉清單&#45;](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **下拉式清單**|陰影|`Environment.DropShadowBackground`|  
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![暫留時放置&#45;向下選取欄位](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **選取欄位**|背景|`Environment.DropDownMouseOverBackgroundBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
-|![暫留時放置&#45;向下選取欄位](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **選取欄位**|前景 (文字)|`Environment.DropDownMouseOverText`|  
-|![暫留時放置&#45;向下選取欄位](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **選取欄位**|框線|`Environment.DropDownMouseOverBorder`|  
-|![暫留時放置&#45;向下選取欄位](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **選取欄位**|Separator|`Environment.DropDownButtonMouseOverSeparator`|  
-|![暫留時下拉&#45;下拉按鈕](../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303-047_DropdownButtonHover")<br /><br /> **下拉式按鈕**|背景|`Environment.DropDownButtonMouseOverBackground`|  
-|![暫留時下拉&#45;下拉按鈕](../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303-047_DropdownButtonHover")<br /><br /> **下拉式按鈕**|前景 (字符)|`Environment.DropDownMouseOverGlyph`|  
-|![暫留時放置&#45;下拉清單](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **下拉式清單**|背景 (功能表項目)|`Environment.ComboBoxItemMouseOverBackground`|  
-|![暫留時放置&#45;下拉清單](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **下拉式清單**|前景 (文字)|`Environment.ComboBoxItemMouseOverText`|  
-|![暫留時放置&#45;下拉清單](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **下拉式清單**|框線 (功能表項目)|`Environment.ComboBoxItemMouseOverBorder`|  
+|![停留時卸載&#45;向下選取欄位](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **選取欄位**|背景|`Environment.DropDownMouseOverBackgroundBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
+|![停留時卸載&#45;向下選取欄位](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **選取欄位**|前景 (文字)|`Environment.DropDownMouseOverText`|  
+|![停留時卸載&#45;向下選取欄位](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **選取欄位**|框線|`Environment.DropDownMouseOverBorder`|  
+|![停留時卸載&#45;向下選取欄位](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **選取欄位**|Separator|`Environment.DropDownButtonMouseOverSeparator`|  
+|![停留時下拉&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303-047_DropdownButtonHover")<br /><br /> **下拉式按鈕**|背景|`Environment.DropDownButtonMouseOverBackground`|  
+|![停留時下拉&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303-047_DropdownButtonHover")<br /><br /> **下拉式按鈕**|前景 (字符)|`Environment.DropDownMouseOverGlyph`|  
+|![停留時放置&#45;向下清單](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **下拉式清單**|背景 (功能表項目)|`Environment.ComboBoxItemMouseOverBackground`|  
+|![停留時放置&#45;向下清單](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **下拉式清單**|前景 (文字)|`Environment.ComboBoxItemMouseOverText`|  
+|![停留時放置&#45;向下清單](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **下拉式清單**|框線 (功能表項目)|`Environment.ComboBoxItemMouseOverBorder`|  
   
  **Pressed**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![已按下&#45;下拉選取欄位](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **選取欄位**|背景|`Environment.DropDownMouseDownBackground`|  
-|![已按下&#45;下拉選取欄位](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **選取欄位**|前景 (文字)|`Environment.DropDownMouseDownText`|  
-|![已按下&#45;下拉選取欄位](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **選取欄位**|框線|`Environment.DropDownMouseDownBorder`|  
-|![已按下&#45;下拉選取欄位](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **選取欄位**|Separator|`Environment.DropDownButtonMouseDownSeparator`|  
-|![已按下下拉&#45;按下按鈕](../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")<br /><br /> **下拉式按鈕**|背景|`Environment.DropDownButtonMouseDownBackground`|  
-|![已按下下拉&#45;按下按鈕](../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")<br /><br /> **下拉式按鈕**|前景 (字符)|`Environment.DropDownMouseDownGlyph`|  
+|![下拉&#45;按下選取欄位](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **選取欄位**|背景|`Environment.DropDownMouseDownBackground`|  
+|![下拉&#45;按下選取欄位](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **選取欄位**|前景 (文字)|`Environment.DropDownMouseDownText`|  
+|![下拉&#45;按下選取欄位](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **選取欄位**|框線|`Environment.DropDownMouseDownBorder`|  
+|![下拉&#45;按下選取欄位](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **選取欄位**|Separator|`Environment.DropDownButtonMouseDownSeparator`|  
+|![下拉&#45;按下按鈕](../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")<br /><br /> **下拉式按鈕**|背景|`Environment.DropDownButtonMouseDownBackground`|  
+|![下拉&#45;按下按鈕](../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")<br /><br /> **下拉式按鈕**|前景 (字符)|`Environment.DropDownMouseDownGlyph`|  
   
- **Disabled**  
+ **已停用**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![已停用下拉&#45;關閉選取欄位](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|背景|`Environment.DropDownDisabledBackground`|  
-|![已停用下拉&#45;關閉選取欄位](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|前景 (文字)|`Environment.DropDownDisabledText`|  
-|![已停用下拉&#45;關閉選取欄位](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|框線|`Environment.DropDownDisabledBorder`|  
-|![已停用下拉&#45;關閉選取欄位](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|Separator|沒有分隔符號|  
-|![已停用下拉&#45;關閉按鈕](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")|背景|N/A|  
-|![已停用下拉&#45;關閉按鈕](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")|前景 (字符)|`Environment.DropDownDisabledGlyph`|  
+|![捨棄&#45;向下選取欄位已停用](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|背景|`Environment.DropDownDisabledBackground`|  
+|![捨棄&#45;向下選取欄位已停用](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|前景 (文字)|`Environment.DropDownDisabledText`|  
+|![捨棄&#45;向下選取欄位已停用](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|框線|`Environment.DropDownDisabledBorder`|  
+|![捨棄&#45;向下選取欄位已停用](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|Separator|沒有分隔符號|  
+|![已停用下拉&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")|背景|N/A|  
+|![已停用下拉&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")|前景 (字符)|`Environment.DropDownDisabledGlyph`|  
   
 ##### <a name="split-button"></a>Split 按鈕  
  分割按鈕會與其他命令列控制項 (例如按鈕、 功能表和命令列文字) 共用許多語彙基元名稱。 基於使用方便，會在這裡重複所有必要的動作和下拉式按鈕語彙基元名稱。 分割按鈕下拉式清單是命令列 [Menus](../misc/shared-colors.md#BKMK_CommandMenus)的實作。  
@@ -396,9 +396,9 @@ ms.locfileid: "85548352"
   
   **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![分割按鈕](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **分割按鈕 (預設)**|背景|None|  
+|![分割按鈕](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **分割按鈕 (預設)**|背景|無|  
 |![分割按鈕](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **分割按鈕 (預設)**|前景 (文字)|`Environment.CommandBarTextActive`|  
 |![分割按鈕](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **分割按鈕 (預設)**|前景 (字符)|`Environment.CommandBarSplitButtonGlyph`|  
 |![分割按鈕](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **分割按鈕 (預設)**|框線|N/A|  
@@ -406,7 +406,7 @@ ms.locfileid: "85548352"
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![停留時顯示分割按鈕](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **分割按鈕 (暫留時)**|背景|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![停留時顯示分割按鈕](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **分割按鈕 (暫留時)**|前景 (文字)|`Environment.CommandBarTextHover`|  
@@ -416,7 +416,7 @@ ms.locfileid: "85548352"
   
  **Pressed**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已按下分割按鈕](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **分割按鈕 (已按下)**|背景|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![已按下分割按鈕](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **分割按鈕 (已按下)**|前景 (文字)|`Environment.CommandBarTextMouseDown`|  
@@ -424,9 +424,9 @@ ms.locfileid: "85548352"
 |![已按下分割按鈕](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **分割按鈕 (已按下)**|框線|`Environment.CommandBarBorder`|  
 |![已按下分割按鈕](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **分割按鈕 (已按下)**|Separator|N/A|  
   
- **Disabled**  
+ **已停用**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![分割按鈕已停用](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **分割按鈕 (已停用)**|背景|N/A|  
 |![分割按鈕已停用](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **分割按鈕 (已停用)**|前景 (文字)|`Environment.ComboBoxItemTextInactive`|  
@@ -447,7 +447,7 @@ ms.locfileid: "85548352"
   
  **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![更多選項](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")<br /><br /> **更多選項**|背景|`Environment.CommandBarOptionsBackground`|  
 |![更多選項](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")<br /><br /> **更多選項**|前景 (字符)|`Environment.CommandBarOptionsGlyph`|  
@@ -456,7 +456,7 @@ ms.locfileid: "85548352"
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![停留時顯示更多選項](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")<br /><br /> **更多選項**|背景|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![停留時顯示更多選項](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")<br /><br /> **更多選項**|前景 (字符)|`Environment.CommandBarOptionsMouseDownGlyph`|  
@@ -465,7 +465,7 @@ ms.locfileid: "85548352"
   
  **Pressed**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已按下更多選項](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")<br /><br /> **更多選項**|背景|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![已按下更多選項](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")<br /><br /> **更多選項**|前景 (字符)|`Environment.CommandBarOptionsMouseDownGlyph`|  
@@ -496,7 +496,7 @@ ms.locfileid: "85548352"
   
  **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |文件：停駐或浮動|背景|根據文件類型|  
 |文件：停駐或浮動|前景 (文字)|根據文件類型|  
@@ -514,7 +514,7 @@ ms.locfileid: "85548352"
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![停留時顯示取得焦點的框架](../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303-069_FrameFocusedHover")<br /><br /> **框架：浮動，已取得焦點**|背景 (字符)|`Environment.RaftedWindowButtonHoverActive`|  
 |![停留時顯示取得焦點的框架](../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303-069_FrameFocusedHover")<br /><br /> **框架：浮動，已取得焦點**|前景 (字符)|`Environment.RaftedWindowButtonHoverActiveGlyph`|  
@@ -525,7 +525,7 @@ ms.locfileid: "85548352"
   
  **Pressed**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已按下取得焦點的框架](../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303-071_FrameFocusedPressed")<br /><br /> **框架：浮動，已取得焦點**|背景 (字符)|`Environment.RaftedWindowButtonDown`|  
 |![已按下取得焦點的框架](../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303-071_FrameFocusedPressed")<br /><br /> **框架：浮動，已取得焦點**|前景 (字符)|`Environment.RaftedWindowButtonDownGlyph`|  
@@ -547,7 +547,7 @@ ms.locfileid: "85548352"
   
 - 選取的索引標籤代表目前顯示在文件區域中的文件。 選取的索引標籤會有可延伸至文件區域頂端的文件框線。  
   
-- 背景索引標籤是指任何不是目前所選取索引標籤的檔索引標籤。一旦按一下，它們就會變成選取的索引標籤，並從這些標記名稱取得所有的背景、框線和文字色彩。  
+- 背景索引標籤是指不是目前選取索引標籤的任何檔索引標籤。一旦按一下，它們就會變成選取的索引標籤，並從這些標記名稱取得所有背景、框線和文字色彩。  
   
   ![[開啟文件] 索引標籤紅線](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")  
   
@@ -562,7 +562,7 @@ ms.locfileid: "85548352"
 ##### <a name="selected-tab"></a>選取的索引標籤  
  **Focused**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![選取的索引標籤已取得焦點](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303-074_SelectedTabFocused")<br /><br /> **選取的文件索引標籤，已取得焦點**|背景|`Environment.FileTabSelectedGradientTop`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![選取的索引標籤已取得焦點](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303-074_SelectedTabFocused")<br /><br /> **選取的文件索引標籤，已取得焦點**|前景 (文字)|`Environment.FileTabSelectedText`|  
@@ -571,7 +571,7 @@ ms.locfileid: "85548352"
   
  **未取得焦點**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![選取的索引標籤未取得焦點](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303-075_SelectedTabUnfocused")<br /><br /> **選取的文件索引標籤，未取得焦點**|背景|`Environment.FileTabInactiveGradientTop`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![選取的索引標籤未取得焦點](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303-075_SelectedTabUnfocused")<br /><br /> **選取的文件索引標籤，未取得焦點**|前景 (文字)|`Environment.FileTabInactiveText`|  
@@ -581,7 +581,7 @@ ms.locfileid: "85548352"
 ##### <a name="background-tab"></a>背景索引標籤  
  **預設值**  
   
-|元件|元素|語彙基元名稱：Color.category|  
+|元件|項目|語彙基元名稱：Color.category|  
 |---------------|-------------|--------------------------------|  
 |![背景索引標籤](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303-076_BackgroundTab")<br /><br /> **背景索引標籤預設值**|背景|`Environment.FileTabBackground`|  
 |![背景索引標籤](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303-076_BackgroundTab")<br /><br /> **背景索引標籤預設值**|前景 (文字)|`Environment.FileTabText`|  
@@ -589,7 +589,7 @@ ms.locfileid: "85548352"
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Color.category|  
+|元件|項目|語彙基元名稱：Color.category|  
 |---------------|-------------|--------------------------------|  
 |![停留時顯示背景索引標籤](../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303-077_BackgroundTabHover")<br /><br /> **停留時顯示背景索引標籤**|背景|`Environment.FileTabHotGradientTop`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![停留時顯示背景索引標籤](../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303-077_BackgroundTabHover")<br /><br /> **停留時顯示背景索引標籤**|前景 (文字)|`Environment.FileTabHotText`|  
@@ -610,7 +610,7 @@ ms.locfileid: "85548352"
   
   **選取的預覽索引標籤：已取得焦點**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![[預覽] 索引標籤已取得焦點](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")<br /><br /> **已取得焦點的預覽索引標籤**|背景|`Environment.FileTabProvisionalSelectedActive`|  
 |![[預覽] 索引標籤已取得焦點](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")<br /><br /> **已取得焦點的預覽索引標籤**|前景 (文字)|`Environment.FileTabProvisionalSelectedActiveForeground`|  
@@ -619,7 +619,7 @@ ms.locfileid: "85548352"
   
  **選取的預覽索引標籤：未取得焦點**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![[預覽] 索引標籤未取得焦點](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br /><br /> **未取得焦點的預覽索引標籤**|背景|`Environment.FileTabProvisionalSelectedInactive`|  
 |![[預覽] 索引標籤未取得焦點](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br /><br /> **未取得焦點的預覽索引標籤**|前景 (文字)|`Environment.FileTabProvisionalSelectedInactiveForeground`|  
@@ -628,7 +628,7 @@ ms.locfileid: "85548352"
   
  **背景預覽索引標籤：預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![[預覽] 背景索引標籤](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303-081_PreviewBackgroundTab")<br /><br /> **預覽索引標籤背景索引標籤**|背景|`Environment.FileTabProvisionalInactive`|  
 |![[預覽] 背景索引標籤](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303-081_PreviewBackgroundTab")<br /><br /> **預覽索引標籤背景索引標籤**|前景 (文字)|`Environment.FileTabProvisionalInactiveForeground`|  
@@ -636,7 +636,7 @@ ms.locfileid: "85548352"
   
  **背景預覽索引標籤：暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![停留時顯示 [預覽] 背景索引標籤](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")<br /><br /> **暫留時顯示預覽索引標籤背景索引標籤**|背景|`Environment.FileTabProvisionalHover`|  
 |![停留時顯示 [預覽] 背景索引標籤](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")<br /><br /> **暫留時顯示預覽索引標籤背景索引標籤**|前景 (文字)|`Environment.FileTabProvisionalHoverForeground`|  
@@ -657,7 +657,7 @@ ms.locfileid: "85548352"
   
   **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![溢出](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **文件溢位按鈕**|背景|`Environment.DocWellOverflowButtonBackground`|  
 |![溢出](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **文件溢位按鈕**|前景 (字符)|`Environment.DocWellOverflowButtonGlyph`|  
@@ -665,7 +665,7 @@ ms.locfileid: "85548352"
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![停留時顯示溢位](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303-085_OverflowHover")<br /><br /> **暫留時顯示文件溢位按鈕**|背景|`Environment.DocWellOverflowButtonMouseOverBackground`|  
 |![停留時顯示溢位](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303-085_OverflowHover")<br /><br /> **暫留時顯示文件溢位按鈕**|前景 (字符)|`Environment.DocWellOverflowButtonMouseOverGlyph`|  
@@ -673,7 +673,7 @@ ms.locfileid: "85548352"
   
  **Pressed**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已按下溢位](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303-086_OverflowPressed")<br /><br /> **已按下文件溢位按鈕**|背景|`Environment.DocWellOverflowButtonMouseDownBackground`|  
 |![已按下溢位](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303-086_OverflowPressed")<br /><br /> **已按下文件溢位按鈕**|前景 (字符)|`Environment.DocWellOverflowButtonMouseDownGlyph`|  
@@ -701,23 +701,23 @@ ms.locfileid: "85548352"
  請勿使用於…  
  任何您不想在 Shell 具有佈景主題更新時自動變更的 UI。  
   
- **已停駐**  
+ **停靠**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已停駐工具視窗](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303-089_ToolWindowDocked")|背景|`Environment.ToolWindowBackground`|  
 |![已停駐工具視窗](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303-089_ToolWindowDocked")|框線|`Environment.ToolWindowBorder`|  
   
  **浮動：已取得焦點**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![工具視窗已取得焦點](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303-090_ToolWindowFocused")|背景|`Environment.ToolWindowBackground`|  
 |![工具視窗已取得焦點](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303-090_ToolWindowFocused")|框線|`Environment.MainWindowActiveDefaultBorder`|  
   
  **浮動：未取得焦點**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![工具視窗未取得焦點](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303-091_ToolWindowUnfocused")|背景|`Environment.ToolWindowBackground`|  
 |![工具視窗未取得焦點](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303-091_ToolWindowUnfocused")|框線|`Environment.MainWindowInactiveBorder`|  
@@ -735,7 +735,7 @@ ms.locfileid: "85548352"
   
  **Focused**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![標題列已取得焦點](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303-093_TitleBarFocused")<br /><br /> **已取得焦點的標題列**|背景|`Environment.TitleBarActiveGradientBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![標題列已取得焦點](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303-093_TitleBarFocused")<br /><br /> **已取得焦點的標題列**|前景 (文字)|`Environment.TitleBarActiveText`|  
@@ -744,7 +744,7 @@ ms.locfileid: "85548352"
   
  **未取得焦點**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![標題列未取得焦點](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")<br /><br /> **未取得焦點的標題列**|背景|`Environment.TitleBarInactiveGradientBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![標題列未取得焦點](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")<br /><br /> **未取得焦點的標題列**|前景 (文字)|`Environment.TitleBarInactiveText`|  
@@ -764,7 +764,7 @@ ms.locfileid: "85548352"
   
   **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![標題列按鈕已取得焦點](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Focused**|背景|N/A|  
 |![標題列按鈕已取得焦點](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Focused**|前景 (字符)|`Environment.ToolWindowButtonActiveGlyph`|  
@@ -775,7 +775,7 @@ ms.locfileid: "85548352"
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![停留時顯示取得焦點的標題列按鈕](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br /><br /> **Focused**|背景|`Environment.ToolWindowButtonHoverActive`|  
 |![停留時顯示取得焦點的標題列按鈕](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br /><br /> **Focused**|前景 (字符)|`Environment.ToolWindowButtonHoverActiveGlyph`|  
@@ -786,7 +786,7 @@ ms.locfileid: "85548352"
   
  **Pressed**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![標題列按鈕已取得焦點且已按下](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br /><br /> **Focused**|背景|`Environment.ToolWindowButtonDown`|  
 |![標題列按鈕已取得焦點且已按下](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br /><br /> **Focused**|前景 (字符)|`Environment.ToolWindowButtonDownActiveGlyph`|  
@@ -806,13 +806,13 @@ ms.locfileid: "85548352"
   
  **選取的索引標籤**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![工具視窗索引標籤已取得焦點](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br /><br /> **已選取，已取得焦點的工具視窗索引標籤**|背景|`Environment.ToolWindowTabSelectedTab`|  
 |![工具視窗索引標籤已取得焦點](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br /><br /> **已選取，已取得焦點的工具視窗索引標籤**|前景 (文字)|`Environment.ToolWindowTabSelectedActiveText`|  
 |![工具視窗索引標籤已取得焦點](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br /><br /> **已選取，已取得焦點的工具視窗索引標籤**|框線|`Environment.ToolWindowTabSelectedBorder`<br /><br /> 設定為與背景相同的色彩。|  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![工具視窗索引標籤未取得焦點](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")<br /><br /> **已選取，未取得焦點的工具視窗索引標籤**|背景|`Environment.ToolWindowTabSelectedTab`|  
 |![工具視窗索引標籤未取得焦點](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")<br /><br /> **已選取，未取得焦點的工具視窗索引標籤**|前景 (文字)|`Environment.ToolWindowTabSelectedText`|  
@@ -820,13 +820,13 @@ ms.locfileid: "85548352"
   
  **背景索引標籤**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![工具視窗背景索引標籤](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br /><br /> **背景工具視窗索引標籤**|背景|`Environment.ToolWindowTabGradientBegin`<br /><br /> 設定為與 Visual Studio 2013 相同色彩值的漸層停駐點。<br /><br /> `Environment.ToolWindowTabGradientEnd`<br /><br /> 設定為與 Visual Studio 2013 相同色彩值的漸層停駐點。|  
 |![工具視窗背景索引標籤](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br /><br /> **背景工具視窗索引標籤**|前景 (文字)|`Environment.ToolWindowTabText`|  
 |![工具視窗背景索引標籤](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br /><br /> **背景工具視窗索引標籤**|框線|`Environment.ToolWindowTabBorder`|  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![停留時顯示工具視窗背景索引標籤](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")<br /><br /> **暫留時顯示背景工具視窗索引標籤**|背景|`Environment.ToolWindowTabMouseOverBackgroundBegin`<br /><br /> 設定為與 Visual Studio 2013 相同色彩值的漸層停駐點。<br /><br /> `Environment.ToolWindowTabMouseOverBackgroundEnd`<br /><br /> 設定為與 Visual Studio 2013 相同色彩值的漸層停駐點。|  
 |![停留時顯示工具視窗背景索引標籤](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")<br /><br /> **暫留時顯示背景工具視窗索引標籤**|前景 (文字)|`Environment.ToolWindowTabMouseOverText`|  
@@ -843,7 +843,7 @@ ms.locfileid: "85548352"
   
  **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![自動&#45;隱藏] 索引標籤](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")<br /><br /> **預設自動隱藏索引標籤**|背景|`Environment.AutoHideTabBackgroundBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![自動&#45;隱藏] 索引標籤](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")<br /><br /> **預設自動隱藏索引標籤**|前景 (文字)|`Environment.AutoHideTabText`|  
@@ -851,11 +851,11 @@ ms.locfileid: "85548352"
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![滑鼠停留時自動&#45;隱藏] 索引標籤](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **停留時顯示 [自動隱藏] 索引標籤**|背景|`Environment.AutoHideTabMouseOverBackgroundBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
-|![滑鼠停留時自動&#45;隱藏] 索引標籤](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **停留時顯示 [自動隱藏] 索引標籤**|前景 (文字)|`Environment.AutoHideTabMouseOverText`|  
-|![滑鼠停留時自動&#45;隱藏] 索引標籤](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **停留時顯示 [自動隱藏] 索引標籤**|框線|`Environment.AutoHideTabMouseOverBorder`|  
+|![停留時自動&#45;隱藏索引標籤](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **停留時顯示 [自動隱藏] 索引標籤**|背景|`Environment.AutoHideTabMouseOverBackgroundBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
+|![停留時自動&#45;隱藏索引標籤](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **停留時顯示 [自動隱藏] 索引標籤**|前景 (文字)|`Environment.AutoHideTabMouseOverText`|  
+|![停留時自動&#45;隱藏索引標籤](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **停留時顯示 [自動隱藏] 索引標籤**|框線|`Environment.AutoHideTabMouseOverBorder`|  
   
 ### <a name="common-shared-controls"></a>通用共用控制項  
  在您的功能中使用標準 Visual Studio 命令列時，您可以存取已設定樣式的 Shell 控制項，而且不應該重新設定這些通用控制項的樣板。 不過，如果您需要建置自訂命令列，則可能也需要建置自訂控制項。 在該情況下，請務必針對下列每個控制項使用正確的語彙基元名稱，讓您的 UI 與 Visual Studio 的其餘部分一致。  
@@ -885,13 +885,13 @@ ms.locfileid: "85548352"
   
   **Focused**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![搜尋輸入欄位已取得焦點](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br /><br /> **輸入欄位**|背景|`SearchControl.FocusedBackground`|  
 |![搜尋輸入欄位已取得焦點](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br /><br /> **輸入欄位**|前景 (文字)|`SearchControl.FocusedBackground`|  
 |![搜尋輸入欄位已取得焦點](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br /><br /> **輸入欄位**|框線|`SearchControl.FocusedBorder`|  
 |![搜尋輸入欄位已取得焦點](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br /><br /> **輸入欄位**|Separator|`SearchControl.FocusedDropDownSeparator`|  
-|![搜尋動作按鈕已取得焦點](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **動作按鈕**|背景|None|  
+|![搜尋動作按鈕已取得焦點](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **動作按鈕**|背景|無|  
 |![搜尋動作按鈕已取得焦點](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **動作按鈕**|前景 (搜尋字符)|`SearchControl.SearchGlyph`|  
 |![搜尋動作按鈕已取得焦點](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **動作按鈕**|前景 (停止字符)|`SearchControl.StopGlyph`|  
 |![搜尋動作按鈕已取得焦點](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **動作按鈕**|前景 (清除字符)|`SearchControl.ClearGlyph`|  
@@ -902,7 +902,7 @@ ms.locfileid: "85548352"
   
  **未取得焦點**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![搜尋輸入欄位未取得焦點](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")<br /><br /> **使用中輸入欄位**|背景|`SearchControl.SearchActiveBackground`|  
 |![搜尋輸入欄位未取得焦點](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")<br /><br /> **使用中輸入欄位**|前景 (文字)|`SearchControl.SearchActiveBackground`|  
@@ -917,44 +917,44 @@ ms.locfileid: "85548352"
 |![搜尋動作按鈕未取得焦點](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **動作按鈕**|前景 (停止字符)|`SearchControl.StopGlyph`|  
 |![搜尋動作按鈕未取得焦點](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **動作按鈕**|前景 (清除字符)|`SearchControl.ClearGlyph`|  
 |![搜尋動作按鈕未取得焦點](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **動作按鈕**|框線|N/A|  
-|![搜尋下拉&#45;向下未取得焦點按鈕](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br /><br /> **下拉式按鈕**|背景|`SearchControl.UnfocusedDropDownButton`|  
-|![搜尋下拉&#45;向下未取得焦點按鈕](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br /><br /> **下拉式按鈕**|前景 (字符)|`SearchControl.UnfocusedDropDownButtonGlyph`|  
-|![搜尋下拉&#45;向下未取得焦點按鈕](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br /><br /> **下拉式按鈕**|框線|`SearchControl.UnfocusedDropDownButtonBorder`|  
+|![搜尋下拉&#45;向下按鈕未取得焦點](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br /><br /> **下拉式按鈕**|背景|`SearchControl.UnfocusedDropDownButton`|  
+|![搜尋下拉&#45;向下按鈕未取得焦點](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br /><br /> **下拉式按鈕**|前景 (字符)|`SearchControl.UnfocusedDropDownButtonGlyph`|  
+|![搜尋下拉&#45;向下按鈕未取得焦點](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br /><br /> **下拉式按鈕**|框線|`SearchControl.UnfocusedDropDownButtonBorder`|  
   
  **Pressed**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已按下搜尋動作按鈕](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **動作按鈕**|背景|`SearchControl.ActionButtonMouseDown`|  
 |![已按下搜尋動作按鈕](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **動作按鈕**|前景 (字符)|`SearchControl.ActionButtonMouseDownGlyph`|  
 |![已按下搜尋動作按鈕](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **動作按鈕**|框線|`SearchControl.ActionButtonMouseDownBorder`|  
-|![已按下 [搜尋] 下拉按鈕&#45;](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **下拉式按鈕**|背景|`SearchControl.MouseDownDropDownButton`|  
-|![已按下 [搜尋] 下拉按鈕&#45;](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **下拉式按鈕**|前景 (字符)|`SearchControl.MouseDownDropDownButtonGlyph`|  
-|![已按下 [搜尋] 下拉按鈕&#45;](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **下拉式按鈕**|框線|`SearchControl.MouseDownDropDownButtonBorder`|  
+|![已按下 [搜尋] 下拉&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **下拉式按鈕**|背景|`SearchControl.MouseDownDropDownButton`|  
+|![已按下 [搜尋] 下拉&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **下拉式按鈕**|前景 (字符)|`SearchControl.MouseDownDropDownButtonGlyph`|  
+|![已按下 [搜尋] 下拉&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **下拉式按鈕**|框線|`SearchControl.MouseDownDropDownButtonBorder`|  
   
  **已反白顯示 (僅文字)**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![搜尋輸入欄位反白顯示](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **已反白顯示文字的輸入欄位**|背景|`SearchControl.Selection`|  
 |![搜尋輸入欄位反白顯示](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **已反白顯示文字的輸入欄位**|前景 (文字)|`SearchControl.FocusedBackground`|  
-|![搜尋輸入欄位反白顯示](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **已反白顯示文字的輸入欄位**|框線|None|  
+|![搜尋輸入欄位反白顯示](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **已反白顯示文字的輸入欄位**|框線|無|  
 |![搜尋輸入欄位反白顯示](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **已反白顯示文字的輸入欄位**|Separator|`SearchControl.FocusedDropDownSeparator`|  
   
- **Disabled**  
+ **已停用**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已停用搜尋輸入欄位](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br /><br /> **輸入欄位**|背景|`SearchControl.Disabled`|  
 |![已停用搜尋輸入欄位](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br /><br /> **輸入欄位**|前景 (文字)|`SearchControl.Disabled`|  
 |![已停用搜尋輸入欄位](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br /><br /> **輸入欄位**|框線|`SearchControl.DisabledBorder`|  
 |![已停用搜尋輸入欄位](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br /><br /> **輸入欄位**|Separator|`SearchControl.DropDownSeparator`|  
-|![已停用搜尋動作按鈕](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **動作按鈕**|背景|None|  
+|![已停用搜尋動作按鈕](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **動作按鈕**|背景|無|  
 |![已停用搜尋動作按鈕](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **動作按鈕**|前景 (字符)|`SearchControl.ActionButtonDisabledGlyph`|  
-|![已停用搜尋動作按鈕](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **動作按鈕**|框線|None|  
-|![已停用搜尋下拉&#45;關閉按鈕](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **下拉式按鈕**|背景|None|  
-|![已停用搜尋下拉&#45;關閉按鈕](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **下拉式按鈕**|前景 (字符)|`SearchControl.DisabledDownButtonGlyph`|  
-|![已停用搜尋下拉&#45;關閉按鈕](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **下拉式按鈕**|框線|None|  
+|![已停用搜尋動作按鈕](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **動作按鈕**|框線|無|  
+|![已停用搜尋下拉&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **下拉式按鈕**|背景|無|  
+|![已停用搜尋下拉&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **下拉式按鈕**|前景 (字符)|`SearchControl.DisabledDownButtonGlyph`|  
+|![已停用搜尋下拉&#45;向下按鈕](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **下拉式按鈕**|框線|無|  
   
 ##### <a name="search-drop-down-lists"></a>搜尋下拉式清單  
  搜尋方塊下拉式功能表可能會比 Visual Studio 中的其他下拉式功能表稍微更為複雜。 [建議的搜尋] 和 [搜尋選項] 區段可以單獨或一起出現在功能表上，而且各區段會個別著色。 這兩個區段同時出現時，也會有一條線來區隔它們，而且會有框線括住整個下拉式功能表。  
@@ -973,7 +973,7 @@ ms.locfileid: "85548352"
   
   **預設值 (沒有其他狀態)**  
   
-|元素|語彙基元名稱：Category.color|  
+|項目|語彙基元名稱：Category.color|  
 |-------------|--------------------------------|  
 |框線|`SearchControl.PopupBorder`|  
 |Separator|`SearchControl.PopupSectionHeaderSeparator`|  
@@ -981,7 +981,7 @@ ms.locfileid: "85548352"
   
  **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![搜尋建議](../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303-125_SearchSuggested")<br /><br /> **建議的搜尋**|背景|`SearchControl.PopupItemsListBackgroundGradientBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![搜尋建議](../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303-125_SearchSuggested")<br /><br /> **建議的搜尋**|前景 (文字)|`SearchControl.PopupItemText`|  
@@ -998,7 +998,7 @@ ms.locfileid: "85548352"
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![停留時顯示搜尋建議](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303-128_SearchSuggestedHover")<br /><br /> **建議的搜尋**|背景|`SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![停留時顯示搜尋建議](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303-128_SearchSuggestedHover")<br /><br /> **建議的搜尋**|前景 (文字)|`SearchControl.PopupMouseOverItemText`|  
@@ -1014,7 +1014,7 @@ ms.locfileid: "85548352"
   
  **Pressed**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已按下搜尋建議](../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")<br /><br /> **建議的搜尋 (核取方塊)**|核取方塊背景|`SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
 |![已按下搜尋選項](../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303-132_SearchOptionsPressed")<br /><br /> **搜尋選項**|核取方塊背景|`SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br /><br /> 雖然未使用在現代佈景主題 UI 中，但是會有這個背景的漸層停駐點和值。|  
@@ -1040,25 +1040,25 @@ ms.locfileid: "85548352"
   
  **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![超連結預設值](../extensibility/ux-guidelines/media/0303-134-hyperlink.png "0303-134_Hyperlink")|前景 (文字)|`Environment.PanelHyperlink`|  
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![停留時顯示超連結](../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303-135_HyperlinkHover")|前景 (文字)|`Environment.PanelHyperlinkHover`|  
   
  **Pressed**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已按下超連結](../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303-136_HyperlinkPressed")|前景 (文字)|`Environment.PanelHyperlinkPressed`|  
   
- **Disabled**  
+ **已停用**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已停用超連結](../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303-137_HyperlinkDisabled")|前景 (文字)|`Environment.PanelHyperlinkDisabled`|  
   
@@ -1073,14 +1073,14 @@ ms.locfileid: "85548352"
  請勿使用於…  
  任何未與資訊列類似的 UI 項目。  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![資訊列](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **資訊列**|背景|`Environment.InfoBackground`|  
 |![資訊列](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **資訊列**|前景 (文字)|`Environment.InfoText`|  
 |![資訊列](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **資訊列**|框線|`Environment.ToolWindowBorder`|  
   
 #### <a name="scroll-bar"></a>捲軸  
- 捲軸的樣式是由 Visual Studio 環境所設定，因此不需要設定佈景主題。 不過，您可能會決定要利用捲軸中使用的色彩，讓您的 UI 一律會與 Visual Studio 環境的這個部分一致。  
+ 捲軸的樣式是由 Visual Studio 環境所設定，因此不需要設定佈景主題。 不過，您可能會決定要利用捲軸中使用的色彩，讓您的 UI 一律與 Visual Studio 環境的這個部分一致。  
   
  ![捲軸紅線](../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303-140_ScrollbarRedline")  
   
@@ -1092,32 +1092,32 @@ ms.locfileid: "85548352"
   
  **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![捲軸](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **滾動**|捲軸|`Environment.ScrollBarBackground`|  
-|![捲軸](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **滾動**|前景 (捲動方塊)|`Environment.ScrollBarThumbBackground`|  
+|![捲軸](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **狀態列**|捲軸|`Environment.ScrollBarBackground`|  
+|![捲軸](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **狀態列**|前景 (捲動方塊)|`Environment.ScrollBarThumbBackground`|  
 |![捲軸箭號](../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303-142_ScrollbarArrow")<br /><br /> **捲軸箭號**|背景|`Environment.ScrollBarArrowBackground`<br /><br /> 設定為與捲軸相同的色彩。|  
 |![捲軸箭號](../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303-142_ScrollbarArrow")<br /><br /> **捲軸箭號**|前景 (字符)|`Environment.ScrollBarArrowGlyph`|  
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![停留時顯示捲軸](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")<br /><br /> **滾動**|捲軸|`Environment.ScrollBarBackground`|  
-|![停留時顯示捲軸](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")<br /><br /> **滾動**|前景 (捲動方塊)|`Environment.ScrollBarThumbMouseOverBackground`|  
+|![停留時顯示捲軸](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")<br /><br /> **狀態列**|捲軸|`Environment.ScrollBarBackground`|  
+|![停留時顯示捲軸](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")<br /><br /> **狀態列**|前景 (捲動方塊)|`Environment.ScrollBarThumbMouseOverBackground`|  
 |![停留時顯示捲軸箭號](../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303-144_ScrollbarArrowHover")<br /><br /> **捲軸箭號**|背景|`Environment.ScrollBarArrowMouseOverBackground`<br /><br /> 設定為與捲軸相同的色彩。|  
 |![停留時顯示捲軸箭號](../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303-144_ScrollbarArrowHover")<br /><br /> **捲軸箭號**|前景 (字符)|`Environment.ScrollBarArrowGlyphMouseOver`|  
   
  **Pressed**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![已按下捲軸](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")<br /><br /> **滾動**|捲軸|`Environment.ScrollBarBackground`|  
-|![已按下捲軸](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")<br /><br /> **滾動**|前景 (捲動方塊)|`Environment.ScrollBarThumbPressedBackground`|  
+|![已按下捲軸](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")<br /><br /> **狀態列**|捲軸|`Environment.ScrollBarBackground`|  
+|![已按下捲軸](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")<br /><br /> **狀態列**|前景 (捲動方塊)|`Environment.ScrollBarThumbPressedBackground`|  
 |![已按下捲軸箭號](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **捲軸箭號**|背景|`Environment.ScrollBarArrowPressedBackground`<br /><br /> 設定為與捲軸相同的色彩。|  
 |![已按下捲軸箭號](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **捲軸箭號**|前景 (字符)|`Environment.ScrollBarArrowGlyphPressed`|  
   
-#### <a name="tree-view"></a><a name="BKMK_TreeView"></a>樹狀檢視  
+#### <a name="tree-view"></a><a name="BKMK_TreeView"></a> 樹狀檢視  
  數個工具視窗 (包括方案總管、伺服器總管和類別檢視) 會實作階層式組織配置，其色彩受到 TreeView 類別中的色彩名稱所控制。 樹狀檢視中的所有項目都會有背景和文字色彩。 具有巢狀子項目的項目也具有字符可指出展開還是摺疊項目。  
   
  ![樹狀檢閱紅線](../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")  
@@ -1132,34 +1132,34 @@ ms.locfileid: "85548352"
   
   **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![樹狀檢視](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|背景|`TreeView.Background`|  
 |![樹狀檢視](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|前景 (文字)|`TreeView.Background`|  
 |![樹狀檢視](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|前景 (字符)|`TreeView.Glyph`|  
-|![樹狀檢視](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|框線|None|  
+|![樹狀檢視](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|框線|無|  
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![停留時顯示樹狀檢閱](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")|背景|`TreeView.Background`|  
 |![停留時顯示樹狀檢閱](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")|前景 (文字)|`TreeView.Background`|  
 |![停留時顯示樹狀檢閱](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")|前景 (字符)|`TreeView.GlyphMouseOver`|  
-|![停留時顯示樹狀檢閱](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")|框線|None|  
+|![停留時顯示樹狀檢閱](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")|框線|無|  
   
  **拖曳至上方**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![拖曳經過時顯示樹狀檢閱](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|背景|`TreeView.DragOverItem`|  
 |![拖曳經過時顯示樹狀檢閱](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|前景 (文字)|`TreeView.DragOverItem`|  
 |![拖曳經過時顯示樹狀檢閱](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|前景 (字符)|`TreeView.DragOverItemGlyph`|  
-|![拖曳經過時顯示樹狀檢閱](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|框線|None|  
+|![拖曳經過時顯示樹狀檢閱](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|框線|無|  
   
  **Selected**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![樹狀檢視已取得焦點](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")<br /><br /> **Focused**|背景|`TreeView.SelectedItemActive`|  
 |![樹狀檢視已取得焦點](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")<br /><br /> **Focused**|前景 (文字)|`TreeView.SelectedItemActive`|  
@@ -1168,11 +1168,11 @@ ms.locfileid: "85548352"
 |![樹狀檢閱未取得焦點](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")<br /><br /> **未取得焦點**|背景|`TreeView.SelectedItemInactive`|  
 |![樹狀檢閱未取得焦點](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")<br /><br /> **未取得焦點**|前景 (文字)|`TreeView.SelectedItemInactive`|  
 |![樹狀檢閱未取得焦點](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")<br /><br /> **未取得焦點**|前景 (字符)|`TreeView.SelectedItemInactiveGlyph`|  
-|![樹狀檢閱未取得焦點](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")<br /><br /> **未取得焦點**|框線|None|  
+|![樹狀檢閱未取得焦點](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")<br /><br /> **未取得焦點**|框線|無|  
   
  **在選取的項目上方暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![停留時顯示取得焦點的樹狀檢閱](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Focused**|背景|`TreeView.SelectedItemActive`|  
 |![停留時顯示取得焦點的樹狀檢閱](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Focused**|前景 (文字)|`TreeView.SelectedItemActive`|  
@@ -1181,7 +1181,7 @@ ms.locfileid: "85548352"
 |![停留時顯示未取得焦點的樹狀檢視](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **未取得焦點**|背景|`TreeView.SelectedItemInactive`|  
 |![停留時顯示未取得焦點的樹狀檢視](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **未取得焦點**|前景 (文字)|`TreeView.SelectedItemInactive`|  
 |![停留時顯示未取得焦點的樹狀檢視](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **未取得焦點**|前景 (字符)|`TreeView.SelectedItemActiveGlyphMouseOver`|  
-|![停留時顯示未取得焦點的樹狀檢視](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **未取得焦點**|框線|None|  
+|![停留時顯示未取得焦點的樹狀檢視](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **未取得焦點**|框線|無|  
   
 #### <a name="button-controls"></a>按鈕控制項  
  ![按鈕控制項紅線](../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303-155_ButtonControlRedline")  
@@ -1194,35 +1194,35 @@ ms.locfileid: "85548352"
   
  **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Button](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|按鈕|`CommonControls.Button`|  
 |![Button](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|按鈕框線|`CommonControls.ButtonBorder`|  
   
- **Disabled**  
+ **已停用**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已停用按鈕](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303-157_ButtonDisabled")|按鈕|`CommonControls.ButtonDisabled`|  
 |![已停用按鈕](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303-157_ButtonDisabled")|按鈕框線|`CommonControls.ButtonBorderDisabled`|  
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![停留時顯示按鈕](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303-158_ButtonHover")|按鈕|`CommonControls.ButtonHover`|  
 |![停留時顯示按鈕](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303-158_ButtonHover")|按鈕框線|`CommonControls.ButtonBorderHover`|  
   
  **Pressed**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已按下按鈕](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")|按鈕|`CommonControls.ButtonPressed`|  
 |![已按下按鈕](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")|按鈕框線|`CommonControls.ButtonBorderPressed`|  
   
  **Focused**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![按鈕已取得焦點](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303-160_ButtonFocused")|按鈕|`CommonControls.ButtonFocused`|  
 |![按鈕已取得焦點](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303-160_ButtonFocused")|按鈕框線|`CommonControls.ButtonBorderFocused`|  
@@ -1238,16 +1238,16 @@ ms.locfileid: "85548352"
   
  **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![核取方塊](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")|背景|`CommonControls.CheckBoxBackground`|  
 |![核取方塊](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")|框線|`CommonControls.CheckBoxBorder`|  
 |![核取方塊](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")|Text|`CommonControls.CheckBoxText`|  
 |![核取方塊](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")|圖像|`CommonControls.CheckBoxGlyph`|  
   
- **Disabled**  
+ **已停用**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已停用核取方塊](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303-163_CheckboxDisabled")|背景|`CommonControls.CheckBoxBackgroundDisabled`|  
 |![已停用核取方塊](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303-163_CheckboxDisabled")|框線|`CommonControls.CheckBoxBorderDisabled`|  
@@ -1256,7 +1256,7 @@ ms.locfileid: "85548352"
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![停留時顯示核取方塊](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303-164_CheckboxHover")|背景|`CommonControls.CheckBoxBackgroundHover`|  
 |![停留時顯示核取方塊](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303-164_CheckboxHover")|框線|`CommonControls.CheckBoxBorderHover`|  
@@ -1265,7 +1265,7 @@ ms.locfileid: "85548352"
   
  **Pressed**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已按下核取方塊](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303-165_CheckboxPressed")|背景|`CommonControls.CheckBoxBackgroundPressed`|  
 |![已按下核取方塊](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303-165_CheckboxPressed")|框線|`CommonControls.CheckBoxBorderPressed`|  
@@ -1274,7 +1274,7 @@ ms.locfileid: "85548352"
   
  **Focused**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![核取方塊已取得焦點](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303-166_CheckboxFocused")|背景|`CommonControls.CheckBoxBackgroundFocused`|  
 |![核取方塊已取得焦點](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303-166_CheckboxFocused")|框線|`CommonControls.CheckBoxBorderFocused`|  
@@ -1282,7 +1282,7 @@ ms.locfileid: "85548352"
 |![核取方塊已取得焦點](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303-166_CheckboxFocused")|圖像|`CommonControls.CheckBoxGlyphFocused`|  
   
 #### <a name="drop-boxcombo-box-controls"></a>下拉式方塊控制項  
- ![下拉&#45;下拉&#47;下拉式方塊紅線](../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")  
+ ![&#45;下&#47;下拉式方塊紅線](../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")  
   
 請使用於…  
 針對屬於文件區域一部分的下拉式清單和下拉式方塊。  
@@ -1294,18 +1294,18 @@ ms.locfileid: "85548352"
   
   **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![下拉&#45;下拉&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|背景|`CommonControls.ComboBoxBackground`|  
-|![下拉&#45;下拉&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|框線|`CommonControls.ComboBoxBorder`|  
-|![下拉&#45;下拉&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Text|`CommonControls.ComboBoxText`|  
-|![下拉&#45;下拉&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Separator|`CommonControls.ComboBoxSeparator`|  
-|![下拉&#45;下拉&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|圖像|`CommonControls.ComboBoxGlyph`|  
-|![下拉&#45;下拉&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|字符背景|`CommonControls.ComboBoxGlyphBackground`|  
+|![下拉&#45;下&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|背景|`CommonControls.ComboBoxBackground`|  
+|![下拉&#45;下&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|框線|`CommonControls.ComboBoxBorder`|  
+|![下拉&#45;下&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Text|`CommonControls.ComboBoxText`|  
+|![下拉&#45;下&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Separator|`CommonControls.ComboBoxSeparator`|  
+|![下拉&#45;下&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|圖像|`CommonControls.ComboBoxGlyph`|  
+|![下拉&#45;下&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|字符背景|`CommonControls.ComboBoxGlyphBackground`|  
   
- **Disabled**  
+ **已停用**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![將&#45;下拉&#47;下拉式方塊已停用](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|背景|`CommonControls.ComboBoxBackgroundDisabled`|  
 |![將&#45;下拉&#47;下拉式方塊已停用](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|框線|`CommonControls.ComboBoxBorderDisabled`|  
@@ -1316,60 +1316,60 @@ ms.locfileid: "85548352"
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![滑鼠停留時，將&#45;下拉&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|背景|`CommonControls.ComboBoxBackgroundHover`|  
-|![滑鼠停留時，將&#45;下拉&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|框線|`CommonControls.ComboBoxBorderHover`|  
-|![滑鼠停留時，將&#45;下拉&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Text|`CommonControls.ComboBoxTextHover`|  
-|![滑鼠停留時，將&#45;下拉&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Separator|`CommonControls.ComboBoxSeparatorHover`|  
-|![滑鼠停留時，將&#45;下拉&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|圖像|`CommonControls.ComboBoxGlyphHover`|  
-|![滑鼠停留時，將&#45;下拉&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|字符背景|`CommonControls.ComboBoxGlyphBackgroundHover`|  
+|![停留時，卸載&#45;下&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|背景|`CommonControls.ComboBoxBackgroundHover`|  
+|![停留時，卸載&#45;下&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|框線|`CommonControls.ComboBoxBorderHover`|  
+|![停留時，卸載&#45;下&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Text|`CommonControls.ComboBoxTextHover`|  
+|![停留時，卸載&#45;下&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Separator|`CommonControls.ComboBoxSeparatorHover`|  
+|![停留時，卸載&#45;下&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|圖像|`CommonControls.ComboBoxGlyphHover`|  
+|![停留時，卸載&#45;下&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|字符背景|`CommonControls.ComboBoxGlyphBackgroundHover`|  
   
  **Pressed**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![下拉&#45;按下&#47;下拉式列示方塊](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|背景|`CommonControls.ComboBoxBackgroundPressed`|  
-|![下拉&#45;按下&#47;下拉式列示方塊](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|框線|`CommonControls.ComboBoxBorderPressed`|  
-|![下拉&#45;按下&#47;下拉式列示方塊](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Text|`CommonControls.ComboBoxTextPressed`|  
-|![下拉&#45;按下&#47;下拉式列示方塊](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Separator|`CommonControls.ComboBoxSeparatorPressed`|  
-|![下拉&#45;按下&#47;下拉式列示方塊](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|圖像|`CommonControls.ComboBoxGlyphPressed`|  
-|![下拉&#45;按下&#47;下拉式列示方塊](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|字符背景|`CommonControls.ComboBoxGlyphBackgroundPressed`|  
+|![下拉&#45;下&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|背景|`CommonControls.ComboBoxBackgroundPressed`|  
+|![下拉&#45;下&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|框線|`CommonControls.ComboBoxBorderPressed`|  
+|![下拉&#45;下&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Text|`CommonControls.ComboBoxTextPressed`|  
+|![下拉&#45;下&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Separator|`CommonControls.ComboBoxSeparatorPressed`|  
+|![下拉&#45;下&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|圖像|`CommonControls.ComboBoxGlyphPressed`|  
+|![下拉&#45;下&#47;下拉式方塊](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|字符背景|`CommonControls.ComboBoxGlyphBackgroundPressed`|  
   
  **Focused**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![下拉&#45;向下&#47;下拉式列示方塊焦點](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|背景|`CommonControls.ComboBoxBackgroundFocused`|  
-|![下拉&#45;向下&#47;下拉式列示方塊焦點](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|框線|`CommonControls.ComboBoxBorderFocused`|  
-|![下拉&#45;向下&#47;下拉式列示方塊焦點](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Text|`CommonControls.ComboBoxTextFocused`|  
-|![下拉&#45;向下&#47;下拉式列示方塊焦點](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Separator|`CommonControls.ComboBoxSeparatorFocused`|  
-|![下拉&#45;向下&#47;下拉式列示方塊焦點](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|圖像|`CommonControls.ComboBoxGlyphFocused`|  
-|![下拉&#45;向下&#47;下拉式列示方塊焦點](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|字符背景|`CommonControls.ComboBoxGlyphBackgroundFocused`|  
+|![將焦點放在&#47;下拉式方塊&#45;下](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|背景|`CommonControls.ComboBoxBackgroundFocused`|  
+|![將焦點放在&#47;下拉式方塊&#45;下](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|框線|`CommonControls.ComboBoxBorderFocused`|  
+|![將焦點放在&#47;下拉式方塊&#45;下](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Text|`CommonControls.ComboBoxTextFocused`|  
+|![將焦點放在&#47;下拉式方塊&#45;下](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Separator|`CommonControls.ComboBoxSeparatorFocused`|  
+|![將焦點放在&#47;下拉式方塊&#45;下](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|圖像|`CommonControls.ComboBoxGlyphFocused`|  
+|![將焦點放在&#47;下拉式方塊&#45;下](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|字符背景|`CommonControls.ComboBoxGlyphBackgroundFocused`|  
   
  **文字輸入選取範圍**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![下拉&#45;下拉&#47;下拉式方塊文字輸入](../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")|反白顯示|`CommonControls.ComboBoxTextInputSelection`|  
+|![&#45;下&#47;下拉式方塊文字輸入](../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")|反白顯示|`CommonControls.ComboBoxTextInputSelection`|  
   
  **已按下 – 清單項目檢視**  
   
-|元件|元素|語彙基元名稱：Color.category|  
+|元件|項目|語彙基元名稱：Color.category|  
 |---------------|-------------|--------------------------------|  
-|![下拉&#45;下拉&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|背景|`CommonControls.ComboBoxListBackground`|  
-|![下拉&#45;下拉&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|背景|`CommonControls.ComboBoxListBackgroundHover`|  
-|![下拉&#45;下拉&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|背景|`CommonControls.ComboBoxListItemBackgroundPressed`|  
-|![下拉&#45;下拉&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|背景|`CommonControls.ComboBoxListItemBackgroundFocused`|  
-|![下拉&#45;下拉&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|框線|`CommonControls.ComboBoxListBorder`|  
-|![下拉&#45;下拉&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|框線|`CommonControls.ComboBoxListBorderHover`|  
-|![下拉&#45;下拉&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|框線|`CommonControls.ComboBoxListBorderPressed`|  
-|![下拉&#45;下拉&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|框線|`CommonControls.ComboBoxListBorderFocused`|  
-|![下拉&#45;下拉&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|項目文字|`CommonControls.ComboBoxListItemText`|  
-|![下拉&#45;下拉&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|項目文字|`CommonControls.ComboBoxListItemTextHover`|  
-|![下拉&#45;下拉&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|項目文字|`CommonControls.ComboBoxListItemTextPressed`|  
-|![下拉&#45;下拉&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|項目文字|`CommonControls.ComboBoxListItemTextFocused`|  
-|![下拉&#45;下拉&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|背景陰影|`CommonControls.ComboBoxListBackgroundShadow`|  
+|![&#45;下&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|背景|`CommonControls.ComboBoxListBackground`|  
+|![&#45;下&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|背景|`CommonControls.ComboBoxListBackgroundHover`|  
+|![&#45;下&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|背景|`CommonControls.ComboBoxListItemBackgroundPressed`|  
+|![&#45;下&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|背景|`CommonControls.ComboBoxListItemBackgroundFocused`|  
+|![&#45;下&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|框線|`CommonControls.ComboBoxListBorder`|  
+|![&#45;下&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|框線|`CommonControls.ComboBoxListBorderHover`|  
+|![&#45;下&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|框線|`CommonControls.ComboBoxListBorderPressed`|  
+|![&#45;下&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|框線|`CommonControls.ComboBoxListBorderFocused`|  
+|![&#45;下&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|項目文字|`CommonControls.ComboBoxListItemText`|  
+|![&#45;下&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|項目文字|`CommonControls.ComboBoxListItemTextHover`|  
+|![&#45;下&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|項目文字|`CommonControls.ComboBoxListItemTextPressed`|  
+|![&#45;下&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|項目文字|`CommonControls.ComboBoxListItemTextFocused`|  
+|![&#45;下&#47;下拉式方塊清單視圖](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|背景陰影|`CommonControls.ComboBoxListBackgroundShadow`|  
   
 #### <a name="tabular-data-grid-controls"></a>表格式資料 (方格) 控制項  
  表格式資料控制項 (也稱為方格控制項) 是 Visual Studio 通用控制項，可用來在多個資料行中顯示大量資料。 標準表格式資料控制項可以位於 Visual Studio 的多個位置：[錯誤清單] 工具視窗、IntelliTrace 報告和記憶體堆積檢視等等。 請一律使用所提供的標準表格式資料控制項。 在一些罕見情況下，您可能無法存取標準表格式資料控制項。 在這些情況下，請使用下列語彙基元名稱，確保您的 UI 與 Visual Studio 中的其他表格式資料控制項一致。  
@@ -1385,7 +1385,7 @@ ms.locfileid: "85548352"
 ##### <a name="column-headers"></a>資料行標題  
  資料行標頭包含背景、框線、標題文字，以及通常在依該資料行排序方格時使用的選用字符。  
   
-|State|元素|語彙基元名稱：Category.color|  
+|State|項目|語彙基元名稱：Category.color|  
 |-----------|-------------|--------------------------------|  
 |預設|背景|`Header.Default`|  
 |預設|前景 (文字)|`Environment.CommandBarTextActive`|  
@@ -1403,17 +1403,17 @@ ms.locfileid: "85548352"
 ##### <a name="list-view-items"></a>清單檢視項目  
  清單檢視項目包含背景和內容。 內容可以是文字及/或圖示。  
   
-|State|元素|語彙基元名稱：Category.color|  
+|State|項目|語彙基元名稱：Category.color|  
 |-----------|-------------|--------------------------------|  
 |預設|背景|透明|  
 |預設|前景 (文字)|`Environment.CommandBarTextActive`|  
-|預設|框線|None|  
+|預設|框線|無|  
 |已選取 (使用中)|背景|`TreeView.SelectedItemActive`|  
 |已選取 (使用中)|前景 (文字)|`TreeView.SelectedItemActiveText`|  
-|已選取 (使用中)|框線|None|  
+|已選取 (使用中)|框線|無|  
 |已選取 (非使用中)|背景|`TreeView.SelectedItemInactive`|  
 |已選取 (非使用中)|前景 (文字)|`TreeView.SelectedItemInactiveText`|  
-|已選取 (非使用中)|框線|None|  
+|已選取 (非使用中)|框線|無|  
   
 ### <a name="manifest-designer"></a>資訊清單設計工具  
  資訊清單設計工具的設計是用來輕鬆地編輯 Windows 8 和 Windows Phone 8 專案中的資訊清單檔。 雖然沒有任何共用架構可供取用，但是可能適合您比對方向/瀏覽索引標籤和整體結構的設計版面配置和色彩。 如需版面配置詳細資料的詳細資訊，請參閱 [Layout for Visual Studio](../extensibility/ux-guidelines/layout-for-visual-studio.md)。  
@@ -1430,10 +1430,10 @@ ms.locfileid: "85548352"
 
 - 任何未結構化的 UI (例如資訊清單設計工具)。  
   
-|State|元件|元素|語彙基元名稱：Category.color|  
+|State|元件|項目|語彙基元名稱：Category.color|  
 |-----------|---------------|-------------|--------------------------------|  
 |預設值 (已選取)|索引標籤|背景|`ManifestDesigner.TabActive`|  
-|預設值 (已選取)|索引標籤|框線|None|  
+|預設值 (已選取)|索引標籤|框線|無|  
 |預設值 (已選取)|描述窗格|背景|`ManifestDesigner.DescriptionPane`|  
 |預設值 (已選取)|內容頁面|背景|`ManifestDesigner.Background`|  
 |預設值 (已選取)|內容頁面|對話方塊 Helper 文字|`ManifestDesigner.WatermarkText`<br /><br /> 這個語彙基元名稱不符合其功能。|  
@@ -1453,7 +1453,7 @@ ms.locfileid: "85548352"
   
 #### <a name="tag"></a>Tag  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")<br /><br /> **預設值**|背景|`Tag.Background`|  
 |![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")<br /><br /> **預設值**|前景 (文字)|`Tag.Background`|  
@@ -1467,14 +1467,14 @@ ms.locfileid: "85548352"
 #### <a name="glyph-close-icon"></a>字符 (關閉圖示)  
  **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![標記 &#40;圖像&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **預設值 (標記預設值)**|背景|N/A|  
 |![標記 &#40;圖像&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **預設值 (標記預設值)**|前景 (字符)|`Tag.TagHoverGlyph`|  
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![停留時標記 &#40;圖像&#41;](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")<br /><br /> **暫留 (標記預設值)**|背景|`Tag.TagHoverGlyphHoverBackground`|  
 |![停留時標記 &#40;圖像&#41;](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")<br /><br /> **暫留 (標記預設值)**|前景 (字符)|`Tag.TagHoverGlyphHover`|  
@@ -1482,22 +1482,22 @@ ms.locfileid: "85548352"
   
  **Pressed**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![&#41; 按下標記 &#40;圖像](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **已按下 (標記預設值)**|背景|`Tag.TagHoverGlyphPressedBackground`|  
-|![&#41; 按下標記 &#40;圖像](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **已按下 (標記預設值)**|前景 (字符)|`Tag.TagHoverGlyphPressed`|  
-|![&#41; 按下標記 &#40;圖像](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **已按下 (標記預設值)**|框線|`Tag.TagHoverGlyphPressedBorder`|  
+|![&#41; 按下 &#40;字元標記](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **已按下 (標記預設值)**|背景|`Tag.TagHoverGlyphPressedBackground`|  
+|![&#41; 按下 &#40;字元標記](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **已按下 (標記預設值)**|前景 (字符)|`Tag.TagHoverGlyphPressed`|  
+|![&#41; 按下 &#40;字元標記](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **已按下 (標記預設值)**|框線|`Tag.TagHoverGlyphPressedBorder`|  
   
  **已選取標記/字符預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已選取標記](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303-184_TagSelected")<br /><br /> **預設值 (已選取標記)**|背景|N/A|  
 |![已選取標記](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303-184_TagSelected")<br /><br /> **預設值 (已選取標記)**|前景 (字符)|`Tag.TagSelectedGlyph`|  
   
  **已選取標記/字符暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![停留時顯示選取的標記](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303-185_TagSelectedHover")<br /><br /> **暫留 (已選取標記)**|背景|`Tag.TagSelectedGlyphHoverBackground`|  
 |![停留時顯示選取的標記](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303-185_TagSelectedHover")<br /><br /> **暫留 (已選取標記)**|前景 (字符)|`Tag.TagSelectedGlyphHover`|  
@@ -1505,7 +1505,7 @@ ms.locfileid: "85548352"
   
  **已選取標記/已按下字符**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![已按下選取的標記](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303-186_TagSelectedPressed")<br /><br /> **已按下 (已選取標記)**|背景|`Tag.TagSelectedGlyphPressedBackground`|  
 |![已按下選取的標記](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303-186_TagSelectedPressed")<br /><br /> **已按下 (已選取標記)**|前景 (字符)|`Tag.TagSelectedGlyphPressed`|  
@@ -1526,11 +1526,11 @@ ms.locfileid: "85548352"
 
 - 作為您要放置前景項目的背景。  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |下層|背景|`Environment.EnvironmentBackground`|  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |上層|背景<br /><br /> *設定為與 Visual Studio 2013 淺色調和暗色調佈景主題相同色彩值的漸層停駐點。*|`Environment.EnvironmentBackgroundGradientBegin`|  
 |上層|背景<br /><br /> *設定為與 Visual Studio 2013 淺色調和暗色調佈景主題相同色彩值的漸層停駐點。*|`Environment.EnvironmentBackgroundGradientEnd`|  
@@ -1545,12 +1545,12 @@ ms.locfileid: "85548352"
 請使用於…  
 - 針對您放置功能表或工具列的區域。  
 
-- 具有正確的背景/前景標記名稱組合。  
+- 使用正確的背景/前景 token 名稱組合。  
   
   請勿使用於…  
   針對未與命令櫃類似的區域。  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |功能表列|背景<br /><br /> *設定為與 Visual Studio 2013 淺色調和暗色調佈景主題相同色彩值的漸層停駐點。*|`Environment.CommandShelfHighlightGradientBegin`|  
 |功能表列|背景<br /><br /> *設定為與 Visual Studio 2013 淺色調和暗色調佈景主題相同色彩值的漸層停駐點。*|`Environment.CommandShelfHighlightGradientMiddle`|  
@@ -1572,12 +1572,12 @@ ms.locfileid: "85548352"
   
  **預設值**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![工具箱父節點](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **父節點**|背景|`Environment.ToolboxContent`<br /><br /> 標題<br /><br /> `Environment.ToolWindowBackground`<br /><br /> 個別項目或整個視窗 (沒有可用控制項時)|  
 |![工具箱子節點](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **子節點**|背景|`Environment.ToolboxContent`<br /><br /> 標題<br /><br /> `Environment.ToolWindowBackground`<br /><br /> 個別項目或整個視窗 (沒有可用控制項時)|  
-|![工具箱父節點](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **父節點**|框線|None|  
-|![工具箱子節點](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **子節點**|框線|None|  
+|![工具箱父節點](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **父節點**|框線|無|  
+|![工具箱子節點](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **子節點**|框線|無|  
 |![工具箱父節點](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **父節點**|前景 (字符)|`Environment.ToolboxContent`|  
 |![工具箱子節點](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **子節點**|前景 (字符)|`Environment.ToolboxContent`|  
 |![工具箱父節點](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **父節點**|前景 (文字)|`Environment.ToolboxContent`|  
@@ -1585,15 +1585,15 @@ ms.locfileid: "85548352"
   
  **暫留**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![停留時顯示工具箱子節點](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br /><br /> **子節點上的工具箱暫留**|背景|`Environment.ToolboxContentMouseOver`<br /><br /> 僅限個別項目|  
-|![停留時顯示工具箱子節點](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br /><br /> **子節點上的工具箱暫留**|框線|None|  
+|![停留時顯示工具箱子節點](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br /><br /> **子節點上的工具箱暫留**|框線|無|  
 |![停留時顯示工具箱子節點](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br /><br /> **子節點上的工具箱暫留**|前景 (文字)|`Environment.ToolboxContentMouseOver`<br /><br /> 僅限個別項目|  
   
  **Selected**  
   
-|元件|元素|語彙基元名稱：Category.color|  
+|元件|項目|語彙基元名稱：Category.color|  
 |---------------|-------------|--------------------------------|  
 |![工具箱父節點已取得焦點](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **已取得焦點的父節點**|背景|`TreeView.SelectedItemActive`<br /><br /> 從 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 分類|  
 |![工具箱子節點已取得焦點](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **已取得焦點的子節點**|背景|`TreeView.SelectedItemActive`<br /><br /> 從 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 分類|  
@@ -1605,8 +1605,8 @@ ms.locfileid: "85548352"
 |![工具箱子節點已取得焦點](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **已取得焦點的子節點**|前景 (文字)|`TreeView.SelectedItemActive`<br /><br /> 從 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 分類|  
 |![工具箱父節點未取得焦點](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **未取得焦點的父節點**|背景|`TreeView.SelectedItemInactive`<br /><br /> 從 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 分類|  
 |![工具箱子節點未取得焦點](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **未取得焦點的子節點**|背景|`TreeView.SelectedItemInactive`<br /><br /> 從 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 分類|  
-|![工具箱父節點未取得焦點](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **未取得焦點的父節點**|框線|None|  
-|![工具箱子節點未取得焦點](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **未取得焦點的子節點**|框線|None|  
+|![工具箱父節點未取得焦點](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **未取得焦點的父節點**|框線|無|  
+|![工具箱子節點未取得焦點](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **未取得焦點的子節點**|框線|無|  
 |![工具箱父節點未取得焦點](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **未取得焦點的父節點**|前景 (字符)|`TreeView.SelectedItemInactive`<br /><br /> 從 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 分類|  
 |![工具箱子節點未取得焦點](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **未取得焦點的子節點**|前景 (字符)|`TreeView.SelectedItemInactive`<br /><br /> 從 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 分類|  
 |![工具箱父節點未取得焦點](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **未取得焦點的父節點**|前景 (文字)|`TreeView.SelectedItemInactive`<br /><br /> 從 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 分類|  
@@ -1614,7 +1614,7 @@ ms.locfileid: "85548352"
   
 ## <a name="color-value-reference"></a>色彩值參考  
   
-|元件|部分|元素|State|輕量型|深色|藍色|高對比|
+|元件|部分|項目|State|輕量型|深色|藍色|高對比|
 |---------|----|-------|-----|-----|----|----|----|  
 |分割線|||預設|FFEEEEF2|FF2D2D30|FFEEEEF2|ControlDark|  
 |展開器字符||前景|預設|||||  

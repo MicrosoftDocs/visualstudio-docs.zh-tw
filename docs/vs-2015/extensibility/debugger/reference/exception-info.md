@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_INFO | Microsoft Docs
+title: EXCEPTION_INFO |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 66af4d95707be99865df3df32751215cf5eb10b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181178"
 ---
-# <a name="exceptioninfo"></a>EXCEPTION_INFO
+# <a name="exception_info"></a>EXCEPTION_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-描述例外狀況或擲回的正在偵錯之程式的執行階段錯誤。  
+描述正在進行調試的程式擲回的例外狀況或執行階段錯誤。  
   
 ## <a name="syntax"></a>語法  
   
@@ -50,7 +50,7 @@ public struct EXCEPTION_INFO { 
   
 ## <a name="members"></a>成員  
  pProgram  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示的程式發生例外狀況。  
+ [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，代表發生例外狀況的程式。  
   
  bstrProgramName  
  發生例外狀況的程式名稱。  
@@ -59,23 +59,23 @@ public struct EXCEPTION_INFO { 
  例外狀況的名稱。  
   
  dwCode  
- 例外狀況或執行階段錯誤的識別碼。  
+ 例外狀況或執行階段錯誤的識別程式碼。  
   
  dwState  
- 值，以從[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)列舉型別，定義例外狀況的狀態。  
+ [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)列舉中的值，這個值會定義例外狀況的狀態。  
   
  guidType  
- GUID 的語言識別項、 任一`guidLang`或`guidEng`。  
+ GUID 語言識別項， `guidLang` 也就是或 `guidEng` 。  
   
 ## <a name="remarks"></a>備註  
- 此結構會做為參數傳遞[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)並[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)方法。 此結構也會傳遞至[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)来填入的方法。  
+ 此結構會以參數形式傳遞至 [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) 和 [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) 方法。 此結構也會傳遞至要填入的 [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) 方法。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

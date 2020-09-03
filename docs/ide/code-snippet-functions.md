@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7df85c429794d61028d5304108d289dfe9bf496
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594236"
 ---
 # <a name="code-snippet-functions"></a>程式碼片段函式
@@ -27,7 +27,7 @@ ms.locfileid: "75594236"
 
 下表描述可用於與程式碼片段中的 `Function` 項目搭配使用的函式。
 
-|函式|描述|Language|
+|函式|描述|語言|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|針對 `EnumerationLiteral` 參數所指定列舉的成員，產生 switch 陳述式和一組 case 陳述式。 `EnumerationLiteral` 參數必須是列舉常值或列舉類型的參考。|C#|
 |`ClassName()`|傳回包含已插入程式碼片段的類別名稱。|C#|
@@ -158,4 +158,4 @@ ms.locfileid: "75594236"
 ## <a name="see-also"></a>另請參閱
 
 - [Function 項目](../ide/code-snippets-schema-reference.md#function-element)
-- [程式碼片段架構引用](../ide/code-snippets-schema-reference.md)
+- [程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)
