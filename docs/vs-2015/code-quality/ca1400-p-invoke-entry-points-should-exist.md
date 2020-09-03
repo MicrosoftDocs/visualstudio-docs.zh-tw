@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 15b63e49f89e17db631772c48765cc610f47ed29
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548300"
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400：P/Invoke 進入點應該要存在
@@ -30,22 +30,22 @@ ms.locfileid: "85548300"
 |TypeName|PInvokeEntryPointsShouldExist|
 |CheckId|CA1400|
 |類別|Microsoft. 互通性|
-|中斷變更|不中斷|
+|中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的方法會以標記 <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> 。 有可能是找不到 Unmanaged 程式庫，或是方法不符合程式庫中的函式。 如果規則找不到完全依照指定的方法名稱，它會藉由使用 ' A ' 或 ' W ' suffixing 方法名稱，尋找該方法的 ANSI 或寬字元版本。 如果找不到相符的結果，規則會嘗試使用 __stdcall 名稱格式（ _MyMethod@12 ，其中12代表引數的長度）來尋找函式。 如果找不到相符的，而且方法名稱是以 ' # ' 開頭，此規則就會搜尋函數做為序數參考，而不是名稱參考。
+ 公用或受保護的方法會以標記 <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> 。 有可能是找不到 Unmanaged 程式庫，或是方法不符合程式庫中的函式。 如果規則找不到與指定的完全相同的方法名稱，則會藉由使用 ' A ' 或 ' W ' suffixing 方法名稱來尋找方法的 ANSI 或寬字元版本。 如果找不到相符的規則，此規則會嘗試使用 __stdcall 名稱格式來找出函式 (_MyMethod@12 ，其中12代表) 引數的長度。 如果找不到相符項，而且方法名稱以 ' # ' 開頭，此規則就會將函數搜尋為序數參考，而不是名稱參考。
 
 ## <a name="rule-description"></a>規則描述
- 沒有任何編譯時間檢查可確保以標記的方法 <xref:System.Runtime.InteropServices.DllImportAttribute> 位於參考的非受控 DLL 中。 如果程式庫中沒有具有指定名稱的函式，或方法的引數不符合函式引數，則 common language runtime 會擲回例外狀況。
+ 沒有任何編譯時間檢查可確保標示的方法 <xref:System.Runtime.InteropServices.DllImportAttribute> 位於受參考的非受控 DLL 中。 如果程式庫中沒有具有指定名稱的函式，或方法的引數與函式引數不相符，則 common language runtime 會擲回例外狀況。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請更正具有屬性的方法 <xref:System.Runtime.InteropServices.DllImportAttribute> 。 請確定非受控程式庫存在，而且與包含方法的元件位於相同的目錄中。 如果程式庫存在且正確地參考，請確認方法名稱、傳回類型和引數簽章是否符合程式庫函式。
+ 若要修正此規則的違規情形，請更正具有該屬性的方法 <xref:System.Runtime.InteropServices.DllImportAttribute> 。 請確定未受管理的程式庫存在，而且與包含該方法的元件位於相同的目錄中。 如果程式庫存在且正確地參考，請確認方法名稱、傳回類型和引數簽章是否符合程式庫函數。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 當非受控程式庫位於與參考它的 managed 元件相同的目錄中時，請勿隱藏此規則的警告。 在找不到非受控程式庫的情況下，可能可以安全地隱藏此規則的警告。
+ 當非受控程式庫與參考它的 managed 元件位於相同的目錄時，請勿隱藏此規則的警告。 如果找不到非受控程式庫，可能會安全地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示違反規則的類型。 未命名的函式 `DoSomethingUnmanaged` 會在 kernel32.dll 中發生。
+ 下列範例顯示違反規則的類型。 kernel32.dll 中找不到名為的函式 `DoSomethingUnmanaged` 。
 
  [!code-csharp[FxCop.Interoperability.DLLExists#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.DLLExists/cs/FxCop.Interoperability.DLLExists.cs#1)]
 

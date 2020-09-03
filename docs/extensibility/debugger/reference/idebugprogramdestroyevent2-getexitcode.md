@@ -1,5 +1,5 @@
 ---
-title: IDebug程序銷毀事件2::獲取退出碼 |微軟文件
+title: IDebugProgramDestroyEvent2：： GetExitCode |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cc887cdcd2975bdfb4042acb1831a7482baa52c4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722607"
 ---
 # <a name="idebugprogramdestroyevent2getexitcode"></a>IDebugProgramDestroyEvent2::GetExitCode
-獲取程式的退出代碼。
+取得程式的結束代碼。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ int GetExitCode( 
 
 ## <a name="parameters"></a>參數
 `pdwExit`\
-[出]返回程式的退出代碼。
+擴展傳回程序的結束代碼。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)

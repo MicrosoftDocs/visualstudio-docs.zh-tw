@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetDefaultIndexer |Microsoft Docs
+title: IDebugClassField：： GetDefaultIndexer |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6be0a1925a1e5d48941c1c0e13ac1b4789687229
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191029"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得預設索引子名稱。  
+取得預設索引子的名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,13 +40,13 @@ int GetDefaultIndexer(
   
 #### <a name="parameters"></a>參數  
  `pbstrIndexer`  
- [out]傳回字串，包含預設索引子名稱。  
+ 擴展傳回字串，其中包含預設索引子的名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK，或如果沒有任何預設索引子，則傳回 S_FALSE。 否則會傳回錯誤碼。  
+ 如果成功，會傳回 S_OK，或如果沒有預設索引子，則傳回 S_FALSE。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 類別的預設索引子是標示為屬性`Default`陣列存取的屬性。 這是特定於[!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]。 以下是範例中所宣告的預設索引子的[!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]和使用方式。  
+ 類別的預設索引子是標示為 `Default` 陣列存取屬性的屬性。 這是特有的 [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] 。 以下是在中宣告的預設索引子範例 [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] ，以及其使用方式。  
   
 ```vb  
 Imports System.Collections;  

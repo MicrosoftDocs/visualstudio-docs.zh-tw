@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c1fe3db702508267e96dc79f2f789a17a7edf98b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75755571"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>步驟 6：使用投票 Django Web 專案範本
@@ -33,21 +33,21 @@ ms.locfileid: "75755571"
 > - 了解專案範本建立的檢視和頁面範本 (步驟 6-4)
 > - 建立自訂的管理介面 (步驟 6-5)
 
-使用此範本創建的專案類似于在[Django 文檔中編寫第一個 Django 應用](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)教程時獲得的專案。Web 應用由一個公共網站組成，該網站允許使用者查看投票並投票，以及一個自訂管理介面，您可以通過該介面管理投票。 它採用與 Django Web 專案範本相同的驗證系統，並實作 Django 模型，讓資料庫發揮更大的用途。相關資訊，請參閱以下各節。
+使用此範本所建立的專案，類似于在 Django 檔中 [撰寫您的第一個 Django 應用程式](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) 教學課程所取得的內容。Web 應用程式是由公開網站所組成，可讓使用者在其中查看投票和投票，以及您可以用來管理投票的自訂系統管理介面。 它採用與 Django Web 專案範本相同的驗證系統，並實作 Django 模型，讓資料庫發揮更大的用途。相關資訊，請參閱以下各節。
 
 ## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>步驟 6-1： 建立專案，並初始化資料庫
 
-1. 在 Visual Studio 中，轉到**解決方案資源管理器**，按右鍵本教程中較早創建的**LearningDjango**解決方案，然後選擇"**添加新** > **專案**"。 （或者，如果要使用新解決方案 **，請選擇"****檔** > **新專案** > "。
+1. 在 Visual Studio 中，移至**方案總管**，以滑鼠右鍵按一下本教學課程稍早建立的**LearningDjango**方案，然後選取 [**加入**  >  **新專案**]。  (或者，如果您想要使用新的方案，請**選取 [** 檔案  >  **新增**  >  **專案**]。 ) 
 
-1. 在新專案對話方塊中，搜索並選擇 **"投票 Django Web 專案**"範本，調用專案"DjangoPolls"，然後選擇 **"確定**"。
+1. 在 [新增專案] 對話方塊中，搜尋並選取 [ **投票 Django Web 專案** ] 範本，呼叫 ">djangopolls" 專案，然後選取 **[確定]**。
 
 1. 與 Visual Studio 中的其他專案範本一樣，「投票 Django Web 專案」範本也包含一個 *requirements.txt* 檔案，Visual Studio 提示會詢問您要將這些相依性安裝到何處。 選擇 [安裝至虛擬環境]**** 選項，然後在 [新增虛擬環境]**** 對話方塊中，選取 [建立]**** 並接受預設值。
 
-1. Python 設定好虛擬環境後，在顯示的 *readme.html* 中會有相關操作方法，請遵循指示來初始化並建立 Django 進階使用者 (也就是系統管理員)。 這些步驟是首先按右鍵**解決方案資源管理器**中的**DjangoPolls**專案，選擇**Python** > **Django 遷移**命令，然後再次按右鍵專案，選擇**Python** > **Django 創建超級使用者**命令，然後按照提示進行操作。 (如果您試著先建立進階使用者，將會看到錯誤訊息，原因是資料庫尚未初始化)。
+1. Python 設定好虛擬環境後，在顯示的 *readme.html* 中會有相關操作方法，請遵循指示來初始化並建立 Django 進階使用者 (也就是系統管理員)。 步驟是先以滑鼠右鍵按一下**方案總管**中的 **>djangopolls**專案，選取 [ **python**  >  **Django 遷移**] 命令，然後再次以滑鼠右鍵按一下專案、選取 [ **Python**  >  **Django 建立超級使用者**] 命令，然後遵循提示進行。 (如果您試著先建立進階使用者，將會看到錯誤訊息，原因是資料庫尚未初始化)。
 
-1. 通過在**解決方案資源管理器**中按右鍵該專案並選擇 **"設置為啟動專案**"，將**DjangoPolls**專案設置為 Visual Studio 解決方案的預設值。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
+1. 在**方案總管**中以滑鼠右鍵按一下該專案，然後選取 [**設定為啟始專案**]，將 **>djangopolls**專案設定為 Visual Studio 方案的預設專案。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
 
-1. 選擇**調試** > **啟動調試**（**F5**） 或使用工具列上的**Web 服務器**按鈕運行伺服器：
+1. 選取 [ **Debug**  >  **開始調試**] (**F5**) 或使用工具列上的 [ **Web 服務器**] 按鈕來執行伺服器：
 
     ![Visual Studio 中的 [執行網頁伺服器] 工具列按鈕](media/django/run-web-server-toolbar-button.png)
 
@@ -112,9 +112,9 @@ class Choice(models.Model):
         return self.text
 ```
 
-如您所見，Poll 會在其 `text` 欄位中保留一段描述，以及在 `pub_date` 中保留一個發行日期。 這些欄位是資料庫中輪詢的唯一存在欄位;該`total_votes`欄位在運行時計算。
+如您所見，Poll 會在其 `text` 欄位中保留一段描述，以及在 `pub_date` 中保留一個發行日期。 這些欄位是唯一存在於資料庫輪詢的欄位;此 `total_votes` 欄位會在執行時間計算。
 
-Choice 是透過 `poll` 欄位與 Poll 產生關聯，而且在 `text` 包含一段描述，以及在 `votes` 保留該選擇的一個計數。 該`votes_percentage`欄位在運行時計算，在資料庫中找不到。
+Choice 是透過 `poll` 欄位與 Poll 產生關聯，而且在 `text` 包含一段描述，以及在 `votes` 保留該選擇的一個計數。 `votes_percentage`欄位是在執行時間計算的，而且在資料庫中找不到。
 
 欄位類型的完整清單是 `CharField` (有限文字) `TextField` (無限文字)、`EmailField`、`URLField`、`DateTimeField`、`IntegerField`、`DecimalField`、`BooleanField`、`ForeignKey` 和 `ManyToMany`。 每個欄位都會採用一些屬性，例如 `max_length`。 `blank=True` 屬性表示欄位是選擇性的。`null=true` 表示值是選擇性的。 另外還有一個 `choices` 屬性，它會將值限制為資料值/顯示值 tuple 陣列中旳值。 (請參閱 Django 文件中的[模型欄位參考](https://docs.djangoproject.com/en/2.0/ref/models/fields/))。
 
@@ -170,7 +170,7 @@ def seed(request):
 
 1. 變更 *models.py* 檔案中的模型。
 1. 到 Visual Studio 中的 [方案總管]****，然後在專案上按一下滑鼠右鍵，接下來依序選取 [Python]**** > [Django 遷移]**** 命令。 如先前所述，這個命令會在 *app/migrations* 中產生指令碼，以便將資料庫從目前的狀態遷移至新的狀態。
-1. 要將腳本應用於實際資料庫，請再次按右鍵專案並選擇**Python** > **Django 遷移**。
+1. 若要將腳本套用至實際資料庫，請再次以滑鼠右鍵按一下專案，然後選取 [ **Python**  >  **Django 遷移**]。
 
 Django 會追蹤哪些已套用至任何特定資料庫的遷移，所以只要您執行遷移命令，Django 就會套用任何必要的遷移。 比方說您建立新的空白資料庫，執行遷轉命令便會套用每一個遷轉指令碼，讓您擁有最新的模型。 同樣地，如果您對多個模型進行變更，並在開發電腦上產生遷移，就可以在生產伺服器上執行遷移命令，以便能夠將累積的遷移套用至生產資料庫。 Django 又會再一次只套用那些自從生產資料庫最後一次遷移之後，另外產生的遷移指令碼。
 
@@ -182,23 +182,23 @@ Django 會追蹤哪些已套用至任何特定資料庫的遷移，所以只要�
     author = models.CharField(max_length=100, blank=True)
     ```
 
-1. 保存檔，然後按右鍵**解決方案資源管理器**中的**DjangoPolls**專案，然後選擇**Python** > **Django 遷移**命令。
-1. 選擇"**專案** > **顯示所有檔"** 命令以查看**遷移**資料夾中新生成的腳本，其名稱以**002_auto_** 開頭。 在檔案上按一下滑鼠右鍵，然後選取 [App_Data] 資料夾，然後選取 [包括在專案中]****。 然後，您可以選擇 **"專案** > **顯示所有檔**"以還原原始視圖。 (請參閱下方的第二個問題，了解這個步驟的詳細資料)。
+1. 儲存檔案，然後以滑鼠右鍵按一下**方案總管**中的 **>djangopolls**專案，然後選取 [ **Python**  >  **Django 建立遷移**] 命令。
+1. 選取 [**專案**  >  **顯示所有**檔案] 命令，以在 [**遷移**] 資料夾中查看新產生的腳本，其名稱以**002_auto_** 開頭。 在檔案上按一下滑鼠右鍵，然後選取 [App_Data] 資料夾，然後選取 [包括在專案中]****。 然後，您可以選取 [**專案**  >  **顯示所有**檔案] 來還原原始的視圖。 (請參閱下方的第二個問題，了解這個步驟的詳細資料)。
 1. 如有需要，開啟這個檔案並檢查 Django 指令碼如伺記錄模型從舊狀態到新狀態狀態之間的變動過程。
-1. 再次按右鍵視覺化工作室專案，然後選擇**Python** > **Django 遷移**以將更改應用於資料庫。
+1. 再以滑鼠右鍵按一下 Visual Studio 專案，然後選取 [ **Python**  >  **Django 遷移**]，將變更套用到資料庫。
 1. 如有需要，請在適當的檢視器中開啟資料庫，以確認變更。
 
 整體來說，Django 的遷移功能表示您永遠不需要手動管理資料庫結構描述。 只要在您的模型做一些變更，接著產生遷移指令碼，然後使用遷移命令來套用這些指令碼就可以了。
 
 ### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>問題：萬一我對模型做了一些變更，但之後卻忘了執行遷移命令，該怎麼辦？
 
-答：如果模型與資料庫中的內容不匹配，則 Django 在運行時失敗，但有相應的例外。 例如，如果您忘記遷移上一節中顯示的模型更改，則會看到一個錯誤 **，沒有這樣的列：app_poll.author**：
+答：如果模型不符合資料庫中的內容，Django 會在執行時間失敗，並出現適當的例外狀況。 例如，如果您忘記遷移上一節中所示的模型變更，您會看到 **沒有此類資料行的錯誤： app_poll. 作者**：
 
 ![當模型變更尚未遷移時，就會顯示錯誤](media/django/step06-exception-when-forgetting-to-migrate.png).
 
 ### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>問題： 為什麼執行 Djang 遷移之後，方案總管不顯示產生的新指令碼？
 
-回答：雖然產生的新指令碼存在於 *app/migrations* 資料夾並在執行 [Django 遷移]**** 命令時套用了新指令碼，但因為它們未被新增至 Visual Studio 專案，所以不會自動顯示在 [方案總管] **** 中。 要使它們可見，請首先選擇"**專案** > **顯示所有檔"** 功能表命令或下圖中概述的工具列按鈕。 這個命令會使用虛線輪廓圖示代表尚未新增至專案中的項目，讓**方案總管**顯示資料夾中的所有檔案。 在您想新增的檔案上按一下滑鼠右鍵，然後選取 [包含在專案中]****，這樣下次您認可時，也會將它們包含在原始控制項中。
+回答：雖然產生的新指令碼存在於 *app/migrations* 資料夾並在執行 [Django 遷移]**** 命令時套用了新指令碼，但因為它們未被新增至 Visual Studio 專案，所以不會自動顯示在 [方案總管] **** 中。 若要顯示它們，請先選取 [顯示所有檔案的**專案**]  >  **Show All Files**功能表命令，或下圖中所述的工具列按鈕。 這個命令會使用虛線輪廓圖示代表尚未新增至專案中的項目，讓**方案總管**顯示資料夾中的所有檔案。 在您想新增的檔案上按一下滑鼠右鍵，然後選取 [包含在專案中]****，這樣下次您認可時，也會將它們包含在原始控制項中。
 
 ![包含在方案總管的專案命令中](media/django/step06-include-migrations-script-in-project.png)
 

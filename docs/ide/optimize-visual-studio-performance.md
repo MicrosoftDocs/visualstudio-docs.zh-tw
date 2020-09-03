@@ -13,10 +13,10 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6495e8506e12c0c5e5f878a23c609fe53a401bde
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596992"
 ---
 # <a name="optimize-visual-studio-performance"></a>最佳化 Visual Studio 效能
@@ -53,5 +53,5 @@ ms.locfileid: "75596992"
 
 ## <a name="see-also"></a>另請參閱
 
-- [性能提示和技巧](../ide/visual-studio-performance-tips-and-tricks.md)
+- [效能秘訣和訣竅](../ide/visual-studio-performance-tips-and-tricks.md)
 - [Visual Studio 部落格 - 使用 Visual Studio 2017 15.6 版更快速地載入解決方案](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

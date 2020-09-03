@@ -7,10 +7,10 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
 ms.openlocfilehash: d2ce3b3cdbf1a4cf1f19956a7327d73c0bb34b62
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72807160"
 ---
 # <a name="javascript-and-typescript-support"></a>JavaScript 和 TypeScript 支援
@@ -35,11 +35,11 @@ JavaScript 檔案最常透過 [新增檔案]**** 對話方塊新增至 ASP.NET C
 
 Visual Studio for Mac 使用 [JavaScript Language Service](/visualstudio/ide/javascript-intellisense) 來提供 IntelliSense，讓您撰寫程式碼時，可擁有智慧型程式碼完成功能、參數資訊和成員清單。
 
-適用于 Mac 的視覺化工作室中的 JavaScript IntelliSense 可以基於型別推斷、JSDoc 或 TypeScript 聲明。
+Visual Studio for Mac 中的 JavaScript IntelliSense 可以根據型別推斷、JSDoc 或 TypeScript 宣告來進行。
 
 - **型別推斷** – 藉由周圍的程式碼內容來判斷物件類型。 如需詳細資訊，請參閱 Visual Studio 的 [以型別推斷為基礎的 IntelliSense](/visualstudio/ide/javascript-intellisense#intellisense-based-on-type-inference) 一節。
 - **JSDoc** – 有些時候型別推斷無法提供正確的類型資訊。 在此情況下，[JSDoc](https://jsdoc.app/about-getting-started.html) 註解可以明確提供類型資訊。 如需詳細資訊，請參閱 Visual Studio 的 [以 JSDoc 為基礎的 IntelliSense](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc) 一節
-- **TypeScript 聲明檔**–`.d.ts`檔用於為 JavaScript IntelliSense 提供值。 該檔案中宣告的類型可作為 JSDoc 註解之類型。 如需詳細資訊，請參閱 Visual Studio 的[以 TypeScript 宣告檔案為基礎的 IntelliSense](/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files) 一節
+- **TypeScript** 宣告檔–檔案 `.d.ts` 是用來提供 JavaScript IntelliSense 的值。 該檔案中宣告的類型可作為 JSDoc 註解之類型。 如需詳細資訊，請參閱 Visual Studio 的[以 TypeScript 宣告檔案為基礎的 IntelliSense](/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files) 一節
 
     ![新增 TypeScript 定義檔](media/javascript-type-intellisense-2019.gif)
 

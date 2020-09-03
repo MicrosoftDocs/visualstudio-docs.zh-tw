@@ -18,10 +18,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d66a7be3751e74ff75787ef194f90da1dcd1d3ce
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593287"
 ---
 # <a name="getoutputfilename-task"></a>GetOutputFileName 工作
@@ -34,11 +34,11 @@ ms.locfileid: "75593287"
 
 |參數|描述|
 |---------------|-----------------|
-|**OutputExtension**|所需的**字串**參數。|
-|**輸出檔案**|選擇性的 **string** 輸出參數。|
-|**輸出路徑**|可選**字串**參數。|
-|**原始檔案**|所需的**字串**參數。|
+|**OutputExtension**|必要的 **字串** 參數。|
+|**OutputFile**|選擇性的 **string** 輸出參數。|
+|**OutputPath**|選擇性的 **字串** 參數。|
+|**SourceFile**|必要的 **字串** 參數。|
 
 ## <a name="see-also"></a>另請參閱
 
-[任務引用](../msbuild/msbuild-task-reference.md)
+[工作參考](../msbuild/msbuild-task-reference.md)

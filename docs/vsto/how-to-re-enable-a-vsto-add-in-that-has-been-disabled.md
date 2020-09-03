@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3575e119f4da3ca3050a28243104fb4773089cf3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541254"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>如何：重新啟用已停用的 VSTO 增益集
@@ -28,14 +28,14 @@ ms.locfileid: "85541254"
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
 
-## <a name="hard-disabled-vsto-add-ins"></a>已停用的 VSTO 增益集
- 當 VSTO 增益集導致應用程式意外關閉時，可能會發生硬停用。 在開發電腦上，如果您在 VSTO 增益集中的 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件處理常式正在執行時停止偵錯工具，也可能發生這種情形。
+## <a name="hard-disabled-vsto-add-ins"></a>硬停用的 VSTO 增益集
+ 當 VSTO 增益集導致應用程式意外關閉時，可能會發生強制停用。 在開發電腦上，如果您在 VSTO 增益集中的 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件處理常式正在執行時停止偵錯工具，也可能發生這種情形。
 
 ### <a name="to-re-enable-a-vsto-add-in"></a>若要重新啟用 VSTO 增益集
 
 1. 在應用程式中，按一下 [檔案] **** 索引標籤。
 
-2. 按一下 [ *ApplicationName* **選項**] 按鈕。
+2. 按一下 [ *ApplicationName* **選項** ] 按鈕。
 
 3. 在分類窗格中，按一下 [增益集] ****。
 
@@ -47,9 +47,9 @@ ms.locfileid: "85541254"
 
 6. 選取 VSTO 增益集，然後按一下 [啟用] ****。
 
-7. 按一下 [關閉] 。
+7. 按一下 [關閉]  。
 
-## <a name="soft-disabled-vsto-add-ins"></a>虛停用的 VSTO 增益集
+## <a name="soft-disabled-vsto-add-ins"></a>已停用已停用的 VSTO 增益集
  當 VSTO 增益集產生的錯誤不會導致應用程式意外關閉時，可能會發生非強制停用。 例如，如果在 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件處理常式正在執行時擲回未處理的例外狀況，應用程式可能會非強制停用 VSTO 增益集。
 
 > [!NOTE]
@@ -59,7 +59,7 @@ ms.locfileid: "85541254"
 
 1. 在應用程式中，按一下 [檔案] **** 索引標籤。
 
-2. 按一下 [ *ApplicationName* **選項**] 按鈕。
+2. 按一下 [ *ApplicationName* **選項** ] 按鈕。
 
 3. 在分類窗格中，按一下 [增益集] ****。
 
@@ -71,9 +71,9 @@ ms.locfileid: "85541254"
 
 6. 在 [COM 增益集] **** 對話方塊中，選取已停用 VSTO 增益集旁邊的核取方塊。
 
-7. 按一下 [確定] 。
+7. 按一下 [確定]  。
 
 ## <a name="see-also"></a>另請參閱
-- [組建 Office 方案](../vsto/building-office-solutions.md)
+- [建立 Office 方案](../vsto/building-office-solutions.md)
 - [Debug Office 專案](../vsto/debugging-office-projects.md)
 - [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)

@@ -9,10 +9,10 @@ ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
 ms.openlocfilehash: 48fc1a02ad34a3d5229ead0da79c0f6fa781670e
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711647"
 ---
 # <a name="whats-new-in-msbuild-160"></a>MSBuild 16.0 的新功能
@@ -35,6 +35,6 @@ ms.locfileid: "88711647"
 
 MSBuild (與 Visual Studio) 現在以 .NET Framework 4.7.2 為目標。 若要使用新的 MSBuild API 功能，您的組件也必須升級，但現有的程式碼將繼續運作。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [MSBuild](../msbuild/msbuild.md)

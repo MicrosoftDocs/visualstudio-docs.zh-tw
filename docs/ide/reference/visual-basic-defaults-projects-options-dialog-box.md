@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f33dd9b19297811597be406337d70392904e6e44
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596379"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>選項對話方塊、專案、Visual Basic 預設值
@@ -36,7 +36,7 @@ ms.locfileid: "75596379"
 
  **Option Compare**
 
-設置字串比較的編譯器預設值：二進位（區分大小寫）或文本（不區分大小寫）。預設情況下，**選項比較**設置為**二進位**。 如需詳細資訊，請參閱 [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare)。
+設定字串比較的編譯器預設值：二進位 (區分大小寫的) 或文字 (不區分大小寫 ) 。根據預設，[ **選項比較** ] 會設定為 [ **二進位**]。 如需詳細資訊，請參閱 [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare)。
 
  **Option Infer**
 
@@ -44,4 +44,4 @@ ms.locfileid: "75596379"
 
 ## <a name="see-also"></a>另請參閱
 
-- [方案與專案](../../ide/solutions-and-projects-in-visual-studio.md)
+- [方案和專案](../../ide/solutions-and-projects-in-visual-studio.md)

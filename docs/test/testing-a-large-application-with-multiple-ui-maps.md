@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99e703d10d2bc6ed8fd573f4973e73f7ad40a937
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286579"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>測試含有多個 UI 對應的大型應用程式
@@ -25,7 +25,7 @@ ms.locfileid: "85286579"
 
 **需求**
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
 當您建立新的自動程式化 UI 測試時，Visual Studio 測試架構預設會以 [UIMap](/previous-versions/dd580454(v=vs.140)) 類別針對測試產生程式碼。 如需如何錄製自動程式化 UI 測試的詳細資訊，請參閱[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)和[自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)。
 
@@ -50,7 +50,7 @@ ms.locfileid: "85286579"
 
 ### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>將 UI 對應加入至自動程式化 UI 測試專案
 
-1. 在**方案總管**中，若要在自動程式化 ui 測試專案中建立資料夾以儲存所有 UI 對應，請以滑鼠右鍵按一下自動程式碼 ui 測試專案檔，指向 [**加入**]，然後選擇 [**新增資料夾**]。 例如，您可以將它命名為 `UIMaps`。
+1. 在 **方案總管**中，若要在自動程式化 ui 測試專案中建立資料夾以儲存所有 UI 對應，請以滑鼠右鍵按一下自動程式碼 ui 測試專案檔，指向 [ **加入**]，然後選擇 [ **新增資料夾**]。 例如，您可以將它命名為 `UIMaps`。
 
     新資料夾隨即顯示在自動程式化 UI 測試專案底下。
 
@@ -65,7 +65,7 @@ ms.locfileid: "85286579"
 
     在 [名稱]**** 方塊中，輸入新 UI 對應的名稱。 使用該對應將代表的元件或頁面名稱，例如， `HomePageMap`。
 
-4. 選擇 [**新增**]。
+4. 選擇 [ **新增**]。
 
     [Visual Studio] 視窗會最小化，而 [自動程式化 UI 測試產生器]**** 對話方塊隨即顯示。
 

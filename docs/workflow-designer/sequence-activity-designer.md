@@ -11,21 +11,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 77980077a580724f6db6bb5a544200890421d8e5
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875965"
 ---
 # <a name="sequence-activity-designer"></a>Sequence 活動設計工具
 
 <xref:System.Activities.Statements.Sequence> 活動會包含子活動的已排序集合，而該集合會依序執行。
 
-另一種依序執行一組活動的方式，則是使用 <xref:System.Activities.Statements.Flowchart> 活動。 當您有想要建立模型 diagrammatically 的簡單分支或迴圈程式流程時，請考慮使用[流程圖](../workflow-designer/flowchart-activity-designer.md)。
+另一種依序執行一組活動的方式，則是使用 <xref:System.Activities.Statements.Flowchart> 活動。 當您有想要 diagrammatically 模型的簡單分支或迴圈程式流程時，請考慮使用 [流程圖](../workflow-designer/flowchart-activity-designer.md) 。
 
 ## <a name="using-the-sequence-activity-designer"></a>使用 Sequence 活動設計工具
 
-若要加入 <xref:System.Activities.Statements.Sequence> 活動，請從 [工具箱] 將 [ **Sequence** ] 活動設計**工具**拖曳至工作流程設計工具介面上。 若要將子活動加入此 <xref:System.Activities.Statements.Sequence> 活動，請從 [**工具箱**] 拖曳一些其他活動，並將它放在方塊中的三角形上，並出現提示文字「在此放置活動」。
+若要加入 <xref:System.Activities.Statements.Sequence> 活動，請從 [工具箱] 將 [ **Sequence** ] 活動設計 **工具** 拖曳至 [工作流程設計工具介面。 若要將子活動新增至此 <xref:System.Activities.Statements.Sequence> 活動，請從 [ **工具箱** ] 拖曳一些其他活動，然後將它放在方塊中的三角形旁邊，並將提示文字顯示為 [在此放置活動]。
 
 ### <a name="sequence-activity-properties-in-the-workflow-designer"></a>工作流程設計工具中的 Sequence 活動屬性
 

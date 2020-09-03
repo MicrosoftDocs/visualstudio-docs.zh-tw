@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e5237d8a524bd77f67c86a650bb4c8f075e407fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190634"
 ---
-# <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
+# <a name="idiasourcefileget_uniqueid"></a>IDiaSourceFile::get_uniqueId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取都是唯一的這個映像的簡單的整數值。  
+抓取此映射的唯一唯一整數值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,13 +35,13 @@ HRESULT get_uniqueId ( 
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回簡單的整數的金鑰值，都是唯一的這個映像。  
+ 擴展傳回這個影像的唯一唯一整數值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 比較索引鍵，而不是字串可以加速行數字處理。  
+ 比較索引鍵而非字串可加速行號處理。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

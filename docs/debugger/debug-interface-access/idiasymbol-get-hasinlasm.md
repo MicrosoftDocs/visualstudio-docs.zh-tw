@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8bd9207a802a919e1dd86624584bda6963d2f278
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463705"
 ---
 # <a name="idiasymbolget_hasinlasm"></a>IDiaSymbol::get_hasInlAsm
-抓取指定函數是否包含內嵌組解碼的旗標。
+抓取指定函式是否包含內嵌元件的旗標。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_hasInlAsm(
 #### <a name="parameters"></a>參數
  `pFlag`
 
-脫銷`TRUE`如果函數有任何內嵌元件，則傳回，否則傳回 `FALSE` 。
+擴展如果函式 `TRUE` 具有任何內嵌元件，則傳回，否則傳回 `FALSE` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。

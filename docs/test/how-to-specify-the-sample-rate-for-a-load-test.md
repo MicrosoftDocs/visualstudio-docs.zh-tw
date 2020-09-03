@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ab77354226028397d5875137ed331860a4b32925
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287385"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>如何：指定負載測試回合設定的採樣速率
@@ -23,7 +23,7 @@ ms.locfileid: "85287385"
 
 使用 [負載測試編輯器]**** 時，您可以在 [屬性]**** 視窗中編輯回合設定的 [採樣速率]**** 屬性值。 如需回合設定屬性及其描述的完整清單，請參閱[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。
 
-請根據負載測試的長度，為負載測試回合設定選擇 [採樣速率]**** 屬性的適當值。 較小的取樣率 (例如五秒的預設值) 會在負載測試結果資料庫中佔用較多空間。 若為較長的負載測試，增加取樣率會降低您所收集的資料量。 如需詳細資訊，請參閱[如何：指定負載測試回合設定的取樣率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。
+請根據負載測試的長度，為負載測試回合設定選擇 [採樣速率]**** 屬性的適當值。 較小的取樣率 (例如五秒的預設值) 會在負載測試結果資料庫中佔用較多空間。 若為較長的負載測試，增加取樣率會降低您所收集的資料量。 如需詳細資訊，請參閱 [如何：指定負載測試回合設定的取樣率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。
 
 下面是一些取樣率的方針：
 

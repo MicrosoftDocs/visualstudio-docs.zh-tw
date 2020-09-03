@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1b821b4e63f82233b3c2e92fa3f5c3481cda982
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876186"
 ---
 # <a name="messaging-activity-designers"></a>傳訊活動設計工具
 
-訊息活動設計工具是用來建立和設定訊息活動，從 Windows Workflow Foundation （WF）應用程式中傳送和接收 Windows Communication Foundation （WCF）訊息。 .NET Framework 4 引進了五個訊息活動。 工作流程設計工具提供兩個範本設計工具，可讓您管理工作流程內的訊息。
+訊息活動設計工具是用來建立和設定訊息活動，以從 Windows Workflow Foundation (WF) 應用程式內傳送和接收 Windows Communication Foundation (WCF) 訊息。 .NET Framework 4 引進了五個訊息活動。 工作流程設計工具提供兩個範本設計工具，可讓您管理工作流程內的訊息。
 
-本節包含的主題以及下表所列的主題，提供如何使用工作流程設計工具活動和範本設計工具的指引。
+本節所包含的主題以及下表所列的主題，提供如何使用工作流程設計工具活動和範本設計工具的指引。
 
 - <xref:System.Activities.Activity>
 
@@ -37,7 +37,7 @@ ms.locfileid: "86876186"
 
 ## <a name="related-sections"></a>相關章節
 
-如需其他類型的活動設計工具，請參閱下列主題：
+針對其他類型的活動設計工具，請參閱下列主題：
 
 - [控制流程](../workflow-designer/control-flow-activity-designers.md)
 
@@ -47,7 +47,7 @@ ms.locfileid: "86876186"
 
 - [執行階段](../workflow-designer/runtime-activity-designers.md)
 
-- [基本](../workflow-designer/primitives-activity-designers.md)
+- [基本型別](../workflow-designer/primitives-activity-designers.md)
 
 - [交易](../workflow-designer/transaction-activity-designers.md)
 

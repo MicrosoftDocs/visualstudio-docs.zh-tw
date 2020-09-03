@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 14b7320a38d474748713d687f4ee00b5b91f0208
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287073"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>如何：使用 Web 效能測試 API
@@ -27,7 +27,7 @@ ms.locfileid: "85287073"
 > [!TIP]
 > 使用物件瀏覽器檢查 <xref:Microsoft.VisualStudio.TestTools.WebTesting> 命名空間。 Visual C# 和 Visual Basic 編輯器都提供 IntelliSense 支援，以便使用命名空間中的類別來撰寫程式碼。
 
-您也可以為負載測試建立外掛程式。 如需詳細資訊，請參閱[如何：使用負載測試 API](../test/how-to-use-the-load-test-api.md)和[如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
+您也可以為負載測試建立外掛程式。 如需詳細資訊，請參閱 [如何：使用負載測試 API](../test/how-to-use-the-load-test-api.md) 和 how [to：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
 
 ## <a name="to-use-the-webtesting-namespace"></a>若要使用 WebTesting 命名空間
 
@@ -62,7 +62,7 @@ ms.locfileid: "85287073"
 
 9. 執行您的 Web 效能測試。
 
-     如需的範例執行 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> ，請參閱[如何：建立 web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)。
+     如需的範例執行 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> ，請參閱 [如何：建立 web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 48e867cd0993106247f7105c1102f4e1407a4fed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190902"
 ---
 # <a name="message-task"></a>訊息工作
@@ -34,19 +34,19 @@ ms.locfileid: "68190902"
 ## <a name="parameters"></a>參數  
  下表說明 `Message` 工作的參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
-|`Importance`|選擇性的 `String` 參數。<br /><br /> 指定訊息的重要性。 此參數的值可以是 `high`、`normal` 或 `low`。 預設值為 `normal`。|  
+|`Importance`|選擇性的 `String` 參數。<br /><br /> 指定訊息的重要性。 此參數的值可以是 `high`、`normal` 或 `low`。 預設值是 `normal`。|  
 |`Text`|選擇性的 `String` 參數。<br /><br /> 要記錄的錯誤文字。|  
   
 ## <a name="remarks"></a>備註  
  `Message` 工作可讓 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案在建置流程各個步驟期間將訊息發送到記錄器。  
   
- 如果 `Condition` 參數評估為 `true`，將會記錄 `Text` 參數的值，而建置將會繼續執行。 如果 `Condition` 參數不存在，便會記錄訊息文字。 如需記錄的詳細資訊，請參閱[取得建置記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)。  
+ 如果 `Condition` 參數評估為 `true`，將會記錄 `Text` 參數的值，而建置將會繼續執行。 如果 `Condition` 參數不存在，便會記錄訊息文字。 如需有關記錄的詳細資訊，請參閱 [取得組建記錄](../msbuild/obtaining-build-logs-with-msbuild.md)檔。  
   
  根據預設，訊息會傳送至 MSBuild 主控台記錄器。 您可以設定 <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> 參數來變更這項作業。 記錄器會解譯 `Importance` 參數。  
   
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="example"></a>範例  
  下列程式碼範例會將訊息記錄到所有已註冊的記錄器。  

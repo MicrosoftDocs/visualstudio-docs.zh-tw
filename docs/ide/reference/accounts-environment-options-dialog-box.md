@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ff457523024db49502ae982a390d9a7be6ba9dd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595900"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>選項對話方塊、環境、帳戶
@@ -33,7 +33,7 @@ ms.locfileid: "75595900"
 
 ## <a name="registered-azure-clouds"></a>已註冊的 Azure 雲端
 
-本節說明可讓您透過一或多個用來登入 Visual Studio 帳戶存取的 Azure 雲端執行個體。 例如，您可能擁有貴公司資料中心的 Azure 私人執行個體存取權。 或者，您可能有權訪問 Azure 的主權或政府實例，如 Azure 中國 21 Vianet 或 Azure 美國政府。 根據預設，全域 Azure 雲端執行個體會出現在清單中且無法移除。
+本節說明可讓您透過一或多個用來登入 Visual Studio 帳戶存取的 Azure 雲端執行個體。 例如，您可能擁有貴公司資料中心的 Azure 私人執行個體存取權。 或者，您可以存取主權或政府的 Azure 實例，例如 Azure 中國 21 Vianet 或 Azure 美國政府。 根據預設，全域 Azure 雲端執行個體會出現在清單中且無法移除。
 
 選擇 [新增]**** 按鈕，註冊額外的 Azure 雲端。 [新增 Azure 雲端]**** 對話方塊會列出數個您可以連線的已知 Azure 雲端執行個體，或者您也可以將 URL 輸入至私人 Azure 端點。
 
@@ -45,5 +45,5 @@ ms.locfileid: "75595900"
 
 - [跨多部電腦同步處理設定](../synchronized-settings-in-visual-studio.md)
 - [登入 Visual Studio](../signing-in-to-visual-studio.md)
-- [使用多個使用者帳戶](../work-with-multiple-user-accounts.md)
+- [Work with multiple user accounts](../work-with-multiple-user-accounts.md)
 - [環境設定](../environment-settings.md)

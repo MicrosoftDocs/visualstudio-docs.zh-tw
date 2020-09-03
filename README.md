@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: cf93d619ddeb385960eae74de8b64a7f11b7be4d
-ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87115294"
 ---
 # <a name="visual-studio-documentation"></a>Visual Studio 文件
@@ -16,7 +16,7 @@ Visual Basic 和 Visual C# 的文件位在 [dotnet 文件存放庫](https://gith
 
 ## <a name="contribute-to-the-documentation"></a>參與文件
 
-我們歡迎您的貢獻，協助我們改善 Visual Studio 檔。此存放庫中的所有文章都使用 GitHub-flavored markdown。
+我們歡迎您的投稿，協助我們改善 Visual Studio 檔。此存放庫中的所有文章都使用 GitHub flavored markdown。
 
 Visual Studio 的數個功能區域都在此儲存機制有自己的資料夾，如 **debugger ** 適用於偵錯主題，**ide** 適用於 Visual Studio 互動式開發環境 (IDE) 等等。 每個資料夾的 **/media** 子資料夾中都包含主題的美工檔案。
 

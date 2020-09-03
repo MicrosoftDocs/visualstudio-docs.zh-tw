@@ -17,10 +17,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d7a6029058ab0bc02a623df0e1733eb8548102d5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596251"
 ---
 # <a name="options-text-editor-cc-formatting"></a>選項、文字編輯器、C/C++、格式設定
@@ -32,7 +32,7 @@ ms.locfileid: "75596251"
 若要存取這個頁面，請在 [選項]**** 對話方塊的左窗格中依序展開 [文字編輯器]**** 和 [C/C++]****，然後按一下 [格式]****。
 
 > [!NOTE]
-> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 有關詳細資訊，請參閱[個人化視覺化工作室 IDE](../../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱 [個人化 VISUAL STUDIO IDE](../../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="general-page"></a>一般頁面
 
@@ -40,7 +40,7 @@ ms.locfileid: "75596251"
 
 ::: moniker range="vs-2017"
 
-**視覺工作室 2017 版本 15.7 及更高版本**：
+**Visual Studio 2017 15.7 版和更新版本**：
 
 ::: moniker-end
 
@@ -50,7 +50,7 @@ ms.locfileid: "75596251"
 
 ::: moniker range="vs-2017"
 
-**視覺工作室 2017 版本 15.7 及更高版本**：
+**Visual Studio 2017 15.7 版和更新版本**：
 
 ::: moniker-end
 
@@ -64,5 +64,5 @@ ms.locfileid: "75596251"
 
 ## <a name="see-also"></a>另請參閱
 
-- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)
-- [Using IntelliSense](../../ide/using-intellisense.md)
+- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
+- [使用 IntelliSense](../../ide/using-intellisense.md)

@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11ebf6a450aa9b2b5fdd05d6573fc9ee10c6f83e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463824"
 ---
 # <a name="idiasymbolget_hasalloca"></a>IDiaSymbol::get_hasAlloca
-抓取指定函數是否包含呼叫 `alloca` （用來配置堆疊上的記憶體）的旗標。
+抓取旗標，這個旗標會指定函式是否包含 (的呼叫，該呼叫 `alloca` 用來配置堆疊) 的記憶體。
 
 ## <a name="syntax"></a>語法
 
@@ -31,10 +31,10 @@ HRESULT get_hasAlloca(   BOOL *pFlag);
 #### <a name="parameters"></a>參數
  `pFlag`
 
-脫銷如果函數包含對的呼叫，則傳回 `TRUE` `alloca` ，否則傳回 `FALSE` 。
+擴展 `TRUE` 如果函數包含的呼叫，則傳回 `alloca` ，否則傳回 `FALSE` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。

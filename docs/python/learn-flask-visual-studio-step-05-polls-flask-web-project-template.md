@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70154900"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>步驟 5：使用 Polls Flask Web 專案範本
@@ -36,15 +36,15 @@ Visual Studio 也提供「投票 Flask/Jade Web 專案」範本，此範本會�
 
 ## <a name="step-5-1-create-the-project"></a>步驟 5-1：建立專案
 
-1. 在 Visual Studio 中，轉到**解決方案資源管理器**，按右鍵本教程中較早創建的**學習法帕斯克**解決方案，然後選擇"**添加新** > **專案**"。 （或者，如果要使用新解決方案 **，請選擇"****檔** > **新專案** > "。
+1. 在 Visual Studio 中，移至**方案總管**，以滑鼠右鍵按一下本教學課程稍早建立的**LearningFlask**方案，然後選取 [**加入**  >  **新專案**]。  (或者，如果您想要使用新的方案，請**選取 [** 檔案  >  **新增**  >  **專案**]。 ) 
 
-1. 在新專案對話方塊中，搜索並選擇 **"輪詢燒點 Web 專案**"範本，調用專案"FlaskPolls"，然後選擇 **"確定**"。
+1. 在 [新增專案] 對話方塊中，搜尋並選取 [ **投票 Flask Web 專案** ] 範本，呼叫 "命名為 flaskpolls" 專案，然後選取 **[確定]**。
 
 1. 一如 Visual Studio 中的其他專案範本，「投票 Flask Web 專案」範本也有 *requirements.txt* 檔案，Visual Studio 會詢問您這些相依性的安裝位置。 選擇 [安裝至虛擬環境]**** 選項，然後在 [新增虛擬環境]**** 對話方塊中，選取 [建立]**** 並接受預設值。 (此範本需要 Flask、azure-storage 與 pymongo 套件，「投票 Flask/Jade Web 專案」還需要 pyjade)。
 
-1. 通過在**解決方案資源管理器**中按右鍵該專案並選擇 **"設置為啟動專案**"，將**FlaskPolls**專案設置為 Visual Studio 解決方案的預設值。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
+1. 在**方案總管**中以滑鼠右鍵按一下該專案，然後選取 [**設定為啟始專案**]，將**命名為 flaskpolls**專案設定為 Visual Studio 方案的預設專案。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
 
-1. 選擇**調試** > **啟動調試**（**F5**） 或使用工具列上的**Web 服務器**按鈕運行伺服器：
+1. 選取 [ **Debug**  >  **開始調試**] (**F5**) 或使用工具列上的 [ **Web 服務器**] 按鈕來執行伺服器：
 
     ![Visual Studio 中的 [執行網頁伺服器] 工具列按鈕](media/django/run-web-server-toolbar-button.png)
 
@@ -76,7 +76,7 @@ Visual Studio 也提供「投票 Flask/Jade Web 專案」範本，此範本會�
 
 ## <a name="step-5-2-understand-the-data-models"></a>步驟 5-2：了解資料模型
 
-應用的資料模型是名為"輪詢和選擇"的 Python 類，這些類在*模型\_\_/init\_\_.py*中定義。 Poll 代表問題，而其 Choice 執行個體的集合則代表可用的解答。 Poll 也保有投票總數 (針對任何選項)，以及可計算用來產生檢視之統計資料的方法：
+應用程式的資料模型是名為輪詢和 Choice 的 Python 類別，其定義于*模型/ \_ \_ init \_ \_ . .py*中。 Poll 代表問題，而其 Choice 執行個體的集合則代表可用的解答。 Poll 也保有投票總數 (針對任何選項)，以及可計算用來產生檢視之統計資料的方法：
 
 ```python
 class Poll(object):
@@ -187,7 +187,7 @@ class Choice(object):
 
 ### <a name="seed-the-data-store-from-samplesjson"></a>從 samples.json 植入資料存放區
 
-最初，任何選定的資料存儲都不包含輪詢，因此應用的主頁顯示消息 **"無輪詢"** 以及 **"創建示例輪詢"** 按鈕。 不過，選取該按鈕之後，檢視就會變更為顯示可用的投票項目。 這個切換會透過 *templates\index.html* 中的條件式標籤進行 (為了簡潔起見，已省略一些空白行)：
+一開始，任何選擇的資料存放區都不會包含任何輪詢，因此應用程式的首頁會顯示「 **沒有可用的輪詢** 」和「 **建立範例輪詢** 」按鈕的訊息。 不過，選取該按鈕之後，檢視就會變更為顯示可用的投票項目。 這個切換會透過 *templates\index.html* 中的條件式標籤進行 (為了簡潔起見，已省略一些空白行)：
 
 ```html
 {% extends "layout.html" %}
@@ -228,7 +228,7 @@ def seed():
     return redirect('/')
 ```
 
-對 `repository.add_sample_polls()` 的呼叫最後會成為您所選資料存放區的其中一個特定 `Repository` 實作。 每個實現調用*在\_\_模型 init\_\_.py*中找到`_load_samples_json`的方法將*模型\sample.json*檔載入到記憶體中，然後通過該資料進行重新遍造`Poll`，`Choice`以在資料存儲中創建必要的物件。
+對 `repository.add_sample_polls()` 的呼叫最後會成為您所選資料存放區的其中一個特定 `Repository` 實作。 每個實作為呼叫 `_load_samples_json` * \_ \_ \_ \_ .py*中的方法，以將檔案*models\samples.js*載入至記憶體中，然後逐一查看該資料，以 `Poll` `Choice` 在資料存放區中建立必要的和物件。
 
 該程序完成之後，`seed` 方法中的 `redirect('/')` 陳述式就會瀏覽回首頁。 由於 `repository.get_polls` 現在會傳回資料物件，因此 *templates\index.html* 中的條件式標籤現在會轉譯成包含投票項目的資料表。
 
@@ -242,7 +242,7 @@ def seed():
 
 這裡剩下的就是檢查投票 (詳細資料) 及個別投票項目的結果檢視。
 
-當您從首頁選取某個投票項目時，應用程式會瀏覽至 URL /poll/\<key\>，其中 *key* 是投票項目的唯一識別碼。 在 *views.py* 中，您會看到已指派 `details` 函式來處理 GET 和要求的該項 URL 路由。 您也會看到在 URL 路由中使用 `<key>` 會將任何該形式的路由對應至相同的函式，並產生該相同名稱之函式的引數：
+當您從首頁選取輪詢時，應用程式會流覽至 URL/poll/， \<key\> 其中索引 *鍵* 是輪詢的唯一識別碼。 在 *views.py* 中，您會看到已指派 `details` 函式來處理 GET 和要求的該項 URL 路由。 您也會看到在 URL 路由中使用 `<key>` 會將任何該形式的路由對應至相同的函式，並產生該相同名稱之函式的引數：
 
 ```python
 @app.route('/poll/<key>', methods=['GET', 'POST'])
@@ -296,9 +296,9 @@ def details(key):
 {% endblock %}
 ```
 
-由於 [Vote] \(投票\)**** 按鈕包含 `type="submit"`，因此選取它會產生 POST 要求，此要求會送回給再次路由傳送至 `details` 的同一個 URL。 不過，這次它會從表單資料擷取選項，然後重新導向到 /results/\<choice\>。
+由於 [Vote] \(投票\)**** 按鈕包含 `type="submit"`，因此選取它會產生 POST 要求，此要求會送回給再次路由傳送至 `details` 的同一個 URL。 不過這次，它會從表單資料中解壓縮選擇，並重新導向至/results/ \<choice\> 。
 
-接著，會將 /results/\<key\> URL 路由傳送到 *views.py* 中的 `results` 函式，由此函式接著呼叫投票項目的 `calculate_stats` 方法並採用 *templates\results.html* 來進行轉譯：
+/Results/ \<key\> URL 接著會路由傳送至 `results` *views.py*中的函式，然後呼叫輪詢的方法， `calculate_stats` 並針對轉譯採用 *templates\results.html* ：
 
 ```python
 @app.route('/results/<key>')

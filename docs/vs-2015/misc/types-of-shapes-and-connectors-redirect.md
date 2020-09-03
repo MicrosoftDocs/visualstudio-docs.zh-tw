@@ -1,5 +1,5 @@
 ---
-title: 圖形類型和連接器-重新導向 |Microsoft Docs
+title: 圖形和連接器的類型-重新導向 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -20,11 +20,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac5549ed890c76edf6daa1360f9f622e1f1b860e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672825"
 ---
 # <a name="types-of-shapes-and-connectors---redirect"></a>圖案和接點的類型 - 重新導向
-本主題已與另一個合併。 請參閱[自訂圖表上的簡報](../modeling/customizing-presentation-on-the-diagram.md)。
+本主題已與其他主題合併。 請參閱 [圖表上的自訂簡報](../modeling/customizing-presentation-on-the-diagram.md)。

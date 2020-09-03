@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ff02c3aeab131c0b9a2423c2cb2376d9f0ee618
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602393"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>使用類別圖表 (類別設計工具)
@@ -37,7 +37,7 @@ ms.locfileid: "72602393"
 > [!NOTE]
 > 類別設計工具不會追蹤原始程式檔的位置，因此，變更您的專案結構或移動專案中的原始程式檔，可能會導致類別設計工具遺失類型的追蹤，特別是 typedef、基底類別或關聯類型的來源類型。 您可能會收到錯誤，例如：**類別設計工具無法顯示這個類型**。 如果您收到錯誤訊息，請將已修改或重新配置的原始程式碼再次拖曳到類別圖表中，以重新顯示。
 
-## <a name="in-this-section"></a>本章節內容
+## <a name="in-this-section"></a>本節內容
  [如何：將類別圖表新增至專案 (類別設計工具)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
 
  說明如何將類別圖表加入至專案。
@@ -58,7 +58,7 @@ ms.locfileid: "72602393"
 
  說明如何列印類別圖表。
 
- [如何：將註解新增至類別圖表 (類別設計工具)](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)
+ [如何：將批註新增至類別圖表 (類別設計工具) ](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)
 
  說明如何將註解加入至類別圖表。
 
@@ -66,5 +66,5 @@ ms.locfileid: "72602393"
 
  說明如何從類別圖表移除圖形。
 
-## <a name="see-also"></a>請參閱
- [檢視類型和關聯性（類別設計工具）](../ide/viewing-types-and-relationships-class-designer.md) [如何：自訂類別圖表（類別設計工具）](../ide/how-to-customize-class-diagrams-class-designer.md) [如何：從類別圖表移除類型圖形（類別設計工具）](https://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)
+## <a name="see-also"></a>另請參閱
+ [檢視類型和關聯性 (類別設計工具) ](../ide/viewing-types-and-relationships-class-designer.md) [如何：自訂類別圖表 (類別設計工具) ](../ide/how-to-customize-class-diagrams-class-designer.md) [如何：從類別圖表移除類型圖形 (](https://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)類別設計工具) 

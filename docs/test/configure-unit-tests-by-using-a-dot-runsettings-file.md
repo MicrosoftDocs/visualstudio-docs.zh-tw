@@ -8,40 +8,40 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: f638d60b7bd4416bb7a19cc960cac1159c755ab3
-ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86972292"
 ---
-# <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings*檔案設定單元測試
+# <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
-您可以使用 *.runsettings*檔案來設定 Visual Studio 中的單元測試。 例如，您可以變更執行測試的 .NET 版本、測試結果的所在目錄，或在測試回合期間所收集的資料。 *.runsettings* 檔案常見的用法是用來自訂[程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。
+您可以使用 *.runsettings* 檔案來設定 Visual Studio 中的單元測試。 例如，您可以變更執行測試的 .NET 版本、測試結果的所在目錄，或在測試回合期間所收集的資料。 *.runsettings* 檔案常見的用法是用來自訂[程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。
 
-回合設定檔案可用來設定從[命令列](vstest-console-options.md)、IDE，或使用 Azure Test Plans 或 TEAM FOUNDATION SERVER （TFS）在[組建工作流程](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)中執行的測試。
+您可以使用回合設定檔案來設定從 [命令列](vstest-console-options.md)、IDE，或使用 Azure Test Plans 或 TEAM FOUNDATION SERVER (TFS) 的 [組建工作流程](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) 中執行的測試。
 
-回合設定檔為選擇性。 如果您不需要任何特殊設定，則不需要 *.runsettings*檔案。
+回合設定檔為選擇性。 如果您不需要任何特殊設定，就不需要 *.runsettings* 檔案。
 
-## <a name="create-a-run-settings-file-and-customize-it"></a>建立執行設定檔案並加以自訂
+## <a name="create-a-run-settings-file-and-customize-it"></a>建立執行設定檔並加以自訂
 
-1. 將回合設定檔新增至方案。 在**方案總管**中，在方案的快捷方式功能表上，選擇 [**加入**  >  **新專案**]，然後選取 [ **XML**檔]。 以 *.runsettings*之類的名稱儲存檔案。
+1. 將回合設定檔新增至方案。 在 [**方案總管**] 中，在方案的快捷方式功能表上，選擇 [**加入**  >  **新專案**]，然後選取 [ **XML**檔案]。 使用 *.runsettings*之類的名稱來儲存檔案。
 
    > [!TIP]
    > 檔案名稱並不重要，只要使用的副檔名為 .runsettings** 即可。
 
-2. 新增[範例 * .runsettings](#example-runsettings-file)檔案中的內容，然後依照下列各節中的說明，將其自訂為您的需求。
+2. 從 [範例 *. .runsettings](#example-runsettings-file)檔案新增內容，然後根據您的需求進行自訂，如下列各節所述。
 
-3. 使用下列其中一種方法來指定您想要的 * .runsettings 檔案：
+3. 使用下列其中一種方法，指定您想要的 *. .runsettings 檔案：
 
    - [Visual Studio IDE](#specify-a-run-settings-file-in-the-ide)
    - [命令列](#specify-a-run-settings-file-from-the-command-line)
-   - 使用 Azure Test Plans 或 Team Foundation Server （TFS）[建立工作流程](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)。
+   - 使用 Azure Test Plans 或 Team Foundation Server (TFS) 來[建立工作流程](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)。
 
-4. 執行單元測試以使用自訂回合設定。
+4. 執行單元測試，以使用自訂回合設定。
 
 ::: moniker range="vs-2017"
 
-如果您想要在 IDE 中關閉和開啟自訂設定，請取消選取或選取 [**測試** > **測試設定**] 功能表中的檔案。
+如果您想要在 IDE 中關閉和開啟自訂設定，請取消選取或選取 [ **測試** > **測試設定** ] 功能表中的檔案。
 
 ![Visual Studio 2017 中具有自訂設定檔的測試設定功能表](../test/media/codecoverage-settingsfile.png)
 
@@ -49,7 +49,7 @@ ms.locfileid: "86972292"
 
 ::: moniker range=">=vs-2019"
 
-如果您想要在 IDE 中關閉和開啟自訂設定，請取消選取或選取 [**測試**] 功能表上的檔案。
+如果您想要在 IDE 中關閉和開啟自訂設定，請取消選取或選取 [ **測試** ] 功能表上的檔案。
 
 ::: moniker-end
 
@@ -72,44 +72,44 @@ ms.locfileid: "86972292"
 
 ### <a name="visual-studio-2019-version-164-and-later"></a>Visual Studio 2019 16.4 版和更新版本
 
-在 Visual Studio 2019 16.4 版和更新版本中，有三種方式可指定回合設定檔案。
+有三種方式可以指定 Visual Studio 2019 16.4 版和更新版本中的回合設定檔。
 
-- [自動執行回合設定](#autodetect-the-run-settings-file)
+- [自動偵測回合設定](#autodetect-the-run-settings-file)
 - [手動設定回合設定](#manually-select-the-run-settings-file)
 - [設定組建屬性](#set-a-build-property)
 
-#### <a name="autodetect-the-run-settings-file"></a>自動執行回合設定檔案
+#### <a name="autodetect-the-run-settings-file"></a>自動偵測回合設定檔
 
-若要自動偵測回合設定檔案，請將它放在方案的根目錄。
+若要自動偵測回合設定檔，請將它放在解決方案的根目錄中。
 
-如果已啟用回合設定檔的自動偵測，則此檔案中的設定會套用到所有測試執行。 您可以使用兩種方法來開啟自動偵測 .runsettings 檔案：
+如果啟用回合設定檔案的自動偵測功能，則會在所有測試回合上套用此檔案中的設定。 您可以使用兩種方法開啟自動偵測 .runsettings 檔案：
   
-- 選取 [**工具**] [選項] [ > **Options** > **測試**] > **自動偵測 .runsettings**檔案
+- 選取**工具** > **選項** > **測試** > **自動偵測 .runsettings**檔案
 
    ![Visual Studio 2019 中的自動偵測 .runsettings 檔案選項](media/vs-2019/auto-detect-runsettings-tools-window.png)
       
-- 選取 [**測試**] [設定] [回合設定] [自動偵測 > **Configure Run Settings** > **.runsettings**檔案]
+- 選取**測試**設定回合 > **設定** > **自動偵測 .runsettings**檔案
     
-   ![Visual Studio 2019 中的 [自動偵測 .runsettings 檔案] 功能表](media/vs-2019/auto-detect-runsettings-menu.png)
+   ![Visual Studio 2019 中的自動偵測 .runsettings 檔案功能表](media/vs-2019/auto-detect-runsettings-menu.png)
 
-#### <a name="manually-select-the-run-settings-file"></a>手動選取回合設定檔案
+#### <a name="manually-select-the-run-settings-file"></a>以手動方式選取回合設定檔案
 
-在 IDE 中，選取 [**測試**] [設定] [回合設定] [ > **Configure Run Settings** > **選取整個方案的 .runsettings**檔案]，然後選取 *.runsettings*檔案。
+在 IDE 中，選取 [ **測試**設定回合 > **設定**] > **選取 [方案範圍 .runsettings**檔]，然後選取 *.runsettings* 檔案。
 
-   - 這個檔案會覆寫位於方案根目錄的 *.runsettings*檔案（如果有的話），並套用到所有測試執行。  
-   - 此檔案選取專案只會保存在本機。
+   - 這個檔案會覆寫位於方案根目錄的 *.runsettings* 檔案（如果有的話），並套用到所有測試回合。  
+   - 此檔案選取專案只會在本機保存。
 
-![在 Visual Studio 2019 中選取 [測試方案] [全解決方案] .runsettings [檔案] 功能表](media/vs-2019/select-solution-settings-file.png)
+![在 Visual Studio 2019 中選取 [測試整個解決方案的 .runsettings 檔案] 功能表](media/vs-2019/select-solution-settings-file.png)
 
 #### <a name="set-a-build-property"></a>設定組建屬性
 
-透過專案檔或 .props 檔案，將組建屬性新增至專案。 專案的回合設定檔案是由屬性**RunSettingsFilePath**所指定。
+透過專案檔或 .props 檔案，將組建屬性加入至專案。 專案的回合設定檔是由屬性 **RunSettingsFilePath**所指定。
 
-- C #、VB、c + + 和 F # 專案目前支援專案層級執行設定。
-- 針對專案所指定的檔案會覆寫方案中指定的任何其他回合設定檔案。
-- [這些 MSBuild 屬性](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reserved-and-well-known-properties?view=vs-2019)可以用來指定 .runsettings 檔案的路徑。 
+- C #、VB、c + + 和 F # 專案中目前支援專案層級的執行設定。
+- 為專案指定的檔案會覆寫解決方案中指定的任何其他回合設定檔案。
+- [這些 MSBuild 屬性](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reserved-and-well-known-properties?view=vs-2019) 可以用來指定 .runsettings 檔的路徑。 
 
-指定專案之 *.runsettings*檔的範例：
+為專案指定 *.runsettings* 檔案的範例：
     
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -120,20 +120,20 @@ ms.locfileid: "86972292"
 </Project>
 ```
 
-### <a name="visual-studio-2019-version-163-and-earlier"></a>Visual Studio 2019 16.3 版和更早版本
+### <a name="visual-studio-2019-version-163-and-earlier"></a>Visual Studio 2019 16.3 版及更早版本
 
-若要在 IDE 中指定回合設定檔案，請選取 [**測試**] [  >  **選取設定檔**]。 瀏覽並選取 *.runsettings* 檔案。
+若要在 IDE 中指定回合設定檔案，請選取 [**測試**  >  **選取設定檔**]。 瀏覽並選取 *.runsettings* 檔案。
 
 ![在 Visual Studio 2019 中選取測試設定檔的功能表](media/vs-2019/select-settings-file.png)
 
-檔案會出現在 [測試] 功能表上，您可以選取或取消選取它。 選取時，只要選取 [分析程式碼涵蓋範圍]****，就會套用回合設定檔。
+檔案會出現在 [測試] 功能表中，您可以選取或取消選取它。 選取時，只要選取 [分析程式碼涵蓋範圍]****，就會套用回合設定檔。
 ::: moniker-end
 
 ## <a name="specify-a-run-settings-file-from-the-command-line"></a>從命令列指定回合設定檔案
 
-若要從命令列執行測試，請使用*vstest.console.exe*，然後使用 **/settings**參數來指定設定檔案。
+若要從命令列執行測試，請使用 *vstest.console.exe*，並使用 **/settings** 參數指定設定檔案。
 
-1. 開啟 Visual Studio 的[開發人員命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs)。
+1. 開啟 Visual Studio 的 [開發人員命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs) 。
 
 2. 輸入與下列類似的命令：
 
@@ -151,7 +151,7 @@ ms.locfileid: "86972292"
 
 ## <a name="the-runsettings-file"></a>*. .Runsettings 檔案
 
-*. .Runsettings 檔案是一個 XML 檔案，其中包含 **.runsettings**元素內的不同設定元素。 後面的章節會詳細說明不同的元素。 如需完整範例，請參閱[範例 *. .runsettings](#example-runsettings-file)檔案。
+*. .Runsettings 檔案是 XML 檔案，其中包含 **.runsettings** 元素內的不同設定元素。 接下來的各節會詳細說明不同的元素。 如需完整範例，請參閱 [範例 * .runsettings](#example-runsettings-file)檔案。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -180,15 +180,15 @@ ms.locfileid: "86972292"
 |節點|預設|值|
 |-|-|-|
 |**MaxCpuCount**|1|此設定會使用電腦上的可用核心，在執行單元測試時控制平行測試執行的程度。 測試執行引擎會在各個可用核心上作為不同的處理序啟動，並將要執行測試的容器提供給每個核心。 容器可以是組件、DLL 或相關成品。 測試容器是排程單元。 在每個容器中，會根據測試架構執行測試。 如果有許多容器，當處理序執行完容器中的測試時，就會將下一個可用的容器提供給處理序。<br /><br />MaxCpuCount 可以是：<br /><br />n，其中 1 <= n <= 核心數目：最多會啟動 n 個處理序<br /><br />n，其中 n = 任何其他值：啟動的進程數目最多可達可用核心數目。 例如，設定 n = 0 可讓平臺根據環境自動決定要啟動的最佳進程數目。|
-|**ResultsDirectory**||放置測試結果的目錄。 路徑相對於包含 .runsettings 檔案的目錄。|
+|**ResultsDirectory**||放置測試結果的目錄。 路徑是相對於包含 .runsettings 檔案的目錄。|
 |**TargetFrameworkVersion**|Framework40|`FrameworkCore10` 適用於 .NET Core 來源、`FrameworkUap10` 適用於 UWP 型來源、`Framework45` 適用於 .NET Framework 4.5 和更新版本、`Framework40` 適用於 .NET Framework 4.0，而 `Framework35` 則適用於 .NET Framework 3.5。<br /><br />此設定會指定用來尋找及執行測試的單元測試架構版本。 它可以與您在單元測試專案建置屬性中指定的 .NET 平台版本不同。<br /><br />如果您從 *.runsettings* 檔案省略 `TargetFrameworkVersion` 元素，平台會根據組建二進位檔自動判斷架構版本。|
 |**TargetPlatform**|x86|x86、x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|false、true|
 |**TestAdaptersPaths**||TestAdapters 所在目錄的一或多個路徑|
 |**TestSessionTimeout**||當測試工作階段超過指定的逾時之時，允許使用者終止測試工作階段。 設定逾時可確保資源能被充分取用，且可將測試工作階段限制在設定的時間內。 **Visual Studio 2017 15.5** 版和更新版本提供這項設定。|
-|**DotnetHostPath**||指定用來執行 testhost 之 dotnet 主機的自訂路徑。 當您建立自己的 dotnet 時（例如，在建立 dotnet/runtime 存放庫時），這會很有用。 指定這個選項將會略過尋找 testhost.exe，而且一律會使用 testhost.dll。 
+|**DotnetHostPath**||指定用來執行 testhost 之 dotnet 主機的自訂路徑。 當您建立自己的 dotnet 時（例如，在建立 dotnet/執行時間存放庫時），這會很有用。 指定此選項會略過尋找 testhost.exe，且一律會使用 testhost.dll。 
 
-## <a name="datacollectors-element-diagnostic-data-adapters"></a>DataCollectors 元素（診斷資料介面卡）
+## <a name="datacollectors-element-diagnostic-data-adapters"></a>DataCollectors 元素 (診斷資料配接器) 
 
 **DataCollectors** 項目指定診斷資料配接器的設定。 診斷資料配接器會收集有關環境與待測應用程式的其他資訊。 每個配接器都有預設設定，如果您不想要使用預設值，您只需提供設定值即可。
 
@@ -202,7 +202,7 @@ ms.locfileid: "86972292"
 
 ### <a name="codecoverage-data-collector"></a>CodeCoverage 資料收集器
 
-程式碼涵蓋範圍資料收集器會建立測試中已執行過之應用程式程式碼部分的記錄。 如需自訂程式碼涵蓋範圍設定的詳細資訊，請參閱[自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。
+程式碼涵蓋範圍資料收集器會建立測試中已執行過之應用程式程式碼部分的記錄。 如需自訂程式碼涵蓋範圍設定的詳細資訊，請參閱 [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。
 
 ```xml
 <DataCollector friendlyName="Code Coverage" uri="datacollector://Microsoft/CodeCoverage/2.0" assemblyQualifiedName="Microsoft.VisualStudio.Coverage.DynamicCoverageDataCollector, Microsoft.VisualStudio.TraceCollector, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -225,13 +225,13 @@ ms.locfileid: "86972292"
 
 ### <a name="videorecorder-data-collector"></a>VideoRecorder 資料收集器
 
-測試執行時，視訊資料收集器會擷取螢幕錄製。 這份錄製可用於 UI 測試的疑難排解。 視訊資料收集器在 **Visual Studio 2017 15.5 版**和更新版本中提供。 如需設定此資料收集器的範例，請參閱[範例 *. .runsettings](#example-runsettings-file)檔案。
+測試執行時，視訊資料收集器會擷取螢幕錄製。 這份錄製可用於 UI 測試的疑難排解。 視訊資料收集器在 **Visual Studio 2017 15.5 版**和更新版本中提供。 如需設定此資料收集器的範例，請參閱 [範例 *. .runsettings](#example-runsettings-file)檔案。
 
 若要自訂任何其他類型的診斷資料配接器，請使用[測試設定檔](../test/collect-diagnostic-information-using-test-settings.md)。
 
-### <a name="blame-data-collector"></a>推諉資料收集器
+### <a name="blame-data-collector"></a>現象資料收集器
 
-此選項可協助您找出導致測試主機損毀的問題測試。 執行收集器會在*TestResults*中建立輸出檔（*Sequence.xml*），這會在損毀之前捕捉測試的執行順序。 
+這個選項可協助您找出導致測試主機損毀的有問題的測試。 執行收集器會在*TestResults*中建立輸出檔 (*Sequence.xml*) ，以在損毀之前捕捉測試的執行順序。 
 
 ```xml
 <DataCollector friendlyName="blame" enabled="True">
@@ -247,7 +247,7 @@ ms.locfileid: "86972292"
 </TestRunParameters>
 ```
 
-測試回合參數提供一種方法，可定義在執行時間可供測試使用的變數和值。 使用 MSTest <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> 屬性（或 NUnit [TestCoNtext](https://docs.nunit.org/articles/nunit/writing-tests/TestContext.html)）存取參數：
+測試回合參數提供一種方法，可定義在執行時間可供測試使用的變數和值。 使用 MSTest <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> 屬性 (或 NUnit [TestCoNtext](https://docs.nunit.org/articles/nunit/writing-tests/TestContext.html)) 來存取參數：
 
 ```csharp
 private string _appUrl;
@@ -260,11 +260,11 @@ public void HomePageTest()
 }
 ```
 
-若要使用測試回合參數，請將公用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 屬性加入至測試類別。
+若要使用測試回合參數，請 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 在您的測試類別中加入公用屬性。
 
 ## <a name="loggerrunsettings-element"></a>LoggerRunSettings 元素
 
-`LoggerRunSettings`區段會定義要用於測試回合的一或多個記錄器。 最常見的記錄器是主控台、Visual Studio 測試結果檔案（.trx）和 html。
+`LoggerRunSettings`區段會定義要用於測試回合的一或多個記錄器。 最常見的記錄器為主控台、Visual Studio 測試結果檔 (.trx) 和 html。
 
 ```xml
 <LoggerRunSettings>
@@ -304,10 +304,10 @@ public void HomePageTest()
 </MSTest>
 ```
 
-|組態|預設|值|
+|設定|預設|值|
 |-|-|-|
 |**ForcedLegacyMode**|false|Visual Studio 2012 中的 MSTest 配接器已進行過最佳化，因此更快速且更具延展性。 某些行為 (例如測試執行順序) 可能與舊版 Visual Studio 稍有出入。 將此值設定為 **true**，以使用較舊的測試配接器。<br /><br />例如，如果您為單元測試指定 *app.config* 檔案，則可以使用此設定。<br /><br />建議您考慮重構測試，以便使用較新的配接器。|
-|**IgnoreTestImpact**|false|測試影響功能會將受最新變更影響的測試排定在 MSTest 中執行時，或從 Microsoft Test Manager （在 Visual Studio 2017 中已被取代）。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](https://msdn.microsoft.com/library/dd286589)。|
+|**IgnoreTestImpact**|false|「測試影響」功能會將受最新變更影響的測試（當在 MSTest 中執行時），或 Visual Studio 2017) 中 Microsoft Test Manager (淘汰的測試排定優先順序。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](https://msdn.microsoft.com/library/dd286589)。|
 |**SettingsFile**||您可以指定與此處的 MS 測試配接器一起使用的測試設定檔。 您也可以[從設定功能表](#specify-a-run-settings-file-in-the-ide)指定測試設定檔。<br /><br />如果您指定這個值，也必須將 [ **ForcedlegacyMode** ] 設定為 [ **true**]。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|測試回合完成後，會關閉 MSTest。 所有在測試過程中啟動的處理序也都會終止。 如果您要讓測試執行程式保持運作，請將此值設定為 **true**。 例如，您可以使用此設定讓瀏覽器在不同的自動程式碼 UI 測試之間保持執行。|
 |**DeploymentEnabled**|true|如果您將此值設定為 **false**，就不會將您在測試方法中指定的部署項目複製到部署目錄中。|
@@ -431,13 +431,13 @@ public void HomePageTest()
 </RunSettings>
 ```
 
-## <a name="specify-environment-variables-in-the-runsettings-file"></a>在 *.runsettings*檔案中指定環境變數
+## <a name="specify-environment-variables-in-the-runsettings-file"></a>在 *.runsettings* 檔案中指定環境變數
 
-您可以在 *.runsettings*檔案中設定環境變數，該檔案可以直接與測試主機互動。 必須在 *.runsettings*檔案中指定環境變數，才能支援需要設定環境變數（例如*DOTNET_ROOT*）的重要專案。 這些變數是在產生測試主機進程時設定的，而且可以在主機中使用。
+您可以在 *.runsettings* 檔案中設定環境變數，以便直接與測試主機互動。 需要在 *.runsettings* 檔案中指定環境變數，才能支援需要設定環境變數（例如 *DOTNET_ROOT*）的重要專案。 這些變數會在產生測試主機進程時設定，並可在主機中使用。
 
 ### <a name="example"></a>範例
 
-下列程式碼是傳遞環境變數的 *.runsettings*檔案：
+下列程式碼是傳遞環境變數的 *.runsettings* 檔案：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -453,10 +453,10 @@ public void HomePageTest()
 </RunSettings>
 ```
 
-**RunConfiguration**節點應包含**EnvironmentVariables**節點。 環境變數可以指定為元素名稱和其值。
+**RunConfiguration**節點應包含**EnvironmentVariables**節點。 您可以將環境變數指定為專案名稱和其值。
 
 > [!NOTE]
-> 因為這些環境變數應該一律在測試主機啟動時設定，所以測試應該一律在個別的進程中執行。 為此，會在有環境變數時設定 */InIsolation*旗標，以便一律叫用測試主機。
+> 因為這些環境變數應該一律在測試主機啟動時設定，所以測試應該一律在個別的進程中執行。 如此一來，當有環境變數時，就會設定 */InIsolation* 旗標，讓測試主機一律會被叫用。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2cfbaf8c3756bf758956d1f1e5964d8e9f8f0c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205189"
 ---
-# <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
+# <a name="module_symbol_search_info"></a>MODULE_SYMBOL_SEARCH_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-包含狀態資訊已搜尋的符號搜尋路徑。  
+包含已搜尋之符號搜尋路徑的相關狀態資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,21 +43,21 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
   
 #### <a name="parameters"></a>參數  
  `dwValidFields`  
- 從旗標的組合[SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)指定此結構中所述的搜尋資訊類型的列舉型別。  
+ [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)列舉中的旗標組合，指定此結構中所描述的搜尋資訊種類。  
   
  `bstrVerboseSearchInfo`  
- 搜尋路徑，而且結果串連成單一字串。  
+ 搜尋路徑和結果串連成單一字串。  
   
 ## <a name="remarks"></a>備註  
- 此結構會從呼叫傳回[GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)方法。  
+ 從呼叫 [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) 方法時，會傳回這個結構。  
   
- 如果`bstrVerboseSearchInfo`欄位不是空的則它將包含路徑搜尋和該搜尋結果的清單。 路徑，後面接著省略符號 （"..."），後面接著結果會格式化為清單。 如果有多個路徑的結果組，每一組將分隔"\r\n"（歸位字元-/ 換行） 配對。 模式看起來像這樣：  
+ 如果 `bstrVerboseSearchInfo` 欄位不是空的，則會包含搜尋的路徑清單以及該搜尋的結果。 此清單的格式為路徑，後面接著省略號 ( "..." ) ，後面接著結果。 如果有一個以上的路徑結果配對，則每一組都會以 "\r\n" (換行字元) 組分隔。 模式看起來像這樣：  
   
- \<路徑 >...\<結果 > \r\n\<路徑 >...\<結果 > \r\n\<路徑 >...\<結果 >  
+ \<path>...\<result>\r\n \<path> \<result> .。。\r\n \<path> .。。\<result>  
   
- 請注意最後一個項目沒有 \r\n 序列。  
+ 請注意，最後一個專案沒有 \r\n 順序。  
   
- 以下是可能`bstrVerboseSearchInfo`已傳送到標準輸出的字串。  
+ 以下是已 `bstrVerboseSearchInfo` 傳送至標準輸出的可能字串。  
   
  `c:\symbols\user32.pdb... File not found.`  
   
@@ -66,11 +66,11 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
  `\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symbols loaded.`  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

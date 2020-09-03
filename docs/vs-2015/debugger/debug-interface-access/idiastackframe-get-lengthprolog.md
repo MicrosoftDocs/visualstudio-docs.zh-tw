@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7934afbcee032a4595afda5d67938a661bef9cdd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190571"
 ---
-# <a name="idiastackframegetlengthprolog"></a>IDiaStackFrame::get_lengthProlog
+# <a name="idiastackframeget_lengthprolog"></a>IDiaStackFrame::get_lengthProlog
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取的初構程式碼區塊中的位元組數目。  
+抓取區塊中序言程式碼的位元組數目。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,10 +35,10 @@ HRESULT get_lengthProlog ( 
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回的初構程式碼的位元組數目。  
+ 擴展傳回序言程式碼的位元組數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援的屬性。 否則會傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援屬性，則傳回。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

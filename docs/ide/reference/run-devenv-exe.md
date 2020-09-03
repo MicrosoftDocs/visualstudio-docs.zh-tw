@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7468fbd6422248f2f15bf74e70cdf9c5bee849c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593625"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
@@ -34,15 +34,15 @@ devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 
 ## <a name="arguments"></a>引數
 
-- *解決方案名稱*
+- *SolutionName*
 
   方案檔的完整路徑和名稱。
 
-- *專案名稱*
+- *ProjectName*
 
   專案檔的完整路徑和名稱。
 
-- `/Out`*輸出檔案名*
+- `/Out`*OutputFilename*
 
   選擇性。 您要將工具的輸出傳送到其中的檔案名稱。 如果檔案已經存在，工具就會將輸出附加至檔案結尾。
 
@@ -65,7 +65,7 @@ devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ## <a name="see-also"></a>另請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)
-- [/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)
-- [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
-- [/重建（德文夫.exe）](../../ide/reference/rebuild-devenv-exe.md)
-- [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
+- [/Runexit ( # A0) ](../../ide/reference/runexit-devenv-exe.md)
+- [/Build ( # A0) ](../../ide/reference/build-devenv-exe.md)
+- [/Rebuild ( # A0) ](../../ide/reference/rebuild-devenv-exe.md)
+- [/Out ( # A0) ](../../ide/reference/out-devenv-exe.md)
