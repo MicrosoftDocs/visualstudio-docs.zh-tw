@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: ade9dbfb17aa4330b572ac96080117562498a338
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85771121"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>歡迎使用 Visual Studio IDE | C\#
@@ -26,13 +26,13 @@ ms.locfileid: "85771121"
 
 讓我們設定 Visual Studio 來使用為 C# 開發人員量身打造的環境設定。
 
-1. 在功能表列上，選擇 [**工具**] [匯  >  **入和匯出設定**]。
+1. 在功能表列上，選擇 [**工具**匯  >  **入和匯出設定**]。
 
 2. 在 [匯入和匯出設定精靈]**** 中，選取第一頁上的 [重設所有設定]****，然後選擇 [下一步]****。
 
 3. 在 [儲存目前設定]**** 頁面上，選取一個選項來指出是否要儲存目前的設定，然後選擇 [下一步]****。 (如果您尚未自訂任何設定，請選取 [否，直接重設設定並覆寫目前的設定]****)。
 
-4. 在 [**選擇預設的設定集合**] 頁面上，選擇 [ **Visual c #**]，然後選擇 **[完成]**。
+4. 在 [ **選擇預設的設定集合** ] 頁面上，選擇 [ **Visual c #**]，然後選擇 **[完成]**。
 
 5. 在 [重設完成]**** 頁面上，選擇 [關閉]****。
 

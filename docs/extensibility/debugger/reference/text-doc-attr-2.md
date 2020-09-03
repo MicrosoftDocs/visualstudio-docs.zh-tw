@@ -1,5 +1,5 @@
 ---
-title: TEXT_DOC_ATTR_2 |微軟文件
+title: TEXT_DOC_ATTR_2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: afbb7d7f4525050e73dafaed906dbc504cc8b52e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713449"
 ---
 # <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
-描述文件的屬性。
+描述檔的屬性。
 
 ## <a name="syntax"></a>語法
 
@@ -38,21 +38,21 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 
 ## <a name="members"></a>成員
  `TEXT_DOC_ATTR_READONLY_2`\
- 指示文檔是唯讀的。
+ 指出檔是唯讀的。
 
 ## <a name="remarks"></a>備註
 
 > [!NOTE]
-> 此值實際上未在 C# 的程式集中定義。 相反,必須將定義複製到源檔。
+> C # 的元件中實際未定義此值。 相反地，您必須將定義複製到原始程式檔。
 
- 作為參數傳遞給[上更新文檔屬性](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)方法。
+ 以引數形式傳遞至 [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) 方法。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

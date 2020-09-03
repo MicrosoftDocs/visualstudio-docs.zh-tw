@@ -1,5 +1,5 @@
 ---
-title: 註冊自定義調試引擎 |微軟文件
+title: 註冊自訂的 Debug Engine |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,28 +11,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fe6fb916810bc8a7e960a4723a6a7c7a6f0c1410
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713216"
 ---
-# <a name="register-a-custom-debug-engine"></a>註冊自訂除錯引擎
-調試引擎必須按照 COM 約定註冊自己為類工廠,並透過 Visual Studio 註冊表子鍵向 Visual Studio 註冊。
+# <a name="register-a-custom-debug-engine"></a>註冊自訂的調試引擎
+Debug engine 必須將本身註冊為 class factory，並遵循 COM 慣例，並透過 Visual Studio 登錄子機碼向 Visual Studio 註冊。
 
 > [!NOTE]
-> 您可以在 TextInterpreter 範例中找到如何註冊除錯引擎的範例,該範例作為教學的一部分建[構 :使用 ATL COM 建構除錯引擎](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)。
+> 您可以在 TextInterpreter 範例中找到如何註冊 debug 引擎的範例，此範例是在教學課程中建立的，它是教學課程的一部分 [：使用 ATL COM 建立 debug engine](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)。
 
-## <a name="dll-server-process"></a>DLL 伺服器程序
- 除錯引擎通常在其自己的 DLL 中設定為 COM 伺服器。 因此,除錯引擎必須在 Visual Studio 訪問之前將其類工廠的 CLSID 註冊到 COM。 然後,調試引擎必須向 Visual Studio 註冊自身,以建立調試引擎支援的任何屬性(也稱為指標)。 寫入 Visual Studio 註冊表子鍵的指標選擇取決於調試引擎支援的功能。
+## <a name="dll-server-process"></a>DLL 伺服器進程
+ Debug 引擎通常會在其本身的 DLL 中設定為 COM 伺服器。 因此，在 Visual Studio 可以存取之前，debug engine 必須先向 COM 註冊其 class factory 的 CLSID。 然後，debug engine 必須向 Visual Studio 註冊本身，才能建立任何屬性 (亦稱為「偵測引擎」支援) 的度量。 寫入 Visual Studio 登錄子機碼的度量選擇取決於 debug engine 支援的功能。
 
- [用於調試的 SDK 幫助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)不僅描述了註冊調試引擎所需的註冊表位置,還描述了調試引擎的註冊表位置。它還描述了*dbgmetric.lib*庫,該庫包含許多有用的函數和聲明,用於C++開發人員,使操作註冊表更容易。
+ [用於偵錯工具的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) 不只描述註冊 debug engine 所需的登錄位置。它也會描述 *dbgmetric .lib* 程式庫，其中包含許多有用的函式和宣告，可讓 c + + 開發人員更輕鬆地操作登錄。
 
 ### <a name="example"></a>範例
- 以下範例(從 TextInterpreter 範例)簡`SetMetric`用如何使用函數(來自*dbgmetric.lib)* 向 Visual Studio 註冊調試引擎。 正在通過的指標也在*dbgmetric.lib*中定義。
+ 下列範例 (從 TextInterpreter 範例中) 示範如何 (使用 dbgmetric 的函式 `SetMetric`) *dbgmetric.lib* ，以 Visual Studio 註冊 debug engine。 傳遞的度量也會在 *dbgmetric*中定義。
 
 > [!NOTE]
-> 文本解釋器是一個基本的調試引擎;它不設置,因此不註冊任何其他功能。 更完整的調試引擎將具有一個完整的`SetMetric`調用清單或其等效項,每個功能都針對調試引擎支援。
+> TextInterpreter 是基本的 debug 引擎;它不會設定（因此不會註冊）任何其他功能。 更完整的 debug 引擎會有一個完整的 `SetMetric` 呼叫清單或其對等專案，而每項功能都有一個針對 debug engine 支援的功能。
 
 ```
 // Define base registry subkey to Visual Studio.
@@ -49,6 +49,6 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [建立自訂除錯引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)
-- [除錯的 SDK 說明器](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
-- [教學:使用 ATL COM 建構除錯引擎](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+- [建立自訂的調試引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+- [用於偵錯工具的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+- [教學課程：使用 ATL COM 建立 debug engine](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)

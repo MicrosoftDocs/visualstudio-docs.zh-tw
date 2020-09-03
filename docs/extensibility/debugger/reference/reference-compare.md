@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_COMPARE |微軟文件
+title: REFERENCE_COMPARE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2aa9e7c608c4aabdbb808629112b922a5ed3322e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713724"
 ---
 # <a name="reference_compare"></a>REFERENCE_COMPARE
-指定引用的比較類型。
+指定參考的比較類型。
 
 ## <a name="syntax"></a>語法
 
@@ -46,7 +46,7 @@ public enum enum_REFERENCE_COMPARE { 
 
 ## <a name="fields"></a>欄位
  `REF_COMPARE_EQUAL`\
- 指定相等的比較。
+ 指定等於比較。
 
  `REF_COMPARE_LESS_THAN`\
  指定小於比較。
@@ -55,14 +55,14 @@ public enum enum_REFERENCE_COMPARE { 
  指定大於比較。
 
 ## <a name="remarks"></a>備註
- 作為參數傳遞給[比較](../../../extensibility/debugger/reference/idebugreference2-compare.md)方法。
+ 以引數形式傳遞至 [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md) 方法。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

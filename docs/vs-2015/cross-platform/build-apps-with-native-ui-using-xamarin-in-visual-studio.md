@@ -9,10 +9,10 @@ caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 204d3ee68aace07ed19e5913309a122d6d775a0e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918350"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式
@@ -20,11 +20,11 @@ ms.locfileid: "75918350"
 
 在您完成[設定與安裝](../cross-platform/setup-and-install.md)和[驗證您的 Xamarin 環境](../cross-platform/verify-your-xamarin-environment.md)中的步驟之後，本逐步解說將示範如何建立具有原生 UI 層的基本 Xamarin 應用程式 (如下所示)。 使用原生 UI，共用程式碼會位於可攜式類別庫 (PCL) 中，而個別的平台專案會包含 UI 定義。
 
- ![Android 和 Windows Phone 上的 Xamarin 應用程式](../cross-platform/media/cross-plat-xamarin-build-1.png "跨平臺 Xamarin 組建1")
+ ![Android 及 Windows Phone 上的 Xamarin 程式](../cross-platform/media/cross-plat-xamarin-build-1.png "跨平臺 Xamarin 組建1")
 
  您將會執行下列步驟來建置應用程式：
 
-- [設立方案](#solution)
+- [設定您的解決方案](#solution)
 
 - [撰寫共用的資料服務程式碼](#dataservice)
 
@@ -54,53 +54,53 @@ ms.locfileid: "75918350"
 >   - [Hello, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)
 >   - [嗨，Xamarin.Forms 多重畫面 (英文)](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)
 
-## <a name="solution"></a> 設定方案
+## <a name="set-up-your-solution"></a><a name="solution"></a> 設定方案
  下列步驟會建立具有原生 UI 的 Xamarin 方案，其中包含適用於共用程式碼的 PCL 以及兩個已加入的 NuGet 封裝。
 
 1. 在 Visual Studio 中，建立新的**空的應用程式 (原生可攜式)** 方案，並將其命名為 **WeatherApp**。 您可以在搜尋欄位中輸入**原生可攜式**，就能輕鬆找到這個範本。
 
-    如果找不到，可能必須安裝 Xamarin，或是啟用 Visual Studio 2015 功能。請參閱 [Setup and install](../cross-platform/setup-and-install.md)。
+    如果找不到，您可能必須安裝 Xamarin 或啟用 Visual Studio 2015 功能，請參閱 [安裝和安裝](../cross-platform/setup-and-install.md)。
 
 2. 按一下 [確定] 建立解決方案後，您會擁有數個個別專案：
 
-   - **WeatherApp (可攜式)** ：您會將跨平台共用的程式碼寫入此 PCL，包括搭配 Xamarin.Forms 使用的一般商務邏輯和 UI 程式碼。
+   - **WeatherApp (可攜式)**：您會將跨平台共用的程式碼寫入此 PCL，包括搭配 Xamarin.Forms 使用的一般商務邏輯和 UI 程式碼。
 
    - **WeatherApp.Droid**：包含原生 Android 程式碼的專案。 這會設為預設啟始專案。
 
    - **WeatherApp.iOS**：包含原生 iOS 程式碼的專案。
 
-   - **WeatherApp.WinPhone (Windows Phone 8.1)** ：包含原生 Windows Phone 程式碼的專案。
+   - **WeatherApp.WinPhone (Windows Phone 8.1)**：包含原生 Windows Phone 程式碼的專案。
 
      您可以在每個原生專案中存取對應平台的原生設計工具，並可實作平台專屬的畫面。
 
 3. 將 **Newtonsoft.Json** 和 NuGet 套件新增至 PCL 專案，您將使用此專案來處理從天氣資料服務擷取而來的資訊：
 
-   - 在 [方案總管] 中以滑鼠右鍵按一下 ['WeatherApp' 方案]，然後選取 [管理方案的 NuGet 封裝...]。
+   - 在 [方案總管] 中以滑鼠右鍵按一下 ['WeatherApp' 方案]****，然後選取 [管理方案的 NuGet 封裝...]****。
 
-        在 [NuGet] 視窗中，選取 [瀏覽] 索引標籤，然後搜尋 **Newtonsoft**。
+        在 [NuGet] 視窗中，選取 [瀏覽]**** 索引標籤，然後搜尋 **Newtonsoft**。
 
    - 選取 **Newtonsoft.Json**。
 
    - 在視窗右側，核取 **WeatherApp** 專案 (這是唯一一個必須安裝封裝的專案)。
 
-   - 請確認 [版本] 欄位設為 [最新穩定版] 。
+   - 請確認 [版本] **** 欄位設為 [最新穩定版] **** 。
 
-   - 按一下 [安裝]。
+   - 按一下 [Install] 。
 
-   - ![尋找並安裝 Newtonsoft NuGet 套件](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
+   - ![尋找並安裝 NuGet 套件上的 Newtonsoft.Js](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
 
 4. 重複步驟 3，以尋找並安裝 **Microsoft.Net.Http** 封裝。
 
 5. 建置方案，並確認沒有任何建置錯誤。
 
-## <a name="dataservice"></a> 撰寫共用的資料服務程式碼
- 您可以在 **WeatherApp (可攜式)** 專案中撰寫可攜式類別庫 (PCL) 程式碼，進而跨所有平台共用。 系統會在 iOS、Android 和 Windows Phone 專案所建置的應用程式封裝中自動包含 PCL。
+## <a name="write-shared-data-service-code"></a><a name="dataservice"></a> 撰寫共用的資料服務程式代碼
+ **WeatherApp (可移植的) **專案，您將在其中為可移植的類別庫撰寫程式碼， (PCL) 在所有平臺之間共用。 系統會在 iOS、Android 和 Windows Phone 專案所建置的應用程式封裝中自動包含 PCL。
 
  下列步驟接著會將程式碼新增至 PCL，以存取並儲存該天氣服務的資料：
 
-1. 若要執行此範例，您必須先在 [http://openweathermap.org/appid](https://openweathermap.org/appid) 註冊免費的 API 金鑰。
+1. 若要執行此範例，您必須先在中註冊免費的 API 金鑰 [http://openweathermap.org/appid](https://openweathermap.org/appid) 。
 
-2. 以滑鼠右鍵按一下 **WeatherApp** 專案，然後選取 [新增] > [類別...]。 在 [加入新項目] 對話方塊中，將檔案命名為 **Weather.cs**。 您將使用此類別儲存天氣資料服務的資料。
+2. 以滑鼠右鍵按一下 [ **WeatherApp** ] 專案，然後選取 [ **加入 > 類別**]。 在 [加入新項目] **** 對話方塊中，將檔案命名為 **Weather.cs**。 您將使用此類別儲存天氣資料服務的資料。
 
 3. 以下列程式碼取代整個 **Weather.cs** 的內容：
 
@@ -222,34 +222,34 @@ ms.locfileid: "75918350"
 
 10. 建置 **WeatherApp** PCL 專案，以確保程式碼正確。
 
-## <a name="Android"></a> 設計適用於 Android 的 UI
+## <a name="design-ui-for-android"></a><a name="Android"></a> 設計適用于 Android 的 UI
  我們現在要設計使用者介面，並將其連接到您的共用程式碼，然後執行應用程式。
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>設計應用程式的外觀與風格
 
-1. 在 [方案總管] **中**，依序展開 [WeatherApp.Droid]>[資源]>[配置] 資料夾，然後開啟 [Main.axml]。 這會在視覺化設計工具中開啟檔案 (如果出現 Java 相關錯誤，請參閱此[部落格文章](https://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9))。
+1. 在 [方案總管]** 中**，依序展開 [WeatherApp.Droid]****>[資源]****>[配置]**** 資料夾，然後開啟 [Main.axml]****。 這會在視覺化設計工具中開啟檔案 (如果出現 Java 相關錯誤，請參閱此[部落格文章](https://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9))。
 
     > [!TIP]
     > 專案中還有許多其他檔案。 探索這些檔案已超出本主題的範圍。但若您需要深入了解 Android 專案的結構，請參閱 xamarin.com 上「嗨 Android」主題的[第 2 部分深入探討 (英文)](/xamarin/android/get-started/hello-android/hello-android-deepdive?pivots=windows)。
 
 2. 選取並刪除出現在設計工具中的預設按鈕。
 
-3. 透過 [檢視] > [其他視窗] > [工具箱] 來開啟 [工具箱]。
+3. 透過 [檢視] > [其他視窗] > [工具箱]**** 來開啟 [工具箱]。
 
 4. 從 **工具箱**將 **RelativeLayout** 控制項拖曳到設計工具內。 您將使用此控制項做為其他控制項的父容器。
 
     > [!TIP]
-    > 如果在任何時候配置似乎不正確地顯示，請儲存檔案，並在 [設計] 和 [來源] 索引標籤之間切換，以進行重新整理。
+    > 如果在任何時候配置似乎不正確地顯示，請儲存檔案，並在 [設計]**** 和 [來源]**** 索引標籤之間切換，以進行重新整理。
 
-5. 在 [屬性] 視窗中，將 [背景] 屬性 (在 [樣式] 群組中) 設為 `#545454`。
+5. 在 [屬性]**** 視窗中，將 [背景]**** 屬性 (在 [樣式] 群組中) 設為 `#545454`。
 
 6. 從 **工具箱**將 **TextView** 控制項拖曳到 **RelativeLayout** 控制項內。
 
-7. 在 [屬性] 視窗中，設定這些屬性 (注意︰使用 [屬性] 視窗工具列中的排序按鈕，有助於依字母順序排序清單)：
+7. 在 [屬性]**** 視窗中，設定這些屬性 (注意︰使用 [屬性] 視窗工具列中的排序按鈕，有助於依字母順序排序清單)：
 
-    |屬性|{2&gt;值&lt;2}|
+    |屬性|值|
     |--------------|-----------|
-    |**文字**|**Search by Zip Code (依郵遞區號搜尋)**|
+    |**text**|**Search by Zip Code (依郵遞區號搜尋)**|
     |**id**|`@+id/ZipCodeSearchLabel`|
     |**layout_marginLeft**|`10dp`|
     |**textColor**|`@android:color/white`|
@@ -258,9 +258,9 @@ ms.locfileid: "75918350"
     > [!TIP]
     > 請注意，有許多屬性不包含可供您選取之值的下拉式清單。  所以可能會很難知道指定的屬性要使用什麼字串值。 如需建議，請嘗試在 [R.attr](https://developer.android.com/reference/android/R.attr.html) 類別頁面中搜尋屬性的名稱。
     >
-    >  此外，直接在網路上搜尋常被導向至 [http://stackoverflow.com/](https://stackoverflow.com/) 上的頁面；在其中，其他人已使用了相同的屬性。
+    >  此外，快速的 web 搜尋通常會導致頁面上的 [http://stackoverflow.com/](https://stackoverflow.com/) 其他人使用相同的屬性。
 
-     基於參考的目的，如果您切換到 [原始碼] 檢視，應該會看到下列適用於此項目的程式碼：
+     基於參考的目的，如果您切換到 [原始碼]**** 檢視，應該會看到下列適用於此項目的程式碼：
 
     ```xml
     <TextView
@@ -275,18 +275,18 @@ ms.locfileid: "75918350"
 
     ```
 
-8. 從 [工具箱] 中，將 [TextView] 控制項拖曳至 [RelativeLayout] 控制項，並將其放在 [ZipCodeSearchLabel] 控制項下方。 若要執行此動作，您可以在現有控制項的適當邊緣上置放新的控制項；這在某種程度上有助於縮放設計工具。
+8. 從 [工具箱]**** 中，將 [TextView]**** 控制項拖曳至 [RelativeLayout]**** 控制項，並將其放在 [ZipCodeSearchLabel] 控制項下方。 若要執行此動作，您可以在現有控制項的適當邊緣上置放新的控制項；這在某種程度上有助於縮放設計工具。
 
-9. 在 [屬性] 視窗中，設定這些屬性：
+9. 在 [屬性] **** 視窗中，設定這些屬性：
 
-    |屬性|{2&gt;值&lt;2}|
+    |屬性|值|
     |--------------|-----------|
-    |**文字**|**郵遞區號**|
+    |**text**|**Zip Code**|
     |**id**|`@+id/ZipCodeLabel`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginTop**|`5dp`|
 
-     [原始碼] 檢視中的程式碼應該看起來如下：
+     [原始碼]**** 檢視中的程式碼應該看起來如下：
 
     ```xml
     <TextView
@@ -299,14 +299,14 @@ ms.locfileid: "75918350"
         android:layout_marginLeft="10dp" />
     ```
 
-10. 從 [工具箱] 中，將 [Number] 控制項拖曳至 [RelativeLayout]，並將它放在 [Zip Code]\(郵遞區號) 標籤下方。 接著，設定下列屬性：
+10. 從 [工具箱]**** 中，將 [Number]**** 控制項拖曳至 [RelativeLayout]****，並將它放在 [Zip Code]\(郵遞區號)**** 標籤下方。 接著，設定下列屬性：
 
-    |屬性|{2&gt;值&lt;2}|
+    |屬性|值|
     |--------------|-----------|
     |**id**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginBottom**|`10dp`|
-    |**width**|`165dp`|
+    |**寬度**|`165dp`|
 
      同樣地，程式碼：
 
@@ -322,15 +322,15 @@ ms.locfileid: "75918350"
         android:width="165dp" />
     ```
 
-11. 從 [工具箱] 中，將 [按鈕] 拖曳至 [RelativeLayout] 控制項，並將它放在 [zipCodeEntry] 控制項右邊。 然後設定這些屬性：
+11. 從 [工具箱]**** 中，將 [按鈕]**** 拖曳至 [RelativeLayout]**** 控制項，並將它放在 [zipCodeEntry] 控制項右邊。 然後設定這些屬性：
 
-    |屬性|{2&gt;值&lt;2}|
+    |屬性|值|
     |--------------|-----------|
     |**id**|`@+id/weatherBtn`|
-    |**文字**|**獲知天氣**|
+    |**text**|**獲知天氣**|
     |**layout_marginLeft**|`20dp`|
     |**layout_alignBottom**|`@id/zipCodeEntry`|
-    |**width**|`165dp`|
+    |**寬度**|`165dp`|
 
     ```xml
     <Button    android:text="Get Weather"
@@ -448,11 +448,11 @@ ms.locfileid: "75918350"
 
     ```
 
-13. 儲存檔案，然後切換至 [設計] 檢視。 您的 UI 會如下所示：
+13. 儲存檔案，然後切換至 [設計]**** 檢視。 您的 UI 會如下所示：
 
-     ![Android 應用程式的 UI](../cross-platform/media/xamarin-androidui.png "Xamarin_AndroidUI")
+     ![Android 應用程式 UI](../cross-platform/media/xamarin-androidui.png "Xamarin_AndroidUI")
 
-14. 開啟 [MainActivity.cs]，然後在 OnCreate 方法中刪除參考先前已移除之預設按鈕的程式碼。 當您完成後，程式碼看起來會像這樣：
+14. 開啟 [MainActivity.cs]****，然後在 OnCreate** 方法中刪除參考先前已移除之預設按鈕的程式碼。 當您完成後，程式碼看起來會像這樣：
 
     ```
     protected override void OnCreate (Bundle bundle)
@@ -514,18 +514,18 @@ ms.locfileid: "75918350"
 
 ### <a name="run-the-app-and-see-how-it-looks"></a>執行應用程式並觀察其結果
 
-1. 在 [方案總管] 中，確定已將 **WeatherApp.Droid** 專案設為啟始專案。
+1. 在 [方案總管]**** 中，確定已將 **WeatherApp.Droid** 專案設為啟始專案。
 
 2. 選取適當的裝置或模擬器目標，然後按 F5 鍵以啟動應用程式。
 
-3. 在裝置上或模擬器中，於編輯方塊中輸入有效的美國郵遞區號 (例如：60601)，然後按 [Get Weather]\(獲知天氣)。 該地區的天氣資料隨即會顯示在控制項中。
+3. 在裝置上或模擬器中，於編輯方塊中輸入有效的美國郵遞區號 (例如：60601)，然後按 [Get Weather]\(獲知天氣)****。 該地區的天氣資料隨即會顯示在控制項中。
 
-     ![適用于 Android 和 Windows Phone 的氣象應用程式](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
+     ![Android 及 Windows Phone 的氣象應用程式](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
 > [!TIP]
 > 本專案的完整原始程式碼位於 [GitHub 上的 mobile-samples 存放庫 (英文)](https://github.com/xamarin/mobile-samples/tree/master/Weather) 中。
 
-## <a name="Windows"></a> 設計適用於 Windows Phone 的 UI
+## <a name="design-ui-for-windows-phone"></a><a name="Windows"></a> Windows Phone 的設計 UI
  我們現在要設計適用於 Windows Phone 的使用者介面、將其連接到您的共用程式碼，然後執行應用程式。
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>設計應用程式的外觀與風格
@@ -583,11 +583,11 @@ ms.locfileid: "75918350"
 
 ### <a name="consume-your-shared-code"></a>使用您的共用程式碼
 
-1. 在設計工具中選取 [獲知天氣] 按鈕。
+1. 在設計工具中選取 [獲知天氣] **** 按鈕。
 
-2. 在 [**屬性**] 視窗中，選擇 [事件處理常式] 按鈕（![Visual Studio 事件處理常式圖示](../cross-platform/media/blend-vs-eventhandlers-icon.png "blend_VS_EventHandlers_icon")）。
+2. 在 [ **屬性** ] 視窗中，選擇 [事件處理常式] 按鈕， (![Visual Studio 事件處理常式] 圖示](../cross-platform/media/blend-vs-eventhandlers-icon.png "blend_VS_EventHandlers_icon")) 。
 
-     此圖示會顯示在 [屬性] 視窗的上方角落。
+     此圖示會顯示在 [屬性] **** 視窗的上方角落。
 
 3. 在 **Click** 事件旁輸入 **GetWeatherButton_Click**，然後按 ENTER 鍵。
 
@@ -620,18 +620,18 @@ ms.locfileid: "75918350"
 
 ### <a name="run-the-app-and-see-how-it-looks"></a>執行應用程式並觀察其結果
 
-1. 在 [方案總管] 中，將 **WeatherApp.WinPhone** 專案設為啟始專案。
+1. 在 [方案總管]**** 中，將 **WeatherApp.WinPhone** 專案設為啟始專案。
 
 2. 按 F5 鍵以啟動應用程式。
 
-3. 在 Windows Phone 模擬器中，於編輯方塊中輸入有效的美國郵遞區號輸入 (例如：60601)，然後按 [Get Weather]\(獲知天氣)。 該地區的天氣資料隨即會顯示在控制項中。
+3. 在 Windows Phone 模擬器中，於編輯方塊中輸入有效的美國郵遞區號輸入 (例如：60601)，然後按 [Get Weather]\(獲知天氣)****。 該地區的天氣資料隨即會顯示在控制項中。
 
-     ![執行中應用程式的 Windows 版本](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
+     ![執行中之應用程式的 Windows 版本](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
 > [!TIP]
 > 本專案的完整原始程式碼位於 [GitHub 上的 mobile-samples 存放庫 (英文)](https://github.com/xamarin/mobile-samples/tree/master/Weather) 中。
 
-## <a name="next"></a> 後續步驟
+## <a name="next-steps"></a><a name="next"></a> 後續步驟
  **將適用於 iOS 的 UI 加入至方案**
 
  加入適用於 iOS 的原生 UI 來延伸此範例。 基於這個理由，您必須在區域網路上連接到已安裝 Xcode 及 Xamarin 的 Mac。 完成此動作之後，您就能直接在 Visual Studio 中使用 iOS 設計工具。 如需完整的應用程式，請參閱 [GitHub 上的 mobile-samples 儲存機制 (英文)](https://github.com/xamarin/mobile-samples/tree/master/Weather)。
@@ -640,7 +640,7 @@ ms.locfileid: "75918350"
 
  **將平台專屬的程式碼加入共用專案**
 
- PCL 中的共用程式碼是非平台相關的，因為 PCL 只編譯一次，並隨附於每個平台專屬的應用程式封裝中。 如果您想要撰寫共用程式碼，以使用條件式編譯來隔離平台專屬的程式碼，您可以使用「共用」專案。 如需詳細資訊，請參閱[程式碼共用選項 (英文)](/xamarin/cross-platform/app-fundamentals/code-sharing) (xamarin.com)。
+ PCL 中的共用程式碼是非平台相關的，因為 PCL 只編譯一次，並隨附於每個平台專屬的應用程式封裝中。 如果您想要撰寫共用程式碼，以使用條件式編譯來隔離平台專屬的程式碼，您可以使用「共用」** 專案。 如需詳細資訊，請參閱[程式碼共用選項 (英文)](/xamarin/cross-platform/app-fundamentals/code-sharing) (xamarin.com)。
 
-## <a name="see-also"></a>請參閱
- [Xamarin 開發人員網站](/xamarin/) [Windows 開發人員中心](https://dev.windows.com/en-us) [Swift 和C#快速參考海報](https://aka.ms/scposter)
+## <a name="see-also"></a>另請參閱
+ [Xamarin Developer site](/xamarin/) [Windows 開發人員中心](https://dev.windows.com/en-us) [Swift 和 c # 快速參考海報](https://aka.ms/scposter)

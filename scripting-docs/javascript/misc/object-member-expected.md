@@ -1,5 +1,5 @@
 ---
-title: 預期的物件成員 |Microsoft Docs
+title: 需要物件成員 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d83c6ce2c7173054aa6ea31681ad1baa6e0cbc70
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815587"
 ---
 # <a name="object-member-expected"></a>必須是物件成員
@@ -26,8 +26,8 @@ ms.locfileid: "85815587"
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 請確定您已正確輸入資料成員的名稱。  
+- 確定您已正確輸入資料成員的名稱。  
   
 ## <a name="see-also"></a>另請參閱  
- [物件物件](../../javascript/reference/object-object-javascript.md)   
+ [Object 物件](../../javascript/reference/object-object-javascript.md)   
  [物件和陣列](../../javascript/objects-and-arrays-javascript.md)

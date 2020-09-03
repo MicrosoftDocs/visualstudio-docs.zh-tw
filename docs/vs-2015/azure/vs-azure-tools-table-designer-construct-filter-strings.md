@@ -12,17 +12,17 @@ ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
 ms.openlocfilehash: 571f7bf825583b3094e07ea4404437f2fb2d62de
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917606"
 ---
-# <a name="constructing-filter-strings-for-the-table-designer"></a>為資料表設計工具設計篩選字串架構
+# <a name="constructing-filter-strings-for-the-table-designer"></a>建構資料表設計工具的篩選字串
 ## <a name="overview"></a>概觀
-若要在 Visual Studio [資料表設計工具]中顯示的 Azure 資料表中篩選資料，您可以建構篩選字串並在篩選欄位中輸入它。 篩選條件字串語法由 WCF Data Services 定義，類似於 SQL WHERE 子句，但會透過 HTTP 要求傳送至表格服務。 [資料表設計工具] 會為您處理適當的編碼，因此，若要篩選所需的屬性值，您只需要在篩選欄位中輸入屬性名稱、比較運算子、準則值和 (選擇性) 布林運算子。 您不需要像透過 [儲存體服務 REST API 參考](/rest/api/storageservices)建構 URL 來查詢資料表一樣包含 $filter 查詢選項。
+若要在 Visual Studio [資料表設計工具] **** 中顯示的 Azure 資料表中篩選資料，您可以建構篩選字串並在篩選欄位中輸入它。 篩選條件字串語法由 WCF Data Services 定義，類似於 SQL WHERE 子句，但會透過 HTTP 要求傳送至表格服務。 [資料表設計工具] **** 會為您處理適當的編碼，因此，若要篩選所需的屬性值，您只需要在篩選欄位中輸入屬性名稱、比較運算子、準則值和 (選擇性) 布林運算子。 您不需要像透過 [儲存體服務 REST API 參考](/rest/api/storageservices)建構 URL 來查詢資料表一樣包含 $filter 查詢選項。
 
-WCF Data Services 以 [開放式資料通訊協定](https://www.odata.org/) (OData) 為基礎。 如需篩選系統查詢選項 ( **$filter**) 的詳細資訊，請參閱 [OData URI 轉換規格](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)。
+WCF Data Services 以 [開放式資料通訊協定](https://www.odata.org/) (OData) 為基礎。 如需篩選系統查詢選項 (**$filter**) 的詳細資訊，請參閱 [OData URI 轉換規格](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)。
 
 ## <a name="comparison-operators"></a>比較運算子
 所有屬性類型都支援下列邏輯運算子：
@@ -34,10 +34,10 @@ WCF Data Services 以 [開放式資料通訊協定](https://www.odata.org/) (ODa
 | ge |大於或等於 |Price ge 10 |
 | lt |小於 |Price lt 20 |
 | le |小於或等於 |Price le 100 |
-| ne |不相等 |City ne 'London' |
-| 和 |及 |Price le 200 and Price gt 3.5 |
-| 或 |或 |Price le 3.5 or Price gt 200 |
-| not |否 |not isAvailable |
+| ne |不等於 |City ne 'London' |
+| 及 |And |Price le 200 and Price gt 3.5 |
+| 或 |Or |Price le 3.5 or Price gt 200 |
+| 否 |Not |not isAvailable |
 
 建構篩選字串時，下列規則很重要：
 

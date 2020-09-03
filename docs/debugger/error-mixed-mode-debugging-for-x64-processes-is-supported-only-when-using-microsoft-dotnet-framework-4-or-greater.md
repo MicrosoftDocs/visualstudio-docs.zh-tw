@@ -1,5 +1,5 @@
 ---
-title: 錯誤-只有使用 Microsoft .NET Framework 4 或更高版本時，才支援 x64 進程的混合模式偵錯工具 |Microsoft Docs
+title: 錯誤-只有在使用 Microsoft .NET Framework 4 或更高版本時，才支援 x64 進程的混合模式偵錯工具 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -15,14 +15,14 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 9f30fe9b729df84506f6717e5fd895297390dea6
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460633"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>錯誤：只有使用 Microsoft .NET Framework 4 或更新版本時才支援 x64 處理序的混合模式偵錯
-若要在64位進程中，對混合原生和 managed 程式碼進行偵錯工具，您必須擁有 .NET Framework 第4版。 不支援具有早于4之 .NET Framework 版本之64位進程的混合模式偵錯工具。
+若要在64位進程中偵測混合原生和 managed 程式碼，您必須有 .NET Framework 第4版。 不支援以4之前的 .NET Framework 版本進行64位進程的混合模式調試。
 
 ### <a name="to-correct-this-error"></a>更正這個錯誤
 

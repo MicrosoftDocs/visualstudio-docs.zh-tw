@@ -1,5 +1,5 @@
 ---
-title: 錯誤-未安裝 ASP.NET |Microsoft Docs
+title: 錯誤-ASP.NET 未安裝 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: 3a768a1a3a0295190701cacc9bbf017baee507b7
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460901"
 ---
 # <a name="error-aspnet-not-installed"></a>錯誤：尚未安裝 ASP.NET
@@ -37,7 +37,7 @@ ms.locfileid: "85460901"
    \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i
    ```
 
-    其中*version*代表安裝在您電腦上之 .NET Framework 的版本號碼，例如 v 1.0.370。 您可以藉由查看目錄來判斷架構版本 `\WINDOWS\Microsoft.NET\Framework` 。
+    其中 *version* 代表電腦上所安裝之 .NET Framework 的版本號碼，例如 v 1.0.370。 您可以藉由查看目錄來判斷架構版本 `\WINDOWS\Microsoft.NET\Framework` 。
 
    > [!NOTE]
    > 您可以利用 Windows Server 2003 控制台中的 [新增或移除程式]**** 來安裝 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]。

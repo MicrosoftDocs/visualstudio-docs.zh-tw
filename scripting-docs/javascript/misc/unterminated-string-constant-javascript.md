@@ -1,5 +1,5 @@
 ---
-title: 未結束的字串常數（JavaScript） |Microsoft Docs
+title: 未結束的字串常數 (JavaScript) |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -15,21 +15,21 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f59fd95b77ec6a3cd2486ff954002daeb0364321
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815314"
 ---
 # <a name="unterminated-string-constant-javascript"></a>未結束的字串常數 (JavaScript)
-您未以右引號結尾字串常數。 字串常數必須括在一對引號內。  
+您未使用右引號結束您的字串常數。 字串常數必須包含在成對的引號內。  
   
 > [!NOTE]
 > 您可以使用成對的單引號或雙引號。 雙引號可以包含在以單引號括住的字串中，而且單引號可以包含在以雙引號括住的字串中。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 在字串結尾加上右引號。  
+- 在字串的結尾加上右引號。  
   
 ## <a name="see-also"></a>另請參閱  
  [String 物件](../../javascript/reference/string-object-javascript.md)   

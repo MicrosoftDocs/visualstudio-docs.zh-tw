@@ -9,10 +9,10 @@ ms.technology: vs-unity-tools
 ms.workload:
 - unity
 ms.openlocfilehash: e824951556124f080f14cdd9f440037decf5146f
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815132"
 ---
 # <a name="using-net-4x-in-unity"></a>在 Unity 中使用 .NET 4.x
@@ -21,7 +21,7 @@ C# 和 .NET (以 Unity 指令碼為基礎的技術) 持續接收到更新，因�
 
 隨著 Unity 2017.1 的發行，Unity 引進將其指令碼執行階段升級至 .NET 4.6 (C# 6 相容版本) 的實驗性版本。 在 Unity 2018.1 中，不再將 .NET 4.x 對等執行階段視為實驗性，現在會將舊版 .NET 3.5 對等執行階段視為舊版本。 而隨著 Unity 2018.3 的發行，Unity 預測會將已升級的指令碼執行階段設為預設選取項目，甚至進一步更新為 C# 7。 如需本藍圖的詳細資訊和最新更新，請閱讀 Unity 的[部落格文章](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)，或瀏覽其 [Experimental Scripting Previews 論壇](https://forum.unity.com/forums/experimental-scripting-previews.107/)。 在此同時，請參閱下列各節，來深入了解 .NET 4.x 指令碼執行階段現在可用的新功能。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 * [Unity 2017.1 或更新版本](https://unity3d.com/) (建議使用 2018.2)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
@@ -74,7 +74,7 @@ Visual Studio 會在每次開啟 Unity 專案時重新產生其 .csproj 和 .sln
 
 1. 瀏覽 NuGet 以找到您要新增的相容套件 (.NET Standard 2.0 或 .NET 4.x)。 此範例示範如何將 [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/) (使用 JSON 的熱門套件) 新增至 .NET Standard 2.0 專案。
 
-1. 按一下 [下載]**** 按鈕：
+1. 按一下 [ **下載** ] 按鈕：
 
     ![[下載] 按鈕](media/vstu_nuget-download.png)
 
@@ -146,7 +146,7 @@ public int Health { get; set; } = 100;
 
 ### <a name="string-interpolation"></a>字串插補
 
-使用較舊的 .NET 3.5 執行階段，字串串連需要冗長的必要語法。 現在使用 .NET 4.x 執行時間， [ `$` 字串內插補](/dotnet/csharp/language-reference/tokens/interpolated)點功能可讓您以更直接易懂的語法將運算式插入字串中：
+使用較舊的 .NET 3.5 執行階段，字串串連需要冗長的必要語法。 現在有了 .NET 4.x 執行時間， [ `$` 字串插補](/dotnet/csharp/language-reference/tokens/interpolated)功能可讓您以更直接易懂的語法將運算式插入字串中：
 
 ```csharp
 // .NET 3.5
@@ -229,11 +229,11 @@ TAP 是一個複雜主題，而開發人員應該考慮其 Unity 特定細微差
 
 這些秘訣可協助您在 Unity 中開始使用 TAP：
 
-* 打算等候的非同步函式應該有傳回類型 [`Task`](/dotnet/api/system.threading.tasks.task) 或 [`Task<TResult>`](/dotnet/api/system.threading.tasks.task-1) 。
+* 要等候的非同步函式應該有傳回型別 [`Task`](/dotnet/api/system.threading.tasks.task) 或 [`Task<TResult>`](/dotnet/api/system.threading.tasks.task-1) 。
 * 傳回工作的非同步函數應該在其名稱附加尾碼 **"Async"**。 "Async" 尾碼有助於指出應該一律等候函數。
 * 只會使用可從傳統同步程式碼引發 async 函數之函數的 `async void` 傳回型別。 這類函數本身無法等候，而且不應該在其名稱中有 "Async" 尾碼。
 * 根據預設，Unity 使用 UnitySynchronizationContext 確保在主要執行緒上執行 async 函數。 Unity API 無法在主要執行緒外部存取。
-* 您可以使用和之類的方法，在背景執行緒上執行工作 [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx) 。 這項技術適用於卸載主要執行緒的耗費資源作業，以提高效能。 不過，使用背景執行緒可能會導致很難偵錯的問題 (例如[競爭條件](https://wikipedia.org/wiki/Race_condition))。
+* 您可以使用和等方法在背景執行緒上執行工作 [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx) 。 這項技術適用於卸載主要執行緒的耗費資源作業，以提高效能。 不過，使用背景執行緒可能會導致很難偵錯的問題 (例如[競爭條件](https://wikipedia.org/wiki/Race_condition))。
 * Unity API 無法在主要執行緒外部存取。
 * Unity WebGL 組建不支援使用執行緒的工作。
 
@@ -335,7 +335,7 @@ public class UsingStaticExample: MonoBehaviour
 
 將遊戲匯出至 iOS 這類平台時，Unity 將使用其 IL2CPP 引擎以將 IL「轉換」為 C++ 程式碼，而且接著會使用目標平台的原生編譯器來編譯 C++ 程式碼。 在此情節中，有幾項不支援的 .NET 功能，例如反映的組件和 `dynamic` 關鍵字的用法。 雖然您可以利用自己的程式碼控制這些功能的使用，但是請注意，使用未以 Unity 和 IL2CPP 撰寫的協力廠商 DLL 和 SDK 可能會發生問題。 如需本主題的詳細資訊，請參閱 Unity 網站上的 [Scripting Restrictions](https://docs.unity3d.com/Manual/ScriptingRestrictions.html) (指令碼限制) 文件。
 
-此外，如上述 Json.NET 範例所述，Unity 將嘗試在 IL2CPP 匯出程序期間去除未使用的程式碼。  雖然這通常不是問題，但如果程式庫使用反映，它可能會不小心去除在執行時間呼叫的屬性或方法，而無法在匯出時間判斷。  若要修正這些問題，請將 **link.xml** 檔案新增至專案，而專案包含不要對其執行去除程序的組件和命名空間清單。  如需完整詳細資料，請參閱[位元組程式碼去除的 Unity 文件](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
+此外，如上述 Json.NET 範例所述，Unity 將嘗試在 IL2CPP 匯出程序期間去除未使用的程式碼。  雖然這通常不是問題，但使用反映的程式庫可能會不小心去除將在執行時間呼叫的屬性或方法，而無法在匯出時判斷。  若要修正這些問題，請將 **link.xml** 檔案新增至專案，而專案包含不要對其執行去除程序的組件和命名空間清單。  如需完整詳細資料，請參閱[位元組程式碼去除的 Unity 文件](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
 
 ## <a name="net-4x-sample-unity-project"></a>.NET 4.x 範例 Unity 專案
 

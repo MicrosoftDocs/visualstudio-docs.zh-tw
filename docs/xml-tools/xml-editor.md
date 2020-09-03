@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 64f36255a03939c649a91b4a91d15958475be3b5
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815015"
 ---
 # <a name="xml-editor"></a>XML 編輯器
 
-Visual Studio 中的 XML 編輯器是以文字編輯器為基礎，並包含 XML 語言的其他支援。 當您在 Visual Studio 中開啟 XML 檔案時，它會在 XML 編輯器中開啟。
+Visual Studio 中的 XML 編輯器是以文字編輯器為基礎，並包含 XML 語言的其他支援。 當您在 Visual Studio 中開啟 XML 檔案時，它會在 [XML 編輯器] 中開啟。
 
 XML 編輯器包含下列功能：
 
@@ -38,13 +38,13 @@ XML 編輯器包含下列功能：
 
 - 文件大綱，以便展開及摺疊項目。
 
-- 與[XML 架構瀏覽器](../xml-tools/xml-schema-explorer.md)整合。 這會提供 XML 架構的階層式視圖。
+- 與 [XML 架構瀏覽器](../xml-tools/xml-schema-explorer.md)整合。 這會提供 XML 架構的階層視圖。
 
-針對已知的副檔名（例如 *.xml*、 *.xsd*、 *.xsl*及 *.config*）叫用 xml 編輯器。如果檔案似乎包含 XML，它也會在任何未知的副檔名上叫用。
+XML 編輯器是針對已知的副檔名（例如 *.xml*、 *.xsd*、 *.xsl*和 *.config*）叫用。如果檔案似乎包含 XML，也會在任何未知的副檔名上叫用它。
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
-[XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md)可讓您自動完成屬性集名稱、範本模式和名稱，以及指定模式或指定之已命名範本的參數名稱。
+[XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md) 可讓您針對指定的模式或指定的命名範本，自動完成屬性集名稱、範本模式和名稱，以及參數名稱。
 
 ## <a name="xslt-profiler"></a>XSLT 分析工具
 
@@ -52,11 +52,11 @@ XML 編輯器包含下列功能：
 
 ## <a name="xslt-hierarchy"></a>XSLT 階層
 
-[XSLT 階層工具](../xml-tools/walkthrough-using-xslt-hierarchy.md)可讓您在包含的樣式表單和（或）內建範本規則中加入中斷點。
+[XSLT 階層工具](../xml-tools/walkthrough-using-xslt-hierarchy.md)可讓您在包含的樣式表單及/或內建範本規則中加入中斷點。
 
 ## <a name="see-also"></a>另請參閱
 
-- [XML 編輯器選項-格式化](../ide/reference/options-text-editor-xml-formatting.md)
+- [XML 編輯器選項-格式設定](../ide/reference/options-text-editor-xml-formatting.md)
 - [XML 編輯器選項-其他](../ide/reference/options-text-editor-xml-miscellaneous.md)
 - [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)
 - [XML 標準參考](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)

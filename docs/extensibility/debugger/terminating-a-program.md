@@ -1,5 +1,5 @@
 ---
-title: 終止程式 |微軟文件
+title: 終止程式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,22 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 985b20fe75f8ceee3d434ac681b437c51baf85e8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712514"
 ---
 # <a name="terminating-a-program"></a>終止程式
-以下部分介紹使用一個線程終止單個程式。
+下一節說明使用一個執行緒的單一程式終止。
 
-## <a name="termination-process"></a>取消過程
+## <a name="termination-process"></a>終止進程
 
-1. DE 傳送[IDebugThread 破壞事件2,](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)帶有一個有效的[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)。
+1. DE 會傳送具有有效[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)的[IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md) 。
 
-2. DE 發送具有有效[IDebug Program2](../../extensibility/debugger/reference/idebugprogram2.md)的[IDebug Program破壞事件2。](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)
+2. DE 會傳送具有有效[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)的[IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) 。
 
-   IDE 進入設計模式。 除錯引擎或執行時環境調用[IDebugPortNotify2::刪除程式節點](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)以從埠中刪除程式。
+   IDE 進入設計模式。 偵錯工具引擎或執行時間環境會呼叫 [IDebugPortNotify2：： RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) ，以從埠中移除程式。
 
 ## <a name="see-also"></a>另請參閱
-- [呼叫除錯器事件](../../extensibility/debugger/calling-debugger-events.md)
+- [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)

@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5f69969ac60e7476e2d9430266acca41c0745f3a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664185"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Blend 中的畫筆工具輔助按鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-下表列出當您使用 [**畫筆**] 工具![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a")建立路徑時，可以用來修改路徑的快捷方式。 您也可以使用 [畫筆] 工具，加入或移除現有路徑上的點，或結合兩個現有路徑。
+下表列出當您使用 [畫筆]**** 工具 ![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a") 建立路徑時，可用於修改路徑的快速鍵。 您也可以使用 [畫筆]**** 工具，加入或移除現有路徑上的點，或結合兩個現有路徑。
 
-|若要執行這項操作|請這樣做|Pointer|
+|若要執行這項操作|執行方式|Pointer|
 |-----------------------|-------------|-------------|
 |建立直線線段的起點|按一下以建立新的點|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> 畫筆指標|
 |建立曲線線段的起點|按一下以建立新的點，然後拖曳新點以調整正切函數控點，再鬆開滑鼠按鈕。|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> 畫筆指標|
@@ -33,9 +33,9 @@ ms.locfileid: "72664185"
 |從路徑移除某個點|將滑鼠指標停在現有的點上並按一下|![](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png "08a64b78-f3df-4730-8169-c56b5631b071")<br /><br /> 畫筆刪除指標|
 |以尖角結束路徑|按一下起點|![](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png "a12fd3b4-a553-4762-b01c-c35efa594362")<br /><br /> 畫筆結束指標|
 |在角落以平滑曲線結束路徑|按一下起點並拖曳，以修改正切函數控點，然後鬆開滑鼠按鈕。|![](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png "a12fd3b4-a553-4762-b01c-c35efa594362")<br /><br /> 畫筆結束指標|
-|結合兩個路徑時建立尖角|選取兩個路徑，按一下 [畫筆] 工具，再按一下其中一個路徑的結束點，然後按一下另一個路徑的結束點|![](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png "bd12dfa4-112e-4f37-9765-3479e6b69894")<br /><br /> 畫筆結合指標|
-|結合兩個路徑時建立平滑的角|選取兩個路徑，按一下 [畫筆] 工具，再按一下其中一個路徑的結束點，然後拖曳另一個路徑的結束點|![](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png "bd12dfa4-112e-4f37-9765-3479e6b69894")<br /><br /> 畫筆結合指標|
+|結合兩個路徑時建立尖角|選取兩個路徑，按一下 [畫筆]**** 工具，再按一下其中一個路徑的結束點，然後按一下另一個路徑的結束點|![](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png "bd12dfa4-112e-4f37-9765-3479e6b69894")<br /><br /> 畫筆結合指標|
+|結合兩個路徑時建立平滑的角|選取兩個路徑，按一下 [畫筆]**** 工具，再按一下其中一個路徑的結束點，然後拖曳另一個路徑的結束點|![](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png "bd12dfa4-112e-4f37-9765-3479e6b69894")<br /><br /> 畫筆結合指標|
 |建立新路徑|按住 CTRL 鍵，並按一下上一個路徑的外部，以停止將點加入上一個路徑，然後按一下或拖曳您想要開始新路徑的地方|![](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png "69758176-5f53-465b-808c-f13fd1a0b3f2")<br /><br /> 畫筆開始指標|
 
-## <a name="see-also"></a>請參閱
- [鍵盤快速鍵和輔助按鍵](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)[畫板輔助按鍵](../designers/artboard-modifier-keys-in-blend.md)[直接選取工具輔助按鍵](../designers/direct-selection-tool-modifier-keys-in-blend.md)[繪製圖案和路徑](../designers/draw-shapes-and-paths.md)
+## <a name="see-also"></a>另請參閱
+ [鍵盤快速鍵和輔助按鍵](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)[畫板輔助按鍵](../designers/artboard-modifier-keys-in-blend.md)[直接選取工具輔助](../designers/direct-selection-tool-modifier-keys-in-blend.md)按鍵[繪製圖案和路徑](../designers/draw-shapes-and-paths.md)

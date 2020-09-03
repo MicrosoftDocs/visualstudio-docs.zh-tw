@@ -14,10 +14,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 0c0e6e9d41bb1d4bd7446bb77306ca5a4551906f
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419103"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>進階編譯器設定對話方塊 (Visual Basic)
@@ -28,9 +28,9 @@ ms.locfileid: "85419103"
 
 1. 在方案總管**** 中，選擇專案節點 (而不是 [方案]**** 節點)。
 
-2. 按一下 [專案]**** 功能表上的 [屬性]****。 當 [**專案設計**工具] 出現時，按一下 [**編譯**] 索引標籤。
+2. 按一下 [專案] 功能表上的 [屬性]。 當 [ **專案設計** 工具] 出現時，按一下 [ **編譯** ] 索引標籤。
 
-3. 在[專案設計工具、編譯頁 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)，選取 [設定]**** 和 [平台]****。 在簡化的組建設定中，不會顯示 [設定]**** 和 [平台]**** 清單。 如需詳細資訊，請參閱[如何：設定偵錯工具和發行設定](../../debugger/how-to-set-debug-and-release-configurations.md)。
+3. 在[專案設計工具、編譯頁 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)，選取 [設定]**** 和 [平台]****。 在簡化的組建設定中，不會顯示 [設定]**** 和 [平台]**** 清單。 如需詳細資訊，請參閱 [如何：設定 debug 和 Release 設定](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
 4. 按一下 [進階編譯選項]****。
 
@@ -78,7 +78,7 @@ ms.locfileid: "85419103"
 
 **產生序列化組件**
 
-此設定指定編譯器是否會建立 XML 序列化組件。 如果您已在程式碼中使用該類別將類型序列化，則序列化組件可提升 <xref:System.Xml.Serialization.XmlSerializer> 的啟動效能。 此選項的預設值為 [**自動**]。**Auto**指定只有在您已使用 <xref:System.Xml.Serialization.XmlSerializer> 將程式碼中的類型編碼為 XML 時，才會產生序列化元件。 [關閉]**** 指定不論您的程式碼是否使用 <xref:System.Xml.Serialization.XmlSerializer>，永遠不會產生序列化組件。 **On** 指定永遠會產生序列化組件。 序列化組件將命名為 `TypeName`.XmlSerializers.dll。
+此設定指定編譯器是否會建立 XML 序列化組件。 如果您已在程式碼中使用該類別將類型序列化，則序列化組件可提升 <xref:System.Xml.Serialization.XmlSerializer> 的啟動效能。 此選項的預設值為 [ **自動**]。 **Auto** 指定只有在您已使用 <xref:System.Xml.Serialization.XmlSerializer> 將程式碼中的型別編碼為 XML 時，才會產生序列化元件。 [關閉]**** 指定不論您的程式碼是否使用 <xref:System.Xml.Serialization.XmlSerializer>，永遠不會產生序列化組件。 **On** 指定永遠會產生序列化組件。 序列化組件將命名為 `TypeName`.XmlSerializers.dll。
 
 ## <a name="see-also"></a>另請參閱
 

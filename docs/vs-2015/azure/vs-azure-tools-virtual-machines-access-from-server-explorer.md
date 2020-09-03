@@ -12,15 +12,15 @@ ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
 ms.openlocfilehash: f4c1ff547d9d550cbbc2e77435b159543fc16bf6
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917102"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>從伺服器總管存取 Azure 虛擬機器
 
-若您已有虛擬機器由 Azure 託管，即可從 [伺服器總管] 存取這些虛擬機器。 您必須先登入您的 Azure 訂用帳戶，才能檢視您的行動服務。 若要登入，請在 [伺服器總管] 中開啟 [Azure] 節點的捷徑功能表，並選擇 [連線到 Microsoft Azure]。
+如果您有 Azure 主控的虛擬機器，您可以在 [伺服器總管] 中存取它們。 您必須先登入您的 Azure 訂用帳戶，才能檢視您的行動服務。 若要登入，請在 [伺服器總管] 中開啟 [Azure] 節點的捷徑功能表，並選擇 [連線到 Microsoft Azure] ****。
 
 1. 在 Cloud Explorer 中選擇虛擬機器，然後選擇 F4 鍵以顯示其屬性視窗。
 
@@ -31,10 +31,10 @@ ms.locfileid: "75917102"
    | DNS 名稱 |包含虛擬機器網際網路位址的 URL。 |
    | 環境 |若是虛擬機器，這個屬性的值一定是 [生產]。 |
    | Name |虛擬機器的名稱。 |
-   | 大小 |虛擬機器的大小，此值會反映可用的記憶體和磁碟空間數量。 如需詳細資訊，請參閱[虛擬機器大小](/azure/cloud-services/cloud-services-sizes-specs)。 |
-   | Status |值包括 [啟動中]、[已啟動]、[停止中]、[已停止] 和 [正在擷取狀態]。 如果出現 [正在擷取狀態]，則目前狀態是未知的。 這個屬性的值不同於 [Azure 入口網站](https://portal.azure.com/)上所使用的值。 |
-   | 訂用帳戶 ID |Azure 帳戶的訂用帳戶識別碼。 您可以透過檢視訂用帳戶的屬性，在 [Azure 入口網站](https://portal.azure.com/)上顯示這項資訊。 |
-2. 選擇端點節點，然後檢視 [屬性] 視窗。
+   | Size |虛擬機器的大小，此值會反映可用的記憶體和磁碟空間數量。 如需詳細資訊，請參閱 [虛擬機器大小](/azure/cloud-services/cloud-services-sizes-specs)。 |
+   | 狀態 |值包括 [啟動中]、[已啟動]、[停止中]、[已停止] 和 [正在擷取狀態]。 如果出現 [正在擷取狀態]，則目前狀態是未知的。 這個屬性的值不同於 [Azure 入口網站](https://portal.azure.com/)上所使用的值。 |
+   | SubscriptionID |Azure 帳戶的訂用帳戶識別碼。 您可以透過檢視訂用帳戶的屬性，在 [Azure 入口網站](https://portal.azure.com/)上顯示這項資訊。 |
+2. 選擇端點節點，然後檢視 [**屬性**] 視窗。
 3. 下表說明可用的端點屬性，但他們全部都是唯讀。 若要新增或編輯虛擬機器的端點，請使用 [Azure 入口網站](https://portal.azure.com/)。 
 
    | 屬性 | 描述 |

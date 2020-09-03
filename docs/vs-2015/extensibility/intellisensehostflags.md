@@ -14,10 +14,10 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 12945998b215e9082591fad514bd9c16ab789405
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203883"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
@@ -43,13 +43,13 @@ enum IntellisenseHostFlags
 |成員|描述|  
 |-------------|-----------------|  
 |`IHF_READONLYCONTEXT`|內容緩衝區是唯讀的。|  
-|`IHF_NOSEPARATESUBJECT`|沒有主旨文字。 內容緩衝區包含 IntelliSense 目標 (表示`!IHF_READONLYCONTEXT`)。|  
-|`IHF_SINGLELINESUBJECT`|無法多-列支援的主旨文字。|  
+|`IHF_NOSEPARATESUBJECT`|沒有主體文字。 內容緩衝區包含 IntelliSense-目標 (意指 `!IHF_READONLYCONTEXT`) 。|  
+|`IHF_SINGLELINESUBJECT`|主體文字無法支援多行功能。|  
 |`IHF_FORCECOMMITTOCONTEXT`|與 `CanCommitIntoReadOnlyBuffer` 相同。|  
-|`IHF_OVERTYPE`|編輯 （在主旨或內容） 應該在取代模式中。|  
+|`IHF_OVERTYPE`|在 [主體] 或 [內容]) 中編輯 (應該在 [改寫] 模式中完成。|  
   
 ## <a name="requirements"></a>需求  
- SingleFileeditor.idl  
+ SingleFileeditor .idl  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TextManager.Interop>

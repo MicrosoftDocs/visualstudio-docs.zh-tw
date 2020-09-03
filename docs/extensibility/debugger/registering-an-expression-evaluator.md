@@ -1,5 +1,5 @@
 ---
-title: 註冊運算式賦值器 |微軟文件
+title: 註冊運算式評估工具 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,26 +12,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 600f7c8a2e2957cddf23ccc82b0872617e491940
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713203"
 ---
-# <a name="register-an-expression-evaluator"></a>註冊運算式賦值器
+# <a name="register-an-expression-evaluator"></a>註冊運算式評估工具
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關執行 CLR 運算式評估工具的詳細資訊，請參閱 [clr 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 運算式賦值器 (EE) 必須將自己註冊為具有 Windows COM 環境和 Visual Studio 的類工廠。 EE 設定為 DLL,以便將其注入除錯引擎 (DE) 位址空間或 Visual Studio 位址空間,具體取決於實例化 EE 的實體。
+ 運算式評估工具 (EE) 必須將本身註冊為具有 Windows COM 環境和 Visual Studio 的 class factory。 EE 會設定為 DLL，以便將它插入 debug engine (DE) 位址空間或 Visual Studio 位址空間，視哪一個實體具現化 EE 而定。
 
-## <a name="managed-code-expression-evaluator"></a>託管代碼表示式賦值器
- 託管代碼 EE 作為類庫實現,它是一個 DLL,它向 COM 環境註冊自身,通常由對 VSIP 程式*regpkg.exe*的調用啟動。 自動處理為 COM 環境編寫註冊表項的實際過程。
+## <a name="managed-code-expression-evaluator"></a>Managed 程式碼運算式評估工具
+ Managed 程式碼 EE 會實作為類別庫，此程式庫是向 COM 環境註冊本身的 DLL，通常是透過呼叫 VSIP 程式來啟動， *regpkg.exe*。 系統會自動處理為 COM 環境寫入登錄機碼的實際程式。
 
- 主類的方法用 標記<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, 指示在 DLL 向 COM 註冊時將呼叫該方法。 此註冊方法(通常稱為`RegisterClass`)執行在 Visual Studio 註冊 DLL 的任務。 相應的`UnregisterClass`(用<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>標記 ),撤銷卸載`RegisterClass`DLL 時的效果。
-與使用非託管代碼編寫的 EE 相同的註冊表項;唯一的區別是沒有幫助器功能,例如`SetEEMetric`為你做工作。 下面是註冊和取消註冊過程的示例。
+ 主要類別的方法會標示為 <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> ，表示在使用 COM 註冊 DLL 時，會呼叫方法。 此註冊方法（通常稱為 `RegisterClass` ）會執行使用 Visual Studio 註冊 DLL 的工作。 `UnregisterClass`以) 標記的對應 (<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> ， `RegisterClass` 會在卸載 DLL 時復原效果。
+針對以非受控碼撰寫的 EE 建立相同的登錄專案;唯一的差別在於沒有協助程式功能，例如 `SetEEMetric` 為您執行工作。 以下是註冊和取消註冊程式的範例。
 
 ### <a name="example"></a>範例
- 以下函數顯示了託管代碼 EE 如何在 Visual Studio 中註冊和註銷自身。
+ 下列函式顯示 managed 程式碼 EE 如何向 Visual Studio 登錄和取消註冊本身。
 
 ```csharp
 namespace EEMC
@@ -97,33 +97,33 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code-expression-evaluator"></a>非託管代碼表示式賦值器
- EE DLL`DllRegisterServer`實現 在 COM 環境和可視化工作室中註冊自己的功能。
+## <a name="unmanaged-code-expression-evaluator"></a>非受控碼運算式評估工具
+ EE DLL 會實 `DllRegisterServer` 作用來向 COM 環境註冊本身以及 Visual Studio 的函式。
 
 > [!NOTE]
-> 您可以在檔*dllentry.cpp*中找到 MyCEE 代碼範例的註冊表代碼,該代碼位於 EnVSDK_MyCPkgs_MyCEE 下的 VSIP 安裝中。
+> 您可以在 dllentry 檔案中找到 MyCEE 程式碼範例登錄程式碼，該檔案位於 EnVSDK\MyCPkgs\MyCEE. 下的 VSIP 安裝中 *。*
 
-### <a name="dll-server-process"></a>DLL 伺服器程序
- 註冊 EE 時,DLL 伺服器:
+### <a name="dll-server-process"></a>DLL 伺服器進程
+ 註冊 EE 時，DLL 伺服器：
 
-1. 根據正常的`CLSID`COM 約定註冊其類工廠。
+1. `CLSID`依據一般 COM 慣例來註冊其 class factory。
 
-2. 調用說明器函數`SetEEMetric`向 Visual Studio 註冊下表中顯示的 EE 指標。 函數`SetEEMetric`和指標如下所示是*dbgmetric.lib*庫的一部分。 有關詳細資訊[,請參閱 SDK 協助器進行除錯](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)。
+2. 呼叫 helper 函式 `SetEEMetric` ，以 Visual Studio 下表所示的 EE 計量來進行註冊。 以下列方式指定的函式 `SetEEMetric` 和度量是 *dbgmetric .lib* 程式庫的一部分。 如需詳細資料，請參閱 [SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) 。
 
     |計量|描述|
     |------------|-----------------|
-    |`metricCLSID`|`CLSID`EE 級工廠|
-    |`metricName`|EE 的名稱為可顯示字串|
-    |`metricLanguage`|EE 旨在評估的語言名稱|
-    |`metricEngine`|`GUID`使用此 EE 的除錯引擎 (DE) 的|
+    |`metricCLSID`|`CLSID` EE class factory|
+    |`metricName`|EE 的名稱，做為可顯示的字串|
+    |`metricLanguage`|EE 設計用來評估的語言名稱|
+    |`metricEngine`|`GUID`偵錯工具引擎 (使用此 EE 來解除) |
 
     > [!NOTE]
-    > 按`metricLanguage``GUID`名稱標識語言,但選擇該語言的參數`guidLang`是`SetEEMetric`該語言的參數。 當編譯器生成調試資訊檔時,它應該編寫適當的`guidLang`檔,以便 DE 知道要使用的 EE。 DE 通常會向符號提供程式詢問此`GUID`語言 ,該語言存儲在除錯資訊檔中。
+    > `metricLanguage``GUID`會依名稱識別語言，但它是 `guidLang` 選取語言的引數 `SetEEMetric` 。 當編譯器產生 debug 資訊檔案時，它應該撰寫適當的， `guidLang` 讓 DE 知道要使用哪一個 EE。 這種方式通常會要求此語言的符號提供者 `GUID` 會儲存在 debug 資訊檔中。
 
-3. 通過在HKEY_LOCAL_MACHINE_SOFTWARE_微軟_VisualStudio\\*X.Y*下創建密鑰來向 Visual Studio 註冊,其中*X.Y*是要註冊的 Visual Studio 版本。
+3. 使用 Visual Studio 註冊，方法是在 HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *x. y*下建立索引鍵，其中， *x. y*是要註冊的 Visual Studio 版本。
 
 ### <a name="example"></a>範例
- 以下函數顯示了非託管代碼 (C++) EE 如何在 Visual Studio 中註冊和登出自身。
+ 下列函式顯示非受控碼 (c + +) EE 如何向 Visual Studio 註冊及取消註冊本身。
 
 ```cpp
 /*---------------------------------------------------------
@@ -210,5 +210,5 @@ static HRESULT RegisterMetric( bool registerIt )
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [編寫 CLR 表示式賦值器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-- [除錯的 SDK 說明器](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+- [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+- [用於偵錯工具的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

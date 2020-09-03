@@ -1,5 +1,5 @@
 ---
-title: 目錄狀態代碼枚舉器 |微軟文件
+title: 目錄狀態碼列舉值 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7b5ebf61f2baa6e4277e27cd3c4d18a51e64f835
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712150"
 ---
-# <a name="directory-status-code-enumerator"></a>目錄狀態代碼枚舉器
-枚`SccDirStatus`舉器包含指定的常量值,用於指定源控制系統中目錄的狀態。 此枚舉由[SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)使用。 這在原始程式碼管理外掛程式 API 的版本 1.2 中引入了。
+# <a name="directory-status-code-enumerator"></a>目錄狀態碼列舉值
+`SccDirStatus`列舉值包含指定原始檔控制系統中目錄狀態的指定常數值。 此列舉是由 [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)所使用。 這是在原始檔控制外掛程式 API 的1.2 版中引進。
 
 ## <a name="syntax"></a>語法
 
@@ -33,14 +33,14 @@ enum SccDirStatus {
 ```
 
 ## <a name="members"></a>成員
- 無法獲得SCC_DIRSTATUS_INVALID狀態;不要依賴它。
+ 無法取得 SCC_DIRSTATUS_INVALID 狀態;請勿依賴它。
 
- SCC_DIRSTATUS_NOTCONTROLLED目錄不受原始程式碼管理。
+ SCC_DIRSTATUS_NOTCONTROLLED 目錄不在原始檔控制之下。
 
- SCC_DIRSTATUS_CONTROLLED目錄受原始程式碼管理。
+ SCC_DIRSTATUS_CONTROLLED 目錄位於原始檔控制之下。
 
- SCC_DIRSTATUS_EMPTYPROJ與此目錄對應的專案為空。
+ 對應至此目錄的 SCC_DIRSTATUS_EMPTYPROJ 專案是空的。
 
 ## <a name="see-also"></a>另請參閱
-- [原始程式管理外掛程式](../extensibility/source-control-plug-ins.md)
+- [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)
 - [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

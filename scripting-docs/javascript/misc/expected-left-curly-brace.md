@@ -15,18 +15,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ca69e9d3a20bff5d5f22548448d404a7d042f449
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815366"
 ---
 # <a name="expected-"></a>必須是 '{'
-您未包含標記函數主體開頭的左大括弧。 組成函式主體的程式碼，即使它是單一行，也必須包含在左和右大括弧內。 請注意，在函式主體中使用大括弧比在迴圈中更嚴格。  
+您未包含標示函式主體開頭的左大括弧。 組成函式主體的程式碼（即使它是單行），都必須包含在左括弧和右大括弧內。 請注意，在函式主體中使用大括弧比在迴圈中更嚴格。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 加入標記函式主體開頭的左大括弧。  
+- 加入標示函式主體開頭的左大括弧。  
   
 ## <a name="see-also"></a>另請參閱  
  [Function 物件](../../javascript/reference/function-object-javascript.md)

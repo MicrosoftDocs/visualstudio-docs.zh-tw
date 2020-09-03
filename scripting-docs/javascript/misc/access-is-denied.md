@@ -14,18 +14,18 @@ ms.assetid: 8a512060-d744-47af-a83e-4ba42ea2c5b2
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 874f7c0e5dcfaf4881c059a77f1c5e930d8c0578
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814833"
 ---
-# <a name="access-is-denied"></a>存取遭拒。
+# <a name="access-is-denied"></a>存取遭拒
 指令碼嘗試從來源而不是目前頁面的主機存取資料。 Internet Explorer 及其他瀏覽器所遵循的相同來源原則，只允許程式碼從具有相同配置、主機和目前頁面之 URL 連接埠的來源存取資料。  
   
  例如，如果目前的頁面是 `https://employees.mycompany.com` ，您就無法從下列 url 存取資料：  
   
-- `http://data.contoso.com`，因為它使用 HTTP 而不是 HTTPS。  
+- `http://data.contoso.com`，因為它使用 HTTP 而非 HTTPS。  
   
 - `https://somedatasource.com`，因為它是不同的網域。  
   

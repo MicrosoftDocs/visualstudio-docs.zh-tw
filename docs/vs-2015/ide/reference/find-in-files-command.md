@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 831a67fe567c2e6ae1e288d1bc7ee91026ff2273
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651031"
 ---
 # <a name="find-in-files-command"></a>檔案中尋找命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-在 [尋找和取代]  視窗中，您可以使用 [檔案中尋找]  索引標籤提供的選項子集，搜尋檔案。
+在 [尋找和取代]**** 視窗中，您可以使用 [檔案中尋找]**** 索引標籤提供的選項子集，搜尋檔案。
 
 ## <a name="syntax"></a>語法
 
@@ -35,9 +35,9 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ```
 
 ## <a name="arguments"></a>引數
- `findwhat` 必要項。 要比對的文字。
+ 需要 `findwhat`。 要比對的文字。
 
-## <a name="switches"></a>參數
+## <a name="switches"></a>交換器
  /case 或 /c 選擇項。 只有當大寫和小寫字元完全符合 `findwhat` 引數中所指定的項目時，才會出現相符項目。
 
  /ext: `extensions` 選擇項。 指定要搜尋之檔案的副檔名。 如果未指定，就會使用之前輸入的副檔名。
@@ -74,4 +74,4 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ```
 
 ## <a name="see-also"></a>另請參閱
- [檔案[中尋找](../../ide/find-in-files.md) [] 命令視窗](../../ide/reference/command-window.md)[尋找/命令框](../../ide/find-command-box.md) [Visual Studio 命令](../../ide/reference/visual-studio-commands.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ 檔案[中尋找](../../ide/find-in-files.md)[命令視窗](../../ide/reference/command-window.md)[尋找/命令框](../../ide/find-command-box.md) [Visual Studio 命令](../../ide/reference/visual-studio-commands.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

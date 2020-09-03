@@ -19,19 +19,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2e1b13cc101ea4d7609633fd9c11bf87946d7b7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665730"
 ---
 # <a name="encodings-and-line-breaks"></a>編碼與分行符號
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 Visual Studio 中，您可以使用 [檔案]/[進階儲存選項] 設定，判斷您要的分行符號字元類型。 您也可以變更具有相同設定之檔案的編碼。
+在 Visual Studio 中，您可以使用 [檔案]/[進階儲存選項]**** 設定，判斷您要的分行符號字元類型。 您也可以變更具有相同設定之檔案的編碼。
 
 > [!NOTE]
-> 如果您有特定類型的開發設定 (Visual Basic、F#、Web Development)，則在功能表上可能看不到 [進階儲存選項]。 若要變更設定 (例如 [一般])，請開啟 [工具]/[匯入和匯出設定]。 如需詳細資訊，請參閱在 Visual Studio 中自訂開發設定 [Walkthrough: Calling Code in an VSTO Add-in from VBA](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
+> 如果您有特定類型的開發設定 (Visual Basic、F#、Web Development)，則在功能表上可能看不到 [進階儲存選項]****。 若要變更設定 (例如 [一般])，請開啟 [工具]/[匯入和匯出設定]****。 如需詳細資訊，請參閱 [Visual Studio 中的自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
 
  在 Visual Studio 中，會將下列字元解譯為分行符號：
 

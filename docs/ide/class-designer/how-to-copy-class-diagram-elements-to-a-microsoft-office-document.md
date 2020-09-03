@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fa6d97b5087659b9fc8120d9480a241517ca8ec
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770993"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>如何：將類別圖表元素複製到 Microsoft Office 文件
 
-您可以將圖形從 .NET 類別圖表（*.cd*檔案）複製到其他檔。 視您貼上的目標文件種類而定，您會取得圖形複本或其基礎程式碼。 若要從模組化專案中的 UML 類別圖表複製圖形，請參閱[將圖表匯出為影像](../../modeling/export-diagrams-as-images.md)。
+您可以從 .NET 類別圖表複製圖形 (的 *光碟* 檔) 至其他檔。 視您貼上的目標文件種類而定，您會取得圖形複本或其基礎程式碼。 若要從模組化專案中的 UML 類別圖表複製圖形，請參閱[將圖表匯出為影像](../../modeling/export-diagrams-as-images.md)。
 
 ## <a name="copy-a-single-element"></a>複製單一元素
 

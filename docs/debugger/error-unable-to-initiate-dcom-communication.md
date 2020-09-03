@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ccd8b30fcba11d89e11227861c4582ff67f3a7e7
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460022"
 ---
 # <a name="error-unable-to-initiate-dcom-communication"></a>錯誤：無法啟始 DCOM 通訊
@@ -26,7 +26,7 @@ ms.locfileid: "85460022"
 
 ### <a name="to-correct-this-error"></a>更正這個錯誤
 
-- 如果遠端電腦已啟用 Windows 防火牆，請參閱[遠端偵錯](../debugger/remote-debugging.md)程式，以取得有關如何設定防火牆以進行本機偵測的指示。
+- 如果遠端電腦已啟用 Windows 防火牆，請參閱 [遠端偵錯](../debugger/remote-debugging.md) 程式，以取得如何設定防火牆進行本機調試的指示。
 
 - 若要還原 Windows 驗證，請嘗試重新啟動本機電腦和遠端電腦。 在本機和遠端機器上檢查 Kerberos 錯誤的事件日誌，並連絡網域系統管理員以瞭解已知的問題。
 

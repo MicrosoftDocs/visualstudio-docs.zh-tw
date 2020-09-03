@@ -1,5 +1,5 @@
 ---
-title: 變更值的範例實現 |微軟文件
+title: 變更值的範例執行 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,33 +12,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d7b712d2a97b02bed215c4996d3309341fb8ff9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713120"
 ---
-# <a name="sample-implementation-of-changing-values"></a>變更值的範例
+# <a name="sample-implementation-of-changing-values"></a>變更值的範例執行
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關執行 CLR 運算式評估工具的詳細資訊，請參閱 [clr 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- **"局部變數"** 視窗中顯示的每個局部變數都有一個與其關聯的[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)物件。 此`IDebugProperty2`物件包含本地的名稱、值和類型。 當使用者更改本地值時,Visual Studio 會調用[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)更新記憶體中的本地值。 在此示例中,local 由實現介面`CFieldProperty``IDebugProperty2`的 類表示。
+ [ **區域變數** ] 視窗中顯示的每個本機都有與其相關聯的 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 物件。 此 `IDebugProperty2` 物件包含本機的名稱、值和類型。 當使用者變更本機的值時，Visual Studio 會呼叫 [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) 來更新記憶體中的本機值。 在此範例中，本機是以實 `CFieldProperty` 介面的類別來表示 `IDebugProperty2` 。
 
 > [!NOTE]
-> 對於**Watch**和**QuickWatch**表達式,正在`CValueProperty`更改的值由 MyCEE 範例中的類表示。 但是,`IDebugProperty2::SetValueAsString`的 實現與此處所示相同。
+> 若為 Watch 和**快速****監看**式運算式，所變更的值會以 `CValueProperty` MyCEE 範例中的類別表示。 但是，的執行 `IDebugProperty2::SetValueAsString` 方式與此處所示的相同。
 
- 的`IDebugProperty2::SetValueAsString`執行以下工作:
+ 的 `IDebugProperty2::SetValueAsString` 執行作業會執行下列工作：
 
-1. 計算運算式以生成值。
+1. 評估運算式以產生值。
 
-2. 將關聯的[IDebugField](../../extensibility/debugger/reference/idebugfield.md)物件繫結到其記憶體位置並產生[IDebugObject 物件](../../extensibility/debugger/reference/idebugobject.md)。
+2. 將相關聯的 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 物件系結至其記憶體位置，並產生 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 物件。
 
-3. 將值轉換為一系列位元組。
+3. 將值轉換成一連串的位元組。
 
-4. 調用[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)以將位元組儲存在記憶體中。
+4. 呼叫 [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) 以將位元組儲存在記憶體中。
 
 ## <a name="managed-code"></a>Managed 程式碼
- 以下代碼是託管代碼中的`IDebugProperty2::SetValueAsString`實現。
+ 下列程式碼是 managed 程式碼中的實作為 `IDebugProperty2::SetValueAsString` 。
 
 ```csharp
 namespace EEMC
@@ -222,8 +222,8 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code"></a>非託管代碼
- 以下代碼是託管代碼中的`IDebugProperty2::SetValueAsString`實現。 説明器函數`FieldCoerceValueType`(未顯示)強制`VARIANT`a 為特定類型,並確保該值是可以`FieldSetValue`處理的類型之一。
+## <a name="unmanaged-code"></a>非受控碼
+ 下列程式碼是 managed 程式碼中的實作為 `IDebugProperty2::SetValueAsString` 。 Helper 函式 `FieldCoerceValueType` (未顯示) 強制為 `VARIANT` 特定類型，並確保值是其中一個類型 `FieldSetValue` 可處理的。
 
 ```cpp
 STDMETHODIMP CFieldProperty::SetValueAsString(
@@ -421,5 +421,5 @@ HRESULT FieldSetValue(
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [變更本地值](../../extensibility/debugger/changing-the-value-of-a-local.md)
-- [評估上下文](../../extensibility/debugger/evaluation-context.md)
+- [變更本機的值](../../extensibility/debugger/changing-the-value-of-a-local.md)
+- [評估內容](../../extensibility/debugger/evaluation-context.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 43b9d201a146538cd74e9528340845fd9fd92597
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918583"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>逐步解說：使用文字範本產生程式碼
@@ -84,11 +84,11 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 ### <a name="create-or-open-a-c-project"></a>建立或開啟 C# 專案
  您可以將這項技術套用至任何程式碼專案。 此逐步解說使用 C# 專案，並且基於測試，我們會使用主控台應用程式。
 
-##### <a name="to-create-the-project"></a>建立專案
+##### <a name="to-create-the-project"></a>若要建立專案
 
-1. 在 [檔案] 功能表上，依序按一下 [新增] 和 [專案]。
+1. 在 [檔案] 功能表 **上，按一下** [ **新增** ]，然後按一下 [ **專案**]。
 
-2. 按一下 [] 節點，然後按一下 [範本] 窗格中的 [主控台應用程式]
+2. 按一下 [] **** 節點，然後按一下 [範本] **** 窗格中的 [主控台應用程式] ****
 
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>將原型 XML 檔案新增至專案
  此檔案的目的是要提供您想要應用程式可讀取之 XML 節點類型的範例。 它可以是將用於測試應用程式的檔案。 範本會為此檔案中的每個節點類型產生 C# 類別。
@@ -97,15 +97,15 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ##### <a name="to-add-an-xml-file"></a>新增 XML 檔案
 
-1. 在方案總管中，以滑鼠右鍵按一下專案，並按一下 [加入] ，然後按一下 [新增項目]。
+1. 在 **方案總管**中，以滑鼠右鍵按一下專案，按一下 [ **加入** ]，然後按一下 [ **新增專案**]。
 
-2. 在 [加入新項目] 對話方塊中，從 [範本] 窗格中選取 [XML 檔案] 。
+2. 在 [加入新項目] **** 對話方塊中，從 [範本] **** 窗格中選取 [XML 檔案] **** 。
 
 3. 將範例內容新增至檔案。
 
 4. 在這個逐步解說中，將檔案命名為 `exampleXml.xml`。 將檔案的內容設定成上一節中所示範的 XML。
 
-   .
+   ..
 
 ### <a name="add-a-test-code-file"></a>新增測試程式碼檔案
  將 C# 檔案新增至您的專案，並在其中撰寫您可撰寫的程式碼範例。 例如：
@@ -137,9 +137,9 @@ namespace MyProject
 
 ##### <a name="to-add-a-text-template-file-to-your-project"></a>將文字範本檔案新增至專案
 
-1. 在方案總管中，以滑鼠右鍵按一下專案，並按一下 [加入]，然後按一下 [新項目]。
+1. 在方案總管 **** 中，以滑鼠右鍵按一下專案，並按一下 [加入] ****，然後按一下 [新項目] ****。
 
-2. 在 [加入新項目] 對話方塊中，從 [範本] 窗格中選取 [文字範本] 。
+2. 在 [加入新項目] **** 對話方塊中，從 [範本] **** 窗格中選取 [文字範本] **** 。
 
    > [!NOTE]
    > 請確定您新增的是「文字範本」，而非「前置處理過的文字範本」。
@@ -157,7 +157,7 @@ namespace MyProject
    <#@ output extension=".cs" #>
    ```
 
-   。
+   .
 
    請注意，.cs 檔案會以範本檔案的子項目形式出現在方案總管中。 按一下範本檔案名稱旁邊的 [+]，就可以看到它。 只要儲存或將焦點移離範本檔案，就會從範本檔案產生此檔案。 產生的檔案將會編譯為專案的一部分。
 
@@ -400,12 +400,12 @@ namespace MyProject
 
  XML 結構描述變更時，可以輕鬆地產生新的類別。 編譯器會告訴開發人員必須更新的應用程式碼。
 
- 若要在變更範例 XML 檔案時重新產生類別，請按一下方案總管工具列中的 [轉換所有範本] 。
+ 若要在變更範例 XML 檔案時重新產生類別，請按一下方案總管工具列中的 [轉換所有範本] **** 。
 
 ## <a name="conclusion"></a>結論
  本逐步解說示範數個技術以及程式碼產生的優點︰
 
-- *「程式碼產生」* (code generation) 是從 *「模型」* (model) 建立應用程式之原始程式碼的各個部分。 此模型以適合應用程式網域的表單來包含資訊，而且可能會隨著應用程式的存留期變更。
+- *「程式碼產生」* (code generation) 是從 *「模型」*(model) 建立應用程式之原始程式碼的各個部分。 此模型以適合應用程式網域的表單來包含資訊，而且可能會隨著應用程式的存留期變更。
 
 - 強類型是程式碼產生的一個優點。 雖然此模型以更適合使用者的表單來呈現資訊，但是產生的程式碼可讓應用程式的其他部分使用一組類型資訊來處理資訊。
 
@@ -418,7 +418,7 @@ namespace MyProject
   在此逐步解說中，實際上是從模型執行個體產生程式碼，這是應用程式將處理之 XML 檔案的代表性範例。 在更正式的方法中，XML 結構描述會是範本的輸入，而形式為 .xsd 檔案或網域特定語言定義。 該方法可讓範本更輕鬆地判斷特性 (例如關聯性的多重性)。
 
 ## <a name="troubleshooting-the-text-template"></a>對文字範本進行疑難排解
- 如果您在 [錯誤清單] 中看到範本轉換或編譯錯誤，或未正確地產生輸出檔案，則可以使用[使用 TextTransform 公用程式產生檔案](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技術對文字範本進行疑難排解。
+ 如果您在 [錯誤清單]**** 中看到範本轉換或編譯錯誤，或未正確地產生輸出檔案，則可以使用[使用 TextTransform 公用程式產生檔案](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技術對文字範本進行疑難排解。
 
-## <a name="see-also"></a>請參閱
- [使用 t4 文字模板來產生設計階段程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)[撰寫 t4 文字模板](../modeling/writing-a-t4-text-template.md)
+## <a name="see-also"></a>另請參閱
+ [使用 T4 文字模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)[撰寫 t4 文字模板](../modeling/writing-a-t4-text-template.md)以設計階段產生程式碼

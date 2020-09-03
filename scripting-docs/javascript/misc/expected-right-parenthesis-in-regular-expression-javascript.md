@@ -1,5 +1,5 @@
 ---
-title: 正則運算式中必須是 '） ' （JavaScript） |Microsoft Docs
+title: 正則運算式中必須是 ' ) ' (JavaScript) |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -15,22 +15,22 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: af32127476c83100c0340021428e3abc572ef2f7
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815636"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>在規則運算式中必須是 ')' (JavaScript)
-您嘗試建立正則運算式 capture、判斷提示或群組，但未包含右括弧。 括弧在正則運算式中有數個用途。 主要是用來捕捉子運算式、指定判斷提示，或將模式群組在一起，以便將專案視為單一單位（依 *、+、？等等）。  
+您嘗試建立正則運算式捕捉、判斷提示或群組，但未包含右括弧。 括弧在正則運算式中有數個用途。 主要是用來捕捉子運算式、指定判斷提示，或是將模式群組在一起，讓專案可以依 *、+、？等等視為單一單位。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
 - 新增最右邊的右括弧。  
   
     > [!NOTE]
-    > 如果您想要比對單一括弧，請使用反斜線- \\ （-使其不會被視為特殊字元 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 。  
+    > 如果您想要比對單一括弧，請使用反斜線 ( 將其取消， \\ 如此就不會將它解讀為特殊字元 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 。  
   
 ## <a name="see-also"></a>另請參閱  
  [正則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   
- [正則運算式語法（JavaScript）](https://msdn.microsoft.com/library/1400241x)
+ [ (JavaScript) 的正則運算式語法 ](https://msdn.microsoft.com/library/1400241x)
