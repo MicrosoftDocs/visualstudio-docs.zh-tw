@@ -12,9 +12,9 @@
       items:
         - name: Get Started Developing with Visual Studio
           href: get-started-developing-with-visual-studio.md
-        - name: 'Visual C# 和 Visual Basic 使用者入門'
+        - name: Visual C# 和 Visual Basic 使用者入門
           items:
-            - name: 'Visual C# 和 Visual Basic 使用者入門'
+            - name: Visual C# 和 Visual Basic 使用者入門
               href: getting-started-with-visual-csharp-and-visual-basic.md
             - name: 建立簡單的應用程式
               href: walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
@@ -122,7 +122,7 @@
               href: managing-assembly-and-manifest-signing.md
             - name: 簽署應用程式與部署資訊清單
               href: how-to-sign-application-and-deployment-manifests.md
-        - name: '指定應用程式圖示 (Visual Basic、C#)'
+        - name: 指定應用程式圖示 (Visual Basic、C#)
           href: how-to-specify-an-application-icon-visual-basic-csharp.md
         - name: 以特定的 .NET Framework 版本為目標
           items:
@@ -186,7 +186,7 @@
           href: encodings-and-line-breaks.md
         - name: 大綱
           href: outlining.md
-        - name: Refactoring
+        - name: 重構
           href: refactoring-in-visual-studio.md
         - name: 生產力祕訣
           items:
@@ -212,7 +212,7 @@
                   href: visual-basic-specific-intellisense.md
                 - name: Visual Basic 中已篩選的完成清單
                   href: filtered-completion-lists-in-visual-basic.md
-            - name: 'Visual C# IntelliSense'
+            - name: Visual C# IntelliSense
               href: visual-csharp-intellisense.md
             - name: 具有使用時產生功能的測試優先支援
               href: walkthrough-test-first-support-with-the-generate-from-usage-feature.md
@@ -248,7 +248,7 @@
                       href: signature-javascript.md
                     - name: \<summary>
                       href: summary-javascript.md
-                    - name: \<值>
+                    - name: \<value>
                       href: value-javascript.md
                     - name: \<var>
                       href: var-javascript.md
@@ -280,13 +280,13 @@
               href: walkthrough-creating-a-code-snippet.md
             - name: 散發程式碼片段
               href: how-to-distribute-code-snippets.md
-            - name: 'Visual C# 程式碼片段'
+            - name: Visual C# 程式碼片段
               href: visual-csharp-code-snippets.md
             - name: Visual C++ 程式碼片段
               href: visual-cpp-code-snippets.md
             - name: 程式碼片段函式
               href: code-snippet-functions.md
-            - name: '還原 C# 重構程式碼片段'
+            - name: 還原 C# 重構程式碼片段
               href: how-to-restore-csharp-refactoring-snippets.md
             - name: 使用範圍陳述式程式碼片段
               href: how-to-use-surround-with-code-snippets.md
@@ -390,33 +390,33 @@
               href: find-code-changes-and-other-history-with-codelens.md
             - name: CodeIndex 命令
               href: codeindex-command.md
-        - name: '使用適用於 C# 的 Visual Studio 開發環境'
+        - name: 使用適用於 C# 的 Visual Studio 開發環境
           items:
-            - name: '使用適用於 C# 的 Visual Studio 開發環境'
+            - name: 使用適用於 C# 的 Visual Studio 開發環境
               href: ../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md
-            - name: '將應用程式組態檔新增至 C# 專案'
+            - name: 將應用程式組態檔新增至 C# 專案
               href: ../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md
             - name: 中繼資料當做原始碼
               href: ../csharp-ide/metadata-as-source.md
-            - name: '重構 (C#)'
+            - name: 重構 (C#)
               items:
-                - name: '重構 (C#)'
+                - name: 重構 (C#)
                   href: ../csharp-ide/refactoring-csharp.md
-                - name: '擷取方法重構 (C#)'
+                - name: 擷取方法重構 (C#)
                   href: ../csharp-ide/extract-method-refactoring-csharp.md
-                - name: '重新命名重構 (C#)'
+                - name: 重新命名重構 (C#)
                   href: ../csharp-ide/rename-refactoring-csharp.md
-                - name: '封裝欄位重構 (C#)'
+                - name: 封裝欄位重構 (C#)
                   href: ../csharp-ide/encapsulate-field-refactoring-csharp.md
-                - name: '擷取介面重構 (C#)'
+                - name: 擷取介面重構 (C#)
                   href: ../csharp-ide/extract-interface-refactoring-csharp.md
-                - name: '移除參數重構 (C#)'
+                - name: 移除參數重構 (C#)
                   href: ../csharp-ide/remove-parameters-refactoring-csharp.md
-                - name: '重新排列參數重構 (C#)'
+                - name: 重新排列參數重構 (C#)
                   href: ../csharp-ide/reorder-parameters-refactoring-csharp.md
     - name: Visual Studio 偵錯
       href: ../debugger/debugging-in-visual-studio.md
-    - name: 分析
+    - name: 程式碼剖析
       href: ../profiling/profiling-tools.md
     - name: 改善程式碼品質
       href: ../test/unit-test-your-code.md
@@ -470,7 +470,7 @@
               href: how-to-configure-projects-to-target-multiple-platforms.md
         - name: 指定建置事件 (Visual Basic)
           href: how-to-specify-build-events-visual-basic.md
-        - name: '指定建置事件 (C#)'
+        - name: 指定建置事件 (C#)
           href: how-to-specify-build-events-csharp.md
         - name: Configuring Warnings in Visual Basic
           href: configuring-warnings-in-visual-basic.md
@@ -676,7 +676,7 @@
                   href: reference/synchronized-settings-environment-options-dialog-box.md
                 - name: 選項對話方塊、環境、索引標籤和視窗
                   href: reference/tabs-and-windows-environment-options-dialog-box.md
-                - name: 'Task List, Environment, Options Dialog Box'
+                - name: 選項對話方塊、環境、工作清單
                   href: reference/task-list-environment-options-dialog-box.md
                 - name: 選項對話方塊、環境、Web 瀏覽器
                   href: reference/web-browser-environment-options-dialog-box.md
@@ -712,13 +712,13 @@
                   href: reference/options-text-editor-c-cpp-advanced.md
                 - name: 選項、文字編輯器、C/C++、實驗
                   href: reference/options-text-editor-c-cpp-experimental.md
-                - name: '格式、C#、文字編輯器、選項'
+                - name: 格式、C#、文字編輯器、選項
                   href: reference/options-text-editor-csharp-formatting.md
-                - name: '進階、C#、文字編輯器、選項'
+                - name: 進階、C#、文字編輯器、選項
                   href: reference/options-text-editor-csharp-advanced.md
-                - name: 'IntelliSense、C#、文字編輯器、選項'
+                - name: IntelliSense、C#、文字編輯器、選項
                   href: reference/options-text-editor-csharp-intellisense.md
-                - name: 格式、JavaScript、文字編輯器、選項
+                - name: 'Options, Text Editor, JavaScript, Formatting'
                   href: reference/options-text-editor-javascript-formatting.md
                 - name: IntelliSense、JavaScript、文字編輯器、選項
                   href: reference/options-text-editor-javascript-intellisense.md
@@ -742,19 +742,19 @@
                       href: reference/application-page-project-designer-visual-basic.md
                     - name: 組件資訊對話方塊
                       href: reference/assembly-information-dialog-box.md
-                - name: '專案設計工具，應用程式頁 (C#)'
+                - name: 專案設計工具，應用程式頁 (C#)
                   href: reference/application-page-project-designer-csharp.md
-                - name: '專案設計工具、建置事件 (C#)'
+                - name: 專案設計工具、建置事件 (C#)
                   items:
-                    - name: '專案設計工具、建置事件 (C#)'
+                    - name: 專案設計工具、建置事件 (C#)
                       href: reference/build-events-page-project-designer-csharp.md
                     - name: 建置前事件/建置後事件命令列對話方塊
                       href: reference/pre-build-event-post-build-event-command-line-dialog-box.md
-                - name: '專案設計工具、建置頁 (C#)'
+                - name: 專案設計工具、建置頁 (C#)
                   items:
-                    - name: '專案設計工具、建置頁 (C#)'
+                    - name: 專案設計工具、建置頁 (C#)
                       href: reference/build-page-project-designer-csharp.md
-                    - name: '進階建置設定對話方塊 (C#)'
+                    - name: 進階建置設定對話方塊 (C#)
                       href: reference/advanced-build-settings-dialog-box-csharp.md
                 - name: 專案設計工具、程式碼分析
                   href: reference/code-analysis-project-designer.md
@@ -814,7 +814,7 @@
               items:
                 - name: 工具箱
                   href: reference/toolbox.md
-                - name: '工具箱, 元件索引標籤'
+                - name: 元件索引標籤、工具箱
                   href: reference/toolbox-components-tab.md
                 - name: '工具箱, 資料索引標籤'
                   href: reference/toolbox-data-tab.md

@@ -1,5 +1,5 @@
 ---
-title: IDebug託管物件 |微軟文件
+title: IDebugManagedObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6fbd270aa1b65f05f308d41d22f154fb53b8833d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727687"
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關如何執行 CLR 運算式評估工具的詳細資訊，請參閱 [CLR 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 此介面使表達式賦值器 (EE) 能夠調用值類實例的屬性或方法`System.Decimal`(例如 ),並在不調用正在調試的程式上的[評估](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)的情況下設置其值。
+ 這個介面可讓運算式評估工具 (EE) 在實值類別實例上呼叫屬性或方法 (例如 `System.Decimal`) ，以及設定其值，而不需在所要進行的程式上呼叫 [評估](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) 。
 
 ## <a name="syntax"></a>語法
 
@@ -31,30 +31,30 @@ ms.locfileid: "80727687"
 IDebugManagedObject : IDebugObject
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 表達式賦值器實現此介面以表示託管代碼物件(如變數)。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ 運算式評估工具會執行這個介面，以代表 managed 程式碼物件，例如變數。
 
-## <a name="notes-for-callers"></a>通話備註
- 要取得此介面,請呼叫表示值類別的[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)上的[Get託管除錯物件](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md)。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ 若要取得這個介面，請在代表實值類別實例的[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)上呼叫[GetManagedDebugObject](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md) 。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 除了從[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)繼承的方法`IDebugManagedObject`外, 介面還公開了以下方法。
+ 除了繼承自 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)的方法之外，介面也會 `IDebugManagedObject` 公開下列方法。
 
 |方法|描述|
 |------------|-----------------|
-|[GetManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-getmanagedobject.md)|返回表示託管代碼物件的介面,並從中獲取任何適當的託管代碼介面。|
-|[SetFromManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-setfrommanagedobject.md)|將此物件的值設置為指定的託管代碼物件的值。|
+|[GetManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-getmanagedobject.md)|傳回代表 managed 程式碼物件的介面，以及可從中取得任何適當 managed 程式碼介面的介面。|
+|[SetFromManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-setfrommanagedobject.md)|將這個物件的值設定為指定之 managed 程式碼物件的值。|
 
 ## <a name="remarks"></a>備註
- 表達式賦值器使用此介面將託管代碼物件存儲在解析樹中。
+ 運算式評估工具會使用這個介面將 managed 程式碼物件儲存在剖析樹狀結構中。
 
 ## <a name="requirements"></a>需求
- 標題: ee.h
+ 標頭： ee. h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
-- [評價](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)
+- [評估](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)

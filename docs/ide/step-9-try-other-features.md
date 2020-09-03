@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 32ac2f1977bb0b8b391651ed7ed459b9dc560330
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579729"
 ---
 # <a name="step-9-try-other-features"></a>步驟 9：嘗試其他功能
@@ -48,6 +48,6 @@ ms.locfileid: "77579729"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 其中提供了很好的免費視訊學習資源。 若要深入了解 Visual Basic 中的程式設計，請參閱 [Visual Basic 基礎：徹底初學者開發](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) \(英文\)。 要瞭解有關 C# 中程式設計的更多詳細資訊，請參閱[C# 基礎知識：絕對初學者的開發](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)。
+- 其中提供了很好的免費視訊學習資源。 若要深入了解 Visual Basic 中的程式設計，請參閱 [Visual Basic 基礎：徹底初學者開發](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) \(英文\)。 若要深入瞭解如何在 c # 中進行程式設計，請參閱 [c # 基礎：適用于絕對初學者的開發](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)。
 
 - 若要返回上一個教學課程步驟，請參閱[步驟 8：新增方法以驗證玩家是否贏了](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)。

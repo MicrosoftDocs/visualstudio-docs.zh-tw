@@ -9,15 +9,15 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5dabfbc4f705d7de9fa881f373994714e43d26a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568135"
 ---
 # <a name="options-text-editor-xml-formatting"></a>選項、文字編輯器、XML、格式化
 
-使用 [格式化]**** 選項來指定如何將您 XML 文件中的項目和屬性格式化。 要訪問 XML 格式選項，請選擇**工具** > **選項** > **文字編輯器** > **XML，** 然後選擇 **"格式化**"。
+使用 [格式化]**** 選項來指定如何將您 XML 文件中的項目和屬性格式化。 若要存取 XML 格式化選項，請選擇 [**工具**  >  **選項**  >  **文字編輯器**  >  **XML**]，然後選擇 [**格式化**]。
 
 ## <a name="attributes"></a>屬性
 
@@ -41,7 +41,7 @@ ms.locfileid: "75568135"
 
 ## <a name="auto-reformat"></a>自動重新格式化
 
-**從剪貼簿粘貼**
+**從剪貼簿貼上**
 
 重新格式化從剪貼簿貼上的 XML 文字。
 

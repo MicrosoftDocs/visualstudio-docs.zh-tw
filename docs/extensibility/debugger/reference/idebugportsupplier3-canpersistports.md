@@ -1,5 +1,5 @@
 ---
-title: IDebugPort供應商3:::Can堅持埠 |微軟文件
+title: IDebugPortSupplier3：： CanPersistPorts |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2bf436d788b517300bee9a13b66b0ca3747bcc43
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724470"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
-此方法確定埠供應商是否可以在調試器的調用之間(通過將它們寫入磁碟)持久化埠。
+此方法會決定埠供應商是否可以透過將埠寫入至磁片) ，以在偵錯工具的調用之間 (保存埠。
 
 ## <a name="syntax"></a>語法
 
@@ -39,10 +39,10 @@ int CanPersistPorts();
  無。
 
 ## <a name="return-value"></a>傳回值
- `S_OK`如果可以保留埠,或`S_FALSE`指示無法保留埠。
+ `S_OK` 如果可以保存埠，或 `S_FALSE` 表示無法保存埠。
 
 ## <a name="remarks"></a>備註
- 如果埠供應商可以保留埠,則應在埠被銷毀時執行此操作,然後在再次實例化埠時重新載入它們。
+ 如果埠供應商可保存埠，則它應該在終結時這麼做，然後在具現化時重載它們。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

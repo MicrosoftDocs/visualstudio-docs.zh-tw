@@ -16,7 +16,7 @@
           href: automatic-feature-suspension.md
         - name: 如何：手動執行程式碼分析
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: 逐步解說：分析受控碼的程式碼缺失
+        - name: 逐步解說：分析 Managed 程式碼中的程式碼缺失
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: 使用 SuppressMessage 屬性隱藏警告
           items:
@@ -32,9 +32,9 @@
               href: how-to-customize-the-code-analysis-dictionary.md
             - name: 匿名方法和程式碼分析
               href: anonymous-methods-and-code-analysis.md
-            - name: 如何：檢視受控碼缺失
+            - name: 如何：檢視 Managed 程式碼的缺失
               href: how-to-view-managed-code-defects.md
-            - name: 如何：為受控碼的缺失建立工作項目
+            - name: 如何：為 Managed 程式碼的缺失建立工作項目
               href: how-to-create-a-work-item-for-a-managed-code-defect.md
             - name: Managed 程式碼的程式碼分析警告
               items:
@@ -164,7 +164,7 @@
                   href: ca1058-types-should-not-extend-certain-base-types.md
                 - name: 'CA1059:成員不應該公開特定的具象類型'
                   href: ca1059-members-should-not-expose-certain-concrete-types.md
-                - name: 'CA1060:必須將 P/Invokes 移到 NativeMethods 類別'
+                - name: CA1060：將 P/Invokes 移到 NativeMethods 類別
                   href: ca1060-move-p-invokes-to-nativemethods-class.md
                 - name: 'CA1061:不要隱藏基底類別方法'
                   href: ca1061-do-not-hide-base-class-methods.md
@@ -202,21 +202,21 @@
                   href: ca1308-normalize-strings-to-uppercase.md
                 - name: 'CA1309:使用循序的 StringComparison'
                   href: ca1309-use-ordinal-stringcomparison.md
-                - name: 'CA2101:必須指定 P/Invoke 字串引數的封送處理'
+                - name: CA2101：必須指定 P/Invoke 字串引數的封送處理
                   href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
             - name: 互通性警告
               items:
                 - name: 互通性警告
                   href: interoperability-warnings.md
-                - name: 'CA1400:P/Invoke 進入點應該要存在'
+                - name: CA1400：P/Invoke 進入點應該要存在
                   href: ca1400-p-invoke-entry-points-should-exist.md
-                - name: 'CA1401:P/Invokes 不應該為可見的'
+                - name: CA1401：P/Invokes 不應該為可見的
                   href: ca1401-p-invokes-should-not-be-visible.md
                 - name: 'CA1402:避免在 COM 可見介面中多載'
                   href: ca1402-avoid-overloads-in-com-visible-interfaces.md
                 - name: 'CA1403:自動配置類型不應該是 COM 可見'
                   href: ca1403-auto-layout-types-should-not-be-com-visible.md
-                - name: 'CA1404:必須在 P/Invoke 之後立即呼叫 GetLastError'
+                - name: CA1404：必須在 P/Invoke 之後立即呼叫 GetLastError
                   href: ca1404-call-getlasterror-immediately-after-p-invoke.md
                 - name: 'CA1405:COM 可見類型的基底類型應該是 COM 可見'
                   href: ca1405-com-visible-type-base-types-should-be-com-visible.md
@@ -236,9 +236,9 @@
                   href: ca1412-mark-comsource-interfaces-as-idispatch.md
                 - name: 'CA1413:避免在 COM 可見實值類型中使用非公用欄位'
                   href: ca1413-avoid-non-public-fields-in-com-visible-value-types.md
-                - name: 'CA1414:以 MarshalAs 標記布林 P/Invoke 引數'
+                - name: CA1414：以 MarshalAs 標記布林值 P/Invoke 引數
                   href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
-                - name: 'CA1415:P/Invokes 必須正確宣告'
+                - name: CA1415：P/Invokes 必須正確宣告
                   href: ca1415-declare-p-invokes-correctly.md
                 - name: 維護性警告
                   items:
@@ -350,13 +350,13 @@
                           href: ca1823-avoid-unused-private-fields.md
                         - name: 'CA1824:組件必須標記 NeutralResourcesLanguageAttribute'
                           href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
-                    - name: 可攜性警告
+                    - name: Portability Warnings
                       items:
-                        - name: 可攜性警告
+                        - name: Portability Warnings
                           href: portability-warnings.md
                         - name: 'CA1900:實值類型欄位應該為可移植的'
                           href: ca1900-value-type-fields-should-be-portable.md
-                        - name: 'CA1901:P/Invoke 宣告應該為可移植的'
+                        - name: CA1901：P/Invoke 宣告應該是可移植的
                           href: ca1901-p-invoke-declarations-should-be-portable.md
                         - name: 'CA1903:只使用來自目標架構的 API'
                           href: ca1903-use-only-api-from-targeted-framework.md
@@ -566,13 +566,13 @@
                           href: ca2242-test-for-nan-correctly.md
                         - name: 'CA2243:屬性字串常值必須正確剖析'
                           href: ca2243-attribute-string-literals-should-parse-correctly.md
-                - name: 程式碼分析原則錯誤
+                - name: Code Analysis Policy Errors
                   href: code-analysis-policy-errors.md
 - name: 分析 C/C++ 程式碼品質
   items:
     - name: 分析 C/C++ 程式碼品質
       href: analyzing-c-cpp-code-quality-by-using-code-analysis.md
-    - name: 快速入門：C/C++ 的程式碼分析
+    - name: 快速入門：C/C++ 程式碼分析
       href: quick-start-code-analysis-for-c-cpp.md
     - name: 使用規則集指定要執行的 C++ 規則
       href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
@@ -608,7 +608,7 @@
           href: intrinsic-functions.md
         - name: 最佳作法和範例
           href: best-practices-and-examples-sal.md
-        - name: 如何：使用 _analysis_assume 來指定其他程式碼資訊
+        - name: 如何：使用 __analysis_assume 指定其他程式碼資訊
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
         - name: C/C++ 程式碼分析警告
           items:
@@ -1192,13 +1192,13 @@
               href: using-rule-sets-to-group-code-analysis-rules.md
             - name: 逐步解說：設定和使用自訂規則集
               href: walkthrough-configuring-and-using-a-custom-rule-set.md
-            - name: 如何：設定受控碼專案的程式碼分析
+            - name: 如何：設定 Managed 程式碼專案的程式碼分析
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
             - name: 如何：設定 ASP.NET Web 應用程式的程式碼分析
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
-            - name: 如何：將程式碼專案規則集與 Team 專案簽入原則進行同步處理
+            - name: 如何：同步處理具有 Team 專案簽入原則的程式碼專案規則集
               href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-            - name: 如何：對解決方案中的多個專案指定規則集
+            - name: 如何：對方案中的多個專案指定規則集
               href: how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md
             - name: 建立自訂規則集
               items:
@@ -1308,7 +1308,7 @@
                   href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
                 - name: 為 Managed 程式碼實作自訂簽入原則
                   href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-                - name: 如何：以程式碼分析簽入原則來強制程式碼的可維護性
+                - name: 如何：以程式碼分析簽入原則強制程式碼的可維護性
                   href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
                 - name: 程式碼分析簽入原則的版本相容性
                   href: version-compatibility-for-code-analysis-check-in-policies.md

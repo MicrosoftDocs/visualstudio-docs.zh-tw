@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 026162a2c8334c7163f9c7853d2de30e58e5939a
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476790"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>如何：安裝獨立分析工具
@@ -41,9 +41,9 @@ ms.locfileid: "77476790"
     > [!NOTE]
     > 如果顯示 vsinstr.exe 的使用資訊，即表示所有項目設定正確。 如果看到有錯誤指出找不到 vsinstr.exe 或它其中一個相依性，請確定是否依步驟 2 所述正確設定路徑。  
   
-4. 將您的 **_NT_SYMBOL_PATH**變數設定為，以設定符號伺服器 `symsrv*symsrv.dll*c:\localcache* https://msdl.microsoft.com/download/symbols`  
+4. 將您的 **_NT_SYMBOL_PATH** 變數設定為，以設定符號伺服器 `symsrv*symsrv.dll*c:\localcache*https://msdl.microsoft.com/download/symbols`  
   
-5. 使用系統環境變數設定好符號伺服器之後，在新的命令提示字元處執行命令列分析工具。 這可讓新的環境變數生效。 在命令提示字元視窗中輸入下列命令：  
+5. 使用系統環境變數設定好符號伺服器之後，在新的命令提示字元處執行命令列分析工具。 這可讓新的環境變數生效。 在命令提示字元視窗中，鍵入下列命令：  
   
      **start %COMSPEC%**  
   
@@ -53,7 +53,7 @@ ms.locfileid: "77476790"
 6. 使用 [VSPerfReport](../profiling/vsperfreport.md) 工具將符號序列化成分析資料 (.vsp) 檔案。 使用 **VSPerfReport /summary:all /packsymbols** 參數。 如未在資料檔案中插入符號，請確定設定了 _NT_SYMBOL_PATH 環境變數。  
   
 ## <a name="see-also"></a>另請參閱  
- [從命令列使用程式碼剖析工具](../profiling/using-the-profiling-tools-from-the-command-line.md)   
+ [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [逐步解說：使用取樣進行命令列分析](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
  [逐步解說：使用檢測進行命令列分析](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
  [如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)   

@@ -17,19 +17,19 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a56093ab14b9be72f99e36b03eefe7abb895183f
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419051"
 ---
 # <a name="build-events-page-project-designer-c"></a>專案設計工具、建置事件 (C#)
 
-使用 [專案設計工具]**** 的 [建置事件]**** 頁面，以指定組建組態指示。 您也可以指定執行任何建置後事件的條件。 如需詳細資訊，請參閱[如何：指定組建事件（c #）](../../ide/how-to-specify-build-events-csharp.md)和[如何：指定組建事件（Visual Basic）](../../ide/how-to-specify-build-events-visual-basic.md)。
+使用 [專案設計工具]**** 的 [建置事件]**** 頁面，以指定組建組態指示。 您也可以指定執行任何建置後事件的條件。 如需詳細資訊，請參閱 [如何：指定組建事件 (c # ) ](../../ide/how-to-specify-build-events-csharp.md) 和 [如何：指定組建事件 (Visual Basic) ](../../ide/how-to-specify-build-events-visual-basic.md)。
 
 ## <a name="uielement-list"></a>UIElement 清單
 
-**Configuration**
+**設定**
 
 無法在此頁面中編輯這個控制項。 如需此控制項的描述，請參閱[專案設計工具、建置頁面 (C#)](../../ide/reference/build-page-project-designer-csharp.md)。
 
@@ -63,13 +63,13 @@ ms.locfileid: "85419051"
 
 ## <a name="in-the-project-file"></a>在專案檔中
 
-在舊版的 Visual Studio 中，當您在 IDE 中變更**PreBuildEvent**或**postbuildevent.bat**設定時，Visual Studio 會將 `PreBuildEvent` 或 `PostBuildEvent` 屬性加入至專案檔。 例如，如果您在 IDE 中的**PreBuildEvent**命令列設定如下：
+在舊版 Visual Studio 中，當您變更 IDE 中的 **>prebuildevent.bat** 或 **PostBuildEvent** 設定時，Visual Studio 會將 `PreBuildEvent` 或屬性加入 `PostBuildEvent` 至專案檔。 舉例來說，如果您在 IDE 中的 **>prebuildevent.bat** 命令列設定如下：
 
 ```input
 "$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)"
 ```
 
-然後，專案檔設定為：
+專案檔案設定為：
 
 ```xml
 <PropertyGroup>
@@ -77,7 +77,7 @@ ms.locfileid: "85419051"
 </PropertyGroup>
 ```
 
-針對 .NET Core 專案，Visual Studio 2019 （在較新的更新中 Visual Studio 2017）新增名為或的 MSBuild 目標， `PreBuild` `PostBuild` 以**PreBuildEvent**和**postbuildevent.bat**設定。 這些目標會使用 MSBuild 可識別的**BeforeTargets**和**AfterTargets**屬性。 例如，在上述範例中，Visual Studio 現在會產生下列程式碼：
+針對 .NET Core 專案，Visual Studio 2019 (和 Visual Studio 2017 在較新的更新中) 加入名為 `PreBuild` 或的 MSBuild 目標， `PostBuild` 以 **>prebuildevent.bat** 和 **PostBuildEvent** 設定。 這些目標會使用 MSBuild 可辨識的 **BeforeTargets** 和 **AfterTargets** 屬性。 例如，在上述範例中，Visual Studio 現在會產生下列程式碼：
 
 ```xml
 <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
@@ -85,7 +85,7 @@ ms.locfileid: "85419051"
 </Target>
 ```
 
-若為後期組建事件，請使用名稱， `PostBuild` 並將屬性設定 `AfterTargets` 為 `PostBuildEvent` 。
+若為建立後事件，請使用名稱， `PostBuild` 並將屬性設定 `AfterTargets` 為 `PostBuildEvent` 。
 
 ```xml
 <Target Name="PostBuild" AfterTargets="PostBuildEvent">
@@ -94,11 +94,11 @@ ms.locfileid: "85419051"
 ```
 
 > [!NOTE]
-> 已進行這些專案檔變更，以支援 SDK 樣式專案。 如果您要以手動方式將專案檔從舊格式遷移至 SDK 樣式格式，您應該刪除 `PreBuildEvent` 和屬性， `PostBuildEvent` 並將它們取代為 `PreBuild` 和 `PostBuild` 目標，如上述程式碼所示。 若要瞭解如何判斷您的專案是否為 SDK 樣式的專案，請參閱[檢查項目格式](/nuget/resources/check-project-format)。
+> 已進行這些專案檔變更，以支援 SDK 樣式專案。 如果您要以手動方式將專案檔從舊格式遷移至 SDK 樣式格式，您應該刪除 `PreBuildEvent` 和屬性， `PostBuildEvent` 並將其取代為 `PreBuild` 和 `PostBuild` 目標，如上述程式碼所示。 若要瞭解如何判斷您的專案是否為 SDK 樣式專案，請參閱 [檢查項目格式](/nuget/resources/check-project-format)。
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：指定組建事件（Visual Basic）](../../ide/how-to-specify-build-events-visual-basic.md)
-- [如何：指定組建事件（c #）](../../ide/how-to-specify-build-events-csharp.md)
+- [如何：指定組建事件 (Visual Basic) ](../../ide/how-to-specify-build-events-visual-basic.md)
+- [如何：指定組建事件 (c # ) ](../../ide/how-to-specify-build-events-csharp.md)
 - [專案屬性參考](../../ide/reference/project-properties-reference.md)
 - [編譯和建置](../../ide/compiling-and-building-in-visual-studio.md)

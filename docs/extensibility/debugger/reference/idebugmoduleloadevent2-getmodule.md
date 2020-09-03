@@ -1,5 +1,5 @@
 ---
-title: IDebugModuleLoadEvent2::獲取模組 |微軟文件
+title: IDebugModuleLoadEvent2：： GetModule |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b90547709e5524ce005b0598b0b8d482cfecf173
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726732"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
-獲取正在載入或卸載的模組。
+取得正在載入或卸載的模組。
 
 ## <a name="syntax"></a>語法
 
@@ -45,16 +45,16 @@ int GetModule( 
 
 ## <a name="parameters"></a>參數
 `pModule`\
-[出]返回表示正在載入或卸載的模組的[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)物件。
+擴展傳回代表正在載入或卸載之模組的 [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) 物件。
 
 `pbstrDebugMessage`\
-[進出]返回描述此事件的可選消息。 如果此參數為空值,則不請求任何消息。
+[in，out]傳回描述這個事件的選擇性訊息。 如果此參數為 null 值，則不會要求訊息。
 
 `pbLoad`\
-[進出]如果模組正在`TRUE`載入,則為非零 (),如果模組正在卸載,則為零 ()。`FALSE` 如果此參數為空值,則不請求任何狀態。
+[in，out]如果模組正在載入，則為非零 (`TRUE`) 如果模組正在卸載，則為零 (`FALSE`) 。 如果此參數為 null 值，則不會要求任何狀態。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)

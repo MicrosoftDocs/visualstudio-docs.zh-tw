@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO_FLAGS |微軟文件
+title: PROCESS_INFO_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 36c4cbbe17a109eacd69b76500e8c10d21d2d554
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713956"
 ---
 # <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
@@ -49,30 +49,30 @@ enum enum_PROCESS_INFO_FLAGS { 
 ## <a name="fields"></a>欄位
 
 `PIFLAG_SYSTEM_PROCESS`\
-指示該過程是系統進程。
+表示進程是系統進程。
 
 `PIFLAG_DEBUGGER_ATTACHED`\
-指示調試器正在調試進程。 它可能是調試[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]器,或者可能是其他調試器,例如 WinDbg。
+表示進程正在由偵錯工具進行調試。 它可能是 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 偵錯工具，也可能是一些其他偵錯工具，例如 WinDbg。
 
 `PIFLAG_PROCESS_STOPPED`\
-指示進程已停止。 僅在也指定`PIFLAG_DEBUGGER_ATTACHED`時有效。 可在 Visual Studio 2005 及更高版本提供。
+表示進程已停止。 只有 `PIFLAG_DEBUGGER_ATTACHED` 在同時指定時才有效。 可在 Visual Studio 2005 和更新版本中使用。
 
 `PIFLAG_PROCESS_RUNNING`\
-指示進程正在運行。 僅在也指定`PIFLAG_DEBUGGER_ATTACHED`時有效。 可在 Visual Studio 2005 及更高版本提供。
+表示進程正在執行中。 只有 `PIFLAG_DEBUGGER_ATTACHED` 在同時指定時才有效。 可在 Visual Studio 2005 和更新版本中使用。
 
 ## <a name="remarks"></a>備註
 
-用於[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)結構`Flags`的成員。
+用於 `Flags` [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) 結構的成員。
 
-這些旗標可以稍微`OR`結合 。
+這些旗標可以與位結合 `OR` 。
 
 ## <a name="requirements"></a>需求
 
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c1134fb5bb02bd8c78f347ef582f12da35074c36
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579928"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>步驟 1：建立專案並將資料表新增至表單
@@ -25,7 +25,7 @@ ms.locfileid: "77579928"
 
 ::: moniker range="vs-2017"
 
-1. 在功能表列上，選擇 **"檔**>**新專案**>**"。**
+1. 在功能表列上 **，選擇 [** 檔案 > **新增** > **專案**]。
 
 1. 在 [新增專案]**** 對話方塊左側，選擇 [Visual C#]**** 或 [Visual Basic]****，然後選擇 [Windows 桌面]****。
 
@@ -40,15 +40,15 @@ ms.locfileid: "77579928"
 
 ::: moniker range="vs-2019"
 
-1. 在啟動視窗中，選擇 **"創建新專案**"。
+1. 在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
    ![檢視 [建立新專案] 視窗](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. 在 [建立新專案]**** 視窗中，在搜尋方塊內輸入或鍵入 *Windows Forms*。 接下來，從 **"專案類型**"清單中選擇 **"桌面**"。
+1. 在 [建立新專案]**** 視窗中，在搜尋方塊內輸入或鍵入 *Windows Forms*。 接下來，從 [**專案類型**] 清單中選擇 [**桌面**]。
 
-   應用**專案類型**篩選器後，為 C# 或 Visual Basic 選擇**Windows 表單應用 （.NET 框架）** 範本，然後選擇 **"下一步**"。
+   套用 **專案類型** 篩選準則之後，請選擇 [ **Windows Forms 應用程式] ( [.NET Framework]) ** 範本或 [Visual Basic]，然後選擇 **[下一步]**。
 
-   ![選擇 Windows 表單應用的 C# 或視覺化基本範本 （.NET 框架）](./media/create-new-project-search-winforms-filtered.png)
+   ![選擇 Windows Forms 應用程式 ( .NET Framework 的 c # 或 Visual Basic 範本) ](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > 如果您未看到 [Windows Forms 應用程式 (.NET Framework)]**** 範本，您可以從 [建立新專案]**** 視窗中安裝。 在 [找不到您要找的資料嗎?]**** 訊息中，選擇 [安裝更多工具和功能]**** 連結。
@@ -61,7 +61,7 @@ ms.locfileid: "77579928"
    >
    > 接下來，選擇 Visual Studio 安裝程式中的 [修改]**** 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續]**** 以安裝工作負載。
 
-1. 在 [設定您的新專案]**** 視窗的 [專案名稱]**** 方塊中，鍵入或輸入 *MatchingGame*。 然後，選擇 **"創建**"。
+1. 在 [設定您的新專案]**** 視窗的 [專案名稱]**** 方塊中，鍵入或輸入 *MatchingGame*。 然後，選擇 [ **建立**]。
 
 ::: moniker-end
 
@@ -117,12 +117,12 @@ ms.locfileid: "77579928"
        > [!NOTE]
        > Webdings 字型是 Windows 作業系統隨附的圖示字型。 在配對遊戲中，玩家必須將圖示配對，因此您會使用此字型來顯示要配對的圖示。 不要將 **c** 放在 **Text** 屬性中，請嘗試輸入不同字母，看看顯示的圖示為何。 驚嘆號是一隻蜘蛛、大寫 N 是眼睛，而逗號則是一個辣椒。
 
-5. 選擇您的 Label 控制項並將其複製至 TableLayoutPanel 中的下一個儲存格。 （選擇**Ctrl**+**C**鍵，或在功能表列上，選擇 **"編輯** > **複製**"。）然後粘貼它。 （選擇**Ctrl**+**V**鍵，或在功能表列上，選擇 **"編輯** > **粘貼**"。"第一個標籤的副本將顯示在表佈局面板的第二個儲存格中。 再次將它貼上，而另一個標籤會顯示在第三個欄框中。 持續貼上 Label 控制項，直到所有儲存格都已填滿為止。
+5. 選擇您的 Label 控制項並將其複製至 TableLayoutPanel 中的下一個儲存格。  (選擇**Ctrl** + **C**鍵，或在功能表列上選擇 [**編輯**  >  **複製**]。 ) 然後將其貼上。  (選擇**Ctrl** + **V**鍵，或在功能表列上選擇 [**編輯**  >  **貼**上]。 ) 第一個標籤的複本會出現在 TableLayoutPanel 的第二個數據格中。 再次將它貼上，而另一個標籤會顯示在第三個欄框中。 持續貼上 Label 控制項，直到所有儲存格都已填滿為止。
 
    > [!NOTE]
-   > 如果您貼上的次數太多，則 IDE 會將新資料列加入至 TableLayoutPanel，讓它有位置可以加入新的 Label 控制項。 您可以將它復原。 要刪除新儲存格，請選擇**Ctrl**+**Z**鍵，或選擇功能表列，選擇 **"編輯** > **撤銷**"。
+   > 如果您貼上的次數太多，則 IDE 會將新資料列加入至 TableLayoutPanel，讓它有位置可以加入新的 Label 控制項。 您可以將它復原。 若要移除新的儲存格，請選擇**Ctrl** + **Z**鍵，或在功能表列上選擇 [**編輯**  >  **復原**]。
 
-    現在你的表格已經擺放了。它應類似于下圖。
+    現在您的表單已配置。看起來應該如下圖所示。
 
     ![初始配對遊戲表單](../ide/media/express_tut4step1.png)<br/>*初始配對遊戲表單*
 

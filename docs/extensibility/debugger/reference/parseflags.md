@@ -1,5 +1,5 @@
 ---
-title: PARSEFLAGS |微軟文件
+title: PARSEFLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0cc70fdd9fe1279e4d419a422b970eb3d3b07c65
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714110"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
-指定如何解析表達式。
+指定如何剖析運算式。
 
 ## <a name="syntax"></a>語法
 
@@ -46,23 +46,23 @@ public enum enum_PARSEFLAGS { 
 
 ## <a name="fields"></a>欄位
  `PARSE_EXPRESSION`\
- 指示表達式不是語句。
+ 指出運算式不是語句。
 
  `PARSE_FUNCTION_AS_ADDRESS`\
- 指示表達式將作為位址進行解析(和以後計算)。
+ 指出將會剖析運算式 (，並在稍後將) 評估為位址。
 
  `PARSE_DESIGN_TIME_EXPR_EVAL`\
- 指示在設計期間(即設計器打開時)正在分析表達式。
+ 指出運算式是在設計階段進行剖析 (也就是開啟設計工具) 。
 
 ## <a name="remarks"></a>備註
- 為參數傳遞給[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)與[Parse 方法](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)。
+ 以參數形式傳遞至 [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 和 [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) 方法。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

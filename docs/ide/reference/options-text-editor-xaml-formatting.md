@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: d340a3b9468ea23c4cab23aabe19a7c1390955a3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568239"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>格式、XAML、文字編輯器、選項
@@ -62,7 +62,7 @@ ms.locfileid: "75568239"
 
 完成鍵入開始標記時，會進行自動格式化。
 
-**從剪貼簿粘貼**
+**從剪貼簿貼上**
 
 將 XAML 從剪貼簿貼入 XAML 檢視時，會進行自動格式化。
 
@@ -90,7 +90,7 @@ ms.locfileid: "75568239"
 
 指定是否在 [長度]**** 所指定的行長度處換行。
 
-**Length**
+**長度**
 
 一行可以包含的字元數。 必要時，有些 XAML 行可能會超過指定的行長度。
 

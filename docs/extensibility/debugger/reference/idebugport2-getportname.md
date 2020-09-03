@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::獲取埠名稱 |微軟文件
+title: IDebugPort2：： GetPortName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d6598e0407311160232c473d92a032a0ee105d05
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725378"
 ---
 # <a name="idebugport2getportname"></a>IDebugPort2::GetPortName
-獲取埠名稱。
+取得埠名稱。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ int GetPortName( 
 
 ## <a name="parameters"></a>參數
 `pbstrName`\
-[出]返回埠的名稱。
+擴展傳回埠的名稱。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

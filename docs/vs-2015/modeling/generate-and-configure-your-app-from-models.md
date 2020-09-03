@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ea9e28c55b608235d49096e4ef99cd30081eda0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666169"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>透過模型產生和設定應用程式
@@ -24,7 +24,7 @@ ms.locfileid: "72666169"
  模型在呈現需求方面比程式碼更為直接。 直接從模型中衍生應用程式的行為，會比更新程式碼更能快速並可靠地回應變更的需求。 雖然需要進行一些初始工作才能設定衍生，但是如果您預期需求會變更，或打算進行產品的數個變化，則會傳回這項投資。
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>透過模型產生應用程式碼
- 產生程式碼的最簡單方式是使用文字範本。 您可以在保留模型的相同 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解決方案中產生程式碼。 如需詳細資訊，請參閱:
+ 產生程式碼的最簡單方式是使用文字範本。 您可以在保留模型的相同方案中產生程式碼 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。 如需詳細資訊，請參閱：
 
 - [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
@@ -41,7 +41,7 @@ ms.locfileid: "72666169"
   不過，如果您從現有應用程式開始進行，則可能會發現需要進行許多重構，才能區隔模型所控管的不同行為，讓它們各自不同。 建議您在預估專案成本時評估應用程式的這個層面。
 
 ## <a name="configuring-your-application-from-a-model"></a>透過模型設定應用程式
- 如果您想要改變應用程式在執行階段的行為，則無法使用程式碼產生，而程式碼產生會在編譯應用程式之前產生原始程式碼。 而是，您可以設計應用程式讀取 UML 或 DSL 模型，並據此改變其行為。 如需詳細資訊，請參閱:
+ 如果您想要改變應用程式在執行階段的行為，則無法使用程式碼產生，而程式碼產生會在編譯應用程式之前產生原始程式碼。 而是，您可以設計應用程式讀取 UML 或 DSL 模型，並據此改變其行為。 如需詳細資訊，請參閱：
 
 - [讀取程式碼中的 UML 模型](../modeling/read-a-uml-model-in-program-code.md)
 
@@ -58,15 +58,15 @@ ms.locfileid: "72666169"
 
      例如，先設計具有特定一組網頁的網站，再設計呈現模型中所定義頁面的應用程式。
 
-- **建立變體層面的模型。** 識別將會改變的層面 (兩個部署之間，或一段時間的需求變更)。 這些是應該衍生自模型的層面。
+- **建立變化層面的模型。** 識別將會改變的層面 (兩個部署之間，或一段時間的需求變更)。 這些是應該衍生自模型的層面。
 
      例如，如果這組網頁以及其間的連結變更，但頁面的樣式和格式一律相同，則模型應該描述連結，而不需要描述頁面的格式。
 
-- **不同的考慮。** 如果變動層面可以分成獨立區域，請為每個區域使用不同的模型。 使用 ModelBus，您可以定義影響兩個模型的作業以及其間的條件約束。
+- **個別的考慮。** 如果變動層面可以分成獨立區域，請為每個區域使用不同的模型。 使用 ModelBus，您可以定義影響兩個模型的作業以及其間的條件約束。
 
-     例如，使用一個模型來定義網頁之間的巡覽，而使用另一個模型來定義頁面的版面配置。 如需詳細資訊，請參閱[整合 UML 模型與其他模型和工具](../modeling/integrate-uml-models-with-other-models-and-tools.md)。
+     例如，使用一個模型來定義網頁之間的巡覽，而使用另一個模型來定義頁面的版面配置。 如需詳細資訊，請參閱 [整合 UML 模型與其他模型和工具](../modeling/integrate-uml-models-with-other-models-and-tools.md)。
 
-- **建立需求的模型，而不是解決方案。** 設計 DSL 或調整 UML，讓它描述使用者需求。 反之，請不要根據實作的變動層面來設計標記法。
+- **模型化需求，而非方案。** 設計 DSL 或調整 UML，讓它描述使用者需求。 反之，請不要根據實作的變動層面來設計標記法。
 
      例如，Web 巡覽模型應該代表網頁和其間的超連結。 Web 巡覽模型不應該代表 HTML 的片段或應用程式中的類別。
 
@@ -78,5 +78,5 @@ ms.locfileid: "72666169"
 
      例如，UML 類別圖是方塊與箭號的集合；運用這個標記法，您理論上可以定義任何項目。 但是，不建議您使用類別圖，而事實上描述一組類型的位置除外。 例如，您可以調整類別圖來描述不同類型的網頁。
 
-## <a name="see-also"></a>請參閱
- [從 UML 模型產生](../modeling/generate-files-from-a-uml-model.md)[檔案讀取程式碼中的 Uml 模型](../modeling/read-a-uml-model-in-program-code.md)[從特定領域語言產生](../modeling/generating-code-from-a-domain-specific-language.md)程式碼[如何：在程式碼中從檔案開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)[使用 T4 文字模板產生設計階段代碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+## <a name="see-also"></a>另請參閱
+ [從 UML 模型產生檔案](../modeling/generate-files-from-a-uml-model.md)[讀取程式碼中的 Uml 模型](../modeling/read-a-uml-model-in-program-code.md)[從特定領域語言產生](../modeling/generating-code-from-a-domain-specific-language.md)程式碼如何：[使用 T4 文字模板在程式碼設計階段產生](../modeling/design-time-code-generation-by-using-t4-text-templates.md)程式碼[中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)

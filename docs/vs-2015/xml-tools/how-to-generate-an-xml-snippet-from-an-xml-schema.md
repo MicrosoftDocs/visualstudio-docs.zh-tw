@@ -1,5 +1,5 @@
 ---
-title: 如何：從 XML 架構產生 XML 程式碼片段 |Microsoft Docs
+title: 如何：從 XML 架構產生 XML 片段 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e3d90185180cac5f526594650bde0a8f380c7668
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666516"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>HOW TO：從 XML 結構描述產生 XML 片段
@@ -57,17 +57,17 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
 
      編輯器中會開啟新的檔案。 檔案包含預設的 XML 宣告，`<?xml version="1.0" encoding="utf-8">`。
 
-3. 在 [檔案屬性] 視窗中，按一下 [**架構**] 欄位上的瀏覽按鈕（ **...** ）。
+3. 在 [檔案屬性] 視窗中，按一下 [**架構**] 欄位上的 [流覽] 按鈕 (**...**) 。
 
-     [ **XSD 架構**] 對話方塊隨即顯示。
+     [ **XSD 架構** ] 對話方塊隨即顯示。
 
-4. 按一下 [加入]。
+4. 按一下 [新增] 。
 
-     [**開啟 XSD 架構**] 對話方塊隨即顯示。
+     [ **開啟 XSD 架構** ] 對話方塊隨即出現。
 
-5. 選取架構檔案，然後按一下 [**開啟**]。
+5. 選取架構檔案，然後按一下 [ **開啟**]。
 
-6. 按一下 [確定]。
+6. 按一下 [確定]  。
 
      XML 結構描述現在已與 XML 文件相關聯。
 
@@ -79,13 +79,13 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
 
      **!--** 新增批註。
 
-     **!** 要加入檔案類型的 DOCTYPE。
+     **!** 要新增檔案類型的 DOCTYPE。
 
-     **?** 以加入處理指示。
+     **?** 加入處理指示。
 
-     新增根項目的**連絡人**。
+     加入根項目的**連絡人**。
 
-3. 從成員清單中選取 [**連絡人**]，然後按 enter。
+3. 從成員清單中選取 [ **Contact** ]，然後按 enter。
 
      編輯器會加入開始標記 `<Contact`，並將游標置於項目名稱之後。
 
@@ -139,8 +139,8 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
 </xs:schema>
 ```
 
-### <a name="output"></a>Output
- 下列是根據與 `Contact` 項目相關聯的結構描述資訊產生的 XML 資料。 標示為 `bold` 的專案會指定 XML 片段中可編輯的欄位。
+### <a name="output"></a>輸出
+ 下列是根據與 `Contact` 項目相關聯的結構描述資訊產生的 XML 資料。 標記為的專案會 `bold` 指定 XML 片段中的可編輯欄位。
 
 ```
 <Contact>
@@ -153,5 +153,5 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
 </Contact>
 ```
 
-## <a name="see-also"></a>請參閱
- [Xml 程式碼片段](../xml-tools/xml-snippets.md)[如何：使用 xml 片段](../xml-tools/how-to-use-xml-snippets.md)
+## <a name="see-also"></a>另請參閱
+ [Xml 程式碼片段](../xml-tools/xml-snippets.md)how [TO：使用 xml 程式碼片段](../xml-tools/how-to-use-xml-snippets.md)

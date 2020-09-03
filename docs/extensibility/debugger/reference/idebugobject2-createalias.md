@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::創建別名 |微軟文件
+title: IDebugObject2：： CreateAlias |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 03564e8b81eb4e11a2cd4f25e1047d326d62b21b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726302"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
-為此物件創建唯一的 ID 或別名或返回現有別名。
+建立此物件的唯一識別碼或別名，或傳回現有的別名。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int CreateAlias(
 
 ## <a name="parameters"></a>參數
 `ppAlias`\
-[出]新的(或現有)別名。
+擴展新的 (或現有的) 別名。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回S_OK;否則,返回錯誤代碼。
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 別名是在物件在記憶體中時表示特定對象的標籤。
+ 當物件在記憶體中時，別名是代表特定物件的標籤。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

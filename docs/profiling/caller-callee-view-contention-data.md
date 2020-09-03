@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 083386a808f7b91a18b3ea685ae657118c723978
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779736"
 ---
 # <a name="callercallee-view----contention-data"></a>呼叫端/被呼叫端檢視 - 爭用資料
@@ -29,12 +29,12 @@ ms.locfileid: "74779736"
 
 |資料行|描述|
 |------------|-----------------|
-|**類型**|函式的內容︰<br /><br /> -   **0** - 當前函數<br />-   **1** - 調用當前函數的函數<br />-   **2** - 由當前函式呼叫的函數<br /><br /> 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|
+|**類型**|函式的內容︰<br /><br /> -   **0** -目前的函式<br />-   **1** -呼叫目前函式的函式<br />-   **2** -目前的函式所呼叫的函式<br /><br /> 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|
 |**專有封鎖時間**|- 如果是目前的函式，即為此函式已遭封鎖而無法執行函式主體中之程式碼的時間。 不包括函式所呼叫之函式的封鎖時間。<br />- 如果是呼叫端函式，即為目前函式專有封鎖時間的部分，這會發生在此函式呼叫目前的函式時。<br />- 如果是被呼叫端函式，即為此函式已遭封鎖，而無法在目前函式呼叫此函式時執行本身程式碼的時間。 不包括被呼叫端函式所呼叫之子函式的封鎖時間。|
 |**專有封鎖時間 %**|執行程式碼剖析期間，屬於此內容中此函式的專有封鎖時間佔所有封鎖時間的百分比。|
 |**專有爭用**|- 如果是目前的函式，即為此函式已遭封鎖，而無法執行函式主體中之程式碼的次數。 不包括函式所呼叫之函式中發生的爭用。<br />- 如果是呼叫端函式，即為目前函式在此函式呼叫目前函式時所發生的專有爭用數目。<br />- 如果是被呼叫端函式，即為此函式已遭封鎖，而無法在目前函式呼叫此函式時執行本身程式碼的次數。 不包括被呼叫端函式所呼叫之函式中發生的爭用。|
 |**專有爭用 %**|執行程式碼剖析期間，屬於此內容中此函式的專用爭用佔所有爭用的百分比。|
-|**功能位址**|函式位址或語彙基元。|
+|**函數位址**|函式位址或語彙基元。|
 |**函數名稱**|函式的完整格式名稱。|
 |**內含封鎖時間**|- 如果是目前的函式，即為此函式或此函式所呼叫的其中一個函式已遭封鎖而無法執行的時間。 包括目前函式所呼叫之函式的封鎖時間。<br />- 如果是呼叫端函式，即為此函式呼叫目前函式時，目前函式發生內含封鎖時間佔的部分。<br />- 如果是被呼叫端函式，即為此函式或函式所呼叫的其中一個函式已遭封鎖，而無法在目前的函式呼叫此函式時執行的時間。 包括被呼叫端函式所呼叫之函式的封鎖時間。|
 |**內含封鎖時間 %**|執行程式碼剖析期間，屬於此內容中此函式的內含封鎖時間佔所有封鎖時間的百分比。|
@@ -44,14 +44,14 @@ ms.locfileid: "74779736"
 |**模組名稱**|包含該函式的模組名稱。|
 |**模組路徑**|包含該函式的模組路徑。|
 |**處理序識別碼**|發生爭用之處理序的處理序 ID (PID)。|
-|**流程名稱**|處理序的名稱。|
+|**進程名稱**|處理序的名稱。|
 |**根函式名稱**|目前函數的名稱。 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|
-|**原始檔案**|含有這個函式定義的原始程式檔。|
+|**來源檔案**|含有這個函式定義的原始程式檔。|
 
 ## <a name="see-also"></a>另請參閱
-- [操作方式：自訂報表檢視列](../profiling/how-to-customize-report-view-columns.md)
-- [呼叫者/被叫方視圖](../profiling/caller-callee-view.md)
+- [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)
+- [呼叫端/被呼叫者視圖](../profiling/caller-callee-view.md)
 - [呼叫端/被呼叫端檢視 - 取樣資料](../profiling/caller-callee-view-sampling-data.md)
-- [調用方/被叫方視圖 - .NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
-- [調用方/被叫方視圖 - .NET 記憶體採樣資料](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
-- [調用方/被叫方視圖 - 檢測資料](../profiling/caller-callee-view-instrumentation-data.md)
+- [呼叫端/被呼叫端視圖-.NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [呼叫端/被呼叫端視圖-.NET 記憶體取樣資料](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [呼叫端/被呼叫端視圖-檢測資料](../profiling/caller-callee-view-instrumentation-data.md)

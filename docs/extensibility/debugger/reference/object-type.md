@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE |微軟文件
+title: OBJECT_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4ffb85a14e42dd57c345481285eb1f776b3866d3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714135"
 ---
 # <a name="object_type"></a>Object_Type
-從表達式賦值器指定對象的類型。
+從運算式評估工具指定物件的類型。
 
 ## <a name="syntax"></a>語法
 
@@ -70,59 +70,59 @@ public enum enum_OBJECT_TYPE { 
 
 ## <a name="fields"></a>欄位
  `OBJECT_TYPE_BOOLEAN`\
- 指示對像是布爾。
+ 指出物件是布林值。
 
  `OBJECT_TYPE_CHAR`\
- 指示對像是字元。
+ 表示物件為字元。
 
  `OBJECT_TYPE_I1`\
- 指示對像是一位節簽名整數。
+ 指出物件是一個位元組帶正負號的整數。
 
  `OBJECT_TYPE_U1`\
- 指示該對像是一個無符號整數。
+ 指出物件是一個位元組不帶正負號的整數。
 
  `OBJECT_TYPE_I2`\
- 指示對像是兩位元節簽名整數。
+ 指出物件是雙位元組帶正負號的整數。
 
  `OBJECT_TYPE_U2`\
- 指示該對像是一個兩位元組的無符號整數。
+ 指出物件是雙位元組不帶正負號的整數。
 
  `OBJECT_TYPE_I4`\
- 指示對像是四位元節簽名整數。
+ 指出物件是四位元組帶正負號的整數。
 
  `OBJECT_TYPE_U4`\
- 指示該對像是一個四位元組的無符號整數。
+ 表示物件為四位元組不帶正負號的整數。
 
  `OBJECT_TYPE_I8`\
- 指示該對像是一個八位元節簽名整數。
+ 指出物件是八位元組帶正負號的整數。
 
  `OBJECT_TYPE_U8`\
- 指示該對像是一個八位元組的無符號整數。
+ 指出物件是八位元組不帶正負號的整數。
 
  `OBJECT_TYPE_R4`\
- 指示物件是四位元組浮點數。
+ 指出物件是四位元組浮點數。
 
  `OBJECT_TYPE_R8`\
- 指示對像是八位元組浮點數。
+ 指出物件是八位元組浮點數。
 
  `OBJECT_TYPE_OBJECT`\
- 指示對像是物件。
+ 表示物件是物件。
 
  `OBJECT_TYPE_NULL`\
- 指示物件為 NULL。
+ 表示物件為 Null。
 
  `OBJECT_TYPE_CLASS`\
- 指示對像是類。
+ 表示物件為類別。
 
 ## <a name="remarks"></a>備註
- 作為參數傳遞給 Create[原始物件](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)和[創建 ArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)方法。
+ 以引數形式傳遞至 [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) 和 [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) 方法。
 
 ## <a name="requirements"></a>需求
- 標題: ee.h
+ 標頭： ee. h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

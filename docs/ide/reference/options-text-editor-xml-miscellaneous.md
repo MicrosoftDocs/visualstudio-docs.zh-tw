@@ -9,15 +9,15 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: dd468945b1ab9ac83b219b9c8c396f017065e2be
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568122"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>選項、文字編輯器、XML、其他
 
-使用 [其他]**** 選項來變更 XML 編輯器的自動完成和結構描述設定。 要訪問其他 XML 選項，請選擇**工具** > **選項** > **文字編輯器** > **XML，** 然後選擇 **"雜項**"。
+使用 [其他]**** 選項來變更 XML 編輯器的自動完成和結構描述設定。 若要存取其他 XML 選項，請選擇 [**工具**  >  **選項**  >  **文字編輯器**  >  **XML**]，然後選擇 [**其他**]。
 
 ## <a name="auto-insert"></a>自動插入
 
@@ -27,9 +27,9 @@ ms.locfileid: "75568122"
 
 **屬性引號**
 
-創作 XML 屬性時，編輯器將`="`和`"`字元插入，並將插入符**^**（ ） 定位在引號中。 依預設，這個核取方塊為已選取。
+撰寫 XML 屬性時，編輯器會插入 `="` 和 `"` 字元，並將插入號 (**^**) 在引號內。 依預設，這個核取方塊為已選取。
 
-**命名空間聲明**
+**命名空間宣告**
 
 編輯器在需要時會自動插入命名空間宣告。 依預設，這個核取方塊為已選取。
 

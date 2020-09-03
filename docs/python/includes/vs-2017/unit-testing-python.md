@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 032732f19855b9ba5c97c2e5281e8385f9ace3be
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535319"
 ---
 ## <a name="discover-and-view-tests"></a>探索及檢視測試
@@ -39,27 +39,27 @@ ms.locfileid: "85535319"
 
 1. 視需要儲存檔案，然後使用 [測試]**** > [Windows]**** > [測試總管]**** 功能表命令，開啟 [測試總管]****。
 
-1. [**測試瀏覽器**] 會搜尋專案中的測試，並顯示它們，如下所示。 按兩下測試會開啟其原始程式檔。
+1. **測試瀏覽器** 會在您的專案中搜尋測試，並顯示如下所示的專案。 按兩下測試會開啟其原始程式檔。
 
     ![[測試總管] 顯示預設的 test_A](../../media/unit-test-A.png)
 
-1. 當您將更多測試加入至專案時，您可以使用工具列上的 [**群組依據**] 功能表，在 [**測試瀏覽器**] 中組織此視圖：
+1. 當您將更多測試加入專案時，可以使用工具列上的 [**分組方式**] 功能表，在 [**測試瀏覽器**] 中組織視圖：
 
     ![[測試總管] 的 [群組依據] 工具列功能表](../../media/unit-test-group-menu.png)
 
-1. 您也可以在 [**搜尋**] 欄位中輸入文字，以依名稱篩選測試。
+1. 您也可以在 [ **搜尋** ] 欄位中輸入文字，以依名稱篩選測試。
 
-如需 `unittest` 模組和撰寫測試的詳細資訊，請參閱[python 2.7 檔](https://docs.python.org/2/library/unittest.html)或[python 3.7 檔](https://docs.python.org/3/library/unittest.html)（python.org）。
+如需 `unittest` 模組和撰寫測試的詳細資訊，請參閱 [python 2.7 檔](https://docs.python.org/2/library/unittest.html) 或 [python 3.7 檔](https://docs.python.org/3/library/unittest.html) (python.org) 。
 
 ## <a name="run-tests"></a>執行測試
 
-在**測試瀏覽器**中，您可以透過各種方式來執行測試：
+在 **測試瀏覽器** 中，您可以透過各種不同的方式來執行測試：
 
 - [全部執行]**** 會執行所有顯示的測試 (視篩選條件而定)。
-- [**執行**] 功能表提供命令，讓您以群組的方式執行失敗、通過或未執行的測試。
+- [ **執行** ] 功能表可讓您以群組執行失敗、通過或不執行測試的命令。
 - 您可以選取一或多個測試，以滑鼠右鍵按一下，然後選取 [執行選取的測試]****。
 
-測試會在背景執行，而且**測試瀏覽器**會在每個測試完成時更新其狀態：
+測試會在背景執行，而且 **Test Explorer** 會在每個測試完成時更新其狀態：
 
 - 通過的測試會顯示綠色的打勾圖示，以及執行測試所花費的時間：
 
@@ -75,11 +75,11 @@ ms.locfileid: "85535319"
 
 因為單元測試是程式碼片段，所以它們和其他程式碼一樣會有錯誤，並在某些情況下需要以偵錯工具執行。 在偵錯工具中，您可以設定中斷點、檢視變數，以及逐步檢視程式碼。 Visual Studio 也提供診斷工具以進行單元測試。
 
-若要開始進行偵錯工具，請在程式碼中設定初始中斷點，然後以滑鼠右鍵按一下 [**測試瀏覽器**] 中的測試（或選取），然後選取 [偵測**選取的測試**]。 Visual Studio 會以與針對應用程式碼一樣的方式，啟動 Python 偵錯工具。
+若要啟動偵錯工具，請在您的程式碼中設定初始中斷點，然後以滑鼠右鍵按一下 [ **Test Explorer** ] 中的測試 (或選取) ，然後選取 [ **偵錯工具選取的測試**]。 Visual Studio 會以與針對應用程式碼一樣的方式，啟動 Python 偵錯工具。
 
 ![對測試進行偵錯](../../media/unit-test-debugging.png)
 
-您也可以**針對選取的測試使用 [分析程式碼涵蓋範圍**]。 如需詳細資訊，請參閱[使用程式碼涵蓋範圍來決定所測試的程式碼數量](../../../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
+您也可以 **針對選取的測試使用 [分析程式碼涵蓋範圍**]。 如需詳細資訊，請參閱[使用程式碼涵蓋範圍來決定所測試的程式碼數量](../../../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
 
 ### <a name="known-issues"></a>已知問題
 

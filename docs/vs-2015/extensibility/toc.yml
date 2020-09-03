@@ -898,7 +898,7 @@
   items:
     - name: 建立軟體開發套件
       href: creating-a-software-development-kit.md
-    - name: '使用 C# 或 Visual Basic 建立 SDK'
+    - name: 使用 C# 或 Visual Basic 建立 SDK
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: 使用 C++ 建立 SDK
       href: walkthrough-creating-an-sdk-using-cpp.md

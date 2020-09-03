@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567212"
 ---
 # <a name="customize-startup"></a>自訂啟動
@@ -32,7 +32,7 @@ ms.locfileid: "75567212"
 
 ## <a name="to-change-the-startup-item"></a>變更啟動項目
 
-1. 在功能表列上，選擇 **"工具** > **選項**"。
+1. 在功能表列上，選擇 [**工具**  >  **選項**]。
 
 2. 展開 [環境]****，然後選擇 [啟動]****。
 

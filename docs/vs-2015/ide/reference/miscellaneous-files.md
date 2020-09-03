@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8dc11714fc8b2d5a345d94ddfe4c5de2c2cd7fe5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666855"
 ---
 # <a name="miscellaneous-files"></a>其他檔案
@@ -35,7 +35,7 @@ ms.locfileid: "72666855"
 
  單獨開啟容器中的檔案因各種原因而十分有用。 您可能有想要在開發專案方案時檢視但不是方案開發之必要項目的檔案。 常見範例包括開發附註或指示、資料庫結構描述和程式碼片段。 此外，您可能想要建立獨立檔案。
 
- ![解決方案專案](../../ide/reference/media/projects-solutions-misc.gif "|::ref1::|")
+ ![解決方案專案](../../ide/reference/media/projects-solutions-misc.gif "Projects_Solutions_Misc")
 
  如果啟用資料夾的選項，方案總管可以顯示檔案的 [其他檔案] 資料夾。 您可以從[選項對話方塊、環境、文件](../../ide/reference/documents-environment-options-dialog-box.md)設定選項。 關閉其他檔案之後，除非同時啟用該其他檔案的選項，否則不會與任何特定方案或專案建立關聯。
 

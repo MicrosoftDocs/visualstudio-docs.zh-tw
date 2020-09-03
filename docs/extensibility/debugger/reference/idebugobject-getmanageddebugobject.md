@@ -1,5 +1,5 @@
 ---
-title: IDebugObject:獲取託管調試物件 |微軟文件
+title: IDebugObject：： GetManagedDebugObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 67d0d7a8642c9dd90067b0e197f420d4cc821faa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726685"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
-在除錯引擎的位址空間中創建託管物件的副本。
+在 debug 引擎的位址空間中建立 managed 物件的複本。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetManagedDebugObject(
 
 ## <a name="parameters"></a>參數
 `ppObject`\
-[出]傳回表示新的建立的託管物件的[IDebug 託管物件](../../../extensibility/debugger/reference/idebugmanagedobject.md)。
+擴展傳回代表新建立之 managed 物件的 [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回S_OK;否則,返回錯誤代碼。 如果此[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)不表示託管值類實例,則返回E_FAIL。
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。 如果這個 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 不代表 managed 值類別實例，則傳回 E_FAIL。
 
 ## <a name="remarks"></a>備註
- 此[IDebugObject 對象](../../../extensibility/debugger/reference/idebugobject.md)必須表示託管值類實`System.Decimal`例,如實例。 通過具有本地副本,可以消除調用[評估](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)的開銷。
+ 這個 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 物件必須代表 managed 實值類別實例（例如實例） `System.Decimal` 。 藉由使用本機複本，將會排除呼叫 [評估](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) 的額外負荷。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

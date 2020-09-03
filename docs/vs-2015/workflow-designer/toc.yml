@@ -62,7 +62,7 @@
               href: pickbranch-activity-designer.md
             - name: 順序
               href: sequence-activity-designer.md
-            - name: Switch\<T>
+            - name: 交換器\<T>
               href: switch-t-activity-designer.md
             - name: While
               href: while-activity-designer.md
@@ -86,7 +86,7 @@
               href: state-activity-designer.md
             - name: FinalState
               href: finalstate-activity-designer.md
-            - name: Transition
+            - name: 轉換
               href: transition-activity-designer.md
         - name: Messaging (傳訊)
           items:
@@ -114,9 +114,9 @@
               href: persist-activity-designer.md
             - name: TerminateWorkflow
               href: terminateworkflow-activity-designer.md
-        - name: 基本
+        - name: 基本型別
           items:
-            - name: 基本
+            - name: 基本型別
               href: primitives-activity-designers.md
             - name: 指派
               href: assign-activity-designer.md
@@ -164,9 +164,9 @@
               href: throw-activity-designer.md
             - name: TryCatch
               href: trycatch-activity-designer.md
-        - name: 移轉
+        - name: 遷移
           items:
-            - name: 移轉
+            - name: 遷移
               href: migration-activity-designers.md
             - name: Interop
               href: interop-activity-designer.md

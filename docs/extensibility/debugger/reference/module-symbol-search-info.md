@@ -1,5 +1,5 @@
 ---
-title: MODULE_SYMBOL_SEARCH_INFO |微軟文件
+title: MODULE_SYMBOL_SEARCH_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5f15587759c4f665d1593d1298c47459a0e64aac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714249"
 ---
 # <a name="module_symbol_search_info"></a>MODULE_SYMBOL_SEARCH_INFO
 
-包含有關已搜索的符號搜索路徑的狀態資訊。
+包含已搜尋之符號搜尋路徑的相關狀態資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -46,22 +46,22 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 ## <a name="members"></a>成員
 
 `dwValidFields`\
-[SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)枚舉中的標誌的組合,指定此結構中描述的搜索資訊類型。
+[SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)列舉中的旗標組合，指定此結構中所描述的搜尋資訊種類。
 
 `bstrVerboseSearchInfo`\
-搜索路徑和結果串聯到單個字串中。
+搜尋路徑和結果串連成單一字串。
 
 ## <a name="remarks"></a>備註
 
-此結構從對[GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)方法的調用返回。
+從呼叫 [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) 方法時，會傳回這個結構。
 
-如果`bstrVerboseSearchInfo`該欄位不為空,則它包含搜索的路徑列表和該搜索的結果。 清單的格式採用路徑,後跟省略號 ("..."),後跟結果。 如果有多個路徑結果對,則每對由一對"\r\n"(回車/換行)對分隔。 模式如下所示:
+如果 `bstrVerboseSearchInfo` 欄位不是空的，則會包含搜尋的路徑清單以及該搜尋的結果。 此清單的格式為路徑，後面接著省略號 ( "..." ) ，後面接著結果。 如果有一個以上的路徑結果配對，則每一組都會以 "\r\n" (換行字元) 組分隔。 模式看起來像這樣：
 
-\<路徑>...\<結果>\r\n\<路徑>...\<結果>\r\n\<路徑>...\<結果>
+\<path>...\<result>\r\n \<path> \<result> .。。\r\n \<path> .。。\<result>
 
-請注意,最後一個條目沒有 \r\n 序列。
+請注意，最後一個專案沒有 \r\n 順序。
 
-下面是已發送到標準`bstrVerboseSearchInfo`出的可能的字串。
+以下是已 `bstrVerboseSearchInfo` 傳送至標準輸出的可能字串。
 
 `c:\symbols\user32.pdb... File not found.`
 
@@ -71,11 +71,11 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 
 ## <a name="requirements"></a>需求
 
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 

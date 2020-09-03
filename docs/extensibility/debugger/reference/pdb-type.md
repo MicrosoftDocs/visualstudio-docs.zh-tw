@@ -1,5 +1,5 @@
 ---
-title: PDB_TYPE |微軟文件
+title: PDB_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1f736d7d9b190fc46945e2f4f7c309b88c3e851f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714097"
 ---
 # <a name="pdb_type"></a>PDB_TYPE
 
-此結構指定有關從 PDB 符號獲取的欄位類型的資訊。
+此結構會指定取自 PDB 符號之欄位類型的相關資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -47,25 +47,25 @@ public struct PDB_TYPE {
 ## <a name="members"></a>成員
 
 `ulAppDomainID`\
-符號來自的應用程式的 ID。 這用於唯一標識應用程式的實例。
+符號的來源應用程式識別碼。 這是用來唯一識別應用程式的實例。
 
 `guidModule`\
-包含此欄位的模組的 GUID。
+包含此欄位之模組的 GUID。
 
 `symid`\
-對應於此欄位的符號的 ID。
+對應至此欄位之符號的識別碼。
 
 ## <a name="remarks"></a>備註
 
-當`TYPE_INFO``TYPE_KIND_PDB`結構欄位設定為[(dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)枚[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)舉中的值`dwKind`)時, 此結構在TYPE_INFO結構中顯示為聯合的一部分。
+當結構的[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) `dwKind` 欄位 `TYPE_INFO` 設定為 `TYPE_KIND_PDB` ([dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列舉) 中的值時，這個結構會顯示為 TYPE_INFO 結構中聯集的一部分。
 
 ## <a name="requirements"></a>需求
 
-標題: sh.h
+標頭： sh. h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 

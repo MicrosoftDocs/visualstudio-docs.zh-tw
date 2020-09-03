@@ -1,5 +1,5 @@
 ---
-title: 評估本地人 |微軟文件
+title: 評估區域變數 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,30 +12,30 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aaf140a9ddbc7733da4d05450a024c0f0a713712
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738814"
 ---
-# <a name="evaluate-locals"></a>評估本地人
+# <a name="evaluate-locals"></a>評估區域變數
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關執行 CLR 運算式評估工具的詳細資訊，請參閱 [clr 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
-呼叫[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)以取得本地值以及本地名稱和類型。 由於本地值取決於程式的當前狀態,因此必須從記憶體中獲取本地值。 [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)物件用於將表示本地的[IDebugField](../../extensibility/debugger/reference/idebugfield.md)物件綁定到包含該值的記憶體中的相應位置。 記憶體中的此位置由[IDebugObject 物件](../../extensibility/debugger/reference/idebugobject.md)表示。
+呼叫[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)來取得本機的值，以及本機的名稱和類型。 因為本機的值取決於程式的目前狀態，所以必須從記憶體中取得本機的值。 [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)物件是用來將代表本機的[IDebugField](../../extensibility/debugger/reference/idebugfield.md)物件系結至包含值之記憶體中的適當位置。 記憶體中的這個位置會以 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 物件表示。
 
-檢索本地值的此功能封載在執行以下工作的說明器函數中:
+用來抓取本機值的這項功能會封裝在 helper 函式中，以執行下列工作：
 
-1. 將`IDebugField`物件綁定到記憶體以獲取`IDebugObject`物件。
+1. 將物件系結 `IDebugField` 至記憶體，以取得 `IDebugObject` 物件。
 
-2. 從記憶體中獲取該值。 此值表示為一系列位元組。
+2. 取得記憶體的值。 此值會以一連串的位元組表示。
 
-3. 根據本地類型設定值的格式。
+3. 根據本機的型別來格式化值。
 
-4. 返回包含本地值的泛型物件。 在 C#`object`中, 這是一`VARIANT`個 ,在 C++中,這是一個 。
+4. 傳回包含區域值的泛型物件。 在 c # 中，這是 `object` ，而且在 c + + 中，這是 `VARIANT` 。
 
 ## <a name="managed-code"></a>Managed 程式碼
- 這是檢索託管代碼中本地值的函數的實現。
+ 這是函式的實作為函式，可在 managed 程式碼中抓取本機的值。
 
 ```csharp
 namespace EEMC
@@ -76,8 +76,8 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code"></a>非託管代碼
- 這是檢索非託管代碼中本地值的函數的實現。 `FieldGetType`顯示在[獲取本地值](../../extensibility/debugger/getting-local-values.md)中。
+## <a name="unmanaged-code"></a>非受控碼
+ 這是函式的實作為函式，可在非受控碼中抓取本機值。 `FieldGetType` 在 [取得區域值](../../extensibility/debugger/getting-local-values.md)時顯示。
 
 ```cpp
 HRESULT FieldGetPrimitiveValue(
@@ -190,6 +190,6 @@ HRESULT FieldGetPrimitiveValue(
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [部份變數的樣本實作](../../extensibility/debugger/sample-implementation-of-locals.md)
-- [取得本地端值](../../extensibility/debugger/getting-local-values.md)
-- [評估上下文](../../extensibility/debugger/evaluation-context.md)
+- [區域變數的範例執行](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [取得區域值](../../extensibility/debugger/getting-local-values.md)
+- [評估內容](../../extensibility/debugger/evaluation-context.md)

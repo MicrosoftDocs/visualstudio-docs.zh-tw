@@ -16,10 +16,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 20b2cf2bf12e9b24ca12d0a73b43e4a56e8246f4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579485"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>快速入門：使用 Visual Studio 建立您的第一個 C# 主控台應用程式
@@ -66,7 +66,7 @@ ms.locfileid: "77579485"
 
 1. 開啟 Visual Studio 2019。
 
-1. 在啟動視窗中，選擇 **"創建新專案**"。
+1. 在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
    ![[建立新專案] 視窗](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
@@ -87,7 +87,7 @@ ms.locfileid: "77579485"
    >
    > 接下來，選擇 Visual Studio 安裝程式中的 [修改]**** 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續]**** 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
 
-1. 在 [設定您的新專案]**** 視窗的 [專案名稱]**** 方塊中鍵入或輸入 *HelloWorld*。 然後，選擇 **"創建**"。
+1. 在 [設定您的新專案]**** 視窗的 [專案名稱]**** 方塊中鍵入或輸入 *HelloWorld*。 然後，選擇 [ **建立**]。
 
    ![在 [設定您的新專案] 視窗中，以 'HelloWorld' 命名您的專案](../get-started/csharp/media/vs-2019/csharp-name-your-helloworld-project.png)
 
@@ -133,7 +133,7 @@ Visual Studio 在您的專案中包含預設 "Hello World" 程式碼。
 
 ## <a name="run-the-application"></a>執行應用程式
 
-1. 選擇工具列上的 [HelloWorld]**** 按鈕以在偵錯模式中執行應用程式。 （或者，您可以按**F5**.）
+1. 選擇工具列上的 [HelloWorld]**** 按鈕以在偵錯模式中執行應用程式。  (或，您可以按下 **F5**鍵 ) 
 
    ![選擇 [Hello World] 按鈕以從工具列執行應用程式](../ide/media/csharp-console-hello-world-button.png)
 
@@ -145,7 +145,7 @@ Visual Studio 在您的專案中包含預設 "Hello World" 程式碼。
 
 1. 按下 **ENTER** 以關閉主控台視窗。
 
-1. 關閉視覺化工作室中的 **"輸出**"窗格。
+1. 關閉 Visual Studio 中的 [ **輸出** ] 窗格。
 
    ![關閉 Visual Studio 中的 [輸出] 窗格](../ide/media/csharp-hello-world-close-output-pane.png)
 

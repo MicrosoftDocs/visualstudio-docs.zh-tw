@@ -7,10 +7,10 @@ ms.date: 09/23/2019
 ms.assetid: 598FC25A-6DA3-44BB-B128-AD979E9F86EA
 ms.topic: how-to
 ms.openlocfilehash: 18bf3b0e36efda193c341993f9c2a88f04430922
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801759"
 ---
 # <a name="accessibility-features-of-macos"></a>MacOS 的協助工具功能

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2 |微軟文件
+title: IDebugStackFrame2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 37acb9f2984c36130de494108ef4b76a59cc74e7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719505"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
-此介面表示特定線程中的調用堆疊中的單個堆疊幀。
+這個介面代表特定執行緒中呼叫堆疊內的單一堆疊框架。
 
 ## <a name="syntax"></a>語法
 
@@ -28,37 +28,37 @@ ms.locfileid: "80719505"
 IDebugStackFrame2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 調試引擎 (DE) 實現此介面以表示堆疊幀。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ Debug engine (DE) 會執行此介面來代表堆疊框架。
 
-## <a name="notes-for-callers"></a>通話備註
- 呼叫[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)以檢索[IEnum DebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)介面。 調用[下一個](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)以檢索包含`IDebugStackFrame2`介面的[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ 呼叫 [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 以取得 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) 介面。 呼叫 [Next](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) 以取得包含介面的 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 結構 `IDebugStackFrame2` 。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 下表顯示的方法`IDebugStackFrame2`。
+ 下表顯示的方法 `IDebugStackFrame2` 。
 
 |方法|描述|
 |------------|-----------------|
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|獲取此堆疊幀的代碼上下文。|
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|獲取此堆疊框架的文檔上下文。|
-|[GetName](../../../extensibility/debugger/reference/idebugstackframe2-getname.md)|獲取堆疊幀的名稱。|
-|[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)|獲取堆疊幀的說明。|
-|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|獲取與堆疊幀關聯的物理地址範圍的與計算機相關的表示形式。|
-|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|獲取用於在堆疊框架和線程的當前上下文中執行表達式計算的評估上下文。|
-|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugstackframe2-getlanguageinfo.md)|獲取與堆疊幀關聯的語言。|
-|[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|獲取與堆疊幀關聯的屬性的說明。|
-|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|為堆疊幀屬性創建枚舉器。|
-|[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|獲取與堆疊幀關聯的線程。|
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|取得這個堆疊框架的程式碼內容。|
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|取得這個堆疊框架的檔內容。|
+|[GetName](../../../extensibility/debugger/reference/idebugstackframe2-getname.md)|取得堆疊框架的名稱。|
+|[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)|取得堆疊框架的描述。|
+|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|取得與堆疊框架相關聯之實體位址範圍的電腦相依標記法。|
+|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|取得評估內容，以在堆疊框架和執行緒的目前內容中進行運算式評估。|
+|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugstackframe2-getlanguageinfo.md)|取得與堆疊框架相關聯的語言。|
+|[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|取得與堆疊框架相關聯之屬性的描述。|
+|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|建立堆疊框架屬性的列舉值。|
+|[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|取得與堆疊框架相關聯的執行緒。|
 
 ## <a name="remarks"></a>備註
- 僅當正在調試的程式在斷點(由用戶設置的斷點或異常引起)停止時,才獲得此介面。 在此介面中,可以獲取表達式上下文以評估表達式,可以返回寄存器清單,也可以獲取和檢查調用堆疊。
+ 只有在正在進行偵錯工具的中斷點停止時，才會取得這個介面 (可能是使用者設定中斷點或例外狀況) 所造成。 您可以從這個介面取得運算式內容來評估運算式、可以傳回暫存器清單，或者可以取得和檢查呼叫堆疊。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

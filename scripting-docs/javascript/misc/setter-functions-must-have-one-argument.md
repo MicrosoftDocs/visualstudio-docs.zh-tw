@@ -15,13 +15,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8d84a018f12d72fd747e0e4c59d4fb3043b2503a
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817550"
 ---
 # <a name="setter-functions-must-have-one-argument"></a>Setter 函式必須具有一個引數
 1051： Setter 函數必須有一個引數  
   
- Setter 函數必須只有一個引數。
+ Setter 函式必須只有一個引數。

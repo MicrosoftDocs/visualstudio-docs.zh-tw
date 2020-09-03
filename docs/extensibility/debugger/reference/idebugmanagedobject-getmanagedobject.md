@@ -1,5 +1,5 @@
 ---
-title: IDebug託管物件:獲取託管物件 |微軟文件
+title: IDebugManagedObject：： GetManagedObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b7080760b174c51d62c44cd2757944948e0104ca
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727744"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
-返回表示託管對象的介面。
+傳回代表 managed 物件的介面。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetManagedObject(
 
 ## <a name="parameters"></a>參數
 `ppManagedObject`\
-[出]返回表示託管對象的介面。
+擴展傳回代表 managed 物件的介面。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回S_OK;否則,返回錯誤代碼。
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 可以查詢從此方法返回的介面,以便查詢託管類實現的任何介面,從而允許調用其方法。
+ 從這個方法傳回的介面可以針對 managed 類別所執行的任何介面進行查詢，以允許呼叫其方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

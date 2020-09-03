@@ -12,11 +12,11 @@
           href: memory-usage.md
         - name: 記憶體使用量 (不偵錯)
           href: memory-usage-without-debugging2.md
-    - name: CPU 使用率
+    - name: CPU 使用量
       items:
-        - name: CPU 使用率
+        - name: CPU 使用量
           href: cpu-usage.md
-        - name: 分析 CPU 使用量
+        - name: 分析 CPU 使用
           href: analyze-cpu-usage-in-a-windows-universal-app.md
     - name: 應用程式時間軸
       href: application-timeline.md
@@ -66,7 +66,7 @@
               href: performance-session-properties.md
             - name: 分析和 Windows Vista 安全性
               href: profiling-and-windows-vista-security.md
-        - name: 開始使用
+        - name: 快速入門
           items:
             - name: 開始使用
               href: getting-started-with-performance-tools.md
@@ -180,7 +180,7 @@
                           href: da0001-use-stringbuilder-for-concatenations.md
                         - name: DA0005：常見的 GC2 集合
                           href: da0005-frequent-gc2-collections.md
-                        - name: DA0006：覆寫實值類型的 Equals()
+                        - name: DA0006：覆寫實值型別的 Equals()
                           href: da0006-override-equals-parens-for-value-types.md
                         - name: DA0007：避免使用例外狀況進行控制流程
                           href: da0007-avoid-using-exceptions-for-control-flow.md
@@ -190,21 +190,21 @@
                           href: da0011-expensive-compareto.md
                         - name: DA0012：大量的反射
                           href: da0012-significant-amount-of-reflection.md
-                        - name: DA0013：String.Split 或 String.Substring 的用量高
+                        - name: DA0013：String.Split 或 String.Substring 的高用量
                           href: da0013-high-usage-of-string-split-or-string-substring.md
-                        - name: DA0018：以處理序 Managed 記憶體限制執行的 32 位元應用程式
+                        - name: DA0018：執行 32 位元的應用程式時，處理序的記憶體限制會受到管理
                           href: da0018-32-bit-application-running-at-process-managed-memory-limits.md
                         - name: DA0021：高比率的 Gen 1 記憶體回收
                           href: da0021-high-rate-of-gen-1-garbage-collections.md
                         - name: DA0022：高比率的 Gen 2 記憶體回收
                           href: da0022-high-rate-of-gen-2-garbage-collections.md
-                        - name: DA0023：高 GC CPU 時間
+                        - name: DA0023：高記憶體回收 CPU 時間
                           href: da0023-high-gc-cpu-time.md
-                        - name: DA0024：過多 GC CPU 時間
+                        - name: DA0024：超過 GC CPU 時間
                           href: da0024-excessive-gc-cpu-time.md
-                        - name: DA0038：鎖定爭用的比率很高
+                        - name: DA0038：鎖定競爭比率高
                           href: da0038-high-rate-of-lock-contentions.md
-                        - name: DA0039：鎖定爭用的比率非常高
+                        - name: DA0039：鎖定競爭的比率極高
                           href: da0039-very-high-rate-of-lock-contentions.md
                     - name: 記憶體和分頁效能規則
                       items:
@@ -212,7 +212,7 @@
                           href: memory-and-paging-performance-rules.md
                         - name: DA0014：極高比率的使用中記憶體分頁到磁碟
                           href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
-                        - name: DA0017：作用中的記憶體分頁至磁碟的比率很高
+                        - name: DA0017：高比率的使用中記憶體分頁到磁碟
                           href: da0017-high-rates-of-paging-active-memory-to-disk.md
                     - name: 程式碼剖析工具使用規則
                       items:
@@ -222,15 +222,15 @@
                           href: da0002-vsperfcorprof-dll-is-missing.md
                         - name: DA0003：許多核心樣本
                           href: da0003-many-kernel-samples.md
-                        - name: DA0004：處理器使用率高
+                        - name: DA0004：高處理器使用率
                           href: da0004-high-processor-usage.md
-                        - name: DA0008：收集的樣本少
+                        - name: DA0008：只收集到少量樣本
                           href: da0008-few-samples-collected.md
-                        - name: DA0026：過多核心 CPU 時間處理
+                        - name: DA0026：過多的核心 CPU 時間處理
                           href: da0026-excessive-kernel-cpu-time-processing.md
-                        - name: DA0029：不支援的 CLR 版本
+                        - name: DA0029：CLR 版本不受支援
                           href: da0029-unsupported-clr-version.md
-                        - name: DA0030：蒐集資料庫專案的階層互動度量
+                        - name: DA0030：收集資料庫專案的階層互動量測
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
                     - name: 資源監視效能規則
                       items:
@@ -238,15 +238,15 @@
                           href: resource-monitoring-performance-rules.md
                         - name: DA0501：進行程式碼剖析之處理序所需的平均 CPU 使用量。
                           href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
-                        - name: DA0502：進行程式碼剖析之處理序所需的最大 CPU 使用量
+                        - name: DA0502：所分析之處理序的 CPU 使用量上限
                           href: da0502-maximum-cpu-consumption-by-the-process-being-profiled.md
-                        - name: DA0503：進行程式碼剖析之處理序的平均工作集 (以位元組為單位)
+                        - name: DA0503：所分析之處理序的平均工作集 (位元組)
                           href: da0503-average-working-set-in-bytes-for-the-process-being-profiled.md
-                        - name: DA0504：進行程式碼剖析之處理序的最大工作集 (以位元組為單位)
+                        - name: DA0504：所分析之處理序的最大工作集 (以位元組為單位)
                           href: da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md
-                        - name: DA0505：為進行程式碼剖析的處理序所配置的平均私用位元組
+                        - name: DA0505：為所分析處理序配置的平均私用位元組
                           href: da0505-average-private-bytes-allocated-for-the-process-being-profiled.md
-                        - name: DA0506：為進行程式碼剖析的處理序所配置的最大私用位元組
+                        - name: DA0506：為所分析的處理序配置的最大私用位元組
                           href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
             - name: 效能報告檢視
               items:
@@ -566,11 +566,11 @@
                   items:
                     - name: VSPerfCmd
                       href: vsperfcmd.md
-                    - name: Start
+                    - name: 啟動
                       href: start.md
                     - name: CrossSession
                       href: crosssession.md
-                    - name: 輸出
+                    - name: Output
                       href: output.md
                     - name: WinCounter
                       href: wincounter.md
@@ -586,7 +586,7 @@
                       href: querycounters.md
                     - name: 事件
                       href: events-vsperfcmd.md
-                    - name: Shutdown
+                    - name: 關機
                       href: shutdown.md
                     - name: GlobalOn 和 GlobalOff
                       href: globalon-and-globaloff.md
@@ -596,9 +596,9 @@
                       href: threadon-and-threadoff.md
                     - name: GC
                       href: gc-vsperfcmd.md
-                    - name: Launch
+                    - name: 啟動
                       href: launch.md
-                    - name: 連結
+                    - name: 附加
                       href: attach.md
                     - name: Args
                       href: args.md

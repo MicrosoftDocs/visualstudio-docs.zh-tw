@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 96ae175451d5cb99268f3cd89a5f8ec5142744af
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331911"
 ---
 # <a name="collect-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>使用分析工具取樣方法收集服務的應用程式統計資料
@@ -24,7 +24,7 @@ ms.locfileid: "85331911"
 
 ## <a name="common-tasks"></a>常見工作
 
-|Task|相關內容|
+|工作|相關內容|
 |----------|---------------------|
 |**將分析工具附加至 .NET 服務**|-   [如何：將分析工具附加至 .NET 服務以收集應用程式統計資料](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|
 |**新增階層互動資料**|-   [收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
@@ -34,7 +34,7 @@ ms.locfileid: "85331911"
 
 ### <a name="profile-windows-services"></a>分析 Windows 服務
 
-|Task|相關內容|
+|工作|相關內容|
 |----------|---------------------|
 |**使用檢測方法進行分析**|-   [使用檢測設備收集詳細計時資料](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
 |**分析 .NET 記憶體配置和記憶體回收**|-   [收集 .NET 記憶體資料](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
@@ -42,7 +42,7 @@ ms.locfileid: "85331911"
 
 ### <a name="profile-by-using-the-sampling-method"></a>使用取樣方法進行分析
 
-|Task|相關內容|
+|工作|相關內容|
 |----------|---------------------|
 |**分析獨立 (用戶端) 應用程式**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
 |**分析 ASP.NET Web 應用程式**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|

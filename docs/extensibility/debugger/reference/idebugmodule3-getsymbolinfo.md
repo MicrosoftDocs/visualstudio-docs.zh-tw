@@ -1,5 +1,5 @@
 ---
-title: IDebugmodule3::獲取符號資訊 |微軟文件
+title: IDebugModule3：： GetSymbolInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3aafb28715f58eaba4499b47a2e1dee15b82ed14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726898"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
-檢索搜索符號的路徑清單以及搜索每個路徑的結果。
+抓取搜尋符號的路徑清單，以及搜尋每個路徑的結果。
 
 ## <a name="syntax"></a>語法
 
@@ -44,29 +44,29 @@ int GetSymbolInfo(
 
 ## <a name="parameters"></a>參數
 `dwFields`\
-[在][SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)枚舉中的標誌的組合,指定要填充`pInfo`哪些 欄位。
+在 [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) 列舉中的旗標組合，指定 `pInfo` 要填入的欄位。
 
 `pInfo`\
-[出][一個MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)結構,其成員要用指定的資訊填充。 如果這是 null 值,則此方法`E_INVALIDARG`將傳回 。
+擴展要以指定的資訊填入其成員的 [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) 結構。 如果這是 null 值，則這個方法會傳回 `E_INVALIDARG` 。
 
 ## <a name="return-value"></a>傳回值
-如果方法成功,它將傳`S_OK`回 。否則,它將返回一個錯誤代碼。
+如果方法成功，則會傳回， `S_OK` 否則會傳回錯誤碼。
 
 > [!NOTE]
-> 即使`S_OK`返回,返回的字串`MODULE_SYMBOL_SEARCH_INFO`(在結構中)也可能為空。 在這種情況下,沒有要返回的搜索資訊。
+> 即使傳回，在結構) 中傳回的字串 (`MODULE_SYMBOL_SEARCH_INFO` 也可能是空的 `S_OK` 。 在此情況下，沒有要傳回的搜尋資訊。
 
 ## <a name="remarks"></a>備註
-`bstrVerboseSearchInfo`如果`MODULE_SYMBOL_SEARCH_INFO`結構欄位不為空,則它包含搜索的路徑列表和該搜索的結果。 清單的格式採用路徑,後跟省略號 ("..."),後跟結果。 如果有多個路徑結果對,則每對由一對"\r\n"(回車/換行)對分隔。 模式如下所示:
+如果 `bstrVerboseSearchInfo` 結構的欄位 `MODULE_SYMBOL_SEARCH_INFO` 不是空的，則它會包含搜尋的路徑清單以及該搜尋的結果。 此清單的格式為路徑，後面接著省略號 ( "..." ) ，後面接著結果。 如果有一個以上的路徑結果配對，則每一組都會以 "\r\n" (換行字元) 組分隔。 模式看起來像這樣：
 
-\<路徑>...\<結果>\r\n\<路徑>...\<結果>\r\n\<路徑>...\<結果>
+\<path>...\<result>\r\n \<path> \<result> .。。\r\n \<path> .。。\<result>
 
-請注意,最後一個條目沒有 \r\n 序列。
+請注意，最後一個專案沒有 \r\n 順序。
 
 ## <a name="example"></a>範例
-在此示例中,此方法返回三個具有三個不同搜尋結果的路徑。 每行都用回車/換行對終止。 範例輸出將搜尋結果列印為單個字串。
+在此範例中，這個方法會傳回三個不同搜尋結果的路徑。 每一行都會以換行鍵/換行字元組來終止。 範例輸出只會將搜尋結果列印成單一字串。
 
 > [!NOTE]
-> 狀態結果是"..."到行的末尾。
+> 狀態結果是緊接在「...」之後的所有專案最高到行尾。
 
 ```cpp
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
@@ -84,9 +84,9 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }
 ```
 
-**c:\符號\使用者32.pdb...找不到檔。**
- **c:\winnt\符號\user32.pdb...版本不匹配。**
-[符號 **]符號\user32.dll_0a8sd0ad8ad_user32.pdb... \\已載入符號。**
+**c:\symbols\user32.pdb.。。找不到檔案。** 
+**c:\winnt\symbols\user32.pdb.。。版本不相符。** 
+** \\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb.。。已載入符號。**
 
 ## <a name="see-also"></a>另請參閱
 

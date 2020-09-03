@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ccd556a5929e56597de678ad4ad8ea6c101b7c7f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535885"
 ---
 # <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131:安全性關鍵類型可能未參與類型等價
@@ -29,10 +29,10 @@ ms.locfileid: "85535885"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 類型會參與類型等價，而類型本身或是類型的成員或欄位會以 <xref:System.Security.SecurityCriticalAttribute> 屬性標記。
+ 類型會參與類型等價，而類型本身或型別的成員或欄位會以 <xref:System.Security.SecurityCriticalAttribute> 屬性標記。
 
 ## <a name="rule-description"></a>規則描述
- 此規則會引發任何關鍵的類型或包含參與類型等價之關鍵方法或欄位的類型。 當 CLR 偵測到這種類型時，無法 <xref:System.TypeLoadException> 在執行時間將它載入。 通常，只有在使用者手動實作類型等價，而不是依賴 tlbimp 和編譯器進行類型等價時，就會引發這項規則。
+ 此規則會引發任何關鍵的類型或包含參與類型等價之關鍵方法或欄位的類型。 當 CLR 偵測到這類型別時，就無法 <xref:System.TypeLoadException> 在執行時間載入它。 通常，只有在使用者手動實作類型等價，而不是依賴 tlbimp 和編譯器進行類型等價時，就會引發這項規則。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請移除 SecurityCritical 屬性。

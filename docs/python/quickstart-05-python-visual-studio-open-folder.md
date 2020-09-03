@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: a7bf174191a6a2fb013aa3d25880b01bc2e7f070
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801668"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>快速入門：開啟並執行資料夾中的 Python 程式碼

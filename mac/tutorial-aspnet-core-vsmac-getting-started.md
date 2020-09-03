@@ -8,10 +8,10 @@ ms.date: 10/18/2019
 ms.assetid: 591b21ee-8c3f-446b-9505-7d41bfc86701
 ms.topic: tutorial
 ms.openlocfilehash: 1dc07f0ebde1fcf28dd5c379d9360730e357c1ca
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801629"
 ---
 # <a name="tutorial-getting-started-with-aspnet-core-in-visual-studio-for-mac"></a>教學課程： Visual Studio for Mac 中的 ASP.NET Core 使用者入門

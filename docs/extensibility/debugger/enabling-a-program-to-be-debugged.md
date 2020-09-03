@@ -1,5 +1,5 @@
 ---
-title: 使程式被除錯 |微軟文件
+title: 啟用要進行調試的程式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,25 +11,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 17c6218cd0b25c0cf0134351fd5efd7490b6a1f3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738888"
 ---
-# <a name="enable-a-program-to-be-debugged"></a>開啟對程式進行除錯
-在除錯引擎 (DE) 可以除錯程式之前,必須首先啟動 DE 或將其附加到現有程式。
+# <a name="enable-a-program-to-be-debugged"></a>啟用要進行調試的程式
+在您的 debug engine (DE) 可以對程式進行偵錯工具之前，您必須先將它取消或附加至現有的程式。
 
 ## <a name="in-this-section"></a>本節內容
- [取得連接埠](../../extensibility/debugger/getting-a-port.md)討論如何獲取埠作為啟用程式調試的第一步。
+ [取得埠](../../extensibility/debugger/getting-a-port.md) 討論如何取得埠做為啟用程式進行偵錯工具的第一個步驟。
 
- [註冊程式](../../extensibility/debugger/registering-the-program.md)解釋啟用程序調試的下一步:將其註冊到埠。 註冊后,可以通過附加或及時 (JIT) 調試過程對程序進行調試。
+ [註冊程式](../../extensibility/debugger/registering-the-program.md) 說明啟用程式以進行調試的下一個步驟：向埠註冊程式。 註冊之後，就可以透過附加或即時 (JIT) 偵錯工具來偵錯工具。
 
- [附加到程式](../../extensibility/debugger/attaching-to-the-program.md)解釋下一步:將調試器附加到程式。
+ [附加至程式](../../extensibility/debugger/attaching-to-the-program.md) 說明下一步：將偵錯工具附加至程式。
 
- [建基於啟動的附加](../../extensibility/debugger/launch-based-attachment.md)描述程式基於啟動的附件,SDM 在啟動時自動進行該附件。
+ [啟動型附加](../../extensibility/debugger/launch-based-attachment.md) 描述以啟動為基礎的附加程式，此程式會在 SDM 啟動時自動啟動。
 
- [傳送所需事件](../../extensibility/debugger/sending-the-required-events.md)在創建除錯引擎 (DE) 並將其附加到程式時,執行所需的事件。
+ [傳送所需的事件](../../extensibility/debugger/sending-the-required-events.md) 在建立偵錯工具引擎時，逐步引導您完成所需的事件 (取消) ，並將它附加至程式。
 
 ## <a name="related-sections"></a>相關章節
- [建立自訂除錯引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)定義調試引擎 (DE),並描述通過 DE 介面實現的服務,以及它們如何導致調試器在不同操作模式之間轉換。
+ [建立自訂的調試引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md) 定義 debug engine (DE) ，並說明透過 DE 介面所執行的服務，以及它們如何讓偵錯工具在不同的操作模式之間轉換。

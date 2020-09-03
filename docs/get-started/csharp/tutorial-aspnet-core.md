@@ -1,5 +1,5 @@
 ---
-title: 教程：開始使用 C# 和 ASP.NET 核心
+title: '教學課程：開始使用 c # 和 ASP.NET Core'
 titleSuffix: ''
 description: 了解如何在 Visual Studio 中使用 C# 逐步建立 ASP.NET Core Web 應用程式。
 ms.custom: seodec18, get-started
@@ -17,10 +17,10 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: ef41e28d994f27f66f616623d1b2c9798b65ede4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77580057"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教學課程：Visual Studio 中的 C# 和 ASP.NET Core 使用者入門
@@ -45,7 +45,7 @@ ms.locfileid: "77580057"
 
 ### <a name="update-visual-studio"></a>更新 Visual Studio 2017
 
-如果您已經安裝 Visual Studio，請確定您執行的是最新版本。 有關如何更新安裝的詳細資訊，請參閱將 Visual Studio[更新到最新發佈](../../install/update-visual-studio.md)頁面。
+如果您已經安裝 Visual Studio，請確定您執行的是最新版本。 如需有關如何更新安裝的詳細資訊，請參閱 [最新版本頁面的更新 Visual Studio](../../install/update-visual-studio.md) 。
 
 ### <a name="choose-your-theme-optional"></a>選擇您的佈景主題 (選擇性)
 
@@ -83,7 +83,7 @@ ms.locfileid: "77580057"
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>選項 2：使用 [工具] 功能表列
 
-1. 取消 [新增專案]**** 對話方塊。 然後，從頂部功能表列中，選擇 **"工具** > **獲取工具和功能**"。
+1. 取消 [新增專案]**** 對話方塊。 然後，從頂端功能表列中選擇 [**工具**  >  **取得工具和功能**]。
 
 1. Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發]**** 工作負載，然後選擇 [修改]****。
 
@@ -93,18 +93,18 @@ ms.locfileid: "77580057"
 
 1. 在 [新增 ASP.NET Core Web 應用程式]**** 對話方塊中，選擇 [Web 應用程式]**** 專案範本。
 
-1. 確認 [ASP.NET Core 2.1]**** 出現在頂端的下拉式功能表中。 然後，選擇 **"確定**"。
+1. 確認 [ASP.NET Core 2.1]**** 出現在頂端的下拉式功能表中。 然後選擇 **[確定]**。
 
    ![新增 ASP.NET Core Web 應用程式對話方塊](media/new-project-csharp-aspnet-razor-web-app.png)
 
    > [!NOTE]
-   > 如果您在頂端的下拉式功能表中沒有看到 **ASP.NET Core 2.1**，請確定您執行的是最新版 Visual Studio。 有關如何更新安裝的詳細資訊，請參閱將 Visual Studio[更新到最新發佈](../../install/update-visual-studio.md)頁面。
+   > 如果您在頂端的下拉式功能表中沒有看到 **ASP.NET Core 2.1**，請確定您執行的是最新版 Visual Studio。 如需有關如何更新安裝的詳細資訊，請參閱 [最新版本頁面的更新 Visual Studio](../../install/update-visual-studio.md) 。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. 在啟動視窗中，選擇 **"創建新專案**"。
+1. 在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
    ![檢視 [建立新專案] 視窗](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
@@ -125,11 +125,11 @@ ms.locfileid: "77580057"
    >
    > 接下來，選擇 Visual Studio 安裝程式中的 [修改]**** 按鈕。 如果系統出現提示，請儲存您的工作。 接下來，選擇 [繼續]**** 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
 
-1. 在 [設定新專案]**** 視窗中，於 [專案名稱]**** 方塊中鍵入或輸入 *MyCoreApp*。 然後，選擇 **"創建**"。
+1. 在 [設定新專案]**** 視窗中，於 [專案名稱]**** 方塊中鍵入或輸入 *MyCoreApp*。 然後，選擇 [ **建立**]。
 
    ![在 [設定新專案] 視窗中，將專案命名為 'MyCoreApp'](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
 
-1. 在 **"創建新ASP.NET核心 Web 應用程式**"視窗中，驗證**ASP.NET核心 3.0**是否顯示在頂部下拉式功能表中。 然後，請選擇包含範例 Razor Pages 的 [Web 應用程式]****。 接著，選擇 [建立]****。
+1. 在 [ **建立新的 ASP.NET Core Web 應用程式** ] 視窗中，確認 **ASP.NET Core 3.0** 出現在頂端的下拉式功能表中。 然後，請選擇包含範例 Razor Pages 的 [Web 應用程式]****。 接著，選擇 [建立]****。
 
    ![[建立新的 ASP.NET Core Web 應用程式] 視窗](./media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
 
@@ -170,7 +170,7 @@ ms.locfileid: "77580057"
 
     您可以直接在想要的路徑中放置靜態網站內容，像是 CSS、影像及 JavaScript 程式庫。
 
- 1. 該專案還包含在運行時管理 Web 應用的設定檔。 預設應用程式[設定](/aspnet/core/fundamentals/configuration)是儲存在 *appsettings.json* 中。 不過，您可以使用 *appsettings.Development.json*來覆寫這些設定。 展開 **appsettings.json** 檔案以檢視 **appsettings.Development.json** 檔案。
+ 1. 專案也包含在運行時間管理 web 應用程式的設定檔。 預設應用程式[設定](/aspnet/core/fundamentals/configuration)是儲存在 *appsettings.json* 中。 不過，您可以使用 *appsettings.Development.json*來覆寫這些設定。 展開 **appsettings.json** 檔案以檢視 **appsettings.Development.json** 檔案。
 
      ![Visual Studio 中方案總管的組態檔](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
@@ -233,13 +233,13 @@ ms.locfileid: "77580057"
 
    ![新增 "using System;" 指示詞](media/csharp-aspnet-razor-add-usings.png)
 
-1. 按**Ctrl**+**S**保存更改，然後按**F5**在 Web 瀏覽器中打開專案。
+1. 按**Ctrl** + **S**儲存您的變更，然後按**F5**以在網頁瀏覽器中開啟您的專案。
 
 1. 在網站頂端，選擇 [關於]**** 來檢視您所做的變更。
 
    ![檢視包含您所做變更的 [關於] 頁面](media/csharp-aspnet-razor-browser-page-about-changed.png)
 
-1. 關閉 Web 瀏覽器，按**Shift**+**F5**停止偵錯模式，然後關閉視覺化工作室。
+1. 關閉網頁瀏覽器，按**Shift** + **F5**以停止 Debug 模式，然後關閉 Visual Studio。
 
 ::: moniker-end
 
@@ -251,19 +251,19 @@ ms.locfileid: "77580057"
 
     ![Visual Studio 中的 ASP.NET 方案總管顯示名為 MyCoreApp 的 Razor Pages 方案](media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
 
- 1. 展開**頁面**資料夾。
+ 1. 展開 [ **頁面** ] 資料夾。
 
-     ![解決方案資源管理器中的頁面資料夾](media/vs-2019/csharp-aspnet-solution-explorer-pages.png)
+     ![方案總管中的 Pages 資料夾](media/vs-2019/csharp-aspnet-solution-explorer-pages.png)
 
- 1. 在代碼編輯器中查看**Index.cshtml**檔。
+ 1. 在程式碼編輯器中，查看 **索引的 cshtml** 檔案。
 
-     ![在視覺化工作室代碼編輯器中查看 Index.cshtml 檔](media/vs-2019/csharp-aspnet-index-cshtml.png)
+     ![在 Visual Studio 程式碼編輯器中，查看索引 cshtml 檔](media/vs-2019/csharp-aspnet-index-cshtml.png)
 
- 1. 每個 .cshtml 檔都有一個關聯的代碼檔。 要在編輯器中打開代碼檔，請展開解決方案資源管理器中的**Index.cshtml**節點，然後選擇**Index.cshtml.cs**檔。
+ 1. 每個 cshtml 檔案都有相關聯的程式碼檔案。 若要在編輯器中開啟程式碼檔案，請在方案總管中展開 [ **Index** ] 節點，然後選擇 **Index.cshtml.cs** 檔案。
 
-     ![在視覺化工作室代碼編輯器中選擇Index.cshtml.cs檔](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
+     ![選擇 Visual Studio 程式碼編輯器中的 Index.cshtml.cs 檔案](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
 
- 1. 在代碼編輯器中查看**Index.cshtml.cs**檔。
+ 1. 在程式碼編輯器中，查看 **Index.cshtml.cs** 檔。
 
      ![在 Visual Studio 程式碼編輯器中檢視 About.cshtml 檔案](media/vs-2019/csharp-aspnet-index-cshtml-editing.png)
 
@@ -273,7 +273,7 @@ ms.locfileid: "77580057"
 
     您可以直接在想要的路徑中放置靜態網站內容，像是 CSS、影像及 JavaScript 程式庫。
 
- 1. 該專案還包含在運行時管理 Web 應用的設定檔。 預設應用程式[設定](/aspnet/core/fundamentals/configuration)是儲存在 *appsettings.json* 中。 不過，您可以使用 *appsettings.Development.json*來覆寫這些設定。 展開 **appsettings.json** 檔案以檢視 **appsettings.Development.json** 檔案。
+ 1. 專案也包含在運行時間管理 web 應用程式的設定檔。 預設應用程式[設定](/aspnet/core/fundamentals/configuration)是儲存在 *appsettings.json* 中。 不過，您可以使用 *appsettings.Development.json*來覆寫這些設定。 展開 **appsettings.json** 檔案以檢視 **appsettings.Development.json** 檔案。
 
      ![Visual Studio 中方案總管的組態檔](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
@@ -288,31 +288,31 @@ ms.locfileid: "77580057"
      >
      > 您也可能會收到訊息，詢問您是否要接受 IIS SSL Express 憑證。 若要在網頁瀏覽器中檢視程式碼，請選擇 [是]****，如果您收到後續的安全性警告訊息，請再次選擇 [是]****。
 
-1. Visual Studio 會啟動瀏覽器視窗。 然後，您應該在功能表列中查看**主頁**和**隱私**頁面。
+1. Visual Studio 會啟動瀏覽器視窗。 然後，您應該會在功能表列中看到 [ **首頁**] 和 [ **隱私權** ] 頁面。
 
-1. 從功能表列中選擇 **"隱私**"。
+1. 從功能表列選擇 [ **隱私權** ]。
 
-   瀏覽器中**的隱私**頁面呈現在*隱私.cshtml*檔中設置的文本。
+   瀏覽器中的 [ **隱私權** ] 頁面會呈現在 *隱私權* 檔中設定的文字。
 
-   ![查看隱私頁面上的文本](media/vs-2019/csharp-aspnet-browser-page-privacy.png)
+   ![查看隱私權頁面上的文字](media/vs-2019/csharp-aspnet-browser-page-privacy.png)
 
 1. 返回 Visual Studio，然後按 **Shift+F5**，停止偵錯模式。 這也會關閉瀏覽器視窗中的專案。
 
-1. 在視覺化工作室中，打開**隱私.cshtml**進行編輯。 然後，刪除單詞_使用此頁面詳細說明您的網站的隱私政策_，並在其位置，添加此_頁正在建設中的@ViewData單詞 ["時間戳記"]_。
+1. 在 Visual Studio 中，開啟要編輯的 [**隱私權]。** 然後，刪除 _使用此頁面的單字，以詳細說明您網站的隱私權原則_ ，並在其位置新增 _此頁面在 @ViewData [時間戳記] 下的結構下_的文字。
 
-    ![更改隱私.cshtml 檔中的文本](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
+    ![變更隱私權. cshtml 檔案中的文字](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
 
-1. 現在，讓我們進行代碼更改。 選擇**Privacy.cshtml.cs。** 然後，使用下列快速鍵清除檔案頂端的 `using` 指示詞：
+1. 現在，讓我們進行程式碼變更。 選擇 [ **Privacy.cshtml.cs**]。 然後，使用下列快速鍵清除檔案頂端的 `using` 指示詞：
 
-   選擇任何呈現灰色的 `using` 指示詞，而且[快速動作燈泡](../../ide/quick-actions.md)會顯示在插入點正下方或左邊界中。 選擇燈泡，然後懸停在 **"刪除不必要的使用**"上。
+   選擇任何呈現灰色的 `using` 指示詞，而且[快速動作燈泡](../../ide/quick-actions.md)會顯示在插入點正下方或左邊界中。 選擇燈泡，然後將滑鼠停留在 **移除不必要的 using**。
 
-   ![刪除Privacy.cshtml.cs檔中不必要的用數](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
+   ![移除 Privacy.cshtml.cs 檔案中不必要的 Using](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
 
-   現在選擇 **"預覽更改**"以查看將更改的內容。
+   現在選擇 [ **預覽變更** ] 以查看將會變更的內容。
 
    ![預覽變更](media/vs-2019/csharp-aspnet-preview-changes.png)
 
-   選擇 [套用]****。 Visual Studio 會將不必要的 `using` 指示詞從檔案中刪除。
+   選擇 [套用]  。 Visual Studio 會將不必要的 `using` 指示詞從檔案中刪除。
 
 1. 接下來，在 `OnGet()` 方法中，將主體變更為下列程式碼：
 
@@ -324,7 +324,7 @@ ms.locfileid: "77580057"
      }
     ```
 
-1. 請注意，兩個波浪底線顯示在**DateTime**下。 出現波浪底線是因為這些類型的不在作用域中。
+1. 請注意， **DateTime**底下會出現兩個波浪底線。 因為這些類型不在範圍內，所以會顯示波浪底線。
 
    ![OnGet 方法中以波浪底線標示的錯誤](media/vs-2019/csharp-aspnet-add-new-onget-method.png)
 
@@ -336,13 +336,13 @@ ms.locfileid: "77580057"
 
    ![新增 "using System;" 指示詞](media/vs-2019/csharp-aspnet-add-usings.png)
 
-1. 按**F5**在 Web 瀏覽器中打開專案。
+1. 按 **F5** 以在網頁瀏覽器中開啟您的專案。
 
-1. 在網站頂部，選擇 **"隱私"** 以查看您的更改。
+1. 在網站頂端，選擇 [ **隱私權** ] 以查看您的變更。
 
-   ![查看包含您所做的更改的更新隱私頁面](media/vs-2019/csharp-aspnet-browser-page-privacy-changed.png)
+   ![查看已更新的隱私權頁面，其中包含您所做的變更](media/vs-2019/csharp-aspnet-browser-page-privacy-changed.png)
 
-1. 關閉 Web 瀏覽器，按**Shift**+**F5**停止偵錯模式，然後關閉視覺化工作室。
+1. 關閉網頁瀏覽器，按**Shift** + **F5**以停止 Debug 模式，然後關閉 Visual Studio。
 ::: moniker-end
 
 ## <a name="quick-answers-faq"></a>常見問題集快問快答

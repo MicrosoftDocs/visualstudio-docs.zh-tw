@@ -17,10 +17,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 9d1412d6e015ec7d05e700370c7a379ada9a57b0
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419090"
 ---
 # <a name="uninstall-visual-studio"></a>解除安裝 Visual Studio
@@ -31,11 +31,11 @@ Visual Studio 是我們提供給開發人員的整合式生產力工具套件，
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[解除安裝 Visual Studio for Mac](/visualstudio/mac/uninstall)。
 
 > [!TIP]
-> 如果您的 Visual Studio 實例遇到問題，請嘗試**修復**工具。 如需詳細資訊，請參閱[Repair Visual Studio](../install/repair-visual-studio.md)。 
+> 如果您的 Visual Studio 實例遇到問題，請嘗試 **修復** 工具。 如需詳細資訊，請參閱 [修復 Visual Studio](../install/repair-visual-studio.md)。 
 >
-> 如果您想要變更部分 Visual Studio 檔案的位置，則不需要卸載目前的實例就可以這麼做。 如需詳細資訊，請參閱[在 Visual Studio 中選取安裝位置](../install/change-installation-locations.md)。
+> 如果您想要變更某些 Visual Studio 檔案的位置，則可以這麼做，而不需要卸載目前的實例。 如需詳細資訊，請參閱 [Visual Studio 中的選取安裝位置](../install/change-installation-locations.md)。
 >
-> 如需一般的疑難排解秘訣，請參閱針對[Visual Studio 安裝和升級問題進行疑難排解](../install/troubleshooting-installation-issues.md)。
+> 如需一般疑難排解秘訣，請參閱 [疑難排解 Visual Studio 安裝和升級問題](../install/troubleshooting-installation-issues.md)。
 
 ::: moniker range="vs-2017"
 
@@ -107,7 +107,7 @@ Visual Studio 是我們提供給開發人員的整合式生產力工具套件，
 
 ## <a name="remove-all-files"></a>移除所有檔案
 
-如果您遇到嚴重錯誤，而且無法使用先前的指示來卸載 Visual Studio，就會有「最後手段」選項，您可以考慮改為使用。 如需有關如何完全移除所有 Visual Studio 安裝檔案和產品資訊的詳細資訊，請參閱[移除 Visual Studio](remove-visual-studio.md)頁面。
+如果您遇到重大錯誤，且無法使用先前的指示卸載 Visual Studio，則可以改為考慮使用「最後手段」選項。 如需有關如何完全移除所有 Visual Studio 安裝檔案和產品資訊的詳細資訊，請參閱 [移除 Visual Studio](remove-visual-studio.md) 頁面。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
