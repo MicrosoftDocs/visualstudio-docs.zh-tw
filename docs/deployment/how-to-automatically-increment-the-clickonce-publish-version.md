@@ -1,5 +1,5 @@
 ---
-title: 如何自動遞增 ClickOnce 發行版本 |Microsoft Docs
+title: 如何-自動遞增 ClickOnce 發行版本 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,28 +18,28 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 710f2d045af4da92116334e64efa5ce528563d1d
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382597"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>如何：自動累加 ClickOnce 的發佈版本
 
-發行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，變更 `Publish Version` 屬性會導致應用程式發佈為更新。 根據預設，Visual Studio 會在 `Revision` `Publish Version` 您每次發行應用程式時，自動遞增的數目。
+發行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，變更 `Publish Version` 屬性會導致應用程式發佈為更新。 依預設，Visual Studio 會在 `Revision` `Publish Version` 每次發行應用程式時自動遞增的數目。
 
 您可以在 [**專案設計**工具] 的 [**發行**] 頁面上停用此行為。
 
 > [!NOTE]
 > 您看到的對話方塊與功能表命令，可能會因您所使用的設定或版本，而與說明中所述不同。 若要變更您的設定，請在 [工具]**** 功能表上選擇 [匯入和匯出設定]****。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
 
-## <a name="to-disable-automatically-incrementing-the-publish-version"></a>若要停用自動遞增發佈版本
+## <a name="to-disable-automatically-incrementing-the-publish-version"></a>若要停用自動遞增發行版本
 
 1. 在方案總管 **** 中選取專案之後，按一下 [專案] **** 功能表中 [屬性] ****。
 
 2. 按一下 [Publish (發行)] **** 索引標籤。
 
-3. 在 [**發行版本**] 區段中，清除 [**每次發行時自動遞增修訂**] 核取方塊。
+3. 在 [ **發行版本** ] 區段中，清除 [ **自動遞增修訂與每個版本** ] 核取方塊。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 779d3ec1ed520d5d48043f90e7cb6272553012a6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535040"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405:COM 可見類型的基底類型應該是 COM 可見
@@ -33,13 +33,13 @@ ms.locfileid: "85535040"
 |中斷變更|DependsOnFix|
 
 ## <a name="cause"></a>原因
- 元件物件模型（COM）可見類型衍生自不是 COM 可見的類型。
+ 元件物件模型 (COM) 可見類型會衍生自不是 COM 可見的型別。
 
 ## <a name="rule-description"></a>規則描述
- 當 COM 可見類型在新版本中加入成員時，必須遵守嚴格的方針，以避免中斷系結至目前版本的 COM 用戶端。 COM 看不到的類型假設在加入新成員時，不需要遵循這些 COM 版本控制規則。 不過，如果 COM 可見類型衍生自 COM 不可見類型，並公開或的類別介面 <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> <xref:System.Runtime.InteropServices.ClassInterfaceType> （預設值），則基底類型的所有公用成員（除非特別標示為 com 隱藏項，也就是多餘的）會公開至 com。 如果基底類型在後續版本中加入新成員，系結至衍生類型之類別介面的任何 COM 用戶端可能會中斷。 COM 可見類型應該只衍生自 COM 可見類型，以減少中斷 COM 用戶端的機會。
+ 當 COM 可見的型別在新版本中加入成員時，必須遵守嚴格的指導方針，以避免中斷系結至目前版本的 COM 用戶端。 COM 看不到的類型會假設它在新增成員時不需要遵循這些 COM 版本控制規則。 但是，如果 COM 可見的型別衍生自 COM 隱藏型別，並公開 <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> <xref:System.Runtime.InteropServices.ClassInterfaceType> (預設) 的類別介面，則基底類型的所有公用成員都會 (，除非它們特別標示為 com 隱藏，否則會向 com 公開) 。 如果基底類型在後續的版本中加入新成員，任何系結至衍生類型之類別介面的 COM 用戶端都可能會中斷。 COM 可見類型應該只衍生自 COM 可見類型，以減少中斷 COM 用戶端的機會。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請將基底類型設為可見，或衍生類型 COM 不可見。
+ 若要修正此規則的違規情形，請將基底類型設為 COM 可見或衍生類型 COM 不可見。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。
@@ -51,4 +51,4 @@ ms.locfileid: "85535040"
  [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComBaseTypes/vb/FxCop.Interoperability.ComBaseTypes.vb#1)]
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName>[類別介面簡介](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024)[與非受控程式碼互](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)操作
+ <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName>[類別介面](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024)[與非受控碼的互](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)操作性簡介

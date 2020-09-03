@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：以程式設計方式捕捉圖形資訊 |Microsoft Docs
+title: 逐步解說：以程式設計方式捕獲圖形資訊 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7533c205b95b016c43bd2eef614b4c2825596e74
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85835650"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>逐步解說：以程式設計方式擷取圖形資訊
@@ -23,7 +23,7 @@ ms.locfileid: "85835650"
 
 - 應用程式未呈現時 (例如使用 DirectCompute 執行計算時)，會以程式設計方式開始擷取。
 
-- `CaptureCurrentFrame`當轉譯問題很容易預期並在手動測試中捕捉時呼叫，但可以使用應用程式在執行時間的狀態相關資訊，以程式設計方式預測。
+- `CaptureCurrentFrame`當轉譯問題很難預期和捕捉手動測試，但可以使用執行時間的應用程式狀態相關資訊，以程式設計方式進行預測時，請呼叫。
 
 ## <a name="programmatic-capture-in-windows-10"></a><a name="CaptureDX11_2"></a> Windows 10 中的程式設計擷取
 這部分的逐步解說示範如何在 Windows 10 上使用 DirectX 11.2 API 的應用程式中進行程式設計擷取 (使用穩固擷取方法)。
@@ -37,7 +37,7 @@ ms.locfileid: "85835650"
 - 擷取圖形資訊
 
 > [!NOTE]
-> 舊版的程式設計捕獲依賴 Visual Studio 遠端工具來提供捕捉功能。
+> 先前的程式設計捕獲程式依賴 Visual Studio 遠端工具來提供捕捉功能。
 
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>準備應用程式以使用程式設計擷取
 若要在應用程式中使用程式設計擷取，它必須包括必要的標頭。 這些標頭是 Windows 10 SDK 的一部分。
@@ -54,7 +54,7 @@ ms.locfileid: "85835650"
     ```
 
     > [!IMPORTANT]
-    > 請勿包括標頭檔 vsgcapture.h (其支援 Windows 8.0 (含) 以前版本上的程式設計擷取)，以在 Windows 10 應用程式中執行程式設計擷取。 此標頭與 DirectX 11.2 不相容。 如果在包含 d3d11_2 .h 標頭之後包含此檔案，則編譯器會發出警告。 如果 d3d11_2 .h 之前包含 vsgcapture.h，應用程式將不會啟動。
+    > 請勿包括標頭檔 vsgcapture.h (其支援 Windows 8.0 (含) 以前版本上的程式設計擷取)，以在 Windows 10 應用程式中執行程式設計擷取。 此標頭與 DirectX 11.2 不相容。 如果包含這個檔案，在包含 d3d11_2 .h 標頭之後，編譯器會發出警告。 如果 vsgcapture.h 包含在 d3d11_2 .h 之前，應用程式將不會啟動。
 
     > [!NOTE]
     > 如果在電腦上安裝 2010 年 6 月 DirectX SDK，而且專案的 Include 路徑包含 `%DXSDK_DIR%includex86`，請將它移至 Include 路徑結尾。 請對程式庫路徑執行相同的處理。
@@ -63,7 +63,7 @@ ms.locfileid: "85835650"
 您需要先取得 DXGI 偵錯介面，才能從 DirectX 11.2 擷取圖形資訊。
 
 > [!IMPORTANT]
-> 使用程式設計的 capture 時，您仍然必須在圖形診斷下執行您的應用程式（中的 Alt + F5 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ），或在[命令列捕獲工具](command-line-capture-tool.md)底下執行。
+> 使用程式設計捕捉時，您仍然必須在 [圖形診斷] 下執行您的應用程式 (Alt + F5 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) 或在 [命令列捕捉工具](command-line-capture-tool.md)下。
 
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>取得 IDXGraphicsAnalysis 介面
 
@@ -74,7 +74,7 @@ ms.locfileid: "85835650"
   HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));
   ```
 
-  請務必檢查 DXGIGetDebugInterface1 所 `HRESULT` 傳回的[DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) ，以確保您在使用有效的介面之前，先加以取得：
+  請務必檢查 `HRESULT` [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) 傳回的，以確保您在使用之前取得有效的介面：
 
   ```cpp
   if (FAILED(getAnalysis))
@@ -107,12 +107,12 @@ ms.locfileid: "85835650"
     ...
     ```
 
-- 呼叫之後 `EndCapture` ，釋放繪圖物件。
+- 在呼叫之後 `EndCapture` ，放開繪圖物件。
 
 ## <a name="next-steps"></a>後續步驟
 此逐步解說示範如何透過程式設計方式擷取圖形資訊。 下一步是考慮此選項：
 
-- 了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱[總覽](overview-of-visual-studio-graphics-diagnostics.md)。
+- 了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱 [總覽](overview-of-visual-studio-graphics-diagnostics.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [逐步解說：擷取圖形資訊](walkthrough-capturing-graphics-information.md)

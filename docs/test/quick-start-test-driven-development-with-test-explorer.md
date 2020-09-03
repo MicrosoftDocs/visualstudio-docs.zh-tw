@@ -8,17 +8,17 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: a264975014fea88126bbca0589fe037e629dae10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75566276"
 ---
-# <a name="walkthrough-test-driven-development-using-test-explorer"></a>演練：使用測試資源管理器進行測試驅動開發
+# <a name="walkthrough-test-driven-development-using-test-explorer"></a>逐步解說：使用 Test Explorer 進行測試導向開發
 
 建立單元測試，以協助讓您的程式碼在經歷漸進的程式碼變更之後仍然能夠正確運作。 有數種架構都可以用來撰寫單元測試，包含由協力廠商所開發的架構。 某些測試架構是專門讓您使用不同的語言或平台來進行測試。 [測試總管] 提供單一介面，讓您使用任一種架構來進行單元測試。 如需 [測試總管]**** 的詳細資訊，請參閱[使用測試總管執行單元測試](run-unit-tests-with-test-explorer.md)和[測試總管常見問題集](test-explorer-faq.md)。
 
-本逐步解說示範如何使用 Microsoft 測試架構 (MSTest) 以 C# 來開發受測方法。 您可以輕鬆地將它改寫成其他語言或其他測試架構 (例如 NUnit)。 有關詳細資訊，請參閱[安裝協力廠商單元測試框架](install-third-party-unit-test-frameworks.md)。
+本逐步解說示範如何使用 Microsoft 測試架構 (MSTest) 以 C# 來開發受測方法。 您可以輕鬆地將它改寫成其他語言或其他測試架構 (例如 NUnit)。 如需詳細資訊，請參閱 [安裝協力廠商單元測試](install-third-party-unit-test-frameworks.md)架構。
 
 ## <a name="create-a-test-and-generate-code"></a>建立測試並產生程式碼
 
@@ -48,7 +48,7 @@ ms.locfileid: "75566276"
 
 4. 從測試程式碼產生類型。
 
-   1. 將游標放在`Rooter`上，然後從燈泡功能表中選擇 **"組建類型"生成** > **新類型**。
+   1. 將游標放在上 `Rooter` ，然後從燈泡功能表中選擇 [**產生類型 ' Rooter '**  >  **產生新的類型**]。
 
       ![產生新的類型快速動作](media/test-driven-development-generate-new-type.png)
 

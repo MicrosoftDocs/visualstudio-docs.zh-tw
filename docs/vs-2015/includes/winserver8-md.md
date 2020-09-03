@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 159bb0322c76672065a0b50b0eb496853e0aca0a
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68157936"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89325650"
 ---
 Windows Server 2012

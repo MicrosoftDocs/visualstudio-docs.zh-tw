@@ -1,5 +1,5 @@
 ---
-title: IDebugObject |微軟文件
+title: IDebugObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6801176964a47646f03091131e1be89cf63c97f8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726308"
 ---
 # <a name="idebugobject"></a>IDebugObject
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關如何執行 CLR 運算式評估工具的詳細資訊，請參閱 [CLR 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 此介面表示活頁夾為封裝符號和表達式的值而創建的物件。
+ 這個介面代表系結器建立的物件，用來封裝符號和運算式的值。
 
 ## <a name="syntax"></a>語法
 
@@ -31,39 +31,39 @@ ms.locfileid: "80726308"
 IDebugObject : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 表達式賦值器實現此介面以表示物件。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ 運算式評估工具會執行此介面來代表物件。
 
-## <a name="notes-for-callers"></a>通話備註
- 此介面是表達式賦值器在解析表達式中使用的所有物件的基類。 它通過調用[Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)方法返回。 [查詢介面](/cpp/atl/queryinterface)從此介面獲取更專業的介面。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ 此介面是運算式評估工具在剖析的運算式中使用之所有物件的基類。 它是由 [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md) 方法的呼叫所傳回。 [QueryInterface](/cpp/atl/queryinterface) 從這個介面取得更特製化的介面。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 下表顯示的方法`IDebugObject`。
+ 下表顯示的方法 `IDebugObject` 。
 
 |方法|描述|
 |------------|-----------------|
-|[GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md)|獲取物件的大小。|
-|[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)|獲取物件的值作為連續位元組系列。|
-|[SetValue](../../../extensibility/debugger/reference/idebugobject-setvalue.md)|設置連續位元組序列中物件的值。|
-|[SetReferenceValue](../../../extensibility/debugger/reference/idebugobject-setreferencevalue.md)|設定此物件的引用值。|
-|[GetMemoryContext](../../../extensibility/debugger/reference/idebugobject-getmemorycontext.md)|獲取表示物件值位址的記憶體上下文。|
-|[GetManagedDebugObject](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md)|在除錯引擎的位址空間中創建託管物件的副本。|
-|[IsNullReference](../../../extensibility/debugger/reference/idebugobject-isnullreference.md)|測試此物件是否為空引用。|
-|[IsEqual](../../../extensibility/debugger/reference/idebugobject-isequal.md)|將物件與此對象進行比較。|
-|[只閱讀](../../../extensibility/debugger/reference/idebugobject-isreadonly.md)|確定此物件是否為唯讀物件。|
-|[IsProxy](../../../extensibility/debugger/reference/idebugobject-isproxy.md)|確定物件是否為透明代理。|
+|[GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md)|取得物件的大小。|
+|[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)|以連續的位元組序列取得物件的值。|
+|[SetValue](../../../extensibility/debugger/reference/idebugobject-setvalue.md)|從連續的位元組序列設定物件的值。|
+|[SetReferenceValue](../../../extensibility/debugger/reference/idebugobject-setreferencevalue.md)|設定這個物件的參考值。|
+|[GetMemoryContext](../../../extensibility/debugger/reference/idebugobject-getmemorycontext.md)|取得表示物件值之位址的記憶體內容。|
+|[GetManagedDebugObject](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md)|在 debug 引擎的位址空間中建立 managed 物件的複本。|
+|[IsNullReference](../../../extensibility/debugger/reference/idebugobject-isnullreference.md)|測試這個物件是否為 null 參考。|
+|[IsEqual](../../../extensibility/debugger/reference/idebugobject-isequal.md)|比較物件與此物件。|
+|[IsReadOnly](../../../extensibility/debugger/reference/idebugobject-isreadonly.md)|判斷此物件是否為唯讀。|
+|[IsProxy](../../../extensibility/debugger/reference/idebugobject-isproxy.md)|判斷物件是否為透明的 proxy。|
 
 ## <a name="remarks"></a>備註
- 表達式賦值器使用此介面作為基類來表示解析樹中的物件。
+ 運算式評估工具會使用這個介面作為基類，以表示剖析樹狀結構中的物件。
 
 ## <a name="requirements"></a>需求
- 標題: ee.h
+ 標頭： ee. h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)
-- [綁定](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+- [繫結](../../../extensibility/debugger/reference/idebugbinder-bind.md)

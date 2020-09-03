@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0252cf39f8f5ee268adbf625f03a9b5a305b903a
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382584"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>如何：變更 ClickOnce 應用程式的發佈語言
 
-發行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，在安裝期間顯示的使用者介面預設為開發電腦的語言和文化特性。 如果您要發行當地語系化的應用程式，就必須指定語言和文化特性，以符合當地語系化版本。 這是由專案的 `Publish language` 屬性所決定。
+發佈 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，在安裝期間顯示的使用者介面預設為開發電腦的語言和文化特性。 如果您要發行當地語系化的應用程式，則必須指定語言和文化特性以符合當地語系化的版本。 這取決於 `Publish language` 您專案的屬性。
 
 `Publish language`可以在 [**發行選項**] 對話方塊中設定屬性，可從 [**專案設計**工具] 的 [**發行**] 頁面存取。
 
@@ -38,11 +38,11 @@ ms.locfileid: "85382584"
 
 2. 按一下 [Publish (發行)] **** 索引標籤。
 
-3. 按一下 [**選項**] 按鈕以開啟 [**發行選項**] 對話方塊。
+3. 按一下 [ **選項** ] 按鈕，開啟 [ **發行選項** ] 對話方塊。
 
-4. 按一下 [**描述**]。
+4. 按一下 [ **描述**]。
 
-5. 在 [**發行選項**] 對話方塊中，從 [**發行語言**] 下拉式清單中選取語言和文化特性，然後按一下 **[確定]**。
+5. 在 [ **發行選項** ] 對話方塊中，從 [ **發行語言** ] 下拉式清單中選取語言和文化特性，然後按一下 **[確定]**。
 
 ## <a name="see-also"></a>另請參閱
 

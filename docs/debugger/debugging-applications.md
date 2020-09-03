@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1849d6918c1fd5607c97b82c17e385d3c6521fc4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535157"
 ---
 # <a name="debugging-applications"></a>對應用程式進行偵錯
@@ -25,15 +25,15 @@ ms.locfileid: "85535157"
 
 ## <a name="debugging-for-different-types-of-applications"></a>對不同類型的應用程式進行偵錯
 
-|Title|描述|
+|標題|描述|
 |-|-|
-|[對 UWP 應用程式進行偵錯](../debugger/debugging-windows-store-and-windows-universal-apps.md)|說明如何調試 UWP 應用程式。|
-|[對受控碼進行偵錯](../debugger/debugging-managed-code.md)|描述如何將 managed 程式碼（Visual c #、Visual Basic、F # 和 c + +/CLI）進行偵錯工具。|
+|[對 UWP 應用程式進行偵錯](../debugger/debugging-windows-store-and-windows-universal-apps.md)|說明如何將 UWP 應用程式的偵錯工具。|
+|[對受控碼進行偵錯](../debugger/debugging-managed-code.md)|說明如何 (Visual c #、Visual Basic、F # 和 c + +/CLI) 來對 managed 程式碼進行偵錯工具。|
 |[對機器碼進行偵錯](../debugger/debugging-native-code.md)|說明如何對不同種類的原生 C++ 應用程式進行偵錯。|
 |[對 GPU 程式碼進行偵錯](../debugger/debugging-gpu-code.md)|說明如何對圖形處理器 (GPU) 上執行的 C++ 程式碼進行偵錯。|
-|[圖形診斷（偵測 DirectX 圖形）](graphics/visual-studio-graphics-diagnostics.md)|說明如何對 DirectX 圖形進行偵錯。|
-|[對 ASP.NET 應用程式進行偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|說明如何調試 ASP.NET 應用程式。|
-|[針對 Python 程式碼進行偵錯](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|說明如何對 Python 程式碼進行偵錯工具|
-|[Debug JavaScript 和 TypeScript 應用程式](../javascript/debug-nodejs.md)|說明如何調試 JavaScript、TypeScript 和 Node.js 應用程式|
-|[Debug Web 應用程式](../debugger/debugging-web-applications.md)|說明如何調試 Web 應用程式和腳本。|
+|[圖形診斷 (將 DirectX 圖形) 的偵錯工具 ](graphics/visual-studio-graphics-diagnostics.md)|說明如何對 DirectX 圖形進行偵錯。|
+|[對 ASP.NET 應用程式進行偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|說明如何將 ASP.NET 應用程式的偵錯工具。|
+|[針對 Python 程式碼進行偵錯](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|說明如何將 Python 程式碼進行偵錯工具|
+|[對 JavaScript 和 TypeScript 應用程式進行偵錯工具](../javascript/debug-nodejs.md)|說明如何進行 JavaScript、TypeScript 和 Node.js 應用程式的偵錯工具|
+|[偵錯工具 Web 應用程式](../debugger/debugging-web-applications.md)|說明如何進行 Web 應用程式和腳本的偵錯工具。|
 |[對 WCF 服務進行偵錯](../debugger/debugging-wcf-services.md)|說明如何對 Windows Communication Foundation 服務進行偵錯。|

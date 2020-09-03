@@ -1,5 +1,5 @@
 ---
-title: IDebugsers運算式::評估同步 |微軟文件
+title: IDebugParsedExpression：： EvaluateSync |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1f00b209ff5f91d160e89f5f55ad966fbe9e6414
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726016"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
-此方法計算解析的運算式,並選擇性地將結果轉換為另一種數據類型。
+這個方法會評估剖析的運算式，並選擇性地將結果轉換成另一種資料類型。
 
 ## <a name="syntax"></a>語法
 
@@ -53,31 +53,31 @@ int EvaluateSync(
 
 ## <a name="parameters"></a>參數
 `dwEvalFlags`\
-[在][EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)常量的組合,用於控制運算式計算方式。
+在 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 常數的組合，可控制運算式的評估方式。
 
 `dwTimeout`\
-[在]指定從此方法返回之前等待的最大時間(以毫秒為單位)。 用於`INFINITE`無限期等待。
+在指定從這個方法傳回之前等候的最長時間（以毫秒為單位）。 使用 `INFINITE` 可無限期等候。
 
 `pSymbolProvider`\
-[在]符號提供程式,表示為[IDebugSymbol 提供程式](../../../extensibility/debugger/reference/idebugsymbolprovider.md)介面。
+在符號提供者，以 [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) 介面表示。
 
 `pAddress`\
-[在]方法中的目前執行位置,表示為[IDebugAddress 介面](../../../extensibility/debugger/reference/idebugaddress.md)。
+在方法內目前的執行位置，以 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 介面表示。
 
 `pBinder`\
-[在]活頁夾,表示為[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)介面。
+在系結器，以 [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) 介面表示。
 
 `bstrResultType`\
-[在]結果應強制轉換為的類型。 這裡可以是 null 值。
+在結果應轉換成的類型。 這個引數可以是 null 值。
 
 `ppResult`\
-[出]返回表示評估結果的[IDebug Property2](../../../extensibility/debugger/reference/idebugproperty2.md)介面。
+擴展傳回代表評估結果的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 介面。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 運算式計算上下文由`pAddress`提供 ,這樣就可以確定包含方法,然後使用語言範圍規則來確定表達式中符號的值。
+ 運算式評估內容是由提供 `pAddress` ，可讓您判斷包含方法，然後使用語言範圍規則來判斷運算式中的符號值。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

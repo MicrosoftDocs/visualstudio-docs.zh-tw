@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::獲取ICorDebug值 |微軟文件
+title: IDebugObject2：： GetICorDebugValue |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1d52701b916650bc142038ffd96dcab8b05ec6da
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726124"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
-獲取表示與此物件關聯的值的託管代碼物件。
+取得代表與此物件相關聯之值的 managed 程式碼物件。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetICorDebugValue(
 
 ## <a name="parameters"></a>參數
 `ppUnk`\
-[出]`IUnknown`表示此別名的介面。 可以查詢介面的此`ICorDebugValue`介面。
+[out] `IUnknown` 表示此別名的介面。 此介面可針對介面進行查詢 `ICorDebugValue` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回S_OK;否則,返回錯誤代碼。
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 該`ICorDebugValue`對像是表示值的通用語言運行時介面。
+ `ICorDebugValue`物件是代表值的通用語言執行時間介面。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

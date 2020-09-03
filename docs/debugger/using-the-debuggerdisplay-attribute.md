@@ -13,27 +13,27 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2387c5e9a920f0811a65ca400d8da48aa81dccd3
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85418778"
 ---
-# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>使用 DebuggerDisplay 屬性告訴偵錯工具要顯示的內容（c #、Visual Basic、F #、c + +/CLI）
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>使用 DebuggerDisplay 屬性告訴偵錯工具要顯示的內容 (c #、Visual Basic、F #、c + +/CLI) 
 
-<xref:System.Diagnostics.DebuggerDisplayAttribute> 控制物件、屬性或欄位在偵錯工具變數視窗中顯示的方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。 如果套用至基底類型，則屬性也適用于子類別。
+<xref:System.Diagnostics.DebuggerDisplayAttribute> 控制物件、屬性或欄位在偵錯工具變數視窗中顯示的方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。 如果套用至基底類型，屬性也會套用至子類別。
 
 `DebuggerDisplay` 屬性有單一引數，這是要在類型執行個體的 [值] 一欄中顯示的字串。 這個字串可以包含括號 (`{` 和 `}`)。 一對括號內的文字會評估為欄位、屬性或方法。
 
 如果類別具有覆寫的 `ToString()` 方法，偵錯工具會使用覆寫的方法，而非預設的 `{<typeName>}`。 因此，如果您已覆寫 `ToString()` 方法，偵錯工具就會使用覆寫的方法，而非預設的`{<typeName>}`，而且您不需要使用 `DebuggerDisplay`。 若兩者都使用，`DebuggerDisplay` 屬性會優先於覆寫的 `ToString()` 方法。 `DebuggerDisplay`屬性也優先于 `ToString()` 子類別中的覆寫方法。
 
-偵錯工具是否評估這個隱含 `ToString()` 呼叫取決於 [工具]/[**選項]/[調試**程式] 對話方塊中的使用者設定。
+偵錯工具是否評估這個隱含 `ToString()` 呼叫取決於 [工具]/[ **選項]/[調試** 程式] 對話方塊中的使用者設定。
 
 > [!IMPORTANT]
-> 如果在 [**工具]/[選項]/[調試**] 對話方塊中選取 [**在變數視窗中顯示物件的原始結構**] 核取方塊，則 `DebuggerDisplay` 會忽略屬性。
+> 如果已在 [**工具]/[選項]/[調試**程式] 對話方塊中選取 [**在變數視窗中顯示物件的原始結構**] 核取方塊，則會 `DebuggerDisplay` 忽略屬性。
 
 > [!NOTE]
-> 針對機器碼，只有在 c + +/CLI 程式碼中才支援這個屬性。
+> 若為機器碼，只有在 c + +/CLI 程式碼中才支援此屬性。
 
 下表說明 `DebuggerDisplay` 屬性的一些可能用法和範例輸出。
 
@@ -91,12 +91,12 @@ public sealed class MyClass
 }
 ```
 
-"，Nq" 後置詞會告訴運算式評估工具，在顯示最終值（nq = no 引號）時移除引號。
+"，Nq" 後置詞會指示運算式評估工具在顯示最終值時移除引號 (nq = no 引號) 。
 
 ## <a name="example"></a>範例
 下列程式碼範例將示範如何使用 `DebuggerDisplay`搭配 `DebuggerBrowseable` 和 `DebuggerTypeProxy`。 在偵錯工具變數視窗中檢視時 (例如 [ **監看式** ] 視窗)，它會產生類似下面所示的展開：
 
-|**名稱**|**ReplTest1**|**型別**|
+|**名稱**|**ReplTest1**|**類型**|
 |--------------|---------------|--------------|
 |Key|"three"|object {string}|
 |值|3|object {int}|

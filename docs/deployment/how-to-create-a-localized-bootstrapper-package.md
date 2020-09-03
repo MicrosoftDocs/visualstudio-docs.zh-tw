@@ -1,5 +1,5 @@
 ---
-title: 如何建立當地語系化的啟動載入器套件 |Microsoft Docs
+title: 如何-建立當地語系化的啟動載入器套件 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 26858dce9c6484c1b7acb94ad2a7f38fd20447a2
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382558"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>如何：建立當地語系化啟動載入器套件
@@ -28,7 +28,7 @@ ms.locfileid: "85382558"
 
 2. 建立包含啟動載入器套件之軟體授權合約的檔案，然後放入新資料夾中。
 
-3. 建立名為 *package.xml* 的套件資訊清單，更新字串和文化特性，然後將檔案放入新資料夾中。 如果您已經在目的語言中建立 Visual Studio 的啟動載入器，就可以複製 Visual Studio *package.xml*檔案，並在此步驟中加以修改。
+3. 建立名為 *package.xml* 的套件資訊清單，更新字串和文化特性，然後將檔案放入新資料夾中。 如果您已經以目的語言建立 Visual Studio 的啟動載入器，您可以複製 Visual Studio *package.xml* 檔案，並在此步驟中加以修改。
 
 > [!NOTE]
 > 如果您使用安裝專案部署應用程式，可以藉由變更 **Localization** 屬性將應用程式當地語系化。
@@ -39,9 +39,9 @@ ms.locfileid: "85382558"
 
 1. 以地區設定名稱建立資料夾。
 
-     在32位電腦上，于*\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName> \\ *資料夾中建立資料夾。
+     在32位的電腦上，于*\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName> \\ *資料夾中建立資料夾。
 
-     在64位電腦上，在*\Program Files （86 \\ \<BootstrapperPackageName> \\ ） \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*資料夾中建立資料夾。
+     在64位的電腦上，于 \Program 檔案中建立資料夾* (86) \microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName> \\ *資料夾。
 
      下表顯示可用來比對地區設定的資料夾名稱。
 
@@ -64,7 +64,7 @@ ms.locfileid: "85382558"
 
 2. 建立包含啟動載入器套件之軟體授權合約的檔案，然後放入新資料夾中。
 
-3. 建立名為*package.xml*的套件資訊清單，並將它放在新的資料夾中。 如需詳細資訊，請參閱[如何：建立封裝資訊清單](../deployment/how-to-create-a-package-manifest.md)。
+3. 建立名為 *package.xml* 的套件資訊清單，並將它放在新資料夾中。 如需詳細資訊，請參閱 [如何：建立封裝資訊清單](../deployment/how-to-create-a-package-manifest.md)。
 
 4. 更新套件資訊清單的 `<Strings>` 區段，讓字串能夠以正確的地區設定語言顯示。
 
@@ -74,15 +74,15 @@ ms.locfileid: "85382558"
 
 ### <a name="to-create-a-bootstrapper-package-for-net-framework-35-service-pack-1-localized-in-french"></a>為 .NET Framework 3.5 Service Pack 1 建立以法文當地語系化的啟動載入器套件
 
-1. 建立名為*fr*的資料夾。 資料夾名稱必須符合地區設定名稱。
+1. 建立名為 *fr*的資料夾。 資料夾名稱必須符合地區設定名稱。
 
      在 32 位元電腦上，於 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* 資料夾中建立資料夾。
 
      在 64 位元電腦上，於 *\Program Files (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* 資料夾中建立資料夾。
 
-2. 將軟體授權條款的當地語系化版本放入*fr*資料夾中。
+2. 將當地語系化版本的軟體授權條款放入 *fr* 資料夾中。
 
-3. 將*\Program Files （x86） \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\en\package.xml*檔案複製到*fr*資料夾，然後在 XML 設計工具中開啟檔案。
+3. 將 *\Program 檔案 (x86) \microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* 檔複製到 *fr* 資料夾，然後在 XML 設計工具中開啟該檔案。
 
 4. 更新套件資訊清單的 `<Strings>` 區段，讓錯誤字串以法文顯示。
 

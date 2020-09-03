@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::Isc過時 |微軟文件
+title: IDebugObject2：： IsEncOutdated |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a90ff97b87ec2abaab87dfece5b2a2ac1cabb28c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726097"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
-此方法確定此物件或父容器的編輯並繼續狀態是否已過期。 自定義表示式賦值器不實現此方法,並且始終返回`E_NOTIMPL`。
+這個方法會判斷這個物件或父容器的 [編輯後繼續] 狀態是否已過期。 自訂表格達式評估工具不會執行這個方法，且一律會傳回 `E_NOTIMPL` 。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int IsEncOutdated(
 
 ## <a name="parameters"></a>參數
 `pfEncOutdated`\
-[出]如果"編輯`TRUE`"和"繼續"狀態已過期,則非零`FALSE`( ) 如果不是。"
+擴展非零 (`TRUE`) 如果 [編輯後繼續] 狀態為 [已過期]，則零 (`FALSE`) （如果沒有的話）。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 > [!NOTE]
-> 自訂表示式賦值器應始終返回`E_NOTIMPL`。
+> 自訂表格達式評估工具應該一律傳回 `E_NOTIMPL` 。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

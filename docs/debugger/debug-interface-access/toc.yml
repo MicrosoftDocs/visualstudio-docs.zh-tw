@@ -22,7 +22,7 @@
               href: lexical-hierarchy-of-symbol-types.md
             - name: Annotation
               href: annotation.md
-            - name: 區塊
+            - name: 封鎖
               href: block.md
             - name: 編譯模組
               href: compiland.md

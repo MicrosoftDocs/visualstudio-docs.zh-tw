@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6cfedaa51ef62b5a9519a7aef23b942d6c1e5f6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665775"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>設計和檢視類別與類型
@@ -37,7 +37,7 @@ ms.locfileid: "72665775"
 
 - **重構**：覆寫方法、重新命名識別碼、重構參數，以及實作介面和抽象類別。
 
-## <a name="in-this-section"></a>本章節內容
+## <a name="in-this-section"></a>本節內容
  [使用類別和其他類型 (類別設計工具)](../ide/working-with-classes-and-other-types-class-designer.md)
 
  [使用類別圖表 (類別設計工具)](../ide/working-with-class-diagrams-class-designer.md)
@@ -46,7 +46,7 @@ ms.locfileid: "72665775"
 
  [檢視類型和關聯性 (類別設計工具)](../ide/viewing-types-and-relationships-class-designer.md)
 
- [重構類別和類型 (類別設計工具)](../ide/refactoring-classes-and-types-class-designer.md)
+ [重構類別和類型 (類別設計工具) ](../ide/refactoring-classes-and-types-class-designer.md)
 
  [使用 Visual C++ 程式碼 (類別設計工具)](../ide/working-with-visual-cpp-code-class-designer.md)
 

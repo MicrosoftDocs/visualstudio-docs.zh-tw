@@ -1,5 +1,5 @@
 ---
-title: IDebugObject:獲取記憶體上下文 |微軟文件
+title: IDebugObject：： GetMemoryCoNtext |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 16427685765c1471fba3993743efc204cb99c367
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726664"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
-獲取表示物件值位址的記憶體上下文。
+取得表示物件值之位址的記憶體內容。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>參數
 `pContext`\
-[出]返回表示物件值位址的[IDebugMemoryMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件。
+擴展傳回 [IDebugMemoryCoNtext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 物件，代表物件值的位址。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回S_OK;否則,返回錯誤代碼。
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 返回的記憶體上下文指定此[IDebugObject 物件](../../../extensibility/debugger/reference/idebugobject.md)表示的值的位址。
+ 傳回的記憶體內容會指定這個 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 物件所表示之值的位址。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

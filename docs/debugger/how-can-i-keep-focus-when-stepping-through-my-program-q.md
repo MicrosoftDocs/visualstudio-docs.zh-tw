@@ -22,18 +22,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d41a1bf5f71624751fc94f4a72f06e6da5c39630
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350377"
 ---
-# <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>當您逐步執行應用程式時，如何保持焦點？
+# <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>逐步執行應用程式時，如何保持焦點？
 ## <a name="description"></a>描述
  我的程式有視窗啟動的問題。 要重現問題時，以偵錯工具逐步執行程式會帶來干擾，因為程式會一直失焦。 有什麼方法可以避免這個問題嗎？
 
-## <a name="solution"></a>解決方案
- 如果您有第二台電腦，使用遠端偵錯。 當您在本機上執行偵錯工具時，您可以在遠端電腦上操作程式。 如需詳細資訊，請參閱[如何：選取遠端電腦](/previous-versions/visualstudio/visual-studio-2010/w8wtw2f3(v=vs.100))。
+## <a name="solution"></a>解決方法
+ 如果您有第二台電腦，使用遠端偵錯。 當您在本機上執行偵錯工具時，您可以在遠端電腦上操作程式。 如需詳細資訊，請參閱 [如何：選取遠端電腦](/previous-versions/visualstudio/visual-studio-2010/w8wtw2f3(v=vs.100))。
 
 ## <a name="see-also"></a>另請參閱
 - [機器碼偵錯 FAQ](../debugger/debugging-native-code-faqs.md)

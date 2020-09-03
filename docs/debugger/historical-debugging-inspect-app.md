@@ -9,19 +9,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: efabc8cd185daed4f018e3e4209e391b5bc39f44
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350442"
 ---
-# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>在 Visual Studio 中使用 IntelliTrace 歷程記錄偵錯工具檢查您的應用程式（c #、Visual Basic、c + +）
+# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>使用 Visual Studio (c #、Visual Basic、c + + 中的 IntelliTrace 歷程記錄偵錯工具檢查您的應用程式) 
 
-您可以使用歷程[記錄](../debugger/historical-debugging.md)，在應用程式執行後向前和向後移動，並檢查其狀態。
+您可以使用歷程 [記錄調試](../debugger/historical-debugging.md) 程式，在您的應用程式執行前後移動，並檢查其狀態。
 
 您可以在 Visual Studio Enterprise 版本 (而非 Professional 或 Community 版本) 中使用 IntelliTrace。
 
-## <a name="navigate-your-code-with-historical-debugging"></a>使用歷程記錄進行流覽程式碼
+## <a name="navigate-your-code-with-historical-debugging"></a>使用歷程記錄偵錯工具流覽您的程式碼
 
 讓我們從內含 BUG 的簡單程式開始。 在 C# 主控台應用程式中，加入下列程式碼：
 
@@ -51,9 +51,9 @@ private static int AddInt(int add)
 }
 ```
 
-我們假設呼叫 `AddAll()` 之後的 `resultInt` 預期值是 20 (遞增 `testInt` 20 次的結果)。 （我們也會假設您在中看不到錯誤 `AddInt()` ）。但結果實際上是44。 如何在不逐步執行 `AddAll()` 10 次的情況下找到 Bug？ 我們可以使用歷程偵錯更迅速且更輕鬆地找到 BUG。 方法：
+我們假設呼叫 `AddAll()` 之後的 `resultInt` 預期值是 20 (遞增 `testInt` 20 次的結果)。  (我們也會假設您在) 中看不到錯誤 `AddInt()` 。但結果實際上是44。 如何在不逐步執行 `AddAll()` 10 次的情況下找到 Bug？ 我們可以使用歷程偵錯更迅速且更輕鬆地找到 BUG。 方法如下：
 
-1. 在 **[工具] [> 選項] [> intellitrace > [一般**] 中，確定已啟用 [intellitrace]，然後選取 [ **intellitrace 事件和呼叫資訊**]。 如果您未選取此選項，則無法看到巡覽邊 (如下所述)。
+1. 在 **[工具] > [一般] > > 選項**] 中，確定已啟用 intellitrace，然後選取 [ **intellitrace 事件和呼叫資訊**]。 如果您未選取此選項，則無法看到巡覽邊 (如下所述)。
 
 2. 在 `Console.WriteLine(resultInt);` 行上設定中斷點。
 
@@ -79,5 +79,5 @@ private static int AddInt(int add)
 
 這個程序只會大略探討您可以如何使用歷程偵錯。
 
-- 若要在偵錯工具時查看快照集，請參閱[使用 IntelliTrace 檢查先前的應用程式狀態](../debugger/view-historical-application-state.md)。
+- 若要在偵錯工具時查看快照集，請參閱 [使用 IntelliTrace 檢查先前的應用程式狀態](../debugger/view-historical-application-state.md)。
 - 若要深入了解不同的設定以及巡覽邊中不同按鈕的效果，請參閱 [IntelliTrace 功能](../debugger/intellitrace-features.md)。

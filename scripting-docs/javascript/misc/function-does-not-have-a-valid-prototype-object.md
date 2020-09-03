@@ -1,5 +1,5 @@
 ---
-title: 函式沒有有效的原型物件 |Microsoft Docs
+title: 函數沒有有效的原型物件 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ca6f13620bb486cf1663bd5bef9a9a93b2c8a480
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817355"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>函式沒有有效的原型物件
-您嘗試使用**instanceof**來判斷物件是否衍生自特定的函式類別，但您已將物件的屬性重新定義 `prototype` 為 `null` 或外部物件類型（兩者都不是有效的 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 物件）。 外部物件可以是主機物件模型中的物件（例如，Internet Explorer 的檔或視窗物件），或是外部 COM 物件。  
+您嘗試使用 **instanceof** 來判斷物件是否衍生自特定的函式類別，但您已將物件的屬性重新定義 `prototype` 為 `null` ，或外部物件類型 (兩個都不是有效 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 的物件) 。 外部物件可以是主機物件模型中的物件 (例如 Internet Explorer 的檔或視窗物件) 或外部 COM 物件。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   

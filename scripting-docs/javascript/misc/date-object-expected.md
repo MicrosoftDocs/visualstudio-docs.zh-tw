@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 969f2bcb578d74ac02a7bdaa6984de5948e49e27
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817602"
 ---
 # <a name="date-object-expected"></a>必須是日期物件
-您嘗試在以外類型的物件上叫用**valueOf** **方法，但**不是 `Date` 。 這種調用類型的物件必須是類型 `Date` 。 例如：  
+您嘗試在的型別物件上叫用**valueOf** **方法，而**不是 `Date` 。 這種調用類型的物件必須是型別 `Date` 。 例如：  
   
 ```JavaScript  
 var o = new Object;  
@@ -32,9 +32,9 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 只會在類型的物件上叫用**valueOf** **方法。** `Date`  
+- 請只叫用類型之物件上的**valueOf** **方法。** `Date`  
   
 ## <a name="see-also"></a>另請參閱  
  [Date 物件](../../javascript/reference/date-object-javascript.md)   
- [getDate 方法（日期）](../../javascript/reference/getdate-method-date-javascript.md)   
+ [日期) 的 getDate 方法 (](../../javascript/reference/getdate-method-date-javascript.md)   
  [內建物件](../../javascript/intrinsic-objects-javascript.md)
