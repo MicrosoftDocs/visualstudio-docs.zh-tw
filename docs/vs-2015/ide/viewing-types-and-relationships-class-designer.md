@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dcc993ab7c127b16fda206047a1a985d1e003123
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663182"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>檢視類型和關聯性 (類別設計工具)
@@ -32,7 +32,7 @@ ms.locfileid: "72663182"
 > [!NOTE]
 > 如果您的專案包含類別圖表，而且參考了其他專案中的類型，則除非您建置該類型的專案，否則類別圖表不會顯示參考的類型。 同樣地，除非您重建外部實體的專案，否則此圖表不會顯示該實體的程式碼變更。 如需參考組件和唯讀檔案中類型的資訊，請參閱[顯示唯讀資訊 (類別設計工具)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。
 
-## <a name="in-this-section"></a>本章節內容
+## <a name="in-this-section"></a>本節內容
  [如何：檢視現有類型 (類別設計工具)](../ide/how-to-view-existing-types-class-designer.md)
 
  說明如何使用 [類別設計工具] 來視覺化預先存在的程式碼。
@@ -48,7 +48,7 @@ ms.locfileid: "72663182"
 ## <a name="related-sections"></a>相關章節
  [設計類別和類型 (類別設計工具)](../ide/designing-classes-and-types-class-designer.md)
 
- [重構類別和類型 (類別設計工具)](../ide/refactoring-classes-and-types-class-designer.md)
+ [重構類別和類型 (類別設計工具) ](../ide/refactoring-classes-and-types-class-designer.md)
 
  [如何：自訂類別圖表 (類別設計工具)](../ide/how-to-customize-class-diagrams-class-designer.md)
 

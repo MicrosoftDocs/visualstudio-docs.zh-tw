@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d8b20552d29f5d649ddf669187632814986a388b
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464104"
 ---
 # <a name="idiasymbolget_classparent"></a>IDiaSymbol::get_classParent
@@ -33,10 +33,10 @@ HRESULT get_classParent ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回代表符號之類別父系的[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。
+擴展傳回代表符號之類別父系的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
@@ -49,7 +49,7 @@ HRESULT get_classParent ( 
 |版本：|DIA SDK v7.0|
 
 ## <a name="remarks"></a>備註
- 可以是類別父系的符號類型，會記錄在[符號類型的類別](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)階層中。
+ 可以是類別父系的符號類型會記錄在 [符號類型的類別](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)階層架構中。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

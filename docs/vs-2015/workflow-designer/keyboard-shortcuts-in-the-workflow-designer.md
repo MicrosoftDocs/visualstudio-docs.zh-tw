@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6f7bc701c4a7009d402c778356a290ce4e129bb3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658964"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流程設計中的鍵盤快速鍵
@@ -27,7 +27,7 @@ ms.locfileid: "72658964"
 ### <a name="workflow-designer-keyboard-shortcuts"></a>工作流程設計工具快速鍵
  下表摘要說明指派給 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 命令的快速鍵。
 
-|快速鍵|用途|
+|快速鍵|目的|
 |--------------|-------------|
 |CTRL+E、A|顯示或隱藏引數設計工具。|
 |CTRL+E、C|將選取活動原地摺疊。|
@@ -41,7 +41,7 @@ ms.locfileid: "72658964"
 |CTRL+E、S|將含有鍵盤焦點的項目加入至目前的選取範圍。|
 |CTRL+E、V|顯示或隱藏變數設計工具。|
 |CTRL+E、X|展開工作流程中的所有活動。|
-|CTRL+ALT+F6|將鍵盤焦點從目前的 UI 區域移至順序中的下一個區域。 順序如下：<br /><br /> 1. 階層連結巡覽列。<br />2. 設計工具介面<br />3. 引數/變數/匯入設計工具（如果開啟）<br />4. Shell|
+|CTRL+ALT+F6|將鍵盤焦點從目前的 UI 區域移至順序中的下一個區域。 順序如下：<br /><br /> 1. 階層連結巡覽列。<br />2. 設計工具介面<br />3. 引數/變數/Imports 設計工具（如果開啟）<br />4. Shell|
 
 ### <a name="flowchart"></a>流程圖
  下列是透過鍵盤建構流程圖所使用的手勢。 就像在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 的其餘部分，活動會使用 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 提供的全域工具箱快速鍵加入至設計工具介面。
@@ -50,7 +50,7 @@ ms.locfileid: "72658964"
 
 - 若要調整流程圖的大小，請使用方向鍵將活動移出流程圖目前的框線外。 流程圖會自動調整大小。
 
-- 若要將活動設定為開始節點，請使用內容功能表中的 [ **set As StartNode** ] 命令。
+- 若要將活動設定為開始節點，請使用內容功能表中的 [ **設為 StartNode** ] 命令。
 
 - 若要連接活動：
 
@@ -68,7 +68,7 @@ ms.locfileid: "72658964"
 
 - 如果成對的活動無法連接，例如來源活動已經有傳出的連接，則選取範圍內活動之間的其他連接，只要有可能連接仍然會連接。
 
-- 當選取範圍中包含**FlowDecision**且**FlowDecision**沒有傳出連接器時，連接器會放在**真正**的分支上。
+- 當 **FlowDecision** 包含在選取範圍內，而且 **FlowDecision** 沒有傳出的連接器時，就會將連接器放在 **真正** 的分支上。
 
 ### <a name="expression-editing"></a>運算式編輯
  根據預設，[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 文字編輯的預設快速鍵適用於 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 中的運算式編輯器內部，並有下列限制：

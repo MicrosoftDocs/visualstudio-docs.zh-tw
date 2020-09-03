@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f2c83b1b8e85c7d1db016dfa568f71fda7fd8c17
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876056"
 ---
 # <a name="state-machine-activity-designers"></a>狀態機器活動設計工具
 
-工作流程設計工具組含一些可供您在建立工作流程時使用的活動設計工具。 本節包含系統提供的活動設計工具，這些活動設計工具用來建立和管理狀態機器工作流程。 下列主題會說明這些設計工具，並且提供如何使用的指引。
+工作流程設計工具組含一些活動設計工具，可讓您在建立工作流程時使用。 本節包含系統提供的活動設計工具，這些活動設計工具用來建立和管理狀態機器工作流程。 下列主題會說明這些設計工具，並且提供如何使用的指引。
 
-## <a name="reference"></a>參考
+## <a name="reference"></a>參考資料
  <xref:System.Activities.Statements.StateMachine>
 
  <xref:System.Activities.Statements.State>
@@ -41,7 +41,7 @@ ms.locfileid: "86876056"
 
  [執行階段](../workflow-designer/runtime-activity-designers.md)
 
- [基本](../workflow-designer/primitives-activity-designers.md)
+ [基本型別](../workflow-designer/primitives-activity-designers.md)
 
  [交易](../workflow-designer/transaction-activity-designers.md)
 

@@ -25,10 +25,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cb5b56404c7ddc99b7999b47cf3c2a899f915efd
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72578052"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>建立受控物件的自訂檢視
@@ -42,7 +42,7 @@ ms.locfileid: "72578052"
  在 [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] 程式碼中，Visual Basic 不支援 DebuggerBrowsable 屬性。 最新版的 .NET Framework 中已移除此限制。  
   
 ## <a name="visualizers"></a>視覺化工具  
- 您可以撰寫視覺化檢視以顯示任何 Managed 資料型別。 如需詳細資訊，請參閱[如何：撰寫視覺化](../debugger/how-to-write-a-visualizer.md)程式。  
+ 您可以撰寫視覺化檢視以顯示任何 Managed 資料型別。 如需詳細資訊，請參閱 how [to：撰寫視覺化](../debugger/how-to-write-a-visualizer.md)程式。  
   
 ## <a name="native-code"></a>機器碼  
  針對機器碼，您可以將自訂資料型別擴充功能加入至 autoexp.dat 檔，其位於 Program Files\Microsoft Visual Studio 11.0\Common7\Packages\Debugger 目錄中。 如何撰寫 `autoexp` 規則的指令位於檔案本身中。  
@@ -50,10 +50,10 @@ ms.locfileid: "72578052"
 > [!CAUTION]
 > 這個檔案的結構和 autoexp 規則語法可能因 Visual Studio 發行版本不同而有所差異。  
   
- 您也可以透過撰寫運算式評估工具增益集來自訂原生型別檢視。 如需詳細資訊，請參閱[EEAddIn 範例：偵錯工具運算式評估工具增益集](https://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)。  
+ 您也可以透過撰寫運算式評估工具增益集來自訂原生型別檢視。 如需詳細資訊，請參閱 [EEAddIn 範例：偵錯工具運算式評估工具增益集](https://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)   
  [使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md)   
- [監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)   
+ [觀賞和快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)   
  [使用偵錯工具顯示屬性增強偵錯功能](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

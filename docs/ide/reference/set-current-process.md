@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a3440c66d79fef3eac3744681870c9ce1ed0e97b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593547"
 ---
 # <a name="set-current-process"></a>設定目前處理序
@@ -45,4 +45,4 @@ Debug.SetCurrentProcess index
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
-- [視覺化工作室命令別名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

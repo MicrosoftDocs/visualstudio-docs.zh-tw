@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ebe96ec84d957c5ac8dcb6bad0a388ba3318c0fb
-ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86459290"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>在 XAML 設計工具中將物件組織在版面配置容器中
@@ -33,7 +33,7 @@ ms.locfileid: "86459290"
 
 將物件排列成資料列和資料行。
 
-![格線版面配置面板](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png)
+![格線配置面板](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png)
 
 ### <a name="uniformgrid"></a>同型方格
 
@@ -43,11 +43,11 @@ ms.locfileid: "86459290"
 
 ![UniformGrid 版面配置面板](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
-### <a name="canvas"></a>Canvas
+### <a name="canvas"></a>畫布
 
 以任何想要的方式排列物件。 當使用者執行您的應用程式時，這些項目在螢幕上會具有固定位置。
 
-![畫布版面配置面板](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png)
+![畫布配置面板](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png)
 
 ### <a name="stackpanel"></a>StackPanel
 
@@ -73,13 +73,13 @@ ms.locfileid: "86459290"
 
 **觀看短片：** ![播放按鈕](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
-## <a name="layout-controls"></a>版面配置控制項
+## <a name="layout-controls"></a>配置控制項
 
 您也可以將物件加入至版面配置控制項。 控制項不像版面配置面板一樣具有豐富的功能，但會發現控制項在特定情況下很有幫助。
 
 下列版面配置控制項是最熱門的控制項，除此之外還有其他控制項。 您可以在 Visual Studio 的 [工具箱]**** 或 Blend for Visual Studio 的 [資產]**** 面板中找到所有控制項。
 
-### <a name="border"></a>Border
+### <a name="border"></a>框線
 
 在物件周圍建立框線、背景或兩者。 您可以只將一個將物件新增至 **Border**。 如果您想要為多個物件套用框線或背景，請將版面配置面板新增至 **Border**。 然後，將物件加入至該面板或控制項。
 
@@ -101,7 +101,7 @@ ms.locfileid: "86459290"
 
 ![ViewBox 版面配置控制項](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 XAML 設計工具中的項目](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [使用 XAML 設計工具建立 UI](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

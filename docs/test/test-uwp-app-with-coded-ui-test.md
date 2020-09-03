@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - uwp
 ms.openlocfilehash: aad17d244d70051a363a4cde294c592968093ba0
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286748"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>建立自動程式化 UI 測試來測試 UWP 應用程式
@@ -57,7 +57,7 @@ ms.locfileid: "85286748"
    Me.textBox.Text = Me.button.Name
    ```
 
-1. 按**Ctrl** + **F5**執行應用程式。 您應該會看到如下的內容：
+1. 按下**Ctrl** + **F5**以執行應用程式。 您應該會看到如下的內容：
 
    ![含有按鈕和文字方塊的 UWP 應用程式](media/uwp-app.png)
 
@@ -80,7 +80,7 @@ ms.locfileid: "85286748"
 
    ![[產生自動程式化 UI 測試的程式碼] 對話方塊](../test/media/manually-edit-the-test.png)
 
-1. 如果您的 UWP 應用程式尚未執行，請按**Ctrl** + **F5**加以啟動。
+1. 如果您的 UWP 應用程式尚未執行，請按**Ctrl** + **F5**啟動它。
 
 1. 開啟 [自動程式化 UI 測試產生器]**** 對話方塊，方法是將游標置於 `CodedUITestMethod1` 方法，然後選擇 [測試]**** > [產生自動程式化 UI 測試的程式碼]**** > [使用自動程式化 UI 測試產生器]****。
 

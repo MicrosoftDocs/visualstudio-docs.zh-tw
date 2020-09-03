@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eebcf2c6796723e51c3aefdb12575aa89779429f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593859"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
@@ -48,11 +48,11 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
   | 預設集合名稱 | 集合指定名稱 |
   | --- | --- |
   | **一般** | `General` |
-  | **JAVAscript** | `JavaScript` |
+  | **JavaScript** | `JavaScript` |
   | **Visual Basic** | `VB` |
-  | **視覺 C#** | `CSharp` |
-  | **視覺C++** | `VC` |
-  | **網路開發** | `Web` |
+  | **Visual C#** | `CSharp` |
+  | **Visual C++** | `VC` |
+  | **Web 開發** | `Web` |
   | **網頁程式開發 (僅限程式碼)** | `WebCode` |
 
 ## <a name="remarks"></a>備註

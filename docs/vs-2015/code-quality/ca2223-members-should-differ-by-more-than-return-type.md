@@ -1,5 +1,5 @@
 ---
-title: CA2223：成員的差異不應超過傳回類型 |Microsoft Docs
+title: CA2223：成員的差異不應超過傳回型別 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 4c1071617572af44a73f98953fd435623190e0e3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540838"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223:成員不應該只有在傳回類型上不同
@@ -29,23 +29,23 @@ ms.locfileid: "85540838"
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
 |CheckId|CA2223|
-|類別|Microsoft。使用方式|
+|類別|Microsoft. 使用量|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 兩個公用或受保護成員具有相同的簽章，但傳回類型除外。
+ 兩個公用或受保護的成員都有相同的簽章，但傳回類型除外。
 
 ## <a name="rule-description"></a>規則描述
- 雖然通用語言執行平臺允許使用傳回型別來區分另一個相同的成員，但這項功能並不在 Common Language Specification 中，也不是 .NET 程式設計語言的常見功能。 當成員只有傳回類型不同時，開發人員和開發工具可能不會正確地區別它們。
+ 雖然 common language runtime 允許使用傳回型別來區分另一個相同的成員，但這項功能不在 Common Language Specification 中，也不是 .NET 程式設計語言的常見功能。 當成員只有傳回型別不同時，開發人員和開發工具可能無法正確地區分它們。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規，請變更成員的設計，使其僅根據其名稱和參數類型來唯一，或不要公開成員。
+ 若要修正此規則的違規情形，請變更成員的設計，使其只根據其名稱和參數類型來唯一，或不要公開成員。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例（在 Microsoft 中繼語言（MSIL）中）顯示違反此規則的類型。 請注意，您無法使用 c # 或 Visual Basic .NET 來違反這項規則。
+ 下列以 Microsoft 中繼語言 (MSIL) 範例中的範例會顯示違反此規則的類型。 請注意，使用 c # 或 Visual Basic .NET 無法違反此規則。
 
 ```
 

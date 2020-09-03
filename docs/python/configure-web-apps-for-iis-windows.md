@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 3c756f3d9a89294ecce054650037be3f7b26c291
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540929"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>為 IIS 設定 Python Web 應用程式
@@ -86,7 +86,7 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
     </system.webServer>
     ```
 
-1. 在 `<appSettings>` *web.config*的區段中，新增 `WSGI_HANDLER` 、 `WSGI_LOG` （選擇性）和的索引鍵 `PYTHONPATH` ：
+1. 在 `<appSettings>` *web.config*的區段內，新增的索引鍵 `WSGI_HANDLER` 、 `WSGI_LOG` (選擇性的) 以及 `PYTHONPATH` ：
 
     ```xml
     <appSettings>
@@ -139,7 +139,7 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
     ALLOWED_HOSTS = ['1.2.3.4']
     ```
 
-    無法將您的 URL 加入陣列會導致錯誤**DisallowedHost 為/無效 HTTP_HOST 標頭： ' \<site URL\> '。您可能需要將 ' \<site URL\> ' 新增至 ALLOWED_HOSTS。**
+    若無法將 URL 新增至陣列，會導致錯誤 **DisallowedHost 為/無效 HTTP_HOST 標頭： ' \<site URL\> '。您可能需要將 ' \<site URL\> ' 新增至 ALLOWED_HOSTS。**
 
     請注意，當陣列為空時，Django 會自動允許 'localhost' 和 '127.0.0.1'，但新增您的生產環境 URL 將會移除這些功能。 基於此原因，您可能會想要個別維護 *settings.py* 的開發和生產版本，或使用環境變數來控制執行階段值。
 

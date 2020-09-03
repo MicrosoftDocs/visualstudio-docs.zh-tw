@@ -1,5 +1,5 @@
 ---
-title: 工作流程設計工具中不支援的調試情況 |Microsoft Docs
+title: 工作流程設計工具中不支援的調試案例 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -10,10 +10,10 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fdbe68b416560b85580e3dd30e5f8138b7cd08fe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72606942"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>工作流程設計工具中不支援的偵錯情況
@@ -37,20 +37,20 @@ ms.locfileid: "72606942"
 
 - 呼叫堆疊視窗中無法設定工作流程中斷點。
 
-- 在設計工具中建立中斷點時，不會使用 [**新增中斷點**] 對話方塊中的**行**和**字元**設定。
+- 在設計工具中建立中斷點時，不會使用 [**新增中斷點**] 對話方塊中的 [**行**] 和 [**字元**] 設定。
 
 - 中斷點視窗或捷徑功能表不支援以下資料行或工作流程偵錯的選項：
 
   - 條件
 
-  - 叫用次數
+  - 叫用計數
 
   - 叫用時
 
-  - 功能
+  - 函式
 
   - 資料
 
-  - 處理序
+  - 程序
 
   - 移至反組譯碼

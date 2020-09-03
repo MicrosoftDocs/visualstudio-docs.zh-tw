@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb48733f84dcf484d2c2d7ffb18e838faae07ab0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911189"
 ---
 # <a name="concurrency-visualizer-sdk"></a>並行視覺化檢視 SDK
@@ -27,7 +27,7 @@ ms.locfileid: "72911189"
  並行視覺化檢視會顯示您可以用來產生標記的預設提供者。 提供者已經和並行視覺化檢視一起註冊，您不需要執行任何動作就能在 UI 中顯示標記。
 
 ### <a name="c-and-visual-basic"></a>C# 和 Visual Basic
- 在 C#、Visual Basic 和其他受控程式碼中，透過呼叫 [Markers](/previous-versions/hh694099(v=vs.140)) 類別中的方法來使用預設提供者。 它公開了四種生成標記的方法：[寫入標記](/previous-versions/hh694185%28v%3dvs.140%29)[、EnterSpan、WriteMessage](/previous-versions/hh694205(v=vs.140))和[WriteAlert](/previous-versions/hh694180(v=vs.140))。 [WriteMessage](/previous-versions/hh694161(v=vs.140)) 視您是否要使用屬性的預設值而定，這些函式有多個多載。  最簡單的多載採用只有字串的參數，指定事件的描述。 描述會顯示在並行視覺化檢視報表中。
+ 在 C#、Visual Basic 和其他受控程式碼中，透過呼叫 [Markers](/previous-versions/hh694099(v=vs.140)) 類別中的方法來使用預設提供者。 它會公開四個產生標記的方法： [WriteFlag](/previous-versions/hh694185%28v%3dvs.140%29)、 [>enterspan](/previous-versions/hh694205(v=vs.140))、 [WriteMessage](/previous-versions/hh694161(v=vs.140))和 [WriteAlert](/previous-versions/hh694180(v=vs.140))。 視您是否要使用屬性的預設值而定，這些函式有多個多載。  最簡單的多載採用只有字串的參數，指定事件的描述。 描述會顯示在並行視覺化檢視報表中。
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>在 C# 或 Visual Basic 專案中加入 SDK 支援
 
@@ -121,9 +121,9 @@ ms.locfileid: "72911189"
 
 ## <a name="see-also"></a>另請參閱
 
-|Title|描述|
+|標題|說明|
 |-----------|-----------------|
-|[C++庫參考](../profiling/cpp-library-reference.md)|描述 C++ 的並行視覺化檢視 API。|
-|[C 庫參考](../profiling/c-library-reference.md)|描述 C 的並行視覺化檢視 API。|
+|[C + + 程式庫參考](../profiling/cpp-library-reference.md)|描述 C++ 的並行視覺化檢視 API。|
+|[C 程式庫參考](../profiling/c-library-reference.md)|描述 C 的並行視覺化檢視 API。|
 |[儀錶](/previous-versions/hh694104(v=vs.140))|描述 Managed 程式碼的並行視覺化檢視 API。|
 |[並行視覺化檢視](../profiling/concurrency-visualizer.md)|使用並行方法所產生且包含執行緒執行資料的程式碼剖析資料檔案之檢視和報告的參考資訊。|

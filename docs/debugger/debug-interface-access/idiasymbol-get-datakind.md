@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbeff220bdb0f3c97b8e6588ff42c31b31b97ceb
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463943"
 ---
 # <a name="idiasymbolget_datakind"></a>IDiaSymbol::get_dataKind
-抓取資料符號的變數分類。
+捕獲資料符號的變數分類。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_dataKind ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回[DataKind 列舉](../../debugger/debug-interface-access/datakind.md)列舉中的值，指定全域、靜態或常數之類的資料類型，例如。
+擴展從指定資料類型（例如全域、靜態或常數）的 [DataKind 列舉](../../debugger/debug-interface-access/datakind.md) 列舉中傳回值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。

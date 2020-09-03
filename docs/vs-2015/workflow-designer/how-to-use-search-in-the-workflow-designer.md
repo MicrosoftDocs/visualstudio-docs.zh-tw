@@ -10,10 +10,10 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 84f74b4718a7f976b386197a79692256ab49caa4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659127"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>HOW TO：使用工作流程設計工具中的搜尋
@@ -32,13 +32,13 @@ ms.locfileid: "72659127"
 
 #### <a name="using-quick-find"></a>使用快速尋找
 
-1. 在工作流程設計工具開啟時，按**Ctrl + F**，或選取 [**編輯**]、[**尋找和取代**]、[**快速尋找**]。
+1. 當工作流程設計工具開啟時，請按 **Ctrl + F**，或選取 [ **編輯**]、[ **尋找及取代**]、[ **快速尋找**]。
 
-2. 在 [**尋找目標**] 文字方塊中輸入搜尋字詞，然後按一下 **[尋找下一個]** 。
+2. 在 [ **尋找目標** ] 文字方塊中輸入搜尋字詞，然後按一下 [ **找下一個]**。
 
 3. 系統會在目前工作流程中尋找搜尋字詞。 下列螢幕擷取畫面顯示目前在設計工具中找到的活動顯示名稱。
 
-     ![工作流程設計工具中的搜尋結果](../workflow-designer/media/designersearch.png "DesignerSearch")
+     ![Workflow Designer 中的搜尋結果](../workflow-designer/media/designersearch.png "DesignerSearch")
 
 ## <a name="find-in-files"></a>檔案中尋找
  使用「檔案中尋找」將在工作流程檔案 (包含 XAML 檔案) 中尋找字串。
@@ -49,4 +49,4 @@ ms.locfileid: "72659127"
 
 2. 在 [**尋找目標**] 文字方塊中輸入搜尋專案，然後按一下 [**全部尋找**]。
 
-3. 尋找結果將會顯示在 [[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]**尋找結果**] 視圖中。 按兩下結果項目會巡覽至工作流程設計工具中包含相符項目的活動。
+3. 尋找結果將會顯示在 [ [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **尋找結果**] 視圖中。 按兩下結果項目會巡覽至工作流程設計工具中包含相符項目的活動。

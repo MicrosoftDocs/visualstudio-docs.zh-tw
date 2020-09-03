@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8ff5e620d4c53889afe17274364d6f92936025d3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672745"
 ---
 # <a name="list-disassembly-command"></a>列出反組譯碼命令
@@ -34,20 +34,20 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 [/linenumbers:yes|no]
 ```
 
-## <a name="switches"></a>參數
+## <a name="switches"></a>交換器
  每個參數都可以使用其完整格式或簡短形式叫用。
 
- /count： `number` [或]/c： `number` [或]/length： `number` [或]/l： `number` 選擇性。 要顯示的指令數目。 預設值為 8。
+ /count： `number` [或]/c： `number` [或]/length： `number` [或]/l： `number` Optional。 要顯示的指令數目。 預設值為 8。
 
  /endaddress： `expression` [或]/e： `expression` 選擇性。 停止反組譯碼的位址。
 
- /codebytes： `yes`&#124; `no` [或]/bytes： `yes`&#124; `no` [或]/B： `yes`&#124; `no` 選擇性。 指出是否要顯示程式碼位元組。 預設值為 `no`。
+ /codebytes： `yes`&#124;`no` [或]/bytes： `yes`&#124;`no` [或]/b： `yes`&#124;`no` 選擇性。 指出是否要顯示程式碼位元組。 預設值為 `no`。
 
- /source： `yes`&#124; `no` [或]/s： `yes`&#124; `no` 選擇性。 指出是否要顯示來源程式碼。 預設值為 `no`。
+ /source： `yes`&#124;`no` [或]/s： `yes`&#124;`no` 選擇性。 指出是否要顯示來源程式碼。 預設值為 `no`。
 
- /symbolnames： `yes`&#124; `no` [或]/names： `yes`&#124; `no` [或]/N： `yes`&#124; `no` 選擇性。 指出是否要顯示符號名稱。 預設值為 `yes`。
+ /symbolnames： `yes`&#124;`no` [或]/names： `yes`&#124;`no` [或]/n： `yes`&#124;`no` 選擇性。 指出是否要顯示符號名稱。 預設值為 `yes`。
 
- [/linenumbers： `yes`&#124; `no`]選擇性. 啟用檢視與原始程式碼建立關聯的行號。 /source 參數的值必須為 `yes` 才能使用 /linenumbers 參數。
+ [/linenumbers： `yes`&#124;`no` ] 選用。 啟用檢視與原始程式碼建立關聯的行號。 /source 參數的值必須為 `yes` 才能使用 /linenumbers 參數。
 
 ## <a name="example"></a>範例
 
@@ -56,4 +56,4 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 ```
 
 ## <a name="see-also"></a>另請參閱
- [列出呼叫堆疊命令](../../ide/reference/list-call-stack-command.md)[清單執行緒命令](../../ide/reference/list-threads-command.md) [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)[命令視窗](../../ide/reference/command-window.md)[尋找/命令框](../../ide/find-command-box.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ [列出呼叫堆疊命令](../../ide/reference/list-call-stack-command.md)[清單執行緒命令](../../ide/reference/list-threads-command.md) [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)[命令視窗](../../ide/reference/command-window.md)[尋找/命令](../../ide/find-command-box.md)方塊[Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

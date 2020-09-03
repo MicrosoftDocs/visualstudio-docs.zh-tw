@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram引擎2::枚舉可能引擎 |微軟文件
+title: IDebugProgramEngines2：： EnumPossibleEngines |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 45916edbef4368c58f83426d6c73f3c692236cb9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722440"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
-返回可以除錯此程式的所有可能的除錯引擎 (DE) 的 GUID。
+傳回所有可能的 debug 引擎的 Guid (DE) 可將此程式進行偵錯工具。
 
 ## <a name="syntax"></a>語法
 
@@ -45,19 +45,19 @@ int EnumPossibleEngines( 
 
 ## <a name="parameters"></a>參數
 `celtBuffer`\
-[在]要返回的 DE GUID 的數量。 這還指定`rgguidEngines`數位的最大大小。
+在要傳回的解除 Guid 數目。 這也會指定陣列的大小上限 `rgguidEngines` 。
 
 `rgguidEngines`\
-[進出]要填寫的 DE GUID 陣列。
+[in，out]要填入的 DE Guid 陣列。
 
 `pceltEngines`\
-[出]返回返回的實際 DE GUID 數。
+擴展傳回傳回的實際已解除 Guid 數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。 如果緩衝區不夠大`HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)`,則返回 [C++] 或 [C] 0x8007007A。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 如果緩衝區不夠大，則會傳回 [c + +] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` 或 [c #] 0x8007007A。
 
 ## <a name="remarks"></a>備註
- 為了確定有多少引擎,使用`celtBuffer`參數設置為`rgguidEngines`0 和 參數設置為 null 值呼叫此方法一次。 這將返回`HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)`(0x8007007A 表示 C#),`pceltEngines`並且參數返回緩衝區的必要大小。
+ 若要判斷有多少引擎存在，請呼叫這個方法一次，並將 `celtBuffer` 參數設定為0，並將 `rgguidEngines` 參數設定為 null 值。 這會傳回 `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` c # ) 的 (0x8007007A，而參數會傳回所 `pceltEngines` 需的緩衝區大小。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

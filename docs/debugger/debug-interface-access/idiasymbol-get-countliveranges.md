@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 89a6198a73adc5a9f4afec1f3b40302263660a29
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463971"
 ---
 # <a name="idiasymbolget_countliveranges"></a>IDiaSymbol::get_countLiveRanges
@@ -33,15 +33,15 @@ HRESULT get_countLiveRanges ( 
 #### <a name="parameters"></a>參數
  `count`
 
-脫銷傳回位址範圍的數目。
+擴展傳回位址範圍的數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="requirements"></a>需求
  標頭： Dia2。h
 
- 程式庫： diaguids
+ 程式庫： diaguids .lib
 
  DLL： msdia100.dll
 

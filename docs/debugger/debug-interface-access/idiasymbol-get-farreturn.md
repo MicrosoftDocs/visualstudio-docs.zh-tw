@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9977ea604af65c288bde49dcf0f44eeb1e241b6b
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463908"
 ---
 # <a name="idiasymbolget_farreturn"></a>IDiaSymbol::get_farReturn
-抓取指定函數是否包含最大傳回的旗標。
+抓取旗標，這個旗標會指定函數是否包含最多傳回。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_farReturn(
 #### <a name="parameters"></a>參數
  `pFlag`
 
-在`TRUE`如果函數使用最大的傳回，則傳回，否則傳回 `FALSE` 。
+在如果函式使用太多傳回，則傳回 `TRUE` ，否則傳回 `FALSE` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。

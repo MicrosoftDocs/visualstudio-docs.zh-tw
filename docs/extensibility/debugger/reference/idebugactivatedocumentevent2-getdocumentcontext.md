@@ -1,5 +1,5 @@
 ---
-title: IDebugActivate文檔事件2::獲取文檔上下文 |微軟文件
+title: IDebugActivateDocumentEvent2：： GetDocumentCoNtext |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b1b68c10c290dcf685e1eaa5fef907e27be7452f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736636"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
-獲取描述要由調試包啟動的文檔上下文。
+取得檔內容，描述檔中要由 debug 封裝啟用的位置。
 
 ## <a name="syntax"></a>語法
 
@@ -42,13 +42,13 @@ int GetDocumentContext ( 
 
 ## <a name="parameters"></a>參數
 `ppDocContext`\
-[出]返回表示源文件文件中位置的[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)物件。
+擴展傳回代表原始程式檔檔中之位置的 [IDebugDocumentCoNtext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 物件。
 
 ## <a name="remarks"></a>備註
- 例如,此位置可用於顯示 care。
+ 例如，此位置可能會用來顯示插入號。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)

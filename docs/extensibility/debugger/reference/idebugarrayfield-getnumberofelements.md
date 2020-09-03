@@ -1,5 +1,5 @@
 ---
-title: IDebugarray欄位:獲取元素數量 |微軟文件
+title: IDebugArrayField：： GetNumberOfElements |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 30318e1f17f93d1c9fc68bf5a4a9a0d4ae4cf353
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736324"
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
@@ -41,13 +41,13 @@ int GetNumberOfElements(
 
 ## <a name="parameters"></a>參數
 `pdwNumElements`\
-[出]返回陣列中的元素數。
+擴展傳回陣列中的元素數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回S_OK;否則,返回錯誤代碼。
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 返回的值是陣列中元素的總數,而不考慮維度數。
+ 傳回的值是陣列中的元素總數（不論維度的數目為何）。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

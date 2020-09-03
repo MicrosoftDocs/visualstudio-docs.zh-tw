@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8fa323d275628fe580763709884552754acfba81
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593235"
 ---
 # <a name="edit-load-test-scenarios"></a>編輯負載測試情節
@@ -55,7 +55,7 @@ ms.locfileid: "75593235"
 |**為情節選取適當的網頁瀏覽器混合：** 在負載測試情節中使用瀏覽器混合，可讓您模擬更真實的 Web 負載。 負載會由瀏覽器的異質性混合，而非只是以單一的瀏覽器來產生。 您會建立將於應用程式中使用之瀏覽器的極為近似混合。|-   [指定網頁瀏覽器類型](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)|
 |**設定情節的測試反覆項目設定：** 您可以使用 [負載測試編輯器] 和 [屬性] 視窗編輯負載測試情節，以設定測試反覆項目的設定。 根據預設，設定的情節中，沒有測試反覆項目上限。 您可以選擇性地在情節中設定反覆項目數目的上限，以及反覆項目之間暫停的時間長度。|-   [設定情節的測試反覆項目](../test/configure-test-iterations-in-a-load-test-scenario.md)|
 |**設定情節的延遲設定：** 使用 [負載測試編輯器]**** 和 [屬性]**** 視窗，您可以在負載測試中指定啟動情節前的延遲。 如果需要某個情節開始產生另一個情節會使用的項目，則這是可能想要使用 [延遲開始時間]**** 屬性時的其中一個範例。 您可以延遲使用項目的情節，讓產生項目的情節可以填入一些資料。|-   [設定情節開始延遲](../test/configure-scenario-start-delays.md)|
-|**指定負載測試情節中所要使用的遠端電腦：** 建立負載測試之後，您可以編輯負載測試情節的屬性，以指出要包含的測試代理程式。 有關詳細資訊，請參閱[測試控制器和測試代理](configure-test-agents-and-controllers-for-load-tests.md)。|-   [如何：指定要使用的測試代理程式](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md)|
+|**指定負載測試情節中所要使用的遠端電腦：** 建立負載測試之後，您可以編輯負載測試情節的屬性，以指出要包含的測試代理程式。 如需詳細資訊，請參閱 [測試控制器和測試代理](configure-test-agents-and-controllers-for-load-tests.md)程式。|-   [如何：指定要使用的測試代理程式](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md)|
 
 ## <a name="see-also"></a>另請參閱
 

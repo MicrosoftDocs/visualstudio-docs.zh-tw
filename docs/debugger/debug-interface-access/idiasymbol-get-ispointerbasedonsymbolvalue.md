@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f0d6e653bbafc09a9182cac743bdc97a23a6c58e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463292"
 ---
 # <a name="idiasymbolget_ispointerbasedonsymbolvalue"></a>IDiaSymbol::get_isPointerBasedOnSymbolValue
@@ -30,10 +30,10 @@ HRESULT get_isPointerBasedOnSymbolValue(
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷的指標 `BOOL` ，指定 `this` 指標是否以符號值為基礎。
+擴展的指標 `BOOL` ，指定 `this` 指標是否以符號值為基礎。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

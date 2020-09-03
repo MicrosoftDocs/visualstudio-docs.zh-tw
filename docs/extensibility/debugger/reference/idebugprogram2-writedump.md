@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::寫入轉儲 |微軟文件
+title: IDebugProgram2：： WriteDump |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 333535a727d88f66346ba4c94cb08b4917b8acfd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722732"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
-將轉儲寫入檔。
+將傾印寫入檔案。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int WriteDump( 
 
 ## <a name="parameters"></a>參數
 `DumpType`\
-[在][DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md)枚舉中指定轉儲類型的值,例如,短轉儲或長轉儲類型。
+在 [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md) 列舉中的值，指定傾印的類型，例如簡短或 long。
 
 `pszDumpUrl`\
-[在]要將轉印寫入的 URL。 通常,這是以`file://c:\path\filename.ext`的形式 ,但可以是任何有效的 URL。
+在要將傾印寫入其中的 URL。 一般而言，這是的格式 `file://c:\path\filename.ext` ，但可能是任何有效的 URL。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 程式轉儲通常包括當前堆疊幀、堆疊本身、程式中正在運行的線程的清單,以及程式擁有的任何記憶體。
+ 程式傾印通常會包含目前的堆疊框架、堆疊本身、在程式中執行的執行緒清單，以及程式所擁有的任何記憶體。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

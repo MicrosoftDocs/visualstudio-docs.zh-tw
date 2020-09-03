@@ -8,10 +8,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: c429c9e676ead54bb9f168e3220bf2d4791fac63
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287229"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>如何在 Visual Studio 2017 及更新版本中使用 C++ 的 CTest
@@ -20,7 +20,7 @@ ms.locfileid: "85287229"
 
 ## <a name="to-write-tests"></a>撰寫測試
 
-Visual Studio 中的 CMake 支援不包括 Visual Studio 專案系統。 因此，您會像是在任何 CMake 環境中一樣，撰寫並設定 CTest 測試。 使用 `enable_testing()` 命令來啟用測試，以及使用 `add_test()` 或 `gtest_discover_tests()` 命令來加入新的測試。 若要深入瞭解 CTest，請參閱[CMake 檔](https://gitlab.kitware.com/cmake/community/wikis/doc/ctest/Testing-With-CTest)。 
+Visual Studio 中的 CMake 支援不包括 Visual Studio 專案系統。 因此，您會像是在任何 CMake 環境中一樣，撰寫並設定 CTest 測試。 使用 `enable_testing()` 命令來啟用測試，並使用 `add_test()` 或 `gtest_discover_tests()` 命令來加入新的測試。 若要深入瞭解 CTest，請參閱 [CMake 檔](https://gitlab.kitware.com/cmake/community/wikis/doc/ctest/Testing-With-CTest)。 
 
 如需在 Visual Studio 中使用 CMake 的詳細資訊，請參閱 [Visual Studio 中的 CMake 專案](/cpp/build/cmake-projects-in-visual-studio)。
 

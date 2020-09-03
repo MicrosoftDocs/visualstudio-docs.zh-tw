@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7732a5757281e83c501a8258dd1d44b4f329a87a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548053"
 ---
 # <a name="cpu-usage"></a>CPU 使用量
@@ -25,7 +25,7 @@ ms.locfileid: "85548053"
   
  如需分析 Windows 市集應用程式效能的逐步解說，請參閱 [分析市集應用程式的 CPU 使用量](https://msdn.microsoft.com/library/windows/apps/dn641982.aspx)。  
   
- [效能及診斷] 中樞提供許多其他選項來執行和管理診斷工作階段。 例如，您可以在本機或遠端電腦上，或在模擬器 (Simulator 或 Emulator) 中執行「CPU 使用量」 **** 工具。 您可以分析在 Visual Studio 中開啟之專案的效能，附加至執行中的應用程式，或啟動從 Windows 市集安裝的應用程式。 如需詳細資訊，請參閱執行程式碼[剖析工具而不進行調試](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)程式  
+ [效能及診斷] 中樞提供許多其他選項來執行和管理診斷工作階段。 例如，您可以在本機或遠端電腦上，或在模擬器 (Simulator 或 Emulator) 中執行「CPU 使用量」 **** 工具。 您可以分析在 Visual Studio 中開啟之專案的效能，附加至執行中的應用程式，或啟動從 Windows 市集安裝的應用程式。 如需詳細資訊，請參閱執行程式碼 [剖析工具而不進行調試](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="collect-cpu-usage-data"></a><a name="BKMK_Collect_CPU_usage_data"></a> 收集 CPU 使用量資料  
   
@@ -41,7 +41,7 @@ ms.locfileid: "85548053"
   
    - 若為 Windows Phone 應用程式，從 [裝置] **** 直接收集資料會提供最精確的資料。  
   
-2. 在 [**調試**] 功能表上，選擇 [**效能**分析工具]。  
+2. 在 [ **調試** ] 功能表上，選擇 [ **效能分析工具**]。  
   
 3. 選擇 [CPU 使用量]**** ，然後選擇 [啟動]****。  
   
@@ -65,14 +65,14 @@ ms.locfileid: "85548053"
 #### <a name="call-tree-structure"></a><a name="BKMK_Call_tree_structure"></a> 呼叫樹狀圖結構  
  ![GetMaxNumberButton&#95;按一下呼叫樹狀結構](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
-|映像|描述|  
+|Image|描述|  
 |-|-|  
 |![步驟 1](../profiling/media/procguid-1.png "ProcGuid_1")|CPU 使用量呼叫樹狀圖中的最上層節點是虛擬節點|  
 |![步驟 2](../profiling/media/procguid-2.png "ProcGuid_2")|在大部分的應用程式中，停用 [顯示外部程式碼] **** 選項時，第二層節點是一個含有系統和 Framework 程式碼的 [外部程式碼] **** 節點，而系統和 Framework 程式碼會啟動和停止應用程式、繪製 UI、控制執行緒排程，以及提供應用程式的其他低階服務。|  
 |![步驟 3](../profiling/media/procguid-3.png "ProcGuid_3")|第二層節點的子系是第二層系統和 Framework 程式碼所呼叫或建立的使用者程式碼方法和非同步常式。|  
 |![步驟4](../profiling/media/procguid-4.png "ProcGuid_4")|某個方法的子節點只包含父系方法呼叫的資料。 停用 [顯示外部程式碼] **** 時，應用程式方法也可包含 [外部程式碼] **** 節點。|  
   
-#### <a name="external-code"></a><a name="BKMK_External_Code"></a>外部程式碼  
+#### <a name="external-code"></a><a name="BKMK_External_Code"></a> 外部程式碼  
  外部程式碼是在系統和架構元件中由您撰寫之程式碼所執行的函式。 外部程式碼包含啟動和停止應用程式、繪製 UI、控制執行緒，以及將其他低階服務提供給應用程式的函式。 在大多數情況下，您對外部程式碼並不感興趣，因此 [CPU 使用量] 呼叫樹狀圖會將使用者方法的外部函式，收集成一個 [外部程式碼] **** 節點。  
   
  當您想要檢視外部程式碼的呼叫路徑時，請從 [篩選檢視] **** 清單中選擇 [顯示外部程式碼] **** ，然後選擇 [套用] ****。  
@@ -102,7 +102,7 @@ ms.locfileid: "85548053"
   
  若要在範例中查看此情況，請重新選取時間軸中的 `GetMaxNumberAsyncButton_Click` 區段。  
   
- ![GetMaxNumberAsyncButton&#95;按一下 [報表選取專案]](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
+ ![GetMaxNumberAsyncButton&#95;按一下報表選取專案](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
   
  [外部程式碼] **** 下的前兩個節點是狀態機器類別之編譯器產生的方法。 第三個節點是原始方法的呼叫。 展開產生的方法可顯示正在進行的作業。  
   

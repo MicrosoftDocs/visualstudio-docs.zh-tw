@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9dbd245edd81907197e23c0d193a01cc07424b4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548105"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>新增其他語言的 Visual Studio 編輯器支援
@@ -102,13 +102,13 @@ ms.locfileid: "85548105"
 
 |資料夾名稱|描述|
 |-----------------|-----------------|
-|\\*\<language name>*|語言資料夾。 *\<language name>* 以語言的名稱取代。 例如 **\Matlab**。|
+|\\*\<language name>*|語言資料夾。 取代 *\<language name>* 為語言的名稱。 例如 **\Matlab**。|
 |\Syntaxes|文法資料夾。 包含語言的文法 .json 檔案，例如 **Matlab.json**。|
 |\Snippets|程式碼片段資料夾。 包含語言的程式碼片段。|
 
  在 Windows 中，% userprofile% 會解析為路徑： c:\Users \\ *\<user name>* 。 如果您的系統上的 extensions 資料夾不存在，您必須建立它。 如果資料夾已存在，它會隱藏。
 
- 如需如何建立 TextMate 文法的詳細資訊，請參閱[TextMate –語言文法簡介：如何新增內嵌于 HTML 中的原始程式碼語法](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)醒目提示和[如何為 TextMate 配套建立語言文法和自訂主題的附注](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)。
+ 如需有關如何建立 TextMate 文法的詳細資訊，請參閱 [TextMate – Language 文法簡介：如何加入內嵌于 HTML 的原始程式碼語法](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) 醒目提示，以及 [如何針對 TextMate 組合建立語言文法和自訂主題的附注](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)。
 
 ## <a name="see-also"></a>另請參閱
  [Visual Studio 2013 巡覽至增強功能](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md) [逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)

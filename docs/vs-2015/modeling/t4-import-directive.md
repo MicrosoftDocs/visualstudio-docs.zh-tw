@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c4a931ca05f8b12175deded8b316d0177d8f8c74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661811"
 ---
 # <a name="t4-import-directive"></a>T4 匯入指示詞
@@ -21,7 +21,7 @@ ms.locfileid: "72661811"
 
 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4 文字範本的程式碼區塊中，`import` 指示詞可讓您不必提供完整名稱，即可參考另一個命名空間中的項目。 這個指示詞相當於 C# 中的 `using` 或 `imports` 中的 [!INCLUDE[vb_current_short](../includes/vb-current-short-md.md)]。
 
- 如需撰寫 T4 文字模板的一般總覽，請參閱[撰寫 T4 文字模板](../modeling/writing-a-t4-text-template.md)。
+ 如需撰寫 T4 文字模板的一般總覽，請參閱 [撰寫 T4 文字模板](../modeling/writing-a-t4-text-template.md)。
 
 ## <a name="using-the-import-directive"></a>使用匯入指示詞
 
@@ -52,5 +52,5 @@ The file contains: <#=  fileContent #>
 
 - DSL 的命名空間
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [T4 組件指示詞](../modeling/t4-assembly-directive.md)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591290"
 ---
 # <a name="manage-external-tools"></a>管理外部工具
@@ -49,7 +49,7 @@ ms.locfileid: "75591290"
 
 1. 選擇 [工具]**** > [外部工具]****，以開啟 [外部工具]**** 對話方塊。
 
-1. 按一下 [加入]****，然後填入資訊。 例如，以下條目導致**Windows 資源管理器**在視覺化工作室中當前打開的檔目錄打開：
+1. 按一下 [加入]****，然後填入資訊。 例如，下列專案會導致 **Windows 檔案總管** 開啟您目前已在 Visual Studio 中開啟之檔案的目錄：
 
    * 標題：`Open File Location`
 
@@ -61,7 +61,7 @@ ms.locfileid: "75591290"
 
 以下是在定義外部工具時可以使用的引數完整清單：
 
-|名稱|引數|描述|
+|Name|引數|描述|
 |----------|--------------|-----------------|
 |項目路徑|$(ItemPath)|目前檔案的完整檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|
 |項目目錄|$(ItemDir)|目前檔案的目錄 (磁碟機 + 路徑)。|
@@ -81,8 +81,8 @@ ms.locfileid: "75591290"
 |方案檔案名稱|$(SolutionFileName)|目前方案的檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|
 
 > [!NOTE]
-> IDE 狀態列顯示 **"當前行**"和 **"當前列"** 變數，以指示插入點位於活動**代碼編輯器**中的位置。 **"當前文本"** 變數返回該位置選擇的文本或代碼。
+> IDE 狀態列會顯示目前的 **行** 和 **目前** 的資料行變數，以指出插入點位於使用中程式 **代碼編輯器**中的位置。 **目前的文字**變數會傳回在該位置選取的文字或程式碼。
 
 ## <a name="see-also"></a>另請參閱
 
-- [C/C++構建工具](/cpp/build/reference/c-cpp-build-tools)
+- [C/c + + 組建工具](/cpp/build/reference/c-cpp-build-tools)
