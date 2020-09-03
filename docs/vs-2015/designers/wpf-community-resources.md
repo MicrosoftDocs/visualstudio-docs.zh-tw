@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 167fc2f80a8eaeddb121d208f714fe134c63a198
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843884"
 ---
 # <a name="wpf-community-resources"></a>WPF 社群資源
@@ -24,7 +24,7 @@ Microsoft 會公開各種不同的社群資源供您深入了解、討論及在 
 ## <a name="community"></a>社群
  [WPF 論壇](https://social.msdn.microsoft.com/forums/en-US/wpf/threads/)
 
- [堆疊溢位](https://stackoverflow.com/questions/tagged/wpf)
+ [Stack Overflow](https://stackoverflow.com/questions/tagged/wpf)
 
  [WPF 團隊部落格](https://devblogs.microsoft.com/wpf/)
 
@@ -34,4 +34,4 @@ Microsoft 會公開各種不同的社群資源供您深入了解、討論及在 
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用 Windows Presentation Foundation 建立新式桌面應用程式](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+- [使用 Windows Presentation Foundation 建立新式傳統型應用程式](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

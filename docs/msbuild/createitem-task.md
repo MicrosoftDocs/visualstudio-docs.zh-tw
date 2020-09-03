@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4364e6c3f637fdf2c3e02a52d3163e5cdd8a5861
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634327"
 ---
 # <a name="createitem-task"></a>CreateItem 工作
@@ -38,14 +38,14 @@ ms.locfileid: "77634327"
 
 |參數|描述|
 |---------------|-----------------|
-|`AdditionalMetadata`|選擇性 `String` 陣列參數。<br /><br /> 指定要附加至輸出項目的其他中繼資料。  使用下列語法來指定項目的中繼資料名稱和值：<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> 您應該使用分號來分隔多個中繼資料名稱/值組。 如果名稱或值包含分號或其他任何特殊字元，則必須逸出它們。 有關詳細資訊，請參閱[如何：在 MSBuild 中轉義特殊字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)。|
-|`Exclude`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定要從輸出項目集合中排除的項目。 此參數可以包含萬用字元規格。 有關詳細資訊，請參閱[項](../msbuild/msbuild-items.md)和[操作：從生成中排除檔](../msbuild/how-to-exclude-files-from-the-build.md)。|
+|`AdditionalMetadata`|選擇性 `String` 陣列參數。<br /><br /> 指定要附加至輸出項目的其他中繼資料。  使用下列語法來指定項目的中繼資料名稱和值：<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> 您應該使用分號來分隔多個中繼資料名稱/值組。 如果名稱或值包含分號或其他任何特殊字元，則必須逸出它們。 如需詳細資訊，請參閱 [如何：在 MSBuild 中 Escape 特殊字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)。|
+|`Exclude`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定要從輸出項目集合中排除的項目。 此參數可以包含萬用字元規格。 如需詳細資訊，請參閱 [專案](../msbuild/msbuild-items.md) 和作法 [：從組建中排除](../msbuild/how-to-exclude-files-from-the-build.md)檔案。|
 |`Include`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要包含在輸出項目集合中的項目。 此參數可以包含萬用字元規格。|
 |`PreserveExistingMetadata`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `True`，僅會套用其他中繼資料 (如果它們還不存在)。|
 
 ## <a name="remarks"></a>備註
 
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 有關這些附加參數及其說明的清單，請參閱[任務擴展基類](../msbuild/taskextension-base-class.md)。
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些額外參數的清單及其描述，請參閱 [TaskExtension 基類（base class](../msbuild/taskextension-base-class.md)）。
 
 ## <a name="example"></a>範例
 
@@ -76,11 +76,11 @@ ms.locfileid: "77634327"
 
  下表描述工作執行之後輸出項目的值。 項目中繼資料會顯示在項目之後的括號內。
 
-|項目集合。|內容|
+|項目集合。|目錄|
 |---------------------|--------------|
-|`MySourceItemsWithMetadata`|*檔1.resx* `MyMetadata="Hello"`（ ）<br /><br /> *檔2.resx* `MyMetadata="Hello"`（ ）|
+|`MySourceItemsWithMetadata`|*file1* (`MyMetadata="Hello"`) <br /><br /> *file2 (的 .resx* `MyMetadata="Hello"`) |
 
 ## <a name="see-also"></a>另請參閱
 
-- [任務引用](../msbuild/msbuild-task-reference.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

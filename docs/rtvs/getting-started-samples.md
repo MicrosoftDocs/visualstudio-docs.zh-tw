@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: ef3316d929b00203815918a656568f75571e954e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843827"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Visual Studio R 工具範例專案
@@ -41,7 +41,7 @@ ms.locfileid: "75843827"
 
 此範例集合示範如何使用 R 建立機器學習服務模型，以及如何充分利用 [Microsoft Machine Learning Server](/machine-learning-server/what-is-machine-learning-server)。
 
-與所有示例一樣，打開檔，將游標放在頂部，然後逐行使用**Ctrl**+**Enter**逐行執行代碼。 每個資料夾中的 Markdown 檔案也包含其他詳細資料。
+如同所有範例，請開啟檔案、將游標放在最上方，然後以**Ctrl**Enter 逐行執行程式程式碼 + ** **。 每個資料夾中的 Markdown 檔案也包含其他詳細資料。
 
 - `Benchmarks` 會執行許多密集、平行的線性代數運算，顯示透過使用 Microsoft R Open 和 Intel 數學核心程式庫 (MKL) 而可能會提升的效能。 使用模擬資料，基準測試特別比較在一與兩個執行緒上的矩陣計算。
 

@@ -7,10 +7,10 @@ ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
 ms.openlocfilehash: f20c3580d3082c69bbadb3b866d08e2c260a6827
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711660"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>教學課程：使用 Docker Compose 建立多容器應用程式
@@ -192,7 +192,7 @@ ms.locfileid: "88711660"
 
 查看將 [容器部署至 Azure](/azure/containers)的選項。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
   
 [Docker Compose](https://docs.docker.com/compose/)  
 [容器工具](/visualstudio/containers/)

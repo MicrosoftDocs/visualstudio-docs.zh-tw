@@ -1,5 +1,5 @@
 ---
-title: 通知埠 |微軟文件
+title: 通知埠 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,40 +11,40 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ff94c20969e77bcc70af2f5a16137e09366a0d7d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738323"
 ---
-# <a name="notify-the-port"></a>通知連接埠
-啟動程式後,必須通知埠,如下所示:
+# <a name="notify-the-port"></a>通知埠
+啟動程式之後，必須通知埠，如下所示：
 
-1. 當埠收到新的程式節點時,它將程式創建事件發送回調試會話。 該事件帶有一個表示程式的介面。
+1. 當埠收到新的程式節點時，它會將程式建立事件傳送回 debug 會話。 事件會以代表程式的介面來傳送。
 
-2. 除錯工作階段查詢可以附加到的除錯引擎 (DE) 識別碼的程式。
+2. Debug 會話會查詢程式中的偵錯工具識別碼， (可以附加至的) 。
 
-3. 除錯工作階段檢查 DE 是否位於該程式的允許 D 清單中。 除錯工作階段從解決方案的活動程式設置獲取此清單,該設置最初由調試包傳遞給它。
+3. Debug 會話會檢查是否已在該程式允許的 DEs 清單上進行取消。 Debug 會話會從解決方案的作用中程式設定取得這份清單，此清單最初是由 debug 封裝傳遞給它。
 
-    DE 必須位於允許清單中,否則 DE 將不會附加到程式。
+    DE 必須在允許清單上，否則 DE 將不會附加至程式。
 
-   在程式設計上,當埠首次收到新的程式節點時,它會創建一個[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)介面來表示程式。
-
-> [!NOTE]
-> 這不應與調試引擎 (DE) 以後`IDebugProgram2`創建的介面混淆。
-
- 埠透過 COM`IConnectionPoint`介面將[IDebug ProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)程式建立事件發送回工作階段調試管理員 (SDM)。
+   以程式設計的方式，當埠第一次收到新的程式節點時，它會建立 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 介面來代表程式。
 
 > [!NOTE]
-> 這不應與`IDebugProgramCreateEvent2`DE 稍後發送的介面混淆。
+> 這不應該與 `IDebugProgram2` debug engine (DE) 中稍後建立的介面混淆。
 
- 除了事件介面本身外,埠還發送[IDebugPort2、IDebugProcess2](../../extensibility/debugger/reference/idebugport2.md)和[IDebug Program2](../../extensibility/debugger/reference/idebugprogram2.md)介面,分別表示埠、程序[IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)和程式。 SDM 呼叫[IDebugProgram2::取得引擎資訊](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)以取得可以調試程式的 DE GUID。 GUID 最初從[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)介面獲得。
+ 埠會透過 COM 介面，將 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 程式建立事件傳回給會話 debug MANAGER (SDM) `IConnectionPoint` 。
 
- SDM 檢查 DE 是否位於允許的 DE 清單中。 SDM 從解決方案的活動程式設置獲取此清單,該設置最初由調試包傳遞給它。 DE 必須位於允許的清單中,否則不會附加到程式。
+> [!NOTE]
+> 這不應該與 `IDebugProgramCreateEvent2` 稍後由 DE 傳送的介面混淆。
 
- 一旦 DE 的標識已知,SDM 就可以將其附加到程式。
+ 除了事件介面本身，埠會傳送 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)、 [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)和 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 介面，分別代表埠、進程和程式。 SDM 會呼叫 [IDebugProgram2：： GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) ，以取得可對程式進行 debug 錯的 DE 的 GUID。 GUID 最初是從 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) 介面取得。
+
+ SDM 會檢查是否已在允許的 DEs 清單上進行取消。 SDM 會從方案的作用中程式設定取得這份清單，此清單最初是由 debug 封裝傳遞給它。 DE 必須在允許清單上，否則它將不會附加至程式。
+
+ 一旦已知解除的身分識別之後，就可以將 SDM 附加至程式。
 
 ## <a name="see-also"></a>另請參閱
 - [啟動程式](../../extensibility/debugger/launching-a-program.md)
-- [啟動後附加](../../extensibility/debugger/attaching-after-a-launch.md)
-- [除錯工作](../../extensibility/debugger/debugging-tasks.md)
+- [在啟動後附加](../../extensibility/debugger/attaching-after-a-launch.md)
+- [調試作業](../../extensibility/debugger/debugging-tasks.md)
