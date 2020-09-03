@@ -1,5 +1,5 @@
 ---
-title: 運算式賦值器 |微軟文件
+title: 運算式評估工具 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,32 +13,32 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a477aaceb57e6ccd2eb5125fcf9d8af9be59472b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738684"
 ---
 # <a name="expression-evaluator"></a>運算式評估工具
-表達式賦值器 (EE) 檢查語言的語法,以在運行時解析和評估變數和表達式,從而允許使用者在 IDE 處於中斷模式時查看它們。
+運算式評估工具 (EE) 檢查語言的語法，以在執行時間剖析和評估變數和運算式，讓使用者可以在 IDE 處於中斷模式時，讓使用者查看。
 
-## <a name="use-expression-evaluators"></a>使用運算式賦值器
- 使用[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)方法建立表示式,如下所示:
+## <a name="use-expression-evaluators"></a>使用運算式評估工具
+ 運算式會使用 [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 方法建立，如下所示：
 
-1. 除錯引擎 (DE) 實現[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)介面。
+1. Debug engine (DE) 會實 [IDebugExpressionCoNtext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) 介面。
 
-2. 調試包從[IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)`IDebugExpressionContext2`介面獲取 對象,然後`IDebugStackFrame2::ParseText`調用它上 的方法以獲取[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)物件。
+2. Debug 封裝 `IDebugExpressionContext2` 會從 [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) 介面取得物件，然後 `IDebugStackFrame2::ParseText` 在其上呼叫方法以取得 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 物件。
 
-3. 調試包調用[評估同步](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)方法或[評估Async](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)方法來獲取表達式的值。 `IDebugExpression2::EvaluateAsync`從命令/立即窗口調用。 所有其他 UI`IDebugExpression2::EvaluateSync`元件 呼叫 。
+3. Debug 封裝會呼叫 [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 方法或 [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 方法來取得運算式的值。 `IDebugExpression2::EvaluateAsync` 從命令/即時運算視窗呼叫。 所有其他 UI 元件 `IDebugExpression2::EvaluateSync` 的呼叫。
 
-4. 運算式計算的結果是[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)物件,它包含表達式計算結果的名稱、類型和值。
+4. 運算式評估的結果是 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 物件，其中包含運算式評估結果的名稱、類型和值。
 
-   在運算式計算期間,EE 需要來自符號提供程式元件的資訊。 符號提供程式提供用於標識和理解解析表達式的符號資訊。
+   在運算式評估期間，EE 需要來自符號提供者元件的資訊。 符號提供者會提供用來識別和瞭解剖析之運算式的符號資訊。
 
-   非同步運算完成後,DE 將透過工作階段除錯管理員 (SDM) 傳送非同步事件,通知 IDE 運算式計算已完成。 然後,從調用`IDebugExpression2::EvaluateSync`方法返回評估結果。
+   當非同步運算式評估完成時，會透過會話 debug manager (SDM) 來傳送非同步事件，以通知 IDE 運算式評估已完成。 然後，評估的結果會從對方法的呼叫傳回 `IDebugExpression2::EvaluateSync` 。
 
 ## <a name="implementation-notes"></a>實作附註
- 調試[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]引擎希望使用通用語言運行時 (CLR) 介面與運算式賦值器進行對話。 因此,與[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]調試引擎配合的運算式賦值器必須支援 CLR(可在 debugref.doc 中找到所有 CLR 調試介面的完整清單,[!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]該清單是 中的一部分)。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Debug engine 預期會使用 Common Language Runtime (CLR) 介面來與運算式評估工具交談。 因此，搭配 debug 引擎使用的運算式評估工具 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須支援 clr (所有 clr 偵錯工具的完整清單可以在 debugref.doc （) 的一部分）中找到 [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] 。
 
 ## <a name="see-also"></a>另請參閱
-- [除錯器元件](../../extensibility/debugger/debugger-components.md)
+- [偵錯工具元件](../../extensibility/debugger/debugger-components.md)

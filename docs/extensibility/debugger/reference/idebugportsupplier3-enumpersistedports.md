@@ -1,5 +1,5 @@
 ---
-title: IDebugPort供應商3::枚舉保留埠 |微軟文件
+title: IDebugPortSupplier3：： EnumPersistedPorts |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 92b31a6b6898b0031e4a01d5a6433d0ce77e64f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724448"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
-此方法檢索允許枚舉持久化埠清單的物件。
+這個方法會抓取可列舉保存埠清單的物件。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int EnumPersistedPorts(
 
 ## <a name="parameters"></a>參數
 `PortNames`\
-[在]包含要在持久埠之間查找和返回的埠名稱清單[BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)結構。 將僅返回具有這些名稱的持久化埠。
+在 [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) 結構，其中包含要在保存的埠之間尋找並傳回的埠名稱清單。 只會傳回具有這些名稱的持續性埠。
 
 `ppEnum`\
-[出]實現[IEnum DebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)介面的物件。
+擴展實 [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) 介面的物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 實例化埠供應商時載入持久埠,並在埠供應商銷毀時保存。
+ 當埠供應商具現化時，會載入保存的埠，並在埠供應商終結時儲存。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

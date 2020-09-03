@@ -1,5 +1,5 @@
 ---
-title: CA1046：不要在參考型別上多載運算子 equals |Microsoft Docs
+title: CA1046：不多載參考型別上的 operator equals |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 118c29473db09d5ed0a4fa447e27e593a88f98b3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546753"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046:不要多載參考類型上的等號比較運算子
@@ -29,20 +29,20 @@ ms.locfileid: "85546753"
 |-|-|
 |TypeName|DoNotOverloadOperatorEqualsOnReferenceTypes|
 |CheckId|CA1046|
-|類別|Microsoft. Design|
+|類別|Microsoft. 設計|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或嵌套的公用參考型別會多載等號比較運算子。
+ Public 或 nested public 參考型別多載等號比較運算子。
 
 ## <a name="rule-description"></a>規則描述
  對參考類型而言，等號比較運算子的預設實作 (Implementation) 永遠都是正確的。 根據預設，只有當兩項參考都指向相同物件時才會相等。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規，請移除等號比較運算子的執行。
+ 若要修正此規則的違規情形，請移除相等運算子的實作為。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 當參考型別的行為類似內建實數值型別時，可以安全地隱藏此規則的警告。 如果對類型的實例執行加法或減法有意義，可能會正確地執行等號比較運算子並抑制違規。
+ 當參考型別的行為類似內建實值型別時，可以安全地隱藏此規則的警告。 如果在類型的實例上進行加法或減法有意義，則可能會正確地執行等號比較運算子並隱藏違規。
 
 ## <a name="example"></a>範例
  下列範例示範比較兩個參考時的預設行為。
@@ -50,15 +50,15 @@ ms.locfileid: "85546753"
  [!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.RefTypesNoEqualityOp/cs/FxCop.Design.RefTypesNoEqualityOp.cs#1)]
 
 ## <a name="example"></a>範例
- 下列應用程式會比較一些參考。
+ 下列應用程式會比較某些參考。
 
  [!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestRefTypesNoEqualityOp/cs/FxCop.Design.TestRefTypesNoEqualityOp.cs#1)]
 
  此範例會產生下列輸出。
 
- **a = new （2，2）和 b = new （2，2）相等嗎？沒有** 
- **c 和是相等的嗎？是** 
- **b，而 a 是 = =？否** 
+ **a = new (2，2) 和 b = new (2，2) 相等嗎？沒有** 
+ **c 和 a 相等嗎？是** 
+ **b，a 是 = =？沒有** 
  **c 和 a = =？是**
 ## <a name="related-rules"></a>相關規則
  [CA1013:多載加號和減號運算子時必須一併多載等號比較運算子](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)

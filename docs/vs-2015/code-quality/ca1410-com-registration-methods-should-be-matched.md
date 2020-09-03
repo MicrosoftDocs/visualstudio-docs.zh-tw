@@ -1,5 +1,5 @@
 ---
-title: CA1410： COM 註冊方法應符合 |Microsoft Docs
+title: CA1410：應符合 COM 註冊方法 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 43767ce04b32440a5c6753f5bfcabb91487c1232
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546701"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410:應該和 COM 註冊方法對應
@@ -30,13 +30,13 @@ ms.locfileid: "85546701"
 |TypeName|ComRegistrationMethodsShouldBeMatched|
 |CheckId|CA1410|
 |類別|Microsoft. 互通性|
-|中斷變更|不中斷|
+|中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 類型會宣告以屬性標記的方法， <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> 但不會宣告以屬性標記的方法 <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> ，反之亦然。
+ 類型會宣告以屬性標記的方法 <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> ，但不會宣告以屬性標記的方法 <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> ，反之亦然。
 
 ## <a name="rule-description"></a>規則描述
- 若要讓元件物件模型（COM）用戶端建立 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 類型，必須先註冊該類型。 如果可以使用，則會在 <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> 註冊過程中呼叫以屬性標記的方法，以執行使用者指定的程式碼。 在取消註冊的過程中，會呼叫以屬性標記的對應方法， <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> 以反轉登錄方法的作業。
+ 若為元件物件模型 (COM) 用戶端建立 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 型別，則必須先註冊該型別。 如果可以使用，則會在註冊程式期間呼叫以屬性標記的方法， <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> 以執行使用者指定的程式碼。 在取消註冊的過程中，會呼叫以屬性標記的對應方法， <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> 以反轉注冊方法的作業。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請新增對應的註冊或取消註冊方法。
@@ -54,4 +54,4 @@ ms.locfileid: "85546701"
  [CA1411:COM 註冊方法不應該為可見的](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>[向 COMRegasm.exe 註冊元件](https://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551) [（元件註冊工具）](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)
+ <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>[使用 COM](https://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551) [Regasm.exe (元件註冊工具](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)註冊元件) 

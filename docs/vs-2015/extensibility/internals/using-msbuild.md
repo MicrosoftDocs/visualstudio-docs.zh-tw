@@ -13,38 +13,38 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a1ad59e6d8f4cb88004629b0dfd2cdf0631a7824
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297667"
 ---
 # <a name="using-msbuild"></a>使用 MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-MSBuild 會提供定義完善的可擴充 XML 格式，以建立可完整描述要建立之專案專案、組建工作和組建設定的專案檔。  
+MSBuild 提供定義完善、可擴充的 XML 格式，可建立專案檔，以完整描述要建立的專案專案、組建工作和組建設定。  
   
  如需以 MSBuild 為基礎之語言專案系統的端對端範例，請參閱[VSSDK 範例](../../misc/vssdk-samples.md)中的 IronPython 範例深入探討。  
   
 ## <a name="general-msbuild-considerations"></a>一般 MSBuild 考慮  
- MSBuild 專案檔（例如 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] .csproj 和 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] vbproj 檔案）包含在組建階段使用的資料，但也可以包含在設計階段使用的資料。 使用 MSBuild 基本類型來儲存組建時間資料，包括[Item 元素（msbuild）](../../msbuild/item-element-msbuild.md)和[Property 元素（msbuild）](../../msbuild/property-element-msbuild.md)。 設計階段資料（這是專案類型和任何相關專案子類型的特定資料）會儲存為其保留的自由格式 XML。  
+ MSBuild 專案檔（例如 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] .csproj 和 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] . vbproj 檔案）包含在組建階段使用的資料，但也可以包含在設計階段使用的資料。 組建時間資料是使用 MSBuild 基本專案儲存，包括 [ (msbuild) 的 Item 元素 ](../../msbuild/item-element-msbuild.md) ，以及 [ (Msbuild) 的屬性元素 ](../../msbuild/property-element-msbuild.md)。 設計階段資料是專案類型和任何相關專案子類型的特定資料，會以保留給它的自由格式 XML 來儲存。  
   
- MSBuild 沒有設定物件的原生支援，但會提供用來指定設定特定資料的條件式屬性。 例如：  
+ MSBuild 沒有設定物件的原生支援，但會提供條件屬性來指定設定特定的資料。 例如：  
   
 ```  
 <OutputDir Condition="'$(Configuration)'=="release'">Bin\MyReleaseConfig</OutputDir>  
 ```  
   
- 如需條件式屬性的詳細資訊，請參閱[條件式結構](../../msbuild/msbuild-conditional-constructs.md)。  
+ 如需條件式屬性的詳細資訊，請參閱 [條件式結構](../../msbuild/msbuild-conditional-constructs.md)。  
   
-### <a name="extending-msbuild-for-your-project-type"></a>擴充專案類型的 MSBuild  
- MSBuild 介面和 Api 在未來的 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]版本中可能有所變更。 因此，請謹慎使用 managed package framework （MPF）類別，因為它們會提供變更的防護。  
+### <a name="extending-msbuild-for-your-project-type"></a>為您的專案類型擴充 MSBuild  
+ MSBuild 介面和 Api 在未來的版本中可能會變更 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。 因此，請謹慎使用 managed package framework (MPF) 類別，因為它們提供了變更的防護。  
   
- 適用于專案的 Managed 封裝架構（MPFProj）會提供 helper 類別來建立和管理新的專案系統。 您可以在[適用于專案的 MPF](https://archive.codeplex.com/?p=mpfproj12)上找到原始程式碼和編譯指示-Visual Studio 2013。  
+ 適用于專案的 Managed 封裝架構 (MPFProj) 提供協助程式類別來建立和管理新的專案系統。 您可以在 [適用于專案的 MPF](https://archive.codeplex.com/?p=mpfproj12)上找到原始程式碼和編譯指示-Visual Studio 2013。  
   
  專案特定的 MPF 類別如下所示：  
   
-|執行個體|實作|  
+|類別|實作|  
 |-----------|--------------------|  
 |`Microsoft.VisualStudio.Package.ProjectNode`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents>|  
 |`Microsoft.VisualStudio.Package.ProjectFactory`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>|  
@@ -54,10 +54,10 @@ MSBuild 會提供定義完善的可擴充 XML 格式，以建立可完整描述�
   
  `Microsoft.VisualStudio.Package.ProjectElement` 類別是 MSBuild 專案的包裝函式。  
   
-#### <a name="single-file-generators-vs-msbuild-tasks"></a>單一檔案產生器與 MSBuild 工作的比較  
- 單一檔案產生器只能在設計階段存取，但是 MSBuild 工作可以在設計階段和組建階段使用。 因此，為了達到最大彈性，請使用 MSBuild 工作來轉換和產生程式碼。 如需詳細資訊，請參閱[自訂工具](../../extensibility/internals/custom-tools.md)。  
+#### <a name="single-file-generators-vs-msbuild-tasks"></a>單一檔案產生器與 MSBuild 工作  
+ 單一檔案產生器只能在設計階段存取，但是 MSBuild 工作可以在設計階段和組建階段使用。 因此，若要獲得最大的彈性，請使用 MSBuild 工作來轉換和產生程式碼。 如需詳細資訊，請參閱 [自訂工具](../../extensibility/internals/custom-tools.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [MSBuild 參考](../../msbuild/msbuild-reference.md)   
- [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)   
+ [Msbuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)   
  [自訂工具](../../extensibility/internals/custom-tools.md)
