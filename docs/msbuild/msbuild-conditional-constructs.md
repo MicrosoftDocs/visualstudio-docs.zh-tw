@@ -23,15 +23,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a7d6693a24d208cab6bd3b58ce16dcba8a32b190
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184285"
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild 條件式建構
 
-MSBuild 提供一種機制，可使用[Choose](../msbuild/choose-element-msbuild.md)、 [When](../msbuild/when-element-msbuild.md)和[其他](../msbuild/otherwise-element-msbuild.md)專案來進行/或處理。
+MSBuild 提供了一種機制，可使用 [Choose](../msbuild/choose-element-msbuild.md)、 [When](../msbuild/when-element-msbuild.md)和 [其他](../msbuild/otherwise-element-msbuild.md) 專案進行/或處理。
 
 ## <a name="use-the-choose-element"></a>使用 Choose 元素
 
@@ -79,7 +79,7 @@ MSBuild 提供一種機制，可使用[Choose](../msbuild/choose-element-msbuild
 </Project>
 ```
 
-在此範例中，會使用編譯器常數的條件 `DEFINED_CONSTANT` 。 這些包含在屬性中 `DefinedConstants` 。 正則運算式會用來比對以分號分隔之清單中的確切常數。
+在此範例中，會使用編譯器常數上的條件 `DEFINED_CONSTANT` 。 這些會包含在 `DefinedConstants` 屬性中。 正則運算式會用來比對分號分隔清單中的精確常數。
 
 ```xml
 <Choose>
@@ -94,6 +94,6 @@ MSBuild 提供一種機制，可使用[Choose](../msbuild/choose-element-msbuild
 ## <a name="see-also"></a>另請參閱
 
 - [Choose 項目 (MSBuild)](../msbuild/choose-element-msbuild.md)
-- [When 元素（MSBuild）](../msbuild/when-element-msbuild.md)
+- [當元素 (MSBuild 時) ](../msbuild/when-element-msbuild.md)
 - [Otherwise 元素 (MSBuild)](../msbuild/otherwise-element-msbuild.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

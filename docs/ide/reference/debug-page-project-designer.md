@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 406b3ecdc0e4e3f0d45c22fc9201bd37c6031152
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85418739"
 ---
 # <a name="debug-page-project-designer"></a>專案設計工具、偵錯頁
@@ -34,7 +34,7 @@ ms.locfileid: "85418739"
 
 下列選項可讓您選取要顯示或修改的設定和平台。
 
-**Configuration**
+**設定**
 
 指定要顯示或修改的組態設定。 設定可以是 [偵錯]**** (預設)、[發行]**** 或 [所有設定]****。
 

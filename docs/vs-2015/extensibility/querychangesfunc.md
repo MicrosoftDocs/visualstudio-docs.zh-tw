@@ -14,18 +14,18 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42f901fa31b3b682c7e19c98f5707adb3b4fb3f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193845"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-這是所使用的回呼函式[SccQueryChanges](../extensibility/sccquerychanges-function.md)操作列舉的檔案名稱集合，並判斷每個檔案的狀態。  
+這是 [SccQueryChanges](../extensibility/sccquerychanges-function.md) 作業用來列舉檔案名集合，並決定每個檔案狀態的回呼函數。  
   
- `SccQueryChanges`函式會取得一份檔案和變數的指標，`QUERYCHANGESFUNC`回呼。 原始檔控制外掛程式列舉指定的清單，並提供每個清單中的檔案 （透過此回呼中） 的狀態。  
+ 函式 `SccQueryChanges` 會提供檔案清單和回呼的指標 `QUERYCHANGESFUNC` 。 原始檔控制外掛程式會列舉指定的清單，並透過此回呼) 為清單中的每個檔案提供狀態 (。  
   
 ## <a name="signature"></a>簽章  
   
@@ -38,22 +38,22 @@ typedef BOOL (*QUERYCHANGESFUNC)(
   
 ## <a name="parameters"></a>參數  
  pvCallerData  
- [in]`pvCallerData`參數傳遞至呼叫端 (IDE) [SccQueryChanges](../extensibility/sccquerychanges-function.md)。 原始檔控制外掛程式應該進行內容的此值做任何假設。  
+ 在 `pvCallerData` 呼叫端傳遞的參數 (IDE) [SccQueryChanges](../extensibility/sccquerychanges-function.md)。 原始檔控制外掛程式不應該對此值的內容進行任何假設。  
   
  pChangesData  
- [in]指標[QUERYCHANGESDATA 結構](#LinkQUERYCHANGESDATA)結構描述檔案的變更。  
+ 在 [QUERYCHANGESDATA 結構](#LinkQUERYCHANGESDATA) 結構的指標，描述檔案的變更。  
   
 ## <a name="return-value"></a>傳回值  
- IDE 會傳回適當的錯誤程式碼：  
+ IDE 會傳回適當的錯誤碼：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|繼續處理。|  
 |SCC_I_OPERATIONCANCELED|停止處理。|  
-|SCC_E_xxx|任何適當的 SCC 錯誤應該停止處理。|  
+|SCC_E_xxx|任何適當的 SCC 錯誤都應該停止處理。|  
   
-## <a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA 結構  
- 傳入的每個檔案結構看起來如下所示：  
+## <a name="querychangesdata-structure"></a><a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA 結構  
+ 傳入的每個檔案結構如下所示：  
   
 ```cpp#  
 struct QUERYCHANGESDATA_A  
@@ -76,31 +76,31 @@ struct QUERYCHANGESDATA_W
 ```  
   
  dwSize  
- 此結構 （以位元組為單位） 的大小。  
+ 此結構的大小 (以位元組為單位) 。  
   
  lpFileName  
- 此項目的原始的檔案名稱。  
+ 這個專案的原始檔案名稱。  
   
  dwChangeType  
- 指出檔案的狀態碼：  
+ 指出檔案狀態的程式碼：  
   
-|程式碼|說明|  
+|程式碼|描述|  
 |----------|-----------------|  
-|`SCC_CHANGE_UNKNOWN`|不知道有哪些變更。|  
-|`SCC_CHANGE_UNCHANGED`|此檔案的名稱並無任何變更。|  
-|`SCC_CHANGE_DIFFERENT`|檔案使用不同的身分識別，但資料庫中有相同的名稱。|  
-|`SCC_CHANGE_NONEXISTENT`|檔案不存在資料庫中或在本機。|  
+|`SCC_CHANGE_UNKNOWN`|無法分辨有哪些變更。|  
+|`SCC_CHANGE_UNCHANGED`|此檔案沒有任何名稱變更。|  
+|`SCC_CHANGE_DIFFERENT`|具有不同身分識別的檔案，但資料庫中有相同的名稱。|  
+|`SCC_CHANGE_NONEXISTENT`|檔案不存在於資料庫或本機中。|  
 |`SCC_CHANGE_DATABASE_DELETED`|在資料庫中刪除的檔案。|  
-|`SCC_CHANGE_LOCAL_DELETED`|在本機刪除的檔案，但該檔案仍存在於資料庫中。 如果無法判別，傳回`SCC_CHANGE_DATABASE_ADDED`。|  
-|`SCC_CHANGE_DATABASE_ADDED`|檔案新增至資料庫，但不在本機上。|  
-|`SCC_CHANGE_LOCAL_ADDED`|檔案不存在資料庫中，且新的本機檔案。|  
-|`SCC_CHANGE_RENAMED_TO`|檔案重新命名或移動資料庫做為`lpLatestName`。|  
-|`SCC_CHANGE_RENAMED_FROM`|檔案重新命名或從資料庫中移動`lpLatestName`; 如果這是過於昂貴，若要追蹤，傳回不同的旗標，例如`SCC_CHANGE_DATABASE_ADDED`。|  
+|`SCC_CHANGE_LOCAL_DELETED`|檔案已在本機刪除，但是檔案仍存在於資料庫中。 如果無法判斷，則傳回 `SCC_CHANGE_DATABASE_ADDED` 。|  
+|`SCC_CHANGE_DATABASE_ADDED`|檔案已加入至資料庫，但不存在於本機。|  
+|`SCC_CHANGE_LOCAL_ADDED`|檔案不存在於資料庫中，而且是新的本機檔案。|  
+|`SCC_CHANGE_RENAMED_TO`|檔案在資料庫中重新命名或移動為 `lpLatestName` 。|  
+|`SCC_CHANGE_RENAMED_FROM`|檔案已在資料庫中重新命名或移動 `lpLatestName` ; 如果這太昂貴而無法追蹤，則傳回不同的旗標，例如 `SCC_CHANGE_DATABASE_ADDED` 。|  
   
  lpLatestName  
- 此項目目前的檔案名稱。  
+ 這個專案目前的檔案名。  
   
 ## <a name="see-also"></a>另請參閱  
- [IDE 所實作的回呼函式](../extensibility/callback-functions-implemented-by-the-ide.md)   
+ [IDE 所執行的回呼函數](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccQueryChanges](../extensibility/sccquerychanges-function.md)   
  [錯誤碼](../extensibility/error-codes.md)

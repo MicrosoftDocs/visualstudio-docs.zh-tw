@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 477b7860c320730d6362cdb7e0fcb46ad3bc7d17
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280527"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>使用 Visual Studio 發佈 Azure 應用程式精靈
@@ -97,7 +97,7 @@ Azure 儲存體帳戶會儲存應用程式部署的封裝。 部署應用程式�
 
 ## <a name="summary-page"></a>摘要頁面
 
-![[摘要]](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
+![摘要](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
 **目標設定檔** - 您可以選擇從您所選擇的設定建立發行設定檔。 例如，您可能會建立一個設定檔用於測試環境，並建立另一個用於生產。 若要儲存這個設定檔，請選擇 [**儲存**] 圖示。 此精靈會建立設定檔並將它儲存在 Visual Studio 專案。 若要修改設定檔名稱，請開啟 [目標設定檔]**** 清單，然後選擇 [&lt;管理...&gt;]****。
 

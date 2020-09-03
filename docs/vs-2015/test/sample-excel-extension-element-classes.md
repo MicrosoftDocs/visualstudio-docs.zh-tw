@@ -9,10 +9,10 @@ caps.latest.revision: 11
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 21c7777be710f0175708629eb9507b34f0d70be2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660457"
 ---
 # <a name="sample-excel-extension-element-classes"></a>範例 Excel 延伸模組：Element 類別
@@ -49,6 +49,6 @@ ms.locfileid: "72660457"
 
  `Utilities` 類別有 Helper 方法，會傳回 UI 的各種資訊。 有些方法會透過直接呼叫外部系統 DLL (例如 **USER32.DLL** 和 **OLEACC.DLL**)，從 UI 取得視窗控制代碼<strong>。</strong>
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  <xref:System.Runtime.InteropServices.ComVisibleAttribute> <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IQueryElement>
  [擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

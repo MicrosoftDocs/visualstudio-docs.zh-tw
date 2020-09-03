@@ -11,22 +11,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 995bf40669a4480f6f1ddfe8071a7885a4659c9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152718"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger 方法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取的所有陣列<xref:System.Threading.Tasks.TaskScheduler>目前使用中的物件。  
+抓取目前作用中之所有物件的陣列 <xref:System.Threading.Tasks.TaskScheduler> 。  
   
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **組件：** mscorlib （在 mscorlib.dll 中)  
+ **元件：** mscorlib.dll) 中的 mscorlib (  
   
- 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。  
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,10 +35,10 @@ ms.locfileid: "68152718"
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 所有陣列<xref:System.Threading.Tasks.TaskScheduler>且目前正在使用中的物件<xref:System.AppDomain>。  
+ <xref:System.Threading.Tasks.TaskScheduler>此中目前作用中之所有物件的陣列 <xref:System.AppDomain> 。  
   
 ## <a name="remarks"></a>備註  
- 這個方法不是安全執行緒，並不應與其他執行個體同時<xref:System.Threading.Tasks.TaskScheduler>。 它應該呼叫偵錯工具中，只在偵錯工具已暫止的其他所有執行緒時。  
+ 這個方法不是安全線程，而且不應該與的其他實例同時使用 <xref:System.Threading.Tasks.TaskScheduler> 。 只有當偵錯工具暫停所有其他執行緒時，才應該從偵錯工具呼叫它。  
   
 ## <a name="see-also"></a>另請參閱  
  [TaskScheduler 類別](../../extensibility/debugger/taskscheduler-class-internal-members.md)

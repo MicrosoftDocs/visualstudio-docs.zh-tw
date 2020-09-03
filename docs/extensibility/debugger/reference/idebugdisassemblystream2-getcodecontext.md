@@ -1,5 +1,5 @@
 ---
-title: IDebugdisassemblystream2::獲取代碼上下文 |微軟文件
+title: IDebugDisassemblyStream2：： GetCodeCoNtext |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a6b3864528ee90c22a1e7122eeaf1969f613cc8e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732293"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
-返回與指定代碼位置識別碼內容的程式碼上下文物件。
+傳回對應至指定之程式碼位置識別碼的程式碼內容物件。
 
 ## <a name="syntax"></a>語法
 
@@ -43,18 +43,18 @@ int GetCodeContext( 
 
 ## <a name="parameters"></a>參數
 `uCodeLocationId`\
-[在]指定代碼位置識別碼。 有關代碼位置識別碼的說明,請參閱[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)方法的備註部分。
+在指定程式碼位置識別碼。 如需程式碼位置識別碼的描述，請參閱 [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) 方法的備註一節。
 
 `ppCodeContext`\
-[出]返回表示關聯代碼上下文的[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件。
+擴展傳回代表相關聯程式碼內容的 [IDebugCodeCoNtext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 代碼位置識別碼可以從對[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)方法的呼叫傳回,並可以顯示在[「拆解資料」](../../../extensibility/debugger/reference/disassemblydata.md)結構中。
+ 程式碼位置識別碼可以從 [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md) 方法的呼叫傳回，而且可以出現在 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 結構中。
 
- 要將代碼上下文轉換為代碼位置識別碼,請呼叫[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)方法。
+ 若要將程式碼內容轉換成程式碼位置識別碼，請呼叫 [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) 方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

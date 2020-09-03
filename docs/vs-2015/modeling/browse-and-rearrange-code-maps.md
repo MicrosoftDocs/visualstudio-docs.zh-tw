@@ -29,7 +29,7 @@ ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312115"
+ms.locfileid: "89316107"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>瀏覽和重新排列 Code Map
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

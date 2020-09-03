@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531387"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>將命令和軌跡新增至相依性圖表
 
-您可以在 Visual Studio 中的相依性圖表上定義右鍵功能表命令和軌跡處理常式。 您可以將這些擴充功能封裝成 Visual Studio 整合擴充功能 (VSIX)，您可將這整合擴充功能散發給其他 Visual Studio 使用者。
+您可以在 Visual Studio 的相依性圖表上，定義右鍵功能表命令和軌跡處理常式。 您可以將這些擴充功能封裝成 Visual Studio 整合擴充功能 (VSIX)，您可將這整合擴充功能散發給其他 Visual Studio 使用者。
 
 您可以視需要在相同的 Visual Studio 專案中定義許多命令和軌跡處理常式。 您也可以將許多這類專案合併成單一 VSIX。 例如，您可以定義包含圖層命令的單一 VSIX，以及特定領域的語言。
 
 > [!NOTE]
-> 您也可以自訂架構驗證，其中使用者的原始程式碼會與相依性圖表進行比較。 您應該要在個別的 Visual Studio 專案中定義架構驗證。 您可以將它加入相同的 VSIX，就像其他擴充功能一樣。 如需詳細資訊，請參閱[將自訂架構驗證加入至](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)相依性圖表。
+> 您也可以自訂架構驗證，其中使用者的原始程式碼會與相依性圖表進行比較。 您應該要在個別的 Visual Studio 專案中定義架構驗證。 您可以將它加入相同的 VSIX，就像其他擴充功能一樣。 如需詳細資訊，請參閱 [將自訂架構驗證加入至](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)相依性圖表。
 
 ## <a name="requirements"></a>需求
 
@@ -34,13 +34,13 @@ ms.locfileid: "85531387"
 
 建立擴充功能最快速的方法是使用專案範本。 這樣做會將程式碼和 VSIX 資訊清單放入相同的專案中。
 
-1. 建立新的**圖層設計工具命令延伸**模組或**圖層設計工具手勢延伸**模組專案。
+1. 建立新的 **圖層設計工具命令延伸** 模組或 **圖層設計工具手勢延伸** 模組專案。
 
    此範本隨即建立包含小型工作範例的專案。
 
-2. 若要測試擴充功能，請按**Ctrl** + **F5**或**F5**。
+2. 若要測試擴充功能，請按下**Ctrl** + **F5**或**F5**。
 
-    Visual Studio 啟動的實驗實例。 在此實例中，建立相依性圖表。 您的命令或軌跡擴充功能應該會在此圖表中運作。
+    Visual Studio 的實驗實例隨即啟動。 在此情況下，請建立相依性圖表。 您的命令或軌跡擴充功能應該會在此圖表中運作。
 
 3. 關閉此實驗執行個體並修改此範例程式碼。
 
@@ -52,17 +52,17 @@ ms.locfileid: "85531387"
 
 ::: moniker range="vs-2017"
 
-5. 若要在 Visual Studio 的主要實例或另一部電腦上安裝擴充功能，請在*bin*目錄中尋找 *.vsix*檔案。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要將它卸載，請選擇 [**工具**] 功能表上的 [**擴充功能和更新**]。
+5. 若要在 Visual Studio 的主要實例或其他電腦上安裝此延伸模組，請在*bin*目錄中尋找 *.vsix*檔案。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要卸載，請選擇 [**工具**] 功能表上的 [**擴充功能和更新**]。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-5. 若要在 Visual Studio 的主要實例或另一部電腦上安裝擴充功能，請在*bin*目錄中尋找 *.vsix*檔案。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要卸載它，請選擇 [**擴充**功能] 功能表上的 [**管理延伸**模組]。
+5. 若要在 Visual Studio 的主要實例或其他電腦上安裝此延伸模組，請在*bin*目錄中尋找 *.vsix*檔案。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要卸載，請選擇 [**延伸**模組] 功能表上的 [**管理擴充**功能]。
 
 ::: moniker-end
 
-## <a name="add-a-command-or-gesture-to-a-separate-vsix"></a>在個別的 VSIX 中新增命令或手勢
+## <a name="add-a-command-or-gesture-to-a-separate-vsix"></a>將命令或手勢新增至不同的 VSIX
 
 如果您想要建立包含命令、圖層驗證程式和其他擴充功能的單一 VSIX，建議您應建立單一專案來定義此 VSIX，並且針對此處理常式建立個別專案。
 
@@ -71,9 +71,9 @@ ms.locfileid: "85531387"
    > [!NOTE]
    > 雖然您可以在單一類別庫中定義多個命令或軌跡處理常式類別，不過您應該在個別的類別庫中定義圖層驗證類別。
 
-2. 在您的方案中新增或建立 VSIX 專案。 VSIX 專案包含名為**extension.vsixmanifest**的檔案。
+2. 在您的方案中加入或建立 VSIX 專案。 VSIX 專案包含名為 **extension.vsixmanifest**的檔案。
 
-3. 在**方案總管**中，以滑鼠右鍵按一下 VSIX 專案，然後選擇 [**設定為啟始專案**]。
+3. 在 **方案總管**中，以滑鼠右鍵按一下 VSIX 專案，然後選擇 [ **設定為啟始專案**]。
 
 4. 在 **source.extension.vsixmanifest**的 [資產] **** 底下，加入命令或軌跡處理常式專案做為 MEF 元件。
 
@@ -102,11 +102,11 @@ ms.locfileid: "85531387"
 
      [定義軌跡處理常式](#gesture)
 
-7. 若要測試此功能，請按**Ctrl** + **F5**或**F5**。
+7. 若要測試此功能，請按下**Ctrl** + **F5**或**F5**。
 
    Visual Studio 的實驗執行個體隨即開啟。 在此實例中，建立或開啟相依性圖表。
 
-8. 若要在 Visual Studio 的主要實例或另一部電腦上安裝 VSIX，請在 VSIX 專案的**bin**目錄中尋找 **.vsix**檔案。 將它複製到您想要安裝 VSIX 的電腦。 按兩下 [檔案瀏覽器] 中的 VSIX 檔案。
+8. 若要在 Visual Studio 的主要實例中或在另一部電腦上安裝 VSIX，請在 VSIX 專案的**bin**目錄中尋找 **.vsix**檔案。 將它複製到您想要安裝 VSIX 的電腦。 在檔案總管中，按兩下 VSIX 檔案。
 
 ## <a name="defining-a-menu-command"></a><a name="command"></a> 定義功能表命令
 
@@ -214,7 +214,7 @@ namespace MyLayerExtension // Change to your preference.
 
 ## <a name="defining-a-gesture-handler"></a><a name="gesture"></a> 定義軌跡處理常式
 
-當使用者將專案拖曳到相依性圖表上，以及當使用者按兩下圖表中的任何位置時，軌跡處理常式就會回應。
+當使用者將專案拖曳至相依性圖表，以及當使用者按兩下圖表中的任何位置時，軌跡處理常式就會回應。
 
 對於現有的命令或軌跡處理常式 VSIX 專案，您可以加入定義軌跡處理常式的程式碼檔案：
 
@@ -259,7 +259,7 @@ namespace MyLayerExtensions // change to your preference
     }
     ```
 
-- 針對某些拖曳項目類型的處理常式早已受到定義。 例如，使用者可以將專案從方案總管拖曳至相依性圖表。 您無法針對這些項目類型定義拖曳處理常式。 在這些情況下，不會叫用您的 `DragDrop` 方法。
+- 針對某些拖曳項目類型的處理常式早已受到定義。 例如，使用者可以將方案總管中的專案拖曳至相依性圖表。 您無法針對這些項目類型定義拖曳處理常式。 在這些情況下，不會叫用您的 `DragDrop` 方法。
 
 ## <a name="see-also"></a>另請參閱
 

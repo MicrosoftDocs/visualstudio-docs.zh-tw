@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bbb43408dc12c55b72eb0ca0909d8b261198a5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68926163"
 ---
 # <a name="publish-page-project-designer"></a>專案設計工具、發行頁
@@ -49,7 +49,7 @@ ms.locfileid: "68926163"
 
 開啟 [應用程式檔案] 對話方塊，以用來指定個別檔案的安裝方式和位置。
 
- **必要條件**
+ **先決條件**
 
 開啟 [必要條件] 對話方塊，以用來指定將必備元件 (例如 .NET Framework) 和應用程式安裝在一起。
 
@@ -82,18 +82,18 @@ ms.locfileid: "68926163"
 ## <a name="see-also"></a>另請參閱
 
 - [發行 ClickOnce 應用程式](../../deployment/publishing-clickonce-applications.md)
-- [如何：使用發佈嚮導發佈 ClickOnce 應用程式](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-- [如何：指定視覺化工作室複製檔的位置](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
-- [如何：指定最終使用者將從何處安裝](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
-- [如何：為技術支援指定連結](../../deployment/how-to-specify-a-link-for-technical-support.md)
-- [如何：指定"按一下一次離線"或連線安裝模式](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
-- [如何：為 CD 安裝啟用自動啟動](../../deployment/how-to-enable-autostart-for-cd-installations.md)
-- [如何：設置 ClickOnce 發佈版本](../../deployment/how-to-set-the-clickonce-publish-version.md)
-- [如何：自動增加點擊發佈版本](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
-- [如何：指定由 ClickOnce 發佈的檔](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
-- [如何：使用 ClickOnce 應用程式安裝先決條件](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [如何：使用發佈嚮導發行 ClickOnce 應用程式](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [如何：指定 Visual Studio 複製檔案的位置](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
+- [如何：指定終端使用者將安裝的位置](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
+- [如何：指定技術支援的連結](../../deployment/how-to-specify-a-link-for-technical-support.md)
+- [如何：指定 ClickOnce 離線或線上安裝模式](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
+- [如何：啟用 CD 安裝的 AutoStart](../../deployment/how-to-enable-autostart-for-cd-installations.md)
+- [如何：設定 ClickOnce 發行版本](../../deployment/how-to-set-the-clickonce-publish-version.md)
+- [如何：自動遞增 ClickOnce 發行版本](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
+- [如何：指定哪些檔案是由 ClickOnce 發行](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
+- [如何：使用 ClickOnce 應用程式安裝必要條件](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [如何：管理 ClickOnce 應用程式的更新](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
-- [如何：更改 ClickOnce 應用程式的發佈語言](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
-- [如何：為 ClickOnce 應用程式指定開始功能表名稱](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
-- [如何：為點擊次數應用程式指定發佈頁面](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
-- [按一下"一次安全和部署"](../../deployment/clickonce-security-and-deployment.md)
+- [如何：變更 ClickOnce 應用程式的發行語言](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
+- [如何：指定 ClickOnce 應用程式的開始功能表名稱](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
+- [如何：指定 ClickOnce 應用程式的發行頁面](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
+- [ClickOnce 安全性和部署](../../deployment/clickonce-security-and-deployment.md)

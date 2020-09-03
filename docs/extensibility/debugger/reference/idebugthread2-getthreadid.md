@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::獲取ThreadId |微軟文件
+title: IDebugThread2：： GetThreadId |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a7788cc09d92ff4c784fbcb7004393fe0d3074c8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718700"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
-獲取系統線程標識符。
+取得系統執行緒識別碼。
 
 ## <a name="syntax"></a>語法
 
@@ -41,16 +41,16 @@ int GetThreadId (
 
 ## <a name="parameters"></a>參數
 `pdwThreadId`\
-[出]返回系統線程標識符。
+擴展傳回系統執行緒識別碼。
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則,返回錯誤代碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
-線程ID用於標識進程中所有其他線程之間的線程。
+執行緒識別碼是用來識別進程中所有其他執行緒之間的執行緒。
 
 ## <a name="example"></a>範例
-下面的範例展示如何實現[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)介面的簡單`CProgram`物件實現此方法。
+下列範例示範如何針對實 IDebugThread2 介面的簡單物件，執行這個方法 `CProgram` 。 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 
 ```cpp
 HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {

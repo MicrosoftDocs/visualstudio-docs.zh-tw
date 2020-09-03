@@ -20,16 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 20c22e0ea2ef05c108ebe564b186ede2a02f9dfe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162421"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 項目 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-包含一組使用者定義的 [Item](../msbuild/item-element-msbuild.md) 項目。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案中使用的每個項目 (Item)，都必須指定為 `ItemGroup` 項目 (Element) 的子系。  
+包含一組使用者定義的 [Item](../msbuild/item-element-msbuild.md) 元素。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案中使用的每個項目 (Item)，都必須指定為 `ItemGroup` 項目 (Element) 的子系。  
   
  \<Project>  
  \<ItemGroup>  
@@ -44,23 +44,23 @@ ms.locfileid: "68162421"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`Condition`|選擇性屬性。 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[Item](../msbuild/item-element-msbuild.md)|定義建置程序的輸入。 `ItemGroup` 中可能有零或多個 `Item` 項目。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|元素|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[專案](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔案的必要根項目。|  
 |[Target](../msbuild/target-element-msbuild.md)|從 .NET Framework 3.5 開始，`ItemGroup` 項目可以出現在 `Target` 項目內部。 如需詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。|  
@@ -88,6 +88,6 @@ ms.locfileid: "68162421"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
- [項目](../msbuild/msbuild-items.md)   
- [通用的 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)
+ [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)   
+ [專案](../msbuild/msbuild-items.md)   
+ [一般 MSBuild 專案專案](../msbuild/common-msbuild-project-items.md)

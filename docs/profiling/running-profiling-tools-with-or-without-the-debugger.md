@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b3d50f8fcad0294adec032322229e9dd6cedac2
-ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88508076"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>使用或不使用偵錯工具來執行分析工具

@@ -1,5 +1,5 @@
 ---
-title: LocationField 項目 （Visual Studio 專案範本） |Microsoft Docs
+title: " (Visual Studio 專案範本的 LocationField 元素) |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,20 +13,20 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b28fe0e696b23724758bd877b6031287290f879e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194458"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 項目 (Visual Studio 專案範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-指定是否**位置**中的文字方塊**新的專案** 對話方塊中已啟用、 停用，或隱藏專案範本。  
+指定是否針對專案範本啟用、停用或隱藏 [**新增專案**] 對話方塊中的 [**位置**] 文字方塊。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<LocationField >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<LocationField>  
   
 ## <a name="syntax"></a>語法  
   
@@ -47,25 +47,25 @@ ms.locfileid: "68194458"
   
 |項目|描述|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義中顯示的方式**新的專案**。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義它在 **新專案**中顯示的方式。|  
   
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 有效的文字值如下：  
+ 有效的文字值為：  
   
-- `Enabled`其中指定**位置**的方塊**新的專案** 對話方塊中已啟用。  
+- `Enabled`，指定啟用 [**新增專案**] 對話方塊的 [**位置**] 方塊。  
   
-- `Disabled`其中指定**位置**的方塊**新的專案** 對話方塊中已停用。  
+- `Disabled`，指定 [**新增專案**] 對話方塊的 [**位置**] 方塊已停用。  
   
-- `Hidden`其中指定**位置**的方塊**新的專案**隱藏的對話方塊。  
+- `Hidden`，指定隱藏 [**新增專案**] 對話方塊的 [**位置**] 方塊。  
   
 ## <a name="remarks"></a>備註  
- 預設值為 `Enabled`。  
+ 預設值是 `Enabled`。  
   
- **位置**中的文字方塊**新的專案**對話方塊可讓使用者能夠變更已儲存新專案的預設目錄。  
+ [**新增專案**] 對話方塊中的 [**位置**] 文字方塊可讓使用者變更儲存新專案的預設目錄。  
   
- 中指定的值`Location`項目才會接受對話方塊如果基礎專案系統支援它。  
+ `Location`只有當基礎專案系統支援時，才會接受元素中指定的值。  
   
 ## <a name="example"></a>範例  
  下列範例說明 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 範本的中繼資料。  
@@ -96,5 +96,5 @@ ms.locfileid: "68194458"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

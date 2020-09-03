@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589574"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>產生和執行 Web 效能測試程式碼
@@ -85,14 +85,14 @@ Web 效能測試是透過瀏覽您的 Web 應用程式來錄製。 測試包含�
 ## <a name="qa"></a>問答集
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>問：我可以同時執行多個測試嗎？
-**答：** 是，使用**解決方案資源管理器**中的按右鍵（上下文）功能表。
+**答：** 是，請在 **方案總管**中使用滑鼠右鍵 (內容) ] 功能表。
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>問：我應該在產生程式碼測試之前或之後加入資料來源？
 **答：** 在您產生自動程式化測試之前，新增[資料來源](../test/add-a-data-source-to-a-web-performance-test.md)比較容易，因為會自動產生程式碼。
 
 當您執行具有資料來源的程式碼測試時，可能會看到下列錯誤訊息：
 
-**無法在代理程式 \<電腦名稱> 上執行測試 \<測試名稱>：物件參考未設定為物件的執行個體。**
+**無法 \<Test Name> 在代理程式上執行測試 \<Computer Name> ：物件參考未設定為物件的實例。**
 
 發生此錯誤的原因是測試類別擁有已定義的 DataSourceAttribute，而沒有相對應的 DataBindingAttribute。 若要解決這個錯誤，請加入適當的 DataBindingAttribute、刪除它，或在程式碼註解它。
 

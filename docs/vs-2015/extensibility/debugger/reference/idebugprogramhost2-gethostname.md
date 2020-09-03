@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramHost2::GetHostName |Microsoft Docs
+title: IDebugProgramHost2：： GetHostName |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb7ceae40282115dc455691789c3882a1620e829
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165120"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得標題、 易記名稱或此程式的裝載處理序的檔案名稱。  
+取得此程式之裝載進程的標題、易記名稱或檔案名。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,16 +42,16 @@ int GetHostName( 
   
 #### <a name="parameters"></a>參數  
  `dwType`  
- [in]值，以從[GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)列舉型別。  
+ 在 [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) 列舉中的值。  
   
  `pbstrHostName`  
- [out]傳回要求的裝載處理序的名稱。  
+ 擴展傳回裝載進程的要求名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 在典型的實作，這個方法，`dwType`參數會被忽略，並傳回主機電腦的易記名稱。 另一個可能的實作是將傳遞`dwType`參數來呼叫[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)方法來取得名稱。  
+ 在此方法的一般執行中， `dwType` 會忽略參數，並傳回主機電腦的易記名稱。 另一種可能的實現方式是將 `dwType` 參數傳遞至 [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) 方法的呼叫，以取得名稱。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)   

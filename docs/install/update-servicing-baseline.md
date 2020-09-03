@@ -14,17 +14,17 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: '>=vs-2019'
 ms.openlocfilehash: f185451a7f12c3c0b24d74d4a24b40d986ec536f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184389"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>在維護基底上時更新 Visual Studio
 
 我們會在其產品生命週期中經常更新 Visual Studio。 更新有兩種類型： 
 
-* **次要版本更新** &mdash;例如，16.0 到 16.1 &mdash; ，其中包含新的功能和元件。  
+* **次要版本更新** &mdash;例如， &mdash; 包含新功能和元件的16.0 到16.1。  
 * **服務更新** (例如 16.0.4 至 16.0.5)，其中僅包含重大問題的目標修正程式。
 
 企業系統管理員可以選擇將其用戶端保持在維護基準。 維護基準由維護更新支援，直到下一個維護基準發行過後一年。
@@ -49,7 +49,7 @@ ms.locfileid: "84184389"
 
 ### <a name="install-a-servicing-baseline-via-the-internet"></a>透過網際網路安裝服務基準
 
-針對網際網路型安裝，請將 `--channelUri` 與不存在的通道資訊清單新增至用來啟動安裝程式的命令列。 這會禁止 Visual Studio 使用最新的可用版本進行更新。 以下是範例：
+針對網際網路型安裝，請將 `--channelUri` 與不存在的通道資訊清單新增至用來啟動安裝程式的命令列。 這會禁止 Visual Studio 使用最新的可用版本進行更新。 以下為範例：
 
 ```cmd
 vs_enterprise.exe --channelUri c:\doesnotexist.chman

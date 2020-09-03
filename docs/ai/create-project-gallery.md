@@ -11,10 +11,10 @@ ms.topic: how-to
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bcc1932bad5b34d9695257feb163654f6b99514
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85371621"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>在 Visual Studio 中從 Azure Machine Learning 資源庫建立 AI 專案

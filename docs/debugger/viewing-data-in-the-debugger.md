@@ -20,25 +20,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 63dc11736e92013719fcda2bae0ba9599a8835aa
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72568998"
 ---
-# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>在 Visual Studio 偵錯工具（C#、Visual Basic、 C++）中建立資料的自訂視圖
+# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>在 Visual Studio 偵錯工具中建立資料的自訂資料檢視 (c #、Visual Basic、c + +) 
 
-@No__t_0 偵錯工具提供許多工具來檢查和修改程式的狀態。 這些工具大多數只能在中斷模式下運作。
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]偵錯工具提供許多工具來檢查和修改程式的狀態。 這些工具大多數只能在中斷模式下運作。
 
 ## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>在變數視窗和資料提示中建立資料的自訂視圖
 
- 許多[偵錯工具視窗](../debugger/debugger-windows.md)（例如 [自動變數 ] 和 **[監看式]** 視窗）都可讓您檢查變數。 您可以自訂C++類型、受管理物件和您自己的類型在偵錯工具變數視窗和[資料提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)中的顯示方式。 如需詳細資訊，請參閱[建立物件C++的自訂視圖](../debugger/create-custom-views-of-native-objects.md)和[建立受控物件的自訂視圖](../debugger/create-custom-views-of-managed-objects.md)。
+ 許多 [偵錯工具視窗](../debugger/debugger-windows.md)（例如 [自動變數] **和 [** **監看式]** 視窗）都可讓您檢查變數。 您可以自訂 c + + 類型、managed 物件和您自己的類型如何顯示在偵錯工具變數視窗和 [資料提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)中。 如需詳細資訊，請參閱 [建立 c + + 物件的自訂視圖](../debugger/create-custom-views-of-native-objects.md) ，以及 [建立受控物件的自訂視圖](../debugger/create-custom-views-of-managed-objects.md)。
 
 ## <a name="create-custom-visualizers"></a>建立自訂視覺化檢視
 
- 視覺化程式可讓您以有意義的方式來查看物件或變數的內容。 在 Visual Studio 偵錯工具中，視覺化檢視是指您可以使用放大鏡![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "視覺化檢視圖示")圖示開啟的不同視窗。 例如，HTML 視覺化程式會顯示 HTML 字串在瀏覽器中的轉譯和顯示方式。 您可以從資料提示、[**監看**式] 視窗、[自動變數] 視窗和 [**區域變數** **] 視窗**存取視覺化檢視。 [**快速**監看式] 對話方塊也會提供視覺化。 如需詳細資訊，請參閱[建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)。
+ 視覺化程式可讓您以有意義的方式來查看物件或變數的內容。 在 Visual Studio 偵錯工具中，視覺化程式是指您可以使用放大鏡 ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "視覺化檢視圖示") 圖示來開啟的不同視窗。 例如，HTML 視覺化程式會顯示 HTML 字串在瀏覽器中的解讀和顯示方式。 您可以從 [資料**提示]、** [**監看**式] 視窗、[自動**變數**] 視窗和 [區域變數] 視窗存取視覺化檢視。 [ **快速** 監看式] 對話方塊也會提供視覺化。 如需詳細資訊，請參閱[建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [命令視窗](../ide/reference/command-window.md)

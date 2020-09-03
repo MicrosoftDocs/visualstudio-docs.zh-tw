@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5da78c33af599accf5ff3a2e09a9afb52982573a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149285"
 ---
 # <a name="counter"></a>計數器
@@ -50,13 +50,13 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
 ## <a name="required-options"></a>必要選項  
  Counter 選項只能與下列其中一個選項搭配使用：  
   
- **Start:** `Trace`  
+ **開始：**`Trace`  
  將分析工具初始化以使用檢測方法。  
   
- **Launch：** `AppName`  
+ **啟動：**`AppName`  
  啟動指定的應用程式和分析工具。 分析工具必須先初始化才能使用取樣方法。  
   
- **Attach:** `PID`  
+ **附加：**`PID`  
  啟動分析工具，並將它附加至處理序 ID 所指定的處理序。 分析工具必須先初始化才能使用取樣方法。  
   
 ## <a name="example"></a>範例  
@@ -74,7 +74,7 @@ VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /Counter:L2InstructionFetches
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [>vsperfcmd](../profiling/vsperfcmd.md)   
+ [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)

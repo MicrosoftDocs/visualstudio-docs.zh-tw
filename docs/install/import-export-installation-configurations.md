@@ -19,10 +19,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 4dcad21ce0a77e18bed0b077f731a509916e9e63
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85418817"
 ---
 # <a name="import-or-export-installation-configurations"></a>匯入或匯出安裝組態
@@ -70,7 +70,7 @@ ms.locfileid: "85418817"
 
 ## <a name="automatically-install-missing-components"></a>自動安裝遺漏的元件
 
-**Visual Studio 2019 的新**功能：當您將 .vsconfig 檔案儲存至方案根目錄，然後開啟方案時，Visual Studio 會自動偵測哪些元件遺失，並提示您進行安裝。
+**Visual Studio 2019 中的新**功能：當您將 .vsconfig 檔案儲存至方案根目錄，然後開啟方案時，Visual Studio 會自動偵測遺失的元件，並提示您安裝它們。
 
 ![[方案總管] 建議使用其他元件](../install/media/vs-2019/solution-explorer-config-file.png)
 

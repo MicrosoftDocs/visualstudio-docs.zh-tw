@@ -1,5 +1,5 @@
 ---
-title: 如何：以程式設計方式在檔中定義及選取範圍
+title: 如何：以程式設計方式定義和選取檔中的範圍
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,14 +17,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5af4ceeb37574fef6eb55d80f3c173b71ac090e0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545947"
 ---
-# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>如何：以程式設計方式在檔中定義及選取範圍
-  您也可以使用 <xref:Microsoft.Office.Interop.Word.Range> 物件定義 Microsoft Office Word 文件中的範圍。 您可以透過數種方式來選取整份檔，例如，使用 <xref:Microsoft.Office.Interop.Word.Range.Select%2A> 物件的方法 <xref:Microsoft.Office.Interop.Word.Range> ，或是使用 <xref:Microsoft.Office.Tools.Word.Document> 類別（在檔層級自訂中）或 <xref:Microsoft.Office.Interop.Word.Document> 類別（在 VSTO 增益集中）的 Content 屬性。
+# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>如何：以程式設計方式定義和選取檔中的範圍
+  您也可以使用 <xref:Microsoft.Office.Interop.Word.Range> 物件定義 Microsoft Office Word 文件中的範圍。 您可以使用數種方式來選取整份檔，例如，使用 <xref:Microsoft.Office.Interop.Word.Range.Select%2A> 物件的方法 <xref:Microsoft.Office.Interop.Word.Range> ，或使用 <xref:Microsoft.Office.Tools.Word.Document> 檔層級自訂) 中 (類別的 Content 屬性，或在 <xref:Microsoft.Office.Interop.Word.Document> VSTO 增益集) 中使用類別 (。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -45,7 +45,7 @@ ms.locfileid: "85545947"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#18)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#18)]
 
-## <a name="select-a-range-in-a-document-level-customization"></a>選取檔層級自訂中的範圍
+## <a name="select-a-range-in-a-document-level-customization"></a>在檔層級自訂中選取範圍
  下列範例示範如何使用 <xref:Microsoft.Office.Interop.Word.Range> 物件的 <xref:Microsoft.Office.Interop.Word.Range.Select%2A> 方法或使用 <xref:Microsoft.Office.Tools.Word.Document> 類別的 <xref:Microsoft.Office.Tools.Word.Document.Content%2A> 屬性來選取整份文件。
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>使用 Select 方法將整份文件選取為範圍
@@ -80,7 +80,7 @@ ms.locfileid: "85545947"
      [!code-vb[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#23)]
 
-2. 請檢查檔中是否至少有兩個句子，設定範圍的*開始*和*結束*引數，然後選取範圍。
+2. 請檢查檔中是否至少有兩個句子，設定範圍的 *開始* 與 *結束* 引數，然後選取範圍。
 
      [!code-vb[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#24)]
@@ -120,7 +120,7 @@ ms.locfileid: "85545947"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#23)]
 
-2. 請檢查檔中是否至少有兩個句子，設定範圍的*開始*和*結束*引數，然後選取範圍。
+2. 請檢查檔中是否至少有兩個句子，設定範圍的 *開始* 與 *結束* 引數，然後選取範圍。
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#24)]
@@ -128,8 +128,8 @@ ms.locfileid: "85545947"
 ## <a name="see-also"></a>另請參閱
 - [Word 物件模型總覽](../vsto/word-object-model-overview.md)
 - [如何：以程式設計方式在檔中擴充範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [如何：以程式設計方式取出範圍中的開頭和結尾字元](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
+- [如何：以程式設計方式取得範圍中的開始和結束字元](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
 - [如何：以程式設計方式在檔中擴充範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [如何：以程式設計方式重設 Word 檔中的範圍](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [如何：以程式設計方式在 Word 檔中重設範圍](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
 - [如何：以程式設計方式折迭檔中的範圍或選取專案](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
 - [如何：以程式設計方式在建立範圍時排除段落標記](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)

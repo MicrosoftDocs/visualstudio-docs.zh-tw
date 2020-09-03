@@ -1,5 +1,5 @@
 ---
-title: 參考項目 （Visual Studio 範本） |Microsoft Docs
+title: " (Visual Studio 範本的參考元素) |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,10 +14,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c3d67fd19122e160159a6f636516dbca582fe31d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193840"
 ---
 # <a name="reference-element-visual-studio-templates"></a>參考項目 (Visual Studio 範本)
@@ -25,10 +25,10 @@ ms.locfileid: "68193840"
 
 指定項目加入專案時要加入的組件參考。  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateContent>  
- \<參考 >  
- \<參考 >  
+ \<References>  
+ \<Reference>  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,23 +46,23 @@ ms.locfileid: "68193840"
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
-|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定的範本會使用該組件的參考加入至專案的組件的相關資訊。 必須有一個`Assembly`中的項目每個`Reference`項目。|  
+|[裝配](../extensibility/assembly-element-visual-studio-templates.md)|必要元素。<br /><br /> 指定元件的相關資訊，範本會使用此元件將該元件的參考加入至專案。 `Assembly`每個元素中都必須有一個元素 `Reference` 。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
-|[參考](../extensibility/references-element-visual-studio-templates.md)|群組的範本加入至專案的組件參考。|  
+|[參考](../extensibility/references-element-visual-studio-templates.md)|將範本加入至專案的元件參考組成群組。|  
   
 ## <a name="remarks"></a>備註  
  `Reference` 是 `References` 的必要子項目。  
   
- `Reference`並`References`項目僅適用於具有.vstemplate 檔案中`Type`屬性值`Item`。  
+ `Reference`和 `References` 元素只能用在具有 `Type` 屬性值的 .vstemplate 檔案中 `Item` 。  
   
 ## <a name="example"></a>範例  
- 下列範例說明`TemplateContent`的項目範本的項目。 這個 XML 加入 System.dll 和 System.Data.dll 組件的參考。  
+ 下列範例說明 `TemplateContent` 專案範本的元素。 這個 XML 會將參考加入 System.dll 和 System.Data.dll 元件。  
   
 ```  
 <TemplateContent>  
@@ -83,5 +83,5 @@ ms.locfileid: "68193840"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

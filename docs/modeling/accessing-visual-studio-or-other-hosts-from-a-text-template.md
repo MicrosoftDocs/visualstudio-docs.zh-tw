@@ -9,22 +9,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 068de3c14240bc7e13be0e2e564c2c4e6034f987
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531413"
 ---
 # <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>從文字模板存取 Visual Studio 或其他主機
 
-在文字模板中，您可以使用執行範本的主控制項所公開的方法和屬性。 Visual Studio 是主機的範例。
+在文字模板中，您可以使用執行範本的主機所公開的方法和屬性。 Visual Studio 是主機的範例。
 
 > [!NOTE]
-> 您可以在一般文字模板中使用主控制項方法和屬性，但不能在前置處理過*的文字模板*中使用。
+> 您可以使用一般文字模板中的主控制項方法和屬性，但不能使用前置處理 *過的文字* 範本。
 
 ## <a name="obtain-access-to-the-host"></a>取得主機的存取權
 
-若要存取主機，請 `hostspecific="true"` 在指示詞中設定 `template` 。 現在您可以使用 `this.Host` ，其型別為[ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))。 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))類型具有可供您用來解析檔案名和記錄錯誤的成員，例如。
+若要存取主機，請 `hostspecific="true"` 在指示詞中設定 `template` 。 現在您可以使用 `this.Host` ，其具有類型 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))。 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))型別具有可用來解析檔案名和記錄錯誤的成員，例如。
 
 ### <a name="resolve-file-names"></a>解析檔案名
 
@@ -44,7 +44,7 @@ Content of myFile is:
 
 ### <a name="display-error-messages"></a>顯示錯誤訊息
 
-這個範例會在您轉換範本時記錄訊息。 如果 Visual Studio 主機，則會將錯誤新增至**錯誤清單**。
+當您轉換範本時，此範例會記錄訊息。 如果主機 Visual Studio，錯誤會新增至 **錯誤清單**。
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -64,9 +64,9 @@ Content of myFile is:
 
 如果您要在 Visual Studio 中執行文字模板，您可以使用 `this.Host` 來存取 Visual Studio 所提供的服務，以及任何已載入的封裝或延伸模組。
 
-設定 hostspecific = "true"，並將轉換 `this.Host` 為 <xref:System.IServiceProvider> 。
+Set hostspecific = "true" 並轉換 `this.Host` 成 <xref:System.IServiceProvider> 。
 
-這個範例會取得 <xref:EnvDTE.DTE> 做為服務的 VISUAL STUDIO API：
+此範例會取得作為服務的 Visual Studio API <xref:EnvDTE.DTE> ：
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -80,6 +80,6 @@ Content of myFile is:
 Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
 ```
 
-## <a name="use-hostspecific-with-template-inheritance"></a>使用 hostSpecific 搭配範本繼承
+## <a name="use-hostspecific-with-template-inheritance"></a>搭配使用 hostSpecific 與範本繼承
 
-`hostspecific="trueFromBase"`如果您也使用 `inherits` 屬性，而且如果您繼承自指定的範本，請指定 `hostspecific="true"` 。 如果沒有，您可能會收到編譯器警告，指出屬性已宣告 `Host` 兩次。
+指定 `hostspecific="trueFromBase"` 是否也要使用 `inherits` 屬性，如果您繼承自指定的範本，則為 `hostspecific="true"` 。 如果沒有，您可能會收到編譯器警告，指出該屬性 `Host` 已宣告兩次。

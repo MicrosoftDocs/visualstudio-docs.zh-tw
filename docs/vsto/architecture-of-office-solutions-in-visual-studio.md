@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0842cab03ba92568b0b672e2b8d257af4b6aa490
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551872"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Visual Studio 中的 Office 方案架構
@@ -43,7 +43,7 @@ ms.locfileid: "69551872"
 
 [VSTO 增益集的登錄專案](../vsto/registry-entries-for-vsto-add-ins.md)
 
-描述使用者電腦探索和載入 VSTO 增益集所需的登錄機碼。
+描述在使用者電腦上探索和載入 VSTO 增益集所需的登錄機碼。
 
 [自訂文件屬性總覽](../vsto/custom-document-properties-overview.md)
 
@@ -51,11 +51,11 @@ ms.locfileid: "69551872"
 
 ## <a name="related-sections"></a>相關章節
 
-[Office 方案開發總覽&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+[Office 方案開發總覽 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
 提供將 Microsoft Office 當成平台來開發商務方案的簡介。
 
-[開始&#40;在 Visual Studio 中進行 Office 開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+[在 Visual Studio&#41;中開始 &#40;Office 開發 ](../vsto/getting-started-office-development-in-visual-studio.md)
 
 提供有關設定開發電腦以建立 Office 方案、如何開始建立方案，以及自 Visual Studio 中的舊版 Office Developer Tools 以來的變更資訊連結。
 
@@ -63,6 +63,6 @@ ms.locfileid: "69551872"
 
 提供有關建立 Office 方案的資訊連結。
 
-[Visual Studio 中&#40;的一般參考 Office 開發&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+[在 Visual Studio&#41;中 &#40;Office 開發的一般參考 ](../vsto/general-reference-office-development-in-visual-studio.md)
 
 提供有關 Office 專案中的使用者介面項目、Office 專案的應用程式和部署資訊清單，以及 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中的應用程式開發介面的資訊連結。

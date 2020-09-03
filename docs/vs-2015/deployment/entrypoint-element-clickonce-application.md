@@ -1,5 +1,5 @@
 ---
-title: '&lt;entryPoint&gt;項目 （ClickOnce 應用程式） |Microsoft Docs'
+title: '&lt;&gt; (ClickOnce 應用程式) 的 entryPoint 元素 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,16 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ce9fcbddf54dff0ee8574d0c2a5a3df4d8b5c7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193499"
 ---
-# <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint&gt;項目 （ClickOnce 應用程式）
+# <a name="ltentrypointgt-element-clickonce-application"></a>&lt;&gt; (ClickOnce 應用程式) 的 entryPoint 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-識別應該是組件時執行這[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]用戶端電腦上執行應用程式。  
+識別在 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 用戶端電腦上執行此應用程式時應執行的元件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -53,53 +53,53 @@ ms.locfileid: "68193499"
 </entryPoint>  
 ```  
   
-## <a name="elements-and-attributes"></a>項目和屬性  
- `entryPoint` 項目是必要的，且位於 `urn:schemas-microsoft-com:asm.v2` 命名空間。 只能有一個`entryPoint`應用程式資訊清單中所定義的項目。  
+## <a name="elements-and-attributes"></a>元素和屬性  
+ `entryPoint` 項目是必要的，且位於 `urn:schemas-microsoft-com:asm.v2` 命名空間。 `entryPoint`應用程式資訊清單中可能只會定義一個元素。  
   
  `entryPoint` 項目具有下列屬性。  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
-|`name`|選擇性。 此值不使用.NET Framework。|  
+|`name`|選擇性。 .NET Framework 不會使用這個值。|  
   
  `entryPoint` 具有下列項目。  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- 必要項。 所扮演的角色`assemblyIdentity`和其屬性定義於[\<組件識別 > 項目](../deployment/assemblyidentity-element-clickonce-application.md)。  
+ 必要。 `assemblyIdentity`和其屬性的角色定義于[ \<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-application.md)中。  
   
- `processorArchitecture`這個項目的屬性和`processorArchitecture`中所定義的屬性`assemblyIdentity`其他位置中應用程式資訊清單必須相符。  
+ `processorArchitecture`這個元素的屬性和 `processorArchitecture` `assemblyIdentity` 應用程式資訊清單中其他位置所定義的屬性必須相符。  
   
 ## <a name="commandline"></a>commandLine  
- 必要項。 必須是子系`entryPoint`項目。 它沒有任何子項目，並具有下列屬性。  
+ 必要。 必須是元素的子系 `entryPoint` 。 它沒有子項目，而且具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`file`|必要項。 啟動組件的本機參考[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式。 此值不能包含正斜線 （/） 或反斜線 (\\) 路徑分隔符號。|  
-|`parameters`|必要項。 描述要使用的進入點所採取的動作。 唯一有效的值是`run`; 如果提供了空白的字串，`run`假設。|  
+|`file`|必要。 應用程式啟動元件的本機參考 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 。 此值不能包含正斜線 (/) 或反斜線 (\\) 路徑分隔符號。|  
+|`parameters`|必要。 描述進入點所要採取的動作。 唯一有效的值是 `run` ; 如果提供空字串， `run` 則會假設為。|  
   
 ## <a name="customhostrequired"></a>customHostRequired  
- 選擇性。 如果包含此項目，指定此部署包含將自訂主機，內部部署的元件，並不是獨立的應用程式。  
+ 選擇性。 如果包含，則指定此部署包含將在自訂主機內部署的元件，而不是獨立的應用程式。  
   
- 如果此項目，則`assemblyIdentity`和`commandLine`項目也必須有。 如有需要，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]將會在安裝期間引發驗證錯誤。  
+ 如果這個元素存在， `assemblyIdentity` 和 `commandLine` 元素也不可以同時存在。 如果是， [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 則會在安裝期間引發驗證錯誤。  
   
- 這個項目會有任何屬性和任何子系。  
+ 此元素沒有屬性和子系。  
   
 ## <a name="customux"></a>customUX  
- 選擇性。 指定的應用程式安裝和維護自訂的安裝程式中，並不會建立開始功能表項目、 快顯或新增或移除程式 項目。  
+ 選擇性。 指定應用程式是由自訂安裝程式所安裝和維護，而且不會建立 [開始] 功能表專案]、[快捷方式] 或 [新增或移除程式] 專案。  
   
 ```  
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />  
 ```  
   
- 包含 customUX 元素的應用程式必須提供自訂的安裝程式使用<xref:System.Deployment.Application.InPlaceHostingManager>類別來執行安裝作業。 按兩下其資訊清單或 setup.exe 必要啟動載入器無法安裝應用程式與這個項目。 開始功能表項目、 捷徑和新增或移除程式項目，可以建立自訂安裝程式。 如果自訂安裝程式不會建立一個新增或移除程式項目，它必須儲存所提供的訂用帳戶識別碼<xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A>屬性，並啟用使用者稍後解除安裝應用程式，藉由呼叫<xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A>方法。 如需詳細資訊，請參閱[逐步解說：為 ClickOnce 應用程式建立自訂安裝程式](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)。  
+ 包含 customUX 元素的應用程式必須提供使用 <xref:System.Deployment.Application.InPlaceHostingManager> 類別來執行安裝作業的自訂安裝程式。 使用這個元素的應用程式無法藉由按兩下其資訊清單或 setup.exe 必要條件啟動載入器安裝。 自訂安裝程式可以建立 [開始] 功能表專案、快捷方式和 [新增或移除程式] 專案。 如果自訂安裝程式未建立 [新增或移除程式] 專案，它必須儲存屬性所提供的訂用帳戶識別碼 <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> ，並讓使用者稍後藉由呼叫方法來卸載應用程式 <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> 。 如需詳細資訊，請參閱 [逐步解說：為 ClickOnce 應用程式建立自訂安裝](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)程式。  
   
 ## <a name="remarks"></a>備註  
- 此項目識別的組件和項目點[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式。  
+ 這個元素會識別應用程式的元件和進入點 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 。  
   
- 您無法使用`commandLine`將參數傳遞至您的應用程式在執行階段。 您可以存取的查詢字串參數[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]從應用程式的部署<xref:System.AppDomain>。 如需詳細資訊，請參閱[如何：在線上 ClickOnce 應用程式中擷取查詢字串資訊](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。  
+ 您無法 `commandLine` 在執行時間使用將參數傳遞至應用程式。 您可以從應用程式存取部署的查詢字串參數 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] <xref:System.AppDomain> 。 如需詳細資訊，請參閱 [如何：在線上 ClickOnce 應用程式中取得查詢字串資訊](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。  
   
 ## <a name="example"></a>範例  
- 下列程式碼範例說明`entryPoint`的應用程式資訊清單中的項目[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式。 此程式碼範例是針對提供之較大範例的一部分[Ndptecclick](../deployment/clickonce-application-manifest.md)主題。  
+ 下列程式碼範例說明 `entryPoint` 應用程式之應用程式資訊清單中的元素 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 。 這個程式碼範例是針對 [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md) 主題提供之較大範例的一部分。  
   
 ```  
 <!-- Identify the main code entrypoint. -->  
@@ -115,4 +115,4 @@ ms.locfileid: "68193499"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [ndptecclick](../deployment/clickonce-application-manifest.md)
+ [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)

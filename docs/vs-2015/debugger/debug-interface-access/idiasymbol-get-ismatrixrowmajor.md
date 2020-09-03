@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isMatrixRowMajor |Microsoft Docs
+title: IDiaSymbol：： get_isMatrixRowMajor |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ff6b8523d9f4e3cbf01727c6d98804f71b518912
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163994"
 ---
-# <a name="idiasymbolgetismatrixrowmajor"></a>IDiaSymbol::get_isMatrixRowMajor
+# <a name="idiasymbolget_ismatrixrowmajor"></a>IDiaSymbol::get_isMatrixRowMajor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-指定矩陣是否為主要的資料列。  
+指定矩陣是否為數據列主要。  
   
 ## <a name="syntax"></a>語法  
   
@@ -32,10 +32,10 @@ HRESULT get_isMatrixRowMajor(
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]指標`BOOL`，指定矩陣是否為主要的資料列。  
+ 擴展的指標 `BOOL` ，指定矩陣是否為數據列主要。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

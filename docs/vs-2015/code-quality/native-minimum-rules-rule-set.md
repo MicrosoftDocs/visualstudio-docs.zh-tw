@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8e7f45122bab952eb60182423281e018705e33a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661081"
 ---
 # <a name="native-minimum-rules-rule-set"></a>原生最小規則規則集
@@ -101,7 +101,7 @@ Microsoft 原生最小規則的重點在於機器碼中最關鍵的問題，包�
 |                      [C28215](../code-quality/c28215.md)                       |                    typefix 不能套用到已經有 typefix 的參數                    |
 |                      [C28216](../code-quality/c28216.md)                       |        checkReturn 註釋只適用於特定函式參數的後置條件。         |
 |                      [C28217](../code-quality/c28217.md)                       |            對於函式，註釋的參數數目不符合檔案中找到的參數數目             |
-|                      [C28218](../code-quality/c28218.md)                       |             針對函式參數，注釋的參數不符合檔案中找到的              |
+|                      [C28218](../code-quality/c28218.md)                       |             針對函式參數，注釋的參數不符合檔案中找到的參數              |
 |                      [C28219](../code-quality/c28219.md)                       |                 註釋中標註的參數需要列舉的成員                 |
 |                      [C28220](../code-quality/c28220.md)                       |                  註釋中標註的參數需要整數運算式                   |
 |                      [C28221](../code-quality/c28221.md)                       |                        註釋中的參數需要字串運算式                         |

@@ -1,5 +1,5 @@
 ---
-title: MSSCCPRJ。SCC 檔案 |Microsoft Docs
+title: MSSCCPRJ.SCC.SCC 檔案 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,67 +12,67 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 705e0fa821000716dc9cd729901fbb7db5fd759c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194212"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-當 Visual Studio 方案或專案置於使用 IDE 的原始檔控制下時，IDE 會接收來自原始檔控制外掛程式的字串形式的兩項關鍵的資訊。 "AuxPath 」 和 「 專案名稱 」，這些字串是不透明的 ide，但在版本控制中找出方案或專案所使用的外掛程式。 IDE 通常會取得這些字串在第一次呼叫[SccGetProjPath](../extensibility/sccgetprojpath-function.md)，它然後未來呼叫的方案或專案檔中儲存[SccOpenProject](../extensibility/sccopenproject-function.md)。 當內嵌的方案和專案檔中，"AuxPath 」 和 「 專案名稱 」 字串不會自動更新時使用者分支、 分支，或複製會在版本控制中的方案和專案檔。 若要確定方案和專案檔會指向其版本控制中的正確位置，使用者必須手動更新的字串。 字串會是不透明，因為它可能不清楚如何已更新。  
+使用 IDE 在原始檔控制下放置 Visual Studio 的方案或專案時，IDE 會以字串的形式從原始檔控制外掛程式接收兩個重要的資訊片段。 這些字串 "AuxPath" 和 "ProjName" 對 IDE 而言是不透明的，但外掛程式會使用它們來尋找版本控制中的方案或專案。 IDE 通常會在呼叫 [SccGetProjPath](../extensibility/sccgetprojpath-function.md)時，第一次取得這些字串，然後將它們儲存在方案或專案檔中，以供未來對 [SccOpenProject](../extensibility/sccopenproject-function.md)的呼叫。 內嵌在方案和專案檔中時，當使用者分支、派生或複製版本控制中的方案和專案檔時，不會自動更新 "AuxPath" 和 "ProjName" 字串。 為了確保方案和專案檔指向版本控制中的正確位置，使用者必須手動更新字串。 因為這些字串是不透明的，不一定會清楚應如何更新。  
   
- 原始檔控制外掛程式可以 「 AuxPath 」 和 「 專案名稱 」 字串儲存在名為 MSSCCPRJ 的特殊檔案，以避免這個問題。SCC 檔案。 它是本機用戶端的檔案，其中擁有及維護外掛程式。 此檔案也絕不會放在原始檔控制，但會產生包含原始檔控制檔案的每個目錄的外掛程式。 若要判斷哪些檔案是 Visual Studio 方案和專案檔，原始檔控制外掛程式可以比較檔案擴充功能符合標準] 或 [使用者提供的清單。 一旦 IDE 偵測到的外掛程式支援 MSSCCPRJ。SCC 檔案，它會停止內嵌"AuxPath 」 和 「 專案名稱 」 字串到方案和專案檔，它會將這些字串讀取 MSSCCPRJ。SCC 檔案改為。  
+ 原始檔控制外掛程式可將 "AuxPath" 和 "ProjName" 字串儲存在稱為 MSSCCPRJ.SCC 的特殊檔案中，以避免這個問題。SCC 檔。 它是由外掛程式所擁有及維護的本機用戶端檔案。 這個檔案永遠不會放置在原始檔控制下，而是由外掛程式針對包含原始檔控制檔案的每個目錄所產生。 為了判斷哪些檔案是 Visual Studio 方案和專案檔，原始檔控制外掛程式可以比較檔案延伸與標準或使用者提供的清單。 一旦 IDE 偵測到外掛程式支援 MSSCCPRJ.SCC。SCC 檔案，它會停止將 "AuxPath" 和 "ProjName" 字串內嵌到方案和專案檔中，並從 MSSCCPRJ.SCC 讀取這些字串。改為 SCC 檔。  
   
- 原始檔控制外掛程式支援 MSSCCPRJ。SCC 檔案必須遵守下列指導方針：  
+ 支援 MSSCCPRJ.SCC 的原始檔控制外掛程式。SCC 檔案必須遵守下列指導方針：  
   
-- 只能有一個 MSSCCPRJ。SCC 檔案，每個目錄。  
+- 只能有一個 MSSCCPRJ.SCC。每個目錄的 SCC 檔。  
   
-- MSSCCPRJ。SCC 檔案可以包含"AuxPath 」 和 「 專案名稱 」，在指定的目錄中的原始檔控制的多個檔案。  
+- MSSCCPRJ.SCC。SCC 檔案可以針對指定目錄內的原始檔控制下的多個檔案，包含 "AuxPath" 和 "ProjName"。  
   
-- "AuxPath"字串不能在其中的引號。 它允許有用引號括住它做為分隔符號 （例如雙引號括住一組可用來表示空字串）。 讀取從 MSSCCPRJ 時，IDE 將帶狀所有從 「 AuxPath"字串的引號。SCC 檔案。  
+- "AuxPath" 字串中不能有引號。 您可以用引號括住它作為分隔符號 (例如，可以使用成對的雙引號來表示) 的空字串。 從 MSSCCPRJ.SCC 讀取時，IDE 會從 "AuxPath" 字串中去除所有引號。SCC 檔。  
   
-- MSSCCPRJ"專案名稱 」 字串。SCC 檔案必須從傳回的字串完全相符`SccGetProjPath`函式。 如果函式所傳回的字串必須用引號括住它 MSSCCPRJ 中的字串。SCC 檔案必須具有引號括住，反之亦然。  
+- MSSCCPRJ.SCC 中的 "ProjName" 字串。SCC 檔必須完全符合函式所傳回的字串 `SccGetProjPath` 。 如果函式所傳回的字串有引號，則為 MSSCCPRJ.SCC 中的字串。SCC 檔案的前後必須加上引號，反之亦然。  
   
-- MSSCCPRJ。SCC 檔案建立或更新時的檔案會放在原始檔控制。  
+- MSSCCPRJ.SCC。每次在原始檔控制下放置檔案時，就會建立或更新 SCC 檔案。  
   
-- 如果 MSSCCPRJ。SCC 檔案遭到刪除，提供者應該重新執行有關該目錄的原始檔控制作業的下一次產生它。  
+- 如果是 MSSCCPRJ.SCC。SCC 檔案會遭到刪除，而提供者應該在下次執行與該目錄有關的原始檔控制作業時，重新產生該檔案。  
   
-- MSSCCPRJ。SCC 檔案必須嚴格遵循定義的格式。  
+- MSSCCPRJ.SCC。SCC 檔案必須嚴格遵循定義的格式。  
   
-## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>MSSCCPRJ 圖例。SCC 檔案格式  
- 以下是 MSSCCPRJ 的範例。SCC 檔案格式 （行號，才會提供做為指南，和不應包含在檔案內文）：  
+## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>MSSCCPRJ.SCC 的圖例。SCC 檔案格式  
+ 以下是 MSSCCPRJ.SCC 的範例。SCC 檔案格式 (行號只會以指南的形式提供，不應該包含在檔案主體) 中：  
   
- [第 1 行] `SCC = This is a Source Code Control file`  
+ [行 1] `SCC = This is a Source Code Control file`  
   
- [第 2 行]  
+ [第2行]  
   
- [第 3 行] `[TestApp.sln]`  
+ [第3行] `[TestApp.sln]`  
   
- [第 4 行] `SCC_Aux_Path = "\\server\vss\"`  
+ [第4行] `SCC_Aux_Path = "\\server\vss\"`  
   
- [第 5 行] `SCC_Project_Name = "$/TestApp"`  
+ [第5行] `SCC_Project_Name = "$/TestApp"`  
   
- [第 6 行]  
+ [第6行]  
   
- [7 行] `[TestApp.csproj]`  
+ [第7行] `[TestApp.csproj]`  
   
- [第 8 行] `SCC_Aux_Path = "\\server\vss\"`  
+ [第8行] `SCC_Aux_Path = "\\server\vss\"`  
   
- [第 9 行] `SCC_Project_Name = "$/TestApp"`  
+ [第9行] `SCC_Project_Name = "$/TestApp"`  
   
- 第一行指出檔案的目的，並做為此類型的所有檔案的簽章。 這一行應該完全像這樣在所有 MSSCCPRJ 中會出現。SCC 檔案：  
+ 第一行指出檔案的用途，並做為此類型之所有檔案的簽章。 這一行在所有 MSSCCPRJ.SCC 中看起來應該像這樣。SCC 檔案：  
   
  `SCC = This is a Source Code Control file`  
   
- 接下來是設定每個檔案，在方括號中的檔案名稱來標記區段。 本節會針對所追蹤的每個檔案重複。 這一行是範例檔案名稱，也就是`[TestApp.csproj]`。 IDE 會預期要有下列兩行。 它不會不過，定義的樣式定義的值。 變數是`SCC_Aux_Path`和`SCC_Project_Name`。  
+ 以下是每個檔案的設定區段，以方括弧括住的檔案名標示。 每個要追蹤的檔案都會重複此區段。 這一行是檔案名的範例，亦即 `[TestApp.csproj]` 。 IDE 預期會有下列兩行。 但是，它並不會定義定義之值的樣式。 變數為 `SCC_Aux_Path` 和 `SCC_Project_Name` 。  
   
  `SCC_Aux_Path = "\\server\vss\"`  
   
  `SCC_Project_Name = "$/TestApp"`  
   
- 這個區段沒有結尾分隔符號。 Scc.h 標頭檔中定義的檔案，以及出現在檔案中的所有常值名稱。 如需詳細資訊，請參閱 <<c0> [ 字串做為索引鍵以尋找原始檔控制外掛程式](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)。  
+ 此區段沒有結尾分隔符號。 檔案的名稱以及出現在檔案中的所有常值，都是在 scc 標頭檔中定義。 如需詳細資訊，請參閱 [用來尋找原始檔控制外掛程式之索引鍵的字串](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)   

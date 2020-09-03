@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::GetExceptionDescription |Microsoft Docs
+title: IDebugExceptionEvent2：： GetExceptionDescription |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98590c0493f8910d31ed059a72dad68caedf6929
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163775"
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得可顯示例外狀況的描述。  
+取得例外狀況的可顯示描述。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,13 +40,13 @@ int GetExceptionDescription( 
   
 #### <a name="parameters"></a>參數  
  `pbstrDescription`  
- [out]傳回可顯示例外狀況的描述。  
+ 擴展傳回例外狀況的可顯示描述。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法傳回的字串通常是例外狀況的名稱和所示**輸出**例外狀況發生時的視窗。  
+ 從這個方法傳回的字串通常是例外狀況的名稱，而且會在發生例外狀況時顯示在 **輸出** 視窗中。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)
