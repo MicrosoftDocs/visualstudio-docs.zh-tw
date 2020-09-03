@@ -1,5 +1,5 @@
 ---
-title: 在 偵錯工具中檢視資料 |Microsoft Docs
+title: 在偵錯工具中查看資料 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ade6c38a8edd73c181a3f135dd5e967901bf63f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178931"
 ---
 # <a name="viewing-data-in-the-debugger"></a>在偵錯工具中檢視資料
@@ -39,9 +39,9 @@ ms.locfileid: "68178931"
  資料提示方塊是在偵錯期間檢視程式中變數和物件資訊最方便的工具之一。 您可以在偵錯工具處於中斷模式時，將滑鼠游標放在來源視窗中的變數上，檢視目前範圍中的變數值。 如需詳細資訊，請參閱[在資料提示中檢視資料值](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)。  
   
 ## <a name="visualizers"></a>視覺化工具  
- 視覺化檢視是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 偵錯工具的新元件，能夠讓您以有意義的方式來檢視物件或變數的內容。 例如，可以使用 HTML 視覺化工具來檢視 HTML 字串，如同在瀏覽器中解譯和顯示的字串一樣。 您可以從資料提示方塊、[監看式]  視窗、[自動變數]  視窗、[區域變數]  視窗或 [快速監看式]  對話方塊存取視覺化工具。 如需詳細資訊，請參閱[建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)。  
+ 視覺化檢視是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 偵錯工具的新元件，能夠讓您以有意義的方式來檢視物件或變數的內容。 例如，可以使用 HTML 視覺化工具來檢視 HTML 字串，如同在瀏覽器中解譯和顯示的字串一樣。 您可以從資料提示方塊、[監看式] **** 視窗、[自動變數] **** 視窗、[區域變數] **** 視窗或 [快速監看式] **** 對話方塊存取視覺化工具。 如需詳細資訊，請參閱 [建立自訂視覺化](../debugger/create-custom-visualizers-of-data.md)程式。  
   
 ## <a name="see-also"></a>另請參閱  
- [偵錯工具基礎](../debugger/debugger-basics.md)   
+ [偵錯工具基本概念](../debugger/debugger-basics.md)   
  [命令視窗](../ide/reference/command-window.md)   
  [偵錯工具安全性](../debugger/debugger-security.md)

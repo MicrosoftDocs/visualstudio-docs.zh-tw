@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0291cfe93492c357401ce371d58683c6815aa12b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179040"
 ---
 # <a name="empty-timeline-segment"></a>空白時間表區段
@@ -34,5 +34,5 @@ ms.locfileid: "68179040"
 - 如為標記通道，表示未產生任何標記。  
   
 ## <a name="see-also"></a>另請參閱  
- [執行緒檢視](../profiling/threads-view-parallel-performance.md)   
+ [執行緒視圖](../profiling/threads-view-parallel-performance.md)   
  [縮放控制 (執行緒檢視)](../profiling/zoom-control-threads-view.md)

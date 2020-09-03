@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlus符號供應商::從流載入符號 |微軟文件
+title: IDebugComPlusSymbolProvider：： LoadSymbolsFromStream |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d208f8ce04e884c9dfb3b8b272271e686e3b2762
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733619"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
-載入給定數據流的調試符號。
+載入指定資料流程的 debug 符號。
 
 ## <a name="syntax"></a>語法
 
@@ -48,25 +48,25 @@ int LoadSymbolsFromStream(
 
 ## <a name="parameters"></a>參數
 `ulAppDomainID`\
-[在]應用程式域的標識碼。
+在應用程式域的識別碼。
 
 `guidModule`\
-[在]模組的唯一標識碼。
+在模組的唯一識別碼。
 
 `baseAddress`\
-[在]基本記憶體位址。
+在基本記憶體位址。
 
 `pUnkMetadataImport`\
-[在]包含符號中繼資料的物件。
+在包含符號中繼資料的物件。
 
 `pStream`\
-[在]包含符號的數據流。
+在包含符號的資料流程。
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則,返回錯誤代碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
-下面的範例展示如何為公開[IDebugComPlusSymbol提供程式](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbol提供程式**物件實現此方法。 該方法調用[來自流與科模組的載入符號](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md)方法。
+下列範例示範如何針對公開[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbolProvider**物件，執行這個方法。 方法會呼叫 [LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md) 方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStream(

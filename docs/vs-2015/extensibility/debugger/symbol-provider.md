@@ -12,23 +12,23 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6af1af9d2e178241fa8a5957e18c1a5333fa4b09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178894"
 ---
 # <a name="symbol-provider"></a>符號提供者
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-運算式評估工具實作必須存取以評估變數和運算式語言編譯器所產生的符號偵錯資訊。 它會藉由使用介面的符號提供者 (SP)，也稱為符號處理常式。  
+運算式評估工具的執行必須存取語言編譯器所產生的符號 debug 資訊，才能評估變數和運算式。 其運作方式是使用符號提供者的介面 (SP) ，也稱為符號處理常式。  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供 managed 程式碼，以及使用程式資料庫 (PDB) 符號的檔案格式的原生程式碼的預存程序。 除非沒有強式需要為您的程式使用自訂的格式儲存的符號，而是建議您在使用所提供的預存程序[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 使用程式資料庫 (PDB) 符號檔案格式，為 managed 程式碼和機器碼提供 Sp。 除非您的程式需要使用以自訂格式儲存的符號，否則建議您使用提供的 SPs [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。  
   
-## <a name="implementation-notes"></a>實作注意事項  
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ，預存程序，使用 Common Language Runtime (CLR) 介面與預期的偵錯引擎。 如此一來，Visual Studio 偵錯引擎會使用預存程序必須支援的 CLR。 所有 CLR 偵錯介面的完整清單可在 debugref.doc，也就是組件的[!INCLUDE[winsdklong](../../includes/winsdklong-md.md)]。  
+## <a name="implementation-notes"></a>實作附註  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]Debug engine 預期會使用 Common Language Runtime (CLR) 介面來與 SPs 交談。 因此，將會使用 Visual Studio debug engine 的 SP 必須支援 CLR。 您可以在 debugref.doc （屬於的一部分）中找到所有 CLR 偵錯工具介面的完整清單 [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] 。  
   
- 如果您的預存程序只會使用您自訂的偵錯引擎，您可以在根據您的偵錯引擎的需求適當地實作預存程序。  
+ 如果您的 SP 只會與您的自訂「偵測引擎」搭配運作，您可以根據您的 debug engine 需求，視需要執行 SP。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具元件](../../extensibility/debugger/debugger-components.md)

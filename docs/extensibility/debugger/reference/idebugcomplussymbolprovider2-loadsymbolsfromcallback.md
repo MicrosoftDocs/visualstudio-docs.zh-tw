@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlus符號提供程式2::從回調載入符號 |微軟文件
+title: IDebugComPlusSymbolProvider2：： LoadSymbolsFromCallback |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 738c9e24a8acfe33d7d3993da0eb5eb96ace1795
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733363"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
-使用指定的回調方法載入調試符號。
+使用指定的回呼方法載入 debug 符號。
 
 ## <a name="syntax"></a>語法
 
@@ -52,31 +52,31 @@ int LoadSymbolsFromCallback(
 
 ## <a name="parameters"></a>參數
 `ulAppDomainID`\
-[在]應用程式域的標識碼。
+在應用程式域的識別碼。
 
 `guidModule`\
-[在]模組的唯一標識碼。
+在模組的唯一識別碼。
 
 `pUnkMetadataImport`\
-[在]包含符號中繼資料的物件。
+在包含符號中繼資料的物件。
 
 `pUnkCorDebugModule`\
-[在]實現[ICorDebugModule 介面](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)的物件。
+在執行 [ICorDebugModule 介面](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)的物件。
 
 `bstrModuleName`\
-[在]模組的名稱。
+在模組的名稱。
 
 `bstrSymSearchPath`\
-[在]用於搜索符號檔的路徑。
+在搜尋符號檔的路徑。
 
 `pCallback`\
-[在]表示回調方法的物件。
+在代表回呼方法的物件。
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則,返回錯誤代碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
-下面的範例展示如何為公開[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面的**CDebugSymbol提供程式**物件實現此方法。
+下列範例示範如何針對公開[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面的**CDebugSymbolProvider**物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsFromCallback(

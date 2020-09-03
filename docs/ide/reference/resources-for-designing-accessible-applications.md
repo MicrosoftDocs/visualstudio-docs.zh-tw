@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70107841"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>設計無障礙應用程式的資源
@@ -44,7 +44,7 @@ ms.locfileid: "70107841"
 
 * **鍵盤使用者介面設計指導方針**：本技術文章描述如何設計可讓使用者從鍵盤巡覽的 Windows 應用程式。 如需詳細資訊，請參閱[鍵盤使用者介面設計指導方針](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)。
 
-* **主控台可訪問性**本技術文章介紹用於在 Windows XP 中公開主控台以用於協助工具的 API 和事件。 如需詳細資訊，請參閱[主控台協助工具](/previous-versions/windows/desktop/dnacc/console-accessibility)。
+* **主控台協助工具** 本技術文章說明用來在 Windows XP 中公開協助工具協助工具的 Api 和事件。 如需詳細資訊，請參閱[主控台協助工具](/previous-versions/windows/desktop/dnacc/console-accessibility)。
 
 ## <a name="websites"></a>網站
 
@@ -54,9 +54,9 @@ ms.locfileid: "70107841"
 
 ### <a name="third-party-resources"></a>協力廠商資源
 
-- **Web Accessibility Initiative of the World Wide Web Consortium (W3C)** (全球資訊網協會 (W3C) 的 Web 協助工具計劃)：本網站提供可存取之網站開發的指導方針和技術。 有關詳細資訊，請參閱[https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/)。
+- **Web Accessibility Initiative of the World Wide Web Consortium (W3C)** (全球資訊網協會 (W3C) 的 Web 協助工具計劃)：本網站提供可存取之網站開發的指導方針和技術。 如需詳細資訊，請參閱 [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/)。
 
 ## <a name="see-also"></a>另請參閱
 
-* [視覺工作室的協助工具](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Visual Studio 的協助工具功能](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [Visual Studio for Mac 的協助工具](/visualstudio/mac/accessibility/)

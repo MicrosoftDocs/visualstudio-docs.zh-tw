@@ -1,5 +1,5 @@
 ---
-title: IDebug容器欄位 |微軟文件
+title: IDebugContainerField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a72296517a64c6dcfcb8e347fb00588504aa75a4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733211"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
-此介面表示符號或類型,該符號或類型是其他符號或類型的容器。
+此介面代表做為其他符號或類型之容器的符號或類型。
 
 ## <a name="syntax"></a>語法
 
@@ -28,28 +28,28 @@ ms.locfileid: "80733211"
 IDebugContainerField : IDebugField
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 符號提供程式在實現[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面的同一對象上實現此介面。 此介面也是表示容器的所有介面的基類。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ 符號提供者會在執行 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 介面的相同物件上，執行這個介面。 這個介面也是表示容器之所有介面的基類。
 
-## <a name="notes-for-callers"></a>通話備註
- 許多介面上的許多方法返回此介面。 由於這是所有容器的基類,因此可以使用[QueryInterface](/cpp/atl/queryinterface)從該介面獲取更專用的介面。 此類介面包括 IDebugarrayField、IDebugClassfield、IDebugMethodfield 和[IDebugPropertyfield。](../../../extensibility/debugger/reference/idebugpropertyfield.md) [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md) [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ 許多介面上的許多方法會傳回這個介面。 因為這是所有容器的基類，所以可以使用 [QueryInterface](/cpp/atl/queryinterface)從這個介面取得更特製化的介面。 這類介面包括 [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)、 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)、 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)和 [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 除了[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面上的方法外,此介面還實現了以下方法:
+ 除了 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 介面上的方法，這個介面也會執行下列方法：
 
 |方法|描述|
 |------------|-----------------|
-|[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)|為容器的欄位創建枚舉器。|
+|[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)|建立容器欄位的列舉值。|
 
 ## <a name="remarks"></a>備註
- 陣列(變數的容器)、類(方法和變數的容器)和方法(參數和局部變數的容器)都是容器的示例。
+ 變數) 的陣列 (容器、適用于方法和變數的類別 (容器) 和方法 (容器的參數和區域變數) 為容器的範例。
 
 ## <a name="requirements"></a>需求
- 標題: sh.h
+ 標頭： sh. h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

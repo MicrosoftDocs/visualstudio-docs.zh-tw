@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fa1d03b2f91cea03403f4893e61ec15bf5b82952
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733394"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
-給定**ICorDebugModule**物件的數據流載入除錯符號。
+從資料流程載入指定 **ICorDebugModule** 物件的 debug 符號。
 
 ## <a name="syntax"></a>語法
 
@@ -50,28 +50,28 @@ int LoadSymbolsFromStreamWithCorModule(
 
 ## <a name="parameters"></a>參數
 `ulAppDomainID`\
-[在]應用程式域的標識碼。
+在應用程式域的識別碼。
 
 `guidModule`\
-[在]模組的唯一標識碼。
+在模組的唯一識別碼。
 
 `baseAddress`\
-[在]基本記憶體位址。
+在基本記憶體位址。
 
 `pUnkMetadataImport`\
-[在]包含符號中繼資料的物件。
+在包含符號中繼資料的物件。
 
 `pUnkCorDebugModule`\
-[在]實現[ICorDebugModule 介面](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)的物件。
+在執行 [ICorDebugModule 介面](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)的物件。
 
 `pStream`\
-[在]包含要載入的調試符號的數據流。
+在包含要載入之偵錯工具符號的資料流程。
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則,返回錯誤代碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
-下面的範例展示如何為公開[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面的**CDebugSymbol提供程式**物件實現此方法。
+下列範例示範如何針對公開[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面的**CDebugSymbolProvider**物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStreamWithCorModule(
