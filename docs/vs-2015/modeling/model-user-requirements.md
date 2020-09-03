@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a94a4bd479c3ad48efe44d3a92e91dc3a050efcd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918263"
 ---
 # <a name="model-user-requirements"></a>模型使用者需求
@@ -43,7 +43,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
 - 使用模型作為進行系統測試的基礎，以設定測試與需求之間的清楚關聯性。 需求變更時，此關聯性可協助您正確地更新測試。 這可確保系統符合新的需求。
 
-  如果您使用需求模型來聚焦與使用者或其業務人員的討論，並在每次重複的開頭重新瀏覽該討論，則需求模型提供最大的好處。 撰寫程式碼之前，您不需要詳細地完成它。 局部運作的應用程式 (即使極為簡化) 通常會構成使用者需求討論的最生動基礎。 模型是彙總這些討論結果的有效方法。 如需詳細資訊，請參閱[在開發過程中使用模型](../modeling/use-models-in-your-development-process.md)。
+  如果您使用需求模型來聚焦與使用者或其業務人員的討論，並在每次重複的開頭重新瀏覽該討論，則需求模型提供最大的好處。 撰寫程式碼之前，您不需要詳細地完成它。 局部運作的應用程式 (即使極為簡化) 通常會構成使用者需求討論的最生動基礎。 模型是彙總這些討論結果的有效方法。 如需詳細資訊，請參閱 [在開發過程中使用模型](../modeling/use-models-in-your-development-process.md)。
 
 > [!NOTE]
 > 在這些主題中，「系統」表示您正在開發的系統或應用程式。 它可能是許多軟體和硬體元件的大型集合、單一應用程式或較大系統內的軟體元件。 在每種情況下，需求模型都會描述可在系統外部看到的行為 (不論是透過使用者介面或 API)。
@@ -53,16 +53,16 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
 |圖表或文件|需求模型中的描述|區段|
 |-------------------------|-----------------------------------------------|-------------|
-|使用案例圖|系統使用者和其對系統的處理方式。|[描述您系統的使用方式](#UseCases)|
+|使用案例圖|系統使用者和其對系統的處理方式。|[描述如何使用系統](#UseCases)|
 |概念性類別圖|用來描述需求的類型字彙；系統介面上可見的類型。|[定義用來描述需求的詞彙](#RequirementsClasses)|
-|活動圖表|使用者和系統或其組件所執行活動之間的工作和資訊流程。|[顯示使用者與您系統之間的工作流程](#Workflow)|
-|順序圖表|使用者和系統或其組件之間的互動順序。 活動圖表的替代檢視。|[顯示使用者與您系統之間的互動](#Sequences)|
+|活動圖|使用者和系統或其組件所執行活動之間的工作和資訊流程。|[示範使用者與您系統之間的工作流程](#Workflow)|
+|順序圖表|使用者和系統或其組件之間的互動順序。 活動圖表的替代檢視。|[示範使用者與您系統之間的互動](#Sequences)|
 |其他文件或工作項目|效能、安全性、可用性和可靠性準則。|[描述服務需求品質](#QoSRequirements)|
-|其他文件或工作項目|非特定使用案例的特定條件約束和規則|[示範商務規則](#BusinessRules)|
+|其他文件或工作項目|非特定使用案例的特定條件約束和規則|[顯示商務規則](#BusinessRules)|
 
- 請注意，大部分的圖表類型都可以用於其他用途。 如需圖表類型的總覽，請參閱為[您的應用程式建立模型](../modeling/create-models-for-your-app.md)。 如需繪製圖表的基本資訊，請參閱[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。
+ 請注意，大部分的圖表類型都可以用於其他用途。 如需圖表類型的總覽，請參閱為 [您的應用程式建立模型](../modeling/create-models-for-your-app.md)。 如需繪製圖表的基本資訊，請參閱 [編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。
 
-## <a name="UseCases"></a>描述您系統的使用方式
+## <a name="describing-how-your-system-is-used"></a><a name="UseCases"></a> 描述系統的使用方式
  建立使用案例圖，以描述系統使用者和其系統用途。 使用案例代表系統使用者的目標，以及他們執行以達到目標的程序。
 
  例如，線上餐點銷售系統必須允許客人從菜單選擇品項，而且必須允許供應餐廳更新菜單。 您可以在使用案例圖中彙整這項資訊：
@@ -71,13 +71,13 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
  您也可以示範較小的案例如何組成使用案例。 例如，訂餐屬於購買餐點，其中也包括付款和送餐：
 
- ![系統參與付款但未傳遞。](../modeling/media/uml-reqmuc2.png "UML_ReqmUC2")
+ ![系統參與付款而非外送。](../modeling/media/uml-reqmuc2.png "UML_ReqmUC2")
 
  您也可以示範所開發系統範圍中包含的使用案例。 例如，圖例中的系統不會參與「送餐」(Deliver Meal) 使用案例。 這有助於設定開發工作的內容 (在使用案例圖中，子系統容器可以用來代表系統或其元件)。
 
  它也協助小組討論要在後續版本中包括的內容。 例如，您可以討論在系統的初始版本中，是否直接在餐廳與客人之間安排「餐點付款」(Pay for Meal)，而不是透過系統。 在該情況下，於初版中，您可以將「餐點付款」(Pay for Meal) 移到「立即用餐系統」(Dinner Now System) 矩形外部。
 
- 使用案例圖僅提供使用案例摘要。 若要提供更詳細的描述，您可以連結圖表上的使用案例來區隔文件，以及將它們連結至其他圖表。 若要瞭解如何執行這種做法，請參閱將[使用案例連結至檔和圖表](../modeling/link-a-use-case-to-documents-and-diagrams.md)。
+ 使用案例圖僅提供使用案例摘要。 若要提供更詳細的描述，您可以連結圖表上的使用案例來區隔文件，以及將它們連結至其他圖表。 若要瞭解如何執行此作業，請參閱 [將使用案例連結至檔和圖表](../modeling/link-a-use-case-to-documents-and-diagrams.md)。
 
  繪製使用案例圖可協助您的小組：
 
@@ -93,7 +93,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 |使用案例圖上的項目|[UML 使用案例圖：參考](../modeling/uml-use-case-diagrams-reference.md)|
 |如何透過使用案例開發程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="RequirementsClasses"></a>定義用來描述需求的詞彙
+## <a name="defining-terms-used-to-describe-requirements"></a><a name="RequirementsClasses"></a> 定義用來描述需求的詞彙
  您可以使用 UML 類別圖，協助您開發用於下列用途之商務概念的一致詞彙：
 
 - 由使用者自行討論系統運作的商務。
@@ -104,17 +104,17 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
 - 系統或接受度測試的描述。
 
-  用於此用途時，UML 類別圖的內容稱為概念性類別圖 (也稱為 *「網域模型」* (domain model) 或 *「分析類別模型」* (analysis class model))。
+  用於此用途時，UML 類別圖的內容稱為概念性類別圖 (也稱為 *「網域模型」* (domain model) 或 *「分析類別模型」*(analysis class model))。
 
   在概念性類別圖中，只會顯示需求描述中所需的類別，而不會顯示系統內部設計的任何詳細資料。 此圖表不會顯示系統內部設計的任何詳細資料。 通常不會顯示概念性類別的作業或介面。
 
   例如，您可以繪製「立即用餐系統」(Dinner Now System) 的這些概念性類別：
 
-  ![[類別] 功能表、[順序]、[功能表項目]、[訂單專案]。](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")
+  ![類別菜單、訂單、菜單項目、訂單項目。](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")
 
   概念性類別圖提供您在需求模型中使用的詞彙。 例如，在「點餐」(Order a Meal) 使用案例的詳細描述中，您可能會撰寫：
 
-  客人選擇從中建構 *「訂單」* (Order) 的 *「菜單」* (Menu)，然後從 *「菜單」* (Menu) 中選取 *「菜單項目」* (Menu Items)，以在 *「訂單」* (Order) 中建立 *「訂單項目」* (Order Items)。
+  客人選擇從中建構 *「訂單」* (Order) 的 *「菜單」*(Menu)，然後從 *「菜單」* (Menu) 中選取 *「菜單項目」* (Menu Items)，以在 *「訂單」* (Order) 中建立 *「訂單項目」*(Order Items)。
 
   請注意，該描述中所用的詞彙是模型中的類別名稱。 此圖表會移除這些類別間之關聯性的模稜兩可。 例如，它會清楚顯示每筆「訂單」(Order) 只會與一個「菜單」(Menu) 相關聯。
 
@@ -140,12 +140,12 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
  在概念性類別圖中，通常不適合將箭號放在關聯上來代表巡覽性。 原因是圖表不代表實作。 關聯代表真實世界物件之間的關聯性。
 
-## <a name="BusinessRules"></a> Showing Business Rules
+## <a name="showing-business-rules"></a><a name="BusinessRules"></a> 顯示商務規則
  商務規則是未與特定使用案例相關聯的需求，而且應該會在系統中觀察到。
 
- 許多商務規則是概念性類別間之關聯性的條件約束。 您可以將這些*靜態商務規則*撰寫為與概念類別圖上相關類別相關聯的批註。 例如：
+ 許多商務規則是概念性類別間之關聯性的條件約束。 您可以撰寫這些 *靜態商務規則* ，作為與概念類別圖上相關類別相關聯的批註。 例如：
 
- ![附加至 Order 類別的批註中的規則。](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")
+ ![附加至 Order 類別之註解的規則。](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")
 
  *「動態商務規則」* (dynamic business rules) 限制允許的事件序列。 例如，您可以使用序列或活動圖來示範使用者必須先登入，才能對系統執行其他作業。
 
@@ -161,7 +161,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 |概念性類別圖上的項目|[UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)|
 |如何開發遵守商務規則的程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
+## <a name="describing-quality-of-service-requirements"></a><a name="QoSRequirements"></a> Describing Quality of Service Requirements
  有數種類別的服務需求品質。 其包括：
 
 - 效能
@@ -185,16 +185,16 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 |將其他文件附加至使用案例|[將使用案例連結到文件與圖表](../modeling/link-a-use-case-to-documents-and-diagrams.md)|
 |如何開發遵守服務需求品質的程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="Workflow"></a>顯示使用者與您系統之間的工作流程
+## <a name="showing-work-flow-between-users-and-your-system"></a><a name="Workflow"></a> 顯示使用者與您系統之間的工作流程
  您可以使用活動圖示範不同使用案例之間的工作流程。 繪製示範使用者在系統內外部所執行之主要工作的活動圖，這十分適用於開始需求模型。
 
  例如：
 
- ![具有三個動作和一個迴圈的活動。](../modeling/media/uc-reqmwfact.png "UC_ReqmWFAct")
+ ![包含三個動作和一個迴圈的活動。](../modeling/media/uc-reqmwfact.png "UC_ReqmWFAct")
 
  您可以繪製使用案例圖和活動圖來顯示相同資訊的不同檢視。  使用案例圖可以更有效地顯示較大活動中較小動作的巢狀結構，但不會顯示工作流程。 例如：
 
- ![先前動作的使用案例](../modeling/media/uml-reqmwfuc.png "UML_ReqmWFUC")
+ ![前述動作的使用案例](../modeling/media/uml-reqmwfuc.png "UML_ReqmWFUC")
 
  請注意，您也可以使用活動圖描述軟體內的演算法，但是，使用商務程序的圖表時，聚焦於系統外部可見的動作。
 
@@ -206,12 +206,12 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 |活動圖上的項目|[UML 活動圖表：參考](../modeling/uml-activity-diagrams-reference.md)|
 |如何透過活動圖開發程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="Sequences"></a>顯示使用者與您系統之間的互動
+## <a name="showing-interactions-between-users-and-your-system"></a><a name="Sequences"></a> 顯示使用者與您系統之間的互動
  您可以使用循序圖來示範系統與外部行動之間或系統不同組件之間的訊息交換。 這提供極清楚顯示互動序列的使用案例中步驟的檢視。 在使用案例中有數個互動方以及系統具有 API 的情況下，循序圖特別有用。
 
  例如：
 
- ![具有系統和動作專案的順序圖表。](../modeling/media/uml-reqmseq.png "UML_ReqmSeq")
+ ![包含系統和行動的順序圖表](../modeling/media/uml-reqmseq.png "UML_ReqmSeq")
 
  循序圖的其中一個優點在於很容易就可以看到進入您正在建構之系統的訊息為何。 若要設計系統，您可以將單一系統生命線取代為其每個元件的個別生命線，然後顯示它們之間回應每個內送訊息的互動。
 
@@ -238,5 +238,5 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
   檢查不同圖表所提供之檢視間的關聯性，即可快速了解使用者工作的主要概念，並幫助他們了解系統中他們所需的項目。 您也會深入了解利害關係人最不關心的需求。 您可以規劃在專案的早期階段開發這些功能 (至少為簡化形式)，讓使用者實驗它們。
 
-## <a name="see-also"></a>請參閱
- [編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)[從模型開發測試](../modeling/develop-tests-from-a-model.md)[使用開發進程模型中的模型](../modeling/use-models-in-your-development-process.md)[應用程式的架構](../modeling/model-your-app-s-architecture.md)[影片：模型化商務網域](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
+## <a name="see-also"></a>另請參閱
+ [編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)[從模型開發測試](../modeling/develop-tests-from-a-model.md)[使用開發流程模型中](../modeling/use-models-in-your-development-process.md)的[應用程式架構](../modeling/model-your-app-s-architecture.md)[影片：建立商務領域](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)模型

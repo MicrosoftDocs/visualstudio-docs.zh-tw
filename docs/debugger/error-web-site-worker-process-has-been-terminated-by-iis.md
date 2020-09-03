@@ -1,5 +1,5 @@
 ---
-title: 錯誤-網站背景工作進程已被 IIS 終止 |Microsoft Docs
+title: 錯誤-IIS 已終止網站背景工作進程 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d61f124d906137557b17b81122eba34e471a1a4
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85459996"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>錯誤：網站背景工作處理序已被 IIS 終止
@@ -30,17 +30,17 @@ ms.locfileid: "85459996"
 
 1. 開啟 [系統管理工具]**** 視窗。
 
-   1. 按一下 [**開始**]，然後選擇 [**控制台**]。
+   1. 按一下 [ **開始**]，然後選擇 [ **主控台**]。
 
-   2. 在 [**控制台**] 中，視需要選擇 [**切換到傳統視圖**]，然後按兩下 [系統**管理工具**]。
+   2. 在 [ **主控台**中，視需要選擇 [ **切換到傳統視圖**]，然後按兩下 [系統 **管理工具**]。
 
 2. 在 [系統管理工具]**** 視窗中，按兩下 [Internet Information Services (IIS) 管理員]****。
 
     [IIS 管理員] 隨即開啟。
 
-3. 在 [**連接**] 窗格中，視 \<computer name> 需要展開節點。
+3. 在 [ **連接** ] 窗格中，視 \<computer name> 需要展開節點。
 
-4. 在 \<computer name> 節點底下，按一下 [**應用程式**集區]。
+4. 在 \<computer name> 節點下，按一下 [ **應用程式**集區]。
 
 5. 在 [應用程式集區]**** 清單內，以滑鼠右鍵按一下應用程式執行位置所在的集區名稱，然後按一下 [進階設定]****。
 

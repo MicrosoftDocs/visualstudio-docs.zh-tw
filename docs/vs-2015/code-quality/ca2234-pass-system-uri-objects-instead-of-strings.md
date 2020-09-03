@@ -1,5 +1,5 @@
 ---
-title: CA2234 必須：傳遞 System.object 物件，而不是字串 |Microsoft Docs
+title: CA2234 必須：傳遞系統 Uri 物件，而不是字串 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0ce5c076260886def089118a4d7211d75e0185c0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545206"
 ---
 # <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234:必須傳遞 System.Uri 物件而非字串
@@ -29,23 +29,23 @@ ms.locfileid: "85545206"
 |-|-|
 |TypeName|PassSystemUriObjectsInsteadOfStrings|
 |CheckId|CA2234|
-|類別|Microsoft。使用方式|
+|類別|Microsoft. 使用量|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 對具有字串參數的方法進行呼叫，其名稱包含 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url";而方法的宣告型別包含具有參數的對應方法多載 <xref:System.Uri?displayProperty=fullName> 。
+ 對具有字串參數的方法進行呼叫，其名稱包含 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url";方法的宣告型別包含具有參數的對應方法多載 <xref:System.Uri?displayProperty=fullName> 。
 
 ## <a name="rule-description"></a>規則描述
- 參數名稱會根據 camel 大小寫慣例分割成權杖，然後檢查每個標記，以查看它是否等於 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"。 如果相符，則會假設參數代表統一資源識別元（URI）。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 <xref:System.Uri>類別以安全且安全的方式提供這些服務。 當兩個多載之間有不同的選擇，但只有與 URI 的表示有差異時，使用者應該選擇接受引數的多載 <xref:System.Uri> 。
+ 參數名稱會根據 camel 大小寫慣例分割成權杖，然後檢查每個標記以查看它是否等於 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"。 如果有相符的參數，則會假設參數表示 (URI) 的統一資源識別項。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 <xref:System.Uri>類別以安全且安全的方式提供這些服務。 當兩個多載之間有一個差異，而這兩個多載只與 URI 的表示方式不同時，使用者應該選擇採用引數的多載 <xref:System.Uri> 。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規，請呼叫接受引數的多載 <xref:System.Uri> 。
+ 若要修正此規則的違規情形，請呼叫接受引數的多載 <xref:System.Uri> 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果 string 參數不代表 URI，就可以安全地隱藏此規則的警告。
+ 如果字串參數不代表 URI，則可以安全地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示的方法 `ErrorProne` 違反規則，以及會正確呼叫多載的方法 `SaferWay` <xref:System.Uri> 。
+ 下列範例會顯示違反規則的方法， `ErrorProne` 以及可正確呼叫多載的方法 `SaferWay` <xref:System.Uri> 。
 
  [!code-cpp[FxCop.Usage.PassUri#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.PassUri/cpp/FxCop.Usage.PassUri.cpp#1)]
  [!code-csharp[FxCop.Usage.PassUri#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.PassUri/cs/FxCop.Usage.PassUri.cs#1)]

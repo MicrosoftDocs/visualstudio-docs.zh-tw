@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114724"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>在 Visual Basic 中設定警告
@@ -120,8 +120,8 @@ ms.locfileid: "76114724"
 ## <a name="see-also"></a>另請參閱
 
 - [錯誤類型](/dotnet/visual-basic/programming-guide/language-features/error-types)
-- [嘗試。。。抓住。。。最後陳述](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
-- [/諾瓦恩](/dotnet/visual-basic/reference/command-line-compiler/nowarn)
+- [嘗試。。。抓住。。。Finally 語句](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
+- [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)
 - [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)
-- [編譯頁面，專案設計器（視覺基礎）](../ide/reference/compile-page-project-designer-visual-basic.md)
+- [編譯頁面、專案設計工具 (Visual Basic) ](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [預設為關閉的編譯器警告](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

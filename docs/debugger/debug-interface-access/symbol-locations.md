@@ -14,21 +14,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 125245f38be5588f2661b45162ffde24e5930ad7
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461074"
 ---
 # <a name="symbol-locations"></a>符號位置
-大部分的符號在影像檔中都有已定義的位置。 符號的位置是使用來自[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)列舉的值所指定。 符號可支援其他屬性（視其位置而定）。
+大部分的符號在影像檔案中都有一個已定義的位置。 符號的位置會以 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) 列舉的值來指定。 符號可能會根據其位置支援其他屬性。
 
  下表顯示最常使用的位置類型及其其他屬性。
 
 |位置類型|其他屬性|
 |-------------------|---------------------------|
 |`LocIsNull`|無|
-|`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol：： get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md) （如果已啟用相對虛擬位址）<br /><br /> [IDiaSymbol：： get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md) （如果映射基底已設定為非零）|
+|`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> 如果已啟用相對虛擬位址， [IDiaSymbol：： get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md) () <br /><br /> 如果映射基底已設定為非零， [IDiaSymbol：： get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md) () |
 |`LocIsTLS`|[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|
 |`LocIsRegRel`|[IDiaSymbol::get_registerId](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)<br /><br /> [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|
 |`LocIsThisRel`|[IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|

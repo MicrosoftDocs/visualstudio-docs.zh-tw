@@ -1,5 +1,5 @@
 ---
-title: 錯誤-無法存取 SQL Server 的調試介面 |Microsoft Docs
+title: 錯誤-無法存取 SQL Server 的偵測介面 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d0c0c61fce7f20ea49547bc63a6e70eed284b016
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460204"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>錯誤：無法存取 SQL Server 偵錯介面
@@ -27,7 +27,7 @@ ms.locfileid: "85460204"
 
 ### <a name="to-correct-this-error"></a>更正這個錯誤
 
-- 請參閱[設定 SQL 調試](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))。
+- 請參閱 [設定 SQL 調試](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))。
 
 ## <a name="see-also"></a>另請參閱
 - [對 SQL 進行偵錯](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6(v=vs.100))

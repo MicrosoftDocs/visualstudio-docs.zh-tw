@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1cf71abb19f6d4a3a459b4e5559e536f18f41c8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114552"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中建置和清除專案與方案
@@ -59,33 +59,33 @@ ms.locfileid: "76114552"
 
 1. 在方案總管**** 中，選擇或開啟專案。
 
-2. 在功能表列上，選擇 **"生成**"，然後選擇 **"生成***專案名稱*"或 **"重建***專案名稱*"。
+2. 在功能表列上，選擇 **[組建**]，然後選擇 **[組建***專案名稱*] 或 [**重建***專案名稱*]。
 
-    - 選擇**生成***專案名稱*僅生成自最近生成以來已更改的專案元件。
+    - 選擇**組建***專案名稱*，只建立自最新組建之後變更的專案元件。
 
-    - 選擇 **"重建***專案名稱*"以"清理"專案，然後生成專案檔案和所有專案元件。
+    - 選擇 [ **重建**專案 *名稱* ] 以「清除」專案，然後建立專案檔和所有專案元件。
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>僅建置啟始專案和其相依性
 
-1. 在功能表列上，選擇 **"工具** > **選項**"。
+1. 在功能表列上，選擇 [**工具**  >  **選項**]。
 
 2. 在 [選項]**** 對話方塊方塊中，展開 [專案和方案]**** 節點，然後選擇 [建置並執行]**** 頁面。
 
-     將打開 **"生成和運行** > **專案和解決方案** > **選項"** 對話方塊。
+     [**組建和執行**  >  **專案和方案**  >  **選項**] 對話方塊隨即開啟。
 
 3. 選取 [僅在執行時建置啟始專案和相依性]**** 核取方塊。
 
      如果選取此核取方塊，當您執行下列步驟之一時，只會建置目前的啟始專案和其相依性︰
 
-    - 在功能表列上，選擇 **"調試** > **開始"** **（F5**）。
+    - 在功能表列上，選擇 [ **Debug**  >  **開始**] (**F5**) 。
 
-    - 在功能表列上，選擇 **"構建** > **解決方案**+**Shift**+**"（Ctrl**Shift**B**）。
+    - 在功能表列上，選擇 [**組建**  >  **組建方案**] (**Ctrl** + **Shift** + **B**) 。
 
-    如果清除此核取方塊，當您執行其中一個上述命令時，會建置所有專案、其相依性及方案檔。 依預設，不會勾選此核取方塊。
+    如果清除此核取方塊，當您執行其中一個上述命令時，會建置所有專案、其相依性及方案檔。 根據預設，會清除此核取方塊。
 
 ## <a name="to-build-only-the-selected-visual-c-project"></a>只建置選取的 Visual C++ 專案
 
-選擇專案[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，然後在功能表列上選擇 **"僅****生成** > 專案"和以下命令之一：
+選擇 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案，然後在功能表列上，選擇 [僅**建立**  >  **專案**] 和下列其中一個命令：
 
 - 僅限建置** <專案名稱>** **
 
@@ -107,18 +107,18 @@ ms.locfileid: "76114552"
 
 執行下列任一步驟：
 
-- 在功能表列上，選擇 **"生成** > **取消**"。
+- 在功能表列上，選取 [**組建**  >  **取消**]。
 
-- 按**Ctrl**+**中斷**。
+- 按下**Ctrl** + **Break**。
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：查看、保存和配置生成日誌檔](../ide/how-to-view-save-and-configure-build-log-files.md)
-- [獲取生成日誌](../msbuild/obtaining-build-logs-with-msbuild.md)
-- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
+- [如何：查看、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [編譯和建立](../ide/compiling-and-building-in-visual-studio.md)
 - [了解組建組態](../ide/understanding-build-configurations.md)
 - [如何：設定偵錯和發行設定](../debugger/how-to-set-debug-and-release-configurations.md)
-- [C/C++建築參考](/cpp/build/reference/c-cpp-building-reference)
+- [C/c + + 建立參考](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)
-- [解決方案和專案](../ide/solutions-and-projects-in-visual-studio.md)
+- [方案和專案](../ide/solutions-and-projects-in-visual-studio.md)
 - [建置和清除專案與方案 (Visual Studio for Mac)](/visualstudio/mac/building-and-cleaning-projects-and-solutions)

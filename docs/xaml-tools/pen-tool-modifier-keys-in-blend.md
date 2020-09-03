@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e3f025e31a36edebdd318435d233efd2aab4857
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328369"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的畫筆工具輔助按鍵
@@ -26,7 +26,7 @@ ms.locfileid: "85328369"
 |建立曲線線段的起點|按一下以建立新的點，然後拖曳新點以調整正切函數控點，再鬆開滑鼠按鈕。|![建立曲線線段的起點](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> 畫筆指標|
 |在沒有平滑限制的情況下調整最後一個正切函數，可讓您製作出尖角。|按一下以建立新的點，然後按 **Alt** 鍵|![調整沒有平滑限制的最後一個正切函數](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> 畫筆調整指標|
 |分割最後一個正切函數，使正切函數的結束點分別作用，讓您製作出尖角。|按一下以建立新的點，然後按住 **Alt** 鍵並拖曳，再鬆開滑鼠按鈕|![分割最後一個正切函數，使正切函數的結束點分別作用](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> 畫筆調整指標|
-|將正切函數結束點繞著新的點移動 15 度角|按一下以建立新的點，然後按住**Shift** + **Alt**並拖曳，再放開滑鼠按鍵。|![將正切函數結束點繞著新的點移動 15 度角](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> 畫筆調整指標|
+|將正切函數結束點繞著新的點移動 15 度角|按一下以建立新的點，然後按住**Shift** + **Alt**並拖曳，再放開滑鼠按鍵|![將正切函數結束點繞著新的點移動 15 度角](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> 畫筆調整指標|
 |在結束點將正切函數的長度縮短為零|按一下結束點|![在結束點將正切函數的長度縮短為零](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> 畫筆調整指標|
 |將新的點加入現有路徑|按一下路徑中您要加入新點的位置|![將新的點加入現有路徑](../designers/media/b004ad5a-33a4-46ae-81c0-20be0d819332.png)<br /><br /> 畫筆插入指標|
 |從路徑移除某個點|將滑鼠指標停在現有的點上並按一下|![從路徑移除點](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png)<br /><br /> 畫筆刪除指標|

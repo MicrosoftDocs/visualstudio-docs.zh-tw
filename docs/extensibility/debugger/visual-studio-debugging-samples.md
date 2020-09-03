@@ -1,5 +1,5 @@
 ---
-title: 可視化工作室調試示例 |微軟文件
+title: Visual Studio 的調試範例 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2c3ac20f541f83103e0ded8c11881317e8d1aca4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712409"
 ---
-# <a name="visual-studio-debugging-samples"></a>視覺化工作室調試範例
-兩個範例展示如何使用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]擴充可視化工作室調試器。
+# <a name="visual-studio-debugging-samples"></a>Visual Studio 的調試範例
+兩個範例示範如何使用擴充 Visual Studio 偵錯工具 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 。
 
-- 對於託管語言,除錯器表示式賦值器範例包含在中[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。 在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]視窗中,按下「**範例**」選項卡,按一下語言清單中**的「全部**」或 **「C#」,** 然後單擊 **「調試器**」 。。
+- 偵錯工具運算式評估工具範例（適用于 managed 語言）包含在中 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 。 在 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 視窗中，按一下 [ **範例** ] 索引標籤，按一下語言清單中的 [ **全部** ] 或 [ **c #** ]，然後按一下 **[偵錯工具**]。
 
-- 用於本機語言的可視化工作室調試引擎示例可在MSDN代碼庫上使用。 有關詳細資訊,請參閱 Microsoft 網站上的[視覺化工作室調試引擎範例](https://code.msdn.microsoft.com/Visual-Studio-Debug-Engine-c2e21c0e)。
+- MSDN 程式碼庫提供適用于原生語言的 Visual Studio Debug Engine 範例。 如需詳細資訊，請參閱 Microsoft 網站上的 [Visual Studio debug engine 範例](https://code.msdn.microsoft.com/Visual-Studio-Debug-Engine-c2e21c0e) 。

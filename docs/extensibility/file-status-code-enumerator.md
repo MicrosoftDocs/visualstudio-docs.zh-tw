@@ -1,5 +1,5 @@
 ---
-title: 檔案狀態代碼枚舉器 |微軟文件
+title: 檔案狀態碼列舉值 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 184c8686ea184aea2cbd0a64873718cbe72f7615
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711445"
 ---
-# <a name="file-status-code-enumerator"></a>檔案狀態代碼枚舉器
-枚`SccStatus`舉器包含指定的常量值,用於指定源控制系統中檔的狀態。 此枚舉由[SccQueryInfo](../extensibility/sccqueryinfo-function.md)和`POPLISTFUNC`回調函數使用(有關詳細資訊,請參閱[POPLISTFUNC)。](../extensibility/poplistfunc.md)
+# <a name="file-status-code-enumerator"></a>檔案狀態碼列舉值
+`SccStatus`列舉值包含指定原始檔控制系統中檔案狀態的指定常數值。 [SccQueryInfo](../extensibility/sccqueryinfo-function.md)和回呼函式會使用這個列舉 `POPLISTFUNC` (如需詳細資料) ，請參閱[POPLISTFUNC](../extensibility/poplistfunc.md) 。
 
 ## <a name="syntax"></a>語法
 
@@ -49,43 +49,43 @@ enum SccStatus {
 ```
 
 ## <a name="members"></a>成員
- 無法獲得SCC_STATUS_INVALID狀態;不要依賴它。
+ 無法取得 SCC_STATUS_INVALID 狀態;請勿依賴它。
 
- SCC_STATUS_NOTCONTROLLED檔不受原始程式碼管理。
+ SCC_STATUS_NOTCONTROLLED 檔案不在原始檔控制之下。
 
- SCC_STATUS_CONTROLLED文件處於原始程式碼管理之下。
+ SCC_STATUS_CONTROLLED 檔案在原始檔控制之下。
 
- SCC_STATUS_CHECKEDOUT本地磁碟上的當前用戶簽出。
+ SCC_STATUS_CHECKEDOUT 本機磁片上的目前使用者簽出。
 
- SCC_STATUS_OUTOTHER檔由其他用戶簽出。
+ 另一位使用者已簽出 SCC_STATUS_OUTOTHER 檔案。
 
- SCC_STATUS_OUTEXCLUSIVE檔被完全簽出。
+ 以獨佔方式簽出 SCC_STATUS_OUTEXCLUSIVE 的檔案。
 
- SCC_STATUS_OUTMULTIPLE檔由多個用戶簽出。
+ 有多個使用者簽出 SCC_STATUS_OUTMULTIPLE 檔案。
 
- SCC_STATUS_OUTOFDATE 該檔不是最新的。
+ SCC_STATUS_OUTOFDATE 檔案不是最新的。
 
- SCC_STATUS_DELETED檔已從項目中刪除。
+ 已從專案中刪除 SCC_STATUS_DELETED 的檔案。
 
- SCC_STATUS_LOCKED文件已鎖定;不允許更多版本。
+ SCC_STATUS_LOCKED 檔案已鎖定;不允許其他版本。
 
- SCC_STATUS_MERGED檔已合併但尚未修復/驗證。
+ SCC_STATUS_MERGED 檔案已合併，但尚未修正/驗證。
 
- SCC_STATUS_SHARED檔在項目之間共用。
+ 在專案之間共用 SCC_STATUS_SHARED 檔。
 
- SCC_STATUS_PINNED檔共享到顯式版本。
+ SCC_STATUS_PINNED 的檔案會與明確的版本共用。
 
- SCC_STATUS_MODIFIED檔已被修改/損壞/違反。
+ SCC_STATUS_MODIFIED 檔案已遭修改/中斷/違規。
 
- SCC_STATUS_OUTBYUSER檔由當前用戶簽出。
+ 目前的使用者已簽出 SCC_STATUS_OUTBYUSER 檔案。
 
- SCC_STATUS_NOMERGE文件永遠不能與 GET 合併,也不需要在 GET 之前保存。
+ SCC_STATUS_NOMERGE 的檔案永遠不會與合併，且不需要在 GET 之前儲存。
 
- SCC_STATUS_RESERVED_1保留供內部使用。
+ SCC_STATUS_RESERVED_1 保留供內部使用。
 
- SCC_STATUS_RESERVED_2保留供內部使用。
+ SCC_STATUS_RESERVED_2 保留供內部使用。
 
 ## <a name="see-also"></a>另請參閱
-- [原始程式管理外掛程式](../extensibility/source-control-plug-ins.md)
+- [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)
 - [SccQueryInfo](../extensibility/sccqueryinfo-function.md)
 - [POPLISTFUNC](../extensibility/poplistfunc.md)

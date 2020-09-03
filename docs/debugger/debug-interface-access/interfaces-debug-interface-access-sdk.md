@@ -1,5 +1,5 @@
 ---
-title: 介面（Debug Interface Access SDK） |Microsoft Docs
+title: " (Debug 介面存取 SDK) 的介面 |Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,28 +14,28 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 902a3d361eb06288a0e50e9f384b67a2a8c61aa1
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461270"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>介面 (偵錯介面存取 SDK)
-方法會依字母順序列于目錄中的每個介面底下，並以 Vtable 順序列示在介面頁面上。
+方法會依字母順序列在目錄中的每個介面下，以及在介面頁面上以 Vtable 順序列出。
 
 ## <a name="in-this-section"></a>本節內容
 
 [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
 
-可讓您控制 DIA SDK 如何計算 debug 物件的虛擬和相對虛擬位址。
+提供控制 DIA SDK 如何計算 debug 物件的虛擬和相對虛擬位址。
 
 [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 
-起始對調試符號來源的存取。
+起始對偵測符號來源的存取。
 
 [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
 
-提供對調試資料流程中記錄的存取。
+提供對 debug 資料流程中記錄的存取。
 
 [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
 
@@ -63,11 +63,11 @@ ms.locfileid: "85461270"
 
 [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
 
-列舉資料來源中包含的各種來源檔案。
+列舉資料來源中包含的各種原始檔。
 
 [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
 
-列舉可用的各種堆疊框架。
+列舉各種可用的堆疊框架。
 
 [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 
@@ -75,7 +75,7 @@ ms.locfileid: "85461270"
 
 [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
 
-依位址列舉資料來源中包含的各種符號。
+藉由定址資料來源中包含的各種符號來列舉。
 
 [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 
@@ -91,11 +91,11 @@ ms.locfileid: "85461270"
 
 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
 
-存取儲存在 DIA 資料來源中的程式原始碼。
+存取儲存在 DIA 資料來源中的程式來源程式碼。
 
 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
 
-存取描述從影像文字位元組區塊對應至原始程式檔行號之程式的資訊。
+存取描述從影像文字位元組區塊對應至原始程式檔行號之進程的資訊。
 
 [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)
 
@@ -103,7 +103,7 @@ ms.locfileid: "85461270"
 
 [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
 
-從 DIA 符號尋找程式接收回呼，允許在尋找進程上加諸限制。
+從 DIA 符號尋找程式接收回呼，以允許在尋找進程上加諸限制。
 
 [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
 
@@ -111,19 +111,19 @@ ms.locfileid: "85461270"
 
 [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)
 
-可讓用戶端應用程式以檔案位置指定的方式提供可執行檔的位元組。
+讓用戶端應用程式提供檔案位置所指定的可執行檔位元組。
 
 [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
 
-可讓用戶端應用程式提供可執行檔的位元組，如相對虛擬位址所指定。
+讓用戶端應用程式提供相對虛擬位址所指定的可執行檔位元組。
 
 [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
 
-抓取描述區段貢獻的資料，也就是由編譯模組貢獻給影像的連續記憶體區塊。
+抓取描述區段參與的資料，也就是編譯單位對影像提供的連續記憶體區塊。
 
 [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
 
-將區段編號的資料對應到位址空間的區段。
+將區段編號的資料對應至位址空間的區段。
 
 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 
@@ -131,7 +131,7 @@ ms.locfileid: "85461270"
 
 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
 
-代表原始檔。
+表示原始檔。
 
 [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
 
@@ -143,11 +143,11 @@ ms.locfileid: "85461270"
 
 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
 
-維護[IDiaFrameData：： execute](../../debugger/debug-interface-access/idiaframedata-execute.md)方法調用之間的堆疊內容。
+維護 [IDiaFrameData：： execute](../../debugger/debug-interface-access/idiaframedata-execute.md) 方法調用之間的堆疊內容。
 
 [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 
-有助於使用程式 debug 資料庫（PDB）檔案來進行堆疊的逐步解說。
+使用「程式偵錯工具」資料庫 (PDB) 檔來加速堆疊。
 
 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 
@@ -155,7 +155,7 @@ ms.locfileid: "85461270"
 
 [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
 
-列舉 DIA 的資料來源資料表。
+列舉 DIA 資料來源資料表。
 
 ## <a name="related-sections"></a>相關章節
 [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
@@ -164,7 +164,7 @@ ms.locfileid: "85461270"
 
 [常數 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
-描述 DIA SDK 中可用的常數。
+描述 DIA SDK 中的可用常數。
 
 ## <a name="see-also"></a>另請參閱
 

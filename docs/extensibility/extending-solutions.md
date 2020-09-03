@@ -1,5 +1,5 @@
 ---
-title: 擴展解決方案 |微軟文件
+title: 擴充解決方案 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5cb60183-2a87-4551-a19f-c7c4e65d60c0
@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 40a9591418dd3d2fb53bee29dfb8192a368e4047
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711730"
 ---
 # <a name="extend-solutions"></a>擴充解決方案
-解決方案是一個或多個專案分組,這些專案協同工作以創建應用程式。
+方案是一或多個專案的群組，這些專案會一起運作來建立應用程式。
 
 ## <a name="in-this-section"></a>本節內容
- 以下演練顯示了擴展解決方案的一些方法。
+ 下列逐步解說示範您可以擴充解決方案的一些方式。
 
-1. [擴展解決方案資源管理員篩選器](../extensibility/extending-the-solution-explorer-filter.md)說明如何篩選解決方案資源管理器顯示的內容。
+1. [延伸方案總管篩選器](../extensibility/extending-the-solution-explorer-filter.md) 會說明如何篩選方案總管所顯示的內容。
 
-2. [在解決方案中管理專案載入](../extensibility/managing-project-loading-in-a-solution.md)說明如何在使用者載入解決方案時管理專案載入以提高性能。
+2. [管理方案中的專案載入](../extensibility/managing-project-loading-in-a-solution.md) ：說明如何管理專案載入，以改善使用者載入方案時的效能。

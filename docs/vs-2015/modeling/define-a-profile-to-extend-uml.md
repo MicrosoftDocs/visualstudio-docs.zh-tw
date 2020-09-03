@@ -17,18 +17,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a495a566f78ceb2b89f8e2070837f038da352a4d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918872"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>定義要擴充 UML 的設定檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以定義*UML 設定檔*，針對特定用途自訂標準模型專案。 設定檔會定義一或多個*UML*造型。 造型可用來標記代表特殊種類物件的類型。 造型也可擴充項目的屬性清單。
+您可以定義 *UML 設定檔* 來自訂特定用途的標準模型元素。 設定檔會定義一或多個 *UML*造型。 造型可用來標記代表特殊種類物件的類型。 造型也可擴充項目的屬性清單。
 
- 數個設定檔會與支援的 Visual Studio 版本一起安裝。 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。 如需有關這些設定檔以及如何套用造型的詳細資訊，請參閱[使用設定檔和造型自訂您的模型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)。
+ 數個設定檔會與支援的 Visual Studio 版本一起安裝。 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。 如需這些設定檔的詳細資訊，以及如何套用造型的詳細資訊，請參閱 [使用設定檔和造型自訂您的模型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)。
 
  您可以定義專屬設定檔來調整 UML 並將其擴充至專屬商業領域或架構。 例如：
 
@@ -41,21 +41,21 @@ ms.locfileid: "75918872"
 > [!NOTE]
 > 如果您在所編輯的模型中套用設定檔的造型，然後與其他人員共用模型，則他們應該在自己的電腦上安裝相同的設定檔。 否則，他們將無法看到您已經使用的造型。
 
- 設定檔通常是較大 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 延伸模組的一部分。 例如，您可以定義將模型的某些組件轉譯為程式碼的命令。 您可以定義設定檔，而使用者必須將它套用至他們想要轉譯的套件。 您會在單一 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充功能中一併散發新命令和設定檔。
+ 設定檔通常是較大擴充功能的一部分 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 。 例如，您可以定義將模型的某些組件轉譯為程式碼的命令。 您可以定義設定檔，而使用者必須將它套用至他們想要轉譯的套件。 您會在單一 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充功能中一併散發新命令和設定檔。
 
  您也可以定義設定檔的當地語系化變化。 載入您擴充功能的使用者會看到適合其專屬文化特性的變化。
 
-## <a name="DefineProfile"></a>如何定義設定檔
+## <a name="how-to-define-a-profile"></a><a name="DefineProfile"></a> 如何定義設定檔
 
 #### <a name="to-define-a-uml-profile"></a>定義 UML 設定檔
 
 1. 建立副檔名為 `.profile` 的新 XML 檔案。
 
-2. 根據[設定檔結構](#Schema)中所述的指導方針來新增造型定義。
+2. 根據 [設定檔結構](#Schema)中所述的指導方針來新增造型定義。
 
 3. 將設定檔加入 Visual Studio 擴充功能 (`.vsix` 檔案)。 您可以建立設定檔的新擴充功能，或將設定檔加入現有擴充功能。
 
-     請參閱下一節[如何將設定檔新增至 Visual Studio 延伸](#AddProfile)模組。
+     請參閱下一節， [以瞭解如何將設定檔新增至 Visual Studio 延伸](#AddProfile)模組。
 
 4. 在電腦上安裝擴充功能。
 
@@ -67,16 +67,16 @@ ms.locfileid: "75918872"
 
     1. 在 [UML 總管] 中，選取模型。
 
-    2. 在 屬性視窗中，按一下 **設定檔** 屬性。 設定檔將出現在功能表中。 設定設定檔旁邊的核取記號。
+    2. 在 [屬性視窗中，按一下 [ **設定檔** ] 屬性。 設定檔將出現在功能表中。 設定設定檔旁邊的核取記號。
 
-    3. 選取您的設定檔定義其造型的項目。 在 屬性視窗中，按一下 造型 **屬性。** 您的造型會出現在清單中。 針對其中一個造型，設定核取記號。
+    3. 選取您的設定檔定義其造型的項目。 在 [屬性視窗中，按一下 [造型 **] 屬性。** 您的造型會出現在清單中。 針對其中一個造型，設定核取記號。
 
     4. 如果您的設定檔定義這個造型的其他屬性，請展開造型屬性來查看它們。
 
 6. 將擴充檔傳送給 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的其他使用者，以安裝在其電腦上。
 
-## <a name="AddProfile"></a>如何將設定檔新增至 Visual Studio 延伸模組
- 若要安裝設定檔，以及讓您將它傳送給其他使用者，則必須將設定檔加入 Visual Studio 擴充功能。 如需詳細資訊，請參閱[部署 Visual Studio 延伸](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)模組。
+## <a name="how-to-add-a-profile-to-a-visual-studio-extension"></a><a name="AddProfile"></a> 如何將設定檔新增至 Visual Studio 擴充功能
+ 若要安裝設定檔，以及讓您將它傳送給其他使用者，則必須將設定檔加入 Visual Studio 擴充功能。 如需詳細資訊，請參閱 [部署 Visual Studio 延伸](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)模組。
 
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>在新的 Visual Studio 擴充功能中定義設定檔
 
@@ -85,45 +85,45 @@ ms.locfileid: "75918872"
    > [!NOTE]
    > 您必須已安裝 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 才能使用此程序。
 
-   1. 在 [檔案] 功能表中，指向 [新增]，然後按一下 [專案]。
+   1. 在 **[檔案]** 功能表上，指向 **[開新檔案]** ，然後按一下 **[專案]** 。
 
-   2. 在 [**新增專案**] 對話方塊的 [**已安裝的範本**] 底下，展開 [**視覺效果C#** ]，按一下 [擴充性]，**然後按一下 [** **VSIX 專案**] 設定專案名稱，然後按一下 **[確定]** 。
+   2. 在 [ **新增專案** ] 對話方塊的 [ **已安裝的範本**] 底下，展開 [ **Visual c #**] **，按一下 [** 擴充性]，然後按一下 [ **VSIX 專案**]。 設定專案名稱，然後按一下 **[確定]**。
 
 2. 將設定檔加入專案。
 
-   - 在方案總管中，以滑鼠右鍵按一下專案，指向 [**加入**]，然後按一下 [**現有專案**]。 在對話方塊中，找到您的設定檔名稱。
+   - 在方案總管中，以滑鼠右鍵按一下專案，指向 [ **加入**]，然後按一下 [ **現有專案**]。 在對話方塊中，找到您的設定檔名稱。
 
-3. 將設定檔的 [**複製到輸出**] 屬性設定為。
+3. 將設定檔的 [ **複製到輸出** ] 屬性設定為。
 
-   1. 在方案總管中，以滑鼠右鍵按一下設定檔檔案，然後按一下 [**屬性**]。
+   1. 在方案總管中，以滑鼠右鍵按一下設定檔檔案，然後按一下 [ **屬性**]。
 
-   2. 在 屬性視窗中，將 **複製到輸出目錄** 屬性設定為 **永遠複製**。
+   2. 在 [屬性視窗中，將 [ **複製到輸出目錄** ] 屬性設定為 [ **永遠複製**]。
 
 4. 在 [方案總管] 中，開啟 `source.extension.vsixmanifest`。
 
     此檔案會在擴充功能資訊清單編輯器中開啟。
 
-5. 在 [**資產**] 頁面上，新增描述設定檔的資料列：
+5. 在 [ **資產** ] 頁面上，新增描述設定檔的資料列：
 
-   - 按一下 [新增]。 在 [**加入新資產**] 對話方塊中設定欄位，如下所示。
+   - 按一下 **[新增]** 。 在 [ **加入新資產** ] 對話方塊中設定欄位，如下所示。
 
-   - 將**類型**設定為 `Microsoft.VisualStudio.UmlProfile`
+   - 將 **類型** 設定為 `Microsoft.VisualStudio.UmlProfile`
 
         這不是其中一個下拉式清單選項。 請使用鍵盤輸入這個名稱。
 
-   - 按一下 [**檔案系統上**的檔案]，然後選取設定檔的名稱，例如 `MyProfile.profile`
+   - 按一下 **檔案系統上** 的 [檔案]，然後選取設定檔的名稱，例如 `MyProfile.profile`
 
 6. 建置專案。
 
-7. **若要對設定檔進行 debug**錯，請按 F5。
+7. **若要對設定檔進行 debug**，請按 F5。
 
     Visual Studio 的實驗執行個體隨即開啟。 在這種情況下，請開啟模型專案。 在 [UML 總管] 中，選取模型的根項目，並且在 [屬性] 視窗中選取您的設定檔。 然後選取模型內的項目，並選取您為這些項目定義的造型。
 
-8. **若要解壓縮 VSIX 以進行部署**
+8. **若要擷取 VSIX 進行部署**
 
-   1. 在 Windows Explorer 中，開啟 **.\bin\Debug**或 **.\bin\Release**資料夾，以尋找 **.vsix**檔案。 這是 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充檔。 該檔案可以安裝在您的電腦上，以及傳送給其他 Visual Studio 使用者。
+   1. 在 Windows 檔案總管中，開啟 **.\bin\Debug** 或 **.\bin\Release** 資料夾以尋找 **.vsix** 檔案。 這是 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充檔。 該檔案可以安裝在您的電腦上，以及傳送給其他 Visual Studio 使用者。
 
-   2. 安裝擴充功能：
+   2. 安裝延伸模組：
 
        1. 按兩下 `.vsix` 檔案。 [Visual Studio 擴充功能安裝程式] 隨即啟動。
 
@@ -135,11 +135,11 @@ ms.locfileid: "75918872"
 
 1. 建立包含下列三個檔案的 Windows 目錄：
 
-    - *YourProfile* `.profile`
+    - *YourProfile*`.profile`
 
     - `extension.vsixmanifest`
 
-    - `[Content_Types].xml`-輸入此名稱，如下所示，並以方括弧括住
+    - `[Content_Types].xml` -輸入此名稱（如下所示），並以方括弧括住
 
 2. 編輯 `[Content_Types].xml` 以包含下列文字。 請注意，它包含每個副檔名的項目。
 
@@ -168,7 +168,7 @@ ms.locfileid: "75918872"
 
 4. 將三個檔案壓縮成一個 ZIP 壓縮檔。
 
-     在 Windows Explorer 中，選取三個檔案，按一下滑鼠右鍵，指向 [**傳送到**]，然後按一下 **[壓縮的（zipped）資料夾**]。
+     在 Windows 檔案總管中，選取三個檔案、按一下滑鼠右鍵、指向 [ **傳送到**]，然後按一下 [ **壓縮的 (壓縮) 資料夾**]。
 
 5. 重新命名 ZIP 壓縮檔，並將其副檔名從 `.zip` 變更為 `.vsix`。
 
@@ -178,29 +178,29 @@ ms.locfileid: "75918872"
 
 1. 在 Windows 檔案總管中按兩下 `.vsix` 檔案，或在 Visual Studio 內開啟它。
 
-2. 在出現的對話方塊中，按一下 [**安裝**]。
+2. 在出現的對話方塊中按一下 [ **安裝** ]。
 
 3. 若要卸載或暫時停用擴充功能，請從 [**工具**] 功能表開啟 [**擴充功能和更新**]。
 
-## <a name="Localized"></a>如何定義當地語系化的設定檔
+## <a name="how-to-define-localized-profiles"></a><a name="Localized"></a> 如何定義當地語系化的設定檔
  您可以針對不同的文化特性或語言定義不同的設定檔，並將它們全部封裝到相同的擴充功能。 使用者在載入您的擴充功能時，會看到您針對他們的文化特性所定義的設定檔。
 
  您一律必須提供預設的設定檔。 如果您尚未定義使用者文化特性的設定檔，則使用者會看到預設設定檔。
 
 #### <a name="to-define-a-localized-profile"></a>定義當地語系化設定檔
 
-1. 依照上一節[如何定義配置](#DefineProfile)檔和[如何將設定檔新增至 Visual Studio 延伸](#AddProfile)模組所述，建立設定檔。 這是預設設定檔，將用於任何未提供當地語系化設定檔的安裝。
+1. 如先前章節[如何定義](#DefineProfile) 設定檔，以及 [如何將設定檔新增至 Visual Studio 擴充](#AddProfile)功能所述，建立設定檔。 這是預設設定檔，將用於任何未提供當地語系化設定檔的安裝。
 
 2. 在與預設設定檔相同的目錄中，加入新的目錄。
 
     > [!NOTE]
     > 如果您是使用 Visual Studio 擴充功能專案來建置擴充功能，請使用 [方案總管] 將新的資料夾加入專案。
 
-3. 將新目錄的名稱變更為當地語系化文化特性的 ISO 簡短程式碼 (例如 `bg` 代表保加利亞文或 `fr` 代表法文)。 您應該使用中性文化特性代碼，通常為兩個字母，而不是特定文化特性 (例如 `fr-CA`)。 如需文化特性代碼的詳細資訊，請參閱[cultureinfo.getcultures 方法](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx)，它會提供完整的文化特性代碼清單。
+3. 將新目錄的名稱變更為當地語系化文化特性的 ISO 簡短程式碼 (例如 `bg` 代表保加利亞文或 `fr` 代表法文)。 您應該使用中性文化特性代碼，通常為兩個字母，而不是特定文化特性 (例如 `fr-CA`)。 如需文化特性代碼的詳細資訊，請參閱 [GetCultures 方法](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx)，它會提供文化特性代碼的完整清單。
 
 4. 將預設設定檔的複本加入新的目錄。 請不要變更其檔案名稱。
 
-     範例 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 延伸模組資料夾，在建立或壓縮成 `.vsix` 檔案之前，會包含下列資料夾和檔案：
+     範例 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充資料夾在建立或壓縮至檔案之前， `.vsix` 會包含下列資料夾和檔案：
 
      `extension.vsixmanifest`
 
@@ -219,11 +219,11 @@ ms.locfileid: "75918872"
 
 7. 建置 Visual Studio 擴充功能，方法是建置擴充功能專案或壓縮所有檔案 (如前面小節所述)。
 
-## <a name="Schema"></a>設定檔的結構
+## <a name="the-structure-of-a-profile"></a><a name="Schema"></a> 設定檔的結構
 
  為了協助您編輯設定檔，請將 `.xsd` 檔案安裝在下列位置：
 
- **%ProgramFiles%\Microsoft Visual Studio [版本] \Xml\Schemas**
+ **%ProgramFiles%\Microsoft Visual Studio [version] \Xml\Schemas**
 
  本節使用 C# 設定檔做為範例。 您可以在下列位置看到完整設定檔定義：
 
@@ -231,7 +231,7 @@ ms.locfileid: "75918872"
 
  在您的安裝中，這個路徑的第一個部分可能不同。
 
- 如需 .NET 設定檔的詳細資訊，請參閱[UML 模型的標準](../modeling/standard-stereotypes-for-uml-models.md)造型。
+ 如需 .NET 設定檔的詳細資訊，請參閱 [UML 模型的標準](../modeling/standard-stereotypes-for-uml-models.md)造型。
 
 ### <a name="main-sections-of-the-uml-profile-definition"></a>UML 設定檔定義的主要區段
  每個設定檔都包含下列內容：
@@ -252,14 +252,14 @@ ms.locfileid: "75918872"
 
  每個設定檔都包含三個主要區段。 它們以反向順序顯示如下：
 
-- `<propertyTypes>`-用於造型區段中所定義之屬性的類型清單。
+- `<propertyTypes>` -型別清單，用於造型區段中定義的屬性。
 
-- `<metaclasses>`-此設定檔中的造型所適用的模型專案類型清單，例如 IClass、IInterface、IOperation、IDependency。
+- `<metaclasses>` -要套用此設定檔中之造型的模型專案型別清單，例如 IClass、IInterface、IOperation、IDependency。
 
-- `<stereotypes>`-造型定義。 每個定義都包括加入目標模型項目之屬性的名稱和類型。
+- `<stereotypes>` -造型定義。 每個定義都包括加入目標模型項目之屬性的名稱和類型。
 
 #### <a name="property-types"></a>屬性類型
- `<propertyTypes>` 區段會宣告 `<stereotypes>` 區段中用於屬性的類型清單。 有兩種屬性類型：外部和列舉。
+ `<propertyTypes>`區段會宣告用於區段中屬性的類型清單 `<stereotypes>` 。 有兩種屬性類型：外部和列舉。
 
  外部類型宣告標準 .NET 類型的完整名稱：
 
@@ -290,7 +290,7 @@ ms.locfileid: "75918872"
       name="Microsoft.VisualStudio.Uml.Components.IComponent" />
 ```
 
- 如需可當做 metaclasse 使用之模型專案和關聯性類型的完整清單，請參閱[模型專案類型](#Elements)。
+ 如需可做為 metaclasse 的模型專案和關聯性類型的完整清單，請參閱 [模型元素類型](#Elements)。
 
 #### <a name="stereotype-definition"></a>造型定義
  `<stereotypes>` 區段包含一或多個造型定義：
@@ -313,7 +313,7 @@ ms.locfileid: "75918872"
 > [!NOTE]
 > Moniker 名稱的開頭必須是 `/yourProfileName/`，其中 `yourProfileName` 定義於設定檔的 `name` 屬性中 (在此範例中為 "CSharpProfile")。 Moniker 的結尾是 metaclasses 區段中其中一個項目的名稱。
 
- 每個造型都可以列出零或多個屬性，並且會將這些屬性加入套用它的任何模型項目。 `<propertyType>` 包含 `<propertyTypes>` 區段中所定義之其中一個類型的連結。 連結必須是參照 `<externalTypeMoniker>` 的 `<externalType>,` 或參照 `<enumerationTypeMoniker>` 的 `<enumerationType>`。 同樣地，連結的開頭是您設定檔的名稱。
+ 每個造型都可以列出零或多個屬性，並且會將這些屬性加入套用它的任何模型項目。 `<propertyType>`包含區段中所定義的其中一個類型的連結 `<propertyTypes>` 。 連結必須是參照 `<externalTypeMoniker>` 的 `<externalType>,` 或參照 `<enumerationTypeMoniker>` 的 `<enumerationType>`。 同樣地，連結的開頭是您設定檔的名稱。
 
 ```
   <properties>
@@ -336,35 +336,35 @@ ms.locfileid: "75918872"
 </stereotype>
 ```
 
-## <a name="Elements"></a>模型元素類型
- 您可以定義造型的類型集合會列在[UML 模型元素類型](../modeling/uml-model-element-types.md)中。
+## <a name="model-element-types"></a><a name="Elements"></a> 模型元素類型
+ 您可以定義造型的型別集合會列在 [UML 模型專案類型](../modeling/uml-model-element-types.md)中。
 
 ## <a name="troubleshooting"></a>疑難排解
  我的造型未出現我的 UML 模型。
-您必須在套件或模型中選取設定檔。 造型接著會出現在套件或模型內的項目上。 如需詳細資訊，請參閱[將造型加入 UML 模型](../modeling/add-stereotypes-to-uml-model-elements.md)專案。
+您必須在套件或模型中選取設定檔。 造型接著會出現在套件或模型內的項目上。 如需詳細資訊，請參閱 [將造型加入 UML 模型](../modeling/add-stereotypes-to-uml-model-elements.md)專案。
 
- 當我開啟 UML 模型時，出現下列錯誤： **VS1707：無法載入下列設定檔，因為發生序列化錯誤： MyProfile。 profile**
+ 當我開啟 UML 模型時，會出現下列錯誤： **VS1707：無法載入下列設定檔，因為發生序列化錯誤： MyProfile。設定檔**
 1. 確認 .profile 的基本 XML 語法正確。
 
 2. 確定每個 Moniker 名稱的格式都是 /profileName/nodeName。 profileName 是根設定檔節點中 name 屬性的值。 nodeName 是 metaclass、externalType 或 enumerationType 的 name 屬性值。
 
-3. 請確定語法如這裡所述，並如_drive_ **： \Program Files\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** 中所示。
+3. 請確定語法如下所述，如_drive_**： \Program Files\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles \\ **中所示範。
 
-4. 解除安裝錯誤擴充功能。 在 [工具] 功能表上，按一下 [擴充功能和更新]。
+4. 解除安裝錯誤擴充功能。 在 [工具] 功能表上，按一下 [延伸模組與更新]。
 
    - 如果擴充功能未出現，請參閱下一個項目。
 
 5. 重建 VSIX 檔案，並在 Windows 檔案總管中開啟它進行重新安裝。 重新啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。
 
-   延伸模組不會出現在 [擴充管理員] 中，但當您嘗試重新安裝時，會出現下列訊息：**已將延伸模組安裝到所有適用的產品。**
-   1. 從*LocalAppData*\Microsoft\VisualStudio\\[version] \Extensions\ 的子資料夾中移除延伸模組檔案。
+   擴充功能不會出現在 [擴充管理員] 中，但是當您嘗試重新安裝時，會出現下列訊息： **此延伸模組已安裝到所有適用的產品。**
+   1. 從 *LocalAppData*\Microsoft\VisualStudio \\ [version] \Extensions\ 的子資料夾移除擴充檔
 
-   - 若要查看*LocalAppData*，您必須在 Windows Explorer 資料夾選項的 [視圖] 索引標籤中，設定 [顯示隱藏的檔案和資料夾]。
+   - 若要查看 *LocalAppData*，您必須在 Windows 檔案總管資料夾選項的 [視圖] 索引標籤中設定 [顯示隱藏的檔案和資料夾]。
 
-   - *LocalAppData*通常位於 C:\Users\\使用者*名稱*\AppData\Local\
+   - *LocalAppData*通常位於 C:\Users 使用者 \\ *名稱*\AppData\Local\
 
 6. 重新啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。
 
-## <a name="see-also"></a>請參閱
- [將造型加入 uml 模型](../modeling/add-stereotypes-to-uml-model-elements.md)專案使用[適用于 uml 模型的](../modeling/standard-stereotypes-for-uml-models.md)[設定檔和造型標準造型自訂您的模型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)
+## <a name="see-also"></a>另請參閱
+ [將造型加入 uml 模型專案中](../modeling/add-stereotypes-to-uml-model-elements.md)使用[uml 模型](../modeling/standard-stereotypes-for-uml-models.md)的[設定檔和造型標準造型自訂您的模型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)
  

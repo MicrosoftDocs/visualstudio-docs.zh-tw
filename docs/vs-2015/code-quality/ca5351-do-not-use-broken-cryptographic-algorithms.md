@@ -9,10 +9,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ad4698fe469176ae8ed590c44b4efbb4ccf39de2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545050"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 不要使用中斷的密碼編譯演算法
@@ -47,7 +47,7 @@ ms.locfileid: "85545050"
 ## <a name="how-to-fix-violations"></a>如何修正違規
  使用密碼編譯較強的選項：
 
-- 針對 MD5，請使用[sha-1](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx)系列中的雜湊（例如 <xref:System.Security.Cryptography.SHA512> 、 <xref:System.Security.Cryptography.SHA384> 、 <xref:System.Security.Cryptography.SHA256> ）。
+- 針對 MD5，請使用 [sha-1](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) 系列中的雜湊 (例如 <xref:System.Security.Cryptography.SHA512> 、 <xref:System.Security.Cryptography.SHA384> <xref:System.Security.Cryptography.SHA256>) 。
 
 - 針對 DES 和 RC2，使用 <xref:System.Security.Cryptography.Aes> 加密。
 
@@ -66,7 +66,7 @@ var hashAlg = MD5.Create();
 
 ```
 
-### <a name="solution"></a>解決方案
+### <a name="solution"></a>解決方法
 
 ```
 using System.Security.Cryptography;
@@ -84,7 +84,7 @@ RC2 encAlg = RC2.Create();
 
 ```
 
-### <a name="solution"></a>解決方案
+### <a name="solution"></a>解決方法
 
 ```
 using System.Security.Cryptography;
@@ -104,7 +104,7 @@ DES encAlg = DES.Create();
 
 ```
 
-### <a name="solution"></a>解決方案
+### <a name="solution"></a>解決方法
 
 ```
 using System.Security.Cryptography;

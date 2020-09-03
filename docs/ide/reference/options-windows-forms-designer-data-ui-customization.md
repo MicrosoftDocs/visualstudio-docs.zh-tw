@@ -11,19 +11,19 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: e48777a50ddf66a8e5493698fb401ff7201de03e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114685"
 ---
-# <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>選項對話方塊：Windows 表單設計器>資料 UI 自訂
+# <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>選項對話方塊： Windows Form 設計工具 > 資料 UI 自訂
 
-此對話方塊會定義有哪些控制項會出現在 [資料來源] 視窗中可供項目使用的控制項清單中。 要打開它，請選擇 **"工具** > **選項**"，然後選擇**Windows 表單設計器** > **資料 UI 自訂**。
+此對話方塊會定義有哪些控制項會出現在 [資料來源] 視窗中可供項目使用的控制項清單中。 若要開啟它，請選取 [**工具**  >  **選項**]，然後選取 [ **Windows Form 設計工具**  >  **資料 UI 自訂**]。
 
 您可以先從 [資料來源] 視窗中的某個項目上選取某個控制項，然後再將它拖曳到 Windows Forms 應用程式中的表單上。 可用的控制項是由項目的資料類型所決定。 每個資料類型都有一份有效相關聯控制項的清單 (如此對話方塊中所定義)，包括預設控制項。 當您從 [資料來源] 視窗將某個項目拖曳至表單上，而未選取控制項時，系統會將所選項目之資料類型的預設控制項加入該表單。
 
-您可以選取及清除每個資料類型之可用控制項的核取方塊，以自訂相關聯控制項的清單。 若要將控制項加入清單，請將可實作 <xref:System.ComponentModel.DefaultBindingPropertyAttribute> 或 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 資料繫結屬性的控制項加入 [工具箱]。 該控制項將會出現在該資料類型的控制項清單中。 有關詳細資訊，請參閱[：將自訂控制項添加到資料來源視窗](../..//data-tools/add-custom-controls-to-the-data-sources-window.md)。
+您可以選取及清除每個資料類型之可用控制項的核取方塊，以自訂相關聯控制項的清單。 若要將控制項加入清單，請將可實作 <xref:System.ComponentModel.DefaultBindingPropertyAttribute> 或 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 資料繫結屬性的控制項加入 [工具箱]。 該控制項將會出現在該資料類型的控制項清單中。 如需詳細資訊，請參閱 [如何：將自訂控制項加入至 [資料來源] 視窗](../..//data-tools/add-custom-controls-to-the-data-sources-window.md)。
 
 ## <a name="data-type"></a>資料類型
 

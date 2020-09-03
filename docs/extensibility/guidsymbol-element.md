@@ -1,5 +1,5 @@
 ---
-title: 吉德符號元素 |微軟文件
+title: GuidSymbol 元素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 59068a9ac9f952b5370681b3684ce4234354afc9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711120"
 ---
-# <a name="guidsymbol-element"></a>吉德符號元素
-該`GuidSymbol`元素包含表示功能表、組或命令的 GUID:ID 對的 GUID。 ID 來自元素`IDSymbol``GuidSymbol`中的元素。 元素`GuidSymbol`具有一`name`個 屬性,該屬性為 GUID 提供友好名稱,`value`該名稱包含在 屬性中。
+# <a name="guidsymbol-element"></a>GuidSymbol 元素
+`GuidSymbol`元素包含 guid： ID 組的 guid，代表功能表、群組或命令。 識別碼來自 `IDSymbol` 元素中的元素 `GuidSymbol` 。 專案 `GuidSymbol` 具有屬性， `name` 該屬性會提供 GUID 的易記名稱，該名稱包含在屬性中 `value` 。
 
 ## <a name="syntax"></a>語法
 
@@ -42,18 +42,18 @@ ms.locfileid: "80711120"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[IDSymbol 元素](../extensibility/idsymbol-element.md)|包含表示功能表、組或命令的 GUID:ID 對的 ID。|
+|[IDSymbol 元素](../extensibility/idsymbol-element.md)|包含代表功能表、群組或命令之 GUID： ID 組的識別碼。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[符號元素](../extensibility/symbols-element.md)|對`GuidSymbol` *.vsct*檔案中的元素進行群組。|
+|[符號元素](../extensibility/symbols-element.md)|`GuidSymbol`將 *.vsct*檔案中的元素群組在一起。|
 
 ## <a name="remarks"></a>備註
- 通常 *,.vsct*檔`Symbols``GuidSymbol`部分包含三 個元素,一個用於包本身,一個用於命令集(包提供的功能表、組和命令的集合),另一個用於為按鈕和其他可視元件提供圖示的位圖。 指定元素`IDSymbol``GuidSymbol`的元素必須具有唯一的`value`。但是,`IDSymbol`具有相同值的元素可以存在於包中,只要它們具有不同的父項。
+ 一般而言， *.vsct* 檔案 `GuidSymbol` 會在其區段中包含三個元素 `Symbols` ，一個用於封裝本身，一個用於命令集 (封裝提供的功能表、群組和命令的集合) ，另一個則用於提供按鈕和其他視覺效果元件圖示的點陣圖。 `IDSymbol`指定專案中的每個元素都 `GuidSymbol` 必須有唯一的 `value` 。不過， `IDSymbol` 具有相同值的專案可以存在於封裝中，前提是它們有不同的父系。
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室指令表 (.vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio 命令表格 (. .vsct) 檔](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

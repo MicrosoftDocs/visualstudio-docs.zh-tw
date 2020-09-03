@@ -20,15 +20,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa9304c999abb1401af8e524551a999556826062
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460452"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>錯誤：遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視沒有連接至這部電腦的使用權限
 
-當嘗試執行 Visual Studio 遠端偵錯監視 (msvsmon) 的使用者沒有本機電腦上的帳戶時，就會發生這個錯誤。 使用舊版的調試引擎進行遠端偵錯時，可能會發生此錯誤。
+當嘗試執行 Visual Studio 遠端偵錯監視 (msvsmon) 的使用者沒有本機電腦上的帳戶時，就會發生這個錯誤。 使用舊版的偵測引擎進行遠端偵錯時，可能會發生這個錯誤。
 
 ## <a name="to-fix-this-problem"></a>若要修復這個問題
 

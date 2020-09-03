@@ -1,5 +1,5 @@
 ---
-title: 線程 |微軟文件
+title: 執行緒 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,24 +12,24 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8ed5c06e0c42dac1f0539cc2c7c5886d95b23ae1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712484"
 ---
 # <a name="threads"></a>Threads
-在除錯器架構結構中,*線程*:
+在偵錯工具架構中， *執行緒*：
 
-- 是計算的基本單位。 線程在單個調用堆疊的上下文中按順序執行其指令,從一個代碼上下文移動到下一個代碼上下文。
+- 這是計算的基礎單位。 執行緒會依序在單一呼叫堆疊的內容中執行其指示，並從一個程式碼內容移至下一個。
 
-- 可以標識自身及其正在運行的程式。 可以命名、掛起和恢復線程。 線程還可以枚舉其關聯的堆疊幀,在某些情況下,可以移動到另一個堆疊幀。 給定堆疊幀的上下文,線程可以返回其關聯的邏輯線程(如果有)。 線程具有可在 IDE**的「線程」** 視窗中顯示的屬性(如掛起計數)。
+- 可以識別其本身以及它正在執行的程式。 可以命名、暫止和繼續執行緒。 執行緒也可以列舉其相關聯的堆疊框架，而且在某些情況下，可以移至另一個堆疊框架。 如果有堆疊框架的內容，執行緒可以傳回其相關聯的邏輯執行緒（如果有的話）。 執行緒具有可在 IDE 的 [ **執行緒** ] 視窗中顯示的屬性，例如「暫止計數」。
 
-- 由[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)介面表示,通常由調試引擎 (DE) 或虛擬機作為執行程序的結果創建。
+- 是以 [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) 介面表示，通常是由 debug 引擎建立 (將) 或虛擬機器作為執行程式的結果。
 
 ## <a name="see-also"></a>另請參閱
-- [Programs](../../extensibility/debugger/programs.md)
-- [堆疊幀](../../extensibility/debugger/stack-frames.md)
-- [偵錯引擎](../../extensibility/debugger/debug-engine.md)
-- [除錯器概念](../../extensibility/debugger/debugger-concepts.md)
-- [工作階段除錯管理員](../../extensibility/debugger/session-debug-manager.md)
+- [程式](../../extensibility/debugger/programs.md)
+- [堆疊框架](../../extensibility/debugger/stack-frames.md)
+- [Debug 引擎](../../extensibility/debugger/debug-engine.md)
+- [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)
+- [會話偵錯工具管理員](../../extensibility/debugger/session-debug-manager.md)

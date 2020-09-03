@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 350b43741ec7e5646eefce225ecd157b6781ada1
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328440"
 ---
 # <a name="get-started-with-wpf"></a>開始使用 WPF
@@ -23,12 +23,12 @@ Windows Presentation Foundation (WPF) 是建立桌面用戶端應用程式的 UI
 
 ## <a name="where-should-i-start"></a>我該從哪裡開始？
 
-|主體|文章|
+|主旨|發行項|
 |-|-|
-|我想直接開始|[逐步解說：我的第一個 WPF 桌面應用程式](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
+|我想直接開始|[逐步解說：我的第一個 WPF 傳統型應用程式](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |我想要比較 XAML 設計工具...|[在 Visual Studio 與 Blend for Visual Studio 中設計 XAML](../xaml-tools/designing-xaml-in-visual-studio.md)|
-|剛開始使用 .NET 嗎？|[.NET 指南](/dotnet/standard/)<br /><br />[應用程式基本概念](/dotnet/standard/application-essentials)<br /><br />[Visual C 入門#](../ide/quickstart-csharp-console.md)|
-|WPF 的相關詳細資訊...|[WPF 概觀](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[XAML 總覽（WPF）](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[控制項](/dotnet/framework/wpf/controls/)<br /><br />[資料繫結概觀](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[使用 LINQ to XML 的 WPF 資料系結](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|
+|剛開始使用 .NET 嗎？|[.NET 指南](/dotnet/standard/)<br /><br />[應用程式基本概念](/dotnet/standard/application-essentials)<br /><br />[使用 Visual C 開始#](../ide/quickstart-csharp-console.md)|
+|WPF 的相關詳細資訊...|[WPF 概觀](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[WPF)  (XAML 總覽 ](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[控制項](/dotnet/framework/wpf/controls/)<br /><br />[資料繫結概觀](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[使用 LINQ to XML 的 WPF 資料系結](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|
 |您是 Windows Form 開發人員嗎？|[Windows Forms 控制項和對等 WPF 控制項](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br />[WPF 和 Windows Forms 交互操作的支援案例](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 
 ## <a name="see-also"></a>另請參閱

@@ -16,23 +16,23 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 98e825fd5543b928569b99218c9054aff666e0fe
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545141"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238:必須正確實作序列化方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 的最新檔，請參閱[CA2238：正確地執行序列化方法](/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly)。
+如需 Visual Studio 的最新檔，請參閱 [CA2238：正確地執行序列化方法](/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly)。
 
 |Item|值|
 |-|-|
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
-|類別|Microsoft。使用方式|
-|中斷變更|中斷-如果此方法是在元件外部可見的。<br /><br /> 不中斷-如果在元件外部看不到方法。|
+|類別|Microsoft. 使用量|
+|中斷變更|中斷-如果方法在元件外部是可見的。<br /><br /> 不中斷-如果在元件外部看不到此方法。|
 
 ## <a name="cause"></a>原因
  處理序列化事件的方法沒有正確的簽章、傳回型別或可視性。
@@ -48,10 +48,10 @@ ms.locfileid: "85545141"
 
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
-  序列化事件處理常式會接受類型的單一參數 <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> 、傳回 `void` ，並具有 `private` 可見度。
+  序列化事件處理常式會採用類型、傳回的單一參數， <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> `void` 且具有 `private` 可見度。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規，請更正序列化事件處理常式的簽章、傳回型別或可見度。
+ 若要修正此規則的違規情形，請更正序列化事件處理常式的簽章、傳回型別或可見度。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。

@@ -17,10 +17,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 5751ddeca2ba690ec29ff905ec7e8330a7199eab
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419116"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>在 Visual Studio 2017 中選取安裝位置
@@ -33,14 +33,14 @@ ms.locfileid: "85419116"
 
 ::: moniker range="vs-2017"
 
-**15.7 版的新**功能：您可以變更某些檔案的位置，以減少系統磁片磁碟機上 Visual Studio 的安裝使用量。 具體而言，您可以針對下載快取、共用元件、SDK 和工具檔案使用不同的位置。
+**15.7 版的新**功能：您可以藉由變更部分檔案的位置，來減少系統磁片磁碟機上的 Visual Studio 安裝空間。 具體而言，您可以針對下載快取、共用元件、SDK 和工具檔案使用不同的位置。
 
 ::: moniker-end
 
    > [!NOTE]
    > 某些工具和 SDK 對於可安裝的位置有不同的規則。 這類工具和 SDK 會安裝在您的系統磁碟機上，即使您選擇其他位置也一樣。
 
-準備好開始了嗎？ 方法如下。
+準備開始使用了嗎？ 方法如下。
 
 ::: moniker range="vs-2017"
 
@@ -50,7 +50,7 @@ ms.locfileid: "85419116"
 
 1. 在 [Visual Studio IDE]**** 區段中，接受預設。 Visual Studio 會安裝核心產品，並包含本版 Visual Studio 的特定檔案。
 
-   ![[安裝位置] 索引標籤的 Visual Studio IDE 區段](media/vs-installation-locations-ide.png "接受 [安裝位置] 索引標籤之 [Visual Studio IDE] 區段的預設值。")
+   ![[安裝位置] 索引標籤的 Visual Studio IDE 區段](media/vs-installation-locations-ide.png "接受 [安裝位置] 索引標籤的 [Visual Studio IDE] 區段的預設值。")
 
    > [!TIP]
    > 如果您的系統磁碟機是固態硬碟 (SSD)，建議您接受系統磁碟機上的預設位置。 理由何在？ 當您使用 Visual Studio 開發時，您會讀取並寫入大量檔案，其會增加磁碟 I/O 活動。 最好選擇最快的磁碟機來處理負載。
@@ -72,7 +72,7 @@ ms.locfileid: "85419116"
 
 1. 在 [共用的元件、工具及 SDK]**** 區段中，指定您要儲存檔案以供並存 Visual Studio 安裝共用的磁碟機。 SDK 和工具也會儲存在此目錄中。
 
-   ![[安裝位置] 索引標籤的共用元件、工具和 Sdk 區段](media/vs-installation-locations-shared.png "指定您要儲存共用元件、工具和 Sdk 的位置。")
+   ![[安裝位置] 索引標籤的 [共用元件、工具及 Sdk] 區段](media/vs-installation-locations-shared.png "指定您要儲存共用元件、工具和 Sdk 的位置。")
 
 ::: moniker-end
 

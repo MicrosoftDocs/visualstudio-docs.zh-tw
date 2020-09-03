@@ -1,5 +1,5 @@
 ---
-title: 任務計劃員類 - 內部成員 |微軟文件
+title: TaskScheduler 類別-內部成員 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a53abc8b24edb06445c23c19744d00d50de8735d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712571"
 ---
-# <a name="taskscheduler-class---internal-members"></a>工作計劃器類別 ─ 內部成員
-本文介紹了説明您實現自定義調試器的<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>類的內部成員。 有關此類的一般資訊,<xref:System.Threading.Tasks.TaskScheduler>請參閱參考文章。
+# <a name="taskscheduler-class---internal-members"></a>TaskScheduler 類別-內部成員
+本文說明 <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> 可協助您執行自訂偵錯工具之類別的內部成員。 如需此類別的一般資訊，請參閱 <xref:System.Threading.Tasks.TaskScheduler> 參考文章。
 
- **命名空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **程式集**:mscorlib(在*mscorlib.dll*中)
+ **元件：** *mscorlib.dll*) 中的 mscorlib (
 
- 由於您無法從 .NET 框架訪問這些內部成員,因此在通用中間語言 (CIL) 中提供了以下語法。
+ 因為您無法從 .NET Framework 存取這些內部成員，所以會以一般中繼語言 () 的 CIL 來提供下列語法。
 
 ## <a name="syntax"></a>語法
 
@@ -38,13 +38,13 @@ ms.locfileid: "80712571"
 
 ### <a name="methods"></a>方法
 
-|名稱|描述|
+|名稱|說明|
 |----------|-----------------|
-|[取得除錯器的排程工作](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|檢索所有計劃任務的陣列。|
-|[取得工作計劃對除錯器](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|檢索當前處於活動狀態的所有<xref:System.Threading.Tasks.TaskScheduler>物件的陣列。|
+|[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|捕獲所有排程工作的陣列。|
+|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|抓取目前作用中之所有物件的陣列 <xref:System.Threading.Tasks.TaskScheduler> 。|
 
 ## <a name="remarks"></a>備註
 
 ## <a name="see-also"></a>另請參閱
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
-- [.NET 框架的並行擴展內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET Framework 的平行延伸模組內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

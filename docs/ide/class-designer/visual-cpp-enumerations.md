@@ -1,5 +1,5 @@
 ---
-title: 類設計器中的C++枚舉
+title: 類別設計工具中的 c + + 列舉
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ee56850c05e4b06ea4325ec238e56e99b38978d0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114194"
 ---
-# <a name="c-enumerations-in-class-designer"></a>C++類設計器中的枚舉
+# <a name="c-enumerations-in-class-designer"></a>類別設計工具中的 c + + 列舉
 
 [類別設計工具]**** 支援 C++ `enum` 和範圍 `enum class` 類型。 以下是範例：
 
@@ -44,5 +44,5 @@ enum class CardSuit {
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用C++代碼](working-with-visual-cpp-code.md)
+- [使用 c + + 程式碼](working-with-visual-cpp-code.md)
 - [列舉](/cpp/cpp/enumerations-cpp)

@@ -35,10 +35,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 594d885228de68ecf34e0644cbbe6c6899397fad
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419194"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>建置前事件/建置後事件命令列對話方塊
@@ -99,5 +99,5 @@ ms.locfileid: "85419194"
 
 - [在 Visual Studio 中指定自訂建置事件](../../ide/specifying-custom-build-events-in-visual-studio.md)
 - [專案設計工具、建置事件 (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
-- [如何：指定組建事件（Visual Basic）](../../ide/how-to-specify-build-events-visual-basic.md)
-- [如何：指定組建事件（c #）](../../ide/how-to-specify-build-events-csharp.md)
+- [如何：指定組建事件 (Visual Basic) ](../../ide/how-to-specify-build-events-visual-basic.md)
+- [如何：指定組建事件 (c # ) ](../../ide/how-to-specify-build-events-csharp.md)

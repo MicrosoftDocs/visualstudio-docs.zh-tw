@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 67bc1a18b4e4cbfdf69fe917c0d0fdff09832983
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545024"
 ---
 # <a name="code-snippets-schema-reference"></a>程式碼片段結構描述參考
@@ -28,7 +28,7 @@ IntelliSense 程式碼片段是預先設計的程式碼片段，可用以插入�
 
 ## <a name="intellisense-code-snippets-schema-elements"></a>IntelliSense 程式碼片段結構描述項目
 
-|元素|元素|元素|
+|項目|項目|項目|
 |-|-|-|
 |[Assembly 元素](../ide/code-snippets-schema-reference.md#assembly)|[HelpUrl 項目](../ide/code-snippets-schema-reference.md#helpurl)|[References 項目](../ide/code-snippets-schema-reference.md#references)|
 |[Author 元素](../ide/code-snippets-schema-reference.md#author)|[ID 元素](../ide/code-snippets-schema-reference.md#id)|[Shortcut 項目](../ide/code-snippets-schema-reference.md#shortcut)|
@@ -41,7 +41,7 @@ IntelliSense 程式碼片段是預先設計的程式碼片段，可用以插入�
 |[Function 元素](../ide/code-snippets-schema-reference.md#function)|[Object 元素](../ide/code-snippets-schema-reference.md#object)|[Url 元素](../ide/code-snippets-schema-reference.md#url)|
 |[Header 項目](../ide/code-snippets-schema-reference.md#header)|[Reference 元素](../ide/code-snippets-schema-reference.md#reference)||
 
-## <a name="assembly-element"></a><a name="assembly"></a>Assembly 元素
+## <a name="assembly-element"></a><a name="assembly"></a> Assembly 元素
  指定程式碼片段所參考的組件名稱。
 
 > [!NOTE]
@@ -55,7 +55,7 @@ IntelliSense 程式碼片段是預先設計的程式碼片段，可用以插入�
 </Assembly>
 ```
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Reference 元素](../ide/code-snippets-schema-reference.md#reference)|包含有關程式碼片段所需之組件參考的資訊。|
 
@@ -71,7 +71,7 @@ IntelliSense 程式碼片段是預先設計的程式碼片段，可用以插入�
 
 ```
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Header 項目](../ide/code-snippets-schema-reference.md#header)|包含有關該程式碼片段的一般資訊。|
 
@@ -116,13 +116,13 @@ is a great color. I love Blue.
 </Code>
 ```
 
-|屬性|描述|
+|屬性|說明|
 |---------------|-----------------|
 |`Delimiter`|選擇性屬性。 指定在程式碼中用來描述常值和物件的分隔符號。 根據預設，分隔符號為 `$`。|
 |`Kind`|選擇性屬性。 指定程式碼片段包含的程式碼種類，以及程式碼片段必須插入以供編譯的位置。 可用的值包括 `method body`、`method decl`、`type decl`、`file` 及 `any`。|
 |`Language`|必要屬性。 指定程式碼片段的語言。|
 
-|種類屬性值|描述|
+|種類屬性值|說明|
 |--------------------------|-----------------|
 |`method body`|指定程式碼片段為方法主體，因此必須在方法宣告中插入。|
 |`method decl`|指定程式碼片段為方法，因此必須在類別或模組中插入。|
@@ -130,7 +130,7 @@ is a great color. I love Blue.
 |`file`|指定程式碼片段為完整的程式碼檔。 這些程式碼片段可以單獨插入程式碼檔中或命名空間內。|
 |`any`|指定程式碼片段可以插入任何位置。 這個標記可用於與內容無關的程式碼片段，例如註解。|
 
-|語言屬性值|描述|
+|語言屬性值|說明|
 |------------------------------|-----------------|
 |`VB`|識別 Visual Basic 程式碼片段。|
 |`CSharp`|識別 C# 程式碼片段。|
@@ -140,13 +140,13 @@ is a great color. I love Blue.
 |`SQL`|識別 SQL 程式碼片段。|
 |`HTML`|識別 HTML 程式碼片段。|
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[程式碼片段元素](../ide/code-snippets-schema-reference.md#snippet)|包含程式碼片段的參考、匯入、宣告和程式碼。|
 
  需要文字值。 此文字會指定程式碼以及常值和物件，讓您可以在將此程式碼片段插入專案時使用。
 
-## <a name="codesnippet-element"></a><a name="codesnippet"></a>CodeSnippet 元素
+## <a name="codesnippet-element"></a><a name="codesnippet"></a> CodeSnippet 元素
  讓您指定可插入 Visual Studio 程式碼檔中的標題和多個 IntelliSense 程式碼片段。
 
 ```xml
@@ -157,20 +157,20 @@ is a great color. I love Blue.
 
 ```
 
-|屬性|描述|
+|屬性|說明|
 |---------------|-----------------|
 |`Format`|必要屬性。 指定程式碼片段的結構描述版本。 Format 屬性必須是語法為 x.x.x 的字串，其中每個 "x" 代表版本號碼的一個數值。 Visual Studio 會忽略具有它所不了解之 `Format` 屬性的程式碼片段。|
 
-|子元素|描述|
+|子元素|說明|
 |-------------------|-----------------|
 |[Header 項目](../ide/code-snippets-schema-reference.md#header)|必要元素。 包含有關該程式碼片段的一般資訊。 程式碼片段中只能有一個 `Header` 項目。|
 |[程式碼片段元素](../ide/code-snippets-schema-reference.md#snippet)|必要元素。 包含 Visual Studio 將插入的程式碼。 程式碼片段中只能有一個 `Snippet` 項目。|
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[CodeSnippets 項目](../ide/code-snippets-schema-reference.md#codesnippets)|程式碼片段 XML 結構描述的根項目。|
 
-## <a name="codesnippets-element"></a><a name="codesnippets"></a>CodeSnippets 元素
+## <a name="codesnippets-element"></a><a name="codesnippets"></a> CodeSnippets 元素
  將 [CodeSnippet 項目](../ide/code-snippets-schema-reference.md#codesnippet)的項目設為群組。 `CodeSnippets` 項目是程式碼片段 XML 結構描述的根項目。
 
 ```xml
@@ -180,11 +180,11 @@ is a great color. I love Blue.
 
 ```
 
-|子元素|描述|
+|子元素|說明|
 |-------------------|-----------------|
 |[CodeSnippet 項目](../ide/code-snippets-schema-reference.md#codesnippet)|選擇性項目。 所有程式碼片段資料的父項目。 `CodeSnippet` 元素中可能有零個或多個 `CodeSnippets` 元素。|
 
-## <a name="declarations-element"></a><a name="declarations"></a>宣告元素
+## <a name="declarations-element"></a><a name="declarations"></a> 宣告元素
  指定構成您可以編輯的程式碼片段部分的常值和物件。
 
 ```xml
@@ -195,16 +195,16 @@ is a great color. I love Blue.
 
 ```
 
-|子元素|描述|
+|子元素|說明|
 |-------------------|-----------------|
 |[Literal 元素](../ide/code-snippets-schema-reference.md#literal)|選擇性項目。 定義您可以編輯的程式碼片段常值。 `Literal` 元素中可能有零個或多個 `Declarations` 元素。|
 |[Object 元素](../ide/code-snippets-schema-reference.md#object)|選擇性項目。 定義您可以編輯的程式碼片段物件。 `Object` 元素中可能有零個或多個 `Declarations` 元素。|
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[程式碼片段元素](../ide/code-snippets-schema-reference.md#snippet)|包含程式碼片段的參考、匯入、宣告和程式碼。|
 
-## <a name="default-element"></a><a name="default"></a>Default 元素
+## <a name="default-element"></a><a name="default"></a> Default 元素
  指定 IntelliSense 程式碼片段中常值或物件的預設值。
 
 ```xml
@@ -214,14 +214,14 @@ is a great color. I love Blue.
 
 ```
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Literal 元素](../ide/code-snippets-schema-reference.md#literal)|定義您可以編輯之程式碼片段的常值欄位。|
 |[Object 元素](../ide/code-snippets-schema-reference.md#object)|定義您可以編輯之程式碼片段的物件欄位。|
 
  需要文字值。 這項文字是指定填入您可以編輯的程式碼片段中，各欄位的常值或物件的預設值。
 
-## <a name="description-element"></a><a name="description"></a>Description 元素
+## <a name="description-element"></a><a name="description"></a> Description 元素
  指定有關 IntelliSense 程式碼片段內容的描述性資訊。
 
 ```xml
@@ -230,13 +230,13 @@ is a great color. I love Blue.
 </Description>
 ```
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Header 項目](../ide/code-snippets-schema-reference.md#header)|包含有關該程式碼片段的一般資訊。|
 
  需要文字值。 此文字描述程式碼片段。
 
-## <a name="function-element"></a><a name="function"></a>Function 元素
+## <a name="function-element"></a><a name="function"></a> Function 元素
  指定常值或物件在 Visual Studio 中得到焦點時要執行的函式。
 
 > [!NOTE]
@@ -248,14 +248,14 @@ is a great color. I love Blue.
 </Function>
 ```
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Literal 元素](../ide/code-snippets-schema-reference.md#literal)|定義您可以編輯之程式碼片段的常值欄位。|
 |[Object 元素](../ide/code-snippets-schema-reference.md#object)|定義您可以編輯之程式碼片段的物件欄位。|
 
  需要文字值。 此文字指定常值或物件欄位在 Visual Studio 中得到焦點時要執行的函式。
 
-## <a name="header-element"></a><a name="header"></a>Header 元素
+## <a name="header-element"></a><a name="header"></a> Header 元素
  指定有關 IntelliSense 程式碼片段的一般資訊。
 
 ```xml
@@ -271,7 +271,7 @@ is a great color. I love Blue.
 
 ```
 
-|子元素|描述|
+|子元素|說明|
 |-------------------|-----------------|
 |[Author 元素](../ide/code-snippets-schema-reference.md#author)|選擇性項目。 程式碼片段作者的人員或公司名稱。 `Author` 項目中可能有零個或一個 `Header` 項目。|
 |[Description 元素](../ide/code-snippets-schema-reference.md#description)|選擇性項目。 程式碼片段的描述。 `Description` 項目中可能有零個或一個 `Header` 項目。|
@@ -281,11 +281,11 @@ is a great color. I love Blue.
 |[SnippetTypes 元素](../ide/code-snippets-schema-reference.md#snippettypes)|選擇性項目。 將 `SnippetType` 項目設為群組。 `SnippetTypes` 項目中可能有零個或一個 `Header` 項目。 如果沒有 `SnippetTypes` 項目，程式碼片段永遠有效。|
 |[Title 元素](../ide/code-snippets-schema-reference.md#title)|必要元素。 程式碼片段的易記名稱。 `Title` 項目中只能有一個 `Header` 項目。|
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[CodeSnippet 項目](../ide/code-snippets-schema-reference.md#codesnippet)|所有程式碼片段資料的父項目。|
 
-## <a name="helpurl-element"></a><a name="helpurl"></a>HelpUrl 元素
+## <a name="helpurl-element"></a><a name="helpurl"></a> HelpUrl 元素
  指定提供程式碼片段詳細資訊的 URL。
 
 > [!NOTE]
@@ -298,13 +298,13 @@ is a great color. I love Blue.
 
 ```
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Header 項目](../ide/code-snippets-schema-reference.md#header)|包含有關該程式碼片段的一般資訊。|
 
  可選擇使用文字值。 此文字指定可瀏覽程式碼片段詳細資訊的 URL。
 
-## <a name="id-element"></a><a name="id"></a>ID 元素
+## <a name="id-element"></a><a name="id"></a> ID 元素
  指定 `Literal` 或 `Object` 項目的唯一識別項。 相同程式碼片段中不會有兩個常值或物件的 `ID` 項目有相同的文字值。常值和物件不能包含具有 end 值的 `ID` 項目。 已保留 `$end$` 值，並且在插入程式碼片段以後，用來標示放置游標的位置。
 
 ```xml
@@ -314,14 +314,14 @@ is a great color. I love Blue.
 
 ```
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Literal 元素](../ide/code-snippets-schema-reference.md#literal)|定義您可以編輯之程式碼片段的常值欄位。|
 |[Object 元素](../ide/code-snippets-schema-reference.md#object)|定義您可以編輯之程式碼片段的物件欄位。|
 
  需要文字值。 此文字會指定物件或常值的唯一識別項。
 
-## <a name="import-element"></a><a name="import"></a>Import 元素
+## <a name="import-element"></a><a name="import"></a> Import 元素
  指定 IntelliSense 程式碼片段使用的匯入命名空間。
 
 > [!NOTE]
@@ -334,15 +334,15 @@ is a great color. I love Blue.
 
 ```
 
-|子元素|描述|
+|子元素|說明|
 |-------------------|-----------------|
 |[Namespace 項目](../ide/code-snippets-schema-reference.md#namespace)|必要元素。 指定程式碼片段所使用的命名空間。 `Namespace` 項目中只能有一個 `Import` 項目。|
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Imports 項目](../ide/code-snippets-schema-reference.md#imports)|將 **Import** 項目的項目設為群組。|
 
-## <a name="imports-element"></a><a name="imports"></a>Imports 元素
+## <a name="imports-element"></a><a name="imports"></a> Imports 元素
  將個別 `Import` 項目設為群組。
 
 > [!NOTE]
@@ -354,11 +354,11 @@ is a great color. I love Blue.
 <Imports>
 ```
 
-|子元素|描述|
+|子元素|說明|
 |-------------------|-----------------|
 |[Import 元素](../ide/code-snippets-schema-reference.md#import)|選擇性項目。 包含程式碼片段的已匯入命名空間。 `Imports` 項目中可能有零或多個 **Import** 項目。|
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[程式碼片段元素](../ide/code-snippets-schema-reference.md#snippet)|包含程式碼片段的參考、匯入、宣告和程式碼。|
 
@@ -371,13 +371,13 @@ is a great color. I love Blue.
 </Keyword>
 ```
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Keywords 項目](../ide/code-snippets-schema-reference.md#keywords)|將個別 `Keyword` 項目設為群組。|
 
  需要文字值。 程式碼片段的關鍵字。
 
-## <a name="keywords-element"></a><a name="keywords"></a>關鍵字元素
+## <a name="keywords-element"></a><a name="keywords"></a> 關鍵字元素
  將個別 `Keyword` 項目設為群組。 這些程式碼片段關鍵字是由 Visual Studio 使用，而且代表線上內容提供者加入自訂關鍵字進行搜尋或分類的標準方式
 
 ```xml
@@ -387,15 +387,15 @@ is a great color. I love Blue.
 <Keywords>
 ```
 
-|子元素|描述|
+|子元素|說明|
 |-------------------|-----------------|
 |[關鍵字元素](../ide/code-snippets-schema-reference.md#keyword)|選擇性項目。 包含程式碼片段的個別關鍵字。 `Keyword` 元素中可能有零個或多個 `Keywords` 元素。|
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Header 項目](../ide/code-snippets-schema-reference.md#header)|包含有關該程式碼片段的一般資訊。|
 
-## <a name="literal-element"></a><a name="literal"></a>Literal 元素
+## <a name="literal-element"></a><a name="literal"></a> Literal 元素
  定義您可以編輯的程式碼片段常值。 `Literal` 項目是用以辨認整個包含在程式碼片段中一小段程式碼的取代，但有可能會在插入程式碼後加以自訂。 例如常值字串、數值以及一些應宣告為常值的變數名稱。
 
  常值和物件不能包含值為 selected 或 end 的 **ID** 項目。 `$selected$` 值代表在文件中選取的文字，這些文字會在叫用時插入程式碼片段中。 `$end$` 會標記程式碼片段插入後，放置游標的位置。
@@ -409,22 +409,22 @@ is a great color. I love Blue.
 </Literal>
 ```
 
-|屬性|描述|
+|屬性|說明|
 |---------------|-----------------|
 |`Editable`|選擇性 `Boolean` 屬性。 指定在程式碼片段插入後您是否可以編輯常值。 此屬性的預設值為 `true`。|
 
-|子元素|描述|
+|子元素|說明|
 |-------------------|-----------------|
 |[Default 元素](../ide/code-snippets-schema-reference.md#default)|必要元素。 當您插入程式碼片段時，指定常值的預設值。 `Default` 項目中只能有一個 `Literal` 項目。|
 |[Function 元素](../ide/code-snippets-schema-reference.md#function)|選擇性項目。 指定常值在 Visual Studio 中獲得焦點時要執行的函式。 `Function` 項目中可能有零個或一個 `Literal` 項目。|
 |[ID 元素](../ide/code-snippets-schema-reference.md#id)|必要元素。 指定常值的唯一識別項。 `ID` 項目中只能有一個 `Literal` 項目。|
 |[ToolTip 元素](../ide/code-snippets-schema-reference.md#tooltip)|選擇性項目。 描述常值需要的值和使用方式。 `Literal` 項目中可能有零或一個 **Tooltip** 項目。|
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Declarations 項目](../ide/code-snippets-schema-reference.md#declarations)|包含您可以編輯之程式碼片段的常值和物件。|
 
-## <a name="namespace-element"></a><a name="namespace"></a>Namespace 元素
+## <a name="namespace-element"></a><a name="namespace"></a> Namespace 元素
  指定必須匯入的命名空間，匯入後程式碼片段才能進行編譯和執行。 在 `Namespace` 項目中指定的命名空間會自動加入至程式碼開頭的 `Imports` 陳述式中 (如果不存在的話)。
 
 > [!NOTE]
@@ -436,13 +436,13 @@ is a great color. I love Blue.
 </Namespace>
 ```
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Import 元素](../ide/code-snippets-schema-reference.md#import)|匯入指定的命名空間。|
 
  需要文字值。 此文字會指定程式碼片段假設已匯入的命名空間。
 
-## <a name="object-element"></a><a name="object"></a>Object 元素
+## <a name="object-element"></a><a name="object"></a> Object 元素
  定義您可以編輯的程式碼片段物件。 `Object` 項目是用以識別程式碼片段所需的項目，但有可能定義在程式碼片段本身的外面。 例如，Windows Form 控制項、ASP.NET 控制項、物件執行個體以及類型執行個體應該宣告為物件。 物件宣告需要指定類型，可透過 `Type` 項目指定。
 
 ```xml
@@ -455,11 +455,11 @@ is a great color. I love Blue.
 </Object>
 ```
 
-|屬性|描述|
+|屬性|說明|
 |---------------|-----------------|
 |`Editable`|選擇性 `Boolean` 屬性。 指定在程式碼片段插入後您是否可以編輯常值。 此屬性的預設值為 `true`。|
 
-|子元素|描述|
+|子元素|說明|
 |-------------------|-----------------|
 |[Default 元素](../ide/code-snippets-schema-reference.md#default)|必要元素。 當您插入程式碼片段時，指定常值的預設值。 `Default` 項目中只能有一個 `Literal` 項目。|
 |[Function 元素](../ide/code-snippets-schema-reference.md#function)|選擇性項目。 指定常值在 Visual Studio 中獲得焦點時要執行的函式。 `Function` 項目中可能有零個或一個 `Literal` 項目。|
@@ -467,7 +467,7 @@ is a great color. I love Blue.
 |[ToolTip 元素](../ide/code-snippets-schema-reference.md#tooltip)|選擇性項目。 描述常值需要的值和使用方式。 `Literal` 項目中可能有零或一個 **Tooltip** 項目。|
 |[Type 元素](../ide/code-snippets-schema-reference.md#type)|必要元素。 指定物件類型。 `Type` 項目中只能有一個 `Object` 項目。|
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Declarations 項目](../ide/code-snippets-schema-reference.md#declarations)|包含您可以編輯之程式碼片段的常值和物件。|
 
@@ -484,16 +484,16 @@ is a great color. I love Blue.
 </Reference>
 ```
 
-|子元素|描述|
+|子元素|說明|
 |-------------------|-----------------|
 |[Assembly 元素](../ide/code-snippets-schema-reference.md#assembly)|必要元素。 包含程式碼片段參考的組件名稱。 `Assembly` 項目中只能有一個 `Reference` 項目。|
 |[Url 元素](../ide/code-snippets-schema-reference.md#url)|選擇性項目。 包含可提供參考組件詳細資訊的 URL。 `Url` 項目中可能有零個或一個 `Reference` 項目。|
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[References 項目](../ide/code-snippets-schema-reference.md#references)|`Reference` 項目的群組項目。|
 
-## <a name="references-element"></a><a name="references"></a>References 元素
+## <a name="references-element"></a><a name="references"></a> References 元素
  將個別 `Reference` 項目設為群組。
 
 > [!NOTE]
@@ -505,15 +505,15 @@ is a great color. I love Blue.
 </References>
 ```
 
-|子元素|描述|
+|子元素|說明|
 |-------------------|-----------------|
 |[Reference 元素](../ide/code-snippets-schema-reference.md#reference)|選擇性項目。 包含程式碼片段的組件參考資訊。 `Reference` 元素中可能有零個或多個 `References` 元素。|
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[程式碼片段元素](../ide/code-snippets-schema-reference.md#snippet)|包含程式碼片段的參考、匯入、宣告和程式碼。|
 
-## <a name="shortcut-element"></a><a name="shortcut"></a>快捷方式元素
+## <a name="shortcut-element"></a><a name="shortcut"></a> 快速鍵元素
  指定用來插入程式碼片段的捷徑文字。 `Shortcut` 項目的文字值只能包含英數字元、短破折號 ( - ) 及底線 ( _ )。
 
 > [!CAUTION]
@@ -525,7 +525,7 @@ is a great color. I love Blue.
 </Shortcut>
 ```
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Header 項目](../ide/code-snippets-schema-reference.md#header)|包含有關該程式碼片段的一般資訊。|
 
@@ -544,18 +544,18 @@ is a great color. I love Blue.
 
 ```
 
-|子元素|描述|
+|子元素|說明|
 |-------------------|-----------------|
 |[Code 元素](../ide/code-snippets-schema-reference.md#code)|必要元素。 指定您要插入文件檔的程式碼。 `Code` 項目中只能有一個 `Snippet` 項目。|
 |[Declarations 項目](../ide/code-snippets-schema-reference.md#declarations)|選擇性項目。 指定構成您可以編輯的程式碼片段部分的常值和物件。 `Declarations` 項目中可能有零個或一個 `Snippet` 項目。|
 |[Imports 項目](../ide/code-snippets-schema-reference.md#imports)|選擇性項目。 將個別 `Import` 項目設為群組。 `Imports` 項目中可能有零個或一個 `Snippet` 項目。|
 ||選擇性項目。 將個別 `Reference` 項目設為群組。 `References` 項目中可能有零個或一個 `Snippet` 項目。|
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[CodeSnippet 項目](../ide/code-snippets-schema-reference.md#codesnippet)|讓您指定可插入 Visual Studio 程式碼檔中的標題和多個 IntelliSense 程式碼片段。|
 
-## <a name="snippettype-element"></a><a name="snippettype"></a>SnippetType 元素
+## <a name="snippettype-element"></a><a name="snippettype"></a> SnippetType 元素
  指定 Visual Studio 如何插入程式碼片段。
 
 ```xml
@@ -564,7 +564,7 @@ is a great color. I love Blue.
 <SnippetType>
 ```
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[SnippetTypes 元素](../ide/code-snippets-schema-reference.md#snippettypes)|將 `SnippetType` 項目設為群組。|
 
@@ -586,11 +586,11 @@ is a great color. I love Blue.
 <SnippetTypes>
 ```
 
-|子元素|描述|
+|子元素|說明|
 |-------------------|-----------------|
 |[SnippetType 項目](../ide/code-snippets-schema-reference.md#snippettype)|選擇性項目。 指定 Visual Studio 如何將程式碼片段插入程式碼中。 `SnippetType` 元素中可能有零個或多個 `SnippetTypes` 元素。|
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Header 項目](../ide/code-snippets-schema-reference.md#header)|指定有關程式碼片段的一般資訊。|
 
@@ -603,7 +603,7 @@ is a great color. I love Blue.
 <Title>
 ```
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Header 項目](../ide/code-snippets-schema-reference.md#header)|指定有關程式碼片段的一般資訊。|
 
@@ -618,14 +618,14 @@ is a great color. I love Blue.
 </ToolTip>
 ```
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Literal 元素](../ide/code-snippets-schema-reference.md#literal)|定義您可以編輯之程式碼片段的常值欄位。|
 |[Object 元素](../ide/code-snippets-schema-reference.md#object)|定義您可以編輯之程式碼片段的物件欄位。|
 
  需要文字值。 此文字會指定要與程式碼片段中的物件或常值相關聯的工具提示描述。
 
-## <a name="type-element"></a><a name="type"></a>Type 元素
+## <a name="type-element"></a><a name="type"></a> Type 元素
  指定物件類型。 `Object` 項目是用以識別程式碼片段所需的項目，但有可能定義在程式碼片段本身的外面。 例如，Windows Form 控制項、ASP.NET 控制項、物件執行個體以及類型執行個體應該宣告為物件。 物件宣告需要指定類型，可透過 `Type` 項目指定。
 
 ```xml
@@ -634,13 +634,13 @@ is a great color. I love Blue.
 </Type>
 ```
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Object 元素](../ide/code-snippets-schema-reference.md#object)|定義您可以編輯之程式碼片段的物件欄位。|
 
  需要文字值。 此文字會指定物件的類型。
 
-## <a name="url-element"></a><a name="url"></a>Url 元素
+## <a name="url-element"></a><a name="url"></a> Url 元素
  指定提供所參考組件相關詳細資訊的 URL。
 
 > [!NOTE]
@@ -652,7 +652,7 @@ is a great color. I love Blue.
 </Url>
 ```
 
-|Parent 項目|描述|
+|Parent 項目|說明|
 |--------------------|-----------------|
 |[Reference 元素](../ide/code-snippets-schema-reference.md#reference)|指定程式碼片段所需的組件參考。|
 

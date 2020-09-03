@@ -1,5 +1,5 @@
 ---
-title: 擴展狀態列 |微軟文件
+title: 擴充狀態列 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,29 +12,29 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aa62326d82d81f7ee4d10a838209364355cc488e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711548"
 ---
-# <a name="extend-the-status-bar"></a>延伸狀態列
-您可以使用 IDE 底部的可視化工作室狀態列來顯示資訊。
+# <a name="extend-the-status-bar"></a>擴充狀態列
+您可以使用 IDE 底部的 Visual Studio 狀態列來顯示資訊。
 
- 擴展狀態列時,可以在四個區域中顯示資訊和 UI:反饋區域、進度列、動畫區域和設計器區域。 回饋區域允許您顯示文字並突出顯示顯示的文本。 進度列顯示短運行操作(如儲存檔)的增量進度。 動畫區域顯示連續循環動畫,用於長時間運行的操作或不確定長度的操作,例如在解決方案中生成多個專案。 設計器區域顯示游標位置的行號和列號。
+ 當您擴充狀態列時，您可以在四個區域中顯示資訊和 UI：意見反應區域、進度列、動畫區域和設計工具區域。 [意見反應] 區域可讓您顯示文字，並醒目提示顯示的文字。 進度列會顯示短時間執行之作業的累加進度，例如儲存檔案。 動畫區域會針對長時間執行的作業或不確定長度的作業（例如在方案中建立多個專案）顯示持續迴圈的動畫。 而且，設計工具區域會顯示游標位置的行號和欄號。
 
- 您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar>介面(從服務<xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>) 獲取狀態列。 此外,任何位於視窗框架上的物件都可以通過實現<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>介面註冊為狀態列用戶端物件。 每當激活視窗時,Visual Studio 都會查詢該視窗中`IVsStatusbarUser`為 介面設置的物件。 如果找到,它將調用返回<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>的介面上的方法,並且物件可以從該方法內更新狀態列。 例如,文檔視窗可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>方法 在設計器區域中的資訊變為活動時更新它們。
+ 您可以使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> 服務) 中的介面 (來取得狀態列 <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> 。 此外，在視窗框架上放置的任何物件都可以藉由實作為狀態列用戶端物件來註冊該 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> 介面。 每當啟動視窗時，Visual Studio 會針對介面查詢位於該視窗的物件 `IVsStatusbarUser` 。 如果找到，它會 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> 在傳回的介面上呼叫方法，而物件可以從該方法中更新狀態列。 例如，文件視窗可以在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> 設計工具區域中使用方法來更新其作用中的資訊。
 
- 以下過程假定您瞭解如何創建 VSIX 專案和添加自訂功能表命令。 關於詳細資訊,請參閱[使用選單指令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)。
+ 下列程式假設您已瞭解如何建立 VSIX 專案並加入自訂功能表命令。 如需詳細資訊，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)模組。
 
-## <a name="modify-the-status-bar"></a>變更狀態列
- 此過程展示如何設定和獲取文本、顯示靜態文字以及突出顯示狀態列的反饋區域中顯示的文本。
+## <a name="modify-the-status-bar"></a>修改狀態列
+ 此程式示範如何設定和取得文字、顯示靜態文字，以及反白顯示狀態列的意見反應區域中顯示的文字。
 
-### <a name="read-and-write-to-the-status-bar"></a>讀取並寫入狀態列
+### <a name="read-and-write-to-the-status-bar"></a>讀取及寫入狀態列
 
-1. 建立名為**TestStatusBar 延伸的**VSIX 專案,並加入名為**TestStatusBar 命令的選單指令**。
+1. 建立名為 **TestStatusBarExtension** 的 VSIX 專案，並新增名為 **TestStatusBarCommand**的功能表命令。
 
-2. 在*TestStatusBarCommand.cs*中,將命令處理程式方法`MenuItemCallback`代碼 () 取代為以下內容:
+2. 在 *TestStatusBarCommand.cs*中，以下列程式碼取代命令處理常式方法程式碼 (`MenuItemCallback`) ：
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -68,17 +68,17 @@ ms.locfileid: "80711548"
     }
     ```
 
-3. 編譯代碼並開始調試。
+3. 編譯器代碼並開始進行偵錯工具。
 
-4. 打開視覺化工作室實驗實例中的 **「工具**」功能表。 點選 **「調用測試狀態列命令」 按鈕**。
+4. 在 Visual Studio 的實驗實例中開啟 [ **工具** ] 功能表。 按一下 [叫用 **TestStatusBarCommand** ] 按鈕。
 
-     您應該看到狀態列中的文本現在顯示 **「我們剛剛寫入狀態列」。** 顯示的消息框具有相同的文本。
+     您應該會看到狀態列中的文字現在會讀取**我們剛剛寫入狀態列**中的內容。 出現的訊息方塊具有相同的文字。
 
 ### <a name="update-the-progress-bar"></a>更新進度列
 
-1. 在此過程中,我們將演示如何初始化和更新進度列。
+1. 在此程式中，我們將示範如何初始化和更新進度列。
 
-2. 開啟*TestStatusBarCommand.cs*`MenuItemCallback`檔案, 並將該方法取代為以下代碼:
+2. 開啟 *TestStatusBarCommand.cs* 檔案，並 `MenuItemCallback` 以下列程式碼取代方法：
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -102,21 +102,21 @@ ms.locfileid: "80711548"
     }
     ```
 
-3. 編譯代碼並開始調試。
+3. 編譯器代碼並開始進行偵錯工具。
 
-4. 打開視覺化工作室實驗實例中的 **「工具**」功能表。 點選 **「調用測試狀態列命令」 按鈕**。
+4. 在 Visual Studio 的實驗實例中開啟 [ **工具** ] 功能表。 按一下 [叫用 **TestStatusBarCommand** 按鈕。
 
-     您應該看到狀態列中的文字現在讀取 **「寫入進度」 欄。** 您還應看到進度條每秒鐘更新 20 秒。 之後,將清除狀態列和進度條。
+     您應該會看到狀態列中的文字現在會讀取 **寫入進度列。** 您也應該會看到每秒更新的進度列20秒。 之後會清除狀態列和進度列。
 
 ### <a name="display-an-animation"></a>顯示動畫
 
-1. 狀態列顯示一個循環動畫,指示長時間運行的操作(例如,在解決方案中生成多個專案)。 如果看不到此動畫,請確保具有正確的**工具** > **選項**設定:
+1. 狀態列會顯示一個迴圈動畫，表示長時間執行的作業 (例如，在方案中建立多個專案) 。 如果看不到此動畫，請確定您有正確的**工具**  >  **選項**設定：
 
-     跳到 **'工具** > **選項** > **一般**' 選項卡並取消選取**的效能自動調整視覺體驗**。 然後檢查子選項**啟用豐富的用戶端視覺體驗**。 現在,在 Visual Studio 的實驗實例中構建專案時,您應該能夠看到動畫。
+     移至 [**工具**  >  **選項**  >  **一般**] 索引標籤，並取消核取 [**根據用戶端效能自動調整視覺效果**]。 然後檢查子選項是否 **啟用豐富型用戶端視覺體驗**。 當您在 Visual Studio 的實驗實例中建立專案時，您現在應該可以看到動畫。
 
-     在此過程中,我們顯示代表構建專案或解決方案的標準 Visual Studio 動畫。
+     在這個程式中，我們會顯示代表建立專案或方案的標準 Visual Studio 動畫。
 
-2. 開啟*TestStatusBarCommand.cs*`MenuItemCallback`檔案, 並將該方法取代為以下代碼:
+2. 開啟 *TestStatusBarCommand.cs* 檔案，並 `MenuItemCallback` 以下列程式碼取代方法：
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -137,8 +137,8 @@ ms.locfileid: "80711548"
     }
     ```
 
-3. 編譯代碼並開始調試。
+3. 編譯器代碼並開始進行偵錯工具。
 
-4. 打開視覺化工作室實驗實例中的 **「工具**」功能表,然後單擊 **「調用測試狀態欄命令**」。。
+4. 在 Visual Studio 的實驗實例中開啟 [ **工具** ] 功能表，然後按一下 [叫用 **TestStatusBarCommand**]。
 
-     當您看到消息框時,還應在最右側的狀態欄中看到動畫。 關閉消息框時,動畫將消失。
+     當您看到訊息方塊時，您也應該會在最右邊的狀態列中看到動畫。 當您關閉訊息方塊時，動畫會消失。

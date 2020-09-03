@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 7429251a66ce2fe22a825a153cb90248faabb9fd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544361"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111:指標不應該為可見的
@@ -36,18 +36,18 @@ ms.locfileid: "85544361"
  公用或受保護的 <xref:System.IntPtr?displayProperty=fullName> 或 <xref:System.UIntPtr?displayProperty=fullName> 欄位不是唯讀的。
 
 ## <a name="rule-description"></a>規則描述
- <xref:System.IntPtr>和 <xref:System.UIntPtr> 是用來存取非受控記憶體的指標類型。 如果指標不是私用、內部或唯讀，惡意程式碼可能會變更指標的值，可能會允許存取記憶體中的任意位置，或是造成應用程式或系統失敗。
+ <xref:System.IntPtr> 和 <xref:System.UIntPtr> 是用來存取非受控記憶體的指標類型。 如果指標不是私用、內部或唯讀，惡意程式碼可能會變更指標的值，可能會允許存取記憶體中的任意位置，或是造成應用程式或系統失敗。
 
- 如果您想要保護包含指標欄位之類型的存取權，請參閱[CA2112：受保護的類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)。
+ 如果您想要保護包含指標欄位之類型的存取權，請參閱 [CA2112：安全類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 藉由將指標設為唯讀、內部或私用來保護其安全。
+ 將指標設為唯讀、內部或私用來保護其安全。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  如果您不依賴指標的值，請隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列程式碼顯示違反並滿足規則的指標。 請注意，非私用指標也違反規則[CA1051：不要宣告可見的實例欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)。
+ 下列程式碼顯示違反和滿足規則的指標。 請注意，非私用指標也會違反規則 [CA1051：不要宣告可見的實例欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)。
 
  [!code-csharp[FxCop.Security.PointersArePrivate#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.PointersArePrivate/cs/FxCop.Security.PointersArePrivate.cs#1)]
 

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef79d1be0b88ecdafa8691189bbc95291a6417ed
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544985"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>定義和安裝模型擴充功能
@@ -58,7 +58,7 @@ ms.locfileid: "85544985"
 
 3. 將 VSIX 專案設定為方案的啟始專案。
 
-    - 在方案總管中，在 VSIX 專案的快捷方式功能表上，選擇 [**設定為啟始專案**]。
+    - 在方案總管中，在 VSIX 專案的快捷方式功能表上，選擇 [ **設定為啟始專案**]。
 
 4. 開啟 **source.extension.vsixmanifest**。 此檔案會在資訊清單編輯器中開啟。
 
@@ -74,10 +74,10 @@ ms.locfileid: "85544985"
 
         |欄位|值|
         |-|-|
-        |**型** =|**Microsoft.VisualStudio.MefComponent**|
-        |**來源** =|**目前方案中的專案**|
+        |**類型** =|**Microsoft.VisualStudio.MefComponent**|
+        |**源** =|**目前方案中的專案**|
         |**Project** =|*您的類別庫專案*|
-        |**內嵌在此資料夾中** =|*空*|
+        |**內嵌在此資料夾中** =|* (空白) *|
 
          對於其他元件類型，請參閱下一節中的連結。
 
@@ -97,7 +97,7 @@ ms.locfileid: "85544985"
 
 #### <a name="to-run-an-extension-during-its-development"></a>在開發期間執行擴充功能
 
-1. 在 [ [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **調試**] 功能表中，選擇 [**開始調試**]。
+1. 在 [ [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **調試** ] 功能表中，選擇 [ **開始調試**]。
 
      專案組建和新的 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 執行個體隨即使用實驗模式開啟。
 
@@ -109,14 +109,14 @@ ms.locfileid: "85544985"
 
 3. 如果您使用 [啟動但不偵錯] **** ，但想要使用偵錯工具，請回到 Visual Studio 的主要執行個體。 在 [偵錯] **** 功能表上，按一下 [附加至處理序] ****。 在對話方塊中，選取具有程式名稱 **devenv**的 Visual Studio 實驗執行個體。
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>安裝和卸載擴充功能
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> 安裝和卸載擴充功能
  執行下列步驟，以在您自己的電腦或其他電腦上，於 Visual Studio 的主要執行個體中執行擴充功能。
 
 1. 在您的電腦中，尋找擴充功能專案所建置的 **.vsix** 檔案。
 
     1. 在方案總管 **** 中，於專案的捷徑功能表上，選擇 [在 Windows 檔案總管中開啟資料夾] ****。
 
-    2. 找出**bin \\ \* \\ ** _yourproject。_**.vsix**的檔案
+    2. 找出檔案**bin \\ \* \\ ** _yourproject。_**.vsix**
 
 2. 將 **.vsix** 檔案複製到要安裝擴充功能的目標電腦。 這可以是您自己的電腦或其他電腦。
 
@@ -130,15 +130,15 @@ ms.locfileid: "85544985"
 
 #### <a name="to-uninstall-an-extension"></a>解除安裝擴充功能
 
-1. 在 [工具] **** 功能表上，按一下 [擴充功能和更新] ****。
+1. 在 [工具] 功能表上，按一下 [延伸模組與更新]。
 
 2. 展開 [已安裝的擴充功能] ****。
 
 3. 選取擴充功能，然後按一下 [解除安裝] ****。
 
-   在很少見的情況下，錯誤的擴充功能會無法載入，並且在錯誤視窗中建立報表，但不會顯示在擴充管理員中。 在此情況下，您可以從下列位置移除延伸模組，其中 *% LocalAppData%* 通常是*DriveName*： \Users \\ *UserName*\AppData\Local：
+   在很少見的情況下，錯誤的擴充功能會無法載入，並且在錯誤視窗中建立報表，但不會顯示在擴充管理員中。 在這種情況下，您可以從下列位置刪除副檔名： *% LocalAppData%* 通常是*DriveName*： \Users \\ *UserName*\AppData\Local：
 
    *% LocalAppData%* **\Microsoft\VisualStudio \\ [version] \Extensions**
 
 ## <a name="see-also"></a>另請參閱
- [定義設定檔以擴充 uml](../modeling/define-a-profile-to-extend-uml.md) [定義自訂模型工具箱專案](../modeling/define-a-custom-modeling-toolbox-item.md)[定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
+ [定義設定檔以延伸 uml](../modeling/define-a-profile-to-extend-uml.md) [定義自訂模型工具箱專案](../modeling/define-a-custom-modeling-toolbox-item.md)定義[uml 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

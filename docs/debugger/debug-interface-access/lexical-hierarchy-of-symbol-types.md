@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b003fcbd1b38eb5dc919b7f4f361e0b56b585f08
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461221"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>符號類型的語彙階層架構
@@ -24,18 +24,18 @@ ms.locfileid: "85461221"
 
 ## <a name="symbol-types"></a>符號類型
 
-|符號類型|描述|
+|符號類型|說明|
 |-----------------|-----------------|
-|[批註](../../debugger/debug-interface-access/annotation.md)|指定程式碼中的標注位置。|
-|[封鎖](../../debugger/debug-interface-access/block.md)|指定函數中的嵌套範圍。|
+|[註釋](../../debugger/debug-interface-access/annotation.md)|在程式碼中指定已標注的位置。|
+|[封鎖](../../debugger/debug-interface-access/block.md)|在函數中指定嵌套的範圍。|
 |`Compiland`|指定 `compiland` 連結到 .exe 檔案的。|
-|[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)|指定可能需要載入其他編譯模組詳細資料，因而產生要取得之執行時間額外負荷的編譯模組資料。|
-|[CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)|指定編譯模組編譯所需的任何其他環境變數。|
+|[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)|指定可能需要載入額外編譯單位詳細資料的編譯單位資料，因而產生執行時間額外負荷來取得。|
+|[CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)|指定任何額外的環境變數，對編譯單位的編譯相當重要。|
 |[Custom (偵錯介面存取 SDK)](../../debugger/debug-interface-access/custom-debug-interface-access-sdk.md)|指定使用者定義的符號。|
-|[資料 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/data-debug-interface-access-sdk.md)|將這類變數指定為參數、本機變數、全域變數和類別成員。|
-|[Convert.exe](../../debugger/debug-interface-access/exe.md)|指定資料的全域範圍;對應至整個 .exe 或 .dll 檔案。|
-|[FuncDebugEnd](../../debugger/debug-interface-access/funcdebugend.md)|指定一個函式，該函式具有要結束偵錯工具的已定義點。|
-|[FuncDebugStart](../../debugger/debug-interface-access/funcdebugstart.md)|指定一個函式，該函式具有要開始偵錯工具的已定義點。|
+|[資料 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/data-debug-interface-access-sdk.md)|以參數、區域變數、全域變數和類別成員的形式指定這些變數。|
+|[Exe](../../debugger/debug-interface-access/exe.md)|指定資料的全域範圍;對應至整個 .exe 或 .dll 檔案。|
+|[FuncDebugEnd](../../debugger/debug-interface-access/funcdebugend.md)|指定一個函式，此函式具有已定義的結束時間點。|
+|[FuncDebugStart](../../debugger/debug-interface-access/funcdebugstart.md)|指定一個函式，此函式具有已定義的開始偵錯工具點。|
 |[函式 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/function-debug-interface-access-sdk.md)|指定函數。|
 |[標籤 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/label-debug-interface-access-sdk.md)|指定程式碼中的位置。|
 |[PublicSymbol](../../debugger/debug-interface-access/publicsymbol.md)|指定建立可執行程式時所顯示的外部符號。|

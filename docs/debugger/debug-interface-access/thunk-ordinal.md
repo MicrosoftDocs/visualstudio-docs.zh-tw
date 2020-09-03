@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d2fe7c62ce04e61a8476731ed14ee14f60e2b044
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461039"
 ---
 # <a name="thunk_ordinal"></a>THUNK_ORDINAL
@@ -49,12 +49,12 @@ THUNK_ORDINAL_PCODE P-code Thunk。
 
 THUNK_ORDINAL_LOAD 延遲載入 Thunk。
 
-THUNK_ORDINAL_TRAMP_INCREMENTAL 累加 trampoline Thunk （trampoline Thunk 是用來將記憶體空間中的呼叫跳動到另一個）。
+THUNK_ORDINAL_TRAMP_INCREMENTAL 累加 trampoline Thunk (trampoline Thunk 可用來將來自某個記憶體空間的呼叫彈跳至另一個) 。
 
 THUNK_ORDINAL_TRAMP_BRANCHISLAND 的分支點 trampoline Thunk。
 
 ## <a name="remarks"></a>備註
-此列舉中的值會從[IDiaSymbol：： get_ThunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)方法的呼叫傳回。
+此列舉中的值會從 [IDiaSymbol：： get_ThunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) 方法的呼叫傳回。
 
 ## <a name="requirements"></a>需求
 標頭： cvconst。h

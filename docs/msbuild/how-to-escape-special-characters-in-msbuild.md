@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f9958ae93e2605ad3c89decb4ac9fabc18102148
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633872"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>如何：在 MSBuild 中逸出特殊字元
 
-在 MSBuild 專案檔中，有某些字元具有特殊意義。 這些字元的範例包括分號 (`;`) 和星號 (`*`)。 有關這些特殊字元的完整清單，請參閱[MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)。
+在 MSBuild 專案檔中，有某些字元具有特殊意義。 這些字元的範例包括分號 (`;`) 和星號 (`*`)。 如需這些特殊字元的完整清單，請參閱 [MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)。
 
 若要使用這些特殊字元作為專案檔中的常值，就必須使用 `%<xx>` 語法來指定它們，其中 `<xx>` 代表字元的 ASCII 十六進位值。
 
@@ -34,7 +34,7 @@ ms.locfileid: "77633872"
 <Compile Include="MyFile.cs;MyClass.cs"/>
 ```
 
-如果要聲明名稱中包含分號的項，則必須使用`%<xx>`語法來轉義分號並阻止 MSBuild 聲明兩個單獨的項。 例如，下列項目會逸出分號，並宣告一個名為 `MyFile.cs;MyClass.cs` 的項目。
+如果您想要宣告名稱中包含分號的專案，您必須使用 `%<xx>` 語法來 escape 分號，並防止 MSBuild 宣告兩個不同的專案。 例如，下列項目會逸出分號，並宣告一個名為 `MyFile.cs;MyClass.cs` 的項目。
 
 ```xml
 <Compile Include="MyFile.cs%3BMyClass.cs"/>
@@ -52,5 +52,5 @@ ms.locfileid: "77633872"
 
 ## <a name="see-also"></a>另請參閱
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
-- [MSBuild](../msbuild/msbuild.md)
+- [Msbuild](../msbuild/msbuild.md)
 - [項目](../msbuild/msbuild-items.md)

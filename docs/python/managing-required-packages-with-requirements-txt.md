@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 9179ca2b77e7a6d3ae5b5dffded06524114a0f8d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544114"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>使用 requirements.txt 管理必要套件
@@ -29,7 +29,7 @@ ms.locfileid: "85544114"
 
 - 如果想要在虛擬環境中安裝相依項目，請先建立並啟動該環境，然後使用 [從 requirements.txt 安裝]**** 命令。 如需建立虛擬環境的詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
 
-- 如果您已在環境中安裝所有必要的套件，您可以在**方案總管**中以滑鼠右鍵按一下該環境，然後選取 [**產生 requirements.txt** ] 以建立必要的檔案。 如果該檔案已經存在，系統會提示您如何更新它：
+- 如果您已經在環境中安裝所有必要的套件，可以在 **方案總管** 中的環境上按一下滑鼠右鍵，然後選取 [ **產生 requirements.txt** 以建立必要的檔案。 如果該檔案已經存在，系統會提示您如何更新它：
 
     ![更新 requirements.txt 選項](media/environments/environments-requirements-txt-replace.png)
 
@@ -39,7 +39,7 @@ ms.locfileid: "85544114"
 
 由於 *requirements.txt* 檔案的用意是要固定住環境的需求，因此所有安裝的套件都已寫明精確的版本。 使用精確的版本可確保您可以在另一部電腦上輕鬆重現您的環境。 即使安裝套件時已指定版本範圍，仍然會包含這些套件作為另一個套件的相依性，或隨附於 pip 以外的安裝程式。
 
-如果套件是 pip 無法安裝的套件，並且出現在 *requirements.txt* 檔案中，整個安裝就會失敗。 在此情況下，請手動編輯檔案以將此套件排除，或使用 [pip 的選項](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format)來參考該套件的可安裝版本。 例如，您可能偏好使用 [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) 來編譯相依性，並將選項新增 `--find-links <path>` 至您的*requirements.txt*：
+如果套件是 pip 無法安裝的套件，並且出現在 *requirements.txt* 檔案中，整個安裝就會失敗。 在此情況下，請手動編輯檔案以將此套件排除，或使用 [pip 的選項](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format)來參考該套件的可安裝版本。 例如，您可能會想要使用 [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) 編譯相依性，並將 `--find-links <path>` 選項新增至您的 *requirements.txt*：
 
 ```output
 C:\Project>pip wheel azure

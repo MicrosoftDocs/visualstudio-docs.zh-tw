@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: bc57e3d104d7f8427e97eb6b3dd97ca3e89bc49e
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419207"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>教學課程：使用 Visual Basic 建立簡單的應用程式
@@ -63,7 +63,7 @@ Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以
 
 ::: moniker range="vs-2017"
 
-1. 建立新專案。 在功能表列上 **，選取 [** 檔案] [新增] [  >  **New**  >  **專案**]。
+1. 建立新專案。 在功能表列上 **，選取 [** 檔案  >  **新增**  >  **專案**]。
 
      ![在功能表上依序選擇 [檔案]、[開新檔案] 和 [專案]](../media/exploreide-filenewproject.png)
 
@@ -100,23 +100,23 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會�
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>變更 MainWindow.xaml 的名稱
 
-讓我們給 MainWindow 一個更具體的名稱。 在**方案總管**中，以滑鼠右鍵按一下 [ *mainwindow.xaml* ]，然後選擇 [**重新命名**]。 將檔案重新命名為*問候. xaml*。
+讓我們給 MainWindow 一個更具體的名稱。 在 **方案總管**中，以滑鼠右鍵按一下 *MainWindow* ，然後選擇 [ **重新命名**]。 將檔案重新命名為 *問候. xaml*。
 
 ## <a name="design-the-user-interface-ui"></a>設計使用者介面 (UI)
 
-如果設計工具尚未開啟，請在**方案總管**中選取 [*問候語*]，然後按**Shift** + **F7**以開啟設計工具。
+如果設計工具未開啟，請在**方案總管***中選取*[]，然後按下**Shift** + **F7**以開啟設計工具。
 
 我們會將三種類型的控制項新增至這個應用程式：一個 <xref:System.Windows.Controls.TextBlock> 控制項、兩個 <xref:System.Windows.Controls.RadioButton> 控制項和一個 <xref:System.Windows.Controls.Button> 控制項。
 
 ### <a name="add-a-textblock-control"></a>新增 TextBlock 控制項
 
-1. 按**Ctrl** + **Q**啟動搜尋方塊，然後鍵入**工具箱**。 從結果清單中選擇 [檢視] > [工具箱]****。
+1. 按下**Ctrl** + **Q**以啟動搜尋方塊，然後輸入 [**工具箱**]。 從結果清單中選擇 [檢視] > [工具箱]****。
 
 2. 在 [工具箱]**** 中展開 [通用 WPF 控制項]**** 節點以查看 TextBlock 控制項。
 
      ![已反白顯示 [TextBlock] 控制項的 [工具箱]](../media/exploreide-textblocktoolbox.png)
 
-3. 選擇 TextBlock 項目並將它拖曳至設計介面上的視窗，即可將 **TextBlock** 控制項加入設計介面。 將控制項置中靠近視窗頂端。 在 Visual Studio 2019 和更新版本中，您可以使用紅色指導方針來將控制項置中。
+3. 選擇 TextBlock 項目並將它拖曳至設計介面上的視窗，即可將 **TextBlock** 控制項加入設計介面。 將控制項置中靠近視窗頂端。 在 Visual Studio 2019 和更新版本中，您可以使用紅色的指導方針來將控制項置中。
 
 您的視窗應該會和下圖類似：
 
@@ -138,7 +138,7 @@ XAML 標記應該看起來與下列範例相似：
 
 2. 視需要再次將 TextBlock 置中，然後按 Ctrl+S 或使用 [檔案]**** 功能表項目來儲存您的變更。
 
-接下來，您要將兩個[選項按鈕](/dotnet/framework/wpf/controls/radiobutton)控制項新增至表單。
+接下來，您要將兩個 [選項按鈕](/dotnet/framework/wpf/controls/radiobutton) 控制項加入表單中。
 
 ### <a name="add-radio-buttons"></a>新增選項按鈕
 
@@ -162,7 +162,7 @@ XAML 標記應該看起來與下列範例相似：
 
 ### <a name="add-display-text-for-each-radio-button"></a>為每個選項按鈕新增顯示的文字
 
-在 XAML 中，將和的**內容**屬性更新 `HelloButton` `GoodbyeButton` 為 `"Hello"` 和 `"Goodbye"` 。 XAML 標記現在看起來應該會類似下列範例：
+在 XAML 中，將和的 **內容** 屬性更新為 `HelloButton` `GoodbyeButton` `"Hello"` 和 `"Goodbye"` 。 XAML 標記現在看起來應該會類似下列範例：
 
    ```xaml
    <Grid>
@@ -182,11 +182,11 @@ XAML 標記應該看起來與下列範例相似：
 IsChecked="True"
 ```
 
-您將新增的最後一個 UI 專案是[按鈕](/dotnet/framework/wpf/controls/button)控制項。
+您將加入的最後一個 UI 元素是 [按鈕](/dotnet/framework/wpf/controls/button) 控制項。
 
 ### <a name="add-the-button-control"></a>新增按鈕控制項
 
-1. 在 [工具箱]**** 中尋找 **Button** 控制項，然後將它拖曳至設計檢視中的表單，將它新增至設計介面的 RadioButton 控制項底下。 如果您使用 Visual Studio 2019 或更新版本，則會有紅線協助您將控制項置中。
+1. 在 [工具箱]**** 中尋找 **Button** 控制項，然後將它拖曳至設計檢視中的表單，將它新增至設計介面的 RadioButton 控制項底下。 如果您使用 Visual Studio 2019 或更新版本，則會有一條紅線可協助您將控制項置中。
 
 2. 在 XAML 檢視中，將 Button 控制項的 [內容]**** 值從 `Content="Button"` 變更為 `Content="Display"`，然後儲存變更。
 
@@ -228,7 +228,7 @@ IsChecked="True"
 
 ### <a name="find-and-fix-errors"></a>尋找和修正錯誤
 
-在此步驟中，您將會發現我們先前藉由變更*mainwindow.xaml*的名稱所造成的錯誤。
+在此步驟中，您將會發現我們先前藉由變更 *MainWindow .xaml* 檔案的名稱所造成的錯誤。
 
 #### <a name="start-debugging-and-find-the-error"></a>開始偵錯並找出錯誤
 
@@ -238,7 +238,7 @@ IsChecked="True"
 
    ![IOException 訊息的螢幕擷取畫面](../media/exploreide-ioexception.png)
 
-2. 選擇 [**調試**程式] [停止偵測] 來停止偵錯工具  >  ** **。
+2. 選擇 [ **Debug**停止錯] 以停止偵錯工具  >  ** **。
 
 我們已在這個教學課程開始時，將 *MainWindow.xaml* 重新命名為 *Greetings.xaml*，但程式碼仍會參考 *MainWindow.xaml* 作為應用程式的啟動 URI，因此專案無法啟動。
 
@@ -248,7 +248,7 @@ IsChecked="True"
 
 2. 將 `StartupUri="MainWindow.xaml"` 變更為 `StartupUri="Greetings.xaml"`，然後儲存變更。
 
-再次啟動偵錯工具 (按 **F5**)。 您應該會看到應用程式的 [**問候語**] 視窗。
+再次啟動偵錯工具 (按 **F5**)。 您應該會看到應用程式的 **問候語** 視窗。
 
 ::: moniker range="vs-2017"
 ![正在執行的應用程式螢幕擷取畫面](media/exploreide-wpf-running-app.png)
@@ -261,11 +261,11 @@ IsChecked="True"
 
 ### <a name="debug-with-breakpoints"></a>使用中斷點進行偵錯
 
-新增一些中斷點，即可在偵錯時測試程式碼。 您可以選擇 [**調試**程式] [  >  **切換中斷點**] 來新增中斷點，方法是在您想要發生中斷的程式程式碼旁邊，按一下編輯器的左邊界，或按**F9**。
+新增一些中斷點，即可在偵錯時測試程式碼。 若要加入中斷點，您可以選擇 [ **Debug**  >  **切換中斷點**]，方法是在編輯器的左邊界中，按一下您想要發生中斷的程式程式碼旁邊，或是按**F9**。
 
 #### <a name="add-breakpoints"></a>新增中斷點
 
-1. 開啟 [*問候語*]，然後選取下列程式程式碼：`MessageBox.Show("Hello.")`
+1. 開啟 [ *app.xaml*]，然後選取下列程式程式碼： `MessageBox.Show("Hello.")`
 
 2. 按 **F9**，或從功能表中依序選取 [偵錯]**** 和 [切換中斷點]****，來新增中斷點。
 
@@ -295,25 +295,25 @@ IsChecked="True"
 
 10. 關閉應用程式視窗停止偵錯。
 
-11. 在功能表列上，選擇 [ **Debug**] [  >  **停用所有中斷點**]。
+11. 在功能表列上，選擇 [ **Debug**  >  **停用所有中斷點**]。
 
 ### <a name="view-a-representation-of-the-ui-elements"></a>查看 UI 元素的標記法
 
-在執行中的應用程式中，您應該會看到出現在視窗頂端的 widget。 這是一個執行時間協助程式，可讓您快速存取一些實用的偵錯工具功能。 按一下第一個按鈕，**移至 [即時視覺化樹狀結構**]。 您應該會看到一個具有樹狀結構的視窗，其中包含頁面的所有視覺元素。 展開節點，以尋找您新增的按鈕。
+在執行中的應用程式中，您應該會看到顯示在視窗頂端的小工具。 這是執行時間協助程式，可讓您快速存取某些實用的偵錯工具功能。 按一下第一個按鈕， **移至 [即時視覺化樹狀結構**]。 您應該會看到一個具有樹狀結構的視窗，其中包含頁面的所有視覺元素。 展開節點以尋找您新增的按鈕。
 
-![[即時視覺化樹狀結構] 視窗的螢幕擷取畫面](media/vs-2019/exploreide-live-visual-tree.png)
+![即時視覺化樹狀結構視窗的螢幕擷取畫面](media/vs-2019/exploreide-live-visual-tree.png)
 
 ### <a name="build-a-release-version-of-the-application"></a>建置應用程式的發行版本
 
 既然已經驗證應用程式的運作一切正常，您就可以準備其發行組建。
 
-1. 在主功能表上，選取 [**組建**] [  >  **清除方案**]，刪除在先前組建期間建立的中繼檔案和輸出檔案。 這並非必要動作，但它可清除偵錯建置輸出。
+1. 在主功能表上，選取 [**建立**  >  **清除方案**]，以刪除在先前組建期間建立的中繼檔案和輸出檔案。 這並非必要動作，但它可清除偵錯建置輸出。
 
-2. 使用工具列上的下拉式控制項（它目前是 "Debug"），將 HelloWPFApp 的組建設定從 [**調試**程式] 變更為 [**發行**]。
+2. 使用工具列上的下拉式控制項，將 HelloWPFApp 的組建設定從 **Debug** 變更為 **Release** ， (它會顯示目前) 的 "Debug"。
 
-3. 選擇 [**組建**] [組建方案] 來建立方案  >  ** **。
+3. 選擇 [**組建**  >  **組建方案**] 來建立方案。
 
-恭喜您完成此教學課程！ 您可以在方案和專案目錄下找到您建立的 *.exe* （*. ..\HelloWPFApp\HelloWPFApp\bin\Release*）。
+恭喜您完成此教學課程！ 您可以在方案和專案目錄下找到您所建立的 *.exe* (*..\HelloWPFApp\HelloWPFApp\bin\Release*) 。
 
 ## <a name="see-also"></a>另請參閱
 

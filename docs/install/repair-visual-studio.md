@@ -13,26 +13,26 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: fda72206059e5c14c46d332e44ea0de481004296
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85418960"
 ---
 # <a name="repair-visual-studio"></a>修復 Visual Studio
 
-有時您的 Visual Studio 安裝會損壞或損毀。 修復適用于修正所有安裝作業（包括更新）的安裝時間問題。
+有時您的 Visual Studio 安裝會損壞或損毀。 修復對於修正所有安裝作業（包括更新）的安裝時間問題很有用。
 
-## <a name="when-to-use-repair"></a>使用 repair 的時機
-* 如果您有安裝承載的問題。 將檔案寫入磁片不成功時可能會發生這種情況，而且無法藉由刪除損毀的檔案來修正此問題。 修復可以重新取得所需的檔案。 
-* 如果您遇到用戶端下載問題。 假設您已解決任何連線或 proxy 問題，修復可能會有説明。 
-* 如果您在更新 Visual Studio 時遇到問題。 修復修正許多常見的更新問題。 
+## <a name="when-to-use-repair"></a>使用修復的時機
+* 如果您遇到安裝承載問題。 將檔案寫入磁片時可能會發生這種情況，無法藉由刪除損毀的檔案來修正。 修復可以重新取得需要的檔案。 
+* 如果您遇到用戶端下載問題。 假設您已解決任何連線或 proxy 問題，修復可能會有所説明。 
+* 如果您在更新 Visual Studio 時發生問題。 修復修正許多常見的更新問題。 
 
 > [!TIP] 
-> 如果安裝問題是因為基礎 Windows 服務（例如 Windows Installer）中的問題所造成，則修復可能會遇到相同的問題。 系統性問題可能包含中斷的 Windows Installer 或不穩定的網際網路連線。 若要檢查是否有系統問題，請使用安裝作業所產生的錯誤報表。
+> 如果安裝問題是因為基礎 Windows 服務的問題所造成，例如 Windows Installer，修復可能會遇到相同的問題。 系統性問題可能包括中斷的 Windows Installer 或不穩定的網際網路連線。 若要檢查是否有系統問題，請使用安裝作業所產生的錯誤報表。
 
 > [!NOTE] 
-> 修復 Visual Studio 重設使用者設定，並重新安裝您已有的元件。 如果您遇到產品問題，請建立[Visual Studio 意見反應票證](https://developercommunity.visualstudio.com/content/problem/post.html?space=8)，因為修復可能無法解決此問題。
+> 修復 Visual Studio 會重設使用者設定，並重新安裝已有的元件。 如果您遇到產品問題，請建立 [Visual Studio 意見反應票證](https://developercommunity.visualstudio.com/content/problem/post.html?space=8)，因為 repair 可能無法解決此問題。
 
 ## <a name="how-to-repair"></a>如何修復
 ::: moniker range="vs-2017"

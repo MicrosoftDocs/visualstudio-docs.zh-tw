@@ -9,10 +9,10 @@ caps.latest.revision: 17
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: eae08427e9ec61c34a98f3581355909317b69559
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672252"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>快速入門：搭配測試總管進行以測試為導向的開發工作
@@ -29,7 +29,7 @@ ms.locfileid: "72672252"
 - 可在一個視窗中查看需要的所有資訊。
 
 ## <a name="using-test-explorer"></a>使用測試總管
- ![顯示 [全部執行] 按鈕的單元測試 Explorer](../test/media/unittestexplorer-beta.png "UnitTestExplorer （搶鮮版（Beta））")
+ ![顯示 [全部執行] 按鈕的 [單元測試總管]](../test/media/unittestexplorer-beta.png "UnitTestExplorer (Beta) ")
 
 #### <a name="to-run-unit-tests-by-using-test-explorer"></a>若要使用測試總管來執行單元測試
 
@@ -39,7 +39,7 @@ ms.locfileid: "72672252"
 
    1. 建立測試專案。
 
-        在 [ **新增專案** ] 對話方塊中，展開 [ **Visual Basic**]、[ **Visual C#** ] 或 [ **Visual C++** ]，然後選擇 [ **測試**]。
+        在 [ **新增專案** ] 對話方塊中，展開 [ **Visual Basic**]、[ **Visual C#**] 或 [ **Visual C++**]，然後選擇 [ **測試**]。
 
         選取 [ **單元測試專案**]。
 
@@ -65,10 +65,10 @@ ms.locfileid: "72672252"
 > 顯示的結果是最近執行的結果。 有顏色的結果列只會顯示已執行的測試結果。 例如，如果您執行許多測試，但是有些失敗了，接著只執行成功的測試，然後結果列就會全部顯示綠色。
 
 > [!NOTE]
-> 如果未出現任何測試，請確定已安裝配接器將 [測試總管] 連接至您使用的測試架構。 如需詳細資訊，請參閱[使用不同的測試架構](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework)。
+> 如果未出現任何測試，請確定已安裝配接器將 [測試總管] 連接至您使用的測試架構。 如需詳細資訊，請參閱 [使用不同的測試架構](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework)。
 
-## <a name="walkthrough"></a> 逐步解說：使用單元測試來開發方法
- 本逐步解說示範如何使用 Microsoft 單元測試架構以 C# 來開發受測方法。 您可以輕鬆地將它改寫成其他語言，並使用其他測試架構 (例如 NUnit)。 如需詳細資訊，請參閱[使用不同的測試架構](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework)。
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a><a name="walkthrough"></a> 逐步解說：使用單元測試來開發方法
+ 本逐步解說示範如何使用 Microsoft 單元測試架構以 C# 來開發受測方法。 您可以輕鬆地將它改寫成其他語言，並使用其他測試架構 (例如 NUnit)。 如需詳細資訊，請參閱 [使用不同的測試架構](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework)。
 
 #### <a name="creating-the-test-and-method"></a>建立測試和方法
 
@@ -76,7 +76,7 @@ ms.locfileid: "72672252"
 
 2. 建立測試專案。
 
-   - 在 [ **新增專案** ] 對話方塊中，選擇 [ **Visual C#** ]、[ **測試** ]，然後選擇 [ **單元測試專案**]。
+   - 在 [ **新增專案** ] 對話方塊中，選擇 [ **Visual C#**]、[ **測試** ]，然後選擇 [ **單元測試專案**]。
 
         ![新程式碼和測試專案](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
 
@@ -104,7 +104,7 @@ ms.locfileid: "72672252"
 
    1. 將游標置於 `Rooter`上，然後在捷徑功能表中選擇 [ **產生**]、[ **新增類型**]。
 
-   2. 在 [ **產生新的類型** ] 對話方塊中，將 [ **專案** ] 設為類別庫專案。 在此範例中，它是 `MyMath`。
+   2. 在 [ **產生新的類型** ] 對話方塊中，將 [ **專案** ] 設為類別庫專案。 在此範例中為 `MyMath`。
 
    3. 將游標置於 `SquareRoot`上，然後在捷徑功能表中選擇 [ **產生**]、[ **方法 Stub**]。
 
@@ -124,7 +124,7 @@ ms.locfileid: "72672252"
 
 7. 選取 [ **堆疊追蹤** ] 底下的項目，以查看測試失敗的位置。
 
-   ![顯示失敗測試的單元測試瀏覽器。](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
+   ![顯示失敗之測試的 [單元測試總管]。](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
 
    此時，您已建立要修改的測試和 stub，好讓測試能夠成功。
 
@@ -139,13 +139,13 @@ ms.locfileid: "72672252"
      }
     ```
 
-2. 在 [測試總管] 中，選擇 [ **全部執行**]。
+2. 在 [測試瀏覽器] 中，選擇 [ **全部執行**]。
 
      接著就會建置程式碼並執行測試。
 
-     測試就會成功。
+     測試會成功。
 
-     ![顯示通過測試的單元測試瀏覽器。](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![顯示成功之測試的 [單元測試總管]。](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>加入測試以擴充輸入的範圍
 
@@ -180,7 +180,7 @@ ms.locfileid: "72672252"
     }
     ```
 
-2. 在 [測試總管] 中，選擇 [ **全部執行**]。
+2. 在 [測試瀏覽器] 中，選擇 [ **全部執行**]。
 
      新的測試失敗了，不過，第一個測試仍然成功。
 
@@ -202,7 +202,7 @@ ms.locfileid: "72672252"
     }
     ```
 
-4. 在 [測試總管] 中，選擇 [ **全部執行**]。
+4. 在 [測試瀏覽器] 中，選擇 [ **全部執行**]。
 
      現在兩個測試都成功了。
 
@@ -227,7 +227,7 @@ ms.locfileid: "72672252"
      }
     ```
 
-2. 在 [測試總管] 中，選擇 [ **全部執行**]。
+2. 在 [測試瀏覽器] 中，選擇 [ **全部執行**]。
 
      受測方法會產生迴圈現象，必須手動取消。
 
@@ -248,7 +248,7 @@ ms.locfileid: "72672252"
     ...
     ```
 
-5. 在 [測試總管] 中，選擇 [ **全部執行**]。
+5. 在 [測試瀏覽器] 中，選擇 [ **全部執行**]。
 
      所有測試都成功。
 
@@ -287,4 +287,4 @@ ms.locfileid: "72672252"
 
      所有測試仍然成功。
 
-     ![顯示3個通過測試的單元測試 Explorer。](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![顯示 3 個成功測試的 [單元測試總管]。](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")

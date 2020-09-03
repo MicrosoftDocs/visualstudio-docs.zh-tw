@@ -9,10 +9,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c0d6a6f6ab42d69d4503741f6625627c46d4ef77
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545102"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077:API 設計、XML 文件和 XML 文字讀取器中的不安全處理
@@ -31,13 +31,13 @@ ms.locfileid: "85545102"
 ## <a name="rule-description"></a>規則描述
  [文件類型定義 (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) 是  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](https://www.w3.org/TR/2008/REC-xml-20081126/)中針對 XML 剖析器用來判斷文件有效性所定義之兩種方式的其中一種。 此規則會搜尋已接受不受信任之資料的屬性和執行個體，藉此警告開發人員潛在的 [Information Disclosure](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 威脅，這些威脅可能會導致 [Denial of Service (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) 攻擊。 下列情況會觸發此規則：
 
-- <xref:System.Xml.XmlDocument>或 <xref:System.Xml.XmlTextReader> 類別針對 DTD 處理使用預設解析程式值。
+- <xref:System.Xml.XmlDocument> 或 <xref:System.Xml.XmlTextReader> 類別針對 DTD 處理使用預設解析程式值。
 
 - 未針對 XmlDocument 或 XmlTextReader 衍生的類別定義任何建構函式，或在 <xref:System.Xml.XmlResolver>中使用不安全的值。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-- 適當地攔截並處理所有的 XmlTextReader 例外狀況，以避免路徑資訊洩漏。
+- 適當地攔截並處理所有 XmlTextReader 例外狀況，以避免路徑資訊洩漏。
 
 - 使用  <xref:System.Xml.XmlSecureResolver> 而不是 XmlResolver 來限制 XmlTextReader 可以存取的資源。
 
@@ -68,7 +68,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>解決方案
+### <a name="solution"></a>解決方法
 
 ```csharp
 using System;

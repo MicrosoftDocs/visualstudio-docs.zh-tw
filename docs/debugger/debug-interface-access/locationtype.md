@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b2fafbb25d52df6082736431727222c788d73476
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461214"
 ---
 # <a name="locationtype"></a>LocationType
-表示符號中包含的位置資訊類型。
+指出符號中包含的位置資訊種類。
 
 ## <a name="syntax"></a>語法
 
@@ -42,34 +42,34 @@ enum LocationType {
 ```
 
 ## <a name="elements"></a>元素
-`LocIsNull`位置資訊無法使用。
+`LocIsNull` 無法使用位置資訊。
 
-`LocIsStatic`位置為靜態。
+`LocIsStatic` 位置是靜態的。
 
-`LocIsTLS`位置是線上程區域儲存區中。
+`LocIsTLS` 位置位於執行緒區域儲存區中。
 
-`LocIsRegRel`Location 是 register 相對的。
+`LocIsRegRel` 位置是註冊相關的。
 
-`LocIsThisRel`位置為 `this` -相對。
+`LocIsThisRel` 位置是 `this` 相對的。
 
-`LocIsEnregistered`位置在註冊中。
+`LocIsEnregistered` 位置位於註冊中。
 
-`LocIsBitField`位置在位欄位中。
+`LocIsBitField` 位置位在位欄位中。
 
-`LocIsSlot`Location 是 Microsoft 中繼語言（MSIL）位置。
+`LocIsSlot` Location 是 Microsoft 中繼語言 (MSIL) 位置。
 
-`LocIsIlRel`Location 是 MSIL 相對的。
+`LocIsIlRel` 位置是 MSIL 相關的。
 
-`LocInMetaData`位置在中繼資料中。
+`LocInMetaData` 位置位於中繼資料中。
 
-`LocIsConstant`位置為常數值。
+`LocIsConstant` 位置為常數值。
 
-`LocTypeMax`這個列舉中的位置類型數目。
+`LocTypeMax` 此列舉中的位置類型數目。
 
 ## <a name="remarks"></a>備註
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)介面可用的屬性取決於符號在影像檔案中的位置。 如需詳細資訊，請參閱[符號位置](../../debugger/debug-interface-access/symbol-locations.md)。
+[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)介面可用的屬性會根據符號在影像檔案中的位置而定。 如需詳細資訊，請參閱 [符號位置](../../debugger/debug-interface-access/symbol-locations.md)。
 
-這個列舉中的值是由[IDiaSymbol：： get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)方法的呼叫所傳回。
+呼叫 [IDiaSymbol：： get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) 方法時，會傳回此列舉中的值。
 
 ## <a name="requirements"></a>需求
 標頭： cvconst。h

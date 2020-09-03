@@ -18,16 +18,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 907d075f597799edd582c9f2bae693eac92c0b2c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544959"
 ---
 # <a name="outlining"></a>大綱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以選擇隱藏部分程式碼不進行檢視，方法是摺疊程式碼區域，使其出現在加號 (+) 下方。 您可以按一下加號來展開已摺疊的區域 （或者，您可以按 CTRL + M + M 折迭區域，然後按 CTRL + M + M 以再次展開）。您也可以折迭大綱區域，方法是按兩下大綱邊界上 [區域] 中的任何一行，這只會出現在程式碼的左邊。 當您將滑鼠停留在已摺疊的區域上方時，已摺疊區域的內容會成為工具提示。
+您可以選擇隱藏部分程式碼不進行檢視，方法是摺疊程式碼區域，使其出現在加號 (+) 下方。 您可以按一下加號來展開已摺疊的區域  (或您可以按 CTRL + M + M 折迭區域，然後按 CTRL + M + M 再次展開。 ) 您也可以透過按兩下大綱邊界上區域中的任何一行（出現在程式碼左邊），折迭大綱區域。 當您將滑鼠停留在已摺疊的區域上方時，已摺疊區域的內容會成為工具提示。
 
  當您將滑鼠停留在邊界上方時，也會反白顯示大綱邊界中的區域。 在某些色彩組態中，預設反白顯示色彩似乎太過模糊。 您可以在 [工具]/[選項]/[環境]/[字型和色彩]/[可摺疊區域]**** 中進行變更。
 
@@ -40,7 +40,7 @@ ms.locfileid: "85544959"
 
  [編輯/大綱]**** 子功能表上可以找到下列命令。
 
-|Command|描述|
+|命令|說明|
 |-|-|
 |隱藏選取範圍|(CTRL+M、CTRL+H) - 摺疊選取的程式碼區塊，其通常無法可供製作大綱，例如 `if` 區塊。 若要移除自訂區域，請使用 [取消隱藏目前大綱]**** (或 CTRL+M、CTRL+U)。 在 Visual Basic 中無法使用。|
 |切換大綱展開|- 在游標落在巢狀摺疊區段時，反轉最內層大綱區段的目前隱藏或展開狀態。|
@@ -49,6 +49,6 @@ ms.locfileid: "85544959"
 |取消隱藏目前的|(CTRL+M、CTRL+U) - 移除目前所選取使用者定義區域的大綱資訊。 在 Visual Basic 中無法使用。|
 |摺疊至定義|(CTRL+M、CTRL+O) - 摺疊所有類型的成員。|
 |折迭區塊：\<logical boundary>|(Visual C++) 摺疊包含插入點之函式中的區域。 例如，如果插入點落在迴圈內，則會隱藏迴圈。|
-|全部折迭于：\<logical structures>|(Visual C++) 摺疊函式內的所有結構。|
+|全部折迭： \<logical structures>|(Visual C++) 摺疊函式內的所有結構。|
 
  您也可以使用 Visual Studio SDK 來定義您想要展開或摺疊的文字區域。 請參閱[逐步解說︰大綱](../extensibility/walkthrough-outlining.md)。

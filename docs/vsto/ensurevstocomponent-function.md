@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cf55fc6669edd33d1b8896ee85f33ab2c04e844f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543581"
 ---
 # <a name="ensurevstocomponent-function"></a>EnsureVSTOComponent 函式
-  此 API 支援 Office 基礎結構，但不適合直接從您的程式碼使用。
+  此 API 支援 Office 基礎結構，而且不適合直接從程式碼使用。
 
 ## <a name="syntax"></a>語法
 
@@ -35,4 +35,4 @@ HRESULT EnsureVSTOComponent(
 |*pProject*|請勿使用。|
 
 ## <a name="return-value"></a>傳回值
- 如果函式成功，它會傳回**S_OK**。 如果函式失敗，則會傳回錯誤碼。
+ 如果函式成功，它會傳回 **S_OK**。 如果函式失敗，則會傳回錯誤碼。
