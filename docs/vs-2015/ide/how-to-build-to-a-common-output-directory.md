@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f85ff51b93383d2deca409a00a3db130d52b5003
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645420"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>如何：建置到通用輸出目錄
@@ -29,11 +29,11 @@ ms.locfileid: "72645420"
 
 1. 按一下方案中的一個專案。
 
-2. 在 [專案] 功能表上，按一下 [屬性]。
+2. 按一下 [專案] 功能表上的 [屬性]。
 
-3. 根據專案類型，按一下 [編譯] 索引標籤或 [建置] 索引標籤，然後將 [輸出路徑] 設為要用於方案中所有專案的資料夾。
+3. 根據專案類型，按一下 [編譯]**** 索引標籤或 [建置]**** 索引標籤，然後將 [輸出路徑]**** 設為要用於方案中所有專案的資料夾。
 
 4. 針對方案中的所有專案，重複步驟 1-3。
 
-## <a name="see-also"></a>請參閱
- [編譯和建立](../ide/compiling-and-building-in-visual-studio.md)[如何：變更組建輸出目錄](../ide/how-to-change-the-build-output-directory.md)
+## <a name="see-also"></a>另請參閱
+ [編譯和建立](../ide/compiling-and-building-in-visual-studio.md)作法 [：變更組建輸出目錄](../ide/how-to-change-the-build-output-directory.md)

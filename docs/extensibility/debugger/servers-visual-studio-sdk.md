@@ -1,5 +1,5 @@
 ---
-title: 伺服器(可視化工作室 SDK) |微軟文件
+title: 伺服器 (Visual Studio SDK) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,23 +12,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 32fdbb5afca40c3b4fced468d2f9ef0ea5226c00
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712888"
 ---
 # <a name="servers-visual-studio-sdk"></a>伺服器 (Visual Studio SDK)
-在除錯器架構結構中,*伺服器*:
+在偵錯工具架構中， *伺服器*：
 
-- 是埠和埠供應商的容器,將埠和埠供應商與會話調試管理器 (SDM) 和調試引擎進行通信。
+- 是埠和埠供應商的容器，並將埠和埠供應商傳遞給會話 debug manager (SDM) 和偵錯工具引擎。
 
-- 可以按名稱標識自身,並枚舉其埠和埠供應商。
+- 可以依名稱識別其本身，並列舉其埠和埠供應商。
 
-- 由[IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)介面表示,該介面僅由 Visual Studio 實現(運行的 Visual Studio 的每個實例的伺服器的一個實例)。
+- 是以 [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) 介面表示，它只會由 Visual Studio 針對執行) 之 Visual Studio 的每個實例 (一個伺服器實例。
 
 ## <a name="see-also"></a>另請參閱
 - [連接埠](../../extensibility/debugger/ports.md)
-- [港口供應商](../../extensibility/debugger/port-suppliers.md)
-- [除錯器概念](../../extensibility/debugger/debugger-concepts.md)
+- [埠供應商](../../extensibility/debugger/port-suppliers.md)
+- [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)

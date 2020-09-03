@@ -1,5 +1,5 @@
 ---
-title: 定義元素 |微軟文件
+title: Define 元素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fc09de1d822f41b25397c7a56c7cce4449a9e551
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712266"
 ---
-# <a name="define-element"></a>定義項目
-定義符號名稱和值對。 此符號可以通過條件屬性計算。 有關詳細資訊,請參閱[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。 另請參考[符號元素](../extensibility/symbols-element.md)。
+# <a name="define-element"></a>Define 元素
+定義符號名稱和值組。 條件式屬性可以評估此符號。 如需詳細資訊，請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。 另請參閱 [符號元素](../extensibility/symbols-element.md)。
 
 ## <a name="syntax"></a>語法
 
@@ -34,18 +34,18 @@ ms.locfileid: "80712266"
 
 |屬性|描述|
 |---------------|-----------------|
-|NAME|必要。 符號的名稱:<br /><br /> 名稱="模式"|
-|value|必要。 符號的值:<br /><br /> 值="標準"|
-|條件|選擇性。 有關詳細資訊,請參閱[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|NAME|必要。 符號的名稱：<br /><br /> name = "Mode"|
+|value|必要。 符號的值：<br /><br /> 值 = "Standard"|
+|條件|選擇性。 如需詳細資訊，請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
  無。
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[指令表元素](../extensibility/commandtable-element.md)|定義表示 VS 套件向整合式開發環境 (IDE) 提供的命令的所有元素。 例如,功能表項、功能表、工具列和組合框。|
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表 VSPackage 提供給整合式開發環境 (IDE) 命令的所有元素。 例如，功能表項目、功能表、工具列和下拉式方塊。|
 
 ## <a name="example"></a>範例
 
@@ -55,4 +55,4 @@ ms.locfileid: "80712266"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室指令表 (.vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio 命令表格 (. .vsct) 檔](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,5 +1,5 @@
 ---
-title: 設定通知等待完成方法 |微軟文件
+title: SetNotificationForWaitCompletion 方法 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 226ac41c8e3b7427ac3b9aba7bea08dbb7329d16
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712866"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion 方法
-設置或清除TASK_STATE_WAIT_COMPLETION_NOTIFICATION狀態位。
+設定或清除 TASK_STATE_WAIT_COMPLETION_NOTIFICATION 狀態位。
 
- **命名空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **程式集**:mscorlib(在*mscorlib.dll*中)
+ **元件：** *mscorlib.dll*) 中的 mscorlib (
 
 ## <a name="syntax"></a>語法
 
@@ -33,14 +33,14 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 ### <a name="parameters"></a>參數
  `enabled`
 
- `true`設置位;`false`取消設置位。
+ `true` 設定位;取消設定 `false` 位。
 
 ## <a name="exceptions"></a>例外狀況
 
 ## <a name="remarks"></a>備註
- 除錯器設定此位以説明退出非同步方法體。 如果是`enabled``true`,只能對尚未完成的任務調用此方法。 何時`enabled``false`,可以在已完成的任務上調用此方法。 在這兩個事件中,它只能用於承諾樣式的任務。
+ 偵錯工具會設定此位，以協助跳出非同步方法主體。 如果 `enabled` 為 `true` ，則必須在尚未完成的工作上呼叫這個方法。 當 `enabled` 為時 `false` ，可以在已完成的工作上呼叫這個方法。 在任一事件中，它只能用於承諾樣式的工作。
 
 ## <a name="requirements"></a>需求
 
 ## <a name="see-also"></a>另請參閱
-- [工作類別](../../extensibility/debugger/task-class-internal-members.md)
+- [Task 類別](../../extensibility/debugger/task-class-internal-members.md)

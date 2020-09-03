@@ -1,5 +1,5 @@
 ---
-title: 隱藏元素(可視化工作室範本) |微軟文件
+title: " (Visual Studio 範本的隱藏元素) |Microsoft Docs"
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711116"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>隱藏元素(視覺化工作室範本)
+# <a name="hidden-element-visual-studio-templates"></a>Visual Studio 範本 (隱藏元素) 
 
-指定樣本是顯示在新項目還是 **「添加新項目」** 對話方塊中。
+指定範本是出現在 [新增專案] 或 [ **加入新** 專案] 對話方塊中。
 
 ```xml
 <VSTemplate>
@@ -51,7 +51,7 @@ ms.locfileid: "80711116"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
 
@@ -59,17 +59,17 @@ ms.locfileid: "80711116"
 
 需要文字值。
 
-文字必須為`true``false`或 ,指示範本是否將顯示在 **「新專案**」或 **「新增新專案」** 對話框中。
+文字必須是 `true` 或 `false` ，表示範本是否會出現在 [ **新增專案** ] 或 [ **加入新** 專案] 對話方塊中。
 
 ## <a name="remarks"></a>備註
 
  是選擇性元素。
 
-如果指定,則不需要`TemplateData`元素的其他子元素。
+如果指定，則不需要專案的其他子項目 `TemplateData` 。
 
 ## <a name="example"></a>範例
 
-下面的範例說明了 C# 範本的中繼資料。
+下列範例說明 c # 範本的中繼資料。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -98,5 +98,5 @@ ms.locfileid: "80711116"
 
 ## <a name="see-also"></a>另請參閱
 
-- [樣本架構參照](../extensibility/visual-studio-template-schema-reference.md)
+- [範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
 - [建立專案與項目範本](../ide/creating-project-and-item-templates.md)

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: e2c1b0a52429e74ad35cf0cad3acc44d064c9672
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85327901"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令列以分析工具啟動獨立的 .NET Framework 應用程式並收集並行資料
@@ -25,7 +25,7 @@ ms.locfileid: "85327901"
  程式碼剖析工具附加至應用程式時，您可以暫停和繼續收集資料。 若要結束分析工作階段，分析工具不得再附加至應用程式，而且必須明確地關閉分析工具。
 
 ## <a name="start-the-application-with-the-profiler"></a>使用分析工具啟動應用程式
- 若要使用 Profiler 啟動 .NET Framework 目標應用程式，您可以使用*VSPerfClrEnv.exe*來設定 .NET Framework 的分析變數。 然後，使用 VSPerfCmd **/start** 和 **/launch** 選項來初始化分析工具，並啟動應用程式。 您可以在單一命令列上指定 **/start** 和 **/launch** 及其個別選項。 您也可以將 **/globaloff** 選項加入命令列，以在目標應用程式啟動時暫停資料收集。 然後在單獨的命令列上使用 **/globalon**，以開使收集資料。
+ 若要流量分析工具啟動 .NET Framework 目標應用程式，您可以使用 *VSPerfClrEnv.exe* 來設定 .NET Framework 分析變數。 然後，使用 VSPerfCmd **/start** 和 **/launch** 選項來初始化分析工具，並啟動應用程式。 您可以在單一命令列上指定 **/start** 和 **/launch** 及其個別選項。 您也可以將 **/globaloff** 選項加入命令列，以在目標應用程式啟動時暫停資料收集。 然後在單獨的命令列上使用 **/globalon**，以開使收集資料。
 
 #### <a name="to-start-an-application-with-the-profiler"></a>使用分析工具啟動應用程式
 
@@ -47,21 +47,21 @@ ms.locfileid: "85327901"
 
      您可以使用下列任一選項搭配 **/start:concurrency** 選項。
 
-   | 選項 | 說明 |
+   | 選項 | 描述 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **：**[ `domain\` ]`username` | 指定要授與程式碼剖析工具存取權之帳戶的選擇性網域和使用者名稱。 |
    | [/crosssession](../profiling/crosssession.md) | 在其他登入工作階段啟用處理序程式碼剖析。 |
    | [/wincounter](../profiling/wincounter.md) **：**`WinCounterPath` | 指定程式碼剖析期間要收集的 Windows 效能計數器。 |
    | [/automark](../profiling/automark.md) **：**`Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。 |
-   | [/events](../profiling/events-vsperfcmd.md) **：**`Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集在不同的（。*etl*）檔案。 |
+   | [/events](../profiling/events-vsperfcmd.md) **：**`Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集在不同的 ( 中。*etl*) 檔。 |
 
 3. 啟動目標應用程式。 輸入：
 
-    **VSPerfCmd**  [/launch](../profiling/launch.md) **：** `AppName` [ `Options` ] [ `Sample Event` ]
+    **>vsperfcmd**  [/launch](../profiling/launch.md) **：** `AppName` [ `Options` ] [ `Sample Event` ]
 
     您可以使用下列任一選項搭配 **/launch** 選項。
 
-   |選項|說明|
+   |選項|描述|
    |------------|-----------------|
    |[/args](../profiling/args.md) **：**`Arguments`|指定包含要傳遞至目標應用程式的命令列引數的字串。|
    |[/console](../profiling/console.md)|在個別的視窗中啟動目標命令列應用程式。|
@@ -72,13 +72,13 @@ ms.locfileid: "85327901"
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集
 
-1. 下列成對的*VSPerfCmd.exe*選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
+1. 下列 *VSPerfCmd.exe* 選項配對會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
-    |選項|說明|
+    |選項|描述|
     |------------|-----------------|
     |[/globalon/globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|
     |[/processon](../profiling/processon-and-processoff.md) **：** `PID` [/processoff](../profiling/processon-and-processoff.md) **：**`PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|
-    |[/attach](../profiling/attach.md) **：**{ `PID`&#124;`ProcName` } [/detach](../profiling/detach.md)[**：**{ `PID`&#124;`ProcName` }]|**/attach** 會開始為處理序 ID (`PID`) 或處理序名稱 (ProcName) 指定的處理序收集資料。 **/detach**會停止指定的進程或所有進程（如果未指定特定進程）的資料收集。|
+    |[/attach](../profiling/attach.md) **：**{ `PID`&#124;`ProcName` } [/detach](../profiling/detach.md)[**：**{ `PID`&#124;`ProcName` }]|**/attach** 會開始為處理序 ID (`PID`) 或處理序名稱 (ProcName) 指定的處理序收集資料。 如果未指定特定進程， **/detach**會停止指定進程或所有進程的資料收集。|
 
 ## <a name="end-the-profiling-session"></a>結束程式碼剖析工作階段
  若要結束程式碼剖析工作階段，程式碼剖析工具不得進行資料收集。 您可以關閉分析的應用程式或叫用 **VSPerfCmd /detach**選項，以停止收集並行資料。 接著叫用 **VSPerfCmd /shutdown** 選項以停止程式碼剖析工具，並關閉程式碼剖析資料檔案。 **VSPerfClrEnv /off** 命令會清除程式碼剖析環境變數。
@@ -91,11 +91,11 @@ ms.locfileid: "85327901"
 
          -或-
 
-    - 輸入**VSPerfCmd/detach**
+    - 輸入 **>vsperfcmd/detach**
 
 2. 關閉分析工具
 
-     **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
+     **>vsperfcmd**  [/shutdown](../profiling/shutdown.md)
 
 ## <a name="see-also"></a>另請參閱
 - [收集並行資料](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)

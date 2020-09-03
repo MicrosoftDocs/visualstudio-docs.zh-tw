@@ -13,14 +13,14 @@ ms.custom: vs-azure
 ms.date: 12/16/2015
 ms.author: mlearned
 ms.openlocfilehash: 0a8f6fab3c8f30834a467e2ad98843b16a9245b4
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916704"
 ---
 # <a name="adding-mobile-services-by-using-visual-studio-connected-services"></a>使用 Visual Studio 已連接服務加入行動服務
-透過 Visual Studio 2015，您可以使用 [ **加入已連接服務** ] 對話方塊連接到 Azure 行動服務。 您可以從任何 C# 用戶端應用程式、任何 JavaScript 應用程式或跨平台 Cordova 應用程式進行連接。 連接後，您就可以建立及存取資料、建立自訂 API 和排程工作，或加入推播通知的支援。  已連接服務作業會加入所有適當的參考和連接程式碼。 您也可以利用各種熱門身分識別系統的內建驗證支援，例如 Azure AD、Facebook、Twitter 和 Microsoft 帳戶。
+透過 Visual Studio 2015，您可以使用 [ **加入已連接服務** ] 對話方塊連接到 Azure 行動服務。 您可以從任何 C# 用戶端應用程式、任何 JavaScript 應用程式或跨平台 Cordova 應用程式連接。 連接後，您可以建立和存取資料、建立自訂 API 和排程的工作，或加入推播通知的支援。  已連接服務作業會加入所有適當的參考和連接程式碼。 您也可以利用包含各種熱門身分識別配置 (例如 Azure AD、Facebook、Twitter 和 Microsoft 帳戶) 的內建驗證支援。
 
 ## <a name="supported-project-types"></a>支援的專案類型
 > [!NOTE]
@@ -35,33 +35,33 @@ ms.locfileid: "75916704"
 * 使用 Visual Studio Tools for Apache Cordova 建立的專案
 
 ## <a name="connect-to-azure-mobile-services-using-the-add-connected-services-dialog"></a>使用 [加入已連接服務] 對話方塊連接到 Azure 行動服務
-1. 確定您擁有 Azure 帳戶。 如果您沒有 Azure 帳戶，您可以註冊[免費試用](https://azure.microsoft.com/pricing/free-trial/)。
-2. 開啟 [加入已連接服務] 對話方塊。
+1. 確定您具有 Azure 帳戶。 如果您沒有 Azure 帳戶，您可以註冊 [免費試用版](https://azure.microsoft.com/pricing/free-trial/)。
+2. 開啟 [加入已連接服務] **** 對話方塊。
 
-   * 若為 .NET 應用程式，請在 Visual Studio 中開啟您的專案，開啟 [方案總管] 中 [參考] 節點的內容功能表，然後選擇 [加入已連接服務]
+   * 若為 .NET 應用程式，請在 Visual Studio 中開啟您的專案，開啟 [方案總管] 中 [參考]**** 節點的內容功能表，然後選擇 [加入已連接服務]****
 
         ![連線至 Azure 行動服務](./media/vs-azure-tools-connected-services-add-mobile-services/IC797635.png)
-   * 若為 Apache Cordova 應用程式專案，請在 Visual Studio 中開啟您的專案，開啟 [方案總管] 中專案節點的內容功能表，然後選擇 [加入已連接服務]。
-3. 在 [加入已連接服務] 對話方塊中，選擇 [Azure 行動服務]，然後選擇 [設定] 按鈕。 如果您尚未登入 Azure，系統可能會提示您這麼做。
+   * 若為 Apache Cordova 應用程式專案，請在 Visual Studio 中開啟您的專案，開啟 [方案總管] 中專案節點的內容功能表，然後選擇 [加入已連接服務] ****。
+3. 在 [加入已連接服務]**** 對話方塊中，選擇 [Azure 行動服務]****，然後選擇 [設定]**** 按鈕。 如果您尚未登入 Azure，系統可能會提示您這麼做。
 
     ![加入 Azure 行動服務](./media/vs-azure-tools-connected-services-add-mobile-services/IC797636.png)
-4. 在 [Azure 行動服務] 對話方塊中，選擇現有的行動服務 (如果有的話)。 如果您需要建立新的 Azure 行動服務，請遵循下面的程序。 否則，請跳至下一個步驟。
+4. 在 [Azure 行動服務]**** 對話方塊中，選擇現有行動服務 (如果有的話)。 如果您需要建立新的 Azure 行動服務，請遵循下面的程序。 否則請跳到下一步。
 
     若要建立新的行動服務帳戶︰
 
-   1. 選擇對話方塊底部的 [**建立服務**] 連結。
+   1. 選擇對話方塊底部的 [建立服務]**** 連結。
        ![加入新的已連接行動服務](./media/vs-azure-tools-connected-services-add-mobile-services/IC797637.png)
-   2. 在 [建立行動服務] 對話方塊上，您可以選擇 JavaScript 後端行動服務，或選擇 [執行階段] 下拉式清單中的 .NET 後端行動服務。
+   2. 在 [建立行動服務]**** 對話方塊上，您可以選擇 JavaScript 後端行動服務，或選擇 [執行階段]**** 下拉式清單中的 .NET 後端行動服務。
 
        ![建立行動服務](./media/vs-azure-tools-connected-services-add-mobile-services/IC797638.png)
 
-       JavaScript 後端服務不但簡單而且功能強大。 如果您建立 JavaScript 後端行動服務，伺服器端 JavaScript 程式碼會儲存在雲端中，但是您可以使用 [伺服器總管] 或 Azure 管理入口網站來編輯伺服器指令碼。
+       JavaScript 後端服務不但簡單而且功能強大。 如果您建立 JavaScript 後端行動服務，伺服器端 JavaScript 程式碼會儲存在雲端中，但您可以使用 [伺服器總管] 或 Azure 管理入口網站來編輯伺服器指令碼。
 
        .NET 後端行動服務讓您擁有 Web API 和 Entity Framework 的完整功能與彈性。 如果您建立 .NET 後端行動服務，則系統會為您建立專案並加入至您的解決方案。
-   3. 選擇您想要行動服務的 [區域] ，然後輸入伺服器的使用者名稱和密碼。
-   4. 在您輸入所有必要的資訊之後，選擇 [建立] 按鈕以建立行動服務。
-   5. 新行動服務應該會顯示在 [Azure 行動服務] 對話方塊的服務清單中。 選擇清單中的新行動服務，然後選擇 [新增] 按鈕將服務加入至您的專案。
-5. 檢閱出現的 [快速入門] 頁面，並了解專案的修改情況。 每當您加入連接的服務時，[快速入門] 頁面會出現在瀏覽器中。 您可以檢閱建議的後續步驟和程式碼範例，或切換至 [發生什麼情形] 頁面，查看已加入到您專案中的參考，以及您的程式碼和組態檔有何修改。
+   3. 選擇您想要行動服務的 [區域]****，然後輸入伺服器的使用者名稱和密碼。
+   4. 輸入所有必要資訊之後，請選擇 [建立]**** 按鈕來建立行動服務。
+   5. 新行動服務應該會顯示在 [Azure 行動服務] **** 對話方塊的服務清單中。 在清單中選擇新的行動服務，然後選擇 [加入]**** 按鈕，將服務加入至您的專案。
+5. 檢閱所顯示的 [開始使用] 頁面並了解您的專案修改方式。 每當您加入已連接服務時，您的瀏覽器就會出現 [開始使用] 頁面。 您可以檢閱建議的後續步驟和程式碼範例，或切換到 [發生什麼情形] 頁面以查看哪些參考已加入至您的專案，以及您的程式碼和組態檔的修改方式。
 6. 使用程式碼範例做為指南，開始撰寫程式碼以存取您的行動服務！
 
 ## <a name="next-steps"></a>後續步驟

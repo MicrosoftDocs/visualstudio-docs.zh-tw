@@ -1,5 +1,5 @@
 ---
-title: 如何：以資料填入 ListObject 控制項
+title: 如何：使用資料填入 ListObject 控制項
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2941022cb434198298e9d098ef562efeaba4893f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544816"
 ---
-# <a name="how-to-fill-listobject-controls-with-data"></a>如何：以資料填入 ListObject 控制項
+# <a name="how-to-fill-listobject-controls-with-data"></a>如何：使用資料填入 ListObject 控制項
   使用資料繫結也可以快速在文件中加入資料。 將資料繫結至清單物件之後，您可以中斷清單物件的連線，讓它顯示資料但不再繫結至資料來源。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -59,10 +59,10 @@ ms.locfileid: "85544816"
 ## <a name="see-also"></a>另請參閱
 - [在 VSTO 增益集的執行時間中擴充 Word 檔和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office 檔上的控制項](../vsto/controls-on-office-documents.md)
-- [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [如何：將 ListObject 的資料行對應至資料](../vsto/how-to-map-listobject-columns-to-data.md)
+- [在執行時間將控制項新增至 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [如何：將 ListObject 資料行對應至資料](../vsto/how-to-map-listobject-columns-to-data.md)
 - [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)
 - [ListObject 控制項](../vsto/listobject-control.md)
 - [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [如何：將資料庫的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [如何：使用資料庫中的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 - [如何：將服務的資料填入檔](../vsto/how-to-populate-documents-with-data-from-services.md)

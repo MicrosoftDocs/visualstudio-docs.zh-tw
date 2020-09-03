@@ -6,19 +6,19 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 10/23/2018
 ms.openlocfilehash: d488d56bdecd2801ecd94a2551c3be0f9834d0d7
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938680"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio for Mac
 
 如果您或組織使用防火牆或 Proxy 伺服器等安全性措施，將會有您應該新增至「允許清單」的網域，以及應該開啟的連接埠和通訊協定，以確保您能在安裝及使用 Visual Studio for Mac 及 Azure 服務時取得最佳體驗。
 
-- [**安裝 Visual Studio for Mac**](#install-visual-studio-for-mac)：這些資料表包含必須允許連線的網域，讓您可以存取 Visual Studio for Mac 的所有功能和工作負載。
+- [**安裝 Visual Studio for Mac**](#install-visual-studio-for-mac)：這些表格包含必須允許連線的網域，讓您能夠存取 Visual Studio for Mac 的所有功能和工作負載。
 
-- [**使用 Visual Studio for Mac**](#use-visual-studio-for-mac)：這些資料表包含必須允許連線的網域，以便您可以存取相關的功能。
+- [**使用 Visual Studio for Mac**](#use-visual-studio-for-mac)：這些表格包含必須允許連線的網域，讓您可以存取相關的功能。
 
 ## <a name="install-visual-studio-for-mac"></a>安裝 Visual Studio for Mac
 
@@ -53,7 +53,7 @@ ms.locfileid: "85938680"
 
 ### <a name="general"></a>一般
 
-| 網域 | 連接埠|目的|
+| Domain | 連接埠|目的|
 | ----------------------|------------------|------------------|
 | go.microsoft.com | 80/443|Microsoft URL 解析 |
 | vsstartpage.blob.core.windows.net| 80/443| 起始頁資料|
@@ -64,7 +64,7 @@ ms.locfileid: "85938680"
 
 ### <a name="identity"></a>身分識別
 
-| 網域 | 連接埠|目的|
+| Domain | 連接埠|目的|
 | ----------------------|------------------|------------------|
 | login.microsoftonline.com | 80/443| 身分識別提供者|
 | secure.aadcdn.microsoftonline-p.com | 80/443|身分識別提供者|
@@ -73,7 +73,7 @@ ms.locfileid: "85938680"
 
 ### <a name="nuget"></a>NuGet
 
-| 網域 | 連接埠|目的|
+| Domain | 連接埠|目的|
 | ----------------------|------------------|------------------|
 | api.nuget.org | 80/443|NuGet API|
 | secure.aadcdn.microsoftonline-p.com |80/443| 身分識別提供者|

@@ -1,5 +1,5 @@
 ---
-title: 編寫通用語言運行時運算式賦值器 |微軟文件
+title: 撰寫 Common Language Runtime 運算式評估工具 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,36 +13,36 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4e46eaef395a7c66792662b3c5d4b9fbad419dfb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712316"
 ---
-# <a name="writing-a-common-language-runtime-expression-evaluator"></a>編寫通用語言執行時表示式賦值器
+# <a name="writing-a-common-language-runtime-expression-evaluator"></a>撰寫 common language runtime 運算式評估工具
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關執行 CLR 運算式評估工具的詳細資訊，請參閱 [clr 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 運算式賦值器 (EE) 是除錯引擎 (DE) 的一部分,用於處理生成要調試的程式碼的程式設計語言的語法和語義。 表達式必須在程式設計語言的上下文中計算。 例如,在某些語言中,表達式"A+B"表示"A 和B的總和"。 在其他語言中,相同的表達式可能表示"A 或 B"。 因此,必須為生成要在 Visual Studio IDE 中調試的對象代碼的每個程式設計語言編寫單獨的 EE。
+ 運算式評估工具 (EE) 是 debug 引擎的一部分 (DE) ，它會處理產生要進行偵錯工具代碼之程式設計語言的語法和語義。 運算式必須在程式設計語言的內容中進行評估。 例如，在某些語言中，"A + B" 運算式表示「A 和 B 的總和」。 在其他語言中，相同的運算式可能表示「A 或 B」。 因此，必須針對每個程式設計語言撰寫個別的 EE，以產生要在 Visual Studio IDE 中進行調試的物件程式碼。
 
- Visual Studio 調試包的某些方面必須在程式設計語言的上下文中解釋代碼。 例如,當執行在斷點停止時,必須計算並顯示使用者鍵入到**Watch**視窗中的任何表達式。 使用者可以通過在 **「監視」** 視窗或 **「立即」** 視窗中鍵入表達式來更改本地變數的值。
+ Visual Studio debug 封裝的某些層面必須在程式設計語言的內容中解讀程式碼。 例如，當執行在中斷點停止時，必須評估並顯示使用者已在 **監看** 式視窗中輸入的任何運算式。 使用者可以在 [ **監看** 式] 視窗 **或 [即時** 運算] 視窗中輸入運算式，以變更區域變數的值。
 
 ## <a name="in-this-section"></a>本節內容
- [通用語言執行時與表示式運算](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md)說明在將專有程式設計語言整合到 Visual Studio IDE 中時,撰寫能夠評估專有語言上下文中運算式 EE 允許您編譯到 Microsoft 中間語言 (MSIL),而無需編寫調試引擎。
+ [Common language runtime 和運算式評估](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md) 說明當您將專屬程式設計語言整合至 Visual Studio IDE 時，撰寫可在專屬語言內容中評估運算式的 EE，可讓您編譯成 Microsoft 中繼語言 (MSIL) ，而不需要撰寫 debug engine。
 
- [運算式賦值器架構結構](../../extensibility/debugger/expression-evaluator-architecture.md)討論如何實現所需的 EE 介面並呼叫通用語言執行時符號提供者 (SP) 和黏合劑介面。
+ [運算式評估工具架構](../../extensibility/debugger/expression-evaluator-architecture.md) 討論如何執行所需的 EE 介面，以及如何 (SP) 和系結器介面呼叫 common language runtime 符號提供者。
 
- [註冊運算式賦值器](../../extensibility/debugger/registering-an-expression-evaluator.md)請注意,EE 必須將自己註冊為具有通用語言運行時和 Visual Studio 運行時環境的類工廠。
+ [註冊運算式評估](../../extensibility/debugger/registering-an-expression-evaluator.md) 工具請注意，EE 必須將本身註冊為具有 common language runtime 和 Visual Studio 執行時間環境的 class factory。
 
- [實作式賦值器](../../extensibility/debugger/implementing-an-expression-evaluator.md)描述計算表示式的過程如何包括除錯引擎 (DE)、符號提供者 (SP)、活頁器物件和運算式賦值器 (EE)。
+ [執行運算式評估](../../extensibility/debugger/implementing-an-expression-evaluator.md) 工具描述評估運算式的程式如何包括 debug engine (DE) 、符號提供者 (SP) 、系結器物件，以及運算式評估工具 (EE) 。
 
- [顯示區域變數](../../extensibility/debugger/displaying-locals.md)描述除錯套件在執行暫停時如何呼叫 DE 來獲取本地變數和參數的清單。
+ [顯示區域變數](../../extensibility/debugger/displaying-locals.md) 描述當執行暫停時，debug 封裝會呼叫 DE 來取得區域變數和引數的清單。
 
- [監控監視視窗運算式](../../extensibility/debugger/evaluating-a-watch-window-expression.md)記錄 Visual Studio 除錯套件如何呼叫 DE 以確定其監視清單中每個表示式的當前值。
+ [評估監看式視窗運算式](../../extensibility/debugger/evaluating-a-watch-window-expression.md) 記錄 Visual Studio debug 封裝如何呼叫 DE 來判斷其監看清單中每個運算式的目前值。
 
- [變更本地值](../../extensibility/debugger/changing-the-value-of-a-local.md)說明在更改局部變數的值時,「局部變數」視窗的每一行都有一個關聯的物件,該物件提供本地的名稱、類型和當前值。
+ [變更本機的值](../../extensibility/debugger/changing-the-value-of-a-local.md) 說明在變更本機的值時，[區域變數] 視窗中的每一行都有相關聯的物件，可提供本機的名稱、類型和目前的值。
 
- [實現類型視覺化器和自訂檢視器](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md)說明需要由哪個元件實現哪個介面來支援類型可視化器和自定義查看器。
+ [執行型別視覺化和自訂查看](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md) 器說明哪些介面需要由哪個元件所執行，以支援類型視覺化程式和自訂檢視器。
 
 ## <a name="see-also"></a>另請參閱
- [視覺化工作室除錯器可擴充性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+ [Visual Studio 偵錯工具擴充性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

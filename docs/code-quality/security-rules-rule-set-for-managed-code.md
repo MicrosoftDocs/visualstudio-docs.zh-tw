@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 49fe666884c3a96a5c8eb632308e7f732150805e
-ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75929216"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的安全性規則規則集
 
-使用 Microsoft 安全性規則規則集進行舊版程式碼分析，將所報告的潛在安全性問題數目最大化。
+使用 Microsoft 安全性規則規則集進行舊版程式碼分析，以最大化回報的潛在安全性問題數目。
 
-|規則|描述|
+|規則|說明|
 |----------|-----------------|
 |[CA2100 必須](../code-quality/ca2100.md)|必須檢閱 SQL 查詢中是否有安全性弱點|
 |[CA2102](../code-quality/ca2102.md)|必須使用一般處理常式攔截非 CLSCompliant 例外狀況|
@@ -27,7 +27,7 @@ ms.locfileid: "75929216"
 |[CA2104](../code-quality/ca2104.md)|不要宣告唯讀的可變動參考類型|
 |[CA2105](../code-quality/ca2105.md)|陣列欄位不應該為唯讀|
 |[CA2106 必須](../code-quality/ca2106.md)|必須保護判斷提示|
-|[CA2107 必須](../code-quality/ca2107.md)|必須檢閱 Deny 和 Permit Only 的使用方式|
+|[CA2107](../code-quality/ca2107.md)|必須檢閱 Deny 和 Permit Only 的使用方式|
 |[CA2108](../code-quality/ca2108.md)|必須檢閱實值類型上的宣告式安全性|
 |[CA2109 必須](../code-quality/ca2109.md)|必須檢閱可見的事件處理常式|
 |[CA2111](../code-quality/ca2111.md)|指標不應該為可見的|
@@ -38,7 +38,7 @@ ms.locfileid: "75929216"
 |[CA2117](../code-quality/ca2117.md)|APTCA 類型應該只擴充 APTCA 基底類型|
 |[CA2118](../code-quality/ca2118.md)|檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法|
 |[CA2119](../code-quality/ca2119.md)|密封方法以滿足私用介面的要求|
-|[CA2120 必須](../code-quality/ca2120.md)|必須保護序列化建構函式|
+|[CA2120](../code-quality/ca2120.md)|必須保護序列化建構函式|
 |[CA2121](../code-quality/ca2121.md)|靜態建構函式應該為私用的|
 |[CA2122](../code-quality/ca2122.md)|不要間接公開具有連結要求的方法|
 |[CA2123](../code-quality/ca2123.md)|覆寫連結要求應該與基底相同|
@@ -86,5 +86,5 @@ ms.locfileid: "75929216"
 |[CA3010](../code-quality/ca3010.md)|檢閱程式碼是否有 XAML 插入式攻擊弱點|
 |[CA3011](../code-quality/ca3011.md)|檢閱程式碼是否有 DLL 插入式攻擊弱點|
 |[CA3012](../code-quality/ca3012.md)|檢閱程式碼是否有 regex 插入式攻擊弱點|
-|[CA5358](../code-quality/ca5358.md)|不要使用 Unsafe 加密模式|
+|[CA5358](../code-quality/ca5358.md)|不要使用不安全的 Cipher 模式|
 |[CA5403](../code-quality/ca5403.md)|不要硬式編碼憑證|

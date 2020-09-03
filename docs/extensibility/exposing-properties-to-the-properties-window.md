@@ -1,5 +1,5 @@
 ---
-title: 向屬性視窗公開屬性 |微軟文件
+title: 將屬性公開至屬性視窗 |Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,31 +13,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f84962628ae550676e2c2eeb10c0f3baeca1bb58
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711834"
 ---
-# <a name="expose-properties-to-the-properties-window"></a>向「屬性」視窗公開屬性
+# <a name="expose-properties-to-the-properties-window"></a>將屬性公開給屬性視窗
 
-本演練將物件的公共屬性公開到 **「屬性」** 視窗。 對這些屬性所做的更改將反映在 **「屬性」** 視窗中。
+本逐步解說會將物件的公用屬性公開至 [ **屬性** ] 視窗。 您對這些屬性所做的變更會反映在 [ **屬性** ] 視窗中。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
-從 Visual Studio 2015 開始,您不會從下載中心安裝 Visual Studio SDK。 它作為可選功能包含在可視化工作室設置中。 以後還可以安裝 VS SDK。 有關詳細資訊,請參閱[安裝可視化工作室 SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
-## <a name="expose-properties-to-the-properties-window"></a>向「屬性」視窗公開屬性
+## <a name="expose-properties-to-the-properties-window"></a>將屬性公開給屬性視窗
 
-在本節中,您將創建一個自定義工具視窗,並在 **「屬性」** 視窗中顯示關聯的視窗窗格物件的公共屬性。
+在本節中，您會建立自訂工具視窗，並在 [ **屬性** ] 視窗中顯示相關聯的視窗窗格物件的公用屬性。
 
-### <a name="to-expose-properties-to-the-properties-window"></a>向「屬性」視窗公開屬性
+### <a name="to-expose-properties-to-the-properties-window"></a>將屬性公開給屬性視窗
 
-1. 每個 Visual Studio 擴展都從 VSIX 部署專案開始,該專案將包含擴展資產。 建立[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]名為的`MyObjectPropertiesExtension`VSIX 專案。 您可以通過搜尋"vsix"在 **"新項目**"對話框中找到 VSIX 專案範本。
+1. 每個 Visual Studio 擴充功能都會從 VSIX 部署專案開始，其中包含延伸模組資產。 建立 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 名為的 VSIX 專案 `MyObjectPropertiesExtension` 。 您可以藉由搜尋 "vsix"，在 [ **新增專案** ] 對話方塊中找到 VSIX 專案範本。
 
-2. 通過添加名為`MyToolWindow`的自定義工具視窗項範本來添加工具視窗。 在**解決方案資源管理器**中,右鍵單擊專案節點並選擇「**添加新** > **項**」。 在 **「新增新項目」對話框**中,轉到**可視化 C# 項** > **擴充性**並選擇 **「自訂工具視窗**」。 在對話框底部的 **「 名稱」** 欄位中,將檔案名稱變更為*MyToolWindow.cs*。 有關如何建立自訂工具視窗的詳細資訊,請參閱[使用工具視窗建立延伸](../extensibility/creating-an-extension-with-a-tool-window.md)。
+2. 加入名為的自訂工具視窗專案範本，以新增工具視窗 `MyToolWindow` 。 在 [**方案總管**中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案] 對話方塊**中，移至**Visual c # 專案**擴充性  >  **Extensibility** ，然後選取 [**自訂工具視窗]**。 在對話方塊底部的 [ **名稱** ] 欄位中，將檔案名變更為 *MyToolWindow.cs*。 如需有關如何建立自訂工具視窗的詳細資訊，請參閱 [使用工具視窗建立延伸](../extensibility/creating-an-extension-with-a-tool-window.md)模組。
 
-3. 開啟*MyToolWindow.cs*並新增以下使用敘述:
+3. 開啟 *MyToolWindow.cs* ，並新增下列 using 語句：
 
    ```csharp
    using System.Collections;
@@ -45,7 +45,7 @@ ms.locfileid: "80711834"
    using Microsoft.VisualStudio.Shell.Interop;
    ```
 
-4. 現在向`MyToolWindow`類添加以下欄位。
+4. 現在將下欄欄位新增至 `MyToolWindow` 類別。
 
    ```csharp
    private ITrackSelection trackSel;
@@ -90,27 +90,27 @@ ms.locfileid: "80711834"
    }
    ```
 
-    屬性`TrackSelection`用於`GetService`獲取提供`STrackSelection`<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>介面的服務。 事件`OnToolWindowCreated`處理程式和`SelectList`方法 共同建立僅包含工具視窗窗格物件本身的選定對象的清單。 該方法`UpdateSelection`告訴 **「屬性」** 視窗顯示工具視窗窗格的公共屬性。
+    `TrackSelection`屬性會使用 `GetService` 來取得 `STrackSelection` 服務，以提供 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 介面。 `OnToolWindowCreated`事件處理常式和 `SelectList` 方法會一起建立所選物件的清單，其中只包含工具視窗窗格物件本身。 `UpdateSelection`方法會告知 [**屬性**] 視窗顯示工具視窗窗格的公用屬性。
 
-6. 建置此專案並開始偵錯。 應出現視覺工作室的實驗實例。
+6. 建置此專案並開始偵錯。 應該會出現 Visual Studio 的實驗實例。
 
-7. 如果**屬性**視窗不可見,則通過按**F4**打開它。
+7. 如果看不到 [ **屬性** ] 視窗，請按 **F4**開啟。
 
-8. 開啟 **「我的工具視窗」 視窗 。** 您可以在 **「查看** > **其他視窗**」 中找到它。
+8. 開啟 **mytoolwindow]** 視窗。 您可以在 [**查看**  >  **其他視窗**] 中找到它。
 
-    視窗將打開,視窗窗格的公共屬性將顯示在**屬性「屬性」** 視窗中。
+    視窗隨即開啟，而且視窗窗格的公用屬性會出現在 [ **屬性** ] 視窗中。
 
-9. 將 **「屬性**」視窗中的**標題**屬性更改為 **「我的物件屬性**」 。
+9. 將 [**屬性**] 視窗中的 [**標題**] 屬性變更為 [**我的物件屬性**]。
 
-     "MyTool 視窗"視窗標題會相應地更改。
+     Mytoolwindow] 視窗標題會隨之變更。
 
 ## <a name="expose-tool-window-properties"></a>公開工具視窗屬性
 
-在本節中,添加工具視窗並公開其屬性。 對屬性所做的更改將反映在 **「屬性」** 視窗中。
+在本節中，您會新增工具視窗並公開其屬性。 您對屬性所做的變更會反映在 [ **屬性** ] 視窗中。
 
-### <a name="to-expose-tool-window-properties"></a>公開工具視窗屬性
+### <a name="to-expose-tool-window-properties"></a>若要公開工具視窗屬性
 
-1. 打開*MyToolWindow.cs*,並將公共布爾屬性"是檢查"添加`MyToolWindow`到類 中。
+1. 開啟 *MyToolWindow.cs*，並將公用布林值屬性 IsChecked 加入至 `MyToolWindow` 類別。
 
     ```csharp
     [Category("My Properties")]
@@ -127,9 +127,9 @@ ms.locfileid: "80711834"
     }
     ```
 
-     此屬性從稍後將創建的 WPF 複選框中獲取其狀態。
+     這個屬性會從 WPF 核取方塊取得您稍後將建立的狀態。
 
-2. 打開*MyToolWindowControl.xaml.cs,* 並將 MyToolWindowControl 建構函數替換為以下代碼。
+2. 開啟 *MyToolWindowControl.xaml.cs* ，並以下列程式碼取代 MyToolWindowControl 的函式。
 
     ```vb
     private MyToolWindow pane;
@@ -141,21 +141,21 @@ ms.locfileid: "80711834"
     }
     ```
 
-     這允許`MyToolWindowControl``MyToolWindow`訪問 窗格。
+     這會提供 `MyToolWindowControl` 窗格的存取權 `MyToolWindow` 。
 
-3. 在*MyToolWindow.cs*`MyToolWindow`中, 更改建構函數如下所示:
+3. 在 *MyToolWindow.cs*中，變更此函式，如下所示 `MyToolWindow` ：
 
     ```csharp
     base.Content = new MyToolWindowControl(this);
     ```
 
-4. 更改為 MyToolWindowControl 的設計檢視。
+4. 變更為 MyToolWindowControl 的設計檢視。
 
-5. 刪除該按鈕,並將複選框從 **「工具」框**添加到左上角。
+5. 刪除按鈕，並將核取方塊從 [ **工具箱** ] 新增至左上角。
 
-6. 新增選中和未選中的事件。 選擇設計檢視中的複選框。 在「**屬性」** 視窗中,按一下事件處理程式按鈕(在 **「屬性」** 視窗的右上角)。 在文字框中尋找 **「已選中****」並鍵入checkbox_Checked,** 然後在文本框中尋找 **「未選中**」並鍵入**checkbox_Unchecked。**
+6. 加入 Checked 和 Unchecked 事件。 選取設計檢視中的核取方塊。 在 [ **屬性** ] 視窗中，按一下 [ **屬性** ] 視窗) 右上方 (的 [事件處理常式] 按鈕。 在文字方塊中尋找 [ **已選取** ] 並輸入 **checkbox_Checked** ，然後在文字方塊中尋找 [ **未選取** ] 並輸入 **checkbox_Unchecked** 。
 
-7. 新增選取的盒事件處理程式:
+7. 新增核取方塊事件處理常式：
 
     ```csharp
     private void checkbox_Checked(object sender, RoutedEventArgs e)
@@ -172,22 +172,22 @@ ms.locfileid: "80711834"
 
 8. 建置此專案並開始偵錯。
 
-9. 在實驗例中,開啟**MyTool 視窗**。
+9. 在實驗實例中，開啟 [ **mytoolwindow]** ] 視窗。
 
-     在 **「屬性」** 視窗中尋找視窗的屬性。 **"IsChecked"** 屬性顯示在視窗底部,"**我的屬性**"類別下。
+     在 [ **屬性** ] 視窗中尋找視窗的屬性。 [ **IsChecked** ] 屬性會出現在視窗底部的 [我的 **屬性** ] 類別之下。
 
-10. 選取**的 「MyTool 視窗」** 視窗中 的複選框。 **在****「屬性」** 視窗中選取的變更為**True**。 清除 **「MyTool 視窗」視窗中**的複選框。 **在****「屬性」** 視窗中選取的變更為**False**。 在 **「屬性」** 視窗中更改 **「 已檢查」** 的值。 **"MyToolWindow"視窗中**的複選框將更改以匹配新值。
+10. 勾選 [ **mytoolwindow]** ] 視窗中的核取方塊。 [**屬性**] 視窗中的 [ **IsChecked** ] 變更為 [ **True**]。 清除 **mytoolwindow]** 視窗中的核取方塊。 [**屬性**] 視窗中的 [ **IsChecked** ] 變更為 [ **False**]。 在 [**屬性**] 視窗中變更**IsChecked**的值。 **Mytoolwindow]** 視窗中的核取方塊會變更以符合新的值。
 
     > [!NOTE]
-    > 如果必須釋放「**屬性」** 視窗中顯示的物件,請`OnSelectChange``null`先使用 選擇容器進行調用。 處理屬性或物件後,可以更改為已更新<xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A><xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A>並 列出的選擇容器。
+    > 如果您必須處置 [ **屬性** ] 視窗中顯示的物件，請 `OnSelectChange` `null` 先使用選取容器來呼叫。 處置屬性或物件之後，您可以變更為已更新和清單的選取容器 <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> 。
 
 ## <a name="change-selection-lists"></a>變更選取清單
 
- 在本節中,您可以為基本屬性類添加選擇清單,並使用工具視窗介面選擇要顯示的選擇清單。
+ 在本節中，您會加入基本屬性類別的挑選清單，並使用工具視窗介面選擇要顯示的挑選清單。
 
 ### <a name="to-change-selection-lists"></a>變更選取清單
 
-1. 打開*MyToolWindow.cs*並添加名為`Simple`的公共 類。
+1. 開啟 *MyToolWindow.cs* ，並新增名為的公用類別 `Simple` 。
 
     ```csharp
     public class Simple
@@ -212,7 +212,7 @@ ms.locfileid: "80711834"
     }
     ```
 
-2. 新增屬性,以及兩個在`Simple`視窗窗格和 物件之間切換 **「屬性**」視窗選擇的方法。 `MyToolWindow``SimpleObject`
+2. 將 `SimpleObject` 屬性新增至 `MyToolWindow` 類別，再加上兩個方法來切換視窗窗格和物件之間的 **屬性** 視窗選取範圍 `Simple` 。
 
     ```csharp
     private Simple simpleObject = null;
@@ -240,7 +240,7 @@ ms.locfileid: "80711834"
     }
     ```
 
-3. 在*MyToolWindowControl.cs*中,將複選框處理程式取代為以下代碼行:
+3. 在 *MyToolWindowControl.cs*中，以下列程式程式碼取代核取方塊處理常式：
 
     ```csharp
     private void checkbox_Checked(object sender, RoutedEventArgs e)
@@ -259,19 +259,19 @@ ms.locfileid: "80711834"
 
 4. 建置此專案並開始偵錯。
 
-5. 在實驗例中,開啟**MyTool 視窗**。
+5. 在實驗實例中，開啟 [ **mytoolwindow]** ] 視窗。
 
-6. 在**MyTool 視窗視窗中**選擇複選框。 屬性**Properties**視窗`Simple`顯示 物件屬性「**某些文字**」和 **「唯讀」。** 清除複選框。 視窗的公共屬性將顯示在 **「屬性」** 視窗中。
+6. 在 [ **mytoolwindow]** ] 視窗中，選取核取方塊。 [ **屬性** ] 視窗會顯示 `Simple` 物件屬性： **SomeText** 和 **ReadOnly**。 清除核取方塊。 視窗的公用屬性會出現在 [ **屬性** ] 視窗中。
 
     > [!NOTE]
-    > **某些文字**的顯示名稱是 **「我的文字**」 。
+    > [ **SomeText** ] 的顯示名稱是 [ **我的文字**]。
 
 ## <a name="best-practice"></a>最佳做法
 
-在本演練中,<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>實現可選擇的物件集合和所選物件集合是同一集合。 只有選取對象顯示在屬性瀏覽器清單中。 有關更完整的 I選擇容器實現,請參閱參考.ToolWindow 示例。
+在這個逐步解說中， <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 會執行，讓可選取的物件集合和選取的物件集合都是相同集合。 只有選取的物件才會出現在屬性瀏覽器清單中。 如需更完整的 ISelectionContainer 執行，請參閱工具視窗範例。
 
-可視化工作室工具視窗在可視化工作室會話之間保留。 有關保留工具視窗狀態的詳細資訊,請參閱<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>。
+Visual Studio 工具視窗會在 Visual Studio 會話之間保存。 如需保存工具視窗狀態的詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 。
 
 ## <a name="see-also"></a>另請參閱
 
-- [延伸屬性與屬性視窗](../extensibility/extending-properties-and-the-property-window.md)
+- [擴充屬性和屬性視窗](../extensibility/extending-properties-and-the-property-window.md)

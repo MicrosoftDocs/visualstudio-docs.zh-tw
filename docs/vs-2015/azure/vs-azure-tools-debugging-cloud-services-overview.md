@@ -11,10 +11,10 @@ ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
 ms.openlocfilehash: df0322b26768ad5d325fc0fd07585f805fc96825
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919155"
 ---
 # <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>了解針對 Azure 雲端服務進行偵錯的各種方式

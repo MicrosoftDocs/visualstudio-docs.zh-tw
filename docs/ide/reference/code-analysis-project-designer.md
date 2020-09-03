@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b9b61d25d0a08763d55dcfb5d5ddb245471effc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76113782"
 ---
 # <a name="code-analysis-project-designer"></a>專案設計工具、程式碼分析
@@ -64,6 +64,6 @@ ms.locfileid: "76113782"
 
 ## <a name="see-also"></a>另請參閱
 
-- [託管代碼警告的代碼分析](../../code-quality/code-analysis-for-managed-code-warnings.md)
+- [Managed 程式碼的程式碼分析警告](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [Managed 程式碼的程式碼分析概觀](../../code-quality/code-analysis-for-managed-code-overview.md)
 - [逐步解說：分析 Managed 程式碼中的程式碼缺失](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

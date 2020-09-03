@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c56527f18857ad3c4ac82060ffd5794b72ac017c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543256"
 ---
 # <a name="how-to-programmatically-send-email"></a>如何：以程式設計方式傳送電子郵件
-  這個範例會將電子郵件訊息傳送給在其電子郵件地址中有功能變數名稱**example.com**的連絡人。
+  此範例會將電子郵件訊息傳送給其電子郵件地址中有功能變數名稱 **example.com** 的連絡人。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -35,10 +35,10 @@ ms.locfileid: "85543256"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要：
 
-- 其電子郵件地址中有功能變數名稱**example.com**的連絡人。
+- 其電子郵件地址中有功能變數名稱 **example.com** 的連絡人。
 
 ## <a name="robust-programming"></a>穩固程式設計
- 請勿移除搜尋功能變數名稱**example.com**的篩選器程式碼。 如果您移除篩選，解決方案會將電子郵件訊息傳送給您的所有連絡人。
+ 請勿移除搜尋功能變數名稱 **example.com**的篩選器程式碼。 如果您移除篩選準則，您的方案會將電子郵件訊息傳送給您的所有連絡人。
 
 ## <a name="see-also"></a>另請參閱
 - [使用訊息項目](../vsto/working-with-mail-items.md)

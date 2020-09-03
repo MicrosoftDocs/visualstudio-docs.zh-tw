@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0c332fb67e96bdfea0059de11441da7c32871633
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633560"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>在多處理器環境中記錄
@@ -30,7 +30,7 @@ MSBuild 雖能夠使用多個處理器來大幅縮短專案建置時間，但同
 
 ### <a name="central-logging-model"></a>集中式記錄模型
 
-針對多處理器建置，MSBuild 會使用「中央記錄模型」。 在中央日誌記錄模型中 *，MSBuild.exe*的實例充當主生成過程或"中央節點"。 *MSBuild.exe*或"輔助節點"的輔助實例附加到中央節點。 任何附加至中央節點的 ILogger 記錄器都會稱為「中央記錄器」，而附加至次要節點的記錄器稱為「次要記錄器」。
+針對多處理器建置，MSBuild 會使用「中央記錄模型」。 在中央記錄模型中， *MSBuild.exe* 的實例可作為主要組建進程或「中央節點」。 *MSBuild.exe*的次要實例或「次要節點」會附加至中央節點。 任何附加至中央節點的 ILogger 記錄器都會稱為「中央記錄器」，而附加至次要節點的記錄器稱為「次要記錄器」。
 
 進行建置時，次要記錄器會將其事件流量路由傳送至中央記錄器。 因為事件產生自數個次要節點，所以資料會同時但交錯地到達中央節點。 為了解析事件對專案和事件對目標參考，事件引數會包含其他建置事件內容資訊。
 

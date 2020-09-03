@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8d86f4a9ecbdfff451fed21f93c0fe6a7679d471
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543945"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813:避免使用非密封屬性
@@ -33,16 +33,16 @@ ms.locfileid: "85543945"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用型別繼承自 <xref:System.Attribute?displayProperty=fullName> 、不是抽象的，而且不是密封的（ `NotInheritable` 在 Visual Basic 中）。
+ Public 型別繼承自 <xref:System.Attribute?displayProperty=fullName> 、不是抽象，而且 `NotInheritable` 在 Visual Basic) 中不是密封的 (。
 
 ## <a name="rule-description"></a>規則描述
- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Class Library 會提供擷取自訂屬性的方法。 根據預設，這些方法會搜尋屬性繼承階層架構;例如 <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> ，搜尋指定的屬性型別，或任何擴充指定屬性型別的屬性型別。 密封屬性可避免透過繼承階層進行搜尋，並且可以改善效能。
+ [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Class Library 會提供擷取自訂屬性的方法。 根據預設，這些方法會搜尋屬性繼承階層。例如 <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> ，搜尋指定的屬性型別，或任何擴充指定屬性型別的屬性型別。 密封屬性可避免透過繼承階層進行搜尋，而且可以改善效能。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規，請密封屬性類型，或將它設為抽象。
+ 若要修正此規則的違規情形，請密封屬性類型或使其成為抽象。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 您可以放心地隱藏此規則的警告。 只有當您要定義屬性階層，而且無法密封屬性或使其成為抽象時，才應該執行此動作。
+ 隱藏此規則的警告是安全的。 只有當您要定義屬性階層，而且無法密封屬性或使其成為抽象時，才應該執行此動作。
 
 ## <a name="example"></a>範例
  下列範例顯示符合此規則的自訂屬性。
