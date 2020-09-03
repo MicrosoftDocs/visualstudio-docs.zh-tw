@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0618d571258817b5e9653a38a7801c2e4d14e687
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284564"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>如何：將專案設定成以多重平台為目標
@@ -27,17 +27,17 @@ Visual Studio 提供一種方式，可以讓方案一次以數個不同 CPU 架�
 
 [組態管理員]**** 對話方塊可讓您建立與設定方案層級和專案層級的組態及平台。 每個方案層級組態和目標的組合都可以有唯一一組與其建立關聯的屬性；例如，可讓您輕鬆地切換目標設為 [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] 平台的版本組態、目標設為 x86 平台的版本組態，以及目標設為 x86 平台的偵錯組態。
 
-1. 從 [建置]**** 功能表中，按一下 [組態管理員]****。
+1. 從 [建置] 功能表中，按一下 [組態管理員]。
 
-2. 在 [使用中的**方案平臺**] 方塊中，選取您想要作為解決方案目標的平臺，或選取 **\<New>** 以建立新的平臺。 Visual Studio 將編譯您的應用程式，以將 [組態管理員]**** 對話方塊中設為使用中平台的平台設為目標。
+2. 在 [使用中的 **方案平臺**] 方塊中，選取您要解決方案設為目標的平臺，或選取 **\<New>** 以建立新的平臺。 Visual Studio 將編譯您的應用程式，以將 [組態管理員]**** 對話方塊中設為使用中平台的平台設為目標。
 
 ## <a name="remove-a-platform"></a>移除平台
 
 如果您發現平台並不需要，則可以使用 [組態管理員]**** 對話方塊予以移除。 這會移除您針對該組態和目標組合所設定的所有方案和專案設定。
 
-1. 從 [建置]**** 功能表中，按一下 [組態管理員]****。
+1. 從 [建置] 功能表中，按一下 [組態管理員]。
 
-2. 在 [使用中的**方案平臺**] 方塊中，選取 **\<Edit>** 。 [編輯方案平台]**** 對話方塊隨即開啟。
+2. 在 [使用中的 **方案平臺**] 方塊中，選取 **\<Edit>** 。 [編輯方案平台]**** 對話方塊隨即開啟。
 
 3. 按一下您想要移除的平台，然後按一下 [移除]****。
 
@@ -63,6 +63,6 @@ Visual Studio 提供一種方式，可以讓方案一次以數個不同 CPU 架�
 
 ## <a name="see-also"></a>另請參閱
 
-- [How to：建立和編輯設定](../ide/how-to-create-and-edit-configurations.md)
+- [如何：建立和編輯設定](../ide/how-to-create-and-edit-configurations.md)
 - [了解組建組態](../ide/understanding-build-configurations.md)
 - [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

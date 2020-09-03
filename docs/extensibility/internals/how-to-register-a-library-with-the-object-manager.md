@@ -15,28 +15,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7179bd87fdfd9a2c3fc36958a9d964ec4f790dbd
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905230"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>如何：使用物件管理員註冊程式庫
-符號流覽工具，例如**類別檢視**、**物件瀏覽器**、**呼叫瀏覽器**和**尋找符號結果**，可讓您在專案或外部元件中查看符號。 這些符號包括命名空間、類別、介面、方法和其他語言元素。 程式庫會追蹤這些符號，並將其公開至 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 物件管理員，以在工具中填入資料。
+符號流覽工具（例如 **類別檢視**、 **物件瀏覽器**、 **呼叫瀏覽器** 和 **尋找符號結果**）可讓您在專案或外部元件中查看符號。 這些符號包括命名空間、類別、介面、方法和其他語言元素。 這些程式庫會追蹤這些符號，並將它們公開給以 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 資料填入工具的物件管理員。
 
- 物件管理員會持續追蹤所有可用的程式庫。 每個程式庫都必須向物件管理員註冊，才能提供符號流覽工具的符號。
+ 物件管理員會持續追蹤所有可用的程式庫。 每個程式庫都必須先向物件管理員註冊，才能提供符號流覽工具的符號。
 
- 一般來說，您會在 VSPackage 載入時註冊程式庫。 不過，它可以視需要在另一個時間執行。 當 VSPackage 關閉時，您會取消註冊媒體櫃。
+ 通常，您會在 VSPackage 載入時註冊程式庫。 不過，您可以視需要在另一次完成。 當 VSPackage 關機時，您會將程式庫取消註冊。
 
- 若要註冊程式庫，請使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A> 方法。 若為 managed 程式碼程式庫，請使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> 方法。
+ 若要註冊程式庫，請使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A> 方法。 針對 managed 程式碼程式庫，請使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> 方法。
 
- 若要取消註冊程式庫，請使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> 方法。
+ 若要取消註冊媒體櫃，請使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> 方法。
 
  若要取得物件管理員的參考， <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> 請將 <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> 服務識別碼傳遞給 `GetService` 方法。
 
 ## <a name="register-and-unregister-a-library-with-the-object-manager"></a>使用物件管理員註冊和取消註冊程式庫
 
-### <a name="to-register-a-library-with-the-object-manager"></a>若要使用物件管理員註冊程式庫
+### <a name="to-register-a-library-with-the-object-manager"></a>使用物件管理員註冊程式庫
 
 1. 建立程式庫。
 
@@ -55,7 +55,7 @@ ms.locfileid: "85905230"
 
     ```
 
-2. 取得類型物件的參考 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> ，並呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> 方法。
+2. 取得類型之物件的參考 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> ，並呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> 方法。
 
     ```vb
     Private Sub RegisterLibrary()
@@ -109,9 +109,9 @@ ms.locfileid: "85905230"
 
     ```
 
-### <a name="to-unregister-a-library-with-the-object-manager"></a>若要使用物件管理員取消註冊程式庫
+### <a name="to-unregister-a-library-with-the-object-manager"></a>若要使用物件管理員取消註冊媒體櫃
 
-1. 取得類型物件的參考 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> ，並呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> 方法。
+1. 取得類型之物件的參考 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> ，並呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> 方法。
 
     ```vb
     Private Sub UnregisterLibrary()

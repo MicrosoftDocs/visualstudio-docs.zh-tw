@@ -12,22 +12,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 96fae66c85af80bf45b81a768a858eb696021c5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203179"
 ---
 # <a name="search-menu-commands"></a>搜尋功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**搜尋**功能表會提供要搜尋特定的 windows 的命令。  
+[ **搜尋** ] 功能表提供搜尋特定視窗的命令。  
   
- **尋找視窗/處理序/執行緒/訊息**  
- 會開啟 **視窗**/**程序**/**執行緒**/**MessageSearch**  對話方塊中，您可以使用**FinderTool**或指定搜尋準則。  
+ **尋找視窗/進程/執行緒/訊息**  
+ 開啟 [**視窗** / **進程** / **執行緒** / **MessageSearch** ] 對話方塊，您可以在其中使用**FinderTool**或指定搜尋準則。  
   
- **尋找下一個**  
- 會搜尋目前的檢視中的下一個相符的視窗、 程序、 執行緒或訊息。 不是唯一有效的搜尋結果時，此功能表項目 （和相關的工具列按鈕） 是可用。  
+ **找下一個**  
+ 在目前的視圖中搜尋下一個相符的視窗、進程、執行緒或訊息。 只有當有一個不是唯一的有效搜尋結果時，才可以使用這個功能表項目 (以及相關的工具列按鈕) 。  
   
- **尋找上一個**  
- 搜尋上一個相符的視窗、 程序、 執行緒或訊息的目前檢視。 不是唯一有效的搜尋結果時，此功能表項目 （和相關的工具列按鈕） 是可用。
+ **找上一個**  
+ 在目前的視圖中搜尋先前相符的視窗、進程、執行緒或訊息。 只有當有一個不是唯一的有效搜尋結果時，才可以使用這個功能表項目 (以及相關的工具列按鈕) 。

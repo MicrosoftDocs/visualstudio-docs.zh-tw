@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d3b4e151db08ad5490ed6238223d553f9e76aa0f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77192399"
 ---
 # <a name="concurrency-visualizer"></a>並行視覺化檢視
@@ -27,9 +27,9 @@ ms.locfileid: "77192399"
 > [!NOTE]
 > 並行視覺化檢視是 Visual Studio 的選擇性擴充功能。 從下列連結下載並行視覺化檢視和並行視覺化檢視收集工具：
 >
-> - 下載[視覺化工作室 2019 擴展的併發視覺化檢視](https://marketplace.visualstudio.com/items?itemName=Diagnostics.DiagnosticsConcurrencyVisualizer2019#overview)。
-> - 下載[視覺化工作室 2017 擴展的併發視覺化檢視](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview)。
-> - 下載[視覺化工作室 2015 擴展的併發視覺化檢視](https://marketplace.visualstudio.com/items?itemName=Diagnostics.ConcurrencyVisualizerforVisualStudio2015)。
+> - 下載 Visual Studio 2019 擴充功能的 [並行視覺化程式](https://marketplace.visualstudio.com/items?itemName=Diagnostics.DiagnosticsConcurrencyVisualizer2019#overview) 。
+> - 下載 Visual Studio 2017 擴充功能的 [並行視覺化程式](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview) 。
+> - 下載 Visual Studio 2015 擴充功能的 [並行視覺化程式](https://marketplace.visualstudio.com/items?itemName=Diagnostics.ConcurrencyVisualizerforVisualStudio2015) 。
 > - 下載[適用於 Visual Studio 2015 的並行視覺化檢視收集工具](https://www.microsoft.com/download/details.aspx?id=49103)。
 >
 > [並行視覺化檢視命令列公用程式 (CVCollectionCmd.exe)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) 讓您可以從命令列收集追蹤，在 Visual Studio 2015 的並行視覺化檢視中加以檢視。 此工具可以用於未安裝 Visual Studio 的電腦。
@@ -41,9 +41,9 @@ ms.locfileid: "77192399"
 
 [並行視覺化檢視] 的運作是依賴 [Windows 事件追蹤](/windows/win32/etw/event-tracing-portal) 功能。
 
-## <a name="related-topics"></a>相關主題
+## <a name="related-topics"></a>[相關主題]
 
-|Title|描述|
+|標題|描述|
 |-----------|-----------------|
 |[使用率檢視](../profiling/utilization-view.md)|說明如何跨所有處理器檢視和分析系統活動。|
 |[執行緒檢視](../profiling/threads-view-parallel-performance.md)|說明如何分析程式中執行緒之間的互動。|
@@ -52,7 +52,7 @@ ms.locfileid: "77192399"
 |[Visual Studio 部落格中的平行開發](https://blogs.msdn.microsoft.com/visualizeparallel/)|提供 [並行視覺化檢視] 的秘訣和最佳作法。|
 |[效能報告檢視](../profiling/performance-report-views.md)|提供 Visual Studio 程式碼剖析工具的報表和檢視的參考資訊。|
 |[並行視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md)|描述如何檢測您的原始程式碼，以便在 [並行視覺化檢視] 中顯示其他資訊。|
-|[併發視覺化器命令列實用程式 （CVCollectionCmd）](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|描述如何使用 [並行視覺化檢視] 命令列公用程式 (CVCollectionCmd.exe) 來收集及處理沒有安裝 Visual Studio 的電腦上的追蹤資料。|
+|[平行存取視覺化命令列公用程式 (CVCollectionCmd) ](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|描述如何使用 [並行視覺化檢視] 命令列公用程式 (CVCollectionCmd.exe) 來收集及處理沒有安裝 Visual Studio 的電腦上的追蹤資料。|
 
 ## <a name="see-also"></a>另請參閱
 

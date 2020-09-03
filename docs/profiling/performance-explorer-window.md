@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a365892f606da90c608e43b7ccce73b902ec0e98
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772435"
 ---
 # <a name="performance-explorer-window"></a>效能總管視窗
@@ -52,6 +52,6 @@ Visual Studio IDE 中的 [效能總管]**** 視窗可讓您使用 Visual Studio 
 
 ## <a name="see-also"></a>另請參閱
 
-[配置](../profiling/overviews-performance-tools.md)
-[控制資料收集](../profiling/controlling-data-collection.md)[的性能會話](../profiling/configuring-performance-sessions.md)
-的概述
+[概覽](../profiling/overviews-performance-tools.md) 
+設定[效能會話](../profiling/configuring-performance-sessions.md) 
+[控制資料收集](../profiling/controlling-data-collection.md)

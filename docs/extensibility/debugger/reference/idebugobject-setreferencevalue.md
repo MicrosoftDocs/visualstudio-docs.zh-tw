@@ -1,5 +1,5 @@
 ---
-title: IDebugObject:設置參考值 |微軟文件
+title: IDebugObject：： SetReferenceValue |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cc0db8ee7f0581a4c336111d3876c24f0e5c12d1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726372"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
-設定此物件的引用值。
+設定這個物件的參考值。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int SetReferenceValue(
 
 ## <a name="parameters"></a>參數
 `pObject`\
-[在]表示新引用值的[IDebugObject 物件](../../../extensibility/debugger/reference/idebugobject.md)。
+在代表新參考值的 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回S_OK;否則,返回錯誤代碼。
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 此方法使此[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)`pObject`物件 對 參數中給出的物件的值的引用,並丟棄任何以前的引用。 請注意,此`IDebugObject`對象必須已經是引用類型。
+ 這個方法會讓這個 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 物件參考參數中提供的物件值，並擲回 `pObject` 任何先前的參考。 請注意，這個 `IDebugObject` 物件必須已經是參考型別。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

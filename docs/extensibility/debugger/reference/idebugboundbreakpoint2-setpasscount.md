@@ -1,5 +1,5 @@
 ---
-title: IDebug邊界斷點2::SetPassCount |微軟文件
+title: IDebugBoundBreakpoint2：： SetPassCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bcc7bd57ce0c392a2874f107c6e4d8d5753399d3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735441"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
-設置或更改與此綁定斷點關聯的傳遞計數。
+設定或變更與此系結中斷點相關聯的傳遞計數。
 
 ## <a name="syntax"></a>語法
 
@@ -42,15 +42,15 @@ int SetPassCount( 
 
 ## <a name="parameters"></a>參數
 `bpPassCount`\
-[在]指定通過計數[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)結構。
+在指定傳遞計數的 [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) 結構。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。 如果`E_BP_DELETED`綁定斷點物件的狀態設置`BPS_DELETED`為[(BP_STATE](../../../extensibility/debugger/reference/bp-state.md)枚舉的一部分),則返回。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 如果系結 `E_BP_DELETED` 中斷點物件的狀態設定為 `BPS_DELETED` [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) 列舉) 的 (部分，則會傳回。
 
 ## <a name="remarks"></a>備註
- 通過計數確定觸發斷點時。 可以通過調用[GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md)方法獲取當前通過計數或命中計數。
+ 傳遞計數會決定中斷點的引發時間。 您可以藉由呼叫 [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md) 方法來取得目前的 pass 或計數。
 
- 以前與此斷點關聯的任何通過計數都將丟失。
+ 任何先前與此中斷點相關聯的傳遞計數都會遺失。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

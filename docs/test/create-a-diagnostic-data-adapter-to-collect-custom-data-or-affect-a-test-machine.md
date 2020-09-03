@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2a9b6880b2f71079b6b70eeb6c2e9f7b4e81fc19
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288737"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>建立診斷資料配接器以收集自訂資料或影響測試電腦
@@ -25,10 +25,10 @@ ms.locfileid: "85288737"
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-您可以使用組態設定檔為您自訂的診斷資料配接器提供預設輸入。 例如，您可以提供有關要收集並附加至測試結果的檔案之位置，或是您要在系統上保留多少磁碟空間的資訊。 您可以針對您所建立的每項測試設定，來設定這些資料。 您可以建立自己的使用者控制項，做為編輯器使用。 您在編輯器中對配接器組態所做的任何變更，都會儲存在測試設定中。
+您可以使用組態設定檔為您自訂的診斷資料配接器提供預設輸入。 例如，您可以提供有關要收集並附加至測試結果的檔案之位置，或是您要在系統上保留多少磁碟空間的資訊。 您可以針對您所建立的每項測試設定，來設定這些資料。 您可以建立自己的使用者控制項作為編輯器使用。 您在編輯器中對配接器組態所做的任何變更，都會儲存在測試設定中。
 ::: moniker-end
 
-如果您要從 Visual Studio 執行測試，則必須將這些測試設定設為作用中。 如需測試設定的詳細資訊，請參閱[使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)。
+如果您要從 Visual Studio 執行測試，則必須將這些測試設定設為作用中。 如需測試設定的詳細資訊，請參閱 [使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "85288737"
 
 |工作|相關主題|
 |-|-----------------------|
-|**建立診斷資料配接器：** 您可以藉由建立類別庫來建立診斷資料配接器，然後使用診斷資料配接器 API，收集您想要的資訊或影響您用來執行測試的測試系統。|-   [How to：建立診斷資料介面卡](../test/how-to-create-a-diagnostic-data-adapter.md)|
+|**建立診斷資料配接器：** 您可以藉由建立類別庫來建立診斷資料配接器，然後使用診斷資料配接器 API，收集您想要的資訊或影響您用來執行測試的測試系統。|-   [如何：建立診斷資料介面卡](../test/how-to-create-a-diagnostic-data-adapter.md)|
 |**選取執行測試時要使用的自訂診斷資料配接器：** 您可以選取要用於測試設定的診斷資料配接器，以便在執行測試時使用該配接器。|-   [在測試時收集診斷資料 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 
 ## <a name="see-also"></a>另請參閱

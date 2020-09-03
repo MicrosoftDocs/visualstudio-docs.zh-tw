@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: d94c68a660201b0a8767b1405fcd4399cdf6d660
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288685"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>啟用控制項的自動程式化 UI 測試功能
@@ -69,7 +69,7 @@ ms.locfileid: "85288685"
 4. 針對子控制項的協助工具物件，覆寫 <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>、<xref:System.Windows.Forms.AccessibleObject.Name%2A>、<xref:System.Windows.Forms.AccessibleObject.Parent%2A>、<xref:System.Windows.Forms.AccessibleObject.Role%2A>、<xref:System.Windows.Forms.AccessibleObject.State%2A>、<xref:System.Windows.Forms.AccessibleObject.Navigate%2A> 和 <xref:System.Windows.Forms.AccessibleObject.Select%2A> 屬性和方法。
 
 > [!NOTE]
-> 本主題一開始在 <xref:System.Windows.Forms.AccessibleObject> 中提供協助工具範例，然後在其餘程序中，以該範例作為建置基礎。 如果您想要建立協助工具範例的工作版本，請建立主控台應用程式，然後將*Program.cs*中的程式碼取代為範例程式碼。 請新增對協助工具、System.Drawing 和 System.Windows.Forms 的參考。 將協助工具的 [內嵌 Interop 類型]**** 變更為 [False]****，以消除建置警告。 您可以將專案的輸出類型從 [主控台應用程式]**** 變更為 [Windows 應用程式]****，如此當您執行應用程式時，才不會出現主控台視窗。
+> 本主題一開始在 <xref:System.Windows.Forms.AccessibleObject> 中提供協助工具範例，然後在其餘程序中，以該範例作為建置基礎。 如果您想要建立協助工具範例的有效版本，請建立主控台應用程式，然後將 *Program.cs* 中的程式碼取代為範例程式碼。 請新增對協助工具、System.Drawing 和 System.Windows.Forms 的參考。 將協助工具的 [內嵌 Interop 類型]**** 變更為 [False]****，以消除建置警告。 您可以將專案的輸出類型從 [主控台應用程式]**** 變更為 [Windows 應用程式]****，如此當您執行應用程式時，才不會出現主控台視窗。
 
 ## <a name="support-custom-property-validation-by-implementing-a-property-provider"></a>藉由實作屬性提供者，支援自訂屬性驗證
 
@@ -182,7 +182,7 @@ ms.locfileid: "85288685"
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>偵錯內容提供者或動作篩選
 
-1. 建立延伸模組套件的 debug 版本，將 *.dll*和 *.pdb*檔案複製到 *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*。
+1. 建立延伸模組套件的偵錯工具版本，將 *.dll* 和 *.pdb* 檔案複製到 *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*。
 
 2. 執行您的應用程式 (不在偵錯工具中)。
 

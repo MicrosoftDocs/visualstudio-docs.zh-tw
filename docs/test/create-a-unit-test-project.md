@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: ffa19fb9dc49d6286ef3f54c51d89043445f18ba
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288711"
 ---
 # <a name="create-a-unit-test-project"></a>建立單元測試專案
@@ -19,7 +19,7 @@ ms.locfileid: "85288711"
 單元測試通常會反映測試之程式碼的結構。 例如，單元測試專案會針對產品中的每個程式碼專案建立。 測試專案可位於與實際程式碼相同的方案中，或位於其他方案中。 您在方案中可以有多個單元測試專案。
 
 > [!NOTE]
-> 機器碼的單元測試位置和測試專案結構可能會與本文章中所描述的結構不同。 如需詳細資訊，請參閱[撰寫 C/c + + 的單元測試](writing-unit-tests-for-c-cpp.md)。
+> 機器碼的單元測試位置和測試專案結構可能會與本文章中所描述的結構不同。 如需詳細資訊，請參閱 [撰寫 C/c + + 的單元測試](writing-unit-tests-for-c-cpp.md)。
 
 ## <a name="to-create-a-unit-test-project"></a>建立單元測試專案
 
@@ -27,7 +27,7 @@ ms.locfileid: "85288711"
 
 ::: moniker range="vs-2017"
 
-2. 在 [**新增專案**] 對話方塊中，展開 [**已安裝**] 節點，選擇您想要用於測試專案的語言，然後選擇 [**測試**]。
+2. 在 [ **新增專案** ] 對話方塊中，展開 [ **已安裝** ] 節點，選擇您想要用於測試專案的語言，然後選擇 [ **測試**]。
 
 3. 選取您想使用的測試 Framework 的專案範本，例如 **MSTest Test Project** 或 **NUnit Test Project**。 為專案命名，然後選擇 [確定]****。
 
@@ -49,7 +49,7 @@ ms.locfileid: "85288711"
 
    1. 在 [方案總管]**** 中選取測試專案。
 
-   2. 在 [**專案**] 功能表上，選擇 [**加入參考**]。
+   2. 在 [ **專案** ] 功能表上，選擇 [ **加入參考**]。
 
    3. 在 [參考管理員]**** 中，選取 [專案]**** 底下的 [解決方案]**** 節點。 選取您想要測試的程式碼專案，然後選取 [確定]****。
 

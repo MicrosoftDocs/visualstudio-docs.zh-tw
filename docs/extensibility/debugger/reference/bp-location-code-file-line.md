@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_FILE_LINE |微軟文件
+title: BP_LOCATION_CODE_FILE_LINE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,14 +15,14 @@ ms.workload:
 dev_langs:
 - CPP
 ms.openlocfilehash: e338c3b24ade2cf7663b77abea64f58425d3a068
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738008"
 ---
 # <a name="bp_location_code_file_line"></a>BP_LOCATION_CODE_FILE_LINE
-包含程式碼源檔中特定行處斷點位置的數據。
+在程式碼原始程式檔中的特定行，包含中斷點位置的資料。
 
 ## <a name="syntax"></a>語法
 
@@ -35,20 +35,20 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE {
 
 ## <a name="members"></a>成員
 `bstrContext`\
-斷點的上下文,通常是在調用堆疊上看到的方法或函數名稱。
+中斷點的內容，通常是在呼叫堆疊上看到的方法或函式名稱。
 
 `pDocPos`\
-[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)物件,表示斷點的文檔位置。
+代表中斷點檔位置的 [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) 物件。
 
 ## <a name="remarks"></a>備註
-此結構是作為聯合的一部分[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構的成員。
+此結構是 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 結構的成員，做為聯集的一部分。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject2::CreateStringObjectWithLength |Microsoft Docs
+title: IDebugFunctionObject2：： CreateStringObjectWithLength |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d915cd4a447e0a6eee51d8fa31ec994c68759e52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202981"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-建立具有指定的長度的字串物件。  
+建立具有指定長度的字串物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,16 +43,16 @@ int CreateStringObjectWithLength (
   
 #### <a name="parameters"></a>參數  
  `pcstrString`  
- [in]字串物件的字串值。  
+ 在字串物件的字串值。  
   
  `uiLength`  
- [in]以位元組為單位的字串長度。  
+ 在字串的長度（以位元組為單位）。  
   
  `ppObject`  
- [out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，表示新建立的字串物件。  
+ 擴展傳回代表新建立之字串物件的 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

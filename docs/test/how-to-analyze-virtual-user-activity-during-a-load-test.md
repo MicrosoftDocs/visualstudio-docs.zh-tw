@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 64b69ba926e3c978efa60bd9946da94d846c383f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288399"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>如何：使用虛擬使用者活動圖表分析虛擬使用者在負載測試期間的行為
@@ -57,7 +57,7 @@ ms.locfileid: "85288399"
 
    - **Network**
 
-   - **開始時間**
+   - **Start Time**
 
    - **有效期間**
 
@@ -72,7 +72,7 @@ ms.locfileid: "85288399"
 
 ## <a name="to-use-filtering-options-in-the-virtual-user-activity-chart"></a>若要使用虛擬使用者活動圖中的篩選選項
 
-1. 在 [**詳細資料圖例**] 中，使用下拉式清單來選取 [**測試**]、[**頁面**] 或 [**交易**]。
+1. 在 [ **詳細資料圖例**] 中，使用下拉式清單來選取 [ **測試**]、[ **頁面**] 或 [ **交易**]。
 
     **詳細資料圖例面板**
 
@@ -99,7 +99,7 @@ ms.locfileid: "85288399"
    - **顯示有錯誤的結果**：顯示具有錯誤的結果，這些錯誤可協助偵錯。
 
      > [!NOTE]
-     > 選擇 [ **Web 效能測試結果檢視器]** 工具列中的 [**資料表]** 按鈕，即可進一步調查 [**顯示有錯誤的結果**] 節點底下列出的錯誤類型清單。 如需詳細資訊，請參閱在[資料表視圖中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。
+     > 選擇**Web 效能測試結果檢視器**工具列中的 [**資料表]** 按鈕，即可進一步調查 [**顯示有錯誤的結果**] 節點底下列出的錯誤類型清單。 如需詳細資訊，請參閱在  [資料表視圖中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。
 
      並會隨之更新「虛擬使用者活動圖」****。
 

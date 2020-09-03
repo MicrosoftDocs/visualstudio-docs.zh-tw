@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b3f7d09e29489dac0598b9558df595aedd0c5d61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203050"
 ---
-# <a name="gethostnametype"></a>GETHOSTNAME_TYPE
+# <a name="gethostname_type"></a>GETHOSTNAME_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 指定主機名稱的類型。  
@@ -43,21 +43,21 @@ public enum enum_GETHOSTNAME_TYPE { 
   
 ## <a name="members"></a>成員  
  GHN_FRIENDLY_NAME  
- 指定主應用程式的易記名稱。  
+ 指定主機的易記名稱。  
   
  GHN_FILE_NAME  
- 指定主機的檔案名稱。  
+ 指定主控制項的檔案名。  
   
 ## <a name="remarks"></a>備註  
- 這些值會傳遞做為引數[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)方法來擷取主機名稱格式不同。  
+ 這些值會以引數的形式傳遞至 [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) 方法，以取得不同格式的主機名稱。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)

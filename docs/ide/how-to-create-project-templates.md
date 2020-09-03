@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: e6f168244971a348cdb7938af463538d0fa2acaf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284382"
 ---
 # <a name="how-to-create-project-templates"></a>如何：建立專案範本
@@ -29,9 +29,9 @@ ms.locfileid: "85284382"
 
 2. 編輯專案，直到它準備好匯出成範本。 例如，您可能想要編輯程式碼檔案，指出應該執行參數取代的地方。 請參閱[如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
 
-3. 在 [**專案**] 功能表上，選擇 [**匯出範本**]。
+3. 選擇 [ **專案** ] 功能表上的 [ **匯出範本**]。
 
-   [**匯出範本 Wizard]** 隨即開啟。
+   [ **匯出範本]** 隨即開啟。
 
 4. 在 [選擇範本類型]**** 頁面上，選取 [專案範本]****。 選取您想要匯出至範本的專案，然後選擇 [下一步]****。
 

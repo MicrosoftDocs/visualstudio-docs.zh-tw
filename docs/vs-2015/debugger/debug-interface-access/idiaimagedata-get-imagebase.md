@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a4a8ed3f52a6e4709aa9553b0d7cc906069c9bcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202575"
 ---
-# <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
+# <a name="idiaimagedataget_imagebase"></a>IDiaImageData::get_imageBase
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取以為基礎的映像的記憶體位置。  
+抓取影像應依據的記憶體位置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,13 +35,13 @@ HRESULT get_imageBase ( 
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回建議的映像的基底值。  
+ 擴展傳回建議的影像基底值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 映像基底的衝突，因為映像可能重定基底自動未使用的記憶體位置載入時。 這個方法會傳回已儲存在模組中，在編譯時期的基底提示 （建議的記憶體位置）。  
+ 由於映射基底衝突，映射可能會在載入時自動重定基底至未使用的記憶體位置。 這個方法會傳回基底提示， (在編譯時期儲存在模組中的建議記憶體位置) 。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

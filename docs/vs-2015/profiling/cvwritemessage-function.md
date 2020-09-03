@@ -28,10 +28,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f6a364498306758f8c2f01de741aed50166cc8f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202233"
 ---
 # <a name="cvwritemessage-function"></a>CvWriteMessage 函式
@@ -97,7 +97,7 @@ HRESULT CvWriteMessageExVA(
   
 #### <a name="parameters"></a>參數  
  `argList`  
- 列出引數。  
+ 引數的清單。  
   
  `category`  
  範圍的分類  
@@ -106,10 +106,10 @@ HRESULT CvWriteMessageExVA(
  範圍的重要性層級。  
   
  `pMarkerSeries`  
- 有效的標記序列內容。 不可以是 NULL。  
+ 有效的標記系列內容。 不能是 NULL。  
   
  `pMessage`  
- 訊息格式字串。 不可以是 NULL。  
+ 訊息格式字串。 不能是 NULL。  
   
 ## <a name="return-value"></a>傳回值  
  當訊息成功寫入時傳回 S_OK。 發生任何錯誤時傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。  
@@ -122,4 +122,4 @@ HRESULT CvWriteMessageExVA(
  **ANSI：** CvWriteMessageA、CvWriteMessageVA、CvWriteMessageExA、CvWriteMessageExVA  
   
 ## <a name="see-also"></a>另請參閱  
- [C++ 程式庫參考](../profiling/cpp-library-reference.md)
+ [C + + 程式庫參考](../profiling/cpp-library-reference.md)
