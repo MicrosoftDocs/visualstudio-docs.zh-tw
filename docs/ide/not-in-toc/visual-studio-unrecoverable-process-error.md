@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c30ac5950ca9bf775b05e9f77867c119b7c7565d
-ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81544337"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Visual Studio 無法復原的程序錯誤
@@ -23,7 +23,7 @@ Visual Studio 會使用多個處理序外之程序來執行所需的背景工作
 
 如果 *ServiceHub.RoslynCodeAnalysisService.exe* 或 *ServiceHub.RoslynCodeAnalysisService32.exe* 處理序因某個原因而結束，則會出現快顯資訊列，訊息如下：
 
-**"遺憾的是,Visual Studio 使用的進程遇到了無法恢復的錯誤。我們建議保存您的工作,然後關閉和重新啟動 Visual Studio。**
+**「很可惜，Visual Studio 使用的進程發生無法復原的錯誤。建議您儲存工作，然後關閉並重新啟動 Visual Studio。」**
 
 如果您看到此訊息，應該儲存工作，然後關閉並重新啟動 Visual Studio。
 
@@ -35,7 +35,7 @@ Visual Studio 會使用多個處理序外之程序來執行所需的背景工作
 - Microsoft.CodeAnalysis.LiveUnitTesting.EntryPoint
 - MSBuild.exe
 - PerfWatson2.exe
-- 文稿化的Sandbox64.exe
+- ScriptedSandbox64.exe
 - ServiceHub.Host.CLR.x86.exe
 - ServiceHub.Host.Node.x86.exe
 - ServiceHub.IdentityHost.exe
@@ -43,9 +43,9 @@ Visual Studio 會使用多個處理序外之程序來執行所需的背景工作
 - ServiceHub.RoslynCodeAnalysisService32.exe
 - ServiceHub.SettingsHost.exe
 - ServiceHub.VSDetouredHost.exe
-- VBCS編譯器.exe
+- VBCSCompiler.exe
 - VsHub.exe
-- vstest.發現引擎.x86.exe
+- vstest.discoveryengine.x86.exe
 - WaAppAgent.exe
 - WindowsAzureGuestAgent.exe
 - WindowsAzureTelemetryService.exe

@@ -1,5 +1,5 @@
 ---
-title: 第 2 步：創建第一個核心 Web 應用ASP.NET
+title: 步驟2：建立您的第一個 ASP.NET Core Web 應用程式
 description: 使用此影片教學課程和逐步指示，建立您的第一個 ASP.NET Core Web 應用程式。
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -17,13 +17,13 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77580082"
 ---
-# <a name="step-2-create-your-first-aspnet-core-web-app"></a>第 2 步：創建第一個ASP.NET核心 Web 應用
+# <a name="step-2-create-your-first-aspnet-core-web-app"></a>步驟2：建立您的第一個 ASP.NET Core web 應用程式
 
 使用此影片教學課程和逐步指示，建立您的第一個 ASP.NET Core Web 應用程式。
 
@@ -33,12 +33,12 @@ _觀看此影片並跟著操作，建立您的第一個 ASP.NET Core 應用程�
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>啟動 Visual Studio 2019 並建立新專案
 
-啟動 Visual Studio 2019 並按一下 [建立新專案]****。 選擇 [ASP.NET Core Web 應用程式]****。 選擇 [Web 應用程式]**** 範本，保留預設的專案名稱和位置。 在帶有ASP.NET核心版本的下拉清單中，選擇**ASP.NET酷睿 2.1**或**ASP.NET酷睿 2.2**。 按一下 **[建立]**。 如需詳細指示，請參閱[本教學課程系列的上一段影片](tutorial-aspnet-core-ef-step-01.md)。
+啟動 Visual Studio 2019 並按一下 [建立新專案]****。 選擇 [ASP.NET Core Web 應用程式]****。 選擇 [Web 應用程式]**** 範本，保留預設的專案名稱和位置。 在具有 ASP.NET Core 版本的下拉式清單中，選擇 **ASP.NET Core 2.1** 或 **ASP.NET Core 2.2**。 按一下 [建立]  。 如需詳細指示，請參閱[本教學課程系列的上一段影片](tutorial-aspnet-core-ef-step-01.md)。
 
 ![Visual Studio 2019 選擇 ASP.NET Core 專案選項](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
 > [!WARNING]
-> 請確保選擇 ASP .NET 核心 2.1 或ASP.NET核心 2.2。 本教程與 ASP.NET 酷 3.x 不相容。
+> 請確定您選擇的是 ASP .NET Core 2.1 或 ASP.NET Core 2.2。 本教學課程與 ASP.NET Core 3.x 不相容。
 
 ## <a name="explore-the-new-project"></a>探索新專案
 
@@ -50,7 +50,7 @@ _觀看此影片並跟著操作，建立您的第一個 ASP.NET Core 應用程�
 
 *wwwroot* 資料夾存放的靜態檔案，可從 Web 應用程式公開存取。 它通常存放樣式表、用戶端指令碼檔案和影像。
 
-### <a name="pages"></a>頁面
+### <a name="pages"></a>Pages
 
 *Pages* 資料夾存放網站的 Razor 頁面。 預設範本提供數個頁面，包括應用程式首頁的 *Index.cshtml* 頁面，以及 [關於]、[連絡人] 等等。
 
@@ -68,11 +68,11 @@ _觀看此影片並跟著操作，建立您的第一個 ASP.NET Core 應用程�
 
 ### <a name="indexcshtml"></a>Index.cshtml
 
-網站首頁包含一些 HTML 標記和一些伺服器端的 Razor 程式碼。 它使用 Razor 來指定頁面模型 `IndexModel`，其位於相關聯的 *Index.cshtml.cs* 檔案中。 它也會在 ViewData 中設定值來設定頁面標題。 此 ViewData 值在*\_佈局.cshtml*檔中讀取，該檔位於"頁面"資料夾中的"共用"資料夾中。 Layout 檔案為許多 Razor 頁面共用，並為應用程式提供共同的外觀與風格。 每個頁面內容都會在 Layout 檔案的 HTML 中轉譯。
+網站首頁包含一些 HTML 標記和一些伺服器端的 Razor 程式碼。 它使用 Razor 來指定頁面模型 `IndexModel`，其位於相關聯的 *Index.cshtml.cs* 檔案中。 它也會在 ViewData 中設定值來設定頁面標題。 這個 ViewData 值是在配置* \_ . cshtml*檔案中讀取，該檔案位於 Pages 資料夾內的共用資料夾中。 Layout 檔案為許多 Razor 頁面共用，並為應用程式提供共同的外觀與風格。 每個頁面內容都會在 Layout 檔案的 HTML 中轉譯。
 
 ## <a name="run-the-application"></a>執行應用程式
 
-現在執行應用程式，並在瀏覽器中檢視它。 您可以使用**Ctrl**+**F5**運行應用程式，也可以從 Visual Studio 功能表中選擇 **"無需調試的調試****Debug** > 開始"。
+現在執行應用程式，並在瀏覽器中檢視它。 您可以使用**Ctrl**F5 來執行應用程式， + **F5**或**Debug**  >  從 Visual Studio 的功能表中選擇 [Debug**啟動但不進行調試**程式]。
 
 ## <a name="customize-the-application"></a>自訂應用程式
 
@@ -116,7 +116,7 @@ public void OnGet()
 當您瀏覽至應用程式時，現在應會看到瀏覽器中實際的伺服器時間。
 
 > [!NOTE]
-> 您的輸出可能會與圖片不同，因為 ToShortDateTimeString 的輸出格式取決於目前的文化特性設定。 請參閱＜<xref:System.DateTime.ToShortTimeString>＞。
+> 您的輸出可能會與圖片不同，因為 ToShortDateTimeString 的輸出格式取決於目前的文化特性設定。 請參閱 <xref:System.DateTime.ToShortTimeString>。
 
 ![瀏覽器中的 Visual Studio 2019 ASP.NET Core 專案](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
@@ -124,8 +124,8 @@ public void OnGet()
 
 在下段影片中，您會了解如何將資料支援新增至您的應用程式。
 
-[教程：使用ASP.NET核心應用程式中的資料](tutorial-aspnet-core-ef-step-03.md)
+[教學課程：使用 ASP.NET Core 應用程式中的資料](tutorial-aspnet-core-ef-step-03.md)
 
 ## <a name="see-also"></a>另請參閱
 
-- [教程：創建一個剃刀頁面網頁應用程式與ASP.NET核心](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [教學課程：使用 ASP.NET Core 建立 Razor Pages web 應用程式](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)

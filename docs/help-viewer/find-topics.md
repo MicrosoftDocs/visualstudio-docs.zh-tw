@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4581d7ea0b40e2b6b519f0beafaee8744e0b46c1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284915"
 ---
 # <a name="how-to-search-for-topics"></a>如何：搜尋主題
 
 您可以使用全文檢索搜尋功能尋找包含的特定字詞的任何主題。 您也可以使用萬用字元運算式、邏輯運算子和進階的搜尋運算子來修改和自訂查詢。
 
-若要開啟 **[搜尋] 索引**標籤，請選擇 [說明**檢視器**] 視窗中的 [**搜尋] 索引**標籤，或者如果您是鍵盤使用者，請選擇**Ctrl** + **E**。
+若要開啟 **[搜尋] 索引**標籤，請選擇 [說明**檢視器**] 視窗中的 [**搜尋] 索引**標籤，或者，如果您是鍵盤使用者，請選擇**Ctrl** + **E**。
 
 ## <a name="to-perform-a-full-text-search"></a>執行全文檢索搜尋
 
@@ -58,7 +58,7 @@ ms.locfileid: "85284915"
 > - 不支援片語搜尋。 如果您在搜尋字串中指定多個單字，傳回的主題會包含您指定的所有文字，但不一定是您指定的精確對應片語。
 > - 使用邏輯運算子指定搜尋片語中文字之間的關聯性。 您可以包含邏輯運算子，例如 AND、OR、NOT 和 NEAR，以進一步精簡您的搜尋。 例如，如果您搜尋 "declaring NEAR union"，搜尋結果所包含的主題會包含 "declaring" 和 "union" 等字，且彼此之間相隔不超過幾個字。 如需詳細資訊，請參閱[搜尋運算式中的邏輯運算子](../help-viewer/logical-operators-search-expressions.md)。
 
-### <a name="filters"></a>篩選條件
+### <a name="filters"></a>篩選器
 
 您可以使用進階搜尋運算子，進一步限制搜尋結果。 說明包含三個類別，可用來篩選全文檢索搜尋的結果︰標題、程式碼和關鍵字。
 

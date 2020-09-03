@@ -1,5 +1,5 @@
 ---
-title: 中斷模式下的運算 :微軟文件
+title: 中斷模式中的運算式評估 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,31 +13,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bc09fc43bd9f0edea4f6dc32e5f37c387c045796
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738730"
 ---
-# <a name="expression-evaluation-in-break-mode"></a>中斷模式下的運算
-以下部分介紹調試器處於中斷模式且必須執行表達式計算時發生的過程。
+# <a name="expression-evaluation-in-break-mode"></a>中斷模式中的運算式評估
+下一節將描述偵錯工具處於中斷模式且必須進行運算式評估時所發生的程式。
 
-## <a name="expression-evaluation-process"></a>運算式評估程序
- 以下是計算運算式所涉及的基本步驟:
+## <a name="expression-evaluation-process"></a>運算式評估程式
+ 以下是評估運算式所牽涉到的基本步驟：
 
-1. 工作階段除錯管理員 (SDM) 呼叫[IDebugStackFrame2:::取得運算式上下文](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)以取得運算式上下文介面[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)。
+1. 會話 debug manager (SDM) 呼叫 [IDebugStackFrame2：： GetExpressionCoNtext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) 來取得運算式內容介面 [IDebugExpressionCoNtext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)。
 
-2. 然後,SDM 調用[IDebugExpressionContext2::ParseText,](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)該字串將被解析。
+2. SDM 接著會使用要剖析的字串來呼叫 [IDebugExpressionCoNtext2：:P arsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 。
 
-3. 如果 ParseText 未返回S_OK,則返回錯誤的原因。
+3. 如果 ParseText 未傳回 S_OK，則會傳回錯誤的原因。
 
-     -否則
+     相反
 
-     如果 ParseText 確實返回S_OK,則 SDM 可以調用[IDebugExpression2:::計算同步](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)或[IDebugExpression2::評估Async](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)從解析的運算式中獲取最終值。
+     如果 ParseText 傳回 S_OK，則 SDM 可呼叫 [IDebugExpression2：： EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 或 [IDebugExpression2：： EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) ，以從剖析的運算式取得最終值。
 
-    - 使用`IDebugExpression2::EvaluateSync`時,給定的回調介面將傳達評估的持續過程。 最終值在[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)介面中返回。
+    - 使用時 `IDebugExpression2::EvaluateSync` ，指定的回呼介面會傳達進行中的評估程式。 最後一個值會在 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 介面中傳回。
 
-    - 使用`IDebugExpression2::EvaluateAsync`時,給定的回調介面將傳達評估的持續過程。 評估完成後,評估 Async 將透過回覆送出[IDebugExpression 評估完成事件 2 介面](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)。 使用此事件介面,最終值將產生[GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)。
+    - 使用時 `IDebugExpression2::EvaluateAsync` ，指定的回呼介面會傳達進行中的評估程式。 評估完成後，EvaluateAsync 會透過回呼傳送 [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) 介面。 使用這個事件介面時，最終的值會以 [GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)結果。
 
 ## <a name="see-also"></a>另請參閱
-- [呼叫除錯器事件](../../extensibility/debugger/calling-debugger-events.md)
+- [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)

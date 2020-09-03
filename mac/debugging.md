@@ -8,25 +8,25 @@ ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.topic: overview
 ms.openlocfilehash: 09a761a8269fa40c3fab49a34b3e43a7f0ec63cd
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85939077"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>使用 Visual Studio for Mac 進行調試
 
-Visual Studio for Mac 具有支援 .Net Core、.NET Framework、Unity 和 Xamarin 應用程式的偵錯工具。
+Visual Studio for Mac 具有可支援 .Net Core、.NET Framework、Unity 和 Xamarin 應用程式的偵錯工具。
 
 Visual Studio for Mac 使用 [*Mono Soft Debugger*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/)，它實作到 Mono 執行階段之中，讓 Visual Studio for Mac 能跨所有平台進行 Managed 程式碼的偵錯。
 
 ## <a name="the-debugger"></a>偵錯工具
 
-Visual Studio for Mac 使用 Mono Soft Debugger 針對所有 Xamarin 應用程式進行 Managed (C# 或 F#) 程式碼的偵錯。 Mono 軟偵錯工具與一般的偵錯工具不同之處在于，它是內建于 Mono 執行時間的合作式偵錯工具;產生的程式碼和 Mono 執行時間會與 IDE 合作，以提供偵錯工具體驗。 Mono 執行階段會透過網路通訊協定公開偵錯功能，您可以在 [Mono 文件](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/)中深入了解。
+Visual Studio for Mac 使用 Mono Soft Debugger 針對所有 Xamarin 應用程式進行 Managed (C# 或 F#) 程式碼的偵錯。 Mono 軟偵錯工具與一般偵錯工具不同，因為它是內建于 Mono 執行時間的合作式偵錯工具。產生的程式碼和 Mono 執行時間會與 IDE 合作，以提供偵錯工具體驗。 Mono 執行階段會透過網路通訊協定公開偵錯功能，您可以在 [Mono 文件](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/)中深入了解。
 
 硬式偵錯工具，例如 [LLDB]( http://lldb.llvm.org/index.html) 或 [GDB]( https://www.gnu.org/software/gdb/)，會控制程式，而被偵錯的程式不必知情或合作，但在您需要偵錯原生 iOS 或 Android 程式碼，偵錯 Xamarin 應用程式時仍然十分有用。
 
-針對 .NET Core 和 ASP.NET Core 應用程式，Visual Studio for Mac 會使用 .NET Core 偵錯工具。 此偵錯工具也是一個合作的偵錯工具，可與 .NET 執行時間搭配使用。
+若是 .NET Core 和 ASP.NET Core 應用程式，Visual Studio for Mac 使用 .NET Core 偵錯工具。 此偵錯工具也是合作的偵錯工具，可搭配 .NET 執行時間使用。
 
 ## <a name="using-the-debugger"></a>使用偵錯工具
 
@@ -40,16 +40,16 @@ Visual Studio for Mac 使用 Mono Soft Debugger 針對所有 Xamarin 應用程�
 
 ![在邊界設定中斷點](media/debugging-image0.png)
 
-您可以前往 [**中斷點] 面板**，以查看程式碼中已設定的所有中斷點：
+您可以前往 [  **中斷點] 面板**，以查看程式碼中已設定的所有中斷點：
 
 ![中斷點的清單](media/debugging-image0a.png)
 
 ## <a name="start-debugging"></a>開始偵錯
 
-若要開始進行偵錯工具，請選取 [目標瀏覽器]、[裝置] 或 [模擬器/模擬器]：
+若要啟動偵錯工具，請選取目標瀏覽器、裝置或模擬器/模擬器：
 
-![Debug ](media/debugging-image_0.png)
- ![ 設定選取目標裝置](media/debugging-image1.png)
+![Debug configuration ](media/debugging-image_0.png)
+ ![ 選取目標裝置](media/debugging-image1.png)
 
 然後按 [播放]**** 按鈕，或 **Cmd + return** 部署您的應用程式。 當您到達中斷點時，程式碼反白顯示為黃色：
 
@@ -84,18 +84,18 @@ Visual Studio for Mac 使用 Mono Soft Debugger 針對所有 Xamarin 應用程�
 下面是四個按鈕：
 
 * **播放** - 這會開始執行程式碼，直到下一個中斷點。
-* 不**進入-這**會執行下一行程式碼。 如果下一行是函式呼叫，不進入函式會執行該函式，並在函式「之後」** 的下一行程式碼停止。
+* 不進入一**步**-這會執行下一行程式碼。 如果下一行是函式呼叫，不進入函式會執行該函式，並在函式「之後」** 的下一行程式碼停止。
 * **逐步執行** - 這也會執行下一行程式碼。 如果下一行是函式呼叫，逐步執行會停止在函式的第一行，讓您繼續一行一行地進行函式的偵錯。 如果下一行不是函式，它的行為與「不進入函式」相同。
-* **跳出**-這會回到呼叫目前函式的行。
+* **跳出** -這會回到呼叫目前函式的行。
 
-## <a name="change-which-statement-is-executed-next"></a>變更下一個執行的語句
+## <a name="change-which-statement-is-executed-next"></a>變更接下來要執行的語句
 
-當偵錯工具暫停時，邊界上的箭號會指出接下來所要執行的程式碼行。 您可以按一下該箭號，將其拖曳至不同的程式碼行來變更所要執行的陳述式。 您也可以在程式程式碼上按一下滑鼠右鍵，然後從內容功能表中選取 **[設定下一個語句]** ，來達到相同的目的。
+當偵錯工具暫停時，邊界上的箭號會指出接下來所要執行的程式碼行。 您可以按一下該箭號，將其拖曳至不同的程式碼行來變更所要執行的陳述式。 您也可以在程式程式碼上按一下滑鼠右鍵，然後從操作功能表選取 **[設定下一個語句]** ，來達到相同的目的。
 
 ![拖放箭號以設定下一個語句](media/debugger-drag-setnextstatement.gif)
 
 > [!CAUTION]
-> 變更目前的執行行會導致應用程式發生非預期的行為。 此外，也有一些條件無法變更下一個要執行的語句。 例如，將箭號從一個方法拖曳至另一個方法將無法使用。 在這些不支援的情況下，Visual Studio for Mac 將會顯示一個對話方塊，讓您知道無法變更目前的執行行。 
+> 變更目前的執行行可能會導致應用程式發生未預期的行為。 此外，也有一些條件是無法變更下一個要執行的語句。 例如，將箭號從某個方法拖曳到另一個方法將無法運作。 在這些不受支援的情況下，Visual Studio for Mac 將會顯示一個對話方塊，讓您知道不可能變更目前執行的行。 
 
 ## <a name="debugging-monos-class-libraries"></a>Mono 類別庫偵錯
 
@@ -103,7 +103,7 @@ Xamarin 產品隨附 Mono 類別庫的原始程式碼，您可以使用它從偵
 
 因為這項功能會在偵錯期間消耗較多的記憶體，所以它預設會關閉。
 
-若要啟用這項功能，請流覽至**Visual Studio for Mac > 喜好設定 > 偵錯工具**，並確定已選取 [**逐步執行外部程式碼**] 選項，如下**所**示：
+若要啟用這項功能，請流覽至  **Visual Studio for Mac > 喜好設定 > 偵錯工具** ，並確認已選取 [**逐步執行外部程式碼**] 選項，如下 **所**示：
 
 ![逐步執行外部程式碼選項](media/debugging-image8.png)
 

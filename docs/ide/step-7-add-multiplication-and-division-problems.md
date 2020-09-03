@@ -1,5 +1,5 @@
 ---
-title: 步驟 7：加入乘法和除法問題
+title: 步驟 7：新增乘法及除法問題
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 92a1744b68ad043dcee21dcb5995fbd1908bd81b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579786"
 ---
-# <a name="step-7-add-multiplication-and-division-problems"></a>步驟 7：加入乘法和除法問題
+# <a name="step-7-add-multiplication-and-division-problems"></a>步驟 7：新增乘法及除法問題
 
 在本教學課程的第七個部分中，您將加入乘法和除法問題，不過要先思考如何進行這項變更。 思考初始步驟，其中牽涉到儲存值。
 
@@ -46,7 +46,7 @@ ms.locfileid: "77579786"
      [!code-vb[VbExpressTutorial3Step7#17](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_3.vb)]
      [!code-csharp[VbExpressTutorial3Step7#17](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_3.cs)]
 
-     不能使用鍵盤輕鬆輸入乘法符號 （*） 和除法符號 （*），因此 C# 和 Visual Basic 接受乘法用星號 （*） 和除法斜線標記 （/）。
+     您無法輕鬆地輸入乘號 (×) 和除法符號 (÷) 使用鍵盤，因此 c # 和 Visual Basic 接受星號 ( * ) 用於乘法，並以斜線標示 (/) 。
 
 4. 變更計時器的 <xref:System.Windows.Forms.Timer.Tick> 事件處理常式的最後一部分，讓事件處理常式在時間結束時填入正確答案。
 
@@ -58,10 +58,10 @@ ms.locfileid: "77579786"
      受測者必須回答四個問題才能完成測驗，如下圖所示。
 
      ![包含四個問題的數學測驗](../ide/media/express_finishedquiz.png)<br/>
-***數學測驗****有四個問題*
+*有四個問題的****數學測驗***
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 要轉到下一個教程步驟，請參閱**[步驟 8：自訂測驗](../ide/step-8-customize-the-quiz.md)**。
+- 若要移至下一個教學課程步驟，請參閱 **[步驟8：自訂測驗](../ide/step-8-customize-the-quiz.md)**。
 
 - 若要回到上一個教學課程步驟，請參閱[步驟 6：新增減法問題](../ide/step-6-add-a-subtraction-problem.md)。

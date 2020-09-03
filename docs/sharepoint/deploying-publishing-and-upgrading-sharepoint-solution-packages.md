@@ -1,5 +1,5 @@
 ---
-title: 部署、發佈、&升级 SharePoint 解決方案包
+title: 部署、發佈、& 升級 SharePoint 方案套件
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,51 +17,51 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d8e55b01173e749395f60d189366a08907bdaccd
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81444966"
 ---
-# <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>部署、發佈和升級 SharePoint 解決方案套件
-  在 Visual Studio 中開發 SharePoint 解決方案後,可以將其包 (.wsp) 檔部署到本地 SharePoint 伺服器,也可以將其發布到遠端或本地 SharePoint 伺服器。 如果部署這些檔,則可以自定義包檔的部署方式。
+# <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>部署、發行和升級 SharePoint 方案套件
+  在 Visual Studio 開發 SharePoint 方案之後，您可以將其封裝 ( .wsp) 檔部署到本機 SharePoint 伺服器，或將其發行至遠端或本機 SharePoint 伺服器。 如果您部署檔案，您可以自訂部署封裝檔案 ( .wsp) 的方式。
 
 > [!NOTE]
-> 目前,只能將沙盒解決方案發佈到遠端 SharePoint 伺服器。 有關詳細資訊,請參閱[沙箱解決方案注意事項](../sharepoint/sandboxed-solution-considerations.md)。
+> 目前，只有沙箱化的方案可以發行至遠端 SharePoint 伺服器。 如需詳細資訊，請參閱 [沙箱化解決方案考慮](../sharepoint/sandboxed-solution-considerations.md)。
 
-## <a name="deploy-publish-and-upgrade"></a>部署、發佈和升級
- *部署*是指將從 Visual Studio 中的 SharePoint 專案生成的 SharePoint 解決方案檔複製到本地主機。 在已部署的解決方案中,可以配置部署步驟,例如回收 Internet 資訊服務 (IIS) 池、部署後啟動解決方案等。 要進行部署,請使用 **「生成**」功能表上的 **「部署」** 命令。 有關詳細資訊,請參閱[如何:編輯 SharePoint 部署配置](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)以及如何[:將 SharePoint 解決方案部署到本地 SharePoint 站點並將其發表到](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)。
+## <a name="deploy-publish-and-upgrade"></a>部署、發行和升級
+ *部署* 是指將從 sharepoint 專案建立的 sharepoint 方案檔複製到本機主控制項的 Visual Studio。 在已部署的解決方案中，您可以設定部署步驟，例如回收 Internet Information Services (IIS) 集區、在部署後啟用方案等等。 若要部署，請使用 [**組建**] 功能表上的 [**部署**] 命令。 如需詳細資訊，請參閱 [如何：編輯 sharepoint 部署](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) 設定和 [如何：將 sharepoint 方案部署和發行至本機 sharepoint 網站](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)。
 
- *發佈*是指將沙箱的 SharePoint 解決方案檔上載到遠端 SharePoint 網站;即位於另一個系統上的網站。 您還可以將 SharePoint 沙箱解決方案檔發佈到本地 SharePoint 站點,但無論發佈到網站是本地網站還是遠端網站,您都無法配置其部署步驟。
+ *發行* 指的是將沙箱化 SharePoint 方案檔上傳至遠端 SharePoint 網站;亦即，位於另一個系統上的網站。 您也可以將 SharePoint 沙箱化方案檔發行至本機 SharePoint 網站，但不論網站是發佈到本機或遠端，您都無法設定其部署步驟。
 
- *升級*是指更新現有的遠端或本地發佈的 SharePoint 解決方案。 對 Visual Studio 中的 SharePoint 解決方案進行任何更改後,可以更改解決方案的包檔名,重新發表解決方案,然後在成功重新發表解決方案後升級解決方案。 如果重新發佈本地發佈的解決方案,則可以覆蓋現有解決方案檔。
+ *升級* 指的是更新現有的遠端或本機發佈的 SharePoint 方案。 在 Visual Studio 中對 SharePoint 方案進行任何變更之後，您可以變更方案的封裝檔案名、重新發行方案，然後在成功將後升級解決方案。 如果您重新發佈本機發佈的方案，您可以覆寫現有的方案檔。
 
 ## <a name="deploy-packages"></a>部署套件
- 您可以將包檔部署到開發電腦上的 SharePoint 伺服器以進行測試和調試。 您還可以透過「**發布到檔案系統」** 對話框中的「發布到檔案系統」選項按鈕建立可以在另一台電腦上安裝的套件檔**Publish**。 將建立包並將其複製到指定的本地檔案路徑。 要將 SharePoint 解決方案部署到本地伺服器,請使用 **「生成**」功能表上的 **「部署」** 命令。 有關詳細資訊,請參閱[如何:將 SharePoint 解決方案部署到本地 SharePoint 網站並將其發表到](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)。
+ 您可以將封裝檔案部署到開發電腦上的 SharePoint 伺服器，以進行測試和偵錯工具。 您也可以在 [**發行**] 對話方塊中選擇 [**發行至檔案系統**] 選項按鈕，以建立您可以在另一部電腦上安裝的封裝檔案。 封裝會建立並複製到指定的本機檔案路徑。 若要將 SharePoint 方案部署到本機伺服器，請使用 [**組建**] 功能表上的 [**部署**] 命令。 如需詳細資訊，請參閱 [如何：將 SharePoint 方案部署和發行至本機 sharepoint 網站](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)。
 
- 要瞭解如何部署清單定義、新增事件接收器以及使用功能設計器和套件設計器,請參閱[演練:部署專案工作列表定義](../sharepoint/walkthrough-deploying-a-project-task-list-definition.md)。
+ 若要瞭解如何部署清單定義、加入事件接收器，以及使用 [功能設計工具] 和 [封裝設計工具]，請參閱 [逐步解說：部署專案工作清單定義](../sharepoint/walkthrough-deploying-a-project-task-list-definition.md)。
 
-## <a name="customize-the-deployment-process"></a>自訂部署程序
- 下表顯示了在調試和部署 SharePoint 解決方案時可以使用的兩種部署配置。
+## <a name="customize-the-deployment-process"></a>自訂部署程式
+ 下表顯示當您在調試和部署 SharePoint 方案時，可使用的兩個部署設定。
 
 |部署設定|描述|
 |------------------------------|-----------------|
-|預設|默認部署配置。 執行以下部署步驟:<br /><br /> 1. 運行部署前命令。<br />2. 回收 IIS 應用程式池。<br />3. 縮迴溶液。<br />4. 添加解決方案。<br />5. 啟動功能。<br />6. 運行部署後命令。<br /><br /> 卸載包時,將執行以下撤回步驟。<br /><br /> 1. 回收 IIS 應用程式池。<br />2. 縮迴溶液。|
-|沒有啟動|此部署配置運行的步驟與預設配置相同,但跳過啟動步驟。|
+|預設|預設部署設定。 執行的部署步驟如下：<br /><br /> 1. 執行預先部署命令。<br />2. 回收 IIS 應用程式集區。<br />3. 撤回方案。<br />4. 新增方案。<br />5. 啟動功能。<br />6. 執行部署後命令。<br /><br /> 卸載套件時，會執行下列撤銷步驟。<br /><br /> 1. 回收 IIS 應用程式集區。<br />2. 撤回方案。|
+|沒有啟用|此部署設定會執行與預設設定相同的步驟，但會略過啟用步驟。|
 
- 您可以創建自己的部署配置以完成單步驟或更改部署過程中步驟的順序。 有關詳細資訊,請參閱[如何:編輯 SharePoint 部署配置](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)。
+ 您可以建立自己的部署設定來完成單一步驟，或在部署程式中變更步驟的順序。 如需詳細資訊，請參閱 [如何：編輯 SharePoint 部署](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)設定。
 
- 您還可以添加要在部署之前和之後運行的命令。 有關詳細資訊,請參閱[如何:設置 SharePoint 部署命令](../sharepoint/how-to-set-sharepoint-deployment-commands.md)。
+ 您也可以在部署前後新增要執行的命令。 如需詳細資訊，請參閱 [如何：設定 SharePoint 部署命令](../sharepoint/how-to-set-sharepoint-deployment-commands.md)。
 
-## <a name="publish-packages-to-a-remote-or-local-server"></a>將套件發布到遠端或本地端伺服器
- 要將沙箱的 SharePoint 解決方案發布到遠端伺服器,請選擇選單列上的 **「產生**」、「**發布**」,然後在 **「發布」** 對話框中選擇「**發布到 SharePoint 網站**」`https://someremoteserver.sharepoint.microsoftonline.com`選項按鈕,提供遠端伺服器的 URL,如 。
+## <a name="publish-packages-to-a-remote-or-local-server"></a>將封裝發行至遠端或本機伺服器
+ 若要將沙箱化 SharePoint 方案發行至遠端伺服器，請在功能表列上選擇 [ **組建**]、[ **發行**]，然後在 [ **發行** ] 對話方塊中，選擇 [ **發行至 SharePoint 網站** ] 選項按鈕，提供遠端伺服器的 URL，例如 `https://someremoteserver.sharepoint.microsoftonline.com` 。
 
- 要將 SharePoint 解決方案發布到本地伺服器,請在 **「發布」** 對話方塊中選擇「**發布到檔案系統**」選項按鈕,提供本地系統路徑。
+ 若要將 SharePoint 方案發行到本機伺服器，請在 [ **發行** ] 對話方塊中，選擇 [ **發行至檔案系統** ] 選項按鈕，提供本機系統路徑。
 
- 解決方案成功發佈到 SharePoint 後,該解決方案將顯示在**解決方案庫中**,您可以在其中啟動它。 有關詳細資訊,請參閱[如何:在遠端伺服器上部署、發佈和升級 SharePoint 解決方案](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)。
+ 方案成功發佈至 SharePoint 之後，方案會顯示在 **方案庫** 中，您可以在其中啟用此方案。 如需詳細資訊，請參閱 [如何：在遠端伺服器上部署、發行和升級 SharePoint 方案](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)。
 
-### <a name="upgrade-published-packages"></a>升級已發布的套件
- 如果在 Visual Studio 中對 SharePoint 專案進行任何更改,則必須升級已發布的包以包括更改。 要成功升級,包必須具有唯一名稱。 如果在 SharePoint 網站上找到具有相同名稱的套件(在更新現有應用程式時可能發生)錯誤會提醒您檔名衝突,並允許您重新命名套件。 重新發佈后,新包將顯示在 SharePoint 網站上,可以升級。 升級的包使用舊包中的數據更新解決方案,然後在 SharePoint 中啟動解決方案。 有關詳細資訊,請參閱[如何:在遠端伺服器上部署、發佈和升級 SharePoint 解決方案](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)。
+### <a name="upgrade-published-packages"></a>升級已發行的封裝
+ 如果您在發行之後對 Visual Studio 中的 SharePoint 專案進行任何變更，則必須升級已發行的封裝以包含變更。 若要成功升級，套件必須有唯一的名稱。 如果在 SharePoint 網站上找到具有相同名稱的封裝（當您更新現有的應用程式時可能會發生）-錯誤會向您回報檔案名衝突，並可讓您重新命名封裝。 重新發行之後，新的套件會出現在 SharePoint 網站上，並可進行升級。 升級的封裝會使用舊版封裝中的資料來更新方案，然後在 SharePoint 中啟用方案。 如需詳細資訊，請參閱 [如何：在遠端伺服器上部署、發行和升級 SharePoint 方案](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)。
 
 ## <a name="see-also"></a>另請參閱
-- [包裝並部署 SharePoint 解決方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

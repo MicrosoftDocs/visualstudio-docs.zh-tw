@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 736c43a83a956c02b760b4909a427a82c6fa9e4c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287827"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>如何：建立 Web 效能測試結果檢視器的增益集
@@ -24,7 +24,7 @@ ms.locfileid: "85287827"
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
-此外，您還需要新增 LoadTestPackage DLL 的參考，這個 DLL 位於 *% ProgramFiles （x86）% \ Microsoft Visual Studio \\ \<version> \Enterprise\Common7\IDE\PrivateAssemblies*資料夾中。
+此外，您還需要加入 LoadTestPackage DLL 的參考，這個 DLL 位於 *% ProgramFiles (x86) % \ Microsoft Visual Studio \\ \<version> \Enterprise\Common7\IDE\PrivateAssemblies*資料夾。
 
 若要擴充 [Web 效能測試結果檢視器]**** 的 UI，您必須建立 Visual Studio 增益集和使用者控制項。 下列程序將說明如何建立增益集、使用者控制項，以及如何實作必要的類別，以便擴充 [Web 效能測試結果檢視器]**** 的 UI。
 
@@ -37,7 +37,7 @@ ms.locfileid: "85287827"
 建立或開啟您可以用來實驗的非生產環境方案，其中包含 ASP.NET Web 應用程式以及 Web 效能和負載測試專案 (含有 ASP.NET Web 應用程式的一個或多個效能測試)。
 
 > [!NOTE]
-> 您可以遵循[如何：建立 web 服務測試](../test/how-to-create-a-web-service-test.md)和[產生及執行自動程式化 web 效能測試](../test/generate-and-run-a-coded-web-performance-test.md)中的程式，建立包含 web 效能測試的 ASP.NET web 應用程式和 web 效能和負載測試專案。
+> 您可以依照 [如何：建立 web 服務測試](../test/how-to-create-a-web-service-test.md) 並 [產生和執行自動程式化 web 效能測試](../test/generate-and-run-a-coded-web-performance-test.md)中的程式，建立包含 web 效能測試的 ASP.NET web 應用程式和 web 效能和負載測試專案。
 
 ## <a name="create-a-visual-studio-add-in"></a>建立 Visual Studio 增益集
 
@@ -49,7 +49,7 @@ ms.locfileid: "85287827"
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>若要使用增益集精靈建立增益集
 
-1. 在**方案總管**中，以滑鼠右鍵按一下方案，選擇 [**加入**]，然後選取 [**新增專案**]。
+1. 在 **方案總管**中，以滑鼠右鍵按一下方案，選擇 [ **加入**]，然後選取 [ **新增專案**]。
 
 2. 建立新的 **Visual Studio 增益集**專案。
 
@@ -109,7 +109,7 @@ ms.locfileid: "85287827"
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>若要建立要用於 Web 測試結果檢視器的控制項
 
-1. 在**方案總管**中，以滑鼠右鍵按一下方案，選擇 [**加入**]，然後選取 [**新增專案**]。
+1. 在 **方案總管**中，以滑鼠右鍵按一下方案，選擇 [ **加入**]，然後選取 [ **新增專案**]。
 
 2. 建立新的 **Windows Forms 控制項程式庫**專案。
 
@@ -129,7 +129,7 @@ ms.locfileid: "85287827"
 
     5. 清除 [標題文字]**** 中的文字 "Column1"。
 
-    6. 選擇 [**新增**]。
+    6. 選擇 [ **新增**]。
 
     7. 選擇 [關閉]****。
 
@@ -256,7 +256,7 @@ ms.locfileid: "85287827"
 
 1. 在 [方案總管]**** 中，以滑鼠右鍵按一下 WebPerfTestResultsViewerControl 專案節點，然後選取 [屬性]****。
 
-2. 選取 [應用程式]**** 索引標籤，然後選擇 [目標 Framework]**** 下拉式清單並選取 [.NET Framework 4]**** (或更新版本)。 關閉 [**屬性**] 視窗。
+2. 選取 [應用程式]**** 索引標籤，然後選擇 [目標 Framework]**** 下拉式清單並選取 [.NET Framework 4]**** (或更新版本)。 關閉 [ **屬性** ] 視窗。
 
    這是支援擴充 [Web 效能測試結果檢視器]**** 所需之 DLL 參考的必要步驟。
 

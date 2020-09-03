@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6adbdedf8a71319877c5527e00e0e7c5e73fa6b1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288776"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>在負載測試情節中設定測試反覆項目
@@ -30,9 +30,9 @@ ms.locfileid: "85288776"
 [測試反覆項目數目上限]**** 屬性會控制要針對情節執行的測試反覆項目數目上限。 如同負載測試回合設定中的 [測試反覆項目]**** 屬性，這是用於所有代理程式上所有使用者的最大數目，而不是只針對每一個使用者設定。
 
 > [!NOTE]
-> 如需負載測試情節屬性及其描述的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。
+> 如需負載測試情節屬性及其描述的完整清單，請參閱 [負載測試情節屬性](../test/load-test-scenario-properties.md)。
 
-對於循序測試混合，一個反覆項目就是經過混合中所有測試的項目。 對於所有其他測試混合，每一個測試執行都會計算為一個反覆項目。 如需詳細資訊，請參閱[關於混合控制項](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)。
+對於循序測試混合，一個反覆項目就是經過混合中所有測試的項目。 對於所有其他測試混合，每一個測試執行都會計算為一個反覆項目。 如需詳細資訊，請參閱 [關於混合控制項](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)。
 
 如果負載測試為持續期間負載測試，而持續期間會在反覆項目計數完成之前到期，則仍會停止測試。 如果測試為反覆項目型，而測試反覆項目在情節反覆項目之前就符合，則會停止測試。 您可以在與負載測試中的回合設定關聯的 [屬性]**** 視窗中，使用 [執行持續期間]**** 屬性來設定持續期間。
 
@@ -71,7 +71,7 @@ ms.locfileid: "85288776"
 [測試反覆項目間的考慮時間]**** 屬性是用來指定啟動測試反覆項目之前的等候秒數。
 
 > [!NOTE]
-> 如需負載測試情節屬性及其描述的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。
+> 如需負載測試情節屬性及其描述的完整清單，請參閱 [負載測試情節屬性](../test/load-test-scenario-properties.md)。
 
 ### <a name="to-specify-the-think-time-between-test-iterations"></a>指定測試反覆項目間的考慮時間
 

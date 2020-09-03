@@ -1,5 +1,5 @@
 ---
-title: BP_CONDITION |微軟文件
+title: BP_CONDITION |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 88ed6b6468c5765c8f987c1f15f3e4e8ade9c8c6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738099"
 ---
 # <a name="bp_condition"></a>BP_CONDITION
-描述斷點觸發的條件。
+描述引發中斷點的條件。
 
 ## <a name="syntax"></a>語法
 
@@ -49,31 +49,31 @@ public struct BP_CONDITION {
 
 ## <a name="members"></a>成員
 `pThread`\
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件,表示包含斷點的應用程式的活動線程。
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，代表包含中斷點之應用程式的使用中線程。
 
 `styleCondition`\
-描述此斷點條件樣式[的BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)枚舉中的值。
+[BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)列舉中的值，描述此中斷點條件的樣式。
 
 `bstrContext`\
-斷點的位置。
+中斷點的位置。
 
 `bstrCondition`\
-斷點的觸發條件。
+中斷點的引發條件。
 
 `nRadix`\
-用於評估任何數值資訊的 Radix。
+要用於評估任何數值資訊的基數。
 
 ## <a name="remarks"></a>備註
-此結構是[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)和[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構的成員。
+此結構是 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 和 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 結構的成員。
 
-此結構也作為參數傳遞給[Set 條件和](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)Set[條件](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)方法。
+此結構也會以參數形式傳遞至 [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) 和 [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) 方法。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

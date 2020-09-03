@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2b2cefc56d299c9ec917aea555aec1cd9ca53887
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288464"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>如何：在負載測試結果的圖形上加入和刪除計數器
@@ -39,7 +39,7 @@ ms.locfileid: "85288464"
 |8 - 24 小時|30 秒|
 |> 24 小時|60 秒|
 
-**包含用來收集百分位數資料之計時詳細資料的考慮**
+**包含收集百分位數資料的計時詳細資料的考慮**
 
 在 [負載測試編輯器] 的回合設定中，有一個名為 [計時詳細資料儲存區]**** 的屬性。 如果啟用 [計時詳細資料儲存區]**** 屬性，則在負載測試期間每個個別測試、異動和頁面的執行時間會儲存在負載測試結果儲存機制中。 這可以在 [負載測試分析器]**** 的 [測試]、[異動] 和 [頁面] 索引標籤中顯示第 90 和第 95 個百分位數資料。
 
@@ -47,7 +47,7 @@ ms.locfileid: "85288464"
 
 負載測試結果儲存機制用來儲存計時詳細資料所需的空間可能相當大，尤其是長時間執行的負載測試。 其次，在負載測試結束時，用來將這項資料儲存至負載測試結果儲存機制的時間會比較長，因為在負載測試執行完成之後，這項資料會儲存在負載測試代理程式上。 當負載測試完成時，資料就會儲存至儲存機制中。 預設會啟用 [計時詳細資料儲存區]**** 屬性。 如果您的測試環境發生這種問題，您可能會想要將 [計時詳細資料儲存區]**** 設定為 [無]****。
 
-如需詳細資訊，請參閱[如何：指定計時詳細資料儲存區屬性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
+如需詳細資訊，請參閱 [如何：指定計時詳細資料儲存區屬性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>若要在負載測試圖形上顯示特定效能計數器
 

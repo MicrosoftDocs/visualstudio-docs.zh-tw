@@ -12,16 +12,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ca5ced87596b5e40ae70e3faa06e58493da3d8ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203985"
 ---
 # <a name="icon-element"></a>Icon 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Guid 屬性的圖示標記會定義點陣圖的 guid。  Id 屬性選取點陣圖區中的位置。 這是選擇性的項目。  如果省略此元素的值**guidOfficeIcon:msotcidNoIcon**會隱含。  
+Icon 標記的 guid 屬性是已定義點陣圖的 guid。  Id 屬性會選取點陣圖條紋中的位置。 這是選擇性的項目。  如果省略此元素，則會隱含 **guidOfficeIcon： msotcidNoIcon** 的值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,14 +30,14 @@ Guid 屬性的圖示標記會定義點陣圖的 guid。  Id 屬性選取點陣�
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|guid|必要項。 定義點陣圖的 guid。|  
-|id|必要項。 選取的位置中的點陣圖區。|  
+|guid|必要。 已定義點陣圖的 guid。|  
+|id|必要。 選取點陣圖條紋中的位置。|  
   
 ### <a name="child-elements"></a>子元素  
   

@@ -9,19 +9,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f75114683a4f456d0514af20c1c201c373bd4b0
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287999"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>如何：建立錄製器外掛程式
 
-<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> 讓您修改錄製的 Web 效能測試。 修改會在您選擇 [ **Web 效能測試錄製**器] 工具列中的 [**停止**] 之後，但在 Web 效能測試編輯器中儲存和呈現測試之前發生。
+<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> 讓您修改錄製的 Web 效能測試。 修改會在您選擇**Web 效能測試錄製**器工具列中的 [**停止**] 之後，但在 Web 效能測試編輯器中儲存及呈現測試之前發生。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-錄製器外掛程式可讓您執行自己的自訂動態參數相互關聯。 使用內建的相互關聯功能，web 效能測試會在完成時偵測 web 錄製中的動態參數，或者當您使用 [ **Web 效能測試編輯器**] 工具列上的 [將**動態參數升至 web 測試參數**]。 不過，內建偵測功能不一定會找到所有動態參數。 例如，它找不到通常在 5 到 30 分鐘之內就會變更值的工作階段 ID。 因此，您必須手動執行相互關聯程序。
+錄製器外掛程式可讓您執行自己的自訂動態參數相互關聯。 利用內建的相互關聯功能，web 效能測試會在完成時偵測 web 錄製中的動態參數，或是當您在**Web 效能測試編輯器**工具列上使用 [將**動態參數升至 web 測試參數**] 時偵測動態參數。 不過，內建偵測功能不一定會找到所有動態參數。 例如，它找不到通常在 5 到 30 分鐘之內就會變更值的工作階段 ID。 因此，您必須手動執行相互關聯程序。
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> 讓您撰寫您自己的自訂外掛程式程式碼。 這個外掛程式會在 [Web 效能測試編輯器] 儲存及呈現 Web 效能測試之前，以許多方式執行相互關聯或修改 Web 效能測試。 因此，如果您判斷特定動態變數必須針對許多錄製進行相互關聯，可以自動化此程序。
 
@@ -37,18 +37,18 @@ ms.locfileid: "85287999"
 
 2. 將新的**類別庫**專案新增至方案。
 
-3. 在**方案總管**的 [新增類別庫專案] 資料夾中，以滑鼠右鍵按一下 [**參考**] 資料夾，然後選取 [**加入參考**]。
+3. 在 **方案總管**的 [新增類別庫專案] 資料夾中，以滑鼠右鍵按一下 [ **參考** ] 資料夾，然後選取 [ **加入參考**]。
 
     > [!TIP]
     > 新類別庫專案資料夾的範例是 **RecorderPlugins**。
 
      [新增參考]**** 對話方塊隨即顯示。
 
-4. 選取 [.NET]**** 索引標籤。
+4. 選取 [.NET] 索引標籤。
 
 5. 向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**，然後選擇 [確定]****。
 
-     **Microsoft.visualstudio.qualitytools.webtestframework**會新增至**方案總管**的 [**參考**] 資料夾中。
+     **VisualStudio**會加入**方案總管**的 [**參考**] 資料夾中。
 
 6. 撰寫錄製器外掛程式的程式碼。 首先，建立衍生自 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> 的新公用類別。
 
@@ -71,7 +71,7 @@ ms.locfileid: "85287999"
 
 8. 依據您要錄製器外掛程式在 Web 錄製發生之後執行的動作，加入其他程式碼。 例如，您可以加入程式碼以處理自訂相互關聯，如下列範例所示。 此外，也可以建立錄製器外掛程式，以用於將註解轉換為異動，或將驗證規則加入至 Web 效能測試等作業。
 
-9. 在 [**建立**] 功能表上，選擇 [**組建 \<class library project name> **]。
+9. 在 [**組建**] 功能表上，選擇 [**建立 \<class library project name> **]。
 
 接下來，請部署錄製器外掛程式，以便向 Visual Studio 註冊。
 
@@ -99,7 +99,7 @@ ms.locfileid: "85287999"
     > [!WARNING]
     > 當您執行使用外掛程式的 Web 效能測試或負載測試時，可能會收到如下錯誤：
     >
-    > **要求失敗：事件中的例外狀況 \<plug-in> ：無法載入檔案或元件 ' \<"Plug-in name".dll file> ，版本 = \<n.n.n.n> ，文化特性 = 中性，PublicKeyToken = null ' 或其相依性的其中之一。系統找不到指定的檔案。**
+    > **要求失敗：事件中 \<plug-in> 發生例外狀況：無法載入檔案或元件 ' \<"Plug-in name".dll file> ，版本 = \<n.n.n.n> ，文化特性 = 中性，PublicKeyToken = null ' 或其相依性的其中之一。系統找不到指定的檔案。**
     >
     > 如果您對任何外掛程式進行程式碼變更並建立新的 DLL 版本 **(Version=0.0.0.0)**，但是外掛程式仍然參考原始的外掛程式版本，就會導致此錯誤發生。 若要更正此問題，請依照下列步驟執行：
     >

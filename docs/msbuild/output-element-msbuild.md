@@ -19,17 +19,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633027"
 ---
 # <a name="output-element-msbuild"></a>Output 元素 (MSBuild)
 
 在項目或屬性中儲存工作輸出值。
 
- \<Project> \<Target> \<Task> \<Output>
+ \<Project> \<Target>
+ \<Task>
+ \<Output>
 
 ## <a name="syntax"></a>語法
 
@@ -45,11 +47,11 @@ ms.locfileid: "77633027"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|描述|
+|屬性|說明|
 |---------------|-----------------|
 |`TaskParameter`|必要屬性。<br /><br /> 工作的輸出參數名稱。|
-|`PropertyName`|需要 `PropertyName` 或 `ItemName` 屬性。<br /><br /> 接收工作輸出參數值的屬性。 然後您的專案即可用 $(\<PropertyName>) 語法參考該屬性。 此屬性名稱可以是新的屬性名稱，或是已經在專案中定義的名稱。<br /><br /> 如果同時也使用 `ItemName`，就不能使用這個屬性。|
-|`ItemName`|需要 `PropertyName` 或 `ItemName` 屬性。<br /><br /> 接收工作輸出參數值的項目。 然後您的專案即可用 @(\<ItemName>) 語法參考該項目。 項目名稱可以是新的項目名稱，或是已經在專案中定義的名稱。 當項目名稱是現有的項目時，輸出參數值會新增至現有的項目中。 <br /><br /> 如果同時也使用 `PropertyName`，就不能使用這個屬性。|
+|`PropertyName`|需要 `PropertyName` 或 `ItemName` 屬性。<br /><br /> 接收工作輸出參數值的屬性。 然後，您的專案就可以使用 $ () 語法來參考該屬性 \<PropertyName> 。 此屬性名稱可以是新的屬性名稱，或是已經在專案中定義的名稱。<br /><br /> 如果同時也使用 `ItemName`，就不能使用這個屬性。|
+|`ItemName`|需要 `PropertyName` 或 `ItemName` 屬性。<br /><br /> 接收工作輸出參數值的項目。 然後，您的專案就可以使用 @ () 語法來參考此專案 \<ItemName> 。 項目名稱可以是新的項目名稱，或是已經在專案中定義的名稱。 當項目名稱是現有的項目時，輸出參數值會新增至現有的項目中。 <br /><br /> 如果同時也使用 `PropertyName`，就不能使用這個屬性。|
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
 
 ### <a name="child-elements"></a>子元素
@@ -58,9 +60,9 @@ ms.locfileid: "77633027"
 
 ### <a name="parent-elements"></a>父元素
 
-| 元素 | 描述 |
+| 項目 | 描述 |
 | - | - |
-| [任務](../msbuild/task-element-msbuild.md) | 創建並執行 MSBuild 任務的實例。 |
+| [Task](../msbuild/task-element-msbuild.md) | 建立並執行 MSBuild 工作的實例。 |
 
 ## <a name="example"></a>範例
 
@@ -85,5 +87,5 @@ ms.locfileid: "77633027"
 
 ## <a name="see-also"></a>另請參閱
 
-- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)
+- [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

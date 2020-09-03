@@ -1,5 +1,5 @@
 ---
-title: 教程：開始使用視覺化基礎知識
+title: 教學課程：開始使用 Visual Basic
 description: 逐步了解如何在 Visual Studio 中建立 Visual Basic 主控台應用程式。
 ms.custom: seodec18, get-started
 ms.date: 09/11/2019
@@ -15,15 +15,15 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579943"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教學課程：Visual Studio 中的 Visual Basic 使用者入門
 
-在 Visual Basic （VB） 本教程中，您將使用 Visual Studio 創建和運行幾個不同的主控台應用，並探索[Visual Studio 整合式開發環境 （IDE）](visual-studio-ide.md)的某些功能。
+在本教學課程中 Visual Basic (VB) ，您將使用 Visual Studio 來建立和執行一些不同的主控台應用程式，並探索 Visual Studio [整合式開發環境 (IDE) ](visual-studio-ide.md) 的一些功能。
 
 ::: moniker range="vs-2017"
 
@@ -47,7 +47,7 @@ ms.locfileid: "77579943"
 
 2. 從頂端功能表列中，選擇 [檔案]** [新增]** > ** [專案]** > ****。
 
-3. 在 [新增專案]**** 對話方塊的左窗格中，展開 [Visual Basic]****，然後選擇 [.NET Core]****。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]****。 然後命名專案 *"你的名字*"。
+3. 在 [新增專案]**** 對話方塊的左窗格中，展開 [Visual Basic]****，然後選擇 [.NET Core]****。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]****。 然後將專案命名為 *>whatisyourname*。
 
    ![Visual Studio IDE 的 [新增專案] 對話方塊中的主控台應用程式 (.NET Core) 專案範本](media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
@@ -80,7 +80,7 @@ ms.locfileid: "77579943"
 
 1. 開啟 Visual Studio 2019。
 
-1. 在啟動視窗中，選擇 **"創建新專案**"。
+1. 在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
    ![檢視 [建立新專案] 視窗](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
@@ -101,7 +101,7 @@ ms.locfileid: "77579943"
    >
    > 接下來，選擇 Visual Studio 安裝程式中的 [修改]**** 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續]**** 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
 
-1. 在 [設定您的新專案]**** 視窗的 [專案名稱]**** 方塊中鍵入或輸入 *WhatIsYourName*。 然後，選擇 **"創建**"。
+1. 在 [設定您的新專案]**** 視窗的 [專案名稱]**** 方塊中鍵入或輸入 *WhatIsYourName*。 然後，選擇 [ **建立**]。
 
    ![在 [設定您的新專案] 視窗中，以 'WhatIsYourName' 命名您的專案](./media/vs-2019/vb-name-your-project-whatname.png)
 
@@ -111,7 +111,7 @@ ms.locfileid: "77579943"
 
 ## <a name="create-a-what-is-your-name-application"></a>建立 "What Is Your Name" 應用程式
 
-讓我們建立應用程式，提示您輸入您的名稱，然後顯示它與日期和時間。 方法：
+讓我們建立應用程式，提示您輸入您的名稱，然後顯示它與日期和時間。 方法如下：
 
  ::: moniker range="vs-2017"
 
@@ -132,7 +132,7 @@ ms.locfileid: "77579943"
 
    ![程式碼視窗顯示 What Is Your Name 程式碼](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
-1. 使用綠色 **"開始"** 按鈕，或按**F5**生成並運行第一個應用。
+1. 使用綠色的 [ **開始** ] 按鈕，或按 **F5** 以建立並執行您的第一個應用程式。
 
 1. 主控台視窗開啟時，請輸入您的名稱。 主控台視窗應該類似下列螢幕擷取畫面：
 
@@ -159,7 +159,7 @@ ms.locfileid: "77579943"
 
    ![程式碼視窗顯示 What Is Your Name 程式碼](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
-1. 使用綠色 **"開始"** 按鈕，或按**F5**生成並運行第一個應用。
+1. 使用綠色的 [ **開始** ] 按鈕，或按 **F5** 以建立並執行您的第一個應用程式。
 
 1. 主控台視窗開啟時，請輸入您的名稱。 主控台視窗應該類似下列螢幕擷取畫面：
 
@@ -173,7 +173,7 @@ ms.locfileid: "77579943"
 
 ::: moniker range="vs-2017"
 
-1. 打開 Visual Studio 2017，然後從頂部功能表列，選擇**檔**>**新專案**>**Project**。
+1. 開啟 Visual Studio 2017]，然後從頂端功能表列 **中選擇 [** 檔案 > **新增** > **專案**]。
 
 1. 在 [新增專案]**** 對話方塊的左窗格中，展開 [Visual Basic]****，然後選擇 [.NET Core]****。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]****。 然後將檔案命名為 *CalculateThis*。
 
@@ -206,13 +206,13 @@ ms.locfileid: "77579943"
 
 ::: moniker range="vs-2019"
 
-1. 在啟動視窗中，選擇 **"創建新專案**"。 
+1. 在 [開始] 視窗中，選擇 [ **建立新專案**]。 
 
 1. 在 [建立新專案]**** 視窗的搜尋方塊中輸入或鍵入 ASP.NET**。 接下來，從語言清單中選擇 **Visual Basic**，然後從平台清單中選擇 **Windows**。 
 
 1. 在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)]**** 範本，然後選擇 [下一步]****。
 
-   然後，在 **"配置新專案**"視窗中，在 **"專案名稱**"框中鍵入或輸入 *"計算"。* 接下來，選擇 **"創建**"。
+   然後，在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中輸入或輸入*CalculateThis* 。 接下來，選擇 [ **建立**]。
 
 1. 在 `Module Program` 行與 `End Module` 行之間輸入下列程式碼：
 

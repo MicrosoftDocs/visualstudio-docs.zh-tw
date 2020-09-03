@@ -6,17 +6,17 @@ ms.author: dominicn
 ms.date: 06/17/2019
 ms.topic: how-to
 ms.openlocfilehash: 5f21d55568328a9aeb9b7982e5978500f7ef715b
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85939058"
 ---
 # <a name="get-started-with-docker-in-visual-studio-for-mac"></a>開始使用 Visual Studio for Mac 中的 Docker
 
 使用 Visual Studio for Mac，您可以輕鬆地建置、進行偵錯，以及執行容器化的 ASP.NET Core 應用程式並將它們發行至 Azure。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
 * [Visual Studio for Mac 2019](https://visualstudio.microsoft.com/vs/mac)
@@ -28,10 +28,10 @@ ms.locfileid: "85939058"
 ## <a name="creating-an-aspnet-core-web-application-and-adding-docker-support"></a>建立 ASP.NET Core Web 應用程式並新增 Docker 支援
 
 1. 藉由移至 [檔案] > [新增解決方案]**** 來建立新解決方案。
-1. 在 [ **.Net Core > 應用**程式] 下選擇 [ **Web 應用程式**] 範本： ![ 建立新的 ASP.NET 應用程式](media/docker-quickstart-1.png)
+1. 在 [ **.Net Core > 應用** 程式] 下，選擇 [ **Web 應用程式** ] 範本： ![ 建立新的 ASP.NET 應用程式](media/docker-quickstart-1.png)
 1. 選取目標 Framework。 在此範例中，我們將使用 .NET Core 2.2： ![ 設定目標 framework](media/docker-quickstart-2.png)
 1. 輸入專案詳細資料，例如，名稱 (此範例中為 _DockerDemo_)。 所建立的專案包含建置和執行 ASP.NET Core 網站所需的所有基本項目。
-1. 在 Solution Pad 中，以滑鼠右鍵按一下 DockerDemo 專案，然後選取 [**新增 > 新增 Docker 支援**： ![ 新增 docker 支援]。](media/docker-quickstart-3.png)
+1. 在 Solution Pad 中，以滑鼠右鍵按一下 >dockerdemo 專案，然後選取 [新增 **> 新增 Docker 支援**： ![ 新增 docker 支援]](media/docker-quickstart-3.png)
 
 Visual Studio for Mac 會將稱為 **docker-compose** 的專案自動新增到解決方案，並將 **Dockerfile** 新增到您的現有專案。
 
@@ -39,7 +39,7 @@ Visual Studio for Mac 會將稱為 **docker-compose** 的專案自動新增到�
 
 ## <a name="dockerfile-overview"></a>Dockerfile 概觀
 
-Dockerfile 是用於建立最終 Docker 映像的配方。 請參閱[Dockerfile 參考](https://docs.docker.com/engine/reference/builder/)以瞭解其內的命令。
+Dockerfile 是用於建立最終 Docker 映像的配方。 請參閱 [Dockerfile 參考](https://docs.docker.com/engine/reference/builder/) ，以瞭解其內的命令。
 
 ```
 FROM microsoft/dotnet:2.2-aspnetcore-runtime AS base

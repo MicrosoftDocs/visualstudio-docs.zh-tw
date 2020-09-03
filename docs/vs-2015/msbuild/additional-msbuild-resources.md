@@ -600,10 +600,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa25e4e15406c9091e90dfd8be5c2efd0a19e41b
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81445047"
 ---
 # <a name="additional-msbuild-resources"></a>其他 MSBuild 資源
@@ -612,7 +612,7 @@ ms.locfileid: "81445047"
 如果您嘗試解決問題，但在文件中找不到所需的資訊，則可以參閱知識庫文章、開發人員社群或產品支援等其他資源。  
   
 ## <a name="knowledge-base-articles"></a>知識庫文章  
- 您可以搜尋線上知識庫 (KB) 中有關產品問題的文章。 並非所有問題都有對應的 KB 文章，但一般會記錄大量客戶遇到的錯誤。 您可以在[知識庫](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query)網站上訪問知識庫文章。  
+ 您可以搜尋線上知識庫 (KB) 中有關產品問題的文章。 並非所有問題都有對應的 KB 文章，但一般會記錄大量客戶遇到的錯誤。 您可以在知識庫網站上存取 [知識庫](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) 文章。  
   
 ## <a name="community-forums"></a>社群論壇  
  論壇也可讓您與其他開發人員和 Microsoft 員工互動。 如果您遇到找不到解決方案的錯誤，則可以在論壇張貼有關問題的疑問。 您也可以搜尋新聞群組，以查看是否有其他人已經張貼相同的問題。 您可以在 [MSDN 論壇](https://social.msdn.microsoft.com/forums/en-US/msbuild/threads/)網站上存取 Visual Studio MSBuild 論壇。  

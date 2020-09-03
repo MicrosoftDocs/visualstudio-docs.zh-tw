@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 3d56cfce70b0723b636b9b8ef7c6f3917015bf66
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75915550"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell 指令碼)
@@ -32,15 +32,15 @@ Publish-WebApplicationWebSite
 -Verbose
 ```
 
-## <a name="configuration"></a>組態
+## <a name="configuration"></a>設定
 描述部署詳細資訊的 JSON 組態檔路徑。
 
 | 參數 | 預設值 |
 | --- | --- |
-| 別名 |none |
-| 是否為必要項？ |true |
-| Position |已命名 |
-| 預設值 |none |
+| 別名 |無 |
+| 必要？ |true |
+| 位置 |具名 |
+| 預設值 |無 |
 | 接受管線輸入？ |false |
 | 接受萬用字元？ |false |
 
@@ -49,10 +49,10 @@ Publish-WebApplicationWebSite
 
 | 參數 | 預設值 |
 | --- | --- |
-| 別名 |none |
-| 是否為必要項？ |false |
-| Position |已命名 |
-| 預設值 |none |
+| 別名 |無 |
+| 必要？ |false |
+| 位置 |具名 |
+| 預設值 |無 |
 | 接受管線輸入？ |false |
 | 接受萬用字元？ |false |
 
@@ -61,10 +61,10 @@ Publish-WebApplicationWebSite
 
 | 參數 | 預設值 |
 | --- | --- |
-| 別名 |none |
-| 是否為必要項？ |false |
-| Position |已命名 |
-| 預設值 |none |
+| 別名 |無 |
+| 必要？ |false |
+| 位置 |具名 |
+| 預設值 |無 |
 | 接受管線輸入？ |false |
 | 接受萬用字元？ |false |
 
@@ -73,10 +73,10 @@ Publish-WebApplicationWebSite
 
 | 參數 | 預設值 |
 | --- | --- |
-| 別名 |none |
-| 是否為必要項？ |false |
-| Position |已命名 |
-| 預設值 |none |
+| 別名 |無 |
+| 必要？ |false |
+| 位置 |具名 |
+| 預設值 |無 |
 | 接受管線輸入？ |false |
 | 接受萬用字元？ |false |
 
@@ -85,9 +85,9 @@ Publish-WebApplicationWebSite
 
 | 參數 | 預設值 |
 | --- | --- |
-| 別名 |none |
-| 是否為必要項？ |false |
-| Position |已命名 |
+| 別名 |無 |
+| 必要？ |false |
+| 位置 |具名 |
 | 預設值 |false |
 | 接受管線輸入？ |false |
 | 接受萬用字元？ |false |
@@ -121,7 +121,7 @@ JSON 組態檔會指定待部署項目的詳細資料。 它會包含您在建�
 }
 ```
 
-您可以編輯 JSON 組態檔來變更部署項目。 webSite 是必要區段，database 是選擇性區段。
+您可以編輯 JSON 組態檔來變更部署項目。 [網站] 區段是必要項目，但 [資料庫] 區段是選用項目。
 
 ## <a name="next-steps"></a>後續步驟
 如需詳細資訊，請參閱 [Publish-WebApplicationVM (Windows PowerShell 指令碼)](vs-azure-tools-publish-webapplicationvm.md)

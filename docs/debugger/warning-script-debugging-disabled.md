@@ -1,5 +1,5 @@
 ---
-title: '警告: 文稿除錯已關閉 |微軟文件'
+title: 警告：已停用腳本調試 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 15de1a1e516cb3d84c24428ef04dd87baedaed9e
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81648508"
 ---
 # <a name="warning-script-debugging-disabled"></a>警告：已停用指令碼偵錯
@@ -44,4 +44,4 @@ ms.locfileid: "81648508"
      新的設定目前已經生效。
 
 ## <a name="see-also"></a>另請參閱
-- [如何:附加到腳本](attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [如何：附加至腳本](attach-to-running-processes-with-the-visual-studio-debugger.md)

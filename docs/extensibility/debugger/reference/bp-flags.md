@@ -1,5 +1,5 @@
 ---
-title: BP_FLAGS |微軟文件
+title: BP_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 62626ff75a4545d89835d3136649191004291f8f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738056"
 ---
 # <a name="bp_flags"></a>BP_FLAGS
-提供可選標誌,用於在設置斷點時指定其他資訊。
+提供選擇性旗標，可在設定中斷點時用來指定其他資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -46,25 +46,25 @@ public enum enum_BP_FLAGS {
 
 ## <a name="fields"></a>欄位
 `BP_FLAG_NONE`\
-指定無斷點標誌。
+指定無中斷點旗標。
 
 `BP_FLAG_MAP_DOCPOSITION`\
-指定除錯引擎 (DE) 應使用文件位置映射斷點。 這僅適用於在面向腳稿的源檔中設置的斷點,如活動伺服器頁 (ASP)。
+指定 debug engine (DE) 應該使用檔位置對應中斷點。 這僅適用于以腳本導向的原始程式檔中設定的中斷點，例如 Active Server Pages (ASP) 。
 
 `BP_FLAG_DONT_STOP`\
-指定斷點應由調試引擎處理,但調試引擎最終不應停止於此(即,不應發送[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)事件物件)。 此標誌設計主要用於跟蹤點。
+指定應該由 debug 引擎處理中斷點，但 debug engine 最後不應該停止 (也就是說， [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) 事件物件不應該傳送) 。 此旗標的設計主要是用於追蹤點。
 
 ## <a name="remarks"></a>備註
-用於`dwFlags`[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)和[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構的成員。
+用於 `dwFlags` [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 和 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 結構的成員。
 
-這些值可以稍微結合`OR`。
+這些值可能會與位結合 `OR` 。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

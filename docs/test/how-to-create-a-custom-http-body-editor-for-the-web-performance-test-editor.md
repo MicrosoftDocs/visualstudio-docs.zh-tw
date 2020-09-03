@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 02faf2a6c495d7fd5566c8f4291ecaad20ef5eb7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288139"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>如何：建立 Web 效能測試編輯器的自訂 HTTP 內容編輯器
@@ -39,9 +39,9 @@ ms.locfileid: "85288139"
 
 1. 選擇 <xref:System.Windows.Forms.RichTextBox> 控制項右上角的 [動作] 標籤圖像 (![智慧標籤圖像](../test/media/vs_winformsmttagglyph.gif))，然後選取並且 [停駐於父容器中]****。
 
-1. 在**方案總管**中，以滑鼠右鍵按一下 Windows Forms 程式庫專案，然後選取 [**屬性**]。
+1. 在 **方案總管**中，以滑鼠右鍵按一下 [Windows Forms 程式庫] 專案，然後選取 [ **屬性**]。
 
-1. 在 [**屬性**] 中，選取 [**應用程式**] 索引標籤。
+1. 在 [ **屬性**] 中，選取 [ **應用程式** ] 索引標籤。
 
 1. 在 [目標 Framework]**** 下拉式清單中選取 .NET Framework 4 (或更新版本)。
 
@@ -49,13 +49,13 @@ ms.locfileid: "85288139"
 
 1. 選擇 [ **是**]。
 
-1. 在**方案總管**中，以滑鼠右鍵按一下 [**參考**] 節點，然後選取 [**加入參考**]。
+1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **參考** ] 節點，然後選取 [ **加入參考**]。
 
 1. [新增參考]**** 對話方塊隨即顯示。
 
 1. 選擇 [.NET]**** 索引標籤並向下捲動，然後選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**，再選擇 [確定]****。
 
-1. 如果 [ **View Designer** ] 尚未開啟，請在**方案總管**中，以滑鼠右鍵按一下 [ **UserControl1.cs** ]，然後選取 [ **View designer**]。
+1. 如果 [ **View designer** ] 尚未開啟，請在 **方案總管**中，以滑鼠右鍵按一下 [ **UserControl1.cs** ]，然後選取 [ **視圖設計**工具]。
 
 1. 以滑鼠右鍵按一下設計介面，然後選取 [檢視程式碼]****。
 
@@ -123,15 +123,15 @@ messageEditorControl 執行個體會裝載於 <xref:Microsoft.VisualStudio.TestT
 
 ### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>建立類別並實作 IStringHttpBodyEditorPlugin 介面
 
-1. 在**方案總管**中，以滑鼠右鍵按一下 [Windows Forms 控制項程式庫] 專案，然後選取 [**加入新專案**]。
+1. 在 **方案總管**中，以滑鼠右鍵按一下 [Windows Forms 控制項程式庫] 專案，然後選取 [ **加入新專案**]。
 
    [ **加入新項目** ] 對話方塊隨即出現。
 
-2. 選取 [**類別**]。
+2. 選取 [ **類別**]。
 
 3. 在 [名稱]**** 文字方塊中鍵入有意義的類別名稱，例如 `MessageEditorPlugins`。
 
-4. 選擇 [**新增**]。
+4. 選擇 [ **新增**]。
 
    Class1 會加入至專案，並顯示在 [程式碼編輯器] 中。
 
@@ -264,14 +264,14 @@ messageEditorControl 執行個體會裝載於 <xref:Microsoft.VisualStudio.TestT
 
 ## <a name="build-and-deploy-the-plug-ins"></a>建置和部署外掛程式
 
-1. 在 [**建立**] 功能表上，選擇 [**組建 \<Windows Form Control Library project name> **]。
+1. 在 [**組建**] 功能表上，選擇 [**建立 \<Windows Form Control Library project name> **]。
 
 2. 關閉所有 Visual Studio 執行個體。
 
    > [!NOTE]
    > 關閉 Visual Studio 可確保在您嘗試複製 *.dll* 檔之前，這個檔案不會遭到鎖定。
 
-3. 將產生的 *.dll*檔案從專案的*bin\debug*資料夾（例如， *MessageEditors.dll*）複製到 *%ProgramFiles%\Microsoft Visual Studio\2017 \\ \<edition> \Common7\IDE\PrivateAssemblies\WebTestPlugins*。
+3. 從專案的*bin\debug*資料夾複製產生的 *.dll*檔案 (例如*MessageEditors.dll*) 以 *%ProgramFiles%\Microsoft Visual Studio\2017 \\ \<edition> \Common7\IDE\PrivateAssemblies\WebTestPlugins*。
 
 4. 開啟 Visual Studio。
 
@@ -283,9 +283,9 @@ messageEditorControl 執行個體會裝載於 <xref:Microsoft.VisualStudio.TestT
 
 2. 建立 Web 效能測試，並在瀏覽器中輸入 Web 服務的 URL。
 
-3. 當您完成錄製時，請在 [Web 效能測試編輯器中展開 Web 服務的要求，然後選取 [**字串**內容] 或 [**二進位**內容]。
+3. 當您完成錄製時，請在 Web 效能測試編輯器中展開 Web 服務的要求，並選取 **字串主體** 或 **二進位主體**。
 
-4. 在 [**屬性**] 視窗中，選取 [字串主體] 或 [二進位內容]，然後選擇省略號 **（...）**。
+4. 在 [ **屬性** ] 視窗中，選取 [字串主體] 或 [二進位內容]，然後選擇省略號 ** ( ... ) **。
 
    [編輯 HTTP 內容資料]**** 對話方塊隨即顯示。
 

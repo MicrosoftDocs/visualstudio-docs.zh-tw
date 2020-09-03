@@ -10,47 +10,47 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916791"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>如何：擴充網域指定的語言設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以對用來編輯 DSL 定義的設計工具建立延伸模組。 您可以進行的延伸模組類型包括新增功能表命令、新增拖曳和按兩下筆勢的處理常式，以及當特定類型的值或關聯性變更時所觸發的規則。 延伸模組可以封裝為 Visual Studio 整合擴充功能（VSIX），並散發給其他使用者。
+您可以對用來編輯 DSL 定義的設計工具進行擴充。 您可以進行的延伸模組類型包括加入功能表命令、新增拖曳和按兩下手勢的處理常式，以及特定類型值或關聯性變更時所觸發的規則。 擴充功能可以封裝為 Visual Studio 整合延伸模組 (VSIX) 並散發給其他使用者。
 
 ## <a name="setting-up-the-solution"></a>設定解決方案
- 設定專案，其中包含擴充功能的程式碼，以及匯出專案的 VSIX 專案。 您的方案可以包含併入相同 VSIX 中的其他專案。
+ 設定包含擴充程式碼的專案，以及可匯出專案的 VSIX 專案。 您的方案可以包含併入相同 VSIX 的其他專案。
 
-#### <a name="to-create-a-dsl-designer-extension-solution"></a>建立 DSL 設計工具延伸模組解決方案
+#### <a name="to-create-a-dsl-designer-extension-solution"></a>建立 DSL 設計工具擴充方案
 
-1. 使用 [類別庫] 專案範本建立新的專案。 在 [**新增專案**] 對話方塊中，按一下 [**視覺效果C#**  ]，然後在中間視窗中按一下 [**類別庫**]。
+1. 使用 [類別庫] 專案範本建立新專案。 在 [ **新增專案** ] 對話方塊中，按一下 [ **Visual c #** ]，然後在中間的視窗中按一下 [ **類別庫**]。
 
-     此專案將包含您擴充功能的程式碼。
+     此專案將包含您的延伸模組程式碼。
 
-2. 使用 VSIX 專案範本建立新的專案。 在 [**新增專案**] 對話方塊中，展開 [**視覺效果C#** ] **，按一下 [** 擴充性]，然後在中間視窗中選取 [ **VSIX 專案**]。
+2. 使用 VSIX 專案範本建立新專案。 在 [ **新增專案** ] 對話方塊中，展開 [ **Visual c #** **]，再按一下 [** 擴充性]，然後在中間視窗中選取 [ **VSIX 專案**]。
 
-     選取 [**新增至方案**]。
+     選取 [ **加入至方案**]。
 
      Extension.vsixmanifest 會在 VSIX 資訊清單編輯器中開啟。
 
-3. 在 [內容] 欄位上方，按一下 [**新增內容**]。
+3. 按一下 [內容] 欄位上方的 [ **新增內容**]。
 
-4. 在 [**加入內容**] 對話方塊中，將 [**選取內容類型**] 設定為 [ **MEF 元件**]，並將 [**專案**] 設為您的類別庫專案。
+4. 在 [ **加入內容** ] 對話方塊中，將 [ **選取內容類型** ] 設定為 [ **MEF 元件**]，並將 **專案** 設定為類別庫專案。
 
-5. 按一下 [**選取版本**]，並確認已核取 [ **Visual Studio Enterprise** ]。
+5. 按一下 [ **選取版本** ] 並確定已核取 **Visual Studio Enterprise** 。
 
-6. 請確定 VSIX 專案是解決方案的啟始專案。
+6. 請確定 VSIX 專案是方案的啟始專案。
 
 7. 在類別庫專案中，加入下列元件的參考：
 
      VisualStudio. CoreUtility
 
-     VisualStudio。建立 Sdk 11。0
+     VisualStudio （node.js）
 
-     VisualStudio. 建立 Sdk 的關係圖
+     VisualStudio （node.js）。
 
      VisualStudio. Dsldefinition.dsl 檔. 11。0
 
@@ -65,26 +65,26 @@ ms.locfileid: "75916791"
      System.Windows.Forms
 
 ## <a name="testing-and-deployment"></a>建置和部署
- 若要測試本主題中的任何延伸模組，請建立並執行解決方案。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即開啟。 在此情況下，請開啟 DSL 解決方案。 編輯 [Dsldefinition.dsl 檔] 圖表。 您可以看到延伸模組行為。
+ 若要測試此主題中的任何延伸模組，請建立並執行方案。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即開啟。 在此情況下，請開啟 DSL 解決方案。 編輯 Dsldefinition.dsl 檔圖。 您可以看到延伸模組行為。
 
- 若要將擴充功能部署到主要 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]和其他電腦，請遵循下列步驟：
+ 若要將延伸模組部署到主要 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和其他電腦，請遵循下列步驟：
 
-1. 在 bin 中的 VSIX 專案中尋找 VSIX 安裝檔案\\*\\\*.vsix
+1. 在 node.js 中的 vsix 專案中尋找 vsix 安裝檔案 \\ * \\ \*
 
-2. 將此檔案複製到目的電腦，然後在 [Windows Explorer] （或 [檔案瀏覽器]）中按兩下該檔案。
+2. 將此檔案複製到目的電腦，然後在 Windows 檔案總管 (或檔案總管) 中按兩下它。
 
-    [[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充管理員] 隨即開啟，以確認已安裝延伸模組。
+    [ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充管理員] 隨即開啟，確認已安裝擴充功能。
 
    若要卸載擴充功能，請遵循下列步驟：
 
-3. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的 [**工具**] 功能表上，按一下 [**擴充管理員**]。
+3. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的 [ **工具** ] 功能表上，按一下 [ **擴充管理員**]。
 
-4. 選取擴充功能，並將它刪除。
+4. 選取擴充功能，並將其刪除。
 
 ## <a name="adding-a-shortcut-menu-command"></a>新增快捷方式功能表命令
  若要讓快捷方式功能表命令出現在 DSL 設計工具介面或 [DSL Explorer] 視窗中，請撰寫類似下列的類別。
 
- 類別必須實 `ICommandExtension`，而且必須具有 `DslDefinitionModelCommandExtension`屬性。
+ 類別必須執行 `ICommandExtension` ，而且必須有屬性 `DslDefinitionModelCommandExtension` 。
 
 ```
 using System.Collections.Generic;
@@ -147,7 +147,7 @@ namespace Fabrikam.SimpleDslDesignerExtension
 ```
 
 ## <a name="handling-mouse-gestures"></a>處理滑鼠手勢
- 此程式碼類似于功能表命令的代碼。
+ 此程式碼類似于功能表命令的程式碼。
 
 ```
 [DslDefinitionModelGestureExtension]
@@ -208,7 +208,7 @@ namespace Fabrikam.SimpleDslDesignerExtension
 ```
 
 ## <a name="responding-to-value-changes"></a>回應值變更
- 此處理程式需要網域模型才能正常運作。 我們提供簡單的領域模型。
+ 此處理程式需要網域模型才能正確運作。 我們提供簡單的領域模型。
 
 ```
 using System.Diagnostics;

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 42398e044bfc06e41249b15ac9baeebcaebd19f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74774252"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>指令指標 (IP) 檢視 - 取樣資料
@@ -27,13 +27,13 @@ ms.locfileid: "74774252"
 |資料行|描述|
 |------------|-----------------|
 |**處理序識別碼**|分析執行的處理序 ID (PID)。|
-|**流程名稱**|處理序的名稱。|
+|**進程名稱**|處理序的名稱。|
 |**模組名稱**|包含該指令的模組名稱。|
 |**模組路徑**|包含該指令的模組路徑。|
-|**原始檔案**|包含此指令的原始程式檔。|
+|**來源檔案**|包含此指令的原始程式檔。|
 |**函數名稱**|包含此指令的函式名稱。|
 |**函式行號**|原始程式檔中這個函式的開頭行號。|
-|**功能位址**|在載入的二進位檔中函式的起始記憶體位址。|
+|**函數位址**|在載入的二進位檔中函式的起始記憶體位址。|
 |**原始程式碼開頭行**|收集這個樣本的原始程式檔中的起始行號。|
 |**原始程式碼結尾行**|收集這個樣本的原始程式檔中的結尾行號。|
 |**原始程式碼開頭字元**|收集這個樣本的原始程式檔行中，起始字元的位移。|
@@ -43,4 +43,4 @@ ms.locfileid: "74774252"
 |**專有樣本 %**|執行程式碼剖析期間，執行指令時所收集的所有樣本的百分比。|
 
 ## <a name="see-also"></a>另請參閱
-- [指令指標 （IP） 視圖 - 採樣](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [ (Ip 的指令指標) View-取樣](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

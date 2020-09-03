@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a6a9707d517a8a43d9a9ca156a5f7291ecee9bee
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81445060"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>建立 Visual Studio 的離線安裝
@@ -36,17 +36,17 @@ ms.locfileid: "81445060"
 
 1. 從 [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) 下載頁面選擇您要安裝的 Visual Studio 版本。
 
-2. 將安裝程式下載到您的本機檔案系統之後，執行 "\<可執行檔名稱> /layout"。
+2. 將安裝程式下載到檔案系統上的位置之後，請執行 " \<executable name> /layout"。
 
      例如，執行：`vs_enterprise.exe /layout D:\VisualStudio2015`
 
      您可以使用 `/layout` 參數下載幾乎所有安裝套件，而不只是適用於下載電腦的套件。 此方法提供您在任何位置執行此安裝程式時需要的檔案，且如果您想要安裝一開始未安裝的元件，此安裝程式會非常有用。
 
-3. 執行此命令之後，隨即出現對話方塊，讓您變更放置離線安裝配置的資料夾。   接下來,按一**下「下載**」按鈕。
+3. 執行此命令之後，隨即出現對話方塊，讓您變更放置離線安裝配置的資料夾。   接著，按一下 [ **下載** ] 按鈕。
 
-     當包下載成功時,您應該會看到一條消息,指出 **「設定成功!已成功獲取所有指定的元件。**
+     當套件下載成功時，您應該會看到一則訊息，指出 **安裝成功！已成功取得所有指定的元件。**
 
-4. 找出您稍早之前指定的資料夾。 (例如,找到 D:\VisualStudio2015。此資料夾包含複製到共用位置或安裝媒體所需的一切。
+4. 找出您稍早之前指定的資料夾。  (例如，找出 D:\VisualStudio2015. ) 這個資料夾包含複製到共用位置或安裝媒體所需的所有專案。
 
     > [!CAUTION]
     > Android SDK 目前尚不支援離線安裝體驗。 如果您將 Android SDK 安裝程式的項目安裝在未連線至網際網路的電腦，安裝可能會失敗。 如需此問題的詳細資訊，請參閱本主題中的＜針對離線安裝進行疑難排解＞小節。
@@ -61,16 +61,16 @@ ms.locfileid: "81445060"
 
 | 元件或套件 | 解決方法 |
 |-|-|
-| Dotfuscator and Analytics Community Edition 5.19.1 (適用於在 **Windows 7 SP1** 和 **Windows Server 2008 R2** 上安裝的 Community、Professional 與 Enterprise 版本 Visual Studio) | 如果您的離線機器是執行 **Windows 7 SP1** 或 **Windows Server 2008 R2**，您必須先執行下列步驟，才能安裝 Visual Studio 2015：<br /><br /> 1. 設定檔或 Web 伺服器以下載 CTL 檔。<br /><br /> 2. 重定向斷開的環境的 Microsoft 自動更新 URL。<br /><br /> 如需詳細資訊，請參閱 Microsoft TechNet 網站上的[設定受信任的根目錄和不允許的憑證](https://technet.microsoft.com/library/dn265983.aspx) \(英文\) 頁面。 |
+| Dotfuscator and Analytics Community Edition 5.19.1 (適用於在 **Windows 7 SP1** 和 **Windows Server 2008 R2** 上安裝的 Community、Professional 與 Enterprise 版本 Visual Studio) | 如果您的離線機器是執行 **Windows 7 SP1** 或 **Windows Server 2008 R2**，您必須先執行下列步驟，才能安裝 Visual Studio 2015：<br /><br /> 1. 設定檔案或 web 伺服器以下載 CTL 檔案。<br /><br /> 2. 針對已中斷連線的環境重新導向 Microsoft 自動更新 URL。<br /><br /> 如需詳細資訊，請參閱 Microsoft TechNet 網站上的[設定受信任的根目錄和不允許的憑證](https://technet.microsoft.com/library/dn265983.aspx) \(英文\) 頁面。 |
 | Android SDK 安裝程式 (API 層級) | 您必須連接網際網路，才能安裝 Android SDK (API 層級) 套件。 如果您是在受限網路上，則必須在安裝 Visual Studio 時允許存取下列 URL：<br /><br /> -   `https://dl.google.com:443`<br />-   `https://dl-ssl.google.com:443`<br />-   `https://dl-ssl.google.com/android/repository/*`<br /> <br />如需如何解決 Proxy 設定可能問題的詳細資訊，請參閱 [Visual Studio 2015 install failures (Android SDK Setup) behind a Proxy](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) (受 Proxy 保護的 Visual Studio 2015 安裝失敗 (Android SDK 安裝程式)) 部落格文章。 |
 | Visual Studio 擴充性項目範本<br /><br /> Visual Studio 的 GitHub 擴充功能<br /><br /> PowerShell Tools for Visual Studio | 當您在安裝 Visual Studio 2015 時，如果沒有網際網路連線，您可以使用特殊離線摘要來產生離線安裝配置。 **注意：** 此特殊摘要包含最新的 Visual Studio 2015 更新。 <br /><br /> 若要建立特殊離線摘要，請執行下列命令：/layout *Drive:* \VisualStudio2015 /overridefeeduri *URL-to-feed-xml*<br /><br /> 例如，如需 Visual Studio 2015 Enterprise 的英文語言特殊離線摘要，請執行：<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "https://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> 如需能以您所選語言建立特殊離線摘要的 URL 完整清單，請參閱下表。 |
 
  使用下列 URL 來建立語言特定特殊離線摘要，如上表中所述。
 
-|       Language        |                            URL                            |
+|       語言        |                            URL                            |
 |-----------------------|-----------------------------------------------------------|
-| 中文 (簡體)  | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x804 |
-| 中文 (繁體) | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
+| 簡體中文  | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x804 |
+| 繁體中文 | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
 |         捷克文         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x405 |
 |        德文         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x407 |
 |        英文        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x409 |

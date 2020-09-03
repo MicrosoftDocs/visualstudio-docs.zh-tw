@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4f82f8f4c518a9c72399b6e28a01d112f5678c9
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288204"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>如何：在 Visual Studio 中使用測試設定來設定 ASP.NET 分析工具以進行負載測試
@@ -22,7 +22,7 @@ ms.locfileid: "85288204"
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> 此診斷資料介面卡無法用於使用 Microsoft Test Manager （在 Visual Studio 2017 中已過時）執行的測試。 ASP.NET 分析工具診斷配接器只能與使用網站的負載測試搭配使用，且需要 Visual Studio Enterprise。
+> 此診斷資料配接器無法用於使用 Microsoft Test Manager (在 Visual Studio 2017) 中淘汰的測試。 ASP.NET 分析工具診斷配接器只能與使用網站的負載測試搭配使用，且需要 Visual Studio Enterprise。
 
 ASP.NET 分析工具診斷資料配接器可讓您在執行負載測試時，從應用程式層中收集 ASP.NET 分析工具資料。 若為長時間的負載測試 (例如，執行時間超過一小時的負載測試)，您就不應該執行分析工具， 因為分析工具檔案可能會變得很龐大，高達數百 MB。 而是，請使用 ASP.NET 分析工具來執行較短的負載測試，這樣做仍然會提供您深入診斷效能問題的優勢。
 

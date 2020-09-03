@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_RESOLUTION |微軟文件
+title: BP_LOCATION_RESOLUTION |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,14 +15,14 @@ ms.workload:
 dev_langs:
 - CPP
 ms.openlocfilehash: 5f33f01d0c2b8465bbb417b56576118349234970
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737952"
 ---
 # <a name="bp_location_resolution"></a>BP_LOCATION_RESOLUTION
-描述特定位置斷點的解析度。
+描述中斷點在特定位置的解決方式。
 
 ## <a name="syntax"></a>語法
 
@@ -34,17 +34,17 @@ typedef struct _BP_LOCATION_RESOLUTION {
 
 ## <a name="members"></a>成員
 `pResolution`\
-[IDebugBreakpoint決議2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)物件,用於確定斷點的類型及其解析度資訊。
+[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)物件，可決定中斷點的類型及其解析資訊。
 
 ## <a name="remarks"></a>備註
-此結構是作為聯合的一部分[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構的成員。
+此結構是 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 結構的成員，做為聯集的一部分。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

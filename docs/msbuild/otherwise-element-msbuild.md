@@ -19,17 +19,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 384886ad4292661648f5cbfde1a583d8d75b1c03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633040"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 元素 (MSBuild)
 
 指定只有當所有 `When` 項目的條件評估為 `false` 時，才需執行的程式碼區塊。
 
- \<專案>\<選擇>\<當>\<選擇>...\<否則>\<選擇>...
+ \<Project> \<Choose>
+ \<When>
+ \<Choose>
+... \<Otherwise>
+ \<Choose>
+...
 
 ## <a name="syntax"></a>語法
 
@@ -51,7 +56,7 @@ ms.locfileid: "77633040"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[選擇](../msbuild/choose-element-msbuild.md)|選擇性項目。<br /><br /> 評估子元素，以選取要執行的一個程式碼區段。 `Otherwise` 元素中可能有零個或多個 `Choose` 元素。|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|選擇性項目。<br /><br /> 包含一組使用者定義的 [Item](../msbuild/item-element-msbuild.md) 元素。 `Otherwise` 元素中可能有零個或多個 `ItemGroup` 元素。|
@@ -59,7 +64,7 @@ ms.locfileid: "77633040"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[選擇](../msbuild/choose-element-msbuild.md)|評估子元素，以選取要執行的一個程式碼區段。|
 
@@ -120,5 +125,5 @@ ms.locfileid: "77633040"
 
 ## <a name="see-also"></a>另請參閱
 
-- [條件構造](../msbuild/msbuild-conditional-constructs.md)
-- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)
+- [條件式結構](../msbuild/msbuild-conditional-constructs.md)
+- [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
