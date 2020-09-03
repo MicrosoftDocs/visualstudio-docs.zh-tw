@@ -29,14 +29,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20aeee220bec600c2232286d18600b04201ad03b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745613"
 ---
 # <a name="crt-debug-library-use"></a>CRT 偵錯程式庫操作
-C 執行階段程式庫提供更多的偵錯支援。 若要使用其中一個 CRT debug 程式庫，您必須使用[/debug](/cpp/build/reference/debug-generate-debug-info)連結，並使用 **/MDd**、 **/MTd**或 **/LDd**進行編譯。
+C 執行階段程式庫提供更多的偵錯支援。 若要使用其中一個 CRT debug 程式庫，您必須與 [/debug](/cpp/build/reference/debug-generate-debug-info) 連結，並使用 **/MDd**、 **/MTd**或 **/LDd**進行編譯。
 
 ## <a name="remarks"></a>備註
  可以在 CRTDBG.h 標頭檔裡找到 CRT 偵錯的主要定義和巨集。
@@ -45,7 +45,7 @@ C 執行階段程式庫提供更多的偵錯支援。 若要使用其中一個 C
 
  如需各種可以使用的執行階段程式庫之詳細資訊，請參閱 [C Run-Time Libraries](/cpp/c-runtime-library/crt-library-features) (C 執行階段程式庫)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [CRT 偵錯技術](../debugger/crt-debugging-techniques.md)
-- [/MD、/MT、/LD (使用執行階段程式庫)](/cpp/build/reference/md-mt-ld-use-run-time-library)
+- [/MD、/MT、/LD (使用執行時間程式庫) ](/cpp/build/reference/md-mt-ld-use-run-time-library)

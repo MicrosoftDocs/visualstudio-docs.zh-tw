@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::EnumPrograms |Microsoft Docs
+title: IDebugEngine2：： EnumPrograms |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc004de59b6ae219f47dc0874913c8e6e6ceb0f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195998"
 ---
 # <a name="idebugengine2enumprograms"></a>IDebugEngine2::EnumPrograms
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取一份所有正在偵錯的程式偵錯引擎 (DE)。  
+抓取偵測引擎 (DE) 所要進行的所有程式的清單。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,10 +40,10 @@ int EnumPrograms( 
   
 #### <a name="parameters"></a>參數  
  `ppEnum`  
- [out]傳回[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)物件，其中包含一份所有正在偵錯所規定的程式。  
+ 擴展傳回 [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) 物件，其中包含由 DE 進行調試的所有程式清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

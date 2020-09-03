@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: c0ce6e68fa36f3b13474306ddd1d8304d640c0ec
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87507972"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>在 Visual Studio 中使用 Visual F# 進行開發
@@ -25,7 +25,7 @@ ms.locfileid: "87507972"
 
 ## <a name="install-f-support"></a>安裝 F# 支援
 
-若要在 Visual Studio 中使用 F# 進行開發，請先安裝 **.NET 桌面開發**工作負載 (若尚未安裝的話)。 您可以透過 Visual Studio 安裝程式安裝 Visual Studio 工作負載，您可以選取 [**工具**] [  >  **取得工具和功能**] 來開啟。
+若要在 Visual Studio 中使用 F# 進行開發，請先安裝 **.NET 桌面開發**工作負載 (若尚未安裝的話)。 您可以透過 Visual Studio 安裝程式來安裝 Visual Studio 工作負載，您可以選取 [**工具**  >  **取得工具和功能**] 來開啟此功能。
 
 ![Visual Studio 中的 .NET 桌面開發工作負載](media/dotnet-desktop-development-workload.png)
 
@@ -63,12 +63,12 @@ ms.locfileid: "87507972"
 |[專案設計工具] 頁面|相關連結|描述|
 | - |-------------|-----------|
 |Application|[專案設計工具、應用程式頁面](reference/application-page-project-designer-csharp.md)|可讓您指定應用程式層級設定和屬性，例如您正在建立程式庫還是可執行檔、應用程式是以哪個 .NET 版本為目標，以及應用程式使用的資源檔儲存所在位置的相關資訊。|
-|組建|[專案設計工具、建置頁](reference/build-page-project-designer-csharp.md)|可讓您控制如何編譯程式碼。|
+|Build|[專案設計工具、建置頁](reference/build-page-project-designer-csharp.md)|可讓您控制如何編譯程式碼。|
 |建置事件|[專案設計工具、建置事件頁面](reference/build-events-page-project-designer-csharp.md)|可讓您指定要在編譯前後執行的命令。|
 |偵錯|[專案設計工具、偵錯頁](reference/debug-page-project-designer.md)|可讓您控制應用程式在偵錯期間執行的方式。 這包括要使用哪些命令與應用程式的啟動目錄為何，以及您要啟用的任何特殊偵錯模式，例如原生程式碼和 SQL。|
-|套件 (僅限 .NET SDK)|不適用|可讓您在以 NuGet 套件形式發佈時，定義 NuGet 套件的中繼資料。|
+|套件 (僅限 .NET SDK)|N/A|可讓您在以 NuGet 套件形式發佈時，定義 NuGet 套件的中繼資料。|
 |參考路徑|[管理專案中的參考](managing-references-in-a-project.md)|可讓您指定要搜尋程式碼相依組件的位置。|
-|資源 (僅限 .NET SDK)|不適用|可讓您產生並管理預設資源檔。|
+|資源 (僅限 .NET SDK)|N/A|可讓您產生並管理預設資源檔。|
 
 ### <a name="f-specific-settings"></a>F#-特定設定
 
@@ -76,14 +76,14 @@ ms.locfileid: "87507972"
 
 |[專案設計工具] 頁面|設定|描述|
 | - |-------|-----------|
-|組建|產生 tail 呼叫|如果選取此設定，則可讓您使用尾端 Microsoft Intermediate Language (MSIL) 指令。 這會導致堆疊框架重複用於尾端遞迴函式。 相當於 `--tailcalls` 編譯器選項。|
-|組建|其他旗標|可讓您指定其他編譯器命令列選項。|
+|Build|產生 tail 呼叫|如果選取此設定，則可讓您使用尾端 Microsoft Intermediate Language (MSIL) 指令。 這會導致堆疊框架重複用於尾端遞迴函式。 相當於 `--tailcalls` 編譯器選項。|
+|Build|其他旗標|可讓您指定其他編譯器命令列選項。|
 
 ## <a name="code-and-text-editor-features"></a>程式碼和文字編輯器功能
 
 F# 支援 Visual Studio 程式碼和文字編輯器的下列功能：
 
-|功能|說明|F# 支援？|
+|功能|描述|F# 支援？|
 |-------|-----------|----------------|
 |自動註解|可讓您註解或取消註解程式碼區段。|是|
 |自動格式化|使用標準的縮排和樣式重新格式化程式碼。|否|
@@ -102,7 +102,7 @@ F# 支援 Visual Studio 程式碼和文字編輯器的下列功能：
 |快速尋找。 請參閱 [尋找] 和 [尋找及取代] 視窗。|可讓您在檔案或專案中搜尋。|是|
 |**Ctrl** +**按一下**以移至定義|可讓您按住 **Ctrl** 並按一下 F# 符號，以叫用 [移至定義]。|是|
 |從 QuickInfo 移至定義|工具提示內可叫用 [移至定義] 的可按式符號。|是|
-|移至全部|透過**Ctrl**T 啟用所有 F # 結構的全域、模糊相符的導覽 + ** **。|是|
+|移至全部|透過**Ctrl**T 啟用所有 F # 結構的全域、模糊比對導覽 + ** **。|是|
 |內嵌重新命名|重新命名符號內嵌的所有項目。|是|
 |尋找所有參考|在程式碼基底中尋找符號的所有項目。|是|
 |簡化名稱程式碼修正|移除 F# 符號不必要的限定詞。|是|
@@ -120,7 +120,7 @@ F# 支援 Visual Studio 程式碼和文字編輯器的下列功能：
 |自動實作介面|產生介面方法的程式碼虛設常式。|是|
 |程式碼片段|將來自常見程式碼建構程式庫的程式碼插入主題中。|否|
 |自動完成文字|在您鍵入時完成單字和名稱，藉以省去鍵入工作。|是|
-|自動完成|啟用時，會在您輸入時讓文字自動完成選取第一個相符項，而不是等待您選取其中一個比對，或按**Ctrl** + **空格鍵**。|是|
+|自動完成|啟用時，會在您輸入時讓字組自動完成選取第一個相符項，而不是等待您選取其中一個相符項或按**Ctrl** + **空格鍵**。|是|
 |為未開啟命名空間中的符號提供自動完成|利用自動完成，建議使用位於未開啟之命名空間中的相符符號，提供以在選取時使用對應的 `open` 陳述式完成。|是|
 |產生程式碼項目|可讓您產生各種建構的虛設常式程式碼。|否|
 |列出成員|當您鍵入成員存取運算子 (.) 時，顯示類型的成員。|是|
@@ -171,7 +171,7 @@ F# 支援 Visual Studio 程式碼和文字編輯器的下列功能：
 |測試專案|提供協助您測試程式碼的功能。|否|
 |工具箱|顯示包含可拖曳物件的索引標籤，例如控制項和文字或程式碼區段。|是|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [F# 指南 (.NET Framework)](/dotnet/fsharp/)
 - [Visual Studio 中的 F# 使用者入門](/dotnet/fsharp/get-started/get-started-visual-studio)

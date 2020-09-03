@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::CreatePendingBreakpoint |Microsoft Docs
+title: IDebugEngine2：： CreatePendingBreakpoint |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 84c36d08c7ad907006eb9f41d2f6e2c9cd77e7bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196036"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-在偵錯引擎 (DE) 中建立暫止中斷點。  
+在 debug engine 中建立暫止中斷點 (DE) 。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,23 +42,23 @@ int CreatePendingBreakpoint( 
   
 #### <a name="parameters"></a>參數  
  `pBPRequest`  
- [in][IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)描述若要建立的暫止中斷點的物件。  
+ 在描述要建立之暫止中斷點的 [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 物件。  
   
  `ppPendingBP`  
- [out]傳回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)表示暫止中斷點的物件。  
+ 擴展傳回代表暫止中斷點的 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 通常會傳回`E_FAIL`如果`pBPRequest`參數不符合任何支援的語言的 if DE`pBPRequest`參數是無效或不完整。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 當參數 `E_FAIL` `pBPRequest` `pBPRequest` 無效或不完整時，如果參數不符合任何由 DE 所支援的語言，通常會傳回。  
   
 ## <a name="remarks"></a>備註  
- 暫止中斷點是基本上是將中斷點繫結至程式碼所需的所有資訊的集合。 從這個方法傳回暫止中斷點未繫結至程式碼，直到[繫結](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)呼叫方法。  
+ 暫止中斷點基本上是將中斷點系結至程式碼所需之所有資訊的集合。 在呼叫 [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) 方法之前，這個方法所傳回的暫止中斷點未系結至程式碼。  
   
- 暫止中斷點的每個使用者會設定，工作階段的偵錯管理員 (SDM) 呼叫這個方法在每個附加的裝置。 若要確認中斷點是適用於該 DE 中執行的程式 DE 負責。  
+ 針對使用者所設定的每個暫止中斷點，會話 debug manager (SDM) 在每個附加的 DE 中呼叫這個方法。 它是由 DE 來確認中斷點是否適用于在該解除的程式中執行的程式。  
   
- 當使用者在程式碼行上設定中斷點時，DE 沒有繫結至最接近的一行，相當於這個程式碼的文件中的中斷點。 這可讓使用者在多行陳述式的第一行上設定中斷點，但將它繫結 （其中偵錯資訊中屬性的所有程式碼） 的最後一行。  
+ 當使用者在程式程式碼上設定中斷點時，可以自由地將中斷點系結至檔中與此程式碼對應的最接近行。 如此一來，使用者就可以在多行語句的第一行設定中斷點，但是將它系結到最後一行 (在) 的 debug 資訊中，所有程式碼都是以屬性化。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CProgram`物件。 DE 實作`IDebugEngine2::CreatePendingBreakpoint`所有呼叫此方法的實作在每一個程式則就會將都轉送。  
+ 下列範例顯示如何針對簡單的物件來執行此方法 `CProgram` 。 的 DE 的實， `IDebugEngine2::CreatePendingBreakpoint` 接著就可以在每個程式中，將所有對方法執行的呼叫轉送到。  
   
 ```  
 HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, IDebugPendingBreakpoint2** ppPendingBP)     
@@ -74,6 +74,6 @@ HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, 
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [繫結](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)   
+ [綁定](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)   
  [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e215d4a52965b4e89bc3a01b15da57fc8919437
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745594"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>資料集視覺化檢視對話方塊
@@ -32,9 +32,9 @@ ms.locfileid: "72745594"
  您可以對這個視覺化檢視中的物件進行變更。 只要認可資料列，變更就會儲存。
 
 ## <a name="uielement-list"></a>UIElement 清單
- 資料表：使用這個下拉式清單方塊，選取您想要視覺化的資料集內的資料表。
+ 資料表：使用這個下拉式清單方塊來選取您想要視覺化之資料集內的資料表。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8058995c8ae45c40f202aaa1e788891da3eb985d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180498"
 ---
 # <a name="cpu-utilization-graph"></a>CPU 使用率圖形
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-CPU 使用率圖形顯示應用程式經過一段時間的使用率等級。 X 軸代表追蹤的持續時間，而 y 軸代表系統上的邏輯核心數目。 圖形不會顯示在任何指定時間作用中的特定核心。 例如，如果兩個核心在某個指定期間各以 50% 的產能執行，則此檢視會顯示共使用一個邏輯核心。  
+CPU 使用率圖形顯示應用程式經過一段時間的使用率等級。 X 軸代表追蹤的持續時間，而 y 軸代表系統上的邏輯核心數目。 圖形不會顯示在任何指定時間作用中的特定核心。 例如，如果兩個核心在指定期間各以 50% 的產量執行，然後此檢視會顯示共使用一個邏輯核心。  
   
 ## <a name="cpu-utilization-graph-colors"></a>CPU 使用率圖形色彩  
   
@@ -36,5 +36,5 @@ CPU 使用率圖形顯示應用程式經過一段時間的使用率等級。 X �
 - 白色表示系統上未使用的邏輯核心可用性。 如果您可以找到更多平行處理的機會，您的處理序就可以使用這些核心。  
   
 ## <a name="see-also"></a>另請參閱  
- [使用率檢視](../profiling/utilization-view.md)   
+ [使用量視圖](../profiling/utilization-view.md)   
  [平均 CPU 使用率](../profiling/average-cpu-utilization.md)

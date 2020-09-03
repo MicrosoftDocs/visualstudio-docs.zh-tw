@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::RemoveAllSetExceptions |Microsoft Docs
+title: IDebugEngine2：： RemoveAllSetExceptions |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 823c3312fe68d73ddd8db3d40a35cefbed1b9ac7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196007"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-移除 IDE 已設定特定的執行階段架構或語言的例外狀況的清單。  
+移除 IDE 已針對特定執行時間架構或語言設定的例外狀況清單。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,15 +40,15 @@ int RemoveAllSetExceptions( 
   
 #### <a name="parameters"></a>參數  
  `guidType`  
- [in]語言 GUID 或執行階段架構特有的偵錯引擎的 GUID。  
+ 在適用于語言的 GUID 或針對執行時間架構所特有之 debug engine 的 GUID。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 移除這個方法的例外狀況由先前呼叫設定[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)方法。  
+ 這個方法所移除的例外狀況是由先前對 [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) 方法的呼叫所設定。  
   
- 若要移除特定的例外狀況，請呼叫[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)方法。  
+ 若要移除特定的例外狀況，請呼叫 [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) 方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

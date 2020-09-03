@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: f8579a4e8088dc0fc6e7403da7f0371e46f2c928
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87507959"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>使用 XAML 設計工具建立 UI
@@ -27,7 +27,7 @@ Visual Studio 和 Blend for Visual Studio 中的 XAML 設計工具提供視覺�
 如果是進階使用者，您甚至可以[自訂 XAML 設計工具](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md)。
 
 > [!NOTE]
-> Xamarin 不支援 XAML 設計工具。 若要在應用程式執行時查看 Xamarin 的 XAML Ui 並加以編輯，請使用適用于 Xamarin 的 XAML 熱重載。 如需詳細資訊，請參閱適用于[Xamarin 的 XAML 熱重載（預覽）](/xamarin/xamarin-forms/xaml/hot-reload/)頁面。
+> Xamarin 不支援 XAML 設計工具。 若要在應用程式執行時，查看您的 Xamarin. Forms XAML Ui 並進行編輯，請使用適用于 Xamarin 的 XAML 熱重新載入。 如需詳細資訊，請參閱 [適用于 Xamarin (Preview 的 XAML 熱重新載入) ](/xamarin/xamarin-forms/xaml/hot-reload/) 頁面。
 
 ## <a name="xaml-designer-workspace"></a>XML 設計工具工作區
 
@@ -65,7 +65,7 @@ Grid 滑軌可用來管理 [Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板中�
 
 **邊界**
 
-邊界代表控制項邊緣與其容器邊緣之間的固定間距。 您可以使用 [**屬性**] 視窗中 [**版面**配置] 底下的[Margin](xref:Windows.UI.Xaml.FrameworkElement.Margin)屬性設定控制項的邊界。
+邊界代表控制項邊緣與其容器邊緣之間的固定間距。 您可以使用 [**屬性**] 視窗中 [**版面**配置] 下的 [[邊界](xref:Windows.UI.Xaml.FrameworkElement.Margin)] 屬性來設定控制項的邊界。
 
 **邊界裝飾項**
 
@@ -91,7 +91,7 @@ Grid 滑軌可用來管理 [Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板中�
 
 **開啟/關閉貼齊至格線**
 
-如果已啟用 [**貼齊至格線**]，當您將專案拖曳至畫板時，元素通常會對齊最接近的水準和垂直格線。
+如果已啟用 [ **貼齊至格線** ]，當您將專案拖曳到畫板上時，元素通常會對齊最接近的水準和垂直格線。
 
 **切換畫板背景**
 
@@ -117,26 +117,26 @@ Visual Studio 中的 [文件大綱] 視窗類似 Blend for Visual Studio 中的 
 
 - 檢視畫板上所有項目的階層式結構。
 
-- 選取元素，讓您可以修改它們。 例如，您可以在階層中四處移動，或在屬性視窗中設定其屬性。 如需詳細資訊，請參閱[使用 XAML 設計工具中的項目](../xaml-tools/working-with-elements-in-xaml-designer.md)。
+- 選取專案，讓您可以加以修改。 例如，您可以在階層中四處移動，或在屬性視窗中設定其屬性。 如需詳細資訊，請參閱[使用 XAML 設計工具中的項目](../xaml-tools/working-with-elements-in-xaml-designer.md)。
 
 - 為控制項項目建立及修改樣板。
 
 - [建立動畫](animate-objects-in-xaml-designer.md) (僅適用於 Blend for Visual Studio)。
 
-若要在 Visual Studio 中查看 [檔大綱] 視窗，請在功能表列上選取 [**查看**  >  **其他視窗**  >  **檔大綱**]。
-若要在 Blend for Visual Studio 中查看 [物件與時間軸] 視窗，請在功能表列上選取 [**視圖**  >  **檔大綱**]。
+若要在 Visual Studio 中查看 [檔大綱] 視窗，請在功能表列上選取 [**查看**  >  **其他 Windows**  >  **檔大綱**]。
+若要在 Blend for Visual Studio 中查看物件與時間軸視窗，請在功能表列上選取 [**視圖**  >  **檔大綱**]。
 
 ![Visual Studio 的 [文件大綱] 視窗](media/document-outline-window.png)
 
-[文件大綱]/[物件與時間軸] 視窗的主要檢視會以樹狀結構顯示文件的階層。 您可以利用文件大綱的階層本質，以各種不同詳細層級檢查文件，以及單獨或依群組鎖定和隱藏元素。 [檔大綱]/[物件與時間軸] 視窗中提供下列選項：
+[文件大綱]/[物件與時間軸] 視窗的主要檢視會以樹狀結構顯示文件的階層。 您可以利用文件大綱的階層本質，以各種不同詳細層級檢查文件，以及單獨或依群組鎖定和隱藏元素。 [檔大綱]/物件與時間軸視窗中提供下列選項：
 
 **顯示/隱藏**
 
-顯示或隱藏畫板元素。 出現時，會顯示為眼睛符號。 您也可以按**ctrl** + **H**來隱藏元素，並按**Shift** + **ctrl** + **h**加以顯示。
+顯示或隱藏畫板元素。 出現時，會顯示為眼睛符號。 您也可以按**ctrl** + **h**來隱藏專案，並使用**Shift** + **ctrl** + **h**來顯示它。
 
 **鎖定/解除鎖定**
 
-將畫板元素鎖定或解除鎖定。 無法修改鎖定的項目。 鎖定時，會顯示為掛鎖符號。 您也可以按**ctrl** + **L**來鎖定元素，並按**Shift** + **ctrl** + **l**來解除鎖定。
+將畫板元素鎖定或解除鎖定。 無法修改鎖定的項目。 鎖定時，會顯示為掛鎖符號。 您也可以按**ctrl** + **l**來鎖定元素，並**Shift** + 將**ctrl** + **l**解除鎖定。
 
 **將範圍傳回 pageRoot**
 
@@ -162,7 +162,7 @@ Visual Studio 中的 [文件大綱] 視窗類似 Blend for Visual Studio 中的 
 
 如需有關使用屬性及處理事件的詳細資訊，請參閱[控制項和模式的簡介](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 XAML 設計工具中的項目](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [如何建立和套用資源](../xaml-tools/how-to-create-and-apply-a-resource.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetRegistryRoot |Microsoft Docs
+title: IDebugEngine2：： SetRegistryRoot |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39bb532301d34a3abf9988cfa909e1606c3c73e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195950"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-設定偵錯引擎 (DE) 的登錄根目錄。  
+設定 debug engine (DE) 的登錄根目錄。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,13 +40,13 @@ int SetRegistryRoot( 
   
 #### <a name="parameters"></a>參數  
  `pszRegistryRoot`  
- [in]若要使用的登錄根目錄。  
+ 在要使用的登錄根目錄。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法可讓[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]來指定替代的登錄根目錄 DE 應該用來取得登錄設定; 例如，"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp 」。  
+ 此方法可讓您 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 指定 DE 應用來取得登錄設定的替代登錄根目錄，例如 "HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0exp"。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

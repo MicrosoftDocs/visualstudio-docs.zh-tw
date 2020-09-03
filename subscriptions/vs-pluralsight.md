@@ -2,17 +2,17 @@
 title: Visual Studio 訂用帳戶的 Pluralsight 權益 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 04/20/2020
+ms.date: 08/04/2020
 ms.topic: how-to
 description: 了解有關隨附於所選 Visual Studio 訂用帳戶的 Pluralsight 訓練課程訂用帳戶。
-ms.openlocfilehash: f06b2bb8d2151255cb606fd3dcb8344b1fb37411
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85001d4473e504bd149a1cd1402a9f4dd01f2a13
+ms.sourcegitcommit: 1d74273a50ede5a90d9d64372d93aad357daef42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "87375894"
+ms.locfileid: "89365866"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Pluralsight 訓練課程權益
 
@@ -23,35 +23,49 @@ ms.locfileid: "87375894"
  根據所擁有的訂閱類型，並非所有先前使用透過 Visual Studio 訂閱提供之 Pluralsight 訂閱的「訂閱者」，都將能夠兌換新的 Pluralsight 權益供應項目。 如果您不符合兌換額外 Pluralsight 訓練課程權益的資格，則當您嘗試在 Pluralsight 網站啟用權益時，將會收到通知。
 
 ## <a name="activation-steps"></a>啟用步驟
-1. 若要啟用您的訂用帳戶，請連線到 [ [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) Pluralsight 權益] 磚上的 [ **取得程式碼** ] 連結（位於 [專業開發] 區段）。
+1. 若要啟用您的訂用帳戶，請連接到， [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 然後按一下 Pluralsight 權益磚上的 [ **啟用** ] 連結。  若要縮小顯示的圖格清單，您可以選擇群組篩選。  Pluralsight 位於專業開發權益群組中。
    > [!div class="mx-imgBorder"]
-   > ![Pluralsight 權益磚](_img/vs-pluralsight/vs-pluralsight-6month-tile.png)
-   >
-   > [!IMPORTANT]
-   > 當您按一下 Pluralsight 權益磚上的 [取得代碼] 連結時，您可能會收到下列訊息：
-   >
-   > **「請注意：如果您先前透過 Visual Studio 訂閱啟用其他 Pluralsight 供應項目，此代碼可能無法讓您建立新的 Pluralsight 帳戶。」**
+   > ![Pluralsight 權益磚](_img/vs-pluralsight/vs-pluralsight-tile.png "按一下 [啟用] 索取您的權益")
 
-2. 您會收到已順利擷取優待券代碼的通知。  按一下 [啟用]。
-
-3. 系統會將您重新導向至 Visual Studio 訂閱隨附的 Pluralsight 權益頁面。
+1. 系統會將您重新導向至 Visual Studio 訂閱隨附的 Pluralsight 權益頁面。
    - 在表單中提供要求的連絡資訊
-   - 按一下核取方塊，接受使用條款和隱私權原則
-   - 按一下 [I agree, activate benefit] (我同意，啟用權益)****。
+   - 按一下核取方塊以接受使用條款
+   - 按一下 [ **兌換**]。
    > [!div class="mx-imgBorder"]
-   > ![Pluralsight 啟用您的權益](_img/vs-pluralsight/vs-pluralsight-create-account.png)
+   > ![Pluralsight 註冊](_img/vs-pluralsight/vs-pluralsight-registration.png "完成註冊表單，按一下核取方塊以接受條款，然後按一下兌換")
 
-5. 可能需要一點時間來設定您的帳戶。  完成之後，您將會在頁面上看到確認訊息，並收到一封電子郵件，其中包含您的登入資訊。  此電子郵件將會傳送至您在建立帳戶時所指定的別名。  如果找不到此郵件，請務必檢查您的垃圾郵件資料夾。
+   > [!NOTE]
+   > 註冊頁面會在幾分鐘後到期。  如果您未在頁面到期前完成註冊程式，請返回頁面上的 [Pluralsight] 磚， <https://my.visualstudio.com/benefits> 然後按一下 [重新 **啟動** ]。 
+
+1. 可能需要一點時間來設定您的帳戶。  完成之後，您會在頁面上看到確認，並會收到一封電子郵件，其中包含您的登入資訊。  此電子郵件將會傳送至您在建立帳戶時所指定的別名。  如果找不到此郵件，請務必檢查您的垃圾郵件資料夾。
 
    > [!NOTE]
    > 如果您的帳戶不符合兌換新供應項目的資格，您收到的電子郵件將會說明由於不符合資格，因此無法建立您的帳戶。  它也會包含可協助您連絡 Pluralsight 支援小組的資訊，該小組可回答您對帳戶可能有的任何疑問。
-   
 
-6. 成功建立您的帳戶之後，您收到的電子郵件將包含您的使用者名稱，並要求您建立密碼。  請提供您的密碼，再次輸入加以確認，然後按一下 [Log in to Pluralsight (登入 Pluralsight)]****。
+1. 按一下 [ **設定密碼**]。
 
-7. 輸入歡迎電子郵件中所提供的使用者名稱，以及您剛才建立的密碼，然後按一下 [Sign in (登入)]****。
+1. 在 [ **新密碼** ] 欄位中輸入您想要的密碼，然後再次在 [ **確認密碼** ] 欄位中輸入，然後按一下 [ **儲存**]。
 
-8. 這樣就完成了！  您現在準備好要開始學習數以千計的 Pluralsight 課程！
+1. 這樣就完成了！  您現在準備好要開始學習數以千計的 Pluralsight 課程！
+
+## <a name="status-of-your-pluralsight-subscription"></a>Pluralsight 訂用帳戶的狀態
+啟用您的 Pluralsight 權益之後，Visual Studio 訂用帳戶入口網站中的圖格外觀將會變更，以協助您追蹤訂用帳戶的狀態。  
+
+### <a name="while-your-subscription-is-active"></a>當您的訂用帳戶為使用中
+您現在會看到一個小小的圓形按鈕，而不是 [啟用] 按鈕，如果按一下，會將您直接帶到 Pluralsight 入口網站，讓您可以登入並繼續進行訓練。  
+
+在圖格頂端的 Pluralsight 標題下，您會看到文字顯示 Pluralsight 訂用帳戶上剩餘的時間。  當您的訂用帳戶在60天內到期時，文字將會切換為顯示剩餘的天數，而不是月數。  
+
+在圖格底部，您會看到文字顯示 Pluralsight 訂用帳戶的啟用日期和到期日。
+
+   > [!div class="mx-imgBorder"]
+   > ![啟用後的 Pluralsight 圖格](_img/vs-pluralsight/vs-pluralsight-activated.png "啟用之後，磚會顯示您的訂用帳戶剩餘的天數，以及到期日和 Pluralsight 入口網站的連結。")
+
+### <a name="when-your-subscription-expires"></a>當您的訂用帳戶到期時
+當您的 Pluralsight 訂用帳戶到期時，狀態將會變更為「剩餘0天」，且將會移除 Pluralsight 入口網站的連結。 您仍然可以看到您啟用訂用帳戶的日期，以及它到期的日期。  
+   > [!div class="mx-imgBorder"]
+   > ![到期後的 Pluralsight 磚](_img/vs-pluralsight/vs-pluralsight-expired.png "過期之後，將會移除 Pluralsight 的連結，而且訂用帳戶的作用中日期會顯示在磚底部。")
+
 
 ## <a name="eligibility"></a>資格
 
@@ -83,6 +97,9 @@ ms.locfileid: "87375894"
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>問：我是否可以存取任何自訂的學習播放清單或頻道？
 A：是。 作為 Visual Studio 的訂閱者，您可以在 Pluralsight 訓練權益中，存取精選角色、學習路徑和自訂頻道 (播放清單) 。 精選內容是由 Microsoft 和 Pluralsight 特別策劃，而且是為了學習感興趣的重要區域。 透過您的 Visual Studio 訂用帳戶入口網站啟用您的 Pluralsight 權益， <https://my.visualstudio.com/benefits> 以存取 Pluralsight 首頁上的這個內容和其他內容。
+
+### <a name="q-the-pluralsight-tile-doesnt-have-an-activate-link-how-can-i-activate-the-benefit"></a>問： Pluralsight 圖格沒有「啟動」連結。 如何啟用權益？
+答：如果您已啟用您的 Pluralsight 權益，[啟動] 連結將會被帶您前往 Pluralsight 登入頁面的連結取代。  您也會看到啟用權益的日期，以及您訂用帳戶上剩餘時間的相關資訊。  如果您已經使用訂用帳戶，您將無法啟用另一個訂用帳戶。
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>問：當我的 Pluralsight 訂用帳戶到期時會發生什麼事？
 答：在免費的 Pluralsight 訂用帳戶結束時，您可以選擇直接從 Pluralsight 購買訂用帳戶。  請連絡 [Pluralsight](https://www.pluralsight.com) 以了解完整詳細資料。

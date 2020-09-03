@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87507985"
 ---
 # <a name="first-look-at-profiling-tools"></a>初步認識分析工具
 
-Visual Studio 提供各種不同的分析工具，可協助您依據應用程式類型來診斷不同類型的效能問題。 在本文中，我們會快速查看最常見的程式碼剖析工具。
+Visual Studio 提供各種不同的分析工具，可協助您依據應用程式類型來診斷不同類型的效能問題。 在本文中，我們將快速瞭解最常見的程式碼剖析工具。
 
-## <a name="view-performance-while-debugging"></a>在進行調試時查看效能
+## <a name="view-performance-while-debugging"></a>在調試時查看效能
 
 您可以在偵錯工作階段期間，存取 [診斷工具] 視窗提供的分析工具。 [診斷工具] 視窗會自動出現，除非您將其關閉。 如需顯示視窗，請按一下 [偵錯]/[視窗]/[顯示診斷工具]****。 視窗開啟時，您可以選取要用來收集資料的工具。
 
@@ -37,20 +37,20 @@ Visual Studio 提供各種不同的分析工具，可協助您依據應用程式
 
 ![診斷工具摘要視圖](../profiling/media/prof-tour-cpu-and-memory-graph.gif "診斷工具摘要")
 
-[**診斷工具**] 視窗是分析應用程式的常見方式，但針對發行組建，您也可以改為執行應用程式的事後剖析後分析。 如需不同方法的詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 若要查看針對不同應用程式類型的分析工具支援，請參閱[應該使用哪一種工具？](#which-tool-should-i-use)
+**診斷工具**視窗是分析應用程式的常見方式，但針對發行組建，您也可以改為對應用程式進行事後剖析後的分析。 如需不同方法的詳細資訊，請參閱 [使用或不使用偵錯工具來執行程式碼剖析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 若要查看針對不同應用程式類型的分析工具支援，請參閱[應該使用哪一種工具？](#which-tool-should-i-use)
 
 > [!NOTE]
 > 您可以在 Windows 7 及更新版本中使用事後分析工具。 Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具]**** 視窗)。
 
 ## <a name="examine-performance-using-perftips"></a>使用效能提示檢查效能
 
-最簡單的方式是查看效能資訊，這是使用[效能提示](../profiling/perftips.md)。 使用效能提示，您可以在與程式碼互動時查看效能資訊。 您可以檢查事件持續時間等資訊 (從上次暫停偵錯工具或應用程式啟動時開始測量)。 例如，如果您逐步執行程式碼（F10，F11），效能提示會向您顯示上一個步驟作業到目前步驟的應用程式執行時間期間。
+通常，最簡單的方式是使用 [效能提示](../profiling/perftips.md)來查看效能資訊。 您可以使用效能提示，在與程式碼互動時查看效能資訊。 您可以檢查事件持續時間等資訊 (從上次暫停偵錯工具或應用程式啟動時開始測量)。 例如，如果您逐步執行程式碼 (F10，F11) ，效能提示會向您顯示上一個步驟作業到目前步驟的應用程式執行時間持續時間。
 
 ![分析導覽效能提示](../profiling/media/prof-tour-perf-tips.png "分析導覽效能提示")
 
-您可以使用效能提示來檢查程式碼區塊執行所需的時間，或完成單一函式所需的時間。
+您可以使用效能提示來檢查程式碼區塊執行所需的時間，或是單一函式完成所需的時間。
 
-效能提示顯示的事件，也會顯示在診斷工具的 [**事件**] 視圖中。 在 [**事件**] 視圖中，您可以查看在進行偵錯工具時所發生的不同事件，例如中斷點或程式碼逐步執行作業的設定。
+效能提示顯示的事件也會顯示在診斷工具的 [ **事件** ] 視圖中。 在 [ **事件** ] 視圖中，您可以查看正在進行偵錯工具時所發生的不同事件，例如中斷點或程式碼逐步執行作業的設定。
 
 ![診斷工具事件檢視](../profiling/media/prof-tour-events.png "診斷工具 View 事件")
 
@@ -59,31 +59,31 @@ Visual Studio 提供各種不同的分析工具，可協助您依據應用程式
 
 ## <a name="analyze-cpu-usage"></a>分析 CPU 使用
 
-CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會告訴您應用程式耗用的 CPU 資源詳細資訊。 如需 CPU 使用量工具的更詳細逐步解說，請參閱藉[由分析 cpu 使用量來測量應用程式效能](../profiling/beginners-guide-to-performance-profiling.md)。
+CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會告訴您應用程式耗用的 CPU 資源詳細資訊。 如需 CPU 使用量工具的詳細逐步解說，請參閱藉 [由分析 cpu 使用量來測量應用程式效能](../profiling/beginners-guide-to-performance-profiling.md)。
 
 從 [診斷工具] 的 [摘要]**** 檢視中，選擇 [啟用 CPU 分析]**** \(必須在偵錯工作階段中)。
 
 ![啟用診斷工具中的 CPU 使用量](../profiling/media/prof-tour-enable-cpu-profiling.png "診斷工具啟用 CPU 使用量")
 
-使用此工具的其中一種方法是在程式碼中設定兩個中斷點，一個在開頭，一個在函式的結尾，另一個則是您想要分析的程式碼區域。 當您在第二個中斷點上暫停時，即可檢查分析資料。
+使用此工具的其中一種方式，是在您的程式碼中設定兩個中斷點，一個是在函式的結尾，另一個則是您想要分析的程式碼區域。 當您在第二個中斷點上暫停時，即可檢查分析資料。
 
 [CPU 使用量]**** 檢視會顯示一份執行時間最長的函式清單，並將時間最長的放在頂端來排序。 這可協助引導您找出發生效能瓶頸的函式。
 
-![診斷工具 CPU 使用量] 視圖](../profiling/media/prof-tour-cpu-usage.png "診斷工具 CPU 使用量")
+![診斷工具 CPU 使用量視圖](../profiling/media/prof-tour-cpu-usage.png "診斷工具 CPU 使用量")
 
 按兩下要查看的函式，即會看到更詳細的三個窗格「蝶型」檢視：視窗中間為已選取的函式、左側為發出呼叫的函式，右側為接收呼叫的函式。 [函式主體]**** 區段會顯示函式主體所花費的總時間 (和時間百分比)，但不包括發出呼叫的函式和接收呼叫的函式所花的時間。 這項資料可協助您評估函式本身是否有效能瓶頸。
 
-![診斷工具呼叫者「蝴蝶」視圖](../profiling/media/prof-tour-cpu-usage-caller-callee.png "診斷工具呼叫端被呼叫端視圖")
+![診斷工具呼叫端「蝴蝶」視圖](../profiling/media/prof-tour-cpu-usage-caller-callee.png "診斷工具呼叫端的被呼叫端視圖")
 
 ## <a name="analyze-memory-usage"></a>分析記憶體使用量
 
-[**診斷工具**] 視窗也可讓您使用 [**記憶體使用量**] 工具來評估應用程式中的記憶體使用量。 例如，您可以查看堆積的物件數目和大小。 如需分析記憶體的詳細指示，請參閱[分析記憶體使用量](../profiling/memory-usage.md)。 另一個記憶體分析工具（ [.Net 物件組態工具](../profiling/dotnet-alloc-tool.md)）可協助您識別 .net 程式碼中的配置模式和異常。
+**診斷工具**] 視窗也可讓您使用 [**記憶體使用量**] 工具來評估應用程式中的記憶體使用量。 例如，您可以查看堆積的物件數目和大小。 如需分析記憶體的詳細指示，請參閱 [分析記憶體使用量](../profiling/memory-usage.md)。 另一個記憶體分析工具是 [.Net 物件組態工具](../profiling/dotnet-alloc-tool.md)，可協助您識別 .net 程式碼中的配置模式和異常。
 
-若要使用偵錯工具整合的記憶體使用量來分析記憶體使用量，您必須至少採用一個記憶體快照集。 通常，分析記憶體的最佳方式是擷取兩個快照：第一個快照是在可能發生記憶體問題之前擷取，第二個快照則是緊接在可能發生記憶體問題之後擷取。 然後您可以檢視兩個快照的差異，並查看其中到底有什麼變更。
+若要使用偵錯工具整合的記憶體使用量來分析記憶體使用量，您必須至少取得一個記憶體快照集。 通常，分析記憶體的最佳方式是擷取兩個快照：第一個快照是在可能發生記憶體問題之前擷取，第二個快照則是緊接在可能發生記憶體問題之後擷取。 然後您可以檢視兩個快照的差異，並查看其中到底有什麼變更。
 
-![在診斷工具中製作快照集](../profiling/media/prof-tour-take-snapshots.gif "診斷工具拍攝快照")
+![取得診斷工具中的快照集](../profiling/media/prof-tour-take-snapshots.gif "診斷工具拍攝快照集")
 
-當您選取其中一個箭號連結時，系統會為您提供堆積的差異視圖（紅色向上箭號的![記憶體使用量增加](../profiling/media/prof-tour-mem-usage-up-arrow.png "記憶體使用量增加")會顯示增加的物件計數（左）或增加的堆積大小（right））。 如果您按一下右邊的連結，即會取得差異堆積檢視，該檢視會以堆積大小增加最多的物件來排序。 這麼做有助您鎖定記憶體的問題。 如下圖所示，`ClassHandlersStore` 物件使用的位元組在第二張快照中增加了 3,492 個位元組。
+當您選取其中一個箭號連結時，您會看到堆積的差異視圖 (紅色向上箭號 ![記憶體使用量增加](../profiling/media/prof-tour-mem-usage-up-arrow.png "記憶體使用量增加") 會顯示遞增的物件計數 (左) 或 (右) # A5 的遞增堆積大小。 如果您按一下右邊的連結，即會取得差異堆積檢視，該檢視會以堆積大小增加最多的物件來排序。 這麼做有助您鎖定記憶體的問題。 如下圖所示，`ClassHandlersStore` 物件使用的位元組在第二張快照中增加了 3,492 個位元組。
 
 ![診斷工具堆積差異視圖](../profiling/media/prof-tour-mem-usage-diff-heap.png "診斷工具堆積差異視圖")
 
@@ -91,13 +91,13 @@ CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會
 
 ## <a name="profile-release-builds-without-the-debugger"></a><a name="post_mortem"></a> 不使用偵錯工具來分析發行組建
 
-分析工具 (如 CPU 使用率和記憶體使用量) 可與偵錯工具搭配使用 (請參閱稍早章節)，或者，您可以使用專為**發行**組建提供分析的效能分析工具，在事後執行分析工具。 使用效能分析工具時，您可以在執行應用程式時收集診斷資訊，並在應用程式停止之後檢查所收集的資訊。 如需不同方法的詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 效能分析工具也提供其他工具，例如[.Net 物件組態工具](../profiling/dotnet-alloc-tool.md)。
+分析工具 (如 CPU 使用率和記憶體使用量) 可與偵錯工具搭配使用 (請參閱稍早章節)，或者，您可以使用專為**發行**組建提供分析的效能分析工具，在事後執行分析工具。 使用效能分析工具時，您可以在執行應用程式時收集診斷資訊，並在應用程式停止之後檢查所收集的資訊。 如需不同方法的詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 您也可以在效能分析工具中找到其他工具（例如 [.Net 物件組態工具](../profiling/dotnet-alloc-tool.md) ）。
 
 ![效能分析工具](../profiling/media/prof-tour-performance-profiler.png "效能分析工具")
 
-選擇 [偵錯工具] [ **Debug**  >  **效能**分析工具] （或**Alt + F2**）以開啟效能分析工具。
+選擇**Debug**  >  **效能分析工具** (或**Alt + F2**) 以開啟效能分析工具。
 
-此視窗可讓您在某些情況下選取[多個程式碼剖析工具](../profiling/use-multiple-profiler-tools-simultaneously.md)。 [CPU 使用量] 這類工具也可以提供有助於分析的補充資料。 您也可以使用[命令列](../profiling/profile-apps-from-command-line.md)分析工具來啟用涉及多個程式碼剖析工具的案例。
+在某些情況下，此視窗可讓您選取 [多個程式碼剖析工具](../profiling/use-multiple-profiler-tools-simultaneously.md) 。 [CPU 使用量] 這類工具也可以提供有助於分析的補充資料。 您也可以使用 [命令列](../profiling/profile-apps-from-command-line.md) 分析工具來啟用牽涉到多個程式碼剖析工具的情節。
 
 ## <a name="analyze-resource-consumption-xaml"></a>分析資源取用量 (XAML)
 
@@ -107,7 +107,7 @@ CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會
 
 ![應用程式時間軸程式碼剖析工具](../profiling/media/prof-tour-application-timeline.gif "分析導覽應用程式時間軸")
 
-在 [時間軸詳細資料] 視圖中，您可以找到像是活動的類型（或相關的 UI 元素）以及活動的持續時間等資訊。 例如，圖例中，格線控制項的 [配置]**** 事件花了 57.53 毫秒。
+在時間軸詳細資料檢視中，您可以找到相關資訊，例如活動的類型 (或相關的 UI 元素) 以及活動的持續時間。 例如，圖例中，格線控制項的 [配置]**** 事件花了 57.53 毫秒。
 
 如需詳細資訊，請參閱[應用程式時間軸](../profiling/application-timeline.md)。
 
@@ -115,35 +115,35 @@ CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會
 
 ## <a name="examine-application-events"></a>檢查應用程式事件
 
-一般[事件檢視器](../profiling/events-viewer.md)可讓您透過事件清單（例如模組負載、執行緒啟動和系統設定）來查看應用程式的活動，以協助您在 Visual Studio profiler 中正確地診斷應用程式的執行方式。 此工具可在效能分析工具中使用。 選擇 [偵錯工具] [ **Debug**  >  **效能**分析工具] （或**Alt + F2**）以開啟效能分析工具。
+一般 [事件檢視器](../profiling/events-viewer.md) 可讓您透過事件清單（例如模組載入、執行緒啟動和系統設定）來查看應用程式的活動，以協助更妥善地診斷您的應用程式在 Visual Studio profiler 內的執行狀況。 這項工具可在效能分析工具中取得。 選擇**Debug**  >  **效能分析工具** (或**Alt + F2**) 以開啟效能分析工具。
 
 此工具會在清單視圖中顯示每個事件。 資料行提供每個事件的相關資訊，例如事件名稱、時間戳記和處理序識別碼。
 
 ![事件檢視器追蹤](../profiling/media/eventviewertrace.png "事件檢視器追蹤")
 
-## <a name="analyze-asynchronous-code-net"></a>分析非同步程式碼（.NET）
+## <a name="analyze-asynchronous-code-net"></a> ( .NET) 分析非同步程式碼
 
-[.Net Async 工具](../profiling/analyze-async.md)可讓您分析應用程式中非同步程式碼的效能。 此工具可在效能分析工具中使用。 選擇 [偵錯工具] [ **Debug**  >  **效能**分析工具] （或**Alt + F2**）以開啟效能分析工具。
+[.NET Async 工具](../profiling/analyze-async.md)可讓您分析應用程式中非同步程式碼的效能。 這項工具可在效能分析工具中取得。 選擇**Debug**  >  **效能分析工具** (或**Alt + F2**) 以開啟效能分析工具。
 
-此工具會在清單視圖中顯示每個非同步作業。 您可以查看如 [開始時間]、[結束時間] 和 [非同步作業的總時間] 等資訊。
+此工具會在清單視圖中顯示每個非同步作業。 您可以查看資料的相關資訊，例如開始時間、結束時間和非同步作業的總時間。
 
 ![.NET Async 工具已停止](../profiling/media/async-tool-opened.png ".NET Async 工具已停止")
 
-## <a name="analyze-database-performance-net-core"></a>分析資料庫效能（.NET Core）
+## <a name="analyze-database-performance-net-core"></a> ( .NET Core) 分析資料庫效能
 
-對於使用 ADO.NET 或 Entity Framework Core 的 .NET Core 應用程式，[資料庫工具](../profiling/analyze-database.md)可讓您記錄應用程式在診斷會話期間所進行的資料庫查詢。 接著，您可以分析個別查詢的相關資訊，以找出可改善應用程式效能的位置。 此工具可在效能分析工具中使用。 選擇 [偵錯工具] [ **Debug**  >  **效能**分析工具] （或**Alt + F2**）以開啟效能分析工具。
+針對使用 ADO.NET 或 Entity Framework Core 的 .NET Core 應用程式， [資料庫工具](../profiling/analyze-database.md) 可讓您在診斷會話期間記錄應用程式所進行的資料庫查詢。 然後，您可以分析個別查詢的相關資訊，以找出可改善應用程式效能的位置。 這項工具可在效能分析工具中取得。 選擇**Debug**  >  **效能分析工具** (或**Alt + F2**) 以開啟效能分析工具。
 
 此工具會在清單視圖中顯示每個查詢。 您可以查看查詢開始時間和持續時間等資訊。
 
-![配置](./media/db-gotosource.png "配置")
+![分配](./media/db-gotosource.png "配置")
 
 ::: moniker-end
 
 ## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>檢查 UI 效能和協助工具事件 (UWP)
 
-在您的 UWP 應用程式中，您可以在 [**診斷工具**] 視窗中啟用**UI 分析**。 此工具會搜尋常見的效能或協助工具問題，並於偵錯時將問題顯示在 [事件]**** 檢視中。 事件描述提供有助您解決問題的相關資訊。
+在 UWP 應用程式中，您可以在**診斷工具**視窗中啟用**UI 分析**。 此工具會搜尋常見的效能或協助工具問題，並於偵錯時將問題顯示在 [事件]**** 檢視中。 事件描述提供有助您解決問題的相關資訊。
 
-![在診斷工具中查看 UI 分析事件](../profiling/media/prof-tour-ui-analysis.png "診斷工具 View UI 分析事件")
+![在診斷工具中查看 UI 分析事件](../profiling/media/prof-tour-ui-analysis.png "診斷工具視圖 UI 分析事件")
 
 ## <a name="analyze-gpu-usage-direct3d"></a>分析 GPU 使用量 (Direct3D)
 
@@ -172,7 +172,7 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 ::: moniker range="vs-2017"
 ## <a name="analyze-network-usage-uwp"></a>分析網路使用量 (UWP)
 
-在 UWP 應用程式中，您可以使用 API 來分析執行的網路作業 `Windows.Web.Http` 。 此工具可協助您解決存取和驗證問題、不正確的快取使用，以及不佳的顯示和下載效能等問題。 若要使用此工具，請選擇 [效能分析工具] 中的 [網路]****，然後選擇 [開始]****。 在應用程式中，完整瀏覽使用 `Windows.Web.Http` 的案例，然後選擇 [停止收集]**** 以產生報表。
+在 UWP 應用程式中，您可以使用 API 來分析執行的網路作業 `Windows.Web.Http` 。 此工具可協助您解決問題，例如存取和驗證問題、不正確的快取使用，以及不佳的顯示和下載效能。 若要使用此工具，請選擇 [效能分析工具] 中的 [網路]****，然後選擇 [開始]****。 在應用程式中，完整瀏覽使用 `Windows.Web.Http` 的案例，然後選擇 [停止收集]**** 以產生報表。
 
 ![網路流量分析工具](../profiling/media/prof-tour-network-usage.png "診斷網路使用量")
 
@@ -190,7 +190,7 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-在 Visual Studio 2019 中，舊版效能總管和相關的程式碼剖析工具（例如 [效能] Wizard）已折迭至 [效能分析工具]，您可以使用 [ **Debug**]  >  **效能 profiler**開啟此功能。 在效能分析工具中，可用的診斷工具取決於選擇的目標和目前的開放式啟始專案。 [CPU 使用量] 工具提供了先前在 [效能] Wizard 中支援的取樣功能。 偵查工具會提供效能 Wizard 中的檢測分析功能（適用于精確的呼叫計數和持續時間）。 額外的記憶體工具也會出現在效能分析工具中。
+在 Visual Studio 2019 中，舊版效能總管和相關的分析工具（例如 Performance Wizard）已折迭至效能分析工具，您可以使用**Debug**效能分析工具來開啟此功能  >  ** **。 在效能分析工具中，可用的診斷工具取決於所選目標和目前開啟的啟始專案。 [CPU 使用量] 工具提供之前在效能分析工具中支援的取樣功能。 偵查工具會提供已檢測的程式碼剖析功能， (用於效能 Wizard 中的精確呼叫計數和持續時間) 。 額外的記憶體工具也會出現在效能分析工具中。
 ::: moniker-end
 
 ![效能總管工具](../profiling/media/prof-tour-performance-explorer.png "效能總管")
@@ -202,15 +202,15 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 ::: moniker range=">=vs-2019"
 |效能工具|Windows 桌面|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[效能提示](../profiling/perftips.md)|可以|是|是|
-|[CPU 使用量](../profiling/cpu-usage.md)|可以|是|是|
-|[記憶體使用量](../profiling/memory-usage.md)|可以|是|是|
-|[.NET 物件配置](../profiling/dotnet-alloc-tool.md)|是（僅限 .NET）|可以|是|
-|[GPU 使用量](/visualstudio/debugger/graphics/gpu-usage)|可以|是|不可以|
-|[應用程式時間軸](../profiling/application-timeline.md)|可以|是|不可以|
-|[事件檢視器](../profiling/events-viewer.md)|可以|是|是|
-|[.NET Async](../profiling/analyze-async.md)|是（僅限 .NET）|可以|是|
-|[Database](../profiling/analyze-database.md)|是（僅限 .NET Core）|否|是（僅限 ASP.NET Core）|
+|[效能提示](../profiling/perftips.md)|是|是|是|
+|[CPU 使用量](../profiling/cpu-usage.md)|是|是|是|
+|[記憶體使用量](../profiling/memory-usage.md)|是|是|是|
+|[.NET 物件配置](../profiling/dotnet-alloc-tool.md)|是 ( 僅限 .NET) |是|是|
+|[GPU 使用量](/visualstudio/debugger/graphics/gpu-usage)|是|是|否|
+|[應用程式時間軸](../profiling/application-timeline.md)|是|是|否|
+|[事件檢視器](../profiling/events-viewer.md)|是|是|是|
+|[.NET Async](../profiling/analyze-async.md)|是 ( 僅限 .NET) |是|是|
+|[Database](../profiling/analyze-database.md)|是 ( 僅限 .NET Core) |否|是 (只 ASP.NET Core) |
 |[效能總管](../profiling/performance-explorer.md)|否|否|否|
 |[IntelliTrace](../debugger/intellitrace.md)|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|
 ::: moniker-end
@@ -218,10 +218,10 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 ::: moniker range="vs-2017"
 |效能工具|Windows 桌面|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[CPU 使用量](../profiling/cpu-usage.md)|可以|可以|是|
-|[記憶體使用量](../profiling/memory-usage.md)|可以|可以|是|
-|[GPU 使用量](/visualstudio/debugger/graphics/gpu-usage)|可以|是|否|
-|[應用程式時間軸](../profiling/application-timeline.md)|可以|是|否|
+|[CPU 使用量](../profiling/cpu-usage.md)|是|是|是|
+|[記憶體使用量](../profiling/memory-usage.md)|是|是|是|
+|[GPU 使用量](/visualstudio/debugger/graphics/gpu-usage)|是|是|否|
+|[應用程式時間軸](../profiling/application-timeline.md)|是|是|否|
 |[效能提示](../profiling/perftips.md)|是|對 XAML 為是，對 HTML 為否|是|
 |[效能總管](../profiling/performance-explorer.md)|是|否|是|
 |[IntelliTrace](../debugger/intellitrace.md)|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|
@@ -231,5 +231,5 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 ::: moniker-end
 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 偵錯](../debugger/debugger-feature-tour.md)

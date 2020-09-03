@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetScope |Microsoft Docs
+title: IDebugDisassemblyStream2：： GetScope |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 34c4afec675ff6ef46ffba1e20bdffa03d0c47f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196177"
 ---
 # <a name="idebugdisassemblystream2getscope"></a>IDebugDisassemblyStream2::GetScope
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得反組譯碼資料流的範圍。  
+取得反組解碼資料流程的範圍。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,13 +40,13 @@ int GetScope( 
   
 #### <a name="parameters"></a>參數  
  `pdwScope`  
- [out]傳回值，以從[DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)列舉，描述這個反組譯碼資料流的範圍。  
+ 擴展傳回 [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) 列舉中的值，這個值會描述這個反組解碼資料流程的範圍。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 反組譯碼的範圍可以是函式或完整的模組，例如。  
+ 例如，反組解碼的範圍可以是函數或整個模組。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
