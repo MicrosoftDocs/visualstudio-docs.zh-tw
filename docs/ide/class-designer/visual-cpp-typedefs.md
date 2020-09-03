@@ -1,5 +1,5 @@
 ---
-title: 類設計器中的C++類型定義
+title: 類別設計工具中的 c + + Typedef
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 4c57382809b7730df2d7c674c24902d70ccab647
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590692"
 ---
-# <a name="c-typedefs-in-class-designer"></a>C++類設計器中的類型定義
+# <a name="c-typedefs-in-class-designer"></a>類別設計工具中的 c + + typedef
 
-[Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)語句在名稱及其基礎類型之間創建一個或多個間接層。 **類別設計工具**支援 C++ typedef 類型，其使用 `typedef` 關鍵字進行宣告，例如：
+[Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) 語句會在名稱與其基礎類型之間建立一或多個間接取值層。 **類別設計工具**支援 C++ typedef 類型，其使用 `typedef` 關鍵字進行宣告，例如：
 
 ```cpp
 typedef class coord
@@ -68,7 +68,7 @@ typedef struct mystructtag
 
 ## <a name="unnamed-typedefs"></a>未命名的 typedef
 
-雖然您可以宣告沒有名稱的 typedef，但**類別設計工具**不會使用您指定的標籤名稱。 **類別設計工具**會使用**類別檢視**產生的名稱。 例如，以下聲明有效，但它作為名為 **__unnamed**的物件顯示在**類視圖**和**類設計器**中：
+雖然您可以宣告沒有名稱的 typedef，但**類別設計工具**不會使用您指定的標籤名稱。 **類別設計工具**會使用**類別檢視**產生的名稱。 例如，下列宣告有效，但會出現在 **類別檢視** 中，並 **類別設計工具** 為名為 **__unnamed**的物件：
 
 ```cpp
 typedef class coord
@@ -84,5 +84,5 @@ typedef class coord
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用C++代碼](working-with-visual-cpp-code.md)
-- [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)
+- [使用 c + + 程式碼](working-with-visual-cpp-code.md)
+- [Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)

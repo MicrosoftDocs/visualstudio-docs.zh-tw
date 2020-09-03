@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS90 | Microsoft Docs
+title: EVALFLAGS90 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6a95f25f9e970beb31544722b1beeb05b2d480b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156043"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-列舉有效的控制運算式評估的旗標值。 這個列舉型別會擴充[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列舉型別。  
+列舉控制運算式評估之旗標的有效值。 此列舉會擴充 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 列舉。  
   
 ## <a name="syntax"></a>語法  
   
@@ -65,41 +65,41 @@ public enum enum_EVALFLAGS90
   
 #### <a name="parameters"></a>參數  
  EVAL90_RETURNVALUE  
- 指定的評估傳回的值，如果有的話。  
+ 指定要評估的傳回值（如果有的話）。  
   
  EVAL90_NOSIDEEFFECTS  
  指定不允許副作用。  
   
  EVAL90_ALLOWBPS  
- 指定中斷點停止。  
+ 指定在中斷點上停止。  
   
  EVAL90_ALLOWERRORREPORT  
- 指定允許主應用程式報告該錯誤。 主要用於在 Internet Explorer 中的指令碼中的運算式評估。  
+ 指定要允許的主機錯誤報表。 主要用於 Internet Explorer 中腳本的運算式評估。  
   
  EVAL90_FUNCTION_AS_ADDRESS  
- 要評估做為位址，而不是叫用函式的強制函式。  
+ 強制將函數評估為位址，而不是叫用函數。  
   
  EVAL90_NOFUNCEVAL  
- 函式可防止進行評估。 例如，請考慮`int`運算式中的語彙基元`myExpression(int) + 10`。 為位址，但不是能作為值，就可以正確評估此函式。  
+ 防止評估函數。 例如，請考慮 `int` 運算式中的 token `myExpression(int) + 10` 。 此函數可以正確地評估為位址，但不能作為值。  
   
  EVAL90_NOEVENTS  
- 旗標，指出工作階段的偵錯管理員 (SDM) 或 ide，不應該傳送之運算式評估期間發生的事件。  
+ 旗標，表示在運算式評估期間發生的事件，不應該傳送至會話 debug manager (SDM) 或 IDE。  
   
  EVAL90_DESIGN_TIME_EXPR_EVAL  
- 可讓設計階段運算式評估。  
+ 啟用設計時程表達式評估。  
   
  EVAL90_ALLOW_IMPLICIT_VARS  
- 允許隱含變數的建立。  
+ 允許隱含變數建立。  
   
  EVAL90_FORCE_EVALUATION_NOW  
- 若要立即發生強制評估。 服務要求，例如使用者要求時，這非常有用。  
+ 強制立即進行評估。 這在處理要求時很有用，例如使用者要求。  
   
 ## <a name="requirements"></a>需求  
- 標頭：Msdbg90.h  
+ 標頭： Msdbg90。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

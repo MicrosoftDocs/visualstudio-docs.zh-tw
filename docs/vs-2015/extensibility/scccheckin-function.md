@@ -13,16 +13,16 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d8a5a91a0300f256b66970403a3431edf0fe757e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189526"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-此函式會檢查在先前會在簽出原始檔控制系統，儲存所做的變更和建立的新版本的檔案。 此函式呼叫計數與簽入的檔案名稱的陣列。  
+此函式會將先前簽出的檔案簽入至原始檔控制系統，並儲存變更並建立新的版本。 呼叫此函式時，會使用計數和要簽入之檔案的名稱陣列。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,49 +39,49 @@ SCCRTN SccCheckin (
 ```  
   
 #### <a name="parameters"></a>參數  
- pvContext  
- [in]原始檔控制外掛程式的內容結構。  
+ pvCoNtext  
+ 在原始檔控制外掛程式內容結構。  
   
  hWnd  
- [in]SCC 外掛程式時，可以使用當做父代上，它會提供任何對話方塊 IDE 視窗的控制代碼。  
+ 在IDE 視窗的控制碼，SCC 外掛程式可將其做為它所提供之任何對話方塊的父代。  
   
  nFiles  
- [in]選取要簽入的檔案數目。  
+ 在選取要簽入的檔案數目。  
   
  lpFileNames  
- [in]要簽入的檔案的完整格式的本機路徑名稱的陣列。  
+ 在要簽入之檔案的完整本機路徑名稱陣列。  
   
  lpComment  
- [in]要套用至每個選取的檔案簽入註解。 這是`NULL`如果原始檔控制外掛程式應該會提示使用者輸入註解。  
+ 在要套用至每個要簽入之選取檔案的批註。 `NULL`如果原始檔控制外掛程式應該提示輸入批註，則為。  
   
  fOptions  
- [in]命令的旗標，可能是 0 或`SCC_KEEP_CHECKEDOUT`。  
+ 在命令旗標，也就是0或 `SCC_KEEP_CHECKEDOUT` 。  
   
  pvOptions  
- [in]SCC 外掛程式專屬選項。  
+ 在SCC 外掛程式特定的選項。  
   
 ## <a name="return-value"></a>傳回值  
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：  
   
 |值|描述|  
 |-----------|-----------------|  
-|SCC_OK|已成功簽入檔案永遠可使用。|  
-|SCC_E_FILENOTCONTROLLED|選取的檔案不在原始檔控制之下。|  
-|SCC_E_ACCESSFAILURE|發生問題，存取原始檔控制系統，可能是因為網路或競爭問題。 建議使用重試。|  
-|SCC_E_NONSPECIFICERROR|不明確的失敗。 檔案未簽入。|  
-|SCC_E_NOTCHECKEDOUT|使用者將會有未簽出檔案，因此無法簽入。|  
-|SCC_E_CHECKINCONFLICT|無法執行簽入，因為：<br /><br /> -另一位使用者已繼續簽入和`bAutoReconcile`時發生錯誤。<br /><br /> -或-<br /><br /> （例如，當檔案是二進位），則無法執行-自動合併。|  
-|SCC_E_VERIFYMERGE|檔案已經自動合併，但有尚未簽入暫止的使用者驗證。|  
-|SCC_E_FIXMERGE|檔案已經自動合併，但尚未簽因合併衝突必須以手動方式解決。|  
-|SCC_E_NOTAUTHORIZED|若要執行這項作業不允許的使用者。|  
-|SCC_I_OPERATIONCANCELED|在完成之前，已取消操作。|  
-|SCC_I_RELOADFILE|必須重新載入檔案或專案。|  
+|SCC_OK|已成功簽入檔案。|  
+|SCC_E_FILENOTCONTROLLED|選取的檔案不在原始程式碼控制之下。|  
+|SCC_E_ACCESSFAILURE|存取原始檔控制系統時發生問題，可能是因為網路或爭用問題。 建議您重試。|  
+|SCC_E_NONSPECIFICERROR|模糊失敗。 未簽入檔案。|  
+|SCC_E_NOTCHECKEDOUT|使用者尚未簽出檔案，所以無法將它簽入。|  
+|SCC_E_CHECKINCONFLICT|無法執行簽入，因為：<br /><br /> -另一位使用者已預先簽入，且 `bAutoReconcile` 為 false。<br /><br /> -或-<br /><br /> -無法完成自動合併 (例如，當檔案是二進位) 時。|  
+|SCC_E_VERIFYMERGE|檔案已自動合併，但尚未簽入擱置的使用者驗證。|  
+|SCC_E_FIXMERGE|檔案已自動合併，但因為合併衝突必須手動解決，所以尚未簽入。|  
+|SCC_E_NOTAUTHORIZED|不允許使用者執行這項操作。|  
+|SCC_I_OPERATIONCANCELED|作業已在完成前取消。|  
+|SCC_I_RELOADFILE|需要重載檔案或專案。|  
 |SCC_E_FILENOTEXIST|找不到本機檔案。|  
   
 ## <a name="remarks"></a>備註  
- 註解適用於所簽入的所有檔案。 註解引數可以是`null`字串，在此情況下的原始檔控制外掛程式可以提示使用者輸入的每個檔案的註解字串。  
+ 批註會套用至所有簽入的檔案。 批註引數可以是 `null` 字串，在此情況下，原始檔控制外掛程式可以提示使用者輸入每個檔案的批註字串。  
   
- `fOptions`引數可以指定值為`SCC_KEEP_CHECKEDOUT`旗標，表示簽入的檔案，並再次查看使用者的意圖。  
+ 您 `fOptions` 可以為引數指定 `SCC_KEEP_CHECKEDOUT` 旗標的值，以指出使用者將簽入檔案的意圖，並再次將其簽出。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

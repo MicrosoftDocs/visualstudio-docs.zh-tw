@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87bce70f83be2af80f93cf9888432257f6139732
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285138"
 ---
 # <a name="class-view-and-object-browser-icons"></a>類別檢視和物件瀏覽器圖示
 
 [類別檢視]**** 和 [物件瀏覽器]**** 會顯示代表程式碼實體 (例如，命名空間、類別、函式和變數) 的圖示。 下表說明並描述圖示。
 
-|圖示|描述|圖示|說明|
+|圖示|描述|圖示|描述|
 |----------|-----------------|----------|-----------------|
 |![命名空間符號](../ide/media/vxnamespace_icon.gif)|命名空間|![宣告符號](../ide/media/vxmethod_icon.gif)|方法或函式|
 |![類別圖示](../ide/media/vxclass_icon.gif)|類別|![運算子符號](../ide/media/vxoperator_icon.gif)|運算子|
@@ -44,15 +44,15 @@ ms.locfileid: "85285138"
 |![類型轉送符號](../ide/media/ob_type_forward.gif)|類型轉送|||
 
 > [!TIP]
-> 若要最佳地查看此頁面上的圖示，請確定您的 Microsoft Docs 主題已設定為 [**淺色**]。 您可以從位於頁面左下方的控制項切換此色彩主題，如下列螢幕擷取畫面所示：
+> 若要充分觀看此頁面上的圖示，請確定您的 Microsoft Docs 主題設定為 [ **淺色**]。 您可以從位於頁面左下方的控制項切換此色彩主題，如下列螢幕擷取畫面所示：
 >
-> ![檔主題](../ide/media/toggle-docs-color-theme.png "切換 Microsoft Docs 頁的色彩主題")
+> ![檔主題](../ide/media/toggle-docs-color-theme.png "切換 Microsoft Docs 頁面的色彩主題")
 
 ## <a name="signal-icons"></a>訊號圖示
 
 下列訊號圖示套用至所有先前的圖示，並指出其存取範圍。
 
-|圖示|說明|
+|圖示|描述|
 |----------|-----------------|
 |\<No Signal Icon>|公用。 可從此元件中的任何位置以及任何參考它的元件存取。|
 |![指示 Protected 符號](../ide/media/vxsignal_icon_key.gif)|受保護。 可從包含類別或類型存取，或從衍生自包含類別或類型的包含類別或類型存取。|

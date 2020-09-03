@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 89192d814ccee3dd2a134807d8ce01880689d951
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204930"
 ---
-# <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
+# <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此結構會提供在電腦上執行的處理序的相關資訊。  
+此結構提供在電腦上執行之處理常式的相關資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,23 +44,23 @@ public struct PROVIDER_PROCESS_DATA {
   
 ## <a name="members"></a>成員  
  欄位  
- 從旗標的組合[PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)列舉，指出哪些欄位會填入。  
+ [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)列舉中的旗標組合，表示填入的欄位。  
   
  ProgramNodes  
- A [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)結構，其中包含程式節點的陣列。  
+ 包含程式節點陣列的 [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) 結構。  
   
  fIsDebuggerPresent  
- 非零值 (`TRUE`) 如果[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]偵錯工具正在執行，零 (`FALSE`) 如果不是。  
+ 非零 (`TRUE`) 如果 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 偵錯工具正在執行，則零 (`FALSE`) 。  
   
 ## <a name="remarks"></a>備註  
- 此結構會傳遞至[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)填滿其中的方法。  
+ 此結構會傳遞至其填入的 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 方法。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

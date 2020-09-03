@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c274f203b9bf2746716c0625c61141aaa332977a
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387183"
 ---
 # <a name="install-unit-test-frameworks"></a>安裝單元測試架構
@@ -21,7 +21,7 @@ Visual Studio 測試總管可以從任何已針對其開發配接器介面的單
 Visual Studio 方案可包含多個單元測試專案，這些專案使用不同的架構並提供不同的語言版本。
 
 ::: moniker range=">=vs-2019"
-針對 .NET， [MSTest、NUnit 和 xUnit](getting-started-with-unit-testing.md)是預設會安裝 Visual Studio 所提供的測試架構。
+若是 .NET、 [MSTest、NUnit 和 xUnit，](getting-started-with-unit-testing.md) 則是預設安裝的 Visual Studio 所提供的測試架構。
 ::: moniker-end
 ::: moniker range="vs-2017"
 [MSTest](getting-started-with-unit-testing.md) 是 Visual Studio 提供的預設安裝測試架構。
@@ -43,7 +43,7 @@ Visual Studio 方案可包含多個單元測試專案，這些專案使用不同
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>更新至最新穩定的測試配接器版本
 
-1. 流覽至 [**工具**] [  >  **nuget 套件管理員**] [  >  **管理解決方案的 nuget 套件**]，開啟解決方案的 nuget 套件管理員。
+1. 流覽至 [**工具**  >  **nuget 封裝管理員**  >  **管理解決方案的 nuget 套件**]，開啟解決方案的 nuget 封裝管理員。
 
 2. 按一下 [更新]**** 索引標籤並搜尋已安裝的 MSTest、NUnit 或 xUnit 測試配接器。
 

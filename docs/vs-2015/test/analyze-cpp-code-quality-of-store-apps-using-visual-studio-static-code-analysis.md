@@ -1,5 +1,5 @@
 ---
-title: C++靜態程式碼分析存放區應用程式
+title: C + + 靜態程式碼分析存放區應用程式
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -12,38 +12,38 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c20fe8bccdf48cf307dda72a085b3c2a72f1d0cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672716"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 靜態程式碼分析，分析市集應用程式的 C++ 程式碼品質
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-適用于 Windows 和 Windows Phone] （.。/Image/windows_and_phone_content.png "windows_and_phone_content")
+適用于 Windows 和 Windows Phone] (。/Image/windows_and_phone_content.png "windows_and_phone_content" ) 
 
  Visual Studio Express Edition 中的程式碼分析工具會檢查您的程式碼是否有常見的問題，以及是否違反良好的程式設計作法。 程式碼分析警告與編譯器錯誤和警告不同，因為程式碼分析會搜尋有效的特定程式碼模式，但仍然可以為您或使用您程式碼的其他人建立問題。 程式碼分析也可以尋找難以透過測試發現的程式碼缺失。 在開發過程中定期執行程式碼分析工具，可以提升已完成應用程式的品質。
 
 > [!NOTE]
 > 在 Visual Studio Ultimate、Visual Studio Premium 及 Visual Studio Professional 中，您可以使用程式碼分析工具的完整功能。 請參閱 MSDN Library 中的[使用程式碼分析工具進行應用程式品質分析](https://msdn.microsoft.com/library/dd264897.aspx)。
 
-## <a name="BKMK_Run"></a> 執行程式碼分析
+## <a name="running-code-analysis"></a><a name="BKMK_Run"></a> 正在執行程式碼分析
  在您的 Visual Studio 方案中執行程式碼分析：
 
-- 在 [建置] 功能表上，選擇 [針對方案執行程式碼分析]。
+- 在 [建置]**** 功能表上，選擇 [針對方案執行程式碼分析]****。
 
   在您每次建立專案時自動執行程式碼分析：
 
-1. 在 [方案總管] 中選擇專案名稱，然後選擇 [屬性]。
+1. 在 [方案總管] 中選擇專案名稱，然後選擇 [屬性]****。
 
-2. 在專案屬性頁面中，選擇 [程式碼分析]，然後選擇 [建置時啟用 C/C++ 的程式碼分析]。
+2. 在專案屬性頁面中，選擇 [程式碼分析]****，然後選擇 [建置時啟用 C/C++ 的程式碼分析]****。
 
    方案已編譯並且執行程式碼分析。 結果隨即顯示在 [程式碼分析] 視窗中。
 
-   ![程式碼分析視窗](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
+   ![[程式碼分析] 視窗](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-## <a name="BKMK_Analyze"></a> 分析和解決程式碼分析警告
+## <a name="analyzing-and-resolving-code-analysis-warnings"></a><a name="BKMK_Analyze"></a> 分析和解決程式碼分析警告
  若要分析特定警告，請在 [程式碼分析] 視窗中選擇警告的標題。 展開警告以顯示問題的詳細資訊。 如果情況允許，程式碼分析會顯示導致發出警告的行號和分析邏輯。
 
  ![展開的程式碼分析警告](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
@@ -55,30 +55,30 @@ ms.locfileid: "72672716"
  在您了解問題之後，就可以在程式碼中解決問題。 然後重新執行程式碼分析來確定 [程式碼分析] 視窗中不會再次出現警告，且您的修正尚未引發新的警告。
 
 > [!TIP]
-> 您可以從 [程式碼分析] 視窗重新執行程式碼分析。 選擇 [分析] 按鈕，然後選擇要分析的範圍。 您可以在整個方案或選取的專案上重新執行分析。
+> 您可以從 [程式碼分析] 視窗重新執行程式碼分析。 選擇 [分析]**** 按鈕，然後選擇要分析的範圍。 您可以在整個方案或選取的專案上重新執行分析。
 
-## <a name="BKMK_Suppress"></a> 隱藏程式碼分析警告
+## <a name="suppressing-code-analysis-warnings"></a><a name="BKMK_Suppress"></a> 隱藏程式碼分析警告
  有時候您可能決定不修正程式碼分析警告。 您可能會判斷解決這項警告需要太多重新編碼，而在任何實際實作程式碼時會有問題發生的可能性。 或是，您可能會認為警告中使用的分析對於特定內容是不適當的。 您可以隱藏個別的警告，使之不再出現於 [程式碼分析] 視窗中。
 
  隱藏警告：
 
 1. 如果未顯示詳細資訊，請展開警告的標題。
 
-2. 選擇警告下方的 [動作] 連結。
+2. 選擇警告下方的 [動作]**** 連結。
 
-3. 選擇 [隱藏訊息]，然後選擇 [在原始程式檔中]。
+3. 選擇 [隱藏訊息]****，然後選擇 [在原始程式檔中]****。
 
-   隱藏訊息時會插入可隱藏該程式碼行警告的 `#pragma(warning:`*WarningId*`)`。
+   隱藏訊息會插入 `#pragma(warning:` *warningid 因而* `)` ，以隱藏程式程式碼的警告。
 
-## <a name="BKMK_Search"></a> 搜尋和篩選程式碼分析結果
+## <a name="searching-and-filtering-code-analysis-results"></a><a name="BKMK_Search"></a> 搜尋和篩選程式代碼分析結果
  您可以在多專案方案中搜尋警告訊息的詳細清單，以及篩選警告。
 
- ![搜尋和篩選程式代碼分析視窗](../test/media/ca-searchfilter.png "CA_SearchFilter")
+ ![搜尋與篩選程式碼分析視窗](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-## <a name="Warnings"></a> C++ 程式碼分析警告
+## <a name="c-code-analysis-warnings"></a><a name="Warnings"></a> C + + 程式碼分析警告
  程式碼分析引發下列 C++ 程式碼警告：
 
-|                                      規則                                      |                                                  描述                                                  |
+|                                      規則                                      |                                                  說明                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 |                       [C6001](../code-quality/c6001.md)                        |                                          使用尚未初始化的記憶體                                           |
 |                       [C6011](../code-quality/c6011.md)                        |                                          取值的指標為 NULL                                           |
@@ -158,7 +158,7 @@ ms.locfileid: "72672716"
 |                      [C28215](../code-quality/c28215.md)                       |                    typefix 不能套用到已經有 typefix 的參數                    |
 |                      [C28216](../code-quality/c28216.md)                       |        checkReturn 註釋只適用於特定函式參數的後置條件。         |
 |                      [C28217](../code-quality/c28217.md)                       |            對於函式，註釋的參數數目不符合檔案中找到的參數數目             |
-|                      [C28218](../code-quality/c28218.md)                       |             針對函式參數，注釋的參數不符合檔案中找到的              |
+|                      [C28218](../code-quality/c28218.md)                       |             針對函式參數，注釋的參數不符合檔案中找到的參數              |
 |                      [C28219](../code-quality/c28219.md)                       |                 註釋中標註的參數需要列舉的成員                 |
 |                      [C28220](../code-quality/c28220.md)                       |                  註釋中標註的參數需要整數運算式                   |
 |                      [C28221](../code-quality/c28221.md)                       |                        註釋中的參數需要字串運算式                         |

@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b500bcb49e9072c3d31ea5ac3f77bda606c23b78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179184"
 ---
-# <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
+# <a name="debug_address_union"></a>DEBUG_ADDRESS_UNION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-說明不同類型的位址。  
+描述不同類型的位址。  
   
 ## <a name="syntax"></a>語法  
   
@@ -53,50 +53,50 @@ public struct DEBUG_ADDRESS_UNION {
   
 ## <a name="terms"></a>詞彙  
  dwKind  
- 值，以從[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉，指定如何解譯聯集。  
+ [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉中的值，指定如何解讀聯集。  
   
- addr.addrNative  
- [C++只]包含[NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)結構，如果`dwKind`= ADDRESS_KIND_NATIVE。  
+ addrNative  
+ [僅限 c + +]如果 = ADDRESS_KIND_NATIVE，則包含 [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) 結構 `dwKind` 。  
   
- addr.addrThisRel  
- [C++只]包含[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)結構，如果`dwKind`= ADDRESS_KIND_UNMANAGED_THIS_RELATIVE。  
+ addrThisRel  
+ [僅限 c + +]如果 = ADDRESS_KIND_UNMANAGED_THIS_RELATIVE，則包含[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) 結構 `dwKind` 。  
   
- addr.addUPhysical  
- [C++只]包含[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)結構，如果`dwKind`= ADDRESS_KIND_UNMANAGED_PHYSICAL。  
+ addUPhysical  
+ [僅限 c + +]如果 = ADDRESS_KIND_UNMANAGED_PHYSICAL，則包含[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) 結構 `dwKind` 。  
   
- addr.addrMethod  
- [C++只]包含[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)結構，如果`dwKind`= ADDRESS_KIND_METHOD。  
+ addrMethod  
+ [僅限 c + +]如果 = ADDRESS_KIND_METHOD，則包含[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) 結構 `dwKind` 。  
   
- addr.addrField  
- [C++只]包含[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md)結構，如果`dwKind`= ADDRESS_KIND_FIELD。  
+ addrField  
+ [僅限 c + +]如果 = ADDRESS_KIND_FIELD，則包含[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) 結構 `dwKind` 。  
   
- addr.addrLocal  
- [C++只]包含[METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md)結構，如果`dwKind`= ADDRESS_KIND_LOCAL。  
+ addrLocal  
+ [僅限 c + +]如果 = ADDRESS_KIND_LOCAL，則包含[METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) 結構 `dwKind` 。  
   
- addr.addrParam  
- [C++只]包含[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md)結構，如果`dwKind`= ADDRESS_KIND_PARAM。  
+ addrParam  
+ [僅限 c + +]如果 = ADDRESS_KIND_PARAM，則包含[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) 結構 `dwKind` 。  
   
- addr.addrArrayElem  
- [C++只]包含[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)結構，如果`dwKind`= ADDRESS_KIND_ARRAYELEM。  
+ addrArrayElem  
+ [僅限 c + +]如果 = ADDRESS_KIND_ARRAYELEM，則包含[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) 結構 `dwKind` 。  
   
- addr.addrRetVal  
- [C++只]包含[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)結構，如果`dwKind`= ADDRESS_KIND_RETVAL。  
+ addrRetVal  
+ [僅限 c + +]如果 = ADDRESS_KIND_RETVAL，則包含[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) 結構 `dwKind` 。  
   
- addr.unused  
- [C++只] 填補。  
+ addr。未使用  
+ [僅限 c + +] 填補。  
   
- Addr  
- [C++只]聯集的名稱。  
+ addr  
+ [僅限 c + +]聯集的名稱。  
   
  unionmember  
- [C#只]此值必須根據適當的結構類型封送處理`dwKind`。 如之間的關聯，請參閱 < 備註 > 一`dwKind`和等位的解譯。  
+ [僅限 c #]此值必須根據來封送處理至適當的結構類型 `dwKind` 。 請參閱與等位的關聯性的備註 `dwKind` 。  
   
 ## <a name="remarks"></a>備註  
- 此結構是的一部分[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)結構，並代表不同種類的位址數的其中一個 (`DEBUG_ADDRESS`結構的呼叫會填入[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)方法)。  
+ 此結構是 [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) 結構的一部分，代表了許多不同類型的位址， (`DEBUG_ADDRESS` 結構會藉由呼叫 [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) 方法) 來填入。  
   
- [C#只]下表顯示如何解譯`unionmember`位址的每種類型的成員。 此範例會示範如何做到這點一種地址。  
+ [僅限 c #]下表說明如何解讀 `unionmember` 每種地址的成員。 此範例會示範如何針對一種位址進行這項操作。  
   
-|`dwKind`|`unionmember` 解譯為|  
+|`dwKind`|`unionmember` 解釋為|  
 |--------------|----------------------------------|  
 |`ADDRESS_KIND_NATIVE`|[NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)|  
 |`ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`|[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)|  
@@ -109,7 +109,7 @@ public struct DEBUG_ADDRESS_UNION {
 |`ADDRESS_KIND_RETVAL`|[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)|  
   
 ## <a name="example"></a>範例  
- 此範例示範如何將一種地址 (`METADATA_ADDRESS_ARRAYELEM`) 的`DEBUG_ADDRESS_UNION`C# 中的結構。 其餘的項目可以完全相同的方式解譯。  
+ 此範例示範如何 `METADATA_ADDRESS_ARRAYELEM` 在 c # 中解讀一種位址 () `DEBUG_ADDRESS_UNION` 結構。 其餘的元素可以用完全相同的方式來解讀。  
   
 ```csharp  
 using System;  
@@ -134,11 +134,11 @@ namespace MyPackage
 ```  
   
 ## <a name="requirements"></a>需求  
- 標頭： sh.h  
+ 標頭： sh. h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

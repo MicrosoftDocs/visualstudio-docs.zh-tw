@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND_EX |微軟文件
+title: FIELD_KIND_EX |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f0c13d83f80b311838eca32945462c1f17ca23f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736873"
 ---
 # <a name="field_kind_ex"></a>FIELD_KIND_EX
-枚舉[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件可以包含的其他類型的欄位。 此枚舉擴展[了FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)枚舉。
+列舉 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 物件可以包含的其他欄位類型。 此列舉會擴充 [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) 列舉。
 
 ## <a name="syntax"></a>語法
 
@@ -46,20 +46,20 @@ public enum enum_FIELD_KIND_EX
 
 ## <a name="fields"></a>欄位
 `FIELD_KIND_EX_NONE`\
-欄位不包含擴充類型。
+欄位未包含擴充類型。
 
 `FIELD_TYPE_EX_METHODVAR`\
 欄位包含方法變數。
 
 `FIELD_TYPE_EX_CLASSVAR`\
-欄位包含類變數。
+欄位包含類別變數。
 
 ## <a name="requirements"></a>需求
-標題: Sh.h
+標頭： Sh. h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

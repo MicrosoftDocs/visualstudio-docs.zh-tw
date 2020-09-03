@@ -1,5 +1,5 @@
 ---
-title: CA1057：字串 URI 多載呼叫 System.object 多載 |Microsoft Docs
+title: CA1057：字串 URI 多載呼叫 System.string 多載 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: bcdb4d8333b0a4d2d06580d882cf736d4527eca4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539525"
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057:字串 URI 多載呼叫 System.Uri 多載
@@ -29,23 +29,23 @@ ms.locfileid: "85539525"
 |-|-|
 |TypeName|StringUriOverloadsCallSystemUriOverloads|
 |CheckId|CA1057|
-|類別|Microsoft. Design|
-|中斷變更|不中斷|
+|類別|Microsoft. 設計|
+|中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 類型宣告的方法多載，只會以參數取代字串參數 <xref:System.Uri?displayProperty=fullName> ，而接受字串參數的多載則不會呼叫接受參數的多載 <xref:System.Uri> 。
+ 型別宣告的方法多載只會以參數取代字串參數 <xref:System.Uri?displayProperty=fullName> ，而接受字串參數的多載不會呼叫採用參數的多載 <xref:System.Uri> 。
 
 ## <a name="rule-description"></a>規則描述
- 因為多載只有字串/ <xref:System.Uri> 參數不同，所以會假設字串代表統一資源識別元（URI）。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 <xref:System.Uri>類別以安全且安全的方式提供這些服務。 若要獲得類別的優點 <xref:System.Uri> ，字串多載應該 <xref:System.Uri> 使用字串引數呼叫多載。
+ 因為多載只有字串/ <xref:System.Uri> 參數不同，所以會假設字串代表 (URI) 的統一資源識別項。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 <xref:System.Uri>類別以安全且安全的方式提供這些服務。 為了充分利用類別的優點 <xref:System.Uri> ，字串多載應該 <xref:System.Uri> 使用字串引數來呼叫多載。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 重新執行使用 URI 字串表示的方法，讓它 <xref:System.Uri> 使用字串引數來建立類別的實例，然後將 <xref:System.Uri> 物件傳遞至具有參數的多載 <xref:System.Uri> 。
+ 重新執行方法，該方法會使用 URI 的字串表示，使其 <xref:System.Uri> 使用字串引數建立類別的實例，然後將 <xref:System.Uri> 物件傳遞至具有參數的多載 <xref:System.Uri> 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果 string 參數不代表 URI，就可以安全地隱藏此規則的警告。
+ 如果字串參數不代表 URI，則可以安全地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示正確實作為字串多載。
+ 下列範例會顯示正確實作為的字串多載。
 
  [!code-cpp[FxCop.Design.CallUriOverload#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.CallUriOverload/cpp/FxCop.Design.CallUriOverload.cpp#1)]
  [!code-csharp[FxCop.Design.CallUriOverload#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.CallUriOverload/cs/FxCop.Design.CallUriOverload.cs#1)]

@@ -1,5 +1,5 @@
 ---
-title: GUID_ARRAY |微軟文件
+title: GUID_ARRAY |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e163674b5622146ef1a270920dc7458dce2e3993
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736651"
 ---
 # <a name="guid_array"></a>GUID_ARRAY
-描述可用調試引擎的唯一標識符陣列。
+描述可用的偵錯工具引擎之唯一識別碼陣列。
 
 ## <a name="syntax"></a>語法
 
@@ -43,20 +43,20 @@ public struct GUID_ARRAY
 
 ## <a name="members"></a>成員
 `dwCount`\
-陣列中的唯一標識符數。
+陣列中的唯一識別碼數目。
 
 `Members`\
-包含唯一標識符的陣列。
+包含唯一識別碼的陣列。
 
 ## <a name="remarks"></a>備註
-此結構由[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)方法返回。
+[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)方法會傳回這個結構。
 
 ## <a name="requirements"></a>需求
-標題: Msdbg.h
+標頭： Msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

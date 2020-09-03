@@ -9,10 +9,10 @@ caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 27f69a3295deb8d3335878acc865314635af7c0e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387300"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
@@ -27,17 +27,17 @@ ms.locfileid: "86387300"
 
 - [開始之前](#BeforeYouStart)
 
-- [無法安裝模擬器](#NoInstall)
+- [模擬器無法安裝](#NoInstall)
 
 - [無法連接到網域或公司網路上的網路目的地](#DomainNetwork)
 
-- [當網路設定需要手動進行時，無法連接到網路目的地](#ManualNetworkConfig)
+- [當網路設定需要手動設定時，無法連接到網路目的地](#ManualNetworkConfig)
 
-- [模擬器啟動很慢、因為超時而無法啟動，或應用程式部署失敗](#SlowStart)
+- [模擬器啟動很慢、無法啟動，因為超時，或應用程式部署失敗](#SlowStart)
 
 - [模擬器無法啟動](#NoStart2)
 
-- [模擬器無法啟動（第一次使用）](#NoStart)
+- [模擬器無法啟動 (第一次使用) ](#NoStart)
 
 - [安裝模擬器之後，電腦無法開機](#NoBoot)
 
@@ -55,11 +55,11 @@ ms.locfileid: "86387300"
 
 - [模擬器無法轉譯 OpenGL 內容](#OpenGL)
 
-- [模擬器不會回應多點觸控手勢](#Multitouch)
+- [模擬器未回應多點觸控手勢](#Multitouch)
 
 - [支援資源](#Support)
 
-## <a name="before-you-start"></a><a name="BeforeYouStart"></a>開始之前
+## <a name="before-you-start"></a><a name="BeforeYouStart"></a> 開始之前
  開始進行疑難排解之前，檢閱下列主題可能會很有幫助：
 
 - [適用于 Android 的 Visual Studio 模擬器的系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
@@ -72,7 +72,7 @@ ms.locfileid: "86387300"
 > [!NOTE]
 > 此訊息對 Visual Studio Emulator for Android 及 Windows Phone 模擬器皆適用。 Windows 8.1 和 Windows 10 都支援模擬器。
 
- 如果您看到此訊息，請檢查[適用于 Android 的 Visual Studio 模擬器的系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)，以查看您是否可以執行模擬器。
+ 如果您看到此訊息，請檢查適用于 [Android 的 Visual Studio 模擬器的系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) ，以查看您是否可以執行模擬器。
 
 ## <a name="cannot-connect-to-network-destinations-on-a-domain-or-corporate-network"></a><a name="DomainNetwork"></a> 無法連接到網域或公司網路上的網路目的地
  Visual Studio Emulator for Android 以具有自己的 IP 位址的個別裝置形式出現在網路上。 該模擬器未加入 Windows 網域，並且不會與主機電腦共用網域或工作群組認證。
@@ -115,7 +115,7 @@ ms.locfileid: "86387300"
 
 - 一般會造成系統效能不佳的任何因素。 從 Windows 體驗指數子分數最低的元件開始進行疑難排解，您可以在 [控制台] 的 [效能資訊及工具] 頁面上找到這項資訊。
 
-## <a name="emulator-fails-to-start"></a><a name="NoStart2"></a>模擬器無法啟動
+## <a name="emulator-fails-to-start"></a><a name="NoStart2"></a> 模擬器無法啟動
  若模擬器先前可以運作，但現在無法運作，請執行下列工作。 如果您第一次使用模擬器，請先參閱 [Emulator fails to start (first use)](#NoStart) ，再嘗試執行這些步驟。
 
 - 移除模擬器的其他任何 Hyper-V 執行個體。
@@ -132,9 +132,9 @@ ms.locfileid: "86387300"
 
 - 在 Hyper-V 管理員中開啟虛擬交換器管理員，並檢查您是否有兩個網路交換器；確認第一個為內部交換器，而第二個為外部交換器。
 
-     ![Android&#95;Emu&#95;V&#95;交換器&#95;Man](../cross-platform/media/android-emu-v-switch-man.png "ndroid_Emu_V_Switch_Man")
+     ![Android&#95;Emu&#95;V&#95;切換&#95;Man](../cross-platform/media/android-emu-v-switch-man.png "ndroid_Emu_V_Switch_Man")
 
-     如果安裝程式不正確，而且您使用的是 Windows 10，您可能會嘗試[使用 netcfg – d 命令重新安裝網路裝置](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues)（第6節）。
+     如果設定不正確，且您使用 Windows 10，您可能會嘗試 [使用 netcfg – d 命令](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) (第6節) 來重新安裝網路裝置。
 
 - 如果這些步驟都無法解決問題，請參閱 [Emulator fails to start (first use)](#NoStart) ，以取得可能干擾模擬器之協力廠商軟體的詳細資訊。
 
@@ -256,7 +256,7 @@ ms.locfileid: "86387300"
 
   如需詳細資訊，請參閱下列知識庫文章 [在 GB 系統上安裝 Hyper-V 角色後開機失敗](https://support.microsoft.com/kb/2693144)。
 
-## <a name="visual-studio-gets-stuck-trying-to-deploy-the-app-to-the-emulator-or-the-emulator-does-not-appear-as-a-debug-target-in-other-ides"></a><a name="ADB"></a>Visual Studio 停滯嘗試將應用程式部署至模擬器，或模擬器未在其他 Ide 中顯示為 debug 目標
+## <a name="visual-studio-gets-stuck-trying-to-deploy-the-app-to-the-emulator-or-the-emulator-does-not-appear-as-a-debug-target-in-other-ides"></a><a name="ADB"></a> Visual Studio 在嘗試將應用程式部署至模擬器時停滯，或模擬器未顯示為其他 Ide 中的 debug 目標
  若模擬器正在執行，但似乎未連接到 ADB (Android Debug Bridge) 或未顯示在使用 ADB (例如 Android Studio 或 Eclipse) 的 Android 工具 中，則您可能需要調整模擬器尋找 ADB 的位置。 模擬器使用登錄機碼來識別您的 Android SDK 的基礎位置，並尋找該目錄下的 \platform-tools\adb.exe 檔案。 若要修改模擬器所使用的 Android SDK 路徑：
 
 - 從 [開始] 按鈕內容功能選取 [執行] **** ，在對話方塊中輸入 `regedit` ，然後選擇 [確定] ****，以開啟登錄編輯程式。
@@ -267,7 +267,7 @@ ms.locfileid: "86387300"
 
   重新啟動模擬器，您現在應該可以看到模擬器連接到 ADB 和關聯的 Android 工具。
 
-## <a name="emulator-stops-responding-because-it-couldnt-set-up-the-udp-port"></a><a name="XamarinPlayer"></a>模擬器因為無法設定 UDP 埠而停止回應
+## <a name="emulator-stops-responding-because-it-couldnt-set-up-the-udp-port"></a><a name="XamarinPlayer"></a> 模擬器因為無法設定 UDP 埠而停止回應
  您可能會因為與 Xamarin Player 不相容而遇到此問題。 如果模擬器似乎停止回應，或您看到此錯誤訊息「模擬器無法連接到裝置作業系統：無法設定 UDP 埠。  可能停用部分功能」，即表示您遇到此問題。 請採取下列步驟。
 
 1. 將 Xamarin Player 解除安裝。
@@ -278,14 +278,14 @@ ms.locfileid: "86387300"
 
 4. 您可以先移除任何非實體網路介面卡，再嘗試將 Hyper-V 解除安裝/重新安裝。
 
-## <a name="cannot-attach-debugger-to-a-xamarin-project"></a><a name="Skylake"></a>無法將偵錯工具附加至 Xamarin 專案
+## <a name="cannot-attach-debugger-to-a-xamarin-project"></a><a name="Skylake"></a> 無法將偵錯工具附加至 Xamarin 專案
  如果您使用 Intel Skylake 處理器來執行 Windows 10，Xamarin 應用程式可能無法在模擬器中執行，或者 Visual Studio 偵錯工具可能不會附加至它們。 這是因為 HYPER-V 和 Skylake 處理器的問題所導致。 請執行下列步驟來因應。
 
 1. 開啟 [HYPER-V 管理員]，然後選取 VM 以供您使用的模擬器設定檔使用。
 
 2. 選取 [刪除儲存狀態]\****(右下方)。
 
-3. 選擇 [**設定 ...** ]
+3. 選擇 **設定 ...**
 
 4. 展開處理器節點，然後選擇 [相容性]****。
 
@@ -293,16 +293,16 @@ ms.locfileid: "86387300"
 
 6. 重新啟動服務 (位於 [動作]**** 下方)，然後再試一次。
 
-## <a name="emulator-fails-to-run-app-that-uses-google-play-services"></a><a name="GooglePlay"></a>模擬器無法執行使用 Google Play Services 的應用程式
+## <a name="emulator-fails-to-run-app-that-uses-google-play-services"></a><a name="GooglePlay"></a> 模擬器無法執行使用 Google Play Services 的應用程式
  Google Play 服務的程式庫未隨附模擬器。 但模擬器支援可刷新之 zip 檔案的拖放安裝。
 
-## <a name="drag-and-drop-of-a-file-apk-or-flashable-zip-file-does-not-work"></a><a name="DragAndDrop"></a>無法拖放檔案、APK 或可刷新的 zip 檔案
+## <a name="drag-and-drop-of-a-file-apk-or-flashable-zip-file-does-not-work"></a><a name="DragAndDrop"></a> 檔案、APK 或可刷新 zip 檔案的拖放功能無法運作
  當您將檔案拖放到畫面上時，模擬器會使用 ADB.exe 來協助傳輸檔案。 如果您在嘗試拖放檔案時發生錯誤，可能表示模擬器並未連接到 ADB.exe。 若要解決，請遵循 [Visual Studio 在嘗試將應用程式部署至模擬器時遇遭困難，或模擬器未作為偵錯目標出現在其他 IDE 中](#ADB)取得。
 
-## <a name="resolution-of-screenshot-is-incorrect"></a><a name="Resolution"></a>螢幕擷取畫面的解析度不正確
+## <a name="resolution-of-screenshot-is-incorrect"></a><a name="Resolution"></a> 螢幕擷取畫面的解析度不正確
  如果您使用 [其他工具] **** 視窗中的 [螢幕擷取畫面] 索引標籤取得螢幕擷取畫面，但所產生的影像不是預期的大小，您可能需要調整螢幕的縮放比例，再選擇 [擷取] ****。 模擬器會以您主機電腦螢幕的螢幕解析度，來取得螢幕擷取畫面。
 
-## <a name="emulator-fails-to-render-opengl-content"></a><a name="OpenGL"></a>模擬器無法轉譯 OpenGL 內容
+## <a name="emulator-fails-to-render-opengl-content"></a><a name="OpenGL"></a> 模擬器無法轉譯 OpenGL 內容
  模擬器使用您主機電腦的 GPU 來轉譯 OpenGL 內容，並使用 ANGLE 專案將這些呼叫轉換成 DirectX，或從 DirectX 轉換成這些呼叫。 如果您的應用程式在裝置上正確地呈現，但在模擬器上卻不正確地呈現，可能是裝置正在緩和不正確的 OpenGL 呼叫 (例如使用不相符的著色器變數)。
 
 ## <a name="emulator-does-not-respond-to-multi-touch-gestures"></a><a name="Multitouch"></a> 模擬器未回應多點觸控筆勢

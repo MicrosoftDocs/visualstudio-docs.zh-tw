@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateStringObject |Microsoft Docs
+title: IDebugFunctionObject：： CreateStringObject |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 05f8e77bd019b1bed04ec3a08cda5bbcfefa30ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179428"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
@@ -42,16 +42,16 @@ int CreateStringObject(
   
 #### <a name="parameters"></a>參數  
  `pcstrString`  
- [in]字串物件的字串值。  
+ 在字串物件的字串值。  
   
  `ppObject`  
- [out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，表示新建立的字串物件。  
+ 擴展傳回代表新建立之字串物件的 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 呼叫這個方法來建立物件，表示的字串表示的函式的參數[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面。  
+ 呼叫這個方法來建立物件，該物件代表 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 介面所代表的函式之參數的字串。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

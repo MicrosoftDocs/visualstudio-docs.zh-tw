@@ -1,5 +1,5 @@
 ---
-title: IDebug屬性2::獲取大小 |微軟文件
+title: IDebugProperty2：： GetSize |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3f57a742bae0217493d8869b257e4a17839e4e14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721333"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
-獲取屬性值的大小(以位元組為單位)。
+取得屬性值的大小（以位元組為單位）。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ int GetSize ( 
 
 ## <a name="parameters"></a>參數
 `pdwSize`\
-[出]返回屬性值的大小(以位元組為單位)。
+擴展傳回屬性值的大小（以位元組為單位）。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則返回錯誤代碼。 如果`S_GETSIZE_NO_SIZE`屬性沒有大小,則返回。
+ 如果成功，則傳回，否則會傳回 `S_OK` 錯誤碼。 `S_GETSIZE_NO_SIZE`如果屬性沒有大小，則會傳回。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
