@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541241"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>如何：使用主控制項的資料更新資料來源
@@ -29,7 +29,7 @@ ms.locfileid: "85541241"
 
 2. 以記憶體內部資料來源中變更的資料更新資料庫。 只有在資料來源已連接到 SQL Server 或 Microsoft Office Access 資料庫等後端資料庫時才適用。
 
-   如需主控制項和資料系結的詳細資訊，請參閱[主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md)和[將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)。
+   如需主控制項和資料系結的詳細資訊，請參閱 [主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md) ，以及 [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)。
 
    [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -49,19 +49,19 @@ ms.locfileid: "85541241"
      [!code-csharp[Trin_VstcoreDataExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreDataExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#1)]
 
-### <a name="automatically-update-the-in-memory-data-source"></a>自動更新記憶體中的資料來源
+### <a name="automatically-update-the-in-memory-data-source"></a>自動更新記憶體內部資料來源
  您也可以設定控制項，讓它自動更新記憶體內部資料來源。 在文件層級專案中，您可以使用程式碼或設計工具來執行這項作業。 在 VSTO 增益集專案中，您必須使用程式碼。
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>使用程式碼將控制項設定為自動更新記憶體內部資料來源
 
-1. 使用將控制項系結 <xref:System.Windows.Forms.Binding> 至資料來源之物件的 DataSourceUpdateMode OnPropertyChanged 模式。 您可以使用兩種選項來更新資料來源：
+1. 使用將控制項系結 <xref:System.Windows.Forms.Binding> 至資料來源之物件的 DataSourceUpdateMode. OnPropertyChanged 模式。 您可以使用兩種選項來更新資料來源：
 
    - 若要在驗證控制項時更新資料來源，請將此屬性設定為 DataSourceUpdateMode. OnValidation。
 
-   - 若要在控制項的資料系結屬性值變更時更新資料來源，請將此屬性設定為 DataSourceUpdateMode. OnPropertyChanged。
+   - 若要在控制項的資料系結屬性值變更時更新資料來源，請將這個屬性設定為 DataSourceUpdateMode. OnPropertyChanged。
 
      > [!NOTE]
-     > DataSourceUpdateMode. OnPropertyChanged 選項不適用於 Word 主控制項，因為 Word 並不提供檔變更或控制項變更通知。 不過，這個選項可用於 Word 文件上的 Windows Form 控制項。
+     > DataSourceUpdateMode. OnPropertyChanged 選項不適用於 Word 主控制項，因為 Word 不提供檔變更或控制項變更的通知。 不過，這個選項可用於 Word 文件上的 Windows Form 控制項。
 
      下列範例會將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項設定為只要控制項中的值一變更就自動更新資料來源。 這個範例假設您有名為 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的 `namedRange1` 控制項，而且控制項的 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 屬性已繫結至資料來源中的欄位。
 
@@ -76,7 +76,7 @@ ms.locfileid: "85541241"
 
 3. 在 [屬性] **** 視窗中，展開 [(DataBindings)] **** 屬性。
 
-4. 在 [ **（Advanced）** ] 屬性旁，按一下省略號按鈕（![VisualStudioEllipsesButton 螢幕擷取畫面](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton 螢幕擷取畫面")）。
+4. 在 ** (Advanced) ** ] 屬性旁邊，按一下省略號按鈕 (![VisualStudioEllipsesButton 螢幕擷取畫面](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton 螢幕擷取畫面")) 。
 
 5. 在 [格式化與進階繫結] **** 對話方塊中，按一下 [資料來源更新模式] **** 下拉式清單，然後選取下列其中一個值：
 
@@ -90,13 +90,13 @@ ms.locfileid: "85541241"
 6. 關閉 [格式化與進階繫結] **** 對話方塊。
 
 ## <a name="update-the-database"></a>更新資料庫
- 如果資料庫與記憶體內部資料來源相關聯，您必須以對資料來源所做的變更來更新資料庫。 如需有關更新資料庫的詳細資訊，請參閱[將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)和[使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)。
+ 如果資料庫與記憶體內部資料來源相關聯，您必須以對資料來源所做的變更來更新資料庫。 如需更新資料庫的詳細資訊，請參閱 [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)  ，並 [使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md) 。
 
 ### <a name="to-update-the-database"></a>若要更新資料庫
 
 1. 呼叫控制項之 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 的 <xref:System.Windows.Forms.BindingSource> 方法。
 
-     當您在設計階段將資料繫結控制項加入文件或活頁簿時，會自動產生 <xref:System.Windows.Forms.BindingSource> 。 <xref:System.Windows.Forms.BindingSource> 會將控制項連接到專案中的具類型資料集。 如需詳細資訊，請參閱[BindingSource 元件總覽](/dotnet/framework/winforms/controls/bindingsource-component-overview)。
+     當您在設計階段將資料繫結控制項加入文件或活頁簿時，會自動產生 <xref:System.Windows.Forms.BindingSource> 。 <xref:System.Windows.Forms.BindingSource> 會將控制項連接到專案中的具類型資料集。 如需詳細資訊，請參閱 [BindingSource 元件總覽](/dotnet/framework/winforms/controls/bindingsource-component-overview)。
 
      下列程式碼範例假設您的專案包含名為 <xref:System.Windows.Forms.BindingSource> 的 `customersBindingSource`。
 
@@ -105,7 +105,7 @@ ms.locfileid: "85541241"
 
 2. `Update`在您的專案中呼叫所產生之 TableAdapter 的方法。
 
-     當您在設計階段將資料繫結控制項加入檔或活頁簿時，會自動產生 TableAdapter。 TableAdapter 會將您專案中的具類型資料集連接到資料庫。 如需詳細資訊，請參閱[TableAdapter 總覽](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
+     當您在設計階段將資料繫結控制項加入檔或活頁簿時，會自動產生 TableAdapter。 TableAdapter 會將您專案中的具類型資料集連接至資料庫。 如需詳細資訊，請參閱 [TableAdapter 總覽](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
 
      下列程式碼範例假設您已連接到 Northwind 資料庫中的 Customers 資料表，而且您的專案包含名為的 TableAdapter `customersTableAdapter` 和名為的具類型資料集 `northwindDataSet` 。
 
@@ -117,7 +117,7 @@ ms.locfileid: "85541241"
 - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)
 - [使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)
 - [如何：在工作表中滾動資料庫記錄](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [如何：將資料庫的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [如何：以物件的資料填入檔](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [如何：將資料庫中的資料填入檔](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [如何：使用資料庫中的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [如何：將物件的資料填入檔](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [如何：使用資料庫的資料填入檔](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 - [如何：將服務的資料填入檔](../vsto/how-to-populate-documents-with-data-from-services.md)

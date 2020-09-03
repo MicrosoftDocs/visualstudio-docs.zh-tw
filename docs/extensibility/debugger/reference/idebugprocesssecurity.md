@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess安全性 |微軟文件
+title: IDebugProcessSecurity |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 36c81cda3a27cfe1ef0fecfefc9bbb790d4d5217
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723184"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
-`IDebugProcessSecurity`由埠供應商實施,以警告使用者附加到進程不安全。
+`IDebugProcessSecurity` 由埠供應商執行，以警告附加至進程的使用者是不安全的。
 
 ## <a name="syntax"></a>語法
 
@@ -27,22 +27,22 @@ IDebugProcessSecurity : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 下表顯示的方法`IDebugProcessSecurity`。
+ 下表顯示的方法 `IDebugProcessSecurity` 。
 
 |方法|描述|
 |------------|-----------------|
-|[取得使用者名稱](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|從埠供應商獲取使用者名。|
-|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|警告使用者附加到調試過程不安全。|
+|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|從埠供應商取得使用者名稱。|
+|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|警告附加至偵錯工具的使用者是不安全的。|
 
 ## <a name="remarks"></a>備註
- 實現此介面以顯示警告,並允許使用者取消,如果您要附加到的進程可能被視為不安全。
+ 執行此介面以顯示警告，並允許使用者在您附加的進程被視為不安全時取消。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [連接埠](../../../extensibility/debugger/ports.md)

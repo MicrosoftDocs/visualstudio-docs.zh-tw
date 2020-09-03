@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: adad9ec70290f426ce7c3c59ad13ff8636a69463
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541319"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>如何：讀取和寫入檔案屬性
@@ -27,7 +27,7 @@ ms.locfileid: "85541319"
 
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]
 
-## <a name="set-document-properties-in-excel"></a>在 Excel 中設定文件屬性
+## <a name="set-document-properties-in-excel"></a>在 Excel 中設定檔案屬性
  若要處理 Excel 的內建屬性，請使用下列屬性:
 
 - 在文件層級專案中，使用 <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> 類別的 `ThisWorkbook` 屬性。
@@ -50,7 +50,7 @@ ms.locfileid: "85541319"
      [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]
      [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]
 
-## <a name="set-document-properties-in-word"></a>在 Word 中設定文件屬性
+## <a name="set-document-properties-in-word"></a>設定 Word 中的檔案屬性
  若要處理 Word 的內建屬性，請使用下列屬性:
 
 - 在文件層級專案中，使用 <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> 類別的 `ThisDocument` 屬性。

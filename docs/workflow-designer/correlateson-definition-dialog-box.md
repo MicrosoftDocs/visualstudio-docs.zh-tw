@@ -1,5 +1,5 @@
 ---
-title: 工作流程設計工具 CorrelatesOn 定義對話方塊
+title: 工作流程設計工具-CorrelatesOn 定義] 對話方塊
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d2db5bbfa4f34d86d3bf20cfe6bcc42b3dc00d0
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876121"
 ---
 # <a name="correlateson-definition-dialog-box"></a>CorrelatesOn 定義對話方塊
 
-在工作流程設計工具中使用 [ **CorrelatesOn** ] 對話方塊來編輯 <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> 活動的屬性 <xref:System.ServiceModel.Activities.Receive> 。 如需詳細資訊，請參閱[Receive 活動設計](../workflow-designer/receive-activity-designer.md)工具。
+工作流程設計工具中使用 [ **CorrelatesOn** ] 對話方塊來編輯活動的 <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> 屬性 <xref:System.ServiceModel.Activities.Receive> 。 如需詳細資訊，請參閱 [Receive 活動設計](../workflow-designer/receive-activity-designer.md)工具。
 
 <xref:System.ServiceModel.Activities.Receive> 活動之間的相互關聯，會指定某個工作流程中不同服務作業彼此之間的關係。
 
-下表描述 [ **CorrelatesOn** ] 對話方塊的使用者介面（UI）元素。
+下表說明 [ **CorrelatesOn** ] 對話方塊的使用者介面 (UI) 元素。
 
 |UI 元素|描述|
 |-|-----------------|
@@ -32,7 +32,7 @@ ms.locfileid: "86876121"
 
 ## <a name="to-launch-the-correlateson-dialog-box"></a>若要啟動 CorrelatesOn 對話方塊
 
-[ **Receive** ] 活動設計工具可以從 [**工具箱**] 拖曳出來，放到工作流程設計工具介面上，通常用來放置活動的地方。 卸載活動設計工具會建立一個 <xref:System.ServiceModel.Activities.Receive> 活動，其預設值 <xref:System.Activities.Activity.DisplayName%2A> 為 Receive。 若要開啟 [ **CorrelatesOn 定義**] 對話方塊，請選取 [ **Receive** ] 活動設計工具，然後在屬性方格中，選取 [ **CorrelatesOn** ] 屬性的集合文字旁邊的省略號按鈕。
+[ **Receive** ] 活動設計工具可以從 [ **工具箱** ] 拖曳出來，放到工作流程設計工具介面上，通常放置活動的地方。 卸載活動設計工具會建立 <xref:System.ServiceModel.Activities.Receive> 活動，預設值是 <xref:System.Activities.Activity.DisplayName%2A> Receive。 若要開啟 [ **CorrelatesOn 定義** ] 對話方塊，請選取 [ **Receive** ] 活動設計工具，然後在屬性方格中，選取 [ **CorrelatesOn** ] 屬性的集合文字旁的省略號按鈕。
 
 ## <a name="see-also"></a>另請參閱
 

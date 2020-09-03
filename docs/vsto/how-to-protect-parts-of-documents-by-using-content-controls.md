@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541345"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>如何：使用內容控制項保護檔的元件
@@ -34,26 +34,26 @@ ms.locfileid: "85541345"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a>保護內容控制項
+## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a> 保護內容控制項
  您可以透過文件層級專案，於設計階段或執行階段設定該控制項的屬性，以防止使用者編輯或刪除內容控制項。
 
- 此外，您也可以使用 VSTO 增益集專案，保護於執行階段加入文件的內容控制項。 如需詳細資訊，請參閱[如何：將內容控制項新增至 Word 檔](../vsto/how-to-add-content-controls-to-word-documents.md)。
+ 此外，您也可以使用 VSTO 增益集專案，保護於執行階段加入文件的內容控制項。 如需詳細資訊，請參閱 [如何：將內容控制項加入 Word 檔](../vsto/how-to-add-content-controls-to-word-documents.md)。
 
 ### <a name="to-protect-a-content-control-at-design-time"></a>若要在設計階段保護內容控制項
 
 1. 在裝載於 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 設計工具的文件中，選取想要保護的內容控制項。
 
-2. 在 [**屬性**] 視窗中，設定下列其中一個或兩個屬性：
+2. 在 [ **屬性** ] 視窗中，設定下列其中一個或兩個屬性：
 
-    - 若要防止使用者編輯控制項，請將**LockContents**設定為**True**。
+    - 若要防止使用者編輯控制項，請將 **LockContents** 設定為 **True**。
 
-    - 若要防止使用者刪除控制項，請將**LockContentControl**設定為**True**。
+    - 若要防止使用者刪除控制項，請將 **LockContentControl** 設定為 **True**。
 
-3. 按一下 [確定] 。
+3. 按一下 [確定]  。
 
 ### <a name="to-protect-a-content-control-at-run-time"></a>若要在執行階段保護內容控制項
 
-1. 將 `LockContents` 內容控制項的屬性設為**true** ，以防止使用者編輯控制項，並將 `LockContentControl` 屬性設定為**true** ，以防止使用者刪除控制項。
+1. 將 `LockContents` 內容控制項的屬性設定為 **true** 以防止使用者編輯控制項，並將 `LockContentControl` 屬性設為 **true** ，以防止使用者刪除控制項。
 
      下列程式碼範例示範在文件層級專案中，使用兩個不同 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 物件的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> 和 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> 屬性。 若要執行這個程式碼，請將程式碼加入專案的 `ThisDocument` 類別中，並從 `AddProtectedContentControls` 事件處理常式呼叫 `ThisDocument_Startup` 方法。
 
@@ -73,7 +73,7 @@ ms.locfileid: "85541345"
 - 您想要保護已包含內容控制項的區域，但是想要保護的文字或其他項目不在內容控制項內。
 
 > [!NOTE]
-> 如果建立的 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 包含內嵌內容控制項，則不會自動保護這些內嵌內容控制項。 若要防止使用者編輯內嵌內容控制項，請使用控制項的**LockContents**屬性。
+> 如果建立的 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 包含內嵌內容控制項，則不會自動保護這些內嵌內容控制項。 若要防止使用者編輯內嵌的內容控制項，請使用控制項的 **LockContents** 屬性。
 
 ### <a name="to-protect-an-area-of-a-document-at-design-time"></a>若要在設計階段保護文件的區域
 
@@ -82,9 +82,9 @@ ms.locfileid: "85541345"
 2. 按一下 [功能區] 上的 [開發人員] **** 索引標籤。
 
     > [!NOTE]
-    > 如果 [開發人員] **** 索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
+    > 如果 [開發人員] **** 索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
 
-3. 在 [**控制項**] 群組中，按一下 [**群組**] 下拉按鈕，然後按一下 [**群組**]。
+3. 在 [ **控制項** ] 群組中，按一下 [ **群組** ] 下拉按鈕，然後按一下 [ **群組**]。
 
      這樣會在專案的 `ThisDocument` 類別中，自動產生內含保護區域的 <xref:Microsoft.Office.Tools.Word.GroupContentControl>。 在設計階段可以看到代表群組控制項的框線，但是在執行階段則看不到框線。
 
@@ -108,4 +108,4 @@ ms.locfileid: "85541345"
 - [如何：將內容控制項新增至 Word 檔](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md)
 - [主專案和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [在執行時間將控制項新增至 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)

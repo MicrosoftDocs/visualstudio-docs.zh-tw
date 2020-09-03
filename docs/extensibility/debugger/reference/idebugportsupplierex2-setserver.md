@@ -1,5 +1,5 @@
 ---
-title: IDebugPort供應商Ex2::設置伺服器 |微軟文件
+title: IDebugPortSupplierEx2：： SetServer |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3978fc3cbe2a0e4447e0a4325178dcec32fa4e14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724341"
 ---
 # <a name="idebugportsupplierex2setserver"></a>IDebugPortSupplierEx2::SetServer
-設置埠供應商的核心伺服器。
+設定埠供應商的核心伺服器。
 
 ## <a name="syntax"></a>語法
 
@@ -39,10 +39,10 @@ int SetServer(
 
 ## <a name="parameters"></a>參數
 `pServer`\
-為埠供應商設置的核心伺服器。
+要為埠供應商設定的核心伺服器。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugPortSupplierEx2](../../../extensibility/debugger/reference/idebugportsupplierex2.md)

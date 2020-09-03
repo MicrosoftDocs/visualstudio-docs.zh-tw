@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::附加 |微軟文件
+title: IDebugProcess2：： Attach |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fb6ea896285c784021402400597ba168f6ccf716
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724188"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
-將會話調試管理員 (SDM) 附加到進程。
+將會話 debug manager (SDM) 附加至進程。
 
 ## <a name="syntax"></a>語法
 
@@ -47,30 +47,30 @@ int Attach( 
 
 ## <a name="parameters"></a>參數
 `pCallback`\
-[在]用於調試事件通知的[IDebugEvent 回調2](../../../extensibility/debugger/reference/idebugeventcallback2.md)物件。
+在用於 debug 事件通知的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 物件。
 
 `rgguidSpecificEngines`\
-[在]用於調試進程中運行的程式的調試引擎 GUID 陣列。 此參數可以是空值。 有關詳細資訊,請參閱備註。
+在用來在進程中執行的偵錯工具之偵錯工具的 Guid 陣列。 這個參數可以是 null 值。 如需詳細資訊，請參閱備註。
 
 `celtSpecificEngines`\
-[在]陣列中的`rgguidSpecificEngines`除錯引擎數`rghrEngineAttach`和陣列的大小。
+在陣列中的偵錯工具引擎數目 `rgguidSpecificEngines` 以及陣列的大小 `rghrEngineAttach` 。
 
 `rghrEngineAttach`\
-[進出]調試引擎返回的 HRESULT 代碼陣列。 此陣列的大小在`celtSpecificEngines`參數中指定。 每個代碼通常是或`S_OK``S_ATTACH_DEFERRED`。 後者表示 DE 當前未附加到任何程式。
+[in，out]偵錯工具引擎所傳回的 HRESULT 代碼陣列。 這個陣列的大小是在參數中指定 `celtSpecificEngines` 。 每個程式碼通常是 `S_OK` 或 `S_ATTACH_DEFERRED` 。 後者表示 DE 目前未附加到任何程式。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。 下表顯示了其他可能的值。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 下表顯示其他可能的值。
 
 |值|描述|
 |-----------|-----------------|
-|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|指定的程序已附加到除錯器。|
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|在附加過程中發生了安全衝突。|
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|桌面進程無法附加到除錯器。|
+|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|指定的進程已附加至偵錯工具。|
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|附加程式期間發生安全性違規。|
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|桌面進程無法附加至偵錯工具。|
 
 ## <a name="remarks"></a>備註
- 附加到行程將 SDM 附加到該行程中運行的所有程式,這些程式`rgguidSpecificEngines`可以由 陣列中指定的調試引擎 (DE) 調試。 將`rgguidSpecificEngines`參數設定為 null 值`GUID_NULL`,或在陣列中包括附加到行程中的所有程式。
+ 附加至處理常式會將 SDM 附加至在該進程中執行的所有程式，而這些程式可以由 debug 引擎進行調試 (DE) 陣列中所指定 `rgguidSpecificEngines` 。 將 `rgguidSpecificEngines` 參數設定為 null 值，或包含 `GUID_NULL` 在陣列中以附加至進程中的所有程式。
 
- 進程中發生的所有調試事件都發送到給定的[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)物件。 當`IDebugEventCallback2`SDM 調用此方法時,將提供此物件。
+ 在處理常式中發生的所有 debug 事件都會傳送至指定的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 物件。 `IDebugEventCallback2`當 SDM 呼叫這個方法時，會提供此物件。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

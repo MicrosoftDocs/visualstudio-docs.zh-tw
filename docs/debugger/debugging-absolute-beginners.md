@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c3cf9d5e4d72ed316344d1bda930d0416e9efe5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77416390"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>完全初學者如何偵錯
@@ -54,7 +54,7 @@ ms.locfileid: "77416390"
 * 您是否知道程式碼的意圖？ 通常很難對其他人的程式碼進行偵錯。 如果這不是您的程式碼，您可能需要花時間了解程式碼的確切功能，才能有效地進行偵錯。
 
     > [!TIP]
-    > 撰寫程式碼時，請從少量且有效的程式碼開始 （好的示例代碼在這裡很有説明。有時，從演示您嘗試實現的核心任務的一小塊代碼開始，可以更輕鬆地修復大型或複雜的代碼集。 然後，您可以累加地修改或新增程式碼，並在每個位置測試錯誤。
+    > 撰寫程式碼時，請從少量且有效的程式碼開始  (良好的範例程式碼在此很有説明。 ) 有時可以更輕鬆地修正一組大型或複雜的程式碼，方法是從示範您嘗試達成的核心工作的一小段程式碼開始。 然後，您可以累加地修改或新增程式碼，並在每個位置測試錯誤。
 
 藉由自我詢問假設，您可以縮短在程式碼中找出問題所需的時間。 您也可以縮短修正問題所需的時間。
 
@@ -64,7 +64,7 @@ ms.locfileid: "77416390"
 
 在偵錯工具 (也稱為「偵錯模式」**) 中執行應用程式，表示偵錯工具會在程式執行時主動監視發生的所有情況。 它也可讓您在任何位置暫停應用程式以檢查其狀態，然後逐行執行程式碼，以監看發生的所有詳細資料。
 
-在 Visual Studio 中，您可以使用**F5（** 或**調試** > **開始調試**功能表命令或調試工具列中的!["開始調試"按鈕"開始調試](../debugger/media/dbg-tour-start-debugging.png "[偵錯]")"）進入偵錯模式。 **Start Debugging** 如果發生任何例外狀況，Visual Studio 的例外狀況協助程式會帶您前往發生例外狀況的確切位置，並提供其他實用的資訊。 如需如何在程式碼中處理例外狀況的詳細資訊，請參閱[偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)。
+在 Visual Studio 中，您可以使用**F5** (或 [偵錯工具**Debug**  >  **開始調試**程式] 命令，或在偵錯工具列) 中**啟動調試**程式按鈕![開始調試](../debugger/media/dbg-tour-start-debugging.png "[偵錯]")程式，進入偵錯工具模式。 如果發生任何例外狀況，Visual Studio 的例外狀況協助程式會帶您前往發生例外狀況的確切位置，並提供其他實用的資訊。 如需如何在程式碼中處理例外狀況的詳細資訊，請參閱[偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)。
 
 如果您未收到例外狀況，您可能知道要到程式碼中的何處尋找問題。 這是您搭配偵錯工具使用「中斷點」** 的位置，讓您有機會更仔細地檢查程式碼。 中斷點是可靠偵錯最基本也最重要的功能。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值、記憶體的行為，或程式碼執行的順序。
 
@@ -76,22 +76,22 @@ ms.locfileid: "77416390"
 
 接下來，我們將建立內含一些 Bug 的應用程式。
 
-1. 您必須安裝 Visual Studio 並安裝 **.NET 桌面開發**工作負荷或 **.NET Core 跨平臺開發**工作負載，具體取決於要創建的應用類型。
+1. 您必須安裝 Visual Studio，以及安裝 **.net 桌面開發** 工作負載或 **.net Core 跨平臺開發** 工作負載（視您想要建立的應用程式類型而定）。
 
-    如果您尚未安裝 Visual Studio，請轉到 Visual [Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面以免費安裝它。
+    如果您尚未安裝 Visual Studio，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)   頁面，免費進行安裝。
 
-    如果您需要安裝工作負載，但已有視覺化工作室，請按一下 **"工具** > **獲取工具和功能**"。 Visual Studio 安裝程式即會啟動。 選擇 **.NET 桌面開發**（或 **.NET 核心跨平臺開發**）工作負載，然後選擇 **"修改**"。
+    如果您需要安裝工作負載，但已有 Visual Studio，請按一下 [**工具**  >  **取得工具及功能**]。 Visual Studio 安裝程式即會啟動。 選擇 [ **.net 桌面開發** (] 或 [ **.net Core 跨平臺開發** ]) 工作負載，然後選擇 [ **修改**]。
 
 1. 開啟 Visual Studio。
 
     ::: moniker range=">=vs-2019"
-    在啟動視窗中，選擇 **"創建新專案**"。 在搜索框中鍵入**主控台**，然後選擇**主控台應用 （.NET 核心）** 或**主控台應用程式 （.NET 框架）**。 選擇 [下一步]****。 鍵入例如 **ConsoleApp-FirstApp** 的專案名稱，然後按一下 [建立]****。
+    在 [開始] 視窗中，選擇 [ **建立新專案**]。 在搜尋方塊中輸入 **主控台** ，然後選擇 **主控台應用程式 ( .net Core) ** 或 **主控台應用程式 ( .NET Framework) **。 選擇 [下一步]。 鍵入例如 **ConsoleApp-FirstApp** 的專案名稱，然後按一下 [建立]****。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂部功能表列中，選擇 **"檔** > **新專案** > **"。** 在 [新專案]**** 對話方塊的左窗格中，於 [Visual C#]**** 下選擇 [主控台應用程式]****，然後在中間的窗格中選擇 [主控台應用程式 (.NET Framework)]**** 或 [主控台應用程式 (.NET Core)]****。 鍵入像 **ConsoleApp-FirstApp** 的名稱，並按一下 [確定]****。
+    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [新專案]**** 對話方塊的左窗格中，於 [Visual C#]**** 下選擇 [主控台應用程式]****，然後在中間的窗格中選擇 [主控台應用程式 (.NET Framework)]**** 或 [主控台應用程式 (.NET Core)]****。 鍵入像 **ConsoleApp-FirstApp** 的名稱，並按一下 [確定]****。
     ::: moniker-end
 
-    如未看到**主控台應用程式 (.NET Framework)** 或**主控台應用程式 (.NET Core)** 專案範本，請前往 [工具]**** > [取得工具與功能]**** 來開啟 Visual Studio 安裝程式。 選擇 **.NET Core 跨平臺開發**或 **.NET 桌面開發**工作負載，然後選擇 **"修改**"。
+    如未看到**主控台應用程式 (.NET Framework)** 或**主控台應用程式 (.NET Core)** 專案範本，請前往 [工具]**** > [取得工具與功能]**** 來開啟 Visual Studio 安裝程式。 選擇 **.Net Core 跨平臺開發** 或 **.net 桌面開發** 工作負載，然後選擇 [ **修改**]。
 
     Visual Studio 隨即建立主控台專案，並出現在右窗格的 [方案總管] 中。
 
@@ -182,7 +182,7 @@ ms.locfileid: "77416390"
 
 ### <a name="run-the-app"></a>執行應用程式
 
-1. 在位於代碼編輯器上方的調試工具列中按**F5**或 **"開始調試**!["按鈕"開始調試](../debugger/media/dbg-tour-start-debugging.png "[偵錯]")"。
+1. 在 [程式碼編輯器] 上方的偵錯工具工具列中，按下 **F5** 或 [ **開始調試** 程式] 按鈕 ![開始調試](../debugger/media/dbg-tour-start-debugging.png "[偵錯]") 程式。
 
     應用程式隨即啟動，而且偵錯工具不會顯示任何例外狀況。 不過，您在主控台視窗中看到的輸出不符合預期。 以下是預期的輸出：
 
@@ -223,7 +223,7 @@ ms.locfileid: "77416390"
 
     由於我們在輸出中看到問題，因此我們將在偵錯工具中查看設定輸出的上述程式碼來開始偵錯。
 
-1. 按一下調試工具列 **（Ctrl** + **Shift** + **F5**） 中的**Restart**![重新開機應用](../debugger/media/dbg-tour-restart.png "重新開機應用")按鈕。
+1. 按一下偵錯工具列中的 [**重新**啟動![重新開機應用程式](../debugger/media/dbg-tour-restart.png ">restartapp")] 按鈕， (**Ctrl**  +  **Shift**  +  **F5**) 。
 
     應用程式會在您設定的中斷點處暫停。 黃色醒目提示指出偵錯工具的暫停位置 (黃色程式碼行尚未執行)。
 
@@ -255,11 +255,11 @@ ms.locfileid: "77416390"
     public GType GalaxyType { get; set; }
     ```
 
-1. 按一下調試工具列 **（Ctrl** + **Shift** + **F5）** 中的 **"**![重新開機應用](../debugger/media/dbg-tour-restart.png "重新開機應用")"按鈕以重新編譯代碼並重新啟動。
+1. 按一下偵錯工具列中的 [**重新**啟動![重新開機應用程式](../debugger/media/dbg-tour-restart.png ">restartapp")] 按鈕 (**Ctrl**  +  **Shift**  +  **F5**) 重新編譯程式碼並重新啟動。
 
     現在，當偵錯工具在 `Console.WriteLine` 上暫停時，您可以將滑鼠游標移至 `theGalaxy.GalaxyType.MyGType` 上方，並看到值已正確設定。
 
-1. 按一下左邊距中的中斷點圓（或按右鍵並選擇**中斷點** > **刪除中斷點**），然後按**F5**繼續，刪除中斷點。
+1. 若要移除中斷點，請按一下左邊界中的中斷點圓圈 (或按一下滑鼠右鍵並選擇 [**中斷點**  >  **刪除中斷點**) ]，然後按**F5**鍵繼續。
 
     應用程式隨即執行並顯示輸出。 現在看起來相當不錯，但您注意到一點：您預期小麥哲倫星系在主控台輸出中顯示為不規則銀河，但卻完全顯示為沒有銀河類型。
 
@@ -280,7 +280,7 @@ ms.locfileid: "77416390"
 
     此程式碼是設定銀河類型的位置，因此我們想要進一步查看。
 
-1. 按一下調試工具列 （**Ctrl** + **Shift** + **F5**） 中的 **"**![重新開機應用](../debugger/media/dbg-tour-restart.png "重新開機應用")"按鈕以重新開機。
+1. 按一下偵錯工具列中的 [**重新**啟動![重新開機應用程式](../debugger/media/dbg-tour-restart.png ">restartapp")] 按鈕 (**Ctrl**  +  **Shift**  +  **F5**) 重新開機。
 
     偵錯工具會在您設定中斷點的程式碼行上暫停。
 
@@ -298,7 +298,7 @@ ms.locfileid: "77416390"
 
     ![尋找錯字](../debugger/media/beginners-typo.png)
 
-    看一下程式碼，您會在 `case 'l'` 陳述式中看到錯字。 它應該是 `case 'I'`。
+    看一下程式碼，您會在 `case 'l'` 陳述式中看到錯字。 此屬性應該是 `case 'I'`。
 
 1. 按一下程式碼中的 `case 'l'`，然後以 `case 'I'` 取代。
 
@@ -329,4 +329,4 @@ ms.locfileid: "77416390"
 在本文中，您已了解幾個一般偵錯概念。 接下來，您可以開始深入了解偵錯工具。
 
 > [!div class="nextstepaction"]
-> [首先查看調試器](../debugger/debugger-feature-tour.md)
+> [偵錯工具簡介](../debugger/debugger-feature-tour.md)

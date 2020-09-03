@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess查詢屬性::查詢屬性 |微軟文件
+title: IDebugProcessQueryProperties：： QueryProperties |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4daac369485febe38e3366d413985bda90b30f05
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723325"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
-此方法查詢調試過程的指定屬性值。
+這個方法會查詢偵錯工具的指定屬性值。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ int QueryProperties(
 
 ## <a name="parameters"></a>參數
 `celt`\
-[在]包含屬性定義和屬性值的陣列的大小。
+在包含屬性定義和屬性值之陣列的大小。
 
 `dwPropType`\
-[在]包含查詢屬性定義的陣列。 可能的值包括：
+在陣列，其中包含所查詢屬性的定義。 可能的值包括：
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -53,13 +53,13 @@ int QueryProperties(
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
 `pvarPropValue`\
-[出]包含屬性值的陣列。
+擴展包含屬性值的陣列。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 此方法很少使用。
+ 這種方法很少使用。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

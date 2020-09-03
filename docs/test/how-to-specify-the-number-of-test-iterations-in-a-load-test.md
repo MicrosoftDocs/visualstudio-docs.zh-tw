@@ -10,17 +10,17 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b022c747235f131f530df62e49c7204a97ce0872
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287476"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>如何：在負載測試回合設定中指定測試反覆項目的數目
 
-使用 [新增負載測試精靈]**** 建立負載測試之後，您就可以使用 [負載測試編輯器]**** 來變更情節屬性，以便符合您的測試需求和目標。 如需詳細資訊，請參閱[逐步解說：建立和執行負載測試](../test/walkthrough-create-and-run-a-load-test.md)。
+使用 [新增負載測試精靈]**** 建立負載測試之後，您就可以使用 [負載測試編輯器]**** 來變更情節屬性，以便符合您的測試需求和目標。 如需詳細資訊，請參閱 [逐步解說：建立和執行負載測試](../test/walkthrough-create-and-run-a-load-test.md)。
 
-使用**負載測試編輯器**，您可以在 [**屬性**] 視窗中編輯回合設定值的 [**測試**反復專案] 屬性。 [**測試**反復專案] 屬性會指定使用**負載測試編輯器**，在負載測試的所有案例中，針對所有的 web 效能和單元測試執行的反覆運算次數。
+您可以使用**負載測試編輯器**，在 [**屬性**] 視窗中編輯回合設定值的 [**測試**反復專案] 屬性。 [ **測試** 反復專案] 屬性會使用 **負載測試編輯器**，在負載測試的所有案例中，指定要在所有 web 效能和單元測試上執行的反覆運算次數。
 
 > [!NOTE]
 > 如需回合設定屬性及其描述的完整清單，請參閱[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。

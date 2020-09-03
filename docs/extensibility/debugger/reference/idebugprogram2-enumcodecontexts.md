@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::枚舉碼上下文 |微軟文件
+title: IDebugProgram2：： EnumCodeCoNtexts |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c22a5ce398e76ee97b2f0448900fd4e38f996615
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723045"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
-檢索源檔中給定位置的代碼上下文的清單。
+抓取原始程式檔中指定位置的程式碼內容清單。
 
 ## <a name="syntax"></a>語法
 
@@ -43,15 +43,15 @@ int EnumCodeContexts( 
 
 ## <a name="parameters"></a>參數
 `pDocPos`\
-[在][IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)物件,表示 IDE 已知的源檔中的抽象位置。
+在 [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) 物件，代表在 IDE 已知的原始程式檔中的抽象位置。
 
-`ppEnum`[出]返回包含代碼上下文清單的[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)物件。
+`ppEnum` 擴展傳回 [IEnumDebugCodeCoNtexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) 物件，其中包含程式碼內容的清單。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 此方法允許工作階段除錯管理員 (SDM) 或 IDE 將源檔案位置映射到程式碼位置。 如果原始生成多個程式碼塊(例如,C++範本),則返回多個程式碼上下文。
+ 這個方法可讓會話 debug manager (SDM) 或 IDE，將原始程式檔位置對應到程式碼位置。 如果來源產生多個程式碼區塊，則會傳回一個以上的程式碼內容 (例如，c + + 範本) 。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
