@@ -13,10 +13,10 @@ ms.workload:
 helpviewer_keywords:
 - add missing usings
 ms.openlocfilehash: 903b160bac0e8096062e09fd78ff4c92c46cf8ee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094309"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>在 Visual Studio 中新增遺漏的 using
@@ -27,15 +27,15 @@ ms.locfileid: "79094309"
 
 - Visual Basic
 
-**內容：** 允許您立即添加必要的導入或使用[指令](/dotnet/csharp/language-reference/keywords/using-directive)進行複製和粘貼代碼。
+事項 **：** 讓您立即新增必要的匯入，或針對複製和貼上的程式碼[使用](/dotnet/csharp/language-reference/keywords/using-directive)指示詞。
 
-**何時：** 通常的做法是從專案或其他源的不同位置複製代碼並將其粘貼到新代碼中。 此快速操作查找缺少複製和粘貼代碼的導入指令，然後提示您添加它們。 此代碼修復還可以從專案到專案增加參考。
+時機 **：** 常見的作法是從專案或其他來源中的不同位置複製程式碼，並將其貼到新的程式碼中。 此快速動作會找出複製和貼上程式碼遺漏的 imports 指示詞，然後提示您加入它們。 這段程式碼修正也可以將專案的參考加入至專案。
 
-**原因：** 由於"快速操作"會自動添加必要的導入，因此無需手動複製代碼所需的`using`指令。
+**原因：** 由於快速動作會自動新增必要的匯入，因此您不需要手動複製 `using` 程式碼所需的指示詞。
 
 ## <a name="add-missing-usings-refactoring"></a>新增遺漏的 using 重構
 
-1. 從檔案複製代碼並將其粘貼到新檔中，而不包含必要的`using`指令。 生成的錯誤附帶添加缺少`using`的指令的代碼修復程式。
+1. 從檔案複製程式碼，並將它貼到新的程式碼中，而不包含必要的指示詞 `using` 。 產生的錯誤會伴隨程式碼修正，以新增遺漏的指示詞 `using` 。
 
     > [!NOTE]
     > 您需要在 [工具] > [選項] > [文字編輯器] > [C#] > [進階] > [Using 指示詞]**** 中啟用此建議。
@@ -44,12 +44,12 @@ ms.locfileid: "79094309"
 
     ![產生的 using](media/generate-using-codefix.png)
 
-3. 選取 [使用\<您的參考\>]**** 以新增遺失的參考。
+3. 選取 **[ \<your reference\> 使用** ]，以加入遺漏的參考。
 
     ![產生 using 結果](media/generate-using-result.png)
 
 ## <a name="see-also"></a>另請參閱
 
-- [產生程式碼](../code-generation-in-visual-studio.md)
+- [程式碼產生](../code-generation-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)
-- [.NET 開發人員的提示](../csharp-developer-productivity.md)
+- [.NET 開發人員的秘訣](../csharp-developer-productivity.md)

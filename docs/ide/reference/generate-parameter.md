@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 372a3f705e5e85c0edb31a754105f61056402b9f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094358"
 ---
 # <a name="generate-parameter"></a>產生參數
@@ -25,19 +25,19 @@ ms.locfileid: "79094358"
 
 - Visual Basic
 
-**內容：** 自動生成方法參數。
+事項 **：** 自動產生方法參數。
 
-**何時：** 引用方法中的變數，該變數在當前上下文中不存在並收到錯誤;因此，請引用當前上下文中不存在的變數。但是，如果該方法在當前上下文中不存在，則會導致錯誤。可以生成參數作為代碼修復。 
+時機 **：** 您可以參考不存在於目前內容中的方法中的變數，並接收錯誤;您可以產生參數作為程式碼修正程式。 
 
-**原因：** 您可以快速修改方法簽名，而不會丟失上下文。
+**原因：** 您可以快速修改方法簽章，而不會遺失內容。
 
 ## <a name="how-to"></a>操作方式
 
-1. 將游標放在變數名稱中，然後按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
+1. 將游標放在變數名稱中，然後按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
 1. 選取 [產生參數]****。
 
    ![產生參數](media/generate-parameter.png) 
 
 ## <a name="see-also"></a>另請參閱
 
-- [Refactoring](../refactoring-in-visual-studio.md)
+- [重構](../refactoring-in-visual-studio.md)

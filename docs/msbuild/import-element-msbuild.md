@@ -19,17 +19,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d9e66934015c7c4a57c7d7c6911b9ebe02ac536
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094485"
 ---
 # <a name="import-element-msbuild"></a>Import 項目 (MSBuild)
 
 將某個專案檔的內容匯入至另一個專案檔。
 
-\<Project> \<Import>
+\<Project>
+\<Import>
 
 ## <a name="syntax"></a>語法
 
@@ -52,28 +53,28 @@ ms.locfileid: "79094485"
 
 ### <a name="child-elements"></a>子元素
 
- None
+ 無
 
 ### <a name="parent-elements"></a>父元素
 
-| 元素 | 描述 |
+| 項目 | 描述 |
 | - | - |
-| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔案所需的根項目。 |
+| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
 | [ImportGroup](../msbuild/importgroup-element.md) | 包含群組在選擇性條件下方的 `Import` 項目集合。 |
 
 ## <a name="remarks"></a>備註
 
  使用 `Import` 項目，您可以重複使用通用於許多專案檔的程式碼。 因為您對共用程式碼的更新都會傳播至匯入它的所有專案，所以這可讓您更輕鬆地維護程式碼。
 
- 按照慣例，共用導入的專案檔案將保存為 *.targets*檔，但它們是標準的 MSBuild 專案檔案。 MSBuild 不會阻止您導入具有不同檔案名副檔名的專案，但我們建議您使用 *.target*副檔名來保持一致性。
+ 依照慣例，共用的匯入專案檔會儲存為 *.targets* 檔案，但它們是標準的 MSBuild 專案檔。 MSBuild 不會讓您匯入副檔名不同的專案，但是建議您使用 *.targets* 副檔名以保持一致性。
 
- 導入專案中的相對路徑相對於導入專案的目錄進行解釋（此段落後面介紹的一些例外情況除外）。 因此，如果將專案檔匯入至不同位置中的數個專案檔，則針對每個匯入的專案，會以不同的方式解譯匯入之專案檔中的相對路徑。 有兩個例外。 一個例外是，`Import`在元素中，路徑始終相對於包含`Import`元素的專案進行解釋。 另一個例外是`UsingTask`，始終解釋`AssemblyFile`屬性相對於包含`UsingTask`元素的檔的相對路徑。
+ 匯入專案中的相對路徑會相對於匯入專案的目錄進行解讀 (有一些例外狀況稍後會在此段落中說明) 。 因此，如果將專案檔匯入至不同位置中的數個專案檔，則針對每個匯入的專案，會以不同的方式解譯匯入之專案檔中的相對路徑。 有兩個例外狀況。 其中一個例外狀況是，在 `Import` 專案中，路徑一律會相對於包含專案的專案進行解讀 `Import` 。 另一個例外狀況是， `UsingTask` 一律會解讀 `AssemblyFile` 屬性相對於包含元素之檔案的相對路徑 `UsingTask` 。
 
- 與專案檔案相關的所有 MSBuild 保留屬性（例如，`MSBuildProjectDirectory`在導入`MSBuildProjectFile`的專案中引用的 和 ） 都基於導入的專案檔案分配值。
+ 所有與專案檔相關的 MSBuild 保留屬性（例如 `MSBuildProjectDirectory` 和 `MSBuildProjectFile` ）都會根據匯入的專案檔指派值。
 
- 如果匯入的專案沒有 `DefaultTargets` 屬性，則會依匯入順序來檢查匯入的專案，並使用第一個探索到之 `DefaultTargets` 屬性的值。 例如，如果 ProjectA 導入 ProjectB 和 ProjectC（按該順序），ProjectB 導入 ProjectD，`DefaultTargets`則 MSBuild 首先查找在 ProjectA 上指定的，然後是 ProjectB，然後是 ProjectD，最後是 ProjectC。
+ 如果匯入的專案沒有 `DefaultTargets` 屬性，則會依匯入順序來檢查匯入的專案，並使用第一個探索到之 `DefaultTargets` 屬性的值。 例如，如果 ProjectA 以該順序匯入 ProjectB 和 ProjectC () ，而 ProjectB imports ProjectD，MSBuild 會先 `DefaultTargets` 在 ProjectA、ProjectB、ProjectD 和最後 ProjectC 上尋找指定的。
 
- 匯入之專案的結構描述與標準專案的結構描述完全相同。 儘管 MSBuild 可能能夠生成導入的專案，但不太可能，因為導入的專案通常不包含有關要設置的屬性或運行目標的順序的資訊。 匯入的專案取決於匯入它以提供該資訊的專案。
+ 匯入之專案的結構描述與標準專案的結構描述完全相同。 雖然 MSBuild 可能會建立匯入的專案，但不太可能，因為匯入的專案通常不包含要設定的屬性或執行目標的順序的相關資訊。 匯入的專案取決於匯入它以提供該資訊的專案。
 
 ## <a name="wildcards"></a>萬用字元
 
@@ -114,5 +115,5 @@ ms.locfileid: "79094485"
 
 ## <a name="see-also"></a>另請參閱
 
-- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)
+- [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [如何：使用多個專案檔內相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

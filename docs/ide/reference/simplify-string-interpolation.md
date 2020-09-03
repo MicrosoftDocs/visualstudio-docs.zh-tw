@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: a8b0fd53164cb98921b111d49fa04a76c9d0d8a8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094304"
 ---
-# <a name="simplify-string-interpolation-refactoring"></a>簡化字串插值重構
+# <a name="simplify-string-interpolation-refactoring"></a>簡化字串插補重構
 
 此重構適用於：
 
@@ -25,22 +25,22 @@ ms.locfileid: "79094304"
 
 - Visual Basic
 
-**內容：** 允許您簡化[字串插值](https://docs.microsoft.com/dotnet/csharp/tutorials/string-interpolation)。
+事項 **：** 可讓您簡化[字串插補](https://docs.microsoft.com/dotnet/csharp/tutorials/string-interpolation)。
 
-**何時：** 您有一個可以簡化的字串插值。
+時機 **：** 您有可簡化的字串插補。
 
-**原因：** 簡化字串插值可以提供更清晰、更簡潔的語法。 此重構工具將自動執行任務，而不必手動執行。
+**原因：** 簡化字串插補可提供更清楚且更簡潔的語法。 此重構工具將會自動執行工作，而不需要手動執行。
 
 ## <a name="how-to"></a>操作方式
 
-1. 將插入符放在字串插值上：
+1. 將插入號放在字串插補上：
 
-2. 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
+2. 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
 
-3. 選擇 **"簡化插值"**
+3. 選取 **簡化插補**
 
     ![簡化字串插補](media/simplify-string-interpolation.png)
 
 ## <a name="see-also"></a>另請參閱
 
-- [Refactoring](../refactoring-in-visual-studio.md)
+- [重構](../refactoring-in-visual-studio.md)

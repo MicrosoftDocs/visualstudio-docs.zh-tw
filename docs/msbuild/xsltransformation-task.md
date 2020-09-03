@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d23799e5ce5bf391915ac459c69c27b990211f0a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094544"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation 工作
@@ -31,10 +31,10 @@ ms.locfileid: "79094544"
 
  下表說明 `XslTransformation` 工作的參數。
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |`OutputPaths`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定 XML 轉換的輸出檔案。|
-|`Parameters`|選擇性的 `String` 參數。<br /><br /> 指定「XSLT 輸入」文件的參數。  提供原始 XML，將每個參數保留`<Parameter Name="" Value="" Namespace="" />`為 。|
+|`Parameters`|選擇性的 `String` 參數。<br /><br /> 指定「XSLT 輸入」文件的參數。  提供保存每個參數的原始 XML `<Parameter Name="" Value="" Namespace="" />` 。|
 |`XmlContent`|選擇性的 `String` 參數。<br /><br /> 以字串形式指定 XML 輸入。|
 |`XmlInputPaths`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定 XML 輸入檔案。|
 |`XslCompiledDllPath`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定已編譯的 XSLT。|
@@ -43,11 +43,11 @@ ms.locfileid: "79094544"
 
 ## <a name="remarks"></a>備註
 
- 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 有關這些附加參數及其說明的清單，請參閱[任務擴展基類](../msbuild/taskextension-base-class.md)。
+ 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些額外參數的清單及其描述，請參閱 [TaskExtension 基類（base class](../msbuild/taskextension-base-class.md)）。
 
 ## <a name="example"></a>範例
 
-在下面的示例中，XSL 轉換檔*轉換.xslt*用於修改 xml 檔`$(XmlInputFileName)`。 轉換後的 XML 寫入`$(IntermediateOutputPath)output.xml`。 XSL 變換採用`$(Parameter1)`輸入參數。
+在下列範例中，會使用 XSL 轉換檔案 *轉換。 xslt* 是用來修改 xml 檔案 `$(XmlInputFileName)` 。 轉換的 XML 會寫入至 `$(IntermediateOutputPath)output.xml` 。 XSL 轉換採用 `$(Parameter1)` 做為輸入參數。
 
 ```xml
     <XslTransformation XslInputPath="transform.xslt"
@@ -60,4 +60,4 @@ ms.locfileid: "79094544"
 
 - [XSLT 參數](/dotnet/standard/data/xml/xslt-parameters)
 - [工作](../msbuild/msbuild-tasks.md)
-- [任務引用](../msbuild/msbuild-task-reference.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)
