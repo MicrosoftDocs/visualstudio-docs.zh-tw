@@ -1,5 +1,5 @@
 ---
-title: 複製 （程式設計擷取） |Microsoft Docs
+title: 複製 (程式設計捕獲) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fa79ffc2081ba92b905838658fe6aa758a675192
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161505"
 ---
 # <a name="copy-programmatic-capture"></a>複製 (程式設計擷取)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-使用中的圖形記錄 (.vsglog) 檔案的內容複製到新的檔案。  
+將現用圖形記錄檔 ( 的內容複寫到新的檔案中。 vsglog) 檔案。  
   
 ## <a name="syntax"></a>語法  
   
@@ -31,7 +31,7 @@ void Copy(
   
 #### <a name="parameters"></a>參數  
  `szNewVSGLog`  
- 新的圖形記錄檔的檔案名稱。  
+ 新圖形記錄檔的檔案名。  
   
 ## <a name="remarks"></a>備註  
- 若要將圖形資訊複製到新的檔案中，您必須已經擷取某些圖形資訊;否則，會發生任何事。
+ 若要將圖形資訊複製到新檔案，您必須已捕捉部分圖形資訊;否則，就不會發生任何事。

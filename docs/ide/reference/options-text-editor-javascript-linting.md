@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f8a194f3848b0737fc33af2b9948102987a5923
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68605963"
 ---
-# <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>選項對話方塊：文字編輯器\>JavaScript/TypeScript\>林亭
+# <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>選項對話方塊：文字編輯器 \> JavaScript/TypeScript \> Linting
 
-使用 [選項]**** 對話方塊的 [Linting]**** 頁面，設定在程式碼編輯器中分析程式碼的選項。 要訪問此頁面，在功能表列上，選擇 **"工具** > **選項**"，然後展開**文字編輯器** > **JavaScript/TypeScript** > **Linting**。
+使用 [選項]**** 對話方塊的 [Linting]**** 頁面，設定在程式碼編輯器中分析程式碼的選項。 若要存取此頁面，請在功能表列上選擇 [**工具**  >  **選項**]，然後展開 [**文字編輯器**  >  **JavaScript/TypeScript**  >  **Linting**]。
 
 ## <a name="eslint-settings"></a>ESLint 設定
 
@@ -41,4 +41,4 @@ ms.locfileid: "68605963"
 
 ## <a name="see-also"></a>另請參閱
 
-- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)
+- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

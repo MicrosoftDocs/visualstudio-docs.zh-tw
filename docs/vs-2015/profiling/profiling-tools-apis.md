@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2dc5477055969ca9c9424d5cd51f34f12a411579
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871590"
 ---
 # <a name="profiling-tools-apis"></a>程式碼剖析工具 API
@@ -22,13 +22,13 @@ ms.locfileid: "68871590"
 您可以插入 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具 API 的 Managed 或原生方法，來控制程式碼剖析執行時收集的資料。 本節描述 API 方法並說明如何使用它們。
 
 ## <a name="in-this-section"></a>本節內容
- [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)\
+ [Visual Studio Profiler API 參考 (原生) ](../profiling/visual-studio-profiler-api-reference-native.md)\
  描述 ++ 程式碼剖析工具的方法。
 
- [程式碼剖析工具](/previous-versions/ms242704(v=vs.140))\
+ [分析器](/previous-versions/ms242704(v=vs.140))\
  描述 .NET 程式碼剖析工具的方法。
 
- [逐步解說：使用分析工具 API](../profiling/walkthrough-using-profiler-apis.md)\
+ [逐步解說：使用 Profiler Api](../profiling/walkthrough-using-profiler-apis.md)\
  了解如何在此完整範例中使用 .NET 程式碼剖析工具的方法。
 
 ## <a name="related-sections"></a>相關章節

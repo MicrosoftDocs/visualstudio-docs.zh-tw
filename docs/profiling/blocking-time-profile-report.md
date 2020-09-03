@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3ed24dce0779b9bc7ea9cfd7bedcaa5ca181c68
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68926317"
 ---
 # <a name="blocking-time-profile-report"></a>封鎖時間分析報表
@@ -31,32 +31,32 @@ ms.locfileid: "68926317"
 ## <a name="blocking-time-report-columns"></a>封鎖時間報表資料行
  下表顯示每個封鎖時間報表的資料行。
 
-|資料行名稱|描述|
+|欄名|描述|
 |-----------------|-----------------|
 |**名稱**|每個層級的呼叫堆疊的函式名稱。|
-|**實例**|顯示的時間週期內封鎖呼叫的執行個體數目。|
+|**執行個體**|顯示的時間週期內封鎖呼叫的執行個體數目。|
 |**內含封鎖時間**|針對到呼叫堆疊樹狀圖的這個層級為止的所有堆疊花費的總封鎖時間。 此內含數字是此函式的獨佔封鎖時間和其所有子節點的專屬封鎖時間的總和。|
 |**獨佔封鎖時間**|花費的總封鎖時間，在此期間內，此函式是呼叫堆疊的最低層級。 具有大量獨佔封鎖時間的唯一呼叫堆疊項目，可能是您感興趣的函式。|
 |**API/等候類別**|只針對最下層呼叫堆疊的函式顯示。 已辨識封鎖呼叫的簽章時，會提供封鎖 API 的名稱。 如果無法辨識簽章，會提供核心所報表的資訊。|
 |**詳細資料**|函式的完整格式名稱。 當有詳細資料可用時，其中會包括行數。|
 
 ### <a name="synchronization"></a>Synchronization
- 同步處理報表顯示對封鎖同步處理之區段負責的呼叫，以及每個呼叫堆疊的彙總封鎖時間。 有關詳細資訊，請參閱[同步時間](../profiling/synchronization-time.md)。
+ 同步處理報表顯示對封鎖同步處理之區段負責的呼叫，以及每個呼叫堆疊的彙總封鎖時間。 如需詳細資訊，請參閱 [同步處理時間](../profiling/synchronization-time.md)。
 
 ### <a name="sleep"></a>睡眠
- 睡眠報表顯示對因睡眠所花的時間而產生的封鎖時間負責的呼叫，以及每個呼叫堆疊的彙總封鎖時間。 有關詳細資訊，請參閱[睡眠時間](../profiling/sleep-time.md)。
+ 睡眠報表顯示對因睡眠所花的時間而產生的封鎖時間負責的呼叫，以及每個呼叫堆疊的彙總封鎖時間。 如需詳細資訊，請參閱 [睡眠時間](../profiling/sleep-time.md)。
 
 ### <a name="io"></a>I/O
- I/O 報表顯示對封鎖 I/O 之區段負責的呼叫，以及每個呼叫堆疊的彙總封鎖時間。 有關詳細資訊，請參閱[I/O 時間（執行緒視圖）。](../profiling/i-o-time-threads-view.md)
+ I/O 報表顯示對封鎖 I/O 之區段負責的呼叫，以及每個呼叫堆疊的彙總封鎖時間。 如需詳細資訊，請參閱 [i/o time (執行緒 view) ](../profiling/i-o-time-threads-view.md)。
 
 ### <a name="memory-management"></a>記憶體管理
- 記憶體管理報表顯示對封鎖記憶體管理作業之區段負責的呼叫，以及每個呼叫堆疊的彙總封鎖時間。 有關詳細資訊，請參閱[記憶體管理時間](../profiling/memory-management-time.md)。
+ 記憶體管理報表顯示對封鎖記憶體管理作業之區段負責的呼叫，以及每個呼叫堆疊的彙總封鎖時間。 如需詳細資訊，請參閱 [記憶體管理時間](../profiling/memory-management-time.md)。
 
 ### <a name="preemption"></a>先佔
- 先佔報表列出先佔用目前處理序的處理序，以及執行個體的數目。  您可以展開各處理序來檢視取代目前處理序中之執行緒的特定執行緒，並檢視每個執行緒先佔執行個體的細目。 此封鎖報表較其他報表不可行，因為先佔通常是由作業系統加諸於您的處理序，而不是由您程式碼中的問題。 有關詳細資訊，請參閱[搶佔時間](../profiling/preemption-time.md)。
+ 先佔報表列出先佔用目前處理序的處理序，以及執行個體的數目。  您可以展開各處理序來檢視取代目前處理序中之執行緒的特定執行緒，並檢視每個執行緒先佔執行個體的細目。 此封鎖報表較其他報表不可行，因為先佔通常是由作業系統加諸於您的處理序，而不是由您程式碼中的問題。 如需詳細資訊，請參閱 [搶先時間](../profiling/preemption-time.md)。
 
 ### <a name="ui-processing"></a>UI 處理
- UI 處理報表顯示對封鎖 UI 處理區塊之區段負責的呼叫，以及每個呼叫堆疊的彙總封鎖時間。 有關詳細資訊，請參閱[UI 處理時間](../profiling/ui-processing-time.md)。
+ UI 處理報表顯示對封鎖 UI 處理區塊之區段負責的呼叫，以及每個呼叫堆疊的彙總封鎖時間。 如需詳細資訊，請參閱 [UI 處理時間](../profiling/ui-processing-time.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [執行緒視圖](../profiling/threads-view-parallel-performance.md)

@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: e7e7d9a6c1c417b3802ef1f94ac51fec14bf682a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280846"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>保持 Azure 雲端服務的固定虛擬 IP 位址
@@ -27,7 +27,7 @@ ms.locfileid: "85280846"
 ## <a name="update-a-cloud-service-without-changing-its-vip"></a>更新雲端服務而不變更其 VIP
 1. 在 Visual Studio 中建立或開啟 Azure 雲端服務專案。
 
-2. 在 [方案總管]**** 中，於專案上按一下滑鼠右鍵。 選取捷徑功能表上的 [發佈]****。
+2. 在 **方案總管**中，以滑鼠右鍵按一下專案。 選取捷徑功能表上的 [發佈]****。
 
     ![Publish menu](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/solution-explorer-publish-menu.png)
 
@@ -35,11 +35,11 @@ ms.locfileid: "85280846"
 
     ![發佈 Azure 應用程式登入頁面](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-signin.png)
 
-4. 在 [**一般設定**] 索引標籤上，確認您要部署的雲端服務名稱、**環境**、**組建**設定和**服務**設定都正確無誤。
+4. 在 [ **一般設定** ] 索引標籤上，確認您要部署的雲端服務名稱、 **環境**、 **組建**設定和 **服務** 設定都是正確的。
 
     ![發佈 Azure 應用程式一般設定索引標籤](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-common-settings.png)
 
-5. 在 [進階設定]**** 索引標籤上，確認 [部署標籤]**** 和 [儲存體帳戶]**** 都正確無誤。 確認已清除 [失敗時刪除部署]**** 核取方塊，並確認已選取 [部署更新]**** 核取方塊。 藉由清除 [**失敗時刪除部署**] 核取方塊，您可以確保在部署期間發生錯誤時，不會遺失 VIP。 藉由選取 [部署更新]**** 核取方塊，您可以確定不會刪除您的部署，而且在重新發佈應用程式時不會遺失 VIP。
+5. 在 [進階設定]**** 索引標籤上，確認 [部署標籤]**** 和 [儲存體帳戶]**** 都正確無誤。 確認已清除 [失敗時刪除部署]**** 核取方塊，並確認已選取 [部署更新]**** 核取方塊。 藉由清除 [ **失敗時刪除部署** ] 核取方塊，您可以確定在部署期間發生錯誤時不會遺失 VIP。 藉由選取 [部署更新]**** 核取方塊，您可以確定不會刪除您的部署，而且在重新發佈應用程式時不會遺失 VIP。
 
     ![發佈 Azure 應用程式進階設定索引標籤](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-advanced-settings.png)
 

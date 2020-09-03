@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetClassTypeByName | Microsoft Docs
+title: IDebugSymbolProvider：： GetClassTypeByName |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6aed4010789fd5fa9bd6f77bd41c7c1ad2076b81
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155155"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個方法會取得代表完整的類別名稱的類別欄位型別。  
+這個方法會取得代表完整類別名稱的類別欄位類型。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,16 +44,16 @@ int GetClassTypeByName(
   
 #### <a name="parameters"></a>參數  
  `pszClassName`  
- [in]類別名稱。  
+ 在類別名稱。  
   
  `nameMatch`  
- [in]選取類型的相符項目，例如，區分大小寫。 值，以從[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉型別。  
+ 在選取相符的類型，例如區分大小寫。 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉中的值。  
   
  `ppField`  
- [out]傳回所代表的類別型別[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)介面。  
+ 擴展傳回 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 介面所代表的類別類型。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

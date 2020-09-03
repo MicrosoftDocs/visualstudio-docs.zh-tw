@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.workload:
 - multiple
 ms.openlocfilehash: 54b5594eea9b30ca755bd46c00cc2b6e1e0e19fc
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85371595"
 ---
 # <a name="monitor-with-tensorboard"></a>使用 TensorBoard 監視

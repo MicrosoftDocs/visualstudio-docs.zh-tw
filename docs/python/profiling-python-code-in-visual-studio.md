@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 64cd7db0131843ab48410b6676551c8563b8ffbd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531777"
 ---
 # <a name="profile-python-code"></a>分析 Python 程式碼
@@ -23,7 +23,7 @@ ms.locfileid: "85531777"
 
 ## <a name="profiling-for-cpython-based-interpreters"></a>CPython 型解譯器的分析
 
-分析會透過 [**分析**] [  >  **啟動 Python 分析]** 功能表命令來啟動，這會開啟設定對話方塊：
+分析會透過 [**分析**  >  **啟動 Python 分析]** 功能表命令來啟動，此命令會開啟設定對話方塊：
 
 ![分析設定對話方塊](media/profiling-start.png)
 

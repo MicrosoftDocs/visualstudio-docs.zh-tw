@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e182d921e8ffb019d2044699e3a9c333492497b0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531557"
 ---
 # <a name="shader-designer-examples"></a>著色器設計工具範例
@@ -21,9 +21,9 @@ ms.locfileid: "85531557"
 
 文件中本節的文章包含示範如何使用著色器設計工具來建立各種圖形效果的範例。
 
-## <a name="related-topics"></a>相關的主題
+## <a name="related-topics"></a>相關主題
 
-|Title|描述|
+|標題|描述|
 |-|-|
 |[如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)|示範套用常數色彩至物件的著色器。|
 |[如何：建立基本 Lambert 著色器](../designers/how-to-create-a-basic-lambert-shader.md)|示範套用傳統 Lambert 光源模型至物件的著色器。|

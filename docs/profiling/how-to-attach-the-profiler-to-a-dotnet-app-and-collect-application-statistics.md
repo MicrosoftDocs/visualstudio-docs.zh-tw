@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 68450129d9bb3e9e67793c0a4155e953abbccc3d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531803"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令列將分析工具附加至 .NET Framework 獨立應用程式並收集應用程式統計資料
@@ -25,7 +25,7 @@ ms.locfileid: "85531803"
 >
 > 若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
 >
-> 若要將階層互動資料加入至程式碼剖析回合中，則需要使用命令列程式碼剖析工具的特定程序。 請參閱[收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)。
+> 若要將階層互動資料加入至程式碼剖析回合中，則需要使用命令列程式碼剖析工具的特定程序。 請參閱 [收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)。
 
  若要從 .NET Framework 應用程式收集效能資料，必須在目標應用程式啟動之前將適當的環境變數初始化。 分析工具附加至應用程式時，您可以暫停和繼續收集資料。
 
@@ -45,7 +45,7 @@ ms.locfileid: "85531803"
 
 3. 啟動分析工具。 輸入：
 
-    **VSPerfCmd/start：範例/output：** `OutputFile`[`Options`]
+    **>vsperfcmd/start：/output 範例：** `OutputFile` [`Options`]
 
    - [/start](../profiling/start.md)**:sample** 選項會初始化程式碼剖析工具。
 
@@ -53,27 +53,27 @@ ms.locfileid: "85531803"
 
      您可以使用下列任一選項搭配 **/start:sample** 選項。
 
-   | 選項 | 描述 |
+   | 選項 | 說明 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **：**[ `Domain` **\\** ]`UserName` | 針對擁有已分析處理序的帳戶，指定帳戶的選擇性網域和使用者名稱。 只有在受分析應用程式以不是登入的使用者啟動時，才需要此選項。 |
    | [/crosssession](../profiling/crosssession.md) | 在其他登入工作階段啟用處理序程式碼剖析。 **/crosssession** 可縮寫成 **/CS**。 如果應用程式在不同的工作階段中執行，則需要這個選項。 |
    | [/wincounter](../profiling/wincounter.md) **：**`WinCounterPath` | 指定程式碼剖析期間要收集的 Windows 效能計數器。 |
    | [/automark](../profiling/automark.md) **：**`Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。 |
-   | [/events](../profiling/events-vsperfcmd.md) **：**`Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集在不同的（。*etl*）檔案。 |
+   | [/events](../profiling/events-vsperfcmd.md) **：**`Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集在不同的 ( 中。*etl*) 檔。 |
 
 4. 如有必要，請以一般方式啟動目標應用程式。
 
 5. 將分析工具附加至目標應用程式。 輸入：
 
-    **VSPerfCmd/attach：**{ `PID`&#124;`ProcessName` } [ `Sample Event` ] [**/targetclr：** `Version` ]
+    **>vsperfcmd/attach：**{ `PID`&#124;`ProcessName` } [ `Sample Event` ] [**/targetclr：** `Version` ]
 
    - `PID` 指定目標應用程式的處理序 ID。 `ProcessName` 指定處理序的名稱。 請注意，如果您指定 `ProcessName` 且有多個名稱相同的處理序正在執行，則會發生無法預期的結果。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序 ID。
 
-   - [/targetclr](../profiling/targetclr.md) **：** `Version` 指定在應用程式中載入多個版本的執行時間時要分析的 common language runtime （CLR）版本。 選擇性。
+   - [/targetclr](../profiling/targetclr.md) **：** `Version` 指定在應用程式中載入多個版本的執行時間時要分析的 common language runtime (CLR) 的版本。 選擇性。
 
-   - 根據預設，每經過 10,000,000 個未暫止處理器時脈週期，會取樣一次效能資料。 在 1GH 處理器上，這大約是每 10 秒一次。 您可以指定下列其中一個選項，以變更頻率週期間隔，或指定不同的取樣事件。[/targetclr](../profiling/targetclr.md)**：** `Version` 指定在應用程式中載入多個版本的執行時間時要分析的 CLR 版本。 選擇性。
+   - 根據預設，每經過 10,000,000 個未暫止處理器時脈週期，會取樣一次效能資料。 在 1GH 處理器上，這大約是每 10 秒一次。 您可以指定下列其中一個選項來變更頻率週期間隔，或指定不同的取樣事件。[/targetclr](../profiling/targetclr.md)**：** `Version` 指定在應用程式中載入多個版本的執行時間時要分析的 CLR 版本。 選擇性。
 
-   |範例事件|描述|
+   |範例事件|說明|
    |-|-|
    |[/timer](../profiling/timer.md) **：**`Interval`|將取樣間隔變更為 `Interval` 指定的未暫止時脈週期數。|
    |[/pf](../profiling/pf.md) [**：** `Interval` ]|將取樣事件變更為分頁錯誤。 如果指定 `Interval`，請設定樣本間的分頁錯誤數。 預設值為 10。|
@@ -87,11 +87,11 @@ ms.locfileid: "85531803"
 
 - 下列成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
-    |選項|描述|
+    |選項|說明|
     |------------|-----------------|
     |[/globalon/globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|
     |[/processon](../profiling/processon-and-processoff.md) **：** `PID` [/processoff](../profiling/processon-and-processoff.md) **：**`PID`|開始 (**/processon**) 或停止 (**/processoff**) 對 `PID` 指定的處理序收集資料。|
-    |[/attach](../profiling/attach.md) **：**{ `PID`&#124;`ProcName` } [/detach](../profiling/detach.md)[**：**{ `PID`&#124;`ProcName` }]|**/attach** 會開始收集 `PID` 或處理序名稱 (ProcName) 指定的處理序資料。 **/detach**會停止指定的進程或所有進程（如果未指定特定進程）的資料收集。|
+    |[/attach](../profiling/attach.md) **：**{ `PID`&#124;`ProcName` } [/detach](../profiling/detach.md)[**：**{ `PID`&#124;`ProcName` }]|**/attach** 會開始收集 `PID` 或處理序名稱 (ProcName) 指定的處理序資料。 如果未指定特定進程， **/detach**會停止指定進程或所有進程的資料收集。|
 
 ## <a name="end-the-profiling-session"></a>結束程式碼剖析工作階段
  若要結束程式碼剖析工作階段，必須從所有分析的處理序中斷連結程式碼剖析工具，而且必須明確地關閉程式碼剖析工具。 您可以關閉應用程式或呼叫 **VSPerfCmd /detach** 選項，以從使用取樣方法剖析的應用程式中斷連結程式碼剖析工具。 接著呼叫 **VSPerfCmd /shutdown** 選項以停止程式碼剖析工具，並關閉程式碼剖析資料檔案。 **VSPerfClrEnv /off** 命令會清除程式碼剖析環境變數。
@@ -100,7 +100,7 @@ ms.locfileid: "85531803"
 
 1. 執行下列其中一個步驟，以從目標應用程式中斷連結程式碼剖析工具：
 
-    - 輸入**VSPerfCmd/detach**
+    - 輸入 **>vsperfcmd/detach**
 
          -或-
 
@@ -108,7 +108,7 @@ ms.locfileid: "85531803"
 
 2. 關閉程式碼剖析工具。 輸入：
 
-     **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
+     **>vsperfcmd**  [/shutdown](../profiling/shutdown.md)
 
 3. (選擇性) 清除程式碼剖析環境變數。 輸入：
 

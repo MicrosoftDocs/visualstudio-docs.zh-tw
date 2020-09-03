@@ -10,10 +10,10 @@ ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
 ms.openlocfilehash: 1e4de25f3d1b00459128b89bc5559f55cec8f077
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280592"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>使用 Visual Studio 和 IntelliTrace 進行已發佈 Azure 雲端服務的偵錯
@@ -21,7 +21,7 @@ ms.locfileid: "85280592"
 
 如果您有安裝 Visual Studio Enterprise，而您的 Azure 應用程式以 .NET Framework 4 或更新版本為目標，則可以使用 IntelliTrace。 IntelliTrace 會收集 Azure 角色的資訊。 這些角色的虛擬機器一律會執行 64 位元作業系統。
 
-或者，您可以使用[遠端偵錯](vs-azure-tools-debugging-cloud-services-overview.md)程式，直接附加到在 Azure 中執行的雲端服務。
+或者，您可以使用 [遠端偵錯](vs-azure-tools-debugging-cloud-services-overview.md) 程式，直接附加到在 Azure 中執行的雲端服務。
 
 > [!IMPORTANT]
 > IntelliTrace 僅適用於偵錯，並且不應該用於生產環境部署。

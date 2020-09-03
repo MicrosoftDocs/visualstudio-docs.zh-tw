@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 875f6b3aba88fa3786e4c303f23072e586c4848d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587338"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的 Managed 建議規則規則集
 
-使用 Microsoft 受管理的建議規則規則集，將焦點放在 Managed 程式碼中最嚴重的問題，包括潛在的安全性漏洞、應用程式損毀，以及其他重要的邏輯和設計錯誤。 此規則集包含「[受管理的最小規則](managed-minimum-rules-rule-set-for-managed-code.md)」規則集中的所有規則。
+使用 Microsoft 受管理的建議規則規則集，將焦點放在 Managed 程式碼中最嚴重的問題，包括潛在的安全性漏洞、應用程式損毀，以及其他重要的邏輯和設計錯誤。 此規則集會包含「 [受管理的最小規則](managed-minimum-rules-rule-set-for-managed-code.md) 」規則集中的所有規則。
 
-將此規則集包含在您為專案建立的任何自訂規則集中。
+在您為專案建立的任何自訂規則集中包含此規則集。
 
 |規則|描述|
 |----------|-----------------|
@@ -30,18 +30,18 @@ ms.locfileid: "75587338"
 |[CA1049](../code-quality/ca1049.md)|具有原生資源的類型應該要可呼叫 Dispose 方法明確釋放資源|
 |[CA1060](../code-quality/ca1060.md)|必須將 P/Invokes 移到 NativeMethods 類別|
 |[CA1061](../code-quality/ca1061.md)|不要隱藏基底類別方法|
-|[CA1063 必須](../code-quality/ca1063.md)|必須正確實作 IDisposable|
+|[CA1063](../code-quality/ca1063.md)|必須正確實作 IDisposable|
 |[CA1065](../code-quality/ca1065.md)|不要在非預期的位置中引發例外狀況|
 |[CA1301](../code-quality/ca1301.md)|避免使用重複的快速鍵|
 |[CA1400](../code-quality/ca1400.md)|P/Invoke 進入點應該要存在|
 |[CA1401](../code-quality/ca1401.md)|P/Invokes 不應該為可見的|
 |[CA1403](../code-quality/ca1403.md)|自動配置類型不應該是 COM 可見|
-|[CA1404 必須](../code-quality/ca1404.md)|必須在 P/Invoke 之後立即呼叫 GetLastError|
+|[CA1404](../code-quality/ca1404.md)|必須在 P/Invoke 之後立即呼叫 GetLastError|
 |[CA1405](../code-quality/ca1405.md)|COM 可見類型的基底類型應該是 COM 可見|
 |[CA1410](../code-quality/ca1410.md)|應該和 COM 註冊方法對應|
 |[CA1415](../code-quality/ca1415.md)|P/Invokes 必須正確宣告|
 |[CA1821 必須](../code-quality/ca1821.md)|必須移除空的完成項|
-|[CA1900 實](../code-quality/ca1900.md)|實值類型欄位應該為可移植的|
+|[CA1900](../code-quality/ca1900.md)|實值類型欄位應該為可移植的|
 |[CA1901](../code-quality/ca1901.md)|P/Invoke 宣告應該為可移植的|
 |[CA2002](../code-quality/ca2002.md)|不要鎖定具有弱式識別的物件|
 |[CA2100 必須](../code-quality/ca2100.md)|必須檢閱 SQL 查詢中是否有安全性弱點|
@@ -83,5 +83,5 @@ ms.locfileid: "75587338"
 |[CA2237 必須](../code-quality/ca2237.md)|ISerializable 類型必須標記 SerializableAttribute|
 |[CA2238](../code-quality/ca2238.md)|必須正確實作序列化方法|
 |[CA2240 必須](../code-quality/ca2240.md)|必須正確實作 ISerializable|
-|[CA2241 必須](../code-quality/ca2241.md)|必須提供格式化方法的正確引數|
-|[CA2242 必須](../code-quality/ca2242.md)|必須正確測試 NaN|
+|[CA2241](../code-quality/ca2241.md)|必須提供格式化方法的正確引數|
+|[CA2242](../code-quality/ca2242.md)|必須正確測試 NaN|

@@ -1,5 +1,5 @@
 ---
-title: 安全性警告：偵錯工具必須執行不受信任的命令 |Microsoft Docs
+title: 安全性警告：偵錯工具必須執行未受信任的命令 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b0922461c4ca5366e6d1dc215f5711f5566d00ae
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72729756"
 ---
 # <a name="security-warning-debugger-must-execute-untrusted-command"></a>Security Warning: Debugger Must Execute Untrusted Command
-這個警告對話方塊會在您使用來源伺服器時出現。 它會指出，偵錯工具需要執行以取得原始程式碼的命令不在 srcsvr.ini 檔中所包含來源伺服器的受信任命令清單中。 如果這是有效的命令，您可將它加入至 srcsvr.ini 檔。 否則，您不應該執行該命令。 如需詳細資訊，請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
+這個警告對話方塊會在您使用來源伺服器時出現。 它會指出，偵錯工具需要執行以取得原始程式碼的命令不在 srcsvr.ini 檔中所包含來源伺服器的受信任命令清單中。 如果這是有效的命令，您可將它加入至 srcsvr.ini 檔。 否則，您不應該執行該命令。 如需詳細資訊，請參閱 [指定符號 ( .pdb) 和原始](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)程式檔。
 
 ## <a name="message-text"></a>訊息文字
  **偵錯工具必須執行下列未受信任的命令，才能從來源伺服器取得原始程式碼。**
@@ -33,13 +33,13 @@ ms.locfileid: "72729756"
  **要執行這個命令嗎?**
 
 ## <a name="uielement-list"></a>UIElement 清單
- 要執行之 .pdb 檔案中的 [文字方塊] 命令。
+ 要執行的 .pdb 檔案中的文字方塊命令。
 
- 執行 [允許執行命令]。
+ 執行可讓命令執行。
 
- 請勿執行 [停止執行命令] 和 [從來源伺服器下載檔案]。
+ 請勿執行命令的停止執行，並從來源伺服器下載檔案。
 
-## <a name="see-also"></a>請參閱
-- [指定符號 (.pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+## <a name="see-also"></a>另請參閱
+- [指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [來源伺服器](/windows/desktop/Debug/source-server-and-source-indexing)

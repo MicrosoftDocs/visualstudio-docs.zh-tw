@@ -23,10 +23,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 1ce41cd1c0dabc94658b83aa5e2bcdc08d005fdb
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77275367"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ 程式碼分析概觀
@@ -38,10 +38,10 @@ C/C++ 程式碼分析工具會將其 C/C++ 原始程式碼中可能的缺失相�
  為了讓開發人員自然地使用分析工具，它已完全整合到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中。 在建置程序期間，任何針對原始程式碼所產生的警告都會出現在 [錯誤清單] 中。 您可以巡覽至造成警告的原始程式碼，也可以檢視問題原因和可能解決方法的其他資訊。  
   
 ## <a name="pragma-support"></a>#pragma 支援  
- 開發人員可以使用 `#pragma` 指示詞來將警告視為錯誤、啟用或停用警告，以及隱藏個別程式碼行的警告。 有關詳細資訊，請參閱[如何：為特定 C/C++ 警告啟用和禁用代碼分析](https://msdn.microsoft.com/910b8518-71f1-4b2e-b012-70647795642a)。  
+ 開發人員可以使用 `#pragma` 指示詞來將警告視為錯誤、啟用或停用警告，以及隱藏個別程式碼行的警告。 如需詳細資訊，請參閱 [如何：啟用和停用特定 C/c + + 警告的程式碼分析](https://msdn.microsoft.com/910b8518-71f1-4b2e-b012-70647795642a)。  
   
 ## <a name="annotation-support"></a>註釋支援  
- 註釋可改善程式碼分析的正確性。 註釋提供函式參數和傳回型別上前置和後置條件的其他資訊。 有關詳細資訊，請參閱[：使用__analysis_assume指定其他代碼資訊](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  
+ 註釋可改善程式碼分析的正確性。 註釋提供函式參數和傳回型別上前置和後置條件的其他資訊。 如需詳細資訊，請參閱[如何：使用 __Analysis_assume 指定其他程式碼資訊](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)。  
   
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>執行分析工具作為簽入原則的一部分  
  您可能想要所有原始程式碼簽入都要滿足特定的原則。 尤其您會想要確認在最新本機建置步驟中已執行分析。 如需啟用程式碼分析簽入原則的詳細資訊，請參閱[建立和使用程式碼分析簽入原則](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
