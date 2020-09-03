@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 128de95d347fece01c9177057346b00e412e1e6f
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586637"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>行為錯誤之多執行緒應用程式的一般模式
@@ -57,7 +57,7 @@ ms.locfileid: "82586637"
 - 評估您的處理序如何判斷在此工作階段期間執行的適當執行緒數目。 如果您的處理序直接計算作用中的平行執行緒數目，請考慮修改該演算法，能夠更正確地計算系統上可用的邏輯核心數目。 如果您使用並行執行階段、工作平行程式庫或 PLINQ，這些程式庫會執行計算執行緒數目的工作。  
   
 ## <a name="inefficient-io"></a>無效率 I/O  
- ![效率不佳的&#47;O](../profiling/media/inefficient-io.png "Inefficient_IO")  
+ ![無效率的 I&#47;O](../profiling/media/inefficient-io.png "Inefficient_IO")  
   
  過度使用或濫用 I/O 是應用程式缺乏效率的常見原因。 請參考上圖。 可見時間軸分析顯示 42% 的可見執行緒時間是由 I/O 使用。 時間軸顯示大量 I/O，表示分析的應用程式經常會被 I/O 所阻塞。 若要查看 I/O 種類和阻塞程式位置的詳細資料，請放大有問題的區域、檢查可見時間軸分析，然後按一下特定的 I/O 區塊以查看目前的呼叫堆疊。  
   

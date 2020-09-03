@@ -15,18 +15,18 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 460419d976211747c44f156a5821b88b75aa2e6b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745552"
 ---
 # <a name="debug-html-and-css-sample-code"></a>對 HTML 和 CSS 範例程式碼進行偵錯
 
-本主題中的程式碼是[快速入門： DEBUG HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)的範例檔案。 快速入門在設計上出現的錯誤，會在此版本的程式碼中修正。
+本主題中的程式碼是 [快速入門： DEBUG HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)的範例檔案。 快速入門在設計上出現的錯誤，會在此版本的程式碼中修正。
 
-## <a name="sample-code"></a>程式碼範例
-下列 HTML 程式碼用於快速入門的 \<body> 標籤中。
+## <a name="sample-code"></a>範例程式碼
+下列 HTML 程式碼用於 \<body> 快速入門的標記中。
 
 ```html
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"
@@ -101,5 +101,5 @@ ms.locfileid: "72745552"
 })();
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

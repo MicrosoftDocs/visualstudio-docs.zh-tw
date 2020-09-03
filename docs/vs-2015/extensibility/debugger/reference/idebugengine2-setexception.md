@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetException |Microsoft Docs
+title: IDebugEngine2：： SetException |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1a7001b502d3d0296ab35d3753c7c2ac0ddc5623
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195969"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定偵錯引擎 (DE) 應該如何處理指定的例外狀況。  
+指定 debug engine (DE) 應該如何處理指定的例外狀況。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,13 +40,13 @@ int SetException( 
   
 #### <a name="parameters"></a>參數  
  `pException`  
- [in][EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)結構，描述例外狀況，以及如何進行偵錯。  
+ 在描述例外狀況以及如何進行調試的 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 結構。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 若要停止產生第一個可能發生的例外狀況的程式，第二個機會，可指示規定或不完全。  
+ 系統可能會指示您在第一次機會、第二次或完全不會產生例外狀況時，停止程式。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

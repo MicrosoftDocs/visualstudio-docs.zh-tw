@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c98bec69631b852521f682a24dd1b5ce6ddf0424
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662565"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>如何：在程式碼中開啟檔案的模型
@@ -21,44 +21,44 @@ ms.locfileid: "72662565"
 
 您可以在任何應用程式中開啟 DSL 模型。
 
- 從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組中，您可以使用 ModelBus 來實現此目的。 ModelBus 提供標準的機制來參考模型中的模型或專案，以及用於尋找模型（如果已移動）。 如需詳細資訊，請參閱[使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
+ 從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能，您可以將 ModelBus 用於此用途。 ModelBus 提供標準的機制，可參考模型中的模型或元素，以及用於尋找已移動的模型。 如需詳細資訊，請參閱 [使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
 
 ## <a name="target-framework"></a>目標 Framework
- 將應用程式專案的**目標 framework**設定為 **.NET Framework 4**。
+ 將應用程式專案的 **目標 framework** 設定為 **.NET Framework 4**。
 
 #### <a name="to-set-the-target-framework"></a>若要設定目標 framework
 
-1. 開啟您要在其中讀取 DSL 模型之應用程式的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案。
+1. 開啟 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 您要在其中讀取 DSL 模型的應用程式專案。
 
-2. 在**方案總管**中，以滑鼠右鍵按一下專案，然後按一下 [**屬性**]。
+2. 在 **方案總管**中，以滑鼠右鍵按一下專案，然後按一下 [ **屬性**]。
 
-3. 在 [專案屬性] 視窗的 [**應用程式**] 索引標籤上，將 [**目標 framework** ] 欄位設定為 **.NET Framework 4**。
+3. 在 [專案屬性] 視窗的 [ **應用程式** ] 索引標籤上，將 [ **目標 framework** ] 欄位設定為 **.NET Framework 4**。
 
 > [!NOTE]
-> 即使您在 [專案建立] 對話方塊中選取了 [ **.NET Framework 4** ]，也可能需要執行這項操作。 目標 framework 不應 **.NET Framework 4 用戶端設定檔**。
+> 即使您在 [專案建立] 對話方塊中選取 **.NET Framework 4** ，也可能需要這麼做。 目標 framework 不應 **.NET Framework 4 用戶端設定檔**。
 
-## <a name="references"></a>reference
- 您必須將這些參考新增至 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 應用程式專案：
+## <a name="references"></a>參考
+ 您必須將這些參考新增至您的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 應用程式專案：
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-  - 如果您在 [**加入參考**] 對話方塊的 [ **.net** ] 索引標籤底下沒有看到此選項，請按一下 [**流覽**] 索引標籤，然後流覽至 [`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`]。
+  - 如果您在 [**加入參考**] 對話方塊的 [ **.net** ] 索引標籤底下沒有看到此選項，請按一下 [**流覽**] 索引標籤，然後流覽至 `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` 。
 
-- 您的 DSL 元件會在您的 DSL 專案的 bin 資料夾底下找到。 其名稱的格式通常為： *YourCompany*。*Yourproject。* `.Dsl.dll`。
+- 您的 DSL 元件，它會在您的 DSL 專案的 bin 資料夾下找到。 其名稱的格式通常為： *>yourcompany.com*。*Yourproject。* `.Dsl.dll` 。
 
 ## <a name="important-classes-in-the-dsl"></a>DSL 中的重要類別
- 在您撰寫可讀取 DSL 的程式碼之前，您應該知道 DSL 所產生的一些類別名稱。 在您的 DSL 解決方案中，開啟**dsl**專案，並查看 [ **GeneratedCode** ] 資料夾。 或者，按兩下專案**參考**中的 dsl 元件，然後在**物件瀏覽器**中開啟 dsl 命名空間。
+ 在撰寫可讀取 DSL 的程式碼之前，您應該知道 DSL 所產生的一些類別名稱。 在您的 DSL 解決方案中，開啟 **dsl** 專案，然後查看 [ **GeneratedCode** ] 資料夾。 或者，按兩下專案 **參考**中的 dsl 元件，並在 [ **物件瀏覽器**] 中開啟 dsl 命名空間。
 
- 這些是您應該識別的類別：
+ 以下是您應該識別的類別：
 
-- *YourDslRootClass* -這是您 `DslDefinition.dsl` 中的根類別名稱。
+- *YourDslRootClass* -這是您中根類別的名稱 `DslDefinition.dsl` 。
 
-- *YourDslName* `SerializationHelper`-此類別定義于 DSL 專案的 `SerializationHelper.cs` 中。
+- *YourDslName* `SerializationHelper` -這個類別是在 `SerializationHelper.cs` 您的 DSL 專案中定義。
 
-- *YourDslName* `DomainModel`-此類別定義于 DSL 專案的 `DomainModel.cs` 中。
+- *YourDslName* `DomainModel` -這個類別是在 `DomainModel.cs` 您的 DSL 專案中定義。
 
 ## <a name="reading-from-a-file"></a>從檔案讀取
- 下列範例的設計目的是要讀取一個 DSL，其中重要的類別如下所示：
+ 下列範例是設計來讀取具有重要類別的 DSL，如下所示：
 
 - FamilyTreeModel
 
@@ -66,7 +66,7 @@ ms.locfileid: "72662565"
 
 - FamilyTreeDomainModel
 
-  此 DSL 中的另一個網域類別是 Person。
+  此 DSL 中的另一個網域類別為 Person。
 
 ```
 using System;
@@ -105,7 +105,7 @@ namespace StandaloneReadDslConsole
 ```
 
 ## <a name="saving-to-a-file"></a>儲存至檔案
- 下列的程式碼新增會對模型進行變更，然後將它儲存至檔案。
+ 下列程式碼的新增功能會對模型進行變更，然後將它儲存至檔案。
 
 ```
 using (Transaction t =

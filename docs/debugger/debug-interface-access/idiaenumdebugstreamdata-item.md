@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4696d8fdab9720796db1c6b5dff25b7bcfe49e01
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468452"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
@@ -36,7 +36,7 @@ HRESULT Item ( 
 #### <a name="parameters"></a>參數
  索引
 
-在要抓取之記錄的索引。 索引的範圍是0到 `count` -1，其中 `count` 是由[IDiaEnumDebugStreamData：： get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)傳回。
+在要抓取之記錄的索引。 索引位於0到-1 的範圍內 `count` ，其中 `count` 是 [IDiaEnumDebugStreamData：： get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)所傳回的。
 
  cbData
 
@@ -44,14 +44,14 @@ HRESULT Item ( 
 
  pcbData
 
-脫銷傳回傳回的位元組數目。 如果 `data` 為 `NULL` ，則 `pcbData` 包含指定記錄中可用的資料位元組總數。
+擴展傳回傳回的位元組數目。 如果 `data` 為 `NULL` ，則 `pcbData` 包含指定記錄中可用資料的位元組總數。
 
  data[]
 
-脫銷以 debug 資料流程記錄資料填入的緩衝區。
+擴展使用 debug stream 記錄資料填入的緩衝區。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。 `E_INVALIDARG`如果參數超出範圍，則傳回無效參數的 `index` 。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 `E_INVALIDARG`如果參數超出範圍，則傳回不正確參數 `index` 。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

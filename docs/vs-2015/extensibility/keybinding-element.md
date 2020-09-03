@@ -1,5 +1,5 @@
 ---
-title: 按鍵繫結關係項目 |Microsoft Docs
+title: KeyBinding 元素 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,18 +12,18 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75d96098e8444aac9a4fc6f895099435b54f640b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180320"
 ---
 # <a name="keybinding-element"></a>KeyBinding 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-按鍵繫結關係項目會指定命令的鍵盤快速鍵。  
+KeyBinding 元素會指定命令的鍵盤快速鍵。  
   
- 命令可以有與其相關聯的單一和雙重金鑰的連結。 單一索引鍵繫結的範例是 CTRL + S**儲存**命令。 雙重金鑰的繫結需要兩個連續的按鍵組合來觸發命令。 雙重金鑰繫結的範例是 CTRL + K、 CTRL + K，若要設定書籤。  
+ 命令可以有與它們相關聯的單一和雙重金鑰系結。 [ **儲存** ] 命令的單一按鍵系結範例是 CTRL + S。 雙重按鍵系結需要兩個連續的按鍵組合來觸發命令。 雙按鍵系結的範例是 CTRL + K、CTRL + K 來設定書簽。  
   
 ## <a name="syntax"></a>語法  
   
@@ -32,34 +32,34 @@ ms.locfileid: "68180320"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
-|guid|必要項。|  
-|id|必要項。|  
-|編輯器|必要項。 編輯器 GUID 表示會使用此鍵盤快速鍵的編輯內容。 全域的繫結範圍值是"guidVSStd97 」。|  
-|key1|必要項。 有效值包括所有可輸入的英數字元，以及加上 0 的 x 和 VK_constants 的兩位數十六進位值。|  
-|mod1|選擇性。 CTRL、 ALT 和 shift 鍵以空格分隔的任何組合。|  
-|key2|選擇性。 有效值包括所有可輸入的英數字元，以及加上 0 的 x 和 VK_constants 的兩位數十六進位值。|  
-|mod2|選擇性。 CTRL、 ALT 和 shift 鍵以空格分隔的任何組合。|  
+|guid|必要。|  
+|id|必要。|  
+|編輯器|必要。 編輯器 GUID 會指出這個鍵盤快速鍵將使用的編輯內容。 全域系結範圍值為 "guidVSStd97"。|  
+|key1|必要。 有效的值包括所有 typable 的英數位元，以及兩位數的十六進位值（前面加上0x 和 VK_constants）。|  
+|mod1|選擇性。 CTRL、ALT 和 SHIFT 的任意組合（以空格分隔）。|  
+|key2|選擇性。 有效的值包括所有 typable 的英數位元，以及兩位數的十六進位值（前面加上0x 和 VK_constants）。|  
+|mod2|選擇性。 CTRL、ALT 和 SHIFT 的任意組合（以空格分隔）。|  
 |模擬器|選擇性。|  
-|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
+|條件|選擇性。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
 |項目|描述|  
 |-------------|-----------------|  
-|父代||  
-|註釋||  
+|父系||  
+|Annotation||  
   
 ### <a name="parent-elements"></a>父項目  
   
 |項目|描述|  
 |-------------|-----------------|  
-|[KeyBindings 元素](../extensibility/keybindings-element.md)|群組按鍵繫結關係項目和其他按鍵繫結關係分組。|  
+|[KeyBindings 元素](../extensibility/keybindings-element.md)|群組 KeyBinding 元素和其他 Keybindings.json 群組。|  
   
 ## <a name="example"></a>範例  
   
@@ -73,5 +73,5 @@ ms.locfileid: "68180320"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [KeyBindings 元素](../extensibility/keybindings-element.md)   
+ [Keybindings.json 元素](../extensibility/keybindings-element.md)   
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -9,19 +9,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 389328e97f29d97962353e86f73c39c7c5459bfc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592408"
 ---
 # <a name="xml-document-validation"></a>XML 文件驗證
 
-XML 編輯器會檢查 XML 1.0 語法，也會在您輸入時執行資料驗證。 該編輯器可使用文件類型定義 (DTD) 或結構描述進行驗證。 紅色波浪底線可反白顯示任何 XML 1.0 格式正確錯誤。 藍色波浪底線可依據 DTD 或結構描述驗證，顯示語意錯誤。 每個錯誤在錯誤清單中都有相關聯的項目。 您亦可讓滑鼠暫停在波浪底線上，以檢視錯誤訊息。
+XML 編輯器會檢查 XML 1.0 語法，同時也會在您輸入時執行資料驗證。 該編輯器可使用文件類型定義 (DTD) 或結構描述進行驗證。 紅色波浪底線可反白顯示任何 XML 1.0 格式正確錯誤。 藍色波浪底線可依據 DTD 或結構描述驗證，顯示語意錯誤。 每個錯誤在錯誤清單中都有相關聯的項目。 您亦可讓滑鼠暫停在波浪底線上，以檢視錯誤訊息。
 
 藉由將已編譯結構描述的 `targetNamespace` 與該項目的 xmlns 宣告相比對，可找到驗證中所使用的結構描述。 已編譯的結構描述會從下列其中一個位置載入，並以優先順序列出：
 
-- 從 [文檔**屬性**] 視窗的 [**架構**] 欄位中所指定的檔案名。
+- 從 [文檔**屬性**] 視窗的 [**架構**] 欄位中指定的檔案名。
 
 - 內嵌結構描述或 DTD。
 
@@ -38,11 +38,11 @@ XML 編輯器會檢查 XML 1.0 語法，也會在您輸入時執行資料驗證�
 - 結構描述快取目錄中的結構描述。
 
 ## <a name="xslt-files"></a>XSLT 檔
-編輯 XSLT 檔案時，會使用位於架構快取中的*xslt .xsd*檔案進行驗證。 驗證錯誤以藍色波浪底線顯示。 XSLT 編譯器中的錯誤以紅色波浪底線顯示。
+編輯 XSLT 檔案時，會使用位於架構快取中的 *xslt .xsd* 檔案進行驗證。 驗證錯誤以藍色波浪底線顯示。 XSLT 編譯器中的錯誤以紅色波浪底線顯示。
 
-## <a name="xml-schema-xsd-files"></a>XML 架構（XSD）檔案
-編輯 XML 架構檔案時，會使用位於架構快取中的*xsdschema*來進行驗證。 驗證錯誤以藍色波浪底線顯示。 任何編譯錯誤也會以紅色波浪底線顯示。
+## <a name="xml-schema-xsd-files"></a>XML 架構 (XSD) 檔
+編輯 XML 架構檔案時，會使用位於架構快取中的 *xsdschema .xsd* 檔案進行驗證。 驗證錯誤以藍色波浪底線顯示。 任何編譯錯誤也會以紅色波浪底線顯示。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XML 編輯器](../xml-tools/xml-editor.md)

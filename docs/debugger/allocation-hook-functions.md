@@ -23,19 +23,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f684c6c66448fdab2ee7607a81ff7ed769a5e607
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745813"
 ---
 # <a name="allocation-hook-functions"></a>配置攔截函式
-系統會在每次配置、重新配置或釋放記憶體時呼叫配置攔截函式（使用[_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook)安裝）。 您可以使用這種類型的攔截來進行許多不同的用途。 使用它來測試應用程式如何處理記憶體不足的情況，例如檢查配置模式，或記錄配置資訊以供稍後分析。
+配置攔截函式（使用 [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook)安裝）會在每次配置、重新配置或釋放記憶體時呼叫。 您可以將這種類型的攔截用於許多不同的用途。 您可以使用它來測試應用程式如何處理記憶體不足的情況，例如檢查配置模式或記錄配置資訊以供稍後分析。
 
 > [!NOTE]
 > 請留意在配置攔截函式中使用 C 執行階段程式庫功能的相關限制，如[配置攔截和 C 執行階段記憶體配置](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)所述。
 
- 配置攔截函式應具有如下列範例所示的原型：
+ 配置攔截函式應該具有類似下列範例的原型：
 
 ```cpp
 int YourAllocHook(int nAllocType, void *pvData,
@@ -50,9 +50,9 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
     (int, void *, size_t, int, long, const unsigned char *, int);
 ```
 
- 當執行時間程式庫呼叫您的勾點時， *nAllocType*引數會指出即將進行的配置作業（ **_HOOK_ALLOC**、 **_HOOK_REALLOC**或 **_HOOK_FREE**）。 在免費或重新配置的中，`pvData` 具有要釋放之區塊的使用者發行項的指標。 不過，針對配置，此指標為 null，因為尚未發生配置。 其餘的引數包含有問題的配置大小、其區塊類型、與它相關聯的順序要求編號，以及檔案名的指標。 如果有的話，引數也會包含進行配置的行號。 攔截函式在執行任何作者所要求的分析或其他工作之後，必須傳回 **TRUE** (表示配置操作可以繼續) 或 **FALSE** (表示操作應該會失敗)。 這種類型的簡單攔截可能會檢查截至目前為止所配置的記憶體數量，並在總數量超過小型限制時傳回 **FALSE**。 然後應用程式會經歷只有在可用記憶體非常低時才會發生的配置錯誤。 更複雜的攔截可能會追蹤配置模式、分析記憶體使用或在特定情況發生時報告。
+ 當執行時間程式庫呼叫您的勾點時， *nAllocType* 引數會指出即將進行的配置作業 (**_HOOK_ALLOC**、 **_HOOK_REALLOC**或 **_HOOK_FREE**) 。 在「免費」或「重新配置」中， `pvData` 具有要釋放之區塊的使用者發行項指標。 但是針對配置，這個指標是 null，因為配置尚未發生。 其餘的引數包含有問題配置的大小、其區塊類型、與其相關聯的順序要求編號，以及檔案名的指標。 如果有的話，引數也會包含進行配置的行號。 攔截函式在執行任何作者所要求的分析或其他工作之後，必須傳回 **TRUE** (表示配置操作可以繼續) 或 **FALSE** (表示操作應該會失敗)。 這種類型的簡單攔截可能會檢查截至目前為止所配置的記憶體數量，並在總數量超過小型限制時傳回 **FALSE**。 然後應用程式會經歷只有在可用記憶體非常低時才會發生的配置錯誤。 更複雜的攔截可能會追蹤配置模式、分析記憶體使用或在特定情況發生時報告。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [配置攔截和 C 執行階段記憶體配置](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)
 - [撰寫偵錯攔截函式](../debugger/debug-hook-function-writing.md)

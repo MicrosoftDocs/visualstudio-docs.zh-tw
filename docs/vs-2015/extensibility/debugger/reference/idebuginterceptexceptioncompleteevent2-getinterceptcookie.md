@@ -1,5 +1,5 @@
 ---
-title: IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie |Microsoft Docs
+title: IDebugInterceptExceptionCompleteEvent2：： GetInterceptCookie |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e186419a102bdf48a437002ab03120587d6e0822
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180650"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-攔截到例外狀況處理完成時呼叫。  
+在攔截例外狀況的處理完成時呼叫。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,13 +40,13 @@ int GetInterceptCookie(
   
 #### <a name="parameters"></a>參數  
  `pqwCookie`  
- [out]攔截到例外狀況相關聯的唯一值。  
+ 擴展與被攔截之例外狀況相關聯的唯一值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。  
+ 如果成功，則傳回，否則會傳回 `S_OK` 錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 在後[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)方法已完成之攔截的例外狀況處理，它會傳送[IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)事件。 可以使用處理常式`GetInterceptCookie`方法來擷取例外狀況相關聯的唯一值 (相同的值傳遞至`InterceptCurrentException`方法)。  
+ 在 [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) 方法完成攔截例外狀況的處理之後，它會傳送 [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) 事件。 處理常式可以使用 `GetInterceptCookie` 方法來取出與例外狀況相關聯的唯一值， (與傳遞給方法) 的相同值 `InterceptCurrentException` 。  
   
 ## <a name="see-also"></a>另請參閱  
  [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)   

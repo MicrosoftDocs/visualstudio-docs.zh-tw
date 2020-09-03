@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3deef418620ab17297b4ef7e824a0d95c25e439e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904322"
 ---
 # <a name="call-debugger-events"></a>呼叫偵錯工具事件
-調試階段中的事件會依特定順序發生。
+調試會話中的事件會以特定順序發生。
 
-## <a name="discussion"></a>討論區
- 若要瞭解在「偵錯工具」（DE）和「會話偵錯工具」（SDM）之間呼叫的模式，以下是典型的「偵錯工具」會話中發生之事件的呼叫順序：
+## <a name="discussion"></a>討論
+ 若要瞭解 debug engine (DE) 和會話 debug manager (SDM) 之間的呼叫模式，以下代表在一般的偵錯工具會話中發生之事件的呼叫順序：
 
 1. [附加和卸離程式](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)
 
@@ -48,4 +48,4 @@ ms.locfileid: "85904322"
 12. [例外狀況處理](../../extensibility/debugger/exception-handling-visual-studio-sdk.md)
 
 ## <a name="see-also"></a>另請參閱
-- [建立自訂的 debug engine](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+- [建立自訂的調試引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::RemoveSetException |Microsoft Docs
+title: IDebugEngine2：： RemoveSetException |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 53ba8c9c1934ee1c036e14fb51abd5babcf7e4c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195958"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-移除指定的例外狀況，讓它不再由偵錯引擎。  
+移除指定的例外狀況，使它不再由 debug 引擎處理。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,15 +40,15 @@ int RemoveSetException( 
   
 #### <a name="parameters"></a>參數  
  `pException`  
- [in][EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)結構，描述要移除的例外狀況。  
+ 在描述要移除之例外狀況的 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 結構。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 要移除的例外狀況必須先前已設定的先前呼叫[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)方法。  
+ 先前呼叫 [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) 方法之前，必須先設定要移除的例外狀況。  
   
- 若要一次移除所有設定例外狀況，請呼叫[RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)方法。  
+ 若要一次移除所有設定的例外狀況，請呼叫 [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md) 方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

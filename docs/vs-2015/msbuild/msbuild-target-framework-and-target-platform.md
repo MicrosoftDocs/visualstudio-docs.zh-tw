@@ -10,16 +10,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1a550b4a6634604594da0893e3f420fd9c38ca3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181037"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 目標 Framework 和目標平台
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以建置專案，以在特定 .NET Framework 版本的「目標 Framework」  ，以及特定軟體架構的「目標平台」  上執行。  例如，您可以在目標為 .NET Framework 2.0 以及與 802x86 處理器系列 (“x86”) 相容的 32 位元平台上，執行應用程式。 目標 Framework 和目標平台的組合稱為「目標內容」  。  
+您可以建置專案，以在特定 .NET Framework 版本的「目標 Framework」**，以及特定軟體架構的「目標平台」** 上執行。  例如，您可以在目標為 .NET Framework 2.0 以及與 802x86 處理器系列 (“x86”) 相容的 32 位元平台上，執行應用程式。 目標 Framework 和目標平台的組合稱為「目標內容」**。  
   
 ## <a name="target-framework-and-profile"></a>目標 Framework 和設定檔  
  目標 Framework 是建置的專案執行所在的特定 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。 由於目標 Framework 啟用由該版 Framework 獨佔的編譯器功能和組件參考，因此需要目標 Framework 的規格。  
@@ -44,15 +44,15 @@ ms.locfileid: "68181037"
   
   組件清單中每一個組件所參考的 .NET Framework 版本各自不同。 例如，除非您專案是以 .NET Framework 3.0 (含) 以上版本為目標，否則您無法建置 Windows Presentation Foundation (WPF) 應用程式。  
   
-  目標 Framework 是在專案檔的 `TargetFrameworkVersion` 屬性中指定。 您可以在 Visual Studio 整合式開發環境 (IDE) 中，使用專案屬性頁來變更專案的目標 Framework。 如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。 `TargetFrameworkVersion` 的可用值包括 `v2.0`、`v3.0`、`v3.5`、`v4.0`、`v4.5`、`v4.5.1`、`v4.5.2` 和 `v4.6`。  
+  目標 Framework 是在專案檔的 `TargetFrameworkVersion` 屬性中指定。 您可以在 Visual Studio 整合式開發環境 (IDE) 中，使用專案屬性頁來變更專案的目標 Framework。 如需詳細資訊，請參閱 [如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。 `TargetFrameworkVersion` 的可用值包括 `v2.0`、`v3.0`、`v3.5`、`v4.0`、`v4.5`、`v4.5.1`、`v4.5.2` 和 `v4.6`。  
   
 ```  
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>  
 ```  
   
- 「目標設定檔」  是目標 Framework 的子集。 例如，.NET Framework 4 用戶端設定檔不包含 MSBuild 組件的參考。  
+ 「目標設定檔」** 是目標 Framework 的子集。 例如，.NET Framework 4 用戶端設定檔不包含 MSBuild 組件的參考。  
   
- 目標設定檔是在專案檔的 `TargetFrameworkProfile` 屬性中指定。 您可以在 IDE 中，使用專案屬性頁中的目標 Framework 控制項來變更目標設定檔。 如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
+ 目標設定檔是在專案檔的 `TargetFrameworkProfile` 屬性中指定。 您可以在 IDE 中，使用專案屬性頁中的目標 Framework 控制項來變更目標設定檔。 如需詳細資訊，請參閱 [如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
   
 ```  
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>  
@@ -60,13 +60,13 @@ ms.locfileid: "68181037"
 ```  
   
 ## <a name="target-platform"></a>目標平台  
- 「平台」  是定義特定執行階段環境的軟硬體組合。 例如，套用至物件的  
+ 「平台」** 是定義特定執行階段環境的軟硬體組合。 例如，  
   
 - `x86` 指定在 Intel 80x86 處理器或其對等項目上執行的 32 位元 Windows 作業系統。  
   
 - `Xbox` 指定 Microsoft Xbox 360 平台。  
   
-  「目標平台」  是建置專案以在其上方執行的目標特定平台。 目標平台是在專案檔的 `Platform` 建置屬性中指定。 您可以在 IDE 中，使用專案屬性頁或 [組態管理員]  來變更目標平台。  
+  「目標平台」** 是建置專案以在其上方執行的目標特定平台。 目標平台是在專案檔的 `Platform` 建置屬性中指定。 您可以在 IDE 中，使用專案屬性頁或 [組態管理員]**** 來變更目標平台。  
   
 ```  
 <PropertyGroup>  
@@ -75,7 +75,7 @@ ms.locfileid: "68181037"
   
 ```  
   
- 「目標組態」  是目標平台的子集。 例如，`x86``Debug` 組態不包含大部分的程式碼最佳化。 目標組態是在專案檔的 `Configuration` 建置屬性中指定。 您可以使用專案屬性頁或 [組態管理員]  來變更目標組態。  
+ 「目標組態」** 是目標平台的子集。 例如，`x86``Debug` 組態不包含大部分的程式碼最佳化。 目標組態是在專案檔的 `Configuration` 建置屬性中指定。 您可以使用專案屬性頁或 [組態管理員]**** 來變更目標組態。  
   
 ```  
 <PropertyGroup>  

@@ -9,10 +9,10 @@ caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5234dddad13ccb52cc653a68ad1c35370a4eae18
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586330"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>使用不同的 Web 瀏覽器搭配自動程式化 UI 測試
@@ -20,9 +20,9 @@ ms.locfileid: "82586330"
 
 自動程式化 UI 測試可以使用 Internet Explorer 錄製測試，以自動測試 Web 應用程式。 之後，您可以自訂測試再使用 Internet Explorer 或其他瀏覽器類型的 Web 應用程式進行播放。
 
- **Requirements**
+ **需求**
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
 - 作業系統：
 
@@ -42,7 +42,7 @@ ms.locfileid: "82586330"
 
 - 安裝 [Selenium components for Coded UI Cross Browser Testing](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting) (自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件)。
 
-  **所有網頁瀏覽器都支援哪些功能？**
+  **所有網頁瀏覽器都支援？**
 
 - [加入用於控制功能的自訂程式碼](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) (例如屬性、搜尋和播放等候程式等功能)。
 
@@ -99,19 +99,19 @@ ms.locfileid: "82586330"
  您使用的 [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] 版本可能不支援使用多種 Web 瀏覽器進行自動程式碼 UI 測試。 若要使用自動程式化 UI 測試，您必須使用 Visual Studio 企業版。
 
  *我還應該知道什麼？*
- **注意事項**
+ **備註**
 
-- ![必要條件 prereq](../test/media/prereq.png "Prereq")不支援 Apple Safari web 瀏覽器。
+- ![必要條件](../test/media/prereq.png ">prereq") 不支援 Apple Safari 網頁瀏覽器。
 
-- ![必要條件 prereq](../test/media/prereq.png "Prereq")啟動網頁瀏覽器的動作必須是自動程式碼 UI 測試的一部分。
+- ![必要條件](../test/media/prereq.png ">prereq") 啟動網頁瀏覽器的動作必須是自動程式碼 UI 測試的一部分。
 
    如果您已開啟一個 Web 瀏覽器，並且想要在其中執行步驟，除非使用 Internet Explorer，否則會播放失敗。 因此，最佳作法是在自動程式化 UI 測試中包含啟動 Web 瀏覽器的動作。
 
-- ![必要條件 prereq](../test/media/prereq.png "Prereq")不支援將瀏覽器特定的 UI 動作自動化，例如最大化、最小化和還原。
+- ![必要條件](../test/media/prereq.png ">prereq") 不支援自動化瀏覽器特定的 UI 動作，例如最大化、最小化和還原。
 
-  **提示**
+  **技巧**
 
-- ![秘訣](../test/media/tip.png "秘訣")您可以設定輸出，在自動程式碼 UI 記錄中包含螢幕擷取畫面。 若要這麼做，您需要完成 QTAgent32.exe.config 檔案的某些組態設定。 根據預設，這個檔案會安裝在下列位置：
+- ![秘訣](../test/media/tip.png "提示") 您可以設定輸出，在自動程式碼 UI 記錄中包含螢幕擷取畫面。 若要這麼做，您需要完成 QTAgent32.exe.config 檔案的某些組態設定。 根據預設，這個檔案會安裝在下列位置：
 
    **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
 
@@ -138,10 +138,10 @@ ms.locfileid: "82586330"
 
  [針對跨瀏覽器測試失敗問題進行疑難排解](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
-### <a name="guidance"></a>指導
+### <a name="guidance"></a>指引
  [使用 Visual Studio 2012 測試持續傳遞 – 第 2 章：單元測試：測試內部](https://msdn.microsoft.com/library/jj159340.aspx)
 
- [使用 Visual Studio 2012 測試持續傳遞–第5章：自動化系統測試](https://msdn.microsoft.com/library/jj159335.aspx)
+ [使用 Visual Studio 2012 測試持續傳遞-第5章：自動化系統測試](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="faq"></a>常見問題集
  [自動程式碼 UI 測試常見問題集 - 1](https://docs.microsoft.com/archive/blogs/mathew_aniyan/content-index-for-coded-ui-test)
@@ -152,4 +152,4 @@ ms.locfileid: "82586330"
  [Visual Studio 使用者介面自動化測試 (包括自動程式碼 UI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>另請參閱
- [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)[支援的設定和平臺自動程式化 Ui 測試和動作記錄](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)使用自動程式化[ui 測試記錄來分析](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)自動程式化 ui 測試
+ [使用消費者介面自動化來測試自動程式碼](../test/use-ui-automation-to-test-your-code.md) [Ui 測試的程式碼支援設定和平臺，以及](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)使用自動程式化[ui 測試記錄來分析](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)自動程式化 ui 測試的動作記錄

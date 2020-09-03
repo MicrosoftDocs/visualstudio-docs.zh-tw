@@ -1,5 +1,5 @@
 ---
-title: 按鍵繫結關係項目 |Microsoft Docs
+title: Keybindings.json 元素 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2649dee6bbf87b43caee260ddb2b6bbd217c7ae7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180316"
 ---
 # <a name="keybindings-element"></a>KeyBindings 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-按鍵繫結關係項目群組的按鍵繫結關係項目和其他按鍵繫結關係群組。  
+Keybindings.json 元素會將 KeyBinding 元素和其他 Keybindings.json 群組分組。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,26 +35,26 @@ ms.locfileid: "68180316"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
+|條件|選擇性。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[KeyBinding 元素](../extensibility/keybinding-element.md)|指定命令的鍵盤快速鍵。|  
-|[KeyBindings](../extensibility/keybindings-element.md)|群組按鍵繫結關係項目和其他按鍵繫結關係分組。|  
+|[Keybindings.json](../extensibility/keybindings-element.md)|群組 KeyBinding 元素和其他 Keybindings.json 群組。|  
   
 ### <a name="parent-elements"></a>父項目  
   
 |項目|描述|  
 |-------------|-----------------|  
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表命令的所有項目。|  
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表命令的所有元素。|  
   
 ## <a name="example"></a>範例  
   

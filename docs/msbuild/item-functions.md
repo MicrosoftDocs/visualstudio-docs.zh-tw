@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d3f6299a8be52aef068746ca33e48341da55f778
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586875"
 ---
 # <a name="item-functions"></a>Item 函式
 
-工作和目標中的程式碼可以呼叫專案函式，以取得專案中專案的相關資訊（在 MSBuild 4.0 和更新版本中）。 這些函式可簡化取得不同專案的工作，而且速度會比透過專案迴圈更快。
+工作和目標中的程式碼可以呼叫專案函數，以取得 MSBuild 4.0 和更新版本中專案 (專案的相關資訊) 。 這些函式可簡化取得相異專案的工作，而且速度會比迴圈流覽專案更快。
 
 ## <a name="string-item-functions"></a>字串項目函式
 
@@ -104,7 +104,7 @@ ms.locfileid: "82586875"
 
 ## <a name="msbuild-condition-functions"></a>MSBuild 條件函數
 
-函式`Exists`和`HasTrailingSlash`不是專案函式。 它們可與`Condition`屬性搭配使用。 請參閱[MSBuild 條件](msbuild-conditions.md)。
+函數 `Exists` 和 `HasTrailingSlash` 不是專案函數。 它們可與屬性搭配使用 `Condition` 。 請參閱 [MSBuild 條件](msbuild-conditions.md)。
 
 ## <a name="see-also"></a>另請參閱
 
