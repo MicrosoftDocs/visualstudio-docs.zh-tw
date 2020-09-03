@@ -1,5 +1,5 @@
 ---
-title: 偵錯工具 Web 應用程式 |Microsoft Docs
+title: Web 應用程式的偵錯工具 |Microsoft Docs
 ms.date: 11/05/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,38 +14,38 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1a7727f93e3f4fe279bb9cc009e61a3fdd70a15
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73714445"
 ---
 # <a name="debugging-web-applications"></a>偵錯 Web 應用程式
 
-本文提供的連結可協助您偵測不同類型的 web 應用程式。
+本文提供的連結可協助您進行不同類型的 web 應用程式的偵錯工具。
 
 - 對 ASP.NET 應用程式進行偵錯
 
-  如需啟用 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式之偵測的必要步驟，請參閱[Debug ASP.NET applications](how-to-enable-debugging-for-aspnet-applications.md)。
+  如需啟用應用程式的偵錯工具所需的步驟 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ，請參閱 [Debug ASP.NET applications](how-to-enable-debugging-for-aspnet-applications.md)。
 
-- 在 ASP.NET 中調試用戶端腳本
+- ASP.NET 中的 Debug 用戶端腳本
 
-  如需必要步驟，請參閱[Microsoft Edge 中的偵錯工具 JavaScript](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/)和這[篇 Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome)的文章。
+  如需必要步驟，請參閱 [Microsoft Edge 中](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) 的 blog 偵錯工具和 [Google Chrome 的這篇文章](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome)。
 
-- Debug JavaScript 和 TypeScript
+- 調試 JavaScript 和 TypeScript
 
-  請參閱[Debug JavaScript 和 TypeScript](../javascript/debug-nodejs.md)。
+  請參閱 [Debug JavaScript 和 TypeScript](../javascript/debug-nodejs.md)。
 
 - 檢視指令碼文件
 
-  您可以在 [方案總管] 查看伺服器端與用戶端指令碼文件清單並加以檢視。 您可以從 [ **方案總管**] 開啟任何指令碼文件。 如需詳細資訊，請參閱 [How to: View Script Documents](../debugger/how-to-view-script-documents.md)。
+  您可以在 [方案總管]**** 查看伺服器端與用戶端指令碼文件清單並加以檢視。 您可以從 [ **方案總管**] 開啟任何指令碼文件。 如需詳細資訊，請參閱 [How to: View Script Documents](../debugger/how-to-view-script-documents.md)。
 
 - 偵錯 AJAX 指令碼應用程式
 
-  啟用 AJAX 功能的 Web 應用程式會使用大量指令碼，在偵錯時特別困難。 如需 AJAX 偵錯工具技術的相關資訊，請參閱[偵錯工具和追蹤 Ajax 應用程式總覽](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)。
+  啟用 AJAX 功能的 Web 應用程式會使用大量指令碼，在偵錯時特別困難。 如需 AJAX 偵錯工具技術的詳細資訊，請參閱 [偵錯工具和追蹤 Ajax 應用程式總覽](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)
+- [偵錯設定及準備](../debugger/debugger-settings-and-preparation.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [Visual Studio 偵錯](../debugger/index.yml)

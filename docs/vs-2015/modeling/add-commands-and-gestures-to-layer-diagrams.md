@@ -1,5 +1,5 @@
 ---
-title: 在分層圖中加入命令和手勢 |Microsoft Docs
+title: 將命令和筆勢新增至分層圖 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7b0c54975cdd5bc86f77dddbd5ca1a56c1896394
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655321"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>將命令和軌跡加入分層圖
@@ -27,7 +27,7 @@ ms.locfileid: "72655321"
  您可以視需要在相同的 Visual Studio 專案中定義許多命令和軌跡處理常式。 您也可以將許多這類專案合併成單一 VSIX。 例如，您可以定義單一 VSIX，其中包含圖層指令、定義域專屬的語言以及 UML 圖表的命令。
 
 > [!NOTE]
-> 您也可以自訂架構驗證讓使用者原始程式碼與分層圖進行比較。 您應該要在個別的 Visual Studio 專案中定義架構驗證。 您可以將它加入相同的 VSIX，就像其他擴充功能一樣。 如需詳細資訊，請參閱[在分層圖中加入自訂架構驗證](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)。
+> 您也可以自訂架構驗證讓使用者原始程式碼與分層圖進行比較。 您應該要在個別的 Visual Studio 專案中定義架構驗證。 您可以將它加入相同的 VSIX，就像其他擴充功能一樣。 如需詳細資訊，請參閱 [將自訂架構驗證新增至分層圖](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)。
 
 ## <a name="requirements"></a>需求
  請參閱 [需求](../modeling/extend-layer-diagrams.md#prereqs)。
@@ -37,9 +37,9 @@ ms.locfileid: "72655321"
 
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>使用專案範本定義擴充功能
 
-1. 使用 [檔案] 功能表上的 [新增專案] 命令，在新的方案中建立專案。
+1. 使用 [檔案] **** 功能表上的 [新增專案] **** 命令，在新的方案中建立專案。
 
-2. 在 [新增專案] 對話方塊的 [模型專案]底下，選取 [圖層設計工具命令擴充功能] 或 [圖層設計工具軌跡擴充功能]。
+2. 在 [新增專案] **** 對話方塊的 [模型專案] **** 底下，選取 [圖層設計工具命令擴充功能] **** 或 [圖層設計工具軌跡擴充功能] ****。
 
     此範本隨即建立包含小型工作範例的專案。
 
@@ -47,7 +47,7 @@ ms.locfileid: "72655321"
 
     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。 在此執行個體中，建立分層圖。 您的命令或軌跡擴充功能應該會在此圖表中運作。
 
-4. 關閉此實驗執行個體並修改此範例程式碼。 如需詳細資訊，請參閱[在程式碼中流覽和更新圖層模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。
+4. 關閉此實驗執行個體並修改此範例程式碼。 如需詳細資訊，請參閱 [流覽和更新程式碼中的圖層模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。
 
 5. 您可以將其他命令或軌跡處理常式加入相同的專案。 如需詳細資訊，請參閱下列其中一節：
 
@@ -55,39 +55,39 @@ ms.locfileid: "72655321"
 
     [定義軌跡處理常式](#gesture)
 
-6. 若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的主要實例或另一部電腦上安裝擴充功能，請在*bin \\* 中尋找 **.vsix**檔案。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具] 功能表上的 [擴充功能和更新] 。
+6. 若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主要執行個體或其他電腦上安裝此擴充功能，請在 **bin\*** 中尋找 *.vsix\\*。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具] **** 功能表上的 [擴充功能和更新] **** 。
 
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>將命令或軌跡加入個別 VSIX
- 如果您想要建立包含命令、圖層驗證程式和其他擴充功能的單一 VSIX，建議您應建立單一專案來定義此 VSIX，並且針對此處理常式建立個別專案。 如需其他模型擴充功能類型的詳細資訊，請參閱[擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)。
+ 如果您想要建立包含命令、圖層驗證程式和其他擴充功能的單一 VSIX，建議您應建立單一專案來定義此 VSIX，並且針對此處理常式建立個別專案。 如需其他模型擴充功能類型的詳細資訊，請參閱 [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)。
 
 #### <a name="to-add-layer-extensions-to-a-separate-vsix"></a>將圖層擴充功能加入個別 VSIX
 
-1. 在新的或現有的 Visual Studio 方案中建立類別庫專案。 在 [新增專案] 對話方塊中，按一下 [Visual C#] ，然後按一下 [類別庫]。 這個專案將會包含命令或軌跡處理常式類別。
+1. 在新的或現有的 Visual Studio 方案中建立類別庫專案。 在 [新增專案] **** 對話方塊中，按一下 [Visual C#] **** ，然後按一下 [類別庫] ****。 這個專案將會包含命令或軌跡處理常式類別。
 
     > [!NOTE]
     > 雖然您可以在單一類別庫中定義多個命令或軌跡處理常式類別，不過您應該在個別的類別庫中定義圖層驗證類別。
 
 2. 在您的方案中識別或建立 VSIX 專案。 VSIX 專案會包含名為 **source.extension.vsixmanifest**的檔案。 若要加入 VSIX 專案：
 
-    1. 在 [新增專案] 對話方塊中，展開 [Visual C#]、按一下 [擴充性]，然後按一下 [VSIX 專案]。
+    1. 在 [新增專案] **** 對話方塊中，展開 [Visual C#] ****、按一下 [擴充性] ****，然後按一下 [VSIX 專案] ****。
 
-    2. 在 [方案總管] 中，以滑鼠右鍵按一下此 VSIX 專案，然後按一下 [設定為啟始專案]。
+    2. 在 [方案總管] 中，以滑鼠右鍵按一下此 VSIX 專案，然後按一下 [設定為啟始專案] ****。
 
-    3. 按一下 [選取版本] 並確定已核取 [Visual Studio] 。
+    3. 按一下 [選取版本] **** 並確定已核取 [Visual Studio] **** 。
 
-3. 在 **source.extension.vsixmanifest**的 [資產]底下，加入命令或軌跡處理常式專案做為 MEF 元件。
+3. 在 **source.extension.vsixmanifest**的 [資產] **** 底下，加入命令或軌跡處理常式專案做為 MEF 元件。
 
-    1. 在 [資產]索引標籤中，選擇 [新增]。
+    1. 在 [資產] **** 索引標籤中，選擇 [新增] ****。
 
-    2. 在 [類型]選取 [Microsoft.VisualStudio.MefComponent]。
+    2. 在 [類型] **** 選取 [Microsoft.VisualStudio.MefComponent] ****。
 
-    3. 在 [來源]選取 [目前方案中的專案] ，然後選取命令或軌跡處理常式專案的名稱。
+    3. 在 [來源] **** 選取 [目前方案中的專案] **** ，然後選取命令或軌跡處理常式專案的名稱。
 
     4. 儲存檔案。
 
 4. 返回此命令或軌跡處理常式專案，然後加入下列專案參考。
 
-|**參考資料**|**這可讓您執行**|
+|**參考**|**這可讓您執行**|
 |-------------------|------------------------------------|
 |Program Files\Microsoft Visual Studio [版本]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|建立和編輯圖層|
 |Microsoft.VisualStudio.Uml.Interfaces|建立和編輯圖層|
@@ -102,15 +102,15 @@ ms.locfileid: "72655321"
 
      [定義軌跡處理常式](#gesture)
 
-     另請參閱[在程式碼中流覽和更新圖層模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。
+     另請參閱 [流覽和更新程式碼中的圖層模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。
 
 2. 若要測試此功能，請按下 CTRL+F5 或 F5。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即開啟。 在此執行個體中，建立或開啟分層圖。
 
 3. 若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主要執行個體或其他電腦上安裝此擴充功能，請在 **bin\*** 目錄中尋找 **.vsix** 檔案。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下此 VSIX 檔案 (在 Windows 8 中為檔案總管)。
 
-     若要對其解除安裝，請使用 [工具] 功能表上的 [擴充功能和更新] 。
+     若要對其解除安裝，請使用 [工具] **** 功能表上的 [擴充功能和更新] **** 。
 
-## <a name="command"></a> 定義功能表命令
+## <a name="defining-a-menu-command"></a><a name="command"></a> 定義功能表命令
  您可以將其他功能表命令定義加入現有的軌跡或命令專案。 每個命令都由具有下列特性的類別加以定義：
 
 - 此類別的宣告方式如下：
@@ -141,7 +141,7 @@ ms.locfileid: "72655321"
 
    `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`
 
-  如需詳細資訊，請參閱[在程式碼中流覽和更新圖層模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。
+  如需詳細資訊，請參閱 [流覽和更新程式碼中的圖層模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。
 
   若要加入新的命令，請建立包含下列範例的新程式碼檔案。 然後，測試並編輯此檔案。
 
@@ -215,7 +215,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-## <a name="gesture"></a> 定義軌跡處理常式
+## <a name="defining-a-gesture-handler"></a><a name="gesture"></a> 定義軌跡處理常式
  當使用者將項目拖曳到分層圖上，以及當使用者在圖表任意處按兩下時，軌跡處理常式就會回應。
 
  對於現有的命令或軌跡處理常式 VSIX 專案，您可以加入定義軌跡處理常式的程式碼檔案：
@@ -247,7 +247,7 @@ namespace MyLayerExtensions // change to your preference
 
    **OnDragDrop** - 當使用者將項目置放到此圖表上時受呼叫。
 
-- 每個方法的第一個引數是 `IShape`，您可以從這裡取得此圖層項目。 例如:
+- 每個方法的第一個引數是 `IShape`，您可以從這裡取得此圖層項目。 例如：
 
   ```
   public void OnDragDrop(IShape target, IDataObject data)
@@ -262,7 +262,7 @@ namespace MyLayerExtensions // change to your preference
 
 - 針對某些拖曳項目類型的處理常式早已受到定義。 例如，使用者可以將項目從 [方案總管] 拖曳至分層圖上。 您無法針對這些項目類型定義拖曳處理常式。 在這些情況下，不會叫用您的 `DragDrop` 方法。
 
-  如需如何在拖曳其他專案至圖表上時進行解碼的詳細資訊，請參閱[在模型圖表上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)。
+  如需如何在拖曳其他專案至圖表時將其解碼的詳細資訊，請參閱在 [模型圖表上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)。
 
-## <a name="see-also"></a>請參閱
- [導覽和更新程式碼中的圖層模型](../modeling/navigate-and-update-layer-models-in-program-code.md)[將自訂架構驗證新增至分層圖](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)[定義和安裝模型擴充](../modeling/define-and-install-a-modeling-extension.md)功能
+## <a name="see-also"></a>另請參閱
+ [流覽和更新程式碼中的圖層模型](../modeling/navigate-and-update-layer-models-in-program-code.md)[將自訂架構驗證新增至分層圖](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)[定義和安裝模型擴充](../modeling/define-and-install-a-modeling-extension.md)功能

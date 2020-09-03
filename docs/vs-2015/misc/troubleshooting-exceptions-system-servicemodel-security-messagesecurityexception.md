@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9b8ce3f16c1439d62cfa1e2cff344b70e6724c42
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655357"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>疑難排解例外狀況：System.ServiceModel.Security.MessageSecurityException
-當 [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] 判斷訊息未正確受到保護，或已遭篡改時，就會擲回 <xref:System.ServiceModel.Security.MessageSecurityException> 例外狀況。 這個錯誤通常是在下列所有條件都成立時發生：
+<xref:System.ServiceModel.Security.MessageSecurityException>當 [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] 判斷訊息的安全性未正確或已遭篡改時，就會擲回例外狀況。 這個錯誤通常是在下列所有條件都成立時發生：
 
 - 在網站或 Web 應用程式專案中，您使用 WCF 服務參考透過遠端桌面連線或終端機服務 (Terminal Service) 這類的遠端連接，與 WCF 服務 (.svc) 通訊。
 
@@ -82,7 +82,7 @@ ms.locfileid: "72655357"
 
 2. 選取 [ **起始選項**]，然後再清除 [ **NTLM 驗證** ] 核取方塊。
 
-3. 按一下 [確定]。
+3. 按一下 [確定]  。
 
-## <a name="see-also"></a>請參閱
- <xref:System.ServiceModel.Security.MessageSecurityException>[使用例外狀況助理](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)
+## <a name="see-also"></a>另請參閱
+ <xref:System.ServiceModel.Security.MessageSecurityException> [使用例外狀況助理](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

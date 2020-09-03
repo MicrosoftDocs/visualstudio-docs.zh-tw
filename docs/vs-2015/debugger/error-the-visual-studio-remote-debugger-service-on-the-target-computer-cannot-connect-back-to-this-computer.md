@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 80a7de83f118b38d9a3c71f1c7e7febf48e0f5bc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520506"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>錯誤：目標電腦上的 Visual Studio 遠端偵錯工具服務無法連回這部電腦
@@ -30,14 +30,14 @@ ms.locfileid: "85520506"
   
  下表顯示可以存取該電腦的帳戶：  
   
-|狀況|LocalSystem 帳戶|網域帳戶|在兩台電腦上都具有相同使用者名稱和密碼的本機帳戶|  
+|案例|LocalSystem 帳戶|網域帳戶|在兩台電腦上都具有相同使用者名稱和密碼的本機帳戶|  
 |-|-|-|-|-|  
 |兩台電腦都位於相同的網域|是|是|是|  
 |網域上具有雙向信任的兩台電腦|否|否|是|  
 |工作群組中的一或兩台電腦|否|否|是|  
 |不同網域上的電腦|否|否|是|  
   
- 此外：  
+ 其他情況：  
   
 - 您用來執行 Visual Studio 遠端偵錯工具服務的帳戶，必須是遠端機器上的系統管理者，這樣才能偵錯任何處理序。  
   
@@ -47,7 +47,7 @@ ms.locfileid: "85520506"
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-1. 請確定已在遠端電腦上正確設定 Visual Studio 遠端偵錯工具服務。 如需詳細資訊，請參閱在[裝置上設定遠端工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)。  
+1. 請確定已在遠端電腦上正確設定 Visual Studio 遠端偵錯工具服務。 如需詳細資訊，請參閱 [設定裝置上的遠端工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)。  
   
 2. 在可以存取偵錯工具主機電腦的帳戶下執行遠端偵錯工具服務，如上表所示。  
   

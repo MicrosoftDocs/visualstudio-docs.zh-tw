@@ -8,10 +8,10 @@ ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
 manager: jillfra
 ms.openlocfilehash: a7854de705a961463b1e8435e7340548cfc23bf3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74293379"
 ---
 # <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>如何：升級 Visual Studio 自訂起始頁
@@ -24,7 +24,7 @@ ms.locfileid: "74293379"
 
 1. 請確定已安裝 Visual Studio 2015 和 Visual Studio 2015 SDK。 您可以從 [Microsoft Visual Studio 2013 SDK](https://my.visualstudio.com/Downloads?pid=1436)下載 VSSDK。
 
-2. 開啟您的自訂樣板專案。 您會看到訊息，通知您要升級專案。 按一下 [確定] ，並等候升級完成。
+2. 開啟您的自訂樣板專案。 您會看到訊息，通知您要升級專案。 按一下 [確定] **** ，並等候升級完成。
 
 3. 在起始頁專案和控制項專案的專案屬性中，確定 [目標架構] 至少為 .NET Framework 4.5。
 

@@ -7,10 +7,10 @@ ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
 ms.openlocfilehash: b4c5b460670a438b1aeaeb11cd8ae540b39cf9b7
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73714416"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Visual Studio for Mac 工作負載
@@ -25,7 +25,7 @@ Visual Studio for Mac 已預先安裝用於開發下列類型應用程式的工�
 
 ## <a name="mobile-applications-with-xamarin"></a>使用 Xamarin 的行動應用程式
 
-[Xamarin](xamarin.md)允許您使用 .NET 創建適用于 Android、iOS、tvOS、watchOS 和 Mac 桌面應用的跨平臺移動應用。
+[Xamarin](xamarin.md) 可讓您使用適用于 Android、IOS、TvOS、WatchOS 和 Mac 桌面應用程式的 .net 來建立跨平臺行動應用程式。
 
 如需在 Visual Studio for Mac 中使用 Xamarin 的資訊，請參閱 [Xamarin Developer Center](https://developer.xamarin.com/)，並參閱行動應用程式[實際操作實驗室](https://github.com/Microsoft/vs4mac-labs/tree/master/Mobile/Getting-Started)。
 

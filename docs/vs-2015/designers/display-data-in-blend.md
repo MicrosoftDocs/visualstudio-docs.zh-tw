@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ed51eaef8594695d4d594401ab9375563525b10
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74294578"
 ---
 # <a name="display-data-in-blend"></a>在 Blend 中顯示資料
@@ -29,36 +29,36 @@ ms.locfileid: "74294578"
 
 - [在 WPF 應用程式中顯示即時資料](#LiveWPF)
 
-- [在市集或 Phone 應用程式中顯示即時資料](#LiveStore)
+- [在商店或電話應用程式中顯示即時資料](#LiveStore)
 
-## <a name="Scratch"></a> 產生範例資料
- 若要產生範例資料，請開啟 XAML 文件。 在 [**資料**] 面板中，選擇 [**建立範例資料**![ ](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") ] 按鈕，然後選擇 [**新增範例資料**]。
+## <a name="generate-sample-data"></a><a name="Scratch"></a> 產生範例資料
+ 若要產生範例資料，請開啟 XAML 文件。 在 [資料] **** 面板中，選擇 [建立範例資料] ****![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") 按鈕，然後選擇 [新增範例資料] ****。
 
- 在 [資料] 面板中定義資料結構，然後將它繫結至任何頁面上的 UI 項目。
+ 在 [資料] **** 面板中定義資料結構，然後將它繫結至任何頁面上的 UI 項目。
 
  ![](../designers/media/496d7ebc-fe46-42f6-95a8-57b0e5be5d49.png "496d7ebc-fe46-42f6-95a8-57b0e5be5d49")
 
- 如果您希望範例資料在執行應用程式時出現在頁面中，請選擇 [**資料來源選項** ![ ](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png "ae1fd260-4f84-420d-b196-45fde357d81d")]，然後選擇 [執行**應用程式時啟用**]。
+ 如果您希望範例資料在執行應用程式時出現在頁面中，請選擇 [資料來源選項] **** ![](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png "ae1fd260-4f84-420d-b196-45fde357d81d")，然後選擇 [執行應用程式時啟用] ****。
 
  ![](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png "05d5356d-91bb-4e6b-b3f7-29b76852c4b3")
 
- **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon")[從頭開始建立範例資料](https://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2)。
+ **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG ">bldadminconsoleinitialconfigicon")[從頭開始建立範例資料](https://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2)。
 
- **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon")[使用 Blend 來混用一些資料](https://www.youtube.com/watch?v=LSwPB6CAvjg)系結。
+ **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG ">bldadminconsoleinitialconfigicon")[與 Blend 混合一些資料](https://www.youtube.com/watch?v=LSwPB6CAvjg)系結。
 
-## <a name="Existing"></a> 從類別產生範例資料
+## <a name="generate-sample-data-from-a-class"></a><a name="Existing"></a> 從類別產生範例資料
  如果您已經建立可描述資料結構的類別，可以從中產生範例資料。
 
- 若要從類別產生範例資料，請開啟 XAML 檔，然後在 [**資料**] 面板中，按一下 [**建立範例資料**![ ](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") ] 按鈕，然後按一下 [**從類別建立範例資料**]。
+ 若要從類別產生範例資料，請開啟 XAML 文件，然後在 [資料] **** 面板中，按一下 [建立範例資料] ****![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") 按鈕，然後按一下 [從類別建立範例資料] ****。
 
- **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon")[從類別建立範例資料](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML)。
+ **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG ">bldadminconsoleinitialconfigicon")[從類別建立範例資料](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML)。
 
- **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon")[使用 Blend 來混用一些資料](https://www.youtube.com/watch?v=LSwPB6CAvjg)系結。
+ **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG ">bldadminconsoleinitialconfigicon")[與 Blend 混合一些資料](https://www.youtube.com/watch?v=LSwPB6CAvjg)系結。
 
-## <a name="LiveWPF"></a> 在 WPF 應用程式中顯示即時資料
- **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon")[建立 XML 資料來源](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata)。
+## <a name="show-live-data-in-a-wpf-application"></a><a name="LiveWPF"></a> 在 WPF 應用程式中顯示即時資料
+ **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG ">bldadminconsoleinitialconfigicon")[建立 XML 資料來源](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata)。
 
-## <a name="LiveStore"></a> 在市集或 Phone 應用程式中顯示即時資料
+## <a name="show-live-data-in-a-store-or-phone-app"></a><a name="LiveStore"></a> 在商店或電話應用程式中顯示即時資料
  請參閱 [使用資料和檔案 (XAML)](https://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)。
 
 ## <a name="see-also"></a>另請參閱
