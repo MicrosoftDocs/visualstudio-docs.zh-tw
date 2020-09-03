@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9cd10f9eb0e2899394788c3b19348892837426db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669458"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 編輯器 IntelliSense 功能
@@ -22,7 +22,7 @@ ms.locfileid: "72669458"
 XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio 中提供的其他語言編輯器。 本節說明如何使用 IntelliSense (XSLT) 搭配 XML 結構定義語言 (XSD) 與 XSLT 文件。
 
 ## <a name="intellisense-in-an-xsd-document"></a>XSD 文件中的 IntelliSense
- 在架構與您的檔相關聯之後，您可以在輸入 `"<"` 或按一下 XML 編輯器工具列上的 [**顯示物件成員清單**] 按鈕時，取得預期元素的下拉式清單。 如需如何將架構與 XML 檔產生關聯的詳細資訊，請參閱[Xml 檔驗證](../xml-tools/xml-document-validation.md)。
+ 在架構與您的檔相關聯之後，您可以在輸入 `"<"` 或按一下 XML 編輯器工具列上的 [ **顯示物件成員清單** ] 按鈕時，取得預期專案的下拉式清單。 如需有關如何將架構與 XML 檔產生關聯的詳細資訊，請參閱 [Xml 檔驗證](../xml-tools/xml-document-validation.md)。
 
  從開始標記內鍵入 SPACE 時，您也會取得一個下拉式清單，顯示可加入到目前項目的全部屬性。
 
@@ -45,14 +45,14 @@ XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio �
 
 - 指定具名範本的參數名稱。‏
 
-  如需詳細資訊，請參閱[逐步解說：使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)主題。
+  如需詳細資訊，請參閱 [逐步解說：使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) 主題。
 
 ## <a name="auto-completion"></a>自動完成
  XML 編輯器還可藉由填入必要的 XML 語法，使編輯 XML 變得更容易。 例如，如果您鍵入下列開始標記：
 
  `<book>`
 
- XML 編輯器會填入結束標記，並將游標置於開啟標記後面。 以下是這種情況的範例（"&#124;" 會注意游標位置）：
+ XML 編輯器會填入結束標記，並將游標置於開啟標記後面。 以下是此 (「&#124;」附注游標位置) 的範例：
 
  `<book>`&#124;`</book>`
 
@@ -87,7 +87,7 @@ XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio �
 
 - 對稱的開始與結束標記。
 
-- 任何一對「\<」或「>」角括弧。
+- 任何一對 "\<" or ">" 角括號。
 
 - 註解的開始與結束。
 
@@ -104,19 +104,19 @@ XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio �
 
  [**其他**] 頁面的 [**自動插入**] 區段會控制下列行為：
 
-|[屬性]|描述|
+|Name|描述|
 |----------|-----------------|
-|關閉標記|插入新項目的關閉標記。|
+|結尾標記|插入新項目的關閉標記。|
 |屬性引號|輸入新屬性名稱時，請插入屬性值引號。|
 |其他標記|完成註解、CDATA、DOCTYPE、處理指示及其他標記宣告。|
 
 #### <a name="to-change-the-auto-completion-behavior"></a>變更自動完成行為
 
-1. 選取 [工具] 功能表上的 [選項]。
+1. 選取 [工具]**** 功能表上的 [選項]****。
 
-2. 展開 [**文字編輯器**]，展開 [ **XML**]，然後選取 [**其他**]。
+2. 展開 [ **文字編輯器**]，展開 [ **XML**]，然後選取 [ **其他**]。
 
-3. 對 [**自動插入**] 區段進行任何變更，然後按一下 **[確定]** 。
+3. 對 [ **自動插入** ] 區段進行任何變更，然後按一下 **[確定]**。
 
-## <a name="see-also"></a>請參閱
- [使用 IntelliSense](../ide/using-intellisense.md)的[XML 編輯器](../xml-tools/xml-editor.md)[逐步解說：使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
+## <a name="see-also"></a>另請參閱
+ [使用 intellisense](../ide/using-intellisense.md)的[XML 編輯器](../xml-tools/xml-editor.md)[逐步解說：使用 XSLT intellisense](../xml-tools/walkthrough-using-xslt-intellisense.md)
