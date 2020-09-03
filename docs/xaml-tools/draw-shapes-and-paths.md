@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350819"
 ---
 # <a name="draw-shapes-and-paths"></a>繪製圖案與路徑
@@ -86,7 +86,7 @@ ms.locfileid: "85350819"
 
 ## <a name="convert-a-shape-to-a-path"></a>將圖形轉換成路徑
 
-若要以修改路徑的相同方式來修改圖形，請將圖形轉換為路徑。 選取圖形，然後選取 [**格式**  >  **路徑**] [  >  **轉換成路徑**]。
+若要以修改路徑的相同方式來修改圖形，請將圖形轉換為路徑。 選取圖形，然後選取 [ **Format**  >  **Path**  >  **轉換成路徑**的格式路徑]。
 
 **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Convert a shape to a path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147) (使用路徑：將圖形轉換成路徑)。
 

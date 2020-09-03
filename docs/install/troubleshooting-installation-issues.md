@@ -16,16 +16,16 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 418cc9f75842cb4f3e9d8c0c0753084e2f0633c2
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350806"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>針對 Visual Studio 安裝和升級問題進行疑難排解
 
 > [!IMPORTANT]
-> 遇到安裝問題嗎？ 我們可以幫您。 我們提供[**安裝聊天**](https://visualstudio.microsoft.com/vs/support/#talktous)（僅限英文）支援選項。
+> 遇到安裝問題嗎？ 我們可以幫您。 我們只會) 支援選項提供 [**安裝聊天**](https://visualstudio.microsoft.com/vs/support/#talktous) (英文版。
 
 此疑難排解指南包括逐步指示，應該可以解決大部分的安裝問題。
 
@@ -49,13 +49,13 @@ Visual Studio 安裝程式有一些已知問題，Microsoft 正在努力修正�
 
 ### <a name="step-2---try-repairing-visual-studio"></a>步驟 2-嘗試修復 Visual Studio
 
-修復修正許多常見的更新問題。 如需有關如何在 Visual Studio 中使用修復功能的詳細資訊，請參閱[repair Visual Studio](repair-visual-studio.md)。
+修復修正許多常見的更新問題。 如需有關何時及如何在 Visual Studio 中使用修復功能的詳細資訊，請參閱 [修復 Visual Studio](repair-visual-studio.md)。
 
-### <a name="step-3---check-with-the-developer-community"></a>步驟 3-查看開發人員的社區
+### <a name="step-3---check-with-the-developer-community"></a>步驟 3-查看開發人員社區
 
 在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/spaces/8/index.html)\(英文\) 中搜尋您的錯誤訊息。 社群的其他成員可能已記錄您問題的解決方式。
 
-### <a name="step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>步驟 4-刪除 Visual Studio 安裝程式目錄，以修正升級問題
+### <a name="step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>步驟 4-刪除 Visual Studio 安裝程式目錄以修正升級問題
 
 Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可安裝 Visual Studio 安裝程式的其餘部分。 刪除 Visual Studio 安裝程式檔案，然後重新執行啟動載入器，可能可以解決一些更新失敗問題。
 
@@ -66,7 +66,7 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 
 1. 關閉 Visual Studio 安裝程式。
 2. 刪除 Visual Studio 安裝程式目錄。 此目錄通常是 `C:\Program Files (x86)\Microsoft Visual Studio\Installer`。
-3. 執行 Visual Studio 安裝程式啟動載入器。 您可以在 [下載] 資料夾中找到檔名遵循 `vs_[Visual Studio edition]__*.exe` 模式的啟動載入器。 如果找不到該應用程式，您可以前往 [ [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)] 頁面，然後按一下您 Visual Studio 版本的 [**下載**] 來下載啟動載入器。 接著，執行該可執行檔來重設您的安裝中繼資料。
+3. 執行 Visual Studio 安裝程式啟動載入器。 您可以在 [下載] 資料夾中找到檔名遵循 `vs_[Visual Studio edition]__*.exe` 模式的啟動載入器。 如果您找不到該應用程式，您可以前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ] 頁面，然後按一下 [ **下載** ] Visual Studio 的版本，以下載啟動載入器。 接著，執行該可執行檔來重設您的安裝中繼資料。
 4. 嘗試重新安裝或更新 Visual Studio。 如果安裝程式持續失敗，請移至下一步驟。
 
 ::: moniker-end
@@ -75,7 +75,7 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 
 1. 關閉 Visual Studio 安裝程式。
 2. 刪除 Visual Studio 安裝程式目錄。 此目錄通常是 `C:\Program Files (x86)\Microsoft Visual Studio\Installer`。
-3. 執行 Visual Studio 安裝程式啟動載入器。 您可以在 [下載] 資料夾中找到檔名遵循 `vs_[Visual Studio edition]__*.exe` 模式的啟動載入器。 如果找不到該應用程式，您可以前往 [ [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)] 頁面，然後按一下您 Visual Studio 版本的 [**下載**] 來下載啟動載入器。 接著，執行該可執行檔來重設您的安裝中繼資料。
+3. 執行 Visual Studio 安裝程式啟動載入器。 您可以在 [下載] 資料夾中找到檔名遵循 `vs_[Visual Studio edition]__*.exe` 模式的啟動載入器。 如果您找不到該應用程式，您可以前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads) ] 頁面，然後按一下 [ **下載** ] Visual Studio 的版本，以下載啟動載入器。 接著，執行該可執行檔來重設您的安裝中繼資料。
 4. 嘗試重新安裝或更新 Visual Studio。 如果安裝程式持續失敗，請移至下一步驟。
 
 ::: moniker-end
@@ -109,23 +109,23 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 非不得已，您可以[移除 Visual Studio](remove-visual-studio.md)來移除所有安裝檔案和產品資訊。
 
 1. 請遵循[移除 Visual Studio](remove-visual-studio.md) 中的指示進行。
-2. 重新[執行步驟 4-刪除 Visual Studio 安裝程式目錄](#step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems)中所述的啟動載入器，以修正升級問題。
+2. 重新執行步驟4中所述的啟動 [載入器-刪除 Visual Studio 安裝程式目錄以修正升級問題](#step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems)。
 3. 嘗試重新安裝或更新 Visual Studio。
 
-### <a name="step-7---contact-us-optional"></a>步驟 7-聯絡我們（選擇性）
+### <a name="step-7---contact-us-optional"></a>步驟 7-聯繫我們 (選擇性) 
 
 若上述步驟都無法協助您成功地安裝或升級 Visual Studio，請使用我們的[**即時聊天**](https://visualstudio.microsoft.com/vs/support/#talktous)支援選項 (僅限英文) 與我們連絡以取得進一步的協助。
 
 ## <a name="offline-installations"></a>離線安裝
 
-以下是已知問題和一些因應措施的表格，當您建立[離線安裝](create-an-offline-installation-of-visual-studio.md)，然後從本機配置進行安裝時，可能會有一些因應措施可協助您。
+以下是已知問題的表格，以及一些可協助您建立 [離線安裝](create-an-offline-installation-of-visual-studio.md) ，然後從本機配置進行安裝的因應措施。
 
-| 問題       | Item                   | 解決方案 |
+| 問題       | 項目                   | 解決方法 |
 | ----------- | ---------------------- | -------- |
-| 使用者沒有檔案的存取權。 | 權限 (ACL) | 請確定您已調整許可權（Acl），使其在您共用離線安裝*之前*，授與讀取權限給其他使用者。 |
+| 使用者沒有檔案的存取權。 | 權限 (ACL) | 請務必調整 (Acl) 的許可權，以便在您共用離線安裝  *之前* ，授與其他使用者的讀取權限。 |
 | 無法安裝新的工作負載、元件或語言。  | `--layout`  | 如果是以部分配置來安裝，並選取該部分配置中先前未下載的工作負載、元件或語言，請確定可以存取網際網路。 |
 
-如需如何解決[網路安裝](create-a-network-installation-of-visual-studio.md)問題的詳細資訊，請參閱[當您安裝或使用 Visual Studio 時，針對網路相關錯誤進行疑難排解](troubleshooting-network-related-errors-in-visual-studio.md)。
+如需有關如何解決 [網路安裝](create-a-network-installation-of-visual-studio.md)問題的詳細資訊，請參閱在 [安裝或使用 Visual Studio 時疑難排解網路相關錯誤](troubleshooting-network-related-errors-in-visual-studio.md)。
 
 ## <a name="installation-logs"></a>安裝記錄檔
 
@@ -143,7 +143,7 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 > [!NOTE]
 > 執行工具所用的帳戶，必須相同於執行失敗安裝所用的帳戶。 如果使用不同的使用者帳戶來執行工具，請設定 `–user:<name>` 選項，以指定執行失敗安裝所用的使用者帳戶。 如需其他選項與使用資訊，請從系統管理命令提示字元執行 `Collect.exe -?`。
 
-## <a name="live-help"></a>即時協助
+## <a name="live-help"></a>即時說明
 
 若此疑難排解指南中所列的解決方式無法協助您成功地安裝或升級 Visual Studio，請使用我們的[**即時聊天**](https://visualstudio.microsoft.com/vs/support/#talktous)支援選項 (僅限英文) 以取得進一步的協助。
 

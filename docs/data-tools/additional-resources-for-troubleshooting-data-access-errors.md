@@ -225,32 +225,32 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 0383de73992b96f6a458b389573e252b39d624b6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587039"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>針對論壇上的資料存取錯誤進行疑難排解
 
-您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 以下是 MSDN 上提供的一些資料相關論壇：
+您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 以下是 MSDN 提供的一些資料相關論壇：
 
-- [Windows Forms data controls and databinding](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols) (Windows Forms 資料控制項與資料繫結)
+- [Windows Forms 資料控制和資料系結](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
 - [ADO.NET 資料集論壇](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
-- [ADO.NET Entity Framework and LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework) (ADO.NET Entity Framework 與 LINQ to Entities)
+- [ADO.NET Entity Framework 和 LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
 
 - [WCF data services forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices) (WCF 資料服務論壇)
 
-- [SQL Server data access forum](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess) (SQL Server 資料存取論壇)
+- [SQL Server 資料存取論壇](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
 - [LINQ to SQL 論壇](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
 - [ADO.NET 資料提供者論壇](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
 
-如需如何疑難排解 SQL Server 連線的詳細資訊，請參閱[疑難排解連接到 SQL Server 資料庫引擎](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx)。
+如需有關如何針對 SQL Server 的連接進行疑難排解的詳細資訊，請參閱 [疑難排解連接至 SQL Server database engine](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

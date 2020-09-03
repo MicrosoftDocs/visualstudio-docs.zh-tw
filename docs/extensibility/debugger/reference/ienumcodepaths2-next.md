@@ -1,5 +1,5 @@
 ---
-title: IEnumCodePath2::下一個 |微軟文件
+title: IEnumCodePaths2：： Next |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6e126fc916360d0cc992da5f17edecda7cb2ef41
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717815"
 ---
 # <a name="ienumcodepaths2next"></a>IEnumCodePaths2::Next
-從枚舉返回下一組元素。
+傳回列舉中的下一組元素。
 
 ## <a name="syntax"></a>語法
 
@@ -45,16 +45,16 @@ int Next(
 
 ## <a name="parameters"></a>參數
 `celt`\
-[在]要檢索的元素數。 還指定`rgelt`數位的最大大小。
+在要取出的元素數目。 也指定陣列的大小上限 `rgelt` 。
 
 `rgelt`\
-[進出]要填充[CODE_PATH](../../../extensibility/debugger/reference/code-path.md)元素的陣列。
+[in，out]要填入的 [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) 元素陣列。
 
 `pceltFetched`\
-[出]返回中`rgelt`實際返回的元素數。
+擴展傳回實際傳回的元素數目 `rgelt` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回 `S_OK`。 如果`S_FALSE`返回的元素數少於請求的元素數,則返回;否則,返回錯誤代碼。
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果可以傳回小於所要求的元素數目，則傳回，否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

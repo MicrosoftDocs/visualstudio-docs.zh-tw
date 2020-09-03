@@ -11,21 +11,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183648"
 ---
 # <a name="property-functions"></a>屬性函式
 
-屬性函式會呼叫出現在 MSBuild 屬性定義中 .NET Framework 方法。 與工作不同，屬性函式可用於目標外部，並在執行任何目標之前，先進行評估。
+屬性函式是呼叫出現在 MSBuild 屬性定義中 .NET Framework 方法。 與工作不同，屬性函式可用於目標外部，並在執行任何目標之前，先進行評估。
 
 在不使用 MSBuild 工作的情況下，您可以讀取系統時間、比較字串、比對規則運算式，以及執行組建指令碼中的其他動作。 MSBuild 會嘗試將字串轉換為數字或將數字轉換為字串，並視需要進行其他轉換。
 
 從屬性函式傳回的字串值具有逸出的[特殊字元](msbuild-special-characters.md)。 如果您想要將值視為直接放入專案檔中，請使用 `$([MSBuild]::Unescape())` 來取消逸出特殊字元。
 
-屬性函數適用于 .NET Framework 4 和更新版本。
+屬性函式可搭配 .NET Framework 4 和更新版本使用。
 
 ## <a name="property-function-syntax"></a>屬性函式語法
 
@@ -57,7 +57,7 @@ $([Class]::Property)
 <Today>$([System.DateTime]::Now)</Today>
 ```
 
-若要呼叫靜態方法，請使用下列語法，其中 \<Class> 是系統類別的名稱、 \<Method> 是方法的名稱，而（ \<Parameters> ）是方法的參數清單：
+若要呼叫靜態方法，請使用下列語法，其中 \<Class> 是 system 類別的名稱、 \<Method> 是方法的名稱，而 (\<Parameters>) 是方法的參數清單：
 
 ```
 $([Class]::Method(Parameters))
@@ -113,15 +113,15 @@ $([Class]::Method(Parameters))
 - [System.IO.Directory::GetLastWriteTime](xref:System.IO.Directory.GetLastWriteTime*)
 - [System.IO.Directory::GetParent](xref:System.IO.Directory.GetParent*)
 - [System.IO.File::Exists](xref:System.IO.File.Exists*)
-- [System.web. File：： GetCreationTime](xref:System.IO.File.GetCreationTime*)
-- [System.web. File：： GetAttributes](xref:System.IO.File.GetAttributes*)
-- [System.web. File：： GetLastAccessTime](xref:System.IO.File.GetLastAccessTime*)
-- [System.web. File：： GetLastWriteTime](xref:System.IO.File.GetLastWriteTime*)
+- [System.servicemodel. File：： GetCreationTime](xref:System.IO.File.GetCreationTime*)
+- [System.servicemodel. File：： GetAttributes](xref:System.IO.File.GetAttributes*)
+- [System.servicemodel. File：： GetLastAccessTime](xref:System.IO.File.GetLastAccessTime*)
+- [System.servicemodel. File：： GetLastWriteTime](xref:System.IO.File.GetLastWriteTime*)
 - [System.IO.File::ReadAllText](xref:System.IO.File.ReadAllText*)
 
 ### <a name="calling-instance-methods-on-static-properties"></a>在靜態屬性上呼叫執行個體方法
 
-如果您存取的靜態屬性傳回物件執行個體，您就可以叫用該物件的執行個體方法。 若要叫用實例方法，請使用下列語法，其中 \<Class> 是系統類別的名稱，是屬性的名稱， \<Property> \<Method> 是方法的名稱，而（ \<Parameters> ）是方法的參數清單：
+如果您存取的靜態屬性傳回物件執行個體，您就可以叫用該物件的執行個體方法。 若要叫用實例方法，請使用下列語法，其中 \<Class> 是系統類別的名稱、是屬性的名稱、 \<Property> \<Method> 是方法的名稱，而 (\<Parameters>) 是方法的參數清單：
 
 ```
 $([Class]::Property.Method(Parameters))
@@ -137,7 +137,7 @@ $([Class]::Property.Method(Parameters))
 
 ### <a name="msbuild-property-functions"></a>MSBuild 屬性函式
 
-您組建中的數個靜態方法可以存取來提供算術、位元邏輯和逸出字元支援。 您可以使用下列語法存取這些方法，其中 \<Method> 是方法的名稱，而（ \<Parameters> ）是方法的參數清單。
+您組建中的數個靜態方法可以存取來提供算術、位元邏輯和逸出字元支援。 您可以使用下列語法存取這些方法，其中 \<Method> 是方法的名稱，而 (\<Parameters>) 是方法的參數清單。
 
 ```
 $([MSBuild]::Method(Parameters))
@@ -151,7 +151,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 
 以下是 MSBuild 屬性函式的清單：
 
-|函式簽章|描述|
+|函式簽章|說明|
 |------------------------|-----------------|
 |double Add(double a, double b)|將兩個雙精度浮點數相加。|
 |long Add(long a, long b)|將兩個長整數相加。|
@@ -174,8 +174,8 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 |string NormalizePath(params string[] path)|取得所提供路徑的規範化完整路徑，並確保它包含目前作業系統的正確目錄分隔符號字元。|
 |string NormalizeDirectory(params string[] path)|取得所提供目錄的規範化完整路徑，並確保它包含目前作業系統的正確目錄分隔符號字元，且後面有斜線。|
 |string EnsureTrailingSlash(string path)|如果指定的路徑後面沒有斜線，請新增一個。 如果此路徑是空字串，請不要修改它。|
-|string GetPathOfFileAbove(string file, string startingDirectory)|搜尋並傳回目錄結構中，位於目前組建檔案位置上方之檔案的完整路徑， `startingDirectory` 如果有指定，則會傳回根據。|
-|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|找出並傳回指定目錄中的檔案目錄，或在該目錄上方目錄結構中的位置。|
+|string GetPathOfFileAbove(string file, string startingDirectory)|搜尋並傳回目錄結構中檔案的完整路徑，該檔案位於目前組建檔案的位置，或根據 `startingDirectory` 指定的。|
+|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|在指定的目錄中尋找並傳回檔案的目錄，或在該目錄上方目錄結構中的位置。|
 |string MakeRelative(string basePath, string path)|讓 `path` 成為 `basePath` 的相對項。 `basePath` 必須是絕對目錄。 如果 `path` 不能成為相對的，它就會被逐字傳回。 類似於 `Uri.MakeRelativeUri`。|
 |string ValueOrDefault(string conditionValue, string defaultValue)|只有當參數 'conditionValue' 為空時，才傳回參數 'defaultValue' 中的字串；否則，傳回值 conditionValue。|
 
@@ -229,7 +229,7 @@ $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 
 ## <a name="msbuild-getpathoffileabove"></a>MSBuild GetPathOfFileAbove
 
-MSBuild 中的屬性函式會傳回指定檔案的 `GetPathOfFileAbove` 路徑（如果位於目前目錄上方的目錄結構中）。 它在功能上相當於呼叫
+`GetPathOfFileAbove`如果位於目前的目錄上方的目錄結構中，MSBuild 中的屬性函式會傳回指定檔案的路徑。 它在功能上相當於呼叫
 
 ```xml
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
@@ -263,7 +263,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-Windows 64 位作業系統會維護**HKEY_LOCAL_MACHINE \software\wow6432node**登錄機碼，以提供32位應用程式的**HKEY_LOCAL_MACHINE \software**登錄視圖。
+Windows 64 位作業系統會維護 **HKEY_LOCAL_MACHINE 的 \software\wow6432node** 登錄機碼，以提供適用于32位應用程式的 **HKEY_LOCAL_MACHINE \software** registry view。
 
 根據預設，在 WOW64 上執行的 32 位元應用程式會存取 32 位元登錄檢視，而 64 位元應用程式會存取 64 位元登錄檢視。
 
@@ -342,7 +342,7 @@ Output:
 
 ## <a name="msbuild-condition-functions"></a>MSBuild 條件函數
 
-函數 `Exists` 和 `HasTrailingSlash` 不是屬性函式。 它們可與屬性搭配使用 `Condition` 。 請參閱[MSBuild 條件](msbuild-conditions.md)。
+函數 `Exists` 和 `HasTrailingSlash` 不是屬性函數。 它們可與屬性搭配使用 `Condition` 。 請參閱 [MSBuild 條件](msbuild-conditions.md)。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -3,19 +3,19 @@ title: Visual Studio for Mac 教學課程
 description: Visual Studio for Mac 提供整合式的開發環境，以在 macOS 上建置 .NET 應用程式，包括 ASP.NET Core 網站，和適用於 iOS、Android、Mac 和 Xamarin.Forms 的 Xamarin 專案。
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 12/13/2019
+ms.date: 07/03/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: f7686efae903912b64d8692a823d6e82592cbec9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56af8f7cd30ec8e41ece2772dc63d67a2dbf3976
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "75405823"
+ms.locfileid: "89402609"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 for Mac 導覽
 
-Visual Studio for Mac 是 Mac 上的 _.NET 整合式開發環境_，可用來編輯、偵錯及建置程式碼，然後發佈應用程式。 除了必備功能 (如標準編輯器和偵錯工具) 外，Visual Studio for Mac 還有編譯器、程式碼完成工具、圖形設計工具和原始檔控制，讓軟體開發程序變得輕鬆容易。
+Visual Studio for Mac 是 Mac 上的 _.NET 整合式開發環境_，可用來編輯、偵錯及建置程式碼，然後發佈應用程式。 除了程式碼編輯器和偵錯工具之外，Visual Studio for Mac 還包含編譯器、程式碼完成工具、圖形設計工具和原始檔控制功能，以簡化軟體發展流程。
 
 Visual Studio for Mac 支援的檔案類型很多都與 Windows 相同，例如 `.csproj`、`.fsproj`或 `.sln` 檔案，也支援 EditorConfig 這類功能，也就是說，您可以使用最適合您的 IDE。
 建立、開啟及開發應用程式，對於先前在 Windows 上使用 Visual Studio 的任何人而言，將會是熟悉的經驗。 此外，Visual Studio for Mac 採用許多功能強大的工具，這些工具讓其 Windows 對等項目成為功能如此強大的 IDE。 Roslyn 編譯器平台用於重構和 IntelliSense。 它的專案系統和組建引擎使用 MSBuild，而其來源編輯器使用與 Windows 上的 Visual Studio 相同的基礎。 它為 Xamarin 與 .NET Core 應用程式使用相同的偵錯工具引擎，並為 Xamarin.iOS 和 Xamarin.Android 使用相同的設計工具。
@@ -38,7 +38,7 @@ Visual Studio for Mac 分成數個區段，以便管理應用程式檔案和設�
 
 ## <a name="getting-started"></a>開始使用
 
-當您啟動 Visual Studio 2019 for Mac 時，新的使用者會看到登入視窗。 使用您的 Microsoft 帳戶登入以啟動付費授權 (如果有的話) 或 Azure 訂用帳戶的連結。 您可以按 [稍後]，稍後再透過**Visual Studio > 登入**功能表項目**進行**登入：
+當您第一次啟動 Visual Studio 2019 for Mac 時，新的使用者會看到登入視窗。 使用您的 Microsoft 帳戶登入以啟動付費授權 (如果有的話) 或 Azure 訂用帳戶的連結。 您可以按 [稍後]，稍後再透過**Visual Studio > 登入**功能表項目**進行**登入：
 
 ![登入您的 Microsoft 帳戶](media/ide-tour-2019-start-signin.png)
 
@@ -46,7 +46,7 @@ Visual Studio for Mac 分成數個區段，以便管理應用程式檔案和設�
 
 ![選取您慣用的鍵盤快速鍵](media/ide-tour-2019-keyboard-shortcut.png)
 
-使用者登入後，會看到新的_開始視窗_，其中顯示一份最近使用的專案清單，以及開啟現有專案或建立新專案的按鈕：
+在此初始設定體驗之後，您會在開啟 Visual Studio 2019 for Mac 時看到 [ _開始] 視窗_ ，其中顯示最近的專案清單，以及開啟現有專案或建立新專案的按鈕：
 
 ![從最近使用的專案中選擇，或建立新的專案](media/ide-tour-2019-start-projects.png)
 
@@ -82,7 +82,7 @@ Solution Pad 能組織方案中的專案：
 
 ## <a name="dependencies--packages"></a>相依性 / 封裝
 
-用於應用程式中的所有外部相依性，都會儲存在 [相依性] 或 [套件] 資料夾中，視您是在 .Net Core 或 Xamarin.iOS/Xamarin.Android 專案中而定。 這些通常會以 NuGet 的形式提供。
+您應用程式中使用的所有外部相依性都會儲存在 [相依性] 或 [套件] 資料夾中，視您是在 .NET Core 或 Xamarin. Android 專案中而定。 這些通常會以 NuGet 的形式提供。
 
 NuGet 是適用於 .NET 開發最受歡迎的套件管理員。 使用 Visual Studio 的 NuGet 支援，您可以輕鬆地搜尋並新增套件至您的應用程式專案。
 
@@ -94,7 +94,7 @@ NuGet 是適用於 .NET 開發最受歡迎的套件管理員。 使用 Visual St
 
 ## <a name="source-editor"></a>原始檔編輯器
 
-無論您是使用 c #、XAML 或 JAVAscript 撰寫的，程式碼編輯器都會與 Visual Studio 視窗共用相同的核心元件，以及完全原生的使用者介面。
+無論您是以 c #、XAML 或 JavaScript 撰寫，程式碼編輯器都會與 Windows 上的 Visual Studio 共用相同的核心元件，並具有完全原生的使用者介面。
 
 這會帶來下列部分功能：
 

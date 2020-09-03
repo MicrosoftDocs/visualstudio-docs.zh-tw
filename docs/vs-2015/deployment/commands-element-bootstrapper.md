@@ -1,5 +1,5 @@
 ---
-title: '&lt;命令&gt;項目 （啟動載入器） |Microsoft Docs'
+title: '&lt;啟動載入器) 的命令 &gt; 元素 (|Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,16 +17,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: af10c9e0b26a6ef2c8e7a98bc345b8e86017682b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205340"
 ---
-# <a name="ltcommandsgt-element-bootstrapper"></a>&lt;命令&gt;項目 （啟動載入器）
+# <a name="ltcommandsgt-element-bootstrapper"></a>&lt;命令 &gt; 元素 (啟動載入器) 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Commands`項目實作下方的項目所描述的測試`InstallChecks`項目，並宣告哪些封裝[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]測試失敗時，應該安裝啟動載入器。  
+專案會執行專案下的專案 `Commands` 所描述的測試 `InstallChecks` ，並宣告 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 當測試失敗時，啟動載入器應該安裝的封裝。  
   
 ## <a name="syntax"></a>語法  
   
@@ -68,68 +68,68 @@ ms.locfileid: "68205340"
 </Commands>  
 ```  
   
-## <a name="elements-and-attributes"></a>項目和屬性  
- `Commands`是必要元素。 元素具有下列屬性。  
+## <a name="elements-and-attributes"></a>元素和屬性  
+ `Commands`需要元素。 元素具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Reboot`|選擇性。 決定系統是否應該重新啟動的任何封裝傳回重新開機結束代碼。 下列清單顯示有效的值：<br /><br /> `Defer`. 重新啟動會延遲，直到某些未來的時間。<br /><br /> `Immediate`. 如果其中一個封裝傳回重新開機結束代碼，會導致立即重新啟動。<br /><br /> `None`. 會導致任何重新啟動的要求會被忽略。<br /><br /> 預設為 `Immediate`。|  
+|`Reboot`|選擇性。 判斷如果有任何套件傳回重新開機結束代碼，系統是否應該重新開機。 下列清單顯示有效的值：<br /><br /> `Defer`. 重新開機會延後到未來的某個時間。<br /><br /> `Immediate`. 如果其中一個套件傳回重新開機結束代碼，則會立即重新開機。<br /><br /> `None`. 會忽略任何重新開機要求。<br /><br /> 預設為 `Immediate`。|  
   
 ## <a name="command"></a>命令  
- `Command` 項目是 `Commands` 項目的子項目。 A`Commands`項目可以有一或多個`Command`項目。 元素具有下列屬性。  
+ `Command` 項目是 `Commands` 項目的子項目。 專案 `Commands` 可以有一或多個 `Command` 元素。 元素具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`PackageFile`|必要項。 若要安裝封裝的名稱應該一或多個所指定的條件`InstallConditions`傳回 false。 封裝必須在相同的檔案中定義，使用`PackageFile`項目。|  
-|`Arguments`|選擇性。 一組命令列引數傳遞至封裝檔案。|  
-|`EstimatedInstallSeconds`|選擇性。 估計的時間，以秒為單位，它會安裝套件。 這個值會決定啟動載入器會對使用者顯示進度列的大小。 預設值為在此情況下 0，不會指定估計的時間。|  
-|`EstimatedDiskBytes`|選擇性。 已完成的以位元組為單位，封裝會在安裝後所佔用的磁碟空間估計的量。 這個值會在啟動載入器會顯示給使用者的硬碟空間需求。 預設值為的 0，啟動載入器的情況下不會顯示任何硬碟空間需求。|  
-|`EstimatedTempBytes`|選擇性。 以位元組為單位，這個套件所需的暫存磁碟空間估計的量。|  
-|`Log`|選擇性。 記錄檔套件所產生，相對於根目錄的封裝路徑。|  
+|`PackageFile`|必要。 要安裝的封裝名稱應傳回 false 所指定的一或多個條件 `InstallConditions` 。 封裝必須在相同的檔案中使用元素來定義 `PackageFile` 。|  
+|`Arguments`|選擇性。 要傳遞至封裝檔案的一組命令列引數。|  
+|`EstimatedInstallSeconds`|選擇性。 安裝套件所需要的預估時間（以秒為單位）。 此值會決定啟動載入器顯示給使用者的進度列大小。 預設值為0，在此情況下不會指定任何時間估計。|  
+|`EstimatedDiskBytes`|選擇性。 安裝完成之後，套件將佔用的預估磁碟空間量（以位元組為單位）。 在啟動載入器向使用者顯示的硬碟空間需求中，會使用這個值。 預設值為0，在這種情況下，啟動載入器不會顯示任何硬碟空間需求。|  
+|`EstimatedTempBytes`|選擇性。 封裝將需要的暫存磁碟空間估計量（以位元組為單位）。|  
+|`Log`|選擇性。 封裝所產生之記錄檔的路徑（相對於封裝的根目錄）。|  
   
 ## <a name="installconditions"></a>InstallConditions  
- `InstallConditions`項目是子系`Command`項目。 每個`Command`項目可以有最多一個`InstallConditions`項目。 如果沒有`InstallConditions`項目存在，所指定的封裝`Condition`一定會執行。  
+ `InstallConditions`元素是元素的子系 `Command` 。 每個專案 `Command` 最多隻能有一個 `InstallConditions` 元素。 如果不 `InstallConditions` 存在任何專案，則 `Condition` 會一律執行指定的封裝。  
   
 ## <a name="bypassif"></a>BypassIf  
- `BypassIf`項目是子系`InstallConditions`項目，並說明正值條件下應該不會執行命令。 每個`InstallConditions`項目可以有零或多個`BypassIf`項目。  
+ 專案 `BypassIf` 是專案的子系 `InstallConditions` ，並且描述不應執行命令的正則條件。 每個 `InstallConditions` 元素可以有零或多個 `BypassIf` 元素。  
   
  `BypassIf` 具有下列屬性。  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
-|`Property`|必要項。 要測試之屬性的名稱。 屬性必須先前所定義的子系`InstallChecks`項目。 如需詳細資訊，請參閱 < [ \<InstallChecks > 項目](../deployment/installchecks-element-bootstrapper.md)。|  
-|`Compare`|必要項。 要執行的比較類型。 下列清單顯示有效的值：<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
-|`Value`|必要項。 要與屬性比較的值。|  
-|`Schedule`|選擇性。 名稱`Schedule`定義何時應該評估此規則的標記。|  
+|`Property`|必要。 要測試之屬性的名稱。 屬性之前必須由元素的子系定義 `InstallChecks` 。 如需詳細資訊，請參閱[ \<InstallChecks> 元素](../deployment/installchecks-element-bootstrapper.md)。|  
+|`Compare`|必要。 要執行的比較類型。 下列清單顯示有效的值：<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
+|`Value`|必要。 要與屬性比較的值。|  
+|`Schedule`|選擇性。 `Schedule`定義何時應該評估此規則的標記名稱。|  
   
 ## <a name="failif"></a>FailIf  
- `FailIf`項目是子系`InstallConditions`項目，並說明正值條件下應該停止安裝。 每個`InstallConditions`項目可以有零或多個`FailIf`項目。  
+ 專案 `FailIf` 是專案的子系 `InstallConditions` ，並描述應該在其下停止安裝的正則條件。 每個 `InstallConditions` 元素可以有零或多個 `FailIf` 元素。  
   
  `FailIf` 具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Property`|必要項。 要測試之屬性的名稱。 屬性必須先前所定義的子系`InstallChecks`項目。 如需詳細資訊，請參閱 < [ \<InstallChecks > 項目](../deployment/installchecks-element-bootstrapper.md)。|  
-|`Compare`|必要項。 要執行的比較類型。 下列清單顯示有效的值：<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
-|`Value`|必要項。 要與屬性比較的值。|  
-|`String`|選擇性。 要在失敗時對使用者顯示的文字。|  
-|`Schedule`|選擇性。 名稱`Schedule`定義何時應該評估此規則的標記。|  
+|`Property`|必要。 要測試之屬性的名稱。 屬性之前必須由元素的子系定義 `InstallChecks` 。 如需詳細資訊，請參閱[ \<InstallChecks> 元素](../deployment/installchecks-element-bootstrapper.md)。|  
+|`Compare`|必要。 要執行的比較類型。 下列清單顯示有效的值：<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
+|`Value`|必要。 要與屬性比較的值。|  
+|`String`|選擇性。 失敗時對使用者顯示的文字。|  
+|`Schedule`|選擇性。 `Schedule`定義何時應該評估此規則的標記名稱。|  
   
 ## <a name="exitcodes"></a>ExitCodes  
- `ExitCodes`項目是子系`Command`項目。 `ExitCodes`元素包含一或多個`ExitCode`項目，判斷安裝應該執行的結束代碼來回應來自套件。 可以有一個選擇性`ExitCode`底下的項目`Command`項目。 `ExitCodes` 沒有任何屬性。  
+ `ExitCodes`元素是元素的子系 `Command` 。 `ExitCodes`元素包含一或多個 `ExitCode` 元素，以決定要在回應封裝中的結束代碼時，所做的安裝動作。 元素底下可以有一個選擇性 `ExitCode` 元素 `Command` 。 `ExitCodes` 沒有任何屬性。  
   
 ## <a name="exitcode"></a>ExitCode  
- `ExitCode`項目是子系`ExitCodes`項目。 `ExitCode`元素會決定安裝應該執行的結束代碼來回應來自套件。 `ExitCode` 包含沒有子項目，並具有下列屬性。  
+ `ExitCode`元素是元素的子系 `ExitCodes` 。 `ExitCode`元素會決定安裝要做什麼，以回應封裝的結束代碼。 `ExitCode` 不包含任何子項目，而且具有下列屬性。  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
-|`Value`|必要項。 結束代碼值，這個`ExitCode`項目會套用。|  
-|`Result`|必要項。 如何安裝應該因應此結束代碼。 下列清單顯示有效的值：<br /><br /> `Success`. 旗標為已成功安裝套件。<br /><br /> `SuccessReboot`. 封裝已成功安裝，加上旗標，指示系統在重新啟動。<br /><br /> `Fail`. 標記為失敗的封裝。<br /><br /> `FailReboot`. 套件標記為失敗，並指示重新啟動系統。|  
-|`String`|選擇性。 要顯示給使用者，以回應此結束程式碼的值。|  
-|`FormatMessageFromSystem`|選擇性。 決定是否要使用的結束程式碼中，對應的系統提供的錯誤訊息，或使用中提供的值`String`。 有效值`true`，這表示若要使用系統提供的錯誤，並`false`，這表示若要使用提供的字串`String`。 預設為 `false`。 如果這個屬性是`false`，但`String`未設定，將使用系統提供的錯誤。|  
+|`Value`|必要。 套用此元素的結束代碼值 `ExitCode` 。|  
+|`Result`|必要。 安裝應該如何回應此結束代碼。 下列清單顯示有效的值：<br /><br /> `Success`. 將套件標記為已成功安裝。<br /><br /> `SuccessReboot`. 將套件標記為已安裝成功，並指示系統重新開機。<br /><br /> `Fail`. 將套件標記為失敗。<br /><br /> `FailReboot`. 將套件標記為失敗，並指示系統重新開機。|  
+|`String`|選擇性。 要對使用者顯示的值，以回應此結束代碼。|  
+|`FormatMessageFromSystem`|選擇性。 決定是否要使用系統提供的錯誤訊息，以對應到結束代碼，或使用中提供的值 `String` 。 有效的值是 `true` ，這表示使用系統提供的錯誤，以及 `false` 表示使用提供的字串 `String` 。 預設為 `false`。 如果這個屬性為 `false` ，但未 `String` 設定，則會使用系統提供的錯誤。|  
   
 ## <a name="example"></a>範例  
- 下列程式碼範例會定義可用來安裝.NET Framework 2.0 命令。  
+ 下列程式碼範例會定義用於安裝 .NET Framework 2.0 的命令。  
   
 ```  
 <Commands Reboot="Immediate">  
@@ -207,5 +207,5 @@ ms.locfileid: "68205340"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)   
+ [產品和套件架構參考](../deployment/product-and-package-schema-reference.md)   
  [\<InstallChecks> 元素](../deployment/installchecks-element-bootstrapper.md)

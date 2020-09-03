@@ -1,5 +1,5 @@
 ---
-title: 偵錯 Web 應用程式：錯誤和疑難排解 |Microsoft Docs
+title: Web 應用程式的偵錯工具：錯誤和疑難排解 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,10 +28,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c452ad86fc5c09048ae1fae56630309e661ac78c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68141915"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>偵錯 Web 應用程式：錯誤和疑難排解
@@ -45,17 +45,17 @@ ms.locfileid: "68141915"
   
 - [錯誤：安全性檢查失敗，因為 IIS 管理服務沒有回應](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
   
-- [錯誤：尚未安裝 ASP.NET](../debugger/error-aspnet-not-installed.md)  
+- [錯誤：未安裝 ASP.NET](../debugger/error-aspnet-not-installed.md)  
   
-- [錯誤：偵錯失敗，原因是未啟用整合的 Windows 驗證](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
+- [錯誤：偵錯工具失敗，因為未啟用整合式 Windows 驗證](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
   
-- [錯誤：未正確設定網頁伺服器](../debugger/error-the-web-server-is-not-configured-correctly.md)  
+- [錯誤：未正確設定 Web 伺服器](../debugger/error-the-web-server-is-not-configured-correctly.md)  
   
-- [錯誤：Web 伺服器已經鎖定，並會封鎖 DEBUG 動詞命令](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
+- [錯誤： Web 服務器已經鎖定，正在封鎖 DEBUG 動詞命令](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
   
-- [錯誤：對 Web 服務進行偵錯時逾時](../debugger/error-timeout-while-debugging-web-services.md)  
+- [錯誤：偵錯 Web 服務時逾時](../debugger/error-timeout-while-debugging-web-services.md)  
   
-- [錯誤：無法在網頁伺服器上開始偵錯](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
+- [錯誤：無法在 Web 服務器上啟動調試](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   

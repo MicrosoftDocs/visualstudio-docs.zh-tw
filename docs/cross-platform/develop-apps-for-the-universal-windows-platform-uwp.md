@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 2ef09f58d22e3cb72af5b745f16b2acf8920900e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587143"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
@@ -40,9 +40,9 @@ ms.locfileid: "75587143"
 
 ::: moniker range="vs-2017"
 
-- [視窗 10](https://support.microsoft.com/help/17777/downloads-for-windows). Visual Studio 2017 只支援在 Windows 10 上開發 UWP。 如需詳細資料，請參閱 Visual Studio 的[平台目標](/visualstudio/productinfo/vs2017-compatibility-vs)和[系統需求](/visualstudio/productinfo/vs2017-system-requirements-vs)。
+- [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows)。 Visual Studio 2017 只支援在 Windows 10 上開發 UWP。 如需詳細資料，請參閱 Visual Studio 的[平台目標](/visualstudio/productinfo/vs2017-compatibility-vs)和[系統需求](/visualstudio/productinfo/vs2017-system-requirements-vs)。
 
-- [視覺工作室](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)。 您也需要選用的通用 Windows 平台開發工作負載。
+- [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)。 您也需要選用的通用 Windows 平台開發工作負載。
 
      ![UWP 工作負載](media/uwp_workload.png)
 
@@ -50,9 +50,9 @@ ms.locfileid: "75587143"
 
 ::: moniker range="vs-2019"
 
-- [視窗 10](https://support.microsoft.com/help/17777/downloads-for-windows). Visual Studio 2019 只支援在 Windows 10 上開發 UWP。 如需詳細資料，請參閱 Visual Studio 的[平台目標](/visualstudio/releases/2019/compatibility/)和[系統需求](/visualstudio/releases/2019/system-requirements/)。
+- [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows)。 Visual Studio 2019 只支援在 Windows 10 上開發 UWP。 如需詳細資料，請參閱 Visual Studio 的[平台目標](/visualstudio/releases/2019/compatibility/)和[系統需求](/visualstudio/releases/2019/system-requirements/)。
 
-- [視覺工作室](https://visualstudio.microsoft.com/downloads)。 您也需要選用的通用 Windows 平台開發工作負載。
+- [Visual Studio](https://visualstudio.microsoft.com/downloads)。 您也需要選用的通用 Windows 平台開發工作負載。
 
      ![UWP 工作負載](media/uwp_workload.png)
 

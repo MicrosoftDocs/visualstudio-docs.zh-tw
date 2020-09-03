@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetName |Microsoft Docs
+title: IDebugDocumentCoNtext2：： GetName |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1186b3b7d821be6861b992dfc6f2b744e8f722e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144942"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得包含這個文件內容的文件可顯示名稱。  
+取得包含此檔內容之檔的可顯示名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,19 +42,19 @@ int GetName( 
   
 #### <a name="parameters"></a>參數  
  `gnType`  
- [in]值，以從[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)列舉，指定要傳回名稱的類型。  
+ 在 [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) 列舉中的值，這個值會指定要傳回的名稱類型。  
   
  `pbstrFileName`  
- [out]傳回檔案的名稱。  
+ 擴展傳回檔案名。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法通常會在呼叫轉送[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)方法，除非文件內容會寫入至儲存文件名稱 （如範例中顯示）。  
+ 這個方法通常會將呼叫轉送至 [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md) 方法，除非檔內容是為了儲存檔案名稱本身 (，如範例顯示) 所示。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CDebugContext`公開的物件[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面。  
+ 下列範例顯示如何針對 `CDebugContext` 公開 [IDebugDocumentCoNtext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 介面的簡單物件，執行這個方法。  
   
 ```cpp#  
 HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)    
@@ -94,5 +94,5 @@ HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
+ [IDebugDocumentCoNtext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

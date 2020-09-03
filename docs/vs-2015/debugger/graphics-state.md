@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 87972fe12cb8be78b89261d0aaaa272d9e2d5a14
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825584"
 ---
 # <a name="graphics-state"></a>圖形狀態
@@ -46,14 +46,14 @@ Visual Studio 圖形診斷中的 [狀態] 視窗可協助您了解在目前事�
   - **顯示釘選的狀態檢視**  
   
 > [!IMPORTANT]
-> 您必須在 [顯示 API 輸入狀態]  或 [顯示邏輯狀態]  檢視中釘選狀態，它才會顯示在 [顯示釘選的狀態檢視]  中。  
+> 您必須在 [顯示 API 輸入狀態]**** 或 [顯示邏輯狀態]**** 檢視中釘選狀態，它才會顯示在 [顯示釘選的狀態檢視]**** 中。  
   
 ### <a name="state-table-format"></a>狀態資料表格式  
  [狀態] 視窗會呈現數個資料行的資訊。  
   
-|「資料行」|描述|  
+|資料行|描述|  
 |------------|-----------------|  
-|名稱|狀態項目的名稱。 如果此項目代表狀態的組合，則可以展開項目予以顯示。<br /><br /> 在 [API 輸入狀態檢視]  和 [邏輯狀態檢視]  狀態中，會縮排名稱，以顯示狀態之間的階層式關聯性。<br /><br /> 在 [釘選的狀態檢視]  狀態中，會在簡單列表顯示完整名稱。|  
+|Name|狀態項目的名稱。 如果此項目代表狀態的組合，則可以展開項目予以顯示。<br /><br /> 在 [API 輸入狀態檢視]**** 和 [邏輯狀態檢視]**** 狀態中，會縮排名稱，以顯示狀態之間的階層式關聯性。<br /><br /> 在 [釘選的狀態檢視]**** 狀態中，會在簡單列表顯示完整名稱。|  
 |值|狀態項目的值。|  
 |類型|狀態項目的類型。|  
   

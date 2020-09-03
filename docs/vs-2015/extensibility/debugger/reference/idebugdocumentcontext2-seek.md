@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::Seek |Microsoft Docs
+title: IDebugDocumentCoNtext2：： Seek |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a17a845275a39954a42839d54af14e37fe0bd06c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144961"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-以指定數目的陳述式或字行中移動的文件內容。  
+依指定的語句或行數移動檔內容。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,13 +42,13 @@ int Seek( 
   
 #### <a name="parameters"></a>參數  
  `nCount`  
- [in]陳述式或移動，根據文件內容的程式行數目。  
+ 在要向前移動的語句或行數（視檔內容而定）。  
   
  `ppDocContext`  
- [out]傳回新[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)物件做為新的位置。  
+ 擴展傳回新的 [IDebugDocumentCoNtext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 物件，其具有新的位置。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

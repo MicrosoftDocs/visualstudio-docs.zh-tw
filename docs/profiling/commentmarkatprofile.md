@@ -13,14 +13,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ee9eb5353109bcf5df6903e7e607a11b8bfd0536
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545609"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
-`CommentMarkAtProfile`方法會在中插入時間戳記值、數位標記和批註字串。*vsp*檔案。 時間戳記值可以用來同步處理外部事件。 針對要插入的標記和註解，包含 CommentMarkAtProfile 函式之執行緒的分析必須是 ON。
+`CommentMarkAtProfile`方法會在中插入時間戳記值、數位標記和批註字串。*.vsp*檔案。 時間戳記值可以用來同步處理外部事件。 針對要插入的標記和註解，包含 CommentMarkAtProfile 函式之執行緒的分析必須是 ON。
 
 ## <a name="syntax"></a>語法
 
@@ -116,4 +116,4 @@ void ExerciseCommentMarkAtProfile(void)
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio Profiler API 參考（原生）](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio Profiler API 參考 (原生) ](../profiling/visual-studio-profiler-api-reference-native.md)
