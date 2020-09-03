@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2500fc8d9e09d95d7972a4b151b01937a5570a08
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544231"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>在 DSL 定義中新增延伸模組
 
-DSL 定義延伸模組可讓您建立特定領域語言（DSL）的延伸套件。 DSL 延伸模組（包含在 Visual Studio 整合擴充功能（VSIX）中）可以使用與 DSL 相同的方式安裝在使用者的電腦上。 這些額外功能可以在執行時間動態啟用及停用。 Dsl 不一定要針對延伸模組進行明確設計，而且延伸模組可以在稍後或由協力廠商設計，而不需要改變擴充的 DSL。
+DSL 定義延伸模組可讓您建立延伸模組套件，以 (DSL) 的特定領域語言。 DSL 延伸模組（包含在 Visual Studio 整合延伸模組 (VSIX) 中）可以用與 DSL 相同的方式安裝在使用者的電腦上。 您可以在執行時間動態啟用和停用額外的功能。 Dsl 不需要針對擴充功能明確設計，而且擴充功能可以在稍後或由協力廠商設計，而不需要改變擴充的 DSL。
 
 DSL 延伸模組可以包含下列功能：
 
@@ -30,7 +30,7 @@ DSL 延伸模組可以包含下列功能：
 
 - 工具箱專案和索引標籤
 
-延伸 DSL 的使用者可以建立並儲存包含額外功能實例的模型。 已安裝適當擴充功能的其他使用者可以讀取此模型。 尚未安裝延伸模組的使用者無法使用其他功能，但可以更新並儲存模型，而不會遺失其他功能。
+擴充 DSL 的使用者可以建立和儲存包含其他功能實例的模型。 已安裝適當副檔名的其他使用者可以讀取模型。 未安裝此擴充功能的使用者無法使用額外的功能，但可以更新和儲存模型，而不會遺失額外的功能。
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

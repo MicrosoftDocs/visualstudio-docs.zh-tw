@@ -1,5 +1,5 @@
 ---
-title: CA1823：避免使用的私用欄位 |Microsoft Docs
+title: CA1823：避免未使用的私用欄位 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 01f2ef59ceb6d10cc33276fdd3e5388f39175f8b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545297"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823:避免包含未使用的私用欄位
@@ -30,19 +30,19 @@ ms.locfileid: "85545297"
 |TypeName|AvoidUnusedPrivateFields|
 |CheckId|CA1823|
 |類別|Microsoft。效能|
-|中斷變更|不中斷|
+|中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 當程式碼中的私用欄位存在，但沒有任何程式碼路徑使用時，就會回報此規則。
+ 當程式碼中的私用欄位存在但未由任何程式碼路徑使用時，就會回報此規則。
 
 ## <a name="rule-description"></a>規則描述
  偵測到似乎不能在組件內存取的私用欄位。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請移除欄位或加入使用它的程式碼。
+ 若要修正此規則的違規情形，請移除欄位或加入使用該欄位的程式碼。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 您可以放心地隱藏此規則的警告。
+ 隱藏此規則的警告是安全的。
 
 ## <a name="related-rules"></a>相關規則
  [CA1812:避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)

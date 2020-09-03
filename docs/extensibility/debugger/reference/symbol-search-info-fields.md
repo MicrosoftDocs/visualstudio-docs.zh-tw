@@ -1,5 +1,5 @@
 ---
-title: SYMBOL_SEARCH_INFO_FIELDS |微軟文件
+title: SYMBOL_SEARCH_INFO_FIELDS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bf8a1ad8a5dabc663ef29f5f2c36fdf0fbd8b786
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713485"
 ---
 # <a name="symbol_search_info_fields"></a>SYMBOL_SEARCH_INFO_FIELDS
-指定要檢索的符號資訊類型。
+指定要取出的符號資訊種類。
 
 ## <a name="syntax"></a>語法
 
@@ -47,23 +47,23 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ## <a name="fields"></a>欄位
  `SSIF_NONE`\
- 指示沒有標誌
+ 指出沒有旗標
 
  `SSIF_VERBOSE_SEARCH_INFO`\
- 傳回用於尋找符號的所有搜尋路徑
+ 傳回用來尋找符號的所有搜尋路徑
 
 ## <a name="remarks"></a>備註
- 這些標誌作為參數傳遞給[GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)方法,以確定返回的資訊量。
+ 這些旗標會以參數的形式傳遞至 [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) 方法，以判斷傳回的資訊量。
 
 > [!NOTE]
-> 目前,僅`SSIF_VERBOSE_SEARCH_INFO`受支持,並且必須將其指定為的`dwFlags``IDebugModule3::GetSymbolInfo`參數。 所有其他值返回錯誤。
+> 目前只 `SSIF_VERBOSE_SEARCH_INFO` 支援，而且必須指定為的 `dwFlags` 參數 `IDebugModule3::GetSymbolInfo` 。 所有其他值都會傳回錯誤。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

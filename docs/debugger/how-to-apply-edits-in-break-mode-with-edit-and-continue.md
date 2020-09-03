@@ -24,16 +24,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: acdd5b85c77b177dfb5f6d8129594967e902337c
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350295"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>如何：以編輯後繼續在中斷模式中套用編輯（Visual Basic）
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>如何：使用編輯後繼續在中斷模式中套用編輯 (Visual Basic) 
 您可以在中斷模式中使用 [編輯後繼續] 編輯程式碼，並繼續進行而不需停止及重新啟動執行。
 
-如需在進行調試時使用 [編輯後繼續] 的限制，請參閱支援的程式[代碼變更（c # 和 Visual Basic）](../debugger/supported-code-changes-csharp.md)。
+如需在偵錯工具中使用 [編輯後繼續] 的限制，請參閱支援的程式 [代碼變更 (c # 和 Visual Basic) ](../debugger/supported-code-changes-csharp.md)。
 
 ### <a name="to-edit-code-in-break-mode"></a>在中斷模式中編輯程式碼
 
@@ -47,11 +47,11 @@ ms.locfileid: "85350295"
 
          -或-
 
-    - 發生例外狀況時，請選擇 [例外狀況**助理**] 上的 [**啟用編輯**]。
+    - 發生例外狀況時，請在 [例外狀況**助理**] 上選擇 [**啟用編輯**]。
 
 2. 進行任何想要和支援的程式碼變更。
 
-     如需詳細資訊，請參閱支援的程式[代碼變更（c # 和 Visual Basic）](../debugger/supported-code-changes-csharp.md)。
+     如需詳細資訊，請參閱 [ (c # 和 Visual Basic) 支援的程式碼變更 ](../debugger/supported-code-changes-csharp.md)。
 
     > [!NOTE]
     > 如果您嘗試進行 [編輯後繼續] 不允許的程式碼變更，您的編輯會被加上紫色波浪線，而且 [工作清單] 中會出現工作。 除非您復原不合法的程式碼變更，否則將無法繼續執行程式碼。
@@ -61,5 +61,5 @@ ms.locfileid: "85350295"
      這時程式碼便會一併執行您套用至專案的編輯。
 
 ## <a name="see-also"></a>另請參閱
-- [支援的程式碼變更（c # 和 Visual Basic）](../debugger/supported-code-changes-csharp.md)
+- [ (c # 和 Visual Basic 支援的程式碼變更) ](../debugger/supported-code-changes-csharp.md)
 - [編輯後繼續 (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

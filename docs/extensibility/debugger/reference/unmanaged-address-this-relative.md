@@ -1,5 +1,5 @@
 ---
-title: UNMANAGED_ADDRESS_THIS_RELATIVE |微軟文件
+title: UNMANAGED_ADDRESS_THIS_RELATIVE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ea493170c7b422129485fcea4248981a2b506001
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713260"
 ---
 # <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
-此結構表示相對於`this`指標(`Me`在可視化基本中)的位址。
+此結構代表相對於 `this` Visual Basic) 中之指標 (的位址 `Me` 。
 
 ## <a name="syntax"></a>語法
 
@@ -45,23 +45,23 @@ public struct UNMANAGED_THIS_RELATIVE {
 
 ## <a name="members"></a>成員
  `dwOffset`\
- 與基本位置的位元組偏移量(例如,類vtable的開頭)。
+ 基底位置的位元組位移 (例如，從類別 vtable 開始) 。
 
  `dwBitOffset`\
- 與基位的偏移(始終為 0,除非引用位欄位)。
+ 從基底位置位移的位數 (一律為0，除非參考位欄位) 。
 
  `dwBitLength`\
- 表示地址的位數(除非引用位欄位,否則始終為 0)。
+ 代表位址 (一律為0的位數目，除非參考位欄位) 。
 
 ## <a name="remarks"></a>備註
- 當`DEBUG_ADDRESS_UNION``ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`結構欄位設置為[(ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)舉中的值)`dwKind`時, 此結構是DEBUG_ADDRESS_UNION結構中的聯合的一部分。
+ 當結構的[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 欄位 `DEBUG_ADDRESS_UNION` 設定為 `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` ([ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉) 中的值時，此結構就是 DEBUG_ADDRESS_UNION 結構中聯集的一部分。
 
 ## <a name="requirements"></a>需求
- 標題: sh.h
+ 標頭： sh. h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

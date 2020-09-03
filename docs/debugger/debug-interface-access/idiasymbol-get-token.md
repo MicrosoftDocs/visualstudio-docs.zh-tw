@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 717c7efe5792a7df53139571273b4796e2e7f030
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461750"
 ---
 # <a name="idiasymbolget_token"></a>IDiaSymbol::get_token
-抓取 managed 函數或變數的元資料標記。
+抓取 managed 函式或變數的中繼資料 token。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_token ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回 managed 函數或變數的元資料標記。
+擴展傳回 managed 函數或變數的中繼資料 token。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。

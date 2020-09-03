@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 36bf189b8137c5a1a632dffd0b5a5d1641a9c24c
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461689"
 ---
 # <a name="idiasymbolget_typeids"></a>IDiaSymbol::get_typeIds
@@ -35,21 +35,21 @@ HRESULT get_typeIds ( 
 #### <a name="parameters"></a>參數
  `cTypeIds`
 
-在用來保存資料的緩衝區大小。
+在保存資料的緩衝區大小。
 
  `pcTypeIds`
 
-脫銷傳回寫入的數目 `typeIds` ，或者，如果 `typeIds` 是 `NULL` ，則為可用的類型識別碼總數。
+擴展傳回寫入的數目 `typeIds` ，如果 `typeIds` 是 `NULL` ，則為可用的類型識別碼總數。
 
  `typeIds[]`
 
-脫銷要填入類型識別碼的陣列。
+擴展要填入類型識別碼的陣列。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
-> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9eba4e5bfef052f7a82c3148f5628eff9413180
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542203"
 ---
 # <a name="draw-shapes-and-paths"></a>繪製圖案與路徑
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 XAML 設計工具中，*圖形*就是您預期的樣子。 例如：矩形、圓形或橢圓形。 *「路徑」* (path) 是圖形的更靈活版本。 您可以執行像是調整形狀，或將圖形合併在一起形成新的圖形等動作。
+在 XAML 設計工具中， *圖形* 正是您預期的。 例如：矩形、圓形或橢圓形。 *「路徑」* (path) 是圖形的更靈活版本。 您可以執行像是調整形狀，或將圖形合併在一起形成新的圖形等動作。
 
  圖形與路徑都會使用向量圖形，因此可以適切地調整為高解析度顯示。 如果您想要深入了解向量圖形，請參閱 [What are Vector Graphics](https://www.youtube.com/watch?v=MoCSwF0n-io) 或 [vector graphics](https://www.webopedia.com/TERM/V/vector_graphics.html)。
 
@@ -37,7 +37,7 @@ ms.locfileid: "85542203"
 
 - [建立裁剪路徑](#Clipping)
 
-## <a name="draw-a-shape"></a><a name="Shape"></a>繪製圖形
+## <a name="draw-a-shape"></a><a name="Shape"></a> 繪製圖形
  您可以在 [資產] **** 面板中找到許多圖形。
 
  ![[資產] 面板上的 [圖形] 分類](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")
@@ -56,7 +56,7 @@ ms.locfileid: "85542203"
 ### <a name="draw-a-straight-line"></a>繪製直線
  使用 [畫筆] **** 工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")，或 [線條] **** 工具 ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf")。
 
- **使用畫筆工具**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")
+ **使用 [畫筆] 工具**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")
 
  在畫板上，按一次可定義起始點，然後再按一次可定義線條的結尾。
 
@@ -89,46 +89,46 @@ ms.locfileid: "85542203"
 ### <a name="remove-a-point-in-a-path"></a>移除路徑中的點
  使用 [選取] **** 工具  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa")，和 [畫筆] **** 工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")。
 
- 使用 [**選取**] 工具 ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") 來選取路徑。 然後，使用 [**畫筆**] 工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") 按一下您要移除的點。
+ 使用 [ **選取** ] 工具  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") 來選取路徑。 然後，使用 [ **畫筆** ] 工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") 按一下您要移除的點。
 
 ### <a name="add-a-point-to-a-path"></a>將點加入至路徑
  使用 [選取] **** 工具  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa")，和 [畫筆] **** 工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")。
 
- 使用 [**選取**] 工具 ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") 來選取路徑。 使用 [**畫筆**] 工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") 按一下路徑上您要加入點的任何位置。
+ 使用 [ **選取** ] 工具  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") 來選取路徑。 使用 [ **畫筆** ] 工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") 按一下路徑上您要加入點的任何位置。
 
-## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a>將圖形轉換成路徑
+## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a> 將圖形轉換成路徑
  若要以修改路徑的相同方式來修改圖形，請將圖形轉換為路徑。
 
- **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：將圖形轉換成路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147) \(英文\)。
+ **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG ">bldadminconsoleinitialconfigicon") [使用路徑：將圖形轉換成路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147) \(英文\)。
 
-## <a name="combine-paths"></a><a name="Combine"></a>合併路徑
+## <a name="combine-paths"></a><a name="Combine"></a> 合併路徑
  您可以將路徑與圖形合併為單一路徑。
 
  ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")
 
-|映像|描述|映像|描述|
+|Image|描述|Image|描述|
 |-|-|-|-|
 |![](../designers/media/b1-1.png "B1_1")|合併前的兩個圖形|![](../designers/media/b1-4.png "B1_4")|Intersect|
 |![](../designers/media/b1-2.png "B1_2")|聯集|![](../designers/media/b1-5.png "B1_5")|排除重疊|
 |![](../designers/media/b1-3.png "B1_3")|除以|![](../designers/media/b1-6.png "B1_6")|減去|
 
- **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：合併路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195) \(英文\)。
+ **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG ">bldadminconsoleinitialconfigicon") [使用路徑：合併路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195) \(英文\)。
 
-## <a name="create-a-compound-path"></a><a name="Compound"></a>建立複合路徑
+## <a name="create-a-compound-path"></a><a name="Compound"></a> 建立複合路徑
  當您建立複合路徑時，這些路徑的任何交集部分都會從結果中減去，而所產生的路徑會採用最底層路徑的視覺屬性。
 
  您可以在建立複合路徑之後隨時打散這些路徑。
 
  ![](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png "2157a8aa-d9a7-4de4-8de5-b10d28f08a84")
 
- **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：建立複合路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q) \(英文\)。
+ **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG ">bldadminconsoleinitialconfigicon") [使用路徑：建立複合路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q) \(英文\)。
 
-## <a name="create-a-clipping-path"></a><a name="Clipping"></a>建立裁剪路徑
+## <a name="create-a-clipping-path"></a><a name="Clipping"></a> 建立裁剪路徑
  裁剪路徑是套用至其他物件的路徑或圖形，隱藏了所遮蔽物件落於裁剪路徑外面的部分。
 
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")
 
- **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：建立裁剪路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232) \(英文\)。
+ **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG ">bldadminconsoleinitialconfigicon") [使用路徑：建立裁剪路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232) \(英文\)。
 
 ## <a name="see-also"></a>另請參閱
  [使用 Blend for Visual Studio 建立 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

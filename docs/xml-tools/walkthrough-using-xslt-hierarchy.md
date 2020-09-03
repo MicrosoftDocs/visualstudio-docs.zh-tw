@@ -6,10 +6,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 940185687544b22325d3f75751eb92e950deb685
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815028"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>逐步解說：使用 XSLT 階層
@@ -20,9 +20,9 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
 
 本主題中的範例將示範參考的樣式表中的偵錯。
 
-## <a name="to-debug-in-a-referenced-style-sheet"></a>在參考的樣式表單中進行 debug
+## <a name="to-debug-in-a-referenced-style-sheet"></a>若要在參考的樣式表單中進行調試
 
-1. 在 Visual Studio 中開啟 XML 文件。 這個範例會使用下列檔：
+1. 在 Visual Studio 中開啟 XML 文件。 此範例使用下列檔：
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -46,7 +46,7 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
     </COLLECTION>
     ```
 
-1. 新增下列*xslincludefile*：
+1. 新增下列 *xslincludefile*：
 
     ```xml
     <?xml version='1.0'?>
@@ -69,7 +69,7 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
     </xsl:stylesheet>
     ```
 
-3. 新增下列*xslinclude .xsl*檔案：
+3. 新增下列 *xslinclude xsl* 檔案：
 
     ```xml
     <?xml version='1.0'?>
@@ -107,7 +107,7 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
 
 5. 開始偵錯。
 
-6. 當偵錯工具在指示處停止時 `<xsl:include href="xslincludefile.xsl" />` ，請按 [**逐步執行**] 按鈕。 在參考的樣式表單中，可以繼續進行調試。 您會看見階層，同時設計工具會顯示正確的路徑。
+6. 當偵錯工具在指示停止時 `<xsl:include href="xslincludefile.xsl" />` ，請按 [ **逐步** 執行] 按鈕。 可以在參考的樣式表單中繼續進行調試。 您會看見階層，同時設計工具會顯示正確的路徑。
 
 ## <a name="see-also"></a>另請參閱
 

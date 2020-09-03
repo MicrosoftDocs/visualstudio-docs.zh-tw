@@ -1,5 +1,5 @@
 ---
-title: .NET 編譯器&quot;平臺&quot;( 羅斯林 ) 可擴充性 |微軟文件
+title: .NET Compiler Platform (&quot; Roslyn &quot;) 擴充性 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 564201b3-1e18-4b88-b615-42c2f57f3fe8
@@ -9,16 +9,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 62ceac6e2be8a0a84d82f6b86b685c7c8b20a182
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712070"
 ---
-# <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET 編譯器&quot;平臺&quot;(羅斯林 ) 可擴充性
-.NET 編譯器平臺 ("Roslyn") 的核心任務是打開 C# 和 Visual Basic 編譯器,並允許工具和開發人員共用編譯器對程式的豐富資訊。 代碼分析工具提高了代碼品質,代碼生成器有助於應用程式構建。 隨著工具變得越來越智慧,他們需要訪問越來越多的只有編譯器才具備的深層代碼知識。 Roslyn 編譯器不是不透明的轉換器(原始碼和物件代碼出),而是提供 API,可用於工具和應用程式中的代碼相關任務。
+# <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET Compiler Platform (&quot; Roslyn &quot;) 擴充性
+.NET Compiler Platform ( "Roslyn" ) 的核心任務是開啟 c # 和 Visual Basic 編譯器，並讓工具和開發人員在豐富的資訊編譯器中共用程式的相關資訊。 程式碼分析工具會改善程式碼品質，而程式碼產生器會協助應用程式結構。 當工具變得更聰明時，他們需要存取更多的深入程式碼知識，而且只有編譯器才擁有。 Roslyn 編譯器會提供 Api，讓您可以在工具和應用程式中用於程式碼相關工作，而不是不透明的轉譯程式 (中的原始程式碼和物件程式碼) 。
 
- 最好的部分是,Roslyn 編譯器、它們的 API、範例和演練,以及基於這些 API 構建的實際工具都是[github.com/dotnet/roslyn](https://github.com/dotnet/Roslyn)完全開源的。 請造訪 OSS 網站瞭解更多資訊,並開始使用羅斯林。 您將找到連結來獲取最新的 C# 和 Visual Basic 功能,這些功能可用於最終使用者,以及利用 Roslyn API 開始作為工具生成器的連結。
+ 最棒的是，Roslyn 編譯器、其 Api、範例和逐步解說，以及建置於這些 Api 之上的實際工具，都是 [github.com/dotnet/roslyn](https://github.com/dotnet/Roslyn)的完全開放原始碼。 若要深入瞭解並開始使用 Roslyn，請前往 OSS 網站。 您可以找到連結來取得可作為使用者使用的最新 c # 和 Visual Basic 功能，以及使用 Roslyn Api 作為工具產生器的入門連結。
 
 ## <a name="see-also"></a>另請參閱
-- [使用羅斯林分析儀入門](../extensibility/getting-started-with-roslyn-analyzers.md)
+- [開始使用 Roslyn 分析器](../extensibility/getting-started-with-roslyn-analyzers.md)

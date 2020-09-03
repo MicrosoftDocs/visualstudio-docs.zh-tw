@@ -15,23 +15,23 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: c53bcac98629d2dfbd1537ff4486b0a0162b4d9d
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461186"
 ---
 # <a name="managedtype"></a>ManagedType
-受控型別（中繼資料所定義的任何符號，或 c # 等語言的記憶體和資源管理功能的原生）都是以符號來識別 `SymTagManagedType` 。
+Managed 類型 (中繼資料所定義的任何符號，或原生至 c # ) 語言的記憶體和資源管理功能，是以符號來識別 `SymTagManagedType` 。
 
 ## <a name="properties"></a>屬性
  下表顯示此符號類型的其他有效屬性。
 
 |屬性|資料類型|描述|
 |--------------|---------------|-----------------|
-|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Managed 符號的名稱。|
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|受控符號的名稱。|
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|符號的索引識別碼。|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|傳回 `SymTagManagedType` （其中一個[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)值）。|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|傳回 `SymTagManagedType` (其中一個) 的 [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md) 值。|
 
 ## <a name="see-also"></a>另請參閱
 - [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

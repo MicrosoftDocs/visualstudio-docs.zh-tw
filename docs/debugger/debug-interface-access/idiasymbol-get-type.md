@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 738d3045c524700e803fe82c8902d4f1b77948b5
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461743"
 ---
 # <a name="idiasymbolget_type"></a>IDiaSymbol::get_type
@@ -33,16 +33,16 @@ HRESULT get_type (
 #### <a name="parameters"></a>參數
 `pRetVal`
 
-脫銷傳回代表這個符號類型的[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。
+擴展傳回代表此符號類型的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件。
 
 ## <a name="return-value"></a>傳回值
-如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
-> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
 ## <a name="remarks"></a>備註
-若要判斷符號的類型，您必須呼叫這個方法，並檢查產生的[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。 請注意，符號可能沒有類型。 例如，結構的名稱沒有類型，但它可能會有子符號（使用[IDiaSymbol：： findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)方法來檢查這些子系）。
+若要判斷符號具有的型別，您必須呼叫這個方法，並檢查產生的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件。 請注意，符號可能沒有類型。 例如，結構名稱沒有類型，但可能有子符號 (使用 [IDiaSymbol：： findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) 方法來檢查這些子系) 。
 
 ## <a name="example"></a>範例
 

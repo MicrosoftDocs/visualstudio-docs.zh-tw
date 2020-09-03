@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_TYPE |微軟文件
+title: REFERENCE_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 29ce6ad17aa32b98fd28914c422a49bd8bcc14b5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713663"
 ---
 # <a name="reference_type"></a>REFERENCE_TYPE
-指定引用類型。
+指定參考型別。
 
 ## <a name="syntax"></a>語法
 
@@ -44,22 +44,22 @@ public enum enum_REFERENCE_TYPE { 
 
 ## <a name="fields"></a>欄位
  `REF_TYPE_WEAK`\
- 指定弱引用。 不能與`REF_TYPE_STRONG`合併。
+ 指定弱式參考。 無法與合併 `REF_TYPE_STRONG` 。
 
  `REF_TYPE_STRONG`\
- 指定強引用。 不能與`REF_TYPE_WEAK`合併。
+ 指定強式參考。 無法與合併 `REF_TYPE_WEAK` 。
 
 ## <a name="remarks"></a>備註
- 用作[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)DEBUG_REFERENCE_INFO`dwRefType`結構的成員。
+ 當做 `dwRefType` [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 結構的成員使用。
 
- 作為參數傳遞給[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)方法。
+ 以參數形式傳遞至 [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) 方法。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -1,6 +1,6 @@
 - name: Visual Studio 中的 Python
   href: index.yml
-- name: 總覽
+- name: 概觀
   items:
     - name: Python 支援的概觀
       href: overview-of-python-tools-for-visual-studio.md

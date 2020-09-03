@@ -1,5 +1,5 @@
 ---
-title: SEEK_START |微軟文件
+title: SEEK_START |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ca1c38027123ca5147a6a7ab1fa6a3f92966409a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713594"
 ---
 # <a name="seek_start"></a>SEEK_START
-指定在拆解流中開始查找的位置。
+指定要在反組解碼資料流程中開始搜尋的位置。
 
 ## <a name="syntax"></a>語法
 
@@ -50,29 +50,29 @@ public enum enum_SEEK_START { 
 
 ## <a name="fields"></a>欄位
  `SEEK_START_BEGIN`\
- 在當前文件的開頭開始查找。
+ 在目前檔的開頭開始搜尋。
 
  `SEEK_START_END`\
- 在當前文件的末尾開始查找。
+ 開始搜尋目前檔的結尾。
 
  `SEEK_START_CURRENT`\
- 開始在當前文件的當前位置查找。
+ 開始搜尋目前檔的目前位置。
 
  `SEEK_START_CODECONTEXT`\
- 開始在當前文件的給定代碼上下文中尋找。
+ 開始搜尋目前檔的指定程式碼內容。
 
  `SEEK_START_CODELOCID`\
- 開始在給定的代碼位置標識符處查找。 代碼位置識別碼是透過調用[GetCurrentlocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)獲得的。
+ 開始搜尋指定的程式碼位置識別碼。 藉由呼叫 [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)來取得程式碼位置識別碼。
 
 ## <a name="remarks"></a>備註
- 作為參數傳遞給[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)方法。
+ 以引數的形式傳遞至 [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) 方法。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

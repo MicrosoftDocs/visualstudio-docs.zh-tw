@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e669d87ad5ecc53c1523db16ab77578c6a703a33
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545258"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901：P/Invoke 宣告應該是可移植的
@@ -30,20 +30,20 @@ ms.locfileid: "85545258"
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
 |類別|Microsoft 可攜性|
-|中斷變更|中斷-如果 P/Invoke 在元件外部是可見的。 不中斷-如果在元件外部看不到 P/Invoke。|
+|中斷變更|中斷-如果 P/Invoke 在元件外部可見。 非中斷-如果在元件外部看不到 P/Invoke。|
 
 ## <a name="cause"></a>原因
- 此規則會評估 P/Invoke 的每個參數和傳回值的大小，並在32位和64位平臺上封送處理至未受管理的程式碼時，驗證其大小是否正確。 此規則最常見的違規是傳遞固定大小的整數，其中需要平臺相依的指標大小變數。
+ 這項規則會評估每個參數的大小，以及 P/Invoke 的傳回值，並確認其大小（在32位和64位平臺上封送處理至非受控碼時）正確無誤。 這項規則最常見的違規是傳遞固定大小的整數，其中需要有平臺相依的指標大小變數。
 
 ## <a name="rule-description"></a>規則描述
- 下列其中一種情況違反此規則：
+ 下列任何一種情況都會違反此規則：
 
-- 當傳回值或參數的類型為時，會將其類型設定為固定大小的整數 `IntPtr` 。
+- 傳回值或參數的類型必須是固定大小的整數 `IntPtr` 。
 
-- 當傳回值或參數的 `IntPtr` 類型應為固定大小的整數時，會將其類型設定為。
+- 傳回值或參數的類型會是輸入為 `IntPtr` 固定大小整數時的型別。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 您可以使用 `IntPtr` 或 `UIntPtr` 來表示控制碼，而不是或，以修正此違規 `Int32` `UInt32` 。
+ 您可以使用 `IntPtr` 或 `UIntPtr` 來表示控制碼，而不是或，以修正這項違規 `Int32` `UInt32` 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  您不應該隱藏這個警告。
@@ -60,7 +60,7 @@ internal class NativeMethods
 }
 ```
 
- 在此範例中， `nIconIndex` 參數會宣告為 `IntPtr` ，在32位平臺上為4個位元組寬，64位平臺上為8個位元組寬。 在接下來的非受控宣告中，您可以看到在 `nIconIndex` 所有平臺上都是4位元組不帶正負號的整數。
+ 在此範例中， `nIconIndex` 參數會宣告為 `IntPtr` ，在32位平臺上為4個位元組寬，在64位平臺上為8個位元組寬。 在接下來的非受控宣告中，您可以看到在 `nIconIndex` 所有平臺上都是4位元組不帶正負號的整數。
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,

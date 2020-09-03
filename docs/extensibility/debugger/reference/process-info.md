@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO |微軟文件
+title: PROCESS_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ef73145fb0a2598dc5e4ee98e8652314e0bc1c89
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713876"
 ---
 # <a name="process_info"></a>PROCESS_INFO
-包含有關進程的資訊。
+包含處理常式的相關資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -57,41 +57,41 @@ public struct PROCESS_INFO { 
 
 ## <a name="members"></a>成員
  `Fields`\
- [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)枚舉中的標誌的組合,用於指定填寫哪些欄位。
+ [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)列舉中的旗標組合，可指定要填寫的欄位。
 
  `bstrFileName`\
- 進程的完整路徑名稱。 等效於使用`GN_FILENAME`參數調用[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)方法。
+ 進程的完整路徑名稱。 相當於使用參數呼叫 [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) 方法 `GN_FILENAME` 。
 
  `bstrBaseName`\
- 進程的檔名和副檔名。 等效於使用`IDebugProcess2::Getname``GN_BASENAME`參數調用 方法。
+ 進程的檔案名和副檔名。 相當於呼叫 `IDebugProcess2::Getname` 具有參數的方法 `GN_BASENAME` 。
 
  `bstrTitle`\
- 進程的標題(如果存在)。 等效於使用`IDebugProcess2::Getname``GN_TITLE`參數調用 方法。
+ 進程的標題（如果有的話）。 相當於呼叫 `IDebugProcess2::Getname` 具有參數的方法 `GN_TITLE` 。
 
  `ProcessId`\
- 標識進程的[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構。 等效於調用[Get物理進程 Id](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)方法。
+ 識別進程的 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 結構。 相當於呼叫 [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) 方法。
 
  `dwSessionId`\
- 此過程正在運行的調試會話的標識符。
+ 此進程正在其中執行之 debug 會話的識別碼。
 
  `bstrAttachedSessionName`\
- 附加的會話名稱。 等效於調用[Get 附加會話名稱](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)方法。
+ 附加的會話名稱。 相當於呼叫 [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) 方法。
 
  `CreationTime`\
- 創建流程的時間。
+ 進程的建立時間。
 
  `Flags`\
- [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)枚舉中標記的組合,用於指定進程的屬性。
+ 指定進程屬性之 [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) 列舉中的旗標組合。
 
 ## <a name="remarks"></a>備註
- 此結構傳遞給填寫它的[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)方法。
+ 此結構會傳遞至其填入的 [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) 方法。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

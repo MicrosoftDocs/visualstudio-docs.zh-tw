@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71105c6c3f93f259bdb6ce8e5f46abe30c5953c2
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462613"
 ---
 # <a name="idiasymbolget_offset"></a>IDiaSymbol::get_offset
-抓取符號位置的位移。 當[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)為或時，請使用 `LocIsRegRel` `LocIsBitField` 。
+抓取符號位置的位移。 當 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) 為或時 `LocIsRegRel` 使用 `LocIsBitField` 。
 
 ## <a name="syntax"></a>語法
 
@@ -33,16 +33,16 @@ HRESULT get_offset ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回符號位置的位移（以位元組為單位）。
+擴展傳回符號位置的位移（以位元組為單位）。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
-> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
 ## <a name="remarks"></a>備註
- 位移是來自先前決定的某個已知點。 例如， `LocIsBitField` 位置類型的位移通常是從包含類別的開頭開始。
+ 位移是來自先前決定的某個已知點。 例如， `LocIsBitField` 位置類型的位移通常是來自包含類別的開頭。
 
 ## <a name="requirements"></a>需求
 

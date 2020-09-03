@@ -1,5 +1,5 @@
 ---
-title: CA1012：抽象類別型不應該有任何構造函式 |Microsoft Docs
+title: CA1012：抽象類別型不應該有函式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2c88144e788fb35a3c330aa28b4e9d8b91ff8003
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545453"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012:抽象類型不應該有建構函式
@@ -28,20 +28,20 @@ ms.locfileid: "85545453"
 |-|-|
 |TypeName|AbstractTypesShouldNotHaveConstructors|
 |CheckId|CA1012|
-|類別|Microsoft. Design|
-|中斷變更|不中斷|
+|類別|Microsoft. 設計|
+|中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 公用型別是抽象的，而且具有公用的函式。
+ 公用型別是抽象的，且具有公用的函式。
 
 ## <a name="rule-description"></a>規則描述
  只有衍生類型 (Derived Type) 可以呼叫抽象類型上的建構函式。 因為公用建構函式會建立類型的執行個體，而且您無法建立抽象類型的執行個體，因此具有公用建構函式的抽象類型設計不正確。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規，請將此方法設為受保護，或不要將類型宣告為抽象。
+ 若要修正此規則的違規情形，請將此函式設為受保護，或不要將類型宣告為抽象。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。 抽象類別型具有公用的函式。
+ 請勿隱藏此規則的警告。 抽象型別具有公用的函式。
 
 ## <a name="example"></a>範例
  下列範例包含違反此規則的抽象類別型。
@@ -50,7 +50,7 @@ ms.locfileid: "85545453"
  [!code-vb[FxCop.Design.AbstractTypeBad#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AbstractTypeBad/vb/FxCop.Design.AbstractTypeBad.vb#1)]
 
 ## <a name="example"></a>範例
- 下列範例會藉由將此函式的存取範圍從變更為，來修正先前的違規 `public` `protected` 。
+ 下列範例會藉由將的函式的存取範圍變更為，以修正先前的違規 `public` `protected` 。
 
  [!code-csharp[FxCop.Design.AbstractTypeGood#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AbstractTypeGood/cs/FxCop.Design.AbstractTypeGood.cs#1)]
  [!code-vb[FxCop.Design.AbstractTypeGood#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AbstractTypeGood/vb/FxCop.Design.AbstractTypeGood.vb#1)]

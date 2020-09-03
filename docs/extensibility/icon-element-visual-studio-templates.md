@@ -1,5 +1,5 @@
 ---
-title: 圖示元素(視覺工作室範本) |微軟文件
+title: " (Visual Studio 範本的圖示元素) |Microsoft Docs"
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ff725e2db0d74e571b8c41d8a8aa80228938fbff
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710522"
 ---
-# <a name="icon-element-visual-studio-templates"></a>圖示元素(視覺化工作室範本)
-指定用作樣本的圖示的影像檔的路徑和檔名,該圖示顯示在新**專案**或「**添加新專案」** 對話框中。
+# <a name="icon-element-visual-studio-templates"></a>Visual Studio 範本 (圖示元素) 
+指定影像檔案的路徑和檔案名，此圖示會顯示在範本的 [ **新增專案** ] 或 [ **加入新專案** ] 對話方塊中。
 
- \<VStemplate \<\<>模板数据>图标>
+ \<VSTemplate> \<TemplateData>
+ \<Icon>
 
 ## <a name="syntax"></a>語法
 
@@ -44,28 +45,28 @@ ms.locfileid: "80710522"
 
 |屬性|描述|
 |---------------|-----------------|
-|`Package`|可選屬性,用於高級使用者方案。<br /><br /> 指定 Visual Studio 套件識別碼的 GUID。|
-|`ID`|可選屬性,用於高級使用者方案。<br /><br /> 指定 Visual Studio 資源識別碼。|
+|`Package`|選擇性的屬性，適用于先進的使用者案例。<br /><br /> 指定 Visual Studio 套件識別碼的 GUID。|
+|`ID`|選擇性的屬性，適用于先進的使用者案例。<br /><br /> 指定 Visual Studio 資源識別碼。|
 
 ### <a name="child-elements"></a>子元素
  無。
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  除非使用 `Package` 和 `ID` 屬性，否則需要文字值。
 
- 文字提供將顯示在 **「新專案」** 對話方塊中的樣本圖示的路徑和檔名。
+ 文字提供將出現在 [ **新增專案** ] 對話方塊中之範本圖示的路徑和檔案名。
 
 ## <a name="remarks"></a>備註
  `Icon` 是 `TemplateData` 的必要子項目。
 
 ## <a name="example"></a>範例
- 下面的範例顯示了[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式的專案範本的元數據。
+ 下列範例會顯示應用程式專案範本的中繼資料 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -92,5 +93,5 @@ ms.locfileid: "80710522"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
 - [建立專案與項目範本](../ide/creating-project-and-item-templates.md)

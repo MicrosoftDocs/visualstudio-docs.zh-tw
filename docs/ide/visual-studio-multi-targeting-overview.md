@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b7c3c2b6b81f8f7793bda35c6b220e43caee9b5f
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770447"
 ---
 # <a name="framework-targeting-overview"></a>Framework 目標概觀
 
 在 Visual Studio 中，您可以指定要讓專案設為目標的 .NET 版本。 Framework 目標有助於確保應用程式只使用指定 Framework 版本中可供使用的功能。 若要讓 .NET Framework 應用程式在另一部電腦上執行，該應用程式的目標 Framework 版本必須與該電腦上所安裝的 Framework 版本相容。
 
-Visual Studio 解決方案可以包含以不同 .NET 版本為目標的專案。  不過，請注意，您只能使用單一組建的參考條件，或以遞迴方式為每個版本建立不同的二進位檔，來建立單一版本的 .NET。  如需目標 Framework 的詳細資訊，請參閱[目標 Framework](/dotnet/standard/frameworks)。
+Visual Studio 解決方案可以包含以不同 .NET 版本為目標的專案。  不過，請注意，您只能使用單一組建的參考條件，或針對每個版本以遞迴方式建立不同的二進位檔，以建立單一版本的 .NET。  如需目標 Framework 的詳細資訊，請參閱[目標 Framework](/dotnet/standard/frameworks)。
 
 > [!TIP]
 > 您也可以針對不同平台的應用程式。 如需詳細資訊，請參閱[多目標](../msbuild/msbuild-multitargeting-overview.md)。
@@ -83,7 +83,7 @@ Framework 目標包括下列功能：
 
 1. 在 [方案總管]**** 中，開啟您所要變更專案的右鍵功能表，然後選擇 [屬性]****。
 
-1. 在 [**屬性**] 視窗的左欄中，選擇 [**應用程式**] 索引標籤。
+1. 在 [ **屬性** ] 視窗的左欄中，選擇 [ **應用程式** ] 索引標籤。
 
    ![[專案屬性應用程式] 索引標籤](../ide/media/vs_slnexplorer_properties_applicationtab.png)
 
@@ -110,7 +110,7 @@ Framework 目標包括下列功能：
 
 若要設定目標 .NET 版本，您必須先安裝適當的組件參考。 您可以在 [.NET 下載](https://www.microsoft.com/net/download/windows) \(英文\) 頁面上下載不同 .NET 版本的開發人員套件。
 
-針對 .NET Framework 專案，[新增參考]**** 對話方塊會停用與目標 .NET Framework 版本無關的系統組件，如此一來就不會不慎將那些系統組件新增至專案。 （系統元件是包含在 .NET Framework 版本中的 *.dll*檔案）。屬於高於目標版本之 framework 版本的參考將無法解析，而且不能加入相依于這類參考的控制項。 如果您想要啟用這類參考，請將專案的 .NET Framework 目標重設為包含參考的目標。
+針對 .NET Framework 專案，[新增參考]**** 對話方塊會停用與目標 .NET Framework 版本無關的系統組件，如此一來就不會不慎將那些系統組件新增至專案。  (系統元件是包含在 .NET Framework 版本中的 *.dll* 檔。不會解析屬於高於目標版本之 Framework 版本的 ) 參考，也無法新增相依于這類參考的控制項。 如果您想要啟用這類參考，請將專案的 .NET Framework 目標重設為包含參考的目標。
 
 如需組件參考的詳細資訊，請參閱[在設計階段時解析組件](../msbuild/resolving-assemblies-at-design-time.md)。
 
@@ -122,4 +122,4 @@ Framework 目標包括下列功能：
 
 - [目標架構](/dotnet/standard/frameworks)
 - [多目標 (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
-- [如何：修改目標 framework 和平臺工具組（c + +）](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [如何：修改目標 framework 和平臺工具組 (c + +) ](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

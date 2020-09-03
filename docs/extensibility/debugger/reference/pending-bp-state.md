@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE |微軟文件
+title: PENDING_BP_STATE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 69c8dbe1022ee0b1b2ff034d2b83b947c8fb3df6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714001"
 ---
 # <a name="pending_bp_state"></a>PENDING_BP_STATE
-指定掛起斷點的狀態(尚未綁定的斷點)。
+指定暫止中斷點的狀態 (尚未系結) 的中斷點。
 
 ## <a name="syntax"></a>語法
 
@@ -48,26 +48,26 @@ public enum enum_PENDING_BP_STATE { 
 
 ## <a name="fields"></a>欄位
  `PBPS_NONE`\
- 占位符為零。 此值永遠不會返回。
+ 零的預留位置。 永遠不會傳回這個值。
 
  `PBPS_DELETED`\
- 指示掛起的斷點已被刪除。
+ 指出已刪除暫止中斷點。
 
  `PBPS_DISABLED`\
- 指示掛起的斷點已禁用。
+ 指出暫止的中斷點已停用。
 
  `PBPS_ENABLED`\
- 指示已啟用掛起的斷點。
+ 表示已啟用暫止中斷點。
 
 ## <a name="remarks"></a>備註
- 用作[PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)結構`state`的成員。
+ 使用做為 `state` [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) 結構的成員。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

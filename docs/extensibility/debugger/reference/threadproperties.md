@@ -1,5 +1,5 @@
 ---
-title: 線程屬性 |微軟文件
+title: THREADPROPERTIES |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bd0ed4e33b1f8e0e905f3c88493c9f513c177fbc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713429"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
-描述線程的屬性。
+描述執行緒的屬性。
 
 ## <a name="syntax"></a>語法
 
@@ -53,35 +53,35 @@ public struct THREADPROPERTIES { 
 
 ## <a name="members"></a>成員
  `dwFields`\
- [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)枚舉中的標誌的組合,描述此結構中的哪些欄位有效。
+ [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)列舉中的旗標組合，描述此結構中的哪些欄位有效。
 
  `dwThreadId`\
- 線程識別碼。
+ 執行緒識別碼。
 
  `dwSuspendCount`\
- 線程掛起計數。
+ 執行緒暫停計數。
 
  `dwThreadState`\
- [來自 THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)枚舉的值,指示操作線程的狀態。
+ [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)列舉中的值，指出作業執行緒的狀態。
 
  `bstrPriority`\
- 指定線程優先權的字串;字串例如,"高於正常"、"正常"或"時間關鍵"。
+ 指定執行緒優先順序的字串;例如，「上述標準」、「一般」或「時間緊迫」。
 
  `bstName`\
- 線程名稱。
+ 執行緒名稱。
 
  `bstrLocation`\
- 線程位置(通常是最頂層堆疊幀)通常表示為當前停止執行的方法的名稱。
+ 執行緒位置 (通常是最上層堆疊框架) ，通常表示為執行目前暫停之方法的名稱。
 
 ## <a name="remarks"></a>備註
- 此結構由對[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)方法的調用填充。 傳回的資訊通常用於填充 **「線程」** 視窗。
+ [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)方法的呼叫會填入此結構。 傳回的資訊通常用於填入 [ **執行緒** ] 視窗。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

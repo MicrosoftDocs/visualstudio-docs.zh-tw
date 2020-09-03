@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b7526da10262003c9d086fdf1d74d065aac2d406
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664135"
 ---
 # <a name="shader-designer-nodes"></a>著色器設計工具節點
@@ -48,7 +48,7 @@ ms.locfileid: "72664135"
 |-----------|-----------------|
 |[常數節點](../designers/constant-nodes.md)|描述您可用來代表著色器計算之常值和插補頂點狀態資訊的節點。 因為插入頂點狀態 (因此，每個像素都會不同)，所以每個像素著色器執行個體都會收到不同版本的常數。|
 |[參數節點](../designers/parameter-nodes.md)|所描述的節點可以用來代表著色器計算中的觀景窗位置、材質屬性、光源參數、時間以及其他應用程式狀態資訊。|
-|[紋理節點](../designers/texture-nodes.md)|所描述的節點可用來對各種紋理類型和幾何形狀取樣，並以一般方式產生或轉換紋理座標。|
+|[材質節點](../designers/texture-nodes.md)|所描述的節點可用來對各種紋理類型和幾何形狀取樣，並以一般方式產生或轉換紋理座標。|
 |[數學節點](../designers/math-nodes.md)|所描述的節點可用來執行代數、邏輯、三角，以及直接對應至 HLSL 指令的其他數學運算。|
 |[公用程式節點](../designers/utility-nodes.md)|所描述的節點可用來執行常見光源計算，以及未直接對應至 HLSL 指令的其他常見運算。|
 |[篩選節點](../designers/filter-nodes.md)|所描述的節點可用來執行紋理篩選和色彩篩選。|

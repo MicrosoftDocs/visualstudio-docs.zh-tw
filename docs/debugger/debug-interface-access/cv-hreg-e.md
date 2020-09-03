@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ee15d5b4d6a0959397d8d62753455c7a26f01f78
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462104"
 ---
 # <a name="cv_hreg_e"></a>CV_HREG_e
-指定目標暫存器。
+指定目標注冊。
 
 > [!NOTE]
-> 因為 `CV_HREG_e` 列舉太大而無法在這裡完整複製，所以會提供縮寫的版本做為參考。 遺漏的專案會以斜體來示。 完整的列舉可在 cvconst 標頭檔中取得。
+> 因為 `CV_HREG_e` 列舉太大而無法在這裡完整複製，所以會以參考的形式提供縮寫的版本。 遺漏的專案會以斜體的形式。 完整列舉可在 cvconst .h 標頭檔中取得。
 
 ## <a name="syntax"></a>語法
 
@@ -409,19 +409,19 @@ enum CV_HREG_e {
 ```
 
 ## <a name="elements"></a>元素
-CV_REG_ * Intel 80x86 和 ix86 處理器所使用的註冊，以及 p 程式碼。
+CV_REG_ * Intel 80x86 與 ix86 處理器所使用的註冊，以及 p 編碼。
 
-CV_R68_ 的68K 處理器所使用的註冊。
+CV_R68_ * 68K 處理器所使用的註冊。
 
-CV_M4_ 由 MIPS 4000 系列處理器所使用的註冊。
+CV_M4_ * MIPS 4000 系列處理器所使用的註冊。
 
-CV_ALPHA_ * 數位設備公司 Alpha AXP 系列處理器所使用的註冊。
+CV_ALPHA_ * 數位設備 Corporation Alpha AXP 系列處理器所使用的註冊。
 
 CV_PPC_ * Motorola/IBM PowerPC 處理器所使用的註冊。
 
-CV_SH3_ * 以及 \* HITACHI SH3 和 HITACHI SH 系列處理器所使用的 CV_SH_ 暫存器。
+CV_SH3_ * 和 CV_SH_ \* HITACHI SH3 和 HITACHI SH 系列處理器所使用的暫存器。
 
-CV_ARM_ * 先進 RISC 機器（ARM）處理器所使用的註冊。
+CV_ARM_ * Advanced RISC 機器 (ARM) 處理器所使用的註冊。
 
 CV_IA64_ * Intel IA64 系列處理器所使用的註冊。
 
@@ -432,9 +432,9 @@ CV_AM33_ * Matsushita/Panasonic AM33 和相關處理器所使用的註冊。
 CV_M32R_ * Mitsubishi M32R 處理器所使用的註冊。
 
 ## <a name="remarks"></a>備註
-每個處理器類型都會使用它自己唯一的一組暫存器。
+每個處理器類型都會使用自己的唯一一組暫存器。
 
-此列舉中的值會傳遞給下列方法：
+此列舉中的值會傳遞至下列方法：
 
 - [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
 

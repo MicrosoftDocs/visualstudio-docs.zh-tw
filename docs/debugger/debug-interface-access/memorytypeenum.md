@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2cd255ab59c9d46676ba46baddd9cee7e3ef4cc2
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461179"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
@@ -34,16 +34,16 @@ enum MemoryTypeEnum {
 ```
 
 #### <a name="parameters"></a>參數
-`MemTypeCode`只存取程式碼記憶體。
+`MemTypeCode` 只存取程式碼記憶體。
 
-`MemTypeData`存取資料或堆疊記憶體。
+`MemTypeData` 存取資料或堆疊記憶體。
 
-`MemTypeStack`只存取堆疊記憶體。
+`MemTypeStack` 只存取 stack 記憶體。
 
-`MemTypeAny`存取任何類型的記憶體。
+`MemTypeAny` 存取任何種類的記憶體。
 
 ## <a name="remarks"></a>備註
-此列舉中的值會傳遞至[IDiaStackWalkHelper：： readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)方法，以限制存取不同類型的記憶體。
+此列舉中的值會傳遞至 [IDiaStackWalkHelper：： readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) 方法，以限制存取不同類型的記憶體。
 
 ## <a name="requirements"></a>需求
 標頭： cvconst。h

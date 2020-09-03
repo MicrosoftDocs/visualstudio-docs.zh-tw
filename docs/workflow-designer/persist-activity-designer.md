@@ -11,35 +11,35 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 75236d7955cba6b8c62b9a4504f02c66cebe4062
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114764"
 ---
 # <a name="persist-activity-designer"></a>Persist 活動設計工具
 
-[**保存**] 活動設計工具會用來建立和設定 <xref:System.Activities.Statements.Persist> 活動。
+[ **保存** ] 活動設計工具是用來建立及設定 <xref:System.Activities.Statements.Persist> 活動。
 
 ## <a name="the-persist-activity"></a>Persist 活動
 
-只要情況允許，<xref:System.Activities.Statements.Persist> 活動會將工作流程儲存至磁碟。 <xref:System.Activities.Statements.Persist> 活動無法在非持續性的區域中執行，例如在 <xref:System.Activities.Statements.TransactionScope> 活動內。 如果您在非持續性範圍中使用 <xref:System.Activities.Statements.Persist> 活動，則會在執行時間擲回例外狀況。
+只要情況允許，<xref:System.Activities.Statements.Persist> 活動會將工作流程儲存至磁碟。 <xref:System.Activities.Statements.Persist> 活動無法在非持續性的區域中執行，例如在 <xref:System.Activities.Statements.TransactionScope> 活動內。 如果您 <xref:System.Activities.Statements.Persist> 在非持續性範圍中使用活動，則會在執行時間擲回例外狀況。
 
 ### <a name="using-the-persist-activity-designer"></a>使用 Persist 活動設計工具
 
-[**保存**] 活動設計**工具**位於 [工具箱] 的 [**運行**時間] 類別中，若要存取，請按一下 [**工具箱**] 索引標籤（也可以從 [**視圖**] 功能表選取 [**工具箱**]，或按 CTRL + ALT + X）。
+[**保存**] 活動設計**工具**位於 [工具箱] 的 [**運行**時間] 類別中，若要存取，請按一下 [**工具箱**] 索引標籤 (也可以從 [ **View** ] 功能表選取 [**工具箱**]，或按 CTRL + ALT + X。 ) 
 
-[**保存**] 活動設計工具可以從 [**工具箱**] 拖曳出來，放到工作流程設計工具介面上通常用來放置活動的任一處，例如在 <xref:System.Activities.Statements.Sequence>內部。 這會建立一個 <xref:System.Activities.Statements.Persist> 活動，其中預設的**DisplayName**為 [保存]。 您可以在 [**保存**] 活動設計工具的標頭中，或在屬性方格的 [ **DisplayName** ] 方塊中編輯 <xref:System.Activities.Activity.DisplayName%2A>。
+[ **保存** ] 活動設計工具可以從 [ **工具箱** ] 拖曳出來，放到工作流程設計工具介面上通常用來放置活動的任一處，例如內部 <xref:System.Activities.Statements.Sequence> 。 這會建立一個 <xref:System.Activities.Statements.Persist> 活動，其預設的 **DisplayName** 為 [保存]。 <xref:System.Activities.Activity.DisplayName%2A>可以在 [**保存**] 活動設計工具的標頭中編輯，或是在屬性方格的 [ **DisplayName** ] 方塊中編輯。
 
 ### <a name="the-persist-properties"></a>Persist 屬性
 
 下表顯示 <xref:System.Activities.Statements.Persist> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中進行編輯，其中有一些可以在工作流程設計工具介面上編輯。
 
-|內容名稱|必要|使用|
+|屬性名稱|必要|使用方式|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Persist> 活動的易記名稱。 預設為 Persist。 雖然顯示名稱並非絕對必要，但建議您盡量使用顯示名稱。|
+|<xref:System.Activities.Activity.DisplayName%2A>|否|<xref:System.Activities.Statements.Persist> 活動的易記名稱。 預設為 Persist。 雖然顯示名稱並非絕對必要，但建議您盡量使用顯示名稱。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [執行階段](../workflow-designer/runtime-activity-designers.md)
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FLAGS |微軟文件
+title: PROVIDER_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d2333b62f21aa7b2b2bc70bddb50cbb3983cedf5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713811"
 ---
 # <a name="provider_flags"></a>PROVIDER_FLAGS
-指定從程式提供程式獲取的所需屬性。
+指定要從程式提供者取得的所需屬性。
 
 ## <a name="syntax"></a>語法
 
@@ -54,28 +54,28 @@ public enum enum_PROVIDER_FLAGS {
 
 ## <a name="fields"></a>欄位
  `PFLAG_NONE`\
- 未指定標誌。
+ 未指定旗標。
 
  `PFLAG_REMOTE_PORT`\
- 呼叫方希望位於與[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]不同的 電腦上的程式清單。
+ 呼叫端需要不同電腦上的程式清單，而不是 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。
 
  `PFLAG_DEBUGGEE`\
- 此過程目前正在由的[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]此實例調試。
+ 此進程目前正在由此的實例進行調試 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。
 
  `PFLAG_ATTACH_TODEBUGGEE`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]附加到正在調試的程式,但沒有啟動它。
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 附加至正在進行調試但未啟動的程式。
 
  `PFLAG_REASON_WATCH`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]正在監視事件。
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 正在監看事件。
 
  `PFLAG_GET_PROGRAM_NODES`\
- 調用方需要`ProgramNodes`[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)結構的欄位。
+ 呼叫端想要 `ProgramNodes` [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) 結構的欄位。
 
  `PFLAG_GET_IS_DEBUGGER_PRESENT`\
- 調用方需要`fIsTheDebuggerPresent`結構`PROVIDER_PROCESS_DATA`的 欄位。
+ 呼叫端需要 `fIsTheDebuggerPresent` 結構的欄位 `PROVIDER_PROCESS_DATA` 。
 
 ## <a name="remarks"></a>備註
- 這些標誌傳遞給以下方法:
+ 這些旗標會傳遞至下列方法：
 
 - [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
 
@@ -83,14 +83,14 @@ public enum enum_PROVIDER_FLAGS {
 
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
 
-  這些值可以與一點一點地`OR`結合。
+  這些值可以與位結合 `OR` 。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_PROCESS_DATA |微軟文件
+title: PROVIDER_PROCESS_DATA |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bdaf15d09af3199d026155cf7667f063f5bbe858
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713784"
 ---
 # <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
-此結構提供有關在計算機上運行的進程的資訊。
+此結構提供在電腦上執行之處理常式的相關資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -45,23 +45,23 @@ public struct PROVIDER_PROCESS_DATA {
 
 ## <a name="members"></a>成員
  `Fields`\
- [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)枚舉中的標誌的組合,指示填充哪些欄位。
+ [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)列舉中的旗標組合，表示填入的欄位。
 
  `ProgramNodes`\
- 包含程式節點陣列[PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)結構。
+ 包含程式節點陣列的 [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) 結構。
 
  `fIsDebuggerPresent`\
- 如果除錯器`TRUE`正在執行[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)], 則非零`FALSE`( ), 如果它不是, 則為零 ( )。
+ 非零 (`TRUE`) 如果 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 偵錯工具正在執行，則零 (`FALSE`) 。
 
 ## <a name="remarks"></a>備註
- 此結構傳遞給填寫該結構的[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)方法。
+ 此結構會傳遞至其填入的 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 方法。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)

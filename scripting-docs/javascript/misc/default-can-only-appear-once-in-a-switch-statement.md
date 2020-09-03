@@ -15,18 +15,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0fdce6a86665b942098e4542dc237bc1ef22ad8a
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815509"
 ---
 # <a name="default-can-only-appear-once-in-a-switch-statement"></a>'default' 只可以出現在 'switch' 陳述式中一次
-您嘗試在 switch 語句中多次使用**default**語句。 預設案例一律為 switch 語句中的最後一個 case 語句（這是迴圈式案例）。  
+您嘗試在 switch 語句中多次使用 **default** 語句。 在 switch 語句中，預設的 case 一律是最後一個 case 語句 (它是) 。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 從您的語句中移除任何額外的**預設**case 語句 `switch` （在 switch 語句中最多使用一個預設 case 語句）。  
+- 從您的語句移除任何額外的 **預設** case 語句 `switch` ， (在 switch 語句中最多使用一個預設的 case 語句) 。  
   
 ## <a name="see-also"></a>另請參閱  
  [switch 語句](../../javascript/reference/switch-statement-javascript.md)   

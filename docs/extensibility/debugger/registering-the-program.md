@@ -1,5 +1,5 @@
 ---
-title: 註冊程式 |微軟文件
+title: 註冊程式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,33 +12,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b68fa67f784d155288482ad724b632ed5ba5fa41
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713163"
 ---
 # <a name="register-the-program"></a>註冊程式
-調試引擎獲取了由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面表示的埠後,使程序進行調試的下一步是將其註冊到埠。 註冊后,程式可通過以下方式之一進行調試:
+在偵測引擎取得埠（以 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 介面表示）之後，啟用要進行偵錯工具的下一個步驟是向埠註冊程式。 註冊之後，程式便可透過下列其中一種方式進行偵錯工具：
 
-- 附加過程,它允許調試器獲得正在運行的應用程式的完整調試控制。
+- 附加的處理常式，可讓偵錯工具對執行中的應用程式進行完整的偵錯工具控制。
 
-- 即時 (JIT) 除錯,允許對獨立於除錯器運行的程式進行事後調試。 當運行時體系結構捕獲故障時,在操作系統或運行時環境釋放故障程式的記憶體和資源之前通知調試器。
+- 即時 (JIT) 的偵錯工具，可讓您在偵錯工具以外執行的程式進行事後的偵錯工具。 當執行時間架構攔截到錯誤時，偵錯工具會在作業系統或執行時間環境釋放失敗程式的記憶體和資源之前收到通知。
 
-## <a name="registering-procedure"></a>註冊過程
+## <a name="registering-procedure"></a>正在註冊程式
 
 ### <a name="to-register-your-program"></a>註冊您的程式
 
-1. 調用埠實現的[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)方法。
+1. 呼叫由埠所執行的 [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) 方法。
 
-     `IDebugPortNotify2::AddProgramNode`需要指向[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)介面的指標。
+     `IDebugPortNotify2::AddProgramNode` 需要 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) 介面的指標。
 
-     通常,當作業系統或運行時環境載入程式時,它會創建程式節點。 如果要求調試引擎 (DE) 載入程式,DE 將建立並註冊程式節點。
+     通常，當作業系統或執行時間環境載入程式時，它會建立程式節點。 如果 debug engine (DE) 被要求載入程式，則取消會建立並註冊程式節點。
 
-     下面的範例顯示調試引擎啟動程式並將其註冊到埠。
+     下列範例顯示啟動程式並使用埠註冊程式的 debug engine。
 
     > [!NOTE]
-    > 此代碼示例不是啟動和恢復進程的唯一方法;因此,此過程不是啟動和恢復進程的唯一方法。此代碼主要是將程式註冊到埠的範例。
+    > 這個程式碼範例不是啟動和繼續處理常式的唯一方法;這段程式碼主要是使用埠註冊程式的範例。
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.
@@ -105,5 +105,5 @@ ms.locfileid: "80713163"
     ```
 
 ## <a name="see-also"></a>另請參閱
-- [取得連接埠](../../extensibility/debugger/getting-a-port.md)
-- [開啟對程式進行除錯](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [取得埠](../../extensibility/debugger/getting-a-port.md)
+- [啟用要進行調試的程式](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
