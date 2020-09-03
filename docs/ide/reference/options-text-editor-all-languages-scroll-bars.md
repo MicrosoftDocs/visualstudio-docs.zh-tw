@@ -33,10 +33,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75588794"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>選項、文字編輯器、所有語言、捲軸
@@ -53,7 +53,7 @@ ms.locfileid: "75588794"
 
 選取時，會顯示垂直捲軸；您可以上下捲動來檢視位於編輯器檢視區域外的項目。 如果未顯示垂直捲軸，您可以使用 Page Up、Page Down 鍵和方向鍵來捲動。
 
-## <a name="display"></a>顯示器
+## <a name="display"></a>顯示
 
 ### <a name="show-annotations-over-vertical-scroll-bar"></a>在垂直捲軸上顯示註釋
 

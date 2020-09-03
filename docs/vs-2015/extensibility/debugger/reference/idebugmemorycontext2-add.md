@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Add |Microsoft Docs
+title: IDebugMemoryCoNtext2：： Add |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,10 +14,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2b1b4b236b438d5ff94120c00952d5cd3adfd590
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164089"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
@@ -43,18 +43,18 @@ int Add(
   
 #### <a name="parameters"></a>參數  
  `dwCount`  
- [in]要加入至目前內容的值。  
+ 在要加入至目前內容的值。  
   
  `ppMemCxt`  
- [out]傳回新[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件。  
+ 擴展傳回新的 [IDebugMemoryCoNtext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 記憶體內容會是地址，以便將值加入位址會產生新的位址，需要新的內容介面。  
+ 記憶體內容是位址，因此將值新增至位址會產生新的位址，需要新的內容介面。  
   
- 這個方法必須永遠會產生新的內容，即使產生的位址不在此內容相關聯的記憶體空間。 唯一的例外是，如果沒有記憶體可配置給新的內容，或如果`ppMemCxt`為 null 的值 （這是錯誤）。  
+ 即使產生的位址超出與此內容相關聯的記憶體空間，這個方法也一定會產生新的內容。 唯一的例外狀況是，如果無法配置新內容的記憶體，或 `ppMemCxt` 為 null 值 (這是) 錯誤。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

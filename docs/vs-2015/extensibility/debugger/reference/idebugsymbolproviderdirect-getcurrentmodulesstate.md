@@ -1,56 +1,56 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesState |Microsoft Docs
-ms.date: 11/04/2016
+title: IDebugSymbolProviderDirect：： GetCurrentModulesState |Microsoft Docs
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 helpviewer_keywords:
 - GetCurrentModulesState
 - IDebugSymbolProviderDirect::GetCurrentModulesState
 ms.assetid: a0c85318-5686-4eed-b213-21f2b9e681e6
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 49e623c22bea7cedb2918cd0467bb7540f8fb96f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155130"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
-擷取符號提供者為成員的符號群組的相關資訊。
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>語法
-
-```cpp
-HRESULT GetCurrentModulesState(
-    DWORD*          pState,
-    unsigned long * count
-);
-```
-
-```csharp
-int GetCurrentModulesState(
-    out uint pState,
-    out uint count
-);
-```
-
-#### <a name="parameters"></a>參數
- `pState`
-
- [out]符號提供者群組的狀態。
-
- `count`
-
- [out]在群組中的模組數目。
-
-## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
-
-## <a name="remarks"></a>備註
- 每當模組是新增或移除的符號群組時，狀態會變更。 因此，這個方法可用來偵測如果已修改的符號群組。
-
-## <a name="see-also"></a>另請參閱
-- [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)
+抓取符號提供者為其成員之符號群組的相關資訊。  
+  
+## <a name="syntax"></a>語法  
+  
+```cpp#  
+HRESULT GetCurrentModulesState(  
+    DWORD*          pState,  
+    unsigned long * count  
+);  
+```  
+  
+```csharp  
+int GetCurrentModulesState(  
+    out uint pState,  
+    out uint count  
+);  
+```  
+  
+#### <a name="parameters"></a>參數  
+ `pState`  
+ 擴展符號提供者群組的狀態。  
+  
+ `count`  
+ 擴展群組中的模組數目。  
+  
+## <a name="return-value"></a>傳回值  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
+  
+## <a name="remarks"></a>備註  
+ 每當在符號群組中新增或移除模組時，就會變更狀態。 因此，您可以使用這個方法來偵測符號群組是否已修改。  
+  
+## <a name="see-also"></a>另請參閱  
+ [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

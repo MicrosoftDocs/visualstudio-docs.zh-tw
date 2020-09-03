@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d51a6557b2204d7b6ff3d8865c82de091f5a59d0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545895"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>如何：以程式設計方式保護工作表
@@ -36,17 +36,17 @@ ms.locfileid: "85545895"
 
 ### <a name="to-protect-a-worksheet-in-the-designer"></a>若要用設計工具保護工作表
 
-1. 在 [**審查**] 索引標籤的 [**變更**] 群組中，按一下 [**保護工作表**]。
+1. 在 [**審核**] 索引標籤的 [**變更**] 群組中，按一下 [**保護工作表**]。
 
-    [**保護工作表**] 對話方塊隨即出現。 您可以設定密碼，並且選擇性地指定允許使用者對工作表執行某些動作 (例如格式化儲存格或插入列)。
+    [ **保護工作表** ] 對話方塊隨即出現。 您可以設定密碼，並且選擇性地指定允許使用者對工作表執行某些動作 (例如格式化儲存格或插入列)。
 
    您也可以允許使用者在受保護的工作表中編輯特定的範圍。
 
 ### <a name="to-allow-editing-in-specific-ranges"></a>若要允許在特定範圍中進行編輯
 
-1. 在 [**審查**] 索引標籤的 [**變更**] 群組中，按一下 [**允許使用者編輯範圍**]。
+1. 在 [**審核**] 索引標籤的 [**變更**] 群組中，按一下 [**允許使用者編輯範圍**]。
 
-     [**允許使用者編輯範圍**] 對話方塊隨即出現。 您可以指定需要使用密碼才能解除鎖定的範圍，以及不需要密碼就可以編輯範圍的使用者。
+     [ **允許使用者編輯範圍** ] 對話方塊隨即出現。 您可以指定需要使用密碼才能解除鎖定的範圍，以及不需要密碼就可以編輯範圍的使用者。
 
 ## <a name="use-code-at-run-time"></a>在執行時間使用程式碼
  下列程式碼會設定密碼 (使用變數 getPasswordFromUser，它含有從使用者取得的密碼)，並且只允許排序。

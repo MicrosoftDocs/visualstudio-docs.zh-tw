@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3df1139f34c17055703b1ffcbbe2711d5750b9a8
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68870040"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>如何：使用並行視覺化檢視標記 SDK
@@ -50,7 +50,7 @@ ms.locfileid: "68870040"
     delete alertSpan;
     ```
 
-4. 在功能表列上選擇 [分析]、[並行視覺化檢視]、[從目前專案開始]，以執行應用程式並顯示 [並行視覺化檢視]。 下圖顯示 [並行視覺化檢視] 中的三個範圍和三個標記。
+4. 在功能表列上選擇 [分析]****、[並行視覺化檢視]****、[從目前專案開始]****，以執行應用程式並顯示 [並行視覺化檢視]。 下圖顯示 [並行視覺化檢視] 中的三個範圍和三個標記。
 
      ![包含 3 個標記和警示的 [並行視覺化檢視]](../profiling/media/cvmarkersnative.png "CvMarkersNative")
 
@@ -74,7 +74,7 @@ ms.locfileid: "68870040"
 
 6. 啟動目前的專案以顯示 [並行視覺化檢視]。 兩個標記序列會出現在 [執行緒] 檢視中其所屬的行。 下圖顯示兩個新範圍。
 
-     ![包含 3 個自訂標記系列的並行視覺化檢視](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
+     ![包含 3 個自訂標記系列的 [並行視覺化檢視]](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>使用 Visual Basic 或 C\#
 
@@ -90,7 +90,7 @@ ms.locfileid: "68870040"
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3. 加入在預設標記系列中建立三個範圍的程式碼，並在每個範圍各寫入一個旗標、訊息和警示。 您可以藉由呼叫靜態`EnterSpan`方法來建立 [Span](/previous-versions/hh694189(v=vs.140)) 物件。 若要寫入至預設數列, 請使用[標記](/previous-versions/hh694099(v=vs.140))類別的靜態 write 方法。
+3. 加入在預設標記系列中建立三個範圍的程式碼，並在每個範圍各寫入一個旗標、訊息和警示。 您會透過呼叫靜態 `EnterSpan` 方法來建立 [Span](/previous-versions/hh694189(v=vs.140)) 物件。 若要寫入預設系列，請使用 [Markers](/previous-versions/hh694099(v=vs.140)) 類別的靜態寫入方法。
 
     ```vb
     Dim flagSpan As Span = Markers.EnterSpan("flag span")
@@ -128,11 +128,11 @@ ms.locfileid: "68870040"
     alertSpan.Leave();
     ```
 
-4. 在功能表列上選擇 [分析]、[並行視覺化檢視]、[從目前專案開始]，以執行應用程式並顯示 [並行視覺化檢視]。 下圖顯示 [並行視覺化檢視] 的 [執行緒] 檢視中的三個範圍和三個標記。
+4. 在功能表列上選擇 [分析]****、[並行視覺化檢視]****、[從目前專案開始]****，以執行應用程式並顯示 [並行視覺化檢視]。 下圖顯示 [並行視覺化檢視] 的 [執行緒] 檢視中的三個範圍和三個標記。
 
      ![包含標記和警示的 [並行視覺化檢視]](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
-5. 使用靜態[CreateMarkerSeries](/previous-versions/hh694171(v=vs.140))方法加入程式碼, 以建立客戶標記系列。 [Microsoft.concurrencyvisualizer.instrumentation.markerseries>](/previous-versions/hh694127(v=vs.140))類別包含用來建立範圍和寫入旗標、訊息和警示的方法。
+5. 透過使用靜態 [CreateMarkerSeries](/previous-versions/hh694171(v=vs.140)) 方法來加入建立客戶標記系列的程式碼。 [MarkerSeries](/previous-versions/hh694127(v=vs.140)) 類別包含建立範圍及撰寫旗標、訊息和警示的方法。
 
     ```vb
     Dim flagSeries As MarkerSeries = Markers.DefaultWriter.CreateMarkerSeries("flag series")
@@ -166,7 +166,7 @@ ms.locfileid: "68870040"
 
 6. 啟動目前的專案以顯示 [並行視覺化檢視]。 三個標記序列會出現在 [執行緒] 檢視中其所屬的行。 下圖顯示三個新範圍。
 
-     ![包含 3 個自訂標記系列的並行視覺化檢視](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
+     ![包含 3 個自訂標記系列的 [並行視覺化檢視]](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
 ## <a name="see-also"></a>另請參閱
 

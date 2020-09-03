@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::枚舉資訊 |微軟文件
+title: IDebugThread2：： EnumFrameInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8bd3c6d46a577930cc7a2b87c85cd82a55f8cf66
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718855"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
-檢索此線程的堆疊幀的清單。
+抓取這個執行緒的堆疊框架清單。
 
 ## <a name="syntax"></a>語法
 
@@ -45,19 +45,19 @@ int EnumFrameInfo ( 
 
 ## <a name="parameters"></a>參數
 `dwFieldSpec`\
-[在][FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)枚舉中的標誌的組合,指定要填充[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構的欄位。指定標誌`FIF_FUNCNAME_FORMAT`以將函數名稱格式化為單個字串。
+在 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) 列舉中的旗標組合，可指定要填寫 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 結構的哪些欄位。指定將 `FIF_FUNCNAME_FORMAT` 函數名稱格式化為單一字串的旗標。
 
 `nRadix`\
-[在]用於格式化枚舉器中的數位資訊的 Radix。
+在用來格式化列舉值中數值資訊的基數。
 
 `ppEnum`\
-[出]返回[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)物件,該物件包含描述堆疊幀的[FRAME 資訊](../../../extensibility/debugger/reference/frameinfo.md)結構清單。
+擴展傳回 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) 物件，其中包含描述堆疊框架的 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 結構清單。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 線程的幀按順序枚舉,當前幀首先枚舉,最舊幀最後枚舉。
+ 執行緒的框架會依序列舉，並先列舉目前的框架，並最後列舉最舊的框架。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

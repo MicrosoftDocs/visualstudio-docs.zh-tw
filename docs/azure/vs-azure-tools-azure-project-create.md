@@ -10,15 +10,15 @@ ms.topic: how-to
 ms.date: 03/19/2019
 ms.author: ghogen
 ms.openlocfilehash: ef5acada89d48ed91dbf5b0f5fe7c9801337d47f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280371"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>使用 Visual Studio 來建立 Azure 雲端服務專案
 
-Visual Studio 提供專案範本，可讓您建立[azure 雲端服務](/azure/cloud-services/cloud-services-choose-me)，這是一個簡單的一般用途 azure 服務。 一旦建立專案之後，Visual Studio 可讓您對雲端服務進行設定和偵錯，以及部署至 Azure。
+Visual Studio 提供專案範本，可讓您建立 [azure 雲端服務](/azure/cloud-services/cloud-services-choose-me)，這是一個簡單的一般用途 azure 服務。 一旦建立專案之後，Visual Studio 可讓您對雲端服務進行設定和偵錯，以及部署至 Azure。
 
 ## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>在 Visual Studio 中建立 Azure 雲端服務專案的步驟
 本節將逐步引導您在 Visual Studio 中使用一或多個 Web 角色來建立 Azure 雲端服務專案。
@@ -60,7 +60,7 @@ Visual Studio 提供專案範本，可讓您建立[azure 雲端服務](/azure/cl
 
 Visual Studio Azure 專案與方案中的角色專案有關。 專案還包含「服務定義檔」** 和「服務組態檔」**：
 
-- **服務定義**檔-定義應用程式的執行時間設定，包括需要哪些角色、端點和虛擬機器大小。
+- **服務定義** 檔-定義應用程式的執行時間設定，包括需要哪些角色、端點和虛擬機器大小。
 - **服務組態檔** - 設定一個角色可以執行的執行個體數目，以及為角色定義的設定值。
 
 如需這些檔案的詳細資訊，請參閱[使用 Visual Studio 設定 Azure 雲端服務的角色](vs-azure-tools-configure-roles-for-cloud-service.md)。

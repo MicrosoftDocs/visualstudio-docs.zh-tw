@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 530123a7f9417ce9f12a0314a96eafad1c69cf7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205863"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>沒有執行緒活動可顯示 (執行緒檢視)
@@ -31,7 +31,7 @@ ms.locfileid: "68205863"
   
 - 隱藏的執行緒太多？ 如果是的話，請嘗試顯示所有執行緒  
   
-- 如已選取 [Just My Code]  ，就可以只檢視您程式碼的相關資料。 請嘗試清除設定，確定是否有任何系統執行緒活動。  
+- 如已選取 [Just My Code]****，就可以只檢視您程式碼的相關資料。 請嘗試清除設定，確定是否有任何系統執行緒活動。  
   
 - 確定 [減少雜訊] 設定低閾值。  
   

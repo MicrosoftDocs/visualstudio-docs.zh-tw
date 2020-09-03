@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e8cc2613a1fda470bd46951d0a4ffaf2d0eeedd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154240"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace 擴充性的 API 參考
@@ -32,5 +32,5 @@ ms.locfileid: "68154240"
  [IntelliTrace](../debugger/intellitrace.md)  
  提供如何使用 IntelliTrace 進行偵錯的詳細資訊。  
   
- [MSDN Code Gallery](https://code.msdn.microsoft.com/)  
+ [MSDN 程式碼庫](https://code.msdn.microsoft.com/)  
  管理顯示如何使用 IntelliTrace 擴充性的範例應用程式。

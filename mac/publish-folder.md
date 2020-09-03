@@ -10,24 +10,24 @@ manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
 ms.openlocfilehash: ab461327a0af5d072689e4a5cb357525b42018ba
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950482"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 發行至資料夾
 
-您可以使用 [發佈] 工具，將 .NET Core 主控台或 ASP.NET Core 應用程式發行至資料夾。
+您可以使用 [發佈] 工具，將 .NET Core 主控台或 ASP.NET Core 應用程式發佈到資料夾。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
 - 已啟用 .NET Core 的[Visual Studio 2019 For Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) 。
 - .NET Core 主控台或 ASP.NET Core 專案。 如果您還沒有專案，可以[建立新的專案](/visualstudio/mac/create-new-projects?view=vsmac-2019)。
 
 ## <a name="publish-to-folder"></a>發佈到資料夾
 
-使用 Visual Studio for Mac 您可以使用 [發行] 工具，將您的 .NET Core 專案發行至資料夾。 發行至資料夾之後，您可以將檔案傳輸到不同的環境。 若要發佈到資料夾，請執行下列步驟。
+使用 Visual Studio for Mac 您可以使用 [發行] 工具，將您的 .NET Core 專案發行到資料夾。 發行到資料夾之後，您可以將檔案傳送到不同的環境。 若要發佈到資料夾，請執行下列步驟。
 
  1. 在 Solution Pad 中，以滑鼠右鍵按一下專案，然後選擇 [發佈]****。
 

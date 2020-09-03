@@ -1,5 +1,5 @@
 ---
-title: IDebugReturnValueEvent2::GetReturnValue | Microsoft Docs
+title: IDebugReturnValueEvent2：： GetReturnValue |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6c1841ee7510e64fcb4344cc315c44283279f64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155234"
 ---
 # <a name="idebugreturnvalueevent2getreturnvalue"></a>IDebugReturnValueEvent2::GetReturnValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得上逐步執行出或函式傳回的值。  
+取得在函式執行時傳回的值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,10 +40,10 @@ int GetReturnValue ( 
   
 #### <a name="parameters"></a>參數  
  `ppReturnValue`  
- [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，表示要擷取的值。  
+ 擴展傳回代表要抓取之值的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugReturnValueEvent2](../../../extensibility/debugger/reference/idebugreturnvalueevent2.md)   

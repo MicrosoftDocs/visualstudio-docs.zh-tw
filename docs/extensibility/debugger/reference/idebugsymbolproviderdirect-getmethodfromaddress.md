@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbol 提供者直接::從位址獲取方法 |微軟文件
+title: IDebugSymbolProviderDirect：： GetMethodFromAddress |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4a062056f4a61521966417e9923a17f6d85b991a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718926"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
-在指定的調試地址檢索有關方法的資訊。
+在指定的 debug 位址抓取方法的相關資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -52,28 +52,28 @@ int GetMethodFromAddress(
 
 ## <a name="parameters"></a>參數
 `pAddress`\
-[在]由[IDebug 位址](../../../extensibility/debugger/reference/idebugaddress.md)介面表示的調試位址。
+在 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 介面所代表的 Debug 位址。
 
 `pGuid`\
-[出]模組的唯一標識碼。
+擴展模組的唯一識別碼。
 
 `pAppID`\
-[出]應用程式域的標識碼。
+擴展應用程式域的識別碼。
 
 `pTokenClass`\
-[出]表示包含類的權杖。
+擴展代表包含類別的 Token。
 
 `pTokenMethod`\
-[出]表示模組的權杖。
+擴展代表模組的 Token。
 
 `pdwOffset`\
-[出]`pAddress`參數開頭的偏移量(以位元組為單位)。
+擴展從參數開頭算起的位移（以位元組為單位） `pAddress` 。
 
 `pdwVersion`\
-[出]方法的版本號。
+擴展方法的版本號碼。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

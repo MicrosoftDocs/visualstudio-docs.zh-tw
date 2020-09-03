@@ -1,5 +1,5 @@
 ---
-title: CA1506：避免過度的類別結合 |Microsoft Docs
+title: CA1506：避免過度類別耦合 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 07f19cb9d4aa2ed118898a1816092479cbd16565
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545700"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506:應避免使用結合過度的類別
@@ -29,7 +29,7 @@ ms.locfileid: "85545700"
 |-|-|
 |TypeName|AvoidExcessiveClassCoupling|
 |CheckId|CA1506|
-|類別|Microsoft。可維護性|
+|類別|Microsoft 的可維護性|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -38,13 +38,13 @@ ms.locfileid: "85545700"
 ## <a name="rule-description"></a>規則描述
  這個規則會測量類別的耦合，方法是計算類型或方法包含的唯一類型參考數目。
 
- 具有高程度類別結合的類型和方法可能很容易維護。 最佳做法是讓類型和方法呈現低耦合和高一致性。
+ 具有高度類別結合程度的類型和方法可能難以維護。 最好的方法是具有低結合性和高一致性的類型和方法。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此違規，請嘗試重新設計類型或方法，以減少它所結合的類型數目。
+ 若要修正此違規，請嘗試重新設計類型或方法，以減少其結合的類型數目。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 當類型或方法仍被視為可維護時，請排除這項警告，儘管其他類型的相依性很多。
+ 當類型或方法仍視為可維護（儘管其他類型的相依性很多）時，請排除此警告。
 
 ## <a name="see-also"></a>另請參閱
- 可[維護性警告](../code-quality/maintainability-warnings.md) [，測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+ [測量受控碼複雜性和可維護性的](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)可[維護性警告](../code-quality/maintainability-warnings.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebug符號搜索事件2::獲取符號搜索資訊 |微軟文件
+title: IDebugSymbolSearchEvent2：： GetSymbolSearchInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: be498154a8141c61f114682893d0aaf8b841cf95
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718894"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
-由事件處理程式調用以檢索有關符號載入進程的結果。
+由事件處理常式呼叫，以抓取符號載入進程的相關結果。
 
 ## <a name="syntax"></a>語法
 
@@ -45,22 +45,22 @@ int GetSymbolSearchInfo(
 
 ## <a name="parameters"></a>參數
 `pModule`\
-[出]IDebugModule3 物件,表示為其載入符號的模組。
+擴展代表已載入符號之模組的 IDebugModule3 物件。
 
 `pbstrDebugMessage`\
-[進出]返回包含模組中任何錯誤消息的字串。 如果沒有錯誤,則此字串將僅包含模組的名稱,但它永遠不會為空。
+[in，out]傳回字串，其中包含模組中的任何錯誤訊息。 如果沒有錯誤，則此字串只會包含模組的名稱，但永遠不會是空的。
 
 > [!NOTE]
-> [C++]`pbstrDebugMessage`無法,`NULL`必須釋放`SysFreeString`與 。
+> [C + +] `pbstrDebugMessage` 不能是 `NULL` ，而且必須使用來釋放 `SysFreeString` 。
 
 `pdwModuleInfoFlags`\
-[出][MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)枚舉中的標誌的組合,指示是否載入了任何符號。
+擴展 [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) 列舉中的旗標組合，指出是否已載入任何符號。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則返回錯誤代碼。
+ 如果成功，則傳回，否則會傳回 `S_OK` 錯誤碼。
 
 ## <a name="remarks"></a>備註
- 當處理程式嘗試載入模組的調試符號後收到[IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)事件時,處理程式可以調用此方法以確定該載入的結果。
+ 當處理常式在嘗試載入模組的偵錯工具符號之後收到 [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) 事件時，處理常式可以呼叫 thismethod 來判斷該載入的結果。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

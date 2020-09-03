@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2:獲取程式 |微軟文件
+title: IDebugThread2：： GetProgram |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 083973c82a5f8b3c24480e0964f67faca1977a71
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718722"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
-獲取運行線程的程式。
+取得執行執行緒的程式。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ int GetProgram ( 
 
 ## <a name="parameters"></a>參數
 `ppProgram`\
-[出]返回一個[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件,該物件表示此線程正在運行的程式。
+擴展傳回 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 物件，代表此執行緒正在其中執行的程式。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 957dbd557a15c4c1df6028672f204a06936767c1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68605995"
 ---
-# <a name="options-dialog-box-text-editor--javascript--formatting"></a>選項對話方塊：文字編輯器\>JavaScript\>格式
+# <a name="options-dialog-box-text-editor--javascript--formatting"></a>選項對話方塊：文字編輯器 \> JavaScript \> 格式化
 
-使用 [選項]**** 對話方塊的 [格式]**** 頁面，設定在程式碼編輯器中格式化程式碼的選項。 要訪問此頁面，在功能表列上，請選擇 **"工具** > **選項**"，然後展開**文字編輯器** > **JavaScript/TypeScript** > **格式**。
+使用 [選項]**** 對話方塊的 [格式]**** 頁面，設定在程式碼編輯器中格式化程式碼的選項。 若要存取此頁面，請在功能表列上選擇 [**工具**  >  **選項**]，然後展開 [**文字編輯器**  >  **JavaScript/TypeScript**  >  **格式**]。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -71,4 +71,4 @@ ms.locfileid: "68605995"
 
 ## <a name="see-also"></a>另請參閱
 
-- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)
+- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

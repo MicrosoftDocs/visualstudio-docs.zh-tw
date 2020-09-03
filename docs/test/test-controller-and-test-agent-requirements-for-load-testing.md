@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 39b174b0b134fdfdf26570565aa6aa756ba43c92
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75588638"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>負載測試的測試控制器和測試代理程式需求
@@ -30,7 +30,7 @@ ms.locfileid: "75588638"
 
 下表顯示部署測試控制器和測試代理程式的建議硬體需求。
 
-|**組態**|**元件**|**Cpu**|**HD**|**記憶體**|
+|**設定**|**元件**|**CPU**|**HD**|**記憶體**|
 |-|-------------------|-|------------|-|
 |少於 500 位虛擬使用者|測試代理程式|2.6 GHz|10 GB|2 GB|
 |少於 1000 位虛擬使用者|測試代理程式|雙重處理器 2.6 GHz|10 GB|2 GB|

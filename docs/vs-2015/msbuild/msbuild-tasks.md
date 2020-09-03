@@ -13,16 +13,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 756c19da1aeb8878c2d045f4ee471d8449d2a954
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154807"
 ---
 # <a name="msbuild-tasks"></a>MSBuild 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-組建平台必須能夠在建置程序期間執行任意數目的動作。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會使用「工作」  來執行這些動作。 工作是 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 用來執行不可部分完成之建置作業的可執行程式碼單元。  
+組建平台必須能夠在建置程序期間執行任意數目的動作。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會使用「工作」** 來執行這些動作。 工作是 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 用來執行不可部分完成之建置作業的可執行程式碼單元。  
   
 ## <a name="task-logic"></a>工作邏輯  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] XML 專案檔格式無法完全獨立執行建置作業，因此，必須在專案檔以外的地方實作工作邏輯。  
@@ -69,6 +69,6 @@ ms.locfileid: "68154807"
   
 ## <a name="see-also"></a>另請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
- [MSBuild](msbuild.md)   
+ [Msbuild](msbuild.md)   
  [工作撰寫](../msbuild/task-writing.md)   
  [內嵌工作](../msbuild/msbuild-inline-tasks.md)

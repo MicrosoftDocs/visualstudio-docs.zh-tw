@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：建立多電腦組建環境
+title: 逐步解說：建立多電腦建置環境
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -12,24 +12,24 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68461529"
 ---
-# <a name="walkthrough-create-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦組建環境
+# <a name="walkthrough-create-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦建置環境
 
 您可以在組織內建立建置環境，方法是在主機電腦上安裝 Visual Studio，然後將各種檔案和設定複製到另一部電腦，以便該電腦可參與建置。 您不需要在另一部電腦上安裝 Visual Studio。
 
 本文件並不會授權在外部轉散發軟體，或將建置環境提供給第三方。
 
-> 免責聲明<br /><br /> 本文件係依「原樣」提供。 雖然我們已測試過所述的步驟，但無法徹底測試每一種組態。 我們將試圖以學到的任何其他資訊，確保文件處於最新狀態。 本文件中說明的資訊與畫面 (包括 URL 及其他網際網路網站參考資料) 如有變更，恕不另行通知。 Microsoft 對本文提供之資訊，不作任何明示或暗示之保證。 您應自行承擔使用本文件的風險。<br /><br /> 本文件未提供給您任何 Microsoft 產品中任何智慧財產的任何法定權利。 您可以複製並使用這份文件，供內部參考之用。<br /><br /> 貴用戶沒有義務提供與本文件相關的任何建議、意見或其他意見反應 (「意見反應」) 給 Microsoft。 不過，貴用戶自願提供的任何意見反應可能會用於 Microsoft 產品以及相關規格或其他文件 (統稱為「Microsoft 供應項目」)，之後可能會由其他第三方用來開發自己的產品。 因此，如果　貴用戶針對本文件的任何版本提供 Microsoft 意見反應或套用意見反應的 Microsoft 供應項目，即表示　貴用戶同意：(a) Microsoft 可以在任何 Microsoft 供應項目中，自由地使用、重製、授權、散發或商業化意見反應；(b) 貴用戶也免費授權給第三方，這些權利僅限於讓其他產品使用或連接到納入意見反應的 Microsoft 產品之任何特定部分所需的專利權；以及 (c) 在下列情況下，貴用戶不會提供 Microsoft 任何意見反應，以授權或分享給任何第三方：(i) 貴用戶合理相信這些意見反應受限於任何第三方的任何專利、著作權或其他智慧財產權宣告或權利；或是 (ii) 受限於試圖要求納入或衍生自這類意見反應之任何 Microsoft 供應項目的授權條款，或其他 Microsoft 智慧財產權。
+> 免責聲明<br /><br /> 本文件係依「原樣」提供。 雖然我們已測試過所述的步驟，但無法徹底測試每一種組態。 我們將試圖以學到的任何其他資訊，確保文件處於最新狀態。 本文件中說明的資訊與畫面 (包括 URL 及其他網際網路網站參考資料) 如有變更，恕不另行通知。 針對此處提供的資訊，Microsoft 不做任何明示或默許的擔保。 貴用戶須自行承擔使用風險。<br /><br /> 本文件不為您提供對任何 Microsoft 產品中的任何智慧財產的法定權利。 您可以複製本文件供內部參照之用。<br /><br /> 貴用戶沒有義務提供與本文件相關的任何建議、意見或其他意見反應 (「意見反應」) 給 Microsoft。 不過，貴用戶自願提供的任何意見反應可能會用於 Microsoft 產品以及相關規格或其他文件 (統稱為「Microsoft 供應項目」)，之後可能會由其他第三方用來開發自己的產品。 因此，如果　貴用戶針對本文件的任何版本提供 Microsoft 意見反應或套用意見反應的 Microsoft 供應項目，即表示　貴用戶同意：(a) Microsoft 可以在任何 Microsoft 供應項目中，自由地使用、重製、授權、散發或商業化意見反應；(b) 貴用戶也免費授權給第三方，這些權利僅限於讓其他產品使用或連接到納入意見反應的 Microsoft 產品之任何特定部分所需的專利權；以及 (c) 在下列情況下，貴用戶不會提供 Microsoft 任何意見反應，以授權或分享給任何第三方：(i) 貴用戶合理相信這些意見反應受限於任何第三方的任何專利、著作權或其他智慧財產權宣告或權利；或是 (ii) 受限於試圖要求納入或衍生自這類意見反應之任何 Microsoft 供應項目的授權條款，或其他 Microsoft 智慧財產權。
 
 本逐步解說已對下列作業系統驗證過：
 
 - Windows 8 (x86 和 x64)
-- Windows 7 Ultimate
+- Windows 7 旗艦版
 - Windows Server 2008 R2 Standard
 
 完成本逐步解說中的步驟之後，您可以使用多電腦環境來建置下列應用程式類型：
@@ -42,7 +42,7 @@ ms.locfileid: "68461529"
 - UWP 應用程式。 若要建置 UWP 應用程式，您必須在建置電腦上安裝 Visual Studio。
 - 以 .NET Framework 4 (含) 以前版本為目標的傳統型應用程式。 若要建置這些應用程式類型，您必須在組建電腦上安裝 Visual Studio 或 .NET 參考組件和工具 (從 Windows 7.1 SDK)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 已安裝 [.NET 桌面開發]**** 工作負載的 Visual Studio。
 
@@ -102,9 +102,9 @@ ms.locfileid: "68461529"
 
     - %ProgramFiles%\Common Files\Merge Modules\
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\VC\
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\Tools\ProjectComponents\
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \Common7\Tools\ProjectComponents\
 
     - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\
 
@@ -114,23 +114,23 @@ ms.locfileid: "68461529"
 
 3. 將下列檔案從主機電腦複製到組建電腦：
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\IDE\msobj110.dll
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\msobj110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\IDE\mspdb110.dll
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\mspdb110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\IDE\mspdbcore.dll
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\mspdbcore.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\IDE\mspdbsrv.exe
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\mspdbsrv.exe
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\IDE\msvcdis110.dll
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\msvcdis110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\Tools\makehm.exe
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\Tools\makehm.exe
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\Tools\VCVarsQueryRegistry.bat
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\Tools\VCVarsQueryRegistry.bat
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\Tools\vsvars32.bat
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\Tools\vsvars32.bat
 
-4. 下列 Visual C++ 執行階段程式庫只有在您於組建電腦上執行建置輸出時才需要，例如作為自動化測試的一部分。 這些檔通常位於*在 %程式檔 %_Microsoft\\\<Visual Studio 版本>\\\<版本>_VC_redist_x86*或 *%程式檔 %_微軟視覺\\\<工作室版本\\\<>版>_VC_redist_x64*資料夾下，具體取決於系統體系結構。 在 x86 系統上，將 x86 二進位檔複製到 *Windows\System32* 資料夾。 在 x64 系統上，將 x86 二進位檔複製到 *Windows\SysWOW64* 資料夾，並將 x64 二進位檔複製到 *Windows\System32* 資料夾。
+4. 下列 Visual C++ 執行階段程式庫只有在您於組建電腦上執行建置輸出時才需要，例如作為自動化測試的一部分。 這些檔案通常位於 *%ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\redist\x86*或 *%ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\redist\x64*資料夾下的子資料夾中，視系統架構而定。 在 x86 系統上，將 x86 二進位檔複製到 *Windows\System32* 資料夾。 在 x64 系統上，將 x86 二進位檔複製到 *Windows\SysWOW64* 資料夾，並將 x64 二進位檔複製到 *Windows\System32* 資料夾。
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -192,7 +192,7 @@ ms.locfileid: "68461529"
 
 您必須建立登錄項目，才能進行 MSBuild 的設定。
 
-1. 識別登錄項目的父資料夾。 所有登錄項目都會在相同的父機碼下建立。 在 x86 電腦上，父機碼會是 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**。 在 x64 電腦上，父金鑰**HKEY_LOCAL_MACHINE_SOFTWARE_Wow6432Node_Microsoft**。 不論系統架構為何，本逐步解說會將父機碼稱為 %RegistryRoot%。
+1. 識別登錄項目的父資料夾。 所有登錄項目都會在相同的父機碼下建立。 在 x86 電腦上，父機碼會是 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**。 在 x64 電腦上，父機碼是 **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft**。 不論系統架構為何，本逐步解說會將父機碼稱為 %RegistryRoot%。
 
     > [!NOTE]
     > 如果主機電腦的架構與組建電腦的架構不同，請務必在每部電腦上使用適當的父機碼。 如果您想要自動化匯出程序，這會特別重要。
@@ -255,7 +255,7 @@ ms.locfileid: "68461529"
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>使用 vcvarsall.bat 設定環境變數
 
-在生成電腦上打開**命令提示**視窗，並運行 *%程式檔 %_微軟視覺化\\\<工作室版本\\\<>版本>_VC_vcvarsall.bat*。 您可以使用命令列引數，指定要使用的工具組：x86、x64 Native 或 x64 Cross 編譯器。 如果您未指定命令列引數，則會使用 x86 工具組。
+在組建電腦上開啟 [**命令提示**字元] 視窗，並執行 *% Program Files%\Microsoft Visual Studio \\ \<version> \\ \<edition>\VC\vcvarsall.bat*。 您可以使用命令列引數，指定要使用的工具組：x86、x64 Native 或 x64 Cross 編譯器。 如果您未指定命令列引數，則會使用 x86 工具組。
 
 下表描述 *vcvarsall.bat* 支援的引數：
 
@@ -271,7 +271,7 @@ ms.locfileid: "68461529"
 
 1. 若要手動設定命令列環境，將此路徑新增至 PATH 環境變數：
 
-    - %Program Files%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\IDE
+    - % Program Files%\Microsoft Visual Studio \\ \<version> \\ \<edition> \Common7\IDE
 
 2. 或者，您也可以將下列路徑新增至 PATH 變數，以更輕鬆地使用 MSBuild 來建置方案。
 
@@ -295,15 +295,15 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
     - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
 2. 若要將組件安裝到 GAC，請在組建電腦上尋找 *gacutil.exe* (通常位於 %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\ 中)。 如果找不到此資料夾，請重複本逐步解說之[將檔案從主機電腦複製到組建電腦](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer)一節中的步驟。
 
      開啟具有系統管理權限的 [命令提示字元]**** 視窗，然後針對每個檔案執行此命令：
 
-     **gacutil -i \<檔案>**
+     **gacutil-i \<file>**
 
     > [!NOTE]
     > 組件可能需要重新開機，才能完整安裝到 GAC。
@@ -339,7 +339,7 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" 的每個執行個體變更
 
-         to
+         至
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll"。
 
@@ -349,7 +349,7 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" 的每個執行個體變更
 
-         to
+         至
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll"。
 

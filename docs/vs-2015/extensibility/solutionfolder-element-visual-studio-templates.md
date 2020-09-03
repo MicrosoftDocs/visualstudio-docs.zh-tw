@@ -1,5 +1,5 @@
 ---
-title: SolutionFolder 元素 （Visual Studio 範本） |Microsoft Docs
+title: " (Visual Studio 範本的 SolutionFolder 元素) |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,10 +14,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 84d0c1765a14f60363b71fcdec182d448cb4f112
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205539"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder 項目 (Visual Studio 範本)
@@ -25,7 +25,7 @@ ms.locfileid: "68205539"
 
 將多專案範本中的專案分組。  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateContent>  
  \<ProjectCollection>  
  \<SolutionFolder>  
@@ -43,7 +43,7 @@ ms.locfileid: "68205539"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`Name`|必要屬性。<br /><br /> 方案資料夾的名稱。|  
   
@@ -62,7 +62,7 @@ ms.locfileid: "68205539"
 |`SolutionFolder`|將多專案範本中的專案分組。|  
   
 ## <a name="remarks"></a>備註  
- 多專案範本是做為兩個以上專案的容器使用。 `SolutionFolder` 項目可將範本中的專案分成群組。 由 `SolutionFolder` 項目所指定的資料夾會建立為 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 之專案中的方案資料夾。 如需有關多專案範本的詳細資訊，請參閱[How to:建立多專案範本](../ide/how-to-create-multi-project-templates.md)。  
+ 多專案範本是做為兩個以上專案的容器使用。 `SolutionFolder` 項目可將範本中的專案分成群組。 由 `SolutionFolder` 項目所指定的資料夾會建立為 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 之專案中的方案資料夾。 如需多專案範本的詳細資訊，請參閱 [如何：建立多專案範本](../ide/how-to-create-multi-project-templates.md)。  
   
 ## <a name="example"></a>範例  
  這個範例會使用 `SolutionFolder` 項目將多專案範本分成兩個群組，也就是 `Math Classes` 和 `Graphics Classes`。 範本包含四個專案，每個方案資料夾各包含兩個專案。  
@@ -100,6 +100,6 @@ ms.locfileid: "68205539"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
- [如何：建立多專案範本](../ide/how-to-create-multi-project-templates.md)
+ [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)   
+ [建立專案和專案範本](../ide/creating-project-and-item-templates.md)   
+ [如何：建立多專案的範本](../ide/how-to-create-multi-project-templates.md)

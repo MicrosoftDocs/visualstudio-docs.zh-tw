@@ -6,10 +6,10 @@ ms.author: cobey
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
 ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68787691"
 ---
 # <a name="code-snippets"></a>程式碼片段
@@ -30,7 +30,7 @@ ms.locfileid: "68787691"
 
   [![工具箱中的程式碼片段](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **插入範本命令** &ndash; 目前未設定任何用於插入範本的預設按鍵繫結關係。 要創建一個，請流覽到**Visual Studio >首選項>鍵綁定**並搜索`template`。 這允許將想要的按鍵繫結關係新增至 [編輯繫結] 欄位，然後按一下 [套用]****：
+- **插入範本命令** &ndash; 目前未設定任何用於插入範本的預設按鍵繫結關係。 若要建立一個，請流覽至 **Visual Studio > 喜好設定 > 按鍵** 系結，並搜尋 `template` 。 這允許將想要的按鍵繫結關係新增至 [編輯繫結] 欄位，然後按一下 [套用]****：
 
   ![插入範本命令](media/source-editor-image15.png)
 
@@ -46,7 +46,7 @@ ms.locfileid: "68787691"
 
 將程式碼片段插入編輯器中之後，所有已定義的關鍵字都會以醒目提示方式顯示，您可以藉由使用 Tab 鍵在它們之間移動來編輯它們。 關鍵字的作用就像程式碼片段中的「變數」，若要定義關鍵字，請在關鍵字名稱的前後加上一個貨幣符號 `$`。 
 
-以下顯示 [編輯範本]**** 視窗，其中正在編輯內建的 `prop` 程式碼片段。 程式碼片段包含兩個關鍵字&ndash;`$type$`，`$name$`&ndash;這些關鍵字可以在視窗的右側設置進一步的屬性（如預設值和工具提示）：
+以下顯示 [編輯範本]**** 視窗，其中正在編輯內建的 `prop` 程式碼片段。 此程式碼片段包含兩個關鍵字 &ndash; `$type$` ，且 `$name$` &ndash; 可以設定進一步的屬性 (例如視窗右邊的預設值和工具提示) ：
 
 ![[編輯範本] 視窗](media/source-editor-image12z.png)
 
@@ -82,7 +82,7 @@ ms.locfileid: "68787691"
 您可以在程式碼片段中使用兩個保留關鍵字：
 
 - `$selected$` &ndash; 如果已為程式碼片段選取 [Is surround with template] \(是範圍陳述式範本\)****，就會以選擇程式碼片段時在編輯器中以醒目提示方式顯示的文字取代此關鍵字。
-- `$end$`&ndash;當使用者完成程式碼片段中的關鍵字編輯後，游標將放置在`$end$`關鍵字的位置。
+- `$end$`&ndash;當使用者完成編輯程式碼片段中的關鍵字時，游標將放置於關鍵字的位置 `$end$` 。
 
 上一節中的 `for` 程式碼片段即是這兩個保留關鍵字的範例。
 

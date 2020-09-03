@@ -9,10 +9,10 @@ caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3e3a9bd037c8886743910af649bf831b11337598
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660495"
 ---
 # <a name="sample-excel-communicator-interface"></a>範例 Excel Communicator 介面
@@ -34,5 +34,5 @@ ms.locfileid: "72660495"
 
  `CodedUIExtensibilitySample` 組件會在 Visual Studio 自動程式化 UI 測試處理序中執行。 這個組件具有開啟 .NET 遠端處理通道的 `Communicator` 類別，並且提供 `Instance` 屬性，這個屬性會使用 `IExcelUICommunication` 介面，透過 `ExcelCodedUIAddinHelper` 組件中的 `UICommunicator` 物件，在兩個組件之間來回傳遞要求和資訊物件 (例如 `CellInformation` 物件)。
 
-## <a name="see-also"></a>請參閱
- 擴充自動程式化[Ui 測試和動作記錄，以支援](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)適用于 excel 的自動程式化 ui 測試範例自動程式[代碼 ui 測試延伸模組的](../test/sample-coded-ui-test-extension-for-excel.md)Microsoft Excel[範例 excel 增益集](../test/sample-excel-add-in-for-coded-ui-testing.md)
+## <a name="see-also"></a>另請參閱
+ 擴充自動程式化[Ui 測試和動作記錄，以支援](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)適用于 Excel 的自動程式化 ui 測試範例自動程式碼 Ui[測試延伸](../test/sample-coded-ui-test-extension-for-excel.md)模組的 Microsoft excel[範例增益集](../test/sample-excel-add-in-for-coded-ui-testing.md)

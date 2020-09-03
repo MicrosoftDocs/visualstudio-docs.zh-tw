@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
 ms.topic: how-to
 ms.openlocfilehash: 78a5dd2abbef177e2eb949d25d779a46ecc65bda
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950686"
 ---
 # <a name="set-up-a-subversion-repository"></a>設定 Subversion 存放庫

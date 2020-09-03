@@ -1,5 +1,5 @@
 ---
-title: IDebugdisassemblystream2::獲取文檔 |微軟文件
+title: IDebugDisassemblyStream2：： GetDocument |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cf5d1a73e15ad38bf14d954718ce97c088b2e525
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732181"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
-獲取與此輸入流關聯的源文檔。
+取得與此輸入資料流程相關聯的來源文件。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int GetDocument( 
 
 ## <a name="parameters"></a>參數
 `bstrDocumentUrl`\
-[在]文件 URL。
+在檔 URL。
 
 `ppDocument`\
-[出]返回表示文檔的[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)物件。
+擴展傳回代表檔的 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 此方法由調試引擎實現,這些引擎具有未存儲在實際檔中的文本文檔。
+ 這個方法是由具有未儲存在實際檔案中之文字檔的偵錯工具引擎所執行。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

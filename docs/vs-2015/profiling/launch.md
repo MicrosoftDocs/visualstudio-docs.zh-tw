@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c910ef1519181f1402cbec1d31686492e30f343d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154763"
 ---
 # <a name="launch"></a>啟動
@@ -36,13 +36,13 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="valid-options"></a>有效選項  
  在單一命令列上，下列 VSPerfCmd 選項可以與 **Launch** 選項一起使用。  
   
- **Start:** `Method`  
+ **開始：**`Method`  
  初始化命令列分析工具工作階段，並設定指定的分析方法。  
   
  **GlobalOn** 和 **GlobalOff**  
  繼續 (**GlobalOn**) 或暫停 (**GlobalOff**) 分析，但未結束分析工作階段。  
   
- **ProcessOn:** `PID` 和 **ProcessOff**:`PID`  
+ **ProcessOn：** `PID` 和 **ProcessOff**：`PID`  
  繼續 (**ProcessOn**) 或暫停 (**ProcessOff**) 所指定處理序的分析。  
   
  **TargetCLR**  
@@ -51,10 +51,10 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="exclusive-options"></a>專屬選項  
  下列選項只能與 **Launch** 選項搭配使用。  
   
- **Console**  
+ **主控台**  
  在新視窗中啟動指定的命令列應用程式。  
   
- **Args:** `ArgList`  
+ **Args：**`ArgList`  
  指定要傳遞至應用程式的引數清單。  
   
  **LineOff**  
@@ -63,7 +63,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="sampling-options"></a>取樣選項  
  下列其中一個取樣間隔選項可以指定於 **Launch** 命令列上。 預設取樣間隔為 10,000,000 個處理器時脈週期。  
   
- **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[ **:** `Events`]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**]  
+ **Timer**[**：** `Cycles` ]**PF**[**：** `Events` ]**Sys**[**：** `Events` ]**Counter**[**：** `Name` ， `Reload` ， `FriendlyName` ]**GC**[：**配置**&#124;**存留期**]  
  指定取樣間隔的數目和類型。  
   
 - **Timer** - 每 `Cycles` 個未暫止處理器時脈週期取樣一次。 如果未指定 `Cycles`，會使用 10,000,000 個週期。  
@@ -72,7 +72,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
   
 - **Sys** - 對作業系統每呼叫 `Events` 次取樣一次。 如果未指定 `Events`，則會使用 10 次系統呼叫。  
   
-- **Counter** - `Name` 所指定的 CPU 效能計數器每 `Reload` 個數目就取樣一次。 選擇性，`FriendlyName` 可以指定要作為分析工具報表中資料行標頭的字串。  
+- **Counter** - `Name` 所指定的 CPU 效能計數器每 `Reload` 個數目就取樣一次。 選擇性，`FriendlyName` 可以指定要作為分析工具報表中資料行標題的字串。  
   
 - **GC** - 收集 .NET 記憶體資料。 根據預設 (**配置**)，系統會在每個記憶體配置事件發生時收集資料。 指定 **lifetime** 參數時，也會在每個記憶體回收事件發生時收集資料。  
   
@@ -85,7 +85,7 @@ VSPerfCmd.exe /Launch:TestApp.exe
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [>vsperfcmd](../profiling/vsperfcmd.md)   
+ [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)

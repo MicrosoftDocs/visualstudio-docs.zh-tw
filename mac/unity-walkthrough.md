@@ -8,10 +8,10 @@ ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
 ms.topic: how-to
 ms.openlocfilehash: da9c8b3470fee406b577b136b6c55d76c9346e44
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950658"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中使用 Unity 開始建置遊戲
@@ -25,10 +25,10 @@ Visual Studio for Mac Tools for Unity 是免費的延伸模組，隨 Visual Stud
 > [!div class="checklist"]
 > * 深入了解使用 Visual Studio for Mac 進行 Unity 開發
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
-- Visual Studio for Mac （ [https://www.visualstudio.com/vs/mac](https://www.visualstudio.com/vs/visual-studio-mac) ）
-- Unity 5.6.1 Personal Edition 或更高版本（ [https://store.unity.com](https://store.unity.com/) 需要 unity.com 帳戶才能執行）
+- Visual Studio for Mac ([https://www.visualstudio.com/vs/mac](https://www.visualstudio.com/vs/visual-studio-mac)) 
+- Unity 5.6.1 Personal Edition 或更高版本的 ([https://store.unity.com](https://store.unity.com/) 需要 unity.com 帳戶才能執行) 
 
 ## <a name="intended-audience"></a>目標對象
 
@@ -80,7 +80,7 @@ Visual Studio for Mac Tools for Unity 是免費的延伸模組，隨 Visual Stud
 
 13. 關閉 [Finder]**** 視窗並返回 **Unity**。
 
-14. [**資產**] 資料夾包含您所有的資產-美工圖案、程式碼、音訊等等。它現在是空的，但您帶入專案的每一個單一檔案都會進入這裡。 這始終是 **Unity 編輯器**中最上層的資料夾。 但一律透過 Unity 介面 (或 Visual Studio for Mac) 新增和移除檔案，而不是直接透過檔案系統。
+14. [ **資產** ] 資料夾包含您的所有資產-藝術、程式碼、音訊等等。現在是空的，但您進入專案的每個單一檔案都在這裡。 這始終是 **Unity 編輯器**中最上層的資料夾。 但一律透過 Unity 介面 (或 Visual Studio for Mac) 新增和移除檔案，而不是直接透過檔案系統。
 
     ![Unity 中的 [Assets] 資料夾](media/unity-image10.png)
 
@@ -130,7 +130,7 @@ Visual Studio for Mac Tools for Unity 是免費的延伸模組，隨 Visual Stud
 
 1. 編輯 C# 程式碼的最佳方法是使用 Visual Studio for Mac。 您可以將 Unity 設定為使用 Visual Studio for Mac 作為其預設處理常式。 選取 [Unity] > [Preferences]**** \(喜好設定\)。
 
-2. 選取 [**外部工具**] 索引標籤。從 [**外部腳本編輯器**] 下拉式清單中，選取 **[流覽]** ，然後選取 [**應用程式/Visual Studio**]。 或者，如果已經有 [Visual Studio]**** 選項，請直接選取該選項。
+2. 選取 [ **外部工具** ] 索引標籤。從 [ **外部腳本編輯器** ] 下拉式清單中，選取 **[流覽]** ，然後選取 [ **應用程式/Visual Studio**]。 或者，如果已經有 [Visual Studio]**** 選項，請直接選取該選項。
 
     ![喜好設定中的 [外部工具] 索引標籤](media/unity-image21.png)
 
@@ -190,7 +190,7 @@ Visual Studio for Mac Tools for Unity 是免費的延伸模組，隨 Visual Stud
 
 9. 將變更儲存至 **Visual Studio for Mac** 中的敵人指令碼。
 
-## <a name="task-3-debugging-the-unity-project"></a>工作3：對 Unity 專案進行調試
+## <a name="task-3-debugging-the-unity-project"></a>工作3：調試 Unity 專案
 
 1. 在 **Start** 方法的第一行程式碼上設定中斷點。 您可以按一下目標行的編輯器邊界，或將游標放在該行上，然後按 **F9**。
 

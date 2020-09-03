@@ -1,5 +1,5 @@
 ---
-title: IDebug自定義屬性::獲取屬性類型欄位 |微軟文件
+title: IDebugCustomAttribute：： GetAttributeTypeField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 51341b3c9b351307d2662538cc3a6797c58b62f9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732791"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
-獲取自定義屬性類類型。
+取得自訂屬性類別類型。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetAttributeTypeField(
 
 ## <a name="parameters"></a>參數
 `ppCAType`\
-[出]返回表示自定義屬性為實例的類的[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)物件。
+擴展傳回 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 物件，這個物件表示自訂屬性為實例的類別。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回S_OK;否則,返回錯誤代碼。
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 自定義屬性始終是一個類。 此方法提供對描述該類的[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)對象的訪問。
+ 自訂屬性一律為類別。 這個方法會提供描述該類別之 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 物件的存取權。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

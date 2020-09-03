@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 04485d6ce67c822fd0620bd63f3557851db6dbb9
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88251285"
 ---
 # <a name="simplify-linq-expression"></a>簡化 LINQ 運算式
@@ -22,19 +22,19 @@ ms.locfileid: "88251285"
 
 - C#
 
-**功能：** 針對的重構實例，以及 `SomeEnumerableType.Where(<LambdaExpression>).Single()` 下列可列舉 `SomeEnumerable.Single(<LambdaExpression>)` `Enumerable.Single()` 的方法： `SingleOrDefault()` 、 `Last()` 、 `LastOrDefault()` 、 `Any()` 、 `Count()` 、 `First()` 和 `FirstOrDefault()` 。
+事項 **：** 的重構實例，以及 `SomeEnumerableType.Where(<LambdaExpression>).Single()` 下列可列舉 `SomeEnumerable.Single(<LambdaExpression>)` `Enumerable.Single()` 的方法： `SingleOrDefault()` 、 `Last()` 、 `LastOrDefault()` 、 `Any()` 、 `Count()` 、 `First()` 和 `FirstOrDefault()` 。
 
-時機 **：** 方法呼叫、等等的所有實例都 `Single()` `SingleOrDefault()` 不會有任何引數，且前面會加上 `Where()` 運算式。 無法將運算式的輸入 `Where()` 結構化為運算式樹狀架構。
+時機 **：** 方法呼叫、等的所有實例都沒有 `Single()` `SingleOrDefault()` 任何引數，而且前面會加上 `Where()` 運算式。 運算式的輸入 `Where()` 無法以運算式樹狀架構的形式來構成。
 
-**原因：** 為方法移除不必要的呼叫， `.Where()` 可以改善效能和可讀性。
+**原因：** 移除對可列舉方法的不必要呼叫，可 `.Where()` 改善效能和可讀性。
 
 ## <a name="how-to"></a>操作方式
 
-1. 將游標放在 `SomeEnumerableType.Where(<LambdaExpression>).Single()` visual studio 中的實例內。
-2. 按**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
-3. 選取 [**簡化 LINQ 運算式**]
+1. 將游標放在 `SomeEnumerableType.Where(<LambdaExpression>).Single()` visual studio 的實例內。
+2. 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
+3. Select **簡化 LINQ 運算式**
 
-   ![將 typeof 轉換成 nameof](media/simplify-linq-expression.png)
+   ![將 typeof 轉換為 nameof](media/simplify-linq-expression.png)
 
 ## <a name="see-also"></a>另請參閱
 
