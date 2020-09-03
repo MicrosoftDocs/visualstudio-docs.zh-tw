@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c4bf76643ce1ea6e2f449c54fbc31d441418becf
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770339"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>如何：管理編輯器中的自動換行
@@ -24,11 +24,11 @@ ms.locfileid: "85770339"
 您可以設定和清除 [自動換行]**** 選項。 設定這個選項時，過長的行超出目前程式碼編輯器視窗寬度的部分會顯示在下一行。 清除這個選項時，例如，為了方便使用行號，您可以捲動到右邊以看到過長行的結尾。
 
 > [!NOTE]
-> 本主題適用於 Windows 上的 Visual Studio。 如 Visual Studio for Mac，請參閱[原始檔編輯器：自動換行](/visualstudio/mac/source-editor#word-wrap)。
+> 本主題適用於 Windows 上的 Visual Studio。 如 Visual Studio for Mac，請參閱 [來源編輯器：自動換行](/visualstudio/mac/source-editor#word-wrap)。
 
 ## <a name="to-set-word-wrap-preferences"></a>設定自動換行喜好設定
 
-1. 在 [工具]**** 功能表上，選取 [選項]****。
+1. 在 [工具] 功能表上，選取 [選項]。
 
 2. 在 [文字編輯器]**** 資料夾中，選擇 [所有語言]**** 子資料夾中的 [一般]**** 選項，全域設定這個選項。
 

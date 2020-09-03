@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6018558ead8ae8b5532253cfa32180491514b040
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467677"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
@@ -35,16 +35,16 @@ IDiaEnumSymbols : IUnknown
 |------------|-----------------|
 |[IDiaEnumSymbols::get__NewEnum](../../debugger/debug-interface-access/idiaenumsymbols-get-newenum.md)|抓取 `IEnumVARIANT Interface` 此列舉值的版本。|
 |[IDiaEnumSymbols::get_Count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md)|抓取符號的數目。|
-|[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|透過索引來抓取符號。|
-|[IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|抓取列舉序列中指定數目的符號。|
+|[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|藉由索引來抓取符號。|
+|[IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|抓取列舉序列中指定的符號數目。|
 |[IDiaEnumSymbols::Skip](../../debugger/debug-interface-access/idiaenumsymbols-skip.md)|略過列舉序列中指定數目的符號。|
-|[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|將列舉序列重設為開頭。|
-|[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|建立枚舉器，其中包含與目前列舉值相同的列舉狀態。|
+|[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|將列舉順序重設為開頭。|
+|[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
 
 ## <a name="remarks"></a>備註
-這個介面提供依特定類型的符號分組的符號，例如 `SymTagUDT` （使用者定義類型）或 `SymTagBaseClass` 。 若要處理依位址分組的符號，請使用[IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)介面。
+此介面提供依特定符號類型分組的符號，例如 `SymTagUDT` (使用者定義類型) 或 `SymTagBaseClass` 。 若要使用依位址分組的符號，請使用 [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) 介面。
 
-## <a name="notes-for-callers"></a>呼叫者的注意事項
+## <a name="notes-for-callers"></a>呼叫者注意事項
 藉由呼叫下列方法來取得此介面：
 
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
@@ -54,10 +54,10 @@ IDiaEnumSymbols : IUnknown
 - [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)
 
 ## <a name="example"></a>範例
-這個範例會示範如何取得 `IDiaEnumSymbols` 介面，然後使用該列舉來列出使用者定義類型（udt）。
+這個範例會示範如何取得 `IDiaEnumSymbols` 介面，然後使用該列舉來列出使用者定義型別 (udt) 。
 
 > [!NOTE]
-> `CDiaBSTR`是包裝的類別，當具現 `BSTR` 化超出範圍時，會自動處理釋放字串。
+> `CDiaBSTR` 是一個類別，會在具現 `BSTR` 化超出範圍時，包裝和自動處理釋出字串。
 
 ```C++
 void ShowUDTs(IDiaSymbol *pGlobals)
@@ -88,7 +88,7 @@ void ShowUDTs(IDiaSymbol *pGlobals)
 ## <a name="requirements"></a>需求
 標頭： Dia2。h
 
-程式庫： diaguids
+程式庫： diaguids .lib
 
 DLL： msdia80.dll
 

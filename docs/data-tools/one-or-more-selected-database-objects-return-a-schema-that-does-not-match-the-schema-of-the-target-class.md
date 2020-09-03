@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: c4bba0b227321e30f86aa552add245195b34e3b5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281899"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>一個或多個選取的資料庫物件傳回與目標類別之結構描述不符的結構描述

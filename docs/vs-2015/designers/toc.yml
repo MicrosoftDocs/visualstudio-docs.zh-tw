@@ -90,11 +90,11 @@
                           href: xelement-class-dynamic-properties.md
                         - name: 屬性
                           href: attribute-xelement-dynamic-property.md
-                        - name: 元素
+                        - name: 項目
                           href: element-xelement-dynamic-property.md
-                        - name: 元素
+                        - name: 項目
                           href: elements-xelement-dynamic-property.md
-                        - name: Descendants
+                        - name: 子系
                           href: descendants-xelement-dynamic-property.md
                         - name: 值
                           href: value-xelement-dynamic-property.md
@@ -112,7 +112,7 @@
                           href: walkthrough-linqtoxmldatabinding-example.md
                         - name: L2DBForm.xaml 原始程式碼
                           href: l2dbform-xaml-source-code.md
-                        - name: L2DBForm.xaml.cs Source Code
+                        - name: L2DBForm.xaml.cs 原始程式碼
                           href: l2dbform-xaml-cs-source-code.md
     - name: 使用 3D 資產來打造遊戲和應用程式
       items:

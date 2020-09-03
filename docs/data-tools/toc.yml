@@ -1,4 +1,4 @@
-- name: 概觀
+- name: 總覽
   href: accessing-data-in-visual-studio.md
 - name: 教學課程
   items:
@@ -142,7 +142,7 @@
               href: add-code-to-tableadapters-in-n-tier-applications.md
             - name: 將資料集和 TableAdapter 分成不同的專案
               href: separate-datasets-and-tableadapters-into-different-projects.md
-    - name: 控制
+    - name: 控制項
       items:
         - name: 將控制項繫結至資料來源
           href: bind-controls-to-data-in-visual-studio.md

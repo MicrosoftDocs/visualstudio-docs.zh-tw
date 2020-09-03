@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fed5b7f6cf3b18e854a9607b163b5e538f734915
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467565"
 ---
 # <a name="idiaenumtablesget_count"></a>IDiaEnumTables::get_Count
@@ -33,10 +33,10 @@ HRESULT get_Count (    LONG* pRetVal
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回資料表的數目。
+擴展傳回資料表的數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

@@ -8,14 +8,14 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: 詳細說明 Microsoft for Startups 計劃提供哪些訂閱。
 ms.openlocfilehash: 6c2fdcfc9fa71c1906a1033ac719b07cb0b157a4
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80233261"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>向初學者提供的 Visual Studio 訂用帳戶
-合格的初創公司誰加入微軟的啟動計畫可以賺取5視覺化工作室企業[每月雲訂閱](https://visualstudio.microsoft.com/vs/pricing/)。 
+加入 Microsoft for 新創公司計畫的合格新創公司，可以獲得 5 Visual Studio Enterprise [每月的雲端訂閱](https://visualstudio.microsoft.com/vs/pricing/)。 
 
 ## <a name="subscription-details"></a>訂用帳戶詳細資料 
 這些是與市售相同的訂閱，但沒有特殊限制。 每個訂用帳戶都必須先指派給終端使用者 (已獲得授權的使用者)，使用者才能執行 Visual Studio 並在 Azure DevOps Services 中辨識為 Visual Studio Enterprise 訂閱者。
@@ -41,10 +41,10 @@ ms.locfileid: "80233261"
 至於年度雲端訂閱，取消要到原購買起算 12 個月後的該月一日才會生效，或自上次年度續約收費起算 12 個月後生效。 例如，如果您在 2018 年 1 月 3 日購買了 Visual Studio Professional 年度雲端訂用帳戶，當此訂用帳戶自動續訂一年時，就會一直保持有效到 2019 年 2 月 1 日。 如果您這個日期和 2020 年 2 月 1 日之間的任何時間取消訂閱，則此訂閱會在 2020 年 2 月 1 日到期。 取消方在年度雲端訂閱的訂閱年度中不會有任何退款。
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
-- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
-- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 檔](https://docs.microsoft.com/azure/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
 [深入了解 Microsoft for Startups](https://startups.microsoft.com)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 75d13aaf5d5b4257ff6ec7c2efc52adbdca7df92
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85768788"
 ---
 # <a name="shader-designer-nodes"></a>著色器設計工具節點
@@ -39,9 +39,9 @@ ms.locfileid: "85768788"
 
      向量的值會複製至大小等於較大輸入之向量的前置項目，而且尾端項目設為 0.0。 例如，向量輸入 (5.0, 5.0) 加上四項目向量時，會變成向量 (5.0, 5.0, 0.0, 0.0)。 這會使用加法單位 0.0 保留輸出的第三個和第四個項目。
 
-## <a name="related-topics"></a>相關的主題
+## <a name="related-topics"></a>相關主題
 
-|Title|描述|
+|標題|描述|
 |-----------|-----------------|
 |[常數節點](../designers/constant-nodes.md)|描述您可用來代表著色器計算之常值和插補頂點狀態資訊的節點。 因為插入頂點狀態 (因此，每個像素都會不同)，所以每個像素著色器執行個體都會收到不同版本的常數。|
 |[參數節點](../designers/parameter-nodes.md)|所描述的節點可以用來代表著色器計算中的觀景窗位置、材質屬性、光源參數、時間以及其他應用程式狀態資訊。|

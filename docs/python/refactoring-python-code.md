@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: be93ac7b8bc0659da522abcf6000d97ec05d46b9
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801330"
 ---
 # <a name="refactor-python-code"></a>重構 Python 程式碼

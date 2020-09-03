@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 description: Microsoft 產品和服務合約 (MPSA) 中的 Visual Studio 訂閱
 ms.openlocfilehash: 90bfb27fcb80910f6add41c30d4c03ece1520ef4
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801460"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Microsoft 產品和服務合約 (MPSA) 中的 Visual Studio 訂閱

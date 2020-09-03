@@ -10,30 +10,30 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 487105350fe5c62a9451bccc5713c6506c76bf1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669694"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>在 Windows Form 中內嵌圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以將 DSL 圖表內嵌在 Windows 控制項中，這會出現在 [[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]] 視窗中。
+您可以將 DSL 圖表內嵌在 Windows 控制項中，它會出現在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 視窗中。
 
 ## <a name="embedding-a-diagram"></a>內嵌圖表
 
 #### <a name="to-embed-a-dsl-diagram-in-a-windows-control"></a>若要在 Windows 控制項中內嵌 DSL 圖表
 
-1. 將新的**使用者控制項**檔案加入至 DslPackage 專案。
+1. 將新的 **使用者控制項** 檔加入至 DslPackage 專案。
 
-2. 將面板控制項加入至使用者控制項。 此面板會包含 DSL 圖表。
+2. 將面板控制項新增至使用者控制項。 此面板會包含 DSL 圖表。
 
-     新增您需要的其他控制項。
+     加入您需要的其他控制項。
 
      設定控制項的錨點屬性。
 
-3. 在方案總管中，以滑鼠右鍵按一下使用者控制項檔案，然後按一下 [ **View Code**]。 將此函式和變數新增至程式碼：
+3. 在方案總管中，以滑鼠右鍵按一下使用者控制項檔案，然後按一下 [ **視圖程式碼**]。 將此函式和變數新增至程式碼：
 
     ```csharp
 
@@ -47,7 +47,7 @@ ms.locfileid: "72669694"
 
     ```
 
-4. 將新檔案新增至 DslPackage 專案，包含下列內容：
+4. 將新檔案新增至 DslPackage 專案，其中包含下列內容：
 
     ```
     using System.Windows.Forms;
@@ -71,13 +71,13 @@ ms.locfileid: "72669694"
 
     ```
 
-5. 若要測試 DSL，請按 F5 並開啟範例模型檔案。 圖表會出現在控制項內。 [工具箱] 和其他功能正常運作。
+5. 若要測試 DSL，請按 F5 並開啟範例模型檔案。 此圖表會出現在控制項內。 [工具箱] 和其他功能正常運作。
 
-#### <a name="updating-the-form-using-store-events"></a>使用存放區事件來更新表單
+#### <a name="updating-the-form-using-store-events"></a>使用存放區事件更新表單
 
-1. 在表單設計工具中，新增名為 `listBox1` 的**ListBox** 。 這會顯示模型中的元素清單。 它會與使用*存放區事件*的模型一起保留在 synchronism 中。 如需詳細資訊，請參閱[事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
+1. 在表單設計工具中，加入名為的 **ListBox** `listBox1` 。 這會顯示模型中的元素清單。 它會與使用 *存放區事件*的模型保持 synchronism。 如需詳細資訊，請參閱 [事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
-2. 在自訂程式碼檔案中，覆寫 DocView 類別的進一步方法：
+2. 在自訂程式碼檔案中，覆寫 DocView 類別的其他方法：
 
     ```
 
@@ -120,7 +120,7 @@ ms.locfileid: "72669694"
 
     ```
 
-3. 在使用者控制項背後的程式碼中，插入方法以接聽新增和移除的元素：
+3. 在使用者控制項背後的程式碼中，插入方法來接聽新增和移除的元素：
 
     ```
 
@@ -149,9 +149,9 @@ ms.locfileid: "72669694"
 
     ```
 
-4. 若要測試 DSL，請按 F5，然後在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗實例中，開啟範例模型檔案。
+4. 若要測試 DSL，請按 F5，並在的實驗實例中 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，開啟範例模型檔案。
 
-     請注意，清單方塊會顯示模型中的元素清單，而且在任何新增或刪除之後，以及復原和重做之後，都是正確的。
+     請注意，清單方塊會顯示模型中的專案清單，並且在任何新增或刪除之後，以及復原和重做之後都是正確的。
 
-## <a name="see-also"></a>請參閱
- [在程式碼中流覽和更新模型撰寫程式](../modeling/navigating-and-updating-a-model-in-program-code.md)代碼[，以自訂域特定語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+## <a name="see-also"></a>另請參閱
+ [在程式碼中流覽和更新模型撰寫程式](../modeling/navigating-and-updating-a-model-in-program-code.md)代碼 [以自訂域指定的語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

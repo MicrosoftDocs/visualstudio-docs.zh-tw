@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac07a4dc3f0516b955b4a53ba81204e28a765f1d
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467831"
 ---
 # <a name="idiaenumstackframesreset"></a>IDiaEnumStackFrames::Reset

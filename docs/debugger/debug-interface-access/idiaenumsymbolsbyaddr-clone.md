@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f81525147b30548184ae68c0ed3259d093a6685
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467670"
 ---
 # <a name="idiaenumsymbolsbyaddrclone"></a>IDiaEnumSymbolsByAddr::Clone
@@ -33,10 +33,10 @@ HRESULT Clone ( 
 #### <a name="parameters"></a>參數
  ppenum
 
-脫銷傳回[IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)物件，其中包含重複的列舉值。 符號不會重複，只有枚舉器。
+擴展傳回包含重複列舉值的 [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) 物件。 符號不會重複，只會複製列舉值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

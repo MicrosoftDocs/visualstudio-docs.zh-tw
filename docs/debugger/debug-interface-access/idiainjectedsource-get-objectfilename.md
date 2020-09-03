@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f223acd5d6f62417b8a47889aa4e9e4a116335c6
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467054"
 ---
 # <a name="idiainjectedsourceget_objectfilename"></a>IDiaInjectedSource::get_objectFilename
-抓取已編譯來源的目的檔案名稱。
+抓取來源編譯的目標目的檔名。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_objectFilename ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回已編譯來源的目的檔案名稱。
+擴展傳回編譯來源的目標目的檔名。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援此屬性，則傳回。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援這個屬性，則傳回。 否則會傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
