@@ -14,10 +14,10 @@ ms.workload:
 - aspnet
 - azure
 ms.openlocfilehash: e0f062108f19b38c6bf6514eda78098f493b3f78
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350650"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>使用快照偵錯工具針對即時 ASP.NET Azure Kubernetes 服務進行偵錯
@@ -33,11 +33,11 @@ ms.locfileid: "85350650"
 > * 設定快照點及檢視快照
 > * 設定記錄點
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
-* 適用于 Azure Kubernetes Services 的快照偵錯工具僅適用于具有**azure 開發工作負載**的 Visual Studio 2019 企業版或更高版本。 (您可以在 [個別元件]**** 索引標籤下的 [偵錯和測試]**** > [快照偵錯工具]**** 底下找到它。)
+* 適用于 Azure Kubernetes Services 的快照偵錯工具僅適用于 Visual Studio 2019 Enterprise 或更高版本的 **azure 開發工作負載**。 (您可以在 [個別元件]**** 索引標籤下的 [偵錯和測試]**** > [快照偵錯工具]**** 底下找到它。)
 
-    如果尚未安裝，請安裝[Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/)。
+    如果尚未安裝，請安裝 [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/)。
 
 * 快照集合適用於下列 Azure Kubernetes Services Web 應用程式：
   * 在 Debian 9 上的 .NET Core 2.2 或更新版本中執行的 ASP.NET Core 應用程式。
@@ -54,14 +54,14 @@ ms.locfileid: "85350650"
     > [!IMPORTANT]
     > 若要進行快照集偵錯，需開啟發行至您 Azure Kubernetes 服務的*相同版本原始程式碼*。
 
-1. 選擇 [ **Debug > 附加快照偵錯工具**...]。選取您的 web 應用程式部署所在的 AKS 資源和 Azure 儲存體帳戶，然後按一下 [**附加**]。 快照偵錯工具也支援[Azure App Service](debug-live-azure-applications.md)和[AZURE 虛擬機器（VM） & 虛擬機器擴展集](debug-live-azure-virtual-machines.md)。
+1. 選擇 **Debug > 附加快照偵錯工具**.。。選取您的 web 應用程式部署所在的 AKS 資源和 Azure 儲存體帳戶，然後按一下 [ **附加**]。 快照偵錯工具也支援 [Azure App Service](debug-live-azure-applications.md) 和 [Azure 虛擬機器 (VM) & 虛擬機器擴展集](debug-live-azure-virtual-machines.md)。
 
     ![從 [偵錯] 功能表啟動快照偵錯工具](../debugger/media/snapshot-debug-menu-attach.png)
 
     ![選取 Azure 資源](../debugger/media/snapshot-select-azure-resource-aks.png)
 
     > [!NOTE]
-    > （Visual Studio 2019 16.2 版和更新版本）快照偵錯工具已啟用 Azure 雲端支援。 請確定您選取的 Azure 資源和 Azure 儲存體帳戶都來自相同的雲端。 如果您有關于企業[Azure 合規性](https://azure.microsoft.com/overview/trusted-cloud/)設定的問題，請洽詢您的 azure 系統管理員。
+    >  (Visual Studio 2019 16.2 版和更新版本) 快照偵錯工具已啟用 Azure 雲端支援。 請確定您選取的 Azure 資源和 Azure 儲存體帳戶都是來自相同的雲端。 如果您對企業的 [azure 合規性](https://azure.microsoft.com/overview/trusted-cloud/) 設定有任何問題，請洽詢您的 azure 系統管理員。
 
 Visual Studio 現在已經處於快照集偵錯模式。
 
@@ -73,7 +73,7 @@ Visual Studio 現在已經處於快照集偵錯模式。
 
 ## <a name="set-a-snappoint"></a>設定快照點
 
-1. 在 [程式碼編輯器] 中，按一下您想要設定快照點的一行程式碼旁邊的左邊裝訂邊。 請確定它是您知道將會執行的程式碼。
+1. 在 [程式碼編輯器] 中，按一下您感興趣的程式程式碼旁邊的左邊裝訂邊來設定快照點。 請確定它是您知道將會執行的程式碼。
 
    ![設定快照點](../debugger/media/snapshot-set-snappoint.png)
 
@@ -86,7 +86,7 @@ Visual Studio 現在已經處於快照集偵錯模式。
 
 ## <a name="take-a-snapshot"></a>擷取快照集
 
-設定快照點之後，您可以前往網站的瀏覽器視圖，並執行標示為的程式程式碼，或等待使用者從網站的使用方式產生一個快照，以手動產生快照集。
+設定快照點之後，您可以手動產生快照集，方法是前往網站的瀏覽器視圖，並執行標示或等候使用者從網站使用方式產生的程式程式碼。
 
 ## <a name="inspect-snapshot-data"></a>檢查快照集資料
 
@@ -100,7 +100,7 @@ Visual Studio 現在已經處於快照集偵錯模式。
 
     您可以從這個檢視，將滑鼠移至變數上方以檢視 DataTips、使用 [區域]****、[監看式]****，以及 [呼叫堆疊]**** 視窗，也可以評估運算式。
 
-    網站本身仍然是即時的，使用者不會受到影響。 每個快照點預設只會擷取一個快照集：擷取快照集之後，快照點就會關閉。 如果想要在快照點擷取另一個快照集，可以按一下 [更新集合]**** 以重新開啟快照點。
+    網站本身仍在運作中，使用者也不會受到影響。 每個快照點預設只會擷取一個快照集：擷取快照集之後，快照點就會關閉。 如果想要在快照點擷取另一個快照集，可以按一下 [更新集合]**** 以重新開啟快照點。
 
 您也可以將更多快照點新增至應用程式，並使用 [更新集合]**** 按鈕將它們開啟。
 
@@ -108,7 +108,7 @@ Visual Studio 現在已經處於快照集偵錯模式。
 
 ## <a name="set-a-conditional-snappoint"></a>設定條件式快照點
 
-如果您難以在應用程式中重新建立特定狀態，請考慮使用條件式快照點。 條件式快照點可協助您控制何時製作快照集，例如當變數包含您想要檢查的特定值時。 您可以使用運算式、篩選或叫用次數設定條件。
+如果很難在您的應用程式中重新建立特定狀態，請考慮使用條件式快照點。 條件式快照點可協助您控制快照集的時間，例如當變數包含您想要檢查的特定值時。 您可以使用運算式、篩選或叫用次數設定條件。
 
 #### <a name="to-create-a-conditional-snappoint"></a>建立條件式快照點
 

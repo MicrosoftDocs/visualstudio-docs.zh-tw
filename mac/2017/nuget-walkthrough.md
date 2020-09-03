@@ -8,10 +8,10 @@ ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
 ms.topic: how-to
 ms.openlocfilehash: 58d749a1d014288754dcd9eb7e620730933d742a
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950407"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>在專案中包含 NuGet 套件
@@ -40,7 +40,7 @@ NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual 
 
 ![來源清單下拉式清單](media/nuget-walkthrough-Source.png)
 
-當視窗開啟時，它會從預設套件來源載入套件清單： nuget.org。初始結果如下所示：
+當視窗開啟時，會從預設套件來源載入套件清單： nuget.org。初始結果看起來像這樣：
 
 ![列出 NuGet 套件](media/nuget-walkthrough-AddPackages1.png)
 
@@ -94,7 +94,7 @@ using Newtonsoft.Json;
 
 ## <a name="adding-package-sources"></a>新增套件來源
 
-一開始會從 nuget.org 中取得可供安裝的套件。不過，您可以將其他封裝位置新增至 Visual Studio for Mac。 這適用於測試您自己正在開發的 NuGet 套件，或在公司或組織內使用私用 NuGet 伺服器。
+一開始會從 nuget.org 中取出可供安裝的套件。不過，您可以將其他封裝位置新增至 Visual Studio for Mac。 這適用於測試您自己正在開發的 NuGet 套件，或在公司或組織內使用私用 NuGet 伺服器。
 
 在 Visual Studio for Mac 中，巡覽至 [Visual Studio] > [喜好設定] > [NuGet] > [來源]**** 來檢視和編輯套件來源清單。 請注意，來源可以是遠端伺服器 (由 URL 指定) 或本機目錄。
 

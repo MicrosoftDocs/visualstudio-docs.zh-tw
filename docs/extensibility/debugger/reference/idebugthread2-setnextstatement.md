@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::設置下一個語句 |微軟文件
+title: IDebugThread2：： SetNextStatement |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4b390e5c021fa069ae3fb09eef1978caaf9cc8ed
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718659"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
-將當前指令指標設置到給定的代碼上下文。
+將目前的指令指標設定為指定的程式碼內容。
 
 ## <a name="syntax"></a>語法
 
@@ -43,22 +43,22 @@ int SetNextStatement ( 
 
 ## <a name="parameters"></a>參數
 `pStackFrame`\
-保留供將來使用;設置為空值。
+保留供日後使用;設定為 null 值。
 
 `pCodeContext`\
-[在][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件,用於描述即將執行的代碼位置及其上下文。
+在 [IDebugCodeCoNtext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 物件，描述要執行的程式碼位置及其內容。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。 下表顯示了其他可能的值。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 下表顯示其他可能的值。
 
 |值|描述|
 |-----------|-----------------|
-|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|下一個語句不能位於幀堆疊的更深的堆疊框架中。|
-|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|下一個語句不與堆疊中的任何幀相關聯。|
-|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|某些調試引擎無法在異常之後設置下一個語句。|
+|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|下一個語句不能在堆疊框架中更深入的框架堆疊。|
+|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|下一個語句與堆疊中的任何框架沒有關聯。|
+|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|某些偵錯工具引擎無法在例外狀況之後設定下一個語句。|
 
 ## <a name="remarks"></a>備註
- 指令指標指示要執行的下一個指令或語句。 此方法用於重試一行原始碼或強制執行以在另一個函數中繼續執行,例如。
+ 指令指標表示要執行的下一個指令或語句。 例如，這個方法可用來重試一行原始程式碼或強制繼續執行另一個函式。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -1,5 +1,5 @@
 ---
-title: Content_types的結構]xml 檔 |微軟文檔
+title: Content_types] .xml 檔案的結構 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,69 +14,69 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2d6eca44c08cf35e7b2075965c1b6139e7fb95bc
-ms.sourcegitcommit: d6828e7422c8d74ec1e99146fedf0a05f757245f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80395363"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>[Content_types].xml 檔案的結構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-包含有關 VSIX 包中內容類型的資訊。 Visual Studio 使用 [Content_Types]xml 檔來安裝包，但它不會自行安裝該檔。  
+包含 VSIX 封裝中內容類型的相關資訊。 Visual Studio 使用 [Content_Types] .xml 檔案安裝套件，但不會安裝檔案本身。  
   
 > [!NOTE]
-> 儘管本主題僅適用于 VSIX 包中使用的 [Content_Type]xml 檔，但 [Content_Types]xml 檔案類型是*開放打包約定 （OPC）* 標準的一部分。 有關詳細資訊，請參閱 OPC：在 MSDN 網站上[打包資料的新標準](https://msdn.microsoft.com/magazine/cc163372.aspx)。  
+> 雖然本主題僅適用于 VSIX 封裝中所使用的 [Content_Type] .xml 檔案，但 [Content_Types] .xml 檔案類型是 *開放式封裝慣例 (OPC) * 標準的一部分。 如需詳細資訊，請參閱 [OPC：將資料封裝](https://msdn.microsoft.com/magazine/cc163372.aspx) 在 MSDN 網站的新標準。  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 以下各節介紹根項目及其屬性和子項目。  
+ 下列各節描述根項目及其屬性和子項目。  
   
 ### <a name="root-element"></a>根項目  
   
-|元素|描述|  
+|項目|描述|  
 |-------------|-----------------|  
-|`Types`|包含枚舉 VSIX 包中的檔案類型的子項目。|  
+|`Types`|包含列舉 VSIX 封裝中檔案類型的子項目。|  
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
-|`Xmlns`|（必需。用於此 [Content_Types]xml 檔的架構的位置。|  
+|`Xmlns`| (必要項。 ) 用於這個 [Content_Types] .xml 檔案的架構位置。|  
   
-### <a name="attribute-name-attribute"></a>[屬性名稱]屬性  
+### <a name="attribute-name-attribute"></a>{屬性名稱}屬性  
   
-|                           值                           |                描述                |
+|                           值                           |                說明                |
 |-----------------------------------------------------------|-------------------------------------------|
 | `http://schemas.openformats.org/package/2006/content-types` | 內容類型架構的位置。 |
   
 ### <a name="child-elements"></a>子元素  
  `Types` 元素可以包含不限數目的 `Default` 元素。  
   
-|元素|描述|  
+|項目|描述|  
 |-------------|-----------------|  
-|`Default`|描述 VSIX 包中的內容類型。 包中的每個檔案類型都必須有自己的`Default`元素。|  
+|`Default`|描述 VSIX 套件中的內容類型。 封裝中的每個檔案類型都必須有自己的 `Default` 元素。|  
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
-|`Extension`|VSIX 包中檔的檔案名副檔名。|  
-|`ContentType`|描述與檔案名副檔名關聯的內容類型。|  
+|`Extension`|VSIX 封裝中檔案的副檔名。|  
+|`ContentType`|描述與副檔名相關聯的內容類型。|  
   
-### <a name="attribute-name-attribute"></a>[屬性名稱]屬性  
- Visual Studio 可識別關聯`ContentType``Extension`類型的以下值。  
+### <a name="attribute-name-attribute"></a>{屬性名稱}屬性  
+ Visual Studio 可辨識 `ContentType` 相關聯類型的下列值 `Extension` 。  
   
-|分機|ContentType|  
+|延伸模組|ContentType|  
 |---------------|-----------------|  
 |txt|text/plain|  
-|普格德夫|text/plain|  
+|.pkgdef|text/plain|  
 |Xml|text/xml|  
-|vsixmanifest|text/xml|  
+|extension.vsixmanifest|text/xml|  
 |htm 或 html|text/html|  
 |Rtf|應用程式/rtf|  
 |pdf|應用程式/pdf|  
 |GIF|image/gif|  
-|jpg 或 jpeg|圖像/jpg|  
+|jpg 或 jpeg|影像/jpg|  
 |tiff|image/tiff|  
 |vsix|應用程式/zip|  
 |zip|應用程式/zip|  
@@ -86,7 +86,7 @@ ms.locfileid: "80395363"
 ## <a name="example"></a>範例  
   
 ### <a name="description"></a>描述  
- 以下 [Content_Types]xml 檔描述了典型的 VSIX 包。  
+ 下列 [Content_Types] .xml 檔案描述一般 VSIX 套件。  
   
 ### <a name="code"></a>程式碼  
   
@@ -102,6 +102,6 @@ ms.locfileid: "80395363"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [VSIX 套裝軟體的剖析](../extensibility/anatomy-of-a-vsix-package.md)   
- [VSIX 擴展架構 1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [OPC：打包資料的新標準](https://msdn.microsoft.com/magazine/cc163372.aspx)
+ [VSIX 封裝的剖析](../extensibility/anatomy-of-a-vsix-package.md)   
+ [VSIX 延伸架構1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [OPC：封裝資料的新標準](https://msdn.microsoft.com/magazine/cc163372.aspx)

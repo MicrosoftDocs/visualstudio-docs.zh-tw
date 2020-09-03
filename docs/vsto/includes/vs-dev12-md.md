@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 31ea8024f2c02b11a1b9782c0740900f87ab979a
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "68151364"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315621"
 ---
 Visual Studio 2013

@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b435507c84d697ef27a2b37d6153a53dbe13cb3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68206077"
 ---
-# <a name="constructorenum"></a>CONSTRUCTOR_ENUM
+# <a name="constructor_enum"></a>CONSTRUCTOR_ENUM
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-選取不同類型的建構函式。  
+選取不同類型的函式。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,24 +44,24 @@ public enum ConstructorMatchOptions { 
   
 ## <a name="members"></a>成員  
  crAll  
- 選取所有建構函式。  
+ 選取所有的函式。  
   
  crNonStatic  
- 選取非靜態建構函式。  
+ 選取非靜態的函式。  
   
  crStatic  
- 選取 靜態建構函式。  
+ 選取靜態的函式。  
   
 ## <a name="remarks"></a>備註  
- 作為引數[EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)方法。  
+ 以引數形式傳遞至 [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) 方法。  
   
 ## <a name="requirements"></a>需求  
- 標頭： sh.h  
+ 標頭： sh. h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

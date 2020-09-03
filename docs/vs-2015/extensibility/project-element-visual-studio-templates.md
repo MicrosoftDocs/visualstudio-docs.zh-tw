@@ -1,5 +1,5 @@
 ---
-title: 專案項目 （Visual Studio 範本） |Microsoft Docs
+title: " (Visual Studio 範本的專案元素) |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,18 +14,18 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a5c9708bb8c35e66199aaf3665883307e48a63c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193974"
 ---
 # <a name="project-element-visual-studio-templates"></a>專案項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-指定要加入至專案目錄的檔案。  
+指定要加入至專案的檔案或目錄。  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateContent>  
  \<Project>  
   
@@ -48,14 +48,14 @@ ms.locfileid: "68193974"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`File`|必要屬性。<br /><br /> 在範本的.zip 檔中指定專案檔的名稱。|  
-|`ReplaceParameters`|選擇性屬性。<br /><br /> 布林值，指定專案檔是否有從範本建立專案時，必須被取代的參數值。 預設值為 `false`。|  
-|`TargetFileName`|選擇性屬性。<br /><br /> 從範本建立專案時，請指定專案檔的名稱。|  
-|`IgnoreProjectParameter`|選擇性屬性。<br /><br /> 指定專案是否應新增至目前的方案。 如果自訂參數的值"$*myCustomParameter*$」 存在專案是在參數取代檔案中，建立，但未加入目前開啟的方案的一部分。|  
+|`File`|必要屬性。<br /><br /> 指定範本 .zip 檔中的專案檔名稱。|  
+|`ReplaceParameters`|選擇性屬性。<br /><br /> 布林值，指定在從範本建立專案時，專案檔是否包含必須取代的參數值。 預設值為 `false`。|  
+|`TargetFileName`|選擇性屬性。<br /><br /> 指定從範本建立專案時的專案檔名稱。|  
+|`IgnoreProjectParameter`|選擇性屬性。<br /><br /> 指定是否應將專案加入至目前的方案。 如果自訂參數的值 "$*myCustomParameter*$" 存在於參數取代檔案中，則會建立專案，但不會將它新增為目前開啟之方案的一部分。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[資料夾](../extensibility/folder-element-visual-studio-project-templates.md)|選擇性項目。<br /><br /> 指定要加入至專案的資料夾。|  
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|選擇性項目。<br /><br /> 指定要加入至專案的檔案。|  
@@ -64,19 +64,19 @@ ms.locfileid: "68193974"
   
 |項目|描述|  
 |-------------|-----------------|  
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必要項目。|  
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必要元素。|  
   
 ## <a name="remarks"></a>備註  
  `Project` 是 `TemplateContent` 的選擇性子項目。  
   
- `Project`項目是用來指定專案，因此，僅在專案範本中無效。  
+ `Project`元素用來指定專案，因此只有在專案範本中才有效。  
   
- `Project` 項目可以有[資料夾](../extensibility/folder-element-visual-studio-project-templates.md)子系項目或[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)子系項目，但兩者的混合`Folder`和`ProjectItem`子系項目。  
+ `Project` 專案可以有 [資料夾](../extensibility/folder-element-visual-studio-project-templates.md) 子項目或 [專案](../extensibility/projectitem-element-visual-studio-project-templates.md) 子項目，但不能同時包含 `Folder` 和 `ProjectItem` 子項目。  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會自動重新命名使用者所輸入的名稱為基礎的專案檔名**新的專案** 對話方塊。 使用`TargetFileName`屬性如果您想要提供使用範本建立的專案檔的替代檔案名稱。  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 根據使用者在 [ **新增專案** ] 對話方塊中輸入的名稱，自動重新命名專案檔名稱。 `TargetFileName`如果您想要為以範本建立的專案檔提供替代的檔案名，請使用屬性。  
   
 ## <a name="example"></a>範例  
- 下列範例顯示的專案範本的中繼資料[!INCLUDE[csprcs](../includes/csprcs-md.md)]應用程式。  
+ 下列範例會顯示應用程式專案範本的中繼資料 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 。  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -103,7 +103,7 @@ ms.locfileid: "68193974"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
- [ProjectItem 項目 （Visual Studio 專案範本）](../extensibility/projectitem-element-visual-studio-project-templates.md)   
+ [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)   
+ [建立專案和專案範本](../ide/creating-project-and-item-templates.md)   
+ [專案範本 (Visual Studio 專案範本) ](../extensibility/projectitem-element-visual-studio-project-templates.md)   
  [Folder 元素 (Visual Studio 專案範本)](../extensibility/folder-element-visual-studio-project-templates.md)

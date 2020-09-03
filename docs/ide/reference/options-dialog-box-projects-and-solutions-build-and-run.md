@@ -16,15 +16,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24ba5bbf34ecc12c2508c538e74909ee0a10aef4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68461398"
 ---
-# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>選項對話方塊：專案和解決方案\>生成和運行
+# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>選項對話方塊： \> 建立和執行專案和方案
 
-在此對話方塊中，您可以指定可同時建置的 C++ 或 C# 專案最大數目、特定的預設建置行為，和一些建置記錄檔設定。 要訪問這些選項，請選擇 **"工具** > **選項**"展開**專案和解決方案**，然後選擇 **"生成"和"運行**"。
+在此對話方塊中，您可以指定可同時建置的 C++ 或 C# 專案最大數目、特定的預設建置行為，和一些建置記錄檔設定。 若要存取這些選項，請選取 [**工具**  >  **選項**] 展開 [**專案和方案**]，然後選取 [**建立並執行**]。
 
 **平行專案組建的最大數目**
 
@@ -58,10 +58,10 @@ ms.locfileid: "68461398"
 
 *只適用於 C++ 專案。*
 
-確定寫入生成日誌檔的資訊量，該檔位於*\\\<ProjectName>_\\\<調試專案名稱>.log*。
+決定要將多少資訊寫入組建記錄檔（位於* \\ \<ProjectName> \Debug \\ \<ProjectName> *）。
 
 ## <a name="see-also"></a>另請參閱
 
-- [編譯和建造](../../ide/compiling-and-building-in-visual-studio.md)
+- [編譯和建置](../../ide/compiling-and-building-in-visual-studio.md)
 - [選項對話方塊、專案和方案](projects-and-solutions-options-dialog-box.md)
 - [選項對話方塊、專案和方案、Web 專案](options-dialog-box-projects-and-solutions-web-projects.md)

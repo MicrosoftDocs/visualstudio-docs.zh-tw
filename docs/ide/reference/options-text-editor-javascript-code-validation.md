@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2090eeac014feb6a3a4308c920140d7934d3b0e4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68606002"
 ---
-# <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>選項對話方塊：文字編輯器\>JavaScript/TypeScript\>代碼驗證
+# <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>選項對話方塊：文字編輯器 \> JavaScript/TypeScript 程式 \> 代碼驗證
 
 使用 [選項]**** 對話方塊的 [程式碼驗證]**** 頁面，修改會影響 JavaScript 處理錯誤方式的設定。 您可以透過選擇功能表列上的 [工具]**** > [選項]****，並展開 [文字編輯器]**** > [JavaScript/TypeScript]**** > [程式碼驗證]**** 來存取 [程式碼驗證]**** 頁面。
 

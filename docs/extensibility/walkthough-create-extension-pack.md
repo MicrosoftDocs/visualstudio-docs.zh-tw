@@ -1,5 +1,5 @@
 ---
-title: 使用延伸套件項目樣本建立擴充套件 |微軟文件
+title: 使用延伸模組套件專案範本建立延伸模組套件 |Microsoft Docs
 ms.date: 07/27/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,31 +11,31 @@ manager: Meng
 ms.workload:
 - vssdk
 ms.openlocfilehash: fa1c141e18a3870eaad4b155d816e30ee207f45d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697754"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>逐步解說：建立延伸模組組件
 
-擴展包是一組可以一起安裝的擴展。 擴展包使您能夠輕鬆地與其他使用者共用您最喜愛的擴展,或針對特定方案將一組擴展捆綁在一起。
+擴充功能套件是一組可一起安裝的延伸模組。 延伸模組套件可讓您輕鬆地與其他使用者共用您最愛的擴充功能，或將一組延伸模組組合在一組特定案例中。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
-從 Visual Studio 2015 開始,Visual Studio SDK 將作為可選功能包含在可視化工作室設置中。 以後還可以安裝 VS SDK。 有關詳細資訊,請參閱[安裝可視化工作室 SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+從 Visual Studio 2015 開始，Visual Studio SDK 在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
-擴展包功能可從視覺工作室 15.8 預覽 2 開始。
+從 Visual Studio 15.8 Preview 2 開始，可以使用擴充功能套件功能。
 
-## <a name="create-an-extension-with-an-extension-pack-item-template"></a>使用延伸套件項目樣本建立擴充
+## <a name="create-an-extension-with-an-extension-pack-item-template"></a>使用延伸模組套件專案範本建立延伸模組
 
-擴展包項目範本創建一個擴展包,其中包含一組可以一起安裝的擴展。
+延伸模組套件專案範本會建立延伸模組套件，其中包含可一起安裝的延伸模組集合。
 
-1. 在**新項目對話**框中,搜尋「vsix」並選擇**VSIX 專案**。 對於**專案名稱**,鍵入"測試擴展包"。 選取 [建立]  。
+1. 在 [ **新增專案** ] 對話方塊中，搜尋 "vsix" 並選取 [ **vsix 專案**]。 在 [ **專案名稱**] 中，輸入「測試擴充功能套件」。 選取 [建立]  。
 
-2. 在**解決方案資源管理器**中,右鍵單擊專案節點並選擇「**添加新** > **項**」。 跳到視覺化 C#**擴充性**節點並選擇**延伸套件**。 保留預設檔名 (ExtensionPack1.cs)。
+2. 在 [**方案總管**中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 移至 [ **Visual c #** 擴充性] 節點，然後選取 [擴充功能 **套件**]。 將預設的檔案名保留 (ExtensionPack1.cs) 。
 
-3. 延伸套件1.vsext檔被新增,其中包含以下代碼
+3. 加入的 ExtensionPack1 vsext 檔案包含下列程式碼
 
    ```json
    {
@@ -56,57 +56,57 @@ ms.locfileid: "80697754"
    }
    ```
 
-4. 要包含在擴展包中的擴展的 vsixid 可以在[可視化工作室應用商店](https://marketplace.visualstudio.com/)中找到。 尋找要包含的副檔名,然後按下 **「複製 ID」。。** 您可以在上述檔中更新現有**vsixId,** 或向清單中添加另一個副檔名。
+4. 延伸模組套件中包含的延伸模組 vsixid 可以在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)上找到。 尋找您想要包含的延伸模組，然後按一下 [ **複製識別碼**]。 您可以更新上述檔案中的現有 **vsixId** ，或將其他副檔名新增至清單。
 
-    ![從應用程式商店複製 VsixId](media/vsixid-marketplace.png)
+    ![從 Marketplace 複製 VsixId](media/vsixid-marketplace.png)
 
-5. 生成專案並將擴展上載到應用商店。 請參閱[發佈視覺化工作室擴展](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)。
+5. 建立專案，並將您的延伸模組上傳至 Marketplace。 請參閱 [發行 Visual Studio 延伸](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)模組。
 
 > [!NOTE]
-> 擴展包只能安裝[在可視化工作室市場](https://marketplace.visualstudio.com/)或[專用庫](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)上可用的擴展。
+> 延伸模組套件只能安裝 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 或私用映射 [庫](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)中可用的擴充功能。
 
-## <a name="install-the-extension-pack-from-the-visual-studio-marketplace"></a>從視覺化工作室市場安裝擴充套件
+## <a name="install-the-extension-pack-from-the-visual-studio-marketplace"></a>從 Visual Studio Marketplace 安裝延伸模組套件
 
-現在,擴展已發佈,請將其安裝在 Visual Studio 中並在那裡進行測試。
+現在擴充功能已發佈，請將它安裝在 Visual Studio 中，並在該處進行測試。
 
 ::: moniker range="vs-2017"
 
-1. 在可視化工作室中,在 **「工具」** 功能表上,按一下 **「擴展和更新**」。
+1. 在 Visual Studio 中，按一下 [ **工具** ] 功能表上的 [ **擴充功能和更新**]。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. 在可視化工作室中,在 **「擴展」** 功能表上,按一下 **「託管擴展**」。。
+1. 在 Visual Studio 的 [ **延伸** 模組] 功能表上，按一下 [ **受管理的延伸**模組]。
 
 ::: moniker-end
 
-2. 按下 **「連線」 然後**搜尋「測試擴展包」。
+2. 按一下 [ **線上** ]，然後搜尋「測試擴充功能套件」。
 
-3. 按一下 [下載]  。 然後,將安排擴展包中包含的擴展及其擴展清單進行安裝。
+3. 按一下 [下載]  。 延伸模組及其內含的延伸模組清單，將會排程安裝。
 
-4. 下面是 **「管理擴展」** 對話方塊的範例延伸套件下載檢視。 如果只想在擴展包中安裝某些包含的擴展,則可以修改 **「計畫安裝」** 中的延伸清單。
+4. 以下是 [ **管理擴充** 功能] 對話方塊的範例擴充功能套件下載視圖。 如果您只想要在延伸模組套件中安裝部分包含的延伸模組，您可以在 [ **排程安裝**] 中修改擴充功能清單。
 
-    ![從應用商店下載擴展包](media/vside-extensionpack.png)
+    ![從 Marketplace 下載延伸模組套件](media/vside-extensionpack.png)
 
-5. 要完成安裝,關閉可視化工作室的所有實例。
+5. 若要完成安裝，請關閉 Visual Studio 的所有實例。
 
 ## <a name="remove-the-extension"></a>移除擴充功能
 
-要從電腦中移除副檔名,請:
+若要從電腦移除擴充功能：
 
 ::: moniker range="vs-2017"
 
-1. 在可視化工作室中,在 **「工具」** 功能表上,按一下 **「擴展和更新**」。
+1. 在 Visual Studio 中，按一下 [ **工具** ] 功能表上的 [ **擴充功能和更新**]。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. 在可視化工作室中,在 **「擴展」** 功能表上,按一下 **「託管擴展**」。。
+1. 在 Visual Studio 的 [ **延伸** 模組] 功能表上，按一下 [ **受管理的延伸**模組]。
 
 ::: moniker-end
 
-2. 測試**延伸套件**,然後單擊 **「卸載**」。。 然後,擴展包中包含的擴展及其擴展清單將安排卸載。
+2. 選取 [ **測試擴充功能套件** ]，然後按一下 [ **卸載**]。 延伸模組及其內含的延伸模組清單，將會排程卸載。
 
-3. 要完成卸載,關閉可視化工作室的所有實例。
+3. 若要完成卸載，請關閉 Visual Studio 的所有實例。

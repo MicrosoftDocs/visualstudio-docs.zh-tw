@@ -1,5 +1,5 @@
 ---
-title: IDebug文檔校驗和2::獲取校驗和演算法Id |微軟文件
+title: IDebugDocumentChecksum2：： GetChecksumAndAlgorithmId |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c26d5b9c2c45fd1ce932fc1108e4f77f2508cb31
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731936"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
-在最多要使用的位元組數的情況下檢索文件校驗和和演算法標識碼。
+使用指定的最大位元組數目，抓取檔總和檢查碼和演算法識別碼。
 
 ## <a name="syntax"></a>語法
 
@@ -46,22 +46,22 @@ public int GetChecksumAndAlgorithmId(
 
 ## <a name="parameters"></a>參數
 `pRetVal`\
-[出]校驗和演演演算法的唯一標識符。
+擴展總和檢查碼演算法的唯一識別碼。
 
 `cMaxBytes`\
-[在]用於校驗和的最大位元組數。
+在要用於總和檢查碼的最大位元組數目。
 
 `pChecksum`\
-[出]校驗和的值。
+擴展總和檢查碼的值。
 
 `pcNumBytes`\
-[出]用於校驗和的實際位元組數。
+擴展用於總和檢查碼的實際位元組數目。
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則,返回錯誤代碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
-下面的範例使用此方法獲取文檔的校驗和和演演演算法。
+下列範例會使用這個方法來取得檔的總和檢查碼和演算法。
 
 ```cpp
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)

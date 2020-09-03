@@ -8,10 +8,10 @@ ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
 ms.openlocfilehash: c51f3cd50598cd0c33b019c09f95554cc5f9058b
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950495"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Visual Studio for Mac 是否支援 Team Foundation 版本控制？
@@ -22,7 +22,7 @@ ms.locfileid: "85950495"
 
 ## <a name="alternative-version-control-options-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的替代版本控制選項
 
-如需 macOS 的最佳版本控制體驗，我們建議使用**Git** ，而不是 TEAM FOUNDATION 版本控制（TFVC）。 
+為了獲得最佳的 macOS 版本控制體驗，我們建議使用 **Git** ，而不是 TEAM FOUNDATION 版本控制 (TFVC) 。 
 
 Visual Studio for Mac 支援 Git，它是 Team Foundation Server (TFS)/Azure DevOps 中裝載之存放庫的預設選項。 若要深入了解有關搭配 TFS/Azure DevOps 使用 Git 的詳細資訊，請參閱[設定 Git 存放庫](/visualstudio/mac/set-up-git-repository)指南。
 
@@ -30,14 +30,14 @@ Visual Studio for Mac 支援 Git，它是 Team Foundation Server (TFS)/Azure Dev
 
 雖然 Visual Studio for Mac 為正式支援 TFVC，但此指南的剩餘部分提供在 macOS 上使用 TFVC 的一些因應措施。 如果您今天使用 TFVC 進行版本控制，可以使用以下解決方案來存取 TFVC 中裝載的原始程式碼：
 
-* 選項 1。 [使用 Visual Studio Code 和 Azure Repos 延伸模組（適用于圖形化 UI）](#use-visual-studio-code-and-the-azure-repos-extension)
+* 選項 1。 [ 針對圖形化 UI 使用 Visual Studio Code 和 Azure Repos 擴充功能](#use-visual-studio-code-and-the-azure-repos-extension)
 * 選項 2。 [使用 Team Explorer Everywhere 命令列用戶端 (TEE-CLC) 連線到您的存放庫](#connecting-using-the-team-explorer-everywhere-command-line-client)
 
-### <a name="option-1--use-visual-studio-code-and-the-azure-repos-extension"></a>選項 1。 <a id="use-visual-studio-code-and-the-azure-repos-extension"></a>使用 Visual Studio Code 和 Azure Repos 延伸模組
+### <a name="option-1--use-visual-studio-code-and-the-azure-repos-extension"></a>選項 1。 <a id="use-visual-studio-code-and-the-azure-repos-extension"></a> 使用 Visual Studio Code 和 Azure Repos 擴充功能
 
 如果您希望使用圖形化介面來管理版本控制中的檔案，則 Visual Studio Code 的 Azure Repos 延伸模組可提供由 Microsoft 支援的解決方案。 若要開始使用，請下載 [Visual Studio Code](https://code.visualstudio.com)，然後了解如何[設定 Azure Repos 延伸模組](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team)。
 
-### <a name="option-2--connecting-using-the-team-explorer-everywhere-command-line-client"></a>選項 2。 <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a>使用 Team Explorer Everywhere 命令列用戶端連接
+### <a name="option-2--connecting-using-the-team-explorer-everywhere-command-line-client"></a>選項 2。 <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a> 使用 Team Explorer Everywhere 命令列用戶端連接
 
 > [!IMPORTANT]
 > 作為 Team Explorer Everywhere README 的一部分，我們已[不再維護此專案](https://github.com/microsoft/team-explorer-everywhere)。

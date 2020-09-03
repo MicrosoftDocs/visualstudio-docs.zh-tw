@@ -9,22 +9,22 @@ ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
 ms.openlocfilehash: decbdc244a7947b715b8ba5b27bda5aaf50d2266
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950619"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>安裝 Visual Studio 2017 for Mac
 
 > [!NOTE]
-> 適用于 Mac 的 Visual Studio 2019[現](installation.md?view=vsmac-2019)已開放下載。 針對舊版的 Visual Studio for Mac，請參閱 Visual Studio [下載頁面](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)。
+> 適用于 Mac 的 Visual Studio 2019 [現在已可供使用](installation.md?view=vsmac-2019)。 針對舊版的 Visual Studio for Mac，請參閱 Visual Studio [下載頁面](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)。
 
 ## <a name="downgrading-from-visual-studio-2019-for-mac"></a>從 Visual Studio 2019 for Mac 降級嗎？
 
 為了獲得最佳體驗，在降級之前，您應該確定[解除安裝](uninstall.md) Visual Studio 2019 for Mac。 如果您遇到導致您下載的問題，請務必透過[回報問題](report-a-problem.md)讓我們知道。
  
-## <a name="requirements"></a>規格需求
+## <a name="requirements"></a>需求
 
 若要在下載 Visual Studio for Mac 時開始開發原生的跨平台應用程式，有必須安裝和設定以做為準備的數個項目。
 

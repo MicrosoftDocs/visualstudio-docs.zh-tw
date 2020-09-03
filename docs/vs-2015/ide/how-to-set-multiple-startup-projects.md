@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f751ef8ecc884c0e0b338d70f9e198fdc07807cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660145"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>如何：設定多個啟動專案
@@ -25,13 +25,13 @@ Visual Studio 可讓您指定在啟動偵錯工具時應執行的多個專案。
 
 ### <a name="to-set-multiple-startup-projects"></a>設定多個啟動專案
 
-1. 在方案總管  中，選取方案 (最上層節點)。 以滑鼠右鍵按一下節點以取得操作功能表。
+1. 在方案總管**** 中，選取方案 (最上層節點)。 以滑鼠右鍵按一下節點以取得操作功能表。
 
-2. 選取 [屬性]  。 [方案屬性頁]  對話方塊隨即開啟。
+2. 選取 [屬性] 。 [方案屬性頁]**** 對話方塊隨即開啟。
 
-3. 展開 [通用屬性]  節點，然後按一下 [啟始專案]  。
+3. 展開 [通用屬性]**** 節點，然後按一下 [啟始專案]****。
 
-4. 按一下 [多個啟始專案]  並設定適當的動作。 如需詳細資訊，請參閱 [NIB 如何：修改專案屬性和組態設定](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)。
+4. 按一下 [多個啟始專案]**** 並設定適當的動作。 如需詳細資訊，請參閱 [NIB 如何：修改專案屬性和組態設定](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)。
 
 ## <a name="see-also"></a>另請參閱
  [編譯和建立](../ide/compiling-and-building-in-visual-studio.md)[方案和專案](../ide/creating-solutions-and-projects.md)

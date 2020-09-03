@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
 ms.topic: overview
 ms.openlocfilehash: 532a245b8e217ea278bf5a3424a194ce87ae43f4
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950044"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中編譯和建置
@@ -47,7 +47,7 @@ Visual Studio for Mac 也可用來執行下列作業：
 
 ## <a name="building-from-azure-pipelines"></a>從 Azure Pipelines 建置
 
-* [建立您的 Xamarin 應用程式](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts)
+* [打造您的 Xamarin 應用程式](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts)
 * [使用 Xamarin 的連續整合](https://developer.xamarin.com/guides/cross-platform/ci/)
 
 ## <a name="see-also"></a>另請參閱

@@ -1,5 +1,5 @@
 ---
-title: 所需的連接埠供應商介面 |Microsoft Docs
+title: 必要的埠提供者介面 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,45 +12,45 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a065389a6b9b67b8bce82394569ce65afb0f8d55
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821422"
 ---
 # <a name="required-port-supplier-interfaces"></a>必要的連接埠提供者介面
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-連接埠提供者必須實作[IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)介面。[IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
+埠供應商必須執行 [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) 介面。[IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
   
- 由於連接埠提供者會提供連接埠，它也必須實作它們。 因此，它必須實作下列介面：  
+ 由於埠供應商會提供埠，因此也必須加以執行。 因此，它必須執行下列介面：  
   
 - [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)  
   
-     描述該連接埠，並可以列舉所有的連接埠上執行的處理程序。  
+     描述埠，而且可以列舉在埠上執行的所有進程。  
   
 - [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)  
   
-     提供啟動和終止的連接埠上的處理序。  
+     提供在埠上啟動和終止進程的。  
   
 - [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)  
   
-     提供一個機制，以通知它程式節點的建立和解構的這個連接埠的內容中執行的程式。 如需詳細資訊，請參閱 <<c0> [ 計劃節點](../../extensibility/debugger/program-nodes.md)。  
+     提供在此埠內容中執行之程式的機制，以在建立和終結程式節點時通知它。 如需詳細資訊，請參閱 [程式節點](../../extensibility/debugger/program-nodes.md)。  
   
 - `IConnectionPointContainer`  
   
-     提供的連接點[IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md)。  
+     提供 [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md)的連接點。  
   
-## <a name="port-supplier-operation"></a>連接埠供應商的作業  
- [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md)接收會收到通知時處理序，然後建立並終結的連接埠上的程式。 連接埠，才能傳送[IDebugProcessCreateEvent2](../../extensibility/debugger/reference/idebugprocesscreateevent2.md)處理程序建立時並[IDebugProcessDestroyEvent2](../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)處理程序時終結的連接埠。 連接埠也需要傳送[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)程式建立時並[IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)程式中的連接埠上執行的程序時損毀。  
+## <a name="port-supplier-operation"></a>埠供應商操作  
+ 當進程和程式在埠上建立和終結時， [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md) 接收就會收到通知。 建立進程時必須要有埠才能傳送 [IDebugProcessCreateEvent2](../../extensibility/debugger/reference/idebugprocesscreateevent2.md) ，並在埠上終結進程時進行 [IDebugProcessDestroyEvent2](../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) 。 建立程式時，也需要端口來傳送 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) ，並在埠上執行的進程終結程式時進行 [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) 。  
   
- 連接埠通常會傳送程式建立和終結事件以回應[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)並[RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)方法，分別。  
+ 埠通常會分別傳送程式建立和終結事件，以回應 [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) 和 [RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) 方法。  
   
- 因為連接埠可以啟動和終止處理序實體和邏輯的程式，也必須實作這些介面的偵錯引擎：  
+ 因為通訊埠可以啟動和終止實體進程和邏輯程式，所以這些介面也必須由 debug 引擎來執行：  
   
 - [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)  
   
-  描述實體的程序。 至少必須實作下列方法：  
+  描述實體處理常式。 至少必須執行下列方法：  
 
   - [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)  
 
@@ -66,11 +66,11 @@ ms.locfileid: "67821422"
 
 - [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)  
   
-    提供了 SDM attach 和 detach 本身的處理程序的方式。  
+    提供一種方式，讓 SDM 從進程附加和卸離本身。  
   
 - [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)  
   
-  描述邏輯的程式。 至少必須實作下列方法：  
+  描述邏輯程式。 至少必須執行下列方法：  
 
   - [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)  
 
@@ -80,7 +80,7 @@ ms.locfileid: "67821422"
   
 - [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)  
   
-     提供了 SDM 附加至這個程式的方式。  
+     提供方法讓 SDM 附加至此程式。  
   
 ## <a name="see-also"></a>另請參閱  
  [實作連接埠提供者](../../extensibility/debugger/implementing-a-port-supplier.md)

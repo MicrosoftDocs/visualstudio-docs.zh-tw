@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4600f27f62d6e840041a65b4128df128e4d36873
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659522"
 ---
 # <a name="list-modules-command"></a>列出模組命令
@@ -36,7 +36,7 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 ```
 
 #### <a name="parameters"></a>參數
- /Address： `yes|no` 選用。 指定是否要顯示模組的記憶體位址。 預設值為 `yes`。
+ /Address： `yes|no` 選擇性。 指定是否要顯示模組的記憶體位址。 預設值為 `yes`。
 
  /Name:`yes|no` 選擇性。 指定是否要顯示模組的名稱。 預設值為 `yes`。
 
@@ -44,13 +44,13 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 
  /Path:`yes|no` 選擇性。 指定是否要顯示模組的路徑。 預設值為 `yes`。
 
- /Process： `yes|no` 選用。 指定是否要顯示模組的處理序。 預設值為 `no`。
+ /Process： `yes|no` 選擇性。 指定是否要顯示模組的處理序。 預設值為 `no`。
 
- /SymbolFile： `yes|no` 選用。 指定是否要顯示模組的符號檔。 預設值為 `no`。
+ /SymbolFile： `yes|no` 選擇性。 指定是否要顯示模組的符號檔。 預設值為 `no`。
 
- /SymbolStatus： `yes|no` 選用。 指定是否要顯示模組的符號狀態。 預設值為 `yes`。
+ /SymbolStatus： `yes|no` 選擇性。 指定是否要顯示模組的符號狀態。 預設值為 `yes`。
 
- /Timestamp： `yes|no` 選用。 指定是否要顯示模組的時間戳記。 預設值為 `no`。
+ /Timestamp： `yes|no` 選擇性。 指定是否要顯示模組的時間戳記。 預設值為 `no`。
 
  /Version:`yes|no` 選擇性。 指定是否要顯示模組的版本。 預設值為 `no`。
 

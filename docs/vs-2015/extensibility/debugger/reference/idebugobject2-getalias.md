@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetAlias |Microsoft Docs
+title: IDebugObject2：： GetAlias |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b05d416da41265f6727df843b1b686fcfe5107f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194605"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-如果有的話，請取得與這個物件相關聯的別名。  
+取得與此物件相關聯的別名（如果有的話）。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,13 +40,13 @@ int GetAlias(
   
 #### <a name="parameters"></a>參數  
  `ppAlias`  
- [out]會傳回[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)物件，表示這個物件的別名，否則會傳回 null 值。  
+ 擴展傳回代表這個物件之別名的 [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) 物件;否則，會傳回 null 值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 物件的別名會透過呼叫[CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)方法。  
+ 使用 [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) 方法的呼叫來建立物件的別名。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   

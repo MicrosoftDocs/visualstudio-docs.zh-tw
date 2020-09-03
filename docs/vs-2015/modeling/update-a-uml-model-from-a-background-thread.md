@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e6626faa09f1e38506c2d205d13caa9a3707fc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659457"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>從背景執行緒更新 UML 模型
@@ -32,7 +32,7 @@ ms.locfileid: "72659457"
 
 #### <a name="to-run-the-example"></a>執行範例
 
-1. 在C#專案中建立命令處理常式，如在[模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)中所述。
+1. 在 c # 專案中建立命令處理常式，如在 [模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)中所述。
 
 2. 請確定專案包含這些組件的參考：
 
@@ -48,7 +48,7 @@ ms.locfileid: "72659457"
 
    - System.Windows.Forms
 
-3. 將名為**ProgressForm**的 Windows form 新增至專案。 它應該會顯示一則訊息，而這則訊息指出正在更新。 這不需要有任何其他控制。
+3. 將名為 **ProgressForm**的 Windows form 加入至專案。 它應該會顯示一則訊息，而這則訊息指出正在更新。 這不需要有任何其他控制。
 
 4. 加入含有步驟 7 後所顯示程式碼的 C# 檔案。
 
@@ -58,7 +58,7 @@ ms.locfileid: "72659457"
 
 6. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體中，建立或開啟 UML 類別圖。
 
-7. 以滑鼠右鍵按一下 UML 類別圖中的任何位置，然後按一下 [**加入數個 Uml 類別**]。
+7. 以滑鼠右鍵按一下 UML 類別圖表中的任意位置，然後按一下 [ **加入數個 Uml 類別**]。
 
    數個新的類別方塊會出現在圖表中，並以半秒的間隔逐一出現。
 
@@ -187,5 +187,5 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
 
  您可以使用 `uiThreadHolder.Invoke()`，在 UI 執行緒中執行作業。
 
-## <a name="see-also"></a>請參閱
- [在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)在[模型圖表上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)
+## <a name="see-also"></a>另請參閱
+ [在模型圖表上定義功能表命令在](../modeling/define-a-menu-command-on-a-modeling-diagram.md)[模型圖表上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)

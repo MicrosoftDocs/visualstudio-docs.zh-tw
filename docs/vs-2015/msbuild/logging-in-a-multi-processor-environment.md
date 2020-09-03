@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 35184f6ef724a9f0e803a10c9bda2c6981313ed6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205968"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>在多處理器環境中記錄
@@ -60,7 +60,7 @@ public interface IForwardingLogger: INodeLogger
   
  若要在轉送記錄器中轉送事件，請呼叫 <xref:Microsoft.Build.Framework.IEventRedirector> 介面的 <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A> 方法。 傳遞適當的 <xref:Microsoft.Build.Framework.BuildEventArgs> 或系出物件作為參數。  
   
- 如需詳細資訊，請參閱[建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)。  
+ 如需詳細資訊，請參閱 [建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)。  
   
 ### <a name="attaching-a-distributed-logger"></a>附加分散式記錄器  
  若要在命令列建置上附加分散式記錄器，請使用 `/distributedlogger` (或者，簡稱是 `/dl`) 參數。 用於指定記錄器類型和類別名稱的格式與 `/logger` 參數相同，差異在於分散式記錄器包含兩個記錄類別：轉送記錄器和中央記錄器。 以下是附加分散式記錄器範例：  

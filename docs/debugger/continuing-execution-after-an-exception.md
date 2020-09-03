@@ -26,19 +26,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e94867d845988b787247c32d32afd35af946972
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350676"
 ---
 # <a name="continuing-execution-after-an-exception"></a>例外狀況之後繼續執行
-當偵錯工具因為例外狀況而中斷執行時，預設會看到**例外狀況 Helper**。 如果您已在 [**選項**] 對話方塊中停用**例外**狀況協助程式，您會看到 [**例外狀況助理**（c # 或 Visual Basic）] 或 [**例外**狀況] 對話方塊（c + +）。
+當偵錯工具因為例外狀況而中斷執行時，預設會看到 **例外**狀況協助程式。 如果您已在 [**選項**] 對話方塊中停用 [**例外**狀況協助程式]，就會看到 [**例外狀況助理**] (c # 或 Visual Basic) 或 [**例外**狀況] 對話方塊 (c + +) 。
 
- 當**例外**狀況協助程式出現時，您可以嘗試修正造成例外狀況的問題。
+ 當 **例外** 狀況協助程式出現時，您可以嘗試修正造成例外狀況的問題。
 
 ## <a name="managed-and-native-code"></a>Managed 和機器碼
- 在 managed 和機器碼中，您可以在未處理的例外狀況之後，繼續在相同的執行緒中執行。 **例外**狀況協助程式會將呼叫堆疊回溯至擲回例外狀況的時間點。
+ 在 managed 和機器碼中，您可以在未處理的例外狀況之後，繼續在相同的執行緒中執行。 **例外狀況 Helper**會將呼叫堆疊回溯到擲回例外狀況的位置。
 
 ## <a name="mixed-code"></a>混合程式碼
  如果在偵錯原生和 Managed 混合的程式碼時發生未處理的例外狀況，作業系統條件約束會禁止回溯呼叫堆疊。 如果您嘗試使用捷徑功能表回溯呼叫堆疊，就會出現錯誤訊息，說明在混合程式碼偵錯期間，偵錯工具無法從未處理的例外狀況回溯。

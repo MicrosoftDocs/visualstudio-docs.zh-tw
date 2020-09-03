@@ -14,20 +14,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a47a9c5964ccf15d2c609233eb600f39bc3ad2d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205929"
 ---
 # <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502：所分析之處理序的 CPU 使用量上限
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-規則 Id |DA0502 |  
-|類別目錄 |資源監視 |  
-|程式碼剖析方法 |所有 |  
-|訊息 |此規則僅供參考。 Process()\\%Processor Time 計數器會測量所分析之處理序的 CPU 使用量。 所報告值是所有測量間隔所觀察到最大值。|  
-|規則類型 |參考 |  
+規則識別碼 |DA0502 |  
+|類別 |資源監視 |  
+|分析方法 |全部 |  
+|訊息 |此規則僅供資訊之用。 Process()\\%Processor Time 計數器會測量所分析之處理序的 CPU 使用量。 所報告值是所有測量間隔所觀察到最大值。|  
+|規則類型 |資訊 |  
   
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  
   

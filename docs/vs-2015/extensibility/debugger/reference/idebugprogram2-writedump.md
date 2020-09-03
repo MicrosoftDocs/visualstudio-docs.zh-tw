@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::WriteDump |Microsoft Docs
+title: IDebugProgram2：： WriteDump |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 491515d2778c6ad16287739bfc88d8134903d2bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205795"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-寫入檔案中的傾印。  
+將傾印寫入檔案。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,16 +42,16 @@ int WriteDump( 
   
 #### <a name="parameters"></a>參數  
  `DumpType`  
- [in]值，以從[DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md)列舉，指定的傾印，型別，比方說，short 或 long。  
+ 在 [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md) 列舉中的值，指定傾印的類型，例如簡短或 long。  
   
  `pszDumpUrl`  
- [in]要寫入傾印的 URL。 一般而言，這是採用`file://c:\path\filename.ext`，但可能是任何有效的 URL。  
+ 在要將傾印寫入其中的 URL。 一般而言，這是的格式 `file://c:\path\filename.ext` ，但可能是任何有效的 URL。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 目前的堆疊框架、 本身的堆疊、 執行緒執行程式，並可能是由程式所擁有的任何記憶體中的清單，通常會包含程式的傾印。  
+ 程式傾印通常會包含目前的堆疊框架、堆疊本身、在程式中執行的執行緒清單，以及程式所擁有的任何記憶體。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

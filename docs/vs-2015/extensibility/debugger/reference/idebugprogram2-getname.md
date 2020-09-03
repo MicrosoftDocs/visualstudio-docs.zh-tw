@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetName |Microsoft Docs
+title: IDebugProgram2：： GetName |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0c9873e7b179df5639c4f169811977c3f39e4415
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148699"
 ---
 # <a name="idebugprogram2getname"></a>IDebugProgram2::GetName
@@ -40,13 +40,13 @@ int GetName( 
   
 #### <a name="parameters"></a>參數  
  `pbstrName`  
- [out]傳回程式的名稱。  
+ 擴展傳回程序的名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法所傳回的名稱一律是其中含有一個描述程式的使用者可顯示易記名稱。  
+ 這個方法所傳回的名稱一律是易記的使用者可顯示名稱，可描述程式。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

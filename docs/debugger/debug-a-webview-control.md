@@ -1,5 +1,5 @@
 ---
-title: Debug Web 視圖控制項（UWP） |Microsoft Docs
+title: " (UWP) 的 Web 工作控制項進行 Debug 錯 |Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,13 +15,13 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: a96e4db66ec26870ac92c52209d7aa6f22225b21
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350637"
 ---
-# <a name="debug-a-webview-control-in-a-uwp-app"></a>在 UWP 應用程式中對 Web 工作控制項進行 Debug
+# <a name="debug-a-webview-control-in-a-uwp-app"></a>在 UWP 應用程式中將 Web 程式控制項進行偵錯工具
 
  若要在 Windows 執行階段應用程式中檢查及偵錯 `WebView` 控制項，您可以設定 Visual Studio 在您啟動應用程式時附加指令碼偵錯工具。 您有兩種方式可以 `WebView` 使用偵錯工具與控制項互動：
 
@@ -54,13 +54,13 @@ ms.locfileid: "85350637"
 
 3. 巡覽到包含 `Webview` 控制項的頁面。
 
-4. 選擇 [Debug]、[ `WebView` **Windows**]、 ** **[ **DOM 總管**]，然後選擇您要檢查之的 URL，以開啟控制項的 [DOM 總管] 視窗 `WebView` 。
+4. `WebView`選擇 [ **Debug**]、[ **Windows**]、[ **DOM 總管**]，然後選擇您想要檢查的 URL，以開啟控制項的 DOM 總管視窗 `WebView` 。
 
      ![開啟 DOM 總管](../debugger/media/js_dom_webview.png "JS_DOM_WebView")
 
      與 `WebView` 相關的 [DOM 總管] 會顯示為 Visual Studio 中的新索引標籤。
 
-5. 如[使用 DOM 總管的 DEBUG CSS 樣式](quickstart-debug-html-and-css.md)中所述，查看和修改即時 DOM 元素和 CSS 樣式。
+5. 如 [使用 DOM 總管的 DEBUG CSS 樣式](quickstart-debug-html-and-css.md)中所述，請參閱和修改即時 DOM 元素和 css 樣式。
 
 ### <a name="use-the-javascript-console-window-to-inspect-and-debug-a-webview-control"></a>使用 [JavaScript 主控台] 視窗檢查及偵錯 WebView 控制項
 
@@ -68,20 +68,20 @@ ms.locfileid: "85350637"
 
 2. 如果您尚未這麼做，請將 `WebView` 控制項加入到應用程式，然後按 F5 開始偵錯。
 
-3. `WebView`選擇 [**調試**程式]、[ **Windows**]、[ **javascript 主控台**]，以開啟控制項的 [JavaScript 主控台] 視窗。
+3. `WebView`選擇 [ **Debug**]、[ **Windows**]、[ **javascript 主控台**]，開啟控制項的 [JavaScript 主控台] 視窗。
 
      隨即顯示 [JavaScript 主控台] 視窗。
 
 4. 巡覽到包含 `Webview` 控制項的頁面。
 
-5. 在 [主控台] 視窗中，選取 [ `iFrame` 目標] 清單中的控制項所顯示的網頁或 `WebView` 。 **Target**
+5. 在主控台視窗中，選取 [ `iFrame` `WebView` **目標** ] 清單中控制項所顯示的網頁或。
 
      ![JavaScript 主控台視窗中的目標選項](../debugger/media/js_console_target.png "JS_Console_Target")
 
     > [!NOTE]
     > 使用主控台，您可以一次與單一 `WebView`、`iFrame`、共用連絡人或 Web 背景工作互動。 每個項目需要個別的 Web 平台主機 (WWAHost.exe) 執行個體。 您一次可以與一個主機互動。
 
-6. 在您的應用程式中查看和修改變數，或使用主控台命令，如[快速入門： Debug javascript](../debugger/quickstart-debug-javascript-using-the-console.md)和[JavaScript 主控台命令](../debugger/javascript-console-commands.md?view=vs-2017)中所述。
+6. 在您的應用程式中查看及修改變數，或使用主控台命令（如 [快速入門： Debug javascript](../debugger/quickstart-debug-javascript-using-the-console.md) 和 [javascript 主控台命令](../debugger/javascript-console-commands.md?view=vs-2017)中所述）。
 
 ## <a name="see-also"></a>另請參閱
 

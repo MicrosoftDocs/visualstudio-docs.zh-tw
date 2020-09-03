@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2::獲取文檔類 ID |微軟文件
+title: IDebugDocument2：： GetDocumentClassID |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 71683c91082f477da530ec1be1fdc7627d6a7635
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732036"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
-獲取文檔的類標識碼。
+取得檔的類別識別碼。
 
 ## <a name="syntax"></a>語法
 
@@ -40,13 +40,13 @@ int GetDocumentClassID( 
 ```
 
 ## <a name="parameters"></a>參數
-`pclsid`[出]返回作為文件的類 ID 的 GUID。
+`pclsid` 擴展傳回 GUID，也就是檔的類別識別碼。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 類GUID可用於實例化每個類,每個類都表示文檔。
+ 類別 GUID 可以用來具現化個別類別，每個類別都代表一個檔。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

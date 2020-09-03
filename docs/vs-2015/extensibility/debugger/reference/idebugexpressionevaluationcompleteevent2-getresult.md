@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluationCompleteEvent2::GetResult |Microsoft Docs
+title: IDebugExpressionEvaluationCompleteEvent2：： GetResult |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 73227762270fe4e22e6edc2643ede2d1e7a9bd70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148723"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
@@ -40,13 +40,13 @@ int GetResult( 
   
 #### <a name="parameters"></a>參數  
  `ppResult`  
- [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，表示運算式評估的結果。  
+ 擴展傳回代表運算式評估結果的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件中包含評估運算式的值。 請注意，這個值可以是一個複雜的值，例如陣列的最終結果必須是數字或字串向使用者顯示的值。  
+ 傳回的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 物件包含已評估之運算式的值。 請注意，這個值可能是複雜值（例如陣列），但最終結果必須是向使用者顯示的數值或字串值。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)   

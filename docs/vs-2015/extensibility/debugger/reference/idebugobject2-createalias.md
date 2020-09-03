@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::CreateAlias |Microsoft Docs
+title: IDebugObject2：： CreateAlias |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 070340d72006f4b81ac306dcf05d721105bb875a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194635"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-建立唯一的 「 識別碼 」 或 「 這個物件的別名，或傳回現有的別名。  
+建立此物件的唯一識別碼或別名，或傳回現有的別名。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,13 +40,13 @@ int CreateAlias(
   
 #### <a name="parameters"></a>參數  
  `ppAlias`  
- [out]新的 （或現有的） 的別名。  
+ 擴展新的 (或現有的) 別名。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 別名是代表特定的物件，而物件是在記憶體中的標籤。  
+ 當物件在記憶體中時，別名是代表特定物件的標籤。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   
