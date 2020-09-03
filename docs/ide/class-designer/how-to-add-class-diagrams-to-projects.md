@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a54b01f718c2faab8d36cc8e44805707fd0cc35f
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85771030"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>如何：將類別圖表新增到專案
@@ -42,11 +42,11 @@ ms.locfileid: "85771030"
 
 ## <a name="add-a-blank-class-diagram-to-a-project"></a>將空白類別圖表新增至專案
 
-1. 在**方案總管**中，以滑鼠右鍵按一下專案節點，然後選擇 [新增]**** > [新增項目]****。 或者，按**Ctrl** + **Shift** + **A**。
+1. 在**方案總管**中，以滑鼠右鍵按一下專案節點，然後選擇 [新增]**** > [新增項目]****。 或者，按下**Ctrl** + **Shift** + **A**。
 
-   [**加入新專案**] 對話方塊隨即開啟。
+   [ **加入新專案** ] 對話方塊隨即開啟。
 
-2. 展開 [**通用專案**]  >  **[一般**]，然後從範本清單中選取 [**類別圖表**]。 若是 Visual C++ 專案，請在 [公用程式]**** 分類中尋找**類別圖表**範本。
+2. 展開**Common Items**  >  **[一般一般**專案]，然後從 [範本] 清單中選取 [**類別圖表**]。 若是 Visual C++ 專案，請在 [公用程式]**** 分類中尋找**類別圖表**範本。
 
    > [!NOTE]
    > 若您沒有看到**類別圖表**範本，請[遵循這些步驟](#install-the-class-designer-component)安裝 Visual Studio 的**類別設計工具**元件。
@@ -68,7 +68,7 @@ ms.locfileid: "85771030"
 
 ## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>在類別圖表中顯示完整專案的內容
 
-在**方案總管**或類別檢視中，以滑鼠右鍵按一下專案，然後選擇 [**視圖**]，再選擇 [**視圖類別圖表**]。
+在 **方案總管** 或類別檢視中，以滑鼠右鍵按一下專案，然後選擇 [ **視圖**]，再選擇 [ **視圖類別圖**]。
 
 就會建立會自動填入內容的類別圖表。
 
@@ -79,4 +79,4 @@ ms.locfileid: "85771030"
 
 - [如何：使用類別設計工具建立類型](how-to-create-types.md)
 - [如何：查看現有的類型](how-to-view-existing-types.md)
-- [設計和視圖類別和類型](designing-and-viewing-classes-and-types.md)
+- [設計和查看類別和類型](designing-and-viewing-classes-and-types.md)

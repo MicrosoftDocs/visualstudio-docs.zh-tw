@@ -1,5 +1,5 @@
 ---
-title: 字形控制(來源 VS 套件) :微軟文件
+title: 字元控制項 (原始檔控制 VSPackage) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,27 +12,27 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9db1b4542eae293e39cda674fac3eb984aa77d3e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708324"
 ---
-# <a name="glyph-control-source-control-vspackage"></a>字形控制 (來源)
-原始碼管理 VSPackages 可用於的深度整合的一部分是能夠顯示自己的字形來指示原始程式碼管理下的項的狀態。
+# <a name="glyph-control-source-control-vspackage"></a>字元控制項 (原始檔控制 VSPackage) 
+可供原始檔控制 Vspackage 使用的深層整合有一部分，就是能夠顯示自己的字元來指出原始檔控制下的專案狀態。
 
-## <a name="levels-of-glyph-control"></a>字形控制等級
- 狀態字形是顯示項目時指示項目目前狀態的圖示,例如在**解決方案資源管理器**或**類別檢視中**。 原始碼管理 VSPackage 可以執行兩個級別的字形控制。 它可以將字形的選擇限制為[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 提供的預定義的字形集,也可以定義要顯示的自訂字形集。
+## <a name="levels-of-glyph-control"></a>字型控制項的層級
+ 狀態圖像是一個圖示，指出專案在顯示時的目前狀態（例如，在 **方案總管** 或 **類別檢視**中）。 原始檔控制 VSPackage 可以執行兩個層級的字元控制項。 它可以將字元選擇限制為 IDE 所提供的一組預先定義的字元 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，也可以定義一組要顯示的自訂圖像。
 
-### <a name="default-set-of-glyphs"></a>預設字形集
- 要確定與**解決方案資源管理員**中的項目的狀態字形,專案使用 要求來源控制項中的狀態字<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.GetSccGlyph%2A>形 。 原始碼管理 VSPackage 可能決定將字形的選擇限制為 IDE 提供的預定義字形。 在這種情況下,VSPackage 傳遞一個值陣列,表示在*vsshell.idl*中定義的字形枚舉。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>。 這是由 IDE 設置的預定義字形集,例如已簽入字形的掛鎖和簽出字形的複選標記。
+### <a name="default-set-of-glyphs"></a>預設的一組字元
+ 若要判斷與 **方案總管**中的專案相關聯的狀態圖像，專案會使用從原始檔控制要求狀態圖像 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.GetSccGlyph%2A> 。 原始檔控制 VSPackage 可能會決定要讓選擇的字元限制為 IDE 所提供的預先定義圖像。 在此情況下，VSPackage 會傳回值陣列，這些值代表 *vsshell*中定義的圖像列舉。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>。 這是 IDE 所設定的一組預先定義的字元，例如已簽入圖像的掛鎖，以及簽出圖像的核取記號。
 
-### <a name="custom-set-of-glyphs"></a>自訂字形集
- 原始碼管理 VSPackage 在安裝時可以使用自己的字形來提供獨特的外觀。 當新的原始碼管理 VSPackage 處於活動狀態時,它應該能夠開始使用自己的字形,即使以前的原始程式碼管理 VSPackage 仍然載入但不活動。 在此模式下,原始程式碼管理 VSPackage 仍可以使用現有圖示,[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]以便在選擇 時保持與外觀一致的外觀。
+### <a name="custom-set-of-glyphs"></a>自訂的一組字元
+ 原始檔控制 VSPackage 可以在安裝時，使用自己的圖像來取得獨特的外觀和風格。 當新的原始檔控制 VSPackage 為作用中時，即使先前的原始檔控制 VSPackage 仍處於非使用中狀態，也應該能夠開始使用自己的圖像。 在此模式中，原始檔控制 VSPackage 仍然可以使用現有的圖示，以保持與選擇一致的外觀 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
- 該服務<xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>支援一個介面,VS<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>包可以選擇實現該介面,IDE 會要求該介面。 當 IDE 發出[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]請求時 ,將嘗試從當前註冊的原始程式碼管理 VSPackage 獲取此介面。 如果介面存在於已註冊的 VSPackage 中,則 IDE 的自定義字形請求將成功;如果該介面位於已註冊的 VSPackage 中,則 IDE 對自定義字形的請求將成功;否則,IDE[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]將使用其預設的字形集。
+ 此 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> 服務支援介面， <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs> 此介面可讓 VSPackage 選擇性地執行，而 IDE 將會要求您這樣做。 當 IDE 提出要求時， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 接著會嘗試從目前註冊的原始檔控制 VSPackage 取得這個介面。 如果介面存在於已註冊的 VSPackage 中，IDE 的自訂字元要求便會成功;否則， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 會使用其預設的字元組。
 
- 該方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs.GetCustomGlyphList%2A>[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]用於獲取顯示各種原始程式碼管理狀態的影像清單。 源控件 VSPackage 將自定義字形的句柄返回到映射清單的句柄。 IDE 此時會複製圖像清單,然後使用它選擇要顯示的字形。 如果不支援新介面或`IVsSccGlyphs::GetCustomGlyphList`該方法`E_NOTIMPL`返回 ,則 IDE[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]將從 提供的 字形的默認清單中獲取其字形。
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs.GetCustomGlyphList%2A>使用方法 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 來取得顯示各種原始檔控制狀態的影像清單。 原始檔控制 VSPackage 會將影像清單的控制碼傳回至 IDE，以作為其自訂字元。 IDE 會在此時建立影像清單的複本，並在稍後用它來選擇要顯示的圖像。 如果不支援新的介面或方法傳回 `IVsSccGlyphs::GetCustomGlyphList` ，則 `E_NOTIMPL` IDE 會從所提供的圖像的預設清單中取得其字型 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
 ## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>

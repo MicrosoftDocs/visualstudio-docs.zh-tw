@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetMemoryContext |Microsoft Docs
+title: IDebugReference2：： GetMemoryCoNtext |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0d9f3aa8ef59997a326eeae54df1216d96508207
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202505"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
@@ -40,7 +40,7 @@ int GetMemoryContext ( 
   
 #### <a name="parameters"></a>參數  
  `ppMemory`  
- [out]傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，表示參考的值相關聯的記憶體。  
+ 擴展傳回 [IDebugMemoryCoNtext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 物件，代表與參考值相關聯的記憶體。  
   
 ## <a name="return-value"></a>傳回值  
  一律傳回 `E_NOTIMPL`。  

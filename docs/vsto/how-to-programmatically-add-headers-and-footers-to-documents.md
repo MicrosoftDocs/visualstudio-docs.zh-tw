@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 52724103df17a1eaaf364f255f127a576beda798
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519921"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>如何：以程式設計方式在檔中加入頁首和頁尾
@@ -72,4 +72,4 @@ ms.locfileid: "85519921"
 ## <a name="see-also"></a>另請參閱
 - [如何：以程式設計方式建立新檔](../vsto/how-to-programmatically-create-new-documents.md)
 - [如何：以程式設計方式在檔中擴充範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [如何：以程式設計方式對檔中找到的專案執行迴圈](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
+- [如何：以程式設計方式在檔中找到的專案之間執行迴圈](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)

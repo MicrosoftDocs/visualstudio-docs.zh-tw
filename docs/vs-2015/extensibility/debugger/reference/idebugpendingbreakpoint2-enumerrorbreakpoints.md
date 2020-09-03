@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::EnumErrorBreakpoints |Microsoft Docs
+title: IDebugPendingBreakpoint2：： EnumErrorBreakpoints |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f9cac8b19e6281b8993e84d13ae60138ddaeac89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201075"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得產生這個暫止中斷點的所有錯誤中斷點的清單。  
+取得由此暫止中斷點所產生的所有錯誤中斷點清單。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,16 +43,16 @@ int EnumErrorBreakpoints( 
   
 #### <a name="parameters"></a>參數  
  `bpErrorType`  
- [in]從值的組合[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)選取要列舉的錯誤類型的列舉型別。  
+ 在 [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) 列舉中的值組合，可選取要列舉的錯誤類型。  
   
  `ppEnum`  
- [out]傳回[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)物件，其中包含一份[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)物件。  
+ 擴展傳回 [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) 物件，其中包含 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 物件的清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果中斷點已遭刪除。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 `E_BP_DELETED`如果中斷點已刪除，則會傳回。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CPendingBreakpoint`公開的物件[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)介面。  
+ 下列範例顯示如何針對 `CPendingBreakpoint` 公開 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 介面的簡單物件，執行這個方法。  
   
 ```cpp#  
 HRESULT CPendingBreakpoint::EnumErrorBreakpoints(  

@@ -1,5 +1,5 @@
 ---
-title: '&lt;signature &gt; （JavaScript） |Microsoft Docs'
+title: '&lt;&gt; (JavaScript) 的簽章 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b4c640c28ada16a8a03943fcd1362d4fd521772c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671121"
 ---
-# <a name="ltsignaturegt-javascript"></a>&lt;signature &gt; （JavaScript）
+# <a name="ltsignaturegt-javascript"></a>&lt;&gt; (JavaScript) 的簽章
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-為函式或方法的一組相關元素，以提供多載函式的檔。
+針對函式或方法的一組相關元素進行分組，以提供多載函式的檔。
 
 ## <a name="syntax"></a>語法
 
@@ -33,18 +33,18 @@ ms.locfileid: "72671121"
 ```
 
 #### <a name="parameters"></a>參數
- `externalid` 選擇項。 如果 `vsdoc` [\<loc >](../ide/loc-javascript.md)元素的 `format` 屬性，這個屬性會指定用來尋找與簽章相關聯之 XML 程式碼的成員識別碼。 與 `locid` 屬性不同的是，這個屬性會指定應該載入成員中具有此識別碼的所有元素。 XML 程式碼中的任何相關聯描述資訊也會與簽章中指定的元素合併。 這可讓您在側車檔案中指定其他元素（例如 `<capability>`），而不需在原始程式檔中指定這些專案。 `externalid` 是選擇性屬性。
+ `externalid` 選擇項。 如果 `format` 元素的屬性 [\<loc>](../ide/loc-javascript.md) 為，則 `vsdoc` 這個屬性會指定用來尋找與簽章相關聯之 XML 程式碼的成員識別碼。 與屬性不同的是 `locid` ，這個屬性會指定成員中必須載入具有此識別碼的所有元素。 存在於 XML 程式碼中的任何相關描述資訊，也會與簽章中指定的元素合併。 這可讓您在側車檔中指定其他元素（例如 `<capability>` ），而不在原始程式檔中指定它們。 `externalid` 是選擇性屬性。
 
- `externalFile` 選擇項。 指定要在其中尋找 `externalid` 的檔案名。 如果沒有 `externalid` 存在，則會忽略這個屬性。 這是選擇性屬性。 預設值是目前檔案的名稱，但副檔名為 .xml，而不是 .js。 根據預設，當地語系化的受控資源查閱規則會用來尋找檔案。
+ `externalFile` 選擇項。 指定要在其中尋找的檔案名 `externalid` 。 如果不存在，則會忽略這個屬性 `externalid` 。 這是選擇性屬性。 預設值是目前檔案的名稱，但副檔名為 .xml，而不是 .js。 根據預設，當地語系化的 managed 資源查閱規則會用來尋找檔案。
 
  `helpKeyword` 選擇項。 F1 說明的關鍵字。
 
- `locid` 選擇項。 有關欄位的當地語系化資訊識別碼。 該識別項會是成員識別碼，或對應由 OpenAjax 中繼資料所定義訊息包中的 `name` 屬性值。 識別項類型會依據在 [\<loc>](../ide/loc-javascript.md) 標籤中指定的格式而有所不同。
+ `locid` 選擇項。 有關欄位之當地語系化資訊的識別碼。 該識別項會是成員識別碼，或對應由 OpenAjax 中繼資料所定義訊息包中的 `name` 屬性值。 識別碼類型取決於在標記中指定的格式 [\<loc>](../ide/loc-javascript.md) 。
 
 ## <a name="remarks"></a>備註
- 針對 .js 檔案中的每個多載函式描述使用一個 `<signature>` 元素，或針對指定的每個外部成員識別碼使用一個 `<signature>` 元素。
+ 針對 .js 檔案中的每個多載函式描述使用一個專案 `<signature>` ，或 `<signature>` 針對指定的每個外部成員識別碼使用一個元素。
 
- 在任何語句之前，必須將 `<signature>` 元素放在函式主體中。 當您使用[\<summary >](../ide/summary-javascript.md)、 [\<param >](../ide/param-javascript.md)或[\<returns > 元素](../ide/returns-javascript.md)的元素時，請將其他元素放在 `<signature>` 區塊內。
+ 專案 `<signature>` 必須放在函數主體中的任何語句之前。 使用、或專案搭配專案時 [\<summary>](../ide/summary-javascript.md) [\<param>](../ide/param-javascript.md) ，請 [\<returns>](../ide/returns-javascript.md) `<signature>` 將其他元素放在區塊內 `<signature>` 。
 
 ## <a name="example"></a>範例
  下列程式碼範例示範如何使用 `<signature>` 元素。
@@ -90,4 +90,4 @@ function add(a, b) {
 ```
 
 ## <a name="see-also"></a>另請參閱
- [XML 文件註解](../ide/xml-documentation-comments-javascript.md)
+ [XML 檔批註](../ide/xml-documentation-comments-javascript.md)

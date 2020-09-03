@@ -10,10 +10,10 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: f45b186153b4cc046d35fd941f6a80e108476fc0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585765"
 ---
 # <a name="preview-changes-window"></a>[預覽變更] 視窗
@@ -31,4 +31,4 @@ ms.locfileid: "75585765"
 ## <a name="see-also"></a>另請參閱
 
 - [在 Visual Studio 中重構](../ide/refactoring-in-visual-studio.md)
-- [快速操作](../ide/quick-actions.md)
+- [快速動作](../ide/quick-actions.md)

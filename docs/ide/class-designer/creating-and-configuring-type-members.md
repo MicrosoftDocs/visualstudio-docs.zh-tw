@@ -30,17 +30,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2bb65cc70bfec5e8eafc4a823d24f609166d4327
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85771048"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>在類別設計工具中建立及設定類型成員
 
 您可以將這些成員新增至某個類別圖表上的類型，以及在 [類別細節]**** 視窗中設定這些成員：
 
-|**型別**|**可以包含的成員**|
+|**類型**|**可以包含的成員**|
 |--------------| - |
 |類別|方法、屬性 (針對 C# 和 Visual Basic)、欄位、事件 (針對 C# 和 Visual Basic)、建構函式 (方法)、解構函式 (方法)、常數|
 |列舉|member|
@@ -55,18 +55,18 @@ ms.locfileid: "85771048"
 
 ## <a name="common-tasks"></a>常見工作
 
-|Task|支援內容|
+|工作|支援內容|
 |----------| - |
 |**開始使用：** 您必須先開啟 [類別細節]**** 視窗，才可建立及設定類型成員。|- [開啟 [類別細節] 視窗](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [類別細節使用注意事項](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [顯示唯讀資訊](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [類別圖表和類別細節視窗中的鍵盤和滑鼠快捷方式](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**建立和修改類型成員：** 您可以使用 [類別細節]**** 視窗來建立新的成員、修改成員，以及將參數新增至方法。|- [建立成員](creating-and-configuring-type-members.md#create-members)<br />- [修改類型成員](creating-and-configuring-type-members.md#modify-type-members)<br />- [將參數新增至方法](creating-and-configuring-type-members.md#add-parameters-to-methods)|
+|**建立和修改類型成員：** 您可以使用 [類別細節]**** 視窗來建立新的成員、修改成員，以及將參數新增至方法。|- [建立成員](creating-and-configuring-type-members.md#create-members)<br />- [修改類型成員](creating-and-configuring-type-members.md#modify-type-members)<br />- [將參數加入至方法](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>開啟類別細節視窗
 
-依預設，當您開啟新的類別圖表時會自動出現 [類別細節]**** 視窗。 請參閱[如何：將類別圖表新增至專案](how-to-add-class-diagrams-to-projects.md)）。 您也可以採用下列方式開啟 [類別細節]**** 視窗：
+依預設，當您開啟新的類別圖表時會自動出現 [類別細節]**** 視窗。 請參閱 [如何：將類別圖表加入至專案](how-to-add-class-diagrams-to-projects.md)) 。 您也可以採用下列方式開啟 [類別細節]**** 視窗：
 
 - 在圖表中的任一類別上按一下滑鼠右鍵以顯示操作功能表，然後選取 [類別細節]****。
 
-- **View**  >  從功能表列選取 [查看**其他 Windows**  >  **類別詳細資料**]。
+- **View**  >  從功能表列中選取 [查看**其他 Windows**  >  **類別的詳細資料**]。
 
 ## <a name="create-members"></a>建立成員
 
@@ -114,7 +114,7 @@ ms.locfileid: "85771048"
 
      類型會取得焦點，而其內容會顯示於 [類別細節]**** 視窗。
 
-2. 在 [**類別細節**] 視窗中，于包含您要新增之成員類型的區段中，按一下 [] **\<add member>** 。 例如，如果您想要新增欄位，請按一下 [] **\<add field>** 。
+2. 在 [ **類別細節** ] 視窗中，于包含您要新增之成員類型的區段中，按一下 **\<add member>** 。 例如，如果您想要新增欄位，請按一下 **\<add field>** 。
 
 3. 輸入您要建立的成員名稱，並且按 Enter 鍵。
 
@@ -155,13 +155,13 @@ ms.locfileid: "85771048"
 
 - **\<add member>**
 
-     [**類別細節**] 視窗中的最後一個資料列包含 **\<add member>** [**名稱**] 儲存格中的文字。 如果按一下這個儲存格，便會建立新的成員。 如需詳細資訊，請參閱[建立成員](creating-and-configuring-type-members.md#create-members)。
+     [ **類別細節** ] 視窗中的最後一個資料列包含 [ **\<add member>** **名稱** ] 儲存格中的文字。 如果按一下這個儲存格，便會建立新的成員。 如需詳細資訊，請參閱[建立成員](creating-and-configuring-type-members.md#create-members)。
 
 - **屬性視窗中的成員屬性**
 
      [類別細節]**** 視窗會顯示 [屬性] 視窗中出現的成員屬性的子集。 在一個位置變更屬性，便會在全域變更該屬性的值。 這包括在其他位置顯示的屬性值。
 
-- **摘要**
+- **總結**
 
      [摘要]**** 儲存格會公開成員的相關資訊摘要。 按一下 [摘要]**** 儲存格中的省略符號，即可檢視或編輯成員之 [摘要]****、[傳回型別]**** 和 [備註]**** 的相關資訊。
 
@@ -192,15 +192,15 @@ ms.locfileid: "85771048"
 
      如果 [名稱]**** 欄太窄而無法顯示完整名稱，將滑鼠指向參數名稱就會顯示參數的名稱。
 
-- **型別**
+- **類型**
 
-     [**參數類型**] 儲存格使用 IntelliSense，可讓您從目前專案或參考專案中所有可用類型的清單中進行選擇。
+     [ **參數類型** ] 儲存格使用 IntelliSense，可讓您從目前專案或參考專案中所有可用類型的清單中選擇。
 
 - **修飾詞**
 
      參數列中的 [修飾詞]**** 儲存格可以接受並顯示參數的新修飾詞。 若要輸入新的參數修飾詞，請使用下拉式清單方塊，若在 C# 中請選取 [None]****、[ref]****、[out]**** 或 [params]****，若在 VB 中則請選取 [ByVal]****、[ByRef]**** 或 [ParamArray]****。
 
-- **摘要**
+- **總結**
 
      參數列中的 [摘要]**** 儲存格可讓您輸入程式碼註解，在程式碼編輯器中輸入參數時，該程式碼註解就會出現在 IntelliSense 中。
 
@@ -208,7 +208,7 @@ ms.locfileid: "85771048"
 
      成員的最後一個參數列在 [名稱]**** 儲存格中包含 **<新增參數\>** 字樣。 按一下這個儲存格即可建立新參數。 如需詳細資訊，請參閱[將參數新增至方法](creating-and-configuring-type-members.md#add-parameters-to-methods)。
 
-[**屬性**] 視窗會顯示 [**類別細節**] 視窗中顯示的相同參數屬性： [**名稱**]、[**類型**]、[**修飾**詞]、[**摘要**]，以及選擇性的 [**預設**屬性]。 在其中一個位置變更屬性將會全域更新屬性值，包括在另一個位置的顯示值。
+[ **屬性** ] 視窗會顯示 [ **類別細節** ] 視窗中顯示的相同參數屬性： **名稱**、 **類型**、 **修飾**詞、 **摘要**，以及 **選用的預設** 屬性。 在其中一個位置變更屬性將會全域更新屬性值，包括在另一個位置的顯示值。
 
 > [!NOTE]
 > 若要將參數新增至委派，請參閱[建立成員](creating-and-configuring-type-members.md#create-members)。
@@ -224,9 +224,9 @@ ms.locfileid: "85771048"
 
 2. 在 [類別細節]**** 視窗上，展開要新增參數的方法所屬列。
 
-     隨即出現縮排的參數列，其中僅包含一對括弧和單字** \<add parameter> 。**
+     縮排的參數資料列隨即出現，其中只包含一對括弧和單字** \<add parameter> 。**
 
-3. 按一下 **\<add parameter>** ，輸入新參數的名稱，然後按**enter**。
+3. 按一下 **\<add parameter>** ，輸入新參數的名稱，然後按 **enter**。
 
      如此，便會將新參數新增至方法以及方法的程式碼中。 [類別細節]**** 和 [屬性] 視窗中便會顯示新的參數。
 
@@ -240,9 +240,9 @@ ms.locfileid: "85771048"
 
 2. 在 [類別細節]**** 視窗上，展開要新增選擇性參數的方法所屬列。
 
-     隨即出現縮排的參數列，其中僅包含一對括弧和單字** \<add parameter> 。**
+     縮排的參數資料列隨即出現，其中只包含一對括弧和單字** \<add parameter> 。**
 
-3. 按一下 **\<add parameter>** ，輸入新參數的名稱，然後按**enter**。
+3. 按一下 **\<add parameter>** ，輸入新參數的名稱，然後按 **enter**。
 
      如此，便會將新參數新增至方法以及方法的程式碼中。 [類別細節]**** 和 [屬性] 視窗中便會顯示新的參數。
 

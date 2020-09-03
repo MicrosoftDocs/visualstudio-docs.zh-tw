@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpoint 無綁定事件2::獲取原因 |微軟文件
+title: IDebugBreakpointUnboundEvent2：： GetReason |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9830309f0a40aee37982554e8920a95d289eb74c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734715"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
-獲取斷點未綁定的原因。
+取得未系結中斷點的原因。
 
 ## <a name="syntax"></a>語法
 
@@ -41,16 +41,16 @@ int GetReason(
 
 ## <a name="parameters"></a>參數
 `pdwUnboundReason`\
-[出]從[BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md)枚舉返回值,指定斷點未綁定的原因。
+擴展從 [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) 列舉傳回值，指定中斷點未系結的原因。
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則,返回錯誤代碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
-原因包括斷點在編輯和繼續操作後反彈到其他位置,或者確定斷點被錯誤地綁定。
+原因包括在編輯後繼續作業之後，將中斷點重新系結至不同的位置，或判斷中斷點是否已系結錯誤。
 
 ## <a name="example"></a>範例
-下面的示例演示如何為公開[IDebugBreakpoint UnbundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)介面的**CBreakpoint 未綁定 DebugEventBase**物件實現此方法。
+下列範例示範如何針對公開[IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)介面的**CBreakpointUnboundDebugEventBase**物件，執行這個方法。
 
 ```cpp
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(

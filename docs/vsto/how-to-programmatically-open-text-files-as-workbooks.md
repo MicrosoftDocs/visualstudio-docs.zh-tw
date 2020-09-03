@@ -15,14 +15,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7a0f1b384aafb491183a750f17653ab55f2003e2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519823"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>如何：以程式設計方式將文字檔開啟為活頁簿
-  您可以將文字檔開啟為活頁簿。 您必須傳入要開啟之文字檔的名稱。 您可以指定數個選擇性參數，例如要開始剖析的資料列編號，以及檔案中的資料行格式。
+  您可以將文字檔開啟為活頁簿。 您必須傳入要開啟之文字檔的名稱。 您可以指定數個選擇性參數，例如要開始剖析的資料列編號，以及檔案中資料的資料行格式。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -31,11 +31,11 @@ ms.locfileid: "85519823"
  [!code-vb[Trin_VstcoreExcelAutomation#80](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#80)]
 
 ## <a name="compile-the-code"></a>編譯程式碼
- 這個範例需要下列元件：
+ 此範例需要下列元件：
 
-- 名為的逗點分隔文字檔 `Test.txt` ，其中至少包含三行文字。
+- 名為的逗號分隔文字檔 `Test.txt` ，其中至少包含三行文字。
 
-- `Test.txt`要儲存在 C 磁片磁碟機上的文字檔。
+- `Test.txt`要儲存在磁片磁碟機 C 上的文字檔。
 
 ## <a name="see-also"></a>另請參閱
 - [使用活頁簿](../vsto/working-with-workbooks.md)

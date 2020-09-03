@@ -1,5 +1,5 @@
 ---
-title: 專案模型的元素 |微軟文件
+title: 專案模型的元素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,37 +13,37 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cf847e35878dc84bb32fe81053c01c23e565fc4c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708529"
 ---
 # <a name="elements-of-a-project-model"></a>專案模型的元素
-中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]所有專案的介面和實現共用一個基本結構:專案類型的專案模型。 在專案模型中(即您正在開發的 VSPackage)中,您將創建符合設計決策的物件,並與 IDE 提供的全域功能協同工作。 例如,儘管控制專案項的保留方式,但不控制必須保留檔的通知。 當使用者將焦點放在打開的專案項上並選擇 **「保存在**[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**選單欄上的檔案**」功能表上時,專案類型代碼必須攔截 IDE 的命令,保留檔,並將檔發送回 IDE,通知檔不再更改。
+中所有專案的介面和實 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 作為共用基本結構：專案類型的專案模型。 在您要開發的 VSPackage 專案模型中，您會建立符合設計決策的物件，並與 IDE 所提供的全域功能一起運作。 您可以控制專案專案的保存方式，例如，您無法控制必須保存檔案的通知。 當使用者將焦點放在開啟的專案專案，並在功能表列上的 [檔案 **] 功能表上選擇 [** **儲存**] 時 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，您的專案類型程式碼必須從 IDE 攔截命令、保存檔案，然後將通知傳送回 ide，表示檔案已不再變更。
 
- 您的 VS 套件透過提供對 IDE 介面的存取的服務與 IDE 進行互動。 例如,通過特定服務,您可以監視和路由命令,併為專案中所做的選擇提供上下文資訊。 VSPackage 所需的所有全球 IDE 功能均由服務提供。 有關服務的詳細資訊,請參閱[如何:獲取服務](../../extensibility/how-to-get-a-service.md)。
+ 您的 VSPackage 會透過提供 IDE 介面存取權的服務，與 IDE 互動。 例如，透過特定的服務，您可以監視和路由傳送命令，並提供在專案中所做選擇的內容資訊。 VSPackage 所需的所有全域識別碼E 功能都是由服務所提供。 如需服務的詳細資訊，請參閱 [如何：取得服務](../../extensibility/how-to-get-a-service.md)。
 
- 其他實現注意事項:
+ 其他實行考慮：
 
-- 單個專案模型可以包含多個項目類型。
+- 單一專案模型可以包含一個以上的專案類型。
 
-- 項目類型和相應的項目工廠在 GUID 中獨立註冊。
+- 專案類型和「附隨」專案 factory 會與 Guid 分開註冊。
 
-- 當使用者透過[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]UI 創建新專案時,每個專案都必須具有範本檔或嚮導來初始化新專案檔。 例如,[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]模板初始化最終成為 .vcproj 檔的內容。
+- 當使用者透過 UI 建立新專案時，每個專案都必須具有範本檔案或 wizard，才能初始化新的專案檔 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 例如， [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 範本會初始化最終變成 vcproj 檔案的內容。
 
-  下圖顯示了構成典型項目實現的主要介面、服務和物件。 您可以使用應用程式幫助器`HierUtil7`,創建基礎物件和其他程式設計樣板。 有關`HierUtil7`應用程式協助程式的詳細資訊,請參閱[使用 HierUtil7 專案類別來實現項目類型 (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)。
+  下圖顯示組成一般專案執行的主要介面、服務和物件。 您可以使用應用程式協助程式 `HierUtil7` 來建立基礎物件和其他程式設計的程式設計。 如需應用程式協助程式的詳細資訊 `HierUtil7` ，請參閱 [使用 HierUtil7 專案類別來執行 c + +)  (的專案類型 ](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)。
 
-  ![視覺化工作室專案模型圖形](../../extensibility/internals/media/vsprojectmodel.gif "vs 專案模型")專案模型
+  ![Visual Studio 專案模型圖形](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel") 專案模型
 
-  有關上圖中列出的介面和服務以及關係圖中未包括的其他可選介面的詳細資訊,請參閱[Project 模型核心元件](../../extensibility/internals/project-model-core-components.md)。
+  如需上圖中所列介面和服務的詳細資訊，以及圖表中未包含的其他選用介面，請參閱 [專案模型核心元件](../../extensibility/internals/project-model-core-components.md)。
 
-  專案可以支援命令,因此必須實現<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面才能通過命令上下文 GUID 參與命令路由。
+  專案可支援命令，因此必須 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 透過命令內容 guid 來執行介面，以參與命令路由。
 
 ## <a name="see-also"></a>另請參閱
-- [檢查表:建立新的項目型態](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [使用 HierUtil7 專案類別 (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
+- [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [使用 HierUtil7 專案類別來執行 c + + (的專案類型) ](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
 - [專案模型核心元件](../../extensibility/internals/project-model-core-components.md)
-- [使用項目工廠建立項目實體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-- [如何:取得服務](../../extensibility/how-to-get-a-service.md)
-- [建立項目型態](../../extensibility/internals/creating-project-types.md)
+- [使用 project factory 建立專案實例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
+- [How to：取得服務](../../extensibility/how-to-get-a-service.md)
+- [建立專案類型](../../extensibility/internals/creating-project-types.md)

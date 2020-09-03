@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6683aac3c5a4314df6fde3d72dd9085b6608d8a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202259"
 ---
 # <a name="task-element-msbuild"></a>Task 項目 (MSBuild)
@@ -43,14 +43,14 @@ ms.locfileid: "68202259"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
 |`Condition`|選擇性屬性。 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
-|`ContinueOnError`|選擇性屬性。 可包含一或多個下列值：<br /><br /> -   **WarnAndContinue** 或 **true**。 當工作失敗時，[Target](../msbuild/target-element-msbuild.md) 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為警告。<br />-   **ErrorAndContinue**。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。<br />-   **ErrorAndStop** 或 **false** (預設值)。 當工作失敗時，就不會執行 `Target` 項目中的其餘工作和組建，並將整個 `Target` 項目與組建視為失敗。<br /><br /> 只有 4.5 版之前的 .NET Framework 版本支援 `true` 和 `false` 值。<br /><br /> 如需詳細資訊，請參閱[如何：忽略工作中的錯誤](../msbuild/how-to-ignore-errors-in-tasks.md)。|  
+|`ContinueOnError`|選擇性屬性。 可包含一或多個下列值：<br /><br /> -   **WarnAndContinue** 或 **true**。 當工作失敗時， [目標](../msbuild/target-element-msbuild.md) 專案和組建中的後續工作會繼續執行，並將工作中的所有錯誤視為警告。<br />-   **ErrorAndContinue**。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。<br />-   **ErrorAndStop** 或 **false** (預設) 。 當工作失敗時，就不會執行 `Target` 項目中的其餘工作和組建，並將整個 `Target` 項目與組建視為失敗。<br /><br /> 只有 4.5 版之前的 .NET Framework 版本支援 `true` 和 `false` 值。<br /><br /> 如需詳細資訊，請參閱 [如何：忽略工作中的錯誤](../msbuild/how-to-ignore-errors-in-tasks.md)。|  
 |`Parameter`|如果工作類別包含一或多個使用 `[Required]` 屬性 (Attribute) 標記的屬性 (Property)，則為必要項目。<br /><br /> 使用者定義的工作參數，其中包含參數值當作它的值。 `Task` 元素中可以有任意數量的參數，而每個屬性 (Attribute) 會對應到工作類別的 .NET 屬性 (Property)。|  
   
 ### <a name="child-elements"></a>子元素  
@@ -88,6 +88,6 @@ ms.locfileid: "68202259"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [工作](../msbuild/msbuild-tasks.md)   
+ [任務](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)   
- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
+ [專案檔結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

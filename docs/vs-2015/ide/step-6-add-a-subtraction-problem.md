@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8ec0bdd3ebae52158c5631a880e63ee0f3a455de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671707"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>步驟 6：加入減法問題
@@ -52,11 +52,11 @@ ms.locfileid: "72671707"
 
      您可以透過多種方式呼叫 `Next()` 類別的 `Random` 方法，也就是您在本教學課程前段中命名為 "randomizer" 的方法。 能夠以多種方式呼叫的方法稱為「多載」(Overload)，您可以使用 IntelliSense 來了解這些方法。 再看一次 `Next()` 方法的 [IntelliSense] 視窗工具提示。
 
-     ![Intellisense 視窗工具提示](../ide/media/express-overloads.png "Express_Overloads")Intellisense 視窗工具提示
+     ![Intellisense 視窗工具提示](../ide/media/express-overloads.png "Express_Overloads") Intellisense 視窗工具提示
 
-     工具提示會顯示 [(+ 2 多載)]，也就是說，您可以透過另外兩種方式呼叫 `Next()` 方法。 多載包含不同數目或類型的引數，因此彼此之間的運作方式會稍有不同。 例如，某個方法可能會接受單一整數引數，而它的其中一個多載可能會接受一個整數和一個字串。 您可以依據需要的功能選擇正確的多載。 您將程式碼加入至 `StartTheQuiz()` 方法時，只要輸入 `randomizer.Next(`，[IntelliSense] 視窗就會顯示詳細資訊。 選擇向上鍵和向下鍵，就可以循環瀏覽這些多載，如下圖所示。
+     工具提示會顯示 [(+ 2 多載)]****，也就是說，您可以透過另外兩種方式呼叫 `Next()` 方法。 多載包含不同數目或類型的引數，因此彼此之間的運作方式會稍有不同。 例如，某個方法可能會接受單一整數引數，而它的其中一個多載可能會接受一個整數和一個字串。 您可以依據需要的功能選擇正確的多載。 您將程式碼加入至 `StartTheQuiz()` 方法時，只要輸入 `randomizer.Next(`，[IntelliSense] 視窗就會顯示詳細資訊。 選擇向上鍵和向下鍵，就可以循環瀏覽這些多載，如下圖所示。
 
-     ![IntelliSense 中下&#40; &#41;一個方法的](../ide/media/express-nextoverload.png "Express_NextOverload")多載IntelliSense 中 Next （）方法的多載
+     ![IntelliSense 中 Next&#40;&#41; 方法的多載](../ide/media/express-nextoverload.png "Express_NextOverload")IntelliSense 中 Next() 方法的多載
 
      在這個案例中，您想要選擇最後一個多載，因為這樣就可以指定最小值和最大值。
 
@@ -76,10 +76,10 @@ ms.locfileid: "72671707"
 
      您的程式包括減法問題，如下圖所示。
 
-     ![具有減法問題的數學測驗](../ide/media/express-addsubtract.png "Express_AddSubtract")具有減法問題的數學測驗
+     ![具有減法問題的數學測驗](../ide/media/express-addsubtract.png "Express_AddSubtract") 具有減法問題的數學測驗
 
-### <a name="to-continue-or-review"></a>繼續或檢視
+### <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要移到下一個教學課程步驟，請參閱[步驟 7：新增乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。
+- 若要移至下一個教學課程步驟，請參閱 [步驟7：新增乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。
 
-- 若要回到上一個教學課程步驟，請參閱[步驟 5：新增 NumericUpDown 控制項的 Enter 事件處理常式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)。
+- 若要回到上一個教學課程步驟，請參閱 [步驟5：加入 NumericUpDown 控制項的 Enter 事件處理常式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)。

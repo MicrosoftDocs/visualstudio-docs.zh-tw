@@ -1,5 +1,5 @@
 ---
-title: 開始使用偵錯工具 |Microsoft Docs
+title: 使用偵錯工具消費者入門 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202330"
 ---
 # <a name="getting-started-with-the-debugger"></a>開始使用偵錯工具
@@ -26,8 +26,8 @@ ms.locfileid: "68202330"
 
 Visual Studio 偵錯工具在任何語言都中都很容易使用。 在此我們會示範一個簡單的 C# 程式偵錯，但您可以將相同的步驟套用到 C++ 及 JavaScript 等其他語言的程式碼。  
   
-## <a name="BKMK_Start_debugging_a_VS_project"></a> 基本的 C# 專案進行偵錯  
- 讓我們開始的簡單 C# 主控台應用程式 (**檔案 / 新增 / 專案**，然後選取**Visual C#** ，然後選取**主控台應用程式**)。 如果您從未使用過之前的 Visual studio，請參閱[逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)。 **Main**方法只是將 1 加到整數變數 10 次，並會列印到主控台的結果：  
+## <a name="debug-a-basic-c-project"></a><a name="BKMK_Start_debugging_a_VS_project"></a> 對基本 c # 專案進行 Debug  
+ 讓我們從簡單的 c # 主控台應用程式開始， (檔案 **/新增/專案**，然後選取 [ **Visual c #** ]，然後選取 [ **主控台應用程式**) 。 如果您從未使用過 Visual Studio，請參閱 [逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)。 **Main**方法只會將1加到整數變數10次，並將結果列印到主控台：  
   
 ```csharp  
 static void Main(string[] args)  
@@ -41,37 +41,37 @@ static void Main(string[] args)
 }  
 ```  
   
- 建置此程式碼**偵錯**組態。 這是預設組態。 如需有關組態的詳細資訊，請參閱 <<c0> [ 了解組建組態](../ide/understanding-build-configurations.md)。  
+ 在 **調試** 程式設定中建立此程式碼。 這是預設組態。 如需設定的詳細資訊，請參閱 [瞭解組建](../ide/understanding-build-configurations.md)設定。  
   
- 執行此程式碼偵錯工具中，依序按一下**偵錯] / [開始偵錯**(或**開始**的工具列上，或**F5**)。 應用程式幾乎會立即結束，因此您實際上無法分辨是否有任何資訊列印輸出到主控台視窗。  
+ 若要在偵錯工具中執行此程式碼，請按一下 [ **Debug/開始調試** 程式] (或在工具列上 **啟動** ，或按 **F5**) 。 應用程式幾乎會立即結束，因此您實際上無法分辨是否有任何資訊列印輸出到主控台視窗。  
   
- 您可以設定中斷點，並在即將達到中斷點之前，停止已經執行一段時間的程式碼，然後再查看主控台視窗。 若要設定中斷點，請將游標置於`Console.WriteLine`行，然後按一下**偵錯 / 新的中斷點 / 函式中斷點**，或只按一下同一行的左邊界。 中斷點的外觀類似下圖所示：  
+ 您可以設定中斷點，並在即將達到中斷點之前，停止已經執行一段時間的程式碼，然後再查看主控台視窗。 若要設定中斷點，請將游標放在 `Console.WriteLine` 該行，然後按一下 [偵測] **/[新增中斷點]/**[函式中斷點]，或直接在同一行的左邊界中按一下。 中斷點的外觀類似下圖所示：  
   
  ![設定中斷點](../debugger/media/getstartedbreakpoint.png "GetStartedBreakpoint")  
   
- 如需有關中斷點的詳細資訊，請參閱 < [Using Breakpoints](../debugger/using-breakpoints.md)。  
+ 如需中斷點的詳細資訊，請參閱 [使用中斷點](../debugger/using-breakpoints.md)。  
   
-## <a name="BKMK_Inspect_Variables"></a> 檢查變數  
- 偵錯通常涉及尋找不包含在特定時間點的預期的值的變數。 我們將說明一些您可以檢查變數的方式。  
+## <a name="inspect-variables"></a><a name="BKMK_Inspect_Variables"></a> 檢查變數  
+ 偵錯工具通常需要尋找未包含您預期特定點值的變數。 我們將示範一些可供您檢查變數的方式。  
   
- 開始再次偵錯。 在 `Console.WriteLine` 程式碼執行之前停止執行。 您可能會導致它繼續逐步執行 (按一下**偵錯] / [逐步移轉**或是**F10**)。 在此情況下您可能已選擇**逐步**(**F11**) 並取得相同的結果，我們將在稍後說明的差異。 方法中最後一個大括號所括起的行，應該會轉為黃色。 檢視主控台視窗 您應該會看到**10**。  
+ 開始再次偵錯。 在 `Console.WriteLine` 程式碼執行之前停止執行。 您可以逐步執行 (按一下 [Debug]/[ **跳過** ] 或 [ **F10** ]) 來執行它。 在此情況下，您可以選擇 [ **逐步** 執行] (**F11**) 並取得相同的結果;我們稍後會說明其差異。 方法中最後一個大括號所括起的行，應該會轉為黃色。 檢視主控台視窗 您應該會看到 **10**。  
   
- 您可以將滑鼠停留**testInt**變數，以在資料提示中檢視目前的值。  
+ 您可以將滑鼠停留在 **testInt** 變數上，以在資料提示中查看目前的值。  
   
- ![DBG&#95;Basics&#95;Data&#95;Tips](../debugger/media/dbg-basics-data-tips.png "DBG_Basics_Data_Tips")  
+ ![DBG&#95;基本&#95;資料&#95;秘訣](../debugger/media/dbg-basics-data-tips.png "DBG_Basics_Data_Tips")  
   
- 您應該只在程式碼視窗下方會看到**自動變數**，**區域變數**，並**監看式**windows。 這些視窗會顯示執行時變數目前的值。 這兩個**自動變數**並**區域變數**windows 顯示**testInt**的值**10**。  
+ 在程式碼視窗下方，您應該會 **看到 [自動**變數]、[ **區域變數** **] 和 [監看** 式] 視窗。 這些視窗會顯示執行時變數目前的值。 [自動變數] **和 [** **區域變數** ] 視窗會顯示 **testInt** ，其值為 **10**。  
   
- ![偵錯時的自動變數 視窗](../debugger/media/getstartedwindows.png "GetStartedWindows")  
+ ![偵錯時的自動變數視窗](../debugger/media/getstartedwindows.png "GetStartedWindows")  
   
- 如需有關這些視窗的詳細資訊，請參閱[自動變數 和 [區域變數] 視窗](../debugger/autos-and-locals-windows.md)。  
+ 如需這些視窗的詳細資訊，請參閱自動 [變數和區域變數視窗](../debugger/autos-and-locals-windows.md)。  
   
- 讓我們看看變數值如何隨著我們逐步執行程式而變更。 上設定中斷點`testInt += 1;`行，然後重新啟動偵錯。 您應該會看到**testInt**中**區域變數**並 **[自動變數]** windows 是**0**，並**我**是**1**。 當您繼續偵錯 (**偵錯] / [繼續**，或**繼續**的工具列上，或**F5**)，您可以看到的值**testInt**若要變更**1**，然後**2**，依此類推。 當您不想查看這些變更，以移除中斷點 (**偵錯] / [切換中斷點**，或按一下上面的邊界)，並繼續偵錯。 如果您想要移除所有中斷點，請按一下**偵錯] / [刪除所有中斷點**，或**CTRL + SHIFT + F9**，然後按一下**是**上的對話方塊中，會要求**嗎想要移除所有中斷點嗎？** .  
+ 讓我們看看變數值如何隨著我們逐步執行程式而變更。 在該行設定中斷點 `testInt += 1;` ，然後重新開機偵錯工具。 您應該會在 [區域變數] 和 [自動**變數** **] 視窗中**看到**testInt**是**0**，而**我**是**1**。 當您繼續進行偵錯工具 (**Debug/continue**，或在工具列上 **繼續** ，或按 **F5**) 時，您可以看到 **testInt** 的值變更為 **1**、 **2**，依此類推。 當您厭倦查看這些變更時，請移除中斷點 (**Debug/切換中斷點**，或在邊界) 中按一下它，然後繼續進行偵錯工具。 如果您想要移除所有中斷點，請按一下 [**偵錯工具/刪除所有中斷點**] 或**CTRL + SHIFT + F9**，然後在詢問**您是否要移除所有中斷點**的對話方塊中按一下 **[是**]。  
   
 ## <a name="stepping-into-and-over-function-calls"></a>逐步執行函式呼叫及不進入函式呼叫  
- 您可以在偵錯工具陳述式所-陳述式來執行程式碼 (**逐步**) 或偵錯工具會略過的函式時，您可以執行程式碼 (**不進入函式**) 若要快速取得您正在比較有興趣 （程式碼函式程式碼仍會執行）。 您可以在相同的偵錯工作階段中的這兩種方法之間進行切換。  
+ 您可以在偵錯工具語句中執行程式碼 (**逐步** 執行) 或者，您可以在偵錯工具略過函式時執行程式 **代碼 (不** 進入) ，以快速取得您更感興趣 (函式程式碼仍) 執行的程式碼。 您可以在相同的調試會話中切換這兩種方法。  
   
- 若要查看之間的差異**逐步**並**不進入函式**，我們需要加入另一個方法呼叫的方法。 將方法加入 C# 應用程式，並從 Main 方法呼叫該方法。 此程式碼應該類似下列所示：  
+ 若要查看 [逐步**執行] 和 [** 不**進入**] 之間的差異，我們必須加入由另一個方法所呼叫的方法。 將方法加入 C# 應用程式，並從 Main 方法呼叫該方法。 此程式碼應該類似下列所示：  
   
 ```csharp  
 static void Main(string[] args)  
@@ -86,10 +86,10 @@ private static void Method1()
 }  
 ```  
   
- 在 Main 方法中的 `Method1();` 呼叫上設定中斷點，並開始偵錯。 中斷執行時，按一下**偵錯] / [逐步執行**(或**逐步**的工具列上，或**F11**)。 在 Method1() 中第一個大括號再次中斷執行：  
+ 在 Main 方法中的 `Method1();` 呼叫上設定中斷點，並開始偵錯。 當執行中斷時，在工具列上按一下 [ **Debug]/** [ (逐步執行] 或 [逐步執行] **，或按** **F11**) 。 在 Method1() 中第一個大括號再次中斷執行：  
   
  ![逐步執行程式碼](../debugger/media/getstartedstepinto.png "GetStartedStepInto")  
   
- 停止偵錯和重新啟動，並在中斷點中斷執行，當按一下**偵錯] / [逐步移轉**(或**不進入函式**的工具列上，或**F10**)。 於 `Console.WriteLine("end");` 再次中斷執行。  
+ 停止錯並重新啟動，並在中斷點中斷時，按一下工具列上的 [ **Debug/over** (] 或 [ **跳過** ]，或按 **F10 鍵**) 。 於 `Console.WriteLine("end");` 再次中斷執行。  
   
- 如果您想要深入了解偵錯工具巡覽程式碼，請參閱 <<c0> [ 使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。
+ 如果您想要深入瞭解如何使用偵錯工具來導覽程式碼，請參閱 [使用偵錯工具流覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 80ad0fcc7409bd91f24ef197ef12ed64610a2e0b
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770352"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>如何：以連結方式顯示編輯器中的 URL
@@ -27,13 +27,13 @@ ms.locfileid: "85770352"
 
 - 當您將滑鼠停留在它們之上時，顯示**工具提示**。
 
-- 當您按**Ctrl** + **按一下**連結時，嘗試開啟指定的網站。 網站預設會顯示於內部網頁瀏覽器中。
+- 當您按**Ctrl** + **按一下**連結時，嘗試開啟指出的網站。 網站預設會顯示於內部網頁瀏覽器中。
 
 ## <a name="display-urls-as-links"></a>將 URL 顯示為連結
 
 1. 在 **[工具]** 功能表上，按一下 **[選項]** 。
 
-2. 按一下 **[文字編輯器]**。
+2. 按一下 **[文字編輯器]** 。
 
 3. 若只要變更單一語言的選項，請展開該語言的資料夾，並選擇 [一般]****。
 

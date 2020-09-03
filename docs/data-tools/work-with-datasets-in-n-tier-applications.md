@@ -20,29 +20,29 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: c7532bed6a7d43c24d698870723d2265fc2b176f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585921"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>使用多層式架構 (N-Tier) 應用程式中的資料集
 
-*多層式架構 (N-Tier) 資料應用程式* 以資料為主並分成多個邏輯層 (或「階層」)。 換句話說，多層式架構資料應用程式是分成多個專案的應用程式，而其專屬專案中各有資料存取層、商務邏輯層和呈現層。 如需詳細資訊，請參閱多[層式資料應用程式總覽](../data-tools/n-tier-data-applications-overview.md)。
+多*層式資料應用程式*是以資料為中心的應用程式，這些應用程式會分成多個邏輯層 (或*層級*) 。 換句話說，多層式架構資料應用程式是分成多個專案的應用程式，而其專屬專案中各有資料存取層、商務邏輯層和呈現層。 如需詳細資訊，請參閱多 [層式資料應用程式總覽](../data-tools/n-tier-data-applications-overview.md)。
 
 具類型資料集已獲增強，因此可將 TableAdapter 和資料集類別產生為離散專案。 這提供快速分隔應用程式層以及產生多層式架構資料應用程式的能力。
 
-具類型資料集中的多層式支援可讓應用程式架構的反復開發成為多層式設計。此外，也不需要手動將程式碼分隔成一個以上的專案。 開始使用**DataSet 設計工具**來設計資料層。 當您準備好為應用程式架構採用多層式架構 (N-Tier) 設計時，請設定資料集的 [資料集專案] 屬性，以將資料集類別產生成不同的專案。
+具類型資料集中的多層式支援可讓您將應用程式架構反復開發至多層式設計。此外，也不需要手動將程式碼分隔成一個以上的專案。 使用 **DataSet 設計工具**開始設計資料層。 當您準備好為應用程式架構採用多層式架構 (N-Tier) 設計時，請設定資料集的 [資料集專案]**** 屬性，以將資料集類別產生成不同的專案。
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
 
 - <xref:System.Data.DataSet>
 - <xref:System.Data.TypedTableBase%601>
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [多層式架構 (N-Tier) 資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)
-- [逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [多層式資料應用程式總覽](../data-tools/n-tier-data-applications-overview.md)
+- [逐步解說：建立多層式資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [將程式碼新增至多層式架構 (N-Tier) 應用程式中的 TableAdapter](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [將程式碼新增至多層式架構 (N-Tier) 應用程式中的資料集](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
 - [將驗證新增至多層式架構 (N-Tier) 資料集](../data-tools/add-validation-to-an-n-tier-dataset.md)
@@ -51,4 +51,4 @@ ms.locfileid: "75585921"
 - [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)
 - [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)
 - [建立和設定 TableAdapter](../data-tools/create-and-configure-tableadapters.md)
-- [使用 LINQ to SQL 的多層式架構 (N-Tier) 和遠端應用程式](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
+- [具有 LINQ to SQL 的多層式和遠端應用程式](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)

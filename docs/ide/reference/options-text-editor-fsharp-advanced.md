@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 64626a0ebd8850098bbbc056d523b6a3f034bf4e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770950"
 ---
 # <a name="options-text-editor-f-advanced"></a>選項、文字編輯器、F#、進階
 
-使用 [進階]**** 選項頁面修改 F# 的一些文字編輯器設定。 若要存取此選項頁面，請選擇 [**工具**] [  >  **選項**]，然後選擇 [**文字編輯器**] [  >  **F #**  >  **Advanced**]。
+使用 [進階]**** 選項頁面修改 F# 的一些文字編輯器設定。 若要存取此選項頁面，請選擇 [**工具**  >  **選項**]，然後選擇 [**文字編輯器**]  >  **F #**  >  **Advanced**。
 
 ## <a name="block-structure-guides"></a>區塊結構輔助線
 

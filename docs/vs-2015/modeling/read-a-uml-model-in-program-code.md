@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bbc55204987f4b6ea0d45c4228f6c194f1ebaf64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671315"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>讀取程式碼中的 UML 模型
@@ -23,10 +23,10 @@ ms.locfileid: "72671315"
 
 您可以載入 UML 模型和它使用 UML 應用程式開發介面的圖表。
 
-## <a name="Reading"></a>讀取程式碼中的模型
+## <a name="reading-a-model-in-program-code"></a><a name="Reading"></a> 讀取程式碼中的模型
  若要存取模型內容，卻不顯示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 視窗中，請使用 `ModelingProject.LoadReadOnly()`。
 
- 例如:
+ 例如：
 
 ```
 using Microsoft.VisualStudio.Uml.Classes;
@@ -50,7 +50,7 @@ using (IModelingProjectReader projectReader =
 
  如果想要讀取圖表中的圖形，您必須先讀取專案，再讀取圖表。
 
- 例如:
+ 例如：
 
 ```
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
@@ -66,11 +66,11 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
 ```
 
 ## <a name="alternative-methods"></a>替代方法
- 對於許多應用程式而言，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Modelbus 可讓您參考其中的模型和元素，而比本主題中所述的方法更強大且彈性。 它提供在任意項目間建立連結的標準方法，無論其位於相同或不同的模型。 如需詳細資訊，請參閱[整合 UML 模型與其他模型和工具](../modeling/integrate-uml-models-with-other-models-and-tools.md)。
+ 對於許多應用程式而言， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Modelbus 可讓您參考其中的模型和元素，而且比本主題中所述的方法更有更高的可靠性和彈性。 它提供在任意項目間建立連結的標準方法，無論其位於相同或不同的模型。 如需詳細資訊，請參閱 [整合 UML 模型與其他模型和工具](../modeling/integrate-uml-models-with-other-models-and-tools.md)。
 
- 您也可以在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 應用程式開發介面的使用者介面中，開啟模型和圖表。 如需詳細資訊，請參閱[使用 VISUAL STUDIO API 來開啟 UML 模型](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)。
+ 您也可以在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 應用程式開發介面的使用者介面中，開啟模型和圖表。 如需詳細資訊，請參閱 [使用 VISUAL STUDIO API 開啟 UML 模型](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)。
 
-## <a name="Standalone"></a>獨立應用程式
+## <a name="stand-alone-applications"></a><a name="Standalone"></a> 獨立應用程式
  上節中的範例會在 Visual Studio 擴充功能中發揮作用。 在獨立應用程式中讀取模型是可能的，但是您必須在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案中加入一些參考。
 
 > [!NOTE]
@@ -78,7 +78,7 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
 
 #### <a name="to-add-references-to-read-a-model-in-a-stand-alone-application"></a>加入參考以在獨立應用程式中讀取模型。
 
-1. 在方案總管中，以滑鼠右鍵按一下您要在其中建立應用程式的專案，然後按一下 [**屬性**]。 在 [屬性編輯器] 的 [**應用程式**] 索引標籤中，將 [**目標 Framework** ] 設為所需的 .NET Framework 版本。
+1. 在方案總管中，以滑鼠右鍵按一下您要在其中建立應用程式的專案，然後按一下 [ **屬性**]。 在 [屬性編輯器] 的 [ **應用程式** ] 索引標籤中，將 [ **目標 Framework** ] 設定為所需的 .NET Framework 版本。
 
 2. 加入存取 UML 模型所需的 [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] 參考，一般為：
 
@@ -86,7 +86,7 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
 
    - Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll
 
-3. 除了上一節中所列的參考，請從 **\Program Files\Microsoft Visual Studio [version] \Common7\IDE\PrivateAssemblies**新增下列專案參考：
+3. 除了上一節所列的參考之外，還從 **\Program Files\Microsoft Visual Studio [version] \Common7\IDE\PrivateAssemblies**新增下列專案參考：
 
    - Microsoft.VisualStudio.Uml.dll
 
@@ -104,5 +104,5 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
 
    - Microsoft.VisualStudio.TeamArchitect.UseCase.Dsl.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)[擴充 uml 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)

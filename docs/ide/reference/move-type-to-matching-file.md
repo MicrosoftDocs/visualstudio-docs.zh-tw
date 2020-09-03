@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: ba082e90c2447d1da7510ce16f888f67a52b5ac0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585267"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>將類型移到對應的檔案重構
@@ -46,7 +46,7 @@ ms.locfileid: "75585267"
 
 2. 接著，執行下列其中一項操作：
 
-   - 按**Ctrl**+**。**
+   - 按下**Ctrl** + **。**
    - 以滑鼠右鍵按一下類型名稱，並選取 [快速動作與重構]****。
 
 1. 從功能表選取 [將類型移到 *TypeName*.cs]****，其中 *TypeName* 是您所選取之類型的名稱。
@@ -63,4 +63,4 @@ ms.locfileid: "75585267"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Refactoring](../refactoring-in-visual-studio.md)
+- [重構](../refactoring-in-visual-studio.md)

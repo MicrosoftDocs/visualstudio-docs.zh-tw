@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: abd175e2ebc69fc21481aeeee9f5da76d1c40109
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202448"
 ---
 # <a name="average-cpu-utilization"></a>平均 CPU 使用率
@@ -26,5 +26,5 @@ ms.locfileid: "68202448"
 針對已進行過程式碼剖析的處理序持續期間，顯示該處理序對系統邏輯核心的平均使用率。 圖形不會顯示哪一個特定核心在任何指定時間內呈現作用中狀態。 例如，如果有兩個核心在某個指定期間各以 50% 的產能執行，則此檢視將顯示使用了一個邏輯核心。  
   
 ## <a name="see-also"></a>另請參閱  
- [核心檢視](../profiling/cores-view.md)   
+ [核心觀點](../profiling/cores-view.md)   
  [CPU 使用率圖形](../profiling/cpu-utilization-graph.md)

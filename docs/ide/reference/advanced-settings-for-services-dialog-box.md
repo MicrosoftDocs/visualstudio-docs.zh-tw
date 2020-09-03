@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 967e99102f3b88e82a5466e7ce8d2cac2412d286
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585674"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>服務對話方塊的進階設定
@@ -32,7 +32,7 @@ ms.locfileid: "75585674"
 
 ## <a name="uielement-list"></a>UIElement 清單
 
- **在本機儲存密碼雜湊以啟用離線登入** 指定是否將在本機快取加密格式的使用者密碼，以便使用者能在應用程式處於離線模式時登入。 預設會選取此選項。
+ **在本機儲存密碼雜湊以啟用離線登入** 指定是否將在本機快取加密格式的使用者密碼，以便使用者能在應用程式處於離線模式時登入。 預設會選取這個選項。
 
  **要求使用者在伺服器 Cookie 過期時必須再次登入** 指定當應用程式存取角色或設定檔服務時，若伺服器驗證 Cookie 已過期，是否會自動重新驗證先前已驗證過的使用者。 選取此選項可拒絕存取應用程式服務，並要求在 Cookie 過期後進行明確重新驗證。 您可以針對部署在公用位置的應用程式，使用這個選項來確保使用應用程式後讓應用程式繼續執行的使用者，不會無限期地保持已驗證的狀態。 依預設，會清除此選項。
 

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5790d652ad98c684786efaa39a1fd23948d3b36e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770883"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>歡迎使用 Visual Studio IDE
@@ -34,7 +34,7 @@ ms.locfileid: "85770883"
 
 若您已準備好深入程式碼的世界，下一步就是開始下列其中一個語言專屬的快速入門：
 
-- [使用 Visual Studio 建立您的第一個 Python web 應用程式](../ide/quickstart-python.md)
+- [使用 Visual Studio 來建立您的第一個 Python web 應用程式](../ide/quickstart-python.md)
 
 - [使用 Visual Studio 建立您的第一個 C# Web 應用程式](../ide/quickstart-aspnet-core.md)
 
@@ -42,7 +42,7 @@ ms.locfileid: "85770883"
 
 - [使用 Visual Studio 建立您的第一個 Node.js Web 應用程式](../ide/quickstart-nodejs.md)
 
-- [使用 Visual Studio 建立您的第一個 c + + 主控台應用程式](/cpp/get-started/tutorial-console-cpp)
+- [使用 Visual Studio 來建立您的第一個 c + + 主控台應用程式](/cpp/get-started/tutorial-console-cpp)
 
 ## <a name="see-also"></a>另請參閱
 

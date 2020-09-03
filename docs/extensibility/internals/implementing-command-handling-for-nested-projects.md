@@ -1,5 +1,5 @@
 ---
-title: 為嵌套項目實施命令處理 |微軟文件
+title: 執行嵌套專案的命令處理 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,33 +11,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2092fc8033d5a5cc53b12bd63a945bd9865ca30e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707601"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>實作巢狀專案的命令處理
-IDE 可以將<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>通過<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>和介面傳遞到嵌套專案的命令,或者父專案可以篩選或重寫命令。
+IDE 可以傳遞透過 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面傳遞至嵌套專案的命令，或可讓父專案篩選或覆寫命令的命令。
 
 > [!NOTE]
-> 只能篩選父專案通常處理的命令。 無法篩選 IDE 處理的**生成**和**部署**等命令。
+> 只能篩選父專案一般處理的命令。 無法篩選 IDE 所處理的命令，例如 **組建** 和 **部署** 。
 
- 以下步驟描述了實現命令處理的過程。
+ 下列步驟說明執行命令處理的程式。
 
 ## <a name="procedures"></a>程序
 
-#### <a name="to-implement-command-handling"></a>執行指令處理
+#### <a name="to-implement-command-handling"></a>若要執行命令處理
 
-1. 當使用者選擇嵌入的嵌套項目或節點時:
+1. 當使用者選取嵌套專案或嵌套專案中的節點時：
 
-   1. IDE 調<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>用 方法。
+   1. IDE 會呼叫 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 方法。
 
       — 或者—
 
-   2. 如果命令源自層次結構視窗(如解決方案資源管理器中的快捷功能表命令),則IDE將在專案的父視窗中<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A>調用該方法。
+   2. 如果命令源自于階層視窗中（例如方案總管中的快捷方式功能表命令），IDE 就會 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> 在專案的父系上呼叫方法。
 
-2. 父專案可以檢查要傳遞給`QueryStatus`的參數,`pguidCmdGroup`如`prgCmds`和,以確定父專案是否應篩選命令。 如果父項目實現以篩選命令,則應設置:
+2. 父專案可以檢查要傳遞給的參數 `QueryStatus` （例如 `pguidCmdGroup` 和）， `prgCmds` 以判斷父專案是否應該篩選命令。 如果父專案是實作為篩選命令，則應該設定：
 
    ```
    prgCmds[0].cmdf = OLECMDF_SUPPORTED;
@@ -45,11 +45,11 @@ IDE 可以將<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>通過<xr
    prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;
    ```
 
-    然後父項目應傳`S_OK`回 。
+    然後父專案應該會傳回 `S_OK` 。
 
-    如果父項目不篩選命令,則應該被返回`S_OK`。 在這種情況下,IDE 會自動將命令路由到子專案。
+    如果父專案未篩選命令，它應該只傳回 `S_OK` 。 在此情況下，IDE 會自動將命令路由傳送至子專案。
 
-    父專案不必將命令路由到子專案。 IDE 執行此任務。
+    父專案不需要將命令路由至子專案。 IDE 會執行這項工作。
 
 ## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>

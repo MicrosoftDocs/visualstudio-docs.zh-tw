@@ -1,5 +1,5 @@
 ---
-title: IDebug 突破點無綁定事件2 |微軟文件
+title: IDebugBreakpointUnboundEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1e1d15936316d08a712e3d6f3fdc7a3a73be613d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734633"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
-此介面告訴工作階段調試管理器 (SDM),綁定斷點已未綁定到已載入的程式。
+此介面會告知會話 debug manager (SDM) 系結的中斷點已從載入的程式解除系結。
 
 ## <a name="syntax"></a>語法
 
@@ -28,29 +28,29 @@ ms.locfileid: "80734633"
 IDebugBreakpointUnboundEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 除錯引擎 (DE) 實現此介面作為其對斷點的支援的一部分。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須在與此介面相同的對象上實現(SDM 使用`IDebugEvent2`[查詢介面](/cpp/atl/queryinterface)存取介面)。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ Debug engine (DE) 在它支援中斷點的過程中，執行這個介面。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須在與此介面相同的物件上執行， (SDM 使用[QueryInterface](/cpp/atl/queryinterface)來存取 `IDebugEvent2` 介面) 。
 
-## <a name="notes-for-callers"></a>通話備註
- 當綁定斷點未綁定時,DE 將創建併發送此事件物件。 該事件使用 SDM 提供的[IDebugEvent 回調2](../../../extensibility/debugger/reference/idebugeventcallback2.md)回檔功能在附加到正在調試的程式時發送。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ 當系結的中斷點已解除系結時，DE 會建立並傳送此事件物件。 當附加至要進行偵錯工具的程式時，會使用由 SDM 提供的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 回呼函式來傳送事件。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 下表顯示的方法`IDebugBreakpointUnboundEvent2`。
+ 下表顯示的方法 `IDebugBreakpointUnboundEvent2` 。
 
 |方法|描述|
 |------------|-----------------|
-|[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|獲取非綁定的斷點。|
-|[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|獲取斷點未綁定的原因。|
+|[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|取得變成未系結的中斷點。|
+|[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|取得未系結中斷點的原因。|
 
 ## <a name="remarks"></a>備註
- 當調試引擎 DLL 或類卸載時,綁定到該模組中代碼的所有斷點都必須與正在調試的程式取消綁定。 指定未`IDebugBreakpointUnboundEvent2`結合的斷點 。
+ 當偵錯工具 DLL 或類別卸載時，系結至該模組中程式碼的所有中斷點都必須從正在進行調試的程式中解除系結。 `IDebugBreakpointUnboundEvent2`會為每個未系結的中斷點傳送。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

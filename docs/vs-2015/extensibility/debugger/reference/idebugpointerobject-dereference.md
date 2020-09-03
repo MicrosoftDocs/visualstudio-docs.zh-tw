@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::Dereference |Microsoft Docs
+title: IDebugPointerObject：:D ereference 書庫 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 40a0e66e5f3cb3a50618a3c8dd4fd5926c34c624
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201002"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
@@ -42,13 +42,13 @@ int Dereference(
   
 #### <a name="parameters"></a>參數  
  `dwIndex`  
- [in]指向的物件從簡單的位元組位移。  
+ 在從指向之物件的開頭算起的簡單位元組位移。  
   
  `ppObject`  
- [out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件表示的物件指向，再加上位移，如果有的話。  
+ 擴展傳回代表所指向之物件的 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 物件，加上 offset （如果有的話）。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。 如果此物件不是指向另一個物件，則傳回 E_FAIL。  
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。 如果這個物件沒有指向另一個物件，則會傳回 E_FAIL。  
   
 ## <a name="remarks"></a>備註  
  指向的物件可以是基本或更複雜的類型，例如類別或結構。  

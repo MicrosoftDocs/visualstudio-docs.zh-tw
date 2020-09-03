@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4b2b0e2be92ca5d4b548b297d01f8ec31b779510
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519882"
 ---
 # <a name="how-to-programmatically-remove-all-comments-from-documents"></a>如何：以程式設計方式從檔中移除所有批註
@@ -32,7 +32,7 @@ ms.locfileid: "85519882"
      [!code-vb[Trin_VstcoreWordAutomation#119](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#119)]
      [!code-csharp[Trin_VstcoreWordAutomation#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#119)]
 
-## <a name="to-remove-all-comments-from-a-document-by-using-a-vsto-add-in"></a>若要使用 VSTO 增益集從檔中移除所有批註
+## <a name="to-remove-all-comments-from-a-document-by-using-a-vsto-add-in"></a>使用 VSTO 增益集移除檔中的所有批註
 
 1. 呼叫您要從中移除註解之 <xref:Microsoft.Office.Interop.Word._Document.DeleteAllComments%2A> 的 <xref:Microsoft.Office.Interop.Word.Document> 方法。
 

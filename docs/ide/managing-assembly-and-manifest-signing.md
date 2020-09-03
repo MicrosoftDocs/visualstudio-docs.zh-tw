@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a17ce633515979ca7a3fd3ac5a7e1d8802996944
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770416"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>管理組件和資訊清單簽署
@@ -29,7 +29,7 @@ ms.locfileid: "85770416"
 
 如需在 Visual Basic 和 C# 專案中簽署組件的資訊，請參閱[建立和使用強式名稱的組件](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies)。
 
-如需在 c + + 專案中簽署元件的詳細資訊，請參閱[強式名稱元件（c + +/cli）](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)。
+如需在 c + + 專案中簽署元件的相關資訊，請參閱 [強式名稱的元件 (c + +/cli) ](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)。
 
 > [!NOTE]
 > 強式名稱簽章無法保護組件免受反向工程的威脅。 若要防止反向工程，請參閱 [Dotfuscator Community](dotfuscator/index.md)。
@@ -73,5 +73,5 @@ ms.locfileid: "85770416"
 
 ## <a name="see-also"></a>另請參閱
 
-- [強式名稱組件](/dotnet/framework/app-domains/strong-named-assemblies)
+- [強式名稱的元件](/dotnet/framework/app-domains/strong-named-assemblies)
 - [強式名稱組件 (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

@@ -1,5 +1,5 @@
 ---
-title: 開始使用原始碼管理 VS 套件 :微軟文件
+title: 使用原始檔控制 Vspackage 消費者入門 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,28 +12,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 69245d9a5c4fb8b27e66b5f1860063756cd46520
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708334"
 ---
-# <a name="get-started-with-source-control-vspackages"></a>開始使用原始碼管理 VSPackages
+# <a name="get-started-with-source-control-vspackages"></a>開始使用原始檔控制 Vspackage
 
-原始碼管理 VSPackage 是原始碼管理外掛程式的更進階替代方法。 有關原始碼管理外掛程式的詳細資訊,請參考[原始碼管理外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)。 原始碼管理 VSPackage 支援對原始碼管理模型、功能和使用者介面 (UI) 的完全控制,並將它作為[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]VSPackage 整合到環境中。
+原始檔控制 VSPackage 是更先進的原始檔控制外掛程式替代方案。 如需原始檔控制外掛程式的詳細資訊，請參閱 [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)。 原始檔控制 VSPackage 可讓您完整控制原始檔控制模型、功能和使用者介面 (UI) ，並將其整合至 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 環境中做為 VSPackage。
 
 ## <a name="in-this-section"></a>本節內容
 
-[確定是否實現原始碼管理 VSPackage](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)
+[判斷是否要執行原始檔控制 VSPackage](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)
 
-解釋原始碼管理解決方案的選擇,並為選擇適當的整合路徑提供廣泛的指南。
+說明原始檔控制解決方案的選擇，並提供廣泛的指導方針來選擇適當的整合路徑。
 
 ## <a name="related-sections"></a>相關章節
 
-- [原始碼管理中的新增功能](../../extensibility/internals/what-s-new-in-source-control.md)
+- [原始檔控制的新功能](../../extensibility/internals/what-s-new-in-source-control.md)
 
-   使用帶原始碼管理的 VS 套件描述新功能。
+   描述使用 Vspackage 搭配原始檔控制的新功能。
 
-- [建立原始碼管理 VS 套件](../../extensibility/internals/creating-a-source-control-vspackage.md)
+- [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
-   討論如何建立原始碼管理 VSPackage,該原始程式碼管理不僅提供原始程式碼管理功能,還可[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]用於自訂原始程式碼管理 UI。
+   討論如何建立原始檔控制 VSPackage，而不只提供原始檔控制功能，還可以用來自訂 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 原始檔控制 UI。

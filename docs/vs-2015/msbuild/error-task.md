@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b220d12b872a81cba5f46bd14fdebafaa58cf4a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201803"
 ---
 # <a name="error-task"></a>Error 工作
@@ -34,7 +34,7 @@ ms.locfileid: "68201803"
 ## <a name="parameters"></a>參數  
  下表說明 `Error` 工作的參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`Code`|選擇性的 `String` 參數。<br /><br /> 與錯誤相關聯的錯誤碼。|  
 |`File`|選擇性的 `String` 參數。<br /><br /> 包含錯誤的檔案名稱。 如果沒有提供檔案名稱，將會使用包含 Error 工作的檔案。|  
@@ -44,9 +44,9 @@ ms.locfileid: "68201803"
 ## <a name="remarks"></a>備註  
  `Error` 工作可讓 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案將錯誤文字發送到記錄器，並停止組建執行。  
   
- 如果 `Condition` 參數評估為 `true`，即會停止組建，並記錄錯誤。 如果 `Condition` 參數不存在，則會記錄錯誤，並停止組建執行。 如需記錄的詳細資訊，請參閱[取得建置記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)。  
+ 如果 `Condition` 參數評估為 `true`，即會停止組建，並記錄錯誤。 如果 `Condition` 參數不存在，則會記錄錯誤，並停止組建執行。 如需有關記錄的詳細資訊，請參閱 [取得組建記錄](../msbuild/obtaining-build-logs-with-msbuild.md)檔。  
   
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="example"></a>範例  
  下列程式碼範例會確認已設定所有必要的屬性。 若未設定，專案就會引發錯誤事件，並記錄 `Error` 工作的 `Text` 參數值。  

@@ -1,5 +1,5 @@
 ---
-title: 擴展基礎項目的物件模型 |微軟文件
+title: 擴充基底專案的物件模型 |Microsoft Docs
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,23 +13,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 33186cd477ade7f562f6191393dabe8e94f4f194
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708402"
 ---
-# <a name="extend-the-object-model-of-the-base-project"></a>擴充基礎項目的物件模型
+# <a name="extend-the-object-model-of-the-base-project"></a>擴充基底專案的物件模型
 
-專案子型態可在以下位置延伸基礎項目的自動化物件模型:
+專案子類型可能會在下列位置擴充基底專案的自動化物件模型：
 
-- Project.Extender("\<專案子類型名稱>"):這允許專案子類型<xref:EnvDTE.Project>提供 具有物件自定義方法的物件。 專案子型態可以使用自動化擴充器`Project`公開物件 。 在<xref:EnvDTE80.IInternalExtenderProvider>主項目子類型聚合器上實現的介面應`VSHPROPID_ExtObjectCATID`提供 其物件為<xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2>from( 對應於`itemid` [VSITEMID 的值)。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID。
+- Project. 擴充項 ( " \<ProjectSubtypeName> " ) ：這可讓專案子類型從物件提供具有自訂方法的物件 <xref:EnvDTE.Project> 。 專案子類型可以使用自動化擴充項來公開 `Project` 物件。 在 <xref:EnvDTE80.IInternalExtenderProvider> 主要專案子類型匯總工具上實作為的介面，應該為的 from (提供其物件，其會 `VSHPROPID_ExtObjectCATID` <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> 對應至 `itemid` VSITEMID 的值 [。Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID。
 
-- ProjectItem.Extender("\<專案子類型名稱>"):這允許專案子類型提供具有專案中<xref:EnvDTE.ProjectItem>特定 物件的自定義方法的物件。 項目子類型可以使用自動化擴展器公開此物件。 在<xref:EnvDTE80.IInternalExtenderProvider>主項目子類型聚合器上實現的介面需要`VSHPROPID_ExtObjectCATID`為<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>來自<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>(對應於) CATID 提供其物件。
+- 專案類型：擴充項 ( " \<ProjectSubtypeName> " ) ：這可讓專案子類型從專案內的特定物件提供具有自訂方法的物件 <xref:EnvDTE.ProjectItem> 。 專案子類型可以使用自動化擴充項來公開此物件。 在 <xref:EnvDTE80.IInternalExtenderProvider> 主要專案子類型匯總工具上實作為的介面，必須 `VSHPROPID_ExtObjectCATID` 從 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> 對應至所需) CATID 的 from (提供其物件 <xref:Microsoft.VisualStudio.VSConstants.VSITEMID> 。
 
-- Project.屬性:此集合公開`Project`物件與配置無關的屬性。 如需 `Project` 屬性的詳細資訊，請參閱<xref:EnvDTE.Project.Properties%2A>。 項目子類型可以使用自動化擴展器將其屬性添加到此集合。 在<xref:EnvDTE80.IInternalExtenderProvider>主項目子類型聚合器上實現的介面需要`VSHPROPID_BrowseObjectCATID`為<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>提供其 物件`itemid`(對應於[VSITEMID 的值)。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID。
+- 專案。屬性：此集合會公開與設定無關的物件屬性 `Project` 。 如需 `Project` 屬性的詳細資訊，請參閱<xref:EnvDTE.Project.Properties%2A>。 專案子類型可以使用自動化擴充項，將其屬性加入至這個集合。 在 <xref:EnvDTE80.IInternalExtenderProvider> 主要專案子類型匯總工具上實作為的介面，必須為的 from (提供其物件，以 `VSHPROPID_BrowseObjectCATID` <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> 對應至 `itemid` VSITEMID 的值 [。Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID。
 
-- 配置.屬性:此集合公開特定配置的專案的與配置相關的屬性(例如,除錯)。 如需詳細資訊，請參閱 <xref:EnvDTE.Configuration>。 項目子類型可以使用自動化擴展器將其屬性添加到此集合。 在<xref:EnvDTE80.IInternalExtenderProvider>主項目子類型聚合器上實現的介面為`VSHPROPID_CfgBrowseObjectCATID`CATID 提供其物件`itemid`(對應於[VSITEMID 的值)。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>))。 該<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>介面用於區分一個配置瀏覽物件和另一個配置流覽物件。
+- 設定。屬性：此集合會針對特定設定公開專案的設定相依屬性 (例如，Debug) 。 如需詳細資訊，請參閱<xref:EnvDTE.Configuration>。 專案子類型可以使用自動化擴充項，將其屬性加入至這個集合。 在 <xref:EnvDTE80.IInternalExtenderProvider> 主要專案子類型匯總工具上執行的介面，會提供其適用于 CATID (的物件，以 `VSHPROPID_CfgBrowseObjectCATID` 對應至 `itemid` VSITEMID 的值 [。根目錄](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) 。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>介面是用來區別某個設定流覽物件與另一個。
 
 ## <a name="see-also"></a>另請參閱
 

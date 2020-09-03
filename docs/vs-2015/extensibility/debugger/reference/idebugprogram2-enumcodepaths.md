@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumCodePaths |Microsoft Docs
+title: IDebugProgram2：： EnumCodePaths |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e4d34b1b6519407e02d4340a5108ef03cece12b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202764"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取一份原始程式檔中的指定位置的程式碼路徑。  
+抓取原始程式檔中指定位置的程式碼路徑清單。  
   
 ## <a name="syntax"></a>語法  
   
@@ -50,31 +50,31 @@ int EnumCodePaths( 
   
 #### <a name="parameters"></a>參數  
  `pszHint`  
- [in]在游標下方 word**來源**或是**反組譯碼**在 IDE 中的檢視。  
+ 在IDE 中 [ **來源** **] 或 [** 反組解碼] 視圖中游標下的文字。  
   
  `pStart`  
- [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示目前的程式碼內容。  
+ 在代表目前程式碼內容的 [IDebugCodeCoNtext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 物件。  
   
  `pFrame`  
- [in][IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)物件代表堆疊框架的目前中斷點相關聯。  
+ 在 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 物件，代表與目前中斷點相關聯的堆疊框架。  
   
  `fSource`  
- [in]非零值 (`TRUE`) 如果在**來源**檢視中，則為零 (`FALSE`) 中的 if**反組譯碼**檢視。  
+ 在非零 (`TRUE`) 如果在**來源**視圖中則為零，如果在 [反組解碼] 視圖中則為零 (`FALSE`) 。 **Disassembly**  
   
  `ppEnum`  
- [out]傳回[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)物件，其中包含一份程式碼路徑。  
+ 擴展傳回 [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) 物件，其中包含程式碼路徑的清單。  
   
  `ppSafety`  
- [out]傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件代表要設定為中斷點中，如果所選的程式碼路徑的額外的程式碼內容會略過。 這可能會發生在最少運算的布林運算式，例如。  
+ 擴展傳回 [IDebugCodeCoNtext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 物件，代表在略過選擇的程式碼路徑時，要設定為中斷點的額外程式碼內容。 例如，如果是縮短的布林運算式，就會發生這種情況。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 程式碼路徑描述方法或移至目前的點，在程式執行所呼叫函式的名稱。 一份程式碼路徑表示的呼叫堆疊。  
+ 程式碼路徑描述方法或函式的名稱，這個方法或函式的名稱會被呼叫以取得程式執行的目前位置。 程式碼路徑清單代表呼叫堆疊。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)   
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
+ [IDebugCodeCoNtext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

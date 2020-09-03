@@ -1,5 +1,5 @@
 ---
-title: 延遲文件載入 |微軟文件
+title: 延遲的檔載入 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
@@ -9,60 +9,60 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2f78d49013c1f0bd359d4439b73620a159a9ccc0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708817"
 ---
-# <a name="delayed-document-loading"></a>延遲的文件載入
+# <a name="delayed-document-loading"></a>延遲的檔載入
 
-當使用者重新打開 Visual Studio 解決方案時,大多數關聯的文檔不會立即載入。 文件視窗框架以掛起初始化狀態創建,占位符文件(稱為存根框架)放置在正在運行的文檔表 (RDT) 中。
+當使用者重新開啟 Visual Studio 方案時，大部分相關聯的檔都不會立即載入。 文件視窗框架會以暫止的初始化狀態建立，而預留位置檔 (稱為存根框架) 放置於執行中的檔資料表 (RDT) 。
 
-通過載入文檔中的元素,擴展可能會導致專案文檔不必要地載入,這會增加 Visual Studio 的總體記憶體佔用空間。
+您的延伸模組可能會在載入檔之前，藉由查詢檔中的專案來不必要地載入專案檔案，而這可能會增加 Visual Studio 的整體記憶體量。
 
-## <a name="document-loading"></a>文件載入
+## <a name="document-loading"></a>檔載入
 
-當使用者訪問文檔時,通過選擇視窗框架的選項卡,將完全初始化存根框架和文檔。 文檔還可以通過請求文件資料的擴展進行初始化,該擴展通過直接存取 RDT 獲取文件數據,或者通過進行以下調用之一間接存取 RDT:
+當使用者存取檔時，會完全初始化存根框架和檔，例如，藉由選取視窗框架的索引標籤。 您也可以藉由要求檔資料的延伸模組來初始化檔，方法是直接存取 RDT 以取得檔資料，或藉由進行下列其中一項呼叫來間接存取 RDT：
 
-- 視窗框架<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>方法。
+- 視窗框架 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> 方法。
 
-- 以下任一<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>屬性上的視窗框架方法:
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>下列任何屬性的視窗框架方法：
 
-  - [__VSFPROPIDVSFPROPID_DocView](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_DocView>)
+  - [__VSFPROPID。VSFPROPID_DocView](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_DocView>)
 
-  - [__VSFPROPIDVSFPROPID_ViewHelper](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_ViewHelper>)
+  - [__VSFPROPID。VSFPROPID_ViewHelper](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_ViewHelper>)
 
-  - [__VSFPROPIDVSFPROPID_DocData](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_DocData>)
+  - [__VSFPROPID。VSFPROPID_DocData](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_DocData>)
 
-  - [__VSFPROPIDVSFPROPID_AltDocData](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_AltDocData>)
+  - [__VSFPROPID。VSFPROPID_AltDocData](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_AltDocData>)
 
-  - [__VSFPROPIDVSFPROPID_RDTDocData](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_RDTDocData>)
+  - [__VSFPROPID。VSFPROPID_RDTDocData](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_RDTDocData>)
 
-  - [__VSFPROPIDVSFPROPID_SPProjContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_SPProjContext>)
+  - [__VSFPROPID。VSFPROPID_SPProjCoNtext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_SPProjContext>)
 
-- 如果延伸使用託管代碼,則不應呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A>,除非您確定文件未處於掛起初始化狀態,或者您希望文檔完全初始化。 原因是該方法始終返回 doc 數據物件,並在必要時創建它。 相反,您應該調用`IVsRunningDocumentTable4`介面上的一種方法。
+- 如果您的延伸模組使用 managed 程式碼， <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> 除非您確定檔不是處於暫止初始化狀態，或是您想要讓檔完全初始化，否則您不應該呼叫。 原因是此方法一律會傳回檔資料物件，並在必要時建立它。 相反地，您應該在介面上呼叫其中一個方法 `IVsRunningDocumentTable4` 。
 
-- 如果擴展使用C++,則可以傳遞`null`不需要的參數。
+- 如果您的延伸模組使用 c + +，您可以 `null` 針對不想要的參數傳遞。
 
-- 在請求其他屬性之前,可以通過調用以下方法之一來避免不必要的文檔載入:
+- 您可以先呼叫下列其中一種方法來避免不必要的檔載入，然後再要求相關屬性，然後再要求其他屬性：
 
-  - <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>使用[__VSFPROPID6。VSFPROPID_PendingInitialization](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6.VSFPROPID_PendingInitialization>). .
+  - <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> 使用 [__VSFPROPID6。VSFPROPID_PendingInitialization](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6.VSFPROPID_PendingInitialization>)。
 
-  - <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>. 這個方法傳回<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>含有 _VSRDTFLAGS4值的物件[。如果](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4.RDT_PendingInitialization>)文檔尚未初始化,RDT_PendingInitialization。
+  - <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>. 這個方法會傳回 <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> 包含 _VSRDTFLAGS4 值的物件 [。](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4.RDT_PendingInitialization>) 如果檔尚未初始化，則為 RDT_PendingInitialization。
 
-通過訂閱文檔完全初始化時引發的 RDT 事件,可以找出文檔載入時間。 有兩種可能性:
+您可以藉由訂閱已完全初始化檔時所引發的 RDT 事件，找出檔載入的時間。 有兩種可能性：
 
-- 如果事件接收器實現<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2>,則可以<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2.OnAfterAttributeChangeEx%2A>訂閱 。
+- 如果事件接收器已實行， <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2> 您可以訂閱 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2.OnAfterAttributeChangeEx%2A>
 
-- 否則,您可以訂閱<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A>。
+- 否則，您可以訂閱 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A> 。
 
-下面的範例是假設的文件存取方案:Visual Studio 擴展希望顯示有關打開文檔的一些資訊,例如編輯鎖計數和文件數據。 它使用<xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>枚舉 RDT 中的<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A>文件,然後調用每個文檔以檢索編輯鎖計數和文檔數據。 如果文件處於掛起的初始化狀態,則請求文檔數據會導致它不必要地初始化。
+下列範例是假設性的檔存取案例： Visual Studio 擴充功能想要顯示有關開啟檔的一些資訊，例如編輯鎖定計數，以及檔資料的相關事項。 它會使用來列舉 RDT 中的檔 <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments> ，然後呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> 每個檔，以取得編輯鎖定計數和檔資料。 如果檔處於擱置中的初始化狀態，要求檔資料會導致非必要地將它初始化。
 
-訪問文檔的更有效方法是<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A>使用 來獲取編輯鎖計數,<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>然後用於確定文檔是否已初始化。 如果標誌不包含[_VSRDTFLAGS4。RDT_PendingInitialization](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4.RDT_PendingInitialization>),文檔已初始化,<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A>請求文檔 資料不會導致任何不必要的初始化。 如果標誌包含[_VSRDTFLAGS4。RDT_PendingInitialization](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4.RDT_PendingInitialization>),擴展應避免請求文檔資料,直到文檔初始化。 可以在事件處理程式中`OnAfterAttributeChange(Ex)`檢測到此初始化。
+存取檔的更有效率的方式是使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A> 來取得編輯鎖定計數，然後使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A> 判斷是否已初始化檔。 如果旗標不包含 [_VSRDTFLAGS4。RDT_PendingInitialization](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4.RDT_PendingInitialization>)，檔已初始化，而要求檔資料時，並 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A> 不會造成任何不必要的初始化。 如果旗標包含 [_VSRDTFLAGS4。RDT_PendingInitialization](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4.RDT_PendingInitialization>)，此延伸模組應避免要求檔資料，直到檔初始化。 您可以在事件處理常式中偵測到此初始化 `OnAfterAttributeChange(Ex)` 。
 
-## <a name="test-extensions-to-see-if-they-force-initialization"></a>測試延伸以檢視它們是否強制初始化
+## <a name="test-extensions-to-see-if-they-force-initialization"></a>測試擴充功能以查看是否強制初始化
 
-沒有指示文件是否已初始化的可見提示,因此很難確定擴展是否強制初始化。 您可以設置一個註冊表項,使驗證更容易,因為它會導致未完全初始化的每個文檔的標題在標題中包含文本 *[Stub]。*
+沒有可見的提示可指出檔是否已初始化，因此很難找出您的延伸模組是否強制執行初始化。 您可以設定登錄機碼讓驗證變得更容易，因為它會導致未完全初始化的每個檔的標題都有標題中的文字 *[Stub]* 。
 
-在**HKEY_CURRENT_USER_軟體\微軟_VisualStudio_14.0\背景解決方案載入中**,將**StubTabTitle格式字串**設置為*{0}[Stub]。*
+在**HKEY_CURRENT_USER \software\microsoft\visualstudio\14.0\backgroundsolutionload**中，將**StubTabTitleFormatString**設定為* {0} [Stub]*。
