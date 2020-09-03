@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 62bb2f29d737aeb09cc228038be96480922e204c
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464027"
 ---
 # <a name="idiasymbolget_container"></a>IDiaSymbol::get_container
-此函式會抓取符號的指標，代表這個符號的父系/容器。
+此函式會抓取表示此符號之父/容器的符號指標。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_container(
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回的指標， `IDiaSymbol` 其中包含這個符號之容器的相關資訊。
+擴展傳回 `IDiaSymbol` 包含此符號之容器相關資訊的指標。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 S_OK;否則，會傳回 S_FALSE 或錯誤碼。
+ 如果成功，則傳回 S_OK;否則，會傳回 S_FALSE 或錯誤碼。
 
 > [!NOTE]
 > S_FALSE 的傳回值表示該屬性不適用於符號。

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 47a7c0703568d044bcda93fde7c9ecee0dea52a3
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466207"
 ---
 # <a name="idiasectioncontribget_notcached"></a>IDiaSectionContrib::get_notCached
@@ -33,10 +33,10 @@ HRESULT get_notCached ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷`TRUE`如果無法快取區段，則傳回，否則傳回 `FALSE` 。
+擴展 `TRUE` 如果無法快取區段，則傳回，否則傳回 `FALSE` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援此屬性，則傳回。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援這個屬性，則傳回。 否則會傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -8,10 +8,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77279308"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>設定 C++ IntelliSense 專案
@@ -38,7 +38,7 @@ IntelliSense 能產生最多 1000 個錯誤。 如果來源檔案所包含的標
 
 ![VC++ [Include 目錄]](media/vcpp-intellisense-include-paths.png)
 
-若要查看組建巨集 (例如 **VC_IncludePath**) 目前的值，請選取 [Include 目錄] 行，然後按一下右側的下拉式清單。 然後選擇**\<"編輯>** 並按一下**宏**按鈕。
+若要查看組建巨集 (例如 **VC_IncludePath**) 目前的值，請選取 [Include 目錄] 行，然後按一下右側的下拉式清單。 然後 **\<Edit>** ，選擇並按一下 [ **宏** ] 按鈕。
 
 ### <a name="makefile-projects"></a>Makefile 專案
 
@@ -122,4 +122,4 @@ Visual Studio to investigate.
 
 ## <a name="see-also"></a>另請參閱
 
-- [視覺C++感知](visual-cpp-intellisense.md)
+- [Visual C++ IntelliSense](visual-cpp-intellisense.md)

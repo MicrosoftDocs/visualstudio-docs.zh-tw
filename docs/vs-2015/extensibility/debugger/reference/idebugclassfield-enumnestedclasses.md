@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumNestedClasses |Microsoft Docs
+title: IDebugClassField：： EnumNestedClasses |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7745eea3f5b3264016a25defd696a9b85f2e9fb4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191081"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-建立此類別中巢狀類別的列舉值。  
+建立在這個類別中嵌套之類別的列舉值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,15 +40,15 @@ int EnumNestedClasses(
   
 #### <a name="parameters"></a>參數  
  `ppEnum`  
- [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示巢狀類別的清單。 如果沒有巢狀的類別，則傳回 null 值。  
+ 擴展傳回代表嵌套類別清單的 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 物件。 如果沒有任何嵌套類別，則會傳回 null 值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK，或如果沒有巢狀的類別，則傳回 S_FALSE。 否則會傳回錯誤碼。  
+ 如果成功，會傳回 S_OK，如果沒有任何嵌套類別，則傳回 S_FALSE。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 列舉型別的每個項目是[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)描述巢狀的類別的物件。  
+ 列舉的每個元素都是描述嵌套類別的 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 物件。  
   
- 巢狀的類別是定義在另一個類別的類別。 例如：  
+ 嵌套類別是在另一個類別內定義的類別。 例如：  
   
 ```  
 class RootClass {  
@@ -56,7 +56,7 @@ class RootClass {
 };  
 ```  
   
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)列舉型別會包含一個物件，表示`NestedClass`類別。  
+ [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)列舉會包含代表類別的一個物件 `NestedClass` 。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   

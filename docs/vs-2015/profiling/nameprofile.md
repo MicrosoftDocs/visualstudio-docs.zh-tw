@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7cac308de96c3edc2dfe5c7577b0bee8077bf9e7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548431"
 ---
 # <a name="nameprofile"></a>NameProfile
@@ -91,7 +91,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
 ## <a name="function-information"></a>函式資訊  
   
-|Item|描述|  
+|項目|描述|  
 |-|-|  
 |**標頭**|包含 VSPerf.h|  
 |**程式庫**|使用 VSPerf.lib|  
@@ -136,4 +136,4 @@ void ExerciseNameProfile()
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio Profiler API 參考（原生）](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Visual Studio Profiler API 參考 (原生) ](../profiling/visual-studio-profiler-api-reference-native.md)

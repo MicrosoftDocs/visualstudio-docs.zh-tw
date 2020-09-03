@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dc1e935ab47fd815c8f132dbeee21e21c9ba6350
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465444"
 ---
 # <a name="idiasessionget_globalscope"></a>IDiaSession::get_globalScope
@@ -33,12 +33,12 @@ HRESULT get_globalScope ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回代表全域範圍的[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。
+擴展傳回代表全域範圍的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
-- [Convert.exe](../../debugger/debug-interface-access/exe.md)
+- [Exe](../../debugger/debug-interface-access/exe.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

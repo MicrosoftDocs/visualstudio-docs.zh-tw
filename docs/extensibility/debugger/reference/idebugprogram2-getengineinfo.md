@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::獲取引擎資訊 |微軟文件
+title: IDebugProgram2：： GetEngineInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 53f16a3ef6bd1328d73c8a6c71c666968d5564d4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722824"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
-獲取執行此程式的除錯引擎 (DE) 的名稱和 GUID。
+取得在執行此程式時， (DE) 的偵測引擎的名稱和 GUID。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int GetEngineInfo( 
 
 ## <a name="parameters"></a>參數
 `pbstrEngine`\
-[出]返回運行此程式的 DE 的名稱。
+擴展傳回執行此程式之 DE 的名稱。
 
 `pguidEngine`\
-[出]返回運行此程式的 DE 的 GUID。
+擴展傳回執行此程式之 DE 的 GUID。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 每個 DE 定義自己的 GUID 進行標識。
+ 每個 DE 都會定義自己的 GUID 以進行識別。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

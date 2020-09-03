@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 20f7003bbcd319a6a8487d496697d3dcd0b7a18a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548417"
 ---
 # <a name="network-usage"></a>網路使用量
@@ -31,7 +31,7 @@ Visual Studio 的 [網路]**** 診斷工具會收集使用 [Windows.Web.Http 應
   
 1. 在 Visual Studio 中開啟專案。  
   
-2. 在功能表上，按一下 [ **Debug/Performance Profiler**]。選擇 [**網路**]，然後選擇 [**啟動**]。  
+2. 在功能表上，按一下 [ **Debug/效能分析工具 ...**]。選擇 [ **網路**]，然後選擇 [ **啟動**]。  
   
 3. 網路工具會開始收集您應用程式的 HTTP 流量。  
   
@@ -43,7 +43,7 @@ Visual Studio 的 [網路]**** 診斷工具會收集使用 [Windows.Web.Http 應
   
    ![[網路] 視窗](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
-## <a name="analyzing-data"></a>分析資料  
+## <a name="analyzing-data"></a>正在分析資料  
  無論您的應用程式正在執行，或甚至在關閉之後，透過選取任何顯示在摘要檢視上的網路作業，即可分析擷取的 HTTP 流量。  
   
  [網路]**** 摘要清單顯示執行應用程式時的每個網路作業資料。 選擇資料行標頭以排序清單，或選擇要顯示在 [內容類型]**** 篩選檢視中的內容類型。  
@@ -54,12 +54,12 @@ Visual Studio 的 [網路]**** 診斷工具會收集使用 [Windows.Web.Http 應
   
  ![網路工具詳細資料窗格](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
   
-|名稱|描述|  
+|Name|描述|  
 |-|-|  
 |**標頭**|事件的要求標頭資訊。|  
 |**本文**|要求和回應承載資料。|  
 |**參數**|查詢字串參數名稱和值。|  
-|**Cookie**|回應和要求 Cookie 資料。|  
+|**餅乾**|回應和要求 Cookie 資料。|  
 |**時間**|取得所選資源的各階段圖表。|  
   
  網路 [摘要]**** 列會顯示在任何給定的時間點、傳輸資料量、下載所花費時間，以及可見的錯誤數目 (4xx 或 5xx 回應的要求) 的網路作業數。  
@@ -74,6 +74,6 @@ Visual Studio 的 [網路]**** 診斷工具會收集使用 [Windows.Web.Http 應
 3. 回應美化顯示按鈕 (在主體索引標籤內) 可協助您藉由增加內容可讀性來剖析 JSON、XML、HTML、CSS、JavaScript 和 TypeScript 的回應裝載。  
   
 ## <a name="see-also"></a>另請參閱  
- [執行程式碼剖析工具而不進行偵錯工具](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Visual Studio 的 blog： Visual Studio 的網路偵測器簡介](https://blogs.msdn.com/b/visualstudio/)   
+ [在不進行偵錯工具的情況下執行分析工具](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+ [Visual Studio 的 blog： Visual Studio 網路檢查的簡介](https://blogs.msdn.com/b/visualstudio/)   
  [Channel 9 影片︰ VS 診斷工具 - 新的網路分析工具 (英文)](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

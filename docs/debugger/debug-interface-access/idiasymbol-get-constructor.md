@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 877ac3b0a73dc13600c9d6847dfc505caaa05821
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464041"
 ---
 # <a name="idiasymbolget_constructor"></a>IDiaSymbol::get_constructor
-抓取指定使用者定義資料類型是否具有函數或析構函式的旗標。
+抓取旗標，這個旗標會指定使用者定義資料類型是否具有函式或自訂函數。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_constructor ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷`TRUE`如果使用者定義資料類型具有函數或析構函式，則傳回，否則傳回 `FALSE` 。
+擴展 `TRUE` 如果使用者定義資料類型具有函式或函數，則傳回，否則傳回 `FALSE` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。

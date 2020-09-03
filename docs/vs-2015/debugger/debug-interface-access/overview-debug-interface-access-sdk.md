@@ -1,5 +1,5 @@
 ---
-title: 概觀 （偵錯介面存取 SDK） |Microsoft Docs
+title: 總覽 (Debug 介面存取 SDK) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,19 +23,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7374b03da42e34e8ac3be8c7cc570769d9cfd1ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179202"
 ---
 # <a name="overview-debug-interface-access-sdk"></a>概觀 (偵錯介面存取 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-使用 DIA SDK，來存取 Microsoft 偵錯資訊。 DIA SDK 提供 COM 為基礎的 API 集，就不需要重寫程式碼，每當 Microsoft 變更偵錯資訊格式。 DIA SDK 也可讓您從一組精選的舊版偵錯資訊，位於所產生的.pdb 和.dbg 檔案讀取[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]5.0 及更新版本的版本。  
+使用 DIA SDK 來存取 Microsoft debug 資訊。 DIA SDK 提供以 COM 為基礎的 API 集，可讓您在 Microsoft 變更偵錯工具的格式時，不必重寫程式碼。 DIA SDK 也可讓您從一組選取的舊版偵錯工具資訊（位於 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 版本5.0 和更新版本中所產生的 .pdb 和 dbg 檔案）讀取。  
   
- DIA SDK 中的每個介面，將不同的 COM 物件，表示除了其中指明。 額外的介面，因此其他物件，建立明確的查詢，透過這類[idiadatasource:: Opensession](../../debugger/debug-interface-access/idiadatasource-opensession.md)或是[idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)，而不是藉由呼叫`QueryInterface`現有的介面指標。  
+ DIA SDK 中的每個介面都代表不同的 COM 物件，除非另有指定。 其他介面（以及其他的物件）則是透過明確的查詢（例如 [IDiaDataSource：： openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) 或 [IDiaSession：： findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)）來建立，而不是 `QueryInterface` 在現有的介面指標上呼叫。  
   
 ## <a name="see-also"></a>另請參閱  
- [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
+ [IDiaDataSource：： openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
  [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)

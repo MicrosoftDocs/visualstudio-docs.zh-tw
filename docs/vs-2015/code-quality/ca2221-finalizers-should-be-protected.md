@@ -1,5 +1,5 @@
 ---
-title: CA2221：完成項應該受到保護 |Microsoft Docs
+title: CA2221：完成項應受保護 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e30dd2945820a61aa7c96d4e6c6fd59354e0c3ae
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540734"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221:Finalizer 方法應該為 protected
@@ -29,14 +29,14 @@ ms.locfileid: "85540734"
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
 |CheckId|CA2221|
-|類別|Microsoft。使用方式|
+|類別|Microsoft. 使用量|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 公用類型會執行未指定家族（受保護）存取的完成項。
+ Public 型別會執行一個完成項，此完成項不會指定受保護) 存取 (系列。
 
 ## <a name="rule-description"></a>規則描述
- 完成項必須使用系列存取修飾詞 (Modifier)。 此規則是由 c #、Visual Basic 和 Visual C++ 編譯器強制執行。
+ 完成項必須使用系列存取修飾詞 (Modifier)。 C #、Visual Basic 和 Visual C++ 編譯器會強制執行此規則。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請將完成項變更為可供家族存取。
@@ -45,7 +45,7 @@ ms.locfileid: "85540734"
  請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 在任何高階 .NET 語言中都不能違反這項規則;如果您要撰寫 Microsoft 中繼語言，可能會違反此檔案。
+ 在任何高階 .NET 語言中都不能違反此規則;如果您正在撰寫 Microsoft 中繼語言，可能會違反此情況。
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================

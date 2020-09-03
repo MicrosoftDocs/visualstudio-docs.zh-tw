@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d30d8e8ddcdc8c1fa4fe1935da1f1dedd1b18f4b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593560"
 ---
 # <a name="services-page-project-designer"></a>專案設計工具、服務頁
@@ -33,7 +33,7 @@ ms.locfileid: "75593560"
 
 ## <a name="uielement-list"></a>UIElement 清單
 
- **組態**
+ **設定**
 
 在這個頁面上無法編輯此控制項。 如需此控制項的描述，請參閱[專案設計工具、編譯頁面 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) 或[專案設計工具、建置頁面 (C#)](../../ide/reference/build-page-project-designer-csharp.md)。
 
@@ -45,7 +45,7 @@ ms.locfileid: "75593560"
 
 選取以啟用用戶端應用程式服務。 您必須在 [服務]**** 頁面上指定服務位置，以使用用戶端應用程式服務。
 
- **使用 Windows 身份驗證**
+ **使用 Windows 驗證**
 
 指出驗證提供者將使用 Windows 驗證，也就是 Windows 作業系統所提供的身分識別。
 

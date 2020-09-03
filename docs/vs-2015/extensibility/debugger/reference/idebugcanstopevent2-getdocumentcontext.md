@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::GetDocumentContext |Microsoft Docs
+title: IDebugCanStopEvent2：： GetDocumentCoNtext |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 241e5cff6aee533a2a5899116acef3d928985d1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191169"
 ---
 # <a name="idebugcanstopevent2getdocumentcontext"></a>IDebugCanStopEvent2::GetDocumentContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得描述這個事件的位置的文件內容。  
+取得描述這個事件位置的檔內容。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,17 +40,17 @@ int GetDocumentContext ( 
   
 #### <a name="parameters"></a>參數  
  `ppDocCxt`  
- [out]傳回[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面，表示目前的程式碼位置的來源檔案的文件，對應中的位置。  
+ 擴展傳回 [IDebugDocumentCoNtext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 介面，代表對應至目前程式碼位置的原始程式檔檔中的位置。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 一般而言，文件內容可以視為的原始程式檔中的位置。  
+ 一般來說，您可以將檔內容視為原始程式檔中的位置。  
   
- 若要取得程式碼內容，也就是導向的程式碼的指示，呼叫[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)方法。  
+ 若要取得程式碼指示的程式碼內容，請呼叫 [GetCodeCoNtext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md) 方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   
- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
+ [IDebugDocumentCoNtext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)

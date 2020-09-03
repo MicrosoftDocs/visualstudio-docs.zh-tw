@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 71ac053a24b3f765a58fc050ceec84115e1a4e3d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548391"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>如何：設定效能資料檔案名稱選項
@@ -29,25 +29,25 @@ ms.locfileid: "85548391"
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
-|語法元素|描述|  
+|語法元素|說明|  
 |-|-|  
 |*路徑*|包含報告的目錄。 預設位置是方案資料夾，或是使用者專案及方案的預設位置。|  
-|*VSP-檔案*|程式碼剖析資料檔案的名稱。 預設的名稱是經過程式碼剖析的方案或可執行檔的名稱。|  
+|*.VSP-檔案*|程式碼剖析資料檔案的名稱。 預設的名稱是經過程式碼剖析的方案或可執行檔的名稱。|  
 |*YYMMDD*|日期戳記，顯示收集程式碼剖析資料的年、月、日。|  
-|*位*|如果有一個以上程式碼剖析資料檔案，則檔名會加入括號和遞增數字。|  
+|* (N) *|如果有一個以上程式碼剖析資料檔案，則檔名會加入括號和遞增數字。|  
   
 ### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>變更效能工作階段之程式碼剖析資料檔案的命名語法  
   
 1. 在 [效能總管]**** 中，以滑鼠右鍵按一下效能工作階段的名稱，然後按一下 [屬性]****。  
   
-2. 按一下 [一般]****。  
+2. 按一下 **[一般]** 。  
   
 3. 變更 [報告]**** 中的下列設定：  
   
-    |名稱|描述|  
+    |Name|說明|  
     |-|-|  
     |**報告位置**|指定儲存程式碼剖析資料檔案的目錄。|  
-    |**報表名稱**|指定檔案的基底名稱。|  
+    |**報告名稱**|指定檔案的基底名稱。|  
     |**自動將新報告加入至工作階段**|選取此核取方塊以自動將資料檔案加入至效能工作階段。|  
     |**將累加號碼附加至產生的報告**|當一個以上的檔案使用相同的名稱時，選取此核取方塊以將累加號碼加入至檔案名稱。 清除核取方塊，以覆寫現有的檔案。|  
     |**號碼使用時間戳記**|選取核取方塊以新增時間戳記至檔案名稱。|

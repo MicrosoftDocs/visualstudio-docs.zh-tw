@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a043c2e1e79d629b32d46f0f54d233cd0ea9cb54
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594249"
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Visual Studio 中的程式碼產生功能
@@ -32,6 +32,6 @@ Visual Studio 可透過多種方式協助您產生、修正和重構程式碼。
 ## <a name="see-also"></a>另請參閱
 
 - [程式碼片段](../ide/code-snippets.md)
-- [快速操作](../ide/quick-actions.md)
-- [Refactoring](../ide/refactoring-in-visual-studio.md)
-- [代碼生成和 T4 文本範本](../modeling/code-generation-and-t4-text-templates.md)
+- [快速動作](../ide/quick-actions.md)
+- [重構](../ide/refactoring-in-visual-studio.md)
+- [程式碼產生和 T4 文字模板](../modeling/code-generation-and-t4-text-templates.md)

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1ecf86bdc7516f05935bd944f23633b3baad2c7c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663514"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser 命令
@@ -33,9 +33,9 @@ View.ShowWebBrowser URL [/new][/ext]
 ```
 
 ## <a name="arguments"></a>引數
- `URL` 必要項。 網站 URL (統一資源定位器)。
+ 需要 `URL`。 網站 URL (統一資源定位器)。
 
-## <a name="switches"></a>參數
+## <a name="switches"></a>交換器
  /new 選擇性。 指定頁面會出現在網頁瀏覽器的新執行個體。
 
  /ext 選擇性。 指定頁面會出現在 IDE 外面的預設網頁瀏覽器。
@@ -51,4 +51,4 @@ View.ShowWebBrowser URL [/new][/ext]
 ```
 
 ## <a name="see-also"></a>另請參閱
- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)[命令視窗](../../ide/reference/command-window.md)[尋找/命令框](../../ide/find-command-box.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio](../../ide/reference/visual-studio-commands.md)命令[視窗](../../ide/reference/command-window.md)[尋找/命令箱](../../ide/find-command-box.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

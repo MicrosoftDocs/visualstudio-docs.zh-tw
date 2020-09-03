@@ -1,5 +1,5 @@
 ---
-title: 屬性視窗概述 |微軟文件
+title: 屬性視窗總覽 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,42 +11,42 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 445a43cec976f363873c89dfe9b8e05429aebaf2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706036"
 ---
 # <a name="properties-window-overview"></a>屬性視窗概觀
-屬性**視窗**[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]用於顯示 在整合式開發環境 (IDE) 中可用的兩種主要視窗類型中選擇的物件的屬性。 這兩種類型的視窗是:
+[ **屬性** ] 視窗是用來顯示在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 所提供的兩個主要 windows 類型中所選取物件的屬性。 這兩種類型的 windows 為：
 
-- 工具視窗,如解決方案資源管理員、類檢視和物件瀏覽器
+- 工具視窗，例如方案總管、類別檢視和物件瀏覽器
 
-- 包含表單設計師、XML 編輯器及 HTML 編輯器及編輯器和設計器的文件視窗
+- 包含像是表單設計工具、XML 編輯器和 HTML 編輯器等編輯器和設計工具的檔視窗
 
-## <a name="using-the-properties-window"></a>使用屬性視窗
- 屬性 **「視窗**顯示單個或多個選定項目的屬性。 如果選擇了多個項,將顯示所有選定物件的所有屬性的交集。
+## <a name="using-the-properties-window"></a>使用 [屬性] 視窗
+ [ **屬性** ] 視窗會顯示單一或多個選取專案的屬性。 如果選取多個專案，則會顯示所有選定物件的所有屬性交集。
 
- 與表單表型設計視窗中的選擇的物件相關的事件或使用 COM+ 中繼資料的 HTML 編輯器將顯示在 **「屬性」** 視窗中。 例如,您可以選擇一個按鈕並顯示其關聯的事件,如事件`OnClick`,該事件可以連結到該按鈕。
+ 在 [ **屬性** ] 視窗中，會顯示與表單設計視窗或 HTML 編輯器中使用 com + 中繼資料相關之選取物件的相關事件。 例如，您可以選取按鈕，並顯示其相關聯的事件，例如 `OnClick` 可連結至該按鈕的事件。
 
- **屬性**視窗中顯示的事件主要與綁定到代碼的物件一起使用。 如果要編輯與代碼無關的檔案格式,則不會有任何事件。 僅當正在運行的代碼與與特定物件關聯的某些事件之間存在綁定時,事件才會顯示在 **「屬性」** 視窗中。 例如,在啟動該物件時執行的選定物件後面的代碼。
+ 顯示在 [ **屬性** ] 視窗中的事件主要是與系結至程式碼的物件搭配使用。 如果您編輯的檔案格式與程式碼沒有任何作用，就不會有任何事件。 當執行中的程式碼與特定物件相關聯的特定事件之間有系結時，事件才會顯示在 [ **屬性** ] 視窗中。 其中一個範例就是啟始物件時所執行之所選物件的程式碼後方。
 
- 下表列出了**屬性**視窗使用的主要介面。
+ 下表列出 [ **屬性** ] 視窗所使用的主要介面。
 
 |介面名稱|描述|
 |--------------------|-----------------|
-|<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|向 **「屬性」** 視窗提供類別清單,並將每個屬性映射到類別。|
-|[I調度介面](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)|向支援自動化的程式設計工具和其他應用程式公開物件的方法和屬性。|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|提供稱為生成器的橢圓 (...) 按鈕,這些*生成器*打開由物件本身實現的模式對話框視窗。 當使用者不容易在文本欄位中鍵入值時使用。 例如,它可用於打開一個顏色選取器,確定RGB值。|
-|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|提供對用於更新 **「屬性」** 視窗中顯示的資訊的物件的訪問。 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>由 VSPackages 為每個包含要顯示相關屬性的可選物件的窗口實現。|
-|<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|提供有關物件類型的資訊,例如介面的方法和結構的欄位。|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|使 VSPackages 能夠接收選擇事件的通知,並檢索有關當前專案層次結構、項、元素值和命令 UI 上下文的資訊。|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|為環境提供對多個選擇的訪問。|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>|用於在 **「屬性」** 視窗中顯示的某些屬性上提供當地語系化名稱。|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents>|通知已註冊的 VS 包對當前選擇、元素值或命令 UI 上下文的更改。|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>|通知環境當前所選內容的變化,並提供對與新選擇相關的層次結構和專案資訊的訪問。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|將類別清單提供給 [ **屬性** ] 視窗，並將每個屬性對應至類別目錄。|
+|[IDispatch 介面](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)|將物件的方法和屬性公開給支援自動化的程式設計工具和其他應用程式。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|提供省略號 ( ... ) 稱為產生器的按鈕，可開啟由物件本身所 *執行的模式* 對話方塊視窗。 當使用者無法在文字欄位中輕鬆輸入值時使用。 例如，它可能用來開啟色彩選擇器，以決定您的 RGB 值。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|提供物件的存取權，這些物件是用來更新 [ **屬性** ] 視窗中顯示的資訊。 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 是由 Vspackage 針對每個視窗所執行，其中包含要顯示之相關屬性的可選取物件。|
+|<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|提供物件類型的相關資訊，例如介面的方法和結構的欄位。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|讓 Vspackage 接收選取事件的通知，以及取得目前專案階層、專案、專案值和命令 UI 內容的相關資訊。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|提供可存取多重選取專案的環境。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>|用來在 [ **屬性** ] 視窗中顯示的某些屬性上提供當地語系化的名稱。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents>|通知已登錄 Vspackage 目前選取專案、元素值或命令 UI 內容的變更。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>|通知環境目前選取範圍中的變更，並提供與新選項相關之階層和專案資訊的存取權。|
 
- 有關的詳細資訊`IDispatch`,請參閱 MSDN 庫。
+ 如需有關的詳細資訊 `IDispatch` ，請參閱 MSDN library。
 
 ## <a name="see-also"></a>另請參閱
 - [擴充屬性](../../extensibility/internals/extending-properties.md)

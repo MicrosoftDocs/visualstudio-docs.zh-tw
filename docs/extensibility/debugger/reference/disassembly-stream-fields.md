@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_FIELDS |微軟文件
+title: DISASSEMBLY_STREAM_FIELDS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d10f2143cbefa86442e4087ac098020f5f2bd6ac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737362"
 ---
 # <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
-指定要檢索的有關拆解欄位的資訊。
+指定要對反組解碼欄位取得哪些資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -66,60 +66,60 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 
 ## <a name="fields"></a>欄位
 `DSF_ADDRESS`\
-初始化/使用`bstrAddress`欄位。
+初始化/使用 `bstrAddress` 欄位。
 
 `DSF_ADDRESSOFFSET`\
-初始化/使用`bstrAddressOffset`欄位。
+初始化/使用 `bstrAddressOffset` 欄位。
 
 `DSF_CODEBYTES`\
-初始化/使用`bstrCodeBytes`欄位。
+初始化/使用 `bstrCodeBytes` 欄位。
 
 `DSF_OPCODE`\
-初始化/使用`bstrOpCode`欄位。
+初始化/使用 `bstrOpCode` 欄位。
 
 `DSF_OPERANDS`\
-初始化/使用`bstrOperands`欄位。
+初始化/使用 `bstrOperands` 欄位。
 
 `DSF_SYMBOL`\
-初始化/使用`bstrSymbol`欄位。
+初始化/使用 `bstrSymbol` 欄位。
 
 `DSF_CODELOCATIONID`\
-初始化/使用`uCodeLocationId`欄位。
+初始化/使用 `uCodeLocationId` 欄位。
 
 `DSF_POSITION`\
-初始化/使用`posBeg`和`posEnd`欄位。
+初始化/使用 `posBeg` 和 `posEnd` 欄位。
 
 `DSF_DOCUMENTURL`\
-初始化/使用`bstrDocumentUrl`欄位。
+初始化/使用 `bstrDocumentUrl` 欄位。
 
 `DSF_BYTEOFFSET`\
-初始化/使用`dwByteOffset`欄位。
+初始化/使用 `dwByteOffset` 欄位。
 
 `DSF_FLAGS`\
-初始化/使用`dwFlags`([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) 欄位。
+初始化/使用 `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) ] 欄位。
 
 `DSF_OPERANDS_SYMBOLS`\
-在`bstrOperands`欄位中包括符號名稱。
+在欄位中包含符號名稱 `bstrOperands` 。
 
 `DSF_ALL`\
-指定拆解流的所有欄位。
+指定反組解碼資料流程的所有欄位。
 
 ## <a name="remarks"></a>備註
-作為參數傳遞給[Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)方法,以指示要初始化[拆解數據](../../../extensibility/debugger/reference/disassemblydata.md)結構的哪些欄位。
+以參數形式傳遞至 [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) 方法，以指出要初始化 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 結構的哪些欄位。
 
-用於`dwFields``DisassemblyData`結構的成員,用於指示在返回結構時使用哪些欄位並有效。
+用於結構的 `dwFields` 成員 `DisassemblyData` ，以指出傳回結構時使用的欄位和有效的欄位。
 
-這些值可以稍微結合`OR`。
+這些值可能會與位結合 `OR` 。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
-- [讀](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+- [讀取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
 - [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)

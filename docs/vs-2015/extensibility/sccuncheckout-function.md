@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3ae5ecd7568a10936479f72f92e9914132f2dcdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190856"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-此函式會復原先前的簽出作業，藉此將選取的檔案或檔案的內容還原到之前簽出的狀態。 對檔案進行簽出之後的所有變更都都會遺失。  
+此函式會復原先前的簽出作業，藉此將所選取檔案的內容還原到簽出之前的狀態。 簽出之後對檔案所做的所有變更都會遺失。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,40 +38,40 @@ SCCRTN SccUncheckout (
 ```  
   
 #### <a name="parameters"></a>參數  
- pvContext  
- [in]原始檔控制外掛程式的內容結構。  
+ pvCoNtext  
+ 在原始檔控制外掛程式內容結構。  
   
  hWnd  
- [in]原始檔控制外掛程式時，可以使用當做父代上，它會提供任何對話方塊 IDE 視窗的控制代碼。  
+ 在IDE 視窗的控制碼，原始檔控制外掛程式可以使用它做為它所提供之任何對話方塊的父代。  
   
  nFiles  
- [in]中指定的檔案數目`lpFileNames`陣列。  
+ 在陣列中指定的檔案數目 `lpFileNames` 。  
   
  lpFileNames  
- [in]要復原簽出檔案的完整格式的本機路徑名稱的陣列。  
+ 在要復原簽出之檔案的完整本機路徑名稱陣列。  
   
  fOptions  
- [in]（未使用） 的命令旗標。  
+ 在 (不使用) 的命令旗標。  
   
  pvOptions  
- [in]原始檔控制外掛程式特定選項。  
+ 在原始檔控制外掛程式特定的選項。  
   
 ## <a name="return-value"></a>傳回值  
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：  
   
 |值|描述|  
 |-----------|-----------------|  
 |SCC_OK|復原簽出成功。|  
-|SCC_E_FILENOTCONTROLLED|選取的檔案不在原始檔控制之下。|  
-|SCC_E_ACCESSFAILURE|發生問題，存取原始檔控制系統，可能是因為網路或競爭問題。 建議使用重試。|  
-|SCC_E_NONSPECIFICERROR|不明確的失敗。 復原簽出失敗。|  
+|SCC_E_FILENOTCONTROLLED|選取的檔案不在原始程式碼控制之下。|  
+|SCC_E_ACCESSFAILURE|存取原始檔控制系統時發生問題，可能是因為網路或爭用問題。 建議您重試。|  
+|SCC_E_NONSPECIFICERROR|模糊失敗。 復原簽出失敗。|  
 |SCC_E_NOTCHECKEDOUT|使用者沒有簽出檔案。|  
-|SCC_E_NOTAUTHORIZED|若要執行這項作業不允許的使用者。|  
-|SCC_E_PROJNOTOPEN|無法從原始檔控制開啟專案。|  
-|SCC_I_OPERATIONCANCELED|作業已完成前取消。|  
+|SCC_E_NOTAUTHORIZED|不允許使用者執行這項操作。|  
+|SCC_E_PROJNOTOPEN|尚未從原始檔控制中開啟專案。|  
+|SCC_I_OPERATIONCANCELED|作業已在完成前取消。|  
   
 ## <a name="remarks"></a>備註  
- 這項作業後`SCC_STATUS_CHECKEDOUT`和`SCC_STATUS_MODIFIED`旗標會同時清除復原簽出已執行所在的檔案。  
+ 在這項作業之後 `SCC_STATUS_CHECKEDOUT` ， `SCC_STATUS_MODIFIED` 會針對執行復原簽出的檔案清除和旗標。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

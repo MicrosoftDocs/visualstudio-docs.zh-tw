@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram銷毀事件標誌2 |微軟文件
+title: IDebugProgramDestroyEventFlags2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d869304dd8b6dc82db78cc09ed9d51a54acdc3c0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722499"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
-使調試引擎在結束調試會話時覆蓋[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]UI 的默認行為。
+[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]當您結束 debug 會話時，可讓 debug engine 覆寫 UI 的預設行為。
 
 ## <a name="syntax"></a>語法
 
@@ -26,22 +26,22 @@ ms.locfileid: "80722499"
 IDebugProgramDestroyEventFlags2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 此介面由調試引擎實現。 對於可能在進程生命週期內創建和銷毀多個程式的主機,它非常有用。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ 這個介面是由偵錯工具引擎所執行。 它適用于可能在進程存留期間建立和終結多個程式的主機。
 
 ## <a name="methods"></a>方法
- 下表顯示的方法`IDebugProgramDestroyEventFlags2`。
+ 下表顯示的方法 `IDebugProgramDestroyEventFlags2` 。
 
 |方法|描述|
 |------------|-----------------|
-|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|檢索程序銷毀標誌。|
+|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|抓取程式損毀旗標。|
 
 ## <a name="remarks"></a>備註
- UI[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]的 默認行為是在所有程式都發送程式銷毀事件後返回設計模式。 此介面使調試引擎能夠更改該行為。
+ UI 的預設行為 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 是在所有程式都已傳送程式損毀事件之後返回設計模式。 這個介面可讓 debug engine 變更該行為。
 
 ## <a name="requirements"></a>需求
- 標題: Msdbg.h
+ 標頭： Msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
