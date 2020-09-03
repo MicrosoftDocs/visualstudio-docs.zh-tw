@@ -1,5 +1,5 @@
 ---
-title: 如何：使用 XML 片段 |Microsoft Docs
+title: 如何：使用 XML 程式碼片段 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -10,30 +10,30 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4998fbc530cf4350f4a64b0fd527e0764eafce27
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656268"
 ---
 # <a name="how-to-use-xml-snippets"></a>HOW TO：使用 XML 片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以使用 XML 編輯器捷徑功能表上的下列兩個命令叫用 XML 片段。 [**插入程式碼片段**] 命令會在游標位置插入 XML 程式碼片段。 [**環繞于**] 命令會將 XML 程式碼片段包裝在選取的文字周圍。 每個 XML 片段都具有指定的片段型別。 程式碼片段類型會使用 [**插入程式碼片段** **] 命令、[範圍**語句] 命令或兩者，來判斷程式碼片段是否可供使用。
+您可以使用 XML 編輯器捷徑功能表上的下列兩個命令叫用 XML 片段。 [ **插入程式碼片段** ] 命令會在游標位置插入 XML 程式碼片段。 「範圍語句」命令會將所選文字周圍的 XML 程式碼片段包裝 **起來** 。 每個 XML 片段都具有指定的片段型別。 程式碼片段類型會判斷程式碼片段是否可用於 **插入程式碼片段** 命令、 **環繞 with** 命令或兩者。
 
  將 XML 片段加入編輯器後，片段中所有可編輯的欄位均會以黃色反白顯示，且游標位於第一個可編輯欄位上。
 
 ## <a name="insert-snippet"></a>插入片段
- 下列程式說明如何存取 [**插入程式碼片段**] 命令。
+ 下列程式說明如何存取 [ **插入程式碼片段** ] 命令。
 
 > [!NOTE]
-> 也可以透過鍵盤快速鍵（CTRL + K、CTRL + X）來使用 [**插入程式碼片段**] 命令。
+> [ **插入程式碼片段** ] 命令也可以透過鍵盤快速鍵 (CTRL + K，然後按 Ctrl + X) 。
 
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>透過捷徑功能表插入片段
 
 1. 將游標置於您要插入 XML 片段的位置。
 
-2. 以滑鼠右鍵按一下並選取 [**插入程式碼片段**]。
+2. 以滑鼠右鍵按一下並選取 [ **插入程式碼片段**]。
 
      會顯示可用 XML 片段的清單。
 
@@ -43,7 +43,7 @@ ms.locfileid: "72656268"
 
 1. 將游標置於您要插入 XML 片段的位置。
 
-2. 從 [**編輯**] 功能表，指向 [ **IntelliSense**]，然後選取 [**插入程式碼片段**]。
+2. 從 [ **編輯** ] 功能表，指向 [ **IntelliSense**]，然後選取 [ **插入程式碼片段**]。
 
      會顯示可用 XML 片段的清單。
 
@@ -73,16 +73,16 @@ ms.locfileid: "72656268"
 4. 鍵入片段的捷徑名稱，並按 TAB 鍵以叫用 XML 片段。
 
 ## <a name="surround-with"></a>以此環繞
- 下列程式說明如何**存取 [範圍**語句] 命令。
+ 下列程式說明如何存取 [ **以環繞** ] 命令。
 
 > [!NOTE]
-> [範圍語句 **] 命令也**可以透過鍵盤快速鍵（Ctrl + K、Ctrl + S）來取得。
+> 您也可以透過鍵盤快速鍵 (CTRL + K，然後按 CTRL + S) 來使用 [ **環繞于** ] 命令。
 
 #### <a name="to-use-surround-with-from-the-context-menu"></a>透過操作功能表使用以此環繞
 
 1. 在 [XML 編輯器] 中選取要環繞的文字。
 
-2. 按一下滑鼠**右鍵，然後選取 [** 範圍語句]。
+2. 以滑鼠右鍵按一下並選取 [ **環繞于**]。
 
      會顯示可用以此環繞 XML 片段的清單。
 
@@ -92,7 +92,7 @@ ms.locfileid: "72656268"
 
 1. 在 [XML 編輯器] 中選取要環繞的文字。
 
-2. 從 [**編輯**] 功能表，指向 [ **IntelliSense**]，然後選取 [**以範圍括住**]。
+2. 從 [ **編輯** ] 功能表，指向 [ **IntelliSense**]，然後 **選取 [** 範圍語句]。
 
      會顯示可用以此環繞 XML 片段的清單。
 
@@ -107,7 +107,7 @@ ms.locfileid: "72656268"
 
  按 ENTER 鍵或 ESC 鍵以取消欄位編輯，並將編輯器返回到正常狀態。
 
- 您可以在 [**選項**] 對話方塊的 [字型**和色彩**] 窗格中修改程式碼片段欄位設定，以變更可編輯之程式碼片段欄位的預設色彩。 如需詳細資訊，請參閱[如何：變更編輯器中的字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
+ 您可以在 [**選項**] 對話方塊的 [字型**和色彩**] 窗格中修改程式碼片段欄位設定，以變更可編輯的程式碼片段欄位預設色彩。 如需詳細資訊，請參閱 [如何：在編輯器中變更字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
 
-## <a name="see-also"></a>請參閱
- [Xml 片段](../xml-tools/xml-snippets.md)[如何：從 XML 架構產生 xml 程式碼片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)[如何：建立 xml 片段](../xml-tools/how-to-create-xml-snippets.md)
+## <a name="see-also"></a>另請參閱
+ [Xml 程式碼片段](../xml-tools/xml-snippets.md)[如何：從 XML 架構產生 xml 片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)[如何：建立 xml 片段](../xml-tools/how-to-create-xml-snippets.md)

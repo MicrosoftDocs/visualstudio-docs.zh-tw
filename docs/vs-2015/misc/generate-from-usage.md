@@ -1,5 +1,5 @@
 ---
-title: 使用時產生 |Microsoft Docs
+title: 從使用量產生 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -21,11 +21,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2bc6c6189fadaf8d7833fe2fc7978e6fc3638b5e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655864"
 ---
 # <a name="generate-from-usage"></a>Generate From Usage
-本內容已移至[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)。
+此內容已移至 [Visual c # IntelliSense](../ide/visual-csharp-intellisense.md)。

@@ -12,26 +12,26 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 028ad25495ba01d9763c8bec3bbb9c4480d72ff8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185364"
 ---
-# <a name="threads"></a>執行緒
+# <a name="threads"></a>Threads
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-偵錯工具就架構而言，**執行緒**:  
+就偵錯工具架構而言， **執行緒**：  
   
-- 是計算的基本單位。 執行緒會以循序方式執行其指示的內容中的單一呼叫堆疊，從一個程式碼內容移至下一步。  
+- 這是計算的基礎單位。 執行緒會依序在單一呼叫堆疊的內容中執行其指示，並從一個程式碼內容移至下一個。  
   
-- 可以識別本身和它正在執行中，和可名為、 暫止，並繼續執行的程式。 執行緒也可以列舉其相關聯的堆疊框架，並在某些情況下可以移至另一個堆疊框架。 指定的堆疊框架的內容，執行緒可以傳回其相關聯的邏輯執行緒，如果有的話。 執行緒具有屬性，例如暫停計數，可以在 IDE 的 [執行緒] 視窗中顯示。  
+- 可以識別自己及其執行所在的程式，並且可以命名、暫止和繼續。 執行緒也可以列舉其相關聯的堆疊框架，而且在某些情況下，可以移至另一個堆疊框架。 如果有堆疊框架的內容，執行緒可以傳回其相關聯的邏輯執行緒（如果有的話）。 執行緒具有可在 IDE 的 [執行緒] 視窗中顯示的屬性，例如「暫止計數」。  
   
-- 由[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)通常所偵錯引擎 (DE) 或由於執行程式的虛擬機器建立的介面。  
+- 是以 [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) 介面表示，通常是由 debug 引擎建立 (將) 或虛擬機器作為執行程式的結果。  
   
 ## <a name="see-also"></a>另請參閱  
  [程式](../../extensibility/debugger/programs.md)   
  [堆疊框架](../../extensibility/debugger/stack-frames.md)   
- [偵錯引擎](../../extensibility/debugger/debug-engine.md)   
+ [Debug 引擎](../../extensibility/debugger/debug-engine.md)   
  [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)   
  [工作階段偵錯管理員](../../extensibility/debugger/session-debug-manager.md)

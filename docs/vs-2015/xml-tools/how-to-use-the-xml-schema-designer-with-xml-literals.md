@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a9e82cf8387756cb4a4abe8b4c41d082485cdcdc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656285"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>HOW TO：搭配使用 XML 結構描述設計工具和 XML 常值
@@ -25,17 +25,17 @@ ms.locfileid: "72656285"
 
 1. 啟動 Visual Studio 2010。
 
-2. 從 [**檔案**] 功能表中，選取 [**新增**]，然後選取 [**專案**]。 [ **新增專案** ] 對話方塊隨即出現。 針對 [**專案類型**]，選取 [**其他語言]，** 然後選取 [ **Visual Basic**]。 針對 [**範本**]，選取 [主控台應用程式]。 然後在 [**名稱**] 欄位中輸入 `XMLLiterals`，並在 [**位置**] 欄位中輸入專案位置。 按一下 [確定]。
+2. 在 [檔案]**** 功能表上選取 [新增]****，然後選取 [專案]****。 [新增專案]  對話方塊隨即出現。 在 [ **專案類型**] 中，選取 [ **其他語言]，** 然後選取 [ **Visual Basic**]。 在 [ **範本**] 中，選取 [主控台應用程式]。 然後，在 `XMLLiterals` [**位置**] 欄位中輸入 [**名稱**] 欄位和專案位置。 按一下 [確定]  。
 
      隨即會建立新專案。 XMLLiterals 專案包含一個 Visual Basic 原始程式檔：Module1.vb。
 
 ### <a name="to-add-an-existing-xsd-file-to-the-project"></a>將現有 XSD 檔案加入至專案
 
-1. 在 [記事本] 中開啟新的文字檔。複製[訂單架構](../xml-tools/sample-xsd-file-simple-schema.md)中的 XML 架構範例程式碼，並將它貼到檔案中。
+1. 在 [記事本] 中開啟新的文字檔。從 [採購單架構](../xml-tools/sample-xsd-file-simple-schema.md) 中複製 XML 架構範例程式碼，並將其貼到檔案中。
 
 2. 將檔案儲存至某個位置並命名為 PurchaseOrderSchema.xsd。
 
-3. 在 方案總管中，以滑鼠右鍵按一下專案的名稱，選取 **新增**，然後選取 **現有專案**。 [ **AddExisting 專案**] 對話方塊隨即出現。 流覽至 Purchaseorderschema.xsd，選取該檔案，然後按一下 [**新增**]。
+3. 在 [方案總管中，以滑鼠右鍵按一下專案的名稱，選取 [ **加入**]，然後選取 [ **現有專案 ...**]。 [ **AddExisting 專案** ] 對話方塊隨即出現。 流覽至 Purchaseorderschema.xsd .xsd 檔案，選取它，然後按一下 [ **新增**]。
 
      XMLLiterals 專案現在會包含兩個檔案：Module1.vb 和 PurchaseOrderSchema.xsd。
 
@@ -70,6 +70,6 @@ ms.locfileid: "72656285"
     End Module
     ```
 
-2. 以滑鼠右鍵按一下 XML 常值或 XML 命名空間匯入中的任何 XML 節點，然後選取 [**在架構瀏覽器中顯示**]。
+2. 以滑鼠右鍵按一下 XML 常值或 XML 命名空間匯入中的任何 XML 節點，然後選取 [ **在架構瀏覽器中顯示**]。
 
      XML 結構描述總管會與一個 Visual Basic 檔案並排顯示，此檔案具有與 XML 結構描述集相關的 XML 常值。

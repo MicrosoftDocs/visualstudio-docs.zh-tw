@@ -1,5 +1,5 @@
 ---
-title: 錯誤：無法將&#39;專案&#39; &#39;專案&#39;中的相依性檔案複製到執行目錄，因為它會與&#39;相依性&#39;檔案衝突 |Microsoft Docs
+title: 錯誤：無法將專案 &#39;專案&#39; 中的相依性 &#39;檔&#39; 複製到執行目錄，因為它會與相依性 &#39;檔案&#39; 相衝突 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,13 +12,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5d4fd45741585aaf82c82257999b40d6257e82d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656040"
 ---
-# <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>錯誤：無法將&#39;專案&#39; &#39;專案&#39;中的相依性檔案複製到執行目錄，因為它會與&#39;相依性檔案衝突&#39;
+# <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>錯誤：無法將專案 &#39;專案&#39; 中的相依性 &#39;檔&#39; 複製到執行目錄，因為它會與相依性 &#39;檔發生衝突&#39;
 參考之間發生衝突；正在將多個同名的相異相依性複製到 bin 目錄，以執行應用程式。 由於沒有相依性是主要參考，因此執行目錄無法解決衝突。
 
  此錯誤會導致建置失敗。
@@ -29,9 +29,9 @@ ms.locfileid: "72656040"
 
 - 將其中一個組件設為專案的直接參考。 這個方法的可能缺點是，不保證您選擇的組件可以搭配需要其他版本參考組件的組件使用。
 
-     \-或-
+     \- 或 -
 
 - 確定組件的兩個複本都是以強式名稱的方式命名，並且位於全域組件快取中。 如此一來便不需要將組件複製到 bin 目錄。
 
-## <a name="see-also"></a>請參閱
- [管理專案](../ide/managing-references-in-a-project.md)[全域組件快取](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202)中的參考[強式名稱](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)元件[版本](https://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903)設定[如何：建立和移除專案](../ide/how-to-create-and-remove-project-dependencies.md)相依性
+## <a name="see-also"></a>另請參閱
+ [管理專案](../ide/managing-references-in-a-project.md)[全域組件快取](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202)中的參考[強式名稱元件](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)[元件版本](https://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903)設定[如何：建立和移除專案](../ide/how-to-create-and-remove-project-dependencies.md)相依性

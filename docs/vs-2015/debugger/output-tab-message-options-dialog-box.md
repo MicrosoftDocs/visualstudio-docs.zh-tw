@@ -1,5 +1,5 @@
 ---
-title: 輸出索引標籤，訊息選項對話方塊 |Microsoft Docs
+title: 訊息選項對話方塊、輸出索引標籤 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,48 +12,48 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1fa4494ccff03fa71e25b32a4814a98a9e06dc28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185132"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>訊息選項對話方塊、輸出索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-使用**輸出**索引標籤來指定從每個訊息至清單中的哪些資料[訊息檢視](../debugger/messages-view.md)。 若要顯示[訊息選項對話方塊](../debugger/message-options-dialog-box.md)，選擇**記錄檔訊息**從**Spy**功能表。  
+使用 [ **輸出** ] 索引標籤，即可指定要在 [訊息視圖](../debugger/messages-view.md)中列出的每個訊息的資料。 若要顯示 [[訊息選項] 對話方塊](../debugger/message-options-dialog-box.md)，請從 [ **Spy** ] 功能表選擇 [**記錄訊息**]。  
   
- 下列設定位於**輸出** 索引標籤：  
+ [ **輸出** ] 索引標籤提供下列設定：  
   
  **行號**  
  顯示行號。  
   
- **訊息巢狀層級**  
- 前置詞與一個句號，每個層級的巢狀的訊息。  
+ **訊息的嵌套層級**  
+ 在每個層級各有一個句點的嵌套訊息前置詞。  
   
- [原始訊息參數]   
- 顯示十六進位**wParam**並**lParam**值。  
+ [原始訊息參數]****  
+ 顯示十六進位的 **wParam** 和 **lParam** 值。  
   
- [已解碼的訊息參數]   
- 顯示結果的特定訊息的解碼**wParam**並**lParam**值。  
+ [已解碼的訊息參數]****  
+ 顯示 **wParam** 和 **lParam** 值之訊息特定解碼的結果。  
   
- **未經處理的傳回值**  
- 顯示十六進位**lResult**傳回值。  
+ **原始傳回值**  
+ 顯示十六進位 **lResult** 傳回值。  
   
- [已解碼的傳回值]   
- 顯示結果的特定訊息的解碼**lResult**傳回值。  
+ [已解碼的傳回值]****  
+ 顯示 **lResult** 傳回值之訊息特定解碼的結果。  
   
  **訊息來源時間**  
- Windows 系統已啟動 （適用於僅限張貼訊息） 後所經過時間。  
+ 自 Windows 系統啟動以來經過的時間， (只) 張貼的訊息。  
   
  **訊息滑鼠位置**  
- （適用於僅限張貼訊息） 公佈訊息時的滑鼠螢幕座標。  
+ 只有) 張貼的訊息，將訊息張貼 (時，滑鼠的螢幕座標。  
   
- [最大行數]   
- 限制會保留在目前選取的 [訊息] 檢視中的行數。  
+ [最大行數]****  
+ 限制目前選取的訊息 view 中保留的行數。  
   
- **也可將訊息記錄至檔案**  
- 指定的訊息記錄檔的輸出檔。 此輸出檔案會同時寫入與訊息記錄視窗。  
+ **也將訊息記錄到檔案**  
+ 指定訊息記錄檔的輸出檔。 這個輸出檔會與 [訊息記錄] 視窗同時寫入。  
   
- [將設定另存成預設]   
- 儲存新的訊息資料流 windows 上述設定。 當您結束 Spy + + 時，會儲存這些設定。
+ [將設定另存成預設]****  
+ 針對新的訊息串流視窗儲存先前的設定。 這些設定會在您結束 Spy + + 時儲存。

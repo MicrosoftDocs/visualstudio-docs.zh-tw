@@ -1,5 +1,5 @@
 ---
-title: 範例 XSD 檔：關聯性 |Microsoft Docs
+title: 範例 XSD 檔案：關聯性 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 30c08f2b47bbeece432a641b096975492405500f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656219"
 ---
 # <a name="sample-xsd-file-relationships"></a>範例 XSD 檔：關聯性

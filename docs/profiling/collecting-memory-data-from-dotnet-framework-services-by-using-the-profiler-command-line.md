@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 67ad8341dc47b5e9275a02950c5335264e619541
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331686"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>使用分析工具命令列以收集 .NET Framework 服務的記憶體資料
@@ -21,7 +21,7 @@ ms.locfileid: "85331686"
 
 ## <a name="common-tasks"></a>常見工作
 
-|Task|相關內容|
+|工作|相關內容|
 |----------|---------------------|
 |**將分析工具附加至 .NET 服務**|-   [如何：將分析工具附加至 .NET 服務以收集記憶體資料](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|
 |**檢測 .NET 服務並收集 .NET 記憶體資料**|-   [如何：檢測 .NET Framework 服務並收集記憶體資料](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|
@@ -31,7 +31,7 @@ ms.locfileid: "85331686"
 
 ### <a name="profile-services"></a>分析服務
 
-|Task|相關內容|
+|工作|相關內容|
 |----------|---------------------|
 |**使用取樣方法進行分析**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|
 |**使用檢測方法進行分析**|-   [使用檢測設備收集詳細計時資料](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
@@ -39,7 +39,7 @@ ms.locfileid: "85331686"
 
 ### <a name="profile-net-framework-memory-data"></a>分析 .NET Framework 記憶體資料
 
-|Task|相關內容|
+|工作|相關內容|
 |----------|---------------------|
 |**分析獨立 (用戶端) 應用程式**|-   [收集 .NET Framework 記憶體資料](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
 |**分析 ASP.NET Web 應用程式**|-   [收集記憶體資料](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|
@@ -47,5 +47,5 @@ ms.locfileid: "85331686"
 ### <a name="analyze-net-memory-data-views-and-reports"></a>分析 .NET 記憶體資料檢視和報表
 - [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>參考
+## <a name="reference"></a>參考資料
 - [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)

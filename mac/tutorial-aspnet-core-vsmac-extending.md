@@ -7,10 +7,10 @@ ms.date: 10/18/2019
 ms.assetid: 047f5e36-f38e-4bf6-a1c5-3fde32978b7d
 ms.topic: tutorial
 ms.openlocfilehash: aa0267cc185a83249c381d22b995570a2f3f244d
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800785"
 ---
 # <a name="tutorial-extending-an-existing-aspnet-core-web-application"></a>教學課程：擴充現有的 ASP.NET Core web 應用程式

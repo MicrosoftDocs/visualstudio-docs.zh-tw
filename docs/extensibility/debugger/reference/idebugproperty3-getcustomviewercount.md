@@ -1,5 +1,5 @@
 ---
-title: IDebug屬性3::獲取自定義查看器計數 |微軟文件
+title: IDebugProperty3：： GetCustomViewerCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 16cb623f58668362e5e308e1d66dfd6ca7c0fb8c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721192"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
-獲取可能可用於此屬性的自定義查看器數。
+取得這個屬性可能可用的自訂檢視器數目。
 
 ## <a name="syntax"></a>語法
 
@@ -41,18 +41,18 @@ int GetCustomViewerCount(
 
 ## <a name="parameters"></a>參數
 `pcelt`\
-[出]可用於此屬性的自定義查看器數。
+擴展此屬性可用的自訂檢視器數目。
 
 ## <a name="return-value"></a>傳回值
-如果成功,返回`S_OK`;否則,返回錯誤代碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
-為了支援類型視覺化工具,此方法將呼叫到[GetCustomViewerCount 方法](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)。 如果表示式賦值器還支援此屬性類型的自定義查看器,則此方法會將自定義查看器的數量添加到返回的值。
+為了支援型別視覺化，這個方法會將呼叫轉送至 [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) 方法。 如果運算式評估工具也支援此屬性類型的自訂檢視器，這個方法會將自訂檢視器的數目新增至傳回的值。
 
-有關類型視覺化器和自訂檢視器之間的差異的詳細資訊,請參閱[類型視覺化器和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)。
+如需型別視覺化程式和自訂檢視器之間差異的詳細資訊，請參閱 [型別視覺化程式和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)。
 
 ## <a name="example"></a>範例
-下面的範例展示如何為公開[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面的**CProperty**物件實現此方法。
+下列範例示範如何針對公開[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面的**CProperty**物件，執行這個方法。
 
 ```cpp
 STDMETHODIMP CProperty::GetCustomViewerCount(ULONG* pcelt)

@@ -1,5 +1,5 @@
 ---
-title: 將 ASP.NET Docker 容器部署到 ACR 登錄
+title: 將 ASP.NET Docker 容器部署至 ACR registry
 description: 瞭解如何使用 Visual Studio 容器工具將 ASP.NET 或 ASP.NET Core web 應用程式部署至容器登錄
 author: ghogen
 manager: jillfra
@@ -10,10 +10,10 @@ ms.technology: vs-azure
 ms.date: 03/14/2019
 ms.author: ghogen
 ms.openlocfilehash: 4626b64f5e733fec049d56dfe53407cc0fe31566
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88168684"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>使用 Visual Studio 將 ASP.NET 容器部署到容器登錄
@@ -30,10 +30,10 @@ Docker 是輕量級容器引擎，與虛擬機器在某些方面類似，您可�
 若要完成本教學課程：
 
 ::: moniker range="vs-2017"
-* 使用「ASP.NET 和 網頁程式開發」工作負載安裝最新版的[Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+* 使用「ASP.NET 和網頁程式開發」工作負載安裝最新版本的[Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-* 使用「ASP.NET 和 網頁程式開發」工作負載安裝最新版的[Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+* 使用「ASP.NET 和網頁程式開發」工作負載安裝最新版本的[Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 ::: moniker-end
 * 安裝 [適用於 Windows 的 Docker](https://docs.docker.com/docker-for-windows/install/)
 
@@ -53,13 +53,13 @@ Docker 是輕量級容器引擎，與虛擬機器在某些方面類似，您可�
 ## <a name="publish-your-container-to-azure-container-registry"></a>將容器發佈至 Azure Container Registry
 
 1. 在**方案總管**中以滑鼠右鍵按一下專案，並選擇 [發佈]****。
-2. 在 [ **發行目標** ] 對話方塊中，選取 [ **Container Registry**]。
+2. 在 [ **發佈目標** ] 對話方塊中，選取 [ **Container Registry**]。
 3. 選擇 [新 Azure Container Registry]**** 然後按一下 [發佈]****。
 4. 在 [建立新的 Azure Container Registry]**** 中填入您想要的值。
 
     | 設定      | 建議的值  | 描述                                |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **DNS 首碼** | 全域唯一名稱 | 用以唯一識別容器登錄的名稱。 |
+    | **DNS 首碼** | 全域唯一的名稱 | 用以唯一識別容器登錄的名稱。 |
     | **訂用帳戶** | 選擇您的訂用帳戶 | 要使用的 Azure 訂用帳戶。 |
     | **[資源群組](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  要在其中建立容器登錄的資源群組名稱。 選擇 [新增]**** 以建立新的資源群組。|
     | **[SKU](/azure/container-registry/container-registry-skus)** | 標準 | 容器登錄的服務層  |
@@ -67,15 +67,15 @@ Docker 是輕量級容器引擎，與虛擬機器在某些方面類似，您可�
 
     ![Visual Studio 的 [建立 Azure Container Registry] 對話方塊](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
 
-5. 按一下 [建立]
+5. 按一下 [建立] 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 ## <a name="publish-your-container-to-azure-container-registry"></a>將容器發佈至 Azure Container Registry
 1. 在**方案總管**中以滑鼠右鍵按一下專案，並選擇 [發佈]****。
-2. 在 [ **發佈** ] 對話方塊中，選取 [ **Docker Container Registry**]。
+2. 在 [ **發行** ] 對話方塊中，選取 [ **Docker Container Registry**]。
 
-   ![[發佈] 對話方塊的螢幕擷取畫面-選擇 [Docker Container Registry]](media/container-tools/vs-2019/docker-container-registry.png)
+   ![[發佈] 對話方塊的螢幕擷取畫面-選擇 Docker Container Registry](media/container-tools/vs-2019/docker-container-registry.png)
 
 3. 選擇 [ **建立新的 Azure Container Registry**]。
  
@@ -85,7 +85,7 @@ Docker 是輕量級容器引擎，與虛擬機器在某些方面類似，您可�
 
     | 設定      | 建議的值  | 描述                                |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **DNS 首碼** | 全域唯一名稱 | 用以唯一識別容器登錄的名稱。 |
+    | **DNS 首碼** | 全域唯一的名稱 | 用以唯一識別容器登錄的名稱。 |
     | **訂用帳戶** | 選擇您的訂用帳戶 | 要使用的 Azure 訂用帳戶。 |
     | **[資源群組](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  要在其中建立容器登錄的資源群組名稱。 選擇 [新增]**** 以建立新的資源群組。|
     | **[SKU](/azure/container-registry/container-registry-skus)** | 標準 | 容器登錄的服務層  |
@@ -93,13 +93,13 @@ Docker 是輕量級容器引擎，與虛擬機器在某些方面類似，您可�
 
     ![Visual Studio 的 [建立 Azure Container Registry] 對話方塊](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog-2019.png)
 
-5. 按一下 [建立]。
+5. 按一下 [建立]  。
 
-6. 選擇 **[完成]** 以完成程式。
+6. 選擇 **[完成]** 以完成此程式。
 ::: moniker-end
 
 您現在可以從登錄中，將容器提取至能夠執行 Docker 映像的任何主機，例如 [Azure 容器執行個體](/azure/container-instances/container-instances-tutorial-deploy-app)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [快速入門：使用 Azure CLI 在 Azure 中部署容器實例](/azure/container-instances/container-instances-quickstart)

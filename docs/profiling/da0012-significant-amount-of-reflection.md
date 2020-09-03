@@ -1,5 +1,5 @@
 ---
-title: DA0012-大量的反映 |Microsoft Docs
+title: DA0012-大量反映 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: df8b9c80b3d3b12cb556947a7ca77b3141fb853d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520637"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012：大量的反射

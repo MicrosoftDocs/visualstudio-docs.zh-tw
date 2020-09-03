@@ -1,5 +1,5 @@
 ---
-title: 錯誤：SQL 可以&#39;t 找不到 SSDEBUGPS |Microsoft Docs
+title: 錯誤： SQL 可以&#39;t Find SSDEBUGPS.DLL |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 25462a99bd3e773f03af3918a9e25d11ed006c1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185199"
 ---
-# <a name="error-sql-can39t-find-ssdebugps"></a>錯誤：SQL 可以&#39;t 找不到 SSDEBUGPS
+# <a name="error-sql-can39t-find-ssdebugps"></a>錯誤： SQL 可以&#39;t Find SSDEBUGPS.DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 SSDEBUGPS.dll 是 SQL Server 偵錯主機元件。  
@@ -33,15 +33,15 @@ SSDEBUGPS.dll 是 SQL Server 偵錯主機元件。
   
  有兩個方法可以解決這個錯誤：一是重新執行遠端偵錯安裝程式，二是將該檔案複製到 [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] 電腦。  
   
- 若要重新執行遠端偵錯安裝程式，請遵循指示[遠端偵錯](../debugger/remote-debugging.md)。  
+ 若要重新執行遠端偵錯程式設定，請遵循 [遠端偵錯](../debugger/remote-debugging.md)程式的指示。  
   
- 如果找得到 ssdebugps.dll 的複本，就可以將該複本複製到 [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] 電腦。 如果有這個檔案，會在 \Program Files\ Common Files\Microsoft Shared\SQL Debugging 目錄中。 您可能會發現它在另一個[!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)]電腦，或在電腦上具有[!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)]安裝。  
+ 如果找得到 ssdebugps.dll 的複本，就可以將該複本複製到 [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] 電腦。 如果有這個檔案，會在 \Program Files\ Common Files\Microsoft Shared\SQL Debugging 目錄中。 您可能會在另一部 [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] 電腦上，或在已安裝的電腦上找到它 [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] 。  
   
 ### <a name="to-copy-ssdebugpsdll-onto-the-sql-server-2005-machine"></a>若要將 SSDEBUGPS.dll 複製至 SQL Server 2005 電腦  
   
 1. 將該檔案複製到 [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] 電腦上具有相同名稱和路徑的目錄。  
   
-2. 開啟 [命令提示字元]  並執行下列命令，即可登錄該檔案：  
+2. 開啟 [命令提示字元]**** 並執行下列命令，即可登錄該檔案：  
   
     ```  
     regsvr32 ssdebugps.dll  
