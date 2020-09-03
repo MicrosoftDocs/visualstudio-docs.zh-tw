@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d375b64bbc877cb377157f13b3e4cfa7c7cf1592
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547871"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504:必須檢閱可能造成誤導的欄位名稱
@@ -29,14 +29,14 @@ ms.locfileid: "85547871"
 |-|-|
 |TypeName|ReviewMisleadingFieldNames|
 |CheckId|CA1504|
-|類別|Microsoft。可維護性|
-|中斷變更|不中斷|
+|類別|Microsoft 的可維護性|
+|中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 實例欄位的名稱開頭為 "s_"，或 `static` （ `Shared` 在中）欄位的名稱開頭 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 為 "m_"。
+ 實例欄位的名稱開頭為 "s_"，或 `static`) 欄位中 (的名稱 `Shared` 以 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] "m_" 開頭。
 
 ## <a name="rule-description"></a>規則描述
- 以 "s_" 開頭的功能變數名稱會與許多使用者相關聯的靜態資料。 同樣地，以 "m_" 為開頭的功能變數名稱會與實例（成員）資料相關聯。 如需更容易維護的程式碼，名稱應遵循一般使用的慣例。
+ 以 "s_" 開頭的功能變數名稱會由許多使用者與靜態資料相關聯。 同樣地，以 "m_" 開頭的功能變數名稱會與實例 (成員) 資料相關聯。 針對更容易維護的程式碼，名稱應遵循一般使用的慣例。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請使用適當的前置詞重新命名欄位。 或者，藉由新增或移除修飾詞，讓欄位與目前的尾碼一致 `static` 。

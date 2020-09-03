@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d7100c6bb5c1dfb4c7d336ec110cf532f1f998d4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591199"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>自動程式化 UI 測試的結構
@@ -31,9 +31,9 @@ ms.locfileid: "75591199"
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[宣告區段](#UIMapDesignerFile)<br /><br /> [UIMap 類別](#UIMapClass) (部分、自動產生)<br /><br /> [方法](#UIMapMethods)<br /><br /> [屬性](#UIMapProperties)|否|
 |[UIMap.cs](#UIMapCS)|[UIMap 類別](#UIMapCS) (部分)|是|
 |[CodedUITest1.cs](#CodedUITestCS)|[CodedUITest1 類別](#CodedUITestCS)<br /><br /> [方法](#CodedUITestMethods)<br /><br /> [屬性](#CodedUITestProperties)|是|
-|[UIMap.uitest](#UIMapuitest)|測試的 UI XML 對應。|否|
+|[UIMap. uitest](#UIMapuitest)|測試的 UI XML 對應。|否|
 
-### <a name="uimapdesignercs"></a><a name="UIMapDesignerFile"></a>UIMap.Designer.cs
+### <a name="uimapdesignercs"></a><a name="UIMapDesignerFile"></a> UIMap.Designer.cs
 這個檔案包含的程式碼，是建立測試時由**自動程式碼 UI 測試產生器**所自動建立。 測試每次變更時都會重新建立這個檔案，因此這不是讓您加入或修改程式碼的檔案。
 
 #### <a name="declarations-section"></a>宣告區段
@@ -280,6 +280,6 @@ public void MyTestCleanup()
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
 - [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)
-- [編碼 UI 測試的最佳做法](../test/best-practices-for-coded-ui-tests.md)
+- [自動程式碼 UI 測試的最佳作法](../test/best-practices-for-coded-ui-tests.md)
 - [測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)
 - [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

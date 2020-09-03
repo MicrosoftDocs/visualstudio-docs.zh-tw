@@ -1,5 +1,5 @@
 ---
-title: MSBuild 術語詞彙
+title: MSBuild 詞彙的詞彙
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e84a7c3c7e402edb3c39ea247ea7efffce1b60df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154832"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 字彙表
@@ -21,14 +21,14 @@ ms.locfileid: "68154832"
 
 這些詞彙可用來說明 Microsoft Build Engine (MSBuild) 及其元件。
 
-## <a name="glossary"></a>字彙表
+## <a name="glossary"></a>詞彙
  AssemblyFoldersEx
 
  一個登錄位置，協力廠商可在其中儲存每個架構版本的路徑，而他們支援設計階段的解決方案可期望在這些架構路徑中找到參考組件。
 
  批次處理
 
- 批次處理表示會根據項目中繼資料，將項目分割成不同的類別 (稱為「批次」  )，然後使用每個批次一次執行一或多個目標。 MSBuild 批次處理相當於 for 迴圈建構。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。
+ 批次處理表示會根據項目中繼資料，將項目分割成不同的類別 (稱為「批次」**)，然後使用每個批次一次執行一或多個目標。 MSBuild 批次處理相當於 for 迴圈建構。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。
 
  建置範圍
 
@@ -36,15 +36,15 @@ ms.locfileid: "68154832"
 
  子專案
 
- 請參閱＜專案，子系＞  。
+ 請參閱＜專案，子系＞**。
 
- condition
+ condition (條件)
 
  您可以有條件地定義許多 MSBuild 項目，也就是，項目中會出現 `Condition` 屬性。 除非條件判斷值為 `true`，否則會忽略條件式項目的內容。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。
 
  定義，項目
 
- 請參閱＜項目定義＞  。
+ 請參閱＜項目定義＞**。
 
  發出項目
 
@@ -64,27 +64,27 @@ ms.locfileid: "68154832"
 
  函式，屬性
 
- 請參閱＜屬性函式＞  。
+ 請參閱＜屬性函式＞**。
 
  函式，項目
 
  請參閱＜項目函式＞。
 
- 項目
+ item
 
- 項目 (Item) 是建置系統的輸入，會根據它們的項目 (Element) 名稱分組到項目 (Item) 類型。 項目通常代表檔案。 由於項目是根據其所屬的項目類型來命名，因此可交換使用「項目」  和「項目值」  等詞彙。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
+ 項目 (Item) 是建置系統的輸入，會根據它們的項目 (Element) 名稱分組到項目 (Item) 類型。 項目通常代表檔案。 由於項目是根據其所屬的項目類型來命名，因此可交換使用「項目」** 和「項目值」** 等詞彙。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
 
  項目定義
 
- 項目定義群組包含要將預設中繼資料加入任何項目類型的項目定義。 如同已知的中繼資料，預設的中繼資料會與指定項目類型的所有項目相關聯。 您可以在項目定義中明確覆寫預設的中繼資料。 如需詳細資訊，請參閱[項目定義](../msbuild/item-definitions.md)。
+ 項目定義群組包含要將預設中繼資料加入任何項目類型的項目定義。 如同已知的中繼資料，預設的中繼資料會與指定項目類型的所有項目相關聯。 您可以在項目定義中明確覆寫預設的中繼資料。 如需詳細資訊，請參閱 [專案定義](../msbuild/item-definitions.md)。
 
  項目函式
 
- 項目函式會在專案中取得項目的相關資訊。 這些函式會簡化取得 Distinct() 項目的方式，速度比執行項目迴圈還快。 有一些函式可用來管理項目路徑和字串。 如需詳細資訊，請參閱[函式](../msbuild/item-functions.md)。
+ 項目函式會在專案中取得項目的相關資訊。 這些函式會簡化取得 Distinct() 項目的方式，速度比執行項目迴圈還快。 有一些函式可用來管理項目路徑和字串。 如需詳細資訊，請參閱 [專案函數](../msbuild/item-functions.md)
 
  項目中繼資料
 
- 請參閱＜中繼資料，項目＞  。
+ 請參閱＜中繼資料，項目＞**。
 
  項目類型
 
@@ -124,15 +124,15 @@ ms.locfileid: "68154832"
 
  屬性，函式
 
- 屬性函式是一個系統屬性或方法，可用於評估 MSBuild 指令碼。 屬性方法可用來讀取系統時間、比較字串、比對規則運算式，以及執行其他動作。 如需詳細資訊，請參閱[屬性函式](../msbuild/property-functions.md)。
+ 屬性函式是一個系統屬性或方法，可用於評估 MSBuild 指令碼。 屬性方法可用來讀取系統時間、比較字串、比對規則運算式，以及執行其他動作。 如需詳細資訊，請參閱 [屬性](../msbuild/property-functions.md)函式。
 
  屬性函式，巢狀
 
- 屬性函式可能會加以結合，以形成更複雜的函式。 例如，套用至物件的
+ 屬性函式可能會加以結合，以形成更複雜的函式。 例如，
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 
- 如需詳細資訊，請參閱[屬性函式](../msbuild/property-functions.md)。
+ 如需詳細資訊，請參閱 [屬性](../msbuild/property-functions.md)函式。
 
  屬性，全域
 
@@ -168,9 +168,9 @@ ms.locfileid: "68154832"
 
  登錄屬性
 
- 請參閱＜屬性，登錄＞  。
+ 請參閱＜屬性，登錄＞**。
 
- target
+ 目標
 
  目標會以特殊順序將工作分組，並公開專案檔的區段做為建置程序的進入點。 如需詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。
 
@@ -206,7 +206,7 @@ ms.locfileid: "68154832"
 
  目標檔案是一個專案檔，其中包含大部分的目標及可引導組建的工作。 依照慣例，其副檔名為 .targets。 通常會在相關聯的專案檔結束時匯入目標檔案。
 
- task
+ 工作 (task)
 
  工作是 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案用來執行建置作業之可執行程式碼的單元。 例如，工作可能是編譯輸入檔，或是執行外部工具。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。
 
@@ -216,7 +216,7 @@ ms.locfileid: "68154832"
 
  已知的中繼資料
 
- 請參閱＜中繼資料，已知＞  。
+ 請參閱＜中繼資料，已知＞**。
 
 ## <a name="see-also"></a>另請參閱
 

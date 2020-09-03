@@ -1,5 +1,5 @@
 ---
-title: 在舊版語言服務中的導覽列的支援 |Microsoft Docs
+title: 舊版語言服務中的巡覽列支援 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,24 +12,24 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6cef18951a6ac5494f74c150c4251bafd9597686
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154091"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>舊版語言服務中對巡覽列的支援
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-導覽列頂端的 [編輯器] 檢視會顯示檔案中的類型和成員。 左側下拉式清單中，會顯示類型和成員會顯示在右側下拉式清單。 當使用者選取的型別時，插入號會放在類型的第一行中。 當使用者選取的成員時，則會將插入號放在成員的定義。 下拉式清單方塊會更新以反映目前的插入號位置。  
+編輯器視圖頂端的巡覽列會顯示檔案中的類型和成員。 類型會顯示在左側下拉式清單中，而成員會顯示在右邊的下拉式清單中。 當使用者選取型別時，會將插入號放在型別的第一行。 當使用者選取成員時，會將插入號放在成員的定義上。 下拉式方塊會更新，以反映插入號的目前位置。  
   
-## <a name="displaying-and-updating-the-navigation-bar"></a>顯示和更新的導覽列  
- 若要支援的瀏覽列，您必須衍生的類別<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>類別，並實作<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>方法。 當您的語言服務會提供程式碼視窗中，基底<xref:Microsoft.VisualStudio.Package.LanguageService>類別會具現化<xref:Microsoft.VisualStudio.Package.CodeWindowManager>，其中包含<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>物件，表示程式碼視窗。 <xref:Microsoft.VisualStudio.Package.CodeWindowManager>物件則指定新<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>物件。 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A>方法取得<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>物件。 如果您傳回的執行個體您<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>類別，<xref:Microsoft.VisualStudio.Package.CodeWindowManager>呼叫您<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>方法填入內部列出，並傳遞您<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>物件[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]manager 列的下拉式清單。 下拉式清單列管理員 中，接著呼叫<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.SetDropdownBar%2A>方法，在您<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>物件來建立<xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar>物件，包含兩個下拉式清單列。  
+## <a name="displaying-and-updating-the-navigation-bar"></a>顯示和更新巡覽列  
+ 若要支援巡覽列，您必須從類別衍生類別 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> ，並執行 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> 方法。 當您的語言服務指定程式碼視窗時，基類會具現 <xref:Microsoft.VisualStudio.Package.LanguageService> 化 <xref:Microsoft.VisualStudio.Package.CodeWindowManager> ，其中包含 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> 代表程式碼視窗的物件。 <xref:Microsoft.VisualStudio.Package.CodeWindowManager>接著會為物件提供新的 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 物件。 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A>方法會取得 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> 物件。 如果您 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> 傳回類別的實例，則會 <xref:Microsoft.VisualStudio.Package.CodeWindowManager> 呼叫您的 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> 方法以填入內部清單，並將您的 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> 物件傳遞至下拉式清單 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 管理員。 下拉式清單管理員接著會在 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.SetDropdownBar%2A> 您的物件上呼叫方法， <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> 以建立 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar> 包含兩個下拉式列的物件。  
   
- 當插入號移時，請<xref:Microsoft.VisualStudio.Package.LanguageService.OnIdle%2A>方法呼叫<xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A>方法。 基底<xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A>方法呼叫<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>方法，在您<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>類別來更新導覽列的狀態。 您傳遞一組<xref:Microsoft.VisualStudio.Package.DropDownMember>至這個方法的物件。 每個物件代表下拉式清單中的項目。  
+ 當插入點移動時， <xref:Microsoft.VisualStudio.Package.LanguageService.OnIdle%2A> 方法會呼叫 <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> 方法。 基底 <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> 方法會呼叫 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> 您類別中的方法 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> ，以更新巡覽列的狀態。 您會將一組 <xref:Microsoft.VisualStudio.Package.DropDownMember> 物件傳遞給這個方法。 每個物件都代表下拉式清單中的一個專案。  
   
-## <a name="the-contents-of-the-navigation-bar"></a>瀏覽列的內容  
- 瀏覽列通常包含一份類型和成員的清單。 型別的清單會包含在目前的原始程式檔中可用的所有類型。 類型名稱中包含完整的命名空間資訊。 以下是使用兩種類型的 C# 程式碼範例：  
+## <a name="the-contents-of-the-navigation-bar"></a>巡覽列的內容  
+ 導覽列通常會包含類型清單和成員清單。 類型清單包含目前原始程式檔中的所有可用類型。 型別名稱包含完整的命名空間資訊。 以下是具有兩種類型的 c # 程式碼範例：  
   
 ```csharp  
 namespace TestLanguagePackage  
@@ -46,48 +46,48 @@ namespace TestLanguagePackage
 }  
 ```  
   
- [類型] 清單會顯示`TestLanguagePackage.TestLanguageService`和`TestLanguagePackage.TestLanguageService.Tokens`。  
+ [類型] 清單會顯示 `TestLanguagePackage.TestLanguageService` 和 `TestLanguagePackage.TestLanguageService.Tokens` 。  
   
- [成員] 清單會顯示在 [類型] 清單中選取的類型可用成員。 如果使用上述程式碼範例`TestLanguagePackage.TestLanguageService`是型別，已選取 [成員] 清單會包含私用成員`tokens`和`serviceName`。 內部結構`Token`則不會顯示。  
+ [成員] 清單會顯示 [類型] 清單中所選取之類型的可用成員。 使用上述的程式碼範例，如果 `TestLanguagePackage.TestLanguageService` 是已選取的類型，成員清單將包含私用成員 `tokens` 和 `serviceName` 。 內部結構 `Token` 不會顯示。  
   
- 您可以實作讓成員的名稱變成粗體，插入號放置於它時的 [成員] 清單。 成員也可以顯示在灰色文字表示，則這些不目前所在的插入號範圍內。  
+ 您可以在將插入點放在其內部時，執行成員清單以將成員的名稱設為粗體。 成員也可以顯示成灰色的文字，表示它們不在插入點目前位置的範圍內。  
   
-## <a name="enabling-support-for-the-navigation-bar"></a>啟用導覽列的支援  
- 若要啟用導覽列的支援，您必須設定`ShowDropdownBarOption`的參數<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>屬性設定為`true`。 這個參數會設定 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A> 屬性。 若要支援的瀏覽列，您必須實作<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>中的物件<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A>方法<xref:Microsoft.VisualStudio.Package.LanguageService>類別。  
+## <a name="enabling-support-for-the-navigation-bar"></a>啟用巡覽列的支援  
+ 若要啟用對巡覽列的支援，您必須將 `ShowDropdownBarOption` 屬性的參數設定 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 為 `true` 。 這個參數會設定 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A> 屬性。 若要支援巡覽列，您必須 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> 在類別的方法中執行物件 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> 。  
   
- 在您實作<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A>方法，如果<xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A>屬性設定為`true`，，您可以傳回<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>物件。 如果您不會傳回物件，不會顯示巡覽列。  
+ 在方法的執行中 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> ，如果 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A> 屬性設定為 `true` ，您可以傳回 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> 物件。 如果您沒有傳回物件，則不會顯示巡覽列。  
   
- 使用者可以設定選項，以顯示 巡覽列，因此可以在編輯器檢視中開啟時重設此控制項。 使用者必須關閉再重新開啟 [編輯器] 視窗，才能在變更生效。  
+ 使用者可以設定顯示巡覽列的選項，因此當編輯器視圖開啟時，可能會重設這個控制項。 使用者必須先關閉再重新開啟編輯器視窗，變更才會發生。  
   
-## <a name="implementing-support-for-the-navigation-bar"></a>實作在導覽列的支援  
- <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>方法會採用兩個清單 （一個用於每個下拉式清單） 和兩個值，表示目前的選取範圍，每個清單中。 清單和選取項目值可以更新，在此情況下<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>方法必須傳回`true`表示清單已變更。  
+## <a name="implementing-support-for-the-navigation-bar"></a>執行巡覽列的支援  
+ <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>方法會採用兩個清單 (每一個下拉式) 各有一個，而兩個值代表每個清單中目前的選取範圍。 您可以更新清單和選取的值，在此情況下，此 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> 方法必須傳回 `true` 以表示清單已變更。  
   
- 選取變更類型下拉式清單中，[成員] 清單必須更新以反映新的類型。 在 [成員] 清單中顯示的內容可以是：  
+ 當 [類型] 下拉式清單中的選取專案變更時，必須更新 [成員] 清單，以反映新的類型。 [成員] 清單中顯示的內容可以是：  
   
-- 目前型別的成員清單。  
+- 目前類型的成員清單。  
   
-- 中的所有成員可用的來源檔案，但與不在目前的型別中的所有成員，以灰色文字顯示。 使用者仍然可以選取灰色成員 中，因此可用於快速導覽，但色彩表示它們不是目前所選類型的組件。  
+- 來源檔案中的所有成員都可以使用，但所有成員都不在目前的類型中，會顯示為灰色文字。 使用者仍然可以選取灰色的成員，讓他們可以用來進行快速流覽，但色彩表示這些成員不屬於目前選取的類型。  
   
-  實作<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>方法通常會執行下列步驟：  
+  <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>方法的執行通常會執行下列步驟：  
   
-1. 取得原始程式檔的目前宣告的清單。  
+1. 取得原始程式檔的目前宣告清單。  
   
-     有數種方法來填入清單。 其中一個方法是在您的版本上建立自訂的方法<xref:Microsoft.VisualStudio.Package.LanguageService>呼叫的類別<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法會傳回一份所有宣告的自訂剖析原因。 另一種方法可能會呼叫<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法，直接從<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>，原因為自訂的剖析方法。 第三種方法可能會快取中的宣告<xref:Microsoft.VisualStudio.Package.AuthoringScope>中的最後一個完整剖析作業所傳回的類別<xref:Microsoft.VisualStudio.Package.LanguageService>類別，並擷取與<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>方法。  
+     有幾種方式可填入清單。 其中一個方法是在您的類別版本上建立自訂方法 <xref:Microsoft.VisualStudio.Package.LanguageService> ，此方法會呼叫 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 方法，並使用會傳回所有宣告清單的自訂剖析原因。 另一種方法可能是 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> 使用自訂剖析原因，直接從方法呼叫方法。 第三種方法可能是快取 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 類別中最後一次完整剖析作業所傳回之類別中的宣告 <xref:Microsoft.VisualStudio.Package.LanguageService> ，並從方法中取出 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> 。  
   
-2. 填入或更新的類型清單。  
+2. 填入或更新類型清單。  
   
-     [類型] 清單的內容可能會更新來源已變更時，或您已選擇要變更文字樣式，根據目前的插入號位置的類型。 請注意，此位置會傳遞至<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>方法。  
+     當來源變更時，或您已根據目前的插入號位置選擇變更類型的文字樣式時，可能會更新類型清單的內容。 請注意，此位置會傳遞至 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> 方法。  
   
-3. 決定要在目前插入號位置為基礎的 [類型] 清單中選取的型別。  
+3. 根據目前的插入號位置，判斷要在類型清單中選取的類型。  
   
-     您可以在步驟 1，以尋找類型封入目前的插入號位置，搜尋所取得的宣告，然後搜尋 [類型] 清單中的該類型以判斷其索引至類型清單。  
+     您可以搜尋步驟1中取得的宣告，以找出包含目前插入號位置的型別，然後搜尋該型別的型別清單，以判斷其在 [類型] 清單中的索引。  
   
-4. 填入或更新所選類型的所有成員的清單。  
+4. 根據選取的類型填入或更新成員清單。  
   
-     [成員] 清單會反映目前顯示之內容**成員**下拉式清單。 [成員] 清單的內容可能需要更新來源已變更，或如果您要顯示所選類型的成員，而選取的類型變更。 如果您選擇要顯示所有成員的原始程式檔中，文字樣式的清單中的每個成員必須更新目前選取的型別已變更。  
+     [成員] 清單會反映目前顯示在 [ **成員** ] 下拉式清單中的內容。 如果來源已變更，或您只顯示所選類型的成員，而且選取的類型已變更，則可能需要更新成員清單的內容。 如果您選擇顯示原始程式檔中的所有成員，則在目前選取的類型變更時，清單中每個成員的文字樣式必須更新。  
   
-5. 決定要在目前插入號位置為基礎的 [成員] 清單中選取的成員。  
+5. 根據目前的插入號位置，判斷要在成員清單中選取的成員。  
   
-     在步驟 1 中的成員，其中包含目前的插入號位置，搜尋所取得的宣告，然後搜尋 [成員] 清單，該成員以判斷其索引至成員清單。  
+     在步驟1中，搜尋包含目前插入號位置的成員所取得的宣告，然後搜尋成員清單中的成員清單，以判斷其在成員清單中的索引。  
   
-6. 傳回`true`如果您已為清單或任一個清單中的選取項目做任何變更。
+6. `true`如果已對清單或任一清單中的選取專案進行任何變更，則傳回。

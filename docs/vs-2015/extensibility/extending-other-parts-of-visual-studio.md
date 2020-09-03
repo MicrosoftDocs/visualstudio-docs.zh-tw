@@ -12,32 +12,32 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 70b94eeb48f6b099b3183eb6cbee5e4846d0d92b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204518"
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>延伸 Visual Studio 的其他部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-有許多的多個組件，您可以擴充的 Visual Studio 使用者介面。 這裡我們將示範一些。
+您可以擴充的 Visual Studio UI 有許多部分。 在這裡我們只示範幾個。
 
 ## <a name="creating-a-vspackage"></a>建立 VSPackage
- Visual Studio 擴充性的基本建置組塊是 Vspackage。  了解如何加入 VSPackage:[使用 VSPackage 建立擴充功能](../extensibility/creating-an-extension-with-a-vspackage.md)
+ Visual Studio 擴充性的基本構成要素 Vspackage。  瞭解如何新增 VSPackage：[使用 VSPackage 建立延伸](../extensibility/creating-an-extension-with-a-vspackage.md)模組
 
 ## <a name="extending-the-toolbox"></a>擴充工具箱
- 了解如何將新控制項和其他項目新增至 [工具箱] 中，以及如何使用 [工具箱] 的功能：
+ 瞭解如何將新的控制項和其他專案新增至 [工具箱]，以及如何使用 [工具箱] 功能：
 
 - [建立 WPF 工具箱控制項](../extensibility/creating-a-wpf-toolbox-control.md)
 
 - [建立 Windows Form 工具箱控制項](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
 ## <a name="extending-the-status-bar"></a>延伸狀態列
- 了解如何讀取和寫入狀態列的進度列，以及如何提供動畫和其他 UI:[擴充狀態列](../extensibility/extending-the-status-bar.md)。
+ 瞭解如何讀取和寫入狀態列和進度列，以及如何提供動畫和其他 UI： [擴充狀態列](../extensibility/extending-the-status-bar.md)。
 
 ## <a name="creating-custom-start-pages"></a>建立自訂起始頁
- 了解如何讓您自己的起始頁，從頭開始或可下載的開始頁面範例：[建立自訂起始頁](../extensibility/creating-a-custom-start-page.md)。
+ 瞭解如何從頭開始，或從可下載的起始頁範例建立您自己的起始頁： [建立自訂起始頁](../extensibility/creating-a-custom-start-page.md)。
 
-## <a name="write-to-the-activity-log"></a>寫入活動記錄檔
- 了解如何寫入活動記錄檔：[如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。
+## <a name="write-to-the-activity-log"></a>寫入活動記錄
+ 瞭解如何寫入活動記錄： [如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。

@@ -11,44 +11,44 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 38e646f032a12de48bbfb55b089462c7f8a4dd26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152799"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>例外狀況處理 (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-以下說明擲回例外狀況時，就會發生的程序。  
+以下描述擲回例外狀況時所發生的進程。  
   
-## <a name="exception-handling-process"></a>例外狀況處理程序  
+## <a name="exception-handling-process"></a>例外狀況處理常式  
   
-1. 當第一次擲回例外狀況，但它由正在進行偵錯的程式中例外狀況處理常式之前，偵錯引擎 (DE) 會將傳送[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)為停止事件工作階段偵錯管理員 (SDM)。 `IDebugExceptionEvent2`只有例外狀況 （在偵錯封裝中的 [例外狀況] 對話方塊中指定） 的設定可讓您指定使用者想要停止 first-chance 例外狀況通知會傳送。  
+1. 當第一次擲回例外狀況，但在要進行偵錯工具的程式中處理例外狀況處理常式之前，debug engine (DE) 會將 [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) 傳送至會話 debug MANAGER (SDM) 做為停止事件。 `IDebugExceptionEvent2`如果只有在偵錯工具封裝的 [例外狀況] 對話方塊中指定了例外狀況 (的設定，就會傳送，) 指定使用者想要在第一個可能發生的例外狀況通知時停止。  
   
-2. SDM 呼叫[IDebugExceptionEvent2::GetException](../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)取得例外狀況的屬性。  
+2. SDM 會呼叫 [IDebugExceptionEvent2：： GetException](../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) 來取得例外狀況的屬性。  
   
-3. 偵錯封裝呼叫[IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)來判斷什麼選項，以呈現給使用者。  
+3. Debug 封裝會呼叫 [IDebugExceptionEvent2：： CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) 來判斷要向使用者呈現哪些選項。  
   
-4. 偵錯封裝會要求使用者如何開啟 first-chance 例外狀況對話方塊處理的例外狀況。  
+4. 偵錯工具封裝會藉由開啟第一個可能的例外狀況對話方塊，要求使用者如何處理例外狀況。  
   
-5. 如果使用者選擇繼續，會呼叫 SDM [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)。  
+5. 如果使用者選擇繼續，則 SDM 會呼叫 [IDebugExceptionEvent2：： CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)。  
   
-    - 如果此方法會傳回 s_ok 時，會呼叫[IDebugExceptionEvent2::PassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)。  
+    - 如果方法傳回 S_OK，則會呼叫 [IDebugExceptionEvent2：:P asstodebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)。  
   
          -或-  
   
-         如果此方法會傳回 S_FALSE，該程式進行偵錯獲得第二個機會處理例外狀況。  
+         如果方法傳回 S_FALSE，則會提供所要進行偵錯工具的第二次機會來處理例外狀況。  
   
-6. 如果正在偵錯程式會有第二個可能發生例外狀況處理常式，就會傳送 DE`IDebugExceptionEvent2`來為 SDM **EVENT_SYNC_STOP**。  
+6. 如果正在進行程式設計的程式沒有第二次發生例外狀況的處理常式，則會將傳送 `IDebugExceptionEvent2` 至 SDM 做為 **EVENT_SYNC_STOP**。  
   
-7. 偵錯封裝會要求使用者如何開啟 first-chance 例外狀況對話方塊處理的例外狀況。  
+7. 偵錯工具封裝會藉由開啟第一個可能的例外狀況對話方塊，要求使用者如何處理例外狀況。  
   
-8. 偵錯封裝呼叫[IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)來判斷什麼選項，以呈現給使用者。  
+8. Debug 封裝會呼叫 [IDebugExceptionEvent2：： CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) 來判斷要向使用者呈現哪些選項。  
   
-9. 偵錯封裝會要求使用者如何開啟第二個可能發生的例外狀況對話方塊處理的例外狀況。  
+9. Debug 封裝會要求使用者如何藉由開啟第二個例外狀況對話方塊來處理例外狀況。  
   
-10. 如果此方法會傳回 s_ok 時，會呼叫`IDebugExceptionEvent2::PassToDebuggee`。  
+10. 如果方法傳回 S_OK，則會呼叫 `IDebugExceptionEvent2::PassToDebuggee` 。  
   
 ## <a name="see-also"></a>另請參閱  
  [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)

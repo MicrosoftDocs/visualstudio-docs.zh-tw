@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetValueFromStringCaseInsensitive |Microsoft Docs
+title: IDebugEnumField：： GetValueFromStringCaseInsensitive |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: efe94a721c432cb1284df299ca267271ab5bef4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188937"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此方法會使用不區分大小寫的搜尋，傳回的列舉常數名稱相關聯的值。  
+這個方法會使用不區分大小寫的搜尋，傳回與列舉常數名稱相關聯的值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,16 +42,16 @@ int GetValueFromStringCaseInsensitive(
   
 #### <a name="parameters"></a>參數  
  `pszValue`  
- [in]字串，指定要取值的名稱。 請注意，針對C++，這是寬字元字串。  
+ 在字串，指定要取得其值的名稱。 請注意，在 c + + 中，這是寬字元字串。  
   
  `pValue`  
- [out]傳回相關聯的數值。  
+ 擴展傳回相關聯的數值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`，如果名稱不屬於列舉型別，則為錯誤碼。  
+ 如果成功， `S_OK` 則傳回; 否則， `S_FALSE` 如果名稱不是列舉的一部分或錯誤碼，則會傳回。  
   
 ## <a name="remarks"></a>備註  
- 這個方法是不區分大小寫。 如果需要區分大小寫的搜尋 (例如，在這類的語言C++，名稱會區分大小寫)，使用[GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)。  
+ 這個方法不區分大小寫。 如果需要區分大小寫的搜尋 (例如，使用 c + + 的語言，其中名稱會區分大小寫) ，請使用 [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebug程序發佈者2 |微軟文件
+title: IDebugProgramPublisher2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b17f5bab02e49951eb1647af95641af807c44863
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721533"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
-此介面允許調試引擎 (DE) 或自定義埠供應商註冊程式進行調試。
+此介面可讓 debug engine (DE) 或自訂埠供應商來註冊程式以進行偵錯工具。
 
 ## <a name="syntax"></a>語法
 
@@ -28,35 +28,35 @@ ms.locfileid: "80721533"
 IDebugProgramPublisher2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
-Visual Studio 實現此介面來註冊正在調試的程式,以便使其可見以跨多個進程進行調試。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+Visual Studio 會執行這個介面以註冊要進行偵錯工具的程式，以便在多個進程之間進行跨進程的偵錯工具。
 
-## <a name="notes-for-callers"></a>通話備註
-使用調用`CoCreateInstance``CLSID_ProgramPublisher`COM 的函數以獲取此介面(請參閱範例)。 DE 或自定義埠供應商使用此介面註冊表示正在調試的程式的程式節點。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+使用呼叫 COM 的函式 `CoCreateInstance` `CLSID_ProgramPublisher` 來取得此介面 (請參閱範例) 。 DE 或自訂埠供應商會使用此介面來註冊程式節點，以代表要進行偵錯工具的程式。
 
-## <a name="methods-in-vtable-order"></a>依 Vtable 順序排列的方法
-此介面實現以下方法:
+## <a name="methods-in-vtable-order"></a>採用 Vtable 順序的方法
+此介面會執行下列方法：
 
 |方法|描述|
 |------------|-----------------|
-|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|使程式節點可供 D 和工作階段調試管理員 (SDM)。|
-|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|移除程式節點,使其不再可用。|
-|[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|使程式可供 D 和 SDM 使用。|
-|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|移除程式,使其不再可用。|
-|[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|設置指示存在調試器的標誌。|
+|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|使程式節點可供 DEs 和會話 debug manager (SDM) 。|
+|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|移除程式節點，使其無法再使用。|
+|[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|使程式可供 DEs 和 SDM 使用。|
+|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|移除程式，使其無法再使用。|
+|[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|設定旗標，指出偵錯工具存在。|
 
 ## <a name="remarks"></a>備註
-此介面使程式和程式節點可用(即"發佈"它們),供D和工作階段調試管理員 (SDM) 使用。 要訪問已發佈的程式和程式節點,請使用[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)介面。 這是 Visual Studio 能夠識別正在調試程式的唯一方法。
+此介面讓程式和程式節點可供使用， (也就是「發佈」它們) 供 DEs 和會話 debug manager (SDM) 使用。 若要存取已發佈的程式和程式節點，請使用 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) 介面。 這是 Visual Studio 可以辨識程式正在進行調試的唯一方法。
 
 ## <a name="requirements"></a>需求
-標題: msdbg.h
+標頭： msdbg。h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>範例
-此示例演示如何實例化程式發行者和註冊程式節點。 這是從教學,[發佈程式節點](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae)。
+此範例示範如何將程式發行者具現化，並註冊程式節點。 這是取自教學 [課程的發行程式節點](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae)。
 
 ```cpp
 // This is how m_srpProgramPublisher is defined in the class definition:

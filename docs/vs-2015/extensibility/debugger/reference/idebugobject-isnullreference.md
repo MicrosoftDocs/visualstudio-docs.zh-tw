@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsNullReference |Microsoft Docs
+title: IDebugObject：： IsNullReference |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cd116b236eb57e2fab638cfaa8412167a6d1180f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188896"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
@@ -40,13 +40,13 @@ int IsNullReference(
   
 #### <a name="parameters"></a>參數  
  `pfIsNull`  
- [out]會傳回非零 (`TRUE`) 如果此物件為 null 的參考; 否則會傳回零 (`FALSE`)。  
+ 擴展 `TRUE` 如果此物件為 null 參考，則會傳回非零的 () ; 否則會傳回零 (`FALSE`) 。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
+ 如果成功，則傳回 S_OK;否則，會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- Null 的參考表示空的物件或尚未指派給物件。  
+ Null 參考表示空的物件或尚未指派給的物件。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

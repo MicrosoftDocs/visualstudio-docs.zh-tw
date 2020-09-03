@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d9adc7949b0a6df886ceda0c1ddc6f3b9ee90d4
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463068"
 ---
 # <a name="idiasymbolget_length"></a>IDiaSymbol::get_length
-抓取此符號所表示之物件所使用的記憶體位數或位元組數。
+抓取此符號所表示之物件所使用的記憶體位數或位元組數目。
 
 ## <a name="syntax"></a>語法
 
@@ -33,16 +33,16 @@ HRESULT get_length ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回此符號所表示之物件所使用的記憶體位元組數或位數。
+擴展傳回這個符號所表示之物件所使用的記憶體位元組數目或位數。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。
 
 > [!NOTE]
-> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
 ## <a name="remarks"></a>備註
- 如果符號的[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)為，則 `LocIsBitField` 這個方法所傳回的長度會是位，否則，所有其他位置類型的長度都是以位元組為單位。
+ 如果符號的 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) 為，則 `LocIsBitField` 這個方法所傳回的長度會是位，否則，所有其他位置類型的長度會以位元組為單位。
 
 ## <a name="example"></a>範例
 

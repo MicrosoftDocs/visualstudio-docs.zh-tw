@@ -1,5 +1,5 @@
 ---
-title: 如何：將 ListObject 的資料行對應至資料
+title: 如何：將 ListObject 資料行對應至資料
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b09c07c8b36baeed096c0049c778e431fe232458
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538160"
 ---
-# <a name="how-to-map-listobject-columns-to-data"></a>如何：將 ListObject 的資料行對應至資料
+# <a name="how-to-map-listobject-columns-to-data"></a>如何：將 ListObject 資料行對應至資料
   當您將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項繫結到 <xref:System.Data.DataTable>時，您可能不想在清單中顯示所有資料行，或可能有某些資料行未繫結至資料。 當您呼叫 <xref:Microsoft.Office.Tools.Excel.ListObject> 方法時，您可以對應想要顯示在 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 的資料行。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -34,12 +34,12 @@ ms.locfileid: "85538160"
      [!code-csharp[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#16)]
      [!code-vb[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#16)]
 
-2. 在 `Startup` `Sheet1` 類別（檔層級專案）或 `ThisAddIn` 類別（在 VSTO 增益集專案中）的事件處理常式中，新增範例資料行和資料。
+2. 在檔層級專案中，將範例資料行和資料加入至 `Startup` 類別 (的事件處理常式 `Sheet1` 中，) 或 `ThisAddIn` 在 VSTO 增益集專案) 中 (類別。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#17)]
      [!code-vb[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#17)]
 
-3. 呼叫 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 方法並按應用的順序傳入資料行名稱。 清單物件會系結至新建立的 <xref:System.Data.DataTable> ，但清單物件中資料行的順序會與它們出現在中的順序不同 <xref:System.Data.DataTable> 。
+3. 呼叫 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 方法並按應用的順序傳入資料行名稱。 清單物件將會系結至新建立的 <xref:System.Data.DataTable> ，但清單物件中的資料行順序會與出現在中的順序不同 <xref:System.Data.DataTable> 。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#18)]
      [!code-vb[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#18)]
@@ -60,7 +60,7 @@ ms.locfileid: "85538160"
 ## <a name="see-also"></a>另請參閱
 - [在 VSTO 增益集的執行時間中擴充 Word 檔和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office 檔上的控制項](../vsto/controls-on-office-documents.md)
-- [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [如何：以資料填入 ListObject 控制項](../vsto/how-to-fill-listobject-controls-with-data.md)
+- [在執行時間將控制項新增至 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [如何：使用資料填入 ListObject 控制項](../vsto/how-to-fill-listobject-controls-with-data.md)
 - [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)
 - [ListObject 控制項](../vsto/listobject-control.md)

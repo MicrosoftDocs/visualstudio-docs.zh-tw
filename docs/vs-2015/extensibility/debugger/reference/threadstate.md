@@ -1,5 +1,5 @@
 ---
-title: THREADSTATE | Microsoft Docs
+title: THREADSTATE |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a6e2f6e8011b001c88743871a137ebc0b8cd7c26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204789"
 ---
 # <a name="threadstate"></a>THREADSTATE
@@ -52,27 +52,27 @@ public enum enum_THREADSTATE { 
  表示執行緒正在執行。  
   
  THREADSTATE_STOPPED  
- 表示執行緒已停止因為中斷點。  
+ 表示執行緒因為中斷點而停止。  
   
  THREADSTATE_FRESH  
- 表示執行緒已建立，但尚未執行的程式碼。  
+ 指出已建立執行緒，但尚未執行程式碼。  
   
  THREADSTATE_DEAD  
- 表示執行緒已無作用。  
+ 表示執行緒沒有作用。  
   
  THREADSTATE_FROZEN  
- 表示已凍結執行緒 （可以執行任何執行）。  
+ 表示執行緒已凍結， () 不能執行任何執行。  
   
 ## <a name="remarks"></a>備註  
- 用於`dwThreadState`欄位[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構。  
+ 用於 `dwThreadState` [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 結構的欄位。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

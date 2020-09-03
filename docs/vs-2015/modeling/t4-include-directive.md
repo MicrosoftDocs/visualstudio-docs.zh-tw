@@ -1,5 +1,5 @@
 ---
-title: T4 Include 指示詞 |Microsoft Docs
+title: T4 包含指示詞 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 669be50e11d3bf17d617c361b63f807149dbc823
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658574"
 ---
 # <a name="t4-include-directive"></a>T4 包含指示詞
@@ -27,13 +27,13 @@ ms.locfileid: "72658574"
 <#@ include file="filePath" [once="true"] #>
 ```
 
-- `filePath` 可以是目前範本檔的絕對路徑或相對路徑。
+- `filePath` 可以是絕對或相對於目前的範本檔案。
 
-   此外，特定的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能也可以指定自己的目錄來搜尋 Include 檔。 例如，當您已安裝視覺化和模型 SDK （DSL 工具）時，會將下列資料夾新增至 [包含] 清單： [`Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`]。
+   此外，特定的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能也可以指定自己的目錄來搜尋 Include 檔。 例如，當您安裝視覺效果和模型 SDK (DSL Tools) 時，會將下列資料夾新增至 include 清單： `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates` 。
 
    這些額外的 Include 資料夾可能相依於納入的檔案其副檔名。 例如，只有當納入的檔案其副檔名為 `.tt` 時才能使用 DSL 工具的 Include 資料夾
 
-- `filePath` 可以包含以 "%" 分隔的環境變數。 例如:
+- `filePath` 可以包含以 "%" 分隔的環境變數。 例如：
 
   ```
   <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>
@@ -41,7 +41,7 @@ ms.locfileid: "72658574"
 
 - 包含檔案的名稱不需要使用 `".tt"` 副檔名。
 
-   您可以使用其他副檔名 (例如 `".t4"`) 做為包含檔案的副檔名。 這是因為當您將 `.tt` 檔案加入至專案時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會自動將其**自訂工具**屬性設定為 [`TextTemplatingFileGenerator`]。 您通常不希望被納入的檔案進行個別轉換。
+   您可以使用其他副檔名 (例如 `".t4"`) 做為包含檔案的副檔名。 這是因為當您將檔案加入 `.tt` 至專案時， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會自動將其 **自訂工具** 屬性設為 `TextTemplatingFileGenerator` 。 您通常不希望被納入的檔案進行個別轉換。
 
    另一方面，您應該留意副檔名在某些情況下會影響其他要搜尋 Include 檔的資料夾。 被納入的檔案包含其他檔案時，這一點可能十分重要。
 
@@ -49,7 +49,7 @@ ms.locfileid: "72658574"
 
 - 使用 `once="true"` 確保範本只包含一次，即使它由一個以上的其他 Include 檔案叫用。
 
-   這項功能可讓您輕鬆地建立可重複使用的 T4 程式碼片段程式庫，您可以將其納入，而不必擔心其他程式碼片段已包含在其中。  例如，假設您有一個非常精細的程式碼片段，可處理範本處理和C#產生的程式庫。  接著，這些是其他工作特定的公用程式，例如產生例外狀況，您可以從任何其他應用程式特定的範本使用它們。 如果您繪製相依性圖形，就會看到某些程式碼片段會被包含數次。 但 `once` 參數會阻止後續的包含項。
+   這項功能可讓您輕鬆地建立可重複使用之 T4 程式碼片段的程式庫，您可以將它包含在其中，而不需要擔心其他程式碼片段已包含這些程式碼片段。  例如，假設您有一個非常精細的程式碼片段程式庫，可處理範本處理和 c # 產生。  然後，這些公用程式會使用這些公用程式，例如產生例外狀況，然後您可以從任何其他應用程式特定的範本使用這些公用程式。 如果您繪製相依性圖形，就會看到某些程式碼片段會被包含數次。 但 `once` 參數會阻止後續的包含項。
 
   **MyTextTemplate.tt：**
 
@@ -65,7 +65,7 @@ Output message 5 (from top template).
 
 ```
 
- **Textfile1.txt. t4：**
+ **TextFile1.t4：**
 
 ```
    Output Message 2 (from included file).
@@ -82,7 +82,7 @@ void GenerateMessage(int n)
 
 ```
 
- **Textfile2.txt. t4：**
+ **TextFile2.t4：**
 
 ```
         Output Message 3 (from included file 2).
@@ -97,7 +97,7 @@ void AnotherGenerateMessage(int n)
 
 ```
 
- **產生的 MyTextTemplate 檔案：**
+ **產生的檔案，MyTextTemplate.txt：**
 
 ```
 Output message 1 (from top template).
@@ -112,7 +112,7 @@ Output message 5 (from top template).
 
 ```
 
-## <a name="msbuild"></a>在 MSBuild 和 Visual Studio 中使用專案屬性
+## <a name="using-project-properties-in-msbuild-and-visual-studio"></a><a name="msbuild"></a> 在 MSBuild 和 Visual Studio 中使用專案屬性
  雖然您可以在 include 指示詞中使用如 $(SolutionDir) 的 Visual Studio 巨集，它們在 MSBuild 中並無法運作。 如果想要轉換組建電腦中的範本，您必須改用專案屬性。
 
  編輯您的 .csproj 或 .vbproj 檔案以定義專案屬性。 這個範例會定義名為 `myIncludeFolder` 的屬性：

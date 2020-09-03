@@ -1,5 +1,5 @@
 ---
-title: 文件鎖定持有者管理 |Microsoft Docs
+title: 檔鎖定持有者管理 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,36 +11,36 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 73c6151b5c02cb81a10c2725091c16457db70e33
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204631"
 ---
 # <a name="document-lock-holder-management"></a>文件鎖定持有者管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-執行文件資料表 (RDT) 會維持開啟的文件和它們所擁有的任何編輯鎖定計數。 以程式設計方式編輯在背景中沒有看到文件視窗中開啟的文件的使用者時，您可以編輯鎖定放置 RDT 中的文件上。 這項功能常用的設計工具，可修改的圖形化使用者介面的多個檔案。  
+執行中的檔資料表 (RDT) 維護已開啟檔的計數，以及它們所擁有的任何編輯鎖定。 當您在背景中以程式設計方式編輯 RDT 中的檔時，可以在該檔上放置編輯鎖定，而使用者不會在文件視窗中看到開啟的檔。 透過圖形化使用者介面修改多個檔案的設計師通常會使用這項功能。  
   
-## <a name="document-lock-holder-scenarios"></a>文件鎖定持有者案例  
+## <a name="document-lock-holder-scenarios"></a>檔鎖定持有者案例  
   
-### <a name="file-a-has-a-dependence-on-file-b"></a>檔案"a"會有相依關係檔案"b"  
- 假設您用來實作檔案類型的標準編輯器"A""a"，以及每個檔案類型"a"的參考 （或相依性） 的類型"b"的檔案。 標準編輯器"B"存在於類型"b"的檔案。 "A"編輯器開啟檔案時"a"it 就會擷取對應的檔案"b"的參考。 不會顯示檔案"b"，但編輯器"A"可以進行修改。 編輯器"A"取得的參考文件資料檔案的"b"從<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>方法，也會維護檔案 「 b 」 的編輯鎖定。 完成編輯程式"A"之後修改檔案 「 b 」 可以遞減編輯鎖定仰賴檔案 「 b 」 藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnlockDocument%2A>方法。 您可以省略此步驟中，如果已呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>方法搭配參數`dwRDTLockType`設定為<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>。  
+### <a name="file-a-has-a-dependence-on-file-b"></a>檔案 "a" 相依于檔案 "b"  
+ 假設您針對檔案類型 "a" 執行標準編輯器 "A"，且類型為 "a" 的每個檔案都有 (的參考，或相依于) "b" 類型的檔案。 "B" 類型的檔案有標準編輯器 "B"。 當編輯器「A」開啟檔案 "a" 時，它會抓取對應檔案 "b" 的參考。 檔案 "b" 未顯示，但編輯器 "A" 可加以修改。 編輯器 "A" 會從方法取得檔案 "b" 的檔資料參考 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> ，也會在檔案 "b" 上維護編輯鎖定。 在編輯器 "A" 完成修改檔案 "b" 之後，您可以呼叫方法，以遞減檔案 "b" 的編輯鎖定計數 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnlockDocument%2A> 。 如果您已呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> 方法並將參數設定為，就可以省略這個步驟 `dwRDTLockType` <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> 。  
   
-### <a name="file-b-is-opened-by-a-different-editor"></a>不同的編輯器開啟檔案"b"  
- "B"的檔案已經開啟的 編輯器"B""A"編輯器嘗試開啟它時，有兩種不同的案例來處理：  
+### <a name="file-b-is-opened-by-a-different-editor"></a>檔案 "b" 是由不同的編輯器開啟  
+ 當編輯器「A」嘗試開啟檔案 "b" 時，如果編輯器 "B" 開啟了檔案 "b"，有兩個不同的案例要處理：  
   
-- 如果在相容的編輯器中開啟檔案"b"，您必須編輯程式"A"註冊"b"的檔案使用的文件編輯鎖定<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A>方法。 取消註冊文件編輯器"A"是修改檔案 「 b 」 之後，編輯鎖定使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnregisterDocumentLockHolder%2A>方法。  
+- 如果在相容的編輯器中開啟檔案 "b"，您必須使用方法，讓編輯器「A」在檔案 "b" 上註冊檔編輯鎖定 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A> 。 在編輯器「A」完成修改檔案 "b" 之後，請使用方法取消註冊檔編輯鎖定 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnregisterDocumentLockHolder%2A> 。  
   
-- 如果以不相容的方式開啟檔案"b"，您可以讓嘗試的開啟檔案"b""A"失敗，或者您可以讓檢視與編輯器開啟並顯示適當的錯誤訊息部分的"A"關聯的編輯器。 錯誤訊息應該指示使用者關閉不相容的編輯器中的檔案"b"，然後再重新開啟檔案"a"使用編輯器"A"。 您也可以實作[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A>來提示使用者關閉檔案"b"不相容的編輯器中開啟。 如果使用者關閉檔案"b"，開啟檔案"A""a"的編輯器會繼續正常執行。  
+- 如果檔案 "b" 是以不相容的方式開啟，您可以讓編輯器「A」嘗試開啟檔案 "b"，或是讓視圖與編輯器「A」建立關聯，並顯示適當的錯誤訊息。 錯誤訊息應指示使用者關閉不相容編輯器中的檔案 "b"，然後使用編輯器 "A" 重新開啟檔案 "a"。 您也可以執行 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A> ，提示使用者關閉在不相容編輯器中開啟的檔案 "b"。 如果使用者關閉檔案 "b"，則在編輯器 "A" 中開啟檔案 "a" 會繼續正常執行。  
   
-## <a name="additional-document-edit-lock-considerations"></a>其他文件編輯鎖定考量  
- 如果編輯器"A"是唯一的編輯器，可編輯鎖定檔案"b"，"B"編輯器也會保存在文件時的文件編輯鎖定檔案"b"，您會得到不同的行為。 在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，**類別設計工具**是不會保留編輯鎖定相關聯的程式碼檔案的視覺化設計工具的範例。 也就是說，如果使用者已在 [設計] 檢視中開啟類別圖，而且相關聯的程式碼檔案，同時開啟，而且使用者修改的程式碼檔案，但不會儲存所做的變更，所做的變更也會遺失加入類別圖 (.cd) 檔案。 如果**類別設計工具**具有唯一的文件編輯鎖定的程式碼檔案，不會要求使用者儲存的變更，關閉程式碼檔案時。 IDE 會要求使用者儲存變更，只有在使用者關閉之後，才**類別設計工具**。 已儲存的變更會反映在這兩個檔案。 如果兩個**類別設計工具**且程式碼檔案編輯器保留文件編輯鎖定程式碼檔案，則系統會提示使用者儲存的程式碼檔案或表單關閉時。 此時，儲存的變更會反映在表單和程式碼檔案。 如需有關類別圖的詳細資訊，請參閱[使用類別圖表 （類別設計工具）](../ide/working-with-class-diagrams-class-designer.md)。  
+## <a name="additional-document-edit-lock-considerations"></a>其他檔編輯鎖定考慮  
+ 如果編輯器「A」是唯一的編輯器，而且只有在檔案 "b" 上有檔編輯鎖定，而且編輯器 "B" 也持有檔案 "b" 的檔編輯鎖定，您就會看到不同的行為。 在中 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ， **類別設計工具** 是未在相關聯的程式碼檔案上保存編輯鎖定的視覺化設計工具範例。 也就是說，如果使用者在設計檢視中開啟類別圖表，並同時開啟相關聯的程式碼檔案，而且使用者修改了程式碼檔案但未儲存變更，則在類別圖表 ( 的) 檔案中也會遺失變更。 如果 **類別設計工具** 只有程式碼檔案的檔編輯鎖定，則在關閉程式碼檔案時，不會要求使用者儲存變更。 IDE 會要求使用者在關閉 **類別設計工具**之後，才儲存變更。 儲存的變更會反映在這兩個檔案中。 如果 **類別設計工具** 和程式碼檔案編輯器都持有程式碼檔案的檔編輯鎖定，則在關閉程式碼檔案或表單時，系統會提示使用者進行儲存。 屆時，儲存的變更會反映在表單和程式碼檔案中。 如需類別圖的詳細資訊，請參閱 [使用類別圖表 (類別設計工具) ](../ide/working-with-class-diagrams-class-designer.md)。  
   
- 請注意，是否您需要將編輯鎖定放在非編輯器的文件上，您必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>介面。  
+ 請注意，如果您需要在非編輯器的檔上放置編輯鎖定，就必須執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> 介面。  
   
- 許多次的 UI 設計工具以程式設計方式修改程式碼檔案會對多個檔案進行變更。 在此情況下<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A>方法會處理一或多個文件，藉由儲存**您要儲存下列項目的變更嗎？**  對話方塊。  
+ UI 設計工具以程式設計方式修改程式碼檔案的許多時候，會變更一個以上的檔案。 在這種情況下， <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A> 方法會透過下列方式來處理一或多個檔的儲存： **您是否要將變更儲存至下列專案？** 對話方塊。  
   
 ## <a name="see-also"></a>另請參閱  
- [執行文件資料表](../extensibility/internals/running-document-table.md)   
+ [執行中的檔資料表](../extensibility/internals/running-document-table.md)   
  [持續性與執行中的文件資料表](../extensibility/internals/persistence-and-the-running-document-table.md)

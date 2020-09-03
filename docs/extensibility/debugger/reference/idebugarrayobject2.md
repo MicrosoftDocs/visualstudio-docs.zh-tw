@@ -1,5 +1,5 @@
 ---
-title: IDebugarray物件2 |微軟文件
+title: IDebugArrayObject2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a8a6580d0cbdead7866bbc6dd106a2aa0ea56f76
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736233"
 ---
 # <a name="idebugarrayobject2"></a>IDebugArrayObject2
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關如何執行 CLR 運算式評估工具的詳細資訊，請參閱 [CLR 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 表示託管陣列物件,並允許表達式賦值器 (EE) 確定陣列的基本索引(下限)。
+ 代表 managed 陣列物件，並允許運算式評估工具 (EE) 判斷陣列 (下限) 的基底索引。
 
 ## <a name="syntax"></a>語法
 
@@ -29,23 +29,23 @@ ms.locfileid: "80736233"
 IDebugArrayObject2 : IDebugArrayObject
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- 這由託管調試引擎 (DE) 實現。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ 這是由 managed debug engine (DE) 所執行。
 
 ## <a name="methods"></a>方法
- 除了[IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)介面上的方法外,此介面還實現了以下方法:
+ 除了 [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) 介面上的方法，這個介面也會執行下列方法：
 
 |方法|描述|
 |------------|-----------------|
-|[GetBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-getbaseindices.md)|給定陣列中的維度數,檢索每個索引的基本索引(下限)。|
-|[HasBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-hasbaseindices.md)|確定陣列是否定義了基本索引(下限)。|
+|[GetBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-getbaseindices.md)|針對指定陣列中的維度數目的每個索引，抓取基底索引 (下限) 。|
+|[HasBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-hasbaseindices.md)|判斷陣列是否有定義 (下限) 的基底索引。|
 
 ## <a name="remarks"></a>備註
- 表達式賦值器使用此介面表示解析樹中的託管陣列。
+ 運算式評估工具會使用此介面來表示剖析樹狀結構中的 managed 陣列。
 
 ## <a name="requirements"></a>需求
- 標題: Ee.h
+ 標頭： Ee. h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll

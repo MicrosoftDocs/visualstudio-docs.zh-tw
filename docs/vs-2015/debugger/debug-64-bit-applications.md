@@ -18,16 +18,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c0eaa719bb3eeca2eb3dfe558184699ccca42819
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387196"
 ---
 # <a name="debug-64-bit-applications"></a>偵錯 64 位元應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新版本可在[Debug 64 位應用程式](/visualstudio/debugger/debug-64-bit-applications)中找到。  
+本主題的最新版本可在 [Debug 64 位應用程式](/visualstudio/debugger/debug-64-bit-applications) 中找到。  
   
 您可以對本機電腦或遠端電腦上執行的 64 位元應用程式進行偵錯。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "86387196"
   
 ## <a name="see-also"></a>另請參閱  
  [64位應用程式](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
- [正在設定64位的程式](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
+ [設定64位的程式](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
  [Visual Studio IDE 64 位支援](../ide/visual-studio-ide-64-bit-support.md)   
  [使用傾印檔案](../debugger/using-dump-files.md)   
  [遠端偵錯](../debugger/remote-debugging.md)

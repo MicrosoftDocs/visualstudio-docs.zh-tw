@@ -12,51 +12,51 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bbe65d1615603e4dc7546dbfe3530093c62528e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155038"
 ---
 # <a name="creating-project-types"></a>建立專案類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-您可以擴充[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]藉由建立新的專案類型。 若要建立新的專案類型，您必須了解幾個概念，並完成幾個步驟。 下列主題提供如何建立專案類型的概觀。  
+您可以藉 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 由建立新的專案類型來擴充。 若要建立新的專案類型，您必須瞭解數個概念並完成一些步驟。 下列主題提供如何建立專案類型的總覽。  
   
 ## <a name="in-this-section"></a>本節內容  
  [專案類型的設計決策](../../extensibility/internals/project-type-design-decisions.md)  
- 討論項目、 專案檔案持續性，以及您必須先建立新的專案類型之前的承諾用量 mechanic 設計決策。  
+ 討論在建立新的專案類型之前，您必須建立的專案、專案檔持續性和承諾用量技師修理設計決策。  
   
  [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)  
- 提供建立新的專案類型支援編輯程式碼和編譯、 建置、 偵錯和部署您的專案中的應用程式的程式設計工作，您必須遵循的步驟概觀。  
+ 概述您必須遵循的步驟，以建立新的專案類型，此類型支援程式設計工作做為編輯程式碼，以及在專案中編譯、建立、偵測和部署應用程式。  
   
- [使用 Project Factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)  
- 提供如何提供，並使用 project factory 來建立新專案的執行個體的相關資訊。  
+ [使用專案 Factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)  
+ 提供如何提供和使用專案 factory 來建立新專案實例的相關資訊。  
   
  [註冊專案類型](../../extensibility/internals/registering-a-project-type.md)  
- 提供陳述式從登錄提供預設路徑和資料，以及資料表包含項目從登錄指令碼，每個陳述式的程式碼的範例。  
+ 提供登錄中提供預設路徑和資料之語句的程式碼範例，以及包含每個語句的登入指令檔之專案的資料表。  
   
  [專案持續性](../../extensibility/internals/project-persistence.md)  
- 討論使用`IPersistFileFormat`來保存檔案和非檔案型專案物件。  
+ 討論 `IPersistFileFormat` 如何使用來保存檔案和非檔案型專案物件。  
   
  [使用 MSBuild](../../extensibility/internals/using-msbuild.md)  
- 描述如何使用您的專案類型[!INCLUDE[vstecmsbuild](../../includes/vstecmsbuild-md.md)]建置引擎，讓使用者從建置[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]和在命令列。  
+ 描述您的專案類型如何使用 [!INCLUDE[vstecmsbuild](../../includes/vstecmsbuild-md.md)] 組建引擎讓使用者在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 命令列中建立。  
   
 ## <a name="related-sections"></a>相關章節  
  [支援符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)  
- 說明這類檢視工具的程式碼的架構**物件瀏覽器**並**類別檢視**視窗。 描述用來在 VSPackage 中實作物件瀏覽的方法與介面。  
+ 說明程式碼查看工具的架構，例如 **物件瀏覽器** 和 **類別檢視** 視窗。 描述在 VSPackage 中用來執行物件流覽的介面和方法。  
   
  [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)  
- 討論在判斷哪一個編輯器使用開啟的專案項目時，播放專案的重要性，且可以操作專案資源的方式。  
+ 討論專案在決定開啟專案專案時所使用的編輯器，以及如何操作專案資源時所扮演的意義。  
   
  [使用 Windows Installer 安裝 VSPackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)  
- 示範如何為 VSPackage 提供它自己唯一的身分識別，以及如何將 VSPackage Dll 和其他資訊包裝在一個 Windows Installer 套件 (。MSI 檔案） 部署至您的客戶。  
+ 說明如何為您的 VSPackage 提供自己的唯一身分識別，以及如何 ( Windows Installer 套件中包裝您的 VSPackage Dll 和其他資訊。MSI 檔案) 部署至您的客戶。  
   
  [Visual Studio 中的階層](../../extensibility/internals/hierarchies-in-visual-studio.md)  
- 描述如何[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]檢視和位址階層。  
+ 描述 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 查看和定址階層的方式。  
   
- [VSPackage](../../extensibility/internals/vspackages.md)  
- 提供的 VSPackage，可安裝的 COM 物件延伸概觀[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]環境，並討論如何實作您自己的 VSPackage。  
+ [VSPackages](../../extensibility/internals/vspackages.md)  
+ 提供 VSPackage 的總覽，此為可安裝的 COM 物件，可延伸 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 環境並討論如何執行您自己的 VSPackage。  
   
  [專案類型](../../extensibility/internals/project-types.md)  
- 討論如何使用專案來修改程式碼、 編譯和建置程式碼，以及執行和偵錯程式碼，並提供有關如何建立專案類型的詳細主題的連結。
+ 討論如何使用專案來修改程式碼、編譯和建立程式碼、執行和偵錯工具代碼，以及提供有關如何建立專案類型的詳細主題連結。

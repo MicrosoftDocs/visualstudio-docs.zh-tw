@@ -12,43 +12,43 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 20892d50afc529b410e8e0bdfa3c4b52fdc1b9b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154116"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>專案子類型所擴充的屬性和方法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-專案子類型都有大量的電力來影響專案的行為，因為它會建構為彙總工具的基底的專案。 本節摘要說明的一些功能可增強或修改專案子類型。  
+專案子類型有許多強大的功能可影響專案的行為，因為它會被視為基底專案的匯總工具。 本節將摘要說明專案子類型可以增強或修改的部分功能。  
   
-## <a name="features-gained-by-aggregation"></a>彙總所得到的功能  
- 下表摘要說明的許多彙總可以覆寫基底的專案中的專案子類型的方法。  
+## <a name="features-gained-by-aggregation"></a>匯總所取得的功能  
+ 下表匯總了許多可讓您在基底專案中覆寫專案子類型的方法。  
   
-|覆寫彙總的方法|專案子類型|  
+|由匯總覆寫的方法|專案子類型|  
 |---------------------------------------|---------------------|  
-|從<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>:<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetGuidProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetGuidProperty%2A>|可讓專案子類型<br /><br /> -變更標題和圖示的專案節點。<br />-完全覆寫專案`Browse`物件。<br />-控制是否可以重新命名專案。<br />控制排序次序。<br />控制使用者內容的動態說明。|  
-|從<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>:<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetItemContext%2A>|可讓專案子類型，來控制哪些內容相關的服務可供設計工具和編輯器。|  
-|從<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A><br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A>|可讓專案子類型<br /><br /> -參與專案命令的命令路由而定。<br />新增、 移除或停用專案環境命令和方案總管 中的命令。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>|可讓專案子類型篩選中看到的使用者**加入新項目** 對話方塊。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGeneratorFactory>|可讓專案子類型<br /><br /> -判斷指定的檔案延伸模組的預設值產生器。<br />-將人類可讀取的產生器名稱對應至 COM 物件。|  
+|來源 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> ：<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetGuidProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetGuidProperty%2A>|啟用專案子類型<br /><br /> -變更專案節點的標題和圖示。<br />-完全覆寫專案 `Browse` 物件。<br />-控制是否可以重新命名專案。<br />-控制項排序次序。<br />-控制動態說明的使用者內容。|  
+|來源 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> ：<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetItemContext%2A>|啟用專案子類型，以控制要提供給設計工具和編輯器的內容服務。|  
+|來源 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ：<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A><br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A>|啟用專案子類型<br /><br /> -參與專案命令的命令路由。<br />-新增、移除或停用專案環境命令，以及方案總管使用中命令。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>|啟用專案子類型，以篩選使用者在 [ **加入新專案** ] 對話方塊中看到的內容。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGeneratorFactory>|啟用專案子類型<br /><br /> -判斷指定副檔名的預設產生器。<br />-將人類可讀取的產生器名稱對應至 COM 物件。|  
   
 ## <a name="properties-used-by-project-subtypes"></a>專案子類型所使用的屬性  
- 環境和基底專案系統可以使用的屬性<xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID>和<xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2>詳細下表中，若要啟用專案子類型，來控制的專案系統的各種功能的列舉型別。  
+ 環境和基底專案系統可以使用 <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID> 下表中詳述的屬性和列舉， <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> 以啟用專案子類型來控制專案系統的各種功能。  
   
 |VSHPROPID 屬性|專案子類型|  
 |------------------------|---------------------|  
-|`AddItemTemplatesGuid`|可讓專案子類型，來控制內容**加入項目** 對話方塊。 專案子類型可以提供新的範本目錄的規格、 加入新種類的項目、 移除現有的項目，與重新整理的基底的專案中的項目子集**加入項目** 對話方塊。|  
-|`PropertyPagesCLSIDList`|可讓專案子類型新增或移除組態無關的屬性頁。|  
-|`CfgPropertyPagesCLSIDList`|可讓專案子類型新增或移除組態相依屬性頁。|  
-|`ExtObjectCATID`|可讓專案子類型來提供 Automation 擴充項專案或專案項目物件的了解 Extender 之 CATID。 例如，專案子類型可以提供自訂`Project.Extender("<subtype>")`物件。|  
-|`BrowseObjectCATID`|可讓專案子類型提供的 Automation 擴充項`Browse`藉由得知 Extender 之 CATID 的物件。 例如，專案子類型可以新增額外的屬性，以<xref:EnvDTE.Project.Properties%2A>集合。|  
-|`CfgBrowseObjectCATID`|可讓專案子類型，以提供 Automation 擴充項專案設定瀏覽的物件。 例如，專案子類型可以新增額外的屬性，以<xref:EnvDTE.Configuration.Properties%2A>集合。|  
-|`CfgExtObjectCATID`|可讓專案子類型，以提供 Automation 擴充項的組態物件。|  
-|`DefaultPlatformName`|可讓專案子類型，來判斷專案的組態物件的平台名稱。|  
+|`AddItemTemplatesGuid`|允許專案子類型控制 [ **加入專案** ] 對話方塊的內容。 專案子類型可以提供新的範本目錄規格、加入新的專案類型、移除現有的專案，以及在基底專案的 [ **加入專案** ] 對話方塊中重新組織專案的子集。|  
+|`PropertyPagesCLSIDList`|允許專案子類型新增或移除與設定無關的屬性頁面。|  
+|`CfgPropertyPagesCLSIDList`|允許專案子類型新增或移除與設定相依的屬性頁面。|  
+|`ExtObjectCATID`|允許專案子類型藉由瞭解擴充項 CATID，為專案或專案專案物件提供自動化擴充項。 例如，專案子類型可以提供自訂 `Project.Extender("<subtype>")` 物件。|  
+|`BrowseObjectCATID`|允許專案子類型藉由瞭解擴充項 CATID 來為物件提供自動化擴充項 `Browse` 。 例如，專案子類型可以將額外的屬性加入至 <xref:EnvDTE.Project.Properties%2A> 集合。|  
+|`CfgBrowseObjectCATID`|允許專案子類型為專案設定流覽物件提供自動化擴充項。 例如，專案子類型可以將額外的屬性加入至 <xref:EnvDTE.Configuration.Properties%2A> 集合。|  
+|`CfgExtObjectCATID`|允許專案子類型提供 configuration 物件的自動化擴充項。|  
+|`DefaultPlatformName`|允許專案子類型判斷專案設定物件的平臺名稱。|  
   
- 基底的專案提供上述屬性的預設實作。 基底的專案取得這些藉由呼叫`QueryInterface`針對<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>上的最外層的專案子類型，因此可讓專案子類型，來覆寫屬性的實作。  
+ 基底專案提供上述屬性的預設執行。 基底專案會藉由 `QueryInterface` <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 在最外層的專案子類型上呼叫來取得這些專案，進而允許專案子類型覆寫屬性的執行。  
   
 ## <a name="see-also"></a>另請參閱  
  [設計專案子類型](../../extensibility/internals/project-subtypes-design.md)

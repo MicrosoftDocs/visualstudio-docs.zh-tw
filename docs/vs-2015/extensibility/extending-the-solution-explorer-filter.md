@@ -1,5 +1,5 @@
 ---
-title: 擴充方案總管篩選 |Microsoft Docs
+title: 擴充方案總管篩選準則 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,29 +12,29 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 687663a79ea5dca75da68013519f4652fa71460c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204392"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>延伸方案總管篩選
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以延伸**方案總管 中**篩選功能，以顯示或隱藏不同的檔案。 例如，您可以建立篩選會顯示只有 C# 類別處理站中的檔案**方案總管 中**，如本逐步解說示範。  
+您可以擴充 **方案總管** 篩選功能，以顯示或隱藏不同的檔案。 例如，您可以建立只在 **方案總管**中顯示 c # class factory 檔案的篩選準則，如本逐步解說所示範。  
   
-## <a name="prerequisites"></a>必要條件  
- 從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+## <a name="prerequisites"></a>Prerequisites  
+ 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-### <a name="create-a-visual-studio-package-project"></a>建立 Visual Studio Package 專案  
+### <a name="create-a-visual-studio-package-project"></a>建立 Visual Studio 套件專案  
   
-1. 建立 VSIX 專案，名為`FileFilter`。 新增名為的自訂命令項目範本**FileFilter**。 如需詳細資訊，請參閱 <<c0> [ 建立具有功能表命令的擴充](../extensibility/creating-an-extension-with-a-menu-command.md)。  
+1. 建立名為的 VSIX 專案 `FileFilter` 。 加入名為 **FileFilter**的自訂命令專案範本。 如需詳細資訊，請參閱 [使用功能表命令建立擴充](../extensibility/creating-an-extension-with-a-menu-command.md)功能。  
   
-2. 將參考加入`System.ComponentModel.Composition`和`Microsoft.VisualStudio.Utilities`。  
+2. 加入和的參考 `System.ComponentModel.Composition` `Microsoft.VisualStudio.Utilities` 。  
   
-3. 請在出現的功能表命令**方案總管 中**工具列。 開啟 FileFilterPackage.vsct 檔案。  
+3. 讓功能表命令出現在 **方案總管** 工具列上。 開啟 FileFilterPackage .vsct 檔案。  
   
-4. 變更`<Button>`區塊所示：  
+4. 將 `<Button>` 區塊變更為下列內容：  
   
     ```xml  
     <Button guid="guidFileFilterPackageCmdSet" id="FileFilterId" priority="0x0400" type="Button">  
@@ -46,34 +46,34 @@ ms.locfileid: "68204392"
     </Button>  
     ```  
   
-### <a name="update-the-manifest-file"></a>更新資訊清單檔案  
+### <a name="update-the-manifest-file"></a>更新資訊清單檔  
   
-1. 在 source.extension.vsixmanifest 檔案中，新增為 MEF 元件的資產。  
+1. 在 extension.vsixmanifest 檔案中，新增屬於 MEF 元件的資產。  
   
-2. 在 [**資產**索引標籤上，選擇**新增**] 按鈕。  
+2. 在 [ **資產** ] 索引標籤上，選擇 [ **新增** ] 按鈕。  
   
-3. 在 **型別**欄位中，選擇**Microsoft.VisualStudio.MefComponent**。  
+3. 在 [ **類型** ] 欄位中，選擇 [ **VisualStudio. [microsoft.visualstudio.mefcomponent]**]。  
   
-4. 在 **來源**欄位中，選擇**目前方案中的專案**。  
+4. 在 [ **來源** ] 欄位中，選擇 [ **目前方案中的專案**]。  
   
-5. 在 **專案**欄位中，選擇**FileFilter**，然後選擇**確定**按鈕。  
+5. 在 [ **專案** ] 欄位中，選擇 [ **FileFilter**]，然後選擇 [ **確定]** 按鈕。  
   
-### <a name="add-the-filter-code"></a>新增篩選條件程式碼  
+### <a name="add-the-filter-code"></a>新增篩選器程式碼  
   
-1. FileFilterPackageGuids.cs 檔案中加入一些 Guid:  
+1. 將一些 Guid 新增至 FileFilterPackageGuids.cs 檔案：  
   
     ```csharp  
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file  
     public const int FileFilterId = 0x100;  
     ```  
   
-2. 將類別檔案新增至名為 FileNameFilter.cs FileFilter 專案中。  
+2. 將類別檔案加入至名為 FileNameFilter.cs 的 FileFilter 專案。  
   
-3. 下列程式碼取代空的命名空間和空的類別。  
+3. 將空的命名空間和空白類別取代為下列程式碼。  
   
-     `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)`方法會採用包含在方案根目錄的集合 (`rootItems`)，並傳回包含在篩選條件的項目集合。  
+     `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)`方法會使用包含方案之根的集合 (`rootItems`) ，並傳回要包含在篩選中的專案集合。  
   
-     `ShouldIncludeInFilter`方法篩選中的項目**方案總管 中**根據您指定的階層。  
+     `ShouldIncludeInFilter`方法會根據您指定的條件，篩選**方案總管**階層中的專案。  
   
     ```csharp  
     using System;  
@@ -160,7 +160,7 @@ ms.locfileid: "68204392"
   
     ```  
   
-4. 在 FileFilter.cs，移除 FileFilter 建構函式中的命令位置和處理程式碼。 結果應該如下所示：  
+4. 在 FileFilter.cs 中，從 FileFilter 的函式移除命令放置和處理常式代碼。 結果看起來應該像這樣：  
   
     ```csharp  
     private FileFilter(Package package)  
@@ -174,9 +174,9 @@ ms.locfileid: "68204392"
     }  
     ```  
   
-     移除的 ShowMessageBox() 方法。  
+     也請移除 ShowMessageBox ( # A1 方法。  
   
-5. 在 FileFilterPackage、 cs、 將 initialize （） 方法中的程式碼取代為下列：  
+5. 在 FileFilterPackage 中，將 Initialize ( # A1 方法中的程式碼取代為下列程式碼：  
   
     ```csharp  
     protected override void Initialize()  
@@ -188,10 +188,10 @@ ms.locfileid: "68204392"
   
 ### <a name="test-your-code"></a>測試您的程式碼  
   
-1. 建置並執行專案。 Visual Studio 的第二個執行個體隨即出現。 這稱為實驗執行個體。  
+1. 建置並執行專案。 Visual Studio 的第二個執行個體隨即出現。 這稱為實驗實例。  
   
-2. 在 Visual Studio 的實驗性執行個體，開啟 C# 專案。  
+2. 在 Visual Studio 的實驗實例中，開啟 c # 專案。  
   
-3. 尋找您加入 [方案總管] 工具列的按鈕。 它應該是從左邊的第四個按鈕。  
+3. 尋找您在方案總管工具列上新增的按鈕。 它應該是左邊的第四個按鈕。  
   
-4. 當您按一下按鈕時，所有檔案應該都篩選掉，以及您應該會看到 「 所有項目已都篩選檢視中。 」 在 [方案總管] 中。
+4. 當您按一下此按鈕時，應該篩選出所有檔案，您應該會看到「所有專案都已從 view 篩選出來」。 在方案總管中。

@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::GetMethodProperty |Microsoft Docs
+title: IDebugExpressionEvaluator：： GetMethodProperty |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b84ac959241a8f68f4d9516879660b6414708731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155356"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-這個方法會取得屬性的物件，其中包含 區域變數、 引數和 其他屬性的方法。  
+這個方法會取得包含區域變數、引數和方法之其他屬性的屬性物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -48,25 +48,25 @@ int GetMethodProperty(
   
 #### <a name="parameters"></a>參數  
  `pSymbolProvider`  
- [in]符號提供者使用，以表示[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)物件。  
+ 在要使用的符號提供者，以 [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) 物件表示。  
   
  `pAddress`  
- [in]在程式碼，以表示中的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件應該是解析成最接近包含函式。  
+ 在程式碼中的位址（以 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 物件表示）應解析為最接近的包含函式。  
   
  `pBinder`  
- [in]要使用的繫結器表示為[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)物件。  
+ 在要使用的系結器，以 [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) 物件表示。  
   
  `fIncludeHiddenLocals`  
- [in]非零值 (`TRUE`) 表示要包含隱藏的區域變數; 零 (`FALSE`) 表示保留隱藏 [區域變數]  
+ 在非零 (`TRUE`) 表示要包含隱藏的區域變數; 零 (`FALSE`) 表示離開隱藏的區域變數  
   
  `ppProperty`  
- [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，表示的方法。  
+ 擴展傳回代表方法的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 隱藏 [區域變數] 通常是由編譯器所產生的變數。  
+ 隱藏的區域變數通常是由編譯器所產生的變數。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebug屬性2::獲取最派生的財產 |微軟文件
+title: IDebugProperty2：： GetDerivedMostProperty |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2086aded4361049d722ec36ba1d470ed8f7ac6e5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721499"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
-獲取屬性的派生最源屬性。
+取得屬性的衍生最多屬性。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetDerivedMostProperty ( 
 
 ## <a name="parameters"></a>參數
 `ppDerivedMost`\
-[出]返回表示派生最源屬性的[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件。
+擴展傳回 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 物件，這個物件表示衍生的最多屬性。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則返回錯誤代碼。 如果沒有`S_GETDERIVEDMOST_NO_DERIVED_MOST`要檢索的派生最屬性,則返回。
+ 如果成功，則傳回，否則會傳回 `S_OK` 錯誤碼。 `S_GETDERIVEDMOST_NO_DERIVED_MOST`如果沒有要抓取的衍生最多屬性，則會傳回。
 
 ## <a name="remarks"></a>備註
- 例如,如果此屬性描述實現`ClassRoot`但實際上是`ClassDerived``ClassRoot`從 派生的物件的實例化,則此方法`ClassDerived`返回描述 該物件的[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件。
+ 例如，如果這個屬性描述的物件會執行， `ClassRoot` 但實際上是 `ClassDerived` 衍生自的具現化 `ClassRoot` ，則這個方法會傳回描述物件的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 物件 `ClassDerived` 。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

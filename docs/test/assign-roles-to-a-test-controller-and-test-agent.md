@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0ea644294ea79f1e4c044c0cebf3f427f5b672a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591186"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>將角色指派至測試控制器和測試代理程式
@@ -33,15 +33,15 @@ ms.locfileid: "75591186"
 
 ## <a name="to-create-and-configure-a-test-setting"></a>若要建立和設定測試設定
 
-1. 在 **"解決方案資源管理器"** 中，按右鍵 **"解決方案項"，** 指向 **"添加**"，然後選擇 **"新建項**"。
+1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **方案專案]，** 指向 [ **加入**]，然後選擇 [ **新增專案**]。
 
-     [加入新項目] **** 對話方塊隨即出現。
+     [加入新項目]  對話方塊隨即出現。
 
 2. 在 [安裝的範本]**** 窗格中，選擇 [測試設定]****。
 
 3. 在 [名稱]**** 方塊中鍵入 **TestSettingDistributedTestWalkthrough**。
 
-4. 選擇 **"添加**"。
+4. 選擇 [ **新增**]。
 
      新測試 *TestSettingDistributedTestWalkthrough.testsettings* 檔案會出現在 [方案總管]**** 的 [方案項目]**** 資料夾底下。
 
@@ -97,13 +97,13 @@ ms.locfileid: "75591186"
 
 ::: moniker range="vs-2017"
 
-8. 在 **"測試"** 功能表上，**選擇"測試設定**>**選擇測試設定檔**"，然後選擇 *"測試設定分散式測試流覽.測試設定"* 檔。
+8. 在 [ **測試** ] 功能表上，選取 [ **測試設定**] > **選取 [測試組態檔** ]，然後選擇 *testsettingdistributedtestwalkthrough.testsettings .testsettings* 檔案。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. 在 **"測試"** 功能表上，**選擇"設置檔**"。 瀏覽並選取 *TestSettingDistributedTestWalkthrough.testsettings* 檔案。
+8. 在 [ **測試** ] 功能表上，選擇 [ **選取設定檔**]。 瀏覽並選取 *TestSettingDistributedTestWalkthrough.testsettings* 檔案。
 
 ::: moniker-end
 

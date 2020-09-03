@@ -12,31 +12,31 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb8ecf72e83f12900db77b912d66ff28493ca98e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153844"
 ---
 # <a name="spy-menu-commands"></a>Spy 功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Spy**功能表提供命令以使用 Spy + + Windows 和檢視表。  
+**Spy**功能表提供使用 spy + + 視窗和 views 的命令。  
   
  **Windows**  
- 開啟新的 Windows 檢視。  
+ 開啟新的 Windows view。  
   
  **處理序**  
- 開啟新的處理序檢視。  
+ 開啟新的進程視圖。  
   
  **執行緒**  
- 開啟新的 [執行緒] 檢視。  
+ 開啟新的執行緒視圖。  
   
  **記錄訊息**  
- 開啟新的訊息檢視，並開啟[訊息選項對話方塊](../debugger/message-options-dialog-box.md)檢視。  
+ 開啟新的訊息視圖，並開啟該視圖的 [ [訊息選項] 對話方塊](../debugger/message-options-dialog-box.md) 。  
   
  **尋找視窗**  
- 顯示**FindWindow**對話方塊來選取視窗中的，使用滑鼠。  
+ 顯示 [ **FindWindow** ] 對話方塊，以使用滑鼠來選取視窗。  
   
  **結束**  
  關閉 Spy + + 公用程式。

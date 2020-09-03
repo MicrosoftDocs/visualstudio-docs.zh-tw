@@ -1,5 +1,5 @@
 ---
-title: 類設計器中的C++結構
+title: 類別設計工具中的 c + + 結構
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 2aa8014835df2b5b2bd3dc68e2aaf0b079e001e8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590680"
 ---
-# <a name="c-structures-in-class-designer"></a>類設計器中的C++結構
+# <a name="c-structures-in-class-designer"></a>類別設計工具中的 c + + 結構
 
 [類別設計工具]**** 支援 C++ 結構，其使用 `struct` 關鍵字所宣告。 以下是範例：
 
@@ -40,6 +40,6 @@ struct MyStructure
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用C++代碼](working-with-visual-cpp-code.md)
+- [使用 c + + 程式碼](working-with-visual-cpp-code.md)
 - [類別和結構](/cpp/cpp/classes-and-structs-cpp)
-- [struct](/cpp/cpp/struct-cpp)
+- [結構](/cpp/cpp/struct-cpp)
