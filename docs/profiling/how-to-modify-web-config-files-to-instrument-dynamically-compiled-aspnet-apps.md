@@ -1,5 +1,5 @@
 ---
-title: Web.Config 檔案檢測 & 設定檔動態編譯的 ASP.NET web 應用程式
+title: Web.Config 檔檢測 & 設定檔動態編譯 ASP.NET web 應用程式
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
@@ -10,19 +10,19 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 8ed2d8e8cc62d26f9d63a8a675301c78fc35c51a
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331499"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>如何：修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式
 您可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具檢測方法從動態編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式收集詳細執行時間資料、.NET 記憶體配置資料，以及 .NET 物件存留期資料。
 
- 本主題說明如何修改*web.config*的設定檔，以啟用 Web 應用程式的檢測和分析 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 。
+ 本主題說明如何修改 *web.config* 設定檔，以啟用 Web 應用程式的檢測和分析 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 。
 
 > [!NOTE]
-> 當您使用取樣分析方法時，或當您想要檢測預先編譯的模組時，您不需要修改*web.config*檔案 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 。
+> 當您使用取樣程式碼剖析方法時，或當您想要檢測預先編譯的模組時，不需要修改 *web.config* 檔 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 。
 
  *web.config*檔案的根目錄是**configuration**元素。 若要檢測動態編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式並對其進行分析，您必須新增或修改下列項目：
 
@@ -32,7 +32,7 @@ ms.locfileid: "85331499"
 
 - 兩個 **add** 項目，識別加入至 **configuration/appSettings** 區段之程式碼剖析工具的位置。
 
-  我們建議您建立原始*web.config*檔案的複本，以便用來還原應用程式的設定。
+  建議您建立原始 *web.config* 檔案的複本，您可以用來還原應用程式的設定。
 
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>加入 ASPNetHelper 組件做為 configuration/runtime/assemblyBinding/dependentAssembly 項目
 
@@ -175,7 +175,7 @@ ms.locfileid: "85331499"
 ```
 
 ## <a name="example"></a>範例
- 以下是完整的*web.config*檔案，可啟用動態編譯之 Web 應用程式的檢測和分析 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 。 本範例假設修改前檔案中沒有其他設定。
+ 以下是完整的 *web.config* 檔案，可啟用動態編譯 Web 應用程式的檢測和分析 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 。 本範例假設修改前檔案中沒有其他設定。
 
 ```xml
 <?xml version="1.0"?>

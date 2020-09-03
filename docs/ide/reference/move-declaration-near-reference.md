@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 1339f4a9d151ef41d9a35c5aac0a96f220a297b3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79093989"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>將宣告移到靠近參考的位置重構
@@ -38,7 +38,7 @@ ms.locfileid: "79093989"
 1. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [將宣告移近參考]****。
+      - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [將宣告移近參考]****。
    - **滑鼠**
       - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [將宣告移近參考]****。
 
@@ -67,5 +67,5 @@ if (condition)
 
 ## <a name="see-also"></a>另請參閱
 
-- [Refactoring](../refactoring-in-visual-studio.md)
+- [重構](../refactoring-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

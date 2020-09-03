@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 780485a4d42cad574cddaaa5a9ae51a65a1a9b7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79093637"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>逐步解說：建立和執行包含單元測試的負載測試
@@ -35,21 +35,21 @@ ms.locfileid: "79093637"
 
 - 執行負載測試。
 
-- 執行演練中的步驟[：為託管代碼創建和運行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)，以創建一個簡單的 C# 類庫，其中包含 Web 性能和載入測試專案，其中包含一些單元測試。
+- 執行 [逐步解說：針對 managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) 中的步驟，以建立簡單的 c # 類別庫，其中包含有一些單元測試的 web 效能和負載測試專案。
 
 ## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>使用新增負載測試精靈建立包含單元測試的負載測試
 
 ### <a name="to-start-the-new-load-test-wizard"></a>若要啟動新增負載測試精靈
 
-1. 請確保已安裝["創建負載測試專案](../test/quickstart-create-a-load-test-project.md)"中描述的**Web 性能和負載測試工具**元件。
+1. 請確定您已安裝 [[建立負載測試專案](../test/quickstart-create-a-load-test-project.md)] 中所述的 [ **Web 效能和負載測試工具**] 元件。
 
-1. 打開您在演練中創建的銀行解決方案[：為託管代碼創建和運行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)。
+1. 開啟您在 [逐步解說：針對 managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)中建立的 Bank 方案。
 
 1. 在 [方案總管]****，開啟 Bank 方案節點的捷徑功能表，選擇 [新增]****，然後選擇 [新增專案]****。
 
      [加入新的專案]**** 對話方塊隨即顯示。
 
-1. 在 **"添加新專案"** 對話方塊中，展開**視覺化 C#** 並選擇 **"測試**"。 在範本清單中，選擇 [Web 效能和負載測試專案]****，然後在 [名稱]**** 欄位中，鍵入 `BankLoadTest`。 選擇 **"確定**"。
+1. 在 [ **加入新專案** ] 對話方塊中，展開 [ **Visual c #** ]，然後選擇 [ **測試**]。 在範本清單中，選擇 [Web 效能和負載測試專案]****，然後在 [名稱]**** 欄位中，鍵入 `BankLoadTest`。 選擇 [確定]。
 
      BankLoadTest Web 效能和負載測試專案會加入至方案。
 
@@ -59,7 +59,7 @@ ms.locfileid: "79093637"
 
 1. [新增負載測試精靈]**** 的 [歡迎使用]**** 頁面是第一個出現的頁面。
 
-1. 選擇 [下一步]****。
+1. 選擇 [下一步]。
 
 ### <a name="to-edit-settings-for-load-test-scenario"></a>若要編輯負載測試情節的設定
 
@@ -86,13 +86,13 @@ ms.locfileid: "79093637"
 
 5. 將 [最大使用者計數]**** 設為 100 位使用者。
 
-6. 選擇 [下一步]****。
+6. 選擇 [下一步]。
 
 ### <a name="to-select-test-mix-model-for-the-scenario"></a>若要選取情節的測試混合模型
 
-1. 在**如何建模測試混合**下，**根據測試總數**選擇。
+1. 在 **[如何將測試混合模型**化] 底下，選取 [ **根據測試總數**]。
 
-2. 選擇 [下一步]****。
+2. 選擇 [下一步]。
 
 ### <a name="to-add-unit-tests-to-the-scenario"></a>若要將單元測試加入至情節
 
@@ -100,9 +100,9 @@ ms.locfileid: "79093637"
 
 2. 選擇 [新增]**** 選取測試。
 
-3. 選擇"**可用測試"** 窗格中列出的**CreditTest**單元測試，該測試列出了 Web 性能和負載測試專案中的所有 Web 效能測試和單元測試。
+3. 選擇 [**可用的測試**] 窗格中所列的**CreditTest**單元測試，其中會列出 web 效能和負載測試專案中的所有 web 效能測試和單元測試。
 
-4. 選擇箭頭將 **"信用測試**"單元測試添加到 **"選定測試"** 窗格中。
+4. 選擇箭號，將 **CreditTest** 單元測試新增至 [ **選取的測試** ] 窗格。
 
 5. 針對 **DebitTest** 和 **FreezeAccountTest** 單元測試重複步驟 3 和 4。
 
@@ -112,7 +112,7 @@ ms.locfileid: "79093637"
 
 7. 將 **CreditTest** 的 [分佈]**** 下方的滑桿略往右移，以調整測試分佈。 留意到其餘滑桿會自動往左移，而分佈會維持在 100%。
 
-8. 選擇 [下一步]****。
+8. 選擇 [下一步]。
 
 ### <a name="to-select-network-mix-for-test-scenario"></a>若要選取測試情節的網路混合
 
@@ -120,11 +120,11 @@ ms.locfileid: "79093637"
 
      您還可以新增其他網路類型。 使用滑桿來調整測試散發和加權。
 
-2. 選擇 [下一步]****。
+2. 選擇 [下一步]。
 
 ### <a name="to-specify-computers-to-monitor-with-counter-sets-during-load-test-run"></a>若要指定要在負載測試執行期間以計數器集合監視的電腦
 
-1. 選擇 [下一步]****。
+1. 選擇 [下一步]。
 
      如需計數器集合的詳細資訊，請參閱[在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)。
 

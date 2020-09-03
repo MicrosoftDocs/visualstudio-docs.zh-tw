@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ce0084d6bf734ee8a9de63b0cf3da73504b0d4e4
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800940"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio 中的 Office 和 SharePoint 開發
@@ -82,7 +82,7 @@ ms.locfileid: "88800940"
 |選擇要建置 SharePoint 增益集，還是建置 SharePoint 解決方案。|[在 SharePoint 增益集和 SharePoint 方案之間做決定](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 
 ## <a name="create-a-vsto-add-in"></a><a name="Add-ins"></a> 建立 VSTO 增益集
- 建立以 Office 2007 或 Office 2010 為目標的 VSTO 增益集，或將 Office 2013 和 Office 2016 延伸到超越 Office 增益集的可能性。 VSTO 增益集只會在桌面上執行。 使用者必須安裝 VSTO 增益集，因此通常較難部署和支援它們。  不過，您的 VSTO 增益集可以與 Office 更密切地整合。 例如，它可以將索引標籤和控制項加入至 Office 功能區，以及執行進階的自動化工作，例如合併文件或修改圖表。 您可以運用 .NET Framework，並使用 C# 和 Visual Basic 來與 Office 物件互動。
+ 建立以 Office 2007 或 Office 2010 為目標的 VSTO 增益集，或將 Office 2013 和 Office 2016 延伸到超越 Office 增益集的可能性。VSTO 增益集只會在桌面上執行。 使用者必須安裝 VSTO 增益集，因此通常較難部署和支援它們。  不過，您的 VSTO 增益集可以與 Office 更密切地整合。 例如，它可以將索引標籤和控制項加入至 Office 功能區，以及執行進階的自動化工作，例如合併文件或修改圖表。 您可以運用 .NET Framework，並使用 C# 和 Visual Basic 來與 Office 物件互動。
 
  以下是 VSTO 增益集可以做的範例。 這個 VSTO 增益集將功能區控制項、自訂工作窗格與對話方塊加入 PowerPoint 中。
 

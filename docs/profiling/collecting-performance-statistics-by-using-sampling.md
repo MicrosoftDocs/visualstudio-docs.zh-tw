@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: adf26a8a1bae495481106506208232ebb383d2ca
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331663"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>使用取樣收集效能統計資料
@@ -33,18 +33,18 @@ ms.locfileid: "85331663"
 
 ## <a name="common-tasks"></a>常見工作
 
-您可以在效能會話的 [_效能會話_] [**屬性頁**] 對話方塊中指定其他選項。 若要開啟此對話方塊：
+您可以在效能會話的 [_效能會話_]**屬性頁**對話方塊中指定其他選項。 若要開啟此對話方塊：
 
 - 在 **效能總管**中，以滑鼠右鍵按一下效能工作階段名稱，然後按一下 [屬性] ****。
 
   下表中的工作說明當您使用取樣方法進行分析時，可以在 [效能工作階段屬性頁]__**** 對話方塊中指定的選項。
 
-|Task|相關內容|
+|工作|相關內容|
 |----------|---------------------|
 |在 [一般]**** 頁面，加入 .NET 記憶體配置和存留期資料的收集，並指定產生的分析資料 (.vsp) 檔案的命名詳細資料。|- [收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [如何：設定效能資料檔案名稱選項](../profiling/how-to-set-performance-data-file-name-options.md)|
 |在 [取樣]**** 頁面上，變更取樣率、將取樣事件從處理器時脈循環變更為另一個處理器效能計數器，或變更這兩者...|- [如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)|
 |在 [啟動]**** 頁面上，如果您的程式碼方案中有多個 .exe 專案，請指定要啟動的應用程式和啟動順序。|- [收集階層互動資料](../profiling/collecting-tier-interaction-data.md)|
 |在 [階層互動]**** 頁面上，將 ADO.NET 呼叫資訊新增至分析執行中所收集的資料。|- [收集階層互動資料](../profiling/collecting-tier-interaction-data.md)|
-|在 [Windows 事件]**** 頁面上，指定一或多個要收集取樣資料的 Windows 事件追蹤 (ETW) 事件。|- [如何：收集 Windows 事件追蹤（ETW）資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
+|在 [Windows 事件]**** 頁面上，指定一或多個要收集取樣資料的 Windows 事件追蹤 (ETW) 事件。|- [如何：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
 |在 [Windows 計數器] **** 頁面上，指定將加入程式碼剖析資料為標記的一或多個作業系統效能計數器。|- [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)|
 |在 [進階]**** 頁面上，如果您的應用程式模組使用多個版本，請指定要分析的 .NET Framework 執行階段版本。 預設會分析載入的第一個版本。|- [如何：指定 .NET Framework 執行時間](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|

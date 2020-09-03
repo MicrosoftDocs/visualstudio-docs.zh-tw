@@ -1,5 +1,5 @@
 ---
-title: DefaultName 項目 （Visual Studio 範本） |Microsoft Docs
+title: " (Visual Studio 範本的 DefaultName 元素) |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,20 +13,20 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bc3a18c47b78a312f3bca3762cc4ff3d658a70e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185293"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-建立時，請指定 Visual Studio 專案系統會產生的專案或項目的名稱。  
+指定 Visual Studio 專案系統在建立專案或專案時，將為其產生的名稱。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<DefaultName >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<DefaultName>  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ ms.locfileid: "68185293"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
  無。  
@@ -47,26 +47,26 @@ ms.locfileid: "68185293"
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|  
   
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 此文字會指定預設名稱的專案或項目。  
+ 此文字會指定專案或專案的預設名稱。  
   
 ## <a name="remarks"></a>備註  
- `DefaultName` 是選擇性項目。  
+  是選擇性元素。  
   
- 針對專案，這個元素會指定儲存在磁碟的專案目錄的名稱。 項目，它會指定原始程式檔的檔案名稱。  
+ 若為專案，這個專案會指定將專案儲存在磁片上的目錄名稱。 針對專案，它會指定原始程式檔的檔案名。  
   
- 當您建立專案或項目時，您可以使用下列方法修改預設名稱**名稱**選項，可從其中**新增專案** 對話方塊或**加入新項目** 對話方塊。  
+ 當您建立專案或專案時，可以使用 [**新增專案**] 對話方塊或 [**加入新**專案] 對話方塊中所提供的 [**名稱**] 選項來修改預設名稱。  
   
- 如果不想使用的專案系統產生的專案或項目的預設名稱，然後設定[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)項目`False`。  
+ 如果您不想讓專案系統產生專案或專案的預設名稱，請將 [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) 元素設定為 `False` 。  
   
 ## <a name="example"></a>範例  
- 下列範例說明的標準項目範本的中繼資料[!INCLUDE[csprcs](../includes/csprcs-md.md)]類別。  
+ 下列範例說明類別標準專案範本的中繼資料 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 。  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -85,5 +85,5 @@ ms.locfileid: "68185293"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

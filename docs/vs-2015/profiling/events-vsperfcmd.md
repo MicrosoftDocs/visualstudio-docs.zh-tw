@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d24fc7a01a8eebe356f37704c1a821332f5dca1
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850768"
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
@@ -47,16 +47,16 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
   
  **Events** 選項了解下列核心關鍵字作為提供者名稱：  
   
- **Process**  
- 處理序事件  
+ **處理**  
+ 處理事件  
   
- **Thread**  
+ **執行緒**  
  執行緒事件  
   
- **影像**  
+ **映像**  
  影像載入和卸載事件  
   
- **Disk**  
+ **磁碟**  
  磁碟 I/O 事件  
   
  **檔案**  
@@ -71,7 +71,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  **Network**  
  網路事件  
   
- **Registry**  
+ **登錄**  
  登錄存取事件  
   
  請注意，只能啟用核心提供者。 不可以予以停用，也不可以在關閉監視器之前修改其旗標。  
@@ -86,10 +86,10 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 ```  
   
 > [!IMPORTANT]
-> 如果您不要排除啟動事件，則因為這些事件不會列出在受控物件格式 (MOF) 檔案中，所以它們在報表中會顯示為 GUID。 如需詳細資訊，請參閱 Microsoft 網站上的這個頁面：[範例受控物件格式 (MOF) 檔案](https://msdn.microsoft.com/library/default.aspx)。  
+> 如果您不要排除啟動事件，則因為這些事件不會列出在受控物件格式 (MOF) 檔案中，所以它們在報表中會顯示為 GUID。 如需詳細資訊，請參閱 Microsoft 網站上的下列網頁： [受控物件格式 (MOF) ](https://msdn.microsoft.com/library/default.aspx)檔案的範例。  
   
-## <a name="see-also"></a>請參閱  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [為 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+## <a name="see-also"></a>另請參閱  
+ [>vsperfcmd](../profiling/vsperfcmd.md)   
+ [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)

@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2e56618138fccf6ac431741769b1d4b5ebe7bad4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295127"
 ---
 # <a name="installshield-limited-edition"></a>InstallShield 限量版
@@ -26,10 +26,10 @@ ms.locfileid: "74295127"
   
 ### <a name="to-enable-installshield-limited-edition"></a>啟用 InstallShield Limited Edition  
   
-1. 在功能表列上，依序選擇 檔案、新增和 專案。  
+1. 從功能表列依序選擇 [**檔案**]、[**新增**] 及 [**專案**]。  
   
-2. 在 [新增專案] 對話方塊中，展開 [其他專案類型] 節點，然後選擇 [安裝和部署] 節點。  
+2. 在 [新增專案] **** 對話方塊中，展開 [其他專案類型] **** 節點，然後選擇 [安裝和部署] **** 節點。  
   
-3. 在範本清單中，選擇 [啟用 InstallShield Limited Edition]，然後選擇 [確定] 按鈕。  
+3. 在範本清單中，選擇 [啟用 InstallShield Limited Edition] ****，然後選擇 [確定] **** 按鈕。  
   
-4. 閱讀開啟之瀏覽器視窗中的指示，然後選擇 [進入下載網站] 連結。
+4. 閱讀開啟之瀏覽器視窗中的指示，然後選擇 [進入下載網站] **** 連結。

@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: cd827870f07fb3161674d287d20f266942e61afe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79093976"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>移除執行不到的程式碼重構
@@ -40,7 +40,7 @@ ms.locfileid: "79093976"
 1. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [移除執行不到的程式碼]****。
+      - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [移除執行不到的程式碼]****。
    - **滑鼠**
       - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [移除執行不到的程式碼]****。
 
@@ -67,5 +67,5 @@ private void Method()
 
 ## <a name="see-also"></a>另請參閱
 
-- [Refactoring](../refactoring-in-visual-studio.md)
+- [重構](../refactoring-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

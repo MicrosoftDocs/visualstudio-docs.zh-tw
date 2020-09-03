@@ -1,5 +1,5 @@
 ---
-title: 取得連接埠 |微軟文件
+title: 取得埠 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,26 +12,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7bf4948e7cb2590136774eab76fbafec91dbfa40
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738640"
 ---
-# <a name="get-a-port"></a>取得連接埠
-埠表示與運行進程的電腦的連接。 該電腦可以是本地電腦或遠端電腦(可能運行非基於 Windows 的作業系統;有關詳細資訊,請參閱[埠](../../extensibility/debugger/ports.md))。
+# <a name="get-a-port"></a>取得埠
+埠代表與執行進程之電腦的連接。 該電腦可以是本機電腦或遠端電腦 (可能會執行非 Windows 作業系統;如需詳細資訊) ，請參閱 [埠](../../extensibility/debugger/ports.md) 。
 
-埠由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面表示。 它用於獲取有關在埠連接到的電腦上運行的進程的資訊。
+埠是以 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 介面表示。 它是用來取得埠所連接之電腦上執行之進程的相關資訊。
 
-除錯引擎需要存取埠,以便向埠註冊程式節點並滿足行程資訊請求。 例如,如果調試引擎實現[IDebugProgramProvider2](../../extensibility/debugger/reference/idebugprogramprovider2.md)介面,[則 GetProviderProcessData](../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)方法的實現可能會要求埠返回必要的進程資訊。
+偵錯工具引擎需要存取埠，才能向埠註冊程式節點，以及滿足處理常式資訊的要求。 例如，如果偵錯工具引擎會執行 [IDebugProgramProvider2](../../extensibility/debugger/reference/idebugprogramprovider2.md) 介面，則 [GetProviderProcessData](../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 方法的執行可能會要求傳回所需的進程資訊給埠。
 
-Visual Studio 向調試引擎提供必要的埠,並從埠供應商處獲取此埠。 如果程式附加到(從調試器內部或由於引發異常而觸發"即時 [JIT] 對話方塊"),則為使用者提供要使用的傳輸選擇(埠供應商的另一個名稱)。 否則,如果使用者從調試器中啟動程式,則專案系統指定要使用的埠供應商。 在這兩個事件中,Visual Studio 會實例化埠供應商(由[IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)介面表示),並透過使用[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)介面調用[AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)來請求新的埠。 然後,此埠以這種或另一種形式傳遞到調試引擎。
+Visual Studio 將必要的埠提供給 debug engine，並從埠供應商取得此埠。 如果程式是從偵錯工具內附加至 (，或因為擲回例外狀況而擲回例外狀況，而這會觸發) 的即時 [JIT] 對話方塊，則使用者會選擇傳輸 (另一個名稱供埠供應商) 使用。 否則，如果使用者從偵錯工具內啟動程式，則專案系統會指定要使用的埠供應商。 在任一事件中，Visual Studio 會將埠供應商（以[IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)介面表示）具現化，並使用[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)介面呼叫[AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)來要求新的埠。 然後，此埠會以一種形式傳遞至 debug engine。
 
 ## <a name="example"></a>範例
-此程式片段示範如何使用提供給[Launch 暫停](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)的埠在[ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)中註冊程式節點。 為了清楚起見,省略了與這一概念沒有直接關係參數的參數。
+此程式碼片段說明如何使用提供給 [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) 的埠，在 [ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)中註冊程式節點。 為了清楚起見，已省略與此概念不直接相關的參數。
 
 > [!NOTE]
-> 本示例使用埠啟動和恢復該過程,並假定[IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)介面在埠上實現。 這絕不是執行這些任務的唯一方法,而且除了將程式的[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)交給它之外,埠可能甚至不涉及該埠。
+> 此範例會使用此埠來啟動並繼續處理常式，並假設 [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) 介面是在埠上執行。 這並不是唯一執行這些工作的方式，而且可能甚至不會涉及該埠，因為它會提供給它的程式 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) 。
 
 ```cpp
 // This is an IDebugEngineLaunch2 method.
@@ -98,6 +98,6 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 
 ## <a name="see-also"></a>另請參閱
 - [註冊程式](../../extensibility/debugger/registering-the-program.md)
-- [開啟對程式進行除錯](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
-- [港口供應商](../../extensibility/debugger/port-suppliers.md)
+- [啟用要進行調試的程式](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [埠供應商](../../extensibility/debugger/port-suppliers.md)
 - [連接埠](../../extensibility/debugger/ports.md)

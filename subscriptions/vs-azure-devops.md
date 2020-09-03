@@ -8,10 +8,10 @@ ms.date: 07/22/2020
 ms.topic: conceptual
 description: 了解如何以 Visual Studio 訂閱者的身分使用 Azure DevOps。
 ms.openlocfilehash: 9f715cf5b9bd0278073b4a5f19a0f0a4f6a7a423
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801070"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio 訂閱者的 Azure DevOps 權益
@@ -57,7 +57,7 @@ ms.locfileid: "88801070"
 - 是否有關於 Visual Studio IDE、Azure DevOps 或其他 Visual Studio 產品或服務的問題？  造訪 [Visual Studio 支援服務](https://visualstudio.microsoft.com/support/)。
 - [Azure DevOps 檔](/azure/devops/)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 檔](https://docs.microsoft.com/azure/)

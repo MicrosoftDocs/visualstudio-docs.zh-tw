@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: a3b42f83faacda6be34b282150cf4fb4c0f379f1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79093688"
 ---
 # <a name="split-or-merge-if-statements"></a>split/merge if 陳述式
@@ -25,11 +25,11 @@ ms.locfileid: "79093688"
 
 - Visual Basic
 
-**內容：****拆分**或合併[（如果](/dotnet/csharp/language-reference/keywords/if-else)語句）。
+**何謂：** **Split 或** merge [if](/dotnet/csharp/language-reference/keywords/if-else) 語句。
 
-**何時：** 您希望將使用`if``&&`或`||`運算子的語句拆分為嵌套`if`語句，或將`if`語句與外部`if`語句合併。
+時機 **：** 您想要將 `if` 使用或運算子的語句 `&&` 分割 `||` 成嵌套 `if` 語句，或將 `if` 語句與外部 `if` 語句合併。
 
-**原因：** 這是一個風格偏好的問題。  
+**原因：** 這是樣式喜好設定的考慮。  
 
 ## <a name="how-to"></a>操作方式
 
@@ -37,7 +37,7 @@ ms.locfileid: "79093688"
 
 1. 將游標放在 `if` 陳述式的 `&&` 或 `||` 運算子旁邊。
 
-2. 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
+2. 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
 
     ![分割 if 陳述式](../media/split-if-statement.png)
 
@@ -49,7 +49,7 @@ ms.locfileid: "79093688"
 
 1. 將游標放在內部 `if` 關鍵字中。
 
-2. 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
+2. 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
 
     ![合併 if 陳述式](../media/merge-if-statement.png)
 
@@ -59,4 +59,4 @@ ms.locfileid: "79093688"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Refactoring](../refactoring-in-visual-studio.md)
+- [重構](../refactoring-in-visual-studio.md)

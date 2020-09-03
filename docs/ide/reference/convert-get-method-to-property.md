@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: af507a8b437a20e3d4f4807d582abab6f9a12e27
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094208"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>將 Get 方法轉換為屬性 / 將屬性轉換為 Get 方法的重構
@@ -41,7 +41,7 @@ ms.locfileid: "79094208"
 1. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [以屬性取代方法]****。
+      - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [以屬性取代方法]****。
    - **滑鼠**
       - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [以屬性取代方法]****。
 
@@ -82,7 +82,7 @@ public int MyValue
 1. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [以方法取代屬性]****。
+      - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [以方法取代屬性]****。
    - **滑鼠**
       - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [以方法取代屬性]****。
 
@@ -90,5 +90,5 @@ public int MyValue
 
 ## <a name="see-also"></a>另請參閱
 
-- [Refactoring](../refactoring-in-visual-studio.md)
+- [重構](../refactoring-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

@@ -1,5 +1,5 @@
 ---
-title: 取得本地屬性 :微軟文件
+title: 取得區域屬性 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,26 +13,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e084f28257ddede388468f36e1635e87c8f65961
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738626"
 ---
-# <a name="get-local-properties"></a>取得本地端屬性
+# <a name="get-local-properties"></a>取得區域屬性
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關執行 CLR 運算式評估工具的詳細資訊，請參閱 [clr 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
-Visual Studio 呼叫[Enum 兒童](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)以取得[IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)物件,該物件提供對要在 **「局部變數」** 視窗中顯示的所有局部變數的存取許可權。 然後,可視化工作室調用[Next,](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)獲取要為每個本地顯示的資訊。 這個選項,類別`CEnumPropertyInfo`的連線為介面`IEnumDebugPropertyInfo2`。
+Visual Studio 會呼叫 [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 來取得 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 物件，該物件會提供要顯示在 [ **區域變數** ] 視窗中的所有區域變數的存取權。 Visual Studio 接著會呼叫 [Next](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) 來取得要針對每個本機顯示的資訊。 在此範例中，類別會實 `CEnumPropertyInfo` 作為 `IEnumDebugPropertyInfo2` 介面。
 
-此執行`IEnumDebugPropertyInfo2::Next`以下工作:
+這項的 `IEnumDebugPropertyInfo2::Next` 執行作業會執行下列工作：
 
-1. 清除要存儲資訊的陣列。
+1. 清除要儲存資訊的陣列。
 
-2. 調用[每個](../../extensibility/debugger/reference/ienumdebugfields-next.md)本地,將返回[的DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)存儲在要返回的陣列中。 當實例化此類`CEnumPropertyInfo`時,提供了[IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md)物件。
+2. 呼叫每個本機的 [下一個](../../extensibility/debugger/reference/ienumdebugfields-next.md) ，並將傳回的 [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) 儲存在要傳回的陣列中。 當這個類別具現化時，就會提供 [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) 物件 `CEnumPropertyInfo` 。
 
 ## <a name="managed-code"></a>Managed 程式碼
-此示例在託管代碼中顯示了`IEnumDebugPropertyInfo2::EnumChildren`方法的局部變數的實現。
+此範例示範如何 `IEnumDebugPropertyInfo2::EnumChildren` 在 managed 程式碼中針對方法的區域變數執行。
 
 ```csharp
 namespace EEMC
@@ -94,8 +94,8 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code"></a>非託管代碼
- 此示例顯示非託管代碼中`IEnumDebugPropertyInfo2::EnumChildren`方法的局部變數的實現。
+## <a name="unmanaged-code"></a>非受控碼
+ 此範例示範如何 `IEnumDebugPropertyInfo2::EnumChildren` 在非受控碼中針對方法的區域變數執行。
 
 ```cpp
 STDMETHODIMP CEnumPropertyInfo::Next(
@@ -157,5 +157,5 @@ STDMETHODIMP CEnumPropertyInfo::Next(
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [部份變數的樣本實作](../../extensibility/debugger/sample-implementation-of-locals.md)
-- [列舉局部變數](../../extensibility/debugger/enumerating-locals.md)
+- [區域變數的範例執行](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [列舉區域變數](../../extensibility/debugger/enumerating-locals.md)

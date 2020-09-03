@@ -1,5 +1,5 @@
 ---
-title: Profiler 命令列-檢測 .NET 服務，取得時間詳細資料
+title: Profiler 命令列檢測 .NET 服務，取得計時詳細資料
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
@@ -9,10 +9,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 62303ab2ea7296ca5093636efcf97ea7a3c540c1
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331483"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>如何：使用分析工具命令列檢測 .NET 服務並收集詳細計時資料
@@ -24,7 +24,7 @@ ms.locfileid: "85331483"
 >
 > 若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
 >
-> 若要將階層互動資料新增至分析回合中，則需要使用命令列分析工具的特定程序。 請參閱[收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)。
+> 若要將階層互動資料新增至分析回合中，則需要使用命令列分析工具的特定程序。 請參閱 [收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)。
 
 若要使用檢測方法從 .NET Framework 服務收集詳細的計時資料，您可使用 [VSInstr.exe](../profiling/vsinstr.md) 工具產生已檢測的元件版本。 然後以檢測過的版本取代未經檢測的服務版本，確認服務設定為手動啟動。 使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具初始化全域分析環境變數，然後重新啟動主機電腦。 然後啟動分析工具。
 
@@ -44,33 +44,33 @@ ms.locfileid: "85331483"
 
      **VSPerfClrEnv /globaltraceon**
 
-5. 重新啟動電腦。
+5. 將電腦重新開機。
 
 6. 開啟 [命令提示字元] 視窗。
 
 7. 啟動分析工具。 輸入：
 
-     **VSPerfCmd/start： trace/output：** `OutputFile`[`Options`]
+     **>vsperfcmd/start： trace/output：** `OutputFile` [`Options`]
 
    - [/start](../profiling/start.md)**:trace** 選項會初始化程式碼剖析工具。
 
-   - /Start 需要[/output](../profiling/output.md)**：** `OutputFile` 選項。 **/start** `OutputFile`指定程式碼剖析資料的名稱和位置（。*vsp*）檔案。
+   - /Start 需要[/output](../profiling/output.md)**：** `OutputFile` 選項。 **/start** `OutputFile` 指定分析資料 ( 的名稱和位置。*.vsp*) 檔。
 
      您可以使用下列任一選項搭配 **/start:trace** 選項。
 
      > [!NOTE]
      > **/user** 和 **/crosssession** 選項通常是分析服務的必要選項。
 
-     | 選項 | 說明 |
+     | 選項 | 描述 |
      | - | - |
-     | [/user](../profiling/user-vsperfcmd.md) **：**[ `Domain` **\\** ]`UserName` | 指定擁有程式碼剖析處理序之帳戶的網域和使用者名稱。 只有在以登入的使用者之外的使用者身分執行處理序時，才需要這個選項。 進程擁有者會列在 [Windows 工作管理員] 之 [**處理**程式] 索引標籤的 [**使用者名稱**] 欄位中。 |
-     | [/crosssession](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 會話識別碼會列在 [Windows 工作管理員] 之 [**處理**程式] 索引標籤上的 [**會話識別碼**] 欄中。 **/crosssession** 可縮寫成 **/CS**。 |
+     | [/user](../profiling/user-vsperfcmd.md) **：**[ `Domain` **\\** ]`UserName` | 指定擁有程式碼剖析處理序之帳戶的網域和使用者名稱。 只有在以登入的使用者之外的使用者身分執行處理序時，才需要這個選項。 進程擁有者會列在 Windows 工作管理員的 [**進程**] 索引標籤上的 [**使用者名稱**] 欄中。 |
+     | [/crosssession](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 會話識別碼會列在 Windows 工作管理員的 [**處理**程式] 索引標籤上的 [**會話識別碼**] 欄中。 **/crosssession** 可縮寫成 **/CS**。 |
      | [/waitstart](../profiling/waitstart.md)[**：** `Interval` ] | 指定在分析工具傳回錯誤之前，等候它初始化的秒數。 如果未指定 `Interval`，分析工具會無限期等候。 根據預設，**/start** 會立即傳回。 |
      | [/globaloff](../profiling/globalon-and-globaloff.md) | 若要啟動暫停資料收集的程式碼剖析工具，請將 **/globaloff** 選項新增到 **/start** 命令列。 使用 **/globalon** 以繼續程式碼剖析。 |
-     | [/counter](../profiling/counter.md) **：**`Config` | 從 Config 中指定的處理器效能計數器收集資訊。計數器資訊會新增至每個分析事件所收集的資料。 |
+     | [/counter](../profiling/counter.md) **：**`Config` | 從 Config 中指定的處理器效能計數器收集資訊。計數器資訊會新增至每個程式碼剖析事件所收集的資料。 |
      | [/wincounter](../profiling/wincounter.md) **：**`WinCounterPath` | 指定程式碼剖析期間要收集的 Windows 效能計數器。 |
      | [/automark](../profiling/automark.md) **：**`Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。 |
-     | [/events](../profiling/events-vsperfcmd.md) **：**`Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集在不同的（。*etl*）檔案。 |
+     | [/events](../profiling/events-vsperfcmd.md) **：**`Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集在不同的 ( 中。*etl*) 檔。 |
 
 8. 從 Windows 服務控制管理員啟動服務。
 
@@ -78,9 +78,9 @@ ms.locfileid: "85331483"
 
 當服務執行時，您可以使用 *VSPerfCmd.exe* 選項開始和停止將資料寫入至分析工具資料檔案。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉服務) 的資料。
 
-- 下列成對的**VSPerfCmd**選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
+- 下列 **>vsperfcmd** 選項配對會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
-    |選項|說明|
+    |選項|描述|
     |------------|-----------------|
     |[/globalon/globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|
     |[/processon](../profiling/processon-and-processoff.md) **：** `PID` [/processoff](../profiling/processon-and-processoff.md) **：**`PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|
@@ -104,7 +104,7 @@ ms.locfileid: "85331483"
 
 4. 以原始模組取代檢測過的模組。 如有必要，請重新設定服務的啟動類型。
 
-5. 重新啟動電腦。
+5. 將電腦重新開機。
 
 ## <a name="see-also"></a>另請參閱
 

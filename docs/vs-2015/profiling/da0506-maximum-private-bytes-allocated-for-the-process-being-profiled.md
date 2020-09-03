@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 40806f988bec184f2cf880fc373d8fda0634dda1
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850848"
 ---
-# <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506：為進行程式碼剖析的處理序所配置的最大私用位元組
+# <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506：為所分析的處理序配置的最大私用位元組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-規則識別碼 |DA0506 為 |  
+規則識別碼 |DA0506 |  
 |類別 |資源監視 |  
-|程式碼剖析方法 |全部 |  
-|訊息 |這只是收集資訊的資訊。 Process Private Bytes 計數器會測量所分析的處理序配置的虛擬記憶體。 所報告值是所有測量間隔所觀察到最大值。|  
+|分析方法 |全部 |  
+|訊息 |此資訊只會針對資訊收集。 Process Private Bytes 計數器會測量所分析的處理序配置的虛擬記憶體。 所報告值是所有測量間隔所觀察到最大值。|  
 |規則類型 |資訊 |  
   
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  

@@ -1,5 +1,5 @@
 ---
-title: DA0013-字串的高使用方式。分割或字串 Substring |Microsoft Docs
+title: DA0013 STRING.SPLIT-字串. 分割或字串的高使用量 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,10 +18,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a475ef1f4d60d7dfb0d2ea7189295bad47426c0a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520610"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013：String.Split 或 String.Substring 的高用量
@@ -43,4 +43,4 @@ ms.locfileid: "85520610"
  如果在應用程式中管理記憶體配置很重要，請考慮使用 String.Split 和 String.Substr 方法的替代方案。 例如，您可以使用 IndexOf 或 IndexOfAny 方法在字元 String 內尋找特定子字串，而不需建立新的 String 類別執行個體。
 
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告
- 按兩下 [**錯誤清單**] 視窗中的訊息，流覽至取樣分析資料的 [函式詳細資料][視圖](../profiling/function-details-view.md)。 檢查呼叫函式，找出最常使用 System.String.Split 或 System.String.Substr 方法的程式區段。 可能的話，請使用 IndexOf 或 IndexOfAny 方法在字元 String 字串內尋找特定子字串，而不需建立新的 String 類別執行個體。
+ 按兩下 [ **錯誤清單** ] 視窗中的訊息，流覽至取樣設定檔資料的 [ [函數詳細](../profiling/function-details-view.md) 資料] 查看。 檢查呼叫函式，找出最常使用 System.String.Split 或 System.String.Substr 方法的程式區段。 可能的話，請使用 IndexOf 或 IndexOfAny 方法在字元 String 字串內尋找特定子字串，而不需建立新的 String 類別執行個體。

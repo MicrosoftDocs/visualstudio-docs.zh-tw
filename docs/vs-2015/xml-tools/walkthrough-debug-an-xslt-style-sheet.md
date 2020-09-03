@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：對 XSLT 樣式表單進行偵錯工具 |Microsoft Docs
+title: 逐步解說： Debug XSLT 樣式表單 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2c205ff68ebc51d0b0f5b32038763c1741855d7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656111"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>逐步解說：偵錯 XSLT 樣式表
@@ -27,25 +27,25 @@ ms.locfileid: "72656111"
 
 2. 將兩個範例檔案複製到本機電腦。
 
-## <a name="start-debugging"></a>開始偵錯
+## <a name="start-debugging"></a>[偵錯]
 
-#### <a name="to-start-debugging"></a>若要啟動偵錯
+#### <a name="to-start-debugging"></a>開始偵錯
 
-1. 從 [**檔案**] 功能表，指向 [**開啟**]，**然後按一下 [** 檔案]。
+1. **在 [檔案**] 功能表上，指向 [**開啟**]，**然後按一下 [** 檔案]。
 
-2. 找出 [belowAvg] 檔案，然後按一下 [**開啟**]。
+2. 找到 belowAvg .xsl 檔案，然後按一下 [ **開啟**]。
 
     樣式表會在 XML 編輯器中開啟。
 
-3. 在 [檔案屬性] 視窗的 [**輸入**] 欄位上，按一下 [流覽] 按鈕（ **...** ）。
+3. 按一下 [檔案屬性] 視窗中 [**輸入**] 欄位上的 [流覽] 按鈕 (**...**) 。
 
-4. 找出 books.xml 檔案，然後按一下 [**開啟**]。
+4. 找出 books.xml 檔案，然後按一下 [ **開啟**]。
 
     這會設定用於 XSLT 轉換的來源文件檔案。
 
-5. 以滑鼠右鍵按一下 [`xsl:if` 開始] 標籤，指向 [**中斷點**]，然後按一下 [**插入中斷點**]。
+5. 以滑鼠右鍵按一下 [ `xsl:if` 開始] 標記，指向 [ **中斷點**]，然後按一下 [ **插入中斷點**]。
 
-6. 按一下 [XML 編輯器] 工具列上的 [ **DEBUG XSL** ] 按鈕。
+6. 在 [XML 編輯器] 工具列上，按一下 [ **DEBUG XSL** ] 按鈕。
 
    這會啟動偵錯處理，並開啟偵錯工具所使用的幾個新視窗。
 
@@ -53,23 +53,23 @@ ms.locfileid: "72656111"
 
    [本機] 視窗會顯示所有區域變數及其目前的值。 其中包括在樣式表中定義的變數，及偵錯工具用來追蹤目前內容中之節點的變數。
 
-   [ **Xsl 輸出**] 視窗會顯示 xsl 轉換的輸出。 此視窗與 [ **Visual Studio 輸出**] 視窗不同。
+   [ **Xsl 輸出** ] 視窗會顯示 xsl 轉換的輸出。 這個視窗與 **Visual Studio 輸出** 視窗不同。
 
 ## <a name="watch-window"></a>監看式視窗
 
 #### <a name="to-use-the-watch-window"></a>使用 [監看式] 視窗
 
-1. 從 [**調試**] 功能表，指向 [ **Windows**]，指向 **[監看**式]，然後按一下 **[監看式 1]** 。
+1. 從 [ **調試** ] 功能表，指向 [ **視窗**]，指向 **[監看**式]，然後按一下 **[監看式 1]**。
 
      這樣可讓 [監看式 1] 視窗可見。
 
-2. 在 [**名稱**] 欄位中輸入 `$bookAverage`，然後按 enter 鍵。
+2. `$bookAverage`在 [**名稱**] 欄位中輸入，然後按 enter。
 
      `$bookAverage` 變數的值會顯示於視窗中。
 
-3. 在 [**名稱**] 欄位中輸入 `self::node()`，然後按 enter 鍵。
+3. `self::node()`在 [**名稱**] 欄位中輸入，然後按 enter。
 
-     `self::node()` 是一種 XPath 運算式，可評估目前的內容節點。 `self::node()` XPath 運算式的值為第一個書籍節點。 它會隨著轉換的進行而變更。
+     `self::node()` 這是評估為目前內容節點的 XPath 運算式。 `self::node()` XPath 運算式的值為第一個書籍節點。 它會隨著轉換的進行而變更。
 
 4. 展開 `self::node()` 節點，然後展開 `price` 節點。
 
@@ -154,5 +154,5 @@ ms.locfileid: "72656111"
 </bookstore>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [偵錯 XSLT](../xml-tools/debugging-xslt.md)

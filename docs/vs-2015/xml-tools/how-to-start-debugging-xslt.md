@@ -1,5 +1,5 @@
 ---
-title: 如何：啟動調試 XSLT |Microsoft Docs
+title: How to：啟動調試 XSLT |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 09471b9e62b758e4e02e054494ed108532bbd301
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656336"
 ---
 # <a name="how-to-start-debugging-xslt"></a>HOW TO：開始偵錯 XSLT
@@ -28,13 +28,13 @@ XSLT 偵錯工具可用於偵錯 XSLT 樣式表或 XSLT 應用程式。 偵錯�
 
 1. 在 [XML 編輯器] 中開啟樣式表。
 
-2. 從 [ **XML** ] 功能表中選取 [ **Debug XSL** ]。
+2. 從 [ **XML** ] 功能表選取 [ **Debug XSL** ]。
 
 #### <a name="to-start-debugging-from-an-xml-input-document"></a>若要從 XML 輸入文件開始偵錯
 
 1. 在 XML 編輯器中開啟 XML 文件。
 
-2. 從 [ **XML** ] 功能表中選取 [ **Debug XSL** ]。
+2. 從 [ **XML** ] 功能表選取 [ **Debug XSL** ]。
 
 ## <a name="xslt-from-other-languages"></a>其他語言的 XSLT
  您還可在偵錯應用程式時逐步執行 XSLT。 當您在 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> 呼叫上按 F11 時，偵錯工具可逐步執行 XSLT 程式碼。
@@ -87,5 +87,5 @@ namespace ConsoleApplication
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [逐步解說： DEBUG XSLT 樣式表單程式](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)[代碼逐步執行總覽](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)

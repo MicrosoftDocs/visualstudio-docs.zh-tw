@@ -1,5 +1,5 @@
 ---
-title: 調整至編輯器的舊版程式碼 |Microsoft Docs
+title: 將舊版程式碼調整為編輯器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,73 +11,73 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bb90723a72c10dbf6cfda5edd4aa68f71f1c6b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184911"
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>使舊版程式碼配合編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 編輯器中有許多功能，您可以從現有的程式碼元件存取。 下列指示說明如何調整非 MEF 元件，例如，VSPackage，使用編輯器功能。 指示也會說明如何使用配接器在 managed 和 unmanaged 程式碼中取得編輯器的服務。  
+Visual Studio 編輯器有許多您可以從現有程式碼元件存取的功能。 下列指示說明如何調整非 MEF 元件（例如 VSPackage），以使用編輯器功能。 這些指示也會示範如何使用介面卡，在 managed 和非受控碼中取得編輯器的服務。  
   
-## <a name="editor-adapters"></a>編輯器配接器  
- 編輯器配接器或填充碼是包裝函式，也會公開的類別和介面中的編輯器物件<xref:Microsoft.VisualStudio.TextManager.Interop>API。 您可以使用配接器，例如非編輯器服務之間移動，Visual Studio shell 命令、 編輯器服務。 （這是編輯器目前裝載的方式在 Visual Studio 中）。配接器也可讓舊版編輯器和語言服務擴充功能在 Visual Studio 中正確運作。  
+## <a name="editor-adapters"></a>編輯器介面卡  
+ 編輯器介面卡（或填充碼）是編輯器物件的包裝函式，這些物件也會公開 API 中的類別和介面 <xref:Microsoft.VisualStudio.TextManager.Interop> 。 您可以使用介面卡在非編輯器服務間移動，例如 Visual Studio shell 命令和編輯器服務。  (這是編輯器目前裝載于 Visual Studio 的方式。 ) 的介面卡也可讓舊版編輯器和語言服務延伸模組在 Visual Studio 中正確運作。  
   
-## <a name="using-editor-adapters"></a>使用編輯器配接器  
- <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>提供新的編輯器介面和舊版的介面之間切換的方法，以及建立配接器的方法。  
+## <a name="using-editor-adapters"></a>使用編輯器介面卡  
+ <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>提供在新編輯器介面與舊版介面之間切換的方法，以及建立介面卡的方法。  
   
- 如果您在某個 MEF 元件組件中使用這項服務，可以匯入服務，如下所示。  
+ 如果您在 MEF 元件元件中使用此服務，您可以如下所示匯入服務。  
   
 ```  
 [Import(typeof(IVsEditorAdaptersFactoryService))]  
 internal IVsEditorAdaptersFactoryService editorFactory;  
 ```  
   
- 如果您想要在非 MEF 元件中使用這項服務，請遵循本主題稍後的 「 使用 Visual Studio 編輯器服務在非 MEF 元件 」 一節中的指示。  
+ 如果您想要在非 MEF 元件中使用這項服務，請遵循本主題稍後的「在非 MEF 元件中使用 Visual Studio 編輯器服務」一節中的指示。  
   
-## <a name="switching-between-the-new-editor-api-and-the-legacy-api"></a>新的編輯器 API 和舊版 API 之間切換  
- 使用下列方法切換編輯器物件和舊版的介面。  
+## <a name="switching-between-the-new-editor-api-and-the-legacy-api"></a>在新的編輯器 API 與舊版 API 之間切換  
+ 使用下列方法，在編輯器物件與舊版介面之間切換。  
   
 |方法|轉換|  
 |------------|----------------|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetBufferAdapter%2A>|將轉換<xref:Microsoft.VisualStudio.Text.ITextBuffer>至<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>。|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDataBuffer%2A>|將轉換<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>至<xref:Microsoft.VisualStudio.Text.ITextBuffer>。|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDocumentBuffer%2A>|將轉換<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>至<xref:Microsoft.VisualStudio.Text.ITextBuffer>。|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetViewAdapter%2A>|將轉換<xref:Microsoft.VisualStudio.Text.Editor.ITextView>至<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>。|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetWpfTextView%2A>|將轉換<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>至<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>。|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetBufferAdapter%2A>|將 <xref:Microsoft.VisualStudio.Text.ITextBuffer> 轉換成 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>。|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDataBuffer%2A>|將 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> 轉換成 <xref:Microsoft.VisualStudio.Text.ITextBuffer>。|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDocumentBuffer%2A>|將 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> 轉換成 <xref:Microsoft.VisualStudio.Text.ITextBuffer>。|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetViewAdapter%2A>|將 <xref:Microsoft.VisualStudio.Text.Editor.ITextView> 轉換成 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>。|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetWpfTextView%2A>|將 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 轉換成 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>。|  
   
 ## <a name="creating-adapters"></a>建立配接器  
- 您可以使用下列方法來建立舊版介面的介面卡。  
+ 使用下列方法來建立舊版介面的介面卡。  
   
 |方法|轉換|  
 |------------|----------------|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsCodeWindowAdapter%2A>|建立 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>。|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferAdapter%2A>|會建立<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>指定<xref:Microsoft.VisualStudio.Utilities.IContentType>。|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferAdapter%2A>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>為指定的建立 <xref:Microsoft.VisualStudio.Utilities.IContentType> 。|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferAdapter%2A>|建立 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>。|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferCoordinatorAdapter%2A>|建立 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator>。|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextViewAdapter%2A>|會建立<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>針對<xref:Microsoft.VisualStudio.Text.Editor.ITextViewRoleSet>。|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextViewAdapter%2A>|建立 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 的 <xref:Microsoft.VisualStudio.Text.Editor.ITextViewRoleSet>。|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextViewAdapter%2A>|建立 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>。|  
   
-## <a name="creating-adapters-in-unmanaged-code"></a>建立 Unmanaged 程式碼中的配接器  
- 所有的配接器類別會註冊為本地共同建立，而且可以具現化使用`VsLocalCreateInstance()`函式。  
+## <a name="creating-adapters-in-unmanaged-code"></a>建立非受控程式碼中的介面卡  
+ 所有的介面卡類別都會註冊為本機共同可共用的，而且可以使用函式具現化 `VsLocalCreateInstance()` 。  
   
- 所有配接器藉由使用 vsshlids.h 檔案中定義的 Guid...Visual Studio SDK 安裝 \VisualStudioIntegration\Common\Inc\ 資料夾。 若要建立 VsTextBufferAdapter 的執行個體，請使用下列程式碼。  
+ 所有的介面卡都是使用在中的 vsshlids 檔案中定義的 Guid 來建立。Visual Studio SDK 安裝的 \VisualStudioIntegration\Common\Inc\ 資料夾。 若要建立 VsTextBufferAdapter 的實例，請使用下列程式碼。  
   
 ```  
 IVsTextBuffer *pBuf = NULL;  
 VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTextBuffer, (void**)&pBuf);  
 ```  
   
-## <a name="creating-adapters-in-managed-code"></a>在 Managed 程式碼建立配接器  
- 在 managed 程式碼，您可以在 unmanaged 程式碼所述的相同方式共同建立配接器。 您也可以使用 MEF 服務，可讓您建立和使用配接器互動。 取得配接器的這種方式可讓您更細微的控制與您共同建立時具備。  
+## <a name="creating-adapters-in-managed-code"></a>在 Managed 程式碼中建立介面卡  
+ 在 managed 程式碼中，您可以用與非受控碼所述的相同方式來建立介面卡。 您也可以使用 MEF 服務，讓您建立和與介面卡互動。 這種取得介面卡的方式，可讓您在共同建立介面卡時進行更細微的控制。  
   
-#### <a name="to-create-an-adapter-for-ivstextview"></a>若要建立用於 IVsTextView 配接器  
+#### <a name="to-create-an-adapter-for-ivstextview"></a>若要建立 IVsTextView 的介面卡  
   
-1. 加入 Microsoft.VisualStudio.Editor.dll 的參考。 請確定`CopyLocal`設為`false`。  
+1. 新增 Microsoft.VisualStudio.Editor.dll 的參考。 請確定 `CopyLocal` 已設為 `false`。  
   
-2. 具現化<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>、，如下所示。  
+2. 具現化，如下所示 <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> 。  
   
     ```  
     using Microsoft.VisualStudio.Editor;  
@@ -91,14 +91,14 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     adapterFactoryService.CreateTextViewAdapter(textView);  
     ```  
   
-## <a name="using-the-visual-studio-editor-directly-from-unmanaged-code"></a>使用 Visual Studio 編輯器中直接從 Unmanaged 程式碼  
- Microsoft.VisualStudio.Platform.VSEditor 命名空間和 Microsoft.VisualStudio.Platform.VSEditor.Interop 命名空間公開 COM 可呼叫的介面為 IVx * 介面。 比方說，Microsoft.VisualStudio.Platform.VSEditor.Interop.IVxTextBuffer 介面是 COM 版本的<xref:Microsoft.VisualStudio.Text.ITextBuffer>介面。 從`IVxTextBuffer`，您可以取得緩衝區的快照集的存取權、 緩衝區的修改，接聽的緩衝區上的文字變更事件並建立追蹤點和範圍。 下列步驟示範如何存取`IVxTextBuffer`從`IVsTextBuffer`。  
+## <a name="using-the-visual-studio-editor-directly-from-unmanaged-code"></a>直接從非受控碼使用 Visual Studio 編輯器  
+ VisualStudio 命名空間和 VisualStudio. VSEditor 命名空間會將 COM 可呼叫介面公開為 IVx * 介面。 例如，VisualStudio 介面是介面的 COM 版本，而 IVxTextBuffer 介面則是 <xref:Microsoft.VisualStudio.Text.ITextBuffer> 。 `IVxTextBuffer`您可以從取得緩衝區快照集的存取權、修改緩衝區、接聽緩衝區上的文字變更事件，以及建立追蹤點與範圍。 下列步驟示範如何 `IVxTextBuffer` 從存取 `IVsTextBuffer` 。  
   
-#### <a name="to-get-an-ivxtextbuffer"></a>若要取得 IVxTextBuffer  
+#### <a name="to-get-an-ivxtextbuffer"></a>取得 IVxTextBuffer  
   
-1. IVx * 介面的定義位於 VSEditor.h 檔案...Visual Studio SDK 安裝 \VisualStudioIntegration\Common\Inc\ 資料夾。  
+1. IVx * 介面的定義位於的 VSEditor .h 檔案中。Visual Studio SDK 安裝的 \VisualStudioIntegration\Common\Inc\ 資料夾。  
   
-2. 下列程式碼會具現化的文字緩衝區使用`IVsUserData->GetData()`方法。 下列程式碼中，`pData`是一個指向`IVsUserData`物件。  
+2. 下列程式碼會使用方法來具現化文字緩衝區 `IVsUserData->GetData()` 。 在下列程式碼中， `pData` 是物件的指標 `IVsUserData` 。  
   
     ```  
     #include <textmgr.h>  
@@ -120,14 +120,14 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     }  
     ```  
   
-## <a name="using-visual-studio-editor-services-in-a-non-mef-component"></a>-MEF 元件中使用 Visual Studio 編輯器中的服務  
- 如果您有現有的 managed 程式碼元件，不會使用 MEF，而且您想要使用 Visual Studio 編輯器的服務，您必須加入包含 ComponentModelHost VSPackage 的組件的參考，並取得其 SComponentModel 服務。  
+## <a name="using-visual-studio-editor-services-in-a-non-mef-component"></a>在非 MEF 元件中使用 Visual Studio 編輯器服務  
+ 如果您有不使用 MEF 的現有 managed 程式碼元件，而您想要使用 Visual Studio 編輯器的服務，您必須將參考加入包含 ComponentModelHost VSPackage 的元件，並取得其 SComponentModel 服務。  
   
-#### <a name="to-consume-visual-studio-editor-components-from-a-non-mef-component"></a>若要使用 Visual Studio 編輯器元件，從非 MEF 元件  
+#### <a name="to-consume-visual-studio-editor-components-from-a-non-mef-component"></a>使用非 MEF 元件的 Visual Studio 編輯器元件  
   
-1. 加入 Microsoft.VisualStudio.ComponentModelHost.dll 組件中的參考...Visual Studio 安裝 \Common7\IDE\ 資料夾。 請確定`CopyLocal`設為`false`。  
+1. 在中加入 Microsoft.VisualStudio.ComponentModelHost.dll 元件的參考。Visual Studio 安裝的 \Common7\IDE\ 資料夾。 請確定 `CopyLocal` 已設為 `false`。  
   
-2. 新增私用`IComponentModel`您要使用 Visual Studio 編輯器服務，如下所示的類別的成員。  
+2. 將私 `IComponentModel` 用成員新增至您要在其中使用 Visual Studio 編輯器服務的類別，如下所示。  
   
     ```  
     using Microsoft.VisualStudio.ComponentModelHost;  
@@ -135,14 +135,14 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     private IComponentModel componentModel;  
     ```  
   
-3. 具現化元件模型，您的元件的初始化方法中。  
+3. 在元件的初始化方法中具現化元件模型。  
   
     ```  
     componentModel =  
      (IComponentModel)Package.GetGlobalService(typeof(SComponentModel));  
     ```  
   
-4. 在此之後，您可以取得任何其中一個 Visual Studio 編輯器服務藉由呼叫`IComponentModel.GetService<T>()`您想要服務的方法。  
+4. 之後，您可以呼叫所需服務的方法，以取得任何 Visual Studio 編輯器服務 `IComponentModel.GetService<T>()` 。  
   
     ```  
     textBufferFactoryService =  

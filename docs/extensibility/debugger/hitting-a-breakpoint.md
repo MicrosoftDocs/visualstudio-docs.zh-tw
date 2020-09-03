@@ -1,5 +1,5 @@
 ---
-title: 擊中斷點 |微軟文件
+title: 觸達中斷點 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6e75eb1e807e72f3bd035b5dd0534860f5fd8df2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738574"
 ---
 # <a name="hit-a-breakpoint"></a>叫用中斷點
-以下部分介紹除錯引擎 (DE) 在執行或步進時遇到斷點的過程:
+下一節描述當 debug engine (DE) 在執行或逐步執行時叫用中斷點時的程式：
 
-## <a name="troubleshoot-a-hit-breakpoint"></a>排除命中斷點故障
+## <a name="troubleshoot-a-hit-breakpoint"></a>針對點擊中斷點進行疑難排解
 
-1. DE 將[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)介面作為**EVENT_SYNC_STOP**發送。
+1. 「取消」會將 [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) 介面傳送成 **EVENT_SYNC_STOP**。
 
-2. 會話調試管理器 (SDM) 調用[IDebugBreakpointEvent2:::enumBreakpoint](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)獲取命中的斷點。
+2. 會話 debug manager (SDM) 呼叫 [IDebugBreakpointEvent2：：： EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) 來取得點擊的中斷點。
 
 ## <a name="see-also"></a>另請參閱
-- [呼叫除錯器事件](../../extensibility/debugger/calling-debugger-events.md)
+- [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)

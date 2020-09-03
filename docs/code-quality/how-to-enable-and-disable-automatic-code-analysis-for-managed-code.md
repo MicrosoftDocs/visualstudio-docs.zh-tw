@@ -6,10 +6,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb4422a12620d7650b4fe150313b10fe59835064
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801018"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>如何：啟用和停用 managed 程式碼的二進位程式碼分析

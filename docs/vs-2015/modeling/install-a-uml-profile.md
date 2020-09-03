@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 89531fe0f2e912a6aabd962ab56ca7a24a7f3e20
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850656"
 ---
 # <a name="install-a-uml-profile"></a>安裝 UML 設定檔
@@ -25,7 +25,7 @@ ms.locfileid: "75850656"
 
  如果您收到已使用設定檔建立的 UML 模型，則除非您安裝相同的設定檔，否則不會顯示一些屬性。
 
- 設定檔分散在 Visual Studio 延伸模組內。 延伸模組也可能包含其他功能 (例如功能表命令)。 如需詳細資訊，請參閱[管理 Visual Studio 延伸](https://msdn.microsoft.com/library/dd293638(VS.100).aspx)模組。
+ 設定檔分散在 Visual Studio 延伸模組內。 延伸模組也可能包含其他功能 (例如功能表命令)。 如需詳細資訊，請參閱 [管理 Visual Studio 延伸](https://msdn.microsoft.com/library/dd293638(VS.100).aspx)模組。
 
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>在電腦上安裝 UML 設定檔
 
@@ -35,15 +35,15 @@ ms.locfileid: "75850656"
 
 2. 在 Windows 檔案總管 (或檔案總管) 中按兩下 `.vsix` 檔案，或在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 內開啟它。
 
-3. 在出現的對話方塊中，按一下 [**安裝**]。
+3. 在出現的對話方塊中按一下 [ **安裝** ]。
 
 4. 若要卸載或暫時停用擴充功能，請從 [**工具**] 功能表開啟 [**擴充管理員**]。
 
 ### <a name="to-uninstall-or-disable-a-profile-extension"></a>解除安裝或停用設定檔擴充功能
 
-1. 在 [Visual Studio**工具**] 功能表上，按一下 [**擴充管理員**]。
+1. 在 [Visual Studio **工具** ] 功能表上，按一下 [ **擴充管理員**]。
 
-2. 按一下您要移除的延伸模組，然後按一下 [**停**用] 或 [**卸載**]。
+2. 按一下您要移除的擴充功能，然後按一下 [ **停** 用] 或 [ **卸載**]。
 
-## <a name="see-also"></a>請參閱
- [使用設定檔和造型自訂您的模型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)[定義要擴充 UML 的設定檔](../modeling/define-a-profile-to-extend-uml.md)
+## <a name="see-also"></a>另請參閱
+ [使用設定檔和造型自訂您的模型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)[定義擴充 UML 的設定檔](../modeling/define-a-profile-to-extend-uml.md)

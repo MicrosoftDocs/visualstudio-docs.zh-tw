@@ -1,5 +1,5 @@
 ---
-title: IDebug屬性銷毀事件2 |微軟文件
+title: IDebugPropertyDestroyEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ce15f389f22513e08b06c0d097cdac4aec3c35bf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720900"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
-當與特定文件關聯的屬性即將銷毀時,調試引擎 (DE) 將此介面發送到作業階段調試管理員 (SDM)。
+當與特定檔相關聯的屬性即將終結時，debug engine 會將這個介面傳送 (DE) 至會話 debug manager (SDM) 。
 
 ## <a name="syntax"></a>語法
 
@@ -28,28 +28,28 @@ ms.locfileid: "80720900"
 IDebugPropertyDestroyEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
- DE 實現此介面以報告屬性已銷毀。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須在與此介面相同的對象上實現。 SDM 使用[查詢介面](/cpp/atl/queryinterface)訪問`IDebugEvent2`介面。 如果 DE 以前創建了與腳本關聯的屬性,則實現此介面;銷毀屬性會從IDE中刪除關聯的腳本。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ DE 會執行這個介面，以報告屬性已終結。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須在與這個介面相同的物件上執行。 SDM 會使用 [QueryInterface](/cpp/atl/queryinterface) 來存取 `IDebugEvent2` 介面。 如果 DE 先前已建立與腳本相關聯的屬性，就會執行這個介面;終結屬性會從 IDE 移除相關聯的腳本。
 
-## <a name="notes-for-callers"></a>通話備註
- DE 創建並發送此事件物件以報告屬性已銷毀。 該事件使用 SDM 在附加到正在調試的程式時提供的[IDebugEvent 回檔2](../../../extensibility/debugger/reference/idebugeventcallback2.md)回檔函數進行發送。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+ 「取消」會建立並傳送此事件物件，以報告屬性已損毀。 使用 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 回呼函式來傳送事件，該函式會在附加至要進行偵錯工具的程式時提供。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 下表顯示的方法`IDebugPropertyDestroyEvent2`。
+ 下表顯示的方法 `IDebugPropertyDestroyEvent2` 。
 
 |方法|描述|
 |------------|-----------------|
-|[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertydestroyevent2-getdebugproperty.md)|獲取要銷毀的屬性。|
+|[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertydestroyevent2-getdebugproperty.md)|取得要終結的屬性。|
 
 ## <a name="remarks"></a>備註
- 有關使用這些事件的原因的詳細資訊,請參閱[IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)的備註。
+ 如需有關使用這些事件之原因的詳細資訊，請參閱 [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md) 的備註。
 
 ## <a name="requirements"></a>需求
- 標題: msdbg.h
+ 標頭： msdbg。h
 
- 命名空間:微軟.VisualStudio.調試器.互通
+ 命名空間： VisualStudio
 
- 程式集:微軟.VisualStudio.除錯器.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

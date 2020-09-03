@@ -13,25 +13,25 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bffaf0bcff0c0fc93201badeb01b95928edc2979
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850705"
 ---
 # <a name="code-generation-in-a-build-process"></a>建置流程中的程式碼產生
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-文字轉換可以在 Visual Studio 方案的組建程式中叫用。 有的建置工作會針對文字轉換進行特製化。 T4 建置工作會執行設計階段的文字範本，也會編譯執行階段 (前置處理過後) 的文字範本。
+您可以在 Visual Studio 方案的組建流程中叫用文字轉換。 有的建置工作會針對文字轉換進行特製化。 T4 建置工作會執行設計階段的文字範本，也會編譯執行階段 (前置處理過後) 的文字範本。
 
-根據不同的建置引擎，建置工作可執行的動作會有些差異。 當您在 Visual Studio 中建立方案時，如果已設定[hostspecific = "true"](../modeling/t4-template-directive.md)屬性，文字模板就可以存取 Visual Studio API （EnvDTE）。 但在您從命令列建置方案或透過 Visual Studio 啟始伺服器組建時，這並不正確。 在這些情況下，會由 MSBuild 執行組建，並會使用不同的 T4 主機。
+根據不同的建置引擎，建置工作可執行的動作會有些差異。 當您在 Visual Studio 中建立方案時，如果已設定 [hostspecific = "true"](../modeling/t4-template-directive.md) 屬性，文字模板就可以存取 Visual Studio API (EnvDTE) 。 但在您從命令列建置方案或透過 Visual Studio 啟始伺服器組建時，這並不正確。 在這些情況下，會由 MSBuild 執行組建，並會使用不同的 T4 主機。
 
-這表示在 MSBuild 中建置文字範本時，您無法以相同方式來存取如專案檔名之類的項目。 不過，您可以[使用組建參數，將環境資訊傳遞至文字模板和](#parameters)指示詞處理器。
+這表示在 MSBuild 中建置文字範本時，您無法以相同方式來存取如專案檔名之類的項目。 不過，您可以 [使用組建參數，將環境資訊傳遞給文字模板和](#parameters)指示詞處理器。
 
-## <a name="buildserver"></a>設定您的電腦
+## <a name="configure-your-machines"></a><a name="buildserver"></a> 設定您的電腦
 
-若要在您的開發電腦上啟用組建工作，請安裝[適用于 Visual Studio 的模型 SDK](https://www.microsoft.com/download/details.aspx?id=48148)。
+若要在您的開發電腦上啟用組建工作，請安裝 [模型化 SDK 以進行 Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)。
 
-如果[您的組建伺服器](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9)是在未安裝 Visual Studio 的電腦上執行，請從開發電腦將下列檔案複製到組建電腦。 將 '*' 替代為最新版本號碼。
+如果 [您的組建伺服器](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) 是在未安裝 Visual Studio 的電腦上執行，請從您的開發電腦將下列檔案複製到組建電腦。 將 '*' 替代為最新版本號碼。
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
@@ -57,9 +57,9 @@ ms.locfileid: "75850705"
 
 您必須編輯專案檔，才能設定 MSBuild 中的部分功能。
 
-在 [方案瀏覽器] 中，從專案的內容功能表中選擇 **[** 卸載]。 如此可讓您在 XML 編輯器中編輯 .csproj 或 .vbproj 檔案。
+在 [方案 explorer] 中，從專案的內容功能表中選擇 **[** 卸載]。 如此可讓您在 XML 編輯器中編輯 .csproj 或 .vbproj 檔案。
 
-當您完成編輯時，請選擇 [**重載**]。
+當您完成編輯時，請選擇 [ **重載**]。
 
 ## <a name="import-the-text-transformation-targets"></a>匯入文字轉換目標
 
@@ -67,7 +67,7 @@ ms.locfileid: "75850705"
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`
 
-\-或-
+\- 或 -
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`
 
@@ -213,9 +213,9 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a>將組建內容資料傳遞至範本
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a> 將組建內容資料傳遞至範本
 
-您可以在專案檔中設定參數值。 例如，您可以傳遞組建屬性和[環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)：
+您可以在專案檔中設定參數值。 例如，您可以傳遞組建屬性和 [環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)：
 
 ```xml
 <ItemGroup>
@@ -226,7 +226,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </ItemGroup>
 ```
 
-在文字範本內，在範本指示詞中設定 `hostspecific`。 使用[參數](../modeling/t4-parameter-directive.md)指示詞取得值：
+在文字範本內，在範本指示詞中設定 `hostspecific`。 使用 [參數](../modeling/t4-parameter-directive.md) 指示詞取得值：
 
 ```
 <#@template language="c#" hostspecific="true"#>
@@ -234,7 +234,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 The project folder is: <#= ProjectFolder #>
 ```
 
-## <a name="msbuild"></a>在 assembly 和 include 指示詞中使用專案屬性
+## <a name="using-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> 在 assembly 和 include 指示詞中使用專案屬性
 
 Visual Studio 巨集 (如 $(SolutionDir)) 在 MSBuild 中無法運作。 您可以改用專案屬性。
 
@@ -263,26 +263,26 @@ Visual Studio 巨集 (如 $(SolutionDir)) 在 MSBuild 中無法運作。 您可�
 
  這些指示詞會從 MSBuild 和 Visual Studio 裝載中的 T4parameterValues 取得值。
 
-## <a name="q--a"></a>問與答
+## <a name="q--a"></a>問答集
 
-**為什麼要轉換組建伺服器中的範本？我在簽入我的程式碼之前，已轉換 Visual Studio 中的範本。**
+**為什麼要在組建伺服器中轉換範本？我已經在簽入程式碼之前，先在 Visual Studio 中轉換過範本。**
 
 如果更新包含的檔案或範本讀取的其他檔案，Visual Studio 並不會自動轉換檔案。 轉換範本為組建的一部分，以確保一切皆維持在最新狀態。
 
-**轉換文字模板有哪些其他選項？**
+**其他轉換文字範本的選項為何？**
 
-- [TextTransform 公用程式](../modeling/generating-files-with-the-texttransform-utility.md)可用於命令腳本中。 大部分情況下，使用 MSBuild 較為容易。
+- [TextTransform 公用程式](../modeling/generating-files-with-the-texttransform-utility.md)可以在命令腳本中使用。 大部分情況下，使用 MSBuild 較為容易。
 
 - [叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
-- [設計階段的文字模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)會由 Visual Studio 轉換。
+- [設計階段文字模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md) 是由 Visual Studio 進行轉換。
 
-- [執行時間文字模板](../modeling/run-time-text-generation-with-t4-text-templates.md)會在應用程式的執行時間進行轉換。
+- [執行時間文字模板](../modeling/run-time-text-generation-with-t4-text-templates.md) 會在執行時間轉換成您的應用程式。
 
-## <a name="read-more"></a>進一步了解
+## <a name="read-more"></a>閱讀更多資訊
 
 在 T4 MSbuild 範本中有好的指引：$(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
 
 - [撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)
-- [Visual Studio 視覺效果和模型 SDK](https://www.visualstudio.com/)
+- [Visual Studio Visualization and Modeling SDK](https://www.visualstudio.com/)
 - [Oleg Sych：瞭解 T4： MSBuild 整合](https://github.com/olegsych/T4Toolbox)

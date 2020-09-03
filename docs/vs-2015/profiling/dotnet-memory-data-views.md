@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d31213dc970fa7cb28c4d4620c6731692db83d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185233"
 ---
 # <a name="net-memory-data-views"></a>.NET 記憶體資料檢視
@@ -34,13 +34,13 @@ ms.locfileid: "68185233"
  [物件存留期檢視](../profiling/object-lifetime-view.md)  
  列出在程式碼剖析執行中配置的型別、執行個體數目、大小 (位元組) 和型別的記憶體回收層代。  
   
- [呼叫樹狀圖檢視 - 取樣](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
+ [呼叫樹狀檢視 - 取樣](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
  顯示階層式樹狀圖，表示程式碼剖析執行中函式的執行路徑和記憶體配置資料。  
   
- [模組檢視 - 取樣](../profiling/modules-view-dotnet-memory-sampling-data.md)  
+ [模組視圖-取樣](../profiling/modules-view-dotnet-memory-sampling-data.md)  
  依模組組織 .NET 記憶體配置資料，並列出配置記憶體時正在執行的函式、原始程式碼行及指令。  
   
- [呼叫者/被呼叫者檢視 - .NET 記憶體取樣資料](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)  
+ [呼叫端/被呼叫端視圖-.NET 記憶體取樣資料](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)  
  列出所選函式的記憶體配置資料、呼叫所選函式的函式，以及所選函式呼叫的函式。  
   
  [函式檢視 - 取樣](../profiling/functions-view-dotnet-memory-sampling-data.md)  
@@ -52,19 +52,19 @@ ms.locfileid: "68185233"
  [指令指標 (IP) 檢視 - 取樣](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)  
  列出程式碼剖析執行中函式指令的記憶體配置資料。  
   
- [呼叫樹狀圖檢視 - 檢測](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)  
+ [呼叫樹狀檢視 - 檢測設備](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)  
  顯示階層式樹狀圖，表示程式碼剖析執行中檢測的函式的執行路徑、記憶體配置資料及詳細的計時資料。  
   
- [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)  
+ [模組檢視 - 檢測設備](../profiling/modules-view-dotnet-memory-instrumentation-data.md)  
  依模組組織程式碼剖析資料，並列出模組的函式、記憶體配置資料及詳細的計時資訊。  
   
- [呼叫者/被呼叫者檢視 - .NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)  
+ [呼叫端/被呼叫端視圖-.NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)  
  列出所選檢測函式的記憶體配置資料和詳細計時資訊、呼叫所選函式的函式，以及所選函式呼叫的函式。  
   
  [函式檢視 - 檢測](../profiling/functions-view-dotnet-memory-instrumentation-data.md)  
  列出程式碼剖析執行中檢測的函式的記憶體配置資料。  
   
-## <a name="reference"></a>參考資料  
+## <a name="reference"></a>參考  
  [函式詳細資料檢視](../profiling/function-details-view.md)  
  顯示選取的函式及所呼叫函式 (由該所選函式呼叫的函式) 之間關聯性的圖形化圖表。  
   
