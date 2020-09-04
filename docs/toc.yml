@@ -1106,7 +1106,7 @@
                   href: ide/reference/task-list-environment-options-dialog-box.md
                 - name: 信任設定
                   href: ide/reference/trust-settings.md
-                - name: 網頁瀏覽器
+                - name: Web Browser
                   href: ide/reference/web-browser-environment-options-dialog-box.md
             - name: 專案和方案
               items:
@@ -1411,6 +1411,8 @@
       href: ide/whats-new-visual-studio-2019.md
     - name: Visual Studio 文件中的新功能
       href: ide/whats-new-visual-studio-docs.md
+    - name: Visual Studio 文件中的新功能歷程記錄
+      href: ide/whats-new-visual-studio-docs-history.md
     - name: 版本資訊與系統需求
       items:
         - name: 發行節奏
