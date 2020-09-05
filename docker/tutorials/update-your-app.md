@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 4a1cba71481608803522336ad5c0f6b6354bca32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8f17047902ccf6c7fad164e788e64fe0b17cf14
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178248"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485424"
 ---
 # <a name="update-the-app"></a>更新應用程式
 
@@ -82,7 +82,7 @@ docker: Error response from daemon: driver failed programming external connectiv
 > [!TIP]
 > 您可以在命令中新增「強制」旗標，以在單一命令中停止和移除容器 `docker rm` 。 例如：`docker rm -f <the-container-id>`
 
-### <a name="remove-a-container-using-the-docker-dashboard"></a>使用 Docker 儀表板移除容器
+### <a name="remove-a-container-using-the-docker-view"></a>使用 Docker view 移除容器
 
 如果您開啟 VS Code 擴充功能，只要按兩下滑鼠就可以移除容器！ 這當然比查詢容器識別碼和移除容器識別碼來得簡單得多。
 
@@ -92,7 +92,7 @@ docker: Error response from daemon: driver failed programming external connectiv
 
 1. 確認移除完成後，您就完成了！
 
-![Docker 儀表板-移除容器](media/vs-removing-container.png)
+![Docker view-移除容器](media/vs-removing-container.png)
 
 ### <a name="start-the-updated-app-container"></a>啟動已更新的應用程式容器
 

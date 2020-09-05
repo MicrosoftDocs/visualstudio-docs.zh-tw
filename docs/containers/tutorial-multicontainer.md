@@ -6,18 +6,18 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: f20c3580d3082c69bbadb3b866d08e2c260a6827
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5cdb8fa2f2a2c3a6a41cab4218b06ce4786d33b4
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711660"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490309"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>教學課程：使用 Docker Compose 建立多容器應用程式
 
 在本教學課程中，您將瞭解如何在 Visual Studio 中使用容器工具來管理多個容器並在它們之間進行通訊。  管理多個容器需要 *容器協調流程* ，而且需要協調器，例如 Docker Compose、Kubernetes 或 Service Fabric。 在這裡，我們會使用 Docker Compose。 Docker Compose 在開發週期的過程中，很適合用來進行本機的偵錯工具和測試。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
@@ -86,7 +86,7 @@ ms.locfileid: "88711660"
    ```
    
     > [!NOTE]
-    > 在真實世界的程式碼中，您不應該在 `HttpClient` 每個要求之後處置。 如需最佳作法，請參閱 [使用 HttpClientFactory 來執行復原的 HTTP 要求](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests)。
+    > 在真實世界的程式碼中，您不應該在 `HttpClient` 每個要求之後處置。 如需最佳作法，請參閱 [使用 HttpClientFactory 來執行復原的 HTTP 要求](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests)。
 
    針對 Visual Studio 2019 或更新版本中的 .NET Core 3.1，Web API 範本會使用 WeatherForecast API，因此請將該行取消批註，並將 ASP.NET 2.x 的行加上批註。
 
@@ -195,4 +195,4 @@ ms.locfileid: "88711660"
 ## <a name="see-also"></a>另請參閱
   
 [Docker Compose](https://docs.docker.com/compose/)  
-[容器工具](/visualstudio/containers/)
+[容器工具](./index.yml)

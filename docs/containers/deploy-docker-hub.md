@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: cd17726d5ba09dcb901fd529e6bdfd97dee52f31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a6db2771525010d73fdeeea12ff4aebd99a1bd2
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168623"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485134"
 ---
 # <a name="deploy-to-docker-hub"></a>發佈至 Docker Hub
 
@@ -57,4 +57,4 @@ Docker Hub 為您的映射存放庫提供便利的主機服務。 您可以輕�
 ## <a name="see-also"></a>另請參閱
 
 [部署至 Azure App Service](deploy-app-service.md) 
-[Visual Studio 容器工具](/visualstudio/containers/)。
+[Visual Studio 容器工具](./index.yml)。

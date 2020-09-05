@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: d5bd7a2d79bf6da710fd0f5803c2415781160143
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46f91b3bf163f3847492a7727fa72a39908d441c
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178244"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485531"
 ---
 # <a name="share-your-app"></a>共用您的應用程式
 
@@ -63,6 +63,8 @@ ms.locfileid: "89178244"
     ```bash
     docker push <username>/getting-started
     ```
+
+    除了命令列之外，您也可以在 Docker view 的 [ **Images** ] 區段中，以滑鼠右鍵按一下映射標籤，然後選擇 [ **推送 ...**]，然後選擇 [連線登錄 **...]** ，再 **Docker Hub**。
 
 ## <a name="run-the-image-on-a-new-instance"></a>在新的實例上執行映射
 

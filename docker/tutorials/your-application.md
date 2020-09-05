@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: b8470c8d7708bc51916a6f57f5aa135c3267e355
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb92f5aae84a7c164f04145abe24eb32d7792056
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178240"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485437"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>建立並執行待辦事項範例應用程式
 
@@ -55,6 +55,8 @@ ms.locfileid: "89178240"
     ```bash
     docker build -t getting-started .
     ```
+
+    或者，您也可以在 Dockerfile 上按一下滑鼠右鍵，並選擇 [ **建立映射** ]，然後在提示字元中指定標記。
 
     此命令使用 Dockerfile 來建立新的容器映射。 您可能已經注意到許多「圖層」已下載。 這是因為您已指示您想要從映射啟動的產生器 `node:12-alpine` 。 但因為您的電腦上沒有該映射，所以需要下載該映射。
 

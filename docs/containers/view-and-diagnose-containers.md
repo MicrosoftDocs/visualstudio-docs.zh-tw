@@ -7,18 +7,18 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: c870378cf277a6008f17ec42d960e07e18a53e86
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45ef2d8f68ac951cc58040abb72e136b42f3b49c
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283121"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490296"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>如何在 Visual Studio 中查看及診斷容器和映射
 
 您可以使用 [ **容器** ] 視窗，在裝載應用程式的容器內查看發生的狀況。 如果您使用命令提示字元來執行 Docker 命令以查看和診斷容器的內容，此視窗提供更方便的方式來監視您的容器，而不需要離開 Visual Studio IDE。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 - [Visual Studio 2019 16.4 版 Preview 2](https://visualstudio.microsoft.com/downloads) 或更新版本，或者如果您使用舊版的 Visual Studio 2019，請安裝 [ [容器] 視窗擴充](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-containers-tools-extensions)功能。
@@ -110,6 +110,6 @@ ms.locfileid: "85283121"
 
 ## <a name="see-also"></a>另請參閱
 
-[Visual Studio 中的容器開發](/visualstudio/containers)
+[Visual Studio 中的容器開發](./index.yml)
 
 [Visual Studio 的延伸模組 Marketplace](https://marketplace.visualstudio.com/)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e20427ae3d64a485bb25da2f4482bbbec51e3dda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac5103b15cee6e44650d9b8aef6fdf755874b2d2
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219773"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490283"
 ---
 # <a name="use-code-analyzers"></a>使用程式碼分析器
 
@@ -76,6 +76,13 @@ ms.locfileid: "89219773"
 下列螢幕擷取畫面顯示出現在 [錯誤清單] 中的三個違規：
 
 ![錯誤清單中的錯誤、警告和資訊違規](media/diagnostics-severities-in-error-list.png)
+
+### <a name="hidden-severity-versus-none-severity"></a>「隱藏」嚴重性與「無」嚴重性
+
+`Hidden` 依預設啟用的嚴重性規則，與停用或 `None` 嚴重性規則有幾種不同之處。
+
+- 如果已針對嚴重性規則註冊任何程式碼修正 `Hidden` ，則會在 Visual Studio 中以燈泡程式碼重構動作的形式提供修正程式，即使使用者看不到隱藏的診斷也是一樣。 這不是停用的 `None` 嚴重性規則的情況。
+- `Hidden` 您可以透過 [在 EditorConfig 檔中一次設定多個分析器規則的規則嚴重性](#set-rule-severity-of-multiple-analyzer-rules-at-once-in-an-editorconfig-file)的專案來大量設定嚴重性規則。 `None` 無法以這種方式設定嚴重性規則。 相反地，它們必須透過 [針對每個規則識別碼在 EditorConfig 檔中設定規則嚴重性](#set-rule-severity-in-an-editorconfig-file)的專案來設定。
 
 ::: moniker range=">=vs-2019"
 

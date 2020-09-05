@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 34b3cb9465c1efb946260917d755729e25c4e259
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a4eb5062f8f1b01e8ad5e5165d7ec9ede636124
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178190"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485582"
 ---
 # <a name="persist-your-data"></a> 保存您的資料
 
@@ -86,7 +86,7 @@ ms.locfileid: "89178190"
     docker volume create todo-db
     ```
 
-1. 在儀表板中再次停止 todo 應用程式容器 (或使用 `docker rm -f <id>`) ，因為它仍在執行，而不使用永久性磁片區。
+1. 在 Docker view (中再次停止 todo 應用程式容器，或使用 `docker rm -f <id>`) ，因為它仍在執行，而不使用永久性磁片區。
 
 1. 啟動 todo 應用程式容器，但新增 `-v` 旗標來指定磁片區掛接。 您將使用命名磁片區並將其掛接至 `/etc/todos` ，以抓取路徑上建立的所有檔案。
 
@@ -98,7 +98,7 @@ ms.locfileid: "89178190"
 
     ![加入待辦事項清單的專案](media/items-added.png)
 
-1. 移除 todo 應用程式的容器。 使用儀表板或 `docker ps` 取得識別碼，然後將 `docker rm -f <id>` 其移除。
+1. 移除 todo 應用程式的容器。 使用 Docker view 或 `docker ps` 取得識別碼，然後將 `docker rm -f <id>` 其移除。
 
 1. 使用與上述相同的命令來啟動新的容器。
 
