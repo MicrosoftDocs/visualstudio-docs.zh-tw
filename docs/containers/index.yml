@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 11/25/2019
   ms.author: ghogen
-  ms.openlocfilehash: 43583c3e147c7c036e28670c153c9520e02ef232
-  ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+  ms.openlocfilehash: 23937085e99c50475ac100fd38b8380955cd084c
+  ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 07/17/2020
-  ms.locfileid: "86454198"
+  ms.lasthandoff: 09/04/2020
+  ms.locfileid: "89490270"
 landingContent:
 - title: 容器工具
   linkLists:
@@ -30,7 +30,7 @@ landingContent:
     - text: Visual Studio 中的 Docker
       url: container-tools.md
     - text: 在容器中執行建置工具
-      url: /visualstudio/install/build-tools-container
+      url: ../install/build-tools-container.md
     - text: 適用於 Kubernetes 的 Visual Studio Tools
       url: tutorial-kubernetes-tools.md
 - title: 開發容器化應用程式
