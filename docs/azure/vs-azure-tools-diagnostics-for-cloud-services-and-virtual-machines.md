@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 2312c636f465bd39cdcbc4ca0ab63c107151c5be
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 9912a7fa0e83c5433e0eba1c7ffa23763331af6b
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426729"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508492"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>針對 Azure 雲端服務與虛擬機器設定診斷
 需要針對 Azure 雲端服務或 Azure 虛擬機器進行疑難排解時，您可以使用 Visual Studio 更輕鬆地設定 Azure 診斷。 診斷會在執行雲端服務的虛擬機器和虛擬機器執行個體上擷取系統資料和記錄資料。 診斷資料會傳輸到您選擇的儲存體帳戶。 如需 Azure 中診斷記錄的詳細資訊，請參閱[在 Azure App Service 中針對 Web 應用程式啟用診斷記錄](/azure/app-service/web-sites-enable-diagnostic-log)。
@@ -156,18 +156,18 @@ ms.locfileid: "89426729"
 ```
 
 ### <a name="performance-counters"></a>效能計數器
-效能計數器資訊可協助您找出系統瓶頸並微調系統和應用程式效能。 如需詳細資訊，請參閱[在 Azure 應用程式中建立及使用效能計數器](https://msdn.microsoft.com/library/azure/hh411542.aspx)。 若要擷取效能計數器，請選取 [啟用效能計數器的傳輸]**** 核取方塊。 若要增加或減少將事件記錄傳輸至儲存體帳戶的間隔，請變更 [傳輸期間 (分鐘)]**** 值。 選取您想要追蹤之效能計數器的核取方塊。
+效能計數器資訊可協助您找出系統瓶頸並微調系統和應用程式效能。 如需詳細資訊，請參閱[在 Azure 應用程式中建立及使用效能計數器](/azure/cloud-services/diagnostics-performance-counters)。 若要擷取效能計數器，請選取 [啟用效能計數器的傳輸]**** 核取方塊。 若要增加或減少將事件記錄傳輸至儲存體帳戶的間隔，請變更 [傳輸期間 (分鐘)]**** 值。 選取您想要追蹤之效能計數器的核取方塊。
 
 ![效能計數器](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
-若要追蹤未列出的效能計數器，請使用建議的語法輸入效能計數器。 然後，選取 [新增]****。 虛擬機器上的作業系統會決定您可以追蹤的效能計數器。如需語法的詳細資訊，請參閱 [指定計數器路徑](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx)。
+若要追蹤未列出的效能計數器，請使用建議的語法輸入效能計數器。 然後，選取 [新增]****。 虛擬機器上的作業系統會決定您可以追蹤的效能計數器。如需語法的詳細資訊，請參閱 [指定計數器路徑](/windows/win32/perfctrs/specifying-a-counter-path)。
 
 ### <a name="infrastructure-logs"></a>基礎結構記錄
 基礎結構記錄具有 Azure 診斷基礎結構、RemoteAccess 模組和 RemoteForwarder 模組的相關資訊。 若要收集基礎結構記錄的相關資訊，請選取 [啟用基礎結構記錄的傳輸]**** 核取方塊。 若要增加或減少將基礎結構記錄傳輸至儲存體帳戶的間隔，請變更 [傳輸期間 (分鐘)]**** 值。
 
 ![診斷基礎結構記錄](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758148.png)
 
-如需詳細資訊，請參閱 [使用 Azure 診斷收集記錄資料](https://msdn.microsoft.com/library/azure/gg433048.aspx)。
+如需詳細資訊，請參閱 [使用 Azure 診斷收集記錄資料](/azure/cloud-services/cloud-services-dotnet-diagnostics)。
 
 ### <a name="log-directories"></a>記錄檔目錄
 記錄目錄具有從 Internet Information Services (IIS) 要求、失敗要求，或您選擇之資料夾的記錄目錄中收集的資料。 若要擷取記錄目錄，請選取 [啟用記錄目錄的傳輸]**** 核取方塊。 若要增加或減少將記錄傳輸至儲存體帳戶的間隔，請變更 [傳輸期間 (分鐘)]**** 值。
@@ -185,7 +185,7 @@ ms.locfileid: "89426729"
 
 ![ETW 記錄](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766025.png)
 
-透過 [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) 命名空間中的類別，支援 ASP.NET 中的 ETW 架構。 Microsoft.WindowsAzure.Diagnostics 命名空間 (繼承自並擴充標準 [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) 類別) 可讓您使用 [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) 作為 Azure 環境中的記錄架構。 如需詳細資訊，請參閱[在 Microsoft Azure 中控制記錄和追蹤](https://msdn.microsoft.com/magazine/ff714589.aspx)和[在 Azure 雲端服務和虛擬機器中啟用診斷](/azure/cloud-services/cloud-services-dotnet-diagnostics)。
+透過 [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) 命名空間中的類別，支援 ASP.NET 中的 ETW 架構。 Microsoft.WindowsAzure.Diagnostics 命名空間 (繼承自並擴充標準 [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) 類別) 可讓您使用 [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) 作為 Azure 環境中的記錄架構。 如需詳細資訊，請參閱[在 Microsoft Azure 中控制記錄和追蹤](/archive/msdn-magazine/2010/june/msdn-magazine-cloud-diagnostics-take-control-of-logging-and-tracing-in-windows-azure)和[在 Azure 雲端服務和虛擬機器中啟用診斷](/azure/cloud-services/cloud-services-dotnet-diagnostics)。
 
 ### <a name="crash-dumps"></a>損毀傾印
 若要擷取角色執行個體何時損毀的相關資訊，請選取 [啟用損毀傾印的傳輸]**** 核取方塊。  (，因為 ASP.NET 會處理大部分的例外狀況，這通常只對背景工作角色很有用。 ) 若要增加或減少專用於損毀傾印的儲存空間百分比，請將 **目錄配額變更 (% ) ** 值。 您可以變更儲存損毀傾印的儲存體容器，也可以選取您想要擷取**完整**或**最小**傾印。
@@ -194,7 +194,7 @@ ms.locfileid: "89426729"
 
 ![損毀傾印](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-如需詳細資訊，請參閱[在 Microsoft Azure 中控制記錄和追蹤](https://msdn.microsoft.com/magazine/ff714589.aspx)和 [Microsoft Azure 診斷第 4 部分：自訂記錄元件和 Azure 診斷 1.3 變更](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/)。
+如需詳細資訊，請參閱[在 Microsoft Azure 中控制記錄和追蹤](/archive/msdn-magazine/2010/june/msdn-magazine-cloud-diagnostics-take-control-of-logging-and-tracing-in-windows-azure)和 [Microsoft Azure 診斷第 4 部分：自訂記錄元件和 Azure 診斷 1.3 變更](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/)。
 
 ## <a name="view-the-diagnostics-data"></a>檢視診斷資料
 收集到雲端服務或虛擬機器的診斷資料之後，您可以檢視它。
@@ -216,7 +216,7 @@ ms.locfileid: "89426729"
     在 [雲端總管] 或 [伺服器總管] 中，開啟與部署相關聯的儲存體帳戶。
 3. 在資料表檢視器中開啟診斷資料表，然後檢閱您所收集的資料。 在 IIS 記錄和自訂記錄中，您可以開啟 blob 容器。 下表列出資料表或 blob 容器，其中包含不同記錄檔的資料。 除了該記錄檔的資料之外，資料表項目包含 **EventTickCount**、**DeploymentId**、**Role** 和 **RoleInstance**，以協助您識別哪些虛擬機器與角色產生了資料及其時機。
 
-   | 診斷資料 | 說明 | Location |
+   | 診斷資料 | 描述 | Location |
    | --- | --- | --- |
    | 應用程式記錄 |您的 **程式** 代碼藉由呼叫 system.servicemodel 類別的方法所產生的記錄。 |WADLogsTable |
    | 事件記錄檔 |資料來自虛擬機器上的 Windows 事件記錄。 Windows 會將資訊儲存在這些記錄中，但應用程式和服務也會使用記錄來報告錯誤或記錄資訊。 |WADWindowsEventLogsTable |
@@ -256,7 +256,7 @@ ms.locfileid: "89426729"
     如果您變更 [伺服器總管]中的資料收集，這些變更會持續生效，直到您完全重新部署您的雲端服務為止。 如果使用預設發佈設定，不會覆寫變更。 預設發佈設定是更新現有的部署，而不是執行完整部署。 若要在部署階段確定清除設定，請移至 [發佈] 精靈中的 [進階設定]**** 索引標籤，然後清除 [部署更新]**** 核取方塊。 當您在清除該核取方塊時重新部署，設定將還原為.wadcfgx (或.wadcfg) 檔案中透過角色的**屬性**編輯器進行的設定。 如果您更新您的部署，Azure 會保留先前的設定。
 
 ## <a name="troubleshoot-azure-cloud-service-issues"></a>疑難排解 Azure 雲端服務問題
-如果您遇到雲端服務專案的相關問題，例如陷入「忙碌」狀態的角色、重複回收，或擲回內部伺服器錯誤，您都可以使用工具和技術診斷和修正問題。 如需常見問題和解決方案的特定範例，以及您可以用來診斷和修正這些錯誤的概念和工具概觀，請參閱 [Azure PaaS 運算診斷資料](https://blogs.msdn.microsoft.com/kwill/2013/08/09/windows-azure-paas-compute-diagnostics-data/)。
+如果您遇到雲端服務專案的相關問題，例如陷入「忙碌」狀態的角色、重複回收，或擲回內部伺服器錯誤，您都可以使用工具和技術診斷和修正問題。 如需常見問題和解決方案的特定範例，以及您可以用來診斷和修正這些錯誤的概念和工具概觀，請參閱 [Azure PaaS 運算診斷資料](/archive/blogs/kwill/windows-azure-paas-compute-diagnostics-data)。
 
 ## <a name="q--a"></a>問答集
 **何謂緩衝區大小和適當大小？**

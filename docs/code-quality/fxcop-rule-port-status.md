@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3d9c1dfa45251d0f64a93bb9a5142dcec76b7c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28429b43295956d29bb9fc04f80ccf7ba1b1e720
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219721"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508362"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則埠狀態
 
-如果您先前在 Visual Studio 中使用了靜態程式碼分析，您可能會想知道哪些規則在目前的實作為 [FxCop 分析器](install-fxcop-analyzers.md)中可用。 此頁面會列出已移植的規則，以及尚未移植的規則，以及是否有計劃將它們移植。
+如果您先前在 Visual Studio 中使用了靜態程式碼分析，您可能會想知道哪些規則在目前的實作為 [FxCop 分析器](install-fxcop-analyzers.md)中可用。 此頁面會列出已移植的規則。 請參閱 [Unported 規則](fxcop-unported-rules.md) ，以瞭解尚未移植的規則，以及是否有規劃將它們移植。
 
 ## <a name="ported-rules"></a>移植的規則
 
@@ -31,7 +31,9 @@ Roslyn-分析器存放庫中自動產生的 [檔頁面](https://github.com/dotne
 --------|---------
 [CA1000](ca1000.md) | 不要在泛型類型上宣告靜態成員
 [CA1001 具有](ca1001.md) | 具有可處置欄位的類型應該為可處置
+[CA1002](ca1002.md) | 不要公開泛型清單
 [CA1003](ca1003.md) | 使用一般事件處理常式執行個體
+[CA1005](ca1005.md) | 避免在泛型類型上包含過多參數
 [CA1008](ca1008.md) | 列舉值中應該要有值為零的成員
 [CA1010](ca1010.md) | 集合應該實作泛型介面
 [CA1012](ca1012.md) | 抽象類型不應該有建構函式
@@ -54,6 +56,9 @@ Roslyn-分析器存放庫中自動產生的 [檔頁面](https://github.com/dotne
 [CA1041](ca1041.md) | 必須提供 ObsoleteAttribute 訊息
 [CA1043 必須](ca1043.md) | 針對索引子使用整數或字串引數
 [CA1044](ca1044.md) | 屬性不應該為唯寫的
+[CA1045](ca1045.md) | 不要以傳址方式傳遞類型
+[CA1046](ca1046.md) | 不要多載參考類型上的等號比較運算子
+[CA1047](ca1047.md) | 不要在密封類型中宣告 protected 成員
 [CA1050](ca1050.md) | 類型必須在命名空間中宣告
 [CA1051](ca1051.md) | 不要宣告可見的執行個體欄位
 [CA1052](ca1052.md) | 靜態預留位置類型應該是靜態或 NotInheritable
@@ -70,8 +75,6 @@ Roslyn-分析器存放庫中自動產生的 [檔頁面](https://github.com/dotne
 [CA1065](ca1065.md) | 不要在非預期的位置中引發例外狀況
 [CA1066](ca1066.md) | 類型 {0} 應該執行 IEquatable \<T> ，因為它會覆寫 Equals
 [CA1067](ca1067.md) | 執行 IEquatable 時，覆寫物件 Equals (物件) \<T>
-[CA1068](ca1068.md) | CancellationToken 參數必須位於最後
-CA1200 | 請避免使用具有前置詞的 cref 標記
 [CA1303](ca1303.md) | 不要將常值當作已當地語系化的參數傳遞
 [CA1304](ca1304.md) | 必須指定 CultureInfo
 [CA1305](ca1305.md) | 必須指定 IFormatProvider
@@ -83,14 +86,13 @@ CA1200 | 請避免使用具有前置詞的 cref 標記
 [CA1502](ca1502.md) | 避免造成過度複雜的方法
 [CA1505](ca1505.md) | 應避免撰寫無法維護的程式碼
 [CA1506](ca1506.md) | 應避免使用結合過度的類別
-[CA1507](ca1507.md) | 使用 nameof 來表達符號名稱
-[CA1508](ca1508.md) | 避免死的條件式程式碼
-CA1509 | 程式碼度量規則規格檔案中的專案無效
+[CA1700](ca1700.md) | 不要在列舉值名稱中包含 'Reserved'
 [CA1707](ca1707.md) | 識別項名稱不應該包含底線
 [CA1708](ca1708.md) | 識別項名稱不應該只靠大小寫區別
 [CA1710](ca1710.md) | 識別項應該使用正確的後置字元
 [CA1711](ca1711.md) | 識別項名稱不應該使用不正確的後置字元
 [CA1712](ca1712.md) | 不要使用類型名稱作為列舉值的前置字元
+[CA1713](ca1713.md) | 事件不應該有 before 或 after 前置字元
 [CA1714](ca1714.md) | 旗標列舉應該使用複數名稱
 [CA1715](ca1715.md) | 識別項名稱應該使用正確的前置字元
 [CA1716](ca1716.md) | 識別項名稱不應該和關鍵字相符
@@ -101,6 +103,7 @@ CA1509 | 程式碼度量規則規格檔案中的專案無效
 [CA1725](ca1725.md) | 參數名稱應該符合基底類型的宣告
 [CA1801 必須](ca1801.md) | 必須檢閱未使用的參數
 [CA1802 建議](ca1802.md) | 適當時使用常值
+[CA1805](ca1805.md) | 請勿不必要地初始化
 [CA1806](ca1806.md) | 不要忽略方法的結果
 [CA1810 必須](ca1810.md) | 必須將參考類型內部的靜態欄位初始化
 [CA1812](ca1812.md) | 避免使用未執行個體化的內部類別
@@ -115,15 +118,11 @@ CA1509 | 程式碼度量規則規格檔案中的專案無效
 [CA1823](ca1823.md) | 避免包含未使用的私用欄位
 [CA1824](ca1824.md) | 組件必須標記 NeutralResourcesLanguageAttribute
 [CA1825](ca1825.md) | 避免長度為零的陣列配置。
-CA1826 | 請勿在可編制索引的集合上使用可列舉的方法。 改為直接使用集合
 [CA2000](ca2000.md) | 必須在超出範圍前處置物件
 [CA2002](ca2002.md) | 不要鎖定具有弱式識別的物件
-[CA2007](ca2007.md) | 考慮在等待的工作上呼叫 ConfigureAwait
-[CA2008](ca2008.md) | 請勿在不傳遞 TaskScheduler 的情況下建立工作
-CA2009 | 不要在 ImmutableCollection 值上呼叫 Tolmmutablecollection
-CA2010 | 一律使用以 PreserveSigAttribute 標示的方法所傳回的值
 [CA2100 必須](ca2100.md) | 必須檢閱 SQL 查詢中是否有安全性弱點
 [CA2101 必須](ca2101.md) | 必須指定 P/Invoke 字串引數的封送處理
+[CA2109 必須](ca2109.md) | 必須檢閱可見的事件處理常式
 [CA2119](ca2119.md) | 密封方法以滿足私用介面的要求
 [CA2153](ca2153.md) | 不要攔截損毀狀態例外狀況
 [CA2200](ca2200.md) | 重新擲回以保留堆疊詳細資料。
@@ -133,11 +132,10 @@ CA2010 | 一律使用以 PreserveSigAttribute 標示的方法所傳回的值
 [CA2211](ca2211.md) | 非常數欄位不應該為可見的
 [CA2213](ca2213.md) | 可處置的欄位應該受到處置
 [CA2214](ca2214.md) | 不要呼叫建構函式中的可覆寫方法
+[CA2215](ca2215.md) | Dispose 方法應該呼叫基底類別處置
 [CA2216](ca2216.md) | 可處置的類型應該宣告完成項
 [CA2217](ca2217.md) | 不要以 FlagsAttribute 標記列舉
-[CA2218](ca2218.md) | 覆寫 Equals 時必須一併覆寫 GetHashCode
 [CA2219](ca2219.md) | 不要在 finally 子句中引發例外狀況
-[CA2224](ca2224.md) | 在多載運算子 equals 上覆寫 Equals
 [CA2225](ca2225.md) | 運算子多載必須有具名的替代方法
 [CA2226](ca2226.md) | 運算子應該有對稱的多載
 [CA2227](ca2227.md) | 集合屬性應該為唯讀
@@ -149,7 +147,6 @@ CA2010 | 一律使用以 PreserveSigAttribute 標示的方法所傳回的值
 [CA2241](ca2241.md) | 必須提供格式化方法的正確引數
 [CA2242](ca2242.md) | 必須正確測試 NaN
 [CA2243](ca2243.md) | 屬性字串常值必須正確剖析
-CA2244 | 不要複製索引元素初始化
 [CA2300](ca2300.md) | 請勿使用不安全的還原序列化程式 BinaryFormatter
 [CA2301](ca2301.md) | 未先設定 BinaryFormatter.Binder 之前，請勿呼叫 BinaryFormatter.Deserialize
 [CA2302](ca2302.md) | 呼叫 BinaryFormatter.Deserialize 之前，請務必先設定 BinaryFormatter.Binder
@@ -202,148 +199,6 @@ CA5377 | 使用容器層級存取原則
 [CA5378](ca5378.md) | 請勿停用 ServicePointManagerSecurityProtocols
 CA5379 | 不要使用弱式金鑰衍生函數演算法
 CA9999 | 分析器版本不符
-
-## <a name="unported-rules"></a>Unported 規則
-
-尚未移植至 [FxCop 分析器](install-fxcop-analyzers.md) 的一組規則包含尚未存在但仍可 [移植](#rules-that-may-be-ported)的規則，以及已淘汰且 [不會移植](#deprecated-rules)的規則。
-
-### <a name="rules-that-may-be-ported"></a>可能移植的規則
-
-下列 FxCop 舊版分析規則尚未實作為分析器，但仍然可能。 這可能是因為封鎖技術的原因，或只是規則優先順序較低。 如需每個規則之移植狀態的詳細資訊，請按一下 [ **追蹤問題** ] 資料行中的連結。
-
-規則識別碼 | 追蹤問題
---- | ---
-[CA1002](ca1002.md) | [https://github.com/dotnet/roslyn-analyzers/issues/369](https://github.com/dotnet/roslyn-analyzers/issues/369)
-[CA1004](ca1004.md) | [https://github.com/dotnet/roslyn-analyzers/issues/370](https://github.com/dotnet/roslyn-analyzers/issues/370)
-[CA1005](ca1005.md) | [https://github.com/dotnet/roslyn-analyzers/issues/371](https://github.com/dotnet/roslyn-analyzers/issues/371)
-[CA1006](ca1006.md) | [https://github.com/dotnet/roslyn-analyzers/issues/372](https://github.com/dotnet/roslyn-analyzers/issues/372)
-[CA1007](ca1007.md) | [https://github.com/dotnet/roslyn-analyzers/issues/373](https://github.com/dotnet/roslyn-analyzers/issues/373)
-[CA1011](ca1011.md) | [https://github.com/dotnet/roslyn-analyzers/issues/375](https://github.com/dotnet/roslyn-analyzers/issues/375)
-[CA1021](ca1021.md) | [https://github.com/dotnet/roslyn-analyzers/issues/377](https://github.com/dotnet/roslyn-analyzers/issues/377)
-[CA1023](ca1023.md) | [https://github.com/dotnet/roslyn-analyzers/issues/378](https://github.com/dotnet/roslyn-analyzers/issues/378)
-[CA1045](ca1045.md) | [https://github.com/dotnet/roslyn-analyzers/issues/391](https://github.com/dotnet/roslyn-analyzers/issues/391)
-[CA1046](ca1046.md) | [https://github.com/dotnet/roslyn-analyzers/issues/392](https://github.com/dotnet/roslyn-analyzers/issues/392)
-[CA1047](ca1047.md) | [https://github.com/dotnet/roslyn-analyzers/issues/393](https://github.com/dotnet/roslyn-analyzers/issues/393)
-[CA1048](ca1048.md) | [https://github.com/dotnet/roslyn-analyzers/issues/394](https://github.com/dotnet/roslyn-analyzers/issues/394)
-[CA1049](ca1049.md) | [https://github.com/dotnet/roslyn-analyzers/issues/395](https://github.com/dotnet/roslyn-analyzers/issues/395)
-[CA1057](ca1057.md) | [https://github.com/dotnet/roslyn-analyzers/issues/401](https://github.com/dotnet/roslyn-analyzers/issues/401)
-[CA1300](ca1300.md) | [https://github.com/dotnet/roslyn-analyzers/issues/408](https://github.com/dotnet/roslyn-analyzers/issues/408)
-[CA1301](ca1301.md) | [https://github.com/dotnet/roslyn-analyzers/issues/409](https://github.com/dotnet/roslyn-analyzers/issues/409)
-[CA1306](ca1306.md) | [https://github.com/dotnet/roslyn-analyzers/issues/414](https://github.com/dotnet/roslyn-analyzers/issues/414)
-[CA1402](ca1402.md) | [https://github.com/dotnet/roslyn-analyzers/issues/418](https://github.com/dotnet/roslyn-analyzers/issues/418)
-[CA1403](ca1403.md) | [https://github.com/dotnet/roslyn-analyzers/issues/419](https://github.com/dotnet/roslyn-analyzers/issues/419)
-[CA1404](ca1404.md) | [https://github.com/dotnet/roslyn-analyzers/issues/420](https://github.com/dotnet/roslyn-analyzers/issues/420)
-[CA1405](ca1405.md) | [https://github.com/dotnet/roslyn-analyzers/issues/421](https://github.com/dotnet/roslyn-analyzers/issues/421)
-[CA1407](ca1407.md) | [https://github.com/dotnet/roslyn-analyzers/issues/423](https://github.com/dotnet/roslyn-analyzers/issues/423)
-[CA1408](ca1408.md) | [https://github.com/dotnet/roslyn-analyzers/issues/424](https://github.com/dotnet/roslyn-analyzers/issues/424)
-[CA1409](ca1409.md) | [https://github.com/dotnet/roslyn-analyzers/issues/425](https://github.com/dotnet/roslyn-analyzers/issues/425)
-[CA1410](ca1410.md) | [https://github.com/dotnet/roslyn-analyzers/issues/426](https://github.com/dotnet/roslyn-analyzers/issues/426)
-[CA1411](ca1411.md) | [https://github.com/dotnet/roslyn-analyzers/issues/427](https://github.com/dotnet/roslyn-analyzers/issues/427)
-[CA1412](ca1412.md) | [https://github.com/dotnet/roslyn-analyzers/issues/428](https://github.com/dotnet/roslyn-analyzers/issues/428)
-[CA1413](ca1413.md) | [https://github.com/dotnet/roslyn-analyzers/issues/429](https://github.com/dotnet/roslyn-analyzers/issues/429)
-[CA1414](ca1414.md) | [https://github.com/dotnet/roslyn-analyzers/issues/430](https://github.com/dotnet/roslyn-analyzers/issues/430)
-[CA1415](ca1415.md) | [https://github.com/dotnet/roslyn-analyzers/issues/431](https://github.com/dotnet/roslyn-analyzers/issues/431)
-[CA1500](ca1500.md) | [https://github.com/dotnet/roslyn-analyzers/issues/432](https://github.com/dotnet/roslyn-analyzers/issues/432)
-[CA1600](ca1600.md) | [https://github.com/dotnet/roslyn-analyzers/issues/438](https://github.com/dotnet/roslyn-analyzers/issues/438)
-[CA1601](ca1601.md) | [https://github.com/dotnet/roslyn-analyzers/issues/439](https://github.com/dotnet/roslyn-analyzers/issues/439)
-[CA1700](ca1700.md) | [https://github.com/dotnet/roslyn-analyzers/issues/440](https://github.com/dotnet/roslyn-analyzers/issues/440)
-[CA1704](ca1704.md) | [https://github.com/dotnet/roslyn-analyzers/issues/443](https://github.com/dotnet/roslyn-analyzers/issues/443)
-[CA1709](ca1709.md) | [https://github.com/dotnet/roslyn-analyzers/issues/445](https://github.com/dotnet/roslyn-analyzers/issues/445)
-[CA1713](ca1713.md) | [https://github.com/dotnet/roslyn-analyzers/issues/449](https://github.com/dotnet/roslyn-analyzers/issues/449)
-[CA1719](ca1719.md) | [https://github.com/dotnet/roslyn-analyzers/issues/453](https://github.com/dotnet/roslyn-analyzers/issues/453)
-[CA1722](ca1722.md) | [https://github.com/dotnet/roslyn-analyzers/issues/455](https://github.com/dotnet/roslyn-analyzers/issues/455)
-[CA1726 建議](ca1726.md) | [https://github.com/dotnet/roslyn-analyzers/issues/458](https://github.com/dotnet/roslyn-analyzers/issues/458)
-[CA1804 必須](ca1804.md) | [https://github.com/dotnet/roslyn-analyzers/issues/461](https://github.com/dotnet/roslyn-analyzers/issues/461)
-[CA1811](ca1811.md) | [https://github.com/dotnet/roslyn-analyzers/issues/464](https://github.com/dotnet/roslyn-analyzers/issues/464)
-[CA1900](ca1900.md) | [https://github.com/dotnet/roslyn-analyzers/issues/474](https://github.com/dotnet/roslyn-analyzers/issues/474)
-[CA2001](ca2001.md) | [https://github.com/dotnet/roslyn-analyzers/issues/477](https://github.com/dotnet/roslyn-analyzers/issues/477)
-[CA2004](ca2004.md) | [https://github.com/dotnet/roslyn-analyzers/issues/479](https://github.com/dotnet/roslyn-analyzers/issues/479)
-[CA2006](ca2006.md) | [https://github.com/dotnet/roslyn-analyzers/issues/480](https://github.com/dotnet/roslyn-analyzers/issues/480)
-[CA2109 必須](ca2109.md) | [https://github.com/dotnet/roslyn-analyzers/issues/488](https://github.com/dotnet/roslyn-analyzers/issues/488)
-[CA2204](ca2204.md) | [https://github.com/dotnet/roslyn-analyzers/issues/529](https://github.com/dotnet/roslyn-analyzers/issues/529)
-[CA2205 必須](ca2205.md) | [https://github.com/dotnet/roslyn-analyzers/issues/530](https://github.com/dotnet/roslyn-analyzers/issues/530)
-[CA2212](ca2212.md) | [https://github.com/dotnet/roslyn-analyzers/issues/534](https://github.com/dotnet/roslyn-analyzers/issues/534)
-[CA2215](ca2215.md) | [https://github.com/dotnet/roslyn-analyzers/issues/535](https://github.com/dotnet/roslyn-analyzers/issues/535)
-[CA2232](ca2232.md) | [https://github.com/dotnet/roslyn-analyzers/issues/545](https://github.com/dotnet/roslyn-analyzers/issues/545)
-[CA2236 必須](ca2236.md) | [https://github.com/dotnet/roslyn-analyzers/issues/548](https://github.com/dotnet/roslyn-analyzers/issues/548)
-[CA2238](ca2238.md) | [https://github.com/dotnet/roslyn-analyzers/issues/549](https://github.com/dotnet/roslyn-analyzers/issues/549)
-[CA2239 必須](ca2239.md) | [https://github.com/dotnet/roslyn-analyzers/issues/550](https://github.com/dotnet/roslyn-analyzers/issues/550)
-[CA2240 必須](ca2240.md) | [https://github.com/dotnet/roslyn-analyzers/issues/551](https://github.com/dotnet/roslyn-analyzers/issues/551)
-
-### <a name="deprecated-rules"></a>已淘汰的規則
-
-下列 FxCop 舊版分析規則已被取代，而且不會實作為分析器。 如需進一步的資訊，您可以依規則識別碼搜尋 (例如[roslyn-分析器 GitHub 問題頁面](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)上的**CA1009**) 。
-
-- [CA1009](ca1009.md)
-- [CA1020](ca1020.md)
-- [CA1025 必須](ca1025.md)
-- [CA1026](ca1026.md)
-- [CA1035](ca1035.md)
-- [CA1038](ca1038.md)
-- [CA1039](ca1039.md)
-- [CA1059](ca1059.md)
-- [CA1302](ca1302.md)
-- [CA1400](ca1400.md)
-- [CA1406](ca1406.md)
-- [CA1504 必須](ca1504.md)
-- [CA1701](ca1701.md)
-- [CA1702](ca1702.md)
-- [CA1703](ca1703.md)
-- [CA1800](ca1800.md)
-- [CA1809](ca1809.md)
-- [CA1901](ca1901.md)
-- [CA1903](ca1903.md)
-- [CA2003](ca2003.md)
-- [CA2102](ca2102.md)
-- [CA2103](ca2103.md)
-- [CA2104](ca2104.md)
-- [CA2105](ca2105.md)
-- [CA2106 必須](ca2106.md)
-- [CA2107](ca2107.md)
-- [CA2108](ca2108.md)
-- [CA2111](ca2111.md)
-- [CA2112](ca2112.md)
-- [CA2114](ca2114.md)
-- [CA2115](ca2115.md)
-- [CA2116](ca2116.md)
-- [CA2117](ca2117.md)
-- [CA2118](ca2118.md)
-- [CA2120](ca2120.md)
-- [CA2121](ca2121.md)
-- [CA2122](ca2122.md)
-- [CA2123](ca2123.md)
-- [CA2124](ca2124.md)
-- [CA2126](ca2126.md)
-- [CA2130](ca2130.md)
-- [CA2131](ca2131.md)
-- [CA2132](ca2132.md)
-- [CA2133](ca2133.md)
-- [CA2134](ca2134.md)
-- [CA2135](ca2135.md)
-- [CA2136](ca2136.md)
-- [CA2137](ca2137.md)
-- [CA2138](ca2138.md)
-- [CA2139](ca2139.md)
-- [CA2140](ca2140.md)
-- [CA2141](ca2141.md)
-- [CA2142](ca2142.md)
-- [CA2143](ca2143.md)
-- [CA2144](ca2144.md)
-- [CA2145](ca2145.md)
-- [CA2146](ca2146.md)
-- [CA2147](ca2147.md)
-- [CA2149](ca2149.md)
-- [CA2151](ca2151.md)
-- [CA2202](ca2202.md)
-- [CA2210](ca2210.md)
-- [CA2220](ca2220.md)
-- [CA2221](ca2221.md)
-- [CA2222](ca2222.md) ([理由](https://github.com/dotnet/roslyn-analyzers/issues/1378)) 
-- [CA2223](ca2223.md)
-- [CA2228](ca2228.md)
-- [CA2230](ca2230.md)
-- [CA2233 運算](ca2233.md)
-- [CA5122](ca5122.md)
 
 ## <a name="see-also"></a>另請參閱
 

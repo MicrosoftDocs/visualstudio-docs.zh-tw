@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 8b4b7a05de87ab8b70046b51fe9f256f05d3aee5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd7102873047ed7331547225fa0b32efd33f853f
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62572281"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508414"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (Windows PowerShell 指令碼)
 將 Web 應用程式部署到虛擬機器。 指令碼會在您的 Azure 訂用帳戶中建立所需的資源 (如果它們不存在)。
@@ -30,7 +30,7 @@ Publish-WebApplicationVM
 -Verbose
 ```
 
-### <a name="configuration"></a>組態
+### <a name="configuration"></a>設定
 描述部署詳細資訊的 JSON 組態檔路徑。
 
 | 別名 | 無 |
@@ -53,7 +53,7 @@ Publish-WebApplicationVM
 | 接受萬用字元？ |false |
 
 ### <a name="webdeploypackage"></a>WebDeployPackage
-要發佈至虛擬機器的 Web 部署封裝路徑。 您可以使用 Visual Studio 的 [發佈 Web] 精靈來建立此封裝。 請參閱 [如何：在 Visual Studio 中建立 Web 部署封裝](https://msdn.microsoft.com/library/dd465323.aspx)。
+要發佈至虛擬機器的 Web 部署封裝路徑。 您可以使用 Visual Studio 的 [發佈 Web] 精靈來建立此封裝。 請參閱 [如何：在 Visual Studio 中建立 Web 部署封裝](/previous-versions/aspnet/dd465323(v=vs.110))。
 
 | 別名 | 無 |
 | --- | --- |

@@ -8,21 +8,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 153eda065b9a6e845a39c35aaae34bbe1745f7a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86412b82b291ee395b35d654d3cde6d326e956f0
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905002"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508947"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>逐步解說：顯示燈泡建議
 Light 燈泡是 Visual Studio 編輯器中的圖示，會展開以顯示一組動作，例如修正內建程式碼分析器或程式碼重構所識別的問題。
 
  在 Visual c # 和 Visual Basic 編輯器中，您也可以使用 .NET Compiler Platform ( "Roslyn" ) 撰寫和封裝您自己的程式碼分析器，並顯示自動顯示燈泡的動作。 如需詳細資訊，請參閱：
 
-- [如何：撰寫 c # 診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)
+- [如何：撰寫 c # 診斷和程式碼修正](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)
 
-- [How To：撰寫 Visual Basic 診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)
+- [How To：撰寫 Visual Basic 診斷和程式碼修正](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix.md)
 
   其他語言（例如 c + +）也會提供一些快速動作的燈光燈泡，例如，建立該函式的存根執行的建議。
 
@@ -36,7 +36,7 @@ Light 燈泡是 Visual Studio 編輯器中的圖示，會展開以顯示一組�
 
   您可以使用 light 燈泡來提供您自己的建議動作。 例如，您可以提供動作將左大括弧移至新行，或將它們移至上一行的結尾。 下列逐步解說示範如何建立顯示在目前單字上的燈泡，並有兩個建議的動作： [ **轉換為大寫** ] 和 [ **轉換為小寫**]。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>建立 Managed Extensibility Framework (MEF) 專案

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 57841baaf147c2aae02ac89a8401c46d3bd64ca3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42d1f394cb4e65a3794e3e869f182ba81237eeef
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911673"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508388"
 ---
 # <a name="set-up-named-authentication-credentials"></a>設定具名驗證認證
 
@@ -33,7 +33,7 @@ ms.locfileid: "72911673"
 - 選擇使用中的訂用帳戶，然後選取 [編輯]****，隨即會開啟一個對話方塊，您可以從中編輯現有訂用帳戶，以用於驗證。
 - 選取 [新增]**** 以開啟 [新增訂用帳戶]**** 對話方塊，並提供所需的詳細資料。 若要將憑證上傳至對話方塊中所指的雲端服務，請登入 Azure 入口網站，瀏覽至您的雲端服務，選取 [設定] > [管理憑證]****，選取 [上傳]****，然後指定 `.cer` 檔案的路徑。
 
-如果您想要自行建立憑證，您可以參考[建立及上傳 Azure 的管理憑證](https://msdn.microsoft.com/library/windowsazure/gg551722.aspx)中的指示，然後手動將憑證上傳至 [Azure 入口網站](https://portal.azure.com/)。
+如果您想要自行建立憑證，您可以參考[建立及上傳 Azure 的管理憑證](/azure/cloud-services/cloud-services-certs-create)中的指示，然後手動將憑證上傳至 [Azure 入口網站](https://portal.azure.com/)。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -7,12 +7,12 @@ ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 09/02/2020
 ms.topic: how-to
 description: 了解如何啟用 Visual Studio 訂用帳戶所包含的技術支援權益。
-ms.openlocfilehash: 3081836b94fbc5fdda277d694086acc18db6eb44
-ms.sourcegitcommit: 1d74273a50ede5a90d9d64372d93aad357daef42
+ms.openlocfilehash: ba4a80f604116a10901d98229980f2732956c0df
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89365842"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508934"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>啟用並使用 Visual Studio 訂用帳戶中的技術支援權益
 如果產品仍在[支援生命週期](https://support.microsoft.com/lifecycle/search)的主要支援階段中，Visual Studio 訂用帳戶技術支援權益可為其解決**非生產環境**中的協助修正問題。 自權益啟用的 1 年內，Visual Studio Enterprise 標準和年度雲端訂用帳戶可接收四個事件，而 Visual Studio Professional 標準和年度雲端訂用帳戶可接收兩個事件。 您必須在訂用帳戶為最新狀態時啟用權益。
@@ -33,7 +33,13 @@ ms.locfileid: "89365842"
 產品層級描述：展開 [ **無法使用的支援方案**]。 如果您看到 **支援方案無法用於指定產品的支援 (程式碼： 8) **，您的支援合約無法用於您所選取的產品版本。
 
 > [!IMPORTANT]
-> 所提供的支援事件適用于支援服務的修正。  這些可能不會用來協助處理與 Microsoft 小組、Microsoft Office、Microsoft SharePoint 或 Microsoft Outlook 相關的程式碼撰寫/開發問題
+> 所提供的支援事件適用于支援服務的修正。  它們可能不會用來協助處理涉及下列產品的程式碼/開發問題：
+> - Microsoft Teams
+> - Microsoft Office
+> - Microsoft SharePoint
+> - Microsoft Exchange
+> - Microsoft Graph
+> - Microsoft Outlook
 
 ## <a name="how-to-activate-the-benefit"></a>如何啟用權益
 1. 前往 <https://my.visualstudio.com/Benefits>，向下捲動至 [支援] 區段，然後在 [技術支援] 磚上，按一下 [Chat to activate] \(聊天啟用\)****。

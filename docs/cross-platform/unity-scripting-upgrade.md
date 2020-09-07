@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: e824951556124f080f14cdd9f440037decf5146f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a53db2d7cb73fbbb8ea694386dbada3186957ee
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815132"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508973"
 ---
 # <a name="using-net-4x-in-unity"></a>在 Unity 中使用 .NET 4.x
 
@@ -21,7 +21,7 @@ C# 和 .NET (以 Unity 指令碼為基礎的技術) 持續接收到更新，因�
 
 隨著 Unity 2017.1 的發行，Unity 引進將其指令碼執行階段升級至 .NET 4.6 (C# 6 相容版本) 的實驗性版本。 在 Unity 2018.1 中，不再將 .NET 4.x 對等執行階段視為實驗性，現在會將舊版 .NET 3.5 對等執行階段視為舊版本。 而隨著 Unity 2018.3 的發行，Unity 預測會將已升級的指令碼執行階段設為預設選取項目，甚至進一步更新為 C# 7。 如需本藍圖的詳細資訊和最新更新，請閱讀 Unity 的[部落格文章](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)，或瀏覽其 [Experimental Scripting Previews 論壇](https://forum.unity.com/forums/experimental-scripting-previews.107/)。 在此同時，請參閱下列各節，來深入了解 .NET 4.x 指令碼執行階段現在可用的新功能。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 * [Unity 2017.1 或更新版本](https://unity3d.com/) (建議使用 2018.2)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
@@ -233,7 +233,7 @@ TAP 是一個複雜主題，而開發人員應該考慮其 Unity 特定細微差
 * 傳回工作的非同步函數應該在其名稱附加尾碼 **"Async"**。 "Async" 尾碼有助於指出應該一律等候函數。
 * 只會使用可從傳統同步程式碼引發 async 函數之函數的 `async void` 傳回型別。 這類函數本身無法等候，而且不應該在其名稱中有 "Async" 尾碼。
 * 根據預設，Unity 使用 UnitySynchronizationContext 確保在主要執行緒上執行 async 函數。 Unity API 無法在主要執行緒外部存取。
-* 您可以使用和等方法在背景執行緒上執行工作 [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx) 。 這項技術適用於卸載主要執行緒的耗費資源作業，以提高效能。 不過，使用背景執行緒可能會導致很難偵錯的問題 (例如[競爭條件](https://wikipedia.org/wiki/Race_condition))。
+* 您可以使用和等方法在背景執行緒上執行工作 [`Task.Run`](/dotnet/api/system.threading.tasks.task.run) [`Task.ConfigureAwait(false)`](/dotnet/api/system.threading.tasks.task.configureawait) 。 這項技術適用於卸載主要執行緒的耗費資源作業，以提高效能。 不過，使用背景執行緒可能會導致很難偵錯的問題 (例如[競爭條件](https://wikipedia.org/wiki/Race_condition))。
 * Unity API 無法在主要執行緒外部存取。
 * Unity WebGL 組建不支援使用執行緒的工作。
 

@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 68b64b3097d2b26d30593ac63de5e531d6cc7736
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b6d001a8764d3519f0584de88a55a000447054
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800485"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508479"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>在 Visual Studio 中進行 Azure 雲端服務或虛擬機器的偵錯
 
@@ -75,7 +75,7 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 
     ![附加偵錯工具](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746719.gif)
 
-3. 將偵錯工具附加至執行個體之後，如往常般進行偵錯。 偵錯工具會自動附加至符合角色之適當的主機處理序。 根據角色，偵錯工具會附加至 w3wp.exe、WaWorkerHost.exe 或 WaIISHost.exe。 若要確認偵錯工具附加的程序，請展開 [伺服器總管] 中的執行個體節點。 如需有關 Azure 程序的詳細資訊，請參閱[ Azure 角色架構](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/)。
+3. 將偵錯工具附加至執行個體之後，如往常般進行偵錯。 偵錯工具會自動附加至符合角色之適當的主機處理序。 根據角色，偵錯工具會附加至 w3wp.exe、WaWorkerHost.exe 或 WaIISHost.exe。 若要確認偵錯工具附加的程序，請展開 [伺服器總管] 中的執行個體節點。 如需有關 Azure 程序的詳細資訊，請參閱[ Azure 角色架構](/archive/blogs/kwill/windows-azure-role-architecture)。
 
     ![選取程式碼類型對話方塊](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
@@ -128,7 +128,7 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 
     ![選取程式碼類型對話方塊](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-5. 選擇您想要在虛擬機器上進行偵錯工具的進程，然後選取 [ **附加**]。 例如，如果您想要在虛擬機器上偵錯 Web 應用程式，可以選擇 w3wp.exe 處理序。 如需詳細資訊，請參閱[在 Visual Studio 中偵錯一或多個處理序](https://msdn.microsoft.com/library/jj919165.aspx)和 [Azure 角色架構](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/)。
+5. 選擇您想要在虛擬機器上進行偵錯工具的進程，然後選取 [ **附加**]。 例如，如果您想要在虛擬機器上偵錯 Web 應用程式，可以選擇 w3wp.exe 處理序。 如需詳細資訊，請參閱[在 Visual Studio 中偵錯一或多個處理序](../debugger/debug-multiple-processes.md)和 [Azure 角色架構](/archive/blogs/kwill/windows-azure-role-architecture)。
 
 ## <a name="create-a-web-project-and-a-virtual-machine-for-debugging"></a>建立 Web 專案和虛擬機器進行偵錯
 
@@ -167,7 +167,7 @@ Visual Studio ASP.NET 專案提供選項，讓您建立可用於測試應用程�
 
     ![Azure 活動記錄檔](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. 如 [HOW TO：在 Visual Studio 中使用單鍵發佈來部署 Web 專案](https://msdn.microsoft.com/library/dd465337.aspx)所述，發佈您的專案。 因為您想要在虛擬機器上進行偵錯，請在 [**發行 Web**] 精靈的 [**設定**] 頁面上，選取 [**偵錯**] 作為組態。 這樣可確保程式碼符號在偵錯時可供使用。
+6. 如 [HOW TO：在 Visual Studio 中使用單鍵發佈來部署 Web 專案](/previous-versions/aspnet/dd465337(v=vs.110))所述，發佈您的專案。 因為您想要在虛擬機器上進行偵錯，請在 [**發行 Web**] 精靈的 [**設定**] 頁面上，選取 [**偵錯**] 作為組態。 這樣可確保程式碼符號在偵錯時可供使用。
 
     ![發佈設定](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
@@ -183,7 +183,7 @@ Visual Studio ASP.NET 專案提供選項，讓您建立可用於測試應用程�
 
     ![選取程式碼類型對話方塊](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-10. 選擇您想要在虛擬機器上進行偵錯工具的進程，然後選取 [ **附加**]。 例如，如果您想要在虛擬機器上偵錯 Web 應用程式，可以選擇 w3wp.exe 處理序。 如需詳細資訊，請參閱 [在 Visual Studio 中偵錯一或多個處理序](https://msdn.microsoft.com/library/jj919165.aspx) 。
+10. 選擇您想要在虛擬機器上進行偵錯工具的進程，然後選取 [ **附加**]。 例如，如果您想要在虛擬機器上偵錯 Web 應用程式，可以選擇 w3wp.exe 處理序。 如需詳細資訊，請參閱 [在 Visual Studio 中偵錯一或多個處理序](../debugger/debug-multiple-processes.md) 。
 
 ## <a name="next-steps"></a>後續步驟
 

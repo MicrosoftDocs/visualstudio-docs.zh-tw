@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b9c80ba76ba2da978c9cb475299ba0fc9e614120
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1dddc235131322a61cdb0106d866b138040d8c18
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72655142"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508167"
 ---
 # <a name="automatic-feature-suspension"></a>自動功能暫停
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "72655142"
 - Visual Studio 快取排清。
 
 ## <a name="improve-visual-studio-performance"></a>改善 Visual Studio 效能
- 如需如何在處理大型解決方案或記憶體不足的狀況時改善 Visual Studio 效能的秘訣和訣竅，請參閱 [大型方案的效能考慮](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)。
+ 如需如何在處理大型解決方案或記憶體不足的狀況時改善 Visual Studio 效能的秘訣和訣竅，請參閱 [大型方案的效能考慮](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)。
 
 ## <a name="full-solution-analysis-suspended"></a>完整解決方案分析已暫停
  根據預設，會為 Visual Basic 啟用完整的解決方案分析，並且針對 Visual c # 停用。 不過，在記憶體不足的情況下，無論在 [選項] 對話方塊中的設定為何，都會自動停用 Visual Basic 和 Visual c # 的完整解決方案分析。 不過，您可以在 [選項] 對話方塊中 **選取 [** **啟用完整解決方案分析** ] 核取方塊，或重新開機 Visual Studio，藉以重新啟用完整的解決方案分析。 [選項] 對話方塊一律會顯示目前的完整方案分析設定。 如需詳細資訊，請參閱 [如何：啟用和停用完整解決方案分析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)。
@@ -63,4 +63,4 @@ ms.locfileid: "72655142"
 
 - [如何：啟用和停用完整解決方案分析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [Fundamentals of Garbage Collection (記憶體回收的基本概念)](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
-- [大型解決方案的效能考慮](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [大型解決方案的效能考慮](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)

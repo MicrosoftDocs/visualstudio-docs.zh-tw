@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 17bdd86829da199e01a527aa382b8ed3bdfade17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be42bf1498746ce57f662f43c12ece80ac6ca9be
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232938"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509038"
 ---
 # <a name="devops-with-unity-apps"></a>使用 Unity 應用程式進行 DevOps
 
@@ -73,7 +73,7 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 
 3. Unity 專案中的二進位資產 (例如紋理或音訊檔) 可能會佔用大量儲存體。 各種原始檔控制系統 (如 Git) 會針對進行的每一項變更儲存唯一的檔案複本，即使變更只影響一小部分的檔案也是一樣。 這可能會讓 Git 儲存機制變得過大。 若要解決這個問題，Unity 開發人員通常會選擇只將最後一個資產加入其儲存機制，並使用不同的方法來保留其資產的工作歷程記錄 (例如 OneDrive、DropBox 或 git-annex)。 因為這類資產一般不需要進行版本控制以及原始程式碼變更，所以這種方式適用。 開發人員一般也會將專案編輯器的 [資產序列化模式] 設定為 [強制文字]，以文字格式 (非允許在原始檔控制中進行合併的二進位格式) 來儲存場景檔案。 如需詳細資訊，請參閱[編輯器設定 (英文)](https://docs.unity3d.com/Manual/class-EditorManager.html) (Unity 文件)。
 
-## <a name="build"></a>Build
+## <a name="build"></a>組建
 
 參考連結：**[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 
@@ -103,10 +103,10 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 |功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
 |[分析受控碼品質](../code-quality/code-analysis-for-managed-code-overview.md)|是|可以在 Visual Studio 內分析 C# 指令碼。|
-|[使用程式碼複製品偵測來尋找重複程式碼](https://msdn.microsoft.com/library/hh205279.aspx)|是|可以在 Visual Studio 內分析 C# 指令碼。|
+|[使用程式碼複製品偵測來尋找重複程式碼](/previous-versions/hh205279(v=vs.140))|是|可以在 Visual Studio 內分析 C# 指令碼。|
 |[測量受控程式碼的複雜度和維護性](../code-quality/code-metrics-values.md)|是|可以在 Visual Studio 內分析 C# 指令碼。|
 |[效能工具](../profiling/performance-explorer.md)|否|使用 [Unity 分析工具 (英文)](https://docs.unity3d.com/Manual/Profiler.html) (Unity 網站)。|
-|[分析 .NET Framework 記憶體問題](https://msdn.microsoft.com/library/dn342825.aspx)|否|Visual Studio 工具並不會為程式碼剖析而連結 Unity 所使用的 Mono 架構。 使用 [Unity 分析工具 (英文)](http://docs.unity3d.com/Manual/Profiler.html) (Unity 文件)。|
+|[分析 .NET Framework 記憶體問題](../vs-2015/misc/analyze-dotnet-framework-memory-issues.md)|否|Visual Studio 工具並不會為程式碼剖析而連結 Unity 所使用的 Mono 架構。 使用 [Unity 分析工具 (英文)](http://docs.unity3d.com/Manual/Profiler.html) (Unity 文件)。|
 
 ## <a name="release-management"></a>版本管理
 

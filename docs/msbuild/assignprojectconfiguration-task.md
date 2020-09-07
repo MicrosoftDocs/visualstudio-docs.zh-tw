@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5159b73058c73c925cae644c2e3ddd2bc84ac41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b543af39cbcd0301da7d0d353f8f7b6fa006f7ac
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634548"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508518"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration 工作
 
@@ -30,6 +30,7 @@ ms.locfileid: "77634548"
 
 |參數|描述|
 |---------------|-----------------|
+|`ProjectReferences`|必要 <xref:Microsoft.Build.Framework.ITaskItem> `[]` 的輸入參數。<br /><br /> 要設定的專案。|
 |`SolutionConfigurationContents`|選擇性的 `string` 輸出參數。<br /><br /> 包含 XML 字串，其中含有每個專案的專案組態。 工作會將組態指派給具名的專案。|
 |`DefaultToVcxPlatformMapping`|選擇性的 `string` 輸出參數。<br /><br /> 包含以分號分隔的對應清單，這些對應是從大部分類型所使用之平台名稱到 *.vcxproj* 檔案所使用之平台名稱的對應。<br /><br /> 例如：<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|
 |`VcxToDefaultPlatformMapping`|選擇性<br /><br /> `string` 輸出參數。<br /><br /> 包含從 .vcxproj 平臺名稱到大部分類型所使用之平臺名稱的對應清單（以分號分隔） *。*<br /><br /> 例如：<br /><br /> `"Win32=AnyCPU;X64=X64"`|

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 236a95cd8d4af8da91199bf79e7c9fe3aa0d49af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 976e676cda09d50e34acb88a12551b1531595888
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769487"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508375"
 ---
 # <a name="automatic-feature-suspension"></a>自動功能暫停
 
@@ -40,7 +40,7 @@ ms.locfileid: "85769487"
 
 ## <a name="improve-visual-studio-performance"></a>改善 Visual Studio 效能
 
-如需如何在處理大型解決方案或記憶體不足的狀況時改善 Visual Studio 效能的秘訣和訣竅，請參閱 [大型方案的效能考慮](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)。
+如需如何在處理大型解決方案或記憶體不足的狀況時改善 Visual Studio 效能的秘訣和訣竅，請參閱 [大型方案的效能考慮](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)。
 
 ## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>即時程式碼分析縮減至基本範圍
 
@@ -69,4 +69,4 @@ ms.locfileid: "85769487"
 
 - [如何：設定 managed 程式碼的即時程式碼分析範圍](./configure-live-code-analysis-scope-managed-code.md)
 - [Fundamentals of Garbage Collection (記憶體回收的基本概念)](/dotnet/standard/garbage-collection/fundamentals)
-- [大型解決方案的效能考慮](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [大型解決方案的效能考慮](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)

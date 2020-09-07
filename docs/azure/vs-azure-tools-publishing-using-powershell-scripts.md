@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 25943a6b3edc1a55c6d27d3c2737a9893edf5032
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f7e2f79b5e7daea577693bc0fd54cef70bb7e4a
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84179956"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508401"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>使用 Windows PowerShell 指令碼來發行至開發和測試環境
 
@@ -22,7 +22,7 @@ ms.locfileid: "84179956"
 
 使用這些指令碼，您可以佈建網站的自訂版本 (也稱為開發和測試環境)，以做臨時使用。 例如，您可以在 Azure 虛擬機器上或網站的預備位置上設定網站的特定版本，以執行測試套件、重現錯誤、測試錯誤修正、試驗提議的變更，或設定用來進行示範或展示的自訂環境。 在建立用來發佈專案的指令碼後，您可以視需要重新執行指令碼來重建相同環境，或對 Web 應用程式的自有組建執行指令碼以建立用於測試的自訂環境。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 * 已安裝 **Azure 工作負載**的 Visual Studio 2015 或更新版本，或 Visual Studio 2013 和 Azure SDK 2.3 或更新版本。 請參閱 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)。 (要產生 Web 專案的指令碼並不需要用到 Azure SDK。 這項功能是供 Web 專案使用，而非供雲端服務中的 Web 角色使用。)
 * Azure PowerShell 0.7.4 或更新版本。 請參閱 [如何安裝和設定 Azure PowerShell](/powershell/azure/overview)。
@@ -154,7 +154,7 @@ JSON 檔案建立於 **Configurations** 資料夾中，而且包含可明確指�
 
    ![建立 Web Deploy 封裝](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Web 部署封裝](https://msdn.microsoft.com/library/dd465323.aspx)。 您也可以自動建立 Web Deploy 套件，如[自訂和擴充發佈指令碼](#customizing-and-extending-the-publish-scripts)中所述。
+   如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Web 部署封裝](/previous-versions/aspnet/dd465323(v=vs.110))。 您也可以自動建立 Web Deploy 套件，如[自訂和擴充發佈指令碼](#customizing-and-extending-the-publish-scripts)中所述。
 
 1. 在 [方案總管]**** 中，開啟指令碼的內容功能表，然後選擇 [以 PowerShell ISE 開啟]****。
 1. 如果第一次在此電腦上執行 Windows PowerShell 指令碼，請以系統管理員權限開啟命令提示字元視窗，並輸入下列命令：

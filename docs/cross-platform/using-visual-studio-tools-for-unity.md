@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f65945f28a577201c1308694bb7196d464330dc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8a0db05788682bf08f9899cebb517370a1627b6
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815158"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508960"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 
@@ -181,7 +181,7 @@ Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工�
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>為 Unity 專案所使用的 Managed DLL 專案偵錯
 
-1. 將現有的 DLL 專案加入 Visual Studio Tools for Unity 所產生的 Visual Studio 方案。 在較不常見的情況下，您可能會啟動新的 Managed DLL 專案來包含 Unity 專案中的程式碼元件；如果是這種情況，您可以改為將新的 Managed DLL 專案加入 Visual Studio 方案。 如需將新的或現有的專案加入至方案的詳細資訊，請參閱[作法：將專案加入至方案](https://msdn.microsoft.com/library/ff460187.aspx)。
+1. 將現有的 DLL 專案加入 Visual Studio Tools for Unity 所產生的 Visual Studio 方案。 在較不常見的情況下，您可能會啟動新的 Managed DLL 專案來包含 Unity 專案中的程式碼元件；如果是這種情況，您可以改為將新的 Managed DLL 專案加入 Visual Studio 方案。
 
    ![將現有的 DLL 專案加入方案。](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
@@ -210,7 +210,7 @@ Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工�
 
 您可以使用鍵盤快速鍵快速存取 Unity Tools for Visual Studio 功能。 以下是可用的快速鍵摘要。
 
-|命令|快速鍵|快速鍵命令名稱|
+|Command|快速鍵|快速鍵命令名稱|
 |-------------|--------------|---------------------------|
 |開啟 MonoBehavior 精靈|**Ctrl** +**Shift** +**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
 |開啟 Unity Project Explorer|**Alt** +**Shift** +**E**|**View.UnityProjectExplorer**|

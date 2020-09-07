@@ -9,17 +9,17 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: 179737f7a4a55fd6111338363ad6668a43689205
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ed5e9635cbe088773336a29bc9a8853d7e0a5db
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280761"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508466"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>從命令列建置 Azure 專案
 使用 Microsoft Build Engine (MSBuild) 時，您可以在未安裝 Visual Studio 的測試版環境中建置產品。 MSBuild 的專案檔案會採用可擴充且 Microsoft 完全支援的 XML 格式。 使用 MSBuild 檔案格式時，您可以說明針對一或多個平台和組態所必須建置的項目。
 
-您也可以在命令列執行 MSBuild，本主題將說明這個方法。 藉由在命令列設定屬性，您將可以建置專案的特定組態。 同樣地，您也可以定義 MSBuild 建置的目標。 如需有關命令列參數及 MSBuild 的詳細資訊，請參閱 [MSBuild 命令列參考](https://msdn.microsoft.com/library/ms164311.aspx)。
+您也可以在命令列執行 MSBuild，本主題將說明這個方法。 藉由在命令列設定屬性，您將可以建置專案的特定組態。 同樣地，您也可以定義 MSBuild 建置的目標。 如需有關命令列參數及 MSBuild 的詳細資訊，請參閱 [MSBuild 命令列參考](../msbuild/msbuild-command-line-reference.md)。
 
 ## <a name="msbuild-parameters"></a>MSBuild 參數
 若要建立封裝，最簡單的方法是使用 `/t:Publish` 選項來執行 MSBuild。 此命令預設會建立專案根資料夾的相關目錄，例如 `<ProjectDirectory>\bin\Configuration\app.publish\`。 當您建置 Azure 專案時，會產生兩個檔案，即套件檔案本身及伴隨的組態檔：

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 6f05f97155427d75b88bb509a6bfb09644d8c686
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 960bd86a1e0993e4d2c57514a29ceecca34cca3d
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250848"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508505"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>使用 Visual Studio 設定 Azure 雲端服務角色
 Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您必須為每個角色定義其設定方式，並設定該角色的執行方式。 若要深入了解雲端服務中的角色，請參閱視訊 [Azure 雲端服務簡介](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)。
@@ -140,7 +140,7 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
     ```
 
 ## <a name="add-custom-settings-to-use-in-your-azure-cloud-service"></a>新增要在 Azure 雲端服務中使用的自訂設定
-服務組態檔中的自訂設定可讓您為特定服務組態的字串新增名稱和值。 您可以藉由讀取設定的值並使用該值控制程式碼中的邏輯，即可選擇使用此設定在您的雲端服務中設定功能。 您可以變更這些服務組態值，而不需要重建服務封裝或在雲端服務執行時。 您的程式碼可以檢查設定變更時的通知。 請參閱 [RoleEnvironment.Changing 事件](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.changing.aspx)。
+服務組態檔中的自訂設定可讓您為特定服務組態的字串新增名稱和值。 您可以藉由讀取設定的值並使用該值控制程式碼中的邏輯，即可選擇使用此設定在您的雲端服務中設定功能。 您可以變更這些服務組態值，而不需要重建服務封裝或在雲端服務執行時。 您的程式碼可以檢查設定變更時的通知。 請參閱 [RoleEnvironment.Changing 事件](/previous-versions/azure/reference/ee758134(v=azure.100))。
 
 您可以新增、移除或修改服務組態的自訂設定。 針對不同的服務組態，您可能會想要這些連接字串的不同值。
 
@@ -269,4 +269,4 @@ using (FileStream writeStream = File.Create(filePath))
 1. 當 [Windows 檔案總管] 視窗開啟時，請在 [搜尋]**** 文字方塊中輸入 `MyLocalStorageTest.txt`，然後選取 **Enter** 開始搜尋。
 
 ## <a name="next-steps"></a>後續步驟
-藉由參閱 [設定 Azure 專案](vs-azure-tools-configuring-an-azure-project.md)深入了解 Visual Studio 中的 Azure 專案。 藉由參閱 [結構描述參考](https://msdn.microsoft.com/library/azure/dd179398)深入了解雲端服務結構描述。
+藉由參閱 [設定 Azure 專案](vs-azure-tools-configuring-an-azure-project.md)深入了解 Visual Studio 中的 Azure 專案。 藉由參閱 [結構描述參考](/previous-versions/azure/dd179398(v=azure.100))深入了解雲端服務結構描述。

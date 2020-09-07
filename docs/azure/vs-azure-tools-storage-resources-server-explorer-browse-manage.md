@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 1a36dc743108d2cfbf9e5405af727b79aeda4808
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8702b9814214a902a644cc5854250b600c301caa
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800472"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508440"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>使用伺服器總管來瀏覽及管理儲存體資源
 
@@ -126,7 +126,7 @@ Blob 資料會在本機快取，並在 Azure Blob 儲存體中針對 blob 的上
 
 如果您使用 Azure 診斷記錄來自 Azure 應用程式的資料，且您已將記錄傳輸至您的儲存體帳戶，您會看到 Azure 為這些記錄所建立的容器。 在 [伺服器總管] 中檢視這些記錄是利用應用程式識別問題的簡單方法，尤其是在應用程式部署至 Azure 時。
 
-如需 Azure 診斷的詳細資訊，請參閱 [使用 Azure 診斷收集記錄資料](https://msdn.microsoft.com/library/azure/gg433048.aspx)。
+如需 Azure 診斷的詳細資訊，請參閱 [使用 Azure 診斷收集記錄資料](/azure/cloud-services/cloud-services-dotnet-diagnostics)。
 
 ### <a name="to-get-the-url-for-a-blob"></a>取得 blob 的 URL
 
@@ -262,7 +262,7 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
    ![建立 Azure 儲存體帳戶](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. 選取 [建立]  。
+1. 選取 [建立]。
 
 新的儲存體帳戶會出現在 [方案總管] 中的 [儲存體] **** 清單。
 
@@ -275,7 +275,7 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
    * 您想要連結的現有儲存體帳戶名稱。
    * 選取之儲存體帳戶的金鑰。 當您選取儲存體帳戶時，通常會提供這個值給您。 如果您想要 Visual Studio 記住儲存體帳戶金鑰，請選取 [記住帳戶金鑰]**** 核取方塊。
-   * 要用於連接至儲存體帳戶的通訊協定，例如 HTTP、HTTPS 或自訂端點。 如需有關自訂端點的詳細資訊，請參閱[如何設定連接字串](https://msdn.microsoft.com/library/azure/ee758697.aspx) 。
+   * 要用於連接至儲存體帳戶的通訊協定，例如 HTTP、HTTPS 或自訂端點。 如需有關自訂端點的詳細資訊，請參閱[如何設定連接字串](/azure/storage/common/storage-configure-connection-string) 。
 
 ### <a name="to-view-the-secondary-endpoints"></a>檢視次要端點
 

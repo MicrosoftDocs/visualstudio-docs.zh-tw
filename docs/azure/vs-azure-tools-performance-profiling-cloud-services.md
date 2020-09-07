@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 04e3ee89498447f7743fc1b5119e129f046b4fcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c92a2bb2349f1b5543672d7ecd944e3d82bb500
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911785"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508427"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>測試雲端服務的效能
 ## <a name="overview"></a>概觀
@@ -54,7 +54,7 @@ ms.locfileid: "72911785"
 ## <a name="profiling-a-cloud-service-in-azure"></a>在 Azure 中分析雲端服務
 當您從 Visual Studio 發佈雲端服務時，您可以分析服務並指定可提供您想要的資訊的分析設定。 對每個角色的執行個體啟動分析工作階段。 如需有關如何從 Visual Studio 發佈服務的詳細資訊，請參閱 [從 Visual Studio 發佈至 Azure 雲端服務](vs-azure-tools-publishing-a-cloud-service.md)。
 
-若要了解有關 Visual Studio 中的效能分析的詳細資訊，請參閱[效能分析的初學者指南](https://msdn.microsoft.com/library/azure/ms182372.aspx)和[使用分析工具來分析應用程式效能](https://msdn.microsoft.com/library/azure/z9z62c29.aspx)。
+若要了解有關 Visual Studio 中的效能分析的詳細資訊，請參閱[效能分析的初學者指南](../profiling/beginners-guide-to-performance-profiling.md)和[使用分析工具來分析應用程式效能](../profiling/performance-explorer.md)。
 
 > [!NOTE]
 > 發佈雲端服務時，您可以啟用 IntelliTrace 或分析。 您不能同時啟用。
@@ -68,7 +68,7 @@ ms.locfileid: "72911785"
 * **檢測** - 這個方法會收集詳細的時間資料，對重點分析以及分析輸入/輸出效能問題非常實用。 檢測方法會在執行分析期間記錄模組中函式的每個進入、結束和函式呼叫。 這個方法適合用來收集關於您的程式碼的某個區段的詳細時間資訊，以及了解輸入和輸出作業對應用程式效能的影響。 執行 32 位元作業系統的電腦會停用這個方法。 只有當您在 Azure 中 (而不是在本機計算模擬器中) 執行雲端服務時，此選項才可供使用。
 * **.NET 記憶體配置** - 這個方法會使用取樣分析方法收集 .NET Framework 記憶體配置資料。 收集的資料包含配置的物件的數目和大小。
 * **並行** - 這個方法會收集資源爭用資料，以及處理序與執行緒執行資料，對於分析多執行緒及多處理序的應用程式很實用。 並行方法會收集封鎖您的程式碼執行的每個事件的資料，例如當執行緒等候對應用程式資源的鎖定存取被釋放。 這個方法對於分析多執行緒應用程式很實用。
-* 您也可以啟用 **階層互動分析**，提供有關一或多個資料庫通訊的多層式應用程式中的函式中同步 ADO.NET 呼叫執行時間的其他資訊。 您可以使用任何分析方法收集階層互動資料。 如需有關階層互動分析的詳細資訊，請參閱 [階層互動檢視](https://msdn.microsoft.com/library/azure/dd557764.aspx)。
+* 您也可以啟用 **階層互動分析**，提供有關一或多個資料庫通訊的多層式應用程式中的函式中同步 ADO.NET 呼叫執行時間的其他資訊。 您可以使用任何分析方法收集階層互動資料。 如需有關階層互動分析的詳細資訊，請參閱 [階層互動檢視](../profiling/tier-interactions-view.md)。
 
 ## <a name="configuring-profiling-settings"></a>設定分析設定
 下圖顯示如何從 [發佈 Azure 應用程式] 對話方塊中設定分析設定。
@@ -102,7 +102,7 @@ ms.locfileid: "72911785"
 3. 若要檢視執行個體的分析報告，請在服務中選擇角色，然後開啟特定執行個體的捷徑功能表並選擇 [**檢視分析報告**]。
 
     現在便會從 Azure 下載 .vsp 檔案的報告，而下載狀態會出現在 Azure 活動記錄檔中。 下載完成時，分析報告會顯示在 Visual Studio 編輯器的索引標籤中，名為  <角色名稱\><執行個體號碼\>**<識別碼\>.vsp。 報告的摘要資料隨即出現。
-4. 若要顯示報告的不同檢視，在 [目前檢視] 清單中，選擇您要的檢視類型。 如需詳細資訊，請參閱 [分析工具報告檢視](https://msdn.microsoft.com/library/azure/bb385755.aspx)。
+4. 若要顯示報告的不同檢視，在 [目前檢視] 清單中，選擇您要的檢視類型。 如需詳細資訊，請參閱 [分析工具報告檢視](../profiling/performance-report-views.md)。
 
 ## <a name="next-steps"></a>後續步驟
 [偵錯雲端服務](vs-azure-tools-debug-cloud-services-virtual-machines.md)

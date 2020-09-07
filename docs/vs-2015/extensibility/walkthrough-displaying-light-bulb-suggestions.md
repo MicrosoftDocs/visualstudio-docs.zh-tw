@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：Displaying Light Bulb Suggestions |Microsoft Docs
+title: 逐步解說：顯示燈泡建議 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,54 +8,54 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8f135247241e8cf441cba2c1f63984dc69f7114c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e95466094f15b4fa166bfdb20c85836da32df96
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438151"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508583"
 ---
-# <a name="walkthrough-displaying-light-bulb-suggestions"></a>逐步解說：顯示燈泡建議
+# <a name="walkthrough-displaying-light-bulb-suggestions"></a>逐步解說︰顯示燈泡建議
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-燈泡是 Visual Studio 編輯器中所使用的圖示展開以顯示一組動作，例如修正程式的內建的程式碼分析器或重構程式碼所識別的問題。  
+Light 燈泡是 Visual Studio 編輯器中使用的圖示，可展開以顯示一組動作，例如修正內建程式碼分析器或程式碼重構所識別的問題。  
   
- 在 Visual C# 和 Visual Basic 編輯器中，您也可以撰寫和封裝您自己的程式碼分析器會自動顯示燈泡動作，以使用.NET 編譯器平台 ("Roslyn")。 如需詳細資訊，請參閱:  
+ 在 Visual c # 和 Visual Basic 編輯器中，您也可以使用 .NET Compiler Platform ( "Roslyn" ) 撰寫和封裝您自己的程式碼分析器，並顯示自動顯示燈泡的動作。 如需詳細資訊，請參閱：  
   
-- [如何：寫入C#診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [如何：撰寫 c # 診斷和程式碼修正](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)  
   
-- [如何：撰寫 Visual Basic 診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [How To：撰寫 Visual Basic 診斷和程式碼修正](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix.md)  
   
-  其他語言，例如C++也提供一些快速的動作，例如建立該函式的虛設常式實作的建議燈泡。  
+  其他語言（例如 c + +）也會提供一些快速動作的燈光燈泡，例如建立該函式之存根執行的建議。  
   
-  以下是燈泡的樣貌。 在 Visual Basic 或 Visual C# 專案中，紅色波浪線會出現在變數名稱無效時。 當您將滑鼠移無效的識別項時，燈泡會顯示游標周圍。  
+  燈泡如下所示。 在 Visual Basic 或 Visual c # 專案中，如果變數名稱無效，則會出現紅色波浪線。 當您將滑鼠指標移到不正確識別碼上方時，游標附近會顯示燈泡。  
   
   ![燈泡](../extensibility/media/lightbulb.png "燈泡")  
   
-  如果您按一下燈泡向下箭號，一組建議的動作會顯示，以及 預覽選取的動作。 在此情況下，它會顯示如果您執行此動作會對您的程式碼的變更。  
+  如果您按一下燈泡的向下箭號，則會顯示一組建議的動作，以及所選動作的預覽。 在此情況下，它會顯示當您執行動作時，將對您的程式碼進行的變更。  
   
   ![燈泡預覽](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
-  您可以使用燈泡，提供您自己的建議的動作。 比方說，您可以提供要移動開啟至新的一行的大括號，或將它們移至前一行結尾的動作。 下列逐步解說將示範如何建立燈泡出現在目前的字組，並有兩個建議的動作：**轉換為大寫**並**轉換為小寫**。  
+  您可以使用 light 燈泡來提供您自己的建議動作。 例如，您可以提供動作將左大括弧移至新行，或將它們移至上一行的結尾。 下列逐步解說示範如何建立顯示在目前單字上的燈泡，並有兩個建議的動作： [ **轉換為大寫** ] 和 [ **轉換為小寫**]。  
   
 ## <a name="prerequisites"></a>必要條件  
- 從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+ 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF)  
   
-1. 建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為 `LightBulbTest`。  
+1. 建立 c # VSIX 專案。  (在 [ **新增專案** ] 對話方塊中，選取 [ **Visual c #/** 擴充性]，然後選取 [ **VSIX 專案**]。 ) 為方案命名 `LightBulbTest` 。  
   
-2. 新增**編輯器分類器**項目範本加入專案。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
+2. 將 **編輯器分類** 專案範本加入至專案。 如需詳細資訊，請參閱 [使用編輯器專案範本建立延伸](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
 3. 刪除現有類別檔案。  
   
-4. 新增下列參考加入專案，並將**複製到本機**到`False`:  
+4. 將下列參考加入至專案，並將 [ **複製到本機** ] 設定為 `False` ：  
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-5. 加入新的類別檔案並將它命名**LightBulbTest**。  
+5. 加入新的類別檔案，並將它命名為 **LightBulbTest**。  
   
-6. 新增下列 using 陳述式：  
+6. 加入下列 using 陳述式：  
   
     ```csharp  
     using System;  
@@ -72,9 +72,9 @@ ms.locfileid: "63438151"
   
     ```  
   
-## <a name="implementing-the-light-bulb-source-provider"></a>實作燈泡來源提供者  
+## <a name="implementing-the-light-bulb-source-provider"></a>執行燈泡來源提供者  
   
-1. 在 LightBulbTest.cs 類別檔案中，刪除 LightBulbTest 類別。 新增名為類別**TestSuggestedActionsSourceProvider**實作<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>。 匯出名稱為**測試建議的動作**和<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>為"text"。  
+1. 在 LightBulbTest.cs 類別檔案中，刪除 LightBulbTest 類別。 加入一個名為 **TestSuggestedActionsSourceProvider** 的類別，它會執行 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> 。 將其匯出為 **測試建議的動作** 名稱和 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text"。  
   
     ```csharp  
     [Export(typeof(ISuggestedActionsSourceProvider))]  
@@ -83,14 +83,14 @@ ms.locfileid: "63438151"
     internal class TestSuggestedActionsSourceProvider : ISuggestedActionsSourceProvider  
     ```  
   
-2. 內部來源提供者類別中，匯入<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>並將它新增為屬性。  
+2. 在來源提供者類別中，匯入， <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> 並將它加入做為屬性。  
   
     ```csharp  
     [Import(typeof(ITextStructureNavigatorSelectorService))]  
     internal ITextStructureNavigatorSelectorService NavigatorService { get; set; }  
     ```  
   
-3. 實作<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider.CreateSuggestedActionsSource%2A>方法來傳回<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>物件。 我們將討論在下一節中的來源。  
+3. 執行 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider.CreateSuggestedActionsSource%2A> 方法以傳回 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> 物件。 我們將在下一節討論來源。  
   
     ```csharp  
     public ISuggestedActionsSource CreateSuggestedActionsSource(ITextView textView, ITextBuffer textBuffer)  
@@ -103,16 +103,16 @@ ms.locfileid: "63438151"
     }  
     ```  
   
-## <a name="implementing-the-isuggestedactionsource"></a>實作 ISuggestedActionSource  
- 建議的動作來源負責收集一組建議的動作，然後將它們加入正確的內容中。 在此情況下的內容是目前的文字和建議的動作**UpperCaseSuggestedAction**並**LowerCaseSuggestedAction**，會在下一節中討論。  
+## <a name="implementing-the-isuggestedactionsource"></a>執行 ISuggestedActionSource  
+ 建議的動作來源負責收集建議的動作集合，並將其新增至正確的內容。 在此情況下，內容就是目前的文字，而建議的動作為 **UpperCaseSuggestedAction** 和 **LowerCaseSuggestedAction**，我們將在下一節中討論。  
   
-1. 加入類別**TestSuggestedActionsSource**實作<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>。  
+1. 加入執行的類別 **TestSuggestedActionsSource** <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> 。  
   
     ```csharp  
     internal class TestSuggestedActionsSource : ISuggestedActionsSource  
     ```  
   
-2. 加入私用的唯讀欄位的建議的動作的來源提供者、 文字緩衝區和文字檢視。  
+2. 為建議的動作來源提供者、文字緩衝區和文字視圖新增私用唯讀欄位。  
   
     ```csharp  
     private readonly TestSuggestedActionsSourceProvider m_factory;  
@@ -120,7 +120,7 @@ ms.locfileid: "63438151"
     private readonly ITextView m_textView;  
     ```  
   
-3. 新增設定私用欄位的建構函式。  
+3. 加入設定私用欄位的函式。  
   
     ```csharp  
     public TestSuggestedActionsSource(TestSuggestedActionsSourceProvider testSuggestedActionsSourceProvider, ITextView textView, ITextBuffer textBuffer)  
@@ -131,7 +131,7 @@ ms.locfileid: "63438151"
     }  
     ```  
   
-4. 加入私用的方法會傳回目前正在進行的資料指標的文字。 下列方法會查看目前的游標位置，並要求的文字範圍的文字結構導覽器。 如果游標位於上一個字，請<xref:Microsoft.VisualStudio.Text.Operations.TextExtent>在 out 參數中傳回，否則為`out`參數是`null`且方法會傳回`false`。  
+4. 加入私用方法，這個方法會傳回目前在游標下的文字。 下列方法會查看游標的目前位置，並要求文字結構導覽器提供單字的範圍。 如果資料指標位於單字上，則 <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> 會在 out 參數中傳回，否則 `out` 參數為 `null` ，而且方法會傳回 `false` 。  
   
     ```csharp  
     private bool TryGetWordUnderCaret(out TextExtent wordExtent)  
@@ -156,9 +156,9 @@ ms.locfileid: "63438151"
     }  
     ```  
   
-5. 實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.HasSuggestedActionsAsync%2A> 方法。 編輯器會呼叫這個方法，以了解是否要顯示燈泡。 此呼叫通常，例如每次您將游標從一行移到另一個，或當滑鼠停留在錯誤波浪線。 這是為了讓其他的 UI 作業執行，而這個方法使用非同步的。 因此這個方法只需要執行某些剖析和分析目前的行大部分的情況下，處理可能需要一些時間。  
+5. 實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.HasSuggestedActionsAsync%2A> 方法。 編輯器會呼叫這個方法，以找出是否要顯示燈泡。 這項呼叫很常發生，例如每次游標從一行移到另一行時，或是當滑鼠停留在錯誤波浪線上時。 它是非同步，可讓其他 UI 作業在此方法運作時繼續執行。 在大多數情況下，這個方法需要執行一些剖析和分析目前的程式碼，因此處理可能需要一些時間。  
   
-     在我們的實作它以非同步方式取得<xref:Microsoft.VisualStudio.Text.Operations.TextExtent>和判斷範圍是否有意義的亦即，是否有一些非空白字元的文字。  
+     在我們的執行中，它會以非同步方式取得， <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> 並判斷範圍是否很重要，也就是是否有某些文字不是空白字元。  
   
     ```csharp  
     public Task<bool> HasSuggestedActionsAsync(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)  
@@ -176,10 +176,10 @@ ms.locfileid: "63438151"
     }  
     ```  
   
-6. 實作<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A>方法，以傳回的陣列<xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet>物件都包含不同<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>物件。 展開燈泡時，會呼叫這個方法。  
+6. 執行 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> 方法，這個方法 <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> 會傳回包含不同物件的物件陣列 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> 。 展開燈泡時，會呼叫這個方法。  
   
     > [!WARNING]
-    > 您應該確定的實作`HasSuggestedActionsAsync()`並`GetSuggestedActions()`是一致的; 也就是說，如果`HasSuggestedActionsAsync()`會傳回`true`，然後`GetSuggestedActions()`應該有一些動作，才能顯示。 在許多情況下`HasSuggestedActionsAsync()`之前呼叫`GetSuggestedActions()`，但不一定如此。 例如，如果使用者叫用燈泡動作，藉由按下 (CTRL +。) 只`GetSuggestedActions()`呼叫。  
+    > 您應確定和的實 `HasSuggestedActionsAsync()` `GetSuggestedActions()` 作為一致; 也就是說，如果傳回 `HasSuggestedActionsAsync()` `true` ，則 `GetSuggestedActions()` 應該有一些要顯示的動作。 在許多情況下 `HasSuggestedActionsAsync()` ，只會呼叫之前 `GetSuggestedActions()` 的，但不一定都是如此。 例如，如果使用者按 (CTRL + 叫用燈泡動作， `GetSuggestedActions()` 則只會呼叫 ) 。  
   
     ```csharp  
     public IEnumerable<SuggestedActionSet> GetSuggestedActions(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)  
@@ -196,13 +196,13 @@ ms.locfileid: "63438151"
     }   
     ```  
   
-7. 定義`SuggestedActionsChanged`事件。  
+7. 定義 `SuggestedActionsChanged` 事件。  
   
     ```csharp  
     public event EventHandler<EventArgs> SuggestedActionsChanged;  
     ```  
   
-8. 若要完成實作，將新增實作`Dispose()`和`TryGetTelemetryId()`方法。 我們不打算進行遙測，因此只會傳回 false 而設定 GUID 為空白。  
+8. 若要完成此程式，請加入 `Dispose()` 和方法的執行 `TryGetTelemetryId()` 。 我們不想要進行遙測，因此只會傳回 false，並將 GUID 設為空白。  
   
     ```csharp  
     public void Dispose()  
@@ -217,9 +217,9 @@ ms.locfileid: "63438151"
     }  
     ```  
   
-## <a name="implementing-light-bulb-actions"></a>實作的燈泡動作  
+## <a name="implementing-light-bulb-actions"></a>執行燈泡動作  
   
-1. 在專案中，新增 Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll 和集合的參考**複製到本機**至`False`。  
+1. 在專案中加入 Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll 的參考，並將 [ **複製到本機** ] 設定為 `False` 。  
   
 2. 建立兩個類別：第一個命名為 `UpperCaseSuggestedAction` ，第二個則命名為 `LowerCaseSuggestedAction`。 這兩個類別都會實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>。  
   
@@ -230,7 +230,7 @@ ms.locfileid: "63438151"
   
      這兩個類別相同，差別在於其中一個會呼叫 <xref:System.String.ToUpper%2A>，另一個會呼叫 <xref:System.String.ToLower%2A>。 下列步驟僅涵蓋大寫動作類別，但您必須實作這兩個類別。 使用實作大寫動作的步驟，作為實作小寫動作的模式。  
   
-3. 新增下列 using 陳述式，這些類別：  
+3. 針對這些類別新增下列 using 語句：  
   
     ```csharp  
     using Microsoft.VisualStudio.Imaging.Interop;  
@@ -262,7 +262,7 @@ ms.locfileid: "63438151"
     }  
     ```  
   
-6. 實作<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetPreviewAsync%2A>方法，因此它會顯示動作預覽。  
+6. 執行 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetPreviewAsync%2A> 方法，讓它顯示動作預覽。  
   
     ```csharp  
     public Task<object> GetPreviewAsync(CancellationToken cancellationToken)  
@@ -274,7 +274,7 @@ ms.locfileid: "63438151"
     }  
     ```  
   
-7. 實作<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetActionSetsAsync%2A>方法，讓它傳回空<xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet>列舉型別。  
+7. 執行 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetActionSetsAsync%2A> 方法，讓它傳回空 <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> 列舉。  
   
     ```csharp  
     public Task<IEnumerable<SuggestedActionSet>> GetActionSetsAsync(CancellationToken cancellationToken)  
@@ -328,9 +328,9 @@ ms.locfileid: "63438151"
     ```  
   
     > [!WARNING]
-    > 燈泡動作**Invoke**方法不應該顯示 UI。  如果您的動作會啟動新的使用者介面 （例如預覽 或 選取項目 對話方塊），不會顯示直接從 UI **Invoke**方法，但改為排程後傳回從顯示您的 UI **Invoke**.  
+    > 燈泡 **動作叫** 用方法不應該顯示 UI。  如果您的動作會顯示新的 UI (例如預覽或選取對話方塊) ，請勿直接從叫 **用方法內** 顯示 ui，而是在從 **invoke**傳回之後，改為顯示您的 ui。  
   
-10. 若要完成實作，新增`Dispose()`和`TryGetTelemetryId()`方法。  
+10. 若要完成此執行，請新增 `Dispose()` 和 `TryGetTelemetryId()` 方法。  
   
     ```csharp  
     public void Dispose()  
@@ -345,22 +345,22 @@ ms.locfileid: "63438151"
     }  
     ```  
   
-11. 別忘了進行相同的動作`LowerCaseSuggestedAction`變更的顯示文字 「 轉換 '{0}' 為小寫"和呼叫<xref:System.String.ToUpper%2A>至<xref:System.String.ToLower%2A>。  
+11. 別忘了將 `LowerCaseSuggestedAction` 顯示文字變更為「將 ' 轉換成 {0} 小寫」以及呼叫 <xref:System.String.ToUpper%2A> <xref:System.String.ToLower%2A> 。  
   
 ## <a name="building-and-testing-the-code"></a>建置和測試程式碼  
- 若要測試此程式碼，建置 LightBulbTest 方案，並在實驗執行個體中執行它。  
+ 若要測試此程式碼，請建立 LightBulbTest 方案，並在實驗實例中執行它。  
   
 1. 建置方案。  
   
 2. 當您在偵錯工具中執行這個專案時，會具現化第二個 Visual Studio 執行個體。  
   
-3. 建立文字檔，並輸入一些文字。 您應該會看到文字的左邊的燈泡。  
+3. 建立文字檔，並輸入一些文字。 您應該會在文字左方看到燈泡。  
   
      ![測試燈泡](../extensibility/media/testlightbulb.png "TestLIghtBulb")  
   
 4. 指向燈泡。 您應該會看到向下箭號。  
   
-5. 當您按一下燈泡時，兩個建議的動作應該會顯示，以及所選動作的預覽。  
+5. 當您按一下燈泡時，應該會顯示兩個建議的動作，以及所選動作的預覽。  
   
      ![測試燈泡，已展開](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   

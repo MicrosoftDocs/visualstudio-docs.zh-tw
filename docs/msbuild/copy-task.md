@@ -21,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28fd0033f5ef6f83ca29432f95d6b635fcd36116
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c298658c7e9f385e5140ea46f8069512c0bf278
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634366"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508037"
 ---
 # <a name="copy-task"></a>Copy 工作
 
@@ -42,7 +42,7 @@ ms.locfileid: "77634366"
 |`DestinationFiles`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要將來源檔案複製到其中的檔案清單。 此清單與 `SourceFiles` 參數中指定的清單應該是一對一對應。 也就是，會將 `SourceFiles` 中指定的第一個檔案複製到 `DestinationFiles` 中指定的第一個位置，依此類推。|
 |`DestinationFolder`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要將檔案複製至其中的目錄。 這必須是目錄，而非檔案。 如果目錄不存在，即會自動建立。|
 |`OverwriteReadOnlyFiles`|選擇性的 `Boolean` 參數。<br /><br /> 即使已將檔案標示為唯讀檔案，還是會覆寫它們|
-|`Retries`|選擇性的 `Int32` 參數。<br /><br /> 指定如果所有先前的嘗試均失敗，要嘗試複製多少次。 預設值為零。<br /><br /> **注意︰** 使用重試，可以為建置流程中的同步處理問題設定遮罩。|
+|`Retries`|選擇性的 `Int32` 參數。<br /><br /> 指定如果所有先前的嘗試均失敗，要嘗試複製多少次。 預設值為零。<br /><br /> **注意：** 使用重試可能會遮罩組建程式中的同步處理問題。<br /><br /> **注意：** 當工作 *預設值* 為零次重試時，工作的使用通常會傳遞， `$(CopyRetryCount)` 預設為非零。|
 |`RetryDelayMilliseconds`|選擇性的 `Int32` 參數。<br /><br /> 指定任何必要重試之間的延遲。 預設值為 RetryDelayMillisecondsDefault 引數，其會傳遞至 CopyTask 建構函式。|
 |`SkipUnchangedFiles`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，即會略過複製來源與目的地之間未變更的檔案。 如果檔案具有相同的大小和相同的上次修改時間，`Copy` 工作即會將檔案視為未變更。 <br /><br /> **注意︰** 如果您將此參數設為 `true`，您應該在包含目標上使用相依性分析，因為只有在來源檔案的上次修改時間比目的地檔案的上次修改時間還新時，才會執行此工作。|
 |`SourceFiles`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要複製的檔案。|
