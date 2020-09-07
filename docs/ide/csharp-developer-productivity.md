@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0aa8e19f2be78671587dd1d9bc6254306c82a78c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6cf9e1c3f0011a282048939a994e47b897a314b
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567498"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509935"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>適用於 C# 開發人員的 Visual Studio 生產力指南
 
@@ -41,7 +41,7 @@ ms.locfileid: "75567498"
 
 以下是常用的 Visual Studio 快速鍵：
 
-| 快速鍵 (所有設定檔) | 命令 | 說明 |
+| 快速鍵 (所有設定檔) | Command | 描述 |
 |-|-|-|
 | **Ctrl** +**T** | 移至全部 | 巡覽至任何檔案、類型、成員或符號宣告 |
 | **F12** (也**Ctrl** + **按 Ctrl 按一下**)  | 移至定義 | 巡覽至定義符號的位置 |
@@ -139,7 +139,7 @@ Visual Studio 提供許多重構、程式碼產生動作，以及程式碼修正
 
 如需詳細資訊，請參閱程式 [代碼產生功能](code-generation-in-visual-studio.md)。
 
-您可以[安裝 FxCop 分析器](../code-quality/install-fxcop-analyzers.md)來將程式碼問題加上旗標。 或，使用 [Roslyn 分析器](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix) \(英文\) 撰寫您自己的重構或程式碼修正。
+您可以[安裝 FxCop 分析器](../code-quality/install-fxcop-analyzers.md)來將程式碼問題加上旗標。 或，使用 [Roslyn 分析器](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix.md) \(英文\) 撰寫您自己的重構或程式碼修正。
 
 數個社群成員撰寫了新增額外程式碼檢查的免費延伸模組：
 

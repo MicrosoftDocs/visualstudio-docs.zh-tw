@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcb1165ea00d407f5b4840358cc270eb299ba198
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb985a6482b76b79604ce58f85e7f8cf3e83e97c
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82586224"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509896"
 ---
 # <a name="maintainability-warnings"></a>維護性警告
 
@@ -27,12 +27,10 @@ ms.locfileid: "82586224"
 
 ## <a name="in-this-section"></a>本節內容
 
-| 規則 | 說明 |
+| 規則 | 描述 |
 |-----------|-----------------------------------|
-| [CA1500:變數名稱不應該與欄位名稱相符](../code-quality/ca1500.md) | 實例方法宣告的參數或區域變數的名稱符合宣告類型的實例欄位，因而導致錯誤。 |
 | [CA1501:避免在物件間過度繼承](../code-quality/ca1501.md) | 類型在其繼承階層架構 (Inheritance Hierarchy) 中超過四個層級的深度。 太深的巢狀類型階層架構可能會難以依循、了解和維護。 |
 | [CA1502:避免造成過度複雜的方法](../code-quality/ca1502.md) | 這個規則會測量整個方法中線性獨立路徑的數目，此數目是由條件分支的數目與複雜度決定。 |
-| [CA1504:必須檢閱可能造成誤導的欄位名稱](../code-quality/ca1504.md) | 實例欄位的名稱開頭為 "s_"，或) 欄位中共用的靜態 (名稱以 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] "m_" 開頭。 |
 | [CA1505:應避免撰寫無法維護的程式碼](../code-quality/ca1505.md) | 類型或方法的維護性指標值很低。 維護性指標很低代表類型或方法很可能會難以維護，而應該列為需要重新設計的候選目標。 |
 | [CA1506:應避免使用結合過度的類別](../code-quality/ca1506.md) | 這個規則會測量類別的耦合，方法是計算類型或方法包含的唯一類型參考數目。 |
 | [CA1507:使用 nameof 取代字串](../code-quality/ca1507.md) | 字串常值會用來做為可使用運算式的引數 `nameof` 。 |

@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 08/04/2020
 ms.topic: how-to
 description: 了解有關隨附於所選 Visual Studio 訂用帳戶的 Pluralsight 訓練課程訂用帳戶。
-ms.openlocfilehash: 85001d4473e504bd149a1cd1402a9f4dd01f2a13
-ms.sourcegitcommit: 1d74273a50ede5a90d9d64372d93aad357daef42
+ms.openlocfilehash: 87cc42e2a0d4c8c95c771a88413b4a8af70bdc14
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89365866"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509753"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Pluralsight 訓練課程權益
 
@@ -27,6 +27,7 @@ ms.locfileid: "89365866"
    > [!div class="mx-imgBorder"]
    > ![Pluralsight 權益磚](_img/vs-pluralsight/vs-pluralsight-tile.png "按一下 [啟用] 索取您的權益")
 
+ (上面的圖格就是 Visual Studio Enterprise 訂閱者將會看到的內容範例。  如果您使用不同的 Visual Studio 訂用帳戶，Pluralsight 權益的持續時間會有所不同。  如需詳細資訊，請參閱資格資料表。 ) 
 1. 系統會將您重新導向至 Visual Studio 訂閱隨附的 Pluralsight 權益頁面。
    - 在表單中提供要求的連絡資訊
    - 按一下核取方塊以接受使用條款

@@ -5,12 +5,12 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 50d1ed4edd2e1fa52661995f4d72466646dfd879
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9fc83ac1be1a6c1db7b46845c74a4b0e7bf6017f
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250518"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509922"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>如何提高修正效能問題的機會
 
@@ -171,7 +171,7 @@ VS 會有一段很長的時間沒有回應。
 
 **Advanced Performance 追蹤**
 
-在大部分的案例中，「報表-問題」工具中的追蹤集合功能已足夠。 但有時候需要更充分掌控追蹤收集 (例如，具有較大緩衝區大小的追蹤) ，在此情況下，PerfView 是很棒的工具可供使用。 使用 PerfView 工具手動錄製效能追蹤的步驟，可以在 [ [使用 PerfView 錄製效能](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView) 追蹤] 頁面上找到。
+在大部分的案例中，「報表-問題」工具中的追蹤集合功能已足夠。 但有時候需要更充分掌控追蹤收集 (例如，具有較大緩衝區大小的追蹤) ，在此情況下，PerfView 是很棒的工具可供使用。 使用 PerfView 工具手動錄製效能追蹤的步驟，可以在 [ [使用 PerfView 錄製效能](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Recording-performance-traces-with-PerfView.md) 追蹤] 頁面上找到。
 
 ## <a name="out-of-process-issues"></a>跨進程問題
 

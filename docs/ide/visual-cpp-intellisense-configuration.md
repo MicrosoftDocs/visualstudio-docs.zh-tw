@@ -7,12 +7,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 610f3d92d86e227973be9c481adaf830d3d16737
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77279308"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509883"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>設定 C++ IntelliSense 專案
 
@@ -118,7 +118,7 @@ Visual Studio to investigate.
 
 如果您將環境變數 TRACEDESIGNTIME 設定為 true，然後重新啟動 Visual Studio，您將會在 %TEMP% 目錄中看見記錄檔，它可能可以協助診斷組建失敗。
 
-若要深入了解 TRACEDESIGNTIME 環境變數，請參閱 [Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors) \(英文\) 與[常見專案系統](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md) \(英文\)。 這些文章中的資訊皆與 C++ 專案相關。
+若要深入了解 TRACEDESIGNTIME 環境變數，請參閱 [Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Diagnosing-Project-System-Build-Errors.md) \(英文\) 與[常見專案系統](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md) \(英文\)。 這些文章中的資訊皆與 C++ 專案相關。
 
 ## <a name="see-also"></a>另請參閱
 

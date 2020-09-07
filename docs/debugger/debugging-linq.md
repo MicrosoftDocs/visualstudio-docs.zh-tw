@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 256dadfeea4108f12e24864017b6e1752ece25a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 146519b33be19da1103aed958e42ec5ffaee8bd0
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738195"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509766"
 ---
 # <a name="debugging-linq"></a>偵錯 LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]會支援對 Language-Integrated Query (LINQ) 程式碼進行偵錯，但有一些限制。 大部分偵錯功能都可以與 LINQ 陳述式一起運作，包括逐步執行、設定中斷點，以及在偵錯工具視窗中檢視結果。 本主題將描述 LINQ 偵錯的主要限制。
@@ -105,7 +105,7 @@ End Function
  修訂的查詢每回會透過 `IsEven` 呼叫函式 `items`。 您可以使用偵錯工具視窗查看每個項目是否符合指定狀況，而且可以逐步執行 `IsEven` 中的程式碼。 這個範例中的述詞相當簡單。 但是，當您必須偵錯更為複雜的述詞時，這個技巧就很好用。
 
 ## <a name="edit-and-continue-not-supported-for-linq"></a><a name="BKMK_EditandContinueNotSupportedforLINQ"></a> LINQ 不支援編輯後繼續
- [編輯後繼續] 支援對 LINQ 查詢的變更，但有限制。 如需詳細資訊，請參閱 [EnC 支援的變更](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)) 
+ [編輯後繼續] 支援對 LINQ 查詢的變更，但有限制。 如需詳細資訊，請參閱 [EnC 支援的變更](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)
 
 ## <a name="see-also"></a>另請參閱
 

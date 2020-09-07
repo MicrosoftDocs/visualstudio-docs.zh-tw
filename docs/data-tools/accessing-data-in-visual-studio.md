@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7c7aa1544f998a88424c0087fadceab63757d23b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36fc3d3fd0b002c110e9184a6d7b15c9fa367c48
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77272083"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509831"
 ---
 # <a name="work-with-data-in-visual-studio"></a>在 Visual Studio 中使用資料
 
@@ -89,7 +89,7 @@ ms.locfileid: "77272083"
 
 如需與 ASP.NET 相關的資料存取檔，請參閱使用 ASP.NET 網站上的 [資料](https://www.asp.net/web-forms/overview/presenting-and-managing-data) 。 如需搭配使用 Entity Framework 與 ASP.NET MVC 的教學課程，請參閱使用 [mvc 5 的 Entity Framework 6 Code First 消費者入門](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
 
-通用 Windows 平臺 (以 c # 或 Visual Basic 使用的 UWP) 應用程式，可以使用 Microsoft Azure SDK for .NET 來存取 Azure 儲存體和其他 Azure 服務。 HttpClient 類別可讓您與任何 RESTful 服務進行通訊。 如需詳細資訊，請參閱 [如何使用 HTTP.sys 連接至 HTTP 伺服器](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx)。
+通用 Windows 平臺 (以 c # 或 Visual Basic 使用的 UWP) 應用程式，可以使用 Microsoft Azure SDK for .NET 來存取 Azure 儲存體和其他 Azure 服務。 HttpClient 類別可讓您與任何 RESTful 服務進行通訊。 如需詳細資訊，請參閱 [如何使用 HTTP.sys 連接至 HTTP 伺服器](/previous-versions/windows/apps/dn469430(v=win.10))。
 
 若為本機電腦上的資料存放區，建議的方法是使用 SQLite，此程式會在與應用程式相同的進程中執行。 如果需要 (ORM) 層的物件關聯式對應，您可以使用 Entity Framework。 如需詳細資訊，請參閱 Windows 開發人員中心的 [資料存取](/windows/uwp/data-access/index) 。
 

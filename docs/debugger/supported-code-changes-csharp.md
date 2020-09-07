@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44881035da14483c3ddf1f4c48cb3957a1ce8b50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c480fad064cad602ea3fd19153d53f0276815d30
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72729094"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509415"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a> (c # 和 Visual Basic 支援的程式碼變更) 
 [編輯後繼續] 會處理方法主體內大多數程式碼的變更。 但是在偵錯期間，無法套用方法主體外的變更和方法主體內的某些變更。 若要套用這些不支援的變更，您必須停止偵錯，然後使用新版程式碼重新啟動偵錯。
@@ -32,15 +32,15 @@ ms.locfileid: "72729094"
 
 |Language 元素/功能|支援的編輯作業|限制|
 |-|-|-|
-|類型|新增方法、欄位、函式、et al|[是](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|類型|新增方法、欄位、函式、et al|[是](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 |迭代器|新增或修改|否|
-|async/await 運算式|新增或修改|[是](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|async/await 運算式|新增或修改|[是](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 |動態物件|新增或修改|否|
-|Lambda 運算式|新增或修改|[是](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|LINQ 運算式|新增或修改|[與 lambda 運算式相同](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|Lambda 運算式|新增或修改|[是](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
+|LINQ 運算式|新增或修改|[與 lambda 運算式相同](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 
 > [!NOTE]
-> [編輯後繼續] 通常支援較新的語言功能，例如字串插補和 null 條件運算子。 如需最新資訊，請參閱 [Enc 支援的編輯](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits) 頁面。
+> [編輯後繼續] 通常支援較新的語言功能，例如字串插補和 null 條件運算子。 如需最新資訊，請參閱 [Enc 支援的編輯](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md) 頁面。
 
 ## <a name="unsupported-changes-to-code"></a>不支援的程式碼變更
  下列變更無法在偵測會話期間套用至 c # 和 Visual Basic 程式碼：
@@ -60,7 +60,7 @@ ms.locfileid: "72729094"
 |命名空間、類型、成員|刪除|
 |泛型|新增或修改|
 |介面|修改|
-|類型|新增抽象或虛擬成員、新增覆寫 (查看 [詳細資料](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)) |
+|類型|新增抽象或虛擬成員、新增覆寫 (查看 [詳細資料](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)) |
 |類型|新增解構函式|
 |成員|修改參考內嵌 interop 類型的成員|
 |成員|在已執行程式碼存取靜態成員之後修改該成員|
@@ -75,8 +75,8 @@ ms.locfileid: "72729094"
 |catch 區塊|在包含使用中語句時修改|
 |try-catch-finally 區塊|在包含使用中語句時修改|
 |Using 陳述式|加|
-|async 方法/lambda|修改以 .NET Framework 4 和更低版本為目標之專案中的非同步方法/lambda (查看 [詳細資料](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)) |
-|迭代器|在以 .NET Framework 4 和更低版本為目標的專案中修改反覆運算器， (查看 [詳細資料](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)) |
+|async 方法/lambda|修改以 .NET Framework 4 和更低版本為目標之專案中的非同步方法/lambda (查看 [詳細資料](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)) |
+|迭代器|在以 .NET Framework 4 和更低版本為目標的專案中修改反覆運算器， (查看 [詳細資料](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)) |
 
 ## <a name="unsafe-code"></a>Unsafe 程式碼
  變更 Unsafe 程式碼的限制與變更 Safe 程式碼的限制相同，但前者多了下列這一項額外限制：[編輯後繼續] 不支援對包含 `stackalloc` 運算子之方法內的 Unsafe 程式碼進行變更。

@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2076bc9fe3cabbfef8d3f3fb0248724835fa83f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d66ed0ab2d93bb46983becd191b1dcc2de648659
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444566"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509402"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>適用于適用于 immutablearray 的 Roslyn 分析器和程式碼感知程式庫
 
@@ -25,7 +25,7 @@ ms.locfileid: "81444566"
 
 * Visual Studio 2015 (不是 Express Edition) 或更新版本。 您可以使用免費的 [Visual Studio Community 版](https://visualstudio.microsoft.com/vs/community/)
 * [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。 您也可以在安裝 Visual Studio 時，檢查 [**一般工具**] 底下的**Visual Studio 擴充性工具**，同時安裝 SDK。 如果您已經安裝 Visual Studio，也可以移至**主要功能表檔**[  >  **新增**  >  **專案**]，在左側流覽窗格中選擇 **[** **c #** ]，然後選擇 [擴充性]，來安裝此 SDK。 當您選擇 [**安裝 Visual Studio 擴充性工具**] 階層連結專案範本時，它會提示您下載並安裝 SDK。
-* [.NET Compiler Platform ( "Roslyn" ) SDK](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK)。 您也可以安裝此 SDK，方法是移至主要**功能表檔**的 [  >  **新增**  >  **專案**]，在左側流覽窗格中選擇 [ **Extensibility** **c #** ]，然後選擇 [擴充性]。 當您選擇 [**下載 .NET COMPILER PLATFORM sdk**] 階層連結專案範本時，它會提示您下載並安裝 sdk。 此 SDK 包含 [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)。 這項實用的工具可協助您找出您應該在分析器中尋找的程式碼模型類型。 分析器基礎結構會針對特定程式碼模型類型呼叫您的程式碼，因此您的程式碼只會在必要時執行，而且只能專注于分析相關的程式碼。
+* [.NET Compiler Platform ( "Roslyn" ) SDK](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK)。 您也可以安裝此 SDK，方法是移至主要**功能表檔**的 [  >  **新增**  >  **專案**]，在左側流覽窗格中選擇 [ **Extensibility** **c #** ]，然後選擇 [擴充性]。 當您選擇 [**下載 .NET COMPILER PLATFORM sdk**] 階層連結專案範本時，它會提示您下載並安裝 sdk。 此 SDK 包含 [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Syntax-Visualizer.md)。 這項實用的工具可協助您找出您應該在分析器中尋找的程式碼模型類型。 分析器基礎結構會針對特定程式碼模型類型呼叫您的程式碼，因此您的程式碼只會在必要時執行，而且只能專注于分析相關的程式碼。
 
 ## <a name="whats-the-problem"></a>怎麼了？
 

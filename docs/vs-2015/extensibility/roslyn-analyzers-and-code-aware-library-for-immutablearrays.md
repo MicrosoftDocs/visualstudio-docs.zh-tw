@@ -8,12 +8,12 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 65849a3d9ad1cdd073551f96e61997fe5f91118a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b57fb96bf06f5dcafd87e44522575126d7bac55
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444891"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509818"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>適用於 ImmutableArray 的 Roslyn 分析器和程式碼感知程式庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "81444891"
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。 您也可以在安裝 Visual Studio 時，檢查 [一般工具] 底下的 Visual Studio 擴充性工具，同時安裝 SDK。 如果您已經安裝 Visual Studio，您也可以移至主要功能表檔 **&#124; 新的 &#124;專案**] 來安裝此 SDK，然後在左側流覽窗格中選擇 [c #]，再選擇 [擴充性]。 當您選擇 [**安裝 Visual Studio 擴充性工具**] 階層連結專案範本時，它會提示您下載並安裝 SDK。
 
-- [.NET Compiler Platform ( "Roslyn" ) SDK](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK)。 您也可以安裝此 SDK，方法是移至主要功能表檔 **&#124; 新的 &#124; 專案**]，在左側流覽窗格中選擇 **c #** ， **然後選擇 [** 擴充性]。 當您選擇 [**下載 .NET COMPILER PLATFORM sdk**] 階層連結專案範本時，它會提示您下載並安裝 sdk。 此 SDK 包含 [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)。 這項非常實用的工具可協助您找出您應該在分析器中尋找的程式碼模型類型。 分析器基礎結構會針對特定程式碼模型類型呼叫您的程式碼，因此您的程式碼只會在必要時執行，而且只能專注于分析相關的程式碼。
+- [.NET Compiler Platform ( "Roslyn" ) SDK](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK)。 您也可以安裝此 SDK，方法是移至主要功能表檔 **&#124; 新的 &#124; 專案**]，在左側流覽窗格中選擇 **c #** ， **然後選擇 [** 擴充性]。 當您選擇 [**下載 .NET COMPILER PLATFORM sdk**] 階層連結專案範本時，它會提示您下載並安裝 sdk。 此 SDK 包含 [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Syntax-Visualizer.md)。 這項非常實用的工具可協助您找出您應該在分析器中尋找的程式碼模型類型。 分析器基礎結構會針對特定程式碼模型類型呼叫您的程式碼，因此您的程式碼只會在必要時執行，而且只能專注于分析相關的程式碼。
 
 ## <a name="whats-the-problem"></a>怎麼了？
 假設您提供具有 ImmutableArray (的程式庫，例如 <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=fullName>) 支援。 C # 開發人員對 .NET 陣列有許多體驗。 不過，由於實作為適用于 immutablearray 和優化技術的本質，因此 c # 開發人員觀念會導致您程式庫的使用者撰寫中斷的程式碼，如下所述。 此外，在執行時間之前，使用者不會看到他們的錯誤，這並不是在使用 .NET Visual Studio 的品質體驗。

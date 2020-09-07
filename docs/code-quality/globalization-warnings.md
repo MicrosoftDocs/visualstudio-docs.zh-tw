@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff17a56be7d7908ced0e37d1b13e8296ffc2c3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd215a8b5c8dfb5905117638883d94d09268ce3d
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219682"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509844"
 ---
 # <a name="globalization-warnings"></a>全球化警告
 全球化警告支援可供世界用的程式庫和應用程式。
@@ -29,9 +29,6 @@ ms.locfileid: "89219682"
 
 |規則|描述|
 |----------|-----------------|
-|[CA1300:必須指定 MessageBoxOptions](../code-quality/ca1300.md)|若要對使用由右至左讀取順序的文化特性 (Culture) 正確顯示訊息方塊，MessageBoxOptions 列舉類型的 RightAlign 和 RtlReading 成員必須傳遞至 Show 方法。|
-|[CA1301:避免使用重複的快速鍵](../code-quality/ca1301.md)|便捷鍵也稱為快速鍵，可讓鍵盤使用 ALT 鍵存取控制項。 當多個控制項有重複的存取金鑰時，就不會妥善定義存取金鑰的行為。|
-|[CA1302:不要以硬式編碼的方式加入適用於特定地區設定的字串](../code-quality/ca1302.md)|System.Environment.SpecialFolder 列舉 (Enumeration) 包含參考特殊系統資料夾的成員。 這些資料夾的位置在不同的作業系統上可有不同的值，使用者可以變更某些位置，而且位置會當地語系化。 GetFolderPath 方法會傳回與環境相關聯的位置。 SpecialFolder 列舉、當地語系化，而且適用于目前正在執行的電腦。|
 |[CA1303:不要將常值當作已當地語系化的參數傳遞](../code-quality/ca1303.md)|外部可見的方法會將字串常值做為參數傳遞至 .NET 的函式或方法，且該字串應可當地語系化。|
 |[CA1304:必須指定 CultureInfo](../code-quality/ca1304.md)|方法或建構函式會呼叫具有接受 System.Globalization.CultureInfo 參數之多載的成員，且方法或建構函式未呼叫採用 CultureInfo 參數的多載。 未提供 CultureInfo 或 System.IFormatProvider 物件時，多載成員所提供的預設值可能不會有您希望在所有地區設定中都有的效果。|
 |[CA1305:必須指定 IFormatProvider](../code-quality/ca1305.md)|方法或建構函式所呼叫的一個或多個成員具有可接受 System.IFormatProvider 參數的多載，但該方法或建構函式並未呼叫可接受 IFormatProvider 參數的多載。 未提供 System.Globalization.CultureInfo 或 IFormatProvider 物件時，多載成員所提供的預設值可能不會有您希望在所有地區設定中都有的效果。|

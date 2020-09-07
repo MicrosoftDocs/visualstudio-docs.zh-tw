@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 03bd4d286ab0bcba37c9c1761c0331ce1347f313
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2af6126c751d03968dc7ecd87693e3546376c12a
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219669"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509857"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的全球化規則規則集
 
@@ -21,13 +21,9 @@ ms.locfileid: "89219669"
 
 |規則|描述|
 |----------|-----------------|
-|[CA1300](../code-quality/ca1300.md)|必須指定 MessageBoxOptions|
-|[CA1301](../code-quality/ca1301.md)|避免使用重複的快速鍵|
-|[CA1302](../code-quality/ca1302.md)|請勿將地區設定特定字串硬式編碼|
 |[CA1303](../code-quality/ca1303.md)|不要將常值當作已當地語系化的參數傳遞|
 |[CA1304](../code-quality/ca1304.md)|必須指定 CultureInfo|
 |[CA1305](../code-quality/ca1305.md)|必須指定 IFormatProvider|
-|[CA1306](../code-quality/ca1306.md)|必須設定資料類型的地區設定|
 |[CA1307](../code-quality/ca1307.md)|為清楚起見指定 StringComparison|
 |[CA1308 必須](../code-quality/ca1308.md)|必須將字串標準化為大寫字母|
 |[CA1309](../code-quality/ca1309.md)|使用循序的 StringComparison|
