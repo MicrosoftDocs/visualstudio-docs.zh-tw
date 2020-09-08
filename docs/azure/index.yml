@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: 0ad3a0135b8e5ca955d9dad2301933133bbd05e7
-  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+  ms.openlocfilehash: 82824b8a2221e710f3f6c8402ae18b7f457c4fe8
+  ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "88639324"
+  ms.lasthandoff: 09/07/2020
+  ms.locfileid: "89509740"
 landingContent:
 - title: 部署到 Azure App Service
   linkLists:
@@ -50,17 +50,17 @@ landingContent:
   - linkListType: overview
     links:
     - text: 容器開發
-      url: /visualstudio/containers
+      url: ../containers/index.yml
     - text: Visual Studio 中的容器工具
-      url: /visualstudio/containers/overview
+      url: ../containers/overview.md
     - text: Kubernetes 工具
-      url: /visualstudio/containers/tutorial-kubernetes-tools
+      url: ../containers/tutorial-kubernetes-tools.md
 - title: 偵錯 Azure 服務並分析效能
   linkLists:
   - linkListType: tutorial
     links:
     - text: 在 Azure 中針對 IIS 上的 ASP.NET Core 進行偵錯
-      url: /visualstudio/debugger/remote-debugging-azure
+      url: ../debugger/remote-debugging-azure.md
     - text: 在 Azure 中偵錯雲端服務
       url: vs-azure-tools-intellitrace-debug-published-cloud-services.md
     - text: 針對在虛擬機器上執行的應用程式進行偵錯
