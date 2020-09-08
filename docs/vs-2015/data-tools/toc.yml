@@ -250,7 +250,7 @@
               href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
             - name: 建立多層式架構 (N-Tier) 資料應用程式
               href: walkthrough-creating-an-n-tier-data-application.md
-            - name: 多層式架構資料應用程式概觀
+            - name: 多層式架構 (N-Tier) 資料應用程式概觀
               href: n-tier-data-applications-overview.md
         - name: 用來對資料存取錯誤進行疑難排解的其他資源
           href: additional-resources-for-troubleshooting-data-access-errors.md
