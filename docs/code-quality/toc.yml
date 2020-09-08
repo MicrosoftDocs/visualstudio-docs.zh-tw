@@ -12,7 +12,7 @@
           href: roslyn-analyzers-overview.md
         - name: 安裝第三方分析器
           href: install-roslyn-analyzers.md
-        - name: 設定
+        - name: 組態
           items:
             - name: 設定來源程式碼分析
               href: use-roslyn-analyzers.md
@@ -173,7 +173,7 @@
                       href: security-rules-rule-set-for-managed-code.md
         - name: 規則集
           items:
-            - name: 總覽
+            - name: 概觀
               href: using-rule-sets-to-group-code-analysis-rules.md
             - name: 設定規則集
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
@@ -446,7 +446,7 @@
                   href: ca1509.md
             - name: 行動性警告
               items:
-                - name: 總覽
+                - name: 概觀
                   displayName: mobility warnings
                   href: mobility-warnings.md
                 - name: 'CA1600:不要使用 Idle 處理序優先順序'
@@ -567,6 +567,8 @@
                   href: ca1832.md
                 - name: CA1833：請使用 AsSpan 或 AsMemory 取得陣列的 Span 或 Memory 部分，不要使用範圍型的索引子
                   href: ca1833.md
+                - name: CA1834：針對單一字元字串使用 StringBuilder.Append(char)
+                  href: ca1834.md
                 - name: CA1835：請優先使用 Stream ReadAsync/WriteAsync 方法的記憶體多載
                   href: ca1835.md
                 - name: CA1836：建議使用 IsEmpty，而不要使用 Count (如果有的話)
