@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a7727f93e3f4fe279bb9cc009e61a3fdd70a15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2f54e80059896345abb00e955a827a00b5a35a5
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73714445"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600128"
 ---
 # <a name="debugging-web-applications"></a>偵錯 Web 應用程式
 
@@ -42,7 +42,7 @@ ms.locfileid: "73714445"
 
 - 偵錯 AJAX 指令碼應用程式
 
-  啟用 AJAX 功能的 Web 應用程式會使用大量指令碼，在偵錯時特別困難。 如需 AJAX 偵錯工具技術的詳細資訊，請參閱 [偵錯工具和追蹤 Ajax 應用程式總覽](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)。
+  啟用 AJAX 功能的 Web 應用程式會使用大量指令碼，在偵錯時特別困難。 如需 AJAX 偵錯工具技術的詳細資訊，請參閱 [偵錯工具和追蹤 Ajax 應用程式總覽](/previous-versions/bb398817(v=vs.140))。
 
 ## <a name="see-also"></a>另請參閱
 

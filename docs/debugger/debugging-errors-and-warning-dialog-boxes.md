@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: beeba55c873e008b3e096da66f888695d719c882
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916440"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599937"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>偵錯錯誤和警告對話方塊
 底下列出一些偵錯應用程式時可能會碰到的錯誤和警告對話方塊。
@@ -48,7 +48,7 @@ ms.locfileid: "75916440"
 
  [[目前位置沒有可用的原始程式碼] 對話方塊](../debugger/no-source-available.md)
 
- [[沒有符號資訊] 對話方塊](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)
+ [[沒有符號資訊] 對話方塊](/previous-versions/d493t3ew(v=vs.100))
 
  [解決語意模糊對話方塊](../debugger/resolve-ambiguity-dialog-box.md)
 

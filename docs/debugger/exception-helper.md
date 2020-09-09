@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d044ed5ddaf4b7eb7a66bc09c8b3de3502a50f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e2157b55915f82e79dfdac5d300046850a93879
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350494"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600306"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>使用例外狀況協助程式檢查例外狀況 
 
@@ -50,7 +50,7 @@ ms.locfileid: "85350494"
 您可以設定偵錯工具，以便在例外狀況協助程式的 **例外狀況設定** 區段中擲回目前類型的例外狀況時中斷。 如果偵錯工具在擲回的例外狀況時暫停，您就可以使用此核取方塊來停用在未來擲回的例外狀況類型。 如果您不想要在這個特定的模組中擲回這個特定的例外狀況時中斷，請在 [**例外狀況設定**] 視窗中的 [擲回**時除外**] 下，依模組名稱勾選核取方塊。 
 
 ## <a name="inspect-inner-exceptions"></a>檢查內部例外狀況 
-如果例外狀況 ([InnerException](https://docs.microsoft.com/dotnet/api/system.exception.innerexception)有任何內部例外狀況，您可以在例外狀況協助程式中查看這些例外狀況。 如果有多個例外狀況，您可以使用呼叫堆疊上方顯示的向左和向右箭號來進行切換。
+如果例外狀況 ([InnerException](/dotnet/api/system.exception.innerexception)有任何內部例外狀況，您可以在例外狀況協助程式中查看這些例外狀況。 如果有多個例外狀況，您可以使用呼叫堆疊上方顯示的向左和向右箭號來進行切換。
 
 ![具有內部例外狀況的例外狀況 helper](media/debugger-exception-helper-innerexception.png)
 
@@ -60,4 +60,4 @@ ms.locfileid: "85350494"
 ![引發例外狀況的例外狀況協助程式](media/debugger-exception-helper-innerexception.png)
 
 ## <a name="share-a-debug-session-with-live-share"></a>與 Live Share 共用 debug 會話
-從例外狀況協助程式，您可以使用 [**啟動 Live Share 會話**] 連結來啟動[Live Share](https://docs.microsoft.com/visualstudio/liveshare/)會話 .。。任何加入 Live Share 會話的人都可以看到例外狀況協助程式，以及任何其他的 debug 資訊。
+從例外狀況協助程式，您可以使用 [**啟動 Live Share 會話**] 連結來啟動[Live Share](/visualstudio/liveshare/)會話 .。。任何加入 Live Share 會話的人都可以看到例外狀況協助程式，以及任何其他的 debug 資訊。

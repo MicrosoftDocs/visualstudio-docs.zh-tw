@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2d92477e37b4918e0601bf163e07f5a8492136c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c32c161d1df70fc81eee4186aa9d1ac102afa69
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72737905"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599648"
 ---
 # <a name="edit-and-continue-c"></a>編輯後繼續 (C++)
 您可以在 c + + 專案中使用 [編輯後繼續]。 如需 [編輯後繼續] 限制的相關資訊，請參閱支援的程式 [代碼變更 (c + +) ](../debugger/supported-code-changes-cpp.md) 。
 
 如需 Visual Studio 2015 Update 3 改善的詳細資訊，請參閱 [Visual Studio 2015 update 3 中的 c + + 編輯後繼續](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)。
 
- 在 Visual Studio 2013 Update 3 中推出的 [/Zo (增強最佳化偵錯)](/cpp/build/reference/zo-enhance-optimized-debugging) 編譯器選項會將額外資訊新增至不使用 [/Od (停用 (偵錯))](https://msdn.microsoft.com/library/aafb762y.aspx) 選項編譯之二進位碼檔案的 .pdb (符號) 檔案。
+ 在 Visual Studio 2013 Update 3 中推出的 [/Zo (增強最佳化偵錯)](/cpp/build/reference/zo-enhance-optimized-debugging) 編譯器選項會將額外資訊新增至不使用 [/Od (停用 (偵錯))](/cpp/build/reference/od-disable-debug) 選項編譯之二進位碼檔案的 .pdb (符號) 檔案。
 
  **/Zo** 會停用 [編輯後繼續]。 請參閱[如何：對最佳化程式碼進行偵錯](../debugger/how-to-debug-optimized-code.md)。
 
@@ -72,7 +72,7 @@ ms.locfileid: "72737905"
 ## <a name="how-to-reset-the-point-of-execution"></a><a name="BKMK_How_to_reset_the_point_of_execution"></a> 如何重設執行點
  某些程式碼變更會在 [編輯後繼續] 套用該變更時，造成執行點移至新位置。 [編輯後繼續] 會盡量精確地放置執行點，但有時結果未必完全正確。
 
- 在 c + + 中，對話方塊會在執行點變更時通知您。 您應該先確認位置是否正確，再繼續偵錯。 如果位置不正確，請使用 [ **設定下一個陳述式** ] 命令。 如需詳細資訊，請參閱 [設定下一個要執行的陳述式](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute)。
+ 在 c + + 中，對話方塊會在執行點變更時通知您。 您應該先確認位置是否正確，再繼續偵錯。 如果位置不正確，請使用 [ **設定下一個陳述式** ] 命令。 如需詳細資訊，請參閱 [設定下一個要執行的陳述式](./navigating-through-code-with-the-debugger.md#BKMK_Set_the_next_statement_to_execute)。
 
 ## <a name="how-to-work-with-stale-code"></a><a name="BKMK_How_to_work_with_stale_code"></a> 如何使用過時程式碼
  在某些情況下，[編輯後繼續] 不能立即將程式碼變更套用至執行檔，但是如果您繼續偵錯或許能在稍後套用程式碼變更。 如果您編輯呼叫目前函式的函式，或將 64 位元組以上的新變數加入至呼叫堆疊上的某個函式時，就會發生這種情況。

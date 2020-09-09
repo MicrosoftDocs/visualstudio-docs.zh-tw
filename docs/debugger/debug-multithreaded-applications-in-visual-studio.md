@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 668e95c340348eeb1fa509622aa44d99b65b6efc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b99f7b44168a451e8e927e5e0d2ca1a7f8d0bf93
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72431801"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600336"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中對多執行緒應用程式進行偵錯
 執行緒是作業系統授權處理器時間的一連串指令。 在作業系統中執行的每個處理序都包含至少一個執行緒。 具有一個以上執行緒的處理序就稱為多執行緒。
@@ -102,7 +102,7 @@ Visual Studio 也提供功能強大的中斷點和追蹤點，當您在調試多
 
 - [使用中斷點](../debugger/using-breakpoints.md)
 - [執行緒](/dotnet/standard/threading/index)
-- [元件中的多執行緒](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)
+- [元件中的多執行緒](/previous-versions/3es4b6yy(v=vs.140))
 - [舊版程式碼的多執行緒支援](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)
 - [偵錯工具執行緒和進程](../debugger/debug-threads-and-processes.md)
 - [遠端偵錯](../debugger/remote-debugging.md)

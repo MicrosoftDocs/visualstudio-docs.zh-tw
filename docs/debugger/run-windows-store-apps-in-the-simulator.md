@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1c208e435e63891c71fe47ebd64c5fe1307e0c82
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b46abc4d22ddfdc551669d3bcd4cba5acf7cce4
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348137"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599529"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>在模擬器中執行 UWP 應用程式
 
@@ -115,7 +115,7 @@ UWP 應用程式的 Visual Studio 模擬器不會在本機電腦的隔離環境�
 
 ## <a name="simulate-network-connection-properties"></a><a name="BKMK_Simulate_network_connection_properties"></a> 模擬網路連接屬性
 
-您可以藉由維護網路連線成本或數據傳輸方案狀態變更的感知，並讓您的應用程式使用此資訊來避免因為漫遊或超出指定的資料傳輸限制而產生額外費用，協助應用程式使用者管理計量付費網路連接的費用。 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API 可讓您回應簽署的 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 和 [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) 事件。 請參閱 [快速入門：管理計量付費網路費用限制](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。
+您可以藉由維護網路連線成本或數據傳輸方案狀態變更的感知，並讓您的應用程式使用此資訊來避免因為漫遊或超出指定的資料傳輸限制而產生額外費用，協助應用程式使用者管理計量付費網路連接的費用。 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API 可讓您回應簽署的 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 和 [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) 事件。 請參閱 [快速入門：管理計量付費網路費用限制](/previous-versions/windows/apps/hh750310(v=win.10))。
 
 若要偵錯或測試您的網路成本感知程式碼，模擬器可以模擬透過 [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation) 傳回的 [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) 物件所公開之網路屬性。
 
@@ -139,7 +139,7 @@ UWP 應用程式的 Visual Studio 模擬器不會在本機電腦的隔離環境�
 
 如需管理網路連接的詳細資訊，請參閱：
 
-[快速入門：管理計量付費網路費用限制](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
+[快速入門：管理計量付費網路費用限制](/previous-versions/windows/apps/hh750310(v=win.10))
 
 [網路資訊範例](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 

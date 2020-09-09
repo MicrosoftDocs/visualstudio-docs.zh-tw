@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68cbd19b65eb25405dc994100baf4fddeef9479d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00a802c0083a9e67a145077ff8ec5842b30eb607
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350455"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600094"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷快速入門
 在本節中，您將準備第一次使用圖形診斷，並從 Direct3D 應用程式擷取畫面格，然後在圖形分析器中檢查它們。
@@ -56,7 +56,7 @@ ms.locfileid: "85350455"
 如果您已經有自己的 Direct3D 應用程式可探索圖形診斷，很棒！ 否則，請使用下列其中一項：
 
 ::: moniker range=">=vs-2019"
-從 [Direct3D 遊戲範例](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/simple3dgamedx/)下載範例。
+從 [Direct3D 遊戲範例](/samples/microsoft/windows-universal-samples/simple3dgamedx/)下載範例。
 ::: moniker-end
 ::: moniker range="vs-2017"
 - **Directx 11 應用程式 (通用 windows) **或**Directx 12 應用程式 (** 適用于 Windows 10 的通用 windows) 專案範本。

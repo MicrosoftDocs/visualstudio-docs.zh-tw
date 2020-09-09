@@ -22,18 +22,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d00327315b98c4b55797187c59db3a81ee351fb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7bd6aaa912a384acbb41c42bfa4785eda52ae78a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350338"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599877"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>如何發現誰傳錯參數值？
 ## <a name="problem-description"></a>問題說明
  我的函式中傳入了一個錯誤的參數。 這個函式會從許多地方呼叫。 我該如何確定錯誤值是誰傳出的？
 
-## <a name="solution"></a>解決方法
+## <a name="solution"></a>解決方案
 
 #### <a name="to-resolve-this-problem"></a>若要解決這個問題
 
@@ -53,5 +53,5 @@ ms.locfileid: "85350338"
 
 ## <a name="see-also"></a>另請參閱
 - [機器碼偵錯 FAQ](../debugger/debugging-native-code-faqs.md)
-- [[中斷點]](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)
+- [[中斷點]](/previous-versions/ktf38f66(v=vs.100))
 - [偵錯機器碼](../debugger/debugging-native-code.md)

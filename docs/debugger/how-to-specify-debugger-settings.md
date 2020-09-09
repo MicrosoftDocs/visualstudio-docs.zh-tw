@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e39ae29e94ff28ce10daf36e3970273d8e34e9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa88d941950cdabe0da873f9184b420c81d5a348
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349103"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599867"
 ---
 # <a name="how-to-specify-debugger-settings"></a>如何：指定偵錯工具設定
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，您可以指定偵測工具行為的各種設定，包括變數如何顯示、某些警告是否要呈現、如何設定中斷點，以及中斷會如何影響執行中的程式  請在 [選項]**** 對話方塊中指定偵錯工具設定。
@@ -43,6 +43,6 @@ ms.locfileid: "85349103"
 
 ## <a name="see-also"></a>另請參閱
 - [選項對話方塊、偵錯、一般](../debugger/general-debugging-options-dialog-box.md)
-- [選項對話方塊、偵錯、編輯後繼續](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [選項對話方塊、偵錯、編輯後繼續](./edit-and-continue.md)
 - [偵錯設定及準備](../debugger/debugger-settings-and-preparation.md)
 - [組建命令和屬性的一般宏](/cpp/build/reference/common-macros-for-build-commands-and-properties)

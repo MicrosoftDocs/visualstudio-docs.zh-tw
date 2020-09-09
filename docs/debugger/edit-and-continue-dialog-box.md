@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9de4e43346c0c7261bbd834349f09619b262e17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 824ee989f17b6a341679f541f95906056cf6f8de
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72737935"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599541"
 ---
 # <a name="edit-and-continue-dialog-box"></a>[編輯後繼續] 對話方塊
 (僅限原生) 如果您在偵錯時已編輯程式碼，而且 [編輯後繼續]**** 認為可以套用程式碼變更，這個對話方塊就會出現。 如需詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。
@@ -31,4 +31,4 @@ ms.locfileid: "72737935"
 
 ## <a name="see-also"></a>另請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
-- [選項對話方塊、偵錯、編輯後繼續](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [選項對話方塊、偵錯、編輯後繼續](./edit-and-continue.md)

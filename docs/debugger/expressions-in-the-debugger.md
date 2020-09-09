@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ab66f288ad8442b6f2b5aab3499e2c1f3857632
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4a06a249fee38ca7fd8521459eda7bbf4100a97
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89311452"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600286"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中的運算式
 當您在 [ **快速監看式** ] 對話方塊、[ **監看式** ] 視窗或 [ **即時運算** ] 視窗中輸入運算式時，都能使用 Visual Studio 偵錯工具所包含的運算式評估工具。 在 [ **中斷點** ] 視窗和偵錯工具中的其他許多地方，也都可以使用運算式評估工具。
@@ -99,11 +99,11 @@ int main()
 
 |區域|內建函式|
 |----------|-------------------------|
-|**字串長度**|[strlen、wcslen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)、 [strnlen、wcsnlen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
-|**字串比較**|[strcmp、wcscmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp)、 [stricmp、wcsicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp)、 [_stricmp、_strcmpi、_wcsicmp、_wcscmpi](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l)、 [strncmp、wcsncmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l)、 [strnicmp、wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp)、 [_strnicmp、_wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
-|**字串搜尋**|[strchr、wcschr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l)、 [memchr、wmemchr](https://docs.microsoft.com/cpp/c-runtime-library/reference/memchr-wmemchr)、 [strstr、wcsstr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
-|**Win32**|[CoDecodeProxy](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy)、 [DecodePointer](https://docs.microsoft.com/previous-versions/bb432242%28v%3dvs.85%29)、 [GetLastError](https://docs.microsoft.com/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)、 [TlsGetValue](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
-|**Windows 8**|[RoInspectCapturedStackBackTrace](https://docs.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace)、 [WindowsCompareStringOrdinal](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal)、 [WindowsGetStringLen](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringlen)、 [WindowsGetStringRawBuffer](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> 這些函式要求要進行偵錯的處理序必須在 Windows 8 上執行。 對從 Windows 8 裝置產生的傾印檔案進行偵錯也要求 Visual Studio 電腦必須執行 Windows 8。 不過，如果您是對 Windows 8 裝置進行遠端偵錯，則 Visual Studio 電腦可以執行 Windows 7。|
+|**字串長度**|[strlen、wcslen](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)、 [strnlen、wcsnlen](/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
+|**字串比較**|[strcmp、wcscmp](/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp)、 [stricmp、wcsicmp](/cpp/c-runtime-library/reference/stricmp-wcsicmp)、 [_stricmp、_strcmpi、_wcsicmp、_wcscmpi](/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l)、 [strncmp、wcsncmp](/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l)、 [strnicmp、wcsnicmp](/cpp/c-runtime-library/reference/strnicmp-wcsnicmp)、 [_strnicmp、_wcsnicmp](/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
+|**字串搜尋**|[strchr、wcschr](/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l)、 [memchr、wmemchr](/cpp/c-runtime-library/reference/memchr-wmemchr)、 [strstr、wcsstr](/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
+|**Win32**|[CoDecodeProxy](/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy)、 [DecodePointer](/previous-versions/bb432242(v=vs.85))、 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)、 [TlsGetValue](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
+|**Windows 8**|[RoInspectCapturedStackBackTrace](/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace)、 [WindowsCompareStringOrdinal](/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal)、 [WindowsGetStringLen](/windows/win32/api/winstring/nf-winstring-windowsgetstringlen)、 [WindowsGetStringRawBuffer](/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> 這些函式要求要進行偵錯的處理序必須在 Windows 8 上執行。 對從 Windows 8 裝置產生的傾印檔案進行偵錯也要求 Visual Studio 電腦必須執行 Windows 8。 不過，如果您是對 Windows 8 裝置進行遠端偵錯，則 Visual Studio 電腦可以執行 Windows 7。|
 |**其他**|__log2//傳回指定整數的對數底數2，四捨五入為最接近的整數。<br /><br />__findNonNull、DecodeHString、DecodeWinRTRestrictedException、DynamicCast、DynamicMemberLookup、GetEnvBlockLength<br /><br />Stdext_HashMap_Int_OperatorBracket_idx，Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx//Concurrency：： array<>：： operator [index<>] and operator (index<>) <br /><br />ConcurrencyArray_OperatorBracket_int//Concurrency：： array<>：： operator (int，int，... ) <br /><br />ConcurrencyArray_OperatorBracket_tidx//Concurrency：： array<>：： operator [tiled_index<>] 和運算子 (tiled_index<>) <br /><br />ConcurrencyArrayView_OperatorBracket_idx//Concurrency：： array_view<>：： operator [index<>] 和運算子 (index<>) <br /><br />ConcurrencyArrayView_OperatorBracket_int//Concurrency：： array_view<>：： operator (int，int，... ) <br /><br />ConcurrencyArrayView_OperatorBracket_tidx//Concurrency：： array_view<>：： operator [tiled_index<>] 和運算子 (tiled_index<>) <br /><br />TreeTraverse_Init//初始化新的樹狀結構遍歷<br /><br />TreeTraverse_Next//傳回樹狀結構中的節點<br /><br />TreeTraverse_Skip//略過暫止的樹狀結構中的節點|
 
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - 不支援的運算式

@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7ac27b46252582b3982082a2a9a90a09223574f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abea0f45609c74e02cd95d6c21bbe8879d46eea1
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911611"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600215"
 ---
 # <a name="cc-assertions"></a>C/C++ 判斷提示
 判斷提示語句會指定您在程式中的某個點預期會是 true 的條件。 如果該條件不是 true，判斷提示失敗，程式的執行會中斷，而且出現 [判斷提示 [失敗] 對話方塊](../debugger/assertion-failed-dialog-box.md) 。
@@ -156,7 +156,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 [本主題內容](#BKMK_In_this_topic)
 
 ## <a name="mfc-assertions"></a><a name="BKMK_MFC_assertions"></a> MFC 判斷提示
-MFC 會為判斷提示檢查定義 [ASSERT](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) 宏。 它也會定義 `MFC ASSERT_VALID` `CObject::AssertValid` 用來檢查衍生物件之內部狀態的和方法 `CObject` 。
+MFC 會為判斷提示檢查定義 [ASSERT](/previous-versions/ew16s3zc(v=vs.140)) 宏。 它也會定義 `MFC ASSERT_VALID` `CObject::AssertValid` 用來檢查衍生物件之內部狀態的和方法 `CObject` 。
 
 如果 MFC 宏的引數 `ASSERT` 評估為零或 false，宏會中止程式執行，並對使用者發出警示，否則會繼續執行。
 
@@ -175,7 +175,7 @@ ASSERT(x >= 0);   //  Assertion fails if x is negative
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 ```
 
-`ASSERT`宏不會在發行版本中產生任何程式碼。 如果您需要評估發行版本中的運算式，請使用 [VERIFY](https://msdn.microsoft.com/library/s8c29sw2.aspx#verify) 宏，而不是 ASSERT。
+`ASSERT`宏不會在發行版本中產生任何程式碼。 如果您需要評估發行版本中的運算式，請使用 [VERIFY](/cpp/mfc/reference/diagnostic-services#verify) 宏，而不是 ASSERT。
 
 ### <a name="mfc-assert_valid-and-cobjectassertvalid"></a><a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID 和 CObject：： AssertValid
 [CObject：： AssertValid](/cpp/mfc/reference/cobject-class#assertvalid)方法提供物件內部狀態的執行時間檢查。 雖然您不需要在 `AssertValid` 衍生類別的情況下覆寫 `CObject` ，但您可以藉由執行此操作來提高類別的可靠性。 `AssertValid` 應該在所有物件的成員變數上執行判斷提示，以確認它們是否包含有效的值。 例如，它應該會檢查指標成員變數是否不是 Null。

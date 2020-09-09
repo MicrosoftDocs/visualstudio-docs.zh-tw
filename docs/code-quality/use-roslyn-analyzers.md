@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ac5103b15cee6e44650d9b8aef6fdf755874b2d2
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 22a82abab6b0c11ed57780ac69b4af9e1290ac2d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490283"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599982"
 ---
 # <a name="use-code-analyzers"></a>使用程式碼分析器
 
@@ -118,7 +118,7 @@ ms.locfileid: "89490283"
 - 個別規則依識別碼的嚴重性專案優先于類別的嚴重性專案。
 - 類別的嚴重性專案優先于所有分析器規則的嚴重性專案。
 
-請考慮下列 EditorConfig 範例，其中 [CA1822](https://docs.microsoft.com/visualstudio/code-quality/ca1822) 具有「效能」類別：
+請考慮下列 EditorConfig 範例，其中 [CA1822](./ca1822.md) 具有「效能」類別：
 
    ```ini
    [*.cs]

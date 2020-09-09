@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e141fac7fba1939811c722d8e08f49531111ff7e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3aa2de2f9e1bc0c5f92d13b159bfc268a25b059
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460243"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599926"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>錯誤：Transact-SQL 執行未經偵錯即結束
 
@@ -40,7 +40,7 @@ ms.locfileid: "85460243"
 
   若要更正這個錯誤，您可能需要：
 
-  - 驗證使用權限設定。 如需詳細資訊，請參閱 [如何：設定偵錯工具的 SQL Server 許可權](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)。
+  - 驗證使用權限設定。 如需詳細資訊，請參閱 [如何：設定偵錯工具的 SQL Server 許可權](/previous-versions/w1bhybwz(v=vs.100))。
 
   - 如果設定正確，請確定 SQL 偵錯作業。
 
@@ -49,6 +49,6 @@ ms.locfileid: "85460243"
 ## <a name="see-also"></a>另請參閱
 
 - [設定 SQL 調試](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
-- [如何：設定偵錯的 SQL Server 權限](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [如何：設定偵錯的 SQL Server 權限](/previous-versions/w1bhybwz(v=vs.100))
 - [偵錯設定及準備](../debugger/debugger-settings-and-preparation.md)
 - [遠端偵錯](../debugger/remote-debugging.md)

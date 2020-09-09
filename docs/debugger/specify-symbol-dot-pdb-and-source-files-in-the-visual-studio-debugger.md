@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19eed30074215b64301d7227e93ba6bf5b438d78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceffab5b8c179734b1abb5f1005c240912115f1
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183765"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599583"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 偵錯工具中指定符號 ( .pdb) 和原始程式檔 (c #、c + +、Visual Basic、F # ) 
 
@@ -46,7 +46,7 @@ ms.locfileid: "84183765"
 
 - [瞭解符號檔和 Visual Studio 符號設定](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-- [為什麼 Visual Studio 要求偵錯工具符號檔與建立它們的二進位檔案完全相符？](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+- [為什麼 Visual Studio 要求偵錯工具符號檔與建立它們的二進位檔案完全相符？](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)
 
 ## <a name="how-symbol-files-work"></a>符號檔的運作方式
 
@@ -57,7 +57,7 @@ ms.locfileid: "84183765"
 
 符號檔也會顯示來源檔案的位置，並選擇性地顯示從中抓取來源檔案的位置。
 
-偵錯工具只會載入與建立應用程式時所建立之 *.pdb*檔案完全相符的 *.pdb*檔 (也就是原始 *.pdb*檔案或複製) 。 這 [完全](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/) 是必要的，因為即使程式碼本身未變更，應用程式的配置也可能會變更。
+偵錯工具只會載入與建立應用程式時所建立之 *.pdb*檔案完全相符的 *.pdb*檔 (也就是原始 *.pdb*檔案或複製) 。 這 [完全](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with) 是必要的，因為即使程式碼本身未變更，應用程式的配置也可能會變更。
 
 > [!TIP]
 > 若要在專案原始程式碼之外（例如，您的專案呼叫的 Windows 程式碼或協力廠商程式碼）進行程式碼的偵錯工具，您必須指定外部程式碼 *.pdb* 檔案的位置 (並選擇性地指定原始程式檔) ，其必須完全符合您應用程式中的組建。
@@ -222,7 +222,7 @@ ms.locfileid: "84183765"
 1. 在 [ **模組** ] 視窗中，以滑鼠右鍵按一下 **符號狀態** 或 **符號** 檔標頭，或任何模組。
 1. 在快顯功能表中，選取下列其中一個選項︰
 
-|選項|描述|
+|選項|說明|
 |------------|-----------------|
 |**載入符號**|顯示已略過、找不到或未載入符號的模組。 嘗試從 [**選項**  >  **調試**  >  **符號**] 頁面上指定的位置載入符號。 如果找不到或未載入符號檔，則會啟動 **檔案總管** ，讓您可以指定要搜尋的新位置。|
 |**符號載入資訊**|顯示載入的符號檔的位置，或如果偵錯工具找不到檔案時所搜尋的位置。|

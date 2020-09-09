@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 83b4bea32f642cbf48acb01831bd4bccc2bb15a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e401dd55588228a98242e08d16e227b10b162418
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348934"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600164"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何在 Visual Studio 中偵測 UWP 應用程式時觸發暫止、繼續和背景事件
 
@@ -48,7 +48,7 @@ ms.locfileid: "85348934"
      **暫止和終止** 會關閉應用程式並結束偵錯工具。
 
 ## <a name="trigger-background-tasks"></a><a name="BKMK_Trigger_background_tasks"></a> 觸發背景工作
- 任何應用程式都可以登錄背景工作，以回應特定的系統事件 (即使應用程式並未執行)。 背景工作不能執行直接更新 UI 的程式碼，但它們可以透過動態磚更新、徽章更新和快顯通知，對使用者顯示資訊。 如需詳細資訊，請參閱 [使用背景工作支援您的應用程式](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e)。
+ 任何應用程式都可以登錄背景工作，以回應特定的系統事件 (即使應用程式並未執行)。 背景工作不能執行直接更新 UI 的程式碼，但它們可以透過動態磚更新、徽章更新和快顯通知，對使用者顯示資訊。 如需詳細資訊，請參閱 [使用背景工作支援您的應用程式](/previous-versions/windows/apps/hh977046(v=win.10))。
 
  您可以從偵錯工具觸發事件，啟動應用程式的背景工作。
 
@@ -110,7 +110,7 @@ ms.locfileid: "85348934"
 4. 選擇 [ **診斷** ] 記錄檔。
 
 ## <a name="see-also"></a>另請參閱
-- [使用 Visual Studio 測試 UWP 應用程式](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio)
+- [使用 Visual Studio 測試 UWP 應用程式](../test/unit-test-your-code.md)
 - [Debug apps in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [應用程式生命週期](/windows/uwp/launch-resume/app-lifecycle)
 - [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index)

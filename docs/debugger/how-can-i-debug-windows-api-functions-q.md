@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fab5627f3d467c0df289969e4fee010dd3ea78b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f7b293270facbbfa0d2174121ff6a3ac736b75a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350390"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599889"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>如何偵錯 Windows API 函式？
 如果要偵錯已載入 NT 符號的 Windows API 函式，必須進行下列步驟。
@@ -40,7 +40,7 @@ ms.locfileid: "85350390"
     {,,USER32.DLL}_MessageBeep@4
     ```
 
-     若要取得裝飾名稱，請參閱 [觀看裝飾名稱](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0)。
+     若要取得裝飾名稱，請參閱 [觀看裝飾名稱](/previous-versions/5x49w699(v=vs.140))。
 
      您可以測試裝飾名稱，並在反組譯程式碼中加以查看。 在 Visual Studio 偵錯工具的函式暫停時，以滑鼠右鍵按一下 [程式碼編輯器] 或 [呼叫堆疊] 視窗中的函數，然後選擇 [ **移至**反組解碼]。
 

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 723549865a39b390d411ffe83ee1fefad7ecb82d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6a3c0961d541aaac1f2fd81fee7a0a8e06583dd
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71211285"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600172"
 ---
 # <a name="com-debugging-tools"></a>COM 偵錯工具
 
@@ -46,5 +46,5 @@ MFC ActiveX 範例 OCLIENT 和 SUPERPAD 也可以用來測試您的應用程式�
 - [COM 偵錯工具](../debugger/com-debugging-tools.md)
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
-- [OCLIENT 範例：說明視覺化編輯容器應用程式](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [SUPERPAD 範例：示範使用 CEditView 編輯文字的視覺化編輯服務器](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [OCLIENT 範例：說明視覺化編輯容器應用程式](/previous-versions/c2f86tzd(v=vs.100))
+- [SUPERPAD 範例：示範使用 CEditView 編輯文字的視覺化編輯服務器](/previous-versions/ms177543(v=vs.100))

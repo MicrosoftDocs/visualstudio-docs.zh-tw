@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa2632e7d9b8103b5a89c49e5f44464a658fadc3
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901554"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599489"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>逐步解說：偵錯 Web 表單
 這個逐步解說中的步驟將示範如何偵錯 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式 (也稱為 Web Form)。 會向您示範如何啟動及停止執行、設定中斷點，以及在 [監看式]**** 視窗中檢查變數。
@@ -98,7 +98,7 @@ ms.locfileid: "62901554"
    textBox1.Text = "Button was clicked!";
    ```
 
-    會出現一個紅點，並且該行上的文字會以紅色反白顯示。 紅點表示中斷點。 當您在偵錯工具下執行應用程式時，偵錯工具會在遇到程式碼的位置中斷執行。 接著您就可以檢視應用程式的狀態並對它進行偵錯。 如需詳細資訊，請參閱[中斷點](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)。
+    會出現一個紅點，並且該行上的文字會以紅色反白顯示。 紅點表示中斷點。 當您在偵錯工具下執行應用程式時，偵錯工具會在遇到程式碼的位置中斷執行。 接著您就可以檢視應用程式的狀態並對它進行偵錯。 如需詳細資訊，請參閱[中斷點](/previous-versions/ktf38f66(v=vs.100))。
 
 2. 在 **[偵錯]** 功能表上，按一下 **[開始偵錯]** 。
 

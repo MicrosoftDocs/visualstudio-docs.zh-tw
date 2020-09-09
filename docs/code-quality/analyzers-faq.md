@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b060ae550fd0188728c827cac01c12d51930b57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6109c1becfae51ebf3824b5683bc66a5d89b74a0
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711543"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599614"
 ---
 # <a name="code-analysis-faq"></a>程式碼分析常見問題
 
@@ -92,7 +92,7 @@ ms.locfileid: "88711543"
 
 **問**：解決方案的 [程式碼分析] 屬性頁在哪裡？
 
-**答**：已移除方案層級的 [程式碼分析] 屬性頁，以改用更可靠的共用屬性群組。 若要在專案層級管理程式碼分析，仍可使用 [程式碼分析] 屬性頁。 針對 managed 專案 (，我們也建議將規則設定從規則集遷移至 EditorConfig。 ) 若要在方案或存放庫中跨多個/所有專案共用規則集，建議您在共用的 .props/目標檔案或目錄 .props/目錄 .targets 檔案中定義具有 CodeAnalysisRuleSet 屬性的屬性群組。 如果您沒有任何專案匯入的一般 .props 或目標，則應該考慮 [將這類屬性群組新增至 .props 或目錄。位於最上層方案目錄的目標，會自動匯入目錄或其子目錄中定義的所有專案](https://docs.microsoft.com/visualstudio/msbuild/customize-your-build?directorybuildprops-and-directorybuildtargets)檔。
+**答**：已移除方案層級的 [程式碼分析] 屬性頁，以改用更可靠的共用屬性群組。 若要在專案層級管理程式碼分析，仍可使用 [程式碼分析] 屬性頁。 針對 managed 專案 (，我們也建議將規則設定從規則集遷移至 EditorConfig。 ) 若要在方案或存放庫中跨多個/所有專案共用規則集，建議您在共用的 .props/目標檔案或目錄 .props/目錄 .targets 檔案中定義具有 CodeAnalysisRuleSet 屬性的屬性群組。 如果您沒有任何專案匯入的一般 .props 或目標，則應該考慮 [將這類屬性群組新增至 .props 或目錄。位於最上層方案目錄的目標，會自動匯入目錄或其子目錄中定義的所有專案](../msbuild/customize-your-build.md)檔。
 
 ## <a name="see-also"></a>另請參閱
 

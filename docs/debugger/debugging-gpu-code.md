@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1e2739532512bde5edeed4facc92b807187293
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02900bc7e0d3746e465c8e4741036605a76190d4
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77144803"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599950"
 ---
 # <a name="debugging-gpu-code"></a>偵錯 GPU 程式碼
 您可以對圖形處理器 (GPU) 上執行的 C++ 程式碼進行偵錯。 在 Visual Studio 中的 GPU 偵錯支援包括競爭偵測、啟動處理序和附加至處理序，以及整合到偵錯視窗中。
@@ -77,9 +77,9 @@ ms.locfileid: "77144803"
  如果您是在遠端電腦上進行偵錯，就會發生這個錯誤。 在執行階段之前，偵錯工具無法判斷驅動程式是否安裝在遠端電腦上。 驅動程式可向圖形卡的製造商取得。
 
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>錯誤：遠端網站必須停用「逾時偵錯與復原」(TDR)。
- C++ AMP 計算可能會超過 Windows 逾時偵測與復原程序 (TDR) 所設定的預設時間間隔。 發生這種情況時，計算就會取消，而且資料將會遺失。 如需詳細資訊，請參閱 [Handling TDRs in C++ AMP](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/06/handling-tdrs-in-c-amp/) (在 C++ AMP 中處理 TDR)。
+ C++ AMP 計算可能會超過 Windows 逾時偵測與復原程序 (TDR) 所設定的預設時間間隔。 發生這種情況時，計算就會取消，而且資料將會遺失。 如需詳細資訊，請參閱 [Handling TDRs in C++ AMP](/archive/blogs/nativeconcurrency/handling-tdrs-in-c-amp) (在 C++ AMP 中處理 TDR)。
 
 ## <a name="see-also"></a>另請參閱
 - [逐步解說： C++ AMP 應用程式的偵錯工具](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
 - [C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)
-- [在 Visual Studio 中開始 GPU 偵錯](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/17/start-gpu-debugging-in-visual-studio-2012/)
+- [在 Visual Studio 中開始 GPU 偵錯](/archive/blogs/nativeconcurrency/start-gpu-debugging-in-visual-studio-2012)

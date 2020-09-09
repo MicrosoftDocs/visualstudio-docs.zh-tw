@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f37a1ee196b14ec1f8c7b03ffc6e6d826ced02d8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87fdd6064492c4043723ddff960685a50f8bcb2b
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348466"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600259"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>如何：檢查 IIS 屬性設定
 
@@ -59,7 +59,7 @@ ms.locfileid: "85348466"
 
    3. 按一下 [確定]**** 關閉 [驗證方法]**** 對話方塊。
 
-5. 對於 ATL Server 應用程式，請驗證偵錯動詞命令 (DEBUG Verb) 是否與您的 ISAPI 副檔名有關聯。 如需詳細資訊，請參閱 how [to：使 DEBUG 動詞與 Extension 產生關聯](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e)。
+5. 對於 ATL Server 應用程式，請驗證偵錯動詞命令 (DEBUG Verb) 是否與您的 ISAPI 副檔名有關聯。 如需詳細資訊，請參閱 how [to：使 DEBUG 動詞與 Extension 產生關聯](/previous-versions/ms165022(v=vs.100))。
 
 6. 針對 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式，請確定應用程式的虛擬資料夾在 [網際網路資訊服務 (IIS) 管理員]****、[網際網路服務管理員]**** 或 [網際網路資訊服務]**** 中已設定 [應用程式名稱]。
 

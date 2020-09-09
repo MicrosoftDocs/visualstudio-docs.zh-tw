@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a06222c86ece31b18749394cf4590eedc4822f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f110af9aab6ae2ea01137043c834d38b29c4d1f9
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536405"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600001"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>使用 Microsoft Monitoring Agent (c #、Visual Basic) 
 
@@ -74,7 +74,7 @@ ms.locfileid: "85536405"
 
      **PS C:>Import-Module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**
 
-3. [造訪 TechNet](https://technet.microsoft.com/systemcenter/default) 以取得最新的說明內容。
+3. [造訪 TechNet](/previous-versions/system-center/developer/cc817313(v=msdn.10)) 以取得最新的說明內容。
 
 #### <a name="q-how-do-i-set-up-permissions-for-the-application-pool"></a><a name="FullPermissionsITLog"></a> 問：如何? 設定應用程式集區的許可權？
  **答：** 使用 Windows **icacls** 命令，或使用 Windows 檔案總管 (或檔案總管)。 例如：
@@ -108,7 +108,7 @@ ms.locfileid: "85536405"
   7. 確認應用程式集區具有 [讀取和執行]**** 權限。
 
 ## <a name="step-2-start-monitoring-your-app"></a><a name="MonitorEvents"></a> 步驟2：開始監視您的應用程式
- 請使用 Windows PowerShell [Start-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472749(v=sc.20)) 命令，以開始監視應用程式。 如果您使用 System Center 2012，請參閱 [使用 Microsoft Monitoring Agent 監視 Web 應用程式](https://technet.microsoft.com/library/dn465157.aspx)。
+ 請使用 Windows PowerShell [Start-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472749(v=sc.20)) 命令，以開始監視應用程式。 如果您使用 System Center 2012，請參閱 [使用 Microsoft Monitoring Agent 監視 Web 應用程式](/previous-versions/system-center/system-center-2012-R2/dn465157(v=sc.12))。
 
 1. 在 Web 伺服器上，以系統管理員身分開啟 **Windows PowerShell** 或 **Windows PowerShell ISE** 命令提示字元視窗。
 
@@ -132,9 +132,9 @@ ms.locfileid: "85536405"
 
      ![使用 MMA 確認啟動監視](../debugger/media/ffr_powershellstartmonitoringconfirmation.png "FFR_PowerShellStartMonitoringConfirmation")
 
-    |Name|描述|
+    |名稱|說明|
     |-|-|
-    |*"\<appName>"*|在 IIS 中指定網站和 Web 應用程式名稱的路徑。 如果您想要的話，也可以包括 IIS 路徑。<br /><br /> *" \<IISWebsiteName> \\<><iiswebappname \> "*<br /><br /> -或-<br /><br /> **"IIS： \ sites** * \\<><iiswebsitename \> \\<><iiswebappname \> "*<br /><br /> 您可以在 IIS 管理員中尋找這個路徑。 例如：<br /><br /> ![IIS 網站和 Web 應用程式的路徑](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> 您也可以使用 [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) 和 [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) 命令。|
+    |*"\<appName>"*|在 IIS 中指定網站和 Web 應用程式名稱的路徑。 如果您想要的話，也可以包括 IIS 路徑。<br /><br /> *" \<IISWebsiteName> \\<><iiswebappname \> "*<br /><br /> -或-<br /><br /> **"IIS： \ sites** * \\<><iiswebsitename \> \\<><iiswebappname \> "*<br /><br /> 您可以在 IIS 管理員中尋找這個路徑。 例如：<br /><br /> ![IIS 網站和 Web 應用程式的路徑](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> 您也可以使用 [Get-WebSite](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee807832(v=technet.10)) 和 [Get WebApplication](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee790554(v=technet.10)) 命令。|
     |*\<monitoringMode>*|指定監視模式：<br /><br /> <ul><li>**Monitor**：記錄例外狀況事件和效能事件的最少詳細資料。 這個模式使用預設收集計劃。</li><li>**Trace**：記錄函式層級詳細資料，或使用指定的收集計劃監視 SharePoint 2010 和 SharePoint 2013 應用程式。 這個模式可能會讓應用程式執行速度變慢。<br /><br /> <ul><li>[問：如何設定應用程式集區的權限？](#FullPermissionsITLog)</li><li>[問：如何取得大部分的資料，而不會讓應用程式變慢？](#Minimizing)</li></ul><br />     這個範例會記錄 SharePoint 網站上所裝載 SharePoint 應用程式的事件：<br /><br />     **開始-Stop-webapplicationmonitoring "FabrikamSharePointSite\FabrikamSharePointApp" Trace "C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**Custom**：使用指定的自訂收集計劃來記錄自訂詳細資料。 如果您在啟動監視之後編輯收集計劃，則必須重新啟動監視。</li></ul>|
     |*"\<outputPath>"*|指定儲存 IntelliTrace 記錄檔的完整目錄路徑。 請務必在開始監視之前建立這個目錄。|
     |*\<UInt32>*|指定 IntelliTrace 記錄檔的大小上限。 IntelliTrace 記錄檔的預設大小上限為 250 MB。<br /><br /> 記錄檔達到這個限制時，代理程式會覆寫最早的項目，以挪出空間供更多項目使用。 若要變更這個限制，請使用 **-MaximumFileSizeInMegabytes** 選項，或編輯收集計劃中的 `MaximumLogFileSize` 屬性。|
@@ -229,7 +229,7 @@ ms.locfileid: "85536405"
 代理程式會記錄 `id`方法所傳回 `Employee.Id`、 `Employee.Name` 、 `Employee` 和 `AlterEmployee` 物件的值。 不過，代理程式不會記錄 `Address` 物件的資訊，不論此物件是否為 Null。 代理程式也不會記錄 `AlterEmployee` 方法中區域變數的資料，除非其他方法使用這些區域變數做為參數 (此時將它們記錄為方法參數)。
 
 ## <a name="step-3-save-recorded-events"></a><a name="SaveEvents"></a> 步驟 3：儲存記錄的事件
- 當您發現錯誤或效能問題時，請將記錄的事件儲存至 IntelliTrace 記錄檔。 代理程式只有在已記錄事件時才會建立記錄檔。 如果您使用 System Center 2012，請參閱 [使用 Microsoft Monitoring Agent 監視 Web 應用程式](https://technet.microsoft.com/library/dn465157.aspx)。
+ 當您發現錯誤或效能問題時，請將記錄的事件儲存至 IntelliTrace 記錄檔。 代理程式只有在已記錄事件時才會建立記錄檔。 如果您使用 System Center 2012，請參閱 [使用 Microsoft Monitoring Agent 監視 Web 應用程式](/previous-versions/system-center/system-center-2012-R2/dn465157(v=sc.12))。
 
 ### <a name="save-recorded-events-but-continue-monitoring"></a>儲存記錄的事件，但仍繼續監視
  如果您想要建立 IntelliTrace 記錄檔，但是不想要重新啟動應用程式或是停止監視，請遵循這些步驟。 即使伺服器或應用程式重新啟動，代理程式還是會繼續監視。

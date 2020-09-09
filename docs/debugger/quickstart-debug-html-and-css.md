@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 331cb056132a2d90a932ff250c9bdbb7e22e38af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a43ac0930c4805d18c60a18e1b48882b2fed76de
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348258"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600188"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 應用程式中進行 HTML 和 CSS 的偵錯工具
 
@@ -262,4 +262,4 @@ DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更�
 - [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
 - [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017)
 - [偵錯 HTML、CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)
-- [產品支援和協助工具](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
+- [產品支援和協助工具](/previous-versions/tzbxw1af(v=vs.120))

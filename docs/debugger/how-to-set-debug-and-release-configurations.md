@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 458e6cb4ebf882d2d9e331823cc4955143e7d5b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e85f7c67f8dc25bb69f7de07a19286b5c63e938a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349155"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599903"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>在 Visual Studio 中設定偵錯和發行組態
 
@@ -67,7 +67,7 @@ Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 �
 您可以選擇產生符號 ( .pdb) 檔案，以及要包含哪些調試資訊。 針對大部分的專案類型，編譯器預設會針對 debug 和發行組建產生符號檔，而其他預設設定會依專案類型和 Visual Studio 版本而不同。
 
 > [!IMPORTANT]
-> 偵錯工具只會載入與可執行檔建置時所建立的 .pdb 檔案完全相同之可執行檔的 .pdb 檔案 (也就是說，.pdb 必須是原始 .pdb 檔案或該檔案的複本)。 如需詳細資訊，請參閱 [為什麼 Visual Studio 需要偵錯工具符號檔才能完全符合用來建立它們的二進位檔案？](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)。
+> 偵錯工具只會載入與可執行檔建置時所建立的 .pdb 檔案完全相同之可執行檔的 .pdb 檔案 (也就是說，.pdb 必須是原始 .pdb 檔案或該檔案的複本)。 如需詳細資訊，請參閱 [為什麼 Visual Studio 需要偵錯工具符號檔才能完全符合用來建立它們的二進位檔案？](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)。
 
 每個專案類型可能會有不同的方式來設定這些選項。
 

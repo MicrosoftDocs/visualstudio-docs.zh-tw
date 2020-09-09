@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4a481a8d4f283204b99cfef4a07106d3e479cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06b42dbf31a8b5f4cb66de047bc1e08a4f840353
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731284"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600238"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 偵錯技術
 如果您正在偵錯 MFC 程式，這些偵錯技術可能很有幫助。
@@ -80,7 +80,7 @@ _asm int 3
 [本主題內容](#BKMK_In_this_topic)
 
 ## <a name="the-trace-macro"></a><a name="BKMK_The_TRACE_macro"></a> TRACE 巨集
-若要在偵錯工具 [輸出視窗](../ide/reference/output-window.md)裡顯示程式的訊息，您可以使用 [ATLTRACE](https://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) 巨集或 MFC [TRACE](https://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) 巨集。 像 [判斷提示](../debugger/c-cpp-assertions.md)一樣，追蹤巨集只有在程式的偵錯版本才會啟動而且在發行版本編譯時會消失。
+若要在偵錯工具 [輸出視窗](../ide/reference/output-window.md)裡顯示程式的訊息，您可以使用 [ATLTRACE](/previous-versions/6xkxyz08(v=vs.140)) 巨集或 MFC [TRACE](/previous-versions/6w95a4ha(v=vs.140)) 巨集。 像 [判斷提示](../debugger/c-cpp-assertions.md)一樣，追蹤巨集只有在程式的偵錯版本才會啟動而且在發行版本編譯時會消失。
 
 下列範例顯示一些您可以使用 **TRACE** 巨集的方式。 就像 `printf`一樣， **TRACE** 巨集可以處理許多引數。
 
@@ -115,7 +115,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
 MFC 提供類別和函式來偵測已配置但從未解除配置的記憶體。
 
 ### <a name="tracking-memory-allocations"></a><a name="BKMK_Tracking_memory_allocations"></a> 追蹤記憶體配置
-在 MFC 裡，您可以使用 [DEBUG_NEW](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) 巨集取代 **new** 運算子來幫助尋找記憶體流失。 在程式的偵錯版本裡， `DEBUG_NEW` 追蹤每個物件所配置的檔案名稱和行號。 當您編譯程式的發行版本時， `DEBUG_NEW` 解析成簡單而不具檔名和行號資訊的 **new** 操作。 因此，在程式的發行版本中不會有速度負擔。
+在 MFC 裡，您可以使用 [DEBUG_NEW](/previous-versions/tz7sxz99(v=vs.140)) 巨集取代 **new** 運算子來幫助尋找記憶體流失。 在程式的偵錯版本裡， `DEBUG_NEW` 追蹤每個物件所配置的檔案名稱和行號。 當您編譯程式的發行版本時， `DEBUG_NEW` 解析成簡單而不具檔名和行號資訊的 **new** 操作。 因此，在程式的發行版本中不會有速度負擔。
 
 如果您不要以 `DEBUG_NEW` 取代 **new**來重新編寫整個程式，您可以在原始程式檔裡定義這個巨集：
 
@@ -134,13 +134,13 @@ MFC 架構的偵錯版本會自動使用 `DEBUG_NEW` ，但是您的程式碼不
 
 **若要啟用或停用記憶體診斷**
 
-- 呼叫全域函式 [AfxEnableMemoryTracking](https://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) 來啟用或停用診斷記憶體配置器 (Allocator)。 因為記憶體診斷在偵錯程式庫中預設是啟用的，通常您會使用這個函式將它們暫時地關閉，以增加程式執行速度和減少診斷輸出。
+- 呼叫全域函式 [AfxEnableMemoryTracking](/previous-versions/hzsxb6e8(v=vs.140)) 來啟用或停用診斷記憶體配置器 (Allocator)。 因為記憶體診斷在偵錯程式庫中預設是啟用的，通常您會使用這個函式將它們暫時地關閉，以增加程式執行速度和減少診斷輸出。
 
   **若要選取具 afxMemDF 的特定記憶體診斷功能**
 
-- 如果您要更準確地控制記憶體診斷功能，您可以設定 MFC 全域變數 [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086)值，選擇性地開啟和關閉各個記憶體診斷功能。 這個變數可以有下列的值，如同列舉類型 **afxMemDF**所指定。
+- 如果您要更準確地控制記憶體診斷功能，您可以設定 MFC 全域變數 [afxMemDF](/previous-versions/ahe4a83t(v=vs.140))值，選擇性地開啟和關閉各個記憶體診斷功能。 這個變數可以有下列的值，如同列舉類型 **afxMemDF**所指定。
 
-  |值|描述|
+  |值|說明|
   |-----------|-----------------|
   |**allocMemDF**|開啟診斷記憶體配置器 (預設)。|
   |**delayFreeMemDF**|呼叫 `delete` 或 `free` 時會延遲釋放記憶體，直到程式結束。 這會造成程式配置可能的最大記憶體量。|

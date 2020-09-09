@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ce28a8c1dd5c9ec510e4bf30b6e710b2b4dbc2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c29e27160b50a53995b7542680256bfd4e2d8f2
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649327"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600047"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>混合建議規則規則集
 
@@ -22,223 +22,223 @@ Microsoft 混合的建議規則會將焦點放在 c + + 專案中支援 Common L
 
 |規則|說明|
 |----------|-----------------|
-|[C6001](../code-quality/c6001.md)|使用尚未初始化的記憶體|
-|[C6011](../code-quality/c6011.md)|取值的指標為 NULL|
-|[C6029](../code-quality/c6029.md)|未經確認值的使用|
-|[C6031](../code-quality/c6031.md)|已忽略傳回值|
-|[C6053](../code-quality/c6053.md)|呼叫中的零結尾|
-|[C6054](../code-quality/c6054.md)|遺漏零終止|
-|[C6059](../code-quality/c6059.md)|不正確的串連|
-|[C6063](../code-quality/c6063.md)|遺漏格式函式的字串引數|
-|[C6064](../code-quality/c6064.md)|遺漏格式函式的整數引數|
-|[C6066](../code-quality/c6066.md)|遺漏格式函式的指標引數|
-|[C6067](../code-quality/c6067.md)|遺漏格式函式的字串指標引數|
-|[C6101](../code-quality/c6101.md)|傳回未初始化的記憶體|
-|[C6200](../code-quality/c6200.md)|索引超出緩衝區上限|
-|[C6201](../code-quality/c6201.md)|索引超出堆疊緩衝區上限|
-|[C6214](../code-quality/c6214.md)|不正確轉換 HRESULT 至 BOOL|
-|[C6215](../code-quality/c6215.md)|不正確轉換 BOOL 至 HRESULT|
-|[C6216](../code-quality/c6216.md)|編譯器插入了不正確轉換 BOOL 至 HRESULT|
-|[C6217](../code-quality/c6217.md)|未使用不正確 HRESULT 測試|
-|[C6220](../code-quality/c6220.md)|不正確 HRESULT 與-1 比較|
-|[C6226](../code-quality/c6226.md)|對-1 不正確 HRESULT 指派|
-|[C6230](../code-quality/c6230.md)|將不正確 HRESULT 用作布林值|
-|[C6235](../code-quality/c6235.md)|具有邏輯 Or 的非零常數|
-|[C6236](../code-quality/c6236.md)|邏輯或非零的常數|
-|[C6237](../code-quality/c6237.md)|零，有邏輯和失去副作用|
-|[C6242](../code-quality/c6242.md)|強制執行本機回溯|
-|[C6248](../code-quality/c6248.md)|建立 Null DACL|
-|[C6250](../code-quality/c6250.md)|未發行位址描述項|
-|[C6255](../code-quality/c6255.md)|未受保護的 Alloca 使用|
-|[C6258](../code-quality/c6258.md)|使用 Terminate 執行緒|
-|[C6259](../code-quality/c6259.md)|位或有限參數中的無作用程式碼|
-|[C6260](../code-quality/c6260.md)|使用位元組算術|
-|[C6262](../code-quality/c6262.md)|過度使用堆疊|
-|[C6263](../code-quality/c6263.md)|在迴圈中使用 Alloca|
-|[C6268](../code-quality/c6268.md)|Cast 中缺少括弧|
-|[C6269](../code-quality/c6269.md)|已忽略指標取值|
-|[C6270](../code-quality/c6270.md)|遺漏格式函式的浮點引數|
-|[C6271](../code-quality/c6271.md)|格式函式的多餘引數|
-|[C6272](../code-quality/c6272.md)|格式函式的非浮點引數|
-|[C6273](../code-quality/c6273.md)|格式函式的非整數引數|
-|[C6274](../code-quality/c6274.md)|格式函式的非字元引數|
-|[C6276](../code-quality/c6276.md)|無效的字串轉型|
-|[C6277](../code-quality/c6277.md)|無效的 CreateProcess 呼叫|
-|[C6278](../code-quality/c6278.md)|陣列-新的純量刪除不相符|
-|[C6279](../code-quality/c6279.md)|純量新陣列-刪除不相符|
-|[C6280](../code-quality/c6280.md)|記憶體配置-解除配置不符|
-|[C6281](../code-quality/c6281.md)|位關聯優先順序|
-|[C6282](../code-quality/c6282.md)|指派取代測試|
-|[C6283](../code-quality/c6283.md)|基本陣列-新的純量刪除不相符|
-|[C6284](../code-quality/c6284.md)|格式函式的物件引數無效|
-|[C6285](../code-quality/c6285.md)|常數的邏輯 Or|
-|[C6286](../code-quality/c6286.md)|非零的邏輯 Or 遺失副作用|
-|[C6287](../code-quality/c6287.md)|重複的測試|
-|[C6288](../code-quality/c6288.md)|透過邏輯和的相互包含為 False|
-|[C6289](../code-quality/c6289.md)|邏輯或為 True 的相互排除|
-|[C6290](../code-quality/c6290.md)|邏輯 NOT 位元 AND 優先順序|
-|[C6291](../code-quality/c6291.md)|邏輯 NOT 位元 OR 優先順序|
-|[C6292](../code-quality/c6292.md)|從最大值的迴圈計數|
-|[C6293](../code-quality/c6293.md)|迴圈從最小值向下計數|
-|[C6294](../code-quality/c6294.md)|永遠不會執行迴圈主體|
-|[C6295](../code-quality/c6295.md)|無限迴圈|
-|[C6296](../code-quality/c6296.md)|迴圈只執行一次|
-|[C6297](../code-quality/c6297.md)|變換轉換成較大大小的結果|
-|[C6299](../code-quality/c6299.md)|位欄位與布林值的比較|
-|[C6302](../code-quality/c6302.md)|格式函式的字元字串引數無效|
-|[C6303](../code-quality/c6303.md)|格式函式的寬字元字串引數無效|
-|[C6305](../code-quality/c6305.md)|大小和計數用法不符|
-|[C6306](../code-quality/c6306.md)|不正確的變數引數函式呼叫|
-|[C6308](../code-quality/c6308.md)|Realloc 流失|
-|[C6310](../code-quality/c6310.md)|不合法的例外狀況篩選準則常數|
-|[C6312](../code-quality/c6312.md)|例外狀況繼續執行迴圈|
-|[C6314](../code-quality/c6314.md)|位 Or 優先順序|
-|[C6317](../code-quality/c6317.md)|不可補數|
-|[C6318](../code-quality/c6318.md)|例外狀況繼續搜尋|
-|[C6319](../code-quality/c6319.md)|略過逗號|
-|[C6324](../code-quality/c6324.md)|字串複製而不是字串比較|
-|[C6328](../code-quality/c6328.md)|引數類型可能不符|
-|[C6331](../code-quality/c6331.md)|VirtualFree 不正確旗標|
-|[C6332](../code-quality/c6332.md)|VirtualFree 不正確參數|
-|[C6333](../code-quality/c6333.md)|VirtualFree 不正確大小|
-|[C6335](../code-quality/c6335.md)|洩漏進程控制碼|
-|[C6381](../code-quality/c6381.md)|遺失關機資訊|
-|[C6383](../code-quality/c6383.md)|元素計數位節計數緩衝區溢位|
-|[C6384](../code-quality/c6384.md)|指標大小分割|
-|[C6385](../code-quality/c6385.md)|讀取滿溢|
-|[C6386](../code-quality/c6386.md)|寫入滿溢|
-|[C6387](../code-quality/c6387.md)|無效的參數值|
-|[C6388](../code-quality/c6388.md)|無效的參數值|
-|[C6500](../code-quality/c6500.md)|無效的屬性 (Attribute) 屬性 (Property)|
-|[C6501](../code-quality/c6501.md)|衝突的屬性 (Attribute) 屬性 (Property) 值|
-|[C6503](../code-quality/c6503.md)|參考不能是 Null|
-|[C6504](../code-quality/c6504.md)|非指標上的 Null|
-|[C6505](../code-quality/c6505.md)|Void 上的 MustCheck|
-|[C6506](../code-quality/c6506.md)|非指標或陣列上的緩衝區大小|
-|[C6508](../code-quality/c6508.md)|寫入存取常數|
-|[C6509](../code-quality/c6509.md)|先前的條件所用的 Return|
-|[C6510](../code-quality/c6510.md)|非指標上的 Null Terminated|
-|[C6511](../code-quality/c6511.md)|MustCheck 必須為 Yes 或 No|
-|[C6513](../code-quality/c6513.md)|不含緩衝區大小的元素大小|
-|[C6514](../code-quality/c6514.md)|緩衝區大小超過陣列大小|
-|[C6515](../code-quality/c6515.md)|非指標上的緩衝區大小|
-|[C6516](../code-quality/c6516.md)|屬性 (Attribute) 上沒有屬性 (Property)|
-|[C6517](../code-quality/c6517.md)|不能讀取的緩衝區上的有效大小|
-|[C6518](../code-quality/c6518.md)|不能寫入的緩衝區上的可寫入大小|
-|[C6522](../code-quality/c6522.md)|無效的大小字串類型|
-|[C6525](../code-quality/c6525.md)|無效的大小字串不可能執行到的位置|
-|[C6527](../code-quality/c6527.md)|無效的註釋：'NeedsRelease' 屬性不能用於 void 類型的值|
-|[C6530](../code-quality/c6530.md)|無法辨認的格式字串樣式|
-|[C6540](../code-quality/c6540.md)|在這個函式上使用屬性註釋會使其所有現有的 __declspec 註釋無效。|
-|[C6551](../code-quality/c6551.md)|無效的大小規格: 無法剖析運算式|
-|[C6552](../code-quality/c6552.md)|無效的 Deref= 或 Notref=: 無法剖析運算式|
-|[C6701](../code-quality/c6701.md)|值不是有效的 Yes/No/Maybe 值|
-|[C6702](../code-quality/c6702.md)|值不是字串值|
-|[C6703](../code-quality/c6703.md)|值不是數字|
-|[C6704](../code-quality/c6704.md)|未預期的註釋運算式錯誤|
-|[C6705](../code-quality/c6705.md)|註釋的預期引數數目不符合註釋的實際引數數目|
-|[C6706](../code-quality/c6706.md)|註釋發生未預期的註釋錯誤|
-|[C6995](../code-quality/c6995.md)|無法儲存 XML 記錄檔|
-|[C26100](../code-quality/c26100.md)|競爭條件|
-|[C26101](../code-quality/c26101.md)|無法正確使用連鎖操作|
-|[C26110](../code-quality/c26110.md)|呼叫端無法保存鎖定|
-|[C26111](../code-quality/c26111.md)|呼叫端無法釋放鎖定|
-|[C26112](../code-quality/c26112.md)|呼叫端無法保留任何鎖定|
-|[C26115](../code-quality/c26115.md)|無法釋放鎖定|
-|[C26116](../code-quality/c26116.md)|無法取得或保留鎖定|
-|[C26117](../code-quality/c26117.md)|釋放解除未保留鎖定|
-|[C26140](../code-quality/c26140.md)|並行 SAL 注釋錯誤|
-|[C28020](../code-quality/c28020.md)|此呼叫的運算式不是 true|
-|[C28021](../code-quality/c28021.md)|所標註的參數必須是指標|
-|[C28022](../code-quality/c28022.md)|這個函式上 (es) 的函式類別，與用來定義它的 typedef 上的函數類別 (es) 不相符。|
-|[C28023](../code-quality/c28023.md)|要指派或傳遞的函式，至少要有一個類別的函式 \_ \_ 類別 \_ 注釋 (es) |
-|[C28024](../code-quality/c28024.md)|指派給的函式指標會以函式類別來標注，該函式類別不包含在函數類別 (es) 清單中。|
-|[C28039](../code-quality/c28039.md)|實際參數的類型應該與類型完全相符|
-|[C28112](../code-quality/c28112.md)|透過連鎖函數存取的變數必須一律透過連鎖函式存取。|
-|[C28113](../code-quality/c28113.md)|透過連鎖函數存取本機變數|
-|[C28125](../code-quality/c28125.md)|函數必須從 try/except 區塊內呼叫|
-|[C28137](../code-quality/c28137.md)|變數引數應改為 (常值) 常數|
-|[C28138](../code-quality/c28138.md)|常數引數應改為變數|
-|[C28159](../code-quality/c28159.md)|請考慮改為使用其他函數。|
-|[C28160](../code-quality/c28160.md)|Error 註釋|
-|[C28163](../code-quality/c28163.md)|永遠不應該從 try/except 區塊內呼叫函式|
-|[C28164](../code-quality/c28164.md)|將引數傳遞至函式，而該函式需要物件的指標， (不是指標的指標) |
-|[C28182](../code-quality/c28182.md)|取值的指標為 NULL。 指標所包含的 NULL 值與另一個指標相同。|
-|[C28183](../code-quality/c28183.md)|引數可以是一個值，而且是在指標中找到之值的複本。|
-|[C28193](../code-quality/c28193.md)|變數會保留必須檢查的值|
-|[C28196](../code-quality/c28196.md)|未滿足需求。  (運算式未評估為 true。 ) |
-|[C28202](../code-quality/c28202.md)|非靜態成員的參考不合法|
-|[C28203](../code-quality/c28203.md)|類別成員的參考模稜兩可。|
-|[C28205](../code-quality/c28205.md)|\_\_ \_ \_ \_ 在不合法的內容中使用成功或失敗|
-|[C28206](../code-quality/c28206.md)|左運算元指向結構，請使用 '->'|
-|[C28207](../code-quality/c28207.md)|左運算元是結構，請使用 '.'|
-|[C28209](../code-quality/c28209.md)|符號的宣告有衝突的宣告|
-|[C28210](../code-quality/c28210.md)|_On_failure_ 內容的註釋不能在明確 pre context 中|
-|[C28211](../code-quality/c28211.md)|SAL_context 需要靜態內容名稱|
-|[C28212](../code-quality/c28212.md)|註釋需要指標運算式|
-|[C28213](../code-quality/c28213.md)|\_使用 \_ decl \_ 注釋 \_ 注釋必須用來參考先前的宣告，而不需要修改。|
-|[C28214](../code-quality/c28214.md)|屬性參數名稱必須是 p1...p9|
-|[C28215](../code-quality/c28215.md)|typefix 不能套用到已經有 typefix 的參數|
-|[C28216](../code-quality/c28216.md)|checkReturn 註釋只適用於特定函式參數的後置條件。|
-|[C28217](../code-quality/c28217.md)|對於函式，註釋的參數數目不符合檔案中找到的參數數目|
-|[C28218](../code-quality/c28218.md)|針對函式參數，注釋的參數不符合檔案中找到的參數|
-|[C28219](../code-quality/c28219.md)|註釋中標註的參數需要列舉的成員|
-|[C28220](../code-quality/c28220.md)|註釋中標註的參數需要整數運算式|
-|[C28221](../code-quality/c28221.md)|註釋中的參數需要字串運算式|
-|[C28222](../code-quality/c28222.md)|註釋需要 __yes、\__no 或 \__maybe|
-|[C28223](../code-quality/c28223.md)|找不到註釋參數需要的語彙基元/識別項|
-|[C28224](../code-quality/c28224.md)|註釋需要參數|
-|[C28225](../code-quality/c28225.md)|找不到註釋中必要參數的正確數目|
-|[C28226](../code-quality/c28226.md)|註釋不能也是 PrimOp (在目前宣告中)|
-|[C28227](../code-quality/c28227.md)|註釋不能也是 PrimOp (參閱之前的宣告)|
-|[C28228](../code-quality/c28228.md)|註釋參數: 不能在註釋中使用類型|
-|[C28229](../code-quality/c28229.md)|註釋不支援參數|
-|[C28230](../code-quality/c28230.md)|參數的類型沒有成員。|
-|[C28231](../code-quality/c28231.md)|註釋只在陣列上有效|
-|[C28232](../code-quality/c28232.md)|pre、post 或 deref 未套用至任何註釋|
-|[C28233](../code-quality/c28233.md)|pre、post 或 deref 已套用至區塊|
-|[C28234](../code-quality/c28234.md)|__at 運算式未套用到目前函式|
-|[C28235](../code-quality/c28235.md)|函式不能獨立成為註釋|
-|[C28236](../code-quality/c28236.md)|註釋不能用在運算式中|
-|[C28237](../code-quality/c28237.md)|不再支援參數上的註釋|
-|[C28238](../code-quality/c28238.md)|參數上的註釋具有一個以上的值：stringValue 和 longValue。 請使用 paramn=xxx|
-|[C28239](../code-quality/c28239.md)|參數上的註釋具有兩個值，stringValue 或 longValue 以及 paramn=xxx。 請只使用 paramn=xxx|
-|[C28240](../code-quality/c28240.md)|參數上的註釋有 param2 但沒有 param1|
-|[C28241](../code-quality/c28241.md)|無法辨認參數上的函式之註釋|
-|[C28243](../code-quality/c28243.md)|參數上的函式之註釋需要執行的取值比實際標註之類型允許的還多|
-|[C28244](../code-quality/c28244.md)|函數的注釋具有無法剖析的參數/外部注釋|
-|[C28245](../code-quality/c28245.md)|函式的註釋會在非成員函式上標註 'this'|
-|[C28246](../code-quality/c28246.md)|函式的參數註釋不符合參數的類型|
-|[C28250](../code-quality/c28250.md)|函式的註釋不一致：之前的執行個體有錯誤。|
-|[C28251](../code-quality/c28251.md)|函式的註釋不一致：這個執行個體有錯誤。|
-|[C28252](../code-quality/c28252.md)|函式的註釋不一致：參數有這個執行個體的另一個註釋。|
-|[C28253](../code-quality/c28253.md)|函式的註釋不一致：參數有這個執行個體的另一個註釋。|
-|[C28254](../code-quality/c28254.md)|註釋中不支援 dynamic_cast<>()|
-|[C28262](../code-quality/c28262.md)|在函式 (隸屬於註釋) 中找到註釋的語法錯誤|
-|[C28263](../code-quality/c28263.md)|找到內建註釋的條件式註釋語法錯誤|
-|[C28267](../code-quality/c28267.md)|在函式 (隸屬於註釋) 中找到註釋的語法錯誤。|
-|[C28272](../code-quality/c28272.md)|函式參數的註釋在檢查時，與函式宣告不一致|
-|[C28273](../code-quality/c28273.md)|對於函式，線索與函式宣告不一致|
-|[C28275](../code-quality/c28275.md)|\_宏值的參數 \_ \_ 為 null|
-|[C28279](../code-quality/c28279.md)|找到符號的 'begin'，但沒有相符的 'end'|
-|[C28280](../code-quality/c28280.md)|找到符號的 'end'，但沒有相符的 'begin'|
-|[C28282](../code-quality/c28282.md)|格式字串必須在前置條件中|
-|[C28285](../code-quality/c28285.md)|對於函式，參數中有語法錯誤|
-|[C28286](../code-quality/c28286.md)|對於函式，結尾附近發生語法錯誤|
-|[C28287](../code-quality/c28287.md)|函式的 \_At\_() 註釋中有語法錯誤 (無法辨認的參數名稱)|
-|[C28288](../code-quality/c28288.md)|函式的 \_At\_() 註釋中有語法錯誤 (無效的參數名稱)|
-|[C28289](../code-quality/c28289.md)|對於函式：ReadableTo 或 WritableTo 沒有有限的規格做為參數|
-|[C28290](../code-quality/c28290.md)|函式的註釋包含比實際參數數目還多的外部|
-|[C28291](../code-quality/c28291.md)|位於 deref 層級 0 的 post null/notnull 對函式是無意義的。|
-|[C28300](../code-quality/c28300.md)|運算子的運算式運算元類型不相容|
-|[C28301](../code-quality/c28301.md)|函式的第一個宣告沒有註釋。|
-|[C28302](../code-quality/c28302.md)|在註釋中發現額外的 \_Deref\_ 運算子。|
-|[C28303](../code-quality/c28303.md)|在註釋發現模擬兩可的 \_Deref\_ 運算子。|
-|[C28304](../code-quality/c28304.md)|發現有位置不正確的 \_Notref\_ 運算子套用至語彙基元。|
-|[C28305](../code-quality/c28305.md)|剖析語彙基元時發現錯誤。|
-|[C28306](../code-quality/c28306.md)|參數上的注釋為 sal|
-|[C28307](../code-quality/c28307.md)|參數上的注釋為 sal|
-|[C28350](../code-quality/c28350.md)|註釋描述了條件不適用的狀況。|
+|[C6001](/cpp/code-quality/c6001)|使用尚未初始化的記憶體|
+|[C6011](/cpp/code-quality/c6011)|取值的指標為 NULL|
+|[C6029](/cpp/code-quality/c6029)|未經確認值的使用|
+|[C6031](/cpp/code-quality/c6031)|已忽略傳回值|
+|[C6053](/cpp/code-quality/c6053)|呼叫中的零結尾|
+|[C6054](/cpp/code-quality/c6054)|遺漏零終止|
+|[C6059](/cpp/code-quality/c6059)|不正確的串連|
+|[C6063](/cpp/code-quality/c6063)|遺漏格式函式的字串引數|
+|[C6064](/cpp/code-quality/c6064)|遺漏格式函式的整數引數|
+|[C6066](/cpp/code-quality/c6066)|遺漏格式函式的指標引數|
+|[C6067](/cpp/code-quality/c6067)|遺漏格式函式的字串指標引數|
+|[C6101](/cpp/code-quality/c6101)|傳回未初始化的記憶體|
+|[C6200](/cpp/code-quality/c6200)|索引超出緩衝區上限|
+|[C6201](/cpp/code-quality/c6201)|索引超出堆疊緩衝區上限|
+|[C6214](/cpp/code-quality/c6214)|不正確轉換 HRESULT 至 BOOL|
+|[C6215](/cpp/code-quality/c6215)|不正確轉換 BOOL 至 HRESULT|
+|[C6216](/cpp/code-quality/c6216)|編譯器插入了不正確轉換 BOOL 至 HRESULT|
+|[C6217](/cpp/code-quality/c6217)|未使用不正確 HRESULT 測試|
+|[C6220](/cpp/code-quality/c6220)|不正確 HRESULT 與-1 比較|
+|[C6226](/cpp/code-quality/c6226)|對-1 不正確 HRESULT 指派|
+|[C6230](/cpp/code-quality/c6230)|將不正確 HRESULT 用作布林值|
+|[C6235](/cpp/code-quality/c6235)|具有邏輯 Or 的非零常數|
+|[C6236](/cpp/code-quality/c6236)|邏輯或非零的常數|
+|[C6237](/cpp/code-quality/c6237)|零，有邏輯和失去副作用|
+|[C6242](/cpp/code-quality/c6242)|強制執行本機回溯|
+|[C6248](/cpp/code-quality/c6248)|建立 Null DACL|
+|[C6250](/cpp/code-quality/c6250)|未發行位址描述項|
+|[C6255](/cpp/code-quality/c6255)|未受保護的 Alloca 使用|
+|[C6258](/cpp/code-quality/c6258)|使用 Terminate 執行緒|
+|[C6259](/cpp/code-quality/c6259)|位或有限參數中的無作用程式碼|
+|[C6260](/cpp/code-quality/c6260)|使用位元組算術|
+|[C6262](/cpp/code-quality/c6262)|過度使用堆疊|
+|[C6263](/cpp/code-quality/c6263)|在迴圈中使用 Alloca|
+|[C6268](/cpp/code-quality/c6268)|Cast 中缺少括弧|
+|[C6269](/cpp/code-quality/c6269)|已忽略指標取值|
+|[C6270](/cpp/code-quality/c6270)|遺漏格式函式的浮點引數|
+|[C6271](/cpp/code-quality/c6271)|格式函式的多餘引數|
+|[C6272](/cpp/code-quality/c6272)|格式函式的非浮點引數|
+|[C6273](/cpp/code-quality/c6273)|格式函式的非整數引數|
+|[C6274](/cpp/code-quality/c6274)|格式函式的非字元引數|
+|[C6276](/cpp/code-quality/c6276)|無效的字串轉型|
+|[C6277](/cpp/code-quality/c6277)|無效的 CreateProcess 呼叫|
+|[C6278](/cpp/code-quality/c6278)|陣列-新的純量刪除不相符|
+|[C6279](/cpp/code-quality/c6279)|純量新陣列-刪除不相符|
+|[C6280](/cpp/code-quality/c6280)|記憶體配置-解除配置不符|
+|[C6281](/cpp/code-quality/c6281)|位關聯優先順序|
+|[C6282](/cpp/code-quality/c6282)|指派取代測試|
+|[C6283](/cpp/code-quality/c6283)|基本陣列-新的純量刪除不相符|
+|[C6284](/cpp/code-quality/c6284)|格式函式的物件引數無效|
+|[C6285](/cpp/code-quality/c6285)|常數的邏輯 Or|
+|[C6286](/cpp/code-quality/c6286)|非零的邏輯 Or 遺失副作用|
+|[C6287](/cpp/code-quality/c6287)|重複的測試|
+|[C6288](/cpp/code-quality/c6288)|透過邏輯和的相互包含為 False|
+|[C6289](/cpp/code-quality/c6289)|邏輯或為 True 的相互排除|
+|[C6290](/cpp/code-quality/c6290)|邏輯 NOT 位元 AND 優先順序|
+|[C6291](/cpp/code-quality/c6291)|邏輯 NOT 位元 OR 優先順序|
+|[C6292](/cpp/code-quality/c6292)|從最大值的迴圈計數|
+|[C6293](/cpp/code-quality/c6293)|迴圈從最小值向下計數|
+|[C6294](/cpp/code-quality/c6294)|永遠不會執行迴圈主體|
+|[C6295](/cpp/code-quality/c6295)|無限迴圈|
+|[C6296](/cpp/code-quality/c6296)|迴圈只執行一次|
+|[C6297](/cpp/code-quality/c6297)|變換轉換成較大大小的結果|
+|[C6299](/cpp/code-quality/c6299)|位欄位與布林值的比較|
+|[C6302](/cpp/code-quality/c6302)|格式函式的字元字串引數無效|
+|[C6303](/cpp/code-quality/c6303)|格式函式的寬字元字串引數無效|
+|[C6305](/cpp/code-quality/c6305)|大小和計數用法不符|
+|[C6306](/cpp/code-quality/c6306)|不正確的變數引數函式呼叫|
+|[C6308](/cpp/code-quality/c6308)|Realloc 流失|
+|[C6310](/cpp/code-quality/c6310)|不合法的例外狀況篩選準則常數|
+|[C6312](/cpp/code-quality/c6312)|例外狀況繼續執行迴圈|
+|[C6314](/cpp/code-quality/c6314)|位 Or 優先順序|
+|[C6317](/cpp/code-quality/c6317)|不可補數|
+|[C6318](/cpp/code-quality/c6318)|例外狀況繼續搜尋|
+|[C6319](/cpp/code-quality/c6319)|略過逗號|
+|[C6324](/cpp/code-quality/c6324)|字串複製而不是字串比較|
+|[C6328](/cpp/code-quality/c6328)|引數類型可能不符|
+|[C6331](/cpp/code-quality/c6331)|VirtualFree 不正確旗標|
+|[C6332](/cpp/code-quality/c6332)|VirtualFree 不正確參數|
+|[C6333](/cpp/code-quality/c6333)|VirtualFree 不正確大小|
+|[C6335](/cpp/code-quality/c6335)|洩漏進程控制碼|
+|[C6381](/cpp/code-quality/c6381)|遺失關機資訊|
+|[C6383](/cpp/code-quality/c6383)|元素計數位節計數緩衝區溢位|
+|[C6384](/cpp/code-quality/c6384)|指標大小分割|
+|[C6385](/cpp/code-quality/c6385)|讀取滿溢|
+|[C6386](/cpp/code-quality/c6386)|寫入滿溢|
+|[C6387](/cpp/code-quality/c6387)|無效的參數值|
+|[C6388](/cpp/code-quality/c6388)|無效的參數值|
+|[C6500](/cpp/code-quality/c6500)|無效的屬性 (Attribute) 屬性 (Property)|
+|[C6501](/cpp/code-quality/c6501)|衝突的屬性 (Attribute) 屬性 (Property) 值|
+|[C6503](/cpp/code-quality/c6503)|參考不能是 Null|
+|[C6504](/cpp/code-quality/c6504)|非指標上的 Null|
+|[C6505](/cpp/code-quality/c6505)|Void 上的 MustCheck|
+|[C6506](/cpp/code-quality/c6506)|非指標或陣列上的緩衝區大小|
+|[C6508](/cpp/code-quality/c6508)|寫入存取常數|
+|[C6509](/cpp/code-quality/c6509)|先前的條件所用的 Return|
+|[C6510](/cpp/code-quality/c6510)|非指標上的 Null Terminated|
+|[C6511](/cpp/code-quality/c6511)|MustCheck 必須為 Yes 或 No|
+|[C6513](/cpp/code-quality/c6513)|不含緩衝區大小的元素大小|
+|[C6514](/cpp/code-quality/c6514)|緩衝區大小超過陣列大小|
+|[C6515](/cpp/code-quality/c6515)|非指標上的緩衝區大小|
+|[C6516](/cpp/code-quality/c6516)|屬性 (Attribute) 上沒有屬性 (Property)|
+|[C6517](/cpp/code-quality/c6517)|不能讀取的緩衝區上的有效大小|
+|[C6518](/cpp/code-quality/c6518)|不能寫入的緩衝區上的可寫入大小|
+|[C6522](/cpp/code-quality/c6522)|無效的大小字串類型|
+|[C6525](/cpp/code-quality/c6525)|無效的大小字串不可能執行到的位置|
+|[C6527](/cpp/code-quality/c6527)|無效的註釋：'NeedsRelease' 屬性不能用於 void 類型的值|
+|[C6530](/cpp/code-quality/c6530)|無法辨認的格式字串樣式|
+|[C6540](/cpp/code-quality/c6540)|在這個函式上使用屬性註釋會使其所有現有的 __declspec 註釋無效。|
+|[C6551](/cpp/code-quality/c6551)|無效的大小規格: 無法剖析運算式|
+|[C6552](/cpp/code-quality/c6552)|無效的 Deref= 或 Notref=: 無法剖析運算式|
+|[C6701](/cpp/code-quality/c6701)|值不是有效的 Yes/No/Maybe 值|
+|[C6702](/cpp/code-quality/c6702)|值不是字串值|
+|[C6703](/cpp/code-quality/c6703)|值不是數字|
+|[C6704](/cpp/code-quality/c6704)|未預期的註釋運算式錯誤|
+|[C6705](/cpp/code-quality/c6705)|註釋的預期引數數目不符合註釋的實際引數數目|
+|[C6706](/cpp/code-quality/c6706)|註釋發生未預期的註釋錯誤|
+|[C6995](/cpp/code-quality/c6995)|無法儲存 XML 記錄檔|
+|[C26100](/cpp/code-quality/c26100)|競爭條件|
+|[C26101](/cpp/code-quality/c26101)|無法正確使用連鎖操作|
+|[C26110](/cpp/code-quality/c26110)|呼叫端無法保存鎖定|
+|[C26111](/cpp/code-quality/c26111)|呼叫端無法釋放鎖定|
+|[C26112](/cpp/code-quality/c26112)|呼叫端無法保留任何鎖定|
+|[C26115](/cpp/code-quality/c26115)|無法釋放鎖定|
+|[C26116](/cpp/code-quality/c26116)|無法取得或保留鎖定|
+|[C26117](/cpp/code-quality/c26117)|釋放解除未保留鎖定|
+|[C26140](/cpp/code-quality/c26140)|並行 SAL 注釋錯誤|
+|[C28020](/cpp/code-quality/c28020)|此呼叫的運算式不是 true|
+|[C28021](/cpp/code-quality/c28021)|所標註的參數必須是指標|
+|[C28022](/cpp/code-quality/c28022)|這個函式上 (es) 的函式類別，與用來定義它的 typedef 上的函數類別 (es) 不相符。|
+|[C28023](/cpp/code-quality/c28023)|要指派或傳遞的函式，至少要有一個類別的函式 \_ \_ 類別 \_ 注釋 (es) |
+|[C28024](/cpp/code-quality/c28024)|指派給的函式指標會以函式類別來標注，該函式類別不包含在函數類別 (es) 清單中。|
+|[C28039](/cpp/code-quality/c28039)|實際參數的類型應該與類型完全相符|
+|[C28112](/cpp/code-quality/c28112)|透過連鎖函數存取的變數必須一律透過連鎖函式存取。|
+|[C28113](/cpp/code-quality/c28113)|透過連鎖函數存取本機變數|
+|[C28125](/cpp/code-quality/c28125)|函數必須從 try/except 區塊內呼叫|
+|[C28137](/cpp/code-quality/c28137)|變數引數應改為 (常值) 常數|
+|[C28138](/cpp/code-quality/c28138)|常數引數應改為變數|
+|[C28159](/cpp/code-quality/c28159)|請考慮改為使用其他函數。|
+|[C28160](/cpp/code-quality/c28160)|Error 註釋|
+|[C28163](/cpp/code-quality/c28163)|永遠不應該從 try/except 區塊內呼叫函式|
+|[C28164](/cpp/code-quality/c28164)|將引數傳遞至函式，而該函式需要物件的指標， (不是指標的指標) |
+|[C28182](/cpp/code-quality/c28182)|取值的指標為 NULL。 指標所包含的 NULL 值與另一個指標相同。|
+|[C28183](/cpp/code-quality/c28183)|引數可以是一個值，而且是在指標中找到之值的複本。|
+|[C28193](/cpp/code-quality/c28193)|變數會保留必須檢查的值|
+|[C28196](/cpp/code-quality/c28196)|未滿足需求。  (運算式未評估為 true。 ) |
+|[C28202](/cpp/code-quality/c28202)|非靜態成員的參考不合法|
+|[C28203](/cpp/code-quality/c28203)|類別成員的參考模稜兩可。|
+|[C28205](/cpp/code-quality/c28205)|\_\_ \_ \_ \_ 在不合法的內容中使用成功或失敗|
+|[C28206](/cpp/code-quality/c28206)|左運算元指向結構，請使用 '->'|
+|[C28207](/cpp/code-quality/c28207)|左運算元是結構，請使用 '.'|
+|[C28209](/cpp/code-quality/c28209)|符號的宣告有衝突的宣告|
+|[C28210](/cpp/code-quality/c28210)|_On_failure_ 內容的註釋不能在明確 pre context 中|
+|[C28211](/cpp/code-quality/c28211)|SAL_context 需要靜態內容名稱|
+|[C28212](/cpp/code-quality/c28212)|註釋需要指標運算式|
+|[C28213](/cpp/code-quality/c28213)|\_使用 \_ decl \_ 注釋 \_ 注釋必須用來參考先前的宣告，而不需要修改。|
+|[C28214](/cpp/code-quality/c28214)|屬性參數名稱必須是 p1...p9|
+|[C28215](/cpp/code-quality/c28215)|typefix 不能套用到已經有 typefix 的參數|
+|[C28216](/cpp/code-quality/c28216)|checkReturn 註釋只適用於特定函式參數的後置條件。|
+|[C28217](/cpp/code-quality/c28217)|對於函式，註釋的參數數目不符合檔案中找到的參數數目|
+|[C28218](/cpp/code-quality/c28218)|針對函式參數，注釋的參數不符合檔案中找到的參數|
+|[C28219](/cpp/code-quality/c28219)|註釋中標註的參數需要列舉的成員|
+|[C28220](/cpp/code-quality/c28220)|註釋中標註的參數需要整數運算式|
+|[C28221](/cpp/code-quality/c28221)|註釋中的參數需要字串運算式|
+|[C28222](/cpp/code-quality/c28222)|註釋需要 __yes、\__no 或 \__maybe|
+|[C28223](/cpp/code-quality/c28223)|找不到註釋參數需要的語彙基元/識別項|
+|[C28224](/cpp/code-quality/c28224)|註釋需要參數|
+|[C28225](/cpp/code-quality/c28225)|找不到註釋中必要參數的正確數目|
+|[C28226](/cpp/code-quality/c28226)|註釋不能也是 PrimOp (在目前宣告中)|
+|[C28227](/cpp/code-quality/c28227)|註釋不能也是 PrimOp (參閱之前的宣告)|
+|[C28228](/cpp/code-quality/c28228)|註釋參數: 不能在註釋中使用類型|
+|[C28229](/cpp/code-quality/c28229)|註釋不支援參數|
+|[C28230](/cpp/code-quality/c28230)|參數的類型沒有成員。|
+|[C28231](/cpp/code-quality/c28231)|註釋只在陣列上有效|
+|[C28232](/cpp/code-quality/c28232)|pre、post 或 deref 未套用至任何註釋|
+|[C28233](/cpp/code-quality/c28233)|pre、post 或 deref 已套用至區塊|
+|[C28234](/cpp/code-quality/c28234)|__at 運算式未套用到目前函式|
+|[C28235](/cpp/code-quality/c28235)|函式不能獨立成為註釋|
+|[C28236](/cpp/code-quality/c28236)|註釋不能用在運算式中|
+|[C28237](/cpp/code-quality/c28237)|不再支援參數上的註釋|
+|[C28238](/cpp/code-quality/c28238)|參數上的註釋具有一個以上的值：stringValue 和 longValue。 請使用 paramn=xxx|
+|[C28239](/cpp/code-quality/c28239)|參數上的註釋具有兩個值，stringValue 或 longValue 以及 paramn=xxx。 請只使用 paramn=xxx|
+|[C28240](/cpp/code-quality/c28240)|參數上的註釋有 param2 但沒有 param1|
+|[C28241](/cpp/code-quality/c28241)|無法辨認參數上的函式之註釋|
+|[C28243](/cpp/code-quality/c28243)|參數上的函式之註釋需要執行的取值比實際標註之類型允許的還多|
+|[C28244](/cpp/code-quality/c28244)|函數的注釋具有無法剖析的參數/外部注釋|
+|[C28245](/cpp/code-quality/c28245)|函式的註釋會在非成員函式上標註 'this'|
+|[C28246](/cpp/code-quality/c28246)|函式的參數註釋不符合參數的類型|
+|[C28250](/cpp/code-quality/c28250)|函式的註釋不一致：之前的執行個體有錯誤。|
+|[C28251](/cpp/code-quality/c28251)|函式的註釋不一致：這個執行個體有錯誤。|
+|[C28252](/cpp/code-quality/c28252)|函式的註釋不一致：參數有這個執行個體的另一個註釋。|
+|[C28253](/cpp/code-quality/c28253)|函式的註釋不一致：參數有這個執行個體的另一個註釋。|
+|[C28254](/cpp/code-quality/c28254)|註釋中不支援 dynamic_cast<>()|
+|[C28262](/cpp/code-quality/c28262)|在函式 (隸屬於註釋) 中找到註釋的語法錯誤|
+|[C28263](/cpp/code-quality/c28263)|找到內建註釋的條件式註釋語法錯誤|
+|[C28267](/cpp/code-quality/c28267)|在函式 (隸屬於註釋) 中找到註釋的語法錯誤。|
+|[C28272](/cpp/code-quality/c28272)|函式參數的註釋在檢查時，與函式宣告不一致|
+|[C28273](/cpp/code-quality/c28273)|對於函式，線索與函式宣告不一致|
+|[C28275](/cpp/code-quality/c28275)|\_宏值的參數 \_ \_ 為 null|
+|[C28279](/cpp/code-quality/c28279)|找到符號的 'begin'，但沒有相符的 'end'|
+|[C28280](/cpp/code-quality/c28280)|找到符號的 'end'，但沒有相符的 'begin'|
+|[C28282](/cpp/code-quality/c28282)|格式字串必須在前置條件中|
+|[C28285](/cpp/code-quality/c28285)|對於函式，參數中有語法錯誤|
+|[C28286](/cpp/code-quality/c28286)|對於函式，結尾附近發生語法錯誤|
+|[C28287](/cpp/code-quality/c28287)|函式的 \_At\_() 註釋中有語法錯誤 (無法辨認的參數名稱)|
+|[C28288](/cpp/code-quality/c28288)|函式的 \_At\_() 註釋中有語法錯誤 (無效的參數名稱)|
+|[C28289](/cpp/code-quality/c28289)|對於函式：ReadableTo 或 WritableTo 沒有有限的規格做為參數|
+|[C28290](/cpp/code-quality/c28290)|函式的註釋包含比實際參數數目還多的外部|
+|[C28291](/cpp/code-quality/c28291)|位於 deref 層級 0 的 post null/notnull 對函式是無意義的。|
+|[C28300](/cpp/code-quality/c28300)|運算子的運算式運算元類型不相容|
+|[C28301](/cpp/code-quality/c28301)|函式的第一個宣告沒有註釋。|
+|[C28302](/cpp/code-quality/c28302)|在註釋中發現額外的 \_Deref\_ 運算子。|
+|[C28303](/cpp/code-quality/c28303)|在註釋發現模擬兩可的 \_Deref\_ 運算子。|
+|[C28304](/cpp/code-quality/c28304)|發現有位置不正確的 \_Notref\_ 運算子套用至語彙基元。|
+|[C28305](/cpp/code-quality/c28305)|剖析語彙基元時發現錯誤。|
+|[C28306](/cpp/code-quality/c28306)|參數上的注釋為 sal|
+|[C28307](/cpp/code-quality/c28307)|參數上的注釋為 sal|
+|[C28350](/cpp/code-quality/c28350)|註釋描述了條件不適用的狀況。|
 |[C28351](/cpp/code-quality/c28351)|註釋描述條件中不可以使用動態值 (變數)。|
 |[CA1001 具有](../code-quality/ca1001.md)|具有可處置欄位的類型應該為可處置|
 |[CA1009](../code-quality/ca1009.md)|事件處理常式必須正確宣告|

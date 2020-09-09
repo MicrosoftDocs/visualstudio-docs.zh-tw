@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db6d4e8bc5b2f09194e03bbadc8f49b773d24f1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386949"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599493"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中傾印檔案
 
@@ -74,7 +74,7 @@ Visual Studio 偵錯工具可以儲存 Managed 程式碼或機器碼的傾印檔
 1. 流覽至路徑並選取傾印檔案的名稱，然後選取 [ **儲存**]。
 
 >[!NOTE]
->您可以使用任何支援 Windows 小型傾印格式的程式來建立傾印檔案。 例如，[Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) 提供的 **Procdump** 命令列公用程式可以根據觸發程序或視需要建立處理序損毀傾印檔案。 如需使用其他工具建立傾印檔案的相關資訊，請參閱 [需求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) 。
+>您可以使用任何支援 Windows 小型傾印格式的程式來建立傾印檔案。 例如，[Windows Sysinternals](/sysinternals/) 提供的 **Procdump** 命令列公用程式可以根據觸發程序或視需要建立處理序損毀傾印檔案。 如需使用其他工具建立傾印檔案的相關資訊，請參閱 [需求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) 。
 
 ## <a name="open-a-dump-file"></a><a name="BKMK_Open_a_dump_file"></a> 開啟傾印檔案
 

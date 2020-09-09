@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cbe14e1bf8c3a5e010e3c9e887a208b7e045b4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 878c2481164bc87d4af5e79a0a978e822e7baafe
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536509"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600248"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>適用于 Visual Studio Enterprise (c #、Visual Basic、c + +) 的 IntelliTrace
 
@@ -39,7 +39,7 @@ ms.locfileid: "85536509"
 
 ## <a name="what-do-you-want-to-do"></a>您想要做什麼事？
 
-|案例|標題|
+|狀況|Title|
 |-|-|
 |**使用 IntelliTrace 偵錯我的應用程式：**<br /><br /> - 顯示過去的事件。<br />- 顯示過去事件的呼叫資訊。<br />- 儲存 IntelliTrace 工作階段。<br />- 控制 IntelliTrace 收集的資料。|- [使用 IntelliTrace 檢查先前的應用程式狀態](../debugger/view-historical-application-state.md)<br />- [逐步解說：使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />- [歷程記錄調試](../debugger/historical-debugging.md)|
 |**從部署的應用程式中收集 IntelliTrace 資料**|- [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)|
@@ -68,7 +68,7 @@ IntelliTrace 也可協助您偵錯難以重現或在部署中發生的錯誤。 
 
 - Visual Studio 2015 Enterprise 或更新版本中的 IntelliTrace 會話，或舊版的 Visual Studio Ultimate。
 
-- 如果是使用 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 運作)，則為裝載於 IIS 上的 ASP.NET Web 應用程式或是在部署中執行的 SharePoint 2010 和 SharePoint 2013 應用程式。 請參閱 [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md) 和 [監視 Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx)。
+- 如果是使用 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 運作)，則為裝載於 IIS 上的 ASP.NET Web 應用程式或是在部署中執行的 SharePoint 2010 和 SharePoint 2013 應用程式。 請參閱 [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md) 和 [監視 Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12))。
 
 下面是一些 IntelliTrace 如何協助您偵錯的範例：
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 460277670d76ddcc1001ba2d6060107ea405601e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ccca00387e701d62e47eee0a93adff44a4765fa2
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350520"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600075"
 ---
 # <a name="debugging-a-data-bound-activex-control"></a>偵錯資料繫結的 ActiveX 控制項
 如果您正在開發一個將繫結至資料來源控制項的 ActiveX 控制項，您可建立自己的容器應用程式，並使用該容器來偵錯 ActiveX 控制項。
@@ -32,7 +32,7 @@ ms.locfileid: "85350520"
 ## <a name="using-the-test-container"></a>使用測試容器
  如果您希望有一個可輕鬆修改的容器，以便在控制項或容器上支援不同的介面，請使用 ActiveX 測試容器 (Test Container) 做為偵錯工作階段的可執行檔。 在 ActiveX 測試容器中，按一下 [容器]**** 功能表內的 [選項]****，以啟用不同的介面。 如需詳細資訊，請參閱 [使用測試容器測試屬性和事件](/cpp/mfc/testing-properties-and-events-with-test-container)。
 
- 如果您在偵錯時，需要逐步執行容器的程式碼，請使用容器的偵錯版本，或使用 ActiveX 測試容器的偵錯版本。 如需詳細資訊，請參閱[TSTCON 範例：ActiveX 控制項測試容器](https://msdn.microsoft.com/library/72fa40ef-27d3-400c-813f-10b03236e600)。
+ 如果您在偵錯時，需要逐步執行容器的程式碼，請使用容器的偵錯版本，或使用 ActiveX 測試容器的偵錯版本。 如需詳細資訊，請參閱[TSTCON 範例：ActiveX 控制項測試容器](/previous-versions/f9adb5t5(v=vs.100))。
 
 ## <a name="see-also"></a>另請參閱
 - [偵錯 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)

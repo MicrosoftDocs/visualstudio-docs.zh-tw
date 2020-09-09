@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4ae5e4f6f21208f02cbfd6513b3c5eb28124a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 659167b02703cd3a51751fbe90fbd9408b5e623d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350585"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599567"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>使用 IntelliTrace (C#、Visual Basic) 於部署後診斷問題
 
@@ -153,7 +153,7 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
  **/p： BuildSymbolStorePath =**\<*path to symbols*>
 
 ## <a name="step-2-release-your-app"></a><a name="DeployRelease"></a>步驟 2：發行您的應用程式
- 如果使用在建置流程中建立的 [Web.Deploy 套件](https://msdn.microsoft.com/library/dd394698.aspx) 來部署 App，建置資訊清單的名稱會從 "*ProjectName*.BuildInfo.config" 自動重新命名為 "BuildInfo.config"，並且會放在 Web 伺服器上 App 的 Web.config 檔案所在之相同的資料夾中。
+ 如果使用在建置流程中建立的 [Web.Deploy 套件](/previous-versions/aspnet/dd394698(v=vs.110)) 來部署 App，建置資訊清單的名稱會從 "*ProjectName*.BuildInfo.config" 自動重新命名為 "BuildInfo.config"，並且會放在 Web 伺服器上 App 的 Web.config 檔案所在之相同的資料夾中。
 
  如果使用其他方法來部署 App，請確定將建置資訊清單的名稱從 "*ProjectName*.BuildInfo.config" 重新命名為 "BuildInfo.config"，並將其放在 Web 伺服器上 App 的 Web.config 檔案所在之相同的資料夾中。
 
@@ -361,7 +361,7 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
 
  ![在沒有已對應之工作區的情況下從原始檔控制開啟](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
-#### <a name="q-why-cant-i-continue-until-i-choose-a-team-collection-or-a-different-collection"></a><a name="ChooseTeamProject"></a> 問：在我選擇 Team 集合或另一個集合之前，為何無法繼續執行？
+#### <a name="q-why-cant-i-continue-until-i-choose-a-team-collection-or-a-different-collection"></a><a name="ChooseTeamProject"></a> 問：在我選擇 team 集合或另一個集合之前，為何無法繼續？
  **答：** 下列任一原因都有可能造成此結果：
 
 - Visual Studio 未連接到 TFS。

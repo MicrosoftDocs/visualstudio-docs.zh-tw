@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 841b73bbb0c1f226e4a31a812bf8745bda1f118c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 796d8aa15aa3612b140917ccfa9db7663c0b0ad3
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507868"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599461"
 ---
 # <a name="code-metrics-values"></a>程式碼度量值
 
@@ -34,13 +34,13 @@ ms.locfileid: "87507868"
 
 下列清單顯示 Visual Studio 計算的程式碼度量結果：
 
-- 可**維護性索引**-計算介於0和100之間的索引值，表示維護程式碼的相對便利性。 高價值表示較佳的可維護性。 色彩編碼分級可以用來快速找出程式碼中的問題點。 綠色的評等介於20到100之間，表示程式碼具有良好的可維護性。 黃色的評等介於10和19之間，表示程式碼為適度維護。 紅色評等是介於0到9之間的評等，表示低維護性。 如需詳細資訊，請參閱可 [維護性索引範圍和意義](https://blogs.msdn.microsoft.com/codeanalysis/2007/11/20/maintainability-index-range-and-meaning/) 的 blog 文章。
+- 可**維護性索引**-計算介於0和100之間的索引值，表示維護程式碼的相對便利性。 高價值表示較佳的可維護性。 色彩編碼分級可以用來快速找出程式碼中的問題點。 綠色的評等介於20到100之間，表示程式碼具有良好的可維護性。 黃色的評等介於10和19之間，表示程式碼為適度維護。 紅色評等是介於0到9之間的評等，表示低維護性。 如需詳細資訊，請參閱可 [維護性索引範圍和意義](/archive/blogs/codeanalysis/maintainability-index-range-and-meaning) 的 blog 文章。
 
 - 迴圈**複雜度**-測量程式碼的結構複雜度。 它是藉由計算程式流程中的不同程式碼路徑數目來建立。 具有複雜控制流程的程式需要進行更多測試，才能達到良好的程式碼涵蓋範圍，且較不容易維護。 如需詳細資訊，請參閱 [適用于圈複雜度的維琪百科專案](https://wikipedia.org/wiki/Cyclomatic_complexity)。
 
 - **繼承深度** -表示繼承自另一個類別的不同類別數目，並返回基類。 繼承深度類似于類別結合，因為基類的變更可能會影響其任何繼承的類別。 這個數位愈大，繼承越深入，而基類修改可能會導致中斷性變更。 針對繼承深度，較低的值是良好的，且較高的值是不正確的。
 
-- **類別** 結合-透過參數、區域變數、傳回型別、方法呼叫、泛型或樣板具現化、基類、介面實現、在外部類型上定義的欄位，以及屬性裝飾，來測量與唯一類別的結合。 良好的軟體設計會指出類型和方法應該具有高一致性和低耦合。 高度結合表示很難重複使用和維護的設計，因為它在其他類型上有許多相關性。 如需詳細資訊，請參閱 [類別](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) 結合的 blog 文章。
+- **類別** 結合-透過參數、區域變數、傳回型別、方法呼叫、泛型或樣板具現化、基類、介面實現、在外部類型上定義的欄位，以及屬性裝飾，來測量與唯一類別的結合。 良好的軟體設計會指出類型和方法應該具有高一致性和低耦合。 高度結合表示很難重複使用和維護的設計，因為它在其他類型上有許多相關性。 如需詳細資訊，請參閱 [類別](/archive/blogs/zainnab/code-metrics-class-coupling) 結合的 blog 文章。
 
 ::: moniker range=">=vs-2019"
 

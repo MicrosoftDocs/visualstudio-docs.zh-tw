@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1208db68f2ae65775c6e0a5b6cf4bda0fb35d8
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: a40273c3230854e4b1d1a11a3fd02de54d5df745
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509454"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599969"
 ---
 # <a name="security-warnings"></a>安全性警告
 
@@ -28,12 +28,12 @@ ms.locfileid: "89509454"
 
 ## <a name="in-this-section"></a>本節內容
 
-|規則|描述|
+|規則|說明|
 |----------|-----------------|
 |[CA2100:必須檢閱 SQL 查詢中是否有安全性弱點](../code-quality/ca2100.md)|方法會使用透過字串引數所建置的字串，將 System.Data.IDbCommand.CommandText 屬性設定為方法。 這項規則假設字串引數包含使用者輸入。 從使用者輸入所建置的 SQL 命令字串很容易遭到 SQL 插入攻擊。|
 |[CA2109:必須檢閱可見的事件處理常式](../code-quality/ca2109.md)|偵測到公用或保護的事件處理方法。 除非有絕對的必要性，否則不應該公開事件處理方法。|
 |[CA2119:密封方法以滿足私用介面的要求](../code-quality/ca2119.md)|可繼承的公用類型會提供內部 (在 Visual Basic 中為 Friend) 介面的可覆寫方法實作。 若要修正此規則的違規情形，請避免在組件外覆寫方法。|
-|[CA2153:避免處理損毀狀態例外狀況](../code-quality/ca2153.md)|[損毀狀態例外狀況 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) 指出您的處理序中有記憶體損毀的狀況。 如果攻擊者將攻擊放入損毀的記憶體區域，則攔截這些處理序而非讓它們損毀，會導致安全性弱點。|
+|[CA2153:避免處理損毀狀態例外狀況](../code-quality/ca2153.md)|[損毀狀態例外狀況 (CSE)](/archive/msdn-magazine/2009/february/clr-inside-out-handling-corrupted-state-exceptions) 指出您的處理序中有記憶體損毀的狀況。 如果攻擊者將攻擊放入損毀的記憶體區域，則攔截這些處理序而非讓它們損毀，會導致安全性弱點。|
 |[CA2300：請勿使用不安全的還原序列化程式 BinaryFormatter](../code-quality/ca2300.md)|在還原序列化不受信任的資料時，不安全的還原序列化程式很容易。 攻擊者可以修改序列化的資料，以包含未預期的類型，以插入具有惡意副作用的物件。|
 |[CA2301：未先設定 BinaryFormatter.Binder 之前，請勿呼叫 BinaryFormatter.Deserialize](../code-quality/ca2301.md)|在還原序列化不受信任的資料時，不安全的還原序列化程式很容易。 攻擊者可以修改序列化的資料，以包含未預期的類型，以插入具有惡意副作用的物件。|
 |[CA2302：呼叫 BinaryFormatter.Deserialize 之前，請務必先設定 BinaryFormatter.Binder](../code-quality/ca2302.md)|在還原序列化不受信任的資料時，不安全的還原序列化程式很容易。 攻擊者可以修改序列化的資料，以包含未預期的類型，以插入具有惡意副作用的物件。|

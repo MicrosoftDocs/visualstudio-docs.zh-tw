@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: b7d9ed2f2ceeae21b85fdb8227e65715cb07bc8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87f8fbec389e3735b6f1c39cdd671a391c7334d7
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350559"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600103"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>在偵錯工具時，從 .NET 元件產生原始程式碼
 
@@ -27,7 +27,7 @@ ms.locfileid: "85350559"
 > [!NOTE]
 > * 原始程式碼產生 (反向組譯) 僅適用于 .NET 應用程式，並以開放原始碼 [ILSpy](https://github.com/icsharpcode/ILSpy) 專案為基礎。
 > * 反向組譯僅適用于 Visual Studio 2019 16.5 和更新版本。
-> * 將 [SuppressIldasmAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) 屬性套用至元件或模組，可防止 Visual Studio 嘗試反向組譯。
+> * 將 [SuppressIldasmAttribute](/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) 屬性套用至元件或模組，可防止 Visual Studio 嘗試反向組譯。
 
 ## <a name="generate-source-code"></a>產生原始程式碼
 
@@ -99,7 +99,7 @@ ms.locfileid: "85350559"
 
 ### <a name="just-my-code"></a>Just My Code
 
-[Just My Code (JMC) ](https://docs.microsoft.com/visualstudio/debugger/just-my-code)設定可讓 Visual Studio 不進入系統、架構、程式庫及其他非使用者呼叫。 在偵錯工具中，[ **模組** ] 視窗會顯示偵錯工具視為 My Code (使用者程式碼) 的程式碼模組。
+[Just My Code (JMC) ](./just-my-code.md)設定可讓 Visual Studio 不進入系統、架構、程式庫及其他非使用者呼叫。 在偵錯工具中，[ **模組** ] 視窗會顯示偵錯工具視為 My Code (使用者程式碼) 的程式碼模組。
 
 優化或發行模組的反向組譯會產生非使用者程式碼。 例如，如果偵錯工具在您反向組譯的非使用者程式碼中中斷，則不會出現 **任何來源** 視窗。 若要停用 Just My Code，請流覽至 [**工具**  >  **選項**] (或 [**調試**  >  **選項**]) > **Debugging**  >  **[一般**]，然後取消選取 [**啟用 Just My Code**]。
 
