@@ -1,18 +1,18 @@
 ---
-title: 透過 Microsoft for Startups 計畫向初學者提供的 Visual Studio 訂用帳戶
+title: 透過 Microsoft 的新創公司計畫提供給新創公司的 Visual Studio 訂閱 |Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 詳細說明 Microsoft for Startups 計劃提供哪些訂閱。
-ms.openlocfilehash: 6c2fdcfc9fa71c1906a1033ac719b07cb0b157a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 600f2e92843ee734766ea5e2d797620cd622892b
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80233261"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561451"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>向初學者提供的 Visual Studio 訂用帳戶
 加入 Microsoft for 新創公司計畫的合格新創公司，可以獲得 5 Visual Studio Enterprise [每月的雲端訂閱](https://visualstudio.microsoft.com/vs/pricing/)。 

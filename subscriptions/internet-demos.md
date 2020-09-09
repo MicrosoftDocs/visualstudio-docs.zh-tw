@@ -1,18 +1,18 @@
 ---
 title: 透過終端機服務使用產品金鑰來支援網際網路示範 |Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 1c5ede60-cb5a-4d5f-a6a2-a1f536f6c4ad
-ms.date: 03/09/2020
+ms.date: 09/08/2020
 ms.topic: conceptual
 description: 了解如何透過終端機服務使用產品金鑰來支援網際網路示範並啟用 RDS 存取
-ms.openlocfilehash: 2d5f23f0d161ee9f50569e0ff7f8ce585c8c49ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35cda937aac7282756a1d6397b914c03e16b14fe
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232433"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561308"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>透過終端機服務存取網際網路示範
 透過 Visual Studio 訂用帳戶，您可以授權使用者透過終端機服務 (Windows Server 2003 或 Windows Server 2008) 或遠端桌面服務 (Windows Server 2008 R2 及更新版本) 存取您程式的網際網路示範。 以這種方式同時存取示範的匿名使用者最多限 200 名。 示範絕對不可以使用生產資料。 Visual Studio 訂閱者享有向使用者示範其應用程式的權利。 使用終端機服務 (TS) 或遠端桌面服務 (RDS) 存取網際網路示範的目的，只在讓沒有 Visual Studio 訂用帳戶的使用者，可以在軟體經由 Visual Studio 訂用帳戶獲得授權之後，與示範應用程式互動。

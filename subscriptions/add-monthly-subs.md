@@ -1,5 +1,5 @@
 ---
-title: 將新的每 Visual Studio 月訂用帳戶新增至訂用帳戶管理入口網站 |Microsoft Docs
+title: 將新的每月訂閱新增至訂用帳戶管理入口網站 |Microsoft Docs
 author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
@@ -7,12 +7,12 @@ ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 09/03/2020
 ms.topic: how-to
 description: 瞭解如何在訂用帳戶管理入口網站中，新購買的每月 Visual Studio 訂閱
-ms.openlocfilehash: 209484968e85613da7cf38af3dce6944413c678a
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: d765e03d2c499c8e96bb97fc532596b7cfd0b903
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426822"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561399"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>將新的每月 Visual Studio 訂用帳戶新增至訂用帳戶管理入口網站
 當您使用 Azure 訂用帳戶購買新的每月 Visual Studio 訂用帳戶時，您可能需要將這些訂用帳戶新增至訂用帳戶管理入口網站，才能將它們指派給使用者。  
@@ -28,14 +28,14 @@ ms.locfileid: "89426822"
 1. 在 [ **管理訂閱者** ] 索引標籤上，選擇 [ **新增合約** ] 下拉式清單 
 1. 在下拉式清單中選擇**新的每月訂閱**
    > [!div class="mx-imgBorder"]
-   > ![加入新的每月訂閱下拉式清單](_img/add-monthly-subs/add-subs-drop-down.png)
+   > ![加入新的每月訂閱下拉式清單](_img/add-monthly-subs/add-subs-drop-down.png "選擇 [新增合約]，然後選擇 [新的每月訂閱]。")
 1. 系統會搜尋任何您具有「使用者存取系統管理員」許可權的 Azure 訂用帳戶，並將匯入使用這些 Azure 訂用帳戶購買的任何 Visual Studio 訂用帳戶。
 1. 如果找不到具有使用者存取系統管理員許可權的 Azure 訂用帳戶，或找到符合資格的 Azure 訂用帳戶，但找不到任何 Visual Studio 訂用帳戶，您將會收到下列訊息：
    > [!div class="mx-imgBorder"]
-   > ![找不到任何新的每月訂閱](_img/add-monthly-subs/no-subs-found.png)
+   > ![找不到任何新的每月訂閱](_img/add-monthly-subs/no-subs-found.png "指出沒有 Azure 訂用帳戶或 Visual Studio 訂用帳戶可供您使用的錯誤訊息。")
 1. 如果找到新的每月訂閱，您將會收到確認訊息
    > [!div class="mx-imgBorder"]
-   > ![訂用帳戶已新增確認訊息](_img/add-monthly-subs/subs-added-confirmation.png)
+   > ![訂用帳戶已新增確認訊息](_img/add-monthly-subs/subs-added-confirmation.png "確認訊息將會顯示您已新增的訂用帳戶。")
 
 ## <a name="things-to-keep-in-mind"></a>要牢記在心的事項
 - 新增每月訂閱的選項只有在您第一次購買時才可使用。  新增每月訂用帳戶之後，我們會在您每次登入入口網站時檢查是否有新的訂閱。 

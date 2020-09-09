@@ -1,18 +1,18 @@
 ---
-title: 使用公司或學校帳戶登入 Visual Studio 訂用帳戶 | Microsoft Docs
+title: 使用公司或學校帳戶登入 Visual Studio 訂閱 |Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
-ms.date: 03/11/2020
+ms.date: 09/08/2020
 ms.topic: how-to
 description: 了解如何使用公司或學校帳戶登入 Visual Studio 訂用帳戶。
-ms.openlocfilehash: 74007dbca34294b580c1dacac7a8fef0da883f9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50cb122f1df5b9e6f87d53d3170d59c8f4d4b306
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906135"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561425"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>使用公司或學校帳戶登入 Visual Studio 訂用帳戶 
 
@@ -57,7 +57,7 @@ ms.locfileid: "85906135"
     - 若一個路徑失敗，請嘗試另一個。  訂閱帳戶系統管理員可能修改您的訂用帳戶。
 
 5. 輸入您的密碼。
-6. 按一下 **[登入]** 。
+6. 按一下 [ **登入**]。
 7. 此時應該會顯示 [權益] 頁面。
 
 ## <a name="frequently-asked-questions"></a>常見問題集

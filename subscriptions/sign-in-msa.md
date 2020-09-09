@@ -1,18 +1,18 @@
 ---
-title: 使用 Microsoft 帳戶 (MSA) 登入 Visual Studio 訂用帳戶 | Microsoft Docs
+title: 使用 Microsoft 帳戶登入 Visual Studio 訂閱 |Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
-ms.date: 03/11/2020
+ms.date: 09/08/2020
 ms.topic: how-to
 description: 如何使用 Microsoft 帳戶 (MSA) 登入 Visual Studio 訂用帳戶
-ms.openlocfilehash: 566829318404b4231b37e53ae7ec34500a3a7838
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0193c3731840d694bc13764542b1df31c808027
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906148"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561438"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>使用 Microsoft 帳戶 (MSA) 登入 Visual Studio 訂用帳戶
 
@@ -28,7 +28,7 @@ ms.locfileid: "85906148"
    > 此地址也存在於當您購買訂用帳戶或註冊 Visual Studio Dev Essentials 時收到的歡迎電子郵件中。 若找不到您的歡迎電子郵件，請檢查您的垃圾郵件資料夾。
 
 3. 輸入您的密碼。
-4. 按一下 **[登入]** 。
+4. 按一下 [ **登入**]。
 5. 此時應該會顯示 [權益] 頁面。
 
 ## <a name="frequently-asked-questions"></a>常見問題集

@@ -1,18 +1,18 @@
 ---
-title: 馬上使用限定 Visual Studio 訂用帳戶中的 DataCamp 權益，以加強您的資料科學技巧。 | Microsoft Docs
+title: Visual Studio 訂用帳戶中使用 DataCamp 擴大資料科學技能 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
 ms.date: 04/17/2020
 ms.topic: how-to
 description: 了解所選取 Visual Studio 訂用帳戶隨附的 DataCamp 訓練課程訂用帳戶。
-ms.openlocfilehash: 49370b4b3425effc4b8eeef704684420edfd3d41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b164dc4be4a06151b970ecd5522b82bde9aaeec7
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904515"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561490"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 DataCamp 訓練課程權益
 合格的 Visual Studio 訂閱包含 DataCamp 訂閱。  透過 DataCamp，您可以輕鬆從瀏覽器學習所需的所有資料科學技能。 您可以選擇何時學習及學習內容。 不需要安裝任何軟體且沒有任何特殊硬體需求，學習資料科學比以往更容易。
@@ -29,7 +29,7 @@ ms.locfileid: "85904515"
    > [!NOTE]
    > 當您開始建立帳戶時，可能會收到下列錯誤訊息：「糟糕！  您的促銷代碼無效或已到期。」  由於您的促銷代碼會在建立後的數分鐘到期，因此可能發生這個情況。  若您收到此訊息，只要回到[權益](https://my.visualstudio.com/benefits)頁面並按一下 DataCamp 權益磚上的 [啟用]**** 連結即可。
 
-4. 建立帳戶之後，您可以選擇學習路徑。  這些選項包括：
+4. 建立帳戶之後，您可以選擇學習路徑。  選項包括：
     - Start learning R for Data Science (開始學習適用於資料科學的 R)
     - Start learning Python for Data Science (開始學習適用於資料科學的 Python)
     - Develop your Data Science Skillset (開發您的資料科學技能集)
@@ -59,12 +59,12 @@ ms.locfileid: "85904515"
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 3 個月       |  否。  僅提供給新訂閱者使用          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl | 3 個月       |  否。  僅提供給新訂閱者使用          |
-| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 3 個月                                                            |  否。  僅提供給新訂閱者使用           |
-| 含 GitHub Enterprise 的 Visual Studio Professional| Vl | 3 個月                                                            |  否。  僅提供給新訂閱者使用           |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 3 個月                                             |  否。  僅提供給新訂閱者使用           |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 3 個月                                              |  否。  僅提供給新訂閱者使用           |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 3 個月       |  不會。  僅提供給新訂閱者使用          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl | 3 個月       |  不會。  僅提供給新訂閱者使用          |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 3 個月                                                            |  不會。  僅提供給新訂閱者使用           |
+| 含 GitHub Enterprise 的 Visual Studio Professional| Vl | 3 個月                                                            |  不會。  僅提供給新訂閱者使用           |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 3 個月                                             |  不會。  僅提供給新訂閱者使用           |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 3 個月                                              |  不會。  僅提供給新訂閱者使用           |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |無法使用  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 

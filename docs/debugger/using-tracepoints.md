@@ -1,7 +1,7 @@
 ---
 title: 使用追蹤點的記錄資訊 |Microsoft Docs
 ms.date: 10/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - tracepoints, about tracepoints
 author: Sagar-S-S
@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: fcc9f01315d3783af1a1f124785cd74fafb215bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187307"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561334"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>使用 Visual Studio 中的追蹤點將資訊記錄到輸出視窗
 
@@ -110,7 +110,7 @@ ms.locfileid: "73187307"
 
 ![條件運算式計數](../debugger/media/conditionalexpressionhitcount.png "條件運算式計數")
 
-### <a name="filter"></a>Filter
+### <a name="filter"></a>篩選
 針對篩選準則，指定要為其顯示哪些裝置、進程或執行緒輸出。
 
 ![條件運算式篩選](../debugger/media/conditionalexpressionfilter.png "條件運算式篩選")

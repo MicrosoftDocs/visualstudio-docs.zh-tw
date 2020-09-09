@@ -8,16 +8,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d50f8fcad0294adec032322229e9dd6cedac2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 147a7dbc029ae894a0054837e92feb0108dc19b4
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88508076"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561584"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>使用或不使用偵錯工具來執行分析工具
 
-Visual Studio 提供各種效能測量和分析工具的選擇。 某些工具（例如 CPU 使用量和記憶體使用量）可以使用或不使用偵錯工具來執行，也可以在發行或偵錯工具設定上執行。 效能分析工具工具（例如應用程式時間軸）可以在 debug 或 release 組建上執行。 偵錯工具整合的工具（例如診斷工具的 [視窗] 和 [事件] 索引標籤）只會在偵測會話期間執行。
+Visual Studio 提供各種效能測量和分析工具的選擇。 某些工具（例如 CPU 使用量和記憶體使用量）可以使用或不使用偵錯工具來執行，也可以在發行或偵錯工具設定上執行。 出現在 [ [診斷工具] 視窗](../profiling/profiling-feature-tour.md#view-performance-while-debugging) 中的工具只會在偵測會話期間執行。 出現在 [效能分析工具](../profiling/profiling-feature-tour.md#post_mortem) 中的工具會在沒有偵錯工具的情況下執行，而且您會在選擇停止和收集事後剖析後分析) 的資料 (之後分析結果。
 
 >[!NOTE]
 >您可以在 Windows 7 和更新版本中使用非偵錯工具的效能工具。 若要執行偵錯工具整合的分析工具，需要 Windows 8 或更新版本。
@@ -46,6 +46,11 @@ Visual Studio 提供各種效能測量和分析工具的選擇。 某些工具�
 - 如果您正在執行 Visual Studio Enterprise，可以前往 [**工具**  >  **選項**  >  **IntelliTrace**] 來啟用或停用 IntelliTrace。
 
 在您停止偵錯時，診斷工作階段就會結束。
+
+如需詳細資訊，請參閱：
+
+- [透過分析 CPU 使用量測量應用程式效能](../profiling/beginners-guide-to-performance-profiling.md)
+- [在 Visual Studio 中測量記憶體使用量](../profiling/memory-usage.md)
 
 ### <a name="the-events-tab"></a>[事件] 索引標籤
 
@@ -86,6 +91,15 @@ Visual Studio 提供各種效能測量和分析工具的選擇。 某些工具�
 您可以儲存報表，並在 [診斷工具啟動] 頁面上的 [ **最近開啟的會話** ] 清單中開啟報表。
 
 ![診斷工具最近開啟的會話清單螢幕擷取畫面](../profiling/media/diaghubopenexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
+
+如需詳細資訊，請參閱：
+
+- [分析 CPU 使用量](../profiling/cpu-usage.md)
+- [分析 .NET 程式碼的記憶體使用量](../profiling/dotnet-alloc-tool.md)
+- [分析記憶體使用量](../profiling/analyze-memory-usage.md)
+- [分析 .NET 非同步程式碼的效能](../profiling/analyze-async.md)
+- [分析資料庫效能](../profiling/analyze-database.md)
+- [分析 GPU 使用量](../profiling/gpu-usage.md)
 
 ## <a name="collect-profiling-data-from-the-command-line"></a>從命令列收集程式碼剖析資料
 

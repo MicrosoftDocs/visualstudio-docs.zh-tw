@@ -1,18 +1,18 @@
 ---
-title: 從訂閱者入口網站連絡您的訂用帳戶管理員
+title: 在訂閱者入口網站中聯絡您的訂用帳戶管理員 |Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
-ms.date: 03/07/2020
+ms.date: 09/08/2020
 ms.topic: how-to
 description: 了解如何連絡您的訂用帳戶管理員以協助解決問題。
-ms.openlocfilehash: d3469fa5c8ba69cf5a4d4dab6d5c4b6be070f4d8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43a0c4ac090331bb9e9c65c232f5277aaee890a7
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247428"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561412"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>取得訂用帳戶管理員的協助
 如果您的 Visual Studio 訂用帳戶是由公司或學校提供給您，則其可能是由訂用帳戶管理員 (或「管理員」) 指派給您。  管理員可以指派或移除訂用帳戶、變更登入電子郵件地址、判斷您是否能夠下載軟體，以及執行與訂用帳戶相關的其他功能。

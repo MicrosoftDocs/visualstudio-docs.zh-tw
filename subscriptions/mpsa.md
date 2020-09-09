@@ -1,18 +1,18 @@
 ---
-title: Microsoft 產品和服務合約 (MPSA) 中的 Visual Studio 訂閱 | Microsoft Docs
+title: MPSA 中的 Visual Studio 訂閱 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 09/03/2020
 ms.topic: conceptual
-description: Microsoft 產品和服務合約 (MPSA) 中的 Visual Studio 訂閱
-ms.openlocfilehash: c5ba75038c1e87415eecdcb669698cfe5bbcacd2
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+description: '瞭解如何在 Microsoft 產品和服務合約中管理 Visual Studio 訂用帳戶 (MPSA) '
+ms.openlocfilehash: 9d26bccebb11a59933c37ec0f29a9b6e30e86c5b
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426742"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561386"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Microsoft 產品和服務合約 (MPSA) 中的 Visual Studio 訂閱
 如果您已透過 MPSA 方案購買「Visual Studio 訂閱」，必須先了解幾個事項，才能成為 Visual Studio 訂閱系統管理員並將訂閱指派給您的使用者。 如果您已具備系統管理員身分，則可以直接前往 Visual Studio 訂閱[系統管理入口網站](https://manage.visualstudio.com/)。

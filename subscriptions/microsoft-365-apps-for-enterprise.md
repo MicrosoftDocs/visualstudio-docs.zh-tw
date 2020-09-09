@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 訂用帳戶中 Microsoft 365 企業權益的應用程式 |Microsoft Docs
+title: Visual Studio 訂用帳戶中適用于企業的 Microsoft 365 應用程式 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: 深入瞭解並安裝適用于企業的 Microsoft 365 應用程式
-ms.openlocfilehash: eb9f87273cbd8439f5053f60411e41fac41e4161
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0249f2c97ba93c49985629143dabb842447c196f
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800810"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561248"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中適用于企業的 Microsoft 365 應用程式
 您可以在選取的 Visual Studio 訂用帳戶中，取得適用于 enterprise (的 Microsoft 365 應用程式先前的 Office 365 Pro Plus)  

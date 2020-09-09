@@ -1,18 +1,18 @@
 ---
-title: Visual Studio 訂用帳戶可在 Microsoft Store 中購買 |Microsoft Docs
+title: Visual Studio Microsoft Store 中提供的訂閱 |Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
 ms.date: 04/13/2020
 ms.topic: how-to
 description: 瞭解如何在 Microsoft Store 購買 Visual Studio 訂用帳戶，並在 Visual Studio 訂用帳戶入口網站中加以啟用。
-ms.openlocfilehash: f6fdb8dcc8b0e3eaa5e67692e7c3dd92f1467c5a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9eb4812d22096e9d36089e464dc9a37478480458
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247488"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561571"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Visual Studio 訂閱可透過 Microsoft Store 取得
 Visual Studio 訂用帳戶可透過各種不同的管道提供，包括 [大量授權](https://www.microsoft.com/licensing/default)、雲端解決方案提供者、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)和 Microsoft Store。  本文將透過 [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio)探索購買和啟用訂閱。  

@@ -1,18 +1,18 @@
 ---
-title: Visual Studio 訂用帳戶中的 Microsoft Windows 虛擬桌面權益 |Microsoft Docs
+title: Visual Studio 訂用帳戶中的 Microsoft Windows 虛擬桌面 |Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/20/2020
+ms.date: 09/08/2020
 ms.topic: conceptual
 description: 瞭解如何透過您的 Visual Studio 訂用帳戶來利用 Microsoft Windows 虛擬桌面
-ms.openlocfilehash: 865e18d7b8672520fcb771a1db56141fb6fd9f0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f598aca8d277ca443b10dac289fae756ccd95432
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800602"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561360"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>存取訂用帳戶中的 Windows 虛擬桌面 
 Visual Studio 訂閱者現在可以將其 Azure 開發/測試人員點數用於 Microsoft Windows 虛擬桌面服務。  
@@ -31,7 +31,7 @@ Visual Studio 訂閱者現在有數種方式可使用 Azure 訂用帳戶來支�
 - [Azure DevTest 隨用隨付訂用](vs-azure-payg.md)帳戶。  您可以建立 Azure 訂用帳戶並附加付款條件，讓您有順暢的方式來為您的 Windows 虛擬桌面使用量付費。 
 - [Azure Enterprise 合約 DevTest 優惠](azure-ea-devtest.md)。  有了這種供應專案，具有 Enterprise 合約的訂閱者可以用折扣價格支付 Azure 的 Windows 虛擬桌面費用。 
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 Windows 虛擬桌面需要 Azure Active Directory (Azure AD) 將會聯結 Vm。  使用者必須是此 Azure AD 的成員。  有兩個選項可執行 Azure AD：
 - Azure AD 目錄服務。  對於大部分的使用者而言，這是最容易執行的選項。
 - 執行網域控制站促銷的虛擬機器。  此選項需要更多的工作來設定，但可為大多數使用者提供較低的營運成本。
