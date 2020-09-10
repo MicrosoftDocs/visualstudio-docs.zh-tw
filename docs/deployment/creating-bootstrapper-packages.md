@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f84f91ebedd47df8c0804adee35dcbec18d8551
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17ac6fdb6b2eaf80d927407e717954842f6e6b1b
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89314858"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641657"
 ---
 # <a name="create-bootstrapper-packages"></a>建立啟動載入器套件
 安裝程式是一般安裝程式，可設定來偵測及安裝可轉散發元件，例如 Windows Installer (*.msi*) 檔案和可執行程式。 安裝程式也稱為啟動載入器。 其程式設計方式是透過一組 XML 資訊清單，指定用於管理元件安裝的中繼資料。  ClickOnce 的必要條件對話方塊中顯示的每個可轉散發元件（或 **必要條件** ）都是啟動載入器套件。 啟動載入器套件是一組目錄和檔案，內含描述必要條件安裝方式的資訊清單檔案。
@@ -122,4 +122,4 @@ CustomBootstrapperPackage
 - [How to: Install prerequisites with a ClickOnce application](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md) (如何：使用 ClickOnce 應用程式安裝必要元件)
 - [必要條件對話方塊](../ide/reference/prerequisites-dialog-box.md)
 - [產品和套件架構參考](../deployment/product-and-package-schema-reference.md)
-- [使用 Visual Studio 2005 啟動載入器開始安裝](https://msdn.microsoft.com/magazine/cc163899.aspx)
+- [使用 Visual Studio 2005 啟動載入器開始安裝](/archive/msdn-magazine/2004/october/visual-studio-2005-bootstrapper-start-kick-your-installation)

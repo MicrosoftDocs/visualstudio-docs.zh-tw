@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41cd62e8831ac4edd5b37337c1e72dd0b2e662e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41f8a790decbd3af20141c1c95fcaed678a2ec6a
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536288"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641534"
 ---
 # <a name="publish-clickonce-applications"></a>發佈 ClickOnce 應用程式
 首次發行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，可以使用 [發行精靈] 來設定發行屬性。 這個精靈僅提供少數屬性；所有其他屬性都設為其預設值。
@@ -48,7 +48,7 @@ ms.locfileid: "85536288"
 ## <a name="publish-page"></a>發行頁面
  [專案設計工具] **** 的 [發行] **** 頁面，可用以設定 ClickOnce 部署的屬性。 下表列出相關主題。
 
-|標題|描述|
+|Title|描述|
 |-----------|-----------------|
 |[How to: Specify where Visual Studio copies the files](../deployment/how-to-specify-where-visual-studio-copies-the-files.md) (如何：指定 Visual Studio 複製檔案的位置)|描述如何設定 Visual Studio 放置應用程式檔案和資訊清單的位置。|
 |[How to: Specify the location where end users will install from (如何：指定終端使用者會從該處安裝的位置)](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|描述如何設定使用者下載及安裝應用程式的位置。|
@@ -72,7 +72,7 @@ ms.locfileid: "85536288"
 ### <a name="publish-options-dialog-box"></a>發佈選項對話方塊
  [發行選項] 對話方塊會指定應用程式的部署選項。
 
-|標題|描述|
+|Title|描述|
 |-|-|
 |[How to: Change the publish language for a ClickOnce application](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md) (如何：變更 ClickOnce 應用程式的發行語言)|描述如何指定語言和文化特性，以符合當地語系化的版本。|
 |[How to: Specify a Start menu name for a ClickOnce application](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md) (如何：指定 ClickOnce 應用程式的 [開始] 功能表名稱)|描述如何變更 ClickOnce 應用程式的顯示名稱。|
@@ -84,7 +84,7 @@ ms.locfileid: "85536288"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|Title|描述|
 |-----------|-----------------|
 |[How to: Create file associations For a ClickOnce application](../deployment/how-to-create-file-associations-for-a-clickonce-application.md) (如何：建立 ClickOnce 應用程式的檔案關聯)|描述如何將副檔名支援加入 ClickOnce 應用程式。|
 |[How to: Retrieve query string information in an online ClickOnce application](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md) (如何：在線上 ClickOnce 應用程式中擷取查詢字串資訊)|示範如何擷取在 URL 中傳遞以執行 ClickOnce 應用程式的參數。|
@@ -96,7 +96,7 @@ ms.locfileid: "85536288"
 |[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|說明如何使用.NET Framework 公用程式，部署 ClickOnce 應用程式。|
 |[逐步解說：手動部署不需要重新簽署而且會保留商標資訊的 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)|說明如何使用 .NET Framework 公用程式，部署 ClickOnce 應用程式，但不重新簽署資訊清單。|
 |[如何：將專案設定成以各種平台為目標](../ide/how-to-configure-projects-to-target-platforms.md)|說明如何透過變更專案中的 [目標 CPU]**** 或 [平台目標]**** 屬性，針對 64 位元處理器發佈。|
-|[逐步解說：讓 ClickOnce 應用程式可在多個 .NET Framework 版本上執行](https://msdn.microsoft.com/library/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|說明如何啟用 ClickOnce 應用程式，在 NET Framework 的多個版本上安裝及執行。|
+|[逐步解說：讓 ClickOnce 應用程式可在多個 .NET Framework 版本上執行](/previous-versions/dd996998(v=vs.100))|說明如何啟用 ClickOnce 應用程式，在 NET Framework 的多個版本上安裝及執行。|
 |[逐步解說：為 ClickOnce 應用程式建立自訂安裝程式](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|說明如何建立自訂安裝程式，來安裝 ClickOnce 應用程式。|
 |[How to: Publish a WPF application with visual styles enabled](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md) (如何：發行已啟用視覺化樣式的 WPF 應用程式)|提供逐步指示，解決在您嘗試發行啟用視覺化樣式的 WPF 應用程式時出現的錯誤。|
 

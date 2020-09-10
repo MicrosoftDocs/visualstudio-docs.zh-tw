@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7125be46a894072f034bf1fce3060d2bda564aff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20524a02cf6ff38e8336ae715162f9f197d46590
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800825"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641646"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>將您的應用程式部署到資料夾、IIS、Azure 或其他目的地
 
@@ -84,7 +84,7 @@ ms.locfileid: "88800825"
 
 調整裝載於虛擬機器的應用程式涉及依需求啟動其他 VM，然後部署必要軟體。 這個額外控制層可讓您在全球各地區以不同的方式調整。 例如，如果您的應用程式服務各種地區辦公室的員工，則可以依據這些地區域中的員工數目來調整 VM，而這可能會降低成本。
 
-如需其他資訊，請參閱 Azure App Service、Azure 虛擬機器以及其他 Azure 服務之間的[詳細比較](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/)，而您可以使用 Visual Studio 中的 [自訂] 選項將這些 Azure 服務用作部署目標。
+如需其他資訊，請參閱 Azure App Service、Azure 虛擬機器以及其他 Azure 服務之間的[詳細比較](/azure/architecture/guide/technology-choices/compute-decision-tree)，而您可以使用 Visual Studio 中的 [自訂] 選項將這些 Azure 服務用作部署目標。
 
 #### <a name="when-to-choose-azure-virtual-machines"></a>選擇 Azure 虛擬機器的時機
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 651f981117cdd9b9cfb26aae61bbd4e2747e921d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8083ed11537975bfd05f546843264881fe7a7aa0
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900382"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641470"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 部署範例和逐步解說
 本節包含範例應用程式、範例程式碼和逐步解說，說明用來部署 Windows Forms、WPF 和主控台應用程式的語法、結構和技術。
@@ -39,4 +39,4 @@ ms.locfileid: "62900382"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 逐步解說](https://msdn.microsoft.com/library/f5399a1f-2d3d-42fb-b989-134ccda2159f)
+- [Visual Studio 逐步解說](/previous-versions/szatc41e(v=vs.110))

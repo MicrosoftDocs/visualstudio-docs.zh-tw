@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: 雲端訂用帳戶帳單問題。
-ms.openlocfilehash: 8ef98fc3c6e81071984cdc0fb8ef6f6dab626b48
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 987dddcf54f218d63580995b363ad838f2de83b4
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561321"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641444"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 雲端訂閱帳單常見問題集
 請務必[比較雲端訂閱權益和定價](https://visualstudio.microsoft.com/vs/pricing/)，利用雲端與標準 Visual Studio 訂閱之間的比較、訂閱者權益的詳細資料以及其他更多，了解每個 Visual Studio 訂用帳戶的權益。
@@ -31,7 +31,7 @@ ms.locfileid: "89561321"
 
 ## <a name="enterprise-agreement-ea-customers"></a>Enterprise 合約 (EA) 客戶
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>問：是否可以使用 Enterprise 合約購買 Visual Studio 雲端訂閱？
-答：可以。 您必須是為 EA 所建立之 Azure 訂用帳戶的擁有者或參與者。 請確定您是直接在 Visual Studio Marketplace 購買 Visual Studio 雲端訂閱。 您不可以使用訂單購買 Visual Studio 雲端訂閱？
+答：可以。 針對您的 EA 所建立的 Azure 訂用帳戶，您必須是參與者或更高的角色。 請確定您是直接在 Visual Studio Marketplace 購買 Visual Studio 雲端訂閱。 您不可以使用訂單購買 Visual Studio 雲端訂閱？
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>問：如何判斷我是否有必要的權限，可透過我組織的 Enterprise 合約在 Visual Studio Marketplace 購買服務？
 答：判斷您是否擁有正確許可權的最簡單方法，就是選取 Visual Studio Marketplace 中所提供之服務的 [ **購買** ] 按鈕。

@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3fa32e6155959df6e665a807af3b364923ba3f54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9c7da96df8c68de0b9f6ba3e341d93596200934
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533454"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641475"
 ---
 # <a name="language-conventions"></a>語言慣例
 
@@ -50,7 +50,7 @@ Visual Studio 中 EditorConfig 的語言慣例分為兩類：適用於 Visual Ba
 
 語言慣例嚴重性可指定要強制執行該樣式的層級。 下表列出可能的嚴重性值及其效果：
 
-嚴重性 | 效果
+Severity | 效果
 :------- | ------
 `error` | 違反此樣式規則時，顯示編譯器錯誤。
 `warning` | 違反此樣式規則時，顯示編譯器警告。
@@ -1049,6 +1049,30 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 | **適用的語言** | C# 6.0+ 和 Visual Basic 14+ |
 | **值** | `true` -偏好為參考相等方法的 null 檢查<br /><br />`false` -偏好參考相等的方法為 null 檢查 |
 | **Visual Studio 預設值** | `true:silent` |
+
+程式碼範例：
+
+```csharp
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+if (value is null)
+    return;
+
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = false
+if (object.ReferenceEquals(value, null))
+    return;
+```
+
+```vb
+' dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+If value Is Nothing
+    Return
+End If
+
+' dotnet_style_prefer_is_null_check_over_reference_equality_method = false
+If Object.ReferenceEquals(value, Nothing)
+    Return
+End If
+```
 
 ## <a name="net-code-quality-settings"></a>.NET 程式碼品質設定
 

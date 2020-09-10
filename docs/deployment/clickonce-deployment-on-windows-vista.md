@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4beefddd429384fadda71d9742e8c0fac606c38e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b76804eb8c06acbcdeac017108773056ee38338
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900498"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641492"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista 的 ClickOnce 部署
 
@@ -52,6 +52,6 @@ Visual Studio 針對資訊清單產生提供下列選項：
 
 ## <a name="see-also"></a>另請參閱
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
-- [使用者權限和 Visual Studio](https://msdn.microsoft.com/library/d5c55084-1e7b-4b61-b478-137db01c0fc0)
+- [使用者權限和 Visual Studio](/previous-versions/ms165100(v=vs.100))
 - [專案設計工具，應用程式頁 (C#)](../ide/reference/application-page-project-designer-csharp.md)
 - [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)

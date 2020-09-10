@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9b0e22f56ab68be521eda7a765a2be7e23bbf92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed7945dac94527df51dcdd601113f8874cd36142
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093957"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641636"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 *Authenticode* 是 Microsoft 技術，使用業界標準密碼編譯簽署有數位憑證的應用程式程式碼，以確認應用程式發行者真偽。 使用 Authenticode 部署應用程式， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以降低特洛伊木馬程式的風險。 特洛伊木馬程式是誤以為來自於已建立、可信任來源的合法程式，其實是惡意第三方的病毒或其他有害的程式。 使用數位憑證簽署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署是選擇性的步驟，用以確認組件和檔案未遭竄改。
@@ -48,7 +48,7 @@ ms.locfileid: "79093957"
 
  相反地，來自 CA 的憑證，例如，憑證廠商或貴企業內部的部門，能為您的使用者提供更高的安全性。 它不只會識別簽署軟體的發行者，還會檢查簽署的 CA 驗證身分識別。 如果 CA 不是根授權單位，Authenticode 也會「鏈結」回根授權單位，確認 CA 有權發行憑證。 為了更高的安全性，您應該盡可能使用 CA 發出的憑證。
 
- 如需產生自我憑證的詳細資訊，請參閱 [new-selfsignedcertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate) 或 [MakeCert](/windows/desktop/SecCrypto/makecert)。
+ 如需產生自我憑證的詳細資訊，請參閱 [new-selfsignedcertificate](/powershell/module/pkiclient/new-selfsignedcertificate) 或 [MakeCert](/windows/desktop/SecCrypto/makecert)。
 
 ### <a name="timestamps"></a>時間戳記
  簽署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式所用的憑證會在一定時間後過期，通常是十二個月。 為免經常需要使用新憑證重新簽署應用程式， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 支援時間戳記。 使用時間戳記簽署應用程式後，只要時間戳記有效，憑證即使到期仍被接受。 這可讓使用過期憑證，但時間戳記有效的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，能夠下載並執行。 它也允許使用過期憑證的已安裝應用程式，能夠繼續下載並安裝更新。
