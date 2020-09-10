@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：將內容類型連結至副檔名 |Microsoft Docs
+title: 將內容類型連結至副檔名
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,17 +10,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4e5ba3cd82090b5fad76d48c4600e0814bd91eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7224c98c55567ed091b09c1a69e630573eb34be8
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904682"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743209"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>逐步解說：將內容類型連結至副檔名
 您可以定義自己的內容類型，並使用編輯器 Managed Extensibility Framework (MEF) 擴充功能來連結副檔名。 在某些情況下，副檔名已由語言服務定義。 但是，若要搭配 MEF 使用它，您仍然必須將它連結至內容類型。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-mef-project"></a>建立 MEF 專案

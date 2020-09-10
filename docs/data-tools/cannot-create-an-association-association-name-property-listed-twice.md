@@ -1,5 +1,6 @@
 ---
-title: 無法建立關聯：屬性已列出兩次
+title: 屬性列出了兩次
+description: 無法建立關聯：屬性已列出兩次
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.technology: vs-data-tools
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 50c9311ef09172ea082d2419495f26b51ff1d6a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c496a25b093c88cca68d31bd22ccc6deca9a33a
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536795"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743200"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>無法建立關聯&lt;關聯名稱&gt;：屬性已列出兩次
 
@@ -32,7 +33,7 @@ ms.locfileid: "85536795"
 
 - 檢查 [關聯屬性]****，並移除重複項目。
 
-- 按一下 [確定]  。
+- 按一下 [確定]。
 
 ## <a name="see-also"></a>另請參閱
 

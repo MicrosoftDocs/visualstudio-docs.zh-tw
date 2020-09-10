@@ -1,5 +1,6 @@
 ---
-title: " (Visual Studio 範本的 PromptForSaveOnCreation 元素) |Microsoft Docs"
+title: PromptForSaveOnCreation 項目 (Visual Studio 範本)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +15,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 2e6bbd62120da59da1fb26e671c1aa02f33949f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffc610cf701bdf5be3a0b6116455ac413fbd6dcd
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701784"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743131"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a> (Visual Studio 範本的 PromptForSaveOnCreation 元素) 
 

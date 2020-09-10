@@ -1,5 +1,6 @@
 ---
-title: 將資料集和 TableAdapter 分成不同的專案
+title: 使用個別專案錯誤
+description: 將資料集和 TableAdapter 分成不同的專案
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 504e2411d20a85c85047e4827d613bf4f48034e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e54a28a7d5c5dc9ae8353266f49234ef8468410
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281548"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743105"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>將資料集和 TableAdapter 分成不同的專案
 已增強具類型的資料集，以便可以在個別的專案中產生 [tableadapter](create-and-configure-tableadapters.md) 和資料集類別。 這可讓您快速地分隔應用層，並產生多層式資料應用程式。

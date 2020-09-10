@@ -1,5 +1,5 @@
 ---
-title: 擴充屬性、工作清單、輸出和選項視窗
+title: '[擴充屬性]、[工作清單]、[輸出]、[選項] 視窗'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,17 +15,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db14068c97ff6868f5fb73c9ddd790020e99e7c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3059dbe1c28f0fd598e1a711952fa0bce8c4edde
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711628"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743339"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>擴充屬性、工作清單、輸出和選項視窗
 您可以存取 Visual Studio 中的任何工具視窗。 本逐步解說將示範如何將工具視窗的相關資訊整合至新的 [ **選項** ] 頁面和 [ **屬性** ] 頁面上的新設定，以及如何寫入 **工作清單** 和 **輸出** 視窗中。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-an-extension-with-a-tool-window"></a>使用工具視窗建立擴充功能

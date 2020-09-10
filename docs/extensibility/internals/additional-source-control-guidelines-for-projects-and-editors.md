@@ -1,5 +1,5 @@
 ---
-title: 專案和編輯器的其他原始檔控制指導方針 |Microsoft Docs
+title: 專案和編輯器的原始檔控制指導方針
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 181f6c10ff7ce95cd3a37151f117353d1bb47d41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b783fdf7231bd3f440686a1bef2a038d9b32f2e4
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710113"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743392"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>專案和編輯器的其他原始檔控制指導方針
 為了支援原始檔控制，專案和編輯器必須遵守一些指導方針。
@@ -23,7 +23,7 @@ ms.locfileid: "80710113"
 ## <a name="guidelines"></a>指導方針
  您的專案或編輯器也應該執行下列作業，以支援原始檔控制：
 
-|區域|專案|編輯器|詳細資料|
+|區域|Project|編輯器|詳細資料|
 |----------|-------------|------------|-------------|
 |檔案的私用複本|X||環境支援檔的私用複本。 也就是說，在專案中登錄的每個人都有自己的私用該專案中的檔案複本。|
 |ANSI/Unicode 持續性|X|X|如果您撰寫持續性程式碼，請將檔案保存在 ANSI 格式中，因為大部分的原始檔控制程式目前不支援 Unicode。|

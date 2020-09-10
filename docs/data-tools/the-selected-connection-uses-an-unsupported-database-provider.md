@@ -1,5 +1,6 @@
 ---
-title: 選取的連接使用不支援的資料提供者
+title: 不支援的資料庫提供者
+description: 選取的連接使用不支援的資料提供者
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 4d25dfa1-8fa4-4529-9b90-973bc2ec2993
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 52b88e1de91c2b2da629b6b9034ac552b8d88d5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ff4120796a40da00e258026d8db84ba6e9dbb21
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281314"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743273"
 ---
 # <a name="the-selected-connection-uses-an-unsupported-database-provider"></a>選取的連接使用不支援的資料提供者
 

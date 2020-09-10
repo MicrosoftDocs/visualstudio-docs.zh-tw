@@ -1,5 +1,6 @@
 ---
-title: 無法建立關聯：屬性類型不符
+title: 屬性類型不相符
+description: 無法建立關聯：屬性類型不符
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b9735c711abe7826d241e8c8aa7ade0a5f5d5e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76d61361677923afda6125db1ae819a460a567f4
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536717"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743192"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>無法建立關聯&lt;關聯名稱&gt;：屬性類型不符
 
@@ -31,7 +32,7 @@ ms.locfileid: "85536717"
 
 3. 檢查**關聯屬性**，並選取資料類型相同的屬性。
 
-4. 按一下 [確定]  。
+4. 按一下 [確定]。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：建立多電腦建置環境
+title: 建立多電腦建置環境
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bec0ada652da4ac02c457cdc280778487e4b27a1
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68461529"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743129"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦建置環境
 
@@ -42,7 +42,7 @@ ms.locfileid: "68461529"
 - UWP 應用程式。 若要建置 UWP 應用程式，您必須在建置電腦上安裝 Visual Studio。
 - 以 .NET Framework 4 (含) 以前版本為目標的傳統型應用程式。 若要建置這些應用程式類型，您必須在組建電腦上安裝 Visual Studio 或 .NET 參考組件和工具 (從 Windows 7.1 SDK)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 已安裝 [.NET 桌面開發]**** 工作負載的 Visual Studio。
 

@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4faeff1e60fa77e3bf9e995c61c841f626468a1b
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312583"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743335"
 ---
 # <a name="code-style-preferences"></a>程式碼樣式喜好設定
 
@@ -59,6 +59,14 @@ ms.locfileid: "89312583"
 ### <a name="preference-and-severity"></a>喜好設定和嚴重性
 
 對於此頁面上的各個程式碼樣式，您可以使用每一行的下拉式清單來設定 [喜好設定]**** 和 [嚴重性]**** 的值。 [嚴重性] 可設定為 [僅重構]****、[建議]****、[警告]**** 或 [錯誤]****。 如果您想要針對程式碼樣式啟用[快速動作](../ide/quick-actions.md)，請務必將 [嚴重性]**** 設定設為 [僅重構]**** 以外的值。 **Quick Actions** ![ ](media/light-bulb-dropdown.png) ![ 當使用非慣用樣式時，會出現快速動作燈泡燈泡、錯誤燈泡錯誤燈泡 ](media/error-bulb.png) 或螺絲起子 ![ 螺絲起子 ](media/screwdriver.png) 圖示，而且您可以在 [**快速動作**] 清單中選擇一個選項，以自動將程式碼重寫為慣用的樣式。
+
+::: moniker range=">=vs-2019"
+
+## <a name="enforce-code-styles-on-build"></a>在組建上強制執行程式碼樣式
+
+從 Visual Studio 2019 16.8 版（包括 .NET 5.0 RC2 SDK）開始，您可以對所有 .NET 專案 [強制執行組建的 .net 程式碼慣例](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) 。 在組建階段，.NET 程式碼樣式違規將會顯示為「IDE」前置詞的警告或錯誤。 這可讓您在程式碼基底中嚴格強制執行一致的程式碼樣式。
+
+::: moniker-end
 
 ## <a name="apply-code-styles"></a>套用程式碼樣式
 

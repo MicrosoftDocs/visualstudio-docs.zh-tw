@@ -1,5 +1,6 @@
 ---
-title: 相關的服務和介面 (原始檔控制 VSPackage) |Microsoft Docs
+title: 相關的服務和介面 (原始檔控制 VSPackage)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +12,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 533f1bf4fcfbaebb25ec10908abf4a46ddacd521
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e0806ca278305a530a4f4f3e0d4abdf7977067e
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705632"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743075"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>相關的服務和介面 (原始檔控制 VSPackage)
+
 此區段會列出中的所有原始檔控制 VSPackage 相關介面 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 。 原始檔控制 VSPackage 會實作為這些介面的一部分，並使用其他介面來完成原始檔控制工作。
 
 ## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>由和針對原始檔控制 Vspackage 所執行的介面
+
  中描述下列介面 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ，而原始檔控制 VSPackage 會根據其所需的功能集來執行這些介面的子集。 某些介面會標示為必要，且必須由每個原始檔控制 VSPackage 來執行。
 
  針對封裝未執行的介面，會 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供預設的實值。 請注意，預設的執行是針對未註冊任何 VSPackage 且未控制任何專案的情況而設計。 正確撰寫的原始檔控制 VSPackage 會執行所有必要的介面，而不是將其保留為這些介面的預設執行。
@@ -40,7 +43,7 @@ ms.locfileid: "80705632"
 | - | - |--------------------------|-------------|
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | 編輯器會在修改或儲存檔案之前呼叫這個介面。 如果簽出失敗，原始檔控制 VSPackage 可以簽出檔案或拒絕作業。 | 原始檔控制 VSPackage | 建議 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> | 這個介面會為專案提供基本的原始檔控制功能，例如使用原始檔控制註冊和取消註冊專案，並提供基本原始檔控制圖像的支援。 | 原始檔控制 VSPackage | 必要 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> | 這個介面是使用函式來取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> ，或直接將實作為的物件轉換 `IVsHierarchy` 成 `IVsSccProject2` 。 它是用來取得專案中原始檔控制下的檔案，或是用來通知專案目前的原始檔控制狀態或位置。 | 專案 | 必要 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> | 這個介面是使用函式來取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> ，或直接將實作為的物件轉換 `IVsHierarchy` 成 `IVsSccProject2` 。 它是用來取得專案中原始檔控制下的檔案，或是用來通知專案目前的原始檔控制狀態或位置。 | Project | 必要 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> | 整合模組使用此介面來設定目前作用中的 VSPackage。 | 原始檔控制 VSPackage | 必要 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> | 這個介面是以訂用帳戶模型為基礎。 任何 VSPackage 都可以表示它想要接收檔事件，並由 shell 針對即將發生的事件發出建議。 它是由執行和處理 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，進而將執行的事件傳遞 `IVsTrackProjectDocumentsEvents2` 至 VSPackage。 | 原始檔控制存根 | 必要 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments3> | 此介面提供批次處理、同步處理的讀取/寫入作業，以及 advanced `OnQueryAddFiles` 方法。 | 原始檔控制存根 | 必要 |
@@ -53,7 +56,7 @@ ms.locfileid: "80705632"
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs> | VSPackage 會使用這個介面，將其他字元定義為 **方案總管**中節點的原始檔控制圖像。 | 原始檔控制 VSPackage | 選擇性 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccAddWebProjectFromSourceControl> | Web 專案的 [ **加入** ] 對話方塊會使用此介面。 它會提供方法來流覽原始檔控制位置，以及開啟先前在該位置的原始檔控制存放庫中新增的 Web 專案。 | 原始檔控制 VSPackage | 建議 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> | 這個介面可支援從原始檔控制載入專案的非同步 (背景) 。 | 原始檔控制 VSPackage | 選擇性 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents> | 這個介面可讓專案監看啟動非同步載入的進度 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> 。 | 專案 | 選擇性 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents> | 這個介面可讓專案監看啟動非同步載入的進度 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> 。 | Project | 選擇性 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccToolsOptions> | 這個介面可讓 IDE 查詢作用中的原始檔控制 VSPackage。 IDE 會查詢原始檔控制設定的值，即使沒有註冊任何使用中的原始檔控制 VSPackage 亦是如此。 這個介面是由執行和處理 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 | 原始檔控制存根 | 必要 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> | 這個介面是用來註冊原始檔控制 VSPackage。 | 原始檔控制存根 | 必要 |
 | <xref:EnvDTE.SourceControl> | 此介面會在自動化中使用。 因此，它只會公開可在不顯示任何 UI 的情況下執行的函式。 | 原始檔控制 VSPackage | 選擇性 |
