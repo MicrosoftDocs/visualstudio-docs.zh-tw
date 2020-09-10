@@ -1,5 +1,6 @@
 ---
-title: 使用延伸模組套件專案範本建立延伸模組套件 |Microsoft Docs
+title: 建立延伸模組套件
+description: 瞭解如何使用延伸模組套件專案範本建立延伸模組套件
 ms.date: 07/27/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +11,18 @@ ms.author: anthc
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa1c141e18a3870eaad4b155d816e30ee207f45d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5a0021061aefceafc2b048a3e231d9c0300db7b
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697754"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742918"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>逐步解說：建立延伸模組組件
 
 擴充功能套件是一組可一起安裝的延伸模組。 延伸模組套件可讓您輕鬆地與其他使用者共用您最愛的擴充功能，或將一組延伸模組組合在一組特定案例中。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 從 Visual Studio 2015 開始，Visual Studio SDK 在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
@@ -31,7 +32,7 @@ ms.locfileid: "80697754"
 
 延伸模組套件專案範本會建立延伸模組套件，其中包含可一起安裝的延伸模組集合。
 
-1. 在 [ **新增專案** ] 對話方塊中，搜尋 "vsix" 並選取 [ **vsix 專案**]。 在 [ **專案名稱**] 中，輸入「測試擴充功能套件」。 選取 [建立]  。
+1. 在 [ **新增專案** ] 對話方塊中，搜尋 "vsix" 並選取 [ **vsix 專案**]。 在 [ **專案名稱**] 中，輸入「測試擴充功能套件」。 選取 [建立]。
 
 2. 在 [**方案總管**中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 移至 [ **Visual c #** 擴充性] 節點，然後選取 [擴充功能 **套件**]。 將預設的檔案名保留 (ExtensionPack1.cs) 。
 
@@ -83,7 +84,7 @@ ms.locfileid: "80697754"
 
 2. 按一下 [ **線上** ]，然後搜尋「測試擴充功能套件」。
 
-3. 按一下 [下載]  。 延伸模組及其內含的延伸模組清單，將會排程安裝。
+3. 按一下 [下載] 。 延伸模組及其內含的延伸模組清單，將會排程安裝。
 
 4. 以下是 [ **管理擴充** 功能] 對話方塊的範例擴充功能套件下載視圖。 如果您只想要在延伸模組套件中安裝部分包含的延伸模組，您可以在 [ **排程安裝**] 中修改擴充功能清單。
 

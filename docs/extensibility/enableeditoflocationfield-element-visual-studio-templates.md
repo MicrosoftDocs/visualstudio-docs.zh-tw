@@ -1,5 +1,6 @@
 ---
-title: " (Visual Studio 範本的 EnableEditOfLocationField 元素) |Microsoft Docs"
+title: EnableEditOfLocationField 項目 (Visual Studio 範本)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e15e2f5c070b8a8c565497c6ba3fc6490b87591
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9baee9e7497f5b65022b8a0b938f4a8a63140ab2
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711997"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741717"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a> (Visual Studio 範本的 EnableEditOfLocationField 元素) 
 指定使用者是否可以編輯 [位置] 欄位。

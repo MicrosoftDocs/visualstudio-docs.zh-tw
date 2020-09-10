@@ -1,23 +1,24 @@
 ---
 title: 使用 ASP.NET Core 和 React.js Visual Studio 容器工具
+titleSuffix: ''
 author: ghogen
 description: 了解如何使用 Visual Studio 容器工具和適用於 Windows 的 Docker
 ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: d92d3a22570fb21381f18f2ce353dbc2d999893b
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 2ac295982bb6ac0f6eaf6408106e3d95024af14d
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485394"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741880"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>快速入門：在 Visual Studio 中搭配使用 Docker 與回應單一頁面應用程式
 
 使用 Visual Studio，您可以輕鬆地建置、偵錯和執行容器化的 ASP.NET Core 應用程式 (包括具有用戶端 JavaScript 的應用程式，例如 React.js 單一頁面應用程式)，並發佈到 Azure Container Registry (ACR)、Docker Hub、Azure App Service 或您自己的容器登錄。 在本文中，我們將發佈到 ACR。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)

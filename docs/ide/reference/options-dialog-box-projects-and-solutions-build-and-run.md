@@ -1,5 +1,5 @@
 ---
-title: 選項對話方塊、專案和方案、建置和執行
+title: 選項對話方塊、專案和方案、組建和執行
 ms.date: 07/14/2017
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ba5bbf34ecc12c2508c538e74909ee0a10aef4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b4bcc033ba80778f3446b3089972c63006508ca
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68461398"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742755"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>選項對話方塊： \> 建立和執行專案和方案
 

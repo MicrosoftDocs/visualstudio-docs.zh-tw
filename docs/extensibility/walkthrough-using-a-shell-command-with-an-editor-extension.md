@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：搭配編輯器延伸模組使用 Shell 命令 |Microsoft Docs
+title: 搭配編輯器延伸模組使用 shell 命令
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,19 +10,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e9f7de69cfd969db8ae905ea65bbf868cf2c88a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ebec1b2c58f5a2ae79e6f361d74e57cd935c177
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904457"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742027"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>逐步解說：搭配編輯器延伸模組使用 shell 命令
 從 VSPackage，您可以將功能表命令之類的功能加入編輯器中。 本逐步解說示範如何藉由叫用功能表命令，在編輯器中將裝飾加入至文本視圖。
 
  本逐步解說將示範如何使用 VSPackage 搭配 Managed Extensibility Framework (MEF) 元件部分。 您必須使用 VSPackage 向 Visual Studio shell 註冊功能表命令。 而且，您可以使用命令來存取 MEF 元件部分。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-an-extension-with-a-menu-command"></a>使用功能表命令建立擴充功能

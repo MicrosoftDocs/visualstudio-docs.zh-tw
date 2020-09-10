@@ -1,5 +1,5 @@
 ---
-title: 將 Web 應用程式移轉並發佈至 Azure 雲端服務
+title: 將 web 應用程式遷移和發佈至雲端服務
 description: 了解如何使用 Visual Studio 將 Web 應用程式移轉並發佈至 Azure 雲端服務
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: c95c96815872c259cab761d8b4af36141f866dbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06b283e7382fc135e3cd327db0200622de4f5228
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280553"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739982"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>如何：從 Visual Studio 將 web 應用程式遷移和發佈至 Azure 雲端服務
 

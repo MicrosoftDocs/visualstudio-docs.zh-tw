@@ -1,17 +1,17 @@
 ---
-title: Visual Studio 容器工具 Docker Compose 組建設定
+title: Docker Compose 組建設定
 author: ghogen
 description: 容器工具組建流程的總覽
 ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 6d352461fd6ad96ae40d9c38a250c93018b1cd9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: deed01e2aa719df7ffeb038f022ef9d6d4b8cc71
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283147"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741856"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 組建屬性
 

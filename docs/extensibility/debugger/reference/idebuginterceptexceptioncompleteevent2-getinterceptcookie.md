@@ -1,5 +1,6 @@
 ---
-title: IDebugInterceptExceptionCompleteEvent2：： GetInterceptCookie |Microsoft Docs
+title: IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9065c0b7868efaeb70c10a3ab921a8764694662e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d5b333b060fb49e71b803eb5744a57863e51581
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727785"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89738358"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 在攔截例外狀況的處理完成時呼叫。

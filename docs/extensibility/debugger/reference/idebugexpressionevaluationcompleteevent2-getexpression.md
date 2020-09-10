@@ -1,5 +1,6 @@
 ---
-title: IDebugExpressionEvaluationCompleteEvent2：： System.componentmodel.design.serialization.codedomserializerbase.getexpression |Microsoft Docs
+title: IDebugExpressionEvaluationCompleteEvent2::GetExpression
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0c6ed79edadf9191604291a4c6f0f07b0aa1f0dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d495909b385b431aed1ee3d339449f165f28051
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729584"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742803"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getexpression"></a>IDebugExpressionEvaluationCompleteEvent2::GetExpression
 取得原始的運算式。

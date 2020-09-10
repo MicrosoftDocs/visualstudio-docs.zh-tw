@@ -1,5 +1,5 @@
 ---
-title: 舊版語言服務中的 [自動變數] 視窗支援 |Microsoft Docs
+title: 支援舊版語言服務中的 [自動變數] 視窗
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75f8c761721dde5dad4bb75b8675f71f678b06df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3567739dabe68bc028a1bb935337c149637cfd20
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704888"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741452"
 ---
-# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>舊版語言服務中對自動變數視窗的支援
+# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>舊版語言服務中的 [自動變數] 視窗支援
+
 [自動變數] 視窗會顯示如中斷點或例外狀況) 而暫停 ** (的變數** 和參數等運算式。 運算式可以包含變數、本機或全域，以及已在區域範圍中變更的參數。 [自動變數] 視窗也可以包含類別、結構或其他 **類型的具** 現化。 運算式評估工具可以評估的任何作業都可能會顯示在 **[自動** 變數] 視窗中。
 
  受控封裝架構 (MPF) 不會提供自動 **變數視窗的** 直接支援。 但是，如果您覆寫 <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> 方法，您可以傳回要在 [自動變數] 視窗中顯示**Autos**的運算式清單。
 
 ## <a name="implementing-support-for-the-autos-window"></a>執行自動變數視窗的支援
+
  為了支援 [自動 **變數] 視窗** ，您只需要 <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> 在類別中執行方法 <xref:Microsoft.VisualStudio.Package.LanguageService> 。 如果原始程式檔中的位置出現 **在 [自動變數] 視窗** 中，則您的實行必須決定。 方法會傳回字串清單，其中每個字串都代表單一運算式。 的傳回值 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 表示清單包含運算式，而 <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> 表示沒有可顯示的運算式。
 
  傳回的實際運算式是在程式碼中出現于該位置的變數或參數名稱。 這些名稱會傳遞給運算式評估工具，以取得接著顯示在 [自動變數] 視窗 **中的值** 和類型。

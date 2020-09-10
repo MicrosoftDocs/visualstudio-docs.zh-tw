@@ -1,5 +1,5 @@
 ---
-title: Docker 容器記錄、環境變數和檔案系統存取
+title: 查看和診斷 Docker 容器和映射
 description: 說明如何使用工具視窗，以查看裝載您應用程式的容器內發生的情況，以改善您在 Visual Studio 中偵測及診斷容器型應用程式的能力。
 author: ghogen
 ms.author: ghogen
@@ -7,18 +7,18 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 45ef2d8f68ac951cc58040abb72e136b42f3b49c
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 626666fc912fcff85fcfcc49425d59018778d1f6
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490296"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742791"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>如何在 Visual Studio 中查看及診斷容器和映射
 
 您可以使用 [ **容器** ] 視窗，在裝載應用程式的容器內查看發生的狀況。 如果您使用命令提示字元來執行 Docker 命令以查看和診斷容器的內容，此視窗提供更方便的方式來監視您的容器，而不需要離開 Visual Studio IDE。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 - [Visual Studio 2019 16.4 版 Preview 2](https://visualstudio.microsoft.com/downloads) 或更新版本，或者如果您使用舊版的 Visual Studio 2019，請安裝 [ [容器] 視窗擴充](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-containers-tools-extensions)功能。

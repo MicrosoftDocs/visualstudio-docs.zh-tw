@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f383b173e012a7836d67a916ad9c16132e984602
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 62709c496b9eec631a42c0e227210d3b57ecb5ef
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402279"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741763"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 編碼慣例設定
 
@@ -43,6 +43,14 @@ ms.locfileid: "89402279"
 - [命名慣例](../ide/editorconfig-naming-conventions.md)
 
    有關程式碼項目的命名規則。 例如，您可以指定 `async` 方法必須以 "Async" 結尾。
+
+::: moniker range=">=vs-2019"
+
+## <a name="enforce-coding-conventions-on-build"></a>在組建上強制執行編碼慣例
+
+從 Visual Studio 2019 16.8 版（包括 .NET 5.0 RC2 SDK）開始，您可以對所有 .NET 專案 [強制執行組建的 .net 程式碼慣例](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) 。 在組建階段，.NET 程式碼樣式違規將會顯示為「IDE」前置詞的警告或錯誤。 這可讓您在程式碼基底中嚴格強制執行一致的程式碼樣式。
+
+::: moniker-end
 
 ## <a name="example-editorconfig-file"></a>EditorConfig 檔案範例
 

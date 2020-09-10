@@ -1,5 +1,5 @@
 ---
-title: 如何：使用 O-R 設計工具設定繼承
+title: 使用 O/R 設計工具設定繼承
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e31e5e78d5c72167f9d1c1eaab974155a4c369f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f9ae6d1bd7048ad9e6dc974bca67e6de15ba5fa
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282237"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742960"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>如何：使用 O/R 設計工具設定繼承
 **物件關聯式設計工具** (**O/R 設計**工具) 支援單一資料表繼承的概念，因為它通常是在關聯式系統中執行。 在單一資料表繼承 (Inheritance) 中，單一資料庫資料表的欄位會同時包含父代資訊和子系資料。 使用關聯式資料時，鑑別子資料行所含的值會決定任何記錄所屬的類別 (Class)。

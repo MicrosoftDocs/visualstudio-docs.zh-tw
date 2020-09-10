@@ -1,5 +1,5 @@
 ---
-title: 判斷是否要執行原始檔控制 VSPackage |Microsoft Docs
+title: 執行原始檔控制的時機 VSPackage
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,20 +10,23 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8707f3c1ced1cc2df9d3ae77280fc8779874a837
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abb7ce1c737f9299ba345d5e33b98e6b6947a6e4
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708726"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741797"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>判斷是否要執行原始檔控制 VSPackage
+
 本節介紹原始檔控制外掛程式的選項，以及用於擴充原始檔控制解決方案的原始檔控制 Vspackage，並提供有關選擇適當整合路徑的廣泛指導方針。
 
 ## <a name="small-source-control-solution-with-limited-resources"></a>資源有限的小型原始檔控制解決方案
+
  如果您的資源有限，而且無法負擔撰寫原始檔控制封裝的額外負荷，您可以建立原始檔控制外掛程式 API 型外掛程式。這樣做可讓您與原始檔控制封裝並存運作，而且您可以視需要在原始檔控制外掛程式和套件之間切換。 如需詳細資訊，請參閱 [註冊和選取](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)。
 
 ## <a name="large-source-control-solution-with-a-rich-feature-set"></a>具有豐富功能集的大型原始檔控制解決方案
+
  如果您想要執行原始檔控制解決方案，以提供不使用原始檔控制外掛程式 API 來充分捕捉的豐富原始檔控制模型，您可以將原始檔控制封裝視為整合路徑。 這特別適用于您想要取代原始檔控制介面卡封裝 (它會與原始檔控制外掛程式進行通訊，並提供基本的原始檔控制 UI) ，讓您能夠以自訂的方式處理原始檔控制事件。 如果您已經有令人滿意的原始檔控制 UI，而且想要在中保留該體驗 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，則原始檔控制封裝選項可讓您這樣做。 原始檔控制封裝不是泛型的，而且是專為搭配 IDE 使用而設計 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
  如果您想要執行原始檔控制解決方案，以提供對原始檔控制邏輯和 UI 的彈性和更豐富的控制，您可能會想要使用原始檔控制封裝整合路由。 您可以：
@@ -37,4 +40,5 @@ ms.locfileid: "80708726"
 4. 處理查詢編輯和查詢儲存事件 (查看 [查詢編輯查詢儲存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)) 。
 
 ## <a name="see-also"></a>另請參閱
+
 - [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)

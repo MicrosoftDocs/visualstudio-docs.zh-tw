@@ -1,5 +1,6 @@
 ---
-title: " (Visual Studio 範本的 EnableLocationBrowseButton 元素) |Microsoft Docs"
+title: EnableLocationBrowseButton 項目 (Visual Studio 範本)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 263157d5c6fefc208f28caa55475ba329a0d230f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b04152864b77c33e3821e4e1ba415cc4fa9f502
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711981"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742991"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a> (Visual Studio 範本的 EnableLocationBrowseButton 元素) 
 指定是否可在 [**新增專案**] 對話方塊中使用 [**流覽]** 按鈕，讓使用者可以輕鬆地修改儲存新專案的預設目錄。
@@ -28,7 +29,7 @@ ms.locfileid: "80711981"
 
 ## <a name="syntax"></a>語法
 
-```
+```xml
 <EnableLocationBrowseButton> true/false </EnableLocationBrowseButton>
 ```
 
@@ -60,7 +61,7 @@ ms.locfileid: "80711981"
 ## <a name="example"></a>範例
  下列範例說明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 應用程式的中繼資料。
 
-```
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>

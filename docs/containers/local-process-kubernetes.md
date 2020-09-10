@@ -1,5 +1,6 @@
 ---
-title: '搭配 Visual Studio (Preview 使用本機進程與 Kubernetes) '
+title: 將 Visual Studio 和 Kubernetes 與本機處理序搭配使用
+titleSuffix: ''
 ms.technology: vs-azure
 ms.date: 06/02/2020
 ms.topic: how-to
@@ -9,12 +10,12 @@ monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
 manager: jillfra
-ms.openlocfilehash: 191fd1df377bd15d78c329b88d20f1fed8669663
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58222eca51fcf14f7746ad2120acd5a300a39519
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87913278"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741935"
 ---
 # <a name="use-local-process-with-kubernetes-preview"></a>使用本機進程搭配 Kubernetes (預覽版) 
 
@@ -33,7 +34,7 @@ ms.locfileid: "87913278"
 
 本指南使用 [自行車共用範例應用程式][bike-sharing-github] ，示範如何將您的開發電腦連接到 Kubernetes 叢集。 如果您已經在 Kubernetes 叢集上執行自己的應用程式，您仍然可以遵循下列步驟，並使用您自己的服務名稱。
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 
 * Azure 訂用帳戶。 如果您沒有 Azure 訂用帳戶，您可以建立[免費帳戶](https://azure.microsoft.com/free)。
 * [已安裝 Azure CLI][azure-cli]。

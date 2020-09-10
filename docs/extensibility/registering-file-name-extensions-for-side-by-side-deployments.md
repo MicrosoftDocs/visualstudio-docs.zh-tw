@@ -1,5 +1,5 @@
 ---
-title: 註冊並存部署的副檔名 |Microsoft Docs
+title: 註冊並存 Ide 的副檔名
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6717625a44b48a25d293f68d01cd9fa3c7c24853
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68c343646055e6ce877d7bd15892ab1db0d0cbc5
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701545"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741702"
 ---
 # <a name="register-file-name-extensions-for-side-by-side-deployments"></a>註冊並存部署的副檔名
 針對並存環境中部署的 Vspackage，您必須註冊副檔名，才能將檔案與正確的版本建立關聯 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 除非您使用版本特定的副檔名，否則註冊可讓使用者在適當的版本中開啟您的專案和專案專案檔 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。

@@ -1,5 +1,5 @@
 ---
-title: 舊版語言服務中的自訂文件屬性 |Microsoft Docs
+title: 舊版語言服務中的自訂文件屬性
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b3db7f4cfa45ea96e3da3056f39c2a5c78a25ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3605658dc7baa45579cc47ccfbf824c3099aa63
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708974"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741807"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>舊版語言服務中的自訂文件屬性
 文件屬性可以在 [ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **屬性** ] 視窗中顯示。 程式設計語言通常沒有與個別原始程式檔相關聯的屬性。 不過，XML 支援會影響編碼、架構和樣式表單的檔案屬性。

@@ -1,5 +1,5 @@
 ---
-title: 'LINQ to SQL 類別之間的關聯性 (O/R 設計工具) '
+title: LINQ to SQL 類別之間的關聯性
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b081e989932ea03a3aaf3203bdc7383f90b9b7ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a45b93ffe1621b5cd56578fc4969a4f14b28355
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282146"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742940"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>如何：建立 LINQ to SQL 類別之間的關聯 (O/R 設計工具) 
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 中實體類別 (Class) 之間的關聯，與資料庫中資料表之間的關聯性 (Relationship) 類似。 您可以使用 [關聯編輯器]**** 對話方塊建立實體類別之間的關聯。

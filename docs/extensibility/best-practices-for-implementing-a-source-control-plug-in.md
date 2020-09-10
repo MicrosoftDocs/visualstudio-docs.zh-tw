@@ -1,5 +1,5 @@
 ---
-title: 執行原始檔控制外掛程式的最佳作法 |Microsoft Docs
+title: 執行原始檔控制外掛程式-最佳作法
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68491f22d63ae3ebb664b7c22188a661dccbf39a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1576717ceda110820b487a324f56f18486c5d95a
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740049"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739158"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>執行原始檔控制外掛程式的最佳作法
 下列技術詳細資料可協助您在中可靠地執行原始檔控制外掛程式 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。

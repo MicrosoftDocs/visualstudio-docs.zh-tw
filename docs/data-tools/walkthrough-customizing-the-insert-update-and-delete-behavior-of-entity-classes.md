@@ -1,5 +1,5 @@
 ---
-title: 自訂實體類別的插入/更新/刪除行為
+title: 自訂插入/更新/刪除行為
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 105519153e92e3944971f60ae2ff6151fa6a3fdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01fe4cf160ed3a7548fd8b8bed003838abee3d04
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585947"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741827"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>逐步解說：自訂實體類別的插入、更新和刪除行為
 
@@ -45,7 +45,7 @@ ms.locfileid: "75585947"
 
 - 將 `Customer` 類別設定為使用預存程式來執行插入、更新和刪除。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
@@ -229,7 +229,7 @@ ms.locfileid: "75585947"
 
 18. 將 [Original_CustomerID]**** 方法引數對應至 [CustomerID (Original)]**** 類別屬性。
 
-19. 按一下 [確定]  。
+19. 按一下 [確定]。
 
 > [!NOTE]
 > 雖然這不是此特定逐步解說的問題，但值得注意的是，LINQ to SQL 會自動處理身分識別 (自動遞增) 、rowguidcol (資料庫產生的 GUID) ，以及在插入和更新期間的時間戳記資料行的資料庫產生的值。 其他資料行型別的資料庫產生值將非預期地產生 null 值。 若要傳回資料庫產生的值，您應該手動將設定為，並將設定為 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> `true` <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 下列其中一項： [自動同步. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)、 [自動同步](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)或 [自動同步. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)。

@@ -1,5 +1,5 @@
 ---
-title: 用於尋找原始檔控制外掛程式之索引鍵的字串 |Microsoft Docs
+title: 用來作為索引鍵以尋找原始檔控制外掛程式的字串
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f9333ff1b6742ca14dc5541bd15e92b2eb39085
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 038441f7bcea9fa1dafdd61505d4150ecf28a966
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699707"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741779"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>用作索引鍵以尋找原始檔控制外掛程式的字串
 下列字串是存取登錄以尋找原始檔控制外掛程式相關資訊的索引鍵。

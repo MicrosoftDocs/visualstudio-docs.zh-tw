@@ -1,6 +1,6 @@
 ---
-title: 將 ASP.NET Core Docker 容器部署至 Azure App Service |Microsoft Docs
-description: 瞭解如何使用 Visual Studio 容器工具將 ASP.NET Core web 應用程式部署至 Azure App Service
+title: 將 ASP.NET Core 容器部署到 Azure App Service
+description: 瞭解如何使用 Visual Studio 容器工具將 ASP.NET Core web 應用程式部署至 Docker 容器，以 Azure App Service
 author: ghogen
 manager: jillfra
 ms.technology: vs-azure
@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 43bd06fba795c09bfa341ce7b61a3ced0fe15214
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3a0742daa1f5e6e6510f5fa5d7f56d76c1eb4da
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86454159"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741877"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 將 ASP.NET Core 容器部署到 Azure App Service
 
@@ -21,7 +21,7 @@ ms.locfileid: "86454159"
 
 如果您沒有 Azure 訂用帳戶，請在開始前建立[免費帳戶](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs)。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 若要完成本教學課程：
 

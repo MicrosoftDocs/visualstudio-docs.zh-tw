@@ -1,5 +1,6 @@
 ---
-title: " (Visual Studio 範本的 SupportsLanguageDropDown 元素) |Microsoft Docs"
+title: SupportsLanguageDropDown 項目 (Visual Studio 範本)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,14 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1230b493fe746a272cf4ca4cffe9d197afd8ba1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58c8cd8eef19c6fe5ef6129d9149ec9b650c5025
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699460"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741737"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown 項目 (Visual Studio 範本)
+
 指定多個語言的 Web 專案範本是否相同，以及是否在 [**加入新專案**] 對話方塊中啟用 [**語言**] 選項。
 
  \<VSTemplate> \<TemplateData>
@@ -29,17 +31,20 @@ ms.locfileid: "80699460"
 
 ## <a name="syntax"></a>語法
 
-```
+```xml
 <SupportsLanguageDropDown> true/false </SupportsLanguageDropDown>
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和項目
+
  下列章節將說明屬性、子項目和父項目。
 
 ### <a name="attributes"></a>屬性
+
  無。
 
 ### <a name="child-elements"></a>子元素
+
  無。
 
 ### <a name="parent-elements"></a>父項目
@@ -49,11 +54,13 @@ ms.locfileid: "80699460"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
+
  需要文字值。
 
  此文字必須是 `true` 或 `false` ，指出是否可以從 [**加入新專案**] 對話方塊中使用 [**語言**] 選項。
 
 ## <a name="remarks"></a>備註
+
   是選擇性元素。 預設值是 `false`。
 
  `SupportsLanguageDropDown`元素僅適用于 Web 專案範本。
@@ -61,9 +68,10 @@ ms.locfileid: "80699460"
  如果這個元素的值設定為，則 `true` 所有程式設計語言的專案範本都相同，而且在 [**加入新專案**] 對話方塊中會啟用 [**語言**] 選項。 此選項可讓您選擇要從範本建立之新專案的程式設計語言。
 
 ## <a name="example"></a>範例
+
  下列範例會指定顯示 [ **語言** ] 下拉式清單選項。
 
-```
+```xml
 <VSTemplate Version="3.0.0" Type="Project"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">>
     <TemplateData>
@@ -86,5 +94,6 @@ ms.locfileid: "80699460"
 ```
 
 ## <a name="see-also"></a>另請參閱
+
 - [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
 - [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

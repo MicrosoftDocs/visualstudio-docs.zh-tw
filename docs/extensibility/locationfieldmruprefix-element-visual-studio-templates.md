@@ -1,5 +1,6 @@
 ---
-title: " (Visual Studio 範本的 LocationFieldMRUPrefix 元素) |Microsoft Docs"
+title: LocationFieldMRUPrefix 項目 (Visual Studio 範本)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,14 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce86eecbab8c31f16ece4628eff28dc40416a0a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28ad23961ba9cd9b8bcdb0467f061353fe0ecdb5
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702816"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741340"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a> (Visual Studio 範本的 LocationFieldMRUPrefix 元素) 
+
 在 [ **新增專案** ] 和 [ **加入新** 專案] 對話方塊中，指定最近使用的 (MRU) 路徑。
 
 ## <a name="syntax"></a>語法
@@ -31,12 +33,15 @@ ms.locfileid: "80702816"
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和元素
+
  下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
+
  無。
 
 ### <a name="child-elements"></a>子元素
+
  無。
 
 ### <a name="parent-elements"></a>父元素
@@ -46,8 +51,10 @@ ms.locfileid: "80702816"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
 
 ## <a name="remarks"></a>備註
+
  這個元素只應用於透過所產生的範本 [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)] 。
 
 ## <a name="see-also"></a>另請參閱
+
 - [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
 - [建立專案和專案範本](../ide/creating-project-and-item-templates.md)

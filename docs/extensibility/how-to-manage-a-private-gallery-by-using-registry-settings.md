@@ -1,5 +1,5 @@
 ---
-title: 如何：使用登錄設定管理私用元件庫 |Microsoft Docs
+title: 使用登錄設定來管理私用資源庫
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2630fc71bea40a4d05e616ae336759ba62431a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 989426feaab04c62c31bf09ddb0431f18222e115
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710926"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742869"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>如何：使用登錄設定管理私用資源庫
 如果您是獨立 Shell 擴充功能的系統管理員或開發人員，您可以控制 Visual Studio 資源庫、範例庫或私用資源庫中的控制項、範本和工具的存取權。 若要讓資源庫可供使用或無法使用，請建立 *.pkgdef* 檔案，以描述修改過的登錄機碼及其值。
