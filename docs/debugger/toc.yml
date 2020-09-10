@@ -1,6 +1,6 @@
 - name: 偵錯工具文件
   href: index.yml
-- name: 總覽
+- name: 概觀
   items:
     - name: 什麼是偵錯？
       href: what-is-debugging.md
@@ -21,11 +21,11 @@
 - name: 教學課程
   items:
     - name: 了解如何對 C# 偵錯
-      href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      href: ../get-started/csharp/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - name: 了解如何對 C++ 偵錯
       href: getting-started-with-the-debugger-cpp.md
     - name: 了解如何對 Visual Basic 偵錯
-      href: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      href: ../get-started/visual-basic/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - name: 在偵錯工具中執行 Python 程式碼...
       href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
     - name: 對即時 Azure 應用程式進行偵錯
@@ -313,7 +313,7 @@
             - name: 請確認目標電腦上的 DNS 設定都正確
               href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
             - name: Microsoft Visual Studio 遠端偵錯監視 (MSVSMON.EXE) 似乎沒有在遠端電腦上執行。
-              href: /visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running
+              href: ./error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running.md
             - name: 無法連線至 Microsoft Visual Studio 遠端偵錯監視
               href: unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md
             - name: 無法起始 DCOM 通訊
@@ -445,7 +445,7 @@
             - name: 對已安裝的應用程式套件進行偵錯
               href: debug-installed-app-package.md
             - name: 在偵錯時檢查 XAML 屬性
-              href: inspect-xaml-properties-while-debugging.md
+              href: ../xaml-tools/inspect-xaml-properties-while-debugging.md
             - name: 撰寫 XAML 程式碼及針對其執行進行偵錯
               href: ../xaml-tools/xaml-hot-reload.md
             - name: 在 Blend 中偵錯 XAML
@@ -505,7 +505,7 @@
                 - name: 對 WPF 進行偵錯
                   href: debugging-wpf.md
                 - name: 在偵錯時檢查 XAML 屬性
-                  href: inspect-xaml-properties-while-debugging.md
+                  href: ../xaml-tools/inspect-xaml-properties-while-debugging.md
                 - name: 撰寫 XAML 程式碼及針對其執行進行偵錯
                   href: ../xaml-tools/xaml-hot-reload.md
                 - name: 使用 WPF 樹狀架構視覺化檢視

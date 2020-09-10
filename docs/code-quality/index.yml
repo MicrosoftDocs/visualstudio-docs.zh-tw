@@ -10,23 +10,23 @@ metadata:
   author: Mikejo5000
   ms.author: mikejo
   ms.date: 10/15/2019
-  ms.openlocfilehash: 94dcd1cf66ed1893a8cdfd069314d689cb1e9329
-  ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
+  ms.openlocfilehash: c954c2bdf5b202da96cffc4dfa22e94b75a7d93a
+  ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 08/29/2020
-  ms.locfileid: "89091394"
+  ms.lasthandoff: 09/09/2020
+  ms.locfileid: "89599605"
 landingContent:
 - title: 分析 C 和 C++ 程式碼
   linkLists:
   - linkListType: overview
     links:
     - text: 分析 C 和 C++ 程式碼
-      url: code-analysis-for-c-cpp-overview.md
+      url: /cpp/code-quality/code-analysis-for-c-cpp-overview
   - linkListType: reference
     links:
     - text: C++ 程式碼分析警告
-      url: code-analysis-for-c-cpp-warnings.md
+      url: /cpp/code-quality/code-analysis-for-c-cpp-warnings
 - title: .NET 程式碼品質分析
   linkLists:
   - linkListType: overview

@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/20/2019
-  ms.openlocfilehash: f1d2a1577f01dcca9763a775a28f27691928bb43
-  ms.sourcegitcommit: ad13d7b427303b0e801d54dc521dfb3c1e2bf6e4
+  ms.openlocfilehash: f65c41b4647a811377d1d090635c889a784678ae
+  ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 07/15/2020
-  ms.locfileid: "86405418"
+  ms.lasthandoff: 09/09/2020
+  ms.locfileid: "89600129"
 landingContent:
 - title: 關於偵錯
   linkLists:
@@ -34,11 +34,11 @@ landingContent:
     - text: 適合完全初學者的偵錯
       url: debugging-absolute-beginners.md
     - text: 了解如何對 C# 偵錯
-      url: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      url: ../get-started/csharp/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - text: 了解如何對 C++ 偵錯
       url: getting-started-with-the-debugger-cpp.md
     - text: 了解如何對 Visual Basic 偵錯
-      url: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      url: ../get-started/visual-basic/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - text: 在偵錯工具中執行 Python 程式碼 >>
       url: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
 - title: 暫停及瀏覽程式碼
@@ -68,7 +68,7 @@ landingContent:
     - text: 偵錯工具祕訣與技巧
       url: debugger-tips-and-tricks.md
     - text: 撰寫 XAML 程式碼及針對其執行進行偵錯
-      url: xaml-hot-reload.md
+      url: ../xaml-tools/xaml-hot-reload.md
     - text: 對即時 Azure 應用程式進行偵錯
       url: debug-live-azure-applications.md
     - text: 告訴偵錯工具要顯示的項目
