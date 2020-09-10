@@ -1,5 +1,5 @@
 ---
-title: 搜尋運算式中的邏輯/進階運算子 (說明檢視器)
+title: '搜尋運算式中的邏輯運算子 (說明檢視器) '
 ms.date: 11/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e241df6c32fc1b0a8e88942fe5d0d178c37b9bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5d17d40a34835c1c8f99f4ad446de747771fa4a
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67824904"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741647"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>搜尋運算式中的邏輯與進階運算子
 
