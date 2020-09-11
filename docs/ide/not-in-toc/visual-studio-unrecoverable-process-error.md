@@ -1,6 +1,6 @@
 ---
 title: 處理序發生無法復原的錯誤
-ms.date: 06/22/2018
+ms.date: 09/10/2020
 ms.topic: troubleshooting
 helpviewer_keywords:
 - unrecoverable error
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c30ac5950ca9bf775b05e9f77867c119b7c7565d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1c9dc5053e2168482f4463f805bdc5e724ef6b0
+ms.sourcegitcommit: d9dd86c421532cfca6c0c5761d160f35829419c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81544337"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90025561"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Visual Studio 無法復原的程序錯誤
 
@@ -51,3 +51,6 @@ Visual Studio 會使用多個處理序外之程序來執行所需的背景工作
 - WindowsAzureTelemetryService.exe
 
 如果所有這些處理序意外終止，則 Visual Studio 內的某些功能會停止運作。 針對某些處理序，遺失功能可能不重要。 針對其他處理序，則會影響 Visual Studio 的穩定性，並顯示錯誤訊息。
+
+> [!NOTE]
+> 如果您遇到此頁面未提及的問題，請透過 [回報 [問題](../../ide/how-to-report-a-problem-with-visual-studio.md) ] 工具向我們報告，該工具會出現在 Visual Studio 安裝程式和 Visual Studio IDE 中。
