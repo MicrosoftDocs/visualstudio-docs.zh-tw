@@ -6,6 +6,7 @@ metadata:
   title: Visual Studio 產品系列文件
   description: 探索 Visual Studio 產品系列的文件。
   ms.topic: hub-page
+  ms.custom: contperfq1
   ms.date: 05/13/2020
   searchScope: []
   titleSuffix: ''
@@ -14,12 +15,12 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: 889c9d2c00b172891bca72259c981b582178a2e8
-  ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
+  ms.openlocfilehash: 49824c173e06f17f6f6d0b999260ae81dee6a471
+  ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 07/23/2020
-  ms.locfileid: "86972279"
+  ms.lasthandoff: 09/10/2020
+  ms.locfileid: "89741951"
 productDirectory:
   items:
   - title: Visual Studio

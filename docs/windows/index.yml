@@ -10,23 +10,23 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 85929f803733026dfbf7ced8cf8553c3e96ed1c3
-  ms.sourcegitcommit: 239a8ed2c4474769297b42b5ce1f7c8694d62856
+  ms.openlocfilehash: 4acc30c7ff2d01f4fab86ca8604cde47d828f48b
+  ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 07/22/2020
-  ms.locfileid: "86944590"
+  ms.lasthandoff: 09/11/2020
+  ms.locfileid: "90012500"
 highlightedContent:
   items:
   - title: 設定與安裝
     itemType: download
-    url: /visualstudio/install/install-visual-studio
+    url: ../install/install-visual-studio.md
   - title: 歡迎使用 Visual Studio IDE
     itemType: overview
-    url: /visualstudio/ide/visual-studio-ide
+    url: ../get-started/visual-studio-ide.md
   - title: Visual Studio 2019 的新功能
     itemType: get-started
-    url: /visualstudio/ide/whats-new-visual-studio-2019
+    url: ../ide/whats-new-visual-studio-2019.md
   - title: 提升您的開發技能
     itemType: learn
     url: /learn/
@@ -36,7 +36,7 @@ conceptualContent:
   - title: 了解如何使用 Visual Studio
     links:
     - text: 開始引導式導覽
-      url: ../ide/visual-studio-ide.md
+      url: ../get-started/visual-studio-ide.md
       itemType: overview
     - text: 從存放庫開啟程式碼
       url: ../get-started/tutorial-open-project-from-repo.md
@@ -59,37 +59,37 @@ conceptualContent:
   - title: 追隨教學課程
     links:
     - text: C#
-      url: /visualstudio/get-started/csharp
+      url: ../get-started/csharp/index.yml
       itemType: get-started
     - text: F#
-      url: /visualstudio/ide/quickstart-fsharp
+      url: ../ide/quickstart-fsharp.md
       itemType: get-started
     - text: Visual Basic
-      url: /visualstudio/get-started/visual-basic/
+      url: ../get-started/visual-basic/index.yml
       itemType: get-started
     - text: C++
       url: /cpp/get-started/tutorial-console-cpp
       itemType: get-started
     - text: Python
-      url: /visualstudio/python
+      url: ../python/index.yml
       itemType: get-started
     - text: JavaScript
-      url: /visualstudio/javascript
+      url: ../javascript/index.yml
       itemType: get-started
   - title: 建立應用程式
     links:
     - text: Windows 傳統型應用程式
       itemType: tutorial
-      url: /visualstudio/ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic
+      url: ../get-started/csharp/tutorial-wpf.md
     - text: 通用 Windows 應用程式
       itemType: tutorial
-      url: /visualstudio/get-started/csharp/tutorial-uwp
+      url: ../get-started/csharp/tutorial-uwp.md
     - text: 行動應用程式
       itemType: overview
-      url: /visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio
+      url: ../cross-platform/cross-platform-mobile-development-in-visual-studio.md
     - text: Unity 遊戲
       itemType: tutorial
-      url: /visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity
+      url: ../cross-platform/getting-started-with-visual-studio-tools-for-unity.md
     - text: 使用 ASP.NET Core 開發 Web 應用程式
       itemType: quickstart
       url: /aspnet/core/tutorials/razor-pages/razor-pages-start
@@ -110,16 +110,16 @@ tools:
     url: /dotnet/visual-basic
   - title: Python
     imageSrc: https://docs.microsoft.com/media/logos/logo_python.svg
-    url: /visualstudio/python
+    url: ../python/index.yml
   - title: JavaScript
     imageSrc: https://docs.microsoft.com/media/logos/logo_js.svg
-    url: /visualstudio/javascript
+    url: ../javascript/index.yml
   - title: TypeScript
     imageSrc: https://docs.microsoft.com/media/logos/logo_TS.svg
     url: http://www.typescriptlang.org/docs/tutorial.html
   - title: R
     imageSrc: https://docs.microsoft.com/media/logos/logo_R.svg
-    url: /visualstudio/rtvs/?view=vs-2017
+    url: ../rtvs/index.md?view=vs-2017
 additionalContent:
   sections:
   - title: 工作
@@ -167,11 +167,11 @@ additionalContent:
       - text: Web 程式開發
         url: /aspnet/
       - text: Azure 開發和管理
-        url: /visualstudio/azure
+        url: ../azure/index.yml
       - text: Python
-        url: /visualstudio/python
+        url: ../python/index.yml
       - text: Node.js
-        url: /visualstudio/javascript
+        url: ../javascript/index.yml
       - text: 資料儲存體和流程
         url: ../data-tools/index.yml
       - text: 資料科學
@@ -207,4 +207,4 @@ additionalContent:
         url: /cpp/linux/
       - text: .NET Core 跨平台開發
         url: /dotnet/core/
-  footer: '[部落格](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [問題回報](../ide/talk-to-us.md) - [開發人員社群](https://developercommunity.visualstudio.com/spaces/8/index.html) - [疑難排解](/troubleshoot/visualstudio/welcome-visual-studio)'
+  footer: '[部落格](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [問題回報](../ide/feedback-options.md) - [開發人員社群](https://developercommunity.visualstudio.com/spaces/8/index.html) - [疑難排解](/troubleshoot/visualstudio/welcome-visual-studio)'
