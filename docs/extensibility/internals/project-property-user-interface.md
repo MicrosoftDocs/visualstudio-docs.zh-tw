@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4634eb5edaab16752bc5df82d70371a580845d28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f15895a7dab5c57d8312787b1276acac89c28796
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706389"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011849"
 ---
 # <a name="project-property-user-interface"></a>專案屬性使用者介面
 
@@ -55,7 +55,7 @@ ms.locfileid: "80706389"
 
 由於專案子類型會匯總 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 物件，因此它可以覆寫這些屬性的定義，以控制要顯示的 **屬性頁** 對話方塊。 專案子類型可以從內部基底專案中取得這些屬性，然後視需要新增或移除 Clsid。
 
-專案子類型所加入的新屬性頁面，會從基底專案執行中，傳遞專案設定流覽物件。 此專案設定流覽物件支援 Automation 擴充項。 如需 AutomationExtenders 的詳細資訊，請參閱 [執行和使用 Automation](https://msdn.microsoft.com/Library/0d5c218c-f412-4b28-ab0c-33a611f62356)擴充項。 專案子類型所實的屬性頁面 <xref:EnvDTE.Project.Extender%2A> 會呼叫，以抓取其自己的專案子類型設定流覽物件，此物件會擴充基底專案的設定流覽物件。
+專案子類型所加入的新屬性頁面，會從基底專案執行中，傳遞專案設定流覽物件。 此專案設定流覽物件支援 Automation 擴充項。 如需 AutomationExtenders 的詳細資訊，請參閱 [執行和使用 Automation](/previous-versions/0y92k2w2(v=vs.140))擴充項。 專案子類型所實的屬性頁面 <xref:EnvDTE.Project.Extender%2A> 會呼叫，以抓取其自己的專案子類型設定流覽物件，此物件會擴充基底專案的設定流覽物件。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4309feeed3233d2149586afb1bf4efafacb21ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e73be2af3d24a6a719f353fbd0ab25dbdf86fe09
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709899"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012135"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Vspackage 中安全性的最佳作法
 若要 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 在您的電腦上安裝，您必須在具有系統管理認證的內容中執行。 應用程式的基本安全性和部署單位 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 是 [VSPackage](../../extensibility/internals/vspackages.md)。 VSPackage 必須使用註冊 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，這也需要系統管理認證。
@@ -31,5 +31,5 @@ ms.locfileid: "80709899"
  如需詳細資訊，請參閱 [.NET Framework 的安全程式碼撰寫方針](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90))。
 
 ## <a name="see-also"></a>另請參閱
-- [增益集安全性](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)
-- [DDEX 安全性](https://msdn.microsoft.com/library/44a52a70-5c98-450e-993d-4a3b32f69ba8)
+- [增益集安全性](/previous-versions/1326zbk3(v=vs.140))
+- [DDEX 安全性](/previous-versions/bb163703(v=vs.140))

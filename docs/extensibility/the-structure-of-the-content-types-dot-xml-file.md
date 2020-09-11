@@ -13,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2761e012d32516265e61c8001491e3c605372ff5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e96af4936f27d869409a7215c720d9bb64e4128
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699027"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012513"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>[Content_types].xml 檔案的結構
 包含 VSIX 封裝中內容類型的相關資訊。 Visual Studio 使用 [Content_Types] .xml 檔案安裝套件，但不會安裝檔案本身。
 
 > [!NOTE]
-> 雖然本主題僅適用于 VSIX 封裝中所使用的 [Content_Type] .xml 檔案，但 [Content_Types] .xml 檔案類型是 *開放式封裝慣例 (OPC) * 標準的一部分。 如需詳細資訊，請參閱 [OPC：將資料封裝](https://msdn.microsoft.com/magazine/cc163372.aspx) 在 MSDN 網站的新標準。
+> 雖然本主題僅適用于 VSIX 封裝中所使用的 [Content_Type] .xml 檔案，但 [Content_Types] .xml 檔案類型是 *開放式封裝慣例 (OPC) * 標準的一部分。 如需詳細資訊，請參閱 [OPC：將資料封裝](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data) 在 MSDN 網站的新標準。
 
 ## <a name="attributes-and-elements"></a>屬性和項目
  下列各節描述根項目及其屬性和子項目。
@@ -101,5 +101,5 @@ ms.locfileid: "80699027"
 
 ## <a name="see-also"></a>另請參閱
 - [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)
-- [VSIX 延伸架構1.0 參考](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC：封裝資料的新標準](https://msdn.microsoft.com/magazine/cc163372.aspx)
+- [VSIX 延伸架構1.0 參考](/previous-versions/dd393700(v=vs.110))
+- [OPC：封裝資料的新標準](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data)

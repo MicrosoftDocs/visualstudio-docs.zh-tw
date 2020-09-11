@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7df93a801b5ec34a433849baa41f2fd255790c86
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26d8a3c4f3458c3659ccdd3a4cde802293342e5c
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536327"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011953"
 ---
 # <a name="image-service-and-catalog"></a>映射服務和目錄
 本逐步指南包含採用 Visual Studio 2015 中引進的 Visual Studio 映射服務和映射目錄的指導方針和最佳作法。
@@ -712,7 +712,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. 更新您的程式碼，以使用映射服務透過更新的對應來要求名字。  (這可能表示更新至 managed 程式碼的 **CrispImages** ，或從映射服務要求 HBITMAPs 或 HICONs，並針對機器碼進行傳遞。 ) 
 
 ## <a name="testing-your-images"></a>測試您的映射
- 您可以使用影像庫檢視器工具來測試影像資訊清單，以確定一切都已正確撰寫。 您可以在 [Visual Studio 2015 SDK](visual-studio-sdk.md)中找到此工具。 您可以在 [這裡](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015)找到此工具和其他工具的檔。
+ 您可以使用影像庫檢視器工具來測試影像資訊清單，以確定一切都已正確撰寫。 您可以在 [Visual Studio 2015 SDK](visual-studio-sdk.md)中找到此工具。 您可以在 [這裡](./internals/vssdk-utilities.md?view=vs-2015)找到此工具和其他工具的檔。
 
 ## <a name="additional-resources"></a>其他資源
 
@@ -1009,7 +1009,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|
     |GlyphGroupError||StatusError|
     |GlyphBscFile||ClassFile|
-    |GlyphAssembly||參考資料|
+    |GlyphAssembly||參考|
     |GlyphLibrary||程式庫|
     |GlyphVBProject||VBProjectNode|
     |GlyphCoolProject||CSProjectNode|
@@ -1026,7 +1026,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphRecursion||遞迴|
     |GlyphXmlItem||Tag|
     |GlyphJSharpProject||DocumentCollection|
-    |GlyphJSharpDocument||Document|
+    |GlyphJSharpDocument||文件|
     |GlyphForwardType||GoToNext|
     |GlyphCallersGraph||對|
     |GlyphCallGraph||CallFrom|

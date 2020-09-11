@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fee88e895d40d42114eaf53422503524594b485f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cdf9023512f4225e2a8edcadcf589cb61547e24
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704270"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011810"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>使用 Windows Installer 解除安裝 VSPackage
 在大部分的情況下，Windows Installer 可以卸載 VSPackage，只要「復原」安裝 VSPackage 就可以了。 在安裝之後必須執行的 [命令](../../extensibility/internals/commands-that-must-be-run-after-installation.md) 中所討論的自訂動作也必須在卸載之後執行。 因為對 devenv.exe 的呼叫會在安裝和卸載的 InstallFinalize 標準動作之前發生，所以 CustomAction 和 InstallExecuteSequence 資料表專案會提供這兩種情況。
@@ -39,5 +39,5 @@ ms.locfileid: "80704270"
 > `Installed` 當屬性偵測到 VSPackage 已安裝在系統上時，就會設定屬性 Windows Installer。
 
 ## <a name="see-also"></a>另請參閱
-- [Windows Installer](https://msdn.microsoft.com/library/187d8965-c79d-4ecb-8689-10930fa8b3b5)
+- [Windows Installer](/previous-versions/ee231230(v=vs.100))
 - [偵測系統需求](../../extensibility/internals/detecting-system-requirements.md)

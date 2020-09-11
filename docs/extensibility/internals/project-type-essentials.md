@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44da532207668d9526aec0ccdcab027b94184e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7634802899d72eb6abcb0aa837b8fb6a532b966
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706375"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012057"
 ---
 # <a name="project-type-essentials"></a>專案類型的基本資訊
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包含多種語言的專案類型，例如 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 也可讓您建立自己的專案類型。
@@ -52,7 +52,7 @@ ms.locfileid: "80706375"
 
 - 專案類型是 VSPackage 中的物件，可執行所預期的介面集 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 如果您使用 c # 開發專案類型，Managed 封裝架構專案類別會為您執行必要的介面，並讓您繼承該執行。 如需詳細資訊，請參閱 [使用 Managed Package Framework 來執行 c # )  (的專案類型 ](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md)。
 
-- 針對 c + + 開發人員，HierUtil 程式庫中的類別會以類似的方式運作。 如需詳細資訊，請參閱 [不在組建中：使用 HierUtil7 專案類別 (c + +) 執行專案類型 ](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)。
+- 針對 c + + 開發人員，HierUtil 程式庫中的類別會以類似的方式運作。 如需詳細資訊，請參閱 [不在組建中：使用 HierUtil7 專案類別 (c + +) 執行專案類型 ](/previous-versions/bb166212(v=vs.100))。
 
 - 專案類型可以支援建立為 .exe 或 .dll 元件的一般原始程式碼檔以外的資料。 例如， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 資料庫專案包含對儲存在磁片上之腳本和查詢檔案的參考，並將命令新增至 **方案總管** ，以針對資料庫執行腳本和查詢，但專案不支援組建行為。 如需詳細資訊，請參閱 [開啟和儲存專案專案](../../extensibility/internals/opening-and-saving-project-items.md)。
 

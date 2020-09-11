@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e809eeb6a1a5d2c24368932713d69c7199b5af38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d97a7edd62540d12a0a60d15b3179ca0a623c26
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713139"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011823"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>擴充偵錯工具的藍圖
 本檔提供使用擴充偵錯工具的指南和參考資訊 [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 。
@@ -43,7 +43,7 @@ ms.locfileid: "80713139"
 
    [建立自訂的調試引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 
-   [教學課程：使用 ATL COM 建立 debug engine](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+   [教學課程：使用 ATL COM 建立 debug engine](/previous-versions/bb147024(v=vs.90))
 
    [執行埠供應商](../../extensibility/debugger/implementing-a-port-supplier.md)
 

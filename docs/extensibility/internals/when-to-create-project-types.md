@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 861250dac25288f353cbd5c57f510bf67dadce70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd5caea4d07ff34af8c8cee83c24ae20e8b8f108
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703436"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012005"
 ---
 # <a name="when-to-create-project-types"></a>建立專案類型的時機
 建立新的專案類型可為使用者提供自訂的基礎 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 但是，並非所有自訂都需要建立新的專案類型 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 下列指導方針可協助您判斷您的案例是否需要新的專案類型。
@@ -50,7 +50,7 @@ ms.locfileid: "80703436"
 |工作|描述|
 |----------|-----------------|
 |處理命令|任何 VSPackage 都可以處理命令。|
-|建立編輯器|您可以註冊自訂編輯器。 如需詳細資訊，請參閱 [檔視窗和編輯器](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)。|
+|建立編輯器|您可以註冊自訂編輯器。 如需詳細資訊，請參閱 [檔視窗和編輯器](/previous-versions/bb165691(v=vs.100))。|
 |擁有視窗|您可以建立工具和文件視窗，而不需要加入新的專案類型。|
 |公開屬性視窗中的屬性|所有物件都可以公開屬性。|
 
@@ -58,6 +58,6 @@ ms.locfileid: "80703436"
  您可以使用專案子類型來擴充 managed 專案類型，而不需要建立新的專案類型。 專案子類型使用 COM 匯總來擴充以 Microsoft 或撰寫的 managed 專案 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 。 使用 COM 匯總，您可以重複使用大部分的 managed 專案系統，並且仍可透過匯總和使用支援介面來自訂特定案例。 如需專案子類型的詳細資訊，請參閱 [專案子類型](../../extensibility/internals/project-subtypes.md)。
 
 ## <a name="see-also"></a>另請參閱
-- [檔視窗和編輯器](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)
+- [檔視窗和編輯器](/previous-versions/bb165691(v=vs.100))
 - [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Visual Studio 中的階層](../../extensibility/internals/hierarchies-in-visual-studio.md)

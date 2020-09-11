@@ -10,18 +10,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6fb916810bc8a7e960a4723a6a7c7a6f0c1410
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a664385594f139e2c3c5a18a0d8a59e23c13df0a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713216"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011836"
 ---
 # <a name="register-a-custom-debug-engine"></a>註冊自訂的調試引擎
 Debug engine 必須將本身註冊為 class factory，並遵循 COM 慣例，並透過 Visual Studio 登錄子機碼向 Visual Studio 註冊。
 
 > [!NOTE]
-> 您可以在 TextInterpreter 範例中找到如何註冊 debug 引擎的範例，此範例是在教學課程中建立的，它是教學課程的一部分 [：使用 ATL COM 建立 debug engine](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)。
+> 您可以在 TextInterpreter 範例中找到如何註冊 debug 引擎的範例，此範例是在教學課程中建立的，它是教學課程的一部分 [：使用 ATL COM 建立 debug engine](/previous-versions/bb147024(v=vs.90))。
 
 ## <a name="dll-server-process"></a>DLL 伺服器進程
  Debug 引擎通常會在其本身的 DLL 中設定為 COM 伺服器。 因此，在 Visual Studio 可以存取之前，debug engine 必須先向 COM 註冊其 class factory 的 CLSID。 然後，debug engine 必須向 Visual Studio 註冊本身，才能建立任何屬性 (亦稱為「偵測引擎」支援) 的度量。 寫入 Visual Studio 登錄子機碼的度量選擇取決於 debug engine 支援的功能。
@@ -51,4 +51,4 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 ## <a name="see-also"></a>另請參閱
 - [建立自訂的調試引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 - [用於偵錯工具的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
-- [教學課程：使用 ATL COM 建立 debug engine](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+- [教學課程：使用 ATL COM 建立 debug engine](/previous-versions/bb147024(v=vs.90))

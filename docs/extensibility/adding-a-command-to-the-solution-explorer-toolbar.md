@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbb84dd8c8a8240e4fec7791305029304ccce8f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08513ef67dfdffbf70b5ce2ff449a9ceb4250c37
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183726"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012291"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>將命令新增至方案總管的工具列
 本逐步解說將示範如何將按鈕新增至 **方案總管** 工具列。
@@ -29,7 +29,7 @@ ms.locfileid: "84183726"
 > [!NOTE]
 > 使用 XML 命令表格 (*. .vsct*) 檔案，而非命令表格設定 (*. .ctc*) 檔案，以定義功能表和命令在 vspackage 中出現的方式。 如需詳細資訊，請參閱 [Visual Studio 命令表格 (。.Vsct) ](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-an-extension-with-a-menu-command"></a>使用功能表命令建立擴充功能
@@ -114,7 +114,7 @@ ms.locfileid: "84183726"
 
 5. 按一下 [ **檔案** ] 功能表上的 [ **關閉方案**]。 按鈕會從工具列中消失。
 
-   在載入 VSPackage 之前，會控制按鈕的可見度 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 載入 VSPackage 之後，按鈕的可見度是由 VSPackage 所控制。  如需詳細資訊，請參閱 [menucommand 對比與 OleMenuCommands](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015)。
+   在載入 VSPackage 之前，會控制按鈕的可見度 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 載入 VSPackage 之後，按鈕的可見度是由 VSPackage 所控制。  如需詳細資訊，請參閱 [menucommand 對比與 OleMenuCommands](../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015)。
 
 ## <a name="see-also"></a>另請參閱
 - [命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)

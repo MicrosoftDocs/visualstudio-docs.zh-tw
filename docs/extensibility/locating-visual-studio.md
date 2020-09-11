@@ -9,16 +9,16 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7187fbcc3e3aca990846176676a47f5d17aaf00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93a6f39a9240002cd8008c9368799e10ab63b78d
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64878149"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012473"
 ---
 # <a name="locate-visual-studio"></a>尋找 Visual Studio
 
-從 Visual Studio 2017 開始，您可以安裝相同版本或甚至版本的多個實例。 當您想要在主要開發電腦上預覽新功能，同時保留先前的安裝時，這會很有説明。 由於這些變更，因此沒有可供您用來尋找實例的單一環境變數或登錄值。 相反地，您可以使用 [COM 查詢 API](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) ，根據與延伸模組相關的準則來尋找實例。
+從 Visual Studio 2017 開始，您可以安裝相同版本或甚至版本的多個實例。 當您想要在主要開發電腦上預覽新功能，同時保留先前的安裝時，這會很有説明。 由於這些變更，因此沒有可供您用來尋找實例的單一環境變數或登錄值。 相反地，您可以使用 [COM 查詢 API](/dotnet/api/microsoft.visualstudio.setup.configuration) ，根據與延伸模組相關的準則來尋找實例。
 
 這是一種快速、唯讀的 API，其具有適用于原生和 managed 程式碼的 NuGet 套件。
 

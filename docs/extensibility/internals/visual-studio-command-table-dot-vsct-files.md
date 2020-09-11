@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d18367436d1ee1b889558a35723e4e3cec865945
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24ebac7aee2294d2ad8cee06cd88102bb8d3fd78
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704030"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012343"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio 命令表檔案 (.Vsct)
 命令表格設定檔是一個文字檔，描述 VSPackage 所包含的一組命令。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令表格 (.vsct) 編譯器會將 XML 架構設定檔 ( .vsct 檔案，) 到二進位命令表格輸出 (. cto) 檔中。 Cto 檔案與使用命令表格建立的檔案相同， (.CTC) 編譯器來編譯 .ctc 設定檔。 不過，以 XML 為基礎的 .vsct 檔案有一些優點，例如 XML 編輯器和 XML IntelliSense。
@@ -37,7 +37,7 @@ ms.locfileid: "80704030"
 
  提供命令表格 XML 設定檔的每個區段的詳細資料。
 
- [命令資料表設定 (。.Ctc) ](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c) 檔案提供 .ctc 檔案格式的總覽。
+ [命令資料表設定 (。.Ctc) ](/previous-versions/bb165153(v=vs.100)) 檔案提供 .ctc 檔案格式的總覽。
 
  [VSPackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 

@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c52f87426b9f06ad40d77c2cc9e7be1627d2c82d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33cecb4767193010d7e7ca330d891d1835091875
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250824"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012330"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 封裝的剖析
 VSIX 封裝是一個包含一或多個 Visual Studio 延伸模組的 .vsix 檔案，以及 Visual Studio 用來分類及安裝延伸模組的中繼資料 *。* 該中繼資料包含在 VSIX 資訊清單和 *[Content_Types] .xml* 檔案中。 VSIX 封裝也可以包含一或多個 *vsixlangpack* 檔案，以提供當地語系化的設定文字，而且可能包含其他 VSIX 套件來安裝相依性。
@@ -28,7 +28,7 @@ VSIX 封裝是一個包含一或多個 Visual Studio 延伸模組的 .vsix 檔�
 > VSIX 套件中包含的檔案名不能包含空格，也不能在統一資源識別項中保留的字元 (URI) ，如[ \[ RFC2396 \] ](https://www.rfc-editor.org/rfc/rfc2396.txt)中所定義。
 
 ## <a name="the-vsix-manifest"></a>VSIX 資訊清單
- VSIX 資訊清單包含要安裝之延伸模組的相關資訊，並遵循 VSX 架構。 如需詳細資訊，請參閱 [VSIX 延伸架構1.0 參考](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。 如需 VSIX 資訊清單的範例，請參閱 [PackageManifest 元素 (根項目、VSX 架構) ](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187)。
+ VSIX 資訊清單包含要安裝之延伸模組的相關資訊，並遵循 VSX 架構。 如需詳細資訊，請參閱 [VSIX 延伸架構1.0 參考](/previous-versions/dd393700(v=vs.110))。 如需 VSIX 資訊清單的範例，請參閱 [PackageManifest 元素 (根項目、VSX 架構) ](/previous-versions/dd393754(v=vs.110))。
 
  VSIX 資訊清單 `extension.vsixmanifest` 包含在 ^ * 檔案中時，必須命名為。
 
@@ -52,9 +52,9 @@ VSIX 封裝是一個包含一或多個 Visual Studio 延伸模組的 .vsix 檔�
 ## <a name="installation-location"></a>安裝位置
  在安裝期間， **擴充功能和更新** 會在 *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*下的資料夾中尋找 VSIX 封裝的內容。
 
- 根據預設，安裝只會套用至目前的使用者，因為 *% LocalAppData%* 是使用者特定的目錄。 但是，如果您將資訊清單的[AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b)元素設定為 `True` ，此延伸模組會安裝在<em> \\ 底下。</em>VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em>將可供電腦的所有使用者使用。
+ 根據預設，安裝只會套用至目前的使用者，因為 *% LocalAppData%* 是使用者特定的目錄。 但是，如果您將資訊清單的[AllUsers](/previous-versions/ee191547(v=vs.110))元素設定為 `True` ，此延伸模組會安裝在<em> \\ 底下。</em>VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em>將可供電腦的所有使用者使用。
 
 ## <a name="content_typesxml"></a>[Content_Types] .xml
  *[Content_Types] .xml*檔案會識別擴充的 *.vsix*檔中的檔案類型。 Visual Studio 在套件安裝期間使用此檔案，但不會安裝檔案本身。 如需此檔案的詳細資訊，請參閱 [[Content_types] .xml](the-structure-of-the-content-types-dot-xml-file.md)檔案的結構。
 
- 開放式封裝慣例 (OPC) standard 需要 *[Content_Types] .xml* 檔案。 如需 OPC 的詳細資訊，請參閱 [opc：將資料封裝](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) 在 MSDN 網站的新標準。
+ 開放式封裝慣例 (OPC) standard 需要 *[Content_Types] .xml* 檔案。 如需 OPC 的詳細資訊，請參閱 [opc：將資料封裝](/archive/blogs/msdnmagazine/opc-a-new-standard-for-packaging-your-data) 在 MSDN 網站的新標準。

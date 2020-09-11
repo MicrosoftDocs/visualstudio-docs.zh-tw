@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01279666642adb729d4350b8a497c42d78159120
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2095087451ded8858382323aabc4048582a6db43
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703978"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012109"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage 安裝案例
 
@@ -74,7 +74,7 @@ ms.locfileid: "80703978"
 
 ![VS 並存與套件更新安裝程式](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-如需並存元件部署的詳細資訊，請參閱 [使用 .NET Framework 簡化部署和解決 DLL Hell](https://msdn.microsoft.com/library/ms973843.aspx)。
+如需並存元件部署的詳細資訊，請參閱 [使用 .NET Framework 簡化部署和解決 DLL Hell](/previous-versions/dotnet/articles/ms973843(v=msdn.10))。
 
 ## <a name="see-also"></a>另請參閱
 

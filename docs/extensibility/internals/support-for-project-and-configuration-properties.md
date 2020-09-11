@@ -11,17 +11,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c21d552e26add3a5159febd666c1f60573697535
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be9d9a6e0976ab1ff336fc6754fa44d26c031378
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704893"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012018"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支援專案和組態屬性
 整合式開發環境 (IDE) 中的 [ **屬性** ] 視窗 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可以顯示專案和設定屬性。 您可以為自己的專案類型提供屬性頁，讓使用者可以設定應用程式的屬性。
 
- 藉由在**方案總管**中選取專案節點，然後按一下 [**專案**] 功能表上的 [**屬性**]，您可以開啟包含專案和設定屬性的對話方塊。 在 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 和中， [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 以及從這些語言衍生的專案類型，此對話方塊會在 [ [一般]、[環境]、[選項] 對話方塊](../../ide/reference/general-environment-options-dialog-box.md)中顯示為索引標籤式頁面。 如需詳細資訊，請參閱 [不在組建中：逐步解說：公開專案和設定屬性 (c # ) ](https://msdn.microsoft.com/library/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)。
+ 藉由在**方案總管**中選取專案節點，然後按一下 [**專案**] 功能表上的 [**屬性**]，您可以開啟包含專案和設定屬性的對話方塊。 在 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 和中， [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 以及從這些語言衍生的專案類型，此對話方塊會在 [ [一般]、[環境]、[選項] 對話方塊](../../ide/reference/general-environment-options-dialog-box.md)中顯示為索引標籤式頁面。 如需詳細資訊，請參閱 [不在組建中：逐步解說：公開專案和設定屬性 (c # ) ](/previous-versions/bb166517(v=vs.100))。
 
  適用于專案的 Managed 封裝架構 (MPFProj) 提供協助程式類別來建立和管理新的專案系統。 您可以在 [適用于專案的 MPF](https://github.com/tunnelvisionlabs/MPFProj10)上找到原始程式碼和編譯指示-Visual Studio 2013。
 

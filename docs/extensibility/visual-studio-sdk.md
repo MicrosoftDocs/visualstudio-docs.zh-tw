@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ba3664ee9ea3e349aa4e5e9c01eed04ecddb45
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8acd7d52478574e8c37474426d27bc5c6a8b7efe
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173561"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012356"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK 可協助您擴充 Visual Studio 功能，或將新功能整合到 Visual Studio。 您可以將延伸模組散發給其他使用者以及 Visual Studio Marketplace。 下列是一些可擴充 Visual Studio 的方法：
@@ -65,7 +65,7 @@ Visual Studio SDK 可協助您擴充 Visual Studio 功能，或將新功能整�
 ## <a name="other-visual-studio-sdk-resources"></a>其他 Visual Studio SDK 資源
  如果您對 VSSDK 有任何疑問，或想要分享開發延伸模組的體驗，您可以使用 Visual Studio 擴充性 [論壇](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) 或 [ExtendVS Gitter 聊天室](https://gitter.im/Microsoft/extendvs)。
 
- 您可以在 [VSX Arcana blog](https://blogs.msdn.microsoft.com/vsx/) 中找到更多的資訊，以及 Microsoft mvp 所撰寫的許多 blog：
+ 您可以在 [VSX Arcana blog](/archive/blogs/vsx/) 中找到更多的資訊，以及 Microsoft mvp 所撰寫的許多 blog：
 
 - [我的最愛 Visual Studio 擴充功能](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
 
@@ -77,7 +77,7 @@ Visual Studio SDK 可協助您擴充 Visual Studio 功能，或將新功能整�
 
 - [使用功能表命令建立擴充功能](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [如何：將擴充性專案遷移至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [常見問題：將增益集轉換成 VSPackage 擴充功能](/visualstudio/extensibility/faq-converting-add-ins-to-vspackage-extensions?view=vs-2015)
+- [常見問題：將增益集轉換成 VSPackage 擴充功能](../vs-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions.md?view=vs-2015)
 - [在 managed 程式碼中管理多個執行緒](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)
 - [將命令新增至工具列](../extensibility/adding-commands-to-toolbars.md)

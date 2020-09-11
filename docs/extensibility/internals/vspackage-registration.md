@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a05dec8fbef40143f31f2c0ac484824717ea2e32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5941a0bc5d9f9f983a616dcc22cf1260d0911fa8
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703926"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012122"
 ---
 # <a name="vspackage-registration"></a>VSPackage 註冊
 Vspackage 必須建議 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 它們已安裝且應該載入。 這項程式的完成方式是在登錄中寫入資訊。 這是安裝程式的一般作業。
@@ -57,4 +57,4 @@ Vspackage 必須建議 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.m
 
 ## <a name="see-also"></a>另請參閱
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
-- [受控套件註冊](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+- [受控套件註冊](/previous-versions/bb166783(v=vs.100))

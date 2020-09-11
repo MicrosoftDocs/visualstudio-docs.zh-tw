@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b17f5bab02e49951eb1647af95641af807c44863
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc6f0643066aaca4ba12d9818d449785f6edb752
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721533"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011862"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 此介面可讓 debug engine (DE) 或自訂埠供應商來註冊程式以進行偵錯工具。
@@ -48,7 +48,7 @@ Visual Studio 會執行這個介面以註冊要進行偵錯工具的程式，以
 ## <a name="remarks"></a>備註
 此介面讓程式和程式節點可供使用， (也就是「發佈」它們) 供 DEs 和會話 debug manager (SDM) 使用。 若要存取已發佈的程式和程式節點，請使用 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) 介面。 這是 Visual Studio 可以辨識程式正在進行調試的唯一方法。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio
@@ -56,7 +56,7 @@ Visual Studio 會執行這個介面以註冊要進行偵錯工具的程式，以
 元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>範例
-此範例示範如何將程式發行者具現化，並註冊程式節點。 這是取自教學 [課程的發行程式節點](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae)。
+此範例示範如何將程式發行者具現化，並註冊程式節點。 這是取自教學 [課程的發行程式節點](/previous-versions/bb161795(v=vs.90))。
 
 ```cpp
 // This is how m_srpProgramPublisher is defined in the class definition:

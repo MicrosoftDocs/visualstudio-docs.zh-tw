@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c7d8a02de9331f268cd06ad35e19faab6494fe0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1ba6e9af922a7a7ab4dffe555aa55d3ab7bb9dd
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699857"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012096"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>適用於 Visual Studio 的色彩和樣式設定
 
@@ -283,7 +283,7 @@ Windows 會使用數個高對比的系統層級主題，以增加文字、背景
 
 ### <a name="system-color-set"></a>系統色彩組
 
-[ [WPF Team Blog： SystemColors 參考](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/) ] 中的資料表指出一組完整的系統色彩名稱，以及每個主題中顯示的對應色相。
+[ [WPF Team Blog： SystemColors 參考](/archive/blogs/wpf/systemcolors-reference) ] 中的資料表指出一組完整的系統色彩名稱，以及每個主題中顯示的對應色相。
 
 將這組有限的色彩套用至您的 UI 時， *您應該會遺失出現在「一般」主題中的微妙詳細資料*。 以下是具有微妙灰色色彩的 UI 範例，可用來區別工具視窗內的區域。 當搭配高對比模式中顯示的相同視窗時，您可以看到所有背景都是相同的色調，而這些區域的框線會單獨以框線表示：
 
@@ -340,7 +340,7 @@ Windows 會使用數個高對比的系統層級主題，以增加文字、背景
 
 VSPackage 可以透過自訂類別來控制字型和色彩，並在 [字型和色彩] 屬性頁上顯示專案。 使用這種機制時，Vspackage 必須執行 [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) 介面及其相關聯的介面。
 
-基本上，這個機制可以用來修改所有現有的顯示專案和包含它們的類別。 不過，它不應該用來修改文字編輯器類別或其顯示專案。 如需文字編輯器分類的詳細資訊，請參閱 [字型和色彩總覽](/visualstudio/extensibility/font-and-color-overview?view=vs-2015)。
+基本上，這個機制可以用來修改所有現有的顯示專案和包含它們的類別。 不過，它不應該用來修改文字編輯器類別或其顯示專案。 如需文字編輯器分類的詳細資訊，請參閱 [字型和色彩總覽](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015)。
 
 若要執行自訂類別或顯示專案，VSPackage 必須：
 
@@ -423,7 +423,7 @@ IDE 會快取字型和色彩設定的相關資訊。 因此，在任何修改 ID
 
   **OR**
 
-- **輪詢 IDE 的變更**。 這可以透過系統實行的 [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) 介面來完成。 雖然主要是為了支援持續性，但 [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) 方法可以取得顯示專案的字型和色彩資訊。 如需字型和色彩設定的詳細資訊，請參閱 MSDN 文章 [存取儲存的字型和色彩設定](/visualstudio/extensibility/accessing-stored-font-and-color-settings?view=vs-2015)。
+- **輪詢 IDE 的變更**。 這可以透過系統實行的 [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) 介面來完成。 雖然主要是為了支援持續性，但 [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) 方法可以取得顯示專案的字型和色彩資訊。 如需字型和色彩設定的詳細資訊，請參閱 MSDN 文章 [存取儲存的字型和色彩設定](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015)。
 
 > [!NOTE]
 > 若要確保輪詢結果正確無誤，請在呼叫[IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage)介面的抓取方法之前，使用[IVsFontAndColorCacheManager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager)介面判斷是否需要快取排清和更新。

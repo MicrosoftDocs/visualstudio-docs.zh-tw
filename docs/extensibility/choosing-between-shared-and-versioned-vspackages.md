@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21fefb776fceeeef4db6997a5bd12a8b987af7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96386c2d3b7d1e822fdd1dd6632d754740f86301
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739882"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011927"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>在共用和建立版本的 Vspackage 之間進行選擇
 不同版本的 Visual Studio 可以並存于同一部電腦上。 Vspackage 可支援任何版本的混合 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。
@@ -35,7 +35,7 @@ ms.locfileid: "80739882"
 
   - 將您的 VSPackage 程式設計為適應其執行所在的版本 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 然後，如果較新服務的查詢失敗，您的 VSPackage 可以提供舊版所支援的其他服務 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。
 
-- 適當地註冊您的 VSPackage。 如需詳細資訊，請參閱 [VSPackage 註冊](../extensibility/internals/vspackage-registration.md) 和 [受控 VSPackage 註冊](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)。
+- 適當地註冊您的 VSPackage。 如需詳細資訊，請參閱 [VSPackage 註冊](../extensibility/internals/vspackage-registration.md) 和 [受控 VSPackage 註冊](/previous-versions/bb166783(v=vs.100))。
 
 - 適當地註冊副檔名。 如需詳細資訊，請參閱 [註冊並存部署的](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)副檔名。
 

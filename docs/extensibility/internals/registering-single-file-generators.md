@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cea2ebba4739695393447a36e9842ade1670954
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 185e60daac2aef2c8aeeb4f087547984e6fcf510
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705804"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012031"
 ---
 # <a name="registering-single-file-generators"></a>註冊單一檔案產生器
 若要在中提供自訂工具 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，您必須註冊它，以便將它 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 具現化，並使其與特定的專案類型產生關聯。
@@ -71,4 +71,4 @@ ms.locfileid: "80705804"
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [實作單一檔案產生器](../../extensibility/internals/implementing-single-file-generators.md)
 - [將類型公開至視覺化設計工具](../../extensibility/internals/exposing-types-to-visual-designers.md)
-- [BuildManager 物件簡介](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+- [BuildManager 物件簡介](/previous-versions/8f9kffa8(v=vs.140))

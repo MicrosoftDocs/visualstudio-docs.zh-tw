@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9067f88b4bf1334e23a548bc6a2cbeb3eac6ad33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 48aa8a729b5cc38d3cee08a7f5ec143d5e84931a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708429"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012526"
 ---
 # <a name="expose-types-to-visual-designers"></a>將類型公開至視覺化設計工具
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須能夠在設計階段存取類別和類型定義，才能顯示視覺化設計工具。 類別是從一組預先定義的元件載入，其中包含目前專案的完整相依性集合， (參考加上) 的相依性。 視覺化設計工具也可能需要存取自訂工具所產生的檔案中所定義的類別和類型。
@@ -44,6 +44,6 @@ ms.locfileid: "80708429"
      編譯暫存 PE 時，唯一提供給編譯器的原始程式檔是自訂工具輸出。 因此，使用暫存 PE 的自訂工具必須產生輸出檔案，而這些輸出檔案可以獨立于專案中的其他檔案進行編譯。
 
 ## <a name="see-also"></a>另請參閱
-- [BuildManager 物件簡介](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+- [BuildManager 物件簡介](/previous-versions/8f9kffa8(v=vs.140))
 - [執行單一檔案產生器](../../extensibility/internals/implementing-single-file-generators.md)
 - [註冊單一檔案產生器](../../extensibility/internals/registering-single-file-generators.md)

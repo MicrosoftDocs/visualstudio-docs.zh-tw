@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ddfe2b61c8ef08d77fbb7c841b3bb69c167af2f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64edfe1088e7fb8888933d85eeef096bd8c2006a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903733"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012265"
 ---
 # <a name="create-custom-editors-and-designers"></a>建立自訂編輯器和設計工具
 
@@ -59,7 +59,7 @@ Visual Studio 整合式開發環境 (IDE) 可以裝載不同類型的編輯器�
 
 - 您的編輯器是否需要裝載 ActiveX 控制項？
 
-   如果您的編輯器裝載 ActiveX 控制項，請依照就地 [啟用](/visualstudio/misc/in-place-activation?view=vs-2015)的說明，執行就地啟用編輯器。 如果未裝載 ActiveX 控制項，則請使用簡化的內嵌編輯器，或自訂 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 預設編輯器。
+   如果您的編輯器裝載 ActiveX 控制項，請依照就地 [啟用](../vs-2015/misc/in-place-activation.md?view=vs-2015)的說明，執行就地啟用編輯器。 如果未裝載 ActiveX 控制項，則請使用簡化的內嵌編輯器，或自訂 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 預設編輯器。
 
 - 您的編輯器是否支援多個視圖？ 如果您想要讓編輯器的查看與預設編輯器同時顯示，您必須支援多個視圖。
 
@@ -93,7 +93,7 @@ Visual Studio 整合式開發環境 (IDE) 可以裝載不同類型的編輯器�
 
 ## <a name="related-sections"></a>相關章節
 
-[編輯器中的舊版介面](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015)\
+[編輯器中的舊版介面](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015)\
 說明如何透過舊版 API 來存取核心編輯器。
 
 [開發舊版語言服務](../extensibility/internals/developing-a-legacy-language-service.md)\

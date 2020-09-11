@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2b239059f445d92a5be6709ee7b7a26cb8bb7164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d1eb4cc53b6123acbba9741d33d3401d44cf6d7
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88144710"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011875"
 ---
 # <a name="work-with-sql-server-and-r"></a>使用 SQL Server 和 R
 
@@ -50,7 +50,7 @@ RTVS 支援將 SQL 查詢新增到 R 專案，讓您在不同的內容中反覆�
 ![SQL 視窗查詢結果](media/sql-query-results.png)
 
 Transact-SQL 編輯器支援各種不同的其他功能，例如檢視查詢執行計劃以及查詢偵錯工具。
-如需詳細資訊，請參閱[使用 Transact-SQL 編輯器，編輯及執行指令碼](https://msdn.microsoft.com/library/hh272706.aspx)。
+如需詳細資訊，請參閱[使用 Transact-SQL 編輯器，編輯及執行指令碼](/previous-versions/sql/sql-server-data-tools/hh272706(v=vs.103))。
 
 ## <a name="work-with-sql-server-stored-procedures"></a>使用 SQL Server 預存程序
 

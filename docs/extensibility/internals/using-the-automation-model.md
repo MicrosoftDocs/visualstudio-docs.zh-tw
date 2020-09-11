@@ -10,18 +10,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9d7bd789a41f7a5e801552ca07f9f228921867
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d014627161666473d3b674f72cfec339a66fdc05
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704225"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012486"
 ---
 # <a name="using-the-automation-model"></a>使用 Automation 模型
 將 VSPackage 連接至自動化之後，您可以在物件上呼叫方法來取得屬性和方法 <xref:EnvDTE.DTEClass.GetObject%2A> <xref:EnvDTE._DTE> ，並傳遞代表您要抓取之物件的字串。
 
 ## <a name="obtaining-project-objects"></a>取得專案物件
- 以下是兩個程式碼範例，示範 automation 取用者如何取得專案自動化物件。 如需如何取得 DTE 物件的詳細資訊，請參閱 [如何：取得 dte 和 DTE2 物件的參考](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4)。
+ 以下是兩個程式碼範例，示範 automation 取用者如何取得專案自動化物件。 如需如何取得 DTE 物件的詳細資訊，請參閱 [如何：取得 dte 和 DTE2 物件的參考](/previous-versions/68shb4dw(v=vs.140))。
 
 ```vb
 Sub DoAutomation()

@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e2ab6389f1e0d369dd095290d12c97431c44155
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfff8e4e6cc8ba3974ec70e6466b25e9ff7432e4
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705867"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012044"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>註冊 Interop 組件命令處理常式
 VSPackage 必須註冊，才能 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 讓整合式開發環境 (IDE) 適當地路由命令。
@@ -25,7 +25,7 @@ VSPackage 必須註冊，才能 [!INCLUDE[vsprvs](../../code-quality/includes/vs
 
  受控封裝架構 (MPF) 透過類別提供這種功能 <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> 。
 
-- [命令表格格式參考](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f) 資源位於非受控附屬 UI dll 中。
+- [命令表格格式參考](/previous-versions/bb164647(v=vs.100)) 資源位於非受控附屬 UI dll 中。
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>VSPackage 的命令處理常式註冊
  VSPackage 做為使用者介面 (UI) 型命令的處理常式，需要在 VSPackage 後命名的登錄專案 `GUID` 。 此登錄專案會指定 VSPackage 之 UI 資源檔的位置，以及該檔案內的功能表資源。 登錄專案本身位於 HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ *\<Version>* \Menus，其中 *\<Version>* 是的版本 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，例如9.0。

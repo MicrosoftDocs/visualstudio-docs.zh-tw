@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc975ff4f142b85297c20f16ac399fce588c093b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d572c49f7d528b9dbb624bf31ad5e28dc3799aa
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711264"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012239"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>開始使用 Roslyn 分析器
 
@@ -25,7 +25,7 @@ ms.locfileid: "80711264"
 
 [教學課程：撰寫您的第一個分析器和程式碼修正](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 
-[新增程式碼修正逐步解說：提供使用者針對分析器問題的修正](https://msdn.microsoft.com/magazine/dn904670.aspx)
+[新增程式碼修正逐步解說：提供使用者針對分析器問題的修正](/archive/msdn-magazine/2015/february/csharp-adding-a-code-fix-to-your-roslyn-analyzer)
 
 您也可以[觀賞的](https://channel9.msdn.com/events/Build/2015/3-725)[真實世界 Roslyn analyzer](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md)
 

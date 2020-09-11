@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 063767f8f50793253c236db5d5b90e1d6db1bff4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7ee7cbc4dee800351689386056389d274e07f4f
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905866"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012226"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>如何：將相依性新增至 VSIX 套件
 
@@ -48,6 +48,6 @@ VSIXInstaller 將會偵測舊版 Visual Studio，並通知使用者需要稍後�
 
 ## <a name="see-also"></a>另請參閱
 
-- [VSIX 延伸架構1.0 參考](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+- [VSIX 延伸架構1.0 參考](/previous-versions/dd393700(v=vs.110))
 - [VSIX 封裝的剖析](../extensibility/anatomy-of-a-vsix-package.md)
 - [準備 Windows Installer 部署的擴充功能](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

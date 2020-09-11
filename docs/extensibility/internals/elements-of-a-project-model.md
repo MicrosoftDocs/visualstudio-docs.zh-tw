@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf847e35878dc84bb32fe81053c01c23e565fc4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5cafc167eac28b7560287c6de88ee8c490196007
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708529"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011771"
 ---
 # <a name="elements-of-a-project-model"></a>專案模型的元素
 中所有專案的介面和實 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 作為共用基本結構：專案類型的專案模型。 在您要開發的 VSPackage 專案模型中，您會建立符合設計決策的物件，並與 IDE 所提供的全域功能一起運作。 您可以控制專案專案的保存方式，例如，您無法控制必須保存檔案的通知。 當使用者將焦點放在開啟的專案專案，並在功能表列上的 [檔案 **] 功能表上選擇 [** **儲存**] 時 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，您的專案類型程式碼必須從 IDE 攔截命令、保存檔案，然後將通知傳送回 ide，表示檔案已不再變更。
@@ -32,7 +32,7 @@ ms.locfileid: "80708529"
 
 - 當使用者透過 UI 建立新專案時，每個專案都必須具有範本檔案或 wizard，才能初始化新的專案檔 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 例如， [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 範本會初始化最終變成 vcproj 檔案的內容。
 
-  下圖顯示組成一般專案執行的主要介面、服務和物件。 您可以使用應用程式協助程式 `HierUtil7` 來建立基礎物件和其他程式設計的程式設計。 如需應用程式協助程式的詳細資訊 `HierUtil7` ，請參閱 [使用 HierUtil7 專案類別來執行 c + +)  (的專案類型 ](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)。
+  下圖顯示組成一般專案執行的主要介面、服務和物件。 您可以使用應用程式協助程式 `HierUtil7` 來建立基礎物件和其他程式設計的程式設計。 如需應用程式協助程式的詳細資訊 `HierUtil7` ，請參閱 [使用 HierUtil7 專案類別來執行 c + +)  (的專案類型 ](/previous-versions/bb166212(v=vs.100))。
 
   ![Visual Studio 專案模型圖形](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel") 專案模型
 
@@ -42,7 +42,7 @@ ms.locfileid: "80708529"
 
 ## <a name="see-also"></a>另請參閱
 - [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [使用 HierUtil7 專案類別來執行 c + + (的專案類型) ](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
+- [使用 HierUtil7 專案類別來執行 c + + (的專案類型) ](/previous-versions/bb166212(v=vs.100))
 - [專案模型核心元件](../../extensibility/internals/project-model-core-components.md)
 - [使用 project factory 建立專案實例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
 - [How to：取得服務](../../extensibility/how-to-get-a-service.md)

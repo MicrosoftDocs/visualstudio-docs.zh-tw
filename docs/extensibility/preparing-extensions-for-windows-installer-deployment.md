@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74cfdcaf5b9f9babe9eefed59f1ea62478434e66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0084cfc6c08db1c1d15013362a186fec175b4ee4
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906149"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012213"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>準備 Windows Installer 部署的擴充功能
 您無法使用 Windows Installer 套件 (MSI) 來部署 VSIX 套件。 不過，您可以解壓縮適用于 MSI 部署的 VSIX 套件內容。 本檔將說明如何準備專案，其預設輸出為 VSIX 封裝，以包含在安裝專案中。
@@ -55,5 +55,5 @@ ms.locfileid: "85906149"
 5. 將其餘的檔案新增至您的安裝專案。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 安裝程式部署](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)
+- [Visual Studio 安裝程式部署](/previous-versions/2kt85ked(v=vs.120))
 - [逐步解說：建立自訂動作](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f02c7ec0e453f0758ba2ab13145fcdff11b442a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4a3dba370594397d2f247de90063f69c4195cb6
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173599"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012148"
 ---
 # <a name="author-vsct-files"></a>撰寫 .vsct 檔案
 本檔說明如何撰寫 *.vsct* 檔案，以將功能表項目、工具列和其他使用者介面 (UI) 專案加入至 Visual Studio 整合式開發環境 (IDE) 。 當您將 UI 專案加入至沒有 *.vsct* 檔案的 Visual Studio 封裝 (VSPackage) 時，請使用這些步驟。
@@ -108,7 +108,7 @@ ms.locfileid: "84173599"
        > [!NOTE]
        > 工具列按鈕必須有圖示。
 
-   如需詳細資訊，請參閱 [menucommand 對比與 OleMenuCommands](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015)。
+   如需詳細資訊，請參閱 [menucommand 對比與 OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015)。
 
 4. 如果您的任何命令都需要圖示，請將 [點陣圖](../../extensibility/bitmaps-element.md) 元素加入至 `Commands` 元素。 然後，針對每個圖示，將 [Bitmap](../../extensibility/bitmap-element.md) 元素加入至專案 `Bitmaps` 。 這是您指定點陣圖資源位置的位置。 如需詳細資訊，請參閱 [將圖示新增至功能表命令](../../extensibility/adding-icons-to-menu-commands.md)。
 

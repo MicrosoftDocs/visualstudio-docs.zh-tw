@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7605307d24aa320d2f892dc332f9ff78e14114e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dc781160b5cc9cb60da12d063f5b6d11844f3ac
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905952"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012083"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>逐步解說：將功能新增至自訂編輯器
 建立自訂編輯器之後，您可以在其中加入更多功能。
@@ -34,11 +34,11 @@ ms.locfileid: "85905952"
 
 3. 藉由設定介面來執行編輯器 factory <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> 。
 
-     如需詳細資訊，請參閱 [編輯器](/visualstudio/extensibility/editor-factories?view=vs-2015)factory。
+     如需詳細資訊，請參閱 [編輯器](../vs-2015/extensibility/editor-factories.md?view=vs-2015)factory。
 
 4. 決定您是否想要編輯器使用就地啟用或簡化內嵌來管理檔視圖物件視窗。
 
-     簡化的內嵌編輯器視窗會主控標準檔視圖，而就地啟用編輯器視窗則會裝載 ActiveX 控制項或其他使用中的物件做為其檔視圖。 如需詳細資訊，請參閱 [簡化](../extensibility/simplified-embedding.md) 內嵌和就地 [啟用](/visualstudio/misc/in-place-activation?view=vs-2015)。
+     簡化的內嵌編輯器視窗會主控標準檔視圖，而就地啟用編輯器視窗則會裝載 ActiveX 控制項或其他使用中的物件做為其檔視圖。 如需詳細資訊，請參閱 [簡化](../extensibility/simplified-embedding.md) 內嵌和就地 [啟用](../vs-2015/misc/in-place-activation.md?view=vs-2015)。
 
 5. 執行 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面來處理命令。
 
@@ -51,7 +51,7 @@ ms.locfileid: "85905952"
         > [!NOTE]
         > 呼叫 `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> 以取得的指標 `IVsFileChangeEx` 。
 
-7. 使用原始程式碼控制協調檔編輯事件。 請遵循下列步驟：
+7. 使用原始程式碼控制協調檔編輯事件。 遵循這些步驟：
 
     1. 藉由呼叫來取得的指標 `IVsQueryEditQuerySave2` `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> 。
 
@@ -63,13 +63,13 @@ ms.locfileid: "85905952"
 
          如果檔案尚未儲存或自上次儲存後已變更，則此方法會提示使用者儲存檔案。
 
-8. 啟用 [ **屬性** ] 視窗，即可顯示在編輯器中選取之文字的屬性。 請遵循下列步驟：
+8. 啟用 [ **屬性** ] 視窗，即可顯示在編輯器中選取之文字的屬性。 遵循這些步驟：
 
     1. <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>每次文字選取變更時呼叫，並傳入您的實作為 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 。
 
     2. 呼叫 `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> 服務以取得的指標 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 。
 
-9. 讓使用者在編輯器和 **工具箱**之間，或在外部編輯器 (（例如 Microsoft Word) 和 **工具箱**）之間，拖放專案。 請遵循下列步驟：
+9. 讓使用者在編輯器和 **工具箱**之間，或在外部編輯器 (（例如 Microsoft Word) 和 **工具箱**）之間，拖放專案。 遵循這些步驟：
 
     1. `IDropTarget`在編輯器上執行，以警示 IDE 編輯器是放置目標。
 
@@ -115,7 +115,7 @@ ms.locfileid: "85905952"
 
 12. 執行即時線上說明支援。
 
-     此步驟可讓您為編輯器中的專案提供 F1 說明和動態說明視窗支援。 如需詳細資訊，請參閱 [如何：提供編輯器的內容](/visualstudio/extensibility/how-to-provide-context-for-editors?view=vs-2015)。
+     此步驟可讓您為編輯器中的專案提供 F1 說明和動態說明視窗支援。 如需詳細資訊，請參閱 [如何：提供編輯器的內容](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015)。
 
 13. 藉由執行介面，從編輯器公開 Automation 物件模型 `IDispatch` 。
 

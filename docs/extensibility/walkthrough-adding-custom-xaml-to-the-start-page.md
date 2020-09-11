@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: a13aada6cca9b54d8469885ab4c314a89cd06d6c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85cc6520ea86db664de676232e8d61a643483ca4
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905954"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012070"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>逐步解說：將自訂 XAML 新增至起始頁
 
@@ -90,4 +90,4 @@ ms.locfileid: "85905954"
 ## <a name="see-also"></a>另請參閱
 
 - [自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)
-- [WPF 容器控制項](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
+- [WPF 容器控制項](/previous-versions/bb675291(v=vs.110))

@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b940677c370106ebdcc63c7984d553003251e8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f953add14c617d54d44cf8d6bf873c28eea8651
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710013"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012161"
 ---
 # <a name="automation-model-overview"></a>Automation 模型總覽
 Automation 模型包含一組物件，可讓您撰寫 Visual Studio 的增益集或延伸模組。 增益集是一種應用程式，可操作 Visual Studio 環境並將一般工作自動化。 Visual Studio 擴充功能可以建立自訂 Visual Studio 元件，或新增至標準元件的功能，例如文字編輯器。
@@ -26,21 +26,21 @@ Automation 模型包含一組物件，可讓您撰寫 Visual Studio 的增益集
 
  ![Visual Studio automation 物件圖](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")
 
- 如需詳細資訊，請參閱 [擴充 Visual Studio 環境](https://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792)。
+ 如需詳細資訊，請參閱 [擴充 Visual Studio 環境](/previous-versions/esk3eey8(v=vs.140))。
 
  環境會針對不同的功能區域提供模型。 比方說，您可能會在程式碼中找到各種專案的程式碼模型。 有各種檔元素的檔模型。 VSPackage 提供者特別感興趣的一個區域（專案區域）。 您可能會想要讓新的專案類型能夠以 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 和參與 automation 模型的相同方式，來參與 automation 模型 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 。 此程式會在 [提供自動化的 vspackage](../../extensibility/internals/providing-automation-for-vspackages.md)中概述。
 
  您可以考慮延伸環境自動化模型的位置：
 
-- 專案
+- Project
 
-- Document
+- 文件
 
 - 程式碼
 
 - Build
 
-如需自動化的詳細資訊，請參閱 [Visual Studio 的自動化和](/visualstudio/extensibility/extensibility-in-visual-studio?view=vs-2015)擴充性。 這份檔及其提供的連結，可協助您做出有關如何為 VSPackage 提供自動化的決策。
+如需自動化的詳細資訊，請參閱 [Visual Studio 的自動化和](../../vs-2015/extensibility/extensibility-in-visual-studio.md?view=vs-2015)擴充性。 這份檔及其提供的連結，可協助您做出有關如何為 VSPackage 提供自動化的決策。
 
 ## <a name="see-also"></a>另請參閱
-- [如何：建立增益集](https://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)
+- [如何：建立增益集](/previous-versions/80493a3w(v=vs.140))

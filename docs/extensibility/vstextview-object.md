@@ -13,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81d5e02d6ec18f8561a83b414532a4b78def5c09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65a78253094131b5998243ee3c826c4585ddff13
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697705"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012174"
 ---
 # <a name="vstextview-object"></a>VSTextView 物件
 
-文字視圖是一個視窗，可讓使用者查看和編輯文字緩衝區的 Unicode 文字。 基本上，此視圖是大部分使用者作為編輯器的參考。 因為不同的文字圖層會將視圖與緩衝區分隔 (自動換行、將文字大綱，依此類推) ，所以不保證該視圖是緩衝區中文字的確切表示。 如需文字視圖的詳細資訊，請參閱 [使用舊版 API 存取文字 view](/visualstudio/extensibility/accessing-thetext-view-by-using-the-legacy-api?view=vs-2015)。
+文字視圖是一個視窗，可讓使用者查看和編輯文字緩衝區的 Unicode 文字。 基本上，此視圖是大部分使用者作為編輯器的參考。 因為不同的文字圖層會將視圖與緩衝區分隔 (自動換行、將文字大綱，依此類推) ，所以不保證該視圖是緩衝區中文字的確切表示。 如需文字視圖的詳細資訊，請參閱 [使用舊版 API 存取文字 view](../vs-2015/extensibility/accessing-thetext-view-by-using-the-legacy-api.md?view=vs-2015)。
 
 下表顯示物件中的介面 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> 。
 

@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e876dd9e6fa95bbe180d1737bc8c4911f16e1e9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f48d8ebb285bdc8211f590f49e615042b7029d70
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712218"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011705"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>設計工具初始化和中繼資料設定
 
@@ -102,4 +102,4 @@ VSPackage 可以在設計階段變更設計工具或設計工具元件的設定�
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>
 - <xref:System.ComponentModel.ToolboxItemFilterType>
-- [擴充設計階段支援](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+- [擴充設計階段支援](/previous-versions/37899azc(v=vs.140))
