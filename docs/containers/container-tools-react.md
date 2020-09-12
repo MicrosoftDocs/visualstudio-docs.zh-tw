@@ -1,18 +1,19 @@
 ---
 title: 使用 ASP.NET Core 和 React.js Visual Studio 容器工具
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 author: ghogen
 description: 了解如何使用 Visual Studio 容器工具和適用於 Windows 的 Docker
 ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 2ac295982bb6ac0f6eaf6408106e3d95024af14d
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 45dc1f16f1655c5c738804a1c4e0093dd9c8b1f8
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741880"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036323"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>快速入門：在 Visual Studio 中搭配使用 Docker 與回應單一頁面應用程式
 
@@ -241,7 +242,7 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
 
    ![顯示成功發佈的螢幕擷取畫面](media/container-tools/publish-succeeded.png)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 您現在可以從登錄中，將容器提取至能夠執行 Docker 映像的任何主機，例如 [Azure 容器執行個體](/azure/container-instances/container-instances-tutorial-deploy-app)。
 

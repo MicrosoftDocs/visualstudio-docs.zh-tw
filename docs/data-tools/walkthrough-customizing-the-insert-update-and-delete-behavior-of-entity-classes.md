@@ -1,5 +1,6 @@
 ---
 title: 自訂插入/更新/刪除行為
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 01fe4cf160ed3a7548fd8b8bed003838abee3d04
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 5323cfa41dc4931db514977238fd359b4f38ab3f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741827"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036739"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>逐步解說：自訂實體類別的插入、更新和刪除行為
 
@@ -85,7 +86,7 @@ ms.locfileid: "89741827"
 
 5. 按一下 [LINQ to SQL 類別]**** 範本，並在 [名稱]**** 方塊中鍵入 **Northwind.dbml**。
 
-6. 按一下 [新增] 。
+6. 按一下 [新增]  。
 
      將 (**Northwind**) 的空白 LINQ to SQL 類別檔案新增至專案，並開啟 **O/R 設計** 工具。
 
@@ -261,7 +262,7 @@ ms.locfileid: "89741827"
     > [!NOTE]
     > 如果應用程式使用 SQL Server Express Edition，則根據資料庫檔案 [複製到輸出目錄]**** 屬性值的不同，在步驟 10 按 **F5** 時，變更可能不會出現。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 視您的應用程式需求而定，在建立 LINQ to SQL 實體類別之後，您可能會想要執行幾個步驟。 您可以進行下列作業讓此應用程式發揮更強的功能：
 

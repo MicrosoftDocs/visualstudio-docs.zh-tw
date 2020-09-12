@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f333cc3409056739cef7c378d9815f10439ab37e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d18282cf0fbd8782eb7abce05794e0b2eb1c5c1
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80880360"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035738"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>使用自動程式化 UI 測試來測試您的程式碼
 
@@ -446,7 +446,7 @@ myWinCheckBox.Checked = true;
 
 - [在建置流程中執行測試](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [如何：將您的測試代理程式設定為執行與桌面互動的測試](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [如何：將您的測試代理程式設定為執行與桌面互動的測試](/previous-versions/ee291332(v=vs.140))
 
 **新增自訂控制項的支援：**  自動程式碼 UI 測試架構不支援每個可能的 UI，而且可能不支援您要測試的 UI。 例如，您無法立即為 Microsoft Excel 的 UI 建立自動程式化 UI 測試。 不過，您可以建立自動程式化 UI 測試架構的延伸模組，以支援自訂控制項。
 

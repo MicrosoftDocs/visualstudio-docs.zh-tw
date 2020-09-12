@@ -14,39 +14,67 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20524a02cf6ff38e8336ae715162f9f197d46590
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: cccba4c299d5b12bdc00666a0b00f073fba12278
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641646"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036678"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>將您的應用程式部署到資料夾、IIS、Azure 或其他目的地
 
 透過部署應用程式、服務或元件，就可以將它散發到其他電腦、裝置、伺服器或雲端上進行安裝。 請在 Visual Studio 中針對您需要的部署類型選擇適當的方法。
 
-針對許多常見的應用程式類型，您可以直接從 Visual Studio 中的 [方案總管] 來部署應用程式。 如需這項功能的快速導覽，請參閱[部署簡介](../deployment/deploying-applications-services-and-components.md)。
+取得部署工作的協助：
 
-![選擇發佈選項](../deployment/media/quickstart-publish-dialog.png)
+- 不確定要選擇哪一個部署選項？ 查看 [哪些發佈選項適合我？](#what-publishing-options-are-right-for-me)
+- 如需 Azure App Service 或 IIS 部署問題的說明，請參閱 [Azure App Service 和 iis 上的 ASP.NET Core 疑難排解](/aspnet/core/test/troubleshoot-azure-iis)。
+- 如需設定 .NET 部署設定的說明，請參閱 [設定 .net 部署設定](#configure-net-deployment-settings)。
+- 若要部署到新的目標，如果您先前已建立發行設定檔，請從已設定設定檔的 [**發行**] 視窗中選取 [**新增**]。
+
+   ![建立新的發行設定檔](../deployment/media/create-a-new-publish-profile.png)
+
+   然後，在 [發行] 視窗中選擇部署選項。 如需發佈選項的詳細資訊，請參閱下列各節。
 
 ## <a name="what-publishing-options-are-right-for-me"></a>適合我的發行選項為何？
 
 在 Visual Studio 內，可以直接將應用程式發行至下列目標：
 
+::: moniker range=">=vs-2019"
 - [Azure](#azure)
 - [Docker Container Registry](#docker-container-registry)
 - [資料夾](#folder)
 - [FTP/FTPS 伺服器](#ftpftps-server)
 - [Web 服務器 (IIS) ](#web-server-iis)
 - [匯入設定檔](#import-profile)
+::: moniker-end
+::: moniker range="vs-2017"
+- [App Service](#azure-app-service)
+- [App Service Linux](#azure-app-service)
+- [IIS (選擇 IIS、FTP 等 ) ](#web-server-iis)
+- [FTP/FTPS (選擇 IIS、FTP 等 ) ](#ftpftps-server)
+- [資料夾](#folder)
+- [匯入設定檔](#import-profile)
+::: moniker-end
+
+當您建立新的發行設定檔時，上述選項會顯示如下圖所示。
+
+::: moniker range=">=vs-2019"
+![選擇發佈選項](../deployment/media/quickstart-publish-dialog.png)
+::: moniker-end
+::: moniker range="vs-2017"
+![選擇發佈選項](../deployment/media/quickstart-publish-dialog-vs-2017.png)
+::: moniker-end
+
+如需更多一般應用程式部署選項的快速教學課程，請參閱 [部署的第一次查看](../deployment/deploying-applications-services-and-components.md)。
 
 ## <a name="azure"></a>Azure 
 
 當您選擇 Azure 時，可以選擇：
 
-- 在 Windows、Linux 或 Docker 映射上執行 Azure App Service
-- 部署至 Azure Container Registry 的 Docker 映射
-- Azure 虛擬機器
+- 在 Windows、Linux 或 Docker 映射上執行[Azure App Service](#azure-app-service)
+- 部署至[Azure Container Registry](#azure-container-registry)的 Docker 映射
+- [Azure 虛擬機器](#azure-virtual-machine)
 
 ![選擇 Azure 服務](../deployment/media/quickstart-choose-azure-service.png)
 
@@ -66,7 +94,9 @@ ms.locfileid: "89641646"
 > 如果您想要在自己的資料中心或其他內部部署電腦中使用 Azure App Service，則做法是使用 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)。
 
 如需發行至 App Service 的詳細資訊，請參閱：
-- [快速入門-發佈至 Azure App Service](quickstart-deploy-to-azure.md) 並 [快速入門-將 ASP.NET Core 發佈至 Linux](quickstart-deploy-to-linux.md)。
+- [快速入門-發佈至 Azure App Service](quickstart-deploy-to-azure.md)
+- [快速入門-將 ASP.NET Core 發佈至 Linux](quickstart-deploy-to-linux.md)。
+- [將 ASP.NET Core 應用程式發佈至 Azure App Service](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
 - [疑難排解 Azure App Service 和 IIS 上的 ASP.NET Core](/aspnet/core/test/troubleshoot-azure-iis)。
 
 ### <a name="azure-container-registry"></a>Azure Container Registry
@@ -78,7 +108,11 @@ ms.locfileid: "89641646"
 - 當您有現有的 Docker 容器開發和部署管線時。
 - 當您想要在 Azure 中建立 Docker 容器映射時。
 
-### <a name="azure-virtual-machines"></a>Azure 虛擬機器
+如需詳細資訊：
+
+- [將 ASP.NET 容器部署到容器登錄](../containers/hosting-web-apps-in-docker.md)
+
+### <a name="azure-virtual-machine"></a>Azure 虛擬機器
 
 [Azure 虛擬機器 (VM)](https://azure.microsoft.com/documentation/services/virtual-machines/) 可讓您建立和管理雲端中任意數目的計算資源。 假設負有 VM 上所有軟體和更新的責任，即可依應用程式要求視需要進行自訂。 您可以透過「遠端桌面」直接存取虛擬機器，每部機器都會依需要維持其獲指派的 IP 位址。
 
@@ -95,13 +129,18 @@ ms.locfileid: "89641646"
 
 > 如果您想要在自己的資料中心或其他內部部署電腦中使用 Azure 虛擬機器，則做法是使用 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)。
 
-## <a name="docker-container-registry"></a>Docker Container Registry
+## <a name="docker-container-registry"></a>Docker 容器登錄
 
-如果您的應用程式使用 Docker，您可以將容器化應用程式發佈至 Docker Container Registry。
+如果您的應用程式使用 Docker，您可以將容器化應用程式發佈至 Docker container registry。
 
 ### <a name="when-to-choose-docker-container-registry"></a>選擇 Docker Container Registry 的時機
 
 - 您想要部署容器化應用程式
+
+如需詳細資訊，請參閱下列：
+
+- [將 ASP.NET 容器部署到容器登錄](../containers/hosting-web-apps-in-docker.md)
+- [發佈至 Docker Hub](../containers/deploy-docker-hub.md)
 
 ## <a name="folder"></a>資料夾
 
@@ -117,7 +156,13 @@ ms.locfileid: "89641646"
 - 您只需要本機測試部署。
 - 您想要個別檢查並可能修改應用程式檔案，再將它們傳送至另一個部署目標。
 
-如需詳細資訊，請參閱[快速入門 - 部署到本機資料夾](quickstart-deploy-to-local-folder.md)
+如需詳細資訊，請參閱 [快速入門-部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
+
+如需選擇設定的其他說明，請參閱下列各項：
+
+- [與 Framework 相依的 vs 獨立部署](/dotnet/core/deploying/)
+- [目標執行時間識別碼 (可攜的 RID，et al) ](/dotnet/core/rid-catalog)
+- [Debug 和 release 設定](../ide/understanding-build-configurations.md)
 
 ## <a name="ftpftps-server"></a>FTP/FTPS 伺服器
 
@@ -157,7 +202,9 @@ IIS 網頁伺服器可讓您將應用程式部署至 Azure 以外的 web 伺服�
 - 您想要使用認證進行部署，但這些認證不是您在 Visual Studio 內使用的認證或直接繫結至 Azure 帳戶的認證。
 - 您想要在每次部署時刪除目標中的檔案。
 
-如需詳細資訊，請參閱 [快速入門-部署至網站](quickstart-deploy-to-a-web-site.md)。 如需在 IIS 上進行 ASP.NET Core 疑難排解的詳細資訊，請參閱 [Azure App Service 和 iis 上的 ASP.NET Core 疑難排解](/aspnet/core/test/troubleshoot-azure-iis)。
+如需詳細資訊，請參閱 [快速入門-部署至網站](quickstart-deploy-to-a-web-site.md)。
+
+如需在 IIS 上進行 ASP.NET Core 疑難排解的詳細資訊，請參閱 [Azure App Service 和 iis 上的 ASP.NET Core 疑難排解](/aspnet/core/test/troubleshoot-azure-iis)。
 
 ## <a name="import-profile"></a>匯入設定檔
 
@@ -175,7 +222,15 @@ IIS 網頁伺服器可讓您將應用程式部署至 Azure 以外的 web 伺服�
 - [匯入發佈設定並部署至 IIS](tutorial-import-publish-settings-iis.md)
 - [匯入發行設定並部署至 Azure](tutorial-import-publish-settings-azure.md)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="configure-net-deployment-settings"></a>設定 .NET 部署設定
+
+如需選擇設定的其他說明，請參閱下列各項：
+
+- [與 Framework 相依的 vs 獨立部署](/dotnet/core/deploying/)
+- [目標執行時間識別碼 (可攜的 RID，et al) ](/dotnet/core/rid-catalog)
+- [Debug 和 release 設定](../ide/understanding-build-configurations.md)
+
+## <a name="next-steps"></a>接下來的步驟
 
 教學課程：
 

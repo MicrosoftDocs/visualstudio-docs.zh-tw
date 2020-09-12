@@ -1,5 +1,6 @@
 ---
 title: 在 LINQ to SQL 中使用預存程式來更新資料
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ba6ee706a7c18545a17683233e30283559542890
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 3f8b2f783d6ae449a6124afe5d8e25dd836f0f8e
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743011"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036310"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>如何：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)
 

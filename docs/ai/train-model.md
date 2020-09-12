@@ -1,6 +1,7 @@
 ---
-title: 在 Azure Batch AI 中提交工作以定型模型
-description: 定型模型雲端
+title: 提交作業來定型模型
+description: 使用 Azure Batch AI 提交作業來定型模型
+ms.custom: SEO-VS-2020
 keywords: AI, Visual Studio, 定型模型, 雲端
 author: jillre
 ms.author: jillfra
@@ -10,12 +11,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 4d705cbff1ce4e25892dfc5df896418e6d58b632
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 110468de264370b22d64dae40cf55e9766804c31
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371647"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036609"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>在 Azure Batch AI 中定型 AI 模型
 

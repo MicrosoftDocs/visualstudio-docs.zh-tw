@@ -15,17 +15,17 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8238de0760f300b6fa418a5e3eb47eac3db77272
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 77428bfc815a963e8fae4ddae5e5e7a7b7d991fe
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509012"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034100"
 ---
 # <a name="net-code-analysis-rules"></a>.NET 程式碼分析規則
-Managed 程式碼分析工具會提供警告，指出 Managed 程式碼程式庫中的規則違規。 警告會組織成規則區域，例如設計、當地語系化、效能與安全性。 每一項警告皆表示 Managed 程式碼分析規則的違規。 本節針對每個 Managed 程式碼分析警告，提供深入的討論與範例。
+.NET 程式碼分析提供的規則指出程式碼品質違規或建議，以改善程式碼品質。 這些規則會組織成規則區域，例如設計、當地語系化、效能和安全性。 某些規則專屬於 .NET API 的使用方式，而其餘的規則則是關於一般程式碼品質。 本節提供每個規則的深入討論和範例。
 
- 下表顯示針對每個警告所提供的資訊類型。
+ 下表顯示每個診斷所提供的資訊類型。
 
 |Item|描述|
 |----------|-----------------|

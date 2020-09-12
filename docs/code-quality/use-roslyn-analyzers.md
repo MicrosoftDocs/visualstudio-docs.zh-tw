@@ -1,54 +1,34 @@
 ---
-title: 分析器規則嚴重性和隱藏專案
-ms.date: 03/04/2020
+title: 程式碼品質分析
+ms.date: 09/02/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 22a82abab6b0c11ed57780ac69b4af9e1290ac2d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 4cbe22571a2485d163960cc7af58975f0a299bf9
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599982"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036355"
 ---
-# <a name="use-code-analyzers"></a>使用程式碼分析器
+# <a name="configure-code-quality-analysis"></a>設定程式碼品質分析
 
-.NET Compiler Platform ( "Roslyn" ) 程式碼分析器在您輸入時分析您的 c # 或 Visual Basic 程式碼。 每個 *診斷* 或規則都有預設的嚴重性和隱藏狀態，可針對您的專案覆寫。 本文涵蓋設定規則嚴重性、使用規則集，以及隱藏違規。
+從 .NET 5.0 開始，程式碼品質分析器會隨附于 .NET SDK。  (之前，您已將這些分析器安裝為 NuGet 套件。針對以 .NET 5.0 或更新版本為目標的專案，預設會啟用 ) 程式碼分析。 您可以藉由將 [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) 屬性設定為，在以較早 .net 版本為目標的專案上啟用程式碼分析 `true` 。 您也可以將設定為，以停用專案的程式碼分析 `EnableNETAnalyzers` `false` 。
 
-## <a name="analyzers-in-solution-explorer"></a>方案總管中的分析器
+每個程式碼品質分析器 *診斷* 或規則都有預設的嚴重性和隱藏狀態，可針對您的專案進行覆寫和自訂。 本文說明如何設定程式碼品質分析器嚴重性，以及抑制分析器違規。
 
-您可以從 **方案總管**進行大部分的分析器診斷自訂。 如果您[將分析器安裝](../code-quality/install-roslyn-analyzers.md)為 NuGet 封裝，**分析器**節點會出現在**方案總管**的 [**參考**] 或 [相依性 **]** 節點底下。 如果您展開 [ **分析器**]，然後展開其中一個分析器元件，則會在元件中看到所有診斷。
-
-![方案總管中的分析器節點](media/analyzers-expanded-in-solution-explorer.png)
-
-您可以在 [ **屬性** ] 視窗中，查看診斷的屬性，包括其描述和預設嚴重性。 若要查看屬性，請以滑鼠右鍵按一下規則，然後選取 [**屬性**]，或選取規則，然後按下**Alt** + **enter**。
-
-![屬性視窗中的診斷屬性](media/analyzer-diagnostic-properties.png)
-
-若要查看診斷的線上檔，請以滑鼠右鍵按一下診斷，然後選取 [ **View Help**]。
-
-**方案總管**中每個診斷旁邊的圖示，會對應至您在編輯器中開啟它時，在規則集中看到的圖示：
-
-- 圓形中的 "x" 表示**錯誤**的[嚴重性](#rule-severity)
-- 三角形中的 "！" 表示**警告**的[嚴重性](#rule-severity)
-- 圓形中的 "i" 表示**資訊**的[嚴重性](#rule-severity)
-- 亮色背景上圓形中的 "i" 表示 [嚴重性](#rule-severity) 為 **隱藏**
-- 圓形中的向下箭號表示已隱藏診斷
-
-![方案總管中的診斷圖示](media/diagnostics-icons-solution-explorer.png)
-
-## <a name="rule-severity"></a>規則嚴重性
+## <a name="configure-severity-levels"></a>設定嚴重性層級
 
 ::: moniker range=">=vs-2019"
 
-如果您將分析器[安裝](../code-quality/install-roslyn-analyzers.md)為 NuGet 套件，您可以設定分析器規則或*診斷*的嚴重性。 從 Visual Studio 2019 版本16.3 開始，您可以 [在 EditorConfig 檔中](#set-rule-severity-in-an-editorconfig-file)設定規則的嚴重性。 您也可以 [從方案總管](#set-rule-severity-from-solution-explorer) 或 [在規則集檔案中](#set-rule-severity-in-the-rule-set-file)變更規則的嚴重性。
+從 Visual Studio 2019 版本16.3 開始，您可以在[EditorConfig](#set-rule-severity-in-an-editorconfig-file)檔中設定分析器規則或*診斷*的嚴重性，從燈泡[功能表](#set-rule-severity-from-the-light-bulb-menu)和從 [錯誤清單]。
 
 ::: moniker-end
 
@@ -66,16 +46,22 @@ ms.locfileid: "89599982"
 | 警告 | `warning` | 違規在錯誤清單和命令列組建輸出中會顯示為 *警告* ，但不會造成組建失敗。 | 有問題的程式碼會以綠色波浪線加上底線，並在捲軸中以小綠色方塊標記。 |
 | 資訊 | `suggestion` | 違規會以 *訊息* 形式出現在錯誤清單中，而不是在命令列組建輸出中。 | 有問題的程式碼會以灰色波浪線加上底線，並在捲軸中以小灰色方塊標記。 |
 | Hidden | `silent` | 使用者看不到。 | 使用者看不到。 不過，診斷會回報給 IDE 診斷引擎。 |
-| 無 | `none` | 已完全隱藏。 | 已完全隱藏。 |
+| None | `none` | 已完全隱藏。 | 已完全隱藏。 |
 | 預設 | `default` | 對應于規則的預設嚴重性。 若要判斷規則的預設值為何，請查看屬性視窗。 | 對應于規則的預設嚴重性。 |
 
-下列程式碼編輯器的螢幕擷取畫面顯示三種與不同嚴重性的不同違規。 請注意右邊捲軸的波浪色彩和小彩色方形。
+如果分析器發現規則違規，就會在 [程式碼編輯器] 中回報它們， (在違規程序代碼) 和 [錯誤清單] 視窗中的 *波浪* 線。
 
-![程式碼編輯器中的錯誤、警告和資訊違規](media/diagnostics-severity-colors.png)
+錯誤清單中報告的分析器違規符合規則的 [嚴重性層級設定](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) 。 分析器違規也會在程式碼編輯器中顯示為違規程序代碼底下的波浪線。 下圖顯示三個 &mdash; 錯誤 (紅色波浪線) 、一個警告 (綠色波浪線) ，以及一個建議 (三個灰色的點) ：
+
+![Visual Studio 中的程式碼編輯器中的波浪線](media/diagnostics-severity-colors.png)
 
 下列螢幕擷取畫面顯示出現在 [錯誤清單] 中的三個違規：
 
 ![錯誤清單中的錯誤、警告和資訊違規](media/diagnostics-severities-in-error-list.png)
+
+許多分析器規則或 *診斷*都有一或多個相關聯的程式 *代碼修正* ，可套用以修正規則違規。 程式碼修正會顯示在燈泡圖示功能表中，並顯示其他類型的[快速動作](../ide/quick-actions.md)。 如需這些程式碼修正的資訊，請參閱[一般的快速動作](../ide/quick-actions.md)。
+
+![分析器違規和快速動作程式碼修正](../code-quality/media/built-in-analyzer-code-fix.png)
 
 ### <a name="hidden-severity-versus-none-severity"></a>「隱藏」嚴重性與「無」嚴重性
 
@@ -94,7 +80,7 @@ ms.locfileid: "89599982"
 
 `dotnet_diagnostic.<rule ID>.severity = <severity>`
 
-在 EditorConfig 檔案中設定規則的嚴重性優先于規則集或方案總管中設定的任何嚴重性。 您可以 [手動](#manually-configure-rule-severity) 設定 EditorConfig 檔中的嚴重性，或 [自動](#automatically-configure-rule-severity) 完成違規旁邊出現的燈泡。
+在 EditorConfig 檔案中設定規則的嚴重性優先于規則集或方案總管中設定的任何嚴重性。 您可以 [手動](#manually-configure-rule-severity-in-an-editorconfig-file) 設定 EditorConfig 檔中的嚴重性，或 [自動](#set-rule-severity-from-the-light-bulb-menu) 完成違規旁邊出現的燈泡。
 
 ### <a name="set-rule-severity-of-multiple-analyzer-rules-at-once-in-an-editorconfig-file"></a>在 EditorConfig 檔案中一次設定多個分析器規則的規則嚴重性
 
@@ -129,7 +115,7 @@ ms.locfileid: "89599982"
 
 在上述範例中，這三個專案都適用于 CA1822。 不過，使用指定的優先順序規則時，第一個以規則識別碼為基礎的嚴重性專案優先于下一個專案。 在此範例中，CA1822 會有「錯誤」的有效嚴重性。 所有具有「效能」類別的其餘規則都會有「警告」的嚴重性。 所有其餘的分析器規則（沒有「效能」類別）都會有「建議」的嚴重性。
 
-#### <a name="manually-configure-rule-severity"></a>手動設定規則嚴重性
+#### <a name="manually-configure-rule-severity-in-an-editorconfig-file"></a>在 EditorConfig 檔案中手動設定規則嚴重性
 
 1. 如果您的專案尚未有 EditorConfig 檔案，請 [新增一個](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)。
 
@@ -142,6 +128,68 @@ ms.locfileid: "89599982"
 
 > [!NOTE]
 > 針對 IDE 程式碼樣式分析器，您也可以使用不同的語法在 EditorConfig 檔中設定它們，例如 `dotnet_style_qualification_for_field = false:suggestion` 。 但是，如果您使用語法設定嚴重性 `dotnet_diagnostic` ，則會優先使用。 如需詳細資訊，請參閱 [EditorConfig 的語言慣例](../ide/editorconfig-language-conventions.md)。
+
+### <a name="set-rule-severity-from-the-light-bulb-menu"></a>從燈泡功能表設定規則嚴重性
+
+Visual Studio 提供一個便利的方式，從 [ [快速動作](../ide/quick-actions.md) ] 燈泡功能表設定規則的嚴重性。
+
+1. 違規發生之後，將滑鼠停留在編輯器的違規波浪線上，然後開啟燈泡功能表。 或者，將游標放在這一行，然後按下**Ctrl** + **。** (句點)。
+
+2. 從燈泡功能表中，選取 [ **設定或隱藏問題** > **設定 \<rule ID> 嚴重性**]。
+
+   ![從 Visual Studio 中的燈泡功能表設定規則嚴重性](media/configure-rule-severity.png)
+
+3. 從該處選擇其中一個嚴重性選項。
+
+   ![將規則嚴重性設定為建議](media/configure-rule-severity-suggestion.png)
+
+   Visual Studio 將專案新增至 EditorConfig 檔案，以將規則設定為要求的層級，如預覽方塊中所示。
+
+   > [!TIP]
+   > 如果專案中還沒有 EditorConfig 檔案，Visual Studio 為您建立一個檔案。
+
+### <a name="set-rule-severity-from-the-error-list-window"></a>從 [錯誤清單] 視窗設定規則嚴重性
+
+Visual Studio 也提供方便的方式，從 [錯誤清單] 內容功能表設定規則的嚴重性。
+
+1. 違規發生之後，以滑鼠右鍵按一下 [錯誤清單] 中的診斷專案。
+
+2. 從內容功能表中，選取 [ **設定嚴重性**]。
+
+   ![在 Visual Studio 中從錯誤清單設定規則嚴重性](media/configure-rule-severity-error-list.png)
+
+3. 從該處選擇其中一個嚴重性選項。
+
+   Visual Studio 將專案新增至 EditorConfig 檔案，以將規則設定為要求的層級。
+
+   > [!TIP]
+   > 如果專案中還沒有 EditorConfig 檔案，Visual Studio 為您建立一個檔案。
+
+::: moniker-end
+
+### <a name="set-rule-severity-from-solution-explorer"></a>從方案總管設定規則嚴重性
+
+您可以從 **方案總管**進行大部分的分析器診斷自訂。 如果您[將分析器安裝](../code-quality/install-roslyn-analyzers.md)為 NuGet 封裝，**分析器**節點會出現在**方案總管**的 [**參考**] 或 [相依性 **]** 節點底下。 如果您展開 [ **分析器**]，然後展開其中一個分析器元件，則會在元件中看到所有診斷。
+
+![方案總管中的分析器節點](media/analyzers-expanded-in-solution-explorer.png)
+
+您可以在 [ **屬性** ] 視窗中，查看診斷的屬性，包括其描述和預設嚴重性。 若要查看屬性，請以滑鼠右鍵按一下規則，然後選取 [**屬性**]，或選取規則，然後按下**Alt** + **enter**。
+
+![屬性視窗中的診斷屬性](media/analyzer-diagnostic-properties.png)
+
+若要查看診斷的線上檔，請以滑鼠右鍵按一下診斷，然後選取 [ **View Help**]。
+
+**方案總管**中每個診斷旁邊的圖示，會對應至您在編輯器中開啟它時，在規則集中看到的圖示：
+
+- 圓形中的 "x" 表示**錯誤**的[嚴重性](#configure-severity-levels)
+- 三角形中的 "！" 表示**警告**的[嚴重性](#configure-severity-levels)
+- 圓形中的 "i" 表示**資訊**的[嚴重性](#configure-severity-levels)
+- 亮色背景上圓形中的 "i" 表示 [嚴重性](#configure-severity-levels) 為 **隱藏**
+- 圓形中的向下箭號表示已隱藏診斷
+
+![方案總管中的診斷圖示](media/diagnostics-icons-solution-explorer.png)
+
+::: moniker range=">=vs-2019"
 
 #### <a name="convert-an-existing-ruleset-file-to-editorconfig-file"></a>將現有的規則集檔案轉換成 EditorConfig 檔案
 
@@ -209,45 +257,6 @@ dotnet_diagnostic.CA2213.severity = warning
 
 dotnet_diagnostic.CA2231.severity = warning
 ```
-
-#### <a name="automatically-configure-rule-severity"></a>自動設定規則嚴重性
-
-##### <a name="configure-from-light-bulb-menu"></a>從燈泡功能表設定
-
-Visual Studio 提供一個便利的方式，從 [ [快速動作](../ide/quick-actions.md) ] 燈泡功能表設定規則的嚴重性。
-
-1. 違規發生之後，將滑鼠停留在編輯器的違規波浪線上，然後開啟燈泡功能表。 或者，將游標放在這一行，然後按下**Ctrl** + **。** (句點)。
-
-2. 從燈泡功能表中，選取 [ **設定或隱藏問題** > **設定 \<rule ID> 嚴重性**]。
-
-   ![從 Visual Studio 中的燈泡功能表設定規則嚴重性](media/configure-rule-severity.png)
-
-3. 從該處選擇其中一個嚴重性選項。
-
-   ![將規則嚴重性設定為建議](media/configure-rule-severity-suggestion.png)
-
-   Visual Studio 將專案新增至 EditorConfig 檔案，以將規則設定為要求的層級，如預覽方塊中所示。
-
-   > [!TIP]
-   > 如果專案中還沒有 EditorConfig 檔案，Visual Studio 為您建立一個檔案。
-
-##### <a name="configure-from-error-list"></a>從錯誤清單設定
-
-Visual Studio 也提供方便的方式，從 [錯誤清單] 內容功能表設定規則的嚴重性。
-
-1. 違規發生之後，以滑鼠右鍵按一下 [錯誤清單] 中的診斷專案。
-
-2. 從內容功能表中，選取 [ **設定嚴重性**]。
-
-   ![在 Visual Studio 中從錯誤清單設定規則嚴重性](media/configure-rule-severity-error-list.png)
-
-3. 從該處選擇其中一個嚴重性選項。
-
-   Visual Studio 將專案新增至 EditorConfig 檔案，以將規則設定為要求的層級。
-
-   > [!TIP]
-   > 如果專案中還沒有 EditorConfig 檔案，Visual Studio 為您建立一個檔案。
-
 ::: moniker-end
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>從方案總管設定規則嚴重性
@@ -377,7 +386,7 @@ Visual Studio 也提供方便的方式，從 [錯誤清單] 內容功能表設�
 
 - 專案的程式碼中違反了一或多個規則。
 
-- 違反規則的 [嚴重性](#rule-severity) 設定為 [ **警告**]，在這種情況下，違規不會造成組建失敗或 **錯誤**，在此情況下，違規會導致組建失敗。
+- 違反規則的 [嚴重性](#configure-severity-levels) 設定為 [ **警告**]，在這種情況下，違規不會造成組建失敗或 **錯誤**，在此情況下，違規會導致組建失敗。
 
 組建輸出的詳細資訊不會影響是否顯示規則違規。 即使有 **無** 訊息詳細程度，規則違規也會出現在組建輸出中。
 

@@ -2,16 +2,17 @@
 title: Docker Compose 組建設定
 author: ghogen
 description: 容器工具組建流程的總覽
+ms.custom: SEO-VS-2020
 ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: deed01e2aa719df7ffeb038f022ef9d6d4b8cc71
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: a25aca5082d8a55eccff861d542d16095c178a4f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741856"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036297"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 組建屬性
 
@@ -42,7 +43,7 @@ ms.locfileid: "89741856"
 |DockerComposeProjectPath|.csproj 或 vbproj|Docker 撰寫專案的相對路徑 (docker-compose.dcproj) 檔。 發佈服務專案時設定此屬性，以尋找儲存在 >docker-compose.yml. yml 檔案中的相關聯映射組建設定。|-|
 |DockerComposeUpArguments|docker-compose.dcproj|指定要傳遞給命令的額外參數 `docker-compose up` 。 例如， `--timeout 500`|-|
 |DockerDevelopmentMode|docker-compose.dcproj| 控制是否啟用「內部主機」優化 ( 「快速模式」的偵錯工具) 。  允許的值為 **Fast** 和 **Regular**。 | 快速 |
-|DockerLaunchAction| docker-compose.dcproj | 指定要在 F5 或 Ctrl + F5 執行的啟動動作。  允許的值為 None、LaunchBrowser 和 LaunchWCFTestClient|無|
+|DockerLaunchAction| docker-compose.dcproj | 指定要在 F5 或 Ctrl + F5 執行的啟動動作。  允許的值為 None、LaunchBrowser 和 LaunchWCFTestClient|None|
 |DockerLaunchBrowser| docker-compose.dcproj | 指出是否要啟動瀏覽器。 如果已指定 DockerLaunchAction，則會忽略。 | 否 |
 |DockerServiceName| docker-compose.dcproj|如果指定了 DockerLaunchAction 或 DockerLaunchBrowser，則 DockerServiceName 是應啟動之服務的名稱。  您可以使用這個屬性來判斷哪些專案可能會啟動 docker 組成檔案可以參考的專案。|-|
 |DockerServiceUrl| docker-compose.dcproj | 要在啟動瀏覽器時使用的 URL。  有效的取代權杖為 "{ServiceIPAddress}"、"{ServicePort}" 和 "{配置}"。  例如： {配置}：//{ServiceIPAddress}： {ServicePort}|-|
@@ -125,7 +126,7 @@ services:
 
 如果您省略 *>docker-compose.yml. yml* 或 *>docker-compose.yml. yml* ，則 Visual Studio 根據預設設定產生一個。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 如需 MSBuild 屬性的一般資訊，請參閱 [Msbuild 屬性](../msbuild/msbuild-properties.md)。
 

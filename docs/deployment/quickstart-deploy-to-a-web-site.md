@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec5ea0b52c5d0708630a30b7d2b80be2275f3a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89d8acfa4bf0f5dd9f1f387389b9f7f523c153a7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173673"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036401"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>使用 Visual Studio 將 Web 應用程式發行至網站
 
@@ -32,9 +32,9 @@ ms.locfileid: "84173673"
 
     ![方案總管的專案內容功能表上的 [發行] 命令](../deployment/media/quickstart-publish.png "選擇 [發行]")
 
-1. 如果您之前已設定任何發行設定檔，[發行]**** 窗格會隨即出現。 選取 [建立新設定檔]****。
+1. 如果您之前已設定任何發行設定檔，[發行]**** 窗格會隨即出現。 選取 [新增]。
 
-1. 在 [ **發行** ] 對話方塊中，選擇 [ **WEB 伺服器 (IIS) **。
+1. 在 [ **發行** ] 視窗中，選擇 [ **WEB 伺服器 (IIS) **。
 
     ![選擇發佈目標](../deployment/media/quickstart-publish-iis.png "選擇 [IIS、FTP 等等]。")
 
@@ -48,7 +48,9 @@ ms.locfileid: "84173673"
 
 1. 若要發行，請在 [摘要] 頁面中選取 [ **發行** ]。 [輸出] 視窗會顯示部署進度和結果。
 
-## <a name="next-steps"></a>後續步驟
+   如果您需要針對 IIS 上的 ASP.NET Core 進行疑難排解的協助，請參閱 [Azure App Service 和 IIS 上的 ASP.NET Core 疑難排解](/aspnet/core/test/troubleshoot-azure-iis)。
+
+## <a name="next-steps"></a>接下來的步驟
 
 在本快速入門中，您已了解如何使用 Visual Studio 建立發行設定檔。 您也可以匯入發行設定來設定發行設定檔。
 

@@ -1,5 +1,6 @@
 ---
 title: 參考專案檔的名稱或位置
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44168acda7becee1dc071b4cc94237a4f1ff2c72
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 29960de09b512a419a56a61f493702485c287475
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743414"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036453"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：參考專案檔的名稱或位置
 
@@ -95,5 +96,5 @@ ms.locfileid: "89743414"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Msbuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
 - [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)

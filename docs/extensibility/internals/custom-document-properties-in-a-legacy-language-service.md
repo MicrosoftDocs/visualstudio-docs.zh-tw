@@ -1,5 +1,6 @@
 ---
 title: 舊版語言服務中的自訂文件屬性
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3605658dc7baa45579cc47ccfbf824c3099aa63
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 3c38ad28456ab8b9bccf29d2249307b718a5767b
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741807"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036830"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>舊版語言服務中的自訂文件屬性
 文件屬性可以在 [ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **屬性** ] 視窗中顯示。 程式設計語言通常沒有與個別原始程式檔相關聯的屬性。 不過，XML 支援會影響編碼、架構和樣式表單的檔案屬性。

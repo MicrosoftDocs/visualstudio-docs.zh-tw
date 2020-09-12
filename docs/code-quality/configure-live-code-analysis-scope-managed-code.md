@@ -1,34 +1,34 @@
 ---
-title: 設定 managed 程式碼的即時程式碼分析範圍
-ms.date: 03/23/2018
+title: 設定 .NET 的即時程式碼分析範圍
+ms.date: 09/01/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - live code analysis
 - background analysis
 - analysis scope
 - full solution analysis
-author: Mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6df882d50d0c1d052191246605af856743ffdf3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57ff963de193360712e92b76f3cafd7a75ee6b89
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249185"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035413"
 ---
-# <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>如何：設定 managed 程式碼的即時程式碼分析範圍
+# <a name="configure-live-code-analysis-for-net"></a>設定 .NET 的即時程式碼分析
 
-## <a name="what-is-live-code-analysis-for-managed-code"></a>什麼是 managed 程式碼的「即時程式碼分析」？
 當您在編輯器中編輯原始程式檔時，Visual Studio 會執行一堆即時程式碼分析，也稱為 *背景分析*。 其中有部分是可接受的 Visual Studio IDE 編輯體驗所需的基本分析。 其中有些是為了改善 IDE 功能的回應性。 雖然其中有些是啟用其他 IDE 功能，例如來自 Roslyn 分析器的診斷和程式碼修正。 根據功能，這些分析可以分組如下：
 
 - **診斷的背景計算**：在來源檔案中計算錯誤、警告和建議的分析。 這些診斷會顯示為 [錯誤清單] 中的專案，以及編輯器中的波浪線。 可以分為兩種類別：
   - C # 和 Visual Basic 編譯器診斷
   - Roslyn 分析器診斷，其中包括：
 
-    - 內建的 IDE 分析器，適用于程式碼樣式建議和
+    - 適用于程式碼樣式建議的內建 IDE 分析器
+    - 適用于程式碼品質建議的內建 CA 分析器
     - 針對目前方案中的專案所 [安裝](./install-roslyn-analyzers.md) 的協力廠商分析器套件。
 
 - **其他背景分析**：改善 IDE 功能的回應性和 Visual Studio 互動的分析。 這類分析的一些範例如下：

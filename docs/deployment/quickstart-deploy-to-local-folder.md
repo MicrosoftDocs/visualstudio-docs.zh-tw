@@ -10,21 +10,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da13cb2b249146c7a29abbab03b66f77594abf4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 800059dc8d5a3e6ccfb72c588fbb61423a338cba
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285398"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036388"
 ---
-# <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>使用 Visual Studio 將應用程式部署到本機資料夾
+# <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>使用 Visual Studio 將應用程式部署到資料夾
 
-您可以使用 [發行]**** 工具，從 Visual Studio 將 ASP.NET、ASP.NET Core、.NET Core 及 Python 應用程式發行至本機資料夾。 針對 Node.js，支援這些步驟但使用者介面不同。
+您可以使用 [ **發佈** ] 工具，將 ASP.NET、ASP.NET CORE、.net Core 和 Python 應用程式發佈至 Visual Studio 的資料夾。 針對 Node.js，支援這些步驟但使用者介面不同。
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> 如果您需要將 Windows 桌面應用程式發行至本機資料夾，請參閱[使用 ClickOnce 部署桌面應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 或 Visual Basic)。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
+> 如果您需要將 Windows 桌面應用程式發佈到資料夾，請參閱 [使用 ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (c # 或 Visual Basic) 來部署傳統型應用程式。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
 
 ## <a name="deploy-to-a-local-folder"></a>部署到本機資料夾
 
@@ -32,7 +32,9 @@ ms.locfileid: "85285398"
 
     ![方案總管的專案內容功能表上的 [發行] 命令](../deployment/media/quickstart-publish.png "選擇 [發行]")
 
-1. 在 [ **發行** ] 對話方塊中，選取 [ **資料夾**]。
+1. 如果您先前已設定任何發行設定檔，[ **發行** ] 視窗隨即出現。 選取 [新增]。
+
+1. 在 [ **發行** ] 視窗中，選取 [ **資料夾**]。
 
     ![選擇資料夾做為發佈目標](../deployment/media/quickstart-publish-folder-new.png "選擇資料夾")
 
@@ -46,7 +48,15 @@ ms.locfileid: "85285398"
 
 1. 若要設定部署設定，請選取發行設定檔摘要中的 [ **編輯** ]，然後選取 [ **設定** ] 索引標籤。
 
+   您看到的設定取決於您的應用程式類型。 下圖顯示 ASP.NET Core 應用程式的範例設定。
+
     ![設定檔設定](../deployment/media/quickstart-profile-settings.png "設定檔設定")
+
+    如需在 .NET 中選擇設定的其他說明，請參閱下列各項：
+
+    - [與 Framework 相依的 vs 獨立部署](/dotnet/core/deploying/)
+    - [目標執行時間識別碼 (可攜的 RID，et al) ](/dotnet/core/rid-catalog)
+    - [Debug 和 release 設定](../ide/understanding-build-configurations.md)
 
 1. 設定選項，例如是否要部署 [偵錯] 或 [發行] 組態，然後選取 [儲存]****。
 
@@ -54,8 +64,10 @@ ms.locfileid: "85285398"
 
 請使用任何您想要的方式，部署已發行的檔案。 例如，您可以使用簡單的 copy 命令將它們封裝在 *.zip* 檔案中，或與您選擇的任何安裝套件一起部署。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
-- [使用發行工具部署 .NET Core 應用程式](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [為 Microsoft Store (傳統型橋接器) 封裝傳統型應用程式](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- (.NET) [部署 .NET Framework 和應用程式](/dotnet/framework/deployment/)
+針對 .NET 應用程式：
+
+- [使用發行工具部署 .NET Core 應用程式](/dotnet/core/deploying/deploy-with-vs)
+- [.NET Core 應用程式發佈 (framework 相依與獨立部署) ](/dotnet/core/deploying/)
+- [部署 .NET Framework 和應用程式](/dotnet/framework/deployment/)

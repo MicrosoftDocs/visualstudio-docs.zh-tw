@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: deef5aeaa802d5f5b46ba81f711173dc81a32357
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60b3d471191f58a5eb612d9942b72c9d5e90e8af
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800303"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036414"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 將 Web 應用程式發行至 Azure App Service
 
@@ -23,7 +23,7 @@ ms.locfileid: "88800303"
 
 * 針對連續 (或自動) 部署應用程式，使用 Azure DevOps 與 [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops)。
 
-* 針對一次 (或手動) 部署應用程式，使用 Visual Studio 中的 [發行]**** 工具將 ASP.NET、ASP.NET Core、Node.js 和 .NET Core 應用程式部署至 Azure App Service 或 App Service for Linux (使用容器)。 針對 Python 應用程式，請遵循[發行至 Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 的步驟。
+* 若為一次性 (或手動) 的應用程式部署，請使用 Visual Studio 中的 [ **發佈** ] 工具，將 ASP.NET、ASP.NET Core、Node.js 和 .net Core 應用程式部署至使用容器 Azure App Service App Service 或 [ (for Linux](../deployment/quickstart-deploy-to-linux.md)) 。 針對 Python 應用程式，請遵循[發行至 Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 的步驟。
 
 本文說明如何使用 [發行]**** 工具來進行一次部署。
 
@@ -35,7 +35,9 @@ ms.locfileid: "88800303"
 
     ![方案總管的專案內容功能表上的 [發行] 命令](../deployment/media/quickstart-publish.png "選擇 [發行]")
 
-1. 在 [ **發行** ] 對話方塊中，選取 [ **Azure**]。
+1. 如果您先前已設定任何發行設定檔，[ **發行** ] 視窗隨即出現。 選取 [新增]。
+
+1. 在 [ **發佈** ] 視窗中，選取 [ **Azure**]。
 
     ![選擇發佈目標](../deployment/media/quickstart-publish-azure-new.png)
 
@@ -66,7 +68,7 @@ ms.locfileid: "88800303"
 在 [資源群組] 頁面上，確定所列出的資源是您想要刪除的項目。
 選取 [刪除]****，在文字方塊中輸入 **myResourceGroup**，然後再選取 [刪除]****。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 在本快速入門中，您已了解如何使用 Visual Studio 建立發行設定檔，以部署至 Azure。 您也可以從 Azure App Service 匯入發行設定來設定發行設定檔。
 

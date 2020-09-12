@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9157d47278f835232308dc497965afebb294f8fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76f8da407c0917a3f974a55fd02a1227db5b5d63
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78937578"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036570"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>從舊版分析 (FxCop) 遷移至來源分析 (FxCop 分析器) 
 
@@ -27,11 +27,11 @@ ms.locfileid: "78937578"
 
 如需舊版分析和來源分析之間差異的詳細資訊，請參閱下列各項：
 
-- [原始碼分析與舊版分析](../code-quality/roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis)
+- [原始碼分析與舊版分析](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers)
 
 - [FxCop 分析器的常見問題](../code-quality/fxcop-analyzers-faq.md)
 
-若要遷移至來源分析，請 [安裝 FxCop 分析器](../code-quality/install-fxcop-analyzers.md)。 如同舊版分析規則違規，原始程式碼分析違規會出現在 Visual Studio 的 [錯誤清單] 視窗中。 此外，來來源程式代碼分析違規也會在程式碼編輯器中顯示為有問題的程式碼下的 *波浪線* 。 波形曲線色彩取決於規則的[嚴重性設定](../code-quality/use-roslyn-analyzers.md#rule-severity)。 若要查看已移植至新 FxCop 分析器之規則的狀態，請參閱 [移植和 unported 規則](../code-quality/fxcop-rule-port-status.md)。
+若要遷移至來源分析，請 [安裝 FxCop 分析器](../code-quality/install-fxcop-analyzers.md)。 如同舊版分析規則違規，原始程式碼分析違規會出現在 Visual Studio 的 [錯誤清單] 視窗中。 此外，來來源程式代碼分析違規也會在程式碼編輯器中顯示為有問題的程式碼下的 *波浪線* 。 波形曲線色彩取決於規則的[嚴重性設定](../code-quality/use-roslyn-analyzers.md#configure-severity-levels)。 若要查看已移植至新 FxCop 分析器之規則的狀態，請參閱 [移植和 unported 規則](../code-quality/fxcop-rule-port-status.md)。
 
 若要深入瞭解如何設定 FxCop 分析器：
 

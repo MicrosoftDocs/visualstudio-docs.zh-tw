@@ -8,12 +8,12 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 625f4720e94f6ec0b3b9751c28ad18e0a9f38bbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4c33072c1b42d76f1f6ea26222c4674f9e6ff77
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287998"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036089"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>如何：建立分散式負載測試的測試組態檔案
 
@@ -120,7 +120,7 @@ Visual Studio 的測試設定會儲存在檔案中。 測試設定會定義有�
     |**適用于 IntelliTrace 和測試影響的 ASP.NET 用戶端 Proxy：** 此 proxy 可讓您針對 IntelliTrace 和測試影響診斷資料配接器，收集從用戶端到 web 伺服器之 HTTP 呼叫的相關資訊。|![資訊圖示](../test/media/vc364f4.gif)<br /><br /> 除非您有特定需要，必須收集測試代理程式電腦的系統資訊，否則不要包含此配接器。 **注意：** 我們不建議您在負載測試中使用 IntelliTrace 配接器，因為會因收集大量資料而發生問題。 <br /><br /> 使用負載測試不會收集測試影響資料。||
     |**IntelliTrace：** 您可以設定以記錄檔儲存的特定診斷追蹤資訊。 記錄檔具有 *.tdlog* 副檔名。 在您執行測試時，若測試步驟失敗，您可以建立 Bug。 包含診斷追蹤的記錄檔會自動附加至此 Bug 中。 記錄檔中收集的資料可縮短重現及診斷程式碼錯誤所需的時間，進而提高偵錯的效能。 使用這個記錄檔，就可以在另一部電腦上重新建立本機工作階段。 這樣可降低無法重現 Bug 的風險。<br /><br /> 如需詳細資訊，請參閱[收集 IntelliTrace 資料](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)。|![重要圖示](../test/media/vc364f3.gif)<br /><br /> 我們不建議您在負載測試中使用 IntelliTrace 配接器，因為會因收集和記錄大量資料而發生問題。 您應該僅在執行時間短，且不會使用許多測試代理程式的負載測試中嘗試使用 IntelliTrace 配接器。|[如何：收集 IntelliTrace 資料以協助偵錯困難的問題](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
     |**ASP.NET Profiler：** 您可以建立包含 ASP.NET 分析的測試設定，它會收集 ASP.NET web 應用程式的效能資料。|ASP.NET 分析工具診斷資料配接器會分析 Internet Information Services (IIS) 處理序，因此不會針對開發網頁伺服器執行。 若要在負載測試中分析網站，您必須在 IIS 執行所在的電腦上安裝測試代理程式。 測試代理程式不會產生負荷，而是只進行收集的代理程式。 如需詳細資訊，請參閱[安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)。|[如何：使用測試設定為負載測試設定 ASP.NET profiler](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
-    |**事件記錄檔：** 您可以設定測試設定來包含事件記錄檔收集 (該事件記錄檔收集是包含在測試結果中)。||[如何：使用測試設定來設定事件記錄檔收集](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
+    |**事件記錄檔：** 您可以設定測試設定來包含事件記錄檔收集 (該事件記錄檔收集是包含在測試結果中)。||[如何：使用測試設定來設定事件記錄檔收集](/previous-versions/dd504816(v=vs.110))|
     |**網路模擬：** 您可以使用測試設定指定要對測試加上人為的網路負載。 網路模擬可藉由模擬特定網路連線速度 (如撥號連線)，對電腦的對外通訊產生影響。 **注意：** 網路模擬無法用以增加網路連線速度。|負載測試會忽略網路模擬配接器。 因為負載測試會改用負載測試情節的網路混合中指定的設定。<br /><br /> 如需詳細資訊，請參閱[指定虛擬網路類型](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。||
     |**系統資訊：** 測試設定可設定為包含系統資訊診斷和資料收集器執行所在電腦的相關系統資訊。 透過測試設定，系統資訊會指定於測試結果中。|![資訊圖示](../test/media/vc364f4.gif)<br /><br /> 您可以同時從負載代理程式和待測系統收集系統資訊。|不需任何設定，即可收集這項資訊。|
     |**測試影響：** 您可以收集在測試案例執行時，應用程式程式碼使用了哪些方法的相關資訊。 您可以將這項資訊對照開發人員對應用程式程式碼所做的變更，判斷有哪些測試受到這些開發變更的影響。|負載測試不會收集測試影響資料。||
