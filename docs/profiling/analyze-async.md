@@ -9,12 +9,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 49091ba472637d480c04c39f0170c2aee00595d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6f690b77b7e573fdf1c54fdaeca6237c6bbc146
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290194"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037539"
 ---
 # <a name="analyze-performance-of-net-asynchronous-code"></a>分析 .NET 非同步程式碼的效能
 
@@ -41,7 +41,7 @@ ms.locfileid: "85290194"
 
 非同步事件會依時間順序組織成活動。 每個都會顯示其開始時間、結束時間和持續時間。
 
-對應至工作的每個資料 [列都會標示](https://docs.microsoft.com/dotnet/api/system.threading.tasks) 于 [ **名稱** ] 資料行中。 針對無法解析的任何工作名稱，會顯示 [標籤] **中** 的工作。 後面接著工作發生的方法名稱。 如果非同步活動未在收集會話內完成，則 [**結束時間**] 資料行中會出現**不完整**的標籤。
+對應至工作的每個資料 [列都會標示](/dotnet/api/system.threading.tasks) 于 [ **名稱** ] 資料行中。 針對無法解析的任何工作名稱，會顯示 [標籤] **中** 的工作。 後面接著工作發生的方法名稱。 如果非同步活動未在收集會話內完成，則 [**結束時間**] 資料行中會出現**不完整**的標籤。
 
 若要進一步調查特定的工作或活動，請在資料列上按一下滑鼠右鍵。 然後選取 [ **移至原始** 程式檔]，以查看程式碼中活動發生的位置。
 

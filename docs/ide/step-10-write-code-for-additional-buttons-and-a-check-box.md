@@ -1,6 +1,8 @@
 ---
-title: 步驟 10：為其他按鈕及核取方塊撰寫程式碼
+title: 為其他按鈕及核取方塊撰寫程式碼
+description: 在 [建立圖片檢視器] 教學課程中，瞭解如何撰寫其他按鈕和 cheeck 方塊的程式碼。
 ms.date: 08/30/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 185cf370-ab39-4ac0-b6bc-601d5b95a4a2
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0dc7281b51d0efe0d19020df6a154e332ad9bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d66f7705821025bd5e30ea0d0c7f2dd57d540e4
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579433"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036908"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>步驟 10：為其他按鈕及核取方塊撰寫程式碼
 
@@ -42,7 +44,7 @@ ms.locfileid: "77579433"
 > [!NOTE]
 > 您的程式碼可能不會顯示 "camelCase" 字母。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 * 若要移至下一個教學課程步驟，請參閱 **[步驟11：執行您的應用程式並嘗試其他功能](../ide/step-11-run-your-program-and-try-other-features.md)**。
 

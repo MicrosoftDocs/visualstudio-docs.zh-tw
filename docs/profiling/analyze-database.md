@@ -9,19 +9,19 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: b369fe6998cd7ef134af765d6d849f41bc93527c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ea74fd587119105577062f571b4ec8e3de76a4f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290193"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037526"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>使用資料庫工具分析資料庫效能
 
 使用資料庫工具記錄您的應用程式在診斷會話期間所進行的資料庫查詢。 然後，您可以分析個別查詢的相關資訊，以找出可改善應用程式效能的位置。
 
 > [!NOTE]
-> 資料庫工具需要 Visual Studio 2019 16.3 版或更新版本，以及在 Windows 上使用 [ADO.NET]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) 或 [Entity Framework Core](https://docs.microsoft.com/ef/core/)的 .net Core 專案。
+> 資料庫工具需要 Visual Studio 2019 16.3 版或更新版本，以及在 Windows 上使用 [ADO.NET]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) 或 [Entity Framework Core](/ef/core/)的 .net Core 專案。
 
 ## <a name="setup"></a>安裝程式
 
@@ -50,7 +50,7 @@ ms.locfileid: "85290193"
 
 ![移至選取的來源檔案](./media/db-gotosource.png "移至選取的來源檔案")
 
-如果您選取圖形上的時間範圍，查詢資料表只會顯示該時間範圍內發生的查詢。 當您也執行 [ [CPU 使用量] 工具](https://docs.microsoft.com/visualstudio/profiling/cpu-usage?view=vs-2019)時，此行為特別有用。
+如果您選取圖形上的時間範圍，查詢資料表只會顯示該時間範圍內發生的查詢。 當您也執行 [ [CPU 使用量] 工具](./cpu-usage.md?view=vs-2019)時，此行為特別有用。
 
 ## <a name="see-also"></a>另請參閱
 

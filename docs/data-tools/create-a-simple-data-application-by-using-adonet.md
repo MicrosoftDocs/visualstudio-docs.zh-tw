@@ -1,5 +1,6 @@
 ---
 title: 使用 ADO.NET 建立簡單的資料應用程式
+ms.custom: SEO-VS-2020
 ms.date: 08/23/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8f35173ded1ba4d52e0c5a9800fa228a7f93b981
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c7db4d0072f217604e7ca163e581cc8fe138ffdb
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586870"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037428"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單的資料應用程式
 
@@ -27,7 +28,7 @@ ms.locfileid: "75586870"
 > [!IMPORTANT]
 > 為了簡化程式碼，它不會包含已準備好投入生產環境的例外狀況處理。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 若要建立應用程式，您需要：
 

@@ -1,6 +1,7 @@
 ---
 title: Azure 雲端服務和 Vm 的診斷
 description: 了解如何在 Visual Studio 中為 Azure 雲端服務和虛擬機器 (VM) 設定診斷。
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
@@ -8,12 +9,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 7e0d261edfd946aed5d459ec732f652448fc46c0
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 0dd19ff2fd03304beccbb6f24fa6b5fe4e9e0106
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89740130"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037090"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>針對 Azure 雲端服務與虛擬機器設定診斷
 需要針對 Azure 雲端服務或 Azure 虛擬機器進行疑難排解時，您可以使用 Visual Studio 更輕鬆地設定 Azure 診斷。 診斷會在執行雲端服務的虛擬機器和虛擬機器執行個體上擷取系統資料和記錄資料。 診斷資料會傳輸到您選擇的儲存體帳戶。 如需 Azure 中診斷記錄的詳細資訊，請參閱[在 Azure App Service 中針對 Web 應用程式啟用診斷記錄](/azure/app-service/web-sites-enable-diagnostic-log)。
@@ -301,5 +302,5 @@ ms.locfileid: "89740130"
 
 在 [屬性]**** 視窗中，將 [複製到輸出目錄]**** 屬性設為 [永遠複製]****。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 若要深入了解 Azure 中的診斷記錄，請參閱[在 Azure 雲端服務](/azure/cloud-services/cloud-services-dotnet-diagnostics)和[虛擬機器中啟用診斷和在 Azure App Service 中啟用 Web 應用程式的診斷記錄](/azure/app-service/web-sites-enable-diagnostic-log)。

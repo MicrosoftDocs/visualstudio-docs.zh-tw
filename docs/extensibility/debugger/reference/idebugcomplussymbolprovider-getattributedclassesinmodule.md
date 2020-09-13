@@ -1,6 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 309a30174c22e762fbf91c68c13c5f07b3220698
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 266974cf4f92b2356c7ddc603715388ce119256d
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741488"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038318"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 抓取指定模組中具有指定屬性的類別。

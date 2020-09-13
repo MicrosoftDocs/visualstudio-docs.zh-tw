@@ -1,6 +1,7 @@
 ---
 title: 針對 Visual Studio 擴充功能使用以規則為基礎的 UI 內容
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
@@ -8,12 +9,12 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: 382a239a9fb37f079ee0ea612d68deaee17f4c12
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: fc24fe3f5b27b3c92f0629ed378c1a97c820cd0a
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742980"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037103"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>如何：針對 Visual Studio 擴充功能使用以規則為基礎的 UI 內容
 

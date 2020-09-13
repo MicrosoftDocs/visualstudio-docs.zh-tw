@@ -1,5 +1,6 @@
 ---
 title: 支援舊版語言服務中的 [自動變數] 視窗
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3567739dabe68bc028a1bb935337c149637cfd20
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: b5eb4a7201888dc52dfe2f801ebc446786ec3274
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741452"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038292"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>舊版語言服務中的 [自動變數] 視窗支援
 

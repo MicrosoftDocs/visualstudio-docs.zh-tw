@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 268273b39db83a831a65805a8cc1cafc28a103ec
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507985"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036921"
 ---
 # <a name="first-look-at-profiling-tools"></a>初步認識分析工具
 
@@ -135,7 +135,7 @@ CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會
 
 此工具會在清單視圖中顯示每個查詢。 您可以查看查詢開始時間和持續時間等資訊。
 
-![分配](./media/db-gotosource.png "配置")
+![配置](./media/db-gotosource.png "配置")
 
 ::: moniker-end
 
@@ -147,7 +147,7 @@ CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會
 
 ## <a name="analyze-gpu-usage-direct3d"></a>分析 GPU 使用量 (Direct3D)
 
-在 Direct3D 應用程式中 (Direct3D 元件必須為 C++)，您可以檢查 GPU 上的活動並分析效能問題。 如需詳細資訊，請參閱 [GPU 使用量](/visualstudio/debugger/graphics/gpu-usage)。 若要使用此工具，請選擇效能分析工具中的 [GPU 使用量]****，然後選擇 [開始]****。 在應用程式中，完整瀏覽您想要分析的案例，然後選擇 [停止收集]**** 以產生報表。
+在 Direct3D 應用程式中 (Direct3D 元件必須為 C++)，您可以檢查 GPU 上的活動並分析效能問題。 如需詳細資訊，請參閱 [GPU 使用量](./gpu-usage.md)。 若要使用此工具，請選擇效能分析工具中的 [GPU 使用量]****，然後選擇 [開始]****。 在應用程式中，完整瀏覽您想要分析的案例，然後選擇 [停止收集]**** 以產生報表。
 
 當您在圖形中選擇一個時段，並選擇 [檢視詳細資料]**** 時，下方窗格即會顯示詳細的檢視。 在詳細的檢視中，您可以檢查每個 CPU 和 GPU 上發生多少活動。 您可以選取最下方窗格中的事件，取得時間軸的快顯功能表。 例如，選取 [Present]**** 事件以檢視 **Present** 呼叫快顯功能表  (您可以參考淺灰色垂直 Vsync 線，藉此了解特定 **Present** 呼叫是否錯過了 Vsync。 每兩條 Vsync 之間必須有一個 **Present** 呼叫，以讓應用程式穩定地達到 60 FPS。)
 
@@ -206,7 +206,7 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 |[CPU 使用量](../profiling/cpu-usage.md)|是|是|是|
 |[記憶體使用量](../profiling/memory-usage.md)|是|是|是|
 |[.NET 物件配置](../profiling/dotnet-alloc-tool.md)|是 ( 僅限 .NET) |是|是|
-|[GPU 使用量](/visualstudio/debugger/graphics/gpu-usage)|是|是|否|
+|[GPU 使用量](./gpu-usage.md)|是|是|否|
 |[應用程式時間軸](../profiling/application-timeline.md)|是|是|否|
 |[事件檢視器](../profiling/events-viewer.md)|是|是|是|
 |[.NET Async](../profiling/analyze-async.md)|是 ( 僅限 .NET) |是|是|
@@ -220,7 +220,7 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 |----------------------|---------------------|-------------|-------------|
 |[CPU 使用量](../profiling/cpu-usage.md)|是|是|是|
 |[記憶體使用量](../profiling/memory-usage.md)|是|是|是|
-|[GPU 使用量](/visualstudio/debugger/graphics/gpu-usage)|是|是|否|
+|[GPU 使用量](./gpu-usage.md)|是|是|否|
 |[應用程式時間軸](../profiling/application-timeline.md)|是|是|否|
 |[效能提示](../profiling/perftips.md)|是|對 XAML 為是，對 HTML 為否|是|
 |[效能總管](../profiling/performance-explorer.md)|是|否|是|

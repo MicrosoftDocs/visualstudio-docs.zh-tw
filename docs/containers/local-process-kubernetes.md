@@ -1,6 +1,7 @@
 ---
 title: 將 Visual Studio 和 Kubernetes 與本機處理序搭配使用
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.technology: vs-azure
 ms.date: 06/02/2020
 ms.topic: how-to
@@ -10,12 +11,12 @@ monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
 manager: jillfra
-ms.openlocfilehash: 58222eca51fcf14f7746ad2120acd5a300a39519
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 62b07affd1e54b0dfa8127ecf57626e90ed7dd0e
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741935"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037441"
 ---
 # <a name="use-local-process-with-kubernetes-preview"></a>使用本機進程搭配 Kubernetes (預覽版) 
 
@@ -157,7 +158,7 @@ Kubernetes 叢集中的所有流量都會重新導向至您的開發電腦上執
 ./local-process-quickstart.sh -c -g MyResourceGroup -n MyAKS
 ```
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 瞭解本機進程 Kubernetes 的運作方式。
 

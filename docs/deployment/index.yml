@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/17/2019
-  ms.openlocfilehash: 6ca826d6bf02ee87523c1a5269328e8fd3aaf850
-  ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+  ms.openlocfilehash: 26c3ce01f656f77c578eaa78902bddb7fd844a7d
+  ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88800173"
+  ms.lasthandoff: 09/11/2020
+  ms.locfileid: "90038487"
 landingContent:
 - title: 關於部署
   linkLists:
@@ -35,7 +35,7 @@ landingContent:
       url: quickstart-deploy-to-linux.md
     - text: 發佈到網站
       url: quickstart-deploy-to-a-web-site.md
-    - text: 發佈到本機資料夾
+    - text: 發行至資料夾
       url: quickstart-deploy-to-local-folder.md
 - title: 部署 .NET 應用程式
   linkLists:

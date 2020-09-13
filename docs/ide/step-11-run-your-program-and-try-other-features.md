@@ -1,6 +1,8 @@
 ---
-title: 步驟11：執行您的圖片檢視器應用程式並嘗試其他功能
+title: 執行您的圖片檢視器應用程式，並嘗試其他功能
+description: 執行您的圖片檢視器應用程式，並嘗試建立圖片檢視器教學課程中的其他功能。
 ms.date: 09/11/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 865064bd85d45ccb24129d289b48143321486ca1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47a2efac2e317fc8e3d168f4b8b19bfb10014cf2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579898"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036934"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>步驟11：執行您的圖片檢視器應用程式並嘗試其他功能
 
@@ -47,7 +49,7 @@ ms.locfileid: "77579898"
 
 * 使用表單的 **AcceptButton** 和 **CancelButton** 屬性，如此就會在使用者選擇 **Enter** 或 **Esc** 鍵時，自動選擇這些按鈕。 讓應用程式在使用者選擇**Enter**鍵時開啟 [**開啟**檔案] 對話方塊，並在使用者選擇**Esc 鍵**時關閉方塊。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 若要深入了解，請繼續下列教學課程：
 

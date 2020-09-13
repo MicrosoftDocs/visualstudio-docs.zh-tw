@@ -1,6 +1,7 @@
 ---
 title: 將 ASP.NET Core 容器部署到 Azure App Service
 description: 瞭解如何使用 Visual Studio 容器工具將 ASP.NET Core web 應用程式部署至 Docker 容器，以 Azure App Service
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 ms.technology: vs-azure
@@ -8,12 +9,12 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: e3a0742daa1f5e6e6510f5fa5d7f56d76c1eb4da
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: c0f45f14bc8b363a0c7c4e298effa67c5fccde18
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741877"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036336"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 將 ASP.NET Core 容器部署到 Azure App Service
 
@@ -139,7 +140,7 @@ ms.locfileid: "89741877"
 
 在 [Azure 入口網站中，選擇 [ **資源群組**]，選取資源群組以開啟其詳細資料頁面。 確認這是正確的資源群組，然後選擇 [ **移除資源群組**]，輸入名稱，然後選擇 [ **刪除**]。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 深入瞭解 [Azure App Service](/azure/app-service/overview)。
 

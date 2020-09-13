@@ -1,6 +1,7 @@
 ---
 title: 將擴充性專案移轉至 Visual Studio 2017
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: how-to
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
@@ -10,12 +11,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: a3c4470ea1e54178ea9104af2645c3766d79f18a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 52faf3f8b736be9791f1738662aef1bd1b65939c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012278"
+ms.locfileid: "90038552"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何：將擴充性專案遷移至 Visual Studio 2017
 
@@ -171,7 +172,7 @@ ms.locfileid: "90012278"
 
 為了提供進一步的指引，我們已識別出幾種常見的延伸模組類型和其建議的必要條件：
 
-擴充功能類型 | 顯示名稱 | 識別碼
+擴充功能類型 | 顯示名稱 | ID
 --- | --- | ---
 編輯器 | Visual Studio 核心編輯器 | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# 和 Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices

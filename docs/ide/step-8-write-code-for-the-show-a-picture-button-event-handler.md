@@ -1,6 +1,8 @@
 ---
-title: 步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼
+title: 為顯示圖片按鈕事件處理常式撰寫程式碼
+description: 在 [建立圖片檢視器] 教學課程中，為 [顯示圖片] 按鈕事件處理常式撰寫程式碼。
 ms.date: 08/30/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d74c9ecda0e3ab23c1f2ab1cb2180a60701c069a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5718bd976952557d9ff5f92a0522a672757a54e8
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579801"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038656"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼
 
@@ -99,7 +101,7 @@ IntelliSense 會嘗試判斷您接下來要做什麼，並自動跳至您從清�
 
     [!code-vb[VbExpressTutorial1Step8#1](../ide/codesnippet/VisualBasic/step-8-write-code-for-the-show-a-picture-button-event-handler_1.vb)]
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 * 若要移至下一個教學課程步驟，請參閱 **[步驟9：檢查、批註及測試您的程式碼](../ide/step-9-review-comment-and-test-your-code.md)**。
 

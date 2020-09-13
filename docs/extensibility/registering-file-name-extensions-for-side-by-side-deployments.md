@@ -1,5 +1,6 @@
 ---
 title: 註冊並存 Ide 的副檔名
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68c343646055e6ce877d7bd15892ab1db0d0cbc5
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: c5ebedd2861ca96d1ad96c74a54da06578d33960
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741702"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036947"
 ---
 # <a name="register-file-name-extensions-for-side-by-side-deployments"></a>註冊並存部署的副檔名
 針對並存環境中部署的 Vspackage，您必須註冊副檔名，才能將檔案與正確的版本建立關聯 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 除非您使用版本特定的副檔名，否則註冊可讓使用者在適當的版本中開啟您的專案和專案專案檔 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。

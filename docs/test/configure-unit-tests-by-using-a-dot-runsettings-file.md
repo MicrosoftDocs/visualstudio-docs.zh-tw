@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f638d60b7bd4416bb7a19cc960cac1159c755ab3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38e542fed0f26422a88644577ec864ef006855c5
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972292"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038435"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
@@ -107,7 +107,7 @@ ms.locfileid: "86972292"
 
 - C #、VB、c + + 和 F # 專案中目前支援專案層級的執行設定。
 - 為專案指定的檔案會覆寫解決方案中指定的任何其他回合設定檔案。
-- [這些 MSBuild 屬性](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reserved-and-well-known-properties?view=vs-2019) 可以用來指定 .runsettings 檔的路徑。 
+- [這些 MSBuild 屬性](../msbuild/msbuild-reserved-and-well-known-properties.md) 可以用來指定 .runsettings 檔的路徑。 
 
 為專案指定 *.runsettings* 檔案的範例：
     
@@ -307,7 +307,7 @@ public void HomePageTest()
 |設定|預設|值|
 |-|-|-|
 |**ForcedLegacyMode**|false|Visual Studio 2012 中的 MSTest 配接器已進行過最佳化，因此更快速且更具延展性。 某些行為 (例如測試執行順序) 可能與舊版 Visual Studio 稍有出入。 將此值設定為 **true**，以使用較舊的測試配接器。<br /><br />例如，如果您為單元測試指定 *app.config* 檔案，則可以使用此設定。<br /><br />建議您考慮重構測試，以便使用較新的配接器。|
-|**IgnoreTestImpact**|false|「測試影響」功能會將受最新變更影響的測試（當在 MSTest 中執行時），或 Visual Studio 2017) 中 Microsoft Test Manager (淘汰的測試排定優先順序。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](https://msdn.microsoft.com/library/dd286589)。|
+|**IgnoreTestImpact**|false|「測試影響」功能會將受最新變更影響的測試（當在 MSTest 中執行時），或 Visual Studio 2017) 中 Microsoft Test Manager (淘汰的測試排定優先順序。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](/previous-versions/dd286589(v=vs.140))。|
 |**SettingsFile**||您可以指定與此處的 MS 測試配接器一起使用的測試設定檔。 您也可以[從設定功能表](#specify-a-run-settings-file-in-the-ide)指定測試設定檔。<br /><br />如果您指定這個值，也必須將 [ **ForcedlegacyMode** ] 設定為 [ **true**]。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|測試回合完成後，會關閉 MSTest。 所有在測試過程中啟動的處理序也都會終止。 如果您要讓測試執行程式保持運作，請將此值設定為 **true**。 例如，您可以使用此設定讓瀏覽器在不同的自動程式碼 UI 測試之間保持執行。|
 |**DeploymentEnabled**|true|如果您將此值設定為 **false**，就不會將您在測試方法中指定的部署項目複製到部署目錄中。|
@@ -463,4 +463,3 @@ public void HomePageTest()
 - [設定測試回合](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md) \(英文\)
 - [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)
 - [Visual Studio 測試工作 (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
-

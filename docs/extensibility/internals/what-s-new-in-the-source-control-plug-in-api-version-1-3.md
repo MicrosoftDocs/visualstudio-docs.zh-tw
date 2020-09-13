@@ -1,5 +1,6 @@
 ---
 title: '&apos;原始檔控制外掛程式 API 1.3 中的新功能'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eb580d018bbb858cd0214970bdba3d4ab4f391c
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: ac171a4ba33ed7941f2f5887ccf61ca589c31fd3
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741529"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037604"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>原始檔控制外掛程式 API 版本1.3 的新功能&#39;
 原始檔控制外掛程式 API 版本1.3 引進了下列新功能，以提供更多的 advanced 控制項。

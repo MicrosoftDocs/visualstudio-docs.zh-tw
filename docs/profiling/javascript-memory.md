@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a9c7a4b58613c0c4bd94ea4f4ce6162f620553
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86a1b857639d8a58ffc7686569ad8e103674f136
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331267"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037480"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>分析 UWP App 中的 JavaScript 記憶體使用量
 您可以使用 Visual Studio 中提供的 JavaScript 記憶體分析器，在使用 JavaScript 針對 Windows 建置的 UWP App 中了解記憶體使用量並找出記憶體流失的問題。 支援的應用程式包括通用 Windows App。
@@ -363,7 +363,7 @@ if (performance && performance.mark) {
 
 - 請觀賞 Build 2013 大會中關於 JavaScript 記憶體分析器的 [影片](https://channel9.msdn.com/Events/Build/2013/3-316) 。
 
-- 請閱讀[在 UWP App 中管理記憶體](https://msdn.microsoft.com/magazine/jj651575.aspx)。
+- 請閱讀[在 UWP App 中管理記憶體](/archive/msdn-magazine/2012/windows-8-special-issue/javascript-managing-memory-in-windows-store-apps)。
 
 - 考慮暫時修改程式碼來隔離問題。 例如，您可能要：
 

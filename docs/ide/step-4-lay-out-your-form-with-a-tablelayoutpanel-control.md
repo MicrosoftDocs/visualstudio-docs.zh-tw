@@ -1,6 +1,8 @@
 ---
-title: 步驟 4：使用 TableLayoutPanel 控制項來配置表單
+title: 使用 TableLayoutPanel 控制項來配置表單
+description: 在 [建立圖片檢視器] 教學課程中，使用 TableLayoutPanel 控制項來配置您的表單。
 ms.date: 08/30/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d827077266adbe0a1ba8cabd1f19ae6d815df833
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a0035040c3cce0c40b8462225c48aa5225b40d1
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579377"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036973"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>步驟 4：使用 TableLayoutPanel 控制項來配置表單
 
@@ -88,7 +90,7 @@ ms.locfileid: "77579377"
      ![包含已調整大小之 TableLayoutPanel 的 Form1](../ide/media/vs_formafterlayoutpanel.png)<br>
 具有調整大小之***TableLayoutPanel***的***Form1*** * (圖片檢視器) *
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 * 若要移至下一個教學課程步驟，請參閱 **[步驟5：將控制項新增至表單](../ide/step-5-add-controls-to-your-form.md)**。
 

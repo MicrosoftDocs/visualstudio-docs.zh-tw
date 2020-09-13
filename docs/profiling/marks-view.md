@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9a0537e146ead1c163941a0f552bdea7a28b89c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d7483f309a3d7edb92d25c34e9665a6212c8038
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773964"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037513"
 ---
 # <a name="marks-view"></a>標記檢視
 [標記] 檢視會顯示插入應用程式中的取樣和 ETW 事件。
@@ -43,4 +43,4 @@ ms.locfileid: "74773964"
 ## <a name="see-also"></a>另請參閱
 - [效能報告總覽](../profiling/performance-report-overview.md)
 - [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)
-- [&#91;筆尖&#93; 資料收集控制視窗](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+- [&#91;筆尖&#93; 資料收集控制視窗](/previous-versions/bb385767(v=vs.110))

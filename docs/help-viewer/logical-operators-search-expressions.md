@@ -1,5 +1,6 @@
 ---
 title: '搜尋運算式中的邏輯運算子 (說明檢視器) '
+ms.custom: SEO-VS-2020
 ms.date: 11/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5d17d40a34835c1c8f99f4ad446de747771fa4a
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 9daceca2540a2da61a46e12a458c012ce7851001
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741647"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038630"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>搜尋運算式中的邏輯與進階運算子
 
@@ -29,7 +30,7 @@ ms.locfileid: "89741647"
 |搜尋|用法|範例|結果|
 |-------------------|---------|-------------|------------|
 |相同文章中的兩個詞彙|AND|dib AND palette|包含 "dib" 和 "palette" 的主題。|
-|文章中的任一個詞彙|OR|raster OR vector|包含 "raster" 或 "vector" 的主題。|
+|文章中的任一個詞彙|或者|raster OR vector|包含 "raster" 或 "vector" 的主題。|
 |相同文章中沒有第二個詞彙的第一個詞彙|NOT|"operating system" NOT DOS|包含 "operating system" 但沒有 "DOS" 的主題。|
 |文章中接近的兩個詞彙|NEAR|user NEAR kernel|包含十分接近 "kernel" 之 "user" 的主題。|
 

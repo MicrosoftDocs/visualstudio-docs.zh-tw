@@ -1,6 +1,7 @@
 ---
 title: 組件項目 (Visual Studio 範本精靈擴充)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52bd3bf9694d82ee27001a3cc7a42eb0692c85f0
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 8a26584a16e290da3278c713924d2046d173eec9
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739178"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037415"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>元件專案 (Visual Studio 範本 wizard 擴充) 
 指定執行介面之元件的名稱或強式名稱 `IWizard` 。

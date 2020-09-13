@@ -1,16 +1,17 @@
 ---
 title: 增加修正效能問題的機會
 description: 在 Visual Studio 中提交效能問題的其他資訊和最佳作法
+ms.custom: SEO-VS-2020
 author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: fac6dd284abc04e8018ba7c36ae3a22022890f95
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 627b597d9c8f4d68fdb90235ebf51339111374f1
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743050"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038591"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>如何提高修正效能問題的機會
 

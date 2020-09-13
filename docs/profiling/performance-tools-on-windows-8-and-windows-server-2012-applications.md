@@ -8,12 +8,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03c5897f4cbf06ad7c9dc7541a032f5b86e45d4c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778423"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038604"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 應用程式的效能工具
 
@@ -42,9 +42,9 @@ ms.locfileid: "74778423"
 - [在遠端電腦上執行 UWP 應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [初步認識分析工具](profiling-feature-tour.md)
 - [JavaScript 記憶體](../profiling/javascript-memory.md)
-- [在本機電腦上分析 UWP App 中的 Visual C++、Visual C# 和 Visual Basic 程式碼](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)
-- [在遠端裝置上分析 UWP App 中的 Visual C++、Visual C# 和 Visual Basic 程式碼](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)
-- [分析 UWP App 中 Visual C++、Visual C# 和 Visual Basic 程式碼的效能資料](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)
+- [在本機電腦上分析 UWP App 中的 Visual C++、Visual C# 和 Visual Basic 程式碼](/previous-versions/hh696631(v=vs.140))
+- [在遠端裝置上分析 UWP App 中的 Visual C++、Visual C# 和 Visual Basic 程式碼](/previous-versions/hh972878(v=vs.140))
+- [分析 UWP App 中 Visual C++、Visual C# 和 Visual Basic 程式碼的效能資料](/previous-versions/hh780914(v=vs.140))
 
 ## <a name="collect-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a>從 Visual Studio IDE 收集 Windows 8 桌面或 Windows Server 2012 上所執行應用程式的資料
 

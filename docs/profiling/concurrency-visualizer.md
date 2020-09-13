@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3b4e151db08ad5490ed6238223d553f9e76aa0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a955304e1a0939bbe7398b48a5e9ff30461d8745
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77192399"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037337"
 ---
 # <a name="concurrency-visualizer"></a>並行視覺化檢視
 
@@ -43,13 +43,13 @@ ms.locfileid: "77192399"
 
 ## <a name="related-topics"></a>[相關主題]
 
-|標題|描述|
+|Title|描述|
 |-----------|-----------------|
 |[使用率檢視](../profiling/utilization-view.md)|說明如何跨所有處理器檢視和分析系統活動。|
 |[執行緒檢視](../profiling/threads-view-parallel-performance.md)|說明如何分析程式中執行緒之間的互動。|
 |[核心檢視](../profiling/cores-view.md)|說明如何分析跨核心的執行緒移轉。|
 |[行為錯誤之多執行緒應用程式的一般模式](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|描述常見的幾種模式，並示範它們是如何出現在 [並行視覺化檢視] 中。|
-|[Visual Studio 部落格中的平行開發](https://blogs.msdn.microsoft.com/visualizeparallel/)|提供 [並行視覺化檢視] 的秘訣和最佳作法。|
+|[Visual Studio 部落格中的平行開發](/archive/blogs/visualizeparallel/)|提供 [並行視覺化檢視] 的秘訣和最佳作法。|
 |[效能報告檢視](../profiling/performance-report-views.md)|提供 Visual Studio 程式碼剖析工具的報表和檢視的參考資訊。|
 |[並行視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md)|描述如何檢測您的原始程式碼，以便在 [並行視覺化檢視] 中顯示其他資訊。|
 |[平行存取視覺化命令列公用程式 (CVCollectionCmd) ](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|描述如何使用 [並行視覺化檢視] 命令列公用程式 (CVCollectionCmd.exe) 來收集及處理沒有安裝 Visual Studio 的電腦上的追蹤資料。|

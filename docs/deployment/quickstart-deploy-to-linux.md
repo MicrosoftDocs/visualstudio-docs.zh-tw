@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: c58e1400c043cf3d15bf204fc8648ab32b33f706
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 8130608f7f94efa279775f532e0022df2f2a7f1a
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641559"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037669"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>使用 Visual Studio 將 ASP.NET Core 應用程式發行至 Linux 上的 App Service
 
@@ -34,7 +34,9 @@ ms.locfileid: "89641559"
 
     ![方案總管的專案內容功能表上的 [發行] 命令](../deployment/media/quickstart-publish.png "選擇 [發行]")
 
-1. 在 [ **發行** ] 對話方塊中，選取 [ **Azure**]。
+1. 如果您先前已設定任何發行設定檔，[ **發行** ] 視窗隨即出現。 選取 [新增]。
+
+1. 在 [ **發佈** ] 視窗中，選取 [ **Azure**]。
 
     ![選擇發佈目標](../deployment/media/quickstart-publish-azure-new.png)
 
@@ -65,7 +67,7 @@ ms.locfileid: "89641559"
 在 [資源群組] 頁面上，確定所列出的資源是您想要刪除的項目。
 選取 [刪除]****，在文字方塊中輸入 **myResourceGroup**，然後再選取 [刪除]****。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 在本快速入門中，您已了解如何使用 Visual Studio 建立發行設定檔，以部署至 linux 上的 App Service。 您可能需要使用 Azure 發行至 Linux 的詳細資訊。
 

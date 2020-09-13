@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a70e77b63aa923aa51188c3db8cb0feaaf6daf0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62788854"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038500"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>行為錯誤之多執行緒應用程式的一般模式
 
@@ -30,7 +30,7 @@ ms.locfileid: "62788854"
 
 如下圖所示，並行視覺化檢視也可以在 [CPU 使用率檢視] 中顯示出這個徵兆，檢視中雖然有多個執行緒，但是應用程式還是只使用一個邏輯核心。
 
-如需詳細資訊，請參閱 MSDN Magazine 文章 [Thread Performance - Resource Contention Concurrency Profiling in Visual Studio 2010](https://msdn.microsoft.com/magazine/ff714587.aspx) (執行緒效能 - Visual Studio 2010 中的資源爭用並行分析) 中的 "Start with the Problem" 一節。
+如需詳細資訊，請參閱 MSDN Magazine 文章 [Thread Performance - Resource Contention Concurrency Profiling in Visual Studio 2010](/archive/msdn-magazine/2010/june/msdn-magazine-thread-performance-resource-contention-concurrency-profiling-in-visual-studio-2010) (執行緒效能 - Visual Studio 2010 中的資源爭用並行分析) 中的 "Start with the Problem" 一節。
 
 ![鎖定爭用](../profiling/media/lockcontention_2.png "LockContention_2")
 

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0bb76de0d62ab504090d9ac1864ba7ee5627f69d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d7f3d943d621708efab8df1e2f69402a0c5f26c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537276"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038344"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>分析資源耗用量和 UI 執行緒活動 (XAML)
 
@@ -27,7 +27,7 @@ ms.locfileid: "85537276"
 您可以在下列平台上使用此工具：
 
 - 通用 Windows 應用程式 (於 Windows 10 上)
-- Windows 8.1
+- Windows 8。1
 - Windows Presentation Foundation (.Net 4.0 (含) 以上版本)
 - Windows 7
 
@@ -100,7 +100,7 @@ ms.locfileid: "85537276"
 
 支援的事件如下：
 
-|Name|描述|
+|名稱|描述|
 |-|-|
 |**剖析**|剖析 XAML 檔案和建立物件所花費的時間。<br /><br /> 展開 [時間軸詳細資料]**** 中的 [剖析]**** 節點，會顯示由於根事件而剖析的所有 XAML 檔案相依性鏈結。 這可讓您識別效能敏感情節中不必要的檔案剖析和物件建立作業，並排除這些作業以取得最佳化。|
 |**版面配置**|在大型應用程式裡，螢幕上可能會同時顯示數千個項目。 此顯示可能導致低 UI 畫面播放速率和對應不佳的應用程式回應性。 配置事件準確地判斷每個項目的配置成本 (也就是在 Arrange、Measure、ApplyTemplate、ArrangeOverride 和 MeasureOverride 中所花的時間)。 也會建置參與版面配置階段的視覺化樹狀結構。 您可以使用此視覺效果，來判斷要清除哪些邏輯樹狀結構，或評估其他延遲機制以最佳化版面配置階段。|
@@ -116,7 +116,7 @@ ms.locfileid: "85537276"
 
 您可以使用 [時間軸詳細資料] **** 工具列來排序、篩選及指定 [時間軸詳細資料] **** 檢視項目的註釋。
 
-|Name|描述|
+|名稱|描述|
 |-|-|
 |**排序依據**|依開始時間或事件長度排序。|
 |![依畫面格分組事件](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|加入或移除依框架分組事件的最上層 [框架] **** 分類。|
@@ -125,7 +125,7 @@ ms.locfileid: "85537276"
 
 ## <a name="see-also"></a>另請參閱
 
-- [WPF team blog：適用于 WPF 應用程式的新 UI 效能分析工具](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
+- [WPF team blog：適用于 WPF 應用程式的新 UI 效能分析工具](/archive/blogs/wpf/new-ui-performance-analysis-tool-for-wpf-applications)
 - [使用 C++、C# 及 Visual Basic 的 UWP App 效能最佳做法](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [最佳化 WPF 應用程式效能](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
 - [Visual Studio 中的分析](../profiling/index.yml)

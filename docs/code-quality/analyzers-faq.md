@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6109c1becfae51ebf3824b5683bc66a5d89b74a0
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 9408e8615e2a3591a5e93f569546b6161fe40e4c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599614"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037246"
 ---
 # <a name="code-analysis-faq"></a>程式碼分析常見問題
 
@@ -61,7 +61,7 @@ ms.locfileid: "89599614"
 
 **問**：舊版分析和以 .NET Compiler Platform 為基礎的程式碼分析有何差異？
 
-**答**：以 .NET Compiler Platform 為基礎的程式碼分析會即時分析原始程式碼和編譯期間，而舊版分析會在組建完成後分析二進位檔案。 如需詳細資訊，請參閱以 [.NET Compiler Platform 為基礎的分析與舊版分析](roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis) 和 [FxCop 分析器常見問題](fxcop-analyzers-faq.md)。
+**答**：以 .NET Compiler Platform 為基礎的程式碼分析會即時分析原始程式碼和編譯期間，而舊版分析會在組建完成後分析二進位檔案。 如需詳細資訊，請參閱以 [.NET Compiler Platform 為基礎的分析與舊版分析](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers)。
 
 ## <a name="treat-warnings-as-errors"></a>將警告視為錯誤
 

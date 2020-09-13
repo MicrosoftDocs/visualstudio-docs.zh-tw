@@ -1,5 +1,6 @@
 ---
 title: 使用不同選項來建置相同的來源檔案
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 247463e61931f5e476c7c1c76bfa899287c102fa
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 23e76145df0fdf3f4cc3a3dfa8e14c6826b0dbdf
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742852"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037591"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同選項來建置相同的原始程式檔
 
@@ -189,7 +190,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 
 ## <a name="see-also"></a>另請參閱
 
-- [Msbuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
 - [ (MSBuild) 的專案元素 ](../msbuild/project-element-msbuild.md)

@@ -1,20 +1,20 @@
 ---
 title: 使用 PowerShell 發行至開發和測試環境
 description: 了解如何從 Visual Studio 使用 Windows PowerShell 指令碼來發佈至開發和測試環境。
+ms.custom: vs-azure
 author: ghogen
 manager: jillfra
 assetId: 5fff1301-5469-4d97-be88-c85c30f837c1
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: cec8f700e3ba4ce4b08bc57599570e2ef40bef2c
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 68b6075ab53fac8b5ac88bc3a15e591081c010da
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739968"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037168"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>使用 Windows PowerShell 指令碼來發行至開發和測試環境
 
@@ -347,5 +347,5 @@ return $WebDeployPackage
 | Publish-WebApplication |建立並部署 Visual Studio Web 專案的 Web Apps、虛擬機器、SQL Database 和儲存體帳戶。 |
 | Test-WebApplication |此函式未實作。 您可以在此函式新增命令來測試應用程式。 |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 請參閱[使用 Windows PowerShell 撰寫指令碼](/powershell/scripting/overview)來深入了解 PowerShell 指令碼，並參閱[指令碼中心](https://azure.microsoft.com/documentation/scripts/)內的其他 Azure PowerShell 指令碼。

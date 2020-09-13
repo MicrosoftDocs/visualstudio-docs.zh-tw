@@ -1,8 +1,8 @@
 ---
-title: 安裝離線安裝所需的憑證
+title: 安裝離線安裝的憑證
 description: 了解如何安裝 Visual Studio 離線安裝的憑證。
 ms.date: 08/08/2019
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 525294d2cf3c33dfdb1c5796dabf1c2a7a78bf91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbc68d232816899d84cc2aead14208b009c933b2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418804"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037298"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安裝 Visual Studio 離線安裝所需的憑證
 

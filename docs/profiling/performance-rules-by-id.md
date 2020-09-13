@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7ef6975fe5d9d19ebd2cbb0ed10951ca6f3219
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1762f12d791f220161867af73a823f88b9f86ec0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778436"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037324"
 ---
 # <a name="performance-rules-by-id"></a>依識別碼排序的效能規則
 
@@ -28,7 +28,7 @@ ms.locfileid: "74778436"
 | [DA0006：覆寫實值型別的 Equals()](../profiling/da0006-override-equals-parens-for-value-types.md) | Equals 方法呼叫或公用實值型別的相等運算子大部分是分析資料。 請考慮實作更有效率的方法。 |
 | [DA0007：避免使用例外狀況進行控制流程](../profiling/da0007-avoid-using-exceptions-for-control-flow.md) | 在分析資料中呼叫高比率的 .NET Framework 例外處理常式。 請考慮使用其他控制流程邏輯，以減少擲回的例外狀況數量。 |
 | [DA0008：只收集到少量樣本](../profiling/da0008-few-samples-collected.md) | 在分析回合中只會收集到少量樣本。 請考慮執行較長時間或較快速的取樣率，以取得較大量的結果。 |
-| [DA0009：高在 JIT 時間百分比](https://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd) | 應用程式執行時間的大量百分比花在 Just In Time (JIT) 編譯器中。 |
+| [DA0009：高在 JIT 時間百分比](/previous-versions/dd264972(v=vs.100)) | 應用程式執行時間的大量百分比花在 Just In Time (JIT) 編譯器中。 |
 | [DA0010：GetHashCode 高度耗費資源](../profiling/da0010-expensive-gethashcode.md) | 類型的 GetHashCode 方法呼叫大部分是分析資料，或方法會配置記憶體。 |
 | [DA0011：CompareTo 高度耗費資源](../profiling/da0011-expensive-compareto.md) | 類型的 CompareTo 方法高度耗費資源，或配置記憶體。 |
 | [DA0012：大量的反射](../profiling/da0012-significant-amount-of-reflection.md) | 對 System.Reflection 方法 (例如 InvokeMember 和 GetMember) 或 Type 方法 (例如 MemberInvoke) 的呼叫大部分是分析資料。 可以的話，請考慮將這些方法取代為相依組件方法的早期繫結。 |

@@ -1,6 +1,7 @@
 ---
 title: Visual Studio 中的跨平台行動裝置應用程式開發 | Microsoft Docs
-ms.custom: ''
+titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 19e1a968af60b76d07e24af1d86c74e427a3cd52
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 12c0da32014581e6e9cc0ea22cb80414462f03bd
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509051"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037259"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 

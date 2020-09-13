@@ -1,8 +1,8 @@
 ---
-title: 使用 Visual Studio 和 C# 建立通用 Windows 平台 (UWP) 應用程式
+title: 使用 Visual Studio 和 C 建立 UWP 應用程式#
 description: 在 Visual Studio 中使用 XAML 和 C# 建立 UWP 應用程式
 titleSuffix: ''
-ms.custom: seodec18, get-started
+ms.custom: seodec18, get-started, SEO-VS-2020
 ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: aec4b72e8393e241039e8c005d05275ab61111bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1f541c94804f8f5f454f6299a116a8bd1386e7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249253"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037272"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>教學課程：使用 XAML 和 C&#35; 在 Visual Studio 中建立您的第一個通用 Windows 平臺應用程式
 
@@ -72,7 +72,7 @@ ms.locfileid: "88249253"
 
 1. 在 [新增通用 Windows 平台專案]**** 對話方塊中，接受預設的**目標版本**和**最低版本**設定。
 
-   ![在 [新增通用 Windows 平台專案] 對話方塊中，接受預設的 [目標版本] 和 [最低版本] 設定](media/vs-2019/new-uwp-project-target-minver-dialog.png)
+   ![[新增通用 Windows 平臺專案] 對話方塊中的 [接受預設目標版本] 和 [最小版本] 設定](media/vs-2019/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
 
    > [!NOTE]
@@ -114,7 +114,7 @@ ms.locfileid: "88249253"
 
    如果您查看 **XAML 編輯器**中的程式碼，您會看到該按鈕也已新增至該處：
 
-   ![按一下 [Button] 控制項，然後將它拖曳至設計畫布](media/uwp-xaml-control-code-window.png)
+   ![XAML 編輯器中的顯示按鈕](media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>為按鈕新增標籤
 
@@ -202,7 +202,7 @@ ms.locfileid: "88249253"
 
 ::: moniker-end
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 恭喜您完成此教學課程！ 我們希望您已了解有關 UWP 和 Visual Studio IDE 的一些基本概念。 若要深入了解，請繼續下列教學課程：
 

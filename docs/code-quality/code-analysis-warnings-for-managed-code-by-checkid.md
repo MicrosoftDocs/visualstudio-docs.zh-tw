@@ -1,6 +1,6 @@
 ---
 title: 程式碼品質規則概觀
-ms.date: 08/27/2020
+ms.date: 09/01/2020
 ms.topic: reference
 f1_keywords:
 - CA1000
@@ -253,16 +253,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e4b728fab6eb47501bb0d1bb752d22c0c29a8b4
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: a298ab142ae6a44c1fb24b2cb1b752f6beb4a68e
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509441"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037233"
 ---
-# <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Managed 程式碼的程式碼分析警告（依 CheckId）
+# <a name="code-quality-analysis-rules-by-rule-id"></a>依規則識別碼的程式碼品質分析規則
 
-下表依照警告的 CheckId 識別項列出 Managed 程式碼的程式碼分析警告。
+下表依規則識別碼列出程式碼品質分析規則。
 
 | CheckId | 警告 | 描述 |
 |---------| - | - |
@@ -372,7 +372,7 @@ ms.locfileid: "89509441"
 | CA1831 |[CA1831：在適用情況下，請使用 AsSpan 做為字串，不要使用範圍型的索引子](../code-quality/ca1831.md) | 在字串上使用範圍索引子，並將值隱含指派給 ReadOnlySpan &lt; char &gt; 類型時，將會 <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> 使用方法，而不是 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ，這會產生字串的要求部分複本。 |
 | CA1832 |[CA1832：請使用 AsSpan 或 AsMemory 來取得陣列的 ReadOnlySpan 或 ReadOnlyMemory 部分，不要使用範圍型的索引子](../code-quality/ca1832.md) | 在陣列上使用範圍索引子，並將值隱含地指派給 <xref:System.ReadOnlySpan%601> 或 <xref:System.ReadOnlyMemory%601> 類型時，將會 <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用方法，而不是 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ，這會產生陣列所要求部分的複本。 |
 | CA1833 |[CA1833：請使用 AsSpan 或 AsMemory 取得陣列的 Span 或 Memory 部分，不要使用範圍型的索引子](../code-quality/ca1833.md) | 在陣列上使用範圍索引子，並將值隱含地指派給 <xref:System.Span%601> 或 <xref:System.Memory%601> 類型時，將會 <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用方法，而不是 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ，這會產生陣列所要求部分的複本。 |
-| CA1834 |[CA1834：使用 StringBuilder。針對單一字元字串附加 (char) ](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder> 具有 `Append` 接受 `char` 作為其引數的多載。 基於效能考慮，偏好呼叫多載 `char` 。 |
+| CA1834 |[CA1834：針對單一字元字串使用 StringBuilder.Append(char)](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder> 具有 `Append` 接受 `char` 作為其引數的多載。 基於效能考慮，偏好呼叫多載 `char` 。 |
 | CA1835 |[CA1835：偏好 ' System.io.stream.readasync ' 和 ' System.io.stream.writeasync ' 以 Memory' 為基礎的多載](../code-quality/ca1835.md) | ' Stream ' 有一個 ' System.io.stream.readasync ' 多載，它會接受 ' Memory &lt; byte &gt; ' 做為第一個引數，並使用 ' system.io.stream.writeasync ' 多載（接受 ' ReadOnlyMemory &lt; Byte &gt; ' 做為第一個引數）。 偏好呼叫以記憶體為基礎的多載，這些多載較有效率。 |
 | CA1836 |[CA1836：優先 `IsEmpty` `Count` 使用](../code-quality/ca1836.md) | 偏好 `IsEmpty` 比、或更有效率的屬性， `Count` `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> 以判斷物件是否包含任何專案。 |
 | CA1837 | [CA1837：使用 `Environment.ProcessId` 而非 `Process.GetCurrentProcess().Id`](../code-quality/ca1837.md) | `Environment.ProcessId` 比更簡單且更快速 `Process.GetCurrentProcess().Id` 。 |
@@ -466,7 +466,7 @@ ms.locfileid: "89509441"
 | CA5358 | [CA5358:不要使用不安全的 Cipher 模式](../code-quality/ca5358.md) | 不要使用不安全的 Cipher 模式 |
 | CA5359 | [CA5359 不停用憑證驗證](../code-quality/ca5359.md) | 憑證可協助驗證服務器的身分識別。 用戶端應該驗證伺服器憑證，以確保會將要求傳送給預定的伺服器。 如果 ServerCertificateValidationCallback 一律 `true` 會傳回，任何憑證都會通過驗證。 |
 | CA5360 | [CA5360 不會在還原序列化中呼叫危險的方法](../code-quality/ca5360.md) | 不安全的還原序列化是在未受信任的資料用來濫用應用程式邏輯、對拒絕服務 (DoS) 攻擊，或甚至在還原序列化時執行任意程式碼時，就會發生的弱點。 當應用程式將受信任的資料還原序列化時，惡意使用者通常可能會濫用這些還原序列化功能。 具體而言，在還原序列化的過程中叫用危險的方法。 成功的不安全還原序列化攻擊可能會讓攻擊者執行攻擊，例如 DoS 攻擊、驗證略過，以及遠端程式碼執行。 |
-| CA5361 | [CA5361:請勿為安全通道停用強式密碼編譯](../code-quality/ca5361.md) | 設定 `Switch.System.Net.DontEnableSchUseStrongCrypto` 以 `true` 削弱輸出傳輸層安全性中使用的密碼編譯 (TLS) 連接。 較弱的密碼編譯可能會危及應用程式與伺服器之間通訊的機密性，讓攻擊者更容易竊聽敏感性資料。 |
+| CA5361 | [CA5361：不要停用安全加密的安全通道使用](../code-quality/ca5361.md) | 設定 `Switch.System.Net.DontEnableSchUseStrongCrypto` 以 `true` 削弱輸出傳輸層安全性中使用的密碼編譯 (TLS) 連接。 較弱的密碼編譯可能會危及應用程式與伺服器之間通訊的機密性，讓攻擊者更容易竊聽敏感性資料。 |
 | CA5362 | [在還原序列化的物件圖形中 CA5362 可能的參考迴圈](../code-quality/ca5362.md) | 如果還原序列化不受信任的資料，則任何處理已還原序列化之物件圖形的程式碼都必須處理參考迴圈，而不會進入無限迴圈。 這包括屬於還原序列化回呼一部分的程式碼，以及完成還原序列化之後處理物件圖形的程式碼。 否則，攻擊者可能會使用包含參考週期的惡意資料來執行阻斷服務攻擊。 |
 | CA5363 | [CA5363：請勿停用要求驗證](../code-quality/ca5363.md) | 要求驗證是 ASP.NET 中的一項功能，可檢查 HTTP 要求，並判斷它們是否包含可能會導致插入式攻擊的潛在危險內容，包括跨網站腳本。 |
 | CA5364 | [CA5364:請勿使用已取代的安全性通訊協定](../code-quality/ca5364.md) | 傳輸層安全性 (TLS) 保護電腦之間的通訊安全，最常見的方式是使用超文字傳輸通訊協定安全 (HTTPS) 。 舊版的 TLS 通訊協定版本比 TLS 1.2 和 TLS 1.3 更不安全，而且可能會有新的弱點。 避免較舊的通訊協定版本，以將風險降至最低。 |

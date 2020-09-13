@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e18e50537f35080f9796f4a090b3806953ae5170
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3636f87db5c395f1660d9271d0eed5cacec99161
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75845815"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036895"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>自動程式碼 UI 測試和動作記錄的支援組態和平台
 
@@ -31,7 +31,7 @@ Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會�
 
 ## <a name="supported-configurations"></a>支援的設定
 
-| 組態 | 支援 |
+| 設定 | 支援 |
 |-| - |
 | 作業系統 | [!INCLUDE[win7](../debugger/includes/win7_md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]<br /><br /> [!INCLUDE[win8](../debugger/includes/win8_md.md)]<br /><br /> Windows 10 |
 | 32 位元/ 64 位元支援 | 執行 32 位元 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 的 32 位元 Windows 可以測試 32 位元應用程式。<br /><br /> 執行 32 位元 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 的 64 位元 Windows，可以測試具有「UI 同步處理」的 32 位元 WOW 應用程式。<br /><br /> 執行 32 位元 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 的 64 位元 Windows 可以測試沒有「UI 同步處理」的 64 位元 Windows Form 和 WPF 應用程式。 |
@@ -59,11 +59,11 @@ Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會�
 | Windows Forms 2.0 和更新版本 | 完全支援。 **注意：**  完整支援 NetFx 控制項，但並未支援所有協力廠商控制項。 |
 | WPF 3.5 和更新版本 | 完全支援。<br /><br /> **注意** 完全支援 NetFx 控制項，但並非所有協力廠商控制項都受到支援。 |
 | Windows Win32 | 使用時可能會出現某些已知問題，且未正式支援。 |
-| MFC | 部分支援。 請參閱[UITest 架構](https://blogs.msdn.microsoft.com/vstsqualitytools/2010/04/15/uitest-framework-mfc-support-in-vs-2010/) \(英文\) 以取 得支援之功能的詳細資料。 |
+| MFC | 部分支援。 請參閱[UITest 架構](/archive/blogs/vstsqualitytools/uitest-framework-mfc-support-in-vs-2010) \(英文\) 以取 得支援之功能的詳細資料。 |
 | SharePoint | 完全支援。 |
 | Office 用戶端應用程式 | 不支援。 |
 | Dynamics CRM Web 用戶端 | 完全支援。 |
-| Dynamics (Ax) 2012 用戶端 | 部分支援動作記錄和播放。 如需詳細資訊，請參閱 [Visual Studio 10 個自動程式碼 UI/動作記錄支援 Microsoft Dynamics](https://blogs.msdn.microsoft.com/dave_froslie/2011/09/01/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012/) 。 |
+| Dynamics (Ax) 2012 用戶端 | 部分支援動作記錄和播放。 如需詳細資訊，請參閱 [Visual Studio 10 個自動程式碼 UI/動作記錄支援 Microsoft Dynamics](/archive/blogs/dave_froslie/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012) 。 |
 | SAP | 不支援。 |
 | Citrix/終端機服務 | 我們不建議在終端機伺服器上錄製動作。 錄製器不支援同時執行多個執行個體。 |
 | PowerBuilder | 部分支援。<br /><br /> 支援的程度相當於啟用 PowerBuilder 控制項的協助工具。 |

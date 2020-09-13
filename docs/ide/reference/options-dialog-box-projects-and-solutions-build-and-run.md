@@ -1,5 +1,6 @@
 ---
 title: 選項對話方塊、專案和方案、組建和執行
+ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b4bcc033ba80778f3446b3089972c63006508ca
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: ff1ec236c85aeaeed655c611a88cead4380258f0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742755"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037708"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>選項對話方塊： \> 建立和執行專案和方案
 
