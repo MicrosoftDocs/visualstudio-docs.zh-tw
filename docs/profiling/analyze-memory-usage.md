@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c3a072408fd8f166475919d988766fb42fa7c54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f77fa9087673ff8e9a429caa27318a60f21d4a60
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285942"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075440"
 ---
 # <a name="analyze-memory-usage"></a>分析記憶體使用量
 
@@ -35,6 +35,6 @@ ms.locfileid: "85285942"
 
 ## <a name="see-also"></a>另請參閱
 
+- [分析記憶體使用量 (不使用偵錯工具)](../profiling/memory-usage-without-debugging2.md)
 - [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)
-- [分析記憶體使用量 (不使用偵錯工具)](../profiling/memory-usage-without-debugging2.md)

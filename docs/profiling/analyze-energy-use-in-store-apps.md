@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 524eb76696414cbbdba72266cc732ccb7e089f86
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2945ef9879e83567f37ebe410ba9f265bfd64760
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537237"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075453"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP App 中的能源耗用量
 
@@ -91,7 +91,7 @@ if (performance && performance.mark) {
 
 1. 在 [偵錯] **** 功能表上，選擇 [啟動診斷但不偵錯] ****。
 
-     ![選擇 [診斷中樞] 內的 [能源消耗]](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
+     ![選擇效能分析工具中的能源耗用量](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
 2. 選擇 [ **能源消耗** ]，然後選擇 [ **開始**]。
 
@@ -113,7 +113,7 @@ if (performance && performance.mark) {
 
 2. 從 [ **選取已安裝的應用程式套件** ] 清單中選擇目標。
 
-3. 選擇 [診斷中樞] 頁面上的 [ **能源消耗** ]。
+3. 選擇 [效能分析工具] 頁面上的 [ **能源消耗** ]。
 
 4. 選擇 [ **開始** ]，開始分析。
 
@@ -124,7 +124,7 @@ if (performance && performance.mark) {
 
  ![能源分析工具報表頁面](../profiling/media/energyprof_all.png "ENERGYPROF_All")
 
-|Image|說明|
+|映像|描述|
 |-|-|
 |![步驟 1](../profiling/media/procguid_1.png "ProcGuid_1")|報告檔的名稱為 Report*YYYYMMDD-HHMM*.diagsession。 如果您決定儲存報告，可以變更名稱。|
 |![步驟 2](../profiling/media/procguid_2.png "ProcGuid_2")|時間軸會顯示程式碼剖析工作階段的長度、應用程式週期啟用事件，以及使用者標記。|

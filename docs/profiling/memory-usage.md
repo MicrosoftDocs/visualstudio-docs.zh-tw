@@ -9,35 +9,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc0d97b1e2b2e27ebc8ddb898795c1767155c1cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e1e6951aebac63494aada4e64c5c072eb79c6a9
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80256188"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074978"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>在 Visual Studio 中測量記憶體使用量
 
-當您使用偵錯工具整合的 **記憶體使用量** 診斷工具進行偵錯工具時，找出記憶體流失和沒有效率的記憶體。 記憶體使用量工具可讓您擷取受控 原生之記憶體堆積的一或多個「快照」**，以利了解物件類型的記憶體使用量影響。 您可以收集 .NET、原生或混合模式 (.NET 和原生) 應用程式的快照。
-
-下圖顯示 [診斷工具]**** 視窗 (於 Visual Studio 2015 Update 1 及更新版本中提供)：
-
-![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+當您使用偵錯工具整合的 **記憶體使用量** 診斷工具進行偵錯工具時，找出記憶體流失和沒有效率的記憶體。 記憶體使用量工具可讓您擷取受控 原生之記憶體堆積的一或多個「快照」**，以利了解物件類型的記憶體使用量影響。 您也可以在不附加偵錯工具的情況下分析記憶體使用量，或是以執行中的應用程式為目標。 如需詳細資訊，請參閱 [使用或不使用偵錯工具來執行程式碼剖析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
 
 除了可以在 **記憶體使用量** 工具中收集任何時間的記憶體快照之外，您還可以使用 Visual Studio 偵錯工具，來控制調查效能問題時要如何執行應用程式。 設定中斷點、逐步偵錯、全部中斷和其他偵錯工具動作，都可以協助您將效能調查工作集中在最相關的程式碼路徑上。 在應用程式執行時進行那些動作，可排除您不感興趣之程式碼的干擾，並可大幅縮短診斷問題所需的時間。
 
-您也可以在偵錯工具外部使用記憶體工具。 查看 [記憶體使用量，而不進行調試](../profiling/memory-usage-without-debugging2.md)。 您可以在 Windows 7 及更新版本使用未附加偵錯工具的分析工具。 Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具]**** 視窗)。
-
-> [!NOTE]
-> **自訂** 配置器支援原生記憶體分析工具的運作方式是收集在執行時間所發出的配置 [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) 事件資料。  在來源層級已註釋 CRT 和 Windows SDK 中的配置器，以便擷取其配置資料。 如果您正在撰寫自己的配置器，則針對任何將指標傳回最新配置之堆積記憶體的函式，都可以使用 [__declspec](/cpp/cpp/declspec)(allocator) 來裝飾，如本範例中針對 myMalloc 所示：
->
-> `__declspec(allocator) void* myMalloc(size_t size)`
+> [!Important]
+> 偵錯工具整合的診斷工具支援在 Visual Studio 中進行 .NET 開發，包括 ASP.NET、ASP.NET Core、原生/c + + 開發和混合模式 ( .NET 和原生) 應用程式。 Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具]**** 視窗)。
 
 在本教學課程中，您將：
 
 > [!div class="checklist"]
 > * 擷取記憶體的快照
 > * 分析記憶體使用量資料
+
+如果 **記憶體使用量** 未提供您所需的資料， [效能分析工具](../profiling/profiling-feature-tour.md#post_mortem) 中的其他程式碼剖析工具會提供可能對您有説明的不同種類資訊。 在許多情況下，您應用程式的效能瓶頸可能是因為記憶體（例如 CPU、轉譯 UI 或網路要求時間）以外的其他部分所造成。
+
+> [!NOTE]
+> **自訂** 配置器支援原生記憶體分析工具的運作方式是收集在執行時間所發出的配置 [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) 事件資料。  在來源層級已註釋 CRT 和 Windows SDK 中的配置器，以便擷取其配置資料。 如果您正在撰寫自己的配置器，則針對任何將指標傳回最新配置之堆積記憶體的函式，都可以使用 [__declspec](/cpp/cpp/declspec)(allocator) 來裝飾，如本範例中針對 myMalloc 所示：
+>
+> `__declspec(allocator) void* myMalloc(size_t size)`
 
 ## <a name="collect-memory-usage-data"></a>收集記憶體使用量資料
 

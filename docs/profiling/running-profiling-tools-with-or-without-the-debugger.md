@@ -8,30 +8,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 147a7dbc029ae894a0054837e92feb0108dc19b4
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 7db7e704eab7f5d00b20051811c503b143608e2f
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561584"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074952"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>使用或不使用偵錯工具來執行分析工具
 
-Visual Studio 提供各種效能測量和分析工具的選擇。 某些工具（例如 CPU 使用量和記憶體使用量）可以使用或不使用偵錯工具來執行，也可以在發行或偵錯工具設定上執行。 出現在 [ [診斷工具] 視窗](../profiling/profiling-feature-tour.md#view-performance-while-debugging) 中的工具只會在偵測會話期間執行。 出現在 [效能分析工具](../profiling/profiling-feature-tour.md#post_mortem) 中的工具會在沒有偵錯工具的情況下執行，而且您會在選擇停止和收集事後剖析後分析) 的資料 (之後分析結果。
+Visual Studio 提供各種效能測量和分析工具的選擇。 某些工具（例如 CPU 使用量和記憶體使用量）可以使用或不使用偵錯工具來執行，也可以在發行或偵錯工具設定上執行。 出現在 [ [診斷工具] 視窗](../profiling/profiling-feature-tour.md#measure-performance-while-debugging) 中的工具只會在偵測會話期間執行。 出現在 [效能分析工具](../profiling/profiling-feature-tour.md#post_mortem) 中的工具會在沒有偵錯工具的情況下執行，而且您會在選擇停止和收集事後剖析後分析) 的資料 (之後分析結果。
 
 >[!NOTE]
 >您可以在 Windows 7 和更新版本中使用非偵錯工具的效能工具。 若要執行偵錯工具整合的分析工具，需要 Windows 8 或更新版本。
 
-非偵錯工具的 [效能分析工具] 和偵錯工具整合的 [診斷工具] 提供不同資訊與體驗。 偵錯工具整合的工具會顯示中斷點和變數值。 非偵錯工具之工具可為您提供更接近終端使用者體驗的結果。
+非偵錯工具的 [效能分析工具] 和偵錯工具整合的 [診斷工具] 提供不同資訊與體驗。 偵錯工具整合的工具會顯示變數值，並讓您使用中斷點。 非偵錯工具之工具可為您提供更接近終端使用者體驗的結果。
 
 若要協助決定要使用的工具和結果，請考慮下列事項：
 
-- 外部效能問題 (例如檔案 I/O 或網路回應性問題) 在偵錯工具或非偵錯工具的工具中看起來沒有太大差異。
-- 針對需要大量 CPU 的呼叫所造成的問題，發行與 debug 組建之間可能會有相當大的效能差異。 查看發行組建中是否有問題。
-- 如果只有在 debug 組建期間發生此問題，您可能不需要執行非偵錯工具工具。 針對發行組建問題，請決定偵錯工具工具是否將有助於進一步調查。
-- [發行] 組建提供最佳化功能，例如內嵌函式呼叫和常數、清除未用的程式碼路徑，以及無法採用偵錯工具所使用的方式來儲存變數。 偵錯工具整合工具中的效能數位較不精確，因為 debug 組建缺少這些優化。
-- 偵錯工具本身會變更效能時間，因為它會執行必要的偵錯工具作業（例如攔截例外狀況和模組載入事件）。
-- [效能分析工具] 中的 [發行] 組建效能數字最精確且準確。 偵錯工具整合的工具結果最適合與其他偵錯相關的度量進行比較。
+- 偵錯工具整合工具與非偵錯工具工具的比較
+  - 外部效能問題 (例如檔案 I/O 或網路回應性問題) 在偵錯工具或非偵錯工具的工具中看起來沒有太大差異。
+  - 偵錯工具本身會變更效能時間，因為它會執行必要的偵錯工具作業（例如攔截例外狀況和模組載入事件）。
+  - [效能分析工具] 中的 [發行] 組建效能數字最精確且準確。 偵錯工具整合的工具結果最適合用來與其他與偵錯工具相關的度量比較，或是使用偵錯工具功能。
+- Debug 與發行組建
+  - 針對需要大量 CPU 的呼叫所造成的問題，發行與 debug 組建之間可能會有相當大的效能差異。 查看發行組建中是否有問題。
+  - 如果只有在 debug 組建期間發生此問題，您可能不需要執行非偵錯工具工具。 針對發行組建問題，請決定偵錯工具整合工具所提供的功能是否有助於找出問題。
+  - [發行] 組建提供最佳化功能，例如內嵌函式呼叫和常數、清除未用的程式碼路徑，以及無法採用偵錯工具所使用的方式來儲存變數。 Debug 組建中的效能數位較不精確，因為 debug 組建缺少這些優化。
 
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a>偵錯時收集程式碼剖析資料
 
@@ -47,7 +49,7 @@ Visual Studio 提供各種效能測量和分析工具的選擇。 某些工具�
 
 在您停止偵錯時，診斷工作階段就會結束。
 
-如需詳細資訊，請參閱：
+如需詳細資訊，請參閱
 
 - [透過分析 CPU 使用量測量應用程式效能](../profiling/beginners-guide-to-performance-profiling.md)
 - [在 Visual Studio 中測量記憶體使用量](../profiling/memory-usage.md)
@@ -82,7 +84,7 @@ Visual Studio 提供各種效能測量和分析工具的選擇。 某些工具�
 
    當會話正在執行時，某些工具會在 [診斷工具] 頁面上顯示即時資料的圖表，以及用來暫停和繼續收集資料的控制項。
 
-    ![效能和診斷中樞上資料收集的螢幕擷取畫面](../profiling/media/diaghubcollectdata.png "中樞收集資料")
+    ![效能分析工具的資料收集螢幕擷取畫面](../profiling/media/diaghubcollectdata.png "中樞收集資料")
 
 1. 若要結束診斷工作階段，請選取 [停止收集]****。
 
@@ -92,7 +94,7 @@ Visual Studio 提供各種效能測量和分析工具的選擇。 某些工具�
 
 ![診斷工具最近開啟的會話清單螢幕擷取畫面](../profiling/media/diaghubopenexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
 
-如需詳細資訊，請參閱：
+如需詳細資訊，請參閱
 
 - [分析 CPU 使用量](../profiling/cpu-usage.md)
 - [分析 .NET 程式碼的記憶體使用量](../profiling/dotnet-alloc-tool.md)

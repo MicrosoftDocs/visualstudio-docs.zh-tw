@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cba043d8300d47ae5ffba1c175a19fcfa2e65ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0be00f2333a2e732d9ba4472004c383b132c0bf2
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330329"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075061"
 ---
 # <a name="events-viewer"></a>事件檢視器
 
@@ -40,7 +40,7 @@ ms.locfileid: "85330329"
 
 ![事件檢視器追蹤](../profiling/media/eventviewertrace.png "事件檢視器追蹤")
 
-|欄名|說明|
+|資料行名稱|描述|
 |----------|---------------------|
 |Provider Name|事件來源|
 |活動名稱|依其提供者指定的事件|

@@ -17,33 +17,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3a7c5eb8aa489da9ced0803e0f83855734825ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: caac02510d2fce95fa67340d2061341ed77ac13e
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537367"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075427"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>透過分析 CPU 使用量測量應用程式效能
 
-您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 本文說明如何使用診斷工具的 [ **CPU 使用量** ] 索引標籤，來取得應用程式的效能資料。
+當您使用偵錯工具整合的 **CPU 使用量** 診斷工具進行偵錯工具時，尋找效能問題。  您也可以在不附加偵錯工具的情況下分析 CPU 使用量，或是以執行中的應用程式為目標。 如需詳細資訊，請參閱 [使用或不使用偵錯工具來執行程式碼剖析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
 
-當偵錯工具暫停時，[CPU 使用量]**** 工具會收集在應用程式中執行的函式的詳細資訊。 此工具列出正在執行工作的函式，並提供讓您用來專注於取樣工作階段特定區段的時間軸圖形。
-
-診斷中樞提供許多其他選項來執行和管理診斷工作階段。 如果 [CPU 使用量]**** 沒有提供您所需的資料，則[其他程式碼剖析工具](../profiling/profiling-feature-tour.md)可提供不同種類的資訊，這可能會很有幫助。 在許多情況下，應用程式的效能瓶頸可能是 CPU 以外的問題所導致，例如記憶體、呈現 UI 或網路要求時間。 診斷中樞提供許多其他選項來記錄和分析這類資料。
+當偵錯工具暫停時，診斷工具視窗中的 [ **CPU 使用量** ] 工具會收集在應用程式中執行之函式的相關資訊。 此工具列出正在執行工作的函式，並提供讓您用來專注於取樣工作階段特定區段的時間軸圖形。
 
 > [!Important]
-> 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。
-
-在本文中，我們將討論一般偵錯工作流程中的 CPU 使用量分析。 您也可以在不附加偵錯工具的情況下分析 CPU 使用量，或是以執行中的應用程式為目標。 如需詳細資訊，請參閱 [使用或不使用偵錯工具來執行程式碼剖析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 您也可以使用另一個程式碼剖析工具 [效能提示](../profiling/perftips.md)來逐步執行程式碼，並識別特定函式或程式碼區塊完成的時間長度。
-
-您可以在 Windows 7 及更新版本使用不具偵錯工具的分析工具。 Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具]**** 視窗)。
+> 偵錯工具整合的診斷工具支援在 Visual Studio 中進行 .NET 開發，包括 ASP.NET、ASP.NET Core 和原生/c + + 開發。 Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具]**** 視窗)。
 
 在本教學課程中，您將：
 
 > [!div class="checklist"]
 > * 收集 CPU 使用量資料
 > * 分析 CPU 使用量資料
+
+如果 **CPU 使用量** 未提供您所需的資料， [效能分析工具](../profiling/profiling-feature-tour.md#post_mortem) 中的其他程式碼剖析工具會提供可能對您有説明的不同資訊類型。 在許多情況下，應用程式的效能瓶頸可能是 CPU 以外的問題所導致，例如記憶體、呈現 UI 或網路要求時間。
 
 ## <a name="step-1-collect-profiling-data"></a>步驟 1︰收集分析資料
 
@@ -134,7 +130,7 @@ ms.locfileid: "85537367"
     ![診斷工具的呼叫樹狀結構](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
     ::: moniker-end
 
-    |Image|說明|
+    |映像|描述|
     |-|-|
     |![步驟 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|CPU 使用量呼叫樹狀圖中的最上層節點是虛擬節點|
     |![步驟 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|在大部分的應用程式中，停用 [顯示外部程式碼] [](#view-external-code) 選項時，第二層節點是一個含有系統和 Framework 程式碼的 [外部程式碼] **** 節點，而系統和 Framework 程式碼會啟動和停止應用程式、繪製 UI、控制執行緒排程，以及提供應用程式的其他低階服務。|

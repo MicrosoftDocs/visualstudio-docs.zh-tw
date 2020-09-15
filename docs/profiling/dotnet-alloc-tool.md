@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 81c15753b083256b97c9f67219b64565a8db8736
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 563531b6dfbf59e33b63dcb4561612d86cd39acc
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247798"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075414"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>使用 .NET 物件組態工具來分析記憶體使用量
 

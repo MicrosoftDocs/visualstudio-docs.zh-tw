@@ -7,16 +7,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aa4cce032a5eb80a11568a83c1166b5690bd688
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a738490933c6f2d1cdf89e7e974a268540af991
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85279872"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074965"
 ---
 # <a name="gpu-usage"></a>GPU 使用量
 
-使用 Visual Studio 效能和診斷中樞的 GPU 使用量工具，更瞭解 Direct3D 應用程式的高階硬體使用量。 它可協助您瞭解應用程式的效能是否為 CPU 系結或 GPU 系結，並深入瞭解如何更有效地使用平臺的硬體。 GPU 使用量支援使用 Direct3D 12、Direct3D 11 和 Direct3D 10 的應用程式。 它不支援其他圖形 Api，例如 Direct2D 或 OpenGL。
+使用效能分析工具中的 GPU 使用量工具，更瞭解 Direct3D 應用程式的高階硬體使用量。 它可協助您瞭解應用程式的效能是否為 CPU 系結或 GPU 系結，並深入瞭解如何更有效地使用平臺的硬體。 GPU 使用量支援使用 Direct3D 12、Direct3D 11 和 Direct3D 10 的應用程式。 它不支援其他圖形 Api，例如 Direct2D 或 OpenGL。
 
 以下是 [ **GPU 使用量報告** ] 視窗的樣子：
 
@@ -43,7 +43,7 @@ ms.locfileid: "85279872"
 
 2. 在 [ **效能及診斷** ] 中樞中，核取 [ **GPU 使用量**] 旁的方塊。 選擇性地核取您感興趣之其他工具旁邊的方塊。 您可以同時執行數個效能和診斷工具，以更完整地瞭解應用程式的效能。
 
-    ![效能和診斷中樞的螢幕擷取畫面，其中已選取 GPU 使用量](media/gpuusageselected.png "選取的 GPU 使用量")
+    ![效能分析工具的螢幕擷取畫面，其中已選取 GPU 使用量](media/gpuusageselected.png "選取的 GPU 使用量")
 
    > [!NOTE]
    > 並非所有效能和診斷工具都可以同時使用。

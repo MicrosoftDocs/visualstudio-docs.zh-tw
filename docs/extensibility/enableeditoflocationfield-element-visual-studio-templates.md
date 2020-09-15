@@ -36,10 +36,10 @@ ms.locfileid: "90037402"
  下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
- None
+ 無
 
 ### <a name="child-elements"></a>子元素
- None
+ 無
 
 ### <a name="parent-elements"></a>父元素
 
