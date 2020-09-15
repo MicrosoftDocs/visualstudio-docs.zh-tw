@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d61ebaa191e94439629d7ac5f85a6921163ed08b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d0489950b9132a36aef8ecb3d8374c02d1a1aee2
+ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036586"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90560732"
 ---
 # <a name="overview-of-source-code-analysis"></a>原始程式碼分析總覽
 
@@ -25,9 +25,9 @@ ms.locfileid: "90036586"
 
 分析器可以分為下列群組：
 
-- 程式[代碼樣式](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019#convention-categories)分析器內建于 Visual Studio。 這些分析器的診斷識別碼或程式碼的格式為 IDExxxx，例如 IDE0067。 您可以在 [文字編輯器](../ide/code-styles-and-code-cleanup.md) 的 [選項] 頁面或 [EditorConfig](../ide/editorconfig-code-style-settings-reference.md)檔中設定喜好設定。 從 .NET 5.0 開始，程式 [代碼樣式](https://docs.microsoft.com/dotnet/fundamentals/productivity/code-analysis) 分析器會隨附于 .net SDK。
+- 程式[代碼樣式](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019#convention-categories)分析器內建于 Visual Studio。 這些分析器的診斷識別碼或程式碼的格式為 IDExxxx，例如 IDE0067。 您可以在 [文字編輯器](../ide/code-styles-and-code-cleanup.md) 的 [選項] 頁面或 [EditorConfig](../ide/editorconfig-code-style-settings-reference.md)檔中設定喜好設定。 從 .NET 5.0 開始，程式碼樣式分析器會隨附于 .NET SDK，而且可以嚴格地強制執行為組建警告或錯誤。 如需詳細資訊，請參閱[這裡](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis)。
 
-- 程式[代碼品質](/code-analysis-warnings-for-managed-code-by-checkid.md)分析器現在隨附于 .NET 5 SDK，而且預設為啟用。 這些分析器的診斷識別碼或程式碼的格式為 CAxxxx，例如 CA1822。 如需詳細資訊，請參閱 [.net source 程式碼分析的總覽](/dotnet/fundamentals/productivity/code-analysis)。
+- 程式[代碼品質](code-analysis-warnings-for-managed-code-by-checkid.md)分析器現在隨附于 .NET 5 SDK，而且預設為啟用。 這些分析器的診斷識別碼或程式碼的格式為 CAxxxx，例如 CA1822。 如需詳細資訊，請參閱 [.net 程式碼品質分析的總覽](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis)。
 
 - 協力廠商分析器可以安裝為 NuGet 套件或 Visual Studio 擴充功能。 協力廠商分析器，例如 [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/)、 [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/)、 [XUnit 分析器](https://www.nuget.org/packages/xunit.analyzers/)和 [聲納 Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)。
 
@@ -77,7 +77,7 @@ ms.locfileid: "90036586"
 
 若要在組建階段強制執行規則，包括透過命令列或作為連續整合 (CI) 組建的一部分，您可以從下列其中一個選項中選擇：
 
-- 建立 .NET 5.0 專案，在 .NET SDK 中預設包含分析器。 針對以 .NET 5.0 或更新版本為目標的專案，預設會啟用程式碼分析。 您可以藉由將 [EnableNETAnalyzers](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) 屬性設定為 true，對以舊版 .net 版本為目標的專案啟用程式碼分析。
+- 建立 .NET 5.0 專案，在 .NET SDK 中預設包含分析器。 根據預設，以 .NET 5.0 或更新版本為目標的專案會啟用程式碼分析。 您可以藉由將 [EnableNETAnalyzers](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) 屬性設定為 true，對以舊版 .net 版本為目標的專案啟用程式碼分析。
 
 - 將分析器安裝為 NuGet 套件。 如果您將分析器安裝為延伸模組，則分析器警告和錯誤不會顯示在組建報告中。
 
@@ -89,7 +89,7 @@ ms.locfileid: "90036586"
 
 您無法從安裝為 Visual Studio 延伸模組的分析器設定規則的嚴重性。 若要設定[規則嚴重性](../code-quality/use-roslyn-analyzers.md#configure-severity-levels)，請將分析器安裝為 NuGet 套件。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 > [!div class="nextstepaction"]
 > [在 Visual Studio 中安裝程式碼分析器](../code-quality/install-roslyn-analyzers.md)

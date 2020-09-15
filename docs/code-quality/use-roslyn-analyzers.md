@@ -1,5 +1,5 @@
 ---
-title: 程式碼品質分析
+title: 分析器設定
 ms.date: 09/02/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cbe22571a2485d163960cc7af58975f0a299bf9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 6a950a005a4669e74722742b23527a9e85ab5f02
+ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036355"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90560745"
 ---
-# <a name="configure-code-quality-analysis"></a>設定程式碼品質分析
+# <a name="overview"></a>概觀
 
-從 .NET 5.0 開始，程式碼品質分析器會隨附于 .NET SDK。  (之前，您已將這些分析器安裝為 NuGet 套件。針對以 .NET 5.0 或更新版本為目標的專案，預設會啟用 ) 程式碼分析。 您可以藉由將 [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) 屬性設定為，在以較早 .net 版本為目標的專案上啟用程式碼分析 `true` 。 您也可以將設定為，以停用專案的程式碼分析 `EnableNETAnalyzers` `false` 。
-
-每個程式碼品質分析器 *診斷* 或規則都有預設的嚴重性和隱藏狀態，可針對您的專案進行覆寫和自訂。 本文說明如何設定程式碼品質分析器嚴重性，以及抑制分析器違規。
+每個 Roslyn 分析器 *診斷* 或規則都有預設的嚴重性和隱藏狀態，可針對您的專案進行覆寫和自訂。 本文涵蓋設定分析器嚴重性和抑制分析器違規。
 
 ## <a name="configure-severity-levels"></a>設定嚴重性層級
 
