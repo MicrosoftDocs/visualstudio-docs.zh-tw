@@ -62,6 +62,7 @@ f1_keywords:
 - CA1309
 - CA1310
 - CA1401
+- CA1416
 - CA1417
 - CA1501
 - CA1502
@@ -253,18 +254,18 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a298ab142ae6a44c1fb24b2cb1b752f6beb4a68e
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 24f7dbcdd324620f2076f5fab8247c9ba99a72cb
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037233"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90094222"
 ---
 # <a name="code-quality-analysis-rules-by-rule-id"></a>依規則識別碼的程式碼品質分析規則
 
 下表依規則識別碼列出程式碼品質分析規則。
 
-| CheckId | 警告 | 描述 |
+| RuleId | 警告 | 描述 |
 |---------| - | - |
 | CA1000 | [CA1000：不要在泛型類型上宣告靜態成員](../code-quality/ca1000.md) | 呼叫泛型類型的靜態成員時，必須為類型指定類型引數。 呼叫不支援介面的泛型執行個體 (Instance) 成員時，必須為成員指定類型引數。 在上述兩種情況下，指定型別引數的語法不同且容易混淆。 |
 | CA1001 | [CA1001：具有可處置欄位的類型應該為可處置](../code-quality/ca1001.md) | 類別會宣告及實作類型為 System.IDisposable 的執行個體欄位，且該類別不會實作 IDisposable。 宣告 IDisposable 欄位的類別會間接擁有 Unmanaged 資源，且應實作 IDisposable 介面。 |
@@ -324,6 +325,7 @@ ms.locfileid: "90037233"
 | CA1309 | [CA1309:使用循序的 StringComparison](../code-quality/ca1309.md) | 非語言的字串比較作業未將 StringComparison 參數設定為 Ordinal 或 OrdinalIgnoreCase。 藉由明確地將參數設定為 StringComparison.Ordinal 或 StringComparison.OrdinalIgnoreCase，您的程式碼通常可以提升速度、更為正確，也更加可靠。 |
 | CA1310 | [CA1310：指定 StringComparison 以提升正確性](../code-quality/ca1310.md) | 字串比較作業會使用未設定 StringComparison 參數的方法多載，並預設使用特定文化特性的字串比較。 |
 | CA1401 | [CA1401： P/Invoke 不應該為可見的](../code-quality/ca1401.md) | 公用類型中公用或保護的方法具有 System.Runtime.InteropServices.DllImportAttribute 屬性 (也會由 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中的 Declare 關鍵字實作)。 但不得公開 (Expose) 此類方法。 |
+| CA1416 | [CA1416：驗證平臺相容性](../code-quality/ca1416.md) | 在元件上使用平臺相依的 Api，可讓程式碼無法在所有平臺上運作。 |
 | CA1417 | [CA1417：不使用 `OutAttribute` P/invoke 的字串參數](../code-quality/ca1417.md) | 以傳值方式傳遞的字串參數， `OutAttribute` 會在字串為暫存字串時，使執行時間不穩定。 |
 | CA1501 | [CA1501:避免在物件間過度繼承](../code-quality/ca1501.md) | 類型在其繼承階層架構 (Inheritance Hierarchy) 中超過四個層級的深度。 太深的巢狀類型階層架構可能會難以依循、了解和維護。 |
 | CA1502 | [CA1502:避免造成過度複雜的方法](../code-quality/ca1502.md) | 這個規則會測量整個方法中線性獨立路徑的數目，此數目是由條件分支的數目與複雜度決定。 |
