@@ -14,7 +14,7 @@
       href: quickstart-deploy-to-linux.md
     - name: 部署到網站
       href: quickstart-deploy-to-a-web-site.md
-    - name: 部署到本機資料夾
+    - name: 部署到資料夾
       href: quickstart-deploy-to-local-folder.md
 - name: 教學課程
   items:

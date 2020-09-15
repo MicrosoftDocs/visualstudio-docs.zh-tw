@@ -127,6 +127,8 @@
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: 從 Azure 虛擬機器使用 Visual Studio
       href: install/using-visual-studio-vm.md
+    - name: 在 ARM 裝置上使用 Visual Studio
+      href: install/visual-studio-on-arm-devices.md
     - name: 容器
       items:
         - name: 將建置工具安裝至容器
@@ -1066,7 +1068,7 @@
           href: ide/reference/immediate-window.md
         - name: 其他檔案
           href: ide/reference/miscellaneous-files.md
-        - name: 選項。
+        - name: 選項
           items:
             - name: 選項對話方塊
               href: ide/reference/options-dialog-box-visual-studio.md
@@ -1190,7 +1192,7 @@
                       href: ide/reference/options-text-editor-javascript-intellisense.md
                     - name: 進行 Lint 檢查
                       href: ide/reference/options-text-editor-javascript-linting.md
-                    - name: 專案
+                    - name: 隨附此逐步解說的專案
                       href: ide/reference/options-text-editor-javascript-project.md
                 - name: U-SQL
                   items:
