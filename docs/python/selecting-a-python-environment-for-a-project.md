@@ -1,21 +1,21 @@
 ---
-title: 選取要用於專案的 Python 解譯器和環境
+title: 選取專案的 Python 環境
 description: 您可以特別選取要套用至特定專案的 Python 環境，包括 Anaconda 和虛擬環境。
 ms.date: 03/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 11808eeabee4d45d1d3d3b1b5cd5d6636249e7cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46b0a8005ea76445a1d6205c8635963dbaedd0d4
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801200"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90097030"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>如何選取要用於專案的 Python 環境
 
@@ -38,7 +38,7 @@ Visual Studio 中所有新的 Python 專案一開始都會設定為使用預設�
 
 [Python 環境]**** 節點上的操作功能表也會提供其他命令：
 
-| 命令 | 描述 |
+| Command | 描述 |
 | --- | --- |
 | **新增虛擬環境** | 開始在專案中新建虛擬環境的程序。 請參閱[建立虛擬環境](#create-a-virtual-environment)。 |
 | **新增現有的虛擬環境** | 提示您選取包含虛擬環境的資料夾，並將它新增至 [Python 環境]**** 底下的清單，但不會加以啟用。 [啟用現有的虛擬環境](#activate-an-existing-virtual-environment)。 |
