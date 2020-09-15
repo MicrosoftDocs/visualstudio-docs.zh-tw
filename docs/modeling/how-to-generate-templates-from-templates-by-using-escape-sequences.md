@@ -1,5 +1,6 @@
 ---
-title: 使用 escape 序列從範本產生範本
+title: 從文字模板產生文字模板
+description: 提供有關如何使用 escape 序列從另一個文字模板產生文字模板的資訊。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,14 +8,15 @@ helpviewer_keywords:
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 1460b03a027a2b33844edc7d617f8b5f21208772
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7ef983525842023247433e7a3c2b51e206a1cee
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594639"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100757"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>如何：使用逸出序列從範本產生範本
 您可以建立文字模板，以建立另一個文字模板作為其產生的文字輸出。 若要這樣做，您必須使用 escape 序列來描繪文字模板標記。 如果您未使用 escape 序列，則產生的文字模板將會有預先定義的意義。 如需在文字模板中使用 escape 序列的詳細資訊，請參閱 [在文字模板中使用 Escape 序列](../modeling/using-escape-sequences-in-text-templates.md)。

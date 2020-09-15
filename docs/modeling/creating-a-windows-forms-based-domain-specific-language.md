@@ -1,18 +1,20 @@
 ---
-title: 建立 Windows Form 架構之網域指定的語言
+title: 建立 Windows Forms 架構的特定領域語言
+description: 提供有關如何使用 Windows Forms 來顯示特定領域語言模型狀態的資訊。
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: c52b3bd352c2ecb2272ad8e229a0fe52a9ee5b41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e4c712eed732830da4bc1b158c8ad53a65a45d8
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238357"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100449"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>建立以 Windows Forms 為基礎的特定網域語言
 
@@ -67,9 +69,9 @@ ms.locfileid: "88238357"
 
 ## <a name="update-the-dsl-definition"></a>更新 DSL 定義
 
-本逐步解說會使用下列 DSL 定義。
+下圖是本逐步解說中使用的 DSL 定義。
 
-![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
+![DSL 定義](../modeling/media/dsl-wpf-1.png)
 
 1. 在 DSL 設計工具中開啟 Dsldefinition.dsl 檔。
 
@@ -127,7 +129,7 @@ ms.locfileid: "88238357"
 
      模型類別的屬性和關聯性會出現在 [資料來源] 視窗中。
 
-     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
+     ![資料來源視窗](../modeling/media/dslwpf-3.png)
 
 ### <a name="connect-your-model-to-a-form"></a>將您的模型連接至表單
 
@@ -172,7 +174,9 @@ ms.locfileid: "88238357"
 
 - 它可確保當使用者選取資料列時，屬性視窗會顯示對應模型專案的屬性，而不是資料格資料列。
 
-  ![DslWpf4 ](../modeling/media/dslwpf4.png) 資料來源與視圖之間的連結架構。
+  ![DSL 系結的架構](../modeling/media/dslwpf4.png)
+  
+  資料來源和視圖之間的連結架構。
 
 ### <a name="complete-the-bindings-to-the-dsl"></a>完成 DSL 的系結
 
@@ -298,7 +302,7 @@ DSL 解決方案現在可以建立並執行，不過您稍後可能會想要新�
 
     您應該能夠在資料方格視圖中編輯元素的名稱。 您也可以從該處刪除它。
 
-   ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![範例資料方格視圖](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>關於新增專案的程式碼
 

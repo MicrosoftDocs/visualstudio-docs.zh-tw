@@ -1,5 +1,5 @@
 ---
-title: 利用分析工具測量效能
+title: 程式碼剖析工具入門
 description: 查看 Visual Studio 中可用的各種診斷工具。
 ms.custom: ''
 ms.date: 09/08/2020
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ebc2a2e7c4b10d835a20abcdd8392fb1851596a
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 28f382e8d20f3aa623ea241702e4795854e12f9a
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074905"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100770"
 ---
 # <a name="first-look-at-profiling-tools"></a>初步認識分析工具
 
@@ -57,7 +57,7 @@ Visual Studio 提供各種不同的分析工具，可協助您依據應用程式
 
 ![效能分析工具](../profiling/media/prof-tour-performance-profiler.png "效能分析工具")
 
-在某些情況下，視窗可讓您選取 [多個程式碼剖析工具](../profiling/use-multiple-profiler-tools-simultaneously.md)。 [CPU 使用量] 這類工具也可以提供有助於分析的補充資料。 您也可以使用 [命令列](../profiling/profile-apps-from-command-line.md) 分析工具來啟用牽涉到多個程式碼剖析工具的情節。
+如需有關使用 [CPU 使用量] 或 [記憶體使用量] 工具的詳細資訊效能分析工具與偵錯工具整合的工具，請參閱 [使用或不使用偵錯工具來執行程式碼剖析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 
 
 效能分析工具中提供的工具組括：
 
@@ -70,7 +70,7 @@ Visual Studio 提供各種不同的分析工具，可協助您依據應用程式
 
 若要查看不同應用程式類型的程式碼剖析工具支援，請參閱 [應該使用哪一種工具？](#which-tool-should-i-use)
 
-如需有關使用 [CPU 使用量] 或 [記憶體使用量] 工具的詳細資訊效能分析工具與偵錯工具整合的工具，請參閱 [使用或不使用偵錯工具來執行程式碼剖析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 
+在某些情況下，視窗可讓您選取 [多個程式碼剖析工具](../profiling/use-multiple-profiler-tools-simultaneously.md)。 [CPU 使用量] 這類工具也可以提供有助於分析的補充資料。 您也可以使用 [命令列](../profiling/profile-apps-from-command-line.md) 分析工具來啟用牽涉到多個程式碼剖析工具的情節。
 
 ## <a name="examine-performance-using-perftips"></a>使用效能提示檢查效能
 

@@ -1,21 +1,21 @@
 ---
-title: 使用 requirements.txt 檔案管理套件相依性
+title: 使用 requirements.txt 管理套件相依性
 description: requirements.txt 檔案會描述專案的相依性。 如果您收到包含 requirements.txt 檔案的專案，就可以輕鬆地在單一步驟中安裝那些相依性。
 ms.date: 03/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9179ca2b77e7a6d3ae5b5dffded06524114a0f8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b65072e7a9ffa5d3767a5ff66fda25b231c622ef
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544114"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100535"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>使用 requirements.txt 管理必要套件
 

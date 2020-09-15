@@ -1,18 +1,20 @@
 ---
 title: 控制色彩、線條樣式和其他圖形屬性
+description: 提供控制圖形屬性的相關資訊，例如色彩和線條樣式。
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: eee36ad0361f40f23c29c5672b155fc5e5405dbe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 759c7def23cf8ac0df33a75d25eb5bcbcf44b209
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546675"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100423"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>控制色彩、線條樣式和其他圖形屬性
 

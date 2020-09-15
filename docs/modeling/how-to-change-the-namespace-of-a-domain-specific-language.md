@@ -1,20 +1,23 @@
 ---
 title: 如何：變更特定領域語言的命名空間
+description: 提供有關如何變更特定領域語言命名空間的資訊。
 ms.date: 10/31/2018
 ms.topic: how-to
+titleSuffix: ''
 helpviewer_keywords:
 - Domain-Specific Language, namespace
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff7c73694cb53f7fbea21514feeaab4abce3f29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 747095a876b353aeef76e2f5321e7f2ffc46136f
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542671"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100796"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>如何：變更特定領域語言的命名空間
 
