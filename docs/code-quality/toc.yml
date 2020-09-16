@@ -10,12 +10,10 @@
         - name: 設定
           expanded: true
           items:
+            - name: 總覽
+              href: use-roslyn-analyzers.md
             - name: 程式碼品質
-              items:
-                - name: 概觀
-                  href: use-roslyn-analyzers.md
-                - name: 使用 EditorConfig 設定程式碼品質分析
-                  href: configure-fxcop-analyzers.md
+              href: configure-fxcop-analyzers.md
             - name: 設定即時程式碼分析
               href: configure-live-code-analysis-scope-managed-code.md
             - name: 手動執行程式碼分析
@@ -580,6 +578,8 @@
                       href: interoperability-warnings.md
                     - name: 'CA1401:P-Invokes 不應該為可見的'
                       href: ca1401.md
+                    - name: CA1416：驗證平台相容性
+                      href: ca1416.md
                     - name: CA1417：請勿對 P/Invokes 的字串參數使用 OutAttribute
                       href: ca1417.md
                 - name: 維護性警告

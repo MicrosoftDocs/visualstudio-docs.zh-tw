@@ -16,9 +16,9 @@
       href: quickstart-cpu-usage-aspnet.md
 - name: 教學課程
   items:
-    - name: 在 Visual Studio 中分析應用程式效能
+    - name: 在 Visual Studio 中測量應用程式效能
       href: beginners-guide-to-performance-profiling.md
-    - name: 分析 Visual Studio 中的記憶體使用量
+    - name: 在 Visual Studio 中測量記憶體使用量
       href: memory-usage.md
 - name: 概念
   items:

@@ -509,6 +509,8 @@
             - name: 使用 EditorConfig 檔案作為程式碼樣式
               displayName: Configure code style analyzers
               href: ide/create-portable-custom-editor-options.md
+            - name: C++ EditorConfig 格式設定慣例
+              href: ide/cpp-editorconfig-properties.md
             - name: .NET 編碼慣例
               items:
                 - name: 概觀
@@ -1068,7 +1070,7 @@
           href: ide/reference/immediate-window.md
         - name: 其他檔案
           href: ide/reference/miscellaneous-files.md
-        - name: 選項
+        - name: 選項。
           items:
             - name: 選項對話方塊
               href: ide/reference/options-dialog-box-visual-studio.md
