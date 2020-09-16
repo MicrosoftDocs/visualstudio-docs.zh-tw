@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 62709c496b9eec631a42c0e227210d3b57ecb5ef
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 67a9a6f7ec63686003f6e6535b213e9c6fa606f0
+ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741763"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90682652"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 編碼慣例設定
 
@@ -40,7 +40,7 @@ ms.locfileid: "89741763"
 
    有關程式碼配置和結構的規則，以使其更容易閱讀。 例如，您可以指定使用 Allman 大括弧或設定控制區塊空格的規則。
 
-- [命名慣例](../ide/editorconfig-naming-conventions.md)
+- [命名規範](../ide/editorconfig-naming-conventions.md)
 
    有關程式碼項目的命名規則。 例如，您可以指定 `async` 方法必須以 "Async" 結尾。
 
@@ -48,7 +48,7 @@ ms.locfileid: "89741763"
 
 ## <a name="enforce-coding-conventions-on-build"></a>在組建上強制執行編碼慣例
 
-從 Visual Studio 2019 16.8 版（包括 .NET 5.0 RC2 SDK）開始，您可以對所有 .NET 專案 [強制執行組建的 .net 程式碼慣例](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) 。 在組建階段，.NET 程式碼樣式違規將會顯示為「IDE」前置詞的警告或錯誤。 這可讓您在程式碼基底中嚴格強制執行一致的程式碼樣式。
+從 Visual Studio 2019 16.8 版（包括 .NET 5.0 RC2 SDK）開始，您可以對所有 .NET 專案 [強制執行組建的 .net 程式碼慣例](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis) 。 在組建階段，.NET 程式碼樣式違規將會顯示為「IDE」前置詞的警告或錯誤。 這可讓您在程式碼基底中嚴格強制執行一致的程式碼樣式。
 
 ::: moniker-end
 
