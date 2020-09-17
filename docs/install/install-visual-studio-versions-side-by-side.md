@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 717a9cd3f4157c276ce7d0dd5c41cac625581ba6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0e5a2d09cad35266bacc73580b2284f66bd32f5
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250257"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713460"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>並存安裝 Visual Studio 版本
 
@@ -50,7 +50,7 @@ ms.locfileid: "88250257"
 
 從 Visual Studio 的次要版本升級到下一個版本時，Visual Studio 安裝程式預設會將您目前的安裝更新至該通道中的下一個版本。 例如，安裝 16.6.4 Preview 時，安裝程式會嘗試取代您目前的 16.6.3 Preview 安裝，因為這兩個版本都在 16.6 Preview 通道中。 這有助於確保舊版 Visual Studio 不佔用您電腦上的空間。 在某些特定情況下，並存安裝次要版本可能會很有説明。 在我們的範例中，這表示在同一部電腦上同時有16.6.3 和16.6.4。
 
-1. 針對您要與現有 Visual Studio 版本並存安裝的次要版本，下載 [Visual Studio](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) 的啟動載入器檔案。
+1. 針對您要與現有 Visual Studio 版本並存安裝的次要版本，下載 [Visual Studio](/visualstudio/releases/2019/history#installing-an-earlier-release) 的啟動載入器檔案。
 2. 以系統管理員模式開啟命令提示字元。 若要這樣做，請開啟 Windows [開始] 功能表，輸入 "cmd"，以滑鼠右鍵按一下命令提示字元搜尋結果，然後選取 [以 **系統管理員身分執行**]。 在命令提示字元中，將目錄變更為您 Visual Studio 啟動載入器檔案所在的資料夾。
 3. 執行下列命令，指定安裝位置的新資料夾路徑，並將 .exe 檔案名取代為您要安裝之 Visual Studio 版本的適當啟動載入器名稱。 .Exe 檔案名應符合或類似下列其中一個檔案：
    * vs_community.exe (適用於 Visual Studiofor Community)

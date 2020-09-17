@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eef35457b9f28864929ad42919fff4e9afdcb0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8f9ed7822dc231fdd4888d3e44c4e3218357f95
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114816"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713473"
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope 活動設計工具
 
@@ -35,11 +35,11 @@ ms.locfileid: "76114816"
 
 |屬性名稱|必要|使用方式|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|否|<xref:System.Activities.Statements.TransactionScope> 活動可選用的易記名稱。 預設為 TransactionScope。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 值並非絕對必要，但建議您盡量使用。|
-|<xref:System.Activities.Statements.TransactionScope.Body%2A>|是|指定要在單一交易中執行的活動。 若要加入 <xref:System.Activities.Statements.TransactionScope.Body%2A> 活動，請從 [**工具箱**] 將活動拖放到 [ **TransactionScope** ] 活動設計工具的 [內文] 方塊中，並**在 [在**此放置活動] 提示文字。|
-|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|是|為這個 <xref:System.Transactions.IsolationLevel> 指定 <xref:System.Activities.Statements.TransactionScope>。|
-|<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|否|指定異動必須完成的時間間隔 (格式為 00:00:00，表示時:分:秒)。 預設值是 1 分鐘 (00:01:00)。|
-|[AbortInstanceOnTransactionFailure （.）](https://msdn.microsoft.com/library/system.activities.statements.transactionscope.abortinstanceontransactionfailure.aspx)|是|指定值，這個值會指出當交易中止時，工作流程是否應隨之中止。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.TransactionScope> 活動可選用的易記名稱。 預設為 TransactionScope。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 值並非絕對必要，但建議您盡量使用。|
+|<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|指定要在單一交易中執行的活動。 若要加入 <xref:System.Activities.Statements.TransactionScope.Body%2A> 活動，請從 [**工具箱**] 將活動拖放到 [ **TransactionScope** ] 活動設計工具的 [內文] 方塊中，並**在 [在**此放置活動] 提示文字。|
+|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|True|為這個 <xref:System.Transactions.IsolationLevel> 指定 <xref:System.Activities.Statements.TransactionScope>。|
+|<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|False|指定異動必須完成的時間間隔 (格式為 00:00:00，表示時:分:秒)。 預設值是 1 分鐘 (00:01:00)。|
+|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|True|指定值，這個值會指出當交易中止時，工作流程是否應隨之中止。|
 
 ## <a name="see-also"></a>另請參閱
 
