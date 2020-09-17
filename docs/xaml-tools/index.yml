@@ -10,12 +10,12 @@ metadata:
   author: jillre
   ms.author: jillfra
   ms.date: 10/10/2019
-  ms.openlocfilehash: 45f9459ff4778b58ae3d553a03b2e5c1773614b6
-  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+  ms.openlocfilehash: c515710fcaf45b726a80c9986d8785f8458ca59a
+  ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "74316419"
+  ms.lasthandoff: 09/17/2020
+  ms.locfileid: "90713525"
 landingContent:
 - title: 了解 XAML
   linkLists:
@@ -50,7 +50,7 @@ landingContent:
   - linkListType: overview
     links:
     - text: WPF 概觀
-      url: ../designers/introduction-to-wpf.md
+      url: /dotnet/desktop/wpf/introduction-to-wpf
   - linkListType: get-started
     links:
     - text: 開始使用 Visual Studio 中的 WPF
