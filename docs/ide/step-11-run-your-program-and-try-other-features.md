@@ -12,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47a2efac2e317fc8e3d168f4b8b19bfb10014cf2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f7ac5967d13aa6572b36989150561363555a9705
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036934"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809194"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>步驟11：執行您的圖片檢視器應用程式並嘗試其他功能
 
@@ -49,7 +49,7 @@ ms.locfileid: "90036934"
 
 * 使用表單的 **AcceptButton** 和 **CancelButton** 屬性，如此就會在使用者選擇 **Enter** 或 **Esc** 鍵時，自動選擇這些按鈕。 讓應用程式在使用者選擇**Enter**鍵時開啟 [**開啟**檔案] 對話方塊，並在使用者選擇**Esc 鍵**時關閉方塊。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 若要深入了解，請繼續下列教學課程：
 
@@ -60,6 +60,6 @@ ms.locfileid: "90036934"
 
 ## <a name="see-also"></a>另請參閱
 
-* [其他 c # 教學課程](/visualstudio/get-started/csharp/)
-* [更多 Visual Basic 教學課程](/visualstudio/get-started/visual-basic/)
+* [其他 c # 教學課程](../get-started/csharp/index.yml)
+* [更多 Visual Basic 教學課程](../get-started/visual-basic/index.yml)
 * [C + + 教學課程](/cpp/get-started/tutorial-console-cpp)

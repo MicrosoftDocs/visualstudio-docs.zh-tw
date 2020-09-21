@@ -1,5 +1,6 @@
 ---
-title: 如何-在 ClickOnce 應用程式中包含資料檔案 |Microsoft Docs
+title: 在 ClickOnce 應用程式中包含資料檔案
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7630d1b363afa7caeae361f607f4b73929fbba1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdc2154876724feb5c6a0329a2acc5df7ac80fbc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382402"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809142"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>如何：在 ClickOnce 應用程式中包含資料檔案
 您安裝的每個 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式都會被指派目的地電腦本機磁片上的資料目錄，應用程式可以在其中管理本身的資料。 資料檔案可包含任何類型的檔案：文字檔、XML 檔案，或甚至是 Microsoft Access 資料庫 (*.mdb*) 檔。 下列程式示範如何將任何類型的資料檔案加入至您的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4dfb7592fb2cec05da1bd72bd69a76e9a3b270db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b3aeee895810eed8e434fda93328e4e179c9d39
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63007935"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740106"
 ---
 # <a name="use-the-sharepoint-project-service"></a>使用 SharePoint 專案服務
   SharePoint 專案系統包含可讓您執行專案系統相關工作的專案服務。 專案服務是 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 物件。
@@ -28,7 +28,7 @@ ms.locfileid: "63007935"
 ## <a name="project-service-features"></a>專案服務功能
  下表列出您可以使用 SharePoint 專案服務執行的工作和可使用的 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 方法或屬性，以執行每項工作。
 
-|工作|要使用的成員|
+|Task|要使用的成員|
 |----------|-------------------|
 |存取任何在 Visual Studio 中開啟的 SharePoint 專案。|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Projects%2A> 屬性。|
 |存取所有可用 (包括內建和自訂專案項目類型) 的 SharePoint 專案項目類型。|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ProjectItemTypes%2A> 屬性。|
@@ -47,4 +47,4 @@ ms.locfileid: "63007935"
 - [如何：取得 SharePoint 專案服務](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
 - [擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [SharePoint 工具擴充功能的程式設計模型總覽](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
-- [如何：從 DTE 物件取得服務](https://msdn.microsoft.com/library/bb166401.aspx)
+- [如何：從 DTE 物件取得服務](/previous-versions/bb166401(v=vs.140))

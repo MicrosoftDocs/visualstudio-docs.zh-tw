@@ -32,12 +32,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c89be8a79aad9a2e3e0cdbc8601a08a99c1ad1aa
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588794"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808086"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>選項、文字編輯器、所有語言、捲軸
 這個對話方塊可讓您變更程式碼編輯器捲軸的預設行為。 若要顯示這些選項，請從 [工具]**** 功能表選取 [選項]****。 在 [文字編輯器]**** 資料夾內，展開 [所有語言]**** 子資料夾，然後選擇 [捲軸]****。
@@ -69,7 +69,7 @@ ms.locfileid: "75588794"
 
 開啟大型程式碼檔案來試用看看，並取代一些在檔案中數個位置出現的文字。 捲軸會顯示出您改動過的內容，因此如果您改掉了不該更動的東西，可以將變更還原。
 
-如需了解編輯程式碼時各種色彩和符號的意義，請參閱[增強型捲軸](https://blogs.msdn.microsoft.com/cdnstudents/2014/01/21/visual-studio-tips-and-tricks-enhanced-scroll-bar/) \(英文\) 部落格文章。
+如需了解編輯程式碼時各種色彩和符號的意義，請參閱[增強型捲軸](/archive/blogs/cdnstudents/visual-studio-tips-and-tricks-enhanced-scroll-bar) \(英文\) 部落格文章。
 
 ## <a name="behavior"></a>行為
 

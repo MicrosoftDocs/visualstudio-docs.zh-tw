@@ -1,5 +1,5 @@
 ---
-title: 已淘汰的規則
+title: 過時的規則
 ms.date: 05/21/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -10,17 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7a79b4a3b91f087c5f238afd3627a1393c558daa
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 33f935158077e566a5a9bc14645acaae79201347
+ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89511079"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90832173"
 ---
-# <a name="deprecated-rules"></a>已淘汰的規則
+# <a name="deprecated-rules"></a>過時的規則
 
 下列 FxCop 舊版分析規則已被取代，而且不會實作為分析器。 如需進一步的資訊，您可以依規則識別碼搜尋 (例如[roslyn-分析器 GitHub 問題頁面](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)上的**CA1009**) 。
 
+- [CA1006](ca1006.md)
 - [CA1009](ca1009.md)
 - [CA1020](ca1020.md)
 - [CA1025 必須](ca1025.md)

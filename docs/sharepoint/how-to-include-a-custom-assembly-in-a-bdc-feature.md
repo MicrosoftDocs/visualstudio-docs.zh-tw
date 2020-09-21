@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 772cdbaca67cc82fc6b7eb2c5ef5adb6508df34a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79336e241b822e5fa9f84dbb771aa4187ea5eadb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015256"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740067"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>如何：在 BDC 功能中包含自訂群組件
   您的專案可以參考相同方案中其他專案的元件。 不過，您必須使用 [ **指派參考的元件至 lobsystem** ] 對話方塊，將這些元件加入至專案的功能檔。
@@ -40,7 +40,7 @@ ms.locfileid: "86015256"
 4. 在 [ **選取元件** ] 清單中，選擇自訂群組件。
 
     > [!NOTE]
-    > 只有當您已加入包含元件之專案的參考時，元件才會出現在 [ **指派參考的元件至 lobsystem** ] 對話方塊中。 如需詳細資訊，請參閱 [如何：使用加入參考對話方塊加入或移除參考](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。
+    > 只有當您已加入包含元件之專案的參考時，元件才會出現在 [ **指派參考的元件至 lobsystem** ] 對話方塊中。 如需詳細資訊，請參閱 [如何：使用加入參考對話方塊加入或移除參考](/previous-versions/wkze6zky(v=vs.140))。
 
 5. 在 [ **參考屬性** ] 群組中，開啟針對 [ **LobSystem 範圍** ] 屬性顯示的清單，選擇使用自訂群組件之方法的 LOB 系統，然後選擇 [ **確定]** 按鈕。
 

@@ -1,18 +1,18 @@
 ---
 title: 使用產品金鑰 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 03/09/2020
+ms.date: 09/18/2020
 ms.topic: conceptual
 description: 了解如何取得及管理您的 Visual Studio 訂用帳戶產品金鑰。
-ms.openlocfilehash: 10b09275dc1ba3d20e47c097888677e733e21ced
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a7a2551b98672332af88210a0347c9ee3faf2cc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183921"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809155"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的產品金鑰
 
@@ -52,12 +52,12 @@ Microsoft 承諾保護 Visual Studio 訂用帳戶方案的完整性，以及該�
 部分產品將該產品的多重版本包裝為單一下載。 在這種情況下，輸入的產品金鑰會決定要安裝的產品版本。
 有的金鑰會自動提供，例如「靜態」金鑰，因為它不需要啟用，所以您可以不限次數地使用。 有的金鑰則必須選取產品的 [取得金鑰]**** 連結才能領取。
 > [!div class="mx-imgBorder"]
-> ![從下載頁面取得金鑰](_img/product-keys/download-get-key.png)
+> ![從下載頁面取得金鑰](_img/product-keys/download-get-key.png "按一下 [取得金鑰]，索取您要下載之產品的金鑰。")
 
 [產品金鑰](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)頁面也彙總提供所有金鑰。 在此頁面上，您可以找到適用於產品所有使用者的靜態金鑰、取得僅供您使用的自訂金鑰、查看金鑰索取限制的狀態，以及匯出您所有的產品金鑰。 
 
 > [!div class="mx-imgBorder"]
-> ![[產品金鑰] 頁面](_img/product-keys/product-keys-page.png)
+> ![[產品金鑰] 頁面](_img/product-keys/product-keys-page.png "[產品金鑰] 頁面提供您特定訂用帳戶的完整產品金鑰資訊。")
 
 根據產品提供各種金鑰類型。
 
@@ -66,7 +66,7 @@ Microsoft 承諾保護 Visual Studio 訂用帳戶方案的完整性，以及該�
 |    索引鍵類型           |    說明                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    不適用                    |    安裝這個產品並不需要任何金鑰。                                                       |
-|    Retail                     |    零售金鑰允許多次啟用，並且用於產品的零售版本。 在許多情況下，每一個金鑰可允許啟用產品 10 次，不過通常同一部機器可以允許啟用更多次。                                                       |
+|    零售                     |    零售金鑰允許多次啟用，並且用於產品的零售版本。 在許多情況下，每一個金鑰可允許啟用產品 10 次，不過通常同一部機器可以允許啟用更多次。                                                       |
 |    多次啟用        |    多次啟用金鑰 (MAK) 可讓您使用相同的金鑰啟用某產品的多重安裝。 MAK 一般是與產品的大量授權版本搭配使用。 每份訂用帳戶通常只提供一組 MAK 金鑰。    |
 |    靜態啟用金鑰    |    靜態啟用金鑰是針對不需要啟用的產品而提供。 可以不限次數用於安裝。                                                                                                                  |
 |    自訂金鑰                 |    自訂金鑰提供特殊動作或資訊來啟用或安裝產品。                                                                                                                                                                |

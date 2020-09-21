@@ -505,7 +505,7 @@
         - name: 程式碼樣式
           items:
             - name: 程式碼樣式喜好設定
-              href: /visualstudio/ide/code-styles-and-code-cleanup
+              href: ./ide/code-styles-and-code-cleanup.md
             - name: 使用 EditorConfig 檔案作為程式碼樣式
               displayName: Configure code style analyzers
               href: ide/create-portable-custom-editor-options.md
@@ -1070,7 +1070,7 @@
           href: ide/reference/immediate-window.md
         - name: 其他檔案
           href: ide/reference/miscellaneous-files.md
-        - name: 選項。
+        - name: 選項
           items:
             - name: 選項對話方塊
               href: ide/reference/options-dialog-box-visual-studio.md
@@ -1194,7 +1194,7 @@
                       href: ide/reference/options-text-editor-javascript-intellisense.md
                     - name: 進行 Lint 檢查
                       href: ide/reference/options-text-editor-javascript-linting.md
-                    - name: 隨附此逐步解說的專案
+                    - name: 專案
                       href: ide/reference/options-text-editor-javascript-project.md
                 - name: U-SQL
                   items:

@@ -1,5 +1,6 @@
 ---
-title: 如何：變更圖形診斷播放電腦 |Microsoft Docs
+title: 變更圖形診斷播放電腦
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f057e2e4f9d39fd3c5d985b3f0d19751d508614
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7b7f3f09495b760d4ee3ab8c20781bc337b1bb2
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769380"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810688"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>作法：變更圖形診斷播放電腦
 您可以使用本機電腦，或使用遠端電腦或裝置來播放圖形資訊。

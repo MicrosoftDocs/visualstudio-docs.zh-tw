@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 287ef3ccfd344786bd98098c5f28d0a2bd6573f6
+ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62896616"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90832316"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中 c + + 的格式規範
 您可以使用格式規範變更在 [**監看式]、[** 自動變數]**和 [****區域變數**] 視窗中顯示值的格式。
@@ -78,7 +78,7 @@ int main() {
 |bb|不帶正負號的二進位整數 (不含前置的 0b)|25|00000000000000000000000000011001|
 |e|科學記號標記法|25000000|2.500000e+07|
 |g|科學記號或浮點數中較短者|25000000|2.5e+07|
-|c|單一字元|0x0065, c|101 'e'|
+|c|單一字元|0x0065|101 'e'|
 |s|以引號括住的 const char * 字串 () |\<location> "hello world"|"hello world"|
 |**某人**|const char* 字串 (無引號)|\<location> "hello world"|hello world|
 |s8|UTF-8 字串|\<location> 「這是 UTF-8 咖啡杯̃•」|「這是 UTF-8 咖啡杯☕」|
@@ -153,10 +153,10 @@ int main() {
 |**u**|不帶正負號的十進位整數|0x0065|101|
 |o|不帶正負號的八進位整數|0xF065|0170145|
 |x<br /><br />X|十六進位整數|61541|0x0000f065|
-|**我**<br /><br />**h**|長整數或短整數前置詞，用於：d、i、u、o、x、X|00406042|0x0c22|
-|**F**|帶正負號的浮點數|(3./2.), f|1.500000|
+|**l**<br /><br />**h**|長整數或短整數前置詞，用於：d、i、u、o、x、X|00406042|0x0c22|
+|**f**|帶正負號的浮點數|(3./2.), f|1.500000|
 |**pci-e**|帶正負號的科學記號表示法|(3.0/2.0)|1.500000e+000|
-|**G**|帶正負號的浮點數或帶正負號的科學記號<br/> 以較短者為准|(3.0/2.0)|1.5|
+|**g**|帶正負號的浮點數或帶正負號的科學記號<br/> 以較短者為准|(3.0/2.0)|1.5|
 |c|單一字元|\<location>|101 'e'|
 |s|const char * (加上引號) |\<location>|"hello world"|
 |su|const wchar_t*<br /><br /> 以引號括住的 const char16_t \* () |\<location>|L"hello world"|

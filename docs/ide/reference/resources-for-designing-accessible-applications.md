@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49963df35aa5bebd126aa241fca6cb1712a0b111
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70107841"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808990"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>設計無障礙應用程式的資源
 
@@ -48,9 +48,9 @@ ms.locfileid: "70107841"
 
 ## <a name="websites"></a>網站
 
-- [逐步解說：使用影像控制項、功能表控制項和 AutoPostBack 的可及性方針](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202)：本文提供在網頁範例中包含可存取控制項的逐步指示。 其亦提供 Web 的一些協助工具設計祕訣。
+- [逐步解說：使用影像控制項、功能表控制項和 AutoPostBack 的可及性方針](/previous-versions/3has1x30(v=vs.140))：本文提供在網頁範例中包含可存取控制項的逐步指示。 其亦提供 Web 的一些協助工具設計祕訣。
 
-- **Creating Accessible Web Pages with DHTML** (建立含有 DHTML 的可存取網頁)：此技術文章列出可存取的 HTML 4.0 元素以及可存取的 Web 設計祕訣。 如需詳細資訊，請參閱 [Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx) (建立具有 DHTML 的可存取網頁)。
+- **Creating Accessible Web Pages with DHTML** (建立含有 DHTML 的可存取網頁)：此技術文章列出可存取的 HTML 4.0 元素以及可存取的 Web 設計祕訣。 如需詳細資訊，請參閱 [Create accessible web pages with DHTML](/previous-versions//ms528445(v=vs.85)) (建立具有 DHTML 的可存取網頁)。
 
 ### <a name="third-party-resources"></a>協力廠商資源
 

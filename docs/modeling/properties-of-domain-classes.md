@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2865e6a6d410d661bc628fd9c7f1947516485018
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b3ff1ece9e57239b49c5dcbef5091a14d8b0fa5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544179"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810024"
 ---
 # <a name="properties-of-domain-classes"></a>網域類別的屬性
 網域類別具有下表中的屬性。 如需網域類別的詳細資訊，請參閱 [瞭解模型、類別和關聯](../modeling/understanding-models-classes-and-relationships.md)性。 如需有關如何使用這些屬性的詳細資訊，請參閱 [自訂和擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
@@ -27,13 +27,13 @@ ms.locfileid: "85544179"
 |具有自訂的函式|如果為 `True` ，則會在原始程式碼中提供自訂的函式。 如需詳細資訊，請參閱覆 [寫和擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。|`False`|
 |繼承修飾詞|描述從網域類別產生之原始程式碼類別的繼承類型 (`none` `abstract` 或 `sealed`) 。|`none`|
 |基類|如果衍生這個網域類別，則為基類的名稱。|\<none>|
-|Name|這個網域類別的名稱。|目前的名稱|
+|[屬性]|這個網域類別的名稱。|目前的名稱|
 |命名空間|這個網域類別的命名空間。|目前的命名空間|
-|附註|與此網域類別相關聯的非正式附注。|\<none>|
+|備註|與此網域類別相關聯的非正式附注。|\<none>|
 |描述|用來記錄所產生設計工具 UI 的描述。|\<none>|
 |顯示名稱|將在為這個網域類別產生的設計工具中顯示的名稱。|\<none>|
 |說明關鍵字|選擇性的關鍵字，用來為這個網域類別的 F1 說明編制索引。|\<none>|
 
 ## <a name="see-also"></a>另請參閱
 
-- [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
+- [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef80ac1c7e64eb3591e2e6b09de97c77a26e46f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d9f2446aa793fcd80c3c6786bf1b2002a7ccbc0
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532363"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808073"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Domain-Specific Language Tools 概觀
 特定領域語言工具 (DSL 工具) （裝載于 Visual Studio 中）可讓您設計特定領域語言，然後產生使用者必須擁有的所有專案，才能建立以該語言為基礎的模型。
@@ -77,4 +77,4 @@ ms.locfileid: "85532363"
 ## <a name="see-also"></a>另請參閱
 
 - [實驗執行個體](../extensibility/the-experimental-instance.md)
-- [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
+- [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

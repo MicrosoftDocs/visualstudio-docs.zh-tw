@@ -1,6 +1,6 @@
 ---
-title: 將分析工具附加至 .NET Framework 獨立應用程式；取得應用程式統計資料
-ms.custom: seodec18
+title: 將分析工具附加至 .NET 獨立應用程式;取得應用程式統計資料
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: b62fcbc1-791f-474e-890a-a6c332e0c9ea
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 68450129d9bb3e9e67793c0a4155e953abbccc3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89c7f4141459f612f55a2253e37a6e56349fcb6a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531803"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808047"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令列將分析工具附加至 .NET Framework 獨立應用程式並收集應用程式統計資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加到執行中的 .NET Framework 獨立 (用戶端) 應用程式，並使用取樣方法收集效能統計資料。
@@ -53,7 +53,7 @@ ms.locfileid: "85531803"
 
      您可以使用下列任一選項搭配 **/start:sample** 選項。
 
-   | 選項 | 說明 |
+   | 選項 | 描述 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **：**[ `Domain` **\\** ]`UserName` | 針對擁有已分析處理序的帳戶，指定帳戶的選擇性網域和使用者名稱。 只有在受分析應用程式以不是登入的使用者啟動時，才需要此選項。 |
    | [/crosssession](../profiling/crosssession.md) | 在其他登入工作階段啟用處理序程式碼剖析。 **/crosssession** 可縮寫成 **/CS**。 如果應用程式在不同的工作階段中執行，則需要這個選項。 |
@@ -73,7 +73,7 @@ ms.locfileid: "85531803"
 
    - 根據預設，每經過 10,000,000 個未暫止處理器時脈週期，會取樣一次效能資料。 在 1GH 處理器上，這大約是每 10 秒一次。 您可以指定下列其中一個選項來變更頻率週期間隔，或指定不同的取樣事件。[/targetclr](../profiling/targetclr.md)**：** `Version` 指定在應用程式中載入多個版本的執行時間時要分析的 CLR 版本。 選擇性。
 
-   |範例事件|說明|
+   |範例事件|描述|
    |-|-|
    |[/timer](../profiling/timer.md) **：**`Interval`|將取樣間隔變更為 `Interval` 指定的未暫止時脈週期數。|
    |[/pf](../profiling/pf.md) [**：** `Interval` ]|將取樣事件變更為分頁錯誤。 如果指定 `Interval`，請設定樣本間的分頁錯誤數。 預設值為 10。|
@@ -87,7 +87,7 @@ ms.locfileid: "85531803"
 
 - 下列成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
-    |選項|說明|
+    |選項|描述|
     |------------|-----------------|
     |[/globalon/globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|
     |[/processon](../profiling/processon-and-processoff.md) **：** `PID` [/processoff](../profiling/processon-and-processoff.md) **：**`PID`|開始 (**/processon**) 或停止 (**/processoff**) 對 `PID` 指定的處理序收集資料。|

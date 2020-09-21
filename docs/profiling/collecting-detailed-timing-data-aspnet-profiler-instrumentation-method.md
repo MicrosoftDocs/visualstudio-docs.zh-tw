@@ -1,5 +1,6 @@
 ---
-title: '>vsperfcmd-使用檢測來取得 ASP.NET web 應用程式的計時資料'
+title: 使用檢測收集計時資料以進行 ASP.NET
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 55f682152731391bdb0d4c0de0a307c00c16e2c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a73d81eaaef45a9ae97e733a8ae94805106a9ef8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331841"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809631"
 ---
 # <a name="collect-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>從命令列使用分析工具檢測方法以收集 ASP.NET Web 應用程式的詳細計時資料
 本節描述使用 **VSPerfCmd** 命令列工具及檢測方法收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式詳細效能資料的程序和選項。
@@ -27,7 +28,7 @@ ms.locfileid: "85331841"
 
 ## <a name="common-tasks"></a>常見工作
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |**分析靜態編譯的二進位檔**|-   [如何：檢測靜態編譯的 ASP.NET 應用程式並收集詳細計時資料](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)|
 |**分析動態編譯的二進位檔**|-   [如何：檢測動態編譯的 ASP.NET 應用程式並收集詳細計時資料](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)|
@@ -36,7 +37,7 @@ ms.locfileid: "85331841"
 
 ### <a name="profile-aspnet-web-applications"></a>分析 ASP.NET Web 應用程式
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |**使用取樣方法進行分析**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
 |**分析記憶體配置和記憶體回收**|-   [收集記憶體資料](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|
@@ -44,7 +45,7 @@ ms.locfileid: "85331841"
 
 ### <a name="profile-by-using-the-instrumentation-method"></a>使用檢測方法進行分析
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |**分析獨立 (用戶端) 應用程式**|-   [使用檢測設備收集詳細計時資料](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
 |**分析服務**|-   [使用檢測設備收集詳細計時資料](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|

@@ -1,0 +1,64 @@
+---
+title: 需要-dotnetframeworksdk
+description: devinit 工具需要-dotnetframeworksdk。
+ms.date: 08/28/2020
+ms.topic: reference
+author: andster
+ms.author: andster
+manager: jillfra
+ms.workload:
+- multiple
+monikerRange: '>= vs-2019'
+ms.prod: visual-studio-windows
+ms.technology: devinit
+ms.openlocfilehash: c9e27883bda455794429221af436af1fe39229fc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809683"
+---
+# <a name="require-dotnetframeworksdk"></a>需要-dotnetframeworksdk
+
+此 `require-dotnetframeworksdk` 工具是用來透過[提供的安裝](https://dotnet.microsoft.com/download/visual-studio-sdks)程式來安裝[.NET Framework SDK](https://dotnet.microsoft.com/) 。
+
+## <a name="usage"></a>使用方式
+
+如果 `input` 和 `additionalOptions` 屬性都省略或空白，則工具將會遵循以下詳述的 [預設](#default-behavior) 行為。
+
+| 名稱                                             | 類型   | 必要  | 值                                                                                    |
+|--------------------------------------------------|--------|-----------|------------------------------------------------------------------------------------------|
+| **評論**                                     | 字串 | No        | 選擇性批註屬性。 未使用。                                                    |
+| [**輸入**](#input)                              | 字串 | No        | 要安裝的 .NET Framework SDK 版本。 如需詳細資料，請參閱下列 [輸入](#input) 。 |
+| [**additionalOptions**](#additional-options)     | 字串 | No        | 未使用。 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。               |
+
+### <a name="input"></a>輸入
+
+`input`屬性可用來指定要安裝的 .NET FRAMEWORK SDK 版本。 您可以在 [dotnet 架構網站](https://dotnet.microsoft.com/download/visual-studio-sdks)上找到版本清單。
+
+### <a name="additional-options"></a>其他選項
+
+未使用。
+
+### <a name="default-behavior"></a>預設行為
+
+此工具的預設行為 `require-dotnetframeworksdk` 是安裝最新版本。 如需最新版本，請參閱所 [提供的安裝](https://dotnet.microsoft.com/download/visual-studio-sdks) 程式。
+
+## <a name="example-usage"></a>使用方式範例
+
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "run": [
+        {
+            "comments": "Example that will install a specific version of the .NET Framework SDK.",
+            "tool": "require-dotnetframeworksdk",
+            "input": "4.8.0"
+        },
+        {
+            "comments": "Example that will install the latest version of the .NET Framework SDK.",
+            "tool": "require-dotnetframeworksdk"
+        }
+    ]
+}
+```

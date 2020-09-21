@@ -1,5 +1,6 @@
 ---
-title: 如何-指定 ClickOnce 發行的檔案 |Microsoft Docs
+title: 指定要發佈 (ClickOnce) 的檔案
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7ab6d724b40168f84227edb6ccfafc6245c30e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: afa77b8a69151509455e149c168cbf94e5ad56f8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381778"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809488"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>如何：指定哪些檔案是由 ClickOnce 發行
 發行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，專案中的所有非程式碼檔案都會隨著應用程式一起部署。 在某些情況下，您可能不想要或不需要發佈特定檔案，或者您可能會想要根據條件安裝某些檔案。 Visual Studio 提供排除檔案、將檔案標示為資料檔案或必要條件，以及建立條件式安裝的檔案群組的功能。

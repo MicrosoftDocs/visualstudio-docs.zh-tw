@@ -10,12 +10,12 @@ f1_keywords:
 manager: jillfra
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 0ab7f2d9fac02cf370e7b3803adc7fd3016d22ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c62a10e87b3a866956e4818a3b279eb0d4b833e
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800446"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808229"
 ---
 # <a name="f1-help"></a>F1 說明
 
@@ -25,7 +25,7 @@ ms.locfileid: "88800446"
 
 如果您要尋找視窗、關鍵字或 API 名稱的 F1 說明：
 
-- 嘗試在[docs.microsoft.com](https://docs.microsoft.com)上搜尋
+- 嘗試在[docs.microsoft.com](/)上搜尋
 - 嘗試使用搜尋引擎進行搜尋。
 
 ## <a name="find-help-on-a-keyword-or-api"></a>尋找關鍵字或 API 的說明
@@ -41,7 +41,7 @@ ms.locfileid: "88800446"
 
 如果您想要變更 F1 的按鍵對應，請參閱 [變更 f1 說明鍵](../not-in-toc/change-f1-help-key.md)。
 
-## <a name="useful-links"></a>實用的連結
+## <a name="useful-links"></a>實用連結
 
 - 在 [.NET API 瀏覽器](/dotnet/api/)上尋找參考文件。
 - 如需 Visual Studio 文字編輯器的說明，請參閱[使用程式碼編輯器](../../ide/writing-code-in-the-code-and-text-editor.md)。

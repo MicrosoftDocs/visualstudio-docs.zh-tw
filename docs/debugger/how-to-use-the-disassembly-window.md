@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0570aec5e8571e75cf64418a2c8c7c95cf507d31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23f297aa3fc549714a9b6327232a8a0b69c6138f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348700"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808164"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 偵錯工具中查看反組解碼程式碼 (c #、c + +、Visual Basic、F # ) 
 
@@ -58,7 +58,7 @@ ms.locfileid: "85348700"
 
 ## <a name="use-the-disassembly-window"></a>使用反組譯碼視窗
 
-若要啟用 **[反**組解碼] 視窗，請在 [**工具**  >  **選項**] (或 [**工具**  >  **選項**]) >**調試**] 下，選取 [**啟用位址層級調試**
+若要啟用 **[反**組解碼] 視窗，請在 [**工具**  >  **選項**  >  **調試**] 底下，選取 [**啟用位址層級的調試**
 
 若**要在調試期間開啟 [反**組解碼] 視窗，請選取 [ **Windows**反組解碼]  >  **Disassembly**或按**Alt** + **8**
 

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 247567030d47a55b29a3fca901e12948ddd85916
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c6761e74e68bad1ef800246d400c79b9689a18c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533753"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809068"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>新增其他語言的 Visual Studio 編輯器支援
 
@@ -73,7 +73,7 @@ Visual Studio 目前使用 [TextMate 文法](https://manual.macromates.com/en/la
 - TypeScript
 - YAML
 
-除了語法顏色標示和基本陳述式完成之外，Visual Studio 也有一項稱為 [「巡覽至」](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/)的功能。 這項功能可讓您快速搜尋程式碼檔案、檔案路徑和程式碼符號。 Visual Studio 提供下列語言版本的「巡覽至」支援。
+除了語法顏色標示和基本陳述式完成之外，Visual Studio 也有一項稱為 [「巡覽至」](/archive/blogs/benwilli/visual-studio-tip-3-use-navigate-to)的功能。 這項功能可讓您快速搜尋程式碼檔案、檔案路徑和程式碼符號。 Visual Studio 提供下列語言版本的「巡覽至」支援。
 
 - C#
 
@@ -103,7 +103,7 @@ Visual Studio 藉由使用 [TextMate 文法](https://manual.macromates.com/en/la
 
 如果適用於您的情況，在此基底路徑下，新增下列資料夾︰
 
-|資料夾名稱|說明|
+|資料夾名稱|描述|
 |-----------------|-----------------|
 |\\*\<language name>*|語言資料夾。 取代 *\<language name>* 為語言的名稱。 例如 *\Matlab*。|
 |*\Syntaxes*|文法資料夾。 包含語言的 *文法檔案* ，例如 *Matlab.json*。|

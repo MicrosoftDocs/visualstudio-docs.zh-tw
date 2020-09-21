@@ -1,29 +1,29 @@
 ---
-title: 效能警告
+title: 效能規則
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.performancerules
 helpviewer_keywords:
-- warnings, performance
-- performance warnings
-- performance, warnings
-- managed code analysis warnings, performance warnings
+- rules, performance
+- performance rules
+- performance, rules
+- managed code analysis rules, performance rules
 ms.assetid: e014ac3a-02e6-46d9-942c-3491dd63782f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83e798b3a47d6a9d606e3c25768895096f752f53
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 7ee44b74ca47de8059b68d95ea5e06c801842bc7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508986"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808567"
 ---
-# <a name="performance-warnings"></a>效能警告
-效能警告支援高效能程式庫和應用程式。
+# <a name="performance-rules"></a>效能規則
+效能規則支援高效能程式庫和應用程式。
 
 ## <a name="in-this-section"></a>本節內容
 
@@ -52,7 +52,7 @@ ms.locfileid: "89508986"
 | [CA1831：在適用情況下，請使用 AsSpan 做為字串，不要使用範圍型的索引子](../code-quality/ca1831.md) | 在字串上使用範圍索引子，並將值隱含指派給 ReadOnlySpan &lt; char 類型時 &gt; ， <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> 將會使用方法，而不是 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ，這會產生字串的要求部分複本。 |
 | [CA1832：請使用 AsSpan 或 AsMemory 來取得陣列的 ReadOnlySpan 或 ReadOnlyMemory 部分，不要使用範圍型的索引子](../code-quality/ca1832.md) | 在陣列上使用範圍索引子，並將值隱含地指派給 <xref:System.ReadOnlySpan%601> 或 <xref:System.ReadOnlyMemory%601> 類型時，將會 <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用方法，而不是 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ，這會產生陣列所要求部分的複本。 |
 | [CA1833：請使用 AsSpan 或 AsMemory 取得陣列的 Span 或 Memory 部分，不要使用範圍型的索引子](../code-quality/ca1833.md) | 在陣列上使用範圍索引子，並將值隱含地指派給 <xref:System.Span%601> 或 <xref:System.Memory%601> 類型時，將會 <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用方法，而不是 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ，這會產生陣列所要求部分的複本。 |
-| [CA1834：使用 StringBuilder。針對單一字元字串附加 (char) ](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder> 具有 `Append` 接受 `char` 作為其引數的多載。 偏好呼叫多載 `char` 以改善效能。 |
+| [CA1834：針對單一字元字串使用 StringBuilder.Append(char)](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder> 具有 `Append` 接受 `char` 作為其引數的多載。 偏好呼叫多載 `char` 以改善效能。 |
 | [CA1835：偏好 ' System.io.stream.readasync ' 和 ' System.io.stream.writeasync ' 以 Memory' 為基礎的多載](../code-quality/ca1835.md) | ' Stream ' 有一個 ' System.io.stream.readasync ' 多載，它會接受 ' Memory &lt; byte &gt; ' 做為第一個引數，並使用 ' system.io.stream.writeasync ' 多載（接受 ' ReadOnlyMemory &lt; Byte &gt; ' 做為第一個引數）。 偏好呼叫以記憶體為基礎的多載，這些多載較有效率。 |
 | [CA1836：優先 `IsEmpty` `Count` 使用](../code-quality/ca1836.md) | 偏好 `IsEmpty` 比、或更有效率的屬性， `Count` `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> 以判斷物件是否包含任何專案。 |
 | [CA1837：使用 `Environment.ProcessId` 而非 `Process.GetCurrentProcess().Id`](../code-quality/ca1837.md) | `Environment.ProcessId` 比更簡單且更快速 `Process.GetCurrentProcess().Id` 。 |

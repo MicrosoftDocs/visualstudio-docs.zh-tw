@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fea425da8a6e49643997151c6273fbbffc7033db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceaa4db4bb31870ee66fbffae8882fc93d9abbb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016503"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739911"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>逐步解說：使用專案範本建立網站資料行專案專案（第1部分）
   SharePoint 專案是一個或多個 SharePoint 專案專案的容器。 您可以建立自己的 SharePoint 專案專案類型，然後將它們與專案範本產生關聯，藉以擴充 Visual Studio 中的 SharePoint 專案系統。 在這個逐步解說中，您將會定義用來建立網站資料行的專案專案類型，然後您將建立專案範本，可用來建立包含網站資料行專案專案的新專案。
@@ -40,7 +40,7 @@ ms.locfileid: "86016503"
 > [!NOTE]
 > 如需一系列的範例工作流程，請參閱 [SharePoint workflow 範例](/sharepoint/dev/general-development/sharepoint-workflow-samples)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
  您需要在開發電腦上執行下列元件，才能完成此逐步解說：
 
 - 支援的 Microsoft Windows 版本、SharePoint 和 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
@@ -639,7 +639,7 @@ ms.locfileid: "86016503"
 
 1. 在 **方案總管**的 **SiteColumnProjectItem** 專案中，在資訊清單編輯器中開啟 extension.vsixmanifest 檔案。
 
-     Extension.vsixmanifest 檔案是所有 VSIX 封裝所需的 extension.vsixmanifest 檔案基礎。 如需此檔案的詳細資訊，請參閱 [VSIX 延伸架構1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。
+     Extension.vsixmanifest 檔案是所有 VSIX 封裝所需的 extension.vsixmanifest 檔案基礎。 如需此檔案的詳細資訊，請參閱 [VSIX 延伸架構1.0 參考](/previous-versions/dd393700(v=vs.110))。
 
 2. 在 [ **產品名稱** ] 方塊中，輸入 **Site 資料行**。
 

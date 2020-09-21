@@ -1,5 +1,6 @@
 ---
-title: 設定 ClickOnce 部署錯誤的自訂記錄檔位置
+title: '設定自訂記錄檔位置 (ClickOnce 部署錯誤) '
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05ffd1cf32f8c7ea93e63232f7026c6c926f9308
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5b5cf73a685eb68e389e6531022200acbefbfd2
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382168"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809738"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>How to: Set a custom log file location for ClickOnce deployment errors (如何：設定 ClickOnce 部署錯誤的自訂記錄檔位置)
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 維護所有部署的啟用記錄檔。 這些記錄會記錄有關安裝和初始化部署的任何錯誤 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 依預設，會 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 為每個部署啟用建立一個記錄檔。 它會將這些記錄檔儲存在 [Temporary Internet Files] 資料夾中。 當啟用失敗時，使用者會看到部署的記錄檔，而使用者會在產生的錯誤對話方塊中按一下 [ **詳細資料** ]。

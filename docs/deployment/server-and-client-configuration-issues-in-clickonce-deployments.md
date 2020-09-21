@@ -1,5 +1,6 @@
 ---
-title: ClickOnce 部署中的伺服器/用戶端設定問題
+title: " (ClickOnce) 的伺服器/用戶端設定問題"
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ec07e71e57c0b3875d690773b7ff2618269b8f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9af8b864092f56150ff71d0e23b0bf59280aeb6c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250003"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811230"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的伺服器和用戶端組態問題
 如果您在 Windows Server 上使用 Internet Information Services (IIS) ，而您的部署包含 Windows 無法辨識的檔案類型，例如 Microsoft Word 檔案，IIS 將拒絕傳輸該檔案，而且您的部署將不會成功。

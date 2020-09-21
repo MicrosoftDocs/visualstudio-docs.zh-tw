@@ -1,5 +1,6 @@
 ---
-title: 如何-指定 ClickOnce 離線或線上安裝模式 |Microsoft Docs
+title: '指定離線或線上安裝模式 (ClickOnce) '
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcd9eeedfdd2a4661e3744da369a6fadc11039a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 896d2218237b884d9483496e0adac157a6e26fd3
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381752"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808733"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>How to: Specify the ClickOnce offline or online install mode (如何：指定 ClickOnce 離線或線上安裝模式)
 `Install Mode` [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式會決定應用程式是否可離線或在線上使用。 當您選擇 **[應用程式只能在線上使用**] 時，使用者必須能夠存取 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 發佈位置 (網頁或檔案共用) ，才能執行應用程式。 當您選擇 **應用程式**時，應用程式也會在 [ **開始** ] 功能表和 [ **新增或移除程式** ] 對話方塊中加入專案。當應用程式未連線時，使用者可以執行該應用程式。

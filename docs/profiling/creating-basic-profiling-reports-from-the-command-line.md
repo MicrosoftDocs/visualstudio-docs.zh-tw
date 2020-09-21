@@ -1,5 +1,6 @@
 ---
-title: 從命令列建立基本的分析報告 | Microsoft Docs
+title: 分析命令列-建立基礎報表
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bca944b67b19fdbb4138c479acf5693994d1c717
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9ee74732c917ee4267e08f7ff1c60715971ed71
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329051"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808847"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>從命令列建立基本的分析報表
 本文描述基本的 VSPerfReport 命令，它們會從 .*vsp* 或 .*vsps* 分析資料檔案產生逗號分隔值 (.*csv*) 的報表。 如需所有報表選項的說明，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。
@@ -45,7 +46,7 @@ ms.locfileid: "85329051"
 |**模組**|列出模組的分析資料。|-   [取樣資料](../profiling/modules-view-sampling-data.md)<br />-   [檢測資料](../profiling/modules-view-instrumentation-data.md)<br />-   [.NET 記憶體取樣資料](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [.NET 記憶體檢測資料](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [爭用資料](../profiling/modules-view-contention-data.md)|
 |**處理**|列出處理序的分析資料。|-   [進程視圖](../profiling/process-view.md)<br />-   [爭用資料](../profiling/process-view-contention-data.md)|
 |**執行緒**|列出執行序的分析資料。|-   [進程視圖](../profiling/process-view.md)|
-|**類型**|依類型列出配置的分析資料。|-   [配置視圖](../profiling/dotnet-memory-allocations-view.md)|
+|**型別**|依類型列出配置的分析資料。|-   [配置視圖](../profiling/dotnet-memory-allocations-view.md)|
 |**爭論**|資源爭用。|-   [資源爭用](../profiling/resource-contentions-view-contention-data.md)|
 |**RuleWarnings**|列出效能規則問題。|-   列出規則問題的 CheckId、描述和原始程式碼位置。|
 |**ETW**|列出分析執行中所收集的 Windows 事件追蹤 (ETW) 事件。|-   [ETW 報表](../profiling/event-tracing-for-windows-etw-report.md)|

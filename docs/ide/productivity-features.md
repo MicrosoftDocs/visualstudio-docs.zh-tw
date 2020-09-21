@@ -7,12 +7,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa4a768f8ebd8b39918fa3ba51d4eb9b3f773151
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a10b1f9b3dd6dda643a2775cf7b89221fba71d8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219760"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808138"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Visual Studio 的生產力指南
 
@@ -32,9 +32,9 @@ ms.locfileid: "89219760"
 
 - **讓 Visual Studio 更容易存取**。 Visual Studio 有與螢幕助讀程式和其他輔助技術相容的內建協助工具功能。 如需可用功能的完整清單，請參閱 [Visual Studio 的協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md) 。 
 
-- **查看 Visual Studio 產品生命週期和服務**。 如需有關如何取得 Visual Studio 的更新、企業和專業客戶的支援選項、支援舊版的 Visual Studio，以及 Visual Studio 服務未涵蓋的元件，請參閱 [Visual Studio 產品生命週期和服務](https://docs.microsoft.com/visualstudio/releases/2019/servicing)。 
+- **查看 Visual Studio 產品生命週期和服務**。 如需有關如何取得 Visual Studio 的更新、企業和專業客戶的支援選項、支援舊版的 Visual Studio，以及 Visual Studio 服務未涵蓋的元件，請參閱 [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing)。 
 
-- **在 Visual Studio 中安裝和管理 NuGet 套件**。 Visual Studio 中的 NuGet 套件管理員 UI 可讓您在專案和解決方案中，輕鬆地安裝、解除安裝和更新 NuGet 套件。 如需詳細資訊，請參閱 [使用 NuGet 封裝管理員在 Visual Studio 中安裝和管理套件](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)。
+- **在 Visual Studio 中安裝和管理 NuGet 套件**。 Visual Studio 中的 NuGet 套件管理員 UI 可讓您在專案和解決方案中，輕鬆地安裝、解除安裝和更新 NuGet 套件。 如需詳細資訊，請參閱 [使用 NuGet 封裝管理員在 Visual Studio 中安裝和管理套件](/nuget/consume-packages/install-use-packages-visual-studio)。
 
 ## <a name="write-code"></a>撰寫程式碼
 
@@ -60,7 +60,7 @@ ms.locfileid: "89219760"
 
 - **使用範例應用程式**。 您可以從 [Microsoft Developer Network](https://code.msdn.microsoft.com/) 下載和安裝範例應用程式，來加速應用程式開發。 您也可以下載和探索該區域的範例套件，學習特定技術或程式設計概念。
 
-- **以格式化/新行變更大括弧格式**。 您可以使用 [ **格式化**  選項] 頁面，設定在程式碼編輯器中格式化程式碼的選項，包括新的行。 如需有關如何在 c # 中使用這項設定的詳細資訊，請參閱 [選項對話方塊：文字編輯器 > c # > 程式碼樣式 > 格式](../ide/reference/options-text-editor-csharp-formatting.md)。 針對 c + +，請參閱 [Visual Studio 中的設定 c + + 程式碼偏好設定](https://docs.microsoft.com/cpp/ide/how-to-set-preferences)。 針對 Python，請參閱 [格式化 python 程式碼](../python/formatting-python-code.md)。
+- **以格式化/新行變更大括弧格式**。 您可以使用 [ **格式化**  選項] 頁面，設定在程式碼編輯器中格式化程式碼的選項，包括新的行。 如需有關如何在 c # 中使用這項設定的詳細資訊，請參閱 [選項對話方塊：文字編輯器 > c # > 程式碼樣式 > 格式](../ide/reference/options-text-editor-csharp-formatting.md)。 針對 c + +，請參閱 [Visual Studio 中的設定 c + + 程式碼偏好設定](/cpp/ide/how-to-set-preferences)。 針對 Python，請參閱 [格式化 python 程式碼](../python/formatting-python-code.md)。
 
 - **使用 Tab 鍵變更縮排**。 使用針對每個程式碼基底量身打造的自訂編輯器設定，為多個開發人員在不同的編輯器和 Ide 中處理相同的專案，強制執行一致的編碼樣式。 確定您的整個小組遵循相同的語言慣例、命名慣例和格式化規則。 由於這些自訂設定是可移植的，並且會隨著您的程式碼旅行，因此即使在 Visual Studio 之外，也可以強制執行編碼樣式。 如需詳細資訊，請參閱 [選項、文字編輯器、所有語言、](../ide/reference/options-text-editor-all-languages-tabs.md#tabs)索引標籤。
 
@@ -118,7 +118,7 @@ ms.locfileid: "89219760"
 
 - **使用 Visual Studio 偵錯工具工具**。 在 Visual Studio 內容中，當您 *對應用程式進行調試*程式時，通常表示您是在偵錯工具模式中執行應用程式。 偵錯工具會提供許多方法來查看您的程式碼在執行時的執行狀況。 請參閱 [Visual Studio 偵錯工具](../debugger/debugger-feature-tour.md) ，以取得入門指南。 
 
-- **在不同瀏覽器中測試相同頁面、應用程式或網站**。 當您偵錯程式碼時，可以輕鬆地切換包括 [Page Inspector (Visual Studio)](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209) 在內的已安裝網頁瀏覽器，而不需要開啟 [瀏覽方式]**** 對話方塊。 您可以使用 [**偵錯工具目標**] 清單（位於 [**開始調試**程式] 按鈕旁的 [**標準**] 工具列），快速確認您在進行偵錯工具或查看頁面時所使用的瀏覽器。
+- **在不同瀏覽器中測試相同頁面、應用程式或網站**。 當您偵錯程式碼時，可以輕鬆地切換包括 [Page Inspector (Visual Studio)](/previous-versions/hh974728(v=vs.140)) 在內的已安裝網頁瀏覽器，而不需要開啟 [瀏覽方式]**** 對話方塊。 您可以使用 [**偵錯工具目標**] 清單（位於 [**開始調試**程式] 按鈕旁的 [**標準**] 工具列），快速確認您在進行偵錯工具或查看頁面時所使用的瀏覽器。
 
     ![選取網頁瀏覽器偵錯選項](../ide/media/webbrowserdropdowntoolbar.png)
 
@@ -140,7 +140,7 @@ ms.locfileid: "89219760"
 
 - **[尋找 CodeLens 的程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)**。 CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在工作上，且無須離開編輯器。 您可以尋找程式碼片段的參考、程式碼的變更、已連結的錯誤、工作項目、程式碼檢閱和單元測試。
 
-- **使用 Live Share 與其他人即時進行**互動。 Live Share 可讓您即時與他人共同編輯和偵錯，不論您使用的程式設計語言或建置的應用程式類型為何。 如需詳細資訊，請參閱 [什麼是 Visual Studio Live Share？](https://docs.microsoft.com/visualstudio/liveshare/)
+- **使用 Live Share 與其他人即時進行**互動。 Live Share 可讓您即時與他人共同編輯和偵錯，不論您使用的程式設計語言或建置的應用程式類型為何。 如需詳細資訊，請參閱 [什麼是 Visual Studio Live Share？](/visualstudio/liveshare/)
 
 - **使用互動式視窗來撰寫和測試小型程式碼**。 Visual Studio 提供互動式讀取-評估-列印迴圈 (的複寫) 視窗，可讓您輸入任意程式碼並立即查看結果。 這種編碼方式可協助您學習及實驗 Api 和程式庫，並以互動方式開發工作程式碼，以包含在您的專案中。 針對 Python，請參閱使用 [python 互動視窗](../python/python-interactive-repl-in-visual-studio.md)。 互動式視窗功能也適用于 c #。 
 

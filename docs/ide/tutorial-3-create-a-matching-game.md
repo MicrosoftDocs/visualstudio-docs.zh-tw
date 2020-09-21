@@ -9,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 619c21f4878f2e421ee5ac5ea76a68cd6e6bc337
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 399275b64392ab4c6def97eb8c4f6a5bdafb2c4a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579714"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810831"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>教學課程 3：建立配對遊戲
 
@@ -41,7 +41,7 @@ ms.locfileid: "77579714"
 
 ## <a name="tutorial-links"></a>教學課程的連結
 
-|標題|描述|
+|Title|描述|
 |-----------|-----------------|
 |[步驟 1：建立專案並將資料表新增至表單](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|從建立專案並新增 `TableLayoutPanel` 控制項，讓控制項正確對齊開始。|
 |[步驟 2：新增隨機物件與圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|加入 `Random` 物件和 `List` 物件，以建立圖示清單。|
@@ -61,6 +61,6 @@ ms.locfileid: "77579714"
 
 ## <a name="see-also"></a>另請參閱
 
-* [其他 c # 教學課程](/visualstudio/get-started/csharp/)
-* [Visual Basic 教學課程](/visualstudio/get-started/visual-basic/)
+* [其他 c # 教學課程](../get-started/csharp/index.yml)
+* [Visual Basic 教學課程](../get-started/visual-basic/index.yml)
 * [C + + 教學課程](/cpp/get-started/tutorial-console-cpp)

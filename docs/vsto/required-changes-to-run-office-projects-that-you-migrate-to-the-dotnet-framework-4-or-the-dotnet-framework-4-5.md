@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82ae3f8a43b65e6ff617192dc38149691d229455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 773a4dd319d00487b919721bf3390a7d58c8b03c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66836064"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810963"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>執行您遷移至 .NET Framework 4 或 .NET Framework 4.5 之 Office 專案的必要變更
   如果 Office 專案的目標 framework [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 從舊版 .NET Framework 變更為或更新版本，您必須執行下列工作，以確保解決方案可以在開發電腦和終端使用者電腦上執行：
@@ -64,7 +64,7 @@ ms.locfileid: "66836064"
 ## <a name="update-the-prerequisites-for-deployment"></a>更新部署的必要條件
  當您將 Office 專案的目標重定為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本時，您也必須更新 [ **必要條件** ] 對話方塊中對應的 .NET Framework 先決條件。 否則 ClickOnce 部署或 InstallShield 限量版專案會查找並安裝舊版的 .NET Framework。
 
- 如需有關更新部署至使用者電腦之必要條件的詳細資訊，請參閱 [如何：在終端使用者電腦上安裝必要條件以執行 Office 解決方案](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。
+ 如需有關更新部署至使用者電腦之必要條件的詳細資訊，請參閱 [如何：在終端使用者電腦上安裝必要條件以執行 Office 解決方案](/previous-versions/bb608608(v=vs.110))。
 
 ## <a name="reinstall-solutions-on-end-user-computers"></a>在終端使用者電腦上重新安裝解決方案
  如果您使用 ClickOnce 部署以 .NET Framework 3.5 為目標的 Office 解決方案，然後又將專案目標重定為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，則使用者必須解除安裝解決方案，並在您重新發行後再重新安裝解決方案。 如果您重新發行重定目標的解決方案，並在終端使用者電腦上更新解決方案，終端使用者會在 <xref:System.Runtime.InteropServices.COMException> 執行更新的解決方案時收到。

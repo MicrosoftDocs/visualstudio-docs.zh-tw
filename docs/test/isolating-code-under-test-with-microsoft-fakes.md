@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: f92fe91c31f2b352d9d47a2d908a25f7bfdf2a7c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 9ef41b8645e77a28c8422fff49111b41215ba971
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038409"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739872"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 隔離測試中的程式碼
 
@@ -146,7 +146,7 @@ Fakes 分為兩種類別：
 
     ```
 
-    這裡最特別的是 `StubIStockFeed` 類別。 Microsoft Fakes 機制會針對參考組件中的每一個介面產生虛設常式類別。 該虛設常式類別的名稱衍生自介面的名稱，再加上前置詞「`Fakes.Stub`」並附加參數類型名稱。
+    這裡最特別的是 `StubIStockFeed` 類別。 Microsoft Fakes 機制會針對參考組件中的每一個介面產生虛設常式類別。 存根類別的名稱衍生自介面的名稱，並以 " `Fakes.Stub` " 做為前置詞，並附加參數類型名稱。
 
     另外也會為屬性、事件及泛型方法的 getter 及 setter 產生虛設常式。 如需詳細資訊，請參閱[使用虛設常式隔離應用程式的各個組件，方便進行單元測試](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)。
 

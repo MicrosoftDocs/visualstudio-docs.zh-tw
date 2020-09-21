@@ -1,5 +1,6 @@
 ---
-title: 如何-指定 ClickOnce 部署的詳細資訊記錄檔 |Microsoft Docs
+title: '指定 (ClickOnce 部署的詳細資訊記錄檔) '
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e1d2ca7c58d7da85ad67e56eae7713e517a1d2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54c90f6a544607e78dd8f294bfc307bc87377b70
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381765"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808707"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>How to: Specify verbose log files for ClickOnce deployments (如何：指定 ClickOnce 部署的詳細資訊記錄檔)
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 維護所有部署的活動記錄檔。 這些記錄會記錄有關安裝、初始化、更新及卸載部署的詳細資料 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 若要增加寫入這些記錄檔的詳細資料 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ，請使用登錄編輯程式 (*regedit.exe*) 來指定詳細等級。

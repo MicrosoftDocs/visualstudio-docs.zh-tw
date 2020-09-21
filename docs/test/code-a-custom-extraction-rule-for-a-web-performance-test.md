@@ -1,5 +1,6 @@
 ---
-title: 為 Web 效能測試撰寫自訂擷取規則程式碼
+title: '將自訂的解壓縮規則編碼 (web 效能測試) '
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +14,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 00001662667ed7020909d23cf3cfbd4b8437eabf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d29bb2d0bfa1bbea7d0dd8dedbb17f9704a9c66d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288880"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810623"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂擷取規則程式碼
 

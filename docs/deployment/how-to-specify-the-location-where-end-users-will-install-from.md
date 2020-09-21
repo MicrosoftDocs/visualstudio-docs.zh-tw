@@ -1,5 +1,6 @@
 ---
-title: 如何-指定終端使用者將安裝的位置 |Microsoft Docs
+title: 指定終端使用者安裝來源的位置
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,14 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e28ad8353858b35fc1c4e83f0511a58b4162dc9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ba02b1cf8947fa2d1907d6316e36af8f8f54a77
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381934"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808720"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>How to: Specify the location where end users will install from (如何：指定終端使用者會從該處安裝的位置)
+
 發佈 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，使用者前往下載和安裝應用程式的位置不一定是您最初發行應用程式的位置。 例如，在某些組織中，開發人員可能會將應用程式發佈到預備伺服器，然後系統管理員會將應用程式移至 Web 服務器。
 
 在此情況下，您可以使用 `Installation URL` 屬性來指定使用者將前往以下載應用程式的網頁伺服器。 這是必要的，讓應用程式資訊清單知道要在哪裡尋找更新。

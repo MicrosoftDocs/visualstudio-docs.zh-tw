@@ -1,5 +1,6 @@
 ---
-title: 使用取樣收集效能統計資料 | Microsoft Docs
+title: 使用取樣收集效能統計資料
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: adf26a8a1bae495481106506208232ebb383d2ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9729bf46b58a9591df7b6470acde0c54ef23f531
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331663"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810727"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>使用取樣收集效能統計資料
 
@@ -39,7 +40,7 @@ ms.locfileid: "85331663"
 
   下表中的工作說明當您使用取樣方法進行分析時，可以在 [效能工作階段屬性頁]__**** 對話方塊中指定的選項。
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |在 [一般]**** 頁面，加入 .NET 記憶體配置和存留期資料的收集，並指定產生的分析資料 (.vsp) 檔案的命名詳細資料。|- [收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [如何：設定效能資料檔案名稱選項](../profiling/how-to-set-performance-data-file-name-options.md)|
 |在 [取樣]**** 頁面上，變更取樣率、將取樣事件從處理器時脈循環變更為另一個處理器效能計數器，或變更這兩者...|- [如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)|

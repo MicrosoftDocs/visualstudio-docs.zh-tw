@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce0084d6bf734ee8a9de63b0cf3da73504b0d4e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc1241a39707eedc4b34e0ef3531ab65e49b8238
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800940"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811028"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio 中的 Office 和 SharePoint 開發
   若要擴充 Microsoft Office 和 SharePoint，您可以建立讓使用者從 [Office 市集](https://store.office.com/) 或組織目錄下載的輕量應用程式或增益集，或是建立以 .NET Framework 為基礎的解決方案，讓使用者可以安裝在電腦上。
@@ -62,7 +62,7 @@ ms.locfileid: "88800940"
 |收件者|請參閱|
 |--------|---------|
 |深入了解 Office 增益集，然後建置一個。|[Office 增益集](/office/dev/add-ins/publish/publish)|
-|比較擴充 Office 的不同方式，並決定您應該要使用應用程式或 Office 增益集。|[Office 增益集、VSTO 與 VBA 的藍圖](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
+|比較擴充 Office 的不同方式，並決定您應該要使用應用程式或 Office 增益集。|[Office 增益集、VSTO 與 VBA 的藍圖](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 
 ### <a name="build-a-sharepoint-add-in"></a>建立 SharePoint 增益集
  若要為您的使用者擴充 SharePoint，請建置 SharePoint 增益集。 基本上是一個小型、便於使用的獨立應用程式，可解決您的使用者或業務需求。
@@ -90,9 +90,9 @@ ms.locfileid: "88800940"
 
  **深入了解**
 
-|收件者|讀取|
+|以|讀取|
 |--------|----------|
-|比較擴充 Office 的不同方式，並決定您應該要使用 VSTO 增益集或 Office 增益集。|[Office 增益集、VSTO 與 VBA 的藍圖](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
+|比較擴充 Office 的不同方式，並決定您應該要使用 VSTO 增益集或 Office 增益集。|[Office 增益集、VSTO 與 VBA 的藍圖](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 |建立 VSTO 增益集。|[使用 Visual Studio 來建置 VSTO 增益集](create-vsto-add-ins-for-office-by-using-visual-studio.md)|
 
 ## <a name="create-a-sharepoint-solution"></a><a name="Solutions"></a> 建立 SharePoint 解決方案

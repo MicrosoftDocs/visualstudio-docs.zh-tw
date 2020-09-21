@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b41ed3901cd4ad18a1b52ddbdc7ee6fd82cb5380
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b21268b488eb0061c5c329e0afcb57ef1ec6e3a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62962117"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809920"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>教學課程：開始使用 Visual Studio 中的 Django Web 架構
 
@@ -111,7 +111,7 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 
 回答：首先，從一開始就使用原始檔控制 (特別是在您也使用遠端存放庫時)，可為專案提供頻繁的離站備份。 不同於只在本機檔案系統上維護專案，原始檔控制也能提供完整的變更記錄，並能輕易將單一檔案或整個專案還原至先前的狀態。 該變更記錄可協助判斷迴歸 (測試失敗) 的原因。 此外，原始檔控制在有多人一起處理專案的情況下是不可或缺的，因為它可管理覆寫並提供衝突解決方式。 最後，原始檔控制基本上是一種自動化的形式，可為您妥善設定自動化建置、測試和發行管理。 它確實是針對專案採用 DevOps 的第一步；由於其門檻非常低，因此實在沒有什麼原因不在一開始便使用原始檔控制。
 
-如需原始檔控制作為自動化的進一步討論，請參閱 MSDN Magazine 針對行動應用程式 (但也同樣適用於 Web 應用程式) 所撰寫的文章：[本質來源：存放庫在 DevOps 中的角色](https://msdn.microsoft.com/magazine/mt763232) \(英文\)。
+如需原始檔控制作為自動化的進一步討論，請參閱 MSDN Magazine 針對行動應用程式 (但也同樣適用於 Web 應用程式) 所撰寫的文章：[本質來源：存放庫在 DevOps 中的角色](/archive/msdn-magazine/2016/september/mobile-devops-the-source-of-truth-the-role-of-repositories-in-devops) \(英文\)。
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>問題：我能夠避免 Visual Studio 自動認可新專案嗎？
 

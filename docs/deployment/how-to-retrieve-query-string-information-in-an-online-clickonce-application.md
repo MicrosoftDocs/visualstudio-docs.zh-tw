@@ -1,5 +1,6 @@
 ---
 title: 在線上 ClickOnce 應用程式中取得查詢字串資訊
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc94691eda319607510619dbb37e24265bcae522
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 824d289e0b15938e730657a449ef1566bdb6ee8f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641595"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809756"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>How to: Retrieve query string information in an online ClickOnce application (如何：在線上 ClickOnce 應用程式中擷取查詢字串資訊)
 *「查詢字串」* (query string) 是開頭為句號 (?) 之 URL 的部分，內含 *name=value*格式的任意資訊。 假設您有裝載於 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 且名為 `WindowsApp1` 的 `servername`應用程式，而且想要在啟動應用程式時傳入變數 `username` 的值。 URL 可能如下所示：

@@ -1,5 +1,5 @@
 ---
-title: Profiler 命令列檢測用戶端 .NET 元件，取得記憶體資料
+title: 分析工具命令列檢測獨立的 .NET 元件，取得記憶體資料
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d09cc46a-70f5-48f9-aa24-89913e67b359
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 29406d72fc54e15499a0936a78ebf693f8eca0b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57ee3a8d3c94fcd5f3c4b77bddc2fab9710a3caa
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332060"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809618"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>如何：使用命令列以分析工具檢測獨立的 .NET Framework 元件並收集記憶體資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具來檢測獨立應用程式的 .NET Framework 元件 (例如 .exe 或 .dll 檔案)，並使用分析工具來收集記憶體資訊。

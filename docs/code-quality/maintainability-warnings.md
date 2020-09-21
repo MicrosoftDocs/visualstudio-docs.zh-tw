@@ -1,29 +1,29 @@
 ---
-title: 維護性警告
+title: 維護性規則
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.maintainabilityrules
 helpviewer_keywords:
-- warnings, maintainability
-- managed code analysis warnings, maintainability warnings
-- maintainability warnings
+- rules, maintainability
+- managed code analysis rules, maintainability rules
+- maintainability rules
 ms.assetid: 537e70ca-a88c-49df-bfc7-0ee63bbe4f16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb985a6482b76b79604ce58f85e7f8cf3e83e97c
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 751cec177e066da1210997ef0f6f8d869ba7d0dc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509896"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808580"
 ---
-# <a name="maintainability-warnings"></a>維護性警告
+# <a name="maintainability-rules"></a>維護性規則
 
-可維護性警告支援程式庫和應用程式維護。
+維護性規則支援程式庫和應用程式維護。
 
 ## <a name="in-this-section"></a>本節內容
 

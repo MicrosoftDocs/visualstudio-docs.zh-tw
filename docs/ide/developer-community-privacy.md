@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f5b8e2d65454d75c08d3efc26af2fd93b22153b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6055592896779640e50b4bfaf28d951aa3309433
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284798"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739963"
 ---
 # <a name="developer-community-data-privacy"></a>開發人員社群資料隱私權
 
@@ -68,6 +68,8 @@ ms.locfileid: "85284798"
 - 服務中樞記錄和 MEF 錯誤記錄 (若存在)
 
 - Python 記錄 (若存在)
+
+- Razor LSP 編輯器記錄（如果有的話）
 
 - Windows Forms 記錄檔（如果有的話）
 

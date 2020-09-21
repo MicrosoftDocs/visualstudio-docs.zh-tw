@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 762c2acb6774d7eb4949087fdd91e85c86acd6bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fd1ab781fd838c8e5379e38fdcb3a6fddd65230
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595419"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810037"
 ---
 # <a name="properties-of-diagrams"></a>圖表的屬性
 您可以設定屬性，以指定要在產生的設計工具中顯示圖表的方式。 例如，您可以在圖表中指定文字的預設色彩。
@@ -35,10 +35,10 @@ ms.locfileid: "75595419"
 |具有自訂的函式|如果為 `True` ，則會在原始程式碼中提供自訂的函式。 如需詳細資訊，請參閱覆 [寫和擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。|否|
 |繼承修飾詞|描述從圖表產生之原始程式碼類別的繼承類型 (`none` 、 `abstract` 或 `sealed`) 。|無|
 |基底圖表|此圖表的基底類別。|(無)|
-|Name|此圖表的名稱。|目前的名稱|
+|[屬性]|此圖表的名稱。|目前的名稱|
 |命名空間|與此圖表關聯的命名空間。|目前的命名空間|
 |表示的類別|此圖表所代表的根域類別。|目前的根類別（如果適用）|
-|附註|與此元素相關聯的非正式附注。|\<none>|
+|備註|與此元素相關聯的非正式附注。|\<none>|
 |將填滿色彩公開為屬性|如果為 `True` ，則使用者可以設定產生之設計工具的圖表填滿色彩。 若要設定此屬性，請以滑鼠右鍵按一下 [圖表] 圖形，然後按一下 [ **新增公開**]。|否|
 |將文字色彩公開為屬性|如果為 `True` ，則使用者可以在產生的設計工具中設定圖表的文字色彩。 若要設定此屬性，請以滑鼠右鍵按一下 [圖表] 圖形，然後按一下 [ **新增公開**]。|否|
 |描述|用來記錄所產生之設計工具的描述。|\<none>|
@@ -47,4 +47,4 @@ ms.locfileid: "75595419"
 
 ## <a name="see-also"></a>另請參閱
 
-[特定領域語言工具詞彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+[特定領域語言工具詞彙](/previous-versions/bb126564(v=vs.100))

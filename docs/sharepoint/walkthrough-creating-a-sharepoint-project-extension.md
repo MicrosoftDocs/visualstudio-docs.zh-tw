@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5df10e2da9e6b4c31894dce0669e9aa0e580b92f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d79bf66f88a7cbaa5321887b676cc9eca798a92
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015078"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739924"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>逐步解說：建立 SharePoint 專案延伸模組
   本逐步解說將說明如何建立 SharePoint 專案的擴充功能。 您可以使用專案延伸回應專案層級的事件，例如新增、刪除或重新命名專案。 您也可以在屬性值變更時加入自訂屬性或回應。 與專案專案延伸不同的是，專案延伸無法與特定的 SharePoint 專案類型建立關聯。 當您建立專案擴充功能時，會在中開啟任何種類的 SharePoint 專案時載入擴充功能 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
@@ -40,7 +40,7 @@ ms.locfileid: "86015078"
 
 - 調試和測試專案屬性。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
  您需要在開發電腦上執行下列元件，才能完成此逐步解說：
 
 - [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]、SharePoint 和支援的版本 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
@@ -128,7 +128,7 @@ ms.locfileid: "86015078"
 
 1. 在 **方案總管**中，開啟 extension.vsixmanifest 檔案的快捷方式功能表，然後選擇 [ **開啟** ] 按鈕。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在資訊清單設計工具中開啟檔案。 [ **中繼資料** ] 索引標籤中顯示的資訊也會出現在 [ **擴充功能和更新**] 中。 所有 VSIX 套件都需要副檔名 extension.vsixmanifest 檔案。 如需此檔案的詳細資訊，請參閱 [VSIX 延伸架構1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在資訊清單設計工具中開啟檔案。 [ **中繼資料** ] 索引標籤中顯示的資訊也會出現在 [ **擴充功能和更新**] 中。 所有 VSIX 套件都需要副檔名 extension.vsixmanifest 檔案。 如需此檔案的詳細資訊，請參閱 [VSIX 延伸架構1.0 參考](/previous-versions/dd393700(v=vs.110))。
 
 2. 在 [ **產品名稱** ] 方塊中，輸入 **自訂專案屬性**。
 

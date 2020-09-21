@@ -1,7 +1,7 @@
 ---
-title: 即時 ASP.NET Azure 虛擬機器和擴展集
+title: 即時 ASP.NET Azure VM 和擴展集
 description: 了解如何設定快照集，以及使用快照偵錯工具檢視快照集。
-ms.custom: ''
+ms.custom: SEO-VS-2020
 ms.date: 02/06/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: d1e9248d3e70c885fa072e3bd4682a24f0bcfdd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 040fdee43262279a834978a4619b62fb62b10345
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350611"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809553"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>使用快照偵錯工具針對 Azure 虛擬機器上的即時 ASP.NET 應用程式和 Azure 虛擬機器擴展集進行偵錯
 
@@ -33,7 +33,7 @@ ms.locfileid: "85350611"
 > * 設定快照點及檢視快照
 > * 設定記錄點
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 * 適用于 Azure 虛擬機器 (VM) 的快照偵錯工具和 Azure 虛擬機器擴展集僅適用于使用 **azure 開發工作負載**的 Visual Studio 2019 Enterprise 或更高版本。 (您可以在 [個別元件]**** 索引標籤下的 [偵錯和測試]**** > [快照偵錯工具]**** 底下找到它。)
 

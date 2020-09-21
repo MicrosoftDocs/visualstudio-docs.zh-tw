@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe09c242fce137d90b90ff2d6c547cee1ed2dc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c9f108529931fc99946e18f15492f72384e1578
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595393"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809985"
 ---
 # <a name="respond-to-and-propagate-changes"></a>回應及傳播變更
 
@@ -32,7 +32,7 @@ ms.locfileid: "75595393"
 |規則|您可以定義在發生變更的交易結束之前，將執行排入佇列的規則。 它們不會在復原或重做時執行。 使用它們可讓存放區的其中一個部分與另一個部分進行同步處理。|[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)|
 |儲存事件|模型存放區會提供事件的通知，例如新增或刪除專案或連結，或變更屬性的值。 此事件也會在復原和重做時執行。 使用存放區事件來更新不在存放區中的值。|[事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
 |.NET 事件|圖形具有可回應滑鼠點擊和其他手勢的事件處理常式。 您必須為每個物件註冊這些事件。 註冊通常是在 InitializeInstanceResources 覆寫中完成，而且必須針對每個元素完成。<br /><br /> 這些事件通常會發生在交易之外。|[如何：攔截圖案或 Decorator 上的點選](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
-|界限規則|界限規則專門用來限制圖形的界限。|[BoundsRules 限制圖案位置和大小](/visualstudio/modeling/boundsrules-constrain-shape-location-and-size?view=vs-2015)|
+|界限規則|界限規則專門用來限制圖形的界限。|[BoundsRules 限制圖案位置和大小](../vs-2015/modeling/boundsrules-constrain-shape-location-and-size.md?view=vs-2015)|
 |選取規則|選取規則會特別限制使用者可選取的專案。|[如何：存取及限制目前的選取範圍](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|使用圖形和接點的功能（例如陰影、箭頭、色彩和線條寬度和樣式），指出模型專案的狀態。|[更新圖案和接點來反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 

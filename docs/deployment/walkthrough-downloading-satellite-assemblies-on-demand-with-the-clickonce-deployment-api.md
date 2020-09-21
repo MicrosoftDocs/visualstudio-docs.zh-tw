@@ -1,5 +1,6 @@
 ---
-title: 使用 ClickOnce 部署 API 隨選下載附屬元件
+title: '視需要下載附屬元件 (ClickOnce API) '
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34cde3a2444525e48455e445894fd5ab1c66fab8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cda69b1aad8e70dce14bb3f25e6bf935103642bf
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66262961"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809233"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：使用 ClickOnce 部署 API 依需求下載附屬元件
 透過使用附屬組件，Windows Forms 應用程式可以設定為適用多個文化特性。 *「附屬組件」* (Satellite Assembly) 為包含文化特性 (除了應用程式的預設文化特性以外) 之應用程式資源的組件。
@@ -38,7 +39,7 @@ ms.locfileid: "66262961"
 > [!NOTE]
 > 為了測試用途，下列程式碼範例以程式設計的方式設定文化特性為 `ja-JP`。 如需為生產環境調整程式碼的相關資訊，請參閱本主題＜後續步驟＞一節。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
  本主題假設您知道如何使用 Visual Studio 將當地語系化的資源新增至您的應用程式。 如需詳細指示，請參閱 [逐步解說：當地語系化 Windows forms](/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100))。
 
 ### <a name="to-download-satellite-assemblies-on-demand"></a>隨需下載附屬組件

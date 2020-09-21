@@ -1,5 +1,6 @@
 ---
-title: '[呼叫堆疊] 視窗中的混合程式碼和遺失的資訊 |Microsoft Docs'
+title: '[呼叫堆疊] 視窗中的混合程式碼 & 遺漏資訊'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fb7bc54899d8c9a079d3f2706065d690904540
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b32fe52b31daa384718eae629d3051bade93959d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187545"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808151"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>呼叫堆疊視窗內的混合程式碼和遺失的資訊
 因為 Managed 和機器碼呼叫堆疊之間的差異，當程式碼類型混合時，偵錯工具則無法永遠顯示完整的呼叫堆疊。 當機器碼呼叫受控碼時，您會在 [呼叫堆疊]**** 視窗內看到下列差異：

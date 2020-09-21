@@ -1,29 +1,29 @@
 ---
-title: 設計警告
+title: 設計規則
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.designrules
 helpviewer_keywords:
-- design warnings
-- managed code analysis warnings, design warnings
-- warnings, design
+- design rules
+- managed code analysis rules, design rules
+- rules, design
 ms.assetid: 34e65a18-560c-423f-814f-519089e318cf
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59f9a5ed6a7e9bab7031009d66bacf56a878fe41
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 1d626231bcfe298a225cc916c356290a94042992
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508557"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808661"
 ---
-# <a name="design-warnings"></a>設計警告
+# <a name="design-rules"></a>設計規則
 
-設計警告支援遵循 .NET Framework 的 [設計指導方針](/dotnet/standard/design-guidelines/)。
+設計規則支援遵循 .NET Framework 的 [設計指導方針](/dotnet/standard/design-guidelines/)。
 
 ## <a name="in-this-section"></a>本節內容
 

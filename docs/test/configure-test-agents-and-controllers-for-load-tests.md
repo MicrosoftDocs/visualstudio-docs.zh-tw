@@ -1,5 +1,6 @@
 ---
-title: 設定用於負載測試的測試代理程式和測試控制器
+title: 設定負載測試的測試代理程式/測試控制器
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8fa44ffd75cd64f3ce745524ecdcf6ccb7b9a9b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe6811f4deaa5958b050a8f93f74e48e2dc73f38
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288802"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809285"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>用於執行負載測試的測試代理程式和測試控制器概觀
 

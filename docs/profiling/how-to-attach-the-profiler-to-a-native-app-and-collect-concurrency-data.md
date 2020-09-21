@@ -1,6 +1,6 @@
 ---
-title: 將分析工具附加至原生應用程式並收集並行資料
-ms.custom: seodec18
+title: 將分析工具附加至原生應用程式 & 收集並行資料
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 12d3e0f3-4b74-4e66-8fbf-8ac99bd4f91c
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dcc125f795a29f53abb07920aa11c9a5e6ee966b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a853a8ff3d8ecdc89316edafc927ec93096f720f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329519"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811054"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令列將分析工具附加至原生獨立應用程式並收集並行資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至執行中的原生 (C/C++) 獨立應用程式，並收集執行緒爭用資料。

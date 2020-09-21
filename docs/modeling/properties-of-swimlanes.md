@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cceeacab44f17eb30184c90f1128b8d2c3528bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ec27b9b4f90b1f3ec75edef6dca01b1ed7b8adf
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115362"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807842"
 ---
 # <a name="properties-of-swimlanes"></a>泳道的屬性
 您可以將泳道新增至圖表。 泳道會將圖表分成垂直或水準區域。 您可以定義要在泳道內顯示的其他圖形。 如需詳細資訊，請參閱 [如何定義網域指定的語言](../modeling/how-to-define-a-domain-specific-language.md)。 如需有關如何使用這些屬性的詳細資訊，請參閱 [自訂和擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
@@ -37,10 +37,10 @@ ms.locfileid: "76115362"
 |具有自訂的函式|如果為 `True` ，則會在原始程式碼中提供自訂的函式。 如需詳細資訊，請參閱覆 [寫和擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。|否|
 |繼承修飾詞|描述從泳道 (或) 產生之原始程式碼類別的繼承類型 `none` `abstract` `sealed` 。|無|
 |基底泳道|此泳道的基底類別。|(無)|
-|Name|此泳道的名稱。|目前的名稱|
+|[屬性]|此泳道的名稱。|目前的名稱|
 |命名空間|與此泳道關聯的命名空間。|目前的命名空間|
 |工具提示類型|工具提示的定義方式 (`fixed` 、 `variable` 或 `none`) 。 如果為 `fixed` ，則 `Fixed Tooltip Text` 會使用屬性的值; 如果為 `variable` ，則會在自訂程式碼中定義工具提示。|\<none>|
-|附註|與此泳道相關聯的非正式附注。|\<none>|
+|備註|與此泳道相關聯的非正式附注。|\<none>|
 |對齊|水準或垂直對齊。|Vertical|
 |初始高度|此泳道的初始高度（以英寸為單位）。 僅適用于水準泳道。|0|
 |初始寬度|此泳道的初始寬度（以英寸為單位）。 僅適用于垂直泳道。|0|
@@ -52,4 +52,4 @@ ms.locfileid: "76115362"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
+- [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)
