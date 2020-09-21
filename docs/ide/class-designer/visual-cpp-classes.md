@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d68391bbd4c6c873940bbc2714ee41db8309b629
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7af49e94045e519e32aacd12ec33a4a31a4c905
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590731"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808125"
 ---
 # <a name="c-classes-in-class-designer"></a>類別設計工具中的 c + + 類別
 
@@ -54,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 > [顯示衍生類別]**** 命令不支援用於 C++ 程式碼。 您可以藉由前往 **類別檢視**、展開類型節點、展開 [ **衍生類型** ] 子資料夾，然後將這些類型拖曳至類別圖表，以顯示衍生類別。
 
-如需多重類別繼承的詳細資訊，請參閱[多重繼承](https://msdn.microsoft.com/library/6td5yws2.aspx)和[多重基底類別](/cpp/cpp/multiple-base-classes)。
+如需多重類別繼承的詳細資訊，請參閱[多重繼承](/previous-versions/6td5yws2(v=vs.140))和[多重基底類別](/cpp/cpp/multiple-base-classes)。
 
 ## <a name="abstract-classes"></a>抽象類別
 
@@ -177,6 +177,6 @@ typedef struct
 - [使用 c + + 程式碼](working-with-visual-cpp-code.md)
 - [類別和結構](/cpp/cpp/classes-and-structs-cpp)
 - [匿名類別類型](/cpp/cpp/anonymous-class-types)
-- [多重繼承](https://msdn.microsoft.com/library/6td5yws2.aspx)
+- [多重繼承](/previous-versions/6td5yws2(v=vs.140))
 - [多個基類](/cpp/cpp/multiple-base-classes)
 - [範本](/cpp/cpp/templates-cpp)

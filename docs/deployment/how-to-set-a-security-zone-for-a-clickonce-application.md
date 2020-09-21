@@ -1,5 +1,6 @@
 ---
-title: 如何-設定 ClickOnce 應用程式的安全性區域 |Microsoft Docs
+title: '將安全性區域 (ClickOnce 應用程式) '
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51515339c24ea8a0507c47d0399cde9e423f71a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59b099a406f31bf2a1c1266d76bb037ac3e85e19
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382129"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809725"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>How to: Set a security zone for a ClickOnce application (如何：設定 ClickOnce 應用程式的安全性區域)
 設定 ClickOnce 應用程式的程式碼存取安全性權限時，必須從 [專案設計工具] **** 之 [安全性] **** 頁面上的一組基底權限開始。

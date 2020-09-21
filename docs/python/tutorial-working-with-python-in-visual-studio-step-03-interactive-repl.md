@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31db7813521632539827f404c05625ff4b6121ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d88d936a4b470f891f3b2bf2c353f4ef4e595c57
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801564"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811041"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>步驟 3：使用互動式 REPL 視窗
 
@@ -25,7 +25,7 @@ ms.locfileid: "88801564"
 適用于 Python 的 Visual Studio **互動式** 視窗提供豐富的讀取-評估-列印迴圈 (複寫) 體驗，可大幅縮短一般編輯-組建-偵錯工具的週期。 **互動式**視窗提供 Python 命令列之複寫體驗的所有功能。 它也讓在 Visual Studio 編輯器中與原始程式檔交換程式碼變得極為簡單，而使用命令列來執行此作業則會十分麻煩。
 
 > [!NOTE]
-> 針對 REPL 的問題，請務必安裝 `ipython` 和 `ipykernel` 套件，而如需安裝套件的說明，則請參閱 [Python 環境套件索引標籤](/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab)。
+> 針對 REPL 的問題，請務必安裝 `ipython` 和 `ipykernel` 套件，而如需安裝套件的說明，則請參閱 [Python 環境套件索引標籤](./python-environments-window-tab-reference.md#packages-tab)。
 
 1. 以滑鼠右鍵按一下**方案總管** (中專案的 python 環境，例如舊版圖形) 中的**python 3.6 (32 位) ** ，然後選取 [**開啟互動式視窗]**，開啟**互動式**視窗。 您也可以**View**  >  從主要 Visual Studio 功能表中選取 [查看**其他 windows**  >  **Python 互動式視窗**]。
 

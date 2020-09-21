@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7da5a229ec345a4f360aeb6051dc33130fa3d99a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87972469"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810115"
 ---
 # <a name="developer-community-guidelines"></a>開發人員社群指導方針
 
@@ -57,7 +57,7 @@ ms.locfileid: "87972469"
 
 將問題分類是一種在功能小組內共同完成的多步驟流程。 分級通常需要一周，但可能需要較長的時間。 分級的目標是讓您清楚瞭解您的問題會發生什麼事。 例如，在分級之後，您知道我們是否打算修正您的問題，或等候更多的社區意見反應。
 
-回報問題之後，狀態會指出您的提交內容在其生命週期的位置。 當 Visual Studio 產品團隊審視您的意見反應時，他們會以適當的狀態進行設定。 藉由參考 [問題狀態和常見問題](https://docs.microsoft.com/visualstudio/ide/report-a-problem)來追蹤問題報告的進度。
+回報問題之後，狀態會指出您的提交內容在其生命週期的位置。 當 Visual Studio 產品團隊審視您的意見反應時，他們會以適當的狀態進行設定。 藉由參考 [問題狀態和常見問題](./report-a-problem.md)來追蹤問題報告的進度。
 
 當問題遺失重要資訊時，我們會指派 _需要更多的資訊_ 狀態。 我們會根據所需的特定資訊對問題進行批註，而您將會收到電子郵件通知。 如果我們未在七天內收到資訊，則會傳送提醒給您。 之後，我們會在閒置14天之後關閉票證。
 
@@ -78,8 +78,8 @@ ms.locfileid: "87972469"
 
 #### <a name="additional-information"></a>其他資訊
 
-- [如何提高修正效能問題的機會](https://docs.microsoft.com/visualstudio/ide/how-to-increase-chances-of-performance-issue-being-fixed)
-- [疑難排解及建立 MSBuild 問題的記錄檔](https://docs.microsoft.com/visualstudio/ide/msbuild-logs)
+- [如何提高修正效能問題的機會](./how-to-increase-chances-of-performance-issue-being-fixed.md)
+- [疑難排解及建立 MSBuild 問題的記錄檔](./msbuild-logs.md)
 
 ## <a name="managing-feature-suggestions"></a>管理功能建議
 
@@ -91,7 +91,7 @@ ms.locfileid: "87972469"
 
 - 它符合我們的一般產品方向嗎？
 - 我們可以承受建立和維護嗎？
-- 它是否與我們的整體 [藍圖](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap) 策略一致？
+- 它是否與我們的整體 [藍圖](/visualstudio/productinfo/vs-roadmap) 策略一致？
 - 它是否有依投票和留言指出的社區支援？
 - 我們喜歡它，即使是低群支援也是一樣？
 
@@ -99,7 +99,7 @@ ms.locfileid: "87972469"
 
 如果建議不符合我們的整體產品方向，我們會將其關閉為 *超出範圍*。 例如，在 Visual Studio 系列產品的其他成員中，我們可能會有類似的投資。 或者，建議的功能可能只與少數人員相關，讓擴充功能更適合提供。
 
-藉由參考 [建議狀態和常見問題](https://docs.microsoft.com/visualstudio/ide/report-a-problem)來追蹤功能建議的進度。
+藉由參考 [建議狀態和常見問題](./report-a-problem.md)來追蹤功能建議的進度。
 
 ## <a name="discussion-etiquette"></a>討論禮儀
 
@@ -111,7 +111,7 @@ ms.locfileid: "87972469"
 
 ## <a name="data-privacy"></a>資料隱私權
 
-批註和回復都是公開可見的，但任何附加的檔案都只會與 Microsoft 私下共用。 此可見度很有説明，因為它可讓整個團體查看其他使用者所找到的問題和解決方案。 如果您擔心資料或身分識別的隱私權，則有選項。 深入瞭解 [開發人員社群資料隱私權](https://docs.microsoft.com/visualstudio/ide/developer-community-privacy)。
+批註和回復都是公開可見的，但任何附加的檔案都只會與 Microsoft 私下共用。 此可見度很有説明，因為它可讓整個團體查看其他使用者所找到的問題和解決方案。 如果您擔心資料或身分識別的隱私權，則有選項。 深入瞭解 [開發人員社群資料隱私權](./developer-community-privacy.md)。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -1,7 +1,7 @@
 ---
-title: 即時移動即時 ASP.NET Azure 虛擬機器
+title: Azure VM 上的時間移動即時偵測即時 ASP.NET
 description: 瞭解如何使用快照偵錯工具在 Azure 虛擬機器上記錄和重新執行即時 ASP.NET 應用程式。
-ms.custom: ''
+ms.custom: SEO-VS-2020
 ms.date: 04/11/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: a44ecd7faeb3ec4cea7665678050580d7e4063a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb0db0bab5295925f71a81645e64fdeb5f2077df
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350624"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809566"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>使用快照偵錯工具在 Azure 虛擬機器上記錄和重新播放即時 ASP.NET 應用程式
 
@@ -35,7 +35,7 @@ ms.locfileid: "85350624"
 > * 設定快照點並收集時間移動記錄
 > * 開始進行時間移動記錄的調試
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 * Azure 虛擬機器 (VM) 的時間移動偵錯工具，僅適用于使用 **azure 開發工作負載**的 Visual Studio 2019 Enterprise 或更高版本。 (您可以在 [個別元件]**** 索引標籤下的 [偵錯和測試]**** > [快照偵錯工具]**** 底下找到它。)
 

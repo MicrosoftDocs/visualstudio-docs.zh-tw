@@ -21,12 +21,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7015583fef2323e3c53b8e786c9e8a529e0fab6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 452832785db879e75825b1c862e8e9b1b6e69f1d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590523"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810805"
 ---
 # <a name="create-models-for-your-app"></a>建立應用程式模型
 
@@ -50,7 +50,7 @@ ms.locfileid: "75590523"
 |[模型使用者需求](../modeling/model-user-requirements.md)|使用模型來釐清和溝通使用者的需求。|
 |[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|使用模型描述系統的整體結構和行為，以及確保其符合使用者的需求。|
 |[在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)|確認您的軟體符合使用者的需求以及系統的整體架構。|
-|[在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)<br /><br /> [在 Agile 開發中使用模型](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|使用模型可幫助您在開發期間了解和變更系統。|
+|[在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)<br /><br /> [在 Agile 開發中使用模型](/previous-versions/ff398061(v=vs.140))|使用模型可幫助您在開發期間了解和變更系統。|
 |[建構模型方案](../modeling/structure-your-modeling-solution.md)|組織大型或中型專案中的模型。|
 
 ## <a name="resources"></a>資源

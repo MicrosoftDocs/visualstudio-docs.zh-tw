@@ -2,17 +2,17 @@
 title: 搜尋及篩選 | Microsoft Docs
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
-ms.date: 03/03/2020
+ms.date: 08/10/2020
 ms.topic: how-to
 description: 了解系統管理員如何在系統管理入口網站中尋找個別訂閱者或群組。
-ms.openlocfilehash: c7ef5cd61a689be1757793b223ebc1a9295bf8bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aea4e0d05eb01a5ec3fcf1da97d34e069aeb964d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906167"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810701"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>搜尋和篩選 Visual Studio 訂用帳戶中的訂閱者
 Visual Studio 訂用帳戶管理入口網站可讓您根據各種條件來尋找特定一小部分的訂閱者。 您可以依名稱、電子郵件地址、訂用帳戶層級和其他資訊來篩選訂閱者清單。
@@ -20,11 +20,11 @@ Visual Studio 訂用帳戶管理入口網站可讓您根據各種條件來尋找
 ## <a name="to-filter-the-subscriber-list"></a>篩選訂閱者清單
 1. 若要搜尋特定的一組訂閱者，請選取 [篩選]**** 索引標籤。
    > [!div class="mx-imgBorder"]
-   > ![選取 [篩選]，以搜尋訂閱者清單](_img/search-filter/filter-list.png)
+   > ![選取 [篩選]，以搜尋訂閱者清單](_img/search-filter/filter-list.png "按一下 [篩選] 以輸入準則來限制顯示的訂閱。")
 
 2. 輸入您想要用作搜尋基礎的準則，然後再次選取 [篩選]****。
    > [!div class="mx-imgBorder"]
-   > ![使用可用的欄位，篩選訂閱者資料](media/filter-subscribers.png)
+   > ![使用可用的欄位，篩選訂閱者資料](media/filter-subscribers.png "在各種欄位中輸入值，以限制搜尋結果。例如，您可以搜尋 ' @contoso .com '，以傳回具有 @contoso .com 電子郵件地址的所有訂閱者清單。")
 
    您的訂閱者清單會比對您選擇的準則。  您可以按一下篩選結果的標題，以變更每個欄位的排序順序。  
    > [!NOTE]
@@ -34,7 +34,7 @@ Visual Studio 訂用帳戶管理入口網站可讓您根據各種條件來尋找
 
 3. 若要清除篩選並還原未篩選過的清單，請按一下右上方的 [清除篩選]**** 索引標籤。 
    > [!div class="mx-imgBorder"]
-   > ![從訂閱者清單清除篩選](_img/search-filter/clear-filter.png)
+   > ![從訂閱者清單清除篩選](_img/search-filter/clear-filter.png "按一下 [清除篩選] 以移除篩選，然後繼續查看所有指派的訂閱。")
 
 
 ## <a name="see-also"></a>另請參閱

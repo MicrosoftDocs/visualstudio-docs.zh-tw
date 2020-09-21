@@ -13,12 +13,12 @@ manager: jillfra
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 549726d16a5fc1129f8c773ef143267e4c9bc31e
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 62dee3372f9d0c667c138e72c2ad58c886388f7a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100718"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808099"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Domain-Specific Language Tools 使用者介面概觀
 當您第一次在 Visual Studio 中開啟特定領域語言工具 (DSL 工具) 解決方案時，使用者介面會如下圖所示。
@@ -27,7 +27,7 @@ ms.locfileid: "90100718"
 
  下表說明如何使用 UI 的每個組件。
 
-|**Element**|**定義**|
+|**Element**|**[定義]**|
 |-|-|
 |圖表|圖表顯示領域模型。<br /><br /> 圖表可分成兩側。 一側定義您模型中的項目類型。 另一側定義如何在畫面上顯示您的模型。|
 |工具箱|從 [工具箱] 拖曳工具，以將領域類別和圖形類型新增至圖表。 若要新增關聯、連接線和圖形對應，請按一下工具，然後依序按一下圖表上的來源節點和目標節點。|
@@ -41,7 +41,7 @@ ms.locfileid: "90100718"
 
  下表說明領域模型圖表的一些項目。
 
-|**字詞**|**定義**|
+|**字詞**|**[定義]**|
 |-|-|
 |領域類別|領域類別是您模型中的項目類型。<br /><br /> 如果領域類別是多個關聯的目標，則可能在圖表中出現多次。<br /><br /> 若要新增領域類別，請將領域類別工具從 [工具箱]**** 拖曳到圖表的 [類別和關係]**** 一側。|
 |領域關聯|領域關聯是您模型中項目之間的連結類型。<br /><br /> 「內嵌關係」** 表示來源項目擁有或包含目標項目，並會顯示為實線。 模型中每個項目都應該是內嵌關係的目標，模型才能形成樹狀。 「參考關聯性」** 表示模型項目之間的一般連結，並顯示為虛線。 所有項目都可以有任意數目的參考連結。<br /><br /> 若要建立關聯，請在 [工具箱]**** 中按一下工具，然後依序按一下來源領域類別和目標類別。|
@@ -51,5 +51,5 @@ ms.locfileid: "90100718"
 ## <a name="see-also"></a>另請參閱
 
 - [Domain-Specific Language Tools 概觀](../modeling/overview-of-domain-specific-language-tools.md)
-- [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
+- [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)
 - [自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)

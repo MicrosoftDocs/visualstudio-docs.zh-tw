@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1d97cc53e55a809b9dd43d572e7395abc5a8344
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee1b9ad1d7a75b0e4d3514bb3397f850d6704c24
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544127"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811184"
 ---
 # <a name="properties-of-geometry-shapes"></a>幾何圖案的屬性
 您可以使用幾何圖形來指定網域類別的實例如何以網域指定的語言顯示。 如需詳細資訊，請參閱 [如何定義網域指定的語言](../modeling/how-to-define-a-domain-specific-language.md)。 如需有關如何使用這些屬性的詳細資訊，請參閱 [自訂和擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
@@ -39,10 +39,10 @@ ms.locfileid: "85544127"
 |具有自訂的函式|如果為 `True` ，則會在原始程式碼中提供自訂的函式。 如需詳細資訊，請參閱覆 [寫和擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。|否|
 |繼承修飾詞|描述從圖形 (或) 產生之原始程式碼類別的繼承類型 `none` `abstract` `sealed` 。|無|
 |基底幾何圖形|此圖形的基類。|(無)|
-|Name|此圖形的名稱。|目前的名稱|
+|[屬性]|此圖形的名稱。|目前的名稱|
 |命名空間|與這個圖形關聯的命名空間。|目前的命名空間|
 |工具提示類型|工具提示的定義方式 (固定、變數或無) 。 如果已修正，則 `Fixed Tooltip Text` 會使用屬性的值做為工具提示; 如果是變數，則會在自訂程式碼中定義工具提示。|無|
-|附註|與此元素相關聯的非正式附注。|\<none>|
+|備註|與此元素相關聯的非正式附注。|\<none>|
 |初始高度|此圖形的初始高度（以英寸為單位）。|1|
 |初始寬度|此圖形的初始寬度（以英寸為單位）。|1.5|
 |公開填滿色彩作為屬性<br /><br /> 公開填滿漸層模式<br /><br /> 公開大綱色彩作為屬性<br /><br /> 公開大綱樣式為屬性<br /><br /> 公開框線粗細作為屬性<br /><br /> 公開文字色彩|如果為 `True` ，則使用者可以設定圖形的 [已陳述] 屬性。 若要設定此設定，請以滑鼠右鍵按一下圖形定義，然後按一下 [ **新增公開**]。|否|
@@ -53,4 +53,4 @@ ms.locfileid: "85544127"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
+- [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 56fac2be1e73de5df9da8aa13e6631c4cc9d1022
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b739db2755336958492a0aa67c9d5f0809f74bb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015898"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740015"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>逐步解說：建立 SharePoint 專案的自訂部署步驟
   當您部署 SharePoint 專案時，Visual Studio 會依特定循序執行一系列的部署步驟。 Visual Studio 包含許多內建的部署步驟，但您也可以建立自己的部署步驟。
@@ -39,7 +39,7 @@ ms.locfileid: "86015898"
 
 - 測試新的部署步驟。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
  您需要在開發電腦上執行下列元件，才能完成此逐步解說：
 
 - 支援的 Windows、SharePoint 和 Visual Studio 版本。
@@ -190,7 +190,7 @@ ms.locfileid: "86015898"
 
 1. 在 **方案總管**的 [ **UpgradeDeploymentStep** ] 專案底下，開啟 **extension.vsixmanifest** 檔案的快捷方式功能表，然後選擇 [ **開啟**]。
 
-     Visual Studio 在資訊清單編輯器中開啟檔案。 Extension.vsixmanifest 檔案是所有 VSIX 封裝所需的 extension.vsixmanifest 檔案基礎。 如需此檔案的詳細資訊，請參閱 [VSIX 延伸架構1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。
+     Visual Studio 在資訊清單編輯器中開啟檔案。 Extension.vsixmanifest 檔案是所有 VSIX 封裝所需的 extension.vsixmanifest 檔案基礎。 如需此檔案的詳細資訊，請參閱 [VSIX 延伸架構1.0 參考](/previous-versions/dd393700(v=vs.110))。
 
 2. 在 [ **產品名稱** ] 方塊中，輸入 **SharePoint 專案的升級部署步驟**。
 
@@ -218,7 +218,7 @@ ms.locfileid: "86015898"
 10. 在 [ **類型** ] 清單中，輸入 [ **SharePoint**]。
 
     > [!NOTE]
-    > 這個元素會指定您想要包含在 Visual Studio 延伸模組中的自訂擴充功能。 如需詳細資訊，請參閱 [資產元素 (VSX 架構) ](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。
+    > 這個元素會指定您想要包含在 Visual Studio 延伸模組中的自訂擴充功能。 如需詳細資訊，請參閱 [資產元素 (VSX 架構) ](/previous-versions/dd393737(v=vs.110))。
 
 11. 在 [ **來源** ] 清單中，選擇 [ **目前方案中的專案**]。
 

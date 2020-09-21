@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c6934c816574796d59f978c3d2f37f590cf578
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eebdccf44580442b87e3d31e33ddcd7052838306
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565119"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810897"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>開發全球化和當地語系化應用程式
 
@@ -43,7 +43,7 @@ Visual Studio 利用 [.NET](/dotnet/standard/globalization-localization/) 所內
 
 - Web 應用程式
 
-   Web 服務支援 UTF-8 和 Unicode 文字的接收與傳送作業，因此非常適合使用雙向語言的應用程式。 Web 用戶端應用程式需仰賴瀏覽器來呈現其使用者介面；因此，Web 應用程式的雙向支援程度與使用者瀏覽器對這些雙向功能的支援程度相關。 在 Visual Studio 中，您可以建立支援阿拉伯文或希伯來文文字、由右至左的讀取順序、檔案編碼方式及當地文化特性設定的應用程式。 如需詳細資訊，請參閱 [ASP.NET web 應用程式的雙向支援](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)。
+   Web 服務支援 UTF-8 和 Unicode 文字的接收與傳送作業，因此非常適合使用雙向語言的應用程式。 Web 用戶端應用程式需仰賴瀏覽器來呈現其使用者介面；因此，Web 應用程式的雙向支援程度與使用者瀏覽器對這些雙向功能的支援程度相關。 在 Visual Studio 中，您可以建立支援阿拉伯文或希伯來文文字、由右至左的讀取順序、檔案編碼方式及當地文化特性設定的應用程式。 如需詳細資訊，請參閱 [ASP.NET web 應用程式的雙向支援](/previous-versions/6eedwbtt(v=vs.140))。
 
 > [!NOTE]
 > 主控台應用程式不支援雙向語言的文字。 這是搭配使用 Windows 與主控台應用程式產生的後果。

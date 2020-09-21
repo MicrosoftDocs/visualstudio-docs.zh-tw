@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc8f336c3d43fb1f896d9e5e6b4d4d12c13d4064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c7db4a699fcc8b28e4f2f423f612738de6a6836
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234974"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90806729"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>針對 Office 方案部署進行疑難排解
   本主題包含如何解決部署 Office 解決方案常見問題的相關資訊。
@@ -121,7 +121,7 @@ ms.locfileid: "87234974"
 ## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>無法從 web 開啟部署資訊清單，來安裝 ClickOnce 方案
  使用者可以從 Web 開啟部署資訊清單，藉以安裝 Office 解決方案。 不過，某些 Internet Information Services (IIS 安裝) 會封鎖 *vsto* 副檔名。 您必須先在 IIS 中定義 MIME 類型，才能使用它來部署 Office 方案。
 
- 如需如何在 IIS 7 中定義 MIME 類型的詳細資訊，請參閱 [新增 Mime 類型 (IIS7) ](https://technet.microsoft.com/library/cc725608(WS.10).aspx)。
+ 如需如何在 IIS 7 中定義 MIME 類型的詳細資訊，請參閱 [新增 Mime 類型 (IIS7) ](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725608(v=ws.10))。
 
  將副檔名設為 **.vsto** ，MIME 類型設為 **application/x-ms-vsto**。
 

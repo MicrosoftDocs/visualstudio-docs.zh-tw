@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29f6c4e170bce8ae7bacfc7178ebd9386f2d4416
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f4fe79c3a6f158eb61d624ce6c5e1566925e3fd
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015828"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740054"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>逐步解說：使用商務資料在 SharePoint 中建立外部清單
 
@@ -68,7 +68,7 @@ ms.locfileid: "86015828"
 
 7. 在功能表列上，選擇 [ **Project**  >  **加入新專案**]。
 
-     [新增項目]**** 對話方塊隨即開啟。
+     [ **加入新專案** ] 對話方塊隨即開啟。
 
 8. 在 [ **範本** ] 窗格中，選擇 [ **商務資料連線模型 (伺服器陣列方案]) **、將專案命名為 **Adventureworkscontacts.bdcmodel1.contact**，然後選擇 [ **加入** ] 按鈕。
 
@@ -80,7 +80,7 @@ ms.locfileid: "86015828"
 
 2. 將連接新增至 SQL Server AdventureWorks 範例資料庫。
 
-     如需詳細資訊，請參閱 [新增/修改連接 (Microsoft SQL Server) ](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3)。
+     如需詳細資訊，請參閱 [新增/修改連接 (Microsoft SQL Server) ](/previous-versions/dxb6fxah(v=vs.140))。
 
 3. 在 [ **方案總管**] 中選擇專案節點。
 
@@ -182,10 +182,10 @@ ms.locfileid: "86015828"
 
 10. 重複步驟6，為下列每個欄位建立類型描述元。
 
-    |Name|類型名稱|
+    |名稱|類型名稱|
     |----------|---------------|
-    |名字|System.String|
-    |姓氏|System.String|
+    |FirstName|System.String|
+    |LastName|System.String|
     |電話|System.String|
     |EmailAddress|System.String|
     |EmailPromotion|System.Int32|

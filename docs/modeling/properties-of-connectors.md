@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7bf5492d7da845b65904959cb57737fd438c28b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6d2d3d747c128cfa2afbb63ae43289e0b50519b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532271"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810063"
 ---
 # <a name="properties-of-connectors"></a>接點的屬性
 連接器代表產生的設計工具中的網域關聯性。
@@ -25,7 +25,7 @@ ms.locfileid: "85532271"
 
 |屬性|描述|預設|
 |-|-|-|
-|色彩|此連接器的色彩。|黑色|
+|Color|此連接器的色彩。|黑色|
 |虛線樣式|此接點之線條的虛線樣式 (實線、虛線、點、點、DashDotDot 或自訂) 。|實線|
 |來源結束樣式|此連接器的來源結束樣式 (HollowArrow、EmptyArrow、FilledArrow、EmptyDiamond、FilledDiamond 或 None) 。|無|
 |目標結束樣式|這個連接器的目標結束樣式 (HollowArrow、EmptyArrow、FilledArrow、EmptyDiamond、FilledDiamond 或 None) 。|無|
@@ -37,10 +37,10 @@ ms.locfileid: "85532271"
 |具有自訂的函式|如果為 `True` ，則會在原始程式碼中提供自訂的函式。 如需詳細資訊，請參閱覆 [寫和擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。|否|
 |繼承修飾詞|描述從連接器 (或) 產生之原始程式碼類別的繼承類型 `none` `abstract` `sealed` 。|無|
 |基底連接器|這個連接器的基底類別。|(無)|
-|Name|此連接器的名稱。|目前的名稱|
+|[屬性]|此連接器的名稱。|目前的名稱|
 |命名空間|與此連接器關聯的命名空間。|目前的命名空間|
 |工具提示類型|工具提示的定義方式 (固定、變數或無) 。 如果已修正，則 `Fixed Tooltip Text` 會使用屬性的值做為工具提示; 如果是變數，則會在自訂程式碼中定義工具提示。|\<none>|
-|附註|與此連接器相關聯的非正式附注。|\<none>|
+|備註|與此連接器相關聯的非正式附注。|\<none>|
 |路由樣式|用來路由傳送連接器的樣式。 `Rectilinear`連接器會視需要進行右角回合; 連接器則 `Straight` 不會。|直線|
 |公開色彩做為屬性<br /><br /> 公開虛線樣式為屬性<br /><br /> 公開粗細作為屬性<br /><br /> 公開文字色彩|如果為 `True` ，則使用者可以設定圖形的 [已陳述] 屬性。 若要設定此設定，請以滑鼠右鍵按一下圖形定義，然後按一下 [ **新增公開**]。|否|
 |描述|用來記錄產生的設計工具。|\<none>|
@@ -50,4 +50,4 @@ ms.locfileid: "85532271"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
+- [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

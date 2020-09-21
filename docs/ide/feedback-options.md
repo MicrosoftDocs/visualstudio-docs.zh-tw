@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: a9c71837b83aa31b56ba1bd8ccb3384e4552d1be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b50ec910c6d5880ead2df48db2ef763753379bb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770000"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807881"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio 意見反應選項
 
@@ -71,7 +71,7 @@ ms.locfileid: "85770000"
 您有兩種方式可以協助我們改善文件：
 
 * 您可以使用任何檔頁面右上方的 [ **此頁面有説明嗎？** 回應工具]。
-* 使用您的 GitHub 帳戶，在 [docs.microsoft.com](/visualstudio/) 上針對任何 Visual Studio 頁面提供意見反應。 若要這樣做，請選擇任何檔頁面底部的 [**傳送關於**  >  **此頁面**的意見反應] 按鈕。
+* 使用您的 GitHub 帳戶，在 [docs.microsoft.com](../index.yml) 上針對任何 Visual Studio 頁面提供意見反應。 若要這樣做，請選擇任何檔頁面底部的 [**傳送關於**  >  **此頁面**的意見反應] 按鈕。
 
 ## <a name="contact-microsoft-support"></a>連絡 Microsoft 支援
 

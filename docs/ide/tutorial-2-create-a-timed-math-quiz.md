@@ -9,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1f3620ef462228ff6a3461f44019e9c515a1c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 738d32186a0bb0f1d4655f9afea3d236bf53ad4c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579311"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810844"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>教學課程 2：建立計時的數學測驗
 
@@ -39,7 +39,7 @@ ms.locfileid: "77579311"
 
 ## <a name="tutorial-links"></a>教學課程的連結
 
-|標題|描述|
+|Title|描述|
 |-----------|-----------------|
 |[步驟 1：建立專案並將標籤新增至表單](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|從建立專案、變更屬性，然後新增 `Label` 控制項開始。|
 |[步驟 2：建立隨機加法問題](../ide/step-2-create-a-random-addition-problem.md)|建立加法問題，並使用 `Random` 類別產生隨機數字。|
@@ -58,6 +58,6 @@ ms.locfileid: "77579311"
 
 ## <a name="see-also"></a>另請參閱
 
-* [其他 c # 教學課程](/visualstudio/get-started/csharp/)
-* [Visual Basic 教學課程](/visualstudio/get-started/visual-basic/)
+* [其他 c # 教學課程](../get-started/csharp/index.yml)
+* [Visual Basic 教學課程](../get-started/visual-basic/index.yml)
 * [C + + 教學課程](/cpp/get-started/tutorial-console-cpp)

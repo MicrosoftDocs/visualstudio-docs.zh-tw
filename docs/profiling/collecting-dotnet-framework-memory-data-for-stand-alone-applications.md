@@ -1,5 +1,6 @@
 ---
-title: 使用分析工具命令列取得 .NET Framework 記憶體資料
+title: Profiler 命令列-取得 .NET 記憶體資料
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 7bce69e2-407c-4342-8516-641586968928
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62a55c36cd634b9451ad3796e5866d1e3a89b6a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d8c6b588552c2a4b4a93c2dbdbeb998eb94d7af
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331728"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810740"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>使用分析工具命令列收集 .NET Framework 記憶體資料
 
@@ -22,7 +23,7 @@ ms.locfileid: "85331728"
 
 ## <a name="common-tasks"></a>常見工作
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |**啟動應用程式並分析 .NET 記憶體**|-   [如何：流量分析工具啟動 .NET Framework 應用程式以收集記憶體資料](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|
 |**將分析工具附加至 .NET 應用程式**|-   [如何：將分析工具附加至 .NET Framework 應用程式以收集記憶體資料](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)|
@@ -32,7 +33,7 @@ ms.locfileid: "85331728"
 
 ### <a name="profile-stand-alone-applications"></a>分析獨立應用程式
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |**使用取樣方法進行分析**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
 |**使用檢測方法進行分析**|-   [使用檢測設備收集詳細計時資料](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
@@ -41,7 +42,7 @@ ms.locfileid: "85331728"
 
 ### <a name="profile-net-memory-data"></a>分析 .NET 記憶體資料
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |**分析 ASP.NET 應用程式**|-   [收集記憶體資料](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|
 |**分析服務**|-   [收集 .NET 記憶體資料](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
@@ -49,5 +50,5 @@ ms.locfileid: "85331728"
 ### <a name="analyze-net-memory-data-views-and-reports"></a>分析 .NET 記憶體資料檢視和報表
 - [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
 - [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)

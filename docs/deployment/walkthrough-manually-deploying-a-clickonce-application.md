@@ -1,5 +1,6 @@
 ---
-title: 逐步解說：手動部署 ClickOnce 應用程式 |Microsoft Docs
+title: 手動部署 ClickOnce 應用程式
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,17 +21,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aad87832a5bdae0d28d461d4cc289551eee7fee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16f01b87a9d90f285ebefd70956ae3c6ccffedf5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249983"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809475"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>逐步解說：手動部署 ClickOnce 應用程式
 如果您無法使用 Visual Studio 來部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，或需要使用 advanced 部署功能（例如「信任的應用程式部署」），則應該使用 *Mage.exe* 命令列工具來建立 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 資訊清單。 本逐步解說將說明如何 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用命令列版本 (*Mage.exe*) 或圖形版本 (MageUI.exe *) 資訊清單產生和編輯工具來 * 建立部署。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
  本逐步解說有一些必要條件和選項，讓您在建立部署之前需要選擇。
 
 - 安裝 *Mage.exe* 並 *MageUI.exe*。

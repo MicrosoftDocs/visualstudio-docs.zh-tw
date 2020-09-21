@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8b0fd53164cb98921b111d49fa04a76c9d0d8a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e801d417280d5d9ce8225c2185b582544fe2cef
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094304"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810333"
 ---
 # <a name="simplify-string-interpolation-refactoring"></a>簡化字串插補重構
 
@@ -25,13 +25,13 @@ ms.locfileid: "79094304"
 
 - Visual Basic
 
-事項 **：** 可讓您簡化[字串插補](https://docs.microsoft.com/dotnet/csharp/tutorials/string-interpolation)。
+事項 **：** 可讓您簡化[字串插補](/dotnet/csharp/tutorials/string-interpolation)。
 
 時機 **：** 您有可簡化的字串插補。
 
 **原因：** 簡化字串插補可提供更清楚且更簡潔的語法。 此重構工具將會自動執行工作，而不需要手動執行。
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
 1. 將插入號放在字串插補上：
 

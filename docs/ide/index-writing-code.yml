@@ -10,12 +10,12 @@ metadata:
   author: jillre
   ms.author: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 797df026fb9873c5f50e39fe281e0c9a11688b8f
-  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+  ms.openlocfilehash: f3f122c4603cd388d5ea73d8044504daf28342d1
+  ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "74316434"
+  ms.lasthandoff: 09/19/2020
+  ms.locfileid: "90810102"
 landingContent:
 - title: 開啟或建立專案
   linkLists:
@@ -52,7 +52,7 @@ landingContent:
   - linkListType: tutorial
     links:
     - text: Visual Studio 中的 C# 和 ASP.NET Core 使用者入門
-      url: tutorial-csharp-aspnet-core.md
+      url: ../get-started/csharp/tutorial-aspnet-core.md
     - text: 在 Visual Studio 中建立 C++ 主控台應用程式
       url: /cpp/get-started/tutorial-console-cpp
     - text: Visual Studio 中的 Python 使用者入門

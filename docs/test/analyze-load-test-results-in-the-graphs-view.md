@@ -1,5 +1,6 @@
 ---
-title: 在負載測試分析器的圖形檢視中分析負載測試結果
+title: '分析負載測試結果-圖形視圖 (負載測試分析器) '
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +16,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dac639b8513e8ef675c6246476791b9351241130
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b48162da7a753516ce0c1ae0dba4cfe1f94387e4
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591264"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810649"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>在負載測試分析器的圖形檢視中分析負載測試結果
 
@@ -67,12 +68,12 @@ ms.locfileid: "75591264"
 |執行個體|計數器執行個體的名稱。|
 |類別|計數器分類的名稱。|
 |電腦|要收集計數器的電腦名稱。|
-|色彩|圖形中線條的色彩。|
+|Color|圖形中線條的色彩。|
 |範圍|表示對於該計數器，圖形上的 100 所表示的數目。 舉例來說，對上限值為 10,000 的範圍而言，圖形頂端的 100 標籤即代表 10,000。|
 |最小值|表示計數器的最小值 (以毫秒為單位)。|
 |最大值|表示計數器的最大值 (以毫秒為單位)。|
-|Avg|表示計數器的平均值 (以毫秒為單位)。|
-|Last|顯示最近取樣間隔期間的計數器值 (以毫秒為單位)。|
+|平均|表示計數器的平均值 (以毫秒為單位)。|
+|最後一個|顯示最近取樣間隔期間的計數器值 (以毫秒為單位)。|
 
 ## <a name="tasks"></a>工作
 

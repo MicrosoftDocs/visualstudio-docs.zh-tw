@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 611df048d4ce569c10ae933be9053acf1174c06f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db49bfd1672866a755cce6780527520da2cad420
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290164"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810385"
 ---
 # <a name="add-debuggerdisplay-attribute"></a>新增 DebuggerDisplay 屬性
 
@@ -20,13 +20,13 @@ ms.locfileid: "85290164"
 
 - C#
 
-事項 **：**[DebuggerDisplay 屬性](https://docs.microsoft.com/visualstudio/debugger/using-the-debuggerdisplay-attribute)可控制物件、屬性或欄位在偵錯工具變數視窗中顯示的方式。
+事項 **：**[DebuggerDisplay 屬性](../../debugger/using-the-debuggerdisplay-attribute.md)可控制物件、屬性或欄位在偵錯工具變數視窗中顯示的方式。
 
-時機 **：** 您想要以程式設計方式在程式碼中[釘選屬性](https://docs.microsoft.com/visualstudio/debugger/view-data-values-in-data-tips-in-the-code-editor#pin-properties-in-datatips)。
+時機 **：** 您想要以程式設計方式在程式碼中[釘選屬性](../../debugger/view-data-values-in-data-tips-in-the-code-editor.md#pin-properties-in-datatips)。
 
 **原因：** 釘選屬性可讓您依物件的屬性快速檢查物件，方法是將該屬性反升到偵錯工具內物件的屬性清單頂端。 
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
 1. 將游標放在類型、委派、屬性或欄位上。 
 

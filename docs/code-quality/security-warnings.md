@@ -1,39 +1,39 @@
 ---
-title: 安全性警告
+title: 安全性規則
 ms.date: 10/02/2019
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.securityrules
 helpviewer_keywords:
 - security [Visual Studio ALM], Enterprise Templates
-- security warnings
-- managed code analysis warnings, security warnings
-- warnings, security
+- security rules
+- managed code analysis rules, security rules
+- rules, security
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a40273c3230854e4b1d1a11a3fd02de54d5df745
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 2eb2356628099246aa010c0332f473955a3e976d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599969"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807920"
 ---
-# <a name="security-warnings"></a>安全性警告
+# <a name="security-rules"></a>安全性規則
 
-支援更安全之程式庫和應用程式的安全性警告。 這些警告有助於防止在程式中出現安全性問題。 如果停用這些警告中的任一個，則您應該清楚地在程式碼中標示理由，同時也要通知指定的安全主管有關您的開發專案。
+安全性規則支援更安全的程式庫和應用程式。 這些規則有助於防止程式發生安全性瑕疵問題。 如果您停用這些規則中的任何一項，您應該清楚地標示程式碼中的原因，並針對您的開發專案通知指定的安全性長。
 
 ## <a name="in-this-section"></a>本節內容
 
-|規則|說明|
+|規則|描述|
 |----------|-----------------|
 |[CA2100:必須檢閱 SQL 查詢中是否有安全性弱點](../code-quality/ca2100.md)|方法會使用透過字串引數所建置的字串，將 System.Data.IDbCommand.CommandText 屬性設定為方法。 這項規則假設字串引數包含使用者輸入。 從使用者輸入所建置的 SQL 命令字串很容易遭到 SQL 插入攻擊。|
 |[CA2109:必須檢閱可見的事件處理常式](../code-quality/ca2109.md)|偵測到公用或保護的事件處理方法。 除非有絕對的必要性，否則不應該公開事件處理方法。|
 |[CA2119:密封方法以滿足私用介面的要求](../code-quality/ca2119.md)|可繼承的公用類型會提供內部 (在 Visual Basic 中為 Friend) 介面的可覆寫方法實作。 若要修正此規則的違規情形，請避免在組件外覆寫方法。|
-|[CA2153:避免處理損毀狀態例外狀況](../code-quality/ca2153.md)|[損毀狀態例外狀況 (CSE)](/archive/msdn-magazine/2009/february/clr-inside-out-handling-corrupted-state-exceptions) 指出您的處理序中有記憶體損毀的狀況。 如果攻擊者將攻擊放入損毀的記憶體區域，則攔截這些處理序而非讓它們損毀，會導致安全性弱點。|
+|[CA2153：避免處理損毀狀態例外狀況](../code-quality/ca2153.md)|[損毀狀態例外狀況 (CSE)](/archive/msdn-magazine/2009/february/clr-inside-out-handling-corrupted-state-exceptions) 指出您的處理序中有記憶體損毀的狀況。 如果攻擊者將攻擊放入損毀的記憶體區域，則攔截這些處理序而非讓它們損毀，會導致安全性弱點。|
 |[CA2300：請勿使用不安全的還原序列化程式 BinaryFormatter](../code-quality/ca2300.md)|在還原序列化不受信任的資料時，不安全的還原序列化程式很容易。 攻擊者可以修改序列化的資料，以包含未預期的類型，以插入具有惡意副作用的物件。|
 |[CA2301：未先設定 BinaryFormatter.Binder 之前，請勿呼叫 BinaryFormatter.Deserialize](../code-quality/ca2301.md)|在還原序列化不受信任的資料時，不安全的還原序列化程式很容易。 攻擊者可以修改序列化的資料，以包含未預期的類型，以插入具有惡意副作用的物件。|
 |[CA2302：呼叫 BinaryFormatter.Deserialize 之前，請務必先設定 BinaryFormatter.Binder](../code-quality/ca2302.md)|在還原序列化不受信任的資料時，不安全的還原序列化程式很容易。 攻擊者可以修改序列化的資料，以包含未預期的類型，以插入具有惡意副作用的物件。|
@@ -79,7 +79,7 @@ ms.locfileid: "89599969"
 |[CA5358:不要使用不安全的 Cipher 模式](../code-quality/ca5358.md)|不要使用不安全的 Cipher 模式|
 |[CA5359：請勿停用憑證驗證](../code-quality/ca5359.md)|憑證可協助驗證服務器的身分識別。 用戶端應該驗證伺服器憑證，以確保會將要求傳送給預定的伺服器。 如果 ServerCertificateValidationCallback 一律 `true` 會傳回，任何憑證都會通過驗證。|
 |[CA5360：請勿在還原序列化時呼叫危險的方法](../code-quality/ca5360.md)|不安全的還原序列化是在未受信任的資料用來濫用應用程式邏輯、對拒絕服務 (DoS) 攻擊，或甚至在還原序列化時執行任意程式碼時，就會發生的弱點。 當應用程式將受信任的資料還原序列化時，惡意使用者通常可能會濫用這些還原序列化功能。 具體而言，在還原序列化的過程中叫用危險的方法。 成功的不安全還原序列化攻擊可能會讓攻擊者執行攻擊，例如 DoS 攻擊、驗證略過，以及遠端程式碼執行。|
-|[CA5361:請勿為安全通道停用強式密碼編譯](../code-quality/ca5361.md)|設定 `Switch.System.Net.DontEnableSchUseStrongCrypto` 以 `true` 削弱輸出傳輸層安全性中使用的密碼編譯 (TLS) 連接。 較弱的密碼編譯可能會危及應用程式與伺服器之間通訊的機密性，讓攻擊者更容易竊聽敏感性資料。|
+|[CA5361：不要停用安全加密的安全通道使用](../code-quality/ca5361.md)|設定 `Switch.System.Net.DontEnableSchUseStrongCrypto` 以 `true` 削弱輸出傳輸層安全性中使用的密碼編譯 (TLS) 連接。 較弱的密碼編譯可能會危及應用程式與伺服器之間通訊的機密性，讓攻擊者更容易竊聽敏感性資料。|
 |[CA5362：還原序列化物件圖中的可能參考循環](../code-quality/ca5362.md)|如果還原序列化不受信任的資料，則任何處理已還原序列化之物件圖形的程式碼都必須處理參考迴圈，而不會進入無限迴圈。 這包括屬於還原序列化回呼一部分的程式碼，以及完成還原序列化之後處理物件圖形的程式碼。 否則，攻擊者可能會使用包含參考週期的惡意資料來執行阻斷服務攻擊。|
 |[CA5363：請勿停用要求驗證](../code-quality/ca5363.md)|要求驗證是 ASP.NET 中的一項功能，可檢查 HTTP 要求，並判斷它們是否包含可能會導致插入式攻擊的潛在危險內容，包括跨網站腳本。|
 |[CA5364:請勿使用已取代的安全性通訊協定](../code-quality/ca5364.md)|傳輸層安全性 (TLS) 保護電腦之間的通訊安全，最常見的方式是使用超文字傳輸通訊協定安全 (HTTPS) 。 舊版的 TLS 通訊協定版本比 TLS 1.2 和 TLS 1.3 更不安全，而且可能會有新的弱點。 避免較舊的通訊協定版本，以將風險降至最低。|

@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccac40e2ff11b4da67c95fba307de97e4f72a101
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 680d64e2d2bdf02c6a1c8b8b25bdfb64cde2db8f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238240"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810818"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>在特定領域語言定義中新增追蹤屬性
 
@@ -26,7 +26,7 @@ ms.locfileid: "88238240"
 
 例如，在 [特定領域語言工具 (DSL 工具]) 中，網域類別的 [顯示名稱] 屬性具有使用網域類別的名稱計算的預設值，但使用者可以在設計階段變更值，或將它重設為計算值。
 
-在這個逐步解說中，您將建立特定領域語言 (DSL) 具有命名空間追蹤屬性，此屬性的預設值是以模型的預設 Namespace 屬性為基礎。 如需追蹤屬性的詳細資訊，請參閱 [定義追蹤屬性](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be)。
+在這個逐步解說中，您將建立特定領域語言 (DSL) 具有命名空間追蹤屬性，此屬性的預設值是以模型的預設 Namespace 屬性為基礎。 如需追蹤屬性的詳細資訊，請參閱 [定義追蹤屬性](/previous-versions/cc825929(v=vs.100))。
 
 - DSL 工具支援追蹤屬性描述項。 但是，DSL 設計工具無法用來將追蹤屬性新增至語言。 因此，您必須加入自訂程式碼來定義和執行追蹤屬性。
 
@@ -42,7 +42,7 @@ ms.locfileid: "88238240"
 
 - 在 [ **屬性** ] 視窗中，當追蹤屬性處於 [依使用者狀態更新] 時，其值會以粗體字顯示。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 開始這個逐步解說之前，您必須先安裝這些元件：
 

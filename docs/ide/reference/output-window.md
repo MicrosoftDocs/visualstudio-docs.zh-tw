@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f820fe2f3cca0eddb709462961f328c906f6f2d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567979"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810359"
 ---
 # <a name="output-window"></a>輸出視窗
 
@@ -76,7 +76,7 @@ ms.locfileid: "75567979"
 ## <a name="see-also"></a>另請參閱
 
 - [輸出視窗中的診斷訊息](../../debugger/diagnostic-messages-in-the-output-window.md)
-- [如何：控制輸出視窗](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
+- [如何：控制輸出視窗](/previous-versions/ht6z4e28(v=vs.140))
 - [編譯和建置](../../ide/compiling-and-building-in-visual-studio.md)
 - [了解組建組態](../../ide/understanding-build-configurations.md)
 - [類別庫概觀](/dotnet/standard/class-library-overview)

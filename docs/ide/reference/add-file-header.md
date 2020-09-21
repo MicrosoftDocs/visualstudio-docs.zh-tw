@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c69f73989e898c44bdef6cf008d48f6c918652a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44c3b64d9fb8944a578d054b7d98d4bf39bde3bc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801317"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810372"
 ---
 # <a name="add-file-header"></a>新增檔案標頭
 
@@ -22,15 +22,15 @@ ms.locfileid: "88801317"
 
 - Visual Basic
 
-事項 **：** 使用[EditorConfig](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project)將檔案標頭新增至現有的檔案、專案和方案。
+事項 **：** 使用[EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)將檔案標頭新增至現有的檔案、專案和方案。
 
 時機 **：** 您想要輕鬆地將檔案標頭新增至檔案、專案和方案。
 
 **原因：** 您的小組要求您針對著作權用途納入檔案標頭。 
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
-1. 將 [EditorConfig](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project) 新增至專案或方案（如果您還沒有的話）。
+1. 將 [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project) 新增至專案或方案（如果您還沒有的話）。
 
 2. 在 EditorConfig 檔案中新增下列規則： *file_header_template*。
 

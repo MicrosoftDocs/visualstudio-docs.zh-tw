@@ -11,12 +11,12 @@ metadata:
   author: jillre
   ms.author: jillfra
   ms.date: 09/24/2019
-  ms.openlocfilehash: fe306d007c836ce6ac2e87361d0a6592197cf7cc
-  ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+  ms.openlocfilehash: a97cdc17a9e71520d34437e8897f3301de58fb5e
+  ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 08/21/2020
-  ms.locfileid: "88711738"
+  ms.lasthandoff: 09/19/2020
+  ms.locfileid: "90809657"
 landingContent:
 - title: 開始使用
   linkLists:
@@ -67,7 +67,7 @@ landingContent:
     - text: Python
       url: ../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md
     - text: JavaScript
-      url: /visualstudio/javascript/tutorial-nodejs
+      url: ../javascript/tutorial-nodejs.md
     - text: F#
       url: /dotnet/fsharp/get-started/get-started-visual-studio
 - title: 探索新功能

@@ -1,5 +1,6 @@
 ---
-title: 為 UWP 控制項設定唯一自動化屬性以進行測試
+title: 設定獨特的自動化屬性-測試 UWP 控制項
+ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +8,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikejo5000
-ms.openlocfilehash: 62409dc4aac8f640c7b58b112f7f86215ba2043b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1790ac51f513ddcb42500eb271212b68a4aefe63
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286709"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810216"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>為 UWP 控制項設定唯一自動化屬性以進行測試
 

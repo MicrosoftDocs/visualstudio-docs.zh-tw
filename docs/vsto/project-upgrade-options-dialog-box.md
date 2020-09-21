@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 619e64dc09858b7d29e05804e3c3c353882f90ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd1b3b90cf4e284e558be02608cac953dc71584b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62561737"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811002"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>選項對話方塊、專案升級
   您可以使用 [專案升級] **** 頁面，指定 Visual Studio 是否會自動變更 VSTO 增益集專案，將其目標設定為開發電腦上所安裝的 Office 版本。
@@ -33,4 +33,4 @@ ms.locfileid: "62561737"
 
 ## <a name="see-also"></a>另請參閱
 - [升級和遷移 Office 方案](../vsto/upgrading-and-migrating-office-solutions.md)
-- [如何：升級 Office 方案](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)
+- [如何：升級 Office 方案](/previous-versions/4bez6837(v=vs.140))

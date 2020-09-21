@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0571c01217441d4a39fbfe6fb58ccfe95fd0c5a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0242c8c89848e3e76673ddfbca8a27c20605048d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290177"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810346"
 ---
 # <a name="simplify-conditional-expression-refactoring"></a>簡化條件運算式重構
 
@@ -22,13 +22,13 @@ ms.locfileid: "85290177"
 
 - C#
 
-事項 **：** 可讓您簡化[條件運算式](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/conditional-operator)。
+事項 **：** 可讓您簡化[條件運算式](/dotnet/csharp/language-reference/operators/conditional-operator)。
 
 時機 **：** 您想要移除不必要的程式碼，以提供更清楚的說明。
 
 **原因：** 簡化條件運算式可提供更清楚且更簡潔的語法。 此重構工具將會自動執行工作，而不需要手動執行。
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
 1. 將您的插入號放在條件運算式：
 

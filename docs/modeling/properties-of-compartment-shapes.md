@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51b652adcc482d6e326c0b64eda3a9d32efab309
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27263e596c1e0e6e34f62e5125ffb070fc0f2fbb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532285"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810076"
 ---
 # <a name="properties-of-compartment-shapes"></a>區間圖案的屬性
 區間圖形是您可以用來以網域特定語言顯示網域類別的其中一種圖形。 您可以展開和折迭區間。
@@ -32,7 +32,7 @@ ms.locfileid: "85532285"
 |填滿漸層模式|此圖形的填滿漸層模式。|水平|
 |幾何形狀|此圖形的幾何 (矩形或圓角矩形) 。|矩形|
 |具有預設連接點|如果為 `True` ，則圖形將在產生的設計工具中使用頂端、底部、左方和右邊的連接點。|否|
-|是否可見單一區間標題|如果為 `False` ，且圖形具有單一區間，則不會顯示區間的標頭。|是|
+|是否可見單一區間標題|如果為 `False` ，且圖形具有單一區間，則不會顯示區間的標頭。|True|
 |外框色彩|此圖形的外框色彩。|黑色|
 |空心虛線樣式|此圖形的外框虛線樣式 (純色、虛線、點、點、DashDotDot、自訂) 。|實線|
 |外框粗細|此圖形的外框粗細。|0.03125|
@@ -43,10 +43,10 @@ ms.locfileid: "85532285"
 |具有自訂的函式|如果為 `True` ，則會在原始程式碼中提供自訂的函式。 如需詳細資訊，請參閱覆 [寫和擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。|否|
 |繼承修飾詞|描述從區間圖形 (或) 產生之原始程式碼類別的繼承類型 `none` `abstract` `sealed` 。|無|
 |基底區間圖形|此圖形的基類。|(無)|
-|Name|此圖形的名稱。|目前的名稱|
+|[屬性]|此圖形的名稱。|目前的名稱|
 |命名空間|與這個圖形關聯的命名空間。|目前的命名空間|
 |工具提示類型|工具提示的定義方式 (固定、變數或無) 。 如果已修正，則 `Fixed Tooltip Text` 會使用屬性的值做為工具提示; 如果是變數，則會在自訂程式碼中定義工具提示。|無|
-|附註|與此圖形相關聯的非正式附注。|\<none>|
+|備註|與此圖形相關聯的非正式附注。|\<none>|
 |初始高度|此圖形的初始高度（以英寸為單位）。 針對區間圖形，這是標頭區段的高度，而且無法調整大小。|1|
 |初始寬度|此形狀的初始寬度（以英寸為單位）。|1.5|
 |公開填滿色彩作為屬性<br /><br /> 公開填滿漸層模式<br /><br /> 公開大綱色彩作為屬性<br /><br /> 公開大綱樣式為屬性<br /><br /> 公開框線粗細作為屬性<br /><br /> 公開文字色彩|如果為 `True` ，則使用者可以設定圖形的 [已陳述] 屬性。 若要設定此設定，請以滑鼠右鍵按一下圖形定義，然後按一下 [ **新增公開**]。|否|
@@ -57,4 +57,4 @@ ms.locfileid: "85532285"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
+- [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

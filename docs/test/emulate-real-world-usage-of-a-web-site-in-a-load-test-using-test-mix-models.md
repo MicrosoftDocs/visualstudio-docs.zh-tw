@@ -1,5 +1,6 @@
 ---
-title: 針對負載測試模擬網站的真實使用情況
+title: 模擬網站的實際使用情形以進行負載測試
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 18e22cd151d8013a50e34a01757069dde9574e79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4dbbc5ec2ead98f9b20cb137f9e15237c13cf80
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589600"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810307"
 ---
 # <a name="test-mix-models-overview"></a>測試混合模型概觀
 

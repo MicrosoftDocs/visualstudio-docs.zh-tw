@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 58603db021d7aeebe3272711e5ba92d96eb22075
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d70f1e95ce2dd5163eb017684620c403a77f74a
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250178"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740028"
 ---
 # <a name="compile-typescript-code-nodejs"></a>編譯 TypeScript 程式碼 ( # A0) 
 
@@ -27,7 +27,7 @@ ms.locfileid: "88250178"
 
 [Typescript npm 套件](https://www.npmjs.com/package/typescript)會新增 typescript 支援。 將 TypeScript 2.1 或更高版本的 npm 套件安裝到您的專案中時，會在編輯器中載入對應版本的 TypeScript 語言服務。
 
-1. [請依照指示](/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json) 來安裝 Node.js 開發工作負載及 Node.js 執行時間。
+1. [請依照指示](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json) 來安裝 Node.js 開發工作負載及 Node.js 執行時間。
 
    如需最簡單的 Visual Studio 整合，請使用其中一個 Node.js TypeScript 範本建立您的專案，例如空白 Node.js Web 應用程式範本。 否則，請使用 Visual Studio 隨附的 Node.js JavaScript 範本，並遵循此處的指示，或使用 [開啟的資料夾](../javascript/develop-javascript-code-without-solutions-projects.md) 專案。
 
