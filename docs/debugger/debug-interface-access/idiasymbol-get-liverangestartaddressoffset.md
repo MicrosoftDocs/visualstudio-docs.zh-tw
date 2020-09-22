@@ -46,7 +46,7 @@ HRESULT get_liveRangeStartAddressOffset ( 
 
  若要取得位址的區段部分，請使用 [IDiaSymbol：： get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md)。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Dia2。h
 
  程式庫： diaguids .lib
