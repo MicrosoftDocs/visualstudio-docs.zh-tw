@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::CreateObjectID | Microsoft Docs
+title: IDebugProperty3：： CreateObjectID |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0035faad9078acd70886d597f039c0d8de5ee12f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403188"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838836"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-建立此屬性以確保它是唯一的所有其他屬性的唯一識別碼。  
+建立這個屬性的唯一識別碼，以確保它在所有其他屬性中都是唯一的。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,15 +37,15 @@ int CreateObjectID();
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 當工作階段的偵錯管理員想要確定此屬性會唯一識別以及所有其他屬性，會呼叫這個方法。 偵錯引擎 (DE) 支援此方法，除非已經唯一識別它處理的屬性。 如果裝置不支援這個方法，它會傳回`E_NOTIMPL`。  
+ 當會話偵錯工具管理員想要確保在所有其他屬性中唯一識別這個屬性時，會呼叫這個方法。 除非已唯一識別它所處理的屬性，否則 debug engine (DE) 支援此方法。 如果 DE 不支援這個方法，則會傳回 `E_NOTIMPL` 。  
   
- 任何唯一的識別碼以建立`CreateObjectID`時終結[DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)呼叫方法時，這也表示用來唯一識別此屬性需要的結束。  
+ 在 `CreateObjectID` 呼叫 [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) 方法時，會終結以建立的任何唯一識別碼，這也表示需要唯一識別此屬性的結尾。  
   
 > [!NOTE]
-> 沒有任何方法來擷取這個唯一識別碼，因此 DE 可以執行它想要的任何唯一的識別碼時`CreateObjectID`呼叫方法。  
+> 沒有任何方法可以取出這個唯一的識別碼，因此當呼叫方法時，DE 可以執行任何想要的唯一識別碼 `CreateObjectID` 。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   

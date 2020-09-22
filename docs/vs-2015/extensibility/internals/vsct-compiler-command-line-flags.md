@@ -1,5 +1,5 @@
 ---
-title: VSCT 編譯器命令列旗標 |Microsoft Docs
+title: .VSCT 編譯器命令列旗標 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,19 +12,19 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98cd0ec51ead200a904baeb409551cd1084f1f11
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440823"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839112"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT 編譯器命令列旗標
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio 命令資料表 (VSCT) 編譯器會提供命令列參數，以確保成功編譯.vsct 檔案。  
+Visual Studio 命令表格 (.VSCT) 編譯器提供命令列參數，以確保 .vsct 檔的編譯成功。  
   
 ## <a name="command-line-parameters"></a>命令列參數  
- 若要檢視從基本 VSCT 說明[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]**命令** 視窗中，瀏覽至*Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Tools\Bin\ 資料夾並輸入：  
+ 若要從命令視窗中查看基本的 .VSCT 說明 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **Command** ，請流覽至 [ *Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Tools\Bin\] 資料夾，然後輸入：  
   
 ```  
 vsct /?  
@@ -52,31 +52,31 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```  
   
 > [!NOTE]
-> 字元-(dash) 及 / （斜線） 是這兩個可接受的標記法來表示命令列參數。  
+> 字元- (虛線) 和/ (正斜線) 都可接受表示命令列參數的標記法。  
   
- 可接受的旗標，這些代表什麼意思如下所示。  
+ 可接受的旗標，以及它們的意義，如下所示。  
   
-|參數|描述|  
+|Switch|描述|  
 |------------|-----------------|  
-|-D|指定任何其他已定義的符號。|  
-|-I|表示額外的 include 路徑，應在解析檔案參考時使用。|  
-|-L|指定<xref:System.Globalization.CultureInfo>文化特性名稱，例如"EN-US"。|  
-|-E|發出C#後面接著命令項目，指定的命名空間中的物件 [C&#124;H&#124;N]:*filename*，C = C#，H =C++標頭，N = 命名空間。 需要適用於 C# 命名空間。|  
+|-d|指定任何其他定義的符號。|  
+|-I|指出解析檔案參考時應該使用的其他 include 路徑。|  
+|-l|指定 <xref:System.Globalization.CultureInfo> 文化特性名稱，例如 "en-us"。|  
+|-E|發出命令專案的指定命名空間中的 c # 物件，後面接著 [C&#124;H&#124;N]：*filename*，其中 C = c #，H = c + + 標頭，N = 命名空間。 C # 需要命名空間。|  
 |-v|詳細資訊輸出。|  
   
- -L 選項會指示編譯器選取一組的字串，以產生對應到二進位檔.cto 檔指定<xref:System.Globalization.CultureInfo>文化特性名稱。 指定的文化特性名稱應該符合 [語言] 屬性的一或多個[Strings 元素](../../extensibility/strings-element.md).vsct 檔案中。 如果字串項目不有任何語言屬性時，它繼承自包含[CommandTable 元素](../../extensibility/commandtable-element.md)。  
+ -L 參數會指示編譯器選取一組字串，以產生對應至指定文化特性名稱的 cto 檔案 <xref:System.Globalization.CultureInfo> 。 指定的文化特性名稱應該符合 .vsct 檔案中一個或多個 [字串元素](../../extensibility/strings-element.md) 的 Language 屬性。 如果字串元素沒有 Language 屬性，則會繼承自包含的 [CommandTable](../../extensibility/commandtable-element.md)專案。  
   
- .Vsct 檔可能有多個字串元素，而每個可能不同的語言屬性。 全球化之後，即可多次執行 VSCT 編譯器，然後變更 -L 選項，針對每個文化特性名稱。  
+ .Vsct 檔案可以有多個字串元素，而且每個專案都有不同的語言屬性。 全球化是藉由多次執行 .VSCT 編譯器並變更每個文化特性名稱的-L 參數來達成。  
   
- 如果-L 參數所指定的文化特性名稱不符合任何字串項目的 Language 屬性，編譯器會嘗試比對語言和不在區域中。 例如，如果找不到"EN-US"，編譯器會嘗試使用"en"改為。 如果無法做到，就會嘗試目前的文化特性的作業系統。 如果無法做到，它將會編譯它找到的第一個字串元素。  
+ 如果-L 參數指定的文化特性名稱與任何字串專案的 Language 屬性不相符，則編譯器會嘗試比對語言，而不是區域。 例如，如果找不到 "en-us"，編譯器會改為嘗試 "en"。 若失敗，將會嘗試作業系統目前的文化特性。 若失敗，將會編譯它所找到的第一個字串元素。  
   
- -E 參數可用來發出 c-style 標頭檔包含 [命令] 資料表中，所使用的符號，或發出 C# 檔案，其中包含命令符號的物件。  
+ -E 參數可以用來發出包含命令表格所使用之符號的 C 樣式標頭檔，或發出包含命令符號物件的 c # 檔案。  
   
- -D 和-我交換器已有同名的 Cl.exe C 前置處理器旗標的語法。 – D 具有 X = Y 格式定義用於 XML 為基礎的擴充\<定義 > 測試`Condition`屬性。 -I include 路徑用來解析\<Include >， \<Extern > 和\<點陣圖 > 檔案參考。 如需詳細資訊，請參閱 < [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)。  
+ -D 和– I 參數具有具有相同名稱之 Cl.exe C 預處理器旗標的語法。 – D 的格式為 X = Y 的定義用於擴充屬性中的 XML 架構 \<Defined> 測試 `Condition` 。 – I 包含路徑可用來解析 \<Include> 和檔案 \<Extern> \<Bitmap> 參考。 如需詳細資訊，請參閱 [.VSCT XML 架構參考](../../extensibility/vsct-xml-schema-reference.md)。  
   
- VSCT 編譯器也可以反編譯先前建置的二進位檔案。 若要這樣做，請提供 二進位檔\<infile >。   如果 VSCT 編譯器所產生的二進位檔案，它將具有其已內嵌的符號，並會產生輸出中的符號名稱\<符號 > 輸出區段。 如果 CTC 編譯器所產生的二進位檔，則輸出會包含實際 Guid 和 Id。 產生的最新版本的 Ctc.exe *.ctsym 檔案是否為二進位的輸入檔的相同資料夾中，將從該檔案載入符號，並用於輸出。  
+ .VSCT 編譯器也可以反編譯先前建立的二進位檔案。 若要這樣做，請提供的二進位檔案 \<infile> 。   如果二進位檔案是由 .VSCT 編譯器所產生，它的符號已經內嵌，而且會在輸出的區段中產生具有符號名稱的輸出 \<Symbols> 。 如果二進位檔是由 .CTC 編譯器所產生，則輸出會包含實際的 Guid 和識別碼。 如果 Ctc.exe 目前版本所產生的 *. .ctsym 檔案與二進位輸入檔案位於相同的資料夾中，則會從該檔案載入符號並用於輸出。  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 命令資料表 (。Vsct) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [VSCT XML 結構描述參考](../../extensibility/vsct-xml-schema-reference.md)   
- [VSPackage 如何新增使用者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+ [Visual Studio 命令表格 (。.Vsct) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [.VSCT XML 架構參考](../../extensibility/vsct-xml-schema-reference.md)   
+ [VSPackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

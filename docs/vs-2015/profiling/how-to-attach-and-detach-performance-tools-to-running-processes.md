@@ -1,5 +1,5 @@
 ---
-title: HOW TO：附加和中斷連結效能工具，來執行處理程序 |Microsoft Docs
+title: 如何：為執行中的處理序附加和中斷連結程式碼剖析工具 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0b8fc664ee47cd34ab984d1ac448b45c2f17c5b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443717"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838975"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>HOW TO：附加和中斷連結效能工具，來執行處理程序
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>如何：為執行中的處理序附加和中斷連結程式碼剖析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 程式碼剖析工具可以用來附加至或中斷連結執行中的處理序，以協助取樣與蒐集效能資料。 當您想要避免蒐集應用程式載入時間的資料，或是在處理序進入特定狀態後監視其效能時，就可以使用這種方法來執行處理序的程式碼剖析。  
@@ -40,39 +40,39 @@ ms.locfileid: "63443717"
   
 - 拒絕任何人存取程式碼剖析。  
   
-  如需詳細資訊，請參閱[分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)，以及 [VSPerfCmd](../profiling/vsperfcmd.md) 中的 ADMIN 選項。  
+  如需詳細資訊，請參閱程式碼 [剖析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md) 以及 [>VSPERFCMD](../profiling/vsperfcmd.md)中的管理選項。  
   
 ### <a name="to-attach-to-a-running-process"></a>若要附加至執行中的處理序  
   
-1. 在 [分析] 功能表上，指向 [分析工具]，然後按一下 [附加/中斷連結]。  
+1. 在 [分析]**** 功能表上，指向 [分析工具]****，然後按一下 [附加/中斷連結]****。  
   
-     \-或-  
+     \- 或 -  
   
-     在 [效能總管] 中，以滑鼠右鍵按一下效能工作階段，然後按一下 [附加/中斷連結]。  
+     在 [效能總管]**** 中，以滑鼠右鍵按一下效能工作階段，然後按一下 [附加/中斷連結]****。  
   
-     [將程式碼剖析工具附加至處理序] 對話方塊隨即出現。  
+     [將程式碼剖析工具附加至處理序]**** 對話方塊隨即出現。  
   
 2. 按一下您要附加至的處理序名稱。  
   
-3. 按一下 [附加] 。  
+3. 按一下 [附加] ****。  
   
 ### <a name="to-detach-from-a-running-process"></a>若要從執行中處理序中斷連結  
   
-1. 在 [分析] 功能表上，指向 [分析工具]，然後按一下 [附加/中斷連結]。  
+1. 在 [分析]**** 功能表上，指向 [分析工具]****，然後按一下 [附加/中斷連結]****。  
   
-     \-或-  
+     \- 或 -  
   
-     在 [效能總管] 中，以滑鼠右鍵按一下效能工作階段，然後按一下 [附加/中斷連結]。  
+     在 [效能總管]**** 中，以滑鼠右鍵按一下效能工作階段，然後按一下 [附加/中斷連結]****。  
   
-     [將程式碼剖析工具附加至處理序] 對話方塊隨即出現。  
+     [將程式碼剖析工具附加至處理序]**** 對話方塊隨即出現。  
   
 2. 按一下您要中斷連結的映像名稱。  
   
-3. 按一下 [中斷連結]。  
+3. 按一下 [中斷連結]****。  
   
 ## <a name="see-also"></a>另請參閱  
  [控制資料收集](../profiling/controlling-data-collection.md)   
- [效能工作階段概觀](../profiling/performance-session-overview.md)   
+ [效能會話總覽](../profiling/performance-session-overview.md)   
  [如何：啟動和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立當地語系化啟動載入器套件 |Microsoft Docs
+title: 如何：建立當地語系化的啟動載入器套件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -14,20 +14,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ec3cd1365826c1a06b2d0f7bd6da377c8dc4d46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440660"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839241"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>HOW TO：建立當地語系化啟動載入器套件
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>如何：建立當地語系化啟動載入器套件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 建立啟動載入器套件之後，您可以為每一個地區設定建立另外兩個檔案，藉此建立當地語系化版本的啟動載入器套件：軟體授權合約檔案 (例如 eula.rtf) 和套件資訊清單 (package.xml)。  
   
  根據預設，Visual Studio 2010 只包含 .NET Framework 4、.NET Framework 4 Client Profile、F# Runtime 2.0 和 F# Runtime 4.0 的當地語系化啟動載入器套件。 您只要完成三個步驟，就能為其他啟動載入器建立當地語系化套件。  
   
-1. 建立名為 \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages 中的地區設定名稱的資料夾\\*BootstrapperPackageName*。  
+1. 建立以 \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages BootstrapperPackageName 中的地區設定名稱命名的資料夾 \\ * *。  
   
 2. 建立包含啟動載入器套件之軟體授權合約的檔案，然後放入新資料夾中。  
   
@@ -42,16 +42,16 @@ ms.locfileid: "63440660"
   
 1. 以地區設定名稱建立資料夾。  
   
-     在 32 位元電腦上建立資料夾中 \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*\ 資料夾。  
+     在32位的電腦上，于 \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *BootstrapperPackageName*\ 資料夾中建立資料夾。  
   
-     在 64 位元電腦上建立資料夾在 \Program 檔案 (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*\ 資料夾。  
+     在64位的電腦上，于 \Program 檔案中建立資料夾 (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *BootstrapperPackageName*\ 資料夾。  
   
      下表顯示可用來比對地區設定的資料夾名稱。  
   
     |地區設定|資料夾名稱|  
     |------------|-----------------|  
-    |中文 (簡體)|zh-Hans|  
-    |和 SharePoint 2010 顯示的|zh-Hant|  
+    |簡體中文|zh-Hans|  
+    |繁體中文|zh-Hant|  
     |捷克文|cs|  
     |德文|de|  
     |英文|en|  
@@ -67,7 +67,7 @@ ms.locfileid: "63440660"
   
 2. 建立包含啟動載入器套件之軟體授權合約的檔案，然後放入新資料夾中。  
   
-3. 建立名為 package.xml 的套件資訊清單，然後放入新資料夾中。 如需詳細資訊，請參閱[如何：建立封裝資訊清單](../deployment/how-to-create-a-package-manifest.md)。  
+3. 建立名為 package.xml 的套件資訊清單，然後放入新資料夾中。 如需詳細資訊，請參閱 [如何：建立封裝資訊清單](../deployment/how-to-create-a-package-manifest.md)。  
   
 4. 更新套件資訊清單的 `<Strings>` 區段，讓字串能夠以正確的地區設定語言顯示。  
   
@@ -96,4 +96,4 @@ ms.locfileid: "63440660"
 ## <a name="see-also"></a>另請參閱  
  [建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)   
  [應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)   
- [如何：建立套件資訊清單](../deployment/how-to-create-a-package-manifest.md)
+ [如何：建立封裝資訊清單](../deployment/how-to-create-a-package-manifest.md)

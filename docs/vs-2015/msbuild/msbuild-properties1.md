@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2399ff36639732f20babef368a1d9e2f6758a1c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437879"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839048"
 ---
 # <a name="msbuild-properties1"></a>MSBuild Properties1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "63437879"
 ## <a name="reserved-properties"></a>保留的屬性  
  MSBuild 保留一些屬性名稱來儲存專案檔和 MSBuild 二進位檔案的相關資訊。 這些屬性是使用 $ 標記法來參考，如同任何其他屬性。 例如，$(MSBuildProjectFile) 會傳回專案檔的完整檔名，包括副檔名。  
   
- 如需詳細資訊，請參閱[如何：參考的名稱或專案檔的位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)並[MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
+ 如需詳細資訊，請參閱[如何：參考專案檔的名稱或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)和 [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
   
 ## <a name="environment-properties"></a>環境屬性  
  就像參考保留的屬性，您可以參考專案檔中的環境變數。 例如，若要在專案檔中使用 `PATH` 環境變數，請使用 $(Path)。 如果專案包含與環境屬性相同名稱的專案定義，則專案中的屬性會覆寫環境變數的值。  
@@ -95,7 +95,7 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
   
  您也可以使用 MSBuild 工作的 `Properties` 屬性，針對多專案組建中的子專案設定或修改全域屬性。 如需詳細資訊，請參閱 [MSBuild 工作](../msbuild/msbuild-task.md)。  
   
- 如果您使用專案標記中的 `TreatAsLocalProperty` 屬性 (Attribute) 指定屬性 (Property)，該全域屬性 (Property) 值就不會覆寫專案檔中設定的屬性 (Property) 值。 如需詳細資訊，請參閱 <<c0> [ 專案項目 (MSBuild)](../msbuild/project-element-msbuild.md)和[How to:建置使用不同的選項相同的原始程式檔](../msbuild/how-to-build-the-same-source-files-with-different-options.md)。  
+ 如果您使用專案標記中的 `TreatAsLocalProperty` 屬性 (Attribute) 指定屬性 (Property)，該全域屬性 (Property) 值就不會覆寫專案檔中設定的屬性 (Property) 值。 如需詳細資訊，請參閱 [Project 項目 (MSBuild)](../msbuild/project-element-msbuild.md) 和[如何：使用不同選項來建置相同的原始程式檔](../msbuild/how-to-build-the-same-source-files-with-different-options.md)。  
   
 ## <a name="property-functions"></a>屬性函式  
  從 .NET Framework 4 版開始，您可以使用屬性函式評估您的 MSBuild 指令碼。 您可以讀取系統時間、比較字串、比對規則運算式，以及執行組建指令碼中的其他動作，而不需使用 MSBuild 工作。  
@@ -143,7 +143,7 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
  [MSBuild 概念](../msbuild/msbuild-concepts.md)  
  [MSBuild](msbuild.md)  
  [如何：在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)   
- [如何：參考的名稱或專案檔的位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)   
- [如何：建置使用不同的選項相同的原始程式檔](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   
+ [如何：參考專案檔的名稱或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)   
+ [如何：建立具有不同選項的相同原始檔案](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   
  [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)   
  [Property 項目 (MSBuild)](../msbuild/property-element-msbuild.md)

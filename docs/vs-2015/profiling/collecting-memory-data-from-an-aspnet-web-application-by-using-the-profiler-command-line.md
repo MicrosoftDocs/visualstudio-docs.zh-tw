@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f7c759d4c2c4760be6782a518f4cdf209e828d4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436785"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90840240"
 ---
 # <a name="collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>使用程式碼剖析工具命令列收集 ASP.NET Web 應用程式的記憶體資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "63436785"
   
 ## <a name="common-tasks"></a>一般工作  
   
-|工作|相關內容|  
+|Task|相關內容|  
 |----------|---------------------|  
-|**將分析工具附加至執行中 ASP.NET 應用程式**|-   [如何：將分析工具附加至 ASP.NET Web 應用程式以收集記憶體資料](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|  
+|**將分析工具附加至執行中的 ASP.NET 應用程式**|-   [如何：將分析工具附加至 ASP.NET Web 應用程式以收集記憶體資料](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|  
 |**檢測靜態編譯的二進位檔**|-   [如何：檢測靜態編譯的 ASP.NET 應用程式並收集記憶體資料](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
 |**檢測動態編譯的二進位檔**|-   [如何：檢測動態編譯的 ASP.NET 應用程式並收集記憶體資料](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
   
@@ -39,7 +39,7 @@ ms.locfileid: "63436785"
   
 ### <a name="profiling-aspnet-web-applications"></a>為 ASP.NET Web 應用程式進行程式碼剖析  
   
-|工作|相關內容|  
+|Task|相關內容|  
 |----------|---------------------|  
 |**使用取樣方法進行分析**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
 |**使用檢測方法進行分析**|-   [使用檢測收集詳細計時資料](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
@@ -47,7 +47,7 @@ ms.locfileid: "63436785"
   
 ### <a name="profiling-net-framework-memory-data"></a>分析 .NET Framework 記憶體資料  
   
-|工作|相關內容|  
+|Task|相關內容|  
 |----------|---------------------|  
 |**分析獨立 (用戶端) 應用程式**|-   [收集 .NET Framework 記憶體資料](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
 |**分析服務**|-   [收集 .NET 記憶體資料](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
@@ -55,5 +55,5 @@ ms.locfileid: "63436785"
 ### <a name="analyzing-net-memory-data-views-and-reports"></a>分析 .NET 記憶體資料檢視和報表  
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)  
   
-## <a name="reference"></a>參考資料  
- [命令列程式碼剖析工具參考](../profiling/command-line-profiling-tools-reference.md)
+## <a name="reference"></a>參考  
+ [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)

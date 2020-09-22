@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：使用取樣進行命令列分析 | Microsoft Docs
+title: 逐步解說：使用取樣進行命令列剖析 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 96dfe49ce4e174680202cd60c3e8bca83cfbf575
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439689"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839114"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>逐步解說：命令列使用取樣分析
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>逐步解說：使用取樣進行命令列剖析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本逐步解說將示範如何使用命令列工具和取樣來剖析應用程式，以識別效能問題。  
@@ -33,7 +33,7 @@ ms.locfileid: "63439689"
   
 - 分析取樣的分析結果，找出並修正效能問題。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>Prerequisites  
   
 - [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]或 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -41,7 +41,7 @@ ms.locfileid: "63439689"
   
 - 對使用命令列工具有中等程度的了解  
   
-- 一份 [PeopleTrax 範例](../profiling/peopletrax-sample-profiling-tools.md)  
+- [PeopleTrax 範例](../profiling/peopletrax-sample-profiling-tools.md)的複本  
   
 - 若要處理剖析所提供的資訊，您手邊最好有偵錯符號資訊。  
   
@@ -73,15 +73,15 @@ ms.locfileid: "63439689"
   
      分析工具處理序隨即開始，並附加至 PeopleTrax.exe 處理序。 分析工具處理序開始將收集到的剖析資料寫入報告檔。  
   
-6. 按一下 [取得人員]。  
+6. 按一下 [取得人員]****。  
   
-7. 按一下 [匯出資料]。  
+7. 按一下 [匯出資料]****。  
   
-     [記事本] 便會開啟，並顯示包含從 [PeopleTrax] 匯出之資料的新檔案。  
+     [記事本] 便會開啟，並顯示包含從 [PeopleTrax]**** 匯出之資料的新檔案。  
   
 8. 關閉 [記事本]，然後關閉 **PeopleTrax** 應用程式。  
   
-9. 關閉分析工具。 輸入下列命令：  
+9. 關閉程式碼剖析工具。 輸入以下命令：  
   
     ```  
     VSPerfCmd /shutdown  
@@ -97,7 +97,7 @@ ms.locfileid: "63439689"
   
     - 在 Visual Studio IDE 中開啟 .vsp 檔案。  
   
-         — 或 —  
+         — 或者—  
   
     - 使用 VSPerfReport.exe 命令列工具產生逗號分隔值 (.csv) 檔案。 若要產生報表以供在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 外部使用，請使用下列命令：  
   
@@ -106,8 +106,8 @@ ms.locfileid: "63439689"
         ```  
   
 ## <a name="see-also"></a>另請參閱  
- [效能工作階段概觀](../profiling/performance-session-overview.md)   
- [從命令列使用程式碼剖析工具](../profiling/using-the-profiling-tools-from-the-command-line.md)   
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [了解取樣資料值](../profiling/understanding-sampling-data-values.md)   
+ [效能會話總覽](../profiling/performance-session-overview.md)   
+ [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)   
+ [>vsperfcmd](../profiling/vsperfcmd.md)   
+ [瞭解取樣資料值](../profiling/understanding-sampling-data-values.md)   
  [效能報告檢視](../profiling/performance-report-views.md)

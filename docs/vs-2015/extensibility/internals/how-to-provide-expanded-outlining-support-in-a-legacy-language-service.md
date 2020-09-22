@@ -1,5 +1,5 @@
 ---
-title: HOW TO：提供展開大綱的支援，在舊版語言服務 |Microsoft Docs
+title: 如何：在舊版語言服務中提供展開大綱支援 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,46 +13,46 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b1b2fd8f3d7e4f3637957ef11c4acb20ba51261d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442668"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840204"
 ---
-# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>HOW TO：在舊版語言服務中提供展開大綱的支援
+# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>如何︰在舊版語言服務中提供展開大綱的支援
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-有兩個選項用於擴充大綱的支援，您只能支援的語言**摺疊至定義**命令。 您可以將控制編輯器的大綱區域，並將用戶端控制的大綱區域。  
+有兩個選項可以擴充您語言的大綱支援，除了支援 [折迭 **至定義** ] 命令以外。 您可以新增編輯器控制的大綱區域，以及新增用戶端控制的大綱區域。  
   
-## <a name="adding-editor-controlled-outline-regions"></a>新增控制編輯器的大綱區域  
- 使用此方法來建立一個大綱區域，然後可讓編輯器來處理是否已展開的區域，摺疊，等等。 兩個選項提供大綱的支援，此選項是最不穩固。 針對這個選項，您必須建立新的外框區域的文字所使用的指定範圍內<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>。 此區域建立之後，編輯器會控制其行為。 您可以使用下列程序來實作編輯器控制大綱區域。  
+## <a name="adding-editor-controlled-outline-regions"></a>新增編輯器控制的大綱區域  
+ 您可以使用此方法來建立大綱區域，然後允許編輯器處理區域是否展開、折迭等等。 在提供大綱支援的兩個選項中，此選項是最不健全的選項。 針對此選項，您可以使用在指定的文字範圍中建立新的外框區域 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> 。 建立此區域之後，其行為會由編輯器控制。 您可以使用下列程式來執行編輯器控制的大綱區域。  
   
-#### <a name="to-implement-an-editor-controlled-outline-region"></a>若要實作一個控制編輯器的大綱區域  
+#### <a name="to-implement-an-editor-controlled-outline-region"></a>若要執行編輯器控制的大綱區域  
   
-1. 呼叫`QueryService`的 <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>  
+1. 呼叫 `QueryService`<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>  
   
-     這會傳回的指標<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>。  
+     這會傳回的指標 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> 。  
   
-2. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>，傳入指定的文字緩衝區的指標。 這會傳回的指標<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>緩衝區的物件。  
+2. 呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A> ，傳遞給定文字緩衝區的指標。 這會傳回 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> 緩衝區的物件指標。  
   
-3. 呼叫<xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A>上<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>指標<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession>。  
+3. <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A>針對的 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> 指標呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> 。  
   
-4. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>加入一個或多新增一次大綱區域。  
+4. 呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> ，一次新增一個或多個新的外框區域。  
   
-     這個方法可讓您指定的外框、 移除或保留，現有的大綱區域是否和外框區域是否為展開或摺疊的預設值的文字範圍。  
+     這個方法可讓您指定要外框的文字範圍、是否移除或保留現有的外框區域，以及大綱區域是否預設為展開或折迭。  
   
 ## <a name="adding-client-controlled-outline-regions"></a>新增用戶端控制的大綱區域  
- 使用這個方法，來實作，用戶端控制 （或智慧型） 大綱類似，供[!INCLUDE[csprcs](../../includes/csprcs-md.md)]和[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]語言服務。 若要摧毀舊的大綱區域，他們就會變成無效時，並視需要建立新的大綱區域，語言服務，可管理它自己的大綱監視文字緩衝區內容。  
+ 您可以使用此方法來執行 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 與語言服務所使用的用戶端控制 (或智慧型) 大綱 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 。 管理本身大綱的語言服務會監視文字緩衝區內容，以在舊的大綱區域無效時予以終結，並視需要建立新的外框區域。  
   
-#### <a name="to-implement-a-client-controlled-outline-region"></a>若要實作的用戶端控制的大綱區域  
+#### <a name="to-implement-a-client-controlled-outline-region"></a>若要執行用戶端控制的大綱區域  
   
-1. 呼叫`QueryService`針對<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>。 這會傳回的指標<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>。  
+1. `QueryService`的呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> 。 這會傳回的指標 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> 。  
   
-2. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>，傳入指定的文字緩衝區的指標。 這會決定是否隱藏的文字的工作階段已存在的緩衝區。  
+2. 呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A> ，傳遞給定文字緩衝區的指標。 這會決定緩衝區是否已經有隱藏的文字會話。  
   
-3. 如果文字工作階段已經存在，則您不需要建立一個，並指向現有的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>會傳回物件。 使用此指標來列舉及建立大綱區域。 否則，呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>建立隱藏的文字的工作階段緩衝區。 指標<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>會傳回物件。  
+3. 如果文字會話已經存在，則您不需要建立一個，而且 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> 會傳回現有物件的指標。 使用此指標來列舉和建立大綱區域。 否則，呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> 以建立緩衝區的隱藏文字會話。 傳回物件的指標 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> 。  
   
     > [!NOTE]
-    > 當您呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>，您可以指定隱藏的文字，用戶端 (也就是<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>物件)。 此用戶端通知時隱藏的文字，或是大綱區域為展開或摺疊，只要使用者。  
+    > 當您呼叫時， <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> 可以指定隱藏文字用戶端 (也就是 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>) 的物件。 當使用者展開或折迭隱藏的文字或外框區域時，此用戶端會通知您。  
   
-4. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>結構) 參數：指定的值為<xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE>中`iType`隸屬<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>結構，以指出您要建立大綱區域，而不是隱藏的區域。 指定的區域是用戶端控制，或以控制編輯器`dwBehavior`隸屬<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>結構。 智慧型大綱實作可以包含各種編輯器和用戶端控制大綱區域。 指定大綱區域摺疊時，例如 "..."，在顯示的橫幅文字`pszBanner`隸屬<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>結構。 編輯器的預設橫幅文字的隱藏區域為"..."。
+4. 呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> 結構) 參數：在結構的成員中指定的值， <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> `iType` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> 表示您要建立外框區域，而不是隱藏的區域。 指定區域是否在結構的成員中是由用戶端控制或編輯的 `dwBehavior` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> 。 您的智慧型大綱執行可以混合使用編輯器和用戶端控制的大綱區域。 指定在結構的成員中折迭大綱區域（例如 "..."）時所顯示的橫幅文字。 `pszBanner` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> 編輯器的隱藏區域預設橫幅文字為「...」。

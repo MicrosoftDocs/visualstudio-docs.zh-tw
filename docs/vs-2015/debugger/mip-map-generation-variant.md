@@ -1,5 +1,5 @@
 ---
-title: Mip-map 產生變異 |Microsoft Docs
+title: Mip 對應產生變異數 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3ac567677776c225008a581cc4d5de85ec2c882d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383967"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839121"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map 產生變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ for (auto&& mip_level : initial_data)
 d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)  
 ```  
   
- 若要建立含有完整 MIP 鏈結的紋理，請將 `D3D11_TEXTURE2D_DESC::MipLevels` 設定為 0。 完整 mip 鏈結中的 mip 層級數目是 floor(log2(n) + 1），其中 n 是紋理的最大維度。  
+ 若要建立含有完整 MIP 鏈結的紋理，請將 `D3D11_TEXTURE2D_DESC::MipLevels` 設定為 0。 完整 mip 鏈中的 mip 層級數目是 floor (log2 (n) + 1) ，其中 n 是材質的最大維度。  
   
  請記住，當您將初始資料提供給 `CreateTexture2D` 時，必須提供每個 MIP 層級的 D3D11_SUBRESOURCE_DATA 物件。  
   
@@ -73,4 +73,4 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 > 如果您想要提供您的 MIP 層級內容，而不是自動產生該內容，則必須使用可支援經過 MIP 對應之紋理的影像編輯器來建立紋理，然後載入檔案，並將 MIP 層級傳遞給 `CreateTexture2D`。  
   
 ## <a name="see-also"></a>另請參閱  
- [二分之一/四分之一紋理維度變化](../debugger/half-quarter-texture-dimensions-variant.md)
+ [半/季材質維度變異](../debugger/half-quarter-texture-dimensions-variant.md)

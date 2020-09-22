@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：從 [動作] 窗格中的文件中插入文字
+title: 逐步解說：從執行窗格將文字插入檔
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,28 +16,28 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414286"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840199"
 ---
-# <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>逐步解說：從 [動作] 窗格中的文件中插入文字
-  本逐步解說示範如何建立 Microsoft Office Word 文件中的 [動作] 窗格。 [動作] 窗格包含兩個控制項收集輸入，然後將文字傳送到文件。
+# <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>逐步解說：從執行窗格將文字插入檔
+  本逐步解說示範如何在 Microsoft Office Word 檔中建立執行窗格。 [動作] 窗格包含兩個可收集輸入的控制項，然後將文字傳送至檔。
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- 這個逐步解說將說明下列工作：
+ 本逐步解說將說明下列工作：
 
-- 使用在執行窗格控制項上的 Windows Form 控制項，以設計介面。
+- 使用動作窗格控制項上的 Windows Forms 控制項來設計介面。
 
-- [動作] 窗格開啟時顯示的應用程式。
+- 當應用程式開啟時顯示 [動作] 窗格。
 
 > [!NOTE]
-> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱 [個人化 VISUAL STUDIO IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>必要條件
- 您需要下列元件才能完成此逐步解說：
+ 您需要下列元件才能完成這個逐步解說：
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -48,140 +48,140 @@ ms.locfileid: "63414286"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 建立 Word 文件專案名稱**My 基本的 [動作] 窗格**。 在精靈中，選取**建立新的文件**。 如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 使用 [ **我的基本動作] 窗格**建立 Word 檔專案。 在嚮導中，選取 [ **建立新檔**]。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-     Visual Studio 設計工具中開啟新的 Word 文件，並將**My 基本的 動作 窗格**專案加入**方案總管 中**。
+     Visual Studio 會在設計工具中開啟新的 Word 檔，並將 [ **我的基本動作] 窗格** 專案加入 **方案總管**。
 
-## <a name="add-text-and-bookmarks-to-the-document"></a>加入文件中的文字和書籤
- [動作] 窗格會將文字傳送至文件中的書籤。 若要設計文件，輸入一些文字，以建立基本表單。
+## <a name="add-text-and-bookmarks-to-the-document"></a>將文字和書簽新增至檔
+ [動作] 窗格會將文字傳送至檔中的書簽。 若要設計檔，請輸入一些文字來建立基本的表單。
 
-### <a name="to-add-text-to-your-document"></a>將文字加入文件
+### <a name="to-add-text-to-your-document"></a>將文字加入檔
 
-1. 輸入下列文字插入 Word 文件：
+1. 在 Word 檔中輸入下列文字：
 
-    **2008 年 3 月 21日日**
+    **2008年3月21日**
 
-    **名稱**
+    **Name**
 
     **位址**
 
-    **這是基本的動作 窗格，在 Word 中的範例。**
+    **這是 Word 中的基本動作窗格範例。**
 
-   您可以加入<xref:Microsoft.Office.Tools.Word.Bookmark>藉由將它從您的文件的控制項**工具箱**在 Visual Studio 中或使用**書籤**在 Word 中的對話方塊。
+   您可以將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項從 [ **工具箱** ] 中的 [Visual Studio] 中拖曳，或使用 Word 中的 [ **書簽** ] 對話方塊，將控制項加入檔。
 
-### <a name="to-add-a-bookmark-control-to-your-document"></a>若要加入書籤控制項加入文件
+### <a name="to-add-a-bookmark-control-to-your-document"></a>將書簽控制項新增至檔
 
-1. 從**Word 控制項**索引標籤**工具箱**，拖曳<xref:Microsoft.Office.Tools.Word.Bookmark>控制項加入文件。
+1. 從 [**工具箱**] 的 [ **Word 控制項**] 索引標籤，將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項拖曳至檔。
 
-     **加入書籤控制項** 對話方塊隨即出現。
+     [ **加入書簽控制項** ] 對話方塊隨即出現。
 
-2. 選取的字詞**名稱**，而不選取段落標記，然後按一下**確定**。
+2. 選取 [單字 **名稱**]，但不選取段落標記，然後按一下 **[確定]**。
 
     > [!NOTE]
-    > 段落標記應該是外部書籤。 如果文件中看不到段落標記，按一下**工具**功能表上，指向**Microsoft Office Word Tools** ，然後按一下 **選項**。 按一下 [**檢視**索引標籤，然後選取**段落標記**中的核取方塊**格式化標記**一節**選項**] 對話方塊。
+    > 段落標記應該在書簽之外。 如果檔中沒有顯示段落標記，請按一下 [ **工具** ] 功能表，指向 [ **Microsoft Office Word 工具** ]，然後按一下 [ **選項**]。 按一下 [**流覽**] 索引標籤，然後在 [**選項**] 對話方塊的 [**格式化標示**] 區段中，選取 [**段落標記**] 核取方塊。
 
-3. 在 **屬性**視窗中，變更**名稱**屬性**Bookmark1**至**showName**。
+3. 在 [**屬性**] 視窗中，將**Bookmark1**的**Name**屬性變更為**showName**。
 
-4. 選取的字詞**地址**，而不需選取的段落標記。
+4. 選取 [單字 **位址**]，而不選取段落標記。
 
-5. 在上**插入**功能區 索引標籤中**連結**群組中，按一下**書籤**。
+5. 在功能區的 [ **插入** ] 索引標籤上，按一下 [ **連結** ] 群組中的 [ **書簽**]。
 
-6. 在 [**書籤**] 對話方塊中，輸入**showAddress**中**書籤名稱**方塊，然後按一下**新增**。
+6. 在 [**書簽**] 對話方塊中，于 [**書簽名稱**] 方塊中輸入**ShowAddress** ，然後按一下 [**新增**]。
 
 ## <a name="add-controls-to-the-actions-pane"></a>將控制項新增至 [動作] 窗格
- 若要設計執行窗格介面，將執行窗格控制項新增至專案，並再將 Windows Form 控制項加入執行窗格控制項。
+ 若要設計執行窗格介面，請在專案中加入 [執行] 窗格控制項，然後將 Windows Forms 控制項加入至 [動作] 窗格控制項。
 
 ### <a name="to-add-an-actions-pane-control"></a>若要加入執行窗格控制項
 
-1. 選取 [ **My 基本的 [動作] 窗格**專案中**方案總管] 中**。
+1. 在**方案總管**中選取 [**我的基本動作] 窗格**專案。
 
-2. 在 [專案]  功能表中，按一下 [加入新項目]  。
+2. 在 [專案]**** 功能表上，按一下 [加入新項目]****。
 
-3. 在 **加入新項目** 對話方塊中，按一下**執行窗格控制項**，將控制項**InsertTextControl，** ，按一下 **新增**。
+3. 在 [ **加入新專案** ] 對話方塊中，按一下 [ **動作] 窗格控制項**，將控制項命名為 **InsertTextControl，** 然後按一下 [ **加入**]。
 
-#### <a name="to-add-windows-form-controls-to-the-actions-pane-control"></a>將 Windows Form 控制項加入執行窗格控制項
+#### <a name="to-add-windows-form-controls-to-the-actions-pane-control"></a>若要將 Windows Form 控制項加入至執行窗格控制項
 
-1. 如果執行窗格控制項不顯示在設計工具中，按兩下**InsertTextControl**。
+1. 如果在設計工具中看不到 [動作] 窗格控制項，請按兩下 [ **InsertTextControl**]。
 
-2. 從**通用控制項**索引標籤**工具箱**，拖曳**標籤**執行窗格控制項的控制項。
+2. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤，將 [**標籤**] 控制項拖曳至 [動作] 窗格控制項。
 
-3. 變更**文字**屬性的 Label 控制項，以**名稱**。
+3. 將 [標籤] 控制項的 [ **文字** ] 屬性變更為 [ **名稱**]。
 
-4. 新增**Textbox**控制項加入執行窗格控制項，並變更下列屬性。
+4. 將 **Textbox** 控制項新增至執行窗格控制項，並變更下列屬性。
 
     |屬性|值|
     |--------------|-----------|
     |**名稱**|**getName**|
-    |**Size**|**130, 20**|
+    |**大小**|**130, 20**|
 
-5. 新增第二**標籤**控制項加入執行窗格控制項，並變更**文字**屬性設**位址**。
+5. 將第二個 **標籤** 控制項新增至 [執行] 窗格控制項，並將 [ **Text** ] 屬性變更為 [ **Address**]。
 
-6. 新增第二**Textbox**控制項加入執行窗格控制項，並變更下列屬性。
+6. 將第二個 **Textbox** 控制項新增至執行窗格控制項，並變更下列屬性。
 
     |屬性|值|
     |--------------|-----------|
     |**名稱**|**getAddress**|
-    |**接受傳回**|**True**|
+    |**接受 Return**|**True**|
     |**多行**|**True**|
-    |**Size**|**130, 40**|
+    |**大小**|**130, 40**|
 
-7. 新增 **按鈕** 控制項加入執行窗格控制項，並變更下列屬性。
+7. 將 **按鈕** 控制項新增至執行窗格控制項，並變更下列屬性。
 
     |屬性|值|
     |--------------|-----------|
-    |**名稱**|**addText**|
+    |**名稱**|**Shapes.addtext**|
     |**Text**|**插入**|
 
-## <a name="add-code-to-insert-text-into-the-document"></a>將程式碼加入文件中插入文字
- 在 [動作] 窗格中，撰寫程式碼中的插入文字的文字方塊內適當<xref:Microsoft.Office.Tools.Word.Bookmark>文件中的控制項。 您可以使用`Globals`類別來存取文件上的控制項從 [動作] 窗格上的控制項。 如需詳細資訊，請參閱 <<c0> [ 全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。
+## <a name="add-code-to-insert-text-into-the-document"></a>新增程式碼以將文字插入檔中
+ 在 [動作] 窗格中，撰寫程式碼，將文字方塊中的文字插入 <xref:Microsoft.Office.Tools.Word.Bookmark> 檔中的適當控制項。 您可以使用 `Globals` 類別，從 [動作] 窗格上的控制項存取檔上的控制項。 如需詳細資訊，請參閱 [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。
 
-### <a name="to-insert-text-from-the-actions-pane-in-a-bookmark-in-the-document"></a>若要從書籤在文件中的 [動作] 窗格中插入文字
+### <a name="to-insert-text-from-the-actions-pane-in-a-bookmark-in-the-document"></a>若要從檔中的書簽插入 [動作] 窗格中的文字
 
-1. 將下列程式碼加入<xref:System.Windows.Forms.Control.Click>事件處理常式**addText**  按鈕。
+1. 將下列程式碼加入至 <xref:System.Windows.Forms.Control.Click> [ **shapes.addtext** ] 按鈕的事件處理常式。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]
      [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]
 
-2. 在 C# 中，您必須加入用於按鈕 click 事件處理常式。 您可以將此程式碼中的放`InsertTextControl`建構函式呼叫之後`InitializeComponent`。 如需建立事件處理常式的資訊，請參閱[How to:建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。
+2. 在 c # 中，您必須加入按一下按鈕的事件處理常式。 在呼叫之後，您可以將此程式碼放在函式中 `InsertTextControl` `InitializeComponent` 。 如需建立事件處理常式的詳細資訊，請參閱 [如何：在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]
 
 ## <a name="add-code-to-show-the-actions-pane"></a>加入程式碼以顯示 [動作] 窗格
- 若要顯示 [動作] 窗格，請新增您所建立的控制項至控制項集合。
+ 若要顯示 [執行] 窗格，請將您建立的控制項加入至控制項集合。
 
-### <a name="to-show-the-actions-pane"></a>若要顯示 [動作] 窗格
+### <a name="to-show-the-actions-pane"></a>顯示動作窗格
 
-1. 建立執行窗格控制項中的新執行個體`ThisDocument`類別。
+1. 在類別中建立執行窗格控制項的新實例 `ThisDocument` 。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#10](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#10)]
      [!code-vb[Trin_VstcoreActionsPaneWord#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#10)]
 
-2. 將下列程式碼加入<xref:Microsoft.Office.Tools.Word.Document.Startup>事件處理常式`ThisDocument`。
+2. 將下列程式碼加入至的 <xref:Microsoft.Office.Tools.Word.Document.Startup> 事件處理常式 `ThisDocument` 。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#11)]
 
 ## <a name="test-the-application"></a>測試應用程式
- 測試您的文件，確認 [動作] 窗格隨即開啟，在開啟文件，並按一下按鈕時將文字方塊中輸入文字插入書籤。
+ 測試您的檔，以確認開啟檔時，[動作] 窗格會開啟，並在按下按鈕時，將輸入文字方塊的文字插入書簽中。
 
 ### <a name="to-test-your-document"></a>測試文件
 
-1. 按下**F5**執行您的專案。
+1. 按 **F5** 執行您的專案。
 
-2. 確認 [動作] 窗格已顯示。
+2. 確認 [動作] 窗格是可見的。
 
-3. 在 動作 窗格上的文字方塊中輸入您的名稱和地址，然後按一下 **插入**。
+3. 在 [動作] 窗格的文字方塊中輸入您的名稱和位址，然後按一下 [ **插入**]。
 
 ## <a name="next-steps"></a>後續步驟
  接著可以執行下列一些工作：
 
-- 在 Excel 中建立執行窗格。 如需詳細資訊，請參閱[如何：執行窗格加入 Excel 活頁簿](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))。
+- 在 Excel 中建立執行窗格。 如需詳細資訊，請參閱 [如何：將執行窗格加入至 Excel 活頁簿](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))。
 
-- 將資料繫結至執行窗格上的控制項。 如需詳細資訊，請參閱[逐步解說：將資料繫結至 Word 執行窗格上的控制項](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)。
+- 將資料系結至執行窗格上的控制項。 如需詳細資訊，請參閱 [逐步解說：將資料系結至 Word 執行窗格上的控制項](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)。
 
 ## <a name="see-also"></a>另請參閱
-- [執行窗格概觀](../vsto/actions-pane-overview.md)
-- [如何：執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
-- [如何：執行窗格加入 Excel 活頁簿](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))
-- [如何：管理執行窗格控制項配置](../vsto/how-to-manage-control-layout-on-actions-panes.md)
-- [書籤控制項](../vsto/bookmark-control.md)
+- [動作窗格總覽](../vsto/actions-pane-overview.md)
+- [如何：將執行窗格加入 Word 檔或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [如何：將執行窗格加入至 Excel 活頁簿](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))
+- [如何：管理執行窗格的控制項版面配置](../vsto/how-to-manage-control-layout-on-actions-panes.md)
+- [書簽控制項](../vsto/bookmark-control.md)

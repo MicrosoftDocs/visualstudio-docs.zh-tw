@@ -1,5 +1,5 @@
 ---
-title: 組態選項的概觀 |Microsoft Docs
+title: 設定選項總覽 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,66 +12,66 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0b37d93adbd2accb7a12fb176ab15aafc6914190
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441516"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838856"
 ---
 # <a name="configuration-options-overview"></a>組態選項概觀
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-中的專案[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]可支援多個可以建置、 偵錯、 執行，及/或已部署的組態。 組態是一組具名屬性、 通常編譯器參數和檔案位置的描述組建類型。 根據預設，新的方案包含兩個組態偵錯和發行。 使用預設值，或修改以符合您特定的解決方案和/或專案需求，可以套用這些設定。 有些封裝可以建立兩種方式： 做為 ActiveX 編輯器，或為就地元件。 若要支援多個組態，但不需要專案。 如果沒有可用的只有一個組態，該組態會對應到所有的方案組態。  
+中的專案 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 可支援多個可建立、調試、執行和/或部署的設定。 「設定」（configuration）是一種以命名屬性集（通常是編譯器參數和檔案位置）描述的組建類型。 根據預設，新解決方案包含兩個設定： Debug 和 Release。 您可以使用預設設定來套用這些設定，或修改這些設定以符合您的特定解決方案及/或專案需求。 某些封裝可以用兩種方式來建立：作為 ActiveX 編輯器或就地元件。 不過，專案不需要支援多個設定。 如果只有一個可用的設定，則該設定會對應到所有解決方案設定。  
   
- 組態通常包含兩個部分： 平台設定與組態名稱 （例如偵錯或發行）。 組態的平台名稱識別作業系統平台的組態的目標，例如 API 設定的環境。 使用者的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]無法建立平台，他們必須從選取項目選擇的專案，可讓 VSPackage。 當使用者安裝 VSPackage，建立的封裝開發期間傳遞平台可能會出現任何所需的平台名稱為基礎的封裝建立者所設定的任何條件。 然後，使用者可以選取從可透過 VSPackage 時的屬性頁會具現化的平台的清單。  
+ 設定通常是由兩個部分所組成：設定名稱 (例如 Debug 或 Release) 和平臺設定。 設定的平臺名稱會識別設定的目標環境，例如 API 集或作業系統平臺。 的使用者 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 無法建立平臺; 他們必須從 [專案 VSPackage] 允許的選項中選擇。 當使用者安裝 VSPackage 時，在封裝開發期間建立的傳遞平臺可以根據封裝建立者所設定的任何準則，呈現所需的任何平臺名稱。 然後，使用者就可以在屬性頁具現化時，從 VSPackage 提供的平臺清單中進行選取。  
   
- 平台名稱是選擇性的因為並非所有的專案支援的平台概念。 當一個組態沒有平台名稱時，則請字串 [不適用] 會顯示在 UI 中。  
+ 平臺名稱是選擇性的，因為並非所有專案都支援平臺的概念。 當設定缺少平臺名稱時，在 UI 中會顯示字串 "N/A"。  
   
- 每個解決方案都有它自己組組態，其中只有一個可使用一次。 方案組態是一份不超過一個組態中每個專案。 「 超過 」 的規定是因為要排除的方案組態的專案選項。 使用者可以建立自己的自訂方案組態。  
+ 每個解決方案都有自己的一組設定，一次只能有一個作用中。 方案設定是每個專案中的一組不只一項設定。 [不超過] 規定是因為從方案設定中排除專案的選項。 使用者可以建立自己的自訂解決方案設定。  
   
- 下表說明專案的一般組態設定。 資料列會標示為 組態名稱與平台名稱的資料行。  
+ 下表說明專案的一般設定設定。 這些資料列會標示設定名稱和具有平臺名稱的資料行。  
   
-|組態名稱|平台，Win32|平台-Win64|  
+|設定名稱|平臺-Win32|平臺-Win64|  
 |------------------------|----------------------|----------------------|  
-|偵錯|\<偵錯 Win32 設定 >|\<偵錯 Win64 設定 >|  
-|版本|\<發行 Win32 設定 >|\<發行 Win64 設定 >|  
-|MyConfig|N/A|\<MyConfig Win64 設定 >|  
+|偵錯|\<Debug Win32 settings>|\<Debug Win64 settings>|  
+|版本|\<Release Win32 settings>|\<Release Win64 settings>|  
+|Myconfig.xml|N/A|\<MyConfig Win64 settings>|  
   
 > [!NOTE]
-> 您無法建立排除 「 Win32 」 平台，除非您的目標專案不支援 Win32"MyConfig 」 的方案組態。  
+> 除非您的目標專案不支援 Win32，否則您無法建立排除 "Win32" 平臺的「Myconfig.xml」方案設定。  
   
- 變更解決方案的作用中設定該方案中選取專案會建置、 執行、 偵錯或部署的組態的設定。 例如，如果您從版本變更現用方案組態設為偵錯時，該方案中的所有專案會自動都建置專案的方案的偵錯組態所示的組態。 專案的設定通常也是具名的偵錯除非使用者已手動變更環境的 Configuration Manager 中的流程範本。  
+ 變更解決方案的作用中設定，會選取該方案中所建立、執行、調試或部署的專案設定集。 例如，如果您將使用中的方案設定從 [發行] 變更為 [偵錯工具]，則該方案內的所有專案都會自動以方案的 Debug 設定中指出的專案設定來建立。 專案的設定通常也會命名為 Debug，除非使用者已在環境的 Configuration Manager 中進行手動變更。  
   
- 儲存每個專案的方案組態屬性包含專案名稱、 專案組態名稱、 旗標以指出可建立或部署，以及平台名稱。 如需詳細資訊，請參閱 <<c0> [ 方案組態](../../extensibility/internals/solution-configuration.md)。  
+ 針對每個專案儲存的方案設定屬性包含專案名稱、專案設定名稱、旗標，以指出是否要建立或部署，以及平臺名稱。 如需詳細資訊，請參閱 [方案](../../extensibility/internals/solution-configuration.md)設定。  
   
- 使用者可以檢視和選取的階層架構 (在 [方案總管] 中) 中的解決方案，並開啟屬性頁設定的解決方案組態參數。 同樣地，您可以檢視和設定方案總管 中選取專案，然後開啟該專案的屬性頁的專案組態參數。  
+ 使用者可以藉由選取階層中的方案 (方案總管) ，然後開啟屬性頁，來查看及設定解決方案設定參數。 同樣地，您可以在方案總管中選取專案，然後開啟該專案的屬性頁，來查看和設定專案設定參數。  
   
- 使用者也可以建置發行組態設定和所有其餘部分使用與偵錯組態設定，如有必要的一個專案。 如需詳細資訊，請參閱 <<c0> [ 建置的專案組態](../../extensibility/internals/project-configuration-for-building.md)。  
+ 使用者也可以使用發行設定來建立一個專案，並在必要時使用 Debug configuration 設定來建立所有其餘專案。 如需詳細資訊，請參閱 [建立的專案](../../extensibility/internals/project-configuration-for-building.md)設定。  
   
- 下圖顯示如何實作介面，可支援方案和專案組態：  
+ 下圖顯示如何執行支援方案和專案設定的介面：  
   
  ![組態介面圖形](../../extensibility/internals/media/vsconfiginterfaces.gif "vsConfigInterfaces")  
-組態介面  
+設定介面  
   
- 上圖與相關的一些注意事項：  
+ 與上圖相關的一些附注：  
   
-- `IDispatch` 已標示為選擇性組態物件中。 具體來說，是選擇性的以瀏覽物件上設定介面。  
+- `IDispatch` 在設定物件中標示為選用。 具體而言，在流覽物件上具有設定介面是選擇性的。  
   
-- `IVsDebuggableProjectCfg` 標示為在組態物件中，選擇性，但需要偵錯支援。  
+- `IVsDebuggableProjectCfg` 在設定物件中標示為選擇性，但需要進行偵錯工具才能支援。  
   
-- `IVsProjectCfg2` 標示為在組態物件中，選擇性，但需要群組支援的輸出。  
+- `IVsProjectCfg2` 在設定物件中標示為選擇性，但需要輸出群組支援。  
   
-- `Config Provider`物件標示為選擇性的物件，但選項是實作它的位置。 您可能會實作物件，或個別的物件上的 project 物件。  
+- `Config Provider`物件會標示為選擇性物件，但選項是要在其中執行的選項。 您可以在專案物件或個別的物件上，執行物件。  
   
-- `IVsCfgProvider2` 所需的支援平台和組態編輯。 `IVsCfgProvider` 就已足夠，如果您不會實作該功能。  
+- `IVsCfgProvider2` 需要進行平臺支援和編輯設定。 `IVsCfgProvider` 如果您未執行該功能，就已足夠。  
   
-- 其中某些物件顯示圖表中，為不同的物件可以結合到相同的類別，在可行的情況取決於您特定的設計需求。 在這一節的其他主題，不過，物件與這些物件相關聯的介面將會討論根據圖表中所示的案例。  
+- 在圖表中顯示為個別物件的某些物件，可根據您的特定設計需求，結合到相同的類別中。 不過，在本節的其他主題中，會根據圖表中呈現的案例來討論與這些物件相關聯的物件和介面。  
   
-- 某些物件會個別實作。 比方說，專案和方案建置會發生在個別的執行緒以及所要物件，描述組建組態分開管理組建生活物件中。  
+- 某些物件會分開執行。 例如，專案和方案建立會在個別的執行緒上發生，而用來管理組建的物件則與描述組建設定的物件分開。  
   
-  如需的組態物件的介面和在上圖中的組態提供者物件介面的詳細資訊，請參閱[專案組態物件](../../extensibility/internals/project-configuration-object.md)。 颾魤 ㄛ[建置的專案組態](../../extensibility/internals/project-configuration-for-building.md)上的組態產生器及建置相依性物件的介面，提供詳細的資訊並[管理部署的專案組態](../../extensibility/internals/project-configuration-for-managing-deployment.md)進一步描述連接到組態部署器部署相依性物件的介面。 最後，[輸出的專案組態](../../extensibility/internals/project-configuration-for-output.md)描述的輸出群組和輸出物件的介面，以及使用的屬性頁來檢視和設定組態相依屬性。  
+  如需有關上圖中設定物件介面和設定提供者物件介面的詳細資訊，請參閱 [專案設定物件](../../extensibility/internals/project-configuration-object.md)。 此外， [用於組建的專案](../../extensibility/internals/project-configuration-for-building.md) 設定會提供有關設定產生器和組建相依性物件介面的詳細資訊，以及 [用於管理部署的專案](../../extensibility/internals/project-configuration-for-managing-deployment.md) 設定，會進一步說明附加至設定部署器和部署相依性物件的介面。 最後， [輸出的專案](../../extensibility/internals/project-configuration-for-output.md) 設定會描述輸出群組和輸出物件介面，以及使用屬性頁來查看和設定與設定相關的屬性。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   
- [建置的專案組態](../../extensibility/internals/project-configuration-for-building.md)   
+ [組建的專案設定](../../extensibility/internals/project-configuration-for-building.md)   
  [方案組態](../../extensibility/internals/solution-configuration.md)

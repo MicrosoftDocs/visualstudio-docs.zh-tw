@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d08a7eb20c01568b3501f16348eb19afdcaefa2c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444374"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838950"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>標準和自訂工具組的組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,13 +34,13 @@ MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用
 |     4.0      |           *Windows 安裝路徑*\Microsoft.NET\Framework\v4.0.30319\            |
 |     12.0     |                          *%ProgramFiles%* \MSBuild\12.0\bin                           |
 
- `ToolsVersion` 值決定 Visual Studio 產生的專案使用哪一個工具組。 在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中，預設值是 "12.0" (不論專案檔中指定何種版本)，但您可以在命令提示字元使用 **/toolsversion** 參數覆寫該屬性。 如需此屬性的相關資訊以及指定 `ToolsVersion` 的其他方式，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。  
+ `ToolsVersion` 值決定 Visual Studio 產生的專案使用哪一個工具組。 在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中，預設值是 "12.0" (不論專案檔中指定何種版本)，但您可以在命令提示字元使用 **/toolsversion** 參數覆寫該屬性。 如需這個屬性的詳細資訊以及指定的其他方式 `ToolsVersion` ，請參閱覆 [寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。  
 
  如未指定 `ToolsVersion`，則登錄機碼 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\\<版本號碼\>\DefaultToolsVersion** 會定義 `ToolsVersion`，一律為 2.0。  
 
  下列登錄機碼會指定 MSBuild.exe 的安裝路徑。  
 
-|登錄機碼|索引鍵名稱|字串索引鍵值|  
+|登錄機碼|金鑰名稱|字串索引鍵值|  
 |------------------|--------------|----------------------|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\2.0\|MSBuildToolsPath|.NET Framework 2.0 安裝路徑|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\|MSBuildToolsPath|.NET Framework 3.5 安裝路徑|  
@@ -97,9 +97,9 @@ MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用
 
 - **$(MSBuildBinPath)** 設定為 `ToolsPath` 值，是在登錄或定義 `ToolsVersion` 的組態檔中指定。 登錄或組態檔中的 `$(MSBuildToolsPath)` 設定會指定核心工作和目標的位置。 在專案檔中，這會對應至 $(MSBuildBinPath) 屬性，也會對應至 $(MSBuildToolsPath) 屬性。  
 
-- `$(MSBuildToolsPath)` 是保留的屬性，由組態檔中指定的 MSBuildToolsPath 屬性提供。 (這個屬性會取代 `$(MSBuildBinPath)`。 不過，為相容性之故會執行 `$(MSBuildBinPath)`。)自訂工具組必須定義 `$(MSBuildToolsPath)` 或 `$(MSBuildBinPath)`，但不能同時定義兩者，除非它們有相同的值。  
+- `$(MSBuildToolsPath)` 是保留的屬性，由組態檔中指定的 MSBuildToolsPath 屬性提供。 (這個屬性會取代 `$(MSBuildBinPath)`。 不過， `$(MSBuildBinPath)` 會為了相容性而繼續進行。 ) 自訂工具組必須定義 `$(MSBuildToolsPath)` 或 `$(MSBuildBinPath)` ，但不能同時定義兩者，除非兩者都有相同的值。  
 
   您也可以使用新增 MSBuildToolsPath 屬性時所用的相同語法，在組態檔中新增自訂的工具版本特定屬性。 為使專案檔能夠使用這些自訂屬性，請使用和組態檔指定的值名稱相同的名稱。 您可以在組態檔中定義工具組，但不能定義子工具組。  
 
 ## <a name="see-also"></a>另請參閱  
- [工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
+ [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

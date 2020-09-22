@@ -1,5 +1,5 @@
 ---
-title: 支援多個版本的 Visual Studio 2015 |Microsoft Docs
+title: 支援 Visual Studio 2015 的多重版本 |Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,38 +13,38 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8f4393a88a689e2a923291ada37a9b6d85718db5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431361"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838770"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>支援多個 Visual Studio 版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-詞彙*並排顯示*表示您可以用來安裝，並維護多個版本的同一部電腦上的產品。 適用於 Vspackage，也就是說，使用者可以擁有數個相同的電腦上安裝的 Visual Studio 版本。 不過，您不能有並排顯示 Vspackage 載入單一版本的 Visual Studio 版本。
+此詞彙 *並存* 表示您可以在同一部電腦上安裝和維護產品的多個版本。 針對 Vspackage，這表示使用者可以在同一部電腦上安裝數個 Visual Studio 版本。 不過，您不能將 Vspackage 的並存版本載入 Visual Studio 的單一版本。
 
- VSPackage 可以載入並排顯示版本的 Visual Studio 之前，請考慮下列各項：
+ 在您將 VSPackage 載入 Visual Studio 的並存版本之前，請考慮下列事項：
 
-- 您必須決定您想要遵循的並排顯示實作策略。
+- 您必須決定要遵循的並存執行策略。
 
-     如需詳細資訊，請參閱 <<c0> [ 選擇之間共用和建立版本的 Vspackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md)。
+     如需詳細資訊，請參閱 [在共用和建立版本的 Vspackage 之間進行選擇](../extensibility/choosing-between-shared-and-versioned-vspackages.md)。
 
-- 您的方案和專案檔格式必須符合您的實作策略。
+- 您的解決方案和專案檔案格式必須符合您的執行策略。
 
-     如需詳細資訊，請參閱 <<c0> [ 升級自訂專案](../misc/upgrading-custom-projects.md)並[並排顯示部署的註冊檔案名稱副檔名](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)。
+     如需詳細資訊，請參閱 [升級自訂專案](../misc/upgrading-custom-projects.md) 和 [註冊並存部署的](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)副檔名。
 
-- 您的安裝程式必須處理您的實作策略，以便建立版本的元件，以及所有版本，之間共用的元件已正確安裝並註冊。
+- 您的安裝程式必須處理您的執行策略，以便正確安裝及註冊已建立版本的元件，以及在所有版本間共用的元件。
 
-     如需詳細資訊，請參閱 <<c0> [ 使用 Windows Installer 安裝 Vspackage](../extensibility/internals/installing-vspackages-with-windows-installer.md)也[元件管理](../extensibility/internals/component-management.md)。
+     如需詳細資訊，請參閱 [使用 Windows Installer 安裝 vspackage](../extensibility/internals/installing-vspackages-with-windows-installer.md) 以及 [元件管理](../extensibility/internals/component-management.md)。
 
     > [!NOTE]
-    > 安裝新版 Visual Studio 也會安裝對應的版本[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 例如，在相同電腦上安裝 Visual Studio 2010 和 Visual Studio 2012 也會安裝 4.0 和 4.5 版[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]分別。
+    > 安裝某個版本的 Visual Studio 也會安裝對應的版本 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 。 例如，在同一部電腦上安裝 Visual Studio 2010 和 Visual Studio 2012，也會分別安裝4.0 和4.5 版 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 。
 
 ## <a name="in-this-section"></a>本節內容
- [選擇之間共用和建立版本的 Vspackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md)說明如何解決在 VSPackage 中的並排顯示問題。
+ [在共用和建立版本的 Vspackage 之間進行選擇](../extensibility/choosing-between-shared-and-versioned-vspackages.md) 說明如何解決 VSPackage 中並存的問題。
 
- [註冊副檔名，並排顯示部署](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)描述 VSPackage 如何在並排顯示的案例中註冊的檔案關聯。
+ [註冊並存部署的](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md) 副檔名描述 VSPackage 如何在並存案例中註冊檔案關聯。
 
 ## <a name="related-sections"></a>相關章節
- [安裝 Vspackage](../misc/installing-vspackages.md)討論如何建置和安裝 Vspackage 以及如何支援同時執行多個版本的 Visual Studio 的使用者。
+ [安裝 vspackage](../misc/installing-vspackages.md) 討論如何建立和安裝 Vspackage，以及如何支援同時執行多個版本 Visual Studio 的使用者。

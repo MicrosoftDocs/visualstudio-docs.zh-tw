@@ -1,5 +1,5 @@
 ---
-title: 儲存自訂文件 |Microsoft Docs
+title: 儲存自訂檔 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,36 +13,36 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d41b075111797a12d68b4aa30c23e3cbacd8058a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432105"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839247"
 ---
 # <a name="saving-a-custom-document"></a>儲存自訂文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-環境控制代碼**儲存**，**另存新檔**，並**全部儲存**命令。 當使用者按一下**儲存**，**另存新檔**，**或 全部儲存**上**檔案**功能表或關閉方案，導致 全部儲存，下列處理程序就會發生。  
+環境會處理 [ **儲存**]、[ **另存**新檔] 和 [ **儲存所有** ] 命令。 當使用者按一下 [ **儲存**]、[ **另存**新檔]，或 [檔案] 功能表上的 [ **全部儲存** ] **或 [** 全部儲存] 或 [關閉方案] 時，就會出現下列程式。  
   
- ![客戶編輯器儲存](../../extensibility/internals/media/private.gif "私用")  
-儲存另存新檔，及儲存所有的命令處理的自訂編輯器  
+ ![客戶編輯器儲存](../../extensibility/internals/media/private.gif "Private")  
+[儲存]、[另存新檔]，並儲存自訂編輯器的所有命令處理  
   
- 下列步驟會詳細說明此程序：  
+ 下列步驟會詳細說明此程式：  
   
-1. 針對**儲存**並**另存新檔**命令，在此環境使用<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服務以判斷使用中的文件視窗，並因此項目應該儲存。 現用文件視窗知道後，環境就會尋找文件中執行的 document 資料表的階層指標和項目識別項 (itemID)。 如需詳細資訊，請參閱 <<c0> [ 執行文件表格](../../extensibility/internals/running-document-table.md)。  
+1. 針對 [ **儲存** ] 和 [ **另存** 新檔] 命令，環境 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> 會使用服務來決定使用中的文件視窗，以及應儲存的專案。 一旦知道使用中的文件視窗之後，環境會在執行中的檔資料表中尋找檔 (itemID) 的階層指標和專案識別碼。 如需詳細資訊，請參閱執行 [檔資料表](../../extensibility/internals/running-document-table.md)。  
   
-     全部儲存 命令，環境會使用的資訊，在執行中的文件表格中編譯儲存的所有項目的清單。  
+     針對 [全部儲存] 命令，環境會使用執行中的檔資料表中的資訊來編譯要儲存的所有專案清單。  
   
-2. 當解決方案收到<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>呼叫時，它會逐一選取項目組 (也就是由多重選取<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服務)。  
+2. 當解決方案收到呼叫時 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> ，會逐一查看一組選取的專案， (也就是服務所公開的多個選項 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>) 。  
   
-3. 每個項目選取範圍中，解決方案會使用階層指標來呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A>方法，以判斷是否應該啟用 [儲存] 功能表命令。 如果一或多個項目已變更，則會啟用 [儲存] 命令。 如果階層會使用標準的編輯器，然後查詢的階層委派中途至編輯器的狀態呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A>方法。  
+3. 在選取專案中的每個專案上，方案都會使用階層指標來呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> 方法，以判斷是否應該啟用 [儲存] 功能表命令。 如果有一或多個專案已變更，則會啟用 [儲存] 命令。 如果階層使用標準編輯器，則階層會藉由呼叫方法，將查詢變更狀態委派給編輯器 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> 。  
   
-4. 在已經變更每個選取的項目，解決方案會使用階層指標來呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>適當的階層上的方法。  
+4. 在每個已變更的專案上，方案都會使用階層指標來呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> 適當階層上的方法。  
   
-     自訂編輯器，在文件資料物件和專案之間的通訊都是私用的。 因此，任何特殊的持續性的問題被處理這兩個物件之間。  
+     在自訂編輯器的情況下，檔資料物件與專案之間的通訊是私用的。 因此，會在這兩個物件之間處理任何特殊的持續性問題。  
   
     > [!NOTE]
-    > 如果您實作您自己的持續性時，務必呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>方法，以節省時間。 這個方法會檢查以確定它是安全儲存檔案 （例如，檔案不是唯讀）。  
+    > 如果您要執行自己的持續性，請務必呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> 方法來節省時間。 這個方法會檢查以確定可以安全地儲存檔案 (例如，檔案不是唯讀) 。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

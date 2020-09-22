@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 894378d6648139b7ec2b587eb0066a5725af7a71
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443732"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840251"
 ---
 # <a name="manage-channels"></a>管理通道
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在並行視覺化檢視的 [執行緒檢視] 中，您可以針對處理序組織通道，以檢查特定模式。 您可以排序、上下移動及隱藏或顯示通道。  
+在並行視覺化檢視的 [執行緒檢視]**** 中，您可以針對處理序組織通道，以檢查特定模式。 您可以排序、上下移動及隱藏或顯示通道。  
   
 ## <a name="sort-by"></a>排序依據  
  您可以就目前的縮放層級，使用 [排序依據] 控制項來依據不同準則排序執行緒。 此方法對於尋找特定模式非常有幫助。 您可以根據這些準則來排序：  
@@ -35,8 +35,8 @@ ms.locfileid: "63443732"
 |執行|依據執行時間花費百分比來排序執行緒。|  
 |同步處理|依據同步時間花費百分比來排序執行緒。|  
 |I/O|依據 I/O 時間花費百分比來排序執行緒。|  
-|Sleep|依據睡眠時間花費百分比來排序執行緒。|  
-|分頁|依據分頁時間花費百分比來排序執行緒。|  
+|睡眠|依據睡眠時間花費百分比來排序執行緒。|  
+|Paging|依據分頁時間花費百分比來排序執行緒。|  
 |先佔|依據先佔時間花費百分比來排序執行緒。|  
 |UI 處理|依據使用者介面處理時間花費百分比來排序執行緒。|  
   
@@ -61,7 +61,7 @@ ms.locfileid: "63443732"
 ## <a name="group-markers-by-thread"></a>依據執行緒來分組標記  
  如果追蹤包含標記事件，您就可以使用此命令將標記通道分組在產生標記事件的執行緒下方。  磁碟通道會移動到通道清單的最上方，而 GPU 通道會移動到最下方。  
   
-## <a name="see-also"></a>請參閱  
- [縮放控制 (執行緒檢視)](../profiling/zoom-control-threads-view.md)   
+## <a name="see-also"></a>另請參閱  
+ [縮放控制項 (執行緒視圖) ](../profiling/zoom-control-threads-view.md)   
  [開啟/關閉測量模式](../profiling/measure-mode-on-off.md)   
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

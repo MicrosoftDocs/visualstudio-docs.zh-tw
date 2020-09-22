@@ -1,5 +1,5 @@
 ---
-title: HOW TO：以累加方式建置 | Microsoft Docs
+title: 如何：累加建置 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4b2e6dd825cfcf67ffffd9ace27017c8d01aa33
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431397"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839245"
 ---
-# <a name="how-to-build-incrementally"></a>HOW TO：以累加方式建置
+# <a name="how-to-build-incrementally"></a>如何：累加建置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 當您建置大型專案時，很重要的一點是，如果先前建置的元件仍是最新，就不會重建。 如果每次都建置所有目標，每次建置會花很長的時間才能完成。 若要啟用累加建置 (在這些建置中，只會重建先前尚未建置過的目標，或是已過期的目標)，[!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) 可以比較輸入檔案的時間戳記，與輸出檔案的的時間戳記，然後判斷是要跳過、建置還是部分重建目標。 不過，在輸入和輸出之間必須有一對一的對應。 您可以使用轉換，讓目標可以找出這種直接對應。 如需轉換的詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。  
@@ -30,7 +30,7 @@ ms.locfileid: "63431397"
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>指定目標的輸入和輸出  
   
-- 使用 `Target` 項目的 `Inputs` 和 `Outputs` 屬性。 例如:   
+- 使用 `Target` 項目的 `Inputs` 和 `Outputs` 屬性。 例如：  
   
   ```  
   <Target Name="Build"  
@@ -61,9 +61,9 @@ ms.locfileid: "63431397"
 ## <a name="example"></a>範例  
  下列範例使用為假定說明系統建置說明檔的專案。 專案的運作方式是將來源的 .txt 檔案轉換成中繼 .content 檔案，然後與 XML 中繼資料檔案結合以產生說明系統所使用的最終 .help 檔案。 專案會使用下列假定的工作︰  
   
-- `GenerateContentFiles`：將.txt 檔案轉換成.content 檔案中。  
+- `GenerateContentFiles`︰將 .txt 檔案轉換為 content 檔案。  
   
-- `BuildHelp`：結合.content 檔案和 XML 中繼資料檔案，以建置最終的.help 檔案。  
+- `BuildHelp`︰結合 .content 檔案和 XML 中繼資料檔案，建置最終的 .help 檔案。  
   
   專案會使用轉換來為 `GenerateContentFiles` 工作建立輸入與輸出之間的一對一對應。 如需詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。 此外，`Output` 項目設定為自動使用來自 `GenerateContentFiles` 工作的輸出，作為 `BuildHelp` 工作的輸入。  
   
@@ -106,7 +106,7 @@ ms.locfileid: "63431397"
   
 ## <a name="see-also"></a>另請參閱  
  [目標](../msbuild/msbuild-targets.md)   
- [Target 項目 (MSBuild)](../msbuild/target-element-msbuild.md)   
- [轉換](../msbuild/msbuild-transforms.md)   
+ [MSBuild)  (目標元素 ](../msbuild/target-element-msbuild.md)   
+ [變換](../msbuild/msbuild-transforms.md)   
  [Csc 工作](../msbuild/csc-task.md)   
  [Vbc 工作](../msbuild/vbc-task.md)

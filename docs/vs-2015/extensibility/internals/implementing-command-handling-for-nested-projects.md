@@ -1,5 +1,5 @@
 ---
-title: 實作的命令處理巢狀專案 |Microsoft Docs
+title: 執行嵌套專案的命令處理 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,35 +11,35 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2fbce80b2e8c337eddf0d34954a7fd70b895d891
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445444"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838972"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>實作巢狀專案的命令處理
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-IDE 可以傳遞命令，會傳遞<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>而<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>巢狀的專案，或父專案的介面可以篩選或覆寫命令。  
+IDE 可以傳遞透過 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面傳遞至嵌套專案的命令，或可讓父專案篩選或覆寫命令的命令。  
   
 > [!NOTE]
-> 您可以篩選通常由父專案的命令。 命令，例如**建置**並**部署**，都由 IDE 無法進行篩選。  
+> 只能篩選父專案一般處理的命令。 無法篩選 IDE 所處理的命令，例如 **組建** 和 **部署** 。  
   
- 下列步驟描述實作命令處理的程序。  
+ 下列步驟說明執行命令處理的程式。  
   
 ## <a name="procedures"></a>程序  
   
-#### <a name="to-implement-command-handling"></a>若要實作命令處理  
+#### <a name="to-implement-command-handling"></a>若要執行命令處理  
   
-1. 當使用者選取巢狀的專案或節點中的巢狀專案：  
+1. 當使用者選取嵌套專案或嵌套專案中的節點時：  
   
-   1. IDE 呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法。  
+   1. IDE 會呼叫 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 方法。  
   
-      — 或 —  
+      — 或者—  
   
-   2. 如果此命令，在 階層 視窗中，例如在 方案總管的捷徑功能表命令產生 IDE 便會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A>專案的父代上的方法。  
+   2. 如果命令源自于階層視窗中（例如方案總管中的快捷方式功能表命令），IDE 就會 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> 在專案的父系上呼叫方法。  
   
-2. 父專案可以檢查傳遞給參數`QueryStatus`，這類`pguidCmdGroup`和`prgCmds`，以決定父專案是否應該篩選命令。 如果父專案來篩選命令來實作，它應該設定：  
+2. 父專案可以檢查要傳遞給的參數 `QueryStatus` （例如 `pguidCmdGroup` 和）， `prgCmds` 以判斷父專案是否應該篩選命令。 如果父專案是實作為篩選命令，則應該設定：  
   
    ```  
    prgCmds[0].cmdf = OLECMDF_SUPPORTED;  
@@ -47,13 +47,13 @@ IDE 可以傳遞命令，會傳遞<xref:Microsoft.VisualStudio.Shell.Interop.IVs
    prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;  
    ```  
   
-    則應傳回父專案`S_OK`。  
+    然後父專案應該會傳回 `S_OK` 。  
   
-    如果父專案不會篩選命令，它應該只傳回`S_OK`。 在此情況下，IDE 會自動將命令路由至子專案。  
+    如果父專案未篩選命令，它應該只傳回 `S_OK` 。 在此情況下，IDE 會自動將命令路由傳送至子專案。  
   
-    若要將命令路由傳送至子專案沒有父專案。 IDE 會執行此工作...  
+    父專案不需要將命令路由至子專案。 IDE 會執行這項工作。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   
- [命令、 功能表和工具列](../../extensibility/internals/commands-menus-and-toolbars.md)   
+ [命令、功能表和工具列](../../extensibility/internals/commands-menus-and-toolbars.md)   
  [巢狀專案](../../extensibility/internals/nesting-projects.md)

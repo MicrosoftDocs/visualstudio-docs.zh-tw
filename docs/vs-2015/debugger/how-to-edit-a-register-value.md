@@ -1,5 +1,5 @@
 ---
-title: HOW TO：編輯暫存器值 |Microsoft Docs
+title: 如何：編輯暫存器值 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,20 +24,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7f0cd04b054d51119f6f6c1b0275c4f781656bff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438307"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839038"
 ---
-# <a name="how-to-edit-a-register-value"></a>HOW TO：編輯暫存器值
+# <a name="how-to-edit-a-register-value"></a>如何：編輯暫存器值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-只有在透過 [選項] 對話方塊的 [偵錯] 節點啟用位址層級偵錯時，才可以使用 [暫存器] 視窗。  
+只有在透過 [選項]**** 對話方塊的 [偵錯]**** 節點啟用位址層級偵錯時，才可以使用 [暫存器] 視窗。  
   
 ### <a name="to-change-the-value-of-a-register"></a>若要變更暫存器值  
   
-1. 在 [暫存器] 視窗中使用 TAB 鍵或滑鼠，將插入點移至要變更的值上。 輸入時，游標必須放在要覆寫的值的前面。  
+1. 在 [暫存器]**** 視窗中使用 TAB 鍵或滑鼠，將插入點移至要變更的值上。 輸入時，游標必須放在要覆寫的值的前面。  
   
 2. 輸入新值。  
   

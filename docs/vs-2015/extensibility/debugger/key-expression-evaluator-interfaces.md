@@ -12,51 +12,51 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b9c01c59e732b777967cf49a61f17305f666325f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430177"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838981"
 ---
 # <a name="key-expression-evaluator-interfaces"></a>主要的運算式評估工具介面
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關如何執行 CLR 運算式評估工具的詳細資訊，請參閱 [CLR 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 在撰寫運算式評估工具 (EE)，以及評估內容，您應該熟悉下列介面。  
+ 當撰寫運算式評估工具 (EE) ，以及評估內容時，您應該熟悉下列介面。  
   
 ## <a name="interface-descriptions"></a>介面描述  
   
 - [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)  
   
-     具有單一方法[GetAddress](../../extensibility/debugger/reference/idebugaddress-getaddress.md)，此 cmdlet 會取得的資料結構，表示目前執行點。 此資料結構是一個偵錯引擎 (DE) 傳遞給三個引數[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)方法來評估運算式。 符號提供者通常被實作這個介面。  
+     具有單一方法 [GetAddress](../../extensibility/debugger/reference/idebugaddress-getaddress.md)，它會取得代表目前執行點的資料結構。 此資料結構是 debug engine (DE) 傳遞至 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) 方法以評估運算式的三個引數之一。 這個介面通常是由符號提供者所執行。  
   
 - [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
-     已[繫結](../../extensibility/debugger/reference/idebugbinder-bind.md)方法，取得包含目前的符號值的記憶體區域。 指定這兩個包含方法，由[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)物件，而符號本身，由[IDebugField](../../extensibility/debugger/reference/idebugfield.md)物件，`IDebugBinder::Bind`傳回符號的值。 `IDebugBinder` 通常是由 DE 實作。  
+     具有 [Bind](../../extensibility/debugger/reference/idebugbinder-bind.md) 方法，可取得包含符號目前值的記憶體區域。 假設有兩個包含方法（以 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 物件表示）和符號本身（以 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 物件表示），則會傳回 `IDebugBinder::Bind` 符號的值。 `IDebugBinder` 通常是由 DE 所執行。  
   
 - [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
   
-     表示簡單的資料類型。 對於更複雜的類型，例如陣列和方法，使用衍生[IDebugArrayField](../../extensibility/debugger/reference/idebugarrayfield.md)並[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)分別介面。 [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)是另一個重要的衍生的介面，表示包含其他符號，例如方法或類別的符號。 `IDebugField`介面 （和其衍生項目） 通常由符號提供者實作。  
+     表示簡單的資料類型。 針對更複雜的型別，例如陣列和方法，分別使用衍生的 [IDebugArrayField](../../extensibility/debugger/reference/idebugarrayfield.md) 和 [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) 介面。 [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) 是另一個重要的衍生介面，代表包含其他符號的符號，例如方法或類別。 `IDebugField`介面 (及其衍生) 通常是由符號提供者所執行。  
   
-     `IDebugField`物件可以用來尋找符號的類型與名稱，連同[IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)物件，可用來尋找其值。  
+     您 `IDebugField` 可以使用物件來尋找符號的名稱和類型，以及使用 [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) 物件來尋找其值。  
   
 - [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
-     代表實際的位元執行階段值的符號。 [繫結](../../extensibility/debugger/reference/idebugbinder-bind.md)會採用[IDebugField](../../extensibility/debugger/reference/idebugfield.md)物件，代表一種符號，並且傳回[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)物件。 [GetValue](../../extensibility/debugger/reference/idebugobject-getvalue.md)方法會傳回符號的值在記憶體緩衝區。 DE 通常會實作這個介面來表示記憶體中的屬性的值。  
+     代表符號之運行時間值的實際位。 [Bind](../../extensibility/debugger/reference/idebugbinder-bind.md) 會採用代表符號的 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 物件，並傳回 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 物件。 [GetValue](../../extensibility/debugger/reference/idebugobject-getvalue.md)方法會傳回記憶體緩衝區中的符號值。 DE 通常會執行此介面來代表記憶體中的屬性值。  
   
 - [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
   
-     此介面代表運算式評估工具本身。 重要的方法是[剖析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)，以傳回[IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)介面。  
+     此介面代表運算式評估工具本身。 主要方法是 [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)，它會傳回 [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) 介面。  
   
 - [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
   
-     這個介面會表示準備要評估的已剖析的運算式。 重要的方法是[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) IDebugProperty2 會傳回代表的值和運算式的類型。  
+     這個介面表示已剖析的運算式可供評估。 Key 方法是 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) ，它會傳回代表運算式值和類型的 IDebugProperty2。  
   
 - [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)  
   
-     此介面代表的值和型別，而是運算式評估的結果。  
+     此介面代表值和其型別，而且是運算式評估的結果。  
   
 ## <a name="see-also"></a>另請參閱  
  [評估內容](../../extensibility/debugger/evaluation-context.md)

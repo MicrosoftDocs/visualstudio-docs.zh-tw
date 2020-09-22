@@ -13,23 +13,23 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 63e0140b752adda02aba6126580ec08ee1f7536a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436623"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840211"
 ---
 # <a name="registering-a-project-type"></a>註冊專案類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-當您建立新的專案類型時，您必須建立登錄項目，以便[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]辨識，並使用您的專案類型。 您通常會使用登錄指令碼 (.rgs) 檔案中建立這些登錄項目。  
+當您建立新的專案類型時，您必須建立登錄專案，讓 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 能夠辨識和使用您的專案類型。 您通常會使用登入指令檔 ( .rgs) 檔案來建立這些登錄專案。  
   
- 在下列範例中，從登錄的陳述式提供預設路徑和資料如果適用的話，後面的資料表包含每個陳述式的登錄指令碼中的項目。 資料表提供的指令碼項目和陳述式的其他資訊。  
+ 在下列範例中，登錄中的語句會提供預設的路徑和資料（如果適用的話），後面接著包含每個語句的登入指令檔專案的資料表。 資料表會提供腳本專案和語句的其他相關資訊。  
   
 > [!NOTE]
-> 下列的登錄資訊被要當做類型的範例和用途，您會撰寫以註冊您的專案類型的登錄指令碼中的項目。 您實際的項目和其用法可能會因您的專案類型的特定需求。 您應該檢閱可用來尋找接近您正在開發，專案類型的其中一個範例，然後檢閱 登錄指令碼，該範例。  
+> 下列登錄資訊的目的，是為了註冊您的專案類型而要寫入的登入指令檔中的專案類型和用途。 您的實際專案和其使用方式可能會根據您專案類型的特定需求而異。 您應查看可用的範例，找出與您正在開發的專案類型非常類似的範例，然後檢查該範例的登入指令檔。  
   
- 下列範例會從 HKEY_CLASSES_ROOT。  
+ 以下是來自 HKEY_CLASSES_ROOT 的範例。  
   
 ## <a name="example"></a>範例  
   
@@ -51,14 +51,14 @@ ms.locfileid: "63436623"
   
 |名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
-|`@`|REG_SZ|`FigPrjFile`|名稱和專案類型的檔案副檔名.figp 的描述。|  
-|`Content Type`|REG_SZ|`Text/plain`|專案檔的內容類型。|  
+|`@`|REG_SZ|`FigPrjFile`|副檔名為 figp 之專案類型檔案的名稱和描述。|  
+|`Content Type`|REG_SZ|`Text/plain`|專案檔案的內容類型。|  
 |`NullFile`|REG_SZ|`Null`||  
-|`@`|REG_SZ|`%MODULE%,-206`|此類型的專案使用預設圖示。 %模組 %陳述式完成登錄 DLL 專案類型的預設位置中。|  
-|`@`|REG_SZ|`&Open in Visual Studio`|將於其中開啟這個專案類型的預設應用程式。|  
-|`@`|REG_SZ|`devenv.exe "%1"`|預設會在此類型的專案開啟時執行的命令。|  
+|`@`|REG_SZ|`%MODULE%,-206`|此類型的專案所使用的預設圖示。 % MODULE% 語句已在登錄中完成至專案類型 DLL 的預設位置。|  
+|`@`|REG_SZ|`&Open in Visual Studio`|將開啟此專案類型的預設應用程式。|  
+|`@`|REG_SZ|`devenv.exe "%1"`|當開啟此類型的專案時，將會執行的預設命令。|  
   
- 下列範例會從 HKEY_LOCAL_MACHINE 和位於登錄機碼 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\99.0Exp\Packages] 下。  
+ 下列範例來自 HKEY_LOCAL_MACHINE，且位於登錄機碼 [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\99.0Exp\Packages] 底下。  
   
 ## <a name="example"></a>範例  
   
@@ -83,19 +83,19 @@ ms.locfileid: "63436623"
   
 |名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
-|`@` （預設值）|REG_SZ|`FigPrj Project VSPackage`|可當地語系化的名稱，這個註冊 VSPackage （專案類型）。|  
-|`InprocServer32`|REG_SZ|`%MODULE%`|專案類型 DLL 的路徑。 IDE 載入此 DLL，並將傳遞至 VSPackage CLSID`DllGetClassObject`以取得<xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory>建構<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>物件。|  
-|`CompanyName`|REG_SZ|`Microsoft`|開發專案類型之公司的名稱。|  
+|`@` (預設值)|REG_SZ|`FigPrj Project VSPackage`|這個已註冊 VSPackage (專案類型) 的可當地語系化名稱。|  
+|`InprocServer32`|REG_SZ|`%MODULE%`|專案類型 DLL 的路徑。 IDE 會載入此 DLL，並將 VSPackage CLSID 傳遞給，以 `DllGetClassObject` 取得 <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> 以建立 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> 物件。|  
+|`CompanyName`|REG_SZ|`Microsoft`|開發專案類型的公司名稱。|  
 |`ProductName`|REG_SZ|`Figure Project Sample`|專案類型的名稱。|  
-|`ProductVersion`|REG_SZ|`9.0`|發行的專案類型的版本號碼。|  
-|`MinEdition`|REG_SZ|`professional`|正在註冊 VSPackage 的版本。|  
-|`ID`|REG_DWORD|`%IDS_PACKAGE_LOAD_KEY%`|封裝載入 VSPackage 專案的索引鍵。 啟動環境之後載入專案時，會驗證金鑰。|  
-|`DllName`|REG_SZ|`%RESOURCE_DLL%`|附屬 DLL 包含專案類型的當地語系化的資源的檔案名稱。|  
+|`ProductVersion`|REG_SZ|`9.0`|專案類型版本的版本號碼。|  
+|`MinEdition`|REG_SZ|`professional`|註冊的 VSPackage 版本。|  
+|`ID`|REG_DWORD|`%IDS_PACKAGE_LOAD_KEY%`|專案 VSPackage 的封裝載入機碼。 當專案在環境啟動後載入時，就會驗證金鑰。|  
+|`DllName`|REG_SZ|`%RESOURCE_DLL%`|附屬 DLL 的檔案名，其中包含專案類型的當地語系化資源。|  
 |`Path`|REG_SZ|`%RESOURCE_PATH%`|附屬 DLL 的路徑。|  
-|`FigProjectsEvents`|REG_SZ|請參閱值的陳述式。|判斷這個自動化事件傳回的文字字串。|  
-|`FigProjectItemsEvents`|REG_SZ|請參閱值的陳述式。|判斷這個自動化事件傳回的文字字串。|  
+|`FigProjectsEvents`|REG_SZ|請參閱值的語句。|判斷針對這個 automation 事件傳回的文字字串。|  
+|`FigProjectItemsEvents`|REG_SZ|請參閱值的語句。|判斷針對這個 automation 事件傳回的文字字串。|  
   
- 下列所有範例都位於 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] 機碼下登錄。  
+ 下列所有範例都位於登錄機碼 [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] 底下的登錄中。  
   
 ## <a name="example"></a>範例  
   
@@ -134,32 +134,32 @@ ms.locfileid: "63436623"
   
 |名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
-|`@`|REG_SZ|`FigPrj Project`|此類型的專案的預設名稱。|  
-|`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|要從附屬 DLL 擷取的資源識別碼名稱的註冊套件。|  
-|`Package`|REG_SZ|`%CLSID_Package%`|封裝註冊 VSPackage 的類別識別碼。|  
-|`ProjectTemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|預設的專案範本檔案的路徑。 這些是新的專案範本所顯示的檔案。|  
-|`ItemTemplatesDir`|REG_SZ|`%TEMPLATE_PATH% \FigPrjProjectItems`|預設的專案項目範本檔案的路徑。 這些是由加入新項目範本顯示的檔案。|  
-|`DisplayProjectFileExtensions`|REG_SZ|`#%IDS_DISPLAY_PROJ_FILE_EXT%`|可讓實作 IDE**開啟** 對話方塊。|  
-|`PossibleProjectExtensions`|REG_SZ|`figp`|使用 IDE 來判斷是否要開啟的專案由這種專案類型 (project factory)。 多個項目的格式是以分號分隔清單。 比方說 「 vdproj; vdp 」。|  
-|`DefaultProjectExtension`|REG_SZ|`.figp`|IDE 使用做為預設檔案名稱副檔名另存新檔作業。|  
-|`Filter Settings`|REG_DWORD|各種項目，請參閱陳述式和下表的註解。|這些設定用來設定各種的篩選條件，來顯示 UI 對話方塊中的檔案。|  
-|`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|加入項目範本的資源識別碼。|  
-|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|在對話方塊中顯示的專案項目路徑**加入新項目**範本。|  
-|`SortPriority`|REG_DWORD|`100 (vcprx64)`|判斷樹狀節點中顯示的檔案中的排序次序**加入新項目** 對話方塊。|  
+|`@`|REG_SZ|`FigPrj Project`|此類型之專案的預設名稱。|  
+|`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|要從在封裝下註冊的附屬 DLL 中取出之名稱的資源識別碼。|  
+|`Package`|REG_SZ|`%CLSID_Package%`|封裝下註冊之 VSPackage 的類別識別碼。|  
+|`ProjectTemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|專案範本檔案的預設路徑。 這些是新的專案範本所顯示的檔案。|  
+|`ItemTemplatesDir`|REG_SZ|`%TEMPLATE_PATH% \FigPrjProjectItems`|專案專案範本檔案的預設路徑。 這些是 [加入新專案] 範本所顯示的檔案。|  
+|`DisplayProjectFileExtensions`|REG_SZ|`#%IDS_DISPLAY_PROJ_FILE_EXT%`|啟用 IDE 以執行 [ **開啟** ] 對話方塊。|  
+|`PossibleProjectExtensions`|REG_SZ|`figp`|由 IDE 用來判斷開啟的專案是否由這個專案類型 (project factory) 處理。 有多個專案的格式是以分號分隔的清單。 例如 "vdproj; vdp"。|  
+|`DefaultProjectExtension`|REG_SZ|`.figp`|供 IDE 用來作為 [另存新檔] 作業的預設副檔名。|  
+|`Filter Settings`|REG_DWORD|不同的，請參閱下表中的語句和批註。|這些設定是用來設定各種篩選器，以便在 UI 對話方塊中顯示檔案。|  
+|`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|新增專案範本的資源識別碼。|  
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|在 [ **加入新專案** ] 範本的對話方塊中顯示之專案專案的路徑。|  
+|`SortPriority`|REG_DWORD|`100 (vcprx64)`|決定在 [ **加入新專案** ] 對話方塊中顯示之檔案的樹狀節點中的排序次序。|  
   
- 下表顯示在先前的程式碼區段中可用的篩選選項。  
+ 下表顯示先前程式碼區段中可用的篩選選項。  
   
 |篩選選項|描述|  
 |-------------------|-----------------|  
-|`CommonFindFilesFilter`|表示篩選條件是其中一個常見的篩選器，在**檔案中尋找** 對話方塊。 常見的篩選條件會列出未標示為常見的篩選條件之前篩選清單中。|  
-|`CommonOpenFilesFilter`|表示篩選條件是其中一個常見的篩選器，在**開啟檔案** 對話方塊。 常見的篩選條件會列出未標示為常見的篩選條件之前篩選清單中。|  
-|`FindInFilesFilter`|表示篩選條件將會是其中一項中的篩選條件**檔案中尋找**對話方塊方塊，然後將列出常見的篩選器之後。|  
-|`NotOpenFileFilter`|表示篩選中將不會使用**開啟檔案** 對話方塊。|  
-|`NotAddExistingItemFilter`|表示篩選條件不會使用在 [新增**現有的項目**] 對話方塊。|  
+|`CommonFindFilesFilter`|指出篩選是 [檔案 **中尋找** ] 對話方塊中的其中一個常見篩選準則。 一般篩選器會列在篩選器清單中，然後才會將篩選準則標示為 common。|  
+|`CommonOpenFilesFilter`|指出篩選是 [ **開啟** 檔案] 對話方塊中的其中一個常見的篩選準則。 一般篩選器會列在篩選器清單中，然後才會將篩選準則標示為 common。|  
+|`FindInFilesFilter`|指出篩選將是 [ **在檔案中尋找** ] 對話方塊中的其中一個篩選準則，而且會列在一般篩選準則之後。|  
+|`NotOpenFileFilter`|指出篩選不會在 [ **開啟** 檔案] 對話方塊中使用。|  
+|`NotAddExistingItemFilter`|指出篩選不會在 [加入 **現有專案** ] 對話方塊中使用。|  
   
- 根據預設，如果篩選不會不會有一或多個旗標集，篩選會在**加入現有項目** 對話方塊中，**開啟檔案**之後列出常見的篩選器 對話方塊。 篩選不會用於**檔案中尋找** 對話方塊。  
+ 依預設，如果某個篩選沒有設定其中一或多個旗標，則會在列出一般篩選器之後，在 [ **加入現有專案** ] 對話方塊和 [ **開啟** 檔案] 對話方塊中使用篩選。 篩選準則不會用在 [檔案 **中尋找** ] 對話方塊中。  
   
- 下列所有範例都位於 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] 機碼下登錄。  
+ 下列所有範例都位於登錄機碼 [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] 底下的登錄中。  
   
 ## <a name="example"></a>範例  
   
@@ -174,12 +174,12 @@ ms.locfileid: "63436623"
   
 |名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
-|`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|新的專案範本的資源識別碼。|  
-|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|預設路徑的已註冊的專案類型的專案。|  
-|`SortPriority`|REG_DWORD|`41 (x29)`|集合的排序順序顯示在 [新專案精靈] 對話方塊中的專案。|  
-|`NewProjectDialogOnly`|REG_DWORD|`0`|0 表示只能在 [新增專案] 對話方塊中，會顯示此類型的專案。|  
+|`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|新專案範本的資源識別碼。|  
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|已註冊專案類型專案的預設路徑。|  
+|`SortPriority`|REG_DWORD|`41 (x29)`|設定 [新增專案] 對話方塊中顯示之專案的排序次序。|  
+|`NewProjectDialogOnly`|REG_DWORD|`0`|0表示此類型的專案只顯示在 [新增專案] 對話方塊中。|  
   
- 下列所有範例都位於 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] 機碼下登錄。  
+ 下列所有範例都位於登錄機碼 [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] 底下的登錄中。  
   
 ## <a name="example"></a>範例  
   
@@ -195,12 +195,12 @@ ms.locfileid: "63436623"
   
 |名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
-|`@`|REG_SZ|None|預設值，指出下列項目會針對其他檔案專案項目。|  
-|`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|加入新項目範本檔案的資源 ID 值。|  
-|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|預設路徑，將會顯示在項目的**加入新項目** 對話方塊。|  
-|`SortPriority`|REG_DWORD|`100 (vcprx64)`|建立的樹狀節點顯示的排序次序**加入新項目** 對話方塊。|  
+|`@`|REG_SZ|None|預設值，表示下列專案適用于其他檔案專案專案。|  
+|`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|[加入新專案] 範本檔案的資源識別碼值。|  
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|將在 [ **加入新專案** ] 對話方塊中顯示之專案的預設路徑。|  
+|`SortPriority`|REG_DWORD|`100 (vcprx64)`|在 [ **加入新專案** ] 對話方塊的樹狀節點中，建立顯示的排序次序。|  
   
- 下列範例位於 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Menus] 機碼下登錄。  
+ 下列範例位於登錄機碼 [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\Menus] 下的登錄中。  
   
 ## <a name="example"></a>範例  
   
@@ -208,25 +208,25 @@ ms.locfileid: "63436623"
 "{ACEF4EB2-57CF-11D2-96F4-000000000000}"=",1000,1"  
 ```  
   
- 功能表項目會指向用來擷取功能表資訊資源中的 IDE。 此資料已合併至功能表資料庫，相同的索引鍵會將登錄 MenusMerged 節中。 VSPackage 不應該修改 MenusMerged 區段下的任何項目直接。 在下表中 [資料] 欄位中，有三個逗點分隔的欄位。 第一個欄位會識別功能表資源檔的完整路徑：  
+ 功能表項目會將 IDE 指向用來取出功能表資訊的資源。 當此資料合併到功能表資料庫時，將會在登錄的 MenusMerged 區段中新增相同的索引鍵。 VSPackage 不應該直接修改 MenusMerged 區段下的任何內容。 在下表的 [資料] 欄位中，有三個以逗號分隔的欄位。 第一個欄位會識別功能表資源檔的完整路徑：  
   
-- 如果省略第一個欄位，則是會從附屬 VSPackage GUID 所識別的 DLL 載入功能表資源。  
+- 如果省略第一個欄位，則會從 VSPackage GUID 所識別的附屬 DLL 載入功能表資源。  
   
-  第二個欄位識別類型 CTMENU 的功能表資源識別碼：  
+  第二個欄位會識別 CTMENU 類型的功能表資源識別碼：  
   
-- 如果指定的資源識別碼，而且第一個參數所提供的檔案路徑，從完整檔案路徑載入功能表資源。  
+- 如果指定了資源識別碼，而且第一個參數提供檔案路徑，則會從完整檔案路徑載入功能表資源。  
   
-- 如果提供的資源識別碼，但不是檔案路徑，是會從附屬 DLL 載入功能表資源。  
+- 如果已提供資源識別碼，但檔案路徑不是，則會從附屬 DLL 載入功能表資源。  
   
-- 如果提供的完整檔案路徑的資源識別碼省略，要載入的檔案被必須的 CTO 檔案。  
+- 如果提供完整的檔案路徑，且省略了資源識別碼，則應該載入的檔案應該是 CTO 檔。  
   
-  最後一個欄位會識別 CTMENU 的資源的版本號碼。 您可以變更版本號碼，一次合併的功能表。  
+  最後一個欄位會識別 CTMENU 資源的版本號碼。 您可以藉由變更版本號碼，再次合併功能表。  
   
 |名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
-|%CLSID_Package%|REG_SZ|`,1000,1`|要擷取的功能表資訊的資源。|  
+|% CLSID_Package%|REG_SZ|`,1000,1`|用來取得功能表資訊的資源。|  
   
- 下列所有範例都位於 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates] 機碼下登錄。  
+ 下列所有範例都位於登錄機碼 [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates] 底下的登錄中。  
   
 ```  
 \TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)  
@@ -238,12 +238,12 @@ ms.locfileid: "63436623"
   
 |名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
-|`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|數字專案新增專案範本的資源 ID 值。|  
-|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|新的專案目錄的預設路徑。 在此目錄中的項目將會顯示在**新增專案 精靈** 對話方塊。|  
-|`SortPriority`|REG_DWORD|`41 (x29)`|建立所在的專案將會顯示在樹狀節點的順序**新的專案** 對話方塊。|  
-|`NewProjectDialogOnly`|REG_DWORD|`0`|0 表示此類型的專案會顯示只有**新的專案** 對話方塊。|  
+|`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|圖形的資源識別碼值專案新專案範本。|  
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|新專案目錄的預設路徑。 這個目錄中的專案會顯示在 [ **新增專案嚮導** ] 對話方塊中。|  
+|`SortPriority`|REG_DWORD|`41 (x29)`|在 [ **新增專案** ] 對話方塊的樹狀節點中，建立專案的顯示順序。|  
+|`NewProjectDialogOnly`|REG_DWORD|`0`|0表示此類型的專案只顯示在 [ **新增專案** ] 對話方塊中。|  
   
- 下列範例位於 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\InstalledProducts] 機碼下登錄。  
+ 下列範例位於登錄機碼 [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\InstalledProducts] 下的登錄中。  
   
 ```  
 \FiguresProductSample  
@@ -254,19 +254,19 @@ ms.locfileid: "63436623"
 |名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
 |`Package`|REG_SZ|`%CLSID_Package%`|已註冊 VSPackage 的類別識別碼。|  
-|`UseInterface`|REG_DWORD|`1`|1 表示 UI，將會用來與此專案互動。 0 表示沒有 UI 介面。|  
+|`UseInterface`|REG_DWORD|`1`|1表示 UI 將用來與此專案互動。 0表示沒有 UI 介面。|  
   
- The.vsz 檔案經常控制新的專案類型包含 RELATIVE_PATH 項目。 這是相對路徑下的下列設定機碼中的專案類型的 \ProductDir 項目所指定路徑：  
+ 控制新專案類型的 .vsz 檔案通常包含 RELATIVE_PATH 專案。 此路徑相對於下列安裝程式索引鍵的專案類型 \ProductDir 專案中所指定的路徑：  
   
- HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup  
+ HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup  
   
- 例如，企業架構專案範本會加入下列登錄項目：  
+ 例如，Enterprise Framework 專案範本會新增下列登錄專案：  
   
- HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup\EF\ProductDir = C:\Program Files\Microsoft Visual Studio\EnterpriseFrameworks\  
+ HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup\EF\ProductDir = C:\Program Files\Microsoft Visual Studio\EnterpriseFrameworks\  
   
- 這表示如果您包含 PROJECT_TYPE = EF 在.vsz 檔案中，您的.vsz 檔案先前指定的 ProductDir 目錄中環境找到的項目。  
+ 這表示，如果您在 .vsz 檔案中包含 PROJECT_TYPE = EF 專案，環境會在先前指定的 ProductDir 目錄中尋找您的 .vsz 檔。  
   
 ## <a name="see-also"></a>另請參閱  
  [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [專案模型的項目](../../extensibility/internals/elements-of-a-project-model.md)   
- [使用 Project Factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
+ [專案模型的元素](../../extensibility/internals/elements-of-a-project-model.md)   
+ [使用專案 Factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

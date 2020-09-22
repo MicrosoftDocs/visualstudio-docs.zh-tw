@@ -1,5 +1,5 @@
 ---
-title: HOW TO：選取要建置的檔案 | Microsoft Docs
+title: 如何：選取要建置的檔案 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0968dd8914b99e8d47ef1364231059175aaf73fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437898"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838773"
 ---
-# <a name="how-to-select-the-files-to-build"></a>HOW TO：選取要建置的檔案
+# <a name="how-to-select-the-files-to-build"></a>如何：選取要建置的檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 建置包含數個檔案的專案時，您可以在專案檔中分別列出每個檔案，或是您可以使用萬用字元來包含一個目錄或巢狀目錄集合中的所有檔案。  
@@ -41,7 +41,7 @@ ms.locfileid: "63437898"
      `<VBFile Include="form1.vb"/>`  
   
     > [!NOTE]
-    > 如果項目集合中的項目不在與專案檔相同的目錄中，您必須指定項目的完整或相對路徑。 例如：`Include="..\..\form2.cs"`。  
+    > 如果項目集合中的項目不在與專案檔相同的目錄中，您必須指定項目的完整或相對路徑。 例如： `Include="..\..\form2.cs"` 。  
   
 #### <a name="to-declare-multiple-items"></a>宣告多個項目  
   

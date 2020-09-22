@@ -1,5 +1,5 @@
 ---
-title: 將圖示加入至功能表命令 |Microsoft Docs
+title: 將圖示新增至功能表命令 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,41 +12,41 @@ ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 940bef878e7360cd3709b6b3403eff2261948e0e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1a0a433534894a8c715047a0431a045aa9429619
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945057"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838907"
 ---
 # <a name="adding-icons-to-menu-commands"></a>將圖示新增至功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-命令可以出現在功能表和工具列。 在工具列上很常見的只是圖示 （以節省空間） 時在功能表上顯示命令通常會出現圖示和文字的命令。  
+命令可以同時出現在功能表和工具列上。 在工具列上，命令通常只會顯示一個圖示 (為了節省空間) 而功能表上的命令通常會同時以圖示和文字顯示。  
   
- 圖示是 16 像素寬 x 16 像素高，而且可以是 8 位元色彩深度 （256 色） 或 32 位元色彩深度 （全彩）。 32 位元色彩圖示較好。 圖示通常會排列在單一的水平資料列，在單一點陣圖，雖然允許多個點陣圖。 這個點陣圖被宣告以及個別的圖示和點陣圖中，您可以使用.vsct 檔案中。 請參閱參考[Bitmaps 元素](../extensibility/bitmaps-element.md)如需詳細資訊。  
+ 圖示的寬度16圖元寬16圖元，可以是8位色深度 (256 色彩) 或32位色彩深度 (true 色彩) 。 建議您偏好32位色彩圖示。 圖示通常會在單一點陣圖中排列成單一水準資料列，但允許多個點陣圖。 這個點陣圖是在 .vsct 檔中宣告，以及點陣圖中可用的個別圖示。 如需詳細資訊，請參閱 [點陣圖元素](../extensibility/bitmaps-element.md) 的參考。  
   
 ## <a name="adding-an-icon-to-a-command"></a>將圖示新增至命令  
- 下列程序假設您有現有的功能表命令的 VSPackage 專案。 若要了解如何執行這項操作，請參閱[建立具有功能表命令的擴充](../extensibility/creating-an-extension-with-a-menu-command.md)。  
+ 下列程式假設您有一個具有功能表命令的現有 VSPackage 專案。 若要瞭解如何執行此作業，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)模組。  
   
-1.  建立與色彩深度為 32 位元的點陣圖。 圖示永遠是 16 x 16，因此此點陣圖必須是 16 像素高和 16 像素寬的倍數。  
+1. 建立色彩深度為32位的點陣圖。 圖示一律為 16 x 16，因此此點陣圖的高度必須是16圖元，而16圖元的寬度必須是16圖元。  
   
-     每個圖示都放在彼此相鄰的點陣圖中的單一資料列。 您可以使用 alpha 色頻來表示透明度中每個圖示的位置。  
+     每個圖示都放在單一資料列中彼此旁的點陣圖。 使用 Alpha 色板來指出每個圖示中的透明度位置。  
   
-     如果您使用的 8 位元色彩深度時，使用洋紅、 `RGB(255,0,255)`，做為透明。 不過，32 位元色彩圖示為慣用。  
+     如果您使用8位的色彩深度，請使用洋紅色， `RGB(255,0,255)` 作為透明度。 不過，建議您偏好32位色彩圖示。  
   
-2.  將圖示檔複製到 VSPackage 專案中的 [資源] 目錄中。 在 [方案總管] 中，將圖示新增至專案。 （選取的資源，並在操作功能表上按一下 加入 和 現有項目，然後選取圖示檔。）  
+2. 將圖示檔複製到 VSPackage 專案中的 Resources 目錄。 在方案總管中，將圖示新增至專案。  (選取資源]，然後在內容功能表上按一下 [新增]、[現有專案]，然後選取您的圖示檔。 )   
   
-3.  在編輯器中開啟.vsct 檔。  
+3. 在編輯器中開啟 .vsct 檔案。  
   
-4.  新增`GuidSymbol`項目名稱取代**testIcon**。 建立 GUID (**工具 / 建立 GUID**，然後選取**登錄格式**按一下 複製) 將它貼至`value`屬性。 結果應該如下所示：  
+4. 加入 `GuidSymbol` 名稱為 **testIcon**的元素。 建立 GUID (**Tools/CREATE guid**，然後選取 [登錄 **格式** ]，再按一下 [複製) 並貼到 `value` 屬性中。 結果看起來應該像這樣：  
   
     ```xml  
     <!-- Create your own GUID -->  
     <GuidSymbol name="testIcon" value="{00000000-0000-0000-0000-0000}">  
     ```  
   
-5.  新增`<IDSymbol>`圖示。 `name`屬性是圖示的識別碼和`value`表示功能表列上的位置，如果有的話。 如果有一個圖示，將 1 加入。 結果應該如下所示：  
+5. 新增 `<IDSymbol>` 圖示的。 `name`屬性是圖示的識別碼，而則 `value` 表示其在區域上的位置（如果有的話）。 如果只有一個圖示，請加1。 結果看起來應該像這樣：  
   
     ```xml  
     <!-- Create your own GUID -->  
@@ -55,13 +55,13 @@ ms.locfileid: "58945057"
     </GuidSymbol>  
     ```  
   
-6.  建立`<Bitmap>`在`<Bitmaps>`來代表包含圖示的點陣圖.vsct 檔的區段。  
+6. `<Bitmap>`在 .vsct 檔案的區段中建立， `<Bitmaps>` 以代表包含圖示的點陣圖。  
   
-    -   設定`guid`值的名稱`<GuidSymbol>`您在上一個步驟中建立的項目。  
+    - 將 `guid` 值設定為 `<GuidSymbol>` 您在上一個步驟中建立的元素名稱。  
   
-    -   設定`href`點陣圖檔的相對路徑的值 (在此情況下**資源\\< 圖示檔檔名\>**。  
+    - 將 `href` 值設定為點陣圖檔案的相對路徑 (在此案例中為**資源 \\<圖示檔名稱 \> **。  
   
-    -   設定`usedList`IDSymbol 您稍早建立的值。 這個屬性會指定要用於 VSPackage 的圖示以逗號分隔清單。 排除的表單編譯是不在清單上的圖示。  
+    - 將 `usedList` 值設定為您稍早建立的 IDSymbol。 這個屬性會指定要在 VSPackage 中使用的圖示清單（以逗號分隔）。 不在清單上的圖示則會排除表單編譯。  
   
          點陣圖區塊看起來應該像這樣：  
   
@@ -69,7 +69,7 @@ ms.locfileid: "58945057"
         <Bitmap guid="testIcon" href="Resources\<icon file name>" usedList="testIcon1"/>  
         ```  
   
-7.  在現有`<Button>`項目，設定`Icon`GUIDSymbol 和 IDSymbol 值您稍早建立的項目。 以下是範例的按鈕項目使用這些值：  
+7. 在現有的 `<Button>` 元素中，將專案設定 `Icon` 為您稍早建立的 GUIDSymbol 和 IDSymbol 值。 以下是具有這些值的 Button 元素範例：  
   
     ```xml  
     <Button guid="guidAddIconCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">  
@@ -81,7 +81,7 @@ ms.locfileid: "58945057"
     </Button>  
     ```  
   
-8.  測試您的圖示。 建置此專案並開始偵錯。 在實驗執行個體中，找到的命令。 它應該會顯示圖示您加入。  
+8. 測試您的圖示。 建置此專案並開始偵錯。 在實驗實例中，尋找命令。 它應該會顯示您新增的圖示。  
   
 ## <a name="see-also"></a>另請參閱  
  [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)   

@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2a5d5065ca427f0319174aa59e6b87d356816d4c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432423"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838956"
 ---
 # <a name="sccget-function"></a>SccGet 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-此函式會擷取一或多個檔案，來檢視和編譯，但不是用於編輯的複本。 在大部分的系統中，檔案會標記為唯讀。  
+此函式會取得一或多個檔案的複本，以供您進行編輯，但無法進行編輯。 在大部分的系統中，會將檔案標記為唯讀。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,69 +38,69 @@ SCCRTN SccGet(
 ```  
   
 #### <a name="parameters"></a>參數  
- pvContext  
- [in]Context 結構的原始檔控制外掛程式。  
+ pvCoNtext  
+ 在原始檔控制外掛程式的內容結構。  
   
  hWnd  
- [in]原始檔控制外掛程式時，可以使用當做父代上，它會提供任何對話方塊 IDE 視窗的控制代碼。  
+ 在IDE 視窗的控制碼，原始檔控制外掛程式可以使用它做為它所提供之任何對話方塊的父代。  
   
  nFiles  
- [in]中指定的檔案數目`lpFileNames`陣列。  
+ 在陣列中指定的檔案數目 `lpFileNames` 。  
   
  lpFileNames  
- [in]要擷取檔案的完整名稱的陣列。  
+ 在要抓取之檔案的完整限定名稱陣列。  
   
  fOptions  
- [in]命令旗標 (`SCC_GET_ALL`， `SCC_GET_RECURSIVE`)。  
+ 在命令旗標 (`SCC_GET_ALL` ， `SCC_GET_RECURSIVE`) 。  
   
  pvOptions  
- [in]原始檔控制外掛程式特定選項。  
+ 在原始檔控制外掛程式特定的選項。  
   
 ## <a name="return-value"></a>傳回值  
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
+ 此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：  
   
 |值|描述|  
 |-----------|-----------------|  
-|SCC_OK|取得作業的成功。|  
-|SCC_E_FILENOTCONTROLLED|檔案不是原始檔控制之下。|  
-|SCC_E_OPNOTSUPPORTED|原始檔控制系統不支援這項作業。|  
-|SCC_E_FILEISCHECKEDOUT|無法取得使用者目前已簽出檔案。|  
-|SCC_E_ACCESSFAILURE|發生問題，存取原始檔控制系統，可能是因為網路或競爭問題。 建議使用重試。|  
-|SCC_E_NOSPECIFIEDVERSION|指定無效的版本或日期/時間。|  
-|SCC_E_NONSPECIFICERROR|不明確的失敗;檔案已不會同步處理。|  
-|SCC_I_OPERATIONCANCELED|在完成之前取消作業。|  
-|SCC_E_NOTAUTHORIZED|使用者未獲授權執行此作業。|  
+|SCC_OK|成功的 get 作業。|  
+|SCC_E_FILENOTCONTROLLED|檔案不在原始檔控制之下。|  
+|SCC_E_OPNOTSUPPORTED|原始檔控制系統不支援這種操作。|  
+|SCC_E_FILEISCHECKEDOUT|無法取得使用者目前已簽出的檔案。|  
+|SCC_E_ACCESSFAILURE|存取原始檔控制系統時發生問題，可能是因為網路或爭用問題。 建議您重試。|  
+|SCC_E_NOSPECIFIEDVERSION|指定了不正確版本或日期/時間。|  
+|SCC_E_NONSPECIFICERROR|模糊失敗;檔案未同步處理。|  
+|SCC_I_OPERATIONCANCELED|作業在完成前取消。|  
+|SCC_E_NOTAUTHORIZED|未授權使用者執行此作業。|  
   
 ## <a name="remarks"></a>備註  
- 此函式呼叫計數與要擷取的檔案名稱的陣列。 如果 IDE 通過旗標`SCC_GET_ALL`，這表示中的項目`lpFileNames`並不是檔案的目錄，並包含要擷取之指定的目錄中的原始檔控制下的所有檔案。  
+ 呼叫此函式時，會使用計數和要抓取之檔案的名稱陣列。 如果 IDE 傳遞旗標 `SCC_GET_ALL` ，這表示中的專案 `lpFileNames` 不是檔案，而是目錄，而且在指定目錄中的所有檔案都會被抓取。  
   
- `SCC_GET_ALL`旗標可以結合`SCC_GET_RECURSIVE`旗標，以擷取指定的目錄中的所有檔案和所有的子目錄。  
+ `SCC_GET_ALL`旗標可以與旗標結合， `SCC_GET_RECURSIVE` 以取得指定目錄和所有子目錄中的所有檔案。  
   
 > [!NOTE]
-> `SCC_GET_RECURSIVE` 永遠不會傳遞而且`SCC_GET_ALL`。 另請注意，是否目錄 C:\A 和 C:\A\B 同時傳遞遞迴取得，C:\A\B 及其所有子目錄會實際擷取兩次。 是 IDE 的責任，並不是原始檔控制外掛程式，藉此確定這類的重複項目會保留從陣列。  
+> `SCC_GET_RECURSIVE` 永遠不會在沒有的情況下傳遞 `SCC_GET_ALL` 。 此外，請注意，如果目錄 C:\A 和 C:\A\B 都是以遞迴 get 傳遞，則 C:\A\B 及其所有子目錄實際上會被取出兩次。 這是 IDE 的責任（而不是原始檔控制外掛程式），以確保這些重複專案（例如這類）會保留在陣列外。  
   
- 最後，即使原始檔控制外掛程式指定`SCC_CAP_GET_NOUI`上初始化時，表示它並沒有 Get 命令的使用者介面，以擷取檔案 IDE 仍可能會呼叫此函式的旗標。 旗標只是表示，IDE 不會顯示取得功能表項目，而且，外掛程式不需要提供任何 UI。  
+ 最後，即使原始檔控制外掛程式在初始化時指定 `SCC_CAP_GET_NOUI` 旗標，表示它沒有 Get 命令的使用者介面，IDE 仍會呼叫此函式來取出檔案。 旗標只是表示 IDE 不會顯示 Get 功能表項目，而且不應該提供任何 UI 給外掛程式。  
   
 ## <a name="renaming-and-sccget"></a>重新命名和 SccGet  
- 狀況： 使用者簽出檔案，比方說，a.txt，並修改它。 A.txt 可以簽入之前，第二個使用者重新命名為 b.txt 原始檔控制資料庫中的 a.txt、 簽出 b.txt，便會進行一些修改檔案，和簽入的檔案。 第一位使用者想要讓第一位使用者將其本機版本的 a.txt 檔案重新命名為 b.txt 並取得新的檔案，第二個使用者所做的變更。 不過，會持續追蹤的版本號碼的本機快取仍然認為 a.txt 的第一個版本都會儲存在本機，因此原始檔控制無法解析的差異。  
+ 狀況：使用者簽出檔案，例如 a.txt，並加以修改。 在 a.txt 可以簽入之前，第二位使用者將 a.txt 重新命名為原始檔控制資料庫中的 b.txt、簽出 b.txt、對檔案進行一些修改，並在中檢查檔案。 第一位使用者想要進行第二位使用者所做的變更，讓第一位使用者將 a.txt 檔案的本機版本重新命名為 b.txt，然後在檔案上執行 get。 不過，追蹤版本號碼的本機快取仍會認為 a.txt 的第一個版本會儲存在本機，因此原始檔控制無法解決這些差異。  
   
- 有兩種方式可解決本機快取的原始檔控制版本會與原始檔控制資料庫不同步變成這種情況：  
+ 有兩種方式可以解決這種情況，亦即原始檔控制版本的本機快取與原始檔控制資料庫不同步：  
   
-1. 不允許重新命名目前已簽出原始檔控制資料庫中的檔案。  
+1. 不允許在目前簽出的原始檔控制資料庫中重新命名檔案。  
   
-2. 執行 「 刪除舊 」 後面接著 「 新增 」 的對等項目。 下列演算法是一種方式完成這項作業。  
+2. 等同于 "delete old"，後面接著「新增」。 下列演算法是完成這項操作的一種方法。  
   
-    1. 呼叫[SccQueryChanges](../extensibility/sccquerychanges-function.md)若要了解重新命名為 b.txt 原始檔控制資料庫中的 a.txt 函式。  
+    1. 呼叫 [SccQueryChanges](../extensibility/sccquerychanges-function.md) 函數，以瞭解如何將 a.txt 重新命名為原始檔控制資料庫中 b.txt 的。  
   
     2. 將本機 a.txt 重新命名為 b.txt。  
   
-    3. 呼叫`SccGet`a.txt 和 b.txt 函式。  
+    3. `SccGet`針對 a.txt 和 b.txt 呼叫函數。  
   
-    4. 因為 a.txt 不存在於原始檔控制資料庫中，會將本機版本快取清除遺漏的 a.txt 版本資訊。  
+    4. 由於 a.txt 不存在於原始檔控制資料庫中，因此會清除缺少的 a.txt 版本資訊的本機版本快取。  
   
-    5. 正在簽出 b.txt 檔案會合併本機 b.txt 檔案的內容。  
+    5. 要簽出的 b.txt 檔案會與本機 b.txt 檔案的內容合併。  
   
-    6. 更新的 b.txt 檔案現在可以簽入。  
+    6. 現在可以簽入更新的 b.txt 檔案。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
