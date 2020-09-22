@@ -1,5 +1,5 @@
 ---
-title: 如何-在 Windows View 中搜尋視窗 |Microsoft Docs
+title: 在 Windows View 中搜尋視窗 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb5fb871ebf03595c0baca0336e8449fe39029f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 880f6ec3ea0882d92f5376859ed629e23781f5f9
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349233"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851966"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>如何：在視窗檢視中搜尋視窗
 您可以使用其控制碼、標題、類別或其標題和類別的組合作為搜尋準則，在 Windows view 中搜尋特定視窗。 您也可以指定搜尋的初始方向。 對話方塊中的欄位會在視窗樹狀結構中顯示所選視窗的屬性。
@@ -45,6 +45,6 @@ ms.locfileid: "85349233"
 
 4. 選擇 [ **向上** ] 或 [ **向下** ] 以取得搜尋的初始方向。
 
-5. 按一下 [確定]  。
+5. 按一下 [確定]。
 
     如果找到相符的視窗，它會在 [ [Windows View](../debugger/windows-view.md) ] 視窗中反白顯示。

@@ -1,5 +1,6 @@
 ---
 title: Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
+titleSuffix: ''
 ms.date: 04/14/2020
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63bd6fba7305c8dd266ecc935ea00d04633c6aec
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1863caeaa3d3b0457d89913186337fa74ad5d8de
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809332"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852240"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 此訊息可能是因為遠端電腦上的遠端偵錯程式未正確設定，或遠端電腦因為網路問題或防火牆的存在而無法存取而發生。

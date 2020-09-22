@@ -1,5 +1,5 @@
 ---
-title: 錯誤-ASP.NET 未安裝 |Microsoft Docs
+title: 尚未安裝 ASP.NET
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3a768a1a3a0295190701cacc9bbf017baee507b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c4138b1f3d102e235bb03ebcfd5a80808d8762c
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460901"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852793"
 ---
 # <a name="error-aspnet-not-installed"></a>錯誤：尚未安裝 ASP.NET
 當您嘗試偵錯的電腦尚未正確安裝 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 時，就會發生這個錯誤。 這可能表示從未安裝 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]，或是先安裝 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 之後才安裝 IIS。

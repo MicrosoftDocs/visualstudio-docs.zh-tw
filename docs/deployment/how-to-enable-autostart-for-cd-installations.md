@@ -1,5 +1,5 @@
 ---
-title: 如何-啟用 CD 安裝的 AutoStart |Microsoft Docs
+title: 啟用 CD 安裝的 AutoStart |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ff96cdfe412e5016c04daa2b22922b0ec47a3a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28fa4830c3ea5ff840e0d58f6d31f718c28ec3fb
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382441"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850939"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>How to: Enable AutoStart for CD installations (如何：啟用 CD 安裝的 AutoStart)
 藉由卸載 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 式媒體（例如 cd-rom 或 dvd-rom）部署應用程式時，您可以啟用， `AutoStart` 讓 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式在插入媒體時自動啟動。

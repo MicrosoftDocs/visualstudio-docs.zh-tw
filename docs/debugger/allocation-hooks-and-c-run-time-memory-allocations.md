@@ -1,5 +1,5 @@
 ---
-title: 配置攔截和 C 執行時間記憶體配置 |Microsoft Docs
+title: 配置攔截和 C 執行階段記憶體配置
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79e55ec521de098a7ae0339c4460502dde3d482d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be75b4d3e83ed297f31e9015c7ba082c0611206d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745790"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851615"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>配置攔截和 C 執行階段記憶體配置
 配置攔截函式的一個非常重要的限制是它們必須明確地忽略 `_CRT_BLOCK` 區塊。 這些區塊是由 C 執行時間程式庫函式在內部進行的記憶體配置，如果它們對任何配置內部儲存體的 C 執行時間程式庫函式進行呼叫。 您可以 `_CRT_BLOCK` 在配置攔截函式的開頭包含下列程式碼，以忽略區塊：

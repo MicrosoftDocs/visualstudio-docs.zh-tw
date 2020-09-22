@@ -1,5 +1,5 @@
 ---
-title: 錯誤-遠端電腦未出現在 [遠端連線] 對話方塊中 |Microsoft Docs
+title: 遠端電腦未出現在 [遠端連線] 對話方塊中 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac49379f513f753592191632cd3edf1af89a9dc4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5392a6219b1bf8bf42146cacf8216a63f1fa3832
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460594"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852559"
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>錯誤：遠端電腦未顯示於 [遠端連線] 對話方塊
 如果遠端電腦沒有出現在 [遠端連接] 對話方塊中，請檢查下列常見的原因。

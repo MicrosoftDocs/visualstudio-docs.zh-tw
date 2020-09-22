@@ -1,5 +1,5 @@
 ---
-title: 如何-啟動和停止訊息記錄顯示 |Microsoft Docs
+title: 啟動和停止訊息記錄顯示 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7165e9a9d3a4d935e01870b6049307b5a85bdce8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9676d123828e0659480c532eeb48acf3012ccd4
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349038"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851914"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>如何：啟動與停止訊息記錄顯示
 當 [[訊息] 視圖](../debugger/messages-view.md)視窗處於作用中狀態時，[Spy + +**訊息**] 功能表上會出現 [**開始記錄**] 或 [**停止] 記錄**選擇，而對應的 [**開始記錄**] 或 [**停止記錄**] 工具列按鈕則會變成

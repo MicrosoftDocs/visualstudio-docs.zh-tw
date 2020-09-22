@@ -1,5 +1,5 @@
 ---
-title: 錯誤-未正確設定 web 伺服器 |Microsoft Docs
+title: 未正確設定 web 伺服器 |Microsoft Docs
 ms.date: 09/20/2017
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 711297ef00c064c482ed3a86b896566b6e019534
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dc8253896bfdcf818e0848482a6c637350f590f
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460321"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851537"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>錯誤：未正確設定 Web 伺服器
 

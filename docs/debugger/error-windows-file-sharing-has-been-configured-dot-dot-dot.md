@@ -1,5 +1,5 @@
 ---
-title: 錯誤-已設定 Windows 檔案共用 ... |Microsoft Docs
+title: Windows 檔案共用已設定 ... |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af92ff07958656d350f30fb6b7f8f2a2ea5898f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17dbb1f3493ead985ac946331fdbff7933b6d604
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460048"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851667"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>錯誤：Windows 檔案共用已設定...
 已設定 Windows 檔案共用，這樣您將使用不同的使用者名稱連接到遠端電腦。 這與遠端偵錯不相容

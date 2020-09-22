@@ -1,5 +1,5 @@
 ---
-title: 如何選擇取樣事件 |Microsoft Docs
+title: 選擇取樣事件 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8473ca1f5829faa2a76b5560132c7aada152dc3a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f28859b1c17c735be405c6c56ebabcbe43903170
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329281"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851290"
 ---
 # <a name="how-to-choose-sampling-events"></a>如何：選擇取樣事件
 根據預設，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具收集效能資料的間隔，是分析程序使用的處理器週期數。 一個間隔的預設週期數是 10,000,000，在 1 GH 電腦上約為 0.01 秒。 您可以變更間隔中的週期數，而且可以變更取樣事件。 下列是可用的取樣事件︰

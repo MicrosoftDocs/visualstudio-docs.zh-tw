@@ -1,5 +1,5 @@
 ---
-title: 如何-編輯暫存器值 |Microsoft Docs
+title: 編輯暫存器值 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7a341fa3f8d41bf4788db5bb4b4957fd8cca81
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a0ccbfbc0ede95fe93974474f4917e1b141797e6
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349818"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851641"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>如何：編輯暫存器值 (c #、c + +、Visual Basic、F # ) 
 

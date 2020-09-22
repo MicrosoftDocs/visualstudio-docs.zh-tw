@@ -1,5 +1,5 @@
 ---
-title: 如何-限制檢測特定函式 |Microsoft Docs
+title: 限制檢測特定函式 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ca92b9f4b7594abc0815038799147ac44091cb3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2316c0c3fe0b74bbd7b3e80324284f37dff0e64
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85327630"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850991"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>如何：限制檢測特定函式
 您可以透過在 [效能工作階段]**** 或目標二進位檔屬性頁的 [進階]**** 頁面中設定選項，將檢測和資料收集限制在一或多個函式：

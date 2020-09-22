@@ -1,5 +1,5 @@
 ---
-title: 如何-重新簽署應用程式和部署資訊清單 |Microsoft Docs
+title: 重新簽署應用程式和部署資訊清單 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c8c76a789ac4a50e1128dc0897b9a08a185117a
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 2a221eea7314ad79020437208bdba4fcb6b6972e
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641606"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851680"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>如何：重新簽署應用程式和部署資訊清單
 在 Windows Forms 應用程式的應用程式資訊清單中變更部署屬性之後，Windows Presentation Foundation 應用程式 (xbap) 或 Office 方案中，您必須使用憑證重新簽署應用程式和部署資訊清單。 這項程序有助於確保不會在終端使用者電腦上安裝遭到竄改的檔案。
@@ -116,7 +116,7 @@ ms.locfileid: "89641606"
 - [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)
-- [信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)
+- [受信任的應用程式部署總覽](../deployment/trusted-application-deployment-overview.md)
 - [How to: Enable ClickOnce security settings (如何：啟用 ClickOnce 安全性設定)](../deployment/how-to-enable-clickonce-security-settings.md)
 - [如何：設定 ClickOnce 應用程式的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [How to: Set custom permissions for a ClickOnce application (如何：設定 ClickOnce 應用程式的自訂權限)](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)

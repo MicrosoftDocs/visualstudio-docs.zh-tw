@@ -1,5 +1,5 @@
 ---
-title: 如何-還原隱藏的偵錯工具命令 |Microsoft Docs
+title: 還原隱藏的偵錯工具命令 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13b4db03a75decd41430c282a67276caa60182d8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 295d04aa33f7f6602d536a69baafae9105a51fe5
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349376"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852018"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>如何：還原隱藏的偵錯工具命令
 當您設定 Visual Studio 時，將會要求您選擇一組預設 IDE 設定，做為您主要的程式設計語言。 某些語言的預設 IDE 設定可能會隱藏特定偵錯工具命令。
@@ -62,7 +62,7 @@ ms.locfileid: "85349376"
 
 4. 在 [選擇要匯入的設定集合]**** 頁面的 [預設值]**** 資料夾底下，選擇含有您想要使用之命令的開發設定集合。 如果不知道應該選擇那個集合，請嘗試 [一般開發設定]**** 或 [Visual C++ 開發設定]****，這兩個提供了大部分的偵錯工具命令。
 
-5. 按一下 [下一步]  。
+5. 按一下 [下一步]。
 
 6. 在 [選擇要匯入的設定]**** 頁面的 [選項]**** 底下，確定已經選取 [偵錯]****。 若不要再匯入其他設定，請清除那些核取方塊。
 
@@ -70,7 +70,7 @@ ms.locfileid: "85349376"
 
 8. 在 [匯入完成]**** 頁面上，檢閱任何在 [詳細資料]**** 下與重設設定關聯的任何錯誤。
 
-9. 按一下 [關閉]  。
+9. 按一下 [關閉]。
 
 ## <a name="see-also"></a>另請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)

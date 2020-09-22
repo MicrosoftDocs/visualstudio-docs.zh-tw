@@ -1,5 +1,5 @@
 ---
-title: 如何分析網頁中的 JavaScript 程式碼 |Microsoft Docs
+title: 分析網頁中的 JavaScript 程式碼 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c0af520502a0d6bb67d17786ab18fba920fcbbb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42355316c33ab9970b07001323502d9337558edc
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328894"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851368"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>如何：分析網頁中的 JavaScript 程式碼
 

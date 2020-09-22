@@ -1,5 +1,5 @@
 ---
-title: 如何-選擇收集方法 |Microsoft Docs
+title: 選擇收集方法 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dbc54fc394f75778f74d9b6b02e93882129cdb9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b66df2f302790f579891c337b217e76202e79ac
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329268"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851303"
 ---
 # <a name="how-to-choose-collection-methods"></a>如何：選擇收集方法
 
@@ -31,7 +31,7 @@ Visual Studio 分析工具支援三種效能資料收集方法︰取樣、檢測
 
 - 在精靈的第一個頁面上，選取下列其中一個選項︰
 
-| 選項 | 說明 |
+| 選項 | 描述 |
 |----------------------------| - |
 | **CPU 取樣** | 收集對初始分析和 CPU 使用率問題分析有用的應用程式統計資料。 |
 | **儀錶** | 收集對重點分析和輸入/輸出效能問題分析有用的詳細計時資料。 |

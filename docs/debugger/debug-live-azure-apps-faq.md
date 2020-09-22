@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8afc67b92a943dd571847bb1a00fb7e4db4514b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911399"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851095"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中快照集偵錯的常見問題集
 
@@ -103,7 +103,7 @@ ms.locfileid: "72911399"
 
 2. 移除憑證和 Azure KeyVault
 
-   為虛擬機器或虛擬機器擴展集安裝遠端偵錯程式延伸模組時，會建立用戶端和伺服器憑證，以使用 Azure 虛擬機器/虛擬機器擴展集資源來驗證 VS 用戶端。
+   為虛擬機器或虛擬機器擴展集安裝遠端偵錯程式延伸模組時，會建立用戶端和伺服器憑證，以使用 Azure 虛擬機器/虛擬機器擴展集資源來驗證 Visual Studio 用戶端。
 
    - 用戶端憑證
 
@@ -124,7 +124,7 @@ ms.locfileid: "72911399"
       ```
 
    - 伺服器憑證
-      - 對應的伺服器憑證指紋會以秘密的形式部署至 Azure KeyVault。 VS 將嘗試在對應于虛擬機器或虛擬機器擴展集資源的區域中尋找或建立具有前置詞 MSVSAZ * 的 KeyVault。 因此，所有虛擬機器或虛擬機器擴展集資源都會部署到該區域，因此會共用相同的 KeyVault。
+      - 對應的伺服器憑證指紋會以秘密的形式部署至 Azure KeyVault。 Visual Studio 會嘗試在對應至虛擬機器或虛擬機器擴展集資源的區域中尋找或建立具有前置詞 MSVSAZ * 的 KeyVault。 因此，所有虛擬機器或虛擬機器擴展集資源都會部署到該區域，因此會共用相同的 KeyVault。
       - 若要刪除伺服器憑證指紋秘密，請移至 Azure 入口網站，並在裝載資源的相同區域中尋找 MSVSAZ * KeyVault。 刪除應標示的秘密 `remotedebugcert<<ResourceName>>`
       - 您也需要透過 PowerShell 從您的資源刪除伺服器秘密。
 

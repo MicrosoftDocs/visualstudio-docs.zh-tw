@@ -1,5 +1,5 @@
 ---
-title: 錯誤-使用者無法執行預存程式 sp_enable_sql_debug |Microsoft Docs
+title: 使用者無法執行預存程式 sp_enable_sql_debug |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84326c5c1beb91269a5f097c8c5d7cb8782a7a56
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: c8131c7b16205b308e04b621dd1fcb536ba94c14
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600145"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852422"
 ---
 # <a name="error-user-could-not-execute-stored-procedure-sp_enable_sql_debug"></a>錯誤：使用者無法執行預存程序 sp_enable_sql_debug
 

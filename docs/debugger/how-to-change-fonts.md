@@ -1,5 +1,5 @@
 ---
-title: 如何-變更字型 |Microsoft Docs
+title: 變更字型 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5597d1f7c14e1c37c55751c85e0dc53092c3af1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77789ed5d262be87076631e978fbc46e972158ae
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350260"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851485"
 ---
 # <a name="how-to-change-fonts"></a>如何：變更字型
 您可以變更 Spy + + 視窗的字型、字型樣式和字型大小。
@@ -26,7 +26,7 @@ ms.locfileid: "85350260"
 
 2. 選擇字型、字型樣式和字型大小。
 
-3. 按一下 [確定]  。
+3. 按一下 [確定]。
 
    選取 [ **將字型儲存為預設值** ] 會導致所有未來的 Spy + + 視窗使用此字型。
 

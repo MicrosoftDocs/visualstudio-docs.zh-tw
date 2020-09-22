@@ -1,5 +1,5 @@
 ---
-title: 錯誤-網站使用 IP 位址 |Microsoft Docs
+title: 網站使用 IP 位址 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58db12ba9dbbc9526ac86262a6be5b2c0a7f765e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b869a536ca3445069d9caf84eb862e407dfbe6dc
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460542"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852533"
 ---
 # <a name="error-site-uses-ip-address"></a>錯誤：站台使用 IP 位址
 當偵錯工具嘗試自動附加至使用 IP 位址的 Web 應用程式時，就會發生這個錯誤。 如果在 IIS 中將 [網站識別]**** 變更為 [使用特定 IP 位址]****，就會發生這個問題。
