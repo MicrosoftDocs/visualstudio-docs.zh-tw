@@ -1,5 +1,5 @@
 ---
-title: HOW TO：設定權限 | Microsoft Docs
+title: 如何︰設定權限 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03991f3d5900377ceca5464bf41cfb90fcae650e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440599"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840239"
 ---
-# <a name="how-to-set-permissions"></a>HOW TO：設定權限
+# <a name="how-to-set-permissions"></a>如何：設定權限
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題說明電腦的系統管理員如何將程式碼剖析所需的安全性權限，授與在該電腦上沒有系統管理員權限的使用者或群組。  
@@ -31,7 +31,7 @@ ms.locfileid: "63440599"
   
  **需求**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、[!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
   Users 群組的成員會需要存取磁碟上，與這個小組中之其他成員共用的資料夾和檔案。 第二個程序，「授與共用專案檔的存取權限」，說明如何授與此存取權限。  
   
@@ -42,19 +42,19 @@ ms.locfileid: "63440599"
   
 ### <a name="to-create-a-user-account-that-has-user-permissions"></a>建立具有使用者權限的使用者帳戶  
   
-1. 以滑鼠右鍵按一下 [我的電腦]，然後按一下 [管理]。  
+1. 以滑鼠右鍵按一下 **我的電腦** ，然後按一下 [ **管理**]。  
   
-     [電腦管理] 視窗隨即開啟。  
+     [電腦管理]  視窗隨即開啟。  
   
-2. 展開 [本機使用者和群組]。  
+2. 展開 **[本機使用者和群組]**。  
   
-3. 以滑鼠右鍵按一下 [使用者] 資料夾，然後按一下 [新增使用者]。  
+3. 以滑鼠右鍵按一下 [使用者]**** 資料夾，然後按一下 [新增使用者]****。  
   
-     [新增使用者] 對話方塊隨即出現。  
+     [新增使用者]**** 對話方塊隨即出現。  
   
 4. 將您要建立之使用者帳戶的資訊填入這個對話方塊中的欄位。 指定密碼。 或者，選取要求使用者必須在下次登入時變更密碼的核取方塊。  
   
-5. 按一下 [建立]，然後再按一下 [關閉]。  
+5. 按一下 [ **建立** ]，然後按一下 [ **關閉**]。  
   
      新使用者會出現在 Users 群組中，而這個群組內的使用者並不具有 Administrator 權限。  
   
@@ -68,17 +68,17 @@ ms.locfileid: "63440599"
     D:\ourProject  
     ```  
   
-2. 以滑鼠右鍵按一下此資料夾，然後按一下 [屬性]。  
+2. 以滑鼠右鍵按一下此資料夾，然後按一下 [屬性]****。  
   
-     [\<資料夾名稱> 屬性] 對話方塊隨即出現。  
+     [ ** \<folder name> 屬性**] 對話方塊隨即出現。  
   
-3. 按一下 [ **安全性** ] 索引標籤。  
+3. 按一下 [安全性] 索引標籤。  
   
-4. 按一下 [群組或使用者名稱] 方塊中的使用者帳號名稱。  
+4. 按一下 [群組或使用者名稱]**** 方塊中的使用者帳號名稱。  
   
-5. 在 [\<user name> 的使用權限] 方塊中，選取 [完全控制]的核取方塊。  
+5. 在 [**許可權 \<user name> ** ] 方塊中，選取 [**完全控制**] 的核取方塊。  
   
-6. 按一下 [確定] 。  
+6. 按一下 [確定]。  
   
      如此便會將共用之資料夾樹狀目錄 (從步驟 5 中選取的資料夾開始) 的權限授與使用者。  
   
@@ -92,7 +92,7 @@ ms.locfileid: "63440599"
    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
    ```  
   
-3. 執行下列命令：  
+3. 執行以下命令：  
   
    ```  
    vsperfcmd /admin:driver,start /admin:service,start  
@@ -110,7 +110,7 @@ ms.locfileid: "63440599"
    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
    ```  
   
-    這個命令會授與 \<使用者名稱> 或 \<群組名稱> 帳戶對程式碼剖析工具的存取權限。 [\<權限>] 選項會決定使用者可以存取的程式碼剖析功能。 [\<權限>] 選項可以是下列其中一個或多個值：  
+    此命令會授與或帳戶對程式碼 \<user name> \<group name> 剖析工具的存取權。 \<right>選項會決定使用者可以存取的程式碼剖析功能。 \<right>選項可以是下列一或多個值：  
   
    - FullAccess - 允許存取所有程式碼剖析方法，包括從服務收集效能資料、取樣和跨工作階段進行程式碼剖析。  
   
@@ -127,6 +127,6 @@ ms.locfileid: "63440599"
    指定的使用者登入之後，不需要有系統管理員權限就可以使用程式碼剖析工具。  
   
 ## <a name="see-also"></a>另請參閱  
- [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+ [設定效能會話](../profiling/configuring-performance-sessions.md)   
+ [>vsperfcmd](../profiling/vsperfcmd.md)   
  [分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)

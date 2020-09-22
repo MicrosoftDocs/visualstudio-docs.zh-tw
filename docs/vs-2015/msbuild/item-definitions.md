@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433580"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838762"
 ---
 # <a name="item-definitions"></a>項目定義
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63433580"
   
 - 項目類型可以有多個定義。 將額外的中繼資料規格新增到類型時，最後一個規格會具有最高的優先順序。 \(中繼資料的匯入順序會比照屬性所依循的相同順序。\)  
   
-- 中繼資料可供附加。 例如，CDefines 值會根據所要設定的屬性，有條件地累加。 例如，`MT;STD_CALL;DEBUG;UNICODE`。  
+- 中繼資料可供附加。 例如，CDefines 值會根據所要設定的屬性，有條件地累加。 例如： `MT;STD_CALL;DEBUG;UNICODE` 。  
   
 - 中繼資料可被移除。  
   
@@ -80,7 +80,7 @@ ms.locfileid: "63433580"
   
 - 來自 ItemDefinitionGroup 之項目上的已知中繼資料  
   
-- CDATA 區段 \<\!\[CDATA\[此處的任何項目都不會剖析\]\]\>  
+- CDATA 區段 \<\!\[CDATA\[anything here is not parsed\]\]\>  
   
 > [!NOTE]
 > 來自 ItemGroup 的項目中繼資料在 ItemDefinitionGroup 中繼資料宣告中沒有用處，因為系統會先處理 ItemDefinitionGroup 元素，然後才處理 ItemGroup 元素。  
@@ -239,5 +239,5 @@ ms.locfileid: "63433580"
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [批次處理](../msbuild/msbuild-batching.md)

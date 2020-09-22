@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bab229a3246ac91eaa652be67e98a68aab40e820
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439390"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839033"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .Targets 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "63439390"
  `$(MSBuildToolsPath)` 值會指定這些通用 .targets 檔案的路徑。 如果 `ToolsVersion` 為 4.0，則檔案位於下列位置︰`WindowsInstallationPath\Microsoft.NET\Framework\v4.0.30319\`  
   
 > [!NOTE]
-> 如需如何自行建立目標的詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。 如需有關如何使用資訊`Import`項目將專案檔插入另一個專案檔，請參閱[匯入項目 (MSBuild)](../msbuild/import-element-msbuild.md)和[How to:在多個專案檔中使用相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)。  
+> 如需如何自行建立目標的詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。 如需如何使用專案 `Import` 將專案檔插入另一個專案檔的相關資訊，請參閱 [ (MSBuild 的 Import 元素) ](../msbuild/import-element-msbuild.md) 和 [如何：在多個專案檔中使用相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)。  
   
 ## <a name="common-targets-files"></a>通用的 .Targets 檔案  
   
@@ -45,6 +45,6 @@ ms.locfileid: "63439390"
 |Microsoft.VisualBasic.targets|針對 Visual Basic 專案定義標準建置程序的步驟。<br /><br /> 已透過 Visual Basic 專案檔 (.vbproj) 匯入，其中包含下列陳述式︰`<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`|  
   
 ## <a name="see-also"></a>另請參閱  
- [Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md)   
+ [ (MSBuild) 匯入元素 ](../msbuild/import-element-msbuild.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)  
  [MSBuild](msbuild.md)

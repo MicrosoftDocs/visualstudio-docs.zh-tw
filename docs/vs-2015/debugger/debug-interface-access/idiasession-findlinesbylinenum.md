@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d7ef4ab516bffbc13f47616c2f20fdd71cac38b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418343"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838983"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-判斷的編譯原始程式檔中指定的行號位於或接近的行號。  
+判斷原始程式檔中指定的行號位於或附近的編譯單位行號。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,28 +39,28 @@ HRESULT findLinesByLinenum ( 
   
 #### <a name="parameters"></a>參數  
  `compiland`  
- [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示要在其中搜尋的行號編譯模組。 這個參數不可以是 `NULL`。  
+ 在 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件，代表要在其中搜尋行號的編譯單位。 這個參數不可以是 `NULL`。  
   
  `file`  
- [in][IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)物件，表示要搜尋原始程式檔。 這個參數不可以是 `NULL`。  
+ 在 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 物件，代表要在其中搜尋的原始程式檔。 這個參數不可以是 `NULL`。  
   
  `linenum`  
- [in]指定以一為基的行號。  
+ 在指定以一個為基礎的行號。  
   
 > [!NOTE]
-> 您無法使用零來指定所有行 (使用[idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md)方法來尋找所有行)。  
+> 您無法使用零來指定所有的行 (使用 [IDiaSession：： findLines](../../debugger/debug-interface-access/idiasession-findlines.md) 方法來尋找) 的所有行。  
   
  `column`  
- [in]指定的資料行編號。 使用指定的所有資料行的零。 資料行是一條線的位元組位移。  
+ 在指定資料行編號。 使用零來指定所有資料行。 資料行是一行的位元組位移。  
   
  `ppResult`  
- [out]傳回[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)包含一份的行號的 objta 擷取。  
+ 擴展傳回 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta，其中包含所抓取行號的清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 下列範例顯示如何開啟原始程式檔、 列舉編譯這個檔案中，所提供的模組，以及在每個編譯模組的開始位置的原始程式檔中找出的行號。  
+ 下列範例示範如何開啟原始程式檔、列舉此檔案所提供的 compilands，並在原始程式檔中尋找每個編譯單位開始的行號。  
   
 ```cpp#  
 void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)  
@@ -102,6 +102,6 @@ void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)   
+ [IDiaSession：： findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

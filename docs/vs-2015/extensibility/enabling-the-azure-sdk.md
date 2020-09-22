@@ -12,35 +12,35 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1830e014a32129b8e63c78d179eed12f3375b035
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432152"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839095"
 ---
 # <a name="enabling-the-azure-sdk"></a>啟用 Azure SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Azure SDK for.NET 可協助您建立、 設定、 建置、 偵錯、 執行和封裝可擴充的 Web 應用程式和 Azure 上的服務。  
+Azure SDK for .NET 可協助您在 Azure 上建立、設定、建立、偵測、執行和封裝可擴充的 Web 應用程式和服務。  
   
- 您可以下載 Azure SDK，透過**新的專案** 對話方塊。  
+ 您可以從 [ **新增專案** ] 對話方塊下載 Azure SDK。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
-### <a name="to-enable-the-azure-sdk"></a>若要啟用 Azure SDK  
+### <a name="to-enable-the-azure-sdk"></a>啟用 Azure SDK  
   
-1. 在 [**檔案**] 功能表中，建立新的專案。 (按一下**的新**，然後按一下**專案**。)  
+1. **在 [檔案**] 功能表上，建立新專案。  (按一下 [ **新增** ]，然後按一下 [ **專案**]。 )   
   
-2. 展開節點，針對**Visual Basic**或是**C#** ，然後按一下 **雲端**。  
+2. 展開 **Visual Basic** 或 **c #** 的節點，然後按一下 [ **雲端**]。  
   
-3. 在中間窗格中，選取**取得 Azure SDK for.NET**，然後按一下**確定**。  
+3. 在中間窗格中，選取 [ **取得 AZURE SDK for .Net**]，然後按一下 **[確定]**。  
   
      請依照安裝程式中的指示執行。  
   
     > [!NOTE]
-    > 若要安裝 Azure Tools，您必須擁有 Internet Information Services 7.0 和已安裝的 ASP.NET 應用程式開發元件。 如果未安裝這些元件，Azure Tools 安裝程式會提示您安裝它們。  
+    > 若要安裝 Azure Tools，您必須安裝 Internet Information Services 7.0 和 ASP.NET 應用程式開發元件。 如果未安裝這些元件，Azure Tools 安裝程式將會提示您進行安裝。  
   
 ## <a name="see-also"></a>另請參閱  
  [Azure](https://azure.microsoft.com/)   
- [開始使用 Azure](https://azure.microsoft.com/get-started/)   
+ [使用 Azure 消費者入門](https://azure.microsoft.com/get-started/)   
  [Azure 社群](https://azure.microsoft.com/support/community/)

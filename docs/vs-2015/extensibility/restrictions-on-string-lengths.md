@@ -1,5 +1,5 @@
 ---
-title: 字串長度限制 |Microsoft Docs
+title: 字串長度的限制 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc6ff1e77a9a973e184384d98ef8b880aaa2f005
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432527"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838882"
 ---
 # <a name="restrictions-on-string-lengths"></a>字串長度限制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-原始檔控制外掛程式 API 限制各種函式中使用的字串的長度。  
+原始檔控制外掛程式 API 會限制不同函式中所使用的字串長度。  
   
 ## <a name="string-length-values"></a>字串長度值  
   
@@ -32,7 +32,7 @@ ms.locfileid: "63432527"
 |`SCC_PRJPATH_LEN`|300|  
   
 > [!NOTE]
-> 長度不包含終止`null`。 其他常數"大小 _s"後置詞，而不是"_LEN 」 並包含終止的空間`null`。  
+> 長度不包含終止 `null` 。 具有 "_SIZE" 後置字元而非 "_LEN" 的其他常數則包含終止的空間 `null` 。  
   
 |常數|值|  
 |--------------|-----------|  

@@ -1,5 +1,5 @@
 ---
-title: 合併功能和封裝中的 XML 資訊清單 |Microsoft Docs
+title: 合併功能和套件資訊清單中的 XML |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,58 +13,58 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429274"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838991"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>合併功能和封裝資訊清單中的 XML
-  功能和封裝所定義[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]資訊清單檔案。 這些封裝資訊清單是從設計工具和自訂所產生的資料組合[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]輸入資訊清單範本中的使用者。 在封裝階段[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]合併自訂[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]陳述式與設計工具提供[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]形成封裝[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]資訊清單檔案。 類似的項目，稍後合併例外狀況，例外狀況會合併以避免[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]之後您將檔案部署到 SharePoint，並將資訊清單檔案較小且更有效率的驗證錯誤。
+  功能和封裝是由資訊清單檔案所定義 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 。 這些封裝的資訊清單是 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 由使用者從在資訊清單範本中輸入的設計師和自訂所產生的資料組合。 在封裝期間，將 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 自訂 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 語句與提供的設計工具合併， [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 以形成封裝的 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 資訊清單檔案。 類似的元素（稍後會在合併例外狀況中注明例外狀況）會合並，以避免 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 在您將檔案部署至 SharePoint 之後的驗證錯誤，以及讓資訊清單檔案更小且更有效率。
 
 ## <a name="modify-the-manifests"></a>修改資訊清單
- 您無法直接修改封裝的資訊清單檔案，直到您停用的功能或封裝的設計工具。 不過，您可以手動新增自訂[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]項目資訊清單範本的功能和封裝設計工具透過或[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]編輯器。 如需詳細資訊，請參閱[如何：自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)和[How to:自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。
+ 在您停用功能或封裝設計工具之前，您無法直接修改已封裝的資訊清單檔案。 不過，您可以 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 透過功能和封裝設計工具或編輯器，手動將自訂元素加入資訊清單範本 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 。 如需詳細資訊，請參閱 [如何：自訂 Sharepoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md) 和 [如何：自訂 sharepoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。
 
-## <a name="feature-and-package-manifest-merge-process"></a>功能和封裝資訊清單合併程序
- 合併與設計工具提供的項目，自訂項目時[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]會使用下列程序。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 檢查每個項目是否具有唯一的索引鍵值。 如果項目沒有唯一的索引鍵值，則會將其附加至封裝的資訊清單檔。 同樣地，具有多個索引鍵的項目無法合併。 因此，它們會附加到資訊清單檔案。
+## <a name="feature-and-package-manifest-merge-process"></a>功能和套件資訊清單合併處理
+ 將自訂元素與設計工具提供的專案結合時，會 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 使用下列程式。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 檢查每個元素是否有唯一的索引鍵值。 如果項目沒有唯一的索引鍵值，則會將其附加至封裝的資訊清單檔。 同樣地，具有多個索引鍵的項目無法合併。 因此，它們會附加至資訊清單檔。
 
- 如果項目具有唯一的索引鍵，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]比較的設計工具和自訂的索引鍵的值。 如果兩個值相符時，它們會合併成單一值。 如果值有所差異，設計工具的機碼值會被捨棄，且自訂的索引鍵值。 集合也會合併。 例如，如果設計工具產生[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]和 自訂[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]同時包含組件集合、 封裝資訊清單包含只有一個組件集合。
+ 如果專案有唯一索引鍵，則會 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 比較設計工具和自訂索引鍵的值。 如果值相符，則會合並成單一值。 如果值不同，則會捨棄設計工具索引鍵值，並使用自訂索引鍵值。 集合也會合並。 例如，如果設計工具產生的 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 和自訂 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 都包含元件集合，則封裝的資訊清單只會包含一個元件集合。
 
-## <a name="merge-exceptions"></a>合併的例外狀況
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 大部分的設計工具會將合併[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]項目及類似的自訂[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]只要他們有唯一的識別屬性的項目。 不過，某些項目沒有所需的唯一識別碼[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]合併。 這些項目稱為*合併例外狀況*。 在這些情況下，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]不會合併自訂[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]項目及設計工具提供[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]項目，但改為將它們附加至封裝的資訊清單檔案。
+## <a name="merge-exceptions"></a>合併例外狀況
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將大部分的設計工具 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 元素與類似的自訂元素合併在一起 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ，只要它們具有單一、唯一的識別屬性即可。 不過，某些元素缺少合併所需的唯一識別碼 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 。 這些元素稱為 *合併例外*狀況。 在這些情況下，不 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會將自訂元素與設計工具提供的專案合併在 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 一起 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ，而是將它們附加至封裝的資訊清單檔案。
 
- 以下是一份合併例外狀況的功能和封裝[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]資訊清單檔案。
+ 以下是功能和套件資訊清單檔案的合併例外狀況清單 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 。
 
-|Designer|XML 項目|
+|Designer|XML 元素|
 |--------------|-----------------|
 |功能設計工具|ActivationDependency|
 |功能設計工具|UpgradeAction|
 |封裝設計工具|SafeControl|
-|封裝設計工具|CodeAccessSecurity|
+|封裝設計工具|Codeaccesssecurityhelper|
 
-## <a name="feature-manifest-elements"></a>功能資訊清單的項目
- 下表是一份可合併所有功能資訊清單元素和其用來比對的唯一索引鍵。
+## <a name="feature-manifest-elements"></a>功能資訊清單元素
+ 下表列出所有可以合併的功能資訊清單元素，以及用於比對的唯一索引鍵。
 
 |元素名稱|唯一索引鍵|
 |------------------|----------------|
-|功能 （所有屬性）|*屬性名稱*（Feature 項目的每個屬性名稱是唯一的索引鍵）。|
+|功能 (所有屬性) |*屬性名稱* (功能專案的每個屬性名稱都是唯一索引鍵。 ) |
 |ElementFile|位置|
 |ElementManifests/ElementManifest|位置|
-|屬性/屬性|Key|
+|屬性/屬性|答案|
 |CustomUpgradeAction|名稱|
 |CustomUpgradeActionParameter|名稱|
 
 > [!NOTE]
-> 因為修改 CustomUpgradeAction 元素的唯一方法是在自訂[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]編輯器中，未合併的影響很低。
+> 由於修改 CustomUpgradeAction 專案的唯一方法是在自訂編輯器中 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ，因此不會合並的效果很低。
 
 ## <a name="package-manifest-elements"></a>封裝資訊清單元素
- 下表是一份可合併所有封裝資訊清單元素和其用來比對的唯一索引鍵。
+ 下表列出所有可以合併的套件資訊清單元素，以及用於比對的唯一索引鍵。
 
 |元素名稱|唯一索引鍵|
 |------------------|----------------|
-|方案 （所有屬性）|*屬性名稱*（Solution 項目的每個屬性名稱是唯一的索引鍵）。|
+|所有屬性) 的解決方案 (|*屬性名稱* (方案元素的每個屬性名稱都是唯一索引鍵。 ) |
 |ApplicationResourceFiles/ApplicationResourceFile|位置|
-|組件/組件|位置|
+|元件/元件|位置|
 |ClassResources/ClassResource|位置|
 |DwpFiles/DwpFile|位置|
 |FeatureManifests/FeatureManifest|位置|
@@ -75,8 +75,8 @@ ms.locfileid: "63429274"
 |TemplateFiles/TemplateFile|位置|
 |SolutionDependency|SolutionID|
 
-## <a name="manually-add-deployed-files"></a>手動加入部署的檔案
- 資訊清單的項目，例如 ApplicationResourceFile 和 DwpFiles，指定包含檔案名稱的位置。 不過，將檔案名稱項目新增至資訊清單的範本不會將基礎檔案加入封裝。 您必須將檔案加入至專案，以將它包含在封裝中，並據以設定其部署類型屬性。
+## <a name="manually-add-deployed-files"></a>手動新增已部署的檔案
+ 某些資訊清單元素（例如 ApplicationResourceFile 和 DwpFiles）會指定包含檔案名的位置。 但是，將檔案名專案加入資訊清單範本中並不會將基礎檔案加入封裝中。 您必須將檔案新增至專案，以將它包含在封裝中，並據以設定其部署類型屬性。
 
 ## <a name="see-also"></a>另請參閱
 - [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：實作巢狀的專案 |Microsoft Docs
+title: 如何：執行嵌套專案 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,73 +12,73 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 427ef425c64323246ffe1141d081fd7d921506a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435243"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839073"
 ---
-# <a name="how-to-implement-nested-projects"></a>HOW TO：實作巢狀專案
+# <a name="how-to-implement-nested-projects"></a>如何：實作巢狀專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-當您建立巢狀的專案類型，有幾個額外步驟必須實作。 父專案會採用一些相同的方案具有及其巢狀 （子系） 專案的責任。 父專案是類似於方案的專案的容器。 特別是，有數個必須在解決方案，以及若要建立巢狀專案的階層的父專案所引發的事件。 這些事件是以建立巢狀的專案的下列程序所述。  
+當您建立嵌套專案類型時，必須執行幾個額外的步驟。 父專案會採用解決方案針對其嵌套 (子) 專案所擁有的相同責任。 父專案是類似于方案的專案容器。 尤其是，方案和父專案必須引發數個事件，以建立嵌套專案的階層架構。 這些事件將在下列程式中描述，以建立嵌套專案。  
   
-### <a name="to-create-nested-projects"></a>若要建立巢狀的專案  
+### <a name="to-create-nested-projects"></a>若要建立嵌套專案  
   
-1. 整合式的開發環境 (IDE) 載入父專案的專案檔案和啟動資訊，藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>介面。 父專案建立並加入至方案。  
-  
-   > [!NOTE]
-   > 到目前為止，則還太早父專案來建立巢狀的專案，因為必須先建立父專案，可以建立子專案的程序。 依照這個順序中，父專案可以將設定套用至子專案，並視子專案能夠取得父專案中的資訊。 此序列是需要在原始程式碼控制 (SCC) 等方案總管 中的用戶端。  
-  
-    父專案必須等候<xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A>專案，它可以建立巢狀 （子） 之前，IDE 所要呼叫的方法。  
-  
-2. IDE 呼叫`QueryInterface`上的父專案<xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>。 如果這個呼叫會成功，IDE 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A>開啟父專案的巢狀專案的所有父代的方法。  
-  
-3. 父專案呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A>是即將建立的方法來通知巢狀專案的接聽程式。 SCC，比方說，接聽這些事件才能知道是否方案和專案建立程序中的步驟所發生的順序。 如果步驟發生故障，解決方案可能不會與原始程式碼控制正確登錄。  
-  
-4. 父專案呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A>方法或<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A>及其子專案的每個上的方法。  
-  
-    您傳遞<xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS>至`AddVirtualProject`方法，指出虛擬 （巢狀） 的專案應該加入 [專案] 視窗中，從組建排除加入原始程式碼控制項中，依此類推。 `VSADDVPFLAGS` 可讓您控制巢狀專案的可見性，並指出哪些功能是與它相關聯。  
-  
-    如果您重新載入先前已存在的子專案的專案儲存在父專案的專案檔案中的父專案呼叫的 GUID `AddVirtualProjectEx`。 唯一的差別`AddVirtualProject`和`AddVirtualProjectEX`在於`AddVirtualProjectEX`有參數，以啟用父專案，以指定每個執行個體`guidProjectID`的子專案，以啟用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfGuid%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfProjref%2A>函式正確。  
-  
-    如果沒有 GUID，例如當您加入新的巢狀的專案時，解決方案會建立一個專案時，它會新增至父代。 它負責父專案來保存該專案在其專案檔中的 GUID。 如果您刪除巢狀的專案時，也可以刪除該專案的 GUID。  
-  
-5. IDE 呼叫`M:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren`父專案的每一個子專案上的方法。  
-  
-    父專案必須實作`IVsParentProject`如果您想要建立巢狀專案。 但是專案永遠不會呼叫父`QueryInterface`針對`IVsParentProject`即使它有它的父專案。 解決方案會處理對`IVsParentProject`，如果實作時，會呼叫`OpenChildren`建立巢狀的專案。 `AddVirtualProjectEX` 一律會從呼叫`OpenChildren`。 它應該永遠不會由父專案在順序中保留階層建立事件呼叫。  
-  
-6. IDE 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>子專案上的方法。  
-  
-7. 父專案呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A>方法來通知接聽程式已建立的父代的子專案。  
-  
-8. IDE 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A>父專案之後已經開啟所有的子專案的方法。  
-  
-    如果已經存在，則父專案會建立每個巢狀專案的 GUID 藉由呼叫`CoCreateGuid`。  
+1. 整合式開發環境 (IDE) 透過呼叫介面載入父專案的專案檔案和啟動資訊 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> 。 父專案已建立並加入至方案。  
   
    > [!NOTE]
-   > `CoCreateGuid` COM API 呼叫時要建立的 GUID。 如需詳細資訊，請參閱`CoCreateGuid`和 MSDN Library 中的 Guid。  
+   > 到目前為止，因為必須先建立父專案，才能建立子專案，所以父專案建立嵌套專案的程式太早太早。 依照這個順序，父專案可以將設定套用至子專案，而子專案可以視需要從父專案取得資訊。 此順序是用戶端所需的順序，例如原始程式碼控制 (SCC) 和方案總管。  
   
-    父專案會儲存此 GUID 要擷取下一次，它會在 IDE 中開啟其專案檔中。 請參閱步驟 4 與呼叫相關的詳細資訊`AddVirtualProjectEX`擷取`guidProjectID`子專案。  
+    父專案必須等待 <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> IDE 呼叫方法，才能建立其嵌套 (子) 專案或專案。  
   
-9. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>父項目識別碼，然後呼叫方法，依照慣例您委派中巢狀的專案。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>擷取巢狀處理您想要在父系上呼叫時，委派中的專案節點的屬性。  
+2. IDE 會 `QueryInterface` 在的父專案上呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject> 。 如果這個呼叫成功，IDE 就會呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> 父系的方法，以開啟父專案的所有嵌套專案。  
   
-     因為父和子專案具現化以程式設計的方式，您可以在此時設定巢狀專案的屬性。  
+3. 父專案 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> 會呼叫方法，以通知接聽程式即將建立的嵌套專案。 例如，SCC 會接聽這些事件，以瞭解解決方案和專案建立程式中的步驟是否按照順序發生。 如果步驟未依順序發生，則可能無法正確地向原始程式碼控制註冊方案。  
+  
+4. 父專案會 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> 在其每個子專案上呼叫方法或方法。  
+  
+    您會傳遞 <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> 至 `AddVirtualProject` 方法，以指出應該將虛擬 (嵌套) 專案加入至專案視窗、從組建中排除、加入至原始程式碼控制等。 `VSADDVPFLAGS` 可讓您控制嵌套專案的可見度，並指出與其相關聯的功能。  
+  
+    如果您重載先前現有的子專案，而該專案的專案 GUID 儲存在父專案的專案檔中，則父專案會呼叫 `AddVirtualProjectEx` 。 和之間的唯一差異在於 `AddVirtualProject` `AddVirtualProjectEX` `AddVirtualProjectEX` 具有參數，可讓父專案指定每個實例的 `guidProjectID` 子專案，以使其能夠 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfGuid%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfProjref%2A> 正常運作。  
+  
+    如果沒有可用的 GUID，例如當您加入新的嵌套專案時，方案會在新增至父系時，為專案建立一個 GUID。 父專案必須負責在其專案檔中保存該專案 GUID。 如果您刪除了嵌套專案，也可以刪除該專案的 GUID。  
+  
+5. IDE 會 `M:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren` 在父專案的每個子專案上呼叫此方法。  
+  
+    如果您想要嵌套專案，則必須執行父專案 `IVsParentProject` 。 但是，即使父專案的 `QueryInterface` `IVsParentProject` 父專案位於其底下，也永遠不會呼叫。 解決方案會處理對的呼叫 `IVsParentProject` ，並在執行時呼叫 `OpenChildren` 以建立嵌套專案。 `AddVirtualProjectEX` 一律會從呼叫 `OpenChildren` 。 父專案絕不會呼叫它，以依序保留階層建立事件。  
+  
+6. IDE 會 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> 在子專案上呼叫方法。  
+  
+7. 父專案 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> 會呼叫方法，以通知接聽程式已建立父系的子專案。  
+  
+8. IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> 會在開啟所有子專案之後，呼叫父專案上的方法。  
+  
+    如果它不存在，則父專案會藉由呼叫來建立每個嵌套專案的 GUID `CoCreateGuid` 。  
+  
+   > [!NOTE]
+   > `CoCreateGuid` 是在建立 GUID 時呼叫的 COM API。 如需詳細資訊，請參閱 `CoCreateGuid` MSDN Library 中的和 guid。  
+  
+    父專案會將此 GUID 儲存在其專案檔中，以便下一次在 IDE 中開啟時加以取出。 請參閱步驟4，以取得與的呼叫相關的詳細資訊，以 `AddVirtualProjectEX` 取得 `guidProjectID` 子專案的。  
+  
+9. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>然後，系統會針對父 ItemID 呼叫方法，依照慣例，您會將委派給嵌套專案。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>會在父代上呼叫您要委派的專案時，抓取該節點的屬性。  
+  
+     因為父系和子專案是以程式設計方式具現化，所以您可以在這個位置設定嵌套專案的屬性。  
   
     > [!NOTE]
-    > 不只執行您會看到從巢狀專案中，執行的內容資訊，但您也可以要求父專案是否已藉由檢查該項目的任何內容<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>。 如此一來，您可以加入額外的動態說明屬性及功能表選項，指定個別的巢狀專案。  
+    > 您不只會收到來自嵌套專案的內容資訊，還可以藉由檢查來詢問父專案是否有該專案的任何內容 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 。 如此一來，您就可以針對個別的嵌套專案加入額外的動態說明屬性和功能表選項。  
   
-10. 階層是顯示在 [方案總管] 藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>方法。  
+10. 階層的建立是為了在方案總管中，透過呼叫方法來顯示 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> 。  
   
-     透過在環境中將階層`GetNestedHierarchy`建置在方案總管 中顯示階層架構。 在這種方式，解決方案會知道專案存在並可將建置的組建管理員 中，或可以允許將受原始程式碼控制專案中的檔案。  
+     您可以透過將階層傳遞至環境， `GetNestedHierarchy` 以建立要在方案總管中顯示的階層。 如此一來，解決方案就知道專案存在，而且可以由組建管理員來管理，或允許專案中的檔案放在原始程式碼控制之下。  
   
-11. Project1 巢狀的所有專案建立後，控制權會傳遞回方案和程序會重複 Project2。  
+11. 當 Project1 的所有嵌套專案都已建立時，控制權會傳回給方案，並針對 Project2 重複處理常式。  
   
-     有子系的子專案，就會發生同樣的程序來建立巢狀的專案。 在此情況下，如果 BuildProject1，也就是子系 Project1，有子專案，就會建立它們之後 BuildProject1 和 Project2 之前。 此程序是遞迴和階層是從頂端向下。  
+     針對具有子系的子專案，則會發生建立嵌套專案的相同程式。 在此情況下，如果 BuildProject1 （即 Project1 的子系）有子專案，則會在 BuildProject1 之後和 Project2 之前建立。 此程式是遞迴的，且階層是由上而下建立的。  
   
-     巢狀的專案關閉時使用者關閉方案或特定專案本身，另一種方法，因為`IVsParentProject`， <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A>，會呼叫。 父專案將呼叫包裝<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A>方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A>而<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A>來通知解決方案的事件接聽程式，關閉巢狀的專案的方法。  
+     當因為使用者關閉方案或特定專案本身而關閉嵌套專案時，會呼叫上的另一個方法 `IVsParentProject` <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A> 。 父專案 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A> 會使用和方法來包裝對方法的呼叫， <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A> 以通知接聽程式要關閉的解決方案事件。  
   
-    下列主題處理實作巢狀的專案時要考量的幾個其他概念：  
+    下列主題將討論當您執行嵌套專案時要考慮的其他幾個概念：  
   
     [卸載並重新載入巢狀專案的考量](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)  
   
@@ -89,8 +89,8 @@ ms.locfileid: "63435243"
     [篩選巢狀專案的 AddItem 對話方塊](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)  
   
 ## <a name="see-also"></a>另請參閱  
- [新增項目加入新項目對話方塊](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)   
+ [在 [加入新專案] 對話方塊中加入專案](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
+ [註冊專案和專案範本](../../extensibility/internals/registering-project-and-item-templates.md)   
  [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [內容參數](../../extensibility/internals/context-parameters.md)   
  [精靈檔 (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

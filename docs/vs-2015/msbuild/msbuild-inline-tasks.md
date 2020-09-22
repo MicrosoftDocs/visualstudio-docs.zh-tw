@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cea0d72488bbd18972b2a2f6d87f21dfb32481d6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439352"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839181"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 內嵌工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
   
   `DoNothing` 工作的其餘項目是空的，它們的用途是用來說明內嵌工作的順序和結構。 本主題後續內容中將提供更強固的範例。  
   
-- `ParameterGroup` 項目是選擇性的。 指定時，它將會宣告工作的參數。 如需輸入和輸出參數的詳細資訊，請參閱本主題稍後的＜輸入和輸出參數＞。  
+- `ParameterGroup` 則是選擇性元素。 指定時，它將會宣告工作的參數。 如需輸入和輸出參數的詳細資訊，請參閱本主題稍後的＜輸入和輸出參數＞。  
   
 - `Task` 項目會描述並包含工作原始程式碼。  
   
@@ -82,7 +82,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
   
 - 如果 `Type` 的值是 `Fragment`，則程式碼會定義 `Execute` 方法的內容，但不會定義簽章或 `return` 陳述式。  
   
-  程式碼本身通常會出現在 `<![CDATA[` 標記和 `]]>` 標記之間。 因為此程式碼是在 CDATA 區段中，所以您不必擔心逸出保留的字元，如 "\<" 或 ">"。  
+  程式碼本身通常會出現在 `<![CDATA[` 標記和 `]]>` 標記之間。 因為程式碼是在 CDATA 區段中，所以您不必擔心如何轉義保留字元，例如 " \<" or "> "。  
   
   或者，您可以使用 `Code` 項目的 `Source` 屬性，來指定包含您工作程式碼的檔案位置。 原始程式檔中的程式碼必須是 `Type` 屬性所指定的類型。 如果 `Source` 屬性存在，`Type` 的預設值為 `Class`。 如果 `Source` 不存在，預設值為 `Fragment`。  
   
@@ -90,7 +90,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 > 在原始程式檔中定義工作類別時，類別名稱必須與對應的 [UsingTask](../msbuild/usingtask-element-msbuild.md) 項目的 `TaskName` 屬性相符。  
   
 ## <a name="hello-world"></a>Hello World  
- 以下是更強固的內嵌工作。 HelloWorld 工作會在預設的錯誤記錄裝置上顯示 "Hello, world!"， 此裝置通常是系統主控台或 Visual Studio 的 [輸出] 視窗。 範例所包含的 `Reference` 項目僅供說明之用。  
+ 以下是更強固的內嵌工作。 HelloWorld 工作會在預設的錯誤記錄裝置上顯示 "Hello, world!"， 此裝置通常是系統主控台或 Visual Studio 的 [輸出]**** 視窗。 範例所包含的 `Reference` 項目僅供說明之用。  
   
 ```  
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -192,5 +192,5 @@ File.WriteAllText(Path, content);
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [工作](../msbuild/msbuild-tasks.md)   
+ [任務](../msbuild/msbuild-tasks.md)   
  [逐步解說：建立內嵌工作](../msbuild/walkthrough-creating-an-inline-task.md)

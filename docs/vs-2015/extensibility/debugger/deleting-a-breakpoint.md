@@ -12,22 +12,22 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42cd353c216c21d14c4f6592da809c72acdba664
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409400"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838995"
 ---
 # <a name="deleting-a-breakpoint"></a>刪除中斷點
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-以下說明時刪除暫止中斷點的程序：  
+以下說明刪除暫止中斷點時的程式：  
   
-## <a name="deletion-process"></a>刪除程序  
- 工作階段的偵錯管理員 (SDM) 會呼叫[IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)從它的方法，以移除暫止中斷點及所有繫結的中斷點繫結。  
+## <a name="deletion-process"></a>刪除進程  
+ 會話 debug manager (SDM) 會呼叫 [IDebugPendingBreakpoint2：:D elete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) 方法，以移除暫止中斷點以及所有與其系結的系結中斷點。  
   
 > [!NOTE]
-> 您也可以藉由呼叫刪除單一繫結的中斷點[IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)。  
+> 單一系結中斷點也可以透過呼叫 [IDebugBoundBreakpoint2：:D elete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)來刪除。  
   
 ## <a name="see-also"></a>另請參閱  
  [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)
