@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: how-to
 description: 瞭解系統管理員如何使用「大量新增」功能或 Microsoft Azure Active Directory 群組，將授權指派給多個「訂閱者」
-ms.openlocfilehash: da7ce369e1d9aaa13b0c346005914b7f64ceb780
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cbcdab00568e375633ddd9d6d350978d6ec56d2a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249619"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005762"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>指派訂閱給多個使用者
 訂用帳戶系統管理入口網站可讓您以一次一個或以大型群組方式新增使用者。  若要新增個別使用者，請參閱[新增單一使用者](assign-license.md)。
@@ -130,11 +130,11 @@ ms.locfileid: "88249619"
 答：根據組織設定 Azure AD 的方式，您可能會在新增使用者之前看到最多24小時的延遲。 如果超過24小時，請 [聯絡支援人員](https://visualstudio.microsoft.com/support/support-overview-vs)。  
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 - 只有一或兩個訂閱者要新增嗎？  參閱[新增單一使用者](assign-license.md)
 - 需要協助嗎？ 請聯絡 [Visual Studio 管理和訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)。

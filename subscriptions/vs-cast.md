@@ -7,12 +7,12 @@ ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
 ms.date: 03/02/2020
 ms.topic: how-to
 description: 了解所選 Visual Studio 訂用帳戶中所含的 CAST Highlight 權益
-ms.openlocfilehash: 565dd9326447757cd2af23e83dfcf7f2d4553054
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3273ffb718249a0503531d20b882334cb76f9428
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906066"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005946"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 CAST Highlight 權益
 在移轉至雲端時，開發人員需要掌握其軟體的重要見解。 利用 CAST 醒目提示，Visual Studio 訂閱者可以快速掃描其應用程式原始程式碼，以找出應用程式在遷移至 Azure 時的雲端就緒程度，並監視應用程式在遷移期間和之後的進度。
@@ -77,10 +77,10 @@ ms.locfileid: "85906066"
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 評定5個應用程式的三個月|  否。  僅提供給新訂閱者使用          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise  | Vl | 評定5個應用程式的三個月|  否。  僅提供給新訂閱者使用          |
-| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 3個月評估1個應用程式                                                             |  否。  僅提供給新訂閱者使用                  |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                       | 3個月評估1個應用程式                                                            |  否。  僅提供給新訂閱者使用                  |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 評定5個應用程式的三個月|  不可以。  僅提供給新訂閱者使用          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise  | Vl | 評定5個應用程式的三個月|  不可以。  僅提供給新訂閱者使用          |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 3個月評估1個應用程式                                                             |  不可以。  僅提供給新訂閱者使用                  |
+| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                       | 3個月評估1個應用程式                                                            |  不可以。  僅提供給新訂閱者使用                  |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  N/A           |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |無法使用  | N/A |
@@ -102,12 +102,12 @@ ms.locfileid: "85906066"
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 如果您尚未啟用訂用帳戶隨附的 Azure DevTest 個人點數權益，請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 並按一下 [工具] 類別中的 azure 磚，以設定您的 azure 訂用帳戶並兌換您的 Azure DevTest 個人點數。
 
 此外，別忘了參考 Greg 在電子郵件中提到的示範、使用者指南和教學課程影片。

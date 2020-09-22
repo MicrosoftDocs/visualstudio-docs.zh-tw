@@ -7,12 +7,12 @@ ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
 ms.date: 02/23/2020
 ms.topic: how-to
 description: 瞭解如何利用適用于具有 Enterprise 合約之客戶的特殊 Azure DevTest 定價
-ms.openlocfilehash: 6d7ad872568ead5c7c53dcd8d0429f2ff0444095
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70f7b9877dcc973d2f649eb0cad53599ff6023f3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903137"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005736"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Azure Enterprise 合約 DevTest 優惠
 
@@ -32,7 +32,7 @@ ms.locfileid: "85903137"
 0. 將滑鼠停留在帳戶名稱上。 
 0. 按一下 [ **編輯** ] 圖示， (最右側的鉛筆) 。 
 0. 按一下 [ **開發/測試** ] 核取方塊。
-0. 按一下 **[儲存]** 。
+0. 按一下 [檔案]  。
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>在帳戶內建立個別訂用帳戶
 帳戶上的每個訂閱者都可以依照下列步驟來建立訂用帳戶：
@@ -42,18 +42,15 @@ ms.locfileid: "85903137"
 0. 按一下 [購買]。   (使用此供應專案時，您實際上不會購買任何專案。 ) 
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 深入瞭解如何管理 Visual Studio 的訂閱。
 - [指派個別訂用帳戶](assign-license.md)
 - [指派多個訂用帳戶](assign-license-bulk.md)
 - [編輯訂用帳戶](edit-license.md)
 - [刪除訂用帳戶](delete-license.md)
 - [判斷最大使用量](maximum-usage.md)
-
-
-

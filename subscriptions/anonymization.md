@@ -7,12 +7,12 @@ ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
 ms.date: 02/20/2020
 ms.topic: conceptual
 description: 了解無法存取訂用帳戶時，訂閱者資料的匿名方式。
-ms.openlocfilehash: b65673d2fe61f62bf9e7731d20763bcd8c6f74bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b3cbd56123c80a96f36925ae98c171e84860798
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232730"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006185"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>將 Visual Studio 訂閱者資訊匿名化
 發生禁止訂閱者使用訂用帳戶的事件時 (例如訂用帳戶到期或刪除訂閱者的登入帳戶)，使用者的個人資訊 (例如名稱和登入帳戶) 基本上會變碼使其無法使用。  這麼做是為了保護訂閱者的個人資訊。
@@ -43,12 +43,10 @@ ms.locfileid: "80232730"
 - 透過租用戶建立 AAD 與 MSA 身分識別的關聯。 
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
-瞭解如何藉由 [關聯 MSA 和 AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator)身分識別來防止匿名化。
-
-
+## <a name="next-steps"></a>下一步
+瞭解如何藉由 [關聯 MSA 和 AAD](/azure/active-directory/b2b/add-users-administrator)身分識別來防止匿名化。

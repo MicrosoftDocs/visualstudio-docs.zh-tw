@@ -1,9 +1,9 @@
 ---
-title: azurecli-登入
+title: azurecli-login
 description: devinit 工具 azurecli-登入。
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e95bc70540ae73c73a17a94b4cadfc399c8557e5
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 74c8144d9442c786bddeae78024fc4cf0d1e0d4a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810169"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006040"
 ---
-# <a name="azurecli-login"></a>azurecli-登入
+# <a name="azurecli-login"></a>azurecli-login
 
 此 `azurecli-login` 工具可用來透過 [Azure CLI](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest&preserve-view=true)登入 Azure Active Directory。 此工具會使用 Azure CLI 命令： `az login --use-device-code` ，若要完成登入，您必須遵循列印到主控台的指示。
 

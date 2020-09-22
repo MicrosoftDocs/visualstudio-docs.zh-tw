@@ -3,7 +3,7 @@ title: OpenCV
 description: 針對 opencv/opencv 存放庫使用 devinit 進行自訂的範例。
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: dd8a17635b70d0f9f49852d09d8f1b9a6864e26e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: a1c7f2c78fdae9c70785727cb03c7f8cb1e08cef
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809094"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005635"
 ---
 # <a name="opencv"></a>OpenCV
 
 此範例說明 [OpenCV](https://github.com/opencv/opencv) 自動布建 [GitHub Codespaces] 所需的自訂 https://github.com/features/codespaces) 。
 
-## <a name="devinitjson"></a>.devinit.js開啟
+## <a name="devinitjson"></a>.devinit.json
 
 檔案 [_.devinit.js_](devinit-json.md) 的內容。 此檔案必須位於與 _.devcontainer.js_的相同資料夾中。
 

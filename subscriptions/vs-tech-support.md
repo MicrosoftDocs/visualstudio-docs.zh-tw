@@ -7,12 +7,12 @@ ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 09/02/2020
 ms.topic: how-to
 description: 了解如何啟用 Visual Studio 訂用帳戶所包含的技術支援權益。
-ms.openlocfilehash: ba4a80f604116a10901d98229980f2732956c0df
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 6f22273d578c6e1bc30d588fff30c945846a5d8f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508934"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004542"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>啟用並使用 Visual Studio 訂用帳戶中的技術支援權益
 如果產品仍在[支援生命週期](https://support.microsoft.com/lifecycle/search)的主要支援階段中，Visual Studio 訂用帳戶技術支援權益可為其解決**非生產環境**中的協助修正問題。 自權益啟用的 1 年內，Visual Studio Enterprise 標準和年度雲端訂用帳戶可接收四個事件，而 Visual Studio Professional 標準和年度雲端訂用帳戶可接收兩個事件。 您必須在訂用帳戶為最新狀態時啟用權益。
@@ -121,12 +121,12 @@ ms.locfileid: "89508934"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL，Azure，零售，選取的 NFR<sup>1</sup> | 4 個事件       |  是|
-| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl | 4 個事件       |  是|
-| Visual Studio Professional (Standard) | VL、Azure、零售、挑選過的 NFR<sup>2</sup>                                        | 2 個事件                                                          |是         |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                     | 2 個事件                                                          |是         |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 2 個事件                                             |  是         |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 2 個事件                                               | 是         |
+| Visual Studio Enterprise (Standard)   | VL，Azure，零售，選取的 NFR<sup>1</sup> | 4 個事件       |  Yes|
+| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl | 4 個事件       |  Yes|
+| Visual Studio Professional (Standard) | VL、Azure、零售、挑選過的 NFR<sup>2</sup>                                        | 2 個事件                                                          |Yes         |
+| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                     | 2 個事件                                                          |Yes         |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 2 個事件                                             |  Yes         |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 2 個事件                                               | Yes         |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 ||
 
@@ -137,12 +137,12 @@ ms.locfileid: "89508934"
 不確定您使用哪一個訂用帳戶？  連接至以 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 查看指派給您電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

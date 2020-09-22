@@ -7,12 +7,12 @@ ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: 了解大量授權合約上的系統管理員如何存取 Visual Studio 訂用帳戶管理入口網站
-ms.openlocfilehash: 2fd2ab46100cc8c7f968b35e6ae0103092e4e684
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a3846eb9d45c05440559e3ab2cae901d1521245
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80233135"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005208"
 ---
 # <a name="accessing-the-administration-portal-as-an-admin-on-a-volume-license-agreement"></a>以大量授權合約的系統管理員身分存取系統管理入口網站
 
@@ -29,12 +29,12 @@ ms.locfileid: "80233135"
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 - 了解如何[指派訂用帳戶](assign-license.md)
 - 深入了解[訂用帳戶權益](https://visualstudio.microsoft.com/vs/benefits/)的完整範圍
-- [設定合約喜好設定](admin-prefs.md) 
+- [設定合約喜好設定](admin-prefs.md)

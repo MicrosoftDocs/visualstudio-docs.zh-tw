@@ -1,9 +1,9 @@
 ---
-title: wsl-安裝
+title: wsl-install
 description: devinit tool wsl-安裝。
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: d0b70c05fd4b8b3681274838d6ae8df67f68dbca
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a52027c060917e8c5f692f472427ba5d980b3bb
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811222"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005054"
 ---
-# <a name="wsl-install"></a>wsl-安裝
+# <a name="wsl-install"></a>wsl-install
 
 此 `wsl-install` 工具可用來安裝適用于 [WINDOWS 子系統 LINUX 版](https://docs.microsoft.com/windows/wsl/) (WSL) 的 Linux 散發版本。
 
@@ -31,7 +31,7 @@ ms.locfileid: "90811222"
 | 名稱                                             | 類型   | 必要 | 值                                                             |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------|
 | **評論**                                     | 字串 | No       | 選擇性批註屬性。 未使用。                             |
-| [**輸入**](#input)                              | 字串 | 是      | 要安裝的發行版本。 如需詳細資料，請參閱下列 [輸入](#input) 。     |
+| [**輸入**](#input)                              | 字串 | Yes      | 要安裝的發行版本。 如需詳細資料，請參閱下列 [輸入](#input) 。     |
 | [**additionalOptions**](#additional-options)     | 字串 | No       | 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。  |
 
 ### <a name="input"></a>輸入

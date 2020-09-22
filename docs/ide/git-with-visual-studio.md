@@ -2,18 +2,18 @@
 title: Visual Studio (Preview) 的新 Git 體驗
 titleSuffix: ''
 description: 瞭解 Visual Studio 2019 中新的整合式 Git 體驗
-ms.date: 09/21/2020
+ms.date: 09/22/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: c42571f58e6e5f531d87b26f44fc86b87913497d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e8bc35a6434ab619e7232b5351ba95aae68db2cd
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862082"
+ms.locfileid: "91005128"
 ---
 # <a name="new-git-experience-in-visual-studio-preview"></a>Visual Studio (Preview) 的新 Git 體驗
 

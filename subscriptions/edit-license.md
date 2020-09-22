@@ -7,12 +7,12 @@ ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 07/30/2020
 ms.topic: how-to
 description: 了解系統管理員如何編輯訂用帳戶指派。
-ms.openlocfilehash: fb43f9ceae86acf5804a6cd32dd383dcd2e9af38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d96610c940dc8e4404212a6f3a3dbaa7fe3ef51
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453734"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005583"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>編輯 Visual Studio 訂用帳戶指派
 身為訂用帳戶管理員，您可以變更指派給您組織內個人的訂用帳戶。  本文章討論您可以進行的變更類型，並提供必要的步驟。
@@ -56,12 +56,12 @@ ms.locfileid: "87453734"
 5. 上傳檔案後，您會看到通知，讓您知道作業已順利完成。 此時，您的編輯會反映在訂閱者資訊中。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 - 需要指派特定的訂用帳戶識別碼嗎？ 簽出指派訂用帳戶識別碼。 
 - 如需協助以尋找特定的訂閱，請參閱[搜尋訂閱](search-license.md)。
 - 需要建立您所有訂閱項目的清單嗎？  參閱[匯出訂用帳戶](exporting-subscriptions.md)。

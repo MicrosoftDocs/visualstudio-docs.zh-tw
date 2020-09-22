@@ -7,12 +7,12 @@ ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 深入瞭解系統管理員管理大型團隊訂用帳戶的責任，以及外部承包商。
-ms.openlocfilehash: 9753c7a69b5334abd0e4ccb299ece3a5403517bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86848fc7b5c9507c1e5df5bd043ee21217afe313
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232314"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005557"
 ---
 # <a name="large-teams-and-external-contractors"></a>大型小組和外部承攬人
 Visual Studio 訂用帳戶系統管理員必須負責確保與 Visual Studio 授權軟體進行互動的每個使用者，已使用自己的 Visual Studio 訂用帳戶取得適當的授權。
@@ -35,12 +35,12 @@ Visual Studio 訂用帳戶系統管理員必須負責確保與 Visual Studio 授
 - [大量授權條款](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 深入了解系統管理員的責任：
 - [系統管理員責任](admin-responsibilities.md)
 - [清查生產前環境](admin-inventory.md)

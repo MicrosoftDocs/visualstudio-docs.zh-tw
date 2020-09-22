@@ -7,12 +7,12 @@ ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 登入可能會因為使用別名或易記名稱而失敗
-ms.openlocfilehash: 1b6c465bc3e850d8582abde200ac9e5bd995e431
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f73aa52be518de627d468e8e1171de5f3145753b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234636"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006211"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>使用別名時登入 Visual Studio 訂閱可能會失敗
 視登入所用的帳戶類型而定，登入時可能無法正確顯示可用的訂閱 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 。 其中一個可能的原因是使用「別名」或「易記名稱」，而非使用訂用帳戶指派目標的登入身分識別。 這稱為「別名處理」。
@@ -86,23 +86,21 @@ Visual Studio 平臺會排列主要別名的優先順序，以顯示訂用帳戶
 
 0. 如果您要改變單一使用者，請在資料表中選取該使用者，然後以滑鼠右鍵按一下來編輯。 這會開啟一個面板，您可以在其中修改登入電子郵件地址。 在 [登入電子郵件地址] 欄位中進行必要的更新。 按一下 [儲存]，變更將會生效。  
 
-0. 如果您需要對大量的使用者進行這些變更，您可以利用大量編輯功能。 如需詳細資訊，請參閱「 [使用大量編輯來編輯多個訂閱者](https://docs.microsoft.com/visualstudio/subscriptions/edit-license#edit-multiple-subscribers-using-bulk-edit) 」一文。
+0. 如果您需要對大量的使用者進行這些變更，您可以利用大量編輯功能。 如需詳細資訊，請參閱「 [使用大量編輯來編輯多個訂閱者](./edit-license.md#edit-multiple-subscribers-using-bulk-edit) 」一文。
 
 > [!NOTE]
 > 針對個別和大量變更，訂閱者會收到一封電子郵件，指示他們的登入電子郵件地址已變更，且必須使用更新的電子郵件地址登入。 也請務必注意，如果訂閱者先前已啟用其他登入位址的權益，他們將需要繼續使用其他登入位址來存取它們。  
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 深入瞭解如何管理 Visual Studio 的訂閱。
 - [指派個別訂用帳戶](assign-license.md)
 - [指派多個訂用帳戶](assign-license-bulk.md)
 - [編輯訂用帳戶](edit-license.md)
 - [判斷最大使用量](maximum-usage.md)
-
-

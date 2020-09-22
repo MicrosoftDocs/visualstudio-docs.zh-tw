@@ -11,25 +11,25 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: a0991fa1760e2ea4592ec861f9d2d29a5763eaea
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 629ad64ad2a179e1f70998240f26a4484280e514
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862085"
+ms.locfileid: "91005009"
 ---
 # <a name="what-is-github-codespaces-preview"></a>什麼是 GitHub Codespaces？ (預覽)
 
 歡迎使用 Codespaces！ 很高興您在這裡。
 
-GitHub Codespaces 可為您提供適用于任何活動的雲端技術開發環境，不論是長期專案，還是審核提取要求等短期工作。 您可以從 Visual Studio 2019 Preview 內使用 codespace ([註冊有限的公用 Beta](https://github.com/features/codespaces/signup)) 。
+GitHub Codespaces 可為您提供適用于任何活動的雲端技術開發環境，不論是長期專案，還是審核提取要求等短期工作。 您可以從 Visual Studio 2019 Preview 內使用 codespace ([註冊有限的公用 Beta](https://github.com/features/codespaces/signup-vs)) 。
 
 此外，GitHub Codespaces 帶來許多 DevOps 的優點，例如重複性和可靠性， &mdash; 通常會保留給開發環境的生產工作負載 &mdash; 。 您也可以將 GitHub Codespaces 個人化，讓您偏好及依賴的工具、程式和設定也存在。
 
 本檔將說明重要概念，並介紹 Codespaces 功能。 如果您想要開始使用，請參閱 [使用 Visual Studio codespace](use-visual-studio-with-codespaces.md)。
 
 > [!IMPORTANT]
-> 您必須註冊有限的 [公用 Beta 版](https://github.com/features/codespaces/signup) ，才能使用 GitHub Codespaces。 在測試期間，GitHub 不會對 Codespaces 的可用性做出任何保證。 如需有關加入 Beta 的詳細資訊，請參閱 [關於 Codespaces](https://docs.github.com/github/developing-online-with-codespaces/about-codespaces#joining-the-beta)。
+> 您必須註冊有限的 [公用 Beta 版](https://github.com/features/codespaces/signup-vs) ，才能使用 GitHub Codespaces。 在測試期間，GitHub 不會對 Codespaces 的可用性做出任何保證。 如需有關加入 Beta 的詳細資訊，請參閱 [關於 Codespaces](https://docs.github.com/github/developing-online-with-codespaces/about-codespaces#joining-the-beta)。
 
 ## <a name="concepts-and-features"></a>概念和功能
 

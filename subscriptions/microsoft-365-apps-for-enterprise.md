@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: 深入瞭解並安裝適用于企業的 Microsoft 365 應用程式
-ms.openlocfilehash: 0249f2c97ba93c49985629143dabb842447c196f
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 88570806d90ff022ede6f39c16325d8696ef0f9e
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561248"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006120"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中適用于企業的 Microsoft 365 應用程式
 您可以在選取的 Visual Studio 訂用帳戶中，取得適用于 enterprise (的 Microsoft 365 應用程式先前的 Office 365 Pro Plus)  
@@ -55,8 +55,8 @@ ms.locfileid: "89561248"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售| 可用       |  是          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise  | Vl | 可用       |  是          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售| 可用       |  Yes          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise  | Vl | 可用       |  Yes          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | 無法使用       |  N/A          |
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                            |  N/A          |
 | 含 GitHub Enterprise 的 Visual Studio Professional | Vl | 無法使用         |  N/A          |
@@ -78,13 +78,13 @@ ms.locfileid: "89561248"
 - 是否有關於 Visual Studio IDE、Azure DevOps 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure DevTest 個人點數](vs-azure.md) 如果您打算開發 Office 的應用程式，您會想要啟用 [Office Developer 訂閱](vs-office-dev.md)
+- [Azure DevTest 個人點數](vs-azure.md) 如果您打算開發 Office 的應用程式，您會想要啟用 [Office Developer 訂閱](./vs-m365.md)

@@ -1,9 +1,9 @@
 ---
-title: 需要-azureartifactscredentialprovider
+title: require-azureartifactscredentialprovider
 description: devinit 工具需要-azureartifactscredentialprovider。
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 74e8775fb9dc864e8026f73e3bc75604dbf32e10
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c4109ad5fcd0e77947552608ceab7b456a3ac1a6
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810909"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005061"
 ---
-# <a name="require-azureartifactscredentialprovider"></a>需要-azureartifactscredentialprovider
+# <a name="require-azureartifactscredentialprovider"></a>require-azureartifactscredentialprovider
 
 此 `require-azureartifactscredentialprovider` 工具會安裝 Azure Artifacts 認證提供者。 Azure Artifacts 認證提供者會自動取得將 NuGet 套件還原為 .NET 開發工作流程一部分所需的認證。 如需 Azure Artifacts 認證提供者的詳細資訊，請參閱 [這裡](https://github.com/microsoft/artifacts-credprovider/blob/master/README.md)。
 

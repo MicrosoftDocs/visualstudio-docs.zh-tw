@@ -7,12 +7,12 @@ ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
 ms.date: 04/20/2020
 ms.topic: how-to
 description: 了解 Visual Studio 訂用帳戶隨附的 Windows 開發人員帳戶。
-ms.openlocfilehash: 02d968875bec5d23fe25daaea5d2829f29a67111
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2686034d95c8faf8caed25b6b2fb4cb7ad83d8fe
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875471"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005378"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Windows 開發人員帳戶
 Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中) 可讓您將免費和付費 Windows 應用程式提交至 Windows 市集。
@@ -36,17 +36,17 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 7. 建立發行者顯示名稱。  這會是您的客戶看到且與您的應用程式、增益集和服務建立關聯的唯一名稱。
 8. 提供您的連絡資訊和慣用電子郵件語言，然後按一下 [下一步]****。
 9. 系統可能會要求您驗證密碼。  輸入它，然後按一下 [登入]****。
-10. 在 [Registration - Payment] (註冊 - 付款) 頁面上，貼上您先前複製至 [促銷代碼] 欄位的程式碼。  此頁面會更新，以顯示 [不須付款]**。  按一下 [下一步]  。
+10. 在 [Registration - Payment] (註冊 - 付款) 頁面上，貼上您先前複製至 [促銷代碼] 欄位的程式碼。  此頁面會更新，以顯示 [不須付款]**。  按 [下一步]  。
 11. 檢閱您的帳戶資訊，並檢閱應用程式開發人員協議，然後按一下此核取方塊，指出您接受條款和條件。  然後按一下 [ **完成**]。
 12. 按一下 [移至儀表板]**** 開始使用 Windows 開發人員帳戶！
 
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 已包括       |  是|
-| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl  | 已包括       |  是|
-| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 已包括                                                            |是|
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                        | 已包括                                                            |是|
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 已包括       |  Yes|
+| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl  | 已包括       |  Yes|
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 已包括                                                            |Yes|
+| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                        | 已包括                                                            |Yes|
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                            |  NA|
 | MSDN 平台 (標準)                                          | VL, 零售                                              |  無法使用                                            |  NA|
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
@@ -66,12 +66,12 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

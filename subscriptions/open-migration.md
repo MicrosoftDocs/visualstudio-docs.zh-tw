@@ -7,12 +7,12 @@ ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: 了解合作夥伴如何為其客戶管理 Visual Studio 訂用帳戶。
-ms.openlocfilehash: b91959431fb653385c02e6465315a02c8be18c60
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 2442f3ac1821c81adcee5d029814ebfb79a6fb17
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426547"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006055"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>代替客戶管理訂用帳戶的合作夥伴
 若要在 Visual Studio 訂用帳戶 [管理入口網站](https://manage.visualstudio.com)中管理訂用帳戶，您必須遵循幾個步驟。 
@@ -65,11 +65,11 @@ ms.locfileid: "89426547"
 - [大量授權條款](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 - 造訪 Visual Studio [訂閱系統管理入口網站](https://manage.visualstudio.com)以管理訂閱。
 - 需要協助嗎？ 請聯絡 Visual Studio [管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)

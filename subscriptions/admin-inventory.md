@@ -7,12 +7,12 @@ ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
 ms.date: 03/06/2020
 ms.topic: conceptual
 description: 了解系統管理員要進行生產前清查的責任
-ms.openlocfilehash: dc307d9d2f83666c6648a35b3e28a81da2de5c38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1abc3c15a7bd9e47b0f449c5a49fdbbc8e7bb590
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232763"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004153"
 ---
 # <a name="inventory-of-pre-production-environment"></a>清查生產前環境
 Visual Studio 訂用帳戶透過計算使用者　(而不是裝置) 來簡化資產管理。
@@ -31,17 +31,14 @@ Visual Studio 系統管理員必須將 Visual Studio 訂用帳戶指派給**特�
 - [大量授權條款](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 深入了解系統管理員的責任：
 - [系統管理員責任](admin-responsibilities.md)
 - [管理大型小組及外部承攬人](manage-teams.md)
 - [追蹤使用者指派及處理訂單](assignments-orders.md)
 - 使用[使用量上限](maximum-usage.md)來追蹤購買承諾用量
-
-
-

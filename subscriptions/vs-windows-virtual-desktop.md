@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: 瞭解如何透過您的 Visual Studio 訂用帳戶來利用 Microsoft Windows 虛擬桌面
-ms.openlocfilehash: f598aca8d277ca443b10dac289fae756ccd95432
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 4e619b9c1140611be5236edfff70e8b0aa560b23
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561360"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005042"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>存取訂用帳戶中的 Windows 虛擬桌面 
 Visual Studio 訂閱者現在可以將其 Azure 開發/測試人員點數用於 Microsoft Windows 虛擬桌面服務。  
@@ -23,7 +23,7 @@ Windows 虛擬桌面是在雲端中執行的全方位桌面與應用程式虛擬
 - 提供具有免費擴充安全性更新的 Windows 7 虛擬桌面
 - 將您現有的遠端桌面服務 (RDS) 和 Windows Server 桌面和應用程式帶到任何電腦
 - 將桌面和應用程式虛擬化
-- 使用統一的管理體驗來管理 Windows 10、Windows Server 和 Windows 7 桌上型電腦和應用程式，以瞭解您可以如何使用 Windows 虛擬桌面的詳細資訊，請觀看 [簡介影片](https://docs.microsoft.com/azure/virtual-desktop/overview)。
+- 使用統一的管理體驗來管理 Windows 10、Windows Server 和 Windows 7 桌上型電腦和應用程式，以瞭解您可以如何使用 Windows 虛擬桌面的詳細資訊，請觀看 [簡介影片](/azure/virtual-desktop/overview)。
 
 ## <a name="use-windows-virtual-desktop-with-azure"></a>搭配 Azure 使用 Windows 虛擬桌面 
 Visual Studio 訂閱者現在有數種方式可使用 Azure 訂用帳戶來支付 Windows 虛擬桌面服務的費用：
@@ -35,23 +35,23 @@ Visual Studio 訂閱者現在有數種方式可使用 Azure 訂用帳戶來支�
 Windows 虛擬桌面需要 Azure Active Directory (Azure AD) 將會聯結 Vm。  使用者必須是此 Azure AD 的成員。  有兩個選項可執行 Azure AD：
 - Azure AD 目錄服務。  對於大部分的使用者而言，這是最容易執行的選項。
 - 執行網域控制站促銷的虛擬機器。  此選項需要更多的工作來設定，但可為大多數使用者提供較低的營運成本。
-若要查看使用 Windows 虛擬桌面之必要條件的完整清單，請流覽 Windows 虛擬桌面的 [[總覽] 頁面](https://docs.microsoft.com/azure/virtual-desktop/overview#requirements)。 
+若要查看使用 Windows 虛擬桌面之必要條件的完整清單，請流覽 Windows 虛擬桌面的 [[總覽] 頁面](/azure/virtual-desktop/overview#requirements)。 
 
 ## <a name="get-started"></a>開始使用 
 當您的所有必要條件都已就緒時，您會想要完成數個動作來準備您的實施。  若要開始使用，請參閱下列教學課程：
-- [建立 Windows 虛擬桌面租用戶](https://docs.microsoft.com/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
-- 使用 Azure 入口網站[建立主機集](https://docs.microsoft.com/azure/virtual-desktop/create-host-pools-azure-marketplace)區
-- 管理適用于 Windows 虛擬桌面的[應用程式群組](https://docs.microsoft.com/azure/virtual-desktop/manage-app-groups)
+- [建立 Windows 虛擬桌面租用戶](/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
+- 使用 Azure 入口網站[建立主機集](/azure/virtual-desktop/create-host-pools-azure-marketplace)區
+- 管理適用于 Windows 虛擬桌面的[應用程式群組](/azure/virtual-desktop/manage-app-groups)
 
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 可用|  是          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise  | Vl | 可用|  是          |
-| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 可用                                                             |  是             |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                       | 可用                                        |  是           |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用|  是          |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                         |  是          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 可用|  Yes          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise  | Vl | 可用|  Yes          |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 可用                                                             |  Yes             |
+| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                       | 可用                                        |  Yes           |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用|  Yes          |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                         |  Yes          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |無法使用  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 
@@ -63,11 +63,11 @@ Windows 虛擬桌面需要 Azure Active Directory (Azure AD) 將會聯結 Vm。 
 不確定您使用哪一個訂用帳戶？  連接至以 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 查看指派給您電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="see-also"></a>另請參閱
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Windows 虛擬桌面文件](https://docs.microsoft.com/azure/virtual-desktop/)
+- [Azure 檔](/azure/)
+- [Windows 虛擬桌面文件](/azure/virtual-desktop/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 -   如果您需要購買 Visual Studio 訂閱，請參閱：
      - 透過 Microsoft Store 的[零售購買定價](https://visualstudio.microsoft.com/vs/pricing/)
      - [大量授權方案](https://www.microsoft.com/licensing/default)
--   深入瞭解 [Windows 虛擬桌面](https://docs.microsoft.com/azure/virtual-desktop/overview) 
+-   深入瞭解 [Windows 虛擬桌面](/azure/virtual-desktop/overview)

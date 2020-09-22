@@ -7,12 +7,12 @@ ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
 ms.date: 06/16/2020
 ms.topic: how-to
 description: 瞭解系統管理員如何在 Visual Studio 訂閱系統管理入口網站中刪除訂用帳戶指派
-ms.openlocfilehash: c4e55a18bb172588bf1daf777aeee8fee1dca02b
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: a40f1ae5bb8d90217808888ccb44e047f8145b9f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561347"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005671"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>刪除 Visual Studio 訂閱的指派
 當訂閱者因為離開公司、完成專案，或轉換至新的工作角色等原因，而不再需要 Visual Studio 訂閱時，您可以將其訂閱移除，並指派給其他人。 請注意，當您重新指派訂閱時，不會重設所有訂閱者權益。  新的使用者將能夠過領取任何未領取的金鑰，並檢視先前已領取的金鑰，然而系統「不會重設」**** 領取限制。  針對擁有 Enterprise 合約 (EA) 的組織，原始使用者曾使用的任何權益 (例如 Pluralsight 訓練) 都會被重設。 
@@ -30,14 +30,12 @@ ms.locfileid: "89561347"
    > 使用範本的大量刪除無法使用。 針對透過 Azure Active Directory 安全性群組管理訂用帳戶指派的組織，請參閱 [我們的文章](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) ，以取得有關刪除發生方式的詳細資訊。  
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 - 需要在不刪除的情況下變更訂閱？  了解如何[編輯訂閱](edit-license.md)
 - 如需協助以尋找特定的訂閱，請參閱[搜尋訂閱](search-license.md)。
 - 需要建立您所有訂閱項目的清單嗎？  請參閱[匯出訂閱](exporting-subscriptions.md)。
-
-

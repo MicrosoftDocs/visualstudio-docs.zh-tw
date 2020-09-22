@@ -7,12 +7,12 @@ ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: 了解登入 Visual Studio 訂用帳戶時可能遇到的問題
-ms.openlocfilehash: 5d8a71115cd1a1aa7d850945806c22a64e7721cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05d610a9dbfb3ac8afe3d49cecde37320c2c250f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801876"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005273"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>登入 Visual Studio 訂用帳戶的問題
 若要使用 Visual Studio 訂用帳戶，您必須先登入。  視您的訂用帳戶而定，您可能已使用 Microsoft 帳戶 (MSA) 或 Azure Active Directory (AAD) 身分識別加以設定。  本文將討論一些登入訂用帳戶時可能會遇到的問題。
@@ -64,11 +64,11 @@ ms.locfileid: "88801876"
 從訂閱者觀點來看，先與您的系統管理員合作以了解您公司的身分識別設定非常重要。 如果有需要，您的系統管理員可能必須從其系統管理入口網站更新您的帳戶設定，或您可能需要使用您的公司電子郵件地址建立 Microsoft 帳戶 (MSA)。 採取建立 MSA 的步驟之前，請先就採取此步驟可能涉及的任何原則或問題洽詢您的系統管理員。 
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 - 了解如何在 AAD 內[連結 MSA 與 AAD 帳戶](/azure/active-directory/b2b/add-users-administrator)。
 - 深入了解[匿名化](anonymization.md)。

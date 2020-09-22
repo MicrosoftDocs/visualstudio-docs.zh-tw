@@ -7,12 +7,12 @@ ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中軟體下載項目的產品可用性
-ms.openlocfilehash: c7ab3f717b1af3447d88587e8455f0572fd09d09
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: e223946aabd9a0b789f51e80e522c24d8a85dd4c
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561477"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005855"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中軟體下載項目的產品可用性
 您可以存取各種下載軟體，這是訂閱者權益的一部分。
@@ -39,11 +39,11 @@ ms.locfileid: "89561477"
 不確定您使用哪一個訂用帳戶？  連接至以 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 查看指派給您電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 - 某些軟體下載項目可能需要產品金鑰，才能加以安裝及啟用。  如需如何取得及管理產品金鑰的詳細資訊，請參閱我們的 [產品金鑰](product-keys.md) 文章。 
 - 了解如何[下載軟體](download-software.md)。

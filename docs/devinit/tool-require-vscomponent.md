@@ -1,9 +1,9 @@
 ---
-title: 需要-vscomponent
+title: require-vscomponent
 description: devinit 工具需要-vscomponent。
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: d53e6d35a7c0d78505192f7c8863c34f9e1ca874
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7c47c219fa0c0ef32946d6e0500bc37ce9aec0ff
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810425"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005034"
 ---
-# <a name="require-vscomponent"></a>需要-vscomponent
+# <a name="require-vscomponent"></a>require-vscomponent
 
 此 `require-vscomponent` 工具可用來將 Visual Studio 設定匯入現有的 Visual Studio。 如需詳細資訊，請參閱 `.vsconfig` [ ](https://docs.microsoft.com/visualstudio/install/import-export-installation-configurations)。
 

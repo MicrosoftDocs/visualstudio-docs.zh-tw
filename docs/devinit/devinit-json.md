@@ -3,7 +3,7 @@ title: devinit 設定檔
 description: Devinit 資訊清單檔案的檔。 .devinit.js
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 5ba7299f90ce5f3f253a7210456053faa6bd22c0
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: b0cfb1c41d7721598bae44f950ced01d17ff494a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852199"
+ms.locfileid: "91005357"
 ---
 # <a name="devinit-configuration-file"></a>devinit 設定檔
 
@@ -58,14 +58,14 @@ _._ 在中，可以省略目錄和檔案名。
 | 名稱         | 類型   | 必要 | 值                              |
 |--------------|--------|----------|------------------------------------|
 | **評論** | 字串 | No       | 檔案的批註。             |
-| **運行**      | array  | 是      | [RunTool 物件](#run-tool-object) |
+| **運行**      | array  | Yes      | [RunTool 物件](#run-tool-object) |
 
 #### <a name="run-tool-object"></a>執行工具物件
 
 | 名稱                  | 類型   | 必要 | 值                                                                                                      |
 |-----------------------|--------|----------|------------------------------------------------------------------------------------------------------------|
 | **評論**          | 字串 | No       | 工具專案的批註。                                                                               |
-| **工具**              | 字串 | 是      | 工具名稱。 如需 `devinit list` 可用工具的清單，請參閱命令。                            |
+| **工具**              | 字串 | Yes      | 工具名稱。 如需 `devinit list` 可用工具的清單，請參閱命令。                            |
 | **input**             | 字串 | No       | 工具輸入。 因工具而異。 例如，所需的版本、封裝識別碼、檔案名或資料夾。|
 | **additionalOptions** | 字串 | No       | 要傳遞至工具的其他命令列引數。                                                |
 

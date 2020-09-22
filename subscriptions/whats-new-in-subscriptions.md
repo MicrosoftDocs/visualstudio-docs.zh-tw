@@ -8,12 +8,12 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c7276666b5ff02fbee03ebe8f88987257b0e50c1
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649684"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005286"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的新功能
 
@@ -33,7 +33,7 @@ ms.locfileid: "81649684"
 我們讓您能輕鬆地比對使用 Microsoft 帳戶 (MSA) 至 Azure Active Directory (Azure AD) 的訂閱者，因此您可以快速地連結這兩個身分識別。  使用 Azure AD 身分識別可提供更高的安全性和更輕鬆的訂用帳戶管理。  如需詳細資料，請參閱我們的 [個人登入文章](personal-email-sign-ins.md) 。 
 
 #### <a name="add-subscribers-using-azure-active-directory-groups"></a>使用 Azure Active Directory 群組新增訂閱者
-如果您的組織使用 Azure Active Directory (Azure AD) ，您現在可以使用 Azure AD 群組來管理訂用帳戶。  將訂用帳戶指派給群組，讓您能夠非常快速地將相同類型的訂閱提供給多個使用者。  將新使用者新增至 Azure AD 群組時，系統會自動將訂用帳戶指派給他們。  如果從 Azure AD 群組中移除使用者，也會移除其訂用帳戶。  這可協助您的組織將您的訂用帳戶管理自動化，以節省管理員的時間和精力。  如需詳細資料，請參閱檔中的「 [新增多位使用者](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) 」文章。 
+如果您的組織使用 Azure Active Directory (Azure AD) ，您現在可以使用 Azure AD 群組來管理訂用帳戶。  將訂用帳戶指派給群組，讓您能夠非常快速地將相同類型的訂閱提供給多個使用者。  將新使用者新增至 Azure AD 群組時，系統會自動將訂用帳戶指派給他們。  如果從 Azure AD 群組中移除使用者，也會移除其訂用帳戶。  這可協助您的組織將您的訂用帳戶管理自動化，以節省管理員的時間和精力。  如需詳細資料，請參閱檔中的「 [新增多位使用者](./assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) 」文章。 
 
 ### <a name="cast-highlight"></a>CAST Highlight
 我們很高興宣佈我們的合作夥伴所提供的權益，轉型醒目提示。 
@@ -57,7 +57,7 @@ Visual Studio 訂閱的入口網站會進行外觀和易用性的重大變更。
    > [!div class="mx-imgBorder"]
    > ![新的精選權益](_img/whats-new/whats-new-featured.png)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 - 查看新的訂用帳戶 [管理入口網站](https://manage.visualstudio.com) UI 及其新功能
 - 深入瞭解[轉換醒目](vs-cast.md)提示
 - 請務必回來查看 Visual Studio 訂閱新功能的最新資訊！

@@ -1,9 +1,9 @@
 ---
-title: 設定-env
+title: set-env
 description: devinit 工具需要-set-env。
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e7c327fb3f8492af8c1c740044f852d826fffad0
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 2f4ec5489f22e94ad8f57f22ddc7742dc0ae3ade
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810418"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005992"
 ---
-# <a name="set-env"></a>設定-env
+# <a name="set-env"></a>set-env
 
 此 `set-env` 工具可用來設定要在目前進程中使用的環境變數。 環境變數只會在目前的進程中設定，而其他 `devinit` 工具在該進程中執行時，將會使用這些變數。
 
@@ -48,6 +48,10 @@ ms.locfileid: "90810418"
 ### <a name="additional-options"></a>其他選項
 
 未使用。
+
+## <a name="usage-in-a-codespace"></a>Codespace 中的使用方式
+
+如果您使用的是 codespace，可以透過 customizating 檔案中的屬性，來設定 codespace 中使用的環境變數 `remoteEnv` [`.devcontainer.json`](https://docs.microsoft.com/visualstudio/codespaces/reference/configuring) 。
 
 ## <a name="example-usage"></a>使用方式範例
 

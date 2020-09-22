@@ -1,9 +1,9 @@
 ---
-title: npm-安裝
+title: npm-install
 description: devinit tool npm-安裝。
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 2af35ea0998b36fb5585feb4fa633f3ca538397e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e3295ea2e67dd625387b054c488c5abacec2a718
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810134"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005549"
 ---
-# <a name="npm-install"></a>npm-安裝
+# <a name="npm-install"></a>npm-install
 
 此 `npm-install` 工具可用於安裝 [NPM](https://www.npmjs.com/) 套件。
 
@@ -29,7 +29,7 @@ ms.locfileid: "90810134"
 | 名稱                                             | 類型   | 必要 | 值                                                                                                          |
 |--------------------------------------------------|--------|----------|----------------------------------------------------------------------------------------------------------------|
 | **評論**                                     | 字串 | No       | 選擇性批註屬性。 未使用。                                                                          |
-| [**輸入**](#input)                              | 字串 | 是      | 要取得安裝的封裝。 如需詳細資料，請參閱下列 [輸入](#input) 。                                                 |
+| [**輸入**](#input)                              | 字串 | Yes      | 要取得安裝的封裝。 如需詳細資料，請參閱下列 [輸入](#input) 。                                                 |
 | [**additionalOptions**](#additional-options)     | 字串 | No       | 傳遞至工具的其他選項。 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。       |
 
 ### <a name="input"></a>輸入

@@ -3,7 +3,7 @@ title: devinit 命令
 description: 如何使用 devinit 命令來安裝元件的詳細資料。
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 545f7ec80b528b759db8ccfde21a18a46959913a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a0bd657d9612bde05a820a591c2ab2c1cfdaad3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809704"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005528"
 ---
 # <a name="devinit-commands"></a>devinit 命令
 
 ## <a name="init"></a>Init
 
-```batch
+```console
 > devinit init
 ```
 
@@ -34,14 +34,14 @@ ms.locfileid: "90809704"
 
 | 引數             | 必要 | 描述                                                               |
 |----------------------|----------|---------------------------------------------------------------------------|
-| -f,--file           | 否       | 檔案 _.devinit.js_ 的路徑。                                         |
-| --錯誤-動作       | 否       | 指定如何處理錯誤。 選項： [停止]、[忽略]、[繼續] (預設) 。|
-| -v,--詳細資訊         | 否       | 發出詳細資訊輸出。                                                      |
-| -n,--試執行         | 否       | 試執行。                                                                  |
+| -f,--file           | No       | 檔案 _.devinit.js_ 的路徑。                                         |
+| --錯誤-動作       | No       | 指定如何處理錯誤。 選項： [停止]、[忽略]、[繼續] (預設) 。|
+| -v,--詳細資訊         | No       | 發出詳細資訊輸出。                                                      |
+| -n,--試執行         | No       | 試執行。                                                                  |
 
 ## <a name="run"></a>執行
 
-```batch
+```console
 > devinit run -t <toolname>
 ```
 
@@ -53,12 +53,12 @@ ms.locfileid: "90809704"
 
 | 引數                                  | 必要 | 描述                                                                          |
 |-------------------------------------------|----------|--------------------------------------------------------------------------------------|
-| -t,--工具                                 | 是      | 必要。 工具名稱。                                                             |
-| -i,--輸入                                | 否       | 工具輸入值。 例如，檔案名、封裝或名稱。                           |
-| --錯誤-動作                            | 否       | 指定如何處理工具錯誤： [停止]、[忽略]、[繼續]。 預設值是停止。 |
-| -v,--詳細資訊                              | 否       | 發出詳細資訊輸出。                                                                 |
-| -n,--試執行                              | 否       | 試執行。                                                                             |
-| --&lt;arg1 &gt; &lt; arg2 &gt; &lt; argN&gt;  | 否       | 工具的其他命令列引數。                                       |
+| -t,--工具                                 | Yes      | 必要。 工具名稱。                                                             |
+| -i,--輸入                                | No       | 工具輸入值。 例如，檔案名、封裝或名稱。                           |
+| --錯誤-動作                            | No       | 指定如何處理工具錯誤： [停止]、[忽略]、[繼續]。 預設值是停止。 |
+| -v,--詳細資訊                              | No       | 發出詳細資訊輸出。                                                                 |
+| -n,--試執行                              | No       | 試執行。                                                                             |
+| --&lt;arg1 &gt; &lt; arg2 &gt; &lt; argN&gt;  | No       | 工具的其他命令列引數。                                       |
 
 #### <a name="--file-argument"></a>--file 引數
 
@@ -91,19 +91,19 @@ ms.locfileid: "90809704"
 
 使用 `<arg>` 在其值中包含空格的，必須包含一組額外的轉義引號。
 
-```batch
+```console
 > devinit run -t <toolname> -<somearg> "<some value>"
 ```
 
 若要將 dotnet 安裝到特定目錄 `C:\Program Files\dotnet` ：
 
-```batch
+```console
 > devinit run -t require-dotnetcoresdk --"-InstallDir \"C:\Program Files\dotnet\""
 ```
 
 ## <a name="list"></a>清單
 
-```batch
+```console
 > devinit list
 ```
 
@@ -111,27 +111,27 @@ ms.locfileid: "90809704"
 
 ## <a name="show"></a>顯示
 
-```batch
+```console
 > devinit show -t <toolname>
 ```
 
 | 引數       | 必要 | 描述                                                                          |
 |----------------|----------|--------------------------------------------------------------------------------------|
-| -t,--工具      | 是      | 必要。 工具名稱。                                                             |
+| -t,--工具      | Yes      | 必要。 工具名稱。                                                             |
 
 列印指定工具的說明資訊。
 
 ## <a name="version"></a>版本
 
-```batch
+```console
 > devinit version
 ```
 
 列印 devinit 的目前版本資訊。
 
-## <a name="help"></a>説明
+## <a name="help"></a>[說明]
 
-```batch
+```console
 > devinit help
 > devinit help list
 ```

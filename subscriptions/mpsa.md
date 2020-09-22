@@ -7,12 +7,12 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: '瞭解如何在 Microsoft 產品和服務合約中管理 Visual Studio 訂用帳戶 (MPSA) '
-ms.openlocfilehash: 9d26bccebb11a59933c37ec0f29a9b6e30e86c5b
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: f0e894272f13b08af20f36579aea807cba7a882a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561386"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006081"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Microsoft 產品和服務合約 (MPSA) 中的 Visual Studio 訂閱
 如果您已透過 MPSA 方案購買「Visual Studio 訂閱」，必須先了解幾個事項，才能成為 Visual Studio 訂閱系統管理員並將訂閱指派給您的使用者。 如果您已具備系統管理員身分，則可以直接前往 Visual Studio 訂閱[系統管理入口網站](https://manage.visualstudio.com/)。
@@ -63,12 +63,12 @@ MPSA 客戶管理在入口網站中透過 MPSA 購買的資產（稱為「 [商�
 > 完成網域接管程序之後，您必須遵守＜建立租用戶關聯之前 (受控租用戶)＞一節中五個步驟的準則。 一旦符合這些準則，就只有要佈建額外的 Visual Studio 訂閱系統管理員時，才需要連絡 MPSA 支援服務。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 深入瞭解如何管理 Visual Studio 的訂閱。
 - [指派個別訂用帳戶](assign-license.md)
 - [指派多個訂用帳戶](assign-license-bulk.md)

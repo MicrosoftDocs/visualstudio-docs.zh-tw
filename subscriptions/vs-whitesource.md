@@ -7,12 +7,12 @@ ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
 ms.date: 04/20/2020
 ms.topic: how-to
 description: 了解如何啟用 Visual Studio 訂用帳戶所含的 WhiteSource Bolt 訂用帳戶。
-ms.openlocfilehash: 3bdd71615d0dff19cd1d05dfca91041ae531a6f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7be5ba29c2243396ae8c510b33d928364163059c
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906012"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005697"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 WhiteSource Bolt
 
@@ -42,8 +42,8 @@ ms.locfileid: "85906012"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  是       |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl | 6 個月       |  是       |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  Yes       |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl | 6 個月       |  Yes       |
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                           |NA         |
 | 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                      | 無法使用                                                           |NA         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                                           |NA         |
@@ -62,12 +62,12 @@ ms.locfileid: "85906012"
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

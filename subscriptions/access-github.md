@@ -7,12 +7,12 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: 瞭解新的 Visual Studio + GitHub 供應專案
-ms.openlocfilehash: a87c6927f57e4a5e997fc396382045d6a5f4c03e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cbc1822498dacf3b5e5c5292db28425ced16357
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248183"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006094"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>含 GitHub Enterprise 的 Visual Studio 訂用帳戶簡介  
 
@@ -51,7 +51,7 @@ Visual Studio + GitHub Enterprise 訂用帳戶分成兩部份指派：
 
 若您剛接觸 GitHub，以下這些資源可能會對您有幫助：
 
-| 主旨                                  | GitHub 說明主題                                     |
+| 主體                                  | GitHub 說明主題                                     |
 |------------------------------------------|-------------------------------------------------------|
 | 一般問題/資訊          | [GitHub 說明](https://help.github.com/en)             |
 | GitHub 是什麼？  如何深入了解？  | [關於 GitHub](https://help.github.com/en/categories/about-github)                                       |
@@ -79,13 +79,10 @@ Visual Studio + GitHub Enterprise 訂用帳戶分成兩部份指派：
 - 取得 GitHub Enterprise 的[技術支援](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 如果您還不熟悉 GitHub，請前往 [GitHub Learning Lab](https://lab.github.com/) (GitHub 學習實驗室)，這裡會帶您了解一系列有趣又實用的專案，並在過程中提供實用的回饋。
-
-
-

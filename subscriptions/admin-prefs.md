@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: 了解如何在管理入口網站中設定語言、連絡人、訂用帳戶層級及其他喜好設定
-ms.openlocfilehash: 7f562e6ca0087a92fcc02550165aa32d23321955
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: e9b5b861260e13b0882a5eabee01db102d63b2af
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426785"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006159"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>在管理入口網站中設定您合約的喜好設定
 超級管理員可以在系統管理員入口網站中設定特定的喜好設定 (系統管理員入口網站) 將會針對每個合約全域套用。  當系統管理員新增訂閱者時，這些喜好設定會自動填入您系統管理員的訂用帳戶詳細資料，而且只能由超級管理員進行全域修改。  
@@ -76,12 +76,12 @@ ms.locfileid: "89426785"
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 深入瞭解如何管理 Visual Studio 的訂閱。
 - [指派個別訂用帳戶](assign-license.md)
 - [指派多個訂用帳戶](assign-license-bulk.md)

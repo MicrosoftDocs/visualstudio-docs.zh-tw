@@ -7,12 +7,12 @@ ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
 ms.date: 09/08/2020
 ms.topic: how-to
 description: 如何使用 Microsoft 帳戶 (MSA) 登入 Visual Studio 訂用帳戶
-ms.openlocfilehash: d0193c3731840d694bc13764542b1df31c808027
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 52882fcf50a784812752dbf606b21db1ddc5c3ea
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561438"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005933"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>使用 Microsoft 帳戶 (MSA) 登入 Visual Studio 訂用帳戶
 
@@ -43,10 +43,10 @@ ms.locfileid: "89561438"
 如果仍然遇到問題，您可以與我們的[訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)小組聯繫以取得協助。  
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
-在您成功登入訂用帳戶入口網站後，建議您造訪 [權益] 頁面， https://my.visualstudio.com/benefits 並探索可供您使用的絕佳工具、服務和優惠。  
+## <a name="next-steps"></a>下一步
+在您成功登入訂用帳戶入口網站後，建議您造訪 [權益] 頁面， https://my.visualstudio.com/benefits 並探索可供您使用的絕佳工具、服務和優惠。

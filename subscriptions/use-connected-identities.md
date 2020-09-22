@@ -8,12 +8,12 @@ ms.date: 03/11/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: 瞭解如何使用已連接的 Microsoft 帳戶和 Azure Active Directory 身分識別
-ms.openlocfilehash: f7b2cad08eb94b15e35015db7e8ac3fe084a00ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d67576ab715f3ff8a49287155423a3dd6c20867
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87805603"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005234"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>如何在 Visual Studio 訂用帳戶中使用連線的身分識別
 如果您透過公司或學校收到 Visual Studio 的訂用帳戶，並使用您的 Microsoft 帳戶 (MSA) 登入，則您的訂用帳戶管理員可以將您的 MSA 連線到組織的 Azure Active Directory (Azure AD) 中的身分識別。  這將會變更您的訂用帳戶中所包含的一些優點。 
@@ -24,7 +24,7 @@ ms.locfileid: "87805603"
 如果您的系統管理員連接您的 MSA 和 Azure AD 身分識別，您將會收到一封電子郵件，讓您知道如何使用 Azure AD 身分識別（而不是 MSA）來存取您的 Visual Studio 訂用帳戶。 
 
 ## <a name="how-to-access-benefits-using-azure-ad-identities"></a>如何使用 Azure AD 身分識別來存取權益
-當系統管理員將您的 MSA 連接到您的 Azure AD 身分識別之後，您必須使用 Azure AD 身分識別登入訂閱者入口網站， https://my.visualstudio.com 以存取依賴 Azure AD 的權益。  其中包含：
+當系統管理員將您的 MSA 連接到您的 Azure AD 身分識別之後，您必須使用 Azure AD 身分識別登入訂閱者入口網站， https://my.visualstudio.com 以存取依賴 Azure AD 的權益。  其中包括：
 - Visual Studio IDE
 - Azure DevOps
 - Azure DevTest 個人點數
@@ -43,10 +43,10 @@ ms.locfileid: "87805603"
 答：執行連接的身分識別很簡單。  如需詳細資訊，請查看[這篇文章](personal-email-sign-ins.md)。 
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
-當您的系統管理員連接您的 Azure AD 與 MSA 帳戶之後，建議您確認是否可以成功登入訂用帳戶 [入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs) ，並存取 Azure DevOps、Visual Studio 和 Azure DevTest 個別點數等權益。 
+## <a name="next-steps"></a>下一步
+當您的系統管理員連接您的 Azure AD 與 MSA 帳戶之後，建議您確認是否可以成功登入訂用帳戶 [入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs) ，並存取 Azure DevOps、Visual Studio 和 Azure DevTest 個別點數等權益。

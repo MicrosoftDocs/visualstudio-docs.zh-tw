@@ -3,7 +3,7 @@ title: 範例清單
 description: 使用 devinit 的範例存放庫自訂清單。
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 28b4601498b5b52084f430bf31b167751735aa6c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9894a54d220bed9db064f4106b36af0b058f4297
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809080"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005621"
 ---
 # <a name="sample-list"></a>範例清單
 

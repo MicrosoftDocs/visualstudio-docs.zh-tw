@@ -1,9 +1,9 @@
 ---
-title: 需要-vcpkg
+title: require-vcpkg
 description: devinit 工具需要-vcpkg。
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 42d21f4d5a2faa4eb7ecf39883475160d0cacaba
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 820d8ef7e857d0b91526e1db9e300a4b5f76bb84
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810432"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006012"
 ---
-# <a name="require-vcpkg"></a>需要-vcpkg
+# <a name="require-vcpkg"></a>require-vcpkg
 
 此 `require-vcpkg` 工具是用來安裝 [vcpkg](https://github.com/microsoft/vcpkg)。
 

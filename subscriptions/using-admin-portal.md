@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 09/03/2020
 ms.topic: overview
 description: 了解如何開始使用訂閱系統管理入口網站管理組織的 Visual Studio 訂閱。
-ms.openlocfilehash: d857d4a1c9bb5568a6e4330851e0cc8a21988146
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 78c66b8db569ce71588a2dba43b3ffb08d6a7d80
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426872"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005221"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio 訂閱系統管理員入口網站的總覽
 
@@ -60,16 +60,15 @@ Visual Studio 訂閱管理入口網站可讓您使用工具，在單一位置管
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 深入了解系統管理員的責任：
 - [系統管理員責任概觀](admin-responsibilities.md)
 - [清查生產前環境](admin-inventory.md)
 - [管理大型小組及外部承攬人](manage-teams.md)
 - [追蹤使用者指派及處理訂單](assignments-orders.md)
 - 使用[使用量上限](maximum-usage.md)來追蹤購買承諾用量
-

@@ -7,12 +7,12 @@ ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解如何使用 GitHub 帳戶登入 Visual Studio 訂用帳戶。
-ms.openlocfilehash: 722eeae315a8b4a6bd93fb1048846b147b294afa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dcbe5a908a2d149de7c254ec6ac6f3ec1eb6e72
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80233234"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005260"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>使用 GitHub 帳戶登入 Visual Studio 訂用帳戶 
 
@@ -43,7 +43,7 @@ GitHub 身分識別支援可讓您使用現有 GitHub 帳戶，作為新或現�
 #### <a name="q-theres-no-sign-in-with-github-option-on-the-sign-in-page--how-can-i-use-my-github-credentials-to-sign-in"></a>問：登入頁面上沒有 [使用 GitHub 登入] 選項。  我應如何使用我的 GitHub 認證登入？
 答：輸入您在建立 GitHub 連結的 Microsoft 帳戶時所選擇的 GitHub 帳戶電子郵件地址。 我們將尋找您的資訊，並將您轉至 GitHub 進行登入。 或者，如果登入頁面中有登入選項連結，請按一下該連結，並使用顯示的 [使用 GitHub 登入]**** 按鈕。 
 
-#### <a name="q-i-cant-sign-in-to-some-of-my-apps-and-products-with-github--why"></a>問：我無法使用 GitHub 登入我的一些應用程式和產品。  原因為何？
+#### <a name="q-i-cant-sign-in-to-some-of-my-apps-and-products-with-github--why"></a>問：我無法使用 GitHub 登入我的一些應用程式和產品。  為何會這樣？
 答：並非所有的 Microsoft 產品都可以從其登入頁面（例如 Xbox 主控台）存取 GitHub.com。 當您鍵入從 GitHub 帳戶連結的電子郵件地址時，我們會傳送驗證碼到該地址，以便確認這是您本人。 您仍會登入到相同的帳戶，只是登入方法不同。 
 
 #### <a name="q--ive-added-a-password-to-the-microsoft-account-i-have-linked-to-my-github-account--will-that-cause-a-problem"></a>問：我已將密碼新增至我已連結至 GitHub 帳戶的 Microsoft 帳戶。  這會造成問題嗎？
@@ -52,7 +52,7 @@ GitHub 身分識別支援可讓您使用現有 GitHub 帳戶，作為新或現�
 #### <a name="q-i-want-to-add-the-authenticator-app-to-the-account-i-created-using-github--can-i-do-that"></a>問：我想要將驗證器應用程式新增至我使用 GitHub 建立的帳戶。  可以這麼做嗎？
 答：沒問題，只需下載應用程式並使用您的電子郵件地址登入即可。 當您使用您的電子郵件地址登入時，系統將會提示您選擇[驗證器應用程式](https://www.microsoft.com/p/microsoft-authenticator/9nblgggzmcj6)或 GitHub 作為您的認證。
 
-#### <a name="q-ive-enabled-two-factor-authentication-on-both-my-github-and-microsoft-accounts-msa-but-when-i-sign-in-to-my-msa-im-still-asked-to-authenticate-twice--why"></a>問：我已在我的 GitHub 和 Microsoft 帳戶上啟用雙因素驗證 (MSA) ，但是當我登入 MSA 時，仍會要求您驗證兩次。  原因為何？
+#### <a name="q-ive-enabled-two-factor-authentication-on-both-my-github-and-microsoft-accounts-msa-but-when-i-sign-in-to-my-msa-im-still-asked-to-authenticate-twice--why"></a>問：我已在我的 GitHub 和 Microsoft 帳戶上啟用雙因素驗證 (MSA) ，但是當我登入 MSA 時，仍會要求您驗證兩次。  為何會這樣？
 答：由於安全性限制，Microsoft 會將以 GitHub 登入作為單一要素驗證，即使您在該處啟用了雙步驟驗證也一樣。 因此，您必須重新驗證您的 Microsoft 帳戶。 
 
 #### <a name="q--how-can-i-tell-if-my-microsoft-account-and-github-accounts-are-linked"></a>問：如何判斷我的 Microsoft 帳戶和 GitHub 帳戶是否已連結？
@@ -65,10 +65,10 @@ GitHub 身分識別支援可讓您使用現有 GitHub 帳戶，作為新或現�
 答：如果您的 GitHub 帳戶上有 Azure Active Directory 的電子郵件地址，這表示您已經擁有可存取 Azure 的 Microsoft 身分識別，並使用您的 GitHub 程式碼執行 CI 管線。 使用該帳戶可確保您的 Azure 資源和組建管線保留在您組織範圍內。 不過，如果您要進行個人工作，我們建議在您的 GitHub 帳戶上設定個人電子郵件地址，讓您隨時都能存取。 完成此操作後，請再次嘗試登入，並在系統提示您登入您的公司或學校帳戶時，選擇 [使用不同的電子郵件地址]****。 這會讓您使用該個人電子郵件地址來建立新的 Microsoft 帳戶。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
-當您成功登入訂用帳戶入口網站時，建議您前往 https://my.visualstudio.com/benefits 上的 [優點] 頁面，並探索提供給您的絕佳工具、服務及供應項目。  
+## <a name="next-steps"></a>下一步
+當您成功登入訂用帳戶入口網站時，建議您前往 https://my.visualstudio.com/benefits 上的 [優點] 頁面，並探索提供給您的絕佳工具、服務及供應項目。

@@ -7,12 +7,12 @@ ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
 ms.date: 04/15/2020
 ms.topic: how-to
 description: 了解如何設定 Azure 隨用隨付帳戶。
-ms.openlocfilehash: 057230d4b3b54e1d514a06f6db2de7412eb2c995
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 111733fb6950e602528fac9ae5b39bba04870d01
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85902891"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005069"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure DevTest 隨用隨付訂用帳戶
 在雲端與您的小組共同作業。  建立多個開發和測試隨用隨付訂用帳戶，讓您能夠與其他訂閱者共同作業，同時為小組與環境提供適時的隔離。  您會收到專屬的 Azure 訂用帳戶軟體開發/測試和雲端使用權限的每小時折扣費率。
@@ -45,13 +45,12 @@ ms.locfileid: "85902891"
 4. 您現在會有可管理或取消訂用帳戶、將其重新命名、變更目錄或移轉帳單擁有權的選項。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 許多訂用帳戶包含額外的 Azure 相關權益，例如 Azure DevOps 和 Azure DevTest 個人點數。  如需有關這些權益的詳細資訊，請參閱：
 - [Azure DevOps](vs-azure-devops.md)
 - [Azure DevTest 個人點數](vs-azure.md)
-

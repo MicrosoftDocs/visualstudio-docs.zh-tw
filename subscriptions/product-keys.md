@@ -7,12 +7,12 @@ ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
 ms.date: 09/18/2020
 ms.topic: conceptual
 description: 了解如何取得及管理您的 Visual Studio 訂用帳戶產品金鑰。
-ms.openlocfilehash: 8a7a2551b98672332af88210a0347c9ee3faf2cc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 389a57fb2e8fe0ea6ee81ee163fed052c441c209
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809155"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005842"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的產品金鑰
 
@@ -66,7 +66,7 @@ Microsoft 承諾保護 Visual Studio 訂用帳戶方案的完整性，以及該�
 |    索引鍵類型           |    說明                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    不適用                    |    安裝這個產品並不需要任何金鑰。                                                       |
-|    零售                     |    零售金鑰允許多次啟用，並且用於產品的零售版本。 在許多情況下，每一個金鑰可允許啟用產品 10 次，不過通常同一部機器可以允許啟用更多次。                                                       |
+|    Retail                     |    零售金鑰允許多次啟用，並且用於產品的零售版本。 在許多情況下，每一個金鑰可允許啟用產品 10 次，不過通常同一部機器可以允許啟用更多次。                                                       |
 |    多次啟用        |    多次啟用金鑰 (MAK) 可讓您使用相同的金鑰啟用某產品的多重安裝。 MAK 一般是與產品的大量授權版本搭配使用。 每份訂用帳戶通常只提供一組 MAK 金鑰。    |
 |    靜態啟用金鑰    |    靜態啟用金鑰是針對不需要啟用的產品而提供。 可以不限次數用於安裝。                                                                                                                  |
 |    自訂金鑰                 |    自訂金鑰提供特殊動作或資訊來啟用或安裝產品。                                                                                                                                                                |
@@ -80,12 +80,12 @@ Microsoft 承諾保護 Visual Studio 訂用帳戶方案的完整性，以及該�
 您可以在產品的下載頁面索取金鑰，或在[產品金鑰](https://my.visualstudio.com/productkeys)頁面搜尋所需金鑰。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 若要索取金鑰，請前往 https://my.visualstudio.com/productkeys。  
 請了解如何[尋找和索取金鑰](find-keys.md)。
 您也可以了解如何使用產品金鑰來支援[網際網路示範](internet-demos.md)。

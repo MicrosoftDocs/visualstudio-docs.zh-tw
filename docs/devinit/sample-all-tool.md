@@ -3,7 +3,7 @@ title: 所有工具
 description: 使用所有 devinit 工具的範例。
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: dfa061561855d3719e73db9754c9c9b18796894f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 8c965b2642771f5734b5f93dc05c358cbbf2f9a7
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810439"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005656"
 ---
 # <a name="all-tools"></a>所有工具
 
 這個範例有 `devinit.json` ，它會安裝所有可用的 devinit 工具。
 
-## <a name="devinitjson"></a>.devinit.js開啟
+## <a name="devinitjson"></a>.devinit.json
 
 ```json
 {
@@ -96,11 +96,6 @@ ms.locfileid: "90810439"
       "tool": "require-dotnetframeworksdk",
       "input": "4.8.0",
       "comments": "Input specifies an explicit SDK version."
-    },
-    {
-      "tool": "require-gitsubmodule",
-      "input": "RepoThatHasDotGitModulesFile",
-      "comments": "Input specifies a folder that contains a .gitmodules file. If no input is specified, then current directory is used."
     },
     {
       "tool": "require-mssql",

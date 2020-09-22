@@ -1,9 +1,9 @@
 ---
-title: devinit 和 GitHub Codespaces
+title: devinit 與 GitHub Codespace
 description: 瞭解如何使用 devinit 自訂 Visual Studio 的 codespace。
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b42ce84bcb2a336e37d0ffafb2bab6c2dba9ba9d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 5697237c1bce719a4658e84435db0426f363f746
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852206"
+ms.locfileid: "91005535"
 ---
-# <a name="devinit-and-github-codespaces"></a>devinit 和 GitHub Codespaces
+# <a name="devinit-and-github-codespaces"></a>devinit 與 GitHub Codespace
 
 devinit 是 [GitHub Codespaces](https://github.com/features/codespaces) 的絕佳補充，devinit 可以用來取得 codespace 設定，讓參與者可以立即建立、執行和立即進行偵錯工具。
 
@@ -56,12 +56,12 @@ devinit 是 [GitHub Codespaces](https://github.com/features/codespaces) 的絕�
 
 當目前工作目錄包含檔案 _ 上的.devinit.js_ 時。
 
-```batch
+```console
 > devinit init
 ```
 
 當 _.devinit.js在_ 另一個目錄中時。
 
-```batch
+```console
 > devinit init -f path/to/.devinit.json
 ```

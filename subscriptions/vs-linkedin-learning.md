@@ -7,12 +7,12 @@ ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
 ms.date: 04/17/2020
 ms.topic: how-to
 description: 了解包含為所選取 Visual Studio 訂用帳戶中所含 LinkedIn Premium 訂用帳戶一部分的 LinkedIn Learning 權益。
-ms.openlocfilehash: 580b565ad2eeecc0c5923963243ee63c1069b86f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f0f500d092bb17e1bb81f0d35f2b12dc5c18183
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387131"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006289"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 LinkedIn Learning 權益
 
@@ -71,10 +71,10 @@ ms.locfileid: "86387131"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  否。  僅提供給新訂閱者使用          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl | 6 個月       |  否。  僅提供給新訂閱者使用          |
-| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 3 個月                                                            |否。  僅提供給新訂閱者使用         |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl | 3 個月      | 否。  僅提供給新訂閱者使用         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  不可以。  僅提供給新訂閱者使用          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl | 6 個月       |  不可以。  僅提供給新訂閱者使用          |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 3 個月                                                            |不可以。  僅提供給新訂閱者使用         |
+| 含 GitHub Enterprise 的 Visual Studio Professional | Vl | 3 個月      | 不可以。  僅提供給新訂閱者使用         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                            |  NA         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              | NA         |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
@@ -98,12 +98,12 @@ ms.locfileid: "86387131"
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 查看您的訂用帳戶中包含的其他絕佳權益。 請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 。
 
 如果您尚未啟用訂用帳戶隨附的 Azure DevTest 個人點數權益，請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 並按一下 [工具] 類別中的 azure 磚，以設定您的 azure 訂用帳戶並兌換您的 Azure DevTest 個人點數。

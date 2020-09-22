@@ -7,12 +7,12 @@ ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: 了解超級管理員和系統管理員角色，以及如何指派系統管理員。
-ms.openlocfilehash: f70545de45e0de284788ff3552667e9fa9bfb73f
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: b6c6abc920ff68b6439fe4bff6f813366888a912
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426755"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006146"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Visual Studio 訂用帳戶合約的超級管理員和系統管理員
 
@@ -45,15 +45,13 @@ ms.locfileid: "89426755"
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 - 了解如何[指派訂用帳戶](assign-license.md)
 - 深入了解[訂用帳戶權益](https://visualstudio.microsoft.com/vs/benefits/)的完整範圍
-- [設定合約喜好設定](admin-prefs.md) 
-
-
+- [設定合約喜好設定](admin-prefs.md)

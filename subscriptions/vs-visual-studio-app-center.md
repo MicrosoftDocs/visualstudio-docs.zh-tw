@@ -7,12 +7,12 @@ ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
 ms.date: 04/20/2020
 ms.topic: how-to
 description: 了解 Visual Studio 訂用帳戶中所含的 Visual Studio App Center 權益。
-ms.openlocfilehash: 27d2e060cf3f4ab1aad8b81c39a5cef52ac0e770
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d010afddca1f8fc51f77d806c75dc1b7b34256
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906042"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005723"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Visual Studio App Center
 
@@ -42,12 +42,12 @@ App Center 是應用程式的任務控制機制。
 
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, NFR<sup>1</sup> | 已包括       |  是          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise  | Vl | 已包括       |  是          |
-| Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                       | 已包括                                                            |是 |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                      | 已包括                                                            |是 |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 已包括                                                            |是 |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 已包括                                                            |是 |
+| Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, NFR<sup>1</sup> | 已包括       |  Yes          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise  | Vl | 已包括       |  Yes          |
+| Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                       | 已包括                                                            |Yes |
+| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                      | 已包括                                                            |Yes |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 已包括                                                            |Yes |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 已包括                                                            |Yes |
 ||
 
 <sup>1</sup>  *包括：禁止轉售 (NFR) 、FTE、Visual Studio 產業合作夥伴 (VSIP) 、假想、Microsoft 合作夥伴網路 (MPN) 、MCT Software & Services、MCT Software & Services Developer、BizSpark、最有價值專家 (MVP) 區域主管 (RD) 。*
@@ -75,12 +75,12 @@ App Center 是應用程式的任務控制機制。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

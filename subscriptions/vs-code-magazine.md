@@ -7,12 +7,12 @@ ms.assetid: e5768153-2758-46d3-a323-3272def213ee
 ms.date: 03/25/2020
 ms.topic: how-to
 description: 瞭解 Visual Studio 訂用帳戶中所含的程式碼雜誌權益。
-ms.openlocfilehash: c7b56074ea9a48f4d94af5c7d79cd93dc2c4a3b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30bc728db5aea53d442552ed9b79f506b0f6b6d7
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387170"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005907"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中包含的程式碼雜誌
 
@@ -49,12 +49,12 @@ ms.locfileid: "86387170"
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  否          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl| 可用       |  否          |
-| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 可用                                                            |  否          |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                      | 可用                                                            |  否          |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  否          |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                              |  否          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  No          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl| 可用       |  No          |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 可用                                                            |  No          |
+| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                      | 可用                                                            |  No          |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  No          |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                              |  No          |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 
 <sup>1</sup>  *包括：非轉售 (NFR) 、Visual Studio 產業合作夥伴 (VSIP) 、FTE、BizSpark、假想 Premium。 排除： Microsoft 合作夥伴網路 (MPN) 、最有價值專家 (MVP) 、區域主管 (RD) 、MCT Software & Services Developer、MCT Software & Services，想像。*
@@ -77,12 +77,12 @@ ms.locfileid: "86387170"
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 查看您的訂用帳戶中包含的其他絕佳權益。 請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 。
 
 如果您尚未啟用訂用帳戶隨附的 Azure DevTest 個人點數權益，請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 並按一下 [工具] 類別中的 azure 磚，以設定您的 azure 訂用帳戶並兌換您的 Azure DevTest 個人點數。

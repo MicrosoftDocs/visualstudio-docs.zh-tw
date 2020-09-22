@@ -7,12 +7,12 @@ ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
 ms.date: 09/03/2019
 ms.topic: conceptual
 description: 了解訂用帳戶系統管理員的責任。
-ms.openlocfilehash: 242fe28346b1264833939202936fa46a47d4f4d3
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: c0c30eb8bc5b63720bd2377990a390df8a173035
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426885"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006133"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>系統管理員責任概觀
 身為系統管理員，您可以管理組織的訂用帳戶。  系統管理員角色也有責任確保訂用帳戶根據授權條款進行管理。 本文章概述系統管理員角色的責任、權益和限制。
@@ -37,12 +37,12 @@ Visual Studio 訂閱可讓開發人員安裝和使用軟體，以設計、開發
 | 終端使用者的例外狀況                  | 在軟體開發專案結束時，終端使用者通常會審核應用程式，並判斷它是否符合發行的必要準則。 此程序稱為使用者接受度測試 (UAT)。 企業贊助商或產品經理等小組成員可作為終端使用者的代理人。 如果以其他方式使用軟體符合所有的 Visual Studio 授權條款，則沒有 Visual Studio 訂用帳戶的終端使用者也可以存取軟體來進行 UAT。 其主要角色是設計、開發或測試軟體的人很罕見，也是「使用者」的資格。 |
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 深入了解系統管理員的責任：
 - [清查生產前環境](admin-inventory.md)
 - [管理大型小組及外部承攬人](manage-teams.md)

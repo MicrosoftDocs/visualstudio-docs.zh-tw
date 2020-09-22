@@ -1,9 +1,9 @@
 ---
-title: 需要-nodejs
+title: require-nodejs
 description: devinit 工具需要-nodejs。
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 6bc2de2e497bd58cfc036e74af3968a2f70d1f52
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ce4a156a313e3d8d0afc82ababd49d0528b315f5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808322"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005774"
 ---
-# <a name="require-nodejs"></a>需要-nodejs
+# <a name="require-nodejs"></a>require-nodejs
 
 此 `require-nodejs` 工具是用來透過 Node.js 組織所散發的 MSI 來安裝 [Node.js](https://nodejs.org/) 。
 

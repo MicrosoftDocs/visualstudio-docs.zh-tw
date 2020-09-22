@@ -7,18 +7,18 @@ ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 07/19/2019
 ms.topic: overview
 description: 了解 Visual Studio 訂用帳戶入口網站上提供給您的完整權益
-ms.openlocfilehash: b2ace2416950336e7c4a872e378684d8160e2897
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c2b79a1f4bedb9c6e04e7f764befd478e37222e3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85902876"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005195"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>使用訂閱者入口網站 - my.visualstudio.com
 
 Visual Studio 訂閱的入口網站 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 是您的全方位資源，可充分利用您的 Visual Studio 訂用帳戶所提供的各種權益。
 
-若要使用入口網站，您必須以和訂閱相關聯的身分識別登入。  這可能是您的 Microsoft 帳戶 (MSA) 或組織提供給您的電子郵件地址，例如您的雇主或學校。  了解[登入](signing-in.md)。
+若要使用入口網站，您必須以和訂閱相關聯的身分識別登入。  這可能是您的 Microsoft 帳戶 (MSA) 或組織提供給您的電子郵件地址，例如您的雇主或學校。  了解[登入](./index.yml)。
 
 入口網站一共整理為六個頁面。  每個頁面都能讓您存取包含在您訂閱中各種不同的產品或服務。  六個頁面為 [權益]、[下載]、[產品金鑰]、[訂閱]、[支援] 及 [Marketplace]。
 
@@ -54,10 +54,10 @@ Visual Studio 訂閱的入口網站 [https://my.visualstudio.com](https://my.vis
 是否需要更新 Visual Studio 雲端訂閱？  想要下載適用於 Visual Studio 產品系列的最新擴充功能？  Marketplace 可協助使用者尋找延伸模組、工具與服務，以進一步改進 Azure DevOps、Azure DevOps Server 與 Visual Studio Code。 您甚至可以成為發行者，並將自己的擴充功能發行到 Marketplace 上。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
-登入入口網站 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) ，並查看您的權益。  您也可以深入了解如何使用 [Microsoft 帳戶](sign-in-msa.md) (MSA)、[公司或學校帳戶](sign-in-work.md)，甚至是 [GitHub 帳戶](sign-in-github.md)登入入口網站。 
+## <a name="next-steps"></a>下一步
+登入入口網站 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) ，並查看您的權益。  您也可以深入了解如何使用 [Microsoft 帳戶](sign-in-msa.md) (MSA)、[公司或學校帳戶](sign-in-work.md)，甚至是 [GitHub 帳戶](sign-in-github.md)登入入口網站。

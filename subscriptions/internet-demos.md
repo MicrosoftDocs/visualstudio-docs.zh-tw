@@ -7,12 +7,12 @@ ms.assetid: 1c5ede60-cb5a-4d5f-a6a2-a1f536f6c4ad
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: 了解如何透過終端機服務使用產品金鑰來支援網際網路示範並啟用 RDS 存取
-ms.openlocfilehash: 35cda937aac7282756a1d6397b914c03e16b14fe
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 428ccdb86ca93bbafa07dcf847e017b88183928f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561308"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005325"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>透過終端機服務存取網際網路示範
 透過 Visual Studio 訂用帳戶，您可以授權使用者透過終端機服務 (Windows Server 2003 或 Windows Server 2008) 或遠端桌面服務 (Windows Server 2008 R2 及更新版本) 存取您程式的網際網路示範。 以這種方式同時存取示範的匿名使用者最多限 200 名。 示範絕對不可以使用生產資料。 Visual Studio 訂閱者享有向使用者示範其應用程式的權利。 使用終端機服務 (TS) 或遠端桌面服務 (RDS) 存取網際網路示範的目的，只在讓沒有 Visual Studio 訂用帳戶的使用者，可以在軟體經由 Visual Studio 訂用帳戶獲得授權之後，與示範應用程式互動。
@@ -36,13 +36,13 @@ Windows Server 2008 R2 提供每種類型各五組金鑰，每組金鑰支援 20
 - 允許使用者連線的產品金鑰必須由 Visual Studio 訂閱者取得。
 
 ## <a name="see-also"></a>另請參閱
-- [Windows Server 檔](https://docs.microsoft.com/windows-server/)
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Windows Server 檔](/windows-server/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 如果您需要部署 RDS 的指引，請參閱**遠端桌面服務 (RDS) 2012 工作階段部署** (網址為 https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf) 的多部分部落格系列。 
 
 如有任何問題，可前往 [Microsoft 遠端桌面服務論壇](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS)。

@@ -7,12 +7,12 @@ ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
 ms.date: 03/26/2020
 ms.topic: how-to
 description: 了解所選取 Visual Studio 訂用帳戶隨附的 Power BI Pro 訂用帳戶。
-ms.openlocfilehash: 9a16e827c45e600ff3b5edc8579b5941aa80ca90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82325c090087aea81f43472ebb41a385af51c19d
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801681"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005022"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Power BI Pro
 
@@ -49,7 +49,7 @@ ms.locfileid: "88801681"
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro 權益連絡資訊](_img/vs-pbi/vs-pbi-contact-cropped.png)
 
-9. 下個頁面會確認您的 Power BI Pro 開發人員 (MSDN) 訂用帳戶價格為 0.00 USD。  按一下 [下一步]  。
+9. 下個頁面會確認您的 Power BI Pro 開發人員 (MSDN) 訂用帳戶價格為 0.00 USD。  按 [下一步]  。
 
 10. 最後，我們會收集一些付款資訊。  不要擔心，您不必支付任何費用。  請注意價格仍是 0.00 USD。  支付方式可以選擇信用卡、銀行帳戶或發票。  如果您選擇**發票**，可能需要提供意見反應說明為何偏好此種付款方法。  請提供偏好付款方式所要求的資訊，然後按一下 [下單]****。
     > [!div class="mx-imgBorder"]
@@ -63,12 +63,12 @@ ms.locfileid: "88801681"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  是|
-| 含 GitHub Enterprise 的 Visual Studio Enterprise  | Vl | 可用       |  是|
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  Yes|
+| 含 GitHub Enterprise 的 Visual Studio Enterprise  | Vl | 可用       |  Yes|
 | Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                       | 無法使用                                                            |NA         |
 | 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                      | 無法使用                                                            |NA         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                                            |NA         |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用       |  是|
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用       |  Yes|
 | Visual Studio Enterprise (每月雲端) | Azure                                       | 無法使用                                  |NA|
 ||
 
@@ -114,11 +114,11 @@ ms.locfileid: "88801681"
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 - 若要啟用您的 Power BI Pro 權益，請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 。
-- 啟用您的 [Azure DevTest 個人點數](vs-azure.md)，以利用您自己的開發沙箱。 
+- 啟用您的 [Azure DevTest 個人點數](vs-azure.md)，以利用您自己的開發沙箱。

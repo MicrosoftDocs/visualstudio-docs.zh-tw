@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: 雲端訂用帳戶帳單問題。
-ms.openlocfilehash: 987dddcf54f218d63580995b363ad838f2de83b4
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: ae99e6e843636efc6d81a0c4feebfd3e306f6319
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641444"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006000"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 雲端訂閱帳單常見問題集
 請務必[比較雲端訂閱權益和定價](https://visualstudio.microsoft.com/vs/pricing/)，利用雲端與標準 Visual Studio 訂閱之間的比較、訂閱者權益的詳細資料以及其他更多，了解每個 Visual Studio 訂用帳戶的權益。
@@ -97,12 +97,12 @@ ms.locfileid: "89641444"
 - [適合 CSP 購買的 Visual Studio 雲端訂閱](vscloud-csp.md)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 立即購買雲端訂閱
 - [每月 Visual Studio Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
 - [每月 Visual Studio Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)

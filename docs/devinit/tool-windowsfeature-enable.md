@@ -1,9 +1,9 @@
 ---
-title: （啟用）
+title: windowsfeature-enable
 description: devinit tool，啟用。
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 679f8599516cc63aa56d327f69164612db8bb3ca
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 115fda00f880e9c2fa1782735dd471fc3df68936
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810397"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005971"
 ---
-# <a name="windowsfeature-enable"></a>（啟用）
+# <a name="windowsfeature-enable"></a>windowsfeature-enable
 
 此 `windowsfeature-enable` 工具可用來啟用 Windows 功能。
 
@@ -27,7 +27,7 @@ ms.locfileid: "90810397"
 | 名稱                                             | 類型   | 必要 | 值                                                                    |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------|
 | **評論**                                     | 字串 | No       | 選擇性批註屬性。 未使用。                                    |
-| [**輸入**](#input)                              | 字串 | 是      | 要安裝的 Windows 功能。 如需詳細資料，請參閱下列 [輸入](#input) 。   |
+| [**輸入**](#input)                              | 字串 | Yes      | 要安裝的 Windows 功能。 如需詳細資料，請參閱下列 [輸入](#input) 。   |
 | [**additionalOptions**](#additional-options)     | 字串 | No       | 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。         |
 
 ### <a name="input"></a>輸入

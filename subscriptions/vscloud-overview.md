@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: 每月或每年租 Visual Studio Professional 或 Visual Studio Enterprise，沒有長期合約。
-ms.openlocfilehash: 1ea727572fc5c6aeb09f23594de54a08adbacc90
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: d92d11321529e7ab8053ea657b2b5f4688c55aa0
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641568"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005312"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>購買 Visual Studio Professional 和 Visual Studio Enterprise 雲端訂用帳戶
 您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 購買 [Visual Studio Professional 和 Visual Studio Enterprise 訂用帳戶](https://visualstudio.microsoft.com/subscriptions/)。 這些稱為「雲端訂用帳戶」****。
@@ -127,12 +127,12 @@ ms.locfileid: "89641568"
 - [適合 CSP 購買的 Visual Studio 雲端訂閱](vscloud-csp.md)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 購買雲端訂閱
 - [每月 Visual Studio Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
 - [每月 Visual Studio Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)

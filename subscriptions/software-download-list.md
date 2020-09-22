@@ -7,12 +7,12 @@ ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
 ms.date: 03/11/2020
 ms.topic: how-to
 description: 請找出 Visual Studio 訂用帳戶隨附軟體下載項目的清單。
-ms.openlocfilehash: 767d53c38aeaa9a9717ecacffcc08813950c008a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc1a3c607aa919bd2ad6c24a8ba6870433e9302b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250701"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004007"
 ---
 # <a name="what-software-is-available-for-download"></a>哪些軟體可供下載？
 
@@ -31,10 +31,10 @@ ms.locfileid: "88250701"
 您也可以下載包含每個訂用帳戶類型的豐富[可用軟體](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)清單。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 您可以深入了解如何[下載軟體](download-software.md)或取得及管理[產品金鑰](product-keys.md)。

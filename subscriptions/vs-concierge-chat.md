@@ -7,12 +7,12 @@ ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
 ms.date: 03/25/2020
 ms.topic: how-to
 description: 了解 Visual Studio 訂用帳戶中所含的指引對談權益。
-ms.openlocfilehash: 8c945a71d41a1545a4dc6155bbd63d3ddc78053c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7ed217e551057ff12ed4abecedf717c9f3f6ced
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906056"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006315"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的指引對談
 「指引對談」服務除了協助您使用您的 Visual Studio 訂用帳戶權益之外，也提供尋找產品資訊與技術文件的協助。
@@ -38,12 +38,12 @@ ms.locfileid: "85906056"
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  是          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl| 可用       |  是          |
-| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 可用                                                            |  是          |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl | 可用                                                            |  是          |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  是          |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                              |  是          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  Yes          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl| 可用       |  Yes          |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 可用                                                            |  Yes          |
+| 含 GitHub Enterprise 的 Visual Studio Professional | Vl | 可用                                                            |  Yes          |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  Yes          |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                              |  Yes          |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 
 <sup>1</sup>  *包括：禁止轉售 (NFR) 、Visual Studio 產業合作夥伴 (VSIP) 、Microsoft 認證訓練人員、BizSpark。 排除： FTE、最有價值專家 (MVP) 、區域主管 (RD) Microsoft 合作夥伴網路 (MPN) ，想像。*
@@ -62,12 +62,12 @@ ms.locfileid: "85906056"
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 如需有關 Microsoft 工具與服務的詳細資訊，請參閱下列文件：
 - [Azure](/azure/)
 - [Azure DevOps](/azure/devops/)

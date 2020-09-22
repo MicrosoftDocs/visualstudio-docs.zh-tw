@@ -1,9 +1,9 @@
 ---
-title: choco-升級
+title: choco-upgrade
 description: devinit tool choco-upgrade。
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7b7c2d3dd005c54edb882e059679d45e77e539be
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5a735b60fd318d86e97dc4db7570e952a0fcdfd8
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810155"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006033"
 ---
-# <a name="choco-upgrade"></a>choco-升級
+# <a name="choco-upgrade"></a>choco-upgrade
 
 此 `choco-upgrade` 工具可用於安裝和更新 [chocolatey](https://chocolatey.org/docs/commandsupgrade) 套件。
 
@@ -44,7 +44,7 @@ ms.locfileid: "90810155"
 
 此 `choco-upgrade` 工具會設定一些 `choco` 命令列引數，以確保 `choco` 可執行無周邊。 以下列出這些引數，您可以在 [chocolatey 檔](https://chocolatey.org/docs/)中找到這些引數的相關檔。
 
-| 名稱                  | 描述                                                                                        |
+| Name                  | 描述                                                                                        |
 |-----------------------|----------------------------------------------------------------------------------------------------|
 | **--是**             | 確認所有提示-選擇肯定答案而非提示。 意指 `--accept-license` 。 |
 | **--沒有進度**     | 不要顯示進度-不會顯示進度百分比。                                         |

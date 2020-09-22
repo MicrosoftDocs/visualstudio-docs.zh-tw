@@ -3,7 +3,7 @@ title: dotnet-toolinstall
 description: devinit tool dotnet-toolinstall。
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: afc200bca49617dff40697210ac783d18ff5f532
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: cb19cab0c03b87894029a18f682f05def6a2197c
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810141"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005542"
 ---
 # <a name="dotnet-toolinstall"></a>dotnet-toolinstall
 
@@ -29,7 +29,7 @@ ms.locfileid: "90810141"
 | 名稱                                             | 類型   | 必要 | 值                                                                 |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------|
 | **評論**                                     | 字串 | No       | 選擇性批註屬性。 未使用。                                 |
-| [**輸入**](#input)                              | 字串 | 是      | 要安裝的 .NET Core 工具。 如需詳細資料，請參閱下列 [輸入](#input) 。 |
+| [**輸入**](#input)                              | 字串 | Yes      | 要安裝的 .NET Core 工具。 如需詳細資料，請參閱下列 [輸入](#input) 。 |
 | [**additionalOptions**](#additional-options)     | 字串 | No       | 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。      |
 
 ### <a name="input"></a>輸入

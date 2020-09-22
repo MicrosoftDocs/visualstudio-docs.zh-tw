@@ -3,7 +3,7 @@ title: .NET Core 執行階段
 description: 針對 dotnet/執行時間存放庫使用 devinit 進行自訂的範例。
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 477a498059be6d1ee5637a704512fd49b62e11b6
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b38490217a384e748ae97ec4b808f197b4af3b7b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809108"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005649"
 ---
 # <a name="net-core-runtime"></a>.NET Core 執行階段
 
@@ -26,7 +26,7 @@ ms.locfileid: "90809108"
 
 此腳本是從 _PostCloneSetup.ps1_ 呼叫，也可以在本機執行以設定存放庫。 此檔案必須位於與 _.devcontainer.js_的相同資料夾中。
 
-```batch
+```console
 devinit init
 git config --system core.longpaths true
 ```
@@ -43,7 +43,7 @@ _packages.config_檔案是[Chocolatey](https://chocolatey.org/)檔案，可定�
 </packages>
 ```
 
-## <a name="devinitjson"></a>.devinit.js開啟
+## <a name="devinitjson"></a>.devinit.json
 
 檔案 [_.devinit.js_](devinit-json.md) 的內容。 這個檔案必須與檔案 _.devcontainer.js_ 位於相同的資料夾中。
 

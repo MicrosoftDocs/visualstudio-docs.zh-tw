@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 09/08/2020
 ms.topic: how-to
 description: 了解如何連絡您的訂用帳戶管理員以協助解決問題。
-ms.openlocfilehash: 43a0c4ac090331bb9e9c65c232f5277aaee890a7
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 6e2192f81a7003c3c3dcbbc9583ae537ac60cb4b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561412"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005684"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>取得訂用帳戶管理員的協助
 如果您的 Visual Studio 訂用帳戶是由公司或學校提供給您，則其可能是由訂用帳戶管理員 (或「管理員」) 指派給您。  管理員可以指派或移除訂用帳戶、變更登入電子郵件地址、判斷您是否能夠下載軟體，以及執行與訂用帳戶相關的其他功能。
@@ -36,16 +36,15 @@ ms.locfileid: "89561412"
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 如果您尚未這麼做，建議您啟用這些權益，以充分利用您的 Visual Studio 訂用帳戶：
 - [Visual Studio IDE](vs-ide-benefit.md)
 - [Azure](vs-azure.md)
 - [Azure DevOps](vs-azure-devops.md)
 
 您可以在 https://my.visualstudio.com/benefits 找到這些權益及更多權益。
-

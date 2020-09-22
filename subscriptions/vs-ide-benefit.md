@@ -7,12 +7,12 @@ ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
 ms.date: 04/17/2020
 ms.topic: how-to
 description: 了解如何下載和安裝 Visual Studio 訂用帳戶中所含的 Visual Studio IDE。
-ms.openlocfilehash: b5c47c6b484d5b74f31ab8569f3895ae9ce0f984
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e955cc0c9e2437da07e48fc7db1c1b4df9e168e7
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904434"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006302"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 權益
 
@@ -42,7 +42,7 @@ ms.locfileid: "85904434"
    > [!div class="mx-imgBorder"]
    > ![自訂 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
 
-10. 按一下 [Install] 。
+10. 按一下 [安裝]。
 
 11. 安裝完成時，您可以選擇修改安裝，或啟動 Visual Studio。  按一下 [啟動]**** 開始使用。  如果您安裝了多個版本，系統會列出這些版本。
     > [!div class="mx-imgBorder"]
@@ -62,11 +62,11 @@ ms.locfileid: "85904434"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  是          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl | 可用       |  是          |
-| Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                       | 可用                                                            |  是          |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl   | 可用              |  是          |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  是         |
+| Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  Yes          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl | 可用       |  Yes          |
+| Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                       | 可用                                                            |  Yes          |
+| 含 GitHub Enterprise 的 Visual Studio Professional | Vl   | 可用              |  Yes          |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  Yes         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 
 <sup>1</sup>  *包括：禁止轉售 (NFR) 、Visual Studio 產業合作夥伴 (VSIP) 、Microsoft 合作夥伴網路 (MPN) 、FTE、MCT Software & Services Developer、BizSpark、假想、最有價值專家 (MVP) 、區域主管 (RD) 。 排除： MCT Software & Services。*
@@ -83,12 +83,12 @@ ms.locfileid: "85904434"
 - 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 安裝 Visual Studio 之後，請別忘了起用這些其他重要的權益：
 - [Azure DevOps](vs-azure-devops.md)
 - [Azure DevTest 個人點數](vs-azure.md)

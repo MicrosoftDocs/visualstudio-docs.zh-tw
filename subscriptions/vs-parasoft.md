@@ -7,12 +7,12 @@ ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
 ms.date: 04/20/2020
 ms.topic: how-to
 description: 了解如何啟用 Visual Studio 訂用帳戶中所含的 Parasoft Virtualize/SOA Test Professional 訂用帳戶。
-ms.openlocfilehash: 8472c27e0196ec5837fccb17535061ea9b1b4867
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5f32a15b0c2ab292f55c5ec5153161f03598ef4
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904386"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006263"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Parasoft Virtualize/SOAtest Professional Desktop
 
@@ -47,7 +47,7 @@ ms.locfileid: "85904386"
 
 9. 選擇您想要的語言，然後按一下 [確定]****。
 
-10. [Parasoft SOAtest & Virtualize 安裝精靈] 隨即啟動。  按一下 [下一步]  。
+10. [Parasoft SOAtest & Virtualize 安裝精靈] 隨即啟動。  按 [下一步]  。
     > [!div class="mx-imgBorder"]
     > ![Parasoft 權益安裝開始](_img/vs-parasoft/vs-parasoft-start-install.png)
 
@@ -73,8 +73,8 @@ ms.locfileid: "85904386"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  是       |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl | 6 個月       |  是       |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  Yes       |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl | 6 個月       |  Yes       |
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                           |NA         |
 | 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                      | 無法使用                                                           |NA         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                                           |NA         |
@@ -95,10 +95,10 @@ ms.locfileid: "85904386"
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 檔](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
-啟用您的 [Azure DevTest 個人點數](vs-azure.md)，以利用您自己的開發沙箱。 
+## <a name="next-steps"></a>下一步
+啟用您的 [Azure DevTest 個人點數](vs-azure.md)，以利用您自己的開發沙箱。
