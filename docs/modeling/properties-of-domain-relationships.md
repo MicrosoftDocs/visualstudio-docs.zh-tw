@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de06e33b26f7af66dc0670193561758c5fa5896
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e432e9738009c84b6930b0363ae4048c925d0a6
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544153"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809998"
 ---
 # <a name="properties-of-domain-relationships"></a>網域關聯性的屬性
 下表中的屬性與網域關聯性相關聯。 如需有關網域關聯性的詳細資訊，請參閱 [瞭解模型、類別和關聯](../modeling/understanding-models-classes-and-relationships.md)性。 如需有關如何使用這些屬性的詳細資訊，請參閱 [自訂和擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
@@ -29,13 +29,13 @@ ms.locfileid: "85544153"
 |允許重複|如果為 `True` ，則可能在相同的兩個元素之間建立網域關聯性的重複連結。|`False`|
 |基底關聯性|如果衍生的是網域關聯性，則為網域關聯性的基底關聯性。|\<none>|
 |正在內嵌|如果 `True` 為，則網域關聯性是內嵌關聯性。 如果 `False` 為，則關聯性是參考關聯性。|\<both>|
-|Name|網域關聯性的名稱。|目前的名稱|
+|[屬性]|網域關聯性的名稱。|目前的名稱|
 |命名空間|與網域關聯性相關聯的命名空間。|目前的命名空間|
-|附註|與網域關聯性相關聯的非正式附注。|\<none>|
+|備註|與網域關聯性相關聯的非正式附注。|\<none>|
 |描述|用來記錄程式碼的描述，用於產生之設計工具的 UI 中。|\<none>|
 |顯示名稱|針對網域關聯性所產生的設計工具中顯示的名稱。|\<none>|
 |說明關鍵字|選擇性的關鍵字，用來為定義域關聯性的 F1 說明編制索引。|\<none>|
 
 ## <a name="see-also"></a>另請參閱
 
-- [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
+- [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

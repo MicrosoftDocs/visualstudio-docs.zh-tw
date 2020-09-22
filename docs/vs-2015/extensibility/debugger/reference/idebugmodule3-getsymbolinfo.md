@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::GetSymbolInfo | Microsoft Docs
+title: IDebugModule3：： GetSymbolInfo |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 48dd08b8ef1a8b32497d03dc7989b32a22ee5a9c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426360"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839228"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取符號，以及每個路徑中搜尋結果中搜尋的路徑的清單。  
+抓取搜尋符號的路徑清單，以及搜尋每個路徑的結果。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,29 +44,29 @@ int GetSymbolInfo(
   
 #### <a name="parameters"></a>參數  
  `dwFields`  
- [in]從旗標的組合[SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)列舉型別指定的哪些欄位`pInfo`是要填入。  
+ 在 [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) 列舉中的旗標組合，指定 `pInfo` 要填入的欄位。  
   
  `pInfo`  
- [out]A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)其成員的指定資訊填入的結構。 如果這會是 null 值，則這個方法會傳回`E_INVALIDARG`。  
+ 擴展要以指定的資訊填入其成員的 [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) 結構。 如果這是 null 值，則這個方法會傳回 `E_INVALIDARG` 。  
   
 ## <a name="return-value"></a>傳回值  
- 如果方法成功，它會傳回`S_OK`; 否則它會傳回錯誤碼。  
+ 如果方法成功，則會傳回， `S_OK` 否則會傳回錯誤碼。  
   
 > [!NOTE]
-> 傳回的字串 (在`MODULE_SYMBOL_SEARCH_INFO`結構) 可能是空的即使`S_OK`會傳回。 在此案例中，是要傳回的任何搜尋資訊。  
+> 即使傳回，在結構) 中傳回的字串 (`MODULE_SYMBOL_SEARCH_INFO` 也可能是空的 `S_OK` 。 在此情況下，沒有要傳回的搜尋資訊。  
   
 ## <a name="remarks"></a>備註  
- 如果`bstrVerboseSearchInfo`欄位`MODULE_SYMBOL_SEARCH_INFO`結構不是空的則它將包含路徑搜尋和該搜尋結果的清單。 路徑，後面接著省略符號 （"..."），後面接著結果會格式化為清單。 如果有多個路徑的結果組，每一組將分隔"\r\n"（歸位字元-/ 換行） 配對。 模式看起來像這樣：  
+ 如果 `bstrVerboseSearchInfo` 結構的欄位 `MODULE_SYMBOL_SEARCH_INFO` 不是空的，則它會包含搜尋的路徑清單以及該搜尋的結果。 此清單的格式為路徑，後面接著省略號 ( "..." ) ，後面接著結果。 如果有一個以上的路徑結果配對，則每一組都會以 "\r\n" (換行字元) 組分隔。 模式看起來像這樣：  
   
- \<path>...\<result>\r\n\<path>...\<result>\r\n\<path>...\<result>  
+ \<path>...\<result>\r\n \<path> \<result> .。。\r\n \<path> .。。\<result>  
   
- 請注意最後一個項目沒有 \r\n 序列。  
+ 請注意，最後一個專案沒有 \r\n 順序。  
   
 ## <a name="example"></a>範例  
- 在此範例中，這個方法會傳回具有三個不同的搜尋結果的三個路徑。 每一行都終止歸位字元-/ 換行組。 範例輸出中只會將搜尋結果輸出為單一字串。  
+ 在此範例中，這個方法會傳回三個不同搜尋結果的路徑。 每一行都會以換行鍵/換行字元組來終止。 範例輸出只會將搜尋結果列印成單一字串。  
   
 > [!NOTE]
-> 狀態結果會是 [...] 到該行結尾的正後方的所有項目。  
+> 狀態結果是緊接在「...」之後的所有專案最高到行尾。  
   
 ```cpp#  
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)  
@@ -84,9 +84,9 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }  
 ```  
   
- **c:\symbols\user32.pdb...找不到的檔案。**  
-**c:\winnt\symbols\user32.pdb...版本不符。**  
-**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb...載入符號。**   
+ **c:\symbols\user32.pdb...找不到檔案。**  
+**c:\winnt\symbols\user32.pdb...版本不相符。**  
+**\\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb.。。已載入符號。**   
 ## <a name="see-also"></a>另請參閱  
  [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)   
  [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)   

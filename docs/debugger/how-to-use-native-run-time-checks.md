@@ -1,5 +1,5 @@
 ---
-title: 如何-使用原生執行時間檢查 |Microsoft Docs
+title: 使用原生執行時間檢查 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -37,12 +37,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5fccf510719aa5e960c12fdc807d6375ee31d3d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 586f43f14a8638ab9c3c67f8ffef52ef52a70c53
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348843"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852663"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>如何：使用原生執行階段檢查
 在 Visual Studio c + + 專案中，您可以使用原生 [runtime_checks](/cpp/preprocessor/runtime-checks) 來攔截常見的執行階段錯誤，例如：

@@ -1,5 +1,6 @@
 ---
-title: 建立 Web 效能測試的要求層級外掛程式
+title: " (web 效能測試建立要求層級外掛程式) "
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 03de870da2cd75c8a254010db682903f314cc10d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f136214b787820396fdbcff37f9f3b78574e9c8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287970"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810268"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>如何：建立要求層級外掛程式
 

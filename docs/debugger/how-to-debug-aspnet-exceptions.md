@@ -1,5 +1,5 @@
 ---
-title: 如何-調試 ASP.NET 例外狀況 |Microsoft Docs
+title: Debug ASP.NET 例外狀況 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a6808bff0a38b6ebaa3049f1655e781439f3f735
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 011094eed88245e3cd83b092a3f1b2e47bc77ae8
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350130"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852148"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>如何：偵錯 ASP.NET 例外狀況
 在開發強固的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式時，針對例外狀況進行偵錯是很重要的部分。 如何 [使用偵錯工具管理例外](../debugger/managing-exceptions-with-the-debugger.md)狀況的一般資訊。

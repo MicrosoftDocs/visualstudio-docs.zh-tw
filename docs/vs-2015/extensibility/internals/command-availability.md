@@ -12,46 +12,46 @@ caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f060f6c49fc02c75b3fe9f792133c9ee88c6d56c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441596"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838785"
 ---
 # <a name="command-availability"></a>命令可用性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio 內容會決定哪些命令可供使用。 根據目前的專案、 目前的編輯器、 已載入，Vspackage 和整合式的開發環境 (IDE) 的其他層面，可以變更內容。  
+Visual Studio 內容會決定可用的命令。 內容會根據目前的專案、目前的編輯器、載入的 Vspackage，以及整合式開發環境 (IDE) 的其他層面而變更。  
   
 ## <a name="command-contexts"></a>命令內容  
- 下列的命令內容是最常見的。  
+ 以下是最常見的命令內容。  
   
-- **IDE**永遠都可以使用 IDE 所提供的命令。  
+- **IDE** IDE 提供的命令一律可供使用。  
   
-- **VSPackage** Vspackage 可以定義命令時要顯示或隱藏。  
+- **VSPackage** Vspackage 可以定義要顯示或隱藏命令的時間。  
   
-- **專案**專案命令只會針對目前選取的專案顯示。  
+- **專案** 只有目前選取的專案才會顯示專案命令。  
   
-- **編輯器**只有一個編輯器可使用一次。 提供從作用中的編輯器命令。 與語言服務密切合作的編輯器。 語言服務必須處理其編輯器相關聯的內容中的命令。  
+- **編輯器** 一次只能有一個使用中的編輯器。 使用中編輯器的命令可供使用。 編輯器與語言服務密切合作。 語言服務必須在相關聯編輯器的內容中處理其命令。  
   
-- **檔案類型**編輯器可以載入多個檔案類型。 可用的命令可以根據檔案類型變更。  
+- **檔案類型** 編輯器可以載入一種以上的檔案。 可用的命令可能會根據檔案類型而變更。  
   
-- **使用中視窗**最後一個使用中的文件視窗設定按鍵繫結的使用者介面 (UI) 內容。 不過，有一個索引鍵繫結資料表類似於內部網頁瀏覽器工具視窗也可以設定的 UI 內容。 針對多個索引標籤的文件視窗，例如 HTML 編輯器，每個索引標籤會有不同的命令內容的 GUID。 註冊工具視窗之後，其上都搭載**檢視**功能表。  
+- **使用中視窗** 最後一個活動文件視窗會設定使用者介面 (UI) 內容來進行索引鍵系結。 不過，具有類似于內部網頁瀏覽器之按鍵系結表的工具視窗也可以設定 UI 內容。 針對多索引標籤式文件視窗（例如 HTML 編輯器），每個索引標籤都有不同的命令內容 GUID。 註冊工具視窗之後，它一律會出現在 [ **View** ] 功能表上。  
   
-- **UI 內容**的值來識別 UI 內容<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>類別，例如<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>建置方案時，或<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>當偵錯工具在作用中。 多個 UI 內容可同時處於作用中。  
+- **UI 內容** UI 內容是由類別的值所識別 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> ，例如在 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> 建立方案時，或 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> 偵錯工具為作用中時。 多個 UI 內容可以同時處於作用中狀態。  
   
-## <a name="defining-custom-context-guids"></a>定義自訂內容的 Guid  
- 如果未定義的 GUID 不適當的命令內容中，您可以定義在 VSPackage 中，並再進行程式設計，讓它成為作用中或非使用中，視需要控制命令的可見性。  
+## <a name="defining-custom-context-guids"></a>定義自訂內容 Guid  
+ 如果未定義適當的命令內容 GUID，您可以在 VSPackage 中定義一個，然後視需要將其設計為作用中或非作用中，以控制命令的可見度。  
   
-1. 藉由呼叫註冊內容 Guid<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>方法。  
+1. 藉由呼叫方法來註冊內容 Guid <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> 。  
   
-2. 取得 GUID 的內容的狀態，藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法。  
+2. 藉由呼叫方法來取得內容 GUID 的狀態 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 。  
   
-3. 藉由呼叫開啟內容的 Guid 和關閉<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>方法。  
+3. 藉由呼叫方法來開啟和關閉內容 Guid <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> 。  
   
     > [!CAUTION]
-    > 請確定，VSPackage 不會影響任何現有內容的 Guid 因為其他 Vspackage 可能取決於它們。  
+    > 請確定您的 VSPackage 不會影響任何現有的內容 Guid，因為其他 Vspackage 可能相依于這些 Guid。  
   
 ## <a name="see-also"></a>另請參閱  
- [選取內容物件](../../extensibility/internals/selection-context-objects.md)   
- [VSPackage 如何新增使用者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+ [選取專案內容物件](../../extensibility/internals/selection-context-objects.md)   
+ [VSPackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

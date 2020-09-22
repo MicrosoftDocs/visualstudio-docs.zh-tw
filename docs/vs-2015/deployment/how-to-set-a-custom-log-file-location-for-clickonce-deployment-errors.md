@@ -1,5 +1,5 @@
 ---
-title: HOW TO：設定 ClickOnce 部署錯誤的自訂記錄檔位置 |Microsoft Docs
+title: 如何：設定 ClickOnce 部署錯誤的自訂記錄檔位置 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,36 +18,36 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7a1b7c93e4b30bbfd373a5fad9d7001452d4f587
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403540"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838894"
 ---
-# <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>HOW TO：設定 ClickOnce 部署錯誤的自訂記錄檔位置
+# <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>如何：設定 ClickOnce 部署錯誤的自訂記錄檔位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 會維護所有部署的啟動記錄檔。 這些記錄檔記錄有關安裝和初始化任何錯誤[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署。 根據預設，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]建立每個部署啟動的一個記錄檔。 它會這些記錄檔儲存在 Temporary Internet Files 資料夾中。 部署記錄檔顯示給使用者時啟用失敗，且使用者按下**詳細資料**在產生的 [錯誤] 對話方塊。  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 維護所有部署的啟用記錄檔。 這些記錄會記錄有關安裝和初始化部署的任何錯誤 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 。 依預設，會 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 為每個部署啟用建立一個記錄檔。 它會將這些記錄檔儲存在 [Temporary Internet Files] 資料夾中。 當啟用失敗時，使用者會看到部署的記錄檔，而使用者會在產生的錯誤對話方塊中按一下 [ **詳細資料** ]。  
   
- 您也可以使用登錄編輯程式特定的用戶端變更此行為 (**regedit.exe**) 來設定自訂的記錄檔路徑。 在此情況下，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]記錄啟用成功與失敗之所有部署在單一檔案。  
+ 您可以使用登錄編輯程式 (**regedit.exe**) 設定自訂的記錄檔路徑，來變更特定用戶端的這個行為。 在此情況下，會 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 針對單一檔案中的所有部署記錄啟用成功和失敗。  
   
 > [!CAUTION]
-> 如果您不當使用登錄編輯程式，您可能會導致嚴重的問題，可能會要求您重新安裝作業系統。 使用登錄編輯程式的風險須自行承擔。  
+> 如果未正確使用登錄編輯程式，可能會導致嚴重問題，甚至可能必須重新安裝作業系統。 您必須自行負擔使用「登錄編輯程式」的風險。  
   
 > [!NOTE]
-> 您必須截斷或刪除記錄檔，偶爾會以防止它變得太大。  
+> 您必須偶爾截斷或刪除記錄檔，以防止其成長過大。  
   
- 下列程序描述如何設定單一用戶端的自訂記錄檔的位置。  
+ 下列程式描述如何設定單一用戶端的自訂記錄檔位置。  
   
-### <a name="to-set-a-custom-log-file-location"></a>若要設定的自訂記錄檔位置  
+### <a name="to-set-a-custom-log-file-location"></a>若要設定自訂記錄檔位置  
   
-1. 開啟**Regedit.exe**。  
+1. 開啟 **Regedit.exe**。  
   
-2. 瀏覽至節點`HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`。  
+2. 流覽至節點 `HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment` 。  
   
-3. 設定字串值`LogFilePath`完整路徑和檔名的您慣用的自訂記錄檔的位置。  
+3. 將字串值設定 `LogFilePath` 為您慣用的自訂記錄檔位置的完整路徑和檔案名。  
   
-     此位置必須是使用者具有寫入權限的目錄中。 例如，在 Windows Vista 中，建立下列資料夾結構，並設定`LogFilePath`至 C:\Users\\< 使用者名稱\>\Documents\Logs\ClickOnce\installation.log。  
+     這個位置必須位於使用者具有寫入權限的目錄中。 例如，在 Windows Vista 上建立下列資料夾結構，並設定 `LogFilePath` 為 C:\Users \\<username \> \Documents\Logs\ClickOnce\installation.log。  
   
 ## <a name="see-also"></a>另請參閱  
  [疑難排解 ClickOnce 部署](../deployment/troubleshooting-clickonce-deployments.md)

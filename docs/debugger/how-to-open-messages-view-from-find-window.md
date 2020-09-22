@@ -1,5 +1,5 @@
 ---
-title: 如何-從尋找視窗開啟訊息查看 |Microsoft Docs
+title: 從尋找視窗開啟訊息視圖 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3258e45e47c263912957ff5066ea9d02ad03e57e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b6240807eb82313182278251b353894545b957d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349480"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852266"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>如何：從尋找視窗開啟訊息檢視
 您可能會發現，使用 [ **尋找視窗** ] 對話方塊來選取目標視窗，然後開啟該視窗的 [訊息] 視圖是很方便的。

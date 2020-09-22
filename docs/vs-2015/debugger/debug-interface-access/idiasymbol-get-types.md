@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_types |Microsoft Docs'
+title: IDiaSymbol：： get_types |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 813dcd692669d823548e52ce6bb7eccc9546de61
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64832249"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839211"
 ---
-# <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
+# <a name="idiasymbolget_types"></a>IDiaSymbol::get_types
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取這個符號的編緝器特定類型的陣列。  
+針對這個符號抓取編譯器特定類型的陣列。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,19 +37,19 @@ HRESULT get_types ( 
   
 #### <a name="parameters"></a>參數  
  `cTypes`  
- [in]保留的資料緩衝區的大小。  
+ 在保存資料的緩衝區大小。  
   
  `pcTypes`  
- [out]傳回的型別所撰寫，或者，如果`types`參數是`NULL`，然後可用類型的總數。  
+ 擴展傳回寫入的類型數目，如果 `types` 參數為 `NULL` ，則為可用的類型總數。  
   
  `types[]`  
- [out]陣列，其中是要在以填滿[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)代表這個符號的所有類型的物件。  
+ 擴展要填入 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件的陣列，這些物件代表此符號的所有類型。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

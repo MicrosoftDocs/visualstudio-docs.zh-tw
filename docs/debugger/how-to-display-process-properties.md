@@ -1,5 +1,5 @@
 ---
-title: 如何-顯示進程屬性 |Microsoft Docs
+title: 顯示流程屬性 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41e36baf8d44aab6904362e25ba4706fc7fb1417
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dee3bf419470a41ce31b1f1a1ea9164acdbe5bd
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349830"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852331"
 ---
 # <a name="how-to-display-process-properties"></a>如何：顯示處理序屬性
 若要深入瞭解 [ [進程視圖](../debugger/processes-view.md)] 中所列的進程，請使用 [ [處理常式屬性] 對話方塊](../debugger/process-properties-dialog-box.md)。

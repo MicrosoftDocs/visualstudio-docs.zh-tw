@@ -1,5 +1,5 @@
 ---
-title: 如何-重新整理視圖 |Microsoft Docs
+title: 重新整理視圖 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c42da3994d75329ced1eaa5b89c7aa6de360c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d964f0a33b1944255fee2f9fdb7658b04aaedebb
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349389"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852031"
 ---
 # <a name="how-to-refresh-the-view"></a>如何：重新整理檢視
 Spy + + 會取得系統資料表的「快照」，並根據此資訊重新整理視圖。 請務必定期重新整理系統檢視。 如果您開啟了 Spy + + view，但尚未重新整理視圖，您將不會看到後續建立的進程、執行緒和視窗。 此外，您可能會看到不再存在的專案。 [重新整理 **] 命令適用于所有** 視圖，但訊息視圖除外。

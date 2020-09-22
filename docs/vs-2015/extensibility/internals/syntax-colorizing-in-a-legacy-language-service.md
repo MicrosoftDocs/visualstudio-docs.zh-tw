@@ -1,5 +1,5 @@
 ---
-title: 舊版語言服務中的語法上色 |Microsoft Docs
+title: 舊版語言服務中的語法標示 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,45 +14,45 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 64e57ebc80320ccc133261781eb8ee6611c8e2a0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441232"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839113"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>舊版語言服務中的語法上色
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-語法顏色標示是一項功能，會顯示在原始程式檔中不同的色彩和樣式的程式設計語言的不同項目。 若要支援這項功能，您需要提供剖析器或掃描器可以識別語彙項目或檔案中的權杖類型。 許多語言關鍵字、 分隔符號 （例如括號或大括號），來區分及註解標示這些色彩以不同的方式。  
+語法顏色標示是一種功能，可在不同的色彩和樣式的原始程式檔中顯示不同的程式設計語言元素。 若要支援這項功能，您必須提供剖析器或掃描器，以識別檔案中的詞法元素或標記類型。 許多語言會區分關鍵字、分隔符號 (例如括弧或大括弧) 和批註，方法是以不同方式標示它們。  
   
- 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解，請參閱[擴充編輯器和語言服務](../../extensibility/extending-the-editor-and-language-services.md)。  
+ 舊版語言服務會實作為 VSPackage 的一部分，但是執行語言服務功能的較新方法是使用 MEF 延伸模組。 若要深入瞭解，請參閱 [擴充編輯器和語言服務](../../extensibility/extending-the-editor-and-language-services.md)。  
   
 > [!NOTE]
-> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
+> 建議您儘快開始使用新的編輯器 API。 這可改善您的語言服務效能，並讓您利用新的編輯器功能。  
   
 ## <a name="implementation"></a>實作  
- 為了支援顏色標示，managed 的封裝架構 (MPF) 包含<xref:Microsoft.VisualStudio.Package.Colorizer>類別，它會實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>介面。 這個類別互動<xref:Microsoft.VisualStudio.Package.IScanner>判斷語彙基元和色彩。 如需有關掃描器的詳細資訊，請參閱[舊版語言服務剖析器和掃描器](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)。 <xref:Microsoft.VisualStudio.Package.Colorizer>類別然後標記的語彙基元的色彩資訊的每個字元，並傳回該項資訊到編輯器中顯示的原始程式檔。  
+ 為支援顏色標示，受管理的封裝架構 (MPF) 包含 <xref:Microsoft.VisualStudio.Package.Colorizer> 可實介面的類別 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> 。 這個類別會與 <xref:Microsoft.VisualStudio.Package.IScanner> 進行互動，以判斷 token 和色彩。 如需有關掃描器的詳細資訊，請參閱 [舊版語言服務剖析器和掃描器](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)。 <xref:Microsoft.VisualStudio.Package.Colorizer>類別接著會使用色彩資訊來標記標記的每個字元，並將該資訊傳回給顯示來源檔案的編輯器。  
   
- 傳回至編輯器的色彩資訊是可設定色彩的項目清單中的索引。 每個可設定色彩的項目指定色彩值和一組的字型屬性，例如粗體或刪除線。 編輯器提供一組語言服務可用的預設色彩項目。 您只需要已指定適當的色彩索引的每個語彙基元的型別。 不過，您可以為權杖，提供一組自訂色彩的項目和您提供的索引，並參考您自己的可設定色彩的項目，而不是預設清單的清單。 您也必須設定`RequestStockColors`為 0 的登錄項目 (或不指定`RequestStockColors`在所有的項目) 來支援自訂的色彩。 您可以設定此登錄項目，使用具名參數，以<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>使用者定義的屬性。 如需有關註冊語言服務，並設定其選項的詳細資訊，請參閱 <<c0> [ 註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)。  
+ 傳回給編輯器的色彩資訊是可設定色彩專案清單中的索引。 每個可設定色彩專案都會指定一個色彩值和一組字型屬性，例如粗體或刪除線。 編輯器會提供一組可供您的語言服務使用的預設可設定色彩專案。 您只需要為每個權杖類型指定適當的色彩索引。 不過，您可以提供一組自訂的可設定色彩專案和您為權杖提供的索引，並參考您自己的可設定色彩專案清單，而不是預設清單。 您也必須將登錄 `RequestStockColors` 專案設定為 0 (或不指定 `RequestStockColors` 所有) 的專案，以支援自訂色彩。 您可以使用使用者定義屬性的具名引數來設定此登錄專案 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 。 如需註冊語言服務和設定其選項的詳細資訊，請參閱 [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)。  
   
 ## <a name="custom-colorable-items"></a>自訂可設定色彩的項目  
- 若要提供您自己自訂的色彩項目，您必須覆寫<xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A>並<xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A>方法<xref:Microsoft.VisualStudio.Package.LanguageService>類別。 第一種方法會傳回您的語言服務支援的自訂色彩項目數目和第二個取得自訂色彩項目的索引。 您建立自訂的色彩項目的預設清單。 在您的語言服務的建構函式，您只需要會提供每個可設定色彩的項目名稱。 Visual Studio 會自動處理的情況下，使用者選取一組不同的可設定色彩的項目。 這個名稱是在顯示的內容**字型和色彩**屬性頁上的**選項** 對話方塊中 (在 Visual Studio 中使用**工具**功能表)，此名稱會決定哪一個使用者已覆寫的色彩。 使用者的選擇會儲存在登錄中的快取，而且色彩名稱來存取。 **字型和色彩**屬性頁面會列出所有的色彩名稱，依字母順序，因此您可以將您的自訂色彩分組的方法是使用您語言的名稱; 每一個色彩名稱，例如"**TestLanguage-註解**"和"**TestLanguage-關鍵字**"。 也可以依型別，您可設定色彩的項目 」**註解 (TestLanguage)**"和"**關鍵字 (TestLanguage)**"。 依語言名稱的群組時，偏好。  
+ 若要提供您自己的自訂可設定色彩專案，您必須覆寫 <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> 類別上的和方法 <xref:Microsoft.VisualStudio.Package.LanguageService> 。 第一個方法會傳回語言服務支援的自訂可設定色彩專案數目，而第二個方法會依索引取得自訂可設定色彩專案。 您可以建立自訂可設定色彩專案的預設清單。 在您的語言服務的函式中，您只需要為每個可設定色彩專案提供名稱。 Visual Studio 會自動處理使用者選取一組不同可設定色彩專案的情況。 這個名稱會顯示在 [**選項**] 對話方塊的 [字型**和色彩**] 屬性頁中， (可從 Visual Studio [**工具**] 功能表) ，而此名稱會決定使用者已覆寫的色彩。 使用者的選擇會儲存在登錄中的快取中，並以色彩名稱進行存取。 [字型 **和色彩** ] 屬性頁會依字母順序列出所有色彩名稱，因此您可以在每個色彩名稱之前加上您的語言名稱來分組自訂色彩;例如，"**TestLanguage-Comment**" 和 "**TestLanguage" 關鍵字**。 或者，您可以依類型、"**Comment (TestLanguage) **" 和 "**關鍵字 (TestLanguage) **" 來分組您的可設定色彩專案。 偏好依語言名稱分組。  
   
 > [!CAUTION]
-> 強烈建議您避免與現有的色彩項目的名稱發生衝突的色彩項目的名稱包含語言名稱。  
+> 強烈建議您在可設定色彩專案名稱中包含語言名稱，以避免與現有的可設定色彩專案名稱發生衝突。  
   
 > [!NOTE]
-> 如果您變更其中一個色彩的名稱，在開發期間，您必須重設 Visual Studio 建立第一次存取您的色彩的快取。 則可以藉由執行**重設實驗性的 Hive**從 Visual Studio SDK 的 [程式] 功能表命令。  
+> 如果您在開發期間變更其中一個色彩的名稱，則必須重設 Visual Studio 第一次存取您的色彩時所建立的快取。 若要這麼做，您可以從 Visual Studio SDK 程式功能表中，執行 [ **重設實驗 Hive** ] 命令。  
   
- 請注意，永遠不會參考可設定色彩的項目清單中第一個項目。 Visual Studio 一律會提供預設文字色彩和該項目的屬性。 與這個處理的最簡單的方式是提供預留位置色彩項目的第一個項目。  
+ 請注意，您可設定色彩專案清單中的第一個專案絕對不會被參考。 Visual Studio 一律會提供該專案的預設文字色彩和屬性。 處理這項工作的最簡單方式，就是提供預留位置可設定色彩專案做為第一個專案。  
   
-### <a name="high-color-colorable-items"></a>高彩色彩的項目  
- 可設定色彩的項目也可支援 24 位元或高的色彩值，透過<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>介面。 MPF<xref:Microsoft.VisualStudio.Package.ColorableItem>類別支援<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>正常的色彩以及建構函式中指定介面和 24 位元色彩。 如需其他詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Package.ColorableItem> 類別。 下列範例示範如何設定關鍵字和註解的 24 位元色彩。 使用者的桌面，支援 24 位元色彩時，會使用 24 位元色彩否則，會使用一般文字色彩。  
+### <a name="high-color-colorable-items"></a>高彩可設定色彩專案  
+ 可設定色彩專案也可以透過介面支援24位或高的色彩值 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> 。 MPF <xref:Microsoft.VisualStudio.Package.ColorableItem> 類別支援 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> 介面，而24位色彩則是在函式中指定，以及一般色彩。 如需其他詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Package.ColorableItem> 類別。 下列範例顯示如何設定關鍵字和批註的24位色彩。 當使用者的桌面上支援24位色彩時，會使用24位色彩;否則，會使用一般文字色彩。  
   
- 請記住，這些是您的語言; 的預設色彩使用者可以變更這些色彩為他們想要的任何內容。  
+ 請記住，這些是您語言的預設色彩;使用者可以將這些色彩變更為任何想要的色彩。  
   
 ### <a name="example"></a>範例  
- 此範例示範一種方式宣告並填入使用自訂色彩項目的陣列<xref:Microsoft.VisualStudio.Package.ColorableItem>類別。 此範例會設定使用 24 位元色彩的關鍵字和註解色彩。  
+ 這個範例示範使用類別來宣告和填入自訂可設定色彩專案陣列的一種方式 <xref:Microsoft.VisualStudio.Package.ColorableItem> 。 此範例會使用24位色彩來設定關鍵字和批註色彩。  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -96,17 +96,17 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="the-colorizer-class-and-the-scanner"></a>色彩標示器類別和掃描器  
- 基底<xref:Microsoft.VisualStudio.Package.LanguageService>類別具有<xref:Microsoft.VisualStudio.Package.LanguageService.GetColorizer%2A>方法，instantiantes<xref:Microsoft.VisualStudio.Package.Colorizer>類別。 傳回從掃描器<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>方法傳遞至<xref:Microsoft.VisualStudio.Package.Colorizer>類別建構函式。  
+## <a name="the-colorizer-class-and-the-scanner"></a>著色器類別和掃描器  
+ 基類 <xref:Microsoft.VisualStudio.Package.LanguageService> 具有 <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorizer%2A> instantiantes 類別的方法 <xref:Microsoft.VisualStudio.Package.Colorizer> 。 從方法傳回的掃描器 <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> 會傳遞至類別的函式 <xref:Microsoft.VisualStudio.Package.Colorizer> 。  
   
- 您必須實作<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>自己的版本中的方法<xref:Microsoft.VisualStudio.Package.LanguageService>類別。 <xref:Microsoft.VisualStudio.Package.Colorizer>類別使用掃描器來取得語彙基元色彩的所有資訊。  
+ 您必須 <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> 在自己的類別版本中執行方法 <xref:Microsoft.VisualStudio.Package.LanguageService> 。 <xref:Microsoft.VisualStudio.Package.Colorizer>類別會使用掃描器來取得所有 token 色彩資訊。  
   
- 掃描器必須填入<xref:Microsoft.VisualStudio.Package.TokenInfo>結構的每個權杖它找到。 此結構包含的資訊，例如權杖的範圍所佔據的色彩索引，若要使用，哪種類型是權杖和權杖的觸發程序 (請參閱<xref:Microsoft.VisualStudio.Package.TokenTriggers>)。 只有範圍和色彩索引所需的顏色標示<xref:Microsoft.VisualStudio.Package.Colorizer>類別。  
+ 掃描器需要為 <xref:Microsoft.VisualStudio.Package.TokenInfo> 它找到的每個權杖填入結構。 此結構包含的資訊包括權杖佔用的範圍、要使用的色彩索引、權杖的類型，以及權杖觸發程式 (查看 <xref:Microsoft.VisualStudio.Package.TokenTriggers>) 。 只有範圍和色彩索引需要類別的顏色標示 <xref:Microsoft.VisualStudio.Package.Colorizer> 。  
   
- 在 儲存色彩索引<xref:Microsoft.VisualStudio.Package.TokenInfo>結構通常是從值<xref:Microsoft.VisualStudio.Package.TokenColor>列舉型別，可提供多個對應到各種不同的語言項目，例如關鍵字和運算子的具名索引。 如果您自訂色彩項目清單上的相符項目中呈現的項目<xref:Microsoft.VisualStudio.Package.TokenColor>列舉型別，則您可以只使用列舉型別做為色彩的每個語彙基元。 不過，如果您有其他可設定色彩的項目，或不想使用現有的值，依此順序，您可以排列您的自訂色彩的項目清單，以符合您的需求，並傳回適當的索引，該清單。 請務必要轉換的索引<xref:Microsoft.VisualStudio.Package.TokenColor>時將它儲存在<xref:Microsoft.VisualStudio.Package.TokenInfo>結構;[!INCLUDE[vs_current_short](../../includes/vs-current-short-md.md)]看到只有索引。  
+ 儲存在結構中的色彩索引 <xref:Microsoft.VisualStudio.Package.TokenInfo> 通常是列舉中的值 <xref:Microsoft.VisualStudio.Package.TokenColor> ，可提供數個對應至各種語言專案（例如關鍵字和運算子）的命名索引。 如果您的自訂可設定色彩專案清單符合列舉中所呈現的專案 <xref:Microsoft.VisualStudio.Package.TokenColor> ，您可以只使用列舉作為每個標記的色彩。 但是，如果您有其他可設定色彩專案，或不想要使用該順序中的現有值，您可以排列自訂可設定色彩專案清單以符合您的需求，並將適當的索引傳回至該清單。 當將索引儲存在結構中時，請務必將索引轉換成， <xref:Microsoft.VisualStudio.Package.TokenColor> <xref:Microsoft.VisualStudio.Package.TokenInfo> [!INCLUDE[vs_current_short](../../includes/vs-current-short-md.md)] 只看到索引。  
   
 ### <a name="example"></a>範例  
- 下列範例示範如何掃描器可能會識別三個語彙基元的型別： 數字、 標點符號及識別項 （任何項目不是數字或標點符號）。 這個範例是僅供示範用途，並不代表完整的剖析器和掃描器實作。 它會假設沒有`Lexer`類別搭配`GetNextToken()`方法會傳回字串。  
+ 下列範例顯示掃描器識別三種權杖類型的方式：數位、標點符號和識別碼 (不是數位或標點符號的任何) 。 此範例僅供說明之用，並不代表完整的剖析器和掃描器執行。 它會假設有一個 `Lexer` 具有傳回字串之 `GetNextToken()` 方法的類別。  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  

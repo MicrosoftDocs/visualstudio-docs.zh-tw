@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426029"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838879"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 轉換
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63426029"
 轉換是指某個項目清單和另一個項目清單的一對一轉換作業。 轉換作業除了可讓專案轉換項目清單，還能讓目標識別其輸入和輸出之間的直接對應。 本主題說明轉換作業，以及 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 如何使用轉換作業以更有效建置專案。  
   
 ## <a name="transform-modifiers"></a>轉換修飾詞  
- 轉換並非任意性質，而是受到特殊語法的限制，該語法中所有轉換修飾詞都必須為 %(*ItemMetaDataName*) 格式。 任何項目中繼資料均可作為轉換修飾詞。 這包括每個項目建立時指派給項目的已知項目中繼資料。 如需已知項目中繼資料的清單，請參閱[已知的項目中繼資料](../msbuild/msbuild-well-known-item-metadata.md)。  
+ 轉換不是任意的，但會受到特殊語法的限制，其中所有轉換修飾詞的格式都必須是% (*>itemmetadataname*) 。 任何項目中繼資料均可作為轉換修飾詞。 這包括每個項目建立時指派給項目的已知項目中繼資料。 如需已知的專案中繼資料清單，請參閱 [已知的專案中繼資料](../msbuild/msbuild-well-known-item-metadata.md)。  
   
  下列範例會將一份 .resx 檔案清單轉換為 .resources 檔案清單。 %(filename) 轉換修飾詞會指定每個 .resources 檔案使用對應 .resx 檔案的相同檔案名稱。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "63426029"
 ## <a name="dependency-analysis"></a>相依性分析  
  轉換作業可保證轉換後的項目清單與原始項目清單之間的一對一對應。 因此，如果目標所建立的輸出是輸入的轉換項目，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 即會分析輸入和輸出的時間戳記，並決定是否略過、建置或部分重建目標。  
   
- 在下列範例的 [Copy 工作](../msbuild/copy-task.md)中，`BuiltAssemblies` 項目清單中的每個檔案會對應至工作目的地資料夾中的檔案 (藉由在 `Outputs` 屬性中使用轉換來指定)。 如果 `BuiltAssemblies` 項目清單中的檔案有所變更，系統就只會針對已變更的檔案執行 `Copy` 工作，並會略過所有其他檔案。 如需相依性分析及如何使用轉換的詳細資訊，請參閱[如何：以累加方式建置](../msbuild/how-to-build-incrementally.md)。  
+ 在下列範例的 [複製](../msbuild/copy-task.md) 工作中，專案清單中的每個檔案都會 `BuiltAssemblies` 對應到工作目的資料夾中的檔案，並在屬性中使用轉換來指定 `Outputs` 。 如果 `BuiltAssemblies` 項目清單中的檔案有所變更，系統就只會針對已變更的檔案執行 `Copy` 工作，並會略過所有其他檔案。 如需相依性分析以及如何使用轉換的詳細資訊，請參閱 [如何：](../msbuild/how-to-build-incrementally.md)以累加方式建立。  
   
 ```  
 <Target Name="CopyOutputs"  
@@ -111,4 +111,4 @@ extension: .xsd
 ## <a name="see-also"></a>另請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
- [如何：以累加方式建置](../msbuild/how-to-build-incrementally.md)
+ [如何：累加建置](../msbuild/how-to-build-incrementally.md)

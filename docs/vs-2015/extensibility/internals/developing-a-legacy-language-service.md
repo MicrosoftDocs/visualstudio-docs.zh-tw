@@ -17,53 +17,53 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 36ff8335bfaf99b5826d217a48910bfd581321e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440108"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838976"
 ---
 # <a name="developing-a-legacy-language-service"></a>開發舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-這個區段會連結至主題可協助您建立舊版語言服務。  
+本節連結的主題可協助您建立舊版語言服務。  
   
- 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作語言服務的新方式，請參閱[編輯器和語言服務延伸模組](../../extensibility/editor-and-language-service-extensions.md)。  
+ 舊版語言服務會實作為 VSPackage 的一部分，但是執行語言服務功能的較新方法是使用 MEF 延伸模組。 若要深入瞭解如何執行語言服務的新方法，請參閱 [編輯器和語言服務延伸](../../extensibility/editor-and-language-service-extensions.md)。  
   
 > [!NOTE]
-> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
+> 建議您儘快開始使用新的編輯器 API。 這可改善您的語言服務效能，並讓您利用新的編輯器功能。  
   
 ## <a name="in-this-section"></a>本節內容  
  [舊版語言服務模型](../../extensibility/internals/model-of-a-legacy-language-service.md)  
- 提供的最小語言服務模型[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]核心編輯器。 您可以使用此模型做為指南，來建立您自己的語言服務。  
+ 提供核心編輯器的最基礎語言服務模型 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。 您可以使用此模型作為建立您專屬語言服務的指南。  
   
  [舊版語言服務介面](../../extensibility/internals/legacy-language-service-interfaces.md)  
- 討論實作語言服務所需的物件，並提供您可用來提供語法醒目提示、 方法的資料，以及其他功能的其他物件的清單。  
+ 討論執行語言服務所需的物件，並提供可供您用來提供語法醒目提示、方法資料和其他功能的其他物件清單。  
   
  [攔截舊版語言服務命令](../../extensibility/internals/intercepting-legacy-language-service-commands.md)  
- 描述如何插入截距，命令文字 檢視會處理的語言服務中的命令篩選器。  
+ 說明如何將命令篩選器插入您的語言服務中，以攔截文字視圖會以其他方式處理的命令。  
   
  [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service2.md)  
- 提供如何註冊您的語言服務使用的相關資訊[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
+ 提供如何使用註冊語言服務的相關資訊 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。  
   
  [語言服務支援偵錯](../../extensibility/internals/language-service-support-for-debugging.md)  
- 描述如何語言服務可以提供功能，可支援偵錯工具。  
+ 描述語言服務如何提供支援偵錯工具的功能。  
   
  [檢查清單：建立舊版語言服務](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
- 提供逐步指示來建立及整合核心編輯器 」 的語言服務。  
+ 提供逐步指示，說明如何建立和整合核心編輯器的語言服務。  
   
 ## <a name="related-sections"></a>相關章節  
  [舊版語言服務中的語法著色](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
- 討論如何實作語法反白顯示您的語言服務中。  
+ 討論如何在您的語言服務中執行語法醒目提示。  
   
  [舊版語言服務中的陳述式完成](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)  
- 討論陳述式完成時，處理程序的語言服務可協助使用者完成語言關鍵字或啟動後輸入的項目。  
+ 討論語句完成，這是語言服務可協助使用者完成已開始鍵入語言關鍵字或元素的程式。  
   
  [舊版語言服務中的參數資訊](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
- 描述如何為多載函式和方法提供方法提示。  
+ 說明如何提供多載函式和方法的方法提示。  
   
- [如何：在舊版語言服務中提供隱藏文字的支援](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
- 說明隱藏的文字區域的目的，並提供有關如何實作在隱藏的文字區域的指示。  
+ [如何︰在舊版語言服務中提供隱藏文字的支援](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ 說明隱藏文字區域的目的，並提供有關如何執行隱藏文字區域的指示。  
   
- [如何：在舊版語言服務中提供展開大綱的支援](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
- 說明擴充大綱的支援，您只能支援的語言的兩個選項*摺疊至定義*命令。
+ [如何︰在舊版語言服務中提供展開大綱的支援](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ 說明針對您的語言擴充大綱支援的兩個選項，而不支援 [折迭 *至定義* ] 命令。

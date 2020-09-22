@@ -1,5 +1,5 @@
 ---
-title: 如何-在高效能叢集上進行調試 |Microsoft Docs
+title: 在高效能叢集上進行 Debug |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 905a196b0872ac0d8665293200837861adf49795
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5f33fe5fd556830d0276f3e7cbfef3731dfe7db
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350065"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852435"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>如何：在高效能叢集上進行 Debug (c #、Visual Basic、c + +) 
 
@@ -53,7 +53,7 @@ ms.locfileid: "85350065"
 
      若要建立更複雜的篩選條件，您可以使用 AND 運算子 `&`、OR 運算子 `||`、NOT 運算子 `!` 和括號來結合子句。
 
-4. 按一下 [確定]  。
+4. 按一下 [確定]。
 
 ### <a name="to-set-a-breakpoint-on-a-specific-process"></a>若要在特定處理序上設定中斷點
 
@@ -71,7 +71,7 @@ ms.locfileid: "85350065"
 
      若要建立更複雜的篩選條件，您可以使用 AND 運算子 `&`、OR 運算子 `||`、NOT 運算子 `!` 和括號來結合子句。
 
-4. 按一下 [確定]  。
+4. 按一下 [確定]。
 
 ### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>若要在特定執行緒上設定中斷點
 
@@ -89,7 +89,7 @@ ms.locfileid: "85350065"
 
      若要建立更複雜的篩選條件，您可以使用 AND 運算子 `&`、OR 運算子 `||`、NOT 運算子 `!` 和括號來結合子句。
 
-4. 按一下 [確定]  。
+4. 按一下 [確定]。
 
 ## <a name="example"></a>範例
  下列範例顯示如何為 `marvin` 電腦和 `fourier1` 執行緒上的中斷點建立篩選條件。

@@ -12,59 +12,59 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1895d3b57e5109f824728021cb1d64f0c527384b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436591"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839110"
 ---
 # <a name="regpkg-utility"></a>RegPkg 公用程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!NOTE]
-> Visual Studio 中註冊套件的慣用的方法是使用.pkgdef 檔案。 這可讓擴充功能部署而不需要存取系統登錄，也就是 VSIX 部署的需求。 使用建立 Pkgdef 檔案[CreatePkgDef 公用程式](../../extensibility/internals/createpkgdef-utility.md)。 如需有關 Visual Studio 封裝部署的詳細資訊，請參閱[傳送 Visual Studio 擴充功能](../../extensibility/shipping-visual-studio-extensions.md)。  
+> 在 Visual Studio 中註冊封裝的慣用方式是使用 .pkgdef 檔。 這可讓您進行擴充部署，而不需要存取系統登錄，這是 VSIX 部署的需求。 .Pkgdef 檔案是使用 [CreatePkgDef 公用程式](../../extensibility/internals/createpkgdef-utility.md)建立的。 如需 Visual Studio 套件部署的詳細資訊，請參閱 [運送 Visual Studio 擴充](../../extensibility/shipping-visual-studio-extensions.md)功能。  
   
- RegPkg.exe 公用程式註冊使用 VSPackage[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]並準備好進行部署。 VSPackage 開發期間，此公用程式會在幕後使用的。 它會執行建置程序的一部分，讓您可以建置和執行在實驗登錄區中的 VSPackage。  
+ RegPkg.exe 公用程式會向註冊 VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ，並準備部署。 此公用程式會在 VSPackage 開發期間用於幕後。 它會執行為組建程式的一部分，讓您可以在實驗 hive 中建立和執行 VSPackage。  
   
- RegPkg 可以產生系統登錄指令碼，以數種格式。 您可以將這些指令碼，在部署專案，例如.msi 專案或 Windows Installer XML 工具組的檔案。  
+ RegPkg 可以用數種格式產生系統登錄腳本。 您可以將這些腳本併入部署專案中，例如 .msi 專案或 Windows Installer XML 工具組檔案。  
   
- RegPkg.exe 通常是位於\< *Visual Studio SDK 安裝路徑*> \VisualStudioIntegration\Tools\Bin\RegPkg.exe。 RegPkg 遵循此語法：  
+ RegPkg.exe 通常位於 \<*Visual Studio SDK installation path*>\VisualStudioIntegration\Tools\Bin\RegPkg.exe。 RegPkg 遵循下列語法：  
   
 ```  
 RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile:<vrgfile>] [/codebase | /assembly] [/unregister] AssemblyPath  
 ```  
   
- /root:root  
- 執行下指定的註冊  
+ /root： root  
+ 在指定的底下執行註冊  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 根目錄。  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]根帳戶  
   
- /regfile:FileName  
- 建立的.reg 檔案，而不是更新登錄。  不搭配 /vrgfile /rgsfile 或 /wixfile。  
+ /regfile： FileName  
+ 建立 .reg 檔，而不是更新登錄。  無法搭配/vrgfile 或/rgsfile 或/wixfile. 使用  
   
- /rgsfile:FileName  
- 建立.rgs 檔案，而不是更新登錄。  不搭配 /vrgfile /regfile 或 /wixfile。  
+ /rgsfile： FileName  
+ 建立 .rgs 檔案，而不是更新登錄。  無法搭配/vrgfile 或/regfile 或/wixfile. 使用  
   
- /vrgfile:FileName  
- 建立.vrg 檔案，而不是更新登錄。  不搭配 /regfile /rgsfile 或 /wixfile。  
+ /vrgfile： FileName  
+ 建立 vrg 檔案，而不是更新登錄。  無法搭配/regfile 或/rgsfile 或/wixfile. 使用  
   
  /rgm  
- 建立.rgm 檔案除了 rgs 檔。  必須與 /rgsfile 結合。  
+ 除了 rgs 檔案之外，還會建立 rgm 檔案。  必須搭配/rgsfile。  
   
- /wixfile:FileName  
- 建立 Windows Installer XML 工具組相容的檔案，而不是更新登錄。  不搭配 /regfile /rgsfile 或 /vrgfile。  
+ /wixfile： FileName  
+ 建立與 XML 工具組相容的 Windows Installer，而不是更新登錄。  無法搭配/regfile 或/rgsfile 或/vrgfile. 使用  
   
  /codebase  
- 強制使用程式碼基底，而不是組件的註冊。  
+ 強制註冊程式碼基底，而不是元件。  
   
  /assembly  
- 強制使用組件，而不是程式碼基底的註冊。  
+ 強制註冊元件，而不是程式碼基底。  
   
  /unregister  
- 取消註冊此套件。  無法使用  
+ 取消註冊此封裝。  無法使用  
   
- /regfile 或 /vrgfile 或 /rgsfile 或 /wixfile。  
+ 使用/regfile 或/vrgfile 或/rgsfile 或/wixfile。  
   
 ## <a name="see-also"></a>另請參閱  
  [發行產品](../../misc/releasing-a-visual-studio-integration-product.md)   
- [對 RegPkg 封裝註冊進行疑難排解](../../extensibility/internals/troubleshooting-regpkg-package-registration.md)
+ [針對 RegPkg 套件註冊進行疑難排解](../../extensibility/internals/troubleshooting-regpkg-package-registration.md)

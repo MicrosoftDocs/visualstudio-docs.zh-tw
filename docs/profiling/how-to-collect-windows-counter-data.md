@@ -1,5 +1,5 @@
 ---
-title: 如何-收集 Windows 計數器資料 |Microsoft Docs
+title: 收集 Windows 計數器資料 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e29d82d1cee2237886d88a24929b4c794464a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79ab9869f71fa8630b070c03d21ea4f9a6113622
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330872"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852637"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>如何：收集 Windows 計數器資料
 

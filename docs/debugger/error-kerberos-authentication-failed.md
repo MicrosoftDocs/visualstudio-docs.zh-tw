@@ -1,5 +1,5 @@
 ---
-title: 錯誤-Kerberos 驗證失敗 |Microsoft Docs
+title: Kerberos 驗證失敗 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07afa4aca82a83f5b7ba64ad0e9958710582a6a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae81d7503ef325da24db7d553a98837f97a96168
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460673"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852689"
 ---
 # <a name="error-kerberos-authentication-failed"></a>錯誤：Kerberos 驗證失敗
 當您嘗試進行遠端偵錯時，可能會看到下列錯誤訊息：

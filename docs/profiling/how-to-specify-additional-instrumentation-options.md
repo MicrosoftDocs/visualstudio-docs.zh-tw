@@ -1,5 +1,5 @@
 ---
-title: 如何指定其他檢測選項 |Microsoft Docs
+title: 指定其他的檢測選項 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8390c4aab0624aa59f62397e0b41bcbcc1c80cdd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42c5500d03e815bad1666da7b52918479715e861
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331986"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851810"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>如何：指定其他的檢測選項
 
@@ -38,7 +38,7 @@ ms.locfileid: "85331986"
 
      例如，使用 /CONTROL:THREAD 以指定程式碼剖析層級。 如需選項的完整清單，請參閱 [VSInstr](../profiling/vsinstr.md)。
 
-4. 按一下 [確定]  。
+4. 按一下 [確定]。
 
 ## <a name="see-also"></a>另請參閱
 

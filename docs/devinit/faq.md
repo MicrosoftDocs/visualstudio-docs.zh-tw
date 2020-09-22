@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: dd2da52a84d972e47b0e63905f0c4b6d4f7af9f3
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d926a51ecfa68f6a5caea0bcf84bcafaffddc0a7
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809317"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852473"
 ---
 # <a name="frequently-asked-questions-for-devinit"></a>Devinit 的常見問題
 
@@ -64,4 +64,4 @@ devinit 不是套件管理員（例如 winget），我們也不想要。 我們�
 
 devinit 的所有功能都是為了讓您能夠使用廣泛的生態系統，來部署和設定您的應用程式可能會有的相依性。 雖然 devinit 對它所提供的內容有意見，但 devinit 大多是要從宣告式 JSON 檔案中執行其他工具。
 
-今天，devinit 剛開始著手，我們 [的工具清單](/devinit-tool-list.md) 只是一開始。
+今天，devinit 剛開始著手，我們 [的工具清單](devinit-tool-list.md) 只是一開始。

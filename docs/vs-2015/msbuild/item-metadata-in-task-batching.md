@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436799"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839161"
 ---
 # <a name="item-metadata-in-task-batching"></a>工作批次處理中的項目中繼資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,10 +220,10 @@ Identity: "Item6" -- Items in ExampColl: Item6
 Items in ExampColl: Item2;Item5  
 ```  
   
-## <a name="see-also"></a>請參閱  
- [已知的項目中繼資料](../msbuild/msbuild-well-known-item-metadata.md)   
- [Item 元素 (MSBuild)](../msbuild/item-element-msbuild.md)   
- [ItemMetadata 元素 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
- [批次處理](../msbuild/msbuild-batching.md)   
+## <a name="see-also"></a>另請參閱  
+ [已知的專案中繼資料](../msbuild/msbuild-well-known-item-metadata.md)   
+ [ (MSBuild) 的 Item 元素 ](../msbuild/item-element-msbuild.md)   
+ [MSBuild)  (ItemMetadata 元素 ](../msbuild/itemmetadata-element-msbuild.md)   
+ [配料](../msbuild/msbuild-batching.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)

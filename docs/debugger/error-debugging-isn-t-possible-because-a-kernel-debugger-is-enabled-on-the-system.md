@@ -1,5 +1,5 @@
 ---
-title: 錯誤- &apos; 因為系統上已啟用內核偵錯工具，所以無法進行偵錯工具 |Microsoft Docs
+title: 無法進行調試 &apos; 程式，因為系統上已啟用內核偵錯工具 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c94d605459720722b0e1360ab3a56539667d51e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 569d3d0baf98f5c13d0ccb182df6e51160db93d6
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88706629"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852767"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤：因為系統上已啟用內核偵錯工具，所以無法進行&#39;t 的偵錯工具
 當您對 Managed 程式碼進行偵錯時，可能會收到下列錯誤訊息：

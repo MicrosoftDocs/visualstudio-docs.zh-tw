@@ -1,5 +1,5 @@
 ---
-title: 如何-自訂報表檢視資料行 |Microsoft Docs
+title: 自訂報表檢視資料行 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 58d2a7b7c83f1260427ff0d805510e08ae35c019
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edc58c74daf3cdd1e80256f9915936f4cef6d3fa
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329806"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851173"
 ---
 # <a name="how-to-customize-report-view-columns"></a>如何：自訂報表檢視資料行
 Visual Studio Team System Development 版的效能工具已完全整合至整合式開發環境 (Integrated Development Environment，IDE)，可提供流暢的使用者經驗。 下列清單是可透過新增、移除及重新排列資料行來自訂的代表性檢視︰
@@ -56,4 +56,4 @@ Visual Studio Team System Development 版的效能工具已完全整合至整合
 
 4. 按一下箭號按鈕以重新排列資料行。
 
-5. 按一下 [確定] 。
+5. 按一下 [確定]  。

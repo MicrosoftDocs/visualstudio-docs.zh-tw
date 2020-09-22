@@ -13,24 +13,24 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98838f09df3094e16d5f1a18263ffdad603ded0b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440132"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839019"
 ---
 # <a name="adding-and-removing-property-pages"></a>新增和移除屬性頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-專案設計工具提供管理專案屬性、 設定和中的資源的集中式的位置[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 它會顯示為單一視窗中[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]整合式開發環境 (IDE)，並包含在右側窗格，並可透過左側索引標籤的數目。 專案設計工具窗格 （通常稱為屬性頁） 會因專案類型和語言。 專案設計工具可以使用來存取**屬性**命令**專案**功能表。  
+專案設計工具提供集中的位置，以管理中的專案屬性、設定和資源 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。 它會顯示為整合式開發環境中的單一視窗 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (IDE) ，並且在右邊的索引標籤上包含一些可存取的窗格。 在 [專案設計工具] 中， (通常稱為屬性頁) 的窗格會因專案類型和語言而異。 您可以使用 [**專案**] 功能表上的 [**屬性**] 命令來存取專案設計工具。  
   
- 專案子類型經常需要在專案設計工具中顯示其他的屬性頁。 同樣地，某些專案子類型可能需要移除的內建屬性頁。 若要執行其中一項，您的專案子類型必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>介面，並覆寫<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>方法。 藉由覆寫這個方法，並使用`propId`參數，其中包含的其中一個值<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>列舉型別，您可以篩選、 新增或移除專案屬性。 例如，您可能需要將頁面新增至組態相依屬性頁。 若要這樣做，您需要篩選組態相依屬性頁，然後將新的頁面新增至現有的清單。  
+ 專案子類型通常需要在 [專案設計工具] 中顯示其他屬性頁。 同樣地，某些專案子類型可能需要移除內建屬性頁。 若要執行這其中一項，您的專案子類型必須執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 介面並覆寫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> 方法。 藉由覆寫這個方法，並使用 `propId` 包含其中一個列舉值的參數 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> ，您就可以篩選、加入或移除專案屬性。 例如，您可能需要將頁面新增至設定相依的屬性頁。 若要這樣做，您需要篩選與設定相依的屬性頁面，然後將新頁面新增至現有的清單。  
   
-## <a name="adding-and-removing-property-pages-in-project-designer"></a>新增和移除專案設計工具中的 屬性頁  
+## <a name="adding-and-removing-property-pages-in-project-designer"></a>在專案設計工具中加入和移除屬性頁  
   
-#### <a name="to-remove-a-property-page-in-project-designer"></a>若要移除 專案設計工具中的 屬性頁  
+#### <a name="to-remove-a-property-page-in-project-designer"></a>若要在專案設計工具中移除屬性頁  
   
-1. 覆寫`GetProperty(uint itemId, int propId, out object property)`方法來篩選屬性頁面，並取得`clsids`清單。  
+1. 覆寫 `GetProperty(uint itemId, int propId, out object property)` 方法以篩選屬性頁並取得 `clsids` 清單。  
   
     ```vb  
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)  
@@ -75,7 +75,7 @@ ms.locfileid: "63440132"
     }  
     ```  
   
-2. 移除**建置事件**頁面取得`clsids`清單。  
+2. 從取得的清單中移除 [ **建立事件** ] 頁面 `clsids` 。  
   
     ```vb  
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"  
@@ -109,9 +109,9 @@ ms.locfileid: "63440132"
     property = propertyPagesList;  
     ```  
   
-#### <a name="to-add-a-property-page-in-project-designer"></a>專案設計工具中新增的屬性頁  
+#### <a name="to-add-a-property-page-in-project-designer"></a>在專案設計工具中加入屬性頁  
   
-1. 建立您想要新增的屬性頁面。  
+1. 建立您想要加入的屬性頁。  
   
     ```vb  
     Class DeployPropertyPage  
@@ -156,7 +156,7 @@ ms.locfileid: "63440132"
     }  
     ```  
   
-2. 註冊新的屬性頁。  
+2. 註冊您的新屬性頁面。  
   
     ```vb  
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>  
@@ -166,7 +166,7 @@ ms.locfileid: "63440132"
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]  
     ```  
   
-3. 覆寫`GetProperty(uint itemId, int propId, out object property)`方法，以篩選屬性頁，取得`clsids`清單，並加入新的屬性頁。  
+3. 覆寫 `GetProperty(uint itemId, int propId, out object property)` 方法以篩選屬性頁，取得 `clsids` 清單並加入新的屬性頁。  
   
     ```vb  
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer  
@@ -205,7 +205,7 @@ ms.locfileid: "63440132"
     ```  
   
 > [!NOTE]
-> 本主題所提供的所有程式碼範例是較大的範例中，部分[VSSDK 範例](../misc/vssdk-samples.md)。  
+> 本主題所提供的所有程式碼範例都是較大範例 [VSSDK](../misc/vssdk-samples.md)範例的一部分。  
   
 ## <a name="see-also"></a>另請參閱  
  [專案子類型](../extensibility/internals/project-subtypes.md)

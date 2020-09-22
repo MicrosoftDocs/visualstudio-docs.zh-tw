@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：找出記憶體流失 (JavaScript) |Microsoft Docs
+title: 逐步解說：尋找記憶體流失 (JavaScript) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,16 +17,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5617dc6cbe4b7ba096afe1f308d06e7f4aaf9c6a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439654"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838816"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>逐步解說：找出記憶體流失 (JavaScript)
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>逐步解說：尋找記憶體遺漏 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-適用於 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
+適用于 Windows 和 Windows Phone] (。/Image/windows_and_phone_content.png "windows_and_phone_content" )   
   
  本逐步解說將帶領您使用 JavaScript 記憶體分析器找出並修正簡單的記憶體問題。 您可以在 Visual Studio 中使用 JavaScript 記憶體分析器來分析使用 JavaScript 針對 Windows 建置的 Windows 市集應用程式。 在這個案例中，您建立的應用程式在記憶體內以不正確的方式保留 DOM 項目，而不是以這些項目在建立時的相同速度來處理這些項目。  
   
@@ -34,18 +34,18 @@ ms.locfileid: "63439654"
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>執行 JavaScript 記憶體分析器測試應用程式  
   
-1. 在 Visual Studio 中，依序選擇 [檔案]、[新增]、[專案]。  
+1. 在 Visual Studio 中，依序選擇 [檔案]****、[新增]**** 和 [專案]****。  
   
-2. 選擇左窗格中的 [JavaScript]  ，再選擇 [Windows] 、[Windows 8] ，然後選擇 [通用]  或 [Windows Phone 應用程式] 。  
+2. 選擇左窗格中的 [JavaScript] **** ，再選擇 [Windows] ****、[Windows 8] ****，然後選擇 [通用] **** 或 [Windows Phone 應用程式] ****。  
   
     > [!IMPORTANT]
     > 本主題中的記憶體使用量結果是以 Windows 8 應用程式為測試對象。  
   
-3. 在中間窗格選擇 [空白應用程式]  專案範本。  
+3. 在中間窗格選擇 [空白應用程式] **** 專案範本。  
   
-4. 在 [名稱]  方塊中指定名稱 (例如 `JS_Mem_Tester`)，然後選擇 [確定] 。  
+4. 在 [名稱] **** 方塊中指定名稱 (例如 `JS_Mem_Tester`)，然後選擇 [確定] ****。  
   
-5. 在 [方案總管] 中開啟 default.html，然後在 \<body> 標記之間貼上下列程式碼：  
+5. 在 **方案總管**中，開啟 default.html，並在標記之間貼上下列程式碼 \<body> ：  
   
     ```html  
     <div class="wrapper">  
@@ -134,12 +134,12 @@ ms.locfileid: "63439654"
   
 ### <a name="analyzing-the-memory-usage"></a>分析記憶體使用量  
   
-1. 在 [偵錯]  工具列的 [開始偵錯]  清單中，選擇已更新專案的偵錯目標：其中一個 Windows Phone 模擬器或 [模擬器] 。  
+1. 在 [偵錯] **** 工具列的 [開始偵錯] **** 清單中，選擇已更新專案的偵錯目標：其中一個 Windows Phone 模擬器或 [模擬器] ****。  
   
    > [!TIP]
    > 如果是 Windows 市集應用程式，您也可以選擇此清單內的 [ **本機電腦** ] 或 [ **遠端電腦** ]。 但使用模擬器 (emulator 或 simulator) 的優點是，您可以將其置於 Visual Studio 旁邊，方便在執行中的應用程式與 JavaScript 記憶體分析器之間切換。 如需詳細資訊，請參閱[從 Visual Studio 執行應用程式](../debugger/run-store-apps-from-visual-studio.md)及[在遠端電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。  
   
-2. 在 [偵錯] 功能表上選擇 [效能分析工具]。  
+2. 在 [ **調試** ] 功能表上，選擇 [ **效能分析工具**]。  
   
 3. 在 [ **可用的工具**] 中選擇 [ **JavaScript 記憶體**]，然後選擇 [ **開始**]。  
   
@@ -219,12 +219,12 @@ ms.locfileid: "63439654"
   
     - 這個物件是來自快照 #2 的剩餘物件，表示可能發生記憶體流失問題。  
   
-      此時可協助應用程式的一些知識：選擇**Leak Memory**按鈕時應該移除 DIV 元素並加入新元素，因此程式碼似乎不是正常運作 （也就是流失記憶體）。 下一節會說明如何修正這個問題。  
+      這時如果我們了解此應用程式的內容，就會知道選擇 [ **Leak Memory** ] 按鈕時應該要移除 DIV 元素並加入新元素，因此程式碼一定是哪裡出了問題 (遺失了記憶體)。 下一節會說明如何修正這個問題。  
   
     > [!TIP]
     > 在某些情況下，找出與 `Global` 物件有關的物件可能有助於識別該物件。 若要這麼做，請開啟識別項的捷徑功能表，然後選擇 [ **在根檢視中顯示**]。  
   
-## <a name="FixingMemory"></a> 修正記憶體問題  
+## <a name="fixing-the-memory-issue"></a><a name="FixingMemory"></a> 修正記憶體問題  
   
 1. 透過分析工具所呈現的資料，您檢查負責移除 ID 為 "item" 之 DOM 元素的程式碼。 這段程式碼是在 `initialize()` 函式中。  
   
@@ -266,7 +266,7 @@ ms.locfileid: "63439654"
   
 4. 在 [ **可用的工具**] 中選擇 [ **JavaScript 記憶體**]，然後選擇 [ **開始**]。  
   
-5. 遵循相同的程序，擷取三個快照。 這些步驟摘要說明如下：  
+5. 遵循相同的程序，擷取三個快照。 其步驟摘要如下︰  
   
    1. 在應用程式中，連續選擇 [ **Leak Memory** ] 按鈕四次。  
   

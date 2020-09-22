@@ -1,5 +1,5 @@
 ---
-title: 如何-建立當地語系化的啟動載入器套件 |Microsoft Docs
+title: 建立當地語系化的啟動載入器套件 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26858dce9c6484c1b7acb94ad2a7f38fd20447a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c673c6488b93802877ef088d9d9a1a4793cf50b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382558"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852481"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>如何：建立當地語系化啟動載入器套件
 建立啟動載入器套件之後，您可以為每一個地區設定建立另外兩個檔案，藉此建立當地語系化版本的啟動載入器套件：軟體授權條款檔案 (例如 *eula.rtf*) 和套件資訊清單 (*package.xml*)。
@@ -45,7 +45,7 @@ ms.locfileid: "85382558"
 
      下表顯示可用來比對地區設定的資料夾名稱。
 
-    |Locale|資料夾名稱|
+    |地區設定|資料夾名稱|
     |------------|-----------------|
     |簡體中文|zh-Hans|
     |繁體中文|zh-Hant|
