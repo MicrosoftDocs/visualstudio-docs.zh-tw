@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cbddf759841dbe9626868d6c00f42a0849d70520
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406833"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838928"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>選擇 ClickOnce 更新策略
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可提供自動應用程式更新。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式會定期讀取它的部署資訊清單檔，以查看是否有此應用程式的更新可用。 如果有，就會下載及執行應用程式的新版本。 為了提高效率，只有已變更的檔案才會下載。
@@ -34,16 +34,16 @@ ms.locfileid: "63406833"
 > 應用程式更新會需要網路連接。 如果沒有網路連接，不論您所選擇的更新策略為何，應用程式將會執行但不檢查更新。
 
 > [!NOTE]
-> 在.NET Framework 2.0 和.NET Framework 3.0 中，每當您的應用程式檢查更新之前, 或之後啟動，或使用\<system.deployment.application> > Api，您必須設定`deploymentProvider`部署資訊清單中。 `deploymentProvider` 元素相當於 Visual Studio 中，[發行] 索引標籤之 [更新] 對話方塊中的 [更新位置] 欄位。 .NET Framework 3.5 則放寬了此規則。 如需詳細資訊，請參閱 <<c0> [ 部署 ClickOnce 應用程式的測試和實際執行伺服器，而不需要 Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)。
+> 在 .NET Framework 2.0 和 .NET Framework 3.0 中，不論應用程式是隨時檢查更新、在啟動之前或之後檢查更新，或者使用 \<xref:System.Deployment.Application> API 檢查更新，您都必須設定部署資訊清單中的 `deploymentProvider`。 專案會 `deploymentProvider` 在 [**發行**] 索引標籤的 [**更新**] 對話方塊中，對應至 [**更新位置**] 欄位的 Visual Studio。這項規則會在 .NET Framework 3.5 中放寬。 如需詳細資訊，請參閱 [部署 ClickOnce 應用程式以進行測試和實際執行伺服器，而不需](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)進行簽署。
 
-## <a name="check-for-updates-after-application-startup"></a>應用程式啟動後檢查更新
+## <a name="check-for-updates-after-application-startup"></a>在應用程式啟動後檢查更新
  使用此策略時，應用程式會在執行中時，嘗試在背景中尋找及讀取部署資訊清單檔。 如果有可用的更新，下次使用者執行應用程式時，就會收到下載並安裝更新的提示。
 
  這項策略最適合低頻寬網路連接或可能需要冗長下載時間的大型應用程式。
 
- 若要啟用此更新策略，請在 [應用程式更新] 對話方塊的 [選擇應用程式應該於何時檢查更新檔] 區段中，按一下 [應用程式啟動之後]。 接著在 [指定應用程式應該要檢查更新檔的頻率] 區段內指定更新間隔。
+ 若要啟用此更新策略，請在 [應用程式更新]**** 對話方塊的 [選擇應用程式應該於何時檢查更新檔]**** 區段中，按一下 [應用程式啟動之後]****。 接著在 [指定應用程式應該要檢查更新檔的頻率]**** 區段內指定更新間隔。
 
- 這個步驟與在部署資訊清單內變更 [Update] 元素相同，如下所示：
+ 這個步驟與在部署資訊清單內變更 [Update]**** 元素相同，如下所示：
 
 ```xml
 <!-- When to check for updates -->
@@ -54,14 +54,14 @@ ms.locfileid: "63406833"
 </subscription>
 ```
 
-## <a name="check-for-updates-before-application-startup"></a>檢查應用程式啟動前的更新
+## <a name="check-for-updates-before-application-startup"></a>在應用程式啟動之前檢查更新
  預設的策略是在應用程式啟動前，嘗試找出並讀取部署資訊清單檔。 使用此策略時，每次使用者啟動應用程式，應用程式就會嘗試找出並讀取部署資訊清單檔。 如果有更新可用，就會下載並啟動更新。否則，就會啟動現有版本的應用程式。
 
  這項策略最適合高頻寬網路連接，因為在低頻寬連接上啟動應用程式的延遲時間可能會非常久。
 
- 若要啟用此更新策略，請在 [應用程式更新] 對話方塊的 [選擇應用程式應該於何時檢查更新] 區段中，按一下 [在應用程式啟動前]。
+ 若要啟用此更新策略，請在 [應用程式更新]**** 對話方塊的 [選擇應用程式應該於何時檢查更新]**** 區段中，按一下 [在應用程式啟動前]****。
 
- 這個步驟與在部署資訊清單內變更 [Update] 元素相同，如下所示：
+ 這個步驟與在部署資訊清單內變更 [Update]**** 元素相同，如下所示：
 
 ```xml
 <!-- When to check for updates -->
@@ -72,15 +72,15 @@ ms.locfileid: "63406833"
 </subscription>
 ```
 
-## <a name="make-updates-required"></a>讓更新成為必要
+## <a name="make-updates-required"></a>需要進行更新
  有時候，您可能會想要要求使用者執行更新版本的應用程式。 例如，您可能會對外部資源 (例如 Web 服務) 進行變更，進而導致舊版應用程式無法正確運作。 在這種情況下，您就會想要將更新標記為必要，並防止使用者執行舊版。
 
 > [!NOTE]
-> 雖然您可以使用其他更新策略來要求更新，不過選取 [在應用程式啟動前] 選項是保證不會執行舊版的唯一方式。 在啟動時若偵測到強制更新，使用者就必須接受更新或關閉應用程式。
+> 雖然您可以使用其他更新策略來要求更新，不過選取 [在應用程式啟動前]**** 選項是保證不會執行舊版的唯一方式。 在啟動時若偵測到強制更新，使用者就必須接受更新或關閉應用程式。
 
- 若要將更新標記為必要項，請在 [應用程式更新] 對話方塊中按一下 [指定此應用程式的最小必要版本]，然後指定發行版本 (**主要**、**次要**、**建置**、**修訂**)，這樣會指定可安裝應用程式的最低版本號碼。
+ 若要將更新標記為必要項，請在 [應用程式更新]**** 對話方塊中按一下 [指定此應用程式的最小必要版本]****，然後指定發行版本 (**主要**、**次要**、**建置**、**修訂**)，這樣會指定可安裝應用程式的最低版本號碼。
 
- 這項設定與在部署資訊清單中設定 [Deployment] 元素的 **minimumRequiredVersion** 屬性相同，例如：
+ 這項設定與在部署資訊清單中設定 [Deployment]**** 元素的 **minimumRequiredVersion** 屬性相同，例如：
 
 ```xml
 <deployment install="true" minimumRequiredVersion="1.0.0.0">
@@ -89,13 +89,13 @@ ms.locfileid: "63406833"
 ## <a name="specify-update-intervals"></a>指定更新間隔
  您也可以指定應用程式檢查更新的頻率。 若要這樣做，請根據本主題前面「在應用程式啟動後檢查更新」一節所述的方式，將應用程式指定為在啟動後檢查更新。
 
- 若要指定更新間隔，請在 [應用程式更新] 對話方塊中設定**指定應用程式應該要檢查更新檔的頻率**屬性。
+ 若要指定更新間隔，請在 [應用程式更新]**** 對話方塊中設定**指定應用程式應該要檢查更新檔的頻率**屬性。
 
- 這項設定與在部署資訊清單中設定 [Update] 元素的 **maximumAge** 和 **unit** 屬性相同。
+ 這項設定與在部署資訊清單中設定 [Update]**** 元素的 **maximumAge** 和 **unit** 屬性相同。
 
  例如，您可能會想要在應用程式每次執行時檢查、每週檢查一次，或每月檢查一次。 如果在指定的時間沒有網路連接，就會在應用程式下次執行時執行更新檢查。
 
-## <a name="provide-a-user-interface-for-updates"></a>提供使用者介面更新
+## <a name="provide-a-user-interface-for-updates"></a>提供更新的使用者介面
  使用這項策略時，應用程式開發人員就會提供一個使用者介面，以便讓使用者選擇應用程式檢查更新的時間以及頻率。 例如，您可能會提供 [立即檢查更新檔] 命令，或是有不同更新間隔選項的 [更新設定] 對話方塊。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署 API 提供了讓您以程式設計方式自行設計更新使用者介面的架構。 如需詳細資訊，請參閱 <xref:System.Deployment.Application>。
 
  如果應用程式是使用部署 API 來控制它本身的更新邏輯，您應該要封鎖更新檢查，如下一節「封鎖更新檢查」所述。
@@ -105,16 +105,16 @@ ms.locfileid: "63406833"
 ## <a name="block-update-checking"></a>封鎖更新檢查
  您也可以防止應用程式檢查更新。 例如，您可能有一個永遠不會更新的簡單應用程式，但想要利用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署所提供的簡易安裝功能。
 
- 您也應該要封鎖更新檢查，如果您的應用程式會使用部署 Api 來執行它自己的更新;請參閱稍早在本主題中的 「 更新提供的使用者介面 」。
+ 如果您的應用程式使用部署 Api 來執行它自己的更新，您也應該封鎖更新檢查;請參閱本主題稍早的「提供更新的使用者介面」。
 
- 若要禁止更新檢查，請取消選取 [應用程式更新] 對話方塊中的 [應用程式應該檢查更新] 核取方塊。
+ 若要禁止更新檢查，請取消選取 [應用程式更新] 對話方塊中的 [應用程式應該檢查更新]**** 核取方塊。
 
  此外，您也可以從部署資訊清單中移除 `<Subscription>` 標記，藉以封鎖更新檢查。
 
 ## <a name="permission-elevation-and-updates"></a>權限提高和更新
  如果 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的新版本需要使用比舊版本更高的信任層級才能執行，則 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 將會提示使用者，詢問使用者是否要對應用程式授與這個較高的信任層級。 如果使用者拒絕授與較高的信任層級，則不會安裝更新。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 將會在下一次重新啟動時，再次提示使用者安裝此應用程式。 如果使用者在這時拒絕授與較高的信任層級，而且此更新未標記為必要項，則會執行舊版的應用程式。 不過，如果此更新為必要項，則使用者必須接受較高的信任層級之後，才會執行此應用程式。
 
- 如果您使用受信任的應用程式部署，就不會出現授與信任層級的提示。 如需詳細資訊，請參閱[信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)。
+ 如果您使用受信任的應用程式部署，就不會出現授與信任層級的提示。 如需詳細資訊，請參閱 [受信任的應用程式部署總覽](../deployment/trusted-application-deployment-overview.md)。
 
 ## <a name="see-also"></a>另請參閱
  \<xref:System.Deployment.Application>
@@ -122,4 +122,4 @@ ms.locfileid: "63406833"
 - [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 執行應用程式更新的方式](../deployment/how-clickonce-performs-application-updates.md)
-- [如何：管理 ClickOnce 應用程式的更新](../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+- [How to: Manage updates for a ClickOnce application (如何：管理 ClickOnce 應用程式的更新)](../deployment/how-to-manage-updates-for-a-clickonce-application.md)

@@ -13,28 +13,28 @@ caps.latest.revision: 45
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6ac1fd0dc242ae8b8979a3f420f5e1c4d837f62b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405710"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839089"
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>建立可重複使用的按鈕群組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-命令群組是一律會出現在一起的功能表或工具列的命令集合。 將它指派給不同的父功能表.vsct 檔的 CommandPlacements 區段中，可以重複使用任何命令群組。  
+命令群組是命令的集合，這些命令一律會一起出現在功能表或工具列上。 您可以重複使用任何命令群組，方法是在 .vsct 檔案的 CommandPlacements 區段中，將它指派給不同的父功能表。  
   
- 命令群組通常包含按鈕，但也可以包含其他的功能表或下拉式方塊。  
+ 命令群組通常會包含按鈕，但也可以包含其他功能表或下拉式方塊。  
   
-### <a name="to-create-a-reusable-group-of-buttons"></a>若要建立一組可重複使用按鈕  
+### <a name="to-create-a-reusable-group-of-buttons"></a>建立可重複使用的按鈕群組  
   
-1. 建立 VSIX 專案，名為`ReusableButtons`。 如需詳細資訊，請參閱 <<c0> [ 建立具有功能表命令的擴充](../extensibility/creating-an-extension-with-a-menu-command.md)。  
+1. 建立名為的 VSIX 專案 `ReusableButtons` 。 如需詳細資訊，請參閱 [使用功能表命令建立擴充](../extensibility/creating-an-extension-with-a-menu-command.md)功能。  
   
-2. 當專案開啟時，新增名為的自訂命令項目範本**ReusableCommand**。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新項目**。 在 **加入新項目**對話方塊中，移至**Visual C# / 擴充性**，然後選取**自訂命令**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為**ReusableCommand.cs**。  
+2. 當專案開啟時，加入名為 **ReusableCommand**的自訂命令專案範本。 在 [ **方案總管**中，以滑鼠右鍵按一下專案節點，然後選取 [ **加入/新專案**]。 在 [ **加入新專案** ] 對話方塊中，移至 **Visual c #/** 擴充性，然後選取 [ **自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 **ReusableCommand.cs**。  
   
-3. 在.vsct 檔案中，移至的 Symbols 區段，並尋找 GuidSymbol 項目，其中包含群組和專案的命令。 它應該命名為 guidReusableCommandPackageCmdSet。  
+3. 在 .vsct 檔案中，移至 [符號] 區段，並尋找包含專案之群組和命令的 GuidSymbol 元素。 它應該命名為 guidReusableCommandPackageCmdSet。  
   
-4. 新增 IDSymbol 為每個按鈕，您將新增至群組，如下列範例所示。  
+4. 針對您將新增至群組的每個按鈕加入 IDSymbol，如下列範例所示。  
   
     ```xml  
     <GuidSymbol name="guidReusableCommandPackageCmdSet" value="{7f383b2a-c6b9-4c1d-b4b8-a26dc5b60ca1}">  
@@ -44,9 +44,9 @@ ms.locfileid: "63405710"
     </GuidSymbol>  
     ```  
   
-     根據預設，命令項目範本會建立名為的群組**MyGroup**和按鈕所提供，以及每個 IDSymbol 項目名稱。  
+     根據預設，命令專案範本會建立名為 **MyGroup** 的群組，以及具有您所提供之名稱的按鈕，以及每個群組的 IDSymbol 專案。  
   
-5. 在 [群組] 區段中，建立具有指定的 Symbols 區段中的項目相同的 GUID 和 ID 屬性的群組項目。 您也可以使用現有的群組，或使用所提供的命令範本，如下列範例所示的項目。 此群組會出現在**工具**功能表  
+5. 在 [群組] 區段中，建立與 [符號] 區段中指定之 GUID 和 ID 屬性相同的 [群組] 專案。 您也可以使用現有的群組，或使用命令範本所提供的專案，如下列範例所示。 這個群組會顯示在 [ **工具** ] 功能表上  
   
     ```xml  
     <Groups>  
@@ -56,11 +56,11 @@ ms.locfileid: "63405710"
     </Groups>  
     ```  
   
-### <a name="to-create-a-group-of-buttons-for-reuse"></a>若要建立一組以供重複使用的按鈕  
+### <a name="to-create-a-group-of-buttons-for-reuse"></a>建立要重複使用的按鈕群組  
   
-1. 您可以輸入命令或功能表群組中使用群組作為父定義中的命令或功能表上，或藉由使用 CommandPlacements 區段中將命令或功能表放入群組。  
+1. 您可以使用群組做為命令或功能表定義中的父代，或使用 CommandPlacements 區段將命令或功能表放在群組中，藉此將命令或功能表放在群組中。  
   
-     在 [按鈕] 區段中定義具有您的群組，做為其父系的按鈕或使用按鈕所提供的 [套件] 範本中，如下列範例所示。  
+     在 [按鈕] 區段中，定義將群組作為其父系的按鈕，或使用封裝範本所提供的按鈕，如下列範例所示。  
   
     ```xml  
     <Button guid="guidReusableCommandPackageCmdSet" id="ReusableCommandId" priority="0x0100" type="Button">  
@@ -72,7 +72,7 @@ ms.locfileid: "63405710"
     </Button>  
     ```  
   
-2. 如果按鈕必須出現在多個群組，請為其建立項目，在 CommandPlacements 區段中，必須放在命令區段之後。 設定 CommandPlacement 元素，以符合您想要的位置，的按鈕的 GUID 和 ID 屬性，然後設定的 GUID 和 ID，其父項目的其中一個目標群組，如下列範例所示。  
+2. 如果按鈕必須出現在多個群組中，請在 [CommandPlacements] 區段中為它建立一個專案，必須放在命令區段之後。 設定 CommandPlacement 元素的 GUID 和 ID 屬性，使其符合您要放置的按鈕，然後將其父元素的 GUID 和 ID 設定為目標群組的 GUID，如下列範例所示。  
   
     ```xml  
     <CommandPlacements>  
@@ -83,13 +83,13 @@ ms.locfileid: "63405710"
     ```  
   
     > [!NOTE]
-    > [優先順序] 欄位的值會決定新的命令群組中的命令位置。 CommandPlacement 元素會覆寫項目定義中設定中，設定優先順序。 具有較高的優先順序值的命令之前，會顯示具有較低的優先順序值的命令。 允許重複的優先順序值，但無法保證有相同的優先順序值的命令的相對位置，因為順序**devenv /setup**命令會從登錄中建立的最後一個介面可能不一致。  
+    > [優先順序] 欄位的值會決定命令在新的命令群組中的位置。 CommandPlacement 元素中設定的優先順序會覆寫專案定義中的集合。 具有較低優先順序值的命令會在具有較高優先順序值的命令之前顯示。 允許重複的優先順序值，但無法保證具有相同優先權值之命令的相對位置，因為 **devenv/setup** 命令從登錄中建立最終介面的順序可能不一致。  
   
-### <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>若要將一組可重複使用按鈕放在功能表上  
+### <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>在功能表上放置可重複使用的按鈕群組  
   
-1. 建立中的項目`CommandPlacements`一節。 設定的 GUID 和 ID 的`CommandPlacement`您的群組，其中的項目和設定的目標位置的父代 GUID 和 ID。  
+1. 在區段中建立專案 `CommandPlacements` 。 將專案的 GUID 和識別碼設定為群組的 GUID 和識別碼 `CommandPlacement` ，並將父 GUID 和識別碼設定為目標位置的 guid 和識別碼。  
   
-     CommandPlacements 區段應該放置後方命令區段：  
+     CommandPlacements 區段應放置在命令區段之後：  
   
     ```xml  
     <CommandTable>  
@@ -100,9 +100,9 @@ ms.locfileid: "63405710"
     </CommandTable>  
     ```  
   
-     命令群組可以包含一個以上的功能表中。 在父功能表可以是其中一個您所建立的由所提供的其中一個[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]（如中所述 ShellCmdDef.vsct 或 SharedCmdDef.vsct），或在另一個 VSPackage 中定義的其中一個。 父圖層數目沒有限制，只要在父功能表最終會連線到[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]或 VSPackage 所顯示的捷徑功能表。  
+     命令群組可以包含在一個以上的功能表上。 父功能表可以是您建立的父功能表， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (如 ShellCmdDef. .vsct 或 SharedCmdDef. .vsct) 所述，或另一個 VSPackage 中定義的功能表。 如果父功能表最後連接到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 或 VSPackage 所顯示的快捷方式功能表，則不限父系層的數目。  
   
-     下列範例會將群組放**方案總管 中**工具列右邊的 其他 按鈕。  
+     下列範例會將群組放置在 [ **方案總管** ] 工具列上的 [其他] 按鈕的右邊。  
   
     ```xml  
     <CommandPlacements>  

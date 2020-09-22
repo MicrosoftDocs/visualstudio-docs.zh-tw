@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 720f37afbeea3c7440ad2ced9649039d671b1f1c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383401"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838986"
 ---
 # <a name="call-tree-view---sampling-data"></a>呼叫樹狀圖檢視 - 取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,32 +32,32 @@ ms.locfileid: "63383401"
  [呼叫樹狀圖] 檢視中的值，適用於呼叫樹狀圖中父函式所呼叫的函式執行個體。 百分比值的計算方式是比較函式執行個體值與分析執行中的樣本總數。  
   
 ## <a name="highlighting-the-execution-hot-path"></a>反白顯示執行最忙碌路徑  
- [呼叫樹狀圖] 檢視可以展開並反白顯示最常取樣的處理序或函式的執行路徑。 若要顯示最常使用的路徑，請以滑鼠右鍵按一下處理序或函式，然後按一下 [展開最忙碌路徑]。  
+ [呼叫樹狀圖] 檢視可以展開並反白顯示最常取樣的處理序或函式的執行路徑。 若要顯示最常使用的路徑，請以滑鼠右鍵按一下進程或函式，然後按一下 [展開最忙碌 **路徑**]。  
   
 ## <a name="setting-the-call-tree-root-node"></a>設定呼叫樹狀圖根節點  
- 分析執行中的每個處理序都會顯示為根節點。 若要設定 [呼叫樹狀圖] 檢視的開始節點，請以滑鼠右鍵按一下您想要設定為開始節點的節點，然後選取 [設定根目錄]。  
+ 分析執行中的每個處理序都會顯示為根節點。 若要設定 [呼叫樹狀圖] 檢視的開始節點，請以滑鼠右鍵按一下您想要設定為開始節點的節點，然後選取 [設定根目錄]****。  
   
- 設定根節點時，除了所選取節點的樹狀子目錄以外，請從檢視中排除所有其他的項目。 若要將根節點重設回原始節點，請在 [呼叫樹狀圖檢視] 視窗上按一下滑鼠右鍵，然後選取 [重設根目錄]。  
+ 設定根節點時，除了所選取節點的樹狀子目錄以外，請從檢視中排除所有其他的項目。 若要將根節點重設回原始節點，請在 [呼叫樹狀圖檢視] 視窗上按一下滑鼠右鍵，然後選取 [重設根目錄]****。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
-|**處理序 ID**|分析執行的處理序 ID (PID)。|  
-|**處理序名稱**|處理序的名稱。|  
+|**處理序識別碼**|分析執行的處理序 ID (PID)。|  
+|**進程名稱**|處理序的名稱。|  
 |**模組名稱**|包含該函式的模組名稱。|  
 |**模組路徑**|包含該函式的模組路徑。|  
-|**原始程式檔**|含有這個函式定義的原始程式檔。|  
-|**函式名稱**|函式的完整格式名稱。|  
+|**來源檔案**|含有這個函式定義的原始程式檔。|  
+|**函數名稱**|函式的完整格式名稱。|  
 |**函式行號**|原始程式檔中這個函式的開頭行號。|  
-|**函式位址**|函式的位址。|  
-|**層級**|此函式在呼叫樹狀圖中的深度。 只存在於 [VSPerfReport](../profiling/vsperfreport.md) 命令列報表中。|  
+|**函數位址**|函式的位址。|  
+|**Level**|此函式在呼叫樹狀圖中的深度。 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|  
 |**專有樣本**|在呼叫樹狀圖中父函式呼叫此函式時，在此函式中所收集的樣本數目。 此數目不包含在此函式所呼叫之函式中所收集的樣本。|  
 |**專有樣本 %**|在呼叫樹狀圖中父函式呼叫此函式時，屬於此函式之專有樣本佔分析執行中所有樣本的百分比。|  
 |**內含樣本**|在呼叫樹狀圖中父函式呼叫此函式時，在此函式中所收集的樣本數目。 此數目包含在此函式所呼叫之函式中所收集的樣本。|  
 |**內含樣本 %**|在呼叫樹狀圖中父函式呼叫此函式時，屬於此函式之內含樣本佔分析執行中所有樣本的百分比。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
- [呼叫樹狀圖檢視 - 分析工具取樣資料](../profiling/call-tree-view-sampling-data.md)   
- [呼叫樹狀圖檢視 - 取樣](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
- [呼叫樹狀圖檢視 - 檢測](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
- [呼叫樹狀圖檢視](../profiling/call-tree-view-instrumentation-data.md)
+ [呼叫樹狀檢視-分析工具取樣資料](../profiling/call-tree-view-sampling-data.md)   
+ [呼叫樹狀檢視-取樣](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
+ [呼叫樹狀檢視-檢測](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
+ [呼叫樹狀圖檢閱](../profiling/call-tree-view-instrumentation-data.md)

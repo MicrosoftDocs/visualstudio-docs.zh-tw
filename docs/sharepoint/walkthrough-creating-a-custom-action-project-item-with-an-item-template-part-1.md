@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eccb9038b9fd929c713422aa79082c94ade512fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5b19f99cf9688191a5b6ef8ba8d4f58f4c6633c
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015936"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739937"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>逐步解說：使用專案範本建立自訂動作專案專案（第1部分）
   您可以藉由建立自己的專案專案類型，在 Visual Studio 中擴充 SharePoint 專案系統。 在這個逐步解說中，您將建立可加入至 SharePoint 專案的專案專案，以在 SharePoint 網站上建立自訂動作。 自訂動作會將功能表項目加入至 SharePoint 網站的 [ **網站動作** ] 功能表。
@@ -46,7 +46,7 @@ ms.locfileid: "86015936"
 > [!NOTE]
 > 您可以從 [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) 下載範例，以示範如何建立工作流程的自訂活動。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
  您需要在開發電腦上執行下列元件，才能完成此逐步解說：
 
 - 支援的 Microsoft Windows、SharePoint 和 Visual Studio 版本。
@@ -295,7 +295,7 @@ ms.locfileid: "86015936"
 
 1. 在 **方案總管**中，開啟 CustomActionProjectItem 專案中 **extension.vsixmanifest** 檔案的快捷方式功能表，然後選擇 [ **開啟**]。
 
-     Visual Studio 在資訊清單編輯器中開啟檔案。 Extension.vsixmanifest 檔案是所有 VSIX 封裝所需的 extension.vsixmanifest 檔案基礎。 如需此檔案的詳細資訊，請參閱 [VSIX 延伸架構1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。
+     Visual Studio 在資訊清單編輯器中開啟檔案。 Extension.vsixmanifest 檔案是所有 VSIX 封裝所需的 extension.vsixmanifest 檔案基礎。 如需此檔案的詳細資訊，請參閱 [VSIX 延伸架構1.0 參考](/previous-versions/dd393700(v=vs.110))。
 
 2. 在 [ **產品名稱** ] 方塊中，輸入 **自訂動作專案**專案。
 

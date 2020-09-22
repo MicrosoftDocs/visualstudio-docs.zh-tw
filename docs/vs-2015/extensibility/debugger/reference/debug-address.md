@@ -1,5 +1,5 @@
 ---
-title: DEBUG_ADDRESS | Microsoft Docs
+title: DEBUG_ADDRESS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d001d29433573fedde3b4310f989667538b4b69c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444966"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839136"
 ---
-# <a name="debugaddress"></a>DEBUG_ADDRESS
+# <a name="debug_address"></a>DEBUG_ADDRESS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此結構代表地址。  
+此結構代表位址。  
   
 ## <a name="syntax"></a>語法  
   
@@ -52,20 +52,20 @@ public struct DEBUG_ADDRESS {
  包含此位址之模組的 GUID。  
   
  tokClass  
- 語彙基元，可識別的類別或此位址的類型。  
+ 識別此位址之類別或類型的權杖。  
   
 > [!NOTE]
-> 這個值是特定符號提供者也因此而不做為類別類型的識別項的一般意義。  
+> 這個值是符號提供者特有的值，因此除了做為類別類型的識別碼之外，並沒有一般意義。  
   
  addr  
- A [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構，其中包含可描述個別地址類型結構的聯集。 值`addr`。`dwKind` 來自[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別，其中說明如何解譯聯集。  
+ [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構，其中包含描述個別網址類別型的結構聯集。 值 `addr` 。`dwKind` 來自 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 列舉，其說明如何解讀等位。  
   
 ## <a name="remarks"></a>備註  
- 此結構會傳遞至[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)来填入的方法。  
+ 此結構會傳遞至要填入的 [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) 方法。  
   
- **警告 [C++只]**  
+ **警告 [僅限 c + +]**  
   
- 如果`addr.dwKind`已`ADDRESS_KIND_METADATA_LOCAL`如果`addr.addr.addrLocal.pLocal`不是 null 的值，則您必須呼叫`Release`語彙基元的指標：  
+ 如果 `addr.dwKind` 為， `ADDRESS_KIND_METADATA_LOCAL` 而且如果不是 `addr.addr.addrLocal.pLocal` null 值，則您必須 `Release` 在 token 指標上呼叫：  
   
 ```  
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal != NULL)  
@@ -75,11 +75,11 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal !=
 ```  
   
 ## <a name="requirements"></a>需求  
- 標頭： sh.h  
+ 標頭： sh. h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

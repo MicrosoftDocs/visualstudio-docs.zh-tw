@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7f3fd2895b0a10d04cded23af5e5953e7a1a340f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64824047"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839143"
 ---
-# <a name="idiasymbolgetarrayindextype"></a>IDiaSymbol::get_arrayIndexType
+# <a name="idiasymbolget_arrayindextype"></a>IDiaSymbol::get_arrayIndexType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取之型別的陣列索引符號的符號介面。  
+抓取符號的陣列索引類型的符號介面。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,23 +35,23 @@ HRESULT get_arrayIndexType ( 
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示符號的陣列索引型別。  
+ 擴展傳回 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件，這個物件表示符號的陣列索引類型。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功， `S_OK` 則傳回; 否則傳回 `S_FALSE` 錯誤碼。  
   
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。  
   
 ## <a name="remarks"></a>備註  
- 某些語言，可以指定為陣列的索引所使用的類型。 從這個方法傳回的符號指定該型別。  
+ 某些語言可以指定用來做為陣列索引的型別。 從這個方法傳回的符號會指定該型別。  
   
 ## <a name="requirements"></a>需求  
   
 |需求|描述|  
 |-----------------|-----------------|  
-|標頭：|dia2.h|  
-|版本:|DIA SDK v7.0|  
+|標頭：|dia2。h|  
+|版本：|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

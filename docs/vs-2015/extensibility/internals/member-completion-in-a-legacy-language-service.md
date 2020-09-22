@@ -1,5 +1,5 @@
 ---
-title: 舊版語言服務中的成員自動完成 |Microsoft Docs
+title: 舊版語言服務中的成員完成 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,53 +13,53 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 93182d61b6ecf5bf22ea7117bf8ccfd17e2acd1a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437917"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838992"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>舊版語言服務中的成員完成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-IntelliSense 成員自動完成會顯示一份可能的成員，例如類別、 結構、 列舉型別或命名空間的特定範圍的工具提示。 比方說，在 C# 中，如果使用者輸入"this"，後面接著句號，類別或結構，在目前的範圍內的所有成員的清單會顯示使用者可以從中選取的清單中。  
+IntelliSense 成員完成是一種工具提示，會顯示特定範圍的可能成員清單，例如類別、結構、列舉或命名空間。 例如，在 c # 中，如果使用者輸入 "this"，後面接著句點，則在目前範圍的類別或結構的所有成員清單都會顯示在使用者可以選取的清單中。  
   
- Managed 的 package framework (MPF) 提供的工具提示和支援管理工具提示; 中的清單它只需要為合作提供出現在清單中的資料剖析器。  
+ 受控封裝架構 (MPF) 提供工具提示的支援，以及管理工具提示中的清單;所需的一切都是從剖析器進行合作，以提供清單中顯示的資料。  
   
- 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解，請參閱[擴充編輯器和語言服務](../../extensibility/extending-the-editor-and-language-services.md)。  
+ 舊版語言服務會實作為 VSPackage 的一部分，但是執行語言服務功能的較新方法是使用 MEF 延伸模組。 若要深入瞭解，請參閱 [擴充編輯器和語言服務](../../extensibility/extending-the-editor-and-language-services.md)。  
   
 > [!NOTE]
-> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
+> 建議您儘快開始使用新的編輯器 API。 這可改善您的語言服務效能，並讓您利用新的編輯器功能。  
   
-## <a name="how-it-works"></a>它的運作方式  
- 以下是在其成員的清單會顯示使用 MPF 類別的兩種方法：  
+## <a name="how-it-works"></a>運作方式  
+ 以下是使用 MPF 類別顯示成員清單的兩種方式：  
   
-- 定位在的識別項或成員完成字元之後的插入號，然後選取**列出成員**從**IntelliSense**功能表。  
+- 將插入號放在識別碼上或在成員完成字元之後，然後從 [ **IntelliSense** ] 功能表中選取 [**列出成員**]。  
   
-- <xref:Microsoft.VisualStudio.Package.IScanner>掃描器會偵測成員完成字元，並設定語彙基元的觸發程序的<xref:Microsoft.VisualStudio.Package.TokenTriggers>該字元。  
+- <xref:Microsoft.VisualStudio.Package.IScanner>掃描器會偵測成員完成字元，並針對該字元設定的 token 觸發程式 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 。  
   
-  成員完成字元表示的類別、 結構或列舉成員遵循。 例如，在C#或 Visual Basic 的成員完成字元`.`，當您在C++的字元是其中一個`.`或`->`。 成員選取字元會掃描時，會設定觸發程序的值。  
+  成員完成字元表示要遵循類別、結構或列舉的成員。 例如，在 c # 或 Visual Basic 成員完成字元是 `.` ，而在 c + + 中，字元是 `.` 或 `->` 。 掃描成員 select 字元時，會設定觸發程式值。  
   
-### <a name="the-intellisense-member-list-command"></a>IntelliSense 成員 List 命令  
- <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>命令會起始呼叫<xref:Microsoft.VisualStudio.Package.Source.Completion%2A>方法<xref:Microsoft.VisualStudio.Package.Source>類別和<xref:Microsoft.VisualStudio.Package.Source.Completion%2A>方法，轉而呼叫<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法的剖析器，剖析原因為<xref:Microsoft.VisualStudio.Package.ParseReason>。  
+### <a name="the-intellisense-member-list-command"></a>IntelliSense 成員清單命令  
+ 此 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 命令會起始對類別的 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 方法呼叫， <xref:Microsoft.VisualStudio.Package.Source> 而方法則會 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 呼叫方法剖析器，並 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 剖析原因為 <xref:Microsoft.VisualStudio.Package.ParseReason> 。  
   
- 剖析器會判斷目前的位置，以及在或之前的目前位置的權杖內容。 根據這個語彙基元，會顯示宣告的清單。 例如，在 C# 中，如果您放置在類別成員，然後選取插入號**列出成員**，取得一份類別的所有成員。 如果您插入號後面的物件變數的句點之後，您會取得一份類別的物件所代表的所有成員。 請注意，是否插入號位於成員顯示成員清單時，從清單中選取成員會取代插入號位於與清單中的成員。  
+ 剖析器會判斷目前位置的內容，以及目前位置或正下方或立即的標記。 根據此標記，會顯示宣告清單。 例如，在 c # 中，如果您將插入號放在類別成員上，然後選取 [ **清單成員**]，則會取得類別的所有成員清單。 如果您將插入號放在物件變數後面的句號之後，您會取得物件所代表之類別的所有成員清單。 請注意，當顯示成員清單時，如果插入號位於成員上，則從清單中選取成員時，會將插入號所在的成員取代為清單中的成員。  
   
-### <a name="the-token-trigger"></a>語彙基元的觸發程序  
- <xref:Microsoft.VisualStudio.Package.TokenTriggers>觸發程序開始呼叫<xref:Microsoft.VisualStudio.Package.Source.Completion%2A>方法<xref:Microsoft.VisualStudio.Package.Source>類別和<xref:Microsoft.VisualStudio.Package.Source.Completion%2A>方法，再轉而呼叫的剖析器，剖析原因為<xref:Microsoft.VisualStudio.Package.ParseReason>(如果語彙基元的觸發程序也包含<xref:Microsoft.VisualStudio.Package.TokenTriggers>旗標，剖析的原因是<xref:Microsoft.VisualStudio.Package.ParseReason>合併成員選取和大括號反白顯示)。  
+### <a name="the-token-trigger"></a>Token 觸發程式  
+ <xref:Microsoft.VisualStudio.Package.TokenTriggers>觸發程式會起始對類別的 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 方法呼叫， <xref:Microsoft.VisualStudio.Package.Source> 而此 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 方法會呼叫剖析器，並剖析原因為 <xref:Microsoft.VisualStudio.Package.ParseReason> (如果 token 觸發程式也包含 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 旗標，則剖析原因會 <xref:Microsoft.VisualStudio.Package.ParseReason> 結合成員選取和大括弧醒目提示的) 。  
   
- 剖析器會判斷目前的內容以及成員選取字元之前具有已輸入的位置。 這項資訊，剖析器會建立一份要求的範圍中的所有成員。 這份清單的宣告會儲存在<xref:Microsoft.VisualStudio.Package.AuthoringScope>會從傳回的物件<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法。 如果未傳回任何宣告，成員完成會顯示工具提示。 執行個體所管理的工具提示<xref:Microsoft.VisualStudio.Package.CompletionSet>類別。  
+ 剖析器會判斷目前位置的內容，以及在成員選取字元之前輸入的內容。 在這項資訊中，剖析器會建立所要求範圍之所有成員的清單。 這份宣告清單儲存在方法所 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 傳回的物件中 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 。 如果傳回任何宣告，則會顯示成員完成工具提示。 工具提示是由類別的實例所管理 <xref:Microsoft.VisualStudio.Package.CompletionSet> 。  
   
-## <a name="enabling-support-for-member-completion"></a>啟用成員自動完成的支援  
- 您必須擁有`CodeSense`能夠支援所有 IntelliSense 作業設定為 1 的登錄項目。 此登錄項目可以設定使用具名參數，傳遞至<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>語言套件相關聯的使用者屬性。 語言服務類別讀取此登錄項目的值從<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A>屬性上的<xref:Microsoft.VisualStudio.Package.LanguagePreferences>類別。  
+## <a name="enabling-support-for-member-completion"></a>啟用成員完成的支援  
+ 您必須 `CodeSense` 將登錄專案設定為1，才能支援任何 IntelliSense 作業。 您可以使用傳遞至 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 與語言套件相關聯之使用者屬性的具名引數來設定這個登錄專案。 語言服務類別會從類別上的屬性讀取這個登錄專案的值 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 。  
   
- 如果您的掃描器傳回的語彙基元的觸發程序<xref:Microsoft.VisualStudio.Package.TokenTriggers>，和您剖析器會傳回一份宣告，則成員完成清單隨即顯示。  
+ 如果您的掃描器傳回的 token 觸發程式，而您的剖析器傳回宣告 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 清單，則會顯示成員完成清單。  
   
-## <a name="supporting-member-completion-in-the-scanner"></a>在掃描器上的支援成員自動完成  
- 掃描器必須能夠偵測成員完成字元，並設定的語彙基元的觸發程序<xref:Microsoft.VisualStudio.Package.TokenTriggers>剖析該字元時。  
+## <a name="supporting-member-completion-in-the-scanner"></a>在掃描器中支援成員完成  
+ 掃描器必須能夠偵測成員完成字元，並設定剖析該字元時的 token 觸發程式 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 。  
   
 ### <a name="example"></a>範例  
- 以下是偵測成員完成字元，並設定適當的簡化的範例<xref:Microsoft.VisualStudio.Package.TokenTriggers>旗標。 這個範例是僅供示範用途。 它會假設您的掃描器，包含方法`GetNextToken`的識別，並從文字行，傳回權杖。 範例程式碼只需設定觸發程序，每當它看見正確類型的字元。  
+ 以下是一個簡單的範例，說明如何偵測成員完成字元並設定適當的 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 旗標。 此範例僅供說明之用。 它會假設您的掃描器包含一個方法 `GetNextToken` ，該方法會從文字行識別並傳回權杖。 範例程式碼只會在它看到正確種類的字元時，設定觸發程式。  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -92,15 +92,15 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="supporting-member-completion-in-the-parser"></a>剖析器中支援的成員自動完成  
- 成員自動完成，如<xref:Microsoft.VisualStudio.Package.Source>類別會呼叫<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>方法。 您必須從衍生類別中實作清單<xref:Microsoft.VisualStudio.Package.Declarations>類別。 請參閱<xref:Microsoft.VisualStudio.Package.Declarations>如需詳細資訊，您必須實作的方法相關的類別。  
+## <a name="supporting-member-completion-in-the-parser"></a>解析程式中的支援成員完成  
+ 成員完成時， <xref:Microsoft.VisualStudio.Package.Source> 類別會呼叫 <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> 方法。 您必須在衍生自類別的類別中執行清單 <xref:Microsoft.VisualStudio.Package.Declarations> 。 <xref:Microsoft.VisualStudio.Package.Declarations>如需您必須執行之方法的詳細資訊，請參閱類別。  
   
- 剖析器會呼叫具有<xref:Microsoft.VisualStudio.Package.ParseReason>或<xref:Microsoft.VisualStudio.Package.ParseReason>成員選取的字元型別。 指定的位置<xref:Microsoft.VisualStudio.Package.ParseRequest>物件會立即在成員選取字元之後。 剖析器必須收集可以出現在該特定的時間點的原始碼在成員清單中的所有成員的名稱。 然後，剖析器必須剖析目前這一行來判斷使用者想要的成員選取字元相關聯的範圍。  
+ <xref:Microsoft.VisualStudio.Package.ParseReason> <xref:Microsoft.VisualStudio.Package.ParseReason> 當成員選取字元具類型時，會呼叫剖析器。 物件中提供的位置 <xref:Microsoft.VisualStudio.Package.ParseRequest> 緊接在成員選取字元之後。 剖析器必須收集所有成員的名稱，這些成員可出現在原始程式碼中該特定點的成員清單中。 然後剖析器必須剖析目前的行，以判斷使用者想要與成員選取字元相關聯的範圍。  
   
- 成員選取字元之前，此範圍根據識別項型別。 例如，在 C# 中，指定的成員變數`languageService`具有一種`LanguageService`、 輸入**languageService。** 產生的所有成員的清單`LanguageService`類別。 也在 C# 中，輸入**這。** 會產生一份目前範圍中之類別的所有成員。  
+ 此範圍是以成員選取字元之前的識別碼類型為基礎。 例如，在 c # 中，假設 `languageService` 具有類型的成員變數，則 `LanguageService` 輸入 **languageService。** 產生類別的所有成員清單 `LanguageService` 。 另外，在 c # 中輸入 **此。** 產生目前範圍中類別的所有成員清單。  
   
 ### <a name="example"></a>範例  
- 下列範例示範一種方式填入<xref:Microsoft.VisualStudio.Package.Declarations>清單。 此程式碼假設剖析器建構宣告，並將它新增至清單中，藉由呼叫`AddDeclaration`方法`TestAuthoringScope`類別。  
+ 下列範例示範一種填入清單的方法 <xref:Microsoft.VisualStudio.Package.Declarations> 。 這段程式碼假設剖析器會藉由呼叫類別上的方法，來建立宣告並將其加入至清單 `AddDeclaration` `TestAuthoringScope` 。  
   
 ```csharp  
 using System.Collections;  

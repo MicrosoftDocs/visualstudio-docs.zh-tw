@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6b53fb34b3cff444e57491f878f8385bdb523c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1269049adad3fe2d26caa79721452f7f313e60d5
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285045"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739898"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>管理 Visual Studio 中的 npm 套件
 
@@ -40,9 +40,9 @@ Visual Studio 與 npm 的整合會根據您的專案類型而有所不同。
 
 這些功能會一起運作，並與專案系統和專案中的 package.json** 檔案同步處理。
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>Prerequisites
 
-您需要安裝 **Node.js 開發** 工作負載及 Node.js 執行時間，才能將 npm 支援新增至您的專案。 如需詳細步驟，請參閱 [建立 Node.js 專案](/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json)。
+您需要安裝 **Node.js 開發** 工作負載及 Node.js 執行時間，才能將 npm 支援新增至您的專案。 如需詳細步驟，請參閱 [建立 Node.js 專案](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json)。
 
 > [!NOTE]
 > 針對現有的 Node.js 專案，請使用 [ **從現有的 Node.js 程式碼** ] 方案範本或 [ [開啟資料夾] ( # A2) ](../javascript/develop-javascript-code-without-solutions-projects.md) 專案類型，在您的專案中啟用 npm。
@@ -86,7 +86,7 @@ npm 套件會顯示在 [方案總管] 中。 **npm** 節點下的項目會模擬
 
 * **安裝新的 Npm 套件** 開啟 UI 以安裝新的套件。
 * **安裝 Npm 套件** 執行 npm install 命令，以安裝 *package.js*中列出的所有套件。  (執行 `npm install` 。 ) 
-* **更新 Npm 套件** 根據 *package.js*中指定的 semver 範圍，將封裝更新至最新版本。  (執行 `npm update --save` 。 ) 。 Semver 範圍通常是使用 "~" 或 "^" 來指定。 如需詳細資訊，請 [package.js](../javascript/configure-packages-with-package-json.md)設定。
+* **更新 Npm 套件** 根據 *package.json*中指定 (semver) 範圍的語義版本設定，將封裝更新為最新版本。  (執行 `npm update --save` 。 ) 。 Semver 範圍通常是使用 "~" 或 "^" 來指定。 如需詳細資訊，請 [package.js](../javascript/configure-packages-with-package-json.md)設定。
 
 以滑鼠右鍵按一下封裝節點，執行下列其中一個動作：
 
@@ -126,7 +126,7 @@ npm 套件會顯示在 [方案總管] 中。 **npm** 節點下的項目會模擬
 * [使用 package.js安裝套件](#npmInstallPackage)
 
 >[!NOTE]
-> 針對 ASP.NET Core 專案，您也可以使用連結 [庫管理員](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1) 或 yarn 而不是 npm 來安裝用戶端 JAVASCRIPT 和 CSS 檔案。
+> 針對 ASP.NET Core 專案，您也可以使用連結 [庫管理員](/aspnet/core/client-side/libman/?view=aspnetcore-3.1) 或 yarn 而不是 npm 來安裝用戶端 JAVASCRIPT 和 CSS 檔案。
 
 ### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a> 將 npm 支援新增至專案 (ASP.NET Core) 
 
@@ -181,4 +181,3 @@ npm 套件會顯示在 [方案總管] 中。 **npm** 節點下的項目會模擬
 * 在某些情況下，方案總管可能不會顯示已安裝 npm 套件的正確狀態，因為 [這裡](https://github.com/aspnet/Tooling/issues/479)有已知的問題。 例如，封裝可能會在安裝時顯示為未安裝。 在大部分的情況下，您可以刪除 *package.js*、重新開機 Visual Studio，然後重新新增 *package.js* 檔案，以更新方案總管，如本文稍早所述。 或者，在安裝封裝時，您可以使用 [npm 輸出] 視窗來確認安裝狀態。
 
 * 如果您在建立應用程式或轉譯 TypeScript 程式碼時看到任何錯誤，請檢查 npm 套件不相容是否為可能的錯誤來源。 如本文先前所述，若要協助識別錯誤，請在安裝套件時檢查 [npm 輸出] 視窗。 例如，如果有一或多個 npm 套件版本已被取代，而導致錯誤，您可能需要安裝較新的版本來修正錯誤。 如需使用 *package.json*控制 npm 套件版本的資訊，請參閱 [package.json 組態](../javascript/configure-packages-with-package-json.md)。
-

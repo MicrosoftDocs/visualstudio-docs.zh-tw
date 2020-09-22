@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bc0e139644a0b3df29109c1543140e57c5378f31
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444007"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838888"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Windows 事件追蹤 (ETW) 報告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ Windows 事件追蹤 (ETW) 報表會列出 [!INCLUDE[vsprvs](../includes/vsprvs-
 > [!NOTE]
 > 您無法在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 介面中顯示 ETW 報表。  
   
-- 如需如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 介面中的分析工具來收集 ETW 的資訊，請參閱[如何：Windows (ETW) 資料收集事件追蹤](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)。  
+- 如需如何流量分析工具 from 介面收集 ETW 的詳細資訊 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，請參閱 [如何：收集 Windows 事件追蹤 (Etw) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)。  
   
 - 如需如何使用 [VSPerfCmd](../profiling/vsperfcmd.md) 命令列工具收集 ETW 資料的資訊，請參閱[資料](../profiling/events-vsperfcmd.md)。  
   
-- 您可以使用 **VSReport/Summary:ETW** 命令來產生 ETW 報表。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。  
+- 您可以使用 **>vsreport/Summary： etw** 命令來產生 etw 報告。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。  
   
 |資料行|描述|  
 |------------|-----------------|  
-|**時間戳記**|識別事件發生的時間。|  
-|**處理序 ID**|識別已產生事件的處理序。|  
-|**執行緒 ID**|識別已產生事件的執行緒。|  
+|**Timestamp**|識別事件發生的時間。|  
+|**處理序識別碼**|識別已產生事件的處理序。|  
+|**執行緒識別碼**|識別已產生事件的執行緒。|  
 |**描述**|識別事件提供者。|  
-|**Type**|識別事件類型。|  
+|**型別**|識別事件類型。|  
 |**屬性**|事件的屬性。 每個事件都是以中括弧括住的名稱/值組 (以逗點分隔)。|

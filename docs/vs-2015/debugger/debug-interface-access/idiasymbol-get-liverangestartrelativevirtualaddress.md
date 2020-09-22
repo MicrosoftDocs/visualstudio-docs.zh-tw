@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3dc0c42fe5dd5bc99e806ffbc20f42aa897d4c22
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64824929"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839154"
 ---
-# <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
+# <a name="idiasymbolget_liverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-傳回本機符號無效的位址範圍的開頭。  
+傳回本機符號有效之位址範圍的開頭。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,10 +35,10 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
   
 #### <a name="parameters"></a>參數  
  `address`  
- [out]傳回的位址範圍開頭。  
+ 擴展傳回位址範圍的開頭。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回相對虛擬位址是符號無效範圍的開頭。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。 傳回的相對虛擬位址是符號有效的範圍開頭。  
   
 > [!NOTE]
 > 傳回的錯誤碼表示符號沒有即時範圍資訊。  
@@ -46,11 +46,11 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
 ## <a name="remarks"></a>備註  
   
 ## <a name="requirements"></a>需求  
- 標頭：dia2.h  
+ 標頭： Dia2。h  
   
- 程式庫： diaguids.lib  
+ 程式庫： diaguids .lib  
   
- DLL: msdia100.dll  
+ DLL： msdia100.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

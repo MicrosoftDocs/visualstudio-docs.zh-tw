@@ -1,36 +1,38 @@
 ---
-title: 實驗執行個體 |Microsoft Docs
-ms.date: 11/04/2016
+title: 實驗實例 |Microsoft Docs
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - experimental builds
 - VSPackages, experimental builds
 - VSIP, experimental builds
 ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
-author: gregvanl
+caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: ee3c1ef0aed082a0e4e0fb519c744fda376fc8e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430135"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838861"
 ---
 # <a name="the-experimental-instance"></a>實驗執行個體
-為了確保您的 Visual Studio 開發環境，從未經測試的應用程式可能會變更，請 VSSDK 提供實驗性的空間，可供您實驗。 像往常一樣，使用 Visual Studio 開發新的應用程式，但您使用此實驗的執行個體執行。
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
- VSIX 封裝每個應用程式會啟動偵錯模式中的 Visual Studio 實驗執行個體。
-
- 如果您想要開始在特定的方案之外的 Visual Studio 實驗執行個體，請在命令視窗執行下列命令：
-
- "*\<Visual studio installation path>* \Common7\IDE\devenv.exe" /RootSuffix Exp
-
+為了保護您的 Visual Studio 開發環境免于可能變更的未測試應用程式，VSSDK 提供了實驗性的空間，讓您可以用來進行實驗。 您可以像往常一樣使用 Visual Studio 來開發新的應用程式，但您可以使用此實驗性實例來執行這些應用程式。  
+  
+ 具有 VSIX 封裝的每個應用程式會在「偵錯工具」模式中啟動 Visual Studio 實驗實例。  
+  
+ 如果您想要在特定解決方案之外啟動 Visual Studio 的實驗性實例，請在命令視窗中執行下列命令：  
+  
+ " *\<Visual studio installation path>* \Common7\IDE\devenv.exe"/RootSuffix Exp  
+  
 > [!NOTE]
-> 實驗性的執行個體底下的登錄寫入`<version number>Exp`和`<version number>Exp_Config`節點。 例如 Visual Studio 2015 實驗登錄區是
->
-> `HKCU\Software\Microsoft\VisualStudio\14.0Exp` 和 `HKCU\Software\Microsoft\VisualStudio\14.0Exp_Config`
-
- 我們建議您在實驗執行個體中執行您的延伸模組，在開發過程。 當您部署延伸模組時，它會在開發執行個體中執行。 如需有關如何註冊應用程式的詳細資訊，請參閱 <<c0> [ 註冊 Vspackage](../extensibility/internals/registering-vspackages.md)。
+> 實驗實例會寫入至和節點下的登錄 `<version number>Exp` `<version number>Exp_Config` 。 例如，Visual Studio 2015 實驗登錄區是  
+>   
+> `HKCU\Software\Microsoft\VisualStudio\14.0Exp` 和 `HKCU\Software\Microsoft\VisualStudio\14.0Exp_Config`  
+  
+ 建議您在開發時，于實驗實例中執行您的擴充功能。 當您部署擴充功能時，它會在開發實例中執行。 如需註冊應用程式的詳細資訊，請參閱 [註冊 vspackage](../extensibility/internals/registering-vspackages.md)。

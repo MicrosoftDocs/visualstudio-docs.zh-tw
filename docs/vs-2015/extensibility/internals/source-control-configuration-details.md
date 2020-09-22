@@ -1,5 +1,5 @@
 ---
-title: 原始檔控制設定的詳細資訊 |Microsoft Docs
+title: 原始檔控制設定詳細資料 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,46 +11,46 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5faa0ce575647038ac5ac7839b6dc066b7b51ce6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432059"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839126"
 ---
 # <a name="source-control-configuration-details"></a>原始檔控制組態的詳細資料
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-若要實作原始檔控制，您需要適當地設定您的專案系統或編輯器來執行下列作業：  
+若要執行原始檔控制，您需要適當地設定您的專案系統或編輯器，以執行下列動作：  
   
-- 要求轉換至已變更狀態的權限  
+- 要求轉換為變更狀態的許可權  
   
-- 權限，才能儲存檔案  
+- 要求儲存檔案的許可權  
   
-- 要求權限來新增、 移除或重新命名專案中的檔案  
+- 在專案中加入、移除或重新命名檔案的要求許可權  
   
-## <a name="request-permission-to-transition-to-changed-state"></a>要求轉換至已變更狀態的權限  
- 專案或編輯器必須藉由呼叫要求轉換至已變更 (dirty) 狀態的權限<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>。 實作每個編輯器<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>必須呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>收發核准才可從環境中變更文件，再傳回`True`如`M:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty(System.Int32@)`。 此專案是本質上的專案檔中，編輯器，並如此一來，已實作之專案檔的狀態變更追蹤，其檔案的文字編輯器一樣的相同責任。 環境會處理已變更的狀態的解決方案，但您必須處理的任何物件參考解決方案，但不會儲存，例如專案檔或其項目已變更的狀態。 一般情況下，如果您的專案或編輯器是負責管理持續性的項目，然後它會負責實作已變更狀態的追蹤。  
+## <a name="request-permission-to-transition-to-changed-state"></a>要求轉換為變更狀態的許可權  
+ 專案或編輯器必須藉由呼叫來要求轉換為變更的 (變更) 狀態的許可權 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> 。 每個執行的編輯器都 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> 必須呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> 並接收核准，才能在傳回之前，從環境變更檔 `True` `M:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty(System.Int32@)` 。 專案基本上是專案檔的編輯器，如此一來，就會有相同的責任，可針對專案檔執行變更狀態追蹤，做為其檔案的文字編輯器。 環境會處理解決方案的變更狀態，但您必須處理方案所參考但未儲存之任何物件的變更狀態，例如專案檔或其專案。 一般而言，如果您的專案或編輯器負責管理專案的持續性，則會負責執行變更狀態追蹤。  
   
- 以回應`IVsQueryEditQuerySave2::QueryEditFiles`呼叫時，環境也可以執行下列動作：  
+ 為了回應 `IVsQueryEditQuerySave2::QueryEditFiles` 呼叫，環境可以執行下列作業：  
   
-- 拒絕對變更的呼叫，編輯器或專案在此情況下必須保持不變 （全新） 狀態。  
+- 拒絕要變更的呼叫，在這種情況下，編輯器或專案必須保持不變 (乾淨) 狀態。  
   
-- 表示應重新載入文件資料。 針對專案中，環境將會重新載入專案的資料。 編輯器必須重新載入的資料磁碟，透過其<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A>實作。 在任一情況下，重新載入資料時，可以變更專案或編輯器中的內容。  
+- 指出應重載檔資料。 若為專案，環境將會重載專案的資料。 編輯器必須透過其執行從磁片重載資料 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> 。 在任何一種情況下，專案或編輯器中的內容都可以在重載資料時變更。  
   
-  它是複雜且困難的工作，改建適當`IVsQueryEditQuerySave2::QueryEditFiles`到現有的程式碼基底的呼叫。 如此一來，這些呼叫應該在建立專案或編輯器整合。  
+  在 `IVsQueryEditQuerySave2::QueryEditFiles` 現有的程式碼基底上改建適當的呼叫，是一項複雜且困難的工作。 如此一來，在專案或編輯器建立期間，這些呼叫應該會整合。  
   
-## <a name="request-permission-to-save-a-file"></a>權限，才能儲存檔案  
- 專案或編輯器儲存檔案之前，必須呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>。 對於專案檔案，這些呼叫會自動完成此解決方案，知道何時要儲存專案檔。 編輯器會負責進行這些呼叫，除非編輯器實作`IVsPersistDocData2`會使用協助程式函式<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>。 如果您的編輯器實作`IVsPersistDocData2`中，如此一來，然後呼叫`IVsQueryEditQuerySave2::QuerySaveFile`或`IVsQueryEditQuerySave2::QuerySaveFiles`就自動完成。  
+## <a name="request-permission-to-save-a-file"></a>要求儲存檔案的許可權  
+ 在專案或編輯器儲存檔案之前，它必須呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> 或 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> 。 若為專案檔，方案會自動完成這些呼叫，這會知道何時要儲存專案檔。 除非的編輯器執行使用 helper 函式，否則編輯器會負責進行這些呼叫 `IVsPersistDocData2` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A> 。 如果您的編輯器 `IVsPersistDocData2` 是以這種方式進行，則 `IVsQueryEditQuerySave2::QuerySaveFile` `IVsQueryEditQuerySave2::QuerySaveFiles` 會為您進行或的呼叫。  
   
 > [!NOTE]
-> 一定要先進行這些呼叫 — 亦即，當您的編輯器是能夠接收取消一次。  
+> 一律讓這些呼叫事先，也就是當您的編輯器能夠接收取消時。  
   
-## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>要求權限來新增、 移除或重新命名專案中的檔案  
- 專案可以新增、 重新命名或移除檔案或目錄之前，必須呼叫適當`IVsTrackProjectDocuments2::OnQuery*`從環境的方法來要求權限。 如果授與權限時，則專案必須完成作業，然後再呼叫 適當`IVsTrackProjectDocuments2::OnAfter*`方法來通知環境已完成的作業。 專案必須呼叫的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>介面的所有檔案 （例如特殊的檔案） 和不只是父檔案。 檔案呼叫是必要項目，但目錄呼叫都是選擇性。 如果您的專案具有目錄資訊，則它應該呼叫適當<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>方法，但如果它並沒有這項資訊，則環境會推斷目錄資訊。  
+## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>在專案中加入、移除或重新命名檔案的要求許可權  
+ 在專案可以新增、重新命名或移除檔案或目錄之前，必須先呼叫適當的 `IVsTrackProjectDocuments2::OnQuery*` 方法來要求環境的許可權。 如果授與許可權，則專案必須完成作業，然後呼叫適當的方法， `IVsTrackProjectDocuments2::OnAfter*` 以通知環境作業已完成。 專案必須呼叫所有檔案的介面方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> (例如，特殊檔案) ，而不只是父檔案。 檔案呼叫是必要的，但目錄呼叫是選擇性的。 如果您的專案有目錄資訊，則應呼叫適當的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> 方法，但如果沒有此資訊，則環境會推斷目錄資訊。  
   
- 專案不應該呼叫的方法`IVsTrackProjectDocuments2`在專案開啟或關閉。 想要這項資訊在啟動的接聽程式可以等待<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A>事件並逐一查看方案，以尋找所需的資訊。 關閉時，不需要這項資訊。 `IVsTrackProjectDocuments2` 提供從<xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>。  
+ 專案不應該 `IVsTrackProjectDocuments2` 在專案開啟或關閉時呼叫的方法。 在啟動時需要這項資訊的接聽程式可以等候 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A> 事件，並逐一查看解決方案以找出所需的資訊。 關機時，不需要這項資訊。 `IVsTrackProjectDocuments2` 是由提供的 <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> 。  
   
- 針對每個新增、 重新命名 和 移除 動作中，沒有`OnQuery*`方法和`OnAfter*`方法。 呼叫`OnQuery*`方法來要求權限新增，請重新命名或移除檔案或目錄。 呼叫`OnAfter*`方法之後新增、 重新命名或移除檔案或目錄的專案狀態會反映新的狀態。  
+ 針對每個新增、重新命名和移除動作，都有 `OnQuery*` 方法和 `OnAfter*` 方法。 呼叫 `OnQuery*` 方法，以要求新增、重新命名或移除檔案或目錄的許可權。 在 `OnAfter*` 新增、重新命名或移除檔案或目錄之後，以及專案狀態反映新狀態之後，呼叫方法。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>   

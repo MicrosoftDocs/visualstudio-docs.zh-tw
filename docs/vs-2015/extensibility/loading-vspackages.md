@@ -1,5 +1,5 @@
 ---
-title: 載入 Vspackage |Microsoft Docs
+title: 正在載入 Vspackage |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,25 +12,25 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e20caff476e116ad59430692719bdbbe22c4914c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439771"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838945"
 ---
 # <a name="loading-vspackages"></a>載入 VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vspackage 會載入到 Visual Studio 中，只有需要其功能時，只有。 比方說，Visual Studio 使用專案 factory 或 VSPackage 實作的服務時，會載入 VSPackage。 這項功能稱為延遲的載入，這會盡可能以改善效能。  
+Vspackage 只有在需要它們的功能時，才會載入 Visual Studio。 例如，當 Visual Studio 使用專案 factory 或 VSPackage 所執行的服務時，就會載入 VSPackage。 這項功能稱為延遲載入，會盡可能用來改善效能。  
   
 > [!NOTE]
-> Visual Studio 可以判斷特定的 VSPackage 資訊，例如 VSPackage 提供，而不必載入 VSPackage 的命令。  
+> Visual Studio 可以判斷特定的 VSPackage 資訊，例如 VSPackage 提供的命令，而不需要載入 VSPackage。  
   
- Vspackage 可以例如設定自動載入在特定的使用者介面 (UI) 內容中，開啟方案時。 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>屬性會設定此內容。  
+ Vspackage 可以設定為特定使用者介面中的自動載入， (UI) 內容，例如開啟方案時。 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>屬性會設定此內容。  
   
-### <a name="autoloading-a-vspackage-in-a-specific-context"></a>自動載入 VSPackage 中特定的內容  
+### <a name="autoloading-a-vspackage-in-a-specific-context"></a>在特定內容中自動載入功能 VSPackage  
   
-- 新增`ProvideAutoLoad`屬性加入 VSPackage 屬性：  
+- 將 `ProvideAutoLoad` 屬性新增至 VSPackage 屬性：  
   
     ```csharp  
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]  
@@ -41,22 +41,22 @@ Vspackage 會載入到 Visual Studio 中，只有需要其功能時，只有。 
     {. . .}  
     ```  
   
-     請參閱列舉的欄位<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>如 UI 內容和其 GUID 值的清單。  
+     <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>如需 UI 內容和其 GUID 值清單的詳細資料，請參閱的列舉欄位。  
   
-- 在設定的中斷點<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法。  
+- 在方法中設定中斷點 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 。  
   
-- 建置 VSPackage，並開始偵錯。  
+- 建立 VSPackage 並開始進行調試。  
   
-- 載入方案或建立一個。  
+- 載入解決方案或建立一個。  
   
-     VSPackage 載入，並在中斷點停止。  
+     VSPackage 會在中斷點載入並停止。  
   
 ## <a name="forcing-a-vspackage-to-load"></a>強制載入 VSPackage  
- 在某些情況下 VSPackage 可能必須強制另一個要載入的 VSPackage。 比方說，輕量級 VSPackage 可能會載入較大的 VSPackage，不是 CMDUIContext 可用的內容中。  
+ 在某些情況下，VSPackage 可能必須強制載入另一個 VSPackage。 例如，輕量 VSPackage 可能會在無法以 CMDUICoNtext 形式提供的內容中載入較大的 VSPackage。  
   
- 您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A>方法，以強制載入 VSPackage。  
+ 您可以使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> 方法強制載入 VSPackage。  
   
-- 插入此程式碼<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>的 VSPackage，強制載入的另一個 VSPackage 的方法：  
+- 將此程式碼插入 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> VSPackage 的方法中，以強制載入另一個 VSPackage：  
   
     ```csharp  
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  
@@ -69,15 +69,15 @@ Vspackage 會載入到 Visual Studio 中，只有需要其功能時，只有。 
   
     ```  
   
-     初始化 VSPackage 時，它會強制`PackageToBeLoaded`載入。  
+     當 VSPackage 初始化時，它將會強制 `PackageToBeLoaded` 載入。  
   
-     強制載入不應該用於 VSPackage 通訊。 使用[使用和提供服務](../extensibility/using-and-providing-services.md)改。  
+     不應使用強制載入來進行 VSPackage 通訊。 改為使用 [和提供服務](../extensibility/using-and-providing-services.md) 。  
   
 ## <a name="using-a-custom-attribute-to-register-a-vspackage"></a>使用自訂屬性來註冊 VSPackage  
- 在某些情況下，您可能需要建立新的註冊屬性，您的擴充功能。 若要加入新的登錄機碼，或將新的值加入至現有的索引鍵，您可以使用註冊屬性。 新的屬性必須衍生自<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>，而且它必須覆寫<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A>和<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A>方法。  
+ 在某些情況下，您可能需要為您的延伸模組建立新的註冊屬性。 您可以使用註冊屬性來新增新的登錄機碼，或將新的值新增至現有的金鑰。 新的屬性必須衍生自 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> ，而且必須覆寫 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> 和 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> 方法。  
   
 ## <a name="creating-a-registry-key"></a>建立登錄機碼  
- 下列程式碼，建立自訂的屬性**自訂**vspackage 所登錄機碼下的子機碼。  
+ 在下列程式碼中，自訂屬性會在要註冊的 VSPackage 機碼底下建立 **自訂** 子機碼。  
   
 ```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
@@ -102,8 +102,8 @@ public override void Unregister(RegistrationContext context)
   
 ```  
   
-## <a name="creating-a-new-value-under-an-existing-registry-key"></a>建立現有的登錄機碼下的新值  
- 您可以新增自訂值到現有的金鑰。 下列程式碼示範如何將新的值新增至 VSPackage 註冊金鑰。  
+## <a name="creating-a-new-value-under-an-existing-registry-key"></a>在現有的登錄機碼下建立新的值  
+ 您可以將自訂值新增至現有的索引鍵。 下列程式碼示範如何將新值新增至 VSPackage 註冊金鑰。  
   
 ```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
@@ -128,4 +128,4 @@ public override void Unregister(RegistrationContext context)
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [VSPackage](../extensibility/internals/vspackages.md)
+ [VSPackages](../extensibility/internals/vspackages.md)

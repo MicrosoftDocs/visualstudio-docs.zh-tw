@@ -11,56 +11,56 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ab9301f31976b084c3c8565329dca248503e40ae
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437420"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838893"
 ---
 # <a name="attaching-to-the-program"></a>附加至程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-您已向適當的連接埠中的程式之後，您必須在您想要偵錯的程式附加偵錯工具。  
+使用適當的埠註冊程式之後，您必須將偵錯工具附加至您要進行偵錯工具的程式。  
   
-## <a name="choosing-how-to-attach"></a>選擇要附加的方式  
- 有三種工作階段的偵錯管理員 (SDM) 嘗試將附加至正在偵錯之程式的方式。  
+## <a name="choosing-how-to-attach"></a>選擇如何附加  
+ 會話 debug manager (SDM) 嘗試附加至正在進行偵錯工具的方法有三種。  
   
-1. 程式啟動的偵錯引擎，透過[LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)方法 （一般解譯的語言，例如），會取得 SDM [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)介面[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)程式附加至相關聯的物件。 如果可以取得 SDM`IDebugProgramNodeAttach2`介面，然後呼叫 SDM [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)方法。 `IDebugProgramNodeAttach2::OnAttach`方法會傳回`S_OK`來指示不未附加至程式，以及附加至程式時，不進行其他嘗試。  
+1. 若為透過[LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)方法，由 debug engine 啟動的程式 (常見的解讀語言（例如) ），則 SDM 會從與所附加程式相關聯的[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)物件取得[IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)介面。 如果 SDM 可以取得 `IDebugProgramNodeAttach2` 介面，則 sdm 接著會呼叫 [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) 方法。 `IDebugProgramNodeAttach2::OnAttach`方法會傳回 `S_OK` ，表示它並未附加至程式，而且可以進行其他嘗試附加至程式。  
   
-2. 如果可以取得 SDM [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)附加至 SDM 呼叫程式介面[附加](../../extensibility/debugger/reference/idebugprogramex2-attach.md)方法。 這種方法是典型的連接埠提供者已從遠端啟動的程式。  
+2. 如果 SDM 可從附加的程式取得 [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md) 介面，則 sdm 會呼叫 [Attach](../../extensibility/debugger/reference/idebugprogramex2-attach.md) 方法。 這種方法通常適用于埠供應商從遠端啟動的程式。  
   
-3. 如果程式無法透過附加`IDebugProgramNodeAttach2::OnAttach`或是`IDebugProgramEx2::Attach`方法，在 SDM 載入偵錯引擎 （如果尚未載入） 藉由呼叫`CoCreateInstance`函式，然後呼叫[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)方法。 這種方法是典型的連接埠提供者在本機啟動的程式。  
+3. 如果無法透過 `IDebugProgramNodeAttach2::OnAttach` 或方法附加程式 `IDebugProgramEx2::Attach` ，則 SDM 會載入 debug engine (（如果尚未藉由呼叫函式載入) `CoCreateInstance` ，然後呼叫 [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) 方法）。 這種方法通常適用于埠供應商在本機啟動的程式。  
   
-    此外，也可以呼叫自訂連接埠供應商`IDebugEngine2::Attach`中的自訂連接埠供應商的實作方法`IDebugProgramEx2::Attach`方法。 通常在此情況下，自訂的連接埠提供者會啟動遠端電腦上的偵錯引擎。  
+    自訂通訊埠供應商也有可能 `IDebugEngine2::Attach` 在方法的自訂埠供應商實作為中呼叫方法 `IDebugProgramEx2::Attach` 。 一般來說，在此情況下，自訂埠供應商會在遠端電腦上啟動 debug engine。  
   
-   附件在工作階段的偵錯管理員 (SDM) 呼叫時達成[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)方法。  
+   當會話 debug manager (SDM) 呼叫 Attach 方法時，就會達到 [附加](../../extensibility/debugger/reference/idebugengine2-attach.md) 的目的。  
   
-   如果您要偵錯應用程式相同的程序中執行您的德國，則您必須實作下列方法[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md):  
+   如果您在與要進行調試的應用程式相同的進程中執行，則必須執行下列 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)方法：  
   
-- [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)，  
+- [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)、  
   
 - [GetHostPid](../../extensibility/debugger/reference/idebugprogramnode2-gethostpid.md)  
   
 - [GetProgramName](../../extensibility/debugger/reference/idebugprogramnode2-getprogramname.md)  
   
-  在後`IDebugEngine2::Attach`呼叫方法，請遵循下列步驟，在您實作`IDebugEngine2::Attach`方法：  
+  `IDebugEngine2::Attach`呼叫方法之後，請在您的方法的執行中遵循下列步驟 `IDebugEngine2::Attach` ：  
   
-1. 傳送[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) SDM 事件物件。 如需詳細資訊，請參閱 <<c0> [ 傳送事件](../../extensibility/debugger/sending-events.md)。  
+1. 將 [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) 事件物件傳送至 SDM。 如需詳細資訊，請參閱傳送 [事件](../../extensibility/debugger/sending-events.md)。  
   
-2. 呼叫[GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)方法[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)物件傳遞給`IDebugEngine2::Attach`方法。  
+2. 在傳遞給方法的[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)物件上呼叫[GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)方法 `IDebugEngine2::Attach` 。  
   
-     這會傳回`GUID`用來找出的程式。 `GUID`必須儲存在物件，代表本機程式，以 DE，而且它必須傳回時`IDebugProgram2::GetProgramId`上呼叫方法`IDebugProgram2`介面。  
-  
-    > [!NOTE]
-    > 如果您實作`IDebugProgramNodeAttach2`介面，該程式`GUID`傳遞至`IDebugProgramNodeAttach2::OnAttach`方法。 這`GUID`使用於程式`GUID`所傳回`IDebugProgram2::GetProgramId`方法。  
-  
-3. 傳送[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)通知 SDM 事件物件的本機`IDebugProgram2`以 DE 代表程式建立物件。 如需詳細資訊，請參閱 <<c0> [ 傳送事件](../../extensibility/debugger/sending-events.md)。  
+     這會傳回 `GUID` 用來識別程式的。 `GUID`必須儲存在代表要解除之本機程式的物件中，而且必須在 `IDebugProgram2::GetProgramId` 介面上呼叫方法時傳回 `IDebugProgram2` 。  
   
     > [!NOTE]
-    > 這不是相同`IDebugProgram2`物件傳遞至`IDebugEngine2::Attach`方法。 先前傳遞`IDebugProgram2`物件的連接埠，只可辨識，而且是不同的物件。  
+    > 如果您執行 `IDebugProgramNodeAttach2` 介面，程式 `GUID` 會傳遞至 `IDebugProgramNodeAttach2::OnAttach` 方法。 這 `GUID` 會用於方法所傳回的程式 `GUID` `IDebugProgram2::GetProgramId` 。  
+  
+3. 傳送 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 事件物件，以通知 SDM `IDebugProgram2` 已建立本機物件來代表要解除的程式。 如需詳細資訊，請參閱傳送 [事件](../../extensibility/debugger/sending-events.md)。  
+  
+    > [!NOTE]
+    > 這與 `IDebugProgram2` 傳遞給方法的物件不同 `IDebugEngine2::Attach` 。 先前傳遞的 `IDebugProgram2` 物件只能由埠辨識，而且是個別的物件。  
   
 ## <a name="see-also"></a>另請參閱  
- [啟動時附加](../../extensibility/debugger/launch-based-attachment.md)   
+ [以啟動為基礎的附件](../../extensibility/debugger/launch-based-attachment.md)   
  [傳送事件](../../extensibility/debugger/sending-events.md)   
  [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
  [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)   
@@ -71,4 +71,4 @@ ms.locfileid: "63437420"
  [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)   
  [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)   
  [附加](../../extensibility/debugger/reference/idebugprogramex2-attach.md)   
- [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)
+ [附加](../../extensibility/debugger/reference/idebugengine2-attach.md)

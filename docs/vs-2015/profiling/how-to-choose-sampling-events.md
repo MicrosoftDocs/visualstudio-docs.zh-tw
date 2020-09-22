@@ -1,5 +1,5 @@
 ---
-title: HOW TO：選擇取樣事件 | Microsoft Docs
+title: 如何：選擇取樣事件 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,13 +20,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 017414bdbf8e0e1a3a664782aab1ea44bda030c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432827"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838766"
 ---
-# <a name="how-to-choose-sampling-events"></a>HOW TO：選擇取樣事件
+# <a name="how-to-choose-sampling-events"></a>如何：選擇取樣事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 根據預設，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具收集效能資料的間隔，是分析程序使用的處理器週期數。 一個間隔的預設週期數是 10,000,000，在 1 GH 電腦上約為 0.01 秒。 您可以變更間隔中的週期數，而且可以變更取樣事件。 下列是可用的取樣事件︰  
@@ -44,26 +44,26 @@ ms.locfileid: "63432827"
   
 ### <a name="to-select-a-sample-event"></a>選取取樣事件  
   
-1. 在 [效能總管] 中，以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性] 。  
+1. 在 [效能總管] **** 中，以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性] ****。  
   
-2. 在 [屬性頁] 中，按一下 [取樣] 屬性。  
+2. 在 [屬性頁] **** 中，按一下 [取樣]**** 屬性。  
   
-3. 從 [取樣事件] 下拉式清單中選取要用來對應用程式進行程式碼剖析的取樣事件。  
+3. 從 [取樣事件]**** 下拉式清單中選取要用來對應用程式進行程式碼剖析的取樣事件。  
   
     > [!NOTE]
-    > 只有當您從 [取樣事件] 下拉式清單中選取 [效能計數器] 時，才會啟用 [可用的效能計數器]。  
+    > 只有當您從 [取樣事件]**** 下拉式清單中選取 [效能計數器]**** 時，才會啟用 [可用的效能計數器]****。  
   
-4. 如果您選取 [效能計數器]，請從 [可用的效能計數器] 樹狀檢視控制項中選取特定的 CPU 計數器。  
+4. 如果您選取 [效能計數器]****，請從 [可用的效能計數器]**** 樹狀檢視控制項中選取特定的 CPU 計數器。  
   
-    - [Portable Events] 節點中的計數器適用於所有類型的處理器。  
+    - [Portable Events]**** 節點中的計數器適用於所有類型的處理器。  
   
-    - [Platform Events] 節點中的計數器僅適用於目前電腦上的處理器，可能不適用於其他類型的處理器。  
+    - [Platform Events]**** 節點中的計數器僅適用於目前電腦上的處理器，可能不適用於其他類型的處理器。  
   
-5. 當您選取取樣事件時，[取樣間隔] 文字方塊中會顯示預設的取樣間隔值。 您可視需要在文字方塊中輸入您想要的值。  
+5. 當您選取取樣事件時，[取樣間隔]**** 文字方塊中會顯示預設的取樣間隔值。 您可視需要在文字方塊中輸入您想要的值。  
   
 ## <a name="see-also"></a>另請參閱  
- [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
+ [設定效能會話](../profiling/configuring-performance-sessions.md)   
  [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)   
  [CPU 和 Windows 計數器](../profiling/cpu-and-windows-counters.md)   
- [了解取樣資料值](../profiling/understanding-sampling-data-values.md)   
- [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [瞭解取樣資料值](../profiling/understanding-sampling-data-values.md)   
+ [從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

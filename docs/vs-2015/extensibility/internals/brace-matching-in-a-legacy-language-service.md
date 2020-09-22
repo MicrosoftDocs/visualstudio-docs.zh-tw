@@ -1,5 +1,5 @@
 ---
-title: 舊版語言服務中的比對的大括號 |Microsoft Docs
+title: 舊版語言服務中的括弧對稱 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,47 +12,47 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d6d7243c8032b22f9abe89021af138f638729011
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437639"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838824"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>舊版語言服務中的括號對稱
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-大括號比對，可協助開發人員追蹤發生在一起，例如括號和大括號所需要的語言項目。 當開發人員輸入右括號時，左括號會反白顯示。  
+括弧對稱可協助開發人員追蹤需要一起發生的語言元素，例如括弧和大括弧。 當開發人員輸入右大括弧時，會反白顯示左大括弧。  
   
- 您可以比對兩個或三個共同發生的項目，稱為組和三合一。 三合一是共同發生的三個元素的集合。 比方說，在 C# 中，`foreach`陳述式構成三重物件:"`foreach()`"，"`{`"，和 「`}`"。 輸入右括號時，會反白顯示三個項目。  
+ 您可以比對兩個或三個共發生的元素，稱為「配對」和「三合一」。 三元組是三個共發生元素的集合。 例如，在 c # 中， `foreach` 語句形成三種： " `foreach()` "、" `{` " 和 " `}` "。 當輸入右大括弧時，就會反白顯示所有三個元素。  
   
- 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作大括號比對的新方式，請參閱[逐步解說：顯示成對大括弧](../../extensibility/walkthrough-displaying-matching-braces.md)。  
+ 舊版語言服務會實作為 VSPackage 的一部分，但是執行語言服務功能的較新方法是使用 MEF 延伸模組。 若要深入瞭解如何執行大括弧比對的新方式，請參閱 [逐步解說：顯示成對的大括弧](../../extensibility/walkthrough-displaying-matching-braces.md)。  
   
 > [!NOTE]
-> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
+> 建議您儘快開始使用新的編輯器 API。 這可改善您的語言服務效能，並讓您利用新的編輯器功能。  
   
- <xref:Microsoft.VisualStudio.Package.AuthoringSink>類別支援這兩組，而且與 triples<xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A>和<xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A>方法。  
+ <xref:Microsoft.VisualStudio.Package.AuthoringSink>類別支援搭配和方法的成對和三 <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> 合一 <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> 。  
   
 ## <a name="implementation"></a>實作  
- 語言服務，就必須找出在語言中的所有相符項目，然後找出所有配對。 這通常透過實作<xref:Microsoft.VisualStudio.Package.IScanner>來偵測相符的語言，然後使用<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>項目相符的方法。  
+ 語言服務需要識別語言中所有相符的專案，然後找到所有相符的配對。 這通常是藉由實 <xref:Microsoft.VisualStudio.Package.IScanner> 作為偵測相符的語言，然後使用方法來比對專案來達成 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 。  
   
- <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法呼叫來 token 化列，並傳回之前插入號的語彙基元掃描器。 掃描器會指出，找到語言項目配對權杖的觸發程序將值設定為<xref:Microsoft.VisualStudio.Package.TokenTriggers>上目前的語彙基元。 <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法呼叫<xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>接著會呼叫的方法<xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A>方法的剖析原因值<xref:Microsoft.VisualStudio.Package.ParseReason>找出相符的語言項目。 找到相符的語言項目時，會反白顯示兩個項目。  
+ <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法會呼叫掃描器來 token 化這一行，並在插入號之前傳回權杖。 掃描器會藉由 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 在目前的權杖上設定的 token 觸發程式值，來指出已找到語言元素組。 <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法 <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> 會呼叫方法，而這個方法會接著 <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> 使用的剖析原因值來呼叫方法， <xref:Microsoft.VisualStudio.Package.ParseReason> 以找出相符的語言元素。 找到相符的語言專案時，會反白顯示這兩個元素。  
   
- 輸入一個大括號如何觸發的大括號反白顯示的完整說明，請參閱主題中的 「 範例剖析作業 」 區段[舊版語言服務剖析器和掃描器](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)。  
+ 如需如何鍵入括弧來觸發括弧醒目提示的完整說明，請參閱 [舊版語言服務剖析器和掃描器](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)主題中的「剖析作業範例」一節。  
   
-## <a name="enabling-support-for-brace-matching"></a>啟用支援的括號對稱  
- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>屬性可以設定`MatchBraces`， `MatchBracesAtCaret`，以及`ShowMatchingBrace`具名參數設定的對應屬性<xref:Microsoft.VisualStudio.Package.LanguagePreferences>類別。 使用者也可以設定語言喜好設定的屬性。  
+## <a name="enabling-support-for-brace-matching"></a>啟用括弧配對的支援  
+ <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>屬性可以設定 `MatchBraces` 、 `MatchBracesAtCaret` 和 `ShowMatchingBrace` 具名引數，以設定類別的對應屬性 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 。 語言喜好設定屬性也可以由使用者設定。  
   
 |登錄項目|屬性|描述|  
 |--------------------|--------------|-----------------|  
-|`MatchBraces`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|啟用括號對稱|  
-|`MatchBracesAtCaret`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|移動插入號所在的啟用括號對稱。|  
-|`ShowMatchingBrace`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|反白顯示對稱的括號。|  
+|`MatchBraces`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|啟用括弧對稱|  
+|`MatchBracesAtCaret`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|當插入點移動時啟用括弧比對。|  
+|`ShowMatchingBrace`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|反白顯示相符的括弧。|  
   
-## <a name="matching-conditional-statements"></a>比對條件陳述式  
- 可以比對條件陳述式，例如`if`， `else if`，並`else`，或`#if`， `#elif`， `#else`， `#endif`，做為相符的分隔符號相同的方式。 您可以進行子分類<xref:Microsoft.VisualStudio.Package.AuthoringSink>類別，並提供可以加上文字的方法跨越以及要內部陣列的相符項目分隔符號。  
+## <a name="matching-conditional-statements"></a>符合條件陳述式  
+ 您可以將條件陳述式（如、、和、、、、）與相符 `if` `else if` `else` `#if` `#elif` `#else` `#endif` 分隔符號的相同方式進行比對。 您可以將 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 類別子類別化，並提供可將文字範圍和分隔符號加入至相符元素內部陣列的方法。  
   
-## <a name="setting-the-trigger"></a>設定觸發程序  
- 下列範例示範如何偵測相符的括號、 大括號和方括號，和在掃描器上設定它的觸發程序。 <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法<xref:Microsoft.VisualStudio.Package.Source>類別會偵測觸發程序，並呼叫的剖析器來尋找相符的配對 （請參閱本主題的 「 尋找比對 」 一節）。 這個範例是僅供示範用途。 它會假設您的掃描器，包含方法`GetNextToken`的識別，並從文字行，傳回權杖。  
+## <a name="setting-the-trigger"></a>設定觸發程式  
+ 下列範例顯示如何在掃描器中偵測相符的括弧、大括弧和方括弧，以及設定它的觸發程式。 <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>類別上的方法會 <xref:Microsoft.VisualStudio.Package.Source> 偵測觸發程式，並呼叫剖析器來尋找相符的配對 (請參閱本主題中的「尋找相符」一節) 。 此範例僅供說明之用。 它會假設您的掃描器包含一個方法 `GetNextToken` ，該方法會從文字行識別並傳回權杖。  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -86,8 +86,8 @@ namespace TestLanguagePackage
         }  
 ```  
   
-## <a name="matching-the-braces"></a>比對大括號  
- 以下是簡化的範例相符語言項目 {}、 （） 和 []，並加入其範圍<xref:Microsoft.VisualStudio.Package.AuthoringSink>物件。 這個方法並不建議的方法來剖析原始程式碼;它是僅供示範用途。  
+## <a name="matching-the-braces"></a>符合大括弧  
+ 以下是符合語言元素 {}、 ( ) 和 [] 的簡化範例，並將其範圍新增至 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 物件。 這種方法不是剖析原始程式碼的建議方法;它僅供說明之用。  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  

@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d5dd8864484e2b41a1146f1da495251663afdb6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be48e7ce721c84656362a019e0cc5eec1ae2ee17
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801499"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808203"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Office 中 COM、VSTO 及 VBA 增益集的開發最佳作法
   如果您正在開發適用于 Office 的 COM、VSTO 或 VBA 增益集，請遵循本文中所述的開發最佳做法。   這將有助於確保：
@@ -31,7 +31,7 @@ ms.locfileid: "88801499"
  我們不建議您讓增益集偵測到增益集安裝程式期間是否已安裝 Office。 如果未安裝 Office，您可以安裝增益集，使用者將能夠在安裝 Office 之後存取該增益集。
 
 ## <a name="use-embedded-interop-types-nopia"></a>使用內嵌的 Interop 類型 (NoPIA) 
-如果您的方案使用 .NET 4.0 或更新版本，請使用內嵌的 interop 類型 (NoPIA) 而不是根據 Office 主要 Interop 元件 (PIA) 可轉散發套件。 使用型別內嵌可減少解決方案的安裝大小，並確保未來的相容性。 Office 2010 是發行 PIA 可轉散發套件的最後一個版本。 如需詳細資訊，請參閱 [逐步解說：從 Microsoft Office 元件內嵌型別資訊](https://msdn.microsoft.com/library/ee317478.aspx) 和 [類型等價和內嵌 interop 類型](/windows/uwp/porting/desktop-to-uwp-root)。
+如果您的方案使用 .NET 4.0 或更新版本，請使用內嵌的 interop 類型 (NoPIA) 而不是根據 Office 主要 Interop 元件 (PIA) 可轉散發套件。 使用型別內嵌可減少解決方案的安裝大小，並確保未來的相容性。 Office 2010 是發行 PIA 可轉散發套件的最後一個版本。 如需詳細資訊，請參閱 [逐步解說：從 Microsoft Office 元件內嵌型別資訊](/previous-versions/ee317478(v=vs.140)) 和 [類型等價和內嵌 interop 類型](/windows/uwp/porting/desktop-to-uwp-root)。
 
 如果您的方案使用舊版的 .NET，建議您將方案更新為使用 .NET 4.0 或更新版本。 使用 .NET 4.0 或更新版本可減少較新版 Windows 的執行時間必要條件。
 

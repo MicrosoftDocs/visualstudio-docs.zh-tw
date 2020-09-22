@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_access |Microsoft Docs'
+title: IDiaSymbol：： get_access |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 806e9fd06611e2cb30829b294222870b9252c35b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808094"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839010"
 ---
-# <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
+# <a name="idiasymbolget_access"></a>IDiaSymbol::get_access
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取的類別成員的存取修飾詞。  
+抓取類別成員的存取修飾詞。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,20 +35,20 @@ HRESULT get_access ( 
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回值，以從[CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)列舉，指定類別成員的存取修飾詞。  
+ 擴展從指定類別成員之存取修飾詞的 [CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md) 列舉值傳回值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 > [!NOTE]
-> 傳回值為`S_FALSE`表示屬性不是適用於符號。  
+> 的傳回值 `S_FALSE` 表示該屬性不適用於符號。  
   
 ## <a name="requirements"></a>需求  
   
 |需求|描述|  
 |-----------------|-----------------|  
-|標頭：|dia2.h|  
-|版本:|DIA SDK v7.0|  
+|標頭：|dia2。h|  
+|版本：|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

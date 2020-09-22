@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fae39270cfbbbb93b106de65b3b01210ffc61d29
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440818"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838874"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-列舉各種資料來源中包含的符號。  
+列舉資料來源中包含的各種符號。  
   
 ## <a name="syntax"></a>語法  
   
@@ -32,23 +32,23 @@ IDiaEnumSymbols : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDiaEnumSymbols`。  
+ 下表顯示的方法 `IDiaEnumSymbols` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDiaEnumSymbols::get__NewEnum](../../debugger/debug-interface-access/idiaenumsymbols-get-newenum.md)|擷取`IEnumVARIANT Interface`這個列舉值的版本。|  
-|[IDiaEnumSymbols::get_Count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md)|擷取符號的數。|  
-|[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|透過索引中擷取的符號。|  
-|[IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|擷取指定的列舉型別序列中的符號數。|  
-|[IDiaEnumSymbols::Skip](../../debugger/debug-interface-access/idiaenumsymbols-skip.md)|略過指定的數目的列舉型別序列中的符號。|  
-|[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|將列舉型別序列重設到開頭。|  
-|[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|建立列舉值，包含目前的列舉值相同的列舉型別狀態。|  
+|[IDiaEnumSymbols::get__NewEnum](../../debugger/debug-interface-access/idiaenumsymbols-get-newenum.md)|抓取 `IEnumVARIANT Interface` 此列舉值的版本。|  
+|[IDiaEnumSymbols::get_Count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md)|抓取符號的數目。|  
+|[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|藉由索引來抓取符號。|  
+|[IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|抓取列舉序列中指定的符號數目。|  
+|[IDiaEnumSymbols::Skip](../../debugger/debug-interface-access/idiaenumsymbols-skip.md)|略過列舉序列中指定數目的符號。|  
+|[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|將列舉順序重設為開頭。|  
+|[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|  
   
 ## <a name="remarks"></a>備註  
- 這個介面會提供特定類型的符號，例如，依分組的符號`SymTagUDT`（使用者定義型別） 或`SymTagBaseClass`。 若要使用的地址分組的符號，使用[IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)介面。  
+ 此介面提供依特定符號類型分組的符號，例如 `SymTagUDT` (使用者定義類型) 或 `SymTagBaseClass` 。 若要使用依位址分組的符號，請使用 [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) 介面。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 取得這個介面，藉由呼叫下列方法：  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 藉由呼叫下列方法來取得此介面：  
   
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
   
@@ -57,10 +57,10 @@ IDiaEnumSymbols : IUnknown
 - [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)  
   
 ## <a name="example"></a>範例  
- 此範例示範如何取得`IDiaEnumSymbols`介面，然後再使用該清單使用者定義型別 (Udt) 來列舉。  
+ 這個範例會示範如何取得 `IDiaEnumSymbols` 介面，然後使用該列舉來列出使用者定義型別 (udt) 。  
   
 > [!NOTE]
-> `CDiaBSTR` 是一個類別，包裝`BSTR`並可自動處理具現化超出範圍時釋出的字串。  
+> `CDiaBSTR` 是一個類別，會在具現 `BSTR` 化超出範圍時，包裝和自動處理釋出字串。  
   
 ```cpp#  
 void ShowUDTs(IDiaSymbol *pGlobals)  
@@ -89,14 +89,14 @@ void ShowUDTs(IDiaSymbol *pGlobals)
 ```  
   
 ## <a name="requirements"></a>需求  
- 標頭：dia2.h  
+ 標頭： Dia2。h  
   
- 程式庫： diaguids.lib  
+ 程式庫： diaguids .lib  
   
- DLL: msdia80.dll  
+ DLL： msdia80.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
+ [ (Debug 介面存取 SDK) 介面 ](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaSession：： findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSourceFile：： get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

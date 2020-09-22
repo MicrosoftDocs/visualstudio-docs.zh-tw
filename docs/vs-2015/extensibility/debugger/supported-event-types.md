@@ -1,5 +1,5 @@
 ---
-title: 支援的事件類型 |Microsoft Docs
+title: 支援的事件種類 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,81 +11,81 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f671e8d0128bee2c52dc1191b33edb889c92d2e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446437"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839093"
 ---
 # <a name="supported-event-types"></a>支援的事件類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio 偵錯目前支援下列事件類型：  
+Visual Studio 的偵測目前支援下列事件種類：  
   
 - 非同步事件  
   
-   通知工作階段的偵錯管理員 (SDM) 和正在偵錯的應用程式狀態正在變更的 IDE。 在 SDM 和 IDE 的休閒以處理這些事件。 處理事件之後，偵錯引擎 (DE) 會不傳送任何回應。 [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)並[IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md)介面是非同步事件的範例。  
+   通知會話 debug manager (SDM) 和 IDE，表示正在進行調試的應用程式狀態正在變更。 這些事件會在 SDM 和 IDE 的休閒中處理。 一旦處理事件，就不會將回復傳送至 debug engine (DE) 。 [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)和[IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md)介面是非同步事件的範例。  
   
 - 同步事件  
   
-   通知的 SDM 和正在偵錯的應用程式狀態正在變更的 IDE。 這些事件與非同步事件之間唯一的差別是，藉由傳送回覆[ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)方法。  
+   通知 SDM 和 IDE，正在進行正在進行調試的應用程式狀態變更。 這些事件和非同步事件之間的唯一差異在於，回復是透過 [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) 方法來傳送。  
   
-   傳送同步的事件是需要您 DE 以繼續處理之後 IDE 會接收及處理事件時相當實用。  
+   如果您需要在 IDE 接收和處理事件之後，讓您的 DE 繼續處理，則傳送同步事件會很有用。  
   
-- 同步的停止事件，或停止事件  
+- 同步停止事件或停止事件  
   
-   通知應用程式進行偵錯已停止執行程式碼在 SDM 和 IDE。 當您透過此方法，會在傳送停止事件時[事件](../../extensibility/debugger/reference/idebugeventcallback2-event.md)，則[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)是必要參數。 正在停止事件會繼續藉由呼叫下列方法其中一個：  
+   通知 SDM 和 IDE，表示正在調試的應用程式已停止執行程式碼。 當您透過方法 [事件](../../extensibility/debugger/reference/idebugeventcallback2-event.md)傳送停止事件時，需要 [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) 參數。 藉由呼叫下列其中一種方法，可繼續停止事件：  
   
-  - [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
+  - [執行](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
   
   - [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
   
-  - [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
+  - [繼續](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
   
-    介面[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)並[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)會停止事件的範例。  
+    [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)和[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)介面是停止事件的範例。  
   
   > [!NOTE]
-  > 不支援非同步停止事件。 它是傳送非同步停止事件中的錯誤。  
+  > 不支援非同步停止事件。 傳送非同步停止事件是錯誤的。  
   
 ## <a name="discussion"></a>討論  
- 事件的實際實作取決於您的德國的設計。 傳送每個事件的型別取決於其屬性，當您設計 DE 時設定。 比方說，可能會傳送一個 DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)當做非同步事件，而另一個可能會將它傳送為停止事件。  
+ 實際的事件執行取決於您的 DE 的設計。 每個傳送事件的類型取決於您設計 DE 時所設定的屬性。 例如，一個 DE 可能會以非同步事件傳送 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) ，而另一個則會將它傳送為停止事件。  
   
- 下表指定哪些程式和執行緒的參數所需的事件，以及事件類型。 任何事件可以是同步的。 不必須要同步的任何事件。  
+ 下表指定哪些程式和執行緒參數需要哪些事件，以及事件種類。 任何事件都可以同步。 無事件需要同步。  
   
 > [!NOTE]
-> [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md)介面是必要的所有事件。  
+> 所有事件都需要 [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) 介面。  
   
-|Event - 事件|IDebugProgram2|IDebugThread2|停止事件|  
+|事件|IDebugProgram2|IDebugThread2|停止事件|  
 |-----------|--------------------|-------------------|---------------------|  
-|[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|允許，但非必要|允許，但非必要|否|  
+|[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|允許但非必要|允許但非必要|否|  
 |[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)|必要|必要|是|  
-|[IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|允許，但非必要|允許，但非必要|否|  
-|[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|允許，但非必要|允許，但非必要|否|  
-|[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|允許，但非必要|允許，但非必要|否|  
+|[IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|允許但非必要|允許但非必要|否|  
+|[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|允許但非必要|允許但非必要|否|  
+|[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|允許但非必要|允許但非必要|否|  
 |[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)|必要|必要|是|  
 |[IDebugCanStopEvent2](../../extensibility/debugger/reference/idebugcanstopevent2.md)|必要|必要|否|  
 |[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|不允許|不允許|否|  
 |[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|不允許|不允許|否|  
 |[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)|必要|必要|是|  
-|[IDebugErrorEvent2](../../extensibility/debugger/reference/idebugerrorevent2.md)|允許，但非必要|允許，但非必要|可以是|  
+|[IDebugErrorEvent2](../../extensibility/debugger/reference/idebugerrorevent2.md)|允許但非必要|允許但非必要|可以是|  
 |[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)|必要|必要|是|  
-|[IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|允許，但非必要|允許，但非必要|可以是|  
+|[IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|允許但非必要|允許但非必要|可以是|  
 |[IDebugInterceptExceptionCompleteEvent2](../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)|必要|必要|是|  
 |[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)|必要|必要|是|  
-|[IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md)|允許，但非必要|允許，但非必要|可以是|  
-|[IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|必要|允許，但非必要|否|  
-|[IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)|允許，但非必要|允許，但非必要|否|  
-|[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|必要|允許，但非必要|否|  
-|[IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|必要|允許，但非必要|否|  
-|[IDebugPropertyCreateEvent2](../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|必要|允許，但非必要|否|  
-|[IDebugPropertyDestroyEvent2](../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|必要|允許，但非必要|否|  
-|[IDebugReturnValueEvent2](../../extensibility/debugger/reference/idebugreturnvalueevent2.md)|允許，但非必要|允許，但非必要|否|  
+|[IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md)|允許但非必要|允許但非必要|可以是|  
+|[IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|必要|允許但非必要|否|  
+|[IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)|允許但非必要|允許但非必要|否|  
+|[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|必要|允許但非必要|否|  
+|[IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|必要|允許但非必要|否|  
+|[IDebugPropertyCreateEvent2](../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|必要|允許但非必要|否|  
+|[IDebugPropertyDestroyEvent2](../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|必要|允許但非必要|否|  
+|[IDebugReturnValueEvent2](../../extensibility/debugger/reference/idebugreturnvalueevent2.md)|允許但非必要|允許但非必要|否|  
 |IDebugStopCompleteEvent2|必要|必要|是|  
 |[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)|必要|必要|是|  
-|[IDebugSymbolSearchEvent2](../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)|允許，但非必要|允許，但非必要|否|  
+|[IDebugSymbolSearchEvent2](../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)|允許但非必要|允許但非必要|否|  
 |[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|必要|必要|否|  
 |[IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|必要|必要|否|  
-|[IDebugThreadNameChangedEvent2](../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|允許，但非必要|允許，但非必要|否|  
+|[IDebugThreadNameChangedEvent2](../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|允許但非必要|允許但非必要|否|  
   
 ## <a name="see-also"></a>另請參閱  
  [傳送事件](../../extensibility/debugger/sending-events.md)

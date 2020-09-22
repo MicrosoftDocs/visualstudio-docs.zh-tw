@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias | Microsoft Docs
+title: IDebugAlias |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,19 +13,19 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6c05b6987804681176abdde0e8c94a7463a9163c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442310"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838915"
 ---
 # <a name="idebugalias"></a>IDebugAlias
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關如何執行 CLR 運算式評估工具的詳細資訊，請參閱 [CLR 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 表示變數的數字的別名。 別名是只是不同的變數名稱。  
+ 代表變數的數值別名。 別名只是變數的不同名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,31 +33,31 @@ ms.locfileid: "63442310"
 IDebugAlias : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- 運算式評估工具 (EE) 會實作這個介面來支援變數的數字的別名。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ 運算式評估工具 (EE) 會執行這個介面，以支援變數的數值別名。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)建立特定物件的別名。 若要搜尋的別名，請使用[FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)或是[GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) 會建立特定物件的別名。 若要搜尋別名，請使用 [FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md) 或 [GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下列方法定義於`IDebugAlias`介面。  
+ 以下是在介面中定義的方法 `IDebugAlias` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)|取得這個別名所參考的物件。|  
+|[GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)|取得此別名所參考的物件。|  
 |[GetName](../../../extensibility/debugger/reference/idebugalias-getname.md)|取得別名名稱。|  
-|[GetICorDebugValue](../../../extensibility/debugger/reference/idebugalias-geticordebugvalue.md)|擷取`ICorDebugValue`介面，可提供存取權管理此物件 （僅限 managed 程式碼） 的程式碼資訊。|  
-|[Dispose](../../../extensibility/debugger/reference/idebugalias-dispose.md)|將此標示別名為不再使用。|  
+|[GetICorDebugValue](../../../extensibility/debugger/reference/idebugalias-geticordebugvalue.md)|抓取 `ICorDebugValue` 介面，此介面可讓您僅)  (managed 程式碼，存取此物件的 managed 程式碼資訊。|  
+|[處置](../../../extensibility/debugger/reference/idebugalias-dispose.md)|將此別名標示為不再使用。|  
   
 ## <a name="remarks"></a>備註  
- 別名是十進位的數字，後面接著 # 字元，例如 1001 # 格式為字串。  
+ 別名是字串格式的十進位數，後面接著 # 字元，例如 1001 #。  
   
 ## <a name="requirements"></a>需求  
- 標頭： ee.h  
+ 標頭： ee. h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   

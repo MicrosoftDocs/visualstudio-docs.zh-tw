@@ -11,55 +11,55 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8a710019390120768b665cf3b27174831a67f0cc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435037"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838865"
 ---
 # <a name="expression-evaluation-interfaces"></a>Expression Evaluation Interfaces
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關如何執行 CLR 運算式評估工具的詳細資訊，請參閱 [CLR 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 以下是針對的運算式評估介面[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]偵錯 sdk 》。  
+ 以下是偵錯工具 SDK 的運算式評估介面 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 。  
   
 ## <a name="discussion"></a>討論  
- 這些介面用來評估在中斷模式期間的呼叫堆疊中的運算式。 它們只針對通用語言執行階段運算式評估工具 (EE) 進行實作。  
+ 在中斷模式期間，這些介面是用來評估呼叫堆疊中的運算式。 它們只會在 (EE) 的通用語言運行時程表達式評估工具上執行。  
   
- 在資料表中的每個介面會顯示可以實作下列清單中的元件：  
+ 表格中的每個介面都會顯示可從下列清單中執行的元件：  
   
-- 偵錯引擎 (DE)  
+- Debug Engine (DE)   
   
-- 運算式評估工具 (EE)  
+-  (EE) 的運算式評估工具  
   
-- Visual Studio (VS)  
+- Visual Studio (VS)   
   
-|介面|藉由將|描述|  
+|介面|實作為|描述|  
 |---------------|--------------------|-----------------|  
-|[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|表示變數的數字的別名。|  
-|[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|代表數值的別名的變數，並可讓運算式評估工具 (EE) 來取得應用程式定義域做為別名。|  
+|[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|代表變數的數值別名。|  
+|[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|代表變數的數值別名，並讓運算式評估工具 (EE) 取得別名的應用程式域。|  
 |[IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)|EE|表示陣列物件。|  
-|[IDebugArrayObject2](../../../extensibility/debugger/reference/idebugarrayobject2.md)|EE|表示 managed 的陣列物件，並可讓運算式評估工具 (EE) 來判斷陣列的基底的索引 （下限）。|  
-|[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)|DE|表示繫結偵錯符號，可在記憶體中的實際位址的繫結器。|  
-|[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)|DE|與相同[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)介面但能夠存取型別、 別名和自訂視覺化檢視。|  
+|[IDebugArrayObject2](../../../extensibility/debugger/reference/idebugarrayobject2.md)|EE|代表 managed 陣列物件，並允許運算式評估工具 (EE) 判斷陣列 (下限) 的基底索引。|  
+|[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)|DE|表示系結器，它會將偵錯工具符號系結至記憶體中的實際位址。|  
+|[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)|DE|與 [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) 介面相同，但可讓您存取類型、別名和自訂的視覺化檢視。|  
 |[IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)|EE|代表運算式評估工具。|  
-|[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)|EE|表示的運算式評估工具 (EE) 的增強型的版本。|  
-|[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)|EE|表示的運算式評估工具 (EE) 與增強的剖析器樹狀目錄。|  
-|[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)|EE|表示函式。|  
-|[IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)|EE|表示函式，並增強[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面。|  
-|[IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)|DE|可讓運算式評估工具 (EE)，才能偵錯工具的 [輸出] 視窗中顯示一則訊息。|  
-|[IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)|EE|代表 managed 程式碼的物件。|  
-|[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)|EE|基底介面中的所有符號表示繫結至記憶體位址。|  
-|[IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)|EE|與相同[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面但可提供其他資訊的存取權。|  
-|[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)|EE|表示剖析準備要評估的運算式。|  
-|[IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)|EE|表示的指標。|  
-|[IDebugPointerObject3](../../../extensibility/debugger/reference/idebugpointerobject3.md)|EE|表示剖析樹狀結構中的指標，並延伸**IDebugPointerObject**介面。|  
-|[IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)|EE|讓您能夠修改透過類型視覺化檢視類型的值。|  
-|[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)|VS|提供存取自訂檢視器和類型視覺化檢視。|  
-|[IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)|VS|讓您能夠建立[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)物件。|  
-|[IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)|EE|表示的集合[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件。|  
+|[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)|EE|表示 (EE) 的增強版運算式評估工具。|  
+|[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)|EE|表示具有增強型剖析器樹狀結構 (EE) 的運算式評估工具。|  
+|[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)|EE|表示函數。|  
+|[IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)|EE|代表函式並增強 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 介面。|  
+|[IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)|DE|讓運算式評估工具 (EE) 在偵錯工具的輸出視窗中顯示訊息。|  
+|[IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)|EE|表示 managed 程式碼物件。|  
+|[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)|EE|代表系結至記憶體位址之任何符號的基底介面。|  
+|[IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)|EE|與 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 介面相同，但會提供其他資訊的存取權。|  
+|[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)|EE|表示準備要評估的已剖析運算式。|  
+|[IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)|EE|表示指標。|  
+|[IDebugPointerObject3](../../../extensibility/debugger/reference/idebugpointerobject3.md)|EE|表示剖析樹狀結構中的指標，並擴充 **IDebugPointerObject** 介面。|  
+|[IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)|EE|提供透過型別視覺化程式來修改型別值的功能。|  
+|[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)|VS|提供對自訂檢視器和型別視覺化的存取。|  
+|[IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)|VS|提供建立 [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) 物件的能力。|  
+|[IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)|EE|代表 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 物件的集合。|  
   
 ## <a name="see-also"></a>另請參閱  
  [API 參考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f949329c7db71386a12c3ab8d7fccf1483b8cca2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8186b1a1388745527fbb9f4dd37478942c36e62
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015671"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740002"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>逐步解說：擴充 SharePoint 專案專案類型
   您可以使用「 **商務資料連線模型** 」專案專案，在 SharePoint 中建立商務資料連線 (BDC) 服務的模型。 依預設，當您使用此專案專案建立模型時，模型中的資料不會顯示給使用者。 您也必須在 SharePoint 中建立外部清單，讓使用者可以查看資料。
@@ -36,7 +36,7 @@ ms.locfileid: "86015671"
 
 - 測試擴充功能。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
  您需要在開發電腦上執行下列元件，才能完成此逐步解說：
 
 - 支援的 Microsoft Windows、SharePoint 和 Visual Studio 版本。
@@ -161,7 +161,7 @@ ms.locfileid: "86015671"
 
 1. 在 **方案總管**中，開啟 GenerateExternalDataLists 專案中 extension.vsixmanifest 檔案的快捷方式功能表，然後選擇 [ **開啟**]。
 
-     Visual Studio 在資訊清單編輯器中開啟檔案。 Extension.vsixmanifest 檔案是 extension.vsixmanifest 檔案的基礎，所有 VSIX 封裝都需要此檔案。 如需此檔案的詳細資訊，請參閱 [VSIX 延伸架構1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。
+     Visual Studio 在資訊清單編輯器中開啟檔案。 Extension.vsixmanifest 檔案是 extension.vsixmanifest 檔案的基礎，所有 VSIX 封裝都需要此檔案。 如需此檔案的詳細資訊，請參閱 [VSIX 延伸架構1.0 參考](/previous-versions/dd393700(v=vs.110))。
 
 2. 在 [ **產品名稱** ] 方塊中，輸入 **外部資料清單**產生器。
 

@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d9e4fc4dfdff336b9ddcbd04bd031b48a8acc4dd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432608"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838868"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>如何：修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "63432608"
     |--------------------|---------------------|  
     |**name**|**Microsoft.VisualStudio.Enterprise.ASPNetHelper**|  
     |**PublicKeyToken**|**b03f5f7f11d50a3a**|  
-    |**culture**|**Neutral**|  
+    |**culture**|**中性**|  
   
 7. 加入 **codeBase** 項目做為 **dependentAssembly** 項目的子系。  
   
@@ -221,6 +221,6 @@ ms.locfileid: "63432608"
   
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：檢測動態編譯的 ASP.NET 應用程式並收集詳細計時資料](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
  [如何：檢測動態編譯的 ASP.NET 應用程式並收集記憶體資料](/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data?view=vs-2015)

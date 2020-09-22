@@ -1,5 +1,5 @@
 ---
-title: 實作自訂類別和顯示項目 |Microsoft Docs
+title: 執行自訂類別和顯示專案 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,117 +12,117 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 474d5c66507b56bea609568b6acfe9f5eff75e9c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414611"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838898"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>實作自訂類別和顯示項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-VSPackage 可以提供控制項的字型和色彩，其文字的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]整合式的開發環境 (IDE) 透過自訂類別和顯示項目。  
+VSPackage 可以透過自訂類別和顯示專案，將其文字的字型和色彩控制提供給 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 整合式開發環境 (IDE) 。  
   
- 自訂類別和顯示項目位於**字型和色彩**屬性頁。 若要開啟 **字型和色彩** 屬性頁面上**工具**功能表上，按一下 **選項**。 依序展開**環境**，然後按一下**字型和色彩**。  
+ 自訂類別和顯示專案位於 [字型 **和色彩** ] 屬性頁上。 若要開啟 [字型 **和色彩** ] 屬性頁，請按一下 [ **工具** ] 功能表上的 [ **選項**]。 展開 [ **環境** ]，然後按一下 [字型 **和色彩**]。  
   
- 當使用這項機制，Vspackage 必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>介面和其相關聯的介面。  
+ 使用這種機制時，Vspackage 必須執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> 介面及其相關聯的介面。  
   
- 基本上，這項機制可用來修改現有的所有**顯示的項目**並**類別**包含它們。 不過，它應該不會用來修改**文字 EditorCategory**或其**顯示項目**。 如需詳細資訊，請參閱 <<c0> [ 字型和色彩概觀](../extensibility/font-and-color-overview.md)。  
+ 基本上，這個機制可以用來修改所有現有的 **顯示專案** 和包含它們的 **類別** 。 不過，它不應該用來修改 **文字 EditorCategory** 或其 **顯示專案**。 如需詳細資訊，請參閱 [字型和色彩總覽](../extensibility/font-and-color-overview.md)。  
   
- 若要實作自訂**分類**或是**顯示項目**，VSPackage 必須：  
+ 若要執行自訂 **類別** 或 **顯示專案**，VSPackage 必須：  
   
 - 建立或識別登錄中的類別。  
   
-   IDE 的實作**字型和色彩**屬性頁會使用此資訊正確查詢服務，支援指定的類別。  
+   IDE 的 [字型 **和色彩** ] 屬性頁的執行會使用這項資訊，正確地查詢支援指定分類的服務。  
   
-- 建立或識別登錄中 （選擇性） 的群組。  
+- 在登錄中建立或識別群組 (選擇性) 。  
   
-   它可能是適合用來定義群組，這代表兩個或多個類別的聯集。 如果定義群組，則 IDE 會自動合併子類別，並且會顯示群組內的項目。  
+   定義群組（代表兩個或多個類別的聯集）可能會很有用。 如果已定義群組，IDE 會自動合併子類別，並將顯示專案散發到群組中。  
   
-- 實作 IDE 支援。  
+- 執行 IDE 支援。  
   
-- 處理字型和色彩的變更。  
+- 處理字型和色彩變更。  
   
-  如需資訊，請參閱[存取儲存的字型和色彩設定](../extensibility/accessing-stored-font-and-color-settings.md)。  
+  如需詳細資訊，請參閱 [存取預存字型和色彩設定](../extensibility/accessing-stored-font-and-color-settings.md)。  
   
-## <a name="to-create-or-identify-categories"></a>若要建立或識別分類  
+## <a name="to-create-or-identify-categories"></a>若要建立或識別類別  
   
-- 建構一種特殊的類別目錄下的登錄項目 [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >* \FontAndColors\\`<Category>`]  
+- 在 [HKLM\SOFTWARE\Microsoft \Visual Studio \\ *\<Visual Studio version>* \FontAndColors \\ `<Category>` ] 下建立特殊類型的分類登錄專案  
   
-   *\<類別目錄 >* 是類別目錄的非當地語系化名稱。  
+   *\<Category>* 這是類別目錄的非當地語系化名稱。  
   
-- 填入登錄中的以兩個值：  
+- 以兩個值填入登錄：  
   
   |名稱|類型|資料|描述|  
   |----------|----------|----------|-----------------|  
-  |分類|REG_SZ|GUID|若要識別類別，建立 GUID。|  
-  |套件|REG_SZ|GUID|VSPackage 服務，可支援分類的 GUID。|  
+  |類別|REG_SZ|GUID|建立用來識別類別目錄的 GUID。|  
+  |套件|REG_SZ|GUID|支援類別目錄之 VSPackage 服務的 GUID。|  
   
-  在登錄中指定的服務必須提供實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>對應分類。  
+  登錄中指定的服務必須針對對應的分類提供的實作為 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> 。  
   
 ## <a name="to-create-or-identify-groups"></a>若要建立或識別群組  
   
-- 建構一種特殊的類別目錄下的登錄項目 [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >* \FontAndColors\\  *\<群組 >*]  
+- 在 [HKLM\SOFTWARE\Microsoft \Visual Studio \\ *\<Visual Studio version>* \FontAndColors \\ *\<group>* ] 下建立特殊類型的分類登錄專案  
   
-   *\<群組 >* 是群組的非當地語系化名稱。  
+   *\<group>* 這是群組的非當地語系化名稱。  
   
-- 填入登錄中的以兩個值：  
+- 以兩個值填入登錄：  
   
   |名稱|類型|資料|描述|  
   |----------|----------|----------|-----------------|  
-  |分類|REG_SZ|GUID|建立識別群組的 GUID。|  
-  |套件|REG_SZ|GUID|支援的類別目錄服務的 GUID。|  
+  |類別|REG_SZ|GUID|建立用來識別群組的 GUID。|  
+  |套件|REG_SZ|GUID|支援類別目錄的服務 GUID。|  
   
-  在登錄中指定的服務必須提供實作`T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup`對應的群組。  
+  登錄中指定的服務必須提供對應群組的實作為 `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` 。  
   
-## <a name="to-implement-ide-support"></a>若要實作 IDE 支援  
+## <a name="to-implement-ide-support"></a>若要執行 IDE 支援  
   
-- 實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider.GetObject%2A>，這會傳回<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>介面或有`T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup`介面，以針對每個 IDE**分類**或群組提供的 GUID。  
+- 實作為 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider.GetObject%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` 提供的每個 **類別** 或群組 GUID 的介面或介面。  
   
-- 針對每個**分類**它支援、 VSPackage 實作的個別執行個體<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>介面。  
+- 針對它支援的每個 **類別** ，VSPackage 會實作為介面的個別實例 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> 。  
   
-- 透過實作方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>必須提供具有的 IDE:  
+- 透過執行的方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> 必須提供 IDE：  
   
-  - 清單**顯示的項目**在**類別目錄。**  
+  - **類別目錄**中**顯示專案**的清單。  
   
-  - 可當地語系化的名稱，如**顯示的項目**。  
+  - **顯示專案**的可當地語系化名稱。  
   
-  - 顯示針對每個成員的資訊**分類**。  
+  - 顯示每個 **類別目錄**成員的資訊。  
   
   > [!NOTE]
-  > 每隔**分類**必須包含至少一個**顯示項目**。  
+  > 每個 **類別** 都必須包含至少一個 **顯示專案**。  
   
-- IDE 使用`T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup`介面來定義數個類別的聯集。  
+- IDE 會使用 `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` 介面來定義數個類別的聯集。  
   
-   它的實作提供的 IDE:  
+   它的實作為 IDE 提供：  
   
-  - 一份**分類**組成特定的群組。  
+  - 組成指定群組的 **類別目錄** 清單。  
   
-  - 存取的執行個體<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>支援每個**分類**群組內。  
+  - 存取 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> 支援群組內每個 **類別目錄** 的實例。  
   
-  - 可當地語系化的群組名稱。  
+  - 可當地語系化的組名。  
   
-- 正在更新 IDE:  
+- 更新 IDE：  
   
-   IDE 會快取資訊的相關**字型和色彩**設定。 因此，在 IDE 的任何修改後**字型和色彩**組態，建議您最好確定快取是最新狀態。  
+   IDE 會快取 **字型和色彩** 設定的相關資訊。 因此，在任何修改 IDE **字型和色彩** 設定之後，建議您確認快取是最新的。  
   
-  更新快取透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>介面，而且可以是執行全域方式或只在選取的項目。  
+  更新快取是透過介面完成 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> ，而且可以在全域或只在選取的專案上執行。  
   
-## <a name="to-handle-font-and-color-changes"></a>若要處理的字型和色彩的變更  
- 若要正確支援 VSPackage 顯示文字的顏色標示，支援 VSPackage 的顏色標示服務必須回應使用者起始所做的變更透過**字型和色彩**屬性頁面。 VSPackage 的做法是：  
+## <a name="to-handle-font-and-color-changes"></a>處理字型和色彩變更  
+ 若要適當地支援 VSPackage 所顯示之文字的顏色標示，支援 VSPackage 的顏色標示服務必須透過 [字型] **和 [色彩** ] 屬性頁來回應使用者所起始的變更。 VSPackage 執行此動作的方法如下：  
   
-- 藉由實作處理 IDE 所產生的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>介面。  
+- 藉由執行介面來處理 IDE 產生的事件 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> 。  
   
-     IDE 呼叫適當的方法遵循使用者修改**字型和色彩**頁面。 比方說，它會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A>方法如果在選取新的字型。  
+     IDE 會在使用者修改 [字型 **和色彩** ] 頁面之後，呼叫適當的方法。 例如， <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> 如果選取新的字型，則會呼叫方法。  
   
      -或-  
   
-- 輪詢變更的 IDE。  
+- 輪詢 IDE 以進行變更。  
   
-     這可透過系統實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。 主要目的是為了支援持續性，雖然<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>方法可用來取得字型和色彩資訊**顯示項目**。 如需詳細資訊，請參閱 <<c0> [ 存取儲存的字型和色彩設定](../extensibility/accessing-stored-font-and-color-settings.md)。  
+     這可以透過系統實行的介面來完成 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> 。 雖然主要是為了支援持續性，但是 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> 方法可以用來取得 **顯示專案**的字型和色彩資訊。 如需詳細資訊，請參閱 [存取預存字型和色彩設定](../extensibility/accessing-stored-font-and-color-settings.md)。  
   
     > [!NOTE]
-    > 為了確保透過輪詢所得到的結果正確無誤，它可能會使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>介面，以決定在呼叫的擷取方法之前是否需要快取排清和更新<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。  
+    > 為了確保輪詢所取得的結果正確，在呼叫介面的抓取方法之前，使用介面判斷是否需要快取排清和更新可能會很有用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> 。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>   
@@ -131,7 +131,7 @@ VSPackage 可以提供控制項的字型和色彩，其文字的[!INCLUDE[vsprvs
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
- [取得字型和色彩資訊文字的顏色標示](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
- [存取預存的字型和色彩設定](../extensibility/accessing-stored-font-and-color-settings.md)   
- [如何：存取的內建的字型和色彩配置](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
+ [取得文字顏色標示的字型和色彩資訊](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
+ [存取預存字型和色彩設定](../extensibility/accessing-stored-font-and-color-settings.md)   
+ [如何：存取內建字型和色彩配置](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
  [字型和色彩概觀](../extensibility/font-and-color-overview.md)

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d36d688c29894bd65eae29e033ef1d94869e04fd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64824682"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839150"
 ---
-# <a name="idiasymbolgetvolatiletype"></a>IDiaSymbol::get_volatileType
+# <a name="idiasymbolget_volatiletype"></a>IDiaSymbol::get_volatileType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取指定使用者定義資料型別 (UDT) 是否為變動性的旗標。  
+抓取旗標，這個旗標會指定 (UDT) 的使用者定義資料類型是否為 volatile。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,16 +35,16 @@ HRESULT get_volatileType ( 
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]會傳回`TRUE`如果 UDT 是變動性; 否則會傳回`FALSE`。  
+ 擴展 `TRUE` 如果 UDT 是暫時性的，則傳回，否則傳回 `FALSE` 。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。  
   
 ## <a name="remarks"></a>備註  
- 在C++，可以使用標記 UDT`volatile`關鍵字，表示無法從一個存取存到下一個假設其內容。  
+ 在 c + + 中，您可以使用關鍵字來標記 UDT `volatile` ，表示無法將其內容從某個存取權視為存在於下一個存取。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

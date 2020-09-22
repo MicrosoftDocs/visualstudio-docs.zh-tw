@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 580637cf1058c8bfbd10ac7812e59c802830d95e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64817416"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839083"
 ---
-# <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
+# <a name="idiasymbolget_registerid"></a>IDiaSymbol::get_registerId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取位置的註冊指示項時[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設定為`LocIsEnregistered`。  
+當 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) 設定為時，抓取位置的註冊指示項 `LocIsEnregistered` 。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,16 +35,16 @@ HRESULT get_registerId ( 
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回之位置的註冊指示項。  
+ 擴展傳回位置的註冊指示項。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 > [!NOTE]
-> 傳回值為`S_FALSE`表示屬性不是適用於符號。  
+> 的傳回值 `S_FALSE` 表示該屬性不適用於符號。  
   
 ## <a name="remarks"></a>備註  
- 如果符號為相對於暫存器，亦即，如果符號[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設為`LocIsRegRel`，使用`get_registerId`方法，後面呼叫[idiasymbol:: Get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)若要發揮符號所在位置的暫存器中的位移的方法。  
+ 如果符號是相對於暫存器，亦即，如果符號的 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) 設定為 `LocIsRegRel` ，請使用 `get_registerId` 方法，然後呼叫 [IDiaSymbol：： get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) 方法，以取得符號所在位置之暫存器的位移。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

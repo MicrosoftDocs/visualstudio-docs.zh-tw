@@ -1,5 +1,5 @@
 ---
-title: HOW TO：舊版語言服務中的隱藏的文字支援 |Microsoft Docs
+title: 如何：在舊版語言服務中提供隱藏文字支援 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,39 +13,39 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 82b8ae72fec0d13eb9da9226945d9a55b60ce186
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436157"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838973"
 ---
-# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>HOW TO：在舊版語言服務中提供隱藏文字的支援
+# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>如何︰在舊版語言服務中提供隱藏文字的支援
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-您可以建立大綱區域除了隱藏的文字區域。 用戶端控制或編輯器控制，可以是隱藏的文字區域，並用來完全隱藏的文字區域。 編輯器會顯示為水平線的隱藏的區域。 這個範例是 HTML 編輯器中的 [僅限指令碼] 檢視。  
+除了外框區域外，您還可以建立隱藏的文字區域。 隱藏的文字區域可以是由用戶端控制或編輯編輯器，而且可用來完全隱藏文字的區域。 編輯器會將隱藏的區域顯示為水平線條。 其中一個範例就是在 HTML 編輯器中只會看到 [腳本]。  
   
 ## <a name="procedure"></a>程序  
   
-#### <a name="to-implement-a-hidden-text-region"></a>若要實作的隱藏的文字區域  
+#### <a name="to-implement-a-hidden-text-region"></a>若要執行隱藏的文字區域  
   
-1. 呼叫`QueryService`針對<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>。  
+1. `QueryService`的呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> 。  
   
-     這會傳回的指標<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>。  
+     這會傳回的指標 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> 。  
   
-2. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>，傳入指定的文字緩衝區的指標。 這會決定是否隱藏的文字的工作階段已存在的緩衝區。  
+2. 呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A> ，傳遞給定文字緩衝區的指標。 這會決定緩衝區是否已經有隱藏的文字會話。  
   
-3. 如果已經存在，則您不需要建立一個，現有的指標<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>會傳回物件。 列舉及建立隱藏的文字區域中使用這個指標。 否則，呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>建立隱藏的文字的工作階段緩衝區。  
+3. 如果已經存在，則您不需要建立一個，而且 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> 會傳回現有物件的指標。 使用這個指標來列舉和建立隱藏的文字區域。 否則，呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> 以建立緩衝區的隱藏文字會話。  
   
-     指標<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>會傳回物件。  
+     傳回物件的指標 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> 。  
   
     > [!NOTE]
-    > 當您呼叫`CreateHiddenTextSession`，您可以指定隱藏的文字，用戶端 (也就是<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>)。 隱藏的文字或大綱展開或摺疊，只要使用者時，隱藏的文字用戶端會通知您。  
+    > 當您呼叫時， `CreateHiddenTextSession` 可以指定隱藏文字用戶端 (也就是 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>) 。 當使用者展開或折迭隱藏文字或大綱時，隱藏的文字用戶端會通知您。  
   
-4. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>新增一或多新區域概述一次，指定下列資訊`reHidReg`(<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>) 參數：  
+4. 呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> 以一次新增一個或多個新的大綱區域，在 `reHidReg` () 參數中指定下列資訊 <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> ：  
   
-    1. 指定的值為`hrtConcealed`中`iType`隸屬<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>結構，以指出您要建立隱藏的區域，而不是一個大綱區域。  
+    1. 在結構的成員中指定的值， `hrtConcealed` `iType` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> 表示您要建立隱藏的區域，而不是外框區域。  
   
         > [!NOTE]
-        > 隱藏的區域隱藏時，編輯器會自動顯示隱藏的區域，以指出其存在周圍的線條。  
+        > 隱藏隱藏區域時，編輯器會自動顯示隱藏區域周圍的行，以指出其存在。  
   
-    2. 指定的區域是用戶端控制，或以控制編輯器`dwBehavior`的成員<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>結構。 智慧型大綱實作可以包含各種編輯器和用戶端控制的大綱和隱藏的文字區域。
+    2. 指定區域是否在結構的成員中是由用戶端控制或編輯 `dwBehavior` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> 。 您的智慧型大綱執行可以混合使用編輯器和用戶端控制的大綱和隱藏文字區域。

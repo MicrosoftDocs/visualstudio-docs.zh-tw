@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringChars |Microsoft Docs
+title: IDebugProperty3：： GetStringChars |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 661cf6833c292d5ff4015649d494ee3a7d04fdbb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419890"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839107"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-擷取此屬性相關聯的字串，並將它儲存在使用者提供的緩衝區。  
+抓取與這個屬性相關聯的字串，並將它儲存在使用者提供的緩衝區中。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,24 +44,24 @@ int GetStringChars(
   
 #### <a name="parameters"></a>參數  
  `buflen`  
- [in]使用者提供的緩衝區可容納的字元數上限。  
+ 在使用者提供的緩衝區可以容納的最大字元數。  
   
  `rgString`  
- [out]傳回的字串。  
+ 擴展傳回字串。  
   
- [C++只]，`rgString`是接收之字串的 Unicode 字元的緩衝區的指標。 這個緩衝區必須至少是`buflen`字元 （而不是個位元組） 的大小。  
+ [僅限 c + +] `rgString` 是接收字串 Unicode 字元之緩衝區的指標。 此緩衝區必須至少為 `buflen` 字元) 大小 (不是位元組。  
   
  `pceltFetched`  
- [out]傳回的實際儲存在緩衝區中的字元數的位置。 (可以是`NULL`在C++。)  
+ 擴展其中會傳回實際儲存在緩衝區中的字元數。  (可以是 `NULL` c + +。 )   
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。  
+ 如果成功，則傳回，否則會傳回 `S_OK` 錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 在C++，必須小心以確保至少是緩衝區`buflen`長度 Unicode 字元。 請注意，Unicode 字元長的 2 個位元組。  
+ 在 c + + 中，必須小心確保緩衝區的長度至少為 `buflen` Unicode 字元。 請注意，Unicode 字元的長度為2個位元組。  
   
 > [!NOTE]
-> 在C++，傳回的字串不包含結束的 null 字元。 如果指定的話，`pceltFetched`會在字串中指定的字元數。  
+> 在 c + + 中，傳回的字串不包含終止的 null 字元。 如果有指定， `pceltFetched` 將會指定字串中的字元數。  
   
 ## <a name="example"></a>範例  
 <!-- TODO: review snippet reference  [!CODE [[cpp]]([cpp])]  -->  

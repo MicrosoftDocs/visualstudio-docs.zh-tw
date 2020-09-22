@@ -1,5 +1,5 @@
 ---
-title: 提供可用命令 |Microsoft Docs
+title: 讓命令可供使用 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,25 +14,25 @@ caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cab4244fbf9173895159a4b104260006fc93f0c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436254"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838780"
 ---
 # <a name="making-commands-available"></a>提供可用的命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-當多個 Vspackage 加入至 Visual Studio 時，使用者介面 (UI) 可能會變得過擁擠，使用命令。 您可以設計您的套件，以協助減少此問題，如下：  
+將多個 Vspackage 新增至 Visual Studio 時，使用者介面 (UI) 可能會變成使用命令 overcrowded。 您可以針對套件進行程式設計，以協助減少此問題，如下所示：  
   
-- 程式封裝，讓它在使用者時才會載入需要它。  
+- 將封裝程式設計成隻在使用者需要時才載入。  
   
-- 程式封裝，使其命令才會顯示它們可能需要整合式的開發環境 (IDE) 的目前狀態的內容中。  
+- 編寫套件的程式，只在整合式開發環境 (IDE) 的目前狀態內容需要時，才會顯示其命令。  
   
 ## <a name="delayed-loading"></a>延遲載入  
- 若要啟用的一般方式延遲載入是設計的 VSPackage，讓其命令會顯示在 UI 中，但直到使用者按一下其中一個命令，將不載入封裝本身。 若要這麼做，在.vsct 檔案中，建立不有任何命令旗標的命令。  
+ 啟用延遲載入的一般方式是設計 VSPackage，讓其命令顯示在 UI 中，但在使用者按一下其中一個命令之前，不會載入封裝本身。 若要完成此動作，請在 .vsct 檔案中建立沒有命令旗標的命令。  
   
- 下列範例顯示從.vsct 檔案功能表命令的定義。 這是 Visual Studio Package 範本所產生的命令時**功能表命令**選取範本中的選項。  
+ 下列範例會顯示 .vsct 檔案中功能表命令的定義。 這是在選取範本中的 **功能表命令** 選項時，由 Visual Studio 套件範本產生的命令。  
   
 ```xml  
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">  
@@ -46,23 +46,23 @@ ms.locfileid: "63436254"
   
 ```  
   
- 在範例中，如果父群組中， `MyMenuGroup`，例如是最上層功能表的子系**工具** 功能表中，此命令將會看到該功能表上，但執行命令的封裝，將不會載入，直到按下命令由使用者。 不過，透過程式設計來實作命令<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面，您可以啟用要先展開功能表，其中包含命令時載入的封裝。  
+ 在此範例中，如果父群組 `MyMenuGroup` 是最上層功能表（例如 [ **工具** ] 功能表）的子系，則該命令會顯示在該功能表中，但在使用者按下命令之前，將不會載入執行命令的封裝。 不過，藉由程式設計命令來執行 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面，您可以在第一次展開包含命令的功能表時，讓封裝載入。  
   
- 請注意，延遲的載入可能也會改善啟動效能。  
+ 請注意，延遲的載入也可以改善啟動效能。  
   
-## <a name="current-context-and-the-visibility-of-commands"></a>目前的內容和可見性的命令  
- 您可以程式設計 VSPackage 的命令要顯示或隱藏的取決於 VSPackage 資料的動作或目前相關的目前狀態。 您可以使用來設定它的命令的狀態通常實作 VSPackage<xref:EnvDTE.IDTCommandTarget.QueryStatus%2A>方法從<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面，但這需要才能夠執行程式碼要載入 VSPackage。 相反地，我們建議您讓 IDE 管理命令的可見性，而不載入封裝。 若要這樣做，在.vsct 檔案中，關聯一或多個特殊的 UI 內容中的命令。 這些 UI 內容會由稱為 GUID 來識別*命令內容 GUID*。  
+## <a name="current-context-and-the-visibility-of-commands"></a>目前的內容和命令的可見度  
+ 您可以根據目前的 VSPackage 資料狀態或目前相關的動作，將 VSPackage 命令程式設計為可見或隱藏。 您可以啟用 VSPackage 來設定其命令的狀態（通常是藉由使用介面的方法實作為 <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ），但這需要先載入 VSPackage，才能執行程式碼。 相反地，我們建議您啟用 IDE 來管理命令的可見度，而不需要載入封裝。 若要這樣做，請在 .vsct 檔案中，將命令與一或多個特殊的 UI 內容產生關聯。 這些 UI 內容是由稱為 *命令內容 guid*的 guid 所識別。  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 監視所產生的使用者動作，例如載入專案，或將編輯建置變更。 發生變更時，會自動修改 IDE 的外觀。 下表顯示四個主要的內容，IDE 的變更，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]監視。  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 監視使用者動作所產生的變更，例如載入專案或從編輯到建立。 發生變更時，會自動修改 IDE 的外觀。 下表顯示監視之 IDE 變更的四個主要內容 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。  
   
-|內容的型別|描述|  
+|內容類型|描述|  
 |---------------------|-----------------|  
-|作用中的專案類型|對於大部分的專案類型，這`GUID`值等同於 VSPackage 實作專案的 GUID。 不過，[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]專案中使用 專案類型`GUID`做為值。|  
-|使用中視窗|一般而言，這是在建立索引鍵繫結的目前 UI 內容的最後一個主動式文件視窗。 不過，它也可能是一個工具視窗，類似於內部網頁瀏覽器的索引鍵繫結資料表。 多個索引標籤的文件視窗，例如 HTML 編輯器，為每個索引標籤會有不同的命令內容`GUID`。|  
-|作用中的語言服務|目前顯示在文字編輯器中的檔案與相關聯的語言服務。|  
-|作用中的工具視窗|工具視窗已開啟，並具有焦點。|  
+|作用中的專案類型|針對大部分的專案類型，這個值與執行 `GUID` 專案之 VSPackage 的 GUID 相同。 不過， [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 專案會使用專案類型 `GUID` 作為值。|  
+|使用中視窗|通常，這是最後一個使用中的文件視窗，可建立目前的 UI 內容以進行索引鍵系結。 不過，它也可能是具有類似于內部網頁瀏覽器之按鍵系結表的工具視窗。 針對多索引標籤式文件視窗（例如 HTML 編輯器），每個索引標籤都有不同的命令內容 `GUID` 。|  
+|主動式語言服務|與目前在文字編輯器中顯示的檔案相關聯的語言服務。|  
+|作用中的工具視窗|開啟並具有焦點的工具視窗。|  
   
- 第五個的主要內容區域是 IDE 的 UI 狀態。 UI 內容均由作用中的命令內容`GUID`s，如下所示：  
+ 第五個主要內容區域是 IDE 的 UI 狀態。 UI 內容是由 active 命令內容所識別，如下所示 `GUID` ：  
   
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
 
@@ -86,27 +86,27 @@ ms.locfileid: "63436254"
 
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
   
-  這些 Guid 會標示為作用中或非使用中，根據 IDE 的目前狀態。 多個 UI 內容可同時處於作用中。  
+  這些 Guid 會標示為作用中或非作用中，視 IDE 目前的狀態而定。 多個 UI 內容可以同時處於作用中狀態。  
   
-### <a name="hiding-and-displaying-commands-based-on-context"></a>隱藏和顯示內容為基礎的命令  
- 您可以顯示或隱藏在 IDE 中的 [套件] 命令，而不載入封裝本身。 若要這樣做，請定義命令封裝.vsct 檔案中使用`DefaultDisabled`， `DefaultInvisible`，並`DynamicVisibility`命令旗標並新增一或多個[VisibilityItem](../../extensibility/visibilityitem-element.md)項目[VisibilityConstraints](../../extensibility/visibilityconstraints-element.md)一節。 當指定的命令內容`GUID`會變成作用中，此命令會顯示不含載入封裝。  
+### <a name="hiding-and-displaying-commands-based-on-context"></a>根據內容隱藏和顯示命令  
+ 您可以在 IDE 中顯示或隱藏封裝命令，而不需要載入封裝本身。 若要這樣做，請使用、和命令旗標，在封裝的 .vsct 檔案中定義命令， `DefaultDisabled` `DefaultInvisible` `DynamicVisibility` 然後將一或多個 [VisibilityItem](../../extensibility/visibilityitem-element.md) 專案加入至 [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) 區段。 當指定的命令內容 `GUID` 變成作用中時，就會顯示命令，而不會載入封裝。  
   
-### <a name="custom-context-guids"></a>自訂內容的 Guid  
- 如果未定義的 GUID 不適當的命令內容中，您可以定義在 VSPackage 中，並再進行程式設計，讓它成為作用中或非使用中，視需要控制命令的可見性。 使用<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服務：  
+### <a name="custom-context-guids"></a>自訂內容 Guid  
+ 如果未定義適當的命令內容 GUID，您可以在 VSPackage 中定義一個，然後視需要將其設計為作用中或非作用中，以控制命令的可見度。 使用 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> 服務：  
   
-- 註冊內容的 Guid (藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>方法)。  
+- 藉由呼叫方法) 來註冊內容 Guid (<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> 。  
   
-- 取得內容的狀態`GUID`(藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法)。  
+- 藉 `GUID` 由呼叫) 方法，取得內容 (的狀態 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 。  
   
-- 開啟內容`GUID`s 開啟和關閉 (藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>方法)。  
+- 藉 `GUID` 由呼叫方法) ，開啟和關閉 (的內容 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> 。  
   
     > [!CAUTION]
-    > 請確定，VSPackage 不會影響任何現有內容 GUID 的狀態因為其他 Vspackage 可能取決於它們。  
+    > 請確定您的 VSPackage 不會影響任何現有內容 GUID 的狀態，因為其他 Vspackage 可能相依于這些 GUID。  
   
 ## <a name="example"></a>範例  
- VSPackage 命令的下列範例會示範動態可視性由命令內容管理，而不必載入 VSPackage 的命令。  
+ 下列 VSPackage 命令範例會示範命令內容所管理的命令動態可見度，而不需要載入 VSPackage。  
   
- 命令是設定為啟用，而且顯示時的解決方案存在;也就是說，只要其中一個下列的命令內容的 Guid 是作用中：  
+ 此命令會設定為在解決方案存在時啟用和顯示;也就是說，每當下列其中一個命令內容 Guid 為作用中時：  
   
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
   
@@ -114,7 +114,7 @@ ms.locfileid: "63436254"
   
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
   
-  在範例中，請注意，每個命令旗標是個別[命令旗標](../../extensibility/command-flag-element.md)項目。  
+  在此範例中，請注意，每個命令旗標都是個別的 [命令旗](../../extensibility/command-flag-element.md) 標元素。  
   
 ```  
 <Button guid="guidDynamicVisibilityCmdSet" id="cmdidMyCommand"   
@@ -132,7 +132,7 @@ ms.locfileid: "63436254"
   
 ```  
   
- 也請注意，必須在個別指定每個 UI 內容`VisibilityItem`項目，如下所示。  
+ 另請注意，每個 UI 內容都必須在個別的元素中指定，如下所示 `VisibilityItem` 。  
   
 ```xml  
 <VisibilityConstraints>  
@@ -147,7 +147,7 @@ ms.locfileid: "63436254"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [MenuCommand 對比OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)   
- [Vspackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [在 Vspackage 中路由傳送命令](../../extensibility/internals/command-routing-in-vspackages.md)   
+ [Menucommand 對比與 OleMenuCommands 的比較](../../misc/menucommands-vs-olemenucommands.md)   
+ [Vspackage 如何新增消費者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Vspackage 中的命令路由](../../extensibility/internals/command-routing-in-vspackages.md)   
  [以動態方式加入功能表項目](../../extensibility/dynamically-adding-menu-items.md)

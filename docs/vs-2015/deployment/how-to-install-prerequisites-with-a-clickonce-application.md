@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用 ClickOnce 應用程式安裝必要條件 |Microsoft Docs
+title: 如何：使用 ClickOnce 應用程式安裝必要條件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,58 +18,58 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 18c8dd4d0bc79ac2f3af44b8b5f8dd6faacb9f45
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434086"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838896"
 ---
-# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>HOW TO：與 ClickOnce 應用程式一起安裝必要軟體
+# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>如何：使用 ClickOnce 應用程式安裝必要條件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-所有[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式需要它們才能執行，在電腦上安裝正確版本的.NET framework; 許多應用程式以及其他必要條件。 發佈時[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式中，您可以選擇一組與您的應用程式一起封裝的必要元件。 在安裝期間，會檢查以判斷它是否已經存在; 每個必要條件如果在安裝之前未將已安裝[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式。  
+所有 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式都需要在電腦上安裝正確的 .NET Framework 版本，才能執行這些應用程式; 許多應用程式也有其他必要條件。 發佈 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式時，您可以選擇要與應用程式一起封裝的一組必要條件元件。 在安裝時，將會針對每個必要條件執行檢查，以判斷它是否已存在;如果不是，則會在安裝 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式之前安裝。  
   
- 而不是封裝和發行必要條件，您也可以指定元件的下載位置。 比方說，而不是包含每個應用程式，您將發行的必要條件，您可以使用集中式的檔案共用或包含的所有必要條件的安裝程式的 Web 位置，在安裝時，將下載的元件和安裝從該位置。  
+ 您也可以指定元件的下載位置，而不是封裝和發佈必要條件。 例如，您可能會在安裝期間使用集中式檔案共用或包含所有必要條件安裝程式的 Web 位置，而不是包含必要條件，而是從該位置下載並安裝元件。  
   
 > [!IMPORTANT]
-> 您應該將必要條件安裝程式封裝加入您的開發電腦，然後再發行您的第一個[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式。 如需詳細資訊，請參閱[如何：隨著 ClickOnce 應用程式納入必要軟體](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md)。  
+> 您應該先將先決條件安裝程式套件新增至您的開發電腦，然後再發佈第一個 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。 如需詳細資訊，請參閱 [如何：將必要條件納入 ClickOnce 應用程式](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md)。  
   
- 在進行管理的必要條件**必要條件** 對話方塊中，從可存取**發佈**窗格**專案設計工具**。  
+ 必要條件是在 [**必要條件**] 對話方塊中管理的，可從 [**專案設計**工具] 的 [**發行**] 窗格存取。  
   
 > [!NOTE]
-> 除了預先決定的必要條件清單中，您可以將自己的元件加入清單。 如需詳細資訊，請參閱 <<c0> [ 建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)。  
+> 除了預先決定的必要條件清單之外，您還可以將自己的元件新增至清單。 如需詳細資訊，請參閱建立啟動載入器 [套件](../deployment/creating-bootstrapper-packages.md)。  
   
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>若要指定要使用 ClickOnce 應用程式安裝的必要條件  
   
-1. 選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。  
+1. 在 **方案總管**中選取專案時，在 [ **專案** ] 功能表上按一下 [ **屬性**]。  
   
-2. 選取 **發佈**窗格。  
+2. 選取 [ **發行** ] 窗格。  
   
-3. 按一下 **必要條件** 按鈕以開啟**必要條件** 對話方塊。  
-  
-4. 在 [ **必要條件** ] 對話方塊中，確定已選取 [ **建立安裝程式以安裝必要條件元件** ] 核取方塊。  
-  
-5. 在 **必要條件**清單中，檢查您想要安裝，然後按一下 元件**確定**。  
-  
-     將封裝和發行您的應用程式以及選取的元件。  
-  
-### <a name="to-specify-a-different-download-location-for-prerequisites"></a>若要指定不同的下載位置的必要條件  
-  
-1. 選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。  
-  
-2. 選取 **發佈**窗格。  
-  
-3. 按一下 **必要條件** 按鈕以開啟**必要條件** 對話方塊。  
+3. 按一下 [ **必要條件** ] 按鈕以開啟 [ **必要條件** ] 對話方塊。  
   
 4. 在 [ **必要條件** ] 對話方塊中，確定已選取 [ **建立安裝程式以安裝必要條件元件** ] 核取方塊。  
   
-5. 在 **指定必要條件的安裝位置**區段中，選取**從下列位置下載必要條件**。  
+5. 在 [ **必要條件** ] 清單中，檢查您要安裝的元件，然後按一下 **[確定]**。  
   
-6. 從下拉式清單中，選取位置或輸入 URL、 檔案路徑或 FTP 位置，然後按一下 **[確定]。**  
+     選取的元件將會隨您的應用程式一起封裝和發佈。  
+  
+### <a name="to-specify-a-different-download-location-for-prerequisites"></a>針對必要條件指定不同的下載位置  
+  
+1. 在 **方案總管**中選取專案時，在 [ **專案** ] 功能表上按一下 [ **屬性**]。  
+  
+2. 選取 [ **發行** ] 窗格。  
+  
+3. 按一下 [ **必要條件** ] 按鈕以開啟 [ **必要條件** ] 對話方塊。  
+  
+4. 在 [ **必要條件** ] 對話方塊中，確定已選取 [ **建立安裝程式以安裝必要條件元件** ] 核取方塊。  
+  
+5. 在 [ **指定必要條件的安裝位置** ] 區段中，選取 **[從下列位置下載必要條件**]。  
+  
+6. 從下拉式清單中選取位置，或輸入 URL、檔案路徑或 FTP 位置，然後按一下 **[確定]。**  
   
     > [!NOTE]
-    > 您必須確定在安裝程式指定的元件存在於指定的位置。  
+    > 您必須確認指定的元件的安裝程式存在於指定的位置。  
   
 ## <a name="see-also"></a>另請參閱  
- [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
- [如何：使用 [發佈精靈] 發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
+ [如何：使用發佈嚮導發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

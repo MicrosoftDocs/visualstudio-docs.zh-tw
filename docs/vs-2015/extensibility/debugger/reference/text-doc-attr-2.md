@@ -1,5 +1,5 @@
 ---
-title: TEXT_DOC_ATTR_2 | Microsoft Docs
+title: TEXT_DOC_ATTR_2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9ad200d75c5534ddbe9d4ad4d9835417df6515f1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429103"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839124"
 ---
-# <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
+# <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-描述文件的屬性。  
+描述檔的屬性。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,22 +37,22 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
   
 ## <a name="members"></a>成員  
  TEXT_DOC_ATTR_READONLY_2  
- 表示文件是唯讀的。  
+ 指出檔是唯讀的。  
   
 ## <a name="remarks"></a>備註  
   
 > [!NOTE]
-> 此值未實際定義適用於 C# 組件中。 相反地，您必須將定義複製到原始程式檔中。  
+> C # 的元件中實際未定義此值。 相反地，您必須將定義複製到原始程式檔。  
   
- 作為引數[onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)方法。  
+ 以引數形式傳遞至 [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) 方法。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [枚舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)

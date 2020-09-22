@@ -1,5 +1,5 @@
 ---
-title: IDebugParsedExpression | Microsoft Docs
+title: IDebugParsedExpression |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,19 +13,19 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4756a346cc059b1f80aba98439b993ac84f1136f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431411"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90839071"
 ---
 # <a name="idebugparsedexpression"></a>IDebugParsedExpression
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關如何執行 CLR 運算式評估工具的詳細資訊，請參閱 [CLR 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 這個介面會表示準備要評估的已剖析的運算式。  
+ 這個介面表示已剖析的運算式可供評估。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,30 +33,30 @@ ms.locfileid: "63431411"
 IDebugParsedExpression : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- 運算式評估工具會實作這個介面來代表剖析的運算式，可供評估。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ 運算式評估工具會執行這個介面，以代表可供評估的已剖析運算式。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 呼叫[剖析](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)傳回此介面。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 對 [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) 的呼叫會傳回這個介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDebugParsedExpression`。  
+ 下表顯示的方法 `IDebugParsedExpression` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)|評估已剖析的運算式。|  
+|[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)|評估剖析的運算式。|  
   
 ## <a name="remarks"></a>備註  
- 當呼叫端是準備要評估的運算式時，它會呼叫[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)返回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) ，包含評估的結果。 評估，然後評估，可讓剖析的運算式會評估多次剖析、 略過費時的程序的剖析運算式這兩個部分方法。  
+ 當呼叫端準備好評估運算式時，它會呼叫 [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) 來傳回包含評估結果的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 。 這兩個部分的評估、剖析然後進行評估，可讓剖析的運算式多次評估，以略過剖析運算式的耗時處理常式。  
   
 ## <a name="requirements"></a>需求  
- 標頭： ee.h  
+ 標頭： ee. h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [剖析](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)   
+ [解析](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

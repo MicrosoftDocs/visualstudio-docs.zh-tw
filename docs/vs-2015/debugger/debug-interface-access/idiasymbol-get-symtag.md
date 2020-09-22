@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88800887a9bcc6a8108220097db41365f356b9b3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64812362"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839042"
 ---
-# <a name="idiasymbolgetsymtag"></a>IDiaSymbol::get_symTag
+# <a name="idiasymbolget_symtag"></a>IDiaSymbol::get_symTag
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取符號類型分類。  
+抓取符號類型分類器。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,13 +35,13 @@ HRESULT get_symTag ( 
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回值，以從[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)指定符號類型分類的列舉型別。  
+ 擴展傳回 [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md) 列舉中的值，這個值會指定符號類型分類器。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。  
   
 ## <a name="example"></a>範例  
   

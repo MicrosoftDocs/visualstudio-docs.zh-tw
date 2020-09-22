@@ -19,11 +19,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433003"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839053"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft 語言介面套件 (LIP) 和 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,34 +73,34 @@ ms.locfileid: "63433003"
 
 ##### <a name="to-correctly-display-characters-that-are-not-included-in-the-current-code-page"></a>正確顯示目前字碼頁中不包含的字元
 
-1. 依序按一下 [開始] 和 [控制台]，然後開啟 [地區及語言選項] (在 [!INCLUDE[win8](../includes/win8-md.md)] 中為 [區域])。
+1. 依序按一下 [開始]**** 和 [控制台]****，然後開啟 [地區及語言選項]**** (在 [!INCLUDE[win8](../includes/win8-md.md)] 中為 [區域]****)。
 
     > [!NOTE]
     > 您必須是電腦的系統管理員，才能依照這些步驟進行。
 
-2. 按一下 [進階] 按鈕。
+2. 按一下 [進階] 索引標籤。
 
-3. 在 [選取一個符合您要使用之非 Unicode 程式語言版本的語言] 清單中，選取您目前使用的語言。
+3. 在 [選取一個符合您要使用之非 Unicode 程式語言版本的語言]**** 清單中，選取您目前使用的語言。
 
 4. 按一下 [確定]。
 
 ## <a name="changing-the-language-used-for-the-ui-text-in-visual-studio"></a>變更 Visual Studio 中 UI 文字所使用的語言
- 當您在同一部電腦上安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的多個語言版本時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] UI 會預設為 [與 Microsoft Windows 相同]。 這項設定表示 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會以指定為作業系統顯示語言的語言來顯示 UI 文字。
+ 當您在同一部電腦上安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的多個語言版本時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] UI 會預設為 [與 Microsoft Windows 相同]****。 這項設定表示 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會以指定為作業系統顯示語言的語言來顯示 UI 文字。
 
 > [!NOTE]
-> 如果將 Visual Studio 設定為使用 [與 Microsoft Windows 相同]，且未安裝相符的 Visual Studio 語言套件，則 Visual Studio 會使用 Visual Studio 第一次安裝的語言。
+> 如果將 Visual Studio 設定為使用 [與 Microsoft Windows 相同]****，且未安裝相符的 Visual Studio 語言套件，則 Visual Studio 會使用 Visual Studio 第一次安裝的語言。
 
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>設定 Visual Studio 中 UI 文字所使用的語言
 
-1. 在 [ **工具** ] 功能表上按一下 [ **選項**]。
+1. 在 **[工具]** 功能表上，按一下 **[選項]** 。
 
-2. 在 [選項] 對話方塊中，展開 [環境]，然後按一下 [國際設定]。
+2. 在 [選項]**** 對話方塊中，展開 [環境]****，然後按一下 [國際設定]****。
 
-3. 在 [語言] 清單中，選擇 UI 文字應在開發環境中用來顯示的語言。
+3. 在 [語言]**** 清單中，選擇 UI 文字應在開發環境中用來顯示的語言。
 
-    若要讓 IDE 中的 UI 文字符合作業系統顯示語言設定，請選取 [與 Microsoft Windows 相同]。
+    若要讓 IDE 中的 UI 文字符合作業系統顯示語言設定，請選取 [與 Microsoft Windows 相同]****。
 
    您也可以使用 devenv 命令來設定 UI 所使用的語言。 如需詳細資訊，請參閱 [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [選項對話方塊、環境、國際設定](../ide/reference/international-settings-environment-options-dialog-box.md)

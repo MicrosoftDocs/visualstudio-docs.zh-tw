@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_farreturn |Microsoft Docs'
+title: IDiaSymbol：： get_farReturn |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d412a54c88c01e02317a397b2495708833550d7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64828672"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839189"
 ---
-# <a name="idiasymbolgetfarreturn"></a>IDiaSymbol::get_farReturn
+# <a name="idiasymbolget_farreturn"></a>IDiaSymbol::get_farReturn
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取指定的函式是否包含目前傳回的旗標。  
+抓取旗標，這個旗標會指定函數是否包含最多傳回。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,20 +35,20 @@ HRESULT get_farReturn(
   
 #### <a name="parameters"></a>參數  
  `pFlag`  
- [in]會傳回`TRUE`函式會使用目前傳回，否則會傳回`FALSE`。  
+ 在如果函式使用太多傳回，則傳回 `TRUE` ，否則傳回 `FALSE` 。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 > [!NOTE]
-> 傳回值為`S_FALSE`表示屬性不是適用於符號。  
+> 的傳回值 `S_FALSE` 表示該屬性不適用於符號。  
   
 ## <a name="requirements"></a>需求  
   
 |需求|描述|  
 |-----------------|-----------------|  
-|標頭：|dia2.h|  
-|版本:|DIA SDK v8.0|  
+|標頭：|dia2。h|  
+|版本：|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：安裝視覺化檢視 |Microsoft Docs
+title: 如何：安裝視覺化檢視 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,19 +22,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5726cea8b2e81c53b5f3fff963357946f26b199f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438232"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838903"
 ---
-# <a name="how-to-install-a-visualizer"></a>HOW TO：安裝視覺化檢視
+# <a name="how-to-install-a-visualizer"></a>如何：安裝視覺化檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 建立視覺化檢視後，您必須安裝該視覺化檢視，使 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中可以使用它。 安裝視覺化檢視的程序很簡單。  
   
 > [!NOTE]
-> 在 **存放區**應用程式，僅限標準的文字，支援 HTML、 XML 及 JSON 視覺化檢視。 不支援自訂 (使用者建立的) 視覺化檢視。  
+> 在 **Store** 應用程式中，只支援標準文字、HTML、XML 和 JSON 視覺化檢視。 不支援自訂 (使用者建立的) 視覺化檢視。  
   
 ### <a name="to-install-a-visualizer"></a>安裝視覺化檢視  
   
@@ -51,5 +51,5 @@ ms.locfileid: "63438232"
 4. 重新啟動偵錯工作階段。  
   
 ## <a name="see-also"></a>另請參閱  
- [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
+ [建立自訂的視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
  [如何：撰寫視覺化檢視](../debugger/how-to-write-a-visualizer.md)

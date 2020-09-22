@@ -9,337 +9,337 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8f17b875f0637883222a633cb1082ad24788d4c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431348"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839170"
 ---
-# <a name="notifications-and-progress-for-visual-studio"></a>通知和適用於 Visual Studio 的進度
+# <a name="notifications-and-progress-for-visual-studio"></a>適用於 Visual Studio 的通知和進度
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="BKMK_NotificationSystems"></a> 通知系統
+## <a name="notification-systems"></a><a name="BKMK_NotificationSystems"></a> 通知系統
 
-### <a name="overview"></a>總覽
- 有數種方式可以通知使用者發生的事情在 Visual Studio 中有關其軟體開發工作。
+### <a name="overview"></a>概觀
+ 有幾種方式可通知使用者有關其軟體發展工作的 Visual Studio 中發生什麼狀況。
 
- 當實作任何一種通知：
+ 在執行任何一種通知時：
 
-- **保留的最小值的通知數目**有效的數字。 通知訊息應該適用於大部分的 Visual Studio 使用者或特定功能/功能區域的使用者。 過度使用的通知可能 sidetrack 使用者，或降低認知的系統的使用便利性。
+- **將通知數目維持在最小** 有效位數。 通知訊息應該適用于大部分的 Visual Studio 使用者或特定功能/功能區域的使用者。 過度使用通知可能會 sidetrack 使用者，或降低察覺到系統的易用性。
 
-- **請確定您是要呈現清楚、 可採取動作的訊息**使用者可用來叫用適當的內容，進行更複雜的選擇和採取進一步動作。
+- **確定您正在呈現清楚、可採取** 動作的訊息，使用者可使用這些訊息來叫用適當的內容，以進行更複雜的選擇並採取進一步的動作。
 
-- **適當地提供同步和非同步的訊息。** 同步通知表示需要立即處理，例如 web 服務的當機或程式碼擲回例外狀況。 立即的方式強制回應對話方塊中，例如需要他們的意見，這些情況下，應通知使用者。 非同步通知是使用者應該了解，但不需要採取動作立即執行，例如 web 站台部署或建置作業完成時完成。 這些訊息應該更環境並不會中斷使用者的工作流程。
+- **適當地呈現同步和非同步訊息。** 同步通知表示有一些需要立即注意的內容，例如當 web 服務當機或擲回程序代碼例外狀況時。 使用者應立即以需要其輸入的方式（例如在強制回應對話方塊中）來通知這些情況。 非同步通知是使用者應該知道但不需要立即採取行動的通知，例如當組建作業完成或網站部署完成時。 這些訊息應該是更環境的，而不會中斷使用者的工作流程。
 
-- **使用強制回應對話方塊時所需採取進一步動作時，防止使用者，才**之前認可訊息或對話方塊中來決定。
+- **只有在必要時才使用強制回應對話方塊，以防止使用者** 在確認訊息或在對話方塊中顯示決策之前採取進一步的動作。
 
-- **已不再有效時，請移除環境的通知。** 不需要使用者關閉通知，如果他們已經採取來解決的問題所收到的動作。
+- **移除不再有效的環境通知。** 如果使用者已經採取動作來解決他們所收到的問題，則不需要使用者關閉通知。
 
-- **請注意通知，可能會導致錯誤的關聯。** 使用者可能會認為，一或多個其動作已觸發通知時實際上有沒有因果關係。 要清除的通知訊息中有關內容、 觸發程序和通知的來源。
+- **請注意，通知可能會導致錯誤的相互關聯。** 使用者可能會認為一或多個動作已觸發通知，事實上沒有因果關係。 請清除有關內容、觸發程式和通知來源的通知訊息。
 
-### <a name="choosing-the-right-method"></a>選擇正確方法
- 您可以使用此表格來協助您選擇正確的方法，來通知訊息的使用者。
+### <a name="choosing-the-right-method"></a>選擇正確的方法
+ 使用此表格可協助您選擇正確的方法來通知使用者您的訊息。
 
-|方法|使用|請勿使用|
+|方法|用途|請勿使用|
 |------------|---------|----------------|
-|[強制回應的錯誤訊息對話方塊](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ModalErrorMessageDialogs)|當繼續進行之前，需要使用者回應時使用。|請勿使用時則不需要封鎖使用者，並中斷其流程。 請避免使用強制回應對話方塊，如果可能的話，以顯示訊息，另一個、 較不干擾的方式。|
-|[IDE 狀態列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_IDEStatusBar)|環境文字資訊狀態相關的處理程序時使用。|請勿使用單獨。 適用於搭配其他意見反應機制。|
-|[內嵌資訊列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedInfobar)|在工具視窗或文件視窗中，使用通知進度、 錯誤狀態、 結果和/或可付諸行動的資訊。|請勿使用是否不相關的資訊列所在的位置資訊。<br /><br /> 請勿使用外部文件/工具視窗。|
-|[滑鼠游標會變更](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_MouseCursorChanges)|可用來通知處理程序會在上。 也可用來通知的狀態變更滑鼠，例如滑鼠游標拖放時進行，或處於特定模式，例如繪圖模式。|請勿用於簡短的進度變更，或如果 fluttering 的資料指標有可能 （例如，當繫結至組件的時間執行的處理序而不是整個程序）。|
-|[進度指標](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotSysProgressIndicators)|當您要報告進度 （確定或未定） 時使用。 有各種不同的進度指標類型和每個特定的使用方式。 請參閱[進度指標](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators)。||
-|[Visual Studio 通知視窗](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_VSNotificationsToolWindow)|[通知] 視窗不是可公開可擴充的。 不過，它用來通訊的 Visual Studio 中，包括重大的問題，您的授權和資訊性通知更新至 Visual Studio 或套件的相關訊息的範圍。|請勿用於其他類型的通知。|
-|[錯誤清單](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ErrorList)|當問題直接與使用者的目前開啟的方案，有問題 （錯誤/警告/資訊） 時，他們可能需要採取動作的程式碼。<br /><br /> 這包括，例如：<br /><br /> 編譯器訊息 （錯誤/警告/資訊）<br /><br /> 關於程式碼的程式碼分析/診斷訊息<br /><br /> -組建訊息<br /><br /> 可能很適合使用與專案或方案檔案的相關問題，但是先考慮的方案總管 中的指示。|請勿用於沒有任何關聯的使用者開啟的方案程式碼的項目。|
-|編輯器通知：燈泡|當您有可供解決中開啟的檔案有問題的修正時使用。<br /><br /> 請注意燈泡也應該用來裝載快速動作會建立依需求，例如重構，使用者程式碼，但在此情況下不會出現 「 通知樣式 」。|請勿使用開啟的檔案沒有任何關聯的項目。|
-|編輯器通知：波浪線|使用此選項，來提醒使用者其開啟的程式碼 （例如，紅色曲線的錯誤） 的特定範圍的相關問題。|請勿用於其開啟的程式碼的特定範圍無關的項目。|
-|[內嵌的狀態列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedStatusBars)|將提供相關內容或內容的特定工具視窗、 文件視窗或對話方塊視窗中的程序的狀態。|請勿用於一般產品通知、 處理序或特定範圍內沒有任何關聯性內容的項目。|
-|[Windows 系統匣通知](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_WindowsTray)|用來呈現通知跨處理序的處理程序或附屬應用程式。|請勿使用與 IDE 的通知。|
-|[通知泡泡](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotificationBubbles)|使用遠端程序的通知，或變更**外部**的 IDE。|請勿用於做為通知使用者的處理程序**內**IDE。|
+|[強制回應錯誤訊息對話方塊](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ModalErrorMessageDialogs)|在需要使用者回應才能繼續之前使用。|不需要封鎖使用者並中斷其流程時，請勿使用。 如果有可能以另一個較不具侵入性的方式顯示訊息，請避免使用強制回應對話方塊。|
+|[IDE 狀態列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_IDEStatusBar)|當有關于進程狀態的環境文字資訊時，請使用。|請勿單獨使用。 最好與另一個意見反應機制搭配使用。|
+|[內嵌資訊列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedInfobar)|在工具視窗或文件視窗中，使用來通知進度、錯誤狀態、結果及/或可採取動作的資訊。|如果資訊與資訊列的放置位置無關，請不要使用。<br /><br /> 請勿在檔/工具視窗之外使用。|
+|[滑鼠游標變更](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_MouseCursorChanges)|可以用來通知進程正在進行中。 也可用來通知滑鼠中有狀態變更，例如當拖放進行中或滑鼠游標處於特定模式時（例如繪圖模式）。|請勿用於簡短的進度變更，或者如果資料指標的 fluttering 可能 (例如，系結至較長執行進程的元件，而不是整個進程) 。|
+|[進度指示器](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotSysProgressIndicators)|當您需要 (確定或不定) 報告進度時，請使用。 有各種不同的進度指標類型和特定的使用方式。 查看 [進度指示器](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators)。||
+|[Visual Studio 的 [通知] 視窗](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_VSNotificationsToolWindow)|[通知] 視窗無法公開擴充。 不過，它是用來傳達有關 Visual Studio 的訊息範圍，包括您的授權的重大問題，以及 Visual Studio 或封裝之更新的語音總機。|請勿用於其他類型的通知。|
+|[錯誤清單](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ErrorList)|當問題直接與使用者目前開啟的解決方案有問題 (錯誤/警告/資訊) 時，他們可能需要對程式碼採取行動。<br /><br /> 例如，這包括：<br /><br /> -編譯器訊息 (錯誤/警告/資訊) <br /><br /> -程式碼的程式碼分析器/診斷訊息<br /><br /> -組建訊息<br /><br /> 可能適用于專案或方案檔的相關問題，但請先考慮方案總管的指示。|請勿使用與使用者開啟的方案程式碼沒有任何關聯的專案。|
+|編輯器通知：燈泡|當您有可用的修正程式來補救存在於開啟檔案中的問題時，請使用此方法。<br /><br /> 請注意，燈泡也應該用來裝載在使用者的程式碼上依需求（例如重構）採取的快速動作，但在這種情況下，不會顯示「通知樣式」。|請勿使用與開啟的檔案沒有任何關聯的專案。|
+|編輯器通知：波浪線|用來警示使用者特定範圍的開放程式碼問題 (例如，) 的紅色波浪線。|請勿用於與開啟程式碼的特定範圍無關的專案。|
+|[內嵌狀態列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedStatusBars)|用來提供特定工具視窗、文件視窗或對話方塊視窗內容中內容或流程的相關狀態。|請勿用於與特定視窗內的內容沒有任何關聯的一般產品通知、處理常式或專案。|
+|[Windows 系統匣通知](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_WindowsTray)|用來呈現跨進程進程或附屬應用程式的通知。|請勿使用與 IDE 相關的通知。|
+|[通知的氣泡](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotificationBubbles)|用來通知遠端進程或在 IDE **外部** 變更。|請勿使用做為在 IDE **中** 通知使用者進程的方法。|
 
 ### <a name="notification-methods"></a>通知方法
 
-#### <a name="BKMK_ModalErrorMessageDialogs"></a> 強制回應的錯誤訊息對話方塊
- 強制回應的錯誤訊息對話方塊用來顯示錯誤訊息，要求使用者確認或動作。
+#### <a name="modal-error-message-dialogs"></a><a name="BKMK_ModalErrorMessageDialogs"></a> 強制回應錯誤訊息對話方塊
+ [強制回應錯誤訊息] 對話方塊是用來顯示需要使用者確認或動作的錯誤訊息。
 
- ![強制回應的錯誤訊息](../../extensibility/ux-guidelines/media/0901-01-modalerrormessage.png "0901年 01_ModalErrorMessage")
+ ![強制回應錯誤訊息](../../extensibility/ux-guidelines/media/0901-01-modalerrormessage.png "0901-01_ModalErrorMessage")
 
- **警示無效的連接字串至資料庫的使用者強制回應的錯誤訊息對話方塊**
+ **強制回應錯誤訊息對話方塊會警示使用者對資料庫不正確連接字串**
 
-#### <a name="BKMK_IDEStatusBar"></a> IDE 狀態列
- 使用者注意到狀態列文字的可能性相互關聯全能電腦體驗來與 Windows 平台特定的體驗。 Visual Studio 客戶群，通常會在這兩個區域中，有經驗，但即使是經驗豐富的 Windows 使用者可能會遺漏在狀態列中的變更。 因此，[狀態] 列最適合僅供參考之用，或做為備援提示的資訊顯示在其他位置。 在對話方塊中，或通知工具視窗中，應提供任何一種使用者必須立即解決的重要資訊。
+#### <a name="ide-status-bar"></a><a name="BKMK_IDEStatusBar"></a> IDE 狀態列
+ 使用者注意到狀態列文字的可能性，與他們的電腦體驗和 Windows 平臺的特定體驗有相互關聯。 Visual Studio 的客戶群通常會在這兩個領域都有經驗，但即使是有經驗的 Windows 使用者可能會錯過狀態列中的變更。 因此，狀態列最適合用來做為資訊用途，或做為其他地方所提供資訊的重複提示。 您應在對話方塊或 [通知] 工具視窗中提供使用者必須立即解決的任何一種重要資訊。
 
- Visual Studio 的 [狀態] 列被設計來提供要顯示的數種類型的資訊。 它被劃分成的意見反應、 設計工具、 進度列、 動畫和用戶端區域。
+ Visual Studio 狀態列的設計是為了允許顯示數種類型的資訊。 它分為意見反應、設計師、進度列、動畫和用戶端的區域。
 
- 意見反應區域和設計工具區域永遠會顯示。 進度列和動畫區域一定是動態且根據使用者內容。 設計工具區域會有靜態寬度取決於提取來自隨附的資源的文字訊息字串的長度。 這可讓當地語系化，以調整寬度，而不需要變更程式碼。 適用於英文，這個字串的寬度約為 220 的像素。 設計工具區域的正常行為模式和意見反應區域會吸收剩餘的空間。
+ 意見反應區域和設計工具區域一律可見。 進度列和動畫區域一律為動態且以使用者內容為基礎。 設計工具區域具有靜態寬度，取決於從文字訊息的伴隨資源提取的字串長度。 這可讓當地語系化調整寬度，而不需要變更程式碼。 若為英文，此字串的寬度大約為220圖元。 設計工具區域會正常運作，且意見反應區域會吸收剩餘的空間。
 
- [狀態] 列也會加入視覺趣味和功能的值由通訊，例如當 IDE 偵錯模式中的各種 IDE 狀態變更以色彩標示。
+ 狀態列也以色彩標示由溝通各種 IDE 狀態變更（例如當 IDE 處於「偵測」模式時）來新增視覺利息和功能值。
 
- ![IDE 狀態列色彩變更](../../extensibility/ux-guidelines/media/0901-02-idestatusbar.png "0901年 02_IDEStatusBar")
+ ![IDE 狀態列色彩變更](../../extensibility/ux-guidelines/media/0901-02-idestatusbar.png "0901-02_IDEStatusBar")
 
  **IDE 狀態列色彩**
 
-#### <a name="BKMK_EmbeddedInfobar"></a> 內嵌資訊列
- 資訊列可以使用頂端的文件視窗或工具視窗，向使用者提示的狀態或條件。 它也可以提供命令，讓使用者可以有一個方法可以輕鬆地採取動作。 資訊列是標準的 shell 控制項。 請避免建立您自己，會採取行動，並會出現與其他人在 IDE 中不一致。 請參閱[資訊列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)實作詳細資料和使用指引。
+#### <a name="embedded-infobar"></a><a name="BKMK_EmbeddedInfobar"></a> 內嵌的資訊列
+ 您可以在文件視窗或工具視窗的頂端使用資訊列來通知使用者狀態或條件。 它也可以提供命令，讓使用者可以輕鬆地採取動作。 資訊列是標準的 shell 控制項。 請避免建立您自己的，這會在 IDE 中與其他人一起運作並出現不一致的情況。 請參閱 [資訊列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars) ，以取得執行詳細資料和使用方式指引。
 
- ![內嵌資訊列](../../extensibility/ux-guidelines/media/0901-03-embeddedinfobar.png "0901年 03_EmbeddedInfobar")
+ ![內嵌資訊列](../../extensibility/ux-guidelines/media/0901-03-embeddedinfobar.png "0901-03_EmbeddedInfobar")
 
- **資訊列會內嵌在文件視窗中，警示的使用者，IDE 會在 歷程偵錯模式中，並如同在標準偵錯模式中，編輯器不會在相同的方式回應。**
+ **內嵌在文件視窗中的資訊列會警示使用者，IDE 處於歷程偵測模式，而編輯器的回應方式與在標準的偵錯工具模式中的方式相同。**
 
-#### <a name="BKMK_MouseCursorChanges"></a> 滑鼠游標會變更
- 將滑鼠游標變更，當使用繫結至 VSColor service，並已與資料指標相關聯的色彩。 游標會變更可用於指出進行中作業，以及叫用使用者停留所在可以拖曳、 置放，或用來選取物件的目標區域。
+#### <a name="mouse-cursor-changes"></a><a name="BKMK_MouseCursorChanges"></a> 滑鼠游標變更
+ 變更滑鼠游標時，請使用與 VSColor 服務系結的色彩，而且已經與資料指標產生關聯。 資料指標變更可用來指出進行中的作業，以及使用者將滑鼠停留在可拖曳、卸載或用來選取物件的目標上的點擊區域。
 
- 前提是必須保留的作業，來表示任何進一步的輸入時，防止使用者的所有可用的 CPU 時間，請使用忙碌/等候滑鼠資料指標。 在大部分情況下，撰寫完善的應用程式使用多執行緒處理，當使用者將無法執行其他作業的時間應該很少見。
+ 只有在所有可用的 CPU 時間都必須保留給作業，以防止使用者表示任何進一步的輸入時，才使用忙碌/等候滑鼠游標。 在大部分的情況下，使用多執行緒處理的應用程式會很罕見，但防止使用者執行其他作業的時間則很罕見。
 
- 請注意，游標會變更有很有用，因為多餘的資訊提示會顯示其他位置。 請勿依賴資料指標變更為至關重要的使用者必須解決的唯一方式與使用者通訊，尤其是要傳達的項目。
+ 請記住，資料指標變更很適合用來做為其他地方所呈現資訊的重複提示。 請勿依賴資料指標變更，這是與使用者通訊的唯一方法，尤其是在嘗試傳達使用者必須解決的重要事項時。
 
-#### <a name="BKMK_NotSysProgressIndicators"></a> 進度指標
- 進度指標需要超過幾秒鐘的時間才能完成的處理程序期間提供的使用者意見反應至關重要。 可顯示進度指標就地 （附近的啟動點的動作進行中），在內嵌的狀態列中、 在強制回應對話方塊中，或在 Visual Studio 的 [狀態] 列中。 請依照下列中的指導方針[進度指標](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators)關於其使用與實作。
+#### <a name="progress-indicators"></a><a name="BKMK_NotSysProgressIndicators"></a> 進度指示器
+ 進度指標很重要，可在處理常式期間提供超過幾秒鐘的時間來完成使用者的意見反應。 進度指示器可以就地顯示 (接近進行中動作的啟動點) 、內嵌的狀態列、強制回應對話方塊或 Visual Studio 狀態列中。 遵循 [進度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators) 指標中有關其使用和執行的指引。
 
-#### <a name="BKMK_VSNotificationsToolWindow"></a> Visual Studio 通知視窗
- Visual Studio 通知視窗通知關於授權、 環境 (Visual Studio)，擴充功能和更新的開發人員。 使用者可以關閉個別的通知，或可以選擇忽略特定類型的通知。 在管理清單中，已忽略的通知**工具 > 選項**頁面。
+#### <a name="visual-studio-notifications-window"></a><a name="BKMK_VSNotificationsToolWindow"></a> Visual Studio 通知視窗
+ Visual Studio 通知視窗會通知開發人員有關授權、環境 (Visual Studio) 、延伸模組和更新。 使用者可以解除個別通知，也可以選擇忽略特定類型的通知。 已忽略通知的清單會在 [ **工具 > 選項** ] 頁面中進行管理。
 
- [通知] 視窗不是目前可延伸的。
+ [通知] 視窗目前不是可擴充的。
 
- ![Visual Studio 通知視窗](../../extensibility/ux-guidelines/media/0901-06-vsnotificationswindow.png "0901年 06_VSNotificationsWindow")
+ ![Visual Studio 的 [通知] 視窗](../../extensibility/ux-guidelines/media/0901-06-vsnotificationswindow.png "0901-06_VSNotificationsWindow")
 
  **Visual Studio 通知工具視窗**
 
-#### <a name="BKMK_ErrorList"></a> 錯誤清單
- 錯誤清單中的通知會指出錯誤和警告發生在編譯期間，或建置程序，並可讓使用者瀏覽至該特定程式碼錯誤的程式碼中。
+#### <a name="error-list"></a><a name="BKMK_ErrorList"></a> 錯誤清單
+ 錯誤清單中的通知表示在編譯和或建立進程期間發生的錯誤和警告，並可讓使用者在程式碼中流覽至該特定程式碼錯誤。
 
- ![錯誤清單](../../extensibility/ux-guidelines/media/0901-08-errorlist.png "0901年 08_ErrorList")
+ ![錯誤清單](../../extensibility/ux-guidelines/media/0901-08-errorlist.png "0901-08_ErrorList")
 
- **在 Visual Studio 中的錯誤清單**
+ **Visual Studio 中的錯誤清單**
 
-#### <a name="BKMK_EmbeddedStatusBars"></a> 內嵌的狀態列
- IDE 狀態列為動態磁碟，以設定為使用中的文件視窗和資訊更新使用者的內容和/或系統回應其用戶端區域內容，因為很難維護資訊以持續顯示，或提供長期狀態非同步處理序。 比方說，IDE 狀態列不適當的多個執行及/或立即採取行動的項目選取項目執行的測試結果的通知。 請務必保留使用者進行選取，或啟動的處理序之文件或工具 視窗的內容中的這類狀態資訊。
+#### <a name="embedded-status-bars"></a><a name="BKMK_EmbeddedStatusBars"></a> 內嵌狀態列
+ 由於 IDE 狀態列是動態的，且其用戶端區域內容會設定為使用中文件視窗以及在使用者的內容和/或系統回應上進行更新，因此很難維護連續顯示資訊或提供長期非同步處理常式的狀態。 例如，IDE 狀態列不適合用于多個執行及/或立即可操作專案選取專案的測試回合結果通知。 務必將這類狀態資訊保留在使用者進行選取或啟動處理常式的檔或工具視窗內容中。
 
- ![Embedded status bar](../../extensibility/ux-guidelines/media/0901-09-embeddedstatusbar.png "0901-09_EmbeddedStatusBar")
+ ![內嵌狀態列](../../extensibility/ux-guidelines/media/0901-09-embeddedstatusbar.png "0901-09_EmbeddedStatusBar")
 
- **在 Visual Studio 中的內嵌的狀態列**
+ **Visual Studio 中的內嵌狀態列**
 
-#### <a name="BKMK_WindowsTray"></a> Windows 系統匣通知
- Windows 通知區域位於旁邊系統時鐘在 Windows 工作列上。 許多公用程式和軟體元件提供此區域中的圖示，讓使用者可以取得整個系統的工作，例如變更螢幕解析度，或取得軟體更新的內容功能表。
+#### <a name="windows-tray-notifications"></a><a name="BKMK_WindowsTray"></a> Windows 系統匣通知
+ Windows 通知區域是 Windows 工作列上系統時鐘的旁邊。 許多公用程式和軟體元件都提供此區域中的圖示，讓使用者可以取得全系統工作的內容功能表，例如變更螢幕解析度或取得軟體更新。
 
- 應該在 Visual Studio 通知中樞，而不 Windows 通知區域中提出環境層級通知。
+ 環境層級的通知應該會出現在 Visual Studio 通知中樞，而不是 Windows 通知區域中。
 
-#### <a name="BKMK_NotificationBubbles"></a> 通知泡泡
- 通知泡泡可以顯示成編輯器/設計工具內的參考用訊息，或做為 Windows 通知區域的一部分。 使用者視為這些泡泡它們之後，就可以解決的問題即非關鍵的通知的權益。 泡泡會適當的使用者就必須立即解決的重要資訊。 如果您在 Visual Studio 中使用通知泡泡，請遵循[通知泡泡的 Windows 桌面指引](https://msdn.microsoft.com/library/windows/desktop/dn742472\(v=vs.85\).aspx)。
+#### <a name="notification-bubbles"></a><a name="BKMK_NotificationBubbles"></a> 通知的氣泡
+ 通知反升可以在編輯器/設計工具或 Windows 通知區域中顯示為資訊。 使用者會將這些冒泡視為可以稍後解決的問題，這是非關鍵通知的優點。 針對使用者必須立即解決的重要資訊，反升不適合。 如果您在 Visual Studio 中使用通知反升，請遵循 [Windows 桌面指引以取得通知的氣泡](https://msdn.microsoft.com/library/windows/desktop/dn742472\(v=vs.85\).aspx)。
 
- ![通知泡泡](../../extensibility/ux-guidelines/media/0901-07-notificationbubbles.png "0901年 07_NotificationBubbles")
+ ![通知泡泡](../../extensibility/ux-guidelines/media/0901-07-notificationbubbles.png "0901-07_NotificationBubbles")
 
- **使用適用於 Visual Studio 的 Windows 通知區域中的通知泡泡**
+ **Windows 通知區域中用於 Visual Studio 的通知反升**
 
-## <a name="BKMK_ProgressIndicators"></a> 進度指標
+## <a name="progress-indicators"></a><a name="BKMK_ProgressIndicators"></a> 進度指示器
 
-### <a name="overview"></a>總覽
- 進度指示器都是提供使用者意見反應的通知系統很重要的一部分。 它們會告知使用者何時完成處理程序和作業。 熟悉的指標類型包括進度列、 旋轉的資料指標和動畫的圖示。 型別和進度列指示器的位置取決於內容，包括報告的內容和多久程序或作業才會完成。
+### <a name="overview"></a>概觀
+ 進度指示器是通知系統的重要部分，可提供使用者意見反應。 他們會在進程和作業完成時告訴使用者。 熟悉的指標類型包括進度列、旋轉游標以及動畫圖標。 進度指標的類型和位置會視內容而定，包括所報告的內容，以及處理常式或作業完成所需的時間。
 
 #### <a name="factors"></a>因素
- 為了判斷適合哪一個指標類型，您必須判斷下列因素。
+ 若要判斷哪一個是適當的指標類型，您需要判斷下列因素。
 
-1. **執行時間：** 作業所花的時間長度
+1. **時間：** 作業將花費的時間長度
 
-2. **強制回應性：** 作業是強制性的環境 （鎖定 UI 程序完成之前）
+2. 模式 **：** 作業是否為環境的強制回應 (會在程式完成之前鎖定 UI) 
 
-3. **永續/暫時性：** 是否必須是時間較晚的報告及/或檢視進度的最終結果
+3. **持續性/暫時性：** 進度的最終結果是否需要報告及/或在稍後查看
 
-4. **確定/未定：** 是否可以計算作業結束時間和進度
+4. **確定/不定：** 是否可以計算作業的結束時間和進度
 
-5. **圖形/Textual 位置：** 進度或處理程序是否擷取的內嵌訊息時或特定的控制項，例如樹狀結構控制項中的主體
+5. **圖形/文字位置：** 進度或流程是以內嵌方式、訊息主體或特定控制項（例如樹狀目錄控制項）的形式捕獲
 
-6. **鄰近：** 進度應位於鄰近性與其相關的 UI。 （比方說，它可以在 [狀態] 列，可能會很遠的位置，或沒有要附近的按鈕，啟動處理序嗎？）
+6. **鄰近性：** 進度是否應接近與其相關的 UI。  (例如，它可以在狀態列中，它可能會很遠，還是必須靠近啟動處理常式的按鈕 ) 
 
-#### <a name="determinate-progress"></a>確定的進度
+#### <a name="determinate-progress"></a>確定進度
 
-|進度型別|何時及如何使用|注意|
+|進度類型|時機和使用方式|注意|
 |-------------------|-------------------------|-----------|
-|（確定） 的進度列|預期的持續時間 > 5 秒。<br /><br /> 可能包含處理序詳細資料的文字的描述。|**不**嵌入動畫中的文字。|
-|資訊列|訊息內容的 UI 相關聯。 請參閱[資訊列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)。<br /><br /> 可能包含處理序詳細資料的文字的描述。|**不**使用多個資訊列，當您想要表示多個處理序。 請改用堆疊的進度列。|
-|輸出視窗|暫時性通知： 應用程式層級程序，使用者想要**檢閱**之後完成的詳細資料。|**不**如果使用者將需要稍後參考資料使用。|
-|記錄檔|很重要時，搭配 intransient 的通知，萬一**儲存**之後完成的詳細資料。||
-|狀態列|暫時性通知： 應用程式層級程序，使用者將會**不需要**之後完成的詳細資料。<br /><br /> 包含內嵌的進度列。<br /><br /> 可能包含處理序詳細資料的文字的描述。||
+|進度列 (確定) |預期的 >持續期間（5秒）。<br /><br /> 可能包含流程詳細資料的文字描述。|**不要** 將文字內嵌至動畫。|
+|資訊列|與內容相關 UI 相關聯的訊息。 請參閱 [資訊列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)。<br /><br /> 可能包含流程詳細資料的文字描述。|當您需要指出多個進程時，**請勿**使用多個資訊列。 請改用堆疊進度列。|
+|輸出視窗|暫時性通知：使用者想要在完成後 **檢查** 詳細資料的應用層級進程。|當使用者稍後需要參考資料時，**請勿**使用。|
+|記錄檔|在完成後 **儲存** 詳細資料的重要情況下，與 intransient 通知配對。||
+|狀態列|暫時性通知：使用者在完成後將 **不需要** 詳細資料的應用層級進程。<br /><br /> 包含內嵌的進度列。<br /><br /> 可能包含流程詳細資料的文字描述。||
 
-#### <a name="indeterminate-progress"></a>不確定的進度
+#### <a name="indeterminate-progress"></a>不定進度
 
-|進度型別|何時及如何使用|注意|
+|進度類型|時機和使用方式|注意|
 |-------------------|-------------------------|-----------|
-|進度列 （不定）|預期的持續時間 > 5 秒。<br /><br /> 可能包含處理序詳細資料的文字的描述。|**不**嵌入動畫中的文字。|
-|Ants （水平點動畫）|往返伺服器。<br /><br /> 放置 near 點內容的父容器的頂端。|**不**如果沒有成為父代的整個容器使用。|
-|微調按鈕 （進度環）|使用內容的 UI，或其中的空間是考量相關聯的處理程序。<br /><br /> 可能包含處理序詳細資料的文字的描述。||
-|資訊列|訊息內容的 UI 相關聯。 請參閱[資訊列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)。|**不**使用多個資訊列，當您想要表示多個處理序。 請改用堆疊的進度列。|
-|輸出視窗|暫時性通知： 應用程式層級程序，使用者會想要**檢閱**之後完成的詳細資料。|**不**用於需要工作階段之間保存的資訊。|
-|記錄檔|很重要時，搭配 intransient 的通知，萬一**儲存**之後完成的詳細資料。||
-|狀態列|暫時性通知： 應用程式層級程序，使用者將會**不需要**之後完成的詳細資料。<br /><br /> 包含內嵌的進度列。<br /><br /> 可能包含處理序詳細資料的文字的描述。||
+|進度列 (不定) |預期的 >持續期間（5秒）。<br /><br /> 可能包含流程詳細資料的文字描述。|**不要** 將文字內嵌至動畫。|
+|Ants (動畫水準點) |來回行程至伺服器。<br /><br /> 在上層容器的上層放置接近的內容點。|如果不是整個容器的父代，**請勿**使用。|
+|微調 (進度環形) |與內容相關 UI 相關聯的進程，或空間是考慮的地方。<br /><br /> 可能包含流程詳細資料的文字描述。||
+|資訊列|與內容相關 UI 相關聯的訊息。 請參閱 [資訊列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)。|當您需要指出多個進程時，**請勿**使用多個資訊列。 請改用堆疊進度列。|
+|輸出視窗|暫時性通知：使用者會想要在完成後 **檢查** 詳細資料的應用層級進程。|**請勿** 使用需要跨會話保存的資訊。|
+|記錄檔|在完成後 **儲存** 詳細資料的重要情況下，與 intransient 通知配對。||
+|狀態列|暫時性通知：使用者在完成後將 **不需要** 詳細資料的應用層級進程。<br /><br /> 包含內嵌的進度列。<br /><br /> 可能包含流程詳細資料的文字描述。||
 
 ### <a name="progress-indicator-types"></a>進度指標類型
 
 #### <a name="progress-bars"></a>進度列
 
-##### <a name="indeterminate"></a>不定
- ![不確定的進度列](../../extensibility/ux-guidelines/media/0901-04-indeterminate.png "0901年 04_Indeterminate")
+##### <a name="indeterminate"></a>定
+ ![不確定的進度列](../../extensibility/ux-guidelines/media/0901-04-indeterminate.png "0901-04_Indeterminate")
 
  **不確定的進度列**
 
- 「 不定 」 表示作業的整體進度，或無法判斷處理程序。 針對需要無限制的一段時間的作業使用不確定的進度列，或存取物件的數目為 「 不明 」。 您可以使用的文字描述，伴隨發生的事情。 您可以使用逾時，為範圍提供時間為基礎的作業。 不確定的進度列會使用動畫來顯示進度正在進行，但未提供其他資訊。 不會選擇只根據單獨的精確度可能缺乏不確定的進度列。
+ 「不定」表示無法判斷操作或進程的整體進度。 針對需要無限制時間或存取未知物件數目的作業，請使用不定的進度列。 使用文字描述來伴隨發生的情況。 使用超時來提供以時間為基礎之作業的界限。 不定的進度列會使用動畫來顯示正在進行的進度，但不提供任何其他資訊。 請勿只根據可能缺少的精確度來選擇不定的進度列。
 
 ##### <a name="determinate"></a>確定
- ![確定的進度列](../../extensibility/ux-guidelines/media/0901-05-determinate.png "0901年 05_Determinate")
+ ![確定的進度列](../../extensibility/ux-guidelines/media/0901-05-determinate.png "0901-05_Determinate")
 
  **確定的進度列**
 
- 「 確定 」 表示 操作或處理程序，需要在限定的一段時間，即使無法準確預測的時間量。 清楚地表示完成。 不要讓進度列，除非在作業完成，請移至 100%。 確定的進度列動畫會移動左到右從 0 到 100%。
+ 「確定」表示作業或進程需要限定的時間量，即使該時間量無法準確預測也一樣。 明確指出完成。 除非作業已完成，否則不要讓進度列移至100%。 確定進度列動畫從0往右移動至100%。
 
- 永遠不會移動回溯作業期間的進度列指示器。 在列應該向前移動而持續穩定增加作業開始和結束時達到 100%。 進度列的重點是要讓使用者了解整個作業需要多久，不論涉及多少的步驟。
+ 永遠不會在作業期間將進度列指示器往下移。 當作業開始時，此橫條應該會穩定地向前移動，並于結束時到達100%。 進度列的點是讓使用者瞭解整個作業所花費的時間，不論涉及多少步驟。
 
-##### <a name="concurrent-reporting-stacked-progress-bars"></a>並行報告 （堆疊的進度列）
- 如果作業需要很長的時間 – 可能是可能使用幾個分鐘 – 則兩個進度列，其中顯示作業的整體進度，另一個用於目前步驟的進度。 比方說，如果安裝程式正在複製許多檔案，然後一個進度列可用來表示花多少時間的整個程序而第二個可能表示目前檔案的多少百分比，或複製的目錄。 不會報告超過五個並行作業或使用堆疊的進度列的程序。 如果您有五個以上的並行作業或報表的處理程序，使用強制回應對話方塊的 [取消] 按鈕和報表進度詳細資料，以 [輸出] 視窗。
+##### <a name="concurrent-reporting-stacked-progress-bars"></a>並行報表 (堆疊的進度列) 
+ 如果作業需要很長的時間（可能需要幾分鐘的時間），則可能會使用兩個進度列，其中一個會顯示作業的整體進度，另一個則用於目前步驟的進展。 例如，如果安裝程式正在複製許多檔案，則可以使用一個進度列來指出整個程式所花費的時間長度，而第二個會指出目前檔案或目錄的複製百分比。 請勿使用堆疊進度列報告五個以上的並行作業或處理常式。 如果您有五個以上的並行作業或要報告的進程，請使用具有 [取消] 按鈕的強制回應對話方塊，並向輸出視窗報告進度詳細資料。
 
 ##### <a name="textual-descriptions"></a>文字描述
- 使用隨附的事情的文字描述和預估的完成時間。 如果無法判斷作業將會花多少時間，則可能是較好的選擇，提供意見反應，動畫的圖示，而不是一個進度列。
+ 使用文字描述來伴隨發生的情況和預估完成的時間。 如果無法判斷作業需要多少時間，則提供意見反應的較佳選擇可能是動畫圖標，而不是進度列。
 
- Visual Studio 提供可供任何產品如果要整合至 Visual Studio 的狀態列中的標準進度列。 如需的情況時，進度列以動畫顯示的文字描述，可以更新狀態列文字。
+ Visual Studio 在狀態列中提供標準的進度列，可供任何整合至 Visual Studio 的產品使用。 如需進度列動畫時所發生狀況的文字描述，可以更新狀態列文字。
 
-#### <a name="other-progress-indicators"></a>其他的進度指示器
+#### <a name="other-progress-indicators"></a>其他進度指示器
 
-##### <a name="ants-animated-horizontal-dots"></a>Ants （水平點動畫）
- ![進度 ants](../../extensibility/ux-guidelines/media/0903-01-ants.png "0903年 01_Ants")
+##### <a name="ants-animated-horizontal-dots"></a>Ants (動畫水準點) 
+ ![進度流動外框](../../extensibility/ux-guidelines/media/0903-01-ants.png "0903-01_Ants")
 
- "Ants，「 動畫水平的點，提供視覺上的參考不定的反覆存取伺服器處理序。
+ 「Ants」的動畫水準點，提供不定往返伺服器進程的視覺參考。
 
-##### <a name="spinner-progress-ring"></a>微調按鈕 （進度環）
- ![進度微調按鈕](../../extensibility/ux-guidelines/media/0903-02-spinner.png "0903年 02_Spinner")
+##### <a name="spinner-progress-ring"></a>微調 (進度環形) 
+ ![進度微調按鈕](../../extensibility/ux-guidelines/media/0903-02-spinner.png "0903-02_Spinner")
 
- 微調按鈕 （也稱為 「 進度環 」） 是主要是使用與內容相關的 UI 不確定的進度指示器。 接近其相關的內容，例如文字分類標頭、 訊息、 或控制項中顯示微調按鈕。
+ 微調 (也稱為「進度環形」 ) 是與內容 UI 相關的非確定性進度指標。 顯示靠近其相關內容（例如文字類別標頭、訊息或控制項）的微調按鈕。
 
-##### <a name="cursor-feedback"></a>資料指標的意見反應
- 對於需要 2 到 7 秒的作業，提供資料指標的意見反應。 一般而言，這表示使用由作業系統提供將等待游標。 如需指引，請參閱 MSDN 文章[Cursors.Wait 屬性](https://msdn.microsoft.com/library/system.windows.input.cursors.wait\(v=vs.110\).aspx)。
+##### <a name="cursor-feedback"></a>資料指標意見反應
+ 針對花費在2-7 秒之間的作業，請提供資料指標的意見反應。 一般而言，這表示使用作業系統所提供的等候游標。 如需指引，請參閱 MSDN 文章資料 [指標. Wait 屬性](https://msdn.microsoft.com/library/system.windows.input.cursors.wait\(v=vs.110\).aspx)。
 
 #### <a name="progress-indicator-locations"></a>進度指標位置
 
 ##### <a name="status-bar"></a>狀態列
- [狀態] 列可讓您的應用程式為向使用者顯示訊息和有用的資訊，而不會中斷使用者的工作。 通常顯示在視窗底部，進度的狀態將會包含有關進度的量值的訊息搭配一個進度列指示器的工具提示窗格。
+ 狀態列可讓您的應用程式在不中斷使用者工作的情況下，向使用者顯示訊息和有用的資訊。 通常會顯示在視窗底部，進度的狀態會是 [工具提示] 窗格，其中包含與進度列指標結合進度量值的相關訊息。
 
- ![具有進度列的狀態列](../../extensibility/ux-guidelines/media/0903-03-statusbarprogressbar.png "0903年 03_StatusBarProgressBar")
+ ![具有進度列的狀態列](../../extensibility/ux-guidelines/media/0903-03-statusbarprogressbar.png "0903-03_StatusBarProgressBar")
 
- **具有進度列的 [狀態] 列**
+ **具有進度列的狀態列**
 
- ![具有傳訊的狀態列](../../extensibility/ux-guidelines/media/0903-04-statusbarmessage.png "0903年 04_StatusBarMessage")
+ ![具有傳訊的狀態列](../../extensibility/ux-guidelines/media/0903-04-statusbarmessage.png "0903-04_StatusBarMessage")
 
- **提供文字說明的 [狀態] 列**
+ **具有文字描述的狀態列**
 
 ##### <a name="infobar"></a>資訊列
- 類似於 [狀態] 列中，資訊列提供內容相關的通知和傳訊，這也可以搭配不確定的進度指標，例如進度列或微調。 資訊列時，不應提供細微的層級進行或確定的進度指示。 請參閱[資訊列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)。
+ 與狀態列類似，資訊列會提供內容相關的通知和訊息，也可以與不定的進度指示器（例如進度列或微調）配對。 資訊列不應提供細微等級的進度或確定進度指示。 請參閱 [資訊列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)。
 
- ![具有進度列和傳訊的資訊列](../../extensibility/ux-guidelines/media/0903-05-infobar.png "0903年 05_InfoBar")
+ ![具有進度列和傳訊的資訊列](../../extensibility/ux-guidelines/media/0903-05-infobar.png "0903-05_InfoBar")
 
- **具有進度列和文字描述的資訊列**
+ **包含進度列和文字描述的資訊列**
 
- ![視窗內的資訊列](../../extensibility/ux-guidelines/media/0903-06-infobarinwindow.png "0903年 06_InfoBarInWindow")
+ ![視窗內的資訊列](../../extensibility/ux-guidelines/media/0903-06-infobarinwindow.png "0903-06_InfoBarInWindow")
 
- **在 [程式碼分析] 視窗內的資訊列**
+ **程式碼分析視窗內的資訊列**
 
 ##### <a name="inline"></a>內嵌
- 內嵌進度指示可以表示任何進度載入器型別。 進度列指示器通常搭配訊息，但這不是需求。
+ 內嵌進度指示可以用任何一種進度載入器類型來表示。 進度指標通常會與訊息配對，但這不是必要條件。
 
- ![內嵌進度微調按鈕](../../extensibility/ux-guidelines/media/0903-07-inlinespinner.png "0903年 07_InlineSpinner")
+ ![內嵌進度微調按鈕](../../extensibility/ux-guidelines/media/0903-07-inlinespinner.png "0903-07_InlineSpinner")
 
- **結合文字描述的微調按鈕**
+ **與文字描述結合的微調**
 
- ![內嵌堆疊進度列](../../extensibility/ux-guidelines/media/0903-08-inlinestackedprogress.png "0903年 08_InlineStackedProgress")
+ ![內嵌堆疊進度列](../../extensibility/ux-guidelines/media/0903-08-inlinestackedprogress.png "0903-08_InlineStackedProgress")
 
- **確定堆疊的進度列**
+ **確定堆疊進度列**
 
- ![內嵌進度傳訊](../../extensibility/ux-guidelines/media/0903-09-inlinetext.png "0903年 09_InlineText")
+ ![內嵌進度傳訊](../../extensibility/ux-guidelines/media/0903-09-inlinetext.png "0903-09_InlineText")
 
- **伺服器總管內嵌文字：正在重新整理...**
+ **伺服器總管內嵌文字：正在重新整理 .。。**
 
 ##### <a name="tool-windows"></a>工具視窗
- 位於工具列的正下方的不確定的進度列表示全域進度指示。
+ 全域進度指示是以不確定的進度列（位於工具列正下方）來表示。
 
- ![全域不確定的進度列](../../extensibility/ux-guidelines/media/0903-23-globalindeterminate.png "0903年 23_GlobalIndeterminate")
+ ![全域不確定的進度列](../../extensibility/ux-guidelines/media/0903-23-globalindeterminate.png "0903-23_GlobalIndeterminate")
 
- **Team Explorer 全域不確定的進度列**
+ **Team Explorer 全域不定的進度列**
 
 ##### <a name="dialogs"></a>對話方塊
- 對話方塊可以包含任何進度載入器類型。 進度指標可以是搭配傳訊，以及結合多個層級的細微的表示及子程序的進度指示。
+ 對話可以包含任何進度載入器類型。 進度指示器可以與訊息配對，也可以與多層的進度指示結合，以代表細微和子進程。
 
- ![具有多個進度指標類型的對話方塊](../../extensibility/ux-guidelines/media/0903-11-dialog.png "0903年 11_Dialog")
+ ![具有多個進度指標類型的對話方塊](../../extensibility/ux-guidelines/media/0903-11-dialog.png "0903-11_Dialog")
 
- **與並行處理多個進度指標類型的 visual Studio 對話方塊**
+ **具有並行進程和多個進度指標類型的 Visual Studio 對話方塊**
 
- ![具有進度載入器和傳訊的對話方塊](../../extensibility/ux-guidelines/media/0903-12-dialog2.png "0903年 12_Dialog2")
+ ![具有進度載入器和傳訊的對話方塊](../../extensibility/ux-guidelines/media/0903-12-dialog2.png "0903-12_Dialog2")
 
- **具有進度載入器和傳訊內嵌命令的 visual Studio 對話方塊**
+ **具有進度載入器和訊息內嵌命令的 Visual Studio 對話方塊**
 
-##### <a name="document-well"></a>文件區域
- 文件也可以顯示多個進度載入器類型與控制項的組合。
+##### <a name="document-well"></a>檔妥善
+ 檔也可以與控制項一起顯示多個進度載入器類型。
 
- ![中的進度傳訊文件也](../../extensibility/ux-guidelines/media/0903-13-documentwell.png "0903年 13_DocumentWell")
+ ![文件井中的進度傳訊](../../extensibility/ux-guidelines/media/0903-13-documentwell.png "0903-13_DocumentWell")
 
- **工具列下方的不確定的進度列**
+ **在工具列下方有不定的進度列**
 
 ##### <a name="output-window"></a>輸出視窗
- [輸出] 視窗也適用於處理程序進展和透過內嵌文字訊息的進行中的進度狀態。 您應該使用 [狀態] 列，以及任何輸出視窗進度報告。
+ [輸出] 視窗適用于透過內嵌文字訊息處理進程進度和持續進度狀態。 您應該使用狀態列以及任何輸出視窗進度報告。
 
- ![輸出視窗中的進度傳訊](../../extensibility/ux-guidelines/media/0903-14-outputwindow.png "0903年 14_OutputWindow")
+ ![輸出視窗中的進度傳訊](../../extensibility/ux-guidelines/media/0903-14-outputwindow.png "0903-14_OutputWindow")
 
- **進行中的處理序狀態與輸出視窗，並等候訊息**
+ **具有進行中進程狀態和等候訊息的輸出視窗**
 
-## <a name="BKMK_Infobars"></a> 資訊列
+## <a name="infobars"></a><a name="BKMK_Infobars"></a> 資訊列
 
-### <a name="overview"></a>總覽
- 資訊列提供使用者注意點接近指標，並使用共用的資訊列控制項可確保一致的視覺外觀和互動。
+### <a name="overview"></a>概觀
+ 資訊列可為使用者提供接近關注點的指標，並使用共用的資訊列控制項確保視覺外觀和互動中的一致性。
 
- ![Infobar](../../extensibility/ux-guidelines/media/0904-01-infobar.png "0904-01_Infobar")
+ ![資訊列](../../extensibility/ux-guidelines/media/0904-01-infobar.png "0904-01_Infobar")
 
- **在 Visual Studio 中的資訊列**
+ **Visual Studio 中的資訊列**
 
-#### <a name="appropriate-uses-for-an-infobar"></a>適當使用資訊列
+#### <a name="appropriate-uses-for-an-infobar"></a>資訊列的適當用途
 
-- 若要授與使用者目前的內容相關的非封鎖式但重要訊息
+- 為使用者提供與目前內容相關的非封鎖但重要訊息
 
-- 若要表示 UI 處於特定狀態或條件，會帶來一些互動的影響，例如歷程偵錯
+- 表示 UI 處於特定狀態或具有某些互動含意的條件，例如歷程記錄偵錯工具
 
-- 若要通知使用者系統已偵測到的問題，例如當擴充功能造成效能問題
+- 通知使用者系統偵測到問題，例如當擴充功能造成效能問題時
 
-- 若要提供使用者一個可以輕鬆地採取動作，例如當編輯器偵測到的檔案有混合的定位點和空格
+- 讓使用者可以輕鬆地採取動作，例如當編輯器偵測到檔案具有混合的索引標籤和空格時
 
-##### <a name="do"></a>執行動作：
+##### <a name="do"></a>可行事項：
 
-- 簡單地說，點，請保留資訊列訊息文字。
+- 將資訊列訊息內容保持簡短和點。
 
-- 保持簡潔的上連結和按鈕的文字。
+- 讓連結和按鈕的文字簡潔明瞭。
 
-- 請確定您提供給使用者的 「 動作 」 選項很低，顯示必要的動作。
+- 確定您提供給使用者的「動作」選項很短，只顯示必要的動作。
 
-##### <a name="dont"></a>沒有此項目：
+##### <a name="dont"></a>不要：
 
-- 您可以使用資訊列，提供標準應放在工具列中的命令。
+- 您可以使用資訊列來提供應放置在工具列中的標準命令。
 
-- 使用資訊列來強制回應對話方塊取代。
+- 使用資訊列來取代強制回應對話方塊。
 
-- 建立浮動視窗外部訊息。
+- 在視窗外建立浮動訊息。
 
-- 在相同的視窗內的數個位置中使用多個資訊列。
+- 在相同視窗中的數個位置使用多個資訊列。
 
-#### <a name="can-multiple-infobars-show-at-the-same-time"></a>可以將多個資訊列顯示在相同的時間
- 是，可以顯示多個資訊列，在相同的時間。 它們會與第一個顯示以下的上方和其他資訊列顯示的資訊列顯示，以先服務的順序。
+#### <a name="can-multiple-infobars-show-at-the-same-time"></a>可以同時顯示多個資訊列嗎？
+ 是，多個資訊列可以同時顯示。 首先會以第一次服務的順序顯示，第一個資訊列顯示在下方，而其他資訊列顯示于下方。
 
- 使用者會看到三個資訊列最多一次之後，如果多個資訊列可供使用，資訊列區域將會變成可捲動。
+ 使用者一次最多會看到三個資訊列，在這之後，如果有更多資訊列可用，資訊欄區域就會變成可滾動的。
 
 ### <a name="creating-an-infobar"></a>建立資訊列
- 資訊列已從左到右的四個區段：
+ 此資訊列有四個區段，從左至右：
 
-- **圖示：** 這是您可以在其中加入的任何圖示要顯示的資訊列，例如警告圖示。
+- **圖示：** 您可以在這裡新增任何您想要為資訊列顯示的圖示，例如警告圖示。
 
-- **文字：** 如有需要，您可以新增的文字描述的案例/情況使用者是，以及在的文字中的連結。 請務必保持簡潔的文字。
+- **文字：** 您可以新增文字來描述使用者所在的案例/狀況，以及文字內的連結（如有需要）。 請記得將文字保持簡潔。
 
-- **動作：** 此區段應該包含連結和按鈕，使用者可以在您的資訊列中採取的動作。
+- **動作：** 此區段應該包含使用者可在您的資訊列中採取動作的連結和按鈕。
 
-- **[關閉] 按鈕：** 右邊的最後一節中可以有 [關閉] 按鈕。
+- **關閉按鈕：** 右邊的最後一個區段可以有 [關閉] 按鈕。
 
-#### <a name="creating-a-standard-infobar-in-managed-code"></a>在 managed 程式碼中建立標準的資訊列
- InfoBarModel 類別可用來建立資料來源的資訊列。 使用其中一個這些四個建構函式：
+#### <a name="creating-a-standard-infobar-in-managed-code"></a>在 managed 程式碼中建立標準資訊列
+ InfoBarModel 類別可以用來建立資訊列的資料來源。 使用下列四個函式的其中一個：
 
 ```
 public InfoBarModel(IEnumerable<IVsInfoBarTextSpan> textSpans, ImageMoniker image = default(ImageMoniker), bool isCloseButtonVisible = true);
@@ -360,9 +360,9 @@ public InfoBarModel(IEnumerable<IVsInfoBarTextSpan> textSpans, IEnumerable<IVsIn
 public InfoBarModel(string text, IEnumerable<IVsInfoBarActionItem> actionItems, ImageMoniker image = default(ImageMoniker), bool isCloseButtonVisible = true);
 ```
 
- 以下是範例會建立 InfoBarModel 部分文字具有超連結、 動作按鈕和圖示。
+ 以下範例會建立具有一些文字的 InfoBarModel，其中含有超連結、動作按鈕和圖示。
 
- ![具有超連結的資訊列](../../extensibility/ux-guidelines/media/0904-02-infobarhyperlink.png "0904年 02_InfobarHyperlink")
+ ![具有超連結的資訊列](../../extensibility/ux-guidelines/media/0904-02-infobarhyperlink.png "0904-02_InfobarHyperlink")
 
 ```
 var infoBar = new InfoBarModel(
@@ -381,8 +381,8 @@ var infoBar = new InfoBarModel(
 
 ```
 
-#### <a name="creating-a-standard-infobar-in-native-code"></a>在 原生程式碼中建立標準的資訊列
- 實作 IVsInfoBar 介面，以提供原生程式碼資訊列。
+#### <a name="creating-a-standard-infobar-in-native-code"></a>以原生程式碼建立標準資訊列
+ 執行 IVsInfoBar 介面，以便從機器碼提供資訊列。
 
 ```
 public interface IVsInfoBar
@@ -395,8 +395,8 @@ public interface IVsInfoBar
 
 ```
 
-#### <a name="getting-an-infobar-uielement-from-an-infobar"></a>從 資訊列中取得資訊列 UIElement
- InfoBarModel 或 IVsInfoBar 實作都必須轉換成 UIElement，若要顯示在 UI 中的資料模型。 將 uielement 設可以擷取與 SVsInfoBarUIFactory/IVsInfoBarUIFactory 服務。
+#### <a name="getting-an-infobar-uielement-from-an-infobar"></a>從資訊列中取得資訊列 UIElement
+ InfoBarModel 或 IVsInfoBar 實作為必須轉換成 UIElement 才能顯示在 UI 中的資料模型。 您可以使用 SVsInfoBarUIFactory/IVsInfoBarUIFactory 服務來抓取 UIElement。
 
 ```
 private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiElement)
@@ -414,20 +414,20 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 ```
 
 ### <a name="placement"></a>放置
- 可以顯示資訊列，在一或多個下列位置：
+ 資訊列可以顯示在下列一或多個位置：
 
 - 工具視窗
 
-- 內文件索引標籤
+- 在 [檔] 索引標籤中
 
 > [!IMPORTANT]
-> 可以定位資訊列提供給全域內容的相關訊息。 工具列和文件區域之間會出現此選項。 這因為這會導致 「 跳和 jerk 」 的問題不建議使用的 IDE，應該加以避免，除非絕對必要且適當。
+> 您可以定位資訊列來提供全域內容的相關訊息。 這會出現在工具列和檔之間。 不建議這麼做，因為它會導致 IDE 的「跳躍與直覺式」發生問題，除非絕對必要和適當，否則應該避免。
 
-#### <a name="placing-an-infobar-in-a-toolwindowpane"></a>資訊列置於 ToolWindowPane
- ToolWindowPane.AddInfoBar(IVsInfoBar) 方法可用來加入工具視窗中的資訊列。 此 API 可以將新增的 IVsInfoBar （哪些 InfoBarModel 為預設的實作），或 IVsUIElement。
+#### <a name="placing-an-infobar-in-a-toolwindowpane"></a>將資訊列放在 ToolWindowPane 中
+ ToolWindowPane. AddInfoBar (IVsInfoBar) 方法可以用來將資訊列新增至工具視窗。 此 API 可以新增 IVsInfoBar (，其中 InfoBarModel 是預設的執行) 或 IVsUIElement。
 
-#### <a name="placing-an-infobar-in-a-document-or-non-toolwindowpane"></a>置於文件或非 ToolWindowPane 的資訊列
- 若要將放置任何 IVsWindowFrame 資訊列，使用 ivswindowframe.getproperty 屬性來取得 IVsInfoBarHost 框架，然後再加入資訊列 UIElement。
+#### <a name="placing-an-infobar-in-a-document-or-non-toolwindowpane"></a>將資訊列放入檔或非 ToolWindowPane
+ 若要將資訊列放入任何 IVsWindowFrame，請使用 VSFPROPID_InfoBarHost 屬性取得框架的 IVsInfoBarHost，然後新增資訊列 UIElement。
 
 ```
 private void AddInfoBar(IVsWindowFrame frame, IVsUIElement uiElement)
@@ -453,17 +453,17 @@ private bool TryGetInfoBarHost(IVsWindowFrame frame, out IVsInfoBarHost infoBarH
 
 ```
 
-#### <a name="placing-an-infobar-in-the-main-window"></a>資訊列置於主視窗
- 要置於主視窗中的資訊列，使用的 ivsshell 出現服務 VSSPROPID_MainWindowInfoBarHost 取得主視窗的 IVsInfoBarHost，然後再加入資訊列 UIElement 給它。
+#### <a name="placing-an-infobar-in-the-main-window"></a>在主視窗中放置資訊列
+ 若要將資訊列放在主視窗中，請使用 Ivsshell 出現服務的 VSSPROPID_MainWindowInfoBarHost 來取得主視窗的 IVsInfoBarHost，然後在其中新增資訊列 UIElement。
 
-### <a name="will-i-know-when-the-user-takes-action-in-my-infobar"></a>我知道當使用者採取動作，在 我的資訊列？
- 是，我們會傳回每個事件的動作為 資訊列作者。 然後是由在 IDE 中根據使用者在資訊列中選取採取動作的資訊列作者。 資訊列將從主應用程式的 [關閉] 按鈕已按下，會自動移除，但如果之後要移除的其他資訊列需要關閉，則需要額外的工作。 遙測也會需要每個資料列會獨立記錄。
+### <a name="will-i-know-when-the-user-takes-action-in-my-infobar"></a>當使用者在我的資訊列中採取動作時，是否會知道？
+ 是，我們會將每個事件動作傳回到資訊列作者。 然後，資訊列作者可以根據使用者在資訊列中選取的專案，在 IDE 中採取動作。 資訊列將會自動從已按下 [關閉] 按鈕的主機移除，但如果其他資訊列需要在關閉後移除，則需要額外的工作。 遙測也必須個別記錄在每個資訊列中。
 
-#### <a name="receiving-infobar-events-in-a-toolwindowpane"></a>在 ToolWindowPane 事件的接收資訊列
- ToolWindowPane 有兩個事件的資訊列。 關閉資訊列 ToolWindowPane 中的時，會引發 InfoBarClosed 事件。 按一下超連結或按鈕在資訊列時，會引發 InfoBarActionItemClicked 事件。
+#### <a name="receiving-infobar-events-in-a-toolwindowpane"></a>接收 ToolWindowPane 中的資訊列事件
+ ToolWindowPane 有兩個資訊列的事件。 當 ToolWindowPane 中的資訊列關閉時，就會引發 InfoBarClosed 事件。 按一下資訊列內的超連結或按鈕時，就會引發 InfoBarActionItemClicked 事件。
 
-#### <a name="receiving-infobar-events-directly-from-the-uielement"></a>資訊列之事件的接收直接從 UIElement
- IVsInfoBarUIElement.Advise 可用來直接從資訊列的 UIElement 訂閱事件。 實作 IVsInfoBarUIEvents，可讓作者以關閉接收，然後按一下事件。
+#### <a name="receiving-infobar-events-directly-from-the-uielement"></a>直接從 UIElement 接收資訊列事件
+ IVsInfoBarUIElement 可用於直接從資訊列的 UIElement 訂閱事件。 執行 IVsInfoBarUIEvents 可讓作者接收 close 和 click 事件。
 
 ```
 public interface IVsInfoBarUIEvents
@@ -474,52 +474,52 @@ public interface IVsInfoBarUIEvents
 
 ```
 
-## <a name="BKMK_ErrorValidation"></a> 驗證錯誤
- 當使用者輸入不是可接受的例如必要的欄位就會略過或輸入資料格式不正確的資訊時，最好是使用控制驗證或意見反應，而不是使用封鎖的快顯錯誤對話方塊在控制項旁邊。
+## <a name="error-validation"></a><a name="BKMK_ErrorValidation"></a> 錯誤驗證
+ 當使用者輸入無法接受的資訊時（例如，略過必要欄位時或輸入不正確格式的資料時），最好在控制項附近使用控制項驗證或意見反應，而不是使用封鎖快顯視窗錯誤對話方塊。
 
 ### <a name="field-validation"></a>欄位驗證
- 表單和欄位的驗證是由三個元件所組成： 控制項、 一個圖示和工具提示。 雖然數種類型的控制項可以使用這個，文字方塊將用於做為範例。
+ 表單和欄位驗證是由三個元件所組成：控制項、圖示和工具提示。 雖然有數種類型的控制項可以使用這種方式，但您也可以使用文字方塊做為範例。
 
- ![欄位驗證&#40;空白&#41;](../../extensibility/ux-guidelines/media/0905-01-fieldvalidation.png "0905年 01_FieldValidation")
+ ![欄位驗證 &#40;空白&#41;](../../extensibility/ux-guidelines/media/0905-01-fieldvalidation.png "0905-01_FieldValidation")
 
- 如果欄位是必要的應該要有加上浮水印文字指出 **\<必要 >** 且欄位背景應指示燈黃色 (VSColor: `Environment.ControlEditRequiredBackground`) 和前景應為灰色 (VSColor: `Environment.ControlEditRequiredHintText`):
+ 如果欄位是必要的，則應該要有浮水印文字， **\<Required>** 而欄位背景應該是淺黃色 (VSColor： `Environment.ControlEditRequiredBackground`) ，而且前景應為灰色 (VSColor： `Environment.ControlEditRequiredHintText`) ：
 
- ![欄位與 [必要] 標籤的驗證](../../extensibility/ux-guidelines/media/0905-02-fieldvalidationrequired.png "0905年 02_FieldValidationRequired")
+ ![具有 [必要] 標籤的欄位驗證](../../extensibility/ux-guidelines/media/0905-02-fieldvalidationrequired.png "0905-02_FieldValidationRequired")
 
- 程式可以判斷控制項是否處於的狀態為*輸入無效的內容*當焦點移到另一個控制項，或當使用者按一下 [確定] 認可 按鈕，或當使用者儲存文件或表單。
+ 此程式可判斷當焦點移至另一個控制項時，或當使用者按一下 [確定] 認可按鈕時，或當使用者儲存檔或表單時，控制項所 *輸入的內容無效* 的狀態。
 
- 無效的內容狀態決定，只要在控制項內，或只是它旁邊就會出現一個圖示。 描述錯誤的工具提示應該會出現暫留時的圖示或控制項。 此外，應該會建立無效的狀態的控制項周圍會出現 1 像素框線。
+ 當判斷出不正確內容狀態時，圖示會出現在控制項內或在它的旁邊。 顯示錯誤的工具提示應該會出現在 [圖示] 或 [控制項] 的游標處。 此外，建立無效狀態的控制項周圍應該會出現一個1圖元的框線。
 
- ![欄位驗證版面配置規格](../../extensibility/ux-guidelines/media/0905-03-layoutspecs.png "0905年 03_LayoutSpecs")
+ ![欄位驗證版面配置規格](../../extensibility/ux-guidelines/media/0905-03-layoutspecs.png "0905-03_LayoutSpecs")
 
- **欄位驗證版面配置規格**
+ **欄位驗證的版面配置規格**
 
-#### <a name="acceptable-variations-for-icon-location"></a>可接受的變化，圖示位置
- 有無數的唯一情況，使用者需要以瞭解驗證錯誤。 考慮的控制項類型和組態 UI 中，選擇適用於您情況的圖示位置。
+#### <a name="acceptable-variations-for-icon-location"></a>圖示位置可接受的變化
+ 在無數的情況下，使用者必須收到驗證錯誤的相關資訊。 考慮 UI 的控制項類型和設定，請選擇適合您情況的圖示位置。
 
- ![可接受的圖示位置的位置](../../extensibility/ux-guidelines/media/0905-04-iconlocation.png "0905年 04_IconLocation")
+ ![圖示位置可接受的位置](../../extensibility/ux-guidelines/media/0905-04-iconlocation.png "0905-04_IconLocation")
 
  **欄位驗證圖示位置可接受的變化**
 
-#### <a name="validation-requiring-a-round-trip-to-a-server-or-network-connection"></a>需要往返伺服器或網路連線的驗證
- 在某些情況下，往返伺服器，才可確認其內容，並會顯示錯誤狀態與使用者進行驗證，請務必。 下圖顯示此案例和建議的 UI 的範例。
+#### <a name="validation-requiring-a-round-trip-to-a-server-or-network-connection"></a>需要往返伺服器或網路連接的驗證
+ 在某些情況下，需要伺服器的來回行程才能確認內容，而且請務必顯示使用者進度、驗證和錯誤狀態。 下圖顯示此案例的範例和建議的 UI。
 
- ![驗證涉及在伺服器之間往返](../../extensibility/ux-guidelines/media/0905-05-roundtrip.png "0905年 05_RoundTrip")
+ ![需要來回伺服器的驗證](../../extensibility/ux-guidelines/media/0905-05-roundtrip.png "0905-05_RoundTrip")
 
- **涉及往返伺服器的驗證**
+ **需要來回伺服器的驗證**
 
- 請注意，必須提供足夠的可用空間，右邊的控制項，來因應 「 正在驗證...」 和 [重試] 的文字。
+ 請注意，必須提供控制項右邊的足夠可用空間，才能容納「正在驗證 ...」 和「重試」文字。
 
 #### <a name="in-place-warning-text"></a>就地警告文字
- 當有足夠的空間可用來將錯誤訊息，接近控制項放在錯誤的狀態時，這是使用單獨的工具提示。
+ 當有可用空間可將錯誤訊息放在錯誤狀態中的控制項附近時，最好是單獨使用工具提示。
 
- ![在&#45;警告](../../extensibility/ux-guidelines/media/0905-06-inplacewarning.png "0905年 06_InPlaceWarning")
+ ![在&#45;放置警告](../../extensibility/ux-guidelines/media/0905-06-inplacewarning.png "0905-06_InPlaceWarning")
 
  **就地警告文字**
 
 #### <a name="watermarks"></a>浮水印
- 有時候整個控制項或視窗，則處於錯誤狀態。 在此情況下，使用水位線以指出錯誤。
+ 有時候整個控制項或視窗都處於錯誤狀態。 在此情況下，請使用浮水印來指出錯誤。
 
- ![Watermark](../../extensibility/ux-guidelines/media/0905-07-watermark.png "0905-07_Watermark")
+ ![浮水印](../../extensibility/ux-guidelines/media/0905-07-watermark.png "0905-07_Watermark")
 
  **浮水印欄位驗證**

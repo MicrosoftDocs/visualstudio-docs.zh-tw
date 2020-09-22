@@ -1,5 +1,5 @@
 ---
-title: 重要的命令，語言服務篩選器 |Microsoft Docs
+title: 語言服務篩選的重要命令 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,33 +12,33 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 03bb20abf32f7c320ed56f4a649a9f43453e7694
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447268"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839109"
 ---
 # <a name="important-commands-for-language-service-filters"></a>語言服務篩選的重要命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-如果您想要建立功能完整的語言服務篩選器，請考慮處理下列的命令。 在定義命令識別碼的完整清單<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>managed 程式碼和 Stdidcmd.h 標頭的列舉檔案未受管理[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]程式碼。 您可以找到 Stdidcmd.h 檔案中的*Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Common\Inc。  
+如果您想要建立功能完整的語言服務篩選器，請考慮處理下列命令。 命令識別碼的完整清單定義于 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> managed 程式碼的列舉和非受控碼的 Stdidcmd .h 標頭檔中 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 。 您可以在 *VISUAL STUDIO SDK 安裝路徑*\VisualStudioIntegration\Common\Inc. 中找到 Stdidcmd .h 檔案。  
   
-## <a name="commands-to-handle"></a>控制代碼的命令  
+## <a name="commands-to-handle"></a>要處理的命令  
   
 > [!NOTE]
-> 它並不一定要篩選為下表中的每個命令。  
+> 對於下表中的每個命令而言，並不是必要的。  
   
 |命令|描述|  
 |-------------|-----------------|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|當使用者按一下滑鼠右鍵時，就會傳送。 此命令會指示就可以開始提供的快顯功能表。 如果您並未處理這個命令，文字編輯器會提供預設的捷徑功能表，而不需要任何語言特有的命令。 若要包含在此功能表命令，處理這個命令，並自行顯示捷徑功能表。|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|當使用者輸入 CTRL + J，通常是傳送。 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>顯示陳述式完成方塊。|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|當使用者輸入字元時，就會傳送。 監視此命令，以判斷當輸入觸發程序的字元，並提供陳述式完成、 方法秘訣和文字的標記，例如語法著色，大括號比對和錯誤標記。 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>陳述式完成和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A>方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow>方法秘訣。 若要支援文字標記，來監視此命令，以判斷是否要鍵入的字元，您必須更新您的標記。|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|當使用者輸入 Enter 鍵時，就會傳送。 監視此命令來判斷何時要關閉方法提示視窗，藉由呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>。 根據預設，[文字] 檢視會處理這個命令。|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|當使用者輸入退格鍵時，就會傳送。 用於決定何時要關閉藉由呼叫的方法提示視窗的監視器<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>。 根據預設，[文字] 檢視會處理這個命令。|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|從功能表或快速鍵傳送。 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A>方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>若要使用的參數資訊來更新 [提示] 視窗。|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|當使用者將滑鼠指標停留在變數上，或將游標置於變數，並選取時，傳送**快速諮詢**從**IntelliSense**中**編輯**功能表。 傳回變數的型別提示中，藉由呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A>方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>。 如果您已啟用偵錯，提示應該也會顯示變數的值。|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|當使用者輸入 CTRL + 空格鍵時，通常傳送。 此命令會告知要呼叫的語言服務<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>。|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|通常，從功能表中，傳送**註解選取範圍**或是**取消註解選取範圍**從**進階**中**編輯**功能表。 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 表示使用者想要標記為註解選取的文字;<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>表示使用者想要取消註解選取的文字。 這些命令可以只由語言服務實作。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|當使用者以滑鼠右鍵按一下時傳送。 此命令表示提供快捷方式功能表是時候。 如果您未處理此命令，文字編輯器會提供預設快捷方式功能表，而不會有任何特定語言的命令。 若要在此功能表上包含您自己的命令，請處理命令並自行顯示快捷方式功能表。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|通常會在使用者輸入 CTRL + J 時傳送。 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>在上呼叫方法 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> ，以顯示語句完成方塊。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|當使用者輸入字元時傳送。 監視這個命令以判斷何時輸入觸發程式字元，並提供語句完成、方法提示和文字標記，例如語法著色、括弧對稱和錯誤標記。 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>在 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> for 語句完成和上的方法上呼叫方法提示的方法 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> 。 若要支援文字標記，請監視這個命令以判斷所輸入的字元是否需要您更新標記。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|當使用者輸入 Enter 鍵時傳送。 監視這個命令，藉由在上呼叫方法，判斷何時要關閉方法提示視窗 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> 。 根據預設，文字視圖會處理此命令。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|當使用者輸入倒退鍵時傳送。 在上呼叫方法，以判斷何時要關閉方法提示視窗 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> 。 根據預設，文字視圖會處理此命令。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|從功能表或快速鍵傳送。 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A>在上呼叫方法 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> ，以使用參數資訊來更新提示視窗。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|當使用者將游標停留在變數上，或將游標放在變數上，並從 [**編輯**] 功能表中的**IntelliSense**選取 [**快速**諮詢] 時傳送。 藉由在上呼叫方法，在提示中傳回變數的類型 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 。 如果是使用中的偵錯工具，提示也應該顯示變數的值。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|通常會在使用者輸入 CTRL + 空格鍵時傳送。 此命令會指示語言服務 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> 在上呼叫方法 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|從功能表傳送，通常**會在 [** **編輯**] 功能表中**批註選取**或**取消批註選取專案**。 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 表示使用者想要將選取的文字加上批註; <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 表示使用者想要取消選取的文字。 這些命令只能由語言服務來執行。|  
   
 ## <a name="see-also"></a>另請參閱  
  [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)

@@ -1,5 +1,5 @@
 ---
-title: 將命令加入至 [方案總管] 工具列 |Microsoft Docs
+title: 將命令加入至方案總管的工具列 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,40 +13,40 @@ caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ac07a2c6becd46a2536e6a9b3340d075d5f078f2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403249"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838796"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>將命令新增至方案總管工具列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本逐步解說示範如何加入一個按鈕來**方案總管 中**工具列。  
+本逐步解說將示範如何將按鈕新增至 **方案總管** 工具列。  
   
- 工具列或功能表上的任何命令會呼叫在 Visual Studio 中的按鈕。 按一下按鈕時，會執行的命令處理常式中的程式碼。 通常，相關的命令會群組在一起以形成一個群組。 功能表或工具列做為容器群組。 優先順序會決定以個別的命令群組中會出現在功能表或工具列上的順序。 您可以防止按鈕不會再顯示工具列或功能表上，藉由控制其可見性。 命令中所列`<VisibilityConstraints>`.vsct 檔的區段只會出現在相關聯的內容。 可見性無法套用到群組。  
+ 工具列或功能表上的任何命令都稱為 Visual Studio 中的按鈕。 按一下按鈕時，就會執行命令處理常式中的程式碼。 通常會將相關的命令群組在一起，以形成一個群組。 功能表或工具列可作為群組的容器。 優先權決定群組中個別命令出現在功能表或工具列上的順序。 您可以藉由控制控制項的可見度，防止按鈕顯示在工具列或功能表上。 .Vsct 檔案的區段中所列的命令 `<VisibilityConstraints>` 只會出現在相關聯的內容中。 可見度無法套用至群組。  
   
- 如需功能表、 工具列命令和.vsct 檔的詳細資訊，請參閱[命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)。  
+ 如需功能表、工具列命令和 .vsct 檔案的詳細資訊，請參閱 [命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)。  
   
 > [!NOTE]
-> 使用 XML 命令表檔案 (.vsct) 而不是命令資料表設定 (.ctc) 檔案，來定義您的 Vspackage 中出現的功能表和命令。 如需詳細資訊，請參閱 [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
+> 使用 XML 命令表格 (. .vsct) 檔案，而非命令表格設定 (. .ctc) 檔案，以定義功能表和命令在 Vspackage 中出現的方式。 如需詳細資訊，請參閱 [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
   
-## <a name="prerequisites"></a>必要條件  
- 從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+## <a name="prerequisites"></a>Prerequisites  
+ 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-an-extension-with-a-menu-command"></a>建立具有功能表命令的延伸模組  
- 建立 VSIX 專案，名為`SolutionToolbar`。 加入名為功能表命令項目範本**ToolbarButton**。 如需如何執行這項操作的資訊，請參閱[建立具有功能表命令的擴充](../extensibility/creating-an-extension-with-a-menu-command.md)。  
+ 建立名為的 VSIX 專案 `SolutionToolbar` 。 加入名為 **ToolbarButton**的功能表命令專案範本。 如需有關如何這麼做的詳細資訊，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)模組。  
   
-## <a name="adding-a-button-to-the-solution-explorer-toolbar"></a>加入 [方案總管] 工具列按鈕  
- 本章節的逐步解說示範如何加入一個按鈕來**方案總管 中**工具列。 當按一下按鈕時，會執行的回呼方法中的程式碼。  
+## <a name="adding-a-button-to-the-solution-explorer-toolbar"></a>將按鈕新增至方案總管的工具列  
+ 本逐步解說的這個部分會示範如何將按鈕加入至 **方案總管** 的工具列。 按一下按鈕時，就會執行回呼方法中的程式碼。  
   
-1. 在 ToolbarButtonPackage.vsct 檔案中，移至`<Symbols>`一節。 `<GuidSymbol>`節點包含功能表群組和 [套件] 範本所產生的命令。 新增`<IDSymbol>`到這個節點，以宣告會保留您的命令群組的項目。  
+1. 在 ToolbarButtonPackage. .vsct 檔案中，移至  `<Symbols>` 一節。 `<GuidSymbol>`節點包含封裝範本所產生的功能表群組和命令。 將專案新增 `<IDSymbol>` 至此節點，以宣告將會保存您命令的群組。  
   
     ```xml  
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>  
     ```  
   
-2. 在 [ `<Groups>` ] 區段中之後的現有的群組項目，, 定義您宣告的新群組在上一個步驟。  
+2. 在 [ `<Groups>` 現有群組] 專案後面的區段中，定義您在上一個步驟中宣告的新群組。  
   
     ```xml  
     <Group guid="guidToolbarButtonPackageCmdSet"  
@@ -55,9 +55,9 @@ ms.locfileid: "63403249"
           </Group>  
     ```  
   
-     若要設定父系 guid: id 配對`guidSHLMainMenu`和`IDM_VS_TOOL_PROJWIN`會將此群組放**方案總管 中**工具列上，並設定高優先順序的值時將它放在其他的命令群組之後。  
+     將父 GUID： ID 組設定為， `guidSHLMainMenu` 並將 `IDM_VS_TOOL_PROJWIN` 這個群組放在 **方案總管** 的工具列上，設定高優先順序的值會將它放在其他命令群組之後。  
   
-3. 在 `<Buttons>`區段中，變更所產生的父識別碼`<Button>`項目，以反映您在上一個步驟中定義的群組。 已修改`<Button>`項目應該看起來像這樣：  
+3. 在 `<Buttons>` 區段中，變更所產生專案的父識別碼， `<Button>` 以反映您在上一個步驟中定義的群組。 修改過的 `<Button>` 元素看起來應該像這樣：  
   
     ```xml  
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">  
@@ -69,29 +69,29 @@ ms.locfileid: "63403249"
     </Button>  
     ```  
   
-4. 建置此專案並開始偵錯。 實驗執行個體隨即出現。  
+4. 建置此專案並開始偵錯。 實驗實例隨即出現。  
   
-     **方案總管] 中**工具列應該會顯示新的命令按鈕右邊的 [現有的按鈕。 按鈕圖示為加刪除線。  
+     **方案總管**的工具列應該會顯示現有按鈕右邊的 [新命令] 按鈕。 按鈕圖示是刪除線。  
   
 5. 按一下 [新增] 按鈕。  
   
-     訊息的對話方塊**ToolbarButtonPackage 內 SolutionToolbar.ToolbarButton.MenuItemCallback()** 應該會顯示。  
+     應該會顯示一個對話方塊，其中包含在 **SolutionToolbar ( # B1 內 ** 的訊息 ToolbarButtonPackage。  
   
-## <a name="controlling-the-visibility-of-a-button"></a>控制按鈕的可見性  
- 本章節的逐步解說示範如何控制工具列上按鈕的可見性。 藉由設定內容中的一或多個專案`<VisibilityConstraints>`區段 SolutionToolbar.vsct 檔案中，您可以限制按鈕出現只有一個專案時開啟。  
+## <a name="controlling-the-visibility-of-a-button"></a>控制按鈕的可見度  
+ 本逐步解說的這個部分會示範如何控制工具列上按鈕的可見度。 藉由將內容設定為 SolutionToolbar. .vsct 檔案區段中的一或多個專案 `<VisibilityConstraints>` ，您就可以限制只有在專案或專案開啟時才會顯示按鈕。  
   
-#### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>若要顯示的按鈕，開啟一或多個專案時  
+#### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>開啟一或多個專案時顯示按鈕  
   
-1. 在 `<Buttons>`一節的 ToolbarButtonPackage.vsct，將兩個命令旗標新增至現有`<Button>`項目之間`<Strings>`和`<Icons>`標記。  
+1. 在 `<Buttons>` ToolbarButtonPackage 的區段中，將兩個命令旗標新增至現有的 `<Button>` 元素，在 `<Strings>` 和 `<Icons>` 標記之間。  
   
    ```xml  
    <CommandFlag>DefaultInvisible</CommandFlag>  
    <CommandFlag>DynamicVisibility</CommandFlag>  
    ```  
   
-    `DefaultInvisible`並`DynamicVisibility`旗標必須設定操作中的項目`<VisibilityConstraints>`區段才會生效。  
+    您 `DefaultInvisible` `DynamicVisibility` 必須設定和旗標，才能讓區段中的專案生效 `<VisibilityConstraints>` 。  
   
-2. 建立`<VisibilityConstraints>`區段，其中含有兩個`<VisibilityItem>`項目。 將新的區段之後關閉`</Commands>`標記。  
+2. 建立 `<VisibilityConstraints>` 具有兩個專案的區段 `<VisibilityItem>` 。 將新區段放在結束記號之後 `</Commands>` 。  
   
    ```xml  
    <VisibilityConstraints>  
@@ -104,19 +104,19 @@ ms.locfileid: "63403249"
    </VisibilityConstraints>  
    ```  
   
-    每個可見性項目表示指定的按鈕會顯示在其下的條件。 若要套用多個條件，您必須建立多個項目相同的按鈕。  
+    每個可見度專案都代表一種條件，在這種情況下，會顯示指定的按鈕。 若要套用多個條件，您必須為相同的按鈕建立多個專案。  
   
-3. 建置此專案並開始偵錯。 實驗執行個體隨即出現。  
+3. 建置此專案並開始偵錯。 實驗實例隨即出現。  
   
-    **方案總管 中**工具列不包含刪除線按鈕。  
+    **方案總管**的工具列未包含刪除線按鈕。  
   
 4. 開啟任何包含專案的方案。  
   
-    刪除線按鈕會出現在右邊的現有按鈕的工具列。  
+    刪除線按鈕會出現在現有按鈕右邊的工具列上。  
   
-5. 在 **檔案**功能表上，按一下**關閉方案**。 工具列按鈕就會消失。  
+5. 按一下 [ **檔案** ] 功能表上的 [ **關閉方案**]。 按鈕會從工具列中消失。  
   
-   按鈕的可見性由控制[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]直到載入 VSPackage。 VSPackage 載入之後，按鈕的可見性會受到 VSPackage。  如需詳細資訊，請參閱[Menucommand 對比。OleMenuCommands](../misc/menucommands-vs-olemenucommands.md)。  
+   在載入 VSPackage 之前，會控制按鈕的可見度 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。 載入 VSPackage 之後，按鈕的可見度是由 VSPackage 所控制。  如需詳細資訊，請參閱 [Menucommand 對比與 OleMenuCommands](../misc/menucommands-vs-olemenucommands.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [命令、功能表及工具列](../extensibility/internals/commands-menus-and-toolbars.md)

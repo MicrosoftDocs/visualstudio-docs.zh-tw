@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 960bd86a1e0993e4d2c57514a29ceecca34cca3d
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 7107e7f9b156f4f62e798b7f4ffb283fb8a6678c
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508505"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740041"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>使用 Visual Studio 設定 Azure 雲端服務角色
 Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您必須為每個角色定義其設定方式，並設定該角色的執行方式。 若要深入了解雲端服務中的角色，請參閱視訊 [Azure 雲端服務簡介](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)。
@@ -24,7 +24,7 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 - **ServiceDefinition** ：服務定義檔可定義雲端服務的執行時間設定，包括需要哪些角色、端點和虛擬機器大小。 當您的角色正在執行時，不可以變更儲存在 `ServiceDefinition.csdef` 中的任何資料。
 - **ServiceConfiguration.cscfg** - 服務組態檔可設定一個角色可以執行的執行個體數目，以及為角色定義的設定值。 當您的角色正在執行時，可以變更儲存在 `ServiceConfiguration.cscfg` 中的資料。
 
-若要為可控制角色執行方式的設定儲存不同的值，您可以定義多個服務組態。 您可以將不同的服務組態用於每個部署環境。 例如，您可以設定儲存體帳戶連接字串，在本機服務組態中使用本機 Azure 儲存體模擬器，並建立另一個服務組態，在雲端中使用 Azure 儲存體。
+若要為可控制角色執行方式的設定儲存不同的值，您可以定義多個服務組態。 您可以將不同的服務組態用於每個部署環境。 例如，您可以將儲存體帳戶連接字串設定為使用本機服務設定中的本機 Azure 儲存體模擬器，並建立另一個服務設定來使用雲端中的 Azure 儲存體。
 
 當您在 Visual Studio 中建立 Azure 雲端服務時，會自動建立兩個服務組態並新增至您的 Azure 專案：
 

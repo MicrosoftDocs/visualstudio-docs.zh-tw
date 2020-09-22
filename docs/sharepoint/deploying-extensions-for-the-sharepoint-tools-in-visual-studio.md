@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53e36d993e72da759c87e7d2d2f908818b3d9024
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e7bcb4c03a274c958b097ab7869cb58120b0ee7
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62580640"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740140"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>在 Visual Studio 中部署 SharePoint 工具的延伸模組
 
@@ -234,11 +234,11 @@ ms.locfileid: "62580640"
 
     - 在專案底下加入專案 `Microsoft.VisualStudio.MefComponent` `Assets` ，然後將新元素的值設定為在 VSIX 封裝中執行延伸模組之元件的相對路徑。 如需詳細資訊，請參閱 [[Microsoft.visualstudio.mefcomponent] 元素 (VSX 架構) ](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
-    - 如果您的延伸模組包含一個 SharePoint 命令，其會呼叫 SharePoint 的伺服器物件模型，請在專案底下加入 `Microsoft.VisualStudio.Assembly` 元素 `Assets` 。 將新元素的值設定為在 VSIX 封裝中執行 SharePoint 命令的元件相對路徑。 如需詳細資訊，請參閱 [資產元素 (VSX 架構) ](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。
+    - 如果您的延伸模組包含一個 SharePoint 命令，其會呼叫 SharePoint 的伺服器物件模型，請在專案底下加入 `Microsoft.VisualStudio.Assembly` 元素 `Assets` 。 將新元素的值設定為在 VSIX 封裝中執行 SharePoint 命令的元件相對路徑。 如需詳細資訊，請參閱 [資產元素 (VSX 架構) ](/previous-versions/dd393737(v=vs.110))。
 
     - 如果您的延伸模組包含專案範本或專案範本，請 `ProjectTemplate` 在元素底下加入或專案 `ItemTemplate` `Assets` 。 將新專案的值設定為 VSIX 封裝中包含範本之資料夾的相對路徑。 如需詳細資訊，請參閱 [ProjectTemplate 元素 (VSX 架構) ](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) 和 [ITEMTEMPLATE 元素 (VSX 架構) ](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))。
 
-    - 如果您的延伸模組包含專案範本或專案範本的自訂嚮導，請在專案底下加入 `Assembly` 元素 `Assets` 。 將新專案的值設定為 VSIX 封裝中元件的相對路徑，然後將 `AssemblyName` 屬性設定為完整元件名稱 (包括版本、文化特性和公開金鑰 token) 。 如需詳細資訊，請參閱 [ (VSX 架構) ](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37)的相依性元素。
+    - 如果您的延伸模組包含專案範本或專案範本的自訂嚮導，請在專案底下加入 `Assembly` 元素 `Assets` 。 將新專案的值設定為 VSIX 封裝中元件的相對路徑，然後將 `AssemblyName` 屬性設定為完整元件名稱 (包括版本、文化特性和公開金鑰 token) 。 如需詳細資訊，請參閱 [ (VSX 架構) ](/previous-versions/dd393682(v=vs.110))的相依性元素。
 
 ### <a name="example"></a>範例
 

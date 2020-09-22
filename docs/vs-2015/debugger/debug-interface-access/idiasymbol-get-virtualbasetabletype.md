@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ea59822ebc568e843433f28f6e9b23f4df96fdb2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64800004"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838920"
 ---
-# <a name="idiasymbolgetvirtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
+# <a name="idiasymbolget_virtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取虛擬基底資料表的指標類型。  
+抓取虛擬基底資料表指標的類型。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,27 +35,27 @@ HRESULT get_virtualBaseTableType(
   
 #### <a name="parameters"></a>參數  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
-|`pRetVal`|[out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)指定類型的基底資料表的物件。|  
+|`pRetVal`|擴展傳回 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件，這個物件會指定基表的型別。|  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。  
   
 ## <a name="remarks"></a>備註  
- 虛擬基底資料表的指標 (`vbtptr`) 中的隱藏指標[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]vtable 處理從虛擬基底類別繼承。 A`vbtptr`可以有不同的大小取決於繼承的類別。  
+ 虛擬基底資料表指標 (`vbtptr`) 是 vtable 中的隱藏指標 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] ，可處理來自虛擬基類的繼承。 `vbtptr`根據繼承的類別，可以有不同的大小。  
   
- 這個方法會傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)可用來判斷 vbtptr 大小的物件。  
+ 這個方法會傳回 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件，可用來判斷 vbtptr 的大小。  
   
 ## <a name="requirements"></a>需求  
   
 |需求|描述|  
 |-----------------|-----------------|  
-|標頭：|dia2.h|  
-|版本:|DIA SDK v8.0|  
+|標頭：|dia2。h|  
+|版本：|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：在訊息檢視中的訊息搜尋 |Microsoft Docs
+title: 如何：在訊息視圖中搜尋訊息 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,42 +14,42 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6c89a763389abe364fe70166e63b41f932581837
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430903"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838806"
 ---
-# <a name="how-to-search-for-a-message-in-messages-view"></a>HOW TO：在訊息檢視中搜尋訊息
+# <a name="how-to-search-for-a-message-in-messages-view"></a>如何：在訊息檢視中搜尋訊息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以使用其控制代碼、 類型或訊息識別碼，做為搜尋準則來搜尋特定訊息在訊息檢視中。 其中任何一個，或組合，會是有效的搜尋準則。 也可以指定搜尋的初始方向。 在對話方塊中的欄位會預先載入的目前選取的訊息屬性。  
+您可以使用控制碼、類型或訊息識別碼作為搜尋準則，在 [訊息] 視圖中搜尋特定的訊息。 其中任何一個（或組合）都是有效的搜尋準則。 您也可以指定搜尋的初始方向。 對話方塊中的欄位會預先載入目前選取的訊息屬性。  
   
-### <a name="to-search-for-a-message-in-messages-view"></a>若要搜尋在訊息檢視中的訊息  
+### <a name="to-search-for-a-message-in-messages-view"></a>在訊息視圖中搜尋訊息  
   
-1. 因此排列的視窗，Spy + + 和作用[訊息檢視](../debugger/messages-view.md)視窗會顯示。  
+1. 排列視窗，讓 Spy + + 和使用中的 [訊息查看](../debugger/messages-view.md) 視窗都可見。  
   
-2. 從**搜尋**功能表上，選擇**尋找訊息**。  
+2. 在 [ **搜尋** ] 功能表中，選擇 [ **尋找訊息**]。  
   
-    [訊息搜尋對話方塊](../debugger/message-search-dialog-box.md)隨即開啟。  
+    [ [訊息搜尋] 對話方塊](../debugger/message-search-dialog-box.md) 隨即開啟。  
   
-3. 拖曳**搜尋工具**移轉所需的視窗。 當您拖曳工具，**訊息搜尋** 對話方塊上選取的視窗會顯示詳細資料。  
-  
-    -或-  
-  
-    如果您有您想要檢查其訊息的視窗控制代碼，將它輸入**處理**文字方塊。  
+3. 將 [ **Finder] 工具** 拖曳至想要的視窗。 當您拖曳工具時，[ **訊息搜尋** ] 對話方塊會顯示所選視窗的詳細資料。  
   
     -或-  
   
-    如果您知道訊息類型和/或您想要的訊息識別碼，請選取 從**型別**並**訊息**下拉式功能表，並清除**處理**文字方塊。  
+    如果您有要檢查其訊息的視窗控制碼，請將它輸入 [ **控制碼** ] 文字方塊中。  
   
-4. 清除，您不想指定值的任何欄位。  
+    -或-  
+  
+    如果您知道您想要的訊息類型及/或訊息識別碼，請從 [ **類型** ] 和 [ **訊息** ] 下拉式功能表中選取它們，然後清除 [ **控制碼** ] 文字方塊。  
+  
+4. 清除您不想要指定值的任何欄位。  
   
    > [!TIP]
-   > 若要減少螢幕混亂的情形，請選取**隱藏 spy + +** 選項。 此選項會隱藏主 Spy + + 視窗中，並且只留下**尋找視窗**對話方塊顯示在其他應用程式之上。 當您按一下 還原 Spy + + 主要視窗**確定**或是**取消**，或清除**隱藏 Spy + +** 選項。  
+   > 若要減少螢幕混亂，請選取 [ **隱藏 Spy** ] 選項。 此選項會隱藏主要的 Spy + + 視窗，讓 [ **尋找視窗** ] 對話方塊只會顯示在其他應用程式的頂端。 當您按一下 **[確定] 或 [** **取消**]，或清除 [ **隱藏 spy + +** ] 選項時，就會還原 Spy + + 主視窗。  
   
-5. 選擇**向上**或是**向下**初始搜尋的方向。  
+5. 選擇 [ **向上** ] 或 [ **向下** ] 以取得搜尋的初始方向。  
   
-6. 按一下 [確定] 。  
+6. 按一下 [確定]。  
   
-   如果找到相符的訊息時，它會反白顯示在訊息的 [檢視] 視窗。 請參閱[訊息檢視](../debugger/messages-view.md)。
+   如果找到相符的訊息，則會在 [訊息] 視圖視窗中反白顯示。 查看 [訊息的觀點](../debugger/messages-view.md)。

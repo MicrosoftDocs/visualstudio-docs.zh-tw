@@ -1,5 +1,5 @@
 ---
-title: 偵錯引擎 |Microsoft Docs
+title: Debug Engine |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,33 +11,33 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6e81a95cffebc9e26821b9cc6157627100343452
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383373"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839003"
 ---
 # <a name="debug-engine"></a>偵錯引擎
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-偵錯引擎 (DE) 適用於解譯器或作業系統，來提供偵錯的服務，例如執行控制、 中斷點、 和運算式評估。 DE 負責監視正在偵錯程式的狀態。 若要執行達到此目的，DE 會使用任何方法會為它提供的支援的執行階段，是否執行階段所提供的 cpu，或從 Api。  
+Debug engine (DE) 可搭配解譯器或作業系統使用，以提供偵錯工具，例如執行控制、中斷點和運算式評估。 DE 負責監視正在進行偵錯工具的狀態。 為了達成此目的，在支援的執行時間中，不論是從 CPU 或執行時間所提供的 Api，DE 都會使用任何可用的方法。  
   
- 例如，common language runtime (CLR) 會提供機制來監視正在執行的程式，透過 ICorDebugXXX 介面。 支援 CLR DE 會使用適當的 ICorDebugXXX 介面，來追蹤正在偵錯 managed 程式碼程式。 然後通訊狀態的任何變更工作階段的偵錯管理員 (SDM)，將這類資訊轉送給[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE。  
-  
-> [!NOTE]
-> 偵錯引擎為目標的特定執行階段，也就是系統中的程式進行偵錯執行。 CLR 執行階段為了在 managed 程式碼，而 Win32 執行階段原生 Windows 應用程式。 如果您建立的語言可以為其中一個這些兩個執行階段，目標[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]已提供必要的偵錯引擎。 您必須實作的只是運算式評估工具。  
-  
-## <a name="debug-engine-operation"></a>偵錯引擎作業  
- 監視服務會透過 DE 介面實作，而且會造成偵錯封裝至不同的作業模式之間轉換。 如需詳細資訊，請參閱 <<c0> [ 作業模式](../../extensibility/debugger/operational-modes.md)。 通常是只有一個 DE 實作每個執行階段環境。  
+ 例如，common language runtime (CLR) 提供可透過 ICorDebugXXX 介面監視執行中程式的機制。 支援 CLR 的 DE 會使用適當的 ICorDebugXXX 介面來追蹤要進行調試的 managed 程式碼程式。 然後，它會將任何狀態變更傳達給會話 debug manager (SDM) ，以將這類資訊轉送至 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE。  
   
 > [!NOTE]
-> 雖然有不同的 DE 實作，為 TRANSACT-SQL 以及[!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)]，VBScript 和[!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)]共用單一 DE。  
+> 偵錯工具引擎以特定的執行時間為目標，也就是要在其中執行正在進行程式設計的程式的系統。 CLR 是 managed 程式碼的執行時間，而 Win32 執行時間則適用于原生 Windows 應用程式。 如果您建立的語言可以設定為這兩個執行時間的其中一個，則 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 已提供必要的偵錯工具引擎。 您只需要執行運算式評估工具。  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 偵錯啟用偵錯引擎來執行下列其中一種： 在相同的程序[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]殼層，或在相同的程序，做為目標的程式進行偵錯。 處理序偵錯是實際解譯器、 下執行的指令碼和偵錯引擎必須有深切的解譯器，才能監視指令碼時，通常會發生後者的表單。 請注意，在此情況下，解譯器是實際執行階段;偵錯引擎會針對特定執行階段實作。 此外，實作單一 DE 可以分割跨處理序與電腦界限 （例如，遠端偵錯）。  
+## <a name="debug-engine-operation"></a>Debug Engine 作業  
+ 監視服務是透過 DE 介面來執行，而且可能會使 debug 封裝在不同的操作模式之間轉換。 如需詳細資訊，請參閱 [操作模式](../../extensibility/debugger/operational-modes.md)。 在每個執行時間環境中，通常只會執行一次 DE。  
   
- DE 公開[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯介面。 所有通訊都是透過 com。 是否同處理序、 處理外，或在另一部電腦上載入 DE 時，它不會影響元件通訊。  
+> [!NOTE]
+> 雖然 Transact-sql 和 VBScript 都有不同的取消執行 [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] ，並且會 [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] 共用單一 de。  
   
- DE 搭配運算式評估工具元件，來啟用該特定執行階段 DE，若要了解運算式的語法。 DE 也適用於一個符號處理常式元件，可存取由語言編譯器所產生的符號偵錯資訊。 如需詳細資訊，請參閱 <<c0> [ 運算式評估工具](../../extensibility/debugger/expression-evaluator.md)並[符號提供者](../../extensibility/debugger/symbol-provider.md)。  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 偵錯工具可讓 debug engine 以兩種方式執行：在和 shell 相同的進程中 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ，或與正在進行調試的目的程式相同的進程中。 第二種形式通常發生于正在進行調試的進程實際上是在解譯器下執行的腳本，而且 debug engine 必須有深入瞭解解譯器，才能監視腳本。 請注意，在此情況下，解譯器實際上是執行時間;偵錯工具引擎適用于特定的執行時間。 此外，單一 DE 的執行可以跨進程和電腦界限進行分割 (例如，遠端偵錯程式) 。  
+  
+ DE 會公開 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 調試的介面。 所有通訊都是透過 COM 進行。 無論是在進程內、跨進程或在另一部電腦上載入 DE，都不會影響元件通訊。  
+  
+ DE 可搭配運算式評估工具元件使用，以啟用該特定執行時間的 DE 來瞭解運算式的語法。 也可以使用符號處理常式元件來存取語言編譯器所產生的符號偵錯工具資訊。 如需詳細資訊，請參閱 [運算式評估](../../extensibility/debugger/expression-evaluator.md) 工具和 [符號提供者](../../extensibility/debugger/symbol-provider.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具元件](../../extensibility/debugger/debugger-components.md)   

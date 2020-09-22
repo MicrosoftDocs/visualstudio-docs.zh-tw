@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：改善 UI 回應性 (HTML) |Microsoft Docs
+title: 逐步解說：改善 UI 回應性 (HTML) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,11 +20,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433165"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838871"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>逐步解說：改善 UI 回應性 (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,16 +33,16 @@ ms.locfileid: "63433165"
   
 ### <a name="creating-and-running-the-performance-test-app"></a>建立及執行效能測試應用程式  
   
-1. 在 Visual Studio 中，建立新的 Windows 通用 JavaScript 專案。 (選取 [檔案] / [新增] / [專案]。) 選擇左窗格中的 [JavaScript]，然後選擇 [Windows]，[Windows 10]，然後選擇 [通用] 或 [Windows Phone]。  
+1. 在 Visual Studio 中，建立新的 Windows 通用 JavaScript 專案。  (選取 [檔案] **/[新增]/[專案**]。 選擇左窗格中的 [JavaScript]****，然後選擇 [Windows]****，[Windows 10]****，然後選擇 [通用]**** 或 [Windows Phone]****。  
   
 2. > [!IMPORTANT]
     > 本主題中所顯示的診斷結果均以 Windows 8 App 為測試對象。  
   
-3. 在中間窗格內選擇其中一個空白的專案範本，例如 [空白應用程式]。  
+3. 在中間窗格內選擇其中一個空白的專案範本，例如 [空白應用程式]****。  
   
-4. 在 [名稱]  方塊中指定名稱 (例如 `JS_Perf_Tester`)，然後選擇 [確定] 。  
+4. 在 [名稱] **** 方塊中指定名稱 (例如 `JS_Perf_Tester`)，然後選擇 [確定] ****。  
   
-5. 在 [方案總管] 中開啟 default.html，然後在 \<body> 標記之間貼上下列程式碼：  
+5. 在 **方案總管**中，開啟 default.html，並在標記之間貼上下列程式碼 \<body> ：  
   
     ```html  
     <div class="wrapper">  
@@ -148,9 +148,9 @@ ms.locfileid: "63433165"
   
     ```  
   
-8. 選擇 F5 鍵開始偵錯。 確認 [等待值] 按鈕已出現在頁面上。  
+8. 選擇 F5 鍵開始偵錯。 確認 [等待值]**** 按鈕已出現在頁面上。  
   
-9. 選擇 [等待值] 並確認按鈕文字與色彩大約每秒更新一次。 這是依設計的結果。  
+9. 選擇 [等待值]**** 並確認按鈕文字與色彩大約每秒更新一次。 這是原廠設定。  
   
 10. 切換回 Visual Studio (Alt+Tab)，然後選擇 Shift+F5 停止偵錯。  
   
@@ -158,25 +158,25 @@ ms.locfileid: "63433165"
   
 ### <a name="analyzing-performance-data"></a>分析效能資料  
   
-1. 在 [偵錯] 工具列的 [開始偵錯] 清單中，選擇其中一個 Windows Phone 模擬器。  
+1. 在 [偵錯]**** 工具列的 [開始偵錯]**** 清單中，選擇其中一個 Windows Phone 模擬器****。  
   
 2. 在 [ **偵錯** ] 功能表上選擇 [ **效能及診斷**]。  
   
-3. 在 [可用的工具] 中，選擇 [HTML UI 回應性]，然後選擇 [開始]。  
+3. 在 [可用的工具]**** 中，選擇 [HTML UI 回應性]****，然後選擇 [開始]****。  
   
     在本教學課程中，我們會將分析工具附加至啟始專案。 如需其他選項 (例如將分析工具附加至已安裝的 App) 的詳細資訊，請參閱 [HTML UI 回應性](../profiling/html-ui-responsiveness.md)。  
   
     當您啟動分析工具時，可能會出現 [使用者帳戶控制] 要求您提供執行 VsEtwCollector.exe 的權限。 選擇 [ **是**]。  
   
-4. 在執行的 App 中，選擇 [等待值] 並等待約 10 秒。 確認按鈕文字和色彩是否大約每秒更新一次。  
+4. 在執行的 App 中，選擇 [等待值]**** 並等待約 10 秒。 確認按鈕文字和色彩是否大約每秒更新一次。  
   
 5. 當應用程式仍在執行時，切換至 Visual Studio (Alt+Tab)。  
   
-6. 選擇 [停止收集]。  
+6. 選擇 [停止收集]****。  
   
     分析工具會在 Visual Studio 中開啟新的索引標籤來顯示相關資訊。 當您查看 CPU 使用率和視覺輸送量 (FPS) 資料時，很容易就能了解一些趨勢：  
   
-   - CPU 使用率在大約 3 秒後 (當您按下 [等待值] 按鈕時) 大幅增加，且會從這時開始清楚地顯示事件模式 (處理指令碼、處理樣式及呈現等事件一致地混合在一起)。  
+   - CPU 使用率在大約 3 秒後 (當您按下 [等待值]**** 按鈕時) 大幅增加，且會從這時開始清楚地顯示事件模式 (處理指令碼、處理樣式及呈現等事件一致地混合在一起)。  
   
    - 視覺輸送量並未受到影響，FPS (每秒畫面格數) 的值保持在 60 (也就是說，畫面並未減少)。  
   
@@ -184,9 +184,9 @@ ms.locfileid: "63433165"
   
 7. 在 CPU 使用率圖表中選取一到兩秒的部分 (您可以按一下並拖曳或使用 Tab 和方向鍵來選取)。 下圖顯示在選取範圍之後的 CPU 使用率圖表。 非陰影區域是選取範圍。  
   
-    ![CPU 使用率圖形](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![CPU 使用率圖表](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
-8. 選擇 [放大]。  
+8. 選擇 [放大]****。  
   
     圖表隨即變更，更詳細地顯示所選取的期間。 下圖顯示經過放大之後的 CPU 使用率圖表。 (特定資料可能有所差異，但是一般模式則很明顯。)  
   
@@ -198,7 +198,7 @@ ms.locfileid: "63433165"
   
     透過 [時間表詳細資料] 中的事件，我們可以確定 CPU 使用率圖表中的趨勢：在短期間內發生了很多事件。 [時間表詳細資料] 檢視顯示這些事件都是 `Timer`、`Layout` 和 `Paint` 事件。  
   
-9. 使用操作功能表 (或是以滑鼠右鍵按一下) 下方窗格內的其中一個 `Timer` 事件，然後選擇 [篩選事件]。 下圖顯示此測試應用程式之其中一個 `Timer` 事件的典型詳細資料範例。  
+9. 使用操作功能表 (或是以滑鼠右鍵按一下) 下方窗格內的其中一個 `Timer` 事件，然後選擇 [篩選事件]****。 下圖顯示此測試應用程式之其中一個 `Timer` 事件的典型詳細資料範例。  
   
      ![計時器事件](../profiling/media/js-htmlviz-app-timer.png "JS_HTMLViz_App_Timer")  
   
@@ -206,7 +206,7 @@ ms.locfileid: "63433165"
   
     - 每個 `Timer` 事件 (會以色彩標示指出它是 [正在處理指令碼] 事件) 都包括 `document.createElement` 的呼叫，後面緊接著樣式計算以及 `style.backgroundColor` 和 `appendChild()` 的呼叫。  
   
-    - 在選取的短期間 (大約一或兩秒) 秒，有大量的 `Timer`、`Layout` 和 `Paint` 事件發生。 在您執行 App 並選擇 [等待值] 按鈕之後，`Timer` 事件的發生頻率遠高於您肉眼所見按鈕內容每秒更新一次的頻率。  
+    - 在選取的短期間 (大約一或兩秒) 秒，有大量的 `Timer`、`Layout` 和 `Paint` 事件發生。 在您執行 App 並選擇 [等待值]**** 按鈕之後，`Timer` 事件的發生頻率遠高於您肉眼所見按鈕內容每秒更新一次的頻率。  
   
 10. 若要調查，請選擇左下方窗格中任一個 `Timer` 事件的匿名函式連結。 下列函式隨即在 default.js 中開啟：  
   
@@ -243,4 +243,4 @@ ms.locfileid: "63433165"
 2. 再次執行 HTML UI 回應性分析工具並檢查 CPU 使用率圖表。 您會發現這次並沒有發生過多的事件，而且 CPU 使用率也下降接近到零， 表示問題修復了。  
   
 ## <a name="see-also"></a>另請參閱  
- [HTML UI 回應性](../profiling/html-ui-responsiveness.md)
+ [HTML UI responsiveness](../profiling/html-ui-responsiveness.md)

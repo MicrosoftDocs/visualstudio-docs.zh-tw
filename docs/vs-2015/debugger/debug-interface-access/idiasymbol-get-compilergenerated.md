@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_compilergenerated |Microsoft Docs'
+title: IDiaSymbol：： get_compilerGenerated |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8b4a067facf713af1b0547654be9aaf54500025
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64819812"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839106"
 ---
-# <a name="idiasymbolgetcompilergenerated"></a>IDiaSymbol::get_compilerGenerated
+# <a name="idiasymbolget_compilergenerated"></a>IDiaSymbol::get_compilerGenerated
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取指出編譯器是否產生符號的旗標。  
+抓取旗標，這個旗標會指出此符號是否由編譯器產生。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,20 +35,20 @@ HRESULT get_compilerGenerated ( 
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]會傳回`TRUE`由編譯器產生符號; 否則會傳回`FALSE`如果符號已由使用者撰寫的程式碼產生。  
+ 擴展 `TRUE` 如果編譯器產生符號，則會傳回; 否則， `FALSE` 如果符號是從使用者寫入來源產生，則會傳回。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功， `S_OK` 則傳回; 否則傳回 `S_FALSE` 錯誤碼。  
   
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。  
   
 ## <a name="requirements"></a>需求  
   
 |需求|描述|  
 |-----------------|-----------------|  
-|標頭：|dia2.h|  
-|版本:|DIA SDK v7.0|  
+|標頭：|dia2。h|  
+|版本：|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

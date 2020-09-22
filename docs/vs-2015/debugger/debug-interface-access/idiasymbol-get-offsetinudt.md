@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6d5d6a365a7f8455b62e6144f212d853a5f57e2f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64782147"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838788"
 ---
-# <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
+# <a name="idiasymbolget_offsetinudt"></a>IDiaSymbol::get_offsetInUdt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取至使用者定義型別 (UDT) 中的 UDT 的成員開頭的位移。  
+抓取 UDT 中成員 (UDT) 的使用者定義型別開頭的位移。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,23 +35,23 @@ HRESULT get_offsetInUdt( 
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回以位元組為單位的符號位置的位移。  
+ 擴展傳回符號位置的位移（以位元組為單位）。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。  
   
 ## <a name="remarks"></a>備註  
- 此函式只能用於最佳化組建中的本機記錄。  
+ 此函數只會用於優化組建中的本機記錄。  
   
 ## <a name="requirements"></a>需求  
- 標頭：dia2.h  
+ 標頭： Dia2。h  
   
- 程式庫： diaguids.lib  
+ 程式庫： diaguids .lib  
   
- DLL: msdia100.dll  
+ DLL： msdia100.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

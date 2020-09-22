@@ -1,5 +1,5 @@
 ---
-title: HOW TO：註冊服務 |Microsoft Docs
+title: 如何：註冊服務 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -10,22 +10,22 @@ ms.assetid: d086be78-ec3c-43cc-b799-5180a71e19f1
 caps.latest.revision: 16
 manager: jillfra
 ms.openlocfilehash: f41578f2522487f746a469933a2269a621390f3c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408417"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838813"
 ---
-# <a name="how-to-register-a-service"></a>HOW TO：註冊服務
+# <a name="how-to-register-a-service"></a>如何：註冊服務
 Managed Package Framework (MPF) 提供屬性以控制受管理服務的註冊。 RegPkg 公用程式使用這些屬性，向 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]註冊服務。  
   
 ## <a name="example"></a>範例  
- 後面的程式碼取自[VSSDK 範例](../misc/vssdk-samples.md)。  
+ 接下來的程式碼來自 [VSSDK 範例](../misc/vssdk-samples.md)。  
   
  [!code-csharp[VSSDKRegisterService#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkregisterservice/cs/vssdkregisterservicepackage.cs#1)]
  [!code-vb[VSSDKRegisterService#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkregisterservice/vb/vssdkregisterservicepackage.vb#1)]  
   
- <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> 會向 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 註冊 SMyGlobalService 服務。 如需詳細資訊<xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute>並<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>，請參閱[註冊和取消註冊 Vspackage](../extensibility/registering-and-unregistering-vspackages.md)。  
+ <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> 會向 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 註冊 SMyGlobalService 服務。 如需和的詳細資訊 <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute> <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> ，請參閱 [註冊和取消註冊 vspackage](../extensibility/registering-and-unregistering-vspackages.md)。  
   
  若要註冊會取代另一個同名服務的服務，請使用 <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>而非 <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>。  
   
