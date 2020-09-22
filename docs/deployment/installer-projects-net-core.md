@@ -1,5 +1,6 @@
 ---
 title: Visual Studio 安裝程式專案和 .NET Core 3。1
+titleSuffix: ''
 ms.date: 08/18/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: MSLukeWest
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: a057e655df643c5ddfd85064ba84260a2644dffd
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 86680a2b961af9182691422e02b42c6529f45639
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641579"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852650"
 ---
 # <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Visual Studio 安裝程式專案延伸模組與 .NET Core 3.1
 

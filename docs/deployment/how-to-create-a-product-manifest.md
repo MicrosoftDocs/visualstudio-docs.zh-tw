@@ -1,5 +1,5 @@
 ---
-title: 如何-建立產品資訊清單 |Microsoft Docs
+title: 建立產品資訊清單 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f4302756b089376eca8926453399768faaf58f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97ec49438ce2382336b1b8a6f8355bd092486c2d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382506"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852214"
 ---
 # <a name="how-to-create-a-product-manifest"></a>How to: Create a product manifest (如何：建立產品資訊清單)
 若要部署應用程式的必要條件，您可以建立啟動載入器套件。 啟動載入器套件包含單一產品資訊清單檔案，但每個地區設定都有套件資訊清單。 封裝資訊清單包含封裝的當地語系化特定層面。 這包括字串、使用者授權合約和語言套件。

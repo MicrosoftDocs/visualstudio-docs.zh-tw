@@ -1,5 +1,5 @@
 ---
-title: 如何-在混合模式中進行調試 |Microsoft Docs
+title: 在混合模式中進行 Debug |Microsoft Docs
 ms.date: 11/05/2018
 ms.topic: how-to
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53a40c4dc615b5e1b6a3caef3a99be5ab0b56327
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb563b260175d3385288c4cb6f046af8526069cf
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350104"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852109"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>如何：在混合模式中進行調試 (c #、c + +、Visual Basic) 
 

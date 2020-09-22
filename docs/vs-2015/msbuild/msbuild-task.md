@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d2349c21d55c20bcb3bcd50ab96f383a9afcc00b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426117"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839182"
 ---
 # <a name="msbuild-task"></a>MSBuild 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "63426117"
 ## <a name="parameters"></a>參數  
  下表說明 `MSBuild` 工作的參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`BuildInParallel`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，同時也會建置 `Projects` 參數中指定的專案 (如果可能)。 預設為 `false`。|  
 |`Projects`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要建置的專案檔。|  
@@ -52,9 +52,9 @@ ms.locfileid: "63426117"
 |`UseResultsCache`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，將會傳回快取的結果 (如果有的話)。 如果執行 MSBuild 工作，即會在範圍 (ProjectFileName, GlobalProperties)[TargetNames] 內快取它的結果<br /><br /> 做為組建項目清單|  
   
 ## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
   
- 不同於使用 [Exec 工作](../msbuild/exec-task.md) 來啟動 MSBuild.exe，此工作會使用相同的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 程序來建置子專案。 父組建和子組建之間能夠共用已經建置且可略過的目標清單。 此工作的速度也會比較快，因為不會建立新的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 程序。  
+ 不同于使用 [Exec](../msbuild/exec-task.md) 工作來開始 MSBuild.exe，此工作會使用相同的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 進程來建立子專案。 父組建和子組建之間能夠共用已經建置且可略過的目標清單。 此工作的速度也會比較快，因為不會建立新的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 程序。  
   
  此工作不只會處理專案檔，也會處理方案檔。  
   
@@ -71,7 +71,7 @@ ms.locfileid: "63426117"
 > 這些新的中繼資料項目僅適用於 [MSBuild 工作](../msbuild/msbuild-task.md)的 Projects 屬性中所傳遞的項目。  
   
 ## <a name="multi-processor-build-benefits"></a>多處理器組建的優點  
- 使用這個新中繼資料主要優點之一是發生在您於多處理器系統上同時建置專案時。 中繼資料可讓您將所有專案合併成單一 [MSBuild 工作](../msbuild/msbuild-task.md)呼叫，而不需執行任何批次處理或條件式 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工作。 而且，當您只呼叫單一 [MSBuild 工作](../msbuild/msbuild-task.md)時，將會同時建置 Projects 屬性中列出的所有專案 (不過，只有在 `BuildInParallel=true` 屬性出現於 [MSBuild 工作](../msbuild/msbuild-task.md)時)。如需詳細資訊，請參閱[同時建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)。  
+ 使用這個新中繼資料主要優點之一是發生在您於多處理器系統上同時建置專案時。 中繼資料可讓您將所有專案合併成單一 [MSBuild 工作](../msbuild/msbuild-task.md)呼叫，而不需執行任何批次處理或條件式 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工作。 而且，當您只呼叫單一 [MSBuild 工作](../msbuild/msbuild-task.md)時，將會同時建置 Projects 屬性中列出的所有專案 不過，只有在 `BuildInParallel=true` [MSBuild](../msbuild/msbuild-task.md)工作中有屬性時，才 (。 ) 如需詳細資訊，請參閱 [平行建立多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)。  
   
 ## <a name="properties-metadata"></a>Properties 中繼資料  
  常見的案例是當您使用 [MSBuild 工作](../msbuild/msbuild-task.md)來建置多個方案檔時，只會使用不同的建置組態。 您可能想要使用 Debug 組態來建置方案 a1，使用 Release 組態來建置方案 a2。 在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 中，這個專案檔看起來如下：  
@@ -110,7 +110,7 @@ ms.locfileid: "63426117"
 </Project>  
 ```  
   
- \-或-  
+ \- 或 -  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -189,6 +189,6 @@ ms.locfileid: "63426117"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
- [工作](../msbuild/msbuild-tasks.md)   
+## <a name="see-also"></a>另請參閱  
+ [任務](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)
