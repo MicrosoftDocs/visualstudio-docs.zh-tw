@@ -10,11 +10,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c8ef52638858160822fcc271a53513b130afc3f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440044"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838985"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>如何：設定目標和工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,5 +110,5 @@ ms.locfileid: "63440044"
 > [!NOTE]
 > 工作參數是在父節點的內容中評估，而非工作主機的內容。執行階段或架構相依的環境變數 (例如程式檔案位置) 將評估為符合父節點的值。  不過，如果工作直接讀取相同的環境變數，它會正確地在工作主機的內容中進行評估。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [設定目標和工作](../msbuild/configuring-targets-and-tasks.md)

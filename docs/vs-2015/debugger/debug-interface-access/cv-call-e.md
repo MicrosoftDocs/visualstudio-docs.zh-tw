@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cd1ee4c024894e5752277a5000d37745c88c4ac6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442096"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839026"
 ---
-# <a name="cvcalle"></a>CV_call_e
+# <a name="cv_call_e"></a>CV_call_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-指定函式的呼叫慣例。  
+指定函數的呼叫慣例。  
   
 > [!NOTE]
-> 只有最常見的列舉值記載於此。 完整的列舉型別適用於 cvconst.h 標頭檔。  
+> 這裡只會記錄最常見的列舉值。 完整列舉可在 cvconst .h 標頭檔中取得。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,30 +41,30 @@ typedef enum CV_call_e { 
 } CV_call_e;  
 ```  
   
-## <a name="elements"></a>項目  
+## <a name="elements"></a>元素  
  CV_CALL_NEAR_C  
- 指定使用幾近的由右至左推入的函式呼叫慣例。 呼叫的函式會清除堆疊。  
+ 使用接近的由右至左推播來指定函式呼叫慣例。 呼叫的函式會清除堆疊。  
   
  CV_CALL_NEAR_FAST  
- 指定暫存器搭配使用幾近的左到右推播函式呼叫慣例。 呼叫的函式會清除堆疊中使用參數的位元組總數。  
+ 使用與暫存器接近的左至右推播來指定函式呼叫慣例。 呼叫的函式會使用參數位元組的總和來清除堆疊。  
   
  CV_CALL_NEAR_STD  
- 指定使用近乎標準呼叫 （由右至左推入） 的函式呼叫慣例。  
+ 使用接近標準的呼叫來指定函式呼叫慣例， (由右至左推送) 。  
   
  CV_CALL_NEAR_SYS  
- 指定使用幾近的系統呼叫的函式呼叫慣例。  
+ 使用近端系統呼叫來指定函式呼叫慣例。  
   
  CV_CALL_THISCALL  
- 指定使用函式呼叫慣例`this`呼叫 (`this`暫存器中傳遞的指標)。  
+ 使用 `this` `this` 在 register) 中傳遞的呼叫 (指標，指定函式呼叫慣例。  
   
  CV_CALL_CLRCALL  
- 指定使用的 Common Language Runtime (CLR) （也稱為 managed 程式碼呼叫慣例） 的函式呼叫慣例。  
+ 指定 Common Language Runtime (CLR) 所使用的函式呼叫慣例 (也稱為 managed 程式碼呼叫慣例) 。  
   
 ## <a name="remarks"></a>備註  
- 這個列舉型別中的值會傳回呼叫[idiasymbol:: Get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)方法。  
+ 呼叫 [IDiaSymbol：： get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) 方法時，會傳回此列舉中的值。  
   
 ## <a name="requirements"></a>需求  
- 標頭： cvconst.h  
+ 標頭： cvconst。h  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   

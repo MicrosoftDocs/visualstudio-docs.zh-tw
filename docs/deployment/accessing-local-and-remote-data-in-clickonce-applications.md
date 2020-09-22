@@ -1,5 +1,6 @@
 ---
-title: 在 ClickOnce 應用程式中存取本機和遠端資料 |Microsoft Docs
+title: '存取本機 & 遠端資料 (ClickOnce 應用程式) '
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c2a4f2e9fe66ab049113111f13338cdced4e39e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e93c8479e917e74d31c3eedbb00d9d5911442b92
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66746074"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810467"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 應用程式中存取本機和遠端資料
 大部分應用程式都會取用或產生資料。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 提供您許多選項，以進行本機和遠端的資料讀取及寫入。

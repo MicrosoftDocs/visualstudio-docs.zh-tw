@@ -11,37 +11,37 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a6598e2f1a178845b3ad2017716576439185379e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426454"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838820"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>管理方案中的專案載入
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 方案可以包含大量的專案。 Visual Studio 預設會在開啟解決方案時，階段中載入方案中的所有專案，而且不允許使用者存取的任何專案，直到它們全部完成載入。 當專案載入的程序會持續超過兩分鐘時，會顯示進度列，顯示載入的專案數目及專案的總數。 使用者可以同時使用多個專案的方案中工作卸載的專案，但此程序有一些缺點： 已卸載的專案並不是建置為重建方案 命令的一部分，並關閉 IntelliSense 描述的型別和成員專案不會顯示。  
+Visual Studio 的解決方案可以包含大量專案。 預設的 Visual Studio 行為是在方案開啟時載入方案中的所有專案，而不允許使用者存取任何專案，直到全部載入完成為止。 當專案載入的程式持續兩分鐘以上時，會顯示進度列，其中顯示已載入的專案數和專案總數。 使用者可以在具有多個專案的方案中工作時卸載專案，但此程式有一些缺點：卸載的專案不會建立為重建方案命令的一部分，且不會顯示已關閉專案之類型和成員的 IntelliSense 描述。  
   
- 開發人員可以減少方案載入時間，並管理由管理員建立的解決方案載入載入行為的專案。 解決方案負載管理員可以設定不同的專案載入特定專案或專案類型的優先順序、 確定載入專案時，會開始在背景建置之前，延遲背景載入其他背景工作必須等到完成後，和執行其他專案負載的管理工作。  
+ 開發人員可以藉由建立解決方案載入管理員來減少方案載入時間，以及管理專案載入行為。 解決方案載入管理員可以針對特定專案或專案類型設定不同的專案載入優先順序、確保專案會在啟動背景組建之前載入、延遲背景載入，直到其他背景工作完成，以及執行其他專案負載管理工作為止。  
   
 ## <a name="project-loading-priorities"></a>專案載入優先順序  
- Visual Studio 會定義四個不同的專案載入優先順序：  
+ Visual Studio 定義四個不同的專案載入優先順序：  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority> （預設值）： 開啟解決方案時，會以非同步方式載入專案。 如果已開啟方案之後卸載的專案上設定此優先順序，會載入專案，在下一步 的閒置時間點。  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority> (預設) ：開啟方案時，會以非同步方式載入專案。 如果已在開啟解決方案之後，在已卸載的專案上設定此優先順序，則會在下一個閒置點載入專案。  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>： 在背景中，讓使用者能夠存取的專案，而不需要等候，直到已載入所有專案載入方案開啟時，會都載入專案。  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>：開啟方案時，會在背景載入專案，讓使用者可以在載入專案時存取它們，而不需要等到載入所有專案。  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>： 在存取時，會載入專案。 當使用者展開專案節點，在 [方案總管] 中的，當檔案屬於專案開啟時的方案就會開啟，因為它是在開啟的文件清單中 （保存在方案的使用者選項檔），或存取專案的另一個專案也就是載入的專案上具有相依性。 開始建置程序; 前不會自動載入這種類型的專案解決方案負載管理員會負責確保會載入所有必要的專案。 開始尋找/取代檔案中，在整個解決方案之前，應該也可載入這些專案。  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>：當您存取專案時，會載入專案。 當方案開啟時，當方案開啟時，如果該專案位於開啟的檔 (清單中，而該檔案是在方案的使用者選項檔) 中，或是正在載入的另一個專案相依于專案上，則當使用者展開方案總管中的專案節點時，就會存取專案。 在開始建立程式之前，不會自動載入此類型的專案;解決方案負載管理員負責確保已載入所有必要的專案。 在整個方案中開始尋找/取代檔案之前，也應該載入這些專案。  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>： 會為除非使用者明確要求，否則無法載入的專案。 明確卸載專案時，這會是大小寫。  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>：除非使用者明確要求，否則不會載入專案。 當明確卸載專案時，就會發生這種情況。  
   
-## <a name="creating-a-solution-load-manager"></a>管理員建立的解決方案載入  
- 開發人員可以建立解決方案載入管理員藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager>及建議 Visual Studio 方案負載管理員使用中。  
+## <a name="creating-a-solution-load-manager"></a>建立方案負載管理員  
+ 開發人員可以藉由執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager> 和建議解決方案載入管理員處於作用中狀態的 Visual Studio，來建立解決方案負載管理員。  
   
-#### <a name="activating-a-solution-load-manager"></a>啟用解決方案負載管理員  
- Visual Studio 可讓一位方案負載管理員在指定的時間，因此當您想要啟用您的解決方案載入時，您必須告知 Visual Studio 管理員。 如果第二個方案負載管理員啟動之後，將會中斷您的方案負載管理員。  
+#### <a name="activating-a-solution-load-manager"></a>啟用方案負載管理員  
+ Visual Studio 在指定的時間僅允許一個解決方案載入管理員，因此當您想要啟用方案載入管理員時，必須建議 Visual Studio。 如果稍後已啟用第二個解決方案載入管理員，您的解決方案載入管理員將會中斷連線。  
   
- 您必須取得<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>服務，並設定<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>屬性：  
+ 您必須取得 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> 服務並設定 <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> 屬性：  
   
 ```csharp  
 IVsSolution pSolution = GetService(typeof(SVsSolution)) as IVsSolution;  
@@ -49,69 +49,69 @@ object objLoadMgr = this;   //the class that implements IVsSolutionManager
 pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLoadMgr);  
 ```  
   
-#### <a name="implementing-ivssolutionloadmanager"></a>實作 IVsSolutionLoadManager  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnBeforeOpenProject%2A>開啟解決方案的程序期間呼叫方法。 若要實作這個方法，您使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManagerSupport>服務來設定您想要管理的專案類型的負載優先順序。 例如，下列程式碼會設定在背景中載入 C# 專案類型：  
+#### <a name="implementing-ivssolutionloadmanager"></a>執行 IVsSolutionLoadManager  
+ 在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnBeforeOpenProject%2A> 開啟解決方案的過程中，會呼叫方法。 若要執行這個方法，您可以使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManagerSupport> 服務來設定您想要管理之專案類型的載入優先權。 例如，下列程式碼會設定要在背景中載入的 c # 專案類型：  
   
 ```csharp  
 Guid guidCSProjectType = new Guid("{FAE04EC0-301F-11d3-BF4B-00C04F79EFBC}");  
 pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority.PLP_BackgroundLoad);  
 ```  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnDisconnect%2A>關閉 Visual Studio 或不同的封裝已接管作為使用中的方案負載管理員藉由呼叫時，會呼叫方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.SetProperty%2A>與<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>屬性。  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnDisconnect%2A>當 Visual Studio 正在關閉，或使用屬性呼叫不同的封裝做為使用中的方案負載管理員時，就會呼叫方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.SetProperty%2A> <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> 。  
   
-#### <a name="strategies-for-different-kinds-of-solution-load-manager"></a>負載管理員針對不同種類的解決方案的策略。  
- 您可以實作解決方案負載管理員，以不同的方式，根據它們為了管理的解決方案的類型。  
+#### <a name="strategies-for-different-kinds-of-solution-load-manager"></a>不同類型方案負載管理員的策略  
+ 您可以根據所要管理的解決方案類型，以不同的方式來執行解決方案載入管理員。  
   
- 如果方案負載管理員就是要管理解決方案載入一般情況下，它可以實作 VSPackage 的一部分。 封裝應該設定為自動載入，加上<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>值為 vspackage <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>。 然後可以在中啟用方案負載管理員<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法。  
-  
-> [!NOTE]
-> 如需有關自動載入封裝的詳細資訊，請參閱[載入 Vspackage](../extensibility/loading-vspackages.md)。  
-  
- Visual Studio 可以辨識只有最後一個方案負載管理員啟動，因為一般解決方案負載管理員應該一律會偵測是否有現有的負載管理員之後再啟動本身。 如果方案服務之呼叫 GetProperty()<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>傳回`null`，沒有使用中的方案負載管理員。 如果它不會傳回 null，請檢查物件是否與您的方案負載管理員相同。  
-  
- 如果方案負載管理員就是要管理只有幾種類型的解決方案，VSPackage 可以訂閱方案載入事件 (藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A>)，並使用事件處理常式，如<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>啟用方案負載管理員。  
-  
- 如果方案負載管理員就是要管理特定的解決方案，可保存啟用資訊做為方案檔的一部分。 若要這樣做，請呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A>方案前一節。  
-  
- 特定解決方案負載管理員應該停用自己在<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents.OnAfterCloseSolution%2A>事件處理常式，以避免衝突與其他解決方案負載管理員。  
-  
- 如果您需要解決方案負載管理員，來保存全域專案載入優先順序 （比方說，在 [選項] 頁面上設定的屬性），您可以啟用中的方案載入管理員僅<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents2.OnAfterOpenProject%2A>事件處理常式，保存在方案內容中，設定然後停用方案負載管理員。  
-  
-## <a name="handling-solution-load-events"></a>事件處理解決方案載入  
- 若要訂閱的方案載入事件，請呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A>當您啟用您的方案負載管理員。 如果您實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>，您可以回應不同的專案載入優先順序與相關的事件。  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>：開啟方案之前，會引發這項目。 您可以使用它來變更專案載入方案中專案的優先順序。  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>：解決方法是完全載入，但是背景之前載入的專案重新開始之後，就會引發這項目。 例如，使用者可能已存取負載優先順序是 LoadIfNeeded，專案或方案負載管理員可能已變更的專案載入優先順序為 BackgroundLoad，則會開始該專案的背景載入。  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>：這之後就會引發一開始會完全載入方案時，有解決方案負載管理員。 它也會引發之後背景負載或隨選載入解決方案會變得完全載入時。 在此同時，<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid>就會重新啟動。  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>：這會引發之前載入的專案 （或專案）。 若要確保載入專案之前，完成其他背景處理程序，將`pfShouldDelayLoadToNextIdle`要 **，則為 true**。  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>：這會在即將載入專案的批次時引發。 如果`fIsBackgroundIdleBatch`為 true，如果專案是在背景; 載入`fIsBackgroundIdleBatch`為 false，是要載入以同步方式要求的結果使用者，例如使用者如果展開方案總管 中的擱置專案的專案。 您也可以將此選項以執行耗費資源的工作，否則會需要在實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>。  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>：已載入專案的批次之後，就會引發這項目。  
-  
-## <a name="detecting-and-managing-solution-and-project-loading"></a>偵測及管理方案和專案載入  
- 若要偵測的專案和方案載入狀態，請呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A>具有下列值：  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`會傳回`true`方案和其所有的專案已載入，否則如果`false`。  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`會傳回`true`如果批次的專案目前正在載入在背景中，否則`false`。  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`會傳回`true`如果批次的專案目前正在載入以同步方式導因使用者命令或其他明確的負載，否則`false`。  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>:`var`會傳回`true`解決方案目前正在關閉，否則如果`false`。  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>:`var`會傳回`true`解決方案目前正在開啟，否則如果`false`。  
-  
-  您也可以確保專案和方案載入 （不論專案載入優先順序為何），藉由呼叫下列方法之一：  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>： 呼叫這個方法會強制在方法傳回之前載入的方案中的專案。  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>： 呼叫這個方法會強制在專案`guidProject`載入方法傳回之前。  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>： 呼叫這個方法會強制在專案`guidProjectID`載入方法傳回之前。  
+ 如果解決方案負載管理員通常是用來管理解決方案載入，則可作為 VSPackage 的一部分來執行。 封裝應該設定為自動載入，方法是 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 在 VSPackage 上加入值為的 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid> 。 然後可以在方法中啟動解決方案載入管理員 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 。  
   
 > [!NOTE]
-> 。 根據預設只需要在專案載入，並會載入背景負載優先順序，但如果<xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS>旗標會傳遞至方法中，將會載入所有專案，但標示要明確載入的項目除外。
+> 如需自動載入功能套件的詳細資訊，請參閱 [載入 vspackage](../extensibility/loading-vspackages.md)。  
+  
+ 由於 Visual Studio 只會辨識要啟動的最後一個解決方案載入管理員，因此一般解決方案負載管理員應該一律偵測是否有現有的負載管理員，然後再啟用本身。 如果在傳回的方案服務上呼叫 GetProperty ( # <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> A1 `null` ，則沒有任何使用中的方案負載管理員。 如果它不會傳回 null，請檢查物件是否與您的方案負載管理員相同。  
+  
+ 如果方案載入管理員僅管理幾種類型的解決方案，VSPackage 可以藉由呼叫) 來訂閱者案載入事件 (， <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> 並使用的事件處理常式 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A> 來啟動方案載入管理員。  
+  
+ 如果解決方案負載管理員只是為了管理特定的解決方案，則可以將啟用資訊保存為方案檔的一部分。 若要這樣做，請呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> 預先解決方案區段。  
+  
+ 特定的解決方案負載管理員應該在事件處理常式中停用本身 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents.OnAfterCloseSolution%2A> ，而不會與其他解決方案負載管理員發生衝突。  
+  
+ 如果您只需要方案載入管理員來保存全域專案載入優先順序 (例如，在 [選項] 頁面上設定的屬性) ，您可以在事件處理常式中啟用 [方案載入管理員] <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents2.OnAfterOpenProject%2A> ，在 [方案屬性] 中保存設定，然後停用方案載入管理員。  
+  
+## <a name="handling-solution-load-events"></a>處理方案載入事件  
+ 若要訂閱者案載入事件，請 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> 在啟用方案載入管理員時呼叫。 如果您執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents> ，您可以回應與不同專案載入優先順序相關的事件。  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>：這會在開啟解決方案之前引發。 您可以使用它來變更方案中專案的專案載入優先權。  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>：當方案完全載入之後，但在背景專案載入重新開始之前，會引發此情況。 例如，使用者可能已存取載入優先順序為 LoadIfNeeded 的專案，或方案載入管理員可能已將專案載入優先權變更為 BackgroundLoad，這會啟動該專案的背景載入。  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>：這會在一開始完全載入解決方案之後引發，不論是否有解決方案負載管理員。 當解決方案完全載入時，它也會在背景載入或要求載入之後引發。 同時， <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> 也會重新開機。  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>：在專案 (或專案的載入) 之前，會引發這個專案。 為了確保在載入專案之前，會先完成其他背景進程，請將設定 `pfShouldDelayLoadToNextIdle` 為 **true**。  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>：當即將載入專案批次時，就會引發這種情況。 若 `fIsBackgroundIdleBatch` 為 true，則會在背景載入專案; 如果 `fIsBackgroundIdleBatch` 為 false，則會以同步方式將專案載入，以做為使用者要求的結果，例如，如果使用者在方案總管中展開暫止專案。 您可以執行此動作來執行昂貴的工作，否則必須在中進行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> 。  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>：這個動作會在載入專案批次之後引發。  
+  
+## <a name="detecting-and-managing-solution-and-project-loading"></a>偵測和管理方案和專案載入  
+ 若要偵測專案和方案的載入狀態，請 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> 使用下列值來呼叫：  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>： `var` `true` 如果方案及其所有專案都已載入，則會傳回，否則會傳回 `false` 。  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>： `var` `true` 如果目前正在背景載入專案批次，則會傳回，否則會傳回 `false` 。  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>： `var` `true` 如果專案的批次因為使用者命令或其他明確的載入而同步載入，則會傳回，否則會傳回 `false` 。  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>： `var` `true` 如果方案目前正在關閉，則傳回，否則傳回 `false` 。  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>： `var` `true` 如果目前正在開啟方案，則會傳回，否則會傳回 `false` 。  
+  
+  您也可以藉由呼叫下列其中一種方法，確保專案和方案會載入 (無論專案載入的優先順序為何) ：  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>：呼叫這個方法會強制方案中的專案在方法傳回之前載入。  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>：呼叫這個方法會強制載入在 `guidProject` 方法傳回之前載入的專案。  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>：呼叫這個方法會強制載入在 `guidProjectID` 方法傳回之前載入的專案。  
+  
+> [!NOTE]
+> . 依預設只會載入具有需求負載和背景載入優先順序的專案，但如果將 <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> 旗標傳遞至方法，則會載入所有專案，但標示為明確載入的專案除外。

@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1b35765614f57350cdace560aa61c721cc831581
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444030"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838880"
 ---
 # <a name="detach"></a>中斷連結
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,8 +61,8 @@ VSPerfCmd.exe /Detach
 VSPerfCmd.exe /Shutdown  
 ```  
   
-## <a name="see-also"></a>請參閱  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+## <a name="see-also"></a>另請參閱  
+ [>vsperfcmd](../profiling/vsperfcmd.md)   
+ [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)

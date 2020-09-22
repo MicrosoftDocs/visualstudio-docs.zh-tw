@@ -13,54 +13,54 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0d1464cdd2be79cd93a3e98bcf8769e8f4b8b89f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435889"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840207"
 ---
-# <a name="how-to-update-a-visual-studio-extension"></a>HOW TO：更新 Visual Studio 延伸模組
+# <a name="how-to-update-a-visual-studio-extension"></a>如何︰更新 Visual Studio 擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您也可以使用您的系統上更新 Visual Studio 擴充功能**擴充功能和更新**安裝更新的版本。 如果您建立延伸模組的更新的版本時，您可以藉由在 VSIX 資訊清單中的版本號碼遞增更新它表示。
+您可以使用 **擴充功能和更新** 來更新系統上的 Visual Studio 延伸模組，以安裝更新的版本。 如果您建立了擴充功能的更新版本，您可以在 VSIX 資訊清單中遞增版本號碼，以表示更新的版本。
 
- 安裝更新時的連入的擴充功能的 VSIX 資訊清單具有相同`ID`安裝和更新版本為`Version`數目。 如果`Version`號碼都是相同或更低，無法安裝此套件。 如果`ID`值不相符，尚未安裝的套件視為個別的擴充功能。
+ 當內送延伸模組的 VSIX 資訊清單與 `ID` 已安裝的版本和較高的數位相同時，就會安裝更新 `Version` 。 如果 `Version` 數位相同或更低，則無法安裝封裝。 如果 `ID` 值不相符，尚未安裝的套件會被辨識為個別的副檔名。
 
- 為了避免衝突，在開發期間，我們建議您解除安裝舊版擴充功能，在進行中，並也解除安裝或停用任何其他可能發生衝突的擴充功能。
+ 為了避免在開發期間發生衝突，建議您卸載舊版的延伸模組，同時卸載或停用任何其他可能發生衝突的延伸模組。
 
-### <a name="to-update-an-extension-on-your-system"></a>若要更新您的系統上的擴充功能
+### <a name="to-update-an-extension-on-your-system"></a>在您的系統上更新擴充功能
 
-1. 在 [工具]  功能表上，按一下 [擴充功能和更新] 。
+1. 在 [工具] 功能表上，按一下 [延伸模組與更新]。
 
-2. 在左窗格中，按一下**更新**。
+2. 在左窗格中，按一下 [ **更新**]。
 
-3. 在中間窗格中，按一下您想要安裝的更新。
+3. 在中間窗格中，按一下您要安裝的更新。
 
-     更新延伸模組的版本號碼會顯示在右窗格中，以及其他資訊。
+     更新的延伸模組的版本號碼會顯示在右窗格中，以及其他資訊。
 
-4. 在右窗格的底部，按一下**更新**。
+4. 按一下右窗格底部的 [ **更新**]。
 
-### <a name="to-publish-an-update-of-an-extension"></a>若要發行的擴充功能更新
+### <a name="to-publish-an-update-of-an-extension"></a>發佈延伸模組的更新
 
-1. 在 Visual Studio 中，開啟您想要更新的擴充功能的解決方案。 進行變更。
+1. 在 Visual Studio 中，開啟您想要更新之延伸模組的解決方案。 進行變更。
 
     > [!IMPORTANT]
-    > 不帶正負號不會自動更新所有使用者延伸模組。 您應一律登入您的擴充功能。
+    > 未簽署的所有使用者延伸模組不會自動更新。 您應一律簽署您的延伸模組。
 
-2. 在 [**方案總管] 中**，開啟 source.extension.manifest。
+2. 在 **方案總管**中，開啟 [副檔名]。
 
-3. 在 資訊清單設計工具中，數字值增加**版本**欄位。
+3. 在 [資訊清單設計工具] 中，增加 [ **版本** ] 欄位中的數位值。
 
-4. 將方案儲存並建置專案。
+4. 儲存並建立解決方案。
 
-5. （在專案的 \bin\Debug\ 資料夾中） 將新.vsix 檔案上傳[Visual Studio Marketplace](https://marketplace.visualstudio.com/)網站。
+5. 將專案) 之 \bin\Debug\ 資料夾中的新 .vsix 檔 (上傳至 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 的網站。
 
-     當具有較早版本的延伸模組的使用者身分開啟**擴充功能和更新**，新的版本會出現在**更新**清單中，前提是此工具設定為自動尋找更新。
+     當具有舊版擴充功能的使用者開啟 [ **擴充功能和更新**] 時，新版本將會出現在 [ **更新** ] 清單中，前提是該工具已設定為自動尋找更新。
 
-     您可以啟用或停用自動檢查更新底部**更新** 窗格 (**啟用/停用自動偵測可用的更新**)，哪些變更**檢查更新**中設定**工具 / 選項 / 環境 / 擴充功能和更新**。
+     您可以在 [**更新**] 窗格底部啟用或停用自動檢查更新， (**啟用/停用可用更新的自動偵測**) ，變更 [**工具/選項/環境/擴充功能和更新**] 中的 [**檢查更新**] 設定。
 
     > [!NOTE]
-    > 從 Visual Studio 2015 Update 2 開始，您可以指定 (在 [工具] / [選項] / [環境] / [延伸模組和更新] 中) 是否要自動更新每個使用者延伸模組、所有使用者延伸模組，或兩者皆自動更新 (預設值)。
+    > 從 Visual Studio 2015 Update 2 開始，您可以指定 (在 [工具] / [選項] / [環境] / [延伸模組和更新]**** 中) 是否要自動更新每個使用者延伸模組、所有使用者延伸模組，或兩者皆自動更新 (預設值)。
 
 ## <a name="see-also"></a>另請參閱
- [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)[尋找及使用 Visual Studio 擴充功能](../ide/finding-and-using-visual-studio-extensions.md)
+ [尋找和使用 Visual Studio 擴充](../ide/finding-and-using-visual-studio-extensions.md)功能[的 VSIX 封裝剖析](../extensibility/anatomy-of-a-vsix-package.md)

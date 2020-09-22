@@ -1,5 +1,5 @@
 ---
-title: HOW TO：支援舊版語言服務中的大綱 |Microsoft Docs
+title: 如何：在舊版語言服務中支援大綱 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,40 +13,40 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d92baa824dbb70dd591cadef99775f943c651aef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436150"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840203"
 ---
-# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>HOW TO：支援在舊版語言服務中製作大綱
+# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>如何︰支援在舊版語言服務中製作大綱
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-大綱來展開或摺疊文字的不同區域。 方式大綱用定義不同的語言不同。 如需詳細資訊，請參閱[大綱](../../ide/outlining.md)。  
+大綱是用來展開或折迭不同的文字區域。 使用大綱的方式可以不同的語言來定義。 如需詳細資訊，請參閱[大綱](../../ide/outlining.md)。  
   
- 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作大綱的新方式，請參閱[逐步解說：大綱](../../extensibility/walkthrough-outlining.md)。  
+ 舊版語言服務會實作為 VSPackage 的一部分，但是執行語言服務功能的較新方法是使用 MEF 延伸模組。 若要深入瞭解如何執行大綱的新方法，請參閱 [逐步解說：大綱](../../extensibility/walkthrough-outlining.md)。  
   
 > [!NOTE]
-> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
+> 建議您儘快開始使用新的編輯器 API。 這可改善您的語言服務效能，並讓您利用新的編輯器功能。  
   
- 以下示範如何為您的語言服務支援此命令。  
+ 以下示範如何針對您的語言服務支援此命令。  
   
-### <a name="to-support-outlining"></a>若要支援大綱  
+### <a name="to-support-outlining"></a>支援大綱  
   
-1. 實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage>上您的語言服務物件。  
+1. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage>在您的語言服務物件上執行。  
   
-2. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>針對目前的大綱工作階段物件來新增新的外框區域。  
+2. 呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> 目前大綱的會話物件，以加入新的外框區域。  
   
 ## <a name="robust-programming"></a>穩固程式設計  
- 當使用者選取**摺疊至定義**上**大綱**功能表，IDE 會呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A>您語言的服務。  
+ 當使用者選取**大綱**功能表上的 [折迭**至定義**] 時，IDE 會 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> 在您的語言服務上呼叫。  
   
- IDE 呼叫這個方法時，會傳入<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>指標 （文字緩衝區的指標） 和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession>（目前的大綱工作階段的指標）。  
+ 當呼叫這個方法時，IDE 會將指標傳入 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> (文字緩衝區的指標) 和 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> (目前大綱會話) 的指標。  
   
- 您可以呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>方法來指定這些區域中的多個大綱區域`rgOutlnReg`參數。 `rgOutlnReg`參數是<xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion>結構。 此程序可讓您指定不同的特性，隱藏的區域，例如特定的區域是否為展開或摺疊。  
+ 您可以藉 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> 由在參數中指定這些區域，來呼叫多個外框區域的方法 `rgOutlnReg` 。 `rgOutlnReg`參數是一個 <xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion> 結構。 此程式可讓您指定隱藏區域的不同特性，例如特定區域是否展開或折迭。  
   
 > [!NOTE]
-> 小心隱藏新行字元。 隱藏的文字應該擴充從第一行的開始到最後一個字元的最後一行在區段中，保留的最後一個新行字元顯示。  
+> 請小心隱藏換行字元。 隱藏文字應從第一行的開頭擴充到區段最後一行的最後一個字元，使最後的新行字元保持可見。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何：隱藏的文字中提供支援舊版語言服務](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
- [如何：在舊版語言服務中提供展開大綱的支援](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+ [如何：在舊版語言服務中提供隱藏文字支援](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
+ [如何︰在舊版語言服務中提供展開大綱的支援](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

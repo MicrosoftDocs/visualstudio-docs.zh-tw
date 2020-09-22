@@ -1,5 +1,5 @@
 ---
-title: HOW TO：實作錯誤標記 |Microsoft Docs
+title: 如何：執行錯誤標記 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,52 +11,52 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2af9e0765fb5bc73a35bebfc2f50f5d2a41122d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435961"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838948"
 ---
-# <a name="how-to-implement-error-markers"></a>HOW TO：實作錯誤標記
+# <a name="how-to-implement-error-markers"></a>如何：實作錯誤標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-錯誤標記 （或紅色的波浪底線） 是最困難的文字編輯器自訂項目，來實作。 不過，它們提供給使用者的 VSPackage 的好處遠超過為他們提供的成本。 錯誤標記稍微標記您的語言剖析器認為正確曲線或波浪式紅色底線的文字。 此指標會以視覺化方式顯示不正確的程式碼，以協助程式設計人員。  
+錯誤標記 (或紅色波浪底線) 是要執行的文字編輯器自訂最困難的專案。 不過，他們提供給 VSPackage 使用者的優點，可能遠超過提供它們的成本。 錯誤標記：您的語言剖析器以彎曲或波浪式紅線認為不正確的標記文字。 此指標可協助程式設計人員以視覺化方式顯示不正確的程式碼。  
   
- 您可以使用文字標記來實作紅色的波浪底線。 因此，語言服務加入紅色波浪底線文字緩衝區作為背景通過 」，在閒置時間，或在背景執行緒中。  
+ 使用文字標記來執行紅色波浪底線。 作為規則，語言服務會在閒置時間或背景執行緒中，將文字緩衝區的紅色波浪底線新增為背景傳遞。  
   
-### <a name="to-implement-the-red-wavy-underline-feature"></a>若要實作紅色波浪底線功能  
+### <a name="to-implement-the-red-wavy-underline-feature"></a>若要執行紅色波浪線功能  
   
-1. 選取想要放置的紅色波浪底線的文字。  
+1. 選取您要放置紅色波浪底線的文字。  
   
-2. 建立型別的標記`MARKER_CODESENSE_ERROR`。 如需詳細資訊，請參閱[如何：新增標準文字標記](../extensibility/how-to-add-standard-text-markers.md)。  
+2. 建立類型的標記 `MARKER_CODESENSE_ERROR` 。 如需詳細資訊，請參閱 [如何：新增標準文字標記](../extensibility/how-to-add-standard-text-markers.md)。  
   
-3. 在那之後，傳入<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>介面指標。  
+3. 之後，傳入 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> 介面指標。  
   
-   此程序也可讓您透過指定的標記建立提示文字或特殊的內容功能表。 如需詳細資訊，請參閱[如何：新增標準文字標記](../extensibility/how-to-add-standard-text-markers.md)。  
+   此程式也可讓您在指定的標記上建立秘訣文字或特殊的內容功能表。 如需詳細資訊，請參閱 [如何：新增標準文字標記](../extensibility/how-to-add-standard-text-markers.md)。  
   
-   需要下列物件時，才能夠顯示錯誤標記。  
+   您必須要有下列物件，才能顯示錯誤標記。  
   
 - 剖析器。  
   
-- 工作提供者 (也就是實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>)，以找出重新剖析程式會保留行資訊中的變更記錄。  
+- 工作提供者 (也就是，會 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2> 維護行資訊中變更記錄的) 的執行，以便識別要重新剖析的行。  
   
-- 文字檢視篩選條件，用來擷取插入號變更事件 檢視使用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) 方法。  
+- 使用) 方法，從視圖中捕捉插入點變更事件的文字視圖篩選 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A> 。  
   
-  剖析器、 工作提供者，以及篩選器提供，讓錯誤標記必要的基礎結構。 下列步驟提供此程序顯示錯誤標記。  
+  剖析器、工作提供者和篩選器提供必要的基礎結構，讓您可以進行錯誤標記。 下列步驟提供顯示錯誤標記的程式。  
   
-1. 在正在進行篩選檢視中，篩選會取得與該檢視的資料相關聯的工作提供者的指標。  
+1. 在要篩選的視圖中，篩選會取得與該視圖資料相關聯之工作提供者的指標。  
   
     > [!NOTE]
-    > 您可以使用相同的命令篩選方法秘訣、 陳述式完成、 錯誤標記和等等。  
+    > 您可以使用相同的命令篩選器來取得方法提示、語句完成、錯誤標記等等。  
   
-2. 當篩選條件收到的事件可表示您已經移動到另一行時，工作會檢查有錯誤。  
+2. 當篩選準則收到事件指出您已移至另一行時，就會建立一個工作來檢查錯誤。  
   
-3. 工作處理常式會檢查是否已變更的行。 如果是的話，它會剖析錯誤的行。  
+3. 工作處理常式會檢查該行是否已變更。 如果是，則會剖析錯誤的行。  
   
-4. 如果發現錯誤，工作提供者會建立工作項目執行個體。 這個執行個體建立環境做為錯誤標記文字檢視中的文字標記。  
+4. 如果發現錯誤，工作提供者會建立工作專案實例。 此實例會在文字視圖中建立環境用來做為錯誤標記的文字標記。  
   
 ## <a name="see-also"></a>另請參閱  
- [使用舊版 API 中的文字標記](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [搭配舊版 API 使用文字標記](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [如何：新增標準文字標記](../extensibility/how-to-add-standard-text-markers.md)   
  [如何：建立自訂文字標記](../extensibility/how-to-create-custom-text-markers.md)   
  [如何：使用文字標記](../extensibility/how-to-use-text-markers.md)

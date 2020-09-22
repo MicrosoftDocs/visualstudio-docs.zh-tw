@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a2e5511e9e2e1c863db8f696a70195573d75429f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433878"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839218"
 ---
 # <a name="lines-view---sampling-data"></a>程式行檢視 - 取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,23 +44,23 @@ ms.locfileid: "63433878"
   
   根據定義，陳述式不會呼叫其他函式。 因此只會列出互斥值。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
-|**處理序 ID**|分析執行的處理序 ID (PID)。|  
-|**處理序名稱**|處理序的名稱。|  
+|**處理序識別碼**|分析執行的處理序 ID (PID)。|  
+|**進程名稱**|處理序的名稱。|  
 |**模組名稱**|包含該函式行的模組名稱。|  
 |**模組路徑**|包含該函式行的模組路徑。|  
-|**原始程式檔**|包含此函式行的原始程式檔。|  
-|**函式名稱**|函式的名稱。|  
+|**來源檔案**|包含此函式行的原始程式檔。|  
+|**函數名稱**|函式的名稱。|  
 |**函式行號**|原始程式檔中這個函式的開頭行號。|  
-|**函式位址**|函式的開始位址。|  
+|**函數位址**|函式的開始位址。|  
 |**原始程式碼開頭行**|收集這個樣本的原始程式檔中的起始行號。|  
 |**原始程式碼結尾行**|收集這個樣本的原始程式檔中的結尾行號。|  
 |**原始程式碼開頭字元**|收集這個樣本的原始程式檔行中，起始字元的位移。|  
 |**原始程式碼結尾字元**|收集這個樣本的原始程式檔行中，結尾字元的位移。|  
-|**程式行名稱**|分析工具產生的程式行識別項，該程式行使用下列語法：`Source File`**;[**`Line Number Start`**,**`Character Start`**]->;[**`Line Number End`**,**`Character End`**]**|  
+|**程式行名稱**|分析工具產生的行識別碼，語法如下： `Source File` **; [** `Line Number Start`**,**`Character Start`**]->;[**`Line Number End`**,**`Character End`**]**|  
 |**專有樣本**|當正在執行函式行時所收集的總樣本數。|  
 |**專有樣本 %**|執行分析期間，執行函式行時所收集的所有樣本的百分比。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [程式行檢視 - 取樣](../profiling/lines-view-dotnet-memory-sampling-data.md)

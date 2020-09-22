@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03e27d021b8b3c5ec29a8646a1bbe7bc6ebdecc0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441290"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839097"
 ---
 # <a name="collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>使用分析工具命令列以收集獨立應用程式的應用程式統計資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63441290"
   
 ## <a name="common-tasks"></a>一般工作  
   
-|工作|相關內容|  
+|Task|相關內容|  
 |----------|---------------------|  
 |**使用分析啟動應用程式**|-   [如何：啟動獨立應用程式並收集應用程式統計資料](../profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md)|  
 |**將分析工具附加至執行中的 .NET Framework 應用程式**|-   [如何：將分析工具附加至 .NET Framework 應用程式並收集應用程式統計資料](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
@@ -40,7 +40,7 @@ ms.locfileid: "63441290"
   
 ### <a name="profiling-stand-alone-applications"></a>對獨立應用程式進行程式碼剖析  
   
-|工作|相關內容|  
+|Task|相關內容|  
 |----------|---------------------|  
 |**檢測應用程式**|-   [使用檢測收集詳細計時資料](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line.md)|  
 |**收集 .NET 記憶體配置和記憶體回收資料**|-   [收集 .NET Framework 記憶體資料](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
@@ -48,7 +48,7 @@ ms.locfileid: "63441290"
   
 ### <a name="profiling-by-using-the-sampling-method"></a>使用取樣方法進行分析  
   
-|工作|相關內容|  
+|Task|相關內容|  
 |----------|---------------------|  
 |**分析 ASP.NET Web 應用程式**|-   [使用取樣收集應用程式統計資料](/visualstudio/profiling/collecting-concurrency-data-for-an-aspnet-web-application?view=vs-2015)|  
 |**分析服務**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)。 說明如何使用取樣方法收集 Windows 服務的效能統計資料。|  

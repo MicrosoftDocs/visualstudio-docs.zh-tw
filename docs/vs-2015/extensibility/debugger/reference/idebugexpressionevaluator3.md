@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator3 | Microsoft Docs
+title: IDebugExpressionEvaluator3 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,19 +11,19 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: df08bdb115f29b529676e307008db7a9eac9d9d1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430187"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839234"
 ---
 # <a name="idebugexpressionevaluator3"></a>IDebugExpressionEvaluator3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關如何執行 CLR 運算式評估工具的詳細資訊，請參閱 [CLR 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 表示的運算式評估工具 (EE) 與增強的剖析器樹狀目錄。  
+ 表示具有增強型剖析器樹狀結構 (EE) 的運算式評估工具。  
   
 ## <a name="syntax"></a>語法  
   
@@ -31,19 +31,19 @@ ms.locfileid: "63430187"
 IDebugExpressionEvaluator3 : IDebugExpressionEvaluator2  
 ```  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 這個版本的剖析器會將符號提供者和評估的畫面格的位址傳遞。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 此版本的剖析器會傳遞符號提供者和評估框架的位址。  
   
 ## <a name="methods"></a>方法  
- 上的方法除了[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)介面，這個介面會實作下列方法：  
+ 除了 [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) 介面上的方法，這個介面也會執行下列方法：  
   
 |方法|描述|  
 |------------|-----------------|  
-|[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|要剖析的運算式，指定的符號提供者和鑑定框架的位址，將轉換的運算式字串。|  
+|[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|給定符號提供者和評估框架的位址，將運算式字串轉換為剖析的運算式。|  
   
 ## <a name="requirements"></a>需求  
- 標頭：Ee.h  
+ 標頭： Ee. h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll

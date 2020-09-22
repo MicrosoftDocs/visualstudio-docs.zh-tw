@@ -12,11 +12,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: dde0cefabf0523484ad76ac56f7f2760de8c7acc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433084"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839055"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>如何：安裝特定版本的 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "63433084"
 |Visual Studio Enterprise (沒有其他 Update 2 時期更新的原始 Update 2)|Visual Studio Enterprise RTM (可從 [MSDN 訂用帳戶下載頁面](https://msdn.microsoft.com/subscriptions/downloads/)取得)|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/0/6/B/06BB0C5C-C767-4250-91DA-AB463377597E/20160405.3/enu/feed.xml`|Visual Studio 安裝程式將使用在 Update 2 發行時提供的 feed.xml|
 |Visual Studio Enterprise Update 1 (原始 Update 1，但包含 Update 2 前的更新)|Visual Studio Enterprise RTM (可從 [MSDN 訂用帳戶下載頁面](https://msdn.microsoft.com/subscriptions/downloads/)取得)|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/3/2/A/32A1974F-D236-43C1-8981-97DDCBAEF14A/20160225.3/enu/feed.xml`|Visual Studio 安裝程式將使用在 Update 2 發行前現有的 feed.xml|
 |Visual Studio Enterprise Update 1 (沒有其他 Update 1 時期更新的原始 Update 1)|Visual Studio Enterprise RTM (可從 [MSDN 訂用帳戶下載頁面](https://msdn.microsoft.com/subscriptions/downloads/)取得)|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/2/A/32A1974F-D236-43C1-8981-97DDCBAEF14A/20151201.1/enu/feed.xml`|Visual Studio 安裝程式將使用在 Update 1 發行時提供的 feed.xml|
-|Visual Studio Enterprise (原始 RTM，但包含 Update 1 前的更新)|Visual Studio Enterprise RTM (可從  [MSDN 訂用帳戶下載頁面](https://msdn.microsoft.com/subscriptions/downloads/)取得)|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/6/1/36188D5F-479F-4A46-BF55-6AE5928D1EBB/20151102.3/enu/feed.xml`|Visual Studio 安裝程式將使用在 Update 1 發行前現用的 feed.xml|
+|Visual Studio Enterprise (原始 RTM，但包含 Update 1 前的更新)|Visual Studio Enterprise RTM (可從  [MSDN 訂閱下載頁面](https://msdn.microsoft.com/subscriptions/downloads/) 取得) |`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/6/1/36188D5F-479F-4A46-BF55-6AE5928D1EBB/20151102.3/enu/feed.xml`|Visual Studio 安裝程式將使用在 Update 1 發行前現用的 feed.xml|
 |Visual Studio Enterprise (沒有更新的原始 RTM)|Visual Studio Enterprise RTM (可從 [MSDN 訂用帳戶下載頁面](https://msdn.microsoft.com/subscriptions/downloads/)取得)|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/5/7/B/57BF5016-E4F0-4EB5-BE27-2BFA87E7723F/20150713.1/enu/feed.xml`|Visual Studio 安裝程式將使用在 RTM 發行時提供的 feed.xml|
 
 > [!IMPORTANT]
@@ -59,5 +59,5 @@ ms.locfileid: "63433084"
 >   - rus (俄文)
 >   - trk (土耳其文)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [Visual Studio 系統管理員指南](../install/visual-studio-administrator-guide.md)

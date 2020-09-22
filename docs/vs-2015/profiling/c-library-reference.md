@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5b6a44ac8e97477a8e4f4789b10135ac3f989a0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433787"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839051"
 ---
 # <a name="c-library-reference"></a>C 程式庫參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

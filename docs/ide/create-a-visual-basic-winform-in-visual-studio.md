@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 89effbfd31e0194a88067a340c9332d888ef23df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65c7c3e34778a1bad3eb833c073c530db72b7a36
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81224546"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809055"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>使用 Visual Basic 在 Visual Studio 中建立 Windows Forms 應用程式
 
@@ -164,6 +164,6 @@ ms.locfileid: "81224546"
 
 ## <a name="see-also"></a>另請參閱
 
-* [更多 Visual Basic 教學課程](/visualstudio/get-started/visual-basic/)
-* [C# 教學課程](/visualstudio/get-started/csharp/)
+* [更多 Visual Basic 教學課程](../get-started/visual-basic/index.yml)
+* [C# 教學課程](../get-started/csharp/index.yml)
 * [C + + 教學課程](/cpp/get-started/tutorial-console-cpp)
