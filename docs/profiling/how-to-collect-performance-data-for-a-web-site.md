@@ -1,5 +1,5 @@
 ---
-title: 如何-收集網站的效能資料 |Microsoft Docs
+title: 收集網站的效能資料 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c2f8169716bda09e3c4d89ce06dc907c726adee2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ea4e3309fc003a4fc4fc73377e8b2bbe12cd567
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330959"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851472"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：收集網站的效能資料
 
@@ -58,7 +58,7 @@ ms.locfileid: "85330959"
 
     - 若要從網頁中執行的 JavaScript 收集資料，請選取 [ **分析 javascript** ] 核取方塊。
 
-6. 按一下 [下一步]  。
+6. 按一下 [下一步]。
 
 7. 在精靈的第四個頁面上，按一下 [完成] ****。
 
@@ -92,7 +92,7 @@ ms.locfileid: "85330959"
 
     - 若要從網頁中執行的 JavaScript 收集資料，請選取 [分析 JavaScript]**** 核取方塊。
 
-7. 按一下 [下一步]  。
+7. 按一下 [下一步]。
 
 8. 在精靈的第四個頁面上，按一下 [完成] ****。
 

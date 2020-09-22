@@ -1,5 +1,5 @@
 ---
-title: 如何-參考 Windows 符號資訊 |Microsoft Docs
+title: 參考 Windows 符號資訊 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 88df7c676e6dbd95704716eb8a361f2fce7f66d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d1527a9fde739ed72af5861a4863dce8e39cbaf
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328827"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851355"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>如何：參考 Windows 符號資訊
 Visual Studio 程式碼剖析工具會使用符號 (.*pdb*) 檔案來解析符號名稱，例如程式二進位檔案中的函式名稱。 您可以遵循下列步驟來自動下載並更新本機電腦上之 Windows 版本的正確 .*pdb* 檔案。

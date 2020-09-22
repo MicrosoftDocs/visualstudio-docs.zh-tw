@@ -1,5 +1,5 @@
 ---
-title: 如何控制訊息的視圖 |Microsoft Docs
+title: 控制訊息視圖 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a95e257950a93ff61c27f7ea599b0de12e09677d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 917fc2af5ab09544201a6aa35c34611a89d7a277
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350247"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850965"
 ---
 # <a name="how-to-control-messages-view"></a>如何：控制訊息檢視
 有了 Spy + +，您就可以大幅掌控 [訊息查看](../debugger/messages-view.md) 視窗的內容。 您可以隨時 [啟動和停止](../debugger/how-to-start-and-stop-the-message-log-display.md) 顯示訊息，也可以指定：

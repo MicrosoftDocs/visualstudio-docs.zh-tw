@@ -1,5 +1,6 @@
 ---
-title: 從命令列建立可移植的分析資料檔案 | Microsoft Docs
+title: 分析命令列-建立可移植的資料檔案
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 2ceb63a7-b835-4988-b756-2afc3fcc4808
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cb37ebb17c48ad44778d6acc6bb3797d8e9e573
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0584cd2a476a7552beec483dd72ad1e957800ec
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329038"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808834"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>從命令列建立可移植的分析資料檔案
 若要更輕鬆地共用分析資料，您可以使用 [VSPerfReport](../profiling/vsperfreport.md) 命令列工具，將程式碼剖析執行的符號內嵌至。*.vsp* 檔案。

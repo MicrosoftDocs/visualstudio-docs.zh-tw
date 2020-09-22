@@ -1,5 +1,5 @@
 ---
-title: 如何-啟用和停用編輯後繼續 |Microsoft Docs
+title: 啟用和停用編輯後繼續 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/04/2018
 ms.topic: how-to
@@ -26,12 +26,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 1907a67412a787148da7a6679e173383e2bb7423
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce531a0f7f9d6e26db38b5cf041f06d42209261a
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349662"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851394"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何：啟用和停用編輯後繼續 (c #、VB、c + +) 
 
@@ -57,4 +57,4 @@ ms.locfileid: "85349662"
 
       如果選取此選項，則會提供有關過時程式碼的警告。
 
-1. 按一下 [確定] 。
+1. 按一下 [確定]  。

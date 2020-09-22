@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2 | Microsoft Docs
+title: IDebugProperty2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,19 +13,19 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1f72a66e6dbfe2749910019760c16f6363498785
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403278"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838963"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-此介面代表堆疊框架屬性、 程式文件屬性或某些其他屬性。 屬性通常是運算式評估的結果。  
+這個介面代表堆疊框架屬性、程式檔案屬性或其他屬性。 屬性通常是運算式評估的結果。  
   
 > [!NOTE]
-> 這種使用 「 屬性 」 不應混淆與表示類別的成員變數雖然`IDebugProperty2`可以表示這個實體。  
+> 雖然可以表示這類實體，但不應該將「屬性」的用法與表示類別的成員變數混淆 `IDebugProperty2` 。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,50 +33,50 @@ ms.locfileid: "63403278"
 IDebugProperty2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者的附註  
- DE 會實作這個介面來代表特定類型的值。 例如，值可以是數值，運算式評估，用來顯示記憶體或暫存器和其值的清單的記憶體內容的結果。  
+## <a name="notes-for-implementers"></a>實施者的注意事項  
+ DE 會執行這個介面以表示特定種類的值。 例如，值可能是運算式評估的結果、用來顯示記憶體的記憶體內容，或是暫存器清單及其值的數值。  
   
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 呼叫[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)或是[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)來取得這個介面，表示評估的結果。 `IDebugExpression2::EvaluateAsync` 傳回此介面傳送[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) SDM，而呼叫的介面[GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)來擷取屬性。  
+## <a name="notes-for-callers"></a>呼叫者注意事項  
+ 呼叫 [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 或 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 來取得這個介面，此介面代表評估的結果。 `IDebugExpression2::EvaluateAsync` 藉由將 [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) 介面傳送至 SDM 來傳回這個介面，後者接著會呼叫 [GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) 來抓取屬性。  
   
- [GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md)傳回這個介面來提供相關聯的指令碼文件。  
+ [GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md) 會傳回這個介面，以提供相關聯的指令檔。  
   
- [GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md)傳回這個介面來表示函式的傳回值。  
+ [GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md) 會傳回這個介面，以代表函數的傳回值。  
   
- [GetDebugProperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md)傳回這個介面來代表不同的屬性，例如名稱或記憶體內容的程式。  
+ [GetDebugProperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md) 會傳回這個介面，以代表程式的各種屬性，例如名稱或記憶體內容。  
   
- [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)傳回這個介面來代表堆疊框架，例如區域變數的各種屬性。  
+ [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) 會傳回這個介面，以代表堆疊框架的各種屬性，例如區域變數。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDebugProperty2`。  
+ 下表顯示的方法 `IDebugProperty2` 。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)|填寫[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構描述的屬性。|  
-|[SetValueAsString](../../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)|從字串中設定屬性的值。|  
-|[SetValueAsReference](../../../extensibility/debugger/reference/idebugproperty2-setvalueasreference.md)|從指定參考的值設定屬性的值。|  
+|[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)|填入描述屬性的 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 結構。|  
+|[SetValueAsString](../../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)|從字串設定屬性的值。|  
+|[SetValueAsReference](../../../extensibility/debugger/reference/idebugproperty2-setvalueasreference.md)|從指定的參考值設定屬性的值。|  
 |[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)|列舉屬性的子系。|  
-|[GetParent](../../../extensibility/debugger/reference/idebugproperty2-getparent.md)|傳回屬性的父代。|  
-|[GetDerivedMostProperty](../../../extensibility/debugger/reference/idebugproperty2-getderivedmostproperty.md)|傳回描述屬性的最高衍生性屬性的屬性。|  
+|[GetParent](../../../extensibility/debugger/reference/idebugproperty2-getparent.md)|傳回屬性的父系。|  
+|[GetDerivedMostProperty](../../../extensibility/debugger/reference/idebugproperty2-getderivedmostproperty.md)|傳回描述屬性之最高衍生屬性的屬性。|  
 |[GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)|傳回組成屬性值的記憶體位元組。|  
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)|傳回屬性值的記憶體內容。|  
-|[GetSize](../../../extensibility/debugger/reference/idebugproperty2-getsize.md)|傳回大小，以位元組為單位的屬性值。|  
-|[GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)|傳回這個屬性的值的參考。|  
-|[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)|傳回屬性的擴充的資訊。|  
+|[GetSize](../../../extensibility/debugger/reference/idebugproperty2-getsize.md)|傳回屬性值的大小（以位元組為單位）。|  
+|[GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)|傳回這個屬性值的參考。|  
+|[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)|傳回屬性的擴充資訊。|  
   
 ## <a name="remarks"></a>備註  
- 屬性表示的`IDebugProperty2`介面中，可以視為具有名稱、 類型和地址的值。 在較籠統的字詞，`IDebugProperty2`可以代表任何項目都具有包含父代和子節點的階層式結構。  
+ 以介面表示的屬性， `IDebugProperty2` 可以視為具有名稱、類型和位址值的值。 在更一般的詞彙中， `IDebugProperty2` 可以使用父節點和子節點來代表具有階層式結構的任何事物。  
   
- 通常是暫時性的例如只有在目前的堆疊框架上，為持續的屬性。 另一方面，參考，表示所[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)介面，會持續，只要保留在記憶體中的值。  
+ 屬性通常是暫時性的，只有在目前的堆疊框架（例如）的情況下才會持續。 另一方面， [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 介面所代表的參考，只要值仍在記憶體中，就會持續。  
   
- 可以使用 IDE`IDebugProperty2`介面，可讓使用者瀏覽及修改屬性，在執行階段。  
+ IDE 可以使用 `IDebugProperty2` 介面，讓使用者在執行時間流覽和修改屬性。  
   
 ## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
+ 標頭： msdbg。h  
   
- 命名空間：Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： VisualStudio  
   
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
+ 元件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

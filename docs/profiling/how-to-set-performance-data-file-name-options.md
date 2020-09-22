@@ -1,5 +1,5 @@
 ---
-title: 如何-設定效能資料檔案名稱選項 |Microsoft Docs
+title: 設定效能資料檔案名稱選項 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fc548f5e051be878382d81bd040accbb13e9755
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bba5677c491e77e6f1c2758e64cec1b598c9b627
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548118"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851563"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>如何：設定效能資料檔案名稱選項
 
@@ -39,7 +39,7 @@ ms.locfileid: "85548118"
 
 3. 變更 [報告]**** 中的下列設定：
 
-    |Name|描述|
+    |名稱|描述|
     |-|-|
     |**報告位置**|指定儲存程式碼剖析資料檔案的目錄。|
     |**報告名稱**|指定檔案的基底名稱。|

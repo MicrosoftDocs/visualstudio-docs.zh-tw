@@ -1,5 +1,5 @@
 ---
-title: 錯誤-網頁伺服器已鎖定，且正在封鎖偵錯工具動詞 |Microsoft Docs
+title: Web 服務器已經鎖定，且正在封鎖 DEBUG 動詞命令 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abef1edefad63e340170e7934f4ad87cce268e46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75ebf2d134c1c0e33b6f787e03c1ea56b0650ee0
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460360"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851550"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>錯誤：Web 伺服器已經鎖定，並會封鎖 DEBUG 動詞命令
 逐步執行 Web 應用程式或 XML Web Service 失敗，因為已執行 IIS 鎖定工具，並已安裝啟動 URLScan。 這種情況會鎖定 IIS 而無法接收 DEBUG 動詞命令。

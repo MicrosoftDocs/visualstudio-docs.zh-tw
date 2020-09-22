@@ -1,5 +1,5 @@
 ---
-title: 如何測試和偵測視覺化檢視 |Microsoft Docs
+title: 測試和偵測視覺化檢視 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a81a8d094999585620ab6ab412c3b0610caf517
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df45b1f81430e733d6116768bf7c8823911ead59
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348895"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851862"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>如何：測試和偵錯視覺化檢視
 當您撰寫完視覺化檢視之後，必須對其進行偵錯和測試。

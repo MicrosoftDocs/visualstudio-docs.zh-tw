@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_rank |Microsoft Docs'
+title: IDiaSymbol：： get_rank |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cf7c39213ae2eb233509d720b7e7c2eab0a17560
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64809709"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839023"
 ---
-# <a name="idiasymbolgetrank"></a>IDiaSymbol::get_rank
+# <a name="idiasymbolget_rank"></a>IDiaSymbol::get_rank
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取 FORTRAN 多維陣列的陣序 （維度數目）。  
+抓取 FORTRAN 多維陣列的維度)  (數目排名。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,16 +35,16 @@ HRESULT get_rank ( 
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]FORTRAN 多維陣列中傳回維度的數目。  
+ 擴展傳回 FORTRAN 多維度陣列中的維度數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。  
   
 ## <a name="remarks"></a>備註  
- 陣序規範是指的陣列會宣告為陣列中的維度數目`myarray[1,2,3]`。 此範例中有 3 和 3 個維度的順位。 陣序規範不適用於C++使用每個維度的陣列的陣列概念 (亦即`myarray[1][2][3]`)。  
+ Rank 指的是陣列中陣列宣告為的維度數目 `myarray[1,2,3]` 。 此範例的等級為3和3個維度。 Rank 不適用於 c + +，它會針對每個維度使用陣列陣列的概念 (也就是 `myarray[1][2][3]`) 。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

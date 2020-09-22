@@ -1,5 +1,5 @@
 ---
-title: 如何-在訊息視圖中搜尋訊息 |Microsoft Docs
+title: 在訊息視圖中搜尋訊息 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7145732ef635d550aa883603b0f56090eb6d1278
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c4b597870d7a87b396b4c6e828da814c49f9bfb
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349311"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852005"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>如何：在訊息檢視中搜尋訊息
 您可以使用控制碼、類型或訊息識別碼作為搜尋準則，在 [訊息] 視圖中搜尋特定的訊息。 其中任何一個（或組合）都是有效的搜尋準則。 您也可以指定搜尋的初始方向。 對話方塊中的欄位會預先載入目前選取的訊息屬性。
@@ -47,6 +47,6 @@ ms.locfileid: "85349311"
 
 5. 選擇 [ **向上** ] 或 [ **向下** ] 以取得搜尋的初始方向。
 
-6. 按一下 [確定]  。
+6. 按一下 [確定]。
 
    如果找到相符的訊息，則會在 [訊息] 視圖視窗中反白顯示。 查看 [訊息的觀點](../debugger/messages-view.md)。

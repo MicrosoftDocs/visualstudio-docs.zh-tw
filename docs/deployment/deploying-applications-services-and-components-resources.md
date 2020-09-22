@@ -1,5 +1,6 @@
 ---
 title: 將您的 Visual Studio 應用程式部署到資料夾、IIS、Azure 或其他目的地
+titleSuffix: ''
 description: 深入瞭解如何使用發佈嚮導發佈應用程式的選項
 ms.custom: contperfq1
 ms.date: 08/21/2020
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cccba4c299d5b12bdc00666a0b00f073fba12278
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f88f6c789afa112837fe67bc299915da85e42f3e
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036678"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851719"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>將您的應用程式部署到資料夾、IIS、Azure 或其他目的地
 
@@ -108,7 +109,7 @@ ms.locfileid: "90036678"
 - 當您有現有的 Docker 容器開發和部署管線時。
 - 當您想要在 Azure 中建立 Docker 容器映射時。
 
-如需詳細資訊：
+其他資訊：
 
 - [將 ASP.NET 容器部署到容器登錄](../containers/hosting-web-apps-in-docker.md)
 
@@ -230,7 +231,7 @@ IIS 網頁伺服器可讓您將應用程式部署至 Azure 以外的 web 伺服�
 - [目標執行時間識別碼 (可攜的 RID，et al) ](/dotnet/core/rid-catalog)
 - [Debug 和 release 設定](../ide/understanding-build-configurations.md)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 教學課程：
 

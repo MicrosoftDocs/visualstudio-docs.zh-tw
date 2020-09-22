@@ -1,5 +1,5 @@
 ---
-title: 如何旗標和解除標記執行緒 |Microsoft Docs
+title: 旗標和解除標記執行緒 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7480f953e2fca57c296d6d1641059993bfa582c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e381faac8a8e4ae6f45f1fde6e2e20dd9f127a97
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349623"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852057"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>如何：將執行緒加上旗標和解除標記 (c #、Visual Basic、c + +) 
 
@@ -58,7 +58,7 @@ ms.locfileid: "85349623"
 
 4. (選擇性) 在 [搜尋]**** 方塊中，鍵入用於搜尋特定模組的字串。
 
-5. 按一下 [確定]  。
+5. 按一下 [確定]。
 
 ## <a name="see-also"></a>另請參閱
 - [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)

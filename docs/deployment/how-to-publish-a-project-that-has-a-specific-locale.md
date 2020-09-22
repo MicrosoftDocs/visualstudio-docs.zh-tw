@@ -1,5 +1,5 @@
 ---
-title: 如何-發行具有特定地區設定的專案 |Microsoft Docs
+title: 發佈具有特定地區設定的專案
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d3b3aa7c2c56b1175c2f280a96ade78ea17ee55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38be27ca9873d662fd4839590f50c9788b5ae7ea
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382220"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851693"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>如何：發行具有特定地區設定的專案
 一個應用程式包含不同地區設定的元件是很常見的情況。 在此情況下，您會建立一個內含數個專案的方案，然後針對每個地區設定發行不同的專案。 本程序示範如何使用巨集，發行方案中地區設定為 'en' 的第一個專案。 如果您要使用 'en' 以外的地區設定來嘗試執行這個程序，請確定將巨集中的 `localeString` 設定為符合您所使用的地區設定 (例如 'de' 或 'de-DE')。

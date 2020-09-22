@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6b9adb5a0a47c1ee98e0e390cfaf8b3a6dc78146
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433799"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839202"
 ---
 # <a name="attach"></a>附加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
  **Crosssession**  
  在登入工作階段以外的工作階段中，啟用分析應用程式。 如果指定 **Start** 選項和 **Crosssession** 選項，則為必要項目。  
   
- **Start:** `Method`  
+ **開始：**`Method`  
  初始化命令列分析工具工作階段，並設定指定的分析方法。  
   
  **TargetCLR**  
@@ -57,7 +57,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## <a name="interval-options"></a>間隔選項  
  下列其中一個取樣間隔選項可以指定於 Attach 命令列上。 預設取樣間隔為 10,000,000 個處理器時脈週期。  
   
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]  
+ **Timer**[**：** `Cycles` ]**PF**[**：** `Events` ]**Sys**[<strong>：</strong>Events]**Counter**[**：** `Name` ， `Reload` ， `FriendlyName` ]  
  指定取樣間隔的數目和類型。  
   
 - **Timer** - 每 `Cycles` 個處理器時脈週期取樣一次。 如果未指定 `Cycles`，會使用 10,000,000 個週期。  
@@ -66,7 +66,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
   
 - **Sys** - 對作業系統每呼叫 `Events` 次取樣一次。 如果未指定 `Events`，則會使用 10 次系統呼叫。  
   
-- **Counter** - `Name` 所指定的 CPU 效能計數器每 `Reload` 個數目就取樣一次。 選擇性，`FriendlyName` 可以指定要作為分析工具報表中資料行標頭的字串。  
+- **Counter** - `Name` 所指定的 CPU 效能計數器每 `Reload` 個數目就取樣一次。 選擇性，`FriendlyName` 可以指定要作為分析工具報表中資料行標題的字串。  
   
 ## <a name="example"></a>範例  
  此範例示範如何附加至處理序識別碼為 12345 的執行中應用程式執行個體。  
@@ -76,8 +76,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Attach:12345  
 ```  
   
-## <a name="see-also"></a>請參閱  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+## <a name="see-also"></a>另請參閱  
+ [>vsperfcmd](../profiling/vsperfcmd.md)   
+ [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)

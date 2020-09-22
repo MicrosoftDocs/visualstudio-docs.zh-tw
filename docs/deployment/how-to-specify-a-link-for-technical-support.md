@@ -1,5 +1,5 @@
 ---
-title: 如何-指定技術支援的連結 |Microsoft Docs
+title: 指定技術支援的連結 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e64ef97b8b51f8a943e216bad67ec300026d5654
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4474845d4a3f13a404773a6c8b572ff5194e033
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382051"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851745"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>How to: Specify a link for Technical Support (如何：指定技術支援的連結)
 發佈 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，[ **支援 URL** ] 屬性會識別網頁或檔案共用，讓使用者可以前往該頁面取得應用程式的相關資訊。 這個屬性是選擇性的;如果有提供，URL 將會顯示在應用程式的 [ **新增或移除程式** ] 對話方塊中。

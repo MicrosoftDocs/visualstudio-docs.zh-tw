@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1431d56516c749004cef1b35ada482a6c53446
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44fe22aa1d4549d1daba4324349160afcd3133ba
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579718"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811210"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教學課程 1：建立圖片檢視器
 
@@ -46,7 +46,7 @@ ms.locfileid: "77579718"
 
 ## <a name="tutorial-links"></a>教學課程的連結
 
-|標題|描述|
+|Title|描述|
 |-----------|-----------------|
 |[步驟 1：建立 Windows Forms 應用程式專案](../ide/step-1-create-a-windows-forms-application-project.md)|首先，建立 Windows Forms 應用程式專案。|
 |[步驟2：執行您的圖片檢視器應用程式](../ide/step-2-run-your-program.md)|執行您在上一個步驟中建立的 Windows Forms 應用程式專案。|
@@ -68,6 +68,6 @@ ms.locfileid: "77579718"
 
 ## <a name="see-also"></a>另請參閱
 
-* [其他 c # 教學課程](/visualstudio/get-started/csharp/)
-* [Visual Basic 教學課程](/visualstudio/get-started/visual-basic/)
+* [其他 c # 教學課程](../get-started/csharp/index.yml)
+* [Visual Basic 教學課程](../get-started/visual-basic/index.yml)
 * [C + + 教學課程](/cpp/get-started/tutorial-console-cpp)

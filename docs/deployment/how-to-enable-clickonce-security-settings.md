@@ -1,5 +1,5 @@
 ---
-title: 如何-啟用 ClickOnce 安全性設定 |Microsoft Docs
+title: 啟用 ClickOnce 安全性設定 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d673edac957e9625f7d948fbe766ee08b23b6b52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f407ac42dc9997215bfe6682bb8b974b78c7847
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382428"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850926"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>How to: Enable ClickOnce security settings (如何：啟用 ClickOnce 安全性設定)
 您必須啟用 ClickOnce 應用程式的代碼啟用安全性，才能發佈應用程式。 當您使用 [發佈嚮導] 發行應用程式時，就會自動完成這項操作。

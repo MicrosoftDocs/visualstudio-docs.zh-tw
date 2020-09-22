@@ -1,5 +1,5 @@
 ---
-title: 如何-指定檢測前置和檢測後續命令 |Microsoft Docs
+title: 指定檢測前置和檢測後續命令 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ba91e04342b9b78e3c6acae5296857a6f00f2aba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 904a5086af4fbbd9c1ef174cae63013cb8c96ad9
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328999"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851797"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>如何：指定檢測前置和檢測後續命令
 
@@ -47,7 +47,7 @@ ms.locfileid: "85328999"
     > [!NOTE]
     > 您可以按一下 [**命令列**] 方塊旁邊的省略號按鈕** ( ... ) ** ，以流覽並選取適當的 .exe、.cmd 或 .bat 檔案。
 
-4. 按一下 [確定]  。
+4. 按一下 [確定]。
 
      若要停止執行命令但不將它移除，請選取 [從檢測中排除]**** 核取方塊。 若要修改編譯器或連結器設定，請使用專案屬性頁。
 
@@ -66,7 +66,7 @@ ms.locfileid: "85328999"
     > [!NOTE]
     > 您可以按一下 [**命令列**] 方塊旁邊的省略號按鈕** ( ... ) ** ，以流覽並選取適當的 .exe、.cmd 或 .bat 檔案。
 
-4. 按一下 [確定]  。
+4. 按一下 [確定]。
 
      若要停止執行命令但不將它移除，請選取 [從檢測中排除]**** 核取方塊。 若要修改編譯器或連結器設定，請使用專案屬性頁。
 

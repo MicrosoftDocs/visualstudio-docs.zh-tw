@@ -1,5 +1,5 @@
 ---
-title: 如何-線上程視圖中搜尋執行緒 |Microsoft Docs
+title: 線上程視圖中搜尋執行緒 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e97d381fd0b1f6340035eec129e7304a8e73b03d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99a2b4fe491939b6cf4224c211dcd03ec609be27
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349259"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851979"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>如何：在執行緒檢視中搜尋執行緒
 您可以使用執行緒識別碼或模組字串做為搜尋準則，線上程視圖中搜尋特定的執行緒。 您也可以指定搜尋的初始方向。 對話方塊中的欄位會線上程樹狀結構中顯示所選執行緒的屬性。
@@ -37,6 +37,6 @@ ms.locfileid: "85349259"
 
 5. 選擇 [ **向上** ] 或 [ **向下** ] 以取得搜尋的初始方向。
 
-6. 按一下 [確定]  。
+6. 按一下 [確定]。
 
    如果找到相符的執行緒，則會在 [執行緒] 視圖視窗中反白顯示。

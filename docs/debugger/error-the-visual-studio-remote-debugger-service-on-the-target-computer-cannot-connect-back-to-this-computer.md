@@ -1,5 +1,5 @@
 ---
-title: 錯誤-目的電腦上的 Visual Studio 遠端偵錯工具服務無法連回這部電腦
+title: 目標電腦上的 Visual Studio 遠端偵錯工具服務無法連回這部電腦
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b372b1f6fcdab357e87ff91fa4df257e8da7d68d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e879fdc1be2eba309258dd64b3c9d83639eb05f7
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536665"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851069"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>錯誤：目標電腦上的 Visual Studio 遠端偵錯工具服務無法連回這部電腦
 此錯誤表示遠端偵錯程式服務在嘗試連接到您正在從中進行偵錯工具的電腦時，無法進行驗證的使用者帳戶下執行。 使用舊版的偵錯工具來進行遠端偵錯程式，而遠端偵錯程式是以服務的形式執行時，就可能發生這個錯誤。

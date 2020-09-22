@@ -1,5 +1,5 @@
 ---
-title: 如何-管理 ClickOnce 應用程式的更新 |Microsoft Docs
+title: 管理 ClickOnce 應用程式的更新 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 534171d9145d0a21fee7f8831e9a6355e6079cbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f4ebe4d04aa585d9129587fe3c250c46516c824
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382350"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851602"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>How to: Manage updates for a ClickOnce application (如何：管理 ClickOnce 應用程式的更新)
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式可以自動或以程式設計方式檢查更新。 作為開發人員，您有許多彈性可指定執行更新檢查的時間和方式、是否需要更新，以及應用程式應該檢查更新的位置。

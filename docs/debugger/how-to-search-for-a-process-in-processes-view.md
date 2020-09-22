@@ -1,5 +1,5 @@
 ---
-title: 如何-在進程視圖中搜尋進程 |Microsoft Docs
+title: 在進程視圖中搜尋進程 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e823ecb1f7523c1a6f094d5669f4a37a72e84f60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b94a052f7cb50df676140b45a43f49b92283903
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349285"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851992"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在處理序檢視中搜尋處理序
 您可以使用處理序識別碼或模組字串做為搜尋準則，在進程視圖中搜尋特定的進程。 您也可以指定搜尋的初始方向。 對話方塊中的欄位會在進程樹狀結構中顯示所選進程的屬性。
@@ -38,6 +38,6 @@ ms.locfileid: "85349285"
 
 5. 選擇 [ **向上** ] 或 [ **向下** ] 以取得搜尋的初始方向。
 
-6. 按一下 [確定]  。
+6. 按一下 [確定]。
 
    如果找到相符的進程，就會在 [進程] **視圖** 視窗中反白顯示。

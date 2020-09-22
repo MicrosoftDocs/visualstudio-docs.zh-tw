@@ -1,5 +1,5 @@
 ---
-title: 如何-限制檢測特定 Dll |Microsoft Docs
+title: 限制檢測特定 DLL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 391aeb0b1686d58116d6aaa52ad0a3defe15fb00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3584498854e7518e93c4ba00dc019d804b0e8d8
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85327794"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851017"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>如何：限制檢測特定 DLL
 
@@ -57,7 +57,7 @@ ms.locfileid: "85327794"
 
     - 選擇性。 在 [命令列的引數]**** 中，輸入要傳給可執行檔的任何命令列引數。 如有必要，請在 [工作目錄]**** 中指定應用程式的工作目錄。
 
-    - 按一下 [下一步]  。
+    - 按一下 [下一步]。
 
 5. 選擇 [檢測]**** 做為程式碼剖析方法，然後按 [下一步]****。
 

@@ -1,5 +1,5 @@
 ---
-title: 如何-在機器碼中設定執行緒名稱 |Microsoft Docs
+title: 在機器碼中設定執行緒名稱 |Microsoft Docs
 ms.date: 12/17/2018
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce6281a87900247cc54422a5175714d5f05b8e07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00f98e638497622e0e887a421cb08f18de97b9af
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349142"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851927"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>如何：在機器碼中設定執行緒名稱
 在所有 Visual Studio 版本中，都可以將執行緒命名。 執行緒命名適用于在偵測執行中的進程時，在 [ **執行緒** ] 視窗中找出感興趣的執行緒。 當您透過損毀傾印檢查，以及使用各種工具來分析效能捕捉時，具有 recognizably 命名的執行緒也會很有説明。
@@ -43,7 +43,7 @@ ms.locfileid: "85349142"
 * 只有在 Visual Studio 2017 15.6 版和更新版本中才會顯示執行緒名稱。
 * 事後剖析錯損毀傾印檔案時，只有當損毀是 1607 Windows 10 在 Windows Server 2016 或更新版本的 Windows 上建立時，才會顯示執行緒名稱。
 
-*範例：*
+*範例︰*
 
 ```C++
 #include <windows.h>
@@ -72,7 +72,7 @@ int main()
 * 只有在使用以例外狀況為基礎的方法時附加偵錯工具時，才適用。
 * 使用這個方法所設定的執行緒名稱將無法在傾印或效能分析工具中使用。
 
-*範例：*
+*範例︰*
 
 `SetThreadName`下面顯示的函式會示範這個以例外狀況為基礎的方法。 請注意，執行緒名稱將會自動複製到執行緒，因此 `threadName` 可以在呼叫完成之後釋放參數的記憶體 `SetThreadName` 。
 

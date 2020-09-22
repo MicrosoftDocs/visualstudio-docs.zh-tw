@@ -1,5 +1,5 @@
 ---
-title: 如何-調試插入的程式碼 |Microsoft Docs
+title: 偵錯工具插入的程式碼 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a63a593a907908205d6724f3faf2c06d405bf0e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2dfcd81def9b3662f410120f370566354726498
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350039"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852096"
 ---
 # <a name="how-to-debug-injected-code"></a>如何：偵錯插入程式碼
 

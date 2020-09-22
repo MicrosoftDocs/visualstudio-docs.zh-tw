@@ -1,5 +1,5 @@
 ---
-title: 如何設定許可權 |Microsoft Docs
+title: 設定權限 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 03f508bd2ff904898d77cd5ac07c30992da63b46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0a55e5e18829856b913ad01df6f831a2df42863
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328938"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851823"
 ---
 # <a name="how-to-set-permissions"></a>如何：設定權限
 
@@ -72,7 +72,7 @@ Users 群組的成員會需要存取磁碟上，與這個小組中之其他成�
 
 5. 在 [**許可權 \<user name> ** ] 方塊中，選取 [**完全控制**] 的核取方塊。
 
-6. 按一下 [確定]  。
+6. 按一下 [確定]。
 
      如此便會將共用之資料夾樹狀目錄 (從步驟 5 中選取的資料夾開始) 的權限授與使用者。
 
@@ -86,7 +86,7 @@ Users 群組的成員會需要存取磁碟上，與這個小組中之其他成�
     <drive>:\Program Files\Microsoft Visual Studio 14\Team Tools\Performance Tools
     ```
 
-3. 執行下列命令：
+3. 執行以下命令：
 
     ```cmd
     vsperfcmd /admin:driver,start /admin:service,start

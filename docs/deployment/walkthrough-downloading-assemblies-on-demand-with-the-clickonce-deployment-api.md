@@ -1,5 +1,6 @@
 ---
-title: 使用 ClickOnce 部署 API 隨選下載元件
+title: '視需要下載元件 (ClickOnce API) '
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f52d853399bb568407b5022dca7f6288e3901a7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8452bec3443b93737e4799a8f09c8e342f011976
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66262915"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809246"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：使用 ClickOnce 部署 API 依需求下載元件
 根據預設，應用程式中包含的所有元件 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 都會在第一次執行應用程式時下載。 不過，您的應用程式中可能會有一小部分使用者使用的部分。 在此情況下，只有在建立組件的其中一種類型時，才會想要下載組件。 下列逐步解說示範如何將應用程式中的特定組件標示為「選擇性」，以及在 Common Language Runtime 需要時，使用 <xref:System.Deployment.Application> 命名空間中的類別來下載它們。
@@ -29,7 +30,7 @@ ms.locfileid: "66262915"
 > [!NOTE]
 > 您的應用程式必須以完全信任執行，才能使用此程序。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
  您將需要下列其中一個元件，才能完成此逐步解說：
 
 - Windows SDK。 您可以從 Microsoft 下載中心下載 Windows SDK。

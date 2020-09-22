@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c1325ebb49e500c3afa40ee074be1f9b859100e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 014b59efb945f6390877a2e9764e24b6c4cd639b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978428"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810937"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>安全性和部署逐步解說
   下列主題將示範如何設定安全性原則以允許您的解決方案執行，以及如何部署 Office 方案。
@@ -31,19 +31,19 @@ ms.locfileid: "62978428"
 - [如何：設定包含清單安全性](../vsto/how-to-configure-inclusion-list-security.md) 說明如何設定 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 信任提示，以控制終端使用者是否可選擇安裝 Office 方案。
 
 ## <a name="deployment-topics"></a>部署主題
-- [如何：使用 ClickOnce 發行 Office 方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8) 提供有關如何使用 [ **發佈嚮導]** 或 [專案設計工具] 的 [ **發行** ] 頁面來發行 Office 方案的資訊。
+- [如何：使用 ClickOnce 發行 Office 方案](/previous-versions/bb386095(v=vs.110)) 提供有關如何使用 [ **發佈嚮導]** 或 [專案設計工具] 的 [ **發行** ] 頁面來發行 Office 方案的資訊。
 
-- [如何：使用 ClickOnce 將檔層級 Office 方案發行至 SharePoint 伺服器](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58) 描述部署到 SharePoint 伺服器的步驟。
+- [如何：使用 ClickOnce 將檔層級 Office 方案發行至 SharePoint 伺服器](/previous-versions/bb608595(v=vs.110)) 描述部署到 SharePoint 伺服器的步驟。
 
-- [如何：安裝 ClickOnce Office 方案](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065) 提供在發行程式期間產生的安裝程式，以安裝 Office 方案的步驟;開啟部署資訊清單檔;或開啟自訂檔或活頁簿。
+- [如何：安裝 ClickOnce Office 方案](/previous-versions/bb608592(v=vs.110)) 提供在發行程式期間產生的安裝程式，以安裝 Office 方案的步驟;開啟部署資訊清單檔;或開啟自訂檔或活頁簿。
 
-- [如何：在終端使用者電腦上安裝必要條件以執行 Office 方案](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98) 說明如何建立安裝程式，在安裝方案元件之前先檢查必要條件。
+- [如何：在終端使用者電腦上安裝必要條件以執行 Office 方案](/previous-versions/bb608608(v=vs.110)) 說明如何建立安裝程式，在安裝方案元件之前先檢查必要條件。
 
-- [如何：準備 IIS 以部署 Office 方案](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4) 說明如何針對部署資訊清單，在 Microsoft Internet Information Services (IIS) 上設定 MIME 類型。
+- [如何：準備 IIS 以部署 Office 方案](/previous-versions/bb608629(v=vs.110)) 說明如何針對部署資訊清單，在 Microsoft Internet Information Services (IIS) 上設定 MIME 類型。
 
-- [如何：更新已部署的 Office 方案](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13) 提供有關如何使用 [ **發佈嚮導]** 來更新 Office 方案的資訊。
+- [如何：更新已部署的 Office 方案](/previous-versions/bb157871(v=vs.110)) 提供有關如何使用 [ **發佈嚮導]** 來更新 Office 方案的資訊。
 
-- [如何：變更 Office 方案的安裝路徑](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd) 提供如何變更 Office 方案的安裝路徑的相關資訊。
+- [如何：變更 Office 方案的安裝路徑](/previous-versions/bb608626(v=vs.110)) 提供如何變更 Office 方案的安裝路徑的相關資訊。
 
 ## <a name="related-sections"></a>相關章節
 - [使用 Word](../vsto/walkthroughs-using-word.md) 的逐步解說列出在 Visual Studio 中提供 Office 方案簡介的逐步指南，並協助說明如何建立可利用 Word 的應用程式。

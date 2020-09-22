@@ -1,5 +1,6 @@
 ---
-title: 手動部署 ClickOnce 應用程式保留商標
+title: 手動部署 ClickOnce 應用程式 & 保持商標
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e3f21f9e377b7d3e2d71d499eed25079c7769c7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66263417"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809220"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>逐步解說：手動部署不需要重新簽署而且會保留商標資訊的 ClickOnce 應用程式
 當您建立 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，並將它提供給客戶進行發佈和部署時，客戶通常必須更新部署資訊清單並重新簽署。 雖然這在大部分情況下仍是慣用的方法，但是 .NET Framework 3.5 可讓您建立 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可由客戶部署的部署，而不需要重新產生新的部署資訊清單。 如需詳細資訊，請參閱 [部署 ClickOnce 應用程式以進行測試和實際執行伺服器，而不需](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)進行簽署。
@@ -37,7 +38,7 @@ ms.locfileid: "66263417"
 > [!NOTE]
 > 在這個逐步解說中，您會使用命令列工具 *Mage.exe* 或圖形化工具 *MageUI.exe*，手動建立部署。 如需手動部署的詳細資訊，請參閱 [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
  若要執行這個逐步解說中的步驟，您需要下列各項：
 
 - 您可以部署的 Windows Forms 應用程式。 此應用程式將稱為 *WindowsFormsApp1*。

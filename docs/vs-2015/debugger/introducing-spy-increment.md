@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 35e9fa2d75528549f8c55f5b52dbd4c4aa2271a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431460"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840212"
 ---
 # <a name="introducing-spy"></a>Spy++ 簡介
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ Spy++ 可讓您執行下列工作︰
   
 - 使用複雜的訊息記錄檔選取範圍參數，設定 **訊息選項** 。  
   
-  Spy++ 提供工具列和超連結，有助您加快作業。 它也提供 [重新整理]  命令來更新使用中的檢視，[視窗搜尋工具]  讓您更輕鬆地監視，而 [字型]  對話方塊，則可自訂檢視視窗。 此外，Spy++ 可讓您儲存和還原使用者偏好設定。  
+  Spy++ 提供工具列和超連結，有助您加快作業。 它也提供 [重新整理] **** 命令來更新使用中的檢視，[視窗搜尋工具] **** 讓您更輕鬆地監視，而 [字型] **** 對話方塊，則可自訂檢視視窗。 此外，Spy++ 可讓您儲存和還原使用者偏好設定。  
   
-  您可以在各種 Spy++ 視窗中，按一下滑鼠右鍵顯示常用命令的捷徑功能表。 指標位置可決定要顯示哪些命令。 例如，如果您在 [視窗] 檢視的項目上按一下滑鼠右鍵，會顯示選取的視窗，然後按一下捷徑功能表上的 [反白顯示]  ，則選取視窗的框線就會閃爍，以便更輕鬆地找到該視窗。  
+  您可以在各種 Spy++ 視窗中，按一下滑鼠右鍵顯示常用命令的捷徑功能表。 指標位置可決定要顯示哪些命令。 例如，如果您在 [視窗] 檢視的項目上按一下滑鼠右鍵，會顯示選取的視窗，然後按一下捷徑功能表上的 [反白顯示] **** ，則選取視窗的框線就會閃爍，以便更輕鬆地找到該視窗。  
   
 > [!NOTE]
-> 有兩個其他 Spy + + 的公用程式：PView，會顯示程序和執行緒，以及 DDESPY 的詳細資料。EXE，可讓您監視動態資料交換 (DDE) 訊息。  
+> 下列兩個其他公用程式跟 Spy++ 相似：PView，會顯示處理序和執行緒的詳細資料；DDESPY.EXE，可讓您監視動態資料交換 (DDE) 訊息。  
   
 ## <a name="64-bit-operating-systems"></a>64 位元作業系統  
- Spy++ 有兩個版本。 第一個版本名為 Spy++ (spyxx.exe)。如果視窗是在 32 位元處理序中執行，就非常適合用這個版本來顯示傳送至視窗的訊息。 例如，Visual Studio 會在 32 位元處理序中執行。 因此，您可以使用 Spy++ 來顯示傳送至方案總管 的訊息。 由於 Visual Studio 中大多數組建的預設組態是在 32 位元處理序中執行，因此 Visual Studio 中的 [工具]  功能表即會提供第一個版本的 Spy++。  
+ Spy++ 有兩個版本。 第一個版本名為 Spy++ (spyxx.exe)。如果視窗是在 32 位元處理序中執行，就非常適合用這個版本來顯示傳送至視窗的訊息。 例如，Visual Studio 會在 32 位元處理序中執行。 因此，您可以使用 Spy++ 來顯示傳送至方案總管 **** 的訊息。 由於 Visual Studio 中大多數組建的預設組態是在 32 位元處理序中執行，因此 Visual Studio 中的 [工具] **** 功能表即會提供第一個版本的 Spy++。  
   
  第二個版本名為 Spy++ (64 位元) (spyxx_amd64.exe)。如果視窗是在 64 位元處理序中執行，就非常適合用這個版本來顯示傳送至視窗的訊息。 比方說，在 64 位元作業系統中，[記事本] 會在 64 位元處理序中執行。 因此，您可以使用 Spy++ (64 位元) 來顯示傳送至 [記事本] 的訊息。 Spy++ (64 位元) 通常位於  
   
@@ -55,6 +55,6 @@ Spy++ 可讓您執行下列工作︰
 > 雖然 Spy++ (64 位元) 的檔案名稱包含 "amd"，但它會在任何 x64 Windows 作業系統上執行。  
   
 ## <a name="see-also"></a>另請參閱  
- [使用 Spy++](../debugger/using-spy-increment.md)   
- [Spy++ 檢視](../debugger/spy-increment-views.md)   
+ [使用 Spy + +](../debugger/using-spy-increment.md)   
+ [Spy + + Views](../debugger/spy-increment-views.md)   
  [Spy++ 參考](../debugger/spy-increment-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: 如何建立套件資訊清單 |Microsoft Docs
+title: 建立套件資訊清單 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc3a1263136fe4c50b2c7020e1557a7a693691b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe51ac8bc8af07038e6bfe6ddb2c5730485ca60b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382519"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851706"
 ---
 # <a name="how-to-create-a-package-manifest"></a>How to: Create a package manifest (如何：建立封裝資訊清單)
 若要部署應用程式的必要條件，您可以使用啟動載入器套件。 啟動載入器套件包含單一產品資訊清單檔案，但每個地區設定都有套件資訊清單。 不同當地語系化版本之間的共用功能應該進入產品資訊清單。

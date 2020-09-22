@@ -1,5 +1,5 @@
 ---
-title: 如何-展開和折迭 Spy + + 樹狀結構 |Microsoft Docs
+title: 展開和折迭 Spy + + 樹狀結構 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f67a88c153e5bfef2644eb731d68229a54ffcbc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9a8735613ad4f84c45190a5d0fa21b71d3a2658
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349584"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852083"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>如何：展開和摺疊 Spy++ 樹狀結構
 您可以使用兩種方法來展開和折迭視窗、進程和執行緒的流覽：按一下視窗中的圖示，或使用 [ **樹狀** ] 功能表。 樹狀結構中的 + 和-圖示的運作方式，與在 c + + 專案視窗中的行為相同。

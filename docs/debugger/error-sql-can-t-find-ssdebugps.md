@@ -1,5 +1,5 @@
 ---
-title: 錯誤-SQL 可以 &apos; 找不到 ssdebugps.dll |Microsoft Docs
+title: SQL 可以 &apos; 找不到 ssdebugps.dll |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a1a603aa44ceed46c160443508080072046e35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50c8b6c2385879e4cf41c8cc2aea57715050b5e2
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88706473"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851784"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>錯誤： SQL 可以&#39;t Find SSDEBUGPS.DLL
 

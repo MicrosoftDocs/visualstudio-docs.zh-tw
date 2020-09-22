@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2aa32579b7e1f3ad1129fb4be116555b8bb5d790
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434310"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838955"
 ---
 # <a name="c-library-reference"></a>C++ 程式庫參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,5 +29,5 @@ ms.locfileid: "63434310"
 ## <a name="in-this-section"></a>本節內容  
  [Concurrency 命名空間 (並行視覺化檢視)](../profiling/concurrency-namespace-concurrency-visualizer.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [並行視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md)
