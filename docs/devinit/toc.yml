@@ -1,0 +1,80 @@
+- name: devinit
+  items:
+    - name: 開始使用
+      href: getting-started-with-devinit.md
+    - name: 命令
+      href: devinit-commands.md
+    - name: .devinit.json
+      href: devinit-json.md
+    - name: devinit 與 GitHub Codespace
+      href: devinit-and-codespaces.md
+    - name: 常見問題集
+      href: faq.md
+    - name: 工具
+      items:
+        - name: 工具清單
+          href: devinit-tool-list.md
+        - name: azurecli-login
+          href: tool-azurecli-login.md
+        - name: choco-install
+          href: tool-choco-install.md
+        - name: choco-upgrade
+          href: tool-choco-upgrade.md
+        - name: dotnet-restore
+          href: tool-dotnet-restore.md
+        - name: dotnet-toolinstall
+          href: tool-dotnet-toolinstall.md
+        - name: npm-install
+          href: tool-npm-install.md
+        - name: nuget-restore
+          href: tool-nuget-restore.md
+        - name: require-azureartifactscredentialprovider
+          href: tool-require-azureartifactscredentialprovider.md
+        - name: require-azurecli
+          href: tool-require-azurecli.md
+        - name: require-choco
+          href: tool-require-choco.md
+        - name: require-dotnetcoresdk
+          href: tool-require-dotnetcoresdk.md
+        - name: require-dotnetframeworksdk
+          href: tool-require-dotnetframeworksdk.md
+        - name: require-gitsubmodule
+          href: tool-require-gitsubmodule.md
+        - name: require-mssql
+          href: tool-require-mssql.md
+        - name: require-nodejs
+          href: tool-require-nodejs.md
+        - name: require-npm
+          href: tool-require-npm.md
+        - name: require-nuget
+          href: tool-require-nuget.md
+        - name: require-psmodule
+          href: tool-require-psmodule.md
+        - name: require-vcpkg
+          href: tool-require-vcpkg.md
+        - name: require-vscomponent
+          href: tool-require-vscomponent.md
+        - name: set-env
+          href: tool-set-env.md
+        - name: vcpkg-install
+          href: tool-vcpkg-install.md
+        - name: windowsfeature-disable
+          href: tool-windowsfeature-disable.md
+        - name: windowsfeature-enable
+          href: tool-windowsfeature-enable.md
+        - name: wsl-install
+          href: tool-wsl-install.md
+    - name: 範例
+      items:
+        - name: 範例清單
+          href: sample-readme.md
+        - name: 所有工具
+          href: sample-all-tool.md
+        - name: dotnet 執行階段存放庫
+          href: sample-dotnet-runtime.md
+        - name: eShopOnWeb 存放庫
+          href: sample-eshoponweb.md
+        - name: OpenCV 存放庫
+          href: sample-opencv.md
+        - name: Codespace 個人預覽版
+          href: sample-private-preview.md
