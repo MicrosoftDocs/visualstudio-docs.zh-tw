@@ -1,5 +1,5 @@
 ---
-title: 方案概觀 |Microsoft Docs
+title: 解決方案總覽 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,40 +11,40 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fb3bb85ab172404262c147cce285cebaf756afc9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432073"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839210"
 ---
 # <a name="solutions-overview"></a>方案概觀
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-解決方案是建立應用程式一起運作的一或多個專案的群組。 屬於方案的專案和狀態資訊會儲存在兩個不同的方案檔。 方案 (.sln) 檔案是以文字為基礎和可放置在原始程式碼控制之下，並讓使用者彼此共用。 方案使用者選項 (.suo) 檔案是二進位。 如此一來，.suo 檔案不能放在原始檔控制之下，並包含使用者特定資訊。  
+方案是一或多個專案的群組，這些專案會一起運作來建立應用程式。 與解決方案有關的專案和狀態資訊會儲存在兩個不同的方案檔中。 方案 ( .sln) 檔案是以文字為基礎，而且可以放在原始程式碼控制之下，並且在使用者之間共用。 方案使用者選項 ( .suo) 檔案是二進位檔案。 因此，.suo 檔案不能放在原始程式碼控制之下，並且包含使用者特定的資訊。  
   
- 任何的 VSPackage 可以寫入任一類型的方案檔。 由於檔案的情況，有兩個不同的介面實作進行寫入。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>介面會將文字資訊寫入而非.sln 檔案和<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>介面.suo 檔案中寫入二進位資料流。  
-  
-> [!NOTE]
-> 不需要明確寫入項目本身的方案檔; 專案環境將會為專案處理。 因此，除非您想要為方案檔中加入其他內容，您不需要以這種方式註冊 VSPackage。  
-  
- 每個支援解決方案的持續性的 VSPackage 會使用三個介面，<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>介面，它是由環境實作，而且呼叫 vspackage，以及`IVsPersistSolutionProps`和`IVsPersistSolutionOpts`，兩者實作，這是 vspackage。 `IVsPersistSolutionOpts`介面只需要實作私用資訊是否要寫入 vspackage.suo 檔案。  
-  
- 開啟方案時，下列程序進行。  
-  
-1. 環境讀取方案。  
-  
-2. 如果環境找到`CLSID`，它會載入對應的 VSPackage。  
-  
-3. 如果載入 VSPackage 時，此環境會呼叫`QueryInterface`針對<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>介面，VSPackage 所需要的介面。  
-  
-   1. 從.sln 檔案讀取時，環境會呼叫`QueryInterface`針對`IVsPersistSolutionProps`。  
-  
-   2. 從.suo 檔案讀取時，環境會呼叫`QueryInterface`針對`IVsPersistSolutionOpts`。  
-  
-   使用這些檔案的相關的特定資訊可在[解決方案 (。Sln) 檔案](../../extensibility/internals/solution-dot-sln-file.md)和[方案使用者選項 (。Suo) 檔案](../../extensibility/internals/solution-user-options-dot-suo-file.md)。  
+ 任何 VSPackage 都可以寫入至任一種類型的方案檔。 由於檔案的本質，因此有兩個不同的介面可以寫入它們。 介面會將 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> 文字資訊寫入 .sln 檔案，而介面會將 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> 二進位資料流程寫入 .suo 檔案中。  
   
 > [!NOTE]
-> 如果您想要建立新的方案組態包含兩個專案組態，並從組建排除第三，您要使用的屬性頁面 UI 或自動化。 您無法直接變更方案的組建管理員設定和其屬性，但您可以使用操作使用的解決方案組建管理員`SolutionBuild`從 DTE automation 模型中的類別。 如需有關如何設定解決方案的詳細資訊，請參閱 <<c0> [ 方案組態](../../extensibility/internals/solution-configuration.md)。  
+> 專案不需要明確地將專案寫入至方案檔;環境會處理專案的。 因此，除非您想要特別將其他內容新增至方案檔，否則您不需要以這種方式註冊您的 VSPackage。  
+  
+ 支援解決方案持續性的每個 VSPackage 都會使用三個介面，也 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> 就是由環境所執行並由 VSPackage 呼叫的介面，以及由 `IVsPersistSolutionProps` VSPackage 所 `IVsPersistSolutionOpts` 執行的和。 `IVsPersistSolutionOpts`只有在 VSPackage 將私用資訊寫入 .suo 檔案時，才需要實作為介面。  
+  
+ 開啟方案時，會進行下列處理。  
+  
+1. 環境會讀取方案。  
+  
+2. 如果環境找到 `CLSID` ，就會載入對應的 VSPackage。  
+  
+3. 如果載入 VSPackage，環境會 `QueryInterface` <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> 針對 VSPackage 所需的介面呼叫介面。  
+  
+   1. 從 .sln 檔案讀取時，環境會呼叫 `QueryInterface` `IVsPersistSolutionProps` 。  
+  
+   2. 從 .suo 檔案讀取時，環境會呼叫 `QueryInterface` `IVsPersistSolutionOpts` 。  
+  
+   您可以在 [方案 (] 中找到這些檔案的使用相關特定資訊 [。.Sln) ](../../extensibility/internals/solution-dot-sln-file.md) 檔案和 [方案使用者選項 (。.Suo) ](../../extensibility/internals/solution-user-options-dot-suo-file.md)檔案。  
+  
+> [!NOTE]
+> 如果您想要建立包含兩個專案設定的新解決方案設定，並從組建中排除第三個專案，您必須使用屬性頁 UI 或自動化。 您無法直接變更方案組建管理員設定和其屬性，但是您可以使用 `SolutionBuild` 自動化模型中 DTE 的類別來操作方案組建管理員。 如需設定解決方案的詳細資訊，請參閱 [方案](../../extensibility/internals/solution-configuration.md)設定。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   

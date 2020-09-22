@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a44781c6fea0ecf75dcdb8a5ab2e2b3bed8e52e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1336af7469b030492b486004940b730d372760bb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986142"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807959"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 方案
 
@@ -333,7 +333,7 @@ ms.locfileid: "72986142"
 
 7. 重複這個程序，建立下列值。
 
-|實值類型<br /><br />|Name<br /><br />|
+|實值類型<br /><br />|[屬性]<br /><br />|
 |--------------|--------|
 |字串值<br /><br />|**友好**<br /><br />|
 |DWORD 值<br /><br />|**LoadBehavior**<br /><br />|
@@ -504,7 +504,7 @@ ms.locfileid: "72986142"
 
 ## <a name="see-also"></a>另請參閱
 
-- [部署的 Office 解決方案必要條件](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)
+- [部署的 Office 解決方案必要條件](/previous-versions/bb608617(v=vs.110))
 - [部署 Office 方案](../vsto/deploying-an-office-solution.md)
 - [VSTO 增益集的登錄專案](../vsto/registry-entries-for-vsto-add-ins.md)
 - [自訂文件屬性總覽](../vsto/custom-document-properties-overview.md)

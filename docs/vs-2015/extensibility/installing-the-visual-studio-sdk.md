@@ -9,56 +9,56 @@ caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 88a6266a3f5910def0bf5041a37f89c2b3d67416
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414457"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840255"
 ---
 # <a name="installing-the-visual-studio-sdk"></a>安裝 Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。  
+從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。  
   
-## <a name="installing-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>Visual Studio 安裝的過程中安裝 Visual Studio SDK  
- 如果您想要納入您的 Visual Studio 安裝的 VSSDK，您必須執行自訂安裝。  
+## <a name="installing-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>在 Visual Studio 安裝過程中安裝 Visual Studio SDK  
+ 如果您想要在 Visual Studio 安裝中包含 VSSDK，您必須進行自訂安裝。  
   
 > [!NOTE]
-> 在安裝可執行檔，稱為 Visual Studio SDK **Visual Studio Extensibility Tools**。  
+> 在安裝可執行檔中，Visual Studio SDK 稱為 **Visual Studio 擴充性工具**。  
   
-1. 啟動 Visual Studio 2015 安裝。 您可以安裝 Visual Studio Express 以外的任何版本。  
+1. 啟動 Visual Studio 2015 安裝。 您可以安裝任何版本的 Visual Studio （Express 除外）。  
   
-2. 在第一個畫面上，選取**自訂**，而非**預設**。 按 [ **下一步**]。  
+2. 在第一個畫面上，選取 [ **自訂**]，而非 [ **預設**]。 按一下 [下一步]。  
   
-3. 您應該會看到樹狀檢視的自訂功能。 開啟**常見工具**。 您應該會看到**Visual Studio Extensibility Tools** 。  
+3. 您應該會看到自訂功能的樹狀檢視。 開啟 [ **一般工具**]。 您應該會看到 **Visual Studio 擴充性工具** 。  
   
      ![VSSDKInstall](../extensibility/media/vssdkinstall.png "VSSDKInstall")  
   
-4. 請檢查**Visual Studio Extensibility Tools** ，然後按一下**下一步**並繼續安裝。  
+4. 檢查 **Visual Studio 擴充性工具** ，然後按 **[下一步]** 繼續安裝。  
   
-## <a name="installing-the-visual-studio-sdk-after-installing-visual-studio"></a>安裝 Visual Studio 之後安裝 Visual Studio SDK  
- 如果您決定要安裝 Visual Studio SDK，完成您的 Visual Studio 安裝之後，您應該遵循下列程序：  
+## <a name="installing-the-visual-studio-sdk-after-installing-visual-studio"></a>在安裝 Visual Studio 之後安裝 Visual Studio SDK  
+ 如果您決定在完成 Visual Studio 安裝之後安裝 Visual Studio SDK，您應該遵循下列程式：  
   
-1. 移至**控制台中 / 程式 / 程式和功能**，然後尋找**Visual Studio 2015**。 您可以安裝適用於 Visual Studio 2015 Express 以外的任何版本的 Visual Studio SDK。  
+1. 移至 **主控台/程式/程式和功能**，並尋找 **Visual Studio 2015**。 您可以安裝 Visual Studio SDK，適用于任何版本的 Visual Studio 2015 （Express 除外）。  
   
-2. 以滑鼠右鍵按一下**Visual Studio 2015**，然後按一下**變更**。 您應該會看到 [安裝] 頁面。  
+2. 在 [ **Visual Studio 2015**] 上按一下滑鼠右鍵，然後按一下 [ **變更**]。 您應該會看到 [安裝] 頁面。  
   
-3. 遵循相同的程序，如**Visual Studio 安裝的過程中安裝 Visual Studio SDK**上方。  
+3. 遵循與 **安裝 VISUAL STUDIO SDK** 的相同程式，做為上述 Visual Studio 安裝的一部分。  
   
-4. 按一下  **Visual Studio Extensibility Tools**安裝 Visual Studio SDK 的連結。  
+4. 按一下 **Visual Studio 擴充性工具** 連結，以安裝 Visual Studio SDK。  
   
-## <a name="installing-the-visual-studio-sdk-from-a-solution"></a>從方案安裝 Visual Studio SDK  
- 如果您使用的擴充性專案中開啟的方案，但是未先安裝的 VSSDK，將提示您的 [方案總管] 上方反白顯示的資訊列。 它看起來應該像下面這樣：  
+## <a name="installing-the-visual-studio-sdk-from-a-solution"></a>從解決方案安裝 Visual Studio SDK  
+ 如果您在沒有先安裝 VSSDK 的情況下開啟具有擴充性專案的方案，則會在方案總管上方以醒目提示的資訊列提示您。 您應該會看到如下的內容：  
   
  ![SolutionExplorerInstall](../extensibility/media/solutionexplorerinstall.png "SolutionExplorerInstall")  
   
 ## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>從命令列安裝 Visual Studio SDK  
- 您也可以使用從命令列安裝的 VSSDK **/InstallSelectableItems**切換 Visual Studio 安裝程式。 如需有關使用使用安裝程式的命令列參數的詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio 2015](../install/install-visual-studio-2015.md)。  
+ 您可以使用 **/InstallSelectableItems** 參數搭配 Visual Studio 安裝程式，從命令列安裝 VSSDK。 如需搭配安裝程式使用命令列參數的詳細資訊，請參閱 [安裝 Visual Studio 2015](../install/install-visual-studio-2015.md)。  
   
- 若要安裝的 VSSDK 以無訊息模式使用 Visual Studio 2015 Community 安裝程式的方法如下：  
+ 以下是如何使用 Visual Studio 2015 社區安裝程式以無訊息方式安裝 VSSDK：  
   
 ```  
 vs_community.exe /s /installSelectableItems VS_SDK_GROUPV1  
 ```  
   
- 請注意，您必須使用符合您已安裝 Visual Studio 版本的 Visual Studio 安裝程式。 例如，如果您有在電腦上安裝的 Visual Studio Enterprise，您必須執行 Visual Studio Enterprise 安裝程式 (vs_enterprise.exe)。
+ 請注意，您必須使用符合已安裝之 Visual Studio 版本的 Visual Studio 安裝程式。 例如，如果您的電腦上已安裝 Visual Studio Enterprise，則必須執行 Visual Studio Enterprise 安裝程式 ( # A0) 。

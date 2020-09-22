@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f3f556a039ab131a563a90010112009b39f4c981
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445770"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838842"
 ---
 # <a name="collecting-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>使用程式碼剖析工具取樣方法收集服務的應用程式統計資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "63445770"
   
 ## <a name="common-tasks"></a>一般工作  
   
-|工作|相關內容|  
+|Task|相關內容|  
 |----------|---------------------|  
 |**將分析工具附加至 .NET 服務**|-   [如何：將分析工具附加至 .NET 服務以收集應用程式統計資料](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|  
 |**新增階層互動資料**|-   [收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
@@ -36,7 +36,7 @@ ms.locfileid: "63445770"
   
 ### <a name="profiling-windows-services"></a>分析 Windows 服務  
   
-|工作|相關內容|  
+|Task|相關內容|  
 |----------|---------------------|  
 |**使用檢測方法進行分析**|-   [使用檢測收集詳細計時資料](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line.md)|  
 |**分析 .NET 記憶體配置和記憶體回收**|-   [收集 .NET 記憶體資料](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
@@ -44,7 +44,7 @@ ms.locfileid: "63445770"
   
 ### <a name="profiling-by-using-the-sampling-method"></a>使用取樣方法進行分析  
   
-|工作|相關內容|  
+|Task|相關內容|  
 |----------|---------------------|  
 |**分析獨立 (用戶端) 應用程式**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
 |**分析 ASP.NET Web 應用程式**|-   [使用取樣收集應用程式統計資料](/visualstudio/profiling/collecting-concurrency-data-for-an-aspnet-web-application?view=vs-2015)|  

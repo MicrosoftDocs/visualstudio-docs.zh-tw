@@ -1,5 +1,5 @@
 ---
-title: 重新整理應用程式 (JavaScript) |Microsoft Docs
+title: " (JavaScript) 重新整理應用程式 |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,18 +20,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5b8be97212f4510002a78e6565fc9884930db89
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446098"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839007"
 ---
 # <a name="refresh-an-app-javascript"></a>重新整理應用程式 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-適用於 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
+適用于 Windows 和 Windows Phone] (。/Image/windows_and_phone_content.png "windows_and_phone_content" )   
   
- 您可以進行變更您的程式碼，而您在偵錯，然後重新整理選擇使用 JavaScript 的市集應用程式**重新整理 Windows 應用程式**按鈕**偵錯**工具列。 選擇此按鈕隨即會重新載入應用程式，而不需要停止並重新開始偵錯工具。 重新整理功能可讓您修改 HTML、CSS 和 JavaScript 程式碼，並且快速查看結果。 Windows 市集和 Windows Phone 市集應用程式都支援此功能。  
+ 您可以在進行偵錯工具時對程式碼進行變更，然後選擇 [**調試**程式] 工具列上的 [重新整理**Windows 應用程式**] 按鈕，以使用 JavaScript 重新整理商店應用程式。 選擇此按鈕隨即會重新載入應用程式，而不需要停止並重新開始偵錯工具。 重新整理功能可讓您修改 HTML、CSS 和 JavaScript 程式碼，並且快速查看結果。 Windows 市集和 Windows Phone 市集應用程式都支援此功能。  
   
  重新整理不會維護您的應用程式狀態，也不會將下列變更反映給應用程式：  
   
@@ -56,7 +56,7 @@ ms.locfileid: "63446098"
   
 2. 在 Visual Studio 中開啟範本，並選取偵錯目標。  
   
-     如果 Windows Phone 專案是您目前的啟始專案，請選取偵錯目標的 Windows Phone 模擬器。 否則，請選取**模擬器**或是**本機**。  
+     如果 Windows Phone 專案是您目前的啟始專案，請選取偵錯目標的 Windows Phone 模擬器。 否則，請 **選取 [** 模擬器] 或 [ **本機電腦**]。  
   
      ![選取偵錯目標清單](../debugger/media/js-select-target.png "JS_Select_Target")  
   
@@ -64,7 +64,7 @@ ms.locfileid: "63446098"
   
 4. 切換至 Visual Studio。 (按 F12。)  
   
-5. 在 [**方案總管] 中**，請在**頁面** > **家用**資料夾中，開啟 home.html。  
+5. 在**方案總管**的**pages**  >  **主**資料夾中，開啟 home.html。  
   
 6. 變更頁面標題文字  
   
@@ -78,9 +78,9 @@ ms.locfileid: "63446098"
     Hello!  
     ```  
   
-7. 按一下 **重新整理 Windows 應用程式**按鈕時，哪一個看起來像這樣：![重新整理 Windows 應用程式 按鈕](../debugger/media/js-refresh.png "JS_Refresh")。 (或按 F4)。  
+7. 按一下 [重新整理 **windows 應用程式** ] 按鈕，如下所示： [重新整理 ![windows 應用程式] 按鈕](../debugger/media/js-refresh.png "JS_Refresh")。 (或按 F4)。  
   
 8. 切換至應用程式。 應用程式隨即重新載入而不重新啟動偵錯工具，且會顯示新的頁面標題。  
   
 ## <a name="see-also"></a>另請參閱  
- [快速入門：對 HTML 和 CSS 進行偵錯](../debugger/quickstart-debug-html-and-css.md)
+ [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

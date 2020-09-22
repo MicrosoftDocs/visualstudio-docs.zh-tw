@@ -1,5 +1,5 @@
 ---
-title: 實作和註冊連接埠提供者 |Microsoft Docs
+title: 執行和註冊埠供應商 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,21 +12,21 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 377aa88df71fd0d3c42745fe2d3ce3b648191aa4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430252"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839151"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>實作和註冊連接埠提供者
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-連接埠提供者的角色是追蹤，並提供連接埠，進而管理程序。 您必須建立一個連接埠時，連接埠提供者具現化 CoCreate 使用連接埠提供者的 GUID （連接埠提供者選取的使用者或專案系統所指定的連接埠提供者，將會使用工作階段的偵錯管理員 [SDM]）。 會接著呼叫 SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)以查看是否可以加入任何連接埠。 如果可以加入一個連接埠，藉由呼叫要求新的連接埠[下列](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)並將其傳遞[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)描述連接埠。 `AddPort` 會傳回新的連接埠，由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面。  
+埠供應商的角色是追蹤和提供埠，進而管理進程。 在需要建立埠時，會使用 CoCreate 搭配埠供應商的 GUID 來具現化埠供應商 (會話 debug manager [SDM] 會使用使用者選取的埠供應商或專案系統所指定的埠供應商) 。 SDM 接著會呼叫 [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) ，以查看是否可以加入任何埠。 如果可以新增埠，則會藉由呼叫 [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) 來要求新的埠，並將描述該埠的 [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) 傳遞給它。 `AddPort` 會傳回 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 介面所代表的新埠。  
   
 ## <a name="discussion"></a>討論  
- 依序相關聯的機器或偵錯伺服器連接埠供應商提供的被建立連接埠。 伺服器可以列舉透過其通訊埠供應商[EnumPortSuppliers](../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)方法，以及連接埠提供者可以列舉它的連接埠，透過[EnumPorts](../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)方法。  
+ 埠是由埠供應商所建立，然後再與電腦或 debug server 建立關聯。 伺服器可以透過[EnumPortSuppliers](../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md) 方法列舉其埠供應商，而埠供應商可以透過 [EnumPorts](../../extensibility/debugger/reference/idebugportsupplier2-enumports.md) 方法來列舉其埠。  
   
- 除了一般的 COM 註冊、 連接埠提供者必須將自己登錄與 Visual Studio 將其 CLSID 和名稱放在特定的登錄位置。 偵錯的 SDK 協助程式函式呼叫`SetMetric`處理這項作業： 它會呼叫一次進行註冊，因此每個項目：  
+ 除了一般的 COM 註冊之外，埠供應商必須將其 CLSID 和名稱放在特定的登錄位置，以向 Visual Studio 註冊本身。 偵測到的偵錯工具 SDK helper 函式 `SetMetric` 會處理這個麻煩：每個要註冊的專案都會呼叫一次，因此：  
   
 ```cpp#  
 SetMetric(metrictypePortSupplier,  
@@ -43,7 +43,7 @@ SetMetric(metrictypePortSupplier,
           NULL);  
 ```  
   
- 連接埠提供者取消註冊本身呼叫`RemoveMetric`（另一個偵錯的 SDK 協助程式函式） 一次註冊，因此每個項目：  
+ 埠供應商藉由呼叫 (另一個偵錯工具協助程式函式來取消 `RemoveMetric` 註冊，以針對每個已註冊的專案) 一次，因此：  
   
 ```cpp#  
 RemoveMetric(metrictypePortSupplier,  
@@ -57,11 +57,11 @@ RemoveMetric(metrictypePortSupplier,
 ```  
   
 > [!NOTE]
-> [SDK 協助程式進行偵錯](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)`SetMetric`和`RemoveMetric`dbgmetric.h 中定義，並編譯成 ad2de.lib 的靜態函數。 `metrictypePortSupplier`， `metricCLSID`，和`metricName`dbgmetric.h 中也會定義協助程式。  
+> [用於偵錯工具的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` 和在 `RemoveMetric` dbgmetric 中定義的靜態函式，並編譯成 ad2de .lib。 `metrictypePortSupplier`、 `metricCLSID` 和協助程式 `metricName` 也會在 dbgmetric 中定義。  
   
- 連接埠提供者可以透過方法提供它的名稱和 GUID [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)並[GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)分別。  
+ 埠供應商可以分別透過 [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) 和 [GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)方法提供其名稱和 GUID。  
   
 ## <a name="see-also"></a>另請參閱  
- [實作連接埠提供者](../../extensibility/debugger/implementing-a-port-supplier.md)   
- [偵錯的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
+ [執行埠供應商](../../extensibility/debugger/implementing-a-port-supplier.md)   
+ [用於偵錯工具的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [連接埠提供者](../../extensibility/debugger/port-suppliers.md)

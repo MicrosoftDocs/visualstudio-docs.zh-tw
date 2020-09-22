@@ -13,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 79fb60f05d12b1105febc12a218b1f36ee498deb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a06a6885c3d0858f60c8de48dd61054534aad40f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248730"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809042"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>使用 C 在 Visual Studio 中建立 Windows Forms 應用程式\#
 
@@ -164,6 +164,6 @@ ms.locfileid: "88248730"
 
 ## <a name="see-also"></a>另請參閱
 
-* [其他 c # 教學課程](/visualstudio/get-started/csharp/)
-* [Visual Basic 教學課程](/visualstudio/get-started/visual-basic/)
+* [其他 c # 教學課程](../get-started/csharp/index.yml)
+* [Visual Basic 教學課程](../get-started/visual-basic/index.yml)
 * [C + + 教學課程](/cpp/get-started/tutorial-console-cpp)

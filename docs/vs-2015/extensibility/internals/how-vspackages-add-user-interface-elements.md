@@ -1,5 +1,5 @@
 ---
-title: Vspackage 如何新增使用者介面項目 |Microsoft Docs
+title: Vspackage 如何新增消費者介面元素 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,32 +13,32 @@ caps.latest.revision: 61
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 553c502c100cbb6ed4ae249096af408af14423b4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436116"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839226"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage 如何新增使用者介面項目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-VSPackage 可以加入使用者介面 (UI) 項目，例如功能表、 工具列和工具視窗，透過.vsct 檔的 Visual studio。  
+VSPackage 可以新增使用者介面 (UI) 專案，例如功能表、工具列和工具視窗），透過 .vsct 檔案來 Visual Studio。  
   
- 您可以尋找在 UI 項目中的設計指導方針[Visual Studio 使用者經驗指導方針](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)。  
+ 您可以在 [Visual Studio 使用者經驗指導方針](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)中找到 UI 元素的設計指導方針。  
   
-## <a name="the-visual-studio-command-table-architecture"></a>Visual Studio 命令表架構  
- 如所述，命令資料表架構支援前述的架構原則。 抽象概念，資料結構和工具，命令資料表架構背後的原則如下所示：  
+## <a name="the-visual-studio-command-table-architecture"></a>Visual Studio 命令資料表架構  
+ 如上所述，命令資料表架構支援上述架構原則。 命令資料表架構的抽象概念、資料結構和工具背後的原則如下：  
   
-- 有三種基本項目： 功能表、 命令和群組。 功能表可以公開在 UI 中，為功能表、 子功能表、 工具列或工具視窗。 命令是使用者可以執行在 IDE 中，而且它們可以公開為功能表項目、 按鈕、 清單方塊或其他控制項的程序。 群組是功能表和命令的容器。  
+- 有三種基本的專案：功能表、命令和群組。 您可以在 UI 中將功能表公開為功能表、子功能表、工具列或工具視窗。 命令是使用者可以在 IDE 中執行的程式，且可以公開為功能表項目、按鈕、清單方塊或其他控制項。 群組是適用于功能表和命令的容器。  
   
-- 描述項目、 其優先權，相對於其他項目，並修改其行為的旗標的定義被指定每個項目。  
+- 每個專案都是由描述專案的定義、其相對於其他專案的優先順序，以及修改其行為的旗標所指定。  
   
-- 每個項目都有描述項目的父代的位置。 項目可以有多個父代，使它可以出現在 UI 中的多個位置。  
+- 每個專案都有一個描述專案父系的位置。 一個專案可以有多個父系，因此它可以出現在 UI 中的多個位置。  
   
-     每個命令都必須有群組作為其父代，即使它是唯一的子系，該群組中。 每個標準功能表也必須有父群組。 工具列和工具視窗做為其本身的父系。 群組可以有其父代的 Visual Studio 功能表列中，或任何功能表、 工具列或工具視窗。  
+     每個命令都必須有群組作為其父系，即使它是該群組中唯一的子系。 每個標準功能表也都必須有父群組。 工具列和工具視窗作為其本身的父系。 群組可以有主要 Visual Studio 功能表列或任何功能表、工具列或工具視窗的父系。  
   
-### <a name="how-items-are-defined"></a>如何定義項目  
- .Vsct 檔案是以 XML 格式。 .Vsct 檔會定義封裝的 UI 項目，並判斷這些項目出現在 IDE 中的位置。 每個功能表、 群組或封裝中的命令會先指派的 GUID 和識別碼在`Symbols`一節。 其餘的.vsct 檔案、 每個功能表、 命令和群組來識別其 GUID 和 ID 的組合。 下列範例示範典型`Symbols`一節所產生的 Visual Studio Package 範本時**功能表命令**在範本中選取。  
+### <a name="how-items-are-defined"></a>專案的定義方式  
+ ..Vsct 檔案會以 XML 格式格式化。 .Vsct 檔案會定義封裝的 UI 元素，並決定這些專案在 IDE 中的顯示位置。 套件中的每個功能表、群組或命令都會先指派一節中的 GUID 和識別碼 `Symbols` 。 在 .vsct 檔案的其餘部分中，每個功能表、命令和群組都是以其 GUID 和 ID 組合來識別。 下列範例顯示在 `Symbols` 範本中選取 **功能表命令** 時，Visual Studio 套件範本所產生的一般區段。  
   
 ```xml  
 <Symbols>  
@@ -62,42 +62,42 @@ VSPackage 可以加入使用者介面 (UI) 項目，例如功能表、 工具列
 </Symbols>  
 ```  
   
- 最上層元素`Symbols`一節[GuidSymbol 元素](../../extensibility/guidsymbol-element.md)。 `GuidSymbol` 元素會對應至 Guid ide 用來識別封裝和其元件部分的名稱。  
+ 區段的最上層元素 `Symbols` 是 [GuidSymbol 元素](../../extensibility/guidsymbol-element.md)。 `GuidSymbol` 專案會將名稱對應至 IDE 用來識別封裝及其元件部分的 Guid。  
   
 > [!NOTE]
-> 在 Visual Studio 封裝範本所自動產生的 Guid。 您也可以按一下來建立唯一的 GUID**建立 GUID**上**工具**功能表。  
+> Guid 會由 Visual Studio 套件範本自動產生。 您也可以按一下 [**工具**] 功能表上的 [**建立 guid** ]，以建立唯一的 guid。  
   
- 第一個`GuidSymbol`項目，「 guid [PackageName] 套件 」，是封裝本身的 GUID。 這是由 Visual Studio 用來載入封裝的 GUID。 一般而言，它並沒有子項目。  
+ 第一個 `GuidSymbol` 元素 "guid [PackageName] Pkg" 是封裝本身的 guid。 這是 Visual Studio 用來載入封裝的 GUID。 一般而言，它沒有子項目。  
   
- 依照慣例，功能表和命令會在第二個分組`GuidSymbol`項目，「 guid [PackageName] CmdSet 」，和點陣圖下是第三個`GuidSymbol`元素中，「 guidImages"。 您沒有遵循這個慣例，但每個功能表、 群組、 命令和點陣圖必須是子系`GuidSymbol`項目。  
+ 依照慣例，功能表和命令會在第二個 `GuidSymbol` 元素（"guid [PackageName] CmdSet"）底下分組，而點陣圖位於第三個 `GuidSymbol` 元素（"guidImages"）底下。 您不需要遵循此慣例，但每個功能表、群組、命令和點陣圖都必須是元素的子系 `GuidSymbol` 。  
   
- 在第二個`GuidSymbol`項目，這代表套件命令集，就是幾個`IDSymbol`項目。 每個[IDSymbol 元素](../../extensibility/idsymbol-element.md)名稱對應到數值，並可能代表功能表、 群組或命令的命令集的一部分。 `IDSymbol`中，第三個項目`GuidSymbol`可能做為命令圖示的項目代表點陣圖。 因為必須是唯一的應用程式沒有相同的兩個子系中的 GUID/識別碼組`GuidSymbol`項目可能會有相同的值。  
+ 第二個 `GuidSymbol` 元素（代表封裝命令集）是數個 `IDSymbol` 元素。 每個 [IDSymbol 元素](../../extensibility/idsymbol-element.md) 都會將名稱對應至數值，且可能代表屬於命令集一部分的功能表、群組或命令。 `IDSymbol`第三個元素中的元素 `GuidSymbol` 代表可作為命令圖示的點陣圖。 因為 GUID/識別碼組在應用程式中必須是唯一的，所以相同元素的兩個子系都不能 `GuidSymbol` 有相同的值。  
   
-### <a name="menus-groups-and-commands"></a>功能表、 群組和命令  
- 當功能表、 群組或命令的 GUID 和識別碼時，它可以加入 IDE。 每個 UI 項目必須具有下列動作：  
+### <a name="menus-groups-and-commands"></a>功能表、群組和命令  
+ 當功能表、群組或命令具有 GUID 和識別碼時，可以將它新增至 IDE。 每個 UI 元素都必須有下列專案：  
   
-- A`guid`符合名稱的屬性`GuidSymbol`之下定義的 UI 元素的項目。  
+- 符合在其 `guid` `GuidSymbol` 下定義 UI 元素之元素名稱的屬性。  
   
-- `id`符合名稱的相關聯的屬性`IDSymbol`項目。  
+- `id`符合相關聯元素名稱的屬性 `IDSymbol` 。  
   
-     共同`guid`並`id`屬性撰寫*簽章*UI 項目。  
+     `guid`和屬性會一起 `id` 撰寫 UI 元素*signature*的簽章。  
   
-- A`priority`屬性來決定其父功能表或群組中的 UI 元素的位置。  
+- `priority`屬性，決定 UI 元素在其父功能表或群組中的位置。  
   
-- A[父元素](../../extensibility/parent-element.md)具有`guid`和`id`指定父功能表或群組的簽章的屬性。  
+- 具有[Parent Element](../../extensibility/parent-element.md) `guid` `id` 指定父功能表或群組簽章之和屬性的父元素。  
   
-#### <a name="menus"></a>Menus  
- 每個功能表指[Menu Element](../../extensibility/menu-element.md)中`Menus`一節。 必須有功能表`guid`， `id`，並`priority`屬性，和`Parent`項目，也下列的其他屬性和子系：  
+#### <a name="menus"></a>功能表  
+ 每個功能表都會定義為區段中的 [功能表](../../extensibility/menu-element.md) 項 `Menus` 。 功能表必須有 `guid` 、 `id` 和 `priority` 屬性，以及專案 `Parent` ，以及下列其他屬性和子系：  
   
-- A`type`指定功能表是否應該出現在 IDE 中，為一種功能表或工具列中的屬性。  
+- `type`屬性，指定功能表是否應在 IDE 中顯示為一種功能表或工具列。  
   
-- A [Strings 元素](../../extensibility/strings-element.md)，其中包含[ButtonText 元素](../../extensibility/buttontext-element.md)，在 IDE 中，指定功能表的標題和[CommandName 元素](../../extensibility/commandname-element.md)，以指定的名稱。用於**命令**來存取功能表的視窗。  
+- 包含[ButtonText](../../extensibility/buttontext-element.md)專案的[字串](../../extensibility/strings-element.md)專案，這個專案會指定 IDE 中的功能表標題，以及[CommandName 元素](../../extensibility/commandname-element.md)，以指定**命令**視窗中用來存取功能表的名稱。  
   
-- 選擇性旗標。 A [Command Flag 元素](../../extensibility/command-flag-element.md)可能出現在功能表定義中，以變更其外觀或行為在 IDE 中的。  
+- 選擇性旗標。 功能表定義中可能會出現一個 [命令旗標元素](../../extensibility/command-flag-element.md) ，以變更其在 IDE 中的外觀或行為。  
   
-  每個`Menu`項目都必須有群組作為其父代，除非它是可停駐的項目，例如工具列。 可停駐功能表是其本身的父系。 如需功能表和值`type`屬性，請參閱[ 功能表項目](../../extensibility/menu-element.md)文件。  
+  每個 `Menu` 元素都必須有一個群組作為其父系，除非它是可停駐的元素，例如工具列。 可停駐的功能表是本身的父系。 如需有關屬性之功能表和值的詳細資訊 `type` ，請參閱 [功能表](../../extensibility/menu-element.md) 項檔。  
   
-  下列範例顯示旁會出現在 Visual Studio 功能表列的功能表**工具**功能表。  
+  下列範例顯示出現在 [ **工具** ] 功能表旁邊 Visual Studio 功能表列上的功能表。  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -112,9 +112,9 @@ id="TopLevelMenu" priority="0x700" type="Menu">
 ```  
   
 #### <a name="groups"></a>群組  
- 「 群組 」 是定義中的項目`Groups`.vsct 檔的區段。 群組是只是容器。 它們不會出現在 IDE 中除了功能表上的分隔線。 因此，[群組項目](../../extensibility/group-element.md)定義只能由其簽章、 優先權和父代。  
+ 群組是定義于 .vsct 檔案區段中的專案。 `Groups` 群組只是容器。 它們不會出現在 IDE 中，除了功能表上的分隔線之外。 因此， [Group 元素](../../extensibility/group-element.md) 只會依據其簽章、優先順序和父系來定義。  
   
- 群組可以有父功能表中，另一個群組，或本身。 不過，父系通常是功能表或工具列。 在前面範例中的功能表是子系`IDG_VS_MM_TOOLSADDINS`群組與該群組是在 Visual Studio 功能表列的子系。 在下列範例中的群組是在先前的範例功能表的子系。  
+ 群組可以有功能表、另一個群組或本身做為父系。 不過，父系通常是功能表或工具列。 先前範例中的功能表是群組的子系 `IDG_VS_MM_TOOLSADDINS` ，而該群組是 Visual Studio 功能表列的子系。 下列範例中的群組是先前範例中功能表的子系。  
   
 ```  
  <Group guid="guidTopLevelMenuCmdSet" id="MyMenuGroup"  
@@ -123,7 +123,7 @@ priority="0x0600">
  </Group>  
 ```  
   
- 因為它是功能表的一部分，此群組通常會包含命令。 不過，它也可以包含其他功能表。 這是定義子功能表的方式，如下列範例所示。  
+ 因為它是功能表的一部分，所以此群組通常會包含命令。 不過，它也可以包含其他功能表。 這是子功能表的定義方式，如下列範例所示。  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet" id="SubMenu"  
@@ -137,12 +137,12 @@ priority="0x0100" type="Menu">
 ```  
   
 #### <a name="commands"></a>命令  
- 提供給 IDE 的命令都會定義為[Button Element](../../extensibility/button-element.md)或[Combo 元素](../../extensibility/combo-element.md)。 若要出現在功能表或工具列上，命令必須群組做為其父系。  
+ 提供至 IDE 的命令會定義為 [按鈕元素](../../extensibility/button-element.md) 或 [組合元素](../../extensibility/combo-element.md)。 若要在功能表或工具列上顯示，命令必須以群組作為其父系。  
   
 ##### <a name="buttons"></a>按鈕  
- 中所定義的按鈕`Buttons`一節。 任何功能表項目、 按鈕或其他項目，使用者按一下來執行單一命令，會被視為一個按鈕。 某些按鈕類型也可以包含清單功能。 按鈕會有相同的必要和選擇性屬性，有功能表，也會造成[Icon 元素](../../extensibility/icon-element.md)，指定的 GUID 和 ID 的點陣圖，表示在 IDE 中的按鈕。 如需按鈕和其屬性的詳細資訊，請參閱[Buttons 元素](../../extensibility/buttons-element.md)文件。  
+ 按鈕會在區段中定義 `Buttons` 。 使用者按一下以執行單一命令的任何功能表項目、按鈕或其他元素都會被視為按鈕。 某些按鈕類型也可以包含清單功能。 按鈕具有相同的必要和選擇性屬性，該功能表具有相同的必要和選擇性屬性，也可以有 [圖示元素](../../extensibility/icon-element.md) ，以指定表示 IDE 中之按鈕的點陣圖 GUID 和識別碼。 如需按鈕和其屬性的詳細資訊，請參閱 [按鈕元素](../../extensibility/buttons-element.md) 檔集。  
   
- 下列範例中的按鈕是在較早的範例中，群組的子系，並會顯示在 IDE 中，為該群組的父功能表上的功能表項目。  
+ 下列範例中的按鈕是先前範例中群組的子系，並在 IDE 中顯示為該群組之父功能表上的功能表項目。  
   
 ```  
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">  
@@ -155,14 +155,14 @@ priority="0x0100" type="Menu">
 </Button>  
 ```  
   
-##### <a name="combos"></a>Combos  
- 中所定義的 combos`Combos`一節。 每個`Combo`項目代表在 IDE 中的下拉式清單方塊。 清單方塊可能會或可能不是可由使用者，根據的值寫入`type`屬性的組合。 Combos 具有相同的項目和按鈕的行為，也可以有下列額外屬性：  
+##### <a name="combos"></a>組合  
+ Combos 是在 `Combos` 一節中定義。 每個 `Combo` 元素都代表 IDE 中的下拉式清單方塊。 視下拉式方塊的屬性值而定，清單方塊可能會或可能無法由使用者寫入 `type` 。 Combos 具有按鈕具有的相同元素和行為，而且也可以具有下列額外屬性：  
   
-- A`defaultWidth`指定像素寬度的屬性。  
+- `defaultWidth`指定圖元寬度的屬性。  
   
-- `idCommandList`屬性，指定包含清單方塊中顯示的項目清單。 命令清單必須在同一個宣告`GuidSymbol`包含下拉式方塊的節點。  
+- `idCommandList`屬性，指定包含清單方塊中顯示之專案的清單。 命令清單必須在包含組合的相同節點中宣告 `GuidSymbol` 。  
   
-  下列範例會定義下拉式項目。  
+  下列範例會定義組合元素。  
   
 ```xml  
 <Combos>  
@@ -185,34 +185,34 @@ priority="0x0100" type="Menu">
 ```  
   
 ##### <a name="bitmaps"></a>點陣圖  
- 將的圖示一起顯示的命令必須包含`Icon`項目，是指點陣圖，使用其 GUID 和 id。 每個點陣圖指[點陣圖項目](../../extensibility/bitmap-element.md)在`Bitmaps`一節。 唯一必要的屬性`Bitmap`會定義`guid`和`href`，以指向原始程式檔。 如果原始程式檔的資源區域中， **usedList**屬性也是必要的若要列出可用的映像，在區域中。 如需詳細資訊，請參閱 <<c0> [ 點陣圖項目](../../extensibility/bitmap-element.md)文件。  
+ 將與圖示一起顯示的命令，必須包含 `Icon` 使用其 GUID 和 ID 參考點陣圖的元素。 每個點陣圖都會定義為區段中的 [點陣圖元素](../../extensibility/bitmap-element.md) `Bitmaps` 。 定義的唯一必要屬性 `Bitmap` 是 `guid` 和 `href` ，指向原始程式檔。 如果來源檔案是資源區，則也需要 **usedList** 屬性，以列出帶狀中的可用映射。 如需詳細資訊，請參閱 [點陣圖元素](../../extensibility/bitmap-element.md) 檔集。  
   
-### <a name="parenting"></a>父代  
- 下列規則可管理項目可以呼叫另一個項目，做為其父系的方式。  
+### <a name="parenting"></a>育兒  
+ 下列規則會管理專案如何呼叫另一個專案做為其父代。  
   
-|項目|在本節中的命令資料表的定義|可能包含 (當做父代，或放置在`CommandPlacements` 區段中，或兩者)|可能包含 （又稱為父代）|  
+|項目|在命令資料表的這個區段中定義|可能包含 (做為父系，或在區段中放置 `CommandPlacements` ，或兩者) |可能包含 (稱為父) |  
 |-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
-|群組|[群組項目](../../extensibility/groups-element.md)，IDE、 其他 Vspackage|功能表中，群組中，項目本身|功能表、 群組和命令|  
-|功能表|[功能表項目](../../extensibility/menus-element.md)，IDE、 其他 Vspackage|1 到*n*群組|0 表示*n*群組|  
-|工具列|[功能表項目](../../extensibility/menus-element.md)，IDE、 其他 Vspackage|項目本身|0 表示*n*群組|  
-|功能表項目|[按鈕項目](../../extensibility/buttons-element.md)，IDE、 其他 Vspackage|1 到*n*群組，本身的項目|-0 *n*群組|  
-|按鈕|[按鈕項目](../../extensibility/buttons-element.md)，IDE、 其他 Vspackage|1 到*n*群組，本身的項目||  
-|下拉式方塊|[Combos 元素](../../extensibility/combos-element.md)，IDE、 其他 Vspackage|1 到*n*群組，本身的項目||  
+|Group|[Groups 元素](../../extensibility/groups-element.md)、IDE、其他 vspackage|功能表、群組、專案本身|功能表、群組和命令|  
+|功能表|Menu[元素](../../extensibility/menus-element.md)、IDE、其他 vspackage|1到 *n* 個群組|0到 *n* 個群組|  
+|工具列|Menu[元素](../../extensibility/menus-element.md)、IDE、其他 vspackage|專案本身|0到 *n* 個群組|  
+|功能表項目|[按鈕元素](../../extensibility/buttons-element.md)、IDE、其他 vspackage|1到 *n* 個群組，專案本身|-0 到 *n* 個群組|  
+|按鈕|[按鈕元素](../../extensibility/buttons-element.md)、IDE、其他 vspackage|1到 *n* 個群組，專案本身||  
+|組合圖|[Combos 元素](../../extensibility/combos-element.md)、IDE、其他 vspackage|1到 *n* 個群組，專案本身||  
   
-### <a name="menu-command-and-group-placement"></a>功能表、 命令和群組放置  
- 功能表、 群組或命令可以出現在 IDE 中的多個位置中。 若項目才會出現在多個位置，它必須新增至`CommandPlacements`做為區段[CommandPlacement 元素](../../extensibility/commandplacement-element.md)。 任何功能表、 群組或命令，都可以新增為命令的位置。 不過，工具列無法定位，以這種方式因為它們不能出現在多個內容相關性的位置。  
+### <a name="menu-command-and-group-placement"></a>功能表、命令和群組放置  
+ 功能表、群組或命令可以出現在 IDE 中的一個以上的位置。 若要讓專案出現在多個位置，則必須將它加入至區段中， `CommandPlacements` 做為 [CommandPlacement 元素](../../extensibility/commandplacement-element.md)。 任何功能表、群組或命令都可以新增為命令位置。 不過，工具列無法以這種方式定位，因為它們不能出現在多個內容相關的位置。  
   
- 命令位置有`guid`， `id`，和`priority`屬性。 GUID 和 ID 必須符合位於與項目。 `priority`屬性會控管的項目與其他項目有關的位置。 當 IDE 合併兩個或多個具有相同優先順序的項目時，因為 IDE 並不保證，封裝會讀取資源的相同順序每當建置套件時，其位置會定義。  
+ 命令放置具有 `guid` 、 `id` 和 `priority` 屬性。 GUID 和識別碼必須符合放置的專案。 `priority`屬性會控制與其他專案有關的專案位置。 當 IDE 合併兩個或多個具有相同優先順序的專案時，它們的位置會是未定義的，因為 IDE 不保證每次建立封裝時都會以相同的順序讀取封裝資源。  
   
- 如果功能表或群組出現在多個位置，該功能表或群組的所有子系會出現在每個執行個體中。  
+ 如果功能表或群組出現在多個位置，則該功能表或群組的所有子系都會出現在每個實例中。  
   
-## <a name="command-visibility-and-context"></a>命令的可見性和內容  
- 當安裝多個的 Vspackage 時，不易功能表、 功能表項目和工具列可能會擾亂 IDE。 若要避免這個問題，您可以控制個別的 UI 項目的可見性，使用*可視性約束*和命令旗標。  
+## <a name="command-visibility-and-context"></a>命令可見度和內容  
+ 安裝多個 Vspackage 時，功能表、功能表項目和工具列的這麼大量可能會造成 IDE 混亂。 若要避免這個問題，您可以使用 *可見度條件約束* 和命令旗標來控制個別 UI 元素的可見度。  
   
-##### <a name="visibility-constraints"></a>可見性的條件約束  
- 可見性的條件約束設定為[VisibilityItem 元素](../../extensibility/visibilityitem-element.md)在`VisibilityConstraints`一節。 可見性的條件約束會定義特定的 UI 內容，目標項目為可見。 只有其中一個已定義的內容使用中時，會顯示功能表或包含在這一節中的命令。 如果這一節中未參考的功能表或命令，就永遠預設為可見。 本節不適用於群組中。  
+##### <a name="visibility-constraints"></a>可見度條件約束  
+ 可見度條件約束會設定為區段中的 [VisibilityItem 元素](../../extensibility/visibilityitem-element.md) `VisibilityConstraints` 。 可見度條件約束會定義可顯示目標專案的特定 UI 內容。 只有在其中一個已定義的內容為作用中時，才會顯示此區段中包含的功能表或命令。 如果未在此區段中參考功能表或命令，預設一律會顯示該功能表或命令。 本節不適用群組。  
   
- `VisibilityItem` 項目必須有三個屬性，如下所示：`guid`並`id`目標 UI 項目和`context`。 `context`屬性會指定當目標項目會顯示，並接受任何有效的 UI 內容，做為其值。 Visual Studio 的 UI 內容常數屬於<xref:Microsoft.VisualStudio.VSConstants>類別。 每個`VisibilityItem`項目可能需要只有一個內容值。 若要套用的第二個內容，建立第二個`VisibilityItem`指向相同的項目，如下列範例所示的項目。  
+ `VisibilityItem` 元素必須有三個屬性，如下所示 `guid` ： `id` 目標 UI 元素的和和 `context` 。 `context`屬性會指定何時會顯示目標專案，並接受任何有效的 UI 內容做為其值。 Visual Studio 的 UI 內容常數是類別的成員 <xref:Microsoft.VisualStudio.VSConstants> 。 每個 `VisibilityItem` 元素只能採用一個內容值。 若要套用第二個內容，請建立指向相同專案的第二個 `VisibilityItem` 元素，如下列範例所示。  
   
 ```xml  
 <VisibilityConstraints>  
@@ -226,80 +226,80 @@ priority="0x0100" type="Menu">
 ```  
   
 ##### <a name="command-flags"></a>命令旗標  
- 下列的命令旗標可能會影響功能表和命令套用至可見的性。  
+ 下列命令旗標可能會影響所套用的功能表和命令的可見度。  
   
  AlwaysCreate  
- 功能表會建立，即使它有任何群組或按鈕。  
+ 即使沒有群組或按鈕，也會建立功能表。  
   
- 適用於： `Menu`  
+ 有效期限： `Menu`  
   
  CommandWellOnly  
- 適用於此旗標如果命令未出現在最上層功能表上，而且您想要使其可供其他的 shell 自訂項目，例如，繫結至索引鍵。 VSPackage 安裝之後，使用者可以自訂這些命令開啟**選項**] 對話方塊中，然後編輯 [命令位置底下**鍵盤環境**類別目錄。 不會影響快顯功能表、 工具列、 功能表控制站或子功能表上的位置。  
+ 如果命令未出現在最上層功能表，而您想要讓它可供其他 shell 自訂使用（例如，將它系結至索引鍵），請套用此旗標。 安裝 VSPackage 之後，使用者可以開啟 [ **選項** ] 對話方塊，然後在 [ **鍵盤環境** ] 類別下編輯命令位置，以自訂這些命令。 不會影響快捷方式功能表、工具列、功能表控制器或子功能表上的放置。  
   
- 適用於： `Button`， `Combo`  
+ 適用于： `Button` 、 `Combo`  
   
  DefaultDisabled  
- 根據預設，如果未載入 VSPackage 實作命令，或尚未呼叫 QueryStatus 方法，會停用的命令。  
+ 根據預設，如果未載入執行命令的 VSPackage，或尚未呼叫 QueryStatus 方法，則會停用此命令。  
   
- 適用於： `Button`， `Combo`  
+ 適用于： `Button` 、 `Combo`  
   
  DefaultInvisible  
- 根據預設，此命令為不可見的如果未載入 VSPackage 實作命令，或尚未呼叫 QueryStatus 方法。  
+ 根據預設，如果未載入執行命令的 VSPackage 或尚未呼叫 QueryStatus 方法，則不會出現此命令。  
   
- 應該要結合`DynamicVisibility`旗標。  
+ 應與旗標合併 `DynamicVisibility` 。  
   
- 適用於： `Button`， `Combo`， `Menu`  
+ 適用于： `Button` 、 `Combo` 、 `Menu`  
   
  DynamicVisibility  
- 使用 QueryStatus 方法或內容中包含的 GUID 也可以變更命令的可見性`VisibilityConstraints`一節。  
+ 您可以使用 QueryStatus 方法或區段中包含的內容 GUID 來變更命令的可見度 `VisibilityConstraints` 。  
   
- 適用於出現在功能表中，不會在工具列上的命令。 最上層工具列項目可以停用，但不是能隱藏 OLECMDF_INVISIBLE 旗標從 QueryStatus 方法傳回時。  
+ 適用于出現在功能表上的命令，而不是工具列上的命令。 從 QueryStatus 方法傳回 OLECMDF_INVISIBLE 旗標時，可以停用或隱藏最上層工具列專案。  
   
- 在功能表上，這個旗標也會指出，它應該會自動隱藏其成員隱藏時。 這個旗標通常會指派給子功能表，因為已經有最上層功能表的這個行為。  
+ 在功能表上，此旗標也會指出其成員隱藏時應自動隱藏。 此旗標通常會指派給子功能表，因為最上層功能表已經有此行為。  
   
- 應該要結合`DefaultInvisible`旗標。  
+ 應與旗標合併 `DefaultInvisible` 。  
   
- 適用於： `Button`， `Combo`， `Menu`  
+ 適用于： `Button` 、 `Combo` 、 `Menu`  
   
  NoShowOnMenuController  
- 如果具有此旗標的命令位於功能表控制站上，命令就不會出現在下拉式清單中。  
+ 如果有此旗標的命令位於功能表控制器上，則命令不會出現在下拉式清單中。  
   
- 適用於： `Button`  
+ 有效期限： `Button`  
   
- 如需有關命令旗標的詳細資訊，請參閱[Command Flag 元素](../../extensibility/command-flag-element.md)文件。  
+ 如需命令旗標的詳細資訊，請參閱 [命令旗標元素](../../extensibility/command-flag-element.md) 檔集。  
   
 ##### <a name="general-requirements"></a>一般需求  
- 您的命令必須通過一系列如下的測試，才能顯示並啟用：  
+ 您的命令必須先通過下列一系列的測試，才能顯示並啟用：  
   
-- 此命令是正確的位置。  
+- 命令的位置正確。  
   
 - `DefaultInvisible`未設定旗標。  
   
-- 父功能表或工具列為可見。  
+- 可以看見父功能表或工具列。  
   
-- 此命令不是不可見因為中的內容項目[VisibilityConstraints 元素](../../extensibility/visibilityconstraints-element.md)一節。  
+- 因為 [VisibilityConstraints 元素](../../extensibility/visibilityconstraints-element.md) 區段中的內容專案，所以不會隱藏此命令。  
   
-- VSPackage 實作的程式碼<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面顯示，並讓您的命令。 沒有介面程式碼會攔截它，並對其。  
+- 執行介面的 VSPackage 程式碼會 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 顯示並啟用您的命令。 沒有介面程式碼攔截它，並對其採取動作。  
   
-- 當使用者按一下您的命令時，它會變成受限於中概述的程序[路由演算法](../../extensibility/internals/command-routing-algorithm.md)。  
+- 當使用者按一下您的命令時，它會受限於 [路由演算法](../../extensibility/internals/command-routing-algorithm.md)中所述的程式。  
   
 ## <a name="calling-pre-defined-commands"></a>呼叫預先定義的命令  
- [UsedCommands 元素](../../extensibility/usedcommands-element.md)能夠存取其他 Vspackage 或 IDE 所提供的命令的 Vspackage。 若要這樣做，請建立[UsedCommand 元素](../../extensibility/usedcommand-element.md)具有的 GUID 和 ID 的命令，以使用。 這可確保命令將會載入由 Visual Studio 中，即使它不是目前的 Visual Studio 組態的一部分。 如需詳細資訊，請參閱 < [UsedCommand 元素](../../extensibility/usedcommand-element.md)。  
+ [UsedCommands 元素](../../extensibility/usedcommands-element.md)可讓 vspackage 存取其他 VSPACKAGE 或 IDE 所提供的命令。 若要這樣做，請建立 [UsedCommand 元素](../../extensibility/usedcommand-element.md) ，其中包含要使用之命令的 GUID 和識別碼。 這可確保 Visual Studio 會載入命令，即使它不是目前 Visual Studio 設定的一部分也一樣。 如需詳細資訊，請參閱 [UsedCommand 元素](../../extensibility/usedcommand-element.md)。  
   
-## <a name="interface-element-appearance"></a>介面項目外觀  
- 選取和定位命令元素的考量如下所示：  
+## <a name="interface-element-appearance"></a>介面元素外觀  
+ 選取和定位命令元素的考慮如下：  
   
-- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供許多的 UI 項目顯示的方式會視位置而定。  
+- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供許多以不同方式顯示的 UI 元素，視位置而定。  
   
-- 使用定義的 UI 項目`DefaultInvisible`旗標不會顯示在 IDE 中除非它是其中一個顯示它的 VSPackage 實作<xref:EnvDTE.IDTCommandTarget.QueryStatus%2A>方法，或與特定的 UI 內容，在相關聯`VisibilityConstraints`一節。  
+- 使用旗標定義的 UI 專案 `DefaultInvisible` 將不會顯示在 IDE 中，除非它是透過方法的 VSPackage 執行所顯示 <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> ，或與區段中的特定 UI 內容相關聯 `VisibilityConstraints` 。  
   
-- 可能不會顯示成功定位的命令。 這是因為 IDE 會自動隱藏或顯示一些命令，根據 VSPackage 具有 （或不具有） 的介面實作。 比方說，VSPackage 實作一些建置介面會自動顯示原因組建相關的功能表項目。  
+- 即使是已成功放置的命令也可能不會顯示。 這是因為根據 VSPackage (或尚未) 執行的介面，IDE 會自動隱藏或顯示某些命令。 例如，某些組建介面的 VSPackage 執行會自動顯示組建相關的功能表項目。  
   
-- 套用`CommandWellOnly`命令可以新增只能透過自訂的 UI 項目定義中的旗標表示。  
+- `CommandWellOnly`在 UI 專案的定義中套用旗標表示命令只能由自訂新增。  
   
-- IDE 在設計檢視中時，會顯示對話方塊時，才可能僅適用於某些 UI 內容，例如，命令。  
+- 只有當 IDE 在設計檢視中顯示對話方塊時，才可以在特定的 UI 內容中使用命令。  
   
-- 若要讓特定的 UI 項目要顯示在 IDE 中，您必須實作一個或多個介面，或撰寫一些程式碼。  
+- 若要使某些 UI 元素顯示在 IDE 中，您必須執行一或多個介面或撰寫一些程式碼。  
   
 ## <a name="see-also"></a>另請參閱  
- [擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)
+ [延伸功能表和命令](../../extensibility/extending-menus-and-commands.md)

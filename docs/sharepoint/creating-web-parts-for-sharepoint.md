@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3825ef7d2c1c90f63a90f5028063c74332543841
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4824c358f81f2cf757f037611ed70ba9b8935130
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015044"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740153"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>建立 SharePoint 的網頁元件
   藉由使用網頁元件，您可以使用瀏覽器來修改 SharePoint 網站網頁的內容、外觀和行為。 Web 元件是在 web 元件頁面內執行的伺服器端控制項：它們是出現在 SharePoint 網站上的網頁構成要素。 請參閱 [建立區塊： Web 組件](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))。
@@ -85,7 +85,7 @@ ms.locfileid: "86015044"
 
 - Visual web part 不直接支援 SharePoint server token，例如 $SPUrl。 如需詳細資訊，請參閱 [SharePoint 方案疑難排解](../sharepoint/troubleshooting-sharepoint-solutions.md)主題中的「沙箱化視覺效果中的權杖限制 Web 組件」。
 
-- 沙箱化方案中的視覺網頁元件偶爾會收到錯誤：「沙箱化程式碼執行要求被拒，因為沙箱化程式碼主機服務太忙碌而無法處理要求。」 如需有關此錯誤的詳細資訊，請參閱 [SharePoint 開發人員小組 Blog](https://blogs.msdn.microsoft.com/sharepointdev/2011/02/08/error-the-sandboxed-code-execution-request-was-refused-because-the-sandboxed-code-host-service-was-too-busy-to-handle-the-request-ricky-kirkham/#10149157)中的這篇文章。
+- 沙箱化方案中的視覺網頁元件偶爾會收到錯誤：「沙箱化程式碼執行要求被拒，因為沙箱化程式碼主機服務太忙碌而無法處理要求。」 如需有關此錯誤的詳細資訊，請參閱 [SharePoint 開發人員小組 Blog](/archive/blogs/sharepointdev/error-the-sandboxed-code-execution-request-was-refused-because-the-sandboxed-code-host-service-was-too-busy-to-handle-the-request-ricky-kirkham#10149157)中的這篇文章。
 
 - Visual Studio 中不支援伺服器端的 JavaScript 偵錯工具，但支援用戶端的 JavaScript 偵錯工具。
 
@@ -108,7 +108,7 @@ ms.locfileid: "86015044"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|Title|描述|
 |-----------|-----------------|
 |[如何：建立 SharePoint web 元件](../sharepoint/how-to-create-a-sharepoint-web-part.md)|說明如何建立 SharePoint 網頁的 web 元件。|
 |[如何：使用設計工具建立 SharePoint web 元件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|說明如何使用視覺化設計介面建立 SharePoint 的網頁元件。|

@@ -1,5 +1,6 @@
 ---
-title: 使用檢測收集詳細計時資料 | Microsoft Docs
+title: 使用檢測設備收集詳細計時資料
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 682ae4bf31f44f3dff5f6dfadf7b8c316d9d9721
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b5082066de22bee3954b297f30eebb7d89ec607
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331860"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810766"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>使用檢測設備收集詳細計時資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具檢測方法會將程式碼剖析的程式碼插入模組的複本。 執行剖析期間，程式碼會記錄在模組中函式的每個項目、結束和函式呼叫。 此檢測方法適合用來收集程式碼區段的詳細計時資訊，以及了解輸入和輸出作業對應用程式效能的影響。
@@ -37,7 +38,7 @@ ms.locfileid: "85331860"
 
   下表中的工作描述當您使用檢測方法進行分析時，可以在 [ _效能會話_**屬性頁** ] 對話方塊中指定的選項。
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |在 [一般] **** 頁面，加入 .NET 記憶體配置和存留期資料，並指定產生的程式碼剖析資料 (.vsp) 檔案的命名詳細資料。|-   [收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [如何：設定效能資料檔案名稱選項](../profiling/how-to-set-performance-data-file-name-options.md)|
 |在 [啟動] **** 頁面上，如果在您的方案中有多個 .exe 專案，請指定要啟動的應用程式和其啟動順序。|-   [如何：指定要啟動的二進位檔](../profiling/how-to-specify-the-binary-to-start.md)|

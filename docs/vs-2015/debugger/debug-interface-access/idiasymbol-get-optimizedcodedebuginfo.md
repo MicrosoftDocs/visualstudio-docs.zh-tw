@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 32279f4539e52335c4999c07e10053c70ad3860f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64832265"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839213"
 ---
-# <a name="idiasymbolgetoptimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
+# <a name="idiasymbolget_optimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取指出函數是否包含僅適用於最佳化程式碼的偵錯資訊的旗標。  
+抓取旗標，這個旗標表示函式是否包含適用于優化程式碼的偵錯工具資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,19 +35,19 @@ HRESULT get_optimizedCodeDebugInfo(
   
 #### <a name="parameters"></a>參數  
  `pFlag`  
- [out]會傳回`TRUE`最佳化函式或標籤中包含偵錯資訊; 否則會傳回`FALSE`。  
+ 擴展 `TRUE` 如果優化函數或標籤包含調試資訊，則傳回，否則傳回 `FALSE` 。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。  
   
 ## <a name="requirements"></a>需求  
   
-|需求|說明|  
+|需求|描述|  
 |-----------------|-----------------|  
-|標頭：|dia2.h|  
+|標頭：|dia2。h|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

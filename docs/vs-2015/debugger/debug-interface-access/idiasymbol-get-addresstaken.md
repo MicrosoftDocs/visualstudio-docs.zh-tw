@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: db28ad7fda7224c81bbf5bf4bfa772f6eaaa9800
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64829218"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839195"
 ---
-# <a name="idiasymbolgetaddresstaken"></a>IDiaSymbol::get_addressTaken
+# <a name="idiasymbolget_addresstaken"></a>IDiaSymbol::get_addressTaken
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取指出另一個符號是否參考此符號的地址的旗標。  
+抓取旗標，指出其他符號是否參考此符號的位址。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,16 +35,16 @@ HRESULT get_addressTaken ( 
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]會傳回`TRUE`另一個的符號參考這個位址; 否則會傳回`FALSE`。  
+ 擴展 `TRUE` 如果另一個符號參考這個位址，則傳回，否則傳回 `FALSE` 。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 > [!NOTE]
-> 傳回值為`S_FALSE`表示屬性不是適用於符號。  
+> 的傳回值 `S_FALSE` 表示該屬性不適用於符號。  
   
 ## <a name="example"></a>範例  
- 在下列範例中，`B`參考`A`。 因此，符號`A`的`get_addressTaken`方法會傳回`TRUE`。  
+ 在下列範例中， `B` 參考 `A` 。 因此，符號 `A` 的 `get_addressTaken` 方法會傳回 `TRUE` 。  
   
 ```cpp#  
 int A  = 0;  
@@ -55,8 +55,8 @@ int* B = &A;
   
 |需求|描述|  
 |-----------------|-----------------|  
-|標頭：|dia2.h|  
-|版本:|DIA SDK v7.0|  
+|標頭：|dia2。h|  
+|版本：|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

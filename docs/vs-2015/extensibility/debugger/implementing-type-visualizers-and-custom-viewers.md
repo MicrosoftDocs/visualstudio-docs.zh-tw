@@ -1,5 +1,5 @@
 ---
-title: 實作類型視覺化檢視和自訂檢視器 |Microsoft Docs
+title: 執行型別視覺化器和自訂檢視器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,30 +12,30 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b780f2115400fd43e8915a5109c960cab99bf131
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430215"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839244"
 ---
 # <a name="implementing-type-visualizers-and-custom-viewers"></a>實作類型視覺化檢視和自訂檢視器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關如何執行 CLR 運算式評估工具的詳細資訊，請參閱 [CLR 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 類型視覺化檢視和自訂檢視器可讓使用者更有意義，比簡單的十六進位傾印的數字的方式檢視特定類型的資料。 運算式評估工具 (EE) 可以將自訂檢視器與特定類型的變數或資料產生關聯。 EE 實作這些自訂檢視器。 EE 也可支援外部類型視覺化檢視，可能是來自其他第三方廠商或甚至是一般使用者。  
+ 型別視覺化程式和自訂檢視器可讓使用者以比簡單的十六進位數位傾印更有意義的方式，來查看特定類型的資料。 運算式評估工具 (EE) 可以將自訂檢視器與特定類型的資料或變數產生關聯。 這些自訂檢視器是由 EE 所執行。 EE 也可以支援外部類型的視覺化檢視，這可能來自另一個協力廠商或甚至是終端使用者。  
   
 ## <a name="discussion"></a>討論  
   
-### <a name="type-visualizers"></a>類型視覺化檢視  
- Visual Studio 會要求類型視覺化檢視和每個物件的自訂檢視器，要在監看式視窗中顯示的清單。 運算式評估工具 (EE) 提供這類它要支援類型視覺化檢視和自訂檢視器的每一個型別清單。 呼叫[GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)並[GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)開始整個程序的存取類型視覺化檢視和自訂檢視器 (請參閱[視覺化及檢視資料](../../extensibility/debugger/visualizing-and-viewing-data.md)如需有關呼叫的順序)。  
+### <a name="type-visualizers"></a>型別視覺化  
+ Visual Studio 會要求在 [監看式] 視窗中顯示每個物件的視覺化類型清單和自訂檢視器。 運算式評估工具 (EE) 為想要支援型別視覺化程式和自訂檢視器的每個類型，提供這類清單。 [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)和[GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)的呼叫會啟動存取型別視覺化程式和自訂檢視器的整個程式 (請參閱[視覺化和查看資料](../../extensibility/debugger/visualizing-and-viewing-data.md)，以取得呼叫順序) 的詳細資料。  
   
 ### <a name="custom-viewers"></a>自訂檢視器  
- 自訂檢視器會在特定的資料型別的 EE 中實作和都由[IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)介面。 自訂檢視器不具有彈性，類型視覺化檢視，因為實作該特定的自訂檢視器 EE 正在執行時，才會提供。 實作自訂檢視器會比實作類型視覺化檢視支援簡單的。 不過，支援類型視覺化檢視提供最大的彈性使用者他 / 她的資料視覺化。 在本文的其餘部分是有關只有類型視覺化檢視。  
+ 自訂檢視器會在特定資料類型的 EE 中執行，並以 [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) 介面表示。 自訂檢視器並不像型別視覺化一樣有彈性，因為它只能在執行特定自訂檢視器的 EE 執行時使用。 執行自訂檢視器比實作為視覺化型別支援的程式更簡單。 不過，支援的型別視覺化可提供最大的彈性給終端使用者，以將其資料視覺化。 這項討論的其餘部分只考慮視覺化型別。  
   
 ## <a name="interfaces"></a>介面  
- EE 會實作下列介面以支援類型的視覺化檢視，以供 Visual Studio:  
+ EE 會執行下列介面來支援型別視覺化程式，Visual Studio 使用這些介面：  
   
 - [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)  
   
@@ -49,7 +49,7 @@ ms.locfileid: "63430215"
   
 - [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
-  EE 會取用要支援類型視覺化檢視的下列介面：  
+  EE 會使用下列介面來支援型別視覺化：  
   
 - [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)  
   
@@ -59,5 +59,5 @@ ms.locfileid: "63430215"
   
 ## <a name="see-also"></a>另請參閱  
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
- [視覺化及檢視資料](../../extensibility/debugger/visualizing-and-viewing-data.md)   
+ [視覺化和查看資料](../../extensibility/debugger/visualizing-and-viewing-data.md)   
  [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)

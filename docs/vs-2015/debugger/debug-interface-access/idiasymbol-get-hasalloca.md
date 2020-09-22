@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce10647737a34caf3f566ba4f50a84a51ea4c46f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798022"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838910"
 ---
-# <a name="idiasymbolgethasalloca"></a>IDiaSymbol::get_hasAlloca
+# <a name="idiasymbolget_hasalloca"></a>IDiaSymbol::get_hasAlloca
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取指定的函式是否包含呼叫的旗標`alloca`（這用來在堆疊上配置的記憶體中）。  
+抓取旗標，這個旗標會指定函式是否包含 (的呼叫，該呼叫 `alloca` 用來配置堆疊) 的記憶體。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,20 +33,20 @@ ms.locfileid: "64798022"
   
 #### <a name="parameters"></a>參數  
  `pFlag`  
- [out]會傳回`TRUE`函數若包含呼叫`alloca`; 否則傳回`FALSE`。  
+ 擴展 `TRUE` 如果函數包含的呼叫，則傳回 `alloca` ，否則傳回 `FALSE` 。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 錯誤碼。  
   
 > [!NOTE]
-> 傳回值為`S_FALSE`表示屬性不是適用於符號。  
+> 的傳回值 `S_FALSE` 表示該屬性不適用於符號。  
   
 ## <a name="requirements"></a>需求  
   
 |需求|描述|  
 |-----------------|-----------------|  
-|標頭：|dia2.h|  
-|版本:|DIA SDK v8.0|  
+|標頭：|dia2。h|  
+|版本：|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

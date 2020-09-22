@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e5221d1cce065a352051ca700cf0fc5ef4ae843
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 915a1762782b2bf7177b87a3a5f4cdc6e08c6405
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015629"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739989"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>逐步解說：擴充伺服器總管以顯示 web 元件
   在 Visual Studio 中，您可以使用**伺服器總管**的 [ **sharepoint 連接**] 節點來查看 sharepoint 網站上的元件。 不過， **伺服器總管** 預設不會顯示某些元件。 在這個逐步解說中，您將延伸 **伺服器總管** ，使其在每個連線的 SharePoint 網站上顯示網頁元件庫。
@@ -42,7 +42,7 @@ ms.locfileid: "86015629"
 > [!NOTE]
 > 如需本逐步解說中使用用戶端物件模型（而不是其伺服器物件模型）的替代版本，請參閱 [逐步解說：在伺服器總管擴充功能中呼叫 sharepoint 用戶端物件模型](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
  您需要在開發電腦上執行下列元件，才能完成此逐步解說：
 
 - 支援的 Windows 版本、SharePoint 及 Visual Studio。
@@ -275,7 +275,7 @@ ms.locfileid: "86015629"
 
 1. 在 **方案總管**的 [WebPartNode] 專案底下，在資訊清單編輯器中開啟 **extension.vsixmanifest** 檔案。
 
-     Extension.vsixmanifest 檔案是所有 VSIX 封裝所需的 extension.vsixmanifest 檔案基礎。 如需此檔案的詳細資訊，請參閱 [VSIX 延伸架構1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。
+     Extension.vsixmanifest 檔案是所有 VSIX 封裝所需的 extension.vsixmanifest 檔案基礎。 如需此檔案的詳細資訊，請參閱 [VSIX 延伸架構1.0 參考](/previous-versions/dd393700(v=vs.110))。
 
 2. 在 [ **產品名稱** ] 方塊中，輸入 **伺服器總管的 [網頁元件庫] 節點**。
 
@@ -303,7 +303,7 @@ ms.locfileid: "86015629"
 10. 在 [ **類型** ] 方塊中，輸入 [ **v4**]。
 
     > [!NOTE]
-    > 這個元素會指定您想要包含在 Visual Studio 延伸模組中的自訂擴充功能。 如需詳細資訊，請參閱 [資產元素 (VSX 架構) ](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。
+    > 這個元素會指定您想要包含在 Visual Studio 延伸模組中的自訂擴充功能。 如需詳細資訊，請參閱 [資產元素 (VSX 架構) ](/previous-versions/dd393737(v=vs.110))。
 
 11. 在 [ **來源** ] 清單中，選擇 [ **目前方案中的專案** ] 清單專案。
 

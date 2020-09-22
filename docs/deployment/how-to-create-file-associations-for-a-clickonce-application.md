@@ -1,5 +1,6 @@
 ---
-title: 如何-建立 ClickOnce 應用程式的檔案關聯 |Microsoft Docs
+title: " (ClickOnce 應用程式建立檔案關聯) "
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76ecc41a852d80319f8a171ed590eb73680d92cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcca57415eae6480286f457755b996f22cb6507a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382493"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809777"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>How to: Create file associations for a ClickOnce application (如何：建立 ClickOnce 應用程式的檔案關聯)
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式可與一個或多個副檔名相關聯，如此一來，當使用者開啟這些類型的檔案時，就會自動啟動應用程式。 將副檔名支援新增至 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式很簡單。

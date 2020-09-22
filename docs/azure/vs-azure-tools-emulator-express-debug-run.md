@@ -1,5 +1,6 @@
 ---
-title: 在本機電腦上使用 Emulator Express 來執行 Azure 雲端服務或對其進行偵錯
+title: 在本機執行/錯 Azure 雲端服務的模擬器 Express
+ms.custom: SEO-VS-2020
 description: 使用 Emulator Express 在本機電腦上執行及偵錯雲端服務
 author: mikejo5000
 manager: jillfra
@@ -8,12 +9,12 @@ ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: 0a6bbf5c846007cb1fa8d8cad91aa252f3d06a72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4874a93cd7d7546ca1d131f6c8941bd78cd98465
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800368"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809829"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>使用 Emulator Express 在本機電腦上執行 Azure 雲端服務及對其進行偵錯
 使用 Emulator Express，您可以測試及偵錯雲端服務，而不需以系統管理員身分執行 Visual Studio。 視您的雲端服務的需求而定，您可以進行專案設定以使用 Emulator Express 或完整模擬器。 如需完整模擬器的詳細資訊，請參閱 [在計算模擬器中執行 Azure 應用程式](/azure/storage/common/storage-use-emulator)。

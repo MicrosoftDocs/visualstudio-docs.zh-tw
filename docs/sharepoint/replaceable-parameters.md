@@ -1,5 +1,5 @@
 ---
-title: 可置換的參數 |Microsoft Docs
+title: 可取代的參數 |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,80 +15,80 @@ ms.author: johnhart
 manager: jillfra
 ms.workload: office
 ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422907"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839159"
 ---
-# <a name="replaceable-parameters"></a>可置換的參數
-  可置換的參數，或*語彙基元*，可以使用專案檔內，以提供其實際的值不在設計階段已知的 SharePoint 方案項目中的值。 它們是類似的函式中的標準[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]範本語彙基元。 如需詳細資訊，請參閱 <<c0> [ 範本參數](../ide/template-parameters.md)。
+# <a name="replaceable-parameters"></a>可替換的參數
+  可以在專案檔內使用可取代的參數或 *權杖*，以提供在設計階段不知道其實際值的 SharePoint 方案專案的值。 它們類似于標準範本權杖的功能 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 如需詳細資訊，請參閱 [範本參數](../ide/template-parameters.md)。
 
 ## <a name="token-format"></a>權杖格式
- 權杖會開始，並以貨幣符號 （$） 字元結尾。 在部署中，使用任何權杖實際值時取代 SharePoint 方案套件封裝專案時 (*.wsp*檔案)。 例如，語彙基元 **$SharePoint.Package.Name$** 可能會解析為 「 測試 SharePoint 套件 」 的字串。
+ 權杖的開頭和結尾都是貨幣符號 ($) 字元。 在部署時，任何使用的標記都會在專案封裝至 SharePoint 方案套件 (*.wsp* 檔) 時，取代為實際值。 例如，權杖 **$SharePoint. Package.Name $** 可能會解析為 "Test SharePoint Package" 字串。
 
-## <a name="token-rules"></a>語彙基元的規則
- 下列規則適用於語彙基元：
+## <a name="token-rules"></a>權杖規則
+ 下列規則適用于權杖：
 
-- 語彙基元可以指定行中的任何位置。
+- 您可以在行的任何位置指定標記。
 
-- 權杖不能跨越多行。
+- 權杖無法跨越多行。
 
-- 在同一行，並在相同的檔案，可能會多次指定相同的語彙基元。
+- 相同的標記可在同一行和同一個檔案中指定一次以上。
 
-- 可在同一行上指定不同的語彙基元。
+- 您可以在同一行上指定不同的標記。
 
-  不遵守這些規則的語彙基元會忽略，而且不會導致警告或錯誤。
+  未遵循這些規則的權杖會被忽略，且不會產生警告或錯誤。
 
-  取代為字串值的語彙基元是資訊清單的轉換後立即完成。 這項取代可讓使用者編輯與權杖的資訊清單範本。
+  在資訊清單轉換之後，會立即完成以字串值取代權杖的程式。 這種取代可讓使用者編輯具有權杖的資訊清單範本。
 
-### <a name="token-name-resolution"></a>語彙基元的名稱解析
- 在大部分情況下，權杖會解析為不論其中會包含特定值。 不過，如果權杖與封裝或功能時，權杖的值會取決於包含它。 例如，如果一項功能在封裝，則語彙基元`$SharePoint.Package.Name$`值解析為 「 套件 a。 」 如果相同的功能是在封裝 B，則`$SharePoint.Package.Name$`會解析成 「 套件 B 」
+### <a name="token-name-resolution"></a>標記名稱解析
+ 在大部分的情況下，權杖會解析為特定值，而不論其包含在哪裡。 不過，如果權杖與封裝或功能相關，則權杖的值取決於其包含的位置。 例如，如果功能位於封裝 A 中，則權杖會 `$SharePoint.Package.Name$` 解析為 "Package a" 值。 如果封裝 B 中的相同功能，則會 `$SharePoint.Package.Name$` 解析為 "Package b"。
 
-## <a name="tokens-list"></a>語彙基元清單
+## <a name="tokens-list"></a>標記清單
  下表列出可用的權杖。
 
 |名稱|描述|
 |----------|-----------------|
-|$SharePoint.Project.FileName$|名稱包含專案檔，例如*NewProj.csproj*。|
-|$SharePoint.Project.FileNameWithoutExtension$|包含專案檔不含副檔名的名稱。 例如，"NewProj。 」|
-|$SharePoint.Project.AssemblyFullName$|包含專案的顯示名稱 （強式名稱） 的輸出組件。|
-|$SharePoint.Project.AssemblyFileName$|包含專案的名稱的輸出組件。|
-|$SharePoint.Project.AssemblyFileNameWithoutExtension$|包含專案的名稱的輸出組件，但不包括檔案名稱副檔名。|
-|$SharePoint.Project.AssemblyPublicKeyToken$|包含專案的公開金鑰 token 的輸出組件，轉換成字串。 (在 「 x2"16 個字元的十六進位格式。)|
-|$SharePoint.Package.Name$|包含封裝的名稱。|
-|$SharePoint.Package.FileName$|包含的封裝定義檔的名稱。|
-|$SharePoint.Package.FileNameWithoutExtension$|包含的封裝定義檔的名稱 （不含副檔名）。|
-|$SharePoint.Package.Id$|SharePoint 包含的封裝識別碼。 如果一項功能會在多個套件，此值將會變更。|
-|$SharePoint.Feature.FileName$|定義檔的名稱包含功能，例如*Feature1.feature*。|
-|$SharePoint.Feature.FileNameWithoutExtension$|功能定義檔案，不含副檔名的名稱。|
-|$SharePoint.Feature.DeploymentPath$|包含的功能套件中的資料夾名稱。 此權杖等同於功能設計工具中的 「 部署路徑 」 屬性。 值的範例是，「 Project1_Feature1"。|
-|$SharePoint.Feature.Id$|包含的功能的 SharePoint 識別碼。 此語彙基元，為具有所有功能層級語彙基元，可供只包含一項功能，透過封裝中的檔案不直接新增至封裝之外的功能。|
-|$SharePoint.ProjectItem.Name$|專案項目的名稱及其 （不是檔案名稱），以取得從**ISharePointProjectItem.Name**。|
-|$SharePoint.Type.\<GUID>.AssemblyQualifiedName$|符合語彙基元的 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] 之類型的組件限定名稱。 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] 的格式為小寫且對應於 Guid.ToString("D") 格式 (也就是 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。|
-|$SharePoint.Type.\<GUID>.FullName$|比對權杖中的 GUID 型別的完整名稱。 GUID 的格式為小寫且對應於 Guid.tostring 格式 (也就是 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。|
+|$SharePoint. FileName $|包含專案檔的名稱，例如 *NewProj .csproj*。|
+|$SharePoint. FileNameWithoutExtension $|包含沒有副檔名之專案檔的名稱。 例如，"NewProj"。|
+|$SharePoint. AssemblyFullName $|包含專案的輸出元件 (強式名稱) 的顯示名稱。|
+|$SharePoint. AssemblyFileName $|包含專案輸出元件的名稱。|
+|$SharePoint. AssemblyFileNameWithoutExtension $|包含專案輸出元件的名稱，不含副檔名。|
+|$SharePoint. AssemblyPublicKeyToken $|包含專案輸出元件的公開金鑰 token，轉換成字串。 "X2" 十六進位格式的 (16 個字元。 ) |
+|$SharePoint. Package.Name $|包含封裝的名稱。|
+|$SharePoint. FileName $|包含封裝之定義檔的名稱。|
+|$SharePoint FileNameWithoutExtension $|名稱 (沒有包含套件定義檔的副檔名) 。|
+|$SharePoint. Package.Id $|包含封裝的 SharePoint 識別碼。 如果有一個以上的封裝使用某項功能，則此值會變更。|
+|$SharePoint. FileName $|包含功能的定義檔名稱，例如*Feature1。*|
+|$SharePoint FileNameWithoutExtension $|功能定義檔的名稱，不含副檔名。|
+|$SharePoint DeploymentPath $|封裝中包含功能的資料夾名稱。 此標記等同于功能設計工具中的 [部署路徑] 屬性。 範例值為 "Project1_Feature1"。|
+|$SharePoint. Feature.Id $|包含功能的 SharePoint 識別碼。 如同所有功能層級的權杖，此權杖只能由封裝中包含的檔案使用，而不會直接新增至功能以外的封裝。|
+|$SharePoint. ProjectItem.Name $|專案專案的名稱 (不是) 的檔案名，如同從 **ISharePointProjectItem.Name**取得的名稱。|
+|$SharePoint，請輸入 \<GUID> 。AssemblyQualifiedName $|符合語彙基元的 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] 之類型的組件限定名稱。 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] 的格式為小寫且對應於 Guid.ToString("D") 格式 (也就是 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。|
+|$SharePoint，請輸入 \<GUID> 。FullName $|符合標記中 GUID 的型別的完整名稱。 GUID 的格式為小寫，而且會對應至 Guid.empty ( "D" ) 格式 (也就是 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx) 。|
 
-## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>語彙基元取代檔案延伸模組清單中加入延伸模組
- 雖然權杖理論上可供 SharePoint 專案項目包含在封裝中，根據預設，屬於任何檔案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]搜尋在封裝檔案，資訊清單檔案，並具有下列副檔名的檔案中的權杖：
+## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>將延伸模組新增至 token 取代副檔名清單
+ 雖然在理論上，任何屬於封裝所包含之 SharePoint 專案專案的檔案都可以使用權杖，但是根據預設， [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 只會在封裝檔案、資訊清單檔以及具有下列副檔名的檔案中搜尋標記：
 
 - [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]
 
 - ASCX
 
-- ASPX
+- .ASPX
 
-- Web 組件
+- Webpart
 
-- DWP
+- .DWP
 
-  這些擴充功能由定義`<TokenReplacementFileExtensions>`項目在 Microsoft.VisualStudio.SharePoint.targets 檔案中，位於...\\< 程式檔案\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools 資料夾。
+  這些延伸模組是由 VisualStudio 檔案中的專案所定義 `<TokenReplacementFileExtensions>` ，位於 ... \\<program files \> \MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools 資料夾。
 
-  不過，您可以將其他副檔名加入清單。 新增`<TokenReplacementFileExtensions>`之前會定義 SharePoint 專案檔中的任何 PropertyGroup 項目\<匯入 > 的 於 SharePoint 目標檔。
+  不過，您可以將其他副檔名新增至清單。 將 `<TokenReplacementFileExtensions>` 專案加入至 sharepoint 專案檔中的任何 PropertyGroup，該專案會在 \<Import> sharepoint 目標檔案的之前定義。
 
 > [!NOTE]
-> 編譯專案之後，就會發生語彙基元取代，因為您不應該新增會進行編譯，這類的檔案類型的檔案副檔名 *.cs*， *.vb*或是 *.resx*。 Token 已被取代，只在未編譯的檔案。
+> 由於標記取代是在編譯專案之後發生，因此您不應該為編譯的檔案類型（例如 *.cs*、 *.vb* 或 *.resx*）加入副檔名。 只有在未編譯的檔案中，才會取代權杖。
 
- 例如，若要新增的檔案名稱副檔名 (*.myextension*並 *.yourextension*) 的語彙基元取代檔案名稱的副檔名清單，您會將下列內容新增至專案 (*.csproj*) 檔案：
+ 例如，若要將副檔名 (*. myextension* 和 *. Yourextension*) 新增至 token 取代副檔名清單，請將下列內容新增至專案 (*.csproj*) 檔：
 
 ```xml
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -103,7 +103,7 @@ ms.locfileid: "63422907"
 </PropertyGroup>
 ```
 
- 您可以直接對目標加入延伸模組 (*.targets*) 檔案。 不過，新增擴充功能會變更本機系統上封裝的所有 SharePoint 專案延伸模組清單，不只是您自己。 當您在系統上唯一的開發人員，或大部分的專案需要它，此延伸模組可能會很方便。 不過，因為它是特定的系統，這種方法不是可攜性，因此，建議您將任何延伸模組加入專案檔改為。
+ 您可以將擴充功能直接新增至*目標 (目標) 檔。* 但是，加入延伸模組會改變所有封裝在本機系統上的 SharePoint 專案的延伸模組清單，而不只是您自己的副檔名。 當您是系統上的唯一開發人員，或您的大部分專案都需要此擴充功能時，此擴充功能可能會很方便。 不過，由於它是系統專屬的，此方法無法移植，因此建議您改為將任何延伸模組新增至專案檔。
 
 ## <a name="see-also"></a>另請參閱
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)
