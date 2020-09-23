@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 11/25/2019
   ms.author: ghogen
-  ms.openlocfilehash: 23937085e99c50475ac100fd38b8380955cd084c
-  ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+  ms.openlocfilehash: ed8b37ece1f5941d70363a19f48dccb1938ce440
+  ms.sourcegitcommit: f9179a3a6d74fbd871f62b72491e70b9e7b05637
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/04/2020
-  ms.locfileid: "89490270"
+  ms.lasthandoff: 09/21/2020
+  ms.locfileid: "90845504"
 landingContent:
 - title: 容器工具
   linkLists:
@@ -83,9 +83,9 @@ landingContent:
       url: tutorial-kubernetes-tools.md
   - linkListType: quickstart
     links:
-    - text: 將 Visual Studio 和 Kubernetes 與本機處理序搭配使用
-      url: local-process-kubernetes.md
+    - text: 將 Bridge to Kubernetes 與 Visual Studio 搭配使用
+      url: bridge-to-kubernetes.md
   - linkListType: overview
     links:
-    - text: 本機處理序與 Kubernetes 搭配使用的方式
-      url: overview-local-process-kubernetes.md
+    - text: Bridge to Kubernetes 的運作方式
+      url: overview-bridge-to-kubernetes.md

@@ -48,9 +48,9 @@
   items:
     - name: Visual Studio 中的 Kubernetes
       href: tutorial-kubernetes-tools.md
-    - name: 將 Kubernetes 與本機處理序搭配使用 (預覽)
-      href: local-process-kubernetes.md
-    - name: 本機處理序與 Kubernetes 搭配使用的方式 (預覽)
-      href: overview-local-process-kubernetes.md
-    - name: 使用 Kubernetes 設定本機處理序
-      href: configure-local-process-with-kubernetes.md
+    - name: Bridge to Kubernetes
+      href: bridge-to-kubernetes.md
+    - name: Bridge to Kubernetes 的運作方式
+      href: overview-bridge-to-kubernetes.md
+    - name: 設定 Bridge to Kubernetes
+      href: configure-bridge-to-kubernetes.md

@@ -260,9 +260,21 @@
         - name: 自訂建置與偵錯工作
           displayName: makefile tasks.vs.json
           href: ide/customize-build-and-debug-tasks-in-visual-studio.md
+    - name: 使用 Codespaces 進行開發 (預覽)
+      items:
+        - name: 概觀
+          href: ide/codespaces/codespaces-overview.md
+        - name: 將 codespace 與 Visual Studio 搭配使用
+          href: ide/codespaces/use-visual-studio-with-codespaces.md
+        - name: 自訂 codespace
+          href: ide/codespaces/customize-codespaces.md
+        - name: 支援的 Visual Studio 功能
+          href: ide/codespaces/supported-features-codespaces.md
     - name: 連線到專案或存放庫
       displayName: Azure DevOps VSTS GitHub
       href: ide/connect-team-project.md
+    - name: Visual Studio 中新的 Git 體驗 (預覽)
+      href: ide/git-with-visual-studio.md
     - name: 編輯器
       items:
         - name: 使用編輯器
