@@ -1,23 +1,23 @@
 ---
 title: 指派 Visual Studio 訂用帳戶使用者群組的授權 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 05/10/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: 瞭解系統管理員如何使用「大量新增」功能或 Microsoft Azure Active Directory 群組，將授權指派給多個「訂閱者」
-ms.openlocfilehash: cbcdab00568e375633ddd9d6d350978d6ec56d2a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6154e9796e1ba021eedf86bcee7d508e285b6645
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005762"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022394"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>指派訂閱給多個使用者
 訂用帳戶系統管理入口網站可讓您以一次一個或以大型群組方式新增使用者。  若要新增個別使用者，請參閱[新增單一使用者](assign-license.md)。
 
-若要加入大量的使用者，您可以使用「大量新增」功能，或者，如果您的組織使用 Microsoft Azure Active Directory (Azure AD) ，您可以使用 Azure AD 群組。 本文將說明這兩個選項的程式。 
+若要加入大量的使用者，您可以使用「大量新增」功能，或者，如果您的組織使用 Microsoft Azure Active Directory (Azure AD) ，您可以使用 Azure AD 群組。 本文將說明這兩個選項的程式。  觀賞這段影片或繼續閱讀，以深入瞭解大量新增功能。 
 
 <br>
 
@@ -64,7 +64,8 @@ ms.locfileid: "91005762"
 
    如果您遇到失敗，請遵循下列步驟：
    1. 開啟您所建立的 Excel 檔案，更正問題，然後儲存檔案。
-   0. 返回 [_ 入口網站]，然後選擇 [ **新增**]。
+   0. 返回系統管理入口網站並關閉錯誤訊息。
+   0. 選擇 [ **新增**]。
    0. 選取 [ **大量新增**]。
    0. 因為您已經儲存 Excel 檔案，所以不需要下載範本。  選取 **[流覽]**，找出您剛剛儲存的檔案，然後選取 [ **開啟**]。
    0. 選取 [確定]。
@@ -89,6 +90,7 @@ ms.locfileid: "91005762"
 > - 群組的所有成員都必須有與其 Azure AD 帳戶相關聯的電子郵件地址。
 > - 使用 Azure AD 群組新增的訂閱不支援通知的個別電子郵件地址。  
 
+觀賞這段影片或繼續閱讀，以深入瞭解如何使用 Azure Active Directory 群組功能新增訂閱者。 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]

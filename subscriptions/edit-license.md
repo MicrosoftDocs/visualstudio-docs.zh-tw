@@ -1,18 +1,18 @@
 ---
 title: 在系統管理入口網站編輯訂用帳戶 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 07/30/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: 了解系統管理員如何編輯訂用帳戶指派。
-ms.openlocfilehash: 3d96610c940dc8e4404212a6f3a3dbaa7fe3ef51
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 060ae7c7679eb1bf9dc4da99ea9a1bf952ebc58b
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005583"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022529"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>編輯 Visual Studio 訂用帳戶指派
 身為訂用帳戶管理員，您可以變更指派給您組織內個人的訂用帳戶。  本文章討論您可以進行的變更類型，並提供必要的步驟。
@@ -34,6 +34,7 @@ ms.locfileid: "91005583"
 
 您可以使用大量編輯程序一次編輯多名訂閱者。 這項功能主要用於公司電子郵件地址變更過的組織，或已決定限制下載存取的組織。
 
+觀賞這段影片或繼續閱讀，以瞭解如何使用大量編輯來編輯多個訂閱者。 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]

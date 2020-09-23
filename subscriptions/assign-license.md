@@ -1,18 +1,18 @@
 ---
 title: 指派 Visual Studio 訂閱的授權 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
-ms.date: 03/02/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: 了解系統管理員如何指派訂閱者授權
-ms.openlocfilehash: f458e12cd27688f910917842de89e6377675fb69
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: cd64aa058ab5c0518fc27bf1ee64acef3b5b79a2
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006198"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022189"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>在 Visual Studio 訂閱系統管理入口網站中指派授權
 身為 Visual Studio 訂閱系統管理員，您可以使用系統管理入口網站，將訂閱指派給個別使用者和使用者群組。
@@ -24,7 +24,7 @@ ms.locfileid: "91006198"
 
 
 ## <a name="add-a-single-subscriber"></a>新增一位訂閱者
-以下說明如何將 Visual Studio 訂用帳戶指派給新使用者，讓他們可以存取訂用帳戶權益。
+觀賞影片或繼續閱讀，以瞭解如何將 Visual Studio 訂用帳戶指派給新使用者，讓他們可以存取訂用帳戶權益。
 
 <br>
 

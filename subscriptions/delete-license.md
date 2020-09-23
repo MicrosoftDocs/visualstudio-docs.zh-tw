@@ -4,23 +4,25 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
-ms.date: 06/16/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: 瞭解系統管理員如何在 Visual Studio 訂閱系統管理入口網站中刪除訂用帳戶指派
-ms.openlocfilehash: a40f1ae5bb8d90217808888ccb44e047f8145b9f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 0ce0235d75946f46d39c78084121ce295067d74e
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005671"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022254"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>刪除 Visual Studio 訂閱的指派
 當訂閱者因為離開公司、完成專案，或轉換至新的工作角色等原因，而不再需要 Visual Studio 訂閱時，您可以將其訂閱移除，並指派給其他人。 請注意，當您重新指派訂閱時，不會重設所有訂閱者權益。  新的使用者將能夠過領取任何未領取的金鑰，並檢視先前已領取的金鑰，然而系統「不會重設」**** 領取限制。  針對擁有 Enterprise 合約 (EA) 的組織，原始使用者曾使用的任何權益 (例如 Pluralsight 訓練) 都會被重設。 
 
+觀賞這段影片，或繼續閱讀以瞭解如何刪除指派。  
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4yG2q]
 
 ## <a name="delete-a-subscription-assignment"></a>刪除訂用帳戶指派
-1. 按一下您想要移除的訂閱者名稱。 若要選取多個要移除的訂閱者，您可以按一下訂閱者名稱左邊的圓形來選取每一個訂閱者。  或者，您可以按住 **CTRL** 鍵，然後按一下您想要移除的每個訂閱者。 若要移除訂閱者的範圍，請按一下第一個，按下 **Shift** 鍵，然後按一下最後一個。  按 **CTRL + A** 選取並移除所有訂閱者。 
+1. 按一下您想要移除的訂閱者名稱。 若要選取多個要移除的訂閱者，您可以按一下訂閱者名稱左邊的圓形來選取每一個訂閱者。  或者，您可以按住 **CTRL** 鍵，然後按一下您想要移除的每個訂閱者。 若要移除訂閱者的範圍，請按一下第一個，按下 **Shift** 鍵，然後按一下最後一個。  按 **CTRL + A** 選取並移除所有訂閱者。 在此範例中，會刪除三個訂閱者（琥珀色、Kai 和 Madison）。 
 2. 若要刪除選取的訂閱者，請按一下 [刪除]****。
 3. 當出現確認刪除的訊息時，請按一下 [確定]****。
    > [!div class="mx-imgBorder"]

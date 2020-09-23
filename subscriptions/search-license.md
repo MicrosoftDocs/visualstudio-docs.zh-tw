@@ -1,18 +1,18 @@
 ---
 title: 搜尋及篩選 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
-ms.date: 08/10/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: 了解系統管理員如何在系統管理入口網站中尋找個別訂閱者或群組。
-ms.openlocfilehash: 29354348b423b539b79c36c78f213f7a20d60eb3
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 341f8e9739b629330775ff8688c5fdf872165e3a
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005299"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022228"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>搜尋和篩選 Visual Studio 訂用帳戶中的訂閱者
 Visual Studio 訂用帳戶管理入口網站可讓您根據各種條件來尋找特定一小部分的訂閱者。 您可以依名稱、電子郵件地址、訂用帳戶層級和其他資訊來篩選訂閱者清單。
@@ -30,7 +30,7 @@ Visual Studio 訂用帳戶管理入口網站可讓您根據各種條件來尋找
    > [!NOTE]
    > [名稱]**** 欄位會依名字排序。
 
-   請注意， **篩選** 圖示已反白顯示，表示已套用篩選。  也會顯示 **明確的篩選準則** 選擇。 
+   請注意， **篩選** 圖示已反白顯示，表示已套用篩選。  也會顯示 **明確的篩選準則** 選擇。 在此範例中，我們已篩選訂閱者清單，以尋找具有 @outlook.com 電子郵件地址的訂閱者。 
 
 3. 若要清除篩選並還原未篩選過的清單，請按一下右上方的 [清除篩選]**** 索引標籤。 
    > [!div class="mx-imgBorder"]

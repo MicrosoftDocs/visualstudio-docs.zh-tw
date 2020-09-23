@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 09/03/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: 了解如何在管理入口網站中設定語言、連絡人、訂用帳戶層級及其他喜好設定
-ms.openlocfilehash: e9b5b861260e13b0882a5eabee01db102d63b2af
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 58819995966f5cdf17335de474e83d2a77eccc37
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006159"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022603"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>在管理入口網站中設定您合約的喜好設定
 超級管理員可以在系統管理員入口網站中設定特定的喜好設定 (系統管理員入口網站) 將會針對每個合約全域套用。  當系統管理員新增訂閱者時，這些喜好設定會自動填入您系統管理員的訂用帳戶詳細資料，而且只能由超級管理員進行全域修改。  
@@ -47,7 +47,7 @@ ms.locfileid: "91006159"
 > 您在此處列出的電子郵件地址「不會」提供給訂閱者。  當訂閱者在訂閱者入口網站中提交「我的系統 **管理員** 」要求時，會將訊息轉送至該別名，而不會將其公開給「訂閱者」。 
 
 ### <a name="default-subscription-level"></a>預設訂用帳戶層級
-您可以使用此設定來判斷將訂用帳戶指派給使用者時，預設會選取合約中包含的哪個訂用帳戶層級。  管理員可以將設定變更為您合約中的任何訂用帳戶層級，這只是為了避免必須重複進行您最常用的選擇。 
+您可以使用此設定來判斷將訂用帳戶指派給使用者時，預設會選取合約中包含的哪個訂用帳戶層級。  系統管理員可以將此設定變更為您合約中的任何訂用帳戶層級，這只是為了避免重複您最常用的選擇。 
 
 ### <a name="default-communication-preferences"></a>預設通訊喜好設定
 設定預設通訊語言和地區設定可簡化指派訂用帳戶的程序。  例如，如果您的開發小組與管理小組位於不同的國家/地區，則可以設定最適合訂閱者位置的喜好設定。 個別訂閱者的所有管理員仍然可以變更這些設定。 

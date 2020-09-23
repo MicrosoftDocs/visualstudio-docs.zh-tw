@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 09/17/2020
+ms.date: 09/22/2020
 ms.topic: conceptual
 description: Visual Studio 訂閱 – 我為何會針對我的訂閱者看見 Hotmail 或 Gmail 地址？
-ms.openlocfilehash: c7a5546a99ed73175ab0f4af2c22b3cbf20c0bdd
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: dc2de6c852f39f789fb07358384ad490d13f137c
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006068"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022640"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Visual Studio 訂用帳戶–為什麼我會看到訂閱者的個人帳戶？
 從大量授權服務中心遷移 (VLSC) 至新的 Visual Studio 訂用帳戶 [管理入口網站](https://manage.visualstudio.com)之後，系統管理員很驚訝地發現某些訂閱者的「登入電子郵件地址」會顯示個人電子郵件地址，例如 Hotmail 或 Outlook。  
@@ -28,20 +28,21 @@ ms.locfileid: "91006068"
 > 的新式訂閱者體驗 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 支援公司/學校和 Microsoft 帳戶 (MSA) 身分識別類型。
 
 ## <a name="solution"></a>解決方法
+若要修正這個問題，只要選取 [ **連接電子郵件]** 按鈕，系統就會嘗試將 msa 的帳戶與組織 Azure Active Directory 中的現有使用者 (Azure AD) 根據相符的姓氏和姓氏。 如果發生錯誤，您可以按一下相符項右邊的 **X** 來移除任何相符的結果。  
+
+觀賞這段影片或繼續閱讀，以瞭解如何修正此問題。 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6B]
-
-若要修正這個問題，只要選取 [ **連接電子郵件]** 按鈕，系統就會嘗試將 msa 的帳戶與組織 Azure Active Directory 中的現有使用者 (Azure AD) 根據相符的姓氏和姓氏。 如果發生錯誤，您可以按一下相符項右邊的 **X** 來移除任何相符的結果。  
 
 > [!div class="mx-imgBorder"]
 > ![連接電子郵件按鈕](_img/connect-emails/connect-emails-button.png "按一下 [連接電子郵件]，將您的使用者與 Microsoft 帳戶對應到您的 Azure Active Directory")
 
-您也可以使用 **搜尋目錄** 來修正錯誤，或從您的 Azure AD 填入遺漏的資訊。 如果所有相符專案都正確無誤，您可以選擇 [選取所有相符的訂閱者]，而不是一次選取一個相符的訂閱者。  
+您也可以使用 **搜尋目錄** 來修正錯誤，或從您的 Azure AD 填入遺漏的資訊。 如果所有相符專案都正確無誤，您可以選擇 [ **目前** 的身分識別] 按鈕以選取所有相符的專案，而不是一次選取一個相符的專案。  
 
 > [!div class="mx-imgBorder"]
 > ![連接電子郵件飛出](_img/connect-emails/connect-emails-flyout.png "選取您要與 Azure AD 身分識別相符的訂閱者，然後按一下 [繼續]。")
 
-接下來請按一下 [繼續]，這會帶您前往要進行的變更清單。 如果您同意，請按一下 [儲存]，將會進行變更。 您的訂閱者也會收到訊息，通知他們下一次登入其訂用帳戶時的變更。   
+接下來按一下 [ **繼續** ]，將會帶您前往要進行的變更清單。 如果您同意，請按一下 [ **儲存** ]，將會進行變更。 您的訂閱者也會收到訊息，通知他們下一次登入其訂用帳戶時的變更。  請注意，只有兩個符合 Azure Active Directory 的訂閱者才會出現在此清單中。  在我們的範例中，因為恩格斯在 Azure AD 中沒有對應的位址，所以 Microsoft 帳戶 (MSA) 與工作帳戶不相符。 
 
 > [!div class="mx-imgBorder"]
 > ![連接電子郵件確認](_img/connect-emails/connect-emails-confirm.png "按一下 [繼續] 以執行建議的變更，然後按一下 [儲存]。") 

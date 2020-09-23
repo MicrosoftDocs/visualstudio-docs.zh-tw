@@ -1,7 +1,8 @@
 ---
 title: 繪製圖案與路徑
+description: 使用 Blend for Visual Studio 將更多詳細資料新增至圖形和路徑
 titleSuffix: Blend for Visual Studio
-ms.date: 07/31/2019
+ms.date: 09/22/2020
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: TerryGLee
@@ -9,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 368619a55316e0af59fc5351e187ced8892a6116
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350819"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022500"
 ---
 # <a name="draw-shapes-and-paths"></a>繪製圖案與路徑
 
@@ -26,7 +27,7 @@ ms.locfileid: "85350819"
 
 在 [資產]**** 視窗中尋找圖形。
 
-![[資產] 視窗上的 [圖形] 分類](media/blend-shapes.png)
+:::image type="content" source="media/blend-shapes.png" alt-text="Blend for Visual Studio 中 [資產] 視窗的 [圖形] 類別的螢幕擷取畫面":::
 
 將您想要的任何圖形拖曳至畫板。 然後，使用圖形上的控點來調整、旋轉、移動或扭曲圖形。
 
@@ -99,7 +100,7 @@ ms.locfileid: "85350819"
 
 ![合併路徑](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|Number|動作|
+|數字|動作|
 |-|-|
 |![合併前的兩個圖形](../designers/media/b1_1.png)|合併前的兩個圖形|
 |![聯集](../designers/media/b1_2.png)|聯集|

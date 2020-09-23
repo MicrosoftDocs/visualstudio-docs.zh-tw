@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20f9328b7e048eaf68184925fa1b7ac7a56540af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eab8798dfb5c1666ef2829361adb8c48202c3981
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533636"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022213"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 
@@ -35,7 +35,7 @@ ms.locfileid: "85533636"
 - [分析](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
 - [編輯](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
 - [專案](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)
-- [測試](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
+- [測試](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)
 - [架構](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)
 - [編輯器內容功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
 - [專案和方案內容功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
@@ -178,12 +178,12 @@ ms.locfileid: "85533636"
 
 |命令|鍵盤快速鍵|
 |--------------|-|
-|Edit.Copy|**Ctrl+C**<br /><br /> 或<br /><br /> **Ctrl + Ins**|
-|Edit.Cut|**Ctrl+X**<br /><br /> 或<br /><br /> **Shift + Delete**|
+|Edit.Copy|**Ctrl + C**<br /><br /> 或<br /><br /> **Ctrl + Ins**|
+|Edit.Cut|**Ctrl + X**<br /><br /> 或<br /><br /> **Shift + Delete**|
 |Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> 或<br /><br /> **Ctrl+Shift+Ins**|
 |Edit.Delete|**刪除**|
-|Edit.Duplicate|**Ctrl+D**|
-|Edit.Find|**Ctrl + F**|
+|Edit.Duplicate|**Ctrl + D**|
+|Edit.Find|**Ctrl+F**|
 |Edit.FindAllReferences|**Shift + F12**|
 |Edit.FindinFiles|**Ctrl + Shift + F**|
 |Edit.FindNext|**F3**|
@@ -191,7 +191,7 @@ ms.locfileid: "85533636"
 |Edit.FindPrevious|**Shift + F3**|
 |Edit.FindPreviousSelected|**Ctrl + Shift + F3**|
 |Edit.GenerateMethod|**Ctrl+K、Ctrl+M**|
-|Edit.GoTo|**Ctrl+G**|
+|Edit.GoTo|**Ctrl + G**|
 |Edit.GoToAll|**Ctrl+,** 或 **Ctrl+T**|
 |Edit.GoToDeclaration|**Ctrl+F12**|
 |Edit.GoToDefinition|**F12**|
@@ -210,15 +210,15 @@ ms.locfileid: "85533636"
 |Edit.NextBookmark|**Ctrl + K、Ctrl + N**|
 |Edit.NextBookmarkInFolder|**Ctrl + Shift + K、Ctrl + Shift + N**|
 |Edit.OpenFile|**Ctrl+Shift+G** (開啟資料指標底下的檔案名稱)|
-|Edit.Paste|**Ctrl+V**<br /><br /> 或<br /><br /> **Shift + Ins**|
+|Edit.Paste|**Ctrl + V**<br /><br /> 或<br /><br /> **Shift + Ins**|
 |Edit.PreviousBookmark|**Ctrl + K、Ctrl + P**|
 |Edit.PreviousBookmarkInFolder|**Ctrl + Shift + K、Ctrl + Shift + P**|
 |Edit.QuickFindSymbol|**Shift+Alt+F12**|
 |Edit.Redo|**Ctrl + Y**<br /><br /> 或<br /><br /> **Ctrl + Shift + Z**<br /><br /> 或<br /><br /> **Shift+Alt+退格鍵**|
 |Edit.RefreshRemoteReferences|**Ctrl + Shift + J**|
-|Edit.Replace|**Ctrl + H**|
+|Edit.Replace|**Ctrl+H**|
 |Edit.ReplaceinFiles|**Ctrl + Shift + H**|
-|Edit.SelectAll|**Ctrl+A**|
+|Edit.SelectAll|**Ctrl + A**|
 |Edit.SelectNextControl|**索引標籤**|
 |Edit.SelectPreviousControl|**Shift + Tab**|
 |Edit.ShowTileGrid|**進入**|
@@ -232,7 +232,7 @@ ms.locfileid: "85533636"
 |Edit.SizeControlUpGrid|**Shift + 向上鍵**|
 |Edit.StopSearch|**Alt + F3、S**|
 |Edit.SurroundWith|**Ctrl + K、Ctrl + S**|
-|Edit.Undo|**Ctrl+Z**<br /><br /> 或<br /><br /> **Alt + 倒退鍵**|
+|Edit.Undo|**Ctrl + Z**<br /><br /> 或<br /><br /> **Alt + 倒退鍵**|
 
 ### <a name="editor-context-menus"></a><a name="bkmk_editorContext"></a> 編輯器內容功能表
 
@@ -250,13 +250,13 @@ ms.locfileid: "85533636"
 |命令|鍵盤快速鍵|
 |--------------| - |
 |File.Exit|**Alt + F4**|
-|File.NewFile|**Ctrl + N**|
+|File.NewFile|**Ctrl+N**|
 |File.NewProject|**Ctrl + Shift + N**|
 |File.NewWebSite|**Shift+Alt+N**|
 |File.OpenFile|**Ctrl+O** (字母 'O')|
 |File.OpenProject|**Ctrl+Shift+O** (字母 'O')|
 |File.OpenWebSite|**Shift+Alt+O** (字母 'O')|
-|File.Print|**Ctrl + P**|
+|File.Print|**Ctrl+P**|
 |File.SaveAll|**Ctrl + Shift + S**|
 |File.SaveSelectedItems|**Ctrl+S**|
 |File.ViewinBrowser|**Ctrl + Shift + W**|
@@ -439,11 +439,11 @@ ms.locfileid: "85533636"
 |Window.NextSplitPane|**F6**|
 |Window.NextTab|**Ctrl+Alt+PgDn**<br /><br /> 或<br /><br /> **Ctrl+PgDn**|
 |Window.NextTabandAddtoSelection|**Ctrl+Shift+Alt+PgDn**|
-|Window.NextToolWindowNav|**Alt+F7**|
+|Window.NextToolWindowNav|**Alt + F7**|
 |Window.PreviousDocumentWindow|**Ctrl + Shift + F6**|
 |Window.PreviousDocumentWindowNav|**Ctrl + Shift + Tab**|
 |Window.PreviousPane|**Shift + Alt + F6**|
-|Window.PreviousSplitPane|**Shift+F6**|
+|Window.PreviousSplitPane|**Shift + F6**|
 |Window.PreviousTab|**Ctrl+Alt+PgUp**<br /><br /> 或<br /><br /> **Ctrl+PgUp**|
 |Window.PreviousTabandAddtoSelection|**Ctrl+Shift+Alt+PgUp**|
 |Window.PreviousToolWindowNav|**Shift + Alt + F7**|
@@ -468,7 +468,7 @@ ms.locfileid: "85533636"
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down|**Alt + 向下鍵**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down5|**Alt+PgDn**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToBottom|**Alt+End**|
-|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToTop|**Alt+Home**|
+|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToTop|**Alt + 首頁**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up|**Alt+向上箭**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up5|**Alt+PgUp**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.Refactor.Rename|**Ctrl+R、R**|
@@ -492,10 +492,10 @@ ms.locfileid: "85533636"
 
 |命令|鍵盤快速鍵|
 |--------------| - |
-|OtherContextMenus.UITestEditorContextMenu.CopyReferencetoClipboard|**Ctrl+C**|
+|OtherContextMenus.UITestEditorContextMenu.CopyReferencetoClipboard|**Ctrl + C**|
 |OtherContextMenus.UITestEditorContextMenu.InsertDelayBefore|**Ctrl + Alt + D**|
 |OtherContextMenus.UITestEditorContextMenu.LocateAll|**Shift+Alt+L**|
-|OtherContextMenus.UITestEditorContextMenu.LocatetheUIControl|**Ctrl+Shift+L**|
+|OtherContextMenus.UITestEditorContextMenu.LocatetheUIControl|**Ctrl + Shift + L**|
 |OtherContextMenus.UITestEditorContextMenu.Movecode|**Ctrl + Alt + C**|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**Ctrl + Shift + T**|
 
@@ -542,8 +542,8 @@ ms.locfileid: "85533636"
 |--------------| - |
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|**插入**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**輸出**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**我**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**O**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**Ctrl+Shift+K**<br /><br /> 或<br /><br /> **Ctrl+E、C**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**刪除**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
@@ -576,9 +576,9 @@ ms.locfileid: "85533636"
 |Edit.MoveControlUp|**Ctrl + 向上鍵**|
 |Format.Bold|**Ctrl + B**|
 |Format.ConverttoHyperlink|**Ctrl + L**|
-|Format.InsertBookmark|**Ctrl+Shift+L**|
-|Format.Italic|**Ctrl+I**|
-|Format.Underline|**Ctrl+U**|
+|Format.InsertBookmark|**Ctrl + Shift + L**|
+|Format.Italic|**Ctrl + I**|
+|Format.Underline|**Ctrl + U**|
 |Project.AddContentPage|**Ctrl+M、Ctrl+C**|
 |Table.ColumntotheLeft|**Ctrl + Alt + 向左鍵**|
 |Table.ColumntotheRight|**Ctrl+Alt+向右鍵**|
@@ -702,7 +702,7 @@ ms.locfileid: "85533636"
 |QueryDesigner.Criteria|**Ctrl + 2**|
 |QueryDesigner.Diagram|**Ctrl + 1**|
 |QueryDesigner.ExecuteSQL|**Ctrl + R**|
-|QueryDesigner.GotoRow|**Ctrl+G**|
+|QueryDesigner.GotoRow|**Ctrl + G**|
 |QueryDesigner.JoinMode|**Ctrl + Shift + J**|
 |QueryDesigner.Results|**Ctrl + 4**|
 |QueryDesigner.SQL|**Ctrl + 3**|
@@ -769,7 +769,7 @@ ms.locfileid: "85533636"
 |-------------| - |
 |Edit.Delete|**刪除**|
 |File.Rename|**F2**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**Alt+Home**|
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**Alt + 首頁**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**Alt + 向下鍵**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**Alt+0** (零)|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerPreviousSectionContent|**Alt+向上箭**|
@@ -782,7 +782,7 @@ ms.locfileid: "85533636"
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection7Content|**Alt+7**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection8Content|**Alt+8**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection9Content|**Alt+9**|
-|TeamFoundationContextMenus.Commands.TeamExplorerNavigateBackward|**Alt+向左箭**|
+|TeamFoundationContextMenus.Commands.TeamExplorerNavigateBackward|**Alt + 向左鍵**|
 |TeamFoundationContextMenus.Commands.TeamExplorerNavigateForward|**Alt + 向右鍵**|
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageCreateCopyWI|**Shift+Alt+C**|
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**Shift+Alt+L**|
@@ -815,7 +815,7 @@ ms.locfileid: "85533636"
 | Edit.CompleteWord | **Ctrl + 空格鍵**<br /><br /> 或<br /><br /> **Alt + 向右鍵** |
 | Edit.CopyParameterTip | **Ctrl + Shift + Alt + C** |
 | Edit.DecreaseFilterLevel | **Alt +、** |
-| Edit.DeleteBackwards | **退格鍵**<br /><br /> 或<br /><br /> **Shift+退格鍵** |
+| Edit.DeleteBackwards | **格**<br /><br /> 或<br /><br /> **Shift+退格鍵** |
 | Edit.DeleteHorizontalWhiteSpace | **Ctrl + K、Ctrl +\\** |
 | Edit.DocumentEnd | **Ctrl+End** |
 | Edit.DocumentEndExtend | **Ctrl + Shift + End** |
@@ -835,29 +835,29 @@ ms.locfileid: "85533636"
 | Edit.GotoPreviousIssueinFile | **Alt+PgUp** |
 | Edit.HideSelection | **Ctrl + M、Ctrl + H** |
 | Edit.IncreaseFilterLevel | **Alt +。** |
-| Edit.IncrementalSearch | **Ctrl+I** |
+| Edit.IncrementalSearch | **Ctrl + I** |
 | Edit.InsertCaretsatAllMatching | **Shift + Alt +;** |
 | Edit.InsertNextMatchingCaret | **Shift + Alt +。** |
 | Edit.InsertTab | **索引標籤** |
 | Edit.LineCut | **Ctrl + L** |
-| Edit.LineDelete | **Ctrl+Shift+L** |
+| Edit.LineDelete | **Ctrl + Shift + L** |
 | Edit.LineDown | **向下箭號** |
 | Edit.LineDownExtend | **Shift + 向下鍵** |
 | Edit.LineDownExtendColumn | **Shift + Alt + 向下鍵** |
 | Edit.LineEnd | **結束** |
-| Edit.LineEndExtend | **Shift + End** |
+| Edit.LineEndExtend | **Shift+End** |
 | Edit.LineEndExtendColumn | **Shift + Alt + End** |
-| Edit.LineOpenAbove | **Ctrl+Enter** |
+| Edit.LineOpenAbove | **Ctrl + Enter** |
 | Edit.LineOpenBelow | **Ctrl+Shift+Enter** |
 | Edit.LineStart | **首頁** |
-| Edit.LineStartExtend | **Shift + 首頁** |
+| Edit.LineStartExtend | **Shift+Home** |
 | Edit.LineStartExtendColumn | **Shift + Alt + Home** |
 | Edit.LineTranspose | **Shift + Alt + T** |
 | Edit.LineUp | **向上鍵** |
 | Edit.LineUpExtend | **Shift + 向上鍵** |
 | Edit.LineUpExtendColumn | **Shift+Alt+向上鍵** |
 | Edit.ListMembers | **Ctrl + J** |
-| Edit.MakeLowercase | **Ctrl+U** |
+| Edit.MakeLowercase | **Ctrl + U** |
 | Edit.MakeUppercase | **Ctrl + Shift + U** |
 | Edit.MoveSelectedLinesDown | **Alt + 向下鍵** |
 | Edit.MoveSelectedLinesUp | **Alt+向上箭** |
@@ -970,19 +970,19 @@ ms.locfileid: "85533636"
 |Format.ButtonRight|**Ctrl + R**|
 |Format.CenterHorizontal|**Ctrl + Shift + F9**|
 |Format.CenterVertical|**Ctrl + F9**|
-|Format.CheckMnemonics|**Ctrl+M**|
+|Format.CheckMnemonics|**Ctrl + M**|
 |Format.SizetoContent|**Shift+F7**|
-|Format.SpaceAcross|**Alt + 向右鍵**<br /><br /> 或<br /><br /> **Alt+向左箭**|
+|Format.SpaceAcross|**Alt + 向右鍵**<br /><br /> 或<br /><br /> **Alt + 向左鍵**|
 |Format.SpaceDown|**Alt+向上箭**<br /><br /> 或<br /><br /> **Alt + 向下鍵**|
-|Format.TabOrder|**Ctrl+D**|
+|Format.TabOrder|**Ctrl + D**|
 |Format.TestDialog|**Ctrl + T**|
-|Format.ToggleGuides|**Ctrl+G**|
+|Format.ToggleGuides|**Ctrl + G**|
 
 ## <a name="vc-image-editor"></a>VC 影像編輯器
 
 |命令|鍵盤快速鍵|
 |--------------| - |
-|Image.AirbrushTool|**Ctrl+A**|
+|Image.AirbrushTool|**Ctrl + A**|
 |Image.BrushTool|**Ctrl + B**|
 |Image.CopyandOutlineSelection|**Ctrl + Shift + U**|
 |Image.DrawOpaque|**Ctrl + J**|
@@ -991,12 +991,12 @@ ms.locfileid: "85533636"
 |Image.FilledEllipseTool|**Ctrl + Shift + Alt + P**|
 |Image.FilledRectangleTool|**Ctrl + Shift + Alt + R**|
 |Image.FilledRoundedRectangleTool|**Ctrl+Shift+Alt+W**|
-|Image.FillTool|**Ctrl + F**|
-|Image.FlipHorizontal|**Ctrl + H**|
+|Image.FillTool|**Ctrl+F**|
+|Image.FlipHorizontal|**Ctrl+H**|
 |Image.FlipVertical|**Shift+Alt+H**|
 |Image.LargerBrush|**Ctrl + =**|
 |Image.LineTool|**Ctrl + L**|
-|Image.MagnificationTool|**Ctrl+M**|
+|Image.MagnificationTool|**Ctrl + M**|
 |Image.Magnify|**Ctrl + Shift + M**|
 |Image.NewImageType|**插入**|
 |Image.NextColor|**Ctrl +]**<br /><br /> 或<br /><br /> **Ctrl+向右鍵**|
@@ -1004,7 +1004,7 @@ ms.locfileid: "85533636"
 |Image.OutlinedEllipseTool|**Shift+Alt+P**|
 |Image.OutlinedRectangleTool|**Shift+Alt+R**|
 |Image.OutlinedRoundedRectangleTool|**Shift+Alt+W**|
-|Image.PencilTool|**Ctrl+I**|
+|Image.PencilTool|**Ctrl + I**|
 |Image.PreviousColor|**Ctrl + [**<br /><br /> 或<br /><br /> **Ctrl+向左鍵**|
 |Image.PreviousRightColor|**Ctrl + Shift + [**<br /><br /> 或<br /><br /> **Ctrl+Shift+向左鍵**|
 |Image.RectangleSelectionTool|**Shift+Alt+S**|
@@ -1016,7 +1016,7 @@ ms.locfileid: "85533636"
 |Image.SmallBrush|**Ctrl +。**|
 |Image.SmallerBrush|**Ctrl +-**|
 |Image.TextTool|**Ctrl + T**|
-|Image.UseSelectionasBrush|**Ctrl+U**|
+|Image.UseSelectionasBrush|**Ctrl + U**|
 |Image.ZoomIn|**Ctrl + Shift +。**<br /><br /> 或<br /><br /> **Ctrl + 向上鍵**|
 |Image.ZoomOut|**Ctrl + Shift +、**<br /><br /> 或<br /><br /> **Ctrl + 向下鍵**|
 
@@ -1034,7 +1034,7 @@ ms.locfileid: "85533636"
 |QueryDesigner.Criteria|**Ctrl + 2**|
 |QueryDesigner.Diagram|**Ctrl + 1**|
 |QueryDesigner.ExecuteSQL|**Ctrl + R**|
-|QueryDesigner.GotoRow|**Ctrl+G**|
+|QueryDesigner.GotoRow|**Ctrl + G**|
 |QueryDesigner.JoinMode|**Ctrl + Shift + J**|
 |QueryDesigner.Results|**Ctrl + 4**|
 |QueryDesigner.SQL|**Ctrl + 3**|
@@ -1055,9 +1055,9 @@ ms.locfileid: "85533636"
 |Edit.CharRight|**向右箭號**|
 |Edit.CharRightExtend|**Shift + 向右鍵**|
 |Edit.DocumentEnd|**結束**|
-|Edit.DocumentEndExtend|**Shift + End**|
+|Edit.DocumentEndExtend|**Shift+End**|
 |Edit.DocumentStart|**首頁**|
-|Edit.DocumentStartExtend|**Shift + 首頁**|
+|Edit.DocumentStartExtend|**Shift+Home**|
 |Edit.InsertTab|**索引標籤**|
 |Edit.LineDown|**向下箭號**|
 |Edit.LineDownExtend|**Shift + 向上鍵**|
@@ -1146,10 +1146,10 @@ ms.locfileid: "85533636"
 |Format.EditText|**F2**|
 |Format.ResetLayout.All|**Ctrl + Shift + R**|
 |執行專案程式碼|**Ctrl + F9**|
-|Timeline.Hide (僅限混合)|**Ctrl + H**|
+|Timeline.Hide (僅限混合)|**Ctrl+H**|
 |Timeline.Lock (僅限混合)|**Ctrl + L**|
 |Timeline.Show (僅限混合)|**Ctrl + Shift + H**|
-|Timeline.Unlock (僅限混合)|**Ctrl+Shift+L**|
+|Timeline.Unlock (僅限混合)|**Ctrl + Shift + L**|
 |View.EdgeLeftMoveLeft|**Ctrl + Shift +、**|
 |View.EdgeLeftMoveRight|**Ctrl + Shift +。**|
 |View.EdgeRightMoveLeft|**Ctrl+Shift+Alt+,**|
@@ -1169,7 +1169,7 @@ ms.locfileid: "85533636"
 |--------------| - |
 |GraphView.BottomtoTop|**Alt+向上箭**|
 |GraphView.LefttoRight|**Alt + 向右鍵**|
-|GraphView.RighttoLeft|**Alt+向左箭**|
+|GraphView.RighttoLeft|**Alt + 向左鍵**|
 |GraphView.ToptoBottom|**Alt + 向下鍵**|
 |OtherContextMenus.GraphView.RemovefromWorkspace|**刪除**|
 |XsdDesigner.ShowContentModelView|**Ctrl + 2**|

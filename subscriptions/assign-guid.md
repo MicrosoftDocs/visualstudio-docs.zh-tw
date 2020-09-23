@@ -1,21 +1,23 @@
 ---
 title: 指派特定 Guid 給 Visual Studio 訂閱者 |Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
-ms.date: 04/20/2020
+ms.author: v-evwin
+manager: cabuschl
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: 瞭解系統管理員如何對訂閱者進行特定訂用帳戶 GUID
-ms.openlocfilehash: e6c50239721d810964f2b95e0ec3509999d2f4d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31544718683b10a186d4c38486bf0cd7923cd4cf
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235182"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022473"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>在 Visual Studio 訂閱系統管理入口網站中指派特定訂用帳戶
 
 系統管理員現在可以使用 Visual Studio 訂閱系統管理入口網站，將特定訂用帳戶指派給個別的訂閱者。  如果組織有暫時的員工或廠商需要存取訂用帳戶一小段時間，這項功能就很有用。  系統管理員可以指派已部分使用的訂用帳戶，讓新的訂用帳戶更長期使用。  
+
+觀賞影片或繼續閱讀，以瞭解如何將特定訂閱 Guid 指派給使用者。 
 
 <br>
 
@@ -57,7 +59,7 @@ ms.locfileid: "87235182"
 > - GUID 尚未指派給匯出清單中的另一位使用者。 
 
 ## <a name="frequently-asked-questions"></a>常見問題集
-### <a name="qhow-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>Q:How 是否要變更目前指派給個別使用者的訂用帳戶？
+### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>問：如何? 變更目前指派給個別使用者的訂用帳戶？
 答：如果您想要變更指派給使用者的 GUID，您必須先刪除該使用者的訂用帳戶。  如需詳細資訊，請參閱我們的 [刪除訂閱](delete-license.md) 文章，以取得詳細資訊。  刪除該使用者的訂用帳戶之後，請使用上面所述的程式來匯出清單並上傳新的訂用帳戶資訊。  
 
 ## <a name="see-also"></a>另請參閱
@@ -66,7 +68,7 @@ ms.locfileid: "87235182"
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 現在您已將訂用帳戶指派給使用者，請瞭解如何執行其他管理工作。
 - [指派個別訂用帳戶](assign-license.md)
 - [指派多個訂用帳戶](assign-license-bulk.md)
