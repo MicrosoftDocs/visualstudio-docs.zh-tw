@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c84978501e5c5bc6f21e8005023c3ae2fe931cce
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ee729a0dfe27bf54a64b42ff64b23bf851c14d06
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038565"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135114"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>如何：在套用 Visual Basic 開發者設定的情況下管理組建組態
 
@@ -34,9 +34,6 @@ ms.locfileid: "90038565"
 1. 在 **[工具]** 功能表上，按一下 **[選項]** 。
 
 2. 展開 [專案和方案]****，然後按一下 [一般]****。
-
-    > [!NOTE]
-    > 即使未核取 [顯示所有設定]**** 選項，都可以看到 [一般]**** 節點。 如果您想要查看每個可用的選項，請按一下 [顯示所有設定]****。
 
 3. 按一下 [顯示進階組建組態]****。
 

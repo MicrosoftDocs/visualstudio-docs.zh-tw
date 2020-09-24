@@ -2,7 +2,7 @@
 title: 逐步解說：使用 MSBuild | Microsoft Docs
 ms.date: 03/20/2019
 ms.topic: conceptual
-ms.custom: contperfq1
+ms.custom: contperfq2
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c04344e361bea15c39b092c59e76d1853e3969e2
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 6f074e69f23e20ecb92d32efb69fe011c0dbf797
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89738311"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91134814"
 ---
 # <a name="walkthrough-use-msbuild"></a>逐步解說：使用 MSBuild
 
@@ -185,7 +185,7 @@ Message 工作會接受 Text 屬性的字串值做為輸入，並將其顯示在
 </PropertyGroup>
 ```
 
- 所有屬性都是 PropertyGroup 項目的子項目。 屬性的名稱是子項目的名稱，而屬性的值是子項目的文字項目。 例如，
+ 所有屬性都是 PropertyGroup 項目的子項目。 屬性的名稱是子項目的名稱，而屬性的值是子項目的文字項目。 例如，套用至物件的
 
 ```xml
 <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -193,7 +193,7 @@ Message 工作會接受 Text 屬性的字串值做為輸入，並將其顯示在
 
  定義名為 TargetFrameworkVersion 的屬性，並提供字串值 "4.5"。
 
- 您隨時都能重新定義組建屬性。 If
+ 您隨時都能重新定義組建屬性。 如果
 
 ```xml
 <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -251,7 +251,7 @@ $(PropertyName)
 
 ### <a name="conditional-properties"></a>條件式屬性
 
-許多屬性（例如）會 `Configuration` 有條件地定義，也就是屬性 `Condition` 會出現在 property 元素中。 只有當條件評估為 "true" 時，才能定義或重新定義條件式屬性。 請注意，未定義屬性的預設值是空字串。 例如，
+許多屬性（例如）會 `Configuration` 有條件地定義，也就是屬性 `Condition` 會出現在 property 元素中。 只有當條件評估為 "true" 時，才能定義或重新定義條件式屬性。 請注意，未定義屬性的預設值是空字串。 例如，套用至物件的
 
 ```xml
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -323,7 +323,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 
 項目是一種資訊，通常是檔案名稱，可用來做為建置系統的輸入。 例如，可能會將代表原始程式檔的項目集合傳遞至名為 Compile 的工作，以便將它們編譯為組件。
 
-所有項目 (Item) 都是 ItemGroup 項目 (Element) 的子項目 (Element)。 項目 (Item) 名稱是子項目 (Element) 的名稱，而項目 (Item) 值是子項目 (Element) 的 Include 屬性值。 系統會將名稱相同的項目值收集到該名稱的項目類型。  例如，
+所有項目 (Item) 都是 ItemGroup 項目 (Element) 的子項目 (Element)。 項目 (Item) 名稱是子項目 (Element) 的名稱，而項目 (Item) 值是子項目 (Element) 的 Include 屬性值。 系統會將名稱相同的項目值收集到該名稱的項目類型。  例如，套用至物件的
 
 ```xml
 <ItemGroup>
@@ -420,7 +420,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 
 ### <a name="include-exclude-and-wildcards"></a>Include、Exclude 和萬用字元
 
- 您可以使用萬用字元 "*"、"\*\*" 及 "?" 搭配 Include 屬性，來將項目加入至項目類型。 例如，
+ 您可以使用萬用字元 "*"、"\*\*" 及 "?" 搭配 Include 屬性，來將項目加入至項目類型。 例如，套用至物件的
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -434,7 +434,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 
  將 [ *images* ]*資料夾中的*所有檔案及其所有子資料夾新增至 [相片] 專案類型。 如需更多範例，請參閱 [如何：選取要建立的](../msbuild/how-to-select-the-files-to-build.md)檔案。
 
- 請注意，宣告項目時，會將它們加入至項目類型。 例如，
+ 請注意，宣告項目時，會將它們加入至項目類型。 例如，套用至物件的
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -447,7 +447,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 <Photos Include="images\*.jpeg;images\*.gif" />
 ```
 
- 您可以使用 Exclude 屬性，從項目類型中排除項目。 例如，
+ 您可以使用 Exclude 屬性，從項目類型中排除項目。 例如，套用至物件的
 
 ```xml
 <Compile Include="*.cs" Exclude="*Designer*">
@@ -455,7 +455,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 
  將副檔名為 *.cs* 的所有檔案加入至 Compile 項目類型，但名稱包含 *Designer* 字串的檔案除外。 如需更多範例，請參閱 [如何：從組建中排除](../msbuild/how-to-exclude-files-from-the-build.md)檔案。
 
-Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Include 屬性所加入的項目 (Item)。 例如，
+Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Include 屬性所加入的項目 (Item)。 例如，套用至物件的
 
 ```xml
 <Compile Include="*.cs" />

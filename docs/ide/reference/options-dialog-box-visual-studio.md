@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c864a10af9ad15d47e2342bb148af464b8f2a0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bad4e0b7db883a7604d674b854a9c3f794715d8d
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591498"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135101"
 ---
 # <a name="options-dialog-box-visual-studio"></a>[選項] 對話方塊 (Visual Studio)
 
@@ -38,10 +38,6 @@ ms.locfileid: "75591498"
 ## <a name="how-options-are-applied"></a>選項套用的方式
 
 按一下 [選項]**** 對話方塊的 [確定]，在所有頁面儲存所有設定。 按一下任何頁面的 [取消] 取消所有變更要求，包括任何只在其他 [選項]**** 頁面上進行的變更。 有些選項設定的變更，例如對[[字型和色彩]、[環境]、[選項]](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) 等對話方塊進行的變更，只有在關閉並重新開啟 Visual Studio 之後才會生效。
-
-### <a name="show-all-settings"></a>顯示所有設定
-
-選取或取消選取 [顯示所有設定]**** 適用於所有在 [選項]**** 對話方塊中進行的變更，即使您還沒按一下 [確定]****。
 
 ## <a name="see-also"></a>另請參閱
 

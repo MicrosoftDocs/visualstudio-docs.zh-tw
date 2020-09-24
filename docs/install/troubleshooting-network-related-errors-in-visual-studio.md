@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0e127006976c484d1e4fc2fe011af979af7eb7a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0abe51b9f01d0c1f380c4762a7d0d4f457964aa7
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114982"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135127"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>當您安裝或使用 Visual Studio 時針對網路相關錯誤進行疑難排解
 
@@ -91,6 +91,22 @@ ms.locfileid: "76114982"
      > 如需詳細資訊，請參閱[ &lt; &gt; (網路設定) ](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/)和[ &lt; proxy &gt; 元素 (網路設定) ](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)頁面中的 defaultProxy 元素。
 
 ::: moniker-end
+
+## <a name="error-disconnected-from-visual-studio-when-attempting-to-report-a-problem"></a>錯誤：嘗試回報問題時「中斷與 Visual Studio」的連線
+
+當使用者透過 proxy 伺服器連線到網際網路，而 proxy 伺服器封鎖了 Visual Studio 對某些網路資源進行的呼叫時，通常就會發生此錯誤。
+
+### <a name="to-fix-this-proxy-error"></a>修復這個 Proxy 錯誤
+
+1. 在： **% ProgramFiles (x86) % \ Microsoft Visual Studio\Installer**或 **%ProgramFiles%\Microsoft Visual Studio\Installer**中，尋找 feedback.exe 設定檔)  (**feedback.exe.config** 。
+
+2. 在設定檔中，檢查是否有下列程式碼：如果程式碼不存在，請將它新增到最後 `</configuration>` 一行之前。
+
+   ```xml
+   <system.net>
+       <defaultProxy useDefaultCredentials="true" />
+   </system.net>
+   ```
 
 ## <a name="error-the-underlying-connection-was-closed"></a>錯誤：「基礎連線已關閉」
 

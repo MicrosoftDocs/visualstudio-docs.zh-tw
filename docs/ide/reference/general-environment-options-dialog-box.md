@@ -20,16 +20,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 973e08ca6555f7da7873d3068e2794b8d34e3640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfd1b876e58c05c668fd74087d5131bb1e9fcd40
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569435"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135088"
 ---
 # <a name="options-dialog-box-environment--general"></a>選項對話方塊：環境 \> 一般
 
-使用此頁面來變更整合式開發環境 (IDE) 之色彩佈景主題、狀態列設定和副檔名關聯等其他選項。 開啟 [工具]**** 功能表，並選擇 [選項]****，然後開啟 [環境]**** 資料夾，再選擇 [一般]**** 頁面，即可存取 [選項]**** 對話方塊。 如果此頁面未出現在清單中，請在 [選項]**** 對話方塊中選取 [顯示所有設定]**** 核取方塊。
+使用此頁面來變更整合式開發環境 (IDE) 之色彩佈景主題、狀態列設定和副檔名關聯等其他選項。 開啟 [工具]**** 功能表，並選擇 [選項]****，然後開啟 [環境]**** 資料夾，再選擇 [一般]**** 頁面，即可存取 [選項]**** 對話方塊。
 
 ## <a name="visual-experience"></a>視覺效果
 
