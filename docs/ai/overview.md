@@ -8,12 +8,12 @@ ms.date: 11/13/2017
 ms.topic: overview
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f4d04e64589ca8db9c53d5c4128391974b297d0
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: b4f2f9b1e827bc7bcb53f37693b811dcaecf1d09
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485381"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211046"
 ---
 # <a name="overview-of-visual-studio-tools-for-ai"></a>Visual Studio Tools for AI 總覽
 
@@ -23,7 +23,7 @@ Visual Studio Tools for AI 是一種整合式開發環境，可用來建立、�
 
 請參閱 [安裝 Visual Studio Tools for AI](installation.md) 頁面，以瞭解如何下載及安裝延伸模組。
 
-## <a name="5-minute-quickstart"></a>5分鐘快速入門 
+## <a name="5-minute-quickstart"></a>5分鐘快速入門
 
 瞭解如何使用[TensorFlow 和 Python](tensorflow-local.md)執行深度學習解決方案
 
@@ -40,4 +40,4 @@ Visual Studio Tools for AI 是一種整合式開發環境，可用來建立、�
 若要深入瞭解 Visual Studio Tools for AI 的詳細資訊，包括系統需求和支援選項，請參閱 [ [關於 Visual Studio Tools for AI](about-ai-tools.md) ] 頁面。
 
 ## <a name="see-also"></a>另請參閱
-[Visual Studio 擴充性](../extensibility/index.yml?view=vs-2017)
+[Visual Studio 擴充性](../extensibility/index.yml?view=vs-2017&preserve-view=true)

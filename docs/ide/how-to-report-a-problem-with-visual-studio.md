@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2deb3f8ff19c2d7805031c0c3ba02bc82b8a3e7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d8e0718eb01f422ad435492304e77d73c14b4dee
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810870"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211171"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>如何回報 Visual Studio 或 Visual Studio 安裝程式的問題
 
@@ -51,11 +51,11 @@ ms.locfileid: "90810870"
 
     您甚至可以直接在瀏覽器中裁剪螢幕擷取畫面，以移除任何敏感性或不相關的部分。
 
-4. 協助 Visual Studio 工程團隊解決問題的其中一種最佳方式，就是提供追蹤和堆積傾印檔案供他們查看。 您可以藉由記錄導致錯誤的步驟來輕鬆執行此動作。 
+4. 協助 Visual Studio 工程團隊解決問題的其中一種最佳方式，就是提供追蹤和堆積傾印檔案供他們查看。 您可以藉由記錄導致錯誤的步驟來輕鬆執行此動作。
 
     ![只記錄您 ](../ide/media/feedback-recording.png) *的動作 Microsoft 工程師可以看到記錄*
 
-5. 如果您認為附加的檔案可協助診斷問題，請檢查這些檔案並上傳其他檔案。   
+5. 如果您認為附加的檔案可協助診斷問題，請檢查這些檔案並上傳其他檔案。
 
     ![附加 ](../ide/media/feedback-attachments.png) *的檔案只有 Microsoft 工程師可以看到附加的*檔案
 

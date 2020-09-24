@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 08501d71400a0df139022f04e68573d0dd1449d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99274d3884d002f6dee29a632f8a7c08ac90a56f
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315131"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211124"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中 Python 的選項
 
@@ -51,7 +51,7 @@ ms.locfileid: "89315131"
 | **顯示建立環境的通知列** | 開啟 | *僅限 Visual Studio 2019。* 當設定這個選項且使用者開啟包含 *requirements.txt* 或 *environment.yml* 檔案的專案時，Visual Studio 會顯示資訊列，其中包含個別建立虛擬環境或 conda 環境，而不是使用預設全域環境的建議。 |
 | **顯示安裝套件的通知列** | 開啟 | *僅限 Visual Studio 2019。* 當設定這個選項且使用者開啟包含 *requirements.txt* 檔案的專案 (且沒有使用預設全域環境) 時，Visual Studio 會比較那些需求與目前環境中已安裝的套件。 如果遺失任何套件，Visual Studio 會顯示安裝那些相依項目的提示。 |
 | **一律以系統管理員身分執行套件管理員** | 關閉 | 一律提高所有環境的 `pip install` 和類似套件管理員作業的權限。 安裝套件時，如果環境位在檔案系統的受保護區域 (例如 *c:\Program Files*)，則 Visual Studio 會提示需要系統管理員權限。 您可以在該提示中選擇一律只針對該環境提高安裝命令的權限。 查看 [ [套件]](python-environments-window-tab-reference.md#packages-tab)索引標籤。 |
-| **第一次使用時自動產生完成 DB** | 開啟 | 適用於 Visual Studio 2017 15.5 版及較舊版本，也適用於使用 IntelliSense 資料庫的較新版本。** 當您撰寫使用程式庫的程式碼時，系統會優先完成該程式庫的資料庫。 如需詳細資訊，請參閱 [IntelliSense 索引標籤](python-environments-window-tab-reference.md?view=vs-2017#intellisense-tab)。 |
+| **第一次使用時自動產生完成 DB** | 開啟 | 適用於 Visual Studio 2017 15.5 版及較舊版本，也適用於使用 IntelliSense 資料庫的較新版本。** 當您撰寫使用程式庫的程式碼時，系統會優先完成該程式庫的資料庫。 如需詳細資訊，請參閱 [IntelliSense 索引標籤](python-environments-window-tab-reference.md?view=vs-2017&preserve-view=true#intellisense-tab)。 |
 | **略過全系統的 PYTHONPATH 變數** | 開啟 | 因為 Visual Studio 提供更多直接方法來指定環境和專案中的搜尋路徑，所以預設會略過 PYTHONPATH。 如需詳細資訊，請參閱[搜尋路徑](search-paths.md)。 |
 | **新增連結的檔案時更新搜尋路徑** | 開啟 | 設定時，將 [連結](managing-python-projects-in-visual-studio.md#linked-files) 的檔案加入至專案會更新 [搜尋路徑](search-paths.md) ，讓 IntelliSense 可以將連結檔案資料夾的內容包含在完成資料庫中。 清除此選項，可從完成資料庫排除這類內容。 |
 | **找不到匯入的模組時發出警告** | 開啟 | 清除此選項，可在您知道匯入的模組目前不可用但不會影響程式碼作業時隱藏警告。 |

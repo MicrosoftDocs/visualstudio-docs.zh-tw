@@ -17,12 +17,12 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: e5a4cca61b32772f47c5fa350123bc45c8f8d671
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a64eee360c6039350683bb4add5be7126a4d444
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87805796"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211244"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio 工作負載與元件識別碼
 
@@ -32,7 +32,7 @@ ms.locfileid: "87805796"
 
 **[15.9 版](/visualstudio/releasenotes/vs2017-relnotes/)的更新**
 
-| **版本(Edition)** | **識別碼** | **描述** |
+| **版本(Edition)** | **識別碼** | **說明** |
 | ----------- | ------ | --------------- |
 | [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md?vs-2017) | Microsoft.VisualStudio.Product.Enterprise | 適用於任何規模之小組間的生產力和協調的 Microsoft DevOps 方案 |
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md?vs-2017) | Microsoft.VisualStudio.Product.Professional | 適用於小型小組的專業開發人員工具和服務 |
@@ -45,7 +45,7 @@ ms.locfileid: "87805796"
 | [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md?vs-2017) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Professional 2017 |
 | [Visual&nbsp;Studio Feedback&nbsp;Client&nbsp;2017](workload-component-id-vs-feedback-client.md?vs-2017) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio Feedback Client 2017 |
 
-如需如何使用這些清單的詳細資訊，請參閱[使用命令列參數安裝 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) 頁面和[如何：將擴充性專案移轉到 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017) 頁面。
+如需如何使用這些清單的詳細資訊，請參閱[使用命令列參數安裝 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017&preserve-view=true) 頁面和[如何：將擴充性專案移轉到 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017&preserve-view=true) 頁面。
 
 ::: moniker-end
 
@@ -53,7 +53,7 @@ ms.locfileid: "87805796"
 
 **[16.7 版](/visualstudio/releases/2019/release-notes/)的更新**
 
-| **版本(Edition)** | **識別碼** | **描述** |
+| **版本(Edition)** | **識別碼** | **說明** |
 | ----------- | ------ | --------------- |
 | [Visual &nbsp; Studio Enterprise &nbsp; 2019](workload-component-id-vs-enterprise.md?vs-2019) | Microsoft.VisualStudio.Product.Enterprise | 適用於任何規模之小組間的生產力和協調的 Microsoft DevOps 方案 |
 | [Visual &nbsp; Studio Professional &nbsp; 2019](workload-component-id-vs-professional.md?vs-2019) | Microsoft.VisualStudio.Product.Professional | 適用於小型小組的專業開發人員工具和服務 |
@@ -66,7 +66,7 @@ ms.locfileid: "87805796"
 如需如何使用這些清單的詳細資訊，請參閱 [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) 頁面和如何：將擴充性 [專案遷移至 Visual Studio](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019) 頁面。
 
 > [!NOTE]
-> 如需先前版本的工作負載和元件識別碼清單，請參閱 [Visual Studio 2017 工作負載和元件識別碼](workload-and-component-ids.md?view=vs-2017)
+> 如需先前版本的工作負載和元件識別碼清單，請參閱 [Visual Studio 2017 工作負載和元件識別碼](workload-and-component-ids.md?view=vs-2017&preserve-view=true)
 
 ::: moniker-end
 

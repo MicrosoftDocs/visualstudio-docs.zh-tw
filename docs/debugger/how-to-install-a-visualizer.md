@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cce59dfb39da71b8ff87efd49de9e2e0f6cdbd0
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6410e9ba1250da5a0a247c786e4aada310186c4a
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851407"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211361"
 ---
 # <a name="how-to-install-a-visualizer"></a>如何：安裝視覺化檢視
 建立視覺化檢視後，您必須安裝該視覺化檢視，使 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可以使用它。 安裝視覺化檢視的程序很簡單。
@@ -32,7 +32,7 @@ ms.locfileid: "90851407"
 
 ::: moniker range=">=vs-2019"
 ### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>安裝 Visual Studio 2019 的視覺化程式
-  
+
 1. 找出包含您所建立之視覺化的 DLL。
 
    一般而言，如果偵錯工具端 DLL 和偵錯工具端 DLL 都指定 **任何 CPU** 做為目標平臺，這是最好的做法。 偵錯工具端 DLL 必須是 **任何 CPU** 或 **32**位。 偵錯工具端 DLL 的目標平臺應該對應至偵錯專案進程。
@@ -42,7 +42,7 @@ ms.locfileid: "90851407"
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
-    
+
 3. 將偵錯工具的 [側邊](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) DLL 複製到下列其中一個位置：
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\`*架構*
@@ -61,7 +61,7 @@ ms.locfileid: "90851407"
 4. 重新啟動偵錯工作階段。
 
 > [!NOTE]
-> Visual Studio 2017 及更舊版本中的程式不同。 請參閱本文的 [先前版本](how-to-install-a-visualizer.md?view=vs-2017) 。
+> Visual Studio 2017 及更舊版本中的程式不同。 請參閱本文的 [先前版本](how-to-install-a-visualizer.md?view=vs-2017&preserve-view=true) 。
 ::: moniker-end
 
 ::: moniker range="vs-2017"

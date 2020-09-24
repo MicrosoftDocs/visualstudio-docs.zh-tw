@@ -4,18 +4,19 @@ description: 在 Visual Studio 中提交效能問題的其他資訊和最佳作�
 ms.custom: SEO-VS-2020
 author: madskristensen
 ms.author: madsk
+manager: jillfra
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 2ae6304e206b2cfe47fa587590b740a91c7fec9f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1567e75d5e0a6f27aee68cd783b9ebd4a70815f4
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810857"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211184"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>如何提高修正效能問題的機會
 
-Visual Studio 使用者廣泛使用「回報[問題](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019)」工具來回報各種問題。 Visual Studio 團隊會在使用者意見反應中損毀並緩慢趨勢，並解決影響廣泛使用者 swath 的問題。 特定意見反應票證越可採取動作，產品團隊越可能更容易診斷及解決。 本檔說明報告損毀或緩慢問題時的最佳作法，使其更具可採取動作。
+Visual Studio 使用者廣泛使用「回報[問題](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019&preserve-view=true)」工具來回報各種問題。 Visual Studio 團隊會在使用者意見反應中損毀並緩慢趨勢，並解決影響廣泛使用者 swath 的問題。 特定意見反應票證越可採取動作，產品團隊越可能更容易診斷及解決。 本檔說明報告損毀或緩慢問題時的最佳作法，使其更具可採取動作。
 
 ## <a name="general-best-practices"></a>一般最佳作法
 
@@ -92,7 +93,7 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\L
 > [!NOTE]
 > 使用工作管理員所捕捉的傾印可能是錯誤的位，因此不能使用。 上述程式是捕獲堆積傾印的慣用方法。 如果您想要使用工作管理員，請關閉目前正在執行的帳戶，啟動32位工作管理員 (% windir% \\ syswow64 \\taskmgr.exe) ，然後從該處收集堆積傾印。
 
-> [!NOTE] 
+> [!NOTE]
 > 這個方法所產生的每個傾印檔案大小上限為 4 GB。 請務必將 DumpFolder 設定為具有適當磁片磁碟機空間的位置，或適當地調整 DumpCount。
 
 每次 Visual Studio 損毀時，就會devenv.exe 建立傾印檔案 ** 。number]** 在設定的位置中的 dmp 檔案。
@@ -105,7 +106,7 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\L
 
 3. 遵循「[如何報告問題](./how-to-report-a-problem-with-visual-studio.md)」中的步驟，並將堆積傾印附加至新的意見專案。
 
-> [!NOTE] 
+> [!NOTE]
 > **最寶貴的意見反應：** 在此情況下，最寶貴的意見反應是在損毀時捕捉的堆積傾印。
 
 ## <a name="unresponsiveness"></a>無回應
@@ -118,18 +119,18 @@ VS 會有一段很長的時間沒有回應。
 **未知的無回應**
 
 如果無回應以無法預期的方式資訊清單，在下一次出現時，會啟動 Visual Studio 的新實例，並從該實例回報問題。
-在 [ [記錄] 畫面](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019#record-a-repro)中，請務必選取沒有回應的 Visual Studio 會話。
+在 [記錄] 畫面中，請務必選取沒有回應的 Visual Studio 會話。  (如需如何記錄可追蹤以重現問題之動作的詳細資訊，請參閱 [如何回報問題](./how-to-report-a-problem-with-visual-studio.md) 頁面上的步驟8。 ) 
 
 如果沒有回應的 Visual Studio 實例是以系統管理員模式啟動，則第二個實例也需要在系統管理員模式下啟動。
 
->[!NOTE] 
+>[!NOTE]
 > **最寶貴的意見反應：** 在此情況下，最寶貴的意見反應是在無回應時所捕捉的堆積傾印。
 
 ## <a name="slowness-and-high-cpu-issues"></a>緩慢和高 CPU 問題
 
 造成緩慢或高 CPU 使用量問題的最高動作，就是當執行緩慢作業或高 CPU 事件正在進行時所捕捉到的效能追蹤。
 
->[!NOTE] 
+>[!NOTE]
 > 可能的話，請將每個案例隔離在個別的特定意見報告中。
 例如，如果輸入和流覽都很慢，請針對每個問題遵循下列步驟一次。 這可協助產品團隊找出特定問題的原因。
 
@@ -165,9 +166,9 @@ VS 會有一段很長的時間沒有回應。
 
 在記錄效能追蹤時，如果您要報告的緩慢作業或高 CPU 已結束，則會立即停止錄製。 如果收集太多資訊，則會覆寫最舊的資訊。 如果追蹤未在幾秒鐘內停止 () 在有趣的作業之後，就會覆寫有用的追蹤資料。
 
-請勿直接將效能追蹤附加至開發人員社群網站上的現有意見反應專案。 Visual Studio 的內建「回報問題」工具中，要求/提供其他資訊是支援的工作流程。 如果需要效能追蹤才能解決先前的意見專案，我們會將意見專案的狀態設為「需要更多資訊」，這可透過與報告新問題相同的方式回應。 如需詳細指示，請參閱「回報問題」工具檔中的「 [需要更多資訊」一節](./how-to-report-a-problem-with-visual-studio.md?view=vs-2017#when-further-information-is-needed-need-more-info) 。
+請勿直接將效能追蹤附加至開發人員社群網站上的現有意見反應專案。 Visual Studio 的內建「回報問題」工具中，要求/提供其他資訊是支援的工作流程。 如果需要效能追蹤才能解決先前的意見專案，我們會將意見專案的狀態設為「需要更多資訊」，這可透過與報告新問題相同的方式回應。 如需詳細指示，請參閱「回報問題」工具檔中的「 [需要更多資訊」一節](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed) 。
 
-> [!NOTE] 
+> [!NOTE]
 > **最寶貴的意見反應：** 對於幾乎所有的緩慢/高 CPU 問題而言，最有價值的意見反應是您嘗試進行之動作的高階描述，以及效能追蹤 (\*.etl.zip) 會在該時間內捕捉行為。
 
 **Advanced Performance 追蹤**
@@ -177,7 +178,8 @@ VS 會有一段很長的時間沒有回應。
 ## <a name="out-of-process-issues"></a>跨進程問題
 
 > [!NOTE]
-> 從 Visual Studio 2019 16.3 版開始，系統會自動將跨進程記錄檔附加至使用 [回報問題] 工具提交的意見反應。 但是，如果問題是直接重現的，則遵循下列步驟仍然可以協助新增額外資訊，以協助更妥善診斷問題。
+> 從 Visual Studio 2019 16.3 版開始，系統會自動將跨進程記錄檔附加至使用 [回報問題] 工具提交的意見反應。
+但是，如果問題是直接重現的，則遵循下列步驟仍然可以協助新增額外資訊，以協助更妥善診斷問題。
 
 有幾個附屬進程會平行執行以 Visual Studio，並從主要 Visual Studio 進程以外提供各種功能。 如果其中一個附屬進程發生錯誤，通常會在 Visual Studio 端看到 ' StreamJsonRpc. RemoteInvocationException ' 或 ' StreamJsonRpc. ConnectionLostException '。
 

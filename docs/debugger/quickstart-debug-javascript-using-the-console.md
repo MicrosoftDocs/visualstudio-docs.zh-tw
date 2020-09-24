@@ -16,16 +16,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e56350c2fd0583d3fef4e77e559a4df1fd894663
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aca36c56bfeed4fd5d8b240cce6bea5b55b75d85
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348102"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211072"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>在 Visual Studio 中使用主控台來調試 JavaScript
 
-您可以使用 [JavaScript 主控台] 視窗，與使用 JavaScript 建立的 UWP 應用程式進行互動和偵測。 UWP 應用程式和使用 Visual Studio Tools 針對 Apache Cordova 所建立的應用程式支援這些功能。 如需主控台命令參考，請參閱 [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017)。
+您可以使用 [JavaScript 主控台] 視窗，與使用 JavaScript 建立的 UWP 應用程式進行互動和偵測。 UWP 應用程式和使用 Visual Studio Tools 針對 Apache Cordova 所建立的應用程式支援這些功能。 如需主控台命令參考，請參閱 [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)。
 
 [JavaScript 主控台] 視窗可讓您：
 
@@ -39,7 +39,7 @@ ms.locfileid: "85348102"
 
 - 檢視 JavaScript 錯誤和例外狀況，以及文件物件模型 (DOM) 和 Windows 執行階段例外狀況。
 
-- 執行其他工作，例如清除畫面。 如需命令的完整清單，請參閱 [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017) 。
+- 執行其他工作，例如清除畫面。 如需命令的完整清單，請參閱 [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true) 。
 
 > [!TIP]
 > 如果 [JavaScript 主控台] 視窗已關閉，請選擇 [ **Debug** >  **Windows**  >  **JavaScript 主控台**] 以重新開啟它。 只有在指令碼偵錯工作階段期間，才會出現此視窗。
@@ -251,9 +251,9 @@ ms.locfileid: "85348102"
 
 ## <a name="see-also"></a>另請參閱
 - [Debug apps in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
-- [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017)
+- [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)
-- [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
+- [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017&preserve-view=true)
 - [偵錯 HTML、CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)
 - [偵錯 WebView 控制項](../debugger/debug-a-webview-control.md)

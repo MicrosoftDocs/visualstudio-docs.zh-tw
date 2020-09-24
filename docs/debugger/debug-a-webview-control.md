@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a96e4db66ec26870ac92c52209d7aa6f22225b21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0cab4a77c601414e766851aaf048fb3c32f6458
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350637"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211111"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>在 UWP 應用程式中將 Web 程式控制項進行偵錯工具
 
@@ -27,7 +27,7 @@ ms.locfileid: "85350637"
 
 - 開啟 `WebView` 執行個體的 [DOM 總管](../debugger/quickstart-debug-html-and-css.md)，然後檢查 DOM 元素、調查 CSS 樣式問題，並測試動態呈現的樣式變更。
 
-- 選取 `WebView` 執行個體中顯示的網頁或 `iFrame`，作為 [JavaScript Console](../debugger/javascript-console-commands.md?view=vs-2017) 視窗中的目標，然後使用主控台命令與網頁互動。 主控台提供對於目前指令碼執行內容的存取。
+- 選取 `WebView` 執行個體中顯示的網頁或 `iFrame`，作為 [JavaScript Console](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true) 視窗中的目標，然後使用主控台命令與網頁互動。 主控台提供對於目前指令碼執行內容的存取。
 
 ### <a name="attach-the-debugger-c-visual-basic-c"></a>附加偵錯工具 (C#、Visual Basic、C++)
 
@@ -81,7 +81,7 @@ ms.locfileid: "85350637"
     > [!NOTE]
     > 使用主控台，您可以一次與單一 `WebView`、`iFrame`、共用連絡人或 Web 背景工作互動。 每個項目需要個別的 Web 平台主機 (WWAHost.exe) 執行個體。 您一次可以與一個主機互動。
 
-6. 在您的應用程式中查看及修改變數，或使用主控台命令（如 [快速入門： Debug javascript](../debugger/quickstart-debug-javascript-using-the-console.md) 和 [javascript 主控台命令](../debugger/javascript-console-commands.md?view=vs-2017)中所述）。
+6. 在您的應用程式中查看及修改變數，或使用主控台命令（如 [快速入門： Debug javascript](../debugger/quickstart-debug-javascript-using-the-console.md) 和 [javascript 主控台命令](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)中所述）。
 
 ## <a name="see-also"></a>另請參閱
 

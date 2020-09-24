@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: b0e5a2d09cad35266bacc73580b2284f66bd32f5
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 1a57d124029f5c654d41dcea621d6df95e29842f
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713460"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211309"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>並存安裝 Visual Studio 版本
 
@@ -28,7 +28,7 @@ ms.locfileid: "90713460"
 
 * 如果您使用 Visual Studio 2017 開啟於 Visual Studio 2015 所建立的解決方案，只要未實作 Visual Studio 2017 特定的任何功能，稍後就可以在舊版中開啟和修改該方案。
 
-* 如果您嘗試使用 Visual Studio 2017 開啟使用 Visual Studio 2015 或以前版本所建立的方案，可能需要修改專案和檔案，才能與 Visual Studio 2017 相容。 如需詳細資訊，請參閱[移植、移轉和升級 Visual Studio 專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)頁面。
+* 如果您嘗試使用 Visual Studio 2017 開啟使用 Visual Studio 2015 或以前版本所建立的方案，可能需要修改專案和檔案，才能與 Visual Studio 2017 相容。 如需詳細資訊，請參閱[移植、移轉和升級 Visual Studio 專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017&preserve-view=true)頁面。
 
 ::: moniker-end
 
@@ -75,17 +75,17 @@ Visual Basic、Visual C# 或 Visual F# 專案中 [專案設計工具] **** 使�
 
 | 語言 | 主題 |
 |--------------|-----------|
-| Visual Basic | [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
-| Visual C# | [專案設計工具，應用程式頁 (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
-| Visual F# | [在 Visual Studio 中使用 Visual F# 進行開發](../ide/fsharp-visual-studio.md?view=vs-2017) |
+| Visual Basic | [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017&preserve-view=true) |
+| Visual C# | [專案設計工具，應用程式頁 (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017&preserve-view=true) |
+| Visual F# | [在 Visual Studio 中使用 Visual F# 進行開發](../ide/fsharp-visual-studio.md?view=vs-2017&preserve-view=true) |
 |C++ | [作法：修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>另請參閱
 
-* [安裝 Visual Studio](install-visual-studio.md?view=vs-2017)
-* [移植、遷移及升級 Visual Studio 專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
+* [安裝 Visual Studio](install-visual-studio.md?view=vs-2017&preserve-view=true)
+* [移植、遷移及升級 Visual Studio 專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017&preserve-view=true)
 * [建置 C/C++ 隔離應用程式和並存組件](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end

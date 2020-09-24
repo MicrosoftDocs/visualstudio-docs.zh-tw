@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 9c16f16a8c44b50fd7c637dbd921fd8cd3779dc4
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: d4ed87e082e5c4fa2722a44fbbfe1dcef803f247
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713971"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211322"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio 的專案移轉與升級參考
 
@@ -56,7 +56,7 @@ Visual Studio 的每個版本一般都支援大部分先前的專案、檔案及
 | LightSwitch | Visual Studio 2017 不再支援 LightSwitch。 在 Visual Studio 2013 或 Visual Studio 2015 中，如果開啟使用 Visual Studio 2012 和更早版本所建立的專案，系統會將該專案升級，並僅可在 Visual Studio 2013 或 Visual Studio 2015 之後的版本中開啟。 |
 | Microsoft Azure Tools for Visual Studio | 若要開啟這些類型的專案，請先安裝 [Azure SDK for .NET](https://azure.microsoft.com/downloads/)，然後再開啟專案。 如有必要，系統會更新您的專案。 |
 | 模型檢視控制器架構 (ASP.NET MVC) | 針對 MVC 版本和 Visual Studio 的支援：<ul><li>Visual Studio 2010 SP1 支援 MVC 2 和 MVC 3；您可透過 [ASP.NET 4 MVC 4 for Visual Studio 2010 SP1 下載](https://www.microsoft.com/download/details.aspx?id=30683)來新增 MVC 4 的支援</li><li>Visual Studio 2012 只支援 MVC 3 和 MVC 4</li><li>Visual Studio 2013 只支援 MVC 4 和 MVC 5</li><li>Visual Studio 2017 和 Visual Studio 2015 支援 MVC 4 (您可以開啟現有專案，但不能建立新的專案) 和 MVC 5</li></ul><br/>升級 MVC 版本：<ul><li>如需如何從 MVC 2 自動升級到 MVC 3 的資訊，請參閱 [ASP.NET MVC 3 應用程式升級程式](https://archive.codeplex.com/?p=aspnet)。</li><li>如需關於如何從 MVC 2 手動升級至 MVC 3 的詳細資訊，請參閱 [Upgrading an ASP.NET MVC 2 Project to ASP.NET MVC 3 Tools Update](https://archive.codeplex.com/?p=aspnet)(將 ASP.NET MVC 2 專案升級至 ASP.NET MVC 3 工具更新)。</li><li>如需關於如何從 MVC 3 手動升級至 MVC 4 的詳細資訊，請參閱 [Upgrading an ASP.NET MVC 3 Project to ASP.NET MVC 4](/aspnet/whitepapers/mvc4-release-notes)(將 ASP.NET MVC 3 專案升級至 ASP.NET MVC 4)。 如果您的專案是以 .NET Framework 3.5 SP1 為目標，則必須將目標重定為使用 .NET Framework 4。</li><li>如需如何將 MVC 4 手動升級為 MVC 5 的資訊，請參閱 [How to Upgrade an ASP.NET MVC 4 and Web API Project to ASP.NET MVC 5 and Web API 2](https://www.asp.net/mvc/overview/releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2) (如何將 ASP.NET MVC 4 和 Web API 專案升級至 ASP.NET MVC 5 和 Web API 2)。</li></ul> |
-| 模型化 | 如果您允許 Visual Studio 自動更新專案，則可以在 Visual Studio 2015、Visual Studio 2013 或 Visual Studio 2012 中開啟專案。<br/><br/>Visual Studio 2015 和 Visual Studio 2017 之間的模型專案格式沒有變更，因此在任一版本都可以開啟和修改專案。 不過，Visual Studio 2017 的行為有下列差異：<ul><li>在功能表和範本中，模型專案現在稱為「相依性驗證」專案。</li><li>Visual Studio 2017 不再支援 UML 圖表。 UML 檔案在方案總管中的列出方式與之前相同，但會以 XML 檔案的形式開啟。 您可以使用 Visual Studio 2015 來檢視、建立或編輯 UML 圖表。</li><li>在 Visual Studio 2017 中建置專案模型時，系統將不再執行架構相依性的驗證。 相反地，系統會在每個程式碼專案建置時執行驗證。 此變更不會影響專案模型建立，但卻必須對要驗證的程式碼專案進行變更。 Visual Studio 2017 可以自動對程式碼專案進行必要的變更 ([詳細資訊](../modeling/validate-code-with-layer-diagrams.md?view=vs-2017#live-dependency-validation))。</li></ul> |
+| 模型化 | 如果您允許 Visual Studio 自動更新專案，則可以在 Visual Studio 2015、Visual Studio 2013 或 Visual Studio 2012 中開啟專案。<br/><br/>Visual Studio 2015 和 Visual Studio 2017 之間的模型專案格式沒有變更，因此在任一版本都可以開啟和修改專案。 不過，Visual Studio 2017 的行為有下列差異：<ul><li>在功能表和範本中，模型專案現在稱為「相依性驗證」專案。</li><li>Visual Studio 2017 不再支援 UML 圖表。 UML 檔案在方案總管中的列出方式與之前相同，但會以 XML 檔案的形式開啟。 您可以使用 Visual Studio 2015 來檢視、建立或編輯 UML 圖表。</li><li>在 Visual Studio 2017 中建置專案模型時，系統將不再執行架構相依性的驗證。 相反地，系統會在每個程式碼專案建置時執行驗證。 此變更不會影響專案模型建立，但卻必須對要驗證的程式碼專案進行變更。 Visual Studio 2017 可以自動對程式碼專案進行必要的變更 ([詳細資訊](../modeling/validate-code-with-layer-diagrams.md?view=vs-2017&preserve-view=true#live-dependency-validation))。</li></ul> |
 | MSI 安裝程式 (vdproj) | 請參閱＜InstallShield 專案＞。 |
 | Office 2007 VSTO | 需要針對 Visual Studio 2017 進行單向升級。 |
 | Office 2010 VSTO | 如果專案是以 .NET Framework 4 為目標，您可以在 Visual Studio 2010 SP1 及更新版本中開啟該專案。 所有其他專案則需要單向升級。 |
@@ -97,7 +97,7 @@ Visual Studio 的每個新版本通常都會嘗試維持與舊版的相容性，
 
 在此情況下，自然會產生下列問題：您是否應該嘗試以手動方式更新，或將專案移轉至較新的 `ToolsVersion` 值。 進行這類變更是不必要的作業，而且可能會產生許多錯誤和警告，您必須修正這些問題才能重新建置專案。 此外，如果 Visual Studio 日後移除對特定 `ToolsVersion` 的支援，則開啟專案將會明確地觸發專案移轉處理序，因為 `ToolsVersion` 值必須進行變更。 在這種情況下，該特定專案類型的子系統會確切知道需要變更哪些項目，而且會遵循本文稍早所述自動進行這些變更。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 請參閱下列文章以了解進一步的討論內容：
 
@@ -127,7 +127,7 @@ Visual Studio 的每個新版本都支援大部分的專案、檔案及其他資
 
 下列清單描述 Visual Studio 2019 對使用舊版建立之專案的支援。
 
-如果您在這裡看不到此處所列的專案或檔案類型，請參閱 [這篇文章的 Visual Studio 2017 版本](?view=vs-2017)。 您也可以使用此頁面底部的 [**傳送關於**  >  **此頁面**的意見反應] 按鈕，以提供專案的詳細資料。 (如果您使用匿名的「本頁對您有幫助嗎？」 控制項，我們將無法回應您的意見反應。)
+如果您在這裡看不到此處所列的專案或檔案類型，請參閱 [這篇文章的 Visual Studio 2017 版本](?view=vs-2017&preserve-view=true)。 您也可以使用此頁面底部的 [**傳送關於**  >  **此頁面**的意見反應] 按鈕，以提供專案的詳細資料。 (如果您使用匿名的「本頁對您有幫助嗎？」 控制項，我們將無法回應您的意見反應。)
 
 | 專案類型 | 支援 |
 | --- | --- |
@@ -191,7 +191,7 @@ Visual Studio 的每個新版本都支援大部分的專案、檔案及其他資
 
 您可能會想要以手動方式將專案更新或遷移至較新的 `ToolsVersion` 值。 不需要進行這項變更，而且可能會產生許多錯誤和警告，您必須修正這些錯誤和警告，才能讓專案再次建立。 此外，如果 Visual Studio 不支援未來的特定 `ToolsVersion` ，則當您開啟專案時，專案就會觸發專案遷移程式，因為它的 `ToolsVersion` 值必須變更。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 請參閱下列文章以了解進一步的討論內容：
 
@@ -200,7 +200,7 @@ Visual Studio 的每個新版本都支援大部分的專案、檔案及其他資
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 2017 的專案移轉與升級參考](?view=vs-2017)
+- [Visual Studio 2017 的專案移轉與升級參考](?view=vs-2017&preserve-view=true)
 - [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing/)
 
 ::: moniker-end

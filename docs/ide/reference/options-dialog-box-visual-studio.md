@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bad4e0b7db883a7604d674b854a9c3f794715d8d
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.openlocfilehash: 068c80221a572747ab99e41e78945fe55c57c451
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/24/2020
-ms.locfileid: "91135101"
+ms.locfileid: "91211257"
 ---
 # <a name="options-dialog-box-visual-studio"></a>[選項] 對話方塊 (Visual Studio)
 
@@ -33,7 +33,7 @@ ms.locfileid: "91135101"
 在功能載入記憶體前，瀏覽窗格不會顯示 IDE 功能的選項。 因此，當您開始新的工作階段時，顯示的選項和您上個工作階段結束時所顯示的選項可能不一樣。 當您建立專案或執行使用特定應用程式的命令時，會在 [選項] 對話方塊中新增相關選項的節點。 只要 IDE 功能保留在記憶體中，就可以一直使用這些新增的選項。
 
 > [!NOTE]
-> 某些設定集合會設定 [選項] 對話方塊瀏覽窗格中顯示的頁數範圍。 您可以選取 [顯示所有設定]**** 選擇檢視所有可能的頁面。
+> 某些設定集合會設定 [選項] 對話方塊瀏覽窗格中顯示的頁數範圍。
 
 ## <a name="how-options-are-applied"></a>選項套用的方式
 

@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a43ac0930c4805d18c60a18e1b48882b2fed76de
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 5e270956fc6c8f1d7432cb65e1eaf37fdc58907c
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600188"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211085"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 應用程式中進行 HTML 和 CSS 的偵錯工具
 
@@ -237,7 +237,7 @@ DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更�
 
 - 使用 [ **選取元素** ] 按鈕 (Ctrl+B)。
 
-- 使用 [ `select` 命令，此為其中一個 [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017)。
+- 使用 [ `select` 命令，此為其中一個 [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)。
 
   當您使用 [DOM 總管] 視窗選取項目，並將滑鼠指標放在項目上時，對應的項目會在執行的應用程式中反白顯示。 您必須在 [DOM 總管] 中按一下元素將它選取，或者也可以使用方向鍵來反白顯示及選取元素。此外，您還可以使用 [ **選取元素** ] 按鈕來選取 [DOM 總管] 中的元素。 下圖顯示 [ **選取項目** ] 按鈕。
 
@@ -259,7 +259,7 @@ DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更�
 - [Debug apps in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [偵錯 WebView 控制項](../debugger/debug-a-webview-control.md)
-- [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
-- [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017)
+- [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017&preserve-view=true)
+- [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [偵錯 HTML、CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [產品支援和協助工具](/previous-versions/tzbxw1af(v=vs.120))
