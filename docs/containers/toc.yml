@@ -46,8 +46,6 @@
           href: container-launch-settings.md
 - name: 使用 Kubernetes 進行開發
   items:
-    - name: Visual Studio 中的 Kubernetes
-      href: tutorial-kubernetes-tools.md
     - name: Bridge to Kubernetes
       href: bridge-to-kubernetes.md
     - name: Bridge to Kubernetes 的運作方式

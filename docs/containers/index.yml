@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 11/25/2019
   ms.author: ghogen
-  ms.openlocfilehash: ed8b37ece1f5941d70363a19f48dccb1938ce440
-  ms.sourcegitcommit: f9179a3a6d74fbd871f62b72491e70b9e7b05637
+  ms.openlocfilehash: 7dd543b176ac5c95bf084658583bf34db1294c82
+  ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/21/2020
-  ms.locfileid: "90845504"
+  ms.lasthandoff: 09/24/2020
+  ms.locfileid: "91211059"
 landingContent:
 - title: 容器工具
   linkLists:
@@ -31,8 +31,6 @@ landingContent:
       url: container-tools.md
     - text: 在容器中執行建置工具
       url: ../install/build-tools-container.md
-    - text: 適用於 Kubernetes 的 Visual Studio Tools
-      url: tutorial-kubernetes-tools.md
 - title: 開發容器化應用程式
   linkLists:
   - linkListType: tutorial
@@ -77,10 +75,6 @@ landingContent:
       url: container-tools-configure.md
 - title: Kubernetes 開發
   linkLists:
-  - linkListType: tutorial
-    links:
-    - text: 適用於 Kubernetes 的 Visual Studio Tools
-      url: tutorial-kubernetes-tools.md
   - linkListType: quickstart
     links:
     - text: 將 Bridge to Kubernetes 與 Visual Studio 搭配使用
