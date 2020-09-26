@@ -15,18 +15,18 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: a502c8bfc6fcd2c03e3c2b35d65eb81f28eeaa61
-  ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+  ms.openlocfilehash: 27efe1b7a8dd936745a0aac97b50dcbb5e8c78ab
+  ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/24/2020
-  ms.locfileid: "91211374"
+  ms.lasthandoff: 09/25/2020
+  ms.locfileid: "91352147"
 productDirectory:
   items:
   - title: Visual Studio
     imageSrc: ./media/vs-ide-2019.svg
     links:
-    - url: ./windows/index.yml?view=vs-2019
+    - url: ./windows/index.yml?view=vs-2019&preserve-view=true
       text: Visual Studio 2019 (目前)
     - url: ./windows/index.yml?view=vs-2017&preserve-view=true
       text: Visual Studio 2017
