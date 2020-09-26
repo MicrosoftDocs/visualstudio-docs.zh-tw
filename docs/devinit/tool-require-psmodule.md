@@ -11,29 +11,28 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 03ebd885f1fae1e7e12d76bb78e03bca0553bab8
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 4e30a333812e2c313f9e35934643bcea03cf054c
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006019"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352232"
 ---
 # <a name="require-psmodule"></a>require-psmodule
 
-此 `require-psmodule` 工具可用來透過 [install-Module] (從[PowerShell 資源庫](https://www.powershellgallery.com/)安裝[powershell 模組](https://docs.microsoft.com/powershell/scripting/developer/module/understanding-a-windows-powershell-module?view=powershell-7&preserve-view=true) https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true ，讓它可以在 powershell 腳本中使用。
+此 `require-psmodule` 工具可用來透過[安裝模組](https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true)從[PowerShell 資源庫](https://www.powershellgallery.com/)安裝[powershell 模組](https://docs.microsoft.com/powershell/scripting/developer/module/understanding-a-windows-powershell-module?view=powershell-7&preserve-view=true)，以便在 powershell 腳本中使用。
 
->
->!提示：安裝模組之後，仍然需要使用 [import-module](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/import-module?view=powershell-7&preserve-view=true)將其匯入腳本。
->
+> [!TIP] 
+> 安裝模組之後，仍然需要使用 [import-module](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/import-module?view=powershell-7&preserve-view=true)將其匯入腳本。
 
-## <a name="usage"></a>使用方式
+## <a name="usage"></a>使用量
 
 如果 `input` 和 `additionalOptions` 屬性都省略或空白，則工具將會遵循以下詳述的 [預設](#default-behavior) 行為。
 
 | 名稱                                             | 類型   | 必要 | 值                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
 | **評論**                                     | 字串 | No       | 選擇性批註屬性。 未使用。                                                   |
-| [**輸入**](#input)                              | 字串 | Yes      | 要安裝的套件 (s) 。 如需詳細資料，請參閱下列 [輸入](#input) 。                       |
+| [**輸入**](#input)                              | 字串 | 是      | 要安裝的套件 (s) 。 如需詳細資料，請參閱下列 [輸入](#input) 。                       |
 | [**additionalOptions**](#additional-options)     | 字串 | No       | 未使用。 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。              |
 
 ### <a name="input"></a>輸入
@@ -52,7 +51,7 @@ ms.locfileid: "91006019"
 
 此 `require-psmodule` 工具會設定一些 `Install-Module` 命令列引數，以確保 `Install-Module` 可執行無周邊。 以下列出這些引數，您可以在 [安裝模組](https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true)中找到這些引數的相關檔。
 
-| Name         | 描述                                                                                                                                                                                                                                                                                                                                                               |
+| 名稱         | 說明                                                                                                                                                                                                                                                                                                                                                               |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **-Force**   | 安裝模組並覆寫有關模組安裝衝突的警告訊息。 如果電腦上已有相同名稱的模組，則強制允許安裝多個版本。 如果存在具有相同名稱和版本的現有模組，將會覆寫模組。 Force 和 AllowClobber 可以在安裝模組命令中一起使用。 |
 | **-WhatIf**  | -傳遞命令的試執行時，會新增 WhatIf 旗標 `devinit` 。                                                                                                                                                                                                                                                                                                       |

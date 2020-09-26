@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9416862ad18bc297696e765d6664a4d08f2cc8dc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f331c794c50d6b6573ad9708da6d153c77f4d77c
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809907"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352345"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中建立及管理 Python 環境
 
@@ -124,7 +124,7 @@ Visual Studio 可以使用全域、虛擬和 Conda 環境。
 
 Visual Studio 對於建立專案的虛擬環境提供直接的支援。 例如，如果您開啟專案，其中包含 *requirements.txt*，或從包含該檔案的範本建立專案，Visual Studio 會提示您自動建立虛擬環境並安裝這些相依性。
 
-在開啟的專案內，您可以隨時建立新的虛擬環境。 在 [方案總管]**** 中，展開專案節點、以滑鼠右鍵按一下 [Python 環境]****，然後選取 [新增虛擬環境]。 如需詳細資訊，請參閱[建立虛擬環境](./selecting-a-python-environment-for-a-project.md?view=vs-2019#create-a-virtual-environment-1)。
+在開啟的專案內，您可以隨時建立新的虛擬環境。 在 [方案總管]**** 中，展開專案節點、以滑鼠右鍵按一下 [Python 環境]****，然後選取 [新增虛擬環境]。 如需詳細資訊，請參閱[建立虛擬環境](./selecting-a-python-environment-for-a-project.md?view=vs-2019&preserve-view=true#create-a-virtual-environment-1)。
 
 Visual Studio 提供的命令也可從虛擬環境產生 *requirements.txt* 檔案，方便您在其他電腦上重新建立環境。 如需詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
 
@@ -157,10 +157,10 @@ Conda 環境是使用 `conda` 工具建立的環境，或在 Visual Studio 2017 
 
 1. 設定下列欄位：
 
-    | 欄位 | 描述 |
+    | 欄位 | 說明 |
     | --- | --- |
-    | 專案 | 要在其中建立環境的專案 (如果您在相同的 Visual Studio 解決方案中有多個專案)。 |
-    | [屬性] | Conda 環境的名稱。 |
+    | 隨附此逐步解說的專案 | 要在其中建立環境的專案 (如果您在相同的 Visual Studio 解決方案中有多個專案)。 |
+    | 名稱 | Conda 環境的名稱。 |
     | 新增套件自 | 如果您有描述相依性的 *environment.yml* 檔案，請選擇 [環境檔案]****，或選擇**一或多個 Anaconda 套件名稱**，並在下方欄位中至少列出一個 Python 封裝或 Python 版本。 套件清單會指示 conda 建立 Python 環境。 若要安裝最新版的 Python，請使用 `python`；若要安裝特定版本，請使用 `python=,major>.<minor>` (就像在 `python=3.7` 中那樣)。 您也可以使用套件按鈕從一系列的功能表中選取 Python 版本和通用套件。 |
     | 設定為目前環境 | 建立環境之後，在所選取的專案中啟動新環境。 |
     | 將新專案設為預設環境 | 在 Visual Studio 中建立的任何新專案中，自動設定並啟動 conda 環境。 此選項和使用 [Python 環境]**** 視窗中的 [將此設定為新專案的預設環境]**** 是一樣的。 |
@@ -239,7 +239,7 @@ Visual Studio 2017 15.7 版和更新版本會自動偵測 Conda 環境，並在 
 
     ![[新增環境] 對話方塊中的 [自訂環境] 選項](media/environments/environments-custom-2-2019.png)
 
-1. 在對話方塊提供的欄位中，輸入或瀏覽 (使用 [...]****) 至 [前置詞路徑]**** 下解譯器的路徑，這會填入大部分的其他欄位。 檢視那些值並視需要修改之後，請選取 [新增]****。 
+1. 在對話方塊提供的欄位中，輸入或瀏覽 (使用 [...]****) 至 [前置詞路徑]**** 下解譯器的路徑，這會填入大部分的其他欄位。 檢視那些值並視需要修改之後，請選取 [新增]****。
 
     ![[新增環境] 對話方塊中用於指定自訂環境選項詳細資料的欄位](media/environments/environments-custom-3-2019.png)
 
@@ -271,7 +271,7 @@ Visual Studio 2017 15.7 版和更新版本會自動偵測 Conda 環境，並在 
     - 若環境仍存在於您的電腦上，請將 **ExecutablePath** 的值變更為正確位置。 如有必要，也請修正 **(預設)** 和 **WindowedExecutablePath** 值。
     - 若環境不再存在於您的電腦上，而您想要從 [Python 環境]**** 視窗中予以移除，請刪除 **InstallPath** 的父節點，例如上圖中的 **3.6**。
     - **HKEY_CURRENT_USER \software\python**中的無效設定覆寫**HKEY_LOCAL_MACHINE \software\python**中的設定
-    
+
 ## <a name="see-also"></a>另請參閱
 
 - [安裝 Python 解譯器](installing-python-interpreters.md)

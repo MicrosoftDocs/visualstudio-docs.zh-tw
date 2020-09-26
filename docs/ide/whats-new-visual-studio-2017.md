@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 18e373dd8218c9019c2a5ec8a923fdbb2c24cf99
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: db777df991b48d1b6e26d40426d32c07a495efb1
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809514"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352173"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 
@@ -104,7 +104,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 漫遊延伸模組管理員會追蹤您安裝的所有延伸模組，但是您可以選擇想要新增至 [漫遊] 清單的延伸模組。
 
-![Visual Studio 2017 - [延伸模組和更新] 對話方塊](media/vs2017ide-RoamingExtensionManager.png)
+![Visual Studio 2017-漫遊延伸模組管理員](media/vs2017ide-RoamingExtensionManager.png)
 
 當您使用漫遊延伸模組管理員時，清單上會有三個圖示類型︰
 
@@ -222,7 +222,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 您可以使用**調試**程式列中**的 [回溯] 和 [** **下一頁**] 按鈕，流覽和查看快照集。 這些按鈕可巡覽出現在 [診斷工具]**** 視窗之 [事件]**** 索引標籤中的事件。 逐步返回或前進至某個事件會自動啟動所選事件的歷程偵錯。
 
-![Visual Studio 中的新例外狀況協助程式對話方塊](../debugger/media/intellitrace-step-back-icons-description.png  "逐步執行和向前按鈕")
+![Visual Studio 中的 IntelliTrace 回溯範例](../debugger/media/intellitrace-step-back-icons-description.png  "逐步執行和向前按鈕")
 
 如需詳細資訊，請參閱[使用 IntelliTrace 回溯檢視快照集](../debugger/view-historical-application-state.md)頁面。
 

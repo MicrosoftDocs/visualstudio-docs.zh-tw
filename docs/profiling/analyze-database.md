@@ -9,12 +9,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea74fd587119105577062f571b4ec8e3de76a4f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0aeb2341d905be8f34d47c477f35861b8575dc69
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037526"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352312"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>使用資料庫工具分析資料庫效能
 
@@ -50,7 +50,7 @@ ms.locfileid: "90037526"
 
 ![移至選取的來源檔案](./media/db-gotosource.png "移至選取的來源檔案")
 
-如果您選取圖形上的時間範圍，查詢資料表只會顯示該時間範圍內發生的查詢。 當您也執行 [ [CPU 使用量] 工具](./cpu-usage.md?view=vs-2019)時，此行為特別有用。
+如果您選取圖形上的時間範圍，查詢資料表只會顯示該時間範圍內發生的查詢。 當您也執行 [ [CPU 使用量] 工具](./cpu-usage.md?view=vs-2019&preserve-view=true)時，此行為特別有用。
 
 ## <a name="see-also"></a>另請參閱
 

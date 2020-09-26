@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: d4ed87e082e5c4fa2722a44fbbfe1dcef803f247
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 3a9c7bf1c63575df0f6ef55585ba1d14e78e0aa8
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211322"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352299"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio 的專案移轉與升級參考
 
@@ -43,7 +43,7 @@ Visual Studio 的每個版本一般都支援大部分先前的專案、檔案及
 
 下列清單描述 Visual Studio 2017 對使用舊版建立之專案的支援。
 
-如果您看不到應於此處列出的專案或檔案類型，請參閱[本文的 Visual Studio 2015 版本](../vs-2015/porting/porting-migrating-and-upgrading-visual-studio-projects.md?view=vs-2015)，使用本頁底部的 [Send feedback about > This page]******** \(傳送關於本頁的意見反應\) 選項，提供您專案的詳細資料。 (如果您使用匿名的「本頁對您有幫助嗎？」 控制項，我們將無法回應您的意見反應。)
+如果您看不到應於此處列出的專案或檔案類型，請參閱[本文的 Visual Studio 2015 版本](../vs-2015/porting/porting-migrating-and-upgrading-visual-studio-projects.md?view=vs-2015&preserve-view=true)，使用本頁底部的 [Send feedback about > This page]******** \(傳送關於本頁的意見反應\) 選項，提供您專案的詳細資料。 (如果您使用匿名的「本頁對您有幫助嗎？」 控制項，我們將無法回應您的意見反應。)
 
 | 專案類型 | 支援 |
 | --- | --- |
@@ -106,7 +106,7 @@ Visual Studio 的每個新版本通常都會嘗試維持與舊版的相容性，
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 2019 的專案移轉與升級參考](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019)
+- [Visual Studio 2019 的專案移轉與升級參考](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019&preserve-view=true)
 - [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing/)
 
 ::: moniker-end

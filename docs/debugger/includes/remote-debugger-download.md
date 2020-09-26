@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 1e90a1d9e03892cf81bd2257d3dcc6e25ab36246
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86bc2a1b73b492dc5f8d9977f05c3b2ba0dde6dc
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89325788"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91376657"
 ---
 在您想要進行偵錯工具的遠端裝置或伺服器上（而不是 Visual Studio 電腦），從下表的連結下載並安裝正確的遠端工具版本。
 
@@ -36,7 +36,7 @@ ms.locfileid: "89325788"
 
 |版本|連結|附註|
 |-|-|-|
-|Visual Studio 2017|[遠端工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|與所有 Visual Studio 2017 版本相容。 下載符合您裝置作業系統 (x86、x64 或 ARM64) 的版本。 在 Windows Server 上，請參閱 [解除封鎖檔案下載](../../debugger/remote-debugging-unblock-file-download.md) ，以取得下載遠端工具的協助。 如需最新版本的遠端工具，請開啟 [Visual Studio 2019](../../debugger/remote-debugging.md?view=vs-2019)檔。|
+|Visual Studio 2017|[遠端工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|與所有 Visual Studio 2017 版本相容。 下載符合您裝置作業系統 (x86、x64 或 ARM64) 的版本。 在 Windows Server 上，請參閱 [解除封鎖檔案下載](../../debugger/remote-debugging-unblock-file-download.md) ，以取得下載遠端工具的協助。 如需最新版本的遠端工具，請開啟 [Visual Studio 2019](../../debugger/remote-debugging.md?view=vs-2019&preserve-view=true)檔。|
 |Visual Studio 2015|[遠端工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|您可以從 My.VisualStudio.com 取得 Visual Studio 2015 的遠端工具。 如果出現提示，請加入免費的 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 程式，或使用您 Visual Studio 的訂用帳戶識別碼登入。 在 Windows Server 上，請參閱 [解除封鎖檔案下載](../../debugger/remote-debugging-unblock-file-download.md) ，以取得下載遠端工具的協助。|
 |Visual Studio 2013|[遠端工具](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#installing-the-remote-tools)|Visual Studio 2013 檔中的下載頁面|
 |Visual Studio 2012|[遠端工具](/previous-versions/visualstudio/visual-studio-2012/bt727f1t(v=vs.110)#installing-the-remote-tools)|Visual Studio 2012 檔中的下載頁面|

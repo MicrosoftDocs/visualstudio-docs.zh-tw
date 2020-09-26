@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5531a85bcdff90db816e942d196e0bab3b66139
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: a70199f6a46fc5fd78c9b40dc5c68ed1e1c85a56
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810320"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352358"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 效能祕訣和訣竅
 
@@ -63,7 +63,7 @@ Visual Studio 會在自動文件還原導致解決方案載入時間明顯變慢
 
     設定 [僅限指定的模組]**** 的選項，而不是 [所有模組]****，然後指定您要載入的模組。 偵錯時，您也可以以滑鼠右鍵按一下 [模組]**** 視窗中的特定模組，以在符號載入中明確包含模組  (在進行調試時開啟視窗，請選擇 [ **Debug**  >  **Windows**  >  **模組**]。 ) 
 
-    如需詳細資訊，請參閱 [Understand symbol files](?view=vs-2019) (了解符號檔)。
+    如需詳細資訊，請參閱 [Understand symbol files](?view=vs-2019&preserve-view=true) (了解符號檔)。
 
 - **停用診斷工具**
 

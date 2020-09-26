@@ -12,20 +12,20 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0489950b9132a36aef8ecb3d8374c02d1a1aee2
-ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
+ms.openlocfilehash: d3fa48a7f571680cb9d26257fe4aa288aba15dbc
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90560732"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352199"
 ---
 # <a name="overview-of-source-code-analysis"></a>原始程式碼分析總覽
 
-.NET Compiler Platform (Roslyn) 分析器會檢查您的 c # 或 Visual Basic 程式碼，以取得樣式、品質、可維護性、設計和其他問題。 這項檢查或分析是在設計階段于所有開啟的檔案中完成。 
+.NET Compiler Platform (Roslyn) 分析器會檢查您的 c # 或 Visual Basic 程式碼，以取得樣式、品質、可維護性、設計和其他問題。 這項檢查或分析是在設計階段于所有開啟的檔案中完成。
 
 分析器可以分為下列群組：
 
-- 程式[代碼樣式](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019#convention-categories)分析器內建于 Visual Studio。 這些分析器的診斷識別碼或程式碼的格式為 IDExxxx，例如 IDE0067。 您可以在 [文字編輯器](../ide/code-styles-and-code-cleanup.md) 的 [選項] 頁面或 [EditorConfig](../ide/editorconfig-code-style-settings-reference.md)檔中設定喜好設定。 從 .NET 5.0 開始，程式碼樣式分析器會隨附于 .NET SDK，而且可以嚴格地強制執行為組建警告或錯誤。 如需詳細資訊，請參閱[這裡](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis)。
+- 程式[代碼樣式](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories)分析器內建于 Visual Studio。 這些分析器的診斷識別碼或程式碼的格式為 IDExxxx，例如 IDE0067。 您可以在 [文字編輯器](../ide/code-styles-and-code-cleanup.md) 的 [選項] 頁面或 [EditorConfig](../ide/editorconfig-code-style-settings-reference.md)檔中設定喜好設定。 從 .NET 5.0 開始，程式碼樣式分析器會隨附于 .NET SDK，而且可以嚴格地強制執行為組建警告或錯誤。 如需詳細資訊，請參閱[這裡](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis)。
 
 - 程式[代碼品質](code-analysis-warnings-for-managed-code-by-checkid.md)分析器現在隨附于 .NET 5 SDK，而且預設為啟用。 這些分析器的診斷識別碼或程式碼的格式為 CAxxxx，例如 CA1822。 如需詳細資訊，請參閱 [.net 程式碼品質分析的總覽](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis)。
 
@@ -41,7 +41,7 @@ ms.locfileid: "90560732"
 | 警告 | `warning` | 違規在錯誤清單和命令列組建輸出中會顯示為 *警告* ，但不會造成組建失敗。 | 有問題的程式碼會以綠色波浪線加上底線，並在捲軸中以小綠色方塊標記。 |
 | 資訊 | `suggestion` | 違規會以 *訊息* 形式出現在錯誤清單中，而不是在命令列組建輸出中。 | 有問題的程式碼會以灰色波浪線加上底線，並在捲軸中以小灰色方塊標記。 |
 | Hidden | `silent` | 使用者看不到。 | 使用者看不到。 不過，診斷會回報給 IDE 診斷引擎。 |
-| None | `none` | 已完全隱藏。 | 已完全隱藏。 |
+| 無 | `none` | 已完全隱藏。 | 已完全隱藏。 |
 | 預設 | `default` | 對應于規則的預設嚴重性。 若要判斷規則的預設值為何，請查看屬性視窗。 | 對應于規則的預設嚴重性。 |
 
 如果分析器發現規則違規，就會在 [程式碼編輯器] 中回報它們， (在違規程序代碼) 和 [錯誤清單] 視窗中的 *波浪* 線。
@@ -58,7 +58,7 @@ ms.locfileid: "90560732"
 
 ## <a name="configure-analyzer-severity-levels"></a>設定分析器嚴重性層級
 
-您可以在[EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file)檔案中或從燈泡[功能表](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu)設定分析器規則或*診斷*的嚴重性。 
+您可以在[EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file)檔案中或從燈泡[功能表](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu)設定分析器規則或*診斷*的嚴重性。
 
 分析器也可以設定為在您輸入時，于組建階段檢查程式碼。 您可以設定即時程式碼分析的範圍，以便只針對目前檔、所有開啟的檔或整個方案執行。 請參閱 [如何：設定即時程式碼分析的範圍](./configure-live-code-analysis-scope-managed-code.md)。
 

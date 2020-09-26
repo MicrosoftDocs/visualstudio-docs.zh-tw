@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 246c23f2eb0cb92a2120db5071b6460ff0efb293
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 572e02d614f0c6b5f782d683ff7e42e954b54441
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809881"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352332"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 應用程式專案範本
 
@@ -39,7 +39,7 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 
 所有 **空白的 \<framework> Web 專案** 範本都會建立一個專案，其中包含更多或較少的未定案程式碼，以及在 *requirements.txt* 檔案中宣告的必要相依性。
 
-| [範本] | 描述 |
+| [範本] | 說明 |
 | --- | --- |
 | **空白 Bottle Web 專案** | 在 *app.py* 中產生精簡應用程式，並包含 `/` 的首頁，以及使用非常短的內嵌頁面範本來回應 `<name>` 的 `/hello/<name>` 頁面。 |
 | **空白 Django Web 專案** | 產生具核心 Django 網站架構，但不含 Django 應用程式的 Django 網站。 如需詳細資訊，請參閱 [Django 範本](python-django-web-application-project-template.md)和[學習 Django 步驟 1](learn-django-in-visual-studio-step-01-project-and-solution.md)。 |
@@ -49,7 +49,7 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 
 不論選擇的架構為何，所有** \<Framework> Web 專案**範本都會建立具有相同設計的入門 Web 應用程式。 該應用程式具有 [首頁]、[關於] 和 [連絡] 頁面，且包含使用 Bootstrap 的瀏覽列和回應式設計。 每個應用程式都已適當設定為提供靜態檔案 (CSS、JavaScript 和字型)，並使用適用於該架構的頁面範本機制。
 
-| [範本] | 描述 |
+| [範本] | 說明 |
 | --- | --- |
 | **瓶 Web 專案** | 產生其靜態檔案會包含在 *static* 資料夾中，且經由 *app.py* 中程式碼處理的應用程式。 個別頁面的路由會包含在 *routes.py* 中，且 *views* 資料夾會包含頁面範本。|
 | **Django Web 專案** | 產生 Django 專案和含三個頁面、驗證支援，以及 SQLite 資料庫 (但不含資料模型) 的 Django 應用程式。 如需詳細資訊，請參閱 [Django 範本](python-django-web-application-project-template.md)和[學習 Django 步驟 4](learn-django-in-visual-studio-step-04-full-django-project-template.md)。 |
@@ -60,7 +60,7 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 
 **投票 \<framework> Web 專案**範本會建立入門 web 應用程式，讓使用者可以透過此應用程式來對不同的投票問題進行投票。 每個應用程式都建置在 [Web]**** 專案範本的結構上，以使用資料庫來管理投票和使用者回應。 應用程式會包含適當的資料模型，以及會從 *samples.json* 檔案載入投票項目的特殊應用程式頁面 (/seed)。
 
-| [範本] | 描述 |
+| [範本] | 說明 |
 | --- | --- |
 | **投票 Bottle Web 專案** | 產生能針對記憶體內資料庫、MongoDB 或 Azure 資料表儲存體執行的應用程式，這是使用 `REPOSITORY_NAME` 環境變數來設定。 資料模型和資料存放區程式碼會包含在 *models* 資料夾中，且 *settings.py* 檔案會包含程式碼以決定要使用哪個資料存放區。 |
 | **投票 Django Web 專案** | 會產生 Django 專案和包含三個頁面及 SQLite 資料庫的 Django 應用程式。 包含對 Django 系統管理介面的自訂項目，以允許已驗證的系統管理員建立及管理投票。 如需詳細資訊，請參閱 [Django 範本](python-django-web-application-project-template.md)和[學習 Django 步驟 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)。 |
@@ -75,7 +75,7 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 
 如果您使用原始檔控制，通常會省略虛擬環境資料夾，因為該環境可以僅使用 *requirements.txt* 來重新建立。 排除該資料夾的最佳方法，是先在上方所示的提示中選取 [我會自行安裝它們]****，然後在建立虛擬環境之前停用自動認可。 如需詳細資料，請參閱[學習 Django 教學課程：步驟 1-2 和 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)，以及[學習 Flask 教學課程 - 步驟 1-2 和 1-3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)。
 
-部署至 Microsoft Azure App Service 時，請選取 Python 的版本作為[網站延伸模組](./managing-python-on-azure-app-service.md?view=vs-2019)，並手動安裝套件。 此外，由於從 Visual Studio 部署時，Azure App Service **不會**自動從 *requirements.txt* 檔案安裝套件，請依照 [aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md) 上的設定詳細資料進行。
+部署至 Microsoft Azure App Service 時，請選取 Python 的版本作為[網站延伸模組](./managing-python-on-azure-app-service.md?view=vs-2019&preserve-view=true)，並手動安裝套件。 此外，由於從 Visual Studio 部署時，Azure App Service **不會**自動從 *requirements.txt* 檔案安裝套件，請依照 [aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md) 上的設定詳細資料進行。
 
 Microsoft Azure 雲端服務「確實」** 支援 *requirements.txt* 檔案。 如需詳細資料，請參閱 [Azure 雲端服務專案](python-azure-cloud-service-project-template.md)。
 

@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 52faf3f8b736be9791f1738662aef1bd1b65939c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 9212add38f877e76aa3eaaa98c3d0d863c97d62e
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038552"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352279"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何：將擴充性專案遷移至 Visual Studio 2017
 
@@ -172,7 +172,7 @@ ms.locfileid: "90038552"
 
 為了提供進一步的指引，我們已識別出幾種常見的延伸模組類型和其建議的必要條件：
 
-擴充功能類型 | 顯示名稱 | ID
+擴充功能類型 | 顯示名稱 | 識別碼
 --- | --- | ---
 編輯器 | Visual Studio 核心編輯器 | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# 和 Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
@@ -181,7 +181,7 @@ WPF | Managed 桌面工作負載核心 | Microsoft.VisualStudio.Component.Manage
 
 ## <a name="find-component-ids"></a>尋找元件識別碼
 
-依 Visual Studio 產品排序的元件清單是在 [2017 工作負載和元件識別碼 Visual Studio](../install/workload-and-component-ids.md?view=vs-2019)。 針對您的資訊清單中的必要條件識別碼使用這些元件識別碼。
+依 Visual Studio 產品排序的元件清單是在 [2017 工作負載和元件識別碼 Visual Studio](../install/workload-and-component-ids.md?view=vs-2019&preserve-view=true)。 針對您的資訊清單中的必要條件識別碼使用這些元件識別碼。
 
 如果您不確定哪個元件包含特定的二進位檔，請下載 [元件 > 的二進位對應試算表](https://aka.ms/vs2017componentid-binaries)。
 

@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 201ee0a7384b5dce502151fc9d34d73bc19424a5
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c632378ff15e9b52e7145821f2e16d782b0326ac
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005781"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352291"
 ---
 # <a name="require-dotnetcoresdk"></a>require-dotnetcoresdk
 
 此 `require-dotnetcoresdk` 工具是用來透過[dotnet](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script)安裝腳本安裝[.NET Core SDK](https://dotnet.microsoft.com/)和共用執行時間。
 
-## <a name="usage"></a>使用方式
+## <a name="usage"></a>使用量
 
 如果 `input` 和 `additionalOptions` 屬性都省略或空白，則工具將會遵循以下詳述的 [預設](#default-behavior) 行為。
 
@@ -40,7 +40,8 @@ ms.locfileid: "91005781"
 
 您可以將其他設定選項傳入作為的值 `additionalOptions` 。 這些引數是直接傳遞給 [dotnet 安裝](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) 腳本中使用的引數。 如需可用參數的詳細資訊，請參閱[dotnet-安裝](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script)腳本[檔](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script)。 使用時 `additionalOptions` ，請務必使用 PowerShell 引數名稱和格式。
 
-注意：包含空格的引數的任何額外值都必須包含一組額外的轉義引號 (使用反斜線) 。 您可以使用中的 [範例](#example-usage) 使用方式來看到範例 `-InstallDir` 。
+> [!NOTE]
+> 包含空格的引數的任何額外值都必須包含一組額外的轉義引號 (使用反斜線) 。 您可以使用中的 [範例](#example-usage) 使用方式來看到範例 `-InstallDir` 。
 
 ### <a name="default-behavior"></a>預設行為
 

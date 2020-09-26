@@ -12,12 +12,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: cee62e02aa5b35108eec5024edf8eebb3848513f
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 9008c859c1bbf0a211e14ff5e777bea6cb3b5819
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211296"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352253"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 
@@ -350,7 +350,7 @@ ms.locfileid: "91211296"
 | 15.0.0 | 版本 | 2017 年 3 月 7 日 | 15.0.26228.4 |
 
 > [!NOTE]
-> 如需下一個 Visual Studio 版本的組建編號和發行日期詳細資訊，請參閱 [Visual Studio 2019 組建編號和發行日期](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019)頁面。
+> 如需下一個 Visual Studio 版本的組建編號和發行日期詳細資訊，請參閱 [Visual Studio 2019 組建編號和發行日期](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019&preserve-view=true)頁面。
 
 ::: moniker-end
 
