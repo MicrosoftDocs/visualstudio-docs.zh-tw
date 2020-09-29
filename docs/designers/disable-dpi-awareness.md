@@ -1,17 +1,17 @@
 ---
 title: 在 Visual Studio 中停用 DPI 感知
 description: 討論在 HDPI 監視器上 Windows Form 設計工具的限制，以及如何以非 DPI 感知處理序方式執行 Visual Studio。
-ms.date: 04/05/2019
+ms.date: 09/28/2020
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: 749a267d4fc33153cfc609f331ecd1d269706e12
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5444cdf8c82486f3669e82f7bb333607da2afc48
+ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249968"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91421790"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>在 Visual Studio 中停用 DPI 感知
 
@@ -43,6 +43,9 @@ Visual Studio 中的 **Windows Form 設計工具**不支援縮放比例。 這�
 - [以非 DPI 感知處理序方式重新啟動 Visual Studio](#restart-visual-studio-as-a-dpi-unaware-process)
 - [新增登錄項目](#add-a-registry-entry)
 - [將您的顯示縮放比例設定設為 100%](#set-your-display-scaling-setting-to-100)
+
+> [!TIP]
+> 如果您想要從命令列管理設定，可 [`devenv.exe`](../ide/reference/devenv-command-line-switches.md)  採用 `/noscale` 命令列參數，以100% 的縮放模式執行。
 
 ### <a name="restart-visual-studio-as-a-dpi-unaware-process"></a>以非 DPI 感知處理序方式重新啟動 Visual Studio
 

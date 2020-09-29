@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d54673ee46c594bd1a4bea2990d3b9bbe90ce1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62411229acd2d2f8462984789037fc832dac09b8
+ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188198"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91421637"
 ---
 # <a name="edit-and-continue-visual-c"></a>編輯後繼續 (Visual C#)
  利用 C# 的 [編輯後繼續]，偵錯時您可以在中斷模式中變更程式碼。 不需要停止並重新啟動偵錯工作階段，就可以套用這些變更。 在執行模式中，原始檔編輯器是唯讀的。
@@ -32,7 +32,7 @@ ms.locfileid: "73188198"
  Windows 10 中的 UWP 支援 [編輯後繼續]，而以 .NET Framework 4.6 desktop 或更新版本為目標的 x86 和 x64 應用程式 (.NET Framework 是僅) 桌上出版本。
 
  > [!NOTE]
- > 不支援的應用程式和平臺包括 ASP.NET 5、Silverlight 5 及 Windows 8.1。
+ > 不支援的應用程式和平臺包括 Silverlight 5，以及 Windows 8.1。
 
  啟用 [編輯後繼續] 時，當您使用偵錯工具執行命令 (例如 [繼續]****、[逐步執行]****、[設定下一個陳述式]****)，或在偵錯工具視窗中執行函式評估時，便會自動套用支援的變更。
 
