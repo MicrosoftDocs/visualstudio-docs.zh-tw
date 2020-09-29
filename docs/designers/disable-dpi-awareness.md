@@ -6,12 +6,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: 5444cdf8c82486f3669e82f7bb333607da2afc48
-ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
+ms.openlocfilehash: 08eb15914ad381fd81a838f5e09a1350bedff4fd
+ms.sourcegitcommit: 31f216b5f7491d5558de5b7ea4ebb0eb1faa3b9d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91421790"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91493305"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>在 Visual Studio 中停用 DPI 感知
 
@@ -45,7 +45,7 @@ Visual Studio 中的 **Windows Form 設計工具**不支援縮放比例。 這�
 - [將您的顯示縮放比例設定設為 100%](#set-your-display-scaling-setting-to-100)
 
 > [!TIP]
-> 如果您想要從命令列管理設定，可 [`devenv.exe`](../ide/reference/devenv-command-line-switches.md)  採用 `/noscale` 命令列參數，以100% 的縮放模式執行。
+> 如果您想要從命令列管理設定， [`devenv.exe`](../ide/reference/devenv-command-line-switches.md) 可採用 `/noscale` 命令列參數，以100% 的縮放模式執行。
 
 ### <a name="restart-visual-studio-as-a-dpi-unaware-process"></a>以非 DPI 感知處理序方式重新啟動 Visual Studio
 
