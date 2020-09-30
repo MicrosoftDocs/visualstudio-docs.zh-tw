@@ -1,5 +1,6 @@
 ---
-title: SharePoint 方案：建立自訂功能、封裝驗證規則
+title: 建立 SharePoint 方案的功能和套件驗證
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f731b6af2ada8caddb84be5561d7f6dc304e7bbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ac718d16383448ea13f01ad367d97f917bb42ed
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016915"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585819"
 ---
-# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>如何：建立 SharePoint 方案的自訂功能和套件驗證規則
+# <a name="create-feature-and-package-validations-for-sharepoint-solutions"></a>建立 SharePoint 方案的功能和套件驗證
+
   您可以建立自訂驗證規則，以確認 Visual Studio 所產生的解決方案套件。 您可以從**PackagingExplorer**中封裝或功能的內容功能表中選取 [**驗證**]，對整個功能或封裝執行完整驗證。 當您將新的 SharePoint 專案專案或功能加入至專案時，會執行部分驗證，以判斷封裝或功能是否處於有效的狀態。
 
 ### <a name="to-create-a-custom-package-validation-rule"></a>若要建立自訂套件驗證規則

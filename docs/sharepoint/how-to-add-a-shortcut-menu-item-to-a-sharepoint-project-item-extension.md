@@ -1,5 +1,6 @@
 ---
 title: 將快捷方式功能表項目加入至 SharePoint 專案專案延伸模組
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c0515fddc106418902cd2cca9fcba4c0e365da1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3c0627849df12b98ddc16f54317faf952cb41f6
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014855"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585858"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>如何：將快捷方式功能表項目加入至 SharePoint 專案專案延伸模組
   您可以使用專案專案延伸，將快捷方式功能表項目加入至現有的 SharePoint 專案專案。 當使用者以滑鼠右鍵按一下 **方案總管**中的專案專案時，就會顯示功能表項目。
