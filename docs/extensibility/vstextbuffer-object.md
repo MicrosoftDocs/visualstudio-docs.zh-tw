@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 856a685cbf962f8b26f77932c738c758edcf1f91
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 9b117aace6b9b74455b09d4d0c61a82a9c84bf19
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012187"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583615"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer 物件
 文字緩衝區物件代表 Unicode 文字的資料流程，通常與檔案相關聯。 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>物件可以在核心編輯器的內容之外使用，如同在中的 wizard。
@@ -41,7 +41,7 @@ ms.locfileid: "90012187"
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|支援事件的連接點。|
 
 ## <a name="remarks"></a>備註
- `VSTextBuffer`通常是透過呼叫來找到 `QueryInterface` `IVsTextBuffer` 。 如需詳細資訊，請參閱 [文字緩衝區](../vs-2015/extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md?view=vs-2015)。
+ `VSTextBuffer`通常是透過呼叫來找到 `QueryInterface` `IVsTextBuffer` 。 如需詳細資訊，請參閱 [文字緩衝區](../vs-2015/extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md?view=vs-2015&preserve-view=true)。
 
 ## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>

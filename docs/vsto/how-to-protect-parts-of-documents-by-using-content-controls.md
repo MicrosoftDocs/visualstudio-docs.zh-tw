@@ -1,5 +1,6 @@
 ---
 title: 如何：使用內容控制項保護檔的元件
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 813bb829e3be243a9812a8856bf4fcfa6de2fd22
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541345"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91581074"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>如何：使用內容控制項保護檔的元件
   當您保護文件的某個部分時，使用者即無法變更或刪除文件中該部分的內容。 您可使用多種方法，透過內容控制項來保護 Microsoft Office Word 文件的下列部分：

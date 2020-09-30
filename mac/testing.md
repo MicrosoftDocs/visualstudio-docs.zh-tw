@@ -7,12 +7,12 @@ helpviewer_keywords:
 - unit tests [Visual Studio for Mac]
 ms.author: jomatthi
 author: jmatthiesen
-ms.openlocfilehash: acf34677e8d9b477512763be3c43bb9df0c53c46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 758bdcb0d854247847e4d0d56152840643402bf4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88200975"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91580957"
 ---
 # <a name="testing-tools-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的測試控管
 
@@ -24,7 +24,7 @@ Visual Studio for Mac 測試控管可協助您和您的小組開發及維持高�
 ![已選取 [Web] 和 [主控台] > [測試] 區段的 [新增專案] 對話方塊，其中顯示 xUnit、MSTest 和 NUnit 專案](media/create-new-test-project.PNG)
 
 > [!NOTE]
-> 如需有關如何對 .NET Core 應用程式進行單元測試及選取單元測試架構的詳細資訊，請參閱 [.Net core 中的單元測試和 .NET Standard](https://docs.microsoft.com/dotnet/core/testing/?pivots=xunit) 檔。
+> 如需有關如何對 .NET Core 應用程式進行單元測試及選取單元測試架構的詳細資訊，請參閱 [.Net core 中的單元測試和 .NET Standard](/dotnet/core/testing/?pivots=xunit) 檔。
 
 ## <a name="running-tests"></a>執行測試
 [ **單元測試** ] 視窗是用來執行單元測試，並使用 **View > Pad > 單元測試** 功能表來開啟。 系統會自動探索解決方案中的單元測試，並顯示在此視窗中，您可以在其中執行所有測試或一組您所選取的測試。

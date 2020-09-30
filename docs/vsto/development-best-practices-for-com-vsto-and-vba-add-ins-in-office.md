@@ -1,5 +1,6 @@
 ---
 title: 開發最佳作法： Office 中的 COM、VSTO、& VBA 增益集
+titleSuffix: ''
 ms.date: 07/25/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be48e7ce721c84656362a019e0cc5eec1ae2ee17
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4e536c48004d9c8ff729ac5fb064e04e02c6884b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808203"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91581192"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Office 中 COM、VSTO 及 VBA 增益集的開發最佳作法
   如果您正在開發適用于 Office 的 COM、VSTO 或 VBA 增益集，請遵循本文中所述的開發最佳做法。   這將有助於確保：

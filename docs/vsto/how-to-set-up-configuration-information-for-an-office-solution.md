@@ -1,5 +1,6 @@
 ---
 title: 設定 Office 方案的設定資訊
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8a0868019247e20b9154690469d4c291f1f8e0d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e47ad00e3f9e90913784196894d514a755699864
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545804"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91581035"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>如何：設定 Office 方案的設定資訊
   您可以使用設定檔來設定 Office 方案的特定設定。 您可以指定設定，例如元件系結原則、遠端物件、偵錯工具和追蹤設定。
