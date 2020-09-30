@@ -1,5 +1,6 @@
 ---
 title: 使用擴充性介面自訂 UI 功能
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d28c9456afdc60b1bddadf759ec3090ba37f2040
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07b62903388012dac3459c86011e349f8053762c
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838802"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583836"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>使用擴充性介面自訂 UI 功能
   當您使用 Visual Studio 中的 Office 開發工具，在 VSTO 增益集中建立自訂工作窗格、功能區自訂和 Outlook 表單區域時，這些工具提供可處理許多實作詳細資料的類別和設計工具。 不過，如果您有特殊需求，也可以針對每項功能自行實作 *「擴充性介面」* (Extensibility Interface)。

@@ -1,5 +1,6 @@
 ---
 title: 建立 Word 的第一個檔層級自訂
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c07c3257b8df0e671941ae08bc3738350e017a8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1f5d1d6d373a5bbcd3f10d600175a88e88823ad
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74567012"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584985"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>逐步解說：建立 Word 的第一個檔層級自訂
 
@@ -74,7 +75,7 @@ ms.locfileid: "74567012"
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. 按一下 [下一步]  。
+4. 按 [下一步]  。
 
 5. 在 [**設定您的新專案**] 對話方塊的 [**名稱**] 方塊中輸入**FirstWorkbookCustomization** ，然後按一下 [**建立**]。
 

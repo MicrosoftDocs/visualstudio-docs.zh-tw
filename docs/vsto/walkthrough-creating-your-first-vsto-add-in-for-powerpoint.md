@@ -1,5 +1,6 @@
 ---
 title: 逐步解說：建立 PowerPoint 的第一個 VSTO 增益集
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9bba8095c1e79b8ab8addfd69afc1e89a50e3fce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a50a47a813891151427707c371f1ebf3f75c336f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68871958"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584304"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>逐步解說：建立 PowerPoint 的第一個 VSTO 增益集
   本逐步解說將說明如何建立 Microsoft Office PowerPoint 的 VSTO 增益集。 不論開啟哪一份簡報，您在這類方案中建立的功能都可供應用程式本身使用。 如需詳細資訊，請參閱 [Office 方案開發總覽 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -75,14 +76,14 @@ ms.locfileid: "68871958"
 
 ### <a name="to-add-a-text-box-to-each-new-slide"></a>若要將文字方塊加入每張新的投影片
 
-1. 在 ThisAddIn 程式碼檔中，將下列程式碼加入 `ThisAddIn` 類別。 此程式碼會定義[應用程式](/previous-versions/office/developer/office-2010/ff764034(v=office.14))物件之 PresentationNewSlide 事件的事件處理[EApplication_Event](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14))程式。
+1. 在 ThisAddIn 程式碼檔中，將下列程式碼加入 `ThisAddIn` 類別。 此程式碼會定義[應用程式](/previous-versions/office/developer/office-2010/ff764034(v=office.14))物件的[Microsoft.Office.Interop.PowerPoint.EApplication_Event PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14))事件的事件處理常式。
 
     當使用者將新投影片加入現用簡報時，這個事件處理常式會在新投影片頂端加入文字方塊，並將一些文字加入此文字方塊。
 
     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
     [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]
 
-2. 如果使用的是 C#，請將下列程式碼加入 `ThisAddIn_Startup` 事件處理常式中。 這是連接 `Application_PresentationNewSlide` 事件處理常式 [EApplication_Event 與 PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) 事件所需的程式碼。
+2. 如果使用的是 C#，請將下列程式碼加入 `ThisAddIn_Startup` 事件處理常式中。 這是連接 `Application_PresentationNewSlide` 事件處理常式與 [Microsoft.Office.Interop.PowerPoint.EApplication_Event PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) 事件的必要程式碼。
 
     [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]
 
@@ -90,7 +91,7 @@ ms.locfileid: "68871958"
 
 - `Application` 類別的 `ThisAddIn` 欄位。 欄位會傳回 `Application` 代表目前 PowerPoint 實例的 [應用程式](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) 物件。
 
-- `Sld`PresentationNewSlide 事件之事件處理常式的參數（event [EApplication_Event](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) handler）。 `Sld`參數是投影[片](/previous-versions/office/developer/office-2010/ff763417(v=office.14))物件，代表新投影片。 如需詳細資訊，請參閱 [PowerPoint 方案](../vsto/powerpoint-solutions.md)。
+- `Sld` [Microsoft.Office.Interop.PowerPoint.EApplication_Event PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14))事件之事件處理常式的參數。 `Sld`參數是投影[片](/previous-versions/office/developer/office-2010/ff763417(v=office.14))物件，代表新投影片。 如需詳細資訊，請參閱 [PowerPoint 方案](../vsto/powerpoint-solutions.md)。
 
 ## <a name="test-the-project"></a>測試專案
  當您建置和執行專案時，請確認文字方塊有出現在您加入簡報的新投影片中。

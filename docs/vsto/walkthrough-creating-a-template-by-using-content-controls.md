@@ -1,5 +1,6 @@
 ---
 title: 逐步解說：使用內容控制項建立範本
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ffb7d7f9ad5453d38709802bf5e004c07bb09622
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30f2443c724d547afe3c510e64f2c50fd9dd4db9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255592"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585024"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>逐步解說：使用內容控制項建立範本
   本逐步解說示範如何建立文件層級自訂，這個自訂會使用內容控制項在 Microsoft Office Word 範本中建立可重複使用的結構化內容。
@@ -76,7 +77,7 @@ ms.locfileid: "71255592"
    |**員工名稱**|
    |**雇用日期**|
    |**標題**|
-   |**圖片**|
+   |**Picture**|
 
 4. 按一下第二個數據行中的第一個資料格 ([ **員工名稱** ]) 旁。
 

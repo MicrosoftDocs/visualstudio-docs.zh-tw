@@ -1,5 +1,6 @@
 ---
 title: 如何：將屬性加入至 SharePoint 專案專案延伸模組 |Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 337536d2219ce8494f96769bc79f10967883e61a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 752a782bb4aafd977ff10a0b57dd971f7ad6bed4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015985"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584252"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>如何：將屬性加入至 SharePoint 專案專案延伸模組
   您可以使用專案專案延伸，將屬性加入至 Visual Studio 中已安裝的任何 SharePoint 專案專案。 當**方案總管**中選取專案專案時，屬性會出現在 [**屬性**] 視窗中。

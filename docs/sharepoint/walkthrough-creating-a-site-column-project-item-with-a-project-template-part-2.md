@@ -1,5 +1,6 @@
 ---
 title: 使用專案範本建立網站資料行專案專案（第2部分）
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3b84d901a1fd94d72ff14ec5c481e04676c5cbc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51fb7a4fb3d2ccba8c0a811619d7793e730a8ec4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016401"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585454"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>逐步解說：使用專案範本建立網站資料行專案專案（第2部分）
   在您定義自訂類型的 SharePoint 專案專案，並將其與 Visual Studio 中的專案範本建立關聯之後，您可能也會想要提供範本的嚮導。 當使用者使用您的範本建立包含專案專案的新專案時，您可以使用此嚮導來收集使用者的資訊。 您收集的資訊可以用來初始化專案專案。
@@ -40,7 +41,7 @@ ms.locfileid: "86016401"
 > [!NOTE]
 > 如需一系列的範例工作流程，請參閱 [SharePoint workflow 範例](/sharepoint/dev/general-development/sharepoint-workflow-samples)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  若要執行這個逐步解說，您必須先完成逐步解說 [：使用專案範本建立網站資料行專案專案（第1部分）](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)來建立 SiteColumnProjectItem 方案。
 
  您也需要在開發電腦上執行下列元件，才能完成此逐步解說：

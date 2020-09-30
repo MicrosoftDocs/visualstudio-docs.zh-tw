@@ -1,5 +1,6 @@
 ---
 title: 如何：以程式設計方式在程式碼中參考工作表範圍
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93673fcc270ce2f1ac43804cb1d794281f28c702
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 319be5ad6c878e08a862d1e20e826c2800c33512
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547390"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584829"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>如何：以程式設計方式在程式碼中參考工作表範圍
   您可以使用類似的進程來參考 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項或原生 Excel 範圍物件的內容。

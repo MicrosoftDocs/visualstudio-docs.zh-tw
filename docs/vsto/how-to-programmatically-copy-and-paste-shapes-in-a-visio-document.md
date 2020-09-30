@@ -1,5 +1,6 @@
 ---
 title: 以程式設計方式在 Visio 檔中複製並貼上圖形
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 05b0d20ba7bd560fc60090bba84b78691bb3e753
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f54f98a055ef834100c5c58274d72f92568b7c4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546090"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585271"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>如何：以程式設計方式在 Visio 檔中複製並貼上圖形
   您可以程式設計方式，將文件頁面上的圖形複製貼到同一份文件的另一個新頁面上。 您可以選擇將圖形貼到預設位置 (使用中視窗的中央)，或是貼到與原始頁面一樣的座標位置。

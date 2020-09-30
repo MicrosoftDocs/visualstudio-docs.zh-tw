@@ -1,5 +1,6 @@
 ---
-title: 用來建立此專案的活頁簿包含設計工具無法載入的 ActiveX 控制項
+title: 活頁簿包含無法載入的 ActiveX 控制項
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: error-reference
 f1_keywords:
@@ -12,15 +13,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4485489b48c4d1b03b608c6072cfc859e8bc8f59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09182fb354ad3ae8937b66952a0acd376d54fe0a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537341"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584447"
 ---
-# <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>用來建立此專案的活頁簿包含設計工具無法載入的 ActiveX 控制項
-  當您以程式設計的方式將控制項加入至 Word 文件或 Excel 工作表、儲存文件或活頁簿，然後根據文件或活頁簿建立新的文件層級方案，則會出現這個錯誤。
+# <a name="the-workbook-contains-activex-controls-that-cannot-be-loaded"></a>活頁簿包含無法載入的 ActiveX 控制項
+
+  當您以程式設計方式將控制項加入 Word 檔或 Excel 工作表時，會出現「用來建立此專案的活頁簿包含設計工具無法載入的 ActiveX 控制項」錯誤：儲存檔或活頁簿，然後根據檔或活頁簿建立新的檔層級方案。
 
  描述控制項的 managed 類型資訊不會與文件或活頁簿一起儲存。 當您根據文件或活頁簿建立新的方案時，Visual Studio 沒有足夠的資訊以在主機項目設計工具中載入控制項。
 

@@ -1,5 +1,6 @@
 ---
 title: 以 Outlook 中的電子郵件訊息顯示自訂工作窗格
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e94bedf95b58d9876d37eb496ede0c5ec9a8531
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00a8eae3f0beea7482c5fd7a1ac1ebd1994b9c35
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985460"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584278"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>逐步解說：在 Outlook 中顯示含有電子郵件訊息的自訂工作窗格
   本逐步解說示範如何顯示自訂工作窗格的唯一實例，其中包含每個建立或開啟的電子郵件訊息。 使用者可以使用每則電子郵件訊息功能區上的按鈕，顯示或隱藏自訂工作窗格。

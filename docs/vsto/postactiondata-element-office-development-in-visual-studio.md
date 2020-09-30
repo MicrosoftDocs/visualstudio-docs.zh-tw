@@ -1,5 +1,6 @@
 ---
-title: '&lt;&gt;在 Visual Studio) 中 (Office 開發的 postActionData 元素'
+title: '&lt;&gt; (Office 開發) 的 postActionData 元素'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 104af55fdc11b6afae757eff95a964dad83418a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85e1a02dbb85094cf84e1bba05e900d0e3f2c641
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541865"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583719"
 ---
-# <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;&gt;在 Visual Studio) 中 (Office 開發的 postActionData 元素
+# <a name="ltpostactiondatagt-element-office-development"></a>&lt;&gt; (Office 開發) 的 postActionData 元素
   `postActionData` 命名空間的 `vstav3` 項目指定與安裝 Office 方案後所執行之任何部署後動作相關聯的資料。
 
 ## <a name="syntax"></a>語法

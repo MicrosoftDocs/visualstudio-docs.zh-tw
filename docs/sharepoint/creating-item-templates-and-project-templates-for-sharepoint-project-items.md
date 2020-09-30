@@ -1,5 +1,6 @@
 ---
 title: SharePoint 專案專案的專案範本/專案範本
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65bbd58bf9b3e0b399603a083615daccc382a98f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec97eb2dfab7ab92c1e324c89fd044c1a50c2173
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981167"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585611"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>建立 SharePoint 專案專案的專案範本和專案範本
 

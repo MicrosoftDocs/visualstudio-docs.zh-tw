@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ac0125586210164555b335644ce3dcc8128df17
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: eda858cc10bd07b1516b805360b5d7eb5e361b95
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011797"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584070"
 ---
 # <a name="commands-menus-and-toolbars"></a>命令、功能表和工具列
 功能表和工具列是使用者存取 VSPackage 命令的方式。 命令是完成工作 (例如，列印文件、重新整理檢視，或建立新檔案) 的功能。 功能表和工具列是一種圖形方式，方便向使用者呈現您的命令。 通常，相關的命令會一起聚集在相同的功能表或工具列上。
@@ -26,7 +26,7 @@ ms.locfileid: "90011797"
 
 - 工具列通常是數串的按鈕和其他控制項 (例如下拉式方塊、清單方塊、文字方塊和功能表控制器)。 所有工具列控制項都是與命令相關聯。 按一下工具列按鈕時，會啟動其相關聯的命令。 工具列按鈕通常會有圖示建議基礎命令 (例如 [列印] 命令的印表機)。 在下拉式清單控制項中，清單中的每個項目都是與不同的命令相關聯。 功能表控制器是一種混合體，其中，控制項的一邊是工具列按鈕，另一邊則是按一下時顯示其他命令的向下箭號。 如需詳細資訊，請參閱 [將功能表控制器加入至工具列](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)。
 
-- 建立命令時，也必須一併建立它的事件處理常式。 事件處理常式可判斷命令的顯示和啟用時間、可讓您修改其文字，並確保在啟動時適當地回應命令 (路由遞送)。 在大部分情況下，IDE 會使用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面來處理命令。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的命令會以階層方式路由遞送，即從最內層命令內容開始 (根據本機選取範圍) 到最外層內容 (根據全域選取範圍)。 加入主功能表的命令可立即用於指令碼編寫。 如需詳細資訊，請參閱 [menucommand 對比與 OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015) 和 [選取內容物件](../../extensibility/internals/selection-context-objects.md)。
+- 建立命令時，也必須一併建立它的事件處理常式。 事件處理常式可判斷命令的顯示和啟用時間、可讓您修改其文字，並確保在啟動時適當地回應命令 (路由遞送)。 在大部分情況下，IDE 會使用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面來處理命令。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的命令會以階層方式路由遞送，即從最內層命令內容開始 (根據本機選取範圍) 到最外層內容 (根據全域選取範圍)。 加入主功能表的命令可立即用於指令碼編寫。 如需詳細資訊，請參閱 [menucommand 對比與 OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true) 和 [選取內容物件](../../extensibility/internals/selection-context-objects.md)。
 
   若要定義新的功能表和工具列，您必須在 Visual Studio 的命令資料表中加以描述， (*. .vsct*) 檔。 Visual Studio 套件範本會為您建立此檔案，並提供必要的元素，以支援您在範本中選取的任何命令、工具列和編輯器。 或者，您也可以使用以下所述的 XML 架構來撰寫您自己的 *.vsct* 檔案： [.vsct XML 架構參考](../../extensibility/vsct-xml-schema-reference.md)。
 

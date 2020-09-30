@@ -1,5 +1,6 @@
 ---
 title: 使用 MSBuild 目標自訂 SharePoint 方案套件
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6570b1e3c16f1935813682e2c29051c4ac7d64a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9845f755d184c18b6b5ade4c5504e393edae7b00
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016885"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585806"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>如何：使用 MSBuild 目標自訂 SharePoint 方案套件
   藉由在命令提示字元中使用 MSBuild 目標，您可以自訂 Visual Studio 如何 (*.wsp*) 建立 SharePoint 封裝檔案。 例如，您可以自訂變更封裝中繼目錄的 MSBuild 屬性，以及自訂指定列舉檔案的 MSBuild 項目群組。

@@ -9,21 +9,21 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: ab461327a0af5d072689e4a5cb357525b42018ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42d1d76275afd4944791137b97e04dd499e36083
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950482"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583940"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 發行至資料夾
 
 您可以使用 [發佈] 工具，將 .NET Core 主控台或 ASP.NET Core 應用程式發佈到資料夾。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 - 已啟用 .NET Core 的[Visual Studio 2019 For Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) 。
-- .NET Core 主控台或 ASP.NET Core 專案。 如果您還沒有專案，可以[建立新的專案](/visualstudio/mac/create-new-projects?view=vsmac-2019)。
+- .NET Core 主控台或 ASP.NET Core 專案。 如果您還沒有專案，可以[建立新的專案](./create-new-projects.md?view=vsmac-2019)。
 
 ## <a name="publish-to-folder"></a>發佈到資料夾
 

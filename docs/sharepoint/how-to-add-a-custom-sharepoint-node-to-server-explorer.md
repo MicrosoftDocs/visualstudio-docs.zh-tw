@@ -1,5 +1,6 @@
 ---
 title: 如何：將自訂 SharePoint 節點新增至伺服器總管 |Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26a2ea6a7ccbfcc80275b55f9230f1a3152ab545
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a74c9c879df57a5ff6444626870ee9f021fb4e9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017046"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584881"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>如何：將自訂 SharePoint 節點新增至伺服器總管
   您可以在**伺服器總管**的 [ **SharePoint 連接**] 節點下加入自訂節點。 當您想要顯示預設不會顯示在 **伺服器總管** 中的其他 SharePoint 元件時，這會很有用。 如需詳細資訊，請參閱 [伺服器總管中的擴充 SharePoint 連接節點](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。

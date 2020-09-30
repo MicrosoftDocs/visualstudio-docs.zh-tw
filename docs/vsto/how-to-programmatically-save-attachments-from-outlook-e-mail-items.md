@@ -1,5 +1,6 @@
 ---
 title: 以程式設計方式從 Outlook 電子郵件專案儲存附件
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9fbe6099a8928397a7d885ac72c4f34da2da6af0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ade05e936397f72a0b370cb69d8be3310c3aee8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545882"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584764"
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>如何：以程式設計方式從 Outlook 電子郵件專案儲存附件
 

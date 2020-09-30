@@ -1,5 +1,6 @@
 ---
 title: 以程式設計的方式自動填滿變更資料範圍
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 076381c93d11c2d13bdd89ea5c36c0039e15ef71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1cdcc02fa3c33945ffc4824310f0957bdbdd2dd
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547468"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585310"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>如何：以程式設計方式自動以累加方式變更資料填滿範圍
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>物件的方法可 <xref:Microsoft.Office.Interop.Excel.Range> 讓您自動以值填滿工作表中的範圍。 最常見的 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 方法是在範圍內以累加方式儲存或減少值。 您可以藉由提供列舉中的選擇性常數來指定行為 <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> 。

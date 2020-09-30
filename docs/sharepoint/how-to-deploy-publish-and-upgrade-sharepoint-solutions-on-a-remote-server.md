@@ -1,5 +1,6 @@
 ---
 title: 部署、發佈、& 從遠端升級 SharePoint 方案
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f05f42f8aed35696b962e71a5fce86c2956b3661
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5de5128ff19472390e65aa5d9a437aee269ff897
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016811"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585780"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>如何：在遠端伺服器上部署、發行和升級 SharePoint 方案
   除了將 SharePoint 方案部署到本機系統之外，您還可以將沙箱化 SharePoint 方案發行至遠端網站或本機 SharePoint 網站。 遠端發佈程式會將 *.wsp* 檔案複製到 SharePoint 伺服器、安裝方案，然後讓您啟用方案。 您也可以在變更遠端 SharePoint 方案後進行升級。

@@ -1,5 +1,6 @@
 ---
 title: 如何：以程式設計方式將樣式套用至活頁簿中的範圍
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6f115468bccc2d805b019b9a0ef15cea3605f36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8b511d195a40f42bf0b1224dd828b6c6d2b9671
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546155"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585349"
 ---
 # <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>如何：以程式設計方式將樣式套用至活頁簿中的範圍
   您可以將具名樣式套用至活頁簿中的區域。 Excel 提供多個預先定義的樣式。

@@ -1,5 +1,6 @@
 ---
 title: 在伺服器總管中取得內建 SharePoint 節點的資料
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5bb69773bf3f031b75d63ebe8cb1f1b4a00286c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7649092cc21fcc7b861f4ddf630007bde896e852
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014896"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585767"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>如何：在伺服器總管中取得內建 SharePoint 節點的資料
   針對 **伺服器總管**中的每個內建 sharepoint 節點，您可以取得節點所代表之基礎 sharepoint 元件的資料。 如需詳細資訊，請參閱 [伺服器總管中的擴充 SharePoint 連接節點](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。

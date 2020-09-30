@@ -1,5 +1,6 @@
 ---
-title: 將已遷移的 Excel 或 Word 專案更新為 .NET Framework 4/4。5
+title: 將已遷移的 Excel 或 Word 專案更新為 .NET Framework 4。5
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bc211f4d30359c885b22a45910363bbadca236f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06f4742317e3702273c5fe7c91ccc76a153c1b3e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253711"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584408"
 ---
-# <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新您遷移至 .NET Framework 4 或 .NET Framework 4.5 的 Excel 和 Word 專案
+# <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-45"></a>更新您遷移至 .NET Framework 4.5 的 Excel 和 Word 專案
   如果您有使用下列任何功能的 Excel 或 Word 專案，當目標 Framework 變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本時，即必須修改程式碼：
 
 - [GetVstoObject 和 HasVstoObject 方法](#GetVstoObject)
@@ -201,7 +202,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 
  下表列出在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中，與它們相關聯的 Word 內容控制項事件和委派。
 
-|事件|在 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 及更新版本的專案中要使用的委派|
+|Event - 事件|在 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 及更新版本的專案中要使用的委派|
 |-----------| - |
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.Added>|<xref:Microsoft.Office.Tools.Word.ContentControlAddedEventHandler>|
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|<xref:Microsoft.Office.Tools.Word.ContentControlContentUpdatingEventHandler>|

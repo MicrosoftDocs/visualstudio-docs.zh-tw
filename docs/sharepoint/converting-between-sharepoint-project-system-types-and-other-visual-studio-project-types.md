@@ -1,5 +1,6 @@
 ---
 title: 轉換： SharePoint 專案系統類型與其他類型之間的轉換
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40ea60a8df5bc0bcd033c60a83d742ed3249cc53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44b3e32114b10eae776f39e4c3d7337bba636f3f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66836003"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584642"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>在 SharePoint 專案系統類型與其他 Visual Studio 專案類型之間轉換
   在某些情況下，您的 SharePoint 專案系統中可能會有一個物件，而您想要使用 Visual Studio automation 物件模型或整合物件模型中對應物件的功能，反之亦然。 在這些情況下，您可以使用 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> SharePoint 專案服務的方法，將物件轉換為不同的物件模型。

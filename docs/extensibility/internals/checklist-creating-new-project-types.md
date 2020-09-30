@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f166e0b3280783dac891b3b582acd7822a3974c0
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 0aa4ad83428120c68adb89937afc46f51700dbfe
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011914"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583667"
 ---
 # <a name="checklist-create-new-project-types"></a>檢查清單：建立新的專案類型
 您必須完成幾項工作，才能建立新的專案類型。 下列檢查清單提供這些工作的指南：
@@ -33,7 +33,7 @@ ms.locfileid: "90011914"
 
     - Project factory：管理建立新專案和開啟現有的專案。 如需詳細資訊，請參閱 [使用專案處理站建立專案實例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)。
 
-    - 專案階層和命令處理。 如需詳細資訊，請參閱 [使用 HierUtil7 專案類別來執行 c + +) 的專案 (類型 ](/previous-versions/bb166212(v=vs.100))、 [專案模型的](../../extensibility/internals/elements-of-a-project-model.md)專案、 [專案模型核心元件](../../extensibility/internals/project-model-core-components.md)，以及 [menucommand 對比與 OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015)的比較。
+    - 專案階層和命令處理。 如需詳細資訊，請參閱 [使用 HierUtil7 專案類別來執行 c + +) 的專案 (類型 ](/previous-versions/bb166212(v=vs.100))、 [專案模型的](../../extensibility/internals/elements-of-a-project-model.md)專案、 [專案模型核心元件](../../extensibility/internals/project-model-core-components.md)，以及 [menucommand 對比與 OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true)的比較。
 
     - 專案專案管理，包括將專案加入至 [ **新增專案** ] 對話方塊。 如需詳細資訊，請參閱 [加入專案和專案專案範本](../../extensibility/internals/adding-project-and-project-item-templates.md) ，以及 [註冊專案和專案範本](../../extensibility/internals/registering-project-and-item-templates.md)。
 

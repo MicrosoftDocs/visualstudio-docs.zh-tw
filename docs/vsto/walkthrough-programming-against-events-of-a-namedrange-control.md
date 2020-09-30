@@ -1,5 +1,6 @@
 ---
 title: 逐步解說：針對 NamedRange 控制項的事件進行程式設計
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b510e7464708891db0cab23d61cb22896a74602
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e5ce12e2de8274afd2c27d4ece36529563a6386
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839160"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584933"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>逐步解說：針對 NamedRange 控制項的事件進行程式設計
   本逐步解說將示範如何 <xref:Microsoft.Office.Tools.Excel.NamedRange> 使用 Visual Studio 中的 Office 開發工具，將控制項加入至 Microsoft Office Excel 工作表，並針對其事件進行程式設計。
@@ -70,7 +71,7 @@ ms.locfileid: "90839160"
 
 3. 確認 **$A $1** 出現在 [可編輯] 文字方塊中，並且已選取該儲存格 **A1** 。 如果不是，請按一下 [儲存格 **A1** ] 加以選取。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]  。
 
      儲存格 **A1** 會成為名為的範圍 `namedRange1` 。 工作表上沒有可見的指示，但 `namedRange1` 會出現在 [ **名稱** ] 方塊中 (位於左側工作表的上方，) 選取 [儲存格 **A1** ]。
 
@@ -78,7 +79,7 @@ ms.locfileid: "90839160"
 
 6. 確認 **$B $3** 出現在 [可編輯] 文字方塊中，而且已選取 [ **B3** ] 儲存格。 如果不是，請按一下資料格 **B3** 加以選取。
 
-7. 按一下 [確定]。
+7. 按一下 [確定]  。
 
      儲存格 **B3** 變成名為的範圍 `namedRange2` 。
 

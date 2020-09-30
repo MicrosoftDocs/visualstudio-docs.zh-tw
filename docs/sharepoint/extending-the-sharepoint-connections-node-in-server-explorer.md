@@ -1,5 +1,6 @@
 ---
 title: 擴充伺服器總管中的 [SharePoint 連接] 節點 |Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b1d461419497a0a45f50f12589cf3ac978a7666
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6615e02d84e1f252800597cb37666557e3c3fee6
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967353"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584603"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>擴充伺服器總管中的 [SharePoint 連接] 節點
   在 Visual Studio 中，您可以使用 [**伺服器總管**] 視窗中的 [ **SharePoint 連接**] 節點連接到開發電腦上的本機 SharePoint 網站。 此節點會以階層式樹狀檢視顯示本機 SharePoint 網站的許多元件。 例如，您可以在本機網站上查看清單、文件庫和內容類型。 如需使用 **伺服器總管** 連接到本機 SharePoint 網站的詳細資訊，請參閱 [使用伺服器總管流覽 SharePoint 連接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)。
@@ -56,7 +57,7 @@ ms.locfileid: "62967353"
 |---------------|----------------------|
 |SharePoint 網站節點|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerSiteNodeInfo>|
 |內容類型|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IContentTypeNodeInfo>|
-|功能|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFeatureNodeInfo>|
+|特徵|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFeatureNodeInfo>|
 |欄位|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFieldNodeInfo>|
 |清單|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListNodeInfo>|
 |清單範本|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListTemplateNodeInfo>|

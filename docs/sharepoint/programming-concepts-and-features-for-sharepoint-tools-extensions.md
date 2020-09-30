@@ -1,5 +1,6 @@
 ---
 title: SharePoint 工具擴充功能 & 功能的程式設計概念
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 215beaf21d704927792ae316df9b4c0ef3f98c44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 607f4841ea66a01d64a6c0c2b93b07e3cd0a5a43
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66401744"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585702"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>SharePoint 工具擴充功能的程式設計概念和功能
   Visual Studio 中的 SharePoint 工具有幾個重要的程式設計概念和功能。 這些概念和功能在大部分的 SharePoint 工具擴充功能中扮演著重要的角色。

@@ -1,5 +1,6 @@
 ---
 title: 如何：以程式設計方式在檔中加入頁首和頁尾
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52724103df17a1eaaf364f255f127a576beda798
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6a60f58a116cd01c59145de0fcd29a2f55a787e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519921"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585414"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>如何：以程式設計方式在檔中加入頁首和頁尾
   您可以使用 <xref:Microsoft.Office.Interop.Word.Section> 的 <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> 屬性和 <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> 屬性，將文字加入文件的頁首和頁尾。 文件的每個區段都包含三個頁首和頁尾：

@@ -1,5 +1,6 @@
 ---
 title: 封裝 Explorer：新增 & 移除功能 & 專案至封裝
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3ea7e30737855cbbb9434e8763f4903d80b82da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9bc4546d598a2fcca822f1921f778034fb768c2b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014550"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585585"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>如何：使用封裝瀏覽器加入和移除封裝的功能和專案
   若要設定套件以部署 SharePoint 專案和功能，您可以使用封裝瀏覽器。 您可以調整 .wsp 檔案內的 SharePoint 專案專案和功能。

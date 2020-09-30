@@ -1,5 +1,6 @@
 ---
 title: 逐步解說：變更伺服器上活頁簿中的快取資料
+titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a88fef7afe198dd15716570b1875ea257d19be8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16d3d69482476149b9a340cabe81e957f39ef6f8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985523"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584330"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>逐步解說：變更伺服器上活頁簿中的快取資料
   本逐步解說將示範如何使用類別來修改在 Microsoft Office Excel 活頁簿中快取的資料集，而不需啟動 Excel <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 。
@@ -108,7 +109,7 @@ ms.locfileid: "72985523"
 
 7. 在 [ **選擇您的資料庫物件** ] 頁面中，展開 [ **資料表]** ，然後選取 [ **Product (SalesLT) **。
 
-8. 按一下 [完成]  。
+8. 按一下 [完成] 。
 
     *Adventureworksltdataset.xsd .xsd*檔案會新增至**AdventureWorksDataSet**專案。 這個檔案會定義下列項目：
 

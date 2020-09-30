@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2520eb4d1fe9480f1421016883d65c9bde9b422
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 155c703ebbeb2705ac7abbba5cd2c095f520c698
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012317"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584551"
 ---
 # <a name="extend-the-editor-and-language-services"></a>擴充編輯器和語言服務
 您可以將語言服務功能 (例如 IntelliSense) 加入您自己的編輯器，並擴充 Visual Studio 程式碼編輯器的大部分功能。  如需可延伸之內容的完整清單，請參閱 [語言服務和編輯器延伸點](../extensibility/language-service-and-editor-extension-points.md)。
@@ -36,7 +36,7 @@ ms.locfileid: "90012317"
 |[語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)|列出編輯器的延伸點。 擴充點代表可延伸的編輯器功能。|
 |[逐步解說：建立視圖裝飾、命令和設定 (資料行指南) ](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|逐步解說並說明如何建立可繪製資料行輔助線的視圖裝飾，以協助您將程式碼保持在特定的顯示寬度。  也會顯示讀取和寫入設定，以及宣告和執行可從命令視窗叫用的命令。|
 |[編輯器匯入](../extensibility/editor-imports.md)|列出延伸模組可以匯入的服務。|
-|[將舊版程式碼調整為編輯器](../vs-2015/extensibility/adapting-legacy-code-to-the-editor.md?view=vs-2015)|說明調整舊版程式碼 (預先 Visual Studio 2010) 擴充編輯器的不同方式。|
+|[將舊版程式碼調整為編輯器](../vs-2015/extensibility/adapting-legacy-code-to-the-editor.md?view=vs-2015&preserve-view=true)|說明調整舊版程式碼 (預先 Visual Studio 2010) 擴充編輯器的不同方式。|
 |[遷移舊版語言服務](../extensibility/internals/migrating-a-legacy-language-service.md)|說明如何遷移以 VSPackage 為基礎的語言服務。|
 |[逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|顯示如何將內容類型連結至副檔名。|
 |[逐步解說：建立邊界字元](../extensibility/walkthrough-creating-a-margin-glyph.md)|顯示如何將圖示新增至邊界。|

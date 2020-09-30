@@ -1,5 +1,6 @@
 ---
 title: 以程式設計方式折迭檔的範圍或選取範圍
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1575a130a525c169553598fd15acfa8ba8fc397a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4bb22f97b6a876029ff5d984abf9bda32cfd3fbc
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546116"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585284"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>如何：以程式設計方式折迭檔中的範圍或選取專案
   如果您正在使用 <xref:Microsoft.Office.Interop.Word.Range> 或 <xref:Microsoft.Office.Interop.Word.Selection> 物件，您可能會想要先將選取範圍變更為插入點再插入文字，以免覆寫現有的文字。 <xref:Microsoft.Office.Interop.Word.Range>和物件都 <xref:Microsoft.Office.Interop.Word.Selection> 有折迭方法，它會使用 <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> 列舉值：

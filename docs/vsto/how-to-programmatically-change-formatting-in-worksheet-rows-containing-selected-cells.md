@@ -1,5 +1,6 @@
 ---
 title: 透過程式碼變更包含所選資料格的資料列格式
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23217b2107be4406cd193418e7d1ee2bfa631a9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31fe16436b09696b79bf760db7b346d1092c0439
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541553"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585297"
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>如何：以程式設計方式變更包含選定儲存格的工作表資料列格式
   您可以變更包含所選儲存格之整個資料列的字型，讓文字變成粗體。

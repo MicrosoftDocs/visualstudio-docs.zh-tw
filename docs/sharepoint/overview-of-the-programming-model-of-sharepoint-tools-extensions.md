@@ -1,5 +1,6 @@
 ---
 title: SharePoint 工具擴充功能的程式設計模型總覽
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 160751e7f580ede458232f98dc753a1145094f57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2f7b56b372f1f083b441a5d3e6045ffc7aff7ed
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985137"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585728"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>SharePoint 工具擴充功能的程式設計模型總覽
   在 Visual Studio 中建立 SharePoint 工具的延伸模組時，您會從實作 SharePoint 工具公開的一或多個擴充性介面開始。 在大部分情況下，您也會使用 SharePoint 工具所提供的其他類型，在您的延伸模組中實作功能。 在某些情況下，您也可以使用 Visual Studio 和 SharePoint 所提供的其他物件模型中的類型。 您必須了解每個物件模型的用途，並了解如何將它們搭配使用，為 SharePoint 工具建立延伸模組。
@@ -101,7 +102,7 @@ ms.locfileid: "72985137"
 
  您可以在這兩個 SharePoint 工具擴充功能的物件模型中使用 API，但在每個物件模型的 SharePoint 工具擴充功能方面有一些優點和缺點。 如需詳細資訊，請參閱 [呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
 
-|物件模型|說明|
+|物件模型|描述|
 |------------------|-----------------|
 |伺服器物件模型|伺服器物件模型提供 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 和 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 以程式設計的方式公開的所有功能的存取權。 此物件模型的設計是要由 SharePoint 伺服器上執行的 SharePoint 方案所使用。 此物件模型大部分是在 *Microsoft.SharePoint.dll* 元件中定義。 如需伺服器物件模型的詳細資訊，請參閱 [使用 SharePoint Foundation 伺服器端物件模型](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14))。|
 |用戶端物件模型|用戶端物件模型是可以用來從遠端用戶端或伺服器與 SharePoint 資料交互操作的伺服器物件模型的子集。 其設計是為了將必須執行以執行一般工作的往返次數降到最低。 大部分的用戶端物件模型都是在 *Microsoft.SharePoint.Client.dll* 和 *Microsoft.SharePoint.Client.Runtime.dll* 元件中定義。 如需用戶端物件模型的詳細資訊，請參閱 [Managed 用戶端物件模型](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14))。|

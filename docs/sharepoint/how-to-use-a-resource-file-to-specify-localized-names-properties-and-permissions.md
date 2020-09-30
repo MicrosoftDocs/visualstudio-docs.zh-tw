@@ -1,5 +1,6 @@
 ---
-title: 如何：使用資源檔來指定當地語系化的名稱、屬性和許可權 |Microsoft Docs
+title: 如何使用 SharePoint 專案中的資源檔 |Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,14 +20,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a87cc8a3eb8f98ea19a87e93c37aae5303151ecf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1693308c591e60a2df0e4d8e18ece8cc9b598fd2
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015404"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585741"
 ---
-# <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>如何：使用資源檔來指定當地語系化的名稱、屬性和許可權
+# <a name="how-to-use-a-resource-file-in-a-sharepoint-project"></a>如何使用 SharePoint 專案中的資源檔
+
   藉由使用資源檔，您可以提供當地語系化的名稱和定義屬性，或是對商務資料連接 (BDC) 模型中定義的物件套用權限。 若要指定這項資訊，請將 **商務資料連線資源** 專案加入至包含 **商務資料連線模型** 專案的專案。 然後編輯資源檔的 XML，藉此指定名稱、屬性和權限。
 
 ### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>將 BDC 資源檔加入至 SharePoint 專案

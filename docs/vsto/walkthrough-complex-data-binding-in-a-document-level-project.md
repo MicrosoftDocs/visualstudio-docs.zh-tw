@@ -1,5 +1,6 @@
 ---
 title: 逐步解說：檔層級專案中的複雜資料系結
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7aba307bcd76cc055e42c11418d42f3dd0cfba1f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67692348"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584317"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>逐步解說：檔層級專案中的複雜資料系結
   本逐步解說示範檔層級專案中的複雜資料系結的基本概念。 您可以將 Microsoft Office Excel 工作表中的多個資料格系結至 Northwind SQL Server 資料庫中的欄位。
@@ -80,7 +81,7 @@ ms.locfileid: "67692348"
 
 8. 選取 [ **員工** ] 資料表旁的核取方塊。
 
-9. 按一下 [完成]  。
+9. 按一下 [完成] 。
 
    Wizard 會將 **Employees** 資料表加入至 [ **資料來源** ] 視窗。 它也會將具類型的資料集加入至 **方案總管**中可見的專案。
 

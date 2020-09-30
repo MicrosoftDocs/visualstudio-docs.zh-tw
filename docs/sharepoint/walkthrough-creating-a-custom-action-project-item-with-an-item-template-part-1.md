@@ -1,5 +1,6 @@
 ---
 title: 使用專案範本建立自訂動作專案專案（第1部分）
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5b19f99cf9688191a5b6ef8ba8d4f58f4c6633c
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 5cdf574d17e63e1ef4906c629d43f5f928784d01
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739937"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585559"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>逐步解說：使用專案範本建立自訂動作專案專案（第1部分）
   您可以藉由建立自己的專案專案類型，在 Visual Studio 中擴充 SharePoint 專案系統。 在這個逐步解說中，您將建立可加入至 SharePoint 專案的專案專案，以在 SharePoint 網站上建立自訂動作。 自訂動作會將功能表項目加入至 SharePoint 網站的 [ **網站動作** ] 功能表。
@@ -46,7 +47,7 @@ ms.locfileid: "90739937"
 > [!NOTE]
 > 您可以從 [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) 下載範例，以示範如何建立工作流程的自訂活動。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
  您需要在開發電腦上執行下列元件，才能完成此逐步解說：
 
 - 支援的 Microsoft Windows、SharePoint 和 Visual Studio 版本。

@@ -1,5 +1,6 @@
 ---
 title: 如何：以程式設計方式將檔案附加至 Outlook 電子郵件專案
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6cde83fa59f45cbc45e56738f09ccf3099f5c02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2427ffc634976462e27eb788259184ce69347769
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546129"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585323"
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>如何：以程式設計方式將檔案附加至 Outlook 電子郵件專案
   此範例會將檔案附加至新的訊息項目，並將其傳送至 Armando Pinto。 此範例假設有一個名為 Armando Pinto 的人員做為收件者。

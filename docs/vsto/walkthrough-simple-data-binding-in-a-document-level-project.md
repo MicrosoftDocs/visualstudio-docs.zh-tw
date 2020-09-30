@@ -1,5 +1,6 @@
 ---
 title: 逐步解說：檔層級專案中的簡單資料系結
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c22947e572a29c2b49a5ce9bb808c3cf2fe2902
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981058"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584920"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>逐步解說：檔層級專案中的簡單資料系結
   本逐步解說示範檔層級專案中資料系結的基本概念。 SQL Server 資料庫中的單一資料欄位會系結至 Microsoft Office Excel 中的已命名範圍。 本逐步解說也會示範如何加入控制項，讓您可以在資料表中的所有記錄之間進行滾動。
@@ -79,7 +80,7 @@ ms.locfileid: "62981058"
 
 8. 選取 [ **Customers** ] 資料表旁的核取方塊。
 
-9. 按一下 [完成]  。
+9. 按一下 [完成] 。
 
    Wizard 會將 **Customers** 資料表加入至 [ **資料來源** ] 視窗。 它也會將具類型的資料集加入至 **方案總管**中可見的專案。
 

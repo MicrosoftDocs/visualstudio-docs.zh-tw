@@ -1,5 +1,6 @@
 ---
 title: 以程式設計方式將圖片和文字藝術新增至檔
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 621051c827b08e66d68bc348401c2a939e279bcf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e73473229a35bebb99eac03963fb43f880a39903
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538082"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585388"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>如何：以程式設計方式將圖片和文字藝術新增至檔
   您可以在設計階段或執行階段，將圖片和繪圖物件加入至您的文件。 文字藝術師可讓您將裝飾文字加入至 Microsoft Office Word 文件。 這些特殊文字效果是繪圖物件，您可自訂並將它們插入至文件。

@@ -10,12 +10,12 @@ no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: ed92205388202c457f4d6c8e3fbba567a0d5944e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f8795b798b492370a08e55171c5627485c7869a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86211658"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584057"
 ---
 # <a name="getting-started-with-aspnet-core"></a>開始使用 ASP.NET Core
 
@@ -23,7 +23,7 @@ ms.locfileid: "86211658"
 
 ## <a name="installing-net-core"></a>安裝 .NET Core
 
-當您安裝 Visual Studio for Mac 時，會自動安裝 .NET Core 3.1。 如需 Visual Studio for Mac 中支援之 .NET Core 版本的詳細資訊，請參閱 [.Net Core 支援](/visualstudio/mac/net-core-support)。
+當您安裝 Visual Studio for Mac 時，會自動安裝 .NET Core 3.1。 如需 Visual Studio for Mac 中支援之 .NET Core 版本的詳細資訊，請參閱 [.Net Core 支援](./net-core-support.md)。
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中建立 ASP.NET Core 應用程式
 
@@ -238,7 +238,7 @@ ASP.NET Core 應用程式使用「模型-檢視-控制器 (MVC)」設計模式�
 
 請務必順利完成所有步驟，以確保成功安裝 .NET Core。
 
-## <a name="summary"></a>總結
+## <a name="summary"></a>摘要
 
 本指南提供了 ASP.NET Core 的簡介。 當中描述其概念和使用時機，並提供了如何在 Visual Studio for Mac 中使用它的資訊。
 如需其下一個步驟的詳細資訊，請參閱下列指南：

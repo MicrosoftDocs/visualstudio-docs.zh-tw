@@ -1,5 +1,6 @@
 ---
-title: 使用 Windows Installer 部署 Visual Studio Tools for Office 的解決方案
+title: 使用 Windows Installer 部署 VSTO 方案
+titleSuffix: ''
 ms.date: 08/18/2010
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +19,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46bfa808cbf99e942d7aadd2802f51eecfcefae8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6fd2824ae10ad36a7ed50250620e98575e9ea60
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444902"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585689"
 ---
-# <a name="deploying-a-visual-studio-tools-for-office-solution-using-windows-installer"></a>使用 Windows Installer 部署 Visual Studio Tools for Office 的解決方案
+# <a name="deploying-a-vsto-solution-using-windows-installer"></a>使用 Windows Installer 部署 VSTO 方案
 
 ## <a name="summary"></a>摘要
 
@@ -122,7 +123,7 @@ Microsoft Office 使用登錄專案來找出並載入增益集。這些登錄專
 ::: moniker-end
 ::: moniker range="=vs-2019"
 3. 在 [ **加入新專案** ] 對話方塊中，選取 [ **安裝專案** ] 範本。
-4. 按一下 [下一步]  。
+4. 按 [下一步]  。
 ::: moniker-end
 
 5. 在 [ **名稱** ] 方塊中，輸入 **officeaddinsetup]**。
@@ -346,7 +347,7 @@ Microsoft Office 使用登錄機碼來尋找增益集。 HKEY \_ CURRENT user hi
 |Microsoft Graph|{011B9112-EBB1-4A6C-86CB-C2FDC9EA7B0E}|{52DA4B37-B8EB-4B7F-89C1-824654CE4C70}|{24706F33-F0CE-4EB4-BC91-9E935394F510}|-|-|
 |Smart Tag (智慧標籤)|{7102C98C-EF47-4F04-A227-FE33650BF954}|{487A7921-EB3A-4262-BB5B-A5736B732486}|{74EFC1F9-747D-4867-B951-EFCF29F51AF7}|-|-|
 |Office 共用|{64E2917E-AA13-4CA4-BFFE-EA6EDA3AFCB4}|{6A174BDB-0049-4D1C-86EF-3114CB0C4C4E}|{76601EBB-44A7-49EE-8DE3-7B7B9D7EBB05}|{625F5772-C1B3-497E-8ABE-7254EDB00506}|{625F5772-C1B3-497E-8ABE-7254EDB00506}|
-|專案|{957A4EC0-E67B-4E86-A383-6AF7270B216A}|{1C50E422-24FA-44A9-A120-E88280C8C341}|{706D7F44-8231-489D-9B25-3025ADE9F114}|{107BCD9A-F1DC-4004-A444-33706FC10058}|{107BCD9A-F1DC-4004-A444-33706FC10058}|
+|Project|{957A4EC0-E67B-4E86-A383-6AF7270B216A}|{1C50E422-24FA-44A9-A120-E88280C8C341}|{706D7F44-8231-489D-9B25-3025ADE9F114}|{107BCD9A-F1DC-4004-A444-33706FC10058}|{107BCD9A-F1DC-4004-A444-33706FC10058}|
 
   ![最後啟動狀況的螢幕擷取畫面](media/setup-project-figure-11.jpg)
 

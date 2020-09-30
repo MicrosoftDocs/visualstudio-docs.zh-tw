@@ -1,5 +1,6 @@
 ---
 title: 如何：以程式設計方式新增及刪除工作表批註
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc02a659c50a5b207f2f53d0a8781b0d23419301
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c87851afb70e9207f9a24fc18826a4c2b218ec08
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520077"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583797"
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>如何：以程式設計方式新增及刪除工作表批註
   您可以透過程式設計方式，加入及刪除 Microsoft Office Excel 工作表中的註解。 註解只能加入單一儲存格，而不能加入多個儲存格範圍。

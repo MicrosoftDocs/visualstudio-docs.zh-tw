@@ -1,5 +1,6 @@
 ---
 title: 逐步解說：從自訂工作窗格自動化應用程式
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5135e96125192d7ed125287aa47c839031824fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52474aeebfbc03fba2a2e119e1b3366c30cf6959
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68871950"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585076"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>逐步解說：從自訂工作窗格自動化應用程式
   此逐步解說示範如何建立會自動化 PowerPoint 的自訂工作窗格。 自訂工作窗格會在使用者按一下自訂工作窗格上的 <xref:System.Windows.Forms.MonthCalendar> 控制項時，將日期插入投影片。

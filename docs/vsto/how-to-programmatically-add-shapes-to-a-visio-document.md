@@ -1,5 +1,6 @@
 ---
 title: 如何：以程式設計方式將圖形新增至 Visio 檔
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: adde20bff07b54a7fb5777bd9e03a995b4fbd7df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8eb3ad837f699a1bb0bbc327b6e892a20866e0a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538056"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584226"
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>如何：以程式設計方式將圖形新增至 Visio 檔
   您可以從樣板擷取主圖形並把圖形放在使用中的頁面上，即可在 Microsoft Office Visio 文件中加入圖形。

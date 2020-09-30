@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 07/03/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 56af8f7cd30ec8e41ece2772dc63d67a2dbf3976
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: a385e58f73edbcea6eb25b7b2e2728e00f9bcb8d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402609"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584005"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 for Mac 導覽
 
@@ -66,7 +66,7 @@ Solution Pad 能組織方案中的專案：
 
 這是原始碼、資源、使用者介面和相依性的檔案組織成平台專屬專案的位置。
 
-如需在 Visual Studio for Mac 中使用專案和方案的詳細資訊，請參閱[專案和方案](/visualstudio/mac/projects-and-solutions)一文。
+如需在 Visual Studio for Mac 中使用專案和方案的詳細資訊，請參閱[專案和方案](./projects-and-solutions.md)一文。
 
 ## <a name="assembly-references"></a>組件參考
 
@@ -78,7 +78,7 @@ Solution Pad 能組織方案中的專案：
 
 ![[編輯參考] 對話方塊](media/ide-tour-image20.png)
 
-如需在 Visual Studio for Mac 中使用參考的詳細資訊，請參閱[管理專案中的參考](/visualstudio/mac/managing-references-in-a-project)一文。
+如需在 Visual Studio for Mac 中使用參考的詳細資訊，請參閱[管理專案中的參考](./managing-references-in-a-project.md)一文。
 
 ## <a name="dependencies--packages"></a>相依性 / 封裝
 
@@ -90,7 +90,7 @@ NuGet 是適用於 .NET 開發最受歡迎的套件管理員。 使用 Visual St
 
 ![新增 NuGet 套件](media/ide-tour-image21.png)
 
-在應用程式中使用 NuGet 套件的相關資訊，可於[在專案中包含 NuGet 專案](/visualstudio/mac/nuget-walkthrough)一文中找到。
+在應用程式中使用 NuGet 套件的相關資訊，可於[在專案中包含 NuGet 專案](./nuget-walkthrough.md)一文中找到。
 
 ## <a name="source-editor"></a>原始檔編輯器
 
@@ -111,7 +111,7 @@ NuGet 是適用於 .NET 開發最受歡迎的套件管理員。 使用 Visual St
 * 格式選取項目
 * 內嵌燈泡
 
-如需在 Visual Studio for Mac 中使用來源編輯器的詳細資訊，請參閱 [原始檔編輯器](/visualstudio/mac/source-editor) 檔。
+如需在 Visual Studio for Mac 中使用來源編輯器的詳細資訊，請參閱 [原始檔編輯器](./source-editor.md) 檔。
 
 若要隨時保持可用的索引標籤，您可以利用釘選它們。 這可確保每次您啟動專案時，您需要的索引標籤一律會顯示。 若要釘選索引標籤，請將滑鼠停留在索引標籤上，然後按一下 _釘_ 選圖示
 
@@ -119,15 +119,15 @@ NuGet 是適用於 .NET 開發最受歡迎的套件管理員。 使用 Visual St
 
 ## <a name="refactoring"></a>重構
 
-Visual Studio for Mac 提供兩種有用的方式來重構程式碼：內容動作和原始檔分析。 您可以在[重構](/visualstudio/mac/refactoring)一文中閱讀有關它們的深入資訊。
+Visual Studio for Mac 提供兩種有用的方式來重構程式碼：內容動作和原始檔分析。 您可以在[重構](./refactoring.md)一文中閱讀有關它們的深入資訊。
 
 ## <a name="debugging"></a>偵錯
 
-Visual Studio for Mac 具有可支援 .NET Core、.NET Framework、Unity 和 Xamarin 專案的偵錯工具。 Visual Studio for Mac 使用 .NET Core 偵錯工具和 Mono 軟偵錯工具，可讓 IDE 在所有平臺上進行 managed 程式碼的偵錯工具。 如需偵錯的詳細資訊，請瀏覽[偵錯](/visualstudio/mac/debugging)一文。
+Visual Studio for Mac 具有可支援 .NET Core、.NET Framework、Unity 和 Xamarin 專案的偵錯工具。 Visual Studio for Mac 使用 .NET Core 偵錯工具和 Mono 軟偵錯工具，可讓 IDE 在所有平臺上進行 managed 程式碼的偵錯工具。 如需偵錯的詳細資訊，請瀏覽[偵錯](./debugging.md)一文。
 
 偵錯工具包含特殊類型的豐富視覺化檢視，例如字串、色彩、Url，以及大小、座標和貝茲曲線。
 
-如需偵錯工具之資料視覺效果的詳細資訊，請瀏覽[資料視覺效果](/visualstudio/mac/data-visualizations)一文。
+如需偵錯工具之資料視覺效果的詳細資訊，請瀏覽[資料視覺效果](./data-visualizations.md)一文。
 
 ## <a name="version-control"></a>版本控制
 
@@ -139,7 +139,7 @@ Visual Studio for Mac 與 Git 和子版本原始檔控制系統整合。 進行�
 
 ![Solution Pad 中的未認可檔案](media/ide-tour-image23.png)
 
-如需在 Visual Studio 中使用版本控制的詳細資訊，請查看[版本控制](/visualstudio/mac/version-control)一文。
+如需在 Visual Studio 中使用版本控制的詳細資訊，請查看[版本控制](./version-control.md)一文。
 
 ## <a name="next-steps"></a>後續步驟
 

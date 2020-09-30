@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 01/08/2020
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: b9892a322c0264a1bdb68d672c7fe6c6e9b08d4f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4009e6c139ef33bcd4caa01a9313695628757884
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183596"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583927"
 ---
 # <a name="net-core-support"></a>.NET Core 支援
 
@@ -37,4 +37,4 @@ ms.locfileid: "84183596"
 * 安裝程式預設會安裝 .NET Core v2.1.701 (如果是 8.1 則會安裝 v2.1.700)。
 * 若要下載 .NET Core 的任何其他版本，請造訪 [dotnet 頁面](https://dotnet.microsoft.com/download/dotnet-core) \(英文\)。
 * 使用 .NET Core 3.0 時，預設會使用 c # 8 版。 使用 .NET Core 2.x 時，c # 7.3 是預設值。 如需詳細資訊，請參閱 [c # 語言版本控制](/dotnet/csharp/language-reference/configure-language-version) 。
-* 如需安裝 Visual Studio for Mac 預覽版本的相關資訊，請參閱[安裝預覽版本](/visualstudio/mac/install-preview)指南。
+* 如需安裝 Visual Studio for Mac 預覽版本的相關資訊，請參閱[安裝預覽版本](./install-preview.md)指南。

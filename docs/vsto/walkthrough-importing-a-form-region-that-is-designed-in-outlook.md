@@ -1,5 +1,6 @@
 ---
 title: 逐步解說：匯入在 Outlook 中設計的表單區域
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23d058e7bdbbe3f12ef4521318236e939e1b22f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a0de1a25a5309e99193b7be8bce2819808665b8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985444"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584972"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>逐步解說：匯入在 Outlook 中設計的表單區域
   本逐步解說示範如何在 Microsoft Office Outlook 中設計表單區域，然後使用 [新增表單區域精靈] **** 將表單區域匯入至 Outlook VSTO 增益集專案。 在 Outlook 中設計表單區域可讓您將原生 Outlook 控制項加入繫結至 Outlook 資料的表單區域。 匯入表單區域之後，即可處理每個控制項的事件。

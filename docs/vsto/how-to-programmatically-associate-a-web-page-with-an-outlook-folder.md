@@ -1,5 +1,5 @@
 ---
-title: 如何：以程式設計方式使網頁與 Outlook 資料夾產生關聯
+title: 將網頁與 Outlook 資料夾產生關聯
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,14 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b8d44ffc46557243d2681b8f8b4a3b85d1cd9be6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35eb2dc3b1b595a4bf960af67ac5006cd9839c6e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546142"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585336"
 ---
-# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>如何：以程式設計方式使網頁與 Outlook 資料夾產生關聯
+# <a name="associate-a-web-page-with-an-outlook-folder"></a>將網頁與 Outlook 資料夾產生關聯
+
   這個範例會檢查 Microsoft Office Outlook 中所指定的資料夾 `HtmlView` 。 如果資料夾不存在，則程式碼會建立資料夾，並將網頁指派給它。 如果資料夾存在，則程式碼會顯示資料夾內容。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]

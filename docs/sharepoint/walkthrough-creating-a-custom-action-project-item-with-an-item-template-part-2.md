@@ -1,5 +1,6 @@
 ---
 title: 使用專案範本建立自訂動作專案專案（第2部分）
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c96546f85b21ee0ca8a559059a16158b743cb915
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 957af3fdb4a86f4973ff8ac24251bae923ec299c
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016104"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585467"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>逐步解說：使用專案範本建立自訂動作專案專案（第2部分）
   在您定義自訂類型的 SharePoint 專案專案，並將其與 Visual Studio 中的專案範本建立關聯之後，您可能也會想要提供範本的嚮導。 當使用者使用您的範本將新的專案專案實例加入至專案時，您可以使用此嚮導來收集使用者的資訊。 您收集的資訊可以用來初始化專案專案。
@@ -36,7 +37,7 @@ ms.locfileid: "86016104"
 > [!NOTE]
 > 您可以從 [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) 下載範例，以示範如何建立工作流程的自訂活動。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  若要執行這個逐步解說，您必須先完成逐步解說 [：使用專案範本建立自訂動作專案專案（第1部分）](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)來建立 CustomActionProjectItem 方案。
 
  您也需要在開發電腦上執行下列元件，才能完成此逐步解說：

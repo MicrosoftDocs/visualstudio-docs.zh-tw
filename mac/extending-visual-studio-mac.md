@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: dd4db2502c65e9330bde5f475fc97b2e86a49e4a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10beb7e95807a098cbe6efa89d02fdfa866bc2b8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80544032"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583979"
 ---
 # <a name="extending-visual-studio-for-mac"></a>擴充 Visual Studio for Mac
 
@@ -161,7 +161,7 @@ public enum DateInserterCommands
 
 ## <a name="extending-the-new-editor"></a>擴充新編輯器
 
-Visual Studio for Mac [引進新的原生 Cocoa 文字編輯器 UI](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)，它建置在與 Visual Studio Windows 版相同的編輯器層上。
+Visual Studio for Mac [引進新的原生 Cocoa 文字編輯器 UI](/visualstudio/releasenotes/vs2019-mac-relnotes)，它建置在與 Visual Studio Windows 版相同的編輯器層上。
 
 在 Visual Studio 和 Visual Studio for Mac 之間共用編輯器的好處是，可以將以 Visual Studio 為目標的程式碼調整為在 Visual Studio for Mac 上執行。
 

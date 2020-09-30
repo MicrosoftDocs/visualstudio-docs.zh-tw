@@ -1,5 +1,6 @@
 ---
 title: 在 SharePoint 專案部署或撤銷時執行程式碼
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5bd60c9d7b30d4620630d1f6752bd4c7e8bf1182
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb83696febe9eca700ae9651492dbd188e38f856
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016069"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585754"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>如何：在 SharePoint 專案部署或撤銷時執行程式碼
   如果您想要在 SharePoint 專案部署或撤銷時執行其他工作，您可以處理 Visual Studio 引發的事件。 如需詳細資訊，請參閱 [擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。

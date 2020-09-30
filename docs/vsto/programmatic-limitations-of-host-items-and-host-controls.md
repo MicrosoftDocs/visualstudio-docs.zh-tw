@@ -1,5 +1,6 @@
 ---
 title: 主專案和主控制項的程式設計限制
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -30,12 +31,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97b94291a3fd057e82bd79aa4f6c3220020bc24a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 098145ca901b1f16974058513d3781fc4621f217
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255806"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584473"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>主專案和主控制項的程式設計限制
   每個主項目和主控制項的行為，都已設計成像是對應的原生 Microsoft Office Word 或 Microsoft Office Excel 物件一樣，同時還具備額外的功能。 不過，主項目和主控制項在執行階段的行為，還是與原生 Office 物件有些基本差異。

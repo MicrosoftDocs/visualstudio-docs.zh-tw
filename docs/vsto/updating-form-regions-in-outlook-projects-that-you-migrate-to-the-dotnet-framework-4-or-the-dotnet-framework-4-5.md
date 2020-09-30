@@ -1,5 +1,6 @@
 ---
-title: 在遷移至 .NET Framework 4，4.5 的專案中更新 Outlook 表單區域
+title: 在遷移至 .NET Framework 4.5 時更新 Outlook 表單區域
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7e300cd9f6f7d631a029310b01fbfdad7cb4686
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d8978703630e99ecb930e18e7d128eddff8792f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66836050"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584395"
 ---
-# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新 Outlook 專案中您遷移至 .NET Framework 4 或 .NET Framework 4.5 的表單區域
+# <a name="update-outlook-form-regions-when-migrated-to-net-framework-45"></a>在遷移至 .NET Framework 4.5 時更新 Outlook 表單區域
+
   如果 Outlook VSTO 增益集專案的目標 Framework 與表單區域的變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，您就必須在執行階段中，針對產生的表單區域程式碼以及可執行個體化特定表單區域類別的任何程式碼，進行一些變更。
 
 ## <a name="update-the-generated-form-region-code"></a>更新產生的表單區域程式碼

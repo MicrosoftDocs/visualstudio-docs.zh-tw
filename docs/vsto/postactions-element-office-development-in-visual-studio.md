@@ -1,5 +1,6 @@
 ---
-title: '&lt;&gt;在 Visual Studio) 中 (Office 開發的 p s 元素'
+title: '&lt;&gt; (Office 開發) 的 p s 元素'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfe9ae171f0f6fac1c2b5add5340de1c11f3da0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb716c3d9a20b6bda2cadff178a5126d6815ac00
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544413"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583706"
 ---
-# <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;&gt;在 Visual Studio) 中 (Office 開發的 p s 元素
+# <a name="ltpostactionsgt-element-office-development"></a>&lt;&gt; (Office 開發) 的 p s 元素
   `postActions` 命名空間的 `vstav3` 項目包含描述安裝 Office 方案後所執行之部署後動作的所有 `postAction` 項目。
 
 ## <a name="syntax"></a>語法

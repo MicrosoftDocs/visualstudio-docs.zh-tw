@@ -1,5 +1,6 @@
 ---
 title: 逐步解說：將資料系結至 Excel 執行窗格上的控制項
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1543f872961d556674dd5ad6b3f5b8071d2d404b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3801aff53a5bf9a9a8d77263ab74127c1b2a9846
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253887"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585050"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>逐步解說：將資料系結至 Excel 執行窗格上的控制項
   本逐步解說示範如何將資料系結至 Microsoft Office Excel 中執行窗格上的控制項。 這些控制項會顯示 SQL Server 資料庫中資料表之間的主要/詳細資料關聯。
@@ -74,7 +75,7 @@ ms.locfileid: "71253887"
 
 4. 選取與 Northwind 範例 SQL Server 資料庫的資料連線，或使用 [ **新增連接** ] 按鈕來加入新的連接。
 
-5. 按一下 [下一步]  。
+5. 按 [下一步]  。
 
 6. 如果已選取連接，請清除選項來儲存連接，然後按 **[下一步]**。
 
@@ -84,7 +85,7 @@ ms.locfileid: "71253887"
 
 9. 展開 [ **Products** ] 資料表 **，然後選取**[ **ProductName**]、[已**供應商**]、[ **QuantityPerUnit**] 和 [
 
-10. 按一下 [完成]  。
+10. 按一下 [完成] 。
 
     Wizard 將 [ **供應商** 資料表] 和 [ **產品** ] 資料表加入至 [ **資料來源** ] 視窗。 它也會將具類型的資料集加入至 **方案總管**中可見的專案。
 

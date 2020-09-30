@@ -1,5 +1,6 @@
 ---
 title: 如何：以程式設計方式在檔中找到的專案之間執行迴圈
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e200f910e002bb9380bd5a1b556dc6f1cab08810
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e033b3d43f40736d7c77d11b489c0a6c2e91434e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544738"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585141"
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>如何：以程式設計方式在檔中找到的專案之間執行迴圈
   <xref:Microsoft.Office.Interop.Word.Find>類別具有 <xref:Microsoft.Office.Interop.Word.Find.Found%2A> 屬性，每當找到搜尋的專案時，它就會傳回**true** 。 您可以使用 <xref:Microsoft.Office.Interop.Word.Range> 方法在 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 中找到的所有執行個體間執行迴圈。

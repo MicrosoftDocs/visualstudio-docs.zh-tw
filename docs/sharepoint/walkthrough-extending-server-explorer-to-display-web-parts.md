@@ -1,5 +1,6 @@
 ---
 title: 逐步解說：擴充伺服器總管以顯示 Web 組件 |Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 915a1762782b2bf7177b87a3a5f4cdc6e08c6405
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 52dc3f418c3e86e126cbcf196fca2cf73fad35b2
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739989"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583849"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>逐步解說：擴充伺服器總管以顯示 web 元件
   在 Visual Studio 中，您可以使用**伺服器總管**的 [ **sharepoint 連接**] 節點來查看 sharepoint 網站上的元件。 不過， **伺服器總管** 預設不會顯示某些元件。 在這個逐步解說中，您將延伸 **伺服器總管** ，使其在每個連線的 SharePoint 網站上顯示網頁元件庫。
@@ -42,7 +43,7 @@ ms.locfileid: "90739989"
 > [!NOTE]
 > 如需本逐步解說中使用用戶端物件模型（而不是其伺服器物件模型）的替代版本，請參閱 [逐步解說：在伺服器總管擴充功能中呼叫 sharepoint 用戶端物件模型](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
  您需要在開發電腦上執行下列元件，才能完成此逐步解說：
 
 - 支援的 Windows 版本、SharePoint 及 Visual Studio。

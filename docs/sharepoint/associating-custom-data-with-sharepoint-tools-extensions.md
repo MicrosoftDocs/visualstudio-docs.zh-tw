@@ -1,5 +1,6 @@
 ---
 title: 將自訂資料與 SharePoint 工具延伸模組產生關聯 |Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a2c1869791b250fb90c6a634f057797f3c57a62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 434f8aaf9303f3ee9a4008094b4e98c99d635e9f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62987968"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584686"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>將自訂資料與 SharePoint 工具延伸模組產生關聯
   您可以將自訂資料新增至 SharePoint 工具延伸模組中的特定物件。 當您的延伸模組中有您想要稍後從擴充功能的其他程式碼存取的資料時，這非常有用。 您可以將資料與延伸模組中的物件建立關聯，然後再從相同的物件取得資料，而不是執行自訂方式來儲存及存取資料。

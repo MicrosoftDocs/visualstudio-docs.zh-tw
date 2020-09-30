@@ -1,5 +1,6 @@
 ---
 title: 逐步解說： VSTO 增益集專案中的簡單資料系結
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcfb150cc0b97b72fd0f6eac02f59ae1db3e9ca6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67264800fd2baa1ca685bcc578fb4d400e6538dd
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985397"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584907"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>逐步解說： VSTO 增益集專案中的簡單資料系結
 
@@ -85,7 +86,7 @@ ms.locfileid: "72985397"
 
 6. 在 [ **選擇您的資料庫物件** ] 頁面中，展開 [ **資料表** ]，然後選取 [ **Customer (SalesLT)**]。
 
-7. 按一下 [完成]  。
+7. 按一下 [完成] 。
 
     *Adventureworksltdataset.xsd .xsd*檔案會新增至**方案總管**。 這個檔案會定義下列項目：
 
@@ -163,7 +164,7 @@ ms.locfileid: "72985397"
 - [逐步解說：檔層級專案中的簡單資料系結](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
 - [逐步解說：檔層級專案中的複雜資料系結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
 - [在 Office 方案中使用本機資料庫檔案總覽](../vsto/using-local-database-files-in-office-solutions-overview.md)
-- [新增資料來源](../data-tools/add-new-data-sources.md)
+- [新增新資料來源](../data-tools/add-new-data-sources.md)
 - [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [如何：將物件的資料填入檔](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [如何：使用主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

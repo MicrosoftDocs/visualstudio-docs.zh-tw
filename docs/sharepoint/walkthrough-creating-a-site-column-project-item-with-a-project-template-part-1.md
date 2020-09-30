@@ -1,5 +1,6 @@
 ---
 title: 使用專案範本建立網站資料行專案專案（第1部分）
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eceaa4db4bb31870ee66fbffae8882fc93d9abbb
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a740d96fb6ae846188fc4fa457c5baeb7b5e907d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739911"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585546"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>逐步解說：使用專案範本建立網站資料行專案專案（第1部分）
   SharePoint 專案是一個或多個 SharePoint 專案專案的容器。 您可以建立自己的 SharePoint 專案專案類型，然後將它們與專案範本產生關聯，藉以擴充 Visual Studio 中的 SharePoint 專案系統。 在這個逐步解說中，您將會定義用來建立網站資料行的專案專案類型，然後您將建立專案範本，可用來建立包含網站資料行專案專案的新專案。
@@ -40,7 +41,7 @@ ms.locfileid: "90739911"
 > [!NOTE]
 > 如需一系列的範例工作流程，請參閱 [SharePoint workflow 範例](/sharepoint/dev/general-development/sharepoint-workflow-samples)。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
  您需要在開發電腦上執行下列元件，才能完成此逐步解說：
 
 - 支援的 Microsoft Windows 版本、SharePoint 和 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。

@@ -1,5 +1,6 @@
 ---
 title: 如何：使用主控制項的資料更新資料來源
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52540f0cf94a12efda891657ec4aae9452ad6f86
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541241"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585115"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>如何：使用主控制項的資料更新資料來源
   您可以將主控制項繫結至資料來源，並以在控制項中對資料所做的變更來更新資料來源。 這個程序包含兩個主要步驟：

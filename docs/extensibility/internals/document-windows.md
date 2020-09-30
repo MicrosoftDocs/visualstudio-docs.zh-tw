@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38556eec259e91dd9e007d8e9bf1ac8d59f159a0
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 93d8b19569912278f0dea6d849e3a2c6e183dba4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011758"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584894"
 ---
 # <a name="document-windows"></a>文件視窗
 在 Visual Studio 中， *文件視窗* 是與多重文件介面（ (MDI) 視窗）相關聯的框架子視窗。 文件視窗通常是用來顯示和修改原始程式碼或文字，但也可以裝載其他功能類型。 文件視窗：
@@ -33,7 +33,7 @@ ms.locfileid: "90011758"
   如需 Visual Studio 中視窗行為的詳細資訊，請參閱 [自訂視窗版面](../../ide/customizing-window-layouts-in-visual-studio.md)配置。
 
 ## <a name="document-window-implementation"></a>檔視窗執行
- 檔視窗是藉由執行編輯器來建立。 介面會在具現 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> 化編輯器的過程中建立文件視窗。 如需詳細資訊，請參閱 [編輯器中的舊版介面](../../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015)。
+ 檔視窗是藉由執行編輯器來建立。 介面會在具現 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> 化編輯器的過程中建立文件視窗。 如需詳細資訊，請參閱 [編輯器中的舊版介面](../../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015&preserve-view=true)。
 
 > [!NOTE]
 > 若要在視窗中提供反向和向前導覽點，請執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> 介面。 文字編輯器會使用文字標記來識別檔中的導覽點。

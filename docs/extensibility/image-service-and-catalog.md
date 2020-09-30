@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26d8a3c4f3458c3659ccdd3a4cde802293342e5c
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: a098e78e8895aea72d830a88e436a06f15de6133
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011953"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584538"
 ---
 # <a name="image-service-and-catalog"></a>映射服務和目錄
 本逐步指南包含採用 Visual Studio 2015 中引進的 Visual Studio 映射服務和映射目錄的指導方針和最佳作法。
@@ -101,12 +101,12 @@ ms.locfileid: "90011953"
 </Symbols>
 ```
 
-|**Subelement**|**定義**|
+|**Subelement**|**[定義]**|
 |-|-|
 |匯入|匯入指定資訊清單檔的符號，以用於目前的資訊清單|
 |Guid|符號代表 GUID，且必須符合 GUID 格式|
-|識別碼|符號代表識別碼，且必須為非負整數|
-|String|符號代表任一字元串值|
+|ID|符號代表識別碼，且必須為非負整數|
+|字串|符號代表任一字元串值|
 
  符號會區分大小寫，並使用 $ (符號名稱) 語法來參考：
 
@@ -141,10 +141,10 @@ ms.locfileid: "90011953"
 </Image>
 ```
 
-|**Attribute**|**定義**|
+|**Attribute**|**[定義]**|
 |-|-|
 |Guid|必影像標記的 GUID 部分|
-|識別碼|必影像標記的識別碼部分|
+|ID|必影像標記的識別碼部分|
 |AllowColorInversion|[選擇性，預設值為 true]指出當使用於深色背景時，影像是否可以以程式設計方式反轉。|
 
  **Source**
@@ -157,14 +157,14 @@ ms.locfileid: "90011953"
  </Source>
 ```
 
-|**Attribute**|**定義**|
+|**Attribute**|**[定義]**|
 |-|-|
 |Uri|必URI，定義可從中載入映射的位置。 可以是下列其中一項：<br /><br /> -使用 application:///授權單位的[套件 URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)<br />-絕對元件資源參考<br />-包含原生資源之檔案的路徑|
 |背景|參數指出來源預定要使用的背景內容。<br /><br /> 可以是下列其中一項：<br /><br /> *Light：* 來源可以在淺背景使用。<br /><br /> *深色：* 來源可以在深色背景上使用。<br /><br /> *Systeminformation.highcontrast：* 來源可以在高對比模式中的任何背景使用。<br /><br /> *HighContrastLight：* 來源可以在高對比模式中的淺色背景上使用。<br /><br /> *HighContrastDark：* 來源可以在高對比模式的深色背景上使用。<br /><br /> 如果省略 Background 屬性，則可以在任何背景使用來源。<br /><br /> 如果背景是 *淺色*、 *深色*、 *HighContrastLight*或 *HighContrastDark*，則不會反轉來源的色彩。 如果省略背景或設定為 *systeminformation.highcontrast*，則會以影像的 **AllowColorInversion** 屬性來控制來源的色彩反轉。|
 
 \<Source>元素只能有下列其中一個選擇性子項目：
 
-|**Element**|**屬性 (所有必要的) **|**定義**|
+|**Element**|**屬性 (所有必要的) **|**[定義]**|
 |-|-|-|
 |\<Size>|值|來源將用於在裝置單位)  (指定大小的影像。 影像將會是正方形。|
 |\<SizeRange>|MinSize、MaxSize|來源會用於從 MinSize 到 MaxSize (在裝置單位) 的影像。 影像將會是正方形。|
@@ -177,10 +177,10 @@ ms.locfileid: "90011953"
 <NativeResource Type="type" ID="int" />
 ```
 
-|**Attribute**|**定義**|
+|**Attribute**|**[定義]**|
 |-|-|
 |類型|必原生資源的類型，也就是 XAML 或 PNG|
-|識別碼|必原生資源的整數識別碼部分|
+|ID|必原生資源的整數識別碼部分|
 
  **ImageList**
 
@@ -193,10 +193,10 @@ ms.locfileid: "90011953"
  </ImageList>
 ```
 
-|**Attribute**|**定義**|
+|**Attribute**|**[定義]**|
 |-|-|
 |Guid|必影像標記的 GUID 部分|
-|識別碼|必影像標記的識別碼部分|
+|ID|必影像標記的識別碼部分|
 |外部|[選擇性，預設為 false]指出影像標記是否參考目前資訊清單中的影像。|
 
  包含的映射的標記不需要參考目前資訊清單中所定義的映射。 如果在映射庫中找不到包含的影像，則會在其位置使用空白預留位置影像。
@@ -712,7 +712,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. 更新您的程式碼，以使用映射服務透過更新的對應來要求名字。  (這可能表示更新至 managed 程式碼的 **CrispImages** ，或從映射服務要求 HBITMAPs 或 HICONs，並針對機器碼進行傳遞。 ) 
 
 ## <a name="testing-your-images"></a>測試您的映射
- 您可以使用影像庫檢視器工具來測試影像資訊清單，以確定一切都已正確撰寫。 您可以在 [Visual Studio 2015 SDK](visual-studio-sdk.md)中找到此工具。 您可以在 [這裡](./internals/vssdk-utilities.md?view=vs-2015)找到此工具和其他工具的檔。
+ 您可以使用影像庫檢視器工具來測試影像資訊清單，以確定一切都已正確撰寫。 您可以在 [Visual Studio 2015 SDK](visual-studio-sdk.md)中找到此工具。 您可以在 [這裡](./internals/vssdk-utilities.md?view=vs-2015&preserve-view=true)找到此工具和其他工具的檔。
 
 ## <a name="additional-resources"></a>其他資源
 
@@ -819,7 +819,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
   - 我正在更新完成清單提供者。 哪些 **KnownMonikers** 符合舊的 **StandardGlyphGroup** 和 **StandardGlyph** 值？
 
-    |Name|Name|Name|
+    |名稱|名稱|名稱|
     |-|-|-|
     |GlyphGroupClass|GlyphItemPublic|ClassPublic|
     |GlyphGroupClass|GlyphItemInternal|ClassInternal|

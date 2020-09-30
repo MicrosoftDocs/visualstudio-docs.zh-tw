@@ -1,5 +1,6 @@
 ---
 title: 以程式設計方式在收到電子郵件訊息時執行動作
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75278a52fb989e5142e5981dab604bf3da49bd99
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 706080e9c7191383d91e63b56b2113cf82d4b35f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537861"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585128"
 ---
 # <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>如何：以程式設計方式在收到電子郵件訊息時執行動作
   此範例會在使用者收到電子郵件訊息時執行自訂動作。

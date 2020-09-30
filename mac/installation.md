@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 8020106ed189b1b67b7cc2f475784809fc93aa1e
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: f971237ecc829fcc4ab660263a1b66c701f86f62
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426898"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583953"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>安裝 Visual Studio 2019 for Mac
 
@@ -22,7 +22,7 @@ ms.locfileid: "89426898"
  > [!div class="button"]
  > [下載 Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
 
-## <a name="requirements"></a>規格需求
+## <a name="requirements"></a>需求
 
 - 具有 macOS High Sierra 10.13 或以上版本的 Mac。
 
@@ -62,7 +62,7 @@ ms.locfileid: "89426898"
    |**.NET Core 應用程式**|         |選取 [ **.Net Core** 平臺]。|         |
    |**ASP.NET Core Web 應用程式**|         |選取 [ **.Net Core** 平臺]。|         |
    |**Azure Functions**|         |選取 [ **.Net Core** 平臺]。|         |
-   |**跨平台 Unity 遊戲開發**|         |除了 Visual Studio for Mac 之外，不需要安裝其他平臺。| 如需安裝 Unity 延伸模組的詳細資訊，請參閱 [Unity 安裝指南](/visualstudio/mac/setup-vsmac-tools-unity)。|
+   |**跨平台 Unity 遊戲開發**|         |除了 Visual Studio for Mac 之外，不需要安裝其他平臺。| 如需安裝 Unity 延伸模組的詳細資訊，請參閱 [Unity 安裝指南](./setup-vsmac-tools-unity.md)。|
 
 7. 選取完成之後，請按 [安裝]**** 按鈕。
 8. 安裝程式會顯示下載和安裝 Visual Studio for Mac 的進度，並顯示選取的工作負載。 系統會提示您輸入密碼，以授與安裝所需的許可權。：
@@ -75,7 +75,7 @@ ms.locfileid: "89426898"
 
     [![選擇您想要使用的鍵盤快速鍵](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
 
-如果您在公司環境安裝時發生網路問題，請檢閱[在防火牆或 Proxy 後方安裝](/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server)指示。
+如果您在公司環境安裝時發生網路問題，請檢閱[在防火牆或 Proxy 後方安裝](#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server)指示。
 
 深入了解[版本資訊](/visualstudio/releasenotes/vs2019-mac-relnotes)中的變更。
 
@@ -88,7 +88,7 @@ ms.locfileid: "89426898"
 
 將您的網路設定為允許存取下列位置：
 
-- [Visual Studio 端點](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
+- [Visual Studio 端點](./install-behind-a-firewall-or-proxy-server.md)
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -1,5 +1,6 @@
 ---
 title: 依 Office 應用程式和專案類型提供的功能
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24344a643e9ec2b4a7bb90dc62df67209b3eb183
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ba24bdeac9ad51d0173e765c8cb793be2473baf6
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808177"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585428"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>依 Office 應用程式和專案類型提供的功能
   Visual Studio 有幾種類型的專案範本，可支援不同的 Microsoft Office 應用程式商務案例，包括下列類型：
@@ -49,7 +50,7 @@ ms.locfileid: "90808177"
 ## <a name="features-available-in-different-project-types"></a>不同專案類型中的可用功能
  下表顯示哪些專案類型提供各項功能。
 
-|功能|提供功能的專案類型|深入閱讀|
+|特徵|提供功能的專案類型|進一步閱讀|
 |-------------|--------------------------------------------|---------------------|
 |執行窗格。|文件層級專案。|[動作窗格總覽](../vsto/actions-pane-overview.md)|
 |ClickOnce 部署。|VS 與文件層級專案。|[部署 Office 方案](../vsto/deploying-an-office-solution.md)|

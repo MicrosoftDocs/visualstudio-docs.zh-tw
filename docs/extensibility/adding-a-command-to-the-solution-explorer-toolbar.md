@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08513ef67dfdffbf70b5ce2ff449a9ceb4250c37
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f32b7de4d3e62c2f1d9de5126217ccede48dfca8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012291"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583693"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>將命令新增至方案總管的工具列
 本逐步解說將示範如何將按鈕新增至 **方案總管** 工具列。
@@ -114,7 +114,7 @@ ms.locfileid: "90012291"
 
 5. 按一下 [ **檔案** ] 功能表上的 [ **關閉方案**]。 按鈕會從工具列中消失。
 
-   在載入 VSPackage 之前，會控制按鈕的可見度 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 載入 VSPackage 之後，按鈕的可見度是由 VSPackage 所控制。  如需詳細資訊，請參閱 [menucommand 對比與 OleMenuCommands](../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015)。
+   在載入 VSPackage 之前，會控制按鈕的可見度 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 載入 VSPackage 之後，按鈕的可見度是由 VSPackage 所控制。  如需詳細資訊，請參閱 [menucommand 對比與 OleMenuCommands](../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true)。
 
 ## <a name="see-also"></a>另請參閱
 - [命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)

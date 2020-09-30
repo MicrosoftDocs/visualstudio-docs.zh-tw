@@ -1,5 +1,6 @@
 ---
 title: 如何：以程式設計方式判斷目前的 Outlook 專案
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 94d7e16b011b153a43e3d1666451a90b0e44c8b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 428dccf09235e2feea528bcdaef0a447e02ef58d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547156"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585232"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>如何：以程式設計方式判斷目前的 Outlook 專案
   這個範例會使用 `Explorer.SelectionChange` 事件來顯示目前資料夾的名稱，以及有關所選取專案的一些資訊。 然後，程式碼會顯示選取的專案。

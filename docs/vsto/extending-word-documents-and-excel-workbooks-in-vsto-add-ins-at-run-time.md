@@ -1,5 +1,6 @@
 ---
 title: 在執行時間于 VSTO 增益集中擴充 Word 檔 & Excel 活頁簿
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a80fc10690691e8bd923f9c98270b162e7063ffb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2227aa2db4943ab132a8b2e2f9fc3a6f0ec4096
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253658"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585441"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>在 VSTO 增益集的執行時間中擴充 Word 檔和 Excel 活頁簿
   您可以使用 VSTO 增益集，以下列方式自訂 Word 文件和 Excel 活頁簿：

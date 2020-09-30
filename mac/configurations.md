@@ -5,18 +5,18 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: d1511434a34017a7f0f7da65fe1ea6956d45d497
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 911d8d3a65c414bc3c98494bda75c46b778e5b2b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71128404"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584018"
 ---
 # <a name="understanding-build-configurations"></a>了解組建組態
 
 您可以在開發過程中，儲存不同的解決方案和專案屬性設定，以用於不同類型的組建。 使用範本 Visual Studio for Mac 所建立的專案通常會包含可分別支援應用程式和部署應用程式之偵錯工具的偵錯工具和發行設定。 
 
-如果您想要建立自訂設定，請參閱建立 [和編輯組建](/visualstudio/mac/create-and-edit-configurations)設定。
+如果您想要建立自訂設定，請參閱建立 [和編輯組建](./create-and-edit-configurations.md)設定。
 
 >[!NOTE]
 >本主題適用於 Visual Studio for Mac。 針對 Windows 上的 Visual Studio，請參閱 [瞭解組建](/visualstudio/ide/understanding-build-configurations)設定。

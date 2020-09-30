@@ -1,5 +1,6 @@
 ---
 title: Visual Studio 中 SharePoint 工具的偵錯工具擴充功能 |Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e170a5ed703a9bf5aae2e73126de52ecf88e8084
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1179779d07e7674babc51231ba629d7e25556f89
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64785344"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584629"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio 中 SharePoint 工具的 Debug 擴充功能
   您可以在實驗實例或 Visual Studio 的一般實例中，進行 SharePoint 工具擴充功能的偵錯工具。 如果您需要針對延伸模組的行為進行疑難排解，您也可以修改登錄值以顯示其他錯誤資訊，以及設定 Visual Studio 執行 SharePoint 命令的方式。

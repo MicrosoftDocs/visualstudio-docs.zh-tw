@@ -1,5 +1,6 @@
 ---
 title: 伺服器總管：擴充 SharePoint 連接節點
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf9bf437c7592641f1b9020cdc16b4d702646015
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: d7f1ac5b0fb1f25d04139d76efa816ebd059d7da
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740093"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585572"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>逐步解說：在伺服器總管擴充功能中呼叫 SharePoint 用戶端物件模型
   本逐步解說示範如何在**伺服器總管**中，從 [ **sharepoint 連接**] 節點的延伸模組呼叫 sharepoint 用戶端物件模型。 如需有關如何使用 SharePoint 用戶端物件模型的詳細資訊，請參閱 [呼叫 sharepoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
@@ -38,7 +39,7 @@ ms.locfileid: "90740093"
 > [!NOTE]
 > 您在此逐步解說中建立的擴充功能，與您在逐步解說：擴充伺服器總管中建立的擴充功能類似， [可顯示網頁元件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。 該逐步解說會使用 SharePoint 伺服器物件模型，但本逐步解說會使用用戶端物件模型來完成相同的工作。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
  您需要在開發電腦上執行下列元件，才能完成此逐步解說：
 
 - 支援的 Windows、SharePoint 和 Visual Studio 版本。

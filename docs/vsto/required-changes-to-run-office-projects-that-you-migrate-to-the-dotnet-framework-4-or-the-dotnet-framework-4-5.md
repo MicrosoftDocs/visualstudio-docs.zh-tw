@@ -1,5 +1,6 @@
 ---
-title: 遷移至 .NET Framework 4，4.5 的 Office 專案所需的變更
+title: 遷移至 .NET 4.5 的 Office 專案所需的變更
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 773a4dd319d00487b919721bf3390a7d58c8b03c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 40db3cd629f2c3a2ced37a781dea3244a3f19957
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810963"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584460"
 ---
-# <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>執行您遷移至 .NET Framework 4 或 .NET Framework 4.5 之 Office 專案的必要變更
+# <a name="changes-required-for-office-projects-migrated-to-net-45"></a>遷移至 .NET 4.5 的 Office 專案所需的變更
+
   如果 Office 專案的目標 framework [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 從舊版 .NET Framework 變更為或更新版本，您必須執行下列工作，以確保解決方案可以在開發電腦和終端使用者電腦上執行：
 
 - 如果專案是從 Visual Studio 2008 升級，請移除專案中的 <xref:System.Security.SecurityTransparentAttribute>。

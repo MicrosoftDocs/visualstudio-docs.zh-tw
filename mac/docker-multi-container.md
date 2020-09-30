@@ -6,12 +6,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 07/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: e46a66ab9ec05f8e7ad13091fdced01bffbd93b5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b883979921b3fa1493188a8d0fe75a1c493d5d97
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038669"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583992"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>使用 Docker Compose 建立多容器應用程式
 
@@ -84,7 +84,7 @@ services:
    ```
    
     > [!NOTE]
-    > 在實際執行的程式碼中，您不應該在 `HttpClient` 每個要求之後處置。 如需最佳作法，請參閱 [使用 HttpClientFactory 來執行復原的 HTTP 要求](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests)。
+    > 在實際執行的程式碼中，您不應該在 `HttpClient` 每個要求之後處置。 如需最佳作法，請參閱 [使用 HttpClientFactory 來執行復原的 HTTP 要求](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests)。
 
 1. 在 [Index.cshtml]** 檔案中，新增一行以顯示 `ViewData["Message"]`，讓檔案看起來像下列程式碼：
 
@@ -102,7 +102,7 @@ services:
       </div>
       ```
   
-1. 在前端和 Web API 專案中，將 Startup.cs 中的 AspNetCore 的呼叫批註為[HttpsPolicyBuilderExtensions](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) `Configure` ，因為此範例程式碼會使用 HTTP， *Startup.cs*而非 HTTPS 來呼叫 Web API。
+1. 在前端和 Web API 專案中，將 Startup.cs 中的 AspNetCore 的呼叫批註為[HttpsPolicyBuilderExtensions](/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) `Configure` ，因為此範例程式碼會使用 HTTP， *Startup.cs*而非 HTTPS 來呼叫 Web API。
 
       ```csharp
                   //app.UseHttpsRedirection();

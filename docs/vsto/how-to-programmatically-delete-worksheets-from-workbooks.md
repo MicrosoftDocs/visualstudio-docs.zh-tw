@@ -1,5 +1,6 @@
 ---
 title: 如何：以程式設計方式從活頁簿中刪除工作表
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38aa92ae1c320ae9eb5ad4bdb1e43b761048661f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fbcffdf56ea2168974658477579428ef546f061
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547130"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585245"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>如何：以程式設計方式從活頁簿中刪除工作表
   您可以刪除活頁簿中的任何工作表。 若要刪除工作表，請使用工作表主項目，或使用活頁簿的工作表集合存取工作表。

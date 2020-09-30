@@ -1,5 +1,6 @@
 ---
 title: 以程式設計方式建立範圍時排除段落標記
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20d91aff6b09e659375494c387eea94ef05cc682
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa4686acb6a806fd97a78064214c6805a4b354e9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547429"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585193"
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>如何：以程式設計方式在建立範圍時排除段落標記
   每當您根據段落建立 <xref:Microsoft.Office.Interop.Word.Range> 物件時，所有的非列印字元 (如段落標記) 都會包含在範圍中。 您可以將文字從來源段落插入目的段落。 如果您不想將目的段落分割成個別段落，則必須先移除來源段落的段落標記。 此外，因為段落格式化資訊儲存在段落標記內，所以在將範圍插入現有段落時，您可能不想包含該資訊。

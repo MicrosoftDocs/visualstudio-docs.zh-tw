@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 12/16/2019
 ms.assetid: 4bcb8acf-db50-4bd8-a48e-86248f00c90b
-ms.openlocfilehash: 530ad09bbf72d9696621f328c2df40b37f362c13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 307196dc7e33d268c45a9bb126c002ad426c5558
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75451486"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583914"
 ---
 # <a name="debugging-into-nuget-packages-with-source-link"></a>使用來源連結進行 NuGet 套件的調試
 
@@ -38,4 +38,4 @@ ms.locfileid: "75451486"
 ## <a name="see-also"></a>另請參閱
 
 - [來源連結 GitHub 存放庫](https://github.com/dotnet/sourcelink/blob/master/README.md)
-- 關於來源連結的[.net 檔](https://docs.microsoft.com/dotnet/standard/library-guidance/sourcelink)，以及如何將來源連結支援新增至套件的詳細資訊
+- 關於來源連結的[.net 檔](/dotnet/standard/library-guidance/sourcelink)，以及如何將來源連結支援新增至套件的詳細資訊

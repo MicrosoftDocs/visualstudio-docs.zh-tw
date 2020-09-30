@@ -1,5 +1,5 @@
 ---
-title: .ofs 檔案的一個或多個屬性對於所選取的訊息類別是無效的
+title: Message 類別的 .ofs 檔案中有不正確屬性 "
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d58ad6ff89d8cf41ec60135cfbfe3deac1382f1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 66e8ecacffb58e945a3f80d03f47edc1329668d1
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62977857"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584655"
 ---
-# <a name="one-or-more-properties-in-the-ofs-file-are-not-valid-for-the-message-class-selected"></a>.ofs 檔案的一個或多個屬性對於所選取的訊息類別是無效的
-  當您匯入在 Outlook 中設計的表單區域，但表單區域上的一或多個欄位與您在 [ **新表單區域** wizard] 的最後一頁選取的訊息類別不相容時，就會出現這個錯誤。
+# <a name="invalid-properties-in-the-ofs-file-for-the-message-class"></a>Message 類別的 .ofs 檔案中有不正確屬性
+
+  當您匯入在 Outlook 中設計的表單區域，但表單區域上的一或多個欄位與您在 [ **新表單區域** wizard] 的最後一頁選取的訊息類別不相容時，就會出現「.ofs 檔案中的一或多個屬性對於所選取的訊息類別無效」的錯誤。
 
 例如，您可能會在 [新增表單區域精靈] **** 的最後一頁選取 [工作 (IPM.Task)] **** 。 如果表單區域具有 [ **商務位址** ] 欄位，您將會收到此錯誤，因為工作沒有商務位址。 因此，[ **商務位址** ] 欄位與 `IPM.Task` 訊息類別不相容。
 

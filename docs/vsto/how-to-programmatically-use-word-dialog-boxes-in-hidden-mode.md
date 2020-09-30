@@ -1,5 +1,6 @@
 ---
 title: 如何：以程式設計方式在隱形模式中使用 Word 對話方塊
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 923fc7ddec0350f254968fe17494ecbe27f76b13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54178ecc94026499eed42da4f40f84cfe4eb831f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537575"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583758"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>如何：以程式設計方式在隱形模式中使用 Word 對話方塊
   您可以叫用 Microsoft Office Word 中的內建對話方塊，而不將其顯示給使用者，藉此使用一個方法呼叫來執行複雜作業。 您可以使用物件的方法來完成這項作業， <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> <xref:Microsoft.Office.Interop.Word.Dialog> 而不需要呼叫 <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> 方法。

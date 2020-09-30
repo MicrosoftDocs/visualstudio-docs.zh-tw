@@ -1,5 +1,6 @@
 ---
 title: 如何：以程式設計方式移除工作表的保護
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 72448f9d1e5c24c917459b8c2c59e317190e0a11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0660c703d94111d042b943935c64546d87bc61fa
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519869"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584803"
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>如何：以程式設計方式移除工作表的保護
   您可以程式設計的方式，移除 Microsoft Office Excel 工作表保護。

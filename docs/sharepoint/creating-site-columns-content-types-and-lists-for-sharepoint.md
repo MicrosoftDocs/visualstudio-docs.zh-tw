@@ -1,5 +1,6 @@
 ---
 title: 建立 SharePoint 的網站資料行、內容類型和清單 |Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 538d82794fcecb91e4f13ab6d7718d0bf407b86f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 269be4aaf34e9b6c611a5d79ba38cddba04276bf
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984508"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585102"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>建立 SharePoint 的網站資料行、內容類型和清單
   Visual Studio 為許多不同的基本 SharePoint 專案（包括 *清單* 和 *內容類型*）提供專案專案範本，這兩個專案都可以) 的 (或 *欄位* 中納入網站資料行。 內容類型和清單的新設計工具讓您就以往更容易建立這些項目。
@@ -44,7 +45,7 @@ ms.locfileid: "72984508"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[逐步解說：建立 SharePoint 的網站資料行、內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|示範如何建立用於自訂內容類型的網站資料行。 這個內容類型之後可在自訂清單中使用。|
 

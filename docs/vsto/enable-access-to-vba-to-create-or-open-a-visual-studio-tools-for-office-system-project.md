@@ -1,7 +1,7 @@
 ---
 title: 建立/開啟 VSTO 系統專案的 VBA 存取權
+titleSuffix: ''
 decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
-titleSuffix: Visual Studio Tools for Microsoft Office
 ms.custom: seodec18
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3199b23f7ad1bb45fd509d2a9b5cd21da1a49971
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71e30a89bdf8547eab9ed9c51b07c49e014b7302
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551552"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584855"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>啟用 VBA 存取以建立或開啟 Microsoft Office 系統專案的 Visual Studio Tools
 
@@ -111,7 +111,7 @@ ms.locfileid: "69551552"
 
 8. 按一下 **[繼續]** 。
 
-9. 按一下 [關閉]  。
+9. 按一下 [關閉]。
 
 ## <a name="to-repair-your-installation-of-office"></a>修復 Office 的安裝
 

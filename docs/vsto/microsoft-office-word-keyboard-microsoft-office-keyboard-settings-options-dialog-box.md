@@ -1,5 +1,6 @@
 ---
-title: 選項對話方塊、鍵盤設定、Office Word 鍵盤
+title: 選項對話方塊、設定、Office Word 鍵盤
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5180aa2f4c5022cedcba2c5377d2ff2ac14ffb28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83cfe2e6061f82d48a00354b610955c698a9a11f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66835986"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584499"
 ---
-# <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>選項對話方塊、Microsoft Office 鍵盤設定 Microsoft Office Word 鍵盤
+# <a name="microsoft-office-word-keyboard-settings-options-dialog-box"></a>選項對話方塊、設定、Microsoft Office Word 鍵盤
   Microsoft Office Word 和 Visual Studio 都處理快速鍵。 相同的快速鍵組合可用於 Word 和 Visual Studio 中的不同命令。 當 Word 在 Visual Studio 的檔層級專案中開啟時，一次只有一個應用程式會收到快速鍵命令。 根據預設，Visual Studio 會接收所有快速鍵命令，但是您可以在檔具有選取 **動態鍵盤**佈局的焦點時，讓 Word 接收它們。
 
  如果您使用的快速鍵未指派給目前正在處理快速鍵的應用程式中的命令，則會將快速鍵傳遞給另一個應用程式。

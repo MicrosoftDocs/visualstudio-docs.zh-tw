@@ -1,5 +1,6 @@
 ---
 title: 如何：設定電腦以開發 Office 方案
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b13aa65e4dd5868a36e0dd833351b1d1751d8b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93c8287b0b2234c45056829ba78d993658b0428d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546168"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585493"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>如何：設定電腦以開發 Office 方案
   若要設定開發電腦，讓您可以使用 Visual Studio 中的 Microsoft Office Developer Tools，請遵循本主題中的指示。 您必須擁有開發電腦上的系統管理權限，才能執行這些步驟。

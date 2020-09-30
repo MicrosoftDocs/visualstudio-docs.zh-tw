@@ -1,5 +1,6 @@
 ---
 title: 如何：將現有的 BDC 模型檔案新增至 SharePoint 專案 |Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92063b5aeaf4f86919b9eabf783b102a9f5b8f34
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbfbd4e485a359b7e760188217326d23d3b0aa47
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016520"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584616"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>如何：將現有的 BDC 模型檔案新增至 SharePoint 專案
   您可以使用 Visual Studio 將模型檔案 (*. .bdcm*) 加入至任何 SharePoint 伺服器陣列專案，以自訂、封裝和重新部署商務資料連線 (BDC) 模型。 如需詳細資訊，請參閱 [建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)。

@@ -1,5 +1,6 @@
 ---
 title: 將資料儲存在 SharePoint 專案系統的延伸模組中 |Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b04490a646c7ced27d4a2d7f2344e27cbbae8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30142b9aaec3df7ce0d43845e369eb538533de62
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62827241"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583862"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>將資料儲存在 SharePoint 專案系統的延伸模組中
   當您延伸 SharePoint 專案系統時，可以儲存在 SharePoint 專案關閉之後仍會保存的字串資料。 資料通常與特定專案專案或專案本身相關聯。

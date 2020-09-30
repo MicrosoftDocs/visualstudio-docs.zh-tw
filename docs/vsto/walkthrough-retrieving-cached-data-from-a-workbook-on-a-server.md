@@ -1,5 +1,6 @@
 ---
 title: 逐步解說：從伺服器上的活頁簿取出快取的資料
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b70283e63a2f71c0c85bf26a24f2e6f4a3492880
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d5a9932a781260609a0b00c8576c9ecc85ad1d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985412"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584946"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>逐步解說：從伺服器上的活頁簿取出快取的資料
   本逐步解說示範如何從 Microsoft Office Excel 活頁簿中快取的資料集取出資料，而不需要使用類別啟動 Excel <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 。
@@ -106,7 +107,7 @@ ms.locfileid: "72985412"
 
 7. 在 [ **選擇您的資料庫物件** ] 頁面中，展開 [ **資料表]** ，然後選取 [ **Product (SalesLT) **。
 
-8. 按一下 [完成]  。
+8. 按一下 [完成] 。
 
     *Adventureworksltdataset.xsd .xsd*檔案會新增至**AdventureWorksDataSet**專案。 這個檔案會定義下列項目：
 
