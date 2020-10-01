@@ -1,8 +1,8 @@
 ---
-title: 'Visual Studio 檔：2020年8月的新功能 '
+title: 'Visual Studio 檔：2020年9月的新功能 '
 titleSuffix: ''
-description: 2020年8月 Visual Studio 檔中的新功能。
-ms.date: 09/02/2020
+description: 2020年9月 Visual Studio 檔中的新功能。
+ms.date: 09/30/2020
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,131 +15,92 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2411299fbab6dfba8ced0f689bd33825b62614af
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 6abee067465a0595b75df42d05213f9694dd7ed4
+ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808977"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91621733"
 ---
-# <a name="visual-studio-docs-whats-new-for-august-2020"></a>Visual Studio 檔：2020年8月的新功能
+# <a name="visual-studio-docs-whats-new-for-september-2020"></a>Visual Studio 檔：2020年9月的新功能
 
-歡迎使用2020年8月 Visual Studio 檔中的新功能。 本文列出在這段期間內檔的一些主要變更。 如需前幾個月新功能的相關資訊，請參閱 [新功能歷程記錄](whats-new-visual-studio-docs-history.md) 主題。
-
-## <a name="azure"></a>Azure
-
-**新文章**
-
-- 使用 Visual Studio 的 VS 2019 16.7 已連線的服務連接服務來[新增 Azure 應用程式見解](../azure/azure-app-insights-add-connected-service.md)
-- 使用適用于 VS 2019 16.7 的 Visual Studio 已連線的服務連接服務來[新增 Azure Cache for Redis](../azure/azure-cache-for-redis-add-connected-service.md)
-- 使用適用于 VS 2019 16.7 的 Visual Studio 已連線的服務連接服務，[將 Azure Cosmos DB 新增至您的應用程式](../azure/azure-cosmosdb-add-connected-service.md)
-- 使用適用于 VS 2019 16.7 的[Visual Studio 已連線的服務聯機服務新增 Azure SignalR](../azure/azure-signalr-add-connected-service.md)
-- [將連接加入至](../azure/azure-sql-database-add-connected-service.md) VS 2019 16.7 Azure SQL Database 連接的服務
-
-**更新的文章**
-
-- [使用 Visual Studio 的已連接服務加入 Azure 儲存體](../azure/vs-azure-tools-connected-services-storage.md)
-  - VS 2019 16.7 的已連接服務
-  - Azure 儲存體聯機服務文章：支援更新 UI 和專案類型
+歡迎使用2020年9月 Visual Studio 檔中的新功能。 本文列出在這段期間內檔的一些主要變更。 如需前幾個月新功能的相關資訊，請參閱 [新功能歷程記錄](whats-new-visual-studio-docs-history.md) 主題。
 
 ## <a name="code-quality"></a>程式碼品質
 
 **新文章**
 
-- [CA1310：指定 StringComparison 的正確性](../code-quality/ca1310.md) -新增 CA1310 的檔和 CA1307 的更新檔
-- [CA1837：使用 GetCurrentProcess，而不是 ( # A1。](../code-quality/ca1837.md) CA1837 的識別碼-檔
-- [CA1838：避免 `StringBuilder` P/invoke 的參數](../code-quality/ca1838.md) -新增 CA1838 的檔
-- [CA2008：不要在不傳遞 TaskScheduler 的情況下建立工作](../code-quality/ca2008.md) -新增 CA2008 的檔
-- [CA2249：請考慮使用 string。 Contains 取代 IndexOf](../code-quality/ca2249.md) -CA2249 的檔
-- [CA2361：確定包含資料集的自動產生類別 ReadXml ( # A1 未與不受信任的資料搭配使用](../code-quality/ca2361.md) -更多資料集/DataTable 規則
-- [CA2362：自動產生的可序列化類型中不安全的資料集或 DataTable 可能易受遠端程式碼執行攻擊](../code-quality/ca2362.md) -更多資料集/DataTable 規則
-- [IL3000：在發行為 IL3000 的單一檔案-新增檔時，避免使用存取元件檔案路徑](../code-quality/il3000.md)
-- [IL3001：在發行為單一檔案時，避免存取元件檔案路徑](../code-quality/il3001.md) -IL3001 的新增檔
+- [CA1416：驗證平臺相容性](../code-quality/ca1416.md) -記錄 CA1416 驗證平臺相容性
+- [CA1834：使用 StringBuilder。針對單一字元字串附加 (char) ](../code-quality/ca1834.md) -CA1834 的檔
 
 **已更新**
 
-- [CA1002：不公開泛型清單](../code-quality/ca1002.md) -新增預先配置-Api 介面區段
-- [CA1046：不要在參考](../code-quality/ca1046.md) 型別上多載運算子 equals-新增預先配置-Api 介面區段
-- [CA1307：為了清楚起見，請指定 StringComparison](../code-quality/ca1307.md) ，並新增 CA1307 的 CA1310 和更新檔檔
-- [CA1700：不要將列舉值命名 &#39;保留&#39;](../code-quality/ca1700.md) -新增預先配置-Api 介面區段
-- [CA1707：識別碼不應包含](../code-quality/ca1707.md) 底線-新增可配置的-Api 介面區段
-- [CA1822：將成員標記為靜態](../code-quality/ca1822.md) -新增預先配置-Api 介面區段
-- [CA2351：確定資料集 ReadXml ( # A1's 輸入是受信任](../code-quality/ca2351.md) -更多資料集/DataTable 規則
-- [安裝協力廠商分析器](../code-quality/install-roslyn-analyzers.md) -變更程式碼分析檔的結構和標題
+- [使用 EditorConfig 設定 .NET 程式碼品質分析器](../code-quality/configure-fxcop-analyzers.md)
+  - 少數對 CA 檔重構的小型修正
+  - .NET 重構的程式碼分析更新
+- [原始程式碼分析簡介](../code-quality/roslyn-analyzers-overview.md) -.net 重構的程式碼分析更新
+- [設定程式碼品質分析](../code-quality/use-roslyn-analyzers.md) -.net 重構的程式碼分析更新
 
 ## <a name="containers"></a>容器
 
-**更新的文章**
-
-- 使用 Visual Studio 16.7 發佈 UI 的 Visual Studio 容器工具更新將[ASP.NET 容器部署到容器](../containers/hosting-web-apps-in-docker.md)登錄
-- [開始使用 Visual Studio Kubernetes 工具](../containers/tutorial-kubernetes-tools.md) -Kubernetes 教學課程：新增移除步驟
-
-## <a name="deployment"></a>部署
-
 **新文章**
 
-- [Visual Studio 安裝程式專案擴充功能和 .Net core 3.1](../deployment/installer-projects-net-core.md) -建立安裝程式專案的新說明頁面 .net Core 3.1 功能
+- [使用 Bridge Kubernetes](../containers/bridge-to-kubernetes.md) -使用 Kubernetes 品牌再造的本機進程，以橋接 Kubernetes
+- Kubernetes 與 Kubernetes 品牌再造之間的搭配使用的本機進程[如何運作](../containers/overview-bridge-to-kubernetes.md)以橋接 Kubernetes
+
+## <a name="deployment"></a>部署
 
 **更新的文章**
 
 - 將[您的應用程式部署到資料夾、IIS、Azure 或其他目的地](../deployment/deploying-applications-services-and-components-resources.md)部署更新
-- [部署 Visual Studio](../deployment/index.yml) 部署更新
-
-## <a name="extensibility"></a>擴充性
-
-**更新的文章**
-- [專案子類型](../extensibility/internals/project-subtypes.md) -修正清單專案縮排
-- Visual Studio-AB # 1759333[的色彩值參考](../extensibility/ux-guidelines/color-value-reference-for-visual-studio.md)修正遺漏的資料行標題
-
-## <a name="get-started"></a>開始使用
-
-**更新的文章**
-
-- [步驟5：將您的 ASP.NET Core 應用程式部署至 Azure](../get-started/csharp/tutorial-aspnet-core-ef-step-05.md) -新已連線的服務 UI 的影片教學課程更新
+- [使用 Visual Studio 部署更新將應用程式部署到資料夾](../deployment/quickstart-deploy-to-local-folder.md)
 
 ## <a name="ide"></a>IDE
 
 **新文章**
 
-- [變更 Visual Studio 中的 f1 說明鍵](./not-in-toc/change-f1-help-key.md) -重構預設 f1 說明頁面
-- [文字編輯器的 F1](./not-in-toc/default-f1-text-editor.md) 說明-重構預設 F1 說明頁面
-- [轉換 `typeof` 為 `nameof` ](./reference/convert-typeof-to-nameof.md) -convert typeof 轉換成 nameof 重構
-- [簡化 linq 運算式](./reference/simplify-linq-expression.md) -簡化 linq 運算式重構
+- [Visual Studio (preview 中的新 git 體驗) ](./git-with-visual-studio.md) -將新的 git 體驗內容新增 (預覽) 
+- [C + + EditorConfig 格式設定慣例](./cpp-editorconfig-properties.md) -新文章
+- [什麼是 GitHub Codespaces？ (preview) ](./codespaces/codespaces-overview.md) -新增 Codespaces (preview) 內容
+- [如何自訂 codespace (預覽) ](./codespaces/customize-codespaces.md) -新增 Codespaces (preview) 內容
+- [支援的 Visual Studio 功能 (預覽) ](./codespaces/supported-features-codespaces.md) -新增 Codespaces (preview) 內容
+- [如何搭配使用 Visual Studio 與 codespace (preview) ](./codespaces/use-visual-studio-with-codespaces.md) -新增 Codespaces (preview) 內容
 
 **更新的文章**
 
-- [在 Visual Studio 中自訂視窗版面](./customizing-window-layouts-in-visual-studio.md) 配置-新增 monikered 的垂直檔索引標籤資訊以自訂視窗版面配置主題
-- [如何回報 Visual Studio 或 Visual Studio 安裝程式的問題](./how-to-report-a-problem-with-visual-studio.md)
-  - 已將更多資訊新增至 NMI
-  - Redid 整份回報問題頁面
-- [F1](./not-in-toc/default.md) 說明-重構預設 F1 說明頁面
-- [[自動回復]、[環境]、[選項] 對話方塊](./reference/autorecover-environment-options-dialog-box.md)-新增更新的自動儲存檔案位置資訊
-- [選項、文字編輯器、基本 (Visual Basic) 、](./reference/options-text-editor-basic-visual-basic.md) 內嵌參數名稱提示的 Advanced-已新增基本檔
-- 內嵌參數名稱提示的[選項、文字編輯器、c #、Advanced](./reference/options-text-editor-csharp-advanced.md) -已新增的基本檔
-- [Visual Studio 效能秘訣和訣竅](./visual-studio-performance-tips-and-tricks.md) -新增「停用地圖模式」和「停用自動換行」資訊
-- [Visual Studio 2019 中的新功能](./whats-new-visual-studio-2019.md) -使用 16.7 GA 資訊更新 Visual Studio 2019 中的新功能
+- [適用于 EditorConfig 的 .net 編碼慣例設定](./editorconfig-code-style-settings-reference.md) -已更新 EditorConfig
+- [語言慣例](./editorconfig-language-conventions.md) -遺漏範例
 
-## <a name="rtvs"></a>RTVS
+## <a name="install"></a>安裝
+
+**新文章**
+
+- [Arm 裝置上的 Visual Studio](../install/visual-studio-on-arm-devices.md) -在 arm 上新增 VS 的 doc 檔
+
+**更新的文章**
+- [當您安裝或使用 Visual Studio](../install/troubleshooting-network-related-errors-in-visual-studio.md) -新增因應措施驗證 proxy 損毀的因應措施時，針對網路相關錯誤進行疑難排解
+
+## <a name="profiling"></a>程式碼剖析
 
 **更新的文章**
 
-- [使用 SQL Server 和 R](../rtvs/integrating-sql-server-with-r.md) 更正的資料表來包含資料行標頭
+- [測量 Visual Studio 中的記憶體使用量](../profiling/memory-usage.md) -分析功能導覽的更新
+- [效能提示](../profiling/perftips.md) -分析功能導覽的更新
+- [先查看程式碼剖析工具](../profiling/profiling-feature-tour.md) -分析功能導覽的更新
+- [使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
+  - 分析功能導覽的更新
+  - 內容效能改進
 
 ## <a name="community-contributors"></a>社群參與者
 
 下列人員會在這段期間內參與 Visual Studio 檔。 感謝您！ 遵循《 [參與者指南》](/contribute/)中的指導方針，瞭解如何參與 Visual Studio 檔。
 
-- [AlexB-SheldonMFG](https://github.com/AlexB-SheldonMFG) -Alex 黑色 (11) 
-- [Youssef1313](https://github.com/Youssef1313) -Youssef Victor (8) 
 - [hyoshioka0128](https://github.com/hyoshioka0128) -Hiroshi Yoshioka (3) 
-- [AstroChoco](https://github.com/AstroChoco) -Qian Lu (巧克力)  (1) 
-- [athyunnath](https://github.com/athyunnath) -athyunnath Eleti (1) 
-- [caro-oviedo](https://github.com/caro-oviedo) -caro oviedo (1) 
-- [Evangelink](https://github.com/Evangelink) -Amaury Levé (1) 
-- [jethas-bennettjones](https://github.com/jethas-bennettjones) -Shafiq Jetha (1) 
-- [nebuk89](https://github.com/nebuk89) -Ben De 聖 Paer-Gotch (1) 
-- [pcartwright81](https://github.com/pcartwright81) (1) 
-- [pkulikov](https://github.com/pkulikov) -Petr Kulikov (1) 
-- [riQQ](https://github.com/riQQ) (1) 
-- [tcmetzger](https://github.com/tcmetzger) -Timo Cornelius Metzger (1) 
-- [weitzhandler](https://github.com/weitzhandler) -Shimmy (1) 
+- [gmsantos](https://github.com/gmsantos) -Gabriel Machado (1) 
+- [site-klass](https://github.com/ite-klass) -Jan klass (1) 
+- [johnallers](https://github.com/johnallers) -John Allers (1) 
+- [mrlacey](https://github.com/mrlacey) -Matt Lacey (1) 
+- [remona-minett](https://github.com/remona-minett) -Rem (1) 
+- [sguitardude](https://github.com/sguitardude) (1) 
+- [sjrct](https://github.com/sjrct) -Chris Harding (1) 
+- [Youssef1313](https://github.com/Youssef1313) -Youssef Victor (1) 
