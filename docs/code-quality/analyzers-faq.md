@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9408e8615e2a3591a5e93f569546b6161fe40e4c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e59fd8ef3210a19683b428438d2e58ab816e9a40
+ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037246"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91604597"
 ---
 # <a name="code-analysis-faq"></a>程式碼分析常見問題
 
@@ -34,7 +34,7 @@ ms.locfileid: "90037246"
 
 不過，EditorConfig 檔也提供其他設定規則的方式：
 
-- 針對 .NET 程式碼品質分析器，EditorConfig 檔可讓您 [定義要分析的程式碼類型](fxcop-analyzer-options.md)。
+- 針對 .NET 程式碼品質分析器，EditorConfig 檔可讓您 [定義要分析的程式碼類型](/dotnet/fundamentals/code-analysis/code-quality-rule-options)。
 - 針對 Visual Studio 內建的 .NET 程式碼樣式分析器，EditorConfig 檔可讓您定義程式碼基底 [的慣用程式碼樣式](../ide/editorconfig-code-style-settings-reference.md) 。
 
 除了規則集和 EditorConfig 檔之外，某些分析器會透過使用標記為 c # 和 VB 編譯器之 [其他](../ide/build-actions.md#build-action-values) 檔案的文字檔來設定。

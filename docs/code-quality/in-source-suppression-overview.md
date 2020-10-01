@@ -1,5 +1,5 @@
 ---
-title: 隱藏程式碼分析違規
+title: 隱藏程式碼分析違規項目
 ms.date: 08/27/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: aa650197f291c48c0c025563098181ea1cfa19a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: adf8e969af4a903aa6ed55b1c92f4ddaffcf77e0
+ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89091434"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91604640"
 ---
-# <a name="suppress-code-analysis-violations"></a>隱藏程式碼分析違規
+# <a name="suppress-code-analysis-violations"></a>隱藏程式碼分析違規項目
 
 指出警告不適用時，通常會很有用。 這表示小組成員已審核程式碼，而且可以隱藏警告。  (ISS 的原始檔隱藏) 使用 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 屬性來抑制警告。 屬性可放置於接近產生警告的程式碼區段。 您可以 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 在原始程式檔中輸入屬性，將其加入至原始程式檔，也可以使用 [ **錯誤清單** ] 中警告的快捷方式功能表自動新增。
 
@@ -183,12 +183,7 @@ Managed 程式碼分析工具 `SuppressMessage` 會檢查元件、模組、類�
 
 Managed 程式碼編譯器和一些協力廠商工具會產生程式碼，以加速程式碼開發。 在原始程式檔中出現的編譯器產生程式碼通常會以 `GeneratedCodeAttribute` 屬性標記。
 
-針對原始程式碼分析，您可以使用專案或方案根目錄中的 [editorconfig](../code-quality/configure-fxcop-analyzers.md) 檔案，隱藏產生的程式碼中的訊息。 使用檔案模式來比對產生的程式碼。 例如，若要排除 **. designer.cs* 檔案中的 CS1591 警告，請在設定檔中使用此檔案。
-
-``` cmd
-[*.designer.cs]
-dotnet_diagnostic.CS1591.severity = none
-```
+針對原始程式碼分析，您可以在檔案中隱藏產生的程式碼中的訊息 `.editorconfig` 。 如需詳細資訊，請參閱 [排除產生](/dotnet/fundamentals/code-analysis/configuration-options#exclude-generated-code)的程式碼。
 
 針對舊版程式碼分析，您可以選擇是否要隱藏所產生程式碼的程式碼分析警告和錯誤。 如需如何隱藏這類警告和錯誤的詳細資訊，請參閱 [如何：隱藏所產生程式碼的警告](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)。
 
