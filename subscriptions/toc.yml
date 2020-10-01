@@ -16,8 +16,6 @@
               href: vscloud-billing-faq.md
             - name: 購買 CSP
               href: vscloud-csp.md
-        - name: 搭配 GitHub Enterprise 的 Visual Studio
-          href: access-github.md
         - name: Microsoft 合作夥伴網路
           items:
             - name: 合作夥伴的訂用帳戶
@@ -64,6 +62,8 @@
               href: vs-cast.md
             - name: CloudPilot
               href: vs-cloudpilot.md
+            - name: GitHub Enterprise
+              href: access-github.md
             - name: Microsoft 365 應用程式企業版
               href: microsoft-365-apps-for-enterprise.md
             - name: Microsoft 365 開發人員

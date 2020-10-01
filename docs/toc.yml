@@ -524,15 +524,7 @@
             - name: C++ EditorConfig 格式設定慣例
               href: ide/cpp-editorconfig-properties.md
             - name: .NET 編碼慣例
-              items:
-                - name: 概觀
-                  href: ide/editorconfig-code-style-settings-reference.md
-                - name: 語言慣例
-                  href: ide/editorconfig-language-conventions.md
-                - name: 格式設定慣例
-                  href: ide/editorconfig-formatting-conventions.md
-                - name: 命名規範
-                  href: ide/editorconfig-naming-conventions.md
+              href: /dotnet/fundamentals/code-analysis/code-style-rule-options
         - name: 自訂捲軸
           href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
         - name: 在程式碼中設定書籤
@@ -834,7 +826,7 @@
         - name: 設計國際化應用程式
           displayName: Globalization localization world-ready
           href: ide/globalizing-and-localizing-applications.md
-- name: Build
+- name: 組建
   items:
     - name: 概觀
       displayName: Compile build
@@ -1206,7 +1198,7 @@
                       href: ide/reference/options-text-editor-javascript-intellisense.md
                     - name: 進行 Lint 檢查
                       href: ide/reference/options-text-editor-javascript-linting.md
-                    - name: 專案
+                    - name: 隨附此逐步解說的專案
                       href: ide/reference/options-text-editor-javascript-project.md
                 - name: U-SQL
                   items:

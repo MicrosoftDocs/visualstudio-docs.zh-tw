@@ -185,7 +185,7 @@
         - name: 變更記錄
           href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
     - name: 使用 Xamarin 開發行動應用程式
-      href: /visualstudio/mac/xamarin
+      href: ./xamarin.md
 - name: 協助工具選項
   items:
     - name: 總覽
