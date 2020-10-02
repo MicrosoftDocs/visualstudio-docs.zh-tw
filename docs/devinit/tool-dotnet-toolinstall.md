@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: cb19cab0c03b87894029a18f682f05def6a2197c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 3877fd22efa69978c4e209b7fa23998dac7dc95e
+ms.sourcegitcommit: 036b0dfa651f7218ed33e6a19425613599ee58fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005542"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91636687"
 ---
 # <a name="dotnet-toolinstall"></a>dotnet-toolinstall
 
@@ -29,12 +29,12 @@ ms.locfileid: "91005542"
 | 名稱                                             | 類型   | 必要 | 值                                                                 |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------|
 | **評論**                                     | 字串 | No       | 選擇性批註屬性。 未使用。                                 |
-| [**輸入**](#input)                              | 字串 | Yes      | 要安裝的 .NET Core 工具。 如需詳細資料，請參閱下列 [輸入](#input) 。 |
+| [**輸入**](#input)                              | 字串 | 是      | 要安裝的 .NET Core 工具。 如需詳細資料，請參閱下列 [輸入](#input) 。 |
 | [**additionalOptions**](#additional-options)     | 字串 | No       | 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。      |
 
 ### <a name="input"></a>輸入
 
-`input`屬性可用來指定 .Net Core 工具安裝。 中有一份非官方的工具清單 [https://github.com/natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools) 。
+`input`屬性可用來指定要安裝的 .Net Core 工具。 中有一份非官方的工具清單 [https://github.com/natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools) 。
 
 ### <a name="additional-options"></a>其他選項
 
