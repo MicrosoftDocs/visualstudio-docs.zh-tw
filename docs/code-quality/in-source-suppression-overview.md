@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: adf8e969af4a903aa6ed55b1c92f4ddaffcf77e0
-ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
+ms.openlocfilehash: 4ef64528d8686267677020458374ef96143f6e34
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91604640"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658512"
 ---
 # <a name="suppress-code-analysis-violations"></a>隱藏程式碼分析違規項目
 
@@ -68,7 +68,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 屬性的屬性包括：
 
-- **Category** -規則定義所在的分類。 如需程式碼分析規則類別的詳細資訊，請參閱 [Managed 程式碼警告](../code-quality/code-analysis-for-managed-code-warnings.md)。
+- **Category** -規則定義所在的分類。 如需程式碼分析規則類別的詳細資訊，請參閱 [Managed 程式碼警告](/dotnet/fundamentals/code-analysis/quality-rules/index)。
 
 - **CheckId** -規則的識別碼。 支援包含規則識別碼的簡短和完整名稱。 簡短名稱是 CAXXXX;完整名稱是 CAXXXX： FriendlyTypeName。
 

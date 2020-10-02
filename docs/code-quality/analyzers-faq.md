@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e59fd8ef3210a19683b428438d2e58ab816e9a40
-ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
+ms.openlocfilehash: 134f91531b9485f5a887b2d9785a490fcea605fc
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91604597"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659162"
 ---
 # <a name="code-analysis-faq"></a>程式碼分析常見問題
 
@@ -24,7 +24,7 @@ ms.locfileid: "91604597"
 
 **問**：我是否應該使用程式碼分析或 EditorConfig 來檢查程式碼樣式？
 
-**答**：程式碼分析和 EditorConfig 檔案的工作手邊。 當您 [在 EditorConfig](../ide/editorconfig-code-style-settings-reference.md) 檔或 [文字編輯器](../ide/code-styles-and-code-cleanup.md) 的 [選項] 頁面上定義程式碼樣式時，實際上是設定 Visual Studio 內建的程式碼分析器。 您可以使用 EditorConfig 檔案來啟用或停用分析器規則，也可以設定 NuGet 分析器套件。
+**答**：程式碼分析和 EditorConfig 檔案的工作手邊。 當您 [在 EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options) 檔或 [文字編輯器](../ide/code-styles-and-code-cleanup.md) 的 [選項] 頁面上定義程式碼樣式時，實際上是設定 Visual Studio 內建的程式碼分析器。 您可以使用 EditorConfig 檔案來啟用或停用分析器規則，也可以設定 NuGet 分析器套件。
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig 與規則集的比較
 
@@ -35,7 +35,7 @@ ms.locfileid: "91604597"
 不過，EditorConfig 檔也提供其他設定規則的方式：
 
 - 針對 .NET 程式碼品質分析器，EditorConfig 檔可讓您 [定義要分析的程式碼類型](/dotnet/fundamentals/code-analysis/code-quality-rule-options)。
-- 針對 Visual Studio 內建的 .NET 程式碼樣式分析器，EditorConfig 檔可讓您定義程式碼基底 [的慣用程式碼樣式](../ide/editorconfig-code-style-settings-reference.md) 。
+- 針對 Visual Studio 內建的 .NET 程式碼樣式分析器，EditorConfig 檔可讓您定義程式碼基底 [的慣用程式碼樣式](/dotnet/fundamentals/code-analysis/code-style-rule-options) 。
 
 除了規則集和 EditorConfig 檔之外，某些分析器會透過使用標記為 c # 和 VB 編譯器之 [其他](../ide/build-actions.md#build-action-values) 檔案的文字檔來設定。
 
@@ -97,4 +97,4 @@ ms.locfileid: "91604597"
 ## <a name="see-also"></a>另請參閱
 
 - [分析器總覽](roslyn-analyzers-overview.md)
-- [EditorConfig 的 .NET 編碼慣例設定](../ide/editorconfig-code-style-settings-reference.md)
+- [EditorConfig 的 .NET 編碼慣例設定](/dotnet/fundamentals/code-analysis/code-style-rule-options)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca48d0cad8ad6e22aa2264390d230590438e8579
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47019ecd01a4ad432a853a7f1a4f7d7112be163c
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77506462"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659201"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>使用規則集將程式碼分析規則分組
 
@@ -24,7 +24,7 @@ ms.locfileid: "77506462"
 
 您可以藉由新增或刪除規則來自訂規則集，或將規則嚴重性變更為在 **錯誤清單**中顯示為警告或錯誤。 自訂規則集可以滿足您特定開發環境的需求。 當您自訂規則集時，規則集編輯器會提供搜尋和篩選工具來協助您進行處理。
 
-規則集適用于 [managed 程式碼分析](analyzer-rule-sets.md)、 [managed 程式碼的舊版分析](how-to-configure-code-analysis-for-a-managed-code-project.md)，以及 [c + + 程式碼分析](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)。
+規則集適用于 [managed 程式碼分析](/dotnet/fundamentals/code-analysis/code-quality-rule-options)、 [managed 程式碼的舊版分析](how-to-configure-code-analysis-for-a-managed-code-project.md)，以及 [c + + 程式碼分析](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)。
 
 ## <a name="rule-set-format"></a>規則集格式
 

@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d3fa48a7f571680cb9d26257fe4aa288aba15dbc
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: e8c99677396ab9b3d005d4079fd37fa633df4913
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352199"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658434"
 ---
 # <a name="overview-of-source-code-analysis"></a>原始程式碼分析總覽
 
@@ -25,9 +25,9 @@ ms.locfileid: "91352199"
 
 分析器可以分為下列群組：
 
-- 程式[代碼樣式](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories)分析器內建于 Visual Studio。 這些分析器的診斷識別碼或程式碼的格式為 IDExxxx，例如 IDE0067。 您可以在 [文字編輯器](../ide/code-styles-and-code-cleanup.md) 的 [選項] 頁面或 [EditorConfig](../ide/editorconfig-code-style-settings-reference.md)檔中設定喜好設定。 從 .NET 5.0 開始，程式碼樣式分析器會隨附于 .NET SDK，而且可以嚴格地強制執行為組建警告或錯誤。 如需詳細資訊，請參閱[這裡](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis)。
+- 程式[代碼樣式](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories)分析器內建于 Visual Studio。 這些分析器的診斷識別碼或程式碼的格式為 IDExxxx，例如 IDE0067。 您可以在 [文字編輯器](../ide/code-styles-and-code-cleanup.md) 的 [選項] 頁面或 [EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)檔中設定喜好設定。 從 .NET 5.0 開始，程式碼樣式分析器會隨附于 .NET SDK，而且可以嚴格地強制執行為組建警告或錯誤。 如需詳細資訊，請參閱[這裡](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis)。
 
-- 程式[代碼品質](code-analysis-warnings-for-managed-code-by-checkid.md)分析器現在隨附于 .NET 5 SDK，而且預設為啟用。 這些分析器的診斷識別碼或程式碼的格式為 CAxxxx，例如 CA1822。 如需詳細資訊，請參閱 [.net 程式碼品質分析的總覽](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis)。
+- 程式[代碼品質](/dotnet/fundamentals/code-analysis/quality-rules/index)分析器現在隨附于 .NET 5 SDK，而且預設為啟用。 這些分析器的診斷識別碼或程式碼的格式為 CAxxxx，例如 CA1822。 如需詳細資訊，請參閱 [.net 程式碼品質分析的總覽](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis)。
 
 - 協力廠商分析器可以安裝為 NuGet 套件或 Visual Studio 擴充功能。 協力廠商分析器，例如 [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/)、 [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/)、 [XUnit 分析器](https://www.nuget.org/packages/xunit.analyzers/)和 [聲納 Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)。
 

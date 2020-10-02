@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d44b12815f24ea14d35df0e27e5b3f72c296e16
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: edacd898cc1deb0382dd8e8b4b048af895c3b579
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599575"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658460"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>混合最小規則規則集
 
@@ -21,7 +21,7 @@ Microsoft 混合的最小規則會著重于 c + + 專案中支援 Common Languag
 
 在您為支援 Common Language Runtime 的 c + + 專案所建立的任何自訂規則集中包含此規則集。
 
-|規則|說明|
+|規則|描述|
 |----------|-----------------|
 |[C6001](/cpp/code-quality/c6001)|使用尚未初始化的記憶體|
 |[C6011](/cpp/code-quality/c6011)|取值的指標為 NULL|
@@ -153,7 +153,7 @@ Microsoft 混合的最小規則會著重于 c + + 專案中支援 Common Languag
 |[C28305](/cpp/code-quality/c28305)|剖析語彙基元時發現錯誤。|
 |[C28350](/cpp/code-quality/c28350)|註釋描述了條件不適用的狀況。|
 |[C28351](/cpp/code-quality/c28351)|註釋描述條件中不可以使用動態值 (變數)。|
-|[CA1001 具有](../code-quality/ca1001.md)|具有可處置欄位的類型應該為可處置|
-|[CA1821 必須](../code-quality/ca1821.md)|必須移除空的完成項|
-|[CA2213](../code-quality/ca2213.md)|可處置的欄位應該受到處置|
-|[CA2231](../code-quality/ca2231.md)|在覆寫 ValueType.Equals 上多載等號運算子|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|具有可處置欄位的類型應該為可處置|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|必須移除空的完成項|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|可處置的欄位應該受到處置|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|在覆寫 ValueType.Equals 上多載等號運算子|

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b9b61d25d0a08763d55dcfb5d5ddb245471effc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 350c32ea0904913b20f346243de9cb464667289a
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76113782"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659351"
 ---
 # <a name="code-analysis-project-designer"></a>專案設計工具、程式碼分析
 
@@ -64,6 +64,6 @@ ms.locfileid: "76113782"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Managed 程式碼的程式碼分析警告](../../code-quality/code-analysis-for-managed-code-warnings.md)
+- [Managed 程式碼的程式碼分析警告](/dotnet/fundamentals/code-analysis/quality-rules/index)
 - [Managed 程式碼的程式碼分析概觀](../../code-quality/code-analysis-for-managed-code-overview.md)
 - [逐步解說：分析 Managed 程式碼中的程式碼缺失](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

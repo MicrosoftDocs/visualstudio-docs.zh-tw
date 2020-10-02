@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 95264aafd2467065ee2bc36d463369f19714dd68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 903b464172d541277de5fbac6d8ab035578b6154
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587351"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658499"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>適用於受控碼的受控最小規則規則集
 
@@ -21,7 +21,7 @@ ms.locfileid: "75587351"
 
 |規則|描述|
 |----------|-----------------|
-|[CA1001 具有](../code-quality/ca1001.md)|具有可處置欄位的類型應該為可處置|
-|[CA1821 必須](../code-quality/ca1821.md)|必須移除空的完成項|
-|[CA2213](../code-quality/ca2213.md)|可處置的欄位應該受到處置|
-|[CA2231](../code-quality/ca2231.md)|覆寫上的多載運算子 equals `ValueType.Equals`|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|具有可處置欄位的類型應該為可處置|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|必須移除空的完成項|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|可處置的欄位應該受到處置|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|覆寫上的多載運算子 equals `ValueType.Equals`|

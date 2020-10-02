@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab1e0b890d6241742770ed38ff61fc1c2c0ed2f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab8a834de307cf7803b93f025a68b95defe12466
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72535699"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659188"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>逐步解說：使用靜態程式碼分析來尋找程式碼瑕疵
 
@@ -93,15 +93,15 @@ ms.locfileid: "72535699"
 
 1. 使用下列秘訣來修正警告：
 
-   [CA1014：使用 >clscompliantattribute 標記元件](../code-quality/ca1014.md)：將程式碼新增 `[assembly: CLSCompliant(true)]` 至 AssemblyInfo.cs 檔案的結尾。
+   [CA1014：使用 >clscompliantattribute 標記元件](/dotnet/fundamentals/code-analysis/quality-rules/ca1014)：將程式碼新增 `[assembly: CLSCompliant(true)]` 至 AssemblyInfo.cs 檔案的結尾。
 
-   [Ca1032 必須：實行標準例外](../code-quality/ca1032.md)狀況的函式：將此函式加入 `public demo (String s) : base(s) { }` 至類別 `demo` 。
+   [Ca1032 必須：實行標準例外](/dotnet/fundamentals/code-analysis/quality-rules/ca1032)狀況的函式：將此函式加入 `public demo (String s) : base(s) { }` 至類別 `demo` 。
 
-   [Ca1032 必須：實行標準例外](../code-quality/ca1032.md)狀況的函式：將此函式加入 `public demo (String s, Exception e) : base(s, e) { }` 至類別 `demo` 。
+   [Ca1032 必須：實行標準例外](/dotnet/fundamentals/code-analysis/quality-rules/ca1032)狀況的函式：將此函式加入 `public demo (String s, Exception e) : base(s, e) { }` 至類別 `demo` 。
 
-   [Ca1032 必須：實行標準例外](../code-quality/ca1032.md)狀況的函式：將此函式新增 `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` 至類別示範。 您也需要新增的 `using` 語句 <xref:System.Runtime.Serialization?displayProperty=fullName> 。
+   [Ca1032 必須：實行標準例外](/dotnet/fundamentals/code-analysis/quality-rules/ca1032)狀況的函式：將此函式新增 `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` 至類別示範。 您也需要新增的 `using` 語句 <xref:System.Runtime.Serialization?displayProperty=fullName> 。
 
-   [Ca1032 必須：實行標準例外](../code-quality/ca1032.md)狀況的函式：將此函式加入 `public demo () : base() { }` 至類別 `demo` 。
+   [Ca1032 必須：實行標準例外](/dotnet/fundamentals/code-analysis/quality-rules/ca1032)狀況的函式：將此函式加入 `public demo () : base() { }` 至類別 `demo` 。
 
    [CA1709：識別碼的大小寫應該正確](../code-quality/ca1709.md)：將命名空間的大小寫變更 `testCode` 為 `TestCode` 。
 
@@ -109,9 +109,9 @@ ms.locfileid: "72535699"
 
    [CA1709：識別碼的大小寫應該正確：請](../code-quality/ca1709.md)將成員的名稱變更為 `Item` 。
 
-   [CA1710：識別碼應該有正確的後](../code-quality/ca1710.md)置詞：將類別的名稱及其函式變更為 `DemoException` 。
+   [CA1710：識別碼應該有正確的後](/dotnet/fundamentals/code-analysis/quality-rules/ca1710)置詞：將類別的名稱及其函式變更為 `DemoException` 。
 
-   [Ca2237 必須：使用 SerializableAttribute 標記 ISerializable 類型](../code-quality/ca2237.md)：將 `[Serializable ()]` 屬性加入至類別 `demo` 。
+   [Ca2237 必須：使用 SerializableAttribute 標記 ISerializable 類型](/dotnet/fundamentals/code-analysis/quality-rules/ca2237)：將 `[Serializable ()]` 屬性加入至類別 `demo` 。
 
    [CA2210：元件應該具有有效的強式名稱](../code-quality/ca2210.md)：使用強式名稱金鑰簽署 ' CodeAnalysisManagedDemo '：
 

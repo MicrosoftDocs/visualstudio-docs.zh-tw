@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1176232eb3354a9b425e9432eb83037367ee7706
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57d95cd3f3dcf68e7af143bdde3a16474beda20c
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312531"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659273"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>選項對話方塊：文字編輯器 \> c # 程式 \> 代碼樣式 \> 格式化
 
@@ -62,19 +62,19 @@ ms.locfileid: "89312531"
 
 |標籤|描述|對應的 EditorConfig 與 [工具] > [選項] 規則|
 |-----------|-----------------|-----------------|-----------------|
-|**套用所有 C# 格式化規則 (縮排、換行、間距)**|**將文件格式化**的命令一律會修正格式化問題。 這項設定無法變更。| [Core EditorConfig 選項](../../ide/create-portable-custom-editor-options.md)<br/>[.NET EditorConfig 格式化選項](../../ide/editorconfig-formatting-conventions.md)<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > **格式化**> [**縮排**或**新行**或**間距**或**換**行]|
+|**套用所有 C# 格式化規則 (縮排、換行、間距)**|**將文件格式化**的命令一律會修正格式化問題。 這項設定無法變更。| [Core EditorConfig 選項](../../ide/create-portable-custom-editor-options.md)<br/>[.NET EditorConfig 格式化選項](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules)<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > **格式化**> [**縮排**或**新行**或**間距**或**換**行]|
 |**在格式化期間執行其他程式碼清理**|如有選取，會對 **Edit.FormatDocument** 命令下指定的規則套用修正。| N/A |
 |**移除不必要的 using**|如有選取，會在 **Edit.FormatDocument** 觸發時移除不必要的 `using` 指示詞。| N/A |
-|**排序 using**|如有選取，會在 **Edit.FormatDocument** 觸發時為 `using` 指示詞排序。| dotnet_sort_system_directives_first<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > **Advanced**  > **排序 using 時先放置 ' System '** 指示詞 |
+|**為 using 排序**|如有選取，會在 **Edit.FormatDocument** 觸發時為 `using` 指示詞排序。| dotnet_sort_system_directives_first<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > **Advanced**  > **排序 using 時先放置 ' System '** 指示詞 |
 |**新增/移除單行控制陳述式的括號**|如有選取，會在 **Edit.FormatDocument** 觸發時從單行控制陳述式新增或移除括號。| csharp_prefer_braces<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > 程式**代碼樣式**  > 程式**代碼區塊喜好**  >  設定**偏好大括弧** |
 |**新增協助工具修飾詞**|如有選取，會在 **Edit.FormatDocument** 觸發時新增缺少的協助工具修飾詞。| dotnet_style_require_accessibility_modifiers |
 |**為存取範圍修飾詞排序**|如有選取，會在 **Edit.FormatDocument** 觸發時為協助工具修飾詞排序。| csharp_preferred_modifier_order<br/>visual_basic_preferred_modifier_order |
-|**套用運算式/區塊主體喜好設定**|如有選取，會在 **Edit.FormatDocument** 觸發時將以運算式為主體的成員轉換成區塊主體，或反向轉換。| [以運算式為主體的成員 EditorConfig 選項](../../ide/editorconfig-language-conventions.md#expression-bodied-members)<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > 程式**代碼樣式**  > **運算式喜好**  >  設定**使用方法、函式等的運算式主體。** |
-|**套用隱含/明確類型喜好設定**|如有選取，會在 **Edit.FormatDocument**觸發時將 `var` 轉換為明確類型，或反向轉換。| [明確類型 EditorConfig 選項](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types)<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > 程式**代碼樣式**  > **' var ' 喜好**設定 |
+|**套用運算式/區塊主體喜好設定**|如有選取，會在 **Edit.FormatDocument** 觸發時將以運算式為主體的成員轉換成區塊主體，或反向轉換。| [以運算式為主體的成員 EditorConfig 選項](/dotnet/fundamentals/code-analysis/style-rules/language-rules#expression-bodied-members)<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > 程式**代碼樣式**  > **運算式喜好**  >  設定**使用方法、函式等的運算式主體。** |
+|**套用隱含/明確類型喜好設定**|如有選取，會在 **Edit.FormatDocument**觸發時將 `var` 轉換為明確類型，或反向轉換。| [明確類型 EditorConfig 選項](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types)<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > 程式**代碼樣式**  > **' var ' 喜好**設定 |
 |**套用內嵌 'out' 變數喜好設定**|如有選取，會在 **Edit.FormatDocument**觸發時，於可行的位置內嵌 `out` 變數。| csharp_style_inlined_variable_declaration<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > 程式**代碼樣式**  > **變數喜好**  >  設定**偏好使用內嵌變數**宣告 |
 |**套用語言/架構類型喜好設定**|如有選取，會在 **Edit.FormatDocument** 觸發時將語言類型轉換為架構類型，或反向轉換。| dotnet_style_predefined_type_for_locals_parameters_members<br/>dotnet_style_predefined_type_for_member_access<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > 程式**代碼樣式**  > **預先定義的類型喜好**設定 |
 |**套用物件/集合初始設定喜好設定**|如有選取，會在 **Edit.FormatDocument** 觸發時，於可行的位置使用物件和集合初始設定式。| dotnet_style_object_initializer<br/>dotnet_style_collection_initializer<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > 程式**代碼樣式**  > **運算式喜好**  >  設定**偏好物件初始化運算式**或**偏好集合初始化運算式** |
-|**套用 'this.' 限定性條件喜好設定**|如有選取，會在 **Edit.FormatDocument** 觸發時套用 `this.` 喜好設定。| [限定性條件 EditorConfig 選項](../../ide/editorconfig-language-conventions.md#this-and-me)<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > 程式**代碼樣式**  > **' this. ' 喜好**設定 |
+|**套用 'this.' 限定性條件喜好設定**|如有選取，會在 **Edit.FormatDocument** 觸發時套用 `this.` 喜好設定。| [限定性條件 EditorConfig 選項](/dotnet/fundamentals/code-analysis/style-rules/language-rules#this-and-me)<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > 程式**代碼樣式**  > **' this. ' 喜好**設定 |
 |**在可行時將私人欄位設為唯讀**|如有選取，會在 **Edit.FormatDocument** 觸發時，於可行的位置將私人欄位設為 `readonly`。| dotnet_style_readonly_field<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > 程式**代碼樣式**  > **欄位喜好**  >  設定**偏好 readonly** |
 |**移除不必要的 cast**|如有選取，會在 **Edit.FormatDocument** 觸發時移除不必要的 cast。| N/A |
 |**移除未使用的變數**|如有選取，會在 **Edit.FormatDocument** 觸發時移除未使用的變數。| N/A |

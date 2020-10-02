@@ -2,20 +2,20 @@
 title: 程式碼樣式選項及程式碼清除
 ms.date: 04/25/2019
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 75b301f66f597f8b53a2561ffbbe05dfb8a4cb1c
-ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
+ms.openlocfilehash: 82eec2a911ec113c42423fe14b06539e465e8bb3
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90682686"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658382"
 ---
 # <a name="code-style-preferences"></a>程式碼樣式喜好設定
 
@@ -26,7 +26,7 @@ ms.locfileid: "90682686"
 
 ## <a name="code-styles-in-editorconfig-files"></a>EditorConfig 檔案中的程式碼樣式
 
-.NET 的[程式碼樣式設定](../ide/editorconfig-code-style-settings-reference.md)可透過將 [EditorConfig](create-portable-custom-editor-options.md) 檔案新增到專案來指定。 EditorConfig 檔案都會與程式碼基底 (而非 Visual Studio 個人化帳戶) 建立關聯。 EditorConfig 檔案中設定的優先權高於 [選項]**** 對話方塊中所指定程式碼樣式。 當您想要針對存放庫或專案的所有參與者強制執行編碼樣式時，請使用 EditorConfig 檔案。
+.NET 的[程式碼樣式設定](/dotnet/fundamentals/code-analysis/code-style-rule-options)可透過將 [EditorConfig](create-portable-custom-editor-options.md) 檔案新增到專案來指定。 EditorConfig 檔案都會與程式碼基底 (而非 Visual Studio 個人化帳戶) 建立關聯。 EditorConfig 檔案中設定的優先權高於 [選項]**** 對話方塊中所指定程式碼樣式。 當您想要針對存放庫或專案的所有參與者強制執行編碼樣式時，請使用 EditorConfig 檔案。
 
 ::: moniker range=">=vs-2019"
 
@@ -112,5 +112,5 @@ ms.locfileid: "90682686"
 ## <a name="see-also"></a>另請參閱
 
 - [快速動作](../ide/quick-actions.md)
-- [EditorConfig 的 .NET 編碼慣例設定](../ide/editorconfig-code-style-settings-reference.md)
+- [EditorConfig 的 .NET 編碼慣例設定](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [編輯器行為 (Visual Studio for Mac)](/visualstudio/mac/editor-behavior)

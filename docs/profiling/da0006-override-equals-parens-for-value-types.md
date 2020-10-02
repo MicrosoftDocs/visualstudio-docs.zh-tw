@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4309b1a38e99cda262bf7558f050754656419e88
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba62555f786b2280de9a07c435a3e32d5cc3e7d9
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520818"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659286"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006：覆寫實值型別的 Equals()
 
@@ -40,4 +40,4 @@ ms.locfileid: "85520818"
  如需如何覆寫 Equals 和等號比較運算子的詳細資訊，請參閱[實作 Equals 和相等運算子 (==) 的方針](/dotnet/standard/design-guidelines/equality-operators)。
 
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告
- 如需實作 Equals 和相等運算子的範例，請參閱程式碼分析規則 [CA1815：必須覆寫實值型別上的 Equals 方法和相等運算子](../code-quality/ca1815.md)
+ 如需實作 Equals 和相等運算子的範例，請參閱程式碼分析規則 [CA1815：必須覆寫實值型別上的 Equals 方法和相等運算子](/dotnet/fundamentals/code-analysis/quality-rules/ca1815)

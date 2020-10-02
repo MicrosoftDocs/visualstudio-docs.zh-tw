@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffaf964b24fea41d8e364d610806ba92980b1dc7
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893303"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659175"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>使用程式碼分析規則集編輯器
 
@@ -70,10 +70,10 @@ ms.locfileid: "88893303"
 |欄位|描述|
 |-----------|-----------------|
 |**識別碼**|規則的識別項。|
-|**類別**|除了規則集中的成員資格之外，程式碼分析規則也會依類別目錄分組。 如需詳細資訊，請參閱程式 [代碼分析警告](../code-quality/code-analysis-for-managed-code-warnings.md)。|
+|**類別**|除了規則集中的成員資格之外，程式碼分析規則也會依類別目錄分組。 如需詳細資訊，請參閱程式 [代碼分析警告](/dotnet/fundamentals/code-analysis/quality-rules/index)。|
 |**名稱**|規則的標題。|
 |**Namespace**|規則的命名空間。|
-|**目標型別**|指出規則適用于原生、managed 或資料庫程式碼。|
+|**目標類型**|指出規則適用于原生、managed 或資料庫程式碼。|
 |**動作**|在程式碼分析執行中違反規則時所採取的動作。 您可以編輯 [ **動作** ] 欄位。|
 |**來源規則集**|包含規則的規則集。|
 

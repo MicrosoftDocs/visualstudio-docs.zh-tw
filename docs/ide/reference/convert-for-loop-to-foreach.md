@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: af52761f5cb199c7f842d01589c35501898b09aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47aa5a328f158d890908bf1ddcb69a838ad1ed66
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094607"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659377"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>重構以在 for 迴圈與 foreach 陳述式之間轉換
 
@@ -83,7 +83,7 @@ ms.locfileid: "79094607"
 1. 由於重構採用了新的反覆運算計數變數，因此 [重新命名]**** 方塊會顯示在編輯器的右上角。 若您想為變數選擇其他名稱，請鍵入名稱後按 **Enter 鍵**或選取 [重新命名]**** 方塊中的 [套用]****。 若您不想選擇新名稱，則按 **Esc 鍵**或選取 [套用]**** 關閉 [重新命名]**** 方塊。
 
 > [!NOTE]
-> 就 C# 而言，這些重構所產生的程式碼會針對集合中項目的類型，使用明確的類型或 [var](/dotnet/csharp/language-reference/keywords/var)。 所產生程式碼中的類型 (不論是明確還是隱含) 會取決於範圍內的程式碼樣式設定。 這些特定的程式碼樣式設定是在電腦層級的 [**工具**  >  **選項**  >  **文字編輯器**  >  **c #** 程式  >  **代碼樣式**  >  **一般**  >  ** \' var] 喜好**設定，或在[EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types)檔案的方案層級上設定。 如果您在 [選項]**** 中變更某個程式碼樣式，請重新開啟程式碼檔案以讓變更生效。
+> 就 C# 而言，這些重構所產生的程式碼會針對集合中項目的類型，使用明確的類型或 [var](/dotnet/csharp/language-reference/keywords/var)。 所產生程式碼中的類型 (不論是明確還是隱含) 會取決於範圍內的程式碼樣式設定。 這些特定的程式碼樣式設定是在電腦層級的 [**工具**  >  **選項**  >  **文字編輯器**  >  **c #** 程式  >  **代碼樣式**  >  **一般**  >  ** \' var] 喜好**設定，或在[EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types)檔案的方案層級上設定。 如果您在 [選項]**** 中變更某個程式碼樣式，請重新開啟程式碼檔案以讓變更生效。
 
 ## <a name="see-also"></a>另請參閱
 

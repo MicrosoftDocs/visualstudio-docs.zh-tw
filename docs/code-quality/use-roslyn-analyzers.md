@@ -11,12 +11,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6a950a005a4669e74722742b23527a9e85ab5f02
-ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
+ms.openlocfilehash: 08d033deb09f8b91cfc183e121bac7c3f2839d08
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90560745"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659214"
 ---
 # <a name="overview"></a>概觀
 
@@ -44,7 +44,7 @@ ms.locfileid: "90560745"
 | 警告 | `warning` | 違規在錯誤清單和命令列組建輸出中會顯示為 *警告* ，但不會造成組建失敗。 | 有問題的程式碼會以綠色波浪線加上底線，並在捲軸中以小綠色方塊標記。 |
 | 資訊 | `suggestion` | 違規會以 *訊息* 形式出現在錯誤清單中，而不是在命令列組建輸出中。 | 有問題的程式碼會以灰色波浪線加上底線，並在捲軸中以小灰色方塊標記。 |
 | Hidden | `silent` | 使用者看不到。 | 使用者看不到。 不過，診斷會回報給 IDE 診斷引擎。 |
-| None | `none` | 已完全隱藏。 | 已完全隱藏。 |
+| 無 | `none` | 已完全隱藏。 | 已完全隱藏。 |
 | 預設 | `default` | 對應于規則的預設嚴重性。 若要判斷規則的預設值為何，請查看屬性視窗。 | 對應于規則的預設嚴重性。 |
 
 如果分析器發現規則違規，就會在 [程式碼編輯器] 中回報它們， (在違規程序代碼) 和 [錯誤清單] 視窗中的 *波浪* 線。
@@ -102,7 +102,7 @@ ms.locfileid: "90560745"
 - 個別規則依識別碼的嚴重性專案優先于類別的嚴重性專案。
 - 類別的嚴重性專案優先于所有分析器規則的嚴重性專案。
 
-請考慮下列 EditorConfig 範例，其中 [CA1822](./ca1822.md) 具有「效能」類別：
+請考慮下列 EditorConfig 範例，其中 [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) 具有「效能」類別：
 
    ```ini
    [*.cs]
@@ -117,7 +117,7 @@ ms.locfileid: "90560745"
 
 1. 如果您的專案尚未有 EditorConfig 檔案，請 [新增一個](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)。
 
-2. 針對您想要在對應的副檔名下設定的每個規則，新增專案。 例如，若要為 c # 檔案設定 [CA1822](ca1822.md) 的嚴重性 `error` ，此專案看起來如下：
+2. 針對您想要在對應的副檔名下設定的每個規則，新增專案。 例如，若要為 c # 檔案設定 [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) 的嚴重性 `error` ，此專案看起來如下：
 
    ```ini
    [*.cs]
@@ -125,7 +125,7 @@ ms.locfileid: "90560745"
    ```
 
 > [!NOTE]
-> 針對 IDE 程式碼樣式分析器，您也可以使用不同的語法在 EditorConfig 檔中設定它們，例如 `dotnet_style_qualification_for_field = false:suggestion` 。 但是，如果您使用語法設定嚴重性 `dotnet_diagnostic` ，則會優先使用。 如需詳細資訊，請參閱 [EditorConfig 的語言慣例](../ide/editorconfig-language-conventions.md)。
+> 針對 IDE 程式碼樣式分析器，您也可以使用不同的語法在 EditorConfig 檔中設定它們，例如 `dotnet_style_qualification_for_field = false:suggestion` 。 但是，如果您使用語法設定嚴重性 `dotnet_diagnostic` ，則會優先使用。 如需詳細資訊，請參閱 [EditorConfig 的語言慣例](/dotnet/fundamentals/code-analysis/style-rules/language-rules)。
 
 ### <a name="set-rule-severity-from-the-light-bulb-menu"></a>從燈泡功能表設定規則嚴重性
 

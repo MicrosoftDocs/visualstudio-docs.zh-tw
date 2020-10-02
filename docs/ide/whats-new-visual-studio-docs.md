@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6abee067465a0595b75df42d05213f9694dd7ed4
-ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
+ms.openlocfilehash: 62449bd5571ff72cdf5a1c855417611f45f5970f
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91621733"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659312"
 ---
 # <a name="visual-studio-docs-whats-new-for-september-2020"></a>Visual Studio 檔：2020年9月的新功能
 
@@ -30,14 +30,11 @@ ms.locfileid: "91621733"
 
 **新文章**
 
-- [CA1416：驗證平臺相容性](../code-quality/ca1416.md) -記錄 CA1416 驗證平臺相容性
-- [CA1834：使用 StringBuilder。針對單一字元字串附加 (char) ](../code-quality/ca1834.md) -CA1834 的檔
+- [CA1416：驗證平臺相容性](/dotnet/fundamentals/code-analysis/quality-rules/ca1416) -記錄 CA1416 驗證平臺相容性
+- [CA1834：使用 StringBuilder。針對單一字元字串附加 (char) ](/dotnet/fundamentals/code-analysis/quality-rules/ca1834) -CA1834 的檔
 
 **已更新**
 
-- [使用 EditorConfig 設定 .NET 程式碼品質分析器](../code-quality/configure-fxcop-analyzers.md)
-  - 少數對 CA 檔重構的小型修正
-  - .NET 重構的程式碼分析更新
 - [原始程式碼分析簡介](../code-quality/roslyn-analyzers-overview.md) -.net 重構的程式碼分析更新
 - [設定程式碼品質分析](../code-quality/use-roslyn-analyzers.md) -.net 重構的程式碼分析更新
 
@@ -68,8 +65,8 @@ ms.locfileid: "91621733"
 
 **更新的文章**
 
-- [適用于 EditorConfig 的 .net 編碼慣例設定](./editorconfig-code-style-settings-reference.md) -已更新 EditorConfig
-- [語言慣例](./editorconfig-language-conventions.md) -遺漏範例
+- [適用于 EditorConfig 的 .net 編碼慣例設定](/dotnet/fundamentals/code-analysis/code-style-rule-options) -已更新 EditorConfig
+- [語言慣例](/dotnet/fundamentals/code-analysis/style-rules/language-rules) -遺漏範例
 
 ## <a name="install"></a>安裝
 
@@ -78,6 +75,7 @@ ms.locfileid: "91621733"
 - [Arm 裝置上的 Visual Studio](../install/visual-studio-on-arm-devices.md) -在 arm 上新增 VS 的 doc 檔
 
 **更新的文章**
+
 - [當您安裝或使用 Visual Studio](../install/troubleshooting-network-related-errors-in-visual-studio.md) -新增因應措施驗證 proxy 損毀的因應措施時，針對網路相關錯誤進行疑難排解
 
 ## <a name="profiling"></a>程式碼剖析

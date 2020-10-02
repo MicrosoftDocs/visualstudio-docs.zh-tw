@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b254cb2077b748f34958e33dbc456f17df530ce
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 25fc255d0e04dd45400fa5da2b81c2e050a2150f
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600229"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658525"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>How to：產生程式碼度量資料
 
@@ -32,10 +32,10 @@ ms.locfileid: "89600229"
 
 .NET 程式碼品質分析器包含數個程式碼計量 [分析器](roslyn-analyzers-overview.md) 規則：
 
-- [CA1501](./ca1501.md)
-- [CA1502](ca1502.md)
-- [CA1505](ca1505.md)
-- [CA1506](ca1506.md)
+- [CA1501](/dotnet/fundamentals/code-analysis/quality-rules/ca1501)
+- [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502)
+- [CA1505](/dotnet/fundamentals/code-analysis/quality-rules/ca1505)
+- [CA1506](/dotnet/fundamentals/code-analysis/quality-rules/ca1506)
 
 這些規則預設為停用，但您可以從 [**方案總管**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) 或在 [規則集](using-rule-sets-to-group-code-analysis-rules.md) 檔案中啟用它們。 例如，若要以警告的形式啟用規則 CA1502，您的規則集檔案將包含下列專案：
 
@@ -48,7 +48,7 @@ ms.locfileid: "89600229"
 </RuleSet>
 ```
 
-### <a name="configuration"></a>設定
+### <a name="configuration"></a>組態
 
 您可以設定程式碼計量規則引發的臨界值。
 
@@ -60,7 +60,7 @@ ms.locfileid: "89600229"
    CA1502: 10
    ```
 
-   在此範例中，規則 [CA1502](ca1502.md) 是設定為在方法的圈複雜度大於10時引發。
+   在此範例中，規則 [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502) 是設定為在方法的圈複雜度大於10時引發。
 
 3. 在 Visual Studio 的 [ **屬性** ] 視窗中，或在專案檔中，將設定檔的組建動作標示為 [**AdditionalFiles**](../ide/build-actions.md#build-action-values)。 例如：
 

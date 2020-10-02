@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2109d7cbcaaf56600812e27c3055fb3198848228
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9ce3c8feb3d3bbd458c14ee702d6e8a1668078f3
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810203"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658473"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>從舊版分析 (FxCop) 遷移至來源分析 (FxCop 分析器) 
 
@@ -36,6 +36,6 @@ ms.locfileid: "90810203"
 
 若要深入瞭解如何設定 FxCop 分析器：
 
-- 若要設定 FxCop 分析器，請參閱 [設定 fxcop 分析器](../code-quality/configure-fxcop-analyzers.md)。
+- 若要設定 FxCop 分析器，請參閱 [設定 fxcop 分析器](/dotnet/fundamentals/code-analysis/code-quality-rule-options)。
 
-- 若要瞭解如何使用預先定義的規則搭配 EditorConfig 或規則集檔案來設定分析器，請參閱 [啟用規則的類別](../code-quality/analyzer-rule-sets.md)。
+- 若要瞭解如何使用預先定義的規則搭配 EditorConfig 或規則集檔案來設定分析器，請參閱 [啟用規則的類別](/dotnet/fundamentals/code-analysis/code-quality-rule-options)。

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d498ee0acfdc87f340a3c5c8848680eaed6276d
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893264"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658551"
 ---
 # <a name="customize-a-rule-set"></a>自訂規則集
 
@@ -51,7 +51,7 @@ ms.locfileid: "88893264"
 4. 選取 [ **開啟** ]，即可在規則集編輯器中顯示規則。
 
 > [!NOTE]
-> 如果您有 .NET Core 或 .NET Standard 專案，此程式會有些不同，因為沒有 [程式 **代碼分析** ] 屬性索引標籤。遵循下列步驟，將 [預先定義的規則集複製到您的專案，並將其設定為使用中的規則集](analyzer-rule-sets.md)。 複製規則集之後，您可以 [在 Visual Studio 規則集編輯器中加以編輯](working-in-the-code-analysis-rule-set-editor.md) ，方法是從 **方案總管**中開啟它。
+> 如果您有 .NET Core 或 .NET Standard 專案，此程式會有些不同，因為沒有 [程式 **代碼分析** ] 屬性索引標籤。遵循下列步驟，將 [預先定義的規則集複製到您的專案，並將其設定為使用中的規則集](/dotnet/fundamentals/code-analysis/code-quality-rule-options)。 複製規則集之後，您可以 [在 Visual Studio 規則集編輯器中加以編輯](working-in-the-code-analysis-rule-set-editor.md) ，方法是從 **方案總管**中開啟它。
 
 ## <a name="create-a-new-rule-set"></a>建立新的規則集
 
@@ -61,7 +61,7 @@ ms.locfileid: "88893264"
 
 2. 在 [ **新增** 檔案] 對話方塊中，選取左側的 **[一般** ] 類別，然後選取 [程式 **代碼分析規則集**]。
 
-3. 選取 [開啟]  。
+3. 選取 [開啟]。
 
    新的 *. 規則* 集檔案會在規則集編輯器中開啟。
 

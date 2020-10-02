@@ -9,19 +9,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d380346b7e049a6ffc4e8d03a5be27983de10249
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b20974d2e44661ed7f4a0288ecb9eff82b2035a
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587234"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658421"
 ---
 # <a name="code-analysis-rule-set-reference"></a>程式碼分析規則集參考
 
 當您針對 Visual Studio 中的 managed 程式碼專案設定舊版分析時，可以從內建 *規則集*的清單中選擇。 某些規則包含在一個以上的內建規則集中，例如，基本正確性規則規則集包含受管理的建議規則規則集中的規則。
 
 > [!NOTE]
-> 本節中的規則集與舊版分析相關。 如需適用于程式碼分析器套件之規則集的詳細資訊，請參閱 [使用規則集](analyzer-rule-sets.md)搭配程式碼分析器。
+> 本節中的規則集與舊版分析相關。 如需適用于程式碼分析器套件之規則集的詳細資訊，請參閱 [使用規則集](/dotnet/fundamentals/code-analysis/code-quality-rule-options)搭配程式碼分析器。
 
 您可以使用其中一個內建規則集，也可以 [自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md) 以符合您的專案需求。 如果您將多個規則集包含在自訂規則集中的相同規則，該規則只會在自訂規則集中出現一次。
 

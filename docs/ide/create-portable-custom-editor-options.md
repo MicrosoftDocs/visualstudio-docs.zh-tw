@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 59e226fc0cc09b1eda5197d6accddfa9bd1a20ed
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 277e5cd03d4006ced0791356be73ca1fcbe5c217
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402253"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659247"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 建立可攜式自訂編輯器設定
 
@@ -68,7 +68,7 @@ Visual Studio 中的編輯器支援 [EditorConfig 屬性](https://editorconfig.o
 - insert\_final_newline
 - root
 
-除了 XML 以外的所有 Visual Studio 支援語言都支援 EditorConfig 編輯器設定。 此外，EditorConfig 支援[程式碼樣式](../ide/editorconfig-code-style-settings-reference.md)慣例，包括 C# 和 Visual Basic 的[語言](../ide/editorconfig-language-conventions.md)、[格式](../ide/editorconfig-formatting-conventions.md)和[命名](../ide/editorconfig-naming-conventions.md) 慣例。
+除了 XML 以外的所有 Visual Studio 支援語言都支援 EditorConfig 編輯器設定。 此外，EditorConfig 支援[程式碼樣式](/dotnet/fundamentals/code-analysis/code-style-rule-options)慣例，包括 C# 和 Visual Basic 的[語言](/dotnet/fundamentals/code-analysis/style-rules/language-rules)、[格式](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules)和[命名](/dotnet/fundamentals/code-analysis/style-rules/naming-rules) 慣例。
 
 ## <a name="add-and-remove-editorconfig-files"></a>新增及移除 EditorConfig 檔案
 
@@ -82,7 +82,7 @@ Visual Studio 中的編輯器支援 [EditorConfig 屬性](https://editorconfig.o
 
 1. 從功能表列中，選擇 [ **Project**  >  **加入新專案**] 或按**Ctrl** + **Shift** + **A**。
 
-   [新增項目]**** 對話方塊隨即開啟。
+   [ **加入新專案** ] 對話方塊隨即開啟。
 
 1. 在搜尋方塊中搜尋 **editorconfig**。
 
@@ -90,7 +90,7 @@ Visual Studio 中的編輯器支援 [EditorConfig 屬性](https://editorconfig.o
 
    ![Visual Studio 中的 EditorConfig 檔案項目範本](media/editorconfig-item-templates.png)
 
-1. 選取 **editorconfig 檔案 (預設值)** 範本，以新增已填入兩個核心 EditorConfig 選項 (縮排樣式和大小) 的 EditorConfig 檔案。 或者，選取 **editorconfig 檔案 (.NET)** 範本，以新增已填入兩個預設 [.NET 程式碼樣式、格式和命名慣例](../ide/editorconfig-code-style-settings-reference.md)的 EditorConfig 檔案。
+1. 選取 **editorconfig 檔案 (預設值)** 範本，以新增已填入兩個核心 EditorConfig 選項 (縮排樣式和大小) 的 EditorConfig 檔案。 或者，選取 **editorconfig 檔案 (.NET)** 範本，以新增已填入兩個預設 [.NET 程式碼樣式、格式和命名慣例](/dotnet/fundamentals/code-analysis/code-style-rule-options)的 EditorConfig 檔案。
 
    *.editorconfig* 檔案隨即出現在 [方案總管] 中，並在編輯器中開啟。
 
@@ -180,7 +180,7 @@ dir .editorconfig /s
 
 ## <a name="see-also"></a>另請參閱
 
-- [.NET 程式碼樣式慣例](../ide/editorconfig-code-style-settings-reference.md)
+- [.NET 程式碼樣式慣例](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [為語言服務支援 EditorConfig](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](https://editorconfig.org/)
 - [程式碼編輯器的功能](writing-code-in-the-code-and-text-editor.md)

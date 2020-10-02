@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d0b60c548e4e5d42a10e82754d045073f016f8b
-ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
+ms.openlocfilehash: b9aba6b9c4be882498535ab96020461f22722c10
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91621746"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659299"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Visual Studio 文件中的新功能歷程記錄
 
@@ -47,25 +47,25 @@ ms.locfileid: "91621746"
 
 **新文章**
 
-- [CA1310：指定 StringComparison 的正確性](../code-quality/ca1310.md) -新增 CA1310 的檔和 CA1307 的更新檔
-- [CA1837：使用 GetCurrentProcess，而不是 ( # A1。](../code-quality/ca1837.md) CA1837 的識別碼-檔
-- [CA1838：避免 `StringBuilder` P/invoke 的參數](../code-quality/ca1838.md) -新增 CA1838 的檔
-- [CA2008：不要在不傳遞 TaskScheduler 的情況下建立工作](../code-quality/ca2008.md) -新增 CA2008 的檔
-- [CA2249：請考慮使用 string。 Contains 取代 IndexOf](../code-quality/ca2249.md) -CA2249 的檔
-- [CA2361：確定包含資料集的自動產生類別 ReadXml ( # A1 未與不受信任的資料搭配使用](../code-quality/ca2361.md) -更多資料集/DataTable 規則
-- [CA2362：自動產生的可序列化類型中不安全的資料集或 DataTable 可能易受遠端程式碼執行攻擊](../code-quality/ca2362.md) -更多資料集/DataTable 規則
-- [IL3000：在發行為 IL3000 的單一檔案-新增檔時，避免使用存取元件檔案路徑](../code-quality/il3000.md)
-- [IL3001：在發行為單一檔案時，避免存取元件檔案路徑](../code-quality/il3001.md) -IL3001 的新增檔
+- [CA1310：指定 StringComparison 的正確性](/dotnet/fundamentals/code-analysis/quality-rules/ca1310) -新增 CA1310 的檔和 CA1307 的更新檔
+- [CA1837：使用 GetCurrentProcess，而不是 ( # A1。](/dotnet/fundamentals/code-analysis/quality-rules/ca1837) CA1837 的識別碼-檔
+- [CA1838：避免 `StringBuilder` P/invoke 的參數](/dotnet/fundamentals/code-analysis/quality-rules/ca1838) -新增 CA1838 的檔
+- [CA2008：不要在不傳遞 TaskScheduler 的情況下建立工作](/dotnet/fundamentals/code-analysis/quality-rules/ca2008) -新增 CA2008 的檔
+- [CA2249：請考慮使用 string。 Contains 取代 IndexOf](/dotnet/fundamentals/code-analysis/quality-rules/ca2249) -CA2249 的檔
+- [CA2361：確定包含資料集的自動產生類別 ReadXml ( # A1 未與不受信任的資料搭配使用](/dotnet/fundamentals/code-analysis/quality-rules/ca2361) -更多資料集/DataTable 規則
+- [CA2362：自動產生的可序列化類型中不安全的資料集或 DataTable 可能易受遠端程式碼執行攻擊](/dotnet/fundamentals/code-analysis/quality-rules/ca2362) -更多資料集/DataTable 規則
+- [IL3000：在發行為 IL3000 的單一檔案-新增檔時，避免使用存取元件檔案路徑](/dotnet/fundamentals/code-analysis/quality-rules/il3000)
+- [IL3001：在發行為單一檔案時，避免存取元件檔案路徑](/dotnet/fundamentals/code-analysis/quality-rules/il3001) -IL3001 的新增檔
 
 **已更新**
 
-- [CA1002：不公開泛型清單](../code-quality/ca1002.md) -新增預先配置-Api 介面區段
-- [CA1046：不要在參考](../code-quality/ca1046.md) 型別上多載運算子 equals-新增預先配置-Api 介面區段
-- [CA1307：為了清楚起見，請指定 StringComparison](../code-quality/ca1307.md) ，並新增 CA1307 的 CA1310 和更新檔檔
-- [CA1700：不要將列舉值命名 &#39;保留&#39;](../code-quality/ca1700.md) -新增預先配置-Api 介面區段
-- [CA1707：識別碼不應包含](../code-quality/ca1707.md) 底線-新增可配置的-Api 介面區段
-- [CA1822：將成員標記為靜態](../code-quality/ca1822.md) -新增預先配置-Api 介面區段
-- [CA2351：確定資料集 ReadXml ( # A1's 輸入是受信任](../code-quality/ca2351.md) -更多資料集/DataTable 規則
+- [CA1002：不公開泛型清單](/dotnet/fundamentals/code-analysis/quality-rules/ca1002) -新增預先配置-Api 介面區段
+- [CA1046：不要在參考](/dotnet/fundamentals/code-analysis/quality-rules/ca1046) 型別上多載運算子 equals-新增預先配置-Api 介面區段
+- [CA1307：為了清楚起見，請指定 StringComparison](/dotnet/fundamentals/code-analysis/quality-rules/ca1307) ，並新增 CA1307 的 CA1310 和更新檔檔
+- [CA1700：不要將列舉值命名 &#39;保留&#39;](/dotnet/fundamentals/code-analysis/quality-rules/ca1700) -新增預先配置-Api 介面區段
+- [CA1707：識別碼不應包含](/dotnet/fundamentals/code-analysis/quality-rules/ca1707) 底線-新增可配置的-Api 介面區段
+- [CA1822：將成員標記為靜態](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) -新增預先配置-Api 介面區段
+- [CA2351：確定資料集 ReadXml ( # A1's 輸入是受信任](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) -更多資料集/DataTable 規則
 - [安裝協力廠商分析器](../code-quality/install-roslyn-analyzers.md) -變更程式碼分析檔的結構和標題
 
 ### <a name="containers"></a>容器
@@ -73,7 +73,7 @@ ms.locfileid: "91621746"
 **更新的文章**
 
 - 使用 Visual Studio 16.7 發佈 UI 的 Visual Studio 容器工具更新將[ASP.NET 容器部署到容器](../containers/hosting-web-apps-in-docker.md)登錄
-- [開始使用 Visual Studio Kubernetes 工具](../containers/tutorial-kubernetes-tools.md) -Kubernetes 教學課程：新增移除步驟
+- [開始使用 Visual Studio Kubernetes 工具](../containers/bridge-to-kubernetes.md) -Kubernetes 教學課程：新增移除步驟
 
 ### <a name="deployment"></a>部署
 
@@ -131,25 +131,25 @@ ms.locfileid: "91621746"
 
 **新文章**
 
-- [CA1417：不要 `OutAttribute` 在 P/invoke 的字串參數上使用](../code-quality/ca1417.md) -新增 CA1417 的檔
-- [CA1805：不必要初始化。](../code-quality/ca1805.md) -新增適用于 CA1805 的檔
-- [CA1836：在可用時優先使用 IsEmpty 計數](../code-quality/ca1836.md) -新增 CA1836 的檔 (偏好 IsEmpty 超過計數) 
-- [CA2016：將 CancellationToken 參數轉寄至採用一](../code-quality/ca2016.md) 份檔 CA2016 的方法-將 CancellationToken 參數轉寄至採用一個
-- [CA2350：確定 DataTable. ReadXml ( # A1's 輸入是受信任](../code-quality/ca2350.md) 的-初始資料集/DataTable 還原序列化規則檔
-- [CA2351：確定資料集 ReadXml ( # A1's 輸入是受信任](../code-quality/ca2351.md) 的-初始資料集/DataTable 還原序列化規則檔
-- [CA2352：可序列化類型中 Unsafe 的資料集或 DataTable 可能很容易遭受遠端程式碼執行攻擊](../code-quality/ca2352.md) -初始資料集/DataTable 還原序列化規則檔
-- [CA2353： serializable 類型中不安全的資料集或 datatable](../code-quality/ca2353.md) -初始資料集/DataTable 還原序列化規則檔
-- [CA2354：還原序列化的物件圖形中不安全的資料集或 DataTable 可能易受遠端程式碼執行攻擊](../code-quality/ca2354.md) -初始資料集/DataTable 還原序列化規則檔
-- [CA2355：還原序列化的物件圖形中不安全的資料集或 datatable](../code-quality/ca2355.md) -初始資料集/DataTable 還原序列化規則檔
-- [CA2356： web 還原序列化物件圖形中不安全的資料集或 datatable 類型](../code-quality/ca2356.md) -初始資料集/DataTable 還原序列化規則檔
+- [CA1417：不要 `OutAttribute` 在 P/invoke 的字串參數上使用](/dotnet/fundamentals/code-analysis/quality-rules/ca1417) -新增 CA1417 的檔
+- [CA1805：不必要初始化。](/dotnet/fundamentals/code-analysis/quality-rules/ca1805) -新增適用于 CA1805 的檔
+- [CA1836：在可用時優先使用 IsEmpty 計數](/dotnet/fundamentals/code-analysis/quality-rules/ca1836) -新增 CA1836 的檔 (偏好 IsEmpty 超過計數) 
+- [CA2016：將 CancellationToken 參數轉寄至採用一](/dotnet/fundamentals/code-analysis/quality-rules/ca2016) 份檔 CA2016 的方法-將 CancellationToken 參數轉寄至採用一個
+- [CA2350：確定 DataTable. ReadXml ( # A1's 輸入是受信任](/dotnet/fundamentals/code-analysis/quality-rules/ca2350) 的-初始資料集/DataTable 還原序列化規則檔
+- [CA2351：確定資料集 ReadXml ( # A1's 輸入是受信任](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) 的-初始資料集/DataTable 還原序列化規則檔
+- [CA2352：可序列化類型中 Unsafe 的資料集或 DataTable 可能很容易遭受遠端程式碼執行攻擊](/dotnet/fundamentals/code-analysis/quality-rules/ca2352) -初始資料集/DataTable 還原序列化規則檔
+- [CA2353： serializable 類型中不安全的資料集或 datatable](/dotnet/fundamentals/code-analysis/quality-rules/ca2353) -初始資料集/DataTable 還原序列化規則檔
+- [CA2354：還原序列化的物件圖形中不安全的資料集或 DataTable 可能易受遠端程式碼執行攻擊](/dotnet/fundamentals/code-analysis/quality-rules/ca2354) -初始資料集/DataTable 還原序列化規則檔
+- [CA2355：還原序列化的物件圖形中不安全的資料集或 datatable](/dotnet/fundamentals/code-analysis/quality-rules/ca2355) -初始資料集/DataTable 還原序列化規則檔
+- [CA2356： web 還原序列化物件圖形中不安全的資料集或 datatable 類型](/dotnet/fundamentals/code-analysis/quality-rules/ca2356) -初始資料集/DataTable 還原序列化規則檔
 
 ### <a name="containers"></a>容器
 
 **新文章**
 
-- 使用 Kubernetes： yaml[設定以 Kubernetes-Local Process 設定本機進程](../containers/configure-local-process-with-kubernetes.md)
-- [使用本機進程搭配 Kubernetes (預覽) ](../containers/local-process-kubernetes.md) -開發人員空間遷移
-- [本機處理序與 Kubernetes 搭配使用的方式](../containers/overview-local-process-kubernetes.md)
+- 使用 Kubernetes： yaml[設定以 Kubernetes-Local Process 設定本機進程](../containers/configure-bridge-to-kubernetes.md)
+- [使用本機進程搭配 Kubernetes (預覽) ](../containers/bridge-to-kubernetes.md) -開發人員空間遷移
+- [本機處理序與 Kubernetes 搭配使用的方式](../containers/overview-bridge-to-kubernetes.md)
   - Kubernetes 的本機進程：新增路由區段
   - 開發人員空間遷移
 

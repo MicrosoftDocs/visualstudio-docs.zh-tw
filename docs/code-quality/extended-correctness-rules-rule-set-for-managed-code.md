@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6f8ceada30f66967de1a0c792d59275a851938e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00295a8485fa80d2aa6cf1977e014b191b28ba7e
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587650"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658603"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的擴充正確性規則規則集
 
@@ -25,29 +25,29 @@ Microsoft 擴充正確性規則規則集包含 [基本正確性規則](../code-q
 
 |規則|描述|
 |----------|-----------------|
-|[CA1001 具有](../code-quality/ca1001.md)|具有可處置欄位的類型應該為可處置|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|具有可處置欄位的類型應該為可處置|
 |[CA1009](../code-quality/ca1009.md)|事件處理常式必須正確宣告|
-|[CA1016](../code-quality/ca1016.md)|組件必須標記 AssemblyVersionAttribute|
-|[CA1033](../code-quality/ca1033.md)|介面方法應該要可以由子類型呼叫|
+|[CA1016](/dotnet/fundamentals/code-analysis/quality-rules/ca1016)|組件必須標記 AssemblyVersionAttribute|
+|[CA1033](/dotnet/fundamentals/code-analysis/quality-rules/ca1033)|介面方法應該要可以由子類型呼叫|
 |[CA1049](../code-quality/ca1049.md)|具有原生資源的類型應該要可呼叫 Dispose 方法明確釋放資源|
-|[CA1060](../code-quality/ca1060.md)|必須將 P/Invokes 移到 NativeMethods 類別|
-|[CA1061](../code-quality/ca1061.md)|不要隱藏基底類別方法|
-|[CA1063](../code-quality/ca1063.md)|必須正確實作 IDisposable|
-|[CA1065](../code-quality/ca1065.md)|不要在非預期的位置中引發例外狀況|
+|[CA1060](/dotnet/fundamentals/code-analysis/quality-rules/ca1060)|必須將 P/Invokes 移到 NativeMethods 類別|
+|[CA1061](/dotnet/fundamentals/code-analysis/quality-rules/ca1061)|不要隱藏基底類別方法|
+|[CA1063](/dotnet/fundamentals/code-analysis/quality-rules/ca1063)|必須正確實作 IDisposable|
+|[CA1065](/dotnet/fundamentals/code-analysis/quality-rules/ca1065)|不要在非預期的位置中引發例外狀況|
 |[CA1301](../code-quality/ca1301.md)|避免使用重複的快速鍵|
 |[CA1400](../code-quality/ca1400.md)|P/Invoke 進入點應該要存在|
-|[CA1401](../code-quality/ca1401.md)|P/Invokes 不應該為可見的|
+|[CA1401](/dotnet/fundamentals/code-analysis/quality-rules/ca1401)|P/Invokes 不應該為可見的|
 |[CA1403](../code-quality/ca1403.md)|自動配置類型不應該是 COM 可見|
 |[CA1404](../code-quality/ca1404.md)|必須在 P/Invoke 之後立即呼叫 GetLastError|
 |[CA1405](../code-quality/ca1405.md)|COM 可見類型的基底類型應該是 COM 可見|
 |[CA1410](../code-quality/ca1410.md)|應該和 COM 註冊方法對應|
 |[CA1415](../code-quality/ca1415.md)|P/Invokes 必須正確宣告|
-|[CA1821 必須](../code-quality/ca1821.md)|必須移除空的完成項|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|必須移除空的完成項|
 |[CA1900](../code-quality/ca1900.md)|實值類型欄位應該為可移植的|
 |[CA1901](../code-quality/ca1901.md)|P/Invoke 宣告應該為可移植的|
-|[CA2002](../code-quality/ca2002.md)|不要鎖定具有弱式識別的物件|
-|[CA2100 必須](../code-quality/ca2100.md)|必須檢閱 SQL 查詢中是否有安全性弱點|
-|[CA2101 必須](../code-quality/ca2101.md)|必須指定 P/Invoke 字串引數的封送處理|
+|[CA2002](/dotnet/fundamentals/code-analysis/quality-rules/ca2002)|不要鎖定具有弱式識別的物件|
+|[CA2100](/dotnet/fundamentals/code-analysis/quality-rules/ca2100)|必須檢閱 SQL 查詢中是否有安全性弱點|
+|[CA2101](/dotnet/fundamentals/code-analysis/quality-rules/ca2101)|必須指定 P/Invoke 字串引數的封送處理|
 |[CA2108](../code-quality/ca2108.md)|必須檢閱實值類型上的宣告式安全性|
 |[CA2111](../code-quality/ca2111.md)|指標不應該為可見的|
 |[CA2112](../code-quality/ca2112.md)|受保護類型不應該公開欄位|
@@ -69,32 +69,32 @@ Microsoft 擴充正確性規則規則集包含 [基本正確性規則](../code-q
 |[CA2146](../code-quality/ca2146.md)|類型至少必須和基底類型與介面一樣關鍵|
 |[CA2147](../code-quality/ca2147.md)|CA2147：透明方法不可以使用安全性判斷提示|
 |[CA2149](../code-quality/ca2149.md)|透明方法不可以呼叫機器碼|
-|[CA2200](../code-quality/ca2200.md)|必須重新擲回以保存堆疊詳細資料|
+|[CA2200](/dotnet/fundamentals/code-analysis/quality-rules/ca2200)|必須重新擲回以保存堆疊詳細資料|
 |[CA2202](../code-quality/ca2202.md)|不要多次處置物件的 Dispose 方法|
-|[CA2207](../code-quality/ca2207.md)|必須將實值類型的靜態欄位內嵌初始化|
+|[CA2207](/dotnet/fundamentals/code-analysis/quality-rules/ca2207)|必須將實值類型的靜態欄位內嵌初始化|
 |[CA2212](../code-quality/ca2212.md)|不要以 WebMethod 標記 Serviced 元件|
-|[CA2213](../code-quality/ca2213.md)|可處置的欄位應該受到處置|
-|[CA2214](../code-quality/ca2214.md)|不要呼叫建構函式中的可覆寫方法|
-|[CA2216](../code-quality/ca2216.md)|可處置的類型應該宣告完成項|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|可處置的欄位應該受到處置|
+|[CA2214](/dotnet/fundamentals/code-analysis/quality-rules/ca2214)|不要呼叫建構函式中的可覆寫方法|
+|[CA2216](/dotnet/fundamentals/code-analysis/quality-rules/ca2216)|可處置的類型應該宣告完成項|
 |[CA2220](../code-quality/ca2220.md)|完成項應該呼叫基底類別完成項|
-|[CA2229](../code-quality/ca2229.md)|必須實作序列化建構函式|
-|[CA2231](../code-quality/ca2231.md)|在覆寫 ValueType.Equals 上多載等號運算子|
+|[CA2229](/dotnet/fundamentals/code-analysis/quality-rules/ca2229)|必須實作序列化建構函式|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|在覆寫 ValueType.Equals 上多載等號運算子|
 |[CA2232](../code-quality/ca2232.md)|Windows Forms 進入點必須標記 STAThread|
-|[CA2235 必須](../code-quality/ca2235.md)|必須標記所有不可序列化的欄位|
+|[CA2235](/dotnet/fundamentals/code-analysis/quality-rules/ca2235)|必須標記所有不可序列化的欄位|
 |[CA2236 必須](../code-quality/ca2236.md)|必須呼叫 ISerializable 類型上的基底類別方法|
-|[CA2237 必須](../code-quality/ca2237.md)|ISerializable 類型必須標記 SerializableAttribute|
+|[CA2237](/dotnet/fundamentals/code-analysis/quality-rules/ca2237)|ISerializable 類型必須標記 SerializableAttribute|
 |[CA2238](../code-quality/ca2238.md)|必須正確實作序列化方法|
 |[CA2240 必須](../code-quality/ca2240.md)|必須正確實作 ISerializable|
-|[CA2241](../code-quality/ca2241.md)|必須提供格式化方法的正確引數|
-|[CA2242](../code-quality/ca2242.md)|必須正確測試 NaN|
-|[CA1008](../code-quality/ca1008.md)|列舉值中應該要有值為零的成員|
+|[CA2241](/dotnet/fundamentals/code-analysis/quality-rules/ca2241)|必須提供格式化方法的正確引數|
+|[CA2242](/dotnet/fundamentals/code-analysis/quality-rules/ca2242)|必須正確測試 NaN|
+|[CA1008](/dotnet/fundamentals/code-analysis/quality-rules/ca1008)|列舉值中應該要有值為零的成員|
 |[CA1013](../code-quality/ca1013.md)|多載加號和減號運算子時必須一併多載等號比較運算子|
-|[CA1303](../code-quality/ca1303.md)|不要將常值當作已當地語系化的參數傳遞|
-|[CA1308 必須](../code-quality/ca1308.md)|必須將字串標準化為大寫字母|
-|[CA1806](../code-quality/ca1806.md)|不要忽略方法的結果|
-|[CA1816](../code-quality/ca1816.md)|正確呼叫 GC.SuppressFinalize|
-|[CA1819](../code-quality/ca1819.md)|屬性不應該傳回陣列|
-|[CA1820 應該](../code-quality/ca1820.md)|應該使用字串長度測試空白字串|
+|[CA1303](/dotnet/fundamentals/code-analysis/quality-rules/ca1303)|不要將常值當作已當地語系化的參數傳遞|
+|[CA1308](/dotnet/fundamentals/code-analysis/quality-rules/ca1308)|必須將字串標準化為大寫字母|
+|[CA1806](/dotnet/fundamentals/code-analysis/quality-rules/ca1806)|不要忽略方法的結果|
+|[CA1816](/dotnet/fundamentals/code-analysis/quality-rules/ca1816)|正確呼叫 GC.SuppressFinalize|
+|[CA1819](/dotnet/fundamentals/code-analysis/quality-rules/ca1819)|屬性不應該傳回陣列|
+|[CA1820](/dotnet/fundamentals/code-analysis/quality-rules/ca1820)|應該使用字串長度測試空白字串|
 |[CA1903](../code-quality/ca1903.md)|只使用來自目標架構的 API|
 |[CA2004](../code-quality/ca2004.md)|必須移除對 GC.KeepAlive 的呼叫|
 |[CA2006](../code-quality/ca2006.md)|必須使用 SafeHandle 封裝原生資源|
@@ -103,23 +103,23 @@ Microsoft 擴充正確性規則規則集包含 [基本正確性規則](../code-q
 |[CA2105](../code-quality/ca2105.md)|陣列欄位不應該為唯讀|
 |[CA2106 必須](../code-quality/ca2106.md)|必須保護判斷提示|
 |[CA2115](../code-quality/ca2115.md)|使用原生資源時必須呼叫 GC.KeepAlive|
-|[CA2119](../code-quality/ca2119.md)|密封方法以滿足私用介面的要求|
+|[CA2119](/dotnet/fundamentals/code-analysis/quality-rules/ca2119)|密封方法以滿足私用介面的要求|
 |[CA2120](../code-quality/ca2120.md)|必須保護序列化建構函式|
 |[CA2121](../code-quality/ca2121.md)|靜態建構函式應該為私用的|
 |[CA2130](../code-quality/ca2130.md)|安全性關鍵常數應該是透明的|
 |[CA2205 必須](../code-quality/ca2205.md)|必須使用 Win32 API 的受控對應項|
-|[CA2215](../code-quality/ca2215.md)|Dispose 方法應該呼叫基底類別處置|
+|[CA2215](/dotnet/fundamentals/code-analysis/quality-rules/ca2215)|Dispose 方法應該呼叫基底類別處置|
 |[CA2221](../code-quality/ca2221.md)|Finalizer 方法應該為 protected|
 |[CA2222](../code-quality/ca2222.md)|不要降低繼承成員的可視性|
 |[CA2223](../code-quality/ca2223.md)|成員不應該只有在傳回類型上不同|
 |[CA2224](../code-quality/ca2224.md)|多載等號比較運算子時必須一併覆寫 Equals|
-|[CA2226](../code-quality/ca2226.md)|運算子應該有對稱的多載|
-|[CA2227](../code-quality/ca2227.md)|集合屬性應該為唯讀|
+|[CA2226](/dotnet/fundamentals/code-analysis/quality-rules/ca2226)|運算子應該有對稱的多載|
+|[CA2227](/dotnet/fundamentals/code-analysis/quality-rules/ca2227)|集合屬性應該為唯讀|
 |[CA2239 必須](../code-quality/ca2239.md)|必須為選擇性欄位提供還原序列化方法|
-|[CA1032 必須](../code-quality/ca1032.md)|必須實作標準例外狀況建構函式|
-|[CA1054](../code-quality/ca1054.md)|URI 參數不應該為字串|
-|[CA1055](../code-quality/ca1055.md)|URI 傳回值不應該為字串|
-|[CA1056](../code-quality/ca1056.md)|URI 屬性不應該為字串|
+|[CA1032](/dotnet/fundamentals/code-analysis/quality-rules/ca1032)|必須實作標準例外狀況建構函式|
+|[CA1054](/dotnet/fundamentals/code-analysis/quality-rules/ca1054)|URI 參數不應該為字串|
+|[CA1055](/dotnet/fundamentals/code-analysis/quality-rules/ca1055)|URI 傳回值不應該為字串|
+|[CA1056](/dotnet/fundamentals/code-analysis/quality-rules/ca1056)|URI 屬性不應該為字串|
 |[CA1057](../code-quality/ca1057.md)|字串 URI 多載呼叫 System.Uri 多載|
 |[CA1402](../code-quality/ca1402.md)|避免在 COM 可見介面中多載|
 |[CA1406](../code-quality/ca1406.md)|避免對 Visual Basic 6 用戶端使用 int64 引數|
@@ -132,7 +132,7 @@ Microsoft 擴充正確性規則規則集包含 [基本正確性規則](../code-q
 |[CA1414](../code-quality/ca1414.md)|以 MarshalAs 標記布林 P/Invoke 引數|
 |[CA1600](../code-quality/ca1600.md)|不要使用 Idle 處理序優先順序|
 |[CA1601](../code-quality/ca1601.md)|不要使用會妨礙電源狀態變更的計時器|
-|[CA1824](../code-quality/ca1824.md)|組件必須標記 NeutralResourcesLanguageAttribute|
+|[CA1824](/dotnet/fundamentals/code-analysis/quality-rules/ca1824)|組件必須標記 NeutralResourcesLanguageAttribute|
 |[CA2001](../code-quality/ca2001.md)|避免呼叫有問題的方法|
 |[CA2003](../code-quality/ca2003.md)|不要將 Fiber 視為執行緒|
 |[CA2135](../code-quality/ca2135.md)|層級 2 組件不應該包含 LinkDemand|
@@ -143,13 +143,13 @@ Microsoft 擴充正確性規則規則集包含 [基本正確性規則](../code-q
 |[CA2144](../code-quality/ca2144.md)|透明程式碼不可以從位元組陣列載入組件|
 |[CA2145](../code-quality/ca2145.md)|透明方法不可以使用 SuppressUnmanagedCodeSecurityAttribute 來裝飾|
 |[CA2204](../code-quality/ca2204.md)|常值必須使用正確的拼字|
-|[CA2211](../code-quality/ca2211.md)|非常數欄位不應該為可見的|
-|[CA2217](../code-quality/ca2217.md)|不要以 FlagsAttribute 標記列舉|
+|[CA2211](/dotnet/fundamentals/code-analysis/quality-rules/ca2211)|非常數欄位不應該為可見的|
+|[CA2217](/dotnet/fundamentals/code-analysis/quality-rules/ca2217)|不要以 FlagsAttribute 標記列舉|
 |[CA2218](../code-quality/ca2218.md)|覆寫 Equals 時必須一併覆寫 GetHashCode|
-|[CA2219](../code-quality/ca2219.md)|不要在 exception 子句中引發例外狀況|
-|[CA2225](../code-quality/ca2225.md)|運算子多載必須有具名的替代方法|
+|[CA2219](/dotnet/fundamentals/code-analysis/quality-rules/ca2219)|不要在 exception 子句中引發例外狀況|
+|[CA2225](/dotnet/fundamentals/code-analysis/quality-rules/ca2225)|運算子多載必須有具名的替代方法|
 |[CA2228](../code-quality/ca2228.md)|不要使用尚未發行版本所支援的格式建置資源|
 |[CA2230](../code-quality/ca2230.md)|必須使用 params 作為變數引數|
 |[CA2233 運算](../code-quality/ca2233.md)|運算不應該發生溢位|
-|[CA2234 必須](../code-quality/ca2234.md)|必須傳遞 System.Uri 物件而非字串|
-|[CA2243](../code-quality/ca2243.md)|屬性字串常值必須正確剖析|
+|[CA2234](/dotnet/fundamentals/code-analysis/quality-rules/ca2234)|必須傳遞 System.Uri 物件而非字串|
+|[CA2243](/dotnet/fundamentals/code-analysis/quality-rules/ca2243)|屬性字串常值必須正確剖析|
