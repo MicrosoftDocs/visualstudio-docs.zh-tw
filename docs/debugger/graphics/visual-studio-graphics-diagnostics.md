@@ -1,5 +1,6 @@
 ---
 title: 圖形診斷 |Microsoft Docs
+description: Visual Studio 圖形診斷的簡介。
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,15 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e69d88bb5764836d82232cec26606009eaf694d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 829c51c0e2020a154dc485dbfc4db25e0b399e57
+ms.sourcegitcommit: a1cb4e2025045c2ad79167645c4c0f33b94b1152
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187743"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91671375"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷
-Visual Studio*圖形診斷* 是一組工具，可用於記錄和分析 Direct3D 應用程式中的轉譯和效能問題。 圖形診斷可以用於 Windows 電腦、Windows 裝置模擬器或者遠端電腦或裝置上本機執行的應用程式。
+>[!NOTE]
+> Visual Studio 針對 DirectX 12 遊戲建議 Windows 上的 PIX。 [Windows 上的 PIX](https://aka.ms/PIXonWindows) 是可完全支援 DirectX 12 的效能調整和偵錯工具。 請參閱這裡的[詳細資訊](visual-studio-graphics-diagnostics-directx-12.md)或[下載](https://aka.ms/downloadPIX)。
+
+Visual Studio 圖形診斷** 是一組工具，用來記錄並分析 Direct3D 應用程式中的轉譯和效能問題。 圖形診斷可以用於 Windows 電腦、Windows 裝置模擬器或者遠端電腦或裝置上本機執行的應用程式。
 
  圖形診斷工作流程會開始擷取您應用程式如何使用 Direct3D 的一筆記錄 (執行時為即時)，以立即分析、共用或儲存其行為以供稍後使用。 您可以從 Visual Studio 或使用命令列捕捉工具 **dxcap.exe**，手動起始和控制 Capture 會話。 您也可以使用圖形診斷 capture Api，以程式設計方式起始和控制 Capture 會話。
 
@@ -64,7 +68,8 @@ Visual Studio*圖形診斷* 是一組工具，可用於記錄和分析 Direct3D 
 
 ## <a name="related-sections"></a>相關章節
 
-| 標題 | 說明 |
+| 標題 | 描述 |
 | - | - |
 | [偵錯工具功能導覽](../debugger-feature-tour.md) | 介紹 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的偵錯功能。 |
 | [DirectX 圖形與遊戲](/windows/win32/directx) | 提供討論 DirectX 圖形技術的文章。 |
+| [Visual Studio 中的 DirectX 12 支援](visual-studio-graphics-diagnostics-directx-12.md) | 瞭解 Visual Studio 中的 DirectX 12 支援 |
