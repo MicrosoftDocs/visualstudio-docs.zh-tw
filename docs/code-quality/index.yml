@@ -10,13 +10,43 @@ metadata:
   author: Mikejo5000
   ms.author: mikejo
   ms.date: 10/15/2019
-  ms.openlocfilehash: c954c2bdf5b202da96cffc4dfa22e94b75a7d93a
-  ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+  ms.openlocfilehash: 1da6ea6d88e15aaa400eb61509dc26a2a6355b58
+  ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/09/2020
-  ms.locfileid: "89599605"
+  ms.lasthandoff: 09/30/2020
+  ms.locfileid: "91604607"
 landingContent:
+- title: .NET 程式碼分析
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 分析 .NET 程式碼
+      url: roslyn-analyzers-overview.md
+    - text: .NET 程式碼品質分析
+      url: /dotnet/fundamentals/productivity/code-analysis#code-quality-analysis
+    - text: .NET 程式碼樣式分析
+      url: /dotnet/fundamentals/productivity/code-analysis#code-style-analysis
+  - linkListType: concept
+    links:
+    - text: 常見問題集
+      url: analyzers-faq.md
+  - linkListType: how-to-guide
+    links:
+    - text: 設定程式碼分析
+      url: use-roslyn-analyzers.md
+  - linkListType: reference
+    links:
+    - text: .NET 程式碼品質規則
+      url: /dotnet/fundamentals/productivity/code-analysis/quality-rules/index
+    - text: .NET 程式碼樣式規則
+      url: /dotnet/fundamentals/productivity/code-analysis/style-rules/index
+- title: 受控程式碼複雜度
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: 程式碼度量
+      url: code-metrics-values.md
 - title: 分析 C 和 C++ 程式碼
   linkLists:
   - linkListType: overview
@@ -27,35 +57,3 @@ landingContent:
     links:
     - text: C++ 程式碼分析警告
       url: /cpp/code-quality/code-analysis-for-c-cpp-warnings
-- title: .NET 程式碼品質分析
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: 來源分析
-      url: roslyn-analyzers-overview.md
-    - text: 舊版分析
-      url: static-code-analysis-for-managed-code-overview.md
-  - linkListType: concept
-    links:
-    - text: 常見問題集
-      url: analyzers-faq.md
-  - linkListType: how-to-guide
-    links:
-    - text: 設定程式碼品質分析
-      url: install-fxcop-analyzers.md
-  - linkListType: reference
-    links:
-    - text: .NET 程式碼品質規則
-      url: code-analysis-for-managed-code-warnings.md
-- title: .NET 程式碼樣式分析
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 設定程式碼樣式分析
-      url: ../ide/create-portable-custom-editor-options.md
-- title: 受控程式碼複雜度
-  linkLists:
-  - linkListType: concept
-    links:
-    - text: 程式碼度量
-      url: code-metrics-values.md
