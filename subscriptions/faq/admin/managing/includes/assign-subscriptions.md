@@ -6,13 +6,13 @@ ms.topic: include
 ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 3/3/2020
-ms.openlocfilehash: 192cb7118a9f431ce2e7a9396b67a919fad10bb9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.date: 09/30/2020
+ms.openlocfilehash: add0bac2a9e7eb053c183d66fcee17c8133bb921
+ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84200364"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91640994"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>我要如何指派 Visual Studio 訂閱？
 
@@ -39,4 +39,12 @@ ms.locfileid: "84200364"
 4. 返回 [manage.visualstudio.com](https://manage.visualstudio.com)，選取 [大量新增]，然後上傳您已儲存的 Excel 範本複本。
 5. 上傳成功時，您會看到確認頁面，而您的訂閱者清單會填入您的新訂閱者。 您的訂閱者將會收到一封電子郵件，並可立即開始使用其 Visual Studio 訂閱 (您的訂閱者不需要啟用)。
 
-若要深入了解如何快速且輕鬆地指派訂閱，請參閱[在 Visual Studio 訂閱管理員入口網站中指派訂閱](https://docs.microsoft.com/visualstudio/subscriptions/assign-license#individual-assignments) \(部分機器翻譯\)。
+若要深入了解如何快速且輕鬆地指派訂用帳戶，請參閱[在 Visual Studio 訂閱管理員入口網站中指派訂用帳戶](https://docs.microsoft.com/visualstudio/subscriptions/assign-license#add-a-single-subscriber) \(部分機器翻譯\)。  深入了解如何[管理含 GitHub Enterprise 訂用帳戶的 Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/assign-github) \(部分機器翻譯\)。 
+
+## <a name="what-is-the-github-enterprise-setup-process"></a>什麼是 GitHub Enterprise 設定程序？ 
+
+GitHub Enterprise 是與 Visual Studio 訂用帳戶分開設定及管理的。 在購買含 GitHub Enterprise 的 Visual Studio 之後，會在於 manage.visualstudio.com 中建立合約時以平行 (但分開) 的方式起始 GitHub Enterprise 帳戶設定程序。 建立此 GitHub Enterprise 帳戶可能需要一些時間。  
+
+在您的公司設定 GitHub Enterprise 帳戶之後，已獲指派含 GitHub Enterprise 訂用帳戶之 Visual Studio 的訂閱者將會收到來自 GitHub 的電子郵件，通知他們其 Visual Studio 訂用帳戶已連結。 當訂閱者收到這封電子郵件之後，他們就可以與其 GitHub 組織系統管理員聯繫，以接收適當組織的邀請。 
+
+深入了解如何[管理含 GitHub Enterprise 訂用帳戶的 Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/assign-github) \(部分機器翻譯\)。 如需 GitHub Enterprise 設定程序的其他詳細資料，請參閱[訂閱者文件](https://docs.microsoft.com/visualstudio/subscriptions/access-github) \(部分機器翻譯\)。 
