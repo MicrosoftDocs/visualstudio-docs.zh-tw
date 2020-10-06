@@ -10,12 +10,12 @@ metadata:
   author: jillre
   ms.author: jillfra
   ms.date: 10/10/2019
-  ms.openlocfilehash: c515710fcaf45b726a80c9986d8785f8458ca59a
-  ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+  ms.openlocfilehash: 25f0b8538b17b3826a66febf34ccafe38a7996f5
+  ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/17/2020
-  ms.locfileid: "90713525"
+  ms.lasthandoff: 10/02/2020
+  ms.locfileid: "91659260"
 landingContent:
 - title: 了解 XAML
   linkLists:
@@ -31,6 +31,8 @@ landingContent:
       url: designing-xaml-in-visual-studio.md
     - text: 關於 XAML 設計工具
       url: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
+    - text: XAML 設計階段資料
+      url: xaml-designtime-data.md
 - title: 針對 XAML 進行偵錯
   linkLists:
   - linkListType: overview
