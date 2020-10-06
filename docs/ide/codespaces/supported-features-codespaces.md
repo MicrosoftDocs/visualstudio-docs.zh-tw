@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: c86fc99fe6bd2ae17b6ce222b04549db07d7687e
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: eee21ca84acdcf5bbf774232d8d23ceda954b730
+ms.sourcegitcommit: 503f82045b9236d457b79712cd71405d4a62a53d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862166"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749501"
 ---
 # <a name="supported-visual-studio-features-preview"></a>支援 (Preview 的 Visual Studio 功能) 
 
@@ -42,15 +42,15 @@ Visual Studio 在連接至 codespace 時，提供豐富的開發體驗。 您可
 * 語法醒目提示
 * 快速資訊 *
 * HTML、CSS、Razor 編輯器 *-部分支援。
-* JavaScript 編輯器 *-部分支援。
+* JavaScript 和 TypeScript 編輯器 *-部分支援。
 
 尚未提供：
 
-* IntelliSense *-某些自動完成/成員清單篩選器無法使用。 在 [監看式] 視窗中的未匯入類型和 intellisense 的完成尚未提供。
-* 程式碼流覽 *-支援的大部分命令，特別是移至基底，並在檔案中尋找尚未支援的路徑規格。
+* IntelliSense *-某些自動完成/成員清單篩選器無法使用。 在 [監看式] 視窗中的未匯入類型和 IntelliSense 的完成尚未提供。
+* 程式碼流覽 *-支援的大部分命令。 尚不支援移至基底，並在檔案中尋找路徑規格。
 * 快速資訊 *-不支援快速諮詢中的顏色標示。
-* HTML、CSS、Razor 編輯器 *-診斷、intellisense 完成、快速資訊、智慧縮排。 目前不支援語義顏色標示、流覽命令等等。
-* JavaScript 編輯器 *-腳本區塊 (例如，HTML 和 CSHTML 檔案中的 JavaScript 內容) 和語義醒目提示尚不受支援。 燈泡功能和 linting 的已知問題。
+* HTML、CSS、Razor 編輯器 *-診斷、IntelliSense 完成、快速資訊、智慧縮排。 目前不支援語義顏色標示、流覽命令等等。
+* JavaScript 和 TypeScript 編輯器 *-腳本區塊 (例如，HTML 和 CSHTML 檔案中的 JavaScript 內容) 和語義醒目提示尚未受到支援。 燈泡功能和 linting 的已知問題。
 * CMake 目標視圖
 * CMake 專案設定編輯器
 * Ctrl + F7 (編譯檔) 
@@ -65,14 +65,14 @@ Visual Studio 在連接至 codespace 時，提供豐富的開發體驗。 您可
 * 專案範本與項目範本
 * .NET Core 和 ASP.NET Core 專案
 * C + + 主控台應用程式-支援 CMake 和 .vcxproj
-* 以 Linux 為目標的 c + + 應用程式，大多支援非 GUI。 能夠安裝和布建 WSL、平臺特定的 intellisense 和組建。
+* 以 Linux 為目標的 c + + 應用程式，大多支援非 GUI。 能夠安裝和布建 WSL、平臺特定的 Intellisense 和組建。
 * 專案檔案編輯-大多支援。 遺漏一些完成、語法反白顯示和先進的編輯功能。
 * GitHub 帳戶-可以用來建立和連線至 Codespaces，並存取 GitHub 上的帳戶可用的資源。
 * Azure CLI-不會共用已登入的 Visual Studio 身分識別或 keychain 帳戶。 不支援以瀏覽器為基礎的登入，但您可以使用下列程式在整合式終端機中進行驗證： `az login --use-device-code` 。
 
 尚未提供：
 
-* UI 設計工具-WinForms 和 WPF 設計工具
+* UI 設計工具-WinForms、WPF 和資源設計工具
 * Visual Basic 和 F # 專案
 * .NET Framework 目標專案
 * Docker Compose 專案
