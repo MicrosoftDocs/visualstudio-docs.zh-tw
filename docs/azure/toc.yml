@@ -5,13 +5,13 @@
   expanded: true
   items:
     - name: 將 ASP.NET Core 應用程式部署到 Azure
-      href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1
+      href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1&preserve-view=true
     - name: 將 .NET 待辦事項清單 Web 應用程式部署到 Azure
-      href: /dotnet/azure/dotnet-quickstart-vs?view=azure-dotnet
+      href: /dotnet/azure/dotnet-quickstart-vs?view=azure-dotnet&preserve-view=true
     - name: 搭配 ASP.NET Core 使用 Visual Studio 與 Git 持續部署至 Azure
-      href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1
+      href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1&preserve-view=true
     - name: 使用 Azure Pipelines 持續部署到 Azure
-      href: /azure/devops/pipelines/get-started-yaml?view=vsts
+      href: /azure/devops/pipelines/get-started-yaml?view=vsts&preserve-view=true
     - name: 將 ASP.NET Web 應用程式部署到 Azure VM
       href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
 - name: 連線到 Azure 服務

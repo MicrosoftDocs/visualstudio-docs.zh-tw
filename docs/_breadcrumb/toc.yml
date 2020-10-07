@@ -10,7 +10,7 @@
           tocHref: /visualstudio/ide/
           topicHref: /visualstudio/ide/
           items:
-            - name: 程式碼品質
+            - name: 程式碼分析
               tocHref: /visualstudio/code-quality/
               topicHref: /visualstudio/code-quality/analyzing-application-quality-by-using-code-analysis-tools
             - name: 跨平台
