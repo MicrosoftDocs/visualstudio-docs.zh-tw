@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1269049adad3fe2d26caa79721452f7f313e60d5
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: fed525f62466d096aa7868cc57c7fd7c75bf46f8
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739898"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781023"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>管理 Visual Studio 中的 npm 套件
 
@@ -40,7 +40,7 @@ Visual Studio 與 npm 的整合會根據您的專案類型而有所不同。
 
 這些功能會一起運作，並與專案系統和專案中的 package.json** 檔案同步處理。
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>必要條件
 
 您需要安裝 **Node.js 開發** 工作負載及 Node.js 執行時間，才能將 npm 支援新增至您的專案。 如需詳細步驟，請參閱 [建立 Node.js 專案](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json)。
 
@@ -126,7 +126,7 @@ npm 套件會顯示在 [方案總管] 中。 **npm** 節點下的項目會模擬
 * [使用 package.js安裝套件](#npmInstallPackage)
 
 >[!NOTE]
-> 針對 ASP.NET Core 專案，您也可以使用連結 [庫管理員](/aspnet/core/client-side/libman/?view=aspnetcore-3.1) 或 yarn 而不是 npm 來安裝用戶端 JAVASCRIPT 和 CSS 檔案。
+> 針對 ASP.NET Core 專案，您也可以使用連結 [庫管理員](/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) 或 yarn 而不是 npm 來安裝用戶端 JAVASCRIPT 和 CSS 檔案。
 
 ### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a> 將 npm 支援新增至專案 (ASP.NET Core) 
 
@@ -164,7 +164,7 @@ npm 套件會顯示在 [方案總管] 中。 **npm** 節點下的項目會模擬
 
 *package.js*中的 IntelliSense 可協助您選取特定版本的 npm 套件。
 
-:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="選取 npm 套件版本" border="true":::
+:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="從 [方案總管] 安裝新的 npm 套件" border="true":::
 
 當您儲存檔案時，Visual Studio 會在方案總管的 [相依性 **/Npm]** 節點下加入封裝。 如果您沒有看到節點，請以滑鼠右鍵按一下 **package.js** ，然後選擇 [ **還原套件**]。
 

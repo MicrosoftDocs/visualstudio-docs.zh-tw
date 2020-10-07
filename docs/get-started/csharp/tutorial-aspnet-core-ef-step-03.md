@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 42bc0442dc5901f92fc8a83b7af41c1fc42f4be4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d01d991daf5c24c02b8cd4976663a9399b251cc
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250801"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780958"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>步驟3：使用 Entity Framework 處理資料
 
@@ -79,7 +79,7 @@ services.AddDbContext<AppDbContext>(options =>
 
 您會發現 `AppDbContext` 連接字串已經新增到專案的 *appsettings.json* 檔案。
 
-如果您現在執行應用程式，它可能會失敗，因為還沒建立資料庫。 藉由[新增一些程式碼到 Program.cs](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio#update-main)，您可以將應用程式設定為在需要時會自動建立資料庫：
+如果您現在執行應用程式，它可能會失敗，因為還沒建立資料庫。 藉由[新增一些程式碼到 Program.cs](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true#update-main)，您可以將應用程式設定為在需要時會自動建立資料庫：
 
 ```csharp
 public static void Main(string[] args)
@@ -135,5 +135,5 @@ using WebApplication1.Models;
 
 ## <a name="see-also"></a>另請參閱
 
-- [ASP.NET Core 中的 Entity Framework Core Razor Pages](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
-- [ASP.NET Core Razor 頁面與 EF Core](/aspnet/core/data/?view=aspnetcore-2.1)
+- [ASP.NET Core 中的 Entity Framework Core Razor Pages](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true)
+- [ASP.NET Core Razor 頁面與 EF Core](/aspnet/core/data/?view=aspnetcore-2.1&preserve-view=true)

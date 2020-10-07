@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87f06746901baaaf14f91032f8968a0d99fc20c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e02900c96991a402d7ea7b789a47f8f2dea447c3
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595445"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781015"
 ---
 # <a name="secure-applications"></a>保護應用程式
 
@@ -43,6 +43,6 @@ ms.locfileid: "75595445"
 - [.NET 的安全性](/dotnet/standard/security/index)
 - [Azure 安全性](/azure/security/)
 - [Windows 10 行動裝置版安全性指南](/windows/security/threat-protection/windows-10-mobile-security-guide)
-- [Apache Cordova 平台安全性功能](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)
-- [ASP.NET Core 安全性](/aspnet/core/security/?view=aspnetcore-2.1)
+- [Apache Cordova 平台安全性功能](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017&preserve-view=true)
+- [ASP.NET Core 安全性](/aspnet/core/security/?view=aspnetcore-2.1&preserve-view=true)
 - [Windows Forms 安全性](/dotnet/framework/winforms/windows-forms-security)

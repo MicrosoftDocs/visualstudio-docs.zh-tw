@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: de0e3cc4e563f7082b91b904a110996cdb85b3b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1fdfbd3bf1f0969061365cd592f6054c7116b67
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247981"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780871"
 ---
 # <a name="container-tools-launch-settings"></a>容器工具啟動設定
 
-在 ASP.NET Core 專案的 [ *屬性* ] 資料夾中，您可以找到檔案上的 launchSettings.js，其中包含的設定可控制您的 web 應用程式在開發電腦上的啟動方式。 如需有關如何在 ASP.NET 開發中使用此檔案的詳細資訊，請參閱 [在 ASP.NET Core 中使用多個環境](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2)。 在 *launchSettings.js*中， **Docker** 區段中的設定與 Visual Studio 處理容器化應用程式的方式有關。
+在 ASP.NET Core 專案的 [ *屬性* ] 資料夾中，您可以找到檔案上的 launchSettings.js，其中包含的設定可控制您的 web 應用程式在開發電腦上的啟動方式。 如需有關如何在 ASP.NET 開發中使用此檔案的詳細資訊，請參閱 [在 ASP.NET Core 中使用多個環境](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2&preserve-view=true)。 在 *launchSettings.js*中， **Docker** 區段中的設定與 Visual Studio 處理容器化應用程式的方式有關。
 
 ::: moniker range="vs-2017"
 

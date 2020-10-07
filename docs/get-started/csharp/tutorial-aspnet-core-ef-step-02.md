@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6852ac1148c9a8001476eb9bb68e9e97d66e3eed
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77580082"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780993"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>步驟2：建立您的第一個 ASP.NET Core web 應用程式
 
@@ -33,7 +33,7 @@ _觀看此影片並跟著操作，建立您的第一個 ASP.NET Core 應用程�
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>啟動 Visual Studio 2019 並建立新專案
 
-啟動 Visual Studio 2019 並按一下 [建立新專案]****。 選擇 [ASP.NET Core Web 應用程式]****。 選擇 [Web 應用程式]**** 範本，保留預設的專案名稱和位置。 在具有 ASP.NET Core 版本的下拉式清單中，選擇 **ASP.NET Core 2.1** 或 **ASP.NET Core 2.2**。 按一下 [建立]  。 如需詳細指示，請參閱[本教學課程系列的上一段影片](tutorial-aspnet-core-ef-step-01.md)。
+啟動 Visual Studio 2019 並按一下 [建立新專案]****。 選擇 [ASP.NET Core Web 應用程式]****。 選擇 [Web 應用程式]**** 範本，保留預設的專案名稱和位置。 在具有 ASP.NET Core 版本的下拉式清單中，選擇 **ASP.NET Core 2.1** 或 **ASP.NET Core 2.2**。 按一下 [建立]。 如需詳細指示，請參閱[本教學課程系列的上一段影片](tutorial-aspnet-core-ef-step-01.md)。
 
 ![Visual Studio 2019 選擇 ASP.NET Core 專案選項](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
@@ -50,7 +50,7 @@ _觀看此影片並跟著操作，建立您的第一個 ASP.NET Core 應用程�
 
 *wwwroot* 資料夾存放的靜態檔案，可從 Web 應用程式公開存取。 它通常存放樣式表、用戶端指令碼檔案和影像。
 
-### <a name="pages"></a>Pages
+### <a name="pages"></a>頁面
 
 *Pages* 資料夾存放網站的 Razor 頁面。 預設範本提供數個頁面，包括應用程式首頁的 *Index.cshtml* 頁面，以及 [關於]、[連絡人] 等等。
 
@@ -100,7 +100,7 @@ public void OnGet()
 
 在 `OnGet` 方法中新增中斷點，我們會在此方法中將值指派給 `Time`，並在此時開始偵錯應用程式。
 
-執行會在此行停止，您可以看到 `DateTime.Today` 包含日期，但時間一直停留在午夜，因為它不包含時間資料。 
+執行會在此行停止，您可以看到 `DateTime.Today` 包含日期，但時間一直停留在午夜，因為它不包含時間資料。
 
 ![瀏覽器中的 Visual Studio 2019 ASP.NET Core 專案](media/vs-2019/vs2019-breakpoint.png)
 
@@ -128,4 +128,4 @@ public void OnGet()
 
 ## <a name="see-also"></a>另請參閱
 
-- [教學課程：使用 ASP.NET Core 建立 Razor Pages web 應用程式](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [教學課程：使用 ASP.NET Core 建立 Razor Pages web 應用程式](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)

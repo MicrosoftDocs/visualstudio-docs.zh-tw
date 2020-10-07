@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abd6d73c7b312cf00062307370ba2f7aebe6694e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a3e1c43e9813bce664a63f3675b0fed6e14e3c7
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768622"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781005"
 ---
 # <a name="use-the-task-list"></a>使用工作清單
 
@@ -65,7 +65,7 @@ ms.locfileid: "85768622"
 因為 `TODO` 是預先定義的語彙基元，所以此註解會顯示為清單中的 `TODO` 工作。
 
 > [!NOTE]
-> 只有 C/C++、C# 與 VB 語言才能使用預設語彙基元。 針對其他語言，請參閱＜自訂語彙基元＞**** 一節。
+> 只有 C/C++、C# 與 VB 語言才能使用預設語彙基元。
 
 ### <a name="custom-tokens"></a>自訂權杖
 
