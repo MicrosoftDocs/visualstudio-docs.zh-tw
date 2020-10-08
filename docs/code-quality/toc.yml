@@ -14,7 +14,20 @@
             - name: 總覽
               href: use-roslyn-analyzers.md
             - name: 程式碼品質
-              href: /dotnet/fundamentals/code-analysis/code-quality-rule-options
+              items:
+                - name: 程式碼品質選項
+                  href: /dotnet/fundamentals/code-analysis/code-quality-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: 針對程式碼品質使用 EditorConfig 檔案
+                  href: /dotnet/fundamentals/code-analysis/configuration-files?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+            - name: 程式碼樣式
+              items:
+                - name: 程式碼樣式喜好設定
+                  href: ../ide/code-styles-and-code-cleanup.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: 使用 EditorConfig 檔案作為程式碼樣式
+                  displayName: Configure code style analyzers
+                  href: ../ide/create-portable-custom-editor-options.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: 規則選項
+                  href: /dotnet/fundamentals/code-analysis/code-style-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
             - name: 設定即時程式碼分析
               href: configure-live-code-analysis-scope-managed-code.md
             - name: 手動執行程式碼分析
@@ -31,7 +44,7 @@
           href: analyzers-faq.md
     - name: 舊版分析
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: 'static code analysis, binary analysis'
           href: static-code-analysis-for-managed-code-overview.md
         - name: 舊版分析逐步解說
@@ -76,7 +89,7 @@
                   href: fxcop-analyzers-faq.md
         - name: 規則集
           items:
-            - name: 概觀
+            - name: 總覽
               href: using-rule-sets-to-group-code-analysis-rules.md
             - name: 設定規則集
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
@@ -434,3 +447,11 @@
           href: how-to-generate-code-metrics-data.md
         - name: 使用程式碼度量資料
           href: working-with-code-metrics-data.md
+- name: C++ 程式碼分析
+  items:
+    - name: 分析 C 和 C++ 程式碼
+      href: /cpp/code-quality/code-analysis-for-c-cpp-overview
+    - name: EditorConfig 格式設定慣例
+      href: ../ide/cpp-editorconfig-properties.md
+    - name: C++ 程式碼分析警告
+      href: /cpp/code-quality/code-analysis-for-c-cpp-warnings

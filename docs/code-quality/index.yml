@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-title: Visual Studio 中的程式碼分析
+title: 在 Visual Studio 中分析程式碼
 summary: Visual Studio 提供多種不同工具來分析及改善程式碼品質。
 metadata:
   title: 程式碼分析器
@@ -10,50 +10,62 @@ metadata:
   author: Mikejo5000
   ms.author: mikejo
   ms.date: 10/15/2019
-  ms.openlocfilehash: 1da6ea6d88e15aaa400eb61509dc26a2a6355b58
-  ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
+  ms.openlocfilehash: 149019a9eea62c9f88acee61e7ace997cdc179da
+  ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/30/2020
-  ms.locfileid: "91604607"
+  ms.lasthandoff: 10/07/2020
+  ms.locfileid: "91780893"
 landingContent:
-- title: .NET 程式碼分析
+- title: 設定 .NET 程式碼分析
   linkLists:
   - linkListType: overview
     links:
     - text: 分析 .NET 程式碼
       url: roslyn-analyzers-overview.md
-    - text: .NET 程式碼品質分析
-      url: /dotnet/fundamentals/productivity/code-analysis#code-quality-analysis
-    - text: .NET 程式碼樣式分析
-      url: /dotnet/fundamentals/productivity/code-analysis#code-style-analysis
   - linkListType: concept
     links:
     - text: 常見問題集
       url: analyzers-faq.md
   - linkListType: how-to-guide
     links:
-    - text: 設定程式碼分析
+    - text: .NET 程式碼分析
       url: use-roslyn-analyzers.md
+    - text: .NET 程式碼品質分析
+      url: /dotnet/fundamentals/code-analysis/configuration-files?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+    - text: .NET 程式碼樣式分析
+      url: ../ide/code-styles-and-code-cleanup.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+- title: .NET 程式碼分析
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: .NET 原始程式碼分析
+      url: /dotnet/fundamentals/code-analysis/overview
+    - text: .NET 程式碼品質分析
+      url: /dotnet/fundamentals/productivity/code-analysis#code-quality-analysis
+    - text: .NET 程式碼樣式分析
+      url: /dotnet/fundamentals/productivity/code-analysis#code-style-analysis
   - linkListType: reference
     links:
     - text: .NET 程式碼品質規則
       url: /dotnet/fundamentals/productivity/code-analysis/quality-rules/index
     - text: .NET 程式碼樣式規則
       url: /dotnet/fundamentals/productivity/code-analysis/style-rules/index
-- title: 受控程式碼複雜度
-  linkLists:
-  - linkListType: concept
-    links:
-    - text: 程式碼度量
-      url: code-metrics-values.md
-- title: 分析 C 和 C++ 程式碼
+- title: C++ 程式碼分析
   linkLists:
   - linkListType: overview
     links:
     - text: 分析 C 和 C++ 程式碼
       url: /cpp/code-quality/code-analysis-for-c-cpp-overview
+    - text: EditorConfig 格式設定慣例
+      url: ../ide/cpp-editorconfig-properties.md
   - linkListType: reference
     links:
     - text: C++ 程式碼分析警告
       url: /cpp/code-quality/code-analysis-for-c-cpp-warnings
+- title: 測量程式碼複雜度 (.NET)
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: 程式碼度量
+      url: code-metrics-values.md
