@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 03/23/2020
-  ms.openlocfilehash: 15b531b3c74a5ad0f18841619a0d80ea44ca913e
-  ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
+  ms.openlocfilehash: b2b60b7208fe06aa7e2c2e327174e7536941f204
+  ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 07/21/2020
-  ms.locfileid: "86869577"
+  ms.lasthandoff: 10/08/2020
+  ms.locfileid: "91830697"
 landingContent:
 - title: 關於測試工具
   linkLists:
@@ -58,8 +58,8 @@ landingContent:
   - linkListType: how-to-guide
     links:
     - text: 探勘及手動測試 (Azure Test Plans)
-      url: /azure/devops/test/overview?view=azure-devops
+      url: /azure/devops/test/overview?view=azure-devops&preserve-view=true
     - text: 負載測試 (Azure Test Plans)
-      url: /azure/devops/test/load-test/getting-started-with-performance-testing?view=azure-devops
+      url: /azure/devops/test/load-test/getting-started-with-performance-testing?view=azure-devops&preserve-view=true
     - text: 持續測試 (Azure Pipelines)
-      url: /azure/devops/pipelines/?view=azure-devops
+      url: /azure/devops/pipelines/?view=azure-devops&preserve-view=true
