@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 34fd56b37113467b7cbb2dfb8ac6fdba01b79cc6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f96e9123f613cf50eebbedd393f5bce9cfa633d2
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543750"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830685"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>如何在 Azure App Service 上設定 Python 環境 (Windows)
 
@@ -162,7 +162,7 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
 
 若要直接在伺服器環境中安裝套件，請使用下列方法之一：
 
-| 方法 | 使用方式 |
+| 方法 | 使用量 |
 | --- | --- |
 | [Azure App Service 的 Kudu 主控台](#azure-app-service-kudu-console) | 可透過互動方式安裝套件。 套件必須是純 Python 套件，或必須發行 Wheel。 |
 | [Kudu REST API](#kudu-rest-api) | 可用來自動化安裝套件。  套件必須是純 Python 套件，或必須發行 Wheel。 |
@@ -211,4 +211,4 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
 
 如需命令和驗證的資訊，請參閱 [Kudu 文件](https://github.com/projectkudu/kudu/wiki/REST-API)。
 
-您也可以透過 Azure CLI 使用 `az webapp deployment list-publishing-profiles` 命令 (請參閱 [az webapp deployment](/cli/azure/webapp/deployment?view=azure-cli-latest#az-webapp-deployment-list-publishing-profiles) (az webapp 部署)) 以查看認證。 [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) 上也提供用於發佈 Kudu 命令的協助程式庫。
+您也可以透過 Azure CLI 使用 `az webapp deployment list-publishing-profiles` 命令 (請參閱 [az webapp deployment](/cli/azure/webapp/deployment?view=azure-cli-latest&preserve-view=true#az-webapp-deployment-list-publishing-profiles) (az webapp 部署)) 以查看認證。 [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) 上也提供用於發佈 Kudu 命令的協助程式庫。

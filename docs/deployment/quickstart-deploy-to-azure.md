@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: d17675f5babcdade8e6f96982f175553482920a9
-ms.sourcegitcommit: 036b0dfa651f7218ed33e6a19425613599ee58fa
+ms.openlocfilehash: 5881e1dfb1842e2a6d85efe73534f8db2e2f734e
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91636825"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830749"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 將 Web 應用程式發行至 Azure App Service
 
 針對 ASP.NET、ASP.NET Core、Node.js 和 .NET Core 應用程式，使用下列其中一個方法發行至 Azure App Service 或 Azure App Service Linux (使用容器)。
 
-* 針對連續 (或自動) 部署應用程式，使用 Azure DevOps 與 [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops)。
+* 針對連續 (或自動) 部署應用程式，使用 Azure DevOps 與 [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true)。
 
 * 若為一次性 (或手動) 的應用程式部署，請使用 Visual Studio 中的 [ **發佈** ] 工具，將 ASP.NET、ASP.NET Core、Node.js 和 .net Core 應用程式部署至使用容器 Azure App Service App Service 或 [ (for Linux](../deployment/quickstart-deploy-to-linux.md)) 。 針對 Python 應用程式，請遵循[發行至 Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 的步驟。
 
@@ -68,7 +68,7 @@ ms.locfileid: "91636825"
 在 [資源群組] 頁面上，確定所列出的資源是您想要刪除的項目。
 選取 [刪除]****，在文字方塊中輸入 **myResourceGroup**，然後再選取 [刪除]****。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在本快速入門中，您已了解如何使用 Visual Studio 建立發行設定檔，以部署至 Azure。 您也可以從 Azure App Service 匯入發行設定來設定發行設定檔。
 

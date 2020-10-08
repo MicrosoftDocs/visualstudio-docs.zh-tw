@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: bddb3afb602416159c75a5be9923fce14c089fc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff2e78698bb9180a50a4c2c8014b88dfd07b0b77
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86181049"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91829915"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>在 Team Explorer 中連線到專案
 
@@ -40,9 +40,9 @@ ms.locfileid: "86181049"
 > [!TIP]
 > 如果您想要從存放庫開啟專案，請參閱 [從存放庫開啟專案](../get-started/tutorial-open-project-from-repo.md)。 如果您想要建立新的專案，或將使用者加入至專案，請參閱 [建立專案 (Azure DevOps) ](/azure/devops/organizations/projects/create-project) 並 [將使用者新增至專案或小組 (Azure DevOps) ](/azure/devops/organizations/security/add-users-team-project)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [教學課程：從存放庫開啟專案](../get-started/tutorial-open-project-from-repo.md)
 - [Team Explorer 參考](reference/team-explorer-reference.md)
 - [連線到專案 (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)
-- [針對連接到專案進行疑難排解](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)
+- [針對連接到專案進行疑難排解](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops&preserve-view=true)

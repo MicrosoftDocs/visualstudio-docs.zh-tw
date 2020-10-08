@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8eeb44d08f4b966bed4aef526c12263bdd1a2b77
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 3a8301fcca5fd915b130477600ed9fe0b5b90f46
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641668"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830774"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio 中的部署簡介
 
@@ -50,7 +50,7 @@ ms.locfileid: "89641668"
 
 - **ASP.NET**、 **ASP.NET Core**、 **Python**和 **Node.js**：使用下列其中一種方法，使用容器 (發佈至 Azure App Service 或 Azure App Service Linux) 。
 
-  - 針對連續 (或自動) 部署應用程式，使用 Azure DevOps 與 [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops)。
+  - 針對連續 (或自動) 部署應用程式，使用 Azure DevOps 與 [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true)。
 
   - 針對一次 (或手動) 部署應用程式，請使用 Visual Studio 中的 [發行]**** 工具。
 
@@ -107,7 +107,7 @@ ms.locfileid: "89641668"
 
 - MSI 型安裝程式套件可以使用 [WiX 工具組 Visual Studio 2017 延伸模組](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)來建立。 這是命令列工具組。
 
-- 可以使用 Flexera Software 的 [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) 來建立 MSI 或 EXE 安裝程式套件。 InstallShield 可能會與 Visual Studio 2017 和更新版本 (不支援 Community Edition) 搭配使用。 
+- 可以使用 Flexera Software 的 [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) 來建立 MSI 或 EXE 安裝程式套件。 InstallShield 可能會與 Visual Studio 2017 和更新版本 (不支援 Community Edition) 搭配使用。
 
   > [!NOTE]
   > InstallShield 限量版已不再隨附于 Visual Studio，Visual Studio 2017 和更新版本中不支援。請查看 [>flexera 軟體](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) 是否有未來的可用性。
@@ -122,7 +122,7 @@ ms.locfileid: "89641668"
 
 ## <a name="continuous-deployment"></a>連續部署
 
-您可以使用 Azure Pipelines 來啟用應用程式的持續部署。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) 及[部署至 Azure](/azure/devops/deploy-azure/index?view=vsts)。
+您可以使用 Azure Pipelines 來啟用應用程式的持續部署。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true) 及[部署至 Azure](/azure/devops/deploy-azure/index?view=vsts&preserve-view=true)。
 
 ## <a name="deploy-a-sql-database"></a>部署 SQL 資料庫
 
@@ -142,7 +142,7 @@ ms.locfileid: "89641668"
 | **WCF 或 OData 服務** | 其他應用程式可以使用您部署至 Web 伺服器的 WCF RIA 服務。 | [開發和部署 WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | 從 Visual Studio 2017 開始就不再支援 LightSwitch，但仍然能夠從 Visual Studio 2015 和更早版本加以部署。 | [部署 LightSwitch 應用程式](/previous-versions/ff872288(v=vs.140)) |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在本教學課程中，您已快速瀏覽過不同應用程式的部署選項。
 

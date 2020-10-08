@@ -1,5 +1,5 @@
 ---
-title: Kubernetes 橋接器的運作方式
+title: Bridge to Kubernetes 的運作方式
 ms.technology: vs-azure
 ms.date: 06/02/2020
 ms.topic: conceptual
@@ -9,14 +9,14 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: fbb3cfe6453c68079cb4b4cc6b57f8494f45c0cc
-ms.sourcegitcommit: f9179a3a6d74fbd871f62b72491e70b9e7b05637
+ms.openlocfilehash: a224135e366c7a266defa525772dadf445208f3b
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90845838"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91829887"
 ---
-# <a name="how-bridge-to-kubernetes-works"></a>Kubernetes 橋接器的運作方式
+# <a name="how-bridge-to-kubernetes-works"></a>Bridge to Kubernetes 的運作方式
 
 [橋接器至 Kubernetes] 可讓您在開發電腦上執行和偵測程式碼，同時仍會與您的應用程式或服務的其餘部分連接到您的 Kubernetes 叢集。 例如，如果您有一個具有許多相依服務和資料庫的大型微服務架構，在您的開發電腦上複寫這些相依性可能會很困難。 此外，在內部迴圈開發期間，針對每個程式碼變更建立程式碼並部署到您的 Kubernetes 叢集，可能會很慢、耗時且難以與偵錯工具搭配使用。
 
@@ -40,7 +40,7 @@ ms.locfileid: "90845838"
 * 以將流量重新導向至您開發電腦的遠端代理程式容器，取代叢集中 pod 的容器。
 * 在您的開發電腦上執行 [kubectl 埠轉送][kubectl-port-forward] ，將流量從開發電腦轉送到叢集中執行的遠端代理程式。
 * 使用遠端代理程式從您的叢集中收集環境資訊。 此環境資訊包括環境變數、可見服務、磁片區掛接和秘密裝載。
-* 在 Visual Studio 中設定環境，讓開發電腦上的服務可以存取和在叢集上執行相同的變數。  
+* 在 Visual Studio 中設定環境，讓開發電腦上的服務可以存取和在叢集上執行相同的變數。
 * 更新您的主機檔案，將叢集上的服務對應至開發電腦上的本機 IP 位址。 這些主機檔案專案可讓程式碼在您的開發電腦上執行，以對叢集中執行的其他服務提出要求。 若要更新主機檔案，在連線到您的叢集時，Bridge 到 Kubernetes 會要求您的開發電腦上有系統管理員存取權。
 * 開始在您的開發電腦上執行和偵錯工具代碼。 如有必要，藉由停止目前正在使用這些埠的服務或處理常式，橋接器至 Kubernetes 將可在您的開發電腦上釋放必要的埠。
 
@@ -72,7 +72,7 @@ ms.locfileid: "90845838"
 如果 Bridge 與 Kubernetes 偵測到您的 Kubernetes 叢集上已啟用 Azure Dev Spaces，系統會提示您停用 Azure Dev Spaces，然後才能使用 Bridge 來 Kubernetes。
 
 路由管理員會在啟動時執行下列動作：
-* 使用子域的 *GENERATED_NAME* ，複製在命名空間中找到的所有 ingresses。 
+* 使用子域的 *GENERATED_NAME* ，複製在命名空間中找到的所有 ingresses。
 * 針對與具有 *GENERATED_NAME* 子域的重複 ingresses 相關聯的每個服務建立 envoy pod。
 * 為您正在隔離的服務建立額外的 envoy pod。 這可讓具有子域的要求路由傳送到您的開發電腦。
 * 設定每個 envoy pod 的路由規則，以處理具有子域的服務路由。
@@ -92,7 +92,7 @@ ms.locfileid: "90845838"
 > [!IMPORTANT]
 > 發出額外的要求時，您叢集上的每個服務都必須轉送 *kubernetes-route as = GENERATED_NAME* 標頭。 例如，當 *services* 收到要求時，它接著會對 *serviceB* 提出要求，然後傳迴響應。 在此範例中， *services* 必須將其要求中的 *kubernetes-route as = GENERATED_NAME* 標頭轉送到 *serviceB*。 某些語言（例如 [ASP.NET][asp-net-header]）可能會有處理標頭傳播的方法。
 
-當您中斷與叢集的連線時，根據預設，Bridge 到 Kubernetes 將會移除所有 envoy pod 和重複的服務。 
+當您中斷與叢集的連線時，根據預設，Bridge 到 Kubernetes 將會移除所有 envoy pod 和重複的服務。
 
 > [!NOTE]
 > 路由管理員部署和服務將會在您的命名空間中繼續執行。 若要移除部署和服務，請針對您的命名空間執行下列命令。
@@ -119,14 +119,14 @@ ms.locfileid: "90845838"
 
 您無法在已啟用 Azure Dev Spaces 的叢集上使用 Bridge 進行 Kubernetes。 如果您想要在已啟用 Azure Dev Spaces 的叢集上使用橋接器來 Kubernetes，則必須先停用 Azure Dev Spaces，然後再連接到您的叢集。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 若要開始使用 Bridge 來 Kubernetes，以連接到您的本機開發電腦至您的叢集，請參閱 [使用 bridge 來 Kubernetes](bridge-to-kubernetes.md)。
 
 [asp-net-header]: https://www.nuget.org/packages/Microsoft.AspNetCore.HeaderPropagation/
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
 [azds-tmp-dir]: /azure/dev-spaces/troubleshooting#before-you-begin
-[azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest
+[azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true
 [bridge-to-kubernetes-vs]: bridge-to-kubernetes.md
 [kubectl-port-forward]: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#port-forward
 [visual-studio]: https://visualstudio.microsoft.com/downloads/

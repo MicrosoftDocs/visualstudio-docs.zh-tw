@@ -8,15 +8,15 @@ helpviewer_keywords:
 - localize package
 - localize extension
 ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
-ms.author: zorio
-author: zoeyr
+author: acangialosi
+ms.author: anthc
 manager: jillfra
-ms.openlocfilehash: f97fd5aee27cdc97cf6eb5731da9fad9cb999e18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0eee51c0654c6e517209e23baf43c6b262d8f73
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78169335"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830712"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 語言套件架構2.0 參考
 
@@ -63,7 +63,7 @@ VSIX 語言套件架構會提供 VSIX 封裝的當地語系化安裝資訊。 �
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 |標題|描述|
 |-----------|-----------------|
