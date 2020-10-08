@@ -12,38 +12,38 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 31d158a0c8f52e6ca8fe496885a0a3d5b862a543
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440741"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91838497"
 ---
 # <a name="enumerating-locals"></a>列舉區域變數
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關如何執行 CLR 運算式評估工具的詳細資訊，請參閱 [CLR 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- Visual Studio 時準備好要填入**區域變數** 視窗中，呼叫[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)上[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)傳回的物件[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) (請參閱 <<c16> [ 實作 GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md))。 `IDebugProperty2::EnumChildren` 會傳回[IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)物件。  
+ 當 Visual Studio 準備好要填入 [**區域變數**] 視窗時，它會在[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) (所傳回的[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)物件上呼叫[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) ，請參閱實[GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)) 。 `IDebugProperty2::EnumChildren` 傳回 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 物件。  
   
- 這個實作`IDebugProperty2::EnumChildren`會執行下列工作：  
+ 這項的 `IDebugProperty2::EnumChildren` 執行作業會執行下列工作：  
   
-1. 可確保這表示的方法。  
+1. 確保這表示方法。  
   
-2. 會使用`guidFilter`來判斷要呼叫的方法的引數[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)物件。 如果`guidFilter`等於：  
+2. 使用 `guidFilter` 引數來決定要在 [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) 物件上呼叫的方法。 如果 `guidFilter` equals：  
   
-    1. `guidFilterLocals`呼叫[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)若要取得[IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md)物件。  
+    1. `guidFilterLocals`，呼叫 [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) 以取得 [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) 物件。  
   
-    2. `guidFilterArgs`呼叫[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)若要取得`IEnumDebugFields`物件。  
+    2. `guidFilterArgs`，呼叫 [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) 以取得 `IEnumDebugFields` 物件。  
   
-    3. `guidFilterLocalsPlusArgs`合成，結合了來自結果列舉型別`IDebugMethodField::EnumLocals`和`IDebugMethodField::EnumArguments`。 類別來表示此合成`CEnumMethodField`。  
+    3. `guidFilterLocalsPlusArgs`，合成結合和結果的列舉 `IDebugMethodField::EnumLocals` `IDebugMethodField::EnumArguments` 。 這個合成是由類別表示 `CEnumMethodField` 。  
   
-3. 具現化類別 (稱為`CEnumPropertyInfo`在此範例中) 可實`IEnumDebugPropertyInfo2`介面，並包含`IEnumDebugFields`物件。  
+3. 具現化類別 (`CEnumPropertyInfo` 在此範例中呼叫，此) 範例會執行 `IEnumDebugPropertyInfo2` 介面並包含 `IEnumDebugFields` 物件。  
   
-4. 傳回`IEnumDebugProperty2Info2`介面從`CEnumPropertyInfo`物件。  
+4. 傳回 `IEnumDebugProperty2Info2` 物件的介面 `CEnumPropertyInfo` 。  
   
 ## <a name="managed-code"></a>Managed 程式碼  
- 此範例示範如何實作`IDebugProperty2::EnumChildren`managed 程式碼中。  
+ 此範例示範 `IDebugProperty2::EnumChildren` 在 managed 程式碼中的實作為。  
   
 ```csharp  
 namespace EEMC  
@@ -122,7 +122,7 @@ namespace EEMC
 ```  
   
 ## <a name="unmanaged-code"></a>Unmanaged 程式碼  
- 此範例示範如何實作`IDebugProperty2::EnumChildren`unmanaged 程式碼中。  
+ 此範例顯示 `IDebugProperty2::EnumChildren` 非受控程式碼中的實作為。  
   
 ```cpp#  
 STDMETHODIMP CFieldProperty::EnumChildren(   
@@ -248,6 +248,6 @@ STDMETHODIMP CFieldProperty::EnumChildren(
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [區域變數的範例實作](../../extensibility/debugger/sample-implementation-of-locals.md)   
- [實作 GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)   
+ [區域變數的範例執行](../../extensibility/debugger/sample-implementation-of-locals.md)   
+ [執行 GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)   
  [評估內容](../../extensibility/debugger/evaluation-context.md)
