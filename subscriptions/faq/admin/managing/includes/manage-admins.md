@@ -8,12 +8,12 @@ ms.technology: ''
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 8bbeb8a5e13ad000939057a7d476f6979b15dca8
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 496c8ecc16c67997de3999a48850afdcc7c1f58b
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84200344"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838407"
 ---
 ## <a name="how-do-i-manage-administrators"></a>我要如何管理系統管理員？
 
@@ -39,4 +39,4 @@ ms.locfileid: "84200344"
 8. 按一下窗格頂端的 [角色] 下拉式清單，向下捲動並選取 [使用者存取系統管理員]。
 9. 按一下 [儲存]。
 
-[深入了解](https://docs.microsoft.com/visualstudio/subscriptions/cloud-admin) \(部分機器翻譯\) 雲端訂閱的管理。
+[深入了解](../../../../cloud-admin.md) \(部分機器翻譯\) 雲端訂閱的管理。

@@ -7,13 +7,13 @@ ms.assetid: e8b196c2-6118-47d1-8363-ceae3d9b6fb2
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: eefc8a0263fd58b5125dde47e9e5f73a4307601e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 5d88f6ee2cd182275bebf9044ba5f95db59056bb
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85503434"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838259"
 ---
 ## <a name="what-benefits-and-software-is-available-to-my-subscriber-once-a-visual-studio-subscription-has-been-assigned"></a>指派 Visual Studio 訂閱之後，我的訂閱者可以使用哪些權益和軟體？
 
-[Visual Studio 訂閱權益](https://visualstudio.microsoft.com/vs/benefits/) 頁面可讓您根據訂閱層級，查看及比較 Visual Studio 訂閱權益與所包含之[軟體下載](https://docs.microsoft.com/visualstudio/subscriptions/software-download-list) \(部分機器翻譯\) 的完整清單。
+[Visual Studio 訂閱權益](https://visualstudio.microsoft.com/vs/benefits/) 頁面可讓您根據訂閱層級，查看及比較 Visual Studio 訂閱權益與所包含之[軟體下載](../../../../software-download-list.md) \(部分機器翻譯\) 的完整清單。

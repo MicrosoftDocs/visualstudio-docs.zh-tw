@@ -1,6 +1,6 @@
 - name: Visual Studio 中的 Python
   href: index.yml
-- name: 概觀
+- name: 總覽
   items:
     - name: Python 支援的概觀
       href: overview-of-python-tools-for-visual-studio.md
@@ -86,7 +86,7 @@
         - name: Azure 雲端服務範本
           href: python-azure-cloud-service-project-template.md
     - name: Azure SDK for Python
-      href: /python/azure/?view=azure-python
+      href: /python/azure/?view=azure-python&preserve-view=true
 - name: 作法指南
   items:
     - name: 管理 Python 環境

@@ -11,12 +11,12 @@ metadata:
   ms.technology: vs-data-tools
   ms.workload:
   - data-storage
-  ms.openlocfilehash: b0dc149c18cedf66d2db8744aba114120f5c654d
-  ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+  ms.openlocfilehash: f8b3ba815f7e6add2f89cd7912ea4f7be9cadaeb
+  ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/25/2020
-  ms.locfileid: "91352160"
+  ms.lasthandoff: 10/09/2020
+  ms.locfileid: "91860417"
 landingContent:
 - title: .NET
   linkLists:
@@ -57,7 +57,7 @@ landingContent:
     - text: 在 Visual Studio 中使用資料
       url: accessing-data-in-visual-studio.md
     - text: 使用 SQL Server Data Tools
-      url: /sql/ssdt/sql-server-data-tools?view=sql-server-ver15
+      url: /sql/ssdt/sql-server-data-tools?view=sql-server-ver15&preserve-view=true
     - text: C++ 中的資料存取
       url: /cpp/data/data-access-in-cpp?view=vs-2019&preserve-view=true
 - title: Azure

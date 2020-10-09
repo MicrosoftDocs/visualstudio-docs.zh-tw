@@ -7,12 +7,12 @@ ms.assetid: 754c7033-72db-49ea-b99b-cea892261834
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 2e0fb2462e392e2672ccf347103afe4a56b07abb
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 3707dc584eb9aa7c200526efbe7815d19b4d1451
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386137"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838436"
 ---
 ## <a name="how-do-i-renew-my-subscriptions"></a>我要如何更新我的訂閱？
 
@@ -22,6 +22,6 @@ ms.locfileid: "81386137"
 
 雲端訂閱：如果您使用的是雲端訂閱，則不需要進行續約。 其會自動續約，直到您取消為止。
 
-深入了解[購買雲端訂閱](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview) \(部分機器翻譯\)。
+深入了解[購買雲端訂閱](../../../../vscloud-overview.md) \(部分機器翻譯\)。
 
 大量授權：若要更新透過「大量授權」購買的訂閱，請連絡您的轉銷商。 [尋找您所在地區的轉銷商](https://www.microsoft.com/licensing/how-to-buy/how-to-buy)。

@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 09/30/2020
 ms.faqid: q3_2
-ms.openlocfilehash: 8dc5e87e5299f735e8c7b21dab1bb7e3afdbc5a7
-ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
+ms.openlocfilehash: 8c0bcb40d775be6184f420cdd79156645333d260
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91642713"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838285"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>我要如何使用自己的權益？
 
@@ -20,7 +20,7 @@ ms.locfileid: "91642713"
 
 針對訂閱者入口網站中所提供的每個權益，我們已提供相關文章，其中包含如該權益包含在哪些訂閱之中，以及啟用該權益所需步驟的資訊。
 
-請查看我們的文件以[深入了解](https://docs.microsoft.com/visualstudio/subscriptions/whats-new-in-subscriptions) \(部分機器翻譯\) (按一下左側導覽窗格中的 [訂閱]，然後選擇 [優點])。
+請查看我們的文件以[深入了解](../../../../whats-new-in-subscriptions.md) \(部分機器翻譯\) (按一下左側導覽窗格中的 [訂閱]，然後選擇 [優點])。
 
 ## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>什麼是含 GitHub Enterprise 設定程序的 Visual Studio？ 
 
@@ -36,4 +36,4 @@ GitHub Enterprise 是由 GitHub 系統管理員管理，而且是與 Visual Stud
 
 當您接受 GitHub 組織邀請之後，<https://my.visualstudio.com/benefits> 的 [權益] 磚外觀將會從 [擱置中] 變更為 [已啟用]，而且您現在可以開始使用 GitHub Enterprise。 
 
-如需詳細資訊，請參閱 [GitHub Enterprise 設定程序](https://docs.microsoft.com/visualstudio/subscriptions/access-github.md) \(部分機器翻譯\)。 
+如需詳細資訊，請參閱 [GitHub Enterprise 設定程序](../../../../access-github.md) \(部分機器翻譯\)。 

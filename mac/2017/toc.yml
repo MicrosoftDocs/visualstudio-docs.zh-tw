@@ -1,150 +1,150 @@
 - name: Visual Studio for Mac
-  href: /visualstudio/mac/
+  href: ./index.yml
 - name: IDE 教學課程
   href: ide-tour.md
 - name: 安裝
   href: installation.md
   items:
     - name: 在防火牆或 Proxy 後方安裝及使用
-      href: /visualstudio/mac/install-behind-a-firewall-or-proxy-server
+      href: ./install-behind-a-firewall-or-proxy-server.md
     - name: 安裝預覽版本
-      href: /visualstudio/mac/install-preview
+      href: ./install-preview.md
     - name: 更新
-      href: /visualstudio/mac/update
+      href: ./update.md
     - name: 更新至 Visual Studio 2019 for Mac
-      href: /visualstudio/mac/update-vsmac-8.0
+      href: ./update-vsmac-8.0.md
     - name: 解除安裝
-      href: /visualstudio/mac/uninstall
+      href: ./uninstall.md
 - name: 使用者帳戶
-  href: /visualstudio/mac/user-accounts
+  href: ./user-accounts.md
   items:
     - name: 登入
-      href: /visualstudio/mac/signing-in
+      href: ./signing-in.md
     - name: 啟用訂用帳戶
-      href: /visualstudio/mac/enable-subscription
+      href: ./enable-subscription.md
 - name: 自訂 IDE
-  href: /visualstudio/mac/customizing-the-ide
+  href: ./customizing-the-ide.md
   items:
     - name: 擴充 Visual Studio for Mac
-      href: /visualstudio/mac/extending-visual-studio-mac
+      href: ./extending-visual-studio-mac.md
 - name: 專案和方案
-  href: /visualstudio/mac/projects-and-solutions
+  href: ./projects-and-solutions.md
   items:
     - name: 建立新專案
-      href: /visualstudio/mac/create-new-projects
+      href: ./create-new-projects.md
     - name: 新增和移除專案項目
-      href: /visualstudio/mac/add-and-remove-project-items
+      href: ./add-and-remove-project-items.md
     - name: 管理方案和專案屬性
-      href: /visualstudio/mac/managing-solutions-and-project-properties
+      href: ./managing-solutions-and-project-properties.md
     - name: 管理專案中的參考
-      href: /visualstudio/mac/managing-references-in-a-project
+      href: ./managing-references-in-a-project.md
       items:
         - name: 逐步解說 - 在專案中包含 NuGet 套件
-          href: /visualstudio/mac/nuget-walkthrough
+          href: ./nuget-walkthrough.md
     - name: 管理應用程式資源
-      href: /visualstudio/mac/managing-app-resources
+      href: ./managing-app-resources.md
     - name: 作法：開啟多個解決方案或執行個體
-      href: /visualstudio/mac/open-multiple-solutions
+      href: ./open-multiple-solutions.md
 - name: 原始檔編輯器
-  href: /visualstudio/mac/source-editor
+  href: ./source-editor.md
   items:
     - name: 重構
-      href: /visualstudio/mac/refactoring
+      href: ./refactoring.md
     - name: 註解
-      href: /visualstudio/mac/comments
+      href: ./comments.md
     - name: 編輯器的行為
-      href: /visualstudio/mac/editor-behavior
+      href: ./editor-behavior.md
     - name: 工作註解
-      href: /visualstudio/mac/task-comments
+      href: ./task-comments.md
     - name: 程式碼片段
-      href: /visualstudio/mac/snippets
+      href: ./snippets.md
     - name: 區塊選取
-      href: /visualstudio/mac/block-selection
+      href: ./block-selection.md
     - name: 編輯器佈景主題
-      href: /visualstudio/mac/editor-themes
+      href: ./editor-themes.md
     - name: EditorConfig
-      href: /visualstudio/mac/editorconfig
+      href: ./editorconfig.md
     - name: 常用鍵盤快速鍵
-      href: /visualstudio/mac/keyboard-shortcuts
+      href: ./keyboard-shortcuts.md
 - name: 偵錯
-  href: /visualstudio/mac/debugging
+  href: ./debugging.md
   items:
     - name: 資料視覺效果
-      href: /visualstudio/mac/data-visualizations
+      href: ./data-visualizations.md
 - name: 編譯和建置
-  href: /visualstudio/mac/compiling-and-building
+  href: ./compiling-and-building.md
   items:
     - name: 建置和清除專案與方案
-      href: /visualstudio/mac/building-and-cleaning-projects-and-solutions
+      href: ./building-and-cleaning-projects-and-solutions.md
     - name: 建置動作
-      href: /visualstudio/mac/build-actions
+      href: ./build-actions.md
     - name: 自訂組建系統
-      href: /visualstudio/mac/customizing-build-system
+      href: ./customizing-build-system.md
     - name: 組態
-      href: /visualstudio/mac/configurations
+      href: ./configurations.md
       items:
         - name: 建立及編輯組態
-          href: /visualstudio/mac/create-and-edit-configurations
+          href: ./create-and-edit-configurations.md
 - name: 版本控制
-  href: /visualstudio/mac/version-control
+  href: ./version-control.md
   items:
     - name: TF 版本控制
-      href: /visualstudio/mac/tf-version-control
+      href: ./tf-version-control.md
     - name: 設定 Git 存放庫
-      href: /visualstudio/mac/set-up-git-repository
+      href: ./set-up-git-repository.md
     - name: 使用 Git
-      href: /visualstudio/mac/working-with-git
+      href: ./working-with-git.md
     - name: 設定 Subversion 存放庫
-      href: /visualstudio/mac/set-up-subversion-repository
+      href: ./set-up-subversion-repository.md
     - name: 使用 Subversion
-      href: /visualstudio/mac/working-with-subversion
+      href: ./working-with-subversion.md
 - name: Web 應用程式部署
-  href: /visualstudio/mac/web-app-deployment
+  href: ./web-app-deployment.md
   items:
     - name: 發佈至 Azure App Service
-      href: /visualstudio/mac/publish-app-svc
+      href: ./publish-app-svc.md
     - name: 發佈到資料夾
-      href: /visualstudio/mac/publish-folder
+      href: ./publish-folder.md
 - name: 工作負載
-  href: /visualstudio/mac/workloads
+  href: ./workloads.md
   items:
     - name: ASP.NET Core
-      href: /visualstudio/mac/asp-net-core
+      href: ./asp-net-core.md
       items:
         - name: Razor
-          href: /visualstudio/mac/razor
+          href: ./razor.md
         - name: Javascript
-          href: /visualstudio/mac/javascript
+          href: ./javascript.md
     - name: Azure
-      href: /visualstudio/mac/azure-workload
+      href: ./azure-workload.md
       items:
         - name: Azure Functions 簡介
-          href: /visualstudio/mac/azure-functions
+          href: ./azure-functions.md
         - name: 教學課程：Azure Functions
-          href: /visualstudio/mac/azure-functions-lab
+          href: ./azure-functions-lab.md
         - name: 已連線的服務
-          href: /visualstudio/mac/connected-services
+          href: ./connected-services.md
     - name: Unity 遊戲開發
-      href: /visualstudio/mac/unity-tools
+      href: ./unity-tools.md
       items:
         - name: 安裝程式
-          href: /visualstudio/mac/setup-vsmac-tools-unity
+          href: ./setup-vsmac-tools-unity.md
         - name: 使用 Unity 工具
-          href: /visualstudio/mac/using-vsmac-tools-unity
+          href: ./using-vsmac-tools-unity.md
         - name: 在 Unity 中使用 .NET 4.x
           href: /visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context
         - name: 變更記錄
           href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context
     - name: 使用 Xamarin 開發行動應用程式
-      href: /visualstudio/mac/xamarin
+      href: ./xamarin.md
 - name: 協助工具選項
-  href: /visualstudio/mac/accessibility
+  href: ./accessibility.md
 - name: 疑難排解
-  href: /visualstudio/mac/troubleshooting
+  href: ./troubleshooting.md
   items:
     - name: Visual Studio 客戶經驗改進計畫
-      href: /visualstudio/mac/visual-studio-experience-improvement-program
+      href: ./visual-studio-experience-improvement-program.md
     - name: 回報問題
-      href: /visualstudio/mac/report-a-problem
+      href: ./report-a-problem.md
     - name: 疑難排解：更新程式在擷取資訊時發生錯誤
       href: updater-troubleshooting.md

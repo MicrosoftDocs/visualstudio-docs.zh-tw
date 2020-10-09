@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q2_2
-ms.openlocfilehash: d214130bfdc2832ad540fa6fac274e4f52cced5f
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: e18550018a593c0a3eae0d521148cd240b40f5df
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385897"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838264"
 ---
 ## <a name="how-do-i-activate-the-software-i-just-downloaded-using-product-keys"></a>我要如何使用產品金鑰來啟用剛下載的軟體？
 
@@ -25,5 +25,5 @@ ms.locfileid: "81385897"
 
 如需取得及使用產品金鑰的詳細資訊，請參閱這些文章：
 
-- [產品金鑰概觀](https://docs.microsoft.com/visualstudio/subscriptions/product-keys)
-- [尋找及索取金鑰](https://docs.microsoft.com/visualstudio/subscriptions/find-keys)
+- [產品金鑰概觀](../../../../product-keys.md)
+- [尋找及索取金鑰](../../../../find-keys.md)

@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: 82824b8a2221e710f3f6c8402ae18b7f457c4fe8
-  ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+  ms.openlocfilehash: e2a545d1b9165a158f7d1913668e983386127874
+  ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/07/2020
-  ms.locfileid: "89509740"
+  ms.lasthandoff: 10/09/2020
+  ms.locfileid: "91860527"
 landingContent:
 - title: 部署到 Azure App Service
   linkLists:
@@ -54,7 +54,7 @@ landingContent:
     - text: Visual Studio 中的容器工具
       url: ../containers/overview.md
     - text: Kubernetes 工具
-      url: ../containers/tutorial-kubernetes-tools.md
+      url: ../containers/bridge-to-kubernetes.md
 - title: 偵錯 Azure 服務並分析效能
   linkLists:
   - linkListType: tutorial
