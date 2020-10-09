@@ -7,17 +7,17 @@ ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: 33d00d853c7496e23cb5cd97a0b9abbe05e3accc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2ba7f5d044b82c44d719b251a7d803212cf7b07
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950587"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860562"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>連線到 Team Foundation 版本控制
 
 > [!NOTE]
-> 為了獲得最佳的 macOS 版本控制體驗，我們建議使用 Git 而不是 Team Foundation 版本控制 (TFVC)。 Visual Studio for Mac 支援 Git，它是 Team Foundation Server (TFS)/Azure DevOps 中裝載之存放庫的預設選項。 若要深入了解有關將 Git 與 TFS/Azure DevOps 一起使用的詳細資訊，請參閱[設定 Git 存放庫](/visualstudio/mac/set-up-git-repository)一文。
+> 為了獲得最佳的 macOS 版本控制體驗，我們建議使用 Git 而不是 Team Foundation 版本控制 (TFVC)。 Visual Studio for Mac 支援 Git，它是 Team Foundation Server (TFS)/Azure DevOps 中裝載之存放庫的預設選項。 若要深入了解有關將 Git 與 TFS/Azure DevOps 一起使用的詳細資訊，請參閱[設定 Git 存放庫](./set-up-git-repository.md)一文。
 >
 > 如果您之前使用的是 Visual Studio for Mac 的 TFVC 延伸模組預覽版本，當您升級至 Visual Studio 2019 for Mac 後即不再支援。
 
@@ -111,7 +111,7 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 ## <a name="connect-to-tfvc-using-the-team-foundation-version-control-extension"></a>使用 Team Foundation 版本控制延伸模組連線到 TFVC
 
 > [!NOTE]
-> 為了獲得最佳的 macOS 版本控制體驗，我們建議使用 Git 而不是 Team Foundation 版本控制 (TFVC)。 Visual Studio for Mac 支援 Git，它是 Team Foundation Server (TFS)/Azure DevOps 中裝載之存放庫的預設選項。 若要深入了解有關將 Git 與 TFS/Azure DevOps 一起使用的詳細資訊，請參閱[設定 Git 存放庫](/visualstudio/mac/set-up-git-repository)一文。
+> 為了獲得最佳的 macOS 版本控制體驗，我們建議使用 Git 而不是 Team Foundation 版本控制 (TFVC)。 Visual Studio for Mac 支援 Git，它是 Team Foundation Server (TFS)/Azure DevOps 中裝載之存放庫的預設選項。 若要深入了解有關將 Git 與 TFS/Azure DevOps 一起使用的詳細資訊，請參閱[設定 Git 存放庫](./set-up-git-repository.md)一文。
 >
 > 如果您之前使用的是 Visual Studio for Mac 的 TFVC 延伸模組預覽版本，當您升級至 Visual Studio 2019 for Mac 後即不再支援。
 
@@ -273,6 +273,6 @@ TFVC 延伸模組的更新會定期進行。 若要存取更新，請從功能�
 - 名稱必須少於 64 個字元。
 - 任何其他工作區都不得使用本機路徑。
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 
 - [使用 Visual Studio 在 TFVC 中開發和共用您的程式碼 (Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

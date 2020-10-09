@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b20974d2e44661ed7f4a0288ecb9eff82b2035a
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: fc025a3ff096e560cc2bd5a135f370e89dba2f9e
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658421"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860469"
 ---
 # <a name="code-analysis-rule-set-reference"></a>程式碼分析規則集參考
 

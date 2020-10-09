@@ -14,12 +14,12 @@ ms.assetid: ba6d34f9-2d6f-486c-a929-6cd9818be322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da4ff08ae667b868670364c7ad6b9a6b69ae6ad3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f67f9a2fc81b0bd950e171e4274eb09eacd88bbc
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815327"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861847"
 ---
 # <a name="unexpected-quantifier-javascript"></a>非預期的數量詞 (JavaScript)
 撰寫您的正則運算式搜尋模式時，您建立了具有不合法重複因素的 pattern 元素。 例如，模式  
@@ -30,7 +30,7 @@ ms.locfileid: "85815327"
   
  是不合法的，因為輸入) 的元素 ^ (開頭不能有重複因素。 下表列出不能有重複因素的元素。  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
 |^|輸入的開頭|  
 |$|輸入結尾|  
@@ -47,6 +47,6 @@ ms.locfileid: "85815327"
   
 - 確定您的搜尋模式元素只包含合法的重複因素。  
   
-## <a name="see-also"></a>另請參閱  
- [正則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   
- [ (JavaScript) 的正則運算式語法 ](https://msdn.microsoft.com/library/1400241x)
+## <a name="see-also"></a>請參閱  
+ [正則運算式物件](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp)   
+ [ (JavaScript) 的正則運算式語法 ](/previous-versions/1400241x(v=vs.100))

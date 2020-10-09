@@ -14,12 +14,12 @@ ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 28eec125914f0207fbdf79a39ea2140dd74d6d0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a3b8510c92e15a5b1bf5e15bb774ba031f7181f
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816224"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862113"
 ---
 # <a name="object-expected"></a>必須是物件
 您嘗試對非 `Object` 類型的物件叫用方法或屬性，或在需要 `Object` 時傳遞非 `Object` 類型的引數。  
@@ -46,6 +46,6 @@ ms.locfileid: "85816224"
     }  
     ```  
   
-## <a name="see-also"></a>另請參閱  
- [Object 物件](../../javascript/reference/object-object-javascript.md)   
- [物件和陣列](../../javascript/objects-and-arrays-javascript.md)
+## <a name="see-also"></a>請參閱  
+ [Object 物件](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)   
+ [物件和陣列](https://developer.mozilla.org/docs/Learn/JavaScript/Objects)

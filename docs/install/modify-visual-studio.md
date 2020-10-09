@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2ec3ae3f253997b86c2403ce57d5e8db6e9920b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75a9d9d95cf2aed0defb9f52179188c64f4de912
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419181"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862282"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>透過新增或移除工作負載和元件來修改 Visual Studio
 
@@ -148,7 +148,7 @@ ms.locfileid: "85419181"
 如果您不想要使用工作負載來自訂您的 Visual Studio 安裝，請選擇 Visual Studio 安裝程式中的 [ **個別元件** ] 索引標籤，選取您要的元件，然後遵循提示進行。
 
 >[!TIP]
-> 如需 SQL Server Data Tools (SSDT) 元件的相關資訊，請參閱 [下載並安裝適用于 Visual Studio 的 SSDT](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15)。
+> 如需 SQL Server Data Tools (SSDT) 元件的相關資訊，請參閱 [下載並安裝適用于 Visual Studio 的 SSDT](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15&preserve-view=true)。
 
 ## <a name="modify-language-packs"></a>修改語言套件
 
@@ -156,7 +156,7 @@ ms.locfileid: "85419181"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [Visual Studio 工作負載與元件識別碼清單](workload-and-component-ids.md)
 * [更新 Visual Studio 2017](update-visual-studio.md)

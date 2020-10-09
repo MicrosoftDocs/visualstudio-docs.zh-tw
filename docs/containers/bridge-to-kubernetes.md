@@ -1,5 +1,5 @@
 ---
-title: 搭配 Visual Studio 使用 Bridge Kubernetes
+title: 將橋接至 Kubernetes 與 Visual Studio 搭配使用
 titleSuffix: ''
 ms.technology: vs-azure
 ms.date: 06/02/2020
@@ -10,12 +10,12 @@ monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
 manager: jillfra
-ms.openlocfilehash: c7d046ca63af5aa65f5cd286e9a6199afc6c2947
-ms.sourcegitcommit: f9179a3a6d74fbd871f62b72491e70b9e7b05637
+ms.openlocfilehash: 7bbeec2baab018ea770dbee60db507399ebeb745
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90845849"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860443"
 ---
 # <a name="use-bridge-to-kubernetes"></a>使用 Bridge Kubernetes
 
@@ -25,7 +25,7 @@ ms.locfileid: "90845849"
 
 本指南使用 [自行車共用範例應用程式][bike-sharing-github] ，示範如何將您的開發電腦連接到 Kubernetes 叢集。 如果您已經在 Kubernetes 叢集上執行自己的應用程式，您仍然可以遵循下列步驟，並使用您自己的服務名稱。
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>必要條件
 
 * Azure 訂用帳戶。 如果您沒有 Azure 訂用帳戶，您可以建立[免費帳戶](https://azure.microsoft.com/free)。
 * [已安裝 Azure CLI][azure-cli]。
@@ -91,7 +91,7 @@ az aks get-credentials --resource-group MyResourceGroup --name MyAKS
 
 按一下 [ *橋接器至 Kubernetes*] 旁邊的 [開始] 按鈕。 在 [ **建立橋接器至 Kubernetes 的設定檔** ] 對話方塊中：
 
-* 選取您的訂閱。
+* 選取您的訂用帳戶。
 * 為您的叢集選取 [ *MyAKS* ]。
 * 針對您的命名空間選取 [ *bikeapp* ]。
 * 選取服務要重新導向的 *reservationengine* 。
@@ -153,12 +153,12 @@ Kubernetes 叢集中的所有流量都會重新導向至您的開發電腦上執
 瞭解 Kubernetes 的橋樑如何運作。
 
 > [!div class="nextstepaction"]
-> [Kubernetes 橋接器的運作方式](overview-bridge-to-kubernetes.md)
+> [Bridge to Kubernetes 的運作方式](overview-bridge-to-kubernetes.md)
 
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
 [azds-vs-code]: https://marketplace.visualstudio.com/items?itemName=azuredevspaces.azds
 [azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-lates&preserve-view=true
-[azure-cloud-shell]: /azure/cloud-shell/w.md
+[azure-cloud-shell]: /azure/cloud-shell/overview.md
 [az-aks-get-credentials]: /cli/azure/aks?view=azure-cli-latest&preserve-view=true#az-aks-get-credentials
 [az-aks-vs-code]: https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-aks-tools
 [bike-sharing-github]: https://github.com/Microsoft/mindaro

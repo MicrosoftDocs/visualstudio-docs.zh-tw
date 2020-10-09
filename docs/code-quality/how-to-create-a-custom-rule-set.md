@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d498ee0acfdc87f340a3c5c8848680eaed6276d
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 8fe0d6ad545a197ca03c12acf68d779a42fd91ae
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658551"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860512"
 ---
 # <a name="customize-a-rule-set"></a>自訂規則集
 
@@ -61,7 +61,7 @@ ms.locfileid: "91658551"
 
 2. 在 [ **新增** 檔案] 對話方塊中，選取左側的 **[一般** ] 類別，然後選取 [程式 **代碼分析規則集**]。
 
-3. 選取 [開啟]。
+3. 選取 [開啟]  。
 
    新的 *. 規則* 集檔案會在規則集編輯器中開啟。
 
@@ -145,7 +145,7 @@ ms.locfileid: "91658551"
 > [!div class="nextstepaction"]
 > [修改規則集編輯器中的規則](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [程式碼分析規則集參考](../code-quality/rule-set-reference.md)

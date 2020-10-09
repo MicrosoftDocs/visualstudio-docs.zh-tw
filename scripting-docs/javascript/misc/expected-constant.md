@@ -14,12 +14,12 @@ ms.assetid: 8da7485f-7050-4559-97c3-ccfa782cdff3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efac49ccbf3c94c5b7d136ddd965b4a45a304adb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc791e97fcecf357177d140a3c30ee8c66db377b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816640"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861975"
 ---
 # <a name="expected-constant"></a>必須是常數
 您嘗試在條件式編譯測試語句中使用 (的非條件式編譯) 變數。 條件式編譯測試語句必須評估為常數。  
@@ -30,6 +30,6 @@ ms.locfileid: "85816640"
   
 - 使用條件式編譯變數來取代變數。  
   
-## <a name="see-also"></a>另請參閱  
- [條件式編譯](../../javascript/advanced/conditional-compilation-javascript.md)   
- [條件式編譯變數](../../javascript/advanced/conditional-compilation-variables-javascript.md)
+## <a name="see-also"></a>請參閱  
+ [條件式編譯](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/121hztk3(v=vs.84))   
+ [條件式編譯變數](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/s59bkzce(v=vs.84))

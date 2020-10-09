@@ -14,12 +14,12 @@ ms.assetid: 03568f9f-5f4f-4a10-a738-9a73f3832b9e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32eadcf5ae88dbe64c8ccdb3effbb85bc79f9b32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ec17d9e421d06736a236e26dd5a1200a5564e7d
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816731"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862041"
 ---
 # <a name="return-statement-outside-of-function"></a>函式外部的 'return' 陳述式
 您已 `return` 在程式碼的全域範圍中使用語句。 `return`語句只應出現在函式主體內。  
@@ -41,7 +41,7 @@ return [ expression ];
   
 - `return`從程式碼的主體 (全域範圍) 移除語句。  
   
-## <a name="see-also"></a>另請參閱  
- [return 語句](../../javascript/reference/return-statement-javascript.md)   
- [Function 物件](../../javascript/reference/function-object-javascript.md)   
- [caller 屬性 (Function)](../../javascript/reference/caller-property-function-javascript.md)
+## <a name="see-also"></a>請參閱  
+ [return 語句](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/return)   
+ [Function 物件](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)   
+ [caller 屬性 (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/caller)

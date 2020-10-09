@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e8c99677396ab9b3d005d4079fd37fa633df4913
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 72e6193d850d351dacc5361d5053fe8f06b2d4bf
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658434"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860487"
 ---
 # <a name="overview-of-source-code-analysis"></a>原始程式碼分析總覽
 
@@ -39,7 +39,7 @@ ms.locfileid: "91658434"
 |-|-|-|
 | 錯誤 | `error` | 違規在錯誤清單和命令列組建輸出中會顯示為 *錯誤* ，導致組建失敗。| 有問題的程式碼會以紅色波浪線加上底線，並在捲軸中以小紅色方塊標記。 |
 | 警告 | `warning` | 違規在錯誤清單和命令列組建輸出中會顯示為 *警告* ，但不會造成組建失敗。 | 有問題的程式碼會以綠色波浪線加上底線，並在捲軸中以小綠色方塊標記。 |
-| 資訊 | `suggestion` | 違規會以 *訊息* 形式出現在錯誤清單中，而不是在命令列組建輸出中。 | 有問題的程式碼會以灰色波浪線加上底線，並在捲軸中以小灰色方塊標記。 |
+| Info | `suggestion` | 違規會以 *訊息* 形式出現在錯誤清單中，而不是在命令列組建輸出中。 | 有問題的程式碼會以灰色波浪線加上底線，並在捲軸中以小灰色方塊標記。 |
 | Hidden | `silent` | 使用者看不到。 | 使用者看不到。 不過，診斷會回報給 IDE 診斷引擎。 |
 | 無 | `none` | 已完全隱藏。 | 已完全隱藏。 |
 | 預設 | `default` | 對應于規則的預設嚴重性。 若要判斷規則的預設值為何，請查看屬性視窗。 | 對應于規則的預設嚴重性。 |
@@ -77,7 +77,7 @@ ms.locfileid: "91658434"
 
 若要在組建階段強制執行規則，包括透過命令列或作為連續整合 (CI) 組建的一部分，您可以從下列其中一個選項中選擇：
 
-- 建立 .NET 5.0 專案，在 .NET SDK 中預設包含分析器。 根據預設，以 .NET 5.0 或更新版本為目標的專案會啟用程式碼分析。 您可以藉由將 [EnableNETAnalyzers](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) 屬性設定為 true，對以舊版 .net 版本為目標的專案啟用程式碼分析。
+- 建立 .NET 5.0 專案，在 .NET SDK 中預設包含分析器。 根據預設，以 .NET 5.0 或更新版本為目標的專案會啟用程式碼分析。 您可以藉由將 [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) 屬性設定為 true，對以舊版 .net 版本為目標的專案啟用程式碼分析。
 
 - 將分析器安裝為 NuGet 套件。 如果您將分析器安裝為延伸模組，則分析器警告和錯誤不會顯示在組建報告中。
 
@@ -97,7 +97,7 @@ ms.locfileid: "91658434"
 > [!div class="nextstepaction"]
 > [在 Visual Studio 中使用程式碼分析器](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [分析器常見問題集](analyzers-faq.md)
 - [撰寫您自己的程式碼分析器](../extensibility/getting-started-with-roslyn-analyzers.md)

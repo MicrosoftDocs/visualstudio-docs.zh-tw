@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ce3c8feb3d3bbd458c14ee702d6e8a1668078f3
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: cb75b7374e7f88f4643a5ecc4a9c193d8144efc4
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658473"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860478"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>從舊版分析 (FxCop) 遷移至來源分析 (FxCop 分析器) 
 

@@ -11,16 +11,16 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: c632378ff15e9b52e7145821f2e16d782b0326ac
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 1a85268eb71ece1f06dc8d71d018d16206902130
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352291"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860826"
 ---
 # <a name="require-dotnetcoresdk"></a>require-dotnetcoresdk
 
-此 `require-dotnetcoresdk` 工具是用來透過[dotnet](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script)安裝腳本安裝[.NET Core SDK](https://dotnet.microsoft.com/)和共用執行時間。
+此 `require-dotnetcoresdk` 工具是用來透過[dotnet](/dotnet/core/tools/dotnet-install-script)安裝腳本安裝[.NET Core SDK](https://dotnet.microsoft.com/)和共用執行時間。
 
 ## <a name="usage"></a>使用量
 
@@ -38,14 +38,14 @@ ms.locfileid: "91352291"
 
 ### <a name="additional-options"></a>其他選項
 
-您可以將其他設定選項傳入作為的值 `additionalOptions` 。 這些引數是直接傳遞給 [dotnet 安裝](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) 腳本中使用的引數。 如需可用參數的詳細資訊，請參閱[dotnet-安裝](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script)腳本[檔](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script)。 使用時 `additionalOptions` ，請務必使用 PowerShell 引數名稱和格式。
+您可以將其他設定選項傳入作為的值 `additionalOptions` 。 這些引數是直接傳遞給 [dotnet 安裝](/dotnet/core/tools/dotnet-install-script) 腳本中使用的引數。 如需可用參數的詳細資訊，請參閱[dotnet-安裝](/dotnet/core/tools/dotnet-install-script)腳本[檔](/dotnet/core/tools/dotnet-install-script)。 使用時 `additionalOptions` ，請務必使用 PowerShell 引數名稱和格式。
 
 > [!NOTE]
 > 包含空格的引數的任何額外值都必須包含一組額外的轉義引號 (使用反斜線) 。 您可以使用中的 [範例](#example-usage) 使用方式來看到範例 `-InstallDir` 。
 
 ### <a name="default-behavior"></a>預設行為
 
-工具的預設行為 `require-dotnetcoresdk` 是在 `global.json` 目前的工作目錄中安裝 [ (檔) ](https://docs.microsoft.com/dotnet/core/tools/global-json?tabs=netcore3x) 檔案中指定的 .NET Core SDK 版本。 如果找不到任何檔案 `global.json` ，則 `require-dotnetcoresdk` 會安裝最新版本的 .NET Core SDK 和共用執行時間。
+工具的預設行為 `require-dotnetcoresdk` 是在 `global.json` 目前的工作目錄中安裝 [ (檔) ](/dotnet/core/tools/global-json?tabs=netcore3x) 檔案中指定的 .NET Core SDK 版本。 如果找不到任何檔案 `global.json` ，則 `require-dotnetcoresdk` 會安裝最新版本的 .NET Core SDK 和共用執行時間。
 
 ## <a name="example-usage"></a>使用方式範例
 

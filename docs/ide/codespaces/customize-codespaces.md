@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: f63dc4989a59256a0a3ad59491b2290912ffd2f8
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 2223aecd66da721ff1afe9877853c8a00c837611
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862081"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862226"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>如何自訂 codespace (預覽) 
 
@@ -92,7 +92,7 @@ GitHub Codespaces 支援屬性上的下列 *devcontainer.js* 。 如果您想要
 
 雖然您可以直接執行 `devinit` 命令列，但建議您在設定檔 [* 上建立devinit.js*](../../devinit/devinit-json.md) ，以描述 `devinit` 要執行的工具組。 
 
-例如，若要安裝 [.NET Core SDK](https://docs.microsoft.com/dotnet/core/sdk)， *.devinit.js* 會顯示如下：
+例如，若要安裝 [.NET Core SDK](/dotnet/core/sdk)， *.devinit.js* 會顯示如下：
 
 ```json
 {
@@ -192,7 +192,7 @@ Azure CLI 安裝在所有 Windows Codespace 環境中，而且可在 path as 上
 
 您可以從 `az login` Azure CLI [檔](/cli/azure/reference-index#az_login)中的命令進一步瞭解。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [什麼是 GitHub Codespaces？](codespaces-overview.md)
 - [如何搭配 codespace 使用 Visual Studio](use-visual-studio-with-codespaces.md)

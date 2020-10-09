@@ -12,12 +12,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: c00c37cc685cf6f0bd48ddf481a7c79d8ddcf77b
-ms.sourcegitcommit: 76845bf28da6d994666d5cdddfc5a2711d9a448d
+ms.openlocfilehash: 6ea81aab75b0499abb427d98e230b1f3909cef02
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91544796"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862264"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 
@@ -29,8 +29,8 @@ ms.locfileid: "91544796"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.8.0 | Preview 3。2 | 2020年9月29日 | 16.8.30524.135 |
-| 16.7.5 | 版本 | 2020年9月29日 |  16.7.30523.141 |
+| 16.8.0 | Preview 3。2 | 2020 年 9 月 29 日 | 16.8.30524.135 |
+| 16.7.5 | 版本 | 2020 年 9 月 29 日 |  16.7.30523.141 |
 | 16.8.0 | Preview 3。1 | 2020 年 9 月 22 日 | 16.8.30516.212 |
 | 16.7.4 | 版本 | 2020 年 9 月 21 日 | 16.7.30517.126 |
 | 16.8.0 | Preview 3 | 2020年9月14日 | 16.8.30509.190 |
@@ -352,13 +352,13 @@ ms.locfileid: "91544796"
 | 15.0.0 | 版本 | 2017 年 3 月 7 日 | 15.0.26228.4 |
 
 > [!NOTE]
-> 如需下一個 Visual Studio 版本的組建編號和發行日期詳細資訊，請參閱 [Visual Studio 2019 組建編號和發行日期](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019&preserve-view=true)頁面。
+> 如需下一個 Visual Studio 版本的組建編號和發行日期詳細資訊，請參閱 [Visual Studio 2019 組建編號和發行日期](?preserve-view=true&view=vs-2019)頁面。
 
 ::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [Visual Studio 藍圖](/visualstudio/productinfo/vs-roadmap)
 * [Visual Studio 發行節奏](/visualstudio/productinfo/release-rhythm)

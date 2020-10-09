@@ -14,12 +14,12 @@ ms.assetid: a8ce6fbf-8663-4770-8fba-677d04c84825
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acc91513cc7f230a150ca87eea5cddc4681e43d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68165a668a94aac30593a3ff35cfd1e172a98513
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816588"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861948"
 ---
 # <a name="expected--javascript"></a>必須是 '=' (JavaScript)
 您嘗試建立要搭配條件式編譯語句使用的變數，但未在變數和您想要指派給它的值之間放置等號。  
@@ -33,5 +33,5 @@ ms.locfileid: "85816588"
     ```  
   
 ## <a name="see-also"></a>另請參閱  
- [條件式編譯](../../javascript/advanced/conditional-compilation-javascript.md)   
- [條件式編譯變數](../../javascript/advanced/conditional-compilation-variables-javascript.md)
+ [條件式編譯](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/121hztk3(v=vs.84))   
+ [條件式編譯變數](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/s59bkzce(v=vs.84))

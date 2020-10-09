@@ -14,12 +14,12 @@ ms.assetid: 7fba49c9-9c95-4f46-b778-9c6ab33ab944
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 21cba6c63323775bbe7b0bcb49bfffd44d7be065
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d68cfc2d23dc4cfe207793d0b4c4004856b04303
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817290"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862524"
 ---
 # <a name="label-redefined"></a>已重新定義標籤
 您已建立新標籤，但為其提供現有標籤的名稱。 標籤可以用來標記程式碼區塊，但在指定的範圍內，它們必須是唯一的。  
@@ -28,8 +28,8 @@ ms.locfileid: "85817290"
   
 - 確定您在程式中使用的所有標籤在各自的範圍內都是唯一的。  
   
-## <a name="see-also"></a>另請參閱  
- [標記語句](../../javascript/reference/labeled-statement-javascript.md)   
- [switch 語句](../../javascript/reference/switch-statement-javascript.md)   
- [break 語句](../../javascript/reference/break-statement-javascript.md)   
- [continue 語句](../../javascript/reference/continue-statement-javascript.md)
+## <a name="see-also"></a>請參閱  
+ [標記語句](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/label)   
+ [switch 語句](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/switch)   
+ [break 語句](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/break)   
+ [continue 語句](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/continue)

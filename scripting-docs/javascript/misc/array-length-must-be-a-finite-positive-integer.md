@@ -14,12 +14,12 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa8b9a85c0c7457cb06d36fd3cd849ce48484b46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0b827e0cef5cd6c6ea4aeaddc9f32f02004c214
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817082"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862207"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>陣列長度必須是有限的正整數
 您使用不是整數的引數來呼叫 **陣列** 的函式， (整數包含零，再加上一組正整數) 。  
@@ -41,5 +41,5 @@ ms.locfileid: "85817082"
   
      陣列的大小沒有上限，除了最大整數值 (大約 4000000000) 。  
   
-## <a name="see-also"></a>另請參閱  
- [使用陣列](../../javascript/advanced/using-arrays-javascript.md)
+## <a name="see-also"></a>請參閱  
+ [使用陣列](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)

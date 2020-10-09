@@ -14,12 +14,12 @@ ms.assetid: 59a030b0-a6c6-47f2-b90e-c0ed204d5116
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da272529768f3227ce6e0ee3e0ebbf086140dd15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 91e32971013d2dfcf0ee2dc901d84681522c7e89
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816120"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861660"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>條件式編譯已經關閉
 您嘗試使用條件式編譯變數，而不需要先開啟的條件式編譯。 開啟條件式編譯會告知 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 編譯器將以 @ 開頭的識別碼作為條件式編譯變數來解讀。 若要這樣做，請使用語句來開始您的條件式程式碼：  
@@ -36,9 +36,9 @@ ms.locfileid: "85816120"
     /*@cc_on @*/  
     ```  
   
-## <a name="see-also"></a>另請參閱  
- [條件式編譯](../../javascript/advanced/conditional-compilation-javascript.md)   
- [條件式編譯變數](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_on 聲明](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [@if 聲明](../../javascript/reference/at-if-statement-javascript.md)   
- [@set 聲明](../../javascript/reference/at-set-statement-javascript.md)
+## <a name="see-also"></a>請參閱  
+ [條件式編譯](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/121hztk3(v=vs.84))   
+ [條件式編譯變數](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/s59bkzce(v=vs.84))   
+ [@cc_on 聲明](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/at-cc-on)   
+ [@if 聲明](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/at-if)   
+ [@set 聲明](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/at-set)

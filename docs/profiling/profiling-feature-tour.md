@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f382e8d20f3aa623ea241702e4795854e12f9a
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 511874b5dc7d7c45a1584e95e004a53088f8ea09
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100770"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861811"
 ---
 # <a name="first-look-at-profiling-tools"></a>初步認識分析工具
 
@@ -42,7 +42,7 @@ Visual Studio 提供各種不同的分析工具，可協助您依據應用程式
 **診斷工具**視窗是分析應用程式的常見方式，但針對發行組建，您也可以改為對應用程式進行事後剖析後的分析。 如需不同方法的詳細資訊，請參閱 [使用或不使用偵錯工具來執行程式碼剖析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 若要查看不同應用程式類型的程式碼剖析工具支援，請參閱 [應該使用哪一種工具？](#which-tool-should-i-use)
 
 診斷工具視窗或在調試過程中提供的工具組括：
-- [CPU 使用率](../profiling/beginners-guide-to-performance-profiling.md)
+- [CPU 使用量](../profiling/beginners-guide-to-performance-profiling.md)
 - [記憶體使用量](../profiling/memory-usage.md)
 - [效能提示](../profiling/perftips.md)
 
@@ -61,7 +61,7 @@ Visual Studio 提供各種不同的分析工具，可協助您依據應用程式
 
 效能分析工具中提供的工具組括：
 
-- [CPU 使用率](../profiling/cpu-usage.md)
+- [CPU 使用量](../profiling/cpu-usage.md)
 - [.NET 程式碼的記憶體使用量](../profiling/dotnet-alloc-tool.md)
 - [記憶體使用量](#analyze-memory-usage)
 - [.NET async 工具](../profiling/analyze-async.md)
@@ -226,7 +226,7 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 |[CPU 使用量](../profiling/beginners-guide-to-performance-profiling.md)|是|是|是|
 |[記憶體使用量](../profiling/memory-usage.md)|是|是|是|
 |[.NET 物件配置](../profiling/dotnet-alloc-tool.md)|是 ( 僅限 .NET) |是|是|
-|[GPU 使用量](/visualstudio/debugger/graphics/gpu-usage)|是|是|否|
+|[GPU 使用量](./gpu-usage.md)|是|是|否|
 |[應用程式時間軸](../profiling/application-timeline.md)|是 (XAML) |是|否|
 |[事件檢視器](../profiling/events-viewer.md)|是|是|是|
 |[.NET Async](../profiling/analyze-async.md)|是 ( 僅限 .NET) |是|是|
@@ -240,7 +240,7 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 |----------------------|---------------------|-------------|-------------|
 |[CPU 使用量](../profiling/beginners-guide-to-performance-profiling.md)|是|是|是|
 |[記憶體使用量](../profiling/memory-usage.md)|是|是|是|
-|[GPU 使用量](/visualstudio/debugger/graphics/gpu-usage)|是|是|否|
+|[GPU 使用量](./gpu-usage.md)|是|是|否|
 |[應用程式時間軸](../profiling/application-timeline.md)|是 (XAML) |是|否|
 |[效能提示](../profiling/perftips.md)|是|對 XAML 為是，對 HTML 為否|是|
 |[效能總管](../profiling/performance-explorer.md)|是|否|是|
@@ -251,5 +251,5 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 ::: moniker-end
 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 偵錯](../debugger/debugger-feature-tour.md)

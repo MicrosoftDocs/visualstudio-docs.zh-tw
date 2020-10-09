@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 633ed9c37e8ccde0844205910a8fa2dc12d91414
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa753a4ba3e0254ed7de026653759bbdcfce0631
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817615"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862314"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>不支援數值引數中的循環參考
 嘗試使用不正確值進行叫 `JSON.stringify` 用。 `value`引數（陣列或物件）包含迴圈參考。  
@@ -42,7 +42,7 @@ mary.brother = john;
 var error = JSON.stringify(john);  
 ```  
   
-## <a name="see-also"></a>另請參閱  
- [JSON 物件](../../javascript/reference/json-object-javascript.md)   
- [JSON. parse 函數](../../javascript/reference/json-parse-function-javascript.md)   
- [JavaScript 執行階段錯誤](../../javascript/reference/javascript-run-time-errors.md)
+## <a name="see-also"></a>請參閱  
+ [JSON 物件](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON)   
+ [JSON. parse 函數](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)   
+ [JavaScript 執行階段錯誤](/microsoft-edge/devtools-guide/console/error-and-status-codes#javascript-run-time-errors)
