@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 452af60c37e4a56996438cc2957e9b69ccee98ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6a77675a1cb618210d9c44104cf6397dda03c11
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816822"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862570"
 ---
 # <a name="invalid-replacer-argument"></a>無效的取代子引數
 嘗試使用不正確 `JSON.stringify` 引數進行叫用。 `replacer`引數必須是函式或陣列。  
@@ -44,7 +44,7 @@ var memberfilter = new Object();
 var jsontext = JSON.stringify(contact, memberfilter, "\t");  
 ```  
   
-## <a name="see-also"></a>另請參閱  
- [JSON 物件](../../javascript/reference/json-object-javascript.md)   
- [JSON. parse 函數](../../javascript/reference/json-parse-function-javascript.md)   
- [JavaScript 執行階段錯誤](../../javascript/reference/javascript-run-time-errors.md)
+## <a name="see-also"></a>請參閱  
+ [JSON 物件](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON)   
+ [JSON. parse 函數](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)   
+ [JavaScript 執行階段錯誤](/microsoft-edge/devtools-guide/console/error-and-status-codes#javascript-run-time-errors)

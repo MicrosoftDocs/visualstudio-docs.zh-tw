@@ -14,12 +14,12 @@ ms.assetid: 79e32926-b03f-457b-997c-2bb2ec8a1ec5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3af2451efdea5ac3f71ae17fc5919e9f443e86db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f43181affb8048bc9c39c0ee3e844193cd2247c8
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815756"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862544"
 ---
 # <a name="label-not-found"></a>找不到標籤
 您已對不存在的標籤進行參考。 標籤可以用來標記程式碼區塊，但在指定的範圍內，必須是唯一的。  
@@ -30,8 +30,8 @@ ms.locfileid: "85815756"
   
 - 確定已對目前範圍中定義的標籤進行所有標籤參考 (這包括) 的向前定義。  
   
-## <a name="see-also"></a>另請參閱  
- [標記語句](../../javascript/reference/labeled-statement-javascript.md)   
- [switch 語句](../../javascript/reference/switch-statement-javascript.md)   
- [break 語句](../../javascript/reference/break-statement-javascript.md)   
- [continue 語句](../../javascript/reference/continue-statement-javascript.md)
+## <a name="see-also"></a>請參閱  
+ [標記語句](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/label)   
+ [switch 語句](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/switch)   
+ [break 語句](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/break)   
+ [continue 語句](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/continue)

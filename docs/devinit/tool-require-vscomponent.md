@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7c47c219fa0c0ef32946d6e0500bc37ce9aec0ff
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: e88f1b58308d0c81d17f9337f0a1a1d5e253c6ba
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005034"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862825"
 ---
 # <a name="require-vscomponent"></a>require-vscomponent
 
-此 `require-vscomponent` 工具可用來將 Visual Studio 設定匯入現有的 Visual Studio。 如需詳細資訊，請參閱 `.vsconfig` [ ](https://docs.microsoft.com/visualstudio/install/import-export-installation-configurations)。
+此 `require-vscomponent` 工具可用來將 Visual Studio 設定匯入現有的 Visual Studio。 如需詳細資訊，請參閱 `.vsconfig` [ ](../install/import-export-installation-configurations.md)。
 
-## <a name="usage"></a>使用方式
+## <a name="usage"></a>使用量
 
 如果 `input` 和 `additionalOptions` 屬性都省略或空白，則工具將會遵循以下詳述的 [預設](#default-behavior) 行為。
 

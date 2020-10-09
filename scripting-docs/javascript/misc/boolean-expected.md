@@ -14,12 +14,12 @@ ms.assetid: 35d71b7f-53fd-44c4-a7c7-b1550c65cfd4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4dbb7e55f6afe6d3edfe4e98749807732ffa05ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6d88815a33187e209bcba248d3c363afdd91227
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817667"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862653"
 ---
 # <a name="boolean-expected"></a>必須是布林
 您嘗試在 **的型別的** 物件上叫用 **valueOf** 方法，而不是 `Boolean` 。 這種調用類型的物件必須是型別 `Boolean` 。 例如：
@@ -34,9 +34,9 @@ o.f();
 
 - 只在**布林值**類型的物件上叫用**valueOf** **方法。**
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [Boolean 物件](../../javascript/reference/boolean-object-javascript.md)
-- [Data types (資料類型)](../../javascript/data-types-javascript.md)
-- [控制程式流程](../../javascript/controlling-program-flow-javascript.md)
-- [複製、傳遞和比較資料](../../javascript/advanced/copying-passing-and-comparing-data-javascript.md)
+- [Boolean 物件](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+- [Data types (資料類型)](https://developer.mozilla.org/docs/Web/JavaScript/Data_structures)
+- [控制程式流程](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+- [複製、傳遞和比較資料](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Functions)

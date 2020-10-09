@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7671d336e3c4f86cae8b6bba7fe1b35443aa0632
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 102b6d4284958b80607e991c998f274c6e0e46bf
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005114"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862850"
 ---
 # <a name="nuget-restore"></a>nuget-restore
 
-此 `nuget-restore` 工具會還原專案檔中所指定的相依性和專案特有工具。 請 [在這裡](https://docs.microsoft.com/nuget/reference/cli-reference/cli-ref-restore)閱讀 NuGet 還原的詳細資訊。
+此 `nuget-restore` 工具會還原專案檔中所指定的相依性和專案特有工具。 請 [在這裡](/nuget/reference/cli-reference/cli-ref-restore)閱讀 NuGet 還原的詳細資訊。
 
-## <a name="usage"></a>使用方式
+## <a name="usage"></a>使用量
 
 如果 `input` 和 `additionalOptions` 屬性都省略或空白，則工具將會遵循以下詳述的 [預設](#default-behavior) 行為。
 

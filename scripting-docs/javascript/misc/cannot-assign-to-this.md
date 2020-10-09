@@ -14,12 +14,12 @@ ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5c52153da64ff477d89b09d4af17169da18e4e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8985c7201a8e315353dd89ab5e1f5a3ad3b403ea
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817316"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862771"
 ---
 # <a name="cannot-assign-to-this"></a>無法指派給 'this'
 您已嘗試將值指派給 **此**值。 **這** 是 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 代表下列其中一個關鍵字的關鍵字：
@@ -39,7 +39,7 @@ ms.locfileid: "85817316"
   > [!NOTE]
   > 您無法將使用者建立 **的變數命名**為：它是 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 保留字。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [這個語句](../../javascript/reference/this-statement-javascript.md)
-- [指令碼疑難排解](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
+- [這個語句](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/this)
+- [指令碼疑難排解](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/What_went_wrong)

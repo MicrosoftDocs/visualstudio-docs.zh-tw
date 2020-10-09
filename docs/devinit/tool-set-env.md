@@ -11,20 +11,20 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 2f4ec5489f22e94ad8f57f22ddc7742dc0ae3ade
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 19f635f0d22eacd64726368af89bbf5b7c4c9a11
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005992"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862844"
 ---
 # <a name="set-env"></a>set-env
 
 此 `set-env` 工具可用來設定要在目前進程中使用的環境變數。 環境變數只會在目前的進程中設定，而其他 `devinit` 工具在該進程中執行時，將會使用這些變數。
 
-這項工具會使用 .NET Core `Environment.SetEnvironment` API，並具有與該 api 相同的限制。 如需詳細資訊，請參閱[documentation](https://docs.microsoft.com/dotnet/api/system.environment.setenvironmentvariable?view=netcore-3.1&preserve-view=true)的檔 `Environment.SetEnvironment` 。
+這項工具會使用 .NET Core `Environment.SetEnvironment` API，並具有與該 api 相同的限制。 如需詳細資訊，請參閱[documentation](/dotnet/api/system.environment.setenvironmentvariable?preserve-view=true&view=netcore-3.1)的檔 `Environment.SetEnvironment` 。
 
-## <a name="usage"></a>使用方式
+## <a name="usage"></a>使用量
 
 | 名稱                                         | 類型   | 必要 | 值                                                                       |
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------|
@@ -51,7 +51,7 @@ ms.locfileid: "91005992"
 
 ## <a name="usage-in-a-codespace"></a>Codespace 中的使用方式
 
-如果您使用的是 codespace，可以透過 customizating 檔案中的屬性，來設定 codespace 中使用的環境變數 `remoteEnv` [`.devcontainer.json`](https://docs.microsoft.com/visualstudio/codespaces/reference/configuring) 。
+如果您使用的是 codespace，可以透過 customizating 檔案中的屬性，來設定 codespace 中使用的環境變數 `remoteEnv` [`.devcontainer.json`](/visualstudio/codespaces/reference/configuring) 。
 
 ## <a name="example-usage"></a>使用方式範例
 

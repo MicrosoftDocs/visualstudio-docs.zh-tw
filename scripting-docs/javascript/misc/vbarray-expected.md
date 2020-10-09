@@ -14,12 +14,12 @@ ms.assetid: f2998d7d-13a4-4bbe-b872-3ff3316551e4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09ab257e6c473e2747a24559200e7b1f432d5687
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b4e6521e5d363c21311b19e2ecc1679981acac3
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815275"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862700"
 ---
 # <a name="vbarray-expected"></a>必須是 VBArray
 您提供了一個不是 Visual Basic safeArray 的物件（如果預期的話）。  
@@ -34,6 +34,6 @@ new VBArray(safeArray);
   
 - 確定您只將 **VBArray** 物件傳遞至 **VBArray** 的函式。  
   
-## <a name="see-also"></a>另請參閱  
- [VBArray 物件](../../javascript/reference/vbarray-object-javascript.md)   
- [使用陣列](../../javascript/advanced/using-arrays-javascript.md)
+## <a name="see-also"></a>請參閱  
+ [VBArray 物件](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/VBArray)   
+ [使用陣列](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)

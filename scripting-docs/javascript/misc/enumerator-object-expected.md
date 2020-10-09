@@ -14,12 +14,12 @@ ms.assetid: dc6e32c1-a6e6-4e12-ac99-e3f65f91c8d7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff61894ce808cd33876e876c596e791a3347ab72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e63ee2970c90ffcfff5c02a384d3346b3ea6229
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817589"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862637"
 ---
 # <a name="enumerator-object-expected"></a>必須是列舉值物件
 您嘗試在以外的類型物件上叫用 **atEnd、** 列舉值、MoveFirst 或列舉值。 **moveNext** 方法的方法是，而不是 `Enumerator` 。 這種調用類型的物件必須是型別 `Enumerator` 。 以下是中斷此規則的程式碼範例：  
@@ -38,5 +38,5 @@ o.f();
     if(x instanceof Enumerator)  
     ```  
   
-## <a name="see-also"></a>另請參閱  
- [Enumerator 物件](../../javascript/reference/enumerator-object-javascript.md)
+## <a name="see-also"></a>請參閱  
+ [Enumerator 物件](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/Enumerator)
