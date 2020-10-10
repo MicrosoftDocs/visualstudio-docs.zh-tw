@@ -12,8 +12,7 @@
         "exclude": [
           "**/obj/**",
           "vsdocsdocs/**",
-          "**/includes/**",
-          "missingapi.yml"
+          "**/includes/**"
         ]
       },
       {
@@ -27,7 +26,6 @@
           "**/obj/**",
           "vsdocsdocs/**",
           "**/includes/**",
-          "missingapi.yml",
           "vs-2015/**"
         ]
       }
@@ -45,8 +43,7 @@
         "exclude": [
           "**/obj/**",
           "vsdocsdocs/**",
-          "**/includes/**",
-          "missingapi.yml"
+          "**/includes/**"
         ]
       },
       {
@@ -62,7 +59,6 @@
           "**/obj/**",
           "vsdocsdocs/**",
           "**/includes/**",
-          "missingapi.yml",
           "vs-2015/**"
         ]
       }
@@ -74,6 +70,7 @@
       "feedback_github_repo": "MicrosoftDocs/visualstudio-docs.zh-tw",
       "feedback_product_url": "https://developercommunity.visualstudio.com/",
       "breadcrumb_path": "/visualstudio/_breadcrumb/toc.json",
+      "bilingual_type": "hover over",
       "extendBreadcrumb": "true",
       "manager": "jillfra",
       "author": "jillre",
@@ -100,6 +97,9 @@
       ]
     },
     "fileMetadata": {
+      "open_to_public_contributors": {
+        "vs-2015/**/**.md": false
+      },
       "ms.prod": {
         "rtvs/**/**.md": "visual-studio-dev15",
         "vs-2015/**/**.md": "visual-studio-dev14"
@@ -153,9 +153,7 @@
       }
     },
     "template": [],
-    "xref": [
-      "missingapi.yml"
-    ],
+    "xref": [],
     "dest": "vsdocsdocs",
     "groups": {
       "vs-2015": {
