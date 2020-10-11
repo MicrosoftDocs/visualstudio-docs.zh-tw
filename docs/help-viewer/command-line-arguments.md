@@ -1,5 +1,6 @@
 ---
 title: Help Content Manager 的命令列引數
+description: '使用 Help Content Manager 的命令列引數 ( # A0) 來指定如何部署和管理本機說明內容。'
 ms.date: 11/01/2017
 ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9bead01c6440d5232a91a5e8fe2007b3e30340c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24011c50cf6f8d2204abdaa8b6119f7873470bcf
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72631970"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879043"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Help Content Manager 的命令列引數
 
@@ -46,7 +47,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sou
 
 下表定義的參數和引數可讓您在 Help Content Manager 的命令列工具使用：
 
-|交換器|必要？|引數|
+|參數|必要？|引數|
 |------------|---------------|---------------|
 |/operation|是|-   **安裝** -- 從指定的安裝來源將書籍新增至本機內容存放區。<br />     這個參數需要 /booklist 引數或 /sourceURI 引數，或是兩者同時使用。 如果您未指定 /sourceURI 引數，則會把預設的 Visual Studio URI 當成安裝來源。 如果您未指定 /booklist 引數，就會安裝 /sourceUri 上的所有書籍。<br />-   **解除安裝** -- 從本機內容存放區中移除您指定的書籍。<br />     這個參數需要 /booklist 引數或 /sourceURI 引數。  如果您指定 /sourceURI 引數，則會移除所有書籍，並會忽略 /booklist 引數。<br />-   **移動** -- 將本機存放區移至您指定的路徑。 預設本機存放區路徑設定為 *% ProgramData%* 下的目錄<br />     這個參數需要 /locationPath 和 /catalogName 引數。 如果您指定無效的路徑，或磁碟機未包含足夠的可用空間來容納內容，就會在事件記錄檔中記錄錯誤訊息。<br />-   **重新整理** -- 更新已變更的主題，因為它們已安裝或最近更新過。<br />     這個參數需要 /sourceURI 引數。|
 |/catalogName|是|指定內容目錄的名稱。 針對 Visual Studio 2017 和 Visual Studio 2019，這是 VisualStudio15。|

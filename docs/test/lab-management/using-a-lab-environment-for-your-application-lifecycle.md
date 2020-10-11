@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 4c1cdbea77f8a14e8f4cedcd53b54e2eac65cf75
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1a5958b03b9797882b3df37f4ba99c75ff832d22
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037220"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928104"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>使用實驗室環境進行開發
 
@@ -45,7 +45,7 @@ ms.locfileid: "90037220"
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>使用雲端搭配 Azure Pipelines 或 Team Foundation Server 的建置和發行
 
-您可以使用 Team Foundation Server (TFS) 和 Azure Test Plans 的[建置和發行](/azure/devops/pipelines/index?view=vsts)功能，來執行自動化的測試及「建置 - 部署 - 測試」自動化。 其中一些優點包括：
+您可以使用 Team Foundation Server (TFS) 和 Azure Test Plans 的[建置和發行](/azure/devops/pipelines/index?view=vsts&preserve-view=true)功能，來執行自動化的測試及「建置 - 部署 - 測試」自動化。 其中一些優點包括：
 
 * 您不需要組建控制器或測試控制器。
 * 測試代理程式是透過工作，安裝為組建或版本的一部分。
@@ -94,13 +94,13 @@ Lab Management 會在您環境中的每部電腦上自動安裝測試代理程�
 > [!NOTE]
 > Lab Management 不支援 SCVMM 2016。
 
-如需 SCVMM 的相關資訊，請參閱 [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts)。
+如需 SCVMM 的相關資訊，請參閱 [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts&preserve-view=true)。
 
 標準環境和 SCVMM 環境支援許多相同的功能。 但是有一些重大差異要考慮。 下表比較標準環境和 SCVMM 環境中可用的功能。
 
 |功能|SCVMM 環境|標準環境|
 |-|------------------------|-|
-|**測試**|||
+|**** 測試：|||
 |執行手動測試|支援|支援|
 |執行自動程式碼 UI 及其他自動化測試|支援|支援|
 |使用診斷配接器提報大量 Bug|支援|支援|

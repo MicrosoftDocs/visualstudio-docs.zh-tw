@@ -1,6 +1,7 @@
 ---
 title: Visual Studio 的 Android 模擬器 | Microsoft Docs
-ms.custom: ''
+description: 瞭解適用于 Android 的 Visual Studio 模擬器是可模擬 Android 裝置的桌面應用程式。
+ms.custom: SEO-VS-2020
 ms.prod: visual-studio-dev15
 ms.date: 03/09/2020
 ms.technology: vs-ide-mobile
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 36836d8e65f6ef8b5d31b5d2fa3d3a27ba8fecda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26e14cb0f87956d67111f953b148f78dee38b3c5
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79023518"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878900"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android
 

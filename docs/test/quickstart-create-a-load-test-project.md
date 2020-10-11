@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4f186e8c10d894b98e789480046d43fc957edd8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d883d531737caf32ec202955ff951382b5ff9009
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566406"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928576"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>快速入門：建立負載測試專案
 
@@ -78,7 +78,7 @@ ms.locfileid: "75566406"
 
    [新增負載測試精靈]**** 隨即開啟。
 
-1. 選取 [內部部署負載測試]**** 選項，然後選擇 [下一步]****。 您可以在[這裡](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts)深入了解雲端式負載測試。
+1. 選取 [內部部署負載測試]**** 選項，然後選擇 [下一步]****。 您可以在[這裡](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts&preserve-view=true)深入了解雲端式負載測試。
 
    ![新增負載測試精靈 - 第一頁](media/load-test-wizard-page-1.png)
 

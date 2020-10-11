@@ -1,5 +1,6 @@
 ---
 title: Help Viewer 系統管理員指南
+description: 閱讀 Microsoft Help Viewer 系統管理員指南。 從網際網路部署本機說明內容，或在用戶端電腦上部署預先安裝的本機說明內容。
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 037ee411c156d21145160dc95b40078fd841493c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 312b886ee0becc794f657ecaaba7fb028d4b3cf1
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825118"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878887"
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer 系統管理員指南
 
@@ -124,7 +125,7 @@ ms.locfileid: "67825118"
 
      `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o`
 
-     例如：`Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`
+     例如： `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`
 
 ### <a name="deploy-the-content"></a>部署內容
 

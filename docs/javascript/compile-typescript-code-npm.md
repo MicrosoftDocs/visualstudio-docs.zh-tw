@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d70f1e95ce2dd5163eb017684620c403a77f74a
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: bfd019848e62abf4e6f25913d29d26d1a1bde6a5
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740028"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927896"
 ---
 # <a name="compile-typescript-code-nodejs"></a>編譯 TypeScript 程式碼 ( # A0) 
 
@@ -112,6 +112,10 @@ ms.locfileid: "90740028"
    如果您產生來源對應，請開啟 *outDir* 選項中指定的資料夾，然後您會找到產生的 \* .js 檔案 (s) 以及產生的 \* js. 對應檔 (s) 。
 
    需要來源對應檔案才能進行 [調試](../javascript/debug-nodejs.md)程式。
+
+### <a name="run-the-application"></a>執行應用程式
+
+如需在編譯後執行應用程式的指示，請參閱 [建立您的第一個 Node.js 應用程式](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application)。
 
 ## <a name="automate-build-tasks"></a>將組建工作自動化
 

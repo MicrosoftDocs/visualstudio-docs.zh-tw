@@ -1,6 +1,7 @@
 ---
 title: 容器的進階範例
-description: ''
+description: 深入瞭解 Docker 容器的 advanced 範例。 此範例 Dockerfile 會使用 microsoft/dotnet framework 映射的特定版本戳記。
+ms.custom: SEO-VS-2020
 ms.date: 03/25/2020
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
@@ -11,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4dd40d332f0f549ad1efbf0b328c68feb56819b8
-ms.sourcegitcommit: d9dd86c421532cfca6c0c5761d160f35829419c6
+ms.openlocfilehash: 5103d9a053a1a2a8bd3a672c33037695ee3d2836
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90025548"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928693"
 ---
 # <a name="advanced-example-for-containers"></a>容器的進階範例
 

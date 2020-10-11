@@ -1,5 +1,6 @@
 ---
 title: '搜尋運算式中的邏輯運算子 (說明檢視器) '
+description: 瞭解如何使用邏輯運算子和 advanced search 運算子來精簡 Microsoft Help Viewer 中的搜尋運算式。
 ms.custom: SEO-VS-2020
 ms.date: 11/02/2017
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9daceca2540a2da61a46e12a458c012ce7851001
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2bfa869bed2bc4462c050ac77e08665958f60598
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038630"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878926"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>搜尋運算式中的邏輯與進階運算子
 
@@ -30,7 +31,7 @@ ms.locfileid: "90038630"
 |搜尋|用法|範例|結果|
 |-------------------|---------|-------------|------------|
 |相同文章中的兩個詞彙|AND|dib AND palette|包含 "dib" 和 "palette" 的主題。|
-|文章中的任一個詞彙|或者|raster OR vector|包含 "raster" 或 "vector" 的主題。|
+|文章中的任一個詞彙|OR|raster OR vector|包含 "raster" 或 "vector" 的主題。|
 |相同文章中沒有第二個詞彙的第一個詞彙|NOT|"operating system" NOT DOS|包含 "operating system" 但沒有 "DOS" 的主題。|
 |文章中接近的兩個詞彙|NEAR|user NEAR kernel|包含十分接近 "kernel" 之 "user" 的主題。|
 

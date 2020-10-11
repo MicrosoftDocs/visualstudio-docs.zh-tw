@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9938d017d683fd27a3f303824f9568a3876c2c4d
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89311998"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928039"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>歡迎使用 Visual Studio IDE | Visual Basic
 
@@ -42,7 +42,7 @@ Visual Studio「整合式開發環境」** 是一個有創意的啟動控制板�
 
 - [輸出視窗](../../ide/reference/output-window.md) (中下) 是 Visual Studio 傳送通知的位置，例如偵錯和錯誤訊息、編譯器警告、發佈狀態訊息等。 每個訊息來源都有自己的索引標籤。
 
-- [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (右下) 可讓您追蹤工作項目，並使用版本控制技術 (例如 [Git](https://git-scm.com/) 和 [Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts)) 與其他人共用程式碼。
+- [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts&preserve-view=true) (右下) 可讓您追蹤工作項目，並使用版本控制技術 (例如 [Git](https://git-scm.com/) 和 [Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true)) 與其他人共用程式碼。
 
 ## <a name="editions"></a>版本
 

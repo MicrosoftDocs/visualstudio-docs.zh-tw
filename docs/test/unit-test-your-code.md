@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ffe383d2195feb6689954a8ec858b196bae8c06a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7833d320ecbaefbd2290d0a65ec4b32f802e403
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565990"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927948"
 ---
 # <a name="unit-test-your-code"></a>對程式碼進行單元測試
 
@@ -47,8 +47,8 @@ ms.locfileid: "75565990"
 |**對 C++ 程式碼進行單元測試**|- [撰寫適用于 C/c + + 的單元測試](../test/writing-unit-tests-for-c-cpp.md)|
 |**隔離單元測試**|- [使用 Microsoft Fakes 隔離測試中的程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**使用程式碼涵蓋範圍來識別測試專案程式碼的哪個部分：** 了解 Visual Studio 測試工具的程式碼涵蓋範圍功能。|- [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**使用負載測試來執行壓力與效能分析：** 瞭解如何建立負載測試，以協助找出應用程式中的效能與壓力問題。|- [快速入門：建立負載測試專案](../test/quickstart-create-a-load-test-project.md)<br />- [負載測試 (Azure Test Plans 和 TFS)](/azure/devops/test/load-test/index?view=vsts)|
-|**設定品質閘道：** 瞭解如何建立品質閘道，以強制執行在簽入或合併程式碼之前執行的測試。|- [簽入原則 (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**使用負載測試來執行壓力與效能分析：** 瞭解如何建立負載測試，以協助找出應用程式中的效能與壓力問題。|- [快速入門：建立負載測試專案](../test/quickstart-create-a-load-test-project.md)<br />- [負載測試 (Azure Test Plans 和 TFS)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
+|**設定品質閘道：** 瞭解如何建立品質閘道，以強制執行在簽入或合併程式碼之前執行的測試。|- [簽入原則 (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts&preserve-view=true)|
 |**設定測試選項：** 瞭解如何設定測試選項，例如儲存測試結果的位置。|[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>API 參考文件

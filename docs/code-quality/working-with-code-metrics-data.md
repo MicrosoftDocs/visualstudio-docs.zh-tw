@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c01543b290d991a189c0851c64526c9c513068ba
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587078"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927974"
 ---
 # <a name="use-the-code-metrics-results-window"></a>使用程式碼度量結果視窗
 
@@ -82,9 +82,9 @@ ms.locfileid: "75587078"
 
 ## <a name="create-a-work-item-based-on-code-metric-results"></a>根據程式碼度量結果建立工作專案
 
-您可以根據 [程式**代碼度量結果**] 視窗中的結果來建立[Azure Boards](/azure/devops/boards/index?view=vsts)工作專案。 建立工作專案時，Visual Studio 會在 [**記錄**] 索引標籤下的 [**標題**] 欄位和 [程式碼度量] 資料中自動輸入標題。
+您可以根據 [程式**代碼度量結果**] 視窗中的結果來建立[Azure Boards](/azure/devops/boards/index?view=vsts&preserve-view=true)工作專案。 建立工作專案時，Visual Studio 會在 [**記錄**] 索引標籤下的 [**標題**] 欄位和 [程式碼度量] 資料中自動輸入標題。
 
-如需 Azure Boards 工作專案的詳細資訊，請參閱 [工作專案](/azure/devops/boards/work-items/index?view=vsts)。
+如需 Azure Boards 工作專案的詳細資訊，請參閱 [工作專案](/azure/devops/boards/work-items/index?view=vsts&preserve-view=true)。
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>若要根據結果建立工作專案
 

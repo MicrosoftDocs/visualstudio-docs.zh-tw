@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bd2a6cc947c5f52212029bebe590d59906f5aee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07338e83f0c58331345cd3f4c6eb61855a16fd4f
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591160"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928485"
 ---
 # <a name="codeindex-command"></a>CodeIndex 命令
 
@@ -25,7 +25,7 @@ ms.locfileid: "75591160"
 
 ## <a name="required-permissions"></a>所需的權限
 
-您必須是 **Team Foundation Administrators** 安全性群組的成員，才能使用 **CodeIndex** 命令。 請參閱 [Permissions and groups defined for Azure DevOps Services and TFS](/azure/devops/organizations/security/permissions?view=vsts) (針對 Azure DevOps Services 和 TFS 定義的權限和群組)。
+您必須是 **Team Foundation Administrators** 安全性群組的成員，才能使用 **CodeIndex** 命令。 請參閱 [Permissions and groups defined for Azure DevOps Services and TFS](/azure/devops/organizations/security/permissions?view=vsts&preserve-view=true) (針對 Azure DevOps Services 和 TFS 定義的權限和群組)。
 
 > [!NOTE]
 > 即使使用系統管理認證登入，您依然必須開啟更高權限的命令提示字元視窗才能執行此命令。 您也必須從 Team Foundation 應用程式層執行這個命令。
@@ -38,7 +38,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 ### <a name="parameters"></a>參數
 
-|**Argument**|**描述**|
+|**Argument**|**說明**|
 |------------------| - |
 |`CollectionName`|指定專案集合的名稱。 如果名稱包含空格，請為名稱加上引號，例如，"Fabrikam Website"。|
 |`CollectionId`|指定專案集合的識別號碼。|

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b9eec66ec24c30b6e0df835d16805ea00eb08ac2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1404386445d24284a2231ed557a65568fdb1ba2b
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371764"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928013"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>為受控碼實作自訂程式碼分析簽入原則
 
@@ -58,7 +58,7 @@ ms.locfileid: "85371764"
 
 1. 在 **原始檔控制總管**中，以滑鼠右鍵按一下新資料夾，然後按一下 [ **將專案加入資料夾**]。
 
-     如需詳細資訊，請參閱 [Git 和 Azure Repos](/azure/devops/repos/git/overview?view=vsts)。
+     如需詳細資訊，請參閱 [Git 和 Azure Repos](/azure/devops/repos/git/overview?view=vsts&preserve-view=true)。
 
 2. 按一下您建立的規則集檔案，然後按一下 **[完成]**。
 

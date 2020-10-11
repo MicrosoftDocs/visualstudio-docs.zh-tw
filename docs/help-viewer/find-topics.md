@@ -1,5 +1,6 @@
 ---
 title: 搜尋主題 (說明檢視器)
+description: 瞭解如何搜尋 Microsoft Help Viewer 中的主題。 使用萬用字元運算式、邏輯運算子和 advanced search 運算子自訂搜尋。
 ms.date: 11/02/2017
 ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4581d7ea0b40e2b6b519f0beafaee8744e0b46c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46eb9c21b5bc6f7d0a577b85d043933b48bf60bc
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284915"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878991"
 ---
 # <a name="how-to-search-for-topics"></a>如何：搜尋主題
 

@@ -1,6 +1,7 @@
 ---
 title: 進行 Android 版 Visual Studio 模擬器的疑難排解 | Microsoft Docs
-ms.custom: ''
+description: 瞭解當您使用適用于 Android 的 Visual Studio 模擬器時，可能會遇到的問題的資訊，可協助您解決問題。
+ms.custom: SEO-VS-2020
 ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
@@ -12,12 +13,12 @@ manager: crdun
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfcae9ac15292a52a79c97b5b67e758b9dc0dcde
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24af3c279115322b0592faa3b9fa6049bc0c0b62
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386299"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878913"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>針對 Visual Studio 的 Android 模擬器進行疑難排解
 本主題所包含的資訊，可協助您解決使用 Visual Studio 的 Android 模擬器時可能遇到的問題。
@@ -263,7 +264,7 @@ ms.locfileid: "86386299"
 
 - 從 [開始] 按鈕內容功能選取 [執行] **** ，在對話方塊中輸入 `regedit` ，然後選擇 [確定] ****，以開啟登錄編輯程式。
 
-- 在左側的資料夾樹狀結構中，流覽至 *HKEY_LOCAL_MACHINE \software\wow6432node\android SDK Tools* 。
+- 在左側的資料夾樹狀結構中，流覽至 *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools* 。
 
 - 修改 [路徑] **** 登錄變數，以符合您的 Android SDK 路徑。
 

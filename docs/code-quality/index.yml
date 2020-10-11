@@ -10,12 +10,12 @@ metadata:
   author: Mikejo5000
   ms.author: mikejo
   ms.date: 10/15/2019
-  ms.openlocfilehash: 149019a9eea62c9f88acee61e7ace997cdc179da
-  ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+  ms.openlocfilehash: b660af5dbe18c54a4b1871d2e00311bf31471662
+  ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/07/2020
-  ms.locfileid: "91780893"
+  ms.lasthandoff: 10/09/2020
+  ms.locfileid: "91928000"
 landingContent:
 - title: 設定 .NET 程式碼分析
   linkLists:
@@ -32,7 +32,7 @@ landingContent:
     - text: .NET 程式碼分析
       url: use-roslyn-analyzers.md
     - text: .NET 程式碼品質分析
-      url: /dotnet/fundamentals/code-analysis/configuration-files?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+      url: /dotnet/fundamentals/code-analysis/configuration-files?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
     - text: .NET 程式碼樣式分析
       url: ../ide/code-styles-and-code-cleanup.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
 - title: .NET 程式碼分析

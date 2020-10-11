@@ -1,5 +1,7 @@
 ---
 title: 並存安裝 Visual Studio 版本
+description: 瞭解如何在已安裝舊版或更新版本 Visual Studio 的電腦上安裝 Visual Studio。
+ms.custom: SEO-VS-2020
 ms.date: 07/24/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
@@ -11,12 +13,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 1a57d124029f5c654d41dcea621d6df95e29842f
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: ff62f07f3b1c5cc72488320b05d6ff9649fb5795
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211309"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928628"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>並存安裝 Visual Studio 版本
 
@@ -48,7 +50,7 @@ ms.locfileid: "91211309"
 
 ## <a name="install-minor-visual-studio-versions-side-by-side"></a>並存安裝次要 Visual Studio 版本
 
-從 Visual Studio 的次要版本升級到下一個版本時，Visual Studio 安裝程式預設會將您目前的安裝更新至該通道中的下一個版本。 例如，安裝 16.6.4 Preview 時，安裝程式會嘗試取代您目前的 16.6.3 Preview 安裝，因為這兩個版本都在 16.6 Preview 通道中。 這有助於確保舊版 Visual Studio 不佔用您電腦上的空間。 在某些特定情況下，並存安裝次要版本可能會很有説明。 在我們的範例中，這表示在同一部電腦上同時有16.6.3 和16.6.4。
+從 Visual Studio 的次要版本升級到下一個版本時，Visual Studio 安裝程式預設會將您目前的安裝更新至該通道中的下一個版本。 例如，安裝 16.6.4 Preview 時，安裝程式會嘗試取代您目前的 16.6.3 Preview 安裝，因為這兩個版本都在 16.6 Preview 通道中。 這有助於確保較舊版本的 Visual Studio 不佔用您電腦上的空間。 在某些特定情況下，並存安裝次要版本可能會很有説明。 在我們的範例中，這表示在同一部電腦上同時有16.6.3 和16.6.4。
 
 1. 針對您要與現有 Visual Studio 版本並存安裝的次要版本，下載 [Visual Studio](/visualstudio/releases/2019/history#installing-an-earlier-release) 的啟動載入器檔案。
 2. 以系統管理員模式開啟命令提示字元。 若要這樣做，請開啟 Windows [開始] 功能表，輸入 "cmd"，以滑鼠右鍵按一下命令提示字元搜尋結果，然後選取 [以 **系統管理員身分執行**]。 在命令提示字元中，將目錄變更為您 Visual Studio 啟動載入器檔案所在的資料夾。
@@ -73,7 +75,7 @@ Visual Basic、Visual C# 或 Visual F# 專案中 [專案設計工具] **** 使�
 
 ::: moniker range="vs-2017"
 
-| 語言 | 主題 |
+| Language | 主題 |
 |--------------|-----------|
 | Visual Basic | [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017&preserve-view=true) |
 | Visual C# | [專案設計工具，應用程式頁 (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017&preserve-view=true) |
@@ -92,7 +94,7 @@ Visual Basic、Visual C# 或 Visual F# 專案中 [專案設計工具] **** 使�
 
 ::: moniker range=">= vs-2019"
 
-| 語言 | 主題 |
+| Language | 主題 |
 |--------------|-----------|
 | Visual Basic | [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
 | Visual C# | [專案設計工具，應用程式頁 (C#)](../ide/reference/application-page-project-designer-csharp.md) |

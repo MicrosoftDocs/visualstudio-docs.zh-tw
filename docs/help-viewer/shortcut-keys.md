@@ -1,5 +1,6 @@
 ---
 title: 快速鍵 (Help Viewer)
+description: 請參閱 Microsoft Help Viewer 中的快速鍵清單。 使用快速鍵進行導覽、視窗管理和內容管理。
 ms.date: 11/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f7c49eadcfa0b73997f9902bdde0b8a9c98065e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 264917d515e25823f8d6c2cb522e85dcc9c47d84
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533728"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878952"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>說明檢視器中的快速鍵
 
@@ -27,7 +28,7 @@ ms.locfileid: "85533728"
 |一般應用程式|**空間**|在編輯欄位以外的位置，若不使用 **Enter**，可改用此選項。|
 |一般應用程式|**F1**|開啟目前 UI 項目的 [說明]****。|
 |一般應用程式|**F11**|在全螢幕檢視與一般檢視之間切換。|
-|工具列|**退格鍵**<br /><br /> -或-<br /><br /> **Alt** +**向左箭**號|顯示上一頁。|
+|工具列|**格**<br /><br /> -或-<br /><br /> **Alt** +**向左箭**號|顯示上一頁。|
 |工具列|**Alt** +**向右箭**號|顯示下一頁。|
 |工具列|**Alt** +**首頁**|顯示 **Help Reviewer** 的首頁。|
 |工具列|**Ctrl** +**S**|反白顯示目前目錄中的主題 (於 [內容]**** 索引標籤)。|

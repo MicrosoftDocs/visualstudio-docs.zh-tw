@@ -1,5 +1,6 @@
 ---
 title: 針對即時 ASP.NET Azure 應用程式進行偵錯
+titleSuffix: Visual Studio Enterprise
 description: 了解如何設定快照集，以及使用快照偵錯工具檢視快照集。
 ms.custom: ''
 ms.date: 03/16/2018
@@ -12,12 +13,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 07ebe8a583717689ca424bf969e7c19e87ebf08e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 526f7b7cc1af3dd5a370c74baa09cbab50b3d866
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350663"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879082"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>使用快照偵錯工具針對即時 ASP.NET Azure 應用程式進行偵錯
 
@@ -32,7 +33,7 @@ ms.locfileid: "85350663"
 > * 設定快照點及檢視快照
 > * 設定記錄點
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 * 快照偵錯工具只能從 Visual Studio 2017 Enterprise 15.5 版或更高版本的 **Azure 開發工作負載**開始使用。 (您可以在 [個別元件]**** 索引標籤下的 [偵錯和測試]**** > [快照偵錯工具]**** 底下找到它。)
 

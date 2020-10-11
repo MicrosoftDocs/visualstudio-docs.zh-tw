@@ -1,5 +1,6 @@
 ---
 title: 說明檢視器的協助工具
+description: 請參閱 Microsoft Help Viewer 中的協助工具功能清單，其中涵蓋鍵盤存取、字型大小、視窗大小和說明檢視器位置。
 ms.date: 11/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34a5a2f07d17c2ebd607bfe102cc7e3db92d014a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 359a1c4c87a139c35bf38d36edc6a53b2147dd98
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825138"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879069"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>說明檢視器的協助工具功能
 Microsoft 致力於讓所有使用者都能輕鬆使用其產品與服務。 本主題包含功能、產品和服務的相關資訊，協助各類人士存取 Microsoft Help Viewer。

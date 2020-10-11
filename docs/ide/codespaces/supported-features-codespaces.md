@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: eee21ca84acdcf5bbf774232d8d23ceda954b730
-ms.sourcegitcommit: 503f82045b9236d457b79712cd71405d4a62a53d
+ms.openlocfilehash: f253ba9b7e46f809bc107aa2b3e26f635d778770
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749501"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928550"
 ---
 # <a name="supported-visual-studio-features-preview"></a>支援 (Preview 的 Visual Studio 功能) 
 
@@ -65,7 +65,7 @@ Visual Studio 在連接至 codespace 時，提供豐富的開發體驗。 您可
 * 專案範本與項目範本
 * .NET Core 和 ASP.NET Core 專案
 * C + + 主控台應用程式-支援 CMake 和 .vcxproj
-* 以 Linux 為目標的 c + + 應用程式，大多支援非 GUI。 能夠安裝和布建 WSL、平臺特定的 Intellisense 和組建。
+* 以 Linux 為目標的 c + + 應用程式，大多支援非 GUI。 能夠安裝和布建 WSL、平臺特定的 IntelliSense 和組建。
 * 專案檔案編輯-大多支援。 遺漏一些完成、語法反白顯示和先進的編輯功能。
 * GitHub 帳戶-可以用來建立和連線至 Codespaces，並存取 GitHub 上的帳戶可用的資源。
 * Azure CLI-不會共用已登入的 Visual Studio 身分識別或 keychain 帳戶。 不支援以瀏覽器為基礎的登入，但您可以使用下列程式在整合式終端機中進行驗證： `az login --use-device-code` 。
@@ -104,7 +104,7 @@ Visual Studio 在連接至 codespace 時，提供豐富的開發體驗。 您可
 * 執行緒功能-不支援凍結/解除凍結執行緒、重新命名執行緒，以及顯示來源中的執行緒。
 * 其他逐步執行功能-不支援在屬性和運算子 ( .NET Core) 和逐步執行特定的自動步驟。 
 
-## <a name="features"></a>功能
+## <a name="features"></a>特性
 
 使用連接至 codespace 的 Visual Studio 時，您會取得與在本機工作時相同的協助工具功能。
 

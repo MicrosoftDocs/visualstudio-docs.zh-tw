@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d18282cf0fbd8782eb7abce05794e0b2eb1c5c1
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: eaa1e284394bda78c6892647ce9eca20d372a362
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90035738"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928091"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>使用自動程式化 UI 測試來測試您的程式碼
 
@@ -444,7 +444,7 @@ myWinCheckBox.Checked = true;
 
 - [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)
 
-- [在建置流程中執行測試](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
+- [在建置流程中執行測試](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)
 
 - [如何：將您的測試代理程式設定為執行與桌面互動的測試](/previous-versions/ee291332(v=vs.140))
 
@@ -458,7 +458,7 @@ myWinCheckBox.Checked = true;
 
 ## <a name="see-also"></a>另請參閱
 
-- [記錄和播放手動測試](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
+- [記錄和播放手動測試](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts&preserve-view=true)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [逐步解說：建立、編輯和維護自動程式碼 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

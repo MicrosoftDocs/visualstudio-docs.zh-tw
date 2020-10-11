@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa73894d713ded42696f5e47d40dffb2d2405b1a
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74538579"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928078"
 ---
 # <a name="team-explorer-reference"></a>Team Explorer 參考
 
@@ -26,7 +26,7 @@ ms.locfileid: "74538579"
 - [入口網站](/azure/devops/project/navigation/index)
 - [工作面板](/azure/devops/boards/sprints/task-board)
 
-根據您是連線到 [Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio) 或 [Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview) 存放庫，[首頁]**** 會有不同的功能。
+根據您是連線到 [Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true) 或 [Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview) 存放庫，[首頁]**** 會有不同的功能。
 
 > [!TIP]
 > 如需比較這兩種版本控制系統，請參閱[為您的專案選擇正確版本控制 (Azure DevOps)](/azure/devops/repos/tfvc/comparison-git-tfvc)。
@@ -100,7 +100,7 @@ ms.locfileid: "74538579"
 
 ## <a name="settings-page"></a>設定頁面
 
-[設定]**** 頁面可讓您為專案或專案集合設定管理功能。 查看下列文章：
+[設定]**** 頁面可讓您為專案或專案集合設定管理功能。 請參閱下列文章：
 
 | 專案 | 專案集合 | 其他 |
 | - | - | - |

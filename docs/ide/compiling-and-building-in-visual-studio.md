@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55f229550dfe74606f4dfb0880b4e91d689d5ad
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 2180d535dbdbdc88290a48cf166879525f10b4bb
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809029"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928537"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>在 Visual Studio 中編譯與建置
 
@@ -32,7 +32,7 @@ ms.locfileid: "90809029"
 | MSBuild 命令列| - 無須安裝 Visual Studio 即可建置專案。<br />- 對所有專案類型執行多處理器建置。<br />- 自訂建置系統大部分的區域。|
 | Azure Pipelines | - 將建置流程自動化，這是持續整合/持續傳遞管線的一部分。<br />- 在每個組建套用自動化的測試。<br />- 在建置流程採用幾乎不受限制的雲端式資源。<br />- 修改建置工作流程，以及建立建置活動以執行深入自訂的工作。|
 
-本節文件進一步說明使用 IDE 的建置流程詳細資料。 如需其他方法的詳細資訊，請分別參閱 [MSBuild](../msbuild/msbuild.md) 和 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)。
+本節文件進一步說明使用 IDE 的建置流程詳細資料。 如需其他方法的詳細資訊，請分別參閱 [MSBuild](../msbuild/msbuild.md) 和 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)。
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[在 Visual Studio for Mac 中編譯與建置](/visualstudio/mac/compiling-and-building)。

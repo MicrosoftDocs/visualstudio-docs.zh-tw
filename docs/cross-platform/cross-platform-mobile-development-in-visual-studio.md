@@ -1,5 +1,6 @@
 ---
 title: Visual Studio 中的跨平台行動裝置應用程式開發 | Microsoft Docs
+description: 在本文中，您將瞭解如何使用 Visual Studio 來建立適用于 Android、iOS 和 Windows 裝置的應用程式。
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
@@ -11,12 +12,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 12c0da32014581e6e9cc0ea22cb80414462f03bd
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0a612be5a74c4d0905e3fcef3adaeb180df61320
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037259"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878835"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 

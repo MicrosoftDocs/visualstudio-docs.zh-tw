@@ -4,7 +4,7 @@ titleSuffix: ''
 description: 深入瞭解如何使用發佈嚮導發佈應用程式的選項
 ms.custom: contperfq1
 ms.date: 08/21/2020
-ms.topic: overview
+ms.topic: troubleshooting
 dev_langs:
 - FSharp
 - VB
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f88f6c789afa112837fe67bc299915da85e42f3e
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6bc551a6e9bf4e05db61ddeb2480e218ebb3c925
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851719"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928524"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>將您的應用程式部署到資料夾、IIS、Azure 或其他目的地
 

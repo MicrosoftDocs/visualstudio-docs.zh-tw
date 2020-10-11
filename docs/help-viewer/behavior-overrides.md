@@ -1,5 +1,6 @@
 ---
 title: Help Content Manager 覆寫
+description: 深入瞭解說明內容管理員覆寫，這會在 Visual Studio IDE 中變更說明檢視器和說明相關功能的預設行為。
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c03d631be1bc4a38e514e1019fa230775427a53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60f4e46d8c43c90759c964dbf01145d876a9f413
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825099"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879056"
 ---
 # <a name="help-content-manager-overrides"></a>Help Content Manager 覆寫
 
@@ -56,7 +57,7 @@ ms.locfileid: "67825099"
 
 您可以在登錄編輯程式中設定登錄機碼值，來控制下列兩種行為。
 
-|工作|登錄金鑰|值|資料|
+|Task|登錄機碼|值|資料|
 |----------|-----|------|----|
 |覆寫 BITS 工作優先權|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (在 64 位元電腦上)\Microsoft\Help\v2.3|BITSPriority|**前景**、**高**、**一般**或**低**|
 |指向網路共用上的本機內容存放區|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|

@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: be42bf1498746ce57f662f43c12ece80ac6ca9be
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 7b4c4dfdb8e603d7dda2ebd55c4382e57414de25
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509038"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928026"
 ---
 # <a name="devops-with-unity-apps"></a>使用 Unity 應用程式進行 DevOps
 
@@ -26,7 +26,7 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 
 ## <a name="agile-tools"></a>Agile 工具
 
-參考連結︰[關於 Agile 工具和 Agile 專案管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts) (使用 Azure Boards 或 TFS，包括 Team Explorer Everywhere)
+參考連結︰[關於 Agile 工具和 Agile 專案管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true) (使用 Azure Boards 或 TFS，包括 Team Explorer Everywhere)
 
 一般註解：所有的計劃和追蹤功能都與專案類型和程式碼撰寫語言無關。
 
@@ -59,8 +59,8 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 
 |功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
-|[使用 Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) 或 Azure Repos|是|就像任何其他專案一樣，Unity 專案就只是一組可放入版本控制系統的檔案，但此表格後面將會說明一些特殊考量。|
-|[開始使用 Azure Repos 中的 Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|是|請參閱表格後面的注意事項。|
+|[使用 Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) 或 Azure Repos|是|就像任何其他專案一樣，Unity 專案就只是一組可放入版本控制系統的檔案，但此表格後面將會說明一些特殊考量。|
+|[開始使用 Azure Repos 中的 Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true)|是|請參閱表格後面的注意事項。|
 |[改善程式碼品質](../test/improve-code-quality.md)|是||
 |[尋找程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)|是||
 |[使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)|是||
@@ -73,14 +73,14 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 
 3. Unity 專案中的二進位資產 (例如紋理或音訊檔) 可能會佔用大量儲存體。 各種原始檔控制系統 (如 Git) 會針對進行的每一項變更儲存唯一的檔案複本，即使變更只影響一小部分的檔案也是一樣。 這可能會讓 Git 儲存機制變得過大。 若要解決這個問題，Unity 開發人員通常會選擇只將最後一個資產加入其儲存機制，並使用不同的方法來保留其資產的工作歷程記錄 (例如 OneDrive、DropBox 或 git-annex)。 因為這類資產一般不需要進行版本控制以及原始程式碼變更，所以這種方式適用。 開發人員一般也會將專案編輯器的 [資產序列化模式] 設定為 [強制文字]，以文字格式 (非允許在原始檔控制中進行合併的二進位格式) 來儲存場景檔案。 如需詳細資訊，請參閱[編輯器設定 (英文)](https://docs.unity3d.com/Manual/class-EditorManager.html) (Unity 文件)。
 
-## <a name="build"></a>組建
+## <a name="build"></a>Build
 
-參考連結：**[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
+參考連結：**[Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)**
 
 |功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
 |內部部署 Team Foundation Server (TFS)|可能|Unity 專案是透過 Unity 環境而非透過 Visual Studio 組建系統所建置 (Visual Studio Tools for Unity 內的建置將會編譯指令碼，而不會產生可執行檔)。 可能會[從命令列建置 Unity 專案](https://docs.unity3d.com/Manual/CommandLineArguments.html) (Unity 文件)，因此，可能會在 TFS 伺服器上設定 MSBuild 處理序來執行適當的 Unity 命令，但前提是要將 Unity 安裝於該電腦上。<br /><br /> Unity 也提供 [Unity 雲端組建 (英文)](https://build.cloud.unity3d.com/landing/)，其會監視 Git 或 SVN 儲存機制，並執行定期建置。 目前不適用於 TFVC 或 Azure DevOps Services。|
-|連結至 Azure DevOps Services 的內部部署組建伺服器|可能|假設條件與上面相同，可進一步指示透過 Azure DevOps Services 所觸發的組建使用內部部署 TFS 電腦。 相關指示，請參閱[建置和發行代理程式](/azure/devops/pipelines/agents/agents?view=vsts)。|
+|連結至 Azure DevOps Services 的內部部署組建伺服器|可能|假設條件與上面相同，可進一步指示透過 Azure DevOps Services 所觸發的組建使用內部部署 TFS 電腦。 相關指示，請參閱[建置和發行代理程式](/azure/devops/pipelines/agents/agents?view=vsts&preserve-view=true)。|
 |Azure DevOps Services 裝載的控制器服務|否|目前不支援 Unity 組建。|
 |具有預先定義和後置指令碼的組建定義|是|也可以針對建置前和建置後的指令碼，設定使用 Unity 命令列來執行組建的自訂組建定義。|
 |包括閘道簽入的連續整合|是|TFVC 的閘道簽入，只適用於 Git 在提取要求模型上運作的時候，而不是簽入運作時。|
@@ -110,7 +110,7 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 
 ## <a name="release-management"></a>版本管理
 
-參考連結︰[在 Azure Pipelines 和 TFS 中建置和發行](/azure/devops/pipelines/overview?view=vsts)
+參考連結︰[在 Azure Pipelines 和 TFS 中建置和發行](/azure/devops/pipelines/overview?view=vsts&preserve-view=true)
 
 |功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|

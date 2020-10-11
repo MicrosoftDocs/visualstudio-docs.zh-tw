@@ -1,5 +1,6 @@
 ---
 title: 使用說明檢視器索引
+description: 使用 Microsoft Help Viewer 索引尋找主題，其中包含與已安裝內容中的主題相關聯的關鍵字清單。
 ms.date: 11/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 695bcabc195b97551b2943a557d591bdfb85c991
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284954"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879017"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>使用說明檢視器索引來尋找主題
 

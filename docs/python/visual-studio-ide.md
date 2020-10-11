@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 943c0567e3726d014f7dae01915916864e09ed9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d744e7495323c6e0ce565f33e2cfca95feb0a51
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801642"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928680"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>歡迎使用 Visual Studio IDE | Python
 
@@ -38,7 +38,7 @@ Visual Studio 整合式開發環境** 是支援 Python (和其他語言) 且創�
 - [[輸出] 視窗](../ide/reference/output-window.md) (中下) 是 Visual Studio 傳送通知的位置，例如偵錯和錯誤訊息、警告、發佈狀態訊息等。 每個訊息來源都有自己的索引標籤。
   - [[Python 互動式 REPL] 視窗](python-interactive-repl-in-visual-studio.md) 與輸出視窗位於同一個區域。
 
-- [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (右下) 可讓您追蹤工作項目，並使用版本控制技術 (例如 [Git](https://git-scm.com/) 和 [Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts)) 與其他人共用程式碼。
+- [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts&preserve-view=true) (右下) 可讓您追蹤工作項目，並使用版本控制技術 (例如 [Git](https://git-scm.com/) 和 [Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true)) 與其他人共用程式碼。
 
 ## <a name="editions"></a>版本
 

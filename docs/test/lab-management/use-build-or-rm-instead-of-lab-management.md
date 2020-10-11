@@ -9,16 +9,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 37455c05a010681eac343287abf25aad642328c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 052e2c794ba765573923fba89413e0192c582c15
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286839"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928589"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>使用 Azure Test Plans 而非 Lab Management 進行自動化測試
 
-如果您使用 Microsoft Test Manager 和 Lab Management 進行自動化測試或建置、部署、測試自動化，本主題會說明如何使用 Azure Pipelines 與 Team Foundation Server (TFS) 中的[建置和發行](/azure/devops/pipelines/index?view=vsts)功能來達到相同的目標。
+如果您使用 Microsoft Test Manager 和 Lab Management 進行自動化測試或建置、部署、測試自動化，本主題會說明如何使用 Azure Pipelines 與 Team Foundation Server (TFS) 中的[建置和發行](/azure/devops/pipelines/index?view=vsts&preserve-view=true)功能來達到相同的目標。
 
 > [!NOTE]
 > Microsoft Test Manager 在 Visual Studio 2017 中已被取代，並已在 Visual Studio 2019 中移除。
@@ -31,7 +31,7 @@ Microsoft Test Manager 和 Lab Management 依賴 XAML 組建定義來自動化�
 |-------|----------------------|-----------------|
 | 找出要部署組建和執行測試的機器。 | 以 Microsoft Test Manager 在這些機器上建立標準的實驗室環境。 | n/a |
 | 找出要執行的測試。 | 以 Microsoft Test Manager 建立測試套件、建立測試案例，以及建立自動化與每個測試案例的關聯性。 以可識別電腦角色的 Microsoft Test Manager，在應該執行測試的實驗室環境中建立測試設定。 | 如果您計劃透過測試計劃來管理您的測試，請以相同方式在 Microsoft Test Manager 中建立自動化的測試套件。 或者，您也可以跳過此程序，如果您想要直接從組建產生的測試二進位檔執行測試。 不必每個案例都建立測試設定。 |
-| 自動化部署及測試。 | 使用 LabDefaultTemplate.*.xaml 建立 XAML 組建定義。 在組建定義中指定組建、測試套件和實驗室環境。 | 建立單一環境的[建置或發行Release 管線](/azure/devops/pipelines/index?view=vsts)。 使用命令列工作 (從 XAML 組建定義) 執行相同的部署指令碼，並使用 Test Agent 部署和執行功能測試工作執行自動化的測試。 指定機器清單及其認證，當作這些工作的輸入資料。 |
+| 自動化部署及測試。 | 使用 LabDefaultTemplate.*.xaml 建立 XAML 組建定義。 在組建定義中指定組建、測試套件和實驗室環境。 | 建立單一環境的[建置或發行Release 管線](/azure/devops/pipelines/index?view=vsts&preserve-view=true)。 使用命令列工作 (從 XAML 組建定義) 執行相同的部署指令碼，並使用 Test Agent 部署和執行功能測試工作執行自動化的測試。 指定機器清單及其認證，當作這些工作的輸入資料。 |
 
 在此案例中使用 Azure Pipelines 或 TFS 的一些優點包括：
 
@@ -46,7 +46,7 @@ Microsoft Test Manager 和 Lab Management 依賴 XAML 組建定義來自動化�
 
 ## <a name="self-service-management-of-scvmm-environments"></a>SCVMM 環境的自助管理
 
-[Microsoft Test Manager 的測試中心](/azure/devops/test/mtm/guidance-mtm-usage?view=vsts)支援使用 [SCVMM 伺服器](/system-center/vmm/overview?view=sc-vmm-1801)來管理環境範本程式庫以及隨選佈建環境。
+[Microsoft Test Manager 的測試中心](/azure/devops/test/mtm/guidance-mtm-usage?view=vsts&preserve-view=true)支援使用 [SCVMM 伺服器](/system-center/vmm/overview?view=sc-vmm-1801&preserve-view=true)來管理環境範本程式庫以及隨選佈建環境。
 
 實驗室中心的自助服務佈建功能有兩個不同的目標：
 
@@ -76,4 +76,4 @@ Microsoft Test Manager 和 Lab Management 依賴 XAML 組建定義來自動化�
 * 啟動和停止虛擬機器
 * 對 SCVMM 執行自訂 PowerShell 指令碼
 
-如需詳細資訊，請參閱[建立虛擬網路隔離環境的建置-部署-測試案例](/azure/devops/pipelines/targets/create-virtual-network?view=vsts)。
+如需詳細資訊，請參閱[建立虛擬網路隔離環境的建置-部署-測試案例](/azure/devops/pipelines/targets/create-virtual-network?view=vsts&preserve-view=true)。

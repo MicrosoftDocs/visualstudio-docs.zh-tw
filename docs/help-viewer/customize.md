@@ -1,5 +1,6 @@
 ---
 title: 自訂說明檢視器
+description: 瞭解如何自訂說明檢視器。 設定版面配置、字型大小、最大結果數目，以及是否包含英文內容。
 ms.date: 11/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d1f4de5e5ace63f748c6a75d45d8311ea3eb71b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 402aa5deaae6b082c8360b9867807516f11d935d
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284968"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879030"
 ---
 # <a name="customize-the-help-viewer"></a>自訂說明檢視器
 您可以自訂說明檢視器視窗的版面配置，以及其他選項，例如字型大小、結果數目上限，以及是否要包含英文內容。

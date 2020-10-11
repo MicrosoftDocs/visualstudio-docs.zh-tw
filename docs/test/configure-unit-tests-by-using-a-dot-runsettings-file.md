@@ -7,18 +7,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 38e542fed0f26422a88644577ec864ef006855c5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8998a9e761716b28bd2815120e350b98804a6395
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038435"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928667"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
 您可以使用 *.runsettings* 檔案來設定 Visual Studio 中的單元測試。 例如，您可以變更執行測試的 .NET 版本、測試結果的所在目錄，或在測試回合期間所收集的資料。 *.runsettings* 檔案常見的用法是用來自訂[程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。
 
-您可以使用回合設定檔案來設定從 [命令列](vstest-console-options.md)、IDE，或使用 Azure Test Plans 或 TEAM FOUNDATION SERVER (TFS) 的 [組建工作流程](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) 中執行的測試。
+您可以使用回合設定檔案來設定從 [命令列](vstest-console-options.md)、IDE，或使用 Azure Test Plans 或 TEAM FOUNDATION SERVER (TFS) 的 [組建工作流程](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true) 中執行的測試。
 
 回合設定檔為選擇性。 如果您不需要任何特殊設定，就不需要 *.runsettings* 檔案。
 
@@ -35,7 +35,7 @@ ms.locfileid: "90038435"
 
    - [Visual Studio IDE](#specify-a-run-settings-file-in-the-ide)
    - [命令列](#specify-a-run-settings-file-from-the-command-line)
-   - 使用 Azure Test Plans 或 Team Foundation Server (TFS) 來[建立工作流程](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)。
+   - 使用 Azure Test Plans 或 Team Foundation Server (TFS) 來[建立工作流程](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)。
 
 4. 執行單元測試，以使用自訂回合設定。
 
@@ -83,20 +83,20 @@ ms.locfileid: "90038435"
 若要自動偵測回合設定檔，請將它放在解決方案的根目錄中。
 
 如果啟用回合設定檔案的自動偵測功能，則會在所有測試回合上套用此檔案中的設定。 您可以使用兩種方法開啟自動偵測 .runsettings 檔案：
-  
+
 - 選取**工具** > **選項** > **測試** > **自動偵測 .runsettings**檔案
 
    ![Visual Studio 2019 中的自動偵測 .runsettings 檔案選項](media/vs-2019/auto-detect-runsettings-tools-window.png)
-      
+
 - 選取**測試**設定回合 > **設定** > **自動偵測 .runsettings**檔案
-    
+
    ![Visual Studio 2019 中的自動偵測 .runsettings 檔案功能表](media/vs-2019/auto-detect-runsettings-menu.png)
 
 #### <a name="manually-select-the-run-settings-file"></a>以手動方式選取回合設定檔案
 
 在 IDE 中，選取 [ **測試**設定回合 > **設定**] > **選取 [方案範圍 .runsettings**檔]，然後選取 *.runsettings* 檔案。
 
-   - 這個檔案會覆寫位於方案根目錄的 *.runsettings* 檔案（如果有的話），並套用到所有測試回合。  
+   - 這個檔案會覆寫位於方案根目錄的 *.runsettings* 檔案（如果有的話），並套用到所有測試回合。
    - 此檔案選取專案只會在本機保存。
 
 ![在 Visual Studio 2019 中選取 [測試整個解決方案的 .runsettings 檔案] 功能表](media/vs-2019/select-solution-settings-file.png)
@@ -107,10 +107,10 @@ ms.locfileid: "90038435"
 
 - C #、VB、c + + 和 F # 專案中目前支援專案層級的執行設定。
 - 為專案指定的檔案會覆寫解決方案中指定的任何其他回合設定檔案。
-- [這些 MSBuild 屬性](../msbuild/msbuild-reserved-and-well-known-properties.md) 可以用來指定 .runsettings 檔的路徑。 
+- [這些 MSBuild 屬性](../msbuild/msbuild-reserved-and-well-known-properties.md) 可以用來指定 .runsettings 檔的路徑。
 
 為專案指定 *.runsettings* 檔案的範例：
-    
+
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
@@ -186,7 +186,7 @@ ms.locfileid: "90038435"
 |**TreatTestAdapterErrorsAsWarnings**|false|false、true|
 |**TestAdaptersPaths**||TestAdapters 所在目錄的一或多個路徑|
 |**TestSessionTimeout**||當測試工作階段超過指定的逾時之時，允許使用者終止測試工作階段。 設定逾時可確保資源能被充分取用，且可將測試工作階段限制在設定的時間內。 **Visual Studio 2017 15.5** 版和更新版本提供這項設定。|
-|**DotnetHostPath**||指定用來執行 testhost 之 dotnet 主機的自訂路徑。 當您建立自己的 dotnet 時（例如，在建立 dotnet/執行時間存放庫時），這會很有用。 指定此選項會略過尋找 testhost.exe，且一律會使用 testhost.dll。 
+|**DotnetHostPath**||指定用來執行 testhost 之 dotnet 主機的自訂路徑。 當您建立自己的 dotnet 時（例如，在建立 dotnet/執行時間存放庫時），這會很有用。 指定此選項會略過尋找 testhost.exe，且一律會使用 testhost.dll。
 
 ## <a name="datacollectors-element-diagnostic-data-adapters"></a>DataCollectors 元素 (診斷資料配接器) 
 
@@ -231,7 +231,7 @@ ms.locfileid: "90038435"
 
 ### <a name="blame-data-collector"></a>現象資料收集器
 
-這個選項可協助您找出導致測試主機損毀的有問題的測試。 執行收集器會在*TestResults*中建立輸出檔 (*Sequence.xml*) ，以在損毀之前捕捉測試的執行順序。 
+這個選項可協助您找出導致測試主機損毀的有問題的測試。 執行收集器會在*TestResults*中建立輸出檔 (*Sequence.xml*) ，以在損毀之前捕捉測試的執行順序。
 
 ```xml
 <DataCollector friendlyName="blame" enabled="True">
@@ -268,7 +268,7 @@ public void HomePageTest()
 
 ```xml
 <LoggerRunSettings>
-    <Loggers>        
+    <Loggers>
       <Logger friendlyName="console" enabled="True">
         <Configuration>
             <Verbosity>quiet</Verbosity>
@@ -304,7 +304,7 @@ public void HomePageTest()
 </MSTest>
 ```
 
-|設定|預設|值|
+|組態|預設|值|
 |-|-|-|
 |**ForcedLegacyMode**|false|Visual Studio 2012 中的 MSTest 配接器已進行過最佳化，因此更快速且更具延展性。 某些行為 (例如測試執行順序) 可能與舊版 Visual Studio 稍有出入。 將此值設定為 **true**，以使用較舊的測試配接器。<br /><br />例如，如果您為單元測試指定 *app.config* 檔案，則可以使用此設定。<br /><br />建議您考慮重構測試，以便使用較新的配接器。|
 |**IgnoreTestImpact**|false|「測試影響」功能會將受最新變更影響的測試（當在 MSTest 中執行時），或 Visual Studio 2017) 中 Microsoft Test Manager (淘汰的測試排定優先順序。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](/previous-versions/dd286589(v=vs.140))。|
@@ -392,10 +392,10 @@ public void HomePageTest()
     <Parameter name="webAppUserName" value="Admin" />
     <Parameter name="webAppPassword" value="Password" />
   </TestRunParameters>
-  
+
   <!-- Configuration for loggers -->
   <LoggerRunSettings>
-    <Loggers>      
+    <Loggers>
       <Logger friendlyName="console" enabled="True">
         <Configuration>
             <Verbosity>quiet</Verbosity>
@@ -462,4 +462,4 @@ public void HomePageTest()
 
 - [設定測試回合](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md) \(英文\)
 - [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)
-- [Visual Studio 測試工作 (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
+- [Visual Studio 測試工作 (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts&preserve-view=true)

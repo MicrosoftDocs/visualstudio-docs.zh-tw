@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 659167b02703cd3a51751fbe90fbd9408b5e623d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 97499a88a04b2ae7b61b847c4aec133d297e613a
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599567"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928052"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>使用 IntelliTrace (C#、Visual Basic) 於部署後診斷問題
 
@@ -49,7 +49,7 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
 #### <a name="team-foundation-server-2013"></a><a name="TFS2013"></a> Team Foundation Server 2013
  設定建置管線，將原始檔、組建和符號的位置加入至建置資訊清單 (BuildInfo.config 檔案)。 Team Foundation Build 會自動建立此檔案並放在專案的輸出資料夾中。
 
-1. [編輯建置管線或建立新的。](/azure/devops/pipelines/get-started-designer?view=vsts)
+1. [編輯建置管線或建立新的。](/azure/devops/pipelines/get-started-designer?view=vsts&preserve-view=true)
 
      ![在 TFS 2013 中查看組建管線](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
 
@@ -63,7 +63,7 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
 
      ![設定組建管線 TFS 2013 中的符號路徑](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
 
-     如需更多關於符號的資訊，請參閱 [發佈符號資料](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts)。
+     如需更多關於符號的資訊，請參閱 [發佈符號資料](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts&preserve-view=true)。
 
 4. 加入這個 MSBuild 引數可以將 TFS 和符號位置加入建置資訊清單檔案中：
 
@@ -187,7 +187,7 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
 
      [問：Visual Studio 為何會顯示我選取的工作區不適合？](#IneligibleWorkspace)
 
-     [問：在我選擇 Team 集合或另一個集合之前，為何無法繼續執行？](#ChooseTeamProject)
+     [問：在我選擇 team 集合或另一個集合之前，為何無法繼續？](#ChooseTeamProject)
 
 ### <a name="diagnose-a-performance-problem"></a>診斷效能問題
 
@@ -319,7 +319,7 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
 
    您的建置系統 ( `"TeamBuild"` 或 `"MSBuild"`) 和下列必要屬性的相關資訊：
 
-  - **BuildLabel** (適用於 TeamBuild)：組建名稱和編號。 此標籤也可做為部署事件的名稱。 如需組建編號的詳細資訊，請參閱 [使用組建編號提供有意義的名稱給已完成的組建](/azure/devops/pipelines/build/options?view=vsts)。
+  - **BuildLabel** (適用於 TeamBuild)：組建名稱和編號。 此標籤也可做為部署事件的名稱。 如需組建編號的詳細資訊，請參閱 [使用組建編號提供有意義的名稱給已完成的組建](/azure/devops/pipelines/build/options?view=vsts&preserve-view=true)。
 
   - **SymbolPath** (建議使用)：以分號分隔之符號 (PDB 檔案) 位置的 URI 清單。 這些 URI 可以是 URL 或 UNC。 這樣可讓 Visual Studio 更容易找到相符的符號以協助您進行偵錯。
 
@@ -379,7 +379,7 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
      ![從原始檔控制開啟 &#45; 遷移](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 #### <a name="q-whats-a-workspace"></a><a name="WhatWorkspace"></a>問：什麼是工作區？
- **答：** 您的 [工作區用於儲存來源的複本](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) ，您可以在簽入網路之前個別開發及測試該複本。 如果您還沒有明確對應至找到之方案或專案的工作區，則 Visual Studio 會提示您選擇可用的工作區或建立新的工作區，並以您的電腦名稱做為預設工作區名稱。
+ **答：** 您的 [工作區用於儲存來源的複本](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts&preserve-view=true) ，您可以在簽入網路之前個別開發及測試該複本。 如果您還沒有明確對應至找到之方案或專案的工作區，則 Visual Studio 會提示您選擇可用的工作區或建立新的工作區，並以您的電腦名稱做為預設工作區名稱。
 
 #### <a name="q-why-do-i-get-this-message-about-untrusted-symbols"></a><a name="UntrustedSymbols"></a> 問：我為什麼收到有關未受信任符號的訊息？
  ![是否搭配未受信任的符號路徑進行偵錯？](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")

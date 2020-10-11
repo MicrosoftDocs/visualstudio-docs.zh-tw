@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18c4ebf61e7136d908ad1e444616b0af7ac59a48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6ab8171d2317549beabe2d8e552eeeefccd02cf
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238370"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927987"
 ---
 # <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Visual Studio 中 managed 程式碼的舊版分析總覽
 
@@ -84,7 +84,7 @@ Public class MyClass
 
 ## <a name="team-build-integration"></a>Team build 整合
 
-您可以使用建置系統的整合式功能，執行分析工具做為建置流程的一部分。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)。
+您可以使用建置系統的整合式功能，執行分析工具做為建置流程的一部分。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)。
 
 ## <a name="see-also"></a>另請參閱
 

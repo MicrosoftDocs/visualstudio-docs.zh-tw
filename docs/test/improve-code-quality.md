@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0517d03db180ce76940723ca935be258d0cf1818
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d61ab4ec7647921a928841d2a9c89fb84becdf9
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80256227"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928065"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>先查看 Visual Studio 中的測試控管
 
@@ -94,7 +94,7 @@ IntelliTest 會自動產生受控碼的單元測試和測試資料。 IntelliTes
 
 ## <a name="related-scenarios"></a>相關案例
 
-* [探勘和手動測試 (Azure Test Plans)](/azure/devops/test/index?view=vsts)
-* [負載測試 (Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts)
-* [連續測試 (Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
+* [探勘和手動測試 (Azure Test Plans)](/azure/devops/test/index?view=vsts&preserve-view=true)
+* [負載測試 (Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)
+* [連續測試 (Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)
 * [程式碼分析工具](../code-quality/code-analysis-for-managed-code-overview.md)
