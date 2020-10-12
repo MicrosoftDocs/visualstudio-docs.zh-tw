@@ -1,5 +1,7 @@
 ---
 title: JavaScript IntelliSense
+description: 瞭解 Visual Studio 如何提供更豐富的 IntelliSense、新式 JavaScript 功能的支援，以及改善的生產力功能。
+ms.custom: SEO-VS-2020
 ms.date: 06/28/2017
 ms.topic: conceptual
 ms.technology: vs-javascript
@@ -25,12 +27,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2459c9ab7b6dc6e49bbbe86729d25a2adb5bdb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b4f86d904d98235ee98c54045789751c829b28c
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593716"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947826"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 

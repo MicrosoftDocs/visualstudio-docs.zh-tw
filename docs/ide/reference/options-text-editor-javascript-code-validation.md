@@ -1,5 +1,7 @@
 ---
 title: 選項、文字編輯器、JavaScript、程式碼驗證
+description: 瞭解如何使用 [選項] 對話方塊的 [程式碼驗證] 頁面，修改影響 JavaScript 處理錯誤之方式的設定。
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.technology: vs-javascript
 ms.topic: reference
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2090eeac014feb6a3a4308c920140d7934d3b0e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3335f4bc5d59b7b4aab3e7341d9f1574d095eeb
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68606002"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947748"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>選項對話方塊：文字編輯器 \> JavaScript/TypeScript 程式 \> 代碼驗證
 

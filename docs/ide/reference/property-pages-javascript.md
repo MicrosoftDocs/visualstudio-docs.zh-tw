@@ -1,5 +1,7 @@
 ---
 title: JavaScript、屬性頁
+description: 瞭解屬性頁如何提供專案設定的存取權，以及如何使用屬性頁中所顯示的頁面來變更專案屬性。
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.technology: vs-javascript
 ms.topic: reference
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf6c984715f5cd35f08bb75526346b68c11dbeb9
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926188"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947800"
 ---
 # <a name="property-pages-javascript"></a>JavaScript、屬性頁
 
@@ -92,7 +94,7 @@ ms.locfileid: "68926188"
 
 指定是否允許應用程式測試存取 IP 回送位址。 如果用戶端應用程式與執行中伺服器應用程式是在同一部電腦上，請選取 [是]**** 允許使用回送位址；否則選取 [否]****。 只有在 [要啟動的偵錯工具]**** 屬性設定為 [遠端電腦]**** 時，才能使用這個屬性。
 
-**電腦名稱稱**
+**電腦名稱**
 
 指定要裝載偵錯工具之遠端電腦的名稱。 只有在 [要啟動的偵錯工具]**** 設定為 [遠端電腦]**** 時，才能使用這個屬性。
 

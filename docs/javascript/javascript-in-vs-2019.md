@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 2019 中的 JavaScript 和 TypeScript
+description: 瞭解 Visual Studio 2019 如何使用 JavaScript 直接使用 JavaScript，以及使用 TypeScript 程式設計語言，為 JavaScript 開發提供豐富的支援。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 03/16/2020
 ms.technology: vs-javascript
@@ -12,12 +14,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 6598f018147a025b93ea2e9dd81ae5eceacb4829
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 5063e0fe369615af51db9da3016d2afef49789ac
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852461"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947761"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>Visual Studio 2019 中的 JavaScript 和 TypeScript
 

@@ -1,5 +1,7 @@
 ---
 title: IntelliSense、JavaScript、文字編輯器、選項
+description: 瞭解如何使用 [選項] 對話方塊的 [IntelliSense] 頁面，修改影響 JavaScript 之 IntelliSense 行為的設定。
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.technology: vs-javascript
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d030e028332bd57afe66eee31c888713721212
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41256882433bc95db7af380d27cc8dc63fbcd387
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68605975"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947722"
 ---
 # <a name="options-dialog-box-text-editor--javascript--intellisense"></a>選項對話方塊：文字編輯器 \> JavaScript \> IntelliSense
 
@@ -38,7 +40,7 @@ ms.locfileid: "68605975"
 
 當您選取這個核取方塊時，JavaScript 程式碼編輯器只會在您選擇 **Tab** 或 **Enter** 鍵之後，才將完成清單中選取的項目附加至陳述式。 當您取消選取這個核取方塊時，其他字元像是句號、逗號、冒號、左括弧和左大括弧 ({) 也可以在陳述式中附加選取的項目。
 
-## <a name="references"></a>參考資料
+## <a name="references"></a>參考
 
 您可以使用這些選項指定不同 JavaScript 專案類型範圍中 IntelliSense .js 檔案的類型。 IntelliSense 參考通常是用來為全域物件提供 IntelliSense 支援。 您也可以使用這個頁面設定必須在執行階段載入之指令碼的載入順序，以及加入 IntelliSense 擴充檔案。
 

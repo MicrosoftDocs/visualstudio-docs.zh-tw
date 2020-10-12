@@ -1,5 +1,7 @@
 ---
 title: Options, Text Editor, JavaScript, Formatting
+description: 瞭解如何使用 [選項] 對話方塊的 [格式化] 頁面，設定在程式碼編輯器中格式化程式碼的選項。
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.technology: vs-javascript
 ms.topic: reference
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 957dbd557a15c4c1df6028672f204a06936767c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a127263bc9bf94997585d07bff1b8d317b282e91
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68605995"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947735"
 ---
 # <a name="options-dialog-box-text-editor--javascript--formatting"></a>選項對話方塊：文字編輯器 \> JavaScript \> 格式化
 

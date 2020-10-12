@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 整合式開發環境 (IDE) 初探
+description: 瞭解 (IDE) 的 Visual Studio 整合式開發環境，包括 windows、功能表，以及最常使用的其他 UI 功能。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/05/2019
 ms.topic: quickstart
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41d5d40cc7951f09a8106426f603d42628c61846
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f80dd85e1cc8f93784ed938ef1788730b3c926e8
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238864"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947813"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Visual Studio 整合式開發環境 (IDE) 初探
 

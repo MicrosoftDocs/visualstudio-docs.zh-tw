@@ -1,5 +1,7 @@
 ---
 title: JavaScript、檔案屬性
+description: 瞭解如何使用檔案屬性來指出專案系統應對檔案執行哪些動作。
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.technology: vs-javascript
 ms.topic: reference
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efe1486cf8ac2b64965ed157abbb47dc2d8c7b6c
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926227"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947787"
 ---
 # <a name="file-properties-javascript"></a>JavaScript、檔案屬性
 
@@ -79,7 +81,7 @@ ms.locfileid: "68926227"
 ### <a name="identity"></a>身分識別
 顯示專案中所使用參考的身分識別，這儲存在專案檔中。
 
-### <a name="package"></a>套件
+### <a name="package"></a>Package
 顯示與參考建立關聯的套件資訊清單名稱。
 
 ### <a name="resolved-path"></a>已解析路徑
