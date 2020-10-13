@@ -1,6 +1,7 @@
 ---
 title: 使用工作清單
-ms.date: 11/04/2016
+description: 瞭解 Visual Studio 中的工作清單可如何協助您更有效率地追蹤和使用程式碼批註。
+ms.date: 10/12/2020
 ms.topic: how-to
 f1_keywords:
 - TaskListWindow
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3e1c43e9813bce664a63f3675b0fed6e14e3c7
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 8d19794b4fce3e4a1388f864cecf408e0f7e9c53
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781005"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959798"
 ---
 # <a name="use-the-task-list"></a>使用工作清單
 
@@ -64,12 +65,12 @@ ms.locfileid: "91781005"
 
 因為 `TODO` 是預先定義的語彙基元，所以此註解會顯示為清單中的 `TODO` 工作。
 
-> [!NOTE]
-> 只有 C/C++、C# 與 VB 語言才能使用預設語彙基元。
-
 ### <a name="custom-tokens"></a>自訂權杖
 
 根據預設，Visual Studio 會包含下列語彙基元：`HACK`、`TODO`、`UNDONE`及 `UnresolvedMergeConflict`。 它們不區分大小寫。 您也可以建立自己的自訂語彙基元。
+
+> [!NOTE]
+> 預設權杖僅適用于 C/c + +、c # 及 VB 語言。 若要為其他程式設計語言建立您自己的權杖，請使用下列步驟。
 
 建立自訂語彙基元：
 

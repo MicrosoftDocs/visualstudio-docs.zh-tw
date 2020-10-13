@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 21dd482d100ce87ce942650e27a5dc5a232ddbbb
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 6744e8fb3b42f81f6d0814646cab1f2388ebe577
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862838"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959756"
 ---
 # <a name="vcpkg-install"></a>vcpkg-install
 
@@ -38,7 +38,7 @@ ms.locfileid: "91862838"
 
 ### <a name="additional-options"></a>其他選項
 
-其他選項會直接傳遞至 [vcpkg](/powershell/module/powershellget/install-module?preserve-view=true&view=powershell-7) 命令，並記載于 [vcpkg GitHub](https://github.com/microsoft/vcpkg/blob/master/docs/examples/installing-and-using-packages.md)存放庫中。
+其他選項會直接傳遞至 [vcpkg](/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true) 命令，並記載于 [vcpkg GitHub](https://github.com/microsoft/vcpkg/blob/master/docs/examples/installing-and-using-packages.md)存放庫中。
 
 ### <a name="default-behavior"></a>預設行為
 

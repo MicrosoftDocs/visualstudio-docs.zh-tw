@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 19f635f0d22eacd64726368af89bbf5b7c4c9a11
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 7bb545a8e8713159d6833f0ed8d8c2b8784095e1
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862844"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959763"
 ---
 # <a name="set-env"></a>set-env
 
 此 `set-env` 工具可用來設定要在目前進程中使用的環境變數。 環境變數只會在目前的進程中設定，而其他 `devinit` 工具在該進程中執行時，將會使用這些變數。
 
-這項工具會使用 .NET Core `Environment.SetEnvironment` API，並具有與該 api 相同的限制。 如需詳細資訊，請參閱[documentation](/dotnet/api/system.environment.setenvironmentvariable?preserve-view=true&view=netcore-3.1)的檔 `Environment.SetEnvironment` 。
+這項工具會使用 .NET Core `Environment.SetEnvironment` API，並具有與該 api 相同的限制。 如需詳細資訊，請參閱[documentation](/dotnet/api/system.environment.setenvironmentvariable?view=netcore-3.1&preserve-view=true)的檔 `Environment.SetEnvironment` 。
 
 ## <a name="usage"></a>使用量
 

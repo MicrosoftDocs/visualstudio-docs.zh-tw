@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 36fc3d3fd0b002c110e9184a6d7b15c9fa367c48
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: d1a82cc5fc5ea34f007750a08c0e8140421a9f41
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509831"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959818"
 ---
 # <a name="work-with-data-in-visual-studio"></a>在 Visual Studio 中使用資料
 
@@ -113,7 +113,7 @@ ms.locfileid: "89509831"
 
 ## <a name="native-c"></a>Native C++
 
-連接到 SQL Server 的 c + + 應用程式應該在大部分情況下使用 [Microsoft® ODBC 驅動程式13.1 進行 SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) 。 如果伺服器已連結，則需要 OLE DB，而且您可以使用 [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 您可以直接使用 [ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017) 或 OLE DB 驅動程式來存取其他資料庫。 ODBC 是目前的標準資料庫介面，但大部分的資料庫系統都提供無法透過 ODBC 介面存取的自訂功能。 OLE DB 是一種舊版的 COM 資料存取技術，仍支援但不建議用於新的應用程式。 如需詳細資訊，請參閱 [Visual C++ 中的資料存取](/cpp/data/data-access-in-cpp)。
+連接到 SQL Server 的 c + + 應用程式應該在大部分情況下使用 [Microsoft® ODBC 驅動程式13.1 進行 SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) 。 如果伺服器已連結，則需要 OLE DB，而且您可以使用 [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 您可以直接使用 [ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017&preserve-view=true) 或 OLE DB 驅動程式來存取其他資料庫。 ODBC 是目前的標準資料庫介面，但大部分的資料庫系統都提供無法透過 ODBC 介面存取的自訂功能。 OLE DB 是一種舊版的 COM 資料存取技術，仍支援但不建議用於新的應用程式。 如需詳細資訊，請參閱 [Visual C++ 中的資料存取](/cpp/data/data-access-in-cpp)。
 
 使用 REST 服務的 c + + 程式可以使用 [c + + REST SDK](https://github.com/Microsoft/cpprestsdk)。
 

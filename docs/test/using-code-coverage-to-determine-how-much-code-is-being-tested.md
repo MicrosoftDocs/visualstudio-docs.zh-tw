@@ -11,12 +11,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6dd6dde83720c6e6f37bd6827bb5d97526202aa7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d1b51661d9fc9a5492d123bdacd6c49d241ed87
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585596"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959771"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 
@@ -32,7 +32,7 @@ ms.locfileid: "75585596"
 
 ::: moniker-end
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 程式碼涵蓋範圍功能僅適用於 Visual Studio Enterprise 版本。
 
@@ -272,7 +272,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 ## <a name="analyze-code-coverage-in-azure-pipelines"></a>在 Azure Pipelines 中分析程式碼涵蓋範圍
 
-當您檢查程式碼時，您的測試會在組建伺服器上與其他小組成員的測試一起執行。 在 Azure Pipelines 中分析程式碼覆蓋範圍，可針對整個專案的覆蓋範圍取得最新、最完整的分析結果，因此它是非常有用的方法。 這項分析也包含自動化系統測試，和通常不會在開發電腦上執行的其他自動程式化測試。 如需詳細資訊，請參閱[使用您的組建執行單元測試](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)。
+當您檢查程式碼時，您的測試會在組建伺服器上與其他小組成員的測試一起執行。 在 Azure Pipelines 中分析程式碼覆蓋範圍，可針對整個專案的覆蓋範圍取得最新、最完整的分析結果，因此它是非常有用的方法。 這項分析也包含自動化系統測試，和通常不會在開發電腦上執行的其他自動程式化測試。 如需詳細資訊，請參閱[使用您的組建執行單元測試](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)。
 
 ## <a name="analyze-code-coverage-from-the-command-line"></a>從命令列分析程式碼涵蓋範圍
 

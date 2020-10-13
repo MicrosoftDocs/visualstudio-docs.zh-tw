@@ -11,19 +11,19 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 2fd629934355b2462ae9d397046ef8e063a62fc6
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: b855d8f3e9827d7b88f6d95bdf426cfb470b2bda
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862827"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959783"
 ---
 # <a name="require-psmodule"></a>require-psmodule
 
-此 `require-psmodule` 工具可用來透過[安裝模組](/powershell/module/powershellget/install-module?preserve-view=true&view=powershell-7)從[PowerShell 資源庫](https://www.powershellgallery.com/)安裝[powershell 模組](/powershell/scripting/developer/module/understanding-a-windows-powershell-module?preserve-view=true&view=powershell-7)，以便在 powershell 腳本中使用。
+此 `require-psmodule` 工具可用來透過[安裝模組](/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true)從[PowerShell 資源庫](https://www.powershellgallery.com/)安裝[powershell 模組](/powershell/scripting/developer/module/understanding-a-windows-powershell-module?view=powershell-7&preserve-view=true)，以便在 powershell 腳本中使用。
 
-> [!TIP] 
-> 安裝模組之後，仍然需要使用 [import-module](/powershell/module/microsoft.powershell.core/import-module?preserve-view=true&view=powershell-7)將其匯入腳本。
+> [!TIP]
+> 安裝模組之後，仍然需要使用 [import-module](/powershell/module/microsoft.powershell.core/import-module?view=powershell-7&preserve-view=true)將其匯入腳本。
 
 ## <a name="usage"></a>使用量
 
@@ -49,9 +49,9 @@ ms.locfileid: "91862827"
 
 ## <a name="builtin-options"></a>內建選項
 
-此 `require-psmodule` 工具會設定一些 `Install-Module` 命令列引數，以確保 `Install-Module` 可執行無周邊。 以下列出這些引數，您可以在 [安裝模組](/powershell/module/powershellget/install-module?preserve-view=true&view=powershell-7)中找到這些引數的相關檔。
+此 `require-psmodule` 工具會設定一些 `Install-Module` 命令列引數，以確保 `Install-Module` 可執行無周邊。 以下列出這些引數，您可以在 [安裝模組](/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true)中找到這些引數的相關檔。
 
-| 名稱         | 描述                                                                                                                                                                                                                                                                                                                                                               |
+| Name         | 描述                                                                                                                                                                                                                                                                                                                                                               |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **-Force**   | 安裝模組並覆寫有關模組安裝衝突的警告訊息。 如果電腦上已有相同名稱的模組，則強制允許安裝多個版本。 如果存在具有相同名稱和版本的現有模組，將會覆寫模組。 Force 和 AllowClobber 可以在 Install-Module 命令中一起使用。 |
 | **-WhatIf**  | -傳遞命令的試執行時，會新增 WhatIf 旗標 `devinit` 。                                                                                                                                                                                                                                                                                                       |

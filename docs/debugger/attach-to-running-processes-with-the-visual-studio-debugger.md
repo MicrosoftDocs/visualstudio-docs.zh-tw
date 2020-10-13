@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b4a90cc06396f9fb6afb8a356385e966ed1b3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7decb23bb6d307732c1f675fb14a96c1fc0dcda1
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249214"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959857"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具附加至執行中處理序
 
@@ -182,16 +182,16 @@ ms.locfileid: "88249214"
 3. 選取 [**尋找**]，以透過 [**選取 Docker 容器**] 對話方塊設定**連接目標**。
 
     您可以在本機或遠端進行 Docker 容器進程的偵錯工具。
-    
+
     **若要在本機上進行 Docker 容器進程的偵錯工具：**
     1. 將 **DOCKER CLI 主機** 設定為 [ **本機電腦**]。
     1. 從清單中選取要附加的執行中容器，然後按 **[確定]**。
-    
+
     ![選取 Docker 容器功能表](../debugger/media/select-docker-container.png "Select_Docker_Container_Menu")
- 
+
     **B。若要從遠端偵測 Docker 容器進程：**
-    
-    > [!NOTE] 
+
+    > [!NOTE]
     > 有兩個選項可讓您從遠端連線到 Docker 容器中的執行中進程。 如果您未在本機電腦上安裝 Docker 工具，第一個選項（使用 SSH）是理想的選擇。  如果您在本機安裝了 Docker tools，而且您有一個設定為接受遠端要求的 Docker daemon，請使用 Docker daemon 嘗試第二個選項。
 
     1. ***若要透過 SSH 連接到遠端電腦：***
@@ -205,7 +205,7 @@ ms.locfileid: "88249214"
 
 4. 從 **可用** 的程式清單中選擇對應的容器進程，然後選取 [ **附加** ] 以開始在 Visual Studio 中進行 c # 容器進程的偵錯工具！
 
-    ![完成的 Docker 附加功能表](../debugger/media/docker-attach-complete.png "完成的 Linux Docker 附加功能表")    
+    ![完成的 Docker 附加功能表](../debugger/media/docker-attach-complete.png "完成的 Linux Docker 附加功能表")
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a> 附加至在 Windows Docker 容器上執行的進程
 
@@ -225,14 +225,14 @@ ms.locfileid: "88249214"
 
     > [!IMPORTANT]
     > 目標進程的處理器架構必須與執行所在的 Docker Windows 容器相同。
-    
+
    透過 SSH 將目標設定為遠端容器目前無法使用，而且只能使用 Docker daemon 來完成。
-    
+
     ***若要將目標設定為透過[Docker daemon](https://docs.docker.com/engine/reference/commandline/dockerd/)執行進程的遠端容器***
-    1. 指定背景程式位址 (例如透過 [Docker 主機] 下的 [TCP]、[IP] 或 [) ] ** (選擇性) ** ，然後按一下 [重新整理] 連結。 
+    1. 指定背景程式位址 (例如透過 [Docker 主機] 下的 [TCP]、[IP] 或 [) ] ** (選擇性) ** ，然後按一下 [重新整理] 連結。
 
     1. 在成功連接到背景程式之後，選取要附加的執行中容器，然後選擇 [確定]。
-    
+
 4. 從 **可用的進程** 清單中選擇對應的容器進程，然後選取 [ **附加** ] 開始對 c # 容器進程進行偵錯工具。
 
     ![完成的 Docker 附加功能表](../debugger/media/docker-attach-complete-windows.png "完成的 Windows Docker 附加功能表")
@@ -263,7 +263,7 @@ ms.locfileid: "88249214"
 |案例|Debug 方法|程序名稱|附注和連結|
 |-|-|-|-|
 |IIS 伺服器上的遠端偵錯程式 ASP.NET 4 或4。5|使用遠端工具並 **附加至進程**|*w3wp.exe*|請參閱遠端 [IIS 電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|IIS 伺服器上的遠端 debug ASP.NET Core|使用遠端工具並 **附加至進程**|*w3wp.exe* 或 *dotnet.exe*|從 .NET Core 3 開始， *w3wp.exe* 進程會用於預設的 [應用程式內裝載模型](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models)。 如需應用程式部署，請參閱 [發行至 IIS](/aspnet/core/host-and-deploy/iis/)。 如需詳細資訊，請參閱 [遠端 IIS 電腦上的遠端偵錯程式 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|
+|IIS 伺服器上的遠端 debug ASP.NET Core|使用遠端工具並 **附加至進程**|*w3wp.exe* 或 *dotnet.exe*|從 .NET Core 3 開始， *w3wp.exe* 進程會用於預設的 [應用程式內裝載模型](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)。 如需應用程式部署，請參閱 [發行至 IIS](/aspnet/core/host-and-deploy/iis/)。 如需詳細資訊，請參閱 [遠端 IIS 電腦上的遠端偵錯程式 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|
 |針對支援的應用程式類型在本機 IIS 伺服器上進行用戶端腳本的偵錯工具 |使用 **附加至進程**|*chrome.exe*、 *MicrosoftEdgeCP.exe*或 *iexplore.exe*|必須啟用腳本調試。 若是 Chrome，您也必須從命令列執行 Chrome in debug 模式 (類型 `chrome.exe --remote-debugging-port=9222`) ，然後在 [**附加至**] 欄位中選取 [ **JavaScript (Chrome) ** ]。|
 |在本機電腦上進行 c #、Visual Basic 或 c + + 應用程式的偵錯工具|使用標準的偵錯工具 (**F5**) 或 **附加至進程**|*\<appname>.exe*|在大部分的情況下，請使用標準的偵錯工具，而不是 **附加至進程**。|
 |遠端偵錯 Windows 傳統型應用程式|遠端工具|N/A| 請參閱 [遠端偵測 c # 或 Visual Basic 應用程式](../debugger/remote-debugging-csharp.md) 或 [遠端偵錯程式 c + + 應用程式](../debugger/remote-debugging-cpp.md)|
