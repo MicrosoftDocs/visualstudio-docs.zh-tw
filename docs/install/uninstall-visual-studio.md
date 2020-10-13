@@ -2,7 +2,7 @@
 title: 解除安裝 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步解除安裝 Visual Studio。
-ms.date: 05/06/2020
+ms.date: 10/12/2020
 ms.custom: seodec18
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9d1412d6e015ec7d05e700370c7a379ada9a57b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e924ead1b8796089242ef20c7f5a3070833b68ba
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419090"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007147"
 ---
 # <a name="uninstall-visual-studio"></a>解除安裝 Visual Studio
 
@@ -70,11 +70,11 @@ Visual Studio 是我們提供給開發人員的整合式生產力工具套件，
 
 ::: moniker range="vs-2019"
 
-1. 在電腦上找到 Visual Studio 安裝程式。
+1. 在您的電腦上找到 **Visual Studio 安裝程式**。
 
-     例如，在執行 Windows 10，的電腦上，選取 [開始]****，然後捲動到字母 [V]****，它在其中列為 [Visual Studio Installer]****。
+     在 Windows [開始] 功能表中，您可搜尋「安裝程式」。
 
-     ![開啟 Visual Studio 安裝程式](media/vs-2019/vs-installer-windows-start.png "開啟 Visual Studio 安裝程式")
+     ![Visual Studio 安裝程式](media/vs-2019/visual-studio-installer.png "搜尋 Visual Studio 安裝程式")
 
      > [!NOTE]
      > 您也可以在下列位置找到 Visual Studio 安裝程式：

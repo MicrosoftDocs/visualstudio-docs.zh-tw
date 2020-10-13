@@ -2,7 +2,7 @@
 title: 更新 Visual Studio 2017
 titleSuffix: ''
 description: 了解如何將 Visual Studio 逐步更新至最新版本。
-ms.date: 07/31/2019
+ms.date: 10/12/2020
 ms.custom: seodec18
 ms.topic: how-to
 ms.prod: visual-studio-windows
@@ -17,12 +17,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d101ee2a4ce3d7a97382d829188a9902ccbd0c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01bc8fe18ff32d5da3f56eb39465b3fc696239b4
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419142"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007179"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>將 Visual Studio 更新至最新版本
 
@@ -112,22 +112,22 @@ ms.locfileid: "85419142"
 
 1. 有更新可用時，Visual Studio 會顯示相對應的通知旗標。
 
-   ![使用通知中樞更新 Visual Studio 2017](media/notification-flag.png "Visual Studio 中的更新通知旗標")
+   ![更新 Visual Studio 2017 通知旗標](media/notification-flag.png "Visual Studio 中的更新通知旗標")
 
    選擇通知旗標，以開啟 [通知]**** 中樞。
 
-   ![使用通知中樞更新 Visual Studio 2017](media/notifications-hub.png "Visual Studio 中的通知中樞")
+   ![通知中樞內的 Visual Studio 2017 更新](media/notifications-hub.png "通知中樞內的 Visual Studio 2017 更新")
 
       > [!TIP]
       > Visual Studio 2017 的版本更新是累積性的，因此請一律選擇安裝版本號碼為最新的更新。
 
 1. 選擇 ["Visual Studio Update" is available] (有 "Visual Studio 更新" 可供使用)****，以開啟 [延伸模組和更新]**** 對話方塊。
 
-   ![使用通知中樞更新 Visual Studio 2017](media/notifications-hub-select.png "Visual Studio 中的通知中樞")
+   ![選擇 Visual Studio 更新](media/notifications-hub-select.png "選擇 Visual Studio 更新")
 
 1. 在 [延伸模組和更新]**** 對話方塊中，選擇 [更新]**** 按鈕。
 
-   ![使用通知中樞更新 Visual Studio 2017](media/notifications-extensions-and-updates.png "Visual Studio 中的 [擴充功能和更新] 對話方塊")
+   ![選擇 [擴充功能和更新] 對話方塊中的 [更新]](media/notifications-extensions-and-updates.png "Visual Studio 中的 [擴充功能和更新] 對話方塊")
 
 #### <a name="more-about-visual-studio-notifications"></a>進一步了解 Visual Studio 通知
 
@@ -178,9 +178,11 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 
 ## <a name="use-the-visual-studio-installer"></a>使用 Visual Studio 安裝程式
 
-1. 開啟安裝程式。
+1. 在您的電腦上找到 **Visual Studio 安裝程式**。
 
-     ![在 Windows 上開啟 Visual Studio 安裝程式](media/vs-2019/vs-installer-windows-start.png "開啟 Visual Studio 安裝程式")
+   在 Windows [開始] 功能表中，您可搜尋「安裝程式」。
+
+   ![Visual Studio 安裝程式](media/vs-2019/visual-studio-installer.png "搜尋 Visual Studio 安裝程式")
 
    您可能需要更新安裝程式才能繼續。 若是如此，請遵循提示。
 
@@ -239,7 +241,7 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 
 1. 在 [有可用的更新]**** 對話方塊中，選擇 [更新]****。
 
-     ![選擇 [更新已下載並準備安裝] 對話方塊中的 [更新] 按鈕](media/vs-2019/update-visual-studio-community-from-ide.png "選擇 [更新已下載並準備安裝] 對話方塊中的 [更新] 按鈕")
+     ![選擇 [可用的更新] 對話方塊中的 [更新] 按鈕](media/vs-2019/update-visual-studio-community-from-ide.png "選擇 [可用的更新] 對話方塊中的 [更新] 按鈕")
 
    Visual Studio 隨即更新，然後關閉再重新開啟。
 
@@ -273,7 +275,7 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 
 您也可以選擇 [自動下載更新]**** 設定，讓系統在機器閒置時下載更新。
 
-方法如下：
+其做法如下：
 
 1. 在功能表列上選擇 [工具]**[選項]** > ****。
 

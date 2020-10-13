@@ -1,6 +1,5 @@
 ---
-title: 分析 CPU 使用量 | Microsoft Docs
-ms.custom: seodec18
+title: 分析效能分析工具中的 CPU 使用量
 ms.date: 04/02/2020
 ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
@@ -9,24 +8,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 706ffa8d17974894403c22a559edad4c2e4b4ef8
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543386"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007091"
 ---
-# <a name="analyze-cpu-usage"></a>分析 CPU 使用量
+# <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>在效能分析工具中分析 CPU 使用量，而不進行調試
 
 要開始調查應用程式中效能問題的好方法是了解其 CPU 使用量。 [CPU 使用量]**** 效能工具顯示花在 C++、C#/Visual Basic 和 JavaScript 應用程式中執行程式碼的 CPU 時間和百分比。
 
-[CPU 使用量]**** 工具可以在開啟的 Visual Studio 專案上及已安裝的 Microsoft Store 應用程式上執行，或是附加至執行中的應用程式或處理程序。 如需詳細資訊，請參閱 [使用或不使用偵錯工具來執行程式碼剖析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
+[CPU 使用量] 工具可以在開啟的 Visual Studio 專案上及已安裝的 Microsoft Store 應用程式上執行，或是附加至執行中的應用程式或處理程序。 執行 [CPU 使用量] 工具時不一定需要包含偵錯。 如需詳細資訊，請參閱 [使用或不使用偵錯工具來執行程式碼剖析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
 
-執行 [CPU 使用量]**** 工具時不一定需要包含偵錯。 在偵錯工具中，您可以開啟和關閉 CPU 分析，並查看每個函式的 CPU 使用量明細。 執行暫停時，例如在中斷點，您可以檢視 CPU 使用量的結果。
+下列指示說明如何使用 [CPU 使用量] 工具而不搭配偵錯工具，並且使用 Visual Studio [效能分析工具]。 範例使用在本機電腦上的 [發行] 組建。 [發行] 組建提供實際應用程式效能的最佳檢視。 若要使用偵錯工具附加)  (偵錯工具來分析 CPU 使用量，請參閱 [效能分析的初學者指南](../profiling/beginners-guide-to-performance-profiling.md)。
 
-下列指示說明如何使用 [CPU 使用量]**** 工具而不搭配偵錯工具，並且使用 Visual Studio [效能分析工具]****。 範例使用在本機電腦上的 [發行] 組建。 [發行] 組建提供實際應用程式效能的最佳檢視。 若要分析 [偵錯] 組建的 CPU 使用量，請參閱[效能分析的初學者指南](../profiling/beginners-guide-to-performance-profiling.md)。
-
-通常，本機電腦最能充分複製已安裝的應用程式執行。 針對 Windows Phone 應用程式，直接從裝置收集資料會提供最精確的資料。 若要從遠端裝置收集資料，請直接在裝置上執行應用程式，而不要透過遠端桌面連線。
+通常，本機電腦最能充分複製已安裝的應用程式執行。 若要從遠端裝置收集資料，請直接在裝置上執行應用程式，而不要透過遠端桌面連線。
 
 >[!NOTE]
 >需要 Windows 7 或更新版本才能使用[效能分析工具](../profiling/profiling-feature-tour.md)。
@@ -61,7 +58,7 @@ ms.locfileid: "85543386"
 
 ### <a name="cpu-usage-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a> [CPU 使用量] 資料行
 
-|Name|描述|
+|名稱|描述|
 |-|-|
 |**CPU 總計 [單位, %]**|![總計 % 資料方程式](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> 在選取的時間範圍內，呼叫函式和該函式所呼叫函式使用的毫秒數及 CPU 百分比。 這與 [CPU 使用率] **** 時間軸圖表不同，其會將時間範圍內的 CPU 活動總計與可用的 CPU 總計進行比較。|
 |**自我 CPU [單位, %]**|![自我 % 方程式](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 在選取的時間範圍內，呼叫函式使用的毫秒數及 CPU 百分比，不包含函式所呼叫的函式。|
@@ -80,7 +77,7 @@ ms.locfileid: "85543386"
 ![呼叫樹狀結構](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "呼叫樹狀圖結構")
 ::: moniker-end
 
-|Image|描述|
+|映像|描述|
 |-|-|
 |![步驟 1](../profiling/media/procguid_1.png "ProcGuid_1")|[CPU 使用量] 呼叫樹狀結構中的最上層節點是一個虛擬節點。|
 |![步驟 2](../profiling/media/procguid_2.png "ProcGuid_2")|在大部分的應用程式中，已停用 [顯示外部程式碼]**** 選項時，第二層節點是一個 [外部程式碼]**** 節點。 節點包含系統和架構程式碼，程式碼會啟動和停止應用程式、繪製 UI、控制執行緒排程，並提供其他低階服務給應用程式。|

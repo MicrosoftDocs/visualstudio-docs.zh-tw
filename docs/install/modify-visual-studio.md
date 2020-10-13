@@ -2,8 +2,9 @@
 title: 修改 Visual Studio 2017
 titleSuffix: ''
 description: 了解如何逐步修改 Visual Studio。
-ms.date: 02/10/2019
+ms.date: 10/12/2020
 ms.topic: how-to
+ms.custom: contperfq1
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -17,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 75a9d9d95cf2aed0defb9f52179188c64f4de912
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: d4593ed516e308a5e55a93f83fd5345028dc95dc
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862282"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007134"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>透過新增或移除工作負載和元件來修改 Visual Studio
 
@@ -74,11 +75,11 @@ ms.locfileid: "91862282"
 
 ::: moniker range="vs-2019"
 
-1. 在電腦上找到 Visual Studio 安裝程式。
+1. 在您的電腦上找到 **Visual Studio 安裝程式**。
 
-     例如，在執行 Windows 10，的電腦上，選取 [開始]****，然後捲動到字母 [V]****，它在其中列為 [Visual Studio Installer]****。
+     在 Windows [開始] 功能表中，您可搜尋「安裝程式」。
 
-     ![在 Windows 上開啟 Visual Studio 安裝程式](media/vs-2019/vs-installer-windows-start.png "開啟 Visual Studio 安裝程式")
+     ![Visual Studio 安裝程式](media/vs-2019/visual-studio-installer.png "搜尋 Visual Studio 安裝程式")
 
      > [!NOTE]
      > 您也可以在下列位置找到 Visual Studio 安裝程式：
@@ -89,7 +90,7 @@ ms.locfileid: "91862282"
 
 1. 請在安裝程式中尋找您安裝的 Visual Studio 版本，然後選擇 [修改]****。
 
-     ![更新或修改 Visual Studio](media/vs-2019/vs-installer-modify.png "更新或修改 Visual Studio 2019")
+     ![選擇 Visual Studio edition 然後修改](media/vs-2019/vs-installer-modify.png "選擇 Visual Studio 2019 版，然後修改")
 
      > [!IMPORTANT]
      > 如果您有擱置的更新，則 [修改] 按鈕會在不同的位置。 如此一來，您就可以修改 Visual Studio 而不需要更新。 選擇 [ **更多**]，然後選擇 [ **修改**]。
@@ -156,7 +157,7 @@ ms.locfileid: "91862282"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 工作負載與元件識別碼清單](workload-and-component-ids.md)
 * [更新 Visual Studio 2017](update-visual-studio.md)

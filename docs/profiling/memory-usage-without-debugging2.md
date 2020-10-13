@@ -1,5 +1,5 @@
 ---
-title: 分析記憶體使用量 (不偵錯) | Microsoft Docs
+title: 分析效能分析工具中的記憶體使用量
 ms.custom: ''
 ms.date: 04/02/2020
 ms.topic: how-to
@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe336962a9d631a01438fdd4620fd27e2affc44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4e99652e343510962959830b327237ee018c8fa
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543347"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007202"
 ---
-# <a name="analyze-memory-usage-without-the-debugger"></a>分析記憶體使用量 (不使用偵錯工具)
+# <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>在效能分析工具中分析記憶體使用量，而不進行調試
 
-[記憶體使用量]**** 工具會監視您的應用程式記憶體使用量。 您可以使用此工具，在 Visual Studio 中研究積極開發中案例的即時記憶體效果。 您可以建立詳細的應用程式記憶體狀態快照，並比較快照以找出記憶體問題的根本原因。
+[記憶體使用量]**** 工具會監視您的應用程式記憶體使用量。 您可以使用此工具，在 Visual Studio 中研究積極開發中案例的即時記憶體效果。 您可以建立詳細的應用程式記憶體狀態快照，並比較快照以找出記憶體問題的根本原因。 .NET、ASP.NET、c + + 或混合模式支援記憶體使用量工具 ( .NET 和原生) 應用程式。
 
-**記憶體使用量**工具可以[使用或不使用偵錯工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)來執行。 在本文中，我們將示範如何使用 [ **記憶體使用量** ] 工具，而不使用 Visual Studio **效能分析工具**中的偵錯工具。
+記憶體使用量工具可以 [使用或不使用偵錯工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)來執行。 在本文中，我們將示範如何使用 [記憶體使用量] 工具，而不使用 Visual Studio **效能分析工具**中的偵錯工具。
 
 ## <a name="memory-usage-diagnostic-sessions"></a>[記憶體使用量] 診斷工作階段
 
@@ -32,7 +32,7 @@ ms.locfileid: "85543347"
 
 1. 在 Visual Studio 中開啟專案。
 
-   記憶體使用量工具支援 .net、ASP.NET、原生或混合模式 ( .NET 和原生) 應用程式。
+   記憶體使用量工具支援 .net、ASP.NET、c + + 或混合模式 ( .NET 和原生) 應用程式。
 
 1. 在 [偵錯工具] 功能表中，將 [方案設定] 設定為 [ **發行** ]，然後選取 [ **本機 Windows 偵錯工具** (] 或 [ **本機電腦**) 作為部署目標。
 
@@ -76,7 +76,7 @@ ms.locfileid: "85543347"
 
   ![快照檢視連結](../profiling/media/memuse__snapshotview_numbered.png "快照檢視連結")
 
-|Image|描述|
+|映像|描述|
 |-|-|
 |![步驟 1](../profiling/media/procguid_1.png "ProcGuid_1")|在擷取快照時，記憶體中的總位元組數。<br /><br /> 選取這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的大小總計進行排序。|
 |![步驟 2](../profiling/media/procguid_2.png "ProcGuid_2")|在擷取快照時，記憶體中的物件總數。<br /><br /> 選取這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的計數進行排序。|
@@ -130,7 +130,7 @@ ms.locfileid: "85543347"
 
 快照詳細資料報表中的 [受控堆積]**** 樹狀結構有下列資料行：
 
-|Name|描述|
+|名稱|描述|
 |-|-|
 |**物件類型**|類型或物件執行個體的名稱。|
 |**Count**|類型的物件執行個體數目。 一個執行個體的 [計數]**** 一律為 1。|
@@ -152,7 +152,7 @@ ms.locfileid: "85543347"
 
 快照詳細資料報表中的 [參考的類型]**** 樹狀結構有下列資料行。 [參考的物件]**** 樹狀結構沒有 [參考計數]**** 資料行。
 
-|Name|描述|
+|名稱|描述|
 |-|-|
 |**物件類型**或**執行個體**|類型或執行個體的名稱。|
 |**參考計數**|針對類型，此為類型的物件執行個體數目。|
@@ -176,7 +176,7 @@ ms.locfileid: "85543347"
 
 快照差異報表中的 [受控堆積]**** 樹狀結構有下列資料行：
 
-|Name|描述|
+|名稱|描述|
 |-|-|
 |**物件類型**|類型或物件執行個體的名稱。|
 |**Count**|主要快照中類型的執行個體數目。 實例的**計數**一律為1。|
@@ -203,7 +203,7 @@ ms.locfileid: "85543347"
 
 快照差異報表中的 [參考的類型]**** 樹狀結構有下列資料行。 [參考的物件]**** 樹狀結構有 [執行個體]****、[大小 (位元組)]****、[內含大小 (位元組)]**** 和 [模組]**** 資料行。
 
-|Name|描述|
+|名稱|描述|
 |-|-|
 |**物件類型**或**執行個體**|類型或物件執行個體的名稱。|
 |**參考計數**|主要快照中類型的執行個體數目。|

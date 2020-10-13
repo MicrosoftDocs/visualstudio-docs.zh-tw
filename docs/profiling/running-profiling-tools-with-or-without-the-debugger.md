@@ -1,5 +1,6 @@
 ---
 title: 使用或不使用偵錯工具來執行分析工具 | Microsoft Docs
+description: 瞭解可用於程式碼剖析工具的不同模式之間的差異
 ms.date: 5/26/2020
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7db7e704eab7f5d00b20051811c503b143608e2f
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 13fd616e9ec596bfcdeb3718a62dc1a3a1bc8137
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074952"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007167"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>使用或不使用偵錯工具來執行分析工具
 
@@ -29,7 +30,7 @@ Visual Studio 提供各種效能測量和分析工具的選擇。 某些工具�
 - 偵錯工具整合工具與非偵錯工具工具的比較
   - 外部效能問題 (例如檔案 I/O 或網路回應性問題) 在偵錯工具或非偵錯工具的工具中看起來沒有太大差異。
   - 偵錯工具本身會變更效能時間，因為它會執行必要的偵錯工具作業（例如攔截例外狀況和模組載入事件）。
-  - [效能分析工具] 中的 [發行] 組建效能數字最精確且準確。 偵錯工具整合的工具結果最適合用來與其他與偵錯工具相關的度量比較，或是使用偵錯工具功能。
+  - 效能分析工具中的發行組建效能數位最精確且正確。 偵錯工具整合的工具結果最適合用來與其他與偵錯工具相關的度量比較，或是使用偵錯工具功能。
 - Debug 與發行組建
   - 針對需要大量 CPU 的呼叫所造成的問題，發行與 debug 組建之間可能會有相當大的效能差異。 查看發行組建中是否有問題。
   - 如果只有在 debug 組建期間發生此問題，您可能不需要執行非偵錯工具工具。 針對發行組建問題，請決定偵錯工具整合工具所提供的功能是否有助於找出問題。
@@ -98,7 +99,7 @@ Visual Studio 提供各種效能測量和分析工具的選擇。 某些工具�
 
 - [分析 CPU 使用量](../profiling/cpu-usage.md)
 - [分析 .NET 程式碼的記憶體使用量](../profiling/dotnet-alloc-tool.md)
-- [分析記憶體使用量](../profiling/analyze-memory-usage.md)
+- [分析記憶體使用量](../profiling/memory-usage-without-debugging2.md)
 - [分析 .NET 非同步程式碼的效能](../profiling/analyze-async.md)
 - [分析資料庫效能](../profiling/analyze-database.md)
 - [分析 GPU 使用量](../profiling/gpu-usage.md)

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 511874b5dc7d7c45a1584e95e004a53088f8ea09
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: cb9de05b7e57e4ebc4e7ea76c688a7203774404a
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91861811"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007186"
 ---
 # <a name="first-look-at-profiling-tools"></a>初步認識分析工具
 
@@ -107,9 +107,9 @@ CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會
 
 ## <a name="analyze-memory-usage"></a>分析記憶體使用量
 
-**診斷工具**] 視窗也可讓您使用 [**記憶體使用量**] 工具來評估應用程式中的記憶體使用量。 例如，您可以查看堆積的物件數目和大小。 您可以使用 [偵錯工具整合的記憶體使用量工具](../profiling/memory-usage.md) 或 [效能分析工具](#post_mortem)中的事後剖析後記憶體使用量工具。 另一個記憶體分析工具是 [.Net 物件組態工具](../profiling/dotnet-alloc-tool.md)，可協助您識別 .net 程式碼中的配置模式和異常。
+**診斷工具**] 視窗也可讓您使用 [**記憶體使用量**] 工具來評估應用程式中的記憶體使用量。 例如，您可以查看堆積的物件數目和大小。 您可以使用 [偵錯工具整合的記憶體使用量工具](../profiling/memory-usage.md) 或效能分析工具中的 [事後剖析後記憶體使用量](../profiling/memory-usage-without-debugging2.md) 工具。 另一個記憶體分析工具是 [.Net 物件組態工具](../profiling/dotnet-alloc-tool.md)，可協助您識別 .net 程式碼中的配置模式和異常。
 
-若要分析記憶體使用量，您需要至少取得一個記憶體快照集。 通常，分析記憶體的最佳方式是擷取兩個快照：第一個快照是在可能發生記憶體問題之前擷取，第二個快照則是緊接在可能發生記憶體問題之後擷取。 然後您可以檢視兩個快照的差異，並查看其中到底有什麼變更。 下圖顯示如何使用偵錯工具整合的工具來製作快照集。
+若要使用 [ **記憶體使用量** ] 工具來分析記憶體使用量，您需要至少取得一個記憶體快照集。 通常，分析記憶體的最佳方式是擷取兩個快照：第一個快照是在可能發生記憶體問題之前擷取，第二個快照則是緊接在可能發生記憶體問題之後擷取。 然後您可以檢視兩個快照的差異，並查看其中到底有什麼變更。 下圖顯示如何使用偵錯工具整合的工具來製作快照集。
 
 ![取得診斷工具中的快照集](../profiling/media/prof-tour-take-snapshots.gif "診斷工具拍攝快照集")
 
@@ -230,7 +230,7 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 |[應用程式時間軸](../profiling/application-timeline.md)|是 (XAML) |是|否|
 |[事件檢視器](../profiling/events-viewer.md)|是|是|是|
 |[.NET Async](../profiling/analyze-async.md)|是 ( 僅限 .NET) |是|是|
-|[Database](../profiling/analyze-database.md)|是 ( 僅限 .NET Core) |否|是 (只 ASP.NET Core) |
+|[資料庫](../profiling/analyze-database.md)|是 ( 僅限 .NET Core) |否|是 (只 ASP.NET Core) |
 |[效能總管](#analyze-performance-legacy-tools)|否|否|否|
 |[IntelliTrace](../debugger/intellitrace.md)|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|
 ::: moniker-end
@@ -251,5 +251,5 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 ::: moniker-end
 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 偵錯](../debugger/debugger-feature-tour.md)
