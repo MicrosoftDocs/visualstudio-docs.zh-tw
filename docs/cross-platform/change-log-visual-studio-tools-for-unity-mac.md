@@ -1,5 +1,6 @@
 ---
 title: 變更記錄檔 (Visual Studio Tools for Unity，Mac) | Microsoft Docs
+description: 查看 Visual Studio Tools for Unity、Mac 的變更記錄。 查看從1.0.0.0 版到2.7.0.0 的變更。
 ms.custom: ''
 ms.date: 5/19/2020
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e817318f7b16040ed598ac4dce8f1c6017bdf83e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50462d4464bd55376e1aceda3f4f5e8e3cbe1f87
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87471528"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039894"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>變更記錄檔 (Visual Studio Tools for Unity，Mac)
 
@@ -38,7 +39,7 @@ Visual Studio Tools for Unity 變更記錄。
   
   - 已將 `MenuItem` 支援新增至 [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md) 抑制器。  
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -61,7 +62,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增 [`UNT0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0017.md) 診斷。 `SetPixels` 調用速度很慢。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **調試：**
 
@@ -82,7 +83,7 @@ Visual Studio Tools for Unity 變更記錄。
 ## <a name="2610"></a>2.6.1.0
 2020年5月19日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -115,7 +116,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md)和 [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) 現在適用于 `SerializeReference` 和 `SerializeField` 屬性。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -137,7 +138,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2020年3月23日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **調試：**
 
@@ -153,7 +154,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增 [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0008.md) 的抑制器 `IDE0051` 。 搭配 Invoke、InvokeRepeating、StartCoroutine 或 StopCoroutine 使用的私用方法不應標示為未使用。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -167,7 +168,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2020年2月19日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -191,7 +192,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增 [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) 的抑制器 `CS0649` 。 具有屬性的欄位 `SerializeField` 不應標示為未指派。  
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -205,7 +206,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2019年12月3日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -225,7 +226,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 新增 Unity 訊息的快速工具提示，並顯示相關聯的檔。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -305,7 +306,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2019年8月13日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **評價：**
 
@@ -321,7 +322,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2019 年 7 月 25 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **評價：**
 
@@ -349,7 +350,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 從範本新增檔案時切換至重新命名模式 (以模擬 Unity 編輯器行為)。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -363,7 +364,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2019 年 7 月 2 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **評價：**
 
@@ -379,7 +380,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已將 MonoBehaviour API 更新為 2019.1。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -425,7 +426,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 新增新編輯器的快顯功能表。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **調試：**
 
@@ -435,7 +436,7 @@ Visual Studio Tools for Unity 變更記錄。
  
  發行於 2019 年 3 月 26 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -477,7 +478,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 更新 `ScriptableObject` API。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -501,7 +502,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 新增區域函式的支援。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **調試：**
 
@@ -517,7 +518,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 更新 MonoBehaviour API。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **調試：**
 
@@ -527,7 +528,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行於 2018 年 12 月 4 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -552,7 +553,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 新增虛擬變數 (例外狀況和物件識別碼) 的支援。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **調試：**
 
@@ -568,7 +569,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 在 [附加] 對話方塊中新增更多用戶端資訊 (IP、電腦名稱)。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **調試：**
 
@@ -584,7 +585,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2018 年 7 月 24 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -594,7 +595,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2018 年 7 月 10 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -604,7 +605,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2018 年 7 月 26 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **嚮導：**
 
@@ -666,7 +667,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2018 年 1 月 24 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **專案產生：**
 
@@ -682,7 +683,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2018 年 1 月 23 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -698,7 +699,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增 .NET Standard 的支援。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -708,7 +709,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2017 年 12 月 12 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -740,7 +741,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增可攜式偵錯符號檔的支援。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **專案產生：**
 
@@ -800,7 +801,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 修正具有 API 層級的定義。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 
@@ -810,7 +811,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2017 年 5 月 4 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤修正
 
 - **集成：**
 

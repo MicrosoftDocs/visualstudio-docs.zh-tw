@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 6957c1c7d64918e91a95bf569c210c146fec1339
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 9e6daa3e11bc96fe4d0b9499a6a1a7982432583d
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659400"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039907"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>使用 XAML 設計工具的設計階段資料 Visual Studio
 
@@ -135,6 +135,43 @@ xmlns:models="clr-namespace:Cities.Models"
 [![使用 ListView 設計階段資料中的實際模型](media\xaml-design-time-listview-models.png "使用 ListView 的實際模型設計階段資料")](media\xaml-design-time-listview-models.png#lightbox)
 
 這裡的好處是您可以將控制項系結至模型的設計階段靜態版本。
+
+## <a name="use-design-time-data-with-custom-types-and-properties"></a>使用自訂類型和屬性的設計階段資料
+
+這項功能預設僅適用于平臺控制項和屬性。 在本節中，我們將探討讓您將自訂控制項用作設計階段控制項所需的步驟。 啟用這項操作有三個需求：
+
+- 自訂 xmlns 命名空間 
+
+    ```xml
+    xmlns:myControls="http://MyCustomControls"
+    ```
+
+- 命名空間的設計階段版本。 這可以藉由直接在結尾附加/design 來達成。
+
+     ```xml
+    xmlns:myDesignTimeControls="http://MyCustomControls/design"
+    ```
+
+- 將您的設計階段前置詞加入至 mc：可忽略
+
+    ```xml
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d myDesignTimeControls"
+    ```
+
+完成上述所有步驟之後，您可以使用 `myDesignTimeControls` 前置詞來建立設計階段控制項。
+
+```xml
+<myDesignTimeControls:MyButton>I am a design time Button</myDesignTimeControls:MyButton>
+```
+
+### <a name="creating-a-custom-xmlns-namespace"></a>建立自訂 xmlns 命名空間
+
+若要在 WPF .NET Core 中建立自訂 xmlns 命名空間，您必須將自訂 XML 命名空間對應至控制項所在的 CLR 命名空間。 您可以 `XmlnsDefinition` 在檔案中加入元件層級屬性來完成這項作業 `AssemblyInfo.cs` 。 檔案會在專案的根階層中找到。
+
+   ```C#
+[assembly: XmlnsDefinition("http://MyCustomControls", "MyViews.MyButtons")]
+   ```
 
 ## <a name="troubleshooting"></a>疑難排解
 

@@ -1,5 +1,6 @@
 ---
 title: 應用程式生命週期管理 (ALM) 與 Unity 應用程式 | Microsoft Docs
+description: 瞭解應用程式生命週期管理 (ALM) 搭配 Unity 應用程式。 複習 Agile 工具、模型、程式碼、組建、測試及改善程式碼品質。
 ms.date: 08/21/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
@@ -9,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 7b4c4dfdb8e603d7dda2ebd55c4382e57414de25
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 17cfe2dd0a1ba25eeab6b0bb31ad849303207a02
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928026"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039920"
 ---
 # <a name="devops-with-unity-apps"></a>使用 Unity 應用程式進行 DevOps
 

@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Tools for Unity 程式設計 | Microsoft Docs
+description: 請參閱使用 Visual Studio Tools for Unity (VSTU) API 的程式設計範例。 自訂 VSTU 所建立的專案檔。 與 VSTU 共用 Unity 記錄回呼。
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0811445e2dcf985aef7b6449ff3fb86c5ac9a1c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0372cfd110df77867a683b27b17f92cd70ba75aa
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62818211"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039881"
 ---
 # <a name="program-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity 設計程式
 在本節中，您將找到使用 Visual Studio Tools for Unity 應用程式開發介面的範例。
