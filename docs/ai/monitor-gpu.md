@@ -1,5 +1,7 @@
 ---
 title: 監視 GPU 使用率
+description: 深入瞭解 GPU 使用率。 具體而言，請瞭解如何監視遠端 Linux 機器的 GPU 使用量。
+ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jillfra
@@ -8,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 694c4e12c719431b36e2fda1e58998651be39086
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 584b0035bf037a8dbf274450f56a359f803dc453
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371465"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099189"
 ---
 # <a name="monitoring-gpu-utilization"></a>監視 GPU 使用率
 

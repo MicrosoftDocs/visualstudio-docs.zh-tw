@@ -1,5 +1,7 @@
 ---
 title: 從現有程式碼建立 AI 專案
+description: 瞭解如何使用 Visual Studio Tools for AI 將現有的 Python 程式碼帶入 Visual Studio 專案。
+ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jillfra
@@ -8,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c0909259291bc5d2db2c4a9c8b87b1a0321d362
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef62b0a5f3fac00aba0648008a47d35e0adc89f4
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371712"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099254"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>從現有程式碼建立 AI 專案
 

@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 3a9c7bf1c63575df0f6ef55585ba1d14e78e0aa8
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: a361a34458fdf22a988c603145ef6654b944be08
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352299"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099436"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio 的專案移轉與升級參考
 
@@ -141,7 +141,7 @@ Visual Studio 的每個新版本都支援大部分的專案、檔案及其他資
 | LightSwitch | Visual Studio 2019 或 Visual Studio 2017 不再支援 LightSwitch。 在 Visual Studio 2013 或 Visual Studio 2015 中，如果開啟使用 Visual Studio 2012 和更早版本所建立的專案，系統會將該專案升級，並僅可在 Visual Studio 2013 或 Visual Studio 2015 之後的版本中開啟。 |
 | 負載測試 | Web 效能和負載測試功能在 Visual Studio 2019 中已淘汰。 <br/><br/>Visual Studio 2019 將會是最後一個提供負載測試的版本。 請使用替代的負載測試工具，例如 Apache JMeter、Akamai CloudTest、Blazemeter。  |
 | Microsoft Azure Tools for Visual Studio | 若要開啟這些類型的專案，請先安裝 [Azure SDK for .NET](https://azure.microsoft.com/downloads/)，然後再開啟專案。 如有必要，系統會更新您的專案。 |
-| Microsoft Test Manager | 從 Visual Studio 2019 開始，Visual Studio 不再隨附 Microsoft Test Manager 和 Feedback Client。 <br/><br/>如有手動和探勘測試需求，請利用 Azure Test Plans (Azure DevOps 的一部分)。 如需詳細資訊，請參閱 Azure DevOps 文件中的 [Microsoft Test Manager 使用指導方針](/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops)頁面。 |
+| Microsoft Test Manager | 從 Visual Studio 2019 開始，Visual Studio 不再隨附 Microsoft Test Manager 和 Feedback Client。 <br/><br/>如有手動和探勘測試需求，請利用 Azure Test Plans (Azure DevOps 的一部分)。 如需詳細資訊，請參閱 Azure DevOps 文件中的 [Microsoft Test Manager 使用指導方針](/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops&preserve-view=true)頁面。 |
 | 模型檢視控制器架構 (ASP.NET MVC) | 針對 MVC 版本和 Visual Studio 的支援：<ul><li>Visual Studio 2010 SP1 支援 MVC 2 和 MVC 3；您可透過 [ASP.NET 4 MVC 4 for Visual Studio 2010 SP1 下載](https://www.microsoft.com/download/details.aspx?id=30683)來新增 MVC 4 的支援</li><li>Visual Studio 2012 只支援 MVC 3 和 MVC 4</li><li>Visual Studio 2013 只支援 MVC 4 和 MVC 5</li><li>Visual Studio 2019、Visual Studio 2017 和 Visual Studio 2015 支援 MVC 4 (您可以開啟現有專案，但不能建立新的專案) 和 MVC 5</li></ul><br/>升級 MVC 版本：<ul><li>如需如何從 MVC 2 自動升級到 MVC 3 的資訊，請參閱 [ASP.NET MVC 3 應用程式升級程式](https://archive.codeplex.com/?p=aspnet)。</li><li>如需關於如何從 MVC 2 手動升級至 MVC 3 的詳細資訊，請參閱 [Upgrading an ASP.NET MVC 2 Project to ASP.NET MVC 3 Tools Update](https://archive.codeplex.com/?p=aspnet)(將 ASP.NET MVC 2 專案升級至 ASP.NET MVC 3 工具更新)。</li><li>如需關於如何從 MVC 3 手動升級至 MVC 4 的詳細資訊，請參閱 [Upgrading an ASP.NET MVC 3 Project to ASP.NET MVC 4](/aspnet/whitepapers/mvc4-release-notes)(將 ASP.NET MVC 3 專案升級至 ASP.NET MVC 4)。 如果您的專案是以 .NET Framework 3.5 SP1 為目標，則必須將目標重定為使用 .NET Framework 4。</li><li>如需如何將 MVC 4 手動升級為 MVC 5 的資訊，請參閱 [How to Upgrade an ASP.NET MVC 4 and Web API Project to ASP.NET MVC 5 and Web API 2](https://www.asp.net/mvc/overview/releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2) (如何將 ASP.NET MVC 4 和 Web API 專案升級至 ASP.NET MVC 5 和 Web API 2)。</li></ul> |
 | 模型化 | 如果您允許 Visual Studio 自動更新專案，則可以在 Visual Studio 2015、Visual Studio 2013 或 Visual Studio 2012 中開啟專案。<br/><br/>模型專案的格式自 Visual Studio 2015 以後並未變更，因此您可以在這些版本中開啟及修改專案。 不過，Visual Studio 2017 和 Visual Studio 2019 的行為有下列差異：<ul><li>在功能表和範本中，模型專案現在稱為「相依性驗證」專案。</li><li>Visual Studio 2017 和 Visual Studio 2019 不再支援 UML 圖表。 UML 檔案在方案總管中的列出方式與之前相同，但會以 XML 檔案的形式開啟。 您可以使用 Visual Studio 2015 來檢視、建立或編輯 UML 圖表。</li><li>在 Visual Studio 2019 中建置專案模型時，系統將不再執行架構相依性的驗證。 相反地，系統會在每個程式碼專案建置時執行驗證。 此變更不會影響專案模型建立，但卻必須對要驗證的程式碼專案進行變更。 Visual Studio 2019 可以自動對程式碼專案進行必要的變更。</li></ul> |
 | MSI 安裝程式 (vdproj) | 請參閱＜InstallShield 專案＞。 |

@@ -9,12 +9,12 @@ ms.assetid: b0b53fae-7007-4ad9-a604-21685937622f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a9b6880b2f71079b6b70eeb6c2e9f7b4e81fc19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65d311ec522e5ba5b5c92193a8af3e53a9e9eb35
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288737"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099319"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>建立診斷資料配接器以收集自訂資料或影響測試電腦
 
@@ -39,7 +39,7 @@ ms.locfileid: "85288737"
 |工作|相關主題|
 |-|-----------------------|
 |**建立診斷資料配接器：** 您可以藉由建立類別庫來建立診斷資料配接器，然後使用診斷資料配接器 API，收集您想要的資訊或影響您用來執行測試的測試系統。|-   [如何：建立診斷資料介面卡](../test/how-to-create-a-diagnostic-data-adapter.md)|
-|**選取執行測試時要使用的自訂診斷資料配接器：** 您可以選取要用於測試設定的診斷資料配接器，以便在執行測試時使用該配接器。|-   [在測試時收集診斷資料 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
+|**選取執行測試時要使用的自訂診斷資料配接器：** 您可以選取要用於測試設定的診斷資料配接器，以便在執行測試時使用該配接器。|-   [在測試時收集診斷資料 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)<br />-   [在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)|
 
 ## <a name="see-also"></a>另請參閱
 

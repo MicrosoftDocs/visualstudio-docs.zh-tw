@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1bd4c4ab15364e9e2ac8e189fcde01f65244b7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e9f4614967f1307bc1faaaaba12a2dde1e8cad0
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289192"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099267"
 ---
 # <a name="msbuild"></a>MSBuild
 
@@ -47,7 +47,7 @@ Microsoft Build Engine 是用來建立應用程式的平臺。 這個引擎也�
 您可以在 Visual Studio IDE 中撰寫程式碼，但是使用 MSBuild 執行組建。 另一種方法是，您可以在開發電腦上的 IDE 中建立程式碼，但是從命令列執行 MSBuild，以建立與多個開發人員整合的程式碼。 您也可以使用 [.Net core 命令列介面 (CLI) ](/dotnet/core/tools/)（使用 MSBuild）來建立 .net core 專案。
 
 > [!NOTE]
-> 您可以使用 Azure Pipelines 來自動編譯、測試和部署您的應用程式。 您的建置系統可以在開發人員簽入程式碼 (例如，做為連續整合策略的一部分) 時或是根據排程 (例如，夜間組建驗證測試組建) 自動執行組建。 Azure Pipelines 使用 MSBuild 編譯您的程式碼。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)。
+> 您可以使用 Azure Pipelines 來自動編譯、測試和部署您的應用程式。 您的建置系統可以在開發人員簽入程式碼 (例如，做為連續整合策略的一部分) 時或是根據排程 (例如，夜間組建驗證測試組建) 自動執行組建。 Azure Pipelines 使用 MSBuild 編譯您的程式碼。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)。
 
 本文提供 MSBuild 的總覽。 如需入門教學課程，請參閱[逐步解說︰使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。
 
@@ -193,7 +193,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 | [MSBuild 如何建置專案](build-process-overview.md) | 描述 MSBuild 內使用的內部組建進程 |
 | [其他資源](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | 列出社群和支援資源，以提供 MSBuild 的詳細資訊。 |
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
 
 - [MSBuild 參考](../msbuild/msbuild-reference.md)\
  包含參考資訊的主題連結。

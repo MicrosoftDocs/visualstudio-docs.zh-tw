@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b10e4b211bb1a187f51f95aa6eb78d2de451516
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddcdf62fbfe6d683159cccce24280bdb08cedc2a
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699649"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099371"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>支援 Visual Studio SDK
 有幾個支援選項可供有關于如何擴充 Visual Studio 整合式開發環境 (IDE) 的客戶使用。
@@ -30,7 +30,7 @@ ms.locfileid: "80699649"
  Visual Studio 開發小組的成員，以及延伸 Visual Studio 的其他開發人員，通常都參與 vstudio 的擴充性新聞群組。 此新聞群組是受控新聞群組。 如果您是 MSDN 通用訂閱者，請務必註冊非垃圾郵件別名，讓 Microsoft 可以回應。
 
 ### <a name="msdn-forums"></a>MSDN 論壇
- [MSDN 論壇](https://social.msdn.microsoft.com/Forums/en-US/home)提供另一種與對等和專家聊天的方式。 論壇 (UI) 的圖形化使用者介面是設計來讓它們比新聞群組更容易使用。 Visual Studio 擴充性 [論壇](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) 是開始搜尋擴充性問題答案的絕佳位置。 在您提出問題之前一律搜尋，因為其他人可能已經問過相同的問題。
+ [MSDN 論壇](https://social.msdn.microsoft.com/Forums/en-US/home)提供另一種與對等和專家聊天的方式。 論壇 (UI) 的圖形化使用者介面是設計來讓它們比新聞群組更容易使用。 Visual Studio 擴充性 [論壇](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts&preserve-view=true) 是開始搜尋擴充性問題答案的絕佳位置。 在您提出問題之前一律搜尋，因為其他人可能已經問過相同的問題。
 
 ### <a name="visual-studio-gallery"></a>Visual Studio 組件庫
  [Visual Studio Marketplace](https://marketplace.visualstudio.com/)是延伸模組與範例程式碼的位置。 您可以使用 Visual Studio 的範例應用程式，示範如何使用 Vspackage 和 Managed Extensibility Framework (MEF) 和其他類型的範例，來尋找改善生產力和使用者體驗的工具。

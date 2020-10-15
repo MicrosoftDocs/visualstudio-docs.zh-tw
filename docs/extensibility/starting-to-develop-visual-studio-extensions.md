@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8745acd9af9009a7206eada7ffb64f95759e8399
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 812c5b2366e40226011a15acfc1cae2327e4b897
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286189"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099384"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>開始開發 Visual Studio 擴充功能
 
@@ -91,7 +91,7 @@ ms.locfileid: "85286189"
 ## <a name="how-can-i-distribute-my-extension"></a>如何散發我的延伸模組？
  您可以在另一部電腦上安裝您的延伸模組，或將它傳送至您的朋友作為 .vsix 檔案，您可以按兩下該檔案來安裝它。 您可以在出 [貨 Visual Studio 擴充](../extensibility/shipping-visual-studio-extensions.md)功能，深入瞭解 VSIX 套件。
 
- 您也可以在 Visual Studio Marketplace 上發佈您的延伸模組，讓大量的 Visual Studio 客戶看得到。 如需將擴充功能封裝至 Marketplace 的範例，請參閱 [逐步解說：發行 Visual Studio 延伸](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)模組。 如需在 Marketplace 上發佈的詳細資訊，請參閱 [Visual Studio 的產品和延伸](/azure/devops/extend/overview?view=vsts)模組。
+ 您也可以在 Visual Studio Marketplace 上發佈您的延伸模組，讓大量的 Visual Studio 客戶看得到。 如需將擴充功能封裝至 Marketplace 的範例，請參閱 [逐步解說：發行 Visual Studio 延伸](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)模組。 如需在 Marketplace 上發佈的詳細資訊，請參閱 [Visual Studio 的產品和延伸](/azure/devops/extend/overview?view=vsts&preserve-view=true)模組。
 
 ## <a name="see-also"></a>另請參閱
 

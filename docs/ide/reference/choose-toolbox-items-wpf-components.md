@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731fe05e90e01c60f0a7ff3a14917d6d7625bc1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28576fab1ed4b39810b6f4cc32fb2955a7a44039
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75570553"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099345"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>選擇工具箱項目、WPF 元件
 
@@ -41,7 +41,7 @@ ms.locfileid: "75570553"
 
 **Namespace**
 
-顯示 [.NET API](/dotnet/api/?view=netframework-4.7) 命名空間的階層，其能定義元件的結構。 依此欄排序以列出安裝在您電腦上之每個 .NET 命名空間內的可用元件。
+顯示 [.NET API](/dotnet/api/?view=netframework-4.7&preserve-view=true) 命名空間的階層，其能定義元件的結構。 依此欄排序以列出安裝在您電腦上之每個 .NET 命名空間內的可用元件。
 
 **元件名稱**
 
@@ -57,7 +57,7 @@ ms.locfileid: "75570553"
 
 根據您在文字方塊中提供的字串來篩選 WPF 控制項清單。 這會顯示四個欄位中的所有相符項。
 
-**Clear**
+**清除**
 
 清除篩選字串。
 
