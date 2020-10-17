@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5cf32bdf56f75ded7d193082f1072b79c3d16b3c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87425390"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136910"
 ---
 # <a name="common-msbuild-project-items"></a>一般 MSBuild 專案項目
 
@@ -30,7 +30,7 @@ ms.locfileid: "87425390"
 
 下列是所有共同專案項目的清單。
 
-### <a name="reference"></a>參考資料
+### <a name="reference"></a>參考
 
 代表專案中的組件 (受管理) 參考。
 
@@ -41,7 +41,7 @@ ms.locfileid: "87425390"
 |融合名稱|選擇性字串。 指定項目的簡單或強式融合名稱。<br /><br /> 當這個屬性存在時，就可以節省時間，因為不需要開啟組件檔案就能取得融合名稱。|
 |特定版本|選擇性布林值。 指定是否應僅參考融合名稱中的版本。|
 |別名|選擇性字串。 參考的任何別名。|
-|私人|選擇性布林值。 指定是否應將參考複製到輸出資料夾。 此屬性與 Visual Studio IDE 中參考的 [複製到本機]**** 屬性相符。|
+|Private|選擇性布林值。 指定是否應將參考複製到輸出資料夾。 此屬性與 Visual Studio IDE 中參考的 [複製到本機]**** 屬性相符。|
 
 ### <a name="comreference"></a>COM 參考
 
@@ -81,9 +81,15 @@ ms.locfileid: "87425390"
 |項目中繼資料名稱|描述|
 |---------------|-----------------|
 |Name|選擇性字串。 參考的顯示名稱。|
-|專案|選擇性字串。 參考的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|
-|套件|選擇性字串。 所參考的專案檔路徑。|
-|ReferenceOutputAssembly|選擇性布林值。 如果設定為 `false`，則不會將參考之專案的輸出，以[參考](#reference)的方式包含在此專案中，但仍然可確保其他專案會在此專案之前建置。 預設為 `true`。|
+|GlobalPropertiesToRemove|選擇性的 `string[]`。 建立參考專案時要移除的屬性名稱，例如 `RuntimeIdentifier;PackOnBuild` 。 預設為空白。|
+|Project|選擇性字串。 參考的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|
+|OutputItemType|選擇性字串。 要發出目標輸出的專案類型。 預設值為空白。 如果參考中繼資料設定為 "true" (預設值) 則目標輸出會成為編譯器的參考。|
+|ReferenceOutputAssembly|選擇性布林值。 如果設定為 `false`，則不會將參考之專案的輸出，以[參考](#reference)的方式包含在此專案中，但仍然可確保其他專案會在此專案之前建置。 預設值為 `true`。|
+|SetConfiguration|選擇性字串。 設定參考專案的全域屬性 `Configuration` ，例如 `Configuration=Release` 。|
+|SetPlatform|選擇性字串。 設定參考專案的全域屬性 `Platform` ，例如 `Platform=AnyCPU` 。|
+|SetTargetFramework|選擇性字串。 設定參考專案的全域屬性 `TargetFramework` ，例如 `TargetFramework=netstandard2.0` 。|
+|SkipGetTargetFrameworkProperties|選擇性布林值。 如果 `true` 為，則會建立參考的專案，而不會協調最相容的 `TargetFramework` 值。 預設值為 `false`。|
+|目標|選擇性的 `string[]`。 應建立之參考專案中的目標清單（以分號分隔）。 預設值是預設值 `$(ProjectReferenceBuildTargets)` 為空白，表示預設目標。|
 
 ### <a name="compile"></a>編譯
 

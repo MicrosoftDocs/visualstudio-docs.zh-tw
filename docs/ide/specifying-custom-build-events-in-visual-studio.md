@@ -1,5 +1,7 @@
 ---
 title: 指定自訂建置事件
+description: 瞭解如何在組建開始之前或完成之後，自動在 Visual Studio 中執行命令。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fda60ffb97ecb44bd4a881cb42e4d9199cc958b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1d339f9bbf170d2df545e69c698f786198695ad
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115336"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136780"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自訂建置事件
 
@@ -30,7 +32,7 @@ ms.locfileid: "76115336"
 
 - Visual C++ -- [指定建置事件](/cpp/build/specifying-build-events)。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 建置事件遵循與 DOS 命令相同的語法，不過您可以使用巨集更輕鬆地建立建置事件。 如需可用宏的清單，請參閱 [預先建立事件/後置事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)。
 

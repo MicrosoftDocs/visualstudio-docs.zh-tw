@@ -1,5 +1,7 @@
 ---
 title: 編譯/建置
+description: 瞭解如何使用 Visual Studio IDE 組建方法、MSBuild 命令列工具組建方法，或 Azure Pipelines 組建方法來建立應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2180d535dbdbdc88290a48cf166879525f10b4bb
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: ac65fa9eaaf8e318e99e134957b335141f07577c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928537"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136585"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>在 Visual Studio 中編譯與建置
 

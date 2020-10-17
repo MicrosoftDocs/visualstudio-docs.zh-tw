@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: a224135e366c7a266defa525772dadf445208f3b
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: afeb612e1d092ebc1f5c33394a62dd9cef6b6a1c
+ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829887"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116099"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Bridge to Kubernetes 的運作方式
 
@@ -112,6 +112,8 @@ ms.locfileid: "91829887"
 
 * 服務必須由單一 pod 支援，才能連接至該服務。 您無法連接到具有多個 pod 的服務，例如具有複本的服務。
 * Pod 可能只有在該 pod 中執行的單一容器，才能讓 Bridge Kubernetes 成功連接。 橋接器至 Kubernetes 無法連線到具有其他容器的 pod 的服務，例如側車由服務網格插入的容器。
+* 目前，Kubernetes pod 的 Bridge 必須是 Linux 容器。 不支援 Windows 容器。
+* 隔離無法與 HTTPS 一起使用。
 * 橋接器至 Kubernetes 需要較高的許可權，才能在您的開發電腦上執行，以編輯主機檔案。
 * 無法在已啟用 Azure Dev Spaces 的叢集上使用 Bridge 與 Kubernetes。
 
@@ -119,7 +121,7 @@ ms.locfileid: "91829887"
 
 您無法在已啟用 Azure Dev Spaces 的叢集上使用 Bridge 進行 Kubernetes。 如果您想要在已啟用 Azure Dev Spaces 的叢集上使用橋接器來 Kubernetes，則必須先停用 Azure Dev Spaces，然後再連接到您的叢集。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 若要開始使用 Bridge 來 Kubernetes，以連接到您的本機開發電腦至您的叢集，請參閱 [使用 bridge 來 Kubernetes](bridge-to-kubernetes.md)。
 

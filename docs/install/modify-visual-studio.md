@@ -4,7 +4,7 @@ titleSuffix: ''
 description: 了解如何逐步修改 Visual Studio。
 ms.date: 10/12/2020
 ms.topic: how-to
-ms.custom: contperfq1
+ms.custom: contperfq2
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d4593ed516e308a5e55a93f83fd5345028dc95dc
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: dad71e4f52350357106ee9a9ef9ce90d18204bfb
+ms.sourcegitcommit: 4eb8fe6eb7f1dc639f1d213db05a7a3007e8087e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007134"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92157371"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>透過新增或移除工作負載和元件來修改 Visual Studio
 

@@ -2,7 +2,7 @@
 title: 在不使用滑鼠的情況下使用 Visual Studio
 titleSuffix: ''
 description: 了解如何只使用鍵盤在 Visual Studio 整合式開發環境 (IDE) 中輕鬆巡覽和撰寫程式碼。
-ms.date: 05/10/2019
+ms.date: 10/16/2020
 ms.topic: how-to
 helpviewer_keywords:
 - Toolbox, shortcut keys
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a8c14f59b87be1e59b5d115ea84b555677cda32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52d6bda98ee01dad4faf4a51412e810e1f5e4fa7
+ms.sourcegitcommit: 4eb8fe6eb7f1dc639f1d213db05a7a3007e8087e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770230"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92156557"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>如何完全只使用鍵盤
 
@@ -37,13 +37,13 @@ ms.locfileid: "85770230"
 ::: moniker-end
 
 > [!NOTE]
-> 取決於您的設定或您使用的 Visual Studio 版本，您看到的對話方塊和功能表命令可能會和 [說明] 中描述的不同。 若要變更您的設定，請在 [工具]**** 功能表上選擇 [匯入和匯出設定]****。 如需詳細資訊，請參閱[重設設定](../environment-settings.md#reset-settings)。
+> 取決於您的設定或您使用的 Visual Studio 版本，您看到的對話方塊和功能表命令可能會和 [說明] 中描述的不同。 若要變更設定，請選取 [工具]**** 功能表上的 [匯入和匯出設定]****。 如需詳細資訊，請參閱[重設設定](../environment-settings.md#reset-settings)。
 
 ## <a name="toolbox-controls"></a>工具箱控制項
 
 在不使用滑鼠的情況下，將工具箱上的控制項新增到表單或設計工具：
 
-1. 在功能表列上，選擇 [ **View**  >  **工具箱**]。
+1. 在功能表列上，選取 [ **View**  >  **工具箱**]。
 
 2. 使用**ctrl** + **向上鍵**或**Ctrl** + **向下**鍵，在 [**工具箱**] 索引標籤的區段之間移動。
 
@@ -71,9 +71,9 @@ ms.locfileid: "85770230"
 
 ## <a name="navigate-between-windows-and-files"></a>在視窗和檔案之間巡覽
 
-- 若要在編輯器或設計工具中的檔案間移動，請選擇**Ctrl** + **Tab**鍵盤快速鍵，以**Active Files**顯示已選取使用中檔案的 IDE 導覽器。 選擇 **Enter** 鍵以流覽至反白顯示的檔案。
+- 若要在編輯器或設計工具中的檔案間移動，請使用**Ctrl** + **Tab**鍵盤快速鍵來顯示 IDE 導覽器，並選取使用中**的檔案**。 選擇 **Enter** 鍵以流覽至反白顯示的檔案。
 
-- 若要在固定的工具視窗間移動，請選擇**Alt** + **F7**鍵盤快速鍵，以顯示已選取作用中**工具視窗**的 IDE 導覽器。 選擇 **Enter** 鍵以流覽至反白顯示的視窗。
+- 若要在固定的工具視窗間移動，請使用**Alt** + **F7**鍵盤快速鍵，以顯示已選取作用中**工具視窗**的 IDE 導覽器。 選擇 **Enter** 鍵以流覽至反白顯示的視窗。
 
 ## <a name="move-and-dock-tool-windows"></a>移動和固定工具視窗
 
@@ -81,7 +81,7 @@ ms.locfileid: "85770230"
 
 2. 在 [**視窗]** 功能表上，選取 [可停駐]**選項。**
 
-3. 按**Alt** + **空格鍵**，然後選擇 [**移動**]。
+3. 按**Alt** + **空格鍵**，然後選取 [**移動**]。
 
    固定的輔助方塊隨即出現。
 

@@ -1,18 +1,18 @@
 ---
 title: 為什麼我的 SLP 合約有結束日期，為什麼針對我的訂閱者而言，有時會有所不同？
 description: SLP 與 MPSA 合約不會到期，但我們的入口網站目前需要在佈建合約時提供結束日期。 我們目前...
-ms.faqid: group1_8
+ms.faqid: group1_9
 ms.topic: include
 ms.assetid: 9e5fac98-676a-4187-9323-ff5e113be282
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 0a78623c3bec97a579f1d071afd376e40827f563
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 8a1692e9739a3cfe68f25cc61596a001732c6f7c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386367"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92157815"
 ---
 ## <a name="why-does-my-slp-agreement-have-an-end-date-and-why-is-it-sometimes-different-for-my-subscribers"></a>為什麼我的 SLP 合約有結束日期，為什麼針對我的訂閱者而言，有時會有所不同？
 

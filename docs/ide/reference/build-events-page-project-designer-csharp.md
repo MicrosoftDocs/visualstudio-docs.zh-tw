@@ -1,5 +1,7 @@
 ---
 title: 專案設計工具、建置事件 (C#)
+description: 瞭解如何指定組建設定指示。 您也可以指定執行任何建置後事件的條件。
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a56093ab14b9be72f99e36b03eefe7abb895183f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f70557338a48931a3d109f345714d219f428f50
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419051"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136845"
 ---
 # <a name="build-events-page-project-designer-c"></a>專案設計工具、建置事件 (C#)
 

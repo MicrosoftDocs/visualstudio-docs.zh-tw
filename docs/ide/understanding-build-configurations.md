@@ -1,5 +1,7 @@
 ---
 title: 了解組建組態
+description: 瞭解當您需要使用 Visual Studio 中的不同設定來建立專案時，您需要建立組建設定的方式。
+ms.custom: SEO-VS-2020
 ms.date: 01/20/2020
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -26,12 +28,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a37d4fa5dc92253b94dc64590c9df5fec7703ceb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d8b61275e8197c90bfba85cb1b4be680f3c1f1a
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77904161"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136676"
 ---
 # <a name="understand-build-configurations"></a>了解組建組態
 
@@ -48,7 +50,7 @@ ms.locfileid: "77904161"
 
 若要建立、選取、修改或刪除組態，您可以使用 [組態管理員]****。 若要開啟它，請在功能表列上，選擇 [**建立**  >  **Configuration Manager**] **Configuration** ，或只在 [搜尋] 方塊中輸入設定。 您也可以使用 [標準]**** 工具列上的 [方案組態]**** 清單，來選取組態或開啟 [組態管理員]****。
 
-![組態管理員](media/understanding-build-configurations/config-manager.png)
+![Configuration Manager](media/understanding-build-configurations/config-manager.png)
 
 > [!NOTE]
 > 如果您在工具列上找不到 [方案設定] 設定，而且無法存取 **Configuration Manager**，可能會套用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 開發設定。 如需詳細資訊，請參閱 [如何：管理已套用 Visual Basic 開發人員設定的設定](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)。

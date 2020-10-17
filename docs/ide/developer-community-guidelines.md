@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da5a229ec345a4f360aeb6051dc33130fa3d99a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dfcdcfc309fb951b2f7e490f0d03dcfe9d381b83
+ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810115"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116146"
 ---
 # <a name="developer-community-guidelines"></a>開發人員社群指導方針
 
@@ -59,11 +59,13 @@ ms.locfileid: "90810115"
 
 回報問題之後，狀態會指出您的提交內容在其生命週期的位置。 當 Visual Studio 產品團隊審視您的意見反應時，他們會以適當的狀態進行設定。 藉由參考 [問題狀態和常見問題](./report-a-problem.md)來追蹤問題報告的進度。
 
+### <a name="prioritizing-which-issues-to-fix"></a>排定要修正問題的優先順序
+
+我們無法修正所有回報的問題。 修正程式太昂貴，有些可能會回歸其他功能區，有些則可能造成影響太低。 如果您已花時間將問題報告傳送給我們，我們瞭解這可能會令人失望。 無論是在此專案中，還是我們所貢獻的其他專案。 如果問題已關閉，而您覺得我們提供的原因不符合，您可以明確地瞭解您的使用案例，並要求重新開機此問題以進行另一次傳遞。 到目前為止，我們可能會要求您提供進一步的資訊。
+
+### <a name="missing-important-information"></a>遺漏重要資訊
+
 當問題遺失重要資訊時，我們會指派 _需要更多的資訊_ 狀態。 我們會根據所需的特定資訊對問題進行批註，而您將會收到電子郵件通知。 如果我們未在七天內收到資訊，則會傳送提醒給您。 之後，我們會在閒置14天之後關閉票證。
-
-### <a name="wont-fix-bugs"></a>無法修正錯誤
-
-當有負面的成本效益平衡時，我們會關閉一些錯誤。 例如，如果修正程式相當複雜，則會對許多使用者的風險進行回歸，修正可能不合理。 當我們關閉像這樣的錯誤時，我們將說明為什麼要這樣做。
 
 ### <a name="other-product"></a>其他產品
 

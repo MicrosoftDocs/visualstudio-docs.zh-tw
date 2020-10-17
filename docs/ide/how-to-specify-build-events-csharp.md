@@ -1,5 +1,7 @@
 ---
 title: 如何：指定建置事件 (C#)
+description: 瞭解如何使用組建事件來指定在組建開始之前或組建完成之後執行的命令。
+ms.custom: SEO-VS-2020
 ms.date: 03/21/2019
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e1a3083b59ad0cec727f753395768a214ff571b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7bac7b2b293cd508931304b1e6cdd237234001e3
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283992"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136936"
 ---
 # <a name="how-to-specify-build-events-c"></a>如何：指定建置事件 (C#)
 

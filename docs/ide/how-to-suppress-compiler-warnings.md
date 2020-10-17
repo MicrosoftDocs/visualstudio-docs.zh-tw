@@ -1,5 +1,6 @@
 ---
 title: 隱藏專案和 NuGet 套件的警告
+description: 瞭解如何使用 Visual Studio 來篩選出一或多個編譯器警告類型，以清理組建記錄檔。
 ms.custom: SEO-VS-2020
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33abc359dea3e1c7982e5d1689debc1f8e881106
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a59f3706e2d33e87e760d2b88c4c7ba78eca4ef2
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038578"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136363"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>如何：隱藏編譯器警告
 

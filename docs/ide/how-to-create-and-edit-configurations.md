@@ -1,5 +1,7 @@
 ---
 title: 如何：建立和編輯組態
+description: 瞭解如何使用 Visual Studio 來建立和編輯解決方案的數個組建設定。
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b3ecd4abb05148130b0d87e287cbe199557951
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 635fc18965361967269b7260b6abaab279ffb52d
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284499"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136819"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：建立和編輯組態
 

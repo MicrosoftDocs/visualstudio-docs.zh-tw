@@ -1,5 +1,6 @@
 ---
 title: 使用 Visual Basic 開發人員設定管理組建設定
+description: 瞭解套用 Visual Basic 開發人員設定時所隱藏的 advanced build configuration 選項，以及如何手動啟用這些組建設定。
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee729a0dfe27bf54a64b42ff64b23bf851c14d06
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.openlocfilehash: bd13c0a9f64ce484d9ba4e3193f7da94d0b1e446
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91135114"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136715"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>如何：在套用 Visual Basic 開發者設定的情況下管理組建組態
 
@@ -37,7 +38,7 @@ ms.locfileid: "91135114"
 
 3. 按一下 [顯示進階組建組態]****。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]  。
 
      在 [組建]**** 功能表上現在已可使用 [組態管理員]****，且 [組態]**** 和 [平台]**** 清單也會顯示在 [專案設計工具]**** 中。
 

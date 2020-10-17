@@ -1,5 +1,7 @@
 ---
 title: 專案設計工具、編譯頁 (Visual Basic)
+description: 瞭解如何在 Visual Studio 中指定編譯指令。 您也可以在此頁面上指定進階編譯器選項及建置前或建置後事件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9ffdfe4abbef5701cc060171ecbc379ae3a9215
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.openlocfilehash: 60172d9e308e38967f5ab5a8d882057e78f083c8
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89284313"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136624"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>專案設計工具、編譯頁 (Visual Basic)
 

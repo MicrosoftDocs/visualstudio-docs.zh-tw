@@ -1,6 +1,8 @@
 ---
 title: 摺疊和展開程式碼的區域
-ms.date: 11/04/2016
+description: 瞭解如何在 Visual Studio 中使用展開和折迭命令以大綱模式運作
+ms.custom: SEO-VS-2020
+ms.date: 10/15/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - outlining
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ad01726b57073cad3a5a2876a4b22667d3770a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e45d7192c35ed60442fadf1a3eb302997fbaf381
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545440"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136663"
 ---
 # <a name="outlining"></a>大綱
 
@@ -36,14 +38,14 @@ ms.locfileid: "85545440"
 [編輯]**** 功能表上的 [復原]**** 和 [重做]**** 命令會影響這些動作。 [複製]****、[剪下]****、[貼上]**** 和拖放作業都會保留大綱資訊，而不是可摺疊區域的狀態。 例如，當您複製已摺疊的區域時，[貼上]**** 作業會將複製的文字貼為已展開的區域。
 
 > [!CAUTION]
-> 當您變更大綱區域時，可能會遺失大綱。 例如，刪除或 [尋找] 和 [取代] 作業可能會清除區域的結尾。
+> 當您變更大綱區域時，可能會遺失大綱。 例如，刪除或 **尋找和取代** 作業可能會清除區域結尾。
 
 您可以在 [**編輯**  >  **大綱**] 子功能表中找到下列命令。
 
 |Name|描述|
 |-|-|
 |隱藏選取範圍| (**ctrl** + **M**、 **ctrl** + **H**) -折迭選取的程式碼區塊，通常不能用於大綱，例如 `if` 區塊。 若要移除自訂區域，請使用 [取消隱藏目前大綱]**** (或 **Ctrl**+**M**、**Ctrl**+**U**)。 在 Visual Basic 中無法使用。|
-|切換大綱展開|- 在游標落在巢狀摺疊區段時，反轉最內層大綱區段的目前隱藏或展開狀態。|
+|切換大綱展開|  (**ctrl** + **m**、 **ctrl** + **m**) -當游標位於嵌套折迭的區段時，將最內層大綱區段的目前隱藏或展開狀態反轉。|
 |切換所有大綱| (**ctrl** + **M**、 **ctrl** + **L**) -將所有區域設定為相同的折迭或展開狀態。 如果有些區域展開，有些區域摺疊，則會展開摺疊區域。|
 |取消大綱| (**ctrl** + **M**、 **ctrl** + **P**) -移除整份檔的所有大綱資訊。|
 |取消隱藏目前的| (**ctrl** + **M**、 **ctrl** + **U**) -移除目前所選取使用者定義區域的大綱資訊。 在 Visual Basic 中無法使用。|

@@ -1,5 +1,7 @@
 ---
 title: 進階編譯器設定對話方塊 (Visual Basic)
+description: 瞭解如何使用 [Advanced 編譯器設定] 對話方塊來指定專案的 Advanced build configuration 屬性。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c0e6e9d41bb1d4bd7446bb77306ca5a4551906f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0335ee8ef1c385da13c2043ffcfa94c264a5934a
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419103"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92137034"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>進階編譯器設定對話方塊 (Visual Basic)
 

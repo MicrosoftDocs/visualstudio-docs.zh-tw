@@ -1,5 +1,7 @@
 ---
 title: 建置事件對話方塊 (Visual Basic)
+description: 瞭解如何使用 [建立事件] 對話方塊來指定組建設定指示，以及執行任何預先建立或後置建立事件的條件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4cd0a46e5ab4cc9c3a9e00773818d536b84891
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42b7837dd5253d29ecbd0085ae6159a981fcf15c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68461441"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136637"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>建置事件對話方塊 (Visual Basic)
 

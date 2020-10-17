@@ -1,5 +1,7 @@
 ---
 title: 了解組建平台
+description: 瞭解如何在 Visual Studio 中儲存適用于不同目標平臺的不同版本方案和專案屬性。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3737bbe8fbffcb89ca4e03bcc6063ba45f8a44fd
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115070"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136650"
 ---
 # <a name="understand-build-platforms"></a>了解組建平台
 

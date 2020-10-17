@@ -1,5 +1,7 @@
 ---
 title: 如何：檢視、儲存和設定組建記錄檔 | Microsoft Docs
+description: 瞭解您可以如何查看、儲存和設定組建記錄檔。 這些檔案會提供實用的工作資訊，例如針對組建失敗進行疑難排解。
+ms.custom: SEO-VS-2020
 ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -9,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4acf8ca4e116bfb0ab990f1b0aed66bef95820ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02d26416357ec13b61232f2adb0bc3e5e3c67818
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283901"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136598"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>如何：檢視、儲存和設定組建記錄檔
 

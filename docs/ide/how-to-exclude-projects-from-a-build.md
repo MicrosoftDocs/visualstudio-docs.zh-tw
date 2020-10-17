@@ -1,5 +1,7 @@
 ---
 title: 如何：從組建中排除專案
+description: 瞭解如何使用 Visual Studio 建立方案，而不需要建立它所包含的所有專案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -9,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c30dd912378fd933d29bff1d8828f31de58f9afa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b0e164c24770048495d16da852523b3dd50a43a
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284317"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136897"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>如何：從組建中排除專案
 

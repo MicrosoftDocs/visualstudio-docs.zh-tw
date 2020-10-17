@@ -1,5 +1,6 @@
 ---
 title: 建立多電腦建置環境
+description: 在主機電腦上安裝 Visual Studio，然後將各種檔案和設定複製到另一部電腦，以在組織內建立組建環境。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 595317be1c3f24c9759bc5bb574a758795066659
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1c8fa7756763a668f6e97d90d8a405c660519189
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038422"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136949"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦建置環境
 
@@ -25,7 +26,7 @@ ms.locfileid: "90038422"
 
 本文件並不會授權在外部轉散發軟體，或將建置環境提供給第三方。
 
-> 免責聲明<br /><br /> 本文件係依「原樣」提供。 雖然我們已測試過所述的步驟，但無法徹底測試每一種組態。 我們將試圖以學到的任何其他資訊，確保文件處於最新狀態。 本文件中說明的資訊與畫面 (包括 URL 及其他網際網路網站參考資料) 如有變更，恕不另行通知。 針對此處提供的資訊，Microsoft 不做任何明示或默許的擔保。 貴用戶須自行承擔使用風險。<br /><br /> 本文件不為您提供對任何 Microsoft 產品中的任何智慧財產的法定權利。 您可以複製本文件供內部參照之用。<br /><br /> 貴用戶沒有義務提供與本文件相關的任何建議、意見或其他意見反應 (「意見反應」) 給 Microsoft。 不過，貴用戶自願提供的任何意見反應可能會用於 Microsoft 產品以及相關規格或其他文件 (統稱為「Microsoft 供應項目」)，之後可能會由其他第三方用來開發自己的產品。 因此，如果　貴用戶針對本文件的任何版本提供 Microsoft 意見反應或套用意見反應的 Microsoft 供應項目，即表示　貴用戶同意：(a) Microsoft 可以在任何 Microsoft 供應項目中，自由地使用、重製、授權、散發或商業化意見反應；(b) 貴用戶也免費授權給第三方，這些權利僅限於讓其他產品使用或連接到納入意見反應的 Microsoft 產品之任何特定部分所需的專利權；以及 (c) 在下列情況下，貴用戶不會提供 Microsoft 任何意見反應，以授權或分享給任何第三方：(i) 貴用戶合理相信這些意見反應受限於任何第三方的任何專利、著作權或其他智慧財產權宣告或權利；或是 (ii) 受限於試圖要求納入或衍生自這類意見反應之任何 Microsoft 供應項目的授權條款，或其他 Microsoft 智慧財產權。
+> 免責聲明<br /><br /> 本文件係依「原樣」提供。 雖然我們已測試過所述的步驟，但無法徹底測試每一種組態。 我們將試圖以學到的任何其他資訊，確保文件處於最新狀態。 本文件中說明的資訊與畫面 (包括 URL 及其他網際網路網站參考資料) 如有變更，恕不另行通知。 Microsoft 對此處提供的資訊，不做任何明確或隱含的瑕疵擔保。 貴用戶須自行承擔使用風險。<br /><br /> 本文件不為您提供對任何 Microsoft 產品中的任何智慧財產的法定權利。 您可以複製本文件供內部參照之用。<br /><br /> 貴用戶沒有義務提供與本文件相關的任何建議、意見或其他意見反應 (「意見反應」) 給 Microsoft。 不過，貴用戶自願提供的任何意見反應可能會用於 Microsoft 產品以及相關規格或其他文件 (統稱為「Microsoft 供應項目」)，之後可能會由其他第三方用來開發自己的產品。 因此，如果　貴用戶針對本文件的任何版本提供 Microsoft 意見反應或套用意見反應的 Microsoft 供應項目，即表示　貴用戶同意：(a) Microsoft 可以在任何 Microsoft 供應項目中，自由地使用、重製、授權、散發或商業化意見反應；(b) 貴用戶也免費授權給第三方，這些權利僅限於讓其他產品使用或連接到納入意見反應的 Microsoft 產品之任何特定部分所需的專利權；以及 (c) 在下列情況下，貴用戶不會提供 Microsoft 任何意見反應，以授權或分享給任何第三方：(i) 貴用戶合理相信這些意見反應受限於任何第三方的任何專利、著作權或其他智慧財產權宣告或權利；或是 (ii) 受限於試圖要求納入或衍生自這類意見反應之任何 Microsoft 供應項目的授權條款，或其他 Microsoft 智慧財產權。
 
 本逐步解說已對下列作業系統驗證過：
 
@@ -193,7 +194,7 @@ ms.locfileid: "90038422"
 
 您必須建立登錄項目，才能進行 MSBuild 的設定。
 
-1. 識別登錄項目的父資料夾。 所有登錄項目都會在相同的父機碼下建立。 在 x86 電腦上，父機碼會是 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**。 在 x64 電腦上，父機碼是 **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft**。 不論系統架構為何，本逐步解說會將父機碼稱為 %RegistryRoot%。
+1. 識別登錄項目的父資料夾。 所有登錄項目都會在相同的父機碼下建立。 在 x86 電腦上，父機碼會是 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**。 在 x64 電腦上，父機碼是 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft**的。 不論系統架構為何，本逐步解說會將父機碼稱為 %RegistryRoot%。
 
     > [!NOTE]
     > 如果主機電腦的架構與組建電腦的架構不同，請務必在每部電腦上使用適當的父機碼。 如果您想要自動化匯出程序，這會特別重要。
@@ -340,7 +341,7 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" 的每個執行個體變更
 
-         至
+         to
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll"。
 
@@ -350,7 +351,7 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" 的每個執行個體變更
 
-         至
+         to
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll"。
 

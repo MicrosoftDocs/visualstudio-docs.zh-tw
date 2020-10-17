@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdcfc9daf2e1e64d61e2f699e0295826894b1920
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76826467"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136832"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>如何：使用 MSBuild 專案 SDK
 
@@ -66,9 +66,6 @@ MSBuild 15.0 引進了「專案 SDK」的概念，可簡化使用需要匯入屬
     </Project>
     ```
 
-    > [!NOTE]
-    > 這是目前在 Visual Studio for Mac 中參考專案 SDK 的唯一方法。
-
 - 使用最上層的 `<Sdk/>` 元素：
 
     ```xml
@@ -107,7 +104,7 @@ MSBuild 15.0 引進了「專案 SDK」的概念，可簡化使用需要匯入屬
 
    只有在您指定了選用的版本時，此解析程式才有效。 它可用於任何自訂專案 SDK。
    
-- .NET CLI 解析程式，可解析使用 [.NET cli](/dotnet/core/tools/)安裝的 sdk。
+- .NET SDK 解析程式，可解析隨 [.NET sdk](/dotnet/core/sdk/)安裝的 MSBuild sdk。
 
    此解析程式會尋找屬於產品一部分的專案 Sdk，例如 `Microsoft.NET.Sdk` 和 `Microsoft.NET.Sdk.Web` 。
    

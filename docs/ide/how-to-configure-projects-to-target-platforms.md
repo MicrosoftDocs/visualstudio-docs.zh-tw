@@ -1,5 +1,7 @@
 ---
 title: 如何：將專案設定成以平台為目標
+description: 瞭解 Visual Studio 如何讓您將應用程式設定為以不同平臺為目標，包括64位平臺。
+ms.custom: SEO-VS-2020
 ms.date: 08/16/2019
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a58b60e23bf08fb86a8dd7bc09d760085b6ea25f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 323d118b73649c8c23d9b4a2e3ace2fd2fc6fdea
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284593"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136754"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>如何：將專案設定成以平台為目標
 

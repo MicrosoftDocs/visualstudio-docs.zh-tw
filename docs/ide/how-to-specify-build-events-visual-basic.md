@@ -1,5 +1,7 @@
 ---
 title: 如何：指定建置事件 (Visual Basic)
+description: 瞭解如何使用 Visual Basic 中的組建事件，在編譯器中執行腳本、宏或其他動作。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5986576fdf668aba952609dbf241e31d4b3dbf3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00655d1f30d18da4170782384c634ff189b104ee
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283966"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136923"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>如何：指定建置事件 (Visual Basic)
 

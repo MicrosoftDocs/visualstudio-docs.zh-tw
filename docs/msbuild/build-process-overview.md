@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c1cdc4738f60301435932b3700f14377f12172
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65e386b71c0b7ece3aee8185574d53955b7326a1
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290199"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136858"
 ---
 # <a name="how-msbuild-builds-projects"></a>MSBuild 如何建置專案
 
@@ -50,7 +50,7 @@ MSBuild 專案檔案的 SDK 功能相當新。 在這項變更之前，專案檔
 
 本節將討論如何處理和剖析這些輸入檔，以產生記憶體中的物件，以判斷將建立的內容。
 
-評估階段的目的是要根據輸入 XML 檔案和本機環境，在記憶體中建立物件結構。 評估階段包含五個傳遞，可處理輸入檔（例如專案 XML 檔案），以及匯入的 XML 檔案（一般以 *. .props* 或 *.targets* 檔案命名），端視它們主要是設定屬性或定義組建目標而定。 每個階段都會建立記憶體內建物件的一部分，稍後用於執行階段以建立專案，但在評估階段中不會發生實際的組建動作。 在每個階段中，會依其出現的順序來處理專案。
+評估階段的目的是要根據輸入 XML 檔案和本機環境，在記憶體中建立物件結構。 評估階段包含六個傳遞，可處理輸入檔（例如專案 XML 檔案或），以及匯入的 XML 檔案（一般以 *. .props* 或 *.targets* 檔案命名），這取決於它們主要是設定屬性或定義組建目標。 每個階段都會建立記憶體內建物件的一部分，稍後用於執行階段以建立專案，但在評估階段中不會發生實際的組建動作。 在每個階段中，會依其出現的順序來處理專案。
 
 評估階段中的階段如下所示：
 

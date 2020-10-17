@@ -1,5 +1,7 @@
 ---
 title: 如何：建置到通用輸出目錄
+description: 瞭解如何變更專案的組建輸出路徑，以強制所有輸出放在相同的資料夾中。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a499b5ca5ea64dd9ded10f82b1af43258f346d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a39dae210c2cb9afe3e4b77962b75ddb3be4baeb
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284772"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136962"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>如何：建置到通用輸出目錄
 

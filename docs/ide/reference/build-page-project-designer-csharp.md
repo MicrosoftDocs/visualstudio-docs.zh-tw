@@ -1,5 +1,7 @@
 ---
 title: 專案設計工具、建置頁 (C#)
+description: 瞭解如何在 Visual Studio 中使用 [專案設計工具] 的 [組建] 頁面，以指定專案的組建設定屬性。
+ms.custom: SEO-VS-2020
 ms.date: 06/20/2017
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7da7414b9cf454e861c8407633de7851dcb86df3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8c3409c7ba62f1deb628645b624a40de4cbeaff
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419220"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136871"
 ---
 # <a name="build-page-project-designer-c"></a>專案設計工具、建置頁 (C#)
 
@@ -148,4 +150,4 @@ ms.locfileid: "85419220"
 ## <a name="see-also"></a>另請參閱
 
 - [專案屬性參考](../../ide/reference/project-properties-reference.md)
-- [C # 編譯器選項](/dotnet/csharp/language-reference/compiler-options/index)
+- [C# 編譯器選項](/dotnet/csharp/language-reference/compiler-options/index)

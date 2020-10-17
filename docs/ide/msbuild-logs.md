@@ -1,5 +1,7 @@
 ---
 title: 疑難排解及建立 MSBuild 問題的記錄檔
+description: 瞭解如何診斷 Visual Studio 專案中的組建問題，並視需要建立要傳送給 Microsoft 的記錄以進行調查。
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2019
 ms.technology: vs-ide-compile
 ms.topic: troubleshooting
@@ -15,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: 24df9f7c44ea2dbb9e9899abf68823683422da71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6b08b243a5b4eec3119ceedbaf2177670aa3e83
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235065"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136572"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>疑難排解及建立 MSBuild 問題的記錄檔
 

@@ -1,5 +1,7 @@
 ---
 title: 進階建置設定對話方塊 (C#)
+description: 瞭解如何使用 Visual Studio 來指定專案的 advanced build configuration 屬性。
+ms.custom: SEO-VS-2020
 ms.date: 08/05/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 917ef4ff685c243fa271a0966a931151cb12ed2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 145fc1ad1dddfa4d0648e2ecc7a8d85263744d49
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418843"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136741"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>C # )  ([Advanced Build Settings] 對話方塊
 
@@ -76,7 +78,7 @@ ms.locfileid: "85418843"
 
    讓原始程式碼在偵錯工具中啟動程式時進行偵錯，但只有在將執行中的程式附加到偵錯工具時，才會顯示組譯工具。
 
-- **portable**
+- **可擕式**
 
    產生 .PDB 檔案，這是非平台特定可攜式符號檔，可將主要可執行檔中項目的資訊和其產生方式提供給其他工具 (特別是偵錯工具)。 如需詳細資訊，請參閱 [Portable PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) (可攜式 PDB)。
 
@@ -96,5 +98,5 @@ ms.locfileid: "85418843"
 
 ## <a name="see-also"></a>另請參閱
 
-- [C# 編譯器選項](/dotnet/csharp/language-reference/compiler-options/index)
+- [C # 編譯器選項](/dotnet/csharp/language-reference/compiler-options/index)
 - [專案設計工具、組建頁 (c # ) ](../../ide/reference/build-page-project-designer-csharp.md)
