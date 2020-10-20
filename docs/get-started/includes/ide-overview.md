@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 1563efb15f98720352a25eec59c8eca045f77ddc
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 03e5f806b428b7ecf08038ef34d6b1dddcd92f9e
+ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91025160"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92210734"
 ---
 Visual Studio「整合式開發環境」** 是一個有創意的啟動控制板，可供您編輯、偵錯及建置程式碼，然後發佈應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有編譯器、程式碼完成工具、圖形設計工具和更多功能，讓軟體開發程序變得更為容易。
 
@@ -91,12 +91,9 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![Visual Studio 成員清單](../media/intellisense-list-members.png)
 
-- 搜尋方塊
+- [Visual Studio 搜尋](../../ide/visual-studio-search.md)
 
-   Visual Studio 使用這麼多的功能表、選項和屬性，有時似乎讓人有壓迫感。 搜尋方塊是一個可讓您在 Visual Studio 中快速找到所需項目的絕佳方式。 當您開始鍵入要尋找的項目名稱時，Visual Studio 會列出結果，將您引導至您確實想要去的地方。 如果您需要在 Visual Studio 中新增功能，例如新增對其他程式設計語言的支援，搜尋方塊提供的結果可開啟 Visual Studio 安裝程式，安裝工作負載或個別元件。
-
-   > [!TIP]
-   > 按**Ctrl** + **Q**作為搜尋方塊的快捷方式。
+   Visual Studio 使用這麼多的功能表、選項和屬性，有時似乎讓人有壓迫感。 Visual Studio 搜尋 (**Ctrl** + **Q**) 是在一個位置快速尋找 IDE 功能和程式碼的絕佳方法。
 
    ::: moniker range="vs-2017"
 
@@ -109,6 +106,8 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
    ::: moniker range="vs-2019"
 
    ![Visual Studio 2019 中的搜尋方塊](../media/vs-2019/quick-launch-nuget.png)
+
+    如需資訊和生產力秘訣，請參閱 [如何使用 Visual Studio 搜尋](../../ide/visual-studio-search.md)。
 
    ::: moniker-end
 

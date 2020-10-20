@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 981f18857beb83ef2a4902f50985ca8e9f7ed901
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd0d2b3e112a4bf08481fa8f043f70121d827010
+ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88507952"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92197474"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>教學課程：擴充簡單的 c # 主控台應用程式
 
@@ -120,9 +120,10 @@ ms.locfileid: "88507952"
 
 ## <a name="reference-net-libraries-write-to-a-log"></a>參考 .NET 程式庫：寫入記錄檔
 
-1. 假設您現在想要新增所有作業的記錄檔，並將它寫出至文字檔。 .NET `Trace` 類別提供這種功能。  (也適用于基本的列印偵錯工具。 ) Trace 類別是在 Diagnostics 中，所以請從新增 using 指示詞開始：
+1. 假設您現在想要新增所有作業的記錄檔，並將它寫出至文字檔。 .NET `Trace` 類別提供這種功能。  (也適用于基本的列印偵錯工具。 ) Trace 類別是在 System.IO 中，而我們需要像這樣的類別 `StreamWriter` ，所以請從新增 using 指示詞開始：
 
    ```csharp
+   using System.IO;
    using System.Diagnostics;
    ```
 
@@ -217,7 +218,7 @@ ms.locfileid: "88507952"
 
    封裝會下載並加入至您的專案，而新的專案會出現在 **方案總管**的 [參考] 節點中。
 
-1. 在 *CalculatorLibrary.cs*的開頭，為封裝的 Newtonsoft.Js新增 using 指示詞。
+1. 在 *CalculatorLibrary.cs*的開頭加入 System.IO 和 Newtonsoft.Json 封裝的 using 指示詞。
 
    ```csharp
    using Newtonsoft.Json;
@@ -307,7 +308,7 @@ ms.locfileid: "88507952"
         }
    ```
 
-1. 建立並執行應用程式，然後在完成輸入幾項作業之後，使用 ' n ' 命令將應用程式適當地關閉。  現在，開啟檔案 consolelog.js，您應該會看到如下的內容：
+1. 建立並執行應用程式，然後在完成輸入幾項作業之後，使用 ' n ' 命令將應用程式適當地關閉。  現在，開啟檔案 calculatorlog.js，您應該會看到如下的內容：
 
    ```json
    {
