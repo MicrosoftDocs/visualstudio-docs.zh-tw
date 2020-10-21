@@ -1,7 +1,6 @@
 ---
 title: 尋找和取代文字，及多重游標選取
-description: 瞭解如何使用 Visual Studio 程式碼編輯器中的 [尋找和取代] 功能。
-ms.date: 08/14/2018
+ms.date: 10/17/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -31,12 +30,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a74fa1328a3b0079eef6253fa32fc882876a71
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: b878ccbf6714987599d1585ca9c0dc3ceb759144
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298582"
+ms.locfileid: "92334190"
 ---
 # <a name="find-and-replace-text"></a>尋找和取代文字
 
@@ -123,9 +122,9 @@ ms.locfileid: "92298582"
 |**Ctrl** +**Alt** + 按兩下|新增第二個文字選取範圍|
 |**Ctrl** +**Alt** + 按一下 + 拖曳|新增第二個選取範圍|
 |**Shift** +**Alt** +**.**|將下一個相符文字新增為選取範圍|
-|**Ctrl** +**Shift** +**Alt** +**,**|將所有相符的文字新增為選取範圍|
+|**Shift** +**Alt** +**;**|將所有相符的文字新增為選取範圍|
 |**Shift** +**Alt** +**,**|移除最後一個選取項目|
-|**Ctrl** +**Shift** +**Alt** +**.**|跳過下一個相符的項目|
+|**Shift** +**Alt**+**/**|跳過下一個相符的項目|
 |**Alt** + 按一下|新增方塊選取範圍|
 |**Esc** 或按一下|清除所有選取範圍|
 
@@ -133,7 +132,7 @@ ms.locfileid: "92298582"
 
 :::image type="content" source="media/edit-menu-multiple-carets-find-replace.png" alt-text="Visual Studio 中 [多重游標] 飛出功能表的螢幕擷取畫面":::
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [在 Visual Studio 中使用正則運算式](../ide/using-regular-expressions-in-visual-studio.md)
 - [在 Visual Studio 中重構程式碼](../ide/refactoring-in-visual-studio.md)

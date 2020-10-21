@@ -2,18 +2,18 @@
 title: Visual Studio 中新的 Git 體驗 (預覽)
 titleSuffix: ''
 description: 瞭解 Visual Studio 2019 中新的整合式 Git 體驗
-ms.date: 09/22/2020
+ms.date: 10/13/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 1f9dc891219e5563ad6ea72085b0ad28469c7171
-ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
+ms.openlocfilehash: ad75fcff26365afdbc4fb4b02975d7c3211fa79b
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92082053"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334203"
 ---
 # <a name="new-git-experience-in-visual-studio-preview"></a>Visual Studio 中新的 Git 體驗 (預覽)
 
@@ -95,7 +95,7 @@ Visual Studio 會根據您在方案總管中載入的視圖檔案來調整其觀
 
 Visual Studio 也可讓您使用 [ **全部認可] 和 [推** 播] 和 [ **全部認可** ] 和 [同步] 快速鍵，輕鬆地進行認可和同步處理。 當您在 [ **變更** ] 和 [ **暫存的變更** ] 區段中按兩下任何檔案時，可以看到與未修改的檔案版本逐行比較。
 
-:::image type="content" source="media/git-file-version-compare.png" alt-text="Visual Studio 中 [選項] 對話方塊之 [預覽功能] 區段的螢幕擷取畫面 " 字元，將 Azure DevOps 工作專案與認可產生關聯。 您可以透過 Team Explorer > 管理連線來連接 Azure DevOps 儲存機制
+:::image type="content" source="media/git-file-version-compare.png" alt-text="Visual Studio 中 [選項] 對話方塊之 [預覽功能] 區段的螢幕擷取畫面 " 字元，將 Azure DevOps 工作專案與認可產生關聯。 您可以透過**Team Explorer**  >  **管理連接**來連接 Azure DevOps 存放庫。
 
 ### <a name="select-an-existing-branch"></a>選取現有的分支
 
@@ -188,7 +188,7 @@ Visual Studio 中的「合併編輯器」是三向合併工具，可顯示內送
 > [!IMPORTANT]
 > 如果您對我們有任何建議，請讓我們知道！ 我們很感謝您透過 [**開發人員社群**](https://aka.ms/vs-suggest) 入口網站，在設計決策方面與您互動的機會。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - Channel 9 和[YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)上[的新 Git 體驗](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience)影片
 - [Visual Studio blog 文章中的 Git 體驗有很棒的新更新](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)
