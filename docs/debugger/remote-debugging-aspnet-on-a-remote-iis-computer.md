@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 4d2f2e2a698063dfb5ac6261d8a9b01a073d112e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 389fe1491a92cacecd772244c2a0facd0d12c887
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173866"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "92298763"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>遠端偵錯 ASP.NET Core 在 Visual Studio 的遠端 IIS 電腦上
 
@@ -53,7 +53,7 @@ ms.locfileid: "84173866"
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>在 Visual Studio 電腦上建立 ASP.NET Core 應用程式
 
-1. 建立新的 ASP.NET Core Web 應用程式。 
+1. 建立新的 ASP.NET Core Web 應用程式。
 
     ::: moniker range=">=vs-2019"
     在 Visual Studio 2019 中，輸入 **Ctrl + Q** 以開啟 [搜尋] 方塊，輸入 **asp.net**，選擇 [ **範本**]，然後選擇 [ **建立新的 ASP.NET Core Web 應用程式**]。 在出現的對話方塊中，將專案命名為 **MyASPApp**，然後選擇 [ **建立**]。 接著，選擇 [ **Web 應用程式] (模型-視圖控制器) **]，然後選擇 [ **建立**]。
@@ -209,7 +209,7 @@ ms.locfileid: "84173866"
 
 6. 輸入您的進程名稱的第一個字母，以快速尋找您的應用程式。
 
-    * 如果您是在 IIS 上使用同 [進程裝載模型](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) ，請選取正確的 **w3wp.exe** 進程。 從 .NET Core 3 開始，這是預設值。
+    * 如果您是在 IIS 上使用同 [進程裝載模型](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models) ，請選取正確的 **w3wp.exe** 進程。 從 .NET Core 3 開始，這是預設值。
 
     * 否則，請選取 **dotnet.exe** 進程。  (這是跨進程裝載模型。 ) 
 

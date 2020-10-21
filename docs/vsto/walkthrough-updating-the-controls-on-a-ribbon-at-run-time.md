@@ -1,5 +1,6 @@
 ---
 title: 逐步解說：在執行時間更新功能區上的控制項
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 425918ea32c14e6ba905d6b32864a2844d2b5a90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c2e870f028b3337fd162adde881281d7050e142
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255343"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298055"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>逐步解說：在執行時間更新功能區上的控制項
 

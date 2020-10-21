@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: debf44bfe8187a7fd84e04b4362283658f636f17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 926bd4a6630d9d99726ee6c1479d04c476756c18
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536782"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "92298754"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Visual Studio 中的 Azure IIS 上的遠端偵錯 ASP.NET Core
 
@@ -96,7 +96,7 @@ ms.locfileid: "85536782"
 
     應該在 Visual Studio 中叫用中斷點。
 
-    這樣就完成了！ 本主題的其餘步驟適用于 Azure VM 上的遠端偵錯程式。
+    就這麼簡單！ 本主題的其餘步驟適用于 Azure VM 上的遠端偵錯程式。
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a> Azure VM 上的遠端 Debug ASP.NET Core
 
@@ -255,7 +255,7 @@ ms.locfileid: "85536782"
 
 6. 輸入您的進程名稱的第一個字母，以快速尋找您的應用程式。
 
-    * 如果您是在 IIS 上使用同 [進程裝載模型](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) ，請選取正確的 **w3wp.exe** 進程。 從 .NET Core 3 開始，這是預設值。
+    * 如果您是在 IIS 上使用同 [進程裝載模型](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models) ，請選取正確的 **w3wp.exe** 進程。 從 .NET Core 3 開始，這是預設值。
 
     * 否則，請選取 **dotnet.exe** 進程。  (這是跨進程裝載模型。 ) 
 

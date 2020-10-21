@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46f88b47e135331e5f1dc010aa4a73abed520f51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c089a3156d005da7d49976f6c96bb10daac0662
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838962"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "92297954"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>逐步解說：在 Visual c # 專案中呼叫 VBA 的程式碼
   本逐步解說示範如何從活頁簿中的 Visual Basic for Applications (VBA) 程式碼，呼叫 Microsoft Office Excel 文件層級自訂中的方法。 這個程序和三個基本步驟相關：將方法加入 `Sheet1` 主項目類別、將方法公開至活頁簿中的 VBA 程式碼，然後從活頁簿中的 VBA 程式碼呼叫此方法。
@@ -66,7 +66,7 @@ ms.locfileid: "90838962"
 
 1. 啟動 Excel。
 
-2. 將使用中的檔儲存為 **啟用 Excel 宏的活頁簿 (\* . xlsm) ** 名稱為 **WorkbookWithVBA**。 將它儲存至方便取用的位置，例如桌面。
+2. 將使用中的檔儲存為 **Excel Macro-Enabled 活頁簿 (\* . xlsm) ** 的名稱為 **WorkbookWithVBA**。 將它儲存至方便取用的位置，例如桌面。
 
 3. 按一下 [功能區] 上的 [開發人員] **** 索引標籤。
 
@@ -107,7 +107,7 @@ ms.locfileid: "90838962"
 
 6. 在 [名稱] **** 方塊中，輸入 **CallingCodeFromVBA**。
 
-7. 按一下 [確定]。
+7. 按一下 [確定]  。
 
      隨即開啟 [Visual Studio Tools for Office 專案精靈] **** 。
 
@@ -161,7 +161,7 @@ ms.locfileid: "90838962"
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
 
-3. 將下列方法新增至 `Sheet1` 類別。 這個方法會覆寫 <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> 方法，以傳回 `Sheet1` 類別目前的執行個體。
+3. 將下列方法新增至 `Sheet1` 類別。 這個方法會覆寫 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> 方法，以傳回 `Sheet1` 類別目前的執行個體。
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
 
@@ -180,7 +180,7 @@ ms.locfileid: "90838962"
 
 3. 在 [擷取介面] **** 對話方塊的 [選取 Public 成員以形成介面] **** 方塊中，按一下 `CreateVstoNamedRange` 方法的項目。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]  。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會產生名稱為 `ISheet1`的新介面，而且會修改 `Sheet1` 類別的定義，以便實作 `ISheet1` 介面。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 也會在 [程式碼編輯器] 中開啟 **ISheet1.cs** 檔案。
 

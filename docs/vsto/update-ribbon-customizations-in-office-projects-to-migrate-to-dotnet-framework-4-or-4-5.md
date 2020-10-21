@@ -1,5 +1,6 @@
 ---
-title: 更新 Office 專案中的功能區自訂已遷移至 .NET Framework 4，4。5
+title: 更新已遷移至 .NET Framework 4.5 的功能區自訂
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7d7ab5755f592e57e76dcd68f3dcb9dc2a7eab9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8024d6fba419dfe437ca8492010c7e4786861862
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254355"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298607"
 ---
-# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新 Office 專案中您遷移至 .NET Framework 4 或 .NET Framework 4.5 的功能區自訂
+# <a name="update-ribbon-customizations-migrated-to-net-framework-45"></a>更新已遷移至 .NET Framework 4.5 的功能區自訂
+
   如果您的專案包含使用 **功能區 (視覺化設計工具) ** 專案專案所建立的功能區自訂，則您必須在目標 framework 變更為或更新版本時，對專案程式碼進行下列變更 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 。
 
 - 修改產生的功能區程式碼。
@@ -148,7 +150,7 @@ ms.locfileid: "71254355"
 
  下表列出目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本專案中的功能區事件以及它們的相關委派。
 
-|事件|在 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 及更新版本的專案中要使用的委派|
+|Event - 事件|在 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 及更新版本的專案中要使用的委派|
 |-----------| - |
 |產生的功能區類別中的 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> 事件|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|

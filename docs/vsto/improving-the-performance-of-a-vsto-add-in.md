@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dccff7206aa9ef71596816d34a863695a10aff6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7529c69270b5f33cde32e8a7907f1b80589c43b7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416545"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298516"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>改善 VSTO 增益集的效能
   最佳化您為 Office 應用程式建立的 VSTO 增益集，您可以提供使用者更好的體驗，讓他們快速地啟動、關閉、開啟項目及執行其他工作。 如果是 Outlook 適用的 VSTO 增益集，您還可以減少 VSTO 增益集因為效能不佳而停用的機率。 實作下列策略可以提升 VSTO 增益集的效能：
@@ -115,6 +115,6 @@ ms.locfileid: "79416545"
 
 ## <a name="see-also"></a>另請參閱
 
-- [要求-載入 VSTO 增益集](https://blogs.msdn.microsoft.com/andreww/2008/07/14/demand-loading-vsto-add-ins/)
-- [在 Office 增益集中延遲載入 CLR](https://blogs.msdn.microsoft.com/andreww/2008/04/19/delay-loading-the-clr-in-office-add-ins/)
+- [要求-載入 VSTO 增益集](/archive/blogs/andreww/demand-loading-vsto-add-ins)
+- [在 Office 增益集中延遲載入 CLR](/archive/blogs/andreww/delay-loading-the-clr-in-office-add-ins)
 - [使用 Visual Studio 建立適用於 Office 的 VSTO 增益集](create-vsto-add-ins-for-office-by-using-visual-studio.md)

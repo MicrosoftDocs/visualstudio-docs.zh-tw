@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 9e6daa3e11bc96fe4d0b9499a6a1a7982432583d
-ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
+ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92039907"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298470"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>使用 XAML 設計工具的設計階段資料 Visual Studio
 
@@ -138,7 +138,7 @@ xmlns:models="clr-namespace:Cities.Models"
 
 ## <a name="use-design-time-data-with-custom-types-and-properties"></a>使用自訂類型和屬性的設計階段資料
 
-這項功能預設僅適用于平臺控制項和屬性。 在本節中，我們將探討讓您將自訂控制項用作設計階段控制項所需的步驟。 啟用這項操作有三個需求：
+這項功能預設僅適用于平臺控制項和屬性。 在本節中，我們將探討讓您將自訂控制項用作設計階段控制項的必要步驟，這是使用 Visual Studio 2019 preview [16.8](/visualstudio/releases/2019/preview-notes) 版或更新版本的客戶可用的新功能。 啟用這項操作有三個需求：
 
 - 自訂 xmlns 命名空間 
 

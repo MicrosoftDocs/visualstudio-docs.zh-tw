@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 03/02/2020
+ms.date: 10/20/2020
 ms.topic: conceptual
 description: 登入可能會因為使用別名或易記名稱而失敗
-ms.openlocfilehash: f73aa52be518de627d468e8e1171de5f3145753b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c5c211cd674e86edc4528e6e2c5e75bd5b02132d
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006211"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298196"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>使用別名時登入 Visual Studio 訂閱可能會失敗
 視登入所用的帳戶類型而定，登入時可能無法正確顯示可用的訂閱 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 。 其中一個可能的原因是使用「別名」或「易記名稱」，而非使用訂用帳戶指派目標的登入身分識別。 這稱為「別名處理」。
@@ -33,10 +33,10 @@ ms.locfileid: "91006211"
 
 1. https://my.visualstudio.com/subscriptions使用您訂用帳戶指派電子郵件中提及的登入位址登入。
 
-2. 確認頁面右上方所列的登入電子郵件地址符合您用來登入的位址。  如果沒有，則您的 UPN 不相符，且您將無法查看訂用帳戶。 
+2. 在頁面右上角按一下您的名稱。  這會開啟您的設定檔。  確認您設定檔中所列的登入電子郵件地址與您用來登入的位址相符。  如果沒有，則您的 UPN 不相符，且您將無法查看訂用帳戶。 
 
 > [!div class="mx-imgBorder"]
-> ![登入電子郵件地址](_img//aliasing/sign-in-email.png "請確定右上方顯示的電子郵件地址符合您用來登入的電子郵件地址。")
+> ![登入電子郵件地址](_img//aliasing/sign-in-email.png "請確定您的設定檔中顯示的電子郵件地址與您用來登入的電子郵件地址相符。")
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>如何修正 UPN 不符的問題
 
@@ -98,7 +98,7 @@ Visual Studio 平臺會排列主要別名的優先順序，以顯示訂用帳戶
 - [Microsoft 365 檔](/microsoft-365/)
 
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 深入瞭解如何管理 Visual Studio 的訂閱。
 - [指派個別訂用帳戶](assign-license.md)
 - [指派多個訂用帳戶](assign-license-bulk.md)

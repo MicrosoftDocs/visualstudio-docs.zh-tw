@@ -1,5 +1,6 @@
 ---
 title: 如何：將功能區設計工具的功能區匯出至功能區 XML
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 57918e8a51a3948a2c69eb0c8ab5438b147e44f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf3101a062fa8b30ae821bf6a157319b6f37862a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543464"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298431"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>如何：將功能區設計工具的功能區匯出至功能區 XML
   **功能區 (的視覺化設計工具) **專案不支援所有可能的功能區自訂類型。 若要以先進的方式自訂功能區，您可以從設計工具將功能區匯出至功能區 XML，並直接編輯 XML。

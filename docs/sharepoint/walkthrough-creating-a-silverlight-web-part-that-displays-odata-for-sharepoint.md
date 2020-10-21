@@ -1,5 +1,6 @@
 ---
 title: 建立顯示 OData for SharePoint 的 Silverlight web 元件
+titleSuffix: ''
 ms.date: 02/22/2017
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75653f0357bcc605e666ee271a527b616985b641
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652f34e6a062d2c8129266a10c859c8d24abd83e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017169"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298495"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>逐步解說：建立顯示適用于 SharePoint 之 OData 的 Silverlight web 元件
   SharePoint 2010 透過 OData 公開其清單資料。 在 SharePoint 中，OData 服務是由 RESTful service ListData 所執行。 本逐步解說將示範如何建立裝載 Silverlight 應用程式的 SharePoint 網頁元件。 Silverlight 應用程式會使用 ListData 來顯示 SharePoint 公告清單資訊。 如需詳細資訊，請參閱 [SharePoint FOUNDATION REST 介面](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) 和 [開放式資料通訊協定](https://www.odata.org/)。
@@ -68,7 +69,7 @@ ms.locfileid: "86017169"
 
 #### <a name="to-customize-the-silverlight-application"></a>自訂 Silverlight 應用程式
 
-1. 在 Silverlight 應用程式中，將元件參考加入至 System.object。 如需詳細資訊，請參閱 [如何：使用加入參考對話方塊加入或移除參考](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。
+1. 在 Silverlight 應用程式中，將元件參考加入至 System.object。 如需詳細資訊，請參閱 [如何：使用加入參考對話方塊加入或移除參考](/previous-versions/wkze6zky(v=vs.140))。
 
 2. 在 **方案總管**中，開啟 [ **參考**] 的快捷方式功能表，然後選擇 [ **加入服務參考**]。
 

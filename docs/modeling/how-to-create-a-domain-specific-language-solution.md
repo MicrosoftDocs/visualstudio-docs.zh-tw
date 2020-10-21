@@ -13,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 844f3eb97ed9e07aa8125688d2bfe8944249b008
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c47b16bbb9fe5eb352171e6e1cf4c13890890265
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541787"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298659"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：建立網域指定的語言方案
 特定領域語言 (DSL) 是使用特製化的 Visual Studio 解決方案所建立。
@@ -33,7 +33,7 @@ ms.locfileid: "85541787"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="creating-a-domain-specific-language-solution"></a>建立特定領域語言方案
+## <a name="creating-a-domain-specific-language-solution"></a>建立 Domain-Specific 語言方案
 
 1. 藉由建立新的 **特定領域語言設計工具** 專案，啟動 DSL Wizard。
 
@@ -48,9 +48,9 @@ ms.locfileid: "85541787"
 
 2. 選擇 DSL 範本。
 
-    在 [ **選取網域特定語言選項** ] 頁面上，選取其中一個解決方案範本，例如 [ **最基礎語言**]。 選擇與您想要建立的 DSL 類似的範本。
+    在 [ **選取 Domain-Specific 語言選項** ] 頁面上，選取其中一個解決方案範本，例如 **最基本的語言**。 選擇與您想要建立的 DSL 類似的範本。
 
-    如需解決方案範本的詳細資訊，請參閱 [選擇特定領域語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。
+    如需解決方案範本的詳細資訊，請參閱 [選擇 Domain-Specific 語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。
 
 3. 在 [ **副檔名** ] 頁面上輸入副檔名。 在您的電腦中，以及您想要安裝 DSL 的任何電腦中，它應該是唯一的。 您應該會看到 **沒有任何應用程式或 Visual Studio 編輯器使用此延伸**模組的訊息。
 
@@ -70,7 +70,7 @@ ms.locfileid: "85541787"
 
 ### <a name="solution-settings-page"></a>解決方案設定頁面
  **您要將哪個範本作為網域特定語言的基礎？**
-選擇與您想要建立的 DSL 類似的範本。 不同的範本會提供便利的起點。 當您選取方案範本時，嚮導會顯示描述。 如需解決方案範本的詳細資訊，請參閱 [選擇特定領域語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。
+選擇與您想要建立的 DSL 類似的範本。 不同的範本會提供便利的起點。 當您選取方案範本時，嚮導會顯示描述。 如需解決方案範本的詳細資訊，請參閱 [選擇 Domain-Specific 語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。
 
  **您想要為特定領域語言命名什麼？**
 預設為方案名稱。 從這個值產生程式碼。 它必須是有效的 c # 類別名稱。
@@ -114,9 +114,9 @@ ms.locfileid: "85541787"
 
  **使用現有的強式名稱金鑰** 如果您想要將 DSL 與另一個元件整合，請使用此選項。
 
- 如需強式命名的詳細資訊，請參閱 [建立和使用強式名稱的元件](/dotnet/standard/assembly/create-use-strong-named)。
+ 如需強式命名的詳細資訊，請參閱 [建立和使用 Strong-Named 元件](/dotnet/standard/assembly/create-use-strong-named)。
 
 ## <a name="see-also"></a>另請參閱
 
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)
-- [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
+- [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

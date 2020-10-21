@@ -1,6 +1,7 @@
 ---
-title: 逐步解說：使用 MSBuild | Microsoft Docs
-ms.date: 03/20/2019
+title: 使用 MSBuild
+description: 瞭解 MSBuild 專案檔的各個部分，包括專案、專案中繼資料、屬性、目標和工作。
+ms.date: 10/19/2020
 ms.topic: conceptual
 ms.custom: contperfq2
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f074e69f23e20ecb92d32efb69fe011c0dbf797
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.openlocfilehash: b26c13765daf5a82a9961e6509b36e24e18f4e0c
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91134814"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298529"
 ---
 # <a name="walkthrough-use-msbuild"></a>逐步解說：使用 MSBuild
 
@@ -30,6 +31,24 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
 
 您可以從 Visual Studio 或 **命令視窗**中執行 MSBuild。 在本逐步解說中，您將使用 Visual Studio 來建立 MSBuild 專案檔。 您可以在 Visual Studio 中編輯專案檔，然後使用**命令視窗**建置專案並檢查結果。
 
+## <a name="install-msbuild"></a>安裝 MSBuild
+
+::: moniker range="vs-2017"
+
+如果您有 Visual Studio，則已安裝 MSBuild。 若要在沒有 Visual Studio 的系統上安裝 MSBuild 15，請移至 [Visual Studio 較舊的下載](https://visualstudio.microsoft.com/vs/older-downloads/)，並展開 **Visual Studio 2017** ，然後選擇 [ **下載** ] 按鈕。 如果您有 Visual Studio 訂用帳戶，請登入並尋找下載最新版 **Build Tools for Visual Studio 2017**的連結。 如果您沒有 Visual Studio 訂用帳戶，您仍然可以安裝最新版本的組建工具。 在此頁面上，使用版本選擇器切換至2019版的頁面，並遵循安裝指示。
+::: moniker-end
+
+::: moniker range="vs-2019"
+如果您有 Visual Studio，則已安裝 MSBuild。 在 Visual Studio 2019 中，它會安裝在 Visual Studio 安裝資料夾底下。 針對 Windows 10 上的一般預設安裝，MSBuild.exe 位於 *MSBuild\Current\Bin*的安裝資料夾下。
+
+若要在沒有 Visual Studio 的系統上安裝 MSBuild，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 並向下移至 [ **所有下載**]，然後展開 [ **工具] 以 Visual Studio 2019**。 安裝 **Visual Studio 2019 的組建工具**，其中包含 MSBuild 或安裝 [.NET Core SDK](/dotnet/core/sdk#acquiring-the-net-core-sdk)。
+
+在安裝程式中，請確定已選取您所使用工作負載的 MSBuild 工具，然後選擇 [ **安裝**]。
+
+![安裝 MSBuild](media/walkthrough-using-msbuild/installation-msbuild-tools.png)
+
+::: moniker-end
+
 ## <a name="create-an-msbuild-project"></a>建立 MSBuild 專案
 
  Visual Studio 專案系統是以 MSBuild 為基礎。 這可讓您輕鬆地使用 Visual Studio 建立新的專案檔。 在本節中，您將建立 Visual C# 專案檔。 您可以選擇改為建立 Visual Basic 專案檔。 在本逐步解說的內容中，這兩個專案檔之間的差異非常小。
@@ -41,12 +60,12 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
     ::: moniker range=">=vs-2019"
     按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **winforms**，然後選擇 [建立新的 Windows Forms App (.NET Framework)]****。 在出現的對話方塊中選擇 [建立]****。
 
-    在 [名稱]**** 方塊中，輸入 `BuildApp`。 輸入方案的 [位置]****，例如 *D:\\*。 接受預設的 [解決方案]****、[解決方案名稱]**** \(**BuildApp**\) 和 [架構]****。
+    在 [名稱]  方塊中，輸入 `BuildApp`。 輸入方案的 [位置]****，例如 *D:\\*。 接受預設的 [解決方案]****、[解決方案名稱]**** \(**BuildApp**\) 和 [架構]****。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [新增專案]**** 對話方塊的左窗格中，展開 [Visual C#]**** > [Windows Desktop]****，然後選擇 [Windows Forms App (.NET Framework)]****。 然後選擇 [確定]。
 
-    在 [名稱]**** 方塊中，輸入 `BuildApp`。 輸入方案的 [位置]****，例如 *D:\\*。 接受 [為方案建立目錄]**** (已選取)、[加入至原始檔控制]**** (未選取) 及 [方案名稱]**** (**BuildApp**) 的預設值。
+    在 [名稱]  方塊中，輸入 `BuildApp`。 輸入方案的 [位置]****，例如 *D:\\*。 接受 [為方案建立目錄]**** (已選取)、[加入至原始檔控制]**** (未選取) 及 [方案名稱]**** (**BuildApp**) 的預設值。
     ::: moniker-end
 
 1. 按一下 [確定]**** 或 [建立]**** 來建立專案檔。
@@ -100,7 +119,7 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
 
 只要參考到它們，就能有效地將匯入的檔案插入至專案檔。
 
-在 SDK 樣式的 projcts 中，您看不到這個匯入元素，因為 SDK 屬性會隱含地匯入這個檔案。
+在 SDK 樣式專案中，您看不到這個匯入元素，因為 SDK 屬性會隱含地匯入這個檔案。
 
 MSBuild 會持續追蹤組建的目標，並保證每個目標的建置不會超過一次。
 
@@ -185,7 +204,7 @@ Message 工作會接受 Text 屬性的字串值做為輸入，並將其顯示在
 </PropertyGroup>
 ```
 
- 所有屬性都是 PropertyGroup 項目的子項目。 屬性的名稱是子項目的名稱，而屬性的值是子項目的文字項目。 例如，套用至物件的
+ 所有屬性都是 PropertyGroup 項目的子項目。 屬性的名稱是子項目的名稱，而屬性的值是子項目的文字項目。 例如，
 
 ```xml
 <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -193,7 +212,7 @@ Message 工作會接受 Text 屬性的字串值做為輸入，並將其顯示在
 
  定義名為 TargetFrameworkVersion 的屬性，並提供字串值 "4.5"。
 
- 您隨時都能重新定義組建屬性。 如果
+ 您隨時都能重新定義組建屬性。 If
 
 ```xml
 <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -251,7 +270,7 @@ $(PropertyName)
 
 ### <a name="conditional-properties"></a>條件式屬性
 
-許多屬性（例如）會 `Configuration` 有條件地定義，也就是屬性 `Condition` 會出現在 property 元素中。 只有當條件評估為 "true" 時，才能定義或重新定義條件式屬性。 請注意，未定義屬性的預設值是空字串。 例如，套用至物件的
+許多屬性（例如）會 `Configuration` 有條件地定義，也就是屬性 `Condition` 會出現在 property 元素中。 只有當條件評估為 "true" 時，才能定義或重新定義條件式屬性。 請注意，未定義屬性的預設值是空字串。 例如，
 
 ```xml
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -323,7 +342,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 
 項目是一種資訊，通常是檔案名稱，可用來做為建置系統的輸入。 例如，可能會將代表原始程式檔的項目集合傳遞至名為 Compile 的工作，以便將它們編譯為組件。
 
-所有項目 (Item) 都是 ItemGroup 項目 (Element) 的子項目 (Element)。 項目 (Item) 名稱是子項目 (Element) 的名稱，而項目 (Item) 值是子項目 (Element) 的 Include 屬性值。 系統會將名稱相同的項目值收集到該名稱的項目類型。  例如，套用至物件的
+所有項目 (Item) 都是 ItemGroup 項目 (Element) 的子項目 (Element)。 項目 (Item) 名稱是子項目 (Element) 的名稱，而項目 (Item) 值是子項目 (Element) 的 Include 屬性值。 系統會將名稱相同的項目值收集到該名稱的項目類型。  例如，
 
 ```xml
 <ItemGroup>
@@ -420,7 +439,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 
 ### <a name="include-exclude-and-wildcards"></a>Include、Exclude 和萬用字元
 
- 您可以使用萬用字元 "*"、"\*\*" 及 "?" 搭配 Include 屬性，來將項目加入至項目類型。 例如，套用至物件的
+ 您可以使用萬用字元 "*"、"\*\*" 及 "?" 搭配 Include 屬性，來將項目加入至項目類型。 例如，
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -434,7 +453,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 
  將 [ *images* ]*資料夾中的*所有檔案及其所有子資料夾新增至 [相片] 專案類型。 如需更多範例，請參閱 [如何：選取要建立的](../msbuild/how-to-select-the-files-to-build.md)檔案。
 
- 請注意，宣告項目時，會將它們加入至項目類型。 例如，套用至物件的
+ 請注意，宣告項目時，會將它們加入至項目類型。 例如，
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -447,7 +466,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 <Photos Include="images\*.jpeg;images\*.gif" />
 ```
 
- 您可以使用 Exclude 屬性，從項目類型中排除項目。 例如，套用至物件的
+ 您可以使用 Exclude 屬性，從項目類型中排除項目。 例如，
 
 ```xml
 <Compile Include="*.cs" Exclude="*Designer*">
@@ -455,7 +474,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 
  將副檔名為 *.cs* 的所有檔案加入至 Compile 項目類型，但名稱包含 *Designer* 字串的檔案除外。 如需更多範例，請參閱 [如何：從組建中排除](../msbuild/how-to-exclude-files-from-the-build.md)檔案。
 
-Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Include 屬性所加入的項目 (Item)。 例如，套用至物件的
+Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Include 屬性所加入的項目 (Item)。 例如，
 
 ```xml
 <Compile Include="*.cs" />

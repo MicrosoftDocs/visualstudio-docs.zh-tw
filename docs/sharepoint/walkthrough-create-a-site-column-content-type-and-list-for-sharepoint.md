@@ -1,5 +1,6 @@
 ---
 title: 建立 SharePoint 的網站資料行、內容類型和清單
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ce76c72bad138a5c6c40afe717aadafec02c677
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 041c0ba5174450fca7acf7247b1cf40a98ac147d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015276"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298369"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>逐步解說：建立 SharePoint 的網站資料行、內容類型和清單
   下列程式示範如何建立自訂 SharePoint 網站資料行（或 *欄位*），以及使用網站資料行的內容類型。 它也會顯示如何建立使用新內容類型的清單。

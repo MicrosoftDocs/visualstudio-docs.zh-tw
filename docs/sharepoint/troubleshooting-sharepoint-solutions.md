@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcb30056021a865d0b0e605de462ff72ced5a383
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79a08d3f8dbc4b579a52501afb08ffb7dca33f2
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73661890"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "92298378"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>疑難排解 SharePoint 方案
-  當您使用偵錯工具來進行 SharePoint 方案的偵錯工具時，可能會發生下列問題或警示 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 如需詳細資訊，請參閱 [SharePoint 2007 工作流程解決方案的調試](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)程式。
+  當您使用偵錯工具來進行 SharePoint 方案的偵錯工具時，可能會發生下列問題或警示 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 如需詳細資訊，請參閱 [SharePoint 2007 工作流程解決方案的調試](/previous-versions/bb386166(v=vs.100))程式。
 
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>沙箱化視覺 web 元件中的權杖限制
  沙箱化方案中的視覺 Web 組件無法處理標準語彙基元，例如 SharePoint 執行階段支援的 $SPUrl。 因此無法解析 URL，而且如果您直接在指令碼項目中參考內容，也無法在視覺 Web 組件設計工具的 [設計] 檢視中預覽該內容，如下列範例所示：

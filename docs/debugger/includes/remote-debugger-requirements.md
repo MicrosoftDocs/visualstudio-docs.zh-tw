@@ -14,19 +14,19 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: fe2927a7a863b3825a680096da44afa6d68f1cba
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68149167"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "92298684"
 ---
-### <a name="supported-operating-systems"></a>Supported Operating Systems  
+### <a name="supported-operating-systems"></a>支援的作業系統  
 
 遠端電腦必須執行下列作業系統的其中一個：  
   
-- Windows 10 (不 phone)
+- Windows 10 (非電話) 
   
-- Windows 8 或 8.1 (不 phone)
+- Windows 8 或 8.1 (不是電話) 
   
 - Windows 7 Service Pack 1  
 
@@ -37,7 +37,7 @@ ms.locfileid: "68149167"
 - Windows Server 2008 Service Pack 2、Windows Server 2008 R2 Service Pack 1
 
 > [!NOTE]
-> Windows Phone 需要 USB 連線進行偵錯 （它不需要的遠端工具）。
+> Windows Phone 需要 USB 連線來進行 debug (它不需要遠端工具) 。
   
 ### <a name="supported-hardware-configurations"></a>支援的硬體組態  
   
@@ -53,4 +53,4 @@ ms.locfileid: "68149167"
   
 ### <a name="network-configuration"></a>網路組態  
 
-遠端電腦和 Visual Studio 電腦必須透過網路、工作群組或家用群組等連接，或直接透過乙太網路纜線連接。 不支援透過 proxy 連線的兩部電腦之間的偵錯。 透過高延遲或低頻寬連線，例如撥號網際網路，或透過網際網路偵錯跨國家/地區不建議使用和可能失敗或非常慢。
+遠端電腦和 Visual Studio 電腦必須透過網路、工作群組或家用群組等連接，或直接透過乙太網路纜線連接。 不支援透過 proxy 連線的兩部電腦之間的偵錯工具。 不建議透過高延遲或低頻寬的連線（例如撥號網際網路，或透過網際網路跨國家/地區）進行偵錯工具，且可能會失敗或可能會變慢。

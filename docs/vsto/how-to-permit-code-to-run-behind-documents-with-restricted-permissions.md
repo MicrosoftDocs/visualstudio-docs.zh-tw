@@ -1,5 +1,6 @@
 ---
 title: 允許程式碼在具有限制許可權的檔背後執行
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15cfb7ebf2f4f71e892820206f0dd1d006639992
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14c468a806160fd31c84b164a4b995f904e71fc6
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547507"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298482"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>如何：允許程式碼在具有限制許可權的檔背後執行
   您可以使用 Microsoft Office 的資訊 Rights Management (IRM) 功能來限制檔或活頁簿的許可權。 根據預設，不允許執行受限制 Microsoft Office Word 檔或 Microsoft Office Excel 活頁簿中的程式碼。 您可以變更預設值，讓您的 managed 程式碼延伸模組可以存取物件模型，而且您的解決方案將會運作。

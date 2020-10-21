@@ -1,5 +1,6 @@
 ---
-title: 情節：使用視覺化和模型功能變更設計
+title: 使用視覺化和模型製作工具變更設計
+description: Visual Studio 中的視覺效果和模型工具總覽。
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -12,15 +13,16 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio ALM], modeling software
 author: JoshuaPartlow
 ms.author: joshuapa
+ms.custom: SEO-VS-2020
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db584adc01a3f0f161d451d73df6a8deab08b869
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6ad330c083a97e8a098f05a9e0398a806a9153b
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238890"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "92298595"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>情節：使用視覺化和模型功能變更設計
 
@@ -214,9 +216,9 @@ Visual Studio 模型圖表已經與 Team Foundation Server 整合，以便您可
 
 請參閱：
 
-- [關於 Agile 工具和 Agile 專案管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
+- [關於 Agile 工具和 Agile 專案管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)
 
-- [圖表、儀表板和小工具 (Azure DevOps Services) ](/azure/devops/report/dashboards/overview?view=vsts)
+- [圖表、儀表板和小工具 (Azure DevOps Services) ](/azure/devops/report/dashboards/overview?view=vsts&preserve-view=true)
 
 - [使用 Project 建立您的待處理項目和工作](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
@@ -236,13 +238,13 @@ Dinner Now 擁有大型自動化測試集合，因為這些測試幾乎仍適用
 
 請參閱：
 
-- [測試應用程式](/azure/devops/test/overview?view=vsts)
+- [測試應用程式](/azure/devops/test/overview?view=vsts&preserve-view=true)
 
 - [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)
 
-- [使用版本控制](/azure/devops/repos/tfvc/overview?view=azure-devops)
+- [使用版本控制](/azure/devops/repos/tfvc/overview?view=azure-devops&preserve-view=true)
 
-- [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)
+- [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>使用視覺效果和模型化來更新系統
 
@@ -396,7 +398,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 #### <a name="relationship-to-other-diagrams"></a>與其他圖表的關聯性
 
-|**圖表**|**描述**|
+|**圖表**|**說明**|
 |-|-|
 |相依性圖表|定義與類別相關的系統邏輯架構。<br /><br /> 使用相依性驗證可確保程式碼與設計保持一致。<br /><br /> 請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表：參考](../modeling/layer-diagrams-reference.md)<br />- [相依性圖表：指導方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|
 |Code Map|將現有程式碼中的組織與關聯性視覺化。<br /><br /> 若要識別類別、其關聯性及方法，請建立會顯示這些項目的 Code Map。<br /><br /> 請參閱：<br /><br /> - [將相依性對應到您的解決方案](../modeling/map-dependencies-across-your-solutions.md)|
@@ -470,7 +472,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 #### <a name="relationship-to-other-diagrams"></a>與其他圖表的關聯性
 
-|**圖表**|**描述**|
+|**圖表**|**說明**|
 |-|-|
 |Code Map|將現有程式碼中的組織與關聯性視覺化。<br /><br /> 若要建立圖層，請產生 Code Map，然後在地圖上將項目分組為可能的圖層。 將群組從地圖拖曳至相依性圖表。<br /><br /> 請參閱：<br /><br /> - [將相依性對應到您的解決方案](../modeling/map-dependencies-across-your-solutions.md)<br />- [流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)|
 
@@ -484,5 +486,5 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 - [視覺化程式碼](../modeling/visualize-code.md)
 - [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)
-- [在 Agile 開發中使用模型](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [在 Agile 開發中使用模型](/previous-versions/ff398061(v=vs.140))
 - [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)

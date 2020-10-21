@@ -1,5 +1,6 @@
 ---
 title: 資訊版權管理 & managed 程式碼延伸模組
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 753f3d2da201c67cd86c697eccf7580596a40d6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06b55855184aaef57ec0a3425abed7d235ec837b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68872056"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298061"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>資訊版權管理和 managed 程式碼延伸模組總覽
   Microsoft Office Word 和 Microsoft Office Excel 提供 Rights Management (IRM) 的資訊，這項功能可協助您防止未經授權的人員查看或修改機密資訊。 如需資訊 Rights Management 運作方式的詳細資訊，請參閱特定 Office 應用程式中的說明。

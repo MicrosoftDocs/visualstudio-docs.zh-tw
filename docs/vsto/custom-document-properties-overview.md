@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b3f4038a05478d8e2d747efa700c7ece02e4827
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d9fd14753f447b929faf5aecd37277529e0dd19
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62951172"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298467"
 ---
 # <a name="custom-document-properties-overview"></a>自訂文件屬性總覽
 
@@ -55,5 +55,5 @@ ms.locfileid: "62951172"
 - [Visual Studio 中的 Office 方案架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [檔層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)
 - [Office 方案中的應用程式和部署資訊清單](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [如何：使用 ClickOnce 發行 Office 方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [如何：使用 ClickOnce 發行 Office 方案](/previous-versions/bb386095(v=vs.110))
 - [如何：建立和修改自訂文件屬性](../vsto/how-to-create-and-modify-custom-document-properties.md)

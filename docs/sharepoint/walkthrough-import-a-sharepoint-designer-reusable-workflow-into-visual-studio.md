@@ -1,5 +1,6 @@
 ---
-title: 逐步解說：將 SharePoint Designer 可重複使用的工作流程匯入 Visual Studio |Microsoft Docs
+title: 逐步解說：匯入 SharePoint Designer 可重複使用的工作流程 |Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,14 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a589f14ea60d50c0062d85be81523f27c81b455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6680c6ff95808db56e5bb32e02e0775c935011
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015694"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298046"
 ---
-# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>逐步解說：將 SharePoint Designer 可重複使用的工作流程匯入 Visual Studio
+# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>逐步解說：匯入 SharePoint Designer 可重複使用的工作流程
+
   本逐步解說示範如何將 SharePoint Designer 2010 中建立的可重複使用工作流程匯入至 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sharepoint 工作流程專案。
 
  在 SharePoint Designer 或 *宣告式工作流程*中建立的工作流程， [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 是由語句而非程式碼所組成。 SharePoint Designer 2010 引進可重複使用的 *工作流程，這些工作流程*是可供 SharePoint 網站的不同清單使用的可移植、宣告式工作流程。

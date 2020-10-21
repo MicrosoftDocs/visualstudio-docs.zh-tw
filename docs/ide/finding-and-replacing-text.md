@@ -1,5 +1,6 @@
 ---
 title: 尋找和取代文字，及多重游標選取
+description: 瞭解如何使用 Visual Studio 程式碼編輯器中的 [尋找和取代] 功能。
 ms.date: 08/14/2018
 ms.topic: conceptual
 f1_keywords:
@@ -30,12 +31,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffc31a0d0e2b6878b5dd5173a35ce4f538e135be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81a74fa1328a3b0079eef6253fa32fc882876a71
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590341"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298582"
 ---
 # <a name="find-and-replace-text"></a>尋找和取代文字
 
@@ -130,7 +131,7 @@ ms.locfileid: "75590341"
 
 有些命令也可在 [編輯]**** 功能表取得，在 [多重游標]**** 下：
 
-![Visual Studio 中的多重游標飛出功能表](media/edit-menu-multiple-carets.png)
+:::image type="content" source="media/edit-menu-multiple-carets-find-replace.png" alt-text="Visual Studio 中 [多重游標] 飛出功能表的螢幕擷取畫面":::
 
 ## <a name="see-also"></a>另請參閱
 

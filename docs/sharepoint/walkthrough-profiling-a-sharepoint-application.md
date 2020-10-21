@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c900a1496d3ef864e50d40092379348c05a4706b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a2e4ca528c7f534cc3a7f04d7e1e2832ee9b412
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017106"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "92298627"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>逐步解說：分析 SharePoint 應用程式
   本逐步解說將示範如何使用 Visual Studio 中的程式碼剖析工具最佳化 SharePoint 應用程式的效能。 範例應用程式是 SharePoint 功能事件接收器，內含的閒置迴圈會降低功能事件接收器的效能。 Visual Studio 分析工具可讓您找出並消除最耗費資源的 (最慢的專案) 部分，也稱為最忙碌 *路徑*。
@@ -275,4 +275,4 @@ ms.locfileid: "86017106"
 ## <a name="see-also"></a>另請參閱
 - [效能會話總覽](../profiling/performance-session-overview.md)
 - [效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)
-- [Find Application Bottlenecks with Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx) (使用 Visual Studio 分析工具尋找應用程式瓶頸)
+- [Find Application Bottlenecks with Visual Studio Profiler](/archive/msdn-magazine/2008/march/find-application-bottlenecks-with-visual-studio-profiler) (使用 Visual Studio 分析工具尋找應用程式瓶頸)

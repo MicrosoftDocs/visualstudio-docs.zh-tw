@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 0dc08e534fe0d77cc25363c119b2220d159a973b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68146665"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92321601"
 ---
 Visual Studio 2010
