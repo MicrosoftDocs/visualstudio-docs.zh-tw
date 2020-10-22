@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶
 ms.openlocfilehash: 59bfac51eb7888bbad4cc07bf2df25b8c35980fd
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005894"
 ---
 # <a name="managing-subscriptions"></a>管理訂用帳戶
@@ -113,13 +113,13 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 > - 如果您選擇關閉 Microsoft 帳戶或 Azure AD，則會立即匿名您的個人資料。
 > - 如果您有使用中的訂閱，則不會完全移除您的個人資料。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 您是否可以管理組織的訂用帳戶？  深入瞭解如何管理 Visual Studio 訂閱：
 - [指派個別訂用帳戶](assign-license.md)
 - [指派多個訂用帳戶](assign-license-bulk.md)

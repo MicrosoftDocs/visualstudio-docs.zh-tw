@@ -8,10 +8,10 @@ ms.date: 09/21/2020
 ms.topic: conceptual
 description: 了解如何在管理入口網站中檢視已指派的訂用帳戶數目上限
 ms.openlocfilehash: b9ff33623311e4bfeff6b6067d5631d4e65efda9
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91022163"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>使用 [使用量上限] 功能來追蹤指派的訂用帳戶數目
@@ -48,12 +48,12 @@ Visual Studio 訂用帳戶系統管理入口網站中新功能會協助您追蹤
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [大量授權條款](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 - 如果您有任何關於訂用帳戶指派或系統管理入口網站其他方面的問題，請連絡 https://visualstudio.microsoft.com/subscriptions/support/ 以尋求協助。 
 - 深入瞭解當您指派更多購買的訂用帳戶時 (稱為[過度分配](handle-overclaimed-license.md))，該怎麼辦。

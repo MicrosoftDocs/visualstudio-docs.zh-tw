@@ -8,10 +8,10 @@ ms.date: 09/21/2020
 ms.topic: how-to
 description: 了解系統管理員如何在系統管理入口網站中尋找個別訂閱者或群組。
 ms.openlocfilehash: 341f8e9739b629330775ff8688c5fdf872165e3a
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91022228"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>搜尋和篩選 Visual Studio 訂用帳戶中的訂閱者
@@ -37,13 +37,13 @@ Visual Studio 訂用帳戶管理入口網站可讓您根據各種條件來尋找
    > ![從訂閱者清單清除篩選](_img/search-filter/clear-filter.png "按一下 [清除篩選] 以移除篩選，然後繼續查看所有指派的訂閱。")
 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 - 現在您已瞭解如何尋找訂閱者，請瞭解如何[編輯](edit-license.md)他們的訂閱。
 - 需要協助以使用系統管理入口網站嗎？  請聯絡 [Visual Studio 管理和訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)。

@@ -8,10 +8,10 @@ ms.date: 09/22/2020
 ms.topic: conceptual
 description: Visual Studio 訂閱 – 我為何會針對我的訂閱者看見 Hotmail 或 Gmail 地址？
 ms.openlocfilehash: dc2de6c852f39f789fb07358384ad490d13f137c
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91022640"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Visual Studio 訂用帳戶–為什麼我會看到訂閱者的個人帳戶？
@@ -50,12 +50,12 @@ ms.locfileid: "91022640"
 > [!NOTE]
 > 當您編輯登入電子郵件地址時，這只會更新訂閱者用來登入其訂用帳戶的電子郵件 https://my.visualstudio.com 。 如果「訂閱者」已使用其他電子郵件地址來啟用 Azure 或 Pluralsight 等權益，他們將需要繼續使用這些電子郵件地址來存取它們。 針對他們存取的任何新權益，他們應該使用新的電子郵件地址。 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-##  <a name="next-steps"></a>下一步
+##  <a name="next-steps"></a>後續步驟
 - 如果您已經更新訂閱者的電子郵件地址，便應該通知他們其登入資訊已經變更。  他們也會收到一封包含更新資訊的電子郵件。
 - [篩選組織中的訂閱者清單](search-license.md)可能有助於找出任何可能需要變更的登入電子郵件地址。

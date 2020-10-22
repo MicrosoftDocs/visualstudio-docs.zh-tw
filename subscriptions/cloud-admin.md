@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: how-to
 description: 設定每月訂閱的系統管理員
 ms.openlocfilehash: fbb8d1f7a1519950e84c6f6fe726dd8f52ff29c5
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91006107"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>設定 Visual Studio 每月訂閱的系統管理員
@@ -59,13 +59,13 @@ Visual Studio 的每月訂閱是由系統管理員管理。 這些人可以指�
 
 如需 Visual Studio 每月訂閱的詳細資訊，請參閱購買訂閱下的 [總覽](vscloud-overview.md) 。 若要購買 Visual Studio 的每月訂閱，請造訪 Visual Studio Marketplace [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription) 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 深入瞭解如何管理 Visual Studio 的訂閱。
 - [指派個別訂用帳戶](assign-license.md)
 - [指派多個訂用帳戶](assign-license-bulk.md)

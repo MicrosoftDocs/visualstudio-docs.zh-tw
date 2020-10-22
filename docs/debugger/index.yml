@@ -11,10 +11,10 @@ metadata:
   manager: jillfra
   ms.date: 09/20/2019
   ms.openlocfilehash: f65c41b4647a811377d1d090635c889a784678ae
-  ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+  ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/09/2020
+  ms.lasthandoff: 10/22/2020
   ms.locfileid: "89600129"
 landingContent:
 - title: 關於偵錯

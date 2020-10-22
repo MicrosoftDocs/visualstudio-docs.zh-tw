@@ -8,10 +8,10 @@ ms.date: 07/30/2020
 ms.topic: conceptual
 description: 了解如何在 Visual Studio 訂用帳戶中尋找、索取及匯出產品金鑰
 ms.openlocfilehash: a246f66e429b78647f217468c7c19b703b419062
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91004963"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中尋找及索取產品金鑰
@@ -66,11 +66,11 @@ ms.locfileid: "91004963"
 
 若要匯出金鑰，只要選取 [產品金鑰] 頁面最右邊的 [ **匯出所有金鑰** ] 連結即可。  即會建立標題為 KeysExport.xml 的 .xml 檔案，而您可以選擇開啟或儲存檔案。  您必須使用可以處理 .xml 檔案的應用程式開啟檔案。  例如，您可以使用 Excel 將檔案開啟為唯讀活頁簿。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 當您準備好下載軟體並使用金鑰時，請前往 https://my.visualstudio.com/downloads。  如需下載軟體的詳細資訊，請參閱[下載概觀](download-software.md)。

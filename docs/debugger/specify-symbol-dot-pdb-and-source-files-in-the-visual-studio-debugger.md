@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eceffab5b8c179734b1abb5f1005c240912115f1
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "89599583"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 偵錯工具中指定符號 ( .pdb) 和原始程式檔 (c #、c + +、Visual Basic、F # ) 
@@ -222,7 +222,7 @@ ms.locfileid: "89599583"
 1. 在 [ **模組** ] 視窗中，以滑鼠右鍵按一下 **符號狀態** 或 **符號** 檔標頭，或任何模組。
 1. 在快顯功能表中，選取下列其中一個選項︰
 
-|選項|說明|
+|選項|描述|
 |------------|-----------------|
 |**載入符號**|顯示已略過、找不到或未載入符號的模組。 嘗試從 [**選項**  >  **調試**  >  **符號**] 頁面上指定的位置載入符號。 如果找不到或未載入符號檔，則會啟動 **檔案總管** ，讓您可以指定要搜尋的新位置。|
 |**符號載入資訊**|顯示載入的符號檔的位置，或如果偵錯工具找不到檔案時所搜尋的位置。|
@@ -269,7 +269,7 @@ ms.locfileid: "89599583"
 
 1. 選取 **[確定]** **或**[套用]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [瞭解符號檔和 Visual Studio 符號設定](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
 - [Visual Studio 2012 和2013中的 .NET 遠端符號載入變更](https://devblogs.microsoft.com/devops/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

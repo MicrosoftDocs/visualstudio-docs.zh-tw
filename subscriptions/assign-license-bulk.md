@@ -8,10 +8,10 @@ ms.date: 09/21/2020
 ms.topic: how-to
 description: 瞭解系統管理員如何使用「大量新增」功能或 Microsoft Azure Active Directory 群組，將授權指派給多個「訂閱者」
 ms.openlocfilehash: 6154e9796e1ba021eedf86bcee7d508e285b6645
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91022394"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>指派訂閱給多個使用者
@@ -65,7 +65,7 @@ ms.locfileid: "91022394"
    如果您遇到失敗，請遵循下列步驟：
    1. 開啟您所建立的 Excel 檔案，更正問題，然後儲存檔案。
    0. 返回系統管理入口網站並關閉錯誤訊息。
-   0. 選擇 [ **新增**]。
+   0. 選擇 [新增]  。
    0. 選取 [ **大量新增**]。
    0. 因為您已經儲存 Excel 檔案，所以不需要下載範本。  選取 **[流覽]**，找出您剛剛儲存的檔案，然後選取 [ **開啟**]。
    0. 選取 [確定]。
@@ -131,12 +131,12 @@ ms.locfileid: "91022394"
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>問：我已將某人新增至我的 Azure AD 安全性群組，但我在訂用帳戶管理入口網站中看不到他們新增的帳戶，且他們沒有訂用帳戶。 為什麼不用？  
 答：根據組織設定 Azure AD 的方式，您可能會在新增使用者之前看到最多24小時的延遲。 如果超過24小時，請 [聯絡支援人員](https://visualstudio.microsoft.com/support/support-overview-vs)。  
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 - 只有一或兩個訂閱者要新增嗎？  參閱[新增單一使用者](assign-license.md)
 - 需要協助嗎？ 請聯絡 [Visual Studio 管理和訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)。
