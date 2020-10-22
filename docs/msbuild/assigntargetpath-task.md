@@ -1,5 +1,7 @@
 ---
 title: AssignTargetPath 工作 | Microsoft Docs
+description: 使用 MSBuild AssignTargetPath 工作接受檔案清單，並新增 TargetPath 屬性（如果尚未指定）。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2d825c0c08ffeba1449954ed310644dd4437840
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e56bb8817551e24d1b5aceef2f571e35f1db43e
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634535"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353326"
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath 工作
 
@@ -28,7 +30,7 @@ ms.locfileid: "77634535"
 
 下表說明 `AssignTargetPath` 工作的參數。
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |`RootFolder`|選擇性 `string` 輸入參數。<br /><br /> 包含有目標連結的資料夾路徑。|
 |`Files`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸入參數。<br /><br /> 包含傳入的檔案清單。|
@@ -55,7 +57,7 @@ RootFolder="Resources"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

@@ -1,5 +1,7 @@
 ---
 title: AL (組件連結器) 工作 | Microsoft Docs
+description: 使用 MSBuild 元件連結器 (AL) 工作來包裝 AL.exe，這是與 Windows 軟體開發套件一起散發的工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c7964c6654d1f6996d1acc44542e3a7bf093a52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d59251240abc7ca39b3819adf2324bf5bb9cef0a
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82167452"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353352"
 ---
 # <a name="al-assembly-linker-task"></a>AL (組件連結器) 工作
 
@@ -33,7 +35,7 @@ AL 工作會包裝 *AL.exe*，這是隨 WINDOWS 軟體開發套件 (SDK) 散發�
 
  下表說明 `AL` 工作的參數。
 
-| 參數 | 描述 |
+| 參數 | 說明 |
 |---------------------| - |
 | `AlgorithmID` | 選擇性的 `String` 參數。<br /><br /> 指定雜湊多檔案組件中所有檔案的演算法，但包含組件資訊清單的檔案除外。 如需詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中 `/algid` 選項的說明文件。 |
 | `BaseAddress` | 選擇性的 `String` 參數。<br /><br /> 指定在執行期間將 DLL 載入使用者電腦上的目標位址。 如果您指定 DLL 的基底位址，而不是讓作業系統重新找出處理序空間中的 DLL，應用程式載入的速度會更快。 此參數對應至 /base[address](/dotnet/framework/tools/al-exe-assembly-linker)。 |
@@ -93,7 +95,7 @@ AL 工作會包裝 *AL.exe*，這是隨 WINDOWS 軟體開發套件 (SDK) 散發�
 </AL>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [工作參考](../msbuild/msbuild-task-reference.md)
 * [工作](../msbuild/msbuild-tasks.md)

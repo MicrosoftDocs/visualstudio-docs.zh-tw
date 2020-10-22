@@ -1,29 +1,29 @@
 ---
-title: 開始使用訂閱系統管理入口網站 | Visual Studio Marketplace
+title: 開始使用訂用帳戶管理員入口網站 |Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 09/03/2020
 ms.topic: overview
-description: 了解如何開始使用訂閱系統管理入口網站管理組織的 Visual Studio 訂閱。
-ms.openlocfilehash: 78c66b8db569ce71588a2dba43b3ffb08d6a7d80
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+description: 瞭解如何使用訂用帳戶系統管理員入口網站開始管理您組織的 Visual Studio 訂用帳戶。
+ms.openlocfilehash: 8ed9a0b2ed7b9230a245493a2998fa1ca42cae53
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005221"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353300"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio 訂閱系統管理員入口網站的總覽
 
-Visual Studio 訂閱管理入口網站可讓您使用工具，在單一位置管理您組織的訂用帳戶。 
+Visual Studio 訂閱系統管理員入口網站提供工具，讓您在單一位置管理組織的訂用帳戶。 
 
 流覽入口網站。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
 ## <a name="important-considerations"></a>重要考量
-在您使用 Visual Studio 訂閱管理入口網站時，請牢記下列事項：
+當您使用 Visual Studio 訂閱系統管理員入口網站時，請記住下列幾點：
 - **Visual Studio 訂用帳戶依使用者授權。** 每位訂閱者可以基於開發和測試用途在任意數量的電腦上使用軟體。
 - 根據貴組織購買的 Visual Studio 訂用帳戶，**僅為每位訂閱者指派一個訂用帳戶層級**。 如果您的訂閱者獲派超過一個以上的訂閱等級，請編輯他們的設定，讓他們只擁有一個等級。
 - 如果升級訂閱 (在購買「升級」授權之後) 或以較低等級續訂，**也必須更新訂閱者的訂用帳戶等級**。
@@ -39,33 +39,33 @@ Visual Studio 訂閱管理入口網站可讓您使用工具，在單一位置管
 - 其他附注的參考欄位。
 - 指出是否啟用或停用訂閱者下載的指示。
 - 他們所在的國家/地區。
-- 他們在管理入口網站指派通訊電子郵件的語言設定。
+- 從系統管理員入口網站指派通訊電子郵件的語言喜好設定。
 - 選擇性欄位，用於登入通訊以外的其他電子郵件地址。
 
 在頁面的左上方有幾個圖示可供您選擇，以顯示訂用帳戶指派總覽、合約詳細資料和使用量上限報表。
 
 若要查看針對每份合約購買、指派和仍可在組織中使用的訂用帳戶授權數目的其他相關資訊，請按一下上方圖示來啟用滑出面板。
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 訂用帳戶管理入口網站訂閱者頁面](_img/using-admin-portal/subscribers-page.png)
+> ![Visual Studio 訂用帳戶管理入口網站訂閱者頁面](_img/using-admin-portal/subscribers-page.png "[訂閱者] 頁面會依類型顯示訂用帳戶計數。")
 
 ## <a name="the-details-page"></a>詳細資料頁面
 如需您所看到之合約的詳細資訊，請選取第二個圖示，以查看 [合約詳細資料] 索引標籤。[滑出] 面板會顯示合約狀態、購買帳戶、組織詳細資料、超級管理員和其他相關資訊。
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 訂用帳戶管理入口網站詳細資料頁面](_img/using-admin-portal/details-page.png)
+> ![Visual Studio 訂用帳戶管理入口網站詳細資料頁面](_img/using-admin-portal/details-page.png "[詳細資料] 頁面會顯示您的合約相關資訊，包括超級管理員的名稱。")
 
 ## <a name="resources"></a>資源
 - [Visual Studio 授權技術白皮書](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [比較訂閱選項和定價](https://visualstudio.microsoft.com/vs/pricing)
 - [比較 Visual Studio IDE 功能](https://visualstudio.microsoft.com/vs/compare)
-- [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Visual Studio 系統管理員和訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 深入了解系統管理員的責任：
 - [系統管理員責任概觀](admin-responsibilities.md)
 - [清查生產前環境](admin-inventory.md)

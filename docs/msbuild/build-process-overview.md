@@ -1,5 +1,7 @@
 ---
 title: MSBuild 如何建置專案
+description: 瞭解 MSBuild 如何處理您的專案檔案，不論是從 Visual Studio 或從命令列或腳本叫用。
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65e386b71c0b7ece3aee8185574d53955b7326a1
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 4374e6763933e2da3e6a11c5609b76e3341e1050
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136858"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353248"
 ---
 # <a name="how-msbuild-builds-projects"></a>MSBuild 如何建置專案
 
@@ -193,7 +195,7 @@ Visual Studio 可讓您在方案 ( .sln) 檔案中建立專案相依性。 這�
 
 下表描述這些目標;某些目標只適用于特定的專案類型。
 
-| 目標 | 描述 |
+| 目標 | 說明 |
 |--------|-------------|
 | BuildOnlySettings | 實際組建的設定，而不是在 Visual Studio 于專案載入時叫用 MSBuild。 |
 | PrepareForBuild | 準備組建的必要條件 |
@@ -238,6 +240,6 @@ Visual Studio 在 **方案總管**、[ **屬性** ] 視窗或 **專案屬性**�
 
 MSBuild 進程除了此處所述以外的其他數個擴充點。 請參閱 [自訂您的組建](customize-your-build.md)。 以及 [如何延伸 Visual Studio 組建進程](how-to-extend-the-visual-studio-build-process.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [MSBuild](msbuild.md)

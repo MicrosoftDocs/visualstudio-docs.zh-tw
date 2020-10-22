@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 03/25/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: 了解 Visual Studio 訂用帳戶中所含的指引對談權益。
-ms.openlocfilehash: d7ed217e551057ff12ed4abecedf717c9f3f6ced
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 0aab627d7c870720c0cc0d043ffb6ce556568703
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006315"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353378"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的指引對談
 「指引對談」服務除了協助您使用您的 Visual Studio 訂用帳戶權益之外，也提供尋找產品資訊與技術文件的協助。
@@ -25,7 +25,7 @@ ms.locfileid: "91006315"
 
 2. 在權益頁面的 [支援] 區段找到 [指引對談] 圖格，然後按一下 [立即對話]****。
     > [!div class="mx-imgBorder"]
-    > ![[指引對談] 磚](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
+    > ![[指引對談] 磚](_img/vs-concierge-chat/vs-concierge-chat-tile.png "按一下 [立即聊天] 以啟動新的聊天會話。")
 
 3. 按一下 **[繼續]** 。
 
@@ -33,17 +33,17 @@ ms.locfileid: "91006315"
 
 5. 當有專員有空時，對談就會開始。
     > [!div class="mx-imgBorder"]
-    > ![指引對談工作階段](_img/vs-concierge-chat/vs-concierge-chat-session.png)
+    > ![指引對談工作階段](_img/vs-concierge-chat/vs-concierge-chat-session.png "當代理程式加入會話時，就會顯示聊天會話視窗。")
 
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  Yes          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl| 可用       |  Yes          |
-| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 可用                                                            |  Yes          |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl | 可用                                                            |  Yes          |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  Yes          |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                              |  Yes          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  是          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl| 可用       |  是          |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 可用                                                            |  是          |
+| 含 GitHub Enterprise 的 Visual Studio Professional | Vl | 可用                                                            |  是          |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  是          |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                              |  是          |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 
 <sup>1</sup>  *包括：禁止轉售 (NFR) 、Visual Studio 產業合作夥伴 (VSIP) 、Microsoft 認證訓練人員、BizSpark。 排除： FTE、最有價值專家 (MVP) 、區域主管 (RD) Microsoft 合作夥伴網路 (MPN) ，想像。*
@@ -61,13 +61,13 @@ ms.locfileid: "91006315"
 - 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 如需有關 Microsoft 工具與服務的詳細資訊，請參閱下列文件：
 - [Azure](/azure/)
 - [Azure DevOps](/azure/devops/)

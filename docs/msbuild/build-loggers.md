@@ -1,5 +1,7 @@
 ---
 title: 組建記錄器 | Microsoft Docs
+description: 使用 MSBuild 記錄器來管理和自訂群組建的輸出，並顯示訊息、錯誤或警告，以回應特定的組建事件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a00bbb8ce239275ff140dbedf2157e4cdc41d44c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c56de103fa116cbf77ec16dc0116a2897e6ccdce
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634522"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353196"
 ---
 # <a name="build-loggers"></a>組建記錄器
 
@@ -64,9 +66,9 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll
 MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 ```
 
-## <a name="example"></a>範例
+## <a name="example-1"></a>範例 1
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
 
 下列範例包含記錄器的完整程式碼。
 
@@ -74,9 +76,9 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 [!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]
 
-## <a name="example"></a>範例
+## <a name="example-2"></a>範例 2
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
 
 下列範例示範如何實作要將記錄寫入檔案的記錄器，而不是將它顯示在主控台視窗中。
 
@@ -84,7 +86,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)

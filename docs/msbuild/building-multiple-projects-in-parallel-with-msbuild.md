@@ -1,5 +1,7 @@
 ---
 title: 使用 MSBuild 同時建置多個專案 | Microsoft Docs
+description: 深入瞭解您可以用來以平行方式執行多個專案的 MSBuild 設定。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1723fba810450fe5e31a43d63f3704ab74f455f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b91bca1fb1e8866e4f0c9b5a68140f7a7ae892f2
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634496"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353235"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>使用 MSBuild 同時建置多個專案
 
@@ -72,7 +74,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 </MSBuild>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用多個處理器來建置專案](../msbuild/using-multiple-processors-to-build-projects.md)
 - [撰寫能夠辨識多處理器的記錄器](../msbuild/writing-multi-processor-aware-loggers.md)

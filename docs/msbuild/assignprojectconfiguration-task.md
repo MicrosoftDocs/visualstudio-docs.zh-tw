@@ -1,5 +1,7 @@
 ---
 title: AssignProjectConfiguration 工作 | Microsoft Docs
+description: 使用 MSBuild AssignProjectConfiguration 工作接受設定字串的清單，並將它們指派給指定的專案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b543af39cbcd0301da7d0d353f8f7b6fa006f7ac
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 496b6d538385473d50baec80e30fbc269e06c1f6
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508518"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353391"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration 工作
 
@@ -28,7 +30,7 @@ ms.locfileid: "89508518"
 
  下表說明 `AssignProjectConfiguration` 工作的參數。
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |`ProjectReferences`|必要 <xref:Microsoft.Build.Framework.ITaskItem> `[]` 的輸入參數。<br /><br /> 要設定的專案。|
 |`SolutionConfigurationContents`|選擇性的 `string` 輸出參數。<br /><br /> 包含 XML 字串，其中含有每個專案的專案組態。 工作會將組態指派給具名的專案。|
@@ -47,7 +49,7 @@ ms.locfileid: "89508518"
 
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些額外參數的清單及其描述，請參閱 [TaskExtension 基類（base class](../msbuild/taskextension-base-class.md)）。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

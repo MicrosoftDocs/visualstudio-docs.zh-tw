@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 09/08/2020
+ms.date: 10/21/2020
 ms.topic: conceptual
 description: 雲端訂用帳戶帳單問題。
-ms.openlocfilehash: ae99e6e843636efc6d81a0c4feebfd3e306f6319
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 0140a6250f2c04ad33fec962283e035393a03aae
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006000"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353417"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 雲端訂閱帳單常見問題集
 請務必[比較雲端訂閱權益和定價](https://visualstudio.microsoft.com/vs/pricing/)，利用雲端與標準 Visual Studio 訂閱之間的比較、訂閱者權益的詳細資料以及其他更多，了解每個 Visual Studio 訂用帳戶的權益。
@@ -92,17 +92,17 @@ ms.locfileid: "91006000"
 答：可以，如果您的轉銷商參與雲端解決方案提供者 (CSP) 方案。 詢問他們即可。
 
 ## <a name="related-resources"></a>相關資源
-- [Visual Studio 訂用帳戶系統管理入口網站](https://manage.visualstudio.com/)
+- [Visual Studio 訂閱系統管理員入口網站](https://manage.visualstudio.com/)
 - [Visual Studio 訂用帳戶支援](https://visualstudio.microsoft.com/vs/support/)
 - [適合 CSP 購買的 Visual Studio 雲端訂閱](vscloud-csp.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 立即購買雲端訂閱
 - [每月 Visual Studio Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
 - [每月 Visual Studio Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)

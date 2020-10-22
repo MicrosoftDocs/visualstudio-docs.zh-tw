@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
-ms.date: 04/15/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: 了解如何設定 Azure 隨用隨付帳戶。
-ms.openlocfilehash: 111733fb6950e602528fac9ae5b39bba04870d01
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 4071b16c56e67bdd86ba95f2ff982758cd23e150
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005069"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353178"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure DevTest 隨用隨付訂用帳戶
 在雲端與您的小組共同作業。  建立多個開發和測試隨用隨付訂用帳戶，讓您能夠與其他訂閱者共同作業，同時為小組與環境提供適時的隔離。  您會收到專屬的 Azure 訂用帳戶軟體開發/測試和雲端使用權限的每小時折扣費率。
@@ -20,7 +20,7 @@ ms.locfileid: "91005069"
 ## <a name="set-up-a-subscription"></a>設定訂用帳戶
 1. 若要使用您的 Azure 隨用隨付訂用帳戶權益，請登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 並按一下權益磚底部的 [ **啟用** ] 連結。
    > [!div class="mx-imgBorder"]
-   > ![Azure PAYG 磚](_img/vs-azure-payg/vs-azure-payg-tile.png)
+   > ![Azure PAYG 磚](_img/vs-azure-payg/vs-azure-payg-tile.png "按一下 [DevTest 隨用隨付訂用帳戶] 圖格上的 [啟動]，開始使用。")
 
 2. 如果您已啟用 Azure 帳戶作為訂用帳戶權益的一部分 (例如，如果您有 Enterprise 訂用帳戶，並啟用 $150 每月 Azure DevTest 個別點數) ，請跳至步驟5。
 
@@ -44,13 +44,13 @@ ms.locfileid: "91005069"
 3. 您會在 [我的訂閱]**** 方塊中看到您的訂用帳戶清單。 按一下所需的訂用帳戶。
 4. 您現在會有可管理或取消訂用帳戶、將其重新命名、變更目錄或移轉帳單擁有權的選項。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 許多訂用帳戶包含額外的 Azure 相關權益，例如 Azure DevOps 和 Azure DevTest 個人點數。  如需有關這些權益的詳細資訊，請參閱：
 - [Azure DevOps](vs-azure-devops.md)
 - [Azure DevTest 個人點數](vs-azure.md)

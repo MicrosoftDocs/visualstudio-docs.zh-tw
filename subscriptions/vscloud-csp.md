@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
-ms.date: 03/24/2020
+ms.date: 10/21/2020
 ms.topic: conceptual
 description: 如何為您的客戶購買和管理 Visual Studio 雲端訂用帳戶的雲端解決方案提供者資訊。
-ms.openlocfilehash: 9c263486259529e7eb4e19ea4cc3f8ad8520b039
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 632e407aa4455b7c2a87299cc8811bc996c8d5b6
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006224"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353261"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>為您的客戶購買及管理 Visual Studio 雲端訂閱
 [雲端解決方案提供者計畫](https://partner.microsoft.com/cloud-solution-provider)中的合作夥伴可以為他們的客戶購買 Visual Studio Enterprise 和 Visual Studio Professional 的雲端訂閱。
@@ -22,7 +22,7 @@ ms.locfileid: "91006224"
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶移至，以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索購買 Visual Studio 的不同選項。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 您必須先在合作夥伴中心設定您的客戶租用戶，為此租用戶建立 Azure 訂用帳戶。
 
 [深入了解](/azure/devops/organizations/billing/csp/set-up-csp-customer)
@@ -47,7 +47,7 @@ ms.locfileid: "91006224"
 >[!NOTE]
 > 每次以 CSP 身分購買 Visual Studio 訂閱時，您都要遵循這些步驟。 目前沒有任何可自動化購買的 API。
 
-確認購買之後，您就可以選擇 [管理]****，將訂用帳戶指派給您客戶的使用者。  您也可以選擇 [服務管理]****，從合作夥伴中心存取訂用帳戶管理入口網站。  在此查看步驟或以下影片。
+確認購買之後，您就可以選擇 [管理]****，將訂用帳戶指派給您客戶的使用者。  您也可以選擇 [ **服務管理**]，從合作夥伴中心存取訂用帳戶管理員入口網站。  在此查看步驟或以下影片。
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>如何管理您客戶的 Visual Studio 雲端訂閱
 
@@ -106,11 +106,11 @@ ms.locfileid: "91006224"
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>問：CSP 有 Azure 開發/測試的定價選項嗎？
  答：目前沒有。 您的客戶可以充分利用 [Azure 開發/測試定價](https://azure.microsoft.com/pricing/dev-test/)，但我們並沒有任何針對 CSP 的特殊優惠。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 如需常見帳單問題的解答，請參閱 [雲端帳單常見問題](vscloud-billing-faq.md) 。

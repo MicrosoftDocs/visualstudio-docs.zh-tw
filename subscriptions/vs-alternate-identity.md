@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
-ms.date: 07/19/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 description: 如何新增 Visual Studio 訂用帳戶的替代身分識別，以用於 Azure DevOps 和 Azure
-ms.openlocfilehash: 5eee6c1d59141c1975a6039f2ab9256b4c9dc735
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: d7820707758cd06209a412b2a860de81cb08c054
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005710"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353171"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 訂閱者身分識別
 當您啟用 Visual Studio 訂用帳戶時，我們會連結您在 Visual Studio 訂用帳戶啟用期間所使用的身分識別 (或登入)。 這樣，我們就可以在 [Visual Studio 訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)、Azure DevOps 與 Azure 中辨識您。
@@ -37,7 +37,7 @@ ms.locfileid: "91005710"
 3. 選擇 [ **新增其他帳戶**]。
 4. 新增公司或學校帳戶。
     > [!div class="mx-imgBorder"]
-    > ![新增公司或學校帳戶](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+    > ![新增公司或學校帳戶](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png "在您的訂用帳戶上新增工作或學校帳戶作為其他帳戶。")
 
 5. 使用公司或學校帳戶登入 Azure DevOps (https://{您的帳戶}.visualstudio.com)。
 
@@ -53,17 +53,17 @@ ms.locfileid: "91005710"
 
 * 確認您使用的登入/身分識別是 Visual Studio 訂用帳戶的主要或其他身分識別。
 
-* 至少瀏覽一次 [Visual Studio 訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)再登入 Azure DevOps。
+* 登入 Azure DevOps 之前，請至少造訪 [Visual Studio 訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 一次。
 
 如果 Azure DevOps 仍無法辨識您的訂用帳戶，請連絡 [Azure DevOps 支援](https://azure.microsoft.com/support/devops/)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步 
+## <a name="next-steps"></a>後續步驟 
 如需有關使用 Azure、Azure DevOps 或 Visual Studio IDE 的詳細資訊，請參閱下列資源：
 - [Azure](vs-azure.md)
 - [Azure DevOps](vs-azure-devops.md)

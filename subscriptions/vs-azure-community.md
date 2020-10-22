@@ -7,12 +7,12 @@ ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: 了解所選 Visual Studio 訂用帳戶中所包含的「Azure 社群支援」權益。
-ms.openlocfilehash: 8c048103d3ecc2aa21f771e88fa8f9b75ad94b4c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 000732d2c46d777c68451153dc5965d45087abce
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006237"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353209"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Azure 社群支援論壇
 直接透過「Azure 社群」從精選支援論壇取得協助。  「Azure 社群」權益可讓您存取著重在 Azure 相關主題的論壇集合。
@@ -55,28 +55,28 @@ ms.locfileid: "91006237"
 
 2. 在 [支援] 區段中找到 [Azure 社群] 圖格，然後按一下 [取得協助]**** 連結。
     > [!div class="mx-imgBorder"]
-    >![Azure 社群磚](_img/vs-azure-community/vs-azure-community-tile.png)
+    >![Azure 社群磚](_img/vs-azure-community/vs-azure-community-tile.png "按一下 [Azure 群組] 磚上的 [取得協助] 按鈕以開始使用。")
 
 3. 您將會看到可用論壇清單。  只要按一下您要的論壇。
     > [!div class="mx-imgBorder"]
-    > ![Azure 社群論壇](_img/vs-azure-community/vs-azure-community-forums.png)
+    > ![Azure 社群論壇](_img/vs-azure-community/vs-azure-community-forums.png "在 [Azure 社區支援] 頁面上，選取您選擇的論壇。")
 
 4. 在論壇內，您可以檢視主題與回應、搜尋您問題的解答，以及張貼新問題。
     > [!div class="mx-imgBorder"]
-    > ![Azure 社群範例](_img/vs-azure-community/vs-azure-community-example.png)
+    > ![Azure 社群範例](_img/vs-azure-community/vs-azure-community-example.png "在論壇中，您可以查看主題、搜尋答案或張貼新問題。")
 
 ## <a name="eligibility"></a>資格
 Azure 社群權益的可用性取決於訂用帳戶層級，如下所示：
 
 |                                          訂用帳戶層級                                           |     通道      |    優點    | 可續約？ |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise (Standard)                           | VL, Azure, 零售 |   一年    |    Yes     |
-|                           含 GitHub Enterprise 的 Visual Studio Enterprise                           | VL, Azure, 零售 |   一年    |    Yes     |
-|                          Visual Studio Professional (Standard)                          | VL, Azure, 零售 |   一年    |    Yes     |
-|                          含 GitHub Enterprise 的 Visual Studio Professional                          | VL, Azure, 零售 |   一年    |    Yes     |
-|                              Visual Studio Test Professional (標準訂用帳戶)                               |    VL, 零售     |   一年    |    Yes     |
-|                                       MSDN 平台 (標準)                                       |    VL, 零售     |   一年    |    Yes     |
-| Visual Studio Enterprise (每月雲端)、Visual Studio Professional (每月雲端)、NFR<sup>1</sup> |        全部        | 無法使用 |     No     |
+|                           Visual Studio Enterprise (Standard)                           | VL, Azure, 零售 |   一年    |    是     |
+|                           含 GitHub Enterprise 的 Visual Studio Enterprise                           | VL, Azure, 零售 |   一年    |    是     |
+|                          Visual Studio Professional (Standard)                          | VL, Azure, 零售 |   一年    |    是     |
+|                          含 GitHub Enterprise 的 Visual Studio Professional                          | VL, Azure, 零售 |   一年    |    是     |
+|                              Visual Studio Test Professional (標準訂用帳戶)                               |    VL, 零售     |   一年    |    是     |
+|                                       MSDN 平台 (標準)                                       |    VL, 零售     |   一年    |    是     |
+| Visual Studio Enterprise (每月雲端)、Visual Studio Professional (每月雲端)、NFR<sup>1</sup> |        全部        | 無法使用 |     否     |
 
 <sup>1</sup>  *包括：禁止轉售 (NFR) 、Microsoft FTE、最有價值專家 (MVP) 、區域主管 (RD) 、Visual Studio 產業合作夥伴 (VSIP) 、BizSpark、假想、Microsoft 認證講師 (MCT) *
 
@@ -91,11 +91,11 @@ Azure 社群權益的可用性取決於訂用帳戶層級，如下所示：
 - 需要有關 Visual Studio 訂用帳戶銷售、訂用帳戶、帳戶與計費的協助？  請連絡 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 您知道有許多 Visual Studio 訂用帳戶隨附于 Azure DevTest 個人點數嗎？  了解如何[啟用](vs-azure.md)您的點數。
