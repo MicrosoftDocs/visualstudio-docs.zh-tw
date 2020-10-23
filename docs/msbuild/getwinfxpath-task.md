@@ -1,5 +1,7 @@
 ---
 title: GetWinFXPath 工作 | Microsoft Docs
+description: 瞭解如何使用 MSBuild GetWinFXPath 工作，它會傳回目前 .NET 執行時間的目錄。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8e15cef722e935dde322072f6834ba00be8bc5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 820ca103d88cde941fe558e59ed1c78622adccd4
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633963"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436774"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath 工作
 
@@ -31,7 +33,7 @@ ms.locfileid: "77633963"
 
 ## <a name="task-parameters"></a>工作參數
 
-| 參數 | 說明 |
+| 參數 | 描述 |
 |-------------------| - |
 | `WinFXPath` | 選擇性 **字串** 輸出參數。<br /><br /> 指定 .NET 執行時間的實際路徑。 |
 | `WinFXNativePath` | 必要的 **String** 參數。<br /><br /> 指定原生 .NET 執行時間的路徑。 |

@@ -1,5 +1,7 @@
 ---
 title: Error 工作 | Microsoft Docs
+description: 使用 MSBuild 錯誤工作，根據評估的條件陳述式來停止組建並記錄錯誤。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd5dd3214c9575a34e9265c33061b024648a221c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2b451f9c3074af7d621576336ea3bf0e05ebea3
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634223"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436645"
 ---
 # <a name="error-task"></a>Error 工作
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
-ms.date: 03/26/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: 了解所選取 Visual Studio 訂用帳戶隨附的 Power BI Pro 訂用帳戶。
-ms.openlocfilehash: 82325c090087aea81f43472ebb41a385af51c19d
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: efc7aca0c5729a65a7f622721dbf25931eb89fb8
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005022"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435784"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Power BI Pro
 
@@ -27,33 +27,33 @@ ms.locfileid: "91005022"
 
 2. 在 [權益] 頁面上的 [工具] 區段中找出 Power BI Pro 磚。 按一下權益磚底部的 [取得程式碼]**** 連結。   您會收到已成功擷取代碼的通知。  按一下 [啟用]。
    > [!div class="mx-imgBorder"]
-   > ![Power BI Pro 權益磚](_img/vs-pbi/vs-pbi-tile.png)
+   > ![Power BI Pro 權益磚](_img/vs-pbi/vs-pbi-tile.png "在 [Power BI Pro] 圖格上，按一下 [取得程式碼]，然後按一下 [啟動] 開始使用。")
 
 3. 如果您已啟用某些其他訂用帳戶權益，例如 Microsoft 365 開發人員訂用帳戶或 Enterprise Mobility + Security，您可能已經有帳戶。  如果找到現有的帳戶，您可以選擇在現有的帳戶新增 Power BI Pro 訂用帳戶，或註冊新的帳戶。  強烈建議您將它新增至您現有的帳戶，以便使用單一使用者識別碼存取各種權益。
    > [!div class="mx-imgBorder"]
-   > ![Power BI Pro 權益現有帳戶](_img/vs-pbi/vs-pbi-existing-account.png)
+   > ![Power BI Pro 權益現有帳戶](_img/vs-pbi/vs-pbi-existing-account.png "將 Power BI Pro 新增至您現有的帳戶（如果有的話）。")
 
 4. 若要建立新的帳戶，請提供您的連絡資訊，然後按一下 [下一步]****。
 
 5. 接下來，建立您的使用者識別碼和密碼。  如果您已經有帳戶，但想要建立新帳戶，您必須提供和所用現有帳戶不同的公司名稱。  按一下 [Create my account] (建立我的帳戶)****。
    > [!div class="mx-imgBorder"]
-   > ![Power BI Pro 權益建立使用者識別碼](_img/vs-pbi/vs-pbi-create-user-id-cropped.png)
+   > ![Power BI Pro 權益建立使用者識別碼](_img/vs-pbi/vs-pbi-create-user-id-cropped.png "針對新的帳戶，輸入使用者識別碼和密碼。")
 
 6. 為確定是真人建立帳戶，我們會要求您輸入確認碼。  請提供電話號碼，並選擇透過電話或簡訊接收驗證碼。  按一下 [Text me] (傳送簡訊給我)**** 或 [打電話給我]****。
    > [!div class="mx-imgBorder"]
-   > ![Power BI Pro 權益不是傀儡程式](_img/vs-pbi/vs-pbi-robot1-cropped.png)
+   > ![Power BI Pro 權益不是傀儡程式](_img/vs-pbi/vs-pbi-robot1-cropped.png "選擇 [文字 me] 或 [撥號給我] 以接收您的確認碼。")
 
 7. 輸入您收到的驗證碼，然後按一下 [下一步]****。
 
 8. 提供您的連絡資訊，然後按一下 [下一步]****。
    > [!div class="mx-imgBorder"]
-   > ![Power BI Pro 權益連絡資訊](_img/vs-pbi/vs-pbi-contact-cropped.png)
+   > ![Power BI Pro 權益連絡資訊](_img/vs-pbi/vs-pbi-contact-cropped.png "為您的帳戶提供您的連絡人資訊。")
 
 9. 下個頁面會確認您的 Power BI Pro 開發人員 (MSDN) 訂用帳戶價格為 0.00 USD。  按 [下一步]  。
 
 10. 最後，我們會收集一些付款資訊。  不要擔心，您不必支付任何費用。  請注意價格仍是 0.00 USD。  支付方式可以選擇信用卡、銀行帳戶或發票。  如果您選擇**發票**，可能需要提供意見反應說明為何偏好此種付款方法。  請提供偏好付款方式所要求的資訊，然後按一下 [下單]****。
     > [!div class="mx-imgBorder"]
-    > ![Power BI Pro 權益連絡資訊](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png)
+    > ![Power BI Pro 權益 Paymant 資訊](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png "選擇您的付款方法。 請記住，您不需要支付此供應專案的費用。")
 
 11. 下一個頁面會確認您已完成所有設定，可以開始使用 Power BI Pro。  頁面會提供登入頁面的連結。  建議您記下登入頁面連結及使用者識別碼。   (您也會收到一封歡迎電子郵件，網址是您在設定帳戶時所提供的位址。 ) 您可能也會看到 [自動 Microsoft 365 助理] 視窗，如果有任何問題，您可以使用此視窗。  按一下 [開始使用]**** 繼續。
 
@@ -63,12 +63,12 @@ ms.locfileid: "91005022"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  Yes|
-| 含 GitHub Enterprise 的 Visual Studio Enterprise  | Vl | 可用       |  Yes|
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  是|
+| 含 GitHub Enterprise 的 Visual Studio Enterprise  | Vl | 可用       |  是|
 | Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                       | 無法使用                                                            |NA         |
 | 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                      | 無法使用                                                            |NA         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                                            |NA         |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用       |  Yes|
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用       |  是|
 | Visual Studio Enterprise (每月雲端) | Azure                                       | 無法使用                                  |NA|
 ||
 
@@ -91,7 +91,7 @@ ms.locfileid: "91005022"
 - 您無法在政府租用戶上使用這項 Power BI Pro權益。
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>問：當我嘗試啟動 Power BI Pro 時，收到訊息「您已透過工作取得帳戶」。  我仍然可以使用這項權益嗎？
-答：可以。  此訊息指出您已登入的網域已經有作用中 Microsoft 365 您不是系統管理員的租使用者。  若要將 Power BI Pro 新增至租用戶，您必須是該租用戶的系統管理員。  若要解決此問題，請遵循下列步驟來建立自己的租用戶。
+答：可以。  此訊息指出您已登入的網域已經有作用中 Microsoft 365 您不是系統管理員的租使用者。 若要將 Power BI Pro 新增至租使用者，您必須是該租使用者的系統管理員。  若要解決此問題，請遵循下列步驟來建立自己的租用戶。
 1. 當您看到「您已透過工作取得帳戶」的訊息時，請按一下 [建立新帳戶]****。
 
 2. 在下一個畫面上，提供您的連絡資訊，然後按一下 [下一步]****。
@@ -119,6 +119,6 @@ ms.locfileid: "91005022"
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 - 若要啟用您的 Power BI Pro 權益，請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 。
 - 啟用您的 [Azure DevTest 個人點數](vs-azure.md)，以利用您自己的開發沙箱。

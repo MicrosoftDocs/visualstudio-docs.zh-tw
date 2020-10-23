@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: 了解 Visual Studio 訂用帳戶中所含的 Visual Studio App Center 權益。
-ms.openlocfilehash: 69d010afddca1f8fc51f77d806c75dc1b7b34256
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6b1fc94d596f3b771f8354c0857ef533c00e1449
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005723"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435726"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Visual Studio App Center
 
@@ -28,26 +28,26 @@ App Center 是應用程式的任務控制機制。
 
 2. 尋找 Visual Studio App Center 圖格，然後按一下 [開始使用]****。
     > [!div class="mx-imgBorder"]
-    > ![VS App Center 磚](_img/vs-app-center/vs-app-center-tile.png)
+    > ![VS App Center 磚](_img/vs-app-center/vs-app-center-tile.png "按一下 Visual Studio App Center 圖格上的 [開始使用]。")
 
 3. 接著，建立帳戶。  您可以使用現有的 Microsoft、Google、GitHub 或 Facebook 帳戶來登入，或提供您的使用者名稱、電子郵件與密碼來建立新帳戶。  按一下 [建立帳戶]**** 以繼續。
     > [!div class="mx-imgBorder"]
-    > ![VS App Center 建立帳戶](_img/vs-app-center/vs-app-center-create-account.png)
+    > ![VS App Center 建立帳戶](_img/vs-app-center/vs-app-center-create-account.png "選擇您要登入的方式。")
 
 4. 就是這麼簡單。  只要按一下 [新增組織]**** 或 [新增應用程式]**** 就可以開始！
     > [!div class="mx-imgBorder"]
-    > ![VS App Center 入口網站](_img/vs-app-center/vs-app-center-portal.png)
+    > ![VS App Center 入口網站](_img/vs-app-center/vs-app-center-portal.png "您已經準備好了。 按一下 [新增組織] 或 [新增應用程式]，開始使用。")
 
 ## <a name="eligibility"></a>資格
 
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, NFR<sup>1</sup> | 已包括       |  Yes          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise  | Vl | 已包括       |  Yes          |
-| Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                       | 已包括                                                            |Yes |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                      | 已包括                                                            |Yes |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 已包括                                                            |Yes |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 已包括                                                            |Yes |
+| Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, NFR<sup>1</sup> | 已包括       |  是          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise  | Vl | 已包括       |  是          |
+| Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                       | 已包括                                                            |是 |
+| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                      | 已包括                                                            |是 |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 已包括                                                            |是 |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 已包括                                                            |是 |
 ||
 
 <sup>1</sup>  *包括：禁止轉售 (NFR) 、FTE、Visual Studio 產業合作夥伴 (VSIP) 、假想、Microsoft 合作夥伴網路 (MPN) 、MCT Software & Services、MCT Software & Services Developer、BizSpark、最有價值專家 (MVP) 區域主管 (RD) 。*
@@ -80,7 +80,7 @@ App Center 是應用程式的任務控制機制。
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

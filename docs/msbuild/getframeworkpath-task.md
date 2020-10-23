@@ -1,5 +1,7 @@
 ---
 title: GetFrameworkPath 工作 | Microsoft Docs
+description: 瞭解如何使用 MSBuild GetFrameworkPath 工作來取得 .NET Framework 元件的路徑。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b907194c4818ff6b867e9d15b795506ef3b77476
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d54a1029805066f5477cb552f5fcf3f2e09598b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634002"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436831"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath 工作
 
@@ -34,7 +36,7 @@ ms.locfileid: "77634002"
 
 下表說明 `GetFrameworkPath` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`FrameworkVersion11Path`|選擇性的 `String` 輸出參數。<br /><br /> 包含 Framework 1.1 版組件的路徑 (如果有的話)。 否則傳回 `null`。|
 |`FrameworkVersion20Path`|選擇性的 `String` 輸出參數。<br /><br /> 包含 Framework 2.0 版組件的路徑 (如果有的話)。 否則傳回 `null`。|

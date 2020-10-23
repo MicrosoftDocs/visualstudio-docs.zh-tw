@@ -1,5 +1,7 @@
 ---
 title: GenerateDeploymentManifest 工作 | Microsoft Docs
+description: 瞭解如何使用 MSBuild GenerateDeploymentManifest 工作來產生 ClickOnce 部署資訊清單。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca55f3eeb9b3119b27e67dcb0255f8386c521af6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68a35804a1523b3387061b4666cd483a9c3b0476
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634067"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436463"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest 工作
 
@@ -32,7 +34,7 @@ ms.locfileid: "77634067"
 
 下表說明 `GenerateDeploymentManifest` 工作的參數。
 
-| 參數 | 說明 |
+| 參數 | 描述 |
 |--------------------------| - |
 | `AssemblyName` | 選擇性的 `String` 參數。<br /><br /> 針對產生的資訊清單指定組件識別的 `Name` 欄位。 如果未指定此參數，會從 `EntryPoint` 或 `InputManifest` 參數來推斷名稱。 如果無法推斷名稱，工作就會擲回錯誤。 |
 | `AssemblyVersion` | 選擇性的 `String` 參數。<br /><br /> 針對產生的資訊清單指定組件識別的 `Version` 欄位。 如果未指定此參數，工作會使用 "1.0.0.0" 的值。 |

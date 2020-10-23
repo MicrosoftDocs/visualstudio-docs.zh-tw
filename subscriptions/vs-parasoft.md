@@ -1,18 +1,18 @@
 ---
-title: Parasoft Virtualize/SOAtest Professional Desktop 權益 | Microsoft Docs
+title: Visual Studio 訂用帳戶中的 Parasoft 虛擬化/SOAtest Professional |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: 了解如何啟用 Visual Studio 訂用帳戶中所含的 Parasoft Virtualize/SOA Test Professional 訂用帳戶。
-ms.openlocfilehash: f5f32a15b0c2ab292f55c5ec5153161f03598ef4
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6209be915d3744e13aad674ea893e77e0b276044
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006263"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436033"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Parasoft Virtualize/SOAtest Professional Desktop
 
@@ -24,11 +24,11 @@ ms.locfileid: "91006263"
 
 2. 在 [工具] 區段找到 [Parasoft] 磚，並按一下權益磚底部的 [取得代碼]**** 連結。   您會收到已成功擷取代碼的通知。  按一下 [啟用]。
    > [!div class="mx-imgBorder"]
-   > ![Parasoft 權益磚](_img/vs-parasoft/vs-parasoft-tile.png)
+   > ![Parasoft 權益磚](_img/vs-parasoft/vs-parasoft-tile.png "按一下 [Parasoft] 磚上的 [取得程式碼]，然後按一下 [啟動] 以開始使用。")
 
 3. 會將您重新導向至 Parasoft 網站，您將在其中建立帳戶。  只需要提供您的連絡資訊，然後按一下 [提交]****。
    > [!div class="mx-imgBorder"]
-   > ![Parasoft 權益建立帳戶](_img/vs-parasoft/vs-parasoft-new-account.png)
+   > ![Parasoft 權益建立帳戶](_img/vs-parasoft/vs-parasoft-new-account.png "提供您的連絡人資訊，然後按一下 [提交] 以建立您的帳戶。")
 
    > [!Note]
    > 頁面上的表格會顯示一整年的價格，再加上 Visual Studio 折扣。 在您使用您的 6 個月訂閱之後，便可適用此價格。  
@@ -39,7 +39,7 @@ ms.locfileid: "91006263"
 
 6. 按一下對應至您作業系統的連結。
    > [!div class="mx-imgBorder"]
-   > ![Parasoft 權益歡迎電子郵件](_img/vs-parasoft/vs-parasoft-email.png)
+   > ![Parasoft 權益歡迎電子郵件](_img/vs-parasoft/vs-parasoft-email.png "選擇符合您作業系統的下載連結。")
 
 7. 根據您使用的瀏覽器，可能會看到不同的對話方塊，讓您有機會執行安裝程式。  例如，在 Internet Explorer 中，您會看到一份最新下載清單，而且其頂端列出 parasoft_soavirt_9.10.2_win32_x86_64.exe。 按一下 [執行]**** 開始安裝程式。
 
@@ -49,7 +49,7 @@ ms.locfileid: "91006263"
 
 10. [Parasoft SOAtest & Virtualize 安裝精靈] 隨即啟動。  按 [下一步]  。
     > [!div class="mx-imgBorder"]
-    > ![Parasoft 權益安裝開始](_img/vs-parasoft/vs-parasoft-start-install.png)
+    > ![Parasoft 權益安裝開始](_img/vs-parasoft/vs-parasoft-start-install.png "按一下 [下一步] 開始安裝 Parasoft SOAtest & 虛擬化。")
 
 11. 按一下 [我接受合約]****，然後按一下 [下一步]****。
 
@@ -73,8 +73,8 @@ ms.locfileid: "91006263"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  Yes       |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl | 6 個月       |  Yes       |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  是       |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl | 6 個月       |  是       |
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                           |NA         |
 | 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                      | 無法使用                                                           |NA         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                                           |NA         |
@@ -100,5 +100,5 @@ ms.locfileid: "91006263"
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 啟用您的 [Azure DevTest 個人點數](vs-azure.md)，以利用您自己的開發沙箱。

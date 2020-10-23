@@ -1,5 +1,7 @@
 ---
 title: GenerateBootstrapper 工作 | Microsoft Docs
+description: 使用 MSBuild GenerateBootstrapper 工作，以自動化方式偵測、下載及安裝應用程式及其必要條件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6da773fdf6cd84819ea0e73083995f60e3c17e2d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83bb6b44713ba61d14c508c0db2a51391a350015
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634080"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436473"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 工作
 

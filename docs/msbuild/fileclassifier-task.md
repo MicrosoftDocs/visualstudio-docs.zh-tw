@@ -1,5 +1,7 @@
 ---
 title: FileClassifier 工作 | Microsoft Docs
+description: 使用 MSBuild FileClassifier 工作，即可分類將內嵌至元件的一組來源資源。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ed1b1f94cd2ef23ff0704912cb2a2194ba7dab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f4a57d60c6e1dae0c42e30dce856a147fda0226
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634184"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436905"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier 工作
 

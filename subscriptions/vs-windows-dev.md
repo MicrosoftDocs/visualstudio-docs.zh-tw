@@ -2,17 +2,17 @@
 title: Visual Studio 訂用帳戶的 Windows 開發人員帳戶權益 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: 了解 Visual Studio 訂用帳戶隨附的 Windows 開發人員帳戶。
-ms.openlocfilehash: 2686034d95c8faf8caed25b6b2fb4cb7ad83d8fe
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 46cb22becd8a5ac852c7fddbd2cf8b473cef47bc
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005378"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435819"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Windows 開發人員帳戶
 Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中) 可讓您將免費和付費 Windows 應用程式提交至 Windows 市集。
@@ -25,10 +25,10 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 2. 在 [工具] 區段找到 [Windows 開發人員帳戶] 磚，並按一下權益磚底部的 [取得代碼]**** 連結。  將程式碼複製到剪貼簿，然後按一下 [ **啟用**]。
    > [!div class="mx-imgBorder"]
-   > ![Windows 開發人員權益磚](_img/vs-windows-dev/vs-windows-dev-tile.png)
+   > ![Windows 開發人員權益磚](_img/vs-windows-dev/vs-windows-dev-tile.png "按一下 [Windows 開發人員帳戶] 磚上的 [取得程式碼]，然後按一下 [啟動]。")
 3. [https://developer.microsoft.com/store/register/](https://developer.microsoft.com/store/register/)您可以在網站上開始註冊程式。  按一下 [註冊]**** 繼續。
    > [!div class="mx-imgBorder"]
-   > ![Windows 開發人員權益註冊](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
+   > ![Windows 開發人員權益註冊](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png "按一下 [註冊] 以建立您的帳戶。")
 4. 登入您的訂用帳戶。  如果您有多個帳戶，請選擇與您 Enterprise 訂用帳戶建立關聯的帳戶。
 0. 輸入您的電子郵件地址、選取慣用語言，然後按一下 [儲存]****。
 5. 在下一頁上，選取您居住的國家或地區公司所在位置，然後按一下 [下一步]****。
@@ -43,10 +43,10 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 已包括       |  Yes|
-| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl  | 已包括       |  Yes|
-| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 已包括                                                            |Yes|
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                        | 已包括                                                            |Yes|
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 已包括       |  是|
+| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl  | 已包括       |  是|
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 已包括                                                            |是|
+| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                        | 已包括                                                            |是|
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                            |  NA|
 | MSDN 平台 (標準)                                          | VL, 零售                                              |  無法使用                                            |  NA|
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
@@ -71,7 +71,7 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

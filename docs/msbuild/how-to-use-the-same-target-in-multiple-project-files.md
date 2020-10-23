@@ -1,5 +1,7 @@
 ---
 title: 如何：在多個專案檔中使用相同的目標 | Microsoft Docs
+description: 瞭解如何將目標儲存在 MSBuild 專案檔中，然後將它匯入至任何其他需要使用目標的專案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bc8f3c95c687244162cb3bd977ca40031cd8f39
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d81328ecf17117500a5f686a45f934e451bb5809
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82255568"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436057"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>如何：在多個專案檔中使用相同的目標
 
@@ -83,7 +85,7 @@ ms.locfileid: "82255568"
 
 3. 在專案檔中，定義必須覆寫所匯入專案中預設屬性和項目定義的所有屬性和項目。
 
-## <a name="example"></a>範例
+## <a name="example-1"></a>範例 1
 
  下列程式碼範例顯示第二個程式碼範例匯入的 *>mycommon.targets .targets* 檔案。 *.Targets*檔案會評估來自匯入專案的屬性以設定組建。
 
@@ -102,7 +104,7 @@ ms.locfileid: "82255568"
 </Project>
 ```
 
-## <a name="example"></a>範例
+## <a name="example-2"></a>範例 2
 
  下列程式碼範例會匯入 *>mycommon.targets .targets* 檔案。
 

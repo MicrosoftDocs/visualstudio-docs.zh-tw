@@ -1,5 +1,7 @@
 ---
 title: GenerateApplicationManifest 工作 | Microsoft Docs
+description: 使用 MSBuild GenerateApplicationManifest 工作來產生 ClickOnce 應用程式資訊清單或原生資訊清單。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f77420c5ab269e1b0052ce6102c4e3196a3be52b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4752e4b736a6ba2f8b4a209824b22f94d8036c2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634093"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436554"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 工作
 
@@ -84,7 +86,7 @@ ms.locfileid: "77634093"
 |`TargetPath`|指定應該如何在產生的資訊清單中定義路徑。 這個屬性可用於所有檔案。 如果未指定此屬性，便會使用項目規格。 這個屬性可用於 `DependencyType` 值為 `Install` 的所有檔案和相依性。|
 |`IsDataFile`|`Boolean` 中繼資料值，指出檔案是否為資料檔案。 資料檔案的特殊性在於會在應用程式更新之間移轉。 這項中繼資料只可用於檔案。 `False` 為預設值。|
 
-## <a name="example"></a>範例
+## <a name="example-1"></a>範例 1
 
 此範例會使用此工作 `GenerateApplicationManifest` 來產生 ClickOnce 應用程式資訊清單，以及使用 `GenerateDeploymentManifest` 單一元件產生應用程式的部署資訊清單。 然後使用 `SignFile` 工作為資訊清單簽章。
 
@@ -138,7 +140,7 @@ ms.locfileid: "77634093"
 </Project>
 ```
 
-## <a name="example"></a>範例
+## <a name="example-2"></a>範例 2
 
 這個範例會使用 `GenerateApplicationManifest` 和工作 `GenerateDeploymentManifest` ，為具有單一元件的應用程式產生 ClickOnce 應用程式和部署資訊清單，並指定資訊清單的名稱和身分識別。
 
@@ -199,7 +201,7 @@ ms.locfileid: "77634093"
 </Project>
 ```
 
-## <a name="example"></a>範例
+## <a name="example-3"></a>範例 3
 
 這個範例會使用 `GenerateApplicationManifest` 和工作， `GenerateDeploymentManifest` 為具有多個檔案和元件的應用程式產生 ClickOnce 應用程式和部署資訊清單。
 
@@ -318,7 +320,7 @@ ms.locfileid: "77634093"
 </Project>
 ```
 
-## <a name="example"></a>範例
+## <a name="example-4"></a>範例 4
 
 此範例使用 `GenerateApplicationManifest` 工作來產生應用程式 Test.exe** 的原生資訊清單，並參考原生元件 Alpha.dll** 和隔離的 COM 元件 Bravo.dll**。
 

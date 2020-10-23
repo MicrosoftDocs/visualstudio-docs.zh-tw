@@ -1,18 +1,18 @@
 ---
-title: WhiteSource Bolt 權益 | Microsoft Docs
+title: Visual Studio 訂用帳戶中的 WhiteSource 螺栓 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: 了解如何啟用 Visual Studio 訂用帳戶所含的 WhiteSource Bolt 訂用帳戶。
-ms.openlocfilehash: 7be5ba29c2243396ae8c510b33d928364163059c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 7d0e95bf82f31b92ef5b581a0b7d8b7d082d3237
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005697"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435996"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 WhiteSource Bolt
 
@@ -24,11 +24,11 @@ ms.locfileid: "91005697"
 
 2. 在 [工具] 區段找到 [WhiteSource Bolt] 磚，並按一下權益磚底部的 [取得代碼]**** 連結。
    > [!div class="mx-imgBorder"]
-   > ![WhiteSource 權益磚](_img/vs-whitesource/vs-whitesource-tile.png)
+   > ![WhiteSource 權益磚](_img/vs-whitesource/vs-whitesource-tile.png "按一下 WhiteSource 螺栓磚上的 [取得程式碼] 開始使用。")
 
 3. 您會收到顯示啟用代碼的通知。  **將程式碼複製至剪貼簿**，然後按一下 [啟用]****。
    > [!div class="mx-imgBorder"]
-   > ![WhiteSource 權益程式碼](_img/vs-whitesource/vs-whitesource-code.png)
+   > ![WhiteSource 權益程式碼](_img/vs-whitesource/vs-whitesource-code.png "將程式碼複製到剪貼簿，然後按一下 [啟動]。")
 
 4. 在 [啟用您的帳戶]**** 頁面上，按一下步驟 1 中的 [安裝]**** 連結。
 5. 在 Visual Studio Marketplace 中按一下 [免費取得]****。
@@ -42,8 +42,8 @@ ms.locfileid: "91005697"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  Yes       |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl | 6 個月       |  Yes       |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  是       |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl | 6 個月       |  是       |
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                           |NA         |
 | 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                      | 無法使用                                                           |NA         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                                           |NA         |
@@ -67,7 +67,7 @@ ms.locfileid: "91005697"
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

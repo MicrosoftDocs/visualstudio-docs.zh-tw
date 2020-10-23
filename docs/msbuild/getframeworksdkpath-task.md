@@ -1,5 +1,7 @@
 ---
 title: GetFrameworkSdkPath 工作 | Microsoft Docs
+description: 瞭解如何使用 MSBuild GetFrameworkSdkPath 工作取出 Windows SDK 的路徑。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d021bdb485846749ea2c7e9dfe483e09738fda46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4061dbe96c84648aacf136c0d59b92a2af037e2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633989"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436813"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath 工作
 
@@ -33,7 +35,7 @@ ms.locfileid: "77633989"
 下表說明 `GetFrameworkSdkPath` 工作的參數。
 下表說明 `GetFrameworkSdkPath` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`FrameworkSdkVersion20Path`|選擇性的 `String` 唯讀輸出參數。<br /><br /> 傳回 .NET SDK 2.0 版的路徑 (如果存在的話)。 否則傳回 `String.Empty`。|
 |`FrameworkSdkVersion35Path`|選擇性的 `String` 唯讀輸出參數。<br /><br /> 傳回 .NET SDK 3.5 版的路徑 (如果存在的話)。 否則傳回 `String.Empty`。|

@@ -1,5 +1,7 @@
 ---
 title: 如何：選取要建置的檔案 | Microsoft Docs
+description: 瞭解如何藉由分別列出每個檔案或使用萬用字元，來選取要在 MSBuild 專案檔中建立的檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4593fff50feb0176ea81f70dc297bc39d8dd1936
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633807"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436196"
 ---
 # <a name="how-to-select-the-files-to-build"></a>如何：選取要建置的檔案
 
@@ -40,7 +42,7 @@ ms.locfileid: "77633807"
     `<VBFile Include="form1.vb"/>`
 
     > [!NOTE]
-    > 如果項目集合中的項目不在與專案檔相同的目錄中，您必須指定項目的完整或相對路徑。 例如：`Include="..\..\form2.cs"`。
+    > 如果項目集合中的項目不在與專案檔相同的目錄中，您必須指定項目的完整或相對路徑。 例如： `Include="..\..\form2.cs"` 。
 
 #### <a name="to-declare-multiple-items"></a>宣告多個項目
 
@@ -105,7 +107,7 @@ ms.locfileid: "77633807"
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
-## <a name="example"></a>範例
+## <a name="example-1"></a>範例 1
 
 下列程式碼範例會顯示個別包含所有輸入檔案的專案。
 
@@ -140,7 +142,7 @@ ms.locfileid: "77633807"
 </Project>
 ```
 
-## <a name="example"></a>範例
+## <a name="example-2"></a>範例 2
 
 下列程式碼範例會使用萬用字元來包含所有 *.cs* 檔。
 

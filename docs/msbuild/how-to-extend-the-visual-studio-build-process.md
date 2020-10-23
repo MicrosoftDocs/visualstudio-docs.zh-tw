@@ -1,6 +1,7 @@
 ---
 title: 延伸建置流程
-ms.custom: seodec18
+description: 學習各種修改組建流程的方式，讓您可以控制和自訂專案的建立方式。
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac3bebc0a64f814e71e7b5ab30282a70fd7eb85e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07f0312892d9f4f4073cf6fb2c9537ffa52a6267
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88041034"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436353"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>如何：擴充 Visual Studio 建置處理序
 

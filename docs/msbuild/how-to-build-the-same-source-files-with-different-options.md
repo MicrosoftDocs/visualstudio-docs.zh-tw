@@ -1,5 +1,6 @@
 ---
 title: 使用不同選項來建置相同的來源檔案
+description: 瞭解如何建立不同的 MSBuild 組建設定，以使用不同的選項來建立相同的原始檔案。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e76145df0fdf3f4cc3a3dfa8e14c6826b0dbdf
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a2c6a2b27aa08780d440c0e961c9a091c2b2fdb2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037591"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436913"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同選項來建置相同的原始程式檔
 
@@ -88,7 +89,7 @@ ms.locfileid: "90037591"
 
   您可以在專案標記中使用 `TreatAsLocalProperty` 屬性，來變更此行為。 如果是使用該屬性列出的屬性名稱，命令列上指定的屬性值不會優先於專案檔中的值。 您可以在本主題稍後找到相關範例。
 
-## <a name="example"></a>範例
+## <a name="example-1"></a>範例 1
 
 下列程式碼範例 "Hello World" 專案包含兩個新的屬性群組，其可用於建立偵錯組建及發行組建。
 
@@ -156,7 +157,7 @@ msbuild consolehwcs1.proj -p:flavor=retail
 </Project>
 ```
 
-## <a name="example"></a>範例
+## <a name="example-2"></a>範例 2
 
 下列範例示範如何使用 `TreatAsLocalProperty` 屬性。 `Color` 屬性在專案檔中的值為 `Blue`，而在命令列中的值為 `Green`。 在專案標記中使用 `TreatAsLocalProperty="Color"`，命令列屬性 (`Green`) 就不會覆寫專案檔中定義的屬性 (`Blue`)。
 
@@ -190,7 +191,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 
 ## <a name="see-also"></a>另請參閱
 
-- [MSBuild](../msbuild/msbuild.md)
+- [Msbuild](../msbuild/msbuild.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
 - [ (MSBuild) 的專案元素 ](../msbuild/project-element-msbuild.md)

@@ -1,5 +1,7 @@
 ---
 title: GenerateTemporaryTargetAssembly 工作 | Microsoft Docs
+description: 如果專案參考在本機宣告的類型，請使用 MSBuild GenerateTemporaryTargetAssembly 工作來產生元件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69333b87720513244e90c131f052d11099b62e35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a100ad8a3be57288e49a858d6f87851269df303
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634041"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436753"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly 工作
 
@@ -31,7 +33,7 @@ ms.locfileid: "77634041"
 
 ## <a name="task-parameters"></a>工作參數
 
-| 參數 | 說明 |
+| 參數 | 描述 |
 |--------------------------| - |
 | `AssemblyName` | 必要的 **String** 參數。<br /><br /> 指定為專案所產生之組件的簡短名稱，它也是暫時產生之目標組件的名稱。 例如，如果專案產生的 Windows 可執行檔的名稱為 *WinExeAssembly.exe*， **AssemblyName** 參數的值會是 **>winexeassembly**。 |
 | `CompileTargetName` | 必要的 **String** 參數。<br /><br /> 指定用來從原始程式碼檔產生元件的 MSBuild 目標名稱。 一般的 **CompileTargetName** 值為 **CoreCompile**。 |

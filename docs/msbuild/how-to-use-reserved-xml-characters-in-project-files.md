@@ -1,5 +1,7 @@
 ---
 title: 如何：在專案檔中使用保留的 XML 字元 | Microsoft Docs
+description: 瞭解如何使用 MSBuild 專案檔中對應的已命名實體來取代保留的 XML 字元。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a041802af1c2fe8cfa195990e6eda3e9b49d773a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f98044378b717536c42f25f5033b072ac3680675
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633768"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436088"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>如何：在專案檔中使用保留的 XML 字元
 

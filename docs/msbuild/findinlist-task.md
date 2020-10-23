@@ -1,5 +1,7 @@
 ---
 title: FindInList 工作 | Microsoft Docs
+description: 瞭解如何使用 MSBuild FindInList 工作，在指定的清單中尋找具有相符專案的專案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915265a775f572467ad1296499bdd3201adc1f8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b4afc20b7845f3af71de1fbbb89f074801e08d1d
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634145"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435687"
 ---
 # <a name="findinlist-task"></a>FindInList 工作
 

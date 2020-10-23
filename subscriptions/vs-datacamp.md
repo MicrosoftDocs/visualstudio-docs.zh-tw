@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 04/17/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: 了解所選取 Visual Studio 訂用帳戶隨附的 DataCamp 訓練課程訂用帳戶。
-ms.openlocfilehash: 67fa9a68a22ee909c4c483246be7dc26c789c5f0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 54f2cf98d6e726e8abf8a0a863a54cc891c12523
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006328"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435890"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 DataCamp 訓練課程權益
 合格的 Visual Studio 訂閱包含 DataCamp 訂閱。  透過 DataCamp，您可以輕鬆從瀏覽器學習所需的所有資料科學技能。 您可以選擇何時學習及學習內容。 不需要安裝任何軟體且沒有任何特殊硬體需求，學習資料科學比以往更容易。
@@ -22,7 +22,7 @@ ms.locfileid: "91006328"
 
 2. 在 [Professional Development] (專業開發) 類別中，找到 DataCamp 權益磚，然後按一下 [啟用]****。
    > [!div class="mx-imgBorder"]
-   > ![DataCamp 權益磚](_img/vs-datacamp/vs-datacamp-tile-2.png)
+   > ![DataCamp 權益磚](_img/vs-datacamp/vs-datacamp-tile-2.png "按一下 [啟用] 開始使用。")
 
 3. 在 DataCamp 頁面上，您可以建立新帳戶。  您可以選擇輸入電子郵件地址和密碼，或是使用現有的 Facebook、LinkedIn 或 Google 帳戶登入。  提供登入資訊之後，按一下 [Get Started] (開始)****。
 
@@ -36,35 +36,35 @@ ms.locfileid: "91006328"
 
    只要按一下選擇的路徑即可開始。
    > [!div class="mx-imgBorder"]
-   > ![DataCamp 選擇路徑](_img/vs-datacamp/vs-datacamp-choose-path.png)
+   > ![DataCamp 選擇路徑](_img/vs-datacamp/vs-datacamp-choose-path.png "選擇您感興趣的學習路徑。")
 
 5. 選取您的路徑之後，您可以藉由選取目標來進一步限定學習路徑。  例如，如果您選擇 [Develop your Data Science Skillset] (開發您的資料科學技能集) 路徑，您會看到下列選項。 選擇一個選項，或按一下 [ **我不確定]。 顯示所有的事業路徑** ，以建立更廣泛的路徑。
    > [!div class="mx-imgBorder"]
-   > ![DataCamp 資料科學技能集](_img/vs-datacamp/vs-datacamp-datascience.png)
+   > ![DataCamp 資料科學技能集](_img/vs-datacamp/vs-datacamp-datascience.png "按一下 [我不確定]。 顯示所有的職業路徑，以顯示完整的清單。")
 
 6. 根據您選取的路徑和選項，您會看到一系列職涯路徑。  針對您選擇的路徑，按一下 [Enroll] (註冊)**** 按鈕。
    > [!div class="mx-imgBorder"]
-   > ![DataCamp 職涯路徑](_img/vs-datacamp/vs-datacamp-all-tracks.png)
+   > ![DataCamp 職涯路徑](_img/vs-datacamp/vs-datacamp-all-tracks.png "按一下所選路徑上的 [註冊] 按鈕，開始使用。")
 
-7. 註冊路徑之後，該路徑的第一堂課程就會開啟。  您會看到說明如何與課程互動的教學課程，包括瀏覽和完成課程練習。
+7. 在您註冊您的曲目之後，該曲目中的第一個課程將會開啟。  您會看到說明如何與課程互動的教學課程，包括瀏覽和完成課程練習。
 
    > [!div class="mx-imgBorder"]
-   > ![DataCamp 開始使用](_img/vs-datacamp/vs-datacamp-getting-started.png)
+   > ![DataCamp 開始使用](_img/vs-datacamp/vs-datacamp-getting-started.png "觀賞教學課程，以瞭解如何流覽課程。")
 
 您可以隨時停止，並在下一個工作階段繼續訓練。  只需造訪 [https://www.datacamp.com](https://www.datacamp.com) 並登入。  您會看到儀表板，並可以直接從暫停的地方繼續訓練。 只要按一下 [Continue Track] (繼續路徑)**** 即可。
 
 > [!div class="mx-imgBorder"]
-> ![DataCamp 繼續訓練](_img/vs-datacamp/vs-datacamp-continue-training.png)
+> ![DataCamp 繼續訓練](_img/vs-datacamp/vs-datacamp-continue-training.png "按一下 [繼續追蹤] 可隨時繼續定型。")
 
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 3 個月       |  不可以。  僅提供給新訂閱者使用          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl | 3 個月       |  不可以。  僅提供給新訂閱者使用          |
-| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 3 個月                                                            |  不可以。  僅提供給新訂閱者使用           |
-| 含 GitHub Enterprise 的 Visual Studio Professional| Vl | 3 個月                                                            |  不可以。  僅提供給新訂閱者使用           |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 3 個月                                             |  不可以。  僅提供給新訂閱者使用           |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 3 個月                                              |  不可以。  僅提供給新訂閱者使用           |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 3 個月       |  否。  僅提供給新訂閱者使用          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl | 3 個月       |  否。  僅提供給新訂閱者使用          |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 3 個月                                                            |  否。  僅提供給新訂閱者使用           |
+| 含 GitHub Enterprise 的 Visual Studio Professional| Vl | 3 個月                                                            |  否。  僅提供給新訂閱者使用           |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 3 個月                                             |  否。  僅提供給新訂閱者使用           |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 3 個月                                              |  否。  僅提供給新訂閱者使用           |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |無法使用  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 
@@ -89,7 +89,7 @@ ms.locfileid: "91006328"
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 查看您訂用帳戶中的更多專業開發機會：
 - [Pluralsight](vs-pluralsight.md)
 - [LinkedIn Learning](vs-linkedin-learning.md)

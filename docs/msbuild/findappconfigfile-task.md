@@ -1,5 +1,7 @@
 ---
 title: FindAppConfigFile 工作 | Microsoft Docs
+description: 瞭解如何使用 MSBuild FindAppConfigFile 工作，在提供的清單中尋找 app.config 檔案（如果有的話）。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,16 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c54f3c222588cd13711c832d12f7598f0cc5e223
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d186a72bcc7af18671c279ff392de066b6fd9fee
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634171"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435685"
 ---
 # <a name="findappconfigfile-task"></a>FindAppConfigFile 工作
 
-在提供的清單中尋找 *app.config* 檔案 (若有的話)。
+在提供的清單中尋找 *app.config* 檔案（如果有的話）。
 
 ## <a name="parameters"></a>參數
 

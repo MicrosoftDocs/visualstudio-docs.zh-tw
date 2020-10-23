@@ -1,5 +1,7 @@
 ---
 title: Exec 工作 | Microsoft Docs
+description: 瞭解如何使用 MSBuild Exec 工作，以使用指定的引數來執行指定的程式或命令。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 785f3f7d350a21ae31fe9ee4657b967b63e40f2d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99475ac316112f29a73a85b8ff92249a13867852
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288919"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436733"
 ---
 # <a name="exec-task"></a>Exec 工作
 

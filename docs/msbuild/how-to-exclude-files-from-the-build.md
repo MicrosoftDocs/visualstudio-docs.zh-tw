@@ -1,5 +1,7 @@
 ---
 title: 如何：從組建中排除檔案 | Microsoft Docs
+description: 瞭解如何明確地排除或有條件地將組建中的檔案包含在 MSBuild 專案檔案中。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1914f709a69dbb120e4439ddceeda8b70ad570b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 48578edd6c7911e858f32b1961b4ef361748788d
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633859"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436369"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>如何：從組建中排除檔案
 

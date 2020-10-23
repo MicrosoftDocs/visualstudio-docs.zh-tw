@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 09/21/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: 瞭解系統管理員如何使用「大量新增」功能或 Microsoft Azure Active Directory 群組，將授權指派給多個「訂閱者」
-ms.openlocfilehash: 6154e9796e1ba021eedf86bcee7d508e285b6645
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 1c3fba04ead841d4955d26865e6ff6b1d0632048
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022394"
+ms.locfileid: "92435880"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>指派訂閱給多個使用者
 訂用帳戶系統管理入口網站可讓您以一次一個或以大型群組方式新增使用者。  若要新增個別使用者，請參閱[新增單一使用者](assign-license.md)。
@@ -119,6 +119,8 @@ ms.locfileid: "91022394"
 
 > [!NOTE]
 > 如果您已將訂用帳戶個別指派給後續新增成為 Azure AD 群組一部分的使用者，這些訂用帳戶將會新增為群組的一部分，且不會再個別列出。 不過，如果個別訂用帳戶是針對不同的訂用帳戶層級，則會有兩個訂用帳戶。  範例：如果使用者有個別的 Visual Studio Professional 訂用帳戶，而且他們是您指派 Visual Studio Enterprise 訂用帳戶之群組的成員，他們將會有這兩個訂閱。  
+>
+> 如果您從已指派訂用帳戶的 Azure Active Directory 群組中移除訂閱者，則可能需要24小時的時間，更新才會反映在系統管理員入口網站中。 
 
 
 ## <a name="frequently-asked-questions"></a>常見問題集
@@ -131,7 +133,7 @@ ms.locfileid: "91022394"
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>問：我已將某人新增至我的 Azure AD 安全性群組，但我在訂用帳戶管理入口網站中看不到他們新增的帳戶，且他們沒有訂用帳戶。 為什麼不用？  
 答：根據組織設定 Azure AD 的方式，您可能會在新增使用者之前看到最多24小時的延遲。 如果超過24小時，請 [聯絡支援人員](https://visualstudio.microsoft.com/support/support-overview-vs)。  
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)

@@ -1,5 +1,7 @@
 ---
 title: FXC 工作 | Microsoft Docs
+description: 瞭解 MSBuild FXC.EXE 工作在組建流程中用來 HLSL 著色器編譯器的參數。
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: 67958a1a1ebb2ff382d0896e2fbaec6105c0c785
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b200fde9e5bc07f654ae2bf11cd8a752efbfe123
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77279292"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436699"
 ---
 # <a name="fxc-task"></a>FXC 工作
 
@@ -32,7 +34,7 @@ ms.locfileid: "77279292"
 
 下表說明 **FXC** 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |**AdditionalIncludeDirectories**|選擇性的 **string []** 參數。<br/><br/>指定一或多個要加入 Include 路徑中的目錄；如有多個目錄，請使用分號加以分隔。<br/><br/>請使用 `/I[path]`。|
 |**AdditionalOptions**|選擇性的 **字串** 參數。|

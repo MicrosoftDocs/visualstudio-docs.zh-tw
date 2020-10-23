@@ -1,5 +1,7 @@
 ---
 title: 如何：累加建置 | Microsoft Docs
+description: 瞭解如何使用 MSBuild 以累加方式建立，因此不會重建先前建立但仍處於最新狀態的元件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4911bb131f5c5c878b82865b3dee61fd7bedbe1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b7d54db50b4f28277a81d149b4c0c5140b002b0
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634158"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436003"
 ---
 # <a name="how-to-build-incrementally"></a>如何：累加建置
 

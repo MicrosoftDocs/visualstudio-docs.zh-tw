@@ -1,5 +1,7 @@
 ---
 title: GetFileHash 工作 | Microsoft Docs
+description: 瞭解如何使用 MSBuild GetFileHash 工作來計算檔案或一組檔案內容的總和檢查碼。
+ms.custom: SEO-VS-2020
 ms.date: 01/28/2019
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8f3de9a4f2fe848e1cbd41e14e82498845ca2cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e9e6e30cf8a224bfdfbde2c728545092bd1494b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77578658"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436846"
 ---
 # <a name="getfilehash-task"></a>GetFileHash 工作
 
@@ -38,8 +40,8 @@ ms.locfileid: "77578658"
 |`Items`|<xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br />`Files` 輸入含設定至檔案雜湊的其他中繼資料。|
 |`Hash`|`String` 輸出參數。<br /><br />檔案的雜湊。 只有一個傳入項目時，才會設定此輸出。|
 |`Algorithm`|選擇性的 `String` 參數。<br /><br />演算法。 允許值：`SHA256`、`SHA384`、`SHA512`。 預設值 = `SHA256`。|
-|`MetadataName`|選擇性的 `String` 參數。<br /><br />中繼資料名稱，雜湊儲存在每個項目。 預設為 `FileHash`。|
-|`HashEncoding`|選擇性的 `String` 參數。<br /><br />要用於產生雜湊的編碼。 預設為 `hex`。 允許值：`hex`、`base64`。|
+|`MetadataName`|選擇性的 `String` 參數。<br /><br />中繼資料名稱，雜湊儲存在每個項目。 預設值為 `FileHash`。|
+|`HashEncoding`|選擇性的 `String` 參數。<br /><br />要用於產生雜湊的編碼。 預設值為 `hex`。 允許值：`hex`、`base64`。|
 
 ## <a name="example"></a>範例
 

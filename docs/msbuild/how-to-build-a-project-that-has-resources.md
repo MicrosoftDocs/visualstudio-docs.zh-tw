@@ -1,5 +1,7 @@
 ---
 title: 如何：建置包含資源的專案 | Microsoft Docs
+description: 瞭解如何建立具有資源的專案，以及如何使用 MSBuild 編譯資源。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a76246096eec8779ce331e93f01be5ab791d1cdb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6a71a34b4ce208b093f7982ba3516b0229c8644
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633950"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436683"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>如何：建置包含資源的專案
 
@@ -38,7 +40,7 @@ MSBuild 隨附的一般工作程式庫包含一 `GenerateResource` 項工作，�
 
 4. 使用從 `Output` 項目(Element) 建立的項目 (Item) 做為另一個工作的輸入。
 
-## <a name="example"></a>範例
+## <a name="example-1"></a>範例 1
 
 下列程式碼範例示範 `Output` 項目如何指定 `GenerateResource` 工作的 `OutputResources` 屬性將包含已編譯的資源檔 *alpha.resources*和 *beta.resources*，而這兩個檔案會置於 `Resources` 項目清單中。 藉由將這些 *.resources* 檔案識別為相同名稱的專案集合，您可以輕鬆地使用它們做為另一項工作的輸入，例如 [Csc](../msbuild/csc-task.md) 工作。
 
@@ -55,7 +57,7 @@ MSBuild 隨附的一般工作程式庫包含一 `GenerateResource` 項工作，�
 </GenerateResource>
 ```
 
-## <a name="example"></a>範例
+## <a name="example-2"></a>範例 2
 
 下列範例專案包含兩個工作：`GenerateResource` (可編譯資源) 和 `Csc` (可編譯原始程式碼檔案和已編譯的資源檔案)。 `GenerateResource` 工作所編譯的資源檔會儲存在 `Resources` 項目中，然後傳遞到 `Csc` 工作。
 

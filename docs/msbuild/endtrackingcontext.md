@@ -1,5 +1,7 @@
 ---
 title: EndTrackingContext | Microsoft Docs
+description: 瞭解使用 MSBuild EndTrackingCoNtext 結束目前追蹤內容的語法、傳回值和需求。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf982200b8e65e404325bdbd189ff3b0f2daebac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da1ef921106732a7787f68a979bc88f3ac012b6d
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634236"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436666"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 
@@ -36,7 +38,7 @@ HRESULT WINAPI EndTrackingContext();
 
 如果已結束追蹤內容，則為已設定 **SUCCEEDED** 位元的 **HRESULT**。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 **標頭：** *FileTracker.h*
 

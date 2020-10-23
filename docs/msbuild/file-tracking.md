@@ -1,5 +1,7 @@
 ---
 title: 檔案追蹤 | Microsoft Docs
+description: 使用 MSBuild 檔案追蹤函式，將進程及其子進程的通話記錄到 Windows 檔案系統。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9335ca6608d36edbd17e47a441e13aecaa41c890
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2fafae7cce22cc41fdd51a4bc727ac6bfb791b9
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634197"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436623"
 ---
 # <a name="file-tracking"></a>檔案追蹤
 

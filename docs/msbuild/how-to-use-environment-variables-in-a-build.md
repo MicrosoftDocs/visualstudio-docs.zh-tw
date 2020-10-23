@@ -1,5 +1,7 @@
 ---
 title: 如何：在組建中使用環境變數 | Microsoft Docs
+description: 瞭解如何存取 MSBuild 專案檔中的環境變數，並使用環境變數來設定組建選項，而不需要修改專案檔。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afc679f9b782b8bc9ed3e04a2b8fb684cdbc1a20
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac100427c653a785d1e562b807f7bd4a001ae6ff
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633781"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436175"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>如何：在組建中使用環境變數
 

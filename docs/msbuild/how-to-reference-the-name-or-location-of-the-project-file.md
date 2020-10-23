@@ -1,5 +1,6 @@
 ---
 title: 參考專案檔的名稱或位置
+description: 瞭解如何使用 MSBuild 保留屬性來參考專案檔名稱或位置，而不需要建立您自己的屬性。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29960de09b512a419a56a61f493702485c287475
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ccc356e1859f447db1ac18a437b8fc2317925b0f
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036453"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436337"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：參考專案檔的名稱或位置
 
@@ -49,7 +50,7 @@ ms.locfileid: "90036453"
 > [!NOTE]
 > 您無法在專案檔中重新定義保留的屬性。
 
-## <a name="example"></a>範例
+## <a name="example-1"></a>範例 1
 
  下列範例專案檔會參考專案名稱做為保留的屬性，來指定輸出的名稱。
 
@@ -78,7 +79,7 @@ ms.locfileid: "90036453"
 </Project>
 ```
 
-## <a name="example"></a>範例
+## <a name="example-2"></a>範例 2
 
  下列範例專案檔使用 `MSBuildProjectDirectory` 保留屬性，在專案檔案位置中建立檔案的完整路徑。
 
@@ -96,5 +97,5 @@ ms.locfileid: "90036453"
 
 ## <a name="see-also"></a>另請參閱
 
-- [MSBuild](../msbuild/msbuild.md)
+- [Msbuild](../msbuild/msbuild.md)
 - [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)
