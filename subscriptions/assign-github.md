@@ -1,18 +1,18 @@
 ---
 title: Visual Studio + GitHub Enterprise 供應專案 |Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
-ms.date: 09/29/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: 管理 Visual Studio + GitHub Enterprise 供應專案中的訂閱
-ms.openlocfilehash: 79c1a2cfe8eaab9e275c6c53661f1667253ea4f5
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ef651a75a0daed1e5e975386a26d1bffcf9b4b82
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584122"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467579"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>管理含 GitHub Enterprise 的 Visual Studio 訂閱
 與 Microsoft (EA) 的 Enterprise 合約客戶，有資格購買新的訂用帳戶供應專案，以結合 Visual Studio 標準訂用帳戶和 GitHub Enterprise。 Visual Studio 訂閱者若想取得 GitHub Enterprise，這是個既簡單又經濟實惠的方法。 
@@ -32,19 +32,19 @@ ms.locfileid: "91584122"
 > [!Important]
 > 如果 Visual Studio 訂用帳戶管理員指派具有 GitHub Enterprise 的 Visual Studio 訂閱但未先購買，則不會收到 GitHub 的通知，指出您想要建立 GitHub Enterprise 帳戶。  **至少購買一個** 您應在指派訂用帳戶之前，先進行 GitHub Enterprise 訂用帳戶的 Visual Studio。
 
-## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>GitHub Enterprise 安裝程式的 Visual Studio 為何？
-GitHub Enterprise 是與 Visual Studio 訂閱分開設定和管理。 在 GitHub Enterprise 購買的 Visual Studio 之後，GitHub Enterprise 帳戶設定程式會與 (平行起始，但不同于) 在 [manage.visualstudio.com](https://manage.visualstudio.com)中建立協定。 建立此 GitHub Enterprise 帳戶可能需要一些時間。 
+## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>什麼是含 GitHub Enterprise 設定程序的 Visual Studio？
+GitHub Enterprise 是與 Visual Studio 訂用帳戶分開設定及管理的。 在 GitHub Enterprise 購買的 Visual Studio 之後，GitHub Enterprise 帳戶設定程式會與 (平行起始，但不同于) 在 [manage.visualstudio.com](https://manage.visualstudio.com)中建立協定。 建立此 GitHub Enterprise 帳戶可能需要一些時間。 
 
-當您的公司設定 GitHub Enterprise 帳戶之後，已指派 Visual Studio 與 GitHub Enterprise 訂用帳戶的訂閱者將會收到來自 GitHub 的電子郵件，通知他們其 Visual Studio 訂閱已連結。 訂閱者收到這封電子郵件後，他們就可以與 GitHub 組織系統管理員聯繫，以接收適當組織的邀請。
+在您的公司設定 GitHub Enterprise 帳戶之後，已獲指派含 GitHub Enterprise 訂用帳戶之 Visual Studio 的訂閱者將會收到來自 GitHub 的電子郵件，通知他們其 Visual Studio 訂用帳戶已連結。 訂閱者收到這封電子郵件後，他們就可以與 GitHub 組織系統管理員聯繫，以接收適當組織的邀請。
 
 如需 GitHub Enterprise 安裝程式的其他詳細資料，請參閱 [訂閱者檔](access-github.md)。   
 
 ## <a name="manage-github-enterprise-subscriptions"></a>管理 GitHub Enterprise 訂閱
-在購買 GitHub Enterprise 訂用帳戶時，GitHub 會與客戶合作，以協助建立及設定要存取 GitHub 的組織，並指名系統管理員。  這些系統管理員接著會收到通知，告知他們已指定為系統管理員。  
+購買 GitHub Enterprise 訂用帳戶時，GitHub 會與客戶合作，以協助建立及設定將存取 GitHub 並識別系統管理員的組織。  然後，系統管理員會收到通知，指出他們已設定為系統管理員。  
 
 由於此程式更複雜，因此購買訂閱之後可能需要幾天的時間，才能完全設定組織和系統管理員。
 
-GitHub 以雲端式 GitHub.com 或內部部署 GitHub Enterprise Server 的形式提供。  管理這兩的版本的流程並不相同。  GitHub 提供各式各樣的說明主題及系統管理員指南，協助您管理 GitHub Enterprise 訂用帳戶。  我們在下方提供了精選主題的連結。  
+GitHub 以雲端式 GitHub.com 或內部部署 GitHub Enterprise Server 的形式提供。  管理這兩的版本的流程並不相同。  GitHub 提供各種說明主題和系統管理指南，可協助您管理 GitHub Enterprise 的訂閱。  我們在下方提供了精選主題的連結。  
 
 ## <a name="support-resources"></a>支援資源
 
@@ -59,7 +59,7 @@ GitHub 以雲端式 GitHub.com 或內部部署 GitHub Enterprise Server 的形�
 
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
-- [Azure 文件](/azure/)
+- [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟

@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5692589192ee4377194f6c42c25d391636f5f42a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8b7dc9a388699cc9e323085769d17a00ba4fa6a
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800238"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467631"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
 
@@ -94,7 +94,7 @@ ms.locfileid: "88800238"
 | URL<br>resolution | go.microsoft.com<br><br>aka.ms | | 用來縮短 URL，其將會進一步解析為較長的 URL |
 | 起始頁 | vsstartpage.blob.core.windows.net | 443 | 用來顯示起始頁上的「開發人員新聞」(僅限 Visual Studio 2017) |
 | 目標<br> 通知 <br>服務 | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | 443<br><br>443 | 用來將通知全域清單篩選為僅適用於特定電腦/使用方式情節類型的清單 |
-| 延伸模組 <br>更新檢查 | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | 443 | 用來於已安裝的擴充功能有可用更新時提供通知 <br><br> 以登入位置的形式使用 |
+| 分機 <br>更新檢查 | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | 443 | 用來於已安裝的擴充功能有可用更新時提供通知 <br><br> 以登入位置的形式使用 |
 | AI 專案 <br>整合 | az861674.vo.msecnd.net | 443<br> | 用來設定新專案以將使用方式資料傳送至您已註冊的 Application Insights 帳戶 |
 | Code Lens | codelensprodscus1su0.app<br>codelens.visualstudio.com | 443 | 用來在編輯器中提供有關檔案上次更新的時間、變更的時間軸、與變更相關聯的工作項目、建立者等相關資訊 |
 | 實驗 <br>功能啟用 | visualstudio-devdiv-c2s.msedge.net | 80 | 用來啟用實驗性的新功能或功能變更 |
@@ -134,11 +134,11 @@ ms.locfileid: "88800238"
 | 開發人員社群 | sendvsfeedback2.azurewebsites.net/api | HTTPs/443 | 用來呼叫開發人員社群意見反應工具 Api (我的問題、搜尋、投票、留言、提交、上傳、繼續)  |
 | Intellicode | \*. intellicode.vsengsaas.visualstudio.com | HTTPs/443 | 用來呼叫 Intellicode Api |
 | Live Share | \*. liveshare.vsengsaas.visualstudio.com| HTTPs/443 | 用來呼叫 Live Share Api |
-| Visual Studio Codespaces | \*. online.visualstudio.com | HTTPs/443 | 用來呼叫 Visual Studio Codespaces Api |
-| JavaScript 自動類型取得 | registry.npmjs.org | HTTPs/443 | 用來安裝 TypeScript 型別定義，以提供適用于熱門 JavaScript 程式庫的 Intellisense |
+| GitHub Codespaces | \*. online.visualstudio.com | HTTPs/443 | 用來呼叫 GitHub Codespaces Api |
+| JavaScript 自動類型取得 | registry.npmjs.org | HTTPs/443 | 用來安裝 TypeScript 型別定義，以提供適用于熱門 JavaScript 程式庫的 IntelliSense |
 | Visual Studio 訂閱授權服務 | app.vssps.visualstudio.com/apis/<br/>授權/ClientRights | HTTPs/443 | 線上啟用的授權 |
 | 偵錯工具 | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore \* 。Zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | HTTPs/443 | 1. <br>用於在 Unix/macOS 上透過 SSH 下載 .NET Core 的偵錯工具位 <br><br>2. <br>用於下載遠端 Windows Docker 容器的偵錯工具位<br><br> 3. 用於 .NET framework 來源逐步執行 <br><br> 4. <br> (如果使用者加入宣告) 用來下載已發佈至 nuget.org 符號伺服器的符號。<br><br> 5. (如果使用者加入宣告) 用來下載 MS 符號和二進位檔，則在傾印中偵測 managed 程式碼時也可能需要用到 |
-| Visual Studio Codespaces| \*. online.visualstudio.com | HTTPs/443 | 用來呼叫 Visual Studio Codespaces Api |
+| GitHub Codespaces| \*. online.visualstudio.com | HTTPs/443 | 用來呼叫 GitHub Codespaces Api |
 | Xamarin Android 應用程式發佈 | \*. googleapis.com <br/> play.google.com <br/>accounts.google.com | HTTPs/443 | 用來與 Google Play 商店服務互動，以直接從 Visual Studio 發佈/上傳 Xamarin Android 應用程式。 |
 | Azure Container Registry | *. azurecr.io | HTTPs/443 | 存取裝載在 Azure 上的容器登錄，以設定 CICD 管線 |
 | | | | |

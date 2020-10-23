@@ -4,18 +4,18 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 09/21/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: 了解如何在管理入口網站中設定語言、連絡人、訂用帳戶層級及其他喜好設定
-ms.openlocfilehash: 58819995966f5cdf17335de474e83d2a77eccc37
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: e044db92a318114cd2f159b859843db354fac6c7
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022603"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467436"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>在管理入口網站中設定您合約的喜好設定
-超級管理員可以在系統管理員入口網站中設定特定的喜好設定 (系統管理員入口網站) 將會針對每個合約全域套用。  當系統管理員新增訂閱者時，這些喜好設定會自動填入您系統管理員的訂用帳戶詳細資料，而且只能由超級管理員進行全域修改。  
+超級管理員可以在系統管理員入口網站中設定特定的喜好設定 (系統管理員入口網站) 將會針對每個合約全域套用。  這些喜好設定將會在新增訂閱者時自動填入您系統管理員的訂用帳戶詳細資料，而且只能由超級管理員進行全域修改。  
 
 ## <a name="access-preferences"></a>存取喜好設定
 您必須使用具有合約超級管理員權限的登入識別碼登入[管理入口網站](https://manage.visualstudio.com)，才能檢視或修改喜好設定。  
@@ -53,15 +53,15 @@ ms.locfileid: "91022603"
 設定預設通訊語言和地區設定可簡化指派訂用帳戶的程序。  例如，如果您的開發小組與管理小組位於不同的國家/地區，則可以設定最適合訂閱者位置的喜好設定。 個別訂閱者的所有管理員仍然可以變更這些設定。 
 
 ### <a name="default-external-subscribers-setting"></a>預設外部訂閱者設定
-此喜好設定可讓您決定系統管理員是否可以從組織的租用戶/目錄外部新增訂閱者。  如果您關閉此設定，則不允許任何外部訂閱者。  如果您啟用此設定，且管理員嘗試新增外部訂閱者，則會要求他們確認其選擇，並允許他們指派訂用帳戶。 系統管理員無法覆寫此設定。 
+此喜好設定可讓您決定系統管理員是否可以從組織的租使用者/目錄外部新增訂閱者。  如果您關閉此設定，則不允許任何外部訂閱者。  如果您啟用此設定，且管理員嘗試新增外部訂閱者，則會要求他們確認其選擇，並允許他們指派訂用帳戶。 管理員無法覆寫此設定。 
 
 ### <a name="default-downloads-setting"></a>預設下載設定
 啟用此設定 (預設會開啟) 可讓訂閱者在管理員建立新訂用帳戶時存取下載。  管理員仍然可以根據個別訂用帳戶停用下載。  停用存取下載也會停用對產品金鑰的存取。  
 
 
 ## <a name="frequently-asked-questions"></a>常見問題集
-### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-administrators"></a>問：我可以停用 **連絡人電子郵件地址** ，讓訂閱者無法連絡系統管理員嗎？
-答：否，您可以使用安全性群組、群組電子郵件別名或個別的電子郵件地址來判斷要聯繫哪些系統管理員，所以無法停用此功能。
+### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-admins"></a>問：我可以停用 **連絡人電子郵件地址** ，讓訂閱者無法連絡系統管理員嗎？
+答：不可以，您可以使用安全性群組、群組電子郵件別名或個別的電子郵件地址來判斷要聯繫哪些系統管理員，因此無法停用此功能。
 
 ### <a name="q-if-i-answer-a-subscribers-email-will-they-have-my-email-address"></a>問：如果我回答訂閱者的電子郵件，他們是否會有我的電子郵件地址？
 答：因為您的回應會來自您所使用的電子郵件客戶程式，所以訂閱者收到的回應將會顯示您所使用的電子郵件地址。  因此，如果您從群組別名回覆，則他們會看到群組別名。  如果您從自己的電子郵件地址回覆，則他們會看到該電子郵件地址。  
@@ -81,7 +81,7 @@ ms.locfileid: "91022603"
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 深入瞭解如何管理 Visual Studio 的訂閱。
 - [指派個別訂用帳戶](assign-license.md)
 - [指派多個訂用帳戶](assign-license-bulk.md)

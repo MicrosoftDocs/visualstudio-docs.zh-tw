@@ -1,21 +1,21 @@
 ---
-title: 指派 Visual Studio 訂閱的授權 | Microsoft Docs
+title: 將 Visual Studio 訂閱指派給使用者 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 09/21/2020
 ms.topic: conceptual
-description: 了解系統管理員如何指派訂閱者授權
-ms.openlocfilehash: cd64aa058ab5c0518fc27bf1ee64acef3b5b79a2
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+description: 瞭解系統管理員如何將授權指派給訂閱者
+ms.openlocfilehash: 044cf4e9df3eb2ebf1d10aa8c08be804ca98f393
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022189"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467527"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>在 Visual Studio 訂閱系統管理入口網站中指派授權
-身為 Visual Studio 訂閱系統管理員，您可以使用系統管理入口網站，將訂閱指派給個別使用者和使用者群組。
+Visual Studio 訂用帳戶管理員，您可以使用系統管理員入口網站將訂用帳戶指派給個別使用者和使用者群組。
 
 針對使用者群組，您可以選擇如何指派訂閱。  
 - 您可以一次指派一個訂用帳戶。
@@ -31,7 +31,7 @@ ms.locfileid: "91022189"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vpPh]
 
 
-1. 登入系統 [管理入口網站](https://manage.visualstudio.com)。
+1. 登入[管理入口網站](https://manage.visualstudio.com)。
 2. 若要將授權指派給單一 Visual Studio 訂閱者，請選取資料表頂端的 [ **新增**]，然後選擇 [ **個別訂閱者**]。
    > [!div class="mx-imgBorder"]
    > ![新增一位訂閱者](_img/assign-license-add/add-subscriber-individual.png "選取 [新增]，然後選擇 [個別訂閱者] 以指派單一訂用帳戶。")
@@ -40,7 +40,7 @@ ms.locfileid: "91022189"
    > ![訂閱者詳細資料](_img/assign-license-add/subscriber-details.png "輸入訂閱者名稱和其他詳細資料，或從租使用者成員選擇。")
 
     > [!NOTE]
-    > 當您輸入訂閱者名稱時，系統管理員必須是租使用者的成員，才能顯示 Azure Active Directory 租使用者的成員。 
+    > 為了在您輸入訂閱者名稱時顯示 Azure Active Directory 租使用者的成員，系統管理員必須是租使用者的成員。 
 
 
     如果您想要讓此訂閱者在登入 [Visual Studio 訂用帳戶入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)時可存取軟體下載，請務必保持 [下載設定]**** 區段的 [下載] 切換按鈕為啟用狀態。 如果您選擇停用下載，使用者將無法存取軟體下載。  也會停用對產品金鑰的存取。  訂閱者仍可存取訂用帳戶中包含的所有其他權益。
@@ -65,6 +65,6 @@ ms.locfileid: "91022189"
 - [Microsoft 365 檔](/microsoft-365/)
 
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 - 要新增大量使用者嗎？  了解如何指派訂閱給[多個訂閱者](assign-license-bulk.md)。
 - 需要協助嗎？  請聯絡 [Visual Studio 管理和訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)。

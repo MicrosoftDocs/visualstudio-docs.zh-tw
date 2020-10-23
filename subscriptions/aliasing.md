@@ -1,18 +1,18 @@
 ---
 title: 登入 Visual Studio 訂用帳戶可能會因為使用別名而失敗 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 10/20/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: 登入可能會因為使用別名或易記名稱而失敗
-ms.openlocfilehash: c5c211cd674e86edc4528e6e2c5e75bd5b02132d
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: 4d9b3194cf7636106740e35b230cc02aaab7eded
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298196"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467605"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>使用別名時登入 Visual Studio 訂閱可能會失敗
 視登入所用的帳戶類型而定，登入時可能無法正確顯示可用的訂閱 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 。 其中一個可能的原因是使用「別名」或「易記名稱」，而非使用訂用帳戶指派目標的登入身分識別。 這稱為「別名處理」。

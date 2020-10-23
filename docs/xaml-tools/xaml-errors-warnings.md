@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b740f0882edb2eae9f00bd7826543e7fe1b4597f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 968e4167da1f8fd9bce21784a011d970014e1b4e
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817264"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467553"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML 錯誤和警告
 
@@ -23,11 +23,14 @@ ms.locfileid: "85817264"
 
 系統中的多項工具會在幕後平行分析 XAML。 依據偵測到錯誤的工具來看，XAML 錯誤可以區分為下列三種類型：
 
-|**偵測到錯誤的項目**|**錯誤碼格式**|
-| - |-----------------|
-|XAML 語言服務 (XAML 編輯器)|XLSxxxx|
-|XAML 設計工具|XDGxxxx|
-|XAML 編輯後繼續|XECxxxx|
+|**偵測到錯誤的項目**|**錯誤碼格式**|**Visual Studio 版本**|
+| - |-----------------| - |
+|XAML 語言服務 (XAML 編輯器)|XLSxxxx| 所有版本 |
+|XAML 設計工具|XDGxxxx| 所有版本 | 
+|XAML 編輯後繼續|XECxxxx| Visual Studio 2019 16.1 版或更早版本 |
+|XAML 熱重新載入 | XHRxxxx | Visual Studio 2019 16.2 版或更新版本 |
+
+如需 XAML 編輯品牌再造的詳細資訊 & 繼續 XAML 熱重新載入的詳細資訊，請參閱我們的[版本](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling)資訊
 
 > [!Note]
 > 並非所有錯誤或警告都有對應的程式碼。 這種錯誤通常是 XAML 設計工具的錯誤。

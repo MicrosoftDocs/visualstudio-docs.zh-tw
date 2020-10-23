@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 10/21/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: 瞭解系統管理員如何使用「大量新增」功能或 Microsoft Azure Active Directory 群組，將授權指派給多個「訂閱者」
-ms.openlocfilehash: 1c3fba04ead841d4955d26865e6ff6b1d0632048
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 6cb3613d76faca2adc9c6e946f6a8ec2c73770f1
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435880"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467540"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>指派訂閱給多個使用者
 訂用帳戶系統管理入口網站可讓您以一次一個或以大型群組方式新增使用者。  若要新增個別使用者，請參閱[新增單一使用者](assign-license.md)。
@@ -82,7 +82,7 @@ ms.locfileid: "92435880"
 > [!IMPORTANT]
 >
 > 下列限制適用于使用 Azure AD 群組來新增訂閱者：
-> - 初次將群組新增至管理入口網站時，系統管理員必須是 AAD 租使用者的成員。  新增群組之後，對群組成員資格所做的變更不需要系統管理員介入。 
+> - 初次將群組新增至系統管理員入口網站時，系統管理員必須是 AAD 租使用者的成員。  新增群組之後，對群組成員資格所做的變更不需要系統管理員介入。 
 > - 群組至少必須包含一個成員。  不支援空白群組。
 > - 群組的使用者必須少於1000個。 
 > - 所有使用者都必須在群組的最上層。  「不支援」巢狀群組。

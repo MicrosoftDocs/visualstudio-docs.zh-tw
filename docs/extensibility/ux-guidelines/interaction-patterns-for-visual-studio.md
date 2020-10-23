@@ -8,18 +8,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cbfeef3352e4abd03e12cc6b228cea8a8c124a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5376c1edf2c87ece78d966bede05b60cc0b6bab
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184402"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467644"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>適用於 Visual Studio 的互動模式
 ## <a name="overview"></a>概觀
  一般而言，設計模式是一種設計的核心，可在特定情況下套用，以解決類似條件約束集的問題。 功能和系統設計工具會使用這些設計模式作為起點，然後調整為其特定情況。
 
- Visual Studio 具有在建立新功能時應考慮的常見互動模式程式庫。 我們的設計模式有兩個核心內容： Visual Studio 用戶端 (devenv) 和 Visual Studio Codespaces (先前 Visual Studio Online) 。 針對某些設計問題，有一個可在所有情況下都能順利運作的通用模式。 不過，在許多情況下，對於在瀏覽器中顯示且裝載于用戶端應用程式的 UI 而言，解決方案可能會有所不同。
+ Visual Studio 具有在建立新功能時應考慮的常見互動模式程式庫。 我們的設計模式有兩個核心內容： Visual Studio 用戶端 (devenv) 和 GitHub Codespaces (先前 Visual Studio Online) 。 針對某些設計問題，有一個可在所有情況下都能順利運作的通用模式。 不過，在許多情況下，對於在瀏覽器中顯示且裝載于用戶端應用程式的 UI 而言，解決方案可能會有所不同。
 
 ### <a name="visual-studio-client-pattern-types"></a>Visual Studio 用戶端模式類型
 

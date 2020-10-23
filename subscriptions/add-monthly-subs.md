@@ -7,12 +7,12 @@ ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 09/03/2020
 ms.topic: how-to
 description: 瞭解如何在訂用帳戶管理入口網站中，新購買的每月 Visual Studio 訂閱
-ms.openlocfilehash: 56f4b4f765edec5b624db786795c84969872978a
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: f6b835969fff3a8316a2b46c6e15217ebe3e33b1
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005095"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467592"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>將新的每月 Visual Studio 訂用帳戶新增至訂用帳戶管理入口網站
 當您使用 Azure 訂用帳戶購買新的每月 Visual Studio 訂用帳戶時，您可能需要將這些訂用帳戶新增至訂用帳戶管理入口網站，才能將它們指派給使用者。  
@@ -47,7 +47,7 @@ ms.locfileid: "91005095"
 - [指派訂閱給多個使用者](assign-license-bulk.md)
 - [將特定訂閱指派給特定使用者](assign-guid.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)

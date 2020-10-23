@@ -3,15 +3,15 @@ title: 指派特定 Guid 給 Visual Studio 訂閱者 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
-ms.date: 09/21/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: 瞭解系統管理員如何對訂閱者進行特定訂用帳戶 GUID
-ms.openlocfilehash: 31544718683b10a186d4c38486bf0cd7923cd4cf
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: 1097743d1640fbadba550f3c2ee6908ac694436d
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022473"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467475"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>在 Visual Studio 訂閱系統管理入口網站中指派特定訂用帳戶
 
@@ -26,7 +26,7 @@ ms.locfileid: "91022473"
 
 ## <a name="assign-specific-subscription-guids-to-users"></a>將特定訂用帳戶 Guid 指派給使用者
 
-將特定訂用帳戶指派給個人的程式牽涉到利用兩個現有的系統管理程式，將特定訂用帳戶全域唯一識別碼 (Guid) 指派給個別使用者。  三個步驟的套裝程式括匯出您目前的訂用帳戶和指派清單、使用該清單來識別您想要指派的特定 Guid，然後使用大量新增程式來上傳新的指派。
+將特定訂用帳戶指派給個人的程式牽涉到利用兩個現有的系統管理員程式，將特定訂用帳戶全域唯一識別碼 (Guid) 指派給個別使用者。  三個步驟的套裝程式括匯出您目前的訂用帳戶和指派清單、使用該清單來識別您想要指派的特定 Guid，然後使用大量新增程式來上傳新的指派。
 
 ### <a name="export-your-subscriptions-information"></a>匯出訂閱資訊
 
@@ -68,8 +68,8 @@ ms.locfileid: "91022473"
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
-現在您已將訂用帳戶指派給使用者，請瞭解如何執行其他管理工作。
+## <a name="next-steps"></a>後續步驟
+現在您已將訂用帳戶指派給使用者，請瞭解如何執行其他系統管理工作。
 - [指派個別訂用帳戶](assign-license.md)
 - [指派多個訂用帳戶](assign-license-bulk.md)
 - [編輯訂用帳戶](edit-license.md)

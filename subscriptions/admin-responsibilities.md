@@ -1,21 +1,21 @@
 ---
-title: 系統管理員責任 | Visual Studio Marketplace
+title: Visual Studio 訂用帳戶中的系統管理員責任 |Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 09/03/2019
+ms.date: 10/22/2020
 ms.topic: conceptual
-description: 了解訂用帳戶系統管理員的責任。
-ms.openlocfilehash: c0c30eb8bc5b63720bd2377990a390df8a173035
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+description: 瞭解訂用帳戶管理員的責任。
+ms.openlocfilehash: 183209e5e1fa873ae9af6ff2d9b32caf94c5461e
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006133"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467462"
 ---
-# <a name="overview-of-administrator-responsibilities"></a>系統管理員責任概觀
-身為系統管理員，您可以管理組織的訂用帳戶。  系統管理員角色也有責任確保訂用帳戶根據授權條款進行管理。 本文章概述系統管理員角色的責任、權益和限制。
+# <a name="overview-of-admin-responsibilities"></a>系統管理員責任概觀
+以系統管理員身分，您可以管理組織的訂用帳戶。  系統管理員角色也會負責確保訂用帳戶會根據授權條款來管理。 本文概述系統管理員角色的職責、優點和限制。
 
 ## <a name="roles--responsibilities"></a>角色與責任
 Visual Studio 訂用帳戶管理員有四個主要責任：
@@ -42,8 +42,8 @@ Visual Studio 訂閱可讓開發人員安裝和使用軟體，以設計、開發
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
-深入了解系統管理員的責任：
+## <a name="next-steps"></a>後續步驟
+深入瞭解系統管理員的責任：
 - [清查生產前環境](admin-inventory.md)
 - [管理大型小組及外部承攬人](manage-teams.md)
 - [追蹤使用者指派及處理訂單](assignments-orders.md)
