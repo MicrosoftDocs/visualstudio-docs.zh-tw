@@ -8,12 +8,12 @@ ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 783d7a116dbdf530008c3271d38d15f7db3c3c98
-ms.sourcegitcommit: 503f82045b9236d457b79712cd71405d4a62a53d
+ms.openlocfilehash: 15c781be33343d2672396c44492d71f42cbb4eda
+ms.sourcegitcommit: 296ab61c40bf090c577ef20e84d581939bd1855b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91750716"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92502184"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>快速入門：在 Visual Studio 中搭配使用 Docker 與回應單一頁面應用程式
 
@@ -25,7 +25,7 @@ ms.locfileid: "91750716"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * 已安裝 [網頁程式開發]****、[Azure Tools]**** 工作負載及/或 [.NET Core 跨平台開發]**** 工作負載的 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 * 發佈至 Azure Container Registry (Azure 訂用帳戶)。 [註冊以免費試用](https://azure.microsoft.com/offers/ms-azr-0044p/)。
-* [Node.js](https://nodejs.org/en/download/)
+* [Node.js](https://nodejs.org/en/download/) \(英文\)
 * 針對 Windows 容器（Windows 10 1903 版或更新版本），以使用本文中所參考的 Docker 映射。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
@@ -33,7 +33,7 @@ ms.locfileid: "91750716"
 * 已安裝**網頁程式開發**、**Azure Tools** 工作負載及(或) **.NET Core 跨平台開發** 工作負載的 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 * 使用 .NET Core 3.1 開發的[.Net core 3.1 開發工具](https://dotnet.microsoft.com/download/dotnet-core/3.1)。
 * 發佈至 Azure Container Registry (Azure 訂用帳戶)。 [註冊以免費試用](https://azure.microsoft.com/offers/ms-azr-0044p/)。
-* [Node.js](https://nodejs.org/en/download/)
+* [Node.js](https://nodejs.org/en/download/) \(英文\)
 * 針對 Windows 容器（Windows 10 1903 版或更新版本），以使用本文中所參考的 Docker 映射。
 ::: moniker-end
 
@@ -112,7 +112,7 @@ COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
 ```
 
-上述的 *Dockerfile* 以 [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) 映像為基礎，其中包含藉由建置專案並將其新增至容器來修改基底映像的指示。
+上述 *Dockerfile* 是以 [mcr.microsoft.com/dotnet/core/aspnet](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) 映射為基礎，並包含透過建立您的專案並將其新增至容器來修改基底映射的指示。
 
 核取新專案對話方塊的 [設定 HTTPS]**** 核取方塊時，*Dockerfile* 會提供兩個連接埠。 其中一個連接埠用於 HTTP 流量，另一個連接埠則用於 HTTPS。 如果未選取該核取方塊，則會為 HTTP 流量提供單一連接埠 (80)。
 
@@ -166,19 +166,19 @@ ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
       FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       WORKDIR /src
-      COPY ["WebApplication7/WebApplication37.csproj", "WebApplication37/"]
-      RUN dotnet restore "WebApplication7/WebApplication7.csproj"
+      COPY ["WebApplicationReact1/WebApplicationReact1.csproj", "WebApplicationReact1/"]
+      RUN dotnet restore "WebApplicationReact1/WebApplicationReact1.csproj"
       COPY . .
-      WORKDIR "/src/WebApplication37"
-      RUN dotnet build "WebApplication37.csproj" -c Release -o /app/build
+      WORKDIR "/src/WebApplicationReact1"
+      RUN dotnet build "WebApplicationReact1.csproj" -c Release -o /app/build
 
       FROM build AS publish
-      RUN dotnet publish "WebApplication37.csproj" -c Release -o /app/publish
+      RUN dotnet publish "WebApplicationReact1.csproj" -c Release -o /app/publish
 
       FROM base AS final
       WORKDIR /app
       COPY --from=publish /app/publish .
-      ENTRYPOINT ["dotnet", "WebApplication37.dll"]
+      ENTRYPOINT ["dotnet", "WebApplicationReact1.dll"]
       ```
 
    1. 藉由移除來更新 >.dockerignore `**/bin` 檔案。
@@ -202,12 +202,12 @@ ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
 
 從 [工具]**** > [NuGet 套件管理員]、[套件管理員主控台]**** 功能表開啟 [套件管理員主控台]**** (PMC)。
 
-產生的應用程式 Docker 映像，會標記為 *dev*。 此映像以 *microsoft/dotnet* 基底映像的 *2.2-aspnetcore-runtime* 標籤為基礎。 在 [套件管理員主控台]**** (PMC) 視窗中，執行 `docker images` 命令。 這會顯示電腦上的映像：
+產生的應用程式 Docker 映像，會標記為 *dev*。 映射是以*dotnet/core/aspnet*基底映射的*3.1-nanoserver-1903*標記為基礎。 在 [套件管理員主控台]**** (PMC) 視窗中，執行 `docker images` 命令。 這會顯示電腦上的映像：
 
 ```console
-REPOSITORY        TAG                     IMAGE ID      CREATED         SIZE
-webapplication37  dev                     d72ce0f1dfe7  30 seconds ago  255MB
-microsoft/dotnet  2.2-aspnetcore-runtime  fcc3887985bb  6 days ago      255MB
+REPOSITORY                             TAG                 IMAGE ID            CREATED             SIZE
+webapplicationreact1                   dev                 09be6ec2405d        2 hours ago         352MB
+mcr.microsoft.com/dotnet/core/aspnet   3.1-buster-slim     e3559b2d50bb        10 days ago         207MB
 ```
 
 > [!NOTE]
@@ -216,8 +216,8 @@ microsoft/dotnet  2.2-aspnetcore-runtime  fcc3887985bb  6 days ago      255MB
 在 PMC 中執行 `docker ps` 命令。 請注意是使用容器來執行應用程式：
 
 ```console
-CONTAINER ID        IMAGE                  COMMAND               CREATED             STATUS              PORTS                                           NAMES
-cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago       Up 2 minutes        0.0.0.0:52036->80/tcp, 0.0.0.0:44342->443/tcp   priceless_cartwright
+CONTAINER ID        IMAGE                      COMMAND               CREATED             STATUS              PORTS                                           NAMES
+56d1b1008c89        webapplicationreact1:dev   "tail -f /dev/null"   2 hours ago         Up 2 hours          0.0.0.0:32771->80/tcp, 0.0.0.0:32770->443/tcp   WebApplication-React1
 ```
 
 ## <a name="publish-docker-images"></a>發行 Docker 映像
@@ -232,12 +232,12 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
 1. 選擇 [建立新的 Azure Container Registry]****，然後按一下 [發佈]****。
 1. 在 [建立新的 Azure Container Registry]**** 中填入您想要的值。
 
-    | 設定      | 建議的值  | 描述                                |
+    | 設定      | 建議的值  | 說明                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS 首碼** | 全域唯一的名稱 | 用以唯一識別容器登錄的名稱。 |
     | **訂用帳戶** | 選擇您的訂用帳戶 | 要使用的 Azure 訂用帳戶。 |
     | **[資源群組](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  要在其中建立容器登錄的資源群組名稱。 選擇 [新增]**** 以建立新的資源群組。|
-    | **[Sku](/azure/container-registry/container-registry-skus)** | 標準 | 容器登錄的服務層  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | 標準 | 容器登錄的服務層  |
     | **登錄位置** | 接近您的位置 | 在[區域](https://azure.microsoft.com/regions/)中選擇您附近的 [位置]，或選擇將會使用容器登錄的其他服務所接近的位置。 |
 
     ![Visual Studio 的 [建立 Azure Container Registry] 對話方塊](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
@@ -262,12 +262,12 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
 1. 選擇 [ **建立新的 Azure Container Registry**]。
 1. 在 [ **建立新的 Azure Container Registry** ] 畫面中，填入所需的值。
 
-    | 設定      | 建議的值  | 描述                                |
+    | 設定      | 建議的值  | 說明                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS 首碼** | 全域唯一的名稱 | 用以唯一識別容器登錄的名稱。 |
     | **訂用帳戶** | 選擇您的訂用帳戶 | 要使用的 Azure 訂用帳戶。 |
     | **[資源群組](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  要在其中建立容器登錄的資源群組名稱。 選擇 [新增]**** 以建立新的資源群組。|
-    | **[Sku](/azure/container-registry/container-registry-skus)** | 標準 | 容器登錄的服務層  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | 標準 | 容器登錄的服務層  |
     | **登錄位置** | 接近您的位置 | 在[區域](https://azure.microsoft.com/regions/)中選擇您附近的 [位置]，或選擇將會使用容器登錄的其他服務所接近的位置。 |
 
     ![Visual Studio 的 [建立 Azure Container Registry] 對話方塊](media/container-tools-react/vs-2019/azure-container-registry-details.png)
