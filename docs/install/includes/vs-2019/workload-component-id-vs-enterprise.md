@@ -10,12 +10,12 @@ ms.date: 08/05/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 204777b0209b2ca0b1c88717e9908828743087d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd31c04569b373591647cf3601d9afa4e63be882
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87805773"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92470855"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2019"></a>Visual Studio 核心編輯器 (隨附於 Visual Studio Enterprise 2019)
 
@@ -117,7 +117,7 @@ Microsoft.Net. ComponentGroup. DeveloperTools | .NET Framework 4.8 開發工具 
 Microsoft.VisualStudio.Component.Azure.Storage.AzCopy | Azure 儲存體 AzCopy | 16.0.28517.75 | 選擇性
 Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 16.0.28625.61 | 選擇性
 
-## <a name="data-storage-and-processing"></a>資料的儲存與處理
+## <a name="data-storage-and-processing"></a>資料儲存體和流程
 
 **識別碼：** Microsoft.VisualStudio.Workload.Data
 
@@ -640,7 +640,7 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | 開發時間的 IIS 支�
 
 **識別碼：** Microsoft.VisualStudio.Workload.Node
 
-**描述：** 使用非同步的事件驅動 JavaScript 執行階段 Node.js 來建置可調整的網路應用程式。 
+**描述：** 使用非同步的事件驅動 JavaScript 執行階段 Node.js 來建置可調整的網路應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -888,7 +888,7 @@ Net.tcp. SDK. 3。0 | .NET Core 3.0 執行時間 (不支援)  | 16.7.30310.162
 Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | 開發工具加上 .NET Core 2。1 | 16.3.29207.166
 Microsoft.NetCore.ComponentGroup.Web.2.1 | Web 開發工具加上 .NET Core 2。1 | 16.3.29207.166
 Microsoft.VisualStudio.Component.AzureDevOps.OfficeIntegration | Azure DevOps Office 整合 | 16.0.28625.61
-VisualStudio. VSOnline。 | Visual Studio Codespaces 的偵錯工具 | 16.7.30310.162
+VisualStudio. VSOnline。 | GitHub Codespaces 的偵錯工具 | 16.7.30310.162
 Microsoft.VisualStudio.Component.Git | 適用於 Windows 的 Git | 16.0.28625.61
 Microsoft.VisualStudio.Component.LinqToSql | LINQ to SQL 工具 | 16.0.28625.61
 Microsoft.VisualStudio.Component.TestTools.CodedUITest | 自動程式碼 UI 測試 | 16.0.28327.66
