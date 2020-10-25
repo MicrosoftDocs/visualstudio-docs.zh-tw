@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 10/13/2020
 ms.faqid: q3_2
-ms.openlocfilehash: ca1f71a16b0d597c3cd4606150bde9618cfbdca9
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 6533a68c334f52310c20a79cf1e6d93d0b967be0
+ms.sourcegitcommit: 296ab61c40bf090c577ef20e84d581939bd1855b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92157958"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92526108"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>我要如何使用自己的權益？
 
@@ -20,6 +20,18 @@ ms.locfileid: "92157958"
 
 針對訂閱者入口網站中所提供的每個權益，我們已提供相關文章，其中包含如該權益包含在哪些訂閱之中，以及啟用該權益所需步驟的資訊。
 
-請查看我們的文件以[深入了解](../../../../whats-new-in-subscriptions.md) \(部分機器翻譯\) (按一下左側導覽窗格中的 [訂閱]，然後選擇 [優點])。
+請查看我們的文件以[深入了解](https://docs.microsoft.com/visualstudio/subscriptions/whats-new-in-subscriptions) \(部分機器翻譯\) (按一下左側導覽窗格中的 [訂閱]，然後選擇 [優點])。
 
+含 GitHub Enterprise 訂用帳戶的 Visual Studio 分成兩部分管理：  
+- Visual Studio 訂用帳戶 (Enterprise 或 Professional)  
+- GitHub Enterprise  
 
+當您獲指派含 GitHub 訂用帳戶的 Visual Studio 時，您會收到一封電子郵件，告知您 Visual Studio 訂閱系統管理員指派了訂用帳戶給您。 此時，您可以在 <https://my.visualstudio.com/benefits> 檢視可用的訂用帳戶權益。 這包括 GitHub Enterprise 權益。 
+
+GitHub Enterprise 是由 GitHub 系統管理員管理，而且是與 Visual Studio 訂用帳戶分開管理的。 當您的公司已設定 GitHub Enterprise 帳戶時，您將會收到來自 GitHub 的電子郵件，通知您 Visual Studio 的訂閱已連結，且權益磚將會更新。 設定此帳戶可能需要一些時間，並取決於您的公司是否完成安裝程序。 收到這封電子郵件之後，您就可以與適當的 GitHub 組織系統管理員聯繫，以要求接收其組織和/或存放庫的邀請。 
+
+當您的 GitHub 組織系統管理員傳送邀請時，您將會收到來自 GitHub 的電子郵件，而且權益磚將會再次更新。 
+
+當您接受 GitHub 組織邀請之後，<https://my.visualstudio.com/benefits> 的 [權益] 磚外觀將會從 [擱置中] 變更為 [已啟用]，而且您現在可以開始使用 GitHub Enterprise。 
+
+如需詳細資訊，請參閱 [GitHub Enterprise 設定程序](https://docs.microsoft.com/visualstudio/subscriptions/access-github) \(部分機器翻譯\)。 
