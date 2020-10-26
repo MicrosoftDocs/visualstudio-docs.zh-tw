@@ -7,7 +7,7 @@ metadata:
   description: 探索 Visual Studio 產品系列的文件。
   ms.topic: hub-page
   ms.custom: contperfq1
-  ms.date: 05/13/2020
+  ms.date: 10/22/2020
   searchScope: []
   titleSuffix: ''
   ms.author: ghogen
@@ -15,12 +15,12 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: 78aa0723d747880ecff4d9335b649f7d98bd53be
-  ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+  ms.openlocfilehash: 12b9bc70efeb9a64e7847ffa7521acd119b08c9d
+  ms.sourcegitcommit: 677de234a37d615ab52f54be0d23be0a8797b4f6
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/09/2020
-  ms.locfileid: "91862025"
+  ms.lasthandoff: 10/23/2020
+  ms.locfileid: "92493988"
 productDirectory:
   items:
   - title: Visual Studio
@@ -56,14 +56,16 @@ productDirectory:
       text: 版本資訊
     - url: https://code.visualstudio.com
       text: 產品頁面
-  - title: Visual Studio Codespaces
-    imageSrc: ./media/vs-ide-2019.svg
+  - title: GitHub Codespaces
+    imageSrc: ./media/github-mark-32px.svg
     links:
-    - url: /visualstudio/codespaces/
+    - url: https://docs.github.com/github/developing-online-with-codespaces/
       text: 文件
-    - url: https://code.visualstudio.com/docs/remote/codespaces
+    - url: https://code.visualstudio.com/docs/remote/codespaces/
       text: 使用 Visual Studio Code
-    - url: https://visualstudio.microsoft.com/services/visual-studio-codespaces/
+    - url: https://docs.microsoft.com/visualstudio/ide/codespaces/use-visual-studio-with-codespaces/
+      text: 使用 Visual Studio
+    - url: https://github.com/features/codespaces/
       text: 產品頁面
   - title: Visual Studio 應用程式中心
     imageSrc: ./media/vs-mobile-center.svg
