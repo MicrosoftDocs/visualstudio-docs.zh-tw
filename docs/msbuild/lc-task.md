@@ -1,5 +1,7 @@
 ---
 title: LC 工作 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 LC 工作來包裝 LC.exe，這會從 .licx 檔案產生授權檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,16 +20,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 865167b9182ca1f2264900a3e71ddeb4983e25ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70c996d5a8d1d4bf296a395bfb64ead6eba1bb01
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82167393"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903574"
 ---
 # <a name="lc-task"></a>LC 工作
 
-包裝*LC.exe*，這會從 *.licx*檔案產生 *. 許可證*檔。 如需 *LC.exe*的詳細資訊，請參閱 [Lc.exe (授權編譯器) ](/dotnet/framework/tools/lc-exe-license-compiler)。
+包裝 *LC.exe* ，這會從 *.licx* 檔案產生 *. 許可證* 檔。 如需 *LC.exe* 的詳細資訊，請參閱 [Lc.exe (授權編譯器)](/dotnet/framework/tools/lc-exe-license-compiler)。
 
 ## <a name="parameters"></a>參數
 
@@ -40,7 +42,7 @@ ms.locfileid: "82167393"
 |`OutputDirectory`|選擇性的 `String` 參數。<br /><br /> 指定要在其中放置輸出的目錄 *。授權* 檔。|
 |`OutputLicense`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 輸出參數。<br /><br /> 指定 *許可證* 檔的名稱。 如果您未指定名稱，則會使用 *.licx* 檔的名稱，而且會將 *. 授權* 檔案放在包含 *.licx* 檔案的目錄中。|
 |`ReferencedAssemblies`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定在產生 *許可證* 檔時所要載入的參考元件。|
-|`SdkToolsPath`|選擇性的 `String` 參數。<br /><br /> 指定 SDK 工具（例如 *resgen.exe*）的路徑。|
+|`SdkToolsPath`|選擇性的 `String` 參數。<br /><br /> 指定 SDK 工具（例如 *resgen.exe* ）的路徑。|
 |`Sources`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定包含授權元件的專案，以包含在 *.* 授權檔案中。 如需詳細資訊，請參閱 [Lc.exe (授權編譯器)](/dotnet/framework/tools/lc-exe-license-compiler) 中 `/complist` 參數的記載說明。|
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
@@ -69,7 +71,7 @@ ms.locfileid: "82167393"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

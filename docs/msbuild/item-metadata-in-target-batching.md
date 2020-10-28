@@ -1,5 +1,7 @@
 ---
 title: 目標批次處理中的項目中繼資料 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用目標批次處理中的專案中繼資料，對組建目標的輸入和輸出執行相依性分析。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5d0c9dec280633d0a39573581c083e6ddd4d8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0436402aa4000841a278497af697985c3a50c812
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633664"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904609"
 ---
 # <a name="item-metadata-in-target-batching"></a>目標批次處理中的項目中繼資料
 
@@ -67,7 +69,7 @@ MSBuild 可以對組建目標的輸入和輸出執行相依性分析。 如果�
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：以累加方式建立](../msbuild/how-to-build-incrementally.md)
 - [批次處理](../msbuild/msbuild-batching.md)

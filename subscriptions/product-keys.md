@@ -1,18 +1,18 @@
 ---
-title: 使用產品金鑰 | Microsoft Docs
+title: 在 Visual Studio 訂用帳戶中使用產品金鑰 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 09/18/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: 了解如何取得及管理您的 Visual Studio 訂用帳戶產品金鑰。
-ms.openlocfilehash: 389a57fb2e8fe0ea6ee81ee163fed052c441c209
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a5da818a059709d311b87572f71b78a51dbb7deb
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005842"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904001"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的產品金鑰
 
@@ -23,7 +23,7 @@ Visual Studio 訂用帳戶能讓您存取各種用於設計、開發、測試以
 大部分的產品金鑰也允許每個金鑰可多次啟用產品。  許多產品也允許您在不啟用的情況下，安裝和使用產品長達 30 天或以上。  對大多數的訂閱者而言，這種比足夠還多的啟用更符合其需求。  不過，如果您已用完產品的可用啟用次數，您可以透過 [Visual Studio 訂用帳戶客戶服務](https://visualstudio.microsoft.com/subscriptions/support/)要求額外的金鑰。
 
 > [!NOTE]
-> 如果您的訂用帳戶是由公司或學校提供給您，則您的訂用帳戶管理員會控制您是否可以存取軟體下載。  如果您的訂用帳戶已停用下載的存取權，則也會停用對產品金鑰的存取。  如果您需要下載及/或產品金鑰，請 [洽詢您的系統管理員](contact-my-admin.md)。
+> 如果您的訂用帳戶是由您的公司或學校提供給您，則您的訂用帳戶管理員會控制您是否擁有軟體下載的存取權。  如果您的訂用帳戶已停用下載的存取權，則也會停用對產品金鑰的存取。  如果您需要下載及/或產品金鑰，請 [洽詢您](contact-my-admin.md)的系統管理員。
 
 ## <a name="activating-a-product"></a>啟用產品
 某些產品需要啟用。  在 Visual Studio 訂用帳戶中，通常只有 Windows、Windows Server、Microsoft Office 用戶端應用程式及 Expression Studio 需要啟用。 許多需要啟用的產品 (包括 Windows 及 Office)，會允許您在不啟用的情況下，安裝並使用該產品長達 30 天或以上。 如果您經常要重新製作電腦映像 (至少每隔 30 天一次)，不妨考慮「不」啟用產品。 隨 Visual Studio 訂用帳戶一起提供的產品金鑰，不允許無限次地啟用產品。
@@ -33,7 +33,7 @@ Visual Studio 訂用帳戶能讓您存取各種用於設計、開發、測試以
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>產品的零售和大量授權版本
 Visual Studio 訂用帳戶提供精選 Microsoft 產品的零售和大量授權版本。 下載提供的某些產品只在零售版本或大量授權版本有提供；有些則兩種版本都有提供。 一般而言，需要啟用的產品，例如 Windows、Windows Server 和 Office 用戶端產品，都只透過下載在零售版本中提供。
 
-大量授權客戶也可以從大量授權服務中心 (VLSC) 下載軟體，以取得大量授權版本的產品 (及其產品金鑰)。  VLSC 的存取是由客戶公司內部的指定系統管理員負責管理。
+大量授權客戶也可以從大量授權服務中心 (VLSC) 下載軟體，以取得大量授權版本的產品 (及其產品金鑰)。  VLSC 的存取權是由客戶組織內指定的系統管理員所管理。
 
 ## <a name="daily-product-key-claim-limits"></a>每日產品金鑰索取限額
 Microsoft 承諾保護 Visual Studio 訂用帳戶方案的完整性，以及該方案正當訂閱者就其投資所享的軟體和權益價值。 為了支持此一承諾，Microsoft 實施了 Visual Studio 訂用帳戶的每日金鑰索取限額。 每日金鑰索取限額限制每個訂用帳戶每天可以索取的金鑰數目。
@@ -47,10 +47,10 @@ Microsoft 承諾保護 Visual Studio 訂用帳戶方案的完整性，以及該�
 我們的研究指出，大多數的訂閱者其訂用帳戶所含的產品金鑰數便足以使用。 如果您需要額外的金鑰，可透過 Visual Studio 訂用帳戶[客戶服務](https://visualstudio.microsoft.com/subscriptions/support/)提出申請，該要求會視個別的情況而考慮核准。
 
 ## <a name="accessing-product-keys"></a>存取產品金鑰
-您必須登入 Visual Studio 訂用帳戶才能檢視您的產品金鑰。 在 [[下載]](https://my.visualstudio.com/downloads) 頁面選取特定產品的藍色 [取得金鑰]**** 連結，即可找到個別的產品金鑰，如下所示。  如果單一產品存在多組金鑰，下載的 [備註] 欄上就會顯示附註，協助您識別應該使用的金鑰。
+您必須登入 Visual Studio 訂用帳戶才能檢視您的產品金鑰。 在  連結，即可找到個別的產品金鑰，如下所示。  如果單一產品存在多組金鑰，下載的 [備註] 欄上就會顯示附註，協助您識別應該使用的金鑰。
 
 部分產品將該產品的多重版本包裝為單一下載。 在這種情況下，輸入的產品金鑰會決定要安裝的產品版本。
-有的金鑰會自動提供，例如「靜態」金鑰，因為它不需要啟用，所以您可以不限次數地使用。 有的金鑰則必須選取產品的 [取得金鑰]**** 連結才能領取。
+有的金鑰會自動提供，例如「靜態」金鑰，因為它不需要啟用，所以您可以不限次數地使用。 有的金鑰則必須選取產品的 [取得金鑰]  連結才能領取。
 > [!div class="mx-imgBorder"]
 > ![從下載頁面取得金鑰](_img/product-keys/download-get-key.png "按一下 [取得金鑰]，索取您要下載之產品的金鑰。")
 
@@ -85,7 +85,7 @@ Microsoft 承諾保護 Visual Studio 訂用帳戶方案的完整性，以及該�
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 若要索取金鑰，請前往 https://my.visualstudio.com/productkeys。  
 請了解如何[尋找和索取金鑰](find-keys.md)。
 您也可以了解如何使用產品金鑰來支援[網際網路示範](internet-demos.md)。

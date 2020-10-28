@@ -1,18 +1,18 @@
 ---
-title: Microsoft Azure 權益 |Microsoft Docs
+title: Visual Studio 訂閱 Microsoft Azure 權益 |Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 10/21/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: 瞭解如何啟用 Visual Studio 訂用帳戶中所含的 Azure DevTest 個人點數權益。
-ms.openlocfilehash: de1bfa9591a0dae409ec526429fa0496f3408703
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: f524f0933d067d0c62c184d54c441edc7b15739d
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353092"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903642"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
 身為 Visual Studio 訂閱者，您不需要額外收費即可使用 Microsoft Azure。  使用您的 [每月 Azure DevTest 個人點數](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)，azure 就是您開發/測試的個人沙箱。  您可以佈建虛擬機器、雲端服務和其他 Azure 資源。  信用額度會依訂用帳戶層級而異。
@@ -24,15 +24,15 @@ ms.locfileid: "92353092"
    > [!div class="mx-imgBorder"]
    > ![Azure 磚](_img/vs-azure/vs-azure-tile.png "按一下 [Azure] 磚上的 [啟用] 按鈕，開始使用。")
 
-3. 如果您沒有現有的 Azure 訂用帳戶，系統會要求您填寫必要的資訊，以建立您的 Azure 訂用帳戶。  第一個步驟是提供您的個人資訊，然後選取 **[下一步]**。
+3. 如果您沒有現有的 Azure 訂用帳戶，系統會要求您填寫必要的資訊，以建立您的 Azure 訂用帳戶。  第一個步驟是提供您的個人資訊，然後選取 **[下一步]** 。
    > [!div class="mx-imgBorder"]
    > ![Azure 註冊](_img/vs-azure/vs-azure-about-you.png "將您的個人連絡人資訊新增至您的 Azure 訂用帳戶。")
 
-4. 接下來，您必須使用簡單的驗證碼來驗證您的身分識別。 提供您的電話號碼，並選擇您是否想要以文字或電話接收代碼。  輸入您收到的驗證碼，然後選取 [ **驗證程式代碼**]。   
+4. 接下來，您必須使用簡單的驗證碼來驗證您的身分識別。 提供您的電話號碼，並選擇您是否想要以文字或電話接收代碼。  輸入您收到的驗證碼，然後選取 [ **驗證程式代碼** ]。   
    > [!div class="mx-imgBorder"]
    > ![Azure 準備就緒](_img/vs-azure/vs-azure-identity.png "要求驗證碼，然後輸入該驗證碼以繼續。")
 
-5. 在最後一個步驟中，選取核取方塊以接受條款，然後選取 [ **註冊**]。  就是這麼簡單！
+5. 在最後一個步驟中，選取核取方塊以接受條款，然後選取 [ **註冊** ]。  就是這麼簡單！
    > [!div class="mx-imgBorder"]
    > ![Azure 註冊](_img/vs-azure/vs-azure-agreement.png "按一下 [註冊] 按鈕，完成您的 Azure 訂用帳戶建立。")
 
@@ -50,12 +50,12 @@ ms.locfileid: "92353092"
 
 有幾種方式可繼續使用 Azure 的每月信用額度。  若要儲存您的 Azure 資源，您必須將 [資源傳輸](/azure/azure-resource-manager/management/move-resource-group-and-subscription) 到另一個 azure 訂用帳戶，而不論您在下方選擇的動作為何。 
 
-- **如果您直接購買 Visual Studio 訂**用帳戶，請透過 Microsoft Store 購買新的訂用帳戶或續訂您的訂用帳戶。  
+- **如果您直接購買 Visual Studio 訂** 用帳戶，請透過 Microsoft Store 購買新的訂用帳戶或續訂您的訂用帳戶。  
     - [Visual Studio 企業版](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **如果組織中有人為您的組織購買訂用**帳戶，請 [洽詢您的 Visual Studio 訂用帳戶管理員](./contact-my-admin.md) ，並要求提供所需每月信用額度的訂用帳戶。  
-- 如果您在與另一個 Microsoft 帳戶相關聯的相同訂用帳戶層級上**有另一個**作用中的 Visual Studio 訂用帳戶，您可以在 Visual Studio 訂用帳戶[入口網站](https://my.visualstudio.com/subscriptions)中[新增其他帳戶](./manage-vs-subscriptions.md#managing-my-profile)，將 Azure 權益轉移到另一個有效的 Visual Studio 訂用帳戶  
+- **如果組織中有人為您的組織購買訂用** 帳戶，請 [洽詢您的 Visual Studio 訂](./contact-my-admin.md) 用帳戶管理員，並要求提供所需每月信用額度的訂用帳戶。  
+- 如果您在與另一個 Microsoft 帳戶相關聯的相同訂用帳戶層級上 **有另一個** 作用中的 Visual Studio 訂用帳戶，您可以在 Visual Studio 訂用帳戶 [入口網站](https://my.visualstudio.com/subscriptions)中 [新增其他帳戶](./manage-vs-subscriptions.md#managing-my-profile)，將 Azure 權益轉移到另一個有效的 Visual Studio 訂用帳戶  
 
 您可以使用以下的資格表，來判斷每個訂用帳戶類型所包含的信用額度數目。  
 
@@ -122,7 +122,7 @@ ms.locfileid: "92353092"
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 如需有關 Microsoft 工具與服務的詳細資訊，請參閱下列文件：
 - [Azure](/azure/)
 - [Azure DevOps](/azure/devops/)

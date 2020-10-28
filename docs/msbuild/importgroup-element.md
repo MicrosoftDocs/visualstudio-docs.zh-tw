@@ -1,5 +1,7 @@
 ---
 title: ImportGroup 元素 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 ImportGroup 元素，包含在選擇性條件下分組的匯入元素集合。
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76dadd1a064a64884e3ff1cd1f2431bc1b94c3c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 865ee2b319cc3cd26f6924110fa2976f526ac4f4
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633729"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903948"
 ---
 # <a name="importgroup-element"></a>ImportGroup 項目
 
@@ -33,7 +35,7 @@ ms.locfileid: "77633729"
   <ImportGroup>
 ```
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ImportGroup Condition="'String A' == 'String B'">
@@ -54,13 +56,13 @@ ms.locfileid: "77633729"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[匯入](../msbuild/import-element-msbuild.md)|將某個專案檔的內容匯入至另一個專案檔。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
 | [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
 
@@ -78,7 +80,7 @@ ms.locfileid: "77633729"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [項目](../msbuild/msbuild-items.md)

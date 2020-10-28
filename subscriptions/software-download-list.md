@@ -1,5 +1,5 @@
 ---
-title: 哪些軟體可供下載？ | Microsoft Docs
+title: Visual Studio 訂用帳戶中有哪些軟體下載可供使用？ | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
@@ -7,12 +7,12 @@ ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
 ms.date: 03/11/2020
 ms.topic: how-to
 description: 請找出 Visual Studio 訂用帳戶隨附軟體下載項目的清單。
-ms.openlocfilehash: dc1a3c607aa919bd2ad6c24a8ba6870433e9302b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 390f33591afa6dfceebddbbe5f7f08b413be5e77
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004007"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903464"
 ---
 # <a name="what-software-is-available-for-download"></a>哪些軟體可供下載？
 
@@ -30,7 +30,7 @@ ms.locfileid: "91004007"
 
 您也可以下載包含每個訂用帳戶類型的豐富[可用軟體](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)清單。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)

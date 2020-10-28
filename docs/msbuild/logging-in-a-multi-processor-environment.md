@@ -1,5 +1,7 @@
 ---
 title: 在多處理器環境中記錄 | Microsoft Docs
+description: 瞭解 MSBuild 如何提供可辨識多處理器的記錄器，並讓您能夠建立自訂「轉送記錄器」。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c332fb67e96bdfea0059de11441da7c32871633
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fe90440e9e9e40312eafef0bda951937ea27ad9
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633560"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904375"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>在多處理器環境中記錄
 
@@ -30,7 +32,7 @@ MSBuild 雖能夠使用多個處理器來大幅縮短專案建置時間，但同
 
 ### <a name="central-logging-model"></a>集中式記錄模型
 
-針對多處理器建置，MSBuild 會使用「中央記錄模型」。 在中央記錄模型中， *MSBuild.exe* 的實例可作為主要組建進程或「中央節點」。 *MSBuild.exe*的次要實例或「次要節點」會附加至中央節點。 任何附加至中央節點的 ILogger 記錄器都會稱為「中央記錄器」，而附加至次要節點的記錄器稱為「次要記錄器」。
+針對多處理器建置，MSBuild 會使用「中央記錄模型」。 在中央記錄模型中， *MSBuild.exe* 的實例可作為主要組建進程或「中央節點」。 *MSBuild.exe* 的次要實例或「次要節點」會附加至中央節點。 任何附加至中央節點的 ILogger 記錄器都會稱為「中央記錄器」，而附加至次要節點的記錄器稱為「次要記錄器」。
 
 進行建置時，次要記錄器會將其事件流量路由傳送至中央記錄器。 因為事件產生自數個次要節點，所以資料會同時但交錯地到達中央節點。 為了解析事件對專案和事件對目標參考，事件引數會包含其他建置事件內容資訊。
 
@@ -75,7 +77,7 @@ Culture=neutral
 
 星號 (*) 可分隔 `-dl` 參數中的兩個記錄器名稱。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [組建記錄器](../msbuild/build-loggers.md)
 - [建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)

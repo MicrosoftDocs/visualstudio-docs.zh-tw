@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
-ms.date: 09/08/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: 了解如何使用公司或學校帳戶登入 Visual Studio 訂用帳戶。
-ms.openlocfilehash: 96b111c47e753b343d59c89e65f71eaa90132f6f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 3ac4e9fedae66656d4dee2155c8a8dcbe9325970
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005803"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903382"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>使用公司或學校帳戶登入 Visual Studio 訂用帳戶 
 
@@ -31,7 +31,7 @@ ms.locfileid: "91005803"
 3. 按一下 **[繼續]** 。
 4. 系統會將您重新導向至公司登入頁面。
 5. 輸入您的密碼。
-6. 按一下 [登**入**]
+6. 按一下 [登 **入** ]
 7. 此時應該會顯示 [權益] 頁面
 
 您現在可以看到您使用的訂用帳戶類型顯示在入口網站頂端的藍色列中。
@@ -48,16 +48,16 @@ ms.locfileid: "91005803"
 
 3. 按一下 **[繼續]** 。
 4. 系統會將您重新導向至決策頁面。
-    - 如果您的訂閱已指派給與 Azure Active Directory (AAD) 租用戶建立關聯的「公司或學校」帳戶，請選取 [公司或學校帳戶]****。
+    - 如果您的訂閱已指派給與 Azure Active Directory (AAD) 租用戶建立關聯的「公司或學校」帳戶，請選取 [公司或學校帳戶]  。
     - 如果訂用帳戶與「公司」電子郵件地址建立關聯，但也已轉換成「個人」 Microsoft 帳戶 (MSA) ，請選取 [ **個人** ]。
 
         > [!NOTE]
         > 這是過去許多訂閱者使用 Visual Studio 訂用帳戶 (先前稱為 MSDN) 的情況。
 
-    - 若一個路徑失敗，請嘗試另一個。  訂閱帳戶系統管理員可能修改您的訂用帳戶。
+    - 若一個路徑失敗，請嘗試另一個。  訂用帳戶管理員可能已修改您的訂用帳戶。
 
 5. 輸入您的密碼。
-6. 按一下 [ **登入**]。
+6. 按一下 [ **登入** ]。
 7. 此時應該會顯示 [權益] 頁面。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
@@ -71,7 +71,7 @@ ms.locfileid: "91005803"
 
 如果仍然遇到問題，您可以與我們的[訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)小組聯繫以取得協助。  
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)

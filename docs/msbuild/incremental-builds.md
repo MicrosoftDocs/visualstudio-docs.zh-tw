@@ -1,5 +1,7 @@
 ---
 title: 累加組建 | Microsoft Docs
+description: 深入瞭解 MSBuild 累加組建，其已優化，因此不會執行最新的輸出檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7283d67710a3b5b319b2d25a1c5d6535fed83b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4beb6c676fbd66d7e0d11e4ca1fe2a3fa8188bfe
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633716"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904595"
 ---
 # <a name="incremental-builds"></a>累加建置
 
@@ -24,7 +26,7 @@ ms.locfileid: "77633716"
 > [!NOTE]
 > 當 MSBuild 評估輸入檔時，只會考慮目前執行中清單的內容。 最後一個組建清單中的變更不會自動將目標設為過期。
 
-如果所有輸出項目都是最新的，則 MSBuild 會跳過目標。 目標的這個「累加組建」** 可以大幅改善建置速度。 如果只有某些檔案是最新的，則 MSBuild 會執行目標，但跳過最新項目，進而讓所有項目都具有最新狀態。 此程序稱為「部分累加組建」**。
+如果所有輸出項目都是最新的，則 MSBuild 會跳過目標。 目標的這個「累加組建」  可以大幅改善建置速度。 如果只有某些檔案是最新的，則 MSBuild 會執行目標，但跳過最新項目，進而讓所有項目都具有最新狀態。 此程序稱為「部分累加組建」  。
 
 1 對 1 對應通常是透過項目轉換所產生。 如需詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。
 
@@ -38,11 +40,11 @@ ms.locfileid: "77633716"
 </Target>
 ```
 
-`Compile` 項目類型所代表的檔案集會複製至備份目錄。 備份檔案的副檔名為 *.bak*。 如果在執行備份目標之後未刪除或修改 `Compile` 項目類型所代表的檔案或對應的備份檔案，則會在後續組建中跳過備份目標。
+`Compile` 項目類型所代表的檔案集會複製至備份目錄。 備份檔案的副檔名為 *.bak* 。 如果在執行備份目標之後未刪除或修改 `Compile` 項目類型所代表的檔案或對應的備份檔案，則會在後續組建中跳過備份目標。
 
 ## <a name="output-inference"></a>輸出推斷
 
-MSBuild 會比較目標的 `Inputs` 和 `Outputs` 屬性，以判斷是否必須執行目標。 在理想情況下，不論是否執行相關聯的目標，累加組建完成之後存在的檔案集應該都會維持不變。 因為工作所建立或改變的屬性和項目可能會影響組建，所以 MSBuild 必須推斷其值，即使跳過影響它們的目標也是一樣。 此程序稱為「輸出推斷」**。
+MSBuild 會比較目標的 `Inputs` 和 `Outputs` 屬性，以判斷是否必須執行目標。 在理想情況下，不論是否執行相關聯的目標，累加組建完成之後存在的檔案集應該都會維持不變。 因為工作所建立或改變的屬性和項目可能會影響組建，所以 MSBuild 必須推斷其值，即使跳過影響它們的目標也是一樣。 此程序稱為「輸出推斷」  。
 
 有三種情況：
 
@@ -78,6 +80,6 @@ MSBuild 會比較目標的 `Inputs` 和 `Outputs` 屬性，以判斷是否必須
 
 此程式碼會建立 CompileRan 屬性，並為其提供 `true` 值，唯一前提是已執行目標。 如果跳過目標，則不會建立 CompileRan。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [目標](../msbuild/msbuild-targets.md)

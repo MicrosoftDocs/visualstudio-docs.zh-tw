@@ -1,18 +1,18 @@
 ---
-title: 登入 Visual Studio 訂用帳戶的問題 | Microsoft Docs
+title: 登入 Visual Studio 訂閱的問題 |Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
-ms.date: 03/11/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: 了解登入 Visual Studio 訂用帳戶時可能遇到的問題
-ms.openlocfilehash: 05d610a9dbfb3ac8afe3d49cecde37320c2c250f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: cf89d2deff2a5e9e81d065fbb7efda8097102d03
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005273"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903449"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>登入 Visual Studio 訂用帳戶的問題
 若要使用 Visual Studio 訂用帳戶，您必須先登入。  視您的訂用帳戶而定，您可能已使用 Microsoft 帳戶 (MSA) 或 Azure Active Directory (AAD) 身分識別加以設定。  本文將討論一些登入訂用帳戶時可能會遇到的問題。
@@ -32,12 +32,12 @@ ms.locfileid: "91005273"
 如果您嘗試使用工作或學校電子郵件地址註冊 Microsoft 消費者應用程式，您會看到下列訊息。
 
    > [!div class="mx-imgBorder"]
-   > ![無法使用工作電子郵件建立帳戶](_img/sign-in-issues/cannot-use-work-email.png)
+   > ![無法使用工作電子郵件建立帳戶](_img/sign-in-issues/cannot-use-work-email.png "提供用來建立帳戶的使用者名稱和密碼。")
 
 不過，如果您嘗試註冊支援個人和工作/學校帳戶的 Microsoft 應用程式，則應該會看到此訊息：
 
    > [!div class="mx-imgBorder"]
-   > ![支援的工作/學校帳戶](_img/sign-in-issues/existing-account.png)
+   > ![支援的工作/學校帳戶](_img/sign-in-issues/existing-account.png "您無法使用公司或學校電子郵件地址進行註冊 .。。")
 
 ### <a name="are-existing-accounts-affected"></a>現有的帳戶是否受到影響？
 此處所述的註冊封鎖只會禁止建立新帳戶。 它對已擁有使用工作/學校電子郵件地址之 Microsoft 帳戶的使用者沒有任何影響。 如果您已處在這種情況下，我們可讓您更輕鬆地重新命名個人 Microsoft 帳戶。 本[技術支援文章](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account)提供簡單的逐步指引。 重新命名您的個人 Microsoft 帳戶意指變更使用者名稱，而不會影響您的工作電子郵件或登入商務服務（例如 Microsoft 365）。 它也不會影響您的個人資料，只會變更您的登入方式。 您可以使用其他 (個人) 電子郵件地址、從 Microsoft 取得新的 @outlook.com 電子郵件地址，或使用您的電話號碼作為新使用者名稱。
@@ -61,9 +61,9 @@ ms.locfileid: "91005273"
 當公司使用 Microsoft Online Service 做為其目錄登入使用 (例如 JohnD@contoso.com)，但使用者使用別名或易記名稱存取其電子郵件帳戶 (例如 John.Doe@contoso.com) 時，就會發生別名處理。 針對透過大量授權服務中心 (VLSC) 管理其訂用帳戶的客戶，這會導致不成功的登入體驗，因為提供的電子郵件地址 (John.Doe@contoso.com) 不符合成功透過 [公司或學校帳戶] 選項驗證所需的目錄地址 (JohnD@contoso.com)。
 
 ### <a name="what-options-do-i-have"></a>我有哪些選項？
-從訂閱者觀點來看，先與您的系統管理員合作以了解您公司的身分識別設定非常重要。 如果有需要，您的系統管理員可能必須從其系統管理入口網站更新您的帳戶設定，或您可能需要使用您的公司電子郵件地址建立 Microsoft 帳戶 (MSA)。 採取建立 MSA 的步驟之前，請先就採取此步驟可能涉及的任何原則或問題洽詢您的系統管理員。 
+從訂閱者的觀點來看，請務必先與您的系統管理員合作，以瞭解公司的身分識別設定。 如有需要，您的系統管理員可能必須從其系統管理員入口網站更新您的帳戶設定，或者您可能需要使用公司電子郵件地址來建立 Microsoft 帳戶 (MSA) 。 在採取步驟來建立 MSA 之前，請與您的系統管理員討論有關採取此動作的任何原則或問題。 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)

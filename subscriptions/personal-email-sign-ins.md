@@ -1,25 +1,25 @@
 ---
-title: 顯示於 VLSC 中的個人電子郵件
+title: VLSC 中 Visual Studio 訂閱的個人電子郵件
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 09/22/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Visual Studio 訂閱 – 我為何會針對我的訂閱者看見 Hotmail 或 Gmail 地址？
-ms.openlocfilehash: dc2de6c852f39f789fb07358384ad490d13f137c
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: fda7dab50c2151049e0feffa50609bf4c38e38cc
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022640"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904257"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Visual Studio 訂用帳戶–為什麼我會看到訂閱者的個人帳戶？
-從大量授權服務中心遷移 (VLSC) 至新的 Visual Studio 訂用帳戶 [管理入口網站](https://manage.visualstudio.com)之後，系統管理員很驚訝地發現某些訂閱者的「登入電子郵件地址」會顯示個人電子郵件地址，例如 Hotmail 或 Outlook。  
+從大量授權服務中心 (VLSC) 至新的 Visual Studio 訂用帳戶 [管理入口網站](https://manage.visualstudio.com)之後，系統管理員很驚訝地發現某些訂閱者的「登入電子郵件地址」會顯示個人電子郵件地址，例如 Hotmail 或 Outlook。  
 
 ## <a name="cause"></a>原因
-此案例是因為與舊版 MSDN 訂閱者體驗相關聯的登入程序所造成。 使用者是從大量授權服務中心 (VLSC) 移轉到 Visual Studio 訂閱系統管理入口網站，而未經修改。 系統管理員可能未發覺使用者以個人帳戶來存取其訂用帳戶權益。 在於 2016 年完成的 Visual Studio 訂閱者移轉之前，若要成功使用 Visual Studio 訂閱，必須完成兩項動作：
-1. 系統管理員使用個別訂閱者的公司或學校電子郵件地址，將訂閱「指派」給他們。
+此案例是因為與舊版 MSDN 訂閱者體驗相關聯的登入程序所造成。 使用者是從大量授權服務中心 (VLSC) 移轉到 Visual Studio 訂閱系統管理入口網站，而未經修改。 系統管理員可能不知道使用者使用個人帳戶來存取其訂用帳戶權益。 在於 2016 年完成的 Visual Studio 訂閱者移轉之前，若要成功使用 Visual Studio 訂閱，必須完成兩項動作：
+1. 系統管理員會使用他們的工作或學校電子郵件地址，「指派」訂閱給個別的訂閱者。
 2. 該訂閱者「啟動」訂閱。
 
 訂閱者啟用程序期間：需要 Microsoft 帳戶 (MSA) 才能登入。 若訂閱者沒有嘗試將其公司或學校帳戶 (例如 tasha@contoso.com) 轉換成 MSA，他們則可以建立新的 MSA 或使用現有的 MSA。 這導致其「登入電子郵件地址」和「指派電子郵件地址」有所不同。
@@ -56,6 +56,6 @@ ms.locfileid: "91022640"
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-##  <a name="next-steps"></a>後續步驟
+##  <a name="next-steps"></a>下一步
 - 如果您已經更新訂閱者的電子郵件地址，便應該通知他們其登入資訊已經變更。  他們也會收到一封包含更新資訊的電子郵件。
 - [篩選組織中的訂閱者清單](search-license.md)可能有助於找出任何可能需要變更的登入電子郵件地址。

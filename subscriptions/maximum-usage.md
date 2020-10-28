@@ -1,21 +1,21 @@
 ---
-title: 使用管理入口網站中的 [使用量上限] 功能
+title: 使用 Visual Studio 訂用帳戶中的 [使用量上限] 功能
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 09/21/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: 了解如何在管理入口網站中檢視已指派的訂用帳戶數目上限
-ms.openlocfilehash: b9ff33623311e4bfeff6b6067d5631d4e65efda9
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: e8ea9aa9001312c792e6f9d356dbc5f7cf58dfb8
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022163"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904492"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>使用 [使用量上限] 功能來追蹤指派的訂用帳戶數目
-Visual Studio 訂用帳戶系統管理入口網站中新功能會協助您追蹤曾購買和指派的訂用帳戶數量，並識別過去一年和整個合約持續時間內，每個層級曾指派的訂用帳戶尖峰數目。 
+Visual Studio 訂用帳戶系統管理員入口網站中的一項新功能，可協助您追蹤您已購買和指派的訂用帳戶數量，並識別您所指派之每個層級的尖峰數量（在過去一年內），以及在合約 (s) 的整個持續期間內。 
 
 ## <a name="maximum-usage-overview"></a>最大使用量總覽
 觀賞影片或繼續閱讀，以瞭解如何使用最大使用量功能。 
@@ -32,7 +32,7 @@ Visual Studio 訂用帳戶系統管理入口網站中新功能會協助您追蹤
 3. 將會顯示 [12 個月的最大使用量]，並顯示您在過去一年內為每個層級指派的最大訂用帳戶數目，以及達到該尖峰的月份。    
 
 ## <a name="view-your-assignment-history"></a>檢視指派記錄
-按一下 [Export full report] \(匯出完整報告\)**** 按鈕，除可看到每個訂用帳戶層級的尖峰指派，您還可以看到合約的活動執行帳戶，包括購買和指派。   (您可能需要向下滾動以查看按鈕。 )   
+按一下 [Export full report] \(匯出完整報告\)  按鈕，除可看到每個訂用帳戶層級的尖峰指派，您還可以看到合約的活動執行帳戶，包括購買和指派。   (您可能需要向下滾動以查看按鈕。 )   
 
 > [!div class="mx-imgBorder"]
 > ![[使用量上限] 完整報告](_img/maximum-usage/maximum-usage-full-report.png "完整報表包含所有訂用帳戶購買和指派的記錄。")
@@ -54,6 +54,6 @@ Visual Studio 訂用帳戶系統管理入口網站中新功能會協助您追蹤
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
-- 如果您有任何關於訂用帳戶指派或系統管理入口網站其他方面的問題，請連絡 https://visualstudio.microsoft.com/subscriptions/support/ 以尋求協助。 
+## <a name="next-steps"></a>下一步
+- 如果您對訂用帳戶指派或管理員入口網站的其他方面有任何疑問，請洽詢 https://visualstudio.microsoft.com/subscriptions/support/ 以尋求協助。 
 - 深入瞭解當您指派更多購買的訂用帳戶時 (稱為[過度分配](handle-overclaimed-license.md))，該怎麼辦。

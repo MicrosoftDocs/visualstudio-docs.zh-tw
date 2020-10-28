@@ -1,21 +1,21 @@
 ---
-title: 管理大型小組及外部承攬人 | Visual Studio Marketplace
+title: 在 Visual Studio 訂用帳戶中管理大型小組和承包商 |Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
 ms.date: 03/09/2020
 ms.topic: conceptual
-description: 深入瞭解系統管理員管理大型團隊訂用帳戶的責任，以及外部承包商。
-ms.openlocfilehash: 86848fc7b5c9507c1e5df5bd043ee21217afe313
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+description: 瞭解管理大型團隊訂用帳戶的責任，以及外部承包商。
+ms.openlocfilehash: 55d2ac2eacaf523503c2593349abbcf561aed3b1
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005557"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904673"
 ---
 # <a name="large-teams-and-external-contractors"></a>大型小組和外部承攬人
-Visual Studio 訂用帳戶系統管理員必須負責確保與 Visual Studio 授權軟體進行互動的每個使用者，已使用自己的 Visual Studio 訂用帳戶取得適當的授權。
+Visual Studio 訂用帳戶管理員須負責確保與 Visual Studio 授權軟體互動的每個使用者都已使用他們自己的 Visual Studio 訂用帳戶適當地授權。
 
 ## <a name="internal-teams"></a>內部小組
 現代軟體組織通常包含來自數個群組的專案關係人。 請識別每個群組中可以協助您追蹤使用者清查和變更的連絡人。
@@ -34,14 +34,14 @@ Visual Studio 訂用帳戶系統管理員必須負責確保與 Visual Studio 授
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [大量授權條款](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
 ## <a name="next-steps"></a>下一步
-深入了解系統管理員的責任：
+深入瞭解系統管理員的責任：
 - [系統管理員責任](admin-responsibilities.md)
 - [清查生產前環境](admin-inventory.md)
 - [追蹤使用者指派及處理訂單](assignments-orders.md)

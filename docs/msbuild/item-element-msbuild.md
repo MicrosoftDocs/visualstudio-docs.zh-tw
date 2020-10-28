@@ -1,5 +1,7 @@
 ---
 title: Item 項目 (MSBuild) | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 Item 元素來包含使用者定義的專案及其中繼資料。 每個專案都必須是 ItemGroup 元素的子系。
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f235108c63eb063f0ddcd495385bd3325581332
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51ecf68cacf0edca90893931642cd7fb6064f972
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289010"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904647"
 ---
 # <a name="item-element-msbuild"></a>Item 項目 (MSBuild)
 
@@ -31,7 +33,7 @@ ms.locfileid: "85289010"
 \<ItemGroup>
 \<Item>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Item Include="*.cs"
@@ -83,13 +85,13 @@ ms.locfileid: "85289010"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|使用者定義的項目中繼資料索引鍵，其中含有項目中繼資料值。 項目中可能有零個或多個 `ItemMetadata` 項目。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|項目的群組項目。|
 
@@ -99,7 +101,7 @@ ms.locfileid: "85289010"
 
 使用標記法 @ (\<myType>) 可將型別的專案集合 \<myType> ，展開為以分號分隔的字串清單，並傳遞至參數。 如果參數的類型是 `string`，則參數的值會是以分號分隔的項目清單。 如果參數是字串陣列 (`string[]`)，則每個項目都會根據分號的位置，插入到陣列中。 如果工作參數的類型是 <xref:Microsoft.Build.Framework.ITaskItem>`[]`，則值就是項目集合的內容再加上任何附加的中繼資料。 若要使用分號以外的字元來分隔每個項目，請使用語法 @(\<myType>, '\<separator>')。
 
-MSBuild 引擎可以評估萬用字元（例如 `*` 和） `?` 以及遞迴萬用字元（例如* / \* \* / \* .cs*）。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
+MSBuild 引擎可以評估萬用字元（例如 `*` 和） `?` 以及遞迴萬用字元（例如 */ \* \* / \* .cs* ）。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
 
 ## <a name="examples"></a>範例
 
@@ -124,7 +126,7 @@ MSBuild 引擎可以評估萬用字元（例如 `*` 和） `?` 以及遞迴萬�
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [項目](../msbuild/msbuild-items.md)
 - [一般 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)

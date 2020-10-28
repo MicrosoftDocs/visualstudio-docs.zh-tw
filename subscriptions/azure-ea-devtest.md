@@ -1,25 +1,25 @@
 ---
 title: Azure Enterprise 合約 DevTest 優惠
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
-ms.date: 02/23/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 description: 瞭解如何利用適用于具有 Enterprise 合約之客戶的特殊 Azure DevTest 定價
-ms.openlocfilehash: 70f7b9877dcc973d2f649eb0cad53599ff6023f3
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a4da6356c250b3c07cb19fb8bf4c5e260e9d3e29
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005736"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904467"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Azure Enterprise 合約 DevTest 優惠
 
 這項供應專案是 Enterprise 合約的一部分，可供使用中 Visual Studio 訂閱者的小組在 Microsoft Azure 上執行開發/測試工作負載，並在 Windows 虛擬機器上提供折扣費率，並可存取 Azure 資源庫中的專屬映射。 這項供應專案僅限於開發和測試用途，而且無法用於生產環境。  
 
 使用供應專案是兩個步驟的程式：
-1. 供應專案必須由 EA 入口網站中的系統管理員啟用。
+1. 提供者必須由 EA 入口網站中的系統管理員啟用。
 2. 個別的訂閱者必須建立訂用帳戶才能使用。 
 
 您也可以使用 [教學課程影片](https://channel9.msdn.com/blogs/EA.Azure.com/Enabling-and-Creating-EA-DevTest-Subscriptions-through-the-EA-Portal) 來示範此流程。  
@@ -41,7 +41,7 @@ ms.locfileid: "91005736"
 0. 按一下核取方塊，以確認訂用帳戶受 Enterprise 合約管理。 
 0. 按一下 [購買]。   (使用此供應專案時，您實際上不會購買任何專案。 ) 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)

@@ -1,5 +1,7 @@
 ---
 title: 項目定義 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 ItemGroup 和 ItemDefinitionGroup 來宣告專案檔中專案的中繼資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75c8947243545b57e0b8c4352784869f54efe565
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633703"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904660"
 ---
 # <a name="item-definitions"></a>項目定義
 
@@ -27,7 +29,7 @@ MSBuild 2.0 使用 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素�
 
 - 項目類型可以有多個定義。 將額外的中繼資料規格新增到類型時，最後一個規格會具有最高的優先順序。 \(中繼資料的匯入順序會比照屬性所依循的相同順序。\)
 
-- 中繼資料可供附加。 例如，CDefines 值會根據所要設定的屬性，有條件地累加。 例如 `MT;STD_CALL;DEBUG;UNICODE`。
+- 中繼資料可供附加。 例如，CDefines 值會根據所要設定的屬性，有條件地累加。 例如： `MT;STD_CALL;DEBUG;UNICODE`。
 
 - 中繼資料可被移除。
 

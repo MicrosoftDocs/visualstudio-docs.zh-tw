@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
-ms.date: 09/08/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: 如何針對 MPN 夥伴，將 Visual Studio 訂用帳戶指派給您的使用者。
-ms.openlocfilehash: 75b4b188bcd0a7df9414e430c8a1922f8fda9d5e
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: b578ed417d2d4ac03dd7472a9cb94958b8d3c7a3
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005881"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904114"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>管理透過 Microsoft 合作夥伴網路 (MPN) 提供的 Visual Studio 訂用帳戶
 擁有專長認證或購買 MPN 行動套件的合作夥伴，有資格使用 Visual Studio 訂用帳戶。 這些訂用帳戶是依每位使用者授權，而且只有在指派給為合作夥伴工作的特定具名使用者時才有效。
@@ -21,15 +21,15 @@ ms.locfileid: "91005881"
 
 ## <a name="microsoft-action-pack-subscribers"></a>Microsoft 行動套件訂閱者
 Microsoft 行動套件訂閱者與 Visual Studio 訂用帳戶
-1. 方案系統管理員將會登入 Partner Membership Center
-2. 透過 [Requirements and Assets] \(需求與資產\)**** 關聯使用者
-3. 尋找使用者並 [Assign Roles] \(指派角色\)****
-4. 選取第一個、第二個或第三個 [Technical Contact] \(技術連絡人\)**** 並按一下 [Save] \(儲存\)****
-5. 選取 [Requirements & Assets] \(需求與資產\)****
-6. 選取 [Privileges] \(權限\)****
-7. 選取 [Visual Studio Subscriptions] \(Visual Studio 訂用帳戶\)**** (注意：Visual Studio 訂用帳戶更新擱置中)
-8. 選取想要的 [Individual] \(個人\)****
-9. 選取 [**提交**]
+1. 方案管理員將會登入 Partner Membership Center
+2. 透過 [Requirements and Assets] \(需求與資產\)  關聯使用者
+3. 尋找使用者並 [Assign Roles] \(指派角色\) 
+4. 選取第一個、第二個或第三個 [Technical Contact] \(技術連絡人\)  並按一下 [Save] \(儲存\) 
+5. 選取 [Requirements & Assets] \(需求與資產\) 
+6. 選取 [Privileges] \(權限\) 
+7. 選取 [Visual Studio Subscriptions] \(Visual Studio 訂用帳戶\)  (注意：Visual Studio 訂用帳戶更新擱置中)
+8. 選取想要的 [Individual] \(個人\) 
+9. 選取 [ **提交** ]
 10. 該使用者將會收到電子郵件
 11. 指派的個人將可存取登 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 入
 12. 可能會顯示 Visual Studio 設定檔頁面，其中包括：
@@ -39,11 +39,11 @@ Microsoft 行動套件訂閱者與 Visual Studio 訂用帳戶
 13. 登入現在已完成，而且訂閱者應該可以存取權益
 
 ## <a name="competency-partners"></a>專長認證合作夥伴
-1. 選取 [Requirements and Assets] \(需求與資產\)****
-2. 選取 [Privileges] \(權限\)****
-3. 選取 [MSDN 訂閱]**** (注意：即將改為 [Visual Studio 訂用帳戶])
-4. 找到想要的 [Individual] \(個人\)****
-5. 選取 [**提交**]
+1. 選取 [Requirements and Assets] \(需求與資產\) 
+2. 選取 [Privileges] \(權限\) 
+3. 選取 [MSDN 訂閱]  (注意：即將改為 [Visual Studio 訂用帳戶])
+4. 找到想要的 [Individual] \(個人\) 
+5. 選取 [ **提交** ]
 6. 該使用者將會收到電子郵件
 7. 指派的個人將可存取登 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 入
 8. 可能會顯示 Visual Studio 設定檔頁面
@@ -60,11 +60,11 @@ Microsoft 行動套件訂閱者與 Visual Studio 訂用帳戶
   > Visual Studio 訂用帳戶需要技術連絡人角色
   - 第 8 頁 – 針對專長認證合作夥伴指派 Visual Studio 訂用帳戶
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
 ## <a name="next-steps"></a>下一步
-訂閱者與方案系統管理員應該直接與 Microsoft 合作夥伴網路支援小組合作，以解決訂閱者存取訂用帳戶的任何問題。 瀏覽[合作夥伴支援](https://partner.microsoft.com/support)頁面以取得協助。 (將需要您的 MPN 登入認證)。
+訂閱者和計畫系統管理員應該直接與 Microsoft 合作夥伴網路支援小組合作，以解決訂閱者存取訂用帳戶的任何問題。 瀏覽[合作夥伴支援](https://partner.microsoft.com/support)頁面以取得協助。 (將需要您的 MPN 登入認證)。

@@ -1,5 +1,7 @@
 ---
 title: MergeLocalizationDirectives 工作 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 MergeLocalizationDirectives 工作，將 XAML 二進位格式檔案的當地語系化屬性和批註合併成單一檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c7699afeb09604a437aad091f9aaf9ce624d33e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97d04978a2809a4744f62f27c375efdec1e43dcc
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633495"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903872"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives 工作
 
@@ -38,7 +40,7 @@ ms.locfileid: "77633495"
 
 ## <a name="remarks"></a>備註
 
-您可以將當地語系化屬性和批註加入至 XAML 內容。 利用 Windows Presentation Foundation (WPF) 當地語系化支援，您可以去除當地語系化屬性和批註，然後將它們放在與產生的元件不同的 loc 檔案中 *。* 您可以使用 **LocalizationPropertyStorage** 屬性來執行此動作。 如需當地語系化屬性和註解，以及 **LocalizationPropertyStorage** 的詳細資訊，請參閱[當地語系化屬性和註解](/dotnet/framework/wpf/advanced/localization-attributes-and-comments)。
+您可以將當地語系化屬性和批註加入至 XAML 內容。 利用 Windows Presentation Foundation (WPF) 當地語系化支援，您可以去除當地語系化屬性和批註，然後將它們放在與產生的元件不同的 loc 檔案中 *。* 您可以使用 **LocalizationPropertyStorage** 屬性來執行此動作。 如需當地語系化屬性和註解，以及 **LocalizationPropertyStorage** 的詳細資訊，請參閱 [當地語系化屬性和註解](/dotnet/framework/wpf/advanced/localization-attributes-and-comments)。
 
 ## <a name="example"></a>範例
 
@@ -57,7 +59,7 @@ ms.locfileid: "77633495"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)
 - [WPF MSBuild 工作參考](../msbuild/wpf-msbuild-task-reference.md)

@@ -1,5 +1,7 @@
 ---
 title: 工作批次處理中的項目中繼資料 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用工作批次處理中的專案中繼資料，將專案清單分割成不同的類別或批次，並使用每個批次一次執行一項工作。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6152b0e64286c3cadedfcafb0ac530616c4012a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1d67f740857dc93b997e206c43dd52d9887f3e9
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288984"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903726"
 ---
 # <a name="item-metadata-in-task-batching"></a>工作批次處理中的項目中繼資料
 
@@ -222,7 +224,7 @@ Identity: 'Item6' -- Items in ExampColl: Item6
 Items in ExampColl: Item2;Item5
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [已知的專案中繼資料](../msbuild/msbuild-well-known-item-metadata.md)
 - [Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)

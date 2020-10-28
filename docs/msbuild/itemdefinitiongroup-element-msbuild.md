@@ -1,5 +1,7 @@
 ---
 title: ItemDefinitionGroup 元素 (MSBuild) | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 ItemDefinitionGroup 專案來定義一組專案定義，以及套用至專案中所有專案的中繼資料值。
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21e3b6554a9d6e0024cc21fd898962177acfffa7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3fff9848ac82cd56d1052d135646954527debd5
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633625"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903708"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup 元素 (MSBuild)
 
@@ -32,7 +34,7 @@ ms.locfileid: "77633625"
 \<Project>
 \<ItemDefinitionGroup>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ItemDefinitionGroup Condition="'String A' == 'String B'">
@@ -53,13 +55,13 @@ ms.locfileid: "77633625"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[Item](../msbuild/item-element-msbuild.md)|定義建置程序的輸入。 `ItemDefinitionGroup` 中可能有零或多個 `Item` 項目。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
 | [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
 
@@ -85,7 +87,7 @@ ms.locfileid: "77633625"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [項目](../msbuild/msbuild-items.md)

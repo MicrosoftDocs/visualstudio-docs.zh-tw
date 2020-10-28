@@ -1,5 +1,7 @@
 ---
 title: Link 工作 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用連結工作包裝 Microsoft c + + 連結器工具 link.exe，其會連結 COFF 物件檔案和程式庫。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -30,16 +32,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01105e3fd4c86d57077df7804e66592e32ebae07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 160d4fa3a1058e0cb81e5d25720d9194d90fdc39
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78865345"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904064"
 ---
 # <a name="link-task"></a>Link 工作
 
-包裝 Microsoft c + + 連結器工具， *link.exe*。 連結器工具會連結通用物件檔案格式 (COFF) 目的檔及程式庫，以建立可執行檔 (*.exe*) 或動態連結程式庫 (DLL)。 如需詳細資訊，請參閱 [連結器選項](/cpp/build/reference/linker-options) 和 [從命令列使用 MSBuild](/cpp/build/msbuild-visual-cpp) ，然後 [從命令列使用 Microsoft c + + 工具](/cpp/build/building-on-the-command-line)組。
+包裝 Microsoft c + + 連結器工具， *link.exe* 。 連結器工具會連結通用物件檔案格式 (COFF) 目的檔及程式庫，以建立可執行檔 ( *.exe* ) 或動態連結程式庫 (DLL)。 如需詳細資訊，請參閱 [連結器選項](/cpp/build/reference/linker-options) 和 [從命令列使用 MSBuild](/cpp/build/msbuild-visual-cpp) ，然後 [從命令列使用 Microsoft c + + 工具](/cpp/build/building-on-the-command-line)組。
 
 ## <a name="parameters"></a>參數
 
@@ -219,7 +221,7 @@ ms.locfileid: "78865345"
 
   選擇性的 **String []** 參數。
 
-  此參數會導致 DLL「延遲載入」**。 指定要延遲載入的 DLL 名稱。
+  此參數會導致 DLL「延遲載入」  。 指定要延遲載入的 DLL 名稱。
 
   如需詳細資訊，請參閱 [/DELAYLOAD (延遲載入匯入)](/cpp/build/reference/delayload-delay-load-import)。
 
@@ -325,7 +327,7 @@ ms.locfileid: "78865345"
 
   選擇性的 **布林值** 參數。
 
-  若為 `true`，即會建立* .exe* 檔或 DLL 的偵錯資訊。
+  若為 `true`，即會建立 *.exe* 檔或 DLL 的偵錯資訊。
 
   如需詳細資訊，請參閱 [/debug (產生) 的 DEBUG 資訊 ](/cpp/build/reference/debug-generate-debug-info)。
 
@@ -341,7 +343,7 @@ ms.locfileid: "78865345"
 
   選擇性的 **布林值** 參數。
 
-  如果是 `true`，即會建立「對應檔」**。 對應檔的副檔名為 *. map*。
+  如果是 `true`，即會建立「對應檔」  。 對應檔的副檔名為 *. map* 。
 
   如需詳細資訊，請參閱 [/MAP (產生 ](/cpp/build/reference/map-generate-mapfile)對應檔) 。
 
@@ -529,7 +531,7 @@ ms.locfileid: "78865345"
 
   選擇性的 **字串** 參數。
 
-  指定 .idl** 檔案的檔名和副檔名。
+  指定 .idl  檔案的檔名和副檔名。
 
   如需詳細資訊，請參閱 [/IDLOUT (將 MIDL 輸出檔命名) ](/cpp/build/reference/idlout-name-midl-output-files)。
 
@@ -605,7 +607,7 @@ ms.locfileid: "78865345"
 
   選擇性的 **布林值** 參數。
 
-  如果是 `true` 且已啟用登錄輸出，即會強制將登錄寫入 **HKEY_CLASSES_ROOT**，使其重新導向到 **HKEY_CURRENT_USER**。
+  如果是 `true` 且已啟用登錄輸出，即會強制將登錄寫入 **HKEY_CLASSES_ROOT** ，使其重新導向到 **HKEY_CURRENT_USER** 。
 
 - **PreprocessOutput**
 
@@ -625,7 +627,7 @@ ms.locfileid: "78865345"
 
   選擇性的 **布林值** 參數。
 
-  如果是 `true`，即會產生可與**效能工具**分析工具搭配使用的輸出檔。
+  如果是 `true`，即會產生可與 **效能工具** 分析工具搭配使用的輸出檔。
 
   如需詳細資訊，請參閱 [/PROFILE (效能工具分析工具)](/cpp/build/reference/profile-performance-tools-profiler)。
 
@@ -649,7 +651,7 @@ ms.locfileid: "78865345"
 
   選擇性的 **布林值** 參數。
 
-  如果是 `true`，即會產生可執行映像檔，其可使用 Windows 的「位址空間配置隨機載入」**(ASLR) 功能，於載入時隨機重定基底。
+  如果是 `true`，即會產生可執行映像檔，其可使用 Windows 的「位址空間配置隨機載入」  (ASLR) 功能，於載入時隨機重定基底。
 
   如需詳細資訊，請參閱 [/DYNAMICBASE (使用位址空間配置隨機載入)](/cpp/build/reference/dynamicbase-use-address-space-layout-randomization)。
 
@@ -925,6 +927,6 @@ ms.locfileid: "78865345"
 
   如需詳細資訊，請參閱 [/VERSION (版本資訊) ](/cpp/build/reference/version-version-information)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)

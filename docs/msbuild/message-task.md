@@ -1,5 +1,7 @@
 ---
 title: Message 工作 | Microsoft Docs
+description: 深入瞭解 MSBuild Message 工作的參數和設定，這會在組建期間記錄訊息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 264ff3a5e64b756020648e888f7817e12702659f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b7a2854220a7ee85fd680cedd8c8e0c5c3ada89
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78865358"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903838"
 ---
 # <a name="message-task"></a>Message 工作
 
@@ -33,7 +35,7 @@ ms.locfileid: "78865358"
 
  下表說明 `Message` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`Importance`|選擇性的 `String` 參數。<br /><br /> 指定訊息的重要性。 此參數的值可以是 `high`、`normal` 或 `low`。 預設值是 `normal`。|
 |`Text`|選擇性的 `String` 參數。<br /><br /> 要記錄的錯誤文字。|
@@ -62,7 +64,7 @@ ms.locfileid: "78865358"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)

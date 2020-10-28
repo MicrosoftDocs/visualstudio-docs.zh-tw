@@ -1,5 +1,7 @@
 ---
 title: ItemGroup 項目 (MSBuild) | Microsoft Docs
+description: 瞭解 MSBuild ItemGroup 元素，其中包含一組使用者定義的專案元素。 每個專案都必須是 ItemGroup 的子系。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a62b4df06d1c180a6a6d62b0231dce1136fb8059
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f4397415e684b9603dd662e409590e88e86034b
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288971"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903621"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 項目 (MSBuild)
 
@@ -32,7 +34,7 @@ ms.locfileid: "85288971"
 \<Project>
 \<ItemGroup>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ItemGroup Condition="'String A' == 'String B'"
@@ -55,13 +57,13 @@ ms.locfileid: "85288971"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[Item](../msbuild/item-element-msbuild.md)|定義建置程序的輸入。 `ItemGroup` 中可能有零或多個 `Item` 項目。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
 | [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
 | [Target](../msbuild/target-element-msbuild.md) | 從 .NET Framework 3.5 開始，`ItemGroup` 項目可以出現在 `Target` 項目內部。 如需詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。 |
@@ -93,7 +95,7 @@ ItemGroups 可以使用屬性來套用條件 `Condition` 。 在此情況下，�
 
 在 `Label` 某些組建系統中，屬性是用來控制組建行為的方式。 您只能在宣告中使用它，以建立更容易理解的 MSBuild 腳本，或做為控制設定以影響組建動作。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [項目](../msbuild/msbuild-items.md)

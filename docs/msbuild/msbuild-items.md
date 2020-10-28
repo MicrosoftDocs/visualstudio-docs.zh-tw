@@ -1,6 +1,6 @@
 ---
 title: MSBuild 項目 | Microsoft Docs
-description: 使用 ItemGroup 的 MSBuild Include 屬性來指定要包含在組建中的檔案
+description: 瞭解如何使用 ItemGroup 的 MSBuild Include 屬性來指定要包含在組建中的檔案。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 020983182706bd6d9382f4d0bd4885ffa0f86f52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a28823a1a492cb1e8d5f434f98248fecc5d84e47
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247582"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904501"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 
@@ -35,7 +35,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 </ItemGroup>
 ```
 
- 專案 *file2.cs* 不會取代專案 *file1.cs*;相反地，檔案名會附加至專案類型的值清單 `Compile` 。
+ 專案 *file2.cs* 不會取代專案 *file1.cs* ;相反地，檔案名會附加至專案類型的值清單 `Compile` 。
 
  下列 XML 會在一個 `Include` 屬性中宣告這兩個檔案，來建立相同的項目類型。 請注意，檔案名稱是以分號分隔的。
 
@@ -45,7 +45,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 </ItemGroup>
 ```
 
-`Include`屬性（attribute）是相對於專案檔資料夾 $ (MSBuildProjectPath) 的路徑，即使專案是在匯入的檔案中（例如 *.targets*檔案）也是一樣。
+`Include`屬性（attribute）是相對於專案檔資料夾 $ (MSBuildProjectPath) 的路徑，即使專案是在匯入的檔案中（例如 *.targets* 檔案）也是一樣。
 
 ## <a name="create-items-during-execution"></a>執行期間建立項目
 
@@ -97,7 +97,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 </ItemGroup>
 ```
 
- `Exclude` 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 `Include` 屬性所加入的項目 (Item)。 下列範例不會排除 *Form1.cs*檔案，這是在先前的 item 專案中加入的。
+ `Exclude` 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 `Include` 屬性所加入的項目 (Item)。 下列範例不會排除 *Form1.cs* 檔案，這是在先前的 item 專案中加入的。
 
 ```xml
 <Compile Include="*.cs" />
@@ -150,7 +150,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 
 ### <a name="transform-item-types-by-using-metadata"></a><a name="BKMK_Transforming"></a> 使用中繼資料轉換項目類型
 
- 您可以使用中繼資料，來將項目清單轉換為新的項目清單。 例如，您可以使用運算式，將具有代表 .cpp 檔案之專案的專案類型轉換 `CppFiles` 成 .obj 檔案的對應 *.cpp*清單 *。* `@(CppFiles -> '%(Filename).obj')`
+ 您可以使用中繼資料，來將項目清單轉換為新的項目清單。 例如，您可以使用運算式，將具有代表 .cpp 檔案之專案的專案類型轉換 `CppFiles` 成 .obj 檔案的對應 *.cpp* 清單 *。* `@(CppFiles -> '%(Filename).obj')`
 
  下列程式碼會建立 `CultureResource` 項目類型，其中包含所有具 `Culture` 中繼資料之 `EmbeddedResource` 項目的複本。 `Culture` 中繼資料值會成為新中繼資料 `CultureResource.TargetDirectory` 的值。
 
@@ -593,12 +593,12 @@ Item1: notebook
 -->
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)
 - [一般 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
-- [Msbuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
 - [如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)
 - [如何：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)
 - [如何：顯示以逗號分隔的專案清單](../msbuild/how-to-display-an-item-list-separated-with-commas.md)

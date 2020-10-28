@@ -1,5 +1,7 @@
 ---
 title: MSBuild 進階概念 | Microsoft Docs
+description: 請參閱文章的連結，說明如何使用 advanced 技術來改善您使用 MSBuild 所執行的組建。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d3267e0c96747a9534f390191e9f8a84effdb8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58974778be615f2b0455f5b65a1c392035265425
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289283"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903472"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 進階概念
 
@@ -32,7 +34,7 @@ ms.locfileid: "85289283"
 |[多目標](../msbuild/msbuild-multitargeting-overview.md)|說明如何編譯應用程式，讓它在數個版本的 .NET Framework 上都能執行。|
 |[最佳做法](../msbuild/msbuild-best-practices.md)|建議撰寫 MSBuild 指令碼的最佳做法。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [MSBuild 中的記錄](../msbuild/logging-in-msbuild.md)

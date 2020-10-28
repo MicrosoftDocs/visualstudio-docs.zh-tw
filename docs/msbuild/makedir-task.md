@@ -1,5 +1,7 @@
 ---
 title: MakeDir 工作 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 MakeDir 工作來建立目錄，以及在必要時建立任何父目錄。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cc2e97a3024d768861a1967705137415a0d3aa2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 91be7dc2baf7df36d98cd725e8141cfa9cab773f
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633534"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904304"
 ---
 # <a name="makedir-task"></a>MakeDir 工作
 
@@ -61,7 +63,7 @@ ms.locfileid: "77633534"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)
