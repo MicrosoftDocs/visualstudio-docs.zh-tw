@@ -1,5 +1,7 @@
 ---
 title: CombinePath 工作 | Microsoft Docs
+description: 瞭解如何使用 MSBuild CombinePath 工作，將指定的路徑結合成單一路徑。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7e6a79198ad54d3432f30fe9b57b3133a94165e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc33c3a413d788bd9a5a30a7db69c4c7766a3392
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288958"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796611"
 ---
 # <a name="combinepath-task"></a>CombinePath 工作
 
@@ -62,12 +64,12 @@ ms.locfileid: "85288958"
   </Target>
 ```
 
-唯一允許為清單的屬性 `CombinePath` 是 `Paths` ，在此情況下，輸出也是清單。 因此，如果 `$(PublishRoot)` 是*C:\Site1 \\ *，而且 `$(ReleaseDirectory)` 是*Release \\ *，而且 `@(LangDirectories)` 是*en-us \; fr \\ *，則這個範例會建立資料夾：
+唯一允許為清單的屬性 `CombinePath` 是 `Paths` ，在此情況下，輸出也是清單。 因此，如果 `$(PublishRoot)` 是 *C:\Site1 \\* ，而且 `$(ReleaseDirectory)` 是 *Release \\* ，而且 `@(LangDirectories)` 是 *en-us \; fr \\* ，則這個範例會建立資料夾：
 
 - C:\Site1\Release\en-us\
 - C:\Site1\Release\fr-fr\
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

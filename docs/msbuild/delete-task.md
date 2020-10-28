@@ -1,5 +1,7 @@
 ---
 title: Delete 工作 | Microsoft Docs
+description: 深入瞭解使用 MSBuild 刪除工作來刪除指定檔案的參數和考慮。
+ms.custom: SEO-VS-2020
 ms.date: 06/11/2020
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eddb9804378a4c32de9d1b68f952bc715f32ffd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41d5312434f87d75db80095ff01734cd37894a94
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288906"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796481"
 ---
 # <a name="delete-task"></a>Delete 工作
 
@@ -37,7 +39,7 @@ ms.locfileid: "85288906"
 |---------------|-----------------|
 |`DeletedFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定已成功刪除的檔案。|
 |`Files`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要刪除的檔案。|
-|`TreatErrorsAsWarnings`|選擇性的 `Boolean` 參數<br /><br /> 如果是 `true`，即會將錯誤記錄為警告。 預設值是 `false`。|
+|`TreatErrorsAsWarnings`|選擇性的 `Boolean` 參數<br /><br /> 如果是 `true`，即會將錯誤記錄為警告。 預設值為 `false`。|
 
 ## <a name="remarks"></a>備註
 
@@ -48,7 +50,7 @@ ms.locfileid: "85288906"
 
 ## <a name="example"></a>範例
 
-下列範例會在您建立目標時刪除檔案*MyApp。* `DeleteDebugSymbolFile`
+下列範例會在您建立目標時刪除檔案 *MyApp。* `DeleteDebugSymbolFile`
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -99,7 +101,7 @@ ms.locfileid: "85288906"
 
 一般來說，在撰寫組建腳本時，請考慮您的刪除是否在邏輯上是作業的一部分 `Clean` 。 如果您需要將某些檔案設定為一般作業的一部分 `Clean` ，您可以將它們新增至 `@(FileWrites)` 清單，然後在下一步將其刪除 `Clean` 。 如果需要更多的自訂處理，請定義目標，並指定要執行它，方法是設定屬性 `BeforeTargets="Clean"` 或 `AfterTargets="Clean"` ，或是定義或目標的自訂版本 `BeforeClean` `AfterClean` 。 請參閱 [自訂您的組建](customize-your-build.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [RemoveDir 工作](removedir-task.md)
 - [工作](../msbuild/msbuild-tasks.md)

@@ -1,5 +1,7 @@
 ---
 title: 自訂組建 | Microsoft Docs
+description: 深入瞭解您可以用來自訂使用標準組建程式之 MSBuild 專案的數個擴充性勾點。
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c52c6b584db94ff3cbe8dc041c00ebe969c9faf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 708b6bc57b53ab2c52f9e8fda51db5b5c60225f3
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288932"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796520"
 ---
 # <a name="customize-your-build"></a>自訂組建
 
-使用標準建置程序 (匯入 Microsoft.Common.props** 和 Microsoft.Common.targets**) 的 MSBuild 專案有幾個擴充性攔截程序，可以用來自訂您的建置程序。
+使用標準建置程序 (匯入 Microsoft.Common.props  和 Microsoft.Common.targets  ) 的 MSBuild 專案有幾個擴充性攔截程序，可以用來自訂您的建置程序。
 
 ## <a name="add-arguments-to-command-line-msbuild-invocations-for-your-project"></a>將引數新增至專案的命令列 MSBuild 引動過程
 
@@ -30,7 +32,7 @@ ms.locfileid: "85288932"
 
 在 MSBuild 第 15 版之前，如果您想要將新的自訂屬性提供給方案中的專案，則必須手動將該屬性的參考新增至方案中的每個專案檔。 或者，您必須在 *.props* 檔中定義屬性，然後在方案中的每個專案中明確匯入 *.props* 檔案，還有其他事項。
 
-不過，您現在可以使用一個步驟將新的屬性新增至每個專案，方法是將它定義在包含原始檔的根資料夾內稱為 *Directory.Build.props* 的單一檔案中。 當 MSBuild 執行時， *.props*會在目錄結構中搜尋目錄 *。 .props*檔案* (和*檔案會*尋找) 的目錄。* 如果找到，則會匯入屬性。 *.Props* 是使用者定義的檔案，可提供目錄下專案的自訂。
+不過，您現在可以使用一個步驟將新的屬性新增至每個專案，方法是將它定義在包含原始檔的根資料夾內稱為 *Directory.Build.props* 的單一檔案中。 當 MSBuild 執行時， *.props* 會在目錄結構中搜尋目錄 *。 .props* 檔案 *(和* 檔案會 *尋找) 的目錄。* 如果找到，則會匯入屬性。 *.Props* 是使用者定義的檔案，可提供目錄下專案的自訂。
 
 > [!NOTE]
 > 以 Linux 為基礎的檔案系統會區分大小寫。 請確定 Directory.Build.props 檔案名稱的大小寫完全相符，否則在建置過程中將不會偵測到。
@@ -41,7 +43,7 @@ ms.locfileid: "85288932"
 
 例如，如果您想要讓所有專案存取新的 Roslyn **/deterministic** 功能 (透過 `$(Deterministic)` 屬性公開於 Roslyn `CoreCompile` 目標中)，則可以執行下列動作。
 
-1. 在存放庫根目錄中建立名為 *.props*的新檔案。
+1. 在存放庫根目錄中建立名為 *.props* 的新檔案。
 2. 將下列 XML 新增至檔案。
 
    ```xml
@@ -56,7 +58,7 @@ ms.locfileid: "85288932"
 
 ### <a name="search-scope"></a>搜尋範圍
 
-搜尋 *Directory.Build.props* 檔案時，MSBuild 會從專案位置 (`$(MSBuildProjectFullPath)`) 往上逐步瀏覽目錄結構，並在找到 *Directory.Build.props* 檔案之後停止。 例如，如果您的 `$(MSBuildProjectFullPath)` 是 *c:\users\username\code\test\case1*，則 MSBuild 會在該處開始搜尋，然後往上搜尋目錄結構，直到找到下列目錄結構中的 *Directory.Build.props* 檔案。
+搜尋 *Directory.Build.props* 檔案時，MSBuild 會從專案位置 (`$(MSBuildProjectFullPath)`) 往上逐步瀏覽目錄結構，並在找到 *Directory.Build.props* 檔案之後停止。 例如，如果您的 `$(MSBuildProjectFullPath)` 是 *c:\users\username\code\test\case1* ，則 MSBuild 會在該處開始搜尋，然後往上搜尋目錄結構，直到找到下列目錄結構中的 *Directory.Build.props* 檔案。
 
 ```
 c:\users\username\code\test\case1
@@ -67,15 +69,15 @@ c:\users
 c:\
 ```
 
-方案檔的位置與 *.props*無關。
+方案檔的位置與 *.props* 無關。
 
 ### <a name="import-order"></a>匯入順序
 
-在 *Microsoft.Common.props* 中，*Directory.Build.props* 很早就會被匯入，因此它無法使用較晚才定義的屬性。 因此，請避免參考尚未定義的屬性 (將會評估為空的)。
+在 *Microsoft.Common.props* 中， *Directory.Build.props* 很早就會被匯入，因此它無法使用較晚才定義的屬性。 因此，請避免參考尚未定義的屬性 (將會評估為空的)。
 
 在 *.props* 中設定的屬性可以在專案檔或匯入檔案中的其他位置覆寫，因此您應該將 *.props* 中的設定視為指定專案的預設值。
 
-從 NuGet 套件匯入 *.targets*檔案之後，將會從*Microsoft*匯入*目錄。* 因此，它可以覆寫大部分組建邏輯中所定義的屬性和目標，或設定所有專案的屬性，不論個別專案的設定為何。
+從 NuGet 套件匯入 *.targets* 檔案之後，將會從 *Microsoft* 匯入 *目錄。* 因此，它可以覆寫大部分組建邏輯中所定義的屬性和目標，或設定所有專案的屬性，不論個別專案的設定為何。
 
 當您需要針對覆寫任何先前設定的個別專案設定屬性或定義目標時，請將該邏輯放在專案檔中，然後再進行最後的匯入。 若要在 SDK 樣式專案中這麼做，您必須先將 SDK 樣式屬性取代為對等的匯入。 請參閱 [如何使用 MSBuild 專案 sdk](how-to-use-project-sdk.md)。
 
@@ -100,20 +102,20 @@ c:\
     \Project2Tests
 ```
 
-使用者可能需要所有專案 *(1)* 的通用屬性、*src* 專案 *(2-src)* 的通用屬性和 *test* 專案 *(2-test)* 的通用屬性。
+使用者可能需要所有專案 *(1)* 的通用屬性、 *src* 專案 *(2-src)* 的通用屬性和 *test* 專案 *(2-test)* 的通用屬性。
 
-若要讓 MSBuild 正確合併「內部」檔案 (*2-src* 和 *2-test*) 與「外部」檔案 (*1*)，您必須注意，一旦 MSBuild 找到 *Directory.Build.props* 檔案，就會停止進一步掃描。 若要繼續掃描並合併至外部檔案，請將此程式碼放入這兩個內部檔案中：
+若要讓 MSBuild 正確合併「內部」檔案 ( *2-src* 和 *2-test* ) 與「外部」檔案 ( *1* )，您必須注意，一旦 MSBuild 找到 *Directory.Build.props* 檔案，就會停止進一步掃描。 若要繼續掃描並合併至外部檔案，請將此程式碼放入這兩個內部檔案中：
 
 `<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />`
 
 MSBuild 的一般方法摘要如下：
 
-- 針對任何指定的專案，MSBuild 會在方案結構中向上尋找第一個 *Directory.Build.props*，再將它與預設值合併，然後停止進一步掃描
+- 針對任何指定的專案，MSBuild 會在方案結構中向上尋找第一個 *Directory.Build.props* ，再將它與預設值合併，然後停止進一步掃描
 - 如果您想要尋找併合並多個層級，則 [`<Import...>`](../msbuild/property-functions.md#msbuild-getpathoffileabove) (上面顯示) 「內部」檔案中的「外部」檔案
 - 如果「外部」檔案本身不會在其上匯入任何項目，掃描就會到此停止
 - 若要控制掃描/合併程序，請使用 `$(DirectoryBuildPropsPath)` 和 `$(ImportDirectoryBuildProps)`
 
-或更簡單的做法：第一個不會匯入任何項目的 *Directory.Build.props*，則為 MSBuild 停止的位置。
+或更簡單的做法：第一個不會匯入任何項目的 *Directory.Build.props* ，則為 MSBuild 停止的位置。
 
 ### <a name="choose-between-adding-properties-to-a-props-or-targets-file"></a>選擇將屬性加入 .props 或是 .targets 檔案
 
@@ -147,7 +149,7 @@ MSBuild 需相依於匯入順序，且屬性的最後一個定義 (或是 `Using
 
 ## <a name="msbuildprojectextensionspath"></a>MSBuildProjectExtensionsPath
 
-根據預設，*Microsoft.Common.props* 會匯入 `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props`，而* Microsoft.Common.targets* 會匯入 `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`。 `MSBuildProjectExtensionsPath` 的預設值是 `$(BaseIntermediateOutputPath)` (`obj/`)。 NuGet 使用此機制來參考套件所傳遞的組建邏輯；亦即，在還原時，它會建立參考套件內容的 `{project}.nuget.g.props` 檔案。
+根據預設， *Microsoft.Common.props* 會匯入 `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props`，而 *Microsoft.Common.targets* 會匯入 `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`。 `MSBuildProjectExtensionsPath` 的預設值是 `$(BaseIntermediateOutputPath)` (`obj/`)。 NuGet 使用此機制來參考套件所傳遞的組建邏輯；亦即，在還原時，它會建立參考套件內容的 `{project}.nuget.g.props` 檔案。
 
 您可以將 *Directory.Build.props* 中的 `ImportProjectExtensionProps` 屬性設定為 `false`，或在匯入 *Microsoft.Common.props* 之前，停用此擴充性機制。
 
@@ -177,16 +179,16 @@ $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.t
 
 。 此慣例可讓已安裝的 SDK 擴增常見專案類型的組建邏輯。
 
-會在 `$(MSBuildUserExtensionsPath)` 中搜尋相同的目錄結構，這是每位使用者的資料夾 *%LOCALAPPDATA%\Microsoft\MSBuild*。 放置在該資料夾中的檔案，會針對該使用者認證下執行的對應專案類型的所有組建進行匯入。 使用 `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}` 模式設定在匯入檔案後指定的屬性，即可停用使用者延伸模組。 例如，將 `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` 設定為 `false` 可防止匯入 `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`。
+會在 `$(MSBuildUserExtensionsPath)` 中搜尋相同的目錄結構，這是每位使用者的資料夾 *%LOCALAPPDATA%\Microsoft\MSBuild* 。 放置在該資料夾中的檔案，會針對該使用者認證下執行的對應專案類型的所有組建進行匯入。 使用 `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}` 模式設定在匯入檔案後指定的屬性，即可停用使用者延伸模組。 例如，將 `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` 設定為 `false` 可防止匯入 `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`。
 
 ## <a name="customize-the-solution-build"></a>自訂方案組建
 
 > [!IMPORTANT]
-> 以這種方式自訂方案組建只適用於使用 *MSBuild.exe* 的命令列建置。 它**不**適用於 Visual Studio 內的組建。 基於這個理由，不建議您在解決方案層級放置自訂。 自訂方案中所有專案的較佳替代方式，就是使用 [方案] 資料夾中的 *.props* 和 *目錄. 組建* 檔案，如本文中的其他內容所述。
+> 以這種方式自訂方案組建只適用於使用 *MSBuild.exe* 的命令列建置。 它 **不** 適用於 Visual Studio 內的組建。 基於這個理由，不建議您在解決方案層級放置自訂。 自訂方案中所有專案的較佳替代方式，就是使用 [方案] 資料夾中的 *.props* 和 *目錄. 組建* 檔案，如本文中的其他內容所述。
 
 MSBuild 在建置方案檔時，會先在內部將其轉換成專案檔，再建置該檔案。 產生的專案檔會在定義任何目標之前匯入 `before.{solutionname}.sln.targets`，並在匯入目標之後匯入 `after.{solutionname}.sln.targets`，包括安裝到 `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` 和 `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter` 目錄的目標。
 
-例如，您可以在建置 *MyCustomizedSolution.sln* 之後，定義新的目標來寫入自訂記錄訊息，方法是在名為 after.MyCustomizedSolution.sln.targets** 的相同目錄中建立一個檔案，其中包含：
+例如，您可以在建置  的相同目錄中建立一個檔案，其中包含：
 
 ```xml
 <Project>
@@ -202,7 +204,7 @@ MSBuild 在建置方案檔時，會先在內部將其轉換成專案檔，再建
 
 維護組建伺服器時，您可能需要為伺服器上的所有組建全域設定 MSBuild 設定。  基本上，您可以 *修改通用的* *.props* 檔案，但有更好的方法。」 您可以影響特定專案類型的所有組建 (例如，所有的 c # 專案) 使用特定的 MSBuild 屬性，以及新增特定的自訂 `.targets` 和檔案 `.props` 。
 
-若要影響由 MSBuild 或 Visual Studio 的安裝所控管的所有 c # 或 Visual Basic 組建，建立*自訂的檔案：在*microsoft 之前或*自訂*之前，將在*microsoft*之前或之後執行的目標。例如，在 microsoft 之前或之後、 *.props*或自訂之前，將會在 .props 之前或之後進行處理。 *.props*的屬性會在*Microsoft.Common.props*之前或之後處理。
+若要影響由 MSBuild 或 Visual Studio 的安裝所控管的所有 c # 或 Visual Basic 組建，建立 *自訂的檔案：在* microsoft 之前或 *自訂* 之前，將在 *microsoft* 之前或之後執行的目標。例如，在 microsoft 之前或之後、 *.props* 或自訂之前，將會在 .props 之前或之後進行處理。 *.props* 的屬性會在 *Microsoft.Common.props* 之前或之後處理。
 
 您可以使用下列 MSBuild 屬性來指定這些檔案的位置：
 
@@ -234,9 +236,9 @@ msbuild /p:CustomBeforeMicrosoftCommonTargets="C:\build\config\Custom.Before.Mic
 
 ## <a name="customize-c-builds"></a>自訂 c + + 組建
 
-針對 c + + 專案，先前提及的自訂 *.targets* 和 *. .props* 檔案無法以覆寫預設設定的相同方式來使用。 *目錄. 組建。 .props* 是由 *.props*匯入，但 `Microsoft.Cpp.Default.props` 大部分的預設值都是在 *.props* 中定義，而針對某些屬性，則無法使用「如果尚未定義」條件，因為已定義了屬性，但在中定義的特定專案屬性必須有不同的預設值，但 `PropertyGroup` `Label="Configuration"` (參閱 [.vcxproj 和 .props 檔案結構](/cpp/build/reference/vcxproj-file-structure)) 。
+針對 c + + 專案，先前提及的自訂 *.targets* 和 *. .props* 檔案無法以覆寫預設設定的相同方式來使用。 *目錄. 組建。 .props* 是由 *.props* 匯入，但 `Microsoft.Cpp.Default.props` 大部分的預設值都是在 *.props* 中定義，而針對某些屬性，則無法使用「如果尚未定義」條件，因為已定義了屬性，但在中定義的特定專案屬性必須有不同的預設值，但 `PropertyGroup` `Label="Configuration"` (參閱 [.vcxproj 和 .props 檔案結構](/cpp/build/reference/vcxproj-file-structure)) 。
 
-但是，您可以使用下列屬性來指定要在 *.props*檔案 () s，以在*Microsoft \* .cpp*之前/之後自動匯入。檔案：
+但是，您可以使用下列屬性來指定要在 *.props* 檔案 () s，以在 *Microsoft \* .cpp* 之前/之後自動匯入。檔案：
 
 - ForceImportAfterCppDefaultProps
 - ForceImportBeforeCppProps
@@ -244,18 +246,18 @@ msbuild /p:CustomBeforeMicrosoftCommonTargets="C:\build\config\Custom.Before.Mic
 - ForceImportBeforeCppTargets
 - ForceImportAfterCppTargets
 
-若要自訂所有 c + + 組建的預設屬性值，請建立另一個 *.props* 檔案， (說， *myprops.props. .Props*) ，然後在指向它的情況下定義 `ForceImportAfterCppProps` 屬性 `Directory.Build.props` ：
+若要自訂所有 c + + 組建的預設屬性值，請建立另一個 *.props* 檔案， (說， *myprops.props. .Props* ) ，然後在指向它的情況下定義 `ForceImportAfterCppProps` 屬性 `Directory.Build.props` ：
 
 <PropertyGroup><ForceImportAfterCppProps>$ (MsbuildThisFileDirectory) \myprops.props<ForceImportAfterCppProps>
 </PropertyGroup>
 
-*Myprops.props* 會在 *.props*的最一端自動匯入 .props。
+*Myprops.props* 會在 *.props* 的最一端自動匯入 .props。
 
 ## <a name="customize-all-c-builds"></a>自訂所有 c + + 組建
 
 不建議自訂 Visual Studio 安裝，因為不容易追蹤這類自訂專案，但是如果您要擴充 Visual Studio 以自訂特定平臺的 c + + 組建，您可以建立 `.targets` 每個平臺的檔案，並將它們放在適用于這些平臺的適當匯入資料夾中，作為 Visual Studio 擴充功能的一部分。
 
-`.targets`Win32 平臺的檔案（如下所*Microsoft.Cpp.Win32.targets*示）包含下列 `Import` 元素：
+`.targets`Win32 平臺的檔案（如下所 *Microsoft.Cpp.Win32.targets* 示）包含下列 `Import` 元素：
 
 ```xml
 <Import Project="$(VCTargetsPath)\Platforms\Win32\ImportBefore\*.targets"
@@ -287,7 +289,7 @@ msbuild /p:ForceImportBeforeCppTargets="C:\build\config\Custom.Before.Microsoft.
 
 針對全域設定 (會影響組建伺服器上平臺的所有 c + + 組建) ，有兩種方法。 首先，您可以使用一律設定的系統內容變數來設定這些屬性。 這是可行的，因為 MSBuild 一律會讀取環境並建立 (或覆寫所有環境變數) 屬性。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 

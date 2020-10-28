@@ -1,5 +1,7 @@
 ---
 title: Choose 項目 (MSBuild) | Microsoft Docs
+description: 使用 MSBuild 選擇專案來評估子專案，並選取一組要評估的 ItemGroup 或 PropertyGroup 元素。
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4f699b4ffc9372af0c803d094390544932d652b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ad83bc215c70389dbb9383e1cb9562b99be7106
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634470"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796624"
 ---
 # <a name="choose-element-msbuild"></a>Choose 項目 (MSBuild)
 
@@ -37,7 +39,7 @@ ms.locfileid: "77634470"
  \<Choose>
 ...
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Choose>
@@ -56,14 +58,14 @@ ms.locfileid: "77634470"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[否則](../msbuild/otherwise-element-msbuild.md)|選擇性項目。<br /><br /> 指定只有當所有 `When` 項目的條件評估為 `false` 時，才需評估的程式碼 `PropertyGroup` 和 `ItemGroup` 項目的區塊。 `Choose` 項目中可能有零或一個 `Otherwise` 項目，而且它必須是最後一個項目。|
 |[當](../msbuild/when-element-msbuild.md)|必要元素。<br /><br /> 指定 `Choose` 元素的可能程式碼區塊以選取。 `Choose` 項目中可能有一或多個 `When` 項目。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
 | [否則](../msbuild/otherwise-element-msbuild.md) | 指定如果所有 `When` 項目的條件評估為 `false`，才需執行的程式碼區塊。 |
 | [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
@@ -122,7 +124,7 @@ ms.locfileid: "77634470"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [條件式結構](../msbuild/msbuild-conditional-constructs.md)
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)

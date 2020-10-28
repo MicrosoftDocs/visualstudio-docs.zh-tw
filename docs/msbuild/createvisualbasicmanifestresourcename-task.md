@@ -1,5 +1,7 @@
 ---
 title: CreateVisualBasicManifestResourceName 工作 | Microsoft Docs
+description: 使用 MSBuild CreateVisualBasicManifestResourceName 工作，從給定的 .resx 檔案名或其他資源建立 Visual Basic 樣式的資訊清單名稱。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aa419001d2e890c87873862f0575607b31d22c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba80c4d52491a70a7bb8e294c9dd6ca2c9664ec3
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634288"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796728"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName 工作
 
@@ -41,11 +43,11 @@ ms.locfileid: "77634288"
 
 ## <a name="remarks"></a>備註
 
- [CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md)工作會決定要指派給指定 *.resx*或其他資源檔的適當資訊清單資源名稱。 此工作會為資源檔提供邏輯名稱，然後將它附加到輸出參數做為中繼資料。
+ [CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md)工作會決定要指派給指定 *.resx* 或其他資源檔的適當資訊清單資源名稱。 此工作會為資源檔提供邏輯名稱，然後將它附加到輸出參數做為中繼資料。
 
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些額外參數的清單及其描述，請參閱 [TaskExtension 基類（base class](../msbuild/taskextension-base-class.md)）。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

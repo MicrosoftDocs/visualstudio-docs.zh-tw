@@ -1,6 +1,6 @@
 ---
 title: OpenCV
-description: 針對 opencv/opencv 存放庫使用 devinit 進行自訂的範例。
+description: 使用 devinit 針對 OpenCV 存放庫以 Linux 和 Windows 為目標的自訂範例。
 ms.date: 08/28/2020
 ms.topic: reference
 author: andysterland
@@ -11,26 +11,47 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a1c7f2c78fdae9c70785727cb03c7f8cb1e08cef
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a2f284e1e464ab41391f60c546ce01d418ff377b
+ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005635"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92750123"
 ---
 # <a name="opencv"></a>OpenCV
 
-此範例說明 [OpenCV](https://github.com/opencv/opencv) 自動布建 [GitHub Codespaces] 所需的自訂 https://github.com/features/codespaces) 。
+此範例說明如何自訂 [GitHub Codespaces](https://github.com/features/codespaces) ，以便使用多平臺專案（例如 [opencv/opencv](https://github.com/opencv/opencv)）進行開發。
 
-## <a name="devinitjson"></a>.devinit.json
+下列自訂已套用至派生的 [microsoft/OpenCV](https://github.com/microsoft/opencv) ，並允許以 Windows 和 Ubuntu 為目標。
 
-檔案 [_.devinit.js_](devinit-json.md) 的內容。 此檔案必須位於與 _.devcontainer.js_的相同資料夾中。
+## <a name="customization-with-devcontainerjson-and-devinitjson"></a>使用 devcontainer.js開啟和 devinit.js自訂
+
+`.devcontainer`目錄必須包含下列檔案：
+
+* devcontainer.js開啟
+* devinit.js開啟
+
+### <a name="devcontainerjson"></a>devcontainer.js開啟
+
+以下是檔案 _devcontainer.js_ 的內容。
+
+```json
+{
+  "postCreateCommand": "devinit init"
+}
+```
+
+會 `postCreateCommand` 啟動  [devinit](devinit-and-codespaces.md) 工具，此工具會使用 _devinit.json_ 。
+
+### <a name="devinitjson"></a>devinit.js開啟
+
+以下是檔案 [_devinit.js_](devinit-json.md) 的內容。
 
 ```json
 {
     "run": [
         {
-            "comments": "Example that will install Ubuntu 20.04 using WSL2, and configure it with various packages.",
+            "comments": "Example that will install Ubuntu 20.04 using WSL2, and configure it with various packages useful for C++ development.",
             "tool": "wsl-install",
             "input": "https://aka.ms/wslubuntu2004",
             "additionalOptions": "--wsl-version 2 --post-create-command 'apt-get update && apt-get install g++ gcc g++-9 gcc-9 cmake gdb ninja-build zip rsync -y'"
@@ -39,12 +60,15 @@ ms.locfileid: "91005635"
 }
 ```
 
-## <a name="devcontainerjson"></a>.devcontainer.js開啟
+_上的devinit.js_ 是 [devinit](devinit-and-codespaces.md)工具所使用的檔案，而且它必須在 _devcontainer.js_ 的相同目錄中。
 
-存放庫根目錄中檔案 _.devcontainer.js_ 的內容。
+在此範例中， [wsl 安裝](tool-wsl-install.md) 工具是用來建立執行 Ubuntu 20.04 的 wsl 實例，並使用基本的 c + + 開發工具進行布建。
+## <a name="targeting-windows-or-linux"></a>以 Windows 或 Linux 為目標
 
-```json
-{
-  "postCreateCommand": "devinit init"
-}
-```
+以 Windows 為目標的預設組建設定一律會建立為 `x64-Debug` 。
+
+藉由新增上述檔案，在建立 Codespace 實例時，Visual Studio 會在 [連線管理員](/cpp/linux/connect-to-your-remote-linux-computer)中布建新的 SSH 連線，並在設定選擇器中建立新的設定，並透過 SSH 連線以 Ubuntu 實例為目標。
+
+![以 Ubuntu 為目標的設定](media/wsl-ssh-linux-configuration.png).
+
+藉由選取以 WSL 為目標的醒目提示設定，就可以建立和偵測 OpenCV 的組建目標。

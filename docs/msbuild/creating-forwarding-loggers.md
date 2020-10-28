@@ -1,5 +1,7 @@
 ---
 title: 建立轉送記錄器 | Microsoft Docs
+description: 藉由讓您在建立專案時選擇要監視的事件，以建立 MSBuild 轉送記錄器來改善記錄效率。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 852b783129f130316de88580020e0139925ffb37
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25f8a876ddd4c5c222b608dcea51f98816679181
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634301"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796572"
 ---
 # <a name="create-forwarding-loggers"></a>建立轉送記錄器
 
@@ -36,13 +38,13 @@ ms.locfileid: "77634301"
 
 ## <a name="specify-a-forwarding-logger"></a>指定轉送記錄器
 
- 當轉送記錄器已編譯成元件之後，您必須告知 MSBuild 在組建期間使用它。 若要這樣做，請使用 `-FileLogger` 、 `-FileLoggerParameters` 和 `-DistributedFileLogger` 參數搭配 *MSBuild.exe*。 此 `-FileLogger` 參數會告知 *MSBuild.exe* 是否已直接附加記錄器。 `-DistributedFileLogger` 參數表示每個節點都有一個記錄檔。 若要設定轉送記錄器的參數，請使用 `-FileLoggerParameters` 參數。 如需這些參數和其他 *MSBuild.exe* 參數的詳細資訊，請參閱 [命令列參考](../msbuild/msbuild-command-line-reference.md)。
+ 當轉送記錄器已編譯成元件之後，您必須告知 MSBuild 在組建期間使用它。 若要這樣做，請使用 `-FileLogger` 、 `-FileLoggerParameters` 和 `-DistributedFileLogger` 參數搭配 *MSBuild.exe* 。 此 `-FileLogger` 參數會告知 *MSBuild.exe* 是否已直接附加記錄器。 `-DistributedFileLogger` 參數表示每個節點都有一個記錄檔。 若要設定轉送記錄器的參數，請使用 `-FileLoggerParameters` 參數。 如需這些參數和其他 *MSBuild.exe* 參數的詳細資訊，請參閱 [命令列參考](../msbuild/msbuild-command-line-reference.md)。
 
 ## <a name="multi-processor-aware-loggers"></a>能夠辨識多處理器的記錄器
 
  當您在多處理器系統建置專案時，來自每個處理器的建置訊息不會自動按一致順序交錯排列。 因此，您必須使用附加至每個訊息的 <xref:Microsoft.Build.Framework.BuildEventContext> 類別，以建立訊息群組優先順序。 如需多處理器建立的詳細資訊，請參閱 [在多處理器環境中記錄](../msbuild/logging-in-a-multi-processor-environment.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [組建記錄器](../msbuild/build-loggers.md)

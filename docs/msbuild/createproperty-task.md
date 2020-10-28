@@ -1,5 +1,7 @@
 ---
 title: CreateProperty 工作 | Microsoft Docs
+description: 使用 MSBuild CreateProperty 工作，以傳入的值填入屬性，允許將值從一個屬性或字串複製到另一個。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 155e8e6b57cc388e8c2981297be8b26ef5444c1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d7dd8d7f5a50998832a8fac6f47bf66e9a6bbe9
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634314"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796183"
 ---
 # <a name="createproperty-task"></a>CreateProperty 工作
 
@@ -68,9 +70,9 @@ ms.locfileid: "77634314"
 </Project>
 ```
 
-執行專案之後，`NewFile` 屬性的值是 *Module1.vb*。
+執行專案之後，`NewFile` 屬性的值是 *Module1.vb* 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

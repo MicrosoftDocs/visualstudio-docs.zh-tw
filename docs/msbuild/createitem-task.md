@@ -1,5 +1,7 @@
 ---
 title: CreateItem 工作 | Microsoft Docs
+description: 使用 MSBuild CreateItem 工作可將輸入專案填入專案集合，允許將專案從一個清單複製到另一個清單。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4364e6c3f637fdf2c3e02a52d3163e5cdd8a5861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed964c618b59bf02086329715c5b0540039eb16a
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634327"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796754"
 ---
 # <a name="createitem-task"></a>CreateItem 工作
 
@@ -51,7 +53,7 @@ ms.locfileid: "77634327"
 
  下列程式碼範例會從項目集合 `MySourceItems` 建立名為 `MySourceItemsWithMetadata` 的新項目集合。 `CreateItem` 工作會使用 `MySourceItems` 項目中的項目來填入新的項目集合。 接著它會將名為 `MyMetadata` 且值為 `Hello` 的其他中繼資料項目 (Entry) 加入至新集合中的每個項目 (Item)。
 
- 執行此工作之後，`MySourceItemsWithMetadata` 項目 (Item) 集合會包含 file1.resx** 和 file2.resx** 項目，這兩者皆擁有 `MyMetadata` 的中繼資料項目 (Entry)。 `MySourceItems` 項目集合會保持不變。
+ 執行此工作之後，`MySourceItemsWithMetadata` 項目 (Item) 集合會包含 file1.resx  和 file2.resx  項目，這兩者皆擁有 `MyMetadata` 的中繼資料項目 (Entry)。 `MySourceItems` 項目集合會保持不變。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -80,7 +82,7 @@ ms.locfileid: "77634327"
 |---------------------|--------------|
 |`MySourceItemsWithMetadata`|*file1* (`MyMetadata="Hello"`) <br /><br /> *file2 (的 .resx* `MyMetadata="Hello"`) |
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)
