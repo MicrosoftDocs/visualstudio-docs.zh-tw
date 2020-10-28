@@ -9,13 +9,13 @@ metadata:
   author: evanwindom
   ms.author: lank
   manager: lank
-  ms.date: 12/04/2019
-  ms.openlocfilehash: 98e3a19b2e06ee08b8e88dfb6ba15c8c8a5e027c
-  ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+  ms.date: 10/09/2020
+  ms.openlocfilehash: 6b62a37b7e8b8bf81c29950d040e597e707c48d0
+  ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/22/2020
-  ms.locfileid: "88801733"
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92750098"
 highlightedContent:
   items:
   - title: Visual Studio 訂閱的新功能
@@ -70,9 +70,9 @@ tools:
   - title: Azure DevOps Services
     imageSrc: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
     url: /azure/devops/
-  - title: Visual Studio Code
-    imageSrc: https://docs.microsoft.com/media/logos/logo_vs-code.svg
-    url: https://code.visualstudio.com/docs
+  - title: GitHub Enterprise
+    imageSrc: ../subscriptions/_img/index-page/GitHub-Mark.svg
+    url: ~/access-github.md
   - title: Visual Studio for Mac
     imageSrc: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
     url: /visualstudio/mac/
