@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: fd0d2b3e112a4bf08481fa8f043f70121d827010
-ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+ms.openlocfilehash: 4f2d5bf573da940c39790d6868a94d588e5efb7b
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92197474"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918165"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>教學課程：擴充簡單的 c # 主控台應用程式
 
@@ -32,33 +32,33 @@ ms.locfileid: "92197474"
 
 真實世界的程式碼牽涉到許多專案在解決方案中一起運作。 現在，讓我們將另一個專案新增至計算機應用程式。 這會是提供一些計算機函數的類別庫。
 
-1. 在 Visual Studio 中，您可以使用最上層的**功能表命令檔**[  >  **加入**  >  **新的專案**] 來加入新的專案，但您也可以用滑鼠右鍵按一下現有的專案名稱， (稱為「專案節點」 ) 然後開啟專案的快捷方式功能表 (或內容功能表) 。 此快捷方式功能表包含許多方法，可將功能新增至您的專案。 因此，以滑鼠右鍵按一下**方案總管**中的專案節點，然後選擇 [**加入**  >  **新專案**]。
+1. 在 Visual Studio 中，您可以使用最上層的 **功能表命令檔** [  >  **加入**  >  **新的專案** ] 來加入新的專案，但您也可以用滑鼠右鍵按一下現有的專案名稱， (稱為「專案節點」 ) 然後開啟專案的快捷方式功能表 (或內容功能表) 。 此快捷方式功能表包含許多方法，可將功能新增至您的專案。 因此，以滑鼠右鍵按一下 **方案總管** 中的專案節點，然後選擇 [ **加入**  >  **新專案** ]。
 
-1. 選擇 c # 專案範本 **類別庫 ( .NET Standard) **。
+1. 選擇 c # 專案範本 **類別庫 ( .NET Standard)** 。
 
    ![類別庫專案範本選取專案的螢幕擷取畫面](media/vs-2019/calculator2-add-project-dark.png)
 
-1. 輸入專案名稱 **CalculatorLibrary**，然後選擇 [ **建立**]。 Visual Studio 會建立新的專案，並將其加入至方案。
+1. 輸入專案名稱 **CalculatorLibrary** ，然後選擇 [ **建立** ]。 Visual Studio 會建立新的專案，並將其加入至方案。
 
    ![已新增 CalculatorLibrary 類別庫專案方案總管的螢幕擷取畫面](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
 
-1. 請重新命名**CalculatorLibrary.cs**檔案，而不是*Class1.cs*。 您可以按一下 **方案總管** 中的名稱來重新命名，或按一下滑鼠右鍵並選擇 [ **重新命名**]，或按 **F2** 鍵。
+1. 請重新命名 **CalculatorLibrary.cs** 檔案，而不是 *Class1.cs* 。 您可以按一下 **方案總管** 中的名稱來重新命名，或按一下滑鼠右鍵並選擇 [ **重新命名** ]，或按 **F2** 鍵。
 
    如果您想要重新命名檔案中的任何參考，可能會被詢問您 `Class1` 。 這並不重要，因為您將會在未來的步驟中取代程式碼。
 
-1. 我們現在必須加入專案參考，讓第一個專案可以使用新類別庫所公開的 Api。  以滑鼠右鍵按一下第一個專案中的 [ **參考** ] 節點，然後選擇 [ **加入專案參考**]。
+1. 我們現在必須加入專案參考，讓第一個專案可以使用新類別庫所公開的 Api。  以滑鼠右鍵按一下第一個專案中的 [ **參考** ] 節點，然後選擇 [ **加入專案參考** ]。
 
    ![[新增專案參考] 功能表項目的螢幕擷取畫面](media/vs-2019/calculator2-add-project-reference-dark.png)
 
-   [參考管理員]**** 對話方塊隨即顯示。 這個對話方塊可讓您加入其他專案的參考，以及您的專案所需的元件和 COM Dll。
+   [參考管理員]  對話方塊隨即顯示。 這個對話方塊可讓您加入其他專案的參考，以及您的專案所需的元件和 COM Dll。
 
    ![[參考管理員] 對話方塊的螢幕擷取畫面](media/vs-2019/calculator2-ref-manager-dark.png)
 
-1. 在 [ **參考管理員** ] 對話方塊中，選取 **CalculatorLibrary** 專案的核取方塊，然後選擇 **[確定]**。  專案參考會出現在**方案總管**的 [**專案**] 節點底下。
+1. 在 [ **參考管理員** ] 對話方塊中，選取 **CalculatorLibrary** 專案的核取方塊，然後選擇 **[確定]** 。  專案參考會出現在 **方案總管** 的 [ **專案** ] 節點底下。
 
    ![專案參考方案總管的螢幕擷取畫面](media/vs-2019/calculator2-solution-explorer-with-project-reference-dark2.png)
 
-1. 在 *Program.cs*中，選取 `Calculator` 類別及其所有程式碼，然後按下 **CTRL + X** 以將它從 Program.cs 剪下。 然後在 **CalculatorLibrary**的 *CalculatorLibrary.cs*中，將程式碼貼到 `CalculatorLibrary` 命名空間中。 然後，讓計算機類別 `public` 在程式庫外部公開。 *CalculatorLibrary.cs*中的程式碼現在應該類似下列程式碼：
+1. 在 *Program.cs* 中，選取 `Calculator` 類別及其所有程式碼，然後按下 **CTRL + X** 以將它從 Program.cs 剪下。 然後在 **CalculatorLibrary** 的 *CalculatorLibrary.cs* 中，將程式碼貼到 `CalculatorLibrary` 命名空間中。 然後，讓計算機類別 `public` 在程式庫外部公開。 *CalculatorLibrary.cs* 中的程式碼現在應該類似下列程式碼：
 
    ```csharp
    using System;
@@ -193,7 +193,7 @@ ms.locfileid: "92197474"
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
    ```
 
-1. 重新執行程式，然後在完成時，以滑鼠右鍵按一下專案節點，然後選擇 [ **在檔案總管中開啟資料夾**]，然後在檔案總管中向下流覽至輸出檔案夾。 它可能是 *bin/Debug/netcoreapp 3.1*，並且開啟了 [ *計算機] 記錄* 檔。
+1. 重新執行程式，然後在完成時，以滑鼠右鍵按一下專案節點，然後選擇 [ **在檔案總管中開啟資料夾** ]，然後在檔案總管中向下流覽至輸出檔案夾。 它可能是 *bin/Debug/netcoreapp 3.1* ，並且開啟了 [ *計算機] 記錄* 檔。
 
     ```output
     Starting Calculator Log
@@ -204,7 +204,7 @@ ms.locfileid: "92197474"
 
 ## <a name="add-a-nuget-package-write-to-a-json-file"></a>新增 NuGet 套件：寫入 JSON 檔案
 
-1. 現在假設我們想要以 JSON 格式輸出作業，這是常用且可攜的格式，可用於儲存物件資料。 若要執行該功能，我們必須參考 Newtonsoft.Js上的 NuGet 套件。 NuGet 套件是發佈 .NET 類別庫的主要工具。 在 **方案總管**中，以滑鼠右鍵按一下 CalculatorLibrary 專案的 [ **參考** ] 節點，然後選擇 [ **管理 NuGet 封裝**]。
+1. 現在假設我們想要以 JSON 格式輸出作業，這是常用且可攜的格式，可用於儲存物件資料。 若要執行該功能，我們必須參考 Newtonsoft.Js上的 NuGet 套件。 NuGet 套件是發佈 .NET 類別庫的主要工具。 在 **方案總管** 中，以滑鼠右鍵按一下 CalculatorLibrary 專案的 [ **參考** ] 節點，然後選擇 [ **管理 NuGet 封裝** ]。
 
    ![在快捷方式功能表上管理 NuGet 套件的螢幕擷取畫面](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
 
@@ -212,13 +212,13 @@ ms.locfileid: "92197474"
 
    ![NuGet 套件管理員的螢幕擷取畫面](media/vs-2019/calculator2-nuget-package-manager-dark.png)
 
-1. 搜尋套件上的 Newtonsoft.Js，然後選擇 [ **安裝**]。
+1. 搜尋套件上的 Newtonsoft.Js，然後選擇 [ **安裝** ]。
 
    ![Newtonsoft NuGet 套件資訊的螢幕擷取畫面](media/vs-2019/calculator2-nuget-newtonsoft-json-dark2.png)
 
-   封裝會下載並加入至您的專案，而新的專案會出現在 **方案總管**的 [參考] 節點中。
+   封裝會下載並加入至您的專案，而新的專案會出現在 **方案總管** 的 [參考] 節點中。
 
-1. 在 *CalculatorLibrary.cs*的開頭加入 System.IO 和 Newtonsoft.Json 封裝的 using 指示詞。
+1. 在 *CalculatorLibrary.cs* 的開頭加入 System.IO 和 Newtonsoft.Json 封裝的 using 指示詞。
 
    ```csharp
    using Newtonsoft.Json;
@@ -299,7 +299,7 @@ ms.locfileid: "92197474"
     }
    ```
 
-1. 在 *Program.cs*中，新增在結尾處完成的呼叫。
+1. 在 *Program.cs* 中，新增在結尾處完成的呼叫。
 
    ```csharp
             // And call to close the JSON writer before return
@@ -329,7 +329,111 @@ ms.locfileid: "92197474"
    }
    ```
 
-## <a name="next-steps"></a>後續步驟
+## <a name="debug-set-and-hit-a-breakpoint"></a>Debug：設定和點擊中斷點
+
+Visual Studio 偵錯工具是一項功能強大的工具，可讓您逐步執行程式碼，以找出發生程式設計錯誤的確切點。 然後，您會瞭解您需要在程式碼中進行哪些修正。 Visual Studio 可讓您進行暫時性變更，讓您可以繼續執行程式。
+
+1. 在 [ *Program.cs* ] 中，按一下下列程式碼左邊的邊界 (或開啟快捷方式功能表，然後選擇 [ **中斷點**  >  **插入中斷點** ]，或按下 **F9** ) ：
+
+   ```csharp
+   result = calculator.DoOperation(cleanNum1, cleanNum2, op);
+   ```
+
+   出現的紅色圓圈表示中斷點。 您可以使用中斷點來暫停您的應用程式並檢查程式碼。 您可以在任何可執行檔程式程式碼上設定中斷點。
+
+   ![設定中斷點的螢幕擷取畫面](media/vs-2019/calculator-2-debug-set-breakpoint.png)
+
+1. 建置並執行應用程式。
+
+1. 在正在執行的應用程式中，輸入一些計算值：
+
+   - 針對第一個數位，輸入 **8** 並輸入。
+   - 針對第二個數字，輸入0並輸入 **0** 。
+   - 針對操作員，讓我們有一些有趣的東西，輸入 **d** ，然後輸入它。
+
+   應用程式會暫停您建立中斷點的位置，這是由左邊的黃色指標和反白顯示的程式碼所表示。 反白顯示的程式碼尚未執行。
+
+   ![點擊中斷點的螢幕擷取畫面](media/vs-2019/calculator-2-debug-hit-breakpoint.png)
+
+   現在，在應用程式暫停的情況下，您可以檢查您的應用程式狀態。
+
+## <a name="debug-view-variables"></a>Debug： view 變數
+
+1. 在反白顯示的程式碼中，將滑鼠停留在變數上，例如 `cleanNum1` 和 `op` 。 您會看到這些變數目前的值 (`8` 和 `d` ，分別) 出現在資料提示中。
+
+   ![查看資料提示的螢幕擷取畫面](media/vs-2019/calculator-2-debug-view-datatip.png)
+
+   在進行偵錯工具時，檢查變數是否持有您預期的值，通常是修正問題的關鍵。
+
+2. 在下方窗格中，查看 [ **區域變數** ] 視窗。  (如果已關閉，請選擇 [ **Debug**  >  **Windows**  >  **區域變數** ] 來開啟它。 ) 
+
+   在 [區域變數] 視窗中，您會看到目前在範圍中的每個變數，以及其值和類型。
+
+   ![[區域變數] 視窗的螢幕擷取畫面](media/vs-2019/calculator-2-debug-locals-window.png)
+
+3. 查看 **[自動** 變數] 視窗。
+
+   [自動變數] 視窗類似于 [ **區域變數** ] 視窗，但它會顯示在您的應用程式暫停的目前程式程式碼前面和之後的變數。
+
+   接下來，您將在偵錯工具中一次執行一個語句的程式碼，這稱為「 *逐步執行* 」。
+
+## <a name="debug-step-through-code"></a>Debug：逐步執行程式碼
+
+1. 按 **F11** (或 **Debug**  >  **逐步** 執行) 。
+
+   使用 [逐步執行] 命令，應用程式會執行目前的語句，並前進到下一個可執行檔語句， (通常是下一行程式碼) 。 左邊的黃色指標一律會指出目前的語句。
+
+   ![逐步執行命令的螢幕擷取畫面](media/vs-2019/calculator-2-debug-step-into.png)
+
+   您只是逐步執行 `DoOperation` 類別中的方法 `Calculator` 。
+
+1. 若要取得程式流程的階層式查看，請查看 [ **呼叫堆疊** ] 視窗。  (如果已關閉，請選擇 [ **Debug**  >  **Windows**  >  **呼叫堆疊** ]。 ) 
+
+   ![呼叫堆疊的螢幕擷取畫面](media/vs-2019/calculator-2-debug-call-stack.png)
+
+   這個視圖會顯示目前的 `Calculator.DoOperation` 方法（以黃色指標表示），而第二個數據列會顯示從 `Main` *Program.cs* 中的方法呼叫它的函式。 [呼叫堆疊]  視窗會顯示方法和函式的呼叫順序。 此外，它還可讓您從快捷方式功能表存取許多偵錯工具功能，例如 [ **移至原始程式碼** ]。
+
+1. 在 **F10** **Debug**  >  **Step Over** 語句上暫停應用程式之前，請按下 F10 (或「偵錯工具不) 多次」 `switch` 。
+
+   ```csharp
+   switch (op)
+   {
+   ```
+
+   [不進入函式] 命令類似于 [逐步執行] 命令，不同的是，如果目前的語句呼叫函式，偵錯工具會在呼叫的函式中執行程式碼，而不會暫停執行，直到函數傳回為止。 如果您對特定函式不感興趣，[不進入函式] 可以更快速地流覽程式碼。
+
+1. 再按一次 **F10** ，讓應用程式在下列程式程式碼上暫停。
+
+   ```csharp
+   if (num2 != 0)
+   {
+   ```
+
+   這段程式碼會檢查零除的情況。 如果應用程式繼續進行，則會擲回一般例外狀況 () 的錯誤，但假設您將此視為錯誤，並想要執行其他動作，例如在主控台中查看實際傳回的值。 其中一個選項是使用稱為「編輯後繼續」的偵錯工具功能來變更程式碼，然後繼續進行偵錯工具。 不過，我們將會為您示範不同的訣竅來暫時修改執行流程。
+
+## <a name="debug-test-a-temporary-change"></a>Debug：測試暫時變更
+
+1. 選取目前在語句上暫停的黃色指標， `if (num2 != 0)` 並將它拖曳至下列語句。
+
+   ```csharp
+   result = num1 / num2;
+   ```
+
+   如此一來，應用程式就會完全略過 `if` 語句，讓您可以看到當您零除時，會發生什麼事。
+
+1. 按 **F10** 執行程式程式碼。
+
+1. 將滑鼠停留在 `result` 變數上，您會看到它儲存的值 `Infinity` 。
+
+   在 c # 中， `Infinity` 是以零除時的結果。
+
+1. 按 **F5** (或， **Debug**  >  **繼續** 進行) 的調試。
+
+   無限大符號會在主控台中顯示為數學運算的結果。
+
+1. 使用 ' n ' 命令，正確地關閉應用程式。
+
+## <a name="next-steps"></a>接下來的步驟
 
 恭喜您完成此教學課程！ 若要更深入了解，請繼續下列教學課程。
 

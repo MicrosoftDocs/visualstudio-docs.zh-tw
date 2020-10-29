@@ -1,21 +1,21 @@
 ---
-title: 技術支援權益
+title: Visual Studio 訂用帳戶中的技術支援權益
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 09/02/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: 了解如何啟用 Visual Studio 訂用帳戶所包含的技術支援權益。
-ms.openlocfilehash: 6f22273d578c6e1bc30d588fff30c945846a5d8f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 30b47646c26e5bc9fbf9045e2acf59a670aa5e9d
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004542"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918119"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>啟用並使用 Visual Studio 訂用帳戶中的技術支援權益
-如果產品仍在[支援生命週期](https://support.microsoft.com/lifecycle/search)的主要支援階段中，Visual Studio 訂用帳戶技術支援權益可為其解決**非生產環境**中的協助修正問題。 自權益啟用的 1 年內，Visual Studio Enterprise 標準和年度雲端訂用帳戶可接收四個事件，而 Visual Studio Professional 標準和年度雲端訂用帳戶可接收兩個事件。 您必須在訂用帳戶為最新狀態時啟用權益。
+如果產品仍在 [支援生命週期](https://support.microsoft.com/lifecycle/search)的主要支援階段中，Visual Studio 訂用帳戶技術支援權益可為其解決 **非生產環境** 中的協助修正問題。 自權益啟用的 1 年內，Visual Studio Enterprise 標準和年度雲端訂用帳戶可接收四個事件，而 Visual Studio Professional 標準和年度雲端訂用帳戶可接收兩個事件。 您必須在訂用帳戶為最新狀態時啟用權益。
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 新客戶請參閱 <https://visualstudio.microsoft.com/vs/pricing/> 以探索 Visual Studio 訂用帳戶的不同購買選項。
@@ -30,7 +30,7 @@ ms.locfileid: "91004542"
 
 非開發人員產品 (例如，從 Visual Studio 訂用帳戶下載的 SQL、Windows、SharePoint) 僅符合主流支援的資格。 這些產品僅獲得開發環境的授權，以設計、開發、測試或展示應用程式。 這些產品未授權用於生產環境。
 
-產品層級描述：展開 [ **無法使用的支援方案**]。 如果您看到 **支援方案無法用於指定產品的支援 (程式碼： 8) **，您的支援合約無法用於您所選取的產品版本。
+產品層級描述：展開 [ **無法使用的支援方案** ]。 如果您看到 **支援方案無法用於指定產品的支援 (程式碼： 8)** ，您的支援合約無法用於您所選取的產品版本。
 
 > [!IMPORTANT]
 > 所提供的支援事件適用于支援服務的修正。  它們可能不會用來協助處理涉及下列產品的程式碼/開發問題：
@@ -42,10 +42,10 @@ ms.locfileid: "91004542"
 > - Microsoft Outlook
 
 ## <a name="how-to-activate-the-benefit"></a>如何啟用權益
-1. 前往 <https://my.visualstudio.com/Benefits>，向下捲動至 [支援] 區段，然後在 [技術支援] 磚上，按一下 [Chat to activate] \(聊天啟用\)****。
+1. 前往 <https://my.visualstudio.com/Benefits>，向下捲動至 [支援] 區段，然後在 [技術支援] 磚上，按一下 [Chat to activate] \(聊天啟用\)  。
     > [!div class="mx-imgBorder"]
     > ![技術支援權益磚](_img/vs-tech-support/vs-tech-support-tile.png)
-2. 這會起始您與客戶代表的聊天工作階段；客戶代表可建立您的**合約識別碼**和**存取識別碼**，並透過電子郵件將這些識別碼提供給您以作為記錄。
+2. 這會起始您與客戶代表的聊天工作階段；客戶代表可建立您的 **合約識別碼** 和 **存取識別碼** ，並透過電子郵件將這些識別碼提供給您以作為記錄。
 
 3. 若要完成此程序，您必須提供代表：
    - 您的國家/地區
@@ -58,7 +58,7 @@ ms.locfileid: "91004542"
    > [!div class="mx-imgBorder"]
    > ![技術支援權益尋找訂用帳戶識別碼](_img/vs-tech-support/vs-tech-support-subID-cropped.png)
 
-4. 程序完成之後，您會收到一封電子郵件，其中含有您建立支援事件時會用到的**合約識別碼**和**存取識別碼**。  它也會提供使用您的新「存取識別碼」和「合約識別碼」來提交支援事件的指示。 
+4. 程序完成之後，您會收到一封電子郵件，其中含有您建立支援事件時會用到的 **合約識別碼** 和 **存取識別碼** 。  它也會提供使用您的新「存取識別碼」和「合約識別碼」來提交支援事件的指示。 
 
 > [!NOTE]
 > 若要使用英文以外的語言啟用您的支援帳戶，請從 [這份清單](https://support.microsoft.com/help/14084/activate-support-contract)中選擇您的國家/地區。
@@ -75,35 +75,35 @@ ms.locfileid: "91004542"
 ### <a name="using-your-contract-id-and-access-id-when-submitting-an-incident-initial-use"></a>使用您的合約識別碼和存取識別碼提交事件 (初次使用)
 
 #### <a name="submitting-an-incident-online"></a>線上提交事件
-線上提交事件時，系統會先提示您登入。 使用下拉式清單，選取您需要協助的產品。 例如，若要提交 Visual Studio Enterprise 2019 的事件，請選取 [開發人員工具]**** 系列，再選取 [Visual Studio 2019]**** 產品，然後選擇 [Visual Studio Enterprise 2019]**** 版本。
+線上提交事件時，系統會先提示您登入。 使用下拉式清單，選取您需要協助的產品。 例如，若要提交 Visual Studio Enterprise 2019 的事件，請選取 [開發人員工具]  系列，再選取 [Visual Studio 2019]  產品，然後選擇 [Visual Studio Enterprise 2019]  版本。
 
-1. 選擇您需要支援的產品之後，按一下 [下一步]****。
+1. 選擇您需要支援的產品之後，按一下 [下一步]  。
 
    > [!div class="mx-imgBorder"]
    > ![技術支援權益事件提交步驟 1 - 產品](_img/vs-tech-support/vs-tech-support-step1.png)
 
-2. 描述您的問題，然後按一下 [下一步]****。
+2. 描述您的問題，然後按一下 [下一步]  。
 
    > [!div class="mx-imgBorder"]
    > ![技術支援權益事件提交步驟 2 - 問題](_img/vs-tech-support/vs-tech-support-step2.png)
 
-3. 在 [支援方案] 頁面上，向下捲動至 [Add or purchase a support plan] \(新增或購買支援方案\)****、使用右邊的箭號展開，然後按一下 [新增合約]****。
+3. 在 [支援方案] 頁面上，向下捲動至 [Add or purchase a support plan] \(新增或購買支援方案\)  、使用右邊的箭號展開，然後按一下 [新增合約]  。
 
    > [!div class="mx-imgBorder"]
    > ![技術支援權益事件提交 - 新增合約](_img/vs-tech-support/vs-tech-support-add-contract.png)
 
-4. 輸入您的 **存取識別碼** 和 **合約識別碼**。  按一下 [新增] 。
+4. 輸入您的 **存取識別碼** 和 **合約識別碼** 。  按一下 [新增]  。
 
    > [!div class="mx-imgBorder"]
    > ![技術支援權益事件提交 - 新增合約識別碼](_img/vs-tech-support/vs-tech-support-add-contract-id.png)
 
-5. 新增合約之後，它便會出現在頂端的 [Select a support plan] \(選取支援方案\)**** 下方。 您的方案標題會包含 "MSDN" 一詞。 選擇該標題，並向下捲動，然後按一下 [下一步]****。
+5. 新增合約之後，它便會出現在頂端的 [Select a support plan] \(選取支援方案\)  下方。 您的方案標題會包含 "MSDN" 一詞。 選擇該標題，並向下捲動，然後按一下 [下一步]  。
 
    > [!div class="mx-imgBorder"]
    > ![技術支援權益事件提交 - 選擇方案](_img/vs-tech-support/vs-tech-support-choose-plan.png)
 
    > [!NOTE]
-   > 如果您沒有看到您的支援方案，請回到上一頁，然後再按一下 [下一步]****。  如果無法顯示支援方案，將您的支援問題文字複製到剪貼簿、重新整理頁面，然後重新建立支援問題。
+   > 如果您沒有看到您的支援方案，請回到上一頁，然後再按一下 [下一步]  。  如果無法顯示支援方案，將您的支援問題文字複製到剪貼簿、重新整理頁面，然後重新建立支援問題。
 
 6. 完成剩餘步驟 (嚴重性、連絡資訊、檢閱)。   提交事件之後，您會看到成功提交事件的確認，即可將檔案上傳至案例。 我們會將您的事件指派給技術支援人員，其會使用您選取的連絡方法與您連絡以解決問題。
 
@@ -114,19 +114,19 @@ ms.locfileid: "91004542"
 若要使用您的 Visual Studio 訂閱技術支援權益來解決與 Azure 相關的問題，您必須將合約識別碼和存取識別碼連結至您的 Azure 訂用帳戶。
 
 1. 前往 https://portal.azure.com 並登入
-2. 從左側導覽中，按一下 [說明 **+ 支援**]
-3. 按一下 [支援] 底下的 [新增支援要求]****
+2. 從左側導覽中，按一下 [說明 **+ 支援** ]
+3. 按一下 [支援] 底下的 [新增支援要求] 
 
 ## <a name="eligibility"></a>資格
 
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL，Azure，零售，選取的 NFR<sup>1</sup> | 4 個事件       |  Yes|
-| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl | 4 個事件       |  Yes|
-| Visual Studio Professional (Standard) | VL、Azure、零售、挑選過的 NFR<sup>2</sup>                                        | 2 個事件                                                          |Yes         |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                     | 2 個事件                                                          |Yes         |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 2 個事件                                             |  Yes         |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 2 個事件                                               | Yes         |
+| Visual Studio Enterprise (Standard)   | VL，Azure，零售，選取的 NFR<sup>1</sup> | 4 個事件       |  是|
+| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl | 4 個事件       |  是|
+| Visual Studio Professional (Standard) | VL、Azure、零售、挑選過的 NFR<sup>2</sup>                                        | 2 個事件                                                          |是         |
+| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                     | 2 個事件                                                          |是         |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 2 個事件                                             |  是         |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 2 個事件                                               | 是         |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 ||
 
@@ -142,7 +142,7 @@ ms.locfileid: "91004542"
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>接下來的步驟
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
