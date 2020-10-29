@@ -48,6 +48,8 @@
       href: contact-my-admin.md
     - name: 優點
       items:
+        - name: 關於優點
+          href: about-benefits.md
         - name: 工具
           items:
             - name: Azure DevTest 個人點數
