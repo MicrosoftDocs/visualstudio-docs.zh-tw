@@ -1,5 +1,7 @@
 ---
 title: XAML 錯誤和警告
+description: 瞭解 Visual Studio 中的 XAML 錯誤和警告，包括錯誤的分類方式、如何取得錯誤資訊，以及如何尋找修正這些錯誤的選項。
+ms.custom: SEO-VS-2020
 ms.date: 03/06/2018
 ms.topic: error-reference
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
@@ -8,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 968e4167da1f8fd9bce21784a011d970014e1b4e
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 83a68273f4fbb2f66986c18c692b91b6e1829a4c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467553"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049217"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML 錯誤和警告
 
-撰寫 XAML 時，Visual Studio 會在您鍵入的同時分析程式碼。 偵測到錯誤時，程式碼行上會出現曲線。 將滑鼠指標停留在曲線上時，即會顯示錯誤或警告的詳細資訊。 針對某些錯誤和警告，會顯示快速動作燈泡，並使用**Ctrl** + **。** 鍵盤快速鍵以顯示可修正問題的選項。
+撰寫 XAML 時，Visual Studio 會在您鍵入的同時分析程式碼。 偵測到錯誤時，程式碼行上會出現曲線。 將滑鼠指標停留在曲線上時，即會顯示錯誤或警告的詳細資訊。 針對某些錯誤和警告，會顯示快速動作燈泡，並使用 **Ctrl** + **。** 鍵盤快速鍵以顯示可修正問題的選項。
 
 ## <a name="error-types"></a>錯誤類型
 
@@ -37,8 +39,8 @@ ms.locfileid: "92467553"
 
 ## <a name="suppress-xaml-designer-errors"></a>隱藏 XAML 設計工具的錯誤
 
-選取 [工具] > [選項]****，然後選取 [文字編輯器] > [XAML] > 其他]****，以開啟 [選項]**** 對話方塊。
+選取 [工具] > [選項]  ，然後選取 [文字編輯器] > [XAML] > 其他]  ，以開啟 [選項]  對話方塊。
 
-取消選取 [Show errors detected by the XAML designer] (顯示 XAML 設計工具所偵測到的錯誤)**** 核取方塊。
+取消選取 [Show errors detected by the XAML designer] (顯示 XAML 設計工具所偵測到的錯誤)  核取方塊。
 
 ![隱藏 XAML 設計工具的錯誤](media/suppress_xaml_designer_errors.png)
