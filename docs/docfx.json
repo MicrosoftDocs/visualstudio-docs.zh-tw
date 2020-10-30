@@ -1,10 +1,7 @@
 {
   "build": {
-    "markdownEngineName": "markdig",
     "content": [
       {
-        "group": "vs-2015",
-        "src": "./vs-2015",
         "files": [
           "**/*.md",
           "**/*.yml"
@@ -13,11 +10,11 @@
           "**/obj/**",
           "vsdocsdocs/**",
           "**/includes/**"
-        ]
+        ],
+        "src": "./vs-2015",
+        "group": "vs-2015"
       },
       {
-        "group": "vs-2017-2019",
-        "src": "./",
         "files": [
           "**/*.md",
           "**/*.yml"
@@ -27,13 +24,13 @@
           "vsdocsdocs/**",
           "**/includes/**",
           "vs-2015/**"
-        ]
+        ],
+        "src": "./",
+        "group": "vs-2017-2019"
       }
     ],
     "resource": [
       {
-        "group": "vs-2015",
-        "src": "./vs-2015",
         "files": [
           "**/*.png",
           "**/*.jpg",
@@ -44,11 +41,11 @@
           "**/obj/**",
           "vsdocsdocs/**",
           "**/includes/**"
-        ]
+        ],
+        "src": "./vs-2015",
+        "group": "vs-2015"
       },
       {
-        "group": "vs-2017-2019",
-        "src": "./",
         "files": [
           "**/*.png",
           "**/*.jpg",
@@ -60,7 +57,9 @@
           "vsdocsdocs/**",
           "**/includes/**",
           "vs-2015/**"
-        ]
+        ],
+        "src": "./",
+        "group": "vs-2017-2019"
       }
     ],
     "overwrite": [],
@@ -89,6 +88,7 @@
       "featureFlags": [
         "enable_uhf_ppe"
       ],
+      "archive_url": "/previous-versions/visualstudio",
       "disable_contribution_on_translation_quality": [
         "MT",
         "MTE75",
@@ -150,19 +150,25 @@
         "vs-2015/extensibility/**/*.md": [
           "VS Extensibility"
         ]
+      },
+      "exclude_monikers": {
+        "vs-2015/**/*.md": [
+          "vs-2015"
+        ]
       }
     },
     "template": [],
-    "xref": [],
     "dest": "vsdocsdocs",
+    "markdownEngineName": "markdig",
+    "xref": [],
     "groups": {
       "vs-2015": {
-        "moniker_range": "vs-2015",
-        "dest": "vs-2015-dest"
+        "dest": "vs-2015-dest",
+        "moniker_range": "vs-2015"
       },
       "vs-2017-2019": {
-        "moniker_range": ">= vs-2017",
-        "dest": "vs-2017-2019-dest"
+        "dest": "vs-2017-2019-dest",
+        "moniker_range": ">= vs-2017"
       }
     }
   }
