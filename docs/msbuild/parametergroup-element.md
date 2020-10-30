@@ -1,5 +1,7 @@
 ---
 title: ParameterGroup 項目 | Microsoft Docs
+description: 瞭解 MSBuild ParameterGroup 元素，其中包含 UsingTask TaskFactory 所產生之工作上的選擇性參數清單。
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c06b9c530d3fff0fdfa429df633daaa4dde8c52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 104a7313104e194a85d9eb4fee00e84a8facb5b5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78263069"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048871"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup 元素
 
@@ -30,7 +32,7 @@ ms.locfileid: "78263069"
  \<Project> \<UsingTask>
  \<ParameterGroup>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ParameterGroup />
@@ -73,7 +75,7 @@ ms.locfileid: "78263069"
 </UsingTask>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

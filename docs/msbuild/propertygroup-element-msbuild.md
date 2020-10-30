@@ -1,5 +1,7 @@
 ---
 title: PropertyGroup 項目 (MSBuild) | Microsoft Docs
+description: 瞭解 MSBuild PropertyGroup 元素，其中包含一組使用者定義的屬性元素。
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b94cf266be81b81aca9c83fe8d29b9777ee9114b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d276cdfa997bb02cfa44037d8ebe758a4d2704e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632923"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048806"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup 元素 (MSBuild)
 
@@ -31,7 +33,7 @@ ms.locfileid: "77632923"
 
  \<Project> \<PropertyGroup>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <PropertyGroup Condition="'String A' == 'String B'">
@@ -46,7 +48,7 @@ ms.locfileid: "77632923"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |條件|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
 
@@ -74,7 +76,7 @@ ms.locfileid: "77632923"
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild 屬性](../msbuild/msbuild-properties.md)

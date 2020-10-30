@@ -1,5 +1,7 @@
 ---
 title: WPF MSBuild 工作參考 | Microsoft Docs
+description: 請參閱 Windows Presentation Foundation (WPF) 組建流程的工作參考，它會擴充 MSBuild 與其他工作。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d994e32b717ff566a2e38acee732c7525d1bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 395f50db4159e8ace1b317f5926ed676c7462fe3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630843"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047519"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild 工作參考
 
@@ -57,7 +59,7 @@ Windows Presentation Foundation (WPF) 建置程序會擴充 Microsoft Build Engi
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- 將一或多個資源內嵌 (*.jpg*、 *.ico*、 *.Bmp*、二進位格式的 XAML，以及其他擴充類型) 至 *.resources* 檔。
+ 將一或多個資源內嵌 ( *.jpg* 、 *.ico* 、 *.Bmp* 、二進位格式的 XAML，以及其他擴充類型) 至 *.resources* 檔。
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -65,8 +67,8 @@ Windows Presentation Foundation (WPF) 建置程序會擴充 Microsoft Build Engi
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- **\<hostInBrowser />** 在建立 XAML 瀏覽器應用程式 (XBAP) 專案時，將專案新增至應用程式資訊清單 (* \<projectname> .exe. 指令*清單) 。
+ **\<hostInBrowser />** 在建立 XAML 瀏覽器應用程式 (XBAP) 專案時，將專案新增至應用程式資訊清單 ( *\<projectname> .exe. 指令* 清單) 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [MSBuild](../msbuild/msbuild.md)

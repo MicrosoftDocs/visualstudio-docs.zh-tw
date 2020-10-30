@@ -1,5 +1,7 @@
 ---
 title: SetThreadCount | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 SetThreadCount 來設定全域執行緒計數，並將該計數指派給目前的執行緒。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 102f46ec639719bb2bec70a38c6c7177c63793c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01bfdae1dcd11d7df042948308c424b7773b3bb0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632325"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048327"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 
@@ -42,6 +44,6 @@ HRESULT WINAPI SetThreadCount(int threadCount);
 
  如已更新執行緒計數，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
  **標頭：** *FileTracker.h*

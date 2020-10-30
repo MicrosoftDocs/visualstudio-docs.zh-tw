@@ -1,5 +1,7 @@
 ---
 title: XmlPeek 工作 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 XmlPeek 工作，從 XML 檔案傳回 XPath 查詢所指定的值。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27b535af260d205c74ef87d0325680389d1dbe58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d9a3c03e1301bddf4cc26c76dac9e0381ec726b
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286117"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047251"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek 工作
 
@@ -31,7 +33,7 @@ ms.locfileid: "85286117"
 
  下表說明 `XmlPeek` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`Namespaces`|選擇性的 `String` 參數。<br /><br /> 指定 XPath 查詢前置詞的命名空間。|
 |`Query`|選擇性的 `String` 參數。<br /><br /> 指定 XPath 查詢。|
@@ -113,7 +115,7 @@ ms.locfileid: "85286117"
   <s:variable Type="String" Name="a" xmlns:s="http://nsurl">This</s:variable>;<s:variable Type="String" Name="b" xmlns:s="http://nsurl">is</s:variable>;<s:variable Type="String" Name="c" xmlns:s="http://nsurl">Sparta!</s:variable>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

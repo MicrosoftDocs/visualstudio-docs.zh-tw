@@ -1,5 +1,7 @@
 ---
 title: UsingTask 元素 (MSBuild) | Microsoft Docs
+description: 瞭解 MSBuild UsingTask 元素，此專案會將工作專案中參考的工作對應至包含工作執行的元件。
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14556467e0907818333695b3388b2d11f3467ed7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d09f266f5bf51b870dbbbc0f80aa8282e91faa9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289153"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046110"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 元素 (MSBuild)
 
@@ -31,7 +33,7 @@ ms.locfileid: "85289153"
 
  \<Project> \<UsingTask>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <UsingTask TaskName="TaskName"
@@ -77,13 +79,13 @@ ms.locfileid: "85289153"
  您可以在專案檔所包含 (直接包含或透過匯入的專案檔來包含) 的 `UsingTask` 元素中，參考環境變數、命令列屬性、專案層級屬性及專案層級項目。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。
 
 > [!NOTE]
-> 專案層級屬性和專案沒有任何意義，亦 `UsingTask` 即，如果元素來自全域向 MSBuild 引擎註冊的其中一個工作*檔案。* 專案層級值對 MSBuild 而言不是全域的。
+> 專案層級屬性和專案沒有任何意義，亦 `UsingTask` 即，如果元素來自全域向 MSBuild 引擎註冊的其中一個工作 *檔案。* 專案層級值對 MSBuild 而言不是全域的。
 
  在 MSBuild 4.0 中，使用工作可以從 *.overridetask* 檔案載入。
 
 第一次使用時，會載入包含自訂工作的元件 `Task` 。
 
-## <a name="example"></a>範例
+## <a name="example-1"></a>範例 1
 
  下列範例示範如何使用具有 `AssemblyName` 屬性的 `UsingTask` 項目。
 
@@ -100,7 +102,7 @@ ms.locfileid: "85289153"
 </UsingTask>
 ```
 
-## <a name="example"></a>範例
+## <a name="example-2"></a>範例 2
 
  下列範例示範如何使用具有 `AssemblyFile` 屬性的 `UsingTask` 項目。
 
@@ -109,7 +111,7 @@ ms.locfileid: "85289153"
               AssemblyFile="c:\myTasks\myTask.dll" />
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [如何：設定目標和工作](../msbuild/how-to-configure-targets-and-tasks.md)   

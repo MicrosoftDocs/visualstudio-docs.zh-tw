@@ -1,5 +1,7 @@
 ---
 title: StopTrackingAndCleanup | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 StopTrackingAndCleanup 來停止追蹤會話所使用的所有追蹤和釋放記憶體。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee30bf031761fa7920dadad04d8f17a1bcc0b3a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05aec8bc85ac392670469da8073da02888b2f063
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631987"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048098"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 
@@ -36,10 +38,10 @@ HRESULT WINAPI StopTrackingAndCleanup(void);
 
  如已停止追蹤，則傳回 **HRESULT** 和已設定的 **SUCCEEDED** 位元。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
  **標頭：** *FileTracker.h*
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

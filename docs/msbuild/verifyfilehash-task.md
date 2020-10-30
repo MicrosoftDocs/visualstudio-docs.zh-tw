@@ -1,5 +1,7 @@
 ---
 title: VerifyFileHash 工作 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 VerifyFileHash 工作來確認檔案是否符合預期的檔案雜湊，如果不相符，則會失敗。
+ms.custom: SEO-VS-2020
 ms.date: 01/28/2019
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d76c7de1fcf6857cbc32709490e54d5bdf3b8988
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579532"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046103"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash 工作
 
@@ -37,7 +39,7 @@ ms.locfileid: "77579532"
 |`File`|必要的 `String` 參數。<br /><br />要雜湊和驗證的檔案。|
 |`Hash`|必要的 `String` 參數。<br /><br />檔案的預期雜湊。|
 |`Algorithm`|選擇性的 `String` 參數。<br /><br />演算法。 允許值：`SHA256`、`SHA384`、`SHA512`。 預設值 = `SHA256`。|
-|`HashEncoding`|選擇性的 `String` 參數。<br /><br />要用於產生雜湊的編碼。 預設為 `hex`。 允許值：`hex`、`base64`。|
+|`HashEncoding`|選擇性的 `String` 參數。<br /><br />要用於產生雜湊的編碼。 預設值為 `hex`。 允許值：`hex`、`base64`。|
 
 ## <a name="example"></a>範例
 
@@ -85,7 +87,7 @@ ms.locfileid: "77579532"
   </Target>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

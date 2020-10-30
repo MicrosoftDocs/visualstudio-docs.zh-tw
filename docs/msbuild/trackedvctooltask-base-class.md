@@ -1,5 +1,7 @@
 ---
 title: TrackedVCToolTask 類別 | Microsoft Docs
+description: 瞭解 TrackedVCToolTask 基類新增至繼承自該類別之工作的參數。
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
 dev_langs:
@@ -11,12 +13,12 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01b55e0ad88cb520078479217306bac948e6cd60
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594925"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046993"
 ---
 # <a name="trackedvctooltask-base-class"></a>TrackedVCToolTask 基底類別
 
@@ -48,7 +50,7 @@ ms.locfileid: "75594925"
 |**TrackerFrameworkPath**|選擇性的 **字串** 參數。|
 |**TrackerSdkPath**|選擇性的 **字串** 參數。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [工作參考](../msbuild/msbuild-task-reference.md)<br/>
 [工作](../msbuild/msbuild-tasks.md)

@@ -1,5 +1,7 @@
 ---
 title: UpdateManifest 工作 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 UpdateManifest 工作來更新資訊清單中選取的屬性，並重新簽署。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25e410ba3122e0065f92186195ee5a82d6a55c2f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fab3844b21e12edceb83da310e9069199578ef6
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631338"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046853"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest 工作
 
@@ -31,7 +33,7 @@ ms.locfileid: "77631338"
 
  下表說明 `UpdateManifest` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`ApplicationManifest`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定應用程式資訊清單。|
 |`ApplicationPath`|必要的 `String` 參數。<br /><br /> 指定應用程式資訊清單的路徑。|
@@ -42,7 +44,7 @@ ms.locfileid: "77631338"
 
  除了具有表格中所列的參數之外，此工作會繼承 <xref:Microsoft.Build.Utilities.Task> 類別中的參數。 如需這些額外參數及其說明的清單，請參閱 [Task 基底類別](../msbuild/task-base-class.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

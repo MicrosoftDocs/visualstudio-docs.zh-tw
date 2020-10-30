@@ -1,5 +1,7 @@
 ---
 title: MSBuild 目標 Framework 和目標平台 | Microsoft Docs
+description: 瞭解如何建立 MSBuild 專案，以在目標 .NET Framework 版本和目標平臺或軟體架構上執行。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
@@ -8,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c55ce57adb5b86941b5953732d57a642eb4f943
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d29c4e4659e8e6a5564e3fb41f54615bf29171d2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350832"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049100"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 目標 Framework 和目標平台
 
-您可以建置專案，以在特定 .NET Framework 版本的「目標 Framework」**，以及特定軟體架構的「目標平台」** 上執行。  例如，您可以將應用程式設為目標，以在與80x86 處理器系列 ( "x86" ) 相容的32位平臺上，于 .NET Framework 2.0 上執行。 目標 Framework 和目標平台的組合稱為「目標內容」**。
+您可以建置專案，以在特定 .NET Framework 版本的「目標 Framework」  ，以及特定軟體架構的「目標平台」  上執行。  例如，您可以將應用程式設為目標，以在與80x86 處理器系列 ( "x86" ) 相容的32位平臺上，于 .NET Framework 2.0 上執行。 目標 Framework 和目標平台的組合稱為「目標內容」  。
 
 > [!IMPORTANT]
 > 本文說明指定目標 Framework 的舊方式。 SDK 樣式專案可啟用不同的 TargetFrameworks，例如 netstandard。 如需詳細資訊，請參閱[目標 Framework](/dotnet/standard/frameworks)。
@@ -58,7 +60,7 @@ ms.locfileid: "85350832"
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
 ```
 
- 「目標設定檔」** 是目標 Framework 的子集。 例如，.NET Framework 4 用戶端設定檔不包含 MSBuild 組件的參考。
+ 「目標設定檔」  是目標 Framework 的子集。 例如，.NET Framework 4 用戶端設定檔不包含 MSBuild 組件的參考。
 
  > [!NOTE]
  > 目標設定檔僅適用于 [可移植的類別庫](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library)。
@@ -72,7 +74,7 @@ ms.locfileid: "85350832"
 
 ## <a name="target-platform"></a>目標平台
 
- 「平台」** 是定義特定執行階段環境的軟硬體組合。 例如，
+ 「平台」  是定義特定執行階段環境的軟硬體組合。 例如，套用至物件的
 
 - `x86` 指定在 Intel 80x86 處理器或其對等項目上執行的 32 位元 Windows 作業系統。
 
@@ -80,7 +82,7 @@ ms.locfileid: "85350832"
 
 - `Xbox` 指定 Microsoft Xbox 360 平台。
 
-「目標平台」** 是建置專案以在其上方執行的目標特定平台。 目標平台是在專案檔的 `PlatformTarget` 建置屬性中指定。 您可以在 IDE 中，使用專案屬性頁或 [組態管理員]**** 來變更目標平台。
+「目標平台」  是建置專案以在其上方執行的目標特定平台。 目標平台是在專案檔的 `PlatformTarget` 建置屬性中指定。 您可以在 IDE 中，使用專案屬性頁或 [組態管理員]  來變更目標平台。
 
 ```xml
 <PropertyGroup>
@@ -89,7 +91,7 @@ ms.locfileid: "85350832"
 
 ```
 
-「目標組態」** 是目標平台的子集。 例如，`x86` `Debug` 組態不包含大部分的程式碼最佳化。 目標組態是在專案檔的 `Configuration` 建置屬性中指定。 您可以使用專案屬性頁或 [組態管理員]**** 來變更目標組態。
+「目標組態」  是目標平台的子集。 例如，`x86` `Debug` 組態不包含大部分的程式碼最佳化。 目標組態是在專案檔的 `Configuration` 建置屬性中指定。 您可以使用專案屬性頁或 [組態管理員]  來變更目標組態。
 
 ```xml
 <PropertyGroup>
@@ -99,6 +101,6 @@ ms.locfileid: "85350832"
 
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [多目標](../msbuild/msbuild-multitargeting-overview.md)

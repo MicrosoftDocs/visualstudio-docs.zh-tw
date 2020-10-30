@@ -1,5 +1,7 @@
 ---
 title: Warning 工作 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用警告工作，根據評估的條件陳述式來記錄組建期間的警告。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e95b59b4ccc0bd2df89e45512a5bdd05c027556
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce7104c08ce8f18672bf4d2df93debc3c1d19983
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631090"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047816"
 ---
 # <a name="warning-task"></a>Warning 工作
 
@@ -33,7 +35,7 @@ ms.locfileid: "77631090"
 
  下表說明 `Warning` 工作的參數。
 
-| 參數 | 說明 |
+| 參數 | 描述 |
 |---------------| - |
 | `Code` | 選擇性的 `String` 參數。<br /><br /> 要與警告建立關聯的警告碼。 |
 | `File` | 選擇性的 `String` 參數。<br /><br /> 指定相關檔案 (如果有的話)。 如果未提供任何檔案，則會使用包含 Warning 工作的檔案。 |
@@ -66,7 +68,7 @@ ms.locfileid: "77631090"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)

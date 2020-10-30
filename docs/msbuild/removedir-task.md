@@ -1,5 +1,7 @@
 ---
 title: RemoveDir 工作 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 RemoveDir 工作來移除指定的目錄及其所有檔案和子目錄。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26a6feeca7c89a67e7dd51bd0a1f99a182ffac59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 925e583582acad2492e9dbe9f4470924ac41d379
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632793"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048743"
 ---
 # <a name="removedir-task"></a>RemoveDir 工作
 
@@ -33,7 +35,7 @@ ms.locfileid: "77632793"
 
  下表說明 `RemoveDir` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`Directories`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要刪除的目錄。|
 |`RemovedDirectories`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含已成功刪除的目錄。|
@@ -62,7 +64,7 @@ ms.locfileid: "77632793"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

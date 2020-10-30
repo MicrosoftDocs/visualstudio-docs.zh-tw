@@ -1,5 +1,7 @@
 ---
 title: Unzip 工作 | Microsoft Docs
+description: 瞭解 MSBuild 解壓縮工作的參數和使用方式，此工作會將 .zip 封存會解壓縮至指定的位置。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d331fda05e8655be0536a1e83d8309ae8c060b1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d701f70950bb5a5cb2338007db129ca15d194b77
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631506"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046905"
 ---
 # <a name="unzip-task"></a>Unzip 工作
 
@@ -40,11 +42,11 @@ ms.locfileid: "77631506"
 
  下表說明 `Unzip` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`DestinationFolder`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數<br /><br /> 指定要將檔案解壓縮檔到的目的地資料夾。|
-|`OverwriteReadOnlyFiles`|選擇性的 `Boolean` 參數。<br /><br /> 若為 `true`，則會覆寫唯讀檔案。 預設為 `false`。|
-|`SkipUnchangedFiles`|選擇性的 `Boolean` 參數。<br /><br /> 若為 `true`，則會略過解壓縮未變更的檔案。 預設為 `true`。 如果檔案具有相同的大小和相同的上次修改時間，`Unzip` 工作即會將檔案視為未變更。|
+|`OverwriteReadOnlyFiles`|選擇性的 `Boolean` 參數。<br /><br /> 若為 `true`，則會覆寫唯讀檔案。 預設值為 `false`。|
+|`SkipUnchangedFiles`|選擇性的 `Boolean` 參數。<br /><br /> 若為 `true`，則會略過解壓縮未變更的檔案。 預設值為 `true`。 如果檔案具有相同的大小和相同的上次修改時間，`Unzip` 工作即會將檔案視為未變更。|
 |`SourceFiles`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定一或多個檔案以便解壓縮。 指定多個檔案時，它們會依序解壓縮到相同的資料夾。|
 
 ## <a name="remarks"></a>備註
@@ -69,7 +71,7 @@ ms.locfileid: "77631506"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

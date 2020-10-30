@@ -1,5 +1,7 @@
 ---
 title: WriteContextTLogs | Microsoft Docs
+description: 瞭解 WriteCoNtextTLogs 的語法、需求和傳回值，以寫入目前內容的記錄檔。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf34ff63b00cf523ba9ef704f4417be4d5cdbf77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 622cbebdb4073dfd9b4237e9dfbcb8bbf4a506de
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630701"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047383"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 
@@ -46,10 +48,10 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
 
  如已建立追蹤內容，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
  **標頭：** *FileTracker.h*
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [WriteAllTLogs](../msbuild/writealltlogs.md)

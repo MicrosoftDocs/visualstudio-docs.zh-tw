@@ -1,5 +1,7 @@
 ---
 title: 覆寫 ToolsVersion 設定 | Microsoft Docs
+description: 瞭解您可以針對專案和方案變更或覆寫 MSBuild 工具組值的數種方式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c33f0ef43707390aa32d4c26c0380a8a32883e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29fed063d4c223cf0b1862384612ea5aa84b52b0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633014"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048906"
 ---
 # <a name="override-toolsversion-settings"></a>覆寫 ToolsVersion 設定
 
@@ -113,7 +115,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     1. 專案檔中 [Project](../msbuild/project-element-msbuild.md) 項目的 `ToolsVersion` 屬性。 如果這個屬性不存在，則會假設為最新版本。
 
-    2. *MSBuild.exe.config*檔案中的預設工具版本。
+    2. *MSBuild.exe.config* 檔案中的預設工具版本。
 
     3. 登錄中的預設工具版本。 如需詳細資訊，請參閱 [標準和自訂工具](../msbuild/standard-and-custom-toolset-configurations.md)組設定。
 
@@ -127,7 +129,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     4. 否則，請使用目前的 `ToolsVersion`。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [多目標](../msbuild/msbuild-multitargeting-overview.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)

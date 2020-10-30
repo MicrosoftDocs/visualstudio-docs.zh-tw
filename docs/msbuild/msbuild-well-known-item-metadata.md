@@ -1,5 +1,7 @@
 ---
 title: MSBuild 已知的項目中繼資料 | Microsoft Docs
+description: 瞭解建立時指派給每個專案的 MSBuild 中繼資料，以及您可以定義來控制組建行為的一些選擇性 MSBuild 中繼資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c810e166ef6f04befdbf7a5d18fe20bb65b8a299
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 047fe5ef6edc57681b8382a9f2a1069991e0f513
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87425377"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049013"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild 已知的項目中繼資料
 
@@ -43,13 +45,13 @@ ms.locfileid: "87425377"
 |%(Extension)|包含項目的副檔名。 例如：<br /><br /> *.cs*|
 |%(RelativeDir)|包含 `Include` 屬性中指定的路徑，直到最後一個反斜線 (\\) 為止。 例如：<br /><br /> *來源\\*<br /><br /> 如果 `Include` 屬性是完整路徑，則 `%(RelativeDir)` 以根目錄開頭 `%(RootDir)` 。  例如： <br /><br /> *C:\MyProject\Source\\*|
 |%(Directory)|包含項目的目錄 (不含根目錄)。 例如：<br /><br /> *MyProject\\Source\\*|
-|%(RecursiveDir)|如果 `Include` 屬性包含萬用字元 \*\*，此中繼資料會指定取代萬用字元的部分路徑。 如需萬用字元的詳細資訊，請參閱 [如何：選取要建立的](../msbuild/how-to-select-the-files-to-build.md)檔案。<br /><br /> 如果資料夾*C:\MySolution\MyProject\Source \\ *包含*Program.cs*檔案，而且專案檔包含此專案：<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> 則 `%(MyItem.RecursiveDir)` 的值會是 *MySolution\MyProject\Source\\*。|
+|%(RecursiveDir)|如果 `Include` 屬性包含萬用字元 \*\*，此中繼資料會指定取代萬用字元的部分路徑。 如需萬用字元的詳細資訊，請參閱 [如何：選取要建立的](../msbuild/how-to-select-the-files-to-build.md)檔案。<br /><br /> 如果資料夾 *C:\MySolution\MyProject\Source \\* 包含 *Program.cs* 檔案，而且專案檔包含此專案：<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> 則 `%(MyItem.RecursiveDir)` 的值會是 *MySolution\MyProject\Source\\* 。|
 |%(Identity)|屬性中指定的專案 `Include` 。 例如：<br /><br /> *Source\Program.cs*|
 |%(ModifiedTime)|包含上次修改項目時間的時間戳記。 例如：<br /><br /> `2004-07-01 00:21:31.5073316`|
 |%(CreatedTime)|包含項目建立時間的時間戳記。 例如：<br /><br /> `2004-06-25 09:26:45.8237425`|
 |%(AccessedTime)|包含上次存取項目時間的時間戳記。<br /><br /> `2004-08-14 16:52:36.3168743`|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [一般 MSBuild 項目中繼資料](common-msbuild-item-metadata.md)
 - [項目](../msbuild/msbuild-items.md)

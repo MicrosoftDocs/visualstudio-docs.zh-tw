@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: d4538becdf7627cc63ac94f65ac456123c5d9c47
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a66b747eda633d666518bf2d8a48328a25e038d2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739976"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046187"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>建立並執行待辦事項範例應用程式
 
@@ -26,7 +26,9 @@ ms.locfileid: "90739976"
 
 ## <a name="get-the-app"></a>取得應用程式
 
-在您可以執行應用程式之前，您必須先將應用程式原始程式碼放到您的電腦上。 針對真實的專案，您通常會複製存放庫。 但是在本教學課程中，您已建立包含應用程式的 ZIP 檔案。
+在您可以執行應用程式之前，您必須先將應用程式原始程式碼放到您的電腦上。 針對真實的專案，您通常會複製存放庫。 但是在本教學課程中，我們建立了一個包含應用程式的 ZIP 檔案。
+
+1. 請確定您已在本機電腦上安裝適用於 Windows 的 Docker 或 Docker 社區版。 請參閱 [適用於 Windows 的 Docker 安裝檔](https://docs.docker.com/docker-for-windows/install/)。 安裝程式會將包含範例的 ZIP 檔案提供給 localhost 位址。
 
 1. [下載 ZIP](http://localhost/assets/app.zip)。 開啟 ZIP 檔案，並確定您已將內容解壓縮。
 

@@ -1,5 +1,7 @@
 ---
 title: UpdateManifestForBrowserApplication 工作 | Microsoft Docs
+description: 瞭解 MSBuild 如何執行 UpdateManifestForBrowserApplication 工作，以將 >hostinbrowser 專案新增至應用程式資訊清單。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,23 +20,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 079eecd6751f168a7beba32eda6d15eda712bd7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43e8fc7b9b09af51ea3be73409e2dcde9a718cee
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631324"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046813"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication 工作
 
-<xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> **\<hostInBrowser />** 當建立 XAML 瀏覽器應用程式 (XBAP) 專案時，會執行此工作，以將專案新增至應用程式資訊清單 (* \<projectname> .exe. 指令*清單) 。
+<xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> **\<hostInBrowser />** 當建立 XAML 瀏覽器應用程式 (XBAP) 專案時，會執行此工作，以將專案新增至應用程式資訊清單 ( *\<projectname> .exe. 指令* 清單) 。
 
 ## <a name="task-parameters"></a>工作參數
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`ApplicationManifest`|必要的 **ITaskItem []** 參數。<br /><br /> 指定要加入 `<hostInBrowser />` 項目的應用程式資訊清單檔案的路徑和名稱。|
-|`HostInBrowser`|必要的 **Boolean** 參數。<br /><br /> 指定是否要修改應用程式資訊清單以包含 **\<hostInBrowser />** 元素。 若 **為 true**，專案 **\<hostInBrowser />** 中會包含新的元素 **\<entryPoint />** 。 元素包含是累計的：如果專案 **\<hostInBrowser />** 已經存在，則不會移除或覆寫它。 相反地， **\<hostInBrowser />** 會建立額外的元素。 若為 **false**，則不會修改應用程式資訊清單。|
+|`HostInBrowser`|必要的 **Boolean** 參數。<br /><br /> 指定是否要修改應用程式資訊清單以包含 **\<hostInBrowser />** 元素。 若 **為 true** ，專案 **\<hostInBrowser />** 中會包含新的元素 **\<entryPoint />** 。 元素包含是累計的：如果專案 **\<hostInBrowser />** 已經存在，則不會移除或覆寫它。 相反地， **\<hostInBrowser />** 會建立額外的元素。 若為 **false** ，則不會修改應用程式資訊清單。|
 
 ## <a name="remarks"></a>備註
 
@@ -75,7 +77,7 @@ ms.locfileid: "77631324"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)
 - [工作參考](../msbuild/wpf-msbuild-task-reference.md)

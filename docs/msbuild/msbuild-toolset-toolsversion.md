@@ -1,5 +1,7 @@
 ---
 title: MSBuild 工具組 (ToolsVersion) | Microsoft Docs
+description: 瞭解如何在 MSBuild 專案檔中使用 ToolsVersion 屬性，以指定工作、目標和工具的工具組來建立應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 01/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,16 +15,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b77ea7f04377a1c531efeff780e9303f0bd3eb79
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: e0b27a1914d85f5fde8ef6c5c467d73197c084ce
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426959"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049030"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 
-MSBuild 使用工作、目標和工具的工具組建置應用程式。 MSBuild 工具組通常會包含一組 *microsoft* 一般的 *.targets* 檔案，以及像是 *csc.exe* 和 *vbc.exe*的編譯器。 大部分的工具組都可用來將應用程式編譯為多個版本的 .NET Framework 和多個系統平台。 不過，MSBuild 2.0 工具組僅能以 .NET Framework 2.0 為使用目標。
+MSBuild 使用工作、目標和工具的工具組建置應用程式。 MSBuild 工具組通常會包含一組 *microsoft* 一般的 *.targets* 檔案，以及像是 *csc.exe* 和 *vbc.exe* 的編譯器。 大部分的工具組都可用來將應用程式編譯為多個版本的 .NET Framework 和多個系統平台。 不過，MSBuild 2.0 工具組僅能以 .NET Framework 2.0 為使用目標。
 
 ## <a name="toolsversion-attribute"></a>ToolsVersion 屬性
 
@@ -79,7 +81,7 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 MSBuild 
 
 - 其他 Managed 工具。
 
-  Managed 工具包括 *ResGen.exe* 和 *TlbImp.exe*。
+  Managed 工具包括 *ResGen.exe* 和 *TlbImp.exe* 。
 
 MSBuild 會提供兩種方法來存取工具組：
 
@@ -87,7 +89,7 @@ MSBuild 會提供兩種方法來存取工具組：
 
 - 透過使用 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 方法
 
-工具組屬性會指定工具的路徑。 自 Visual Studio 2017 起，MSBuild 不再具有固定位置。 根據預設，它位於 *MSBuild\15.0\Bin* 資料夾中，相對於 Visual Studio 安裝位置。 在先前的版本中，MSBuild 會使用專案檔中的 `ToolsVersion` 屬性值來尋找對應的登錄機碼，然後使用登錄機碼中的資訊設定工具組屬性。 例如，如果 `ToolsVersion` 有值 `12.0` ，則 MSBuild 會根據以下登錄機碼來設定工具組屬性： **HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0**。
+工具組屬性會指定工具的路徑。 自 Visual Studio 2017 起，MSBuild 不再具有固定位置。 根據預設，它位於 *MSBuild\15.0\Bin* 資料夾中，相對於 Visual Studio 安裝位置。 在先前的版本中，MSBuild 會使用專案檔中的 `ToolsVersion` 屬性值來尋找對應的登錄機碼，然後使用登錄機碼中的資訊設定工具組屬性。 例如，如果 `ToolsVersion` 有值 `12.0` ，則 MSBuild 會根據以下登錄機碼來設定工具組屬性： **HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0** 。
 
  以下為工具組屬性：
 
@@ -132,7 +134,7 @@ MSBuild 會提供 `ToolLocationHelper` 方法的多載，這些方法可加入 `
 
 子工具組已引進 .NET Framework 4.5。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [標準和自訂工具組設定](../msbuild/standard-and-custom-toolset-configurations.md)
 - [多目標](../msbuild/msbuild-multitargeting-overview.md)

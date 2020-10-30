@@ -1,5 +1,7 @@
 ---
 title: MSBuild 15 的現有應用程式更新 | Microsoft Docs
+description: 瞭解如何確保應用程式中的程式設計組建符合 Visual Studio 或 MSBuild.exe 內所完成的組建。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: ghogen
@@ -7,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c141d1e35db1e5ce334606b255d99ce2c0afc29b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65bde46ef959e0d005c9ab90ef8d2807ed240571
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184025"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047646"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>MSBuild 15 的現有應用程式更新
 
@@ -26,7 +28,7 @@ ms.locfileid: "84184025"
 
 ## <a name="use-microsoftbuildlocator"></a>使用 Microsoft.Build.Locator
 
-如果您與應用程式一起轉散發 *Microsoft.Build.Locator.dll*，則不需要散發其他 MSBuild 組件。
+如果您與應用程式一起轉散發 *Microsoft.Build.Locator.dll* ，則不需要散發其他 MSBuild 組件。
 
 更新專案以使用 MSBuild 15 和定位器 API，需要在專案中進行一些變更，如下所述。 若要查看更新專案所需的變更範例，請參閱[對 MSBuildLocator 儲存機制中的範例專案所做的認可](https://github.com/Microsoft/MSBuildLocator/commits/example-updating-to-msbuild-15)。
 

@@ -1,5 +1,7 @@
 ---
 title: When 元素 (MSBuild) | Microsoft Docs
+description: 深入瞭解 MSBuild When 元素，這會指定要選取之 Choose 元素的可能程式碼區塊。
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb9404b8c68171f0695b33c285582f5e4c5b4ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e373c6491f8f174aba372c9a600e1b5c823dfb00
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630921"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046033"
 ---
 # <a name="when-element-msbuild"></a>When 元素 (MSBuild)
 
@@ -36,7 +38,7 @@ ms.locfileid: "77630921"
  \<Choose>
 ...
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <When Condition="'StringA'=='StringB'">
@@ -52,7 +54,7 @@ ms.locfileid: "77630921"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |條件|必要屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
 
@@ -125,7 +127,7 @@ ms.locfileid: "77630921"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [條件式結構](../msbuild/msbuild-conditional-constructs.md)
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)

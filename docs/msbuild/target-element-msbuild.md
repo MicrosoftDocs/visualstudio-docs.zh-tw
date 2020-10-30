@@ -1,5 +1,7 @@
 ---
 title: Target 項目 (MSBuild) | Microsoft Docs
+description: 深入瞭解 MSBuild 目標元素，其中包含一組可讓 MSBuild 依序執行的工作。
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16b8533bed128199a4eb0b6e7171ed9c674d62f4
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80375556"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048046"
 ---
 # <a name="target-element-msbuild"></a>Target 元素 (MSBuild)
 
@@ -31,7 +33,7 @@ ms.locfileid: "80375556"
 
  \<Project> \<Target>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Target Name="Target Name"
@@ -57,7 +59,7 @@ ms.locfileid: "80375556"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Name`|必要屬性。<br /><br /> 目標的名稱。 目標名稱可包含任何字元，但除外 `$@()%*?.` 。|
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如果條件評估為 `false`，目標將不會執行目標或 `DependsOnTargets` 屬性中所設定之任何目標的主體。 如需條件的詳細資訊，請參閱 [條件](../msbuild/msbuild-conditions.md)。|
@@ -121,7 +123,7 @@ ms.locfileid: "80375556"
 </Target>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [目標](../msbuild/msbuild-targets.md)
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)

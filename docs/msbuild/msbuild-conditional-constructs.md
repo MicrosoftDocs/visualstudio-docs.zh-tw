@@ -1,5 +1,7 @@
 ---
 title: MSBuild 條件式建構 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 Choose、When 和其他專案，提供條件式處理的機制。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7d6693a24d208cab6bd3b58ce16dcba8a32b190
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 614a59771ea63637ee7c0576f67bf4798cb90c1f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184285"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046410"
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild 條件式建構
 
@@ -91,7 +93,7 @@ MSBuild 提供了一種機制，可使用 [Choose](../msbuild/choose-element-msb
 </Choose>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Choose 項目 (MSBuild)](../msbuild/choose-element-msbuild.md)
 - [當元素 (MSBuild 時) ](../msbuild/when-element-msbuild.md)

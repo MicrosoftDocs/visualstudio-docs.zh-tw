@@ -1,5 +1,7 @@
 ---
 title: 工作撰寫 | Microsoft Docs
+description: 瞭解如何建立您自己的工作，以提供在 MSBuild 組建處理常式期間執行的程式碼。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cbcf47ec83e1b900ba94ab3842c2cfa63fdcc5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b614fd1705491e676bb89a9527c75cf86bdd36c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631832"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047925"
 ---
 # <a name="task-writing"></a>工作撰寫
 
@@ -100,7 +102,7 @@ namespace MyTasks
  「MSBuild 檔案 *」是一個* 專案檔，其中包含 `UsingTask` 註冊 MSBuild 所提供之所有工作的元素清單。 組建每個專案時，都會自動包含此檔案。 如果在 *Microsoft* 中註冊的工作也會在目前的專案檔中註冊，則會優先使用目前的專案檔。也就是說，您可以使用具有相同名稱的工作來覆寫預設工作。
 
 > [!TIP]
-> 您可以藉由查看 *Microsoft*的內容，查看 MSBuild 提供的工作清單。
+> 您可以藉由查看 *Microsoft* 的內容，查看 MSBuild 提供的工作清單。
 
 ## <a name="raise-events-from-a-task"></a>從工作引發事件
 
@@ -170,7 +172,7 @@ public string RequiredProperty { get; set; }
 
 MSBuild 會以原生方式處理型別 `string` 、和的屬性 `bool` `ITaskItem` `ITaskItem[]` 。 如果工作接受不同類型的參數，MSBuild 會叫 <xref:System.Convert.ChangeType%2A> 用以從 (轉換， `string` 並將所有屬性和專案參考展開) 至目的地類型。 如果任何輸入參數的轉換失敗，MSBuild 會發出錯誤，而且不會呼叫工作的 `Execute()` 方法。
 
-## <a name="example"></a>範例
+## <a name="example-1"></a>範例 1
 
 ### <a name="description"></a>描述
 
@@ -195,7 +197,7 @@ namespace SimpleTask1
 }
 ```
 
-## <a name="example"></a>範例
+## <a name="example-2"></a>範例 2
 
 ### <a name="description"></a>描述
 
@@ -231,7 +233,7 @@ namespace SimpleTask2
 }
 ```
 
-## <a name="example"></a>範例
+## <a name="example-3"></a>範例 3
 
 ### <a name="description"></a>描述
 
@@ -241,7 +243,7 @@ namespace SimpleTask2
 
 [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
 
-## <a name="example"></a>範例
+## <a name="example-4"></a>範例 4
 
 ### <a name="description"></a>描述
 
@@ -260,6 +262,6 @@ namespace SimpleTask2
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)

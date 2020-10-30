@@ -1,5 +1,7 @@
 ---
 title: MSBuild 概念 | Microsoft Docs
+description: 瞭解如何使用 MSBuild 屬性、專案、工作和目標來指定組建元件和處理常式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 605b6ff67963c8df3e711c3f0b000c23f82050cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1efd2b1344e4523b9428c0eaacb63f93f9f8995f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289244"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046428"
 ---
 # <a name="msbuild-concepts"></a>MSBuild 概念
 
@@ -35,4 +37,4 @@ MSBuild 提供基本的 XML 架構，可讓您用來控制組建平臺建立軟�
 | [逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md) | 介紹 MSBuild 的建置區塊，以及示範如何在不關閉 Visual Studio 整合式開發環境 (IDE) 的情況下，撰寫和管理 MSBuild 專案及進行偵錯。 |
 | [MSBuild 如何建置專案](build-process-overview.md) | 描述 MSBuild 內使用的內部組建進程 |
 | [MSBuild 參考](../msbuild/msbuild-reference.md) | 包含參考資訊的文件連結。 |
-| [Msbuild](../msbuild/msbuild.md) | 提供了專案檔的 XML 結構描述概觀，並示範如何控制建置軟體的程序。 |
+| [MSBuild](../msbuild/msbuild.md) | 提供了專案檔的 XML 結構描述概觀，並示範如何控制建置軟體的程序。 |

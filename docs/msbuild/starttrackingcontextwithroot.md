@@ -1,5 +1,7 @@
 ---
 title: StartTrackingContextWithRoot | Microsoft Docs
+description: 瞭解如何使用 MSBuild StartTrackingCoNtextWithRoot，以指定根標記的回應檔來啟動追蹤內容。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68d585361b9797bf1df9c8b0b31f8a089e9de025
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ccca75a0fe525c4e1d9f421b2264070ebda9bdf3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632091"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048123"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 
@@ -50,10 +52,10 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 
  如已建立追蹤內容，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
  **標頭：** *FileTracker.h*
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

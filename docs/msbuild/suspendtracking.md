@@ -1,5 +1,7 @@
 ---
 title: SuspendTracking | Microsoft Docs
+description: 瞭解 MSBuild >suspendtracking 的語法、需求和傳回值，這會在目前的內容中暫停追蹤。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 950c6a07a46f7f4b970912e576257a577021367e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 164e1a11c7d107bf1d98419d77fdc50ed353f93b
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632003"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048091"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 
@@ -36,10 +38,10 @@ HRESULT WINAPI SuspendTracking(void);
 
  如已暫停追蹤，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
  **標頭：** *FileTracker.h*
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [ResumeTracking](../msbuild/resumetracking.md)

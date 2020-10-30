@@ -1,5 +1,7 @@
 ---
 title: MSBuild 屬性 | Microsoft Docs
+description: 瞭解 MSBuild 名稱/值屬性組如何將值傳遞至工作、評估條件，以及儲存值。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39f1f612244fedcc707475d067e67500dc76e1d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61cff0bfa1db43b196d7f6403b5140f9af2947ba
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633287"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046127"
 ---
 # <a name="msbuild-properties"></a>MSBuild 屬性
 
@@ -64,7 +66,7 @@ ms.locfileid: "77633287"
 
 ## <a name="registry-properties"></a>登錄屬性
 
- 您可以使用下列語法來讀取系統登錄值，其中 `Hive` 是登錄 hive (例如 **HKEY_LOCAL_MACHINE**) 、機碼名稱、子機 `MyKey` 碼名稱，以及子機碼的 `MySubKey` `Value` 值。
+ 您可以使用下列語法來讀取系統登錄值，其中 `Hive` 是登錄 hive (例如 **HKEY_LOCAL_MACHINE** ) 、機碼名稱、子機 `MyKey` 碼名稱，以及子機碼的 `MySubKey` `Value` 值。
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
@@ -88,7 +90,7 @@ $(registry:Hive\MyKey\MySubKey)
 
 ## <a name="global-properties"></a>全域屬性
 
- MSBuild 可讓您使用 **-property** (或 **-p**) 參數，在命令列上設定屬性。 這些全域屬性值會覆寫專案檔中所設定的屬性值。 這包括環境屬性，但不包含保留的屬性，您無法變更後者。
+ MSBuild 可讓您使用 **-property** (或 **-p** ) 參數，在命令列上設定屬性。 這些全域屬性值會覆寫專案檔中所設定的屬性值。 這包括環境屬性，但不包含保留的屬性，您無法變更後者。
 
  下列範例會將全域 `Configuration` 屬性設定為 `DEBUG`。
 
@@ -144,10 +146,10 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
-- [Msbuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
 - [如何：在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)
 - [如何：參考專案檔的名稱或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)
 - [如何：建立具有不同選項的相同原始檔案](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

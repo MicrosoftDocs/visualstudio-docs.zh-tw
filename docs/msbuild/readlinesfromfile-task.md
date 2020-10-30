@@ -1,5 +1,7 @@
 ---
 title: ReadLinesFromFile 工作 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 ReadLinesFromFile 工作，從文字檔讀取專案清單。 檔案的每一行都必須有一個項目。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c926c131fab101563841bea3362e88e27674226
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff2c43af40ea429714f0624db67c53fa46eb6427
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632897"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048780"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile 工作
 
@@ -33,7 +35,7 @@ ms.locfileid: "77632897"
 
  下表說明 `ReadLinesFromFile` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`File`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要讀取的檔案。 檔案的每一行都必須有一個項目。|
 |`Lines`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含從檔案讀取的行。|
@@ -65,7 +67,7 @@ ms.locfileid: "77632897"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)

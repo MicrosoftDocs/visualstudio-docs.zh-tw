@@ -1,5 +1,7 @@
 ---
 title: MSBuild 參考 | Microsoft Docs
+description: 存取文章的連結，其中包含 MSBuild 的參考資訊、Visual Studio 的組建系統。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b164d3d141c66817afd0eb88054fd9220656c0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5b7bb9287f26825ad1a90c3f339d7308fd6def1
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633261"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046568"
 ---
 # <a name="msbuild-reference"></a>MSBuild 參考
 
@@ -70,7 +72,7 @@ MSBuild 是 Visual Studio 的建置系統。 下列連結會引導至包含 MSBu
 - [要 escape 的特殊字元](../msbuild/special-characters-to-escape.md)\
  列出可能必須「逸出」才能正確解譯的字元。 逸出序列是一系列的字元，表示隨之而來的是替代的解譯。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [MSBuild 概觀](../msbuild/msbuild.md)
 - [Microsoft.Build.Evaluation](/dotnet/api/microsoft.build.evaluation)

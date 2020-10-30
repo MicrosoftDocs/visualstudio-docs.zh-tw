@@ -1,5 +1,7 @@
 ---
 title: 目標建置順序 | Microsoft Docs
+description: 瞭解如何指定執行 MSBuild 目標的順序，如果某個目標的輸入取決於另一個目標的輸出。
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607584b4b41bdfde224bdb35d30eec1c6c8a4197
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 955c8c496df45bbfce28bdac1571f84649621024
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585453"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048060"
 ---
 # <a name="target-build-order"></a>目標組建順序
 
@@ -73,7 +75,7 @@ ms.locfileid: "75585453"
 
 ## <a name="target-dependencies"></a>目標相依性
 
-目標可以說明彼此間的相依性關係。 `DependsOnTargets` 屬性會指出某一個目標相依於其他目標。 例如，
+目標可以說明彼此間的相依性關係。 `DependsOnTargets` 屬性會指出某一個目標相依於其他目標。 例如，套用至物件的
 
 ```xml
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />
@@ -130,6 +132,6 @@ MSBuild 會以如下方式判斷目標建置順序：
 
 7. 在執行或跳過目標後，任何在 `AfterTargets` 屬性中列出它的其他目標都會執行。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [目標](../msbuild/msbuild-targets.md)

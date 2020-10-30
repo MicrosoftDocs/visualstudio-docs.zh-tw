@@ -1,5 +1,7 @@
 ---
 title: WPF MSBuild 參考 | Microsoft Docs
+description: 瞭解 Windows Presentation Foundation (WPF) 如何以額外的組建支援擴充 MSBuild 組建引擎。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b3f47f41466d8eb7ddf0a4700428b6e28500b61
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d01def43a94e8590d5f776da1231ddf2d40d8d53
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596303"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047547"
 ---
 # <a name="wpf-msbuild-reference"></a>WPF MSBuild 參考
 
@@ -57,6 +59,6 @@ Windows Presentation Foundation (WPF) 擴充 Microsoft Build Engine (MSBuild) �
 
 建置工作視窗組件。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [MSBuild](../msbuild/msbuild.md)

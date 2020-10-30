@@ -1,5 +1,7 @@
 ---
 title: 撰寫能夠辨識多處理器的記錄器 | Microsoft Docs
+description: 瞭解 MSBuild 如何提供多處理器感知的記錄器和記錄模型，並讓您建立自訂「轉送記錄器」。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 886e012b026ef17b512a7e134d080382744783ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd90cb92dd56d3e7ff9eb43bad1086e8a8fb548f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630743"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047315"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>撰寫能夠辨識多處理器的記錄器
 
@@ -35,7 +37,7 @@ MSBuild 利用多個處理器的能力可能會減少專案建立時間，但也
 
 ### <a name="central-logging-model"></a>集中式記錄模型
 
- 在集中式記錄模型中，*MSBuild.exe* 的單一執行個體做為「中央節點」，中央節點的子執行個體 (「次要節點」) 則附加至中央節點，協助它執行組建工作。
+ 在集中式記錄模型中， *MSBuild.exe* 的單一執行個體做為「中央節點」，中央節點的子執行個體 (「次要節點」) 則附加至中央節點，協助它執行組建工作。
 
  ![中央記錄器模型](../msbuild/media/centralnode.png "CentralNode")
 
@@ -118,6 +120,6 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |NOSUMMARY|
 |SHOWCOMMANDLINE|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)

@@ -1,5 +1,7 @@
 ---
 title: ZipDirectory 工作 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 ZipDirectory 工作，從目錄的內容建立 .zip 封存。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1092add6386ccc5bc1de78efcf7b623a617d920b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2ffdd5e2601501146f0fa21e4adb572094ddbbf
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183063"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046614"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory 工作
 
@@ -43,7 +45,7 @@ ms.locfileid: "84183063"
 |參數|描述|
 |---------------|-----------------|
 |`DestinationFile`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數<br /><br /> 要建立之 *.zip* 檔案的完整路徑。|
-|`Overwrite`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true` ，則會覆寫目的地檔案（如果存在的話）。 預設為 `false`。|
+|`Overwrite`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true` ，則會覆寫目的地檔案（如果存在的話）。 預設值為 `false`。|
 |`SourceDirectory`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要從其中建立 *.zip* 封存的目錄。|
 
 ## <a name="remarks"></a>備註
@@ -52,7 +54,7 @@ ms.locfileid: "84183063"
 
 ## <a name="example"></a>範例
 
- 下列範例 (（如果當做匯入的 *.targets*檔案使用）) 會在建立專案之後，從輸出目錄建立 *.zip 封存。* `$(OutputPath)`屬性通常會在 MSBuild 專案檔中定義，因此匯入下列檔案的專案檔會產生 zip 封存 `output.zip` ：
+ 下列範例 (（如果當做匯入的 *.targets* 檔案使用）) 會在建立專案之後，從輸出目錄建立 *.zip 封存。* `$(OutputPath)`屬性通常會在 MSBuild 專案檔中定義，因此匯入下列檔案的專案檔會產生 zip 封存 `output.zip` ：
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -66,7 +68,7 @@ ms.locfileid: "84183063"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

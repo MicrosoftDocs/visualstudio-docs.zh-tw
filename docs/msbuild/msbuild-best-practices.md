@@ -1,5 +1,7 @@
 ---
 title: MSBuild 最佳做法 | Microsoft Docs
+description: 瞭解撰寫 MSBuild 腳本的最佳作法，例如使用條件屬性而不使用萬用字元。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b2e157ee64f5e4d91bc75a5d6f8d65d4312862
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2742324f737a4e70221e3cbe4c78cff56fa7e7ca
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78263145"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047659"
 ---
 # <a name="msbuild-best-practices"></a>MSBuild 最佳做法
 
@@ -32,6 +34,6 @@ ms.locfileid: "78263145"
 
 - 一般情況下，請避免在選取專案時使用萬用字元。 而要明確地指定檔案。 這是因為在大部分的專案類型中，MSBuild 會在不同的時間展開萬用字元，例如新增或移除專案時，可能會導致非預期的行為。 例外狀況是在 .NET Core SDK 樣式的專案中，這會正確處理萬用字元。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [進階概念](../msbuild/msbuild-advanced-concepts.md)

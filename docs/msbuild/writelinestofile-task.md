@@ -1,5 +1,7 @@
 ---
 title: WriteLinesToFile 工作 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 WriteLinesToFile 工作，將指定專案的路徑寫入指定的文字檔。
+ms.custom: SEO-VS-2020
 ms.date: 09/20/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27673ba3691e53540bce2249700c4453cb56c166
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a504f4329c9e7b15eb8fbe1b756d682f0de44907
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286098"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047379"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile 工作
 
@@ -33,13 +35,13 @@ ms.locfileid: "85286098"
 
  下表說明 `WriteLinestoFile` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`File`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要寫入項目的檔案。|
 |`Lines`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要寫入至檔案的項目。 預設值為空白清單。|
-|`Overwrite`|選擇性的 `Boolean` 參數。<br /><br /> 如果 `true`，則工作會覆寫檔案中的任何現有內容。 預設為 `false`。|
-|`Encoding`|選擇性的 `String` 參數。<br /><br /> 選取字元編碼 (例如，"Unicode")。 預設值為 UTF-8。  另請參閱 <xref:System.Text.Encoding>。|
-|`WriteOnlyWhenDifferent`|選擇性的 `Boolean` 參數。<br /><br /> 若為 `true`，則會先讀取指定的目標檔案 (如果存在)，以便與已經寫入的工作進行比較。 如果相同，則不會將檔案寫入到磁碟，而且將會保留時間戳記。 預設為 `false`。|
+|`Overwrite`|選擇性的 `Boolean` 參數。<br /><br /> 如果 `true`，則工作會覆寫檔案中的任何現有內容。 預設值為 `false`。|
+|`Encoding`|選擇性的 `String` 參數。<br /><br /> 選取字元編碼 (例如，"Unicode")。 預設值為 UTF-8。  請參閱 <xref:System.Text.Encoding>。|
+|`WriteOnlyWhenDifferent`|選擇性的 `Boolean` 參數。<br /><br /> 若為 `true`，則會先讀取指定的目標檔案 (如果存在)，以便與已經寫入的工作進行比較。 如果相同，則不會將檔案寫入到磁碟，而且將會保留時間戳記。 預設值為 `false`。|
 
 ## <a name="remarks"></a>備註
 
@@ -95,7 +97,7 @@ dotnet %~dp0$(AssemblyName).dll %*
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

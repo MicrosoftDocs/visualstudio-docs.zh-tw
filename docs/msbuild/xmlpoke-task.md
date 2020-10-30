@@ -1,5 +1,7 @@
 ---
 title: XmlPoke 工作 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 XmlPoke 工作，將 XPath 查詢所指定的值設定為 XML 檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b69afc20d15802ad79b201ca38e2d69f1d473b1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35e29004116807092452a08d3835ba3e5e1dabcd
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82072489"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047225"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke 工作
 
@@ -79,7 +81,7 @@ ms.locfileid: "82072489"
 
 `dn` 在這裡的用途是預設命名空間的假造命名空間前置詞。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

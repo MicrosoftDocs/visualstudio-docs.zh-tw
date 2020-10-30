@@ -1,5 +1,7 @@
 ---
 title: 編輯 XSLT 樣式表
+description: 瞭解 XML 編輯器中用來編輯 XSLT 樣式表單的功能，包括語法色彩標示、底線，以及從編輯器啟動 XSLT 偵錯工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81bab324c58c06cc1ca553bae2f81faf474c4ad0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31d961de62822bf036a898601ba0125db5a0dafc
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592837"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045873"
 ---
 # <a name="edit-xslt-style-sheets"></a>編輯 XSLT 樣式表
 
@@ -43,6 +45,6 @@ XSLT 偵錯工具支援指令碼區塊中的程式碼，所以您可以設定中
 
 您可以從 XML 編輯器中的 XSLT 檔案啟動 XSLT 偵錯工具。 偵錯工具支援在 XSLT 檔案中設定中斷點、檢視 XSLT 執行狀態等。 停留在 XSLT 變數上，即會出現具有變數值的工具提示。 偵錯工具可用於偵錯樣式表，或偵錯從另一個應用程式叫用的已編譯 XSL 轉換。 如需詳細資訊，請參閱 [偵錯工具 XSLT](../xml-tools/debugging-xslt.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [XML 編輯器](../xml-tools/xml-editor.md)

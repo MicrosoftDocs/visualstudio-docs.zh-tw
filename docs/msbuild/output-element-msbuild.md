@@ -1,5 +1,7 @@
 ---
 title: Output 元素 (MSBuild) | Microsoft Docs
+description: 請參閱屬性、專案和 MSBuild 輸出專案的範例，其會將工作輸出值儲存在專案和屬性中。
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f48f5166e102273651511ceb5a925b5e49e66878
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633027"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048926"
 ---
 # <a name="output-element-msbuild"></a>Output 元素 (MSBuild)
 
@@ -33,7 +35,7 @@ ms.locfileid: "77633027"
  \<Task>
  \<Output>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Output TaskParameter="Parameter"
@@ -47,7 +49,7 @@ ms.locfileid: "77633027"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`TaskParameter`|必要屬性。<br /><br /> 工作的輸出參數名稱。|
 |`PropertyName`|需要 `PropertyName` 或 `ItemName` 屬性。<br /><br /> 接收工作輸出參數值的屬性。 然後，您的專案就可以使用 $ () 語法來參考該屬性 \<PropertyName> 。 此屬性名稱可以是新的屬性名稱，或是已經在專案中定義的名稱。<br /><br /> 如果同時也使用 `ItemName`，就不能使用這個屬性。|
@@ -85,7 +87,7 @@ ms.locfileid: "77633027"
 </Target>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

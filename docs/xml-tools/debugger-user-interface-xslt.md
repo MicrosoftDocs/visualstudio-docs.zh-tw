@@ -1,5 +1,7 @@
 ---
 title: XSLT 偵錯工具視窗
+description: 瞭解 XSLT 偵錯工具 UI 元件，以控制 XSLT 特定的偵錯工具行為，包括區域變數、輸出、中斷點、呼叫堆疊和監看式視窗。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 024a8659d95855c8154ed8d9bed231739648719e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592876"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045802"
 ---
 # <a name="debugger-user-interface-xslt"></a>偵錯工具使用者介面 (XSLT) 
 
@@ -29,17 +31,17 @@ ms.locfileid: "75592876"
 
 此資料行包含目前範圍中所有區域變數的名稱。 節點集具有樹狀目錄控制項，您可以向下切入以查看其子資料夾。
 
-**值**
+**ReplTest1**
 
 此資料行顯示每個變數所包含的值。 屬性、處理指示、註解、文字及 CData 節點都顯示節點的文字值。 命名空間節點會顯示命名空間 URI。
 
-**類型**
+**型別**
 
 此資料行會識別 [ **名稱** ] 資料行中所列之每個變數的資料類型。
 
 [本機] 視窗還顯示追蹤 XSLT 轉換內容之預先定義的內容變數。 下表說明 XSLT 偵錯工具使用之預先定義的內容變數。
 
-|Name|說明|
+|Name|描述|
 |-|-----------------|
 |`last()`|內容大小。|
 |`position()`|內容節點的位置或索引編號 (相對於內容大小)。|
@@ -51,12 +53,12 @@ ms.locfileid: "75592876"
 
 ## <a name="task-list"></a>工作清單
 
-**工作清單**會列出樣式表單中的所有編譯錯誤。 按兩下錯誤，即可將游標移至發生錯誤的程式行。
+**工作清單** 會列出樣式表單中的所有編譯錯誤。 按兩下錯誤，即可將游標移至發生錯誤的程式行。
 
-**工作清單**包含 XSLT 檔中腳本區塊中發生的任何錯誤。
+**工作清單** 包含 XSLT 檔中腳本區塊中發生的任何錯誤。
 
 > [!NOTE]
-> XSLT 偵錯工具沒有警告，因此它們永遠不會出現在 **工作清單**中。
+> XSLT 偵錯工具沒有警告，因此它們永遠不會出現在 **工作清單** 中。
 
 ## <a name="breakpoints-window"></a>中斷點視窗
 
@@ -100,7 +102,7 @@ ms.locfileid: "75592876"
 
 如需詳細資訊，請使用 [反組解碼 [] 視窗](../debugger/how-to-use-the-disassembly-window.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [偵錯 XSLT](../xml-tools/debugging-xslt.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

@@ -1,5 +1,7 @@
 ---
 title: Otherwise 項目 (MSBuild) | Microsoft Docs
+description: 瞭解 MSBuild 如何使用另一個專案來指定要執行的程式碼區塊，以及只有當專案的條件為 false 時才執行。
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 384886ad4292661648f5cbfde1a583d8d75b1c03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05cc8820f073ea8c620e4331c180ee1ddbfc2b65
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633040"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048940"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 元素 (MSBuild)
 
@@ -36,7 +38,7 @@ ms.locfileid: "77633040"
  \<Choose>
 ...
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Otherwise>
@@ -123,7 +125,7 @@ ms.locfileid: "77633040"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [條件式結構](../msbuild/msbuild-conditional-constructs.md)
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)

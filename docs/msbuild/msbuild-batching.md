@@ -1,5 +1,7 @@
 ---
 title: MSBuild 批次處理 | Microsoft Docs
+description: 瞭解 MSBuild 如何根據專案中繼資料，將專案清單分割成不同的類別或批次，並使用每個批次一次執行一個目標或工作。
+ms.custom: SEO-VS-2020
 ms.date: 06/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d7c72d1da270220144cd5e6167ebecb66462ba9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c4d91e95d080b93c8bcdc4486593b4c94bcb501
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289270"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047693"
 ---
 # <a name="msbuild-batching"></a>MSBuild 批次處理
 
@@ -205,13 +207,13 @@ Test1:
 
 ## <a name="property-functions-using-metadata"></a>使用中繼資料的屬性函式
 
-批次處理可由包含中繼資料的屬性函式來控制。 例如，
+批次處理可由包含中繼資料的屬性函式來控制。 例如，套用至物件的
 
 `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`
 
 會使用 <xref:System.IO.Path.Combine%2A> 來結合根資料夾路徑和編譯項目路徑。
 
-屬性函式可能不會出現在中繼資料值內。 例如，
+屬性函式可能不會出現在中繼資料值內。 例如，套用至物件的
 
 `%(Compile.FullPath.Substring(0,3))`
 
@@ -219,7 +221,7 @@ Test1:
 
 如需屬性函式的詳細資訊，請參閱[屬性函式](../msbuild/property-functions.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [ItemMetadata 項目 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)

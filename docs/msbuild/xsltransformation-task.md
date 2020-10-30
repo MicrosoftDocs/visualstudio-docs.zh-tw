@@ -1,5 +1,7 @@
 ---
 title: XslTransformation 工作 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 XslTransformation 工作，將使用 XSLT 和輸出的 XML 輸入轉換成輸出裝置或檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d23799e5ce5bf391915ac459c69c27b990211f0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da983f6dc215a5afd651733ecea6b62846ca95cc
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094544"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047193"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation 工作
 
@@ -31,7 +33,7 @@ ms.locfileid: "79094544"
 
  下表說明 `XslTransformation` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`OutputPaths`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定 XML 轉換的輸出檔案。|
 |`Parameters`|選擇性的 `String` 參數。<br /><br /> 指定「XSLT 輸入」文件的參數。  提供保存每個參數的原始 XML `<Parameter Name="" Value="" Namespace="" />` 。|
@@ -56,7 +58,7 @@ ms.locfileid: "79094544"
                        Parameters="&lt;Parameter Name='Parameter1' Value='$(Parameter1)'/&gt;"/>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [XSLT 參數](/dotnet/standard/data/xml/xslt-parameters)
 - [工作](../msbuild/msbuild-tasks.md)

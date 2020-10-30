@@ -1,5 +1,7 @@
 ---
 title: OnError 元素 (MSBuild) | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 OnError 元素，讓一個或多個目標執行（如果失敗工作的 ContinueOnError 屬性為 false）。
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18edfe06a4f2cb98fcb41e93c920b03c53daea8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3793dddf62f67d1c2ff75d8df863dadfdadb7a1
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633079"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048949"
 ---
 # <a name="onerror-element-msbuild"></a>OnError 元素 (MSBuild)
 
@@ -32,7 +34,7 @@ ms.locfileid: "77633079"
  \<Project> \<Target>
  \<OnError>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <OnError ExecuteTargets="TargetName"
@@ -45,7 +47,7 @@ ms.locfileid: "77633079"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
 |`ExecuteTargets`|必要屬性。<br /><br /> 工作失敗時要執行的目標。 以分號分隔多個目標。 多個目標會以指定的順序執行。|
@@ -80,7 +82,7 @@ ms.locfileid: "77633079"
 </Target>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [目標](../msbuild/msbuild-targets.md)

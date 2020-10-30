@@ -1,5 +1,7 @@
 ---
 title: MSBuild 工作 | Microsoft Docs
+description: 瞭解 MSBuild 如何在建立程式期間使用工作，或執行不可部分完成之組建作業的可執行程式碼單位。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b065ea8cdaea2e2b39aa78a666ea0348f7b254ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76b359eebe0f4a22bef3ff6c6742a5134aa4520c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633131"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049053"
 ---
 # <a name="msbuild-tasks"></a>MSBuild 工作
 
@@ -69,9 +71,9 @@ ms.locfileid: "77633131"
 
  MSBuild 會在數個位置中尋找工作。 第一個位置是在副檔名為的檔案中 *。* 儲存在 .NET Framework 目錄中的 OverrideTasks。 這些檔案中的工作會覆寫任何其他具有相同名稱的工作，包括專案檔中的工作。 第二個位置是在副檔名為的檔案中 *。.NET Framework 目錄中的* 工作。 如果在這兩個位置中找不到工作，就會使用專案檔中的工作。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
-- [Msbuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
 - [工作撰寫](../msbuild/task-writing.md)
 - [內嵌工作](../msbuild/msbuild-inline-tasks.md)

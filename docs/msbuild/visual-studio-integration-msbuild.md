@@ -1,7 +1,8 @@
 ---
 title: Visual Studio 整合 (MSBuild)
 titleSuffix: ''
-ms.custom: seodec18
+description: 瞭解 Visual Studio 如何以 MSBuild 格式來裝載專案，即使這些專案是由不同的工具所撰寫，並有自訂的組建程式。
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -20,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3468ab5a6a185a759ab43229758c0ff4e9d00e35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17cb665d1b5ae399647868652f2b1e73fcd4543e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631194"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046688"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 
@@ -37,7 +38,7 @@ Visual Studio 裝載 MSBuild 以載入和建立 managed 專案。 因為 MSBuild
 
 ## <a name="project-file-name-extensions"></a>專案檔副檔名
 
- *MSBuild.exe* 會辨識符合模式的任何專案檔名稱延伸 *。 \*proj*。 不過，Visual Studio 只能辨識這些專案副檔名的子集，以決定將載入專案的特定語言專案系統。 Visual Studio 沒有以語言中立的 MSBuild 為基礎的專案系統。
+ *MSBuild.exe* 會辨識符合模式的任何專案檔名稱延伸 *。 \*proj* 。 不過，Visual Studio 只能辨識這些專案副檔名的子集，以決定將載入專案的特定語言專案系統。 Visual Studio 沒有以語言中立的 MSBuild 為基礎的專案系統。
 
  例如，c # 專案系統載入 *.csproj* 檔案，但 Visual Studio 無法載入 *xxproj* 檔案。 任意語言的原始程式檔專案檔必須使用與 Visual Basic 或 c # 專案檔相同的副檔名，才能在 Visual Studio 中載入。
 
@@ -51,7 +52,7 @@ Visual Studio 裝載 MSBuild 以載入和建立 managed 專案。 因為 MSBuild
 
 ```xml
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "
-Condition=" '$(Configuration)' == 'Release' " 
+Condition=" '$(Configuration)' == 'Release' " 
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "
 ```
 
@@ -59,7 +60,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="additional-build-actions"></a>其他建置動作
 
- Visual Studio 可讓您使用 [**檔案屬性**] 視窗的 [**建立動作**] 屬性，來變更專案中檔案的專案類型名稱。 **Compile**、**EmbeddedResource**、**Content** 和 **None** 項目類型名稱會一直列在這個功能表中，另外還會列出專案中既有的其他項目類型名稱。 若要確保自訂的項目類型名稱都會一直列在這個功能表中，您可以將其名稱加入至名為 `AvailableItemName`的項目類型中。 例如，如果在專案檔中加入下列程式碼，就會將自訂類型 **JScript** 加入至所有會匯入此類型之專案的這個功能表中：
+ Visual Studio 可讓您使用 [ **檔案屬性** ] 視窗的 [ **建立動作** ] 屬性，來變更專案中檔案的專案類型名稱。 **Compile** 、 **EmbeddedResource** 、 **Content** 和 **None** 項目類型名稱會一直列在這個功能表中，另外還會列出專案中既有的其他項目類型名稱。 若要確保自訂的項目類型名稱都會一直列在這個功能表中，您可以將其名稱加入至名為 `AvailableItemName`的項目類型中。 例如，如果在專案檔中加入下列程式碼，就會將自訂類型 **JScript** 加入至所有會匯入此類型之專案的這個功能表中：
 
 ```xml
 <ItemGroup>
@@ -92,13 +93,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="build-solutions"></a>建置解決方案
 
- 在 Visual Studio 中，方案檔和專案建立順序是由 Visual Studio 本身所控制。 使用命令列上的 *msbuild.exe* 建立方案時，MSBuild 會剖析方案檔並排列專案組建的順序。 在這兩種情況下都會依據相依性順序個別建置專案，而且不會走訪專案對專案間的參考。 相反地，使用 *msbuild.exe*建立個別專案時，會對專案對專案的參考進行往返。
+ 在 Visual Studio 中，方案檔和專案建立順序是由 Visual Studio 本身所控制。 使用命令列上的 *msbuild.exe* 建立方案時，MSBuild 會剖析方案檔並排列專案組建的順序。 在這兩種情況下都會依據相依性順序個別建置專案，而且不會走訪專案對專案間的參考。 相反地，使用 *msbuild.exe* 建立個別專案時，會對專案對專案的參考進行往返。
 
  在 Visual Studio 內建立時，屬性 `$(BuildingInsideVisualStudio)` 會設定為 `true` 。 這可以在您的專案或 *.targets* 檔案中使用，使組建的行為不同。
 
 ## <a name="display-properties-and-items"></a>顯示屬性和項目
 
- Visual Studio 會辨識某些屬性名稱和值。 例如，在專案中下列屬性會使 [ **Windows 應用程式** ] 出現在 [ **專案設計工具** ] 的 [ **應用程式類型**] 方塊中。
+ Visual Studio 會辨識某些屬性名稱和值。 例如，在專案中下列屬性會使 [ **Windows 應用程式** ] 出現在 [ **專案設計工具** ] 的 [ **應用程式類型** ] 方塊中。
 
 ```xml
 <OutputType>WinExe</OutputType>
@@ -110,7 +111,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  具有任意名稱的屬性不會顯示在 Visual Studio 中。 若要在 Visual Studio 中修改任意屬性，您必須在 XML 編輯器中開啟專案檔，然後手動編輯。 如需詳細資訊，請參閱本主題稍後的[在 Visual Studio 中編輯專案檔](#edit-project-files-in-visual-studio)一節。
 
- 專案中以任意專案類型名稱定義的專案預設會顯示在其專案節點下的 **方案總管** 中。 若要隱藏項目，請將 `Visible` 中繼資料設定為 `false`。 例如，下列專案將參與建立程式，但不會顯示在 **方案總管**中。
+ 專案中以任意專案類型名稱定義的專案預設會顯示在其專案節點下的 **方案總管** 中。 若要隱藏項目，請將 `Visible` 中繼資料設定為 `false`。 例如，下列專案將參與建立程式，但不會顯示在 **方案總管** 中。
 
 ```xml
 <ItemGroup>
@@ -121,9 +122,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```
 
 > [!NOTE]
-> `Visible`C + + 專案的**方案總管**會忽略中繼資料。 即使設為 false，也一律會顯示專案 `Visible` 。
+> `Visible`C + + 專案的 **方案總管** 會忽略中繼資料。 即使設為 false，也一律會顯示專案 `Visible` 。
 
- 根據預設，在檔案中宣告並匯入至專案的項目不會顯示出來。 在建立程式期間建立的專案絕不會顯示在 **方案總管**中。
+ 根據預設，在檔案中宣告並匯入至專案的項目不會顯示出來。 在建立程式期間建立的專案絕不會顯示在 **方案總管** 中。
 
 ## <a name="conditions-on-items-and-properties"></a>項目和屬性的條件
 
@@ -131,7 +132,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  當您決定要顯示的屬性值時，Visual Studio 考慮設定相依的屬性會以不同于視為個別設定的屬性來評估。 對於它認為設定相依的屬性，Visual Studio `Configuration` `Platform` 適當地設定和屬性，並指示 MSBuild 重新評估專案。 如果是它認為與組態無關的屬性，則不會決定條件的評估方式。
 
- 專案的條件運算式一律會被忽略，以決定是否應該在 **方案總管**中顯示專案。
+ 專案的條件運算式一律會被忽略，以決定是否應該在 **方案總管** 中顯示專案。
 
 ## <a name="debugging"></a>偵錯
 
@@ -147,23 +148,23 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>若要在 Visual Studio 中卸載和編輯專案檔
 
-1. 在 [ **方案總管**] 中，開啟專案的捷徑功能表，然後選擇 [ **卸載專案**]。
+1. 在 [ **方案總管** ] 中，開啟專案的捷徑功能表，然後選擇 [ **卸載專案** ]。
 
-     專案便會標記為 [ **(無法使用)**]。
+     專案便會標記為 [ **(無法使用)** ]。
 
-2. 在**方案總管**中，開啟無法使用之專案的快捷方式功能表，然後選擇 [**編輯 \<Project File> **]。
+2. 在 **方案總管** 中，開啟無法使用之專案的快捷方式功能表，然後選擇 [ **編輯 \<Project File>** ]。
 
      專案檔隨即在 [Visual Studio XML 編輯器] 中開啟。
 
 3. 編輯、儲存，然後關閉專案檔。
 
-4. 在 [ **方案總管**] 中，開啟無法使用之專案的捷徑功能表，然後選擇 [ **重新載入專案**]。
+4. 在 [ **方案總管** ] 中，開啟無法使用之專案的捷徑功能表，然後選擇 [ **重新載入專案** ]。
 
 ## <a name="intellisense-and-validation"></a>IntelliSense 和驗證
 
- 使用 XML 編輯器編輯專案檔時，IntelliSense 和驗證是由 MSBuild 架構檔案所驅動。 這些會安裝在架構快取中，可在* \<Visual Studio installation directory> \Xml\Schemas\1033\MSBuild*中找到。
+ 使用 XML 編輯器編輯專案檔時，IntelliSense 和驗證是由 MSBuild 架構檔案所驅動。 這些會安裝在架構快取中，可在 *\<Visual Studio installation directory> \Xml\Schemas\1033\MSBuild* 中找到。
 
- 核心 MSBuild 類型定義于 Microsoft.build.commontypes.xsd 中 *，Visual Studio* 所使用的一般類型會定義在 *.xsd*中。 若要自訂架構，讓您擁有自訂專案類型名稱、屬性和工作的 IntelliSense 和 *驗證，您可以編輯 microsoft.build.commontypes.xsd*或建立您自己的架構，其中包含或核心架構。 如果已經建立了自己的結構描述，必須使用 [ **屬性** ] 視窗引導 XML 編輯器找到它。
+ 核心 MSBuild 類型定義于 Microsoft.build.commontypes.xsd 中 *，Visual Studio* 所使用的一般類型會定義在 *.xsd* 中。 若要自訂架構，讓您擁有自訂專案類型名稱、屬性和工作的 IntelliSense 和 *驗證，您可以編輯 microsoft.build.commontypes.xsd* 或建立您自己的架構，其中包含或核心架構。 如果已經建立了自己的結構描述，必須使用 [ **屬性** ] 視窗引導 XML 編輯器找到它。
 
 ## <a name="edit-loaded-project-files"></a>編輯已載入的專案檔
 
@@ -197,11 +198,11 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="performance-shortcuts"></a>效能捷徑
 
- 如果您使用 Visual Studio IDE，藉由選擇 F5 鍵或在功能表列上選擇 [ **Debug**開始偵錯工具] 來啟動調試  >  **Start Debugging**程式 () 或建立專案 (例如，組建**Build**  >  **組建方案**) ，組建程式會使用快速更新檢查來改善效能。 在某些情況下，自訂組建會建立輪流建置的檔案，此時快速更新檢查就無法正確識別變更的檔案。 需要更完整更新檢查的專案可以藉由設定環境變數 `DISABLEFASTUPTODATECHECK=1`關閉快速檢查。 或者，專案可以在專案中或專案匯入的檔案中將此設為 MSBuild 屬性。
+ 如果您使用 Visual Studio IDE，藉由選擇 F5 鍵或在功能表列上選擇 [ **Debug** 開始偵錯工具] 來啟動調試  >  **Start Debugging** 程式 () 或建立專案 (例如，組建 **Build**  >  **組建方案** ) ，組建程式會使用快速更新檢查來改善效能。 在某些情況下，自訂組建會建立輪流建置的檔案，此時快速更新檢查就無法正確識別變更的檔案。 需要更完整更新檢查的專案可以藉由設定環境變數 `DISABLEFASTUPTODATECHECK=1`關閉快速檢查。 或者，專案可以在專案中或專案匯入的檔案中將此設為 MSBuild 屬性。
 
  快速更新檢查並不適用 Visual Studio 中的定期組建，而且專案的建置方式就如同您在命令提示字元中叫用組建一般。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：擴充 Visual Studio 組建進程](../msbuild/how-to-extend-the-visual-studio-build-process.md)
 - [從 IDE 中啟動組建](../msbuild/starting-a-build-from-within-the-ide.md)

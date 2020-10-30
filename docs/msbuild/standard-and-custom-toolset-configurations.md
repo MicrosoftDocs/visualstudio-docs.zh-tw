@@ -1,5 +1,7 @@
 ---
 title: 標準和自訂工具組的組態 | Microsoft Docs
+description: 深入瞭解標準和自訂的 MSBuild 工具組，其中包含可供您用來建立應用程式專案的工作、目標和工具的參考。
+ms.custom: SEO-VS-2020
 ms.date: 01/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb75d6fc02f2841383127482503799b2c78512cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b82eaf6ca52b04d39e9f776feca74f5bb223a0d5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289179"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048182"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>標準和自訂工具組的設定
 
@@ -55,7 +57,7 @@ Visual Studio 2017 及更新版本不會使用登錄機碼作為 MSBuild 的路�
 
 |登錄機碼|索引鍵名稱|字串索引鍵值|
 |------------------|--------------|----------------------|
-|**\ HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2。0\\** |**MSBuildToolsPath**|**.NET Framework 2.0 安裝路徑**|
+|**\ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2。0\\** |**MSBuildToolsPath**|**.NET Framework 2.0 安裝路徑**|
 |**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\** |**MSBuildToolsPath**|**.NET Framework 3.5 安裝路徑**|
 |**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\** |**MSBuildToolsPath**|**.NET Framework 4 安裝路徑**|
 
@@ -76,7 +78,7 @@ Visual Studio 2017 及更新版本不會使用登錄機碼作為 MSBuild 的路�
 
  當標準工具組無法滿足您的組建需求時，您可以建立自訂的工具組。 例如，您可能有一個組建實驗室案例，在此案例中，您必須有不同的系統來建立 c + + 專案。 使用自訂工具組，您就可以在建立專案或執行 *MSBuild.exe* 時，將自訂值指派給 `ToolsVersion` 屬性。 透過這樣做，您也可以使用 `$(MSBuildToolsPath)` 屬性匯入該目錄的 *.targets* 檔案，以及定義您自己的自訂工具組屬性，這些屬性可用於使用該工具組的任何專案。
 
- 在 *MSBuild.exe* (如果使用 MSBuild 引擎，則為裝載 MSBuild 引擎的自訂工具) 的設定檔中指定自訂工具組。 例如，如果您想要定義名為 *MyCustomToolset* 的工具組，*MSBuild.exe* 的設定檔可以包含下列工具組定義。
+ 在 *MSBuild.exe* (如果使用 MSBuild 引擎，則為裝載 MSBuild 引擎的自訂工具) 的設定檔中指定自訂工具組。 例如，如果您想要定義名為 *MyCustomToolset* 的工具組， *MSBuild.exe* 的設定檔可以包含下列工具組定義。
 
 ```xml
 <msbuildToolsets default="MyCustomToolset">
@@ -112,6 +114,6 @@ Visual Studio 2017 及更新版本不會使用登錄機碼作為 MSBuild 的路�
 
   您也可以使用新增 MSBuildToolsPath 屬性時所用的相同語法，在組態檔中新增自訂的工具版本特定屬性。 為使專案檔能夠使用這些自訂屬性，請使用和組態檔指定的值名稱相同的名稱。 您可以在設定檔中定義工具組，但不能定義子工具組。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

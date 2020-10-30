@@ -1,5 +1,7 @@
 ---
 title: MSBuild 特殊字元 | Microsoft Docs
+description: 瞭解 MSBuild 保留字元，以供特定內容中的特殊用途使用，以及何時及如何將這些字元換用。
+ms.custom: SEO-VS-2020
 ms.date: 06/12/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdc9024db06fe27fab5dfdf9589300a6eb671368
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67de0c2e5aa35fa3a1f54e26f425f4b0916cb428
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633209"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049121"
 ---
 # <a name="msbuild-special-characters"></a>MSBuild 特殊字元
 
@@ -39,7 +41,7 @@ MSBuild 會在特定內容中保留一些特殊用途的字元。 如果您想�
 |?|%3F|`Include` 和 `Exclude` 屬性中的檔案名稱萬用字元|
 |*|%2A|用於 `Include` 和 `Exclude` 屬性中的檔案名稱萬用字元|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [進階概念](../msbuild/msbuild-advanced-concepts.md)
 - [項目](../msbuild/msbuild-items.md)

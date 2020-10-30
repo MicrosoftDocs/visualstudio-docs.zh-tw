@@ -1,5 +1,7 @@
 ---
 title: MSBuild 專案檔案結構描述參考 | Microsoft Docs
+description: 查看資料表，其中列出所有 MSBuild XML 架構元素及其可用屬性和子項目。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,18 +17,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 824a6f562638edb04854431c437289f2741c46d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 549e78309ef5fc5e9baf4237f9eca8c7484bc198
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78263082"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046164"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>MSBuild 專案檔案結構描述參考
 
 提供所有 MSBuild XML 架構元素的資料表及其可用屬性和子項目。
 
- MSBuild 會使用專案檔來指示組建引擎要建立哪些專案，以及如何建立它。 MSBuild 專案檔案是符合 MSBuild XML 架構的 XML 檔案。 本節說明 MSBuild) 檔案的 XML 架構定義 (*。*
+ MSBuild 會使用專案檔來指示組建引擎要建立哪些專案，以及如何建立它。 MSBuild 專案檔案是符合 MSBuild XML 架構的 XML 檔案。 本節說明 MSBuild) 檔案的 XML 架構定義 ( *。*
 
 Visual Studio 2017 和更新版本中不需要 MSBuild 專案檔中的架構連結。 如果有的話，則不論 Visual Studio 的版本為何，都應該如此 ` http://schemas.microsoft.com/developer/msbuild/2003` 。
 
@@ -37,7 +39,7 @@ Visual Studio 2017 和更新版本中不需要 MSBuild 專案檔中的架構連�
 |項目|子元素|屬性|
 |-------------|--------------------|----------------|
 |[Choose 項目 (MSBuild)](../msbuild/choose-element-msbuild.md)|Otherwise<br /><br /> 當|--|
-|[Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md)|--|條件<br /><br /> 專案|
+|[Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md)|--|條件<br /><br /> Project|
 |[ImportGroup 項目](../msbuild/importgroup-element.md)|匯入|條件|
 |[Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)|*ItemMetaData*|條件<br /><br /> 排除<br /><br /> 包含<br /><br /> 移除|
 |[MSBuild)  (ItemDefinitionGroup 元素 ](../msbuild/itemdefinitiongroup-element-msbuild.md)|*Item*|條件|
@@ -56,10 +58,10 @@ Visual Studio 2017 和更新版本中不需要 MSBuild 專案檔中的架構連�
 |[MSBuild)  (目標元素 ](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Task*|AfterTargets<br /><br /> BeforeTargets<br /><br /> 條件<br /><br /> DependsOnTargets<br /><br /> 輸入<br /><br /> KeepDuplicateOutputs<br /><br /> Name<br /><br /> 輸出<br /><br /> 傳回|
 |[目標 (MSBuild) 的 Task 元素 ](../msbuild/task-element-msbuild.md)|輸出|條件<br /><br /> ContinueOnError<br /><br /> *參數*|
 |[UsingTask (MSBuild) 的 Task 元素 ](../msbuild/taskbody-element-msbuild.md)|*Data*|評估|
-|[MSBuild)  (UsingTask 元素 ](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> 工作|AssemblyFile<br /><br /> AssemblyName<br /><br /> 條件<br /><br /> TaskFactory<br /><br /> TaskName|
+|[MSBuild)  (UsingTask 元素 ](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> Task|AssemblyFile<br /><br /> AssemblyName<br /><br /> 條件<br /><br /> TaskFactory<br /><br /> TaskName|
 |[當元素 (MSBuild 時) ](../msbuild/when-element-msbuild.md)|Choose<br /><br /> ItemGroup<br /><br /> PropertyGroup|條件|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [條件](../msbuild/msbuild-conditions.md)

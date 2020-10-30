@@ -1,5 +1,7 @@
 ---
 title: 從 IDE 中啟動組建 | Microsoft Docs
+description: 瞭解如何使用 VisualStudio 來啟動自訂專案系統的組建。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c4792590565c027a316ed95abb067faa30f5dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e0447cae810da48bd592371a40f22c40ff45cec
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632117"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048172"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>從 IDE 中啟動組建
 

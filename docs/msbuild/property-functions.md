@@ -1,5 +1,7 @@
 ---
 title: 屬性函式 | Microsoft Docs
+description: 瞭解如何使用屬性函式，這些函式會呼叫出現在 MSBuild 屬性定義中 .NET Framework 方法。
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c1e7a90d5d037865d9942ea1b91f33d7724706f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183648"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048815"
 ---
 # <a name="property-functions"></a>屬性函式
 
@@ -151,7 +153,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 
 以下是 MSBuild 屬性函式的清單：
 
-|函式簽章|說明|
+|函式簽章|描述|
 |------------------------|-----------------|
 |double Add(double a, double b)|將兩個雙精度浮點數相加。|
 |long Add(long a, long b)|將兩個長整數相加。|
@@ -248,9 +250,9 @@ MSBuild `GetRegistryValue` 屬性函式會傳回登錄機碼的值。 此函式�
 下列範例顯示如何使用此函式：
 
 ```
-$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
+$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
-$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
+$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
 ```
 
 ## <a name="msbuild-getregistryvaluefromview"></a>MSBuild GetRegistryValueFromView
@@ -263,7 +265,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-Windows 64 位作業系統會維護 **HKEY_LOCAL_MACHINE 的 \software\wow6432node** 登錄機碼，以提供適用于32位應用程式的 **HKEY_LOCAL_MACHINE \software** registry view。
+Windows 64 位作業系統會維護 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** 登錄機碼，以呈現32位應用程式的 **HKEY_LOCAL_MACHINE\SOFTWARE** 登錄視圖。
 
 根據預設，在 WOW64 上執行的 32 位元應用程式會存取 32 位元登錄檢視，而 64 位元應用程式會存取 64 位元登錄檢視。
 
@@ -344,7 +346,7 @@ Output:
 
 函數 `Exists` 和 `HasTrailingSlash` 不是屬性函數。 它們可與屬性搭配使用 `Condition` 。 請參閱 [MSBuild 條件](msbuild-conditions.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [MSBuild 屬性](../msbuild/msbuild-properties.md)
 

@@ -1,5 +1,7 @@
 ---
 title: 要逸出的特殊字元 | Microsoft Docs
+description: 瞭解只有在使用這些特殊字元的內容中有特殊意義時，才需要將這些特殊字元換用。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c3a0feed4177bd41ee2b77edc49336bfda3171b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 433e762bf68b6a3956616e0ccccc229bca8f86b9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184038"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048269"
 ---
 # <a name="special-characters-to-escape"></a>要逸出的特殊字元
 
@@ -45,7 +47,7 @@ ms.locfileid: "84184038"
 > [!NOTE]
 > 在某些情況下，您可能需要將雙引號 ( ") 字元，例如在工作中使用時 `Exec` 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：在 MSBuild 中 Escape 特殊字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

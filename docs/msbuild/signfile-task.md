@@ -1,5 +1,7 @@
 ---
 title: SignFile 工作 | Microsoft Docs
+description: 瞭解 MSBuild 如何使用 SignFile 工作，利用指定的憑證來簽署指定的檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 319afb810ba755d0201d3edaebcb06a493b59047
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41fc320034ef5ea86006abf6f19079e8b0a45a82
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86301443"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048282"
 ---
 # <a name="signfile-task"></a>SignFile 工作
 
@@ -73,7 +75,7 @@ ms.locfileid: "86301443"
 > [!NOTE]
 > 憑證指紋是憑證的 SHA-1 雜湊。 如需詳細資訊，請參閱[取得受信任的根 CA 憑證的 SHA-1 雜湊](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\))。 如果您從憑證詳細資料複製並貼上指紋，請確定您未包含額外的 (3F) 不可見字元，這可能會導致 `SignFile` 找不到憑證。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)
