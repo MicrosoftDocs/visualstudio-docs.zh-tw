@@ -1,5 +1,6 @@
 ---
-title: 選項對話方塊、專案和方案、Web 專案
+title: '[選項] 對話方塊中的 Web 專案'
+ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.topic: reference
 f1_keywords:
@@ -10,16 +11,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b393291ccb316b62b2a056b55ca902781196b637
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efff521076b2d4a4b091ebf30b42f0d3ea4daa1f
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114478"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102632"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>選項對話方塊、專案和方案、Web 專案
 
-設定 Web 專案將用來在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 內進行開發的 Web 伺服器。 若要存取這些選項，請選取 [工具] > [選項]**** 來展開 [專案和解決方案]****，然後選取 [Web 專案]****。
+設定 Web 專案將用來在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 內進行開發的 Web 伺服器。 若要存取這些選項，請選取 [工具] > [選項]  來展開 [專案和解決方案]  ，然後選取 [Web 專案]  。
 
 根據預設，在 Visual Studio 中執行 Web 專案會使用 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [Visual Studio 中 ASP.NET Web 專案的 Web 伺服器](/previous-versions/aspnet/58wxa9w5\(v\=vs.120\))。
 
