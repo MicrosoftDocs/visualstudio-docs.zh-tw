@@ -11,19 +11,19 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 56a2da4e02f890e199a6ff69b5a61882d1dfa416
-ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
+ms.openlocfilehash: 8715bd00653f74d874dc077180a9978b26bff8f1
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92039795"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134728"
 ---
 # <a name="devinit-commands"></a>devinit 命令
 
 ## <a name="init"></a>Init
 
 ```console
-> devinit init
+devinit init
 ```
 
 藉由執行目前工作目錄中檔案 [_.devinit.js_](devinit-json.md) 中指定的工具來初始化環境。  
@@ -70,7 +70,7 @@ ms.locfileid: "92039795"
 ## <a name="run"></a>執行
 
 ```console
-> devinit run -t <toolname>
+devinit run -t <toolname>
 ```
 
 執行特定的工具，參數如下所示。 請參閱每個特定使用工具的 [檔](devinit-tool-list.md) 。
@@ -111,19 +111,19 @@ ms.locfileid: "92039795"
 使用 `<arg>` 在其值中包含空格的，必須包含一組額外的轉義引號。
 
 ```console
-> devinit run -t <toolname> -<somearg> "<some value>"
+devinit run -t <toolname> -<somearg> "<some value>"
 ```
 
 若要將 dotnet 安裝到特定目錄 `C:\Program Files\dotnet` ：
 
 ```console
-> devinit run -t require-dotnetcoresdk --"-InstallDir \"C:\Program Files\dotnet\""
+devinit run -t require-dotnetcoresdk --"-InstallDir \"C:\Program Files\dotnet\""
 ```
 
 ## <a name="list"></a>清單
 
 ```console
-> devinit list
+devinit list
 ```
 
 列印所有可用工具的清單。
@@ -131,7 +131,7 @@ ms.locfileid: "92039795"
 ## <a name="show"></a>顯示
 
 ```console
-> devinit show -t <toolname>
+devinit show -t <toolname>
 ```
 
 | 引數       | 必要 | 描述                                                                          |
@@ -143,7 +143,7 @@ ms.locfileid: "92039795"
 ## <a name="version"></a>版本
 
 ```console
-> devinit version
+devinit version
 ```
 
 列印 devinit 的目前版本資訊。
@@ -151,8 +151,8 @@ ms.locfileid: "92039795"
 ## <a name="help"></a>説明
 
 ```console
-> devinit help
-> devinit help list
+devinit help
+devinit help list
 ```
 
 列印 devinit 或特定命令的解說文字 `devinit <command>` 。

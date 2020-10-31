@@ -1,5 +1,6 @@
 ---
 title: 匯出 Direct2D 和 JavaScript 應用程式的材質
+description: 影像內容管線會產生與 Direct2D 內部轉譯相容的材質，以供 Direct2D apps 和使用 JavaScript 建立的 UWP 應用程式中使用。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0433549f2a473da5f33eda6e264a46ea280e251
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 502dcaec9aeb8fdb2f4b7a72b801f19d2d08dbc4
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102619"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134390"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>如何：匯出材質以搭配 Direct2D 或 JavaScript 應用程式使用
 

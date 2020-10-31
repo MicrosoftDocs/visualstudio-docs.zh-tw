@@ -1,5 +1,7 @@
 ---
 title: 使用 3D 資產來打造遊戲和應用程式
+description: 瞭解您可以用來建立或修改 DirectX 遊戲和應用程式之3D 模型、材質和著色器的 Visual Studio 工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa9fc04df3e817730492353e54d74c1e46c3775e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11f031aa3e3767af3132e68f92c492dc7e3fae6f
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589795"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134546"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>使用 3D 資產來打造遊戲和應用程式
 
@@ -23,7 +25,7 @@ ms.locfileid: "75589795"
 
 ## <a name="directx-app-development-in-visual-studio"></a>Visual Studio 中的 DirectX 應用程式開發
 
-DirectX 應用程式通常會結合程式設計邏輯、DirectX API 和高階著色語言 (HLSL) 程式，以及音訊和 3D 視覺效果資產，以呈現豐富的互動式多媒體體驗。 Visual Studio 包含的工具可用來處理影像和紋理、3D 模型以及著色器，而且不需要離開 IDE 就能使用另一個工具。 Visual Studio 工具特別適用於建立「預留位置」** 資產，而您可以先使用這些資產來測試程式碼或建置原型，再委任生產環境就緒的資產，以及當您偵錯您的應用程式時檢查和修改生產環境就緒的資產。
+DirectX 應用程式通常會結合程式設計邏輯、DirectX API 和高階著色語言 (HLSL) 程式，以及音訊和 3D 視覺效果資產，以呈現豐富的互動式多媒體體驗。 Visual Studio 包含的工具可用來處理影像和紋理、3D 模型以及著色器，而且不需要離開 IDE 就能使用另一個工具。 Visual Studio 工具特別適用於建立「預留位置」  資產，而您可以先使用這些資產來測試程式碼或建置原型，再委任生產環境就緒的資產，以及當您偵錯您的應用程式時檢查和修改生產環境就緒的資產。
 
 以下是有關可在 Visual Studio 中使用之資產類型的詳細資訊。
 
@@ -35,7 +37,7 @@ DirectX 應用程式通常會結合程式設計邏輯、DirectX API 和高階著
 
 ### <a name="3d-models"></a>3D 模型
 
-3D 模型會在遊戲和應用程式中建立空間和圖形。 通常，模型會將資料點在3D 空間中的位置（稱為 *頂點*）編碼，並將資料編制索引，以定義代表模型圖形的線條或三角形。 其他資料可以與這些頂點建立關聯；例如，色彩資訊、標準向量或應用程式特定屬性。 每個模型也可以定義整個物件屬性；例如，使用哪一個著色器來計算物件介面的外觀，或要套用的紋理。
+3D 模型會在遊戲和應用程式中建立空間和圖形。 通常，模型會將資料點在3D 空間中的位置（稱為 *頂點* ）編碼，並將資料編制索引，以定義代表模型圖形的線條或三角形。 其他資料可以與這些頂點建立關聯；例如，色彩資訊、標準向量或應用程式特定屬性。 每個模型也可以定義整個物件屬性；例如，使用哪一個著色器來計算物件介面的外觀，或要套用的紋理。
 
 您可以使用 Visual Studio 模型編輯器來處理數種常見格式的 3D 模型。
 
@@ -54,7 +56,7 @@ Visual Studio 使用 DirectX 轉譯 2D 和 3D 資產。 您可以選取 DirectX 
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[使用紋理和影像](../designers/working-with-textures-and-images.md)|描述如何使用 Visual Studio 來使用影像和紋理。|
 |[使用3D 模型](../designers/working-with-3-d-models.md)|描述如何使用 Visual Studio 來使用 3D 模型。|

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 5697237c1bce719a4658e84435db0426f363f746
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a9731469f6725c0a4b9118c4e41235974a19c473
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005535"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134382"
 ---
 # <a name="devinit-and-github-codespaces"></a>devinit 與 GitHub Codespace
 
@@ -29,7 +29,7 @@ devinit 是 [GitHub Codespaces](https://github.com/features/codespaces) 的絕�
 ## <a name="examples"></a>範例
 
 ### <a name="with-a-devinitjson-file"></a>使用檔案 .devinit.js
-在此範例中，下列檔案 _ 上的.devcontainer.js_ 會放在存放庫根目錄中，並放在檔案的 _.devinit.js_ 旁。 檔案也可以放在 _devcontainer_ 目錄中。
+在此範例中，下列檔案 _上的.devcontainer.js_ 會放在存放庫根目錄中，並放在檔案的 _.devinit.js_ 旁。 檔案也可以放在 _devcontainer_ 目錄中。
 
 ```json
 {
@@ -54,14 +54,14 @@ devinit 是 [GitHub Codespaces](https://github.com/features/codespaces) 的絕�
 
 ### <a name="from-a-terminal-prompt"></a>從終端機提示字元
 
-當目前工作目錄包含檔案 _ 上的.devinit.js_ 時。
+當目前工作目錄包含檔案 _上的.devinit.js_ 時。
 
 ```console
-> devinit init
+devinit init
 ```
 
 當 _.devinit.js在_ 另一個目錄中時。
 
 ```console
-> devinit init -f path/to/.devinit.json
+devinit init -f path/to/.devinit.json
 ```

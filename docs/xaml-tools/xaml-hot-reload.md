@@ -1,7 +1,7 @@
 ---
 title: 使用 XAML 熱重新載入來撰寫和偵測 XAML
 description: XAML 熱重新載入或 XAML [編輯後繼續] 可讓您在執行應用程式時變更 XAML 程式碼
-ms.date: 08/05/2019
+ms.date: 09/23/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - xaml edit and continue
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b40da28cce9d2189b2f30ff6ea958926f3041836
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.openlocfilehash: 37d4bc0417d30d64a05cc7f283784d3b23d9adee
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91135075"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134023"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>使用 XAML 熱重新載入在 Visual Studio 中撰寫和偵測執行中的 XAML 程式碼
 
@@ -41,20 +41,20 @@ XAML 熱重新載入可讓您在應用程式執行時變更 XAML 程式碼，以
 ![XAML 熱重新載入](../debugger/media/xaml-hot-reload-using.gif)
 
 > [!NOTE]
-> 目前只有當您在 Visual Studio 中執行您的應用程式，或 Blend for Visual Studio 附加偵錯工具 (**F5** 或 **啟動調試** 程式) 時，才支援 Visual Studio XAML 熱重新載入。 除非您[手動設定環境變數](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process)，否則您無法使用 [[附加至進程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)] 來啟用此體驗。
+> 目前只有當您在 Visual Studio 中執行您的應用程式，或 Blend for Visual Studio 附加偵錯工具 ( **F5** 或 **啟動調試** 程式) 時，才支援 Visual Studio XAML 熱重新載入。 除非您[手動設定環境變數](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process)，否則您無法使用 [[附加至進程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)] 來啟用此體驗。
 
-## <a name="known-limitations"></a>已知限制
+## <a name="known-limitations"></a>已知的限制
 
 以下是 XAML 熱重新載入的已知限制。 若要解決您遇到的任何限制，只要停止偵錯工具，然後完成操作即可。
 
-|限制|WPF|UWP|注意|
+|限制|WPF|UWP|備註|
 |-|-|-|-|
-|當應用程式正在執行時，將事件連接至控制項|不支援|不支援|請參閱錯誤： *確定事件失敗*。 請注意，在 WPF 中，您可以參考現有的事件處理常式。 在 UWP 應用程式中，不支援參考現有的事件處理常式。|
-|在資源字典中建立資源物件，例如您應用程式的頁面/視窗或*應用程式*中的資源物件。|從 Visual Studio 2019 Update 2 開始支援|支援|範例：將加入 `SolidColorBrush` 至資源字典以做為使用 `StaticResource` 。</br>注意：使用 XAML 熱重新載入時，可以套用/使用靜態資源、樣式轉換器和其他寫入資源字典的元素。 不支援建立資源。</br> 變更資源字典 `Source` 屬性。|
-|當應用程式正在執行時，將新的控制項、類別、視窗或其他檔案新增至專案|不支援|不支援|無|
-|管理 NuGet 套件 (新增/移除/更新套件) |不支援|不支援|無|
+|當應用程式正在執行時，將事件連接至控制項|不支援|不支援|請參閱錯誤： *確定事件失敗* 。 請注意，在 WPF 中，您可以參考現有的事件處理常式。 在 UWP 應用程式中，不支援參考現有的事件處理常式。|
+|在資源字典中建立資源物件，例如您應用程式的頁面/視窗或 *應用程式* 中的資源物件。|從 Visual Studio 2019 Update 2 開始支援|支援|範例：將加入 `SolidColorBrush` 至資源字典以做為使用 `StaticResource` 。</br>注意：使用 XAML 熱重新載入時，可以套用/使用靜態資源、樣式轉換器和其他寫入資源字典的元素。 不支援建立資源。</br> 變更資源字典 `Source` 屬性。|
+|當應用程式正在執行時，將新的控制項、類別、視窗或其他檔案新增至專案|不支援|不支援|None|
+|管理 NuGet 套件 (新增/移除/更新套件) |不支援|不支援|None|
 |變更使用 {x:Bind} 標記延伸的資料系結|N/A|從 Visual Studio 2019 開始支援|這需要 Windows 10 1809 版 (組建 10.0.17763) 。 Visual Studio 2017 或之前版本中不支援。|
-|不支援變更 X：Uid 指示詞|不適用|不支援|無|
+|不支援變更 X：Uid 指示詞|不適用|不支援|None|
 |多個進程 | 支援 | 支援 | 在 Visual Studio 2019 [16.6 版](/visualstudio/releases/2019/release-notes-v16.6) 和更新版本中支援 |
 
 ## <a name="error-messages"></a>錯誤訊息

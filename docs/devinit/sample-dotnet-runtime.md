@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b38490217a384e748ae97ec4b808f197b4af3b7b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 04ac5ba718e72085f8e050ecf0e2ce0cc1305629
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005649"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134264"
 ---
 # <a name="net-core-runtime"></a>.NET Core 執行階段
 
@@ -24,7 +24,7 @@ ms.locfileid: "91005649"
 
 ## <a name="postclonesetupps1"></a>PostCloneSetup.ps1
 
-此腳本是從 _PostCloneSetup.ps1_ 呼叫，也可以在本機執行以設定存放庫。 此檔案必須位於與 _.devcontainer.js_的相同資料夾中。
+此腳本是從 _PostCloneSetup.ps1_ 呼叫，也可以在本機執行以設定存放庫。 此檔案必須位於與 _.devcontainer.js_ 的相同資料夾中。
 
 ```console
 devinit init
@@ -33,7 +33,7 @@ git config --system core.longpaths true
 
 ## <a name="packagesconfig"></a>packages.config
 
-_packages.config_檔案是[Chocolatey](https://chocolatey.org/)檔案，可定義要安裝的 Chocolatey 封裝清單。 此檔案必須位於與 _.devcontainer.js_的相同資料夾中。
+_packages.config_ 檔案是 [Chocolatey](https://chocolatey.org/)檔案，可定義要安裝的 Chocolatey 封裝清單。 此檔案必須位於與 _.devcontainer.js_ 的相同資料夾中。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -70,6 +70,6 @@ _packages.config_檔案是[Chocolatey](https://chocolatey.org/)檔案，可定�
 
 ```json
 {
-  "postCreateCommand": "Powershell.exe -ExecutionPolicy unrestricted -File PostCloneSetup.ps1"
+  "postCreateCommand": "Powershell.exe -ExecutionPolicy unrestricted -File .\\PostCloneSetup.ps1"
 }
 ```

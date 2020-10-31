@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 73060a6314bb1d89a51df98ac9d06d8e1f1be90e
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: e886ea23a8f4f0815773f704d1d8274fced610df
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005642"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134591"
 ---
 # <a name="eshoponweb"></a>eShopOnWeb
 
@@ -24,7 +24,7 @@ ms.locfileid: "91005642"
 
 ## <a name="postclonesetupps1"></a>PostCloneSetup.ps1
 
-此腳本是從 _PostCloneSetup.ps1_ 呼叫，也可以在本機執行以設定存放庫。 此檔案必須位於與 _.devcontainer.js_的相同資料夾中。
+此腳本是從 _PostCloneSetup.ps1_ 呼叫，也可以在本機執行以設定存放庫。 此檔案必須位於與 _.devcontainer.js_ 的相同資料夾中。
 
 ```console
 devinit init
@@ -34,7 +34,7 @@ dotnet ef database update -c appidentitydbcontext -p src\Infrastructure\Infrastr
 
 ## <a name="devinitjson"></a>.devinit.json
 
-檔案 [_.devinit.js_](devinit-json.md) 的內容。 此檔案必須位於與 _.devcontainer.js_的相同資料夾中。
+檔案 [_.devinit.js_](devinit-json.md) 的內容。 此檔案必須位於與 _.devcontainer.js_ 的相同資料夾中。
 
 ```json
 {
@@ -60,6 +60,6 @@ dotnet ef database update -c appidentitydbcontext -p src\Infrastructure\Infrastr
 
 ```json
 {
-  "postCreateCommand": "Powershell.exe -ExecutionPolicy unrestricted -File PostCloneSetup.ps1"
+  "postCreateCommand": "Powershell.exe -ExecutionPolicy unrestricted -File .\\PostCloneSetup.ps1"
 }
 ```
