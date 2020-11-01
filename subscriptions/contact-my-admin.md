@@ -8,10 +8,10 @@ ms.date: 09/08/2020
 ms.topic: how-to
 description: 瞭解如何聯繫訂用帳戶管理員，取得問題的協助。
 ms.openlocfilehash: dab5a450f5a46bab527c5982288f6e2a98ecfd0c
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "92904522"
 ---
 # <a name="get-assistance-from-your-subscriptions-admin"></a>取得訂用帳戶管理員的協助
@@ -35,7 +35,7 @@ ms.locfileid: "92904522"
 ## <a name="resources"></a>資源
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)

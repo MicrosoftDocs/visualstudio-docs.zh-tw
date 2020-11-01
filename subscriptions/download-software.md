@@ -8,10 +8,10 @@ ms.date: 10/26/2020
 ms.topic: conceptual
 description: 了解如何尋找及下載 Visual Studio 訂用帳戶中的 Microsoft 軟體標題
 ms.openlocfilehash: e6a5b6a1caab199ec2b67108f539c1d68d545551
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "92903632"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>下載 Visual Studio 訂用帳戶中的軟體標題
@@ -52,7 +52,7 @@ ms.locfileid: "92903632"
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 2019 索取產品金鑰](_img/subscriber-downloads/vs2019-claim-keys.png "選取宣告金鑰以索取剩餘的金鑰。")
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)

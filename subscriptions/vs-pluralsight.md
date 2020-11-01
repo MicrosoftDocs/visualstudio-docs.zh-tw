@@ -8,10 +8,10 @@ ms.date: 08/04/2020
 ms.topic: how-to
 description: 了解有關隨附於所選 Visual Studio 訂用帳戶的 Pluralsight 訓練課程訂用帳戶。
 ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "91005338"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Pluralsight 訓練課程權益
@@ -31,7 +31,7 @@ ms.locfileid: "91005338"
 1. 系統會將您重新導向至 Visual Studio 訂閱隨附的 Pluralsight 權益頁面。
    - 在表單中提供要求的連絡資訊
    - 按一下核取方塊以接受使用條款
-   - 按一下 [ **兌換**]。
+   - 按一下 [ **兌換** ]。
    > [!div class="mx-imgBorder"]
    > ![Pluralsight 註冊](_img/vs-pluralsight/vs-pluralsight-registration.png "完成註冊表單，按一下核取方塊以接受條款，然後按一下兌換")
 
@@ -43,9 +43,9 @@ ms.locfileid: "91005338"
    > [!NOTE]
    > 如果您的帳戶不符合兌換新供應項目的資格，您收到的電子郵件將會說明由於不符合資格，因此無法建立您的帳戶。  它也會包含可協助您連絡 Pluralsight 支援小組的資訊，該小組可回答您對帳戶可能有的任何疑問。
 
-1. 按一下 [ **設定密碼**]。
+1. 按一下 [ **設定密碼** ]。
 
-1. 在 [ **新密碼** ] 欄位中輸入您想要的密碼，然後再次在 [ **確認密碼** ] 欄位中輸入，然後按一下 [ **儲存**]。
+1. 在 [ **新密碼** ] 欄位中輸入您想要的密碼，然後再次在 [ **確認密碼** ] 欄位中輸入，然後按一下 [ **儲存** ]。
 
 1. 就這麼簡單！  您現在準備好要開始學習數以千計的 Pluralsight 課程！
 
@@ -110,13 +110,13 @@ A：是。 作為 Visual Studio 的訂閱者，您可以在 Pluralsight 訓練�
 - 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 一旦您的帳戶建立完成，即準備好開始訓練課程。  造訪 [https://www.pluralsight.com](https://www.pluralsight.com) 並按一下頁面右上角的 [ **登入** ]，開始新的課程，或返回已在進行中的課程。
 
 啟用您的 [Azure DevTest 個人點數](vs-azure.md)，以利用您自己的開發沙箱。

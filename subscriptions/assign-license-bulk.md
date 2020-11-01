@@ -8,10 +8,10 @@ ms.date: 10/22/2020
 ms.topic: how-to
 description: 瞭解系統管理員如何使用「大量新增」功能或 Microsoft Azure Active Directory 群組，將授權指派給多個「訂閱者」
 ms.openlocfilehash: 6cb3613d76faca2adc9c6e946f6a8ec2c73770f1
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "92467540"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>指派訂閱給多個使用者
@@ -35,7 +35,7 @@ ms.locfileid: "92467540"
    > [!NOTE]
    > 請一律下載這個範本的最新版本。 如果您使用舊版本，則大量上傳可能會失敗。
 
-1. 在 Excel 試算表中，請將您想要指派訂用帳戶之個人的資訊填入欄位中。  (*參考* 是選擇性欄位。在完成之後，) 將檔案儲存在本機。
+1. 在 Excel 試算表中，請將您想要指派訂用帳戶之個人的資訊填入欄位中。  ( *參考* 是選擇性欄位。在完成之後，) 將檔案儲存在本機。
 
     > [!NOTE]
     > 範本中的其中一個欄位可讓系統管理員啟用或停用訂閱者下載軟體的能力。  停用下載也會停用其產品金鑰的存取權。
@@ -48,11 +48,11 @@ ms.locfileid: "92467540"
     - 請確定所有必要的欄位都已完成。 
     - 檢查 **錯誤訊息** 資料行。  如果列出任何錯誤，請先解決這些錯誤，然後再嘗試上傳檔案。 
 
-1. 回到 Visual Studio 訂閱管理入口網站。 在 [ **上傳多個訂閱者** ] 對話方塊中，選取 **[流覽]**。
+1. 回到 Visual Studio 訂閱管理入口網站。 在 [ **上傳多個訂閱者** ] 對話方塊中，選取 **[流覽]** 。
    > [!div class="mx-imgBorder"]
    > ![瀏覽至先前儲存的範本，以上傳多位訂閱者](media/bulk-add-browse-saved-template.png "您可以流覽至檔案位置，或將它拖放到此對話方塊中。")
 
-1. 流覽至您儲存的 Excel 檔案，然後選取 **[確定]**。
+1. 流覽至您儲存的 Excel 檔案，然後選取 **[確定]** 。
    > [!div class="mx-imgBorder"]
    > ![上傳 Excel 範本，以上傳多位訂閱者](media/bulk-upload-subscribers.png "包含您資料的範本會出現在這裡。 選取 [確定] 以開始上傳。")
 
@@ -66,9 +66,9 @@ ms.locfileid: "92467540"
    1. 開啟您所建立的 Excel 檔案，更正問題，然後儲存檔案。
    0. 返回系統管理入口網站並關閉錯誤訊息。
    0. 選擇 [新增]  。
-   0. 選取 [ **大量新增**]。
-   0. 因為您已經儲存 Excel 檔案，所以不需要下載範本。  選取 **[流覽]**，找出您剛剛儲存的檔案，然後選取 [ **開啟**]。
-   0. 選取 [確定]。
+   0. 選取 [ **大量新增** ]。
+   0. 因為您已經儲存 Excel 檔案，所以不需要下載範本。  選取 **[流覽]** ，找出您剛剛儲存的檔案，然後選取 [ **開啟** ]。
+   0. 選取 [確定]  。
 
 
     上傳成功時，您會看到訂閱者清單和確認訊息。
@@ -111,7 +111,7 @@ ms.locfileid: "92467540"
    > [!div class="mx-imgBorder"]
    > ![選擇您的 Azure AD 群組](_img/assign-license-bulk/bulk-add-aad-details.png "選擇您的 Azure AD 組名，以從該群組新增訂閱者。")
 
-6. 選取 [ **新增** ]，然後 **確認**。 
+6. 選取 [ **新增** ]，然後 **確認** 。 
 
 7. 若要查看已新增的群組，請滾動至使用者清單的底部。  
 
@@ -139,6 +139,6 @@ ms.locfileid: "92467540"
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 - 只有一或兩個訂閱者要新增嗎？  參閱[新增單一使用者](assign-license.md)
 - 需要協助嗎？ 請聯絡 [Visual Studio 管理和訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)。

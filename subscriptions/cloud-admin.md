@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: how-to
 description: 設定每月訂閱的系統管理員
 ms.openlocfilehash: 8e102cb19d4f34c93392d89f9778c88460446666
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "92904236"
 ---
 # <a name="set-up-admins-for-visual-studio-monthly-subscriptions"></a>設定系統管理員以 Visual Studio 每月訂閱
@@ -49,7 +49,7 @@ Visual Studio 的每月訂閱是由系統管理員管理。 這些人可以指�
 9. 在使用者清單中，向下捲動至您想要設為系統管理員的使用者，並加以選取。 
    > [!div class="mx-imgBorder"]
    > ![選擇角色、使用者存取系統管理員](_img/cloud-admin/add-role-user-access-admin.png "選擇 [角色]，選取 [使用者存取系統管理員]，然後選取使用者的名稱，讓他們成為系統管理員。")
-10. 按一下 [檔案]  。
+10. 按一下 [儲存]。
 11. 按一下 [角色指派]  索引標籤，確認您選取的使用者現在會顯示為 [使用者存取系統管理員]。
 
 新的系統管理員現在可以登入系統 [管理入口網站](https://manage.visualstudio.com)，從頁面左上角的清單中選取用來購買每月訂閱的相同 Azure 訂用帳戶，然後開始管理這些訂用帳戶。
@@ -59,7 +59,7 @@ Visual Studio 的每月訂閱是由系統管理員管理。 這些人可以指�
 
 如需 Visual Studio 每月訂閱的詳細資訊，請參閱購買訂閱下的 [總覽](vscloud-overview.md) 。 若要購買 Visual Studio 的每月訂閱，請造訪 Visual Studio Marketplace [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription) 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)

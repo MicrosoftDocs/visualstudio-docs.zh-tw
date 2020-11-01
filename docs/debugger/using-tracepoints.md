@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "89561334"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>使用 Visual Studio 中的追蹤點將資訊記錄到輸出視窗
@@ -28,7 +28,7 @@ ms.locfileid: "89561334"
 
 ## <a name="set-tracepoints-in-source-code"></a>在原始程式碼中設定追蹤點
 
-您可以在 [**中斷點設定**] 視窗中的 [**動作**] 核取方塊底下指定輸出字串，以設定追蹤點。
+您可以在 [ **中斷點設定** ] 視窗中的 [ **動作** ] 核取方塊底下指定輸出字串，以設定追蹤點。
 
 1. 若要初始化追蹤點，請先按一下您要設定追蹤點之行號左邊的裝訂邊。
 
@@ -53,7 +53,7 @@ ms.locfileid: "89561334"
 
    ![核取條件方塊](../debugger/media/checkedconditionsbox.png "核取條件方塊")
 
-   您有三個條件選項： **條件運算式**、 **篩選**和 **計數**。
+   您有三個條件選項： **條件運算式** 、 **篩選** 和 **計數** 。
 
 ## <a name="actions-menu"></a>[動作] 功能表
 
@@ -63,7 +63,7 @@ ms.locfileid: "89561334"
 
 ![計數器輸出訊息](../debugger/media/counteroutputmessage.png "計數器輸出訊息")
 
-如果您按一下 [ **關閉** ]，然後將程式調試 (**F5**) ，您會在 [輸出] 視窗中看到下列輸出。
+如果您按一下 [ **關閉** ]，然後將程式調試 ( **F5** ) ，您會在 [輸出] 視窗中看到下列輸出。
 
 ![輸出視窗中的動作訊息](../debugger/media/actionsmessageinoutputwindow.png "輸出視窗中的動作訊息")
 
@@ -110,7 +110,7 @@ ms.locfileid: "89561334"
 
 ![條件運算式計數](../debugger/media/conditionalexpressionhitcount.png "條件運算式計數")
 
-### <a name="filter"></a>Filter
+### <a name="filter"></a>篩選
 針對篩選準則，指定要為其顯示哪些裝置、進程或執行緒輸出。
 
 ![條件運算式篩選](../debugger/media/conditionalexpressionfilter.png "條件運算式篩選")
@@ -135,7 +135,7 @@ ms.locfileid: "89561334"
 
 如果您嘗試將即時應用程式進行偵測，並尋找類似的功能，請參閱快照偵錯工具中的記錄點功能。 快照偵錯工具是用來調查實際執行應用程式中問題的工具。 記錄點也可讓您將訊息傳送至輸出視窗，而不需要修改原始程式碼，也不會影響執行中的應用程式。 如需詳細資訊，請參閱 [即時 Azure 應用程式的偵錯工具](../debugger/debug-live-azure-applications.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [什麼是偵錯？](../debugger/what-is-debugging.md)
 - [使用 Visual Studio 撰寫更好的 c # 程式碼](../debugger/write-better-code-with-visual-studio.md)
