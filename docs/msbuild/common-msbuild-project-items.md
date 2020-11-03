@@ -2,7 +2,7 @@
 title: 一般 MSBuild 專案項目 | Microsoft Docs
 description: 瞭解一般 MSBuild 專案專案。 專案會命名為一或多個檔案的參考，而且會有檔案名、路徑和版本號碼等中繼資料。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 10/29/2020
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b42ba80365b8aedd9527490235efb1228bc2a61d
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 638f67575a7214047cdb917c994179ac144e60b2
+ms.sourcegitcommit: 49c959911128a733ed2858db7c0e3b565f934b1a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796390"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93238619"
 ---
 # <a name="common-msbuild-project-items"></a>一般 MSBuild 專案項目
 
@@ -36,10 +36,10 @@ ms.locfileid: "92796390"
 
 代表專案中的組件 (受管理) 參考。
 
-|項目中繼資料名稱|描述|
+|項目中繼資料名稱|Description|
 |---------------|-----------------|
 |提示路徑|選擇性字串。 組件的相對或絕對路徑。|
-|名稱|選擇性字串。 組件的顯示名稱，例如，"System.Windows.Forms"。|
+|Name|選擇性字串。 組件的顯示名稱，例如，"System.Windows.Forms"。|
 |融合名稱|選擇性字串。 指定項目的簡單或強式融合名稱。<br /><br /> 當這個屬性存在時，就可以節省時間，因為不需要開啟組件檔案就能取得融合名稱。|
 |特定版本|選擇性布林值。 指定是否應僅參考融合名稱中的版本。|
 |別名|選擇性字串。 參考的任何別名。|
@@ -51,19 +51,19 @@ ms.locfileid: "92796390"
 
 |項目中繼資料名稱|描述|
 |---------------|-----------------|
-|名稱|選擇性字串。 元件的顯示名稱。|
+|Name|選擇性字串。 元件的顯示名稱。|
 |Guid|必要字串。 元件的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|
 |VersionMajor|必要字串。 元件的版本號碼主要部分。 例如，如果完整版本號碼為"5.46"，則主要部分為 "5"。|
 |VersionMinor|必要字串。 元件版本號碼的次要部分。 例如，如果完整版本號碼為"5.46"，則次要部分為 "46"。|
 |LCID|選擇性字串。 元件的地區設定識別碼。|
 |包裝函式工具|選擇性字串。 用於元件的包裝函式工具名稱，例如 "tlbimp"。|
-|隔離式方案|選擇性布林值。 指定元件是否為免註冊元件。|
+|隔離|選擇性布林值。 指定元件是否為免註冊元件。|
 
 ### <a name="comfilereference"></a>COM 檔案參考
 
 代表傳遞給 [ResolveComReference](resolvecomreference-task.md) 目標之 `TypeLibFiles` 參數的類型程式庫清單。 此項目僅適用於 .NET 專案。
 
-|項目中繼資料名稱|描述|
+|項目中繼資料名稱|Description|
 |---------------|-----------------|
 |包裝函式工具|選擇性字串。 用於元件的包裝函式工具名稱，例如 "tlbimp"。|
 
@@ -73,7 +73,7 @@ ms.locfileid: "92796390"
 
 |項目中繼資料名稱|描述|
 |---------------|-----------------|
-|名稱|必要字串。 資訊清單檔案的基底名稱。|
+|Name|必要字串。 資訊清單檔案的基底名稱。|
 |提示路徑|必要字串。 資訊清單檔案的相對路徑。|
 
 ### <a name="projectreference"></a>專案參考
@@ -82,7 +82,7 @@ ms.locfileid: "92796390"
 
 |項目中繼資料名稱|描述|
 |---------------|-----------------|
-|名稱|選擇性字串。 參考的顯示名稱。|
+|Name|選擇性字串。 參考的顯示名稱。|
 |GlobalPropertiesToRemove|選擇性的 `string[]`。 建立參考專案時要移除的屬性名稱，例如 `RuntimeIdentifier;PackOnBuild` 。 預設為空白。|
 |Project|選擇性字串。 參考的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|
 |OutputItemType|選擇性字串。 要發出目標輸出的專案類型。 預設值為空白。 如果參考中繼資料設定為 "true" (預設值) 則目標輸出會成為編譯器的參考。|
@@ -97,7 +97,7 @@ ms.locfileid: "92796390"
 
 代表編譯器的原始程式檔。
 
-| 項目中繼資料名稱 | 描述 |
+| 項目中繼資料名稱 | Description |
 |-----------------------| - |
 | 相依依據 | 選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案。 |
 | 自動產生 | 選擇性布林值。 指出 Visual Studio 整合式開發環境中是否為專案產生檔案 (IDE) 。 |
@@ -109,7 +109,7 @@ ms.locfileid: "92796390"
 
 代表要內嵌於所產生組件中的資源。
 
-| 項目中繼資料名稱 | 描述 |
+| 項目中繼資料名稱 | Description |
 |-----------------------| - |
 | 相依依據 | 選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案 |
 | Generator | 必要字串。 在此項目上執行的任何檔案產生器名稱。 |
@@ -124,7 +124,7 @@ ms.locfileid: "92796390"
 
 代表不會編譯到專案中，但可能內嵌或一起發行的檔案。
 
-| 項目中繼資料名稱 | 描述 |
+| 項目中繼資料名稱 | Description |
 |-----------------------| - |
 | 相依依據 | 選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案。 |
 | Generator | 必要字串。 在此項目上執行的任何檔案產生器名稱。 |
@@ -136,11 +136,11 @@ ms.locfileid: "92796390"
 | 可見 | 選擇性布林值。 指出是否要在 Visual Studio 的 **方案總管** 中顯示檔案。 |
 | 複製到輸出目錄 | 選擇性字串。 決定是否要將檔案複製到輸出目錄。 值為：<br /><br /> 1. 永不<br />2. 一律<br />3. PreserveNewest |
 
-### <a name="none"></a>None
+### <a name="none"></a>無
 
 代表在建置流程中應該沒有任何角色的檔案。
 
-| 項目中繼資料名稱 | 描述 |
+| 項目中繼資料名稱 | Description |
 |-----------------------| - |
 | 相依依據 | 選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案。 |
 | Generator | 必要字串。 在此項目上執行的任何檔案產生器名稱。 |
@@ -160,7 +160,19 @@ ms.locfileid: "92796390"
 | 值 | 必要字串。 成為 (屬性函式中) 值的第二個參數 `AssemblyMetadataAttribute` 。 |
 
 > [!NOTE]
-> 這僅適用于使用 .NET Core SDK 的專案。
+> 此專案適用于使用 SDK for .NET 5 (和 .NET Core) 和更新版本的專案。
+
+### <a name="internalsvisibleto"></a>InternalsVisibleTo
+
+指定要發出為 `[InternalsVisibleTo(..)]` 元件屬性的元件。
+
+| 項目中繼資料名稱 | 描述 |
+|-----------------------| - |
+| 包含 | 組件名稱。 |
+| 答案 | 選擇性字串。 元件的公開金鑰。 |
+
+> [!NOTE]
+> 此專案適用于使用 SDK for .NET 5 (和 .NET Core) 和更新版本的專案。
 
 ### <a name="baseapplicationmanifest"></a>基本應用程式資訊清單
 
@@ -174,7 +186,7 @@ ms.locfileid: "92796390"
 
 代表 Visual Basic 編譯器要匯入其命名空間的元件。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [一般 MSBuild 專案屬性](../msbuild/common-msbuild-project-properties.md)
 - [.NET Core SDK 專案的 MSBuild 屬性](/dotnet/core/project-sdk/msbuild-props)
