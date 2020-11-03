@@ -1,5 +1,7 @@
 ---
 title: XAML 設計工具概觀
+description: 深入瞭解 Blend for Visual Studio 中的 XAML 設計工具工作區 UI 和功能，其中提供視覺化介面，協助您設計以 XAML 為基礎的應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 03/03/2020
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f8579a4e8088dc0fc6e7403da7f0371e46f2c928
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73e7fb0b3216baa960a1b69302fe43161e311399
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507959"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796780"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>使用 XAML 設計工具建立 UI
 
@@ -31,9 +33,9 @@ Visual Studio 和 Blend for Visual Studio 中的 XAML 設計工具提供視覺�
 
 ## <a name="xaml-designer-workspace"></a>XML 設計工具工作區
 
-XAML 設計工具中的工作區是由數個視覺化介面項目所組成。 這包括「畫板」** (視覺化設計界面)、XAML 編輯器、[文件大綱] 視窗 (Blend for Visual Studio 中的 [物件與時間軸] 視窗)，以及 [屬性] 視窗。 若要開啟 XAML 設計工具，請以滑鼠右鍵按一下 [方案總管] **** 中的 XAML 檔案，然後選擇 [設計工具檢視] ****。
+XAML 設計工具中的工作區是由數個視覺化介面項目所組成。 這包括「畫板」 (視覺化設計界面)、XAML 編輯器、[文件大綱] 視窗 (Blend for Visual Studio 中的 [物件與時間軸] 視窗)，以及 [屬性] 視窗。 若要開啟 XAML 設計工具，請以滑鼠右鍵按一下 [方案總管]  中的 XAML 檔案，然後選擇 [設計工具檢視] 。
 
-XAML 設計工具提供 [XAML] 檢視和同步處理的 [設計] 檢視，來顯示應用程式呈現的 XAML 標記。 在 Visual Studio 或 Blend for Visual Studio 中開啟 XAML 檔案之後，您可以使用 [設計]**** 和 [XAML]**** 索引標籤，在 [設計] 檢視與 [XAML] 檢視之間切換。 您可以使用 [交換窗格]**** 按鈕 ![「XAML 設計工具」中的 [交換窗格] 按鈕](media/swap-panes.PNG) 來切換要出現在最上方的視窗：畫板或 XAML 編輯器。
+XAML 設計工具提供 [XAML] 檢視和同步處理的 [設計] 檢視，來顯示應用程式呈現的 XAML 標記。 在 Visual Studio 或 Blend for Visual Studio 中開啟 XAML 檔案之後，您可以使用 [設計] 和 [XAML] 索引標籤，在 [設計] 檢視與 [XAML] 檢視之間切換。 您可以使用 [交換窗格] 按鈕 ![「XAML 設計工具」中的 [交換窗格] 按鈕](media/swap-panes.PNG) 來切換要出現在最上方的視窗：畫板或 XAML 編輯器。
 
 ### <a name="design-view"></a>設計檢視
 
@@ -45,7 +47,7 @@ XAML 設計工具提供 [XAML] 檢視和同步處理的 [設計] 檢視，來顯
 
 **對齊線**
 
-對齊線是當控制項邊緣對齊或文字基線對齊時，要出現並顯示為紅色虛線的「對齊界限」**。 只有在啟用 [貼齊至對齊線] **** 時才會顯示對齊界限。
+對齊線是當控制項邊緣對齊或文字基線對齊時，要出現並顯示為紅色虛線的「對齊界限」。 只有在啟用 [貼齊至對齊線]  時才會顯示對齊界限。
 
 **Grid 滑軌**
 
@@ -61,11 +63,11 @@ Grid 滑軌可用來管理 [Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板中�
 
 **調整控點大小**
 
-調整大小控點會出現在選取的控制項上，讓您調整控制項的大小。 當您調整控制項的大小時，通常會出現寬度和高度值，協助您調整控制項的大小。 如需有關在 [設計]**** 檢視中操作控制項的詳細資訊，請參閱[使用 XAML 設計工具中的項目](../xaml-tools/working-with-elements-in-xaml-designer.md)。
+調整大小控點會出現在選取的控制項上，讓您調整控制項的大小。 當您調整控制項的大小時，通常會出現寬度和高度值，協助您調整控制項的大小。 如需有關在 [設計] 檢視中操作控制項的詳細資訊，請參閱[使用 XAML 設計工具中的項目](../xaml-tools/working-with-elements-in-xaml-designer.md)。
 
 **邊界**
 
-邊界代表控制項邊緣與其容器邊緣之間的固定間距。 您可以使用 [**屬性**] 視窗中 [**版面**配置] 下的 [[邊界](xref:Windows.UI.Xaml.FrameworkElement.Margin)] 屬性來設定控制項的邊界。
+邊界代表控制項邊緣與其容器邊緣之間的固定間距。 您可以使用 [ **屬性** ] 視窗中 [ **版面** 配置] 下的 [ [邊界](xref:Windows.UI.Xaml.FrameworkElement.Margin)] 屬性來設定控制項的邊界。
 
 **邊界裝飾項**
 
@@ -75,7 +77,7 @@ Grid 滑軌可用來管理 [Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板中�
 
 您可以利用指標移至項目周圍之藍色方塊的角落時出現在畫板上的項目控點，對項目進行修改。 這些控點可讓您旋轉項目、調整項目大小、翻轉項目、移動項目，或將圓角半徑加入項目。 元素控點的符號會因函式而有所不同，並依指標的確切位置而變更。 如果看不到項目控點，請確定已選取項目。
 
-在 [設計]**** 檢視中，視窗的左下方區域會提供額外的畫板命令，如下所示：
+在 [設計] 檢視中，視窗的左下方區域會提供額外的畫板命令，如下所示：
 
 ![設計檢視命令](media/xaml-design-view-controls.png)
 
@@ -83,11 +85,11 @@ Grid 滑軌可用來管理 [Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板中�
 
 **縮放**
 
-縮放可讓您調整設計介面的大小。 您可以從 12.5% 放大到 800%，或選取 [符合選取項目]**** 和 [全部調整]**** 等選項。
+縮放可讓您調整設計介面的大小。 您可以從 12.5% 放大到 800%，或選取 [符合選取項目] 和 [全部調整] 等選項。
 
 **顯示/隱藏貼齊格線**
 
-顯示或隱藏可顯示格線的貼齊格線。 啟用 [貼齊至格線]**** 或 [貼齊至對齊線]**** 時會使用格線。
+顯示或隱藏可顯示格線的貼齊格線。 啟用 [貼齊至格線] 或 [貼齊至對齊線] 時會使用格線。
 
 **開啟/關閉貼齊至格線**
 
@@ -99,7 +101,7 @@ Grid 滑軌可用來管理 [Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板中�
 
 **開啟/關閉貼齊至對齊線**
 
-對齊線可協助您讓控制項彼此對齊。 如果已啟用 [貼齊至對齊線] **** ，當您將控制項拖曳到其他控制項的相對位置，而部分控制項的邊緣和文字水平或垂直對齊時，對齊界限就會出現。 對齊界限會顯示為一條紅色虛線。
+對齊線可協助您讓控制項彼此對齊。 如果已啟用 [貼齊至對齊線]  ，當您將控制項拖曳到其他控制項的相對位置，而部分控制項的邊緣和文字水平或垂直對齊時，對齊界限就會出現。 對齊界限會顯示為一條紅色虛線。
 
 **停用專案程式碼**
 
@@ -107,7 +109,7 @@ Grid 滑軌可用來管理 [Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板中�
 
 ### <a name="xaml-view"></a>[XAML] 檢視
 
-在 [XAML]**** 檢視中，含有 XAML 編輯器的視窗是作用中視窗，而 XAML 編輯器是您主要的撰寫工具。 可延伸應用程式標記語言 (XAML) 提供宣告式的 XML 架構詞彙來指定應用程式的使用者介面。 [XAML] 檢視包括 IntelliSense、自動格式化、語法反白顯示和標記巡覽。 下圖顯示已開啟 IntelliSense 功能表的 XAML 檢視：
+在 [XAML] 檢視中，含有 XAML 編輯器的視窗是作用中視窗，而 XAML 編輯器是您主要的撰寫工具。 可延伸應用程式標記語言 (XAML) 提供宣告式的 XML 架構詞彙來指定應用程式的使用者介面。 [XAML] 檢視包括 IntelliSense、自動格式化、語法反白顯示和標記巡覽。 下圖顯示已開啟 IntelliSense 功能表的 XAML 檢視：
 
 ![[XAML] 檢視](media/xaml-editor.png)
 
@@ -123,8 +125,8 @@ Visual Studio 中的 [文件大綱] 視窗類似 Blend for Visual Studio 中的 
 
 - [建立動畫](animate-objects-in-xaml-designer.md) (僅適用於 Blend for Visual Studio)。
 
-若要在 Visual Studio 中查看 [檔大綱] 視窗，請在功能表列上選取 [**查看**  >  **其他 Windows**  >  **檔大綱**]。
-若要在 Blend for Visual Studio 中查看物件與時間軸視窗，請在功能表列上選取 [**視圖**  >  **檔大綱**]。
+若要在 Visual Studio 中查看 [檔大綱] 視窗，請在功能表列上選取 [ **查看**  >  **其他 Windows**  >  **檔大綱** ]。
+若要在 Blend for Visual Studio 中查看物件與時間軸視窗，請在功能表列上選取 [ **視圖**  >  **檔大綱** ]。
 
 ![Visual Studio 的 [文件大綱] 視窗](media/document-outline-window.png)
 
@@ -132,11 +134,11 @@ Visual Studio 中的 [文件大綱] 視窗類似 Blend for Visual Studio 中的 
 
 **顯示/隱藏**
 
-顯示或隱藏畫板元素。 出現時，會顯示為眼睛符號。 您也可以按**ctrl** + **h**來隱藏專案，並使用**Shift** + **ctrl** + **h**來顯示它。
+顯示或隱藏畫板元素。 出現時，會顯示為眼睛符號。 您也可以按 **ctrl** + **h** 來隱藏專案，並使用 **Shift** + **ctrl** + **h** 來顯示它。
 
 **鎖定/解除鎖定**
 
-將畫板元素鎖定或解除鎖定。 無法修改鎖定的項目。 鎖定時，會顯示為掛鎖符號。 您也可以按**ctrl** + **l**來鎖定元素，並**Shift** + 將**ctrl** + **l**解除鎖定。
+將畫板元素鎖定或解除鎖定。 無法修改鎖定的項目。 鎖定時，會顯示為掛鎖符號。 您也可以按 **ctrl** + **l** 來鎖定元素，並 **Shift** + 將 **ctrl** + **l** 解除鎖定。
 
 **將範圍傳回 pageRoot**
 
@@ -144,17 +146,17 @@ Visual Studio 中的 [文件大綱] 視窗類似 Blend for Visual Studio 中的 
 
 ## <a name="properties-window"></a>屬性視窗
 
-[屬性]**** 視窗可讓您設定控制項的屬性值。 其看起來會像下面這樣：
+[屬性] 視窗可讓您設定控制項的屬性值。 其看起來會像下面這樣：
 
 ![屬性視窗](media/xaml-designer-properties-window.png)
 
-[屬性]**** 視窗的頂端有各種選項：
+[屬性] 視窗的頂端有各種選項：
 
-- 變更 [名稱]**** 方塊中目前所選元素的名稱。
+- 變更 [名稱] 方塊中目前所選元素的名稱。
 - 在左上角，有一個代表目前選取項目的圖示。
-- 若要依分類或依字母順序排列屬性，請按一下 [排列依據] **** 清單中的 [分類] ****、[名稱] **** 或 [來源] **** 。
-- 若要查看控制項的事件清單，請按一下顯示為閃電符號的 [事件]**** 按鈕。
-- 若要搜尋屬性，請在搜尋方塊中開始鍵入屬性的名稱。 在您鍵入文字時，[屬性]**** 視窗會顯示符合搜尋的屬性。
+- 若要依分類或依字母順序排列屬性，請按一下 [排列依據] 清單中的 [分類] 、[名稱]  或 [來源]  。
+- 若要查看控制項的事件清單，請按一下顯示為閃電符號的 [事件] 按鈕。
+- 若要搜尋屬性，請在搜尋方塊中開始鍵入屬性的名稱。 在您鍵入文字時，[屬性] 視窗會顯示符合搜尋的屬性。
 
 有些屬性可讓您藉由選取向下箭號按鈕來設定進階屬性。
 

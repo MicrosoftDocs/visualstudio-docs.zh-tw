@@ -7,12 +7,12 @@ ms.assetid: b6fbfa3e-654a-462f-8e22-e313b6ea617f
 ms.date: 10/30/2020
 ms.topic: conceptual
 description: 瞭解當您的 Visual Studio 訂閱到期時會發生什麼事
-ms.openlocfilehash: 118f9dcd1953799d74b10c682a007137474c2dd2
-ms.sourcegitcommit: 49c959911128a733ed2858db7c0e3b565f934b1a
+ms.openlocfilehash: 3bab529f4a45a57e6cc21260fdde2d5e18bc5217
+ms.sourcegitcommit: f81984aec5341a84b87c2466461656c38d8ff681
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "93239357"
+ms.locfileid: "93245010"
 ---
 # <a name="what-happens-when-your-subscription-expires"></a>當您的訂閱到期時，會發生什麼事
 Visual Studio 的訂用帳戶會有特定的持續時間，除非已更新，否則這些訂用帳戶將會過期。  當訂用帳戶到期時，訂用帳戶所提供的權益會以不同的方式受到影響。  本文將說明到期如何影響 Visual Studio 訂用帳戶的各種層面。 
