@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 09/08/2020
 ms.topic: how-to
 description: 瞭解如何聯繫訂用帳戶管理員，取得問題的協助。
-ms.openlocfilehash: dab5a450f5a46bab527c5982288f6e2a98ecfd0c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 363fc84d0607e511d259153dc3e39d4b4063ff42
+ms.sourcegitcommit: fb2a60cfdf78964fa0cb6783a5d947deae04b6bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904522"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93289983"
 ---
 # <a name="get-assistance-from-your-subscriptions-admin"></a>取得訂用帳戶管理員的協助
 如果您的 Visual Studio 訂用帳戶是由您的公司或學校提供給您，則您可能會被訂用帳戶管理員或「系統管理員」指派給您。  管理員可以指派或移除訂用帳戶、變更登入電子郵件地址、判斷您是否能夠下載軟體，以及執行與訂用帳戶相關的其他功能。
@@ -33,7 +33,7 @@ ms.locfileid: "92904522"
 > **超級管理員：**  若要設定傳送「連絡人我的系統管理員」要求的電子郵件地址，請在 [合約喜好](admin-prefs.md#contact-email-address)設定中指定該位址。
 
 ## <a name="resources"></a>資源
-- [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/#talktous)
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
@@ -41,7 +41,7 @@ ms.locfileid: "92904522"
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 如果您尚未這麼做，建議您啟用這些權益，以充分利用您的 Visual Studio 訂用帳戶：
 - [Visual Studio IDE](vs-ide-benefit.md)
 - [Azure](vs-azure.md)
