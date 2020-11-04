@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 8715bd00653f74d874dc077180a9978b26bff8f1
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 6543dfe8298ea24aa731a74556b01be1beeed2bf
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134728"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344475"
 ---
 # <a name="devinit-commands"></a>devinit 命令
 
@@ -53,7 +53,7 @@ devinit init
 * {目前的目錄} \\ 。devcontainer \\devinit.js開啟
 
 > [!NOTE]
-> 如果找到多個預設檔案，則 devinit 會使用出現在上述清單中的檔案。
+> 如果找到多個預設檔案，則 devinit 會使用上述清單中第一個出現的檔案。
 
 #### <a name="--error-action-argument"></a>--error-action 引數
 
@@ -148,7 +148,7 @@ devinit version
 
 列印 devinit 的目前版本資訊。
 
-## <a name="help"></a>説明
+## <a name="help"></a>[說明]
 
 ```console
 devinit help

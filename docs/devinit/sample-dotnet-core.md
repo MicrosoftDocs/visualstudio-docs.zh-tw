@@ -1,7 +1,7 @@
 ---
 title: .NET Core 應用程式
 description: 使用 devinit 安裝特定 .NET Core SDK 的範例存放庫。
-ms.date: 10/28/2020
+ms.date: 11/02/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,16 +11,16 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ce94dc9cf4b6368a96cc027e1a9fc14e0d7e0650
-ms.sourcegitcommit: 7915cedf2f5988db25cb90042aa8466a1d3cee7f
+ms.openlocfilehash: 35971ac1fde5fc272f22579cc6640cbea6724db5
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93028142"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344515"
 ---
 # <a name="net-core-app"></a>.NET Core 應用程式
 
-如需使用 devinit 在 Codespaces 中安裝必要 .NET Core SDK 版本的完整範例，請參閱 [DevinitExample](https://github.com/microsoft/DevinitExample) 存放庫。
+如需使用 devinit 在 Codespaces 中安裝必要 .NET Core SDK 版本的完整範例，請參閱 [DotnetCoreDevinitExample](https://github.com/microsoft/DotnetCoreDevinitExample) 存放庫。
 
 ## <a name="devinitjson"></a>.devinit.json
 

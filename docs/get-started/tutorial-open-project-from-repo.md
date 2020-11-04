@@ -2,7 +2,7 @@
 title: 教學課程：從存放庫開啟專案
 description: 了解如何使用 Visual Studio，在 Git 或 Azure DevOps 存放庫中開啟專案。
 ms.custom: get-started
-ms.date: 03/30/2019
+ms.date: 11/03/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ad609e9cf6a00a1b966e5d63589592239f215b01
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 56005faa4475f040375108ca02abbca40cd2652d
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743038"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344536"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>教學課程：從存放庫開啟專案
 
@@ -43,19 +43,19 @@ ms.locfileid: "89743038"
 
 1. 開啟 Visual Studio 2017。
 
-1. 從頂端的功能表列中，選擇 [檔案]** [開啟]** > ** [從原始檔控制開啟]** > ****。
+1. 從頂端的功能表列中，選擇 [檔案] **[開啟]** > **[從原始檔控制開啟]** > 。
 
-   [Team Explorer - 連接]**** 窗格隨即開啟。
+   [Team Explorer - 連接] 窗格隨即開啟。
 
     ![Visual Studio IDE 中的 [Team Explorer] 視窗](./media/open-proj-repo-team-explorer.png)
 
-1. 在 [本機 Git 存放庫]**** 區段中，選擇 [複製]****。
+1. 在 [本機 Git 存放庫] 區段中，選擇 [複製]。
 
     ![從 [本機 Git 存放庫] 區段中選擇 [複製]](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. 在 [輸入要複製的 Git 存放庫的 URL ]****** 方塊中，輸入或貼上您存放庫的 URL，然後按 **Enter** (您可能會看見登入 GitHub 的提示；如果看見提示，請登入)。
+1. 在 [ **_輸入要複製的 Git_ 存放庫 url] 方塊中 *，輸入或貼上您存放庫的 url，然後按 _* enter** 。 (您可能會看見登入 GitHub 的提示；如果看見提示，請登入)。
 
-   當 Visual Studio 複製您的存放庫之後，[Team Explorer] 即會關閉，而 [方案總管] 即會開啟。 隨即出現一則訊息，指出「按一下上方的 [解決方案與資料夾] 可檢視解決方案清單」**。 選擇 [解決方案與資料夾]****。
+   當 Visual Studio 複製您的存放庫之後，[Team Explorer] 即會關閉，而 [方案總管] 即會開啟。 隨即出現一則訊息，指出「按一下上方的 [解決方案與資料夾] 可檢視解決方案清單」。 選擇 [解決方案與資料夾]。
 
    ![從 [方案總管] 中選擇 [解決方案與資料夾]](./media/open-proj-repo-github-solutions-folders.png)
 
@@ -77,11 +77,11 @@ ms.locfileid: "89743038"
 
 1. 開啟 Visual Studio 2019。
 
-1. 在開始視窗中，選擇 [複製或簽出程式碼]****。
+1. 在開始視窗中，選擇 [複製或簽出程式碼]。
 
    ![檢視 [建立新專案] 視窗](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
-1. 輸入或鍵入存放庫的位置，然後選擇 [複製]****。
+1. 輸入或鍵入存放庫的位置，然後選擇 [複製]。
 
    ![檢視 [複製或簽出程式碼] 視窗](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
 
@@ -93,6 +93,9 @@ ms.locfileid: "89743038"
 
    如果您的存放庫中沒有解決方案檔 (具體來說為 .sln 檔案)，飛出功能表將顯示「找不到任何解決方案」。 不過，您可以從資料夾功能表中按兩下任一檔案，以便在 Visual Studio 程式碼編輯器中開啟該檔案。
 
+> [!TIP]
+> 如果您想要在 Visual Studio 中試用新的整合式 Git 體驗，且您使用的是 [16.6 版](/visualstudio/releases/2019/release-notes-v16.6)或更新版本，您可以移至 [ **工具**  >  **選項**  >  **環境**  >  **預覽功能** ]，然後選取 [ **新的 Git 使用者體驗** ] 核取方塊，將其切換為開啟。 如需詳細資訊，請參閱 [Visual Studio 頁面中的新 Git 體驗](../ide/git-with-visual-studio.md) 。
+
 ::: moniker-end
 
 ## <a name="open-a-project-from-an-azure-devops-repo"></a>從 Azure DevOps 存放庫中開啟專案
@@ -101,30 +104,30 @@ ms.locfileid: "89743038"
 
 1. 開啟 Visual Studio 2017。
 
-1. 從頂端的功能表列中，選擇 [檔案]** [開啟]** > ** [從原始檔控制開啟]** > ****。
+1. 從頂端的功能表列中，選擇 [檔案] **[開啟]** > **[從原始檔控制開啟]** > 。
 
-   [Team Explorer - 連接]**** 窗格隨即開啟。
+   [Team Explorer - 連接] 窗格隨即開啟。
 
     ![Visual Studio IDE 中的 [Team Explorer] 視窗](./media/open-proj-repo-team-explorer.png)
 
 1. 以下是兩種可連線到您 Azure DevOps 存放庫的方式：
 
-      - 在 [託管服務提供者]**** 區段中，選擇 [連線...]****.
+      - 在 [託管服務提供者] 區段中，選擇 [連線...].
 
         ![Visual Studio IDE 內 [Team Explorer] 視窗的 [託管服務提供者] 區段](./media/open-proj-repo-azure-devops.png)
 
-      - 在 [管理連線]**** 下拉式清單中，選擇 [連線到專案...]****。
+      - 在 [管理連線] 下拉式清單中，選擇 [連線到專案...]。
 
         ![Visual Studio IDE 內 [Team Explorer] 視窗的 [管理連線] 區段](./media/open-proj-repo-azuredevops-manage-connections.png)
 
-1. 在 [連線到專案]**** 對話方塊中，選擇您想要連線的存放庫，然後選擇 [複製]****。
+1. 在 [連線到專案] 對話方塊中，選擇您想要連線的存放庫，然後選擇 [複製]。
 
       ![從 Visual Studio 產生的 [連線到專案] 對話方塊](./media/open-proj-azure-devops-connect-cloud-clone.png)
 
     > [!NOTE]
     > 您在清單方塊中看到的內容，取決於您有權存取的 Azure DevOps 存放庫。
 
-1. 當 Visual Studio 複製您的存放庫之後，[Team Explorer] 即會關閉，而 [方案總管] 即會開啟。 隨即出現一則訊息，指出「按一下上方的 [解決方案與資料夾] 可檢視解決方案清單」**。 選擇 [解決方案與資料夾]****。
+1. 當 Visual Studio 複製您的存放庫之後，[Team Explorer] 即會關閉，而 [方案總管] 即會開啟。 隨即出現一則訊息，指出「按一下上方的 [解決方案與資料夾] 可檢視解決方案清單」。 選擇 [解決方案與資料夾]。
 
       ![Visual Studio 中來自 [Team Explorer] 的「解決方案與資料夾」通知](./media/open-proj-repo-solutions-folders.png)
 
@@ -138,34 +141,34 @@ ms.locfileid: "89743038"
 
 1. 開啟 Visual Studio 2019。
 
-1. 在開始視窗中，選擇 [複製或簽出程式碼]****。
+1. 在開始視窗中，選擇 [複製或簽出程式碼]。
 
    ![檢視 [建立新專案] 視窗](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
-1. 在 [瀏覽存放庫]**** 區段中，選擇 [Azure DevOps]****。
+1. 在 [瀏覽存放庫] 區段中，選擇 [Azure DevOps]。
 
    ![檢視 [複製或簽出程式碼] 視窗](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
 
    如果您看到登入視窗，請登入您的帳戶。
 
-1. 在 [連線到專案]**** 對話方塊中，選擇您想要連線的存放庫，然後選擇 [複製]****。
+1. 在 [連線到專案] 對話方塊中，選擇您想要連線的存放庫，然後選擇 [複製]。
 
       ![從 Visual Studio 產生的 [連線到專案] 對話方塊](./media/open-proj-azure-devops-connect-cloud-clone.png)
 
     > [!NOTE]
     > 您在清單方塊中看到的內容，取決於您有權存取的 Azure DevOps 存放庫。
 
-   Visual Studio 會開啟 [Team Explorer]****，並在複製完成時顯示通知。
+   Visual Studio 會開啟 [Team Explorer]，並在複製完成時顯示通知。
 
      ![完成複製後的 Visual Studio [Team Explorer] 視窗](./media/vs-2019/clone-complete-azure-devops.png)
 
-1. 若要檢視您的資料夾和檔案，請選擇 [顯示資料夾檢視]**** 連結。
+1. 若要檢視您的資料夾和檔案，請選擇 [顯示資料夾檢視] 連結。
 
      ![完成複製後，Visual Studio [Team Explorer] 視窗的 [解決方案] 區段](./media/vs-2019/show-folder-view-azure-devops.png)
 
-     Visual Studio 會開啟 [方案總管]****。
+     Visual Studio 會開啟 [方案總管]。
 
-1. 選擇 [解決方案與資料夾]**** 連結，搜尋要開啟的解決方案檔 (具體來說為 .sln 檔案)。
+1. 選擇 [解決方案與資料夾] 連結，搜尋要開啟的解決方案檔 (具體來說為 .sln 檔案)。
 
       ![Visual Studio 中來自 [Team Explorer] 的「解決方案與資料夾」通知](./media/open-proj-repo-solutions-folders.png)
 
@@ -181,9 +184,22 @@ ms.locfileid: "89743038"
 - [Visual Studio 教學課程 | **Visual Basic**](./visual-basic/index.yml)
 - [Visual Studio 教學課程 | **C++**](/cpp/get-started/tutorial-console-cpp)
 - [Visual Studio 教學課程 | **Python**](../python/index.yml)
-- [Visual Studio 教學課程 |**JavaScript**、**TypeScript** 和 **Node.js**](../javascript/index.yml)
+- [Visual Studio 教學課程 | **JavaScript** 、 **TypeScript** 和 **Node.js**](../javascript/index.yml)
 
 ## <a name="see-also"></a>另請參閱
 
+::: moniker range="vs-2017"
+
 - [Azure DevOps Services：開始使用 Azure Repos 和 Visual Studio](/azure/devops/repos/git/gitquickstart/)
 - [Microsoft Learn：開始使用 Azure DevOps](/learn/modules/get-started-with-devops/)
+- [Visual Studio 2019 中的新 Git 體驗](../ide/git-with-visual-studio.md?view=vs-2019&preserve-view=true)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Visual Studio 中的新 Git 體驗](../ide/git-with-visual-studio.md)
+- [Azure DevOps Services：開始使用 Azure Repos 和 Visual Studio](/azure/devops/repos/git/gitquickstart/)
+- [Microsoft Learn：開始使用 Azure DevOps](/learn/modules/get-started-with-devops/)
+
+::: moniker-end

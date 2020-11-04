@@ -1,7 +1,7 @@
 ---
 title: devinit 設定檔
 description: Devinit 資訊清單檔案的檔。 .devinit.js
-ms.date: 08/28/2020
+ms.date: 11/02/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,26 +11,32 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b0cfb1c41d7721598bae44f950ced01d17ff494a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 29ea900b534bc03e47cfda49dba15af910189e48
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005357"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344482"
 ---
 # <a name="devinit-configuration-file"></a>devinit 設定檔
 
 ## <a name="file-location"></a>檔案位置
 
-此 `devinit.exe init` 命令是透過檔案 _ 上的.devinit.js_ 驅動。 依預設，會 `devinit.exe` 在下列位置尋找檔案：
+此 `devinit.exe init` 命令是透過檔案 _上的.devinit.js_ 驅動。 依預設，會 `devinit.exe` 在下列位置尋找檔案：
 
-- _{目前的目錄}\\_
-- _{目前的目錄} \\ 。devinit\\_
-- _{目前的目錄} \\ 。devcontainer\\_
+* {目前的目錄} \\.devinit.js開啟
+* {目前的目錄} \\devinit.js開啟
+* {目前的目錄} \\ 。devinit \\.devinit.js開啟
+* {目前的目錄} \\ 。devinit \\devinit.js開啟
+* {目前的目錄} \\devinit \\.devinit.js開啟
+* {目前的目錄} \\devinit \\devinit.js開啟
+* {目前的目錄} \\ 。devcontainer \\.devinit.js開啟
+* {目前的目錄} \\ 。devcontainer \\devinit.js開啟
 
-_._ 在中，可以省略目錄和檔案名。
+> [!NOTE]
+> 如果找到多個預設檔案，則 devinit 會使用上述清單中第一個出現的檔案。
 
-您也可以透過選項明確指定檔案_上_的.devinit.js`--file` / `-f` 。
+您也可以透過選項明確指定檔案 _上_ 的.devinit.js`--file` / `-f` 。
 
 ### <a name="directories-and-relative-paths"></a>目錄和相對路徑
 
@@ -58,14 +64,14 @@ _._ 在中，可以省略目錄和檔案名。
 | 名稱         | 類型   | 必要 | 值                              |
 |--------------|--------|----------|------------------------------------|
 | **評論** | 字串 | No       | 檔案的批註。             |
-| **運行**      | array  | Yes      | [RunTool 物件](#run-tool-object) |
+| **運行**      | array  | 是      | [RunTool 物件](#run-tool-object) |
 
 #### <a name="run-tool-object"></a>執行工具物件
 
 | 名稱                  | 類型   | 必要 | 值                                                                                                      |
 |-----------------------|--------|----------|------------------------------------------------------------------------------------------------------------|
 | **評論**          | 字串 | No       | 工具專案的批註。                                                                               |
-| **工具**              | 字串 | Yes      | 工具名稱。 如需 `devinit list` 可用工具的清單，請參閱命令。                            |
+| **工具**              | 字串 | 是      | 工具名稱。 如需 `devinit list` 可用工具的清單，請參閱命令。                            |
 | **input**             | 字串 | No       | 工具輸入。 因工具而異。 例如，所需的版本、封裝識別碼、檔案名或資料夾。|
 | **additionalOptions** | 字串 | No       | 要傳遞至工具的其他命令列引數。                                                |
 

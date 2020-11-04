@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de4291d08b3a6b6897b3ae41562f70fad5372b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0d2b0964c565bab4d3a0731a14b93ccd976bb69
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89053425"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344490"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>從命令列測量應用程式的效能
 
@@ -33,19 +33,19 @@ ms.locfileid: "89053425"
 
 * 熟悉命令列工具
 
-* 若要在未安裝 Visual Studio 的遠端電腦上收集效能資訊，請在遠端電腦上安裝 [Visual Studio 的效能工具](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019) 。 工具的版本必須符合您的 Visual Studio 版本。
+* 若要在未安裝 Visual Studio 的遠端電腦上收集效能資訊，請在遠端電腦上安裝 [Visual Studio 遠端工具](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019) 。 工具的版本必須符合您的 Visual Studio 版本。
 
 ## <a name="collect-performance-data"></a>收集效能資料
 
 使用 Visual Studio 診斷 CLI 工具進行分析時，其運作方式是將分析工具與其中一個收集器代理程式附加至處理序。 當您附加分析工具時，即會開始診斷工作階段以擷取並儲存分析資料，直到停止工具為止；此時會將這些資料匯出為 *.diagsession* 檔案。 接著，您即可在 Visual Studio 中開啟此檔案以分析結果。
 
-1. 啟動 [記事本]，然後開啟 [工作管理員] 以取得其處理序識別碼 (PID)。 在 [工作管理員] 的 [詳細資料]**** 索引標籤中，尋找此 PID。
+1. 啟動 [記事本]，然後開啟 [工作管理員] 以取得其處理序識別碼 (PID)。 在 [工作管理員] 的 [詳細資料] 索引標籤中，尋找此 PID。
 
 1. 開啟命令提示字元，並使用收集代理程式可執行檔變更至目錄，通常是 Visual Studio Enterprise) 的 (。
 
    ```<Visual Studio installation folder>\2019\Enterprise\Team Tools\DiagnosticsHub\Collector\```
 
-1. 鍵入下列命令，開始 *VSDiagnostics.exe*。
+1. 鍵入下列命令，開始 *VSDiagnostics.exe* 。
 
    ```cmd
    VSDiagnostics.exe start <id> /attach:<pid> /loadConfig:<configFile>
@@ -71,7 +71,7 @@ ms.locfileid: "89053425"
    VSDiagnostics.exe stop <id> /output:<path to file>
    ```
 
-1. 找出前一個命令的*diagsession*檔輸出，然後在 Visual Studio (檔案開啟) **中開啟它**，  >  **Open**以檢查收集到的資訊。
+1. 找出前一個命令的 *diagsession* 檔輸出，然後在 Visual Studio (檔案開啟) **中開啟它** ，  >  **Open** 以檢查收集到的資訊。
 
    若要分析結果，請參閱對應效能工具的檔。 例如，這可能是 [ [CPU 使用量](../profiling/cpu-usage.md)]、[ [.net 物件配置] 工具](../profiling/dotnet-alloc-tool.md)或 [ [資料庫](../profiling/analyze-database.md) ] 工具。
 
