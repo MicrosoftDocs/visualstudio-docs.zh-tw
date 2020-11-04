@@ -10,16 +10,16 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 9ef41b8645e77a28c8422fff49111b41215ba971
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: e837b1a0e9a1d8fe06342352e4eedf5ce0fa9117
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739872"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325946"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 隔離測試中的程式碼
 
-Microsoft Fakes 會以「虛設常式」** 或「填充碼」** 取代應用程式的其他部分，協助您隔離要測試的程式碼。 這些是受測試所控制的一些程式碼片段。 藉由隔離待測的程式碼，您可以在正確的位置尋找測試失敗的原因。 即使應用程式的其他部分還無法運作，您也可以利用虛設常式和填充碼。
+Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的其他部分，協助您隔離要測試的程式碼。 這些是受測試所控制的一些程式碼片段。 藉由隔離待測的程式碼，您可以在正確的位置尋找測試失敗的原因。 即使應用程式的其他部分還無法運作，您也可以利用虛設常式和填充碼。
 
 Fakes 分為兩種類別：
 
@@ -29,14 +29,15 @@ Fakes 分為兩種類別：
 
 ![Fakes 會取代其他元件](../test/media/fakes-2.png)
 
-**需求**
+**Requirements**
 
 - Visual Studio Enterprise
 - .NET Framework 專案
-- .NET Core 和 SDK 樣式專案支援目前為預覽狀態。 [閱讀更多資訊](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
+::: moniker range=">=vs-2019"
+- 在 Visual Studio 2019 Update 6 中預覽的 .NET Core 和 SDK 樣式專案支援，預設會在 Update 8 中啟用。 如需詳細資訊，請參閱 [適用于 .Net Core 和 SDK 樣式專案的 Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)。
+::: moniker-end
 
 > [!NOTE]
-> - 不支援 .NET Standard 專案。
 > - 使用 Visual Studio 分析不適用於使用 Microsoft Fakes 的測試。
 
 ## <a name="choose-between-stub-and-shim-types"></a>在虛設常式和填充碼類型之間選擇
@@ -82,11 +83,15 @@ Fakes 分為兩種類別：
 
 2. **新增 Fakes 組件**
 
-    1. 在 **方案總管**中，展開測試專案的參考清單。 如果在 Visual Basic 中工作，您必須選擇 [顯示所有檔案]**** 才能看到參考清單。
+   1. 在 **方案總管** 中， 
+       - 針對較舊的 .NET Framework 專案 (非 SDK 樣式) ，請展開您的單元測試專案的 [ **參考** ] 節點。
+       ::: moniker range=">=vs-2019"
+       - 若為以 .NET Framework 或 .NET Core 為目標的 SDK 樣式專案，請展開 [相依性 **]** 節點，以尋找您想要在 **元件** 、 **專案** 或 **封裝** 下偽造的元件。
+       ::: moniker-end
+       - 如果您是在 Visual Basic 中工作，請選取 [ **方案總管** ] 工具列中的 [ **顯示所有** 檔案]，以查看 [ **參考** ] 節點。
+   2. 選取包含您要為其建立填充碼之類別定義的元件。 例如，如果您想要填充碼 **DateTime** ，請選取 [ **System.dll** ]。
 
-    2. 選取定義介面 (例如 IStockFeed) 之組件的參考。 在此參考的捷徑功能表上，選擇 [新增 Fakes 組件]****。
-
-    3. 重建方案。
+   3. 在捷徑功能表上，選擇 [新增 Fakes 組件]。
 
 3. 在您的測試中，建構虛設常式的執行個體，並為其方法提供程式碼：
 
@@ -169,9 +174,9 @@ Fakes 分為兩種類別：
 
 1. **新增 Fakes 組件**
 
-     在 **方案總管**中，開啟單元測試專案的參考，然後選取包含您要假之方法的元件參考。 在本範例中，`DateTime` 類別是在 *System.dll* 中。  若要查看 Visual Basic 專案中的參考，請選擇 [顯示所有檔案]****。
+     在 **方案總管** 中，開啟單元測試專案的參考，然後選取包含您要假之方法的元件參考。 在本範例中，`DateTime` 類別是在 *System.dll* 中。  若要查看 Visual Basic 專案中的參考，請選擇 [顯示所有檔案]。
 
-     選擇 [新增 Fakes 組件]****。
+     選擇 [新增 Fakes 組件]。
 
 2. **在 ShimsContext 中插入填充碼**
 
@@ -244,6 +249,61 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 (沒有任何 'System.IO.Fakes' 組件可參考。 此命名空間是填充碼建立處理序所產生的。 但您可以按照一般方式使用 'using' 或 'Import')。
 
 您也可以為特定執行個體、建構函式和屬性建立填充碼。 如需詳細資訊，請參閱[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)。
+
+## <a name="using-microsoft-fakes-in-the-ci"></a>在 CI 中使用 Microsoft Fakes
+
+### <a name="microsoft-fakes-assembly-generation"></a>產生元件 Microsoft Fakes
+因為 Microsoft Fakes 需要 Visual Studio Enterprise，所以 Fakes 元件的產生需要您使用 [Visual Studio 組建](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops)工作來建立您的專案。
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> 另一個方法是將您的 Fakes 元件簽入 CI，並使用 [MSBuild](../msbuild/msbuild-task.md?view=vs-2019)工作。 當您這樣做時，您必須確定您的測試專案中有產生之 Fakes 元件的元件參考，如下列程式碼片段所示：
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <Reference Include="FakesAssemblies\System.Fakes.dll">
+    </ItemGroup>
+</Project>
+```
+
+您必須以手動方式將 SDK 樣式的專案加入此參考， ( .NET Core 和 .NET Framework) ，因為我們已移至隱含地將元件參考加入至您的測試專案。 如果您遵循此方法，則必須確保在父元件變更時，會更新 fakes 元件。
+::: moniker-end
+
+### <a name="running-microsoft-fakes-tests"></a>正在執行 Microsoft Fakes 測試
+只要 Microsoft Fakes 的元件存在於設定的目錄中 `FakesAssemblies` (預設 `$(ProjectDir)FakesAssemblies`) ，您就可以使用 [vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops)工作執行測試。
+
+::: moniker range=">=vs-2019"
+使用 Microsoft Fakes 以 [vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) 工作 .net Core 專案進行分散式測試需要 Visual Studio 2019 Update 9 Preview `20201020-06` 和更新版本。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-or-net-core-projects"></a>將使用 Microsoft Fakes 的 .NET Framework 測試專案轉換成 SDK 樣式 .NET Framework 或 .NET Core 專案
+您將需要 .NET Framework 設定的最少量變更，讓 Microsoft Fakes 轉換為 .NET Core。 您必須考慮的案例如下：
+- 如果您使用的是自訂專案範本，您必須確定它是 SDK 樣式，而且是針對相容的目標 framework 所建立。
+- 某些型別存在於 .NET Framework 和 .net core 的不同元件中 (例如，存在於 .NET Framework 中， `System.DateTime` `System` / `mscorlib` 以及在 `System.Runtime` .net core) 中，而在這些情況下，您必須將元件變更為偽造。
+- 如果您有 fakes 元件和測試專案的元件參考，您可能會看到有關遺漏參考的組建警告，如下所示：
+  ```
+  (ResolveAssemblyReferences target) ->
+  warning MSB3245: Could not resolve this reference. Could not locate the assembly "AssemblyName.Fakes". Check to make sure the assembly exists on disk.
+  If this reference is required by your code, you may get compilation errors.
+  ```
+  這項警告是因為可以忽略 Fakes 產生中所做的必要變更。 您可以藉由移除專案檔中的元件參考來避免這種情況，因為我們現在會在組建期間隱含地加入元件參考。
+::: moniker-end
+
+## <a name="microsoft-fakes-support"></a>Microsoft Fakes 支援 
+### <a name="microsoft-fakes-in-older-projects-targeting-net-framework-non-sdk-style"></a>以 .NET Framework (非 SDK 樣式) 為目標的舊版專案中 Microsoft Fakes。
+- Visual Studio Enterprise 2015 和更新版本支援 Microsoft Fakes 元件產生。
+- Microsoft Fakes 的測試可以搭配所有可用的 TestPlatform NuGet 套件來執行。
+- 使用 Visual Studio Enterprise 2015 和更新版本中 Microsoft Fakes 的測試專案支援程式碼涵蓋範圍。
+
+### <a name="microsoft-fakes-in-sdk-style-net-framework-and-net-core-projects"></a>SDK 樣式 .NET Framework 和 .NET Core 專案中的 Microsoft Fakes
+- Microsoft Fakes 在 Visual Studio Enterprise 2019 Update 6 中預覽的元件產生，在 Update 8 中預設為啟用。
+- 針對以 .NET Framework 為目標的專案 Microsoft Fakes 測試可以搭配所有可用的 TestPlatform NuGet 套件來執行。
+- 針對以 .NET Core 為目標的專案，Microsoft Fakes 測試可以搭配 Microsoft 執行。 TestPlatform NuGet 套件的版本 [16.8.0-preview-20200921-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.8.0-preview-20200921-01) 和更新版本。
+- 使用 Visual Studio Enterprise 2015 版和更高版本中的 Microsoft Fakes，以 .NET Framework 為目標的測試專案支援程式碼涵蓋範圍。
+- 使用 Microsoft Fakes 以 .NET Core 為目標之測試專案的程式碼涵蓋範圍支援正在開發中。
+
 
 ## <a name="in-this-section"></a>本節內容
 [使用虛設常式隔離應用程式的各個組件，以便進行單元測試](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)

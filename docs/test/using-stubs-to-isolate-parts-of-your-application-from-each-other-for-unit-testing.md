@@ -10,16 +10,16 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 1d66dcd0a59edfbfb199a68f81ecebe608afccb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 268cfaa0a5df458ae529f5f2d369dc157ef64548
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289049"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325968"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用虛設常式隔離應用程式的各個組件，方便進行單元測試
 
-「虛設常式類型」** 是 Microsoft Fakes 架構提供的兩項技術之一，可讓您輕鬆地隔離測試中的元件與它所呼叫的其他元件。 虛設常式是在測試期間取代另一個元件的一小段程式碼。 使用虛設常式的優點是它會傳回一致的結果，讓測試更容易撰寫。 即使其他元件還無法運作，您仍然可以執行測試。
+「虛設常式類型」是 Microsoft Fakes 架構提供的兩項技術之一，可讓您輕鬆地隔離測試中的元件與它所呼叫的其他元件。 虛設常式是在測試期間取代另一個元件的一小段程式碼。 使用虛設常式的優點是它會傳回一致的結果，讓測試更容易撰寫。 即使其他元件還無法運作，您仍然可以執行測試。
 
 如需 Fakes 的概觀和快速入門指南，請參閱[使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "85289049"
 
 ![實際和 Stub 類別都遵循單一介面。](../test/media/fakesinterfaces.png)
 
-因為您必須能夠利用這種方式建構程式碼才能使用虛設常式，因此通常可以使用虛設常式隔離應用程式中不同的部分。 為了隔離虛設常式與您無法控制的其他組件 (例如 *System.dll*)，通常會使用填充碼。 請參閱[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)。
+因為您必須能夠利用這種方式建構程式碼才能使用虛設常式，因此通常可以使用虛設常式隔離應用程式中不同的部分。 為了隔離虛設常式與您無法控制的其他組件 (例如 *System.dll* )，通常會使用填充碼。 請參閱[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)。
 
 ## <a name="how-to-use-stubs"></a>如何使用 Stub
 
@@ -147,13 +147,16 @@ analyzer = new StockAnalyzer(new StockFeed());
 
 #### <a name="add-a-fakes-assembly"></a>加入 Fakes 組件
 
-1. 在 [方案總管] **** 中，展開單元測試專案的 [參考]****。
+1. 在 **方案總管** 中， 
+    - 針對較舊的 .NET Framework 專案 (非 SDK 樣式) ，請展開您的單元測試專案的 [ **參考** ] 節點。
+    ::: moniker range=">=vs-2019"
+    - 若為以 .NET Framework 或 .NET Core 為目標的 SDK 樣式專案，請展開 [相依性 **]** 節點，以尋找您想要在 **元件** 、 **專案** 或 **封裝** 下偽造的元件。
+    ::: moniker-end
+    - 如果您是在 Visual Basic 中工作，請選取 [ **方案總管** ] 工具列中的 [ **顯示所有** 檔案]，以查看 [ **參考** ] 節點。
 
-   如果您在 Visual Basic 中工作，選取 [方案總管]**** 工具列中的 [顯示所有檔案]****，才能看見 [參考]**** 節點。
+2. 選取包含您要為其建立填充碼之類別定義的元件。 例如，如果您想要填充碼 **DateTime** ，請選取 [ **System.dll** ]。
 
-2. 選取包含您要用於建立虛設常式之介面定義的組件。
-
-3. 在捷徑功能表上，選擇 [新增 Fakes 組件]****。
+3. 在捷徑功能表上，選擇 [新增 Fakes 組件]。
 
 ### <a name="write-your-test-with-stubs"></a>撰寫含 Stub 的測試
 
