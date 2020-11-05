@@ -1,5 +1,7 @@
 ---
 title: 使用 XML 架構設計工具中的內容模型查看來檢查節點
+description: 瞭解如何使用 XML 架構設計工具中的內容模型視圖，檢查 XML 架構中節點的內容模型。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81bf6294aeac9a23168bf9cf9aaec26efbfc6c1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef330e6e189b9cee1126d5de48d55622fe8d9046
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815977"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399505"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>如何：使用內容模型視圖檢查節點的內容模型
 
@@ -27,9 +29,9 @@ ms.locfileid: "85815977"
 
 3. 從 [範例 xml 架構：採購單架構](../xml-tools/sample-xsd-file-purchase-order-schema.md) 中複製並貼上 xml 架構範例程式碼，以取代依預設加入至新 XSD 檔案的程式碼。
 
-4. 以 `purchaseOrder` 滑鼠右鍵按一下 [xml 編輯器] 中的專案 `purchaseOrder` ，然後選取 [ **在 Xml Explorer 中顯示**]，以選取 [架構瀏覽器] 中的元素。
+4. 以 `purchaseOrder` 滑鼠右鍵按一下 [xml 編輯器] 中的專案 `purchaseOrder` ，然後選取 [ **在 Xml Explorer 中顯示** ]，以選取 [架構瀏覽器] 中的元素。
 
-5. `purchaseOrder`在 [XML Explorer] 中，以滑鼠右鍵按一下，然後選取 [**在內容模型視圖中顯示**]。
+5. `purchaseOrder`在 [XML Explorer] 中，以滑鼠右鍵按一下，然後選取 [ **在內容模型視圖中顯示** ]。
 
      內容模型檢視的設計介面上會顯示 `purchaseOrder` 項目。
 

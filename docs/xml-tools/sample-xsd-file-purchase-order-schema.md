@@ -1,5 +1,7 @@
 ---
 title: 範例 XSD 檔案：採購單結構描述
+description: 針對 XSD 架構設計工具檔中各種範例所使用的訂單架構，查看範例 XSD 檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d841b75b58dc977b5141dce0b8c7275e4a3ced8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f5a9d8d87af3f7d9e8583a1bc21c008d1a8571f
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592564"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398783"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>範例 XSD 檔案：採購單結構描述
 

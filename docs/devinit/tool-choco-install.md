@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e30db0eea924fcbc9587593266323d81c4ff1b40
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 3bdcf6caa52f19bc03559fb57d41fadb0ac56485
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006047"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399855"
 ---
 # <a name="choco-install"></a>choco-install
 
@@ -34,7 +34,7 @@ ms.locfileid: "91006047"
 
 ### <a name="input"></a>輸入
 
-`input`屬性可用來指定要安裝的封裝名稱 (例如 ' mongodb ' ) 或下列格式的設定檔路徑_packages.config_、 _. nuspec_和 _. nupkg_。 的值 `input` 將會附加至 `choco install` 命令 (例如 `choco install mongodb`) ，以及中特定的任何引數 [`additionalOptions`](#additional-options) ，以及下列) 所定義的內建 `choco` 選項 (。 [below](#built-in-options) 您可以在 [Chocolatey 封裝資源庫](https://chocolatey.org/packages)中找到套件。 使用設定檔時，您可以傳入屬性中該檔案的路徑 `input` ，例如 `"input":"packages.config"` 。
+`input`屬性可用來指定要安裝的封裝名稱 (例如 ' mongodb ' ) 或下列格式的設定檔路徑 _packages.config_ 、 _. nuspec_ 和 _. nupkg_ 。 的值 `input` 將會附加至 `choco install` 命令 (例如 `choco install mongodb`) ，以及中特定的任何引數 [`additionalOptions`](#additional-options) ，以及下列) 所定義的內建 `choco` 選項 (。 [below](#built-in-options) 您可以在 [Chocolatey 封裝資源庫](https://chocolatey.org/packages)中找到套件。 使用設定檔時，您可以傳入屬性中該檔案的路徑 `input` ，例如 `"input":"packages.config"` 。
 
 ### <a name="additional-options"></a>其他選項
 
@@ -44,7 +44,7 @@ ms.locfileid: "91006047"
 
 此 `choco-install` 工具會設定一些 `choco` 命令列引數，以確保 `choco` 可執行無周邊。 以下列出這些引數，您可以在 [chocolatey 檔](https://chocolatey.org/docs/)中找到這些引數的相關檔。
 
-| Name                  | 描述                                                                                        |
+| 名稱                  | 描述                                                                                        |
 |-----------------------|----------------------------------------------------------------------------------------------------|
 | **--是**             | 確認所有提示-選擇肯定答案而非提示。 意味 著 `--accept-license.` |
 | **--沒有進度**     | 不要顯示進度-不會顯示進度百分比。                                         |
@@ -54,7 +54,7 @@ ms.locfileid: "91006047"
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Example that will trigger the Default behavior of installing packages listed in a packages.config file.",

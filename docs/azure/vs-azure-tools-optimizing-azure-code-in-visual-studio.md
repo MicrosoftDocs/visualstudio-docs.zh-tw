@@ -5,16 +5,15 @@ author: ghogen
 manager: jillfra
 ms.assetid: ed48ee06-e2d2-4322-af22-07200fb16987
 ms.topic: conceptual
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 3ee226aac0d705da29333260966781d5b9b627ed
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 853b51fb5990d74a79f76cc55743ff9ba50f282e
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508453"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399775"
 ---
 # <a name="optimizing-your-azure-code"></a>最佳化您的 Azure 程式碼
 當您在撰寫使用 Microsoft Azure 的應用程式時，請遵循某些程式碼撰寫實務，以避免應用程式在雲端環境中發生延展性、行為和效能方面的問題。 Microsoft 有提供 Azure Code Analysis 工具，可辨識並找出許多常見問題，並幫助您解決這些問題。 您可以在 Visual Studio 中透過 NuGet 下載此工具。
@@ -120,9 +119,9 @@ AP2002
 請在 [Azure Code Analysis 意見反應](https://social.msdn.microsoft.com/Forums/en-US/home)分享您的想法和意見。
 
 ### <a name="reason"></a>原因
-在呼叫 **OnMessage**時，用戶端會啟動持續輪詢佇列或訂用帳戶的內部訊息幫浦。 此訊息幫浦包含會發出訊息接收呼叫的無限迴圈。 如果呼叫逾時，它就會發出新的呼叫。 逾時間隔是由所使用的 [MessagingFactory](/dotnet/api/microsoft.servicebus.messaging.messagingfactory) 的 [OperationTimeout](/dotnet/api/microsoft.servicebus.messaging.messagingfactorysettings) 屬性值所決定。
+在呼叫 **OnMessage** 時，用戶端會啟動持續輪詢佇列或訂用帳戶的內部訊息幫浦。 此訊息幫浦包含會發出訊息接收呼叫的無限迴圈。 如果呼叫逾時，它就會發出新的呼叫。 逾時間隔是由所使用的 [MessagingFactory](/dotnet/api/microsoft.servicebus.messaging.messagingfactory) 的 [OperationTimeout](/dotnet/api/microsoft.servicebus.messaging.messagingfactorysettings) 屬性值所決定。
 
-相較於 **Receive**，使用 **OnMessage** 的優點是使用者不必手動輪詢訊息、處理例外狀況、平行處理多個訊息，以及完成訊息。
+相較於 **Receive** ，使用 **OnMessage** 的優點是使用者不必手動輪詢訊息、處理例外狀況、平行處理多個訊息，以及完成訊息。
 
 如果您呼叫的 **Receive** 不是使用其預設值，請確定 *ServerWaitTime* 值有超過一分鐘。 將 *ServerWaitTime* 設定為超過一分鐘可防止伺服器沒接收完訊息就逾時。
 
@@ -414,8 +413,8 @@ AP5000
 使用診斷組態設計工具將診斷設定移至診斷組態檔 (若是 SDK 2.5 和更新版本，則為 diagnostics.wadcfg 或 diagnostics.wadcfgx)。 也建議您安裝 [Azure SDK 2.5](https://social.msdn.microsoft.com/Forums/en-US/home) 並使用最新的診斷功能。
 
 1. 在您要設定之角色的捷徑功能表上，選擇 [屬性]，然後選擇 [組態] 索引標籤。
-2. 在 [**診斷**] 區段，確定已選取 [**啟用診斷**] 核取方塊。
-3. 選擇 [設定]**** 按鈕。
+2. 在 [ **診斷** ] 區段，確定已選取 [ **啟用診斷** ] 核取方塊。
+3. 選擇 [設定] 按鈕。
 
    ![存取啟用診斷選項](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
 

@@ -1,5 +1,7 @@
 ---
 title: HOW TO：從 XML 結構描述產生 XML 片段
+description: 瞭解如何使用 XML 編輯器，從 XML 架構定義語言 (XSD) 架構產生 XML 片段。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c7dff8e1bb211343ccc44e0d1fd33d96c102283
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce87f71a465f9c6452fa713fd8a7bdf523e801a3
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817173"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399465"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>如何：從 XML 架構產生 XML 片段
 
@@ -50,21 +52,21 @@ XML 編輯器可以從 XML 架構定義語言 (XSD) 架構產生 XML 片段。 �
 
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>建立新的 XML 檔案，並將它與 XML 架構產生關聯
 
-1. **在 [檔案**] 功能表上，指向 [**新增**]，**然後按一下 [** 檔案]。
+1. **在 [檔案** ] 功能表上，指向 [ **新增** ]， **然後按一下 [** 檔案]。
 
-2. 在 [**範本**] 窗格中選取 [ **XML**檔案]，然後按一下 [**開啟**]。
+2. 在 [ **範本** ] 窗格中選取 [ **XML** 檔案]，然後按一下 [ **開啟** ]。
 
      編輯器中會開啟新的檔案。 檔案包含預設的 XML 宣告，`<?xml version="1.0" encoding="utf-8">`。
 
-3. 在 [檔案屬性] 視窗中，按一下 [**架構**] 欄位上的 [流覽] 按鈕 (**...**) 。
+3. 在 [檔案屬性] 視窗中，按一下 [ **架構** ] 欄位上的 [流覽] 按鈕 ( **...** ) 。
 
      [ **XSD 架構** ] 對話方塊隨即顯示。
 
-4. 按一下 [新增] 。
+4. 按一下 [新增]  。
 
      [ **開啟 XSD 架構** ] 對話方塊隨即出現。
 
-5. 選取架構檔案，然後按一下 [ **開啟**]。
+5. 選取架構檔案，然後按一下 [ **開啟** ]。
 
 6. 按一下 [確定]  。
 
@@ -82,9 +84,9 @@ XML 編輯器可以從 XML 架構定義語言 (XSD) 架構產生 XML 片段。 �
 
      **?** 加入處理指示。
 
-     加入根項目的**連絡人**。
+     加入根項目的 **連絡人** 。
 
-3. 從成員清單中選取 [ **Contact** ]，然後按 **enter**。
+3. 從成員清單中選取 [ **Contact** ]，然後按 **enter** 。
 
      編輯器會加入開始標記 `<Contact`，並將游標置於項目名稱之後。
 
@@ -154,7 +156,7 @@ XML 編輯器可以從 XML 架構定義語言 (XSD) 架構產生 XML 片段。 �
 </Contact>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [XML 程式碼片段](../xml-tools/xml-snippets.md)
+- [XML 片段](../xml-tools/xml-snippets.md)
 - [如何：使用 XML 程式碼片段](../xml-tools/how-to-use-xml-snippets.md)

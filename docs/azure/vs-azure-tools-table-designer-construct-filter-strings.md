@@ -4,28 +4,27 @@ description: 建構資料表設計工具的篩選字串
 author: ghogen
 manager: jillfra
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 13ca51a6c7b505605409cbb6bb2f17e618c45179
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30e9a347be1a3b35e69d2c72d141873c62dcdeb3
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911651"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398601"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>建構資料表設計工具的篩選字串
-## <a name="overview"></a>概觀
-若要在 Visual Studio [資料表設計工具] **** 中顯示的 Azure 資料表中篩選資料，您可以建構篩選字串並在篩選欄位中輸入它。 篩選條件字串語法由 WCF Data Services 定義，類似於 SQL WHERE 子句，但會透過 HTTP 要求傳送至表格服務。 [資料表設計工具] **** 會為您處理適當的編碼，因此，若要篩選所需的屬性值，您只需要在篩選欄位中輸入屬性名稱、比較運算子、準則值和 (選擇性) 布林運算子。 您不需要像透過 [儲存體服務 REST API 參考](/rest/api/storageservices/)建構 URL 來查詢資料表一樣包含 $filter 查詢選項。
+## <a name="overview"></a>總覽
+若要在 Visual Studio [資料表設計工具] 中顯示的 Azure 資料表中篩選資料，您可以建構篩選字串並在篩選欄位中輸入它。 篩選條件字串語法由 WCF Data Services 定義，類似於 SQL WHERE 子句，但會透過 HTTP 要求傳送至表格服務。 [資料表設計工具]  會為您處理適當的編碼，因此，若要篩選所需的屬性值，您只需要在篩選欄位中輸入屬性名稱、比較運算子、準則值和 (選擇性) 布林運算子。 您不需要像透過 [儲存體服務 REST API 參考](/rest/api/storageservices/)建構 URL 來查詢資料表一樣包含 $filter 查詢選項。
 
-WCF Data Services 以 [開放式資料通訊協定](https://www.odata.org/) (OData) 為基礎。 如需篩選系統查詢選項 (**$filter**) 的詳細資訊，請參閱 [OData URI 轉換規格](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)。
+WCF Data Services 以 [開放式資料通訊協定](https://www.odata.org/) (OData) 為基礎。 如需篩選系統查詢選項 ( **$filter** ) 的詳細資訊，請參閱 [OData URI 轉換規格](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)。
 
 ## <a name="comparison-operators"></a>比較運算子
 所有屬性類型都支援下列邏輯運算子：
 
-| 邏輯運算子 | 說明 | 篩選字串範例 |
+| 邏輯運算子 | 描述 | 篩選字串範例 |
 | --- | --- | --- |
 | eq |等於 |City eq 'Redmond' |
 | gt |大於 |Price gt 20 |
@@ -33,9 +32,9 @@ WCF Data Services 以 [開放式資料通訊協定](https://www.odata.org/) (ODa
 | lt |小於 |Price lt 20 |
 | le |小於或等於 |Price le 100 |
 | ne |不等於 |City ne 'London' |
-| 及 |And |Price le 200 and Price gt 3.5 |
-| 或 |Or |Price le 3.5 or Price gt 200 |
-| 否 |Not |not isAvailable |
+| 及 |和 |Price le 200 and Price gt 3.5 |
+| 或 |或 |Price le 3.5 or Price gt 200 |
+| not |否 |not isAvailable |
 
 建構篩選字串時，下列規則很重要：
 
@@ -82,13 +81,13 @@ AmountDue le 100.25
 ## <a name="filtering-on-boolean-properties"></a>篩選布林值屬性
 若要篩選布林值，請指定 **true** 或 **false** 且不加引號。
 
-下列範例會傳回 IsActive 屬性設定為 **true**的所有實體：
+下列範例會傳回 IsActive 屬性設定為 **true** 的所有實體：
 
 ```
 IsActive eq true
 ```
 
-您也可以不加邏輯運算子來撰寫這個篩選運算式。 在下列範例中，表格服務也會傳回 IsActive 為 **true**的所有實體：
+您也可以不加邏輯運算子來撰寫這個篩選運算式。 在下列範例中，表格服務也會傳回 IsActive 為 **true** 的所有實體：
 
 ```
 IsActive

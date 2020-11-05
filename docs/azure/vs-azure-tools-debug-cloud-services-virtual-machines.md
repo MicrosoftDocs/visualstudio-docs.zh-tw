@@ -5,17 +5,16 @@ author: mikejo5000
 manager: jillfra
 ms.assetid: 945e06e0-2100-41af-b218-72347367ddab
 ms.topic: how-to
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 00b6d001a8764d3519f0584de88a55a000447054
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: cd55ebd9171a7f9cd2157194da8876f47aa22ece
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508479"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398692"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>在 Visual Studio 中進行 Azure 雲端服務或虛擬機器的偵錯
 
@@ -29,11 +28,11 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 
 ### <a name="to-debug-your-cloud-service-on-your-local-computer"></a>在您的本機電腦上偵錯您的雲端服務
 
-1. 在功能表列上，選取 [ **Debug**  >  **開始調試**程式] 以執行您的 Azure 雲端服務專案。 或者，您可以按 F5。 您會看到正在啟動計算模擬器的訊息。 當模擬器啟動時，系統匣圖示可加以確認。
+1. 在功能表列上，選取 [ **Debug**  >  **開始調試** 程式] 以執行您的 Azure 雲端服務專案。 或者，您可以按 F5。 您會看到正在啟動計算模擬器的訊息。 當模擬器啟動時，系統匣圖示可加以確認。
 
     ![系統匣中的 Azure 模擬器](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC783828.png)
 
-2. 開啟通知區域中 Azure 圖示的捷徑功能表，然後選取 [顯示計算模擬器 UI] ****，來顯示計算模擬器的使用者介面。
+2. 開啟通知區域中 Azure 圖示的捷徑功能表，然後選取 [顯示計算模擬器 UI] ，來顯示計算模擬器的使用者介面。
 
     UI 的左方窗格會顯示目前已部署至計算模擬器的服務，以及每個服務正在執行的角色執行個體。 您可以選擇將在右窗格中顯示生命週期、記錄和診斷資訊的服務或角色。 如果您將焦點放在包含視窗的上邊界時，它會展開以填滿右方窗格。
 
@@ -49,19 +48,19 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 如果您啟用雲端服務的遠端偵錯，它不會出現效能降低或產生其他費用。 不要對生產環境服務使用遠端偵錯，因為這可能會對正在使用該服務的用戶端造成不良影響。
 
 > [!NOTE]
-> 從 Visual Studio 發佈雲端服務時，您可以為該服務中以 .NET Framework 4 或 .NET Framework 4.5 為目標的任何角色啟用 **IntelliTrace** 。 藉由使用 **IntelliTrace**，您可以檢查角色執行個體在過去發生的事件，並重現當時的情況。 請參閱[使用 IntelliTrace 和 Visual Studio 偵錯發佈的雲端服務](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)和[使用 IntelliTrace](../debugger/intellitrace.md)。
+> 從 Visual Studio 發佈雲端服務時，您可以為該服務中以 .NET Framework 4 或 .NET Framework 4.5 為目標的任何角色啟用 **IntelliTrace** 。 藉由使用 **IntelliTrace** ，您可以檢查角色執行個體在過去發生的事件，並重現當時的情況。 請參閱[使用 IntelliTrace 和 Visual Studio 偵錯發佈的雲端服務](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)和[使用 IntelliTrace](../debugger/intellitrace.md)。
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>啟用雲端服務的遠端偵錯
 
-1. 開啟 Azure 專案的捷徑功能表，然後選取 [發佈] ****。
+1. 開啟 Azure 專案的捷徑功能表，然後選取 [發佈] 。
 
-2. 選取 [預備]**** 環境和 [偵錯] **** 組態。
+2. 選取 [預備] 環境和 [偵錯] 組態。
 
     這只是指導方針。 您可以選擇在生產環境中執行測試環境。 不過，如果您在生產環境上啟用遠端偵錯，可能會對使用者造成不良影響。 您可以選擇 [發行] 組態，但 [偵錯] 組態會讓偵錯更容易。
 
     ![選擇偵錯組態](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746717.gif)
 
-3. 遵循往常的步驟，但在 [進階設定]**** 索引標籤上選取 [啟用所有角色的遠端偵錯工具]**** 核取方塊。
+3. 遵循往常的步驟，但在 [進階設定] 索引標籤上選取 [啟用所有角色的遠端偵錯工具] 核取方塊。
 
     ![偵錯組態](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746718.gif)
 
@@ -69,7 +68,7 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 
 1. 在伺服器總管中，展開雲端服務的節點。
 
-2. 開啟您要附加的角色或角色執行個體的捷徑功能表，然後選取 [附加偵錯工具] ****。
+2. 開啟您要附加的角色或角色執行個體的捷徑功能表，然後選取 [附加偵錯工具] 。
 
     如果您偵錯角色，Visual Studio 偵錯工具會附加至該角色的每個執行個體。 偵錯工具會在執行該行程式碼並符合中斷點任何條件的第一個角色執行個體的中斷點上中斷。 如果您偵錯某個執行個體，偵錯工具僅會附加至該執行個體，並只有在該特定執行個體執行該行程式碼並符合中斷點的條件時在某個中斷點上中斷。
 
@@ -79,14 +78,14 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 
     ![選取程式碼類型對話方塊](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. 若要識別附加偵錯工具的進程，請在功能表列上選取 [ **Debug**  >  **Windows**  >  **進程**]，然後開啟 [**進程**] 對話方塊。 (鍵盤：Ctrl+Alt+Z) 若要中斷特定處理序的連結，請開啟其捷徑功能表，然後選取 [中斷處理序連結]****。 或者，在「伺服器總管」中找出執行個體節點、尋找處理序、開啟其捷徑功能表，然後選取 [中斷處理序連結] ****。
+4. 若要識別附加偵錯工具的進程，請在功能表列上選取 [ **Debug**  >  **Windows**  >  **進程** ]，然後開啟 [ **進程** ] 對話方塊。 (鍵盤：Ctrl+Alt+Z) 若要中斷特定處理序的連結，請開啟其捷徑功能表，然後選取 [中斷處理序連結]。 或者，在「伺服器總管」中找出執行個體節點、尋找處理序、開啟其捷徑功能表，然後選取 [中斷處理序連結] 。
 
     ![偵錯處理序](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
 > [!WARNING]
 > 進行遠端偵錯時，避免長時間在中斷點停止運作。 Azure 會將停止超過幾分鐘時間的程序視為沒有回應，並停止將流量傳送到該執行個體。 如果您停止太久，msvsmon.exe 會從處理序中斷連結。
 
-若要將偵錯工具與您執行個體或角色中的所有處理序中斷連結，請開啟您要偵錯的角色或執行個體的捷徑功能表，然後選取 [中斷連結偵錯工具] ****。
+若要將偵錯工具與您執行個體或角色中的所有處理序中斷連結，請開啟您要偵錯的角色或執行個體的捷徑功能表，然後選取 [中斷連結偵錯工具] 。
 
 ## <a name="limitations-of-remote-debugging-in-azure"></a>在 Azure 中遠端偵錯的限制
 
@@ -110,7 +109,7 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 
 1. 在伺服器總管中，展開 [虛擬機器] 節點並選取您要偵錯的虛擬機器節點。
 
-2. 開啟操作功能表，然後選取 [啟用偵錯功能] ****。 當詢問您是否確定要在虛擬機器上啟用偵錯時，請按一下 [是] ****。
+2. 開啟操作功能表，然後選取 [啟用偵錯功能] 。 當詢問您是否確定要在虛擬機器上啟用偵錯時，請按一下 [是] 。
 
     Azure 會將遠端偵錯擴充功能安裝到虛擬機器以啟用偵錯。
 
@@ -118,17 +117,17 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 
     ![Azure 活動記錄檔](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-3. 遠端偵錯擴充功能安裝完成後，開啟虛擬機器的操作功能表，然後選取 [附加偵錯工具...] ****
+3. 遠端偵錯擴充功能安裝完成後，開啟虛擬機器的操作功能表，然後選取 [附加偵錯工具...] 
 
-    Azure 會取得虛擬機器上的處理序清單並顯示於 [**附加至處理序**] 對話方塊中。
+    Azure 會取得虛擬機器上的處理序清單並顯示於 [ **附加至處理序** ] 對話方塊中。
 
     ![附加偵錯工具命令](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
-4. 在 [附加至處理序]**** 對話方塊中，選取 [選取]**** 以將結果清單限制為只顯示您要偵錯的程式碼類型。 您可以對 32 位元或 64 位元受控碼、機器碼或兩者進行偵錯。
+4. 在 [附加至處理序] 對話方塊中，選取 [選取] 以將結果清單限制為只顯示您要偵錯的程式碼類型。 您可以對 32 位元或 64 位元受控碼、機器碼或兩者進行偵錯。
 
     ![選取程式碼類型對話方塊](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-5. 選擇您想要在虛擬機器上進行偵錯工具的進程，然後選取 [ **附加**]。 例如，如果您想要在虛擬機器上偵錯 Web 應用程式，可以選擇 w3wp.exe 處理序。 如需詳細資訊，請參閱[在 Visual Studio 中偵錯一或多個處理序](../debugger/debug-multiple-processes.md)和 [Azure 角色架構](/archive/blogs/kwill/windows-azure-role-architecture)。
+5. 選擇您想要在虛擬機器上進行偵錯工具的進程，然後選取 [ **附加** ]。 例如，如果您想要在虛擬機器上偵錯 Web 應用程式，可以選擇 w3wp.exe 處理序。 如需詳細資訊，請參閱[在 Visual Studio 中偵錯一或多個處理序](../debugger/debug-multiple-processes.md)和 [Azure 角色架構](/archive/blogs/kwill/windows-azure-role-architecture)。
 
 ## <a name="create-a-web-project-and-a-virtual-machine-for-debugging"></a>建立 Web 專案和虛擬機器進行偵錯
 
@@ -140,16 +139,16 @@ Visual Studio ASP.NET 專案提供選項，讓您建立可用於測試應用程�
 
 1. 在 Visual Studio 中，建立新的 ASP.NET Web 應用程式。
 
-2. 在 [新增 ASP.NET 專案] 對話方塊中，于 [Azure] 區段的下拉式清單方塊中選取 [ **虛擬機器** ]。 讓 [**建立遠端資源**] 核取方塊保持選取狀態。 選取 [確定] **** 以繼續操作。
+2. 在 [新增 ASP.NET 專案] 對話方塊中，于 [Azure] 區段的下拉式清單方塊中選取 [ **虛擬機器** ]。 讓 [ **建立遠端資源** ] 核取方塊保持選取狀態。 選取 [確定]  以繼續操作。
 
-    [**在 Azure 上建立虛擬機器**] 對話方塊隨即出現。
+    [ **在 Azure 上建立虛擬機器** ] 對話方塊隨即出現。
 
     ![建立 ASP.NET Web 專案對話方塊](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
     > [!NOTE]
     > 如果您還沒登入，將會要求您登入 Azure 帳戶。
 
-3. 選擇虛擬機器的各種設定，然後選取 **[確定]**。 如需詳細資訊，請參閱 [虛擬機器](/azure/virtual-machines/) 。
+3. 選擇虛擬機器的各種設定，然後選取 **[確定]** 。 如需詳細資訊，請參閱 [虛擬機器](/azure/virtual-machines/) 。
 
     您輸入的 DNS 名稱會成為虛擬機器的名稱。
 
@@ -159,7 +158,7 @@ Visual Studio ASP.NET 專案提供選項，讓您建立可用於測試應用程�
 
 4. 虛擬機器完全設定好之後，請在伺服器總管中選取虛擬機器的節點。
 
-5. 開啟操作功能表，然後選取 [啟用偵錯功能] ****。 當詢問您是否確定要在虛擬機器上啟用偵錯時，請按一下 [是] ****。
+5. 開啟操作功能表，然後選取 [啟用偵錯功能] 。 當詢問您是否確定要在虛擬機器上啟用偵錯時，請按一下 [是] 。
 
     Azure 會將遠端偵錯擴充功能安裝到虛擬機器以啟用偵錯。
 
@@ -167,23 +166,23 @@ Visual Studio ASP.NET 專案提供選項，讓您建立可用於測試應用程�
 
     ![Azure 活動記錄檔](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. 如 [HOW TO：在 Visual Studio 中使用單鍵發佈來部署 Web 專案](/previous-versions/aspnet/dd465337(v=vs.110))所述，發佈您的專案。 因為您想要在虛擬機器上進行偵錯，請在 [**發行 Web**] 精靈的 [**設定**] 頁面上，選取 [**偵錯**] 作為組態。 這樣可確保程式碼符號在偵錯時可供使用。
+6. 如 [HOW TO：在 Visual Studio 中使用單鍵發佈來部署 Web 專案](/previous-versions/aspnet/dd465337(v=vs.110))所述，發佈您的專案。 因為您想要在虛擬機器上進行偵錯，請在 [ **發行 Web** ] 精靈的 [ **設定** ] 頁面上，選取 [ **偵錯** ] 作為組態。 這樣可確保程式碼符號在偵錯時可供使用。
 
     ![發佈設定](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
-7. 如果先前已部署專案，請在 [**檔案發行選項**] 中，選取 [**移除目的地的其他檔案**]。
+7. 如果先前已部署專案，請在 [ **檔案發行選項** ] 中，選取 [ **移除目的地的其他檔案** ]。
 
-8. 專案發佈之後，在「伺服器總管」中的虛擬機器操作功能表上，選取 [附加偵錯工具...] ****
+8. 專案發佈之後，在「伺服器總管」中的虛擬機器操作功能表上，選取 [附加偵錯工具...] 
 
-    Azure 會取得虛擬機器上的處理序清單並顯示於 [**附加至處理序**] 對話方塊中。
+    Azure 會取得虛擬機器上的處理序清單並顯示於 [ **附加至處理序** ] 對話方塊中。
 
     ![附加偵錯工具命令](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
-9. 在 [附加至處理序]**** 對話方塊中，選取 [選取]**** 以將結果清單限制為只顯示您要偵錯的程式碼類型。 您可以對 32 位元或 64 位元受控碼、機器碼或兩者進行偵錯。
+9. 在 [附加至處理序] 對話方塊中，選取 [選取] 以將結果清單限制為只顯示您要偵錯的程式碼類型。 您可以對 32 位元或 64 位元受控碼、機器碼或兩者進行偵錯。
 
     ![選取程式碼類型對話方塊](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-10. 選擇您想要在虛擬機器上進行偵錯工具的進程，然後選取 [ **附加**]。 例如，如果您想要在虛擬機器上偵錯 Web 應用程式，可以選擇 w3wp.exe 處理序。 如需詳細資訊，請參閱 [在 Visual Studio 中偵錯一或多個處理序](../debugger/debug-multiple-processes.md) 。
+10. 選擇您想要在虛擬機器上進行偵錯工具的進程，然後選取 [ **附加** ]。 例如，如果您想要在虛擬機器上偵錯 Web 應用程式，可以選擇 w3wp.exe 處理序。 如需詳細資訊，請參閱 [在 Visual Studio 中偵錯一或多個處理序](../debugger/debug-multiple-processes.md) 。
 
 ## <a name="next-steps"></a>後續步驟
 

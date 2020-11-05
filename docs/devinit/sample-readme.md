@@ -1,7 +1,7 @@
 ---
 title: 範例清單
 description: 使用 devinit 的範例存放庫自訂清單。
-ms.date: 10/28/2020
+ms.date: 11/04/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 765e96e724d7c0e682c722b3e7b5a4e8ecdca037
-ms.sourcegitcommit: 7915cedf2f5988db25cb90042aa8466a1d3cee7f
+ms.openlocfilehash: 30fc2c467d08b06da382b62b4cbc04eb731b196b
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93027955"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400299"
 ---
 # <a name="sample-list"></a>範例清單
 
 下表包含在 GitHub Codespaces 中使用 devinit 之所有目前可用範例的清單。
 
-| 工具                                              | 描述                                                                                                                  |   |
+| 範例                                            | 描述                                                                                                                  |   |
 |---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|---|
 | [**所有工具**](sample-all-tool.md)               | 使用所有工具的範例。                                                                                              |   |
 | [**eShopOnWeb**](sample-eshoponweb.md)            | 自訂 [dotnet 架構/eshoponweb](https://github.com/dotnet-architecture/eShopOnWeb) 應用程式的範例。          |   |
@@ -30,3 +30,4 @@ ms.locfileid: "93027955"
 | [**開啟 CV**](sample-opencv.md)                   | OpenCV 專案所需的自訂範例。                                                                |   |
 | [**.NET Core 執行時間**](sample-dotnet-runtime.md) | .NET Core 執行時間 [dotnet/運行](https://github.com/dotnet/runtime) 時間專案所需的自訂範例。 |   |
 | [**.NET Core 應用程式**](sample-dotnet-core.md)        | 使用 devinit 來安裝必要 .NET Core SDK 的儲存機制範例。                                             |   |
+| [**Node.js 應用程式**](sample-nodejs.md)               | 使用 devinit 來安裝適用于 Node.js Express 專案之 npm 封裝的存放庫範例。                             |   |

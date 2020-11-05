@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e88f1b58308d0c81d17f9337f0a1a1d5e253c6ba
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 1069fce8c785fa80143f794e8ce083b7c0e86eaf
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862825"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400243"
 ---
 # <a name="require-vscomponent"></a>require-vscomponent
 
 此 `require-vscomponent` 工具可用來將 Visual Studio 設定匯入現有的 Visual Studio。 如需詳細資訊，請參閱 `.vsconfig` [ ](../install/import-export-installation-configurations.md)。
 
-## <a name="usage"></a>使用量
+## <a name="usage"></a>使用方式
 
 如果 `input` 和 `additionalOptions` 屬性都省略或空白，則工具將會遵循以下詳述的 [預設](#default-behavior) 行為。
 
@@ -48,7 +48,7 @@ ms.locfileid: "91862825"
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "comments": "A sample dot-devinit file.",
     "run": [
         {

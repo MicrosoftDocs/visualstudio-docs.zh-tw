@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 950ca7f1e9c43123b206893dbc6a07da7c3743ec
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 3283b6e90cb2bced27f09b8c4491992fb5ac315f
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862857"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400175"
 ---
 # <a name="wsl-install"></a>wsl-install
 
@@ -24,7 +24,7 @@ ms.locfileid: "91862857"
 
 此 `wsl-install` 工具需要在 Windows 上啟用 WSL 2。 如果基於某些原因而未啟用 WSL2，您可以 [使用啟用的工具和](tool-windowsfeature-enable.md) 功能名稱來啟用 WSL2 `Microsoft-Windows-Subsystem-Linux` 。
 
-## <a name="usage"></a>使用量
+## <a name="usage"></a>使用方式
 
 如果 `input` 和 `additionalOptions` 屬性都省略或空白，則工具將會遵循以下詳述的 [預設](#default-behavior) 行為。
 
@@ -68,7 +68,7 @@ AppX 應用程式散發封裝的 URI (`.appx`) 包含要部署的發行版本。
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Example that will install Ubuntu 20.04.",

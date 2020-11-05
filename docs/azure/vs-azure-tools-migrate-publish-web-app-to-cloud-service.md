@@ -1,7 +1,7 @@
 ---
 title: 將 web 應用程式遷移和發佈至雲端服務
 description: 了解如何使用 Visual Studio 將 Web 應用程式移轉並發佈至 Azure 雲端服務
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: d5c2ae5e395f63d0c6c4fb6ac827c89daa7e3dc0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: eb87aff7bf4ca1e3eac359b27a4280877eaefc50
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036531"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399815"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>如何：從 Visual Studio 將 web 應用程式遷移和發佈至 Azure 雲端服務
 
@@ -25,9 +25,9 @@ ms.locfileid: "90036531"
 
 ## <a name="migrate-a-project-to-cloud-services"></a>將專案移轉至雲端服務
 
-1. 以滑鼠右鍵按一下方案節點，然後選取 [ **新增 > 新增專案** ]，並將新的 **Azure 雲端服務 (傳統) ** 專案加入至現有的方案。
-1. 在 [ **新的 Microsoft Azure 雲端服務 (傳統) ** ] 對話方塊中，按一下 [確定]，而不將任何角色新增至專案。
-1. 以滑鼠右鍵按一下新增的雲端服務專案底下的 [角色] 節點，然後選取 [ **在方案中新增 Web 角色專案**]。
+1. 以滑鼠右鍵按一下方案節點，然後選取 [ **新增 > 新增專案** ]，並將新的 **Azure 雲端服務 (傳統)** 專案加入至現有的方案。
+1. 在 [ **新的 Microsoft Azure 雲端服務 (傳統)** ] 對話方塊中，按一下 [確定]，而不將任何角色新增至專案。
+1. 以滑鼠右鍵按一下新增的雲端服務專案底下的 [角色] 節點，然後選取 [ **在方案中新增 Web 角色專案** ]。
 1. 在 [ **與角色專案建立關聯** ] 對話方塊中，選取您要與 web 角色建立關聯的專案。
 
    > [!Important]
@@ -43,8 +43,8 @@ ms.locfileid: "90036531"
 
 ### <a name="test-the-migration-locally"></a>在本機測試移轉
 
-1. 在 Visual Studio 的 [方案總管]**** 中，以滑鼠右鍵按一下新增的雲端服務專案，並按一下 [設定為啟始專案]****。
-1. 選取 [偵錯] > [開始偵錯]**** \(F5\) 啟動 Azure 偵錯環境。 此環境特別模擬各種 Azure 服務。
+1. 在 Visual Studio 的 [方案總管] 中，以滑鼠右鍵按一下新增的雲端服務專案，並按一下 [設定為啟始專案]。
+1. 選取 [偵錯] > [開始偵錯] \(F5\) 啟動 Azure 偵錯環境。 此環境特別模擬各種 Azure 服務。
 
 ### <a name="use-an-azure-sql-database-for-your-application"></a>將 Azure SQL Database 用於應用程式
 
@@ -56,30 +56,30 @@ ms.locfileid: "90036531"
 ## <a name="publish-the-application-to-azure-cloud-service"></a>將應用程式發佈至 Azure 雲端服務
 
 1. 請依照[準備從 Visual Studio 發佈或部署 Azure 應用程式](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md)所述，在您的 Azure 訂用帳戶中建立必要的雲端服務和儲存體帳戶。
-1. 在 Visual Studio 中，以滑鼠右鍵按一下應用程式專案，並選取 [發佈至 Microsoft Azure...]****，其與 [發佈...] 命令不同。
-1. 在出現的 [發佈 Azure 應用程式]**** 中，使用您的 Azure 訂用帳戶使用的帳戶登入，並選取 [下一步 >]****。
-1. 在 [設定] > [一般設定]**** 索引標籤中，從 [雲端服務]**** 下拉式清單選取目標雲端服務，以及您選擇的環境和組態。
-1. 在 [設定] > [進階設定]**** 中，選取要使用的儲存體帳戶，然後選取 [下一步 >]****。
-1. 在 [診斷]**** 中，選擇是否要將資訊傳送至 Application Insights。
-1. 選取 [下一步 >]**** 檢視摘要，然後選取 [發佈]**** 開始部署。
+1. 在 Visual Studio 中，以滑鼠右鍵按一下應用程式專案，並選取 [發佈至 Microsoft Azure...]，其與 [發佈...] 命令不同。
+1. 在出現的 [發佈 Azure 應用程式] 中，使用您的 Azure 訂用帳戶使用的帳戶登入，並選取 [下一步 >]。
+1. 在 [設定] > [一般設定] 索引標籤中，從 [雲端服務] 下拉式清單選取目標雲端服務，以及您選擇的環境和組態。
+1. 在 [設定] > [進階設定] 中，選取要使用的儲存體帳戶，然後選取 [下一步 >]。
+1. 在 [診斷] 中，選擇是否要將資訊傳送至 Application Insights。
+1. 選取 [下一步 >]檢視摘要，然後選取 [發佈] 開始部署。
 1. Visual Studio 會開啟活動記錄視窗，您可以在此追蹤進度：
 
     ![VST_AzureActivityLog](./media/vs-azure-tools-migrate-publish-web-app-to-cloud-service/IC744149.png)
 
-1. (選用) 若要取消部署程序，請以滑鼠右鍵按一下活動記錄檔中的該細目，然後選擇 [取消並移除]****。 此命令會停止部署程序，並從 Azure 中刪除部署環境。 注意：若要在部署此部署環境後將其移除，您必須使用 [Azure 入口網站](https://portal.azure.com)。
-1. (選用) 角色執行個體啟動後，Visual Studio 會自動在 [伺服器總管] > [雲端服務]**** 節點中顯示部署環境。 您可以從這裡檢視個別角色執行個體的狀態。
-1. 若要在部署後存取應用程式，請在 [Azure 活動記錄檔]**** 中出現 [已完成]**** 狀態和 URL 時，選擇部署旁邊的箭號。 請參閱下表，以取得如何從 Azure 啟動特定類型的 Web 應用程式的詳細資料。
+1. (選用) 若要取消部署程序，請以滑鼠右鍵按一下活動記錄檔中的該細目，然後選擇 [取消並移除]。 此命令會停止部署程序，並從 Azure 中刪除部署環境。 注意：若要在部署此部署環境後將其移除，您必須使用 [Azure 入口網站](https://portal.azure.com)。
+1. (選用) 角色執行個體啟動後，Visual Studio 會自動在 [伺服器總管] > [雲端服務] 節點中顯示部署環境。 您可以從這裡檢視個別角色執行個體的狀態。
+1. 若要在部署後存取應用程式，請在 [Azure 活動記錄檔] 中出現 [已完成] 狀態和 URL 時，選擇部署旁邊的箭號。 請參閱下表，以取得如何從 Azure 啟動特定類型的 Web 應用程式的詳細資料。
 
 ## <a name="using-the-compute-emulator-and-starting-application-in-azure"></a>使用計算模擬器，並且在 Azure 中啟動應用程式
 
-選取 [偵錯] > [開始偵錯]**** \(F5)，即可在連接至 Visual Studio 偵錯工具的瀏覽器中啟動所有的應用程式類型。 對於 ASP.NET 空白 Web 應用程式專案，您必須先在您的應用程式中新增 `.aspx` 網頁，並將之設定為 Web 專案的開始頁面。
+選取 [偵錯] > [開始偵錯] \(F5)，即可在連接至 Visual Studio 偵錯工具的瀏覽器中啟動所有的應用程式類型。 對於 ASP.NET 空白 Web 應用程式專案，您必須先在您的應用程式中新增 `.aspx` 網頁，並將之設定為 Web 專案的開始頁面。
 
 下表提供在 Azure 中啟動應用程式的詳細資料：
 
 | Web 應用程式類型 | 在 Azure 中執行 |
 | --- | --- |
-| ASP.NET Web 應用程式<br/>(包括 MVC 2、MVC 3、MVC 4) | 在 **Azure 活動記錄檔**的 [部署]**** 索引標籤中選取該 URL。 |
-| ASP.NET 空白 Web 應用程式 | 如果您的應用程式中有預設 `.aspx` 網頁，請在 **Azure 活動記錄檔**的 [部署]**** 索引標籤中選取該 URL。 若要瀏覽至不同的網頁，請在瀏覽器中輸入下列格式的 URL：`<deployment_url>/<page_name>.aspx` |
+| ASP.NET Web 應用程式<br/>(包括 MVC 2、MVC 3、MVC 4) | 在 **Azure 活動記錄檔** 的 [部署] 索引標籤中選取該 URL。 |
+| ASP.NET 空白 Web 應用程式 | 如果您的應用程式中有預設 `.aspx` 網頁，請在 **Azure 活動記錄檔** 的 [部署] 索引標籤中選取該 URL。 若要瀏覽至不同的網頁，請在瀏覽器中輸入下列格式的 URL：`<deployment_url>/<page_name>.aspx` |
 | WCF 服務應用程式<br/>WCF 工作流程服務應用程式 | 將 `.svc` 檔案設定做為 WCF 服務專案的起始頁。 然後瀏覽至 `<deployment_url>/<service_file>.svc` |
 | ASP.NET 動態實體<br/>ASP.NET 動態資料 Linq to SQL | 依照下一節所述，更新連接字串。 然後瀏覽至 `<deployment_url>/<page_name>.aspx`。 對於 Linq to SQL，您必須使用 Azure SQL 資料庫。 |
 
@@ -121,7 +121,7 @@ ms.locfileid: "90036531"
 | WCF | WCF 工作流程服務應用程式 |
 | 工作流程 | WCF 工作流程服務應用程式 |
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [準備從 Visual Studio 發佈或部署 Azure 應用程式](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md)
 - [設定具名的驗證認證](vs-azure-tools-setting-up-named-authentication-credentials.md)。

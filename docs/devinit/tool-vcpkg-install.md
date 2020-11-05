@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 6744e8fb3b42f81f6d0814646cab1f2388ebe577
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: 30bd66310f386a920b20522f59e54d586e3d3af1
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959756"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400229"
 ---
 # <a name="vcpkg-install"></a>vcpkg-install
 
 此 `vcpkg-install` 工具可用來取得 C/c + + 程式庫 (稱為埠) 使用 [vcpkg](https://github.com/microsoft/vcpkg)。
 
-## <a name="usage"></a>使用量
+## <a name="usage"></a>使用方式
 
 如果 `input` 和 `additionalOptions` 屬性都省略或空白，則工具將會遵循以下詳述的 [預設](#default-behavior) 行為。
 
@@ -48,7 +48,7 @@ ms.locfileid: "91959756"
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Installs the sdl2 port.",

@@ -1,5 +1,7 @@
 ---
 title: 範例 XSD 檔：關聯性
+description: 請參閱 XSD 架構設計工具檔中各種範例所使用的注釋和檔，查看訂單架構的範例 XSD 檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a52d152a78ee585cc2724d8504feff1e72558cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dd4e4f3678cd59562f5945ab26f8d828210375c
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592551"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398744"
 ---
 # <a name="sample-xsd-file-relationships"></a>範例 XSD 檔案：關聯性
 

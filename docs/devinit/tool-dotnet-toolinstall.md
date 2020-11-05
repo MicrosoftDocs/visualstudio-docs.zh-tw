@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: f6946afa0138dc27a61f5665a9172c231392acc1
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 464460d6a33c01e5c53b66e8a03de7aa7f844953
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862245"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399650"
 ---
 # <a name="dotnet-toolinstall"></a>dotnet-toolinstall
 
 此 `dotnet-toolinstall` 工具是用來透過命令安裝 [.Net Core 工具](https://dotnet.microsoft.com/) `dotnet tool update` 。
 
-## <a name="usage"></a>使用量
+## <a name="usage"></a>使用方式
 
 如果 `input` 和 `additionalOptions` 屬性都省略或空白，則工具將會遵循以下詳述的 [預設](#default-behavior) 行為。
 
@@ -50,7 +50,7 @@ ms.locfileid: "91862245"
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Example that will install the dotnet-trace tool.",

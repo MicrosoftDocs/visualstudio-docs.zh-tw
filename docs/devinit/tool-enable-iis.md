@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3324cf5faa1d9385adbbdf24a8125970c5db2c40
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: ec326871f5565ecaabdc8cda369b36df14029414
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862239"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399827"
 ---
 # <a name="enable-iis"></a>enable-iis
 
 此 `enable-iis` 工具可用來啟用 iis 功能，並安裝 [ASP.NET Core 模組](/aspnet/core/host-and-deploy/aspnet-core-module) ，以使用 iis 進行 ASP.NET 開發。
 
-## <a name="usage"></a>使用量
+## <a name="usage"></a>使用方式
 
 如果 `input` 和 `additionalOptions` 屬性都省略或空白，則工具將會遵循以下詳述的 [預設](#default-behavior) 行為。
 
@@ -48,7 +48,7 @@ ms.locfileid: "91862239"
 
 ```json
 {
-    "$schema": "./devinit.schema-2.0.json",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0.json",
     "run": [
         {
             "comments": "Example that will enable IIS features and install the latest ASP.NET hosting bundle.",

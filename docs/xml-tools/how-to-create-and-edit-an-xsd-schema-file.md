@@ -1,5 +1,7 @@
 ---
 title: 建立和編輯 XSD 結構描述檔案
+description: 瞭解如何在 Visual Studio 中 (XSD) 檔案建立新的 XML 架構，並將內容新增至其中。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 91b10cd7-c0cd-4e5a-a46b-4fed60dff542
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95f7b9d52f6eaf1aa95728b28268e6d4bcba8aed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c73a04995790c61db683015c059249b9d2ac03bc
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815405"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400072"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>如何：建立和編輯 XSD 架構檔案
 
@@ -21,9 +23,9 @@ ms.locfileid: "85815405"
 
 ## <a name="to-create-a-new-xml-schema-file"></a>建立新的 XML 結構描述檔
 
-1. 在 Visual Studio 中，開啟 **[檔案] 功能表，然後**選取 [**新增**檔案]  >  ** **。 或者，使用**Ctrl** + **N**鍵盤快速鍵。
+1. 在 Visual Studio 中，開啟 **[檔案] 功能表，然後** 選取 [ **新增** 檔案]  >  **** 。 或者，使用 **Ctrl** + **N** 鍵盤快速鍵。
 
-2. 在 [ **新增** 檔案] 對話方塊中，選取 [ **XML 架構** ]，然後選取 [ **開啟**]。
+2. 在 [ **新增** 檔案] 對話方塊中，選取 [ **XML 架構** ]，然後選取 [ **開啟** ]。
 
    新檔案隨即建立。 [開始] 和 [空的 **XML 架構瀏覽器** ] 視窗會出現在 Visual Studio 中。
 
@@ -35,4 +37,4 @@ ms.locfileid: "85815405"
 
 2. 從 [採購單架構](../xml-tools/sample-xsd-file-simple-schema.md) 中複製並貼上 XML 架構範例程式碼，以取代依預設加入至新 XSD 檔案的程式碼。
 
-   **XML 架構瀏覽器**會以新的架構集更新。
+   **XML 架構瀏覽器** 會以新的架構集更新。

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7bb545a8e8713159d6833f0ed8d8c2b8784095e1
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: b1299686c086feda0c51689d72a676ddc4ff00dc
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959763"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400236"
 ---
 # <a name="set-env"></a>set-env
 
@@ -24,7 +24,7 @@ ms.locfileid: "91959763"
 
 這項工具會使用 .NET Core `Environment.SetEnvironment` API，並具有與該 api 相同的限制。 如需詳細資訊，請參閱[documentation](/dotnet/api/system.environment.setenvironmentvariable?view=netcore-3.1&preserve-view=true)的檔 `Environment.SetEnvironment` 。
 
-## <a name="usage"></a>使用量
+## <a name="usage"></a>使用方式
 
 | 名稱                                         | 類型   | 必要 | 值                                                                       |
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------|
@@ -57,7 +57,7 @@ ms.locfileid: "91959763"
 
 ```json
 {
-  "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
   "comments": "A sample dot-devinit file demonstrating the set-env tool.",
   "run": [
     {

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 0af1e0561edfc4cf12ccd19f17bab2a386d0afe9
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 87938b05b860921ee81cb2ca9191ad58fa85dd7a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005180"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399589"
 ---
 # <a name="require-npm"></a>require-npm
 
@@ -29,7 +29,7 @@ ms.locfileid: "91005180"
 | 名稱                                             | 類型   | 必要 | 值                                                                                       |
 |--------------------------------------------------|--------|----------|---------------------------------------------------------------------------------------------|
 | **評論**                                     | 字串 | No       | 選擇性批註屬性。 未使用。                                                       |
-| [**輸入**](#input)                              | 字串 | Yes      | 指定 NPM 版本。 如需詳細資料，請參閱下列 [輸入](#input) 。                           |
+| [**輸入**](#input)                              | 字串 | 是      | 指定 NPM 版本。 如需詳細資料，請參閱下列 [輸入](#input) 。                           |
 | [**additionalOptions**](#additional-options)     | 字串 | No       | 未使用。 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。                  |
 
 ### <a name="input"></a>輸入
@@ -48,7 +48,7 @@ ms.locfileid: "91005180"
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Example that will trigger the Default behavior of installing latest LTS of NPM.",

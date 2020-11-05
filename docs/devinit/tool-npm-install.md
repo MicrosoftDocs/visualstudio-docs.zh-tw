@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e3295ea2e67dd625387b054c488c5abacec2a718
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 432c2a6c532e95e7d0e3e4cb22c87930031f5907
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005549"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400292"
 ---
 # <a name="npm-install"></a>npm-install
 
@@ -29,7 +29,7 @@ ms.locfileid: "91005549"
 | 名稱                                             | 類型   | 必要 | 值                                                                                                          |
 |--------------------------------------------------|--------|----------|----------------------------------------------------------------------------------------------------------------|
 | **評論**                                     | 字串 | No       | 選擇性批註屬性。 未使用。                                                                          |
-| [**輸入**](#input)                              | 字串 | Yes      | 要取得安裝的封裝。 如需詳細資料，請參閱下列 [輸入](#input) 。                                                 |
+| [**輸入**](#input)                              | 字串 | 是      | 要取得安裝的封裝。 如需詳細資料，請參閱下列 [輸入](#input) 。                                                 |
 | [**additionalOptions**](#additional-options)     | 字串 | No       | 傳遞至工具的其他選項。 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。       |
 
 ### <a name="input"></a>輸入
@@ -44,7 +44,7 @@ ms.locfileid: "91005549"
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Example that will install the mongo NPM package (https://www.npmjs.com/package/mongo).",

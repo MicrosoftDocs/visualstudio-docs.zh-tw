@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ce4a156a313e3d8d0afc82ababd49d0528b315f5
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6ba6b5a53c6b6f1c67c957c55a612cbe461b108c
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005774"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400264"
 ---
 # <a name="require-nodejs"></a>require-nodejs
 
@@ -48,7 +48,7 @@ ms.locfileid: "91005774"
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Example that will trigger the Default behavior of installing latest LTS of Node.JS.",

@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1b5c3c478f275dac7512c4b3ada9871fe69b0f0e
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: 576f0055ab6443d991cbddaa51ca2767853bcf1e
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959790"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399596"
 ---
 # <a name="require-mssql"></a>require-mssql
 
 此 `require-mssql` 工具是用來透過 MS SQL SERVER ISO 安裝 [Microsoft SQL Server 2019 Developer Edition](https://www.microsoft.com/sql-server/application-development) 。 SQL server 將 `localhost` 使用整合式 Windows 驗證來提供，sql server 將可透過連接字串存取 `"Server=localhost;Integrated Security=true;"` 。
 
-## <a name="usage"></a>使用量
+## <a name="usage"></a>使用方式
 
 如果 `input` 和 `additionalOptions` 屬性都省略或空白，則工具將會遵循以下詳述的 [預設](#default-behavior) 行為。
 
@@ -53,7 +53,7 @@ ms.locfileid: "91959790"
 
 此 `require-mssql` 工具會設定一些安裝程式命令列引數，以確保安裝程式可以執行無周邊。 以下列出這些引數，您可以在 [SQL 安裝檔](/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt?view=sql-server-ver15&preserve-view=true)中找到這些引數的相關檔。
 
-| Name                                                               | 描述 |
+| 名稱                                                               | 描述 |
 |--------------------------------------------------------------------|-------------|
 | /q                                                                 |             |
 | /ACTION = 安裝                                                    |             |
@@ -78,7 +78,7 @@ ms.locfileid: "91959790"
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Installs MSSQL.",

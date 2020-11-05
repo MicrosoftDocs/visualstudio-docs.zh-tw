@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 233393114883c2a9833aa7ec82f0d78f0ef33bae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96bd4d67302fb09e5c1cb7837ad73b345ad88c81
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88251280"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400320"
 ---
 # <a name="convert-typeof-to-nameof"></a>將 `typeof` 轉換為 `nameof`
 
@@ -33,16 +33,17 @@ ms.locfileid: "88251280"
 ## <a name="how-to"></a>操作方式
 
 1. 將游標放在 `typeof(<QualifiedType>).Name` c # 或 Visual Basic 中的實例內 `GetType(<QualifiedType>).Name` 。
-2. 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
+
+2. 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
+
 3. 選取下列其中一個選項：
 
-- C#
-  <br>Select**將 ' typeof ' 轉換成 ' nameof '** 
-   ![ 將 typeof 轉換成 nameof](media/convert-type-of.PNG)
+    - C#
+      <br>Select **將 ' typeof ' 轉換成 ' nameof '** ： ![ 將 typeof 轉換成 nameof](media/convert-type-of.PNG)
 
-- Visual Basic
-  <br>Select **將 ' GetType ' 轉換成 ' NameOf '** ![ 將 typeof 轉換成 NameOf](media/convert-get-type.PNG)
+    - Visual Basic
+      <br>Select **將 ' GetType ' 轉換成 ' NameOf '** ： ![ 將 typeof 轉換成 NameOf](media/convert-get-type.PNG)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [重構](../refactoring-in-visual-studio.md)
