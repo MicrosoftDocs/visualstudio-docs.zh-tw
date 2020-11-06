@@ -15,12 +15,12 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: 12b9bc70efeb9a64e7847ffa7521acd119b08c9d
-  ms.sourcegitcommit: 677de234a37d615ab52f54be0d23be0a8797b4f6
+  ms.openlocfilehash: ddddea310637a4afd96210441e0c842aaed18c00
+  ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/23/2020
-  ms.locfileid: "92493988"
+  ms.lasthandoff: 11/06/2020
+  ms.locfileid: "93414525"
 productDirectory:
   items:
   - title: Visual Studio
@@ -63,7 +63,7 @@ productDirectory:
       text: 文件
     - url: https://code.visualstudio.com/docs/remote/codespaces/
       text: 使用 Visual Studio Code
-    - url: https://docs.microsoft.com/visualstudio/ide/codespaces/use-visual-studio-with-codespaces/
+    - url: ./ide/codespaces/use-visual-studio-with-codespaces.md
       text: 使用 Visual Studio
     - url: https://github.com/features/codespaces/
       text: 產品頁面

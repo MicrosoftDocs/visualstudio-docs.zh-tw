@@ -11,12 +11,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 83987c04a5c0545ef2b30d4bc60ad2ce1b2bd3d8
-  ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+  ms.openlocfilehash: 492b1e9fa0e141651f6871cc678e5473ebe4c7b5
+  ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/07/2020
-  ms.locfileid: "91780929"
+  ms.lasthandoff: 11/05/2020
+  ms.locfileid: "93400085"
 highlightedContent:
   items:
   - title: 設定與安裝
@@ -60,7 +60,7 @@ conceptualContent:
       url: /cpp/get-started/tutorial-console-cpp
       itemType: get-started
     - text: 建立 Visual Basic 主控台應用程式
-      url: ../get-started/visual-basic//tutorial-console.md
+      url: ../get-started/visual-basic/tutorial-console.md
       itemType: get-started
     - text: 開始使用 Python
       url: ../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md
@@ -156,7 +156,7 @@ additionalContent:
     - title: 遊戲
       links:
       - text: 使用 Unity 的遊戲程式開發
-        url: ../cross-platform/visual-studio-tools-for-unity.md
+        url: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity.md
       - text: 使用 C++ 的遊戲程式開發
         url: /windows/uwp/gaming/e2e
     - title: 其他工具組

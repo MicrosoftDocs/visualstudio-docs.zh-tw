@@ -6,31 +6,31 @@
 - name: Visual Studio Tools for Unity
   items:
     - name: Visual Studio Tools for Unity
-      href: visual-studio-tools-for-unity.md
+      href: /gamedev/unity/get-started/visual-studio-tools-for-unity.md
     - name: Visual Studio Tools for Unity 使用者入門
-      href: getting-started-with-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/get-started/getting-started-with-visual-studio-tools-for-unity.md
     - name: 使用 Visual Studio Tools for Unity
-      href: using-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/get-started/using-visual-studio-tools-for-unity.md
     - name: 在 Unity 中使用 .NET 4.x
-      href: unity-scripting-upgrade.md
+      href: /gamedev/unity/unity-scripting-upgrade.md
     - name: 使用 Visual Studio Tools for Unity 設計程式
       items:
         - name: 使用 Visual Studio Tools for Unity 設計程式
-          href: programming-visual-studio-tools-for-unity.md
+          href: /gamedev/unity/extensibility/programming-visual-studio-tools-for-unity.md
         - name: 自訂 VSTU 所建立的專案檔
-          href: customize-project-files-created-by-vstu.md
+          href: /gamedev/unity/extensibility/customize-project-files-created-by-vstu.md
         - name: 與 VSTU 共用 Unity 記錄回呼
-          href: share-the-unity-log-callback-with-vstu.md
+          href: /gamedev/unity/extensibility/share-the-unity-log-callback-with-vstu.md
     - name: 使用 Unity 與 Azure 設計程式
-      href: visual-studio-tools-for-unity-azure.md
+      href: /gamedev/unity/visual-studio-tools-for-unity-azure.md
     - name: 疑難排解和已知問題 (Visual Studio Tools for Unity)
-      href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/troubleshooting/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
     - name: 變更記錄檔 (Visual Studio Tools for Unity，Windows)
-      href: change-log-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/change-log-visual-studio-tools-for-unity.md
     - name: 變更記錄檔 (Visual Studio Tools for Unity，Mac)
-      href: change-log-visual-studio-tools-for-unity-mac.md
+      href: /gamedev/unity/change-log-visual-studio-tools-for-unity-mac.md
     - name: 使用 Unity 應用程式進行 DevOps
-      href: application-lifecycle-management-alm-with-unity-apps.md
+      href: /gamedev/unity/application-lifecycle-management-alm-with-unity-apps.md
 - name: 使用 C++ 進行跨平台行動裝置應用程式開發
   href: /cpp/cross-platform/
 - name: 開發適用於通用 Windows 平台 (UWP) 的應用程式

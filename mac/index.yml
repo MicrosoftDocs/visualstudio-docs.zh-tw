@@ -9,12 +9,12 @@ metadata:
   ms.author: dominicn
   ms.date: 09/18/2019
   ms.topic: hub-page
-  ms.openlocfilehash: bdc0dce752f4d0df368c5cc4dcdbf4292bf02c81
-  ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+  ms.openlocfilehash: 58b003276f93873a65733669d45b3582fbfbeb2f
+  ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/30/2020
-  ms.locfileid: "91583966"
+  ms.lasthandoff: 11/05/2020
+  ms.locfileid: "93399937"
 highlightedContent:
   items:
   - title: 安裝 Visual Studio for Mac
@@ -51,11 +51,11 @@ productDirectory:
   - title: Unity
     imageSrc: https://docs.microsoft.com/media/logos/logo_unity.svg
     links:
-    - url: ~/unity-tools.md
+    - url: /gamedev/unity/get-started/visual-studio-tools-for-unity.md
       text: Unity 概觀
-    - url: ~/setup-vsmac-tools-unity.md
+    - url: /gamedev/unity/get-started/getting-started-with-visual-studio-tools-for-unity.md
       text: 設定 Unity 和 Visual Studio for Mac
-    - url: ~/unity-walkthrough.md
+    - url: /gamedev/unity/get-started/using-visual-studio-tools-for-unity.md
       text: 開始使用 Unity 來建置遊戲
   - title: Xamarin
     imageSrc: https://docs.microsoft.com/media/logos/logo_xamarin.svg
