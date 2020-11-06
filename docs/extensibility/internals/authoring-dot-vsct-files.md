@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11e55da5f2eb1d8b4671543672a79b508e20a929
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 54e67a28d59cb739abbeab188ff1f100751f2aa8
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583680"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413903"
 ---
 # <a name="author-vsct-files"></a>撰寫 .vsct 檔案
 本檔說明如何撰寫 *.vsct* 檔案，以將功能表項目、工具列和其他使用者介面 (UI) 專案加入至 Visual Studio 整合式開發環境 (IDE) 。 當您將 UI 專案加入至沒有 *.vsct* 檔案的 Visual Studio 封裝 (VSPackage) 時，請使用這些步驟。
@@ -26,11 +26,11 @@ ms.locfileid: "91583680"
  在這些階段中撰寫 *.vsct* 檔案：建立檔案和資源的結構、宣告 ui 元素、將 ui 元素放在 IDE 中，然後新增任何特製化的行為。
 
 ### <a name="file-structure"></a>檔案結構
- *.Vsct*檔案的基本結構是[CommandTable](../../extensibility/commandtable-element.md)根項目，其中包含[命令](../../extensibility/commands-element.md)元素和[符號](../../extensibility/symbols-element.md)元素。
+ *.Vsct* 檔案的基本結構是 [CommandTable](../../extensibility/commandtable-element.md)根項目，其中包含 [命令](../../extensibility/commands-element.md)元素和 [符號](../../extensibility/symbols-element.md)元素。
 
 #### <a name="to-create-the-file-structure"></a>若要建立檔案結構
 
-1. 遵循 how [to：建立 .vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)檔案中的步驟，將 *.vsct*檔案新增至您的專案。
+1. 遵循 how [to：建立 .vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)檔案中的步驟，將 *.vsct* 檔案新增至您的專案。
 
 2. 將必要的命名空間新增至 `CommandTable` 元素，如下列範例所示：
 
@@ -51,9 +51,9 @@ ms.locfileid: "91583680"
 
 1. 在專案的頂端 `CommandTable` ，為 `Extern` 要參考的每個外部檔案加入一個元素，並將屬性設定為檔案的 `href` 名稱。 您可以參考下列標頭檔以存取 Visual Studio 資源：
 
-   - *Stdidcmd*：定義 Visual Studio 所公開之所有命令的識別碼。
+   - *Stdidcmd* ：定義 Visual Studio 所公開之所有命令的識別碼。
 
-   - *Vsshlids*：包含 Visual Studio 功能表的命令識別碼。
+   - *Vsshlids* ：包含 Visual Studio 功能表的命令識別碼。
 
 2. 如果您的封裝呼叫由 Visual Studio 或由其他封裝所定義的任何命令，請在專案 `UsedCommands` 之後加入元素 `Commands` 。 針對您所呼叫且不是套件一部分的每個命令，將 [UsedCommand](../../extensibility/usedcommand-element.md) 元素填入此元素。 將 `guid` 元素的和 `id` 屬性設定 `UsedCommand` 為要呼叫的命令的 GUID 和識別碼值。
 
@@ -64,7 +64,7 @@ ms.locfileid: "91583680"
 
 #### <a name="to-declare-ui-elements"></a>宣告 UI 元素
 
-1. 在 `Symbols` 元素中，加入三個 [GuidSymbol](../../extensibility/guidsymbol-element.md) 專案。 每個 `GuidSymbol` 元素都有 `name` 屬性和 `value` 屬性。 設定 `name` 屬性，使其反映元素的用途。 `value`屬性會採用 GUID。  (若要產生 GUID，請在 [ **工具** ] 功能表上選取 [ **建立 guid**]，然後選取 [登錄 **格式**]。 ) 
+1. 在 `Symbols` 元素中，加入三個 [GuidSymbol](../../extensibility/guidsymbol-element.md) 專案。 每個 `GuidSymbol` 元素都有 `name` 屬性和 `value` 屬性。 設定 `name` 屬性，使其反映元素的用途。 `value`屬性會採用 GUID。  (若要產生 GUID，請在 [ **工具** ] 功能表上選取 [ **建立 guid** ]，然後選取 [登錄 **格式** ]。 ) 
 
      第一個 `GuidSymbol` 元素代表您的封裝，且通常沒有任何子系。 第二個 `GuidSymbol` 元素代表命令集，且會包含定義您的功能表、群組和命令的所有符號。 第三個 `GuidSymbol` 元素代表您的映射存放區，並包含命令所有圖示的符號。 如果您沒有使用圖示的命令，您可以省略第三個 `GuidSymbol` 元素。
 
@@ -108,7 +108,7 @@ ms.locfileid: "91583680"
        > [!NOTE]
        > 工具列按鈕必須有圖示。
 
-   如需詳細資訊，請參閱 [menucommand 對比與 OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true)。
+   如需詳細資訊，請參閱 [menucommand 對比與 OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015)。
 
 4. 如果您的任何命令都需要圖示，請將 [點陣圖](../../extensibility/bitmaps-element.md) 元素加入至 `Commands` 元素。 然後，針對每個圖示，將 [Bitmap](../../extensibility/bitmap-element.md) 元素加入至專案 `Bitmaps` 。 這是您指定點陣圖資源位置的位置。 如需詳細資訊，請參閱 [將圖示新增至功能表命令](../../extensibility/adding-icons-to-menu-commands.md)。
 
@@ -233,7 +233,7 @@ ms.locfileid: "91583680"
 
    - 功能表控制器：功能表控制器是按鈕旁邊有箭號的按鈕。 按一下箭號會開啟清單。 若要將功能表控制器加入至 UI，請建立專案， `Menu` 並 `type` `MenuController` `MenuControllerLatched` 根據您想要的行為，將其屬性設定為或。 若要填入功能表控制器，請將它設定為元素的父系 `Group` 。 功能表控制器會在下拉式清單中顯示該群組的所有子系。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)
 - [Visual Studio 命令表格 (. .vsct) 檔](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [.VSCT XML 架構參考](../../extensibility/vsct-xml-schema-reference.md)

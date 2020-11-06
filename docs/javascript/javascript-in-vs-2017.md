@@ -14,12 +14,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e8e4d0e337289e2676dc8eb040ad199ae41a8dbc
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: a5d71b2b20d0723b1809ae78717b64ee43ae2b6b
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947774"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414538"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 
@@ -148,7 +148,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 
 - `package.json` 和 `bower.json` 會列出專案所使用的相依性，而且根據預設，會包含在自動類型擷取 (ATA) 中
 - 最上層 `node_modules` 資料夾包含程式庫原始程式碼，而且預設會從專案內容中排除其內容
-- 每個其他 `.js`、`.jsx`、`.ts` 和 `.tsx` 檔案都可能是「您自己的」** 其中一個原始程式碼，而且必須包含在專案內容中
+- 每個其他 `.js`、`.jsx`、`.ts` 和 `.tsx` 檔案都可能是「您自己的」其中一個原始程式碼，而且必須包含在專案內容中
 
 在多數情況下，您只要開啟專案及使用預設專案組態，就可以獲得絕佳體驗。 不過，如果專案很大或具有不同的資料夾結構，還可進一步設定語言服務，讓您能夠更專注於自己的原始程式碼。
 
@@ -252,7 +252,7 @@ XML 文件註解有時稱為 VSDocs，先前可以用來使用其他資料來裝
 
 ### <a name="intellisensejs-extensions"></a>`.intellisense.js` 延伸模組
 
-先前，您可以編寫 [IntelliSense 延伸模組](../vs-2015/ide/extending-javascript-intellisense.md)，以讓您新增協力廠商程式庫的自訂完成結果。
+先前，您可以編寫 [IntelliSense 延伸模組](/previous-versions/visualstudio/visual-studio-2015/ide/extending-javascript-intellisense)，以讓您新增協力廠商程式庫的自訂完成結果。
 這些延伸模組的撰寫相當困難，而且安裝和參考它們十分麻煩，因此新語言服務往後將不支援這些檔案。
 撰寫 TypeScript 定義檔來提供與舊 `.intellisense.js` 延伸模組相同的 IntelliSense 優點，是較簡單的替代方法。
 您可以在[這裡](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)深入了解宣告 (`.d.ts`) 檔案編寫。
@@ -262,7 +262,7 @@ XML 文件註解有時稱為 VSDocs，先前可以用來使用其他資料來裝
 因為新語言服務具有靜態分析功能，而不是執行引擎 (如需差異的資訊，請閱讀[本問題](https://github.com/Microsoft/TypeScript/issues/4789))，所以無法再偵測到一些 JavaScript 模式。
 最常見的模式是 "expando" 模式。
 語言服務目前無法在宣告之後附加屬性的物件上提供 IntelliSense。
-例如：
+例如︰
 
 ```js
 var obj = {};

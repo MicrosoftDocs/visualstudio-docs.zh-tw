@@ -2,7 +2,7 @@
 title: 'Visual Studio 檔：新功能的歷程記錄 '
 titleSuffix: ''
 description: Visual Studio 文件中的新功能歷程記錄
-ms.date: 09/30/2020
+ms.date: 10/04/2020
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,16 +15,80 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 750fcb907350d3bd135bc86e5d1bc1ed211c4a7b
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 2314965dad6c77e749a62946f3372993813240bb
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400137"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414499"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Visual Studio 文件中的新功能歷程記錄
 
-歡迎使用 Visual Studio 檔的新功能歷程記錄。本主題包含在2020年9月 (開始 2020) 之前的檔主要變更。 如需最新的新功能，請參閱 [Visual Studio 檔：檔中的新功能](whats-new-visual-studio-docs.md)。
+歡迎使用 Visual Studio 檔的新功能歷程記錄。本文包含2020年10月 (開始 2020) 之前檔的重大變更。 如需最新的新功能，請參閱 [Visual Studio 檔：檔中的新功能](whats-new-visual-studio-docs.md)。
+
+## <a name="september-2020"></a>2020 年 9 月
+### <a name="code-quality"></a>程式碼品質
+
+**新文章**
+
+- [CA1416：驗證平臺相容性](/dotnet/fundamentals/code-analysis/quality-rules/ca1416) -記錄 CA1416 驗證平臺相容性
+- [CA1834：使用 StringBuilder。針對單一字元字串附加 (char) ](/dotnet/fundamentals/code-analysis/quality-rules/ca1834) -CA1834 的檔
+
+**已更新**
+
+- [原始程式碼分析簡介](../code-quality/roslyn-analyzers-overview.md) -.net 重構的程式碼分析更新
+- [設定程式碼品質分析](../code-quality/use-roslyn-analyzers.md) -.net 重構的程式碼分析更新
+
+### <a name="containers"></a>容器
+
+**新文章**
+
+- [使用 Bridge Kubernetes](../containers/bridge-to-kubernetes.md) -使用 Kubernetes 品牌再造的本機進程，以橋接 Kubernetes
+- Kubernetes 與 Kubernetes 品牌再造之間的搭配使用的本機進程[如何運作](../containers/overview-bridge-to-kubernetes.md)以橋接 Kubernetes
+
+### <a name="deployment"></a>部署
+
+**更新的文章**
+
+- 將[您的應用程式部署到資料夾、IIS、Azure 或其他目的地](../deployment/deploying-applications-services-and-components-resources.md)部署更新
+- [使用 Visual Studio 部署更新將應用程式部署到資料夾](../deployment/quickstart-deploy-to-local-folder.md)
+
+### <a name="ide"></a>IDE
+
+**新文章**
+
+- [Visual Studio (preview 中的新 git 體驗) ](./git-with-visual-studio.md) -將新的 git 體驗內容新增 (預覽) 
+- [C + + EditorConfig 格式設定慣例](./cpp-editorconfig-properties.md) -新文章
+- [什麼是 GitHub Codespaces？ (preview) ](./codespaces/codespaces-overview.md) -新增 Codespaces (preview) 內容
+- [如何自訂 codespace (預覽) ](./codespaces/customize-codespaces.md) -新增 Codespaces (preview) 內容
+- [支援的 Visual Studio 功能 (預覽) ](./codespaces/supported-features-codespaces.md) -新增 Codespaces (preview) 內容
+- [如何搭配使用 Visual Studio 與 codespace (preview) ](./codespaces/use-visual-studio-with-codespaces.md) -新增 Codespaces (preview) 內容
+
+**更新的文章**
+
+- [適用于 EditorConfig 的 .net 編碼慣例設定](/dotnet/fundamentals/code-analysis/code-style-rule-options) -已更新 EditorConfig
+- [語言慣例](/dotnet/fundamentals/code-analysis/style-rules/language-rules) -遺漏範例
+
+### <a name="install"></a>安裝
+
+**新文章**
+
+- [Arm 裝置上的 Visual Studio](../install/visual-studio-on-arm-devices.md) -在 arm 上新增 VS 的 doc 檔
+
+**更新的文章**
+
+- [當您安裝或使用 Visual Studio](../install/troubleshooting-network-related-errors-in-visual-studio.md) -新增因應措施驗證 proxy 損毀的因應措施時，針對網路相關錯誤進行疑難排解
+
+### <a name="profiling"></a>程式碼剖析
+
+**更新的文章**
+
+- [測量 Visual Studio 中的記憶體使用量](../profiling/memory-usage.md) -分析功能導覽的更新
+- [效能提示](../profiling/perftips.md) -分析功能導覽的更新
+- [先查看程式碼剖析工具](../profiling/profiling-feature-tour.md) -分析功能導覽的更新
+- [使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
+  - 分析功能導覽的更新
+  - 內容效能改進
 
 ## <a name="august-2020"></a>2020 年 8 月
 ### <a name="azure"></a>Azure
@@ -109,7 +173,7 @@ ms.locfileid: "93400137"
 
 **更新的文章**
 
-- [在 Visual Studio 中自訂視窗版面](./customizing-window-layouts-in-visual-studio.md) 配置-新增 monikered 的垂直檔索引標籤資訊以自訂視窗版面配置主題
+- [在 Visual Studio 中自訂視窗版面](./customizing-window-layouts-in-visual-studio.md) 配置-新增 monikered 的垂直檔索引標籤資訊以自訂視窗版面配置文章。
 - [如何回報 Visual Studio 或 Visual Studio 安裝程式的問題](./how-to-report-a-problem-with-visual-studio.md)
   - 已將更多資訊新增至 NMI
   - Redid 整份回報問題頁面

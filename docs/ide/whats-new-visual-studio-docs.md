@@ -1,8 +1,8 @@
 ---
-title: 'Visual Studio 檔：2020年9月的新功能 '
+title: 'Visual Studio 檔：2020年10月的新功能 '
 titleSuffix: ''
-description: 2020年9月 Visual Studio 檔中的新功能。
-ms.date: 09/30/2020
+description: 2020年10月 Visual Studio 檔中的新功能。
+ms.date: 11/04/2020
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,90 +15,114 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 62449bd5571ff72cdf5a1c855417611f45f5970f
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: bbc723661b0556acd6c8e020709e0055a398f22d
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659312"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414486"
 ---
-# <a name="visual-studio-docs-whats-new-for-september-2020"></a>Visual Studio 檔：2020年9月的新功能
+# <a name="visual-studio-docs-whats-new-for-october-2020"></a>Visual Studio 檔：2020年10月的新功能
 
-歡迎使用2020年9月 Visual Studio 檔中的新功能。 本文列出在這段期間內檔的一些主要變更。 如需前幾個月新功能的相關資訊，請參閱 [新功能歷程記錄](whats-new-visual-studio-docs-history.md) 主題。
+歡迎使用2020年10月 Visual Studio 檔中的新功能。 本文列出在這段期間內文件的一些主要變更。 如需前幾個月新功能的相關資訊，請參閱 [新功能歷程記錄](whats-new-visual-studio-docs-history.md) 文章。
 
 ## <a name="code-quality"></a>程式碼品質
 
-**新文章**
-
-- [CA1416：驗證平臺相容性](/dotnet/fundamentals/code-analysis/quality-rules/ca1416) -記錄 CA1416 驗證平臺相容性
-- [CA1834：使用 StringBuilder。針對單一字元字串附加 (char) ](/dotnet/fundamentals/code-analysis/quality-rules/ca1834) -CA1834 的檔
-
-**已更新**
-
-- [原始程式碼分析簡介](../code-quality/roslyn-analyzers-overview.md) -.net 重構的程式碼分析更新
-- [設定程式碼品質分析](../code-quality/use-roslyn-analyzers.md) -.net 重構的程式碼分析更新
+**更新的文章**
+- 程式[代碼分析器](../code-quality/index.yml)-適用于 .net 5 的 CA 重構
 
 ## <a name="containers"></a>容器
 
+**更新的文章**
+
+- [快速入門：在 Visual Studio 中搭配使用 Docker 與回應單一頁面應用程式](../containers/container-tools-react.md)
+  - 容器工具：移除舊映射存放庫的參考
+  - .NET 3.1 和 VS 16.7 的更新容器回應教學課程
+- [Kubernetes 的橋樑如何運作](../containers/overview-bridge-to-kubernetes.md) -橋接器至 Kubernetes：新增限制
+- [在本機 docker 容器中偵錯工具](../containers/edit-and-refresh.md) -docker 工具箱
+
+## <a name="debugger"></a>偵錯工具
+
 **新文章**
 
-- [使用 Bridge Kubernetes](../containers/bridge-to-kubernetes.md) -使用 Kubernetes 品牌再造的本機進程，以橋接 Kubernetes
-- Kubernetes 與 Kubernetes 品牌再造之間的搭配使用的本機進程[如何運作](../containers/overview-bridge-to-kubernetes.md)以橋接 Kubernetes
-
-## <a name="deployment"></a>部署
+- [Visual Studio 中的 DirectX 12 支援](../debugger/graphics/visual-studio-graphics-diagnostics-directx-12.md) -Vsdg dx12
 
 **更新的文章**
 
-- 將[您的應用程式部署到資料夾、IIS、Azure 或其他目的地](../deployment/deploying-applications-services-and-components-resources.md)部署更新
-- [使用 Visual Studio 部署更新將應用程式部署到資料夾](../deployment/quickstart-deploy-to-local-folder.md)
+- [在 Visual Studio 中偵錯工具 ASP.NET 或 ASP.NET Core 應用程式](../debugger/how-to-enable-debugging-for-aspnet-applications.md) -GitHub 問題的偵錯工具內容修正
+- [在 Visual Studio 偵錯工具中使用中斷點](../debugger/using-breakpoints.md) -GitHub 問題的偵錯工具內容修正
+- [在 Visual Studio 中偵錯工具的 Azure 服務](../debugger/debug-azure-apps.md) -SEO 和快照偵錯工具的連結更新
+- 使用適用于快照偵錯工具的快照偵錯工具 SEO 和連結更新來進行[即時 ASP.NET Azure 應用程式的調試](../debugger/debug-live-azure-applications.md)程式
+- [遠端偵錯](../debugger/remote-debugging.md) 程式-適用于快照偵錯工具的 SEO 和連結更新
+- [Visual Studio 圖形診斷的總覽](../debugger/graphics/overview-of-visual-studio-graphics-diagnostics.md) -Vsdg dx12
+- [Visual Studio 圖形診斷](../debugger/graphics/visual-studio-graphics-diagnostics.md) -Vsdg dx12
+
+## <a name="get-started"></a>開始使用
+
+**更新的文章**
+
+- 教學課程：擴充擴充 c # 教學課程的[簡單 c # 主控台應用程式](../get-started/csharp/tutorial-console-part-2.md)-偵錯工具新增
 
 ## <a name="ide"></a>IDE
 
 **新文章**
 
-- [Visual Studio (preview 中的新 git 體驗) ](./git-with-visual-studio.md) -將新的 git 體驗內容新增 (預覽) 
-- [C + + EditorConfig 格式設定慣例](./cpp-editorconfig-properties.md) -新文章
-- [什麼是 GitHub Codespaces？ (preview) ](./codespaces/codespaces-overview.md) -新增 Codespaces (preview) 內容
-- [如何自訂 codespace (預覽) ](./codespaces/customize-codespaces.md) -新增 Codespaces (preview) 內容
-- [支援的 Visual Studio 功能 (預覽) ](./codespaces/supported-features-codespaces.md) -新增 Codespaces (preview) 內容
-- [如何搭配使用 Visual Studio 與 codespace (preview) ](./codespaces/use-visual-studio-with-codespaces.md) -新增 Codespaces (preview) 內容
-
-**更新的文章**
-
-- [適用于 EditorConfig 的 .net 編碼慣例設定](/dotnet/fundamentals/code-analysis/code-style-rule-options) -已更新 EditorConfig
-- [語言慣例](/dotnet/fundamentals/code-analysis/style-rules/language-rules) -遺漏範例
+- [使用 Visual Studio 搜尋](./visual-studio-search.md) 和搜尋檔
 
 ## <a name="install"></a>安裝
 
-**新文章**
+**更新的文章**
 
-- [Arm 裝置上的 Visual Studio](../install/visual-studio-on-arm-devices.md) -在 arm 上新增 VS 的 doc 檔
+- [Visual Studio 組建編號和發行日期](../install/visual-studio-build-numbers-and-release-dates.md)
+  - 新增16.7.7 和 16.8 Preview 6 資料
+  - 新增 16.8 Preview 5 資訊
+
+## <a name="msbuild"></a>MSBuild
 
 **更新的文章**
 
-- [當您安裝或使用 Visual Studio](../install/troubleshooting-network-related-errors-in-visual-studio.md) -新增因應措施驗證 proxy 損毀的因應措施時，針對網路相關錯誤進行疑難排解
+- [逐步解說：使用 msbuild](../msbuild/walkthrough-using-msbuild.md) -msbuild 逐步解說：新增獨立安裝步驟
 
 ## <a name="profiling"></a>程式碼剖析
 
 **更新的文章**
 
-- [測量 Visual Studio 中的記憶體使用量](../profiling/memory-usage.md) -分析功能導覽的更新
-- [效能提示](../profiling/perftips.md) -分析功能導覽的更新
-- [先查看程式碼剖析工具](../profiling/profiling-feature-tour.md) -分析功能導覽的更新
+- [分析記憶體使用量](../profiling/analyze-memory-usage.md)
+  - 程式碼剖析的記憶體使用量更新-連結和說明
+  - 記憶體使用量工具更新
+- [在效能分析工具中分析記憶體使用量，而不進行調試](../profiling/memory-usage-without-debugging2.md)
+  - 程式碼剖析的記憶體使用量更新-連結和說明
+  - 記憶體使用量工具更新
+- [初步認識分析工具](../profiling/profiling-feature-tour.md)
+  - 程式碼剖析的記憶體使用量更新-連結和說明
+  - 記憶體使用量工具更新
 - [使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
-  - 分析功能導覽的更新
-  - 內容效能改進
+  - 程式碼剖析的記憶體使用量更新-連結和說明
+  - 記憶體使用量工具更新
+- 在效能分析工具記憶體使用量工具更新[中分析 CPU 使用量，而不進行調試](../profiling/cpu-usage.md)程式
+
+## <a name="windows"></a>Windows
+
+**更新的文章**
+
+- [Visual Studio 檔 |Microsoft Docs](../windows/index.yml) -Windows 中樞更新
+
+## <a name="xaml-tools"></a>XAML 工具
+
+**新文章**
+
+- [使用 XAML 設計工具的設計階段資料 Visual Studio](../xaml-tools/xaml-designtime-data.md)
+  - 已將擴充性區段新增至 XAML 設計階段檔
+  - 新的設計階段 XAML 文章
 
 ## <a name="community-contributors"></a>社群參與者
 
 下列人員會在這段期間內參與 Visual Studio 檔。 感謝您！ 遵循《 [參與者指南》](/contribute/)中的指導方針，瞭解如何參與 Visual Studio 檔。
 
-- [hyoshioka0128](https://github.com/hyoshioka0128) -Hiroshi Yoshioka (3) 
-- [gmsantos](https://github.com/gmsantos) -Gabriel Machado (1) 
-- [site-klass](https://github.com/ite-klass) -Jan klass (1) 
-- [johnallers](https://github.com/johnallers) -John Allers (1) 
-- [mrlacey](https://github.com/mrlacey) -Matt Lacey (1) 
-- [remona-minett](https://github.com/remona-minett) -Rem (1) 
-- [sguitardude](https://github.com/sguitardude) (1) 
-- [sjrct](https://github.com/sjrct) -Chris Harding (1) 
-- [Youssef1313](https://github.com/Youssef1313) -Youssef Victor (1) 
+- [bmarshalsea](https://github.com/bmarshalsea) (1) 
+- [DavidJohnWilliams](https://github.com/DavidJohnWilliams) -David John Williams (1) 
+- [JesseTG](https://github.com/JesseTG) -Jesse Talavera-Greenberg (1) 
+- [matkoch](https://github.com/matkoch) -Matthias Koch (1) 
+- [philipwolfe](https://github.com/philipwolfe) -Philip ansman-wolfe (1) 
+- [podsvirov](https://github.com/podsvirov) -Konstantin podsvirov (1) 
+- [drryder](https://github.com/drryder) (1) 

@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0340b89ed87872833f554fb00e24aca2f4759f3
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 12f585a3e7dd4a8182d7ed80cf65a20d0a82da83
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583589"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414018"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>逐步解說：將功能新增至自訂編輯器
 建立自訂編輯器之後，您可以在其中加入更多功能。
@@ -34,11 +34,11 @@ ms.locfileid: "91583589"
 
 3. 藉由設定介面來執行編輯器 factory <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> 。
 
-     如需詳細資訊，請參閱 [編輯器](../vs-2015/extensibility/editor-factories.md?view=vs-2015&preserve-view=true)factory。
+     如需詳細資訊，請參閱 [編輯器](/previous-versions/visualstudio/visual-studio-2015/extensibility/editor-factories?preserve-view=true&view=vs-2015)factory。
 
 4. 決定您是否想要編輯器使用就地啟用或簡化內嵌來管理檔視圖物件視窗。
 
-     簡化的內嵌編輯器視窗會主控標準檔視圖，而就地啟用編輯器視窗則會裝載 ActiveX 控制項或其他使用中的物件做為其檔視圖。 如需詳細資訊，請參閱 [簡化](../extensibility/simplified-embedding.md) 內嵌和就地 [啟用](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true)。
+     簡化的內嵌編輯器視窗會主控標準檔視圖，而就地啟用編輯器視窗則會裝載 ActiveX 控制項或其他使用中的物件做為其檔視圖。 如需詳細資訊，請參閱 [簡化](../extensibility/simplified-embedding.md) 內嵌和就地 [啟用](/previous-versions/visualstudio/visual-studio-2015/misc/in-place-activation?preserve-view=true&view=vs-2015)。
 
 5. 執行 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面來處理命令。
 
@@ -51,7 +51,7 @@ ms.locfileid: "91583589"
         > [!NOTE]
         > 呼叫 `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> 以取得的指標 `IVsFileChangeEx` 。
 
-7. 使用原始程式碼控制協調檔編輯事件。 請遵循下列步驟：
+7. 使用原始程式碼控制協調檔編輯事件。 請遵循這些步驟：
 
     1. 藉由呼叫來取得的指標 `IVsQueryEditQuerySave2` `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> 。
 
@@ -63,21 +63,21 @@ ms.locfileid: "91583589"
 
          如果檔案尚未儲存或自上次儲存後已變更，則此方法會提示使用者儲存檔案。
 
-8. 啟用 [ **屬性** ] 視窗，即可顯示在編輯器中選取之文字的屬性。 請遵循下列步驟：
+8. 啟用 [ **屬性** ] 視窗，即可顯示在編輯器中選取之文字的屬性。 請遵循這些步驟：
 
     1. <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>每次文字選取變更時呼叫，並傳入您的實作為 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 。
 
     2. 呼叫 `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> 服務以取得的指標 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 。
 
-9. 讓使用者在編輯器和 **工具箱**之間，或在外部編輯器 (（例如 Microsoft Word) 和 **工具箱**）之間，拖放專案。 請遵循下列步驟：
+9. 讓使用者在編輯器和 **工具箱** 之間，或在外部編輯器 (（例如 Microsoft Word) 和 **工具箱** ）之間，拖放專案。 請遵循這些步驟：
 
     1. `IDropTarget`在編輯器上執行，以警示 IDE 編輯器是放置目標。
 
-    2. 在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> 視圖上執行介面，讓您的編輯器可以在 [ **工具箱**] 中啟用和停用專案。
+    2. 在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> 視圖上執行介面，讓您的編輯器可以在 [ **工具箱** ] 中啟用和停用專案。
 
     3. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A>在服務上執行和呼叫， `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> 以取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> 和介面的指標 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> 。
 
-         這些步驟可讓您的 VSPackage 將新專案新增至 [ **工具箱**]。
+         這些步驟可讓您的 VSPackage 將新專案新增至 [ **工具箱** ]。
 
 10. 決定您是否想要編輯器的任何其他選用功能。
 
@@ -115,7 +115,7 @@ ms.locfileid: "91583589"
 
 12. 執行即時線上說明支援。
 
-     此步驟可讓您為編輯器中的專案提供 F1 說明和動態說明視窗支援。 如需詳細資訊，請參閱 [如何：提供編輯器的內容](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015&preserve-view=true)。
+     此步驟可讓您為編輯器中的專案提供 F1 說明和動態說明視窗支援。 如需詳細資訊，請參閱 [如何：提供編輯器的內容](/previous-versions/visualstudio/visual-studio-2015/extensibility/how-to-provide-context-for-editors?preserve-view=true&view=vs-2015)。
 
 13. 藉由執行介面，從編輯器公開 Automation 物件模型 `IDispatch` 。
 
@@ -138,9 +138,9 @@ ms.locfileid: "91583589"
   > [!NOTE]
   > `IOleInPlaceComponent`介面是用來避免 OLE 2 功能表合併。
 
-   您的 `IOleCommandTarget` 執行會處理 **剪**下、 **複製**和 **貼**上等命令。 在執行時 `IOleCommandTarget` ，決定您的編輯器是否需要自己的 *.vsct* 檔案來定義它自己的命令功能表結構，或者是否可以執行所定義的標準命令 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 一般而言，編輯器會使用並擴充 IDE 的功能表，並定義自己的工具列。 不過，除了使用 IDE 的標準命令集之外，編輯器通常還必須定義自己的特定命令。 您的編輯器必須宣告所使用的標準命令，然後在 *.vsct* 檔案中定義任何新的命令、內容功能表、最上層功能表和工具列。 如果您建立就地啟用編輯器，請 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> 在 *.vsct* 檔案中執行並定義編輯器的功能表和工具列，而不是使用 OLE 2 功能表合併。
+   您的 `IOleCommandTarget` 執行會處理 **剪** 下、 **複製** 和 **貼** 上等命令。 在執行時 `IOleCommandTarget` ，決定您的編輯器是否需要自己的 *.vsct* 檔案來定義它自己的命令功能表結構，或者是否可以執行所定義的標準命令 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 一般而言，編輯器會使用並擴充 IDE 的功能表，並定義自己的工具列。 不過，除了使用 IDE 的標準命令集之外，編輯器通常還必須定義自己的特定命令。 您的編輯器必須宣告所使用的標準命令，然後在 *.vsct* 檔案中定義任何新的命令、內容功能表、最上層功能表和工具列。 如果您建立就地啟用編輯器，請 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> 在 *.vsct* 檔案中執行並定義編輯器的功能表和工具列，而不是使用 OLE 2 功能表合併。
 
-- 若要防止 UI 中的功能表命令根本，您應該在發明新命令之前，先使用 IDE 中的現有命令。 共用命令定義于 *SharedCmdDef. .vsct* 和 *ShellCmdDef. .vsct*中。 這些檔案預設會安裝在安裝的 VisualStudioIntegration\Common\Inc 子目錄中 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 。
+- 若要防止 UI 中的功能表命令根本，您應該在發明新命令之前，先使用 IDE 中的現有命令。 共用命令定義于 *SharedCmdDef. .vsct* 和 *ShellCmdDef. .vsct* 中。 這些檔案預設會安裝在安裝的 VisualStudioIntegration\Common\Inc 子目錄中 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 。
 
 - `ISelectionContainer` 可以表示單一和多重選取專案。 系統會將每個選取的物件實作為 `IDispatch` 物件。
 
@@ -152,6 +152,6 @@ ms.locfileid: "91583589"
 
   - `Window.Object`
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [參與 automation 模型](../extensibility/internals/contributing-to-the-automation-model.md)

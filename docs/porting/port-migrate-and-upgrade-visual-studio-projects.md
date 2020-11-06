@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: a361a34458fdf22a988c603145ef6654b944be08
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: f13500c4d65287dfbafdb681a3fc47ffcd2c397e
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099436"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414317"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio 的專案移轉與升級參考
 
@@ -43,15 +43,15 @@ Visual Studio 的每個版本一般都支援大部分先前的專案、檔案及
 
 下列清單描述 Visual Studio 2017 對使用舊版建立之專案的支援。
 
-如果您看不到應於此處列出的專案或檔案類型，請參閱[本文的 Visual Studio 2015 版本](../vs-2015/porting/porting-migrating-and-upgrading-visual-studio-projects.md?view=vs-2015&preserve-view=true)，使用本頁底部的 [Send feedback about > This page]******** \(傳送關於本頁的意見反應\) 選項，提供您專案的詳細資料。 (如果您使用匿名的「本頁對您有幫助嗎？」 控制項，我們將無法回應您的意見反應。)
+如果您看不到應於此處列出的專案或檔案類型，請參閱[本文的 Visual Studio 2015 版本](/previous-versions/visualstudio/visual-studio-2015/porting/porting-migrating-and-upgrading-visual-studio-projects?preserve-view=true&view=vs-2015)，使用本頁底部的 [Send feedback about > This page] \(傳送關於本頁的意見反應\) 選項，提供您專案的詳細資料。 (如果您使用匿名的「本頁對您有幫助嗎？」 控制項，我們將無法回應您的意見反應。)
 
 | 專案類型 | 支援 |
 | --- | --- |
 | .NET Core 專案 (xproj) | 以 Visual Studio 2015 建立的專案所使用的預覽工具，包含 xproj 專案檔。 在 Visual Studio 2017 中，除了遷移至 .csproj 格式以外，不支援 xproj 格式。 當您開啟 xproj 檔案時，系統會提示您將檔案遷移至 SDK 樣式的 .csproj 格式。  (建立 xproj 檔案的備份。 Visual Studio 2015 及更早版本不支援 ) SDK 樣式的 .csproj 專案。 如需詳細資訊，請參閱將 [.Net Core 專案遷移至 .csproj 格式](/dotnet/core/migration/#visual-studio)。|
 | 已啟用 Application Insights 的 ASP.NET Web 應用程式和 ASP.NET Core Web 應用程式 | 對每位 Visual Studio 使用者來說，資源資訊會儲存在每個使用者執行個體的登錄中。 當使用者未開啟任何專案，而要搜尋 Azure Application Insights 資料時，就會使用此資訊。 Visual Studio 2015 使用的登錄位置和 Visual Studio 2017 不同，因此不會產生衝突。<br/><br/>在使用者建立 ASP.NET Web 應用程式或 ASP.NET Core Web 應用程式之後，資源就會存放在 .suo 檔案中。 只要 Visual Studio 支援在 Visual Studio 2015 和 Visual Studio 2017 中使用專案和解決方案，使用者即可在這兩個版本中開啟專案，資源資訊亦可用於這兩個版本。 使用者必須在每個產品上進行一次驗證。 例如，如果專案是以 Visual Studio 2015 建立並在 Visual Studio 2017 中開啟，則使用者也需要在 Visual Studio 2017 上進行驗證。 |
 | C#/Visual Basic Webform 或 Windows Form | 您可以在 Visual Studio 2017 和 Visual Studio 2015 中開啟專案。 |
-| 資料庫單元測試專案 (csproj、vbproj) | Visual Studio 2017 可以載入舊版的資料單元測試專案，但會使用 GAC 版本的相依性。 若要升級單元測試專案以使用最新的相依性，請以滑鼠右鍵按一下方案總管，並選取 [轉換成 SQL Server 單元測試專案...]****。 |
-| F# | Visual Studio 2017 可以開啟在 Visual Studio 2013 和 Visual Studio 2015 中建立的專案。 不過，若要在這些專案中啟用 Visual Studio 2017 的功能，請開啟專案屬性，並將目標 fsharp.core 變更為 F# 4.1。 另請注意，如果是 .NET 工作負載，則預設不會選取 Visual Studio 安裝程式中的 [F# 語言支援]**** 選項；您必須包括它，方法是針對工作負載選取該選項，或從 [開發活動]**** 的 [個別元件]**** 索引標籤中選取它。 |
+| 資料庫單元測試專案 (csproj、vbproj) | Visual Studio 2017 可以載入舊版的資料單元測試專案，但會使用 GAC 版本的相依性。 若要升級單元測試專案以使用最新的相依性，請以滑鼠右鍵按一下方案總管，並選取 [轉換成 SQL Server 單元測試專案...]。 |
+| F# | Visual Studio 2017 可以開啟在 Visual Studio 2013 和 Visual Studio 2015 中建立的專案。 不過，若要在這些專案中啟用 Visual Studio 2017 的功能，請開啟專案屬性，並將目標 fsharp.core 變更為 F# 4.1。 另請注意，如果是 .NET 工作負載，則預設不會選取 Visual Studio 安裝程式中的 [F# 語言支援] 選項；您必須包括它，方法是針對工作負載選取該選項，或從 [開發活動] 的 [個別元件] 索引標籤中選取它。 |
 | InstallShield<br/>MSI 安裝程式 | 在 Visual Studio 2010 中建立的安裝程式專案，可以透過 [Visual Studio Installer Projects extension](https://marketplace.visualstudio.com/items?itemName=UnniRavindranathan-MSFT.MicrosoftVisualStudio2013InstallerProjects) (Visual Studio 安裝程式專案延伸模組) 的協助在較新版本中開啟。 另請參閱 [WiX Toolset Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension) (WiX 工具組 Visual Studio 2017 延伸模組)。 Visual Studio 不再隨附 InstallShield 限量版。 如需 Visual Studio 2017 的可用性，請參閱 [Flexera Software](https://info.flexerasoftware.com/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio)。 |
 | LightSwitch | Visual Studio 2017 不再支援 LightSwitch。 在 Visual Studio 2013 或 Visual Studio 2015 中，如果開啟使用 Visual Studio 2012 和更早版本所建立的專案，系統會將該專案升級，並僅可在 Visual Studio 2013 或 Visual Studio 2015 之後的版本中開啟。 |
 | Microsoft Azure Tools for Visual Studio | 若要開啟這些類型的專案，請先安裝 [Azure SDK for .NET](https://azure.microsoft.com/downloads/)，然後再開啟專案。 如有必要，系統會更新您的專案。 |
@@ -104,7 +104,7 @@ Visual Studio 的每個新版本通常都會嘗試維持與舊版的相容性，
 - [ToolsVersion 指導方針](../msbuild/msbuild-toolset-toolsversion.md)
 - [Framework 目標指導方針](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 2019 的專案移轉與升級參考](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019&preserve-view=true)
 - [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing/)
@@ -127,7 +127,7 @@ Visual Studio 的每個新版本都支援大部分的專案、檔案及其他資
 
 下列清單描述 Visual Studio 2019 對使用舊版建立之專案的支援。
 
-如果您在這裡看不到此處所列的專案或檔案類型，請參閱 [這篇文章的 Visual Studio 2017 版本](?view=vs-2017&preserve-view=true)。 您也可以使用此頁面底部的 [**傳送關於**  >  **此頁面**的意見反應] 按鈕，以提供專案的詳細資料。 (如果您使用匿名的「本頁對您有幫助嗎？」 控制項，我們將無法回應您的意見反應。)
+如果您在這裡看不到此處所列的專案或檔案類型，請參閱 [這篇文章的 Visual Studio 2017 版本](?view=vs-2017&preserve-view=true)。 您也可以使用此頁面底部的 [ **傳送關於**  >  **此頁面** 的意見反應] 按鈕，以提供專案的詳細資料。 (如果您使用匿名的「本頁對您有幫助嗎？」 控制項，我們將無法回應您的意見反應。)
 
 | 專案類型 | 支援 |
 | --- | --- |
@@ -135,7 +135,7 @@ Visual Studio 的每個新版本都支援大部分的專案、檔案及其他資
 | 已啟用 Application Insights 的 ASP.NET Web 應用程式和 ASP.NET Core Web 應用程式 | 對每位 Visual Studio 使用者來說，資源資訊會儲存在每個使用者執行個體的登錄中。 當使用者未開啟任何專案，而要搜尋 Azure Application Insights 資料時，就會使用此資訊。 Visual Studio 2015 使用的登錄位置不同於 Visual Studio 2017 和 Visual Studio 2019，因此不會產生衝突。<br/><br/>在使用者建立 ASP.NET Web 應用程式或 ASP.NET Core Web 應用程式之後，資源就會存放在 .suo 檔案中。 只要 Visual Studio 支援在 Visual Studio 2015、Visual Studio 2017 和 Visual Studio 2019 中使用專案和方案，使用者即可在這些版本中開啟專案，資源資訊亦可用於每個版本。 使用者必須在每個產品上進行一次驗證。 例如，如果專案是以 Visual Studio 2017 建立並在 Visual Studio 2019 中開啟，則使用者也需要在 Visual Studio 2019 上進行驗證。 |
 | C#/Visual Basic Webform 或 Windows Form | 您可以在 Visual Studio 2019、Visual Studio 2017 和 Visual Studio 2015 中開啟專案。 |
 | 自動程式化 UI 測試 | 自動化 UI 驅動功能測試的自動程式化 UI 測試在 Visual Studio 2019 中已淘汰。 <br/><br/>Visual Studio 2019 將會是最後一個提供自動程式化 UI 測試的版本。 建議您使用 Selenium 測試 Web 應用程式，而使用 Appium 與 WinAppDriver 測試傳統型和 UWP 應用程式。 |
-| 資料庫單元測試專案 (csproj、vbproj) | Visual Studio 2019 可以載入舊版的資料單元測試專案，但會使用 GAC 版本的相依性。 若要升級單元測試專案以使用最新的相依性，請以滑鼠右鍵按一下方案總管，並選取 [轉換成 SQL Server 單元測試專案...]****。 |
+| 資料庫單元測試專案 (csproj、vbproj) | Visual Studio 2019 可以載入舊版的資料單元測試專案，但會使用 GAC 版本的相依性。 若要升級單元測試專案以使用最新的相依性，請以滑鼠右鍵按一下方案總管，並選取 [轉換成 SQL Server 單元測試專案...]。 |
 | F# | Visual Studio 2019 可以開啟在 Visual Studio 2013、Visual Studio 2015 和 Visual Studio 2017 中建立的專案。 與舊版 Visual Studio 範本的一個主要差異，就是在新專案中，FSharp.Core 版本現在一律是 NuGet 套件。 F# 預設會隨任何 .NET 工作負載安裝。|
 | InstallShield<br/>MSI 安裝程式 | 在 Visual Studio 2010 中建立的安裝程式專案，可以透過 [Visual Studio Installer Projects extension](https://marketplace.visualstudio.com/items?itemName=UnniRavindranathan-MSFT.MicrosoftVisualStudio2013InstallerProjects) (Visual Studio 安裝程式專案延伸模組) 的協助在較新版本中開啟。 另請參閱 [WiX Toolset Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension) (WiX 工具組 Visual Studio 2017 延伸模組)。 Visual Studio 不再隨附 InstallShield 限量版。 如需 Visual Studio 2019 的可用性，請參閱 [Flexera Software](https://info.flexerasoftware.com/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio)。 |
 | LightSwitch | Visual Studio 2019 或 Visual Studio 2017 不再支援 LightSwitch。 在 Visual Studio 2013 或 Visual Studio 2015 中，如果開啟使用 Visual Studio 2012 和更早版本所建立的專案，系統會將該專案升級，並僅可在 Visual Studio 2013 或 Visual Studio 2015 之後的版本中開啟。 |
@@ -198,7 +198,7 @@ Visual Studio 的每個新版本都支援大部分的專案、檔案及其他資
 - [ToolsVersion 指導方針](../msbuild/msbuild-toolset-toolsversion.md)
 - [Framework 目標指導方針](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 2017 的專案移轉與升級參考](?view=vs-2017&preserve-view=true)
 - [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing/)

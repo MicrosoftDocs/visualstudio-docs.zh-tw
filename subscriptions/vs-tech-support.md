@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 10/28/2020
+ms.date: 11/05/2020
 ms.topic: how-to
 description: 了解如何啟用 Visual Studio 訂用帳戶所包含的技術支援權益。
-ms.openlocfilehash: 30b47646c26e5bc9fbf9045e2acf59a670aa5e9d
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: 9ae88bcc066473752a600284d815378bc8870f64
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918119"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413959"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>啟用並使用 Visual Studio 訂用帳戶中的技術支援權益
 如果產品仍在 [支援生命週期](https://support.microsoft.com/lifecycle/search)的主要支援階段中，Visual Studio 訂用帳戶技術支援權益可為其解決 **非生產環境** 中的協助修正問題。 自權益啟用的 1 年內，Visual Studio Enterprise 標準和年度雲端訂用帳戶可接收四個事件，而 Visual Studio Professional 標準和年度雲端訂用帳戶可接收兩個事件。 您必須在訂用帳戶為最新狀態時啟用權益。
@@ -42,9 +42,9 @@ ms.locfileid: "92918119"
 > - Microsoft Outlook
 
 ## <a name="how-to-activate-the-benefit"></a>如何啟用權益
-1. 前往 <https://my.visualstudio.com/Benefits>，向下捲動至 [支援] 區段，然後在 [技術支援] 磚上，按一下 [Chat to activate] \(聊天啟用\)  。
+1. 前往 <https://my.visualstudio.com/Benefits>，向下捲動至 [支援] 區段，然後在 [技術支援] 磚上，按一下 [Chat to activate] \(聊天啟用\)。
     > [!div class="mx-imgBorder"]
-    > ![技術支援權益磚](_img/vs-tech-support/vs-tech-support-tile.png)
+    > ![技術支援權益磚](_img/vs-tech-support/vs-tech-support-tile.png "按一下 [技術支援] 磚上的 [聊天以啟動]。")
 2. 這會起始您與客戶代表的聊天工作階段；客戶代表可建立您的 **合約識別碼** 和 **存取識別碼** ，並透過電子郵件將這些識別碼提供給您以作為記錄。
 
 3. 若要完成此程序，您必須提供代表：
@@ -52,70 +52,56 @@ ms.locfileid: "92918119"
    - 公司名稱
    - 您的全名
    - 您用於登入訂用帳戶的電子郵件地址
-   - 您的電話號碼
    - 訂用帳戶識別碼，可以在 [ [訂閱](https://my.visualstudio.com/subscriptions) ] 索引標籤上找到。
 
    > [!div class="mx-imgBorder"]
-   > ![技術支援權益尋找訂用帳戶識別碼](_img/vs-tech-support/vs-tech-support-subID-cropped.png)
+   > ![技術支援權益尋找訂用帳戶識別碼](_img/vs-tech-support/vs-tech-support-subID-cropped.png "在 [訂閱] 索引標籤上尋找您的訂用帳戶識別碼。")
 
 4. 程序完成之後，您會收到一封電子郵件，其中含有您建立支援事件時會用到的 **合約識別碼** 和 **存取識別碼** 。  它也會提供使用您的新「存取識別碼」和「合約識別碼」來提交支援事件的指示。 
 
-> [!NOTE]
-> 若要使用英文以外的語言啟用您的支援帳戶，請從 [這份清單](https://support.microsoft.com/help/14084/activate-support-contract)中選擇您的國家/地區。
+   > [!NOTE]
+   > 若要使用英文以外的語言啟用您的支援帳戶，請從 [這份清單](https://support.microsoft.com/help/14084/activate-support-contract)中選擇您的國家/地區。
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>如何使用您的權益來提交事件
-設定好 **合約識別碼** 和 **存取識別碼** 之後，您就可以使用它來 [線上](https://support.microsoft.com/oas/) 提交技術支援事件 (登入所需的) ，或透過 [Azure 入口網站](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) 或呼叫您的國家/地區的技術支援編號。 如果您是線上提交事件，可以選擇讓 Microsoft 技術支援人員回電給您。
+設定好 **合約識別碼** 和 **存取識別碼** 之後，您就可以使用它來提交技術支援事件。 
 
-### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>您的合約識別碼和存取識別碼已與帳戶建立關聯，並可使用該帳戶登入並線上提交技術支援人員事件嗎？
-線上提交事件時，系統會先提示您登入。 請使用已知與合約識別碼和存取識別碼建立關聯的帳戶登入。 在支援工作流程的步驟 3 中，會顯示與您帳戶相關聯的現有支援方案權益。 只要選取該方案並繼續提交案例即可。 直到方案所指定限制數量或方案的到期日 (視何者較早發生) 為止，您都可以提交事件。 一旦剩餘事件顯示 "0" 或您的方案過期，方案就不再有效。
+您可以在線上、透過電話或從 Azure 入口網站提交事件。 
 
+### <a name="submit-an-incident-online"></a>線上提交事件
+若要透過商務入口網站的支援提交事件，請遵循下列步驟：
+
+  > [!NOTE]
+  > 您可能會收到通知，指出您需要確認電子郵件地址。  按一下通知中的 [ **傳送電子郵件** ] 連結，將確認傳送至您的設定檔中所列的電子郵件地址。 
+
+1. 登入 <https://support.microsoft.com/en-us/supportforbusiness/productselection>
+
+0. 在 [ **步驟 1** ] 區段中，從下拉式清單中選取適當的專案，以指出您的產品、版本、問題等等。完成問題摘要的文字欄位，並更詳細地描述問題。 然後按一下 [下一步]  。
    > [!div class="mx-imgBorder"]
-   > ![技術支援權益事件提交步驟 3](_img/vs-tech-support/vs-tech-support-step3.png)
-
-### <a name="using-your-contract-id-and-access-id-when-submitting-an-incident-initial-use"></a>使用您的合約識別碼和存取識別碼提交事件 (初次使用)
-
-#### <a name="submitting-an-incident-online"></a>線上提交事件
-線上提交事件時，系統會先提示您登入。 使用下拉式清單，選取您需要協助的產品。 例如，若要提交 Visual Studio Enterprise 2019 的事件，請選取 [開發人員工具]  系列，再選取 [Visual Studio 2019]  產品，然後選擇 [Visual Studio Enterprise 2019]  版本。
-
-1. 選擇您需要支援的產品之後，按一下 [下一步]  。
-
+   > ![建立新的支援要求](_img/vs-tech-support/vs-tech-support-create-new.png "完成欄位以建立新的支援要求。") 
+0. 在 [ **步驟 2** ] 區段中，提供您的位置和時區。
+0. 按一下 [ **新增合約** ]。
+0. 當您啟用支援權益時，請輸入您在確認電子郵件中收到的 **存取識別碼** 和 **合約識別碼** 。 按一下 [新增]  。
    > [!div class="mx-imgBorder"]
-   > ![技術支援權益事件提交步驟 1 - 產品](_img/vs-tech-support/vs-tech-support-step1.png)
-
-2. 描述您的問題，然後按一下 [下一步]  。
-
+   > ![新增合約識別碼](_img/vs-tech-support/vs-tech-support-add-contract-id.png "從確認電子郵件中新增存取識別碼和合約識別碼。") 
+0. 您的新支援合約將會出現在 **步驟 2** 中。  加以選取。
+0. 請指出問題的嚴重性。  「重要」是預設值。 
+0. 選擇您想要接收支援的時機。 預設會選取 [僅限上班時間]。 只有當您選取 [重大] 作為嚴重性時，才可以使用 [24/7 支援] 選項。
+0. 按一下 [下一步] 以繼續。 
+0. 在 **步驟 3** 中，請提供您希望支援代理程式用來與您聯絡的連絡人資訊。 
    > [!div class="mx-imgBorder"]
-   > ![技術支援權益事件提交步驟 2 - 問題](_img/vs-tech-support/vs-tech-support-step2.png)
-
-3. 在 [支援方案] 頁面上，向下捲動至 [Add or purchase a support plan] \(新增或購買支援方案\)  、使用右邊的箭號展開，然後按一下 [新增合約]  。
-
-   > [!div class="mx-imgBorder"]
-   > ![技術支援權益事件提交 - 新增合約](_img/vs-tech-support/vs-tech-support-add-contract.png)
-
-4. 輸入您的 **存取識別碼** 和 **合約識別碼** 。  按一下 [新增]  。
-
-   > [!div class="mx-imgBorder"]
-   > ![技術支援權益事件提交 - 新增合約識別碼](_img/vs-tech-support/vs-tech-support-add-contract-id.png)
-
-5. 新增合約之後，它便會出現在頂端的 [Select a support plan] \(選取支援方案\)  下方。 您的方案標題會包含 "MSDN" 一詞。 選擇該標題，並向下捲動，然後按一下 [下一步]  。
-
-   > [!div class="mx-imgBorder"]
-   > ![技術支援權益事件提交 - 選擇方案](_img/vs-tech-support/vs-tech-support-choose-plan.png)
-
-   > [!NOTE]
-   > 如果您沒有看到您的支援方案，請回到上一頁，然後再按一下 [下一步]  。  如果無法顯示支援方案，將您的支援問題文字複製到剪貼簿、重新整理頁面，然後重新建立支援問題。
-
-6. 完成剩餘步驟 (嚴重性、連絡資訊、檢閱)。   提交事件之後，您會看到成功提交事件的確認，即可將檔案上傳至案例。 我們會將您的事件指派給技術支援人員，其會使用您選取的連絡方法與您連絡以解決問題。
-
-#### <a name="submit-an-incident-by-phone"></a>透過電話提交事件
+   > ![驗證您的連絡人資訊](_img/vs-tech-support/vs-tech-support-contact-info.png "驗證您的連絡人資訊和慣用的連絡人方法。") 
+0. 在 **步驟 4** 中，您可以選擇與小組的其他人共用這項支援要求資訊。  輸入您想要與之共用要求的電子郵件地址。 按 **[下一** 步] 移至下一個步驟。
+0. **步驟 5** 摘要說明您為事件提供的所有資訊。  如果您對所有專案都是正確的，而且您已準備好繼續進行，請按一下 [ **提交** ]。 
+ 
+### <a name="submit-an-incident-by-phone"></a>透過電話提交事件
 如果您想要透過電話建立支援事件，請找出您的國家/地區的 [客戶服務](https://support.microsoft.com/help/13948/global-customer-service-phone-numbers) 電話號碼。 當您撥打電話時，請務必準備好合約識別碼和存取識別碼。
 
-#### <a name="submit-an-incident-within-the-azure-portal"></a>在 Azure 入口網站內提交事件
+### <a name="submit-an-incident-in-the-azure-portal"></a>在 Azure 入口網站中提交事件
 若要使用您的 Visual Studio 訂閱技術支援權益來解決與 Azure 相關的問題，您必須將合約識別碼和存取識別碼連結至您的 Azure 訂用帳戶。
 
 1. 前往 https://portal.azure.com 並登入
-2. 從左側導覽中，按一下 [說明 **+ 支援** ]
-3. 按一下 [支援] 底下的 [新增支援要求] 
+0. 從左側導覽中，按一下 [說明 **+ 支援** ]
+0. 按一下 [支援] 底下的 [新增支援要求]
 
 ## <a name="eligibility"></a>資格
 
@@ -136,13 +122,13 @@ ms.locfileid: "92918119"
 
 不確定您使用哪一個訂用帳戶？  連接至以 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 查看指派給您電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
-- [Azure 檔](/azure/)
+- [Azure 文件](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

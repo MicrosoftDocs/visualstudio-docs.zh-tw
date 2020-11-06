@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aa4ad83428120c68adb89937afc46f51700dbfe
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 111eb74d388682ff3cf97d5e0aa7e7e5a91cbaf3
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583667"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414187"
 ---
 # <a name="checklist-create-new-project-types"></a>檢查清單：建立新的專案類型
 您必須完成幾項工作，才能建立新的專案類型。 下列檢查清單提供這些工作的指南：
@@ -25,7 +25,7 @@ ms.locfileid: "91583667"
 
 2. 判斷哪些編輯器用於程式碼和其他專案專案。 您可以使用 [核心] 或 [標準編輯器]，也可以建立和使用專案特定的編輯器。 如需詳細資訊，請參閱 [建立自訂編輯器和設計](../../extensibility/creating-custom-editors-and-designers.md) 工具和 [如何：開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)。
 
-3. 判斷您的專案專案在 **類別檢視** 與 **物件瀏覽器**中的參與程度。 如需詳細資訊，請參閱 [支援符號流覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)。
+3. 判斷您的專案專案在 **類別檢視** 與 **物件瀏覽器** 中的參與程度。 如需詳細資訊，請參閱 [支援符號流覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)。
 
 4. 根據您先前為專案和專案專案所做的設計決策，來衍生新的類別。
 
@@ -33,7 +33,7 @@ ms.locfileid: "91583667"
 
     - Project factory：管理建立新專案和開啟現有的專案。 如需詳細資訊，請參閱 [使用專案處理站建立專案實例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)。
 
-    - 專案階層和命令處理。 如需詳細資訊，請參閱 [使用 HierUtil7 專案類別來執行 c + +) 的專案 (類型 ](/previous-versions/bb166212(v=vs.100))、 [專案模型的](../../extensibility/internals/elements-of-a-project-model.md)專案、 [專案模型核心元件](../../extensibility/internals/project-model-core-components.md)，以及 [menucommand 對比與 OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true)的比較。
+    - 專案階層和命令處理。 如需詳細資訊，請參閱 [使用 HierUtil7 專案類別來執行 c + +) 的專案 (類型 ](/previous-versions/bb166212(v=vs.100))、 [專案模型的](../../extensibility/internals/elements-of-a-project-model.md)專案、 [專案模型核心元件](../../extensibility/internals/project-model-core-components.md)，以及 [menucommand 對比與 OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015)的比較。
 
     - 專案專案管理，包括將專案加入至 [ **新增專案** ] 對話方塊。 如需詳細資訊，請參閱 [加入專案和專案專案範本](../../extensibility/internals/adding-project-and-project-item-templates.md) ，以及 [註冊專案和專案範本](../../extensibility/internals/registering-project-and-item-templates.md)。
 
@@ -49,15 +49,15 @@ ms.locfileid: "91583667"
 
     - 可以自動化的物件或衍生自的類別 `IDispatch` 。
 
-    - XML 命令表 (*. .vsct*) 檔。 如需詳細資訊，請參閱 [Visual Studio 命令表格 (. .vsct) ](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔。
+    - XML 命令表 ( *. .vsct* ) 檔。 如需詳細資訊，請參閱 [Visual Studio 命令表格 (. .vsct) ](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔。
 
 6. 測試、偵測和啟動您的專案類型。
 
-7. 藉由設定為的值，在 [**加入參考**] 對話方塊的 [**專案**] 索引標籤中顯示您的專案 `VARIANT_TRUE` `VSHPROPID_ShowProjInSolutionPage` 。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>。
+7. 藉由設定為的值，在 [ **加入參考** ] 對話方塊的 [ **專案** ] 索引標籤中顯示您的專案 `VARIANT_TRUE` `VSHPROPID_ShowProjInSolutionPage` 。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>。
 
-8. 建立 Microsoft Installer (*.msi*) 檔案，以安裝您的 vspackage。 如需詳細資訊，請參閱 [使用 Windows Installer 安裝 vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)、 [註冊專案類型](../../extensibility/internals/registering-a-project-type.md)和 [vspackage](../../extensibility/internals/vspackages.md)。
+8. 建立 Microsoft Installer ( *.msi* ) 檔案，以安裝您的 vspackage。 如需詳細資訊，請參閱 [使用 Windows Installer 安裝 vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)、 [註冊專案類型](../../extensibility/internals/registering-a-project-type.md)和 [vspackage](../../extensibility/internals/vspackages.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 中的階層](../../extensibility/internals/hierarchies-in-visual-studio.md)
 - [建立專案類型的時機](../../extensibility/internals/when-to-create-project-types.md)
 - [建立專案類型](../../extensibility/internals/creating-project-types.md)

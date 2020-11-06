@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aceed2833d0083beccf197c4c681f92270a1f9a4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2dbe2832d52d17047795d1898f0e0bfd8a275bb9
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583654"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414380"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK 可協助您擴充 Visual Studio 功能，或將新功能整合到 Visual Studio。 您可以將延伸模組散發給其他使用者以及 Visual Studio Marketplace。 下列是一些可擴充 Visual Studio 的方法：
@@ -54,7 +54,7 @@ Visual Studio SDK 可協助您擴充 Visual Studio 功能，或將新功能整�
  利用 [映射服務和目錄](../extensibility/image-service-and-catalog.md) 來提供絕佳的影像管理，以及高 DPI 和主題的支援。
 
 ## <a name="find-and-install-existing-visual-studio-extensions"></a>尋找並安裝現有的 Visual Studio 擴充功能
- 您可以在 [**工具**] 功能表上的 [**擴充功能和更新**] 對話方塊中找到 Visual Studio 延伸模組。 如需詳細資訊，請參閱 [尋找和使用 Visual Studio 擴充](../ide/finding-and-using-visual-studio-extensions.md)功能。 您也可以在[Visual Studio Marketplace](https://marketplace.visualstudio.com/)中找到擴充功能
+ 您可以在 [ **工具** ] 功能表上的 [ **擴充功能和更新** ] 對話方塊中找到 Visual Studio 延伸模組。 如需詳細資訊，請參閱 [尋找和使用 Visual Studio 擴充](../ide/finding-and-using-visual-studio-extensions.md)功能。 您也可以在[Visual Studio Marketplace](https://marketplace.visualstudio.com/)中找到擴充功能
 
 ## <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 參考
  您可以在 [VISUAL STUDIO Sdk 參考](../extensibility/visual-studio-sdk-reference.md)中找到 VISUAL STUDIO sdk API 參考。
@@ -73,11 +73,11 @@ Visual Studio SDK 可協助您擴充 Visual Studio 功能，或將新功能整�
 
 - [擴充 Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用功能表命令建立擴充功能](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [如何：將擴充性專案遷移至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [常見問題：將增益集轉換成 VSPackage 擴充功能](../vs-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions.md?view=vs-2015&preserve-view=true)
+- [常見問題：將增益集轉換成 VSPackage 擴充功能](/previous-versions/visualstudio/visual-studio-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions?preserve-view=true&view=vs-2015)
 - [在 managed 程式碼中管理多個執行緒](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)
 - [將命令新增至工具列](../extensibility/adding-commands-to-toolbars.md)

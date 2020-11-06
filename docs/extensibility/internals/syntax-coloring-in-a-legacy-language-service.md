@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d3b125737162146af954ad8561eb41e5ee8f2e8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7d0cc0dcf40ab9231e3af6208ab2f844c69f3398
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584525"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414551"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>舊版語言服務中的語法著色
 
@@ -28,7 +28,7 @@ Visual Studio 使用著色服務來識別語言的元素，並在編輯器中以
  ![SVC 色彩標示器圖形](../../extensibility/internals/media/figlgsvccolorizer.gif)
 
 > [!NOTE]
-> 語法著色服務與標示文字的一般 Visual Studio 機制不同。 如需有關支援標示之一般機制的詳細資訊 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ，請參閱 [使用字型和色彩](../../vs-2015/extensibility/using-fonts-and-colors.md?view=vs-2015&preserve-view=true)。
+> 語法著色服務與標示文字的一般 Visual Studio 機制不同。 如需有關支援標示之一般機制的詳細資訊 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ，請參閱 [使用字型和色彩](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015)。
 
  除了著色器之外，語言服務也可以提供編輯器所使用的自訂可設定色彩專案，方法是通告它提供自訂的可設定色彩專案。 您可以藉由在 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> 相同的物件上執行介面，來執行這項作業 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> 。 當編輯器呼叫方法時，它會傳回自訂可設定色彩專案的數目 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> ，而當編輯器呼叫方法時，它會傳回個別的自訂可設定色彩專案 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> 。
 
@@ -60,7 +60,7 @@ Visual Studio 使用著色服務來識別語言的元素，並在編輯器中以
     3. 使用方法所傳回的顏色標示資訊 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> 來顯示選取的文字。
 
 > [!NOTE]
-> 除了使用語言服務著色器，VSPackage 也可以使用一般用途 Visual Studio 文字著色機制。 如需此機制的詳細資訊，請參閱 [使用字型和色彩](../../vs-2015/extensibility/using-fonts-and-colors.md?view=vs-2015&preserve-view=true)。
+> 除了使用語言服務著色器，VSPackage 也可以使用一般用途 Visual Studio 文字著色機制。 如需此機制的詳細資訊，請參閱 [使用字型和色彩](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015)。
 
 ## <a name="in-this-section"></a>本節內容
 - [實作語法著色](../../extensibility/internals/implementing-syntax-coloring.md)

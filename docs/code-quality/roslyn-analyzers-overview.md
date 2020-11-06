@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72e6193d850d351dacc5361d5053fe8f06b2d4bf
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 2fd91266f4a829193296b05c9a28dc96a9a88d31
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860487"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414057"
 ---
 # <a name="overview-of-source-code-analysis"></a>原始程式碼分析總覽
 
@@ -25,7 +25,7 @@ ms.locfileid: "91860487"
 
 分析器可以分為下列群組：
 
-- 程式[代碼樣式](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories)分析器內建于 Visual Studio。 這些分析器的診斷識別碼或程式碼的格式為 IDExxxx，例如 IDE0067。 您可以在 [文字編輯器](../ide/code-styles-and-code-cleanup.md) 的 [選項] 頁面或 [EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)檔中設定喜好設定。 從 .NET 5.0 開始，程式碼樣式分析器會隨附于 .NET SDK，而且可以嚴格地強制執行為組建警告或錯誤。 如需詳細資訊，請參閱[這裡](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis)。
+- 程式[代碼樣式](/dotnet/fundamentals/code-analysis/code-style-rule-options?preserve-view=true&view=vs-2019#convention-categories)分析器內建于 Visual Studio。 這些分析器的診斷識別碼或程式碼的格式為 IDExxxx，例如 IDE0067。 您可以在 [文字編輯器](../ide/code-styles-and-code-cleanup.md) 的 [選項] 頁面或 [EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)檔中設定喜好設定。 從 .NET 5.0 開始，程式碼樣式分析器會隨附于 .NET SDK，而且可以嚴格地強制執行為組建警告或錯誤。 如需詳細資訊，請參閱[這裡](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis)。
 
 - 程式[代碼品質](/dotnet/fundamentals/code-analysis/quality-rules/index)分析器現在隨附于 .NET 5 SDK，而且預設為啟用。 這些分析器的診斷識別碼或程式碼的格式為 CAxxxx，例如 CA1822。 如需詳細資訊，請參閱 [.net 程式碼品質分析的總覽](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis)。
 
@@ -52,13 +52,13 @@ ms.locfileid: "91860487"
 
 ![Visual Studio 中的程式碼編輯器中的波浪線](media/diagnostics-severity-colors.png)
 
-許多分析器規則或 *診斷*都有一或多個相關聯的程式 *代碼修正* ，可套用以修正規則違規。 程式碼修正會顯示在燈泡圖示功能表中，並顯示其他類型的[快速動作](../ide/quick-actions.md)。 如需這些程式碼修正的資訊，請參閱[一般的快速動作](../ide/quick-actions.md)。
+許多分析器規則或 *診斷* 都有一或多個相關聯的程式 *代碼修正* ，可套用以修正規則違規。 程式碼修正會顯示在燈泡圖示功能表中，並顯示其他類型的[快速動作](../ide/quick-actions.md)。 如需這些程式碼修正的資訊，請參閱[一般的快速動作](../ide/quick-actions.md)。
 
 ![分析器違規和快速動作程式碼修正](../code-quality/media/built-in-analyzer-code-fix.png)
 
 ## <a name="configure-analyzer-severity-levels"></a>設定分析器嚴重性層級
 
-您可以在[EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file)檔案中或從燈泡[功能表](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu)設定分析器規則或*診斷*的嚴重性。
+您可以在 [EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file)檔案中或從燈泡 [功能表](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu)設定分析器規則或 *診斷* 的嚴重性。
 
 分析器也可以設定為在您輸入時，于組建階段檢查程式碼。 您可以設定即時程式碼分析的範圍，以便只針對目前檔、所有開啟的檔或整個方案執行。 請參閱 [如何：設定即時程式碼分析的範圍](./configure-live-code-analysis-scope-managed-code.md)。
 
@@ -71,7 +71,7 @@ ms.locfileid: "91860487"
 
 ### <a name="scope"></a>影響範圍
 
-如果您將分析器安裝為 Visual Studio 延伸模組，則會套用到方案層級和所有 Visual Studio 實例。 如果您將分析器安裝為 NuGet 套件 (這是慣用方法)，則只會套用至安裝 NuGet 套件的專案。 在小組環境中，安裝為 NuGet 套件的分析器會將範圍限制在處理該專案的「所有開發人員」**。
+如果您將分析器安裝為 Visual Studio 延伸模組，則會套用到方案層級和所有 Visual Studio 實例。 如果您將分析器安裝為 NuGet 套件 (這是慣用方法)，則只會套用至安裝 NuGet 套件的專案。 在小組環境中，安裝為 NuGet 套件的分析器會將範圍限制在處理該專案的「所有開發人員」。
 
 ### <a name="build-errors"></a>建置錯誤
 

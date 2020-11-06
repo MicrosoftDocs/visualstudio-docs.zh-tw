@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c43281e52d5a56fd7a888e42ba0bae66f9ac0bd9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2f9123117144d12babd97264090f16899f392954
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584265"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414265"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>適用於 Visual Studio 的色彩和樣式設定
 
@@ -49,7 +49,7 @@ ms.locfileid: "91584265"
 | 您有內嵌或獨立的對話方塊。 | **系統色彩** | 系統名稱，可讓作業系統定義 UI 元素的色彩和外觀，例如通用對話方塊控制項。 |
 | 您有想要與整體 VS 環境一致的自訂 UI，且您有符合共用權杖類別和語義意義的 UI 元素。 | **常見的共用色彩** | 特定 UI 元素的現有預先定義色彩標記名稱 |
 | 您有個別的功能或一組功能，但類似的元素沒有共用的色彩。 | **自訂色彩** | 區域專屬的色彩標記名稱，而不想要與其他 UI 共用 |
-| 您想要允許使用者自訂 UI 或內容 (例如，適用于文字編輯器或特製化設計工具視窗) 。 | **終端使用者自訂**<br /><br />** (工具 &gt; 選項] 對話方塊) ** | 在 [ **工具 &gt; 選項** ] 對話方塊的 [字型和色彩] 頁面中定義的設定，或在一個 UI 功能專屬的特殊頁面上定義的設定。 |
+| 您想要允許使用者自訂 UI 或內容 (例如，適用于文字編輯器或特製化設計工具視窗) 。 | **終端使用者自訂**<br /><br />**(工具 &gt; 選項] 對話方塊)** | 在 [ **工具 &gt; 選項** ] 對話方塊的 [字型和色彩] 頁面中定義的設定，或在一個 UI 功能專屬的特殊頁面上定義的設定。 |
 
 ### <a name="visual-studio-themes"></a>Visual Studio 主題
 
@@ -81,7 +81,7 @@ Visual Studio 的原始程式碼包含數個套件定義檔案，其中包含每
 
 請參閱： [公開終端使用者的色彩](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
-有時候，您會想要讓使用者自訂您的 UI，例如在建立程式碼編輯器或設計介面時。 可自訂的 UI 元件可在 [**工具 &gt; 選項**] 對話方塊的 [字型**和色彩**] 區段中找到，使用者可以選擇變更前景色彩、背景色彩或兩者。
+有時候，您會想要讓使用者自訂您的 UI，例如在建立程式碼編輯器或設計介面時。 可自訂的 UI 元件可在 [ **工具 &gt; 選項** ] 對話方塊的 [字型 **和色彩** ] 區段中找到，使用者可以選擇變更前景色彩、背景色彩或兩者。
 
 ![工具 &gt; 選項對話方塊](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")<br />工具 &gt; 選項對話方塊
 
@@ -269,13 +269,13 @@ protected override void Dispose(bool disposing)
 
 ## <a name="choosing-high-contrast-colors"></a><a name="BKMK_ChoosingHighContrastColors"></a> 選擇高對比色彩
 
-### <a name="overview"></a>概觀
+### <a name="overview"></a>總覽
 
 Windows 會使用數個高對比的系統層級主題，以增加文字、背景和影像的色彩對比，讓元素在螢幕上顯示得更相異。 基於協助工具的考慮，當使用者切換至高對比主題時，Visual Studio 介面元素必須正確回應，是很重要的。
 
 只有少數系統色彩可以用於高對比主題。 選擇您的系統色彩名稱時，請記住下列秘訣：
 
-- 選擇與您要著色的元素**具有相同語義意義的系統色彩**。 比方說，如果您選擇的是視窗內文字的高對比色彩，請使用 WindowText 而不是 ControlText。
+- 選擇與您要著色的元素 **具有相同語義意義的系統色彩** 。 比方說，如果您選擇的是視窗內文字的高對比色彩，請使用 WindowText 而不是 ControlText。
 
 - **選擇 [前景]/[背景** 組]，就不會確信您的色彩選擇在所有高對比主題中都能正常運作。
 
@@ -285,7 +285,7 @@ Windows 會使用數個高對比的系統層級主題，以增加文字、背景
 
 [ [WPF Team Blog： SystemColors 參考](/archive/blogs/wpf/systemcolors-reference) ] 中的資料表指出一組完整的系統色彩名稱，以及每個主題中顯示的對應色相。
 
-將這組有限的色彩套用至您的 UI 時， *您應該會遺失出現在「一般」主題中的微妙詳細資料*。 以下是具有微妙灰色色彩的 UI 範例，可用來區別工具視窗內的區域。 當搭配高對比模式中顯示的相同視窗時，您可以看到所有背景都是相同的色調，而這些區域的框線會單獨以框線表示：
+將這組有限的色彩套用至您的 UI 時， *您應該會遺失出現在「一般」主題中的微妙詳細資料* 。 以下是具有微妙灰色色彩的 UI 範例，可用來區別工具視窗內的區域。 當搭配高對比模式中顯示的相同視窗時，您可以看到所有背景都是相同的色調，而這些區域的框線會單獨以框線表示：
 
 ![如何在高對比中遺失微妙細節的範例](../../extensibility/ux-guidelines/media/030303-a_propertieswindow.png "030303-a_PropertiesWindow")<br />如何在高對比中遺失微妙細節的範例
 
@@ -332,15 +332,15 @@ Windows 會使用數個高對比的系統層級主題，以增加文字、背景
 
 ## <a name="exposing-colors-for-end-users"></a><a name="BKMK_ExposingColorsForEndUsers"></a> 公開終端使用者的色彩
 
-### <a name="overview"></a>概觀
+### <a name="overview"></a>總覽
 
-有時候您會想要讓使用者自訂您的 UI，就像是在建立程式碼編輯器或設計介面時一樣。 最常見的方法是使用 [ **工具 &gt; 選項** ] 對話方塊。 除非您有需要特殊控制項的高度特製化 UI，否則呈現自訂最簡單的方式是透過對話方塊的 [**環境**] 區段內的 [字型]**和 [色彩**] 頁面。 針對您為了自訂而公開的每個專案，使用者可以選擇變更前景色彩、背景色彩或兩者。
+有時候您會想要讓使用者自訂您的 UI，就像是在建立程式碼編輯器或設計介面時一樣。 最常見的方法是使用 [ **工具 &gt; 選項** ] 對話方塊。 除非您有需要特殊控制項的高度特製化 UI，否則呈現自訂最簡單的方式是透過對話方塊的 [ **環境** ] 區段內的 [字型] **和 [色彩** ] 頁面。 針對您為了自訂而公開的每個專案，使用者可以選擇變更前景色彩、背景色彩或兩者。
 
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>建立可自訂色彩的 VSPackage
 
 VSPackage 可以透過自訂類別來控制字型和色彩，並在 [字型和色彩] 屬性頁上顯示專案。 使用這種機制時，Vspackage 必須執行 [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) 介面及其相關聯的介面。
 
-基本上，這個機制可以用來修改所有現有的顯示專案和包含它們的類別。 不過，它不應該用來修改文字編輯器類別或其顯示專案。 如需文字編輯器分類的詳細資訊，請參閱 [字型和色彩總覽](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015&preserve-view=true)。
+基本上，這個機制可以用來修改所有現有的顯示專案和包含它們的類別。 不過，它不應該用來修改文字編輯器類別或其顯示專案。 如需文字編輯器分類的詳細資訊，請參閱 [字型和色彩總覽](/previous-versions/visualstudio/visual-studio-2015/extensibility/font-and-color-overview?preserve-view=true&view=vs-2015)。
 
 若要執行自訂類別或顯示專案，VSPackage 必須：
 
@@ -419,11 +419,11 @@ IDE 會快取字型和色彩設定的相關資訊。 因此，在任何修改 ID
 
 若要這樣做，VSPackage 必須：
 
-- 藉由執行[IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents)介面來**處理 IDE 產生的事件**。 IDE 會在使用者修改 [字型和色彩] 頁面之後，呼叫適當的方法。 例如，如果選取新的字型，則會呼叫 [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) 方法。
+- 藉由執行 [IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents)介面來 **處理 IDE 產生的事件** 。 IDE 會在使用者修改 [字型和色彩] 頁面之後，呼叫適當的方法。 例如，如果選取新的字型，則會呼叫 [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) 方法。
 
   **OR**
 
-- **輪詢 IDE 的變更**。 這可以透過系統實行的 [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) 介面來完成。 雖然主要是為了支援持續性，但 [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) 方法可以取得顯示專案的字型和色彩資訊。 如需字型和色彩設定的詳細資訊，請參閱 MSDN 文章 [存取儲存的字型和色彩設定](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015&preserve-view=true)。
+- **輪詢 IDE 的變更** 。 這可以透過系統實行的 [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) 介面來完成。 雖然主要是為了支援持續性，但 [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) 方法可以取得顯示專案的字型和色彩資訊。 如需字型和色彩設定的詳細資訊，請參閱 MSDN 文章 [存取儲存的字型和色彩設定](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-stored-font-and-color-settings?preserve-view=true&view=vs-2015)。
 
 > [!NOTE]
 > 若要確保輪詢結果正確無誤，請在呼叫[IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage)介面的抓取方法之前，使用[IVsFontAndColorCacheManager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager)介面判斷是否需要快取排清和更新。

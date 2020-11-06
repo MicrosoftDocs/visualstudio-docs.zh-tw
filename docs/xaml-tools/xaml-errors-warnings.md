@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a68273f4fbb2f66986c18c692b91b6e1829a4c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 3b0c785bef80f59c165f251b2986f0db1eb8bc63
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049217"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414473"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML 錯誤和警告
 
@@ -32,15 +32,15 @@ ms.locfileid: "93049217"
 |XAML 編輯後繼續|XECxxxx| Visual Studio 2019 16.1 版或更早版本 |
 |XAML 熱重新載入 | XHRxxxx | Visual Studio 2019 16.2 版或更新版本 |
 
-如需 XAML 編輯品牌再造的詳細資訊 & 繼續 XAML 熱重新載入的詳細資訊，請參閱我們的[版本](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling)資訊
+如需 XAML 編輯品牌再造的詳細資訊 & 繼續 XAML 熱重新載入的詳細資訊，請參閱我們的[版本](/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling)資訊
 
 > [!Note]
 > 並非所有錯誤或警告都有對應的程式碼。 這種錯誤通常是 XAML 設計工具的錯誤。
 
 ## <a name="suppress-xaml-designer-errors"></a>隱藏 XAML 設計工具的錯誤
 
-選取 [工具] > [選項]  ，然後選取 [文字編輯器] > [XAML] > 其他]  ，以開啟 [選項]  對話方塊。
+選取 [工具] > [選項]，然後選取 [文字編輯器] > [XAML] > 其他]，以開啟 [選項] 對話方塊。
 
-取消選取 [Show errors detected by the XAML designer] (顯示 XAML 設計工具所偵測到的錯誤)  核取方塊。
+取消選取 [Show errors detected by the XAML designer] (顯示 XAML 設計工具所偵測到的錯誤) 核取方塊。
 
 ![隱藏 XAML 設計工具的錯誤](media/suppress_xaml_designer_errors.png)
