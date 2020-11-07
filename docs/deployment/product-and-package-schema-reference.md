@@ -1,5 +1,7 @@
 ---
 title: 產品和套件架構參考 |Microsoft Docs
+description: 瞭解產品檔案，這是描述 ClickOnce 應用程式所需外部相依性的 XML 資訊清單。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,30 +27,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1570aa3d4ea72dc1d133ce3096e1726fa1ffb782
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac5810fa3bdd6d479c1df4c484960fd923b0ed59
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66745619"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350708"
 ---
 # <a name="product-and-package-schema-reference"></a>產品和封裝結構描述參考
-*產品*檔案是 XML 資訊清單，描述應用程式所需的所有外部相依性 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 外部相依性的範例包括 .NET Framework 以及 Microsoft Data Access 元件 (MDAC) 。 封裝檔案類似于產品檔案，但用來安裝相依性的文化特性相依元件，例如當地語系化的元件、授權合約和檔。
+*產品* 檔案是 XML 資訊清單，描述應用程式所需的所有外部相依性 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 外部相依性的範例包括 .NET Framework 以及 Microsoft Data Access 元件 (MDAC) 。 封裝檔案類似于產品檔案，但用來安裝相依性的文化特性相依元件，例如當地語系化的元件、授權合約和檔。
 
  產品和套件檔案是由最上層或元素所組成 `Product` `Package` ，其中每個專案都包含下列元素。
 
 |項目|描述|屬性|
 |-------------|-----------------|----------------|
-|[\<Product> 元素](../deployment/product-element-bootstrapper.md)|產品檔案的必要最上層元素。|無|
+|[\<Product> 元素](../deployment/product-element-bootstrapper.md)|產品檔案的必要最上層元素。|None|
 |[\<Package> 元素](../deployment/package-element-bootstrapper.md)|封裝檔案的必要最上層元素。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
-|[\<RelatedProducts> 元素](../deployment/relatedproducts-element-bootstrapper.md)|產品檔案的選擇性元素。 此產品安裝或相依的其他產品。|無|
-|[\<InstallChecks> 元素](../deployment/installchecks-element-bootstrapper.md)|必要元素。 列出在安裝期間要在本機電腦上執行的相依性檢查。|無|
-|[\<Commands> 元素](../deployment/commands-element-bootstrapper.md)|必要元素。  執行一或多個安裝檢查（如所述 `InstallChecks` ），並表示檢查失敗時要安裝的套件。|無|
-|[\<PackageFiles> 元素](../deployment/packagefiles-element-bootstrapper.md)|必要元素。 列出這個安裝程式可能安裝的封裝。|無|
+|[\<RelatedProducts> 元素](../deployment/relatedproducts-element-bootstrapper.md)|產品檔案的選擇性元素。 此產品安裝或相依的其他產品。|None|
+|[\<InstallChecks> 元素](../deployment/installchecks-element-bootstrapper.md)|必要元素。 列出在安裝期間要在本機電腦上執行的相依性檢查。|None|
+|[\<Commands> 元素](../deployment/commands-element-bootstrapper.md)|必要元素。  執行一或多個安裝檢查（如所述 `InstallChecks` ），並表示檢查失敗時要安裝的套件。|None|
+|[\<PackageFiles> 元素](../deployment/packagefiles-element-bootstrapper.md)|必要元素。 列出這個安裝程式可能安裝的封裝。|None|
 |[\<Strings> 元素](../deployment/strings-element-bootstrapper.md)|必要元素。 儲存產品名稱和錯誤字串的當地語系化版本。|None|
 
 ## <a name="remarks"></a>備註
- 封裝架構是由 *Setup.exe*所取用，MS Build 啟動載入工作所產生的存根程式，其中只包含其本身的硬式編碼邏輯。 架構會驅動安裝程式的每個層面。
+ 封裝架構是由 *Setup.exe* 所取用，MS Build 啟動載入工作所產生的存根程式，其中只包含其本身的硬式編碼邏輯。 架構會驅動安裝程式的每個層面。
 
  `InstallChecks` setup.exe 的測試應針對指定的套件是否存在而執行。 `PackageFiles` 列出安裝程式可能必須安裝的所有封裝（如果指定的測試失敗）。 命令底下的每個命令專案都會執行所描述的其中一個測試 `InstallChecks` ，並指定 `PackageFile` 測試失敗時要執行的測試。 您可以使用專案 `Strings` 來當地語系化產品名稱和錯誤訊息，如此一來，您就可以使用單一安裝二進位檔來安裝任意數量語言的應用程式。
 
@@ -157,6 +159,6 @@ ms.locfileid: "66745619"
 </Product>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)
 - [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)

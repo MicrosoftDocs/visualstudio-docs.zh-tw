@@ -1,5 +1,7 @@
 ---
 title: XML 結構描述設計工具開始檢視
+description: 瞭解 XML 架構 (XSD) 設計工具的 [開始] 視圖中可用的命令。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f05c3023a246ba193c98cb1b01984a54fdaa0ebb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd2c59d1af2802876305fa218bd169fae805f4f3
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592525"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351358"
 ---
 # <a name="start-view"></a>開始檢視
 
@@ -25,7 +27,7 @@ ms.locfileid: "75592525"
 
 ## <a name="watermark"></a>浮水印
 
-[浮水印] 窗格包含所有 XSD 設計工具視圖、XML 編輯器和 **Xml 架構瀏覽器**的連結清單。 如果結構描述集發生錯誤，清單結尾會顯示以下文字：「使用錯誤清單檢視與修正結構描述集中的錯誤」。
+[浮水印] 窗格包含所有 XSD 設計工具視圖、XML 編輯器和 **Xml 架構瀏覽器** 的連結清單。 如果結構描述集發生錯誤，清單結尾會顯示以下文字：「使用錯誤清單檢視與修正結構描述集中的錯誤」。
 
 ## <a name="schema-set-details"></a>架構設定詳細資料
 
@@ -39,15 +41,15 @@ ms.locfileid: "75592525"
 
 當開始檢視為作用中時，下列 XSD 設計工具工具列的按鈕將會啟用：
 
-|選項|描述|
+|選項|說明|
 |-|-----------------|
-|**顯示開始檢視**|切換至開始檢視。 您可以使用鍵盤快速鍵來存取此視圖： **Ctrl** + **1**。|
-|**顯示內容模型檢視**|切換至內容模型檢視。 您可以使用鍵盤快速鍵來存取此視圖： **Ctrl** + **2**。|
-|**顯示圖表檢視**|切換至圖表檢視。 您可以使用鍵盤快速鍵來存取此視圖： **Ctrl** + **3**。|
+|**顯示開始檢視**|切換至開始檢視。 您可以使用鍵盤快速鍵來存取此視圖： **Ctrl** + **1** 。|
+|**顯示內容模型檢視**|切換至內容模型檢視。 您可以使用鍵盤快速鍵來存取此視圖： **Ctrl** + **2** 。|
+|**顯示圖表檢視**|切換至圖表檢視。 您可以使用鍵盤快速鍵來存取此視圖： **Ctrl** + **3** 。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)
-- [圖表視圖](../xml-tools/graph-view.md)
+- [圖形檢視](../xml-tools/graph-view.md)
 - [內容模型檢視](../xml-tools/content-model-view.md)
 - [XML 編輯器](../xml-tools/xml-editor.md)

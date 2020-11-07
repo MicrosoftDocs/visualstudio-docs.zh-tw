@@ -1,5 +1,7 @@
 ---
 title: '&lt;啟動載入器 &gt;)  (InstallChecks 元素 |Microsoft Docs'
+description: InstallChecks 元素支援在本機電腦上啟動各種測試，以確保已安裝應用程式的所有必要條件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7ba4da072a586bdc09993b77200a769be3940ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 660fc893eb22d0c40805a8bf7b2efc86fd83c3b1
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536301"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350864"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;啟動載入器 &gt;)  (InstallChecks 元素
 `InstallChecks`元素支援針對本機電腦啟動各種測試，以確保已安裝應用程式的所有適當必要條件。
@@ -78,8 +80,8 @@ ms.locfileid: "85536301"
 |`Name`|必要。 要檢查之元件的完整名稱。|
 |`PublicKeyToken`|必要。 與此強式名稱元件相關聯之公開金鑰的縮寫形式。 儲存在 GAC 中的所有元件都必須具有名稱、版本和公開金鑰。|
 |`Version`|必要。 組件的版本。<br /><br /> 版本號碼的格式 ...。 \<*major version*> \<*minor version*> \<*build version*> \<*revision version*>|
-|`Language`|選擇性。 當地語系化元件的語言。 預設為 `neutral`。|
-|`ProcessorArchitecture`|選擇性。 此安裝的目的電腦處理器。 預設為 `msil`。|
+|`Language`|選擇性。 當地語系化元件的語言。 預設值為 `neutral`。|
+|`ProcessorArchitecture`|選擇性。 此安裝的目的電腦處理器。 預設值為 `msil`。|
 
 ## <a name="externalcheck"></a>ExternalCheck
  這個元素是的選擇性子項目 `InstallChecks` 。 針對的每個實例，啟動載入器 `ExternalCheck` 會在個別的進程中執行命名的外部程式，並將它的結束代碼儲存在所指示的屬性中 `Property` 。 `ExternalCheck` 適用于執行複雜的相依性檢查，或檢查元件是否存在的唯一方法是將它具現化。
@@ -156,7 +158,7 @@ ms.locfileid: "85536301"
 ## <a name="installconditions"></a>InstallConditions
  當 `InstallChecks` 評估時，它們會產生屬性。 然後，會使用屬性 `InstallConditions` 來判斷封裝是否應該安裝、略過或失敗。 下表列出 `InstallConditions` ：
 
-|條件|描述|
+|條件|說明|
 |-|-|
 |`FailIf`|如果任何 `FailIf` 條件評估為 true，則封裝會失敗。 其餘的條件將不會進行評估。|
 |`BypassIf`|如果有任何 `BypassIf` 條件評估為 true，則會略過封裝。 其餘的條件將不會進行評估。|
@@ -164,7 +166,7 @@ ms.locfileid: "85536301"
 ## <a name="predefined-properties"></a>預先定義的屬性
  下表列出 `BypassIf` 和 `FailIf` 元素：
 
-|屬性|附註|可能的值|
+|屬性|備註|可能的值|
 |--------------|-----------|---------------------|
 |`Version9X`|Windows 9X 作業系統的版本號碼。|4.10 = Windows 98|
 |`VersionNT`|以 Windows NT 為基礎之作業系統的版本號碼。|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|
@@ -179,6 +181,6 @@ ms.locfileid: "85536301"
     <FailIf Property="Version9X" Compare="VersionLessThan" Value="4.10" String="InvalidPlatform"/>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [\<Commands> 元素](../deployment/commands-element-bootstrapper.md)
 - [產品和套件架構參考](../deployment/product-and-package-schema-reference.md)

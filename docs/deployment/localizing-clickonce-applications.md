@@ -1,5 +1,7 @@
 ---
 title: 當地語系化 ClickOnce 應用程式 |Microsoft Docs
+description: 深入瞭解將 ClickOnce 應用程式當地語系化至適用于特定文化特性之版本的三種方式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ee263b3bb908daace4bf27f86cff710ae90684
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97c4fe8d72cc8e2216ee8f5057d032c071974bf3
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838931"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350812"
 ---
 # <a name="localize-clickonce-applications"></a>將 ClickOnce 應用程式當地語系化
 當地語系化是讓應用程式適合特定文化特性的程序， 這個程序包括將使用者介面 (UI) 文字翻譯成特定地區的語言、使用正確的日期和貨幣格式、調整表單上控制項的大小，以及視需要將控制項左右反轉。
@@ -46,7 +48,7 @@ ms.locfileid: "90838931"
 
  這個方法是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的預設值。 您不需要執行任何額外的工作，即可在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用這個方法。
 
- 若要搭配 *MageUI.exe* 使用這個方法，您必須在 *MageUI.exe* 中將應用程式的文化特性設為**中性**。 接著，您必須手動加入部署中所有附屬組件。 在 *MageUI.exe* 中，您可以使用應用程式資訊清單中 [檔案]**** 索引標籤上的 [填入]**** 按鈕新增附屬組件。
+ 若要搭配 *MageUI.exe* 使用這個方法，您必須在 *MageUI.exe* 中將應用程式的文化特性設為 **中性** 。 接著，您必須手動加入部署中所有附屬組件。 在 *MageUI.exe* 中，您可以使用應用程式資訊清單中 [檔案] 索引標籤上的 [填入] 按鈕新增附屬組件。
 
  這種方法的優點是會建立單一部署，並簡化了當地語系化部署的過程。 在執行階段，將會根據使用者 Windows 作業系統之預設文化特性而使用適當的附屬組件。 這種方法的缺點是不管應用程式要在用戶端電腦上安裝或更新，都會下載所有的附屬組件。 如果您的應用程式包含大量的字串，或是您的客戶使用慢速的網路連接，這種處理序可能會在應用程式更新期間影響效能。
 
@@ -56,9 +58,9 @@ ms.locfileid: "90838931"
 ## <a name="generate-one-deployment-for-each-culture"></a>為每種文化特性產生一個部署
  在這種部署策略中，您會產生多個部署。 在每個部署內，您只會加入特定文化特性所需的附屬組件，並且將部署標記為具有於該種文化特性。
 
- 若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 內使用這種方法，請將 [發佈]**** 索引標籤上的 [發佈語言]**** 屬性設定為所需的地區。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 將會自動包含選定地區所需的附屬組件，並且從部署中排除所有其他的附屬組件。
+ 若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 內使用這種方法，請將 [發佈] 索引標籤上的 [發佈語言] 屬性設定為所需的地區。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 將會自動包含選定地區所需的附屬組件，並且從部署中排除所有其他的附屬組件。
 
- 您可以使用 Microsoft 中的 *MageUI.exe* 工具來達成相同的目的 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 。 請使用應用程式資訊清單之 [檔案]**** 索引標籤上的 [填入] **** 按鈕，從應用程式目錄中排除所有其他附屬組件，然後再使用 *MageUI.exe* 為您的部署資訊清單設定 [名稱]**** 索引標籤上的 [文化特性]**** 欄位。 這些步驟不只會包含正確的附屬組件，也會將部署資訊清單內 `assemblyIdentity` 項目上的 `language` 屬性設定為對應的文化特性。
+ 您可以使用 Microsoft 中的 *MageUI.exe* 工具來達成相同的目的 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 。 請使用應用程式資訊清單之 [檔案] 索引標籤上的 [填入] 按鈕，從應用程式目錄中排除所有其他附屬組件，然後再使用 *MageUI.exe* 為您的部署資訊清單設定 [名稱] 索引標籤上的 [文化特性] 欄位。 這些步驟不只會包含正確的附屬組件，也會將部署資訊清單內 `assemblyIdentity` 項目上的 `language` 屬性設定為對應的文化特性。
 
  在發行應用程式後，您必須針對應用程式支援的每一個其他文化特性重複這個步驟。 發佈至不同的 Web 伺服器目錄或檔案共用目錄時都必須確認，因為每個應用程式資訊清單都會參考不同的附屬組件，而每個部署資訊清單將會使用不同的 `language` 屬性值。
 
@@ -78,7 +80,7 @@ ms.locfileid: "90838931"
 
 - 您可以透過程式設計方式在應用程式內設定 <xref:System.Threading.Thread.CurrentUICulture%2A> 屬性  (這個屬性必須在呼叫 <xref:System.Windows.Forms.Application.Run%2A> 方法之前設定)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [\<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-deployment.md)
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [全球化 Windows forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)

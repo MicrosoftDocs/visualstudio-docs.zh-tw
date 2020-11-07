@@ -1,5 +1,7 @@
 ---
 title: '&lt; (啟動載入器) 的字串 &gt; 元素 |Microsoft Docs'
+description: Strings 元素會定義產品名稱、封裝名稱和安裝錯誤訊息的當地語系化字串。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09608f4b182d72b0b86b69df7df0b37d019ddf45
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747416"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350474"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt; (啟動載入器) 的字串 &gt; 元素
 定義產品名稱、封裝名稱和安裝錯誤訊息的當地語系化字串。
@@ -42,7 +44,7 @@ ms.locfileid: "66747416"
 ## <a name="elements-and-attributes"></a>元素和屬性
  `Strings`元素是元素的子系 `Package` 。 它沒有任何屬性。
 
-## <a name="string"></a>String
+## <a name="string"></a>字串
  `String`元素是元素的子系 `Strings` 。 `Strings`元素可以有一或多個 `String` 元素。
 
  `String` 具有下列屬性。
@@ -73,5 +75,5 @@ ms.locfileid: "66747416"
 </Strings>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [\<Package> 元素](../deployment/package-element-bootstrapper.md)

@@ -1,5 +1,7 @@
 ---
 title: 針對 ClickOnce 部署進行疑難排解 |Microsoft Docs
+description: 使用這篇文章可協助您診斷及解決 ClickOnce 部署最常見的問題。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ff6f65b9c3e35825c867f39e119211174a4698
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae6f4098edf246a4f84533b37e4f9a684d932456
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235169"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350497"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>針對 ClickOnce 部署進行疑難排解
 本主題可協助您診斷及解決最常見的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署問題。
@@ -56,7 +58,7 @@ ms.locfileid: "87235169"
 
  描述用來將 ClickOnce 應用程式（使用 System. Deployment）進行偵錯工具的技術。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)
 - [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)

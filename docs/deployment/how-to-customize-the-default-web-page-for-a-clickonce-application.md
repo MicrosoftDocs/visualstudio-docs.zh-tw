@@ -1,5 +1,7 @@
 ---
 title: 自訂 ClickOnce 應用程式的預設網頁
+description: 瞭解當您將 ClickOnce 應用程式發行至 Web 時所產生的網頁，其中包含應用程式的名稱和其他資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ee4c1211840f17afe371961dea644372cd63efb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbda4558622c2e244071a218d3d5e42196460113
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382467"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351202"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>如何：自訂 ClickOnce 應用程式的預設 Web 頁面
 將 ClickOnce 應用程式發行至 Web 時，會自動產生一個網頁，並隨應用程式一起發行。 預設頁面包含應用程式的名稱，以及安裝應用程式的連結、安裝必要條件，或存取 MSDN 上的說明。
@@ -30,7 +32,7 @@ ms.locfileid: "85382467"
 > [!NOTE]
 > 您在頁面上看到的實際連結，取決於正在查看頁面的電腦，以及您要包含的必要條件。
 
- 預設的網頁名稱是 *Publish.htm*;您可以在 [ **專案設計**工具] 中變更名稱。 如需詳細資訊，請參閱 [如何：指定 ClickOnce 應用程式的發行頁面](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)。
+ 預設的網頁名稱是 *Publish.htm* ;您可以在 [ **專案設計** 工具] 中變更名稱。 如需詳細資訊，請參閱 [如何：指定 ClickOnce 應用程式的發行頁面](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)。
 
  只有在偵測到較新版本時，才會發行 *Publish.htm* 的網頁。
 
@@ -45,9 +47,9 @@ ms.locfileid: "85382467"
 
 3. 視需要自訂頁面並加以儲存。
 
-4. 選擇性。 若要防止 Visual Studio 覆寫您自訂的發行網頁，請在 [**發行選項**] 對話方塊中，取消核取 [在**每次發行之後自動產生部署網頁**]。
+4. 選擇性。 若要防止 Visual Studio 覆寫您自訂的發行網頁，請在 [ **發行選項** ] 對話方塊中，取消核取 [在 **每次發行之後自動產生部署網頁** ]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)
 - [How to: Install prerequisites with a ClickOnce application](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md) (如何：使用 ClickOnce 應用程式安裝必要元件)

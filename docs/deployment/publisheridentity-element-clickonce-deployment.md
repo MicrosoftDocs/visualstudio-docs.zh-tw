@@ -1,5 +1,7 @@
 ---
 title: '&lt;publisherIdentity &gt; 元素 (ClickOnce 部署) |Microsoft Docs'
+description: PublisherIdentity 元素包含簽署部署資訊清單之發行者的相關資訊。 簽署的資訊清單需要元素。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1eb4b67bfdca13c63480f3dde82004d87cd4a12a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62927535"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350682"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;&gt;ClickOnce 部署 (的 publisherIdentity 元素) 
 包含簽署此部署資訊清單之發行者的資訊。
@@ -47,7 +49,7 @@ ms.locfileid: "62927535"
 
 ## <a name="property-valuereturn-value"></a>屬性值/傳回值
 
-## <a name="exceptions"></a>例外狀況
+## <a name="exceptions"></a>例外
 
 ## <a name="remarks"></a>備註
 

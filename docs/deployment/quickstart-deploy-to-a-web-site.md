@@ -1,5 +1,7 @@
 ---
 title: 發行至網站
+description: 瞭解如何使用發佈工具，從 Visual Studio 將 ASP.NET、ASP.NET Core、.NET Core 和 Python 應用程式發佈至網站。
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89d8acfa4bf0f5dd9f1f387389b9f7f523c153a7
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 027350b6a51cae5e7be88643624adc6955de91e4
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036401"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350695"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>使用 Visual Studio 將 Web 應用程式發行至網站
 
-您可以使用 [發行]**** 工具，從 Visual Studio 將 ASP.NET、ASP.NET Core、.NET Core 及 Python 應用程式發行至網站。 針對 Node.js，支援這些步驟但使用者介面不同。
+您可以使用 [發行] 工具，從 Visual Studio 將 ASP.NET、ASP.NET Core、.NET Core 及 Python 應用程式發行至網站。 針對 Node.js，支援這些步驟但使用者介面不同。
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
@@ -28,13 +30,13 @@ ms.locfileid: "90036401"
 
 ## <a name="publish-to-a-web-site"></a>發行至網站
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]**** (或使用 [建置]**** > [發行]**** 功能表項目)。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行] (或使用 [建置] > [發行] 功能表項目)。
 
     ![方案總管的專案內容功能表上的 [發行] 命令](../deployment/media/quickstart-publish.png "選擇 [發行]")
 
-1. 如果您之前已設定任何發行設定檔，[發行]**** 窗格會隨即出現。 選取 [新增]。
+1. 如果您之前已設定任何發行設定檔，[發行] 窗格會隨即出現。 選取 [新增]。
 
-1. 在 [ **發行** ] 視窗中，選擇 [ **WEB 伺服器 (IIS) **。
+1. 在 [ **發行** ] 視窗中，選擇 [ **WEB 伺服器 (IIS)** 。
 
     ![選擇發佈目標](../deployment/media/quickstart-publish-iis.png "選擇 [IIS、FTP 等等]。")
 
@@ -42,7 +44,7 @@ ms.locfileid: "90036401"
 
     ![選擇部署方法](../deployment/media/quickstart-publish-iis-web-deploy.png "選擇 [IIS、FTP 等等]。")
 
-1. 設定 publish 方法的必要設定，然後選取 **[完成]**。 
+1. 設定 publish 方法的必要設定，然後選取 **[完成]** 。 
 
     ![Web Deploy 連接詳細資料](../deployment/media/quickstart-publish-iis-web-deploy-connection-details.png)
 
@@ -50,7 +52,7 @@ ms.locfileid: "90036401"
 
    如果您需要針對 IIS 上的 ASP.NET Core 進行疑難排解的協助，請參閱 [Azure App Service 和 IIS 上的 ASP.NET Core 疑難排解](/aspnet/core/test/troubleshoot-azure-iis)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 在本快速入門中，您已了解如何使用 Visual Studio 建立發行設定檔。 您也可以匯入發行設定來設定發行設定檔。
 

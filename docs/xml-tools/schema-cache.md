@@ -1,5 +1,7 @@
 ---
 title: XML 編輯器架構快取
+description: 瞭解 XML 編輯器所提供的架構快取，其中包含用於 IntelliSense 和 XML 檔驗證的標準 XML 架構。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
@@ -8,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40781a5249d9b69df5f41f863f3d36ac6a119645
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3eaab4379d744bae0032e51995e5bc1b8e76423
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592486"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351371"
 ---
 # <a name="schema-cache"></a>結構描述快取
 
 XML 編輯器提供位於 *%VSInstallDir%\xml\Schemas* 目錄中的架構快取。 架構快取對於您電腦上的所有使用者都是通用的，而且包含用於 IntelliSense 和 XML 檔驗證的標準 XML 架構。
 
-XML 編輯器也可以尋找位於方案中的架構、[檔**屬性**] 視窗的 [**架構**] 欄位中指定的架構，以及和屬性所識別的架構 `xsi:schemaLocation` `xsi:noNamespaceSchemaLocation` 。
+XML 編輯器也可以尋找位於方案中的架構、[檔 **屬性** ] 視窗的 [ **架構** ] 欄位中指定的架構，以及和屬性所識別的架構 `xsi:schemaLocation` `xsi:noNamespaceSchemaLocation` 。
 
 下表說明使用 XML 編輯器安裝的架構。
 
@@ -30,7 +32,7 @@ XML 編輯器也可以尋找位於方案中的架構、[檔**屬性**] 視窗的
 | *msbuild.xsd* | MSBuild 製作檔案的架構 `http://schemas.microsoft.com/developer/msbuild/2003` 。 |
 | *msdata.xsd* | <xref:System.Data.DataSet> 類別所加入之 XSD 附註的結構描述 urn:schemas-microsoft-com:xml-msdata。 |
 | *msxsl.xsd* | Microsoft XSLT 指令碼區塊擴充程式的結構描述 urn:schemas-microsoft-com:xslt。 |
-| *SnippetFormat.xsd* | 程式碼片段 XML 檔案的結構描述。 如需範例，請參閱 *%VSInstallDir%\VC # \Expansions*。 |
+| *SnippetFormat.xsd* | 程式碼片段 XML 檔案的結構描述。 如需範例，請參閱 *%VSInstallDir%\VC # \Expansions* 。 |
 | *Soap1.1.xsd* | 簡易物件存取通訊協定的架構 (SOAP) 1.1 `http://schemas.xmlsoap.org/soap/envelope/` 。 |
 | *Soap1.2.xsd* | 簡易物件存取通訊協定 1.2 的結構描述。 |
 | *SiteMapSchema.xsd* | ASP.NET 網站地圖 XML 檔案的架構 `http://schemas.microsoft.com/AspNet/SiteMap-File-1.0` 。 |
@@ -50,7 +52,7 @@ XML 編輯器也可以尋找位於方案中的架構、[檔**屬性**] 視窗的
 > [!NOTE]
 > 因為結構描述快取目錄對您的電腦是通用的，所以在這裡您應該僅加入標準的、且對您電腦上可能建立之所有 Visual Studio 專案皆有用的結構描述。
 
-XML 編輯器亦支援結構描述快取目錄中任意數目的結構描述目錄檔案。 結構描述目錄可指向您通常想要編輯器瞭解之結構描述的其他位置。 *Catalog .xsd*檔會定義目錄檔案的格式，並包含在架構快取目錄中。 *catalog.xml*檔案是預設目錄，它包含 *% VSInstallDir%* 中其他架構的連結。 以下是 *catalog.xml* 檔案的取樣：
+XML 編輯器亦支援結構描述快取目錄中任意數目的結構描述目錄檔案。 結構描述目錄可指向您通常想要編輯器瞭解之結構描述的其他位置。 *Catalog .xsd* 檔會定義目錄檔案的格式，並包含在架構快取目錄中。 *catalog.xml* 檔案是預設目錄，它包含 *% VSInstallDir%* 中其他架構的連結。 以下是 *catalog.xml* 檔案的取樣：
 
 ```xml
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">
@@ -112,11 +114,11 @@ XML 編輯器亦支援結構描述快取目錄中任意數目的結構描述目�
 
 1. 請從 [工具] 功能表上，選取 [選項]。
 
-2. 展開 [ **文字編輯器**]，展開 [ **XML**]，然後按一下 [ **其他**]。
+2. 展開 [ **文字編輯器** ]，展開 [ **XML** ]，然後按一下 [ **其他** ]。
 
-3. 按一下 [**架構**] 欄位上的 [**流覽]** 按鈕。
+3. 按一下 [ **架構** ] 欄位上的 [ **流覽]** 按鈕。
 
-4. 選取架構快取的資料夾，然後按一下 **[確定]**。
+4. 選取架構快取的資料夾，然後按一下 **[確定]** 。
 
 ### <a name="to-add-another-directory-of-common-schemas"></a>加入通用結構描述的其他目錄
 
@@ -124,10 +126,10 @@ XML 編輯器亦支援結構描述快取目錄中任意數目的結構描述目�
 
 2. 加入指向其他結構描述目錄的新 `<Catalog href="..."/>` 項目。
 
-3. 儲存您的變更。
+3. 儲存變更。
 
    目錄會自動重新載入。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [XML 編輯器](../xml-tools/xml-editor.md)

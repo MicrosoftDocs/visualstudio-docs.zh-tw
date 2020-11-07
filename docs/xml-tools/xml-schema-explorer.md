@@ -1,5 +1,7 @@
 ---
 title: XML 結構描述總管
+description: 瞭解與 Visual Studio 和 XML 編輯器整合之 XML 架構瀏覽器的功能。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
@@ -8,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c6415fed131abc5a102f6ec15c69e33f21fd68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31edea44741249c5d75a53e291c766824dc3b8ea
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592343"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351293"
 ---
 # <a name="xml-schema-explorer"></a>XML 結構描述總管
 
-**Xml 架構瀏覽器**已與 MICROSOFT VISUAL STUDIO 和 xml 編輯器整合，可讓您使用 xml 架構定義語言 (XSD) 架構。 當您開啟 XML 架構檔案時，[ **架構集** ] 節點會出現在 **Xml 架構瀏覽器**中。 所有包含、匯入或重新定義之目標檔案的架構，以及透過或語句所參考的任何檔案， `include` `import` 也會出現在 **XML 架構瀏覽器**中。
+**Xml 架構瀏覽器** 已與 MICROSOFT VISUAL STUDIO 和 xml 編輯器整合，可讓您使用 xml 架構定義語言 (XSD) 架構。 當您開啟 XML 架構檔案時，[ **架構集** ] 節點會出現在 **Xml 架構瀏覽器** 中。 所有包含、匯入或重新定義之目標檔案的架構，以及透過或語句所參考的任何檔案， `include` `import` 也會出現在 **XML 架構瀏覽器** 中。
 
-**XML 架構瀏覽器**可讓您執行下列作業：
+**XML 架構瀏覽器** 可讓您執行下列作業：
 
 - 取得結構描述設定的快速概觀。
 
@@ -35,18 +37,18 @@ ms.locfileid: "75592343"
 
 - 針對全域項目產生範例 XML。
 
-**XML 架構瀏覽器**會透過樹狀檢視提供架構設定的階層視圖。 **XML 架構瀏覽器**也提供搜尋、篩選、流覽和排序。 若要存取 **XML 架構瀏覽器**，請執行下列其中一項：
+**XML 架構瀏覽器** 會透過樹狀檢視提供架構設定的階層視圖。 **XML 架構瀏覽器** 也提供搜尋、篩選、流覽和排序。 若要存取 **XML 架構瀏覽器** ，請執行下列其中一項：
 
 - 如果您在 [ [開始] 視圖](../xml-tools/start-view.md)上，請按一下 [ **XML 架構瀏覽器** ] 連結。
 
-- 如果您是在 [圖形視圖](../xml-tools/graph-view.md) 或 [內容模型視圖](../xml-tools/content-model-view.md) 上，而且您的工作區中有節點，請使用內容 (以滑鼠右鍵按一下 [) ] 功能表，以選取 [ **XML 架構瀏覽器**]。
+- 如果您是在 [圖形視圖](../xml-tools/graph-view.md) 或 [內容模型視圖](../xml-tools/content-model-view.md) 上，而且您的工作區中有節點，請使用內容 (以滑鼠右鍵按一下 [) ] 功能表，以選取 [ **XML 架構瀏覽器** ]。
 
-- 您也可以從 [ **View** ] 功能表中選取 [ **XML 架構瀏覽器**]。
+- 您也可以從 [ **View** ] 功能表中選取 [ **XML 架構瀏覽器** ]。
 
-- 您可以從具有與 *.xsd*檔案相關聯之 Visual Basic xml 常值的 .vb 檔案，存取**Xml 架構瀏覽器** *。* 若要查看 **Xml 架構瀏覽器**中的架構集，請以滑鼠右鍵按一下 xml 常值或 xml 命名空間匯入中的 xml 節點，然後選取 [ **在架構瀏覽器中顯示** ] 命令。 如需詳細資訊，請參閱 [xml 常值與 Xml 架構瀏覽器的整合](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)。
+- 您可以從具有與 *.xsd* 檔案相關聯之 Visual Basic xml 常值的 .vb 檔案，存取 **Xml 架構瀏覽器** *。* 若要查看 **Xml 架構瀏覽器** 中的架構集，請以滑鼠右鍵按一下 xml 常值或 xml 命名空間匯入中的 xml 節點，然後選取 [ **在架構瀏覽器中顯示** ] 命令。 如需詳細資訊，請參閱 [xml 常值與 Xml 架構瀏覽器的整合](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)。
 
 ## <a name="tree-view"></a>樹狀目錄檢視
-**XML 架構瀏覽器**會在樹狀結構中顯示預先編譯的架構集資訊。 此樹狀會依照下列方式組織：
+**XML 架構瀏覽器** 會在樹狀結構中顯示預先編譯的架構集資訊。 此樹狀會依照下列方式組織：
 
 - 最上層是結構描述設定節點。
 
@@ -78,6 +80,6 @@ ms.locfileid: "75592343"
 
  您無法拖放本機節點或匯入。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：從 XML 架構瀏覽器將節點加入至工作區](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

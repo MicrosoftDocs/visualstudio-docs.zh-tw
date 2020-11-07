@@ -1,5 +1,7 @@
 ---
 title: XML 編輯器和架構設計工具
+description: 瞭解 Visual Studio 中的工具，以使用 XML、XSLT 及 XML 架構，包括 XML 編輯器、XML 架構設計工具和 XSLT 偵錯工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 f1_keywords:
@@ -32,16 +34,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e763fa3475f26b9742ea5fb7061978e711eb22ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc8cac3e16e06c23d0d51ee4483bcf5fb8abfb05
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816419"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351280"
 ---
 # <a name="overview-of-xml-tools-in-visual-studio"></a>Visual Studio 中的 XML 工具總覽
 
-*可延伸標記語言 (XML)  (XML) * 是提供描述資料格式的標記語言。 XML 會使用相關聯的樣式表單（例如可擴充樣式表單語言 (XSL) 和級聯樣式表 (CSS) ）來分隔資料及其呈現方式。 Visual Studio 包括一些工具及功能，讓使用 XML、XSLT 及 XML 結構描述更為容易。
+*可延伸標記語言 (XML)  (XML)* 是提供描述資料格式的標記語言。 XML 會使用相關聯的樣式表單（例如可擴充樣式表單語言 (XSL) 和級聯樣式表 (CSS) ）來分隔資料及其呈現方式。 Visual Studio 包括一些工具及功能，讓使用 XML、XSLT 及 XML 結構描述更為容易。
 
 ## <a name="xml-editor"></a>XML 編輯器
 
@@ -72,7 +74,7 @@ Visual Studio 支援 [調試 XSLT 樣式表單](../xml-tools/debugging-xslt.md)�
 > [!NOTE]
 > XSLT 偵錯工具僅適用于 Enterprise edition 的 Visual Studio。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:System.Xml?displayProperty=fullName>
 - [XSLT 轉換](/dotnet/standard/data/xml/xslt-transformations)

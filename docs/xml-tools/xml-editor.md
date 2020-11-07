@@ -1,5 +1,7 @@
 ---
 title: XML 編輯器
+description: 瞭解 Visual Studio 中以文字編輯器為基礎的 XML 編輯器，並包含 XML 語言的其他支援。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 550dcb0cc3299a4a1b884d3141761c39977ce088
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 1bd1cac1c688bf2efc0a4c08797d72eabf0133e2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713538"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351436"
 ---
 # <a name="xml-editor"></a>XML 編輯器
 
@@ -40,7 +42,7 @@ XML 編輯器包含下列功能：
 
 - 與 [XML 架構瀏覽器](../xml-tools/xml-schema-explorer.md)整合。 這會提供 XML 架構的階層視圖。
 
-XML 編輯器是針對已知的副檔名（例如 *.xml*、 *.xsd*、 *.xsl*和 *.config*）叫用。如果檔案似乎包含 XML，也會在任何未知的副檔名上叫用它。
+XML 編輯器是針對已知的副檔名（例如 *.xml* 、 *.xsd* 、 *.xsl* 和 *.config* ）叫用。如果檔案似乎包含 XML，也會在任何未知的副檔名上叫用它。
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
@@ -54,7 +56,7 @@ XML 編輯器是針對已知的副檔名（例如 *.xml*、 *.xsd*、 *.xsl*和 
 
 [XSLT 階層工具](../xml-tools/walkthrough-using-xslt-hierarchy.md)可讓您在包含的樣式表單及/或內建範本規則中加入中斷點。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [XML 編輯器選項-格式設定](../ide/reference/options-text-editor-xml-formatting.md)
 - [XML 編輯器選項-其他](../ide/reference/options-text-editor-xml-miscellaneous.md)

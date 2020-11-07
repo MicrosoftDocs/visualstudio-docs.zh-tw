@@ -1,5 +1,7 @@
 ---
 title: 使用 XML 資料時的安全性考量
+description: 瞭解在 XML 編輯器或 XSLT 偵錯工具中使用 XML 資料時的安全性考慮。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e18d2c2e47c3cc1f7e1b3be0112e49e2710e45c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d9e98e18e3e01f53afa6b0a9ea3bdec94f2186f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815834"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351345"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>使用 XML 資料時的安全性考慮
 
@@ -23,7 +25,7 @@ ms.locfileid: "85815834"
 
 XML 編輯器是以 Visual Studio 文字編輯器為基礎。 它依賴 <xref:System.Xml> 及 <xref:System.Xml.Xsl> 類別來處理許多 XML 處理序。
 
-- 會在新的應用程式定義域中執行 XSLT 轉換。 XSLT 轉換為 *沙箱*化;也就是說，您電腦的代碼啟用安全性原則會用來根據 XSLT 樣式表單的位置來決定限制的許可權。 例如，來自網際網路位置的樣式表具有限制最嚴格的使用權限，但是複製到硬碟的樣式表則可以「完全信任」使用權限執行。
+- 會在新的應用程式定義域中執行 XSLT 轉換。 XSLT 轉換為 *沙箱* 化;也就是說，您電腦的代碼啟用安全性原則會用來根據 XSLT 樣式表單的位置來決定限制的許可權。 例如，來自網際網路位置的樣式表具有限制最嚴格的使用權限，但是複製到硬碟的樣式表則可以「完全信任」使用權限執行。
 
 - <xref:System.Xml.Xsl.XslCompiledTransform> 類別用於將 XSLT 編譯為 Microsoft Intermediate Language，以在執行期間獲得更快的效能。
 
@@ -41,6 +43,6 @@ XSLT 偵錯工具會使用 Visual Studio Managed 偵錯引擎、<xref:System.Xml
 
 - Managed 偵錯引擎會載入 XSLT 運算式評估工具。 Managed 偵錯引擎會假設所有的程式碼都是從使用者的本機電腦上執行。 相應地，<xref:System.Xml.Xsl.XslCompiledTransform> 類別會將 XSLT 檔案下載到使用者的本機電腦。 藉由使用限制的使用權限在新的應用程式定義域中執行所有的 XSLT 轉換，可降低執行權限提升的可能性。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [應用程式域](/dotnet/framework/app-domains/application-domains)

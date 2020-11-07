@@ -1,5 +1,7 @@
 ---
 title: '&lt;啟動載入器 &gt;)  (RelatedProducts 元素 |Microsoft Docs'
+description: RelatedProducts 元素會定義相依于或包含在目前產品中的其他產品。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42756b21e631ec14e9c590833f6f0e95a317cc22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ac9f84fa22526ed03d7a2e9b201cc9afc2f476d
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747463"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350565"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;啟動載入器 &gt;)  (RelatedProducts 元素
 `RelatedProducts`元素會定義相依于或包含在目前產品中的其他產品。
@@ -57,7 +59,7 @@ ms.locfileid: "66747463"
 
  `DependsOnProduct` 具有下列屬性。
 
-|屬性|描述|
+|屬性|說明|
 |---------------|-----------------|
 |`Code`|所含產品的代碼名稱，如元素的屬性所指定 `ProductCode` `Product` 。 如需詳細資訊，請參閱[ \<Product> 元素](../deployment/product-element-bootstrapper.md)。|
 
@@ -69,7 +71,7 @@ ms.locfileid: "66747463"
 
  `IncludesProduct` 具有下列屬性。
 
-|屬性|描述|
+|屬性|說明|
 |---------------|-----------------|
 |`Code`|所含產品的代碼名稱，如元素的屬性所指定 `ProductCode` `Product` 。 如需詳細資訊，請參閱[ \<Product> 元素](../deployment/product-element-bootstrapper.md)。|
 
@@ -82,5 +84,5 @@ ms.locfileid: "66747463"
 </RelatedProducts>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [\<Product> 元素](../deployment/product-element-bootstrapper.md)
