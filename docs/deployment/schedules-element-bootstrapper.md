@@ -1,5 +1,7 @@
 ---
 title: '&lt;排程器元素 (啟動載入器 &gt;) |Microsoft Docs'
+description: Schedule 元素包含 Schedule 元素，這些元素會定義命令專案所定義的命令應執行的特定時間。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f6e4ae90dbd36dab4f4df7f72d5ecf57ee04b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f84727647f198c25175139412d3e8509e73fe1c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62927328"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349356"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;排程器元素 (啟動載入器 &gt;) 
 `Schedules`元素包含 `Schedule` 元素，這些元素 `Command` 會定義應該執行元素所定義之命令的特定時間。
@@ -62,6 +64,6 @@ ms.locfileid: "62927328"
 ## <a name="afterpackage"></a>AfterPackage
  `AfterPackage`元素會指示安裝程式在安裝指定的封裝之後，執行命令。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [\<Product> 元素](../deployment/product-element-bootstrapper.md)
 - [產品和套件架構參考](../deployment/product-and-package-schema-reference.md)

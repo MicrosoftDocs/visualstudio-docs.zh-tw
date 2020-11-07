@@ -1,6 +1,8 @@
 ---
 title: FxCop 規則埠狀態
 ms.date: 05/21/2019
+description: 瞭解已移植到 Visual Studio 中 FxCop 分析器的靜態程式碼分析規則。 查看移植更新上的移植規則和資源。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 945b26158da4c4c7788570db0c565ebbcfc2b460
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: cedd96036a6d0725dbde5f0b11400a20360a20ec
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658577"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348941"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則埠狀態
 
@@ -23,11 +25,11 @@ ms.locfileid: "91658577"
 
 ## <a name="ported-rules"></a>移植的規則
 
-Roslyn-分析器存放庫中自動產生的 [檔頁面](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) ，具有已移植至 FxCop 分析器的最新規則清單。 該頁面也有其他資訊，例如規則是否預設為啟用，以及是否有相關聯的 *程式碼修正*。  ([程式碼修正](../ide/quick-actions.md) 是在 Visual Studio 的燈泡圖示功能表中，可用的單鍵修正。 ) 
+Roslyn-分析器存放庫中自動產生的 [檔頁面](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) ，具有已移植至 FxCop 分析器的最新規則清單。 該頁面也有其他資訊，例如規則是否預設為啟用，以及是否有相關聯的 *程式碼修正* 。  ([程式碼修正](../ide/quick-actions.md) 是在 Visual Studio 的燈泡圖示功能表中，可用的單鍵修正。 ) 
 
 從這個頁面的日期開始，已移植至 [fxcop 分析器](install-fxcop-analyzers.md) 的 fxcop 規則清單包括：
 
-規則識別碼 | 標題
+規則識別碼 | Title
 --------|---------
 [CA1000](/dotnet/fundamentals/code-analysis/quality-rules/ca1000) | 不要在泛型類型上宣告靜態成員
 [CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001) | 具有可處置欄位的類型應該為可處置
@@ -200,6 +202,6 @@ CA5377 | 使用容器層級存取原則
 CA5379 | 不要使用弱式金鑰衍生函數演算法
 CA9999 | 分析器版本不符
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [CodeAnalysis. 將 microsoft.codeanalysis.fxcopanalyzers 規則](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)

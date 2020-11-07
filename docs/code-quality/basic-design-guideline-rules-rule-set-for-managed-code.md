@@ -1,6 +1,8 @@
 ---
 title: 適用於 Managed 程式碼的基本設計方針規則規則集
 ms.date: 11/04/2016
+description: 瞭解 Visual Studio 中的基本設計方針規則規則集，這可協助讓程式碼更容易瞭解和使用。 請參閱規則描述。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2bf7542d94b16042df27ec8b780cc93c9061d6e8
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: abf11966f029d6c4ec66ce295332889a9d74c359
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659123"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348401"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的基本設計方針規則規則集
 
@@ -23,7 +25,7 @@ ms.locfileid: "91659123"
 
 下表說明 Microsoft 基本設計指導方針規則規則集中的所有規則。
 
-|規則|描述|
+|規則|說明|
 |----------|-----------------|
 |[CA1000](/dotnet/fundamentals/code-analysis/quality-rules/ca1000)|不要在泛型類型上宣告靜態成員|
 |[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|具有可處置欄位的類型應該為可處置|

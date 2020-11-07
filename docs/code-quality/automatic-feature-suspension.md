@@ -1,6 +1,8 @@
 ---
 title: 自動功能暫停
 ms.date: 11/04/2016
+description: 瞭解 Visual Studio 如何減少分析範圍、關閉垃圾收集低延遲模式，以及在系統記憶體有限時清除快取。
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - live code analysis
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 976e676cda09d50e34acb88a12551b1531595888
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 12b15ed8aa02e53841b85245350735258e7ec11d
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508375"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348537"
 ---
 # <a name="automatic-feature-suspension"></a>自動功能暫停
 
@@ -65,7 +67,7 @@ ms.locfileid: "89508375"
 > [!NOTE]
 > 自動功能暫止警告只會在每個解決方案上進行一次，而不會以每個會話為基礎。 這表示，如果您從 Visual Basic 切換至 Visual c # (或反向) ，並在另一個記憶體不足的情況下執行，您可能會收到另一個自動功能暫停警告。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：設定 managed 程式碼的即時程式碼分析範圍](./configure-live-code-analysis-scope-managed-code.md)
 - [Fundamentals of Garbage Collection (記憶體回收的基本概念)](/dotnet/standard/garbage-collection/fundamentals)

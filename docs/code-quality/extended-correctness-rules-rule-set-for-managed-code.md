@@ -1,6 +1,8 @@
 ---
 title: 適用於 Managed 程式碼的擴充正確性規則規則集
 ms.date: 11/04/2016
+description: 瞭解 Visual Studio 中的擴充正確性規則規則集，這對 COM 互通性和行動應用程式很有用。 請參閱規則描述。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00295a8485fa80d2aa6cf1977e014b191b28ba7e
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 6aa97d246ac767cc3c88c845298e2db61edcd35f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658603"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348992"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的擴充正確性規則規則集
 
@@ -23,7 +25,7 @@ Microsoft 擴充正確性規則規則集包含 [基本正確性規則](../code-q
 
 下表說明 Microsoft 擴充正確性規則規則集中的所有規則。
 
-|規則|描述|
+|規則|說明|
 |----------|-----------------|
 |[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|具有可處置欄位的類型應該為可處置|
 |[CA1009](../code-quality/ca1009.md)|事件處理常式必須正確宣告|

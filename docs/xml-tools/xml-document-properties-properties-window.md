@@ -1,5 +1,7 @@
 ---
 title: XML 文件屬性 (屬性視窗)
+description: 瞭解屬性視窗中的 XML 文件屬性，以提供 XML 編輯器中使用中檔的基本資訊。
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b21f4435737597136e1ac4a4dd8651decaf4c65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31098083383b1669e0fe79423c212f1f38208acc
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592421"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350227"
 ---
 # <a name="xml-document-properties-properties-window"></a>XML 文件屬性，屬性視窗
 
@@ -28,7 +30,7 @@ ms.locfileid: "75592421"
 
 **輸入**
 
-與 XSLT 樣式表相關聯的輸入文件。 它是由**啟動 xslt**命令使用，例如， **XML**  >  **啟動 xslt 而不進行調試**。 您可以使用 [ **流覽 (]**) 按鈕來選取檔。
+與 XSLT 樣式表相關聯的輸入文件。 它是由 **啟動 xslt** 命令使用，例如， **XML**  >  **啟動 xslt 而不進行調試** 。 您可以使用 [ **流覽 (]** ) 按鈕來選取檔。
 
 只有在編輯器中開啟 XSLT 檔案時，才會顯示此屬性。
 
@@ -50,6 +52,6 @@ ms.locfileid: "75592421"
 
 編輯 XSLT 檔案時，這個屬性可用來指定當選取 [ **啟動 Xslt 調試** 程式或 **啟動 xslt 但不使用調試** 程式] 命令時，應該使用不同的樣式表單。 例如，當您編輯的樣式表單包含在父樣式表單中時，您可能會想要這樣做。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [XML 編輯器](../xml-tools/xml-editor.md)

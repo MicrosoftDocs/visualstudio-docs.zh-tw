@@ -1,5 +1,7 @@
 ---
 title: '&lt;啟動載入器 &gt;)  (PackageFiles 元素 |Microsoft Docs'
+description: 瞭解 PackageFiles 元素，其中包含 PackageFile 元素，這些元素會定義命令元素所執行的安裝套件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60d6491101bef33f1d8c91d4f7640be9d7277da0
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747517"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349538"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;啟動載入器 &gt;)  (PackageFiles 元素
 `PackageFiles`元素包含 `PackageFile` 元素，這些元素會定義作為元素結果執行的安裝套件 `Command` 。
@@ -73,7 +75,7 @@ ms.locfileid: "66747517"
 </PackageFiles>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [\<Product> 元素](../deployment/product-element-bootstrapper.md)
 - [\<Package> 元素](../deployment/package-element-bootstrapper.md)
 - [產品和套件架構參考](../deployment/product-and-package-schema-reference.md)

@@ -1,5 +1,6 @@
 ---
 title: " (ClickOnce 應用程式建立檔案關聯) "
+description: 瞭解如何將 ClickOnce 應用程式與一或多個副檔名產生關聯，讓應用程式在使用者開啟這類檔案時啟動。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcca57415eae6480286f457755b996f22cb6507a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 21f6923185dbfa79fbe18b7b5c6a5d824a5a2cfe
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809777"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350032"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>How to: Create file associations for a ClickOnce application (如何：建立 ClickOnce 應用程式的檔案關聯)
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式可與一個或多個副檔名相關聯，如此一來，當使用者開啟這些類型的檔案時，就會自動啟動應用程式。 將副檔名支援新增至 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式很簡單。
@@ -48,13 +49,13 @@ ms.locfileid: "90809777"
 
 5. 如果您想要將多個檔案類型與應用程式建立關聯，請新增其他 `fileAssociation` 元素。 請注意， `progid` 每個屬性都應該不同。
 
-6. 當您完成應用程式資訊清單之後，請重新簽署資訊清單。 您可以使用 *Mage.exe*從命令列進行這項作業。
+6. 當您完成應用程式資訊清單之後，請重新簽署資訊清單。 您可以使用 *Mage.exe* 從命令列進行這項作業。
 
     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`
 
     如需詳細資訊，請參閱 [Mage.exe (資訊清單產生和編輯工具) ](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [\<fileAssociation> 元素](../deployment/fileassociation-element-clickonce-application.md)
 - [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)
 - [Mage.exe (資訊清單產生和編輯工具) ](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

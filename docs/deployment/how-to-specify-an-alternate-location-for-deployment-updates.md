@@ -1,5 +1,6 @@
 ---
 title: 指定部署更新的替代位置
+description: 瞭解如何針對您的部署資訊清單中的 ClickOnce 應用程式，指定更新的替代位置。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 096e962f9e334b3db9819973a0fbd82d636f7d6f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 698ca2c97bcc4699d2c836eff9fefa371481c9cc
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808746"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349642"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>如何：指定部署更新的替代位置
 您可以 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 從 CD 或檔案共用一開始就安裝您的應用程式，但應用程式必須檢查網路上的定期更新。 您可以在部署資訊清單中指定更新的替代位置，讓您的應用程式可以在初始安裝之後，從 Web 更新自己的位置。
@@ -37,9 +38,9 @@ ms.locfileid: "90808746"
 
 2. 在 [檔案 **] 功能表上，選擇 [** **開啟** ] 以開啟應用程式的部署資訊清單。
 
-3. 選取 [部署選項]**** 索引標籤。
+3. 選取 [部署選項] 索引標籤。
 
-4. 在名為 [ **啟動位置**] 的文字方塊中，輸入將包含應用程式更新部署資訊清單之目錄的 URL。
+4. 在名為 [ **啟動位置** ] 的文字方塊中，輸入將包含應用程式更新部署資訊清單之目錄的 URL。
 
 5. 儲存部署資訊清單。
 
@@ -54,14 +55,14 @@ ms.locfileid: "90808746"
 3. 儲存檔案。
 
    > [!NOTE]
-   > 您現在需要使用 *Mage.exe*重新簽署檔案。 如需詳細資訊，請參閱 [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
+   > 您現在需要使用 *Mage.exe* 重新簽署檔案。 如需詳細資訊，請參閱 [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
 
 ## <a name="net-framework-security"></a>.NET Framework 安全性
  如果您是從離線媒體（如 CD）安裝您的應用程式，且電腦已上線，則會 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 先檢查部署資訊清單中的標記所指定的 URL， `<deploymentProvider>` 以判斷更新位置是否包含較新版本的應用程式。 如果有，則會 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 直接從該處安裝應用程式，而不是從初始安裝目錄，而 common language runtime (CLR) 會使用來決定您應用程式的信任層級 `<deploymentProvider>` 。 如果電腦已離線或無法連線 `<deploymentProvider>` ，則會 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 從 CD 安裝，且 CLR 會根據安裝點來授與信任; 若為 CD 安裝，這表示您的應用程式會收到完全信任。 所有後續的更新都會繼承該信任層級。
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]使用的所有應用程式都 `<deploymentProvider>` 應該在其應用程式資訊清單中明確宣告所需的許可權，讓應用程式不會在不同的電腦上收到不同的信任層級。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)
 - [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)

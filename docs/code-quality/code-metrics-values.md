@@ -1,6 +1,8 @@
 ---
 title: 計算程式碼度量
 ms.date: 11/02/2018
+description: 瞭解迴圈複雜度、類別結合，以及其他 Visual Studio 程式碼度量。 瞭解計量如何追蹤開發進度及找出風險。
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.codemetrics.toolwindow
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 796d8aa15aa3612b140917ccfa9db7663c0b0ad3
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: a5e7ee628f5a48f573afed9753f4fad17f85e33a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599461"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348641"
 ---
 # <a name="code-metrics-values"></a>程式碼度量值
 
@@ -34,9 +36,9 @@ ms.locfileid: "89599461"
 
 下列清單顯示 Visual Studio 計算的程式碼度量結果：
 
-- 可**維護性索引**-計算介於0和100之間的索引值，表示維護程式碼的相對便利性。 高價值表示較佳的可維護性。 色彩編碼分級可以用來快速找出程式碼中的問題點。 綠色的評等介於20到100之間，表示程式碼具有良好的可維護性。 黃色的評等介於10和19之間，表示程式碼為適度維護。 紅色評等是介於0到9之間的評等，表示低維護性。 如需詳細資訊，請參閱可 [維護性索引範圍和意義](/archive/blogs/codeanalysis/maintainability-index-range-and-meaning) 的 blog 文章。
+- 可 **維護性索引** -計算介於0和100之間的索引值，表示維護程式碼的相對便利性。 高價值表示較佳的可維護性。 色彩編碼分級可以用來快速找出程式碼中的問題點。 綠色的評等介於20到100之間，表示程式碼具有良好的可維護性。 黃色的評等介於10和19之間，表示程式碼為適度維護。 紅色評等是介於0到9之間的評等，表示低維護性。 如需詳細資訊，請參閱可 [維護性索引範圍和意義](/archive/blogs/codeanalysis/maintainability-index-range-and-meaning) 的 blog 文章。
 
-- 迴圈**複雜度**-測量程式碼的結構複雜度。 它是藉由計算程式流程中的不同程式碼路徑數目來建立。 具有複雜控制流程的程式需要進行更多測試，才能達到良好的程式碼涵蓋範圍，且較不容易維護。 如需詳細資訊，請參閱 [適用于圈複雜度的維琪百科專案](https://wikipedia.org/wiki/Cyclomatic_complexity)。
+- 迴圈 **複雜度** -測量程式碼的結構複雜度。 它是藉由計算程式流程中的不同程式碼路徑數目來建立。 具有複雜控制流程的程式需要進行更多測試，才能達到良好的程式碼涵蓋範圍，且較不容易維護。 如需詳細資訊，請參閱 [適用于圈複雜度的維琪百科專案](https://wikipedia.org/wiki/Cyclomatic_complexity)。
 
 - **繼承深度** -表示繼承自另一個類別的不同類別數目，並返回基類。 繼承深度類似于類別結合，因為基類的變更可能會影響其任何繼承的類別。 這個數位愈大，繼承越深入，而基類修改可能會導致中斷性變更。 針對繼承深度，較低的值是良好的，且較高的值是不正確的。
 
@@ -46,11 +48,11 @@ ms.locfileid: "89599461"
 
 - **原始程式碼的行** 數-指出原始程式檔中出現的原始程式程式碼確切數目，包括空白行。 從 Visual Studio 2019 16.4 版和 CodeAnalysis (2.9.5) 開始提供此計量。
 
-- **可執行檔程式碼** 的程式碼-指出大約數目的可執行程式程式碼或作業。 這是可執行程式碼中的作業數目計數。 從 Visual Studio 2019 16.4 版和 CodeAnalysis (2.9.5) 開始提供此計量。 此值通常與先前的計量（程式 **程式碼**）相近，這是舊版模式中使用的 MSIL 指令型計量。
+- **可執行檔程式碼** 的程式碼-指出大約數目的可執行程式程式碼或作業。 這是可執行程式碼中的作業數目計數。 從 Visual Studio 2019 16.4 版和 CodeAnalysis (2.9.5) 開始提供此計量。 此值通常與先前的計量（程式 **程式碼** ）相近，這是舊版模式中使用的 MSIL 指令型計量。
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-- 程式**程式碼**-指出程式碼中大約的行數。 計數是以 IL 程式碼為基礎，因此不是原始程式碼檔中確切的行數。 高計數可能表示類型或方法正在嘗試執行太多工作，並應進行分割。 這也可能表示類型或方法可能難以維護。
+- 程式 **程式碼** -指出程式碼中大約的行數。 計數是以 IL 程式碼為基礎，因此不是原始程式碼檔中確切的行數。 高計數可能表示類型或方法正在嘗試執行太多工作，並應進行分割。 這也可能表示類型或方法可能難以維護。
 
    > [!NOTE]
    > 程式碼計量工具的 [命令列版本](../code-quality/how-to-generate-code-metrics-data.md#command-line-code-metrics) 會計算程式碼的實際程式程式碼，因為它會分析原始程式碼而不是 IL。
@@ -58,7 +60,7 @@ ms.locfileid: "89599461"
 
 ## <a name="anonymous-methods"></a>匿名方法
 
-*匿名方法*只是沒有名稱的方法。 匿名方法最常用來將程式碼區塊當做委派參數傳遞。 在成員中宣告的匿名方法（例如方法或存取子）的程式碼度量結果，會與宣告方法的成員相關聯。 它們不會與呼叫方法的成員相關聯。
+*匿名方法* 只是沒有名稱的方法。 匿名方法最常用來將程式碼區塊當做委派參數傳遞。 在成員中宣告的匿名方法（例如方法或存取子）的程式碼度量結果，會與宣告方法的成員相關聯。 它們不會與呼叫方法的成員相關聯。
 
 ## <a name="generated-code"></a>產生的程式碼
 

@@ -1,5 +1,6 @@
 ---
 title: '視需要下載元件 (ClickOnce API) '
+description: 瞭解如何將 ClickOnce 應用程式中的特定元件標示為選擇性，並在 common language runtime 需要時加以下載。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8452bec3443b93737e4799a8f09c8e342f011976
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fb74d7fd5ad388b9b3dc217bae8782b24517c13b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809246"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349242"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：使用 ClickOnce 部署 API 依需求下載元件
 根據預設，應用程式中包含的所有元件 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 都會在第一次執行應用程式時下載。 不過，您的應用程式中可能會有一小部分使用者使用的部分。 在此情況下，只有在建立組件的其中一種類型時，才會想要下載組件。 下列逐步解說示範如何將應用程式中的特定組件標示為「選擇性」，以及在 Common Language Runtime 需要時，使用 <xref:System.Deployment.Application> 命名空間中的類別來下載它們。
@@ -30,7 +31,7 @@ ms.locfileid: "90809246"
 > [!NOTE]
 > 您的應用程式必須以完全信任執行，才能使用此程序。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
  您將需要下列其中一個元件，才能完成此逐步解說：
 
 - Windows SDK。 您可以從 Microsoft 下載中心下載 Windows SDK。
@@ -58,7 +59,7 @@ ms.locfileid: "90809246"
     [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
     [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
 
-6. 將文字儲存為名為 *ClickOnceLibrary.cs* 或 *clickoncelibrary.dll*的檔案（視您使用的語言而定）至 *ClickOnceOnDemand* 目錄。
+6. 將文字儲存為名為 *ClickOnceLibrary.cs* 或 *clickoncelibrary.dll* 的檔案（視您使用的語言而定）至 *ClickOnceOnDemand* 目錄。
 
 7. 將檔案編譯成元件。
 
@@ -85,7 +86,7 @@ ms.locfileid: "90809246"
 
 11. 設定 `PublicKeyToken` 為您稍早取出的值。
 
-12. 請將檔案儲存為*Form1.cs*或*form1.vb。*
+12. 請將檔案儲存為 *Form1.cs* 或 *form1.vb。*
 
 13. 使用下列命令將它編譯成可執行檔。
 
@@ -101,15 +102,15 @@ ms.locfileid: "90809246"
 
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>使用 MageUI.exe 將元件標示為 ClickOnce 應用程式中的選擇性
 
-1. 使用 *MageUI.exe*，依照 [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)中所述的方式建立應用程式資訊清單。 使用應用程式資訊清單的下列設定：
+1. 使用 *MageUI.exe* ，依照 [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)中所述的方式建立應用程式資訊清單。 使用應用程式資訊清單的下列設定：
 
     - 命名應用程式資訊清單 `ClickOnceOnDemand` 。
 
-    - 在 [檔案 **] 頁面的** [ *ClickOnceLibrary.dll* ] 資料列中，將 [ **檔案類型** ] 資料行設定為 [ **無**]。
+    - 在 [檔案 **] 頁面的** [ *ClickOnceLibrary.dll* ] 資料列中，將 [ **檔案類型** ] 資料行設定為 [ **無** ]。
 
     - 在 [檔案 **] 頁面的** [ *ClickOnceLibrary.dll* ] 資料列中，輸入 `ClickOnceLibrary.dll` [ **群組** ] 資料行。
 
-2. 使用 *MageUI.exe*，依照 [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)中所述的方式建立部署資訊清單。 針對部署資訊清單，請使用下列設定：
+2. 使用 *MageUI.exe* ，依照 [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)中所述的方式建立部署資訊清單。 針對部署資訊清單，請使用下列設定：
 
     - 命名部署資訊清單 `ClickOnceOnDemand` 。
 

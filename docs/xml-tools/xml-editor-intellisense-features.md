@@ -1,5 +1,7 @@
 ---
 title: XML 編輯器 IntelliSense 功能
+description: 您可以在 Visual Studio 瞭解 XML 編輯器的 IntelliSense 功能，以及如何搭配 XML 架構定義語言 (XSD) 和 XSLT 檔使用這些功能。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc79d40c2cb363b79c2064bd71fb23dece04e143
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592382"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350240"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 編輯器 IntelliSense 功能
 
@@ -87,7 +89,7 @@ XML 編輯器會加入引號，並將游標置於引號之間：
 
 ## <a name="brace-matching"></a>括號對稱
 
-XML 編輯器提供括號反白顯示，以將您剛剛關閉之項目的立即回應提供給您。 您也可以使用鍵盤快速鍵 (**Ctrl** + **]**) 從一個大括弧跳至相符的大括弧。
+XML 編輯器提供括號反白顯示，以將您剛剛關閉之項目的立即回應提供給您。 您也可以使用鍵盤快速鍵 ( **Ctrl** + **]** ) 從一個大括弧跳至相符的大括弧。
 
 XML 編輯器會針對下列項目執行此操作：
 
@@ -107,11 +109,11 @@ XML 編輯器會針對下列項目執行此操作：
 
 ## <a name="modify-the-intellisense-options"></a>修改 IntelliSense 選項
 
-依預設會啟用 IntelliSense 及自動完成功能。 不過，您可以藉由修改**工具**  >  **選項**設定來變更。
+依預設會啟用 IntelliSense 及自動完成功能。 不過，您可以藉由修改 **工具**  >  **選項** 設定來變更。
 
-[**其他**] 頁面的 [**自動插入**] 區段會控制下列行為：
+[ **其他** ] 頁面的 [ **自動插入** ] 區段會控制下列行為：
 
-|Name|描述|
+|Name|說明|
 |-|-----------------|
 |結尾標記|插入新項目的關閉標記。|
 |屬性引號|輸入新屬性名稱時，請插入屬性值引號。|
@@ -119,13 +121,13 @@ XML 編輯器會針對下列項目執行此操作：
 
 ### <a name="to-change-the-auto-completion-behavior"></a>變更自動完成行為
 
-1. 選取 [工具]**** 功能表上的 [選項]****。
+1. 選取 [工具] 功能表上的 [選項]。
 
-2. 展開 [ **文字編輯器**]，展開 [ **XML**]，然後選取 [ **其他**]。
+2. 展開 [ **文字編輯器** ]，展開 [ **XML** ]，然後選取 [ **其他** ]。
 
-3. 對 [ **自動插入** ] 區段進行任何變更，然後按一下 **[確定]**。
+3. 對 [ **自動插入** ] 區段進行任何變更，然後按一下 **[確定]** 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [XML 編輯器](../xml-tools/xml-editor.md)
 - [使用 IntelliSense](../ide/using-intellisense.md)

@@ -1,6 +1,8 @@
 ---
 title: 如何針對 .NET 手動執行程式碼分析
 ms.date: 09/02/2020
+description: '瞭解如何在 Visual Studio 2019 16.5 版或更新版本中手動執行程式碼分析。 瞭解如何在 c # 或 Visual Basic 程式碼上執行 Roslyn 分析器。'
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, running
@@ -11,12 +13,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c24fa8e835dced8332aa4c50870d6251bdd43e63
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2eb4beff76d602bb4ce6182fab6091c7cd2a0096
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037155"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348719"
 ---
 # <a name="run-code-analysis-manually-for-net"></a>針對 .NET 手動執行程式碼分析
 根據預設，.NET Compiler Platform ( "Roslyn" ) 分析器會在您透過進行即時分析以及在組建期間進行輸入，來分析您的 c # 或 Visual Basic 程式碼。 因此，您通常不需要手動觸發程式碼分析。 不過，在某些情況下，您可能會想要手動觸發程式碼分析：
@@ -29,8 +31,8 @@ ms.locfileid: "90037155"
 
 ### <a name="run-code-analysis-manually"></a>手動執行程式碼分析
 
-1. 在 **方案總管**中，選取專案。
+1. 在 **方案總管** 中，選取專案。
 
-2. 在 [**分析**] 功能表上，選取 [針對*專案名稱***執行程式碼分析**]。
+2. 在 [ **分析** ] 功能表上，選取 [針對 *專案名稱***執行程式碼分析** ]。
 
-程式碼分析將開始在背景中執行。 您應該會在左下角的 Visual Studio 狀態列中看到 [ **正在執行程式碼分析 \<project> ** ] 的訊息。 程式碼分析完成後，狀態訊息會變更為 [**已完成的 \<project> 程式碼分析**]。 錯誤清單很快就會以所有程式碼分析診斷進行重新整理。
+程式碼分析將開始在背景中執行。 您應該會在左下角的 Visual Studio 狀態列中看到 [ **正在執行程式碼分析 \<project>** ] 的訊息。 程式碼分析完成後，狀態訊息會變更為 [ **已完成的 \<project> 程式碼分析** ]。 錯誤清單很快就會以所有程式碼分析診斷進行重新整理。

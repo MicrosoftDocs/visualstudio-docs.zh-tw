@@ -1,6 +1,8 @@
 ---
 title: Code Analysis Policy Errors
 ms.date: 11/04/2016
+description: 瞭解 Visual Studio 中的程式碼分析原則錯誤。 如果簽入程式碼時不符合原則，就會顯示錯誤的描述。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.policyfailures
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac7a949b3f8a1e0c9d44c6194f87745b4e3f17a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43dae5ec9ca68c746b914ad0a75b792f2a6e6b43
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587741"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349096"
 ---
 # <a name="code-analysis-policy-errors"></a>Code Analysis Policy Errors
 
@@ -29,7 +31,7 @@ ms.locfileid: "75587741"
 
 - 方案中所有專案的組建都未啟用程式碼分析。
 
-- 在 Visual Studio 中，專案的本機規則集所設定的**動作**設定較不嚴格，例如專案規則集，在伺服器上設定為**動作** = **錯誤**的規則，其**動作**設定為 [**警告**] 或 [**無**] 會在 Visual Studio) 中執行的規則集。
+- 在 Visual Studio 中，專案的本機規則集所設定的 **動作** 設定較不嚴格，例如專案規則集，在伺服器上設定為 **動作** = **錯誤** 的規則，其 **動作** 設定為 [ **警告** ] 或 [ **無** ] 會在 Visual Studio) 中執行的規則集。
 
 - Visual Studio 中指定的規則集未包含專案的程式碼分析簽入原則中指定的規則集內所指定的所有規則。
 
@@ -47,11 +49,11 @@ ms.locfileid: "75587741"
 
 **' ' 的版本 {0} 不正確。原則中指定的強式名稱是 ' {1} '。**
 
-此錯誤適用于 .NET 專案。 程式碼分析原則所需的 rule 存在於本機電腦上，但版本/公開金鑰不相符。 若要更正此錯誤，原則建立者必須在其電腦上更新*C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis \\ Tools\FxCop\Rules*目錄中的 .dll。
+此錯誤適用于 .NET 專案。 程式碼分析原則所需的 rule 存在於本機電腦上，但版本/公開金鑰不相符。 若要更正此錯誤，原則建立者必須在其電腦上更新 *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis \\ Tools\FxCop\Rules* 目錄中的 .dll。
 
 **{0}原則中指定的 ' ' 元件不存在。**
 
-此錯誤適用于 .NET 專案。 程式碼分析原則所需的規則未在用戶端電腦上安裝對應的 dll。 若要更正此錯誤，原則建立者必須在其電腦上更新*C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static \\ Analysis Tools\FxCop\Rules*目錄中的 dll。
+此錯誤適用于 .NET 專案。 程式碼分析原則所需的規則未在用戶端電腦上安裝對應的 dll。 若要更正此錯誤，原則建立者必須在其電腦上更新 *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static \\ Analysis Tools\FxCop\Rules* 目錄中的 dll。
 
 **專案 {0} 規則設定不符合程式碼分析原則。**
 
@@ -73,6 +75,6 @@ ms.locfileid: "75587741"
 
 此錯誤適用于未受管理的專案。 程式碼分析原則需要 C/c + + 的程式碼分析，但在用戶端的目前專案中未啟用。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼分析應用程式錯誤](../code-quality/code-analysis-application-errors.md)

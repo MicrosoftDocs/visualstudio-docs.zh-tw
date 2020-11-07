@@ -1,5 +1,7 @@
 ---
 title: 設定 ClickOnce 信任提示行為 |Microsoft Docs
+description: 瞭解如何設定 ClickOnce 信任提示，以控制終端使用者是否可以選擇安裝 ClickOnce 應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,19 +20,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4becc0244f42507b581029b2dfe21c71570db6
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 68d39bed64ff1392c83d6fc2be0de936ac1b00d2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852227"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350058"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>如何：設定 ClickOnce 信任提示行為
 您可以設定 ClickOnce 信任提示，以控制終端使用者是否可以選擇安裝 ClickOnce 應用程式，例如 Windows Forms 應用程式、Windows Presentation Foundation 應用程式、主控台應用程式、WPF 瀏覽器應用程式和 Office 方案。 您可以藉由設定每個使用者電腦上的登錄機碼來設定信任提示。
 
  下表顯示可套用至每五個區域 (Internet、UntrustedSites、MyComputer、LocalIntranet 和 TrustedSites) 的設定選項。
 
-|選項|登錄設定值|描述|
+|選項|登錄設定值|說明|
 |------------|----------------------------|-----------------|
 |啟用信任提示。|`Enabled`|會顯示 ClickOnce 信任提示，讓使用者可以將信任授與 ClickOnce 應用程式。|
 |限制信任提示。|`AuthenticodeRequired`|只有當 ClickOnce 應用程式使用可識別發行者的憑證進行簽署時，才會顯示 ClickOnce 信任提示。|
@@ -57,7 +59,7 @@ ms.locfileid: "90852227"
 
     1. 按一下 **[開始]** ，然後按一下 **[執行]** 。
 
-    2. 在 [ **開啟** ] 方塊中，輸入 `regedit` ，然後按一下 **[確定]**。
+    2. 在 [ **開啟** ] 方塊中，輸入 `regedit` ，然後按一下 **[確定]** 。
 
 2. 尋找下列登錄機碼：
 
@@ -65,7 +67,7 @@ ms.locfileid: "90852227"
 
      如果機碼不存在，請加以建立。
 
-3. 將下列子機碼新增為 **字串值**（如果尚未存在），並在下表中顯示相關聯的值。
+3. 將下列子機碼新增為 **字串值** （如果尚未存在），並在下表中顯示相關聯的值。
 
     |字串值子機碼|值|
     |-------------------------|-----------|
@@ -81,7 +83,7 @@ ms.locfileid: "90852227"
 
 1. 在 Visual Studio 中建立 Visual Basic 或 Visual c # 主控台應用程式。
 
-2. 開啟要編輯的*Program.cs*檔案，然後加入下列*程式*代碼。
+2. 開啟要編輯的 *Program.cs* 檔案，然後加入下列 *程式* 代碼。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -116,7 +118,7 @@ ms.locfileid: "90852227"
 
     1. 按一下 **[開始]** ，然後按一下 **[執行]** 。
 
-    2. 在 [ **開啟** ] 方塊中，輸入 `regedit` ，然後按一下 **[確定]**。
+    2. 在 [ **開啟** ] 方塊中，輸入 `regedit` ，然後按一下 **[確定]** 。
 
 2. 尋找下列登錄機碼：
 
@@ -124,7 +126,7 @@ ms.locfileid: "90852227"
 
      如果機碼不存在，請加以建立。
 
-3. 將下列子機碼新增為 **字串值**（如果尚未存在），並在下表中顯示相關聯的值。
+3. 將下列子機碼新增為 **字串值** （如果尚未存在），並在下表中顯示相關聯的值。
 
     |字串值子機碼|值|
     |-------------------------|-----------|
@@ -138,7 +140,7 @@ ms.locfileid: "90852227"
 
 1. 在 Visual Studio 中建立 Visual Basic 或 Visual c # 主控台應用程式。
 
-2. 開啟要編輯的*Program.cs*檔案，然後加入下列*程式*代碼。
+2. 開啟要編輯的 *Program.cs* 檔案，然後加入下列 *程式* 代碼。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -173,7 +175,7 @@ ms.locfileid: "90852227"
 
     1. 按一下 **[開始]** ，然後按一下 **[執行]** 。
 
-    2. 在 [ **開啟** ] 方塊中，輸入 `regedit` ，然後按一下 **[確定]**。
+    2. 在 [ **開啟** ] 方塊中，輸入 `regedit` ，然後按一下 **[確定]** 。
 
 2. 尋找下列登錄機碼：
 
@@ -181,7 +183,7 @@ ms.locfileid: "90852227"
 
      如果機碼不存在，請加以建立。
 
-3. 將下列子機碼新增為 **字串值**（如果尚未存在），並在下表中顯示相關聯的值。
+3. 將下列子機碼新增為 **字串值** （如果尚未存在），並在下表中顯示相關聯的值。
 
     |字串值子機碼|值|
     |-------------------------|-----------|
@@ -195,7 +197,7 @@ ms.locfileid: "90852227"
 
 1. 在 Visual Studio 中建立 Visual Basic 或 Visual c # 主控台應用程式。
 
-2. 開啟要編輯的*Program.cs*檔案，然後加入下列*程式*代碼。
+2. 開啟要編輯的 *Program.cs* 檔案，然後加入下列 *程式* 代碼。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -222,7 +224,7 @@ ms.locfileid: "90852227"
 
 3. 建置並執行應用程式。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)

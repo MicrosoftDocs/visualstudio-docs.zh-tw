@@ -1,5 +1,7 @@
 ---
 title: 建立套件資訊清單 |Microsoft Docs
+description: 瞭解如何使用啟動載入器套件來部署 ClickOnce 應用程式的必要條件，其中包含每個地區設定的套件資訊清單。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe51ac8bc8af07038e6bfe6ddb2c5730485ca60b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 43790914be67ddaf2e82f1bb411180d5643ebcbe
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851706"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350045"
 ---
 # <a name="how-to-create-a-package-manifest"></a>How to: Create a package manifest (如何：建立封裝資訊清單)
 若要部署應用程式的必要條件，您可以使用啟動載入器套件。 啟動載入器套件包含單一產品資訊清單檔案，但每個地區設定都有套件資訊清單。 不同當地語系化版本之間的共用功能應該進入產品資訊清單。
@@ -34,11 +36,11 @@ ms.locfileid: "90851706"
 
 #### <a name="to-create-the-package-manifest"></a>若要建立封裝資訊清單
 
-1. 建立啟動載入器套件的目錄。 此範例使用 *C:\package*。
+1. 建立啟動載入器套件的目錄。 此範例使用 *C:\package* 。
 
 2. 使用地區設定的名稱來建立子目錄，例如英文的 *en* 。
 
-3. 在 Visual Studio 中，建立名為 *package.xml*的 XML 檔案，並將它儲存至 *C:\package\en* 資料夾。
+3. 在 Visual Studio 中，建立名為 *package.xml* 的 XML 檔案，並將它儲存至 *C:\package\en* 資料夾。
 
 4. 加入 XML 以列出啟動載入器套件的名稱、此當地語系化套件資訊清單的文化特性，以及選用的授權合約。 下列 XML 會使用變數 `DisplayName` 和 `Culture` ，在稍後的元素中定義。
 
@@ -98,5 +100,5 @@ installing this package.</String>
 </Package>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [產品和套件架構參考](../deployment/product-and-package-schema-reference.md)

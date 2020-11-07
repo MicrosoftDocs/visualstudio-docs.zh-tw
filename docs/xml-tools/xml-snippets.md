@@ -1,5 +1,7 @@
 ---
 title: XML 片段
+description: 瞭解 XML 編輯器中的 XML 程式碼片段功能，可讓您重複使用 XML 程式碼片段並將其插入檔案中，以更快速地建立 XML 檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 348dbf64-3f09-4fff-b47a-a7ecdf3221cc
@@ -8,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f2bcdd0c28d7b4b99c92d3346b32ed34aa92a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9114d50abd8f12e19f67d593927b94afcb010f6
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592317"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350188"
 ---
 # <a name="xml-snippets"></a>XML 片段
 
-XML 編輯器提供稱為 *XML 程式碼片段*的功能，可讓您更快速地建立 xml 檔案。 您可藉由將 XML 片段插入檔案來重複使用它們。 您也可以根據 XML 架構定義語言 (XSD) 架構來產生 XML 資料。
+XML 編輯器提供稱為 *XML 程式碼片段* 的功能，可讓您更快速地建立 xml 檔案。 您可藉由將 XML 片段插入檔案來重複使用它們。 您也可以根據 XML 架構定義語言 (XSD) 架構來產生 XML 資料。
 
 ## <a name="reusable-xml-snippets"></a>可重複使用的 XML 片段
 
@@ -37,7 +39,7 @@ XML 編輯器包含許多涵蓋一些常見工作的程式碼片段。 這可讓
 </xs:element>
 ```
 
-插入片段的方式有兩種。 [ **插入程式碼片段** ] 命令會在游標位置插入 XML 程式碼片段。 「範圍語句」命令會將所選文字周圍的 XML 程式碼片段包裝 **起來** 。 這兩個命令都可從 [**編輯**] 功能表下的 [ **IntelliSense** ] 子功能表，或從編輯器內的滑鼠右鍵功能表使用。
+插入片段的方式有兩種。 [ **插入程式碼片段** ] 命令會在游標位置插入 XML 程式碼片段。 「範圍語句」命令會將所選文字周圍的 XML 程式碼片段包裝 **起來** 。 這兩個命令都可從 [ **編輯** ] 功能表下的 [ **IntelliSense** ] 子功能表，或從編輯器內的滑鼠右鍵功能表使用。
 
 如需詳細資訊，請參閱 [如何：使用 XML 程式碼片段](../xml-tools/how-to-use-xml-snippets.md)。
 
@@ -49,7 +51,7 @@ XML 編輯器也可以從 XML 架構產生 XML 片段。 此功能可讓您以�
 
 除了 Visual Studio 預設隨附的程式碼片段，您也可以建立並使用自己的 XML 程式碼片段。 如需詳細資訊，請參閱 [如何：建立 XML 片段](../xml-tools/how-to-create-xml-snippets.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的程式碼片段](../ide/code-snippets.md)
 - [XML 編輯器](../xml-tools/xml-editor.md)

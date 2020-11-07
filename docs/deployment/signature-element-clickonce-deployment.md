@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;ClickOnce 部署 (的 Signature 元素) |Microsoft Docs'
+description: Signature 元素包含數位簽署此部署資訊清單所需的資訊。 簽署部署資訊清單是選擇性的，但建議使用。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6f07e2649d6f41e77f453f64c5838c746f22ad0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7a86236087bdbff8cf82ca4821573f9f799d019
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85835416"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349278"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;&gt;ClickOnce 部署 (的 Signature 元素) 
 包含對此部署資訊清單進行數位簽章時所需的資訊。
@@ -28,8 +30,8 @@ ms.locfileid: "85835416"
 
 ```xml
 
-<Signature> 
-   XML signature information 
+<Signature> 
+   XML signature information 
 </Signature>
 ```
 
@@ -70,5 +72,5 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
 </Signature>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)

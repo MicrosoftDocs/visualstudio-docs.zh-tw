@@ -1,5 +1,7 @@
 ---
 title: 部署到本機資料夾
+description: 瞭解如何使用發佈工具將 ASP.NET、ASP.NET Core、.NET Core 和 Python 應用程式發佈至 Visual Studio 的資料夾。
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 800059dc8d5a3e6ccfb72c588fbb61423a338cba
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f392cc2dcb474487a37076229c0b10f7359b9251
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036388"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349564"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>使用 Visual Studio 將應用程式部署到資料夾
 
@@ -28,13 +30,13 @@ ms.locfileid: "90036388"
 
 ## <a name="deploy-to-a-local-folder"></a>部署到本機資料夾
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]**** (或使用 [建置]**** > [發行]**** 功能表項目)。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行] (或使用 [建置] > [發行] 功能表項目)。
 
     ![方案總管的專案內容功能表上的 [發行] 命令](../deployment/media/quickstart-publish.png "選擇 [發行]")
 
 1. 如果您先前已設定任何發行設定檔，[ **發行** ] 視窗隨即出現。 選取 [新增]。
 
-1. 在 [ **發行** ] 視窗中，選取 [ **資料夾**]。
+1. 在 [ **發行** ] 視窗中，選取 [ **資料夾** ]。
 
     ![選擇資料夾做為發佈目標](../deployment/media/quickstart-publish-folder-new.png "選擇資料夾")
 
@@ -42,7 +44,7 @@ ms.locfileid: "90036388"
 
     ![指定資料夾的路徑](../deployment/media/quickstart-publish-folder-path.png "選擇資料夾")
 
-1. 選取 [發佈]。 Visual Studio 會建置專案，並將其發行至指定的資料夾。 專案屬性 [發行]**** 窗格隨即出現，並顯示設定檔摘要。
+1. 選取 [發佈]  。 Visual Studio 會建置專案，並將其發行至指定的資料夾。 專案屬性 [發行] 窗格隨即出現，並顯示設定檔摘要。
 
     ![顯示設定檔摘要的 [發行] 屬性窗格](../deployment/media/quickstart-publish-folder-summary.png)
 
@@ -58,13 +60,13 @@ ms.locfileid: "90036388"
     - [目標執行時間識別碼 (可攜的 RID，et al) ](/dotnet/core/rid-catalog)
     - [Debug 和 release 設定](../ide/understanding-build-configurations.md)
 
-1. 設定選項，例如是否要部署 [偵錯] 或 [發行] 組態，然後選取 [儲存]****。
+1. 設定選項，例如是否要部署 [偵錯] 或 [發行] 組態，然後選取 [儲存]。
 
-1. 若要發行，請選取 [發行]****。
+1. 若要發行，請選取 [發行]。
 
 請使用任何您想要的方式，部署已發行的檔案。 例如，您可以使用簡單的 copy 命令將它們封裝在 *.zip* 檔案中，或與您選擇的任何安裝套件一起部署。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 針對 .NET 應用程式：
 

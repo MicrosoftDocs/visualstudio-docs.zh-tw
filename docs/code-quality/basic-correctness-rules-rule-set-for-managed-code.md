@@ -1,6 +1,8 @@
 ---
 title: 適用於 Managed 程式碼的基本正確性規則規則集
 ms.date: 11/04/2016
+description: 瞭解 Visual Studio 中的基本正確性規則規則集，其著重于邏輯錯誤和常見的 framework API 錯誤。 請參閱規則描述。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: eef90c024c03c0a8346fda6b90225dd0ebf3ee51
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 532cab657403cf8761d2b53304131b70a951a7ff
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659136"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348485"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的基本正確性規則規則集
 
@@ -21,7 +23,7 @@ ms.locfileid: "91659136"
 
 下表說明 Microsoft 基本正確性規則規則集中的所有規則。
 
-|規則|描述|
+|規則|說明|
 |----------|-----------------|
 |[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|具有可處置欄位的類型應該為可處置|
 |[CA1009](../code-quality/ca1009.md)|事件處理常式必須正確宣告|

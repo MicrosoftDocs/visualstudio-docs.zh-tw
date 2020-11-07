@@ -1,18 +1,20 @@
 ---
 title: 所有規則規則集
 ms.date: 11/04/2016
+description: 瞭解所有規則規則集，其中包含 Visual Studio 中的原生和 managed 程式碼的所有規則。 查看描述此集合中之規則的資源。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6c8004c57b949c7df9d7250567222dbc1352b2d
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: c1d4881cbc2cf6cde6c9316f547b5b2aabb31b01
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659149"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348420"
 ---
 # <a name="all-rules-rule-set"></a>所有規則規則集
 

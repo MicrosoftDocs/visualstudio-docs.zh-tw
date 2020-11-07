@@ -1,5 +1,6 @@
 ---
 title: 指定終端使用者安裝來源的位置
+description: 瞭解如何設定 [安裝 URL] 屬性，也就是裝載已發行 ClickOnce 應用程式以供安裝的位置。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ba02b1cf8947fa2d1907d6316e36af8f8f54a77
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 3518a2eef331414e5c73c0cebb36681ad2b72d61
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808720"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349616"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>How to: Specify the location where end users will install from (如何：指定終端使用者會從該處安裝的位置)
 
@@ -31,20 +32,20 @@ ms.locfileid: "90808720"
 
 在此情況下，您可以使用 `Installation URL` 屬性來指定使用者將前往以下載應用程式的網頁伺服器。 這是必要的，讓應用程式資訊清單知道要在哪裡尋找更新。
 
-您 `Installation URL` 可以在 [**專案設計**工具] 的 [**發行**] 頁面上設定屬性。
+您 `Installation URL` 可以在 [ **專案設計** 工具] 的 [ **發行** ] 頁面上設定屬性。
 
 > [!NOTE]
-> 您 `Installation URL` 也可以使用 **發行精靈**來設定屬性。 如需詳細資訊，請參閱 [如何：使用發佈嚮導發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
+> 您 `Installation URL` 也可以使用 **發行精靈** 來設定屬性。 如需詳細資訊，請參閱 [如何：使用發佈嚮導發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
 
 ### <a name="to-specify-an-installation-url"></a>若要指定安裝 URL
 
-1. 在方案總管 **** 中選取專案之後，按一下 [專案] **** 功能表中 [屬性] ****。
+1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。
 
-2. 按一下 [Publish (發行)] **** 索引標籤。
+2. 按一下 [Publish (發行)]  索引標籤。
 
 3. 在 [安裝 URL] 欄位中，使用格式的完整 URL 或使用格式的 UNC 路徑，輸入安裝位置 `https://www.contoso.com/ApplicationName` `\Server\ApplicationName` 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [How to: Specify where Visual Studio copies the files](../deployment/how-to-specify-where-visual-studio-copies-the-files.md) (如何：指定 Visual Studio 複製檔案的位置)
 - [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)
 - [如何：使用發佈精靈發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -1,6 +1,8 @@
 ---
 title: 適用於 Managed 程式碼的擴充設計方針規則規則集
 ms.date: 11/04/2016
+description: 瞭解 Visual Studio 中的擴充設計指導方針規則規則集，其著重于可用性和可維護性。 請參閱規則描述。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: a338caf2-b75d-4f23-a0f9-3024fa0bceac
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8062ef99d3c1ad43b633e896617e95851a40930a
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 0da23a533ca7667ba946299a3197dd487999afec
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658590"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348979"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的擴充設計方針規則規則集
 
@@ -23,7 +25,7 @@ Microsoft 擴充設計指導方針規則規則集會擴充基本的設計指導�
 
 下表說明 Microsoft 擴充設計指導方針規則規則集中的所有規則。
 
-|規則|描述|
+|規則|說明|
 |----------|-----------------|
 |[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|具有可處置欄位的類型應該為可處置|
 |[CA1009](../code-quality/ca1009.md)|事件處理常式必須正確宣告|

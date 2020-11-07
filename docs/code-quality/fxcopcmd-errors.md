@@ -1,6 +1,8 @@
 ---
 title: FxCopCmd 錯誤
 ms.date: 10/19/2016
+description: 瞭解 FxCopCmd 命令傳回的錯誤碼。 查看每個程式碼所代表的錯誤類型，並找出如何辨識嚴重錯誤。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
@@ -10,12 +12,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b72f419331b2a02c55d885a2b8855070698879a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88c900ec10ea13e7f9d7092769565703bf52fe8c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78167607"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348928"
 ---
 # <a name="fxcopcmd-tool-errors"></a>FxCopCmd 工具錯誤
 
@@ -39,7 +41,7 @@ FxCopCmd 不會將所有錯誤視為嚴重錯誤。 如果 FxCopCmd 有足夠的
 |BuildBreakingMessage|0x400|
 |未知的錯誤|0x1000000|
 
-發生嚴重錯誤時，會傳回**分析錯誤**。 指出無法完成分析。 在適用的情況下，錯誤碼也包含嚴重錯誤的根本原因。 下列條件會產生嚴重錯誤：
+發生嚴重錯誤時，會傳回 **分析錯誤** 。 指出無法完成分析。 在適用的情況下，錯誤碼也包含嚴重錯誤的根本原因。 下列條件會產生嚴重錯誤：
 
 - 無法執行分析，因為輸入不足。
 
@@ -52,6 +54,6 @@ FxCopCmd 不會將所有錯誤視為嚴重錯誤。 如果 FxCopCmd 有足夠的
 > [!NOTE]
 > FxCopCmd 傳回碼 **元件本身參考錯誤** 0x200 本身是警告而非錯誤。 這個傳回碼表示有遺漏的間接參考，但是該 FxCopCmd 能夠處理它們。 警告表示某些分析結果可能已遭入侵。 將 **元件參考錯誤** 視為與任何其他傳回碼合併時的錯誤。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼分析應用程式錯誤](../code-quality/code-analysis-application-errors.md)

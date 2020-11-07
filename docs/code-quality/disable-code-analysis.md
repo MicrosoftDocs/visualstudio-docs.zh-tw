@@ -1,6 +1,8 @@
 ---
 title: 關閉程式碼分析
 ms.date: 09/01/2020
+description: 瞭解如何在 .NET Core、.NET Standard 和 .NET Framework 專案中關閉 Visual Studio 的原始程式碼分析。
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, disable
@@ -8,12 +10,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 28a95038db83e2a03975b0a5baccdabdd18452d9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e808cb623fa47c9971e1cdceb15a02b5bf46e901
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037142"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348550"
 ---
 # <a name="disable-source-code-analysis-for-net"></a>停用 .NET 的原始程式碼分析
 
@@ -35,7 +37,7 @@ ms.locfileid: "90037142"
 
 ![啟用或停用即時程式碼分析或 Visual Studio 中的組建](media/run-on-build-run-live-analysis.png)
 
-若要開啟此頁面，請在 **方案總管** 中的專案節點上按一下滑鼠右鍵，然後選取 [ **屬性**]。 選取 [程式 **代碼分析** ] 索引標籤。
+若要開啟此頁面，請在 **方案總管** 中的專案節點上按一下滑鼠右鍵，然後選取 [ **屬性** ]。 選取 [程式 **代碼分析** ] 索引標籤。
 
 - 若要在組建階段停用來源分析，請取消核取 [ **在組建上執行** ] 選項。
 - 若要停用即時來源分析，請取消核取 [ **在即時分析上執行** ] 選項。
@@ -67,7 +69,7 @@ ms.locfileid: "90037142"
 
 ## <a name="source-analysis"></a>來源分析
 
-您無法在 Visual Studio 2017 中關閉 [來源分析](roslyn-analyzers-overview.md) 。 如果您想要從 [**錯誤清單**] 中清除分析器錯誤，您可以選取 [**分析**  >  **執行程式碼分析]，並隱藏**功能表列上的 [作用中問題]，以隱藏所有目前的違規。 如需詳細資訊，請參閱 [隱藏違規](use-roslyn-analyzers.md#suppress-violations)。
+您無法在 Visual Studio 2017 中關閉 [來源分析](roslyn-analyzers-overview.md) 。 如果您想要從 [ **錯誤清單** ] 中清除分析器錯誤，您可以選取 [ **分析**  >  **執行程式碼分析]，並隱藏** 功能表列上的 [作用中問題]，以隱藏所有目前的違規。 如需詳細資訊，請參閱 [隱藏違規](use-roslyn-analyzers.md#suppress-violations)。
 
 從 Visual Studio 2019 版本16.3 開始，您可以關閉原始碼分析，或視需要執行。 請考慮升級至 Visual Studio 2019。
 
@@ -77,7 +79,7 @@ ms.locfileid: "90037142"
 
 ::: moniker-end
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [隱藏違規](use-roslyn-analyzers.md#suppress-violations)
 - [如何：啟用和停用舊版程式碼分析](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

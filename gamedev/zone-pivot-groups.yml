@@ -1,0 +1,17 @@
+### YamlMime:ZonePivotGroups
+groups:
+- id: platform
+  title: 平台
+  prompt: 選擇您的開發環境
+  pivots:
+  - id: windows
+    title: Visual Studio 2019
+  - id: macos
+    title: Visual Studio for Mac
+metadata:
+  ms.openlocfilehash: 311a5ecb0fca457b8abbb4b617a38edec11ff5ae
+  ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 11/05/2020
+  ms.locfileid: "94341514"

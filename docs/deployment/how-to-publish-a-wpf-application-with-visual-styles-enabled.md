@@ -1,5 +1,6 @@
 ---
 title: 發佈已啟用視覺樣式的 WPF 應用程式
+description: 瞭解如何發行已啟用視覺化樣式的 WPF 應用程式，以根據使用者選擇的主題來變更控制項的外觀。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd463fa5253d204ad4025958025235c9b75aa29e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e372d3163dcef84d76d77e54c66cf9f7c788e213
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810454"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349850"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何：發佈已啟用視覺樣式的 WPF 應用程式
 
@@ -50,17 +51,17 @@ ms.locfileid: "90810454"
 
     **開啟 Visual Basic 專案中的資訊清單檔**
 
-    1. 在功能表列上，選擇**Project**[專案 *]、[專案名稱]* **屬性**，其中*專案*名稱是您 WPF 專案的名稱。
+    1. 在功能表列上，選擇 **Project** [專案 *]、[專案名稱]* **屬性** ，其中 *專案* 名稱是您 WPF 專案的名稱。
 
          您 WPF 專案的屬性頁面隨即出現。
 
-    2. 在 [ **應用程式** ] 索引標籤上，選擇 [ **View Windows Settings**]。
+    2. 在 [ **應用程式** ] 索引標籤上，選擇 [ **View Windows Settings** ]。
 
-         隨即在程式 **代碼編輯器**中開啟 app.config 檔案。
+         隨即在程式 **代碼編輯器** 中開啟 app.config 檔案。
 
     **開啟 c # 專案中的資訊清單檔**
 
-    1. 在功能表列上，選擇**Project**[專案 *]、[專案名稱]* **屬性**，其中*專案*名稱是您 WPF 專案的名稱。
+    1. 在功能表列上，選擇 **Project** [專案 *]、[專案名稱]* **屬性** ，其中 *專案* 名稱是您 WPF 專案的名稱。
 
          您 WPF 專案的屬性頁面隨即出現。
 
@@ -69,7 +70,7 @@ ms.locfileid: "90810454"
         > [!NOTE]
         > 如果在資訊清單欄位中出現 **含預設設定的內嵌資訊清單** ，或 **建立沒有資訊清單的應用程式** ，則不會啟用視覺化樣式。 如果資訊清單檔的名稱出現在資訊清單欄位中，請繼續進行此程式中的下一個步驟。
 
-    3. 在 [方案總管]**** 中選擇 [顯示所有檔案]****。
+    3. 在 [方案總管] 中選擇 [顯示所有檔案]。
 
          此按鈕會顯示所有專案專案，包括已排除的專案專案，以及一般隱藏的專案專案。 資訊清單檔會顯示為專案專案。
 
@@ -96,27 +97,27 @@ ms.locfileid: "90810454"
     </asmv1:assembly>
     ```
 
-2. 在 [記事本] 中 **，按一下 [** 檔案]，然後按一下 [ **另存**新檔]。
+2. 在 [記事本] 中 **，按一下 [** 檔案]，然後按一下 [ **另存** 新檔]。
 
-3. 在 [ **另存** 新檔] 對話方塊的 [檔 **類型** ] 下拉式清單中，選取 [ **所有**檔案]。
+3. 在 [ **另存** 新檔] 對話方塊的 [檔 **類型** ] 下拉式清單中，選取 [ **所有** 檔案]。
 
-4. 在 [ **檔案名** ] 方塊中，將檔案命名並附加 *資訊清單* 到檔案名的結尾。 例如： *主題. 資訊清單*。
+4. 在 [ **檔案名** ] 方塊中，將檔案命名並附加 *資訊清單* 到檔案名的結尾。 例如： *主題. 資訊清單* 。
 
-5. 選擇 [ **流覽資料夾]** 按鈕，選取任何資料夾，然後按一下 [ **儲存**]。
+5. 選擇 [ **流覽資料夾]** 按鈕，選取任何資料夾，然後按一下 [ **儲存** ]。
 
     > [!NOTE]
     > 其餘的程式假設這個檔案的名稱是 *主題* ，而檔案會儲存到您電腦上的 *C：\temp* 目錄。
 
 ## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>將資訊清單檔案內嵌至已發佈方案的可執行檔
 
-1. 開啟 **Visual Studio 命令提示**字元。
+1. 開啟 **Visual Studio 命令提示** 字元。
 
-    如需如何開啟 **Visual Studio 命令提示**字元的詳細資訊，請參閱 [命令提示](/dotnet/framework/tools/developer-command-prompt-for-vs)字元。
+    如需如何開啟 **Visual Studio 命令提示** 字元的詳細資訊，請參閱 [命令提示](/dotnet/framework/tools/developer-command-prompt-for-vs)字元。
 
    > [!NOTE]
    > 其餘步驟會對您的解決方案進行下列假設：
    >
-   > - 解決方案的名稱是 **MyWPFProject**。
+   > - 解決方案的名稱是 **MyWPFProject** 。
    > - 解決方案位於下列目錄： `%UserProfile%\Documents\Visual Studio 2010\Projects\` 。
    >
    > - 此解決方案會發佈到下列目錄： `%UserProfile%\Documents\Visual Studio 2010\Projects\publish` 。
@@ -176,7 +177,7 @@ ms.locfileid: "90810454"
 
    執行這些步驟之後，您可以將已發佈的檔案移至您想要讓使用者安裝應用程式的位置。 如果您想要經常更新解決方案，您可以將這些命令移至腳本，並在每次發行新版本時執行腳本。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 -[針對 ClickOnce 部署中的特定錯誤進行疑難排解](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [視覺化樣式總覽](/windows/desktop/Controls/visual-styles-overview)

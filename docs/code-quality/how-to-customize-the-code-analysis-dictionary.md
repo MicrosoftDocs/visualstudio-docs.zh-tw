@@ -1,6 +1,8 @@
 ---
 title: 如何：自訂程式碼分析字典
 ms.date: 11/04/2016
+description: 瞭解可識別拼寫和命名慣例錯誤的程式碼分析字典。 瞭解如何建立自訂字典，並將其套用至專案。
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis dictionary
@@ -12,22 +14,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1a50374a2603153cc7f4770a9aaf5ba72fbe007
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33a552cfe918ef75257a4d23391535622560661c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453644"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348732"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>如何：自訂程式碼分析字典
 
 程式碼分析會使用內建的字典來檢查程式碼中的識別碼，以取得拼寫、語法案例和其他 .NET 設計指導方針的命名慣例錯誤。 您可以建立自訂字典 Xml 檔案，以新增、移除或修改內建字典的詞彙、縮寫和縮寫。
 
-例如，假設您的程式碼包含一個名為 **DoorKnokker**的類別。 程式碼分析會將名稱識別為兩個單字的複合： **門** 和 **knokker**。 然後，它會引發 **knokker** 未正確拼寫的警告。 若要強制程式碼分析辨識拼寫，您可以將「詞彙 **knokker** 」新增至自訂字典。
+例如，假設您的程式碼包含一個名為 **DoorKnokker** 的類別。 程式碼分析會將名稱識別為兩個單字的複合： **門** 和 **knokker** 。 然後，它會引發 **knokker** 未正確拼寫的警告。 若要強制程式碼分析辨識拼寫，您可以將「詞彙 **knokker** 」新增至自訂字典。
 
 ## <a name="to-create-a-custom-dictionary"></a>若要建立自訂字典
 
-建立名為 **CustomDictionary.xml**的檔案。
+建立名為 **CustomDictionary.xml** 的檔案。
 
 使用下列 XML 結構來定義您的自訂文字：
 
@@ -264,14 +266,14 @@ Dictionary/縮寫/CasingExceptions 節點中的詞彙會套用至下列程式碼
 
 ## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a> 將自訂字典套用至專案
 
-1. 在 **方案總管**中，請使用下列其中一個程式：
+1. 在 **方案總管** 中，請使用下列其中一個程式：
 
-    - 若要將字典加入至單一專案，請以滑鼠右鍵按一下專案名稱，然後按一下 [ **加入現有專案**]。 在 [ **加入現有專案** ] 對話方塊中指定檔案。
+    - 若要將字典加入至單一專案，請以滑鼠右鍵按一下專案名稱，然後按一下 [ **加入現有專案** ]。 在 [ **加入現有專案** ] 對話方塊中指定檔案。
   
-    - 若要加入在兩個或多個專案之間共用的字典，請在 [ **加入現有專案** ] 對話方塊中找出要共用的檔案，按一下 [ **加入** ] 按鈕上的向下箭號，然後按一下 [ **新增為連結**]。
+    - 若要加入在兩個或多個專案之間共用的字典，請在 [ **加入現有專案** ] 對話方塊中找出要共用的檔案，按一下 [ **加入** ] 按鈕上的向下箭號，然後按一下 [ **新增為連結** ]。
 
-2. 在 **方案總管**中，以滑鼠右鍵按一下 **CustomDictionary.xml** 的檔案名，然後按一下 [ **屬性**]。
+2. 在 **方案總管** 中，以滑鼠右鍵按一下 **CustomDictionary.xml** 的檔案名，然後按一下 [ **屬性** ]。
 
-3. 在 [ **建立動作** ] 清單中，選取 [ **CodeAnalysisDictionary**]。
+3. 在 [ **建立動作** ] 清單中，選取 [ **CodeAnalysisDictionary** ]。
 
-4. 從 [ **複製到輸出目錄** ] 清單中，選取 [ **不要複製**]。
+4. 從 [ **複製到輸出目錄** ] 清單中，選取 [ **不要複製** ]。
