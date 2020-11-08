@@ -26,6 +26,8 @@
           href: tool-dotnet-toolinstall.md
         - name: enable-iis
           href: tool-enable-iis.md
+        - name: msi-install
+          href: tool-msi-install.md
         - name: npm-install
           href: tool-npm-install.md
         - name: nuget-restore
@@ -82,3 +84,5 @@
           href: sample-private-preview.md
         - name: .NET Core 應用程式
           href: sample-dotnet-core.md
+        - name: Node.js 應用程式
+          href: sample-nodejs.md

@@ -414,12 +414,16 @@
                   href: ide/reference/datetime-timespan-completion.md
                 - name: 封裝欄位
                   href: ide/reference/encapsulate-field.md
+                - name: 擷取基底類別
+                  href: ide/reference/extract-base-class.md
                 - name: 擷取介面
                   href: ide/reference/extract-interface.md
                 - name: 擷取方法
                   href: ide/reference/extract-method.md
                 - name: 擷取區域函式
                   href: ide/reference/extract-local-function.md
+                - name: 內嵌方法
+                  href: ide/reference/inline-method.md
                 - name: 內嵌暫存變數
                   href: ide/reference/inline-temporary-variable.md
                 - name: IntelliSense 完成未匯入的類型及擴充方法
@@ -428,8 +432,8 @@
                   href: ide/reference/invert-conditional-logical.md
                 - name: 反轉 if 陳述式
                   href: ide/reference/invert-if-statement.md
-                - name: 靜態區域函式重構選項
-                  href: ide/reference/static-local-function-refactor-options.md
+                - name: 將類別設為抽象
+                  href: ide/reference/make-class-abstract.md
                 - name: 將成員設為靜態
                   href: ide/reference/make-member-static.md
                 - name: 移動參考附近的宣告
@@ -456,6 +460,8 @@
                   href: ide/reference/sort-usings.md
                 - name: split/merge if 陳述式
                   href: ide/reference/split-or-merge-if-statement.md
+                - name: 靜態區域函式重構選項
+                  href: ide/reference/static-local-function-refactor-options.md
                 - name: 同步命名空間和資料夾名稱
                   href: ide/reference/sync-namespace-and-folder-name.md
                 - name: 同步類型與檔案名稱
@@ -464,6 +470,10 @@
                   href: ide/reference/convert-var-to-explicit-type.md
                 - name: 使用 Lambda 運算式或區塊主體
                   href: ide/reference/use-block-body-lambda.md
+                - name: 使用 new()
+                  href: ide/reference/use-new.md
+                - name: 使用模式比對
+                  href: ide/reference/use-pattern-matching.md
                 - name: 未使用的值指派、變數及參數
                   href: ide/reference/unused-values-parameters.md
                 - name: 使重構換行、縮排及對齊
