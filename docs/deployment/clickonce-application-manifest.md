@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 應用程式資訊清單 |Microsoft Docs
+description: 瞭解 ClickOnce 應用程式資訊清單，這是一個 XML 檔案，其中描述使用 ClickOnce 部署的應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be9bfe19b92740d6be6c91802d193bf2fc401847
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13b84a256bfc9d13f8c17b92385df2106dc0a47d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928965"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383114"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce 應用程式資訊清單
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單是 XML 檔案，描述使用部署的應用程式 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。
 
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單具有下列元素和屬性。
 
-| 項目 | 描述 | 屬性 |
+| 元素 | 描述 | 屬性 |
 | - | - | - |
 | [\<assembly> 元素](../deployment/assembly-element-clickonce-application.md) | 必要。 最上層項目。 | `manifestVersion` |
 | [\<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-application.md) | 必要。 識別應用程式的主要元件 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
@@ -46,7 +48,7 @@ ms.locfileid: "62928965"
  應用程式資訊清單一律必須在部署前簽署。 如果您手動變更應用程式資訊清單，您必須使用 *mage.exe* 重新簽署應用程式資訊清單、更新部署資訊清單，然後重新簽署部署資訊清單。 如需詳細資訊，請參閱 [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
 
 ## <a name="file-name-syntax"></a>檔案名稱語法
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單檔案的名稱應該是 `assemblyIdentity` 項目中識別的應用程式完整名稱和副檔名，後面接著副檔名 *.manifest*。 例如，參考 *Example.exe* 應用程式的應用程式資訊清單會使用下列檔案名語法。
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單檔案的名稱應該是 `assemblyIdentity` 項目中識別的應用程式完整名稱和副檔名，後面接著副檔名 *.manifest* 。 例如，參考 *Example.exe* 應用程式的應用程式資訊清單會使用下列檔案名語法。
 
  `example.exe.manifest`
 

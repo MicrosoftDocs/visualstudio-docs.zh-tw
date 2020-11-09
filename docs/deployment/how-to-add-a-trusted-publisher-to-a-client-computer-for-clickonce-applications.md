@@ -1,5 +1,6 @@
 ---
 title: '將信任的發行者新增至用戶端 box (ClickOnce) '
+description: 瞭解如何將憑證新增至用戶端電腦，讓 ClickOnce 應用程式以較高的信任層級執行，而不會提示使用者。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4146efe0790e2bfd4abfa9e30897811aba182916
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: cef5eb1df80c7fffcc4a938504e82cac2aa3ae46
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809803"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382698"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>如何：將新增信任的發行者新增至 ClickOnce 應用程式的用戶端電腦
 您可以使用信任的應用程式部署來設定用戶端電腦，以較高的信任等級執行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，而不提示使用者。 下列程序示範如何使用命令列工具 CertMgr.exe 將發行者的憑證新增至用戶端電腦上的受信任發行者存放區。
@@ -39,7 +40,7 @@ ms.locfileid: "90809803"
 
 1. 從 CA 取得數位憑證。
 
-2. 將憑證匯出成 Base64 X.509 (*.cer*) 格式。 如需憑證格式的詳細資訊，請參閱 [Export a certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)) (匯出憑證)。
+2. 將憑證匯出成 Base64 X.509 ( *.cer* ) 格式。 如需憑證格式的詳細資訊，請參閱 [Export a certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)) (匯出憑證)。
 
 3. 從用戶端電腦的命令提示字元中，執行下列命令：
 
@@ -49,7 +50,7 @@ ms.locfileid: "90809803"
 
 1. 從 CA 取得數位憑證。
 
-2. 將憑證匯出成 Base64 X.509 (*.cer*) 格式。 如需憑證格式的詳細資訊，請參閱 [匯出憑證](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))。
+2. 將憑證匯出成 Base64 X.509 ( *.cer* ) 格式。 如需憑證格式的詳細資訊，請參閱 [匯出憑證](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))。
 
 3. 從用戶端電腦的命令提示字元中，執行下列命令：
 

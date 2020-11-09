@@ -1,5 +1,6 @@
 ---
 title: 將驗證新增至多層式架構 (N-Tier) 資料集
+description: 在 Visual Studio 中，將驗證加入至多層式資料集。 驗證個別資料行或整個資料列的變更。
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 91dbe04c85491a38a221edfb064702085136780f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecd57066f310886f2941700173d138756f682a0e
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283017"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382126"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>將驗證新增至多層式架構 (N-Tier) 資料集
 將驗證加入至多層式方案的資料集，基本上與將驗證新增至單一檔案資料集 (單一專案) 中的資料集相同。 針對資料執行驗證的建議位置是在 <xref:System.Data.DataTable.ColumnChanging> 資料表格的和/或 <xref:System.Data.DataTable.RowChanging> 事件期間。
@@ -34,7 +35,7 @@ ms.locfileid: "85283017"
 > Dataset 設計工具不會自動以 c # 為和事件建立事件處理常式 <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> 。 您必須手動建立事件處理常式，並將事件處理常式連結到基礎事件。 下列程式描述如何在 Visual Basic 和 c # 中建立必要的事件處理常式。
 
 ## <a name="validate-changes-to-individual-columns"></a>驗證個別資料行的變更
-藉由處理事件來驗證個別資料行中的值 <xref:System.Data.DataTable.ColumnChanging> 。 <xref:System.Data.DataTable.ColumnChanging>修改資料行中的值時，就會引發事件。 <xref:System.Data.DataTable.ColumnChanging>在**DataSet 設計工具**上按兩下所需的資料行，以建立事件的事件處理常式。
+藉由處理事件來驗證個別資料行中的值 <xref:System.Data.DataTable.ColumnChanging> 。 <xref:System.Data.DataTable.ColumnChanging>修改資料行中的值時，就會引發事件。 <xref:System.Data.DataTable.ColumnChanging>在 **DataSet 設計工具** 上按兩下所需的資料行，以建立事件的事件處理常式。
 
 當您第一次按兩下資料行時，設計工具會產生事件的事件處理常式 <xref:System.Data.DataTable.ColumnChanging> 。 `If...Then`此外也會建立一個語句，以測試特定的資料行。 例如，當您按兩下 Northwind Orders 資料表上的 [已產生 **日期** ] 資料行時，就會產生下列程式碼：
 
@@ -53,7 +54,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>在變更個別資料行值期間加入驗證
 
-1. 在**方案總管**中按兩下 *.xsd*檔來開啟資料集。 如需詳細資訊，請參閱 [逐步解說：在 DataSet 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1. 在 **方案總管** 中按兩下 *.xsd* 檔來開啟資料集。 如需詳細資訊，請參閱 [逐步解說：在 DataSet 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2. 按兩下要驗證的資料行。 此動作會建立 <xref:System.Data.DataTable.ColumnChanging> 事件處理常式。
 
@@ -62,7 +63,7 @@ End Sub
 
 3. 加入程式碼，以確認是否 `e.ProposedValue` 包含符合您應用程式需求的資料。 如果無法接受建議的值，請設定資料行以表示它包含錯誤。
 
-     下列程式碼範例會驗證 **Quantity** 資料行是否包含大於0的值。 如果 **Quantity** 小於或等於0，則會將資料行設定為錯誤。 `Else`如果**Quantity**超過0，子句會清除錯誤。 資料行變更事件處理常式中的程式碼應該如下所示：
+     下列程式碼範例會驗證 **Quantity** 資料行是否包含大於0的值。 如果 **Quantity** 小於或等於0，則會將資料行設定為錯誤。 `Else`如果 **Quantity** 超過0，子句會清除錯誤。 資料行變更事件處理常式中的程式碼應該如下所示：
 
     ```vb
     If (e.Column.ColumnName = Me.QuantityColumn.ColumnName) Then
@@ -106,11 +107,11 @@ End Sub
 
 當輸入訂單時，驗證會確定訂單未輸入具有日期時間或之前的日期時間。 在此範例中，必須比較「要求規定」和「日期日期」資料行的值，因此驗證個別資料行變更並不合理。
 
-<xref:System.Data.DataTable.RowChanging>按兩下**DataSet 設計工具**上資料表標題列中的資料表名稱，即可建立事件的事件處理常式。
+<xref:System.Data.DataTable.RowChanging>按兩下 **DataSet 設計工具** 上資料表標題列中的資料表名稱，即可建立事件的事件處理常式。
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>若要在整個資料列變更期間加入驗證
 
-1. 在**方案總管**中按兩下 *.xsd*檔來開啟資料集。 如需詳細資訊，請參閱 [逐步解說：在 DataSet 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1. 在 **方案總管** 中按兩下 *.xsd* 檔來開啟資料集。 如需詳細資訊，請參閱 [逐步解說：在 DataSet 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2. 按兩下設計工具上資料表的標題列。
 

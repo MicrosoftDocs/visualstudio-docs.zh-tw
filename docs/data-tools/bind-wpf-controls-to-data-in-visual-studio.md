@@ -1,5 +1,6 @@
 ---
 title: 將 WPF 控制項系結至資料-第1部分
+description: 將 WPF 控制項系結至資料。 若要建立這些資料繫結控制項，請將專案從 [資料來源] 視窗拖曳至 Visual Studio 的 WPF 設計工具。
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 27d0c14bcf09a3b0d30cd23dea0f8348c45fcab7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 697b5efb172a09f2dcd5512a6301febd7429411f
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282877"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94381918"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>將 WPF 控制項繫結至 Visual Studio 中的資料
 
@@ -31,18 +32,18 @@ ms.locfileid: "85282877"
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>將 WPF 控制項繫結至資料的工作
 
-下表列出可透過從 [資料來源]**** 視窗將項目拖曳至 [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] 所完成的工作。
+下表列出可透過從 [資料來源] 視窗將項目拖曳至 [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] 所完成的工作。
 
-|工作|更多資訊|
+|Task|詳細資訊|
 |----------| - |
 |建立新的資料繫結控制項。<br /><br /> 將現有控制項繫結至資料。|[將 WPF 控制項繫結至資料集](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |建立可顯示父子關係中相關資料的控制項：當使用者選取某個控制項中的父資料記錄時，另一個控制項會顯示選取之記錄的相關子資料。|[在 WPF 應用程式中顯示相關資料](../data-tools/display-related-data-in-wpf-applications.md)|
-|建立「查閱資料表」**，其根據某個資料表中的外部索引鍵欄位值，顯示另一個資料表的資訊。|[在 WPF 應用程式中建立查閱資料表](../data-tools/create-lookup-tables-in-wpf-applications.md)|
+|建立「查閱資料表」，其根據某個資料表中的外部索引鍵欄位值，顯示另一個資料表的資訊。|[在 WPF 應用程式中建立查閱資料表](../data-tools/create-lookup-tables-in-wpf-applications.md)|
 |將控制項繫結至資料庫中的圖片。|[從資料庫將控制項繫結至圖片](../data-tools/bind-controls-to-pictures-from-a-database.md)|
 
 ## <a name="valid-drop-targets"></a>有效置放目標
 
-[資料來源]**** 視窗中的項目，只能拖曳至 [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] 中的有效置放目標。 有效置放目標有兩種：容器和控制項。 容器是通常會包含控制項的使用者介面項目。 例如，格線是容器，視窗也是容器。
+[資料來源] 視窗中的項目，只能拖曳至 [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] 中的有效置放目標。 有效置放目標有兩種：容器和控制項。 容器是通常會包含控制項的使用者介面項目。 例如，格線是容器，視窗也是容器。
 
 ## <a name="generated-xaml-and-code"></a>產生的 XAML 和程式碼
 

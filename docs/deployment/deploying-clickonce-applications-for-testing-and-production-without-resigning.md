@@ -1,5 +1,7 @@
 ---
 title: 部署 ClickOnce 應用程式但不重新簽署
+description: 瞭解如何從多個網路位置部署 ClickOnce 應用程式，而不需要重新簽署或變更 ClickOnce 資訊清單。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,18 +21,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89e1d7970b26d5ba9bd49090362a6a4e8c09f78d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5644a890a8705c68852cb5f67e4d998e12338dc
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80395327"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382932"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>針對測試和實際執行伺服器部署 ClickOnce 應用程式，而不需進行簽署
 本文描述 .NET Framework 版本3.5 中引進的 ClickOnce 功能，可讓您從多個網路位置部署 ClickOnce 應用程式，而不需要重新簽署或變更 ClickOnce 資訊清單。
 
 > [!NOTE]
-> 在部署新版本的應用程式時，仍是慣用的方法。 可能的話，請使用「讓步」方法。 如需詳細資訊，請參閱[ *Mage.exe* (資訊清單產生和編輯工具) ](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。
+> 在部署新版本的應用程式時，仍是慣用的方法。 可能的話，請使用「讓步」方法。 如需詳細資訊，請參閱 [ *Mage.exe* (資訊清單產生和編輯工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。
 
  協力廠商開發人員和 Isv 可以加入宣告這項功能，讓客戶更輕鬆地更新應用程式。 這項功能可用於下列情況：
 
@@ -43,7 +45,7 @@ ms.locfileid: "80395327"
 
  在 .NET Framework 3.5 中對 ClickOnce 進行的變更時，協力廠商可能會將 ClickOnce 應用程式提供給另一個組織，然後將應用程式部署在自己的網路上。
 
- 為了充分利用此功能，ClickOnce 應用程式的開發人員必須 `deploymentProvider` 從其部署資訊清單中排除。 這項需求表示 `-providerUrl` 當您使用 Mage.exe 建立部署資訊清單時，必須排除引數。 或者，如果您要使用 MageUI.exe 產生部署資訊清單，您必須確定 [**應用程式資訊清單**] 索引標籤上的 [**啟動位置**] 文字方塊保持空白。
+ 為了充分利用此功能，ClickOnce 應用程式的開發人員必須 `deploymentProvider` 從其部署資訊清單中排除。 這項需求表示 `-providerUrl` 當您使用 Mage.exe 建立部署資訊清單時，必須排除引數。 或者，如果您要使用 MageUI.exe 產生部署資訊清單，您必須確定 [ **應用程式資訊清單** ] 索引標籤上的 [ **啟動位置** ] 文字方塊保持空白。
 
 ## <a name="deploymentprovider-and-application-updates"></a>deploymentProvider 和應用程式更新
  從 .NET Framework 3.5 開始，您不再需要在部署資訊清單中指定，就能 `deploymentProvider` 同時部署 ClickOnce 應用程式以進行線上和離線使用。 這種變更支援您必須自行封裝和簽署部署的情況，但允許其他公司透過其網路部署應用程式。
@@ -62,5 +64,5 @@ ms.locfileid: "80395327"
  如需建立可從不同網路位置部署之部署的逐步指引，請參閱逐步解說 [：手動部署不需要重新簽署的 ClickOnce 應用程式，並保留商標資訊](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)。
 
 ## <a name="see-also"></a>另請參閱
-- [*Mage.exe* (資訊清單產生和編輯工具) ](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
-- [*MageUI.exe* (資訊清單產生和編輯工具、圖形用戶端) ](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
+- [*Mage.exe* (資訊清單產生和編輯工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
+- [*MageUI.exe* (資訊清單產生和編輯工具、圖形用戶端)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)

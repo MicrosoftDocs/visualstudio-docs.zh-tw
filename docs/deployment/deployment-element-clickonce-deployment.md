@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;ClickOnce 部署 (的 deployment 元素) |Microsoft Docs'
+description: Deployment 元素會識別用來部署更新和暴露于系統的屬性。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,17 +23,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 988ce0859ab24377395cc4077f9e6fa42e0487a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3252c8f305b97564b8fb19affa83cc7dd837c97d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70887851"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382854"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;&gt;ClickOnce 部署 (的 deployment 元素) 
 識別用於更新部署及公開至系統的屬性。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 
@@ -64,9 +66,9 @@ ms.locfileid: "70887851"
 |--------------------------| - |
 | `install` | 必要。 指定此應用程式是否會在 Windows [ **開始** ] 功能表和 [主控台 **新增或移除程式** ] 應用程式中定義狀態。 有效值為 `true` 和 `false`。 如果 `false` [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 為，一律會從網路執行這個應用程式的最新版本，而且不會辨識 `subscription` 元素。 |
 | `minimumRequiredVersion` | 選擇性。 指定可在用戶端上執行的此應用程式的最小版本。 如果應用程式的版本號碼小於部署資訊清單中提供的版本號碼，應用程式將不會執行。 版本號碼必須以格式指定 `N.N.N.N` ，其中 `N` 是不帶正負號的整數。 如果 `install` 屬性為 `false` ，則 `minimumRequiredVersion` 不得設定。 |
-| `mapFileExtensions` | 選擇性。 預設為 `false`。 如果 `true` 為，則部署中的所有檔案都必須有 .deploy 副檔名。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 從 Web 服務器下載這些檔案後，就會立即從這些檔案中移除此延伸模組。 如果您使用發行您的應用程式 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，它會自動將此延伸模組新增至所有檔案。 此參數可讓您 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 從 Web 服務器下載部署內的所有檔案，以封鎖以 "unsafe" 擴充功能（例如 .exe）結尾的檔案。 |
-| `disallowUrlActivation` | 選擇性。 預設為 `false`。 如果為 `true` ，則會在 Internet Explorer 中按一下 url 或輸入 url，以防止已安裝的應用程式啟動。 如果 `install` 屬性不存在，則會忽略這個屬性。 |
-| `trustURLParameters` | 選擇性。 預設為 `false`。 如果 `true` 為，則允許 URL 包含傳遞至應用程式的查詢字串參數，很類似命令列引數會傳遞至命令列應用程式。 如需詳細資訊，請參閱 [如何：在線上 ClickOnce 應用程式中取得查詢字串資訊](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。<br /><br /> 如果 `disallowUrlActivation` 屬性為 `true` ，則 `trustUrlParameters` 必須從資訊清單中排除，或將明確設定為 `false` 。 |
+| `mapFileExtensions` | 選擇性。 預設值為 `false`。 如果 `true` 為，則部署中的所有檔案都必須有 .deploy 副檔名。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 從 Web 服務器下載這些檔案後，就會立即從這些檔案中移除此延伸模組。 如果您使用發行您的應用程式 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，它會自動將此延伸模組新增至所有檔案。 此參數可讓您 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 從 Web 服務器下載部署內的所有檔案，以封鎖以 "unsafe" 擴充功能（例如 .exe）結尾的檔案。 |
+| `disallowUrlActivation` | 選擇性。 預設值為 `false`。 如果為 `true` ，則會在 Internet Explorer 中按一下 url 或輸入 url，以防止已安裝的應用程式啟動。 如果 `install` 屬性不存在，則會忽略這個屬性。 |
+| `trustURLParameters` | 選擇性。 預設值為 `false`。 如果 `true` 為，則允許 URL 包含傳遞至應用程式的查詢字串參數，很類似命令列引數會傳遞至命令列應用程式。 如需詳細資訊，請參閱 [如何：在線上 ClickOnce 應用程式中取得查詢字串資訊](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。<br /><br /> 如果 `disallowUrlActivation` 屬性為 `true` ，則 `trustUrlParameters` 必須從資訊清單中排除，或將明確設定為 `false` 。 |
 
  `deployment`元素也包含下列子項目。
 

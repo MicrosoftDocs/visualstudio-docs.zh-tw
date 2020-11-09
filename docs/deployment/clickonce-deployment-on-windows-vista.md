@@ -1,5 +1,7 @@
 ---
 title: Windows Vista 的 ClickOnce 部署 |Microsoft Docs
+description: 瞭解 Visual Studio 如何產生 ClickOnce 的外部 UAC 資訊清單，以及需要外部資訊清單 Registration-Free COM 應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b76804eb8c06acbcdeac017108773056ee38338
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: c2e09225339a87c55c31d27d26b129e199385e99
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641492"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383075"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista 的 ClickOnce 部署
 
-在 Visual Studio 中建立應用程式以進行使用者帳戶控制 (UAC) 在 Windows Vista 上，通常會產生內嵌的資訊清單，並在應用程式的可執行檔中編碼為二進位 XML 資料。  ClickOnce 和免註冊的 COM 應用程式需要外部資訊清單，因此 Visual Studio 會為這些專案產生檔案，其中包含 UAC 資料，而不是內嵌的資訊清單。 針對 ClickOnce 和免註冊的 COM 部署，Visual Studio 會使用名為 *app.config* 的檔案中的資訊來產生外部 UAC 資訊清單資訊。 在所有其他情況下，Visual Studio 將 UAC 資料內嵌在應用程式的可執行檔中。
+在 Visual Studio 中建立應用程式以進行使用者帳戶控制 (UAC) 在 Windows Vista 上，通常會產生內嵌的資訊清單，並在應用程式的可執行檔中編碼為二進位 XML 資料。  ClickOnce 和 Registration-Free COM 應用程式需要外部資訊清單，因此 Visual Studio 會為這些專案產生檔案，其中包含 UAC 資料，而不是內嵌的資訊清單。 針對 ClickOnce 和 Registration-Free COM 部署，Visual Studio 會使用名為 *app.config* 的檔案中的資訊來產生外部 UAC 資訊清單資訊。 在所有其他情況下，Visual Studio 將 UAC 資料內嵌在應用程式的可執行檔中。
 
 Visual Studio 針對資訊清單產生提供下列選項：
 
@@ -34,13 +36,13 @@ Visual Studio 針對資訊清單產生提供下列選項：
 
    除非您使用 ClickOnce) ，否則這是預設的 (設定。 這項設定支援在 Windows Vista 上進行 Visual Studio 操作的一般方式，同時也會使用產生內部和外部資訊清單 `AsInvoker` 。
 
-- 使用外部資訊清單。 使用 *app.config*產生外部資訊清單。
+- 使用外部資訊清單。 使用 *app.config* 產生外部資訊清單。
 
-   這只會使用 *app.config*中的資訊來產生外部資訊清單。 當您使用 ClickOnce 或免註冊的 COM 發行應用程式時，Visual Studio 會將 *app.config* 新增至專案，然後新增此選項。
+   這只會使用 *app.config* 中的資訊來產生外部資訊清單。 當您使用 ClickOnce 或 Registration-Free COM 發行應用程式時，Visual Studio 會將 *app.config* 新增至專案，然後加入此選項。
 
 - 不使用資訊清單。 建立沒有資訊清單的應用程式。
 
-   這種方法也稱為 *虛擬化*。 使用此選項可與舊版 Visual Studio 的現有應用程式相容。
+   這種方法也稱為 *虛擬化* 。 使用此選項可與舊版 Visual Studio 的現有應用程式相容。
 
   您可以在 [專案設計工具] 的 [ **應用程式** ] 頁面上找到新的屬性， (僅針對 Visual c # 專案) 和 MSBuild 專案檔案格式。
 

@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 部署資訊清單 |Microsoft Docs
+description: 瞭解部署資訊清單，這是描述 ClickOnce 部署的 XML 檔案，包含要部署的目前 ClickOnce 應用程式版本。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,23 +17,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d2f3383731fcfa314c3b936cd42002186012439
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47589b909ee2b7ee367c81684ac53e2b5e4e7d70
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900475"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383088"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 部署資訊清單
 部署資訊清單是 XML 檔案，描述 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署，包括要部署的目前 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式版本之識別。
 
  部署資訊清單具有下列項目和屬性。
 
-| 項目 | 描述 | 屬性 |
+| 元素 | 描述 | 屬性 |
 | - | - | - |
 | [\<assembly> 元素](../deployment/assembly-element-clickonce-deployment.md) | 必要。 最上層項目。 | `manifestVersion` |
 | [\<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-deployment.md) | 必要。 識別此 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的應用程式資訊清單。 | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
-| [\<description> 元素](../deployment/description-element-clickonce-deployment.md) | 必要。 識別應用程式資訊，這些資訊用於建立殼層的存在和 [控制台] 中的 [新增或移除程式]**** 項目。 | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
+| [\<description> 元素](../deployment/description-element-clickonce-deployment.md) | 必要。 識別應用程式資訊，這些資訊用於建立殼層的存在和 [控制台] 中的 [新增或移除程式] 項目。 | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
 | [\<deployment> 元素](../deployment/deployment-element-clickonce-deployment.md) | 選擇性。 識別用於更新部署及公開至系統的屬性。 | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
 | [\<compatibleFrameworks> 元素](../deployment/compatibleframeworks-element-clickonce-deployment.md) | 必要。 識別安裝及執行此應用程式所需的 .NET Framework 版本。 | `SupportUrl` |
 | [\<dependency> 元素](../deployment/dependency-element-clickonce-deployment.md) | 必要。 識別部署所要安裝的應用程式版本，以及應用程式資訊清單的位置。 | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |

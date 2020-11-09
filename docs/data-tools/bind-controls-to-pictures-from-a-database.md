@@ -1,5 +1,6 @@
 ---
 title: 從資料庫將控制項繫結至圖片
+description: 您可以使用 [資料來源] 視窗，將資料庫中的影像系結至 Visual Studio 應用程式中的控制項。
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e9093c2a2d7cec95e4fdd08ff4273ae8f8126a36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a2033bfe6719ccd325a2409d20fbb0e77d92926
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282980"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382295"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>從資料庫將控制項繫結至圖片
 
@@ -39,13 +40,13 @@ ms.locfileid: "85282980"
 2. 在 [ **資料來源** ] 視窗中，展開所要的資料表或物件以顯示其資料行或屬性。
 
    > [!TIP]
-   > 如果 [**資料來源**] 視窗未開啟，請選取 [ **View**  >  **Other Windows**  >  **資料來源**] 將它開啟。
+   > 如果 [ **資料來源** ] 視窗未開啟，請選取 [ **View**  >  **Other Windows**  >  **資料來源** ] 將它開啟。
 
 3. 選取包含影像資料的資料行或屬性，然後從下拉式清單控制項清單中選取下列其中一個控制項：
 
-    - 如果 WPF 設計工具已開啟，請選取 [ **影像**]。
+    - 如果 WPF 設計工具已開啟，請選取 [ **影像** ]。
 
-    - 如果 Windows Forms 設計工具已開啟，請選取 [ **PictureBox**]。
+    - 如果 Windows Forms 設計工具已開啟，請選取 [ **PictureBox** ]。
 
     - 或者，您可以選取支援資料系結的不同控制項，而且可以顯示影像。 如果您要使用的控制項不在可用控制項的清單中，您可以將它加入清單中，然後選取它。 如需詳細資訊，請參閱 [將自訂控制項加入至 [資料來源] 視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。
 

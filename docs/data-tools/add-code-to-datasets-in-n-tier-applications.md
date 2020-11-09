@@ -1,5 +1,6 @@
 ---
 title: 將程式碼新增至多層式架構 (N-Tier) 應用程式中的資料集
+description: 在 Visual Studio 的多層式應用程式中，將程式碼新增至資料集。 建立資料集的部分類別檔案，並在其中加入程式碼 (，而不是 DatasetName 設計工具) 。
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -13,20 +14,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a57a05ddb8317ea31b852ded369ad7ef69d40bd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdbd6e728ebd4adea1a18d842651e9941098249c
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283082"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382191"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>將程式碼新增至多層式架構 (N-Tier) 應用程式中的資料集
 
-您可以藉由建立資料集的部分類別檔案，並在其中加入程式碼 (取代將程式碼新增至 *DatasetName*，來擴充資料集的功能。) 的資料集。 部分類別可讓特定類別的程式碼分散到多個實體檔案中。 如需詳細資訊，請參閱 [部分](/dotnet/visual-basic/language-reference/modifiers/partial) 或 [部分類別和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。
+您可以藉由建立資料集的部分類別檔案，並在其中加入程式碼 (取代將程式碼新增至 *DatasetName* ，來擴充資料集的功能。) 的資料集。 部分類別可讓特定類別的程式碼分散到多個實體檔案中。 如需詳細資訊，請參閱 [部分](/dotnet/visual-basic/language-reference/modifiers/partial) 或 [部分類別和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。
 
 每次對具型別資料集的資料集定義 (進行變更時，就會產生定義資料集的程式碼) 。 當您在執行任何修改資料集設定的 wizard 期間進行變更時，也會產生此程式碼。 若要避免在重新產生資料集期間刪除您的程式碼，請將程式碼加入至資料集的部分類別檔案。
 
-根據預設，在您分隔資料集和 TableAdapter 程式碼之後，結果會是每個專案中的個別類別檔案。 原始專案有一個名為 *DatasetName* 的檔案， (或包含 TableAdapter 程式碼的 *DatasetName.Designer.cs*) 。 在 [ **資料集專案** ] 屬性中指定的專案具有名為 *DatasetName* 的檔案， (或 *DatasetName.DataSet.Designer.cs*) 。此檔案包含資料集程式碼。
+根據預設，在您分隔資料集和 TableAdapter 程式碼之後，結果會是每個專案中的個別類別檔案。 原始專案有一個名為 *DatasetName* 的檔案， (或包含 TableAdapter 程式碼的 *DatasetName.Designer.cs* ) 。 在 [ **資料集專案** ] 屬性中指定的專案具有名為 *DatasetName* 的檔案， (或 *DatasetName.DataSet.Designer.cs* ) 。此檔案包含資料集程式碼。
 
 > [!NOTE]
 > 當您藉由設定 [ **資料集專案** ] 屬性) 來分隔資料集和 tableadapter (時，不會自動移動專案中的現有部分資料集類別。 您必須手動將現有的資料集部分類別移至資料集專案。
@@ -40,7 +41,7 @@ ms.locfileid: "85283082"
 
 2. 選取 **.xsd** 檔案以開啟資料集。
 
-3. 以滑鼠右鍵按一下您要加入程式碼的資料表 (標題列中的資料表名稱) ，然後選取 [ **視圖程式碼**]。
+3. 以滑鼠右鍵按一下您要加入程式碼的資料表 (標題列中的資料表名稱) ，然後選取 [ **視圖程式碼** ]。
 
      部分類別會在程式碼編輯器中建立並開啟。
 

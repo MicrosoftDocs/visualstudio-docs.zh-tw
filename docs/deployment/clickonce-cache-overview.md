@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 快取總覽 |Microsoft Docs
+description: 瞭解 ClickOnce 應用程式快取，此快取包含儲存 ClickOnce 應用程式之用戶端電腦上的隱藏目錄。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d7abeeec4a640119e3089c795ac529a10f8dc09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed4bc8d045ff21a536016edc0a0ac64d99c63c2f
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84182621"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383101"
 ---
 # <a name="clickonce-cache-overview"></a>ClickOnce 快取概觀
 所有 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式（不論是在本機安裝或裝載于線上）都會儲存在用戶端電腦上的應用程式快取中 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 *cache* 快取 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 是在目前使用者的 [檔和設定] 資料夾的本機設定目錄下的隱藏目錄系列。 此快取會保存應用程式的所有檔案，包括元件、設定檔、應用程式和使用者設定，以及資料目錄。 快取也負責將應用程式的資料目錄遷移至最新版本。 如需資料移轉的詳細資訊，請參閱 [在 ClickOnce 應用程式中存取本機和遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。
@@ -31,7 +33,7 @@ ms.locfileid: "84182621"
 ## <a name="cache-storage-quota"></a>快取儲存體配額
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 在線上裝載的應用程式會受到限制快取大小的配額所能佔用的空間數量限制 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 快取大小會套用至所有使用者的線上應用程式;單一的部分信任線上應用程式僅限於佔用一半的配額空間。 已安裝的應用程式不會受到快取大小的限制，而且不會計入快取限制。 對於所有 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，快取只會保留目前的版本和先前安裝的版本。
 
- 用戶端電腦預設會有 250 MB 的儲存空間供線上 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式使用。 資料檔案不計入此限制。 系統管理員可以藉由變更登錄機碼 **HKEY_CURRENT_USER \software\classes\software\microsoft\windows\currentversion\deployment\onlineappquotainkb**來放大或減少特定用戶端電腦上的此配額，這是表示快取大小（以 kb 為單位）的 DWORD 值。 例如，為了將快取大小縮減為 50 MB，您可以將此值變更為51200。
+ 用戶端電腦預設會有 250 MB 的儲存空間供線上 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式使用。 資料檔案不計入此限制。 系統管理員可以藉由變更登錄機碼 **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment\OnlineAppQuotaInKB** 來放大或減少特定用戶端電腦上的此配額，這是表示快取大小（以 kb 為單位）的 DWORD 值。 例如，為了將快取大小縮減為 50 MB，您可以將此值變更為51200。
 
 ## <a name="see-also"></a>另請參閱
 - [在 ClickOnce 應用程式中存取本機和遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

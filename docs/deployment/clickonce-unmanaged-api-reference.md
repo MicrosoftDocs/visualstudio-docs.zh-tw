@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 非受控 API 參考 |Microsoft Docs
+description: 從 dfshim.dll 瞭解 ClickOnce 非受控公用 Api，包括 CleanOnlineAppCache、GetDeploymentDataFromManifest 和 LaunchApplication。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 api_name:
 - CleanOnlineAppCache
@@ -28,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b536a17df4f54158aa6f157a0d9795cf359ddc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5ca8c18c0ed69080a14ba31d4da6d80fa9ae6d4
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900266"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382607"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>ClickOnce 非受控 API 參考
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dfshim.dll 的非受控公用 Api。

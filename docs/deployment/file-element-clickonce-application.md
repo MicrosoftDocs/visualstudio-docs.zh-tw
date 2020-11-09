@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt; (ClickOnce 應用程式) 的 file 元素 |Microsoft Docs'
+description: File 元素會識別應用程式下載並使用的所有 nonassembly 檔案。 File 元素是選擇性的。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,17 +24,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9345f3f094e1c48204892cd40cca71a7e28eba7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a4d09d4a0e141359b066f2af31c158f36c96522
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900267"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382737"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;&gt;ClickOnce 應用程式) 的 file 元素 (
 識別應用程式下載並使用的所有 nonassembly 檔案。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <file

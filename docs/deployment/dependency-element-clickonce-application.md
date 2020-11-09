@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt; (ClickOnce 應用程式) 的相依性元素 |Microsoft Docs'
+description: Dependency 專案會識別應用程式所需的平臺或元件相依性。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -26,17 +28,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa949aa2f8e718ab0209c54a0ea2160c042a4eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7896fa2d39bafc793c5fd74f66f4991cf5e8461
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71252487"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382945"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;&gt; (ClickOnce 應用程式) 的相依性元素
 識別應用程式所需的平臺或元件相依性。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 

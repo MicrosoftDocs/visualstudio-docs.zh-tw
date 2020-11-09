@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt; (ClickOnce 部署的元件元素) |Microsoft Docs'
+description: Assembly 元素是根項目，而且是 ClickOnce 部署中的必要專案。 其第一個包含的元素必須是 assemblyIdentity 元素。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,21 +18,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b639a7f95cfb59844fa37963730e22ead450482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dde3bdb5fc0e9c6ea256aaa4368623a8e8af18d6
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929081"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383231"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;&gt;ClickOnce 部署 (的 assembly 元素) 
 部署資訊清單的最上層元素。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 
-      <assembly  
+      <assembly  
    manifestVersion
 />
 ```

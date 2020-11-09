@@ -1,5 +1,6 @@
 ---
 title: 在 Visual Studio 中使用資料
+description: 使用 Visual Studio 中的資料。 建立應用程式，以透過本機電腦、Lan 或公用或私用雲端連接其他資料庫產品或服務中的資料。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d1a82cc5fc5ea34f007750a08c0e8140421a9f41
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: 846898c1cf93d0f90ce04e77ee93bd8802e22ec2
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959818"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382087"
 ---
 # <a name="work-with-data-in-visual-studio"></a>在 Visual Studio 中使用資料
 
@@ -26,10 +27,10 @@ ms.locfileid: "91959818"
 針對 JavaScript、Python、PHP、Ruby 或 c + + 中的應用程式，您可以藉由取得程式庫及撰寫程式碼，來連接到任何其他資料。 針對 .NET 應用程式，Visual Studio 提供的工具可讓您用來流覽資料來源、建立物件模型以儲存和操作記憶體中的資料，以及將資料系結至使用者介面。 Microsoft Azure 提供適用于 .NET、JAVA、Node.js、PHP、Python、Ruby 和行動裝置應用程式的 Sdk，以及 Visual Studio 中用來連接到 Azure 儲存體的工具。
 
 ::: moniker range="vs-2017"
-下列清單顯示可從 Visual Studio 使用的許多資料庫和儲存系統的其中一部分。 [Microsoft Azure](https://azure.microsoft.com/)供應專案是資料服務，包括基礎資料存放區的所有布建和管理。 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)中的**azure 開發**工作負載可讓您直接從 Visual Studio 使用 azure 資料存放區。
+下列清單顯示可從 Visual Studio 使用的許多資料庫和儲存系統的其中一部分。 [Microsoft Azure](https://azure.microsoft.com/)供應專案是資料服務，包括基礎資料存放區的所有布建和管理。 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)中的 **azure 開發** 工作負載可讓您直接從 Visual Studio 使用 azure 資料存放區。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-下列清單顯示可從 Visual Studio 使用的許多資料庫和儲存系統的其中一部分。 [Microsoft Azure](https://azure.microsoft.com/)供應專案是資料服務，包括基礎資料存放區的所有布建和管理。 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)中的**azure 開發**工作負載可讓您直接從 Visual Studio 使用 azure 資料存放區。
+下列清單顯示可從 Visual Studio 使用的許多資料庫和儲存系統的其中一部分。 [Microsoft Azure](https://azure.microsoft.com/)供應專案是資料服務，包括基礎資料存放區的所有布建和管理。 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)中的 **azure 開發** 工作負載可讓您直接從 Visual Studio 使用 azure 資料存放區。
 ::: moniker-end
 
 ![Azure 開發工作負載](media/azure-development-workload.png)
@@ -70,13 +71,13 @@ ms.locfileid: "91959818"
 
 ::: moniker range="vs-2017"
 
-許多資料庫廠商和協力廠商都支援 NuGet 套件的 Visual Studio 整合。 您可以在 nuget.org 上探索這些供應專案，或透過 Visual Studio (**工具**  >  **nuget 封裝管理員**  >  **管理方案) 的 nuget 套件**中的 nuget 封裝管理員。 其他資料庫產品會以擴充功能與 Visual Studio 整合。 您可以在[Visual Studio Marketplace](https://marketplace.visualstudio.com/)中流覽這些供應專案，也可以流覽至 [**工具**  >  **擴充功能和更新**]，然後在對話方塊的左窗格中選取 [**線上**]。 如需詳細資訊，請參閱 [Visual Studio 的相容資料庫系統](../data-tools/installing-database-systems-tools-and-samples.md)。
+許多資料庫廠商和協力廠商都支援 NuGet 套件的 Visual Studio 整合。 您可以在 nuget.org 上探索這些供應專案，或透過 Visual Studio ( **工具**  >  **nuget 封裝管理員**  >  **管理方案) 的 nuget 套件** 中的 nuget 封裝管理員。 其他資料庫產品會以擴充功能與 Visual Studio 整合。 您可以在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)中流覽這些供應專案，也可以流覽至 [ **工具**  >  **擴充功能和更新** ]，然後在對話方塊的左窗格中選取 [ **線上** ]。 如需詳細資訊，請參閱 [Visual Studio 的相容資料庫系統](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-許多資料庫廠商和協力廠商都支援 NuGet 套件的 Visual Studio 整合。 您可以在 nuget.org 上探索這些供應專案，或透過 Visual Studio (**工具**  >  **nuget 封裝管理員**  >  **管理方案) 的 nuget 套件**中的 nuget 封裝管理員。 其他資料庫產品會以擴充功能與 Visual Studio 整合。 您可以在[Visual Studio Marketplace](https://marketplace.visualstudio.com/)中流覽這些供應專案，或流覽至 [**擴充**功能  >  **管理延伸**模組]，然後在對話方塊的左窗格中選取 [**線上**]。 如需詳細資訊，請參閱 [Visual Studio 的相容資料庫系統](../data-tools/installing-database-systems-tools-and-samples.md)。
+許多資料庫廠商和協力廠商都支援 NuGet 套件的 Visual Studio 整合。 您可以在 nuget.org 上探索這些供應專案，或透過 Visual Studio ( **工具**  >  **nuget 封裝管理員**  >  **管理方案) 的 nuget 套件** 中的 nuget 封裝管理員。 其他資料庫產品會以擴充功能與 Visual Studio 整合。 您可以在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)中流覽這些供應專案，或流覽至 [ **擴充** 功能  >  **管理延伸** 模組]，然後在對話方塊的左窗格中選取 [ **線上** ]。 如需詳細資訊，請參閱 [Visual Studio 的相容資料庫系統](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ::: moniker-end
 

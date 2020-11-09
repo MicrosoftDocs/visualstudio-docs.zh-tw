@@ -1,5 +1,6 @@
 ---
 title: 將 Windows Forms 控制項繫結至資料
+description: 將 Windows Forms 控制項系結至 Visual Studio 中的資料，讓您可以向應用程式的使用者顯示資料。
 ms.date: 11/03/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9af6c503b34d00ea88e74b8af40cd9e7ded643ff
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 48697fb5a031496b5e69c4dd8d6821ad243d3874
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508544"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382373"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>將 Windows Forms 控制項繫結至 Visual Studio 中的資料
 
@@ -31,7 +32,7 @@ ms.locfileid: "89508544"
 ![資料來源拖曳操作](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> 如果看不到 [**資料來源**] 視窗，您可以選擇 [ **View**  >  **Other Windows**  >  **資料來源**]，或按**Shift** + **Alt** + **D**來開啟它。 您必須在 Visual Studio 中開啟專案，才能看到 [ **資料來源** ] 視窗。
+> 如果看不到 [ **資料來源** ] 視窗，您可以選擇 [ **View**  >  **Other Windows**  >  **資料來源** ]，或按 **Shift** + **Alt** + **D** 來開啟它。 您必須在 Visual Studio 中開啟專案，才能看到 [ **資料來源** ] 視窗。
 
 拖曳專案之前，您可以設定要系結的控制項類型。 根據您選擇的是資料表本身或個別資料行，會顯示不同的值。  您也可以設定自訂值。 針對資料表， **詳細資料** 表示每個資料行都系結至不同的控制項。
 
@@ -53,7 +54,7 @@ ms.locfileid: "89508544"
 
 ## <a name="bind-to-data-in-a-datagridview-control"></a>系結至 DataGridView 控制項中的資料
 
-在 [DataGridView 控制項](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)中，整個資料表都會系結至該單一控制項。 當您將 **DataGridView** 拖曳至表單時，也會出現導覽記錄 () 的工具區域 <xref:System.Windows.Forms.BindingNavigator> 。 [資料集](../data-tools/dataset-tools-in-visual-studio.md)、 [TableAdapter](../data-tools/create-and-configure-tableadapters.md)、 <xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator> 都會出現在元件匣中。 在下圖中，也會加入 [TableAdapterManager](/previous-versions/bb384426(v=vs.140)) ，因為 Customers 資料表與 Orders 資料表具有關聯性。 這些變數全都在自動產生的程式碼中宣告為 form 類別中的私用成員。 用於填滿 **DataGridView** 的自動產生程式碼位於 `Form_Load` 事件處理常式中。 用來儲存資料以更新資料庫的程式碼位於 `Save` **BindingNavigator**的事件處理常式中。 您可以視需要移動或修改此程式碼。
+在 [DataGridView 控制項](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)中，整個資料表都會系結至該單一控制項。 當您將 **DataGridView** 拖曳至表單時，也會出現導覽記錄 () 的工具區域 <xref:System.Windows.Forms.BindingNavigator> 。 [資料集](../data-tools/dataset-tools-in-visual-studio.md)、 [TableAdapter](../data-tools/create-and-configure-tableadapters.md)、 <xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator> 都會出現在元件匣中。 在下圖中，也會加入 [TableAdapterManager](/previous-versions/bb384426(v=vs.140)) ，因為 Customers 資料表與 Orders 資料表具有關聯性。 這些變數全都在自動產生的程式碼中宣告為 form 類別中的私用成員。 用於填滿 **DataGridView** 的自動產生程式碼位於 `Form_Load` 事件處理常式中。 用來儲存資料以更新資料庫的程式碼位於 `Save` **BindingNavigator** 的事件處理常式中。 您可以視需要移動或修改此程式碼。
 
 ![GridView 與 BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
 
@@ -67,14 +68,14 @@ ms.locfileid: "89508544"
 
 ## <a name="bind-to-data-in-individual-controls"></a>系結至個別控制項中的資料
 
-當您將資料來源系結至 **詳細**資料時，資料集中的每個資料行都會系結至個別的控制項。
+當您將資料來源系結至 **詳細** 資料時，資料集中的每個資料行都會系結至個別的控制項。
 
 ![將資料來源系結至詳細資料](../data-tools/media/raddata-bind-data-source-to-details.png)
 
 > [!IMPORTANT]
-> 請注意，在上圖中，您會從 Customers 資料表的 Orders 屬性（而不是從 Orders 資料表）拖曳。 藉由系 `Customer.Orders` 結至屬性， **DataGridView** 中所建立的導覽命令會立即反映在詳細資料控制項中。 如果您從 Orders 資料表拖曳，控制項仍會系結至資料集，但不會與 **DataGridView**進行同步處理。
+> 請注意，在上圖中，您會從 Customers 資料表的 Orders 屬性（而不是從 Orders 資料表）拖曳。 藉由系 `Customer.Orders` 結至屬性， **DataGridView** 中所建立的導覽命令會立即反映在詳細資料控制項中。 如果您從 Orders 資料表拖曳，控制項仍會系結至資料集，但不會與 **DataGridView** 進行同步處理。
 
-下圖顯示在 [Customers] 資料表的 Orders 屬性系結至 [**資料來源**] 視窗中的**詳細**資料之後，加入至表單的預設資料繫結控制項。
+下圖顯示在 [Customers] 資料表的 Orders 屬性系結至 [ **資料來源** ] 視窗中的 **詳細** 資料之後，加入至表單的預設資料繫結控制項。
 
 ![訂單資料表系結至詳細資料](../data-tools/media/raddata-orders-table-bound-to-details.png)
 

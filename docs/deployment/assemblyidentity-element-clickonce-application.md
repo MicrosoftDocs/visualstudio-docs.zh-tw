@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;ClickOnce 應用程式)  (assemblyIdentity 元素 |Microsoft Docs'
+description: ClickOnce 應用程式中需要 assemblyIdentity 元素。 它不包含任何子項目，而且具有本文所述的屬性。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7870fcf644103ec7f048a809e439cb962f63bd07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c86d5d1fd1e25b498405197b68efd9553ed64f16
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900663"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383205"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;&gt;ClickOnce 應用程式)  (assemblyIdentity 元素
 識別部署在部署中的應用程式 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 

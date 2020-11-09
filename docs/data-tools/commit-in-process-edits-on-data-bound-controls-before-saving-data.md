@@ -1,6 +1,6 @@
 ---
 title: 未認可的編輯
-description: 儲存前先認可資料繫結控制項上的同進程編輯
+description: 儲存資料之前，請先認可資料系結 Windows Forms 控制項的同進程編輯。 針對表單上的所有 BindingSource 元件呼叫 EndEdit。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -20,18 +20,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e2188e20b2ba36a6ef3805faab9f80c4379f1f7
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: cd50ad6c0e81f337ad922f6fa994f0d900edb8b6
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038370"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382386"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>儲存資料前先認可資料繫結控制項上的同處理序編輯
 
 編輯資料繫結控制項中的值時，使用者必須流覽目前的記錄，以將更新的值認可至控制項所系結的基礎資料來源。 當您將專案從 [ [資料來源] 視窗](add-new-data-sources.md) 拖曳到表單上時，您卸載的第一個專案會產生程式碼到的 [ **儲存** ] 按鈕 click 事件中 <xref:System.Windows.Forms.BindingNavigator> 。 此程式碼會呼叫的 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 方法 <xref:System.Windows.Forms.BindingSource> 。 因此， <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 只會針對 <xref:System.Windows.Forms.BindingSource> 加入至表單的第一個來產生方法的呼叫。
 
-<xref:System.Windows.Forms.BindingSource.EndEdit%2A> 呼叫會認可目前所編輯的任何資料繫結控制項中，所有正在進行的變更。 因此，當資料繫結控制項還有焦點時，您可以按一下 [儲存]**** 按鈕，就會在實際儲存 (`TableAdapterManager.UpdateAll` 方法) 之前，先認可該控制項中所有暫止的編輯項目。
+<xref:System.Windows.Forms.BindingSource.EndEdit%2A> 呼叫會認可目前所編輯的任何資料繫結控制項中，所有正在進行的變更。 因此，當資料繫結控制項還有焦點時，您可以按一下 [儲存] 按鈕，就會在實際儲存 (`TableAdapterManager.UpdateAll` 方法) 之前，先認可該控制項中所有暫止的編輯項目。
 
 您可以將應用程式設定為自動認可變更，即使使用者嘗試在不認可變更的情況下儲存資料，做為儲存流程的一部分。
 

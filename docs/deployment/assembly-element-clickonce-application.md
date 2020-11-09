@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt; (ClickOnce 應用程式) 的元件元素 |Microsoft Docs'
+description: Assembly 元素是根項目，在 ClickOnce 應用程式中是必要專案。 其第一個包含的元素必須是 assemblyIdentity 元素。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b629243920021adc3833f43f268f05638029dc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c3614cd2d4fc0e6a5eebfb8dc6911e6eb183c01
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900756"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383218"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;&gt;ClickOnce 應用程式)  (assembly 元素
 應用程式資訊清單的最上層元素。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 

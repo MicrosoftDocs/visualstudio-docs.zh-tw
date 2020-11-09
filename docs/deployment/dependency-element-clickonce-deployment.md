@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt; (ClickOnce 部署) 的相依性元素 |Microsoft Docs'
+description: Dependency 元素會識別要安裝的應用程式版本，以及應用程式資訊清單的位置。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,17 +27,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84e26a2d7dae70e0029817d4e6bb6e70dd53bce4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e77f115eb4014f16107ae167576ed0d923bffe8
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928957"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382958"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;&gt; (ClickOnce 部署) 的相依性元素
 識別要安裝的應用程式版本，以及應用程式資訊清單的位置。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 

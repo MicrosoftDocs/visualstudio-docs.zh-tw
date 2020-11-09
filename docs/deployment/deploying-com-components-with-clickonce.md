@@ -1,5 +1,7 @@
 ---
 title: 使用 ClickOnce 部署 COM 元件 |Microsoft Docs
+description: 瞭解在 ClickOnce 中部署包含舊版 COM 元件的 .NET 應用程式所需的步驟。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,24 +20,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7032ec5ae03febf6c54978020379769ac742a136
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fc6ef0e4d682f0f712eefc4c139895331c31688
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838967"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382919"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 元件
 傳統 COM 元件的部署傳統上是一項困難的工作。 元件需要全域註冊，因此可能會在重迭的應用程式之間造成不必要的副作用。 這種情況通常不是 .NET Framework 應用程式中的問題，因為元件完全與應用程式隔離，或並存相容。 Visual Studio 可讓您在 Windows XP 或更高版本的作業系統上部署隔離的 COM 元件。
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 提供簡單且安全的機制，來部署您的 .NET 應用程式。 但是，如果您的應用程式使用舊版 COM 元件，則您必須採取額外的步驟來進行部署。 本主題說明如何部署隔離的 COM 元件和參考原生元件 (例如，從 Visual Basic 6.0 或 Visual C++) 。
 
- 如需部署隔離的 COM 元件的詳細資訊，請參閱 [使用 ClickOnce 和免註冊的 Com 簡化應用程式部署](https://web.archive.org/web/20050326005413/msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx)。
+ 如需部署隔離的 COM 元件的詳細資訊，請參閱 [使用 ClickOnce 和 Registration-Free COM 簡化應用程式部署](https://web.archive.org/web/20050326005413/msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx)。
 
 ## <a name="registration-free-com"></a>免註冊 COM
  免註冊的 COM 是一種新的技術，可用於部署和啟用隔離的 COM 元件。 它的運作方式是將所有元件的類型程式庫和註冊資訊（通常安裝在系統登錄中），放入名為資訊清單的 XML 檔案，並儲存在與應用程式相同的資料夾中。
 
- 隔離 COM 元件需要在開發人員的電腦上註冊，但不需要在終端使用者的電腦上註冊。 若要隔離 COM 元件，您只需要將其參考的 **隔離** 屬性設為 **True**。 根據預設，這個屬性會設定為 **False**，表示應該將它視為已註冊的 COM 參考。 如果這個屬性為 **True**，則會在組建階段產生此元件的資訊清單。 它也會在安裝期間將對應的檔案複製到應用程式資料夾。
+ 隔離 COM 元件需要在開發人員的電腦上註冊，但不需要在終端使用者的電腦上註冊。 若要隔離 COM 元件，您只需要將其參考的 **隔離** 屬性設為 **True** 。 根據預設，這個屬性會設定為 **False** ，表示應該將它視為已註冊的 COM 參考。 如果這個屬性為 **True** ，則會在組建階段產生此元件的資訊清單。 它也會在安裝期間將對應的檔案複製到應用程式資料夾。
 
  當資訊清單產生器遇到隔離的 COM 參考時，它會列舉 `CoClass` 元件類型程式庫中的所有專案，並將每個專案與其對應的註冊資料進行比對，並為類型程式庫檔案中的所有 COM 類別產生資訊清單定義。
 
@@ -57,14 +59,14 @@ ms.locfileid: "90838967"
 
 ##### <a name="to-create-a-native-com-component"></a>若要建立原生 COM 元件
 
-1. 使用 Visual Basic 6.0， **在 [檔案** ] 功能表中，依序按一下 [ **新增**] 和 [ **專案**]。
+1. 使用 Visual Basic 6.0， **在 [檔案** ] 功能表中，依序按一下 [ **新增** ] 和 [ **專案** ]。
 
-2. 在 [ **新增專案** ] 對話方塊中，選取 [ **Visual Basic** ] 節點，然後選取 [ **ActiveX DLL** 專案]。 在 [名稱]**** 方塊中，輸入 `VB6Hello`。
+2. 在 [ **新增專案** ] 對話方塊中，選取 [ **Visual Basic** ] 節點，然後選取 [ **ActiveX DLL** 專案]。 在 [名稱]  方塊中，輸入 `VB6Hello`。
 
     > [!NOTE]
     > 免註冊的 COM 只支援 ActiveX DLL 和 ActiveX 控制項專案類型;不支援 ActiveX EXE 和 ActiveX 檔專案類型。
 
-3. 在 **方案總管**中，按兩下 [ **Class1** ] 以開啟文字編輯器。
+3. 在 **方案總管** 中，按兩下 [ **Class1** ] 以開啟文字編輯器。
 
 4. 在 Class1 中，于方法的產生程式碼之後加入下列程式碼 `New` ：
 
@@ -74,7 +76,7 @@ ms.locfileid: "90838967"
     End Sub
     ```
 
-5. 建立元件。 從 [建置]**** 功能表中，按一下 [建置方案]****。
+5. 建立元件。 從 [建置] 功能表中，按一下 [建置方案]。
 
 > [!NOTE]
 > 免註冊的 COM 僅支援 Dll 和 COM 控制項專案類型。 您無法搭配免註冊的 COM 使用 Exe。
@@ -83,11 +85,11 @@ ms.locfileid: "90838967"
 
 ##### <a name="to-create-a-windows-based-application-using-a-com-component"></a>使用 COM 元件建立以 Windows 為基礎的應用程式
 
-1. 使用 Visual Basic， **在 [檔案** ] 功能表中，依序按一下 [ **新增**] 和 [ **專案**]。
+1. 使用 Visual Basic， **在 [檔案** ] 功能表中，依序按一下 [ **新增** ] 和 [ **專案** ]。
 
-2. 在 [ **新增專案** ] 對話方塊中，選取 [ **Visual Basic** ] 節點，然後選取 [ **Windows 應用程式**]。 在 [名稱]**** 方塊中，輸入 `RegFreeComDemo`。
+2. 在 [ **新增專案** ] 對話方塊中，選取 [ **Visual Basic** ] 節點，然後選取 [ **Windows 應用程式** ]。 在 [名稱]  方塊中，輸入 `RegFreeComDemo`。
 
-3. 在 **方案總管**中，按一下 [ **顯示所有** 檔案] 按鈕，以顯示專案參考。
+3. 在 **方案總管** 中，按一下 [ **顯示所有** 檔案] 按鈕，以顯示專案參考。
 
 4. 以滑鼠右鍵按一下 [ **參考** ] 節點，然後從內容功能表中選取 [ **加入參考** ]。
 
@@ -95,9 +97,9 @@ ms.locfileid: "90838967"
 
     參考清單中會出現 **VB6Hello** 參考。
 
-6. 指向 [ **工具箱**]，選取 **按鈕** 控制項，然後將它拖曳到 **Form1** 表單上。
+6. 指向 [ **工具箱** ]，選取 **按鈕** 控制項，然後將它拖曳到 **Form1** 表單上。
 
-7. 在 [ **屬性** ] 視窗中，將按鈕的 [ **Text** ] 屬性設定為 **Hello**。
+7. 在 [ **屬性** ] 視窗中，將按鈕的 [ **Text** ] 屬性設定為 **Hello** 。
 
 8. 按兩下按鈕以新增處理常式程式碼，然後在程式碼檔案中加入程式碼，讓處理常式讀取如下：
 
@@ -110,17 +112,17 @@ ms.locfileid: "90838967"
 
 9. 執行應用程式。 從 [偵錯] 功能表，按一下 [開始偵錯]。
 
-   接下來您需要隔離控制項。 您的應用程式所使用的每個 COM 元件都會在您的專案中表示為 COM 參考。 這些參考會顯示在**方案總管**視窗中的 [**參考**] 節點底下。  (請注意，您可以直接使用 [**專案**] 功能表上的 [**加入參考**] 命令來加入參考，或是將 ActiveX 控制項拖曳至表單上，以間接方式加入參考。 ) 
+   接下來您需要隔離控制項。 您的應用程式所使用的每個 COM 元件都會在您的專案中表示為 COM 參考。 這些參考會顯示在 **方案總管** 視窗中的 [ **參考** ] 節點底下。  (請注意，您可以直接使用 [ **專案** ] 功能表上的 [ **加入參考** ] 命令來加入參考，或是將 ActiveX 控制項拖曳至表單上，以間接方式加入參考。 ) 
 
    下列步驟顯示如何隔離 COM 元件，併發行包含隔離控制項的更新應用程式：
 
 ##### <a name="to-isolate-a-com-component"></a>隔離 COM 元件
 
-1. 在 **方案總管**的 [ **參考** ] 節點中，選取 **VB6Hello** 參考。
+1. 在 **方案總管** 的 [ **參考** ] 節點中，選取 **VB6Hello** 參考。
 
-2. 在 [ **屬性** ] 視窗中，將 [ **隔離** ] 屬性的值從 [ **False** ] 變更為 [ **True**]。
+2. 在 [ **屬性** ] 視窗中，將 [ **隔離** ] 屬性的值從 [ **False** ] 變更為 [ **True** ]。
 
-3. 從 [建置]**** 功能表中，按一下 [建置方案]****。
+3. 從 [建置] 功能表中，按一下 [建置方案]。
 
    現在，當您按下 F5 時，應用程式會如預期般運作，但它現在是在免註冊的 COM 下執行。 為了證明這一點，請嘗試取消註冊 VB6Hello.dll 元件，並在 Visual Studio IDE 之外執行 RegFreeComDemo1.exe。 這次按一下按鈕時，仍可正常運作。 如果您暫時重新命名應用程式資訊清單，則會再次失敗。
 
@@ -131,18 +133,18 @@ ms.locfileid: "90838967"
 
 ##### <a name="to-publish-an-application-update-with-an-isolated-com-component"></a>使用隔離的 COM 元件發行應用程式更新
 
-1. 在 [ **組建** ] 功能表中，按一下 [ **發佈 RegFreeComDemo**]。
+1. 在 [ **組建** ] 功能表中，按一下 [ **發佈 RegFreeComDemo** ]。
 
     [發行精靈] 隨即出現。
 
 2. 在 [發行] 嚮導中，指定本機電腦磁片上的位置，您可以在其中存取及檢查已發佈的檔案。
 
-3. 按一下 [完成]**** 發佈應用程式。
+3. 按一下 [完成] 發佈應用程式。
 
    如果您檢查已發行的檔案，您將會注意到 sysmon .ocx 檔案已包含在內。 控制項完全獨立于此應用程式，這表示如果終端使用者的電腦有另一個使用不同版本之控制項的應用程式，則無法干擾此應用程式。
 
 ## <a name="reference-native-assemblies"></a>參考原生元件
- Visual Studio 支援原生 Visual Basic 6.0 或 c + + 元件的參考;這類參考稱為原生參考。 您可以藉由驗證其 [ **檔案類型** ] 屬性設定為 [ **原生** ] 或 [ **ActiveX**]，來判斷參考是否為原生。
+ Visual Studio 支援原生 Visual Basic 6.0 或 c + + 元件的參考;這類參考稱為原生參考。 您可以藉由驗證其 [ **檔案類型** ] 屬性設定為 [ **原生** ] 或 [ **ActiveX** ]，來判斷參考是否為原生。
 
  若要加入原生參考，請使用 [ **加入參考** ] 命令，然後流覽至資訊清單。 某些元件會將資訊清單放入 DLL 內。 在這種情況下，您可以直接選擇 DLL 本身，Visual Studio 會將它新增為原生參考，如果它偵測到元件包含內嵌的資訊清單。 如果資訊清單與參考的元件位於相同的資料夾中，Visual Studio 也會自動包含資訊清單中列出的任何相依檔案或元件。
 

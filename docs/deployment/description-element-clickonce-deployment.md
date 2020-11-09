@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt; (ClickOnce 部署) 的 description 元素 |Microsoft Docs'
+description: Description 元素會識別用來建立 shell 存在性的應用程式資訊，以及主控台中的 [新增或移除程式] 專案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,22 +18,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c359b188894c40f017e3d2a0e06d52de87e9c5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4eb1de8f5692eedc9673f1a22cb448ac8d102ae5
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928804"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382828"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;&gt;ClickOnce 部署 (description 元素) 
 識別用來建立 shell 存在性的應用程式資訊，以及主控台中的 [ **新增或移除程式** ] 專案。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 
-      <description 
-   publisher 
+      <description 
+   publisher 
    product
    suiteName
    supportUrl
@@ -45,7 +47,7 @@ ms.locfileid: "62928804"
 |---------------|-----------------|
 |`publisher`|必要。 當部署已設定為安裝時，識別用於 Windows [ **開始** ] 功能表中的圖示位置，以及主控台中的 [ **新增或移除程式** ] 專案的公司名稱。|
 |`product`|必要。 識別完整的產品名稱。 用來當做 Windows [ **開始** ] 功能表中所安裝圖示的標題。|
-|`suiteName`|選擇性。 `publisher`在 Windows [**開始**] 功能表中，識別資料夾內的子資料夾。|
+|`suiteName`|選擇性。 `publisher`在 Windows [ **開始** ] 功能表中，識別資料夾內的子資料夾。|
 |`supportUrl`|選擇性。 指定主控台中的 [ **新增或移除程式** ] 專案所顯示的支援 URL。 當部署設定為安裝時，也會針對 Windows [ **開始** ] 功能表中的應用程式支援，建立此 URL 的快捷方式。|
 
 ## <a name="remarks"></a>備註

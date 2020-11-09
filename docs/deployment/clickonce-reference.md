@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 參考 |Microsoft Docs
+description: 您可以使用這些參考文章來瞭解用來表示 ClickOnce 應用程式的 XML 檔案結構。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f3b22dacdb0192df70f9fcb13b8a228188f129d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f852182baec22915f412a3753755b129053e0ad
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900322"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383023"
 ---
 # <a name="clickonce-reference"></a>ClickOnce 參考
 下列頁面描述用來表示 ClickOnce 應用程式的 XML 檔案結構。
 
 ## <a name="in-this-section"></a>本節內容
- [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)
+ [ndptecclick](../deployment/clickonce-application-manifest.md)
 
  列出並描述構成應用程式資訊清單的元素和屬性。
 

@@ -1,5 +1,6 @@
 ---
 title: 資料存取論壇
+description: 在公用論壇中尋找疑難排解錯誤和警告的協助。 查看資料相關論壇的清單。
 ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -224,12 +225,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0383de73992b96f6a458b389573e252b39d624b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8555a67bf9173767584c2bf37c1ed470548c4157
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587039"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382477"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>針對論壇上的資料存取錯誤進行疑難排解
 

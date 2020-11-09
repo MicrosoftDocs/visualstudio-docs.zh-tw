@@ -1,5 +1,7 @@
 ---
 title: 從命令列建立 ClickOnce 應用程式 |Microsoft Docs
+description: 瞭解如何從命令列建立 Visual Studio 專案，讓您可以使用自動化程式重現組建。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 065eea058ffa78c84428e031832e24837eb81d08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8423c2820aaf7daf479df6c14dd2e8de9e0e6e5a
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74797209"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383192"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>從命令列建置 ClickOnce 應用程式
 在中 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] ，您可以從命令列建立專案，即使它們是在整合式開發環境中建立 (IDE) 。 事實上，您可以 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 在僅安裝 .NET Framework 的另一部電腦上重建以建立的專案。 這可讓您使用自動化的程式（例如，在中央組建實驗室中），或使用超越建立專案本身範圍的先進腳本技術來重現組建。
@@ -29,7 +31,7 @@ ms.locfileid: "74797209"
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>使用 MSBuild 重現 ClickOnce 應用程式部署
  當您在命令列上叫用 msbuild/target： publish 時，它會告知 MSBuild 系統建立專案，並 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 在 [發行] 資料夾中建立應用程式。 這相當於在 IDE 中選取 [ **發行** ] 命令。
 
- 此命令會執行 *msbuild.exe*，在 Visual Studio 命令提示字元環境中的路徑上。
+ 此命令會執行 *msbuild.exe* ，在 Visual Studio 命令提示字元環境中的路徑上。
 
  「目標」是 MSBuild 的指標，可處理此命令。 主要目標是 "build" 目標和 "publish" 目標。 組建目標相當於選取組建命令 (或在 IDE 中按 F5) 。 如果您只想要建立您的專案，您可以鍵入來達成 `msbuild` 。 此命令的運作方式是因為組建目標是所產生之所有專案的預設目標 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 。 這表示您不需要明確地指定組建目標。 因此，輸入 `msbuild` 的操作與輸入的作業相同 `msbuild /target:build` 。
 
@@ -51,9 +53,9 @@ ms.locfileid: "74797209"
 
     [發行精靈] 隨即出現。
 
-1. 在 [發行] 嚮導中，按一下 **[完成]**。
+1. 在 [發行] 嚮導中，按一下 **[完成]** 。
 
-    Visual Studio 會產生並顯示預設的網頁，稱為 *Publish.htm*。
+    Visual Studio 會產生並顯示預設的網頁，稱為 *Publish.htm* 。
 
 1. 儲存您的專案，並記下儲存的資料夾位置。
 
@@ -63,9 +65,9 @@ ms.locfileid: "74797209"
 
 1. 結束 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]。
 
-2. 在 Windows [ **開始** ] 功能表中，依序按一下 [ **所有程式**] 和 [ **Microsoft Visual Studio**]，然後 **Visual Studio Tools**，然後 **Visual Studio 命令提示**字元]。 這應該會在目前使用者的根資料夾中開啟命令提示字元。
+2. 在 Windows [ **開始** ] 功能表中，依序按一下 [ **所有程式** ] 和 [ **Microsoft Visual Studio** ]，然後 **Visual Studio Tools** ，然後 **Visual Studio 命令提示** 字元]。 這應該會在目前使用者的根資料夾中開啟命令提示字元。
 
-3. 在 **Visual Studio 命令提示**字元中，將目前的目錄變更為您剛剛建立之專案的位置。 例如，輸入 `chdir My Documents\Visual Studio\Projects\CmdLineDemo`。
+3. 在 **Visual Studio 命令提示** 字元中，將目前的目錄變更為您剛剛建立之專案的位置。 例如，輸入 `chdir My Documents\Visual Studio\Projects\CmdLineDemo`。
 
 4. 若要移除「建立和發行專案」中產生的現有檔案 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ，請輸入 `rmdir /s publish` 。
 
@@ -73,7 +75,7 @@ ms.locfileid: "74797209"
 
 5. 輸入 `msbuild /target:publish`。
 
-   上述步驟會 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 在名為 **Publish**之專案的子資料夾中，產生完整的應用程式部署。 *CmdLineDemo：應用程式* 是 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署資訊清單。 *CmdLineDemo_1*的資料夾包含檔案*CmdLineDemo.exe*和*CmdLineDemo.exe 指令*清單（ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單）。 *Setup.exe* 是啟動載入器，預設會設定為安裝 .NET Framework。 Dotnetfx.exe 資料夾包含 .NET Framework 的可轉散發套件。 這是您透過 Web 或透過 UNC 或 CD/DVD 部署應用程式所需的完整檔案集。
+   上述步驟會 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 在名為 **Publish** 之專案的子資料夾中，產生完整的應用程式部署。 *CmdLineDemo：應用程式* 是 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署資訊清單。 *CmdLineDemo_1* 的資料夾包含檔案 *CmdLineDemo.exe* 和 *CmdLineDemo.exe 指令* 清單（ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單）。 *Setup.exe* 是啟動載入器，預設會設定為安裝 .NET Framework。 Dotnetfx.exe 資料夾包含 .NET Framework 的可轉散發套件。 這是您透過 Web 或透過 UNC 或 CD/DVD 部署應用程式所需的完整檔案集。
    
 > [!NOTE]
 > 例如，MSBuild 系統會使用 **PublishDir** 選項來指定輸出的位置 `msbuild /t:publish /p:PublishDir="<specific location>"` 。
@@ -81,7 +83,7 @@ ms.locfileid: "74797209"
 ## <a name="publish-properties"></a>發佈屬性
  當您在上述程式中發佈應用程式時，[發行] 嚮導會將下列屬性插入至您的專案檔。 這些屬性會直接影響 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的產生方式。
 
- 在*CmdLineDemo 中 vbproj*  /  *CmdLineDemo .csproj*：
+ 在 *CmdLineDemo 中 vbproj*  /  *CmdLineDemo .csproj* ：
 
 ```xml
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>
@@ -109,15 +111,15 @@ ms.locfileid: "74797209"
 msbuild /target:publish /property:BootstrapperEnabled=false
 ```
 
- 您可以 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 從 [**專案設計**工具] 的 [**發行**]、[**安全性**] 和 [**簽署**] 屬性頁，來控制發行屬性。 以下是發行屬性的描述，以及如何在應用程式設計工具的各種屬性頁面上設定每個屬性的指示：
+ 您可以 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 從 [ **專案設計** 工具] 的 [ **發行** ]、[ **安全性** ] 和 [ **簽署** ] 屬性頁，來控制發行屬性。 以下是發行屬性的描述，以及如何在應用程式設計工具的各種屬性頁面上設定每個屬性的指示：
 
-- `AssemblyOriginatorKeyFile` 決定用來簽署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單的金鑰檔。 您也可以使用這個相同的金鑰，將強式名稱指派給您的元件。 這個屬性是在 [**專案設計**工具] 的 [**簽署**] 頁面上設定。
+- `AssemblyOriginatorKeyFile` 決定用來簽署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單的金鑰檔。 您也可以使用這個相同的金鑰，將強式名稱指派給您的元件。 這個屬性是在 [ **專案設計** 工具] 的 [ **簽署** ] 頁面上設定。
 
   下列屬性會在 [ **安全性** ] 頁面上設定：
 
 - **啟用 ClickOnce 安全性設定** 可決定是否 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 要產生資訊清單。 最初建立專案時， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 資訊清單產生預設為關閉。 當您第一次發行時，嚮導會自動開啟此旗標。
 
-- **>targetzone** 可決定要發出至 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單的信任層級。 可能的值為「網際網路」、「LocalIntranet」和「自訂」。 網際網路和 LocalIntranet 會將預設許可權集合發出到您的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單。 LocalIntranet 是預設值，基本上表示完全信任。 自訂指定只將基底應用程式指令 *清單* 檔案中明確指定的許可權發出至 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單。 *App.config*檔案是僅包含信任資訊定義的部分資訊清單檔案。 它是隱藏的檔案，當您在 [ **安全性** ] 頁面上設定許可權時，會自動新增至您的專案。
+- **>targetzone** 可決定要發出至 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單的信任層級。 可能的值為「網際網路」、「LocalIntranet」和「自訂」。 網際網路和 LocalIntranet 會將預設許可權集合發出到您的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單。 LocalIntranet 是預設值，基本上表示完全信任。 自訂指定只將基底應用程式指令 *清單* 檔案中明確指定的許可權發出至 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單。 *App.config* 檔案是僅包含信任資訊定義的部分資訊清單檔案。 它是隱藏的檔案，當您在 [ **安全性** ] 頁面上設定許可權時，會自動新增至您的專案。
 
   下列是在 [ **發佈** ] 頁面上設定的屬性：
 

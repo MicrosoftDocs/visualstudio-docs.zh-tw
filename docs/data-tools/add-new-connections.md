@@ -1,5 +1,6 @@
 ---
 title: 新增連線
+description: 使用伺服器總管、Cloud Explorer 或 SQL Server 物件總管，將 Visual Studio 中的連接新增至 DB 或服務，以及探索 DB 內容和架構。
 ms.date: 11/04/2016
 ms.topic: how-to
 author: ghogen
@@ -7,16 +8,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f6f34c28a6bbba236a4d90e2f936fad0b2a3f60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34f3ef6823ddfae806de11b85cc5bfe6b14c9b19
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283056"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382412"
 ---
 # <a name="add-new-connections"></a>新增連線
 
-您可以使用 **伺服器總管**、 **Cloud Explorer**或 **SQL Server 物件總管**，測試與資料庫或服務的連接，以及探索資料庫內容和架構。 這些視窗的功能與某個程度重迭。 基本差異如下：
+您可以使用 **伺服器總管** 、 **Cloud Explorer** 或 **SQL Server 物件總管** ，測試與資料庫或服務的連接，以及探索資料庫內容和架構。 這些視窗的功能與某個程度重迭。 基本差異如下：
 
 - Server Explorer
 
@@ -32,7 +33,7 @@ ms.locfileid: "85283056"
 
 ## <a name="add-a-connection-in-server-explorer"></a>在伺服器總管中新增連接
 
-若要建立資料庫的連接，請按一下**伺服器總管**中的 [**加入連接**] 圖示，或以滑鼠右鍵按一下 [**資料連線**] 節點上的**伺服器總管**，然後選取 [**加入連接**]。 您也可以從這裡連接到另一部伺服器、SharePoint 服務或 Azure 服務上的資料庫。
+若要建立資料庫的連接，請按一下 **伺服器總管** 中的 [ **加入連接** ] 圖示，或以滑鼠右鍵按一下 [ **資料連線** ] 節點上的 **伺服器總管** ，然後選取 [ **加入連接** ]。 您也可以從這裡連接到另一部伺服器、SharePoint 服務或 Azure 服務上的資料庫。
 
 ![伺服器總管新的連接圖示](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
@@ -48,11 +49,11 @@ ms.locfileid: "85283056"
 
 ## <a name="test-the-connection"></a>測試連線
 
-選擇資料來源之後，請按一下 [ **測試連接**]。 如果不成功，您將需要根據廠商的檔進行疑難排解。
+選擇資料來源之後，請按一下 [ **測試連接** ]。 如果不成功，您將需要根據廠商的檔進行疑難排解。
 
 ![[測試連接]](../data-tools/media/raddata-test-connection.png)
 
-如果測試成功，您就可以建立 *資料來源*，這是一個 Visual Studio 詞彙，這是真正表示以基礎資料庫或服務為基礎的 *資料模型* 。
+如果測試成功，您就可以建立 *資料來源* ，這是一個 Visual Studio 詞彙，這是真正表示以基礎資料庫或服務為基礎的 *資料模型* 。
 
 ## <a name="see-also"></a>另請參閱
 

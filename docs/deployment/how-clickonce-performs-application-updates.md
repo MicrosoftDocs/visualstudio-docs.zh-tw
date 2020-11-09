@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 如何執行應用程式更新 |Microsoft Docs
+description: 瞭解 ClickOnce 如何使用檔案版本資訊來決定是否要更新應用程式。 ClickOnce 會使用檔案修補來避免下載多餘的檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9217558c68d47ef8f2bf34b10db16463ee76f857
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e0177f199f0178e9fe0221a4cb6daa58d36a6f87
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900015"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382663"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>ClickOnce 執行應用程式更新的方式
 ClickOnce 會使用應用程式部署資訊清單中指定的檔案版本資訊，來決定是否要更新應用程式的檔案。 開始更新之後，ClickOnce 會使用稱為「檔案 *修補* 」的技術，以避免重複下載應用程式檔。

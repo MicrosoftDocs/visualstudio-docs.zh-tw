@@ -1,8 +1,10 @@
 ---
 title: 將您的 Visual Studio 應用程式部署到資料夾、IIS、Azure 或其他目的地
 titleSuffix: ''
-description: 深入瞭解如何使用發佈嚮導發佈應用程式的選項
-ms.custom: contperfq1
+description: 深入瞭解如何使用 [發佈] 工具發佈您應用程式的選項。
+ms.custom:
+- SEO-VS-2020
+- contperfq1
 ms.date: 08/21/2020
 ms.topic: troubleshooting
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc551a6e9bf4e05db61ddeb2480e218ebb3c925
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: f8c4a1effcf61348d2f2267fb38164fd166f7d48
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928524"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382967"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>將您的應用程式部署到資料夾、IIS、Azure 或其他目的地
 
@@ -31,7 +33,7 @@ ms.locfileid: "91928524"
 - 不確定要選擇哪一個部署選項？ 查看 [哪些發佈選項適合我？](#what-publishing-options-are-right-for-me)
 - 如需 Azure App Service 或 IIS 部署問題的說明，請參閱 [Azure App Service 和 iis 上的 ASP.NET Core 疑難排解](/aspnet/core/test/troubleshoot-azure-iis)。
 - 如需設定 .NET 部署設定的說明，請參閱 [設定 .net 部署設定](#configure-net-deployment-settings)。
-- 若要部署到新的目標，如果您先前已建立發行設定檔，請從已設定設定檔的 [**發行**] 視窗中選取 [**新增**]。
+- 若要部署到新的目標，如果您先前已建立發行設定檔，請從已設定設定檔的 [ **發行** ] 視窗中選取 [ **新增** ]。
 
    ![建立新的發行設定檔](../deployment/media/create-a-new-publish-profile.png)
 
@@ -169,7 +171,7 @@ ms.locfileid: "91928524"
 
 FTP/FTPS 伺服器可讓您將應用程式部署至 Azure 以外的伺服器。 它可以部署至檔案系統或您具有存取權的任何其他伺服器 (網際網路或內部網路)，包括其他雲端服務上的伺服器。 它可以使用 Web 部署 (檔案或 .ZIP) 和 FTP。
 
-選擇 FTP/FTPS 伺服器時，Visual Studio 會提示您輸入設定檔名稱，然後收集其他 **連接** 資訊，包括目標伺服器或位置、網站名稱和認證。 您可以在 [設定]**** 索引標籤上控制下列行為：
+選擇 FTP/FTPS 伺服器時，Visual Studio 會提示您輸入設定檔名稱，然後收集其他 **連接** 資訊，包括目標伺服器或位置、網站名稱和認證。 您可以在 [設定] 索引標籤上控制下列行為：
 
 - 您想要部署的組態。
 - 是否要從目的地中移除現有的檔案。
@@ -188,7 +190,7 @@ FTP/FTPS 伺服器可讓您將應用程式部署至 Azure 以外的伺服器。 
 
 IIS 網頁伺服器可讓您將應用程式部署至 Azure 以外的 web 伺服器。 它可以部署到您擁有存取權的 IIS 伺服器 (網際網路或內部網路) ，包括其他雲端服務上的伺服器。 它可以搭配 Web Deploy 或 Web Deploy 套件使用。
 
-選擇 IIS web 伺服器時，Visual Studio 會提示您輸入設定檔名稱，然後收集其他 **連接** 資訊，包括目標伺服器或位置、網站名稱和認證。 您可以在 [設定]**** 索引標籤上控制下列行為：
+選擇 IIS web 伺服器時，Visual Studio 會提示您輸入設定檔名稱，然後收集其他 **連接** 資訊，包括目標伺服器或位置、網站名稱和認證。 您可以在 [設定] 索引標籤上控制下列行為：
 
 - 您想要部署的組態。
 - 是否要從目的地中移除現有的檔案。
@@ -209,7 +211,7 @@ IIS 網頁伺服器可讓您將應用程式部署至 Azure 以外的 web 伺服�
 
 ## <a name="import-profile"></a>匯入設定檔
 
-您可以在發佈至 IIS 或 Azure App Service 時匯入設定檔。 您可以使用*發佈設定檔*案 (* \* .publishsettings*) 來設定部署。 發行設定檔案是由 IIS 或 Azure App Service 所建立，或者可以手動方式建立，並可匯入至 Visual Studio 中。
+您可以在發佈至 IIS 或 Azure App Service 時匯入設定檔。 您可以使用 *發佈設定檔* 案 ( *\* .publishsettings* ) 來設定部署。 發行設定檔案是由 IIS 或 Azure App Service 所建立，或者可以手動方式建立，並可匯入至 Visual Studio 中。
 
 使用發行設定檔案可以簡化部署設定，並在小組環境中更妥善地運作，而不是手動設定每個部署設定檔。
 

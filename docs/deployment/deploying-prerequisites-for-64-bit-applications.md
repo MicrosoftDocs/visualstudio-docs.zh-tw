@@ -1,5 +1,7 @@
 ---
 title: 部署64位應用程式的必要條件 |Microsoft Docs
+description: 瞭解可轉散發套件，您可以使用這些可轉散發套件，作為在64位平臺上進行 ClickOnce 部署應用程式的必要條件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,15 +20,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c70b58577f8aa6e391215658afb7f8fa43c9bb5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c051e57bb6af707e7bd5c096e230966e98498bd2
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928873"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382906"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>部署 64 位元應用程式的必要條件
-ClickOnce 部署支援在 64 位元平台上的應用程式的安裝。 目標平台包括 **x86** (表示 32 位元平台)、**x64** (表示支援 AMD64 和 EM64T 指令集的電腦)，以及 **Itanium** (表示 64 位元 Itanium 處理器)。
+ClickOnce 部署支援在 64 位元平台上的應用程式的安裝。 目標平台包括 **x86** (表示 32 位元平台)、 **x64** (表示支援 AMD64 和 EM64T 指令集的電腦)，以及 **Itanium** (表示 64 位元 Itanium 處理器)。
 
 ## <a name="prerequisites"></a>Prerequisites
  下表列出一些可轉散發套件，您可以將它們當做 64 位元應用程式安裝的必要條件來使用。
@@ -38,8 +40,8 @@ ClickOnce 部署支援在 64 位元平台上的應用程式的安裝。 目標�
 | [!INCLUDE[vsto_runtime](../deployment/includes/vsto_runtime_md.md)] | 是 | 否 |
 | Visual C++ 2010 執行階段程式庫 (IA64) | 否 | 是 |
 | Visual C++ 2010 執行階段程式庫 (x64) | 是 | 否 |
-| Microsoft .NET Framework 4 (x86 和 x64) | 是 | |
-| Microsoft .NET Framework 4 Client Profile (x86 和 x64) | 是 | |
+| Microsoft .NET Framework 4 (x86 和 x64) | Yes | |
+| Microsoft .NET Framework 4 Client Profile (x86 和 x64) | Yes | |
 
 ## <a name="see-also"></a>另請參閱
 - [部署應用程式、服務和元件](../deployment/deploying-applications-services-and-components.md)

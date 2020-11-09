@@ -1,5 +1,7 @@
 ---
 title: '&lt;Customerrorreporting> &gt; 元素 (ClickOnce 部署) |Microsoft Docs'
+description: Customerrorreporting> 元素會指定發生錯誤時要顯示的 URI，而不是顯示例外狀況堆疊的錯誤對話方塊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d42bd1f7304d9f50b6334d9ac8ddd4f626605d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5576912fb428e15a6f8164e52d558e255e184fe3
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900367"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382516"
 ---
 # <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;&gt;ClickOnce 部署 (的 customerrorreporting> 元素) 
 指定要在錯誤發生時顯示的 URI。

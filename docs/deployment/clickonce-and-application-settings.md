@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 和應用程式設定 |Microsoft Docs
+description: 瞭解應用程式佈建檔在 ClickOnce 應用程式中的運作方式，以及 ClickOnce 如何在使用者升級到下一個版本時遷移設定。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a72b5bc3f3645d9af1008f2c178ab285e8b45449
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e51b850fa10ac660fbc3bd3a06428ddb92a060c4
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184129"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383127"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce 和應用程式設定
 Windows Forms 的應用程式設定可讓您輕鬆地在用戶端上建立、儲存和維護自訂的應用程式和使用者喜好設定。 下列檔說明應用程式佈建檔在 ClickOnce 應用程式中的運作方式，以及 ClickOnce 如何在使用者升級到下一個版本時遷移設定。
@@ -27,11 +29,11 @@ Windows Forms 的應用程式設定可讓您輕鬆地在用戶端上建立、儲
  下列資訊僅適用于預設的應用程式設定提供者，也就是 <xref:System.Configuration.LocalFileSettingsProvider> 類別。 如果您提供自訂提供者，該提供者將會決定其儲存資料的方式，以及它如何在版本之間升級其設定。 如需應用程式設定提供者的詳細資訊，請參閱 [應用程式設定架構](/dotnet/framework/winforms/advanced/application-settings-architecture)。
 
 ## <a name="application-settings-files"></a>應用程式佈建檔案
- 應用程式設定會使用兩個檔案： * \<app>.exe.config*和*user.config*，其中*應用*程式是您 Windows Forms 應用程式的名稱。 當應用程式第一次儲存使用者範圍的設定時，會在用戶端上建立*user.config* 。 相反地， * \<app>.exe.config*，則在部署之前，如果您定義了設定的預設值，就會存在。 當您使用 [ **發行** ] 命令時，Visual Studio 將會自動包含此檔案。 如果您使用 *Mage.exe* 或 *MageUI.exe*來建立 ClickOnce 應用程式，您必須在填入應用程式資訊清單時，確定此檔案包含在應用程式的其他檔案中。
+ 應用程式設定會使用兩個檔案： *\<app>.exe.config* 和 *user.config* ，其中 *應用* 程式是您 Windows Forms 應用程式的名稱。 當應用程式第一次儲存使用者範圍的設定時，會在用戶端上建立 *user.config* 。 相反地， *\<app>.exe.config* ，則在部署之前，如果您定義了設定的預設值，就會存在。 當您使用 [ **發行** ] 命令時，Visual Studio 將會自動包含此檔案。 如果您使用 *Mage.exe* 或 *MageUI.exe* 來建立 ClickOnce 應用程式，您必須在填入應用程式資訊清單時，確定此檔案包含在應用程式的其他檔案中。
 
- 在未使用 ClickOnce 部署的 Windows Forms 應用程式中，應用程式的* \<app>.exe.config*檔會儲存在應用程式目錄中，而*user.config*檔則會儲存在使用者的 [檔**和設定**] 資料夾中。 在 ClickOnce 應用程式中， * \<app>.exe.config*存在於 clickonce 應用程式快取內的應用程式目錄中， *user.config*存在於該應用程式的 clickonce 資料目錄中。
+ 在未使用 ClickOnce 部署的 Windows Forms 應用程式中，應用程式的 *\<app>.exe.config* 檔會儲存在應用程式目錄中，而 *user.config* 檔則會儲存在使用者的 [檔 **和設定** ] 資料夾中。 在 ClickOnce 應用程式中， *\<app>.exe.config* 存在於 clickonce 應用程式快取內的應用程式目錄中， *user.config* 存在於該應用程式的 clickonce 資料目錄中。
 
- 無論您如何部署應用程式，應用程式設定都能確保* \<app>.exe.config*的安全讀取存取，以及*user.config*的安全讀取/寫入存取權。
+ 無論您如何部署應用程式，應用程式設定都能確保 *\<app>.exe.config* 的安全讀取存取，以及 *user.config* 的安全讀取/寫入存取權。
 
  在 ClickOnce 應用程式中，應用程式設定所使用的配置檔案大小受限於 ClickOnce 快取的大小。 如需詳細資訊，請參閱 ClickOnce 快取 [總覽](../deployment/clickonce-cache-overview.md)。
 
@@ -42,10 +44,10 @@ Windows Forms 的應用程式設定可讓您輕鬆地在用戶端上建立、儲
 
 |變更類型|升級動作|
 |--------------------|--------------------|
-|將設定新增至* \<app>.exe.config*|新的設定會合並到目前版本的* \<app>.exe.config*|
-|從* \<app>.exe.config*移除的設定|舊的設定會從目前版本的* \<app>.exe.config*中移除|
-|設定的預設值已變更;本機設定仍設為*user.config*中的原始預設值|此設定會合並到目前版本的 *user.config* 中，並以新的預設值作為值|
-|設定的預設值已變更;*user.config*中設定為非預設值|此設定會合並到目前版本的 *user.config* ，並保留非預設值|
+|將設定新增至 *\<app>.exe.config*|新的設定會合並到目前版本的 *\<app>.exe.config*|
+|從 *\<app>.exe.config* 移除的設定|舊的設定會從目前版本的 *\<app>.exe.config* 中移除|
+|設定的預設值已變更;本機設定仍設為 *user.config* 中的原始預設值|此設定會合並到目前版本的 *user.config* 中，並以新的預設值作為值|
+|設定的預設值已變更; *user.config* 中設定為非預設值|此設定會合並到目前版本的 *user.config* ，並保留非預設值|
 
 如果您已建立自己的應用程式設定包裝函式類別，而且想要自訂更新邏輯，則可以覆寫 <xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A> 方法。
 

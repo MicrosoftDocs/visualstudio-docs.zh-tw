@@ -1,6 +1,6 @@
 ---
 title: 屬性類型不相符
-description: 無法建立關聯：屬性類型不符
+description: 無法建立關聯屬性類型不相符。 查看此 Visual Studio 物件關聯式設計工具 (O/R 設計工具) 訊息的相關資訊。
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
@@ -9,18 +9,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76d61361677923afda6125db1ae819a460a567f4
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: bce5a285f3bccdc2be8004f0eba4546bb7964a42
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743192"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382048"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>無法建立關聯&lt;關聯名稱&gt;：屬性類型不符
 
 無法建立關聯 \<association name> 屬性類型不相符。 屬性沒有相符的類型： \<property names> 。
 
-關聯由 [關聯編輯器]**** 對話方塊中選取的 [關聯屬性]**** 所定義。 關聯兩端屬性的資料型別必須相同。
+關聯由 [關聯編輯器] 對話方塊中選取的 [關聯屬性] 所定義。 關聯兩端屬性的資料型別必須相同。
 
 訊息中所列屬性的資料型別不同。
 
@@ -28,9 +28,9 @@ ms.locfileid: "89743192"
 
 1. 檢查訊息，並記下訊息中指定的屬性。
 
-2. 按一下 [確定]**** 以關閉對話方塊。
+2. 按一下 [確定] 以關閉對話方塊。
 
-3. 檢查**關聯屬性**，並選取資料類型相同的屬性。
+3. 檢查 **關聯屬性** ，並選取資料類型相同的屬性。
 
 4. 按一下 [確定]。
 
