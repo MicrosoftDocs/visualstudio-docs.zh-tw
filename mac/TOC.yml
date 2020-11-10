@@ -32,11 +32,9 @@
   items:
     - name: 自訂 IDE 的外觀和風格
       href: customizing-the-ide.md
-    - name: 擴充 Visual Studio for Mac
-      href: extending-visual-studio-mac.md
 - name: 專案和方案
   items:
-    - name: 概觀
+    - name: 總覽
       href: projects-and-solutions.md
     - name: 建立新專案
       href: create-new-projects.md
