@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e77f115eb4014f16107ae167576ed0d923bffe8
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 09e5973b39bae2fbf923cf97ac1bd9cf15e10874
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382958"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407675"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;&gt; (ClickOnce 部署) 的相依性元素
 識別要安裝的應用程式版本，以及應用程式資訊清單的位置。
@@ -128,7 +128,7 @@ ms.locfileid: "94382958"
 ## <a name="remarks"></a>備註
  部署資訊清單通常會有一個 `assemblyIdentity` 識別應用程式資訊清單名稱和版本的單一元素。
 
-## <a name="example"></a>範例
+## <a name="example-1"></a>範例 1
  下列程式碼範例顯示 `dependency` [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署資訊清單中的元素。
 
 ```xml
@@ -147,7 +147,7 @@ ms.locfileid: "94382958"
 </dependency>
 ```
 
-## <a name="example"></a>範例
+## <a name="example-2"></a>範例 2
  下列程式碼範例會指定已安裝在 GAC 中之元件的相依性。
 
 ```xml
@@ -158,7 +158,7 @@ ms.locfileid: "94382958"
 </dependency>
 ```
 
-## <a name="example"></a>範例
+## <a name="example-3"></a>範例 3
  下列程式碼範例會針對特定版本的 common language runtime 指定相依性。
 
 ```xml
@@ -169,7 +169,7 @@ ms.locfileid: "94382958"
 </dependency>
 ```
 
-## <a name="example"></a>範例
+## <a name="example-4"></a>範例 4
  下列程式碼範例會指定作業系統相依性。
 
 ```xml

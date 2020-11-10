@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: f2c965866cdd8494af53748e4023196d84136553
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7a28e9cea6db337cbe114c7e51c387315879ccd5
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811132"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407701"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>使用分析工具命令列收集 ASP.NET Web 應用程式的並行資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的並行方法可讓您收集資源爭用資料。
@@ -54,5 +54,5 @@ ms.locfileid: "90811132"
 
 - [並行視覺化檢視](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>參考
+## <a name="see-also"></a>另請參閱
 - [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)

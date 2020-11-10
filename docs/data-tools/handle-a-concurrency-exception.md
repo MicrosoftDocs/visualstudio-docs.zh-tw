@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d1c151b7f3afe977786ef3b308eff2de1c0857f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57820a7532255c0084bafc5134cf7793b8c88ab6
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282354"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407662"
 ---
 # <a name="handle-a-concurrency-exception"></a>處理並行例外狀況
 
@@ -39,7 +39,7 @@ ms.locfileid: "85282354"
 
 4. 使用 Northwind 資料庫中 Customers 資料表的資料來填滿資料集。
 
-5. 使用**伺服器總管**中的 [**顯示資料表資料**] 功能來存取 Customers 資料表的資料並變更記錄。
+5. 使用 **伺服器總管** 中的 [ **顯示資料表資料** ] 功能來存取 Customers 資料表的資料並變更記錄。
 
 6. 將相同的記錄變更為不同的值、更新資料集，並嘗試將變更寫入資料庫，這會導致引發並行處理錯誤。
 
@@ -49,11 +49,11 @@ ms.locfileid: "85282354"
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
-1. 如果您沒有 LocalDB SQL Server Express，請從 [SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)或透過 **Visual Studio 安裝程式**進行安裝。 在 **Visual Studio 安裝程式**中，您可以安裝 SQL Server Express LocalDB 作為 **資料儲存和處理** 工作負載的一部分，或安裝為個別的元件。
+1. 如果您沒有 LocalDB SQL Server Express，請從 [SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)或透過 **Visual Studio 安裝程式** 進行安裝。 在 **Visual Studio 安裝程式** 中，您可以安裝 SQL Server Express LocalDB 作為 **資料儲存和處理** 工作負載的一部分，或安裝為個別的元件。
 
 2. 遵循下列步驟來安裝 Northwind 範例資料庫：
 
-    1. 在 Visual Studio 中，開啟 [ **SQL Server 物件總管** ] 視窗。  (SQL Server 物件總管會安裝為 Visual Studio 安裝程式中 **資料儲存和處理** 工作負載的一部分。 ) 展開 **SQL Server** 節點。 以滑鼠右鍵按一下您的 LocalDB 實例，然後選取 [追加 **查詢**]。
+    1. 在 Visual Studio 中，開啟 [ **SQL Server 物件總管** ] 視窗。  (SQL Server 物件總管會安裝為 Visual Studio 安裝程式中 **資料儲存和處理** 工作負載的一部分。 ) 展開 **SQL Server** 節點。 以滑鼠右鍵按一下您的 LocalDB 實例，然後選取 [追加 **查詢** ]。
 
        [查詢編輯器] 視窗隨即開啟。
 
@@ -69,42 +69,42 @@ ms.locfileid: "85282354"
 
 1. 在 Visual Studio 中，於 [檔案]  功能表上選取 [新增]   > [專案]  。
 
-2. 展開左側窗格中的 [ **Visual c #** ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
+2. 展開左側窗格中的 [ **Visual c #** ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面** ]。
 
 3. 在中間窗格中，選取 [ **Windows Forms 應用程式** ] 專案類型。
 
-4. 將專案命名為 **ConcurrencyWalkthrough**，然後選擇 **[確定]**。
+4. 將專案命名為 **ConcurrencyWalkthrough** ，然後選擇 **[確定]** 。
 
-     隨即建立 **ConcurrencyWalkthrough** 專案，並將其加入至 **方案總管**，並在設計工具中開啟新的表單。
+     隨即建立 **ConcurrencyWalkthrough** 專案，並將其加入至 **方案總管** ，並在設計工具中開啟新的表單。
 
 ## <a name="create-the-northwind-dataset"></a>建立 Northwind 資料集
 
-接著，建立名為 **NorthwindDataSet**的資料集：
+接著，建立名為 **NorthwindDataSet** 的資料集：
 
-1. 在 [ **資料** ] 功能表上，選擇 [ **加入新資料來源**]。
+1. 在 [ **資料** ] 功能表上，選擇 [ **加入新資料來源** ]。
 
    [資料來源組態精靈] 隨即開啟。
 
-2. 在 [ **選擇資料來源類型** ] 畫面上，選取 [ **資料庫**]。
+2. 在 [ **選擇資料來源類型** ] 畫面上，選取 [ **資料庫** ]。
 
    ![Visual Studio 中的資料來源設定 Wizard](media/data-source-configuration-wizard.png)
 
-3. 從可用的連接清單中，選取 Northwind 範例資料庫的連接。 如果連接清單中沒有連接可用，請選取 [ **新增連接**]。
+3. 從可用的連接清單中，選取 Northwind 範例資料庫的連接。 如果連接清單中沒有連接可用，請選取 [ **新增連接** ]。
 
     > [!NOTE]
     > 如果您要連接至本機資料庫檔案，則當系統詢問您是否要將檔案加入至專案時，請選取 [ **否** ]。
 
-4. 在 [ **將連接字串儲存到應用程式佈建檔** ] 畫面上，選取 [ **下一步]**。
+4. 在 [ **將連接字串儲存到應用程式佈建檔** ] 畫面上，選取 [ **下一步]** 。
 
-5. 展開 [ **資料表]** 節點，然後選取 [ **Customers** ] 資料表。 資料集的預設名稱應該是 **NorthwindDataSet**。
+5. 展開 [ **資料表]** 節點，然後選取 [ **Customers** ] 資料表。 資料集的預設名稱應該是 **NorthwindDataSet** 。
 
 6. 選取 **[完成]** 將資料集加入至專案。
 
 ## <a name="create-a-data-bound-datagridview-control"></a>建立資料系結 DataGridView 控制項
 
-在本節中，您會 <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> 從 [**資料來源**] 視窗將 [ **Customers** ] 專案拖曳至 Windows Form，藉以建立。
+在本節中，您會 <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> 從 [ **資料來源** ] 視窗將 [ **Customers** ] 專案拖曳至 Windows Form，藉以建立。
 
-1. 若要開啟 [ **資料來源** ] 視窗，請選擇 [ **資料** ] 功能表上的 [ **顯示資料來源**]。
+1. 若要開啟 [ **資料來源** ] 視窗，請選擇 [ **資料** ] 功能表上的 [ **顯示資料來源** ]。
 
 2. 在 [ **資料來源** ] 視窗中，展開 [ **NorthwindDataSet** ] 節點，然後選取 [ **Customers** ] 資料表。
 
@@ -112,7 +112,7 @@ ms.locfileid: "85282354"
 
 4. 將資料表拖曳至表單的空白區域。
 
-     <xref:System.Windows.Forms.DataGridView>名為**CustomersDataGridView**的控制項和 <xref:System.Windows.Forms.BindingNavigator> 名為**CustomersBindingNavigator**的會加入至系結至的表單 <xref:System.Windows.Forms.BindingSource> 。 接著，它會系結至 NorthwindDataSet 中的 Customers 資料表。
+     <xref:System.Windows.Forms.DataGridView>名為 **CustomersDataGridView** 的控制項和 <xref:System.Windows.Forms.BindingNavigator> 名為 **CustomersBindingNavigator** 的會加入至系結至的表單 <xref:System.Windows.Forms.BindingSource> 。 接著，它會系結至 NorthwindDataSet 中的 Customers 資料表。
 
 ## <a name="test-the-form"></a>測試表單
 
@@ -122,7 +122,7 @@ ms.locfileid: "85282354"
 
      表單隨即出現，並以 <xref:System.Windows.Forms.DataGridView> 其控制項填入 Customers 資料表中的資料。
 
-2. 在 [偵錯]**** 功能表上，選取 [停止偵錯]****。
+2. 在 [偵錯] 功能表上，選取 [停止偵錯]。
 
 ## <a name="handle-concurrency-errors"></a>處理並行錯誤
 
@@ -169,21 +169,21 @@ ms.locfileid: "85282354"
 
 您剛剛撰寫的程式碼會呼叫程式， `CreateMessage` 向使用者顯示錯誤資訊。 在這個逐步解說中，您可以使用訊息方塊來顯示使用者的不同記錄版本。 這可讓使用者選擇是否要使用變更來覆寫記錄，或取消編輯。 當使用者選取選項 (按一下訊息方塊中的按鈕) ，回應就會傳遞給 `ProcessDialogResult` 方法。
 
-在程式 **代碼編輯器**中加入下列程式碼，以建立訊息。 在方法下方輸入此程式碼 `UpdateDatabase` ：
+在程式 **代碼編輯器** 中加入下列程式碼，以建立訊息。 在方法下方輸入此程式碼 `UpdateDatabase` ：
 
 [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
 [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
 ### <a name="process-the-users-response"></a>處理使用者的回應
 
-您也需要程式碼來處理使用者對訊息方塊的回應。 選項是使用建議的變更來覆寫資料庫中目前的記錄，或放棄本機變更，並使用目前在資料庫中的記錄來重新整理資料表。 如果使用者選擇 [ **是]**，則 <xref:System.Data.DataTable.Merge%2A> 會呼叫方法，並將 *preserveChanges* 引數設定為 **true**。 這會導致更新嘗試成功，因為原始版本的記錄現在會符合資料庫中的記錄。
+您也需要程式碼來處理使用者對訊息方塊的回應。 選項是使用建議的變更來覆寫資料庫中目前的記錄，或放棄本機變更，並使用目前在資料庫中的記錄來重新整理資料表。 如果使用者選擇 [ **是]** ，則 <xref:System.Data.DataTable.Merge%2A> 會呼叫方法，並將 *preserveChanges* 引數設定為 **true** 。 這會導致更新嘗試成功，因為原始版本的記錄現在會符合資料庫中的記錄。
 
 在上一節中新增的程式碼下方新增下列程式碼：
 
 [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
 [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
-## <a name="test-the-form"></a>測試表單
+## <a name="test-the-form-behavior"></a>測試表單行為
 
 您現在可以測試表單，以確保其行為如預期般運作。 若要模擬平行存取違規，您可以在填妥 NorthwindDataSet 之後變更資料庫中的資料。
 
@@ -191,20 +191,20 @@ ms.locfileid: "85282354"
 
 2. 表單出現後，請讓它保持執行並切換至 Visual Studio IDE。
 
-3. 在 [檢視]**** 功能表上，選擇 [伺服器總管]****。
+3. 在 [檢視] 功能表上，選擇 [伺服器總管]。
 
-4. 在 **伺服器總管**中，展開您的應用程式所使用的連接，然後展開 [ **資料表]** 節點。
+4. 在 **伺服器總管** 中，展開您的應用程式所使用的連接，然後展開 [ **資料表]** 節點。
 
-5. 以滑鼠右鍵按一下 [ **Customers** ] 資料表，然後選取 [ **顯示資料表資料**]。
+5. 以滑鼠右鍵按一下 [ **Customers** ] 資料表，然後選取 [ **顯示資料表資料** ]。
 
-6. 在第一個記錄 (**ALFKI**) 中，將 [ **連絡人姓名** ] 變更為 [ **Maria Anders2**]。
+6. 在第一個記錄 ( **ALFKI** ) 中，將 [ **連絡人姓名** ] 變更為 [ **Maria Anders2** ]。
 
     > [!NOTE]
     > 流覽至不同的資料列來認可變更。
 
 7. 切換至 ConcurrencyWalkthrough 執行的表單。
 
-8. 在表單 (**ALFKI**) 的第一筆記錄中，將 [ **連絡人** 資訊] 變更為 [ **Maria Anders1**]。
+8. 在表單 ( **ALFKI** ) 的第一筆記錄中，將 [ **連絡人** 資訊] 變更為 [ **Maria Anders1** ]。
 
 9. 選取 [儲存] 按鈕。
 

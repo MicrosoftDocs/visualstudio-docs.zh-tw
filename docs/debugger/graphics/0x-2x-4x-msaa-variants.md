@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 707d63d3ae5fb487f6232321a1d9d3128d379e06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e77c0d7b5cbba2faf73fcca85ffcd0db063d618e
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64816541"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407545"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 變異
 覆寫所有呈現目標和交換鏈結上的多重取樣消除鋸齒 (MSAA) 設定。
@@ -54,7 +54,7 @@ ms.locfileid: "64816541"
 
  播放偵測到這類衝突時，會盡力複寫想要的行為，但是可能無法精確地符合其結果。 雖然因誤解這些變異的影響而影響其效能的情況並不常見，但還是可能發生 (例如，像素著色器中的流量控制是由紋理的精確內容所決定時)，因為所複寫之紋理的內容可能不同。
 
-## <a name="example"></a>範例
+## <a name="example-1"></a>範例 1
  使用與下面類似的程式碼，即可針對使用 `ID3D11Device::CreateTexture2D` 所建立的呈現目標，重現這些變異：
 
 ```cpp
@@ -65,7 +65,7 @@ target_description.SampleDesc.Quality = 0;
 d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);
 ```
 
-## <a name="example"></a>範例
+## <a name="example-2"></a>範例 2
  或者，針對使用 IDXGISwapChain::CreateSwapChain 或 D3D11CreateDeviceAndSwapChain 所建立的交換鏈結，使用與下面類似的程式碼：
 
 ```cpp

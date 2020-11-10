@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05ac1f393632934f193f5f4efaaf9e5459ffbb14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7267060f2207b0842885dc3001c3926874be30a9
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705876"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407727"
 ---
 # <a name="registering-a-project-type"></a>註冊專案類型
 當您建立新的專案類型時，您必須建立登錄專案，讓 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 能夠辨識和使用您的專案類型。 您通常會使用登入指令檔 ( .rgs) 檔案來建立這些登錄專案。
@@ -29,7 +29,7 @@ ms.locfileid: "80705876"
 
  以下是來自 HKEY_CLASSES_ROOT 的範例。
 
-## <a name="example"></a>範例
+## <a name="example-1"></a>範例 1
 
 ```
 \.figp
@@ -56,14 +56,14 @@ ms.locfileid: "80705876"
 |`@`|REG_SZ|`&Open in Visual Studio`|將開啟此專案類型的預設應用程式。|
 |`@`|REG_SZ|`devenv.exe "%1"`|當開啟此類型的專案時，將會執行的預設命令。|
 
- 下列範例來自 HKEY_LOCAL_MACHINE，且位於登錄機碼 [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\99.0Exp\Packages] 底下。
+ 下列範例來自 HKEY_LOCAL_MACHINE，且位於登錄機碼 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\99.0Exp\Packages] 底下。
 
-## <a name="example"></a>範例
+## <a name="example-2"></a>範例 2
 
 ```
 \{ACEF4EB2-57CF-11D2-96F4-000000000000} (The CLSID for the VSPackage)
    @="FigPrj Project Package"
-   "InprocServer32"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\                      Debug\\FigPrj.dll"
+   "InprocServer32"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\                      Debug\\FigPrj.dll"
    "CompanyName"="Microsoft"
    "ProductName"="Figure Project Sample"
    "ProductVersion"="9.0"
@@ -93,21 +93,21 @@ ms.locfileid: "80705876"
 |`FigProjectsEvents`|REG_SZ|請參閱值的語句。|判斷針對這個 automation 事件傳回的文字字串。|
 |`FigProjectItemsEvents`|REG_SZ|請參閱值的語句。|判斷針對這個 automation 事件傳回的文字字串。|
 
- 下列所有範例都位於登錄機碼 [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] 底下的登錄中。
+ 下列所有範例都位於登錄機碼 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] 下的登錄中。
 
-## <a name="example"></a>範例
+## <a name="example-3"></a>範例 3
 
 ```
 \{C061DB26-5833-11D2-96F5-000000000000} (The CLSID for projects of this type)
    @="FigPrj Project"
    "DisplayName"="#2"
    "Package"="{ACEF4EB2-57CF-11D2-96F4-000000000000}"
-   "ProjectTemplatesDir"="C:\\Program Files\\VSIP 9.0\\EnvSDK\\FigPkgs\\                           FigPrj\\FigPrjProjects"
-   "ItemTemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                           FigPrjProjectItems"
+   "ProjectTemplatesDir"="C:\\Program Files\\VSIP 9.0\\EnvSDK\\FigPkgs\\                           FigPrj\\FigPrjProjects"
+   "ItemTemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                           FigPrjProjectItems"
    "DisplayProjectFileExtensions"="#3"
    "PossibleProjectExtensions"="figp"
    "DefaultProjectExtension"=".figp"
-\{C061DB26-5833-11D2-96F5-000000000000}\Filters\1       (Folder 1 contains settings for Open Files filters.)
+\{C061DB26-5833-11D2-96F5-000000000000}\Filters\1       (Folder 1 contains settings for Open Files filters.)
    @="#4"
    "CommonOpenFilesFilter"=dword:00000000
    "CommonFindFilesFilter"=dword:00000000
@@ -126,7 +126,7 @@ ms.locfileid: "80705876"
    "SortPriority"=dword:000003e8
 \{C061DB26-5833-11D2-96F5-000000000000}\AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000}\1 (Second GUID indicates the registered project type for the Add Items templates.)
    @="#6"
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"
    "SortPriority"=dword:00000064
 ```
 
@@ -157,9 +157,9 @@ ms.locfileid: "80705876"
 
  依預設，如果某個篩選沒有設定其中一或多個旗標，則會在列出一般篩選器之後，在 [ **加入現有專案** ] 對話方塊和 [ **開啟** 檔案] 對話方塊中使用篩選。 篩選準則不會用在 [檔案 **中尋找** ] 對話方塊中。
 
- 下列所有範例都位於登錄機碼 [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] 底下的登錄中。
+ 下列所有範例都位於登錄機碼 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] 下的登錄中。
 
-## <a name="example"></a>範例
+## <a name="example-4"></a>範例 4
 
 ```
 {FE3BBBB6-72D5-11d2-9ACE-00C04F79A2A4} (The CLSID for Enterprise Projects)
@@ -177,9 +177,9 @@ ms.locfileid: "80705876"
 |`SortPriority`|REG_DWORD|`41 (x29)`|設定 [新增專案] 對話方塊中顯示之專案的排序次序。|
 |`NewProjectDialogOnly`|REG_DWORD|`0`|0表示此類型的專案只顯示在 [新增專案] 對話方塊中。|
 
- 下列所有範例都位於登錄機碼 [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] 底下的登錄中。
+ 下列所有範例都位於登錄機碼 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] 下的登錄中。
 
-## <a name="example"></a>範例
+## <a name="example-5"></a>範例 5
 
 ```
 \{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3} (CLSID for Miscellaneous Files projects)
@@ -187,7 +187,7 @@ ms.locfileid: "80705876"
 \AddItemTemplates\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1
                                  (CLSID for Figures Project projects)
    @="#6"
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"
    "SortPriority"=dword:00000064
 ```
 
@@ -198,9 +198,9 @@ ms.locfileid: "80705876"
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|將在 [ **加入新專案** ] 對話方塊中顯示之專案的預設路徑。|
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|在 [ **加入新專案** ] 對話方塊的樹狀節點中，建立顯示的排序次序。|
 
- 下列範例位於登錄機碼 [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\Menus] 下的登錄中。
+ 下列範例位於登錄機碼 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Menus] 下的登錄中。
 
-## <a name="example"></a>範例
+## <a name="example-6"></a>範例 6
 
 ```
 "{ACEF4EB2-57CF-11D2-96F4-000000000000}"=",1000,1"
@@ -224,10 +224,10 @@ ms.locfileid: "80705876"
 |----------|----------|----------|-----------------|
 |% CLSID_Package%|REG_SZ|`,1000,1`|用來取得功能表資訊的資源。|
 
- 下列所有範例都位於登錄機碼 [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates] 底下的登錄中。
+ 下列所有範例都位於登錄機碼 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates] 下的登錄中。
 
 ```
-\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)
+\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)
    @="#7"
    "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\FigPrjProjects"
    "SortPriority"=dword:00000029
@@ -241,7 +241,7 @@ ms.locfileid: "80705876"
 |`SortPriority`|REG_DWORD|`41 (x29)`|在 [ **新增專案** ] 對話方塊的樹狀節點中，建立專案的顯示順序。|
 |`NewProjectDialogOnly`|REG_DWORD|`0`|0表示此類型的專案只顯示在 [ **新增專案** ] 對話方塊中。|
 
- 下列範例位於登錄機碼 [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\InstalledProducts] 下的登錄中。
+ 下列範例位於登錄機碼 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\InstalledProducts] 下的登錄中。
 
 ```
 \FiguresProductSample
@@ -256,11 +256,11 @@ ms.locfileid: "80705876"
 
  控制新專案類型的 .vsz 檔案通常包含 RELATIVE_PATH 專案。 此路徑相對於下列安裝程式索引鍵的專案類型 \ProductDir 專案中所指定的路徑：
 
- HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup
+ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup
 
  例如，Enterprise Framework 專案範本會新增下列登錄專案：
 
- HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup\EF\ProductDir = C:\Program Files\Microsoft Visual Studio\EnterpriseFrameworks\
+ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup\EF\ProductDir = C:\Program Files\Microsoft Visual Studio\EnterpriseFrameworks\
 
  這表示，如果您在 .vsz 檔案中包含 PROJECT_TYPE = EF 專案，環境會在先前指定的 ProductDir 目錄中尋找您的 .vsz 檔。
 
