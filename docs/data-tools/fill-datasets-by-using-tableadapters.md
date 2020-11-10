@@ -1,5 +1,7 @@
 ---
 title: 使用 TableAdapter 填入資料集
+description: 使用 Tableadapter 填滿資料集。 TableAdapter 元件會根據您指定的一或多個查詢或預存程式，以資料庫中的資料填入資料集。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 888e2ac47348d7e61d115f51e3ea52d15ea9f447
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6a10eb996acbdbf5411688860ce2ec8b00da1f6
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282432"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436455"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 TableAdapter 填入資料集
 
@@ -35,7 +37,7 @@ TableAdapter 元件會根據您指定的一或多個查詢或預存程式，使�
 
 如需有關 TableAdapter 作業的詳細資訊，您可以直接跳到下列其中一個主題：
 
-|主題|描述|
+|主題|說明|
 |-----------|-----------------|
 |[建立和設定 TableAdapter](../data-tools/create-and-configure-tableadapters.md)|如何使用設計工具來建立和設定 Tableadapter|
 |[建立參數型 TableAdapter 查詢](../data-tools/create-parameterized-tableadapter-queries.md)|如何讓使用者提供引數給 TableAdapter 程式或查詢|
@@ -52,7 +54,7 @@ Tableadapter 是由設計工具產生的元件，可連接到資料庫、執行�
 
 ![用戶端應用程式中的資料流程](../data-tools/media/clientdatadiagram.gif)
 
-雖然 Tableadapter 是使用 **DataSet 設計工具**所設計，但 TableAdapter 類別不會產生為的嵌套類別  <xref:System.Data.DataSet> 。 它們位於個別的命名空間中，每個資料集都有特定的命名空間。 例如，如果您有一個名為的資料集 `NorthwindDataSet` ，則中與的相關聯的 tableadapter 會  <xref:System.Data.DataTable> `NorthwindDataSet` 在 `NorthwindDataSetTableAdapters` 命名空間中。 若要以程式設計方式存取特定的 TableAdapter，您必須宣告 TableAdapter 的新實例。 例如：
+雖然 Tableadapter 是使用 **DataSet 設計工具** 所設計，但 TableAdapter 類別不會產生為的嵌套類別  <xref:System.Data.DataSet> 。 它們位於個別的命名空間中，每個資料集都有特定的命名空間。 例如，如果您有一個名為的資料集 `NorthwindDataSet` ，則中與的相關聯的 tableadapter 會  <xref:System.Data.DataTable> `NorthwindDataSet` 在 `NorthwindDataSetTableAdapters` 命名空間中。 若要以程式設計方式存取特定的 TableAdapter，您必須宣告 TableAdapter 的新實例。 例如：
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -63,7 +65,7 @@ Tableadapter 是由設計工具產生的元件，可連接到資料庫、執行�
 
 ## <a name="tableadapter-update-commands"></a>TableAdapter 更新命令
 
-TableAdapter 的更新功能取決於 **Tableadapter Wizard**的主要查詢中有多少可用的資訊。 例如，設定為從多個資料表提取值 (使用) 、純量 `JOIN` 值、views 或彙總函式的結果的 tableadapter，最初不是以將更新傳送回基礎資料庫的能力來建立。 不過，您可以 `INSERT` `UPDATE` `DELETE` 在 [ **屬性** ] 視窗中手動設定、和命令。
+TableAdapter 的更新功能取決於 **Tableadapter Wizard** 的主要查詢中有多少可用的資訊。 例如，設定為從多個資料表提取值 (使用) 、純量 `JOIN` 值、views 或彙總函式的結果的 tableadapter，最初不是以將更新傳送回基礎資料庫的能力來建立。 不過，您可以 `INSERT` `UPDATE` `DELETE` 在 [ **屬性** ] 視窗中手動設定、和命令。
 
 ## <a name="tableadapter-queries"></a>TableAdapter 查詢
 
@@ -81,11 +83,11 @@ Tableadapter 可以包含多個查詢來填滿其相關聯的資料表。 只要
 
 ## <a name="tableadapter-inheritance"></a>TableAdapter 繼承
 
-Tableadapter 藉由封裝已設定的類別，來擴充標準資料配接器的功能 <xref:System.Data.Common.DataAdapter> 。 根據預設，TableAdapter 繼承自 <xref:System.ComponentModel.Component> 類別，無法轉換成 <xref:System.Data.Common.DataAdapter> 類別。 將 TableAdapter 轉換成 <xref:System.Data.Common.DataAdapter> 類別會導致 <xref:System.InvalidCastException> 錯誤。 若要變更 TableAdapter 的基類，您可以在 <xref:System.ComponentModel.Component> **DataSet 設計工具**中，于 TableAdapter 的**基類**屬性中指定衍生自的類別。
+Tableadapter 藉由封裝已設定的類別，來擴充標準資料配接器的功能 <xref:System.Data.Common.DataAdapter> 。 根據預設，TableAdapter 繼承自 <xref:System.ComponentModel.Component> 類別，無法轉換成 <xref:System.Data.Common.DataAdapter> 類別。 將 TableAdapter 轉換成 <xref:System.Data.Common.DataAdapter> 類別會導致 <xref:System.InvalidCastException> 錯誤。 若要變更 TableAdapter 的基類，您可以在 <xref:System.ComponentModel.Component> **DataSet 設計工具** 中，于 TableAdapter 的 **基類** 屬性中指定衍生自的類別。
 
 ## <a name="tableadapter-methods-and-properties"></a>TableAdapter 方法和屬性
 
-TableAdapter 類別不是 .NET 類型。 這表示您無法在檔或 **物件瀏覽器**中查閱。 當您使用稍早所述的其中一個嚮導時，就會在設計階段建立它。 當您建立時，指派給 TableAdapter 的名稱是以您正在使用之資料表的名稱為基礎。 例如，當您根據名為的資料庫中的資料表建立 TableAdapter 時， `Orders` 會將 tableadapter 命名為 `OrdersTableAdapter` 。 您可以使用**DataSet 設計工具**中的**name**屬性來變更 TableAdapter 的類別名稱。
+TableAdapter 類別不是 .NET 類型。 這表示您無法在檔或 **物件瀏覽器** 中查閱。 當您使用稍早所述的其中一個嚮導時，就會在設計階段建立它。 當您建立時，指派給 TableAdapter 的名稱是以您正在使用之資料表的名稱為基礎。 例如，當您根據名為的資料庫中的資料表建立 TableAdapter 時， `Orders` 會將 tableadapter 命名為 `OrdersTableAdapter` 。 您可以使用 **DataSet 設計工具** 中的 **name** 屬性來變更 TableAdapter 的類別名稱。
 
 以下是 Tableadapter 的常用方法和屬性：
 
@@ -99,7 +101,7 @@ TableAdapter 類別不是 .NET 類型。 這表示您無法在檔或 **物件瀏
 
 ## <a name="tableadapter-update-method"></a>TableAdapter update 方法
 
-Tableadapter 使用資料命令來讀取和寫入資料庫。 使用 TableAdapter 的初始 `Fill` (主要) 查詢作為基礎來建立相關聯之資料表的架構，以及 `InsertCommand` `UpdateCommand` `DeleteCommand` 與方法相關聯的、和命令 `TableAdapter.Update` 。 呼叫 TableAdapter 的 `Update` 方法會執行先前設定 tableadapter 時所建立的語句，而不是您使用 **tableadapter 查詢設定 Wizard**加入的其他查詢之一。
+Tableadapter 使用資料命令來讀取和寫入資料庫。 使用 TableAdapter 的初始 `Fill` (主要) 查詢作為基礎來建立相關聯之資料表的架構，以及 `InsertCommand` `UpdateCommand` `DeleteCommand` 與方法相關聯的、和命令 `TableAdapter.Update` 。 呼叫 TableAdapter 的 `Update` 方法會執行先前設定 tableadapter 時所建立的語句，而不是您使用 **tableadapter 查詢設定 Wizard** 加入的其他查詢之一。
 
 當您使用 TableAdapter 時，它會有效地使用您通常會執行的命令來執行相同的作業。 例如，當您呼叫介面卡的 `Fill` 方法時，介面卡會在其屬性中執行資料命令 `SelectCommand` ，並使用資料讀取器 (例如， <xref:System.Data.SqlClient.SqlDataReader>) 將結果集載入資料表中。 同樣地，當您呼叫介面卡的方法時， `Update` 它會 `UpdateCommand` `InsertCommand` `DeleteCommand` 針對資料表中的每個變更記錄，在、和屬性中執行適當的命令 () 。
 
@@ -131,12 +133,12 @@ TableAdapterManager 類別不是 .NET 類型。 因此，您無法在檔中查�
 |`UpdateAll` 方法|儲存所有資料表中的所有資料。|
 |`BackUpDataSetBeforeUpdate` 屬性|判斷是否要在執行方法之前建立資料集的備份副本 `TableAdapterManager.UpdateAll` 。布林。|
 |*tableName* `TableAdapter` 財產|代表 TableAdapter。 產生的 TableAdapterManager 包含其所管理之每個的屬性 `TableAdapter` 。 例如，具有 Customers 和 Orders 資料表的資料集會以包含和屬性的 TableAdapterManager `CustomersTableAdapter` 產生 `OrdersTableAdapter` 。|
-|`UpdateOrder` 屬性|控制個別 insert、update 和 delete 命令的順序。 將此值設定為列舉中的其中一個值 `TableAdapterManager.UpdateOrderOption` 。<br /><br /> 依預設， `UpdateOrder` 會設為 **InsertUpdateDelete**。 這表示會針對資料集中的所有資料表執行插入、更新和刪除作業。|
+|`UpdateOrder` 屬性|控制個別 insert、update 和 delete 命令的順序。 將此值設定為列舉中的其中一個值 `TableAdapterManager.UpdateOrderOption` 。<br /><br /> 依預設， `UpdateOrder` 會設為 **InsertUpdateDelete** 。 這表示會針對資料集中的所有資料表執行插入、更新和刪除作業。|
 
 ## <a name="security"></a>安全性
 
 當您使用 CommandType 屬性設定為的資料命令時 <xref:System.Data.CommandType.Text> ，請仔細檢查從用戶端傳送的資訊，再將其傳遞至您的資料庫。 惡意使用者可能會嘗試傳送 (插入) 修改過或額外的 SQL 陳述式，以獲得未授權的存取或破壞資料庫。 將使用者輸入傳送至資料庫之前，請務必確認該資訊是否有效。 最佳做法是盡可能隨時使用參數化查詢或預存程式。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [資料集工具](../data-tools/dataset-tools-in-visual-studio.md)

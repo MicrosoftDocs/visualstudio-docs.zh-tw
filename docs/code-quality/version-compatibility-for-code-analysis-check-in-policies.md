@@ -1,6 +1,8 @@
 ---
 title: 程式碼分析簽入原則的版本相容性
 ms.date: 11/04/2016
+description: 瞭解 Team System 2008 Team Foundation Server 和 Team Foundation Server 2010 如何以不同的方式評估 Visual Studio 簽入原則。
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - version compatibility, code analysis check-in policy
@@ -11,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4757b3a105ff02a92944d9b45e645e2c63a8b81c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3a681f510da270bc22ae4bc983103f9a5735a127
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587156"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436871"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>程式碼分析簽入原則的版本相容性
 
 如果您必須使用不同的版本來評估及撰寫程式碼分析簽入原則 [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] ，您必須知道如何 [!INCLUDE[vstsTfsOrcasLong](../code-quality/includes/vststfsorcaslong_md.md)] 和 [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] 評估簽入原則的差異。
 
-## <a name="version-compatibility-for-evaluating-check-in-policies"></a>評估簽入原則的版本相容性
+## <a name="version-compatibility-for-evaluating-check-in-policies"></a>評估 Check-In 原則的版本相容性
 
 - 在中評估程式碼分析簽入原則時 [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] ， [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] 會忽略存在於但不存在於中的任何規則 [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] 。
 
@@ -32,7 +34,7 @@ ms.locfileid: "75587156"
 
 - 如果程式碼分析簽入原則指定無法辨識的規則元件 [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] ，則會顯示一則訊息。
 
-## <a name="version-compatibility-for-authoring-check-in-policies"></a>撰寫簽入原則的版本相容性
+## <a name="version-compatibility-for-authoring-check-in-policies"></a>編寫 Check-In 原則的版本相容性
 
 - 如果您使用的版本建立了程式碼分析簽入原則 [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] ，您就無法使用的 [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] 版本 [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] 來修改它。 此外，也 [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] 無法評估原則。
 

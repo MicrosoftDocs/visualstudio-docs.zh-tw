@@ -1,6 +1,8 @@
 ---
 title: 程式碼度量視窗
 ms.date: 12/12/2017
+description: 瞭解如何查看、篩選、重新排列和匯出 Visual Studio 程式碼計量分析資料。 瞭解如何根據程式碼度量結果來建立工作專案。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.codemetrics.output
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c01543b290d991a189c0851c64526c9c513068ba
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d29109811c3dd5f354b510d046b33b0ba31d60e5
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927974"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436806"
 ---
 # <a name="use-the-code-metrics-results-window"></a>使用程式碼度量結果視窗
 
@@ -30,9 +32,9 @@ ms.locfileid: "91927974"
 
 您可以使用下列其中一個功能表順序來顯示 [程式碼計量結果] 視窗：
 
-- 在 [**分析**] 功能表上，選擇 [ **Windows**程式  >  **代碼度量結果**]。
+- 在 [ **分析** ] 功能表上，選擇 [ **Windows** 程式  >  **代碼度量結果** ]。
 
-- 在 [ **View** ] 功能表上，選擇 [**其他 Windows**程式  >  **代碼度量結果**]。
+- 在 [ **View** ] 功能表上，選擇 [ **其他 Windows** 程式  >  **代碼度量結果** ]。
 
 即使未包含任何結果，程式 **代碼度量結果** 視窗也會開啟。
 
@@ -50,9 +52,9 @@ ms.locfileid: "91927974"
 
 1. 從 [ **篩選器** ] 清單中選取資料行名稱。
 
-2. 在 [ **最**小值] 中，輸入要顯示的最小值。
+2. 在 [ **最** 小值] 中，輸入要顯示的最小值。
 
-3. 在 [ **最**大值] 中，輸入要顯示的最大值。
+3. 在 [ **最** 大值] 中，輸入要顯示的最大值。
 
 4. 按一下 [套用 **篩選** ] 按鈕。
 
@@ -64,9 +66,9 @@ ms.locfileid: "91927974"
 
 ### <a name="add-or-remove-a-column"></a>新增或移除資料行
 
-1. 按一下 [ **新增/移除資料行** ] 按鈕，或以滑鼠右鍵按一下任何欄標題，然後按一下 [ **新增/移除資料行**]。
+1. 按一下 [ **新增/移除資料行** ] 按鈕，或以滑鼠右鍵按一下任何欄標題，然後按一下 [ **新增/移除資料行** ]。
 
-1. 在 [ **新增/移除資料行** ] 對話方塊中，選取或清除您要加入或移除之資料行的核取方塊，然後選擇 **[確定]**。
+1. 在 [ **新增/移除資料行** ] 對話方塊中，選取或清除您要加入或移除之資料行的核取方塊，然後選擇 **[確定]** 。
 
 ### <a name="rearrange-columns"></a>重新排列資料行
 
@@ -74,7 +76,7 @@ ms.locfileid: "91927974"
 
 1. 在 [ **新增/移除資料行** ] 對話方塊中，選取您要移動的資料行，然後選擇向上箭號或向下箭號。
 
-1. 當資料行位於您想要的位置時，請選擇 **[確定]**。
+1. 當資料行位於您想要的位置時，請選擇 **[確定]** 。
 
 ## <a name="copy-data-to-the-clipboard-or-excel"></a>將資料複製到剪貼簿或 Excel
 
@@ -82,7 +84,7 @@ ms.locfileid: "91927974"
 
 ## <a name="create-a-work-item-based-on-code-metric-results"></a>根據程式碼度量結果建立工作專案
 
-您可以根據 [程式**代碼度量結果**] 視窗中的結果來建立[Azure Boards](/azure/devops/boards/index?view=vsts&preserve-view=true)工作專案。 建立工作專案時，Visual Studio 會在 [**記錄**] 索引標籤下的 [**標題**] 欄位和 [程式碼度量] 資料中自動輸入標題。
+您可以根據 [程式 **代碼度量結果** ] 視窗中的結果來建立 [Azure Boards](/azure/devops/boards/index?view=vsts&preserve-view=true)工作專案。 建立工作專案時，Visual Studio 會在 [ **記錄** ] 索引標籤下的 [ **標題** ] 欄位和 [程式碼度量] 資料中自動輸入標題。
 
 如需 Azure Boards 工作專案的詳細資訊，請參閱 [工作專案](/azure/devops/boards/work-items/index?view=vsts&preserve-view=true)。
 
@@ -90,11 +92,11 @@ ms.locfileid: "91927974"
 
 1. 以滑鼠右鍵按一下結果。
 
-2. 指向 [ **建立工作專案**]，然後按一下您要建立 (**Bug** **]、[** 工作]) 的工作專案類型。
+2. 指向 [ **建立工作專案** ]，然後按一下您要建立 ( **Bug** **]、[** 工作]) 的工作專案類型。
 
 3. 填寫所有必要欄位來完成工作專案表單。
 
-4. **在 [檔案**] 功能表上，按一下 [**全部儲存**] 以儲存工作專案。
+4. **在 [檔案** ] 功能表上，按一下 [ **全部儲存** ] 以儲存工作專案。
 
 ### <a name="to-create-a-bug-based-on-a-result"></a>若要根據結果建立 bug
 
@@ -104,9 +106,9 @@ ms.locfileid: "91927974"
 
 3. 填寫所有必要欄位來完成工作專案表單。
 
-4. **在 [檔案**] 功能表上，按一下 [**全部儲存**] 以儲存工作專案。
+4. **在 [檔案** ] 功能表上，按一下 [ **全部儲存** ] 以儲存工作專案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼度量值](../code-quality/code-metrics-values.md)
 - [How to：產生程式碼度量資料](../code-quality/how-to-generate-code-metrics-data.md)

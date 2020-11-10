@@ -6,7 +6,7 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 08/05/2020
+ms.date: 11/10/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: afce5c9587a5b1a54e688197b0d8010920693d2d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc5c465fb8a44a6ff60d8b261c44c789d384f337
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87805668"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437265"
 ---
 # <a name="visual-studio-test-agent-component-directory"></a>Visual Studio Test Agent 元件目錄
 
@@ -45,7 +45,7 @@ ms.locfileid: "87805668"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)

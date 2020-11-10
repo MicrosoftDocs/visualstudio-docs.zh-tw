@@ -1,18 +1,20 @@
 ---
 title: 原生建議規則規則集
 ms.date: 11/04/2016
+description: 瞭解 Visual Studio 原生建議規則規則集。 請參閱機器碼的安全性、穩定性和其他重大問題的規則描述。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fd7ba7b742c2615dc8f161c5ea156b4fd0a7f4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 1c0515a08d987d8892dd5f252d97ece8d138eb0b
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600018"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437027"
 ---
 # <a name="native-recommended-rules-rule-set"></a>原生建議規則規則集
 
@@ -38,20 +40,20 @@ ms.locfileid: "89600018"
 |[C6201](/cpp/code-quality/c6201)|索引超出堆疊緩衝區上限|
 |[C6214](/cpp/code-quality/c6214)|不正確轉換 HRESULT 至 BOOL|
 |[C6215](/cpp/code-quality/c6215)|不正確轉換 BOOL 至 HRESULT|
-|[C6216](/cpp/code-quality/c6216)|編譯器插入了不正確轉換 BOOL 至 HRESULT|
+|[C6216](/cpp/code-quality/c6216)|不正確 Compiler-Inserted 將 BOOL 轉換成 HRESULT|
 |[C6217](/cpp/code-quality/c6217)|未使用不正確 HRESULT 測試|
 |[C6220](/cpp/code-quality/c6220)|不正確 HRESULT 與-1 比較|
 |[C6226](/cpp/code-quality/c6226)|對-1 不正確 HRESULT 指派|
 |[C6230](/cpp/code-quality/c6230)|將不正確 HRESULT 用作布林值|
-|[C6235](/cpp/code-quality/c6235)|具有邏輯 Or 的非零常數|
-|[C6236](/cpp/code-quality/c6236)|邏輯或非零的常數|
-|[C6237](/cpp/code-quality/c6237)|零，有邏輯和失去副作用|
+|[C6235](/cpp/code-quality/c6235)|具有 Logical-Or 的非零常數|
+|[C6236](/cpp/code-quality/c6236)|具有非零常數的 Logical-Or|
+|[C6237](/cpp/code-quality/c6237)|零 Logical-And 失去副作用|
 |[C6242](/cpp/code-quality/c6242)|強制執行本機回溯|
 |[C6248](/cpp/code-quality/c6248)|建立 Null DACL|
 |[C6250](/cpp/code-quality/c6250)|未發行位址描述項|
 |[C6255](/cpp/code-quality/c6255)|未受保護的 Alloca 使用|
 |[C6258](/cpp/code-quality/c6258)|使用 Terminate 執行緒|
-|[C6259](/cpp/code-quality/c6259)|位或有限參數中的無作用程式碼|
+|[C6259](/cpp/code-quality/c6259)|Bitwise-Or 有限交換器中的無效程式碼|
 |[C6260](/cpp/code-quality/c6260)|使用位元組算術|
 |[C6262](/cpp/code-quality/c6262)|過度使用堆疊|
 |[C6263](/cpp/code-quality/c6263)|在迴圈中使用 Alloca|
@@ -64,18 +66,18 @@ ms.locfileid: "89600018"
 |[C6274](/cpp/code-quality/c6274)|格式函式的非字元引數|
 |[C6276](/cpp/code-quality/c6276)|無效的字串轉型|
 |[C6277](/cpp/code-quality/c6277)|無效的 CreateProcess 呼叫|
-|[C6278](/cpp/code-quality/c6278)|陣列-新的純量刪除不相符|
-|[C6279](/cpp/code-quality/c6279)|純量新陣列-刪除不相符|
-|[C6280](/cpp/code-quality/c6280)|記憶體配置-解除配置不符|
+|[C6278](/cpp/code-quality/c6278)|Array-New Scalar-Delete 不相符|
+|[C6279](/cpp/code-quality/c6279)|Scalar-New Array-Delete 不相符|
+|[C6280](/cpp/code-quality/c6280)|記憶體 Allocation-Deallocation 不相符|
 |[C6281](/cpp/code-quality/c6281)|位關聯優先順序|
 |[C6282](/cpp/code-quality/c6282)|指派取代測試|
-|[C6283](/cpp/code-quality/c6283)|基本陣列-新的純量刪除不相符|
+|[C6283](/cpp/code-quality/c6283)|基本 Array-New Scalar-Delete 不相符|
 |[C6284](/cpp/code-quality/c6284)|格式函式的物件引數無效|
-|[C6285](/cpp/code-quality/c6285)|常數的邏輯 Or|
-|[C6286](/cpp/code-quality/c6286)|非零的邏輯 Or 遺失副作用|
+|[C6285](/cpp/code-quality/c6285)|常數 Logical-Or|
+|[C6286](/cpp/code-quality/c6286)|遺失副作用的非零 Logical-Or|
 |[C6287](/cpp/code-quality/c6287)|重複的測試|
-|[C6288](/cpp/code-quality/c6288)|透過邏輯和的相互包含為 False|
-|[C6289](/cpp/code-quality/c6289)|邏輯或為 True 的相互排除|
+|[C6288](/cpp/code-quality/c6288)|Logical-And 的相互包含為 False|
+|[C6289](/cpp/code-quality/c6289)|Logical-Or 的相互排除為 True|
 |[C6290](/cpp/code-quality/c6290)|邏輯 NOT 位元 AND 優先順序|
 |[C6291](/cpp/code-quality/c6291)|邏輯 NOT 位元 OR 優先順序|
 |[C6292](/cpp/code-quality/c6292)|從最大值的迴圈計數|
@@ -92,7 +94,7 @@ ms.locfileid: "89600018"
 |[C6308](/cpp/code-quality/c6308)|Realloc 流失|
 |[C6310](/cpp/code-quality/c6310)|不合法的例外狀況篩選準則常數|
 |[C6312](/cpp/code-quality/c6312)|例外狀況繼續執行迴圈|
-|[C6314](/cpp/code-quality/c6314)|位 Or 優先順序|
+|[C6314](/cpp/code-quality/c6314)|Bitwise-Or 優先順序|
 |[C6317](/cpp/code-quality/c6317)|不可補數|
 |[C6318](/cpp/code-quality/c6318)|例外狀況繼續搜尋|
 |[C6319](/cpp/code-quality/c6319)|略過逗號|
@@ -103,7 +105,7 @@ ms.locfileid: "89600018"
 |[C6333](/cpp/code-quality/c6333)|VirtualFree 不正確大小|
 |[C6335](/cpp/code-quality/c6335)|洩漏進程控制碼|
 |[C6381](/cpp/code-quality/c6381)|遺失關機資訊|
-|[C6383](/cpp/code-quality/c6383)|元素計數位節計數緩衝區溢位|
+|[C6383](/cpp/code-quality/c6383)|Element-Count Byte-Count 緩衝區溢位|
 |[C6384](/cpp/code-quality/c6384)|指標大小分割|
 |[C6385](/cpp/code-quality/c6385)|讀取滿溢|
 |[C6386](/cpp/code-quality/c6386)|寫入滿溢|

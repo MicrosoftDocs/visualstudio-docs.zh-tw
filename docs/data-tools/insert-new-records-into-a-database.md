@@ -1,5 +1,7 @@
 ---
 title: 在資料庫中插入新的記錄
+description: 使用 TableAdapter. Update 方法、其中一個 TableAdapter 的 DBDirect 方法或命令物件，將新的記錄插入資料庫中。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b703d3ccc6ffbd5e2449a1768071b930f606f37f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3586cf45e152cd8a0149140556916b11544a00bb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281990"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436272"
 ---
 # <a name="insert-new-records-into-a-database"></a>在資料庫中插入新的記錄
 
@@ -84,6 +86,6 @@ Tableadapter 會根據您的應用程式需求提供不同的方式，將新的�
 
 您必須能夠存取您嘗試連接的資料庫，以及在所需的資料表中執行插入的許可權。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

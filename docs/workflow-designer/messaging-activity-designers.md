@@ -1,5 +1,7 @@
 ---
 title: 工作流程設計工具訊息活動設計工具
+description: 瞭解如何使用訊息活動設計工具來建立和設定訊息活動，以傳送和接收 Windows Communication Foundation (WCF) 訊息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b821b4e63f82233b3c2e92fa3f5c3481cda982
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e82e4cd9f539dea5d0683999413a8371a442a13
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876186"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435647"
 ---
 # <a name="messaging-activity-designers"></a>傳訊活動設計工具
 
@@ -47,7 +49,7 @@ ms.locfileid: "86876186"
 
 - [執行階段](../workflow-designer/runtime-activity-designers.md)
 
-- [基本型別](../workflow-designer/primitives-activity-designers.md)
+- [基本](../workflow-designer/primitives-activity-designers.md)
 
 - [交易](../workflow-designer/transaction-activity-designers.md)
 

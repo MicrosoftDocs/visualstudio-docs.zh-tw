@@ -1,5 +1,7 @@
 ---
 title: 資料集工具
+description: 請參閱 Visual Studio 中提供的資料集工具。 深入瞭解資料集工作流程、資料集和多層式架構，以及資料集和 XML。
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
@@ -47,12 +49,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cb41a4e3e4ed1c0032c579779a18c7df0bc22477
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0ccb15d65f021099bb48c26dbdb7c03122049a7
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586714"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436481"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的資料集工具
 
@@ -95,6 +97,6 @@ Visual Studio 提供可簡化資料集使用的工具。 基本的端對端工�
 
 如需有關將資料集轉換成 XML 以及從 XML 轉換資料的詳細資訊，請參閱將 [xml 資料讀入資料集](../data-tools/read-xml-data-into-a-dataset.md) ，並 [將資料集儲存為 xml](../data-tools/save-a-dataset-as-xml.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

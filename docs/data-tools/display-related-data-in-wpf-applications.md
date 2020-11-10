@@ -1,5 +1,7 @@
 ---
 title: 在 WPF 應用程式中顯示相關資料
+description: 在 WPF 應用程式中顯示相關資料。 使用父子式關聯性中彼此相關的多個資料表或多個實體的資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6694d3c1521a6a405323edc33adc44dac0e66829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9604ac7c0083bc40edb17b19d4de608eb7366b1
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282549"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436494"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>在 WPF 應用程式中顯示相關資料
 
@@ -31,9 +33,9 @@ ms.locfileid: "85282549"
 
 ## <a name="to-create-controls-that-display-related-records"></a>建立顯示相關記錄的控制項
 
-1. 按一下 [資料]**** 功能表上的 [顯示資料來源]****，以開啟 [資料來源]**** 視窗。
+1. 按一下 [資料] 功能表上的 [顯示資料來源]，以開啟 [資料來源] 視窗。
 
-2. 按一下 [新增資料來源]****，並完成 [資料來源組態精靈]****。
+2. 按一下 [新增資料來源]，並完成 [資料來源組態精靈]。
 
 3. 開啟 [WPF 設計工具]，並確定設計工具組含的容器是 [ **資料來源** ] 視窗中專案的有效放置目標。
 
@@ -51,11 +53,11 @@ ms.locfileid: "85282549"
 
      Visual Studio 會產生 XAML，以針對您拖曳的每個專案，建立新的資料繫結控制項。 XAML 也會將 <xref:System.Windows.Data.CollectionViewSource> 子資料工作表或物件的新加入至放置目標的資源。 這個新的會系結 <xref:System.Windows.Data.CollectionViewSource> 至您剛剛拖曳至設計工具的父資料表或物件的屬性。 針對某些資料來源，Visual Studio 也會產生程式碼，以將資料載入子資料工作表或物件。
 
-     下圖將示範 [**資料來源**] 視窗中資料集中 [ **Customers** ] 資料表的 [相關**訂單**] 資料表。
+     下圖將示範 [ **資料來源** ] 視窗中資料集中 [ **Customers** ] 資料表的 [相關 **訂單** ] 資料表。
 
      ![顯示關聯的資料來源視窗](../data-tools/media/datasources2.gif)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [在 WPF 應用程式中建立查閱資料表](../data-tools/create-lookup-tables-in-wpf-applications.md)

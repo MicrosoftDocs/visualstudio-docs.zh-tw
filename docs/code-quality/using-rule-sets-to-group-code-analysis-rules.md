@@ -1,6 +1,8 @@
 ---
 title: 程式碼分析規則集
 ms.date: 04/02/2018
+description: 瞭解 Visual Studio 程式碼分析中的內建和自訂規則集。 瞭解如何在檔案中指定規則集，以及如何在專案中設定規則集。
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
@@ -11,26 +13,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fde3f3200a4764c231b97b0b44e36c38dd0b3e23
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 49d17e8321aa6567a6ae0936291a73d5cb854b5c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860426"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436884"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>使用規則集將程式碼分析規則分組
 
-當您在 Visual Studio 中設定程式碼分析時，可以從內建 *規則集*的清單中選擇。 規則集是一組程式碼分析規則，可識別該專案的目標問題和特定條件。 例如，您可以套用設計來掃描程式碼的規則集，以取得公開可用的 Api。 您也可以套用包含所有可用規則的規則集。
+當您在 Visual Studio 中設定程式碼分析時，可以從內建 *規則集* 的清單中選擇。 規則集是一組程式碼分析規則，可識別該專案的目標問題和特定條件。 例如，您可以套用設計來掃描程式碼的規則集，以取得公開可用的 Api。 您也可以套用包含所有可用規則的規則集。
 
-您可以藉由新增或刪除規則來自訂規則集，或將規則嚴重性變更為在 **錯誤清單**中顯示為警告或錯誤。 自訂規則集可以滿足您特定開發環境的需求。 當您自訂規則集時，規則集編輯器會提供搜尋和篩選工具來協助您進行處理。
+您可以藉由新增或刪除規則來自訂規則集，或將規則嚴重性變更為在 **錯誤清單** 中顯示為警告或錯誤。 自訂規則集可以滿足您特定開發環境的需求。 當您自訂規則集時，規則集編輯器會提供搜尋和篩選工具來協助您進行處理。
 
 規則集適用于 [managed 程式碼分析](/dotnet/fundamentals/code-analysis/code-quality-rule-options)、 [managed 程式碼的舊版分析](how-to-configure-code-analysis-for-a-managed-code-project.md)，以及 [c + + 程式碼分析](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)。
 
 ## <a name="rule-set-format"></a>規則集格式
 
-規則集是以 XML 格式在 *. 規則* 集檔案中指定。 由識別碼和 *動作*組成的規則會依分析器識別碼和檔案中的命名空間來分組。
+規則集是以 XML 格式在 *. 規則* 集檔案中指定。 由識別碼和 *動作* 組成的規則會依分析器識別碼和檔案中的命名空間來分組。
 
-*規則集*檔案的內容看起來類似以下 XML：
+*規則集* 檔案的內容看起來類似以下 XML：
 
 ```xml
 <RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
@@ -54,7 +56,7 @@ ms.locfileid: "91860426"
 ```
 
 > [!TIP]
-> 您可以更輕鬆地在圖形**規則集編輯器**中[編輯規則集](../code-quality/working-in-the-code-analysis-rule-set-editor.md)（而不是手動）。
+> 您可以更輕鬆地在圖形 **規則集編輯器** 中 [編輯規則集](../code-quality/working-in-the-code-analysis-rule-set-editor.md)（而不是手動）。
 
 ## <a name="specify-a-rule-set-for-a-project"></a>指定專案的規則集
 

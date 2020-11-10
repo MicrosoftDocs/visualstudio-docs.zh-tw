@@ -12,21 +12,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f392cc2dcb474487a37076229c0b10f7359b9251
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a96ea0fe4b4bbbebfc29cde7258273ea4f4b21e2
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349564"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437682"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>使用 Visual Studio 將應用程式部署到資料夾
 
 您可以使用 [ **發佈** ] 工具，將 ASP.NET、ASP.NET CORE、.net Core 和 Python 應用程式發佈至 Visual Studio 的資料夾。 針對 Node.js，支援這些步驟但使用者介面不同。
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
-
+::: moniker range=">=vs-2017"
 > [!NOTE]
 > 如果您需要將 Windows 桌面應用程式發佈到資料夾，請參閱 [使用 ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (c # 或 Visual Basic) 來部署傳統型應用程式。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> 如果您需要將 .NET Core 3.1 或更新版本的 Windows 桌面應用程式發佈到資料夾，請參閱 [使用 ClickOnce 部署 .Net Windows 應用程式](quickstart-deploy-using-clickonce-folder.md)。
+
+::: moniker-end
 
 ## <a name="deploy-to-a-local-folder"></a>部署到本機資料夾
 
@@ -40,11 +48,21 @@ ms.locfileid: "94349564"
 
     ![選擇資料夾做為發佈目標](../deployment/media/quickstart-publish-folder-new.png "選擇資料夾")
 
-1. 輸入路徑或選取 **[流覽]** 以指定資料夾。
+::: moniker range=">=vs-2019"
+
+4. 如果您要部署 .NET Core 3.1 或更新版本的 Windows 應用程式，您可能需要在 **特定目標** 視窗中選取 **資料夾** 。
+
+![選擇資料夾作為特定目標](../deployment/media/quickstart-publish-folder-targets.png "選擇特定目標")
+
+5. 如果您想要使用 ClickOnce 發行 .NET Core 3.1 或更新版本的 Windows 應用程式，請參閱 [使用 Clickonce 部署 .Net Windows 應用程式](quickstart-deploy-using-clickonce-folder.md)。
+
+ ::: moniker-end
+
+4. 輸入路徑或選取 **[流覽]** 以指定資料夾。
 
     ![指定資料夾的路徑](../deployment/media/quickstart-publish-folder-path.png "選擇資料夾")
 
-1. 選取 [發佈]  。 Visual Studio 會建置專案，並將其發行至指定的資料夾。 專案屬性 [發行] 窗格隨即出現，並顯示設定檔摘要。
+1. 選取 [發佈]。 Visual Studio 會建置專案，並將其發行至指定的資料夾。 專案屬性 [發行] 窗格隨即出現，並顯示設定檔摘要。
 
     ![顯示設定檔摘要的 [發行] 屬性窗格](../deployment/media/quickstart-publish-folder-summary.png)
 
@@ -73,3 +91,6 @@ ms.locfileid: "94349564"
 - [使用發行工具部署 .NET Core 應用程式](/dotnet/core/deploying/deploy-with-vs)
 - [.NET Core 應用程式發佈 (framework 相依與獨立部署) ](/dotnet/core/deploying/)
 - [部署 .NET Framework 和應用程式](/dotnet/framework/deployment/)
+::: moniker range=">=vs-2019"
+- [使用 ClickOnce 部署 .Net Windows 應用程式](quickstart-deploy-using-clickonce-folder.md)。
+ ::: moniker-end

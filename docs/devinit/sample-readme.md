@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 30fc2c467d08b06da382b62b4cbc04eb731b196b
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: b10d3cd72c52c2cabda0eb4d9b0da81366e4acb3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400299"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437091"
 ---
 # <a name="sample-list"></a>範例清單
 
@@ -26,7 +26,7 @@ ms.locfileid: "93400299"
 |---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|---|
 | [**所有工具**](sample-all-tool.md)               | 使用所有工具的範例。                                                                                              |   |
 | [**eShopOnWeb**](sample-eshoponweb.md)            | 自訂 [dotnet 架構/eshoponweb](https://github.com/dotnet-architecture/eShopOnWeb) 應用程式的範例。          |   |
-| [**個人預覽版**](sample-private-preview.md)  | GitHub Codespaces 中使用的自訂範例 Visual Studio 私用 Beta 版。                                      |   |
+| [**私用 Beta 版**](sample-private-preview.md)     | GitHub Codespaces 中使用的自訂範例 Visual Studio 私用 Beta 版。                                      |   |
 | [**開啟 CV**](sample-opencv.md)                   | OpenCV 專案所需的自訂範例。                                                                |   |
 | [**.NET Core 執行時間**](sample-dotnet-runtime.md) | .NET Core 執行時間 [dotnet/運行](https://github.com/dotnet/runtime) 時間專案所需的自訂範例。 |   |
 | [**.NET Core 應用程式**](sample-dotnet-core.md)        | 使用 devinit 來安裝必要 .NET Core SDK 的儲存機制範例。                                             |   |

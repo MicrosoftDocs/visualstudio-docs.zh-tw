@@ -1,5 +1,7 @@
 ---
 title: 將資料儲存回資料庫
+description: 使用資料集工具將資料儲存回資料庫。 資料集是記憶體中的資料複本，如果已修改，則應該儲存回資料庫。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -20,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 493637f81df15fadf65d6c7d90e980e322919b13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77f6a837fcc88c7154978e8031b17febaa0fcd39
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281743"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436051"
 ---
 # <a name="save-data-back-to-the-database"></a>將資料儲存回資料庫
 
@@ -43,13 +45,13 @@ ms.locfileid: "85281743"
 
 |主題|說明|
 |-----------|-----------------|
-|[在資料庫中插入新的資料錄](../data-tools/insert-new-records-into-a-database.md)|如何使用 Tableadapter 或命令物件執行更新和插入|
+|[在資料庫中插入新的記錄](../data-tools/insert-new-records-into-a-database.md)|如何使用 Tableadapter 或命令物件執行更新和插入|
 |[使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)|如何使用 Tableadapter 執行更新|
 |[階層式更新](../data-tools/hierarchical-update.md)|如何從包含兩個或多個相關資料表的資料集執行更新|
 |[處理並行例外狀況](../data-tools/handle-a-concurrency-exception.md)|當兩位使用者同時嘗試變更資料庫中的相同資料時，如何處理例外狀況|
 |[如何：使用交易儲存資料](../data-tools/save-data-by-using-a-transaction.md)|如何使用系統將資料儲存在交易中。 交易命名空間和 TransactionScope 物件|
-|[將資料儲存在交易中](../data-tools/save-data-in-a-transaction.md)|建立 Windows Forms 應用程式的逐步解說，以示範如何將資料儲存至交易內的資料庫|
-|[儲存資料至資料庫 (多個資料表)](../data-tools/save-data-to-a-database-multiple-tables.md)|如何編輯記錄，並將多個資料表中的變更儲存回資料庫|
+|[儲存異動中的資料](../data-tools/save-data-in-a-transaction.md)|建立 Windows Forms 應用程式的逐步解說，以示範如何將資料儲存至交易內的資料庫|
+|[將資料儲存至資料庫 (多個資料表)](../data-tools/save-data-to-a-database-multiple-tables.md)|如何編輯記錄，並將多個資料表中的變更儲存回資料庫|
 |[從物件中將資料儲存至資料庫](../data-tools/save-data-from-an-object-to-a-database.md)|如何使用 TableAdapter DbDirect 方法，將資料從不在資料集內的物件傳遞至資料庫|
 |[使用 TableAdapter DBDirect 方法儲存資料](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|如何使用 TableAdapter 將 SQL 查詢直接傳送至資料庫|
 |[將資料集儲存為 XML](../data-tools/save-a-dataset-as-xml.md)|如何將資料集儲存至 XML 檔|
@@ -272,7 +274,7 @@ ms.locfileid: "85281743"
 > [!NOTE]
 > 您也可以 `Parameters` 在程式碼中自行設定集合中的值，這通常會在資料配接器的事件的事件處理常式中進行 <xref:System.Data.DataTable.RowChanging> 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)
 - [建立和設定 TableAdapter](create-and-configure-tableadapters.md)

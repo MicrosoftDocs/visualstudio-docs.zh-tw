@@ -1,5 +1,7 @@
 ---
 title: 工作流程設計工具：鍵盤快速鍵
+description: 瞭解您可以在鍵盤上輸入的各種命令，以流覽工作流程設計工具 Visual Studio。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8892f46585179ae5857d48deffd982e1cfc0dee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3b2db8eb0bd2f85a052c9c172b33b179382d168
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115395"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437647"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流程設計中的鍵盤快速鍵
 

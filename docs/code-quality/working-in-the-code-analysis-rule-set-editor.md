@@ -1,6 +1,8 @@
 ---
 title: 使用程式碼分析規則集編輯器
 ms.date: 04/04/2018
+description: 瞭解如何在 Visual Studio 中編輯和查看規則集。 瞭解如何設定規則嚴重性、在自訂集中指定規則，以及調整規則集方格中的資料。
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaf964b24fea41d8e364d610806ba92980b1dc7
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 4d2703972658aace438ab235d469eed3e0644c06
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659175"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436819"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>使用程式碼分析規則集編輯器
 
@@ -23,11 +25,11 @@ ms.locfileid: "91659175"
 
 下表顯示嚴重性選項：
 
-|Action (嚴重性) |描述|
+|Action (嚴重性) |說明|
 |-|-|
 |警告|在 [ **錯誤清單** ] 和 [組建階段] 中產生警告。|
 |錯誤|在 **錯誤清單** 中以及在組建階段產生錯誤。|
-|資訊|產生 **錯誤清單**中的訊息。|
+|Info|產生 **錯誤清單** 中的訊息。|
 |Hidden|使用者看不到違規。 不過，IDE 會收到違規的通知。|
 |無|規則會被隱藏。 行為與規則已從規則集中移除的行為相同。|
 
@@ -48,7 +50,7 @@ ms.locfileid: "91659175"
 
 下表說明 [規則集編輯器] 工具列上的控制項。
 
-|Toolbar 控制項|描述|
+|Toolbar 控制項|說明|
 |---------------------|-----------------|
 |**全部展開**|顯示所有群組中的規則。|
 |**全部摺疊**|隱藏所有群組中的規則。|
@@ -85,6 +87,6 @@ ms.locfileid: "91659175"
 
 - 若要依欄位值篩選規則集，請選取您要篩選之欄位的資料行標頭上的 [篩選] 按鈕。 選取您要顯示之值的核取方塊，並清除您要隱藏之值的核取方塊。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md)

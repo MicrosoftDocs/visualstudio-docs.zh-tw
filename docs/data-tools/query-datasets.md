@@ -1,5 +1,7 @@
 ---
 title: 查詢資料集
+description: 瞭解查詢資料集。 深入瞭解資料集區分大小寫。 尋找資料表中的特定資料列、依資料行值尋找資料列，以及存取相關記錄。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ef1c806914b0f134702e010b58229ee3fc15c7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ccf228b147301eb9fccf41da98f8cc5204971a9
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281860"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436064"
 ---
 # <a name="query-datasets"></a>查詢資料集
 若要搜尋資料集中的特定記錄，請 `FindBy` 在 DataTable 上使用方法、撰寫您自己的 foreach 語句，以在資料表的資料列集合上進行迴圈，或使用 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。
@@ -70,7 +72,7 @@ ms.locfileid: "85281860"
 > [!NOTE]
 > 如果您在 Windows Forms 應用程式中工作，並使用資料系結功能來顯示資料，則設計工具產生的表單可能會為您的應用程式提供足夠的功能。 如需詳細資訊，請參閱 [將控制項系結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。 具體而言，請參閱 [資料集中的關聯](relationships-in-datasets.md)性。
 
-下列程式碼範例將示範如何在具型別資料集中導覽和關閉關聯性。 程式碼範例會使用輸入 <xref:System.Data.DataRow> `NorthwindDataSet.OrdersRow` 的 () 和產生的 FindBy*PrimaryKey* (`FindByCustomerID`) 方法來找出所需的資料列，並傳回相關的記錄。 只有當您有下列情況時，範例才會正確編譯和執行：
+下列程式碼範例將示範如何在具型別資料集中導覽和關閉關聯性。 程式碼範例會使用輸入 <xref:System.Data.DataRow> `NorthwindDataSet.OrdersRow` 的 () 和產生的 FindBy *PrimaryKey* (`FindByCustomerID`) 方法來找出所需的資料列，並傳回相關的記錄。 只有當您有下列情況時，範例才會正確編譯和執行：
 
 - 以資料表命名之資料集的實例 `NorthwindDataSet` `Customers` 。
 
@@ -94,6 +96,6 @@ ms.locfileid: "85281860"
      [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
      [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)

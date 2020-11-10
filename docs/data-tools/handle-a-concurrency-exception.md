@@ -1,5 +1,7 @@
 ---
 title: 處理並行例外狀況
+description: 處理 (System.data.dbconcurrencyexception) 的並行例外狀況，這會在兩個使用者同時嘗試變更資料庫中的相同資料時引發。
+ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57820a7532255c0084bafc5134cf7793b8c88ab6
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 5fcd8bb06cf9c88466b4dfa3cfaf2dfd8093bd3d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407662"
+ms.locfileid: "94436442"
 ---
 # <a name="handle-a-concurrency-exception"></a>處理並行例外狀況
 
@@ -212,6 +214,6 @@ ms.locfileid: "94407662"
 
    選取 [ **否** ] 會取消更新，並使用目前在資料庫中的值來更新資料集。 選取 [ **是]** 會將建議的值寫入資料庫。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

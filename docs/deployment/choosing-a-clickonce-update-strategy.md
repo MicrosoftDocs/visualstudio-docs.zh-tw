@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5618a8996b9858f0799f2a359573d5b7b9da1ce9
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 7f231f3426821b7f3148d3e6c268234f125f88f0
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383153"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437600"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>選擇 ClickOnce 更新策略
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可提供自動應用程式更新。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式會定期讀取它的部署資訊清單檔，以查看是否有此應用程式的更新可用。 如果有，就會下載及執行應用程式的新版本。 為了提高效率，只有已變更的檔案才會下載。
@@ -73,6 +73,8 @@ ms.locfileid: "94383153"
    </update>
 </subscription>
 ```
+> [!NOTE]
+> 針對 .NET 3.1 和更新版本的應用程式，在應用程式啟動之前檢查更新是唯一支援的更新選項。
 
 ## <a name="make-updates-required"></a>需要進行更新
  有時候，您可能會想要要求使用者執行更新版本的應用程式。 例如，您可能會對外部資源 (例如 Web 服務) 進行變更，進而導致舊版應用程式無法正確運作。 在這種情況下，您就會想要將更新標記為必要，並防止使用者執行舊版。
@@ -118,8 +120,8 @@ ms.locfileid: "94383153"
 
  如果您使用受信任的應用程式部署，就不會出現授與信任層級的提示。 如需詳細資訊，請參閱 [受信任的應用程式部署總覽](../deployment/trusted-application-deployment-overview.md)。
 
-## <a name="see-also"></a>另請參閱
- \<xref:System.Deployment.Application>
+## <a name="see-also"></a>請參閱
+- <xref:System.Deployment.Application>
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)

@@ -1,5 +1,7 @@
 ---
 title: 工作流程設計工具-如何：使用運算式編輯器
+description: 瞭解運算式編輯器是一個工作流程設計工具控制項，可供您在許多工作流程活動中用來輸入和評估運算式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -10,20 +12,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c0fdaab87c88028b8c14ca59e93fa93e74be74
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 855326085a51ec6590bd1b3f0e1e5565c53396cb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817433"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437849"
 ---
 # <a name="how-to-use-the-expression-editor"></a>HOW TO：使用運算式編輯器
 
 運算式編輯器是在許多工作流程活動中用來輸入和評估運算式的工作流程設計工具控制項。 運算式編輯器提供完整的 IDE 編輯經驗，包括 IntelliSense、顏色標示、ParamInfo、錯誤波浪線，還有其他功能。 編譯器會在輸入之後驗證運算式。 如果運算式無效，就會顯示錯誤圖示。 編輯器也可以開啟為 [ **運算式編輯器** ] 對話方塊。
 
-運算式是常值，或是繫結到引數或屬性的 Visual Basic 程式碼。 它們包含值元素 (例如，變數、常數、常值、與作業結合的屬性) ，以產生新的值。 運算式會使用 VB.NET 語法撰寫，即使應用程式使用 C# 也是如此。 這表示大小寫並不重要，而是使用單一等號 ( "=" 而非 "= =" ) 來執行比較，布林運算子是 "and" 和 "or"，而不是 "&&" 和 "| |" 符號，而不會使用 **任何** 專案，而不是 **null**。 如需 Visual Basic 中的運算式和運算子以及某些範例的詳細資訊，請參閱 [Visual Basic 中的運算子和運算式](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100))。
+運算式是常值，或是繫結到引數或屬性的 Visual Basic 程式碼。 它們包含值元素 (例如，變數、常數、常值、與作業結合的屬性) ，以產生新的值。 運算式會使用 VB.NET 語法撰寫，即使應用程式使用 C# 也是如此。 這表示大小寫並不重要，而是使用單一等號 ( "=" 而非 "= =" ) 來執行比較，布林運算子是 "and" 和 "or"，而不是 "&&" 和 "| |" 符號，而不會使用 **任何** 專案，而不是 **null** 。 如需 Visual Basic 中的運算式和運算子以及某些範例的詳細資訊，請參閱 [Visual Basic 中的運算子和運算式](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100))。
 
-**運算式編輯器**的行為如下所示：
+**運算式編輯器** 的行為如下所示：
 
 - 如果焦點不在 [運算式編輯器] 上，看起來就會像一般 TextBlock 控制項。
 

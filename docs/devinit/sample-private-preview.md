@@ -1,5 +1,5 @@
 ---
-title: 私人預覽
+title: 私用 Beta 版
 description: GitHub Codespaces Visual Studio preview Beta 存放庫中使用的自訂範例。
 ms.date: 08/28/2020
 ms.topic: reference
@@ -11,20 +11,20 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 61ef0a0575e5b86ab7cbd7c17e37c552c0c14388
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c79206295615fc984d2a95b52e0ecc0f70814e6f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005628"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437098"
 ---
-# <a name="private-preview"></a>個人預覽版
+# <a name="private-beta"></a>私用 Beta 版
 
 此範例說明如何自訂 Visual Studio 的 codespace，使其具有與初始 [GitHub Codespaces](https://github.com/features/codespaces) 私用搶鮮版相同的功能。
 
 ## <a name="devinitjson"></a>.devinit.json
 
-檔案 [_.devinit.js_](devinit-json.md) 的內容。 此檔案必須位於與 _.devcontainer.js_的相同資料夾中。
+檔案的內容 [`.devinit.json`](devinit-json.md) 。 此檔案必須位於與 _.devcontainer.js_ 的相同資料夾中。
 
 ```json
 {

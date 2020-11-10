@@ -6,7 +6,7 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 08/05/2020
+ms.date: 11/10/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 083023d5ac4070e4d1ec6105ce0e70f660685eb5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e8b3c03caa55cd309623d5191925a0d13360999
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87805772"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437439"
 ---
 # <a name="visual-studio-enterprise-component-directory"></a>Visual Studio Enterprise 元件目錄
 
@@ -45,7 +45,7 @@ ms.locfileid: "87805772"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)

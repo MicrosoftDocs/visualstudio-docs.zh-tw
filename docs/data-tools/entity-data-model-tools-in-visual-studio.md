@@ -1,5 +1,7 @@
 ---
 title: Entity Framework Tools
+description: 瞭解 Visual Studio 中的 Entity Framework Tools。 Entity Framework Tools 的設計目的是協助您建立 Entity Framework (EF) 應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 250f1ad55f8d60396b8423098e58801d0ed81e77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cc1aa43945ceee19b70a037b1c865c67539fb61
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916729"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436637"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio 中的 Entity Framework Tools
 
@@ -30,9 +32,9 @@ Entity Framework 工具會安裝為 Visual Studio 安裝程式中 **資料儲存
 
 這些是在 Visual Studio 中組成 Entity Framework 工具的特定工具：
 
-- 您可以使用 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] ** [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 設計**工具 (**Entity Designer**) ，以視覺化方式建立和修改實體、關聯、對應和繼承關聯性。 **Entity Designer**也會產生 [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 物件層程式碼。
+- 您可以使用 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 設計** 工具 ( **Entity Designer** ) ，以視覺化方式建立和修改實體、關聯、對應和繼承關聯性。 **Entity Designer** 也會產生 [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 物件層程式碼。
 
-- 您可以使用** [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 嚮導**從現有的資料庫產生概念模型，並將資料庫連接資訊加入至您的應用程式。
+- 您可以使用 **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 嚮導** 從現有的資料庫產生概念模型，並將資料庫連接資訊加入至您的應用程式。
 
 - 您可以使用 [ **建立資料庫嚮導]** 先建立概念模型，然後再建立支援該模型的資料庫。
 
@@ -47,13 +49,13 @@ Entity Framework 工具會安裝為 Visual Studio 安裝程式中 **資料儲存
 
 ## <a name="related-topics"></a>相關主題
 
-| 標題 | 描述 |
+| 標題 | 說明 |
 | - | - |
 | [ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index) | 說明如何使用 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 提供的工具 [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] 來建立應用程式。 |
 | [實體資料模型](/dotnet/framework/data/adonet/entity-data-model) | 提供使用內建的應用程式所使用之資料的連結和資訊 [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] 。 |
 | [Entity Framework (EF) 檔) ](/ef/ef6/get-started) | 提供影片、教學課程和 advanced 檔的索引，以協助您充分利用 Entity Framework。 |
 | [ASP.NET 5 應用程式新增至新資料庫](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html) | 說明如何使用 Entity Framework 7 建立新的 ASP.NET 5 應用程式。 |
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

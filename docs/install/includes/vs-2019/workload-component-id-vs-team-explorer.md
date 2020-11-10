@@ -6,16 +6,16 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 08/05/2020
+ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 276a99c6d9f2c1245137cc99d943fe63eb1a3711
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62295e6b63ffd38d57d218d5f2458a48353db7f2
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87805669"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437342"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2019"></a>Visual Studio 核心編輯器 (隨附於 Visual Studio Team Explorer 2019)
 

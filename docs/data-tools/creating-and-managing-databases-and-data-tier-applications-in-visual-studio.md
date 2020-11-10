@@ -1,5 +1,7 @@
 ---
 title: 資料庫專案和 DAC 專案
+description: 深入瞭解資料庫專案和資料層應用程式 (Dac) 。 使用資料庫專案來建立新的資料庫、建立新的 Dac，以及更新現有的 Db 和 Dac。
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cc8d32ddcc332264278cf76392ac69a6188ca51c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57b889f025b06e127e8e4bb38be311f6bbe55952
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586727"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436598"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>資料庫專案和資料層應用程式
 
@@ -25,12 +27,12 @@ ms.locfileid: "75586727"
 
 ## <a name="common-high-level-tasks"></a>一般高階工作
 
-| 高層級工作 | 支援內容 |
+| High-Level 工作 | 支援內容 |
 | - | - |
 | **開始開發資料層應用程式：** 資料層應用程式的概念 (DAC) 是 SQL Server 2008 引進的。 DAC 包含 SQL Server 資料庫的定義，以及用戶端伺服器或3層應用程式所使用的支援實例物件。 DAC 包含資料庫物件（例如資料表和視圖），以及實例實體（例如登入）。 您可以使用 Visual Studio 來建立 DAC 專案、建立 DAC 封裝檔案，然後將 DAC 封裝檔案傳送給資料庫管理員，以便部署到 SQL Server database engine 的實例。 | - [資料層應用程式](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
 | **執行反復的資料庫開發：** 開發人員可以簽出項目的各個部分，並在隔離的開發環境中加以更新。 藉由使用這種類型的環境，您可以測試您的變更，而不會影響小組的其他成員。 變更完成之後，您可以將檔案簽回版本控制，讓其他小組成員可以取得您的變更，並將其建立並部署至測試伺服器。 | - [專案導向的離線資料庫開發 (SQL Server Data Tools) ](/sql/ssdt/project-oriented-offline-database-development)<br />- [Transact-sql 偵錯工具 (SQL Server Management Studio) ](/sql/ssms/scripting/transact-sql-debugger) |
 | **原型設計、驗證測試結果，以及修改資料庫腳本和物件：** 您可以使用 Transact-sql 編輯器來執行這些一般工作中的任何一項。 | - [查詢和文字編輯器 (SQL Server Management Studio) ](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

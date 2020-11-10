@@ -2,7 +2,7 @@
 title: 教學課程：從存放庫開啟專案
 description: 了解如何使用 Visual Studio，在 Git 或 Azure DevOps 存放庫中開啟專案。
 ms.custom: get-started
-ms.date: 11/03/2020
+ms.date: 11/10/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 56005faa4475f040375108ca02abbca40cd2652d
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: 91fb06a50fe0c992d3018aee31cfc963544f8b97
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344536"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436077"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>教學課程：從存放庫開啟專案
 
@@ -75,6 +75,9 @@ ms.locfileid: "93344536"
 
 ::: moniker range="vs-2019"
 
+> [!NOTE]
+> 如果您想要在 Visual Studio 2019 中試用新的整合式 Git 體驗，請務必更新至 [**版本 16.8**](/visualstudio/releases/2019/release-notes/)。 如需詳細資訊，請參閱 [Visual Studio 頁面中的新 Git 體驗](../ide/git-with-visual-studio.md) 。
+
 1. 開啟 Visual Studio 2019。
 
 1. 在開始視窗中，選擇 [複製或簽出程式碼]。
@@ -92,9 +95,6 @@ ms.locfileid: "93344536"
    ![選擇您想要從 [方案總管] 下拉式清單中開啟的解決方案](./media/open-proj-repo-github-solutions-folders-picker.png)
 
    如果您的存放庫中沒有解決方案檔 (具體來說為 .sln 檔案)，飛出功能表將顯示「找不到任何解決方案」。 不過，您可以從資料夾功能表中按兩下任一檔案，以便在 Visual Studio 程式碼編輯器中開啟該檔案。
-
-> [!TIP]
-> 如果您想要在 Visual Studio 中試用新的整合式 Git 體驗，且您使用的是 [16.6 版](/visualstudio/releases/2019/release-notes-v16.6)或更新版本，您可以移至 [ **工具**  >  **選項**  >  **環境**  >  **預覽功能** ]，然後選取 [ **新的 Git 使用者體驗** ] 核取方塊，將其切換為開啟。 如需詳細資訊，請參閱 [Visual Studio 頁面中的新 Git 體驗](../ide/git-with-visual-studio.md) 。
 
 ::: moniker-end
 
@@ -186,7 +186,7 @@ ms.locfileid: "93344536"
 - [Visual Studio 教學課程 | **Python**](../python/index.yml)
 - [Visual Studio 教學課程 | **JavaScript** 、 **TypeScript** 和 **Node.js**](../javascript/index.yml)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 ::: moniker range="vs-2017"
 
