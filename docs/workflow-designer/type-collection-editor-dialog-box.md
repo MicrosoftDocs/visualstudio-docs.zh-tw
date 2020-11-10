@@ -1,5 +1,7 @@
 ---
 title: 工作流程設計工具類型集合編輯器] 對話方塊
+description: 瞭解如何使用 [型別集合編輯器] 對話方塊，將已知型別加入至傳送和接收活動。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 023d049c5256abe6212dd65df78cd67151be94a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e58655f9baf91766fc9b8ff15afe708f1069a565
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593053"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433670"
 ---
 # <a name="type-collection-editor-dialog-box"></a>型別集合編輯器對話方塊
 

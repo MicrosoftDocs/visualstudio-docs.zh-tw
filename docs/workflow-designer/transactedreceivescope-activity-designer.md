@@ -1,5 +1,7 @@
 ---
 title: 工作流程設計工具 TransactedReceiveScope 活動設計工具
+description: 瞭解如何使用 TransactedReceiveScope 設計工具來建立和設定 TransactedReceiveScope 活動。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75fb1da392bce7dbd0cd7849d83b3b452521e0c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70117ab8b27a23dfb2836800c41ff0844fb8de1c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875926"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433774"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope 活動設計工具
 
-**TransactedReceiveScope**設計工具是用來建立及設定 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 活動。
+**TransactedReceiveScope** 設計工具是用來建立及設定 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 活動。
 
 ## <a name="the-transactedreceivescope-activity"></a>TransactedReceiveScope 活動
 
@@ -27,7 +29,7 @@ ms.locfileid: "86875926"
 
 ### <a name="using-the-transactedreceivescope-activity-designer"></a>使用 TransactedReceiveScope 活動設計工具
 
-存取 [工具箱] 的 [**訊息**] 類別中的 [ **TransactedReceiveScope** ] 活動設計**工具**。 [ **TransactedReceiveScope** ] 活動設計工具可以從 [ **工具箱** ] 拖曳出來，放到工作流程設計工具介面上通常用來放置活動的任一處。 這會建立一個 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 活動，具有 TransactedReceiveScope 的預設 **DisplayName** 。 <xref:System.Activities.Activity.DisplayName%2A>可以在 [ **TransactedReceiveScope** ] 活動設計工具的標頭中編輯，或是在屬性方格的 [ **DisplayName** ] 方塊中編輯。
+存取 [工具箱] 的 [ **訊息** ] 類別中的 [ **TransactedReceiveScope** ] 活動設計 **工具** 。 [ **TransactedReceiveScope** ] 活動設計工具可以從 [ **工具箱** ] 拖曳出來，放到工作流程設計工具介面上通常用來放置活動的任一處。 這會建立一個 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 活動，具有 TransactedReceiveScope 的預設 **DisplayName** 。 <xref:System.Activities.Activity.DisplayName%2A>可以在 [ **TransactedReceiveScope** ] 活動設計工具的標頭中編輯，或是在屬性方格的 [ **DisplayName** ] 方塊中編輯。
 
 [ **TransactedReceiveScope** ] 設計工具組含 [ **要求** **] 和 [** 內文] 方塊。 這些會用來設定 <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> 屬性，而該屬性會指定 <xref:System.ServiceModel.Activities.Receive> 活動與 <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> 屬性，而此屬性再指定某個其他 <xref:System.Activities.Activity>。 <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> 會建立異動。 然後，此異動會變成 <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> 範圍的環境異動，於是此範圍內的任何活動會在此異動的內部執行。
 
@@ -35,13 +37,13 @@ ms.locfileid: "86875926"
 
 下表顯示 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 屬性，並且描述屬性在設計工具中的使用方式。 這些 <xref:System.Activities.Activity.DisplayName%2A> 屬性可以在屬性方格中或在工作流程設計工具介面上編輯，但其他屬性必須在設計介面上編輯。
 
-|屬性名稱|必要|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|否|<xref:System.ServiceModel.Activities.TransactedReceiveScope> 活動可選用的易記名稱。 預設為 TransactedReceiveScope。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 名稱並非絕對必要，但建議您盡量使用顯示名稱。|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|是|將 <xref:System.ServiceModel.Activities.Receive> 活動放置到活動設計工具介面上的 **要求** 區塊。|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|否|<xref:System.Activities.Activity>將加入至活動設計工具介面上的**主體**區塊。|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|對|將 <xref:System.ServiceModel.Activities.Receive> 活動放置到活動設計工具介面上的 **要求** 區塊。|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|否|<xref:System.Activities.Activity>將加入至活動設計工具介面上的 **主體** 區塊。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

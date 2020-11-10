@@ -1,5 +1,6 @@
 ---
 title: 將 DataCoNtext 方法對應至 sprocs 和函數
+description: 瞭解如何使用物件關聯式設計工具 (O/R 設計工具) ，建立對應至預存程式的 DataCoNtext 方法 (sprocs) 和函式。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6926631cfd9d04992d92553a346348ea18af847
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4cb02a7fc7fdcbb4ff3c9c3750e722ff0fe031a5
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038331"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434944"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>如何：建立對應至預存程序和函式的 DataContext 方法 (O/R 設計工具)
 
@@ -25,33 +26,33 @@ ms.locfileid: "90038331"
 
 ## <a name="create-datacontext-methods"></a>建立 DataCoNtext 方法
 
-您可以將 <xref:System.Data.Linq.DataContext> 預存程式或函式從 <strong>伺服器總管或 * * 資料庫總管</strong> 拖曳至 **O/R 設計**工具，以建立方法。
+您可以將 <xref:System.Data.Linq.DataContext> 預存程式或函式從 <strong>伺服器總管或 * * 資料庫總管</strong> 拖曳至 **O/R 設計** 工具，以建立方法。
 
 > [!NOTE]
-> 產生之方法的傳回型別 <xref:System.Data.Linq.DataContext> 會根據您在 **O/R 設計**工具上放置預存程式或函數的位置而有所不同。 如果將項目直接置放入現有的實體類別，則建立的 <xref:System.Data.Linq.DataContext> 方法會具有該實體類別的傳回型別。 將專案放到 **O/R 設計** 工具的空白區域 <xref:System.Data.Linq.DataContext> ，會建立一個方法來傳回自動產生的型別。 您可以在將 <xref:System.Data.Linq.DataContext> 方法新增至 [方法]**** 窗格後，變更此方法的傳回型別。 若要檢查或變更 <xref:System.Data.Linq.DataContext> 方法的傳回型別，請選取該方法，然後檢查 [屬性]**** 視窗中的 [傳回型別]**** 屬性。 如需詳細資訊，請參閱 [如何：變更 DataCoNtext 方法的傳回類型 (O/R 設計工具) ](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)。
+> 產生之方法的傳回型別 <xref:System.Data.Linq.DataContext> 會根據您在 **O/R 設計** 工具上放置預存程式或函數的位置而有所不同。 如果將項目直接置放入現有的實體類別，則建立的 <xref:System.Data.Linq.DataContext> 方法會具有該實體類別的傳回型別。 將專案放到 **O/R 設計** 工具的空白區域 <xref:System.Data.Linq.DataContext> ，會建立一個方法來傳回自動產生的型別。 您可以在將 <xref:System.Data.Linq.DataContext> 方法新增至 [方法] 窗格後，變更此方法的傳回型別。 若要檢查或變更 <xref:System.Data.Linq.DataContext> 方法的傳回型別，請選取該方法，然後檢查 [屬性] 視窗中的 [傳回型別] 屬性。 如需詳細資訊，請參閱 [如何：變更 DataCoNtext 方法的傳回類型 (O/R 設計工具) ](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 ### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>若要建立可傳回自動產生型別的 DataContext 方法
 
-1. 在 **伺服器總管** 或 **資料庫總管**中，展開您要使用之資料庫的 [ **預存程式** ] 節點。
+1. 在 **伺服器總管** 或 **資料庫總管** 中，展開您要使用之資料庫的 [ **預存程式** ] 節點。
 
-2. 找出所需的預存程式，並將它拖曳到 **O/R 設計**工具的空白區域。
+2. 找出所需的預存程式，並將它拖曳到 **O/R 設計** 工具的空白區域。
 
-     <xref:System.Data.Linq.DataContext> 方法會以自動產生的傳回型別建立，並出現在 [方法]**** 窗格中。
+     <xref:System.Data.Linq.DataContext> 方法會以自動產生的傳回型別建立，並出現在 [方法] 窗格中。
 
 ### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>若要建立具有實體類別之傳回型別的 DataContext 方法
 
-1. 在 **伺服器總管** 或 **資料庫總管**中，展開您要使用之資料庫的 [ **預存程式** ] 節點。
+1. 在 **伺服器總管** 或 **資料庫總管** 中，展開您要使用之資料庫的 [ **預存程式** ] 節點。
 
-2. 找出所需的預存程式，並將它拖曳到 **O/R 設計**工具中的現有實體類別。
+2. 找出所需的預存程式，並將它拖曳到 **O/R 設計** 工具中的現有實體類別。
 
-     <xref:System.Data.Linq.DataContext> 方法會以所選取實體類別的傳回型別建立，並出現在 [方法]**** 窗格中。
+     <xref:System.Data.Linq.DataContext> 方法會以所選取實體類別的傳回型別建立，並出現在 [方法] 窗格中。
 
 > [!NOTE]
 > 如需變更現有方法之傳回類型的詳細資訊 <xref:System.Data.Linq.DataContext> ，請參閱 [如何：變更 DataCoNtext 方法的傳回類型 (O/R 設計工具) ](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataCoNtext 方法 (O/R 設計工具) ](../data-tools/datacontext-methods-o-r-designer.md)

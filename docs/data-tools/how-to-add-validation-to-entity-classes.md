@@ -1,5 +1,7 @@
 ---
 title: 如何：將驗證新增至實體類別
+description: 瞭解如何將驗證加入至實體類別。 將變更的驗證新增至特定資料行中的值。 將更新的驗證加入至實體類別。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -11,20 +13,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d408c67b2e54fecd6404bac93d93ecfb35de162
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f367cf799dd00b8b442870554e499e5405865cb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282341"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435100"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>如何：將驗證新增至實體類別
-「驗證」** 實體類別過程會確認資料物件中，輸入的值是否符合物件結構描述中的條件約束，以及是否也符合為應用程式建立的規則。 先驗證資料再將更新傳送至基礎資料庫是減少錯誤的良好做法。 它同時也會降低應用程式與資料庫之間的可能往返次數。
+「驗證」實體類別過程會確認資料物件中，輸入的值是否符合物件結構描述中的條件約束，以及是否也符合為應用程式建立的規則。 先驗證資料再將更新傳送至基礎資料庫是減少錯誤的良好做法。 它同時也會降低應用程式與資料庫之間的可能往返次數。
 
 [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供部分方法，可讓使用者擴充設計工具產生的程式碼，該程式碼會在完成實體的插入、更新和刪除期間執行，也可以在個別資料行變更期間和之後進行。
 
 > [!NOTE]
-> 本主題提供使用 **O/R 設計**工具將驗證新增至實體類別的基本步驟。 因為在不參考特定實體類別的情況下，可能很難遵循這些泛型步驟，所以會提供使用實際資料的逐步解說。
+> 本主題提供使用 **O/R 設計** 工具將驗證新增至實體類別的基本步驟。 因為在不參考特定實體類別的情況下，可能很難遵循這些泛型步驟，所以會提供使用實際資料的逐步解說。
 
 ## <a name="add-validation-for-changes-to-the-value-in-a-specific-column"></a>針對特定資料行中的值，新增驗證變更
 這個程序顯示如何在資料行中的值發生變更時驗證資料。 因為驗證是在類別定義 (而不是使用者介面) 內執行，所以如果值無法通過驗證，就會擲回例外狀況。 請在會嘗試變更資料行值的應用程式的程式碼中實作錯誤處理。
@@ -33,9 +35,9 @@ ms.locfileid: "85282341"
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>若要在資料行值變更期間驗證資料
 
-1. 在**O/R 設計**工具中，開啟或建立 (**.dbml**檔) 的新 LINQ to SQL 類別檔案。 (按兩下 [方案總管]**** 中的 **.dbml** 檔案。)
+1. 在 **O/R 設計** 工具中，開啟或建立 ( **.dbml** 檔) 的新 LINQ to SQL 類別檔案。 (按兩下 [方案總管] 中的 **.dbml** 檔案。)
 
-2. 在 **O/R 設計工具**中，以滑鼠右鍵按一下要新增驗證的類別，然後按一下 [檢視程式碼]****。
+2. 在 **O/R 設計工具** 中，以滑鼠右鍵按一下要新增驗證的類別，然後按一下 [檢視程式碼]。
 
      [程式碼編輯器] 會以所選取實體類別的部分類別開啟。
 
@@ -43,7 +45,7 @@ ms.locfileid: "85282341"
 
 4. 如果是 Visual Basic 專案：
 
-    1. 展開 [方法名稱]**** 清單。
+    1. 展開 [方法名稱] 清單。
 
     2. 尋找要新增驗證到其中之資料行所適用的 **OnCOLUMNNAMEChanging** 方法。
 
@@ -79,9 +81,9 @@ ms.locfileid: "85282341"
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>若要在實體類別更新期間驗證資料
 
-1. 在**O/R 設計**工具中，開啟或建立 (**.dbml**檔) 的新 LINQ to SQL 類別檔案。 (按兩下 [方案總管]**** 中的 **.dbml** 檔案。)
+1. 在 **O/R 設計** 工具中，開啟或建立 ( **.dbml** 檔) 的新 LINQ to SQL 類別檔案。 (按兩下 [方案總管] 中的 **.dbml** 檔案。)
 
-2. 以滑鼠右鍵按一下 [O/R 設計工具]**** 中的空白區域，然後按一下 [檢視程式碼]****。
+2. 以滑鼠右鍵按一下 [O/R 設計工具] 中的空白區域，然後按一下 [檢視程式碼]。
 
      會以 `DataContext` 的部分類別開啟 [程式碼編輯器]。
 
@@ -89,9 +91,9 @@ ms.locfileid: "85282341"
 
 4. 如果是 Visual Basic 專案：
 
-    1. 展開 [方法名稱]**** 清單。
+    1. 展開 [方法名稱] 清單。
 
-    2. 按一下 [UpdateENTITYCLASSNAME]****。
+    2. 按一下 [UpdateENTITYCLASSNAME]。
 
     3. 將 `UpdateENTITYCLASSNAME` 方法新增至部分類別中。
 
@@ -119,7 +121,7 @@ ms.locfileid: "85282341"
     }
     ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [驗證資料](../data-tools/validate-data-in-datasets.md)

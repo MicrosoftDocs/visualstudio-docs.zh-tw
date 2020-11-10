@@ -1,6 +1,8 @@
 ---
 title: 使用簽入原則同步處理專案規則集
 ms.date: 11/04/2016
+description: 瞭解如何同步處理 Visual Studio 程式碼專案規則集與 Azure DevOps 專案簽入原則。
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e27987f7fa298ddcedf52a9f01a80f57d3d329f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 913860538fe7f9da1514d0e51d23bb3ea48c3b66
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371777"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434684"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>如何：使用 Azure DevOps 專案簽入原則來同步處理常式代碼專案規則集
 
@@ -31,7 +33,7 @@ ms.locfileid: "85371777"
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>若要指定 Microsoft 標準規則集
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下程式碼專案，然後按一下 [ **屬性**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下程式碼專案，然後按一下 [ **屬性** ]。
 
 2. 按一下 [程式碼分析]。
 
@@ -51,7 +53,7 @@ ms.locfileid: "85371777"
 
 1. 如有必要，請在指定簽入原則的規則集檔案上執行 get 作業。
 
-2. 在 **方案總管**中，以滑鼠右鍵按一下程式碼專案，然後按一下 [ **屬性**]。
+2. 在 **方案總管** 中，以滑鼠右鍵按一下程式碼專案，然後按一下 [ **屬性** ]。
 
 3. 按一下 [程式碼分析]。
 

@@ -1,6 +1,8 @@
 ---
 title: 隱藏所產生程式碼的程式碼分析違規
 ms.date: 05/13/2019
+description: 瞭解如何隱藏所產生程式碼的程式碼分析警告。 瞭解如何防止 Visual Studio 顯示有關產生之程式碼的舊版分析警告。
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 175df8bb4dded4f66508ef405e031178606fd531
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e462281686236f809fbd88588df5ad8fd832dbde
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371803"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435543"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>如何：隱藏所產生程式碼的程式碼分析警告
 
@@ -26,7 +28,7 @@ ms.locfileid: "85371803"
 
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>隱藏專案中產生之程式碼的警告
 
-1. 在 **方案總管** 中的專案上按一下滑鼠右鍵，然後按一下 [ **屬性**]。
+1. 在 **方案總管** 中的專案上按一下滑鼠右鍵，然後按一下 [ **屬性** ]。
 
 2. 選擇 [程式 **代碼分析** ] 索引標籤。
 

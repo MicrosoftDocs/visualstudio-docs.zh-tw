@@ -1,6 +1,8 @@
 ---
 title: 從 IDE 或命令列產生程式碼度量
 ms.date: 11/02/2018
+description: 瞭解如何在 Visual Studio 中產生程式碼度量資料。 請參閱如何使用方案總管、規則集檔案、命令列或功能表命令。
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code metrics data
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fc255d0e04dd45400fa5da2b81c2e050a2150f
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 9c72e53266eae11fb060ac117c4a6dc0a1c37e2e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658525"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434788"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>How to：產生程式碼度量資料
 
@@ -48,11 +50,11 @@ ms.locfileid: "91658525"
 </RuleSet>
 ```
 
-### <a name="configuration"></a>組態
+### <a name="configuration"></a>設定
 
 您可以設定程式碼計量規則引發的臨界值。
 
-1. 建立文字檔 例如，您可以將它命名為 *CodeMetricsConfig.txt*。
+1. 建立文字檔 例如，您可以將它命名為 *CodeMetricsConfig.txt* 。
 
 2. 以下列格式將所需的臨界值新增至文字檔：
 
@@ -72,15 +74,15 @@ ms.locfileid: "91658525"
 
 ## <a name="calculate-code-metrics-menu-command"></a>計算程式碼度量功能表命令
 
-使用 [**分析**  >  **計算程式碼度量**] 功能表，為 IDE 中的一個或所有開啟的專案產生程式碼度量。
+使用 [ **分析**  >  **計算程式碼度量** ] 功能表，為 IDE 中的一個或所有開啟的專案產生程式碼度量。
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>產生整個解決方案的程式碼度量結果
 
 您可以使用下列任何一種方式產生整個解決方案的程式碼度量結果：
 
-- 從功能表列中，選取 [**分析**  >  **計算**  >  **方案的程式**代碼度量]。
+- 從功能表列中，選取 [ **分析**  >  **計算**  >  **方案的程式** 代碼度量]。
 
-- 在 **方案總管**中，以滑鼠右鍵按一下方案，然後選取 [ **計算程式碼度量**]。
+- 在 **方案總管** 中，以滑鼠右鍵按一下方案，然後選取 [ **計算程式碼度量** ]。
 
 - 在 [程式 **代碼計量結果** ] 視窗中，選取 [ **計算方案的程式碼度量** ] 按鈕。
 
@@ -88,11 +90,11 @@ ms.locfileid: "91658525"
 
 ### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>產生一或多個專案的程式碼度量結果
 
-1. 在 **方案總管**中，選取一或多個專案。
+1. 在 **方案總管** 中，選取一或多個專案。
 
-1. 從功能表列中，選取 [**分析**  >  **計算**  >  **所選取專案的程式**代碼度量])  (。
+1. 從功能表列中，選取 [ **分析**  >  **計算**  >  **所選取專案的程式** 代碼度量])  (。
 
-結果會產生並顯示 [程式 **代碼度量結果** ] 視窗。 若要查看結果詳細資料，請展開階層中的樹狀 **結構**。
+結果會產生並顯示 [程式 **代碼度量結果** ] 視窗。 若要查看結果詳細資料，請展開階層中的樹狀 **結構** 。
 
 ::: moniker range="vs-2017"
 
@@ -282,7 +284,7 @@ Build succeeded.
 1. 複製 [dotnet/roslyn-分析器](https://github.com/dotnet/roslyn-analyzers) 存放庫。
 2. 以系統管理員身分開啟 Visual Studio 的開發人員命令提示字元。
 3. 從 **roslyn 分析器** 存放庫的根目錄中，執行下列命令： `Restore.cmd`
-4. 將目錄變更為 *src\Tools*。
+4. 將目錄變更為 *src\Tools* 。
 5. 執行下列命令以建立 **計量 .csproj** 專案：
 
    ```shell
@@ -293,7 +295,7 @@ Build succeeded.
 
 #### <a name="metricsexe-usage"></a>Metrics.exe 使用方式
 
-若要執行 *Metrics.exe*，請提供專案或方案和輸出 XML 檔案做為引數。 例如：
+若要執行 *Metrics.exe* ，請提供專案或方案和輸出 XML 檔案做為引數。 例如：
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -305,7 +307,7 @@ Completed Successfully.
 
 #### <a name="legacy-mode"></a>舊版模式
 
-您可以選擇以*舊版模式*建立*Metrics.exe* 。 此工具的舊版模式會產生更接近 [所產生之舊版工具](#previous-versions)的度量值。 此外，在舊版模式中， *Metrics.exe* 會針對舊版工具產生之程式碼度量的相同一組方法類型，產生程式碼度量。 例如，它不會產生欄位和屬性初始化運算式的程式碼計量資料。 舊版模式適用于回溯相容性，或者，如果您有根據程式碼計量編號的程式碼簽入管制。 以舊版模式建立 *Metrics.exe* 的命令為：
+您可以選擇以 *舊版模式* 建立 *Metrics.exe* 。 此工具的舊版模式會產生更接近 [所產生之舊版工具](#previous-versions)的度量值。 此外，在舊版模式中， *Metrics.exe* 會針對舊版工具產生之程式碼度量的相同一組方法類型，產生程式碼度量。 例如，它不會產生欄位和屬性初始化運算式的程式碼計量資料。 舊版模式適用于回溯相容性，或者，如果您有根據程式碼計量編號的程式碼簽入管制。 以舊版模式建立 *Metrics.exe* 的命令為：
 
 ```shell
 msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
@@ -316,11 +318,11 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 ### <a name="previous-versions"></a>舊版
 
 ::: moniker range=">=vs-2019"
-Visual Studio 2015 包含的命令列程式碼度量工具也稱為 *Metrics.exe*。 這個舊版的工具會進行二進位分析，也就是以元件為基礎的分析。 較新版本的 *Metrics.exe* 工具會改為分析原始程式碼。 因為較新的 *Metrics.exe* 工具是以程式碼為基礎，所以命令列程式碼度量結果可能與 Visual Studio IDE 和舊版 *Metrics.exe*所產生的不同。 從 Visual Studio 2019 開始，Visual Studio IDE 會分析原始程式碼（例如命令列工具），且結果應該相同。
+Visual Studio 2015 包含的命令列程式碼度量工具也稱為 *Metrics.exe* 。 這個舊版的工具會進行二進位分析，也就是以元件為基礎的分析。 較新版本的 *Metrics.exe* 工具會改為分析原始程式碼。 因為較新的 *Metrics.exe* 工具是以程式碼為基礎，所以命令列程式碼度量結果可能與 Visual Studio IDE 和舊版 *Metrics.exe* 所產生的不同。 從 Visual Studio 2019 開始，Visual Studio IDE 會分析原始程式碼（例如命令列工具），且結果應該相同。
 
 ::: moniker-end
 ::: moniker range="vs-2017"
-Visual Studio 2015 包含的命令列程式碼度量工具也稱為 *Metrics.exe*。 這個舊版的工具會進行二進位分析，也就是以元件為基礎的分析。 新的 *Metrics.exe* 工具會改為分析原始程式碼。 因為新的 *Metrics.exe* 工具是以程式碼為基礎，所以命令列程式碼度量結果與 Visual Studio IDE 和舊版 *Metrics.exe*所產生的不同。
+Visual Studio 2015 包含的命令列程式碼度量工具也稱為 *Metrics.exe* 。 這個舊版的工具會進行二進位分析，也就是以元件為基礎的分析。 新的 *Metrics.exe* 工具會改為分析原始程式碼。 因為新的 *Metrics.exe* 工具是以程式碼為基礎，所以命令列程式碼度量結果與 Visual Studio IDE 和舊版 *Metrics.exe* 所產生的不同。
 ::: moniker-end
 
 只要方案和專案可以載入，新的命令列程式碼度量工具就會計算計量（即使存在原始程式碼錯誤）。
@@ -334,9 +336,9 @@ Visual Studio 2015 包含的命令列程式碼度量工具也稱為 *Metrics.exe
 `LinesOfCode`在新的命令列程式碼度量工具中，計量更為精確且更可靠。 它與任何 codegen 差異無關，而且當工具組或執行時間變更時，並不會變更。 新工具會計算程式碼的實際行數，包括空白行和批註。
 ::: moniker-end
 
-其他的度量（例如和）會 `CyclomaticComplexity` `MaintainabilityIndex` 使用與舊版 *Metrics.exe*相同的公式，但新的工具會計算 `IOperations` (邏輯來源指令的數目，) 而非中繼語言 (IL) 指令。 這些數位將與 Visual Studio IDE 和舊版 *Metrics.exe*所產生的數位稍有不同。
+其他的度量（例如和）會 `CyclomaticComplexity` `MaintainabilityIndex` 使用與舊版 *Metrics.exe* 相同的公式，但新的工具會計算 `IOperations` (邏輯來源指令的數目，) 而非中繼語言 (IL) 指令。 這些數位將與 Visual Studio IDE 和舊版 *Metrics.exe* 所產生的數位稍有不同。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用程式碼度量結果視窗](../code-quality/working-with-code-metrics-data.md)
 - [程式碼度量值](../code-quality/code-metrics-values.md)

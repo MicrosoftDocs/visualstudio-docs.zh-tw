@@ -1,5 +1,7 @@
 ---
 title: 如何：使用交易儲存資料
+description: 請參閱 Visual Studio 中的資料集工具，以瞭解如何使用交易來儲存資料。 您可以使用「系統交易」命名空間，將資料儲存在交易中。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 40894adefb42d6de077a2e2812d26f90bc5f40dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1cd112a1960078c72c575542525a5ecf6571b06
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281691"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434580"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>如何：使用交易儲存資料
 
 您可以使用命名空間將資料儲存在交易中 <xref:System.Transactions> 。 <xref:System.Transactions.TransactionScope>您可以使用物件來參與自動為您管理的交易。
 
-*系統*不會使用對 system.string 元件的參考來建立專案，因此您需要手動加入使用交易之專案的參考。
+*系統* 不會使用對 system.string 元件的參考來建立專案，因此您需要手動加入使用交易之專案的參考。
 
 若要執行交易，最簡單的方式就是 <xref:System.Transactions.TransactionScope> 在語句中具現化物件 `using` 。  (如需詳細資訊，請參閱 [using 語句](/dotnet/visual-basic/language-reference/statements/using-statement)和 [using 語句](/dotnet/csharp/language-reference/keywords/using-statement)。 ) 在語句中執行的程式碼會 `using` 參與交易。
 
@@ -37,11 +39,11 @@ ms.locfileid: "85281691"
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>若要加入 System.Transactions.dll 的參考
 
-1. 在 [專案]**** 功能表上，選取 [新增參考]****。
+1. 在 [專案] 功能表上，選取 [新增參考]。
 
-2. 在 [ **.net** (] 索引標籤上，) SQL Server 專案的 **SQL Server** ] 索引標籤中，選取 [ **系統交易**]，然後選取 **[確定]**。
+2. 在 [ **.net** (] 索引標籤上，) SQL Server 專案的 **SQL Server** ] 索引標籤中，選取 [ **系統交易** ]，然後選取 **[確定]** 。
 
-     *System.Transactions.dll*的參考會加入至專案。
+     *System.Transactions.dll* 的參考會加入至專案。
 
 ## <a name="to-save-data-in-a-transaction"></a>若要將資料儲存在交易中
 
@@ -50,7 +52,7 @@ ms.locfileid: "85281691"
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)
 - [逐步解說：儲存異動中的資料](../data-tools/save-data-in-a-transaction.md)

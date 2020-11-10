@@ -7,12 +7,12 @@ ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 11/09/2020
 ms.topic: how-to
 description: 瞭解系統管理員如何編輯訂用帳戶指派。
-ms.openlocfilehash: 785bad481e4329647582d1f441988b1cd83a055a
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 0f1ec9c9aa63b5bd877e13f112964f7d74a4b5af
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382490"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433553"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>編輯 Visual Studio 訂用帳戶指派
 訂用帳戶管理員可讓您變更指派給組織內個人的訂用帳戶。  本文章討論您可以進行的變更類型，並提供必要的步驟。
@@ -39,6 +39,8 @@ ms.locfileid: "94382490"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
 
+> [!NOTE]
+> 請勿變更範本中的訂用帳戶 Guid。 請參閱我們的文章，以瞭解如何 [指派特定的訂](assign-guid.md)用帳戶 guid。
 
 1. 若要一次編輯多個訂閱者，請流覽至 [訂閱者] 索引標籤。在頂端的功能區中，按一下 [ **大量編輯** ]。
 
@@ -46,7 +48,7 @@ ms.locfileid: "94382490"
    > [!div class="mx-imgBorder"]
    > ![編輯授權 - 匯出大量編輯清單](_img/edit-license/edit-license-bulk-edit-export.png "按一下 [匯出此 excel]，即可建立目前訂用帳戶的清單。")
 
-3. 接下來，將檔案儲存在本機，以便輕鬆找到它，進行任何必要變更後再上傳。 為確保成功上傳，請勿在大量編輯檔案中 **編輯訂用帳戶層級或訂** 用帳戶 GUID，因為這樣做會導致上傳失敗。
+3. 接下來，將檔案儲存在本機，以便輕鬆找到它，進行任何必要變更後再上傳。 
 
 4. 返回 Visual Studio 訂用帳戶管理入口網站的 [大量編輯] 對話方塊中，按一下 [瀏覽]。 選取您儲存的 Excel 檔案，然後按一下 [確定]。 您會在螢幕上看到上傳進度。
    > [!div class="mx-imgBorder"]
@@ -54,7 +56,7 @@ ms.locfileid: "94382490"
 
 5. 上傳檔案後，您會看到通知，讓您知道作業已順利完成。 此時，您的編輯會反映在訂閱者資訊中。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 檔](/azure/devops/)
 - [Azure 檔](/azure/)

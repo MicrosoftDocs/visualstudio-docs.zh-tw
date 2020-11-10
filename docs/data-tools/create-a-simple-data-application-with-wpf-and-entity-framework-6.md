@@ -1,5 +1,7 @@
 ---
 title: 使用 WPF 和 Entity Framework 6 的簡單資料應用程式
+description: 在本逐步解說中，請參閱如何使用 Windows Presentation Foundation (WPF) 和 Entity Framework 6，在 Visual Studio 中建立簡單的表單資料應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,16 +11,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 078b3eedc9971dfc444e86b9f8d7ce770fcdb966
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 7aad99392db33256e991e731770266c1a53dec50
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743388"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435489"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 建立簡單的資料應用程式
 
-本逐步解說示範如何在 Visual Studio 中建立基本的「表單資料」應用程式。 應用程式會使用 SQL Server LocalDB、Northwind 資料庫、Entity Framework 6 (不 Entity Framework Core) 和 Windows Presentation Foundation .NET Framework 不 (.NET Core) 。 它會示範如何使用主從階層查看來進行基本資料系結，而且也有一個自訂系結導覽器，其中有按鈕可供 **移動**、 **上移**、移 **至開始**、 **移至結尾**、 **更新** 及 **刪除**。
+本逐步解說示範如何在 Visual Studio 中建立基本的「表單資料」應用程式。 應用程式會使用 SQL Server LocalDB、Northwind 資料庫、Entity Framework 6 (不 Entity Framework Core) 和 Windows Presentation Foundation .NET Framework 不 (.NET Core) 。 它會示範如何使用主從階層查看來進行基本資料系結，而且也有一個自訂系結導覽器，其中有按鈕可供 **移動** 、 **上移** 、移 **至開始** 、 **移至結尾** 、 **更新** 及 **刪除** 。
 
 本文著重于在 Visual Studio 中使用資料工具，而不會嘗試以任何深度解釋基礎技術。 它假設您已對 XAML、Entity Framework 和 SQL 有基本的熟悉程度。 此範例也不會示範模型視圖 ViewModel (MVVM) 架構，這是 WPF 應用程式的標準。 不過，您可以將此程式碼複製到您自己的 MVVM 應用程式中，但有一些修改。
 
@@ -26,11 +28,11 @@ ms.locfileid: "89743388"
 
 此範例使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。 如果該產品的 ADO.NET 資料提供者支援 Entity Framework，則也應該與其他 SQL database 產品搭配使用。
 
-1. 如果您沒有 LocalDB SQL Server Express，請從 [SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)或透過 **Visual Studio 安裝程式**進行安裝。 在 Visual Studio 安裝程式**** 中，您可以安裝 SQL Server Express LocalDB 作為 **.NET 桌面開發**工作負載的一部分，或是作為個別的元件。
+1. 如果您沒有 LocalDB SQL Server Express，請從 [SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)或透過 **Visual Studio 安裝程式** 進行安裝。 在 Visual Studio 安裝程式中，您可以安裝 SQL Server Express LocalDB 作為 **.NET 桌面開發** 工作負載的一部分，或是作為個別的元件。
 
 2. 遵循下列步驟來安裝 Northwind 範例資料庫：
 
-    1. 在 Visual Studio 中，開啟 [ **SQL Server 物件總管** ] 視窗。  (**SQL Server 物件總管**會安裝為**Visual Studio 安裝程式**中**資料儲存和處理**工作負載的一部分。 ) 展開**SQL Server**節點。 以滑鼠右鍵按一下您的 LocalDB 實例，然後選取 [追加 **查詢**]。
+    1. 在 Visual Studio 中，開啟 [ **SQL Server 物件總管** ] 視窗。  ( **SQL Server 物件總管** 會安裝為 **Visual Studio 安裝程式** 中 **資料儲存和處理** 工作負載的一部分。 ) 展開 **SQL Server** 節點。 以滑鼠右鍵按一下您的 LocalDB 實例，然後選取 [追加 **查詢** ]。
 
        [查詢編輯器] 視窗隨即開啟。
 
@@ -46,11 +48,11 @@ ms.locfileid: "89743388"
 
 1. 在 Visual Studio 中，建立新的 c # **WPF 應用程式** 專案。
 
-2. 新增 Entity Framework 6 的 NuGet 套件。 在 **方案總管**中，選取專案節點。 在主功能表中，選擇 [ **Project**  >  **管理 NuGet 封裝**]。
+2. 新增 Entity Framework 6 的 NuGet 套件。 在 **方案總管** 中，選取專案節點。 在主功能表中，選擇 [ **Project**  >  **管理 NuGet 封裝** ]。
 
      ![[管理 NuGet 套件] 功能表項目](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 
-3. 在 [ **NuGet 封裝管理員**中，按一下 [ **流覽]** 連結。 Entity Framework 可能是清單中的最上層套件。 按一下右窗格中的 [ **安裝** ]，然後遵循提示進行。 [輸出] 視窗會告訴您安裝完成的時間。
+3. 在 [ **NuGet 封裝管理員** 中，按一下 [ **流覽]** 連結。 Entity Framework 可能是清單中的最上層套件。 按一下右窗格中的 [ **安裝** ]，然後遵循提示進行。 [輸出] 視窗會告訴您安裝完成的時間。
 
      ![Entity Framework NuGet 套件](../data-tools/media/raddata_vs2015_nuget_ef.png)
 
@@ -58,27 +60,27 @@ ms.locfileid: "89743388"
 
 ## <a name="create-the-model"></a>建立模型
 
-1. 在**方案總管**中，以滑鼠右鍵按一下專案節點，然後選擇 [**加入**  >  **新專案**]。 在左窗格的 [c #] 節點下，選擇 [ **資料** ]，然後在中間窗格中選擇 [ **ADO.NET 實體資料模型**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下專案節點，然後選擇 [ **加入**  >  **新專案** ]。 在左窗格的 [c #] 節點下，選擇 [ **資料** ]，然後在中間窗格中選擇 [ **ADO.NET 實體資料模型** ]。
 
    ![Entity Framework 模型新專案](../data-tools/media/raddata-ef-new-project-item.png)
 
-2. 呼叫模型 `Northwind_model` ，然後選擇 **[確定]**。 **實體資料模型 Wizard**隨即開啟。 **從資料庫中選擇 [EF Designer** ]，然後按 **[下一步]**。
+2. 呼叫模型 `Northwind_model` ，然後選擇 **[確定]** 。 **實體資料模型 Wizard** 隨即開啟。 **從資料庫中選擇 [EF Designer** ]，然後按 **[下一步]** 。
 
    ![來自資料庫的 EF 模型](../data-tools/media/raddata-ef-model-from-database.png)
 
-3. 在下一個畫面中，輸入或選擇 LocalDB Northwind 連接 (例如 (localdb) \MSSQLLocalDB) 、指定 Northwind 資料庫，然後按 **[下一步]**。
+3. 在下一個畫面中，輸入或選擇 LocalDB Northwind 連接 (例如 (localdb) \MSSQLLocalDB) 、指定 Northwind 資料庫，然後按 **[下一步]** 。
 
-4. 在嚮導的下一頁中，選擇要包含在 Entity Framework 模型中的資料表、預存程式和其他資料庫物件。 展開樹狀檢視中的 dbo 節點，然後選擇 [ **客戶**]、[ **訂單**] 和 [ **訂單詳細資料**]。 將預設值保留為核取，然後按一下 **[完成]**。
+4. 在嚮導的下一頁中，選擇要包含在 Entity Framework 模型中的資料表、預存程式和其他資料庫物件。 展開樹狀檢視中的 dbo 節點，然後選擇 [ **客戶** ]、[ **訂單** ] 和 [ **訂單詳細資料** ]。 將預設值保留為核取，然後按一下 **[完成]** 。
 
     ![選擇模型的資料庫物件](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. Wizard 會產生代表 Entity Framework 模型的 c # 類別。 這些類別是簡單的 c # 類別，而這些類別是我們對 WPF 使用者介面進行 databind 的。 *.Edmx*檔案會描述關聯性和其他中繼資料，這些中繼資料會將類別與資料庫中的物件產生關聯。 *Tt*檔是 T4 範本，會產生可在模型上運作的程式碼，並將變更儲存至資料庫。 您可以在 [Northwind_model] 節點下的 **方案總管** 中看到所有這些檔案：
+5. Wizard 會產生代表 Entity Framework 模型的 c # 類別。 這些類別是簡單的 c # 類別，而這些類別是我們對 WPF 使用者介面進行 databind 的。 *.Edmx* 檔案會描述關聯性和其他中繼資料，這些中繼資料會將類別與資料庫中的物件產生關聯。 *Tt* 檔是 T4 範本，會產生可在模型上運作的程式碼，並將變更儲存至資料庫。 您可以在 [Northwind_model] 節點下的 **方案總管** 中看到所有這些檔案：
 
       ![方案總管 EF 模型檔案](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
-    *.Edmx*檔的設計工具介面可讓您修改模型中的某些屬性和關聯性。 我們不會在此逐步解說中使用設計工具。
+    *.Edmx* 檔的設計工具介面可讓您修改模型中的某些屬性和關聯性。 我們不會在此逐步解說中使用設計工具。
 
-6. *Tt*檔案是一般用途，您必須調整其中一個檔案，才能使用 WPF 資料系結，這需要 ObservableCollections。 在 **方案總管**中，展開 [Northwind_model] 節點，直到您找到 *Northwind_model tt*為止。  (確認您不在中 *。CoNtext.tt* 檔案，其位於 *.edmx* 檔案的正下方。 ) 
+6. *Tt* 檔案是一般用途，您必須調整其中一個檔案，才能使用 WPF 資料系結，這需要 ObservableCollections。 在 **方案總管** 中，展開 [Northwind_model] 節點，直到您找到 *Northwind_model tt* 為止。  (確認您不在中 *。CoNtext.tt* 檔案，其位於 *.edmx* 檔案的正下方。 ) 
 
    - 將兩個出現的取代為 <xref:System.Collections.ICollection> <xref:System.Collections.ObjectModel.ObservableCollection%601> 。
 
@@ -86,7 +88,7 @@ ms.locfileid: "89743388"
 
    - <xref:System.Collections.Generic>以行 431) 的 (取代唯一出現的 <xref:System.Collections.ObjectModel> 。
 
-7. 按**Ctrl** + **Shift** + **B**以建立專案。 當組建完成時，[資料來源] wizard 可以看到模型類別。
+7. 按 **Ctrl** + **Shift** + **B** 以建立專案。 當組建完成時，[資料來源] wizard 可以看到模型類別。
 
 現在您已準備好將此模型連結到 XAML 頁面，以便您可以查看、流覽和修改資料。
 
@@ -94,17 +96,17 @@ ms.locfileid: "89743388"
 
 您可以撰寫自己的資料系結程式碼，但更容易讓 Visual Studio 為您進行。
 
-1. 從主功能表中，選擇 [**專案**  >  **加入新資料來源**]，以顯示 [**資料來源設定向導]**。 選擇 [ **物件** ] 是因為您系結至模型類別，而不是系結至資料庫：
+1. 從主功能表中，選擇 [ **專案**  >  **加入新資料來源** ]，以顯示 [ **資料來源設定向導]** 。 選擇 [ **物件** ] 是因為您系結至模型類別，而不是系結至資料庫：
 
      ![具有物件來源的資料來源設定 Wizard](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png)
 
-2. 展開專案的節點，然後選取 [ **Customer**]。 訂單的 (來源會從客戶的 Orders 導覽屬性自動產生。 ) 
+2. 展開專案的節點，然後選取 [ **Customer** ]。 訂單的 (來源會從客戶的 Orders 導覽屬性自動產生。 ) 
 
      ![將實體類別新增為數據源](../data-tools/media/raddata-add-entity-classes-as-data-sources.png)
 
-3. 按一下 [完成]  。
+3. 按一下 [完成] 。
 
-4. 在程式碼查看中流覽至*MainWindow。* 基於此範例的目的，我們會將 XAML 保持簡單。 將 MainWindow 的標題變更為更具描述性的專案，並將其高度和寬度增加到目前的 600 x 800。 您稍後可以隨時變更。 現在將這三個數據列定義新增至主要方格、導覽按鈕的一個資料列、客戶的詳細資料，以及一個顯示其訂單的方格：
+4. 在程式碼查看中流覽至 *MainWindow。* 基於此範例的目的，我們會將 XAML 保持簡單。 將 MainWindow 的標題變更為更具描述性的專案，並將其高度和寬度增加到目前的 600 x 800。 您稍後可以隨時變更。 現在將這三個數據列定義新增至主要方格、導覽按鈕的一個資料列、客戶的詳細資料，以及一個顯示其訂單的方格：
 
     ```xaml
         <Grid.RowDefinitions>
@@ -114,11 +116,11 @@ ms.locfileid: "89743388"
         </Grid.RowDefinitions>
     ```
 
-5. 現在開啟 *MainWindow* ，讓您在設計工具中進行流覽。 這會導致 [ **資料來源** ] 視窗顯示為 [ **工具箱**] 旁邊 Visual Studio 視窗邊界中的選項。 按一下索引標籤以開啟視窗，或按**Shift** + **Alt** + **D**或選擇 [ **View**  >  **Other Windows**  >  **資料來源**]。 我們將在 [Customers] 類別的個別文字方塊中顯示每個屬性。 首先，按一下 [ **客戶** ] 下拉式方塊中的箭號，然後選擇 [ **詳細資料**]。 然後，將節點拖曳至設計介面的中間部分，讓設計工具知道您要將它移至中間列。 如果您錯置此資料列，您可以稍後在 XAML 中以手動方式指定該資料列。 根據預設，控制項會以垂直方式放在方格專案中，但現在您可以視需要在表單上排列它們。 例如，將 [ **名稱** ] 文字方塊放在位址上方的上方可能是合理的。 本文的範例應用程式會重新排序欄位，並將它們重新排列成兩個數據行。
+5. 現在開啟 *MainWindow* ，讓您在設計工具中進行流覽。 這會導致 [ **資料來源** ] 視窗顯示為 [ **工具箱** ] 旁邊 Visual Studio 視窗邊界中的選項。 按一下索引標籤以開啟視窗，或按 **Shift** + **Alt** + **D** 或選擇 [ **View**  >  **Other Windows**  >  **資料來源** ]。 我們將在 [Customers] 類別的個別文字方塊中顯示每個屬性。 首先，按一下 [ **客戶** ] 下拉式方塊中的箭號，然後選擇 [ **詳細資料** ]。 然後，將節點拖曳至設計介面的中間部分，讓設計工具知道您要將它移至中間列。 如果您錯置此資料列，您可以稍後在 XAML 中以手動方式指定該資料列。 根據預設，控制項會以垂直方式放在方格專案中，但現在您可以視需要在表單上排列它們。 例如，將 [ **名稱** ] 文字方塊放在位址上方的上方可能是合理的。 本文的範例應用程式會重新排序欄位，並將它們重新排列成兩個數據行。
 
      ![客戶資料來源系結至個別控制項](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
-     在程式碼窗格中，您現在可以在 [資料列 1] 中看到新的 `Grid` 元素， (父方格的中間資料列) 。 父方格具有 `DataContext` 參考已新增至元素之 CollectionViewSource 的屬性 `Windows.Resources` 。 假設該資料內容，當第一個文字方塊系結至 **位址**時，該名稱會對應至 `Address` CollectionViewSource 中目前物件的屬性 `Customer` 。
+     在程式碼窗格中，您現在可以在 [資料列 1] 中看到新的 `Grid` 元素， (父方格的中間資料列) 。 父方格具有 `DataContext` 參考已新增至元素之 CollectionViewSource 的屬性 `Windows.Resources` 。 假設該資料內容，當第一個文字方塊系結至 **位址** 時，該名稱會對應至 `Address` CollectionViewSource 中目前物件的屬性 `Customer` 。
 
     ```xaml
     <Grid DataContext="{StaticResource customerViewSource}">
@@ -142,13 +144,13 @@ ms.locfileid: "89743388"
 
      [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]
 
-8. 按 **F5**。 您應該會看到第一個已抓取到 CollectionViewSource 的客戶詳細資料。 您也應該會在資料方格中看到其訂單。 格式不太好，所以讓我們來修正這個問題。 您也可以建立一種方式來查看其他記錄，並進行基本的 CRUD 作業。
+8. 按 **F5** 。 您應該會看到第一個已抓取到 CollectionViewSource 的客戶詳細資料。 您也應該會在資料方格中看到其訂單。 格式不太好，所以讓我們來修正這個問題。 您也可以建立一種方式來查看其他記錄，並進行基本的 CRUD 作業。
 
 ## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>調整頁面設計，並為新的客戶和訂單新增格線
 
 Visual Studio 所產生的預設相片順序並不適合您的應用程式，因此我們將在此提供最後的 XAML，以將其複製到您的程式碼中。 您也需要一些「表單」 (實際上是方格) ，讓使用者能夠加入新的客戶或訂單。 若要能夠加入新的客戶和訂單，您需要一組不是資料系結至的不同文字方塊 `CollectionViewSource` 。 您將藉由在處理常式方法中設定 Visible 屬性，來控制使用者在任何給定時間看到的方格。 最後，您會將 [刪除] 按鈕新增至 [訂單] 方格中的每個資料列，讓使用者能夠刪除個別訂單。
 
-首先，將這些樣式新增至 `Windows.Resources` *MainWindow*中的元素：
+首先，將這些樣式新增至 `Windows.Resources` *MainWindow* 中的元素：
 
 ```xaml
 <Style x:Key="Label" TargetType="{x:Type Label}" BasedOn="{x:Null}">
@@ -419,15 +421,15 @@ Visual Studio 所產生的預設相片順序並不適合您的應用程式，因
 
 程式碼後端是最基本的，但 add 和 delete 方法除外。 在 CollectionViewSource 的 View 屬性上呼叫方法來執行導覽。 `DeleteOrderCommandHandler`顯示如何針對訂單執行 cascade delete。 我們必須先刪除與其相關聯的 Order_Details。 會 `UpdateCommandHandler` 將新的客戶或訂單加入至集合，否則只會以使用者在文字方塊中所做的變更來更新現有的客戶或訂單。
 
-將這些處理常式方法新增至 *MainWindow.xaml.cs*中的 MainWindow 類別。 如果您的 [Customers] 資料表的 CollectionViewSource 有不同的名稱，則您需要在下列每個方法中調整名稱：
+將這些處理常式方法新增至 *MainWindow.xaml.cs* 中的 MainWindow 類別。 如果您的 [Customers] 資料表的 CollectionViewSource 有不同的名稱，則您需要在下列每個方法中調整名稱：
 
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
 
 ## <a name="run-the-application"></a>執行應用程式
 
-若要開始偵錯，請按 **F5**。 您應該會看到在方格中填入客戶和訂單資料，而且導覽按鈕應該如預期般運作。 按一下 [ **認可** ]，在您輸入資料之後，將新的客戶或訂單加入至模型。 按一下 [ **取消** ] 以返回新客戶或新訂單表單，而不儲存資料。 您可以直接在文字方塊中對現有的客戶和訂單進行編輯，而這些變更會自動寫入至模型。
+若要開始偵錯，請按 **F5** 。 您應該會看到在方格中填入客戶和訂單資料，而且導覽按鈕應該如預期般運作。 按一下 [ **認可** ]，在您輸入資料之後，將新的客戶或訂單加入至模型。 按一下 [ **取消** ] 以返回新客戶或新訂單表單，而不儲存資料。 您可以直接在文字方塊中對現有的客戶和訂單進行編輯，而這些變更會自動寫入至模型。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Entity Framework 文件](/ef/)

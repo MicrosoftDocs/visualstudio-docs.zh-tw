@@ -1,5 +1,7 @@
 ---
 title: 工作流程設計工具殼層功能
+description: 瞭解工作流程設計工具 Shell 功能如何包含許多用來管理目前視圖的按鈕。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a6b192eae3340c6a3d84bb3ccbcce7cbf8d65b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 239a879fbffe67bf54149ba29e98edcd3428410d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816380"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433644"
 ---
 # <a name="workflow-designer-shell-features"></a>工作流程設計工具殼層功能
 
@@ -33,7 +35,7 @@ ms.locfileid: "85816380"
 ## <a name="copying-or-saving-workflows-as-images"></a>將工作流程複製或儲存成影像
  工作流程能夠以點陣圖格式複製，或儲存為點陣圖或向量格式。 複製或儲存影像提供一種匯出的方式，可將目前階層連結根目錄中的整個活動檢視匯出到其他程式，包含其子活動與所有展開的子活動。
 
- 若要複製為影像，請在設計工具的任何位置上按一下滑鼠右鍵，然後選取 [ **複製為影像**]。 若要另存為影像，請在設計工具中的任何位置按一下滑鼠右鍵，然後選取 [ **儲存為影像**]。 工作流程可儲存為 JPG、PNG、GIF 或 XPS 格式。 在視窗底部的 [**另存**新檔] 清單方塊中，選取 [**另存**新檔] 對話方塊上的格式。
+ 若要複製為影像，請在設計工具的任何位置上按一下滑鼠右鍵，然後選取 [ **複製為影像** ]。 若要另存為影像，請在設計工具中的任何位置按一下滑鼠右鍵，然後選取 [ **儲存為影像** ]。 工作流程可儲存為 JPG、PNG、GIF 或 XPS 格式。 在視窗底部的 [ **另存** 新檔] 清單方塊中，選取 [ **另存** 新檔] 對話方塊上的格式。
 
 ## <a name="fonts-and-colors"></a>字型和色彩
 

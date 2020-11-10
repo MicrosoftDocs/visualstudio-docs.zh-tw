@@ -1,6 +1,8 @@
 ---
 title: 使用程式碼分析簽入原則
 ms.date: 11/04/2016
+description: 瞭解如何使用程式碼分析簽入原則來確認程式碼符合繼承、類別結合性、可維護性和複雜性標準。
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, check-in policies
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 883b5e231036c446c1cbf1fbc2fc125a01b3de62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fa97f52f67e08b2ccf0843e5b5400680ed1c020
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371855"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434814"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何：使用程式碼分析簽入原則強制程式碼可維護性
 
@@ -27,21 +29,21 @@ Team Foundation 版本控制的系統管理員可以將程式碼分析可維護�
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>開啟程式碼分析原則編輯器
 
-1. 在 **Team Explorer**中，以滑鼠右鍵按一下專案，按一下 [ **專案設定**]，然後按一下 [ **原始檔控制**]。
+1. 在 **Team Explorer** 中，以滑鼠右鍵按一下專案，按一下 [ **專案設定** ]，然後按一下 [ **原始檔控制** ]。
 
      [ **原始檔控制** ] 對話方塊隨即出現。
 
-2. 在 [ **簽入原則** ] 索引標籤上，按一下 [ **新增**]。
+2. 在 [ **簽入原則** ] 索引標籤上，按一下 [ **新增** ]。
 
      [ **加入簽入原則** ] 對話方塊隨即出現。
 
-3. 在 [ **簽入原則** ] 清單中，選取 [程式 **代碼分析** ] 核取方塊，然後按一下 **[確定]**。
+3. 在 [ **簽入原則** ] 清單中，選取 [程式 **代碼分析** ] 核取方塊，然後按一下 **[確定]** 。
 
      [程式 **代碼分析原則編輯器** ] 對話方塊隨即出現。
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>啟用程式碼分析可維護性規則
 
-1. 在 [程式 **代碼分析原則編輯器** ] 對話方塊的 [ **規則設定**] 下，展開 [可 **維護性規則** ] 節點。
+1. 在 [程式 **代碼分析原則編輯器** ] 對話方塊的 [ **規則設定** ] 下，展開 [可 **維護性規則** ] 節點。
 
 2. 選取下列規則的核取方塊：
 
@@ -55,9 +57,9 @@ Team Foundation 版本控制的系統管理員可以將程式碼分析可維護�
 
      此外，如果您想要違反規則以防止組建成功，請選取規則描述旁的 [將 **警告視為錯誤** ] 核取方塊。
 
-3. 按一下 [確定]  。 新的簽入原則現在適用于未來的簽入。
+3. 按一下 [確定]。 新的簽入原則現在適用于未來的簽入。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼度量值](../code-quality/code-metrics-values.md)
 - [建立和使用程式碼分析簽入原則](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

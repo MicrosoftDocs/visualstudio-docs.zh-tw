@@ -1,6 +1,8 @@
 ---
 title: 適用於 Managed 程式碼的 Managed 建議規則規則集
 ms.date: 11/04/2016
+description: 瞭解 Visual Studio 中受管理的建議規則規則集。 查看著重于安全性、穩定性和其他重大問題的規則描述。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 1d1160f8-4e51-4e70-99cd-82ad10ee7b32
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d4b82bdd63cd8a32ad38ddf949dfbc3dd5bdc193
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 30874b00f7bca4d66a60e359445c28be686d3269
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658486"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435361"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的 Managed 建議規則規則集
 
@@ -21,7 +23,7 @@ ms.locfileid: "91658486"
 
 在您為專案建立的任何自訂規則集中包含此規則集。
 
-|規則|描述|
+|規則|說明|
 |----------|-----------------|
 |[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|具有可處置欄位的類型應該為可處置|
 |[CA1009](../code-quality/ca1009.md)|事件處理常式必須正確宣告|

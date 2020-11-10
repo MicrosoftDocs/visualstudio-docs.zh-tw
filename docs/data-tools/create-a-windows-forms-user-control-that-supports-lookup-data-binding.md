@@ -1,5 +1,6 @@
 ---
 title: 在資料系結中使用查閱資料表-Windows Forms
+description: 瞭解如何使用 Visual Studio 中的 LookupBindingPropertiesAttribute 類別，建立支援查閱資料系結的 Windows Forms 使用者控制項。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,16 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fe2289a54dba0c3b3e34de54991e9b7cfbee4c93
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: de89839dd85f0f330356e1ade7d4658428ea3d3e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037389"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435270"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>建立支援查閱資料繫結的 Windows Forms 使用者控制項
 
-在 Windows Forms 上顯示資料時，您可以從 [工具箱]**** 中選擇現有控制項；或者，如果應用程式需要標準控制項中未提供的功能，您也可以撰寫自訂控制項。 這個逐步解說顯示如何建立可實作 <xref:System.ComponentModel.LookupBindingPropertiesAttribute> 的控制項。 可實作 <xref:System.ComponentModel.LookupBindingPropertiesAttribute> 的控制項可以包含三個可繫結至資料的屬性。 這類控制項類似 <xref:System.Windows.Forms.ComboBox>。
+在 Windows Forms 上顯示資料時，您可以從 [工具箱] 中選擇現有控制項；或者，如果應用程式需要標準控制項中未提供的功能，您也可以撰寫自訂控制項。 這個逐步解說顯示如何建立可實作 <xref:System.ComponentModel.LookupBindingPropertiesAttribute> 的控制項。 可實作 <xref:System.ComponentModel.LookupBindingPropertiesAttribute> 的控制項可以包含三個可繫結至資料的屬性。 這類控制項類似 <xref:System.Windows.Forms.ComboBox>。
 
 如需控制項製作的詳細資訊，請參閱[開發 Windows Form 控制項在設計階段](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time)。
 
@@ -41,9 +42,9 @@ ms.locfileid: "90037389"
 
 在這個逐步解說中，您將瞭解如何：
 
-- 建立新的 **Windows Forms 應用程式**。
+- 建立新的 **Windows Forms 應用程式** 。
 
-- 將新 [使用者控制項]**** 新增至您的專案。
+- 將新 [使用者控制項] 新增至您的專案。
 
 - 透過視覺化方式設計使用者控制項。
 
@@ -51,19 +52,19 @@ ms.locfileid: "90037389"
 
 - 使用 [ **資料來源** 設定] 建立資料集。
 
-- 在 [資料來源]**** 視窗的 [訂單]**** 資料表上設定 [CustomerID]**** 資料行，以使用新的控制項。
+- 在 [資料來源] 視窗的 [訂單] 資料表上設定 [CustomerID] 資料行，以使用新的控制項。
 
 - 建立表單以顯示新控制項中的資料。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
-1. 如果您沒有 LocalDB SQL Server Express，請從 [SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)或透過 **Visual Studio 安裝程式**進行安裝。 在 **Visual Studio 安裝程式**中，您可以安裝 SQL Server Express LocalDB 作為 **資料儲存和處理** 工作負載的一部分，或安裝為個別的元件。
+1. 如果您沒有 LocalDB SQL Server Express，請從 [SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)或透過 **Visual Studio 安裝程式** 進行安裝。 在 **Visual Studio 安裝程式** 中，您可以安裝 SQL Server Express LocalDB 作為 **資料儲存和處理** 工作負載的一部分，或安裝為個別的元件。
 
 2. 遵循下列步驟來安裝 Northwind 範例資料庫：
 
-    1. 在 Visual Studio 中，開啟 [ **SQL Server 物件總管** ] 視窗。  (SQL Server 物件總管會安裝為 Visual Studio 安裝程式中 **資料儲存和處理** 工作負載的一部分。 ) 展開 **SQL Server** 節點。 以滑鼠右鍵按一下您的 LocalDB 實例，然後選取 [追加 **查詢**]。
+    1. 在 Visual Studio 中，開啟 [ **SQL Server 物件總管** ] 視窗。  (SQL Server 物件總管會安裝為 Visual Studio 安裝程式中 **資料儲存和處理** 工作負載的一部分。 ) 展開 **SQL Server** 節點。 以滑鼠右鍵按一下您的 LocalDB 實例，然後選取 [追加 **查詢** ]。
 
        [查詢編輯器] 視窗隨即開啟。
 
@@ -79,23 +80,23 @@ ms.locfileid: "90037389"
 
 1. 在 Visual Studio 中，於 [檔案]  功能表上選取 [新增]   > [專案]  。
 
-2. 展開左側窗格中的 [ **Visual c #** ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
+2. 展開左側窗格中的 [ **Visual c #** ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面** ]。
 
 3. 在中間窗格中，選取 [ **Windows Forms 應用程式** ] 專案類型。
 
-4. 將專案命名為 **>lookupcontrolwalkthrough**，然後選擇 **[確定]**。
+4. 將專案命名為 **>lookupcontrolwalkthrough** ，然後選擇 **[確定]** 。
 
-     隨即建立 **LookupControlWalkthrough** 專案，並將其新增至 [方案總管]****。
+     隨即建立 **LookupControlWalkthrough** 專案，並將其新增至 [方案總管]。
 
 ## <a name="add-a-user-control-to-the-project"></a>將使用者控制項新增至專案
 
-此逐步解說會從 [使用者控制項]**** 建立查閱控制項，進而將 [使用者控制項]**** 項目新增至 **LookupControlWalkthrough** 專案。
+此逐步解說會從 [使用者控制項] 建立查閱控制項，進而將 [使用者控制項] 項目新增至 **LookupControlWalkthrough** 專案。
 
-1. 從 [專案]**** 功能表選取 [新增使用者控制項]****。
+1. 從 [專案] 功能表選取 [新增使用者控制項]。
 
-2. `LookupBox`在 [**名稱**] 區域中輸入，然後按一下 [**新增**]。
+2. `LookupBox`在 [ **名稱** ] 區域中輸入，然後按一下 [ **新增** ]。
 
-     [LookupBox]**** 控制項會新增至 [方案總管]****，並在設計工具中開啟。
+     [LookupBox] 控制項會新增至 [方案總管]，並在設計工具中開啟。
 
 ## <a name="design-the-lookupbox-control"></a>設計 LookupBox 控制項
 
@@ -105,70 +106,70 @@ ms.locfileid: "90037389"
 
 針對支援資料繫結的查閱控制項，您可以實作 <xref:System.ComponentModel.LookupBindingPropertiesAttribute>。
 
-1. 將 [LookupBox]**** 控制項切換至程式碼檢視。 (在 [檢視]**** 功能表上，選擇 [程式碼]****。)
+1. 將 [LookupBox] 控制項切換至程式碼檢視。 (在 [檢視] 功能表上，選擇 [程式碼]。)
 
 2. 將 `LookupBox` 中的程式碼取代為下列內容：
 
      [!code-vb[VbRaddataDisplaying#5](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.vb)]
      [!code-csharp[VbRaddataDisplaying#5](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.cs)]
 
-3. 從 [ **組建** ] 功能表中，選擇 [ **建立方案**]。
+3. 從 [ **組建** ] 功能表中，選擇 [ **建立方案** ]。
 
 ## <a name="create-a-data-source-from-your-database"></a>從您的資料庫建立資料來源
 
-此步驟使用 [資料來源組態精靈]****，根據 Northwind 範例資料庫中的 `Customers` 和 `Orders` 資料表建立資料來源。
+此步驟使用 [資料來源組態精靈]，根據 Northwind 範例資料庫中的 `Customers` 和 `Orders` 資料表建立資料來源。
 
-1. 若要開啟 [ **資料來源** ] 視窗，請按一下 [ **資料** ] 功能表上的 [ **顯示資料來源**]。
+1. 若要開啟 [ **資料來源** ] 視窗，請按一下 [ **資料** ] 功能表上的 [ **顯示資料來源** ]。
 
 2. 在 [ **資料來源** ] 視窗中，選取 [ **加入新的資料來源** ] 以啟動 [ **資料來源** 設定向導]。
 
-3. 請選取 [ **選擇資料來源類型** ] 頁面上的 [ **資料庫** ]，再按 [ **下一步**]。
+3. 請選取 [ **選擇資料來源類型** ] 頁面上的 [ **資料庫** ]，再按 [ **下一步** ]。
 
-4. 在 [選擇您的資料連線]**** 頁面上，執行下列其中一項：
+4. 在 [選擇您的資料連線] 頁面上，執行下列其中一項：
 
     - 如果下拉式清單中有提供 Northwind 範例資料庫的資料連接，請選取這個資料連接。
 
-    - 選取 [新增連線]**** 啟動 [新增/修改連線]**** 對話方塊。
+    - 選取 [新增連線] 啟動 [新增/修改連線] 對話方塊。
 
-5. 如果資料庫需要密碼，請選取選項來加入敏感性資料，然後按一下 [下一步]****。
+5. 如果資料庫需要密碼，請選取選項來加入敏感性資料，然後按一下 [下一步]。
 
-6. 在 [ **將連接字串儲存到應用程式佈建檔** ] 頁面上，按 **[下一步]**。
+6. 在 [ **將連接字串儲存到應用程式佈建檔** ] 頁面上，按 **[下一步]** 。
 
-7. 展開 [選擇您的資料庫物件]**** 頁面上的 [資料表]**** 節點。
+7. 展開 [選擇您的資料庫物件] 頁面上的 [資料表] 節點。
 
-8. 選取 `Customers` 和 `Orders` 資料表，然後按一下 [完成]****。
+8. 選取 `Customers` 和 `Orders` 資料表，然後按一下 [完成]。
 
-     **NorthwindDataSet**會加入至您的專案，而且 `Customers` 和 `Orders` 資料表會出現在 [**資料來源**] 視窗中。
+     **NorthwindDataSet** 會加入至您的專案，而且 `Customers` 和 `Orders` 資料表會出現在 [ **資料來源** ] 視窗中。
 
 ## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>將 Orders 資料表的 CustomerID 資料行設定為使用 LookupBox 控制項
 
 在 [ **資料來源** ] 視窗中，您可以設定在將專案拖曳至表單之前建立的控制項。
 
-1. 在設計工具中，開啟 **Form1**。
+1. 在設計工具中，開啟 **Form1** 。
 
-2. 在 [資料來源]**** 視窗中，展開 [客戶]**** 節點。
+2. 在 [資料來源] 視窗中，展開 [客戶] 節點。
 
-3. 展開 [訂單]**** 節點 (位於 [客戶]**** 節點的 [傳真]**** 資料行下方)。
+3. 展開 [訂單] 節點 (位於 [客戶] 節點的 [傳真] 資料行下方)。
 
-4. 按一下 [訂單]**** 節點上的下拉式箭頭，並從控制項清單中選擇 [詳細資料]****。
+4. 按一下 [訂單] 節點上的下拉式箭頭，並從控制項清單中選擇 [詳細資料]。
 
-5. 按一下 [CustomerID]**** 資料行 (位於 [訂單]**** 節點中) 上的下拉式箭頭，並選擇 [自訂]****。
+5. 按一下 [CustomerID] 資料行 (位於 [訂單] 節點中) 上的下拉式箭頭，並選擇 [自訂]。
 
-6. 在 [資料 UI 自訂選項]**** 對話方塊中，從 [相關聯的控制項]**** 清單中選取 **LookupBox**。
+6. 在 [資料 UI 自訂選項] 對話方塊中，從 [相關聯的控制項] 清單中選取 **LookupBox** 。
 
 7. 按一下 [確定]。
 
-8. 按一下 [CustomerID]**** 資料行上的下拉式箭頭，並選擇 **LookupBox**。
+8. 按一下 [CustomerID] 資料行上的下拉式箭頭，並選擇 **LookupBox** 。
 
 ## <a name="add-controls-to-the-form"></a>將控制項新增至表單
 
-將項目從 [資料來源]**** 視窗拖曳至 **Form1**，以建立資料繫結控制項。
+將項目從 [資料來源] 視窗拖曳至 **Form1** ，以建立資料繫結控制項。
 
 若要在 Windows Form 上建立資料繫結控制項，請將 [ **Orders** ] 節點從 [ **資料來源** ] 視窗拖曳至 Windows Form，並確認 **LookupBox** 控制項是用來顯示資料行中的資料 `CustomerID` 。
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>系結控制項以查詢 Customers 資料表中的公司名稱
 
-若要設定查閱系結，請在 [**資料來源**] 視窗中選取 [主要**客戶**] 節點，並將它拖曳到**Form1**上**CustomerIDLookupBox**的下拉式方塊中。
+若要設定查閱系結，請在 [ **資料來源** ] 視窗中選取 [主要 **客戶** ] 節點，並將它拖曳到 **Form1** 上 **CustomerIDLookupBox** 的下拉式方塊中。
 
 這會設定資料繫結以顯示 `Customers` 資料表中的 `CompanyName`，同時維護 `Orders` 資料表中的 `CustomerID` 值。
 
@@ -178,6 +179,6 @@ ms.locfileid: "90037389"
 
 - 巡覽部分記錄，並確認 `CompanyName` 出現在 `LookupBox` 控制項中。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

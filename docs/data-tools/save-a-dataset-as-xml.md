@@ -1,5 +1,7 @@
 ---
 title: 將資料集儲存為 XML
+description: 將資料集儲存為 XML。 藉由呼叫資料集的可用 XML 方法（例如 GetXml 或 WriteXml），存取資料集中的 XML 資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cc8854581903ab58a327ff18be7b3b7c0f860a3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e454aca47f9bf6425ef2dfd98747869c27523f2c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281730"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434619"
 ---
 # <a name="save-a-dataset-as-xml"></a>將資料集儲存為 XML
 
@@ -45,6 +47,6 @@ ms.locfileid: "85281730"
      [!code-vb[VbRaddataSaving#13](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_2.vb)]
      [!code-csharp[VbRaddataSaving#13](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_2.cs)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

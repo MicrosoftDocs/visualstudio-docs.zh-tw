@@ -1,5 +1,6 @@
 ---
 title: '以手動方式執行舊版程式碼分析 ( .NET) '
+description: 瞭解如何在原始程式碼中偵測可能的瑕疵。 瞭解如何在 Visual Studio 中的 managed 程式碼上手動執行舊版程式碼分析。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ca865b33d59f87453cafc337e1595c9d772b17a2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f61f0823c33478b4482f00541bbfe778fe72ed7e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808609"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434736"
 ---
 # <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>如何：針對 managed 程式碼手動執行舊版程式碼分析
 
@@ -30,6 +31,6 @@ ms.locfileid: "90808609"
 set EnableLegacyCodeAnalysis = true
 ```
 
-2. 在 **方案總管**中，按一下專案。
+2. 在 **方案總管** 中，按一下專案。
 
-3. 在 [**分析**] 功能表上，按一下 [針對*專案名稱***執行程式碼分析**]。
+3. 在 [ **分析** ] 功能表上，按一下 [針對 *專案名稱***執行程式碼分析** ]。

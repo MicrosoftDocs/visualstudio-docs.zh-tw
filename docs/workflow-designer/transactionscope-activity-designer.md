@@ -1,5 +1,7 @@
 ---
 title: 工作流程設計工具-TransactionScope 活動設計工具
+description: 瞭解如何使用 TransactionScope 活動設計工具來建立和設定 TransactionScope 活動。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8f9ed7822dc231fdd4888d3e44c4e3218357f95
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: f1fde6dabb372bfa20f55335008ce91e8de2481a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713473"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433579"
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope 活動設計工具
 
-**TransactionScope**活動設計工具是用來建立及設定 <xref:System.Activities.Statements.TransactionScope> 活動。
+**TransactionScope** 活動設計工具是用來建立及設定 <xref:System.Activities.Statements.TransactionScope> 活動。
 
 ## <a name="the-transactionscope-activity"></a>TransactionScope 活動
 
@@ -27,21 +29,21 @@ ms.locfileid: "90713473"
 
 ### <a name="using-the-transactionscope-activity-designer"></a>使用 TransactionScope 活動設計工具
 
-在 [工具箱] 的 [**交易**] 類別中存取 [ **TransactionScope** ] 活動設計**工具**。 [ **TransactionScope** ] 活動設計工具可以從 [ **工具箱** ] 拖曳出來，放到工作流程設計工具介面上通常用來放置活動的任一處，例如內部 <xref:System.Activities.Statements.Sequence> 。 這會建立一個 <xref:System.Activities.Statements.TransactionScope> 活動，具有 TransactionScope 的預設 <xref:System.Activities.Activity.DisplayName%2A>。 <xref:System.Activities.Activity.DisplayName%2A>值可以在 [ **TransactionScope** ] 活動設計工具的標頭中編輯，或是在屬性方格的 [ **DisplayName** ] 方塊中編輯。
+在 [工具箱] 的 [ **交易** ] 類別中存取 [ **TransactionScope** ] 活動設計 **工具** 。 [ **TransactionScope** ] 活動設計工具可以從 [ **工具箱** ] 拖曳出來，放到工作流程設計工具介面上通常用來放置活動的任一處，例如內部 <xref:System.Activities.Statements.Sequence> 。 這會建立一個 <xref:System.Activities.Statements.TransactionScope> 活動，具有 TransactionScope 的預設 <xref:System.Activities.Activity.DisplayName%2A>。 <xref:System.Activities.Activity.DisplayName%2A>值可以在 [ **TransactionScope** ] 活動設計工具的標頭中編輯，或是在屬性方格的 [ **DisplayName** ] 方塊中編輯。
 
 ### <a name="the-transactionscope-properties"></a>TransactionScope 屬性
 
 下表顯示 <xref:System.Activities.Statements.TransactionScope> 屬性，並且描述屬性在設計工具中的使用方式。 <xref:System.Activities.Activity.DisplayName%2A>和 <xref:System.Activities.Statements.TransactionScope.Body%2A> 屬性可以在工作流程設計工具介面上編輯。 但其他屬性必須在屬性方格上進行編輯。
 
-|屬性名稱|必要|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.TransactionScope> 活動可選用的易記名稱。 預設為 TransactionScope。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 值並非絕對必要，但建議您盡量使用。|
-|<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|指定要在單一交易中執行的活動。 若要加入 <xref:System.Activities.Statements.TransactionScope.Body%2A> 活動，請從 [**工具箱**] 將活動拖放到 [ **TransactionScope** ] 活動設計工具的 [內文] 方塊中，並**在 [在**此放置活動] 提示文字。|
-|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|True|為這個 <xref:System.Transactions.IsolationLevel> 指定 <xref:System.Activities.Statements.TransactionScope>。|
-|<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|False|指定異動必須完成的時間間隔 (格式為 00:00:00，表示時:分:秒)。 預設值是 1 分鐘 (00:01:00)。|
-|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|True|指定值，這個值會指出當交易中止時，工作流程是否應隨之中止。|
+|<xref:System.Activities.Activity.DisplayName%2A>|否|<xref:System.Activities.Statements.TransactionScope> 活動可選用的易記名稱。 預設為 TransactionScope。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 值並非絕對必要，但建議您盡量使用。|
+|<xref:System.Activities.Statements.TransactionScope.Body%2A>|對|指定要在單一交易中執行的活動。 若要加入 <xref:System.Activities.Statements.TransactionScope.Body%2A> 活動，請從 [ **工具箱** ] 將活動拖放到 [ **TransactionScope** ] 活動設計工具的 [內文] 方塊中，並 **在 [在** 此放置活動] 提示文字。|
+|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|對|為這個 <xref:System.Transactions.IsolationLevel> 指定 <xref:System.Activities.Statements.TransactionScope>。|
+|<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|否|指定異動必須完成的時間間隔 (格式為 00:00:00，表示時:分:秒)。 預設值是 1 分鐘 (00:01:00)。|
+|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|對|指定值，這個值會指出當交易中止時，工作流程是否應隨之中止。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [交易](../workflow-designer/transaction-activity-designers.md)
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)

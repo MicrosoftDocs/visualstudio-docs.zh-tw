@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c4a1effcf61348d2f2267fb38164fd166f7d48
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 45fc0a58262a533416f630ede795d0060f9fc909
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382967"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434489"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>將您的應用程式部署到資料夾、IIS、Azure 或其他目的地
 
@@ -117,16 +117,16 @@ ms.locfileid: "94382967"
 
 ### <a name="azure-virtual-machine"></a>Azure 虛擬機器
 
-[Azure 虛擬機器 (VM)](https://azure.microsoft.com/documentation/services/virtual-machines/) 可讓您建立和管理雲端中任意數目的計算資源。 假設負有 VM 上所有軟體和更新的責任，即可依應用程式要求視需要進行自訂。 您可以透過「遠端桌面」直接存取虛擬機器，每部機器都會依需要維持其獲指派的 IP 位址。
+[Azure 虛擬機器 (vm) ](https://azure.microsoft.com/documentation/services/virtual-machines/) 可讓您在雲端中建立及管理任意數量的計算資源。 假設負有 VM 上所有軟體和更新的責任，即可依應用程式要求視需要進行自訂。 您可以透過「遠端桌面」直接存取虛擬機器，每部機器都會依需要維持其獲指派的 IP 位址。
 
 調整裝載於虛擬機器的應用程式涉及依需求啟動其他 VM，然後部署必要軟體。 這個額外控制層可讓您在全球各地區以不同的方式調整。 例如，如果您的應用程式服務各種地區辦公室的員工，則可以依據這些地區域中的員工數目來調整 VM，而這可能會降低成本。
 
-如需其他資訊，請參閱 Azure App Service、Azure 虛擬機器以及其他 Azure 服務之間的[詳細比較](/azure/architecture/guide/technology-choices/compute-decision-tree)，而您可以使用 Visual Studio 中的 [自訂] 選項將這些 Azure 服務用作部署目標。
+如需詳細資訊，請參閱 Azure App Service、Azure 虛擬機器和其他 Azure 服務之間的 [詳細比較](/azure/architecture/guide/technology-choices/compute-decision-tree) ，您可以使用 Visual Studio 中的 [自訂] 選項作為部署目標。
 
 #### <a name="when-to-choose-azure-virtual-machines"></a>選擇 Azure 虛擬機器的時機
 
 - 您想要部署可透過網際網路存取的 Web 應用程式，並完整控制所指派 IP 位址的存留期。
-- 您需要在伺服器上進行電腦層級自訂，包括特定資料庫系統、特定網路組態、磁碟分割等這類額外軟體。
+- 您需要在伺服器上進行電腦層級的自訂，包括特殊的資料庫系統、特定網路設定、磁碟分割等其他軟體。
 - 您想要具有調整 Web 應用程式的細部控制層。
 - 您因任何其他原因而需要直接存取裝載應用程式的伺服器。
 
@@ -147,19 +147,29 @@ ms.locfileid: "94382967"
 
 ## <a name="folder"></a>資料夾
 
-部署至檔案系統，表示只需要將應用程式檔案複製到您自己電腦上的特定資料夾。 這最常用於進行測試；或者，如果電腦也執行伺服器，則用來部署應用程式以供有限數目的人員使用。 如果在網路上共用目標資料夾，則部署至檔案系統之後，其他可能接著將它部署至特定伺服器的人員將可使用 Web 應用程式檔案。
+部署至檔案系統表示將應用程式的檔案複製到自己電腦上的特定資料夾。 部署到資料夾最常用於測試用途，或部署應用程式以供有限數目的人員使用（如果電腦也正在執行伺服器）。 如果在網路上共用目標資料夾，則部署至檔案系統之後，其他可能接著將它部署至特定伺服器的人員將可使用 Web 應用程式檔案。
+::: moniker range=">=vs-2019"
+從 Visual Studio 2019 16.8 開始，資料夾目標包含使用 ClickOnce 發行 .Net Windows 應用程式的功能。
 
+如果您想要使用 ClickOnce 發行 .NET Core 3.1 或更新版本的 Windows 應用程式，請參閱 [使用 Clickonce 部署 .Net Windows 應用程式](quickstart-deploy-using-clickonce-folder.md)。
+::: moniker-end
 任何正在執行伺服器的本機電腦都可以透過網際網路或內部網路使用應用程式，而這取決於其設定方式和其所連接的網路。  (如果您將電腦直接連線到網際網路，請特別小心保護它免于遭受外部安全性威脅。 ) 因為您管理這些機器，所以您完全掌控軟體和硬體設定。
 
-請注意，如果您因任何原因 (例如電腦存取) 而無法使用 Azure App Service 或 Azure 虛擬機器這類雲端服務，則可以在自己的資料中心內使用 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)。 Azure Stack 既可讓您透過 Azure App Service 和「Azure 虛擬機器」來管理和使用計算資源，又可讓所有項目保留在內部部署環境中。
+如果基於任何原因 (例如機器存取) 您無法使用 Azure App Service 或 Azure 虛擬機器等雲端服務，您可以在自己的資料中心使用 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) 。 Azure Stack 既可讓您透過 Azure App Service 和「Azure 虛擬機器」來管理和使用計算資源，又可讓所有項目保留在內部部署環境中。
 
 ### <a name="when-to-choose-file-system-deployment"></a>選擇檔案系統部署的時機
 
 - 您只需要將應用程式部署至檔案共用，而其他人將從該檔案共用部署至不同伺服器。
+::: moniker range=">=vs-2019"
+- 您想要使用 ClickOnce 部署 .NET Windows 應用程式
+::: moniker-end
 - 您只需要本機測試部署。
 - 您想要個別檢查並可能修改應用程式檔案，再將它們傳送至另一個部署目標。
 
 如需詳細資訊，請參閱 [快速入門-部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
+::: moniker range=">=vs-2019"
+如需使用 ClickOnce 部署 .NET Windows 應用程式的詳細資訊，請參閱 [使用 Clickonce 部署 .Net windows 應用程式](quickstart-deploy-using-clickonce-folder.md)。
+::: moniker-end
 
 如需選擇設定的其他說明，請參閱下列各項：
 
@@ -207,7 +217,7 @@ IIS 網頁伺服器可讓您將應用程式部署至 Azure 以外的 web 伺服�
 
 如需詳細資訊，請參閱 [快速入門-部署至網站](quickstart-deploy-to-a-web-site.md)。
 
-如需在 IIS 上進行 ASP.NET Core 疑難排解的詳細資訊，請參閱 [Azure App Service 和 iis 上的 ASP.NET Core 疑難排解](/aspnet/core/test/troubleshoot-azure-iis)。
+如需有關 IIS 上 ASP.NET Core 疑難排解的說明，請參閱 [Azure App Service 和 IIS 上的 ASP.NET Core 疑難排解](/aspnet/core/test/troubleshoot-azure-iis)。
 
 ## <a name="import-profile"></a>匯入設定檔
 

@@ -1,5 +1,7 @@
 ---
 title: 工作流程設計工具 PickBranch 活動設計工具
+description: 瞭解 PickBranch 活動設計工具如何在可由傳入事件觸發的 Pick 活動內，提供以事件為基礎的執行路徑。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34da9091c0f96b7270678f9b36fe861e4a87418f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bce1cee7fad7ccff57a6911c99a9470a22b9a927
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876082"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434229"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch 活動設計工具
 
@@ -27,24 +29,24 @@ ms.locfileid: "86876082"
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>如何使用 Pick 活動設計工具
 
-存取 [工具箱] 的 [**控制流程**] 類別中的 [ **PickBranch** ] 設計**工具**。
+存取 [工具箱] 的 [ **控制流程** ] 類別中的 [ **PickBranch** ] 設計 **工具** 。
 
-<xref:System.Activities.Statements.PickBranch> **Branch1** **Branch2** <xref:System.Activities.Statements.Pick> 當**Pick**活動設計工具最初放入工作流程設計工具時，預設會建立兩個具有 Branch1 和就 branch2 之顯示名稱的空白物件作為活動的元素。 這些個別 <xref:System.Activities.Statements.PickBranch.DisplayName%2A> 的屬性值可以在 **PickBranch** 設計工具標頭中編輯，也可以在每個分支的 [ **屬性** ] 視窗中編輯。
+<xref:System.Activities.Statements.PickBranch> **Branch1** **Branch2** <xref:System.Activities.Statements.Pick> 當 **Pick** 活動設計工具最初放入工作流程設計工具時，預設會建立兩個具有 Branch1 和就 branch2 之顯示名稱的空白物件作為活動的元素。 這些個別 <xref:System.Activities.Statements.PickBranch.DisplayName%2A> 的屬性值可以在 **PickBranch** 設計工具標頭中編輯，也可以在每個分支的 [ **屬性** ] 視窗中編輯。
 
-有兩種方式可以將 <xref:System.Activities.Statements.PickBranch> 物件加入至物件的集合 <xref:System.Activities.Statements.Pick> ：從 [工具箱] 拖放 [ **PickBranch** ] 設計 **工具**，或使用 [ **Pick** ] 設計介面中的右鍵功能表：
+有兩種方式可以將 <xref:System.Activities.Statements.PickBranch> 物件加入至物件的集合 <xref:System.Activities.Statements.Pick> ：從 [工具箱] 拖放 [ **PickBranch** ] 設計 **工具** ，或使用 [ **Pick** ] 設計介面中的右鍵功能表：
 
 - 當 **PickBranch** 設計 <xref:System.Activities.Statements.PickBranch> 工具從 [ **工具箱** ] 拖曳出來，放入工作流程設計工具介面上 [ **Pick** ] 活動設計工具的其中一個分支時，就會建立。 新的 <xref:System.Activities.Statements.PickBranch> 物件可以放在 <xref:System.Activities.Statements.Pick> 設計工具內部，置於已經包含在集合中的任何現有 <xref:System.Activities.Statements.PickBranch> 項目的左邊或右邊。 當您使用滑鼠將 **PickBranch** 設計工具拖曳至 **Pick** 設計工具時， **Pick** 設計工具會使用垂直藍灰色的寬線來指出 <xref:System.Activities.Statements.PickBranch> 針對特定滑鼠位置加入的位置。
 
 - 以滑鼠右鍵按一下 [ **挑選** 活動設計工具] (，但不在 [ **PickBranch** 設計師]) 中，以取得內容功能表並選取 [ **建立分支** ] 以加入新的 <xref:System.Activities.Statements.PickBranch> 。 請注意，新的 <xref:System.Activities.Statements.PickBranch> 會新增至 <xref:System.Activities.Statements.PickBranch> **Pick** 設計工具中現有物件的右邊。
 
-**PickBranch**設計工具可以展開，以顯示 [**觸發**程式] 和 [**動作**] 方塊，或按一下其標頭右邊的雙游標來折迭。 將 <xref:System.Activities.Statements.PickBranch.Trigger%2A> <xref:System.Activities.Statements.PickBranch.Action%2A> <xref:System.Activities.Statements.PickBranch> 活動放入其設計工具的 [ **觸發** 程式] 和 [ **動作** ] 方塊中，以編輯每個的和。
+**PickBranch** 設計工具可以展開，以顯示 [ **觸發** 程式] 和 [ **動作** ] 方塊，或按一下其標頭右邊的雙游標來折迭。 將 <xref:System.Activities.Statements.PickBranch.Trigger%2A> <xref:System.Activities.Statements.PickBranch.Action%2A> <xref:System.Activities.Statements.PickBranch> 活動放入其設計工具的 [ **觸發** 程式] 和 [ **動作** ] 方塊中，以編輯每個的和。
 
-<xref:System.Activities.Statements.PickBranch>物件集合中的物件可以藉由將物件 <xref:System.Activities.Statements.Pick.Branches%2A> <xref:System.Activities.Statements.Pick> 拖曳至**Pick**設計工具中的新位置來重新排序。 **Pick**設計工具會使用垂直藍灰色的寬線來指出 <xref:System.Activities.Statements.PickBranch> 針對特定滑鼠位置加入的位置。
+<xref:System.Activities.Statements.PickBranch>物件集合中的物件可以藉由將物件 <xref:System.Activities.Statements.Pick.Branches%2A> <xref:System.Activities.Statements.Pick> 拖曳至 **Pick** 設計工具中的新位置來重新排序。 **Pick** 設計工具會使用垂直藍灰色的寬線來指出 <xref:System.Activities.Statements.PickBranch> 針對特定滑鼠位置加入的位置。
 
 有兩個方法可以刪除 <xref:System.Activities.Statements.PickBranch>：
 
 - 選取 [ **PickBranch** ] 設計工具，並將它刪除。
-- 選取 [ **PickBranch** ] 設計工具，以滑鼠右鍵按一下以取得內容功能表，然後選取 [ **刪除**]。
+- 選取 [ **PickBranch** ] 設計工具，以滑鼠右鍵按一下以取得內容功能表，然後選取 [ **刪除** ]。
 
 請務必選取 [ **PickBranch** ] 設計工具，因為不小心選取其 **觸發** 程式或 **動作** 方塊內的其中一個活動，就會刪除其中一項活動，而不是 <xref:System.Activities.Statements.PickBranch> 物件。
 
@@ -52,13 +54,13 @@ ms.locfileid: "86876082"
 
 下表顯示最有用的 <xref:System.Activities.Statements.PickBranch> 屬性，並說明如何在工作流程設計工具中使用它們。
 
-|屬性名稱|必要|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
-|<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|否|**PickBranch**設計工具標頭上顯示的易記名稱。 預設值是 Branch。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|
-|<xref:System.Activities.Statements.PickBranch.Trigger%2A>|是|各個 <xref:System.Activities.Statements.PickBranch> 都包含一個 <xref:System.Activities.Statements.PickBranch.Trigger%2A> 動作，可以叫用 <xref:System.Activities.Statements.PickBranch.Action%2A>。|
+|<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|否|**PickBranch** 設計工具標頭上顯示的易記名稱。 預設值是 Branch。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|
+|<xref:System.Activities.Statements.PickBranch.Trigger%2A>|對|各個 <xref:System.Activities.Statements.PickBranch> 都包含一個 <xref:System.Activities.Statements.PickBranch.Trigger%2A> 動作，可以叫用 <xref:System.Activities.Statements.PickBranch.Action%2A>。|
 |<xref:System.Activities.Statements.PickBranch.Action%2A>|否|各個 <xref:System.Activities.Statements.PickBranch> 都包含一個 <xref:System.Activities.Statements.PickBranch.Action%2A>，如果觸發就會執行。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [控制流程](../workflow-designer/control-flow-activity-designers.md)
 - [Pick 活動](/dotnet/framework/windows-workflow-foundation/pick-activity)

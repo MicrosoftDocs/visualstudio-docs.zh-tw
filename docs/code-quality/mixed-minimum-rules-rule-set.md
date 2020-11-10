@@ -1,6 +1,8 @@
 ---
 title: 混合最小規則規則集
 ms.date: 11/04/2016
+description: 瞭解 Visual Studio 中的混合最小規則規則集。 請參閱支援 Common Language Runtime 之 c + + 專案的規則描述。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edacd898cc1deb0382dd8e8b4b048af895c3b579
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 5bb87da3cc668ba946c6ee607fa3be5a2c79cc32
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658460"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435322"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>混合最小規則規則集
 
@@ -21,7 +23,7 @@ Microsoft 混合的最小規則會著重于 c + + 專案中支援 Common Languag
 
 在您為支援 Common Language Runtime 的 c + + 專案所建立的任何自訂規則集中包含此規則集。
 
-|規則|描述|
+|規則|說明|
 |----------|-----------------|
 |[C6001](/cpp/code-quality/c6001)|使用尚未初始化的記憶體|
 |[C6011](/cpp/code-quality/c6011)|取值的指標為 NULL|
