@@ -1,6 +1,7 @@
 ---
 title: 將程式碼新增至多層式架構 (N-Tier) 應用程式中的 TableAdapter
 description: 將程式碼新增至多層式應用程式中的資料表介面卡。 建立 TableAdapter 的部分類別檔案，並在其中加入程式碼 (，而不是 DatasetName 設計工具) 。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed0664b78408e91eeda5b65c26615e870e2171b6
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 85e89e9800f35fc6d27346b4ed3d4757f83a8dfc
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382360"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518696"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>將程式碼新增至多層式架構 (N-Tier) 應用程式中的 TableAdapter
 您可以藉由建立 TableAdapter 的部分類別檔案並在其中加入程式碼，來擴充 TableAdapter 的功能 (而不是將程式碼加入至 *DatasetName 設計* 工具檔案) 。 部分類別可讓特定類別的程式碼分散到多個實體檔案中。 如需詳細資訊，請參閱 [部分](/dotnet/visual-basic/language-reference/modifiers/partial) 或 [部分 (類型) ](/dotnet/csharp/language-reference/keywords/partial-type)。

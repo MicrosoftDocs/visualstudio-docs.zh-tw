@@ -1,6 +1,7 @@
 ---
 title: 在 Visual Studio 中使用資料
 description: 使用 Visual Studio 中的資料。 建立應用程式，以透過本機電腦、Lan 或公用或私用雲端連接其他資料庫產品或服務中的資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 846898c1cf93d0f90ce04e77ee93bd8802e22ec2
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: a5458ffca549026c99c8faedc8f47d3f3285a7ca
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382087"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518735"
 ---
 # <a name="work-with-data-in-visual-studio"></a>在 Visual Studio 中使用資料
 

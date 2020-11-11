@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 6361b6b3d85c970d74a624c82d052054ab66e44a
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 8194a5f61b45ac2b4358922aaf8c7c7b8bea4ae9
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400098"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518761"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
@@ -221,8 +221,8 @@ ms.locfileid: "93400098"
       <CollectFromChildProcesses>True</CollectFromChildProcesses>
       <CollectAspDotNet>False</CollectAspDotNet>
     </CodeCoverage>
-  </CodeCoverage>
-</Configuration>
+  </Configuration>
+</DataCollector>
 ```
 
 ### <a name="videorecorder-data-collector"></a>VideoRecorder 資料收集器
@@ -464,7 +464,7 @@ public void HomePageTest()
 > [!NOTE]
 > 因為這些環境變數應該一律在測試主機啟動時設定，所以測試應該一律在個別的進程中執行。 如此一來，當有環境變數時，就會設定 */InIsolation* 旗標，讓測試主機一律會被叫用。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [設定測試回合](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md) \(英文\)
 - [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)

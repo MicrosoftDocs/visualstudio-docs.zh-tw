@@ -1,6 +1,7 @@
 ---
 title: 將程式碼新增至多層式架構 (N-Tier) 應用程式中的資料集
 description: 在 Visual Studio 的多層式應用程式中，將程式碼新增至資料集。 建立資料集的部分類別檔案，並在其中加入程式碼 (，而不是 DatasetName 設計工具) 。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bdbd6e728ebd4adea1a18d842651e9941098249c
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: a02edd3f0e34b0315e9b583c509cda4eb0287bf1
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382191"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518683"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>將程式碼新增至多層式架構 (N-Tier) 應用程式中的資料集
 

@@ -1,5 +1,5 @@
 ---
-title: C + + EditorConfig 格式設定慣例
+title: C++ EditorConfig 格式設定慣例
 titleSuffix: ''
 description: 瞭解如何使用 EditorConfig 來格式化 Visual Studio 中的 c + + 程式碼。
 ms.date: 9/14/2020
@@ -14,23 +14,23 @@ ms.topic: reference
 ms.workload:
 - cplusplus
 monikerRange: vs-2019
-ms.openlocfilehash: 31a7db73a4487267c2a74fe628d28b577d339aba
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: f248ede6a4bb45a58d64a346489124462f304a86
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90078836"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518540"
 ---
-# <a name="c-editorconfig-formatting-conventions"></a>C + + EditorConfig 格式設定慣例
+# <a name="c-editorconfig-formatting-conventions"></a>C++ EditorConfig 格式設定慣例
 
 Visual Studio c + + 格式器有一組豐富的可設定設定，可供全域套用。 若要設定特定工作區的 c + + 格式化設定，請使用 [clangformat](https://clang.llvm.org/docs/ClangFormat.html) 或 [EditorConfig](https://editorconfig.org/)。 Visual Studio 和 Visual Studio Code 都有內建的全域 Visual Studio c + + 格式化設定 EditorConfig 支援，EditorConfig 設定優先。 這表示您可以將 EditorConfig 檔案新增至工作區，以便在更細微的層級上設定 c + + 格式，並且針對參與專案的每個人強制執行一致的程式碼樣式。
 
 ## <a name="c-formatting-conventions"></a>C + + 格式慣例
 
-C + + 格式化 EditorConfig 設定前面會加上 `_cpp__` 。 以下是您的 EditorConfig 檔案可能看起來的範例：
+C + + 格式化 EditorConfig 設定前面會加上 `cpp_` 。 以下是您的 EditorConfig 檔案可能看起來的範例：
 
 ```ini
-[\*.{c++,cc,cpp,cxx,h,h++,hh,hpp,hxx,inl,ipp,tlh,tli}]
+[*.{c++,cc,cpp,cxx,h,h++,hh,hpp,hxx,inl,ipp,tlh,tli}]
 
 cpp_indent_case_contents_when_block = true
 cpp_new_line_before_open_brace_namespace = same_line
