@@ -1,21 +1,21 @@
 ---
 title: 開始使用 ASP.NET Core
 description: 本文說明如何在 Visual Studio for Mac 中開始使用 ASP.NET，包括安裝及建立新的專案。
-author: sayedihashimi
-ms.author: sayedha
-ms.date: 04/02/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/06/2020
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
 no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 7f8795b798b492370a08e55171c5627485c7869a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a2f45069967df412f9245f8044c53ef425a00fdf
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584057"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493357"
 ---
 # <a name="getting-started-with-aspnet-core"></a>開始使用 ASP.NET Core
 
@@ -27,7 +27,7 @@ ms.locfileid: "91584057"
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中建立 ASP.NET Core 應用程式
 
-開啟 Visual Studio for Mac。 在開始畫面選取 [新增專案]****
+開啟 Visual Studio for Mac。 在開始畫面選取 [新增專案]
 
 ![New Project Dialog](media/asp-net-core-2019-new-asp-core.png)
 
@@ -44,13 +44,13 @@ ms.locfileid: "91584057"
 
 ![ASP.NET 專案選項](media/asp-net-core-2019-new-asp-core.png)
 
-選取 [ASP.NET Core 空白 Web 應用程式]****，然後按 [下一步]****。 提供專案名稱，然後按 [建立]****。 這會建立新的 ASP.NET Core 應用程式。 在 solution pad 的左窗格中，展開第二個箭號，然後選取 [ **Startup.cs**]。 它看起來應該如下圖所示：
+選取 [ASP.NET Core 空白 Web 應用程式]，然後按 [下一步]。 提供專案名稱，然後按 [建立]。 這會建立新的 ASP.NET Core 應用程式。 在方案視窗的左窗格中，展開第二個箭號，然後選取 [ **Startup.cs** ]。 它看起來應該如下圖所示：
 
 ![新的 ASP.NET Core 空白專案檢視](media/asp-net-core-2019-empty-project.png)
 
-ASP.NET Core 空白範本會建立具有兩個預設檔案的 web 應用程式： **Program.cs** 和 **Startup.cs**，如下所述。 它也會建立相依性資料夾，其中包含專案的 NuGet 套件相依性，例如 ASP.NET Core、.NET Core framework 和建立專案的 MSBuild 目標：
+ASP.NET Core 空白範本會建立具有兩個預設檔案的 web 應用程式： **Program.cs** 和 **Startup.cs** ，如下所述。 它也會建立相依性資料夾，其中包含專案的 NuGet 套件相依性，例如 ASP.NET Core、.NET Core framework 和建立專案的 MSBuild 目標：
 
-![顯示相依性的 Solution Pad](media/asp-net-core-2019-solution-dependencies.png)
+![顯示相依性的解決方案視窗](media/asp-net-core-2019-solution-dependencies.png)
 
 ### <a name="programcs"></a>Program.cs
 
@@ -70,7 +70,7 @@ ASP.NET Core 空白範本會建立具有兩個預設檔案的 web 應用程式�
     }
 ```
 
-ASP.NET Core 的應用程式會透過的實例設定和啟動主機，以在其主要方法中建立 web 伺服器 [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) 。 這個建立器提供了一些方法來允許設定主機。 在範本應用程式中會使用下列組態：
+ASP.NET Core 的應用程式會透過的實例設定和啟動主機，以在其主要方法中建立 web 伺服器 [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) 。 這個建立器提供了一些方法來允許設定主機。 在範本應用程式中，會使用下列設定：
 
 * `.UseStartup<Startup>()`：指定啟動類別。
 
@@ -128,7 +128,7 @@ ASP.NET Core 的應用程式會透過的實例設定和啟動主機，以在其�
 
 ![瀏覽器執行](media/asp-net-web-picker.png)
 
-Visual Studio for Mac 會使用隨機的連接埠來啟動您的 Web 專案。 若要找出這個連接埠，請開啟應用程式輸出，其列在 [檢視] > [板]**** 底下。 您應該尋找的輸出類似如下：
+Visual Studio for Mac 會使用隨機的連接埠來啟動您的 Web 專案。 若要瞭解這是什麼埠，請開啟 [應用程式輸出]，它會列在 [ **> 其他視窗** ] 功能表的 [View] 之下。 您應該尋找的輸出類似如下：
 
 ![顯示接聽連接埠的應用程式輸出](media/asp-net-core-image6.png)
 
@@ -138,17 +138,17 @@ Visual Studio for Mac 會使用隨機的連接埠來啟動您的 Web 專案。 �
 
 ## <a name="adding-a-controller"></a>新增控制器
 
-ASP.NET Core 應用程式使用「模型-檢視-控制器 (MVC)」設計模式，為應用程式的每個部分提供責任的邏輯分隔。 MVC 包含下列項目：
+ASP.NET Core 應用程式使用「模型-檢視-控制器 (MVC)」設計模式，為應用程式的每個部分提供責任的邏輯分隔。 MVC 設計模式包含下列概念：
 
-- **模型**：代表應用程式資料的類別。
-- **檢視**：顯示應用程式的使用者介面 (這通常是模型資料)。
-- **控制器**：用來處理瀏覽器要求、回應使用者輸入和互動的類別。
+- **模型** ：代表應用程式資料的類別。
+- **檢視** ：顯示應用程式的使用者介面 (這通常是模型資料)。
+- **控制器** ：用來處理瀏覽器要求、回應使用者輸入和互動的類別。
 
-如需使用 MVC 的詳細資訊，請參閱 [ASP.NET Core MVC 的概觀](/aspnet/core/mvc/overview)指南。
+如需有關使用 MVC 的詳細資訊，請參閱 [ASP.NET CORE mvc](/aspnet/core/mvc/overview) 指南的總覽。
 
 若要新增控制器，請執行下列作業：
 
-1. 以滑鼠右鍵按一下專案名稱，然後選取 [新增] > [新增檔案]****。 選取 [一般] > [空白類別]****，然後輸入控制器名稱：
+1. 以滑鼠右鍵按一下專案名稱，然後選取 [新增] > [新增檔案]。 選取 [一般] > [空白類別]，然後輸入控制器名稱：
 
     ![[新增檔案] 對話方塊](media/asp-net-core-image8.png)
 
@@ -175,9 +175,9 @@ ASP.NET Core 應用程式使用「模型-檢視-控制器 (MVC)」設計模式�
     }
     ```
 
-3. 以滑鼠右鍵按一下 [相依性]**** 資料夾，然後選取 [新增套件...]****，將 `Microsoft.AspNetCore.Mvc` 相依性新增至專案。
+3. 以滑鼠右鍵按一下 [相依性] 資料夾，然後選取 [新增套件...]，將 `Microsoft.AspNetCore.Mvc` 相依性新增至專案。
 
-4. 使用搜尋方塊來瀏覽 NuGet 程式庫以找出 `Microsoft.AspNetCore.Mvc`，然後選取 [新增套件]****。 這可能需要幾分鐘的時間來完成安裝，而且系統可能會提示您接受所需相依性的各種授權：
+4. 使用搜尋方塊來瀏覽 NuGet 程式庫以找出 `Microsoft.AspNetCore.Mvc`，然後選取 [新增套件]。 這可能需要幾分鐘的時間來完成安裝，而且系統可能會提示您接受所需相依性的各種授權：
 
     ![新增 Nuget](media/asp-net-core-image9.png)
 
@@ -230,7 +230,7 @@ ASP.NET Core 應用程式使用「模型-檢視-控制器 (MVC)」設計模式�
 
 ## <a name="troubleshooting"></a>疑難排解
 
-如果您需要在 Mac OS 10.12 (Sierra) 和更新版本上手動安裝 .NET Core ，請執行下列作業：
+如果您需要在 macOS 10.12 (內部) 和更高版本上手動安裝 .NET Core，請執行下列動作：
 
 1. 在開始安裝 .NET Core 之前，請確定所有作業系統更新已更新為最新穩定版本。 若要檢查此項，請移至應用程式市集應用程式，然後選取 [更新] 索引標籤。
 
@@ -238,11 +238,11 @@ ASP.NET Core 應用程式使用「模型-檢視-控制器 (MVC)」設計模式�
 
 請務必順利完成所有步驟，以確保成功安裝 .NET Core。
 
-## <a name="summary"></a>摘要
+## <a name="summary"></a>總結
 
 本指南提供了 ASP.NET Core 的簡介。 當中描述其概念和使用時機，並提供了如何在 Visual Studio for Mac 中使用它的資訊。
-如需其下一個步驟的詳細資訊，請參閱下列指南：
-- [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1) 檔。
+如需下一個步驟的詳細資訊，請參閱下列指南：
+- [ASP.NET Core](/aspnet/core/) 檔。
 - [建立原生行動應用程式的後端服務](/aspnet/core/mobile/native-mobile-backend)，其示範如何使用 Xamarin.Forms 應用程式的 ASP.NET Core 來建置 REST 服務。
 - [ASP.NET Core 實習實驗室](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)。
 

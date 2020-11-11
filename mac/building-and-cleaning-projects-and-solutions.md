@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 09/19/2019
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
 ms.topic: how-to
-ms.openlocfilehash: a33b590290880a7e20e7c0ec44c0b12942b1240e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de6be4b509eff8a013f7367614e0016f810b3657
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939106"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492694"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>建置和清除專案與方案
 
@@ -22,7 +22,7 @@ ms.locfileid: "85939106"
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>建置、重建或清除整個方案
 
-1. 在 [ **Solution Pad**中選取方案節點：
+1. 在 [ **方案] 視窗** 中選取方案節點：
 
     ![選取方案節點](media/compiling-and-building-image1.png)
 
@@ -38,7 +38,7 @@ ms.locfileid: "85939106"
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>建立或重建單一專案
 
-1. 在 **Solution Pad**中選取專案。
+1. 在 [ **方案] 視窗** 中選取專案。
 
 2. 從功能表列選取 [ **組建** ] 功能表。
 
@@ -52,10 +52,10 @@ ms.locfileid: "85939106"
 
     ![按紅色方塊以停止建置](media/compiling-and-building-image3.png)
 
-* 使用 [**組建**] 功能表中的 [**停止**] 專案。
+* 使用 [ **組建** ] 功能表中的 [ **停止** ] 專案。
 
-* 按下 **Cmd + Shift + Return**。
+* 按下 **Cmd + Shift + Return** 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建置和清除專案與方案 (Windows 上的 Visual Studio)](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)

@@ -1,18 +1,18 @@
 ---
 title: 使用 XAML 設計工具的設計階段資料 Visual Studio
 description: 瞭解如何在 XAML 中使用設計階段資料。
-ms.date: 09/29/2020
+ms.date: 11/10/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: 1dd0b4df440f6addd474ef08e7bf0b2958a58076
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298470"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492890"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>使用 XAML 設計工具的設計階段資料 Visual Studio
 
@@ -25,7 +25,7 @@ ms.locfileid: "92298470"
 
 設計階段資料是您設定的模擬資料，可讓您更輕鬆地在 XAML 設計工具中將控制項視覺化。 若要開始使用，請將下列程式程式碼新增至 XAML 檔的標頭（如果尚未存在）：
 
-```xml 
+```xml
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 mc:Ignorable="d"
@@ -138,9 +138,9 @@ xmlns:models="clr-namespace:Cities.Models"
 
 ## <a name="use-design-time-data-with-custom-types-and-properties"></a>使用自訂類型和屬性的設計階段資料
 
-這項功能預設僅適用于平臺控制項和屬性。 在本節中，我們將探討讓您將自訂控制項用作設計階段控制項的必要步驟，這是使用 Visual Studio 2019 preview [16.8](/visualstudio/releases/2019/preview-notes) 版或更新版本的客戶可用的新功能。 啟用這項操作有三個需求：
+這項功能預設僅適用于平臺控制項和屬性。 在本節中，我們將探討讓您將自訂控制項用作設計階段控制項的必要步驟，這是使用 Visual Studio 2019 [16.8](/visualstudio/releases/2019/release-notes/) 版或更新版本的客戶可使用的新功能。 啟用這項操作有三個需求：
 
-- 自訂 xmlns 命名空間 
+- 自訂 xmlns 命名空間
 
     ```xml
     xmlns:myControls="http://MyCustomControls"
@@ -177,7 +177,7 @@ xmlns:models="clr-namespace:Cities.Models"
 
 如果您遇到本節未列出的問題，請使用「回報 [問題](../ide/how-to-report-a-problem-with-visual-studio.md) 」工具讓我們知道。
 
-### <a name="requirements"></a>需求
+### <a name="requirements"></a>規格需求
 
 - 設計階段資料需要 Visual Studio 2019 [16.7](/visualstudio/releases/2019/release-notes) 版或更新版本。
 
@@ -189,7 +189,7 @@ xmlns:models="clr-namespace:Cities.Models"
 
 請嘗試關閉並重新開啟 XAML 檔案，並清除並重建您的專案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 Xamarin 預覽設計階段資料](/xamarin/xamarin-forms/xaml/xaml-Designer/design-time-data/)
 - [WPF 應用程式中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)

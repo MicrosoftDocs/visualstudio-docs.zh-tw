@@ -3,15 +3,15 @@ title: 自訂 IDE
 description: Visual Studio for Mac 可以使用各種方式加以自訂，讓使用者能夠在符合其效率與審美需求的環境中開發應用程式。 本文將探討 Visual Studio for Mac 可調整以符合您需求的各種方式。
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 11/06/2020
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: 98adf6aa252f4151af8a5504efd3856aef0afc8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05fd1091a279a085c2a727eb36cbc56fcb201057
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801772"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493285"
 ---
 # <a name="customizing-the-ide"></a>自訂 IDE
 
@@ -21,7 +21,7 @@ Visual Studio for Mac 可以自訂，讓使用者能夠在符合其需求的環�
 
 ![暗色調佈景主題檢視](media/customizing-the-ide-image7a.png)
 
-您可以瀏覽至 [Visual Studio] > [喜好設定] > [環境] > [視覺化樣式]****，然後從 [使用者介面佈景主題]**** 下拉式清單中選取所需的佈景主題，以在 Visual Studio for Mac 中切換佈景主題，如下圖中所示：
+您可以瀏覽至 [Visual Studio] > [喜好設定] > [環境] > [視覺化樣式]，然後從 [使用者介面佈景主題] 下拉式清單中選取所需的佈景主題，以在 Visual Studio for Mac 中切換佈景主題，如下圖中所示：
 
 ![暗色調佈景主題選取](media/customizing-the-ide-image7b.png)
 
@@ -44,7 +44,7 @@ Visual Studio for Mac 以下列 14 種語言進行當地語系化，使它可供
 * 西班牙文
 * 土耳其文
 
-若要變更 Visual Studio for Mac 所顯示的語言，請瀏覽至 [Visual Studio] > [喜好設定] > [環境] > [視覺化樣式]****，然後從 [使用者介面語言]**** 下拉式清單中選取所需語言，如下圖所示：
+若要變更 Visual Studio for Mac 所顯示的語言，請瀏覽至 [Visual Studio] > [喜好設定] > [環境] > [視覺化樣式]，然後從 [使用者介面語言] 下拉式清單中選取所需語言，如下圖所示：
 
 ![語言選擇](media/customizing-the-ide-image11a.png)
 
@@ -58,13 +58,13 @@ Visual Studio for Mac 以下列 14 種語言進行當地語系化，使它可供
 
 ![標準標題選項](media/customizing-the-ide-image8a.png)
 
-填入的 [名稱]**** 和 [電子郵件]**** 欄位將在透過 Visual Studio for Mac 中的版本控制進行的任何認可中使用。 如果您尚未填入這些欄位，Visual Studio for Mac 會在您嘗試使用版本控制時提示您這樣做。
+填入的 [名稱] 和 [電子郵件] 欄位將在透過 Visual Studio for Mac 中的版本控制進行的任何認可中使用。 如果您尚未填入這些欄位，Visual Studio for Mac 會在您嘗試使用版本控制時提示您這樣做。
 
-## <a name="key-bindings"></a>按鍵繫結
+## <a name="key-bindings"></a>按鍵繫結關係
 
 按鍵系結或鍵盤快速鍵可讓您調整您的開發環境，讓您可以在 Visual Studio for Mac 之間更有效率地移動。 它提供許多熱門 IDE 的常見按鍵繫結，例如 Visual Studio (在 Windows 上)、ReSharper、Visual Studio Code 和 Xcode。
 
-您可以瀏覽至 [Visual Studio] > [喜好設定] > [環境] > [按鍵繫結]**** 來設定按鍵繫結，如下圖所示：
+您可以瀏覽至 [Visual Studio] > [喜好設定] > [環境] > [按鍵繫結] 來設定按鍵繫結，如下圖所示：
 
 ![設定按鍵繫結](media/customizing-the-ide-image10a.png)
 
@@ -76,43 +76,41 @@ Visual Studio for Mac 以下列 14 種語言進行當地語系化，使它可供
 
 ## <a name="workspace-layout"></a>工作區版面配置
 
-Visual Studio for Mac 的工作區包含一個主要的文件區域 (通常是編輯器、設計工具介面或選項檔)，周圍伴隨的「板」** 則包含用於存取和管理應用程式檔案、測試及偵錯的實用資訊。
+Visual Studio for Mac 的工作區是由一個主要檔區域所組成 (通常是編輯器、設計工具介面或選項檔) ，並包含可存取和管理應用程式檔、測試和偵錯工具的實用資訊，包含有用的 *工具視窗* 。
 
  ![工作區版面配置](media/customizing-the-ide-image1a.png)
 
-### <a name="viewing-and-arranging-pads"></a>檢視和排列板
+### <a name="viewing-and-arranging-tool-windows"></a>查看和排列工具視窗
 
-當您在 Visual Studio for Mac 中開啟任何新的方案或檔案時，應該注意到工作區中存在一些「板」**，包括 [Solution Pad]、[文件大綱] 和 [錯誤]：
+當您在 Visual Studio for Mac 中開啟任何新的方案或檔案時，應該會注意到工作區中的一些 *工具視窗* ，包括 [方案] 視窗、[檔大綱] 和 [錯誤]：
 
-![Solution Pad](media/customizing-the-ide-image2a.png)
+![工具視窗](media/customizing-the-ide-image2a.png)
 
-Visual Studio for Mac 提供包含其他資訊、工具和瀏覽輔助工具的板，這些全都可透過瀏覽至 [檢視] > [板]**** 功能表項目，並選取面板來加以新增以進行存取：
+Visual Studio for Mac 提供包含其他資訊、工具和導覽輔助工具的工具視窗，您可以流覽 [ **View** ] 功能表項目並選取要加入的工具視窗，以存取這些工具視窗：
 
-![選取新板](media/customizing-the-ide-image3a.png)
+![選取新的工具視窗](media/customizing-the-ide-image3a.png)
 
-板也可以透過各種不同的命令自動開啟，例如**在檔案中尋找** (Shift + Cmd + F) 命令可開啟搜尋結果的卸離板。
+不同的命令也可以自動開啟工具視窗，例如 [在檔案 **中尋找** ] (Shift + Cmd + F) 命令，這會開啟已卸離的搜尋結果視窗。
 
-板可以使用對您而言最有效益的任何方式在工作流程中移動或排列。 例如，它們可停駐在文件編輯器的任一側、另一個板的相鄰位置、另一個板的上方或下方，或者成為一組索引標籤板，讓您能夠在其間快速切換。
+您可以透過任何最適合您的方式，在整個工作流程中移動和排列工具視窗。 例如，它們可以停駐在檔編輯器的任何一邊、與其他工具視窗相鄰、位於另一個視窗的上方或下方，或作為一組索引標籤式視窗，讓您快速切換它們。
 
-對於經常使用的面板，您也可以將面板從 Visual Studio for Mac 視窗中完全卸離，並為該面板建立另一個視窗。
+針對常用的工具視窗，您也可以將它們從 Visual Studio for Mac 視窗和各自的新視窗中完全卸離。
 
-透過每個板右上角的切換圖示可以隱藏和關閉這些板：
+您可以透過每個視窗右上角的控制項來釘選和關閉工具視窗：
 
-![隱藏和關閉板](media/customizing-the-ide-image5a.png)
+:::image type="content" source="media/customizing-the-ide-image5a.png" alt-text="使用控制項釘選或關閉工具視窗":::
 
-自動隱藏的板會停駐在工作區的側邊，讓您在需要時能夠輕鬆存取這些板。 將滑鼠停留在板上時會重新顯示板，而在滑鼠和鍵盤焦點離開板時則會予以隱藏。
+固定的視窗會停駐在工作區的側邊，並在您需要時保持開啟，以加快存取的速度。 停用的視窗是固定的，但在您將滑鼠停留在視窗的索引標籤上，並將滑鼠或焦點放在鍵盤上時，才會顯示：當滑鼠和鍵盤焦點離開它們時，就可以隱藏它們。
 
 ### <a name="organizing-layouts"></a>組織版面配置
 
-任何時候顯示的板都是取決於目前的內容。 例如，使用視覺化設計工具時，工具箱和屬性方格板最重要；偵錯時，最好有偵錯工具板來檢視堆疊和區域變數。
+在任何時間顯示的工具視窗都取決於目前的內容。 例如，使用視覺化設計工具時，[工具箱] 和 [屬性方格] 視窗最重要;在進行偵錯工具時，讓偵錯工具視窗能夠用來查看堆疊和區域變數會很有用。
 
-「版面配置」** 代表已開啟板的狀態。 版面配置可透過 [檢視] 功能表手動切換 (如下圖所示)，或者在您執行某個動作 (例如偵錯或開啟分鏡腳本) 時自動切換：
+開啟的工具視窗狀態 *是以配置表示。* 您可以透過 [View] 功能表以手動方式切換配置（如下圖所示），或在您執行動作（例如，偵錯工具或開啟分鏡腳本）時自動切換版面配置：
 
 ![選取新的版面配置](media/customizing-the-ide-image6b.png)
 
-一定有一個使用中的版面配置，您在版面配置中所做的任何變更 (例如新增或重新定位板) 只會變更使用中的版面配置。 關閉 Visual Studio for Mac 之後，將不會儲存您所做的變更。
-
-不過，可以使用 [檢視] > [儲存目前版面配置]**** 功能表項目來建立新的版面配置。 此命令會將您目前的版面配置新增至功能表，讓您可以隨時選取它：
+您可以使用 View > Layout 來建立新的版面配置 **> 儲存目前的版面** 配置 ... 功能表項目。 此命令會將您目前的版面配置新增至功能表，讓您可以隨時選取它：
 
 ![儲存目前的版面配置](media/customizing-the-ide-image6a.png)
 
@@ -120,7 +118,7 @@ Visual Studio for Mac 提供包含其他資訊、工具和瀏覽輔助工具的�
 
 Visual Studio for Mac 可讓您並排開啟文字編輯器，或以卸離的浮動視窗顯示編輯器。
 
-您可以透過 [View] 功能表項目，藉由選取 [ **view > Editor columns] > 2**個數據行，或將編輯器索引標籤拖曳到編輯器區域的其中一個邊緣，以啟用兩個數據行模式：
+您可以透過 [View] 功能表項目，藉由選取 [ **view > Editor columns] > 2** 個數據行，或將編輯器索引標籤拖曳到編輯器區域的其中一個邊緣，以啟用兩個數據行模式：
 
 ![二欄的並行模式](media/customizing-the-ide-sbs.png)
 
@@ -130,12 +128,12 @@ Visual Studio for Mac 可讓您並排開啟文字編輯器，或以卸離的浮�
 
 ![二欄並排及其他索引標籤](media/customizing-the-ide-sbs2.png)
 
-若要還原為單一開啟的編輯器，請選取 [檢視] > [Editor Columns] (編輯器資料欄) > [1 column] (單欄)****。
+若要還原為單一開啟的編輯器，請選取 [檢視] > [Editor Columns] (編輯器資料欄) > [1 column] (單欄)。
 
 ## <a name="related-video"></a>相關影片
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [將 Visual Studio IDE 個人化 (在 Windows 上)](/visualstudio/ide/personalizing-the-visual-studio-ide)

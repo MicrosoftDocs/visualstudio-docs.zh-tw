@@ -3,15 +3,15 @@ title: 在專案中包含 NuGet 套件
 description: 本檔涵蓋如何使用 Visual Studio for Mac 在專案中包含 NuGet 套件。 它會逐步尋找和下載套件，以及介紹 IDE 整合功能。
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 09/04/2020
+ms.date: 11/09/2020
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: e361a1a0fba05a6fdabc66b03008049dfa34784f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 46ceb99617c6a0e9ba457fdb769c1162090d1d31
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349311"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493487"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中安裝和管理 NuGet 套件
 
@@ -23,7 +23,7 @@ Visual Studio for Mac 中的 NuGet 封裝管理員 UI 可讓您輕鬆地在專�
 
 ## <a name="find-and-install-a-package"></a>尋找並安裝套件
 
-1. 在 Visual Studio for Mac 中開啟專案時，如果使用 **Solution Pad** 中的 Xamarin 專案) ，請以滑鼠右鍵按一下 [相依性 **]** 資料夾 ([ **套件** ] 資料夾，然後選取 [ **管理 NuGet 套件 ...** ]。
+1. 在 Visual Studio for Mac 中開啟專案時，如果使用 [ **方案] 視窗** 中的 Xamarin 專案) ，請以滑鼠右鍵 **按一下 [相依** 性] 資料夾 ([ **套件** ] 資料夾，然後選取 [ **管理 NuGet 套件 ...** ]。
 
     ![新增 NuGet 套件內容動作](media/nuget-walkthrough-packages-menu.png)
 
@@ -85,7 +85,7 @@ using Newtonsoft.Json;
 ![[管理 NuGet 封裝] 對話方塊開啟至 [已安裝] 索引標籤，並選取套件並開啟新版本下拉式清單。](media/nuget-walkthrough-packages-nuget-dialog-update-installed-package.png)
 
 ### <a name="locating-outdated-packages"></a>找出過期的封裝
-您可以從 solution pad 查看目前已安裝的套件版本，然後以滑鼠右鍵按一下要更新的套件。
+從 [方案] 視窗中，您可以查看目前已安裝的套件版本，然後以滑鼠右鍵按一下要更新的套件。
 
 ![具有可更新、移除、重新整理之選項的封裝功能表](media/nuget-walkthrough-PackageMenu.png)
 

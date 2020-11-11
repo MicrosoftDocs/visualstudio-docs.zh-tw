@@ -6,22 +6,22 @@ ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.topic: overview
-ms.openlocfilehash: d082cd5efbb41c6f20bc0abb8e5de9b3a25186ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1da1fc5145e5fd4a2f271b30ac42204c2aa611e5
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800186"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493344"
 ---
 # <a name="accessibility"></a>協助工具選項
 
-MacOS 內建了許多協助工具工具和功能，可協助您搭配 Visual Studio for Mac 使用。  除了這些功能之外，Visual Studio for Mac 也有下列功能，可讓使用者更容易存取不同的功能：
+MacOS 內建了許多協助工具工具和功能，可協助您使用 Visual Studio for Mac。  除了這些功能之外，Visual Studio for Mac 也有下列功能，可讓使用者更容易存取不同的功能：
 
 * 編輯器文字放大
-* 填補文字放大
+* 工具視窗文字放大
 * 程式碼編輯器色彩主題自訂
 * 鍵盤快速鍵自訂
-* 鍵盤瀏覽
+* 鍵盤導覽
 
 > [!NOTE]
 > 本指南是指 Visual Studio for Mac。 針對 Windows 上的 Visual Studio，請參閱 [Visual Studio 的協助工具功能](/visualstudio/ide/reference/accessibility-features-of-visual-studio)。
