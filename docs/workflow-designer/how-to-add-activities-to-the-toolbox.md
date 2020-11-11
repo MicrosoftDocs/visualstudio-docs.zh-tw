@@ -1,5 +1,7 @@
 ---
 title: 工作流程設計工具-如何：將活動新增至工具箱
+description: 將活動加入至方案中的 [工具箱]，方法是從您目前的專案，或從不同的專案中參考它們。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ebe3f4c3daf5ee3a0f64a0197967b6da62a467b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2330392ace27a913870e7c7448976d1cae46958
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815821"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437940"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>HOW TO：將活動新增至工具箱
 
@@ -46,18 +48,18 @@ ms.locfileid: "85815821"
 
 1. 開啟一個工作流程方案。
 
-2. 從 [ **工具** ] 功能表選取 **[選擇工具箱專案**]。
+2. 從 [ **工具** ] 功能表選取 **[選擇工具箱專案** ]。
 
 3. 在 [ **選擇工具箱專案** ] 對話方塊中，選取 [system.string **元件** ] 索引標籤，然後按一下 **[流覽]** ，流覽至包含您要加入之自訂活動的元件。
 
-4. 選取元件，然後按一下 **[確定]**。 自訂活動元件會加到元件清單中，而且會自動選取。
+4. 選取元件，然後按一下 **[確定]** 。 自訂活動元件會加到元件清單中，而且會自動選取。
 
     1. 按一下 **[確定]** 關閉對話方塊。
 
-5. 若要顯示 [工具箱]，請從 [ **View** ] 功能表選取 [**工具箱**]。
+5. 若要顯示 [工具箱]，請從 [ **View** ] 功能表選取 [ **工具箱** ]。
 
-6. 自訂活動會出現在 [工具箱] 中的 [ **工具箱** ] 下，加入專案之前的焦點類別。 例如，如果在新增 [工具箱] 專案之前，在 [**工具箱**] 中選取 [**一般**] 分類，則活動會出現在 [**一般**] 類別之下。
+6. 自訂活動會出現在 [工具箱] 中的 [ **工具箱** ] 下，加入專案之前的焦點類別。 例如，如果在新增 [工具箱] 專案之前，在 [ **工具箱** ] 中選取 [ **一般** ] 分類，則活動會出現在 [ **一般** ] 類別之下。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用工作流程設計工具](developing-applications-with-the-workflow-designer.md)

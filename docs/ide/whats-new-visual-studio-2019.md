@@ -2,7 +2,7 @@
 title: Visual Studio 2019 的新功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新功能。
-ms.date: 08/21/2020
+ms.date: 11/10/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,31 +15,27 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ff0188a93b8c7b6470aeaeced7e3f48dbad0f28b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a9bf479796db1b23a204050c941650c3c20dd6aa
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005365"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438267"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
-**[16.7 版](/visualstudio/releases/2019/release-notes/)的更新**
+**[16.8 版](/visualstudio/releases/2019/release-notes/)的更新**
 
 >[!div class="button"]
 >[下載 Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
-
-Visual Studio 不斷變更，以符合開發人員的需求。 在下列來自 **[Microsoft Build](https://mybuild.microsoft.com/)** library 的影片中，加入我們的一些 [最新功能](/visualstudio/releases/2019/release-notes/) 的導覽，並 [搶先查看](/visualstudio/releases/2019/release-notes-preview/) 即將推出的內容： <br><br>*影片長度：44.58 分鐘*
-
-> [!VIDEO https://channel9.msdn.com/Events/Build/2020/BOD111/player]
 
 使用 Visual Studio 2019，您會獲得同類產品中最佳的工具和服務，任何開發人員、任何應用程式及任何平台均適用。 無論您是第一次使用 Visual Studio，還是使用了數年的時間，我們最新的版本都有很大的需要！
 
 以下是最新功能的概要回顧：
 
-* **[開發](#develop)**：利用改良的效能、即時程式碼清除及更好的搜尋結果，保持焦點和生產力。
+* **[開發](#develop)** ：利用改良的效能、即時程式碼清除及更好的搜尋結果，保持焦點和生產力。
 * **[共同](#collaborate)** 作業：透過 Git 優先工作流程、即時編輯和偵錯工具，以及直接在 Visual Studio 中進行程式碼審核，享受自然的共同作業。
-* **[Debug](#debug)**：反白顯示並流覽至特定值、優化記憶體使用量，以及取得應用程式執行的自動快照集。
+* **[Debug](#debug)** ：反白顯示並流覽至特定值、優化記憶體使用量，以及取得應用程式執行的自動快照集。
 
 如需此版本中所有新功能的完整清單，請參閱[版本資訊](/visualstudio/releases/2019/release-notes/)。
 
@@ -63,7 +59,7 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
    ![Visual Studio 2019 中的重構體驗動畫](media/vs-2019/refactorings.gif)
 
-只要按下 **Ctrl+.**，來叫用重構 然後選取您想要採取的動作。
+只要按下 **Ctrl+.** ，來叫用重構 然後選取您想要採取的動作。
 
 ### <a name="intellicode"></a>IntelliCode
 
@@ -108,13 +104,13 @@ Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為�
 
 ### <a name="test-explorer"></a>測試總管
 
-**16.2 的新**功能：我們已更新 Test Explorer，以提供更好的處理大型測試集、更輕鬆的篩選、更容易探索的命令、索引標籤式的播放清單，以及可自訂的欄，讓您微調顯示的測試資訊。
+**16.2 的新** 功能：我們已更新 Test Explorer，以提供更好的處理大型測試集、更輕鬆的篩選、更容易探索的命令、索引標籤式的播放清單，以及可自訂的欄，讓您微調顯示的測試資訊。
 
    ![顯示測試總管中的使用者介面改良功能的螢幕擷取畫面](media/vs-2019/test-explorer-ui.png)
 
 ### <a name="net-core"></a>.NET Core
 
-**16.3 的新**功能：我們已包含 .net Core 3.0 的支援。 Microsoft 的跨平臺、開放原始碼 &mdash; 及完全支援。
+**16.3 的新** 功能：我們已包含 .net Core 3.0 的支援。 Microsoft 的跨平臺、開放原始碼 &mdash; 及完全支援。
 
 如需詳細資訊，請參閱 [宣佈 .Net Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) 的 blog 文章。
 
@@ -137,6 +133,12 @@ Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為�
 開始視窗也包含開啟專案或解決方案、開啟本機資料夾，或建立新專案的選項。
 
 如需詳細資訊，請參閱 [取得程式碼：我們如何設計新的 Visual Studio 開始視窗的](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) blog 文章。
+
+### <a name="git-productivity"></a>Git 生產力
+
+**16.8 的新** 功能Git 現在是 Visual Studio 2019 中的預設版本控制體驗。 我們已根據您在過去兩個版本中的意見反應，建立功能集並逐一查看。 所有人現在都已預設開啟新的體驗。 您可以從新的 Git 功能表複製、建立或開啟存放庫。 使用整合式 Git 工具視窗來認可和推送程式碼的變更、管理分支、隨時掌握遠端存放庫的最新狀態，以及解決合併衝突。
+
+如需詳細資訊，請參閱 [Visual Studio 頁面中的 Git 生產力](git-with-visual-studio.md) 。
 
 ### <a name="live-share"></a>Live Share
 
@@ -196,13 +198,13 @@ Visual Studio 2019 預設會安裝這項服務。
 
 ### <a name="microsoft-edge-insider-support"></a>Microsoft Edge Insider 支援
 
-**16.2 中的新**功能：您可以在 JavaScript 應用程式中設定中斷點，並使用 [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) 瀏覽器啟動 debug 會話。 當您這樣做的時候，Visual Studio 會在已啟用偵錯功能的情況下開啟新的瀏覽器視窗，讓您可以用來在 Visual Studio 內逐步執行應用程式 JavaScript。
+**16.2 中的新** 功能：您可以在 JavaScript 應用程式中設定中斷點，並使用 [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) 瀏覽器啟動 debug 會話。 當您這樣做的時候，Visual Studio 會在已啟用偵錯功能的情況下開啟新的瀏覽器視窗，讓您可以用來在 Visual Studio 內逐步執行應用程式 JavaScript。
 
    ![瀏覽器中顯示 JavaScript 程式碼轉譯的螢幕擷取畫面](media/vs-2019/edge-chromium-breakpoint.png)
 
 ### <a name="pinnable-properties-tool"></a>可釘選屬性工具
 
-**16.4 的新**功能：現在，使用新的可釘選屬性工具進行偵錯工具時，可更輕鬆地依屬性來識別物件。 只要將游標暫留在您要在 [監看式]、[自動變數] 和 [區域變數] 視窗的偵錯工具視窗中顯示的屬性上，選取釘選圖示，即可立即在視窗頂端看到您要尋找的資訊！
+**16.4 的新** 功能：現在，使用新的可釘選屬性工具進行偵錯工具時，可更輕鬆地依屬性來識別物件。 只要將游標暫留在您要在 [監看式]、[自動變數] 和 [區域變數] 視窗的偵錯工具視窗中顯示的屬性上，選取釘選圖示，即可立即在視窗頂端看到您要尋找的資訊！
 
    ![顯示如何使用可釘選屬性工具在 Visual Studio 偵錯工具中釘選屬性的動畫](media/vs-2019/debugger-pinnable-properties.gif)
 
@@ -214,19 +216,19 @@ Visual Studio 2019 預設會安裝這項服務。
 
 此外，以下是目前工作中的一些新功能。
 
-- **GitHub Codespaces (Preview 的 Visual Studio 2019 支援) **
+- **GitHub Codespaces (Preview 的 Visual Studio 2019 支援)**
 
   現在，開發人員在工作和家裡以使用了多個專案。 新功能、bug 修正、PR 評論、 &amp; 原型全都競爭時間，而且需要持續的內容切換。 [GitHub Codespaces](https://github.com/features/codespaces) 可以提供協助。 您可以完全在雲端中進行開發，並在幾秒鐘內為每個專案建立專用的自訂環境。 使用 Visual Studio 2019，您可以連接到 codespace，並如同在本機運作。
 
   如需詳細資訊，請參閱 [什麼是 GitHub Codespaces](codespaces/codespaces-overview.md) 頁面。
 
-- **改良 Visual Studio 2019 (Preview) 的 Git 體驗 **
+- **改良 Visual Studio 2019 (Preview) 的 Git 體驗**
 
-   當您使用 GitHub、Azure Repos 和其他遠端主機服務上的程式碼時，我們會持續反覆運算改頭換面 Git 體驗，以提升您的生產力。 您可以使用單一動作 (在 Visual Studio 2019 內進行初始化和推送，或按一下 [) ]。 您也可以建立新的分支、管理目前的分支，以及解決合併衝突。
+   雖然新的 Git 版本控制體驗現已在 Visual Studio 2019 [16.8 版](/visualstudio/releases/2019/release-notes/)中預設為開啟，但我們仍會繼續新增功能，以增強最新預覽版本的體驗。
 
-   如需詳細資訊，請參閱 [Visual Studio 頁面中的新 Git 體驗](git-with-visual-studio.md) 。
+   如需詳細資訊，請參閱 [Visual Studio 頁面中的 Git 生產力](git-with-visual-studio.md) 。
 
-如需預覽版本的詳細資訊 &mdash; 和下載連結，如果您想要試用， &mdash; 請參閱 **[Visual Studio 預覽](https://visualstudio.microsoft.com/vs/preview/)** 頁面。
+如需預覽版本的詳細資訊 &mdash; 和下載連結，如果您想要試用， &mdash; 請參閱 **[Visual Studio 預覽](https://aka.ms/vspreview/)** 頁面。
 
 ## <a name="give-us-feedback"></a>提供意見反應
 
@@ -236,7 +238,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 * 如果您遇到 Visual Studio 停止回應、當機或其他效能問題的問題，您可以使用 [回報 [問題](how-to-report-a-problem-with-visual-studio.md) ] 工具，輕鬆地與我們分享重現步驟和支援檔案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [Visual Studio 2019 版本資訊](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 for Mac 版本資訊](/visualstudio/releasenotes/vs2019-mac-relnotes/)

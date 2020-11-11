@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 04ac5ba718e72085f8e050ecf0e2ce0cc1305629
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 0cc36dc58b65188b21115569f1216446784d227a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134264"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438219"
 ---
 # <a name="net-core-runtime"></a>.NET Core 執行階段
 
@@ -45,7 +45,7 @@ _packages.config_ 檔案是 [Chocolatey](https://chocolatey.org/)檔案，可定
 
 ## <a name="devinitjson"></a>.devinit.json
 
-檔案 [_.devinit.js_](devinit-json.md) 的內容。 這個檔案必須與檔案 _.devcontainer.js_ 位於相同的資料夾中。
+檔案的內容 [`.devinit.json`](devinit-json.md) 。 這個檔案必須與檔案 _.devcontainer.js_ 位於相同的資料夾中。
 
 ```json
 {

@@ -11,30 +11,47 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a9731469f6725c0a4b9118c4e41235974a19c473
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 7ba3ff8e22923590c21333c35563a98352eeef21
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134382"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438233"
 ---
 # <a name="devinit-and-github-codespaces"></a>devinit 與 GitHub Codespace
 
 devinit 是 [GitHub Codespaces](https://github.com/features/codespaces) 的絕佳補充，devinit 可以用來取得 codespace 設定，讓參與者可以立即建立、執行和立即進行偵錯工具。
 
-若要與 GitHub Codespaces 整合， `devinit` 必須從 `postCreateCommand` `.devcontainer.json` 放置於存放庫根目錄的檔案中所定義的來呼叫。 在 codespace 中複製存放庫 `postCreateCommand` 之後，會在預設的 shell 中執行) 的字串 (。 您可以 `postCreateCommand` 在 GitHub Codespaces [自訂檔](https://docs.github.com/github/developing-online-with-codespaces/configuring-codespaces-for-your-project)中閱讀更多相關資訊。 若要加入 `devinit` 命令，您可以將加入 `devinit init` 至， `postCreateCommand` 如下列範例所示。
+> [!IMPORTANT]
+> 將 devinit 與您的 codespace 整合之前，您必須先確定您有定義相依性的檔案 `.devinit.json` 。 如需有關如何建立的詳細資訊 `.devinit.json` ，請參閱使用者 [入門檔](getting-started-with-devinit.md)。
+
+在 GitHub Codespace 內，您的應用程式是在雲端中建立並執行。 在雲端中，表示您的應用程式無法存取您電腦上的本機資源。 這些工具組括您已在本機安裝的工具或程式。 如果您的應用程式需要安裝或設定任何系統範圍的相依性，則必須在每個 codespace 上進行。 要達到這個目的，最簡單的方式就是使用檔案 `.devinit.json` 。
+
+若要確定 codespace 是使用應用程式所需的相依性所建立，則必須在 `devinit` 建立 codespace 時執行。 這可以藉由 `devinit init` 從 `postCreateCommand` `.devcontainer.json` 存放庫根目錄中的檔案所定義的來呼叫。 在 codespace 中複製存放庫 `postCreateCommand` 之後，會在預設的 shell 中執行) 的字串 (。 您可以 `postCreateCommand` 在 GitHub Codespaces [自訂檔](https://docs.github.com/github/developing-online-with-codespaces/configuring-codespaces-for-your-project)中閱讀更多相關資訊。 若要加入 `devinit` 命令，您可以將加入 `devinit init` 至， `postCreateCommand` 如下列範例所示。
 
 您也可以在 `devinit init -f <path to .devinit.json>` 連線到 codespace 之後，從 Visual Studio 整合式終端機執行。
 
 ## <a name="examples"></a>範例
 
-### <a name="with-a-devinitjson-file"></a>使用檔案 .devinit.js
-在此範例中，下列檔案 _上的.devcontainer.js_ 會放在存放庫根目錄中，並放在檔案的 _.devinit.js_ 旁。 檔案也可以放在 _devcontainer_ 目錄中。
+在下列兩個範例中， `.devinit.json` 都是在存放庫根目錄中 `.devcontainer.json` 。
+
+### <a name="with-a-devcontainerjson-file"></a>使用檔案 .devcontainer.js
+
+在此範例中， `.devcontainer.json` 下列檔案會放在存放庫根目錄和檔案的旁邊 `.devinit.json` 。 檔案也可以放在 `.devcontainer` 目錄中。
 
 ```json
 {
   "postCreateCommand": "devinit init"
 }
+```
+
+當 `.devinit.json` 位於另一個目錄時，可以使用-f 旗標。
+
+```json
+{
+  "postCreateCommand": "devinit init -f path\\to\\.devinit.json"
+}
+
 ```
 
 ```json
@@ -43,8 +60,11 @@ devinit 是 [GitHub Codespaces](https://github.com/features/codespaces) 的絕�
 }
 ```
 
+您可以在我們的 [檔](sample-all-tool.md) 和 GitHub 上的 [.net Core 範例](https://github.com/microsoft/devinit-example-dotnet-core) 中找到更多使用 devinit 的範例，並 [Node.js 範例](https://github.com/microsoft/devinit-example-nodejs) 存放庫。
+
 ### <a name="as-commands"></a>As 命令
-在此範例中，下列檔案 _.devcontainer.js_ 放在存放庫根目錄中，並以 `devinit run` 程式設計方式呼叫以執行工具  
+
+在此範例中， `.devcontainer.json` 下列檔案會放在存放庫根目錄中，並 `devinit run` 直接從命令列呼叫以執行個別的工具。  
 
 ```json
 {
@@ -54,13 +74,13 @@ devinit 是 [GitHub Codespaces](https://github.com/features/codespaces) 的絕�
 
 ### <a name="from-a-terminal-prompt"></a>從終端機提示字元
 
-當目前工作目錄包含檔案 _上的.devinit.js_ 時。
+當目前的工作目錄包含檔案時 `.devinit.json` 。
 
 ```console
 devinit init
 ```
 
-當 _.devinit.js在_ 另一個目錄中時。
+當位於 `.devinit.json` 另一個目錄時。
 
 ```console
 devinit init -f path/to/.devinit.json

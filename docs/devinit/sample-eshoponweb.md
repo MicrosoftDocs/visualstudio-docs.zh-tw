@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e886ea23a8f4f0815773f704d1d8274fced610df
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: b981b9bb066057228fed07aa7ea26aeab4670ae4
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134591"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438212"
 ---
 # <a name="eshoponweb"></a>eShopOnWeb
 
@@ -34,7 +34,7 @@ dotnet ef database update -c appidentitydbcontext -p src\Infrastructure\Infrastr
 
 ## <a name="devinitjson"></a>.devinit.json
 
-檔案 [_.devinit.js_](devinit-json.md) 的內容。 此檔案必須位於與 _.devcontainer.js_ 的相同資料夾中。
+檔案的內容 [`.devinit.json`](devinit-json.md) 。 此檔案必須位於與 _.devcontainer.js_ 的相同資料夾中。
 
 ```json
 {

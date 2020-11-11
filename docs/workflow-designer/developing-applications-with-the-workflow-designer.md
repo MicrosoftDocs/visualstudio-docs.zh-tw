@@ -1,5 +1,7 @@
 ---
 title: 使用工作流程設計工具開發應用程式
+description: 瞭解如何使用工作流程設計工具開發應用程式，您可以在 Visual Studio 中使用這些應用程式進行 WF 應用程式的圖形化結構和偵錯工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1b7aa37794618cd051cfdaaacb9359087cc664
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88825e5328fc11702a503311b227fde155c79d73
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814716"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438070"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>使用工作流程設計工具開發應用程式
 
@@ -31,7 +33,7 @@ ms.locfileid: "85814716"
 
 若要在 Visual Studio 中使用工作流程專案範本，請先安裝 **Windows Workflow Foundation** 元件。
 
-1. 開啟 Visual Studio 安裝程式。 若要開啟它，您可以選取 [**工具**  >  **取得工具和功能**] Visual Studio 中的快速方法。
+1. 開啟 Visual Studio 安裝程式。 若要開啟它，您可以選取 [ **工具**  >  **取得工具和功能** ] Visual Studio 中的快速方法。
 
 1. 在 Visual Studio 安裝程式中，選取 [ **個別元件** ] 索引標籤。
 
@@ -43,6 +45,6 @@ ms.locfileid: "85814716"
 
    Visual Studio 安裝 **Windows Workflow Foundation** 元件。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Windows Workflow Foundation ( .NET Framework) ](/dotnet/framework/windows-workflow-foundation/index)

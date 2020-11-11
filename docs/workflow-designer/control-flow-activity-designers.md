@@ -1,5 +1,7 @@
 ---
 title: 工作流程設計工具控制流程活動設計工具
+description: 瞭解控制流程活動設計工具，這是系統提供的活動，用來控制工作流程內的流程。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
@@ -8,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84f9de21dbf0529823690effb4285b63a3b226fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d7cf2f4f05db2fbc06c6209d5b39b211dd731f6
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114679"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438135"
 ---
 # <a name="control-flow-activity-designers"></a>Control Flow 活動設計工具
 
 工作流程設計工具組含許多系統提供的活動，可讓您在建立工作流程時使用。 本節包含用來控制工作流程中之流程的系統提供活動。 下列主題說明會這些活動，並且提供如何使用的指引。
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
 
  <xref:System.Activities.Activity>
 
@@ -55,7 +57,7 @@ ms.locfileid: "76114679"
 
  [執行階段](../workflow-designer/runtime-activity-designers.md)
 
- [基本型別](../workflow-designer/primitives-activity-designers.md)
+ [基本](../workflow-designer/primitives-activity-designers.md)
 
  [交易](../workflow-designer/transaction-activity-designers.md)
 

@@ -1,5 +1,7 @@
 ---
 title: 工作流程設計工具-流覽並選取 .NET 類型對話方塊
+description: 瞭解如何使用 [流覽並選取 .NET 型別] 對話方塊，從元件和專案的樹狀檢視中選擇型別。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e887cf339647df9bca7fdc3d07a45dd44901c42
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597109"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438174"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>瀏覽並選取 .NET 類型對話方塊
 
@@ -39,7 +41,7 @@ ms.locfileid: "75597109"
 
 1. 在 [ **類型名稱** ] 方塊中，輸入您要使用之類型的名稱。
 
-2. 執行下列其中一個動作：
+2. 請執行下列其中一項：
 
     - 一旦您要使用的型別名稱顯示在 [ **型別名稱** ] 方塊中的樹狀結構中，請按兩下該型別加以選取。
 
@@ -51,11 +53,11 @@ ms.locfileid: "75597109"
 
 2. 一旦您要使用的型別名稱出現在 [ **型別名稱** ] 方塊中的樹狀結構中，請按一下該型別加以選取，讓下拉式方塊出現。
 
-     從下拉式方塊中選取您要用來關閉 [一般] 的類型，然後按一下 **[確定]**。
+     從下拉式方塊中選取您要用來關閉 [一般] 的類型，然後按一下 **[確定]** 。
 
 ## <a name="types-displayed-in-the-type-browser"></a>型別瀏覽器中顯示的型別
 
-型別瀏覽器中顯示的型別，可能會因型別瀏覽器啟動的方式而異。 如果已從 **vs2010**內的工作流程專案啟動型別瀏覽器，則預設會顯示參考元件和參考專案中的所有類型。 如果在 **vs2010** 專案系統之外啟動型別瀏覽器 (例如在重新裝載工作流程應用程式中，或是在獨立的) 工作流程檔案中，則預設會顯示在 AppDomain 中載入之所有元件的類型。
+型別瀏覽器中顯示的型別，可能會因型別瀏覽器啟動的方式而異。 如果已從 **vs2010** 內的工作流程專案啟動型別瀏覽器，則預設會顯示參考元件和參考專案中的所有類型。 如果在 **vs2010** 專案系統之外啟動型別瀏覽器 (例如在重新裝載工作流程應用程式中，或是在獨立的) 工作流程檔案中，則預設會顯示在 AppDomain 中載入之所有元件的類型。
 
 活動設計工具開發人員可以篩選型別瀏覽器中的型別。 對於任何特定活動，可以只顯示一個子集的型別。 例如，在 <xref:System.Activities.Statements.TryCatch> 活動中，型別瀏覽器中只顯示衍生自 <xref:System.Exception> 的型別。
 
@@ -73,6 +75,6 @@ ms.locfileid: "75597109"
 
 選取服務合約型別時，型別瀏覽器只顯示具有 <xref:System.ServiceModel.ServiceContractAttribute> 屬性的型別。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用活動設計工具](control-flow-activity-designers.md)

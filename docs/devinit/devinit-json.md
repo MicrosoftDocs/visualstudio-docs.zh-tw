@@ -11,18 +11,20 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 2b6cc27d2614f71c85988457ab9bb64228bbaebb
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: acd3b65f520a9be048fe2d0209a85a85d086df2f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399963"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438226"
 ---
 # <a name="devinit-configuration-file"></a>devinit 設定檔
 
+檔案 `.devinit.json` 會定義您的應用程式執行和建立所需的全系統相依性。 整個系統的相依性，例如 Node.js、SQL Server、IIS、RabbitMQ、Docker 等等。這些是您通常會安裝在開發人員方塊上的專案，而不是由特定存放庫安裝。 它不是定義應用程式特定相依性的地方，就像您在套件管理員（例如 NuGet 或 NPM）中所做的一樣。 不過，您可以在其中定義您需要這些封裝管理員的位置。
+
 ## <a name="file-location"></a>檔案位置
 
-此 `devinit.exe init` 命令是透過檔案 _上的.devinit.js_ 驅動。 依預設，會 `devinit.exe` 在下列位置尋找檔案：
+此 `devinit init` 命令是透過檔案驅動 `.devinit.json` 。 依預設，會 `devinit` 在下列位置尋找檔案：
 
 * {目前的目錄} \\.devinit.js開啟
 * {目前的目錄} \\devinit.js開啟
@@ -36,7 +38,7 @@ ms.locfileid: "93399963"
 > [!NOTE]
 > 如果找到多個預設檔案，則 devinit 會使用上述清單中第一個出現的檔案。
 
-您也可以透過選項明確指定檔案 _上_ 的.devinit.js`--file` / `-f` 。
+您 `.devinit.json` 也可以透過選項明確指定此檔案 `--file` / `-f` 。
 
 ### <a name="directories-and-relative-paths"></a>目錄和相對路徑
 

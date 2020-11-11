@@ -1,5 +1,7 @@
 ---
 title: 建立 Workflow Foundation 專案
+description: 瞭解如何使用 Visual Studio 中提供的專案範本來建立程式庫和應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c3e4930376d2d2f9a6ee3334d8b164279d5ac2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4df3a1b4ead644058147473a4f95cf16fe6fc5cc
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597070"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438096"
 ---
 # <a name="workflow-project-templates"></a>工作流程專案範本
 
@@ -36,14 +38,14 @@ Visual Studio 提供四種不同的工作流程專案範本：
 
 若要存取這些範本，請先安裝 Visual Studio 的 **Windows Workflow Foundation** 元件。 如需詳細指示，請參閱 [安裝 Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)。
 
-1. 安裝**Windows Workflow Foundation**元件之後，**請選取 [** 檔案  >  **新增**  >  **專案**]。
+1. 安裝 **Windows Workflow Foundation** 元件之後， **請選取 [** 檔案  >  **新增**  >  **專案** ]。
 
 1. 搜尋並選取工作流程專案範本，例如 **工作流程主控台應用程式** 範本。
 
 1. 繼續進行以建立專案。
 
    > [!NOTE]
-   > 如果您想要將新的專案加入至現有的方案，請在 Visual Studio 中開啟該方案，以滑鼠右鍵按一下**方案總管**中的方案，然後選取 [**加入**  >  **新專案**]。
+   > 如果您想要將新的專案加入至現有的方案，請在 Visual Studio 中開啟該方案，以滑鼠右鍵按一下 **方案總管** 中的方案，然後選取 [ **加入**  >  **新專案** ]。
 
 ## <a name="workflow-console-app"></a>工作流程主控台應用程式
 
@@ -69,7 +71,7 @@ Visual Studio 提供四種不同的工作流程專案範本：
 > [!NOTE]
 > 自訂活動設計工具可用於自訂活動和預設 .NET 活動。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 Workflow Designer](developing-applications-with-the-workflow-designer.md)
 - [設計工作流程 ( .NET Framework) ](/dotnet/framework/windows-workflow-foundation/designing-workflows)

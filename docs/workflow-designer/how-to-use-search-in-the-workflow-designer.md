@@ -1,5 +1,7 @@
 ---
 title: HOW TO：使用工作流程設計工具中的搜尋
+description: 瞭解如何在工作流程設計工具內搜尋，以依關鍵字尋找專案，讓您能夠更輕鬆地建立更大型、更複雜的工作流程。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63ad6f8b6d3afd1f30f2e9a02eaa4927fb3608d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3dadaf6ce4728dfac8d4052804cbed70ee7cefcd
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817472"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437901"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>HOW TO：使用工作流程設計工具中的搜尋
 
@@ -33,9 +35,9 @@ ms.locfileid: "85817472"
 
 ### <a name="use-quick-find"></a>使用快速尋找
 
-1. 在工作流程設計工具開啟的情況下，按下**Ctrl + F**，或選取 [**編輯**  >  **尋找並取代**  >  **快速尋找**]。
+1. 在工作流程設計工具開啟的情況下，按下 **Ctrl + F** ，或選取 [ **編輯**  >  **尋找並取代**  >  **快速尋找** ]。
 
-2. 在 [ **尋找目標** ] 文字方塊中輸入搜尋字詞，然後按一下 [ **找下一個]**。
+2. 在 [ **尋找目標** ] 文字方塊中輸入搜尋字詞，然後按一下 [ **找下一個]** 。
 
 3. 搜尋字詞位於目前的工作流程中。 下圖顯示在設計工具中找出的活動顯示名稱：
 
@@ -47,8 +49,8 @@ ms.locfileid: "85817472"
 
 ### <a name="use-find-in-files"></a>使用檔案中尋找
 
-1. 在 Visual Studio 中，按**Ctrl** + **Shift** + **F**，或選取 [**編輯**  >  **尋找並取代**檔案  >  **中尋找**]。
+1. 在 Visual Studio 中，按 **Ctrl** + **Shift** + **F** ，或選取 [ **編輯**  >  **尋找並取代** 檔案  >  **中尋找** ]。
 
-2. 在 [ **尋找目標** ] 文字方塊中輸入搜尋專案，然後按一下 [ **全部尋找**]。
+2. 在 [ **尋找目標** ] 文字方塊中輸入搜尋專案，然後按一下 [ **全部尋找** ]。
 
 3. 尋找結果會顯示在 [ **尋找結果** ] 視圖中。 按兩下結果專案，即可導覽至包含工作流程設計工具中相符專案的活動。
