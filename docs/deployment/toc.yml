@@ -24,7 +24,9 @@
           href: /dotnet/core/deploying/deploy-with-vs
         - name: 為 Microsoft Store 封裝傳統型應用程式
           href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-        - name: 使用 ClickOnce 部署傳統型應用程式
+        - name: 使用 ClickOnce 部署 .NET Windows 應用程式
+          href: quickstart-deploy-using-clickonce-folder.md
+        - name: 使用 ClickOnce 部署 .NET Framework 傳統型應用程式
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: 從命令列建置 ClickOnce 應用程式
           href: building-clickonce-applications-from-the-command-line.md
