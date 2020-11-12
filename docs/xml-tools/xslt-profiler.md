@@ -2,7 +2,7 @@
 title: XSLT 效能
 description: 瞭解 Visual Studio 中的 XSLT 分析工具，以建立詳細的 XSLT 效能報告，以協助您優化 XSLT 程式碼的效能。
 ms.custom: SEO-VS-2020
-ms.date: 03/05/2019
+ms.date: 11/11/2020
 ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 author: TerryGLee
@@ -10,12 +10,13 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4fd10df6a5cd91866633a46e1a512e91da2040
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+monikerRange: vs-2017
+ms.openlocfilehash: f2214ab4d66dcad1ee92eda7d7acbb94b89e8eb6
+ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351410"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94531884"
 ---
 # <a name="the-xslt-profiler"></a>XSLT 分析工具
 
@@ -23,14 +24,14 @@ XSLT 分析工具可建立詳細的 XSLT 效能報告，協助您測量、評估
 
 XSLT 分析工具是 Visual Studio 的一部分，可在 [ **XML** ] 功能表上取得。
 
-![XSLT 分析工具](../xml-tools/media/profile-xslt-menu.png)
+![XSLT Profiler](../xml-tools/media/profile-xslt-menu.png "Visual Studio 2017 中 XML 功能表項目的螢幕擷取畫面")
 
 > [!NOTE]
-> XSLT 分析工具只適用于 Enterprise edition 的 Visual Studio。
+> 只有 Visual Studio 2017 的 Enterprise 版才提供 XSLT 分析工具。
 
 ## <a name="create-a-performance-report"></a>建立效能報告
 
-1. 在 Visual Studio 中開啟 XSLT 文件。
+1. 在 Visual Studio 2017 中開啟 XSLT 檔。
 
 2. 在功能表列上，選擇 [ **XML**  >  **設定檔 XSLT** ]。
 
@@ -108,6 +109,6 @@ XSLT 分析工具是 Visual Studio 的一部分，可在 [ **XML** ] 功能表�
 
    進程視圖會顯示一個資料表，其中包含 **處理序識別碼** 、 **進程名稱** 、 **開始時間** 和 **結束時間** 。 按一下資料行名稱即可排序資料。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [逐步解說：使用 XSLT 階層](../xml-tools/walkthrough-using-xslt-hierarchy.md)
