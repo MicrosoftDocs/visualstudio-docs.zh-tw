@@ -1,7 +1,7 @@
 ---
 title: wsl-install
 description: devinit tool wsl-安裝。
-ms.date: 08/28/2020
+ms.date: 11/10/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,18 +11,19 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3283b6e90cb2bced27f09b8c4491992fb5ac315f
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ab63b5feb8c71659b83e824f104dd7bbcbb744f9
+ms.sourcegitcommit: 62f91179f2c3a51c85dd7b0e6172a3a53393fb7e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400175"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94567010"
 ---
 # <a name="wsl-install"></a>wsl-install
 
 此 `wsl-install` 工具可用來安裝適用于 [WINDOWS 子系統 LINUX 版](/windows/wsl/) (WSL) 的 Linux 散發版本。
 
-此 `wsl-install` 工具需要在 Windows 上啟用 WSL 2。 如果基於某些原因而未啟用 WSL2，您可以 [使用啟用的工具和](tool-windowsfeature-enable.md) 功能名稱來啟用 WSL2 `Microsoft-Windows-Subsystem-Linux` 。
+> [!IMPORTANT]
+> 此 `wsl-install` 工具需要在 Windows 上啟用 WSL 2。 如果基於某些原因而未啟用 WSL 2，您可以遵循 [WSL 安裝檔](https://docs.microsoft.com/windows/wsl/install-win10)。 您也可以使用啟用的 [ [啟用](tool-windowsfeature-enable.md) ] 工具來啟用任何所需的 Windows 功能。
 
 ## <a name="usage"></a>使用方式
 
