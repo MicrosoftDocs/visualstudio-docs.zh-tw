@@ -2,20 +2,20 @@
 title: Visual Studio 的 Git 體驗
 titleSuffix: ''
 description: 瞭解 Visual Studio 2019 中新的整合式 Git 體驗如何協助您提高生產力。
-ms.date: 11/10/2020
+ms.date: 11/13/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 33606a2b4290735d5c15788a1e6961191d6d92f9
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: cf2f55f64eff13e9f7966ac21decf669c36284bd
+ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493552"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94626264"
 ---
-# <a name="git-productivity-in-visual-studio"></a>Visual Studio 中的 Git 生產力
+# <a name="git-experience-in-visual-studio"></a>Visual Studio 中的 Git 體驗
 
 Git 現在是 Visual Studio 2019 中的預設版本控制體驗。 自 [16.6 版](/visualstudio/releases/2019/release-notes-v16.6)起，我們已根據您的意見反應來建立功能集並逐一查看。 針對 [版本為 16.8](/visualstudio/releases/2019/release-notes/)的每個人，預設會開啟新的 Git 體驗。
 
@@ -24,7 +24,11 @@ Git 現在是 Visual Studio 2019 中的預設版本控制體驗。 自 [16.6 版
 
 ## <a name="how-to-use-git-in-visual-studio"></a>如何在 Visual Studio 中使用 Git
 
-有三種方式可以開始使用 Git 搭配 Visual Studio 2019 來提高生產力：
+我們將逐步引導您瞭解如何在 Visual Studio 2019 中使用新的 Git 體驗，但如果您想要先進行快速導覽，請參閱下列影片： <br><br>*影片長度：5.27 分鐘*
+
+> [!VIDEO https://www.youtube.com/embed/UHrAg3iKoe0]
+
+有三種方式可以開始搭配使用 Git 與 Visual Studio，以提高生產力：
 
 - [開啟現有的 Git 存放庫](#open-an-existing-local-repository)。 如果您的程式碼已經在您的電腦上，您 **可以使用 [** 檔案  >  **開啟**  >  **專案/方案** (] 或 [ **資料夾** ]) 來開啟該程式碼，Visual Studio 自動偵測是否有已初始化的 Git 存放庫。
 - [建立新的 Git 存放庫](#create-a-new-git-repository)。 如果您的程式碼未與 Git 建立關聯，您可以建立新的 Git 存放庫。
@@ -193,8 +197,9 @@ Visual Studio 中的「合併編輯器」是三向合併工具，可顯示內送
 > [!IMPORTANT]
 > 如果您對我們有任何建議，請讓我們知道！ 我們很感謝您透過 [**開發人員社群**](https://aka.ms/vs-suggest) 入口網站，在設計決策方面與您互動的機會。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
+- [宣佈推出 Visual Studio blog 文章中的 Git 體驗版本](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)
 - 在 YouTube 上[推出新的 Git 體驗](https://www.youtube.com/watch?v=UHrAg3iKoe0&t)
 - [Visual Studio 工具箱系列提供：](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) Channel 9 和[YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)上的新 Git 體驗影片
 - [Visual Studio blog 文章中的 Git 體驗有很棒的新更新](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)

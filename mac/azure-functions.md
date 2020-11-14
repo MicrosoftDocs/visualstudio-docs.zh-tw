@@ -7,18 +7,18 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 69ecab4f4d3dd7d99821b384dbda0c8986297282
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: f3c1c528e9201c66bc566f9867f8325c653700b9
+ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492837"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575537"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 簡介
 
-Azure 函式是一種不必明確佈建或管理基礎結構，就能在雲端建立和執行事件驅動程式碼片段 (函式) 的方法。 如需 Azure Functions 的詳細資訊，請參閱 [Azure Functions 文件](/azure/azure-functions/)。
+Azure Functions 是在雲端建立和執行事件驅動程式碼片段（函式–-）的方式，而不需要明確布建或管理基礎結構。 如需 Azure Functions 的詳細資訊，請參閱 [Azure Functions 文件](/azure/azure-functions/)。
 
-## <a name="requirements"></a>規格需求
+## <a name="requirements"></a>需求
 
 Azure 函式工具隨附於 **Visual Studio for Mac 7.5** 和更新版本。
 
@@ -29,7 +29,7 @@ Azure 函式工具隨附於 **Visual Studio for Mac 7.5** 和更新版本。
 1. 在 Visual Studio for Mac 中，選取 [檔案] **> [新方案** ]。
 2. 從 [新增專案] 對話方塊，選取 [雲端] > [一般] 下的 Azure Functions 範本，然後按一下 [下一步]：
 
-    ![顯示 Azure 函式選項的 [新增專案] 對話方塊](media/azure-functions-image1.png)
+    ![顯示 Azure Functions 選項的 [新增專案] 對話方塊](media/azure-functions-image1.png)
 
 3. 選取您想要使用的初始 Azure Functions 範本，並輸入您的函數名稱，然後按 [下一步]。
 
@@ -37,7 +37,7 @@ Azure 函式工具隨附於 **Visual Studio for Mac 7.5** 和更新版本。
 
     > [!TIP]
     > 即使配套的 Azure Functions 執行階段和範本 (CLI) 盡可能保持在最新，也無可避免會過時。 建立新的 Functions 專案時，Visual Studio for Mac 會檢查是否有 CLI 更新並通知您，如下圖所示。 只要按一下按鈕即可下載更新的範本。
-    > ![顯示有可用 Azure Functions 更新的 [新增專案] 對話方塊](media/azure-functions-update.png)
+    > ![顯示有 Azure Functions 更新的 [新增專案] 對話方塊](media/azure-functions-update.png)
 
     根據您選取的函數類型，下一頁將會提示您鍵入詳細資料 (例如存取權限)，如下圖所示：
 
@@ -147,15 +147,15 @@ Visual Studio for Mac 會建立包含預設函數的 .NET Standard 專案。 其
   - Http POST CRUD
   - 含有參數的 Http 觸發程序
 
-- **計時器** - 依預先定義的排程執行清理或其他批次工作。 這個範本採用兩個欄位：名稱和排程，即六個欄位的 CRON 運算式。 如需詳細資訊，請參閱[有關時間的 Azure 函式文章](/azure/azure-functions/functions-create-scheduled-function)
+- **計時器** - 依預先定義的排程執行清理或其他批次工作。 這個範本採用兩個欄位：名稱和排程，即六個欄位的 CRON 運算式。 如需詳細資訊，請參閱 [有關時間的 Azure Functions 文章](/azure/azure-functions/functions-create-scheduled-function)
 
-- **佇列觸發程序** - 這是會在訊息抵達 Azure 儲存體佇列時予以回應的函式。 除了函式名稱之外，這個範本也接受 **路徑** (會從中讀取訊息的佇列名稱) 和儲存體帳戶 **連線** (包含儲存體帳戶連接字串的應用程式設定名稱)。 如需詳細資訊，請參閱[有關佇列儲存體的 Azure 函式文章](/azure/azure-functions/functions-create-storage-queue-triggered-function)。
+- **佇列觸發程序** - 這是會在訊息抵達 Azure 儲存體佇列時予以回應的函式。 除了函式名稱之外，這個範本也接受 **路徑** (會從中讀取訊息的佇列名稱) 和儲存體帳戶 **連線** (包含儲存體帳戶連接字串的應用程式設定名稱)。 如需詳細資訊，請參閱 [佇列儲存體上的 Azure Functions 文章](/azure/azure-functions/functions-create-storage-queue-triggered-function)。
 
-- **Blob 觸發程序** - 在 Azure 儲存體 Blob 新增到容器時加以處理。 除了函式名稱之外，這個範本也接受路徑和連線屬性。 路徑屬性是觸發程序會監視的儲存體帳戶內部路徑。 連線帳戶是包含儲存體帳戶連接字串的應用程式設定名稱。 如需詳細資訊，請參閱 [Azure 函式 Blob 儲存體文章](/azure/azure-functions/functions-create-storage-blob-triggered-function)。
+- **Blob 觸發程序** - 在 Azure 儲存體 Blob 新增到容器時加以處理。 除了函式名稱之外，這個範本也接受路徑和連線屬性。 路徑屬性是觸發程序會監視的儲存體帳戶內部路徑。 連線帳戶是包含儲存體帳戶連接字串的應用程式設定名稱。 如需詳細資訊，請參閱 [Azure Functions Blob 儲存體文章](/azure/azure-functions/functions-create-storage-blob-triggered-function)。
 
-- **泛型 WebHook** - 這個簡單函式會在每次從支援 Webhook 的任何服務收到要求時執行。 如需詳細資訊，請參閱[泛型 Webhook 的 Azure 函數文章](/azure/azure-functions/functions-create-generic-webhook-triggered-function)。
+- **泛型 WebHook** - 這個簡單函式會在每次從支援 Webhook 的任何服務收到要求時執行。 如需詳細資訊，請參閱 [有關泛型 webhook 的 Azure Functions 文章](/azure/azure-functions/functions-create-generic-webhook-triggered-function)。
 
-- **Durable Functions 協調流程** - Durable Functions 可讓您在無伺服器環境中撰寫具狀態函式。 此擴充功能會為您管理狀態、設定檢查點和重新啟動。 如需詳細資訊，請參閱 [Durable Functions](/azure/azure-functions/durable-functions-overview) 的 Azure 函數指南。
+- **Durable Functions 協調流程** - Durable Functions 可讓您在無伺服器環境中撰寫具狀態函式。 此擴充功能會為您管理狀態、設定檢查點和重新啟動。 如需詳細資訊，請參閱長期 [函數](/azure/azure-functions/durable-functions-overview)的 Azure Functions 指南。
 
 - **影像大小調整工具** - 每當有 Blob 新增到容器時，這個函式都會建立調整過大小的影像。 這個範本接受路徑和連接字串、小型影像輸出及中型影像輸出。
 

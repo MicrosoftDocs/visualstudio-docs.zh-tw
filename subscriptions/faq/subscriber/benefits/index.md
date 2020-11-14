@@ -5,17 +5,21 @@ ms.topic: conceptual
 ms.assetid: bc1a67a8-25b3-40a1-a355-6de2e658113e
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 4/3/2020
+ms.date: 11/12/2020
 ms.faqid: Section3
-ms.openlocfilehash: 180a151e9dad8b57d12aad44dfe1d791b97e00ab
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: e50ad96d12dec9b14bf09fc087906f1e75acdf5d
+ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386027"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575555"
 ---
 # <a name="activating-subscription-benefits"></a>啟用訂閱權益
 
 [!INCLUDE [What benefits are available?](includes/available-benefits.md)]
 
 [!INCLUDE [How do I use my benefits?](includes/use-benefits.md)]
+
+[!INCLUDE [What is the Visual Studio with GitHub Enterprise setup process?](includes/ghe-process.md)]
+
+[!INCLUDE [How do I download, find a product key, and activate the Visual Studio IDE?](includes/activate-ide.md)]

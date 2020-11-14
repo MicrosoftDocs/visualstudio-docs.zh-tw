@@ -1,18 +1,18 @@
 ---
 title: 取消雲端訂閱需要多久的時間？
 description: 當您取消 Visual Studio 雲端訂用帳戶時，您即取消自動續約。 訂閱保持有效直至其正常...
-ms.faqid: group4_2
+ms.faqid: group4_3
 ms.topic: include
 ms.assetid: 2c83cd19-2692-4aef-9cd7-b7842639cbce
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 34cf5e16f8718f407c1f6c698f3a6e917219e6d8
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: d8420a48eb4e540d135d821de832b7a7c46bbefd
+ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91838342"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575413"
 ---
 ## <a name="how-long-does-it-take-for-my-cloud-subscription-to-be-canceled"></a>取消雲端訂閱需要多久的時間？
 
@@ -22,4 +22,4 @@ ms.locfileid: "91838342"
 
 至於年度雲端訂閱，取消要到原購買起算 12 個月後的該月一日才會生效，或自上次年度續約收費起算 12 個月後生效。 例如，如果您在 2018 年 1 月 3 日購買了 Visual Studio Professional 年度雲端訂用帳戶，當此訂用帳戶自動續訂一年時，就會一直保持有效到 2019 年 2 月 1 日。 如果您這個日期和 2020 年 2 月 1 日之間的任何時間取消訂閱，則此訂閱會在 2020 年 2 月 1 日到期。 取消方在年度雲端訂閱的訂閱年度中不會有任何退款。
 
-如需雲端訂閱的詳細資訊，請參閱我們的[收費方式](../../../../vscloud-billing-faq.md#how-charges-are-processed) \(部分機器翻譯\) 主題。
+如需雲端訂閱的詳細資訊，請參閱我們的[收費方式](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq#how-charges-are-processed) \(部分機器翻譯\) 主題。

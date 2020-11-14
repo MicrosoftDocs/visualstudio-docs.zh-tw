@@ -6,13 +6,13 @@ ms.topic: conceptual
 ms.assetid: 933c7f9e-dce9-46e7-939e-68682c65d972
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 3/3/2020
-ms.openlocfilehash: e38031e94bfba5df0643659a4a1cc9aa5d5876ea
-ms.sourcegitcommit: f81984aec5341a84b87c2466461656c38d8ff681
+ms.date: 11/10/2020
+ms.openlocfilehash: 4dc10c246ddb76fb186cc3493e4f7ab4a4f0c10b
+ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93245041"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94626216"
 ---
 # <a name="managing-visual-studio-subscriptions"></a>管理 Visual Studio 訂用帳戶
 
@@ -33,3 +33,5 @@ ms.locfileid: "93245041"
 [!INCLUDE [Why does my SLP agreement have an end date, and why is it sometimes different for my subscribers?](includes/slp-end-dates.md)]
 
 [!INCLUDE [What is the process for assigning GitHub Enterprise subscriptions?](includes/github-assign-process.md)]
+
+[!INCLUDE [Why am I not seeing an agreement while logged into the portal?](includes/no-agreement.md)]

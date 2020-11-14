@@ -1,6 +1,6 @@
 ---
 title: 進階、C#、文字編輯器、選項
-ms.date: 08/12/2020
+ms.date: 11/13/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
@@ -10,16 +10,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: acd04f80d5ade3a4afea418def69d4bbb6e20fa0
+ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88214663"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94626188"
 ---
 # <a name="options-text-editor-c-advanced"></a>進階、C#、文字編輯器、選項
 
-使用 [進階]**** 選項頁面來修改 C# 的編輯器格式、程式碼重構和 XML 文件註解設定。 若要存取此選項頁面，請選擇 [**工具**  >  **選項**]，然後選擇 [**文字編輯器**  >  **c #**  >  **Advanced**]。
+使用 [進階] 選項頁面來修改 C# 的編輯器格式、程式碼重構和 XML 文件註解設定。 若要存取此選項頁面，請選擇 [ **工具**  >  **選項** ]，然後選擇 [ **文字編輯器**  >  **c #**  >  **Advanced** ]。
 
 > [!NOTE]
 > 並非所有選項都會列在此處。
@@ -60,7 +60,7 @@ ms.locfileid: "88214663"
 
 - 使用指示詞群組來進行分隔
 
-   選取後，快顯功能表中的 [移除並排序 Using]**** 命令會透過在具有相同根命名空間的指示詞群組之間插入空白行來分隔 `using` 指示詞。
+   選取後，快顯功能表中的 [移除並排序 Using] 命令會透過在具有相同根命名空間的指示詞群組之間插入空白行來分隔 `using` 指示詞。
 
    排序之前：
 
@@ -101,7 +101,7 @@ ms.locfileid: "88214663"
 
    ![在 Visual Studio 中安裝 NuGet 套件的快速動作](media/nuget-lightbulb.png)
 
-## <a name="highlighting"></a>醒目提示
+## <a name="highlighting"></a>反白顯示
 
 - 反白顯示游標下的符號參考
 
@@ -134,6 +134,12 @@ ms.locfileid: "88214663"
     選取此選項時，會在函式呼叫中的每個引數之前，插入常值、轉換常值和物件具現化的參數名稱提示。  
     
     ![CSharp 的內嵌參數名稱提示](media/inline-parameter-name-hints-csharp.png)
+
+- 內嵌類型提示 
+    
+    選取此選項時，會針對具有推斷型別和 lambda 參數類型的變數插入型別提示。  
+    
+    ![CSharp 的內嵌類型提示](media/inline-type-hints-csharp.png)
 ::: moniker-end
 - 產生 /// 的 XML 文件註解
 

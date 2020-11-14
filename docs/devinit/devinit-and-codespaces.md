@@ -11,16 +11,16 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7ba3ff8e22923590c21333c35563a98352eeef21
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 929be4682465494738d859f9fe8144b5e26aaf4f
+ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438233"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94626165"
 ---
 # <a name="devinit-and-github-codespaces"></a>devinit 與 GitHub Codespace
 
-devinit 是 [GitHub Codespaces](https://github.com/features/codespaces) 的絕佳補充，devinit 可以用來取得 codespace 設定，讓參與者可以立即建立、執行和立即進行偵錯工具。
+devinit 是 [GitHub Codespaces](https://github.com/features/codespaces) 的絕佳協助工具，devinit 可用來取得 codespace 設定，讓參與者可以立即建立、執行和立即進行偵錯工具。
 
 > [!IMPORTANT]
 > 將 devinit 與您的 codespace 整合之前，您必須先確定您有定義相依性的檔案 `.devinit.json` 。 如需有關如何建立的詳細資訊 `.devinit.json` ，請參閱使用者 [入門檔](getting-started-with-devinit.md)。
