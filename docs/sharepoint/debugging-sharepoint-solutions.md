@@ -1,5 +1,7 @@
 ---
 title: SharePoint 解決方案的調試 |Microsoft Docs
+description: 使用 Visual Studio 偵錯工具來進行 SharePoint 方案的偵錯工具。 探索 F5 偵錯工具、部署程式、偵錯工具工作流程，以及偵錯工具功能事件接收器。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d83c8ffd4fe5ebb627b70fa07f010bdc713225dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0bd1996f5d42561cb2d44879ab702d6b6c4b4f7
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984504"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672856"
 ---
 # <a name="debug-sharepoint-solutions"></a>調試 SharePoint 方案
   您可以使用偵錯工具來進行 SharePoint 方案的調試 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 程式。 當您啟動偵錯工具時， [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會將專案檔案部署至 sharepoint 伺服器，然後在網頁瀏覽器中開啟 SharePoint 網站的實例。 下列各節說明如何在中進行 SharePoint 應用程式的偵錯工具 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
@@ -118,9 +120,9 @@ ms.locfileid: "72984504"
 ## <a name="sharepoint-project-features"></a>SharePoint 專案功能
  功能是可移植且模組化的功能單元，可使用網站定義簡化網站的修改。 它也是 [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) 專案的封裝，可針對特定範圍啟用，並且可協助使用者完成特定目標或工作。 範本會部署為功能。
 
- 當您在偵錯工具模式中執行專案時，部署程式會在 *%COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES*的*feature*目錄中建立資料夾。 功能名稱的格式 *專案名稱*_Feature*x*，例如 TestProject_Feature1。
+ 當您在偵錯工具模式中執行專案時，部署程式會在 *%COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES* 的 *feature* 目錄中建立資料夾。 功能名稱的格式 *專案名稱* _Feature *x*，例如 TestProject_Feature1。
 
- 功能目錄中的解決方案資料夾包含 *功能定義* 檔和 *工作流程定義* 檔。 功能定義檔 ( # A0) 描述專案功能中的檔案。專案定義檔 (*Elements.xml*) 描述專案範本。 *Elements.xml* 可以在 **方案總管**中找到，但在建立方案套件時會產生 Feature.xml。 如需這些檔案的詳細資訊，請參閱 [SharePoint 專案和專案專案範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。
+ 功能目錄中的解決方案資料夾包含 *功能定義* 檔和 *工作流程定義* 檔。 功能定義檔 ( # A0) 描述專案功能中的檔案。專案定義檔 (*Elements.xml*) 描述專案範本。 *Elements.xml* 可以在 **方案總管** 中找到，但在建立方案套件時會產生 Feature.xml。 如需這些檔案的詳細資訊，請參閱 [SharePoint 專案和專案專案範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。
 
 ## <a name="debug-workflows"></a>偵錯工作流程
  當您在調試工作流程專案時，會 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 根據程式庫的類型) 或清單，加入工作流程範本 (。 然後，您可以手動啟動工作流程範本，或新增或更新專案。 然後，您可以使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 來對工作流程進行調試。
@@ -140,7 +142,7 @@ ms.locfileid: "72984504"
 ## <a name="enable-enhanced-debugging-information"></a>啟用增強的調試資訊
  由於程式之間有時候會有複雜的互動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ( # A0) ，因此 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sharepoint 主機程式 (*vssphost4.exe*) 、sharepoint 和 WCF 層，來診斷建立、部署等等所發生的錯誤，可能是一項挑戰。 為了協助您解決這類錯誤，您可以啟用增強的調試資訊。 若要這樣做，請移至 Windows 登錄中的下列登錄機碼：
 
- **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\11.0\SharePointTools**
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**
 
  如果 "EnableDiagnostics" **REG_DWORD** 值尚未存在，請以手動方式建立。 將 "EnableDiagnostics" 值設定為 "1"。
 

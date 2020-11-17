@@ -1,5 +1,7 @@
 ---
 title: 定義自訂 SharePoint 專案專案類型 |Microsoft Docs
+description: 當您想要建立新種類的 SharePoint 專案專案時，請定義自訂 SharePoint 專案專案類型。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5f32abba4c4cbdeab59ed66e38019d913e704e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc2e3670dd734b368795f270fa6c1d63c8c079e8
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62580780"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672830"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>定義自訂 SharePoint 專案專案類型
   當您想要建立新種類的 SharePoint 專案專案時，請定義新的 SharePoint 專案專案類型。 例如，Visual Studio 不包含將欄位或自訂動作加入至 SharePoint 網站的 SharePoint 專案專案。 您可以定義自己的 SharePoint 專案專案類型，以建立欄位、自訂動作或其他類型的 SharePoint 元件。
@@ -29,9 +31,9 @@ ms.locfileid: "62580780"
 
  當您定義自訂專案專案類型時，您也可以將下列功能加入至專案專案：
 
-- 將快捷方式功能表項目加入至專案專案。 當您在 [**方案總管**] 中開啟專案專案的快捷方式功能表時，會顯示功能表項目，方法是以滑鼠右鍵按一下專案專案，或選擇該專案，然後選擇 [ **Shift** + **F10**鍵]。 如需詳細資訊，請參閱 [如何：將快捷方式功能表項目加入至自訂 SharePoint 專案專案類型](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)。
+- 將快捷方式功能表項目加入至專案專案。 當您在 [**方案總管**] 中開啟專案專案的快捷方式功能表時，會顯示功能表項目，方法是以滑鼠右鍵按一下專案專案，或選擇該專案，然後選擇 [ **Shift** + **F10** 鍵]。 如需詳細資訊，請參閱 [如何：將快捷方式功能表項目加入至自訂 SharePoint 專案專案類型](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)。
 
-- 將自訂屬性加入至專案專案。 當您在**方案總管**中選擇專案專案時，屬性會出現在 [**屬性**] 視窗中。 如需詳細資訊，請參閱 [如何：將屬性加入至自訂 SharePoint 專案專案類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。
+- 將自訂屬性加入至專案專案。 當您在 **方案總管** 中選擇專案專案時，屬性會出現在 [**屬性**] 視窗中。 如需詳細資訊，請參閱 [如何：將屬性加入至自訂 SharePoint 專案專案類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。
 
   若要讓其他開發人員可以在 Visual Studio 中使用您的專案專案，請建立 .spdata 檔案，並建立與專案專案相關聯的專案範本或專案範本。 如需詳細資訊，請參閱 [建立 SharePoint 專案專案的專案範本和專案範本](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。
 

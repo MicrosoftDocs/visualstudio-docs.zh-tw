@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: acd3b65f520a9be048fe2d0209a85a85d086df2f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 863c2715b7dfbc2c331bb57f6cf06851401c51df
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438226"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672497"
 ---
 # <a name="devinit-configuration-file"></a>devinit 設定檔
 
@@ -45,6 +45,7 @@ ms.locfileid: "94438226"
 路徑是相對於執行 devinit 的位置。 這通常是目前執行所在的工作目錄 `devinit` 。
 
 ## <a name="file-format"></a>檔案格式
+在中 `.devinit.json` ，您可以指定多個要執行的工具。 在 `run` 區段中，您可以放入任何數目的物件。 您可以在我們的範例中，使用我們所有的工具來瞭解這種情況的範例 [.devinit.js](sample-all-tool.md) 。
 
 ```json
 {

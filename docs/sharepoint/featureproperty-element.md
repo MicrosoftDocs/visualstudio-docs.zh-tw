@@ -1,5 +1,7 @@
 ---
 title: FeatureProperty 元素 |Microsoft Docs
+description: FeatureProperty 元素的視圖參考資訊，這是 SharePoint 專案專案架構中的元素。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61eeea33c6941624ed18a00db482590590a44a8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6010ac45d0b760325c73c4bd754fbb0b422a77
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546519"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672752"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty 項目
   表示將功能部署至 SharePoint 時隨附的自訂屬性。 部署功能之後，您可以在程式碼中存取屬性。
@@ -34,10 +36,10 @@ ms.locfileid: "85546519"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|描述|
+|屬性|說明|
 |---------------|-----------------|
-|**索引鍵**|必要的 **xs： string** 屬性。<br /><br /> 用來儲存和取出屬性值的索引鍵。 每個屬性在功能中都必須有唯一的索引鍵。|
-|**值**|必要的 **xs： string** 屬性。<br /><br /> 屬性值。|
+|**金鑰**|必要的 **xs： string** 屬性。<br /><br /> 用來儲存和取出屬性值的索引鍵。 每個屬性在功能中都必須有唯一的索引鍵。|
+|**ReplTest1**|必要的 **xs： string** 屬性。<br /><br /> 屬性值。|
 
 ### <a name="child-elements"></a>子元素
  無。

@@ -1,5 +1,7 @@
 ---
 title: 開發 SharePoint 方案 |Microsoft Docs
+description: 開發 SharePoint 方案。 知道 SharePoint 專案的元素。 瞭解 SharePoint 專案和專案專案屬性。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 36823637c530d65776c149ff576bf5e7e0ca545f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 755723dd2ae309e971e86852646ee33d2caa22cf
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016797"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672817"
 ---
 # <a name="develop-sharepoint-solutions"></a>開發 SharePoint 方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中提供數個 SharePoint 專案類型範本，以用來建立 SharePoint 網站和網站元素。 如需可用專案類型的清單，請參閱 [SharePoint 專案和專案專案範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是 SharePoint 專案的元素和屬性描述。
@@ -30,34 +32,34 @@ ms.locfileid: "86016797"
 ## <a name="elements-of-a-sharepoint-project"></a>SharePoint 專案的元素
  SharePoint 專案下方的節點稱為 *「SharePoint 項目」*(SharePoint item)。 SharePoint 項目也可能會包含一個以上的子檔案，稱為 *「SharePoint 項目檔案」*(SharePoint item file)，例如 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 組態檔、.aspx 表單等等。
 
- 若不使用已填入專案項目檔案的專案範本來建立專案，您可以使用 [空專案] **** 範本來建立空白的 SharePoint 專案，然後手動加入專案項目。 SharePoint 專案也可以選擇性地包含一或多個功能檔案 (用於在 SharePoint 中啟用) 和用來散發專案的套件檔案。
+ 若不使用已填入專案項目檔案的專案範本來建立專案，您可以使用 [空專案]  範本來建立空白的 SharePoint 專案，然後手動加入專案項目。 SharePoint 專案也可以選擇性地包含一或多個功能檔案 (用於在 SharePoint 中啟用) 和用來散發專案的套件檔案。
 
 ### <a name="special-nodes"></a>特殊節點
  每個 SharePoint 專案皆包含兩個節點，您無法重新命名、刪除、剪下、複製或從專案拖曳這兩個節點。 以下為這兩個節點：
 
-- 特性
+- 功能
 - 套件
 
   即使專案沒有定義任何功能或套件，這兩個節點仍會出現在所有 SharePoint 專案中。
 
 #### <a name="features-node"></a>功能節點
- [功能] **** 節點包含一或多個 SharePoint 專案功能。 每種功能都是 SharePoint 擴充功能的容器。 將功能部署至 SharePoint 伺服器之後，它可以包含在網站定義中或由 SharePoint 網站上的 SharePoint 系統管理員個別啟用。 如需詳細資訊，請參閱 [使用功能](/previous-versions/office/developer/sharepoint-2010/ms460318(v=office.14))。
+ [功能]  節點包含一或多個 SharePoint 專案功能。 每種功能都是 SharePoint 擴充功能的容器。 將功能部署至 SharePoint 伺服器之後，它可以包含在網站定義中或由 SharePoint 網站上的 SharePoint 系統管理員個別啟用。 如需詳細資訊，請參閱 [使用功能](/previous-versions/office/developer/sharepoint-2010/ms460318(v=office.14))。
 
- 當您將內容類型或清單執行個體這類項目加入 SharePoint 專案時，會將其加入 [功能] **** 節點中的一項功能。 而項目範圍可決定要將它加入新的或現有的功能。 如果新項目和現有功能具有相同的範圍，就會將其加入該功能。 若否，就會將該項目加入新的功能。
+ 當您將內容類型或清單執行個體這類項目加入 SharePoint 專案時，會將其加入 [功能]  節點中的一項功能。 而項目範圍可決定要將它加入新的或現有的功能。 如果新項目和現有功能具有相同的範圍，就會將其加入該功能。 若否，就會將該項目加入新的功能。
 
- 若要手動新增功能，請在功能節點的捷徑功能表上執行 [加入功能] **** 命令。 您可以使用功能設計工具來檢視或變更功能的內容。 如需詳細資訊，請參閱 [如何：自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)。
+ 若要手動新增功能，請在功能節點的捷徑功能表上執行 [加入功能]  命令。 您可以使用功能設計工具來檢視或變更功能的內容。 如需詳細資訊，請參閱 [如何：自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)。
 
- 將功能加入 SharePoint 專案時，它會顯示為 [方案總管] **** 中的節點，並使用預設節點名稱：Feature*x*.feature，其中 *x* 是唯一的編號。 將功能部署至 SharePoint 伺服器之後，SharePoint 系統管理員可以啟動它，以讓 SharePoint 網站的使用者使用。
+ 將功能加入 SharePoint 專案時，它會顯示為 [方案總管]  中的節點，並使用預設節點名稱：Feature *x*.feature，其中 *x* 是唯一的編號。 將功能部署至 SharePoint 伺服器之後，SharePoint 系統管理員可以啟動它，以讓 SharePoint 網站的使用者使用。
 
 #### <a name="package-node"></a>封裝節點
- [套件] **** 節點包含單一檔案，以做為 SharePoint 專案的散發機制。 這個檔案稱為「 *方案套件*」。以 CAB 為基礎。WSP 延伸模組。 方案套件是一種可部署並重複使用的檔案，其中包含套用至 SharePoint 網站而可個別啟用或停用的一組功能、網站定義和組件。 同樣地，[套件] **** 節點一定會包含名為 Package.wspdef 的檔案，其為套件的 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 定義檔。 將套件部署到執行 SharePoint 的伺服器之後，SharePoint 系統管理員即可加以安裝並啟用其功能。
+ [套件]  節點包含單一檔案，以做為 SharePoint 專案的散發機制。 這個檔案稱為「 *方案套件*」。以 CAB 為基礎。WSP 延伸模組。 方案套件是一種可部署並重複使用的檔案，其中包含套用至 SharePoint 網站而可個別啟用或停用的一組功能、網站定義和組件。 同樣地，[套件]  節點一定會包含名為 Package.wspdef 的檔案，其為套件的 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 定義檔。 將套件部署到執行 SharePoint 的伺服器之後，SharePoint 系統管理員即可加以安裝並啟用其功能。
 
  您可以按兩下套件節點或開啟其快捷方式功能表，然後選擇 [ **開啟**]，以在封裝設計工具中查看或變更封裝的內容。 如需詳細資訊，請參閱 [建立 SharePoint 方案套件](../sharepoint/creating-sharepoint-solution-packages.md)。
 
 ## <a name="sharepoint-project-and-project-item-properties"></a>SharePoint 專案和專案專案屬性
  SharePoint 專案就像其他 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 專案一樣，會在 [屬性] 視窗和 [屬性] 頁面中顯示相關屬性。 所顯示的屬性視所選取的節點而定。
 
- 在 [方案總管] **** 中選取 SharePoint 專案、專案項目或專案項目檔案節點時，[屬性] 視窗或 [屬性] 頁面會顯示下列屬性：
+ 在 [方案總管] 中選取 SharePoint 專案、專案項目或專案項目檔案節點時，[屬性] 視窗或 [屬性] 頁面會顯示下列屬性：
 
 ### <a name="project-properties"></a>專案屬性
 
@@ -99,15 +101,15 @@ ms.locfileid: "86016797"
 |自訂工具|指定工具的名稱 (如果有的話)，以在設計階段轉換檔案，並將轉換的輸出放入另一個檔案。 例如，資料集 (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) 檔案具有預設的自訂工具。 如需詳細資訊，請參閱 [檔案屬性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|
 |自訂工具命名空間|會將自訂工具的輸出複製到其中的命名空間。 如需詳細資訊，請參閱 [檔案屬性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|
 |部署位置|檔案在 SharePoint 伺服器中的完整路徑。 這個路徑是由部署根和部署路徑的子屬性構成。|
-|部署路徑|SharePoint 伺服器檔案上檔案的相對路徑，例如 Workflow1.xaml \\ 。 將 *Deployment Path* 值串連至 *Deployment Root* 值的結尾，即可建立檔案的完整路徑。<br /><br /> 選取 [*部署類型*] 屬性的 [ *RootFile* ] 值會將*部署根*屬性變更為 \<SharePointRoot> \\ ，以產生完整路徑的 \<SharePointRoot> \Workflow1 \\ 。 如需詳細資訊，請參閱 [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)。|
+|部署路徑|SharePoint 伺服器檔案上檔案的相對路徑，例如 Workflow1.xaml \\ 。 將 *Deployment Path* 值串連至 *Deployment Root* 值的結尾，即可建立檔案的完整路徑。<br /><br /> 選取 [*部署類型*] 屬性的 [ *RootFile* ] 值會將 *部署根* 屬性變更為 \<SharePointRoot> \\ ，以產生完整路徑的 \<SharePointRoot> \Workflow1 \\ 。 如需詳細資訊，請參閱 [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)。|
 |Deployment Root|字串。 在 SharePoint 伺服器部署檔案的根資料夾。 例如， \<SharePointRoot> \Template\Features \\ \<FeatureName> \\ 。<br /><br /> *Deployment Root* 屬性值是依據 *Deployment Type* 設定而定。|
-|部署類型|檔案的部署類型會決定其 *Deployment Root* 值。 可以是下列值之一：<br /><br /> NoDeployment *\<no value>*<br /><br /> ElementManifest： * \<SharePointRoot> \Template\Features \\ \<FeatureName> *\\<br /><br /> ElementFile： * \<SharePointRoot> \\ \<FeatureName> \Template\Features \\ *<br /><br /> TemplateFile： * \<SharePointRoot> \Template \\ *<br /><br /> RootFile *\<SharePointRoot>\\*<br /><br /> GlobalResource： * \<SharePointRoot> \Resources \\ *<br /><br /> ClassResource *\<ClassResourcePath>\\*<br /><br /> 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.SharePoint.DeploymentType>。|
+|部署類型|檔案的部署類型會決定其 *Deployment Root* 值。 可以是下列值之一：<br /><br /> NoDeployment *\<no value>*<br /><br /> ElementManifest： *\<SharePointRoot> \Template\Features \\ \<FeatureName>*\\<br /><br /> ElementFile： *\<SharePointRoot> \\ \<FeatureName> \Template\Features \\*<br /><br /> TemplateFile： *\<SharePointRoot> \Template \\*<br /><br /> RootFile *\<SharePointRoot>\\*<br /><br /> GlobalResource： *\<SharePointRoot> \Resources \\*<br /><br /> ClassResource *\<ClassResourcePath>\\*<br /><br /> 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.SharePoint.DeploymentType>。|
 |檔案名稱|項目檔案的檔案或資料夾名稱。|
 |完整路徑|項目檔案的位置。 (唯讀)。|
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|標題|說明|
 |-----------|-----------------|
 |[SharePoint 專案與專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)|說明 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中提供的 SharePoint 專案和專案項目範本。|
 |[如何：將項目新增至 SharePoint 專案](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|說明如何將新的或現有的項目加入 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 專案。|

@@ -1,5 +1,7 @@
 ---
 title: FeatureProperties 元素 |Microsoft Docs
+description: FeatureProperties 元素的視圖參考資訊，這是 SharePoint 專案專案架構中的元素。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6860a91067daa6da1d4223ae5060385087ad3433
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ee2bddec02263a889fb1f69088a8a50b3d8b57d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967327"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672596"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties 項目
   當功能部署到 SharePoint 時，所包含的屬性值集合。 部署功能之後，您可以存取程式碼中的屬性值。

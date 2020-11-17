@@ -1,5 +1,7 @@
 ---
 title: 擴充 SharePoint 專案專案 |Microsoft Docs
+description: 查看延伸 SharePoint 專案專案的工作。 瞭解專案專案延伸和專案專案實例的關聯方式。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f60c95418379399196c461e055645ae7c85a473e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22ba5acb995466e695c0e25b5b7540f3677b1264
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967392"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672570"
 ---
 # <a name="extend-sharepoint-project-items"></a>擴充 SharePoint 專案專案
   當您想要將功能加入至已安裝在 Visual Studio 中的 SharePoint 專案專案類型時，請建立專案專案延伸模組。 例如，您可以在 Visual Studio 中建立內建 **事件接收器** 或 **清單定義** 專案專案的延伸模組，也可以建立自訂專案專案類型的擴充功能。 您也可以建立所有 SharePoint 專案專案類型的擴充功能。
@@ -29,9 +31,9 @@ ms.locfileid: "62967392"
 
  當您擴充專案專案時，您也可以將下列功能加入至專案專案：
 
-- 將快捷方式功能表項目加入至專案專案。 當您在 **方案總管**中開啟專案專案的快捷方式功能表時，功能表項目就會出現。 您可以開啟快捷方式功能表，方法是以滑鼠右鍵按一下專案專案，或選擇它，然後選擇**Shift** + **F10**鍵。 如需詳細資訊，請參閱 [如何：將快捷方式功能表項目加入至 SharePoint 專案專案延伸](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)模組。
+- 將快捷方式功能表項目加入至專案專案。 當您在 **方案總管** 中開啟專案專案的快捷方式功能表時，功能表項目就會出現。 您可以開啟快捷方式功能表，方法是以滑鼠右鍵按一下專案專案，或選擇它，然後選擇 **Shift** + **F10** 鍵。 如需詳細資訊，請參閱 [如何：將快捷方式功能表項目加入至 SharePoint 專案專案延伸](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)模組。
 
-- 將自訂屬性加入至專案專案。 當您在**方案總管**中選擇專案專案時，屬性會出現在 [**屬性**] 視窗中。 如需詳細資訊，請參閱 [如何：將屬性加入至 SharePoint 專案專案延伸](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)模組。
+- 將自訂屬性加入至專案專案。 當您在 **方案總管** 中選擇專案專案時，屬性會出現在 [**屬性**] 視窗中。 如需詳細資訊，請參閱 [如何：將屬性加入至 SharePoint 專案專案延伸](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)模組。
 
   如需示範如何建立、部署和測試專案專案延伸的逐步解說，請參閱 [逐步解說：擴充 SharePoint 專案專案類型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)。
 

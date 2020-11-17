@@ -1,5 +1,7 @@
 ---
 title: 擴充 SharePoint 專案系統 |Microsoft Docs
+description: 擴充 SharePoint 專案系統。 瞭解如何延伸 SharePoint 專案系統。 瞭解一般開發工作。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,18 +15,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7dce10c2bc44eb4fde6a6e38417d136ea5e9ba41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c017217f66e38eed6248b90efaeabce0efaa9c70
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62557020"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672544"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>擴充 SharePoint 專案系統
   您可以使用 Visual Studio 中的一組專案範本和專案範本來建立 SharePoint 方案。 這些範本符合許多開發案例的需求，但您可能會發現它們無法提供您所需的功能。 在這些情況下，您可以擴充 SharePoint 專案系統。
 
 ## <a name="overview-of-the-sharepoint-project-system"></a>SharePoint 專案系統總覽
- SharePoint 專案系統是以 *sharepoint 專案專案*的基本元件為基礎。 SharePoint 專案專案代表單一 SharePoint 自訂，例如清單定義、網頁元件或內容類型。
+ SharePoint 專案系統是以 *sharepoint 專案專案* 的基本元件為基礎。 SharePoint 專案專案代表單一 SharePoint 自訂，例如清單定義、網頁元件或內容類型。
 
  SharePoint 專案是包含一或多個 SharePoint 專案專案的 Visual Studio 專案。 SharePoint 專案也包含其他元件，以定義如何將專案專案分組為部署的功能和套件。
 

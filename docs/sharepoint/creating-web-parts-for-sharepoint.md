@@ -1,5 +1,7 @@
 ---
 title: 建立 SharePoint 的 Web 組件 |Microsoft Docs
+description: 建立 SharePoint 的網頁元件。 藉由使用網頁元件，您可以使用瀏覽器來修改 SharePoint 網站網頁的內容、外觀和行為。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4824c358f81f2cf757f037611ed70ba9b8935130
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: bc9427d561817cb115473bddc71f2ba63475427e
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740153"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672791"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>建立 SharePoint 的網頁元件
   藉由使用網頁元件，您可以使用瀏覽器來修改 SharePoint 網站網頁的內容、外觀和行為。 Web 元件是在 web 元件頁面內執行的伺服器端控制項：它們是出現在 SharePoint 網站上的網頁構成要素。 請參閱 [建立區塊： Web 組件](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))。
@@ -41,7 +43,7 @@ ms.locfileid: "90740153"
  如果您想要使用設計工具以視覺化方式設計網頁元件，請建立 **Visual Web 元件** 專案或將 **visual web 元件** 專案加入至任何 SharePoint 專案。 您只可以在伺服器陣列方案中使用 **視覺網頁元件** 專案。
 
 ### <a name="web-part-item"></a>Web 元件專案
- **Web 元件**專案會提供您可用來設計 SharePoint 網站網頁元件的檔案。 當您加入 **Web 元件** 專案時，Visual Studio 會在專案中建立資料夾，然後將數個檔案加入至資料夾。 下表說明每個檔案。
+ **Web 元件** 專案會提供您可用來設計 SharePoint 網站網頁元件的檔案。 當您加入 **Web 元件** 專案時，Visual Studio 會在專案中建立資料夾，然後將數個檔案加入至資料夾。 下表說明每個檔案。
 
 |檔案|描述|
 |----------|-----------------|
@@ -52,15 +54,15 @@ ms.locfileid: "90740153"
  如需詳細資訊，請參閱 [如何：建立 SharePoint web 元件](../sharepoint/how-to-create-a-sharepoint-web-part.md)。
 
 ### <a name="visual-web-part-item"></a>視覺化網頁元件專案
- 視覺化網頁元件是您使用 Visual Studio 中的 Visual Web Developer designer 所建立的 web 元件。 視覺化網頁元件的運作方式與任何其他網頁元件相同。 若要將控制項（例如按鈕和文字方塊）新增至網頁元件，請將程式碼加入至 XML 檔案。 不過，您可以將控制項從 Visual Studio **工具箱**拖曳或複製到網頁元件上，藉以將控制項加入至視覺網頁元件。 然後，設計工具會在 XML 檔案中產生必要的程式碼。 請參閱 [如何：使用設計工具建立 SharePoint web 元件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。
+ 視覺化網頁元件是您使用 Visual Studio 中的 Visual Web Developer designer 所建立的 web 元件。 視覺化網頁元件的運作方式與任何其他網頁元件相同。 若要將控制項（例如按鈕和文字方塊）新增至網頁元件，請將程式碼加入至 XML 檔案。 不過，您可以將控制項從 Visual Studio **工具箱** 拖曳或複製到網頁元件上，藉以將控制項加入至視覺網頁元件。 然後，設計工具會在 XML 檔案中產生必要的程式碼。 請參閱 [如何：使用設計工具建立 SharePoint web 元件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。
 
 ## <a name="sharepoint-controls"></a>SharePoint 控制項
- Visual Studio 提供建立 SharePoint 頁面的一些控制項，例如應用程式頁面。 這些控制項會出現在 [ **工具箱** ] 的 **SharePoint 控制項**底下。 這些控制項的功能衍生自 [WebControls](/previous-versions/office/sharepoint-server/ms413880(v=office.15)) 命名空間，此命名空間包含用於 SharePoint 網站和清單頁面的 ASP.NET 伺服器控制項。
+ Visual Studio 提供建立 SharePoint 頁面的一些控制項，例如應用程式頁面。 這些控制項會出現在 [ **工具箱** ] 的 **SharePoint 控制項** 底下。 這些控制項的功能衍生自 [WebControls](/previous-versions/office/sharepoint-server/ms413880(v=office.15)) 命名空間，此命名空間包含用於 SharePoint 網站和清單頁面的 ASP.NET 伺服器控制項。
 
-|控制項名稱|描述|
+|控制項名稱|說明|
 |------------------|-----------------|
 |[AspMenu](/previous-versions/office/sharepoint-server/ms454108(v=office.15))|插入 ASP 功能表。 如需詳細資訊，請參閱 [功能表控制項總覽](/previous-versions/ecs0x9w5(v=vs.140))。|
-|[CssLink](/previous-versions/office/sharepoint-server/ms439048(v=office.15))|將 **LINK** 元素插入 *.aspx* 頁面，並套用 **CssRegistration**所定義的一或多個外部樣式表單。|
+|[CssLink](/previous-versions/office/sharepoint-server/ms439048(v=office.15))|將 **LINK** 元素插入 *.aspx* 頁面，並套用 **CssRegistration** 所定義的一或多個外部樣式表單。|
 |[DateTimeControl](/previous-versions/office/sharepoint-server/ms414993(v=office.15))|將 DateTime 控制項插入 *.aspx* 頁面中。|
 |[FormDigest](/previous-versions/office/sharepoint-server/ms416616(v=office.15))|將安全性驗證插入 *.aspx* 頁面|
 |[ListProperty](/previous-versions/office/sharepoint-server/ms455032(v=office.15))|傳回指定之清單的屬性。|
@@ -108,7 +110,7 @@ ms.locfileid: "90740153"
 
 ## <a name="related-topics"></a>相關主題
 
-|Title|描述|
+|標題|說明|
 |-----------|-----------------|
 |[如何：建立 SharePoint web 元件](../sharepoint/how-to-create-a-sharepoint-web-part.md)|說明如何建立 SharePoint 網頁的 web 元件。|
 |[如何：使用設計工具建立 SharePoint web 元件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|說明如何使用視覺化設計介面建立 SharePoint 的網頁元件。|

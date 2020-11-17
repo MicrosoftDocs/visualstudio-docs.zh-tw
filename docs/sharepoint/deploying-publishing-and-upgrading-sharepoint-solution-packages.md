@@ -1,5 +1,7 @@
 ---
 title: 部署、發佈、& 升級 SharePoint 方案套件
+description: 部署、發行和升級 SharePoint 方案套件。 自訂部署流程。 將封裝發行至遠端或本機伺服器。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 574712b870256fa7422e64a3c29ae8733f4c2251
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ab97efc82575c31c8e05b73063c2b53a09691d2d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583875"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672661"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>部署、發行和升級 SharePoint 方案套件
   在 Visual Studio 開發 SharePoint 方案之後，您可以將其封裝 ( .wsp) 檔部署到本機 SharePoint 伺服器，或將其發行至遠端或本機 SharePoint 伺服器。 如果您部署檔案，您可以自訂部署封裝檔案 ( .wsp) 的方式。

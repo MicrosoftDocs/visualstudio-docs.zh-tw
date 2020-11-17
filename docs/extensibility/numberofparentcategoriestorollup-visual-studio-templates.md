@@ -1,5 +1,7 @@
 ---
 title: 'NumberOfParentCategoriesToRollUp 元素 (範本) '
+description: 瞭解 NumberOfParentCategoriesToRollUp 元素，以及它如何指定將在 [新增專案] 對話方塊中顯示範本的父類別目錄數目。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b903b9d0bdab2c17dd2e489de01badad82c15473
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58c702a70392f4a0330ea51b563570362f51df35
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702362"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672407"
 ---
 # <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a> (Visual Studio 範本的 NumberOfParentCategoriesToRollUp 元素) 
 指定將在 [ **新增專案** ] 對話方塊中顯示範本的父類別目錄數目。
@@ -48,7 +50,7 @@ ms.locfileid: "80702362"
 
 |項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  `integer`需要值。

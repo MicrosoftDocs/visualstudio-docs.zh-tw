@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的專案元素) |Microsoft Docs"
+description: 深入瞭解專案專案，以及它如何指定要加入至專案的檔案或目錄。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 335a1e4efa62f07e10bb24b9971627d24bb13273
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652d438d6a0fdf0c42648ded7d3dc9c18b0212ff
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701996"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672381"
 ---
 # <a name="project-element-visual-studio-templates"></a> (Visual Studio 範本的專案元素) 
 指定要加入至專案的檔案或目錄。
@@ -44,7 +46,7 @@ ms.locfileid: "80701996"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|描述|
+|屬性|說明|
 |---------------|-----------------|
 |`File`|必要屬性。<br /><br /> 指定範本 *.zip* 檔中的專案檔名稱。|
 |`ReplaceParameters`|選擇性屬性。<br /><br /> 布林值，指定在從範本建立專案時，專案檔是否包含必須取代的參數值。 預設值為 `false`。|
@@ -53,7 +55,7 @@ ms.locfileid: "80701996"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|項目|說明|
 |-------------|-----------------|
 |[資料夾](../extensibility/folder-element-visual-studio-project-templates.md)|選擇性項目。<br /><br /> 指定要加入至專案的資料夾。|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|選擇性項目。<br /><br /> 指定要加入至專案的檔案。|

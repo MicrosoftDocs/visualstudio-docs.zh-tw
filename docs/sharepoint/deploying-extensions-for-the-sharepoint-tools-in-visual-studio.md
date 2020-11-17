@@ -1,5 +1,7 @@
 ---
 title: 在 Visual Studio 中部署 SharePoint 工具的延伸模組 |Microsoft Docs
+description: 在 Visual Studio 中部署 SharePoint 工具的擴充功能。 使用 Visual Studio 擴充功能 (VSIX) 專案來建立 VSIX 套件。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8178a660f757ae7d7c2758c76d6fd0fc4b22918f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9c8b05b5cb74a28157436f95f01992515c716e6a
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584699"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672674"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>在 Visual Studio 中部署 SharePoint 工具的延伸模組
 
@@ -90,9 +92,9 @@ ms.locfileid: "91584699"
 
     - 如果擴充元件是從與 VSIX 專案相同方案中的專案所建立，請選擇 [ **目前方案] 中的專案**。 在 [ **專案** ] 清單中，選擇專案的名稱。
 
-    - 如果延伸模組元件包含為專案中的檔案，請選擇 [ **檔案系統] 上**的 [檔案]。 在 [ **路徑** ] 清單中，輸入擴充元件檔案的完整路徑，或使用 [ **流覽]** 按鈕來尋找並選擇元件檔案。
+    - 如果延伸模組元件包含為專案中的檔案，請選擇 [ **檔案系統] 上** 的 [檔案]。 在 [ **路徑** ] 清單中，輸入擴充元件檔案的完整路徑，或使用 [ **流覽]** 按鈕來尋找並選擇元件檔案。
 
-5. 選擇 [確定] **** 按鈕。
+5. 選擇 [確定]  按鈕。
 
 #### <a name="to-include-a-sharepoint-command-assembly"></a>包含 SharePoint 命令元件
 
@@ -110,9 +112,9 @@ ms.locfileid: "91584699"
 
     - 如果命令元件是從與 VSIX 專案相同方案中的專案所建立，請選擇 [ **目前方案] 中的專案**。 在 [ **專案** ] 清單中，選擇專案的名稱。
 
-    - 如果命令元件包含為專案中的檔案，請選擇 **檔案系統上**的 [檔案]。 在 [ **路徑** ] 清單中，輸入擴充元件檔案的完整路徑，或使用 [ **流覽]** 按鈕來尋找並選擇元件檔案。
+    - 如果命令元件包含為專案中的檔案，請選擇 **檔案系統上** 的 [檔案]。 在 [ **路徑** ] 清單中，輸入擴充元件檔案的完整路徑，或使用 [ **流覽]** 按鈕來尋找並選擇元件檔案。
 
-5. 選擇 [確定] **** 按鈕。
+5. 選擇 [確定]  按鈕。
 
 #### <a name="to-include-a-template-that-you-create"></a>包含您建立的範本
 
@@ -130,7 +132,7 @@ ms.locfileid: "91584699"
 
 5. 在 [ **專案** ] 清單中，選擇專案的名稱，然後選擇 [ **確定]** 按鈕。
 
-6. 在 **方案總管**中，開啟專案範本或專案範本專案的快捷方式功能表，然後選擇 **[卸載專案**]。
+6. 在 **方案總管** 中，開啟專案範本或專案範本專案的快捷方式功能表，然後選擇 **[卸載專案**]。
 
 7. 再次開啟專案節點的快捷方式功能表，然後選擇 [ **編輯**_YourTemplateProjectName_**.Csproj** ] 或 [ **編輯**_YourTemplateProjectName_**. vbproj**]。
 
@@ -152,7 +154,7 @@ ms.locfileid: "91584699"
 
 10. 儲存並關閉檔案。
 
-11. 在 **方案總管**中，開啟專案範本或專案範本專案的快捷方式功能表，然後選擇 [ **重載專案**]。
+11. 在 **方案總管** 中，開啟專案範本或專案範本專案的快捷方式功能表，然後選擇 [ **重載專案**]。
 
 #### <a name="to-include-a-template-that-you-create-manually"></a>包含您手動建立的範本
 
@@ -170,9 +172,9 @@ ms.locfileid: "91584699"
 
      *YourTemplateName*.zip
 
-     例如，如果您有一個名為 ContosoCustomAction.zip 的專案範本，且該範本支援英文 () 美國地區設定，則可能會 *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*完整路徑。
+     例如，如果您有一個名為 ContosoCustomAction.zip 的專案範本，且該範本支援英文 () 美國地區設定，則可能會 *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip* 完整路徑。
 
-3. 在 **方案總管**中，選擇 (*YourTemplateName*.zip) 的範本檔案。
+3. 在 **方案總管** 中，選擇 (*YourTemplateName*.zip) 的範本檔案。
 
 4. 在 [ **屬性** ] 視窗中，將 [ **組建動作** ] 屬性設定為 [ **內容**]。
 
@@ -186,7 +188,7 @@ ms.locfileid: "91584699"
 
 7. 在 [ **類型** ] 清單中，選擇 [ **VisualStudio** ] 或 [ **VisualStudio. ProjectTemplate**]。
 
-8. 在 [ **來源** ] 清單中，選擇 **檔案系統上**的 [檔案]。
+8. 在 [ **來源** ] 清單中，選擇 **檔案系統上** 的 [檔案]。
 
 9. 在 [ **路徑** ] 欄位中，輸入元件的完整路徑 (例如 *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*，或使用 [ **流覽]** 按鈕來尋找並選擇元件，然後選擇 [ **確定]** 按鈕。
 
@@ -206,9 +208,9 @@ ms.locfileid: "91584699"
 
     - 如果 wizard 元件是從與 VSIX 專案相同方案中的專案所建立，請選擇 [ **目前方案] 中的專案**。 在 [ **專案** ] 清單中，選擇專案的名稱。
 
-    - 如果 wizard 元件包含為專案中的檔案，請選擇 **檔案系統上**的 [檔案]。 在 [ **路徑** ] 欄位中，輸入元件檔案的完整路徑，或使用 [ **流覽]** 按鈕來尋找並選擇元件。
+    - 如果 wizard 元件包含為專案中的檔案，請選擇 **檔案系統上** 的 [檔案]。 在 [ **路徑** ] 欄位中，輸入元件檔案的完整路徑，或使用 [ **流覽]** 按鈕來尋找並選擇元件。
 
-5. 選擇 [確定] **** 按鈕。
+5. 選擇 [確定]  按鈕。
 
 ### <a name="related-walkthroughs"></a>相關逐步解說
 

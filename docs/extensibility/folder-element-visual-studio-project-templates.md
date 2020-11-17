@@ -1,5 +1,7 @@
 ---
 title: ) 的 Visual Studio 專案範本 (資料夾元素 |Microsoft Docs
+description: 瞭解 Folder 元素，以及它如何指定將新增至專案的資料夾。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba3f357f6c48280d12e4ddab6135245e699d0a44
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769582"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672713"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Visual Studio 專案範本 (資料夾元素) 
 指定將新增至專案的資料夾。
@@ -64,7 +66,7 @@ ms.locfileid: "85769582"
 
  您可以使用下列任何一種方法，將專案專案組織為範本中的資料夾：
 
-- 將資料夾包含在 *.zip*檔案中，並在專案中指定檔案的路徑 *.vstemplate* `ProjectItem` （不含任何元素），以將它們新增至 .vstemplate 檔案中的專案 `Folder` 。 這是建議的方法。 例如：
+- 將資料夾包含在 *.zip* 檔案中，並在專案中指定檔案的路徑 *.vstemplate* `ProjectItem` （不含任何元素），以將它們新增至 .vstemplate 檔案中的專案 `Folder` 。 這是建議的方法。 例如：
 
      `...`
 

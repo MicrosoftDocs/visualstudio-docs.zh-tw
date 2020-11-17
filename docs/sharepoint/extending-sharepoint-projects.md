@@ -1,5 +1,7 @@
 ---
 title: 擴充 SharePoint 專案 |Microsoft Docs
+description: 瞭解如何在您想要自訂 SharePoint 專案的專案層級功能時，建立專案延伸模組。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6bc92d65ed179c7f2cb2f569a7d254a025887845
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae4c3c1e606fd436725ef9f54a4568b754b048af
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967477"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672635"
 ---
 # <a name="extend-sharepoint-projects"></a>擴充 SharePoint 專案
   當您想要自訂 SharePoint 專案的專案層級功能時，請建立專案延伸模組。 例如，您可以加入自訂專案屬性，或回應使用者在 Visual Studio 中開發 SharePoint 方案時引發的專案層級事件。
@@ -29,9 +31,9 @@ ms.locfileid: "62967477"
 
  當您建立專案延伸模組時，您也可以將下列功能加入至 SharePoint 專案：
 
-- 新增快捷方式功能表項目。 當您在 [**方案總管**] 中開啟 SharePoint 專案節點的快捷方式功能表，以滑鼠右鍵按一下該節點或選擇該節點，然後選擇**Shift** + **F10**鍵時，就會出現功能表項目。 如需詳細資訊，請參閱 [如何：將快捷方式功能表項目加入至 SharePoint 專案](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)。
+- 新增快捷方式功能表項目。 當您在 [**方案總管**] 中開啟 SharePoint 專案節點的快捷方式功能表，以滑鼠右鍵按一下該節點或選擇該節點，然後選擇 **Shift** + **F10** 鍵時，就會出現功能表項目。 如需詳細資訊，請參閱 [如何：將快捷方式功能表項目加入至 SharePoint 專案](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)。
 
-- 新增自訂屬性。 當您在**方案總管**中選擇 SharePoint 專案時，屬性會出現在 [**屬性**] 視窗中。 如需詳細資訊，請參閱 [如何：將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。
+- 新增自訂屬性。 當您在 **方案總管** 中選擇 SharePoint 專案時，屬性會出現在 [**屬性**] 視窗中。 如需詳細資訊，請參閱 [如何：將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。
 
   如需示範如何建立、部署和測試專案延伸的逐步解說，請參閱 [逐步解說：建立 SharePoint 專案延伸](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)。
 

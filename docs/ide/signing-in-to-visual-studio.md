@@ -11,12 +11,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fd3a6153a347bcaf7d17fd265b7d9c7d4e6a5e5
-ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
+ms.openlocfilehash: 7873d42e075619e23c14d4e2e1babc6898825a6b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94626173"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672765"
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 
@@ -41,13 +41,13 @@ ms.locfileid: "94626173"
 
 - **繼續使用 Visual Studio Community 版** -如果您的社區版安裝提示您提供授權，請登入 IDE 以繼續 **免費** 使用 Visual Studio Community。 
 
-- **使用與 Visual Studio 訂用帳戶或 Azure DevOps 組織建立關聯的帳戶，就可以解除鎖定 Visual Studio** 。 如需詳細指示，請參閱 [延長試用版或更新授權](../ide/how-to-unlock-visual-studio.md)。
+- **使用與 Visual Studio 訂用帳戶或 Azure DevOps 組織建立關聯的帳戶，就可以解除鎖定 Visual Studio**。 如需詳細指示，請參閱 [延長試用版或更新授權](../ide/how-to-unlock-visual-studio.md)。
 
 - **存取 Visual Studio Dev Essentials 方案** - 此方案包含免費的軟體供應項目、訓練、支援等等。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 。
 
 - **同步處理您的 Visual Studio 設定** - 您自訂的設定 (例如按鍵繫結關係、視窗配置和色彩佈景主題)，會在您從任何裝置登入 Visual Studio 時立即套用。 請參閱 [Visual Studio 中的同步處理設定](../ide/synchronized-settings-in-visual-studio.md)。
 
-- 對於同一個帳戶不會再次提示輸入認證，即可在 IDE 中 **自動連線到 Azure 和 Azure DevOps Services 等服務** 。
+- 對於同一個帳戶不會再次提示輸入認證，即可在 IDE 中 **自動連線到 Azure 和 Azure DevOps Services 等服務**。
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>如何登入 Visual Studio
 
@@ -57,7 +57,7 @@ ms.locfileid: "94626173"
 
 您應該選擇 Microsoft 帳戶或最能代表您的工作或學校帳戶。 如果您沒有這些帳戶，您可以按一下 [登入] 按鈕下的連結，免費建立 Microsoft 帳戶。 如果您遇到問題，請參閱 [如何? 註冊 Microsoft 帳戶？](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
 
-接下來，選擇您在 Visual Studio 中要使用的 UI 設定和色彩佈景主題。 Visual Studio 會記住這些設定，並在您已登入的所有 Visual Studio 環境中同步處理這些設定。 如需已同步處理的設定清單，請參閱 [同步](../ide/synchronized-settings-in-visual-studio.md)處理的設定。 如果您在 Visual Studio 中開啟 [ **工具** 選項] 功能表，您可以稍後再變更這些設定  >  **Options** 。
+接下來，選擇您在 Visual Studio 中要使用的 UI 設定和色彩佈景主題。 Visual Studio 會記住這些設定，並在您已登入的所有 Visual Studio 環境中同步處理這些設定。 如需已同步處理的設定清單，請參閱 [同步](../ide/synchronized-settings-in-visual-studio.md)處理的設定。 如果您在 Visual Studio 中開啟 [**工具** 選項] 功能表，您可以稍後再變更這些設定  >  **Options** 。
 
 提供設定之後會啟動 Visual Studio，您也將完成登入並準備開始使用。 若要確認您是否已登入，請在 Visual Studio 環境的右上角尋找您的名稱。
 
@@ -71,7 +71,7 @@ ms.locfileid: "94626173"
 
 ## <a name="to-change-your-profile-information"></a>若要變更您的設定檔資訊
 
-1. 移至 **File**  >  [檔案 **帳戶設定** ]，然後選擇 [ **管理 Visual Studio 設定檔** ] 連結。
+1. 移至 **File**  >  [檔案 **帳戶設定**]，然後選擇 [**管理 Visual Studio 設定檔**] 連結。
 
 1. 在瀏覽器視窗中，選取 [編輯設定檔] 並變更所要的設定。
 
@@ -84,6 +84,7 @@ ms.locfileid: "94626173"
 ## <a name="see-also"></a>另請參閱
 
 * [延長試用版或更新授權](../ide/how-to-unlock-visual-studio.md)
+* [在 Visual Studio 中使用 GitHub 帳戶](../ide/work-with-github-accounts.md)
 * [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)
 * [登入 (Visual Studio for Mac)](/visualstudio/mac/signing-in)
 * [啟用 (Visual Studio for Mac)](/visualstudio/mac/activation)

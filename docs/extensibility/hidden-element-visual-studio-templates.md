@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的隱藏元素) |Microsoft Docs"
+description: 瞭解隱藏的元素，以及它如何指定範本是否出現在 [新增專案] 或 [加入新專案] 對話方塊中。
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04cb966f21bbb501545f1a203297d06f8e852793
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711116"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672696"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Visual Studio 範本 (隱藏元素) 
 
@@ -53,7 +55,7 @@ ms.locfileid: "80711116"
 
 |項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
 

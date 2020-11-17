@@ -1,5 +1,7 @@
 ---
 title: ExtensionDataItem 元素 |Microsoft Docs
+description: ExtensionDataItem 元素的視圖參考資訊，這是 SharePoint 專案專案架構中的元素。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 295ee649cec01e50b237b4fad1798806d460727b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23bd231343b3e7a6c68883aa7fe3ee4e518ac883
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546545"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672609"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem 項目
   與 SharePoint 專案專案相關聯的自訂資料項目（以索引鍵/值格式）。 索引鍵和值都必須是字串。
@@ -34,10 +36,10 @@ ms.locfileid: "85546545"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|描述|
+|屬性|說明|
 |---------------|-----------------|
-|**索引鍵**|必要的 **xs： string** 屬性。<br /><br /> 用來儲存和取出資料項目的索引鍵。|
-|**值**|必要的 **xs： string** 屬性。<br /><br /> 資料項目的值。|
+|**金鑰**|必要的 **xs： string** 屬性。<br /><br /> 用來儲存和取出資料項目的索引鍵。|
+|**ReplTest1**|必要的 **xs： string** 屬性。<br /><br /> 資料項目的值。|
 
 ### <a name="child-elements"></a>子元素
  無。

@@ -1,5 +1,7 @@
 ---
 title: 擴充 SharePoint 封裝和部署 |Microsoft Docs
+description: 擴充 SharePoint 封裝和部署。 建立部署步驟和設定。 處理部署衝突。 自訂驗證規則。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f0f9eb6c863a961a527fcb6fb330a2a4f88669e
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967454"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672583"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>擴充 SharePoint 封裝和部署
   您可以擴充 SharePoint 專案的封裝和部署程序。

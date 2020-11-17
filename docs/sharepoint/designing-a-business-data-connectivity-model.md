@@ -1,5 +1,7 @@
 ---
 title: 設計商務資料連線模型 |Microsoft Docs
+description: " (BDC) 模型設計商務資料連線。 新增實體和方法。 定義方法參數。 加入篩選描述項。 驗證 BDC 模型。"
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16a410b59cef6f282d2d27ad90a90013636d6489
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b574c52b9081cc6640c5611e0759b5559e7a4f6d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984459"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672648"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>設計商務資料連線模型
   您可以藉由將實體和方法加入至模型檔案，來開發商務資料連線 (BDC) 服務的模型。 實體描述資料欄位的集合。 例如，實體可以代表資料庫中的資料表。 方法會執行工作，例如新增、刪除或更新實體所表示的資料。 如需詳細資訊，請參閱將 [商務資料整合到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)。
@@ -31,7 +33,7 @@ ms.locfileid: "72984459"
 ## <a name="add-methods"></a>新增方法
  當使用者在以您的模型為基礎的清單或網頁元件中查看、加入、更新或刪除資訊時，BDC 服務會在您的模型中呼叫方法。 您必須針對使用者可執行檔每個工作，將方法新增至模型。 從 [ **BDC 方法詳細資料** ] 視窗中選取五個基本方法類型的任一種，以建立方法。 下表說明 BDC 模型的五個基本方法。
 
-|方法|描述|
+|方法|說明|
 |------------|-----------------|
 |儀|傳回實體實例的集合。 當使用者開啟清單或網頁元件時呼叫。 如需詳細資訊，請參閱 [如何：加入搜尋工具方法](../sharepoint/how-to-add-a-finder-method.md)。|
 |特定搜尋|傳回特定的實體實例。 當使用者在清單中查看特定專案的詳細資料時呼叫。 如需詳細資訊，請參閱 [如何：加入特定的搜尋工具方法](../sharepoint/how-to-add-a-specific-finder-method.md)。|
@@ -42,7 +44,7 @@ ms.locfileid: "72984459"
 ## <a name="define-method-parameters"></a>定義方法參數
  當您建立方法時，Visual Studio 加入適用于方法類型的輸入和輸出參數。 這些參數只是預留位置。 在大多數情況下，您必須修改參數，讓它們傳入或傳回正確的資料類型。 例如，根據預設，Finder 方法會傳回字串。 在大部分情況下，您會想要修改 Finder 方法的 return 參數，使其傳回實體的集合。 您可以藉由修改參數的類型描述元來完成這項工作。 型別描述項是描述參數資料型別的屬性（attribute）集合。 如需詳細資訊，請參閱 [如何：定義參數的類型描述](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)元。
 
- Visual Studio 可讓您在模型中的參數之間複製類型描述元。 例如，您可以 `CustomerTD` 針對方法的 return 參數定義名為的型別描述項 `GetCustomer` 。 您可以 `CustomerTD` 在 **BDC Explorer**中複製類型描述元，然後將該類型描述元貼到方法的輸入參數中 `CreateCustomer` 。 這可防止您必須多次定義相同的類型描述項。
+ Visual Studio 可讓您在模型中的參數之間複製類型描述元。 例如，您可以 `CustomerTD` 針對方法的 return 參數定義名為的型別描述項 `GetCustomer` 。 您可以 `CustomerTD` 在 **BDC Explorer** 中複製類型描述元，然後將該類型描述元貼到方法的輸入參數中 `CreateCustomer` 。 這可防止您必須多次定義相同的類型描述項。
 
 ## <a name="method-instances"></a>方法實例
  當您建立方法時，Visual Studio 加入預設方法實例。 方法實例是方法的參考，加上參數的預設值。 單一方法可以有多個方法實例。 每個實例都是方法簽章和一組預設值的組合。 如需詳細資訊，請參閱 [如何：定義參數的類型描述](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)元。
@@ -57,11 +59,11 @@ ms.locfileid: "72984459"
  SharePoint 提供數個功能，可讓使用者提供篩選值。 例如，商務資料 Web 組件提供篩選準則文字方塊。 使用者可以在文字方塊中輸入值，以限制清單中的資料。 如需如何將篩選描述元加入至方法的詳細資訊，請參閱 [如何：將篩選描述元加入至 Finder 方法](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)。
 
 ### <a name="filter-descriptor-properties"></a>篩選描述項屬性
- 您必須設定篩選描述項的 **相關聯類型描述**元、 **名稱**和 **類型** 屬性值。 所有其他屬性都是選擇性的。
+ 您必須設定篩選描述項的 **相關聯類型描述** 元、 **名稱** 和 **類型** 屬性值。 所有其他屬性都是選擇性的。
 
- **相關聯的類型描述**元屬性會將篩選描述元與輸入參數產生關聯。 當使用者提供篩選值時，BDC 服務會使用輸入參數將該值傳遞給方法。
+ **相關聯的類型描述** 元屬性會將篩選描述元與輸入參數產生關聯。 當使用者提供篩選值時，BDC 服務會使用輸入參數將該值傳遞給方法。
 
- **Type**屬性描述您想要使用的篩選模式。 在 SharePoint 中，您選取的篩選模式會影響出現在消費者介面 (UI) 中的文字。 例如，在比較子篩選模式中，文字 **等於** 顯示為商務資料網頁元件上方的控制項。 如需每個篩選模式的詳細資訊，請參閱 [BDC 所支援的篩選類型](/previous-versions/office/developer/sharepoint-2010/ee556392(v=office.14))。
+ **Type** 屬性描述您想要使用的篩選模式。 在 SharePoint 中，您選取的篩選模式會影響出現在消費者介面 (UI) 中的文字。 例如，在比較子篩選模式中，文字 **等於** 顯示為商務資料網頁元件上方的控制項。 如需每個篩選模式的詳細資訊，請參閱 [BDC 所支援的篩選類型](/previous-versions/office/developer/sharepoint-2010/ee556392(v=office.14))。
 
  如需篩選描述元屬性的詳細資訊，請參閱 [FilterDescriptor](/previous-versions/office/developer/sharepoint-2010/ee557835(v=office.14))。
 
@@ -69,11 +71,11 @@ ms.locfileid: "72984459"
  在某些情況下，使用者可能不會提供篩選值。 您可以藉由將預設值加入方法實例，或在方法的程式碼中設定預設值，來提供預設值。 如需如何將預設值加入方法實例的詳細資訊，請參閱 [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))。 如需如何在方法的程式碼中設定輸入參數之預設值的範例，請參閱 [如何：將篩選描述元新增至搜尋工具方法](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)。
 
 ## <a name="validate-the-model"></a>驗證模型
- 您可以在開發期間驗證您的模型。 Visual Studio 識別可能會讓您的模型無法如預期般運作的問題。 這些問題都會出現在 Visual Studio **錯誤清單**中。
+ 您可以在開發期間驗證您的模型。 Visual Studio 識別可能會讓您的模型無法如預期般運作的問題。 這些問題都會出現在 Visual Studio **錯誤清單** 中。
 
- 您可以開啟 BDC 設計工具的快捷方式功能表，然後選擇 [ **驗證**]，以驗證模型。 如果模型包含任何錯誤，則會出現在 [ **錯誤清單**] 中。 按兩下清單中的錯誤，即可快速將游標移至包含錯誤的程式碼。 或者，您可以重複選擇**F8**或**Shift** + **f8**鍵，在清單中向前或向後跳到錯誤。
+ 您可以開啟 BDC 設計工具的快捷方式功能表，然後選擇 [ **驗證**]，以驗證模型。 如果模型包含任何錯誤，則會出現在 [ **錯誤清單**] 中。 按兩下清單中的錯誤，即可快速將游標移至包含錯誤的程式碼。 或者，您可以重複選擇 **F8** 或 **Shift** + **f8** 鍵，在清單中向前或向後跳到錯誤。
 
- 以某種方式違反模型的規則時，就會發生驗證錯誤。 例如，如果類型描述項的 **IsCollection** 屬性設定為 **true**，但沒有任何子類型描述元，則會出現驗證錯誤。 您可能必須參考 BDC 模型的規則，才能瞭解 Visual Studio **錯誤清單**中出現的一些錯誤。 如需有關 BDC 模型規則的詳細資訊，請參閱 [BDCMetadata 架構](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14))。
+ 以某種方式違反模型的規則時，就會發生驗證錯誤。 例如，如果類型描述項的 **IsCollection** 屬性設定為 **true**，但沒有任何子類型描述元，則會出現驗證錯誤。 您可能必須參考 BDC 模型的規則，才能瞭解 Visual Studio **錯誤清單** 中出現的一些錯誤。 如需有關 BDC 模型規則的詳細資訊，請參閱 [BDCMetadata 架構](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14))。
 
 ## <a name="debug-the-solution-that-contains-the-model"></a>將包含模型的方案進行 Debug 錯
  您可以對程式碼進行偵錯工具，就像在 Visual Studio 中進行程式碼的偵錯工具一樣。 若要對程式碼進行偵錯工具，請在程式碼中的任何位置設定中斷點，然後啟動偵錯工具。 Visual Studio 會開啟 SharePoint 網站。 在 SharePoint 中，建立使用您商務資料的清單或網頁元件。 然後，您可以逐步執行程式碼。 如需有關偵錯工具 SharePoint 專案的詳細資訊，請參閱 [疑難排解 sharepoint 方案](../sharepoint/troubleshooting-sharepoint-solutions.md)。
@@ -101,7 +103,7 @@ ms.locfileid: "72984459"
 ### <a name="retract-models-that-become-corrupt"></a>已損毀的撤回模型
  當您第一次啟動偵錯工具時，Visual Studio 會將整個模型部署到 SharePoint。 Visual Studio 之後，會使用您在部署之間進行的任何變更來更新 SharePoint 中的模型。
 
- 在某些情況下，您可能會想要 Visual Studio 完全從 SharePoint 撤銷模型。 例如，模型可能會損毀。  若要將模型重新部署至 SharePoint，請將模型的 [累加 **式更新** ] 屬性設定為 [ **False**]，然後啟動偵錯工具。 當您在**BDC Explorer**中選取代表模型的節點時，[累加**式更新**] 屬性會出現在 [**屬性**] 視窗中。 根據預設，模型的名稱是 **BdcModel1**。
+ 在某些情況下，您可能會想要 Visual Studio 完全從 SharePoint 撤銷模型。 例如，模型可能會損毀。  若要將模型重新部署至 SharePoint，請將模型的 [累加 **式更新** ] 屬性設定為 [ **False**]，然後啟動偵錯工具。 當您在 **BDC Explorer** 中選取代表模型的節點時，[累加 **式更新**] 屬性會出現在 [**屬性**] 視窗中。 根據預設，模型的名稱是 **BdcModel1**。
 
 ### <a name="change-identifier-names-of-entities-in-the-model"></a>變更模型中實體的識別碼名稱
  如果您在部署模型之後變更識別碼的名稱，可能會收到部署錯誤。 您無法藉由將模型的 [累加 **式更新** ] 屬性設定為 [ **False**] 來解決這個錯誤。 您必須手動撤銷模型，然後重新部署方案。 如需詳細資訊，請參閱 [疑難排解 SharePoint 方案](../sharepoint/troubleshooting-sharepoint-solutions.md)。 您可以在最初部署模型之前，將累加 **式更新** 屬性設為 **False** ，以避免此錯誤。
@@ -111,7 +113,7 @@ ms.locfileid: "72984459"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|標題|說明|
 |-----------|-----------------|
 |[BDC 模型設計工具總覽](../sharepoint/bdc-model-design-tools-overview.md)|描述您可以用來以視覺化方式設計 BDC 模型的工具。|
 |[如何：將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)|示範如何將外部內容類型或實體新增至模型。|
