@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1069fce8c785fa80143f794e8ce083b7c0e86eaf
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: e9d2f546e99f83b4c53d0b76abfdaf8ec91868ac
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400243"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672108"
 ---
 # <a name="require-vscomponent"></a>require-vscomponent
 
@@ -45,7 +45,9 @@ ms.locfileid: "93400243"
 此工具的預設行為 `require-vscomponent` 是尋找 `.vsconfig` 目前目錄中的檔案，並在無訊息模式中以這些詳細資料執行 Visual Studio 安裝程式。 `require-vscomponent` 僅支援修改現有的 Visual Studio 安裝。
 
 ## <a name="example-usage"></a>使用方式範例
+以下是如何使用執行的範例 `require-vscomponent` `.devinit.json` 。 
 
+#### <a name="devinitjson-that-will-import-the-configurations-of-a-given-vsconfig-file-path"></a>.devinit.js，將會匯入指定 .vsconfig 檔案路徑的設定：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
@@ -53,7 +55,6 @@ ms.locfileid: "93400243"
     "run": [
         {
             "tool": "require-vscomponent",
-            "comments": "Imports .vsconfig file which is passed as input to Visual Studio.",
             "input": "C:\\.vsconfig"
         }
     ]

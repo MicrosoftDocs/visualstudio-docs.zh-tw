@@ -1,5 +1,5 @@
 ---
-title: msi-安裝
+title: msi-install
 description: 適用于 msiexec 的 devinit 工具。
 ms.date: 10/13/2020
 ms.topic: reference
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 98667c602272f22e7803647a688ee75d6c6cbd70
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ab56157d531e762ed36f8c2349e50e76596b05ec
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93402247"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672170"
 ---
-# <a name="msi-install"></a>msi-安裝
+# <a name="msi-install"></a>msi-install
 
 此 `msi-install` 工具是用來 `.msi` 使用 [msiexec](https://docs.microsoft.com/windows-server/administration/windows-commands/msiexec)安裝封裝檔案格式。
 
@@ -44,7 +44,7 @@ ms.locfileid: "93402247"
 
 Msi 安裝工具會設定一些 `msiexec` 命令列引數，以確保 msi 可以執行無周邊。 以下列出這些引數，您可以在檔中找到這些引數的相關檔 `msiexec` [ ](https://docs.microsoft.com/windows-server/administration/windows-commands/msiexec)。
 
-| 名稱          | 描述                                                                                                                                                                                   |
+| 名稱          | 說明                                                                                                                                                                                   |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | /i            | 執行正常安裝                                                                                                                                                                    | 
 | /quiet        | 指定無需使用者互動的無訊息模式                                                                                                                                        | 
@@ -54,13 +54,14 @@ Msi 安裝工具會設定一些 `msiexec` 命令列引數，以確保 msi 可以
 | /norestart    | 在安裝完成後停止機器重新開機，但如果需要重新開機，則會傳回3010結束代碼                                                                  | 
 
 ## <a name="example-usage"></a>使用方式範例
+以下是如何使用執行的範例 `msi-install` `.devinit.json` 。 
 
+#### <a name="devinitjson-that-will-install-the-7-zip-msi"></a>將安裝 7-Zip MSI 的 .devinit.js：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-4.0",
     "run": [
         {
-            "comments": "Installs the 7-Zip MSI",
             "tool": "msi-install",
             "input": "https://www.7-zip.org/a/7z1900.msi"
         }

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ec326871f5565ecaabdc8cda369b36df14029414
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 9b6ba2e22484850dd6079cfc7e4ab9cd68371dcb
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399827"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671923"
 ---
 # <a name="enable-iis"></a>enable-iis
 
@@ -45,13 +45,14 @@ ms.locfileid: "93399827"
 此工具的預設行為 `enable-iis` 是啟用 iis 功能： iis-web 伺服器、Iis iis-webserverrole、iis-websocket 和 IIS WebAuthentication，然後安裝包含 ASP.NET Core 模組的最新版 ASP.NET 裝載套件組合。 
 
 ## <a name="example-usage"></a>使用方式範例
+以下是如何使用執行的範例 `enable-iis` `.devinit.json` 。 
 
+#### <a name="devinitjson-that-will-enable-iis-development"></a>.devinit.js，將會啟用 IIS 開發：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0.json",
     "run": [
         {
-            "comments": "Example that will enable IIS features and install the latest ASP.NET hosting bundle.",
             "tool": "enable-iis"
         },
     ]

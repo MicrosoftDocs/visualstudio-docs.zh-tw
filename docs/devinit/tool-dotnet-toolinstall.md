@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 464460d6a33c01e5c53b66e8a03de7aa7f844953
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 85a8beafdc9b19a807becabb459baa5de88169e2
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399650"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672216"
 ---
 # <a name="dotnet-toolinstall"></a>dotnet-toolinstall
 
@@ -47,18 +47,27 @@ ms.locfileid: "93399650"
 工具的預設行為 `dotnet-toolinstall` 是在需要時發生錯誤 `input` 。
 
 ## <a name="example-usage"></a>使用方式範例
+以下是如何使用執行的範例 `dotnet-toolinstall` `.devinit.json` 。 
 
+#### <a name="devinitjson-that-will-install-the-dotnet-trace-tool"></a>.devinit.js將會安裝 dotnet 追蹤工具：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Example that will install the dotnet-trace tool.",
             "tool": "dotnet-toolinstall",
             "input": "dotnet-trace"
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-the-dotnet-trace-tool-as-a-global-tool"></a>.devinit.js，會將 dotnet 追蹤工具安裝為通用工具：
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Example that will install the dotnet-trace tool as a global tool.",
             "tool": "dotnet-toolinstall",
             "input": "dotnet-trace",
             "additionalOptions": "--global"

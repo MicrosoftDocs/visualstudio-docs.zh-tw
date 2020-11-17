@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 42bcb44704c0273c936a763661ec78d232fe7a82
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: a74f45d67c6f2a921d8c5a06bc60abf6f5c76cb9
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400271"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671791"
 ---
 # <a name="require-dotnetframeworksdk"></a>require-dotnetframeworksdk
 
@@ -45,19 +45,28 @@ ms.locfileid: "93400271"
 此工具的預設行為 `require-dotnetframeworksdk` 是安裝最新版本。 如需最新版本，請參閱所 [提供的安裝](https://dotnet.microsoft.com/download/visual-studio-sdks) 程式。
 
 ## <a name="example-usage"></a>使用方式範例
+以下是如何使用執行的範例 `require-dotnetframeworksdk` `.devinit.json` 。 
 
+#### <a name="devinitjson-that-will-install-the-latest-net-framework"></a>.devinit.js，將會安裝最新的 .NET Framework：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Example that will install a specific version of the .NET Framework SDK.",
+            "tool": "require-dotnetframeworksdk"
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-a-specific-version-of-the-net-framework"></a>.devinit.js，會安裝特定版本的 .NET Framework：
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
+        {
             "tool": "require-dotnetframeworksdk",
             "input": "4.8.0"
-        },
-        {
-            "comments": "Example that will install the latest version of the .NET Framework SDK.",
-            "tool": "require-dotnetframeworksdk"
         }
     ]
 }

@@ -1,5 +1,6 @@
 ---
 title: EnableLocationBrowseButton 項目 (Visual Studio 範本)
+description: 瞭解 EnableLocationBrowseButton 元素，以及它如何指定 [新增專案] 對話方塊中的 [流覽] 按鈕是否可用。
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 952053add77de99baeb1a39ede6315604cf6ee06
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 463219218994c9ec1e0f8a5be6e43a0bfd3f5d49
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036648"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671255"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a> (Visual Studio 範本的 EnableLocationBrowseButton 元素) 
 指定是否可在 [**新增專案**] 對話方塊中使用 [**流覽]** 按鈕，讓使用者可以輕鬆地修改儲存新專案的預設目錄。
@@ -47,7 +48,7 @@ ms.locfileid: "90036648"
 
 |項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。

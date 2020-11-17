@@ -1,5 +1,6 @@
 ---
 title: EnableEditOfLocationField 項目 (Visual Studio 範本)
+description: 瞭解 EnableEditOfLocationField 元素，以及它如何指定使用者是否可以編輯 [位置] 欄位。
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fdc6398a5130c2f537c2f1ad6b12f484add42b3
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 46af48bf8bf9f128103767be1aa5fa64968e68f5
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037402"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671294"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a> (Visual Studio 範本的 EnableEditOfLocationField 元素) 
 指定使用者是否可以編輯 [位置] 欄位。
@@ -36,16 +37,16 @@ ms.locfileid: "90037402"
  下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
- 無
+ None
 
 ### <a name="child-elements"></a>子元素
- 無
+ None
 
 ### <a name="parent-elements"></a>父元素
 
 |項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。

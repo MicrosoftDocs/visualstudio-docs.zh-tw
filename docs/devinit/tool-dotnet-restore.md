@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3b868d910218c853526f1f024ff9674a5ce045dd
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 51c6ed6576fefe3853bca7f4250c1884bd364f64
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399847"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671930"
 ---
 # <a name="dotnet-restore"></a>dotnet-restore
 
@@ -45,15 +45,15 @@ ms.locfileid: "93399847"
 工具的預設行為 `dotnet-restore` 是在目前的目錄中執行 ' dotnet restore '。
 
 ## <a name="example-usage"></a>使用方式範例
+以下是如何使用執行的範例 `dotnet-restore` `.devinit.json` 。 
 
+#### <a name="devinitjson-that-will-restore-dependencies-and-tools-of-a-project"></a>.devinit.js將會還原專案的相依性和工具：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
-    "comments": "A sample dot-devinit file that builds the 'kitchen sink'",
     "run": [
         {
             "tool": "dotnet-restore",
-            "comments": "Restores the dependencies and tools of a project using dotnet core.",
             "input": "C:\\app1\\app1.csproj"
         }
     ]

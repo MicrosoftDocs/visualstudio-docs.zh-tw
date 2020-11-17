@@ -1,5 +1,7 @@
 ---
 title: 專案範本 (Visual Studio 專案範本) |Microsoft Docs
+description: 瞭解專案範本的 [專案專案] 元素，以及它如何接受不同的屬性，取決於範本是針對專案或專案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 943f50823892e3cd942709bdcd4556b65c006b58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf2d41fe83b440e2a3b4bfebd4fac6f5d06094a4
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770307"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671320"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>專案範本 (Visual Studio 專案範本) 
 指定包含在專案範本中的檔案。
@@ -50,7 +52,7 @@ ms.locfileid: "85770307"
 
 ### <a name="attributes"></a>屬性
 
-| 屬性 | 描述 |
+| 屬性 | 說明 |
 |---------------------| - |
 | `TargetFileName` | 選擇性屬性。<br /><br /> 指定從範本建立專案時，專案專案的名稱和路徑。 這個屬性可用來建立與範本 *.zip* 檔中目錄結構不同的目錄結構，或是使用參數取代來建立專案名稱。 |
 | `ReplaceParameters` | 選擇性屬性。<br /><br /> 布林值，指定專案是否有在從範本建立專案時必須取代的參數值。 預設值為 `false`。 |
@@ -71,12 +73,12 @@ ms.locfileid: "85770307"
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- `string`，代表範本 *.zip*檔中檔案的名稱或路徑。
+ `string`，代表範本 *.zip* 檔中檔案的名稱或路徑。
 
 ## <a name="remarks"></a>備註
  `ProjectItem` 是的選擇性子系 `Project` 。
 
- `TargetFileName`屬性可以用來建立與範本 *.zip*檔中目錄結構不同的目錄結構。 例如，如果*myfile.txt*檔案的根目錄中有檔案，但您想要將 *.zip*檔案放在所有從範本建立的專案中名為*CustomFiles*的目錄，您會使用下列 XML：
+ `TargetFileName`屬性可以用來建立與範本 *.zip* 檔中目錄結構不同的目錄結構。 例如，如果 *myfile.txt* 檔案的根目錄中有檔案，但您想要將 *.zip* 檔案放在所有從範本建立的專案中名為 *CustomFiles* 的目錄，您會使用下列 XML：
 
 ```xml
 <ProjectItem TargetFileName="CustomFiles\MyFile.vb">MyFile.vb</ProjectItem>
@@ -84,7 +86,7 @@ ms.locfileid: "85770307"
 
  `TargetFileName`屬性也可以用來重新命名在其檔案名中包含國際字元的檔案。 例如，範本 *.zip* 檔案不能包含 Unicode 字元的檔案名，因此必須重新命名檔案，才能將它壓縮成 *.zip* 檔案。 `TargetFileName`屬性可以用來將檔案名設回原始的 Unicode 檔案名。
 
- `TargetFileName`屬性也可以用來以參數重新命名檔案。 下列程式說明如何將副檔名為 *.zip*的根目錄中的*myfile.txt*檔案，重新命名為以專案名稱為基礎的檔案名。
+ `TargetFileName`屬性也可以用來以參數重新命名檔案。 下列程式說明如何將副檔名為 *.zip* 的根目錄中的 *myfile.txt* 檔案，重新命名為以專案名稱為基礎的檔案名。
 
 ### <a name="to-rename-files-with-parameters"></a>使用參數重新命名檔案
 

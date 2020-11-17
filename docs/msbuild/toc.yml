@@ -6,6 +6,8 @@
       href: whats-new-msbuild-16-0.md
     - name: MSBuild 15.0 的新功能
       href: what-s-new-in-msbuild-15-0.md
+    - name: 變更波浪
+      href: change-waves.md
     - name: MSBuild 概念
       items:
         - name: 總覽

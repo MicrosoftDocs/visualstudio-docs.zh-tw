@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 222e1af34c759f4bf0fbac61f03a38ba8a24ffbe
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 6a9559da218912b6e045c174b7ed20a60f93062e
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400250"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671743"
 ---
 # <a name="require-vcpkg"></a>require-vcpkg
 
@@ -45,13 +45,14 @@ ms.locfileid: "93400250"
 工具的預設行為 `require-vcpkg` 是安裝 vcpkg，並將它新增至 (Windows) 的路徑。
 
 ## <a name="example-usage"></a>使用方式範例
+以下是如何使用執行的範例 `require-vcpkg` `.devinit.json` 。 
 
+#### <a name="devinitjson-that-will-install-vcpkg"></a>.devinit.js將會安裝 vcpkg：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Installs vcpkg.",
             "tool": "require-vcpkg"
         }
     ]

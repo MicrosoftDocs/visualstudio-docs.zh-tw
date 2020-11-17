@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的 PreviewImage 元素) |Microsoft Docs"
+description: 瞭解 PreviewImage 元素，以及它如何指定將出現在 [新增專案] 或 [加入新專案] 對話方塊中的預覽影像檔案名。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f20cfe5f3ef35b23a52972ef1e3b7d9d4adc5a39
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 326588259203224d3f70b505af8437af22930faa
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702011"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672342"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a> (Visual Studio 範本的 PreviewImage 元素) 
 針對將出現在 [ **新增專案** ] 或 [ **加入新專案** ] 對話方塊中的預覽影像，指定預覽影像（以檔案名表示）。

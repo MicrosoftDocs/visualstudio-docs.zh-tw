@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的 BuildProjectOnload 元素) |Microsoft Docs"
+description: 瞭解 BuildProjectOnload 元素，以及它如何在您建立新專案時建立新專案，並將其新增至方案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdf4256b2fb376fc063eb330d47c843c1ff8820b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739965"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671588"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a> (Visual Studio 範本的 BuildProjectOnload 元素) 
 建立新的專案，並將其新增至方案。 整個方案都不會建立。

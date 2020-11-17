@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 6e3d2fdaf6be019cae504d4f71258d410d232ff5
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 9ed1cc5379cc28c3932c96271fda27e23f4cd27c
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400202"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672003"
 ---
 # <a name="windowsfeature-enable"></a>windowsfeature-enable
 
@@ -43,28 +43,53 @@ ms.locfileid: "93400202"
 此工具的預設行為 `windowsfeature-enable` 是「錯誤」（ `input` required）。
 
 ## <a name="example-usage"></a>使用方式範例
+以下是如何使用執行的範例 `windowsfeature-enable` `.devinit.json` 。 
 
+#### <a name="devinitjson-that-will-install-iis"></a>.devinit.js將會安裝 IIS：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Installs IIS.",
             "tool": "windowsfeature-enable",
             "input": "web-server",
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-the-net-framework"></a>將會安裝 .NET Framework 的 .devinit.js：
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Installs the .NET Framework 3.5.",
             "tool": "windowsfeature-enable",
             "input": "net-framework-features"
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-the-net-framework-45"></a>.devinit.js將會安裝 .NET Framework 4.5：
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Installs the .NET Framework 4.5.",
             "tool": "windowsfeature-enable",
             "input": "net-framework-45-features"
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-the-windows-subsystem-for-linux-20"></a>.devinit.js將會安裝 Windows 子系統 Linux 版2.0：
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Installs Windows Subsystem for Linux 2.0.",
             "tool": "windowsfeature-enable",
             "input": "Microsoft-Windows-Subsystem-Linux"
         }

@@ -945,7 +945,7 @@
       displayName: 'marketplace, gallery, vsix'
     - name: 管理外部工具
       href: ide/managing-external-tools.md
-    - name: 個人化帳戶
+    - name: 管理帳戶
       items:
         - name: 登入 Visual Studio
           displayName: personalization accounts
@@ -954,6 +954,8 @@
           href: ide/work-with-multiple-user-accounts.md
         - name: 使用需要多重要素驗證的帳戶
           href: ide/work-with-multi-factor-authentication.md
+        - name: 在 Visual Studio 中使用 GitHub 帳戶
+          href: ide/work-with-github-accounts.md
         - name: 延長試用版或更新授權
           href: ide/how-to-unlock-visual-studio.md
     - name: 調整 Visual Studio 的效能

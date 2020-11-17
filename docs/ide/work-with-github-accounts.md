@@ -10,26 +10,26 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: d0575abb528810e714dbe747b46db986dc3ce6e1
-ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
+ms.openlocfilehash: cdea71e2d5c376e465bb5cdb990ec7ed45caa1f3
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631602"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672355"
 ---
 # <a name="work-with-github-accounts-in-visual-studio"></a>在 Visual Studio 中使用 GitHub 帳戶
 
-如果您有公用 GitHub 或 GitHub enterprise 帳戶，您可以將它新增至您的 Visual Studio keychain。 新增您的帳戶之後，您就可以直接從 Visual Studio 存取和建立 GitHub 儲存機制，以利用平臺整合。  
+如果您有公用 GitHub 或 GitHub Enterprise 帳戶，您可以將它新增至您的 Visual Studio keychain。 新增您的帳戶之後，您就可以直接從 Visual Studio 存取和建立 GitHub 儲存機制，以利用平臺整合。  
 
 ## <a name="adding-public-github-accounts"></a>新增公用 GitHub 帳戶
 
 如果您已使用 Microsoft 帳戶或工作或學校帳戶登入 Visual Studio，則可以新增您的公用 GitHub 帳戶。
 
-1. 在 Visual Studio 環境的右上角選取具有您姓名縮寫的圖示。 然後，選取 [ **帳戶設定** ]，以管理您的帳戶。 您也可以前往 [檔案 **File**  >  **帳戶設定** ] 開啟 [帳戶設定] 對話方塊。
+1. 在 Visual Studio 環境的右上角選取具有您姓名縮寫的圖示。 然後，選取 [ **帳戶設定** ]，以管理您的帳戶。 您也可以前往 [檔案 **File**  >  **帳戶設定**] 開啟 [帳戶設定] 對話方塊。
 
     :::image type="content" source="../ide/media/account-picker.png" alt-text="帳戶設定":::
 
-2. 在 [ **所有帳戶** ] 子功能表下，選取加號以新增帳戶，然後選取 [ **GitHub** ]。
+2. 在 [ **所有帳戶** ] 子功能表下，選取加號以新增帳戶，然後選取 [ **GitHub**]。
 
     :::image type="content" source="../ide/media/sign-in-add-github.png" alt-text="選取 [新增 GitHub 帳戶]":::
 
@@ -41,7 +41,7 @@ ms.locfileid: "94631602"
 
     :::image type="content" source="../ide/media/show-both-accounts.png" alt-text="這兩個帳戶顯示":::
 
-如果您尚未使用不同的帳戶登入 Visual Studio，請選取 Visual Studio 環境右上角的 [登 **入** ] 連結。 您也可以前往 [檔案 **File**  >  **帳戶設定** ] 開啟 [帳戶設定] 對話方塊。 然後，遵循上面的指示來新增您的 GitHub 帳戶。
+如果您尚未使用不同的帳戶登入 Visual Studio，請選取 Visual Studio 環境右上角的 [登 **入** ] 連結。 您也可以前往 [檔案 **File**  >  **帳戶設定**] 開啟 [帳戶設定] 對話方塊。 然後，遵循上面的指示來新增您的 GitHub 帳戶。
 
 ![未登入使用者](../ide/media/vs2019_usernotsignedin.png)
 
@@ -49,7 +49,7 @@ ms.locfileid: "94631602"
 
 根據預設，Visual Studio 只會啟用公用 GitHub 帳戶。
 
-1. 若要啟用 GitHub enterprise 帳戶，請移至 [ **工具**  >  **選項** ]，並搜尋 **帳戶** 選項。
+1. 若要啟用 GitHub enterprise 帳戶，請移至 [**工具**  >  **選項**]，並搜尋 **帳戶** 選項。
 
     :::image type="content" source="../ide/media/accounts-options.png" alt-text="帳戶選項功能表":::
 
@@ -57,7 +57,7 @@ ms.locfileid: "94631602"
 
     :::image type="content" source="../ide/media/github-enterprise-endpoint-signin.png" alt-text="使用 GitHub Enterprise 登入":::
 
-3. 輸入您的 GitHub Enterprise 伺服器位址後，請選取 [ **使用您的瀏覽器登入** ]。 您可以使用 GitHub Enterprise 認證登入。
+3. 輸入您的 GitHub Enterprise 伺服器位址後，請選取 [ **使用您的瀏覽器登入**]。 您可以使用 GitHub Enterprise 認證登入。
 
 ## <a name="see-also"></a>另請參閱
 

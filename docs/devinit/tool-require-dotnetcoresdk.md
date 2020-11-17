@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 5c5b68b663d6ee4cd0294aa77bd89c2e778f8d2b
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: b75f7961008c8b575cd21b42fdb5246c3b65078d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399603"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672136"
 ---
 # <a name="require-dotnetcoresdk"></a>require-dotnetcoresdk
 
@@ -48,28 +48,53 @@ ms.locfileid: "93399603"
 工具的預設行為 `require-dotnetcoresdk` 是在 `global.json` 目前的工作目錄中安裝 [ (檔) ](/dotnet/core/tools/global-json?tabs=netcore3x) 檔案中指定的 .NET Core SDK 版本。 如果找不到任何檔案 `global.json` ，則 `require-dotnetcoresdk` 會安裝最新版本的 .NET Core SDK 和共用執行時間。
 
 ## <a name="example-usage"></a>使用方式範例
+以下是如何使用執行的範例 `require-dotnetcoresdk` `.devinit.json` 。 
 
+#### <a name="devinitjson-that-will-install-the-latest-version-of-net-core"></a>.devinit.js將會安裝最新版本的 .NET Core：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Example that will trigger the Default behavior of installing latest or, if present, the SDK version from a global.json file.",
             "tool": "require-dotnetcoresdk"
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-a-specific-version-of-net-core"></a>.devinit.js在上會安裝特定版本的 .NET Core：
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Example that will install a specific version.",
             "tool": "require-dotnetcoresdk",
             "input": "3.0.0"
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-a-specific-version-of-net-core-and-aspnet-core"></a>.devinit.js將會安裝特定版本的 .NET Core 和 ASP.NET Core：
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Example that will install a specific version and the aspnetcore runtime.",
             "tool": "require-dotnetcoresdk",
             "input": "3.0.0",
             "additionalOptions": "-Runtime aspnetcore"
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-net-core-in-a-specific-directory"></a>.devinit.js，會在特定目錄中安裝 .NET Core：
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Example that will install in a specific directory.",
             "tool": "require-dotnetcoresdk",
             "additionalOptions": "-InstallDir \"C:\\Program Files\\dotnet\""
         }

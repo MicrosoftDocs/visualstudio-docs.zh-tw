@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的 CreateInPlace 元素) "
+description: 瞭解 CreateInPlace 元素，以及它如何指定是否要建立專案，並在特定或暫存位置執行參數取代。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51348e8304b67314ffd19d0aec15d43d904ee651
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739656"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671978"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a> (Visual Studio 範本的 CreateInPlace 元素) 
 指定是否要在指定的位置建立專案並執行參數取代，或在暫存位置中執行參數取代，然後將專案儲存至指定的位置。
@@ -46,7 +48,7 @@ ms.locfileid: "80739656"
 
 |項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。

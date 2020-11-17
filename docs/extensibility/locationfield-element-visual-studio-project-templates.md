@@ -1,6 +1,8 @@
 ---
 title: LocationField 項目 (Visual Studio 專案範本)
 titleSuffix: ''
+description: 瞭解 LocationField 元素，以及它如何指定專案範本的 [新增專案] 對話方塊位置文字方塊是否已啟用、停用或隱藏。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9aafe51669bcc95d6024b5a3fd749ba70ea8ddc7
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 3f3febc5a47288225d1780ba4579dad243c1ea45
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739134"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671268"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a> (Visual Studio 專案範本的 LocationField 元素) 
 指定是否針對專案範本啟用、停用或隱藏 [**新增專案**] 對話方塊中的 [**位置**] 文字方塊。
@@ -46,7 +48,7 @@ ms.locfileid: "89739134"
 
 |項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義它在 **新專案**中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義它在 **新專案** 中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。

@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的 Description 元素) |Microsoft Docs"
+description: 瞭解 Description 元素，以及它如何指定範本在 [新增專案] 或 [加入新專案] 對話方塊中顯示的描述。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ea10b43662d2818792dbc57aeac09a056cb63ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f244fb6d681c9cc22416422be3ade098c67deea
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712251"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671281"
 ---
 # <a name="description-element-visual-studio-templates"></a> (Visual Studio 範本的 Description 元素) 
 在 [ **新增專案** ] 或 [ **加入新** 專案] 對話方塊中，指定範本的描述。
@@ -41,7 +43,7 @@ ms.locfileid: "80712251"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|描述|
+|屬性|說明|
 |---------------|-----------------|
 |`Package`|選擇性的屬性，適用于先進的使用者案例。<br /><br /> 指定 Visual Studio 套件識別碼的 GUID。|
 |`ID`|選擇性的屬性，適用于先進的使用者案例。<br /><br /> 指定 Visual Studio 資源識別碼。|
@@ -53,7 +55,7 @@ ms.locfileid: "80712251"
 
 |項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  除非使用 `Package` 和 `ID` 屬性，否則需要文字值。

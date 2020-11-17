@@ -1,5 +1,8 @@
 ---
 title: 元件元素 (Visual Studio 範本) |Microsoft Docs
+titleSuffix: ''
+description: 瞭解 Assembly 元素，以及它如何指定元件的相關資訊，範本會使用此元件將該元件的參考加入至專案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c80044657b16448ba4567fff839274226985fa14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4115e999cc061be53ba437a090f207046f71ef8
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740041"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671642"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>元件元素 (Visual Studio 範本) 
 指定元件的相關資訊，範本會使用此元件將該元件的參考加入至專案。
@@ -72,7 +75,7 @@ ms.locfileid: "80740041"
 ## <a name="remarks"></a>備註
  `Assembly` 是 `Reference` 的必要子項目。
 
- `Reference`、 `References,` 和 `Assembly` 元素只能用在具有屬性值*的 .vstemplate*檔案中 `Type` `Item` 。
+ `Reference`、 `References,` 和 `Assembly` 元素只能用在具有屬性值 *的 .vstemplate* 檔案中 `Type` `Item` 。
 
 ## <a name="example"></a>範例
  下列範例說明 `TemplateContent` 專案範本的元素。 這個 XML 會將參考加入 *System.dll* 和 *System.Data.dll* 元件。

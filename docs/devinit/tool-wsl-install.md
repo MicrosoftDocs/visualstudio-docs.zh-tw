@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ab63b5feb8c71659b83e824f104dd7bbcbb744f9
-ms.sourcegitcommit: 62f91179f2c3a51c85dd7b0e6172a3a53393fb7e
+ms.openlocfilehash: 4cbb30842ebbed148b2aea80f941a738d18ae262
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94567010"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671970"
 ---
 # <a name="wsl-install"></a>wsl-install
 
@@ -66,24 +66,41 @@ AppX 應用程式散發封裝的 URI (`.appx`) 包含要部署的發行版本。
 工具的預設行為 `wsl-install` 是因為 `input` 屬性（必須要安裝的發行版本）而發生錯誤。
 
 ## <a name="example-usage"></a>使用方式範例
+以下是如何使用執行的範例 `wsl-install` `.devinit.json` 。 
 
+#### <a name="devinitjson-that-will-install-ubuntu-2004"></a>.devinit.js將安裝 Ubuntu 20.04：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Example that will install Ubuntu 20.04.",
             "tool": "wsl-install",
             "input": "https://aka.ms/wslubuntu2004"
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-ubuntu-2004-and-perform-a-post-create-command"></a>.devinit.js將會安裝 Ubuntu 20.04 並執行 post create 命令：
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Example that will install Ubuntu 20.04 using WSL2, and echo 'Hello from Ubuntu!' after installing.",
             "tool": "wsl-install",
             "input": "https://aka.ms/wslubuntu2004",
             "additionalOptions": "--wsl-version 2 --post-create-command 'echo Hello from Ubuntu!'"
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-ubuntu-2004-and-perform-a-post-create-command-that-configures-the-packages-listed"></a>.devinit.js將會安裝 Ubuntu 20.04，並執行可設定所列出套件的 post create 命令：
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Example that will install Ubuntu 20.04 using WSL2, and configure it with various packages.",
             "tool": "wsl-install",
             "input": "https://aka.ms/wslubuntu2004",
             "additionalOptions": "--wsl-version 2 --post-create-command 'apt-get update && apt-get install g++ gcc g++-9 gcc-9 cmake gdb ninja-build zip rsync -y'"

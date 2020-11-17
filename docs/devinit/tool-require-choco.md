@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 9ebae66a593f2e27be3afee77ab2156b426d740f
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: d9ecd12a36621ab2a21f94014d6a0fd13568609b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400278"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671876"
 ---
 # <a name="require-choco"></a>require-choco
 
@@ -45,13 +45,14 @@ ms.locfileid: "93400278"
 工具的預設行為 `require-choco` 是安裝 chocolatey，並將它新增至 (Windows) 的路徑。
 
 ## <a name="example-usage"></a>使用方式範例
+以下是如何使用執行的範例 `require-choco` `.devinit.json` 。 
 
+#### <a name="devinitjson-that-will-install-chocolatey"></a>.devinit.js將會安裝 chocolatey：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Installs chocolatey.",
             "tool": "require-choco"
         }
     ]

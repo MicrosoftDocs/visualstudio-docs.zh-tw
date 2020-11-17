@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 39d30b08e4ca3ba3a3e355fdf123f3a05055c358
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 7db97694e129fe5c70de09aaf4c132656ae00746
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399664"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672223"
 ---
 # <a name="choco-upgrade"></a>choco-upgrade
 
@@ -34,7 +34,7 @@ ms.locfileid: "93399664"
 
 ### <a name="input"></a>輸入
 
-`input`屬性可用來指定要升級的封裝名稱 (例如 ' mongodb ' ) 或下列格式的設定檔路徑 _packages.config_ 、 _nuspec_ 和 _. nupkg_ 。 的值 `input` 將會附加至 `choco upgrade` 命令 (例如 `choco upgrade mongodb`) ，以及中特定的任何引數 [`additionalOptions`](#additional-options) ，以及下列) 所定義的內建 `choco` 選項 (。 [below](#built-in-options) 您可以在 [Chocolatey 封裝資源庫](https://chocolatey.org/packages)中找到套件。 使用設定檔時，您可以傳入屬性中該檔案的路徑， `input` 例如： `"input":"packages.config"` 。
+`input`屬性可用來指定要升級的封裝名稱 (例如 ' mongodb ' ) 或下列格式的設定檔路徑 _packages.config_、 _nuspec_ 和 _. nupkg_。 的值 `input` 將會附加至 `choco upgrade` 命令 (例如 `choco upgrade mongodb`) ，以及中特定的任何引數 [`additionalOptions`](#additional-options) ，以及下列) 所定義的內建 `choco` 選項 (。 [below](#built-in-options) 您可以在 [Chocolatey 封裝資源庫](https://chocolatey.org/packages)中找到套件。 使用設定檔時，您可以傳入屬性中該檔案的路徑， `input` 例如： `"input":"packages.config"` 。
 
 ### <a name="additional-options"></a>其他選項
 
@@ -44,30 +44,47 @@ ms.locfileid: "93399664"
 
 此 `choco-upgrade` 工具會設定一些 `choco` 命令列引數，以確保 `choco` 可執行無周邊。 以下列出這些引數，您可以在 [chocolatey 檔](https://chocolatey.org/docs/)中找到這些引數的相關檔。
 
-| 名稱                  | 描述                                                                                        |
+| 名稱                  | 說明                                                                                        |
 |-----------------------|----------------------------------------------------------------------------------------------------|
 | **--是**             | 確認所有提示-選擇肯定答案而非提示。 意指 `--accept-license` 。 |
 | **--沒有進度**     | 不要顯示進度-不會顯示進度百分比。                                         |
 | **--skip-powershell** | 略過 PowerShell-chocolateyInstall.ps1 將不會執行。                                              |
 
 ## <a name="example-usage"></a>使用方式範例
+以下是如何使用執行的範例 `choco-upgrade` `.devinit.json` 。 
 
+#### <a name="devinitjson-that-will-update-packages-listed-in-packagesconfig"></a>.devinit.js，將會更新 packages.config 中所列的套件：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Example that will trigger the Default behavior of upgrading packages listed in a packages.config file.",
             "tool": "choco-upgrade",
             "input": "packages.config",
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-upgrade-mongodb"></a>將升級 MongoDB 的 .devinit.js：
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Example that will upgrade the package 'mongodb'.",
             "tool": "choco-upgrade",
             "input": "mongodb"
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-upgrade-to-a-specific-version-of-mongodb"></a>.devinit.js將會升級至特定版本的 MongoDB：
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Example that will upgrade the '4.2.7' version of 'mongodb'.",
             "tool": "choco-upgrade",
             "input": "mongodb",
             "additionalOptions": "--version 4.2.7"

@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的 ProjectSubType 元素) |Microsoft Docs"
+description: 深入瞭解 ProjectSubType 元素，以及它如何將範本分類為 ProjectType 元素中指定之值的子類別。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27396ad1bcc4e181b2b8cecd6ca863db2412630d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ceecbf1bfb750244a13c641906f7a8712d01d69
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701837"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672316"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a> (Visual Studio 範本的 ProjectSubType 元素) 
 將範本分類為元素中指定之值的子類別 `ProjectType` 。
@@ -46,7 +48,7 @@ ms.locfileid: "80701837"
 
 |項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。

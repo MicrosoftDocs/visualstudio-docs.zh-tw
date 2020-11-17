@@ -1,5 +1,7 @@
 ---
 title: 專案範本 (Visual Studio 專案範本) |Microsoft Docs
+description: 瞭解專案範本的 [專案專案] 元素，以及它如何接受不同的屬性，取決於範本是針對專案或專案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 885d0fbb50204f23a30fa43c1ffad45c9d67f829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 431f1d5f81827b47b57a53dbe411a2a7e8a57941
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770723"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672329"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 項目 (Visual Studio 項目範本)
 指定包含在專案範本中的檔案。
@@ -48,7 +50,7 @@ ms.locfileid: "85770723"
 
 ### <a name="attributes"></a>屬性
 
-| 屬性 | 描述 |
+| 屬性 | 說明 |
 |---------------------| - |
 | `SubType` | 選擇性屬性。<br /><br /> 指定多檔案專案範本中專案的子類型。 此值可用來判斷 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 將用來開啟專案的編輯器。 |
 | `CustomTool` | 選擇性屬性。<br /><br /> 設定專案檔中專案的 CustomTool。 |
@@ -68,7 +70,7 @@ ms.locfileid: "85770723"
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- `string`，表示範本 *.zip*檔中的檔案名。
+ `string`，表示範本 *.zip* 檔中的檔案名。
 
 ## <a name="remarks"></a>備註
  `ProjectItem` 是的選擇性子系 `TemplateContent` 。

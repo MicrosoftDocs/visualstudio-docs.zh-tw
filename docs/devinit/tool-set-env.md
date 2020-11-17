@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b1299686c086feda0c51689d72a676ddc4ff00dc
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ce3876884061246d8ac1dbc1b211766903ea840a
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400236"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671736"
 ---
 # <a name="set-env"></a>set-env
 
@@ -51,53 +51,97 @@ ms.locfileid: "93400236"
 
 ## <a name="usage-in-a-codespace"></a>Codespace 中的使用方式
 
-如果您使用的是 codespace，可以透過 customizating 檔案中的屬性，來設定 codespace 中使用的環境變數 `remoteEnv` [`.devcontainer.json`](/visualstudio/codespaces/reference/configuring) 。
+如果您使用的是 codespace，可以透過自訂檔案中的屬性，來設定 codespace 中使用的環境變數 `remoteEnv` [`.devcontainer.json`](/visualstudio/codespaces/reference/configuring) 。
 
 ## <a name="example-usage"></a>使用方式範例
+以下是如何使用執行的範例 `set-env` `.devinit.json` 。 
 
+#### <a name="devinitjson-that-will-set-an-environment-variable-foo-to-value-bar"></a>.devinit.js，將會設定環境變數， `foo` 並將其設定為值 `bar` ：
 ```json
 {
   "$schema": "https://json.schemastore.org/devinit.schema-3.0",
-  "comments": "A sample dot-devinit file demonstrating the set-env tool.",
   "run": [
     {
       "tool": "set-env",
       "input": "foo=bar",
-      "comments": "To set an environment variable, set input to 'name=value'."
-    },
+    }
+  ]
+}
+```
+
+#### <a name="devinitjson-that-will-display-the-value-of-an-environment-variable"></a>.devinit.js，會顯示環境變數的值：
+```json
+{
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+  "run": [
     {
       "tool": "set-env",
       "input": "foo",
-      "comments": "To display the value of a single environment variable, set input to the name of the variable."
-    },
+    }
+  ]
+}
+```
+
+#### <a name="devinitjson-that-will-list-all-the-environment-variables"></a>.devinit.js，將會列出所有環境變數：
+```json
+{
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+  "run": [
     {
       "tool": "set-env",
-      "comments": "To list all environment variables, pass no input."
-    },
+    }
+  ]
+}
+```
+
+#### <a name="devinitjson-that-will-delete-an-environment-variable"></a>.devinit.js將會刪除環境變數：
+```json
+{
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+  "run": [
     {
       "tool": "set-env",
       "input": "foo=",
-      "comments": "To delete an environment variable, pass input of 'name='."
-    },
-    {
-      "tool": "set-env",
-      "input": "foo",
-      "comments": "Trying to display a variable that doesn't exist results in a warning."
-    },
+    }
+  ]
+}
+```
+
+
+#### <a name="devinitjson-that-will-use-environment-variable-expansion"></a>將使用環境變數展開的 .devinit.json：
+```json
+{
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+  "run": [
     {
       "tool": "set-env",
       "input": "_savedPath=%path%",
-      "comments": "Envrionment variable expansion is supported."
-    },
+    }
+  ]
+}
+```
+
+#### <a name="devinitjson-that-will-set-an-environment-variable-value-using-path-manipulation"></a>.devinit.js，會使用路徑操作設定環境變數值：
+```json
+{
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+  "run": [
     {
       "tool": "set-env",
       "input": "path=%path%;%userprofile%\\CustomFolder",
-      "comments": "Shows path manipulation. Note: Variables set here are not persisted."
-    },
+    }
+  ]
+}
+```
+
+#### <a name="devinitjson-that-will-restore-path-from-saved-copy"></a>.devinit.js，將從儲存的複本還原路徑：
+```json
+{
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+  "run": [
     {
       "tool": "set-env",
       "input": "path=%_savedPath%",
-      "comments": "Restore path from saved copy."
     }
   ]
 }

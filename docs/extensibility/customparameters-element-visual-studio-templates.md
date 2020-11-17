@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的 CustomParameters 元素) |Microsoft Docs"
+description: 瞭解 CustomParameters 元素，以及當 wizard 進行參數取代時，如何將傳遞給範本嚮導的自訂參數分組。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f524996c226f001c68ddc7ac9aa8cb3b99857fc5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c78c8a038df33d9b548229966402d0058f53144
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739417"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671475"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a> (Visual Studio 範本的 CustomParameters 元素) 
 當 wizard 進行參數取代時，將要傳遞給範本嚮導的自訂參數分組。

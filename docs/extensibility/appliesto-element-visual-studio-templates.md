@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的 AppliesTo 元素) |Microsoft Docs"
+description: 深入瞭解 AppliesTo 元素，以及它如何指定選擇性運算式來比對一或多項功能。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39b5ee1e3cad0b4d8ddbe0fc2dfa1c2d478ec063
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fca9f6550a066d3f3e0e46514a15d9ff14cb66c
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740081"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671697"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a> (Visual Studio 範本的 AppliesTo 元素) 
 

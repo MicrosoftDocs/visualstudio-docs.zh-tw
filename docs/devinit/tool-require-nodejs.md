@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 6ba6b5a53c6b6f1c67c957c55a612cbe461b108c
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 3da6bd121aff31c680bea2c4655ee2250f5edb05
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400264"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671784"
 ---
 # <a name="require-nodejs"></a>require-nodejs
 
@@ -45,17 +45,26 @@ ms.locfileid: "93400264"
 此工具的預設行為 `require-nodejs` 是安裝最新的 LTS 版本的節點，如 Node.JS [網站](https://nodejs.org/en/download/)中所述。
 
 ## <a name="example-usage"></a>使用方式範例
+以下是如何使用執行的範例 `require-nodejs` `.devinit.json` 。 
 
+#### <a name="devinitjson-that-will-install-the-lts-of-nodejs"></a>.devinit.js將會安裝 Node.js 的 LTS：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Example that will trigger the Default behavior of installing latest LTS of Node.JS.",
             "tool": "require-nodejs"
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-a-specific-version-of-nodejs"></a>.devinit.js將會安裝特定版本的 Node.js：
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Example that will install a specific version.",
             "tool": "require-nodejs",
             "input": "14.4.0"
         }

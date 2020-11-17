@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 30bd66310f386a920b20522f59e54d586e3d3af1
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 6e10887e09c329a241aab7f18c6170c873705fbf
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400229"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672049"
 ---
 # <a name="vcpkg-install"></a>vcpkg-install
 
@@ -45,18 +45,28 @@ ms.locfileid: "93400229"
 此工具的預設行為 `vcpkg-install` 是「錯誤」（ `input` required）。
 
 ## <a name="example-usage"></a>使用方式範例
+以下是如何使用執行的範例 `vcpkg-install` `.devinit.json` 。 
 
+#### <a name="devinitjson-that-will-install-the-sdl2-port"></a>.devinit.js將會安裝 sdl2 埠：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Installs the sdl2 port.",
             "tool": "vcpkg-install",
             "input": "sdl2",
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-multiple-ports"></a>會安裝多個埠的 .devinit.js：
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
+
         {
-            "comments": "Installs the sdl2 and sqlite3 ports.",
             "tool": "vcpkg-install",
             "input": "sdl2 sqlite3"
         }

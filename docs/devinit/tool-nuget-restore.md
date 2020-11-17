@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: be31cb2c4c1e71b2e49928488b1cb061d41033a9
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 7d797e744b651eafd629ec83f20478f0142864e6
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399630"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672163"
 ---
 # <a name="nuget-restore"></a>nuget-restore
 
@@ -45,15 +45,15 @@ ms.locfileid: "93399630"
 此工具的預設行為 `nuget-restore` 是在目前的目錄中執行「NuGet 還原」。
 
 ## <a name="example-usage"></a>使用方式範例
+以下是如何使用執行的範例 `nuget-restore` `.devinit.json` 。 
 
+#### <a name="devinitjson-that-will-restore-dependencies-and-tools-of-a-project"></a>.devinit.js將會還原專案的相依性和工具：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
-    "comments": "A sample dot-devinit file that restores NuGet pacakges.",
     "run": [
         {
             "tool": "nuget-restore",
-            "comments": "Restores the dependencies and tools of a project using nuget restore.",
             "input": "C:\\nuget\\Nuget.config"
         }
     ]

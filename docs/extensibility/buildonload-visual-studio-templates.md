@@ -1,6 +1,7 @@
 ---
 title: " (Visual Studio 範本的 BuildOnLoad 屬性和元素) "
 titleSuffix: ''
+description: 瞭解 BuildOnLoad 屬性和元素，以及它如何指定是否要在建立專案之後立即建立專案。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f411f918352391387e5c3b34eafeb209df3118b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 37df139f890a7717287db675a3a4b7e4b250dbf3
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036856"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671601"
 ---
 # <a name="buildonload-attribute-and-element"></a>BuildOnLoad 屬性和元素
 
@@ -45,11 +46,11 @@ ms.locfileid: "90036856"
 
 |項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
 
-**BuildOnLoad**元素需要文字值。 文字必須是 `true` 或 `false` ，指出是否要在建立專案之後立即建立專案。
+**BuildOnLoad** 元素需要文字值。 文字必須是 `true` 或 `false` ，指出是否要在建立專案之後立即建立專案。
 
 ## <a name="remarks"></a>備註
 
