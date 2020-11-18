@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a9bf479796db1b23a204050c941650c3c20dd6aa
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: de5027024956c03341ac3e2d851bf85430f48f18
+ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438267"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94878292"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -33,9 +33,9 @@ ms.locfileid: "94438267"
 
 以下是最新功能的概要回顧：
 
-* **[開發](#develop)** ：利用改良的效能、即時程式碼清除及更好的搜尋結果，保持焦點和生產力。
+* **[開發](#develop)**：利用改良的效能、即時程式碼清除及更好的搜尋結果，保持焦點和生產力。
 * **[共同](#collaborate)** 作業：透過 Git 優先工作流程、即時編輯和偵錯工具，以及直接在 Visual Studio 中進行程式碼審核，享受自然的共同作業。
-* **[Debug](#debug)** ：反白顯示並流覽至特定值、優化記憶體使用量，以及取得應用程式執行的自動快照集。
+* **[Debug](#debug)**：反白顯示並流覽至特定值、優化記憶體使用量，以及取得應用程式執行的自動快照集。
 
 如需此版本中所有新功能的完整清單，請參閱[版本資訊](/visualstudio/releases/2019/release-notes/)。
 
@@ -49,7 +49,7 @@ ms.locfileid: "94438267"
 
 先前稱為「快速啟動」，新的搜尋體驗將更快速且更有效。 現在，搜尋結果會隨著您的鍵入以動態方式顯示。 此外，搜尋結果通常會包含命令的鍵盤快速鍵，讓您輕鬆記憶，以便日後使用。
 
-   ![Visual Studio 2019 中的新搜尋體驗動畫](media/vs-2019/new-search-feature.gif)
+   ![Visual Studio 2019 中的新搜尋體驗動畫](media/vs-2019/new-search-feature.gif "Visual Studio 2019 中的新搜尋體驗。")
 
 無論有無錯字，新的模糊搜尋邏輯都能找出您所需的任何項目。 因此，不論您要尋找命令、設定、文件或其他使用項目，新搜尋功能可讓您更輕鬆找到您要尋找的內容。
 
@@ -57,15 +57,15 @@ ms.locfileid: "94438267"
 
 C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的程式碼。 它們顯示為燈泡中的建議，且包含動作，如將成員移動至介面或基底類別、調整命名空間以符合資料夾結構、將 foreach 迴圈轉換為 Linq 查詢等等。
 
-   ![Visual Studio 2019 中的重構體驗動畫](media/vs-2019/refactorings.gif)
+   ![Visual Studio 2019 中的重構體驗動畫](media/vs-2019/refactorings.gif "Visual Studio 2019 中的重構體驗。")
 
-只要按下 **Ctrl+.** ，來叫用重構 然後選取您想要採取的動作。
+只要按下 **Ctrl+.**，來叫用重構 然後選取您想要採取的動作。
 
 ### <a name="intellicode"></a>IntelliCode
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) 可使用人工智慧 (AI) 來強化您的軟體開發工作。 IntelliCode 在 GitHub 上的 2,000 個開放原始碼專案中訓練 (每個專案各有超過 100 顆星) 以產生建議。
 
-![Visual Studio 2019 中的 IntelliCode 動畫](media/vs-2019/IntelliCode.gif)
+![Visual Studio 2019 中的 IntelliCode 動畫](media/vs-2019/IntelliCode.gif "IntelliCode Visual Studio 2019。")
 
 以下是 Visual Studio IntelliCode 可協助提高生產力的幾種方式：
 
@@ -86,11 +86,11 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 清除作業會設定程式碼格式，並套用由[目前的設定](code-styles-and-code-cleanup.md)和 [.editorconfig 檔案](create-portable-custom-editor-options.md)所建議的任何程式碼修正。
 
-   ![Visual Studio 2019 中的新程式碼清除控制項螢幕擷取畫面](media/vs-2019/code-cleanup-profile.png)
+   ![Visual Studio 2019 中的新程式碼清除控制項螢幕擷取畫面](media/vs-2019/code-cleanup-profile.png "Visual Studio 2019 中的新程式碼清理控制項。")
 
 您也可以將修正程式集合儲存為設定檔。 例如，如果您有一組較少的目標修正程式經常在編寫程式碼時套用，然後在程式碼檢閱之前會套用另一組完整的修正程式，您可以將設定檔設定為處理這些不同的工作。
 
-   ![Visual Studio 2019 中設定程式碼清除控制項的螢幕擷取畫面](media/vs-2019/code-cleanup-profile-configure.png)
+   ![Visual Studio 2019 中設定程式碼清除控制項的螢幕擷取畫面](media/vs-2019/code-cleanup-profile-configure.png "Visual Studio 2019 中的設定程式碼清理控制項。")
 
 ### <a name="per-monitor-aware-pma-rendering"></a>個別監視器感知 (PMA) 轉譯
 
@@ -98,7 +98,7 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為個別監視器感知 (PMA) 應用程式。 現在，不論您使用的顯示縮放比例為何，Visual Studio 均可正確轉譯。
 
-   ![Visual Studio 2019 中的個別監視器感知 (PMA) 轉譯](media/vs-2019/pma-dpi-scaling.png)
+   ![Visual Studio 2019 中的個別監視器感知 (PMA) 轉譯](media/vs-2019/pma-dpi-scaling.png "每一監視器感知 (PMA 在 Visual Studio 2019 中) 轉譯。")
 
 如需詳細資訊，請參閱[使用 Visual Studio 2019 獲得更好的多監視器體驗](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) \(英文\) 部落格文章。
 
@@ -106,7 +106,7 @@ Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為�
 
 **16.2 的新** 功能：我們已更新 Test Explorer，以提供更好的處理大型測試集、更輕鬆的篩選、更容易探索的命令、索引標籤式的播放清單，以及可自訂的欄，讓您微調顯示的測試資訊。
 
-   ![顯示測試總管中的使用者介面改良功能的螢幕擷取畫面](media/vs-2019/test-explorer-ui.png)
+   ![顯示測試總管中的使用者介面改良功能的螢幕擷取畫面](media/vs-2019/test-explorer-ui.png "測試瀏覽器中的使用者介面改進。")
 
 ### <a name="net-core"></a>.NET Core
 
@@ -124,11 +124,11 @@ Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為�
 
 開啟 Visual Studio 2019 時，您會注意到新的開始視窗。
 
-   ![Visual Studio 2019 中的新開始視窗螢幕擷取畫面](media/vs-2019/start-window-dark.png)
+   ![Visual Studio 2019 中的新開始視窗螢幕擷取畫面](media/vs-2019/start-window-dark.png "Visual Studio 2019 中的新開始視窗。")
 
 開始視窗會顯示數個選項，協助您快速編寫程式碼。 我們放置的選項可先複製，或從存放庫中簽出程式碼。
 
-   ![Visual Studio 2019 中的「Git 優先」體驗動畫](media/vs-2019/git-first.gif)
+   ![Visual Studio 2019 中的「Git 優先」體驗動畫](media/vs-2019/git-first.gif "Visual Studio 2019 中的「Git 優先」體驗。")
 
 開始視窗也包含開啟專案或解決方案、開啟本機資料夾，或建立新專案的選項。
 
@@ -146,7 +146,7 @@ Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為�
 
 Visual Studio 2019 預設會安裝這項服務。
 
-![顯示 Visual Studio 2019 中 Live Share 共同作業功能的動畫](media/vs-2019/live-share.gif)
+![顯示 Visual Studio 2019 中 Live Share 共同作業功能的動畫](media/vs-2019/live-share.gif "Visual Studio 2019 中的 Live Share 協同作業功能。")
 
 如需詳細資訊，請參閱 [Visual Studio Live Share 提供即時程式碼檢閱與互動式教學](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) \(英文\) 部落格文章和 [Visual Studio 2019 現已包含 Live Share](https://devblogs.microsoft.com/visualstudio/live-share-now-included-with-visual-studio-2019/) \(英文\) 部落格文章。
 
@@ -154,7 +154,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 此次推出新的延伸模組，您可以下載並與 Visual Studio 2019 搭配使用。 使用這個新的延伸模組，您可以檢閱、執行偵錯要求，或是從您的團隊提取這些要求，而無需離開 Visual Studio。 我們支援 GitHub 和 Azure DevOps 存放庫中的程式碼。
 
-   ![Visual Studio 2019 中新提取要求延伸模組的螢幕擷取畫面](media/vs-2019/pr-experience.png)
+   ![Visual Studio 2019 中新提取要求延伸模組的螢幕擷取畫面](media/vs-2019/pr-experience.png "Visual Studio 2019 中的新提取要求延伸模組。")
 
 如需詳細資訊，請參閱 [Code reviews using the Visual Studio Pull Requests extension](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/) (使用 Visual Studio 提取要求延伸模組檢閱程式碼) 部落格文章。
 
@@ -168,7 +168,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 我們採用僅一次的專屬 C++ 資料中斷點，並加以修改以用於 .NET Core 應用程式。
 
-   ![在 Visual Studio 2019 中顯示偵錯資料中斷點的動畫](media/vs-2019/debug-data-breakpoints.gif)
+   ![在 Visual Studio 2019 中顯示偵錯資料中斷點的動畫](media/vs-2019/debug-data-breakpoints.gif "Visual Studio 2019 中的 debug 資料中斷點。")
 
 因此無論您在 C++ 或 .NET Core 中編寫程式碼，資料中斷點都是一般中斷點的理想替代方法。 像是尋找要修改或新增或從清單中移除的全域物件，這類情節也非常適合使用資料中斷點。
 
@@ -178,11 +178,11 @@ Visual Studio 2019 預設會安裝這項服務。
 
 在 [監看式] 視窗中查看一組值中的字串，您先前可能已進行過。 在 Visual Studio 2019 中，我們在 [監看式]、[區域變數] 和 [自動變數] 視窗中新增了搜尋功能，可協助您尋找物件和值。
 
-   ![在 Visual Studio 2019 中顯示偵錯搜尋視窗的動畫](media/vs-2019/debug-window-search.gif)
+   ![在 Visual Studio 2019 中顯示偵錯搜尋視窗的動畫](media/vs-2019/debug-window-search.gif "Visual Studio 2019 中的 debug 搜尋視窗。")
 
 在 [監看式]、[區域變數] 和 [自動變數] 視窗的顯示方式，您也能加以格式化。 ) 按兩下任何視窗中的其中一個專案來選取 (，然後新增逗號 ( "，" ) 以存取可能格式規範的下拉式清單，其中每個都包含其預期效果的描述。
 
-   ![Visual Studio 2019 中的新 [監看式] 視窗和格式值功能](media/search-watch-window.png)
+   ![Visual Studio 2019 中的新 [監看式] 視窗和格式值功能](media/search-watch-window.png "Visual Studio 2019 中的新監看式視窗和格式值功能。")
 
 如需詳細資訊，請參閱 [Visual Studio 2019 中的增強功能：在 [監看式]、[自動變數] 和 [區域變數] 視窗文章中搜尋物件和屬性](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) 。
 
@@ -190,7 +190,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 在雲端中取得應用程式執行的快照集，以查看確切的狀況。 (僅 Visual Studio Enterprise 提供此功能)
 
-   ![顯示 Visual Studio 2019 Enterprise 中的快照集偵錯工具動畫](media/vs-2019/snapshot-debugger.gif)
+   ![顯示 Visual Studio 2019 Enterprise 中的快照集偵錯工具動畫](media/vs-2019/snapshot-debugger.gif "Visual Studio 2019 Enterprise 中的快照偵錯工具。")
 
 我們也新增對 Azure VM 上執行的目標 ASP.NET (Core 與傳統型) 應用程式的支援。 此外，我們新增對Azure Kubernetes Service 中所執行應用程式的支援。 快照集偵錯工具可協助您大幅縮短為解決出現在生產環境之問題所花費的時間。
 
@@ -200,13 +200,13 @@ Visual Studio 2019 預設會安裝這項服務。
 
 **16.2 中的新** 功能：您可以在 JavaScript 應用程式中設定中斷點，並使用 [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) 瀏覽器啟動 debug 會話。 當您這樣做的時候，Visual Studio 會在已啟用偵錯功能的情況下開啟新的瀏覽器視窗，讓您可以用來在 Visual Studio 內逐步執行應用程式 JavaScript。
 
-   ![瀏覽器中顯示 JavaScript 程式碼轉譯的螢幕擷取畫面](media/vs-2019/edge-chromium-breakpoint.png)
+   ![瀏覽器中顯示 JavaScript 程式碼轉譯的螢幕擷取畫面](media/vs-2019/edge-chromium-breakpoint.png "瀏覽器中的 JavaScript 程式碼轉譯。")
 
 ### <a name="pinnable-properties-tool"></a>可釘選屬性工具
 
 **16.4 的新** 功能：現在，使用新的可釘選屬性工具進行偵錯工具時，可更輕鬆地依屬性來識別物件。 只要將游標暫留在您要在 [監看式]、[自動變數] 和 [區域變數] 視窗的偵錯工具視窗中顯示的屬性上，選取釘選圖示，即可立即在視窗頂端看到您要尋找的資訊！
 
-   ![顯示如何使用可釘選屬性工具在 Visual Studio 偵錯工具中釘選屬性的動畫](media/vs-2019/debugger-pinnable-properties.gif)
+   ![顯示如何使用可釘選屬性工具在 Visual Studio 偵錯工具中釘選屬性的動畫](media/vs-2019/debugger-pinnable-properties.gif "使用可釘選屬性工具，在 Visual Studio 偵錯工具中釘選屬性。")
 
 如需詳細資訊，請參閱 [可釘選屬性： Debug & 以您的方式將 Managed 物件顯示為您](https://devblogs.microsoft.com/visualstudio/pinnable-properties-debug-display-managed-objects-your-way/) 的 blog 文章。
 

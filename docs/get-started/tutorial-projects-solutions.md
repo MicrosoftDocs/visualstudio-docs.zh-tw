@@ -1,5 +1,6 @@
 ---
 title: 專案和解決方案簡介
+description: 瞭解專案和解決方案之間的差異，以及如何在 Visual Studio 中使用它們。
 ms.date: 11/17/2020
 ms.technology: vs-ide-general
 ms.custom: get-started
@@ -9,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf99c191ef6cfe32ec8ccc9b2cfd57f761941be7
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: 026e046e4bcc2291bd27907f10e6ac6a50729601
+ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704049"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94878266"
 ---
 # <a name="learn-about-projects-and-solutions"></a>了解專案與解決方案
 
@@ -55,7 +56,7 @@ ms.locfileid: "94704049"
 
 1. 在左窗格中，展開 [其他專案類型]，然後選擇 [Visual Studio 解決方案]。 在中央窗格中，選擇 [空白方案] 範本。 將方案命名為 **QuickSolution**，然後選擇 [確定] 按鈕。
 
-   ![Visual Studio 2017 中的空白方案範本](media/tutorial-projects-new-solution.png)
+   ![Visual Studio 2017 中的空白解決方案範本](media/tutorial-projects-new-solution.png "Visual Studio 2017 中的空白方案範本。")
 
    [起始頁] 隨即關閉，而且方案會出現在 Visual Studio 視窗右側的 [方案總管] 中。 您可能會經常使用方案總管來瀏覽專案的內容。
 
@@ -69,7 +70,7 @@ ms.locfileid: "94704049"
 
 3. 在 [建立新專案] 頁面上，於搜尋方塊中輸入 **空白的解決方案**、選取 [空白的解決方案] 範本，然後選擇 [下一步]。
 
-   ![Visual Studio 2019 中的空白方案範本](media/vs-2019/tutorial-projects-blank-solution-template.png)
+   ![Visual Studio 2019 中的空白方案範本](media/vs-2019/tutorial-projects-blank-solution-template.png "Visual Studio 2019 中的空白方案範本。")
 
     > [!TIP]
     > 如果您已安裝數個工作負載，則 **空白的解決方案** 範本可能不會出現在搜尋結果清單的頂端。 嘗試根據清單的搜尋區段來滾動至 **其他結果** 。 它應該會出現在該處。
@@ -97,7 +98,7 @@ ms.locfileid: "94704049"
    > [!NOTE]
    > 如果您在對話方塊的左窗格中看不到 **Visual c #** ，則必須安裝 **.net 桌面開發** Visual Studio 工作負載。 Visual Studio 使用以工作負載為基礎的安裝，只安裝您所需的開發類型所需的元件。 安裝新工作負載的簡單方式是選擇 [新增專案] 對話方塊左下角的 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio Installer 啟動之後，選擇 [.NET 桌面開發] 工作負載，然後選取 [修改] 按鈕。
    >
-   > ![開啟 Visual Studio 安裝程式連結](media/tutorial-projects-open-installer.png)
+   > ![開啟 Visual Studio 安裝程式連結](media/tutorial-projects-open-installer.png "Visual Studio 2017 中 [加入新的專案] 對話方塊中的 [開啟 Visual Studio 安裝程式] 連結。")
 
 ::: moniker-end
 
@@ -116,9 +117,11 @@ ms.locfileid: "94704049"
    名為 QuickDate 的專案會出現在 **方案總管** 的方案下方。 它目前包含稱為 *App.config* 的單一檔案。
 
    > [!NOTE]
-   > 如果您沒有看到 **空白專案 ( .NET Framework)** 範本，則必須安裝 **.net 桌面開發** Visual Studio 工作負載。 Visual Studio 使用以工作負載為基礎的安裝，只安裝您所需的開發類型所需的元件。 建立新專案時安裝新工作負載的簡單方式，就是在顯示 [找不到您要尋找的項目嗎？] 文字底下，選擇 [安裝更多工具與功能] 連結。 Visual Studio Installer 啟動之後，選擇 [.NET 桌面開發] 工作負載，然後選取 [修改] 按鈕。
+   > 如果您沒有看到 **空白專案 ( .NET Framework)** 範本，則必須安裝 **.net 桌面開發** Visual Studio 工作負載。 Visual Studio 使用以工作負載為基礎的安裝，只安裝您所需的開發類型所需的元件。
    >
-   > ![開啟 Visual Studio 安裝程式連結](media/vs-2019/tutorial-projects-open-installer.png)
+   >建立新專案時安裝新工作負載的簡單方式，就是在顯示 [找不到您要尋找的項目嗎？] 文字底下，選擇 [安裝更多工具與功能] 連結。 Visual Studio Installer 啟動之後，選擇 [.NET 桌面開發] 工作負載，然後選取 [修改] 按鈕。
+   >
+   > ![開啟 Visual Studio 安裝程式連結](media/vs-2019/tutorial-projects-open-installer.png "在 Visual Studio 的 [建立新專案] 對話方塊中的 [開啟 Visual Studio 安裝程式] 連結。")
 
 ::: moniker-end
 
@@ -174,7 +177,7 @@ ms.locfileid: "94704049"
 
    第二個專案會新增至 [方案總管]，並在編輯器中開啟名為 *UnitTest1.cs* 的檔案。
 
-   ![包含兩個專案的 Visual Studio 方案總管](media/tutorial-projects-solution-explorer.png)
+   ![包含兩個專案的 Visual Studio 方案總管](media/tutorial-projects-solution-explorer.png "方案總管 Visual Studio 2017 中的兩個專案。")
 
 ::: moniker-end
 
@@ -188,7 +191,7 @@ ms.locfileid: "94704049"
 
    第二個專案會新增至 [方案總管]，並在編輯器中開啟名為 *UnitTest1.cs* 的檔案。
 
-   ![包含兩個專案的 Visual Studio 方案總管](media/vs-2019/tutorial-projects-solution-explorer.png)
+   ![包含兩個專案的 Visual Studio 方案總管](media/vs-2019/tutorial-projects-solution-explorer.png "方案總管 Visual Studio 中有兩個專案。")
 
 ::: moniker-end
 
@@ -204,7 +207,7 @@ ms.locfileid: "94704049"
 
    隨即新增 **QuickDate** 專案的參考。
 
-   ![顯示專案參考的 Visual Studio 2019 [方案總管]](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+   ![顯示專案參考的 Visual Studio 2019 [方案總管]](media/vs-2019/tutorial-projects-solution-explorer-reference.png "方案總管顯示 Visual Studio 中的專案參考。")
 
 ## <a name="add-test-code"></a>新增測試程式碼
 
@@ -240,7 +243,7 @@ ms.locfileid: "94704049"
 
    程式碼檔應該如下：
 
-   ![CSharp 程式碼](media/tutorial-projects-cs-code.png)
+   ![CSharp 程式碼](media/tutorial-projects-cs-code.png "本文的「加入測試程式碼」一節中的程式碼片段。")
 
 ## <a name="project-properties"></a>專案屬性
 
@@ -250,7 +253,7 @@ ms.locfileid: "94704049"
 
    專案的 *屬性頁* 會在 [ **應用程式** ] 索引標籤上開啟。屬性頁包含專案的各種設定。 請注意，**QuickTest** 專案的組件名稱確實是 "QuickTest"。 如果您想要變更它，則這是進行變更的位置。 然後，當您建置測試專案時，所產生二進位檔案的名稱會從 *QuickTest.dll* 變更為您選擇的任何名稱。
 
-   ![專案屬性](media/tutorial-projects-netcore-properties.png)
+   ![專案屬性](media/tutorial-projects-netcore-properties.png "Visual Studio 中的 [專案屬性] 對話方塊。")
 
 1. 探索專案屬性頁的一些其他索引標籤 (例如 [建置] 和 [偵錯])。 不同專案類型的這些索引標籤不同。
 
@@ -258,7 +261,7 @@ ms.locfileid: "94704049"
 
 如果您想要檢查單元測試是否正常運作，請從功能表列選擇 [**測試**  >  **執行**  >  **所有測試**]。 稱為 [測試總管] 的視窗隨即開啟，而且您應該會看到 **TestGetCurrentDate** 測試通過。
 
-![Visual Studio 的 [測試總管] 顯示已通過測試](media/tutorial-projects-test-explorer.png)
+![Visual Studio 的 [測試總管] 顯示已通過測試](media/tutorial-projects-test-explorer.png "Visual Studio 中的 test Explorer 顯示通過的測試。")
 
 ::: moniker range="vs-2017"
 
@@ -274,7 +277,7 @@ ms.locfileid: "94704049"
 
 ::: moniker-end
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立專案和解決方案](../ide/creating-solutions-and-projects.md)
 - [管理專案和解決方案屬性](../ide/managing-project-and-solution-properties.md)
