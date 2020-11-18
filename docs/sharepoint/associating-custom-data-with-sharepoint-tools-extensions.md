@@ -1,5 +1,7 @@
 ---
 title: 將自訂資料與 SharePoint 工具延伸模組產生關聯 |Microsoft Docs
+description: 將自訂資料與 SharePoint 工具延伸模組產生關聯。 查看可包含自訂資料的物件清單。 新增和取出自訂資料。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 434f8aaf9303f3ee9a4008094b4e98c99d635e9f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: db32c05b4a1f4536e71b4ef233758f747a958327
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584686"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850399"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>將自訂資料與 SharePoint 工具延伸模組產生關聯
   您可以將自訂資料新增至 SharePoint 工具延伸模組中的特定物件。 當您的延伸模組中有您想要稍後從擴充功能的其他程式碼存取的資料時，這非常有用。 您可以將資料與延伸模組中的物件建立關聯，然後再從相同的物件取得資料，而不是執行自訂方式來儲存及存取資料。
@@ -80,7 +82,7 @@ ms.locfileid: "91584686"
   [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
   [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [SharePoint 工具擴充功能的程式設計概念和功能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
 - [逐步解說：使用專案範本建立自訂動作專案專案（第1部分）](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [逐步解說：擴充伺服器總管以顯示 web 元件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

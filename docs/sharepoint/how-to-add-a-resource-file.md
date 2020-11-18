@@ -1,5 +1,7 @@
 ---
 title: 如何：新增資源檔 |Microsoft Docs
+description: 在 Visual Studio 中，使用方案節點的快捷方式功能表上的命令，以及方案總管中的功能節點，來新增資源檔。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 657eb473adcff40a62d2fc9b09518ebe8135eeb4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 440777aaaf239dcdd3c276786a82e3d8aef55070
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015185"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850126"
 ---
 # <a name="how-to-add-a-resource-file"></a>如何：新增資源檔
   新增資源檔的命令位於 [方案] 節點的快捷方式功能表和方案總管中的功能節點。 如需詳細資訊，請參閱 [當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)。
@@ -27,7 +29,7 @@ ms.locfileid: "86015185"
 
 1. 在中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，開啟 SharePoint 方案。
 
-2. 在**方案總管**中，選擇 SharePoint 專案節點，然後在功能表列上選擇 [**專案**  >  **加入新專案**]。
+2. 在 **方案總管** 中，選擇 SharePoint 專案節點，然後在功能表列上選擇 [**專案**  >  **加入新專案**]。
 
 3. 在 [ **加入新專案** ] 對話方塊中，選擇 [ **全域資源檔** ] 範本，然後選擇 [ **加入** ] 按鈕。
 
@@ -36,7 +38,7 @@ ms.locfileid: "86015185"
 
 4. 在 [ **新增資源** ] 對話方塊中，選擇資源檔的文化特性，例如 [英文 (美國) 。
 
-    此步驟會以 Resource_x_ 的格式，將全域資源檔加入至您的方案 **。**<em>文化</em>特性<strong>。</strong>resx，例如， *Resource1*。
+    此步驟會以 Resource_x_ 的格式，將全域資源檔加入至您的方案 **。**<em>文化</em>特性 <strong>。</strong>resx，例如， *Resource1*。
 
 5. 當 **資源編輯器** 在中開啟時 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，請將資源新增至資源檔。
 
@@ -44,11 +46,11 @@ ms.locfileid: "86015185"
 
 1. 如果 SharePoint 方案尚未在中開啟 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，請開啟方案。
 
-2. 在 **方案總管**中，開啟 [ **功能** ] 節點下之功能名稱的快捷方式功能表，然後選擇 [ **加入功能資源**]。
+2. 在 **方案總管** 中，開啟 [ **功能** ] 節點下之功能名稱的快捷方式功能表，然後選擇 [ **加入功能資源**]。
 
      此步驟會將資源檔新增至功能，格式為 _ResourceFileName_**。**_culture_**，例如**，Feature1，例如： *en-us*。
 
 3. 當 **資源編輯器** 在中開啟時 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，請將資源新增至資源檔。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)

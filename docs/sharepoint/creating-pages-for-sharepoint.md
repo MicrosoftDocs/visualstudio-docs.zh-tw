@@ -1,5 +1,7 @@
 ---
 title: 建立 SharePoint 的頁面 |Microsoft Docs
+description: 使用 Visual Studio 中的範本建立 SharePoint 的應用程式頁面。 使用 SharePoint Designer 建立網站頁面、主版頁面和頁面配置。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 942891bc9281c07966160ea9df065408fcbfd5ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 974ddb3c68d0c2ef297c884e75300a8507f436cc
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015161"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850620"
 ---
 # <a name="create-pages-for-sharepoint"></a>建立 SharePoint 的頁面
   您可以建立 SharePoint 網站的應用程式頁面、網站頁面、主版頁面和頁面配置。
@@ -34,7 +36,7 @@ ms.locfileid: "86015161"
 ## <a name="types-of-sharepoint-pages"></a>SharePoint 頁面的類型
  下表描述 SharePoint 網站包含的四個主要頁面類型。
 
-|頁面類型|描述|
+|頁面類型|說明|
 |---------------|-----------------|
 |應用程式頁面|如果您想要頁面包含自訂程式碼，或想要在多個網站之間共用頁面，請建立應用程式頁面。 否則，網站頁面可能是最佳選擇。|
 |網站頁面|如果您想要執行下列任何一項工作，請建立網站頁面：<br /><br /> -將頁面加入至 SharePoint 文件庫。<br />-啟用頁面來裝載功能，例如動態 Web 組件和網頁元件區域。<br />-讓使用者能夠使用 SharePoint Designer 自訂頁面。<br /><br /> 如果您想要頁面包含自訂程式碼，請不要建立網站頁面。 雖然您可以將自訂程式碼加入至網站頁面，但是當使用者使用 SharePoint Designer 自訂頁面時，程式碼就會停止執行。|
@@ -62,7 +64,7 @@ ms.locfileid: "86015161"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|標題|說明|
 |-----------|-----------------|
 |[建立 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)|描述如何加入與 SharePoint 主版頁面合併的應用程式頁面： *.aspx 內容。*|
 |[如何：建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)|說明如何建立在 SharePoint 網站上執行的 ASP.NET 網頁。|

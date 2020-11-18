@@ -1,5 +1,7 @@
 ---
 title: 如何：將屬性加入至 SharePoint 專案 |Microsoft Docs
+description: 使用專案延伸模組，將屬性加入至 SharePoint 專案。 當您在方案總管中選取專案時，屬性會出現在屬性視窗中。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb72b0546b504e2df1a7e93ea9d4def350143d1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62766b704d140805a3b76dbc3c00acaf6257f5e5
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015915"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850152"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>如何：將屬性加入至 SharePoint 專案
-  您可以使用專案延伸模組，將屬性加入至任何 SharePoint 專案。 當您在**方案總管**中選取專案時，屬性會出現在 [**屬性**] 視窗中。
+  您可以使用專案延伸模組，將屬性加入至任何 SharePoint 專案。 當您在 **方案總管** 中選取專案時，屬性會出現在 [**屬性**] 視窗中。
 
  下列步驟假設您已建立專案延伸模組。 如需詳細資訊，請參閱 [如何：建立 SharePoint 專案延伸](../sharepoint/how-to-create-a-sharepoint-project-extension.md)模組。
 
@@ -80,7 +82,7 @@ ms.locfileid: "86015915"
 ## <a name="deploy-the-extension"></a>部署延伸模組
  若要部署擴充功能，請 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 為元件和您想要使用擴充功能散發的任何其他檔案，建立 (VSIX) 封裝的延伸模組。 如需詳細資訊，請參閱 [Visual Studio 中的部署 SharePoint 工具的擴充](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)功能。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [擴充 SharePoint 專案](../sharepoint/extending-sharepoint-projects.md)
 - [如何：建立 SharePoint 專案延伸模組](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 - [如何：將快捷方式功能表項目加入至 SharePoint 專案](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)

@@ -1,5 +1,7 @@
 ---
 title: 將屬性加入至自訂 SharePoint 專案專案類型
+description: 將屬性加入至自訂 SharePoint 專案專案類型。 當您在方案總管中選取專案專案時，屬性會出現在屬性視窗中。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54765b9b6b82214a7deccaee4f9ee671a72dd40d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b62f41ff6b185469a61681a8845c4e96d044695
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015998"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850178"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>如何：將屬性加入至自訂 SharePoint 專案專案類型
-  當您定義自訂 SharePoint 專案專案類型時，您可以將屬性加入至專案專案。 當**方案總管**中選取專案專案時，屬性會出現在 [**屬性**] 視窗中。
+  當您定義自訂 SharePoint 專案專案類型時，您可以將屬性加入至專案專案。 當 **方案總管** 中選取專案專案時，屬性會出現在 [**屬性**] 視窗中。
 
  下列步驟假設您已經定義自己的 SharePoint 專案專案類型。 如需詳細資訊，請參閱 [如何：定義 SharePoint 專案專案類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。
 
@@ -70,7 +72,7 @@ ms.locfileid: "86015998"
 
  若要部署專案專案，請 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 為元件、範本和您想要使用專案專案散發的任何其他檔案，建立 (VSIX) 封裝的延伸模組。 如需詳細資訊，請參閱 [Visual Studio 中的部署 SharePoint 工具的擴充](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)功能。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [如何：定義 SharePoint 專案專案類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 - [如何：將快捷方式功能表項目加入至自訂 SharePoint 專案專案類型](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)
 - [定義自訂 SharePoint 專案專案類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)

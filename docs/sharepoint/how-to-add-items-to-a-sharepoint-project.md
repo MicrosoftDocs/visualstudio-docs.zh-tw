@@ -1,5 +1,7 @@
 ---
 title: 如何：將專案加入至 SharePoint 專案 |Microsoft Docs
+description: 開啟或建立 SharePoint 方案之後，在 Visual Studio 中將新的或現有的專案加入至 SharePoint 專案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f7a36591d94e846a0024bce8c5d0b618479e647
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4471f6a593e9349f32e4837da15df2e3e952d227
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014693"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850724"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>如何：將專案加入至 SharePoint 專案
   SharePoint 方案包含一或多個專案，其中每個專案都包含多個 SharePoint 專案專案。 開啟或建立 SharePoint 方案之後，您可以將新的或現有的專案加入至這些專案。 例如，新的工作流程專案會隨附名為 default.aspx 的預設表單，但您可以使用新的或不同的表單來取代該表單，或加入另一個 ASPX 表單。
@@ -26,9 +28,9 @@ ms.locfileid: "86014693"
 
 1. 在中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，開啟或建立 SharePoint 方案。
 
-2. 在 **方案總管**中，選擇專案的節點。
+2. 在 **方案總管** 中，選擇專案的節點。
 
-3. 在功能表列上 **，選擇 [**  >  **加入新**專案]，以顯示 [**加入新專案**] 對話方塊。
+3. 在功能表列上 **，選擇 [**  >  **加入新** 專案]，以顯示 [**加入新專案**] 對話方塊。
 
 4. 在 [ **已安裝的範本** ] 清單中，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
@@ -40,12 +42,12 @@ ms.locfileid: "86014693"
 
 1. 在中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，開啟或建立 SharePoint 方案。
 
-2. 在 **方案總管**中，選擇專案的節點。
+2. 在 **方案總管** 中，選擇專案的節點。
 
 3. 在功能表列上，選擇 [**專案**  >  **加入現有專案**]，以顯示 [**加入現有專案**] 對話方塊。
 
 4. 流覽至包含您要新增之專案的資料夾，選擇該專案，然後選擇 [ **加入** ] 按鈕。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [SharePoint 專案和專案專案範本](../sharepoint/sharepoint-project-and-project-item-templates.md)
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)

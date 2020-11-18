@@ -1,5 +1,7 @@
 ---
 title: 建立 SharePoint 方案 |Microsoft Docs
+description: 在 Visual Studio 中建立 SharePoint 應用程式，做為在 SharePoint Designer 中建立它們的替代方案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13689d82f3aae24a16a577b1555d8b02ae31b2ba
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 0893596157078de62e33034a9ab6566637642176
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740166"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850490"
 ---
 # <a name="create-sharepoint-solutions"></a>建立 SharePoint 方案
   除了在 SharePoint Designer 中建立 SharePoint 應用程式之外，您也可以在 Visual Studio 中建立 SharePoint 應用程式。 Visual Studio 提供進階偵錯工具、IntelliSense、陳述式完成和專案範本等功能，可加速開發 SharePoint。 Visual Studio 也利用進階 .NET Framework 工具和語言。 您可以使用 Visual Basic 或 Visual C# 開發 SharePoint 專案，並且可以使用 JavaScript 開發 SharePoint 專案的應用程式。
@@ -39,4 +41,4 @@ ms.locfileid: "90740166"
 |![如何？視頻](../sharepoint/media/vs-icon-howdoivideos.gif "如何？視頻")|**如何？視頻**<br /><br /> -   [如何：在 Visual Studio 2010 中建立適用于 SharePoint 2010 的 Visual Web 組件？](https://visualstudio.microsoft.com/)<br />-   [如何：在 Visual Studio 2010 中建立 SharePoint 2010 的內容類型？](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))<br />-   [如何：在 Visual Studio 2010 中建立 SharePoint 2010 的網站定義？](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))<br />-   [如何：使用 Visual Studio 2010 建立適用于 SharePoint 2010 的商務資料連線模型？](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))|
 |![Channel 9 影片](../sharepoint/media/vs-icon-channel9videos.gif "Channel 9 的影片")|**Channel 9 影片**<br /><br /> -   [Visual Studio 2010 中的 SharePoint 開發總覽](https://channel9.msdn.com/blogs/funkyonex/overview-of-sharepoint-development-in-visual-studio-2010)<br />-   [使用 Visual Studio 2010 建立 SharePoint 2010 Web 組件的最佳作法](https://channel9.msdn.com/blogs/funkyonex/best-practices-on-building-sharepoint-2010-web-parts-with-visual-studio-2010)<br />-   [Visual Studio 2010 中的 SharePoint 功能與封裝設計工具](https://channel9.msdn.com/blogs/funkyonex/sharepoint-feature-and-package-designers-in-visual-studio-2010)|
 |![開發人員中心](../sharepoint/media/vs-icon-msdndevcenter.gif "開發人員中心")|**開發人員中心**<br /><br /> -   [Visual Studio 開發中心](https://visualstudio.microsoft.com/)<br />-   [SharePoint 開發人員中心](/sharepoint/dev/)<br />-   [SharePoint Server 開發人員中心](/previous-versions/office/fp161348\(v\=office.15\))<br />-   [SharePoint Designer 開發人員中心](/previous-versions/office/fp161348\(v\=office.15\))<br />-   [ASP.NET 開發人員中心](/previous-versions/msdn10/aa336522(v=msdn.10))|
-|![提供意見反應](../sharepoint/media/vs-icon-feedback.gif "提供意見反應")|**提供意見反應**<br /><br /> 提供有關 Visual Studio 的意見反應：<br /><br /> -   [Microsoft Connect](/collaborate/connect-redirect)<br /><br /> 提供有關 Visual Studio 文件的意見反應：<br /><br /> -   **輕量視圖。** 如果您在任何主題的頂端，您可以選擇 [為這個主題評分] **** 連結跳至該主題的底部，然後指定 [是] **** 或 [否] **** 以回應 [本文對您有任何幫助嗎？] **** 。如果選擇 [否] ****，可接著選取一或多個出現的核取方塊，及 (或) 在文字方塊中提供更多資訊。 完成後，請選擇 [提交] **** 按鈕。<br />-   **Scriptfree View。** 在主題頂端，選擇 [ **意見** 反應] 連結，在 TechNet 和 Expression Library 意見反應論壇中提供意見反應。<br />-   **傳統視圖。** 在主題頂端，選擇 [意見反應] **** 圖示，將有關該主題的意見反應提供給文件小組。|
+|![提供意見反應](../sharepoint/media/vs-icon-feedback.gif "提供意見反應")|**提供意見反應**<br /><br /> 提供有關 Visual Studio 的意見反應：<br /><br /> -   [Microsoft Connect](/collaborate/connect-redirect)<br /><br /> 提供有關 Visual Studio 文件的意見反應：<br /><br /> -   **輕量視圖。** 如果您在任何主題的頂端，您可以選擇 [為這個主題評分]  連結跳至該主題的底部，然後指定 [是]  或 [否]  以回應 [本文對您有任何幫助嗎？]  。如果選擇 [否] ，可接著選取一或多個出現的核取方塊，及 (或) 在文字方塊中提供更多資訊。 完成後，請選擇 [提交]  按鈕。<br />-   **Scriptfree View。** 在主題頂端，選擇 [ **意見** 反應] 連結，在 TechNet 和 Expression Library 意見反應論壇中提供意見反應。<br />-   **傳統視圖。** 在主題頂端，選擇 [意見反應]  圖示，將有關該主題的意見反應提供給文件小組。|

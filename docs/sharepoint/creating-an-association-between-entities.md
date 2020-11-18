@@ -1,5 +1,7 @@
 ---
 title: 建立實體之間的關聯 |Microsoft Docs
+description: 建立商務資料連線中實體之間的關聯 (BDC) 模型。 瞭解關聯方法和關聯的類型。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -21,21 +23,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee767ded0687baa09653bd82785b68bee7fa0ebd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a5decf8ad803bea8b1d64c79410c319dbef0be9
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981083"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850542"
 ---
 # <a name="create-an-association-between-entities"></a>建立實體之間的關聯
   您可以藉由建立關聯來定義商務資料連線中實體之間的關聯性 (BDC) 模型。 Visual Studio 會產生可提供模型取用者的方法，以及每個關聯的相關資訊。 這些方法可以由 SharePoint Web 組件、清單或自訂應用程式加以使用，以便在使用者介面 (UI) 中顯示資料關聯性。
 
 ## <a name="create-an-association"></a>建立關聯
- 選擇 [Visual Studio]**工具箱**中的 [**關聯**] 控制項，選擇稱為 [來源]) 實體 (的第一個實體，然後選擇第二個實體 (稱為 [目的地實體]) ，即可建立關聯。 您可以在 **關聯編輯器**中定義關聯的詳細資料。 如需詳細資訊，請參閱 [如何：建立實體之間的關聯](../sharepoint/how-to-create-an-association-between-entities.md)。
+ 選擇 [Visual Studio]**工具箱** 中的 [**關聯**] 控制項，選擇稱為 [來源]) 實體 (的第一個實體，然後選擇第二個實體 (稱為 [目的地實體]) ，即可建立關聯。 您可以在 **關聯編輯器** 中定義關聯的詳細資料。 如需詳細資訊，請參閱 [如何：建立實體之間的關聯](../sharepoint/how-to-create-an-association-between-entities.md)。
 
 ## <a name="association-methods"></a>Association 方法
- SharePoint 商務資料網頁元件之類的應用程式會藉由呼叫實體服務類別中的方法來取用關聯。 您可以在 **關聯編輯器**中選取方法，藉此將方法新增至實體的服務類別。
+ SharePoint 商務資料網頁元件之類的應用程式會藉由呼叫實體服務類別中的方法來取用關聯。 您可以在 **關聯編輯器** 中選取方法，藉此將方法新增至實體的服務類別。
 
  根據預設，[ **關聯編輯器** ] 會將關聯導覽方法加入至來源和目的地實體。 來源實體中的關聯流覽方法可讓取用者取得目的實體清單。 目的地實體中的關聯流覽方法可讓取用者取得與目的地實體相關的來源實體。
 
@@ -47,7 +49,7 @@ ms.locfileid: "72981083"
 ### <a name="foreign-key-based-association"></a>以外鍵為基礎的關聯
  您可以建立以外鍵為基礎的關聯，方法是將來源實體中的識別碼與目的地實體中定義的型別描述項產生關聯。 此關聯性可讓模型的取用者為其使用者提供增強的 UI。 例如 Outlook 中的表單，可讓使用者建立可在下拉式清單中顯示客戶的銷售訂單;或 SharePoint 中的銷售訂單清單，可讓使用者開啟客戶的設定檔頁面面。
 
- 若要建立外鍵關聯，請建立共用相同名稱和類型的識別碼和類型描述元。 例如，您可以建立實體和實體之間的外鍵關聯 `Contact` `SalesOrder` 。 實體會傳回 `SalesOrder` `ContactID` 型別描述元，作為 Finder 或特定 finder 方法的 return 參數的一部分。 這兩個類型描述項都會出現在 **關聯編輯器**中。 若要建立實體和實體之間的外鍵關聯性 `Contact` `SalesOrder` ，請選擇 `ContactID` 每個欄位旁的識別碼。
+ 若要建立外鍵關聯，請建立共用相同名稱和類型的識別碼和類型描述元。 例如，您可以建立實體和實體之間的外鍵關聯 `Contact` `SalesOrder` 。 實體會傳回 `SalesOrder` `ContactID` 型別描述元，作為 Finder 或特定 finder 方法的 return 參數的一部分。 這兩個類型描述項都會出現在 **關聯編輯器** 中。 若要建立實體和實體之間的外鍵關聯性 `Contact` `SalesOrder` ，請選擇 `ContactID` 每個欄位旁的識別碼。
 
  將程式碼加入至來源實體的 [關聯導覽器] 方法，該方法會傳回目的地實體的集合。 下列範例會傳回連絡人的銷售訂單。
 
@@ -76,6 +78,6 @@ ms.locfileid: "72981083"
  [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [如何：建立實體之間的關聯](../sharepoint/how-to-create-an-association-between-entities.md)

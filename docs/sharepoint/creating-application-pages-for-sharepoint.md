@@ -1,5 +1,7 @@
 ---
 title: 建立 SharePoint 的應用程式頁面 |Microsoft Docs
+description: 建立 SharePoint 的應用程式頁面。 應用程式頁面是設計用來在 SharePoint 網站中使用的 ASP.NET 網頁。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,15 +18,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 47f403f4eec6ec66563ae88bec226e073f625716
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1228ef551235fd616803d6e05057ee50f0ea7ec4
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981104"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850438"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>建立 SharePoint 的應用程式頁面
-  *應用程式頁面*是設計用來在 SharePoint 網站中使用的 ASP.NET 網頁。 應用程式頁面是一種特殊類型的 ASP.NET 網頁。 應用程式頁面與標準 ASP.NET 網頁之間的主要差異在於，應用程式頁面包含與 SharePoint 主版頁面合併的內容。 主版頁面可讓應用程式頁面與網站上的其他頁面共用相同的外觀和行為。
+  *應用程式頁面* 是設計用來在 SharePoint 網站中使用的 ASP.NET 網頁。 應用程式頁面是一種特殊類型的 ASP.NET 網頁。 應用程式頁面與標準 ASP.NET 網頁之間的主要差異在於，應用程式頁面包含與 SharePoint 主版頁面合併的內容。 主版頁面可讓應用程式頁面與網站上的其他頁面共用相同的外觀和行為。
 
  Visual Studio 可讓您使用設計工具來設計應用程式頁面。 設計工具會針對主版頁面中定義的每個內容預留位置顯示內容區域。 您可以藉由將控制項拖曳至這些內容區域，來設計應用程式頁面。
 
@@ -71,7 +73,7 @@ ms.locfileid: "72981104"
 
  您可以藉由設定應用程式元素的屬性，明確變更應用程式頁面使用的主版頁面 `MasterPageFile` `Page` 。  (例如： `MasterPageFile="~/_layouts/applicationv4.master"`) 。 事實上，如果 SharePoint 伺服器上未啟用動態主版頁面，就必須設定這個屬性。 如需有關 SharePoint 中主版頁面的詳細資訊，請參閱 [主版頁面](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [深入瞭解 SharePoint Foundation 開發](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
 - [ASP.NET 概觀](/aspnet/overview)
 - [ASP.NET Web Pages](/aspnet/web-pages/index)

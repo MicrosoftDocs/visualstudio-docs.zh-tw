@@ -1,6 +1,8 @@
 ---
 title: 將快捷方式功能表項目加入至自訂 SharePoint 專案專案類型
 titleSuffix: ''
+description: 瞭解如何將快捷方式功能表項目加入至自訂 SharePoint 專案專案類型。 當您以滑鼠右鍵按一下方案總管中的專案專案時，就會顯示功能表項目。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,15 +17,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39de735c09c97541684628c8e4140aa42d119500
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2916b806c6e149a9c0cbe2495a7edabcfc883e7e
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585871"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850074"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>如何：將快捷方式功能表項目加入至自訂 SharePoint 專案專案類型
-  當您定義自訂 SharePoint 專案專案類型時，您可以將快捷方式功能表項目加入至專案專案。 當使用者以滑鼠右鍵按一下 **方案總管**中的專案專案時，就會顯示功能表項目。
+  當您定義自訂 SharePoint 專案專案類型時，您可以將快捷方式功能表項目加入至專案專案。 當使用者以滑鼠右鍵按一下 **方案總管** 中的專案專案時，就會顯示功能表項目。
 
  下列步驟假設您已經定義自己的 SharePoint 專案專案類型。 如需詳細資訊，請參閱 [如何：定義 SharePoint 專案專案類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。
 
@@ -55,7 +57,7 @@ ms.locfileid: "91585871"
 
  若要部署專案專案，請 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 為元件、範本和您想要使用專案專案散發的任何其他檔案，建立 (VSIX) 封裝的延伸模組。 如需詳細資訊，請參閱 [Visual Studio 中的部署 SharePoint 工具的擴充](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)功能。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [如何：定義 SharePoint 專案專案類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 - [如何：將屬性加入至自訂 SharePoint 專案專案類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
 - [定義自訂 SharePoint 專案專案類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)

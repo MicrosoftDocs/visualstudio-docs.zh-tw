@@ -1,5 +1,7 @@
 ---
 title: 呼叫 SharePoint 物件模型 |Microsoft Docs
+description: 瞭解如何呼叫您可以在 SharePoint 工具擴充功能中使用的兩個不同物件模型。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24634143a40f7b163c0b658bddb5596041868033
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40cd7132888d8b19d8e2a2818ec9a299b465e786
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62988401"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850048"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>呼叫 SharePoint 物件模型
   當您在 Visual Studio 中建立 SharePoint 工具的延伸模組時，您可能必須呼叫 SharePoint Api 來執行某些工作。 例如，如果您建立 SharePoint 專案的自訂部署步驟，您可能必須呼叫 SharePoint Api 來執行一些工作，以部署方案。
@@ -52,9 +54,9 @@ ms.locfileid: "62988401"
  如需示範如何建立和使用 SharePoint 命令的逐步解說，請參閱 [逐步解說：建立 sharepoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) 和 [逐步解說：擴充伺服器總管以顯示 web 元件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。
 
 ### <a name="understand-how-sharepoint-commands-are-executed"></a>瞭解如何執行 SharePoint 命令
- 定義 SharePoint 命令的元件會載入名為 *vssphost4.exe*的64位主機進程中。 當您在 SharePoint 工具擴充功能中呼叫 SharePoint 命令之後，命令會由 *vssphost4.exe* 執行，而不是32位 Visual Studio 進程 (*devenv.exe*) 。 您可以藉由設定登錄中的值，來控制如何執行 SharePoint 命令的某些層面。 如需詳細資訊，請參閱 [Visual Studio 中 SharePoint 工具的 Debug 擴充](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)功能。
+ 定義 SharePoint 命令的元件會載入名為 *vssphost4.exe* 的64位主機進程中。 當您在 SharePoint 工具擴充功能中呼叫 SharePoint 命令之後，命令會由 *vssphost4.exe* 執行，而不是32位 Visual Studio 進程 (*devenv.exe*) 。 您可以藉由設定登錄中的值，來控制如何執行 SharePoint 命令的某些層面。 如需詳細資訊，請參閱 [Visual Studio 中 SharePoint 工具的 Debug 擴充](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)功能。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [如何：建立 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)
 - [How to：執行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [SharePoint 工具擴充功能的程式設計模型總覽](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)

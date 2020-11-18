@@ -1,5 +1,7 @@
 ---
 title: 如何：新增特定搜尋工具方法 |Microsoft Docs
+description: 藉由新增 Finder 方法來取得實體實例。 當使用者挑選商務資料網頁元件或外部清單中的實體時，BDC 服務會呼叫方法。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,19 +19,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 403213b6dcd87251df0b24333c759c8de8720afd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a02e88b0168a6aa4b1a69af3ee14150a71e76037
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014819"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849724"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>如何：新增特定搜尋工具方法
   您可以藉由建立特定的搜尋 *工具* 方法來傳回單一實體實例。 當使用者選擇商務資料網頁元件或外部清單中的實體時， (BDC) 服務的商務資料連線會執行特定的搜尋工具方法。 如需詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
 ### <a name="to-create-a-specific-finder-method"></a>若要建立特定的搜尋工具方法
 
-1. 在 **BDC 設計**工具上，選擇實體。
+1. 在 **BDC 設計** 工具上，選擇實體。
 
     如需如何在 Visual Studio 中將實體新增至 **BDC 設計** 工具的詳細資訊，請參閱 [如何：將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。
 
@@ -65,9 +67,9 @@ ms.locfileid: "86014819"
 
 6. 在 [ **方法詳細資料** ] 視窗中，選擇方法的方法實例。
 
-7. 在 [ **屬性] 視窗**中，將 [傳回 **參數名稱** ] 屬性設定為方法的傳回參數名稱。 如需方法實例屬性的詳細資訊，請參閱 [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))。
+7. 在 [ **屬性] 視窗** 中，將 [傳回 **參數名稱** ] 屬性設定為方法的傳回參數名稱。 如需方法實例屬性的詳細資訊，請參閱 [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))。
 
-8. 在 **方案總管**中，開啟針對實體所產生之服務程式代碼檔案的快捷方式功能表，然後選擇 [ **View code**]。
+8. 在 **方案總管** 中，開啟針對實體所產生之服務程式代碼檔案的快捷方式功能表，然後選擇 [ **View code**]。
 
     Entity service 程式碼檔案會在程式碼編輯器中開啟。 如需實體服務程式代碼檔案的詳細資訊，請參閱 [建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
 
@@ -85,7 +87,7 @@ ms.locfileid: "86014819"
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [如何：加入搜尋工具方法](../sharepoint/how-to-add-a-finder-method.md)
 - [如何：新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)

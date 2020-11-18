@@ -1,5 +1,7 @@
 ---
 title: 如何：建立事件接收器 |Microsoft Docs
+description: 建立事件接收器，讓您可以在使用者與 SharePoint 專案（例如清單或清單專案）互動時回應。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26d8c9f433fad051716b6ebd37e3d1f3b3f9f4eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e94bd1594f94f43c82eed5033d6ec2660905c18
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016922"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849879"
 ---
 # <a name="how-to-create-an-event-receiver"></a>如何：建立事件接收器
   藉由建立 *事件接收器*，您可以在使用者與 SharePoint 專案（例如清單或清單專案）互動時回應。 例如，當使用者變更行事曆或刪除連絡人清單中的名稱時，就會觸發事件接收器中的程式碼。 藉由遵循本主題，您可以瞭解如何將事件接收器新增至清單實例。
@@ -36,7 +38,7 @@ ms.locfileid: "86016922"
 
 1. 開啟您在 [逐步解說：建立 SharePoint 的網站資料行、內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)中所建立的專案。
 
-2. 在 **方案總管**中， **選擇名為**[實務] 的 SharePoint 專案節點。
+2. 在 **方案總管** 中， **選擇名為**[實務] 的 SharePoint 專案節點。
 
 3. 在功能表列上，選擇 [ **Project**  >  **加入新專案**]。
 
@@ -48,7 +50,7 @@ ms.locfileid: "86016922"
 
 6. 在 [ **您要哪一種類型的事件接收器？** ] 清單中，選擇 [ **清單專案事件**]。
 
-7. 在 [ **哪個專案應該是事件來源？** ] 清單中，選擇 [ **患者 (Clinic\Patients) **。
+7. 在 [ **哪個專案應該是事件來源？** ] 清單中，選擇 [ **患者 (Clinic\Patients)**。
 
 8. 在 [ **處理下列事件** ] 清單中，選取 [ **新增專案**] 旁的核取方塊，然後選擇 [ **完成]** 按鈕。
 
@@ -69,6 +71,6 @@ ms.locfileid: "86016922"
 
      選擇 [ **儲存** ] 按鈕之後，[ **患者名稱** ] 欄會自動更新為 Scott 棕色的名稱。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)

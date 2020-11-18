@@ -1,5 +1,7 @@
 ---
 title: 如何：建立實體之間的關聯 |Microsoft Docs
+description: 在 Visual Studio 中建立關聯，以定義商務資料連線中實體之間的關聯性 (BDC) 模型。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e736e0befe8aaf9a6c090615d0c43bb3f3116dbf
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016939"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849840"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>如何：建立實體之間的關聯
   您可以藉由建立關聯來定義商務資料連線中實體之間的關聯性 (BDC) 模型。 Visual Studio 會產生可提供模型取用者的方法，以及每個關聯的相關資訊。 這些方法可以由 SharePoint Web 組件、清單或自訂應用程式加以使用，以便在使用者介面 (UI) 中顯示資料關聯性。
@@ -43,13 +45,13 @@ ms.locfileid: "86016939"
 
 3. 如果您想要建立外鍵關聯，請選取 [ **為外鍵關聯** ] 核取方塊。
 
-    1. 在 [**識別碼對應**] 資料表的 [**來源**識別碼] 資料行中，選擇出現在**欄位**資料行中之每個相符類型描述元旁的識別碼。
+    1. 在 [**識別碼對應**] 資料表的 [**來源** 識別碼] 資料行中，選擇出現在 **欄位** 資料行中之每個相符類型描述元旁的識別碼。
 
          例如，在 [ **來源識別碼** ] 資料行中，選取 `ContactID` 類型描述元旁的 `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` 和 `ReadItem.salesOrder.SalesOrder.ContactID` 類型描述元。
 
 4. 如果您想要建立外部無索引鍵關聯，請清除 [ **為外鍵關聯** ] 核取方塊。
 
-5. 選擇 [確定] **** 按鈕。
+5. 選擇 [確定]  按鈕。
 
 6. 在 BDC 設計工具上，來源實體與目的地實體之間會出現代表關聯的線條。
 
@@ -61,7 +63,7 @@ ms.locfileid: "86016939"
 
      如需關聯導覽器方法的範例，請參閱 [建立實體之間的關聯](../sharepoint/creating-an-association-between-entities.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [建立實體之間的關聯](../sharepoint/creating-an-association-between-entities.md)
 - [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [如何：加入搜尋工具方法](../sharepoint/how-to-add-a-finder-method.md)

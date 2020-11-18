@@ -1,5 +1,7 @@
 ---
 title: 如何：建立 BDC 模型 |Microsoft Docs
+description: 使用適用于該專案類型的 Visual Studio 範本，然後將模型加入至任何 SharePoint 專案，以 (BDC) 模型建立商務資料連線。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 139da31ced1d32def450a1dc176ca241b0c4677f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f95533a5ad3955ee00829194bc4da1498baace0
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014542"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850672"
 ---
 # <a name="how-to-create-a-bdc-model"></a>如何：建立 BDC 模型
   您可以使用該專案類型的範本，然後將模型加入至任何 SharePoint 專案，來建立 (BDC) 模型的商務資料連線。 如需詳細資訊，請參閱 [建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)。 如需如何設計模型的詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -28,9 +30,9 @@ ms.locfileid: "86014542"
 1. 在功能表列上 **，選擇 [** 檔案  >  **新增**  >  **專案**]。
 
     > [!NOTE]
-    > 如果您的 IDE 設定為使用 Visual Basic 開發設定，請**選擇 [** 檔案  >  **新增專案**]。
+    > 如果您的 IDE 設定為使用 Visual Basic 開發設定，請 **選擇 [** 檔案  >  **新增專案**]。
 
-     此時會開啟 [新增專案]**** 對話方塊。
+     此時會開啟 [新增專案] 對話方塊。
 
 2. 在 **Visual Basic** 或 **Visual c #** 下，選擇 [ **Office/Sharepoint**]、[ **sharepoint 方案**]。
 
@@ -51,13 +53,13 @@ ms.locfileid: "86014542"
 
 6. 在 [ **加入新專案** ] 對話方塊中，選擇 [ **Office/SharePoint** ] 節點。
 
-7. 在 SharePoint 範本清單中，選擇 [ **商務資料連線模型 (伺服器陣列方案]) **。
+7. 在 SharePoint 範本清單中，選擇 [ **商務資料連線模型 (伺服器陣列方案])**。
 
 8. 在 [ **名稱** ] 方塊中，指定 BDC 模型的名稱，然後選擇 [ **加入** ] 按鈕。
 
-     **商務資料連線模型**專案會加入至專案。 依預設，此模型會顯示在 BDC 設計工具中。 如需詳細資訊，請參閱 [建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
+     **商務資料連線模型** 專案會加入至專案。 依預設，此模型會顯示在 BDC 設計工具中。 如需詳細資訊，請參閱 [建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [如何：將現有的 BDC 模型檔案新增至 SharePoint 專案](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [如何：使用資源檔來指定當地語系化的名稱、屬性和許可權](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)

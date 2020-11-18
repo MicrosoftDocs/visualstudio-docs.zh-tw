@@ -1,5 +1,7 @@
 ---
 title: 建立 SharePoint 的網站定義 |Microsoft Docs
+description: 建立 SharePoint 的網站定義。 網站定義會決定 SharePoint 網站的外觀和行為，以及其預設內容和功能。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f1a512218c3c1b7af179cfaba3e231a90941fe0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7585a4b80322afb37e816758fc7074806a443676
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015062"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850568"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>建立 SharePoint 的網站定義
   中的 SharePoint 網站定義專案 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 可讓您建立 *網站定義*，作為新 SharePoint 網站的基礎。 這些定義不僅能決定 SharePoint 網站的外觀和行為，也可以決定其預設內容和功能。 在定義中，您可以放入預先設定的清單、內容類型、事件接收器、影像和其他項目。 例如，SharePoint 包含了一些網站定義 (例如 BLOG)。 當您根據 BLOG 網站定義建立網站時，網站會包含清單、Web 元件，以及 BLOG 網站所需的其他專案。
@@ -38,13 +40,13 @@ ms.locfileid: "86015062"
 |---------------|-----------------|
 |*default.aspx*|新 SharePoint 網站的預設 ASPX 首頁。|
 |*onet.xml*|指定新網站的設定、網站定義範本的元件，以及預設行為。 這些設定可以包含屬性，例如已啟用的內容類型、預設清單視圖、檔範本檔案，以及網站隨附的網頁元件。 依預設， `Modules` 區段會列出要加入至 SharePoint 網站的檔案，以及它們的設定方式。|
-|*webtemp_ \<SiteDefinitionName> .xml*|指定出現在 [**新的 SharePoint 網站**] 頁面之**範本選擇**區段中的網站定義設定。|
+|*webtemp_ \<SiteDefinitionName> .xml*|指定出現在 [**新的 SharePoint 網站**] 頁面之 **範本選擇** 區段中的網站定義設定。|
 
- 依預設，所有網站定義都會儲存在* \<drive:> \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates*資料夾中。 每個網站定義都有自己的子資料夾。
+ 依預設，所有網站定義都會儲存在 *\<drive:> \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates* 資料夾中。 每個網站定義都有自己的子資料夾。
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|標題|說明|
 |-----------|-----------------|
 |[逐步解說：建立基本網站定義專案](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|帶領您逐步完成在中建立基本網站定義專案的步驟 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。|
 |[How to：建立自訂網站定義和設定](/previous-versions/office/developer/sharepoint-2010/ms454677(v=office.14))|說明如何藉由複製現有的網站定義並修改複本，在 SharePoint 中建立自訂網站定義。|
@@ -58,5 +60,5 @@ ms.locfileid: "86015062"
 |[程式設計 ASP.NET Web Pages](/previous-versions/aspnet/0yt4zca8(v=vs.100))|提供如何在頁面中建立事件處理常式 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] ，以及如何使用用戶端腳本的相關資訊。|
 |[Windows SharePoint Services 中的程式設計](/previous-versions/office/developer/sharepoint-services/ms430674(v=office.12))|描述如何使用中提供的 managed 物件模型 [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: SharePoint 錯誤的其他資訊 |Microsoft Docs
+description: 取得疑難排解 Visual Studio SharePoint 工具中發生之錯誤和警告的其他資訊。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c22f6570d741bce7f72ffd2c07f75cc8c6dc18b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 240913e93dc1945846613ac1ecc8d0141368f7b3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985071"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850425"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>SharePoint 錯誤的其他資訊
   您可以在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 疑難排解主題和公用論壇中，找到疑難排解 SharePoint 工具錯誤和警告的協助。
@@ -46,5 +48,5 @@ ms.locfileid: "72985071"
 
  如果您仍然找不到您需要的答案，可以存取線上支援選項，例如聯絡 Microsoft 產品支援服務或搜尋知識庫文章。 如需詳細資訊，請參閱 [Microsoft 說明及支援](https://support.microsoft.com/) 頁面。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)

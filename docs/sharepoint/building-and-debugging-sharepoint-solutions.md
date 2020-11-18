@@ -1,5 +1,7 @@
 ---
 title: 建立和調試 SharePoint 方案 |Microsoft Docs
+description: 瞭解如何建立和偵測 SharePoint 方案，並瞭解它與在 Visual Studio 中建立和調試其他類型專案的不同之處。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b34df23c8cb612d72fed108a6c0aecbf57875c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6801f6b60d2ef522385ecdf290d0a1913bd6df2
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016357"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850217"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>建置和偵錯 SharePoint 方案
   一般情況下，建立和偵錯工具 SharePoint 方案和在中建立和調試其他類型的專案相同 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 本節主題會說明兩者之間的差異。
@@ -28,10 +30,10 @@ ms.locfileid: "86016357"
 
 |組建專案|輸出資料夾|
 |----------------|-------------------|
-|元件、程式資料庫 (*.pdb*) 和 *.wsp* 檔案。|* \<ProjectName> \bin\debug*或* \<ProjectName> \bin\release*|
-|SharePoint 專案專案檔案。|* \<ProjectName> \pkg\debug*或* \<ProjectName> \pkg\release*|
-|建立中繼檔案。|* \<ProjectName> \obj\debug*或* \<ProjectName> \obj\release*|
-|封裝中繼檔案。|* \<ProjectName> \pkgobj\debug*或* \<ProjectName> \pkgobj\release*|
+|元件、程式資料庫 (*.pdb*) 和 *.wsp* 檔案。|*\<ProjectName> \bin\debug* 或 *\<ProjectName> \bin\release*|
+|SharePoint 專案專案檔案。|*\<ProjectName> \pkg\debug* 或 *\<ProjectName> \pkg\release*|
+|建立中繼檔案。|*\<ProjectName> \obj\debug* 或 *\<ProjectName> \obj\release*|
+|封裝中繼檔案。|*\<ProjectName> \pkgobj\debug* 或 *\<ProjectName> \pkgobj\release*|
 
 ## <a name="build-sharepoint-solutions"></a>建立 SharePoint 方案
  若要建立 SharePoint 方案，開發電腦必須安裝正確的 SharePoint server 版本。 否則，建立 SharePoint 方案和在中建立其他類型的專案一樣 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 如需詳細資訊，請參閱 [如何：建立 SharePoint 方案](../sharepoint/how-to-build-sharepoint-solutions.md)。
@@ -48,7 +50,7 @@ ms.locfileid: "86016357"
 ## <a name="using-the-clean-command"></a>使用 Clean 命令
  在 SharePoint 伺服器上安裝 SharePoint 方案進行偵錯工具時，[ **清除** ] 命令不會卸載方案。 相反地，您必須透過 SharePoint 設定停用這些功能。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)
 - [使用伺服器總管流覽 SharePoint 連接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

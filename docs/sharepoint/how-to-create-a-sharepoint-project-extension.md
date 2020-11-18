@@ -1,5 +1,7 @@
 ---
 title: 如何：建立 SharePoint 專案延伸模組 |Microsoft Docs
+description: 瞭解如何建立專案延伸，讓您可以將功能加入至 Visual Studio 中開啟的任何 SharePoint 專案。
+ms.custom: SEO-VS-2020
 ms.date: 04/28/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 191f5d718064a4e094a2c28e3f584168b20fb3fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad8ee37cba6f6f85e480fc0fe3ccaef081cefae4
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017161"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850659"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>如何：建立 SharePoint 專案延伸模組
   當您想要將功能加入至 Visual Studio 中開啟的任何 SharePoint 專案時，請建立專案延伸模組。 如需詳細資訊，請參閱 [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)。
@@ -199,7 +201,7 @@ ms.locfileid: "86017161"
 ## <a name="deploy-the-extension"></a>部署延伸模組
  若要部署擴充功能，請 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 為元件和您想要使用擴充功能散發的任何其他檔案，建立 (VSIX) 封裝的延伸模組。 如需詳細資訊，請參閱 [Visual Studio 中的部署 SharePoint 工具的擴充](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)功能。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)
 - [如何：將快捷方式功能表項目加入至 SharePoint 專案](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
 - [如何：將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)

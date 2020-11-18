@@ -1,5 +1,7 @@
 ---
 title: " (SharePoint 工具擴充性) 的 API 參考 |Microsoft Docs"
+description: 請參閱 Visual Studio 中擴充 SharePoint 工具的 API 參考檔。 查看相關命名空間的清單，例如 VisualStudio。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 37639068b74b5d99864871355a8b9ef36906f6cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4599a2c305558f2ef551d19abac210bdf05269f3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62987991"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850386"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a> (SharePoint 工具擴充性) 的 API 參考
   本章節包含在 Visual Studio 中擴充 SharePoint 工具的 API 參考檔。
@@ -29,7 +31,7 @@ ms.locfileid: "62987991"
 
  <xref:Microsoft.VisualStudio.SharePoint.Commands>
 
- 包含您可以用來建立自訂 *SharePoint 命令*的類型。 SharePoint 命令是從 SharePoint 工具擴充功能呼叫 SharePoint 伺服器物件模型的方法。
+ 包含您可以用來建立自訂 *SharePoint 命令* 的類型。 SharePoint 命令是從 SharePoint 工具擴充功能呼叫 SharePoint 伺服器物件模型的方法。
 
  <xref:Microsoft.VisualStudio.SharePoint.Deployment>
 
@@ -67,7 +69,7 @@ ms.locfileid: "62987991"
 
  包含用來自訂 SharePoint 專案的功能和封裝驗證行為的類型。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [&#40;SharePoint 工具擴充性的參考&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)
 - [SharePoint 工具擴充功能的程式設計模型總覽](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
 - [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)

@@ -1,5 +1,7 @@
 ---
 title: 如何：建立 SharePoint 命令 |Microsoft Docs
+description: 瞭解如何建立自訂 SharePoint 命令，以在 SharePoint 工具擴充功能中呼叫伺服器物件模型的 API。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15ea7ff86e90bf7a474f9d64c30a9803e3e20bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41e4ab0fd70f4993d148cd5c67cb816bdc92e77a
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016218"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850698"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>如何：建立 SharePoint 命令
   如果您想要在 SharePoint 工具擴充功能中使用伺服器物件模型，您必須建立自訂 *SharePoint 命令* 以呼叫 API。 您可以在可以直接呼叫伺服器物件模型的元件中定義 SharePoint 命令。
@@ -53,7 +55,7 @@ ms.locfileid: "86016218"
 
     - 第二個參數和傳回值必須是可由 Windows Communication Foundation (WCF) 序列化的型別。 如需詳細資訊，請參閱 [資料合約序列化程式支援的類型](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) 和 [使用 XmlSerializer 類別](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class)。
 
-    - 方法可以有任何可見度 (**public**、 **internal**或 **private**) ，而且可以是靜態或非靜態。
+    - 方法可以有任何可見度 (**public**、 **internal** 或 **private**) ，而且可以是靜態或非靜態。
 
 4. 將套用 <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> 至方法。 這個屬性會指定命令的唯一識別碼;此識別碼不需要符合方法名稱。
 
@@ -77,7 +79,7 @@ ms.locfileid: "86016218"
 ## <a name="deploying-the-command"></a>部署命令
  若要部署命令，請將命令元件包含在相同的 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 延伸模組 (*Vsix*) 封裝和使用命令的延伸模組元件。 您也必須在 extension.vsixmanifest 檔案中加入命令元件的專案。 如需詳細資訊，請參閱 [Visual Studio 中的部署 SharePoint 工具的擴充](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)功能。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [How to：執行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [逐步解說：擴充伺服器總管以顯示 web 元件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

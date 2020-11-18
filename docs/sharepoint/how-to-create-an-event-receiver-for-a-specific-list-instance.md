@@ -1,6 +1,8 @@
 ---
 title: 如何：為特定的清單實例建立事件接收器 |Microsoft Docs
 titleSuffix: ''
+description: 為特定的清單實例建立事件接收器。 清單實例事件接收器會回應任何清單定義實例中發生的事件。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c37da8b798c3b6a0fdc093d5c443584f68b4b5cc
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 8bd76f2aafc5d0b3058dcaba68b6f3099f01ff8d
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585832"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849892"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>如何：為特定的清單實例建立事件接收器
   清單實例事件接收器會回應任何清單定義實例中發生的事件。 雖然事件接收器範本未啟用特定清單實例的目標，但您可以修改範圍為清單定義的事件接收器，以回應特定清單實例中的事件。
@@ -50,7 +52,7 @@ ms.locfileid: "91585832"
 
 8. 在 [ **處理下列事件** ] 清單中，選取 [ **要加入的專案** ] 核取方塊，然後選擇 [ **完成]** 按鈕。
 
-9. 在 **方案總管**的 [EventReceiver1] 下，開啟 *Elements.xml*。
+9. 在 **方案總管** 的 [EventReceiver1] 下，開啟 *Elements.xml*。
 
      事件接收器目前是使用下列程式碼行參考 [公告] 清單定義：
 
@@ -84,8 +86,8 @@ ms.locfileid: "91585832"
 
 17. 加入新的公告。
 
-     請注意，因為接收者設定為只回應自訂公告清單實例 **TestAnnouncements**中的事件，所以不會在新的公告上觸發事件接收器。
+     請注意，因為接收者設定為只回應自訂公告清單實例 **TestAnnouncements** 中的事件，所以不會在新的公告上觸發事件接收器。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [如何：建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)

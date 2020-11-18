@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 2223aecd66da721ff1afe9877853c8a00c837611
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 9072676dfc96ffc6286f81785048eca8ec46b0b8
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862226"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850503"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>如何自訂 codespace (預覽) 
 
@@ -28,7 +28,7 @@ Windows codespaces 隨附許多已安裝的架構和工具，可讓您立即開�
 
 | 應用程式                                         | 路徑別名 | 版本            |
 |---------------------------------------------|------------|--------------------|
-| .NET                                        | N/A        | 4.8                |
+| .NET                                        | 不適用        | 4.8                |
 | .NET Core 執行階段                           | dotnet     | 2.1、3。1           |
 | .NET Core SDK                               | dotnet     | 2.1、3.1.3、3.1。4  |
 | Azure CLI                                   | Az         | 2.5                |
@@ -36,13 +36,13 @@ Windows codespaces 隨附許多已安裝的架構和工具，可讓您立即開�
 | CMake                                       | cmake      | 3.17               |
 | Git                                         | git        | 2.26               |
 | Microsoft build                             | msbuild    | 16.7               |
-| Microsoft SQL Server Express 版本2019   | N/A        | 15.0               |
+| Microsoft SQL Server Express 版本2019   | 不適用        | 15.0               |
 | Ninja                                       | 忍者      | 1.8.2              |
 | Node.js                                     | node       | 12.16              |
 | NPM                                         | npm        | 6.14               |
 | Python                                      | Python     | 3.7                |
 | VC 封裝管理員                          | vcpkg      | 2020.02            |
-| Windows SDK                                 | N/A        | 10.0.18362         |
+| Windows SDK                                 | 不適用        | 10.0.18362         |
 
 上面的清單並不完整，也排除了許多 Visual Studio 安裝的工具 (例如 IISExpress) 。 元件的次要或修補程式版本也可能與上面所述的版本不同。
 
@@ -67,7 +67,7 @@ GitHub Codespaces 的真正價值，在於您可以在雲端中建立獨特且�
 
 建立 codespace 時，GitHub Codespaces 會尋找存放庫根目錄中的檔案 [*devcontainers.js*](https://code.visualstudio.com/docs/remote/devcontainerjson-reference) ，並使用中的設定來自訂 codespace 或連接到它的用戶端實例 (瀏覽器基底編輯器、Visual Studio 或 Visual Studio Code) 。 大部分的 *devcontainer.js* 設定都適用于以 Linux 為基礎的 codespaces 或其他兩個用戶端，但有些則適用于 Windows codespaces 和 Visual Studio。
 
-檔案 * 上的devcontainer.js* 可以放在存放庫中的兩個位置之一：
+檔案 *上的devcontainer.js* 可以放在存放庫中的兩個位置之一：
 
 1. *{存放庫-根目錄}/.devcontainer.js開啟*
 2. *{存放庫-根目錄}/.devcontainer/devcontainer.js于*
@@ -80,17 +80,17 @@ GitHub Codespaces 支援屬性上的下列 *devcontainer.js* 。 如果您想要
 * `postCreateCommand` -在建立 codespace 之後要執行的命令字串或命令引數清單。
 
 > [!NOTE]
-> 檔案**上的devcontainer.js**也用來支援 Visual Studio Code[遠端開發](https://code.visualstudio.com/docs/remote/remote-overview)，並且具有本檔未涵蓋的其他屬性。 您可以安全地將這些額外的屬性新增至檔案，但 Codespaces 會忽略這些屬性。 如需詳細資訊，請參閱 code.visualstudio.com [ 上的參考devcontainer.js](https://code.visualstudio.com/docs/remote/devcontainerjson-reference) 。
+> 檔案 **上的devcontainer.js** 也用來支援 Visual Studio Code [遠端開發](https://code.visualstudio.com/docs/remote/remote-overview)，並且具有本檔未涵蓋的其他屬性。 您可以安全地將這些額外的屬性新增至檔案，但 Codespaces 會忽略這些屬性。 如需詳細資訊，請參閱 code.visualstudio.com [ 上的參考devcontainer.js](https://code.visualstudio.com/docs/remote/devcontainerjson-reference) 。
 
 ## <a name="customize-with-devinit"></a>使用 devinit 自訂
 
-[devinit](../../devinit/getting-started-with-devinit.md) 是 Windows codespaces 中包含的命令列工具，可讓您將架構和工具安裝到您的環境中。 您可以從命令提示字元以手動方式執行 (`devinit -t require-dotnetcoresdk`) 但其真正的威力在於建立檔案的自訂[ *.devinit.js* ](../../devinit/devinit-json.md) ，以便在每次建立時一致地設定 codespace。
+[devinit](../../devinit/getting-started-with-devinit.md) 是 Windows codespaces 中包含的命令列工具，可讓您將架構和工具安裝到您的環境中。 您可以從命令提示字元以手動方式執行 (`devinit run -t require-dotnetcoresdk`) 但其真正的威力在於建立檔案的自訂 [ *.devinit.js*](../../devinit/devinit-json.md) ，以便在每次建立時一致地設定 codespace。
 
 `devinit` 包含一組用來安裝特定專案的工具，例如 SQL Server 和 Azure CLI，以及執行一般套件管理員（例如 chocolatey、npm 和 vcpkg）。 您可以 `devinit` 在 [ [可用的工具](../../devinit/devinit-tool-list.md) ] 檔中找到完整的工具清單。
 
 ### <a name="devinitjson"></a>devinit.js開啟
 
-雖然您可以直接執行 `devinit` 命令列，但建議您在設定檔 [* 上建立devinit.js*](../../devinit/devinit-json.md) ，以描述 `devinit` 要執行的工具組。 
+雖然您可以直接執行 `devinit` 命令列，但建議您在設定檔 [*上建立devinit.js*](../../devinit/devinit-json.md) ，以描述 `devinit` 要執行的工具組。 
 
 例如，若要安裝 [.NET Core SDK](/dotnet/core/sdk)， *.devinit.js* 會顯示如下：
 
@@ -114,7 +114,7 @@ GitHub Codespaces 支援屬性上的下列 *devcontainer.js* 。 如果您想要
 
 您可以 `devinit` 使用 `postCreateCommand` *devcontainers.json* 檔案中的屬性，指示 GitHub Codespaces 在 codespace 建立之後執行。 如上所述，GitHub Codespaces 會尋找您所複製存放庫中的檔案 *devcontainer.js* ，以便自訂 codespace 或用戶端實例，並將執行屬性中所述的任何命令 `postCreateCommand` 。
 
-藉由指定 `devinit init` ， `devinit` 將會使用您 * 的devinit.js* 設定來執行。
+藉由指定 `devinit init` ， `devinit` 將會使用您 *的devinit.js* 設定來執行。
 
 ```json
 {
@@ -126,7 +126,7 @@ GitHub Codespaces 支援屬性上的下列 *devcontainer.js* 。 如果您想要
 
 以下是安裝 .NET Core Entity Framework 命令列工具的簡單範例 `dotnet-ef` 。
 
-**devcontainer.js開啟**
+**devcontainer.json**
 
 存放庫根目錄中檔案 *.devcontainer.js* 的內容。 
 
@@ -138,7 +138,7 @@ GitHub Codespaces 支援屬性上的下列 *devcontainer.js* 。 如果您想要
 
 **devinit.js開啟**
 
-檔案 *.devinit.js* 的內容。 此檔案必須位於與 *.devcontainer.js*的相同資料夾中。
+檔案 *.devinit.js* 的內容。 此檔案必須位於與 *.devcontainer.js* 的相同資料夾中。
 
 ```json
 {
