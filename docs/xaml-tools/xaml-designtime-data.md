@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 1dd0b4df440f6addd474ef08e7bf0b2958a58076
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: bda4af3a3985ec6fc3aae1e991b7f5f622d67965
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492890"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703997"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>使用 XAML 設計工具的設計階段資料 Visual Studio
 
@@ -177,11 +177,11 @@ xmlns:models="clr-namespace:Cities.Models"
 
 如果您遇到本節未列出的問題，請使用「回報 [問題](../ide/how-to-report-a-problem-with-visual-studio.md) 」工具讓我們知道。
 
-### <a name="requirements"></a>規格需求
+### <a name="requirements"></a>需求
 
 - 設計階段資料需要 Visual Studio 2019 [16.7](/visualstudio/releases/2019/release-notes) 版或更新版本。
 
-- 支援以適用于 .NET Core 和 UWP 的 Windows Presentation Foundation (WPF) 為目標的 Windows 桌面專案。 如果您已啟用 [適用于 .NET Framework 的新 WPF XAML 設計工具] 預覽功能，.NET Framework 也可以使用這項功能。
+- 支援以適用于 .NET Core 和 UWP 的 Windows Presentation Foundation (WPF) 為目標的 Windows 桌面專案。 .NET Framework 的 [預覽頻道](/visualstudio/releases/2019/release-notes-preview) 也提供這項功能。 若要啟用它，請移至 [**工具**  >  **選項**  >  **環境**  >  **預覽功能**]，選取 [**新增 WPF XAML 設計工具進行 .NET Framework** ，然後重新開機 Visual Studio。
 
 - 從 Visual Studio 2019 16.7 版開始，此功能可與 WPF 和 UWP 架構中的所有現成控制項搭配使用。 16.8 預覽版本現在提供協力廠商控制項的支援。
 
@@ -189,7 +189,7 @@ xmlns:models="clr-namespace:Cities.Models"
 
 請嘗試關閉並重新開啟 XAML 檔案，並清除並重建您的專案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 Xamarin 預覽設計階段資料](/xamarin/xamarin-forms/xaml/xaml-Designer/design-time-data/)
 - [WPF 應用程式中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)

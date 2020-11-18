@@ -1,6 +1,6 @@
 ---
 title: 在 Visual Studio 中使用 GitHub 帳戶
-ms.date: 11/13/2020
+ms.date: 11/16/2020
 ms.custom: ''
 ms.topic: conceptual
 description: 瞭解如何搭配使用 Visual Studio 與 GitHub 帳戶。
@@ -10,16 +10,16 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: cdea71e2d5c376e465bb5cdb990ec7ed45caa1f3
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 845b663a3a0828806766fa0609e45efafabec50a
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672355"
+ms.locfileid: "94704015"
 ---
 # <a name="work-with-github-accounts-in-visual-studio"></a>在 Visual Studio 中使用 GitHub 帳戶
 
-如果您有公用 GitHub 或 GitHub Enterprise 帳戶，您可以將它新增至您的 Visual Studio keychain。 新增您的帳戶之後，您就可以直接從 Visual Studio 存取和建立 GitHub 儲存機制，以利用平臺整合。  
+如果您有公用 GitHub 或 GitHub Enterprise 帳戶，您可以將它新增至您的 Visual Studio keychain。 新增您的帳戶之後，您就可以直接從 Visual Studio 存取和建立 GitHub 儲存機制，以利用平臺整合。
 
 ## <a name="adding-public-github-accounts"></a>新增公用 GitHub 帳戶
 

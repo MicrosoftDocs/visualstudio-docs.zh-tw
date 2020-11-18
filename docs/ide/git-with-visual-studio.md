@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 621aed831e55d2fca1fda7063f8c10f859ca5157
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 30ae69f07c89efb6d01228088596fc1bc05fac87
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672518"
+ms.locfileid: "94704062"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio 中的 Git 體驗
 
@@ -35,7 +35,7 @@ Git 現在是 Visual Studio 2019 中的預設版本控制體驗。 自 [16.6 版
 - [複製現有的 Git 存放庫](#clone-an-existing-git-repository)。 如果您想要處理的程式碼不在您的電腦上，您可以複製任何現有的遠端存放庫。
 
 > [!NOTE]
-> Visual Studio 2019 現在提供完全整合的 GitHub 帳戶體驗。 從 [16.8 版](/visualstudio/releases/2019/release-notes/)開始，您可以將 GitHub 和 GitHub Enterprise 帳戶新增至 keychain。 您可以像使用 Microsoft 帳戶一樣，加入及使用它們，這表示您可以更輕鬆地跨 Visual Studio 存取 GitHub 資源。 如需詳細資訊，請參閱 [Visual Studio 頁面中的使用 GitHub 帳戶](work-with-github-accounts.md) 。
+> 此外，從 [16.8 版](/visualstudio/releases/2019/release-notes/)開始，Visual Studio 2019 包含完全整合的 GitHub 帳戶體驗。 您現在可以將 GitHub 和 GitHub Enterprise 帳戶新增至 keychain。 您可以像使用 Microsoft 帳戶一樣，加入及使用它們，這表示您可以更輕鬆地跨 Visual Studio 存取 GitHub 資源。 如需詳細資訊，請參閱 [Visual Studio 頁面中的使用 GitHub 帳戶](work-with-github-accounts.md) 。
 
 ## <a name="create-a-new-git-repository"></a>建立新的 Git 存放庫
 
