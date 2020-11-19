@@ -1,7 +1,7 @@
 ---
 title: 使用 devinit 消費者入門
 description: Devinit 的使用者入門指南。
-ms.date: 08/28/2020
+ms.date: 11/18/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1f66f691bd92c6cc9d315c58225b9345198fe96d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d071a49c9996c9f7f161faf676117704fbcbbdcd
+ms.sourcegitcommit: 3b9a8aec34c7e835069f4db5c133dd002028180c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435763"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94937692"
 ---
 # <a name="getting-started-with-devinit"></a>使用 devinit 消費者入門
 
@@ -32,7 +32,9 @@ devinit 目前僅在使用 Visual Studio 時可作為 GitHub Codespaces 的一�
 
 最重要的步驟是在檔案的 [.devinit.js](devinit-json.md)中定義您的「開發」環境。 當您執行時，devinit 會使用此檔案來建立您的環境 `devinit init` 。
 
-在此步驟中，請考慮您要讓某人啟動並執行專案儲存機制的指示。 例如，他們是否需要安裝 SQL？ 特定版本的 .NET Core？ 依此類推。 然後針對每個相依性，在 [工具清單](devinit-tool-list.md) 中尋找對應的 devinit 工具，並將其新增至存放庫的檔案 `.devinit.json` 。 您也可以在 [範例檔](sample-readme.md)中查看所選的範例。
+在此步驟中，請考慮您要讓某人啟動並執行專案儲存機制的指示。 例如，他們是否需要安裝 SQL？ 特定版本的 .NET Core？ 依此類推。 然後針對每個相依性，在 [工具清單](devinit-tool-list.md) 中尋找對應的 devinit 工具，並將其新增至存放庫的檔案 `.devinit.json` 。
+
+您也可以在 [範例檔](sample-readme.md)中查看一系列的範例，或查看 [教學](tutorial.md)課程。
 
 ## <a name="step-3-enjoy"></a>步驟3：享受！
 
