@@ -1,5 +1,7 @@
 ---
 title: 使用 MSBuild 工作建立 SharePoint 方案套件
+description: 瞭解如何在開發電腦上使用命令列 MSBuild 工作，以建立、清理和驗證 SharePoint 方案套件 ( .wsp) 。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c59a38e1153a57c1bd886121eeac244075045a42
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2979073414434d2b8f5be9d070b6b505c09ee14
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017015"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903724"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>如何：使用 MSBuild 工作建立 SharePoint 方案套件
   您可以在開發電腦上使用命令列 MSBuild 工作，以建立、清理和驗證 SharePoint 封裝 (*.wsp) 。* 您也可以使用這些命令，藉由在組建電腦上使用 Team Foundation Server，將組建程式自動化。
@@ -26,7 +28,7 @@ ms.locfileid: "86017015"
 
 #### <a name="to-build-a-sharepoint-package"></a>若要建立 SharePoint 封裝
 
-1. 在 Windows [**開始**] 功能表上，選擇 [**所有程式**附屬應用程式]  >  **Accessories**  >  **命令提示**字元。
+1. 在 Windows [**開始**] 功能表上，選擇 [**所有程式** 附屬應用程式]  >  **Accessories**  >  **命令提示** 字元。
 
 2. 變更至您的 SharePoint 專案所在的目錄。
 

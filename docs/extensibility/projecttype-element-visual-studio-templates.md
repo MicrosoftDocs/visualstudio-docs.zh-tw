@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的 ProjectType 元素) |Microsoft Docs"
+description: 深入瞭解 ProjectType 元素，以及它如何將專案範本分類，使其出現在 [新增專案] 或 [加入新專案] 對話方塊中。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d794bd5e81e77a892b5a3be38ff73ab805582dd7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2bd457bfb639ff0def2662476e60c8736e14b3ce
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701800"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903815"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a> (Visual Studio 範本的 ProjectType 元素) 
 將專案範本分類，使其出現在 [ **新增專案** ] 或 [ **加入新** 專案] 對話方塊的指定群組中。
@@ -48,7 +50,7 @@ ms.locfileid: "80701800"
 
 |項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。

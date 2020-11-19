@@ -1,5 +1,7 @@
 ---
 title: 如何：定義方法實例 |Microsoft Docs
+description: 瞭解如何在您的商務資料連線 (BDC) 模型中定義方法的方法實例。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 170982a5d4abe33ca8cd705a979acc0737185a9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 751683873d98e6c7aedc7228e0a91fb59117993b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016833"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903620"
 ---
 # <a name="how-to-define-a-method-instance"></a>如何：定義方法實例
   您至少必須針對模型中的每個方法定義一個方法實例。

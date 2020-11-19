@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的 ProvideDefaultName 元素) |Microsoft Docs"
+description: 瞭解 ProvideDefaultName 元素，以及它如何指定 Visual Studio 是否會在 [加入新專案] 或 [新增專案] 對話方塊中產生預設 Visual Studio 名稱。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 192716198f605a5f6b4f62730e84dcf83b4229cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7732c6f02ae5ec086a89bd9ade5c00ea533a68f2
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701710"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903802"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a> (Visual Studio 範本的 ProvideDefaultName 元素) 
 指定 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案系統是否會在 [ **加入新專案** ] 或 [ **新增專案** ] 對話方塊中，產生範本的預設名稱。
@@ -45,7 +47,7 @@ ms.locfileid: "80701710"
 
 |項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。

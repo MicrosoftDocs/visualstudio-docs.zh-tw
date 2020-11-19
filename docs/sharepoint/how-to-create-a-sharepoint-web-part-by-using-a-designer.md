@@ -1,6 +1,8 @@
 ---
 title: 如何：使用設計工具建立 SharePoint Web 元件 |Microsoft Docs
 titleSuffix: ''
+description: 藉由將視覺 web 元件專案加入至 SharePoint 專案來建立網頁元件，該專案會在 Visual Studio 中開啟 Visual Web Developer designer。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d19822237f61d5404f42e30078541a735eb206bc
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 09b237704a5b42f75c2239bd6d159e3d58e3025e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584109"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903711"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>如何：使用設計工具建立 SharePoint Web 元件
   您可以藉由將 **視覺 Web 元件** 專案加入至任何 SharePoint 專案，來建立網頁元件。 這會開啟 [Visual Studio 中的 Visual Web Developer designer，您可以在其中將控制項和程式碼新增至網頁元件。 視覺網頁元件的運作方式與 web 元件相同。 唯一的差別在於，您可以在 Visual Web Developer 設計工具中設計視覺化網頁元件。
@@ -29,7 +31,7 @@ ms.locfileid: "91584109"
 
 1. 在功能表列上 **，選擇 [** 檔案  > **新增**  >  **專案**]。
 
-     此時會開啟 [新增專案]**** 對話方塊。
+     此時會開啟 [新增專案] 對話方塊。
 
 2. 在 [ **新增專案** ] 對話方塊的 [ **Visual c #** ] 或 [ **Visual Basic**] 下，展開 [ **Office/SharePoint** ] 節點，然後選擇 [ **SharePoint 方案** ] 類別。
 
@@ -39,7 +41,7 @@ ms.locfileid: "91584109"
 
 4. 在 [ **指定偵錯工具的網站和安全性等級** ] 頁面上，指定本機電腦上的 SHAREPOINT 網站 URL，然後選擇 [ **完成]** 按鈕。
 
-     在 **方案總管**中，會顯示網頁元件。 在 Visual Web Developer designer 中設計網頁元件之後，您將在指定的網站上進行測試。
+     在 **方案總管** 中，會顯示網頁元件。 在 Visual Web Developer designer 中設計網頁元件之後，您將在指定的網站上進行測試。
 
 ### <a name="to-add-a-visual-web-part-to-an-existing-sharepoint-project"></a>將視覺網頁元件加入至現有的 SharePoint 專案
 
@@ -49,7 +51,7 @@ ms.locfileid: "91584109"
 
 3. 在專案範本清單中，選擇 [ **視覺網頁元件**]、[命名]，然後選擇 [ **加入** ] 按鈕。
 
-     在 **方案總管**中，您的網頁元件隨即出現。 在 Visual Web Developer designer 中設計網頁元件之後，您將在指定的網站上進行測試。
+     在 **方案總管** 中，您的網頁元件隨即出現。 在 Visual Web Developer designer 中設計網頁元件之後，您將在指定的網站上進行測試。
 
 ## <a name="see-also"></a>另請參閱
 - [建立 SharePoint 的網頁元件](../sharepoint/creating-web-parts-for-sharepoint.md)

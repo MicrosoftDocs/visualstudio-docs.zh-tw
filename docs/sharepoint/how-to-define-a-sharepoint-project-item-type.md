@@ -1,5 +1,7 @@
 ---
 title: 如何：定義 SharePoint 專案專案類型 |Microsoft Docs
+description: 瞭解如何在您想要建立自訂 SharePoint 專案專案時，定義專案專案類型。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae709bf2d81e2b8b00dc984602c0426fdf272ebd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78b10e6878301a878de14306f92f425402e1cc17
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016851"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903607"
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>如何：定義 SharePoint 專案專案類型
   當您想要建立自訂 SharePoint 專案專案時，請定義專案專案類型。 如需詳細資訊，請參閱 [定義自訂 SharePoint 專案專案類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)。
@@ -40,9 +42,9 @@ ms.locfileid: "86016851"
 
     - <xref:System.ComponentModel.Composition.ExportAttribute>. 這個屬性可讓 Visual Studio 探索和載入您的 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> 執行。 將型別傳遞 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> 至屬性（attribute）的函式。
 
-    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. 在專案專案類型定義中，這個屬性會指定新專案專案的字串識別碼。 建議您使用 *公司名稱*格式。*功能名稱* ，以協助確保所有專案專案都有唯一的名稱。
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. 在專案專案類型定義中，這個屬性會指定新專案專案的字串識別碼。 建議您使用 *公司名稱* 格式。*功能名稱* ，以協助確保所有專案專案都有唯一的名稱。
 
-    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. 這個屬性會指定要在 **方案總管**中為此專案專案顯示的圖示。 這個屬性是選擇性的;如果您未將它套用至您的類別，Visual Studio 會顯示專案專案的預設圖示。 如果設定此屬性，請傳遞內嵌在元件中的圖示或點陣圖的完整名稱。
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. 這個屬性會指定要在 **方案總管** 中為此專案專案顯示的圖示。 這個屬性是選擇性的;如果您未將它套用至您的類別，Visual Studio 會顯示專案專案的預設圖示。 如果設定此屬性，請傳遞內嵌在元件中的圖示或點陣圖的完整名稱。
 
 5. 在方法的執行中 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> ，請使用 *projectItemTypeDefinition* 參數的成員來定義專案專案類型的行為。 這個參數是一個 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> 物件，可讓您存取和介面中定義的事件 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> 。 若要存取專案專案類型的特定實例，請處理 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> 事件，例如 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> 和 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized> 。
 

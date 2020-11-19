@@ -1,5 +1,7 @@
 ---
 title: 如何：定義參數的類型描述元 |Microsoft Docs
+description: 瞭解如何在您的商務資料連線 (BDC) 模型中，為方法定義參數的類型描述元。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0b3ae803576c98a86a45d175af45aa28b3852134
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8044f04902e74b2597d6cf331e54eb4a6138817a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016846"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903594"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>如何：定義參數的類型描述元
   類型描述元包含描述參數資料類型的屬性。 類型描述元可以定義欄位、實體或實體集合。 如需詳細資訊，請參閱 [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))。
@@ -71,7 +73,7 @@ ms.locfileid: "86016846"
 
      [ **BDC Explorer** ] 視窗隨即開啟。
 
-4. 在 [ **BDC Explorer**] 中，開啟類型描述項的快捷方式功能表，然後選擇 [ **加入類型描述**元]。
+4. 在 [ **BDC Explorer**] 中，開啟類型描述項的快捷方式功能表，然後選擇 [ **加入類型描述** 元]。
 
      新的類型描述元便會做為子類型描述元加入至實體類型描述元。 將此類型描述元設定為欄位。
 
@@ -113,7 +115,7 @@ ms.locfileid: "86016846"
 
     [ **BDC Explorer** ] 視窗隨即開啟。
 
-7. 在 [ **BDC Explorer**] 中，開啟類型描述項的快捷方式功能表，然後選擇 [ **加入類型描述**元]。
+7. 在 [ **BDC Explorer**] 中，開啟類型描述項的快捷方式功能表，然後選擇 [ **加入類型描述** 元]。
 
     新的類型描述元便會做為子類型描述元加入集合類型描述元。 將此類型描述元設定為實體。
 

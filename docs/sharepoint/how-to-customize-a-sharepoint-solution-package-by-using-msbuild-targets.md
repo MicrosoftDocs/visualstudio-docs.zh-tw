@@ -1,6 +1,8 @@
 ---
 title: 使用 MSBuild 目標自訂 SharePoint 方案套件
 titleSuffix: ''
+description: 從命令提示字元使用 MSBuild 目標，自訂 Visual Studio 如何建立 SharePoint 方案套件檔案 ( .wsp) 。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9845f755d184c18b6b5ade4c5504e393edae7b00
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5aa0afbe685c85d9a005dc621f58f17d396c0236
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585806"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903646"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>如何：使用 MSBuild 目標自訂 SharePoint 方案套件
   藉由在命令提示字元中使用 MSBuild 目標，您可以自訂 Visual Studio 如何 (*.wsp*) 建立 SharePoint 封裝檔案。 例如，您可以自訂變更封裝中繼目錄的 MSBuild 屬性，以及自訂指定列舉檔案的 MSBuild 項目群組。
@@ -44,7 +46,7 @@ ms.locfileid: "91585806"
 
 3. 開啟專案，開啟其快捷方式功能表，然後選擇 **[卸載專案**]。
 
-4. 在**方案總管**中，開啟專案的快捷方式功能表，然後選擇 [**編輯**] * \<ProjectName> . [vbproj* ] 或 [**編輯** * \<ProjectName> .csproj*]。
+4. 在 **方案總管** 中，開啟專案的快捷方式功能表，然後選擇 [**編輯**] *\<ProjectName> . [vbproj* ] 或 [**編輯** *\<ProjectName> .csproj*]。
 
 5. 在專案檔結尾附近的 `Import` 這行後面，加入下列程式碼。
 
@@ -54,13 +56,13 @@ ms.locfileid: "91585806"
 
 6. 儲存並關閉專案檔。
 
-7. 在 **方案總管**中，開啟專案的快捷方式功能表，然後選擇 [ **重載專案**]。
+7. 在 **方案總管** 中，開啟專案的快捷方式功能表，然後選擇 [ **重載專案**]。
 
    當您發行專案時，訊息會在封裝開始之前出現在輸出中。
 
 #### <a name="to-customize-the-afterlayout-target"></a>自訂 AfterLayout 目標
 
-1. 在功能表列上 **，選擇 [**  >  **開啟**檔案]  >  ** **。
+1. 在功能表列上 **，選擇 [**  >  **開啟** 檔案]  >  ****。
 
 2. 在 [ **開啟** 檔案] 對話方塊中，流覽至專案資料夾，選擇 [CustomLayout] 檔案，然後選擇 [ **開啟** ] 按鈕。
 

@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的參考元素) |Microsoft Docs"
+description: 瞭解 References 元素，以及它如何將範本加入至專案的元件參考分組。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef31c5e7550ec7c6e4570d156d364afcf4ad6819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2576a56bf223fd1b3a1ba4903595cc25144011ec
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701607"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903740"
 ---
 # <a name="references-element-visual-studio-templates"></a> (Visual Studio 範本的參考元素) 
 將範本加入至專案的元件參考組成群組。
@@ -58,7 +60,7 @@ ms.locfileid: "80701607"
 ## <a name="remarks"></a>備註
  `References` 是 `TemplateContent` 的選擇性子項目。
 
- `Reference`和 `References` 元素只能用在具有屬性值 *.vstemplate*的 .vstemplate 檔案中。 `Type` `Item`
+ `Reference`和 `References` 元素只能用在具有屬性值 *.vstemplate* 的 .vstemplate 檔案中。 `Type` `Item`
 
 ## <a name="example"></a>範例
  下列範例說明 `TemplateContent` 專案範本的元素。 這個 XML 會將參考加入 *System.dll* 和 *System.Data.dll* 元件。

@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的 ShowByDefault 元素) "
+description: 深入瞭解 ShowByDefault 元素，以及當設定為 false 時，會指定範本只會顯示在指定的 TemplateGroupID 下。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b17a9a29b55721695509deed6b3d33cc7554aa9
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700101"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903971"
 ---
 # <a name="showbydefault-element-visual-studio-templates"></a> (Visual Studio 範本的 ShowByDefault 元素) 
 如果為 `false` ，則指定範本只會顯示在指定的 [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)下。
@@ -46,7 +48,7 @@ ms.locfileid: "80700101"
 
 |項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。

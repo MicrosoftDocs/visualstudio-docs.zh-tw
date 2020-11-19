@@ -1,5 +1,7 @@
 ---
 title: 新增其他語言的編輯器支援
+description: 瞭解 Visual Studio 編輯器如何支援閱讀和流覽不同的電腦語言，以及如何新增其他語言的支援。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c6761e74e68bad1ef800246d400c79b9689a18c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7bf84f4e48b9f070b3cebed4c2e17e5fc07992e3
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809068"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903893"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>新增其他語言的 Visual Studio 編輯器支援
 
@@ -29,7 +31,7 @@ ms.locfileid: "90809068"
 
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>語法顏色標示、陳述式完成和「巡覽至」支援
 
-Visual Studio 編輯器中的語法顏色標示、陳述式完成 (也稱為 IntelliSense) 和「巡覽至」__ 等功能，可協助您更輕鬆地撰寫、閱讀和編輯您的程式碼。 下列螢幕擷取畫面顯示在 Visual Studio 中編輯 Perl 指令碼的範例。 語法會自動以色彩標示。 比方說，程式碼中的註解會標示為綠色、程式碼為黑色、路徑為是紅色，陳述式則為藍色。 Visual Studio 編輯器會自動將語法顏色標示套用至任何支援的語言。 此外，當您開始輸入已知的語言關鍵字或物件時，陳述式完成就會顯示可能陳述式和物件的清單。 陳述式完成可協助您更快速且輕鬆地撰寫程式碼。
+Visual Studio 編輯器中的語法顏色標示、陳述式完成 (也稱為 IntelliSense) 和「巡覽至」等功能，可協助您更輕鬆地撰寫、閱讀和編輯您的程式碼。 下列螢幕擷取畫面顯示在 Visual Studio 中編輯 Perl 指令碼的範例。 語法會自動以色彩標示。 比方說，程式碼中的註解會標示為綠色、程式碼為黑色、路徑為是紅色，陳述式則為藍色。 Visual Studio 編輯器會自動將語法顏色標示套用至任何支援的語言。 此外，當您開始輸入已知的語言關鍵字或物件時，陳述式完成就會顯示可能陳述式和物件的清單。 陳述式完成可協助您更快速且輕鬆地撰寫程式碼。
 
 ![Perl 指令碼中的語法顏色標示](../ide/media/vside_perledit.png)
 
@@ -103,7 +105,7 @@ Visual Studio 藉由使用 [TextMate 文法](https://manual.macromates.com/en/la
 
 如果適用於您的情況，在此基底路徑下，新增下列資料夾︰
 
-|資料夾名稱|描述|
+|資料夾名稱|說明|
 |-----------------|-----------------|
 |\\*\<language name>*|語言資料夾。 取代 *\<language name>* 為語言的名稱。 例如 *\Matlab*。|
 |*\Syntaxes*|文法資料夾。 包含語言的 *文法檔案* ，例如 *Matlab.json*。|

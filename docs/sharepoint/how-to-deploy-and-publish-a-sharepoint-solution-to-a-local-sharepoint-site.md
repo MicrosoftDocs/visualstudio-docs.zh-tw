@@ -1,6 +1,8 @@
 ---
 title: 將 SharePoint 方案部署 & 發行至本機 SharePoint 網站
 titleSuffix: ''
+description: 複習如何將 SharePoint 方案部署或發佈至開發電腦上的本機 SharePoint 伺服器。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,27 +16,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 78a837cc7145187fbc529e6e86cc27f88dd81f51
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 65683544f345a2378fdec559f582985ffec7bc43
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585793"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903581"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>如何：將 SharePoint 方案部署和發行至本機 SharePoint 網站
   您可以將 SharePoint 方案部署或發佈至開發電腦上的本機 SharePoint 伺服器。 部署程式會將 *.wsp* 檔案複製到 SharePoint 伺服器、安裝方案，然後啟動這些功能。 發佈程式只會將 *.wsp* 檔案複製到 SharePoint 伺服器，並加以安裝。 您必須手動啟用它，才能在 SharePoint 中啟用它。
 
 ## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>將 SharePoint 方案部署到本機 SharePoint server
 
-1. 在 **方案總管**中，選擇您想要部署的專案。
+1. 在 **方案總管** 中，選擇您想要部署的專案。
 
 2. 在功能表列上，選擇 [ **建立**]、[ **部署方案**]。
 
-     *.Wsp*檔案會建立並安裝在本機 SharePoint 伺服器上。 此外，也會啟用這些功能。
+     *.Wsp* 檔案會建立並安裝在本機 SharePoint 伺服器上。 此外，也會啟用這些功能。
 
 ## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>將 SharePoint 方案發行至本機 SharePoint 伺服器
 
-1. 在 **方案總管**中，開啟您要發行的 SharePoint 專案的快捷方式功能表，然後選擇 [ **發行**]。
+1. 在 **方案總管** 中，開啟您要發行的 SharePoint 專案的快捷方式功能表，然後選擇 [ **發行**]。
 
 2. 在 [ **發行** ] 對話方塊中，選擇 [ **發行至檔案系統** ] 選項按鈕。
 

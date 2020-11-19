@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的 SupportsMasterPage 元素) |Microsoft Docs"
+description: 瞭解 SupportsMasterPage 元素，以及它如何指定是否在 [加入新專案] 對話方塊中啟用 [選取主版頁面] 核取方塊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 384672303d00b72431820b98fa02d09e440a1de5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07230c3a9b76be8d78e22acaa83addd0fa21005a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699457"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903828"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 項目 (Visual Studio 範本)
 指定是否在 [**加入新專案**] 對話方塊中啟用 [**選取主版頁面**] 核取方塊。

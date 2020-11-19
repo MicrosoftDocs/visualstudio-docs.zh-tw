@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的參考元素) |Microsoft Docs"
+description: 瞭解參考專案，以及它如何指定將專案加入至專案時所要加入的元件參考。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11d893f6268a69172d27a0f7caee707767abfe89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dcb713a62ebc9a0c3e4daf5aa16f36779b1a1fdc
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701619"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903763"
 ---
 # <a name="reference-element-visual-studio-templates"></a> (Visual Studio 範本的參考元素) 
 指定項目加入專案時要加入的組件參考。
@@ -46,7 +48,7 @@ ms.locfileid: "80701619"
 
 |項目|描述|
 |-------------|-----------------|
-|[裝配](../extensibility/assembly-element-visual-studio-templates.md)|必要元素。<br /><br /> 指定元件的相關資訊，範本會使用此元件將該元件的參考加入至專案。 `Assembly`每個元素中都必須有一個元素 `Reference` 。|
+|[組件](../extensibility/assembly-element-visual-studio-templates.md)|必要元素。<br /><br /> 指定元件的相關資訊，範本會使用此元件將該元件的參考加入至專案。 `Assembly`每個元素中都必須有一個元素 `Reference` 。|
 
 ### <a name="parent-elements"></a>父元素
 
@@ -57,7 +59,7 @@ ms.locfileid: "80701619"
 ## <a name="remarks"></a>備註
  `Reference` 是 `References` 的必要子項目。
 
- `Reference`和 `References` 元素只能用在具有屬性值 *.vstemplate*的 .vstemplate 檔案中。 `Type` `Item`
+ `Reference`和 `References` 元素只能用在具有屬性值 *.vstemplate* 的 .vstemplate 檔案中。 `Type` `Item`
 
 ## <a name="example"></a>範例
  下列範例說明 `TemplateContent` 專案範本的元素。 這個 XML 會將參考加入 *System.dll* 和 *System.Data.dll* 元件。

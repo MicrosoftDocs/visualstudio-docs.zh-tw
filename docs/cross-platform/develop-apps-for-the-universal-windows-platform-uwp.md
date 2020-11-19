@@ -1,6 +1,6 @@
 ---
 title: 開發適用於通用 Windows 平台 (UWP) 的應用程式
-description: 瞭解如何使用 Visual Studio 和通用 Windows 應用程式開發工具來建立應用程式。
+description: 瞭解如何使用 Visual Studio 和通用 Windows 平臺開發工具來建立應用程式。
 ms.custom: SEO-VS-2020
 ms.date: 10/24/2017
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: e9cff517c60a67ee9bbf929c59a1150d5ace3757
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 54849cc004bdae4d4f50c1492ff79c762c2cb41b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671415"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903854"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
 
@@ -34,7 +34,7 @@ ms.locfileid: "94671415"
 
 通用 Windows 平台其實就是合約和版本的集合。 該集合可讓您設定要執行應用程式的目標。 現在，您再也不用鎖定一種作業系統目標，而可以將一或多個裝置系列設為目標。 如需詳細資訊，請參閱[通用 Windows 平台簡介](/windows/uwp/get-started/universal-application-platform-guide)。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 通用 Windows 應用程式開發工具隨附模擬器，可供您查看應用程式在不同裝置上的外觀。 如果您要使用這些模擬器，您需要在實體電腦上安裝這個軟體。 這部實體機器必須執行 Windows 8.1 (x64) Professional Edition (含) 以上版本，並具備支援用戶端 Hyper-V 和第二層位址轉譯 (SLAT) 的處理器。 如果在虛擬機器上安裝 Visual Studio，則無法使用模擬器。
 
