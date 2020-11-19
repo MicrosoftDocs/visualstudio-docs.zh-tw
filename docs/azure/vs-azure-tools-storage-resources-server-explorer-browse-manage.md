@@ -4,27 +4,26 @@ description: 使用伺服器總管瀏覽和管理儲存體資源
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: 658dc064-4a4e-414b-ae5a-a977a34c930d
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: ab8373a24d296052b7ecfc7fcae6c85c14c74a1d
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ae45fafb562387720b652e0921624bc859ea5920
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398861"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902216"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>使用伺服器總管來瀏覽及管理儲存體資源
 
 [!INCLUDE [storage-try-azure-tools](./includes/storage-try-azure-tools.md)]
 
-## <a name="overview"></a>總覽
+## <a name="overview"></a>概觀
 
 如果您已經安裝 Azure Tools for Microsoft Visual Studio，您可以從 Azure 的儲存體帳戶檢視 blob、佇列和資料表資料。 伺服器總管中的 Azure **儲存體** 節點會顯示位於您的本機儲存體模擬器帳戶和其他 Azure 儲存體帳戶中的資料。
 
-若要在 Visual Studio 中查看伺服器總管，請在功能表列上選取 [ **view** ]  >  **伺服器總管** 。 **儲存體** 節點會顯示存在於您連接之每個 Azure 訂用帳戶或憑證下的儲存體帳戶。 如果您的儲存體帳戶未出現，您可以遵循 [本文稍後](#add-storage-accounts-by-using-server-explorer)的指示加以新增。
+若要在 Visual Studio 中查看伺服器總管，請在功能表列上選取 [ **view**]  >  **伺服器總管**。 **儲存體** 節點會顯示存在於您連接之每個 Azure 訂用帳戶或憑證下的儲存體帳戶。 如果您的儲存體帳戶未出現，您可以遵循 [本文稍後](#add-storage-accounts-by-using-server-explorer)的指示加以新增。
 
 從 Azure SDK 2.7 開始，您也可以使用雲端總管來檢視和管理您的 Azure 資源。 如需詳細資訊，請參閱 [使用 Cloud Explorer 管理 Azure 資源](vs-azure-tools-resources-managing-with-cloud-explorer.md)。
 
@@ -34,7 +33,7 @@ ms.locfileid: "93398861"
 
 若要查看儲存體模擬器帳戶的資源，請展開 **開發** 節點。 當您展開 **開發** 節點時，如果尚未啟動儲存體模擬器，它會自動啟動。 此流程可能需要數秒鐘的時間。 當儲存體模擬器啟動時，您可以繼續在 Visual Studio 的其他區域中運作。
 
-若要檢視儲存體帳戶中的資源，請在 [伺服器總管] 中展開儲存體帳戶的節點，可在其中看見 **Blob** 、 **佇列** 和 **表格** 節點。
+若要檢視儲存體帳戶中的資源，請在 [伺服器總管] 中展開儲存體帳戶的節點，可在其中看見 **Blob**、**佇列** 和 **表格** 節點。
 
 ## <a name="work-with-blob-resources"></a>使用 Blob 資源
 
@@ -94,7 +93,7 @@ ms.locfileid: "93398861"
 
 您可以藉由指定一般的前置詞來篩選顯示的 blob。
 
-例如，如果您在篩選文字方塊中輸入前置詞 **hello** ，然後選取 [執行] \( **!** ) 按鈕，則只會出現以 "hello" 開頭的 blob。
+例如，如果您在篩選文字方塊中輸入前置詞 **hello**，然後選取 [執行] \(**!**) 按鈕，則只會出現以 "hello" 開頭的 blob。
 
 ![篩選文字方塊](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -108,7 +107,7 @@ ms.locfileid: "93398861"
 * 選擇 blob 名稱，然後選取 [開啟] 按鈕。
 * 按兩下 blob 名稱。
 
-Blob 下載進度會顯示在 [ **Azure 活動記錄檔** ] 視窗中。
+Blob 下載進度會顯示在 [**Azure 活動記錄檔**] 視窗中。
 
 Blob 會在該檔案類型的預設編輯器中開啟。 如果作業系統辨識出檔案類型，該檔案就會以本機安裝的應用程式開啟。 否則，系統會提示您選擇適用於該 blob 檔案類型的應用程式。 下載 blob 時所建立的本機檔案會標示為唯讀。
 
@@ -166,7 +165,7 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
 ### <a name="to-create-a-table"></a>若要建立資料表
 
-1. 在 **Cloud Explorer** 中，選取儲存體帳戶的 [ **資料表]** 節點，然後選取 [ **建立資料表** ]。
+1. 在 **Cloud Explorer** 中，選取儲存體帳戶的 [ **資料表]** 節點，然後選取 [ **建立資料表**]。
 1. 在 [建立資料表]  對話方塊中，輸入資料表的名稱。
 
 ### <a name="to-view-table-data"></a>檢視資料表資料
@@ -181,7 +180,7 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
 ### <a name="to-edit-table-data"></a>編輯資料表資料
 
-在 **資料表設計工具** 中，開啟實體的快捷方式功能表 (單一資料列) 或 (單一資料格) 的屬性，然後選取 [ **編輯** ]。
+在 **資料表設計工具** 中，開啟實體的快捷方式功能表 (單一資料列) 或 (單一資料格) 的屬性，然後選取 [ **編輯**]。
 
 ![新增或編輯資料表實體](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
@@ -198,7 +197,7 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
     ![[新增實體] 按鈕](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. 在 [ **加入實體** ] 對話方塊中，輸入 [ **PartitionKey** ] 和 [ **RowKey** ] 屬性的值。
+1. 在 [**加入實體**] 對話方塊中，輸入 [**PartitionKey**] 和 [**RowKey**] 屬性的值。
 
     ![[新增實體] 對話方塊](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
@@ -262,7 +261,7 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
    ![建立 Azure 儲存體帳戶](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. 選取 [建立]  。
+1. 選取 [建立]。
 
 新的儲存體帳戶會出現在 [方案總管] 中的 [儲存體]  清單。
 

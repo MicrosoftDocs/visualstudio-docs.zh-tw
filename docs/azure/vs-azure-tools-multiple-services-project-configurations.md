@@ -4,17 +4,16 @@ description: 了解如何透過變更 ServiceDefinition.csdef、ServiceConfigura
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: a811c30114f9a45119eaccc666d6eb39be80a562
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 58d7a967c3a8cf46330c169db1b73bc048a2110c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399802"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902359"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>在 Visual Studio 中設定 Azure 專案，以便使用多個服務組態
 
@@ -68,7 +67,7 @@ Web 角色預設會啟用診斷。 Azure 雲端服務專案和儲存體帳戶已
 
 若要建立連接字串，請選取 [新增設定]，再將 [類型] 設定為 [連接字串]。
 
-若為新的或現有的連接字串，請選取 **...** _ 在 _ *Value* * 欄位的右邊，開啟 [ **建立儲存體連接字串** ] 對話方塊：
+若為新的或現有的連接字串，請選取 **...** _ 在 _ *Value** 欄位的右邊，開啟 [ **建立儲存體連接字串** ] 對話方塊：
 
 1. 在 [連接方式] 下方，選擇 [您的訂用帳戶] 選項以從訂用帳戶選取儲存體帳戶。 Visual Studio 接著會自動從 `.publishsettings` 檔案取得儲存體帳戶認證。
 1. 選取 [手動輸入的認證]可讓您使用 Azure 入口網站的資訊直接指定帳戶名稱和金鑰。 若要複製帳戶金鑰：

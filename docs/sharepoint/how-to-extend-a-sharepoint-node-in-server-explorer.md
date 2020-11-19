@@ -1,5 +1,7 @@
 ---
 title: 如何：在伺服器總管中擴充 SharePoint 節點 |Microsoft Docs
+description: 瞭解如何使用 [SharePoint 連接] 節點，在伺服器總管中擴充 SharePoint 節點。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea556d18641b96ea6a38ef5abf6efe4c93a44cdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bad90701d19f97036ecba55bb2901739ad30b200
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015029"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903541"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>如何：在伺服器總管中擴充 SharePoint 節點
-  您可以在**伺服器總管**中的 [ **SharePoint 連接**] 節點底下擴充節點。 當您想要將新的子節點、快捷方式功能表項目或屬性加入至現有的節點時，這會很有用。 如需詳細資訊，請參閱 [伺服器總管中的擴充 SharePoint 連接節點](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
+  您可以在 **伺服器總管** 中的 [ **SharePoint 連接**] 節點底下擴充節點。 當您想要將新的子節點、快捷方式功能表項目或屬性加入至現有的節點時，這會很有用。 如需詳細資訊，請參閱 [伺服器總管中的擴充 SharePoint 連接節點](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
 
 ### <a name="to-extend-a-sharepoint-node-in-server-explorer"></a>若要在伺服器總管中擴充 SharePoint 節點
 
@@ -43,7 +45,7 @@ ms.locfileid: "86015029"
 
      若要指定 Visual Studio 所提供的內建節點類型，請將下列其中一個列舉值傳遞給屬性函式：
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>：使用這些值來指定網站連接節點 (節點，這些節點會在 **伺服器總管**中顯示網站 url) 、網站節點或所有其他父節點。
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>：使用這些值來指定網站連接節點 (節點，這些節點會在 **伺服器總管** 中顯示網站 url) 、網站節點或所有其他父節點。
 
     - <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>：使用這些值來指定其中一個內建節點，代表 SharePoint 網站上的個別元件，例如代表清單、欄位或內容類型的節點。
 
@@ -60,7 +62,7 @@ ms.locfileid: "86015029"
 
 - 將內容功能表項目加入至 SharePoint 網站節點的延伸模組。 當您按一下功能表項目時，它會顯示已按一下的節點名稱。
 
-- 此延伸模組會將名為 **ContosoExampleProperty** 的自訂屬性新增至代表名為 **Body**之欄位的每個節點。
+- 此延伸模組會將名為 **ContosoExampleProperty** 的自訂屬性新增至代表名為 **Body** 之欄位的每個節點。
 
   [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
   [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]

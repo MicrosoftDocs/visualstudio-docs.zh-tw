@@ -3,17 +3,16 @@ title: 測試雲端服務的效能 | Microsoft Docs
 description: 使用 Visual Studio 分析工具測試雲端服務的效能
 author: mikejo5000
 manager: jillfra
-ms.assetid: 7a5501aa-f92c-457c-af9b-92ea50914e24
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 5c92a2bb2349f1b5543672d7ecd944e3d82bb500
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 119f781e972b38c04763f7a069e3835f42e21941
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508427"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902255"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>測試雲端服務的效能
 ## <a name="overview"></a>概觀
@@ -81,11 +80,11 @@ ms.locfileid: "89508427"
 >
 
 ### <a name="to-configure-profiling-settings"></a>設定分析設定
-1. 在 [方案總管] 中，開啟 Azure 專案的捷徑功能表，然後選擇 [發佈] ****。 如需有關如何發佈雲端服務的詳細步驟，請參閱 [使用 Azure 工具發佈雲端服務](vs-azure-tools-publishing-a-cloud-service.md)。
-2. 在 [發行 Azure 應用程式]**** 對話方塊中，按一下 [進階設定]**** 索引標籤。
+1. 在 [方案總管] 中，開啟 Azure 專案的捷徑功能表，然後選擇 [發佈] 。 如需有關如何發佈雲端服務的詳細步驟，請參閱 [使用 Azure 工具發佈雲端服務](vs-azure-tools-publishing-a-cloud-service.md)。
+2. 在 [發行 Azure 應用程式] 對話方塊中，按一下 [進階設定] 索引標籤。
 3. 若要啟用程式碼剖析，請選取 [**啟用程式碼剖析**] 核取方塊。
 4. 若要設定程式碼剖析設定，請選擇 [**設定**] 超連結。 [分析設定] 對話方塊隨即出現。
-5. 從 [您要使用的分析方法] **** 選項按鈕，選擇您所需要的分析類型。
+5. 從 [您要使用的分析方法]  選項按鈕，選擇您所需要的分析類型。
 6. 若要收集階層互動分析資料，請選取 [**啟用階層互動分析**] 核取方塊。
 7. 若要儲存設定，請選擇 [**確定**] 按鈕。
 
@@ -101,7 +100,7 @@ ms.locfileid: "89508427"
 2. 選擇 [Azure 運算] 節點，然後選擇從 Visual Studio 發佈時您選取要分析的雲端服務的 Azure 部署節點。
 3. 若要檢視執行個體的分析報告，請在服務中選擇角色，然後開啟特定執行個體的捷徑功能表並選擇 [**檢視分析報告**]。
 
-    現在便會從 Azure 下載 .vsp 檔案的報告，而下載狀態會出現在 Azure 活動記錄檔中。 下載完成時，分析報告會顯示在 Visual Studio 編輯器的索引標籤中，名為  <角色名稱\><執行個體號碼\>**<識別碼\>.vsp。 報告的摘要資料隨即出現。
+    現在便會從 Azure 下載 .vsp 檔案的報告，而下載狀態會出現在 Azure 活動記錄檔中。 下載完成時，分析報告會顯示在 Visual Studio 編輯器的索引標籤中，名為  <角色名稱\><執行個體號碼\><識別碼\>.vsp。 報告的摘要資料隨即出現。
 4. 若要顯示報告的不同檢視，在 [目前檢視] 清單中，選擇您要的檢視類型。 如需詳細資訊，請參閱 [分析工具報告檢視](../profiling/performance-report-views.md)。
 
 ## <a name="next-steps"></a>後續步驟

@@ -1,5 +1,7 @@
 ---
 title: 如何：實作介面 (類別設計工具)
+description: 瞭解如何將介面連接至提供介面方法程式碼的類別，以在類別圖表上執行介面。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81b6815dd96894acd574de59c5616371220d2999
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad038774b4acfb7256edbaa35ae4c67cfe835891
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770106"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901371"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>如何：在類別設計工具中實作介面
 
-在 **類別設計工具**中，您可以將介面連接至提供介面方法程式碼的類別，以在類別圖表上執行介面。 **類別設計工具** 會產生介面執行，並將介面和類別之間的關聯性顯示為繼承關聯性。 您可以在介面與類別之間繪製繼承線，或從 [類別檢視] 中拖曳介面，來實作介面。
+在 **類別設計工具** 中，您可以將介面連接至提供介面方法程式碼的類別，以在類別圖表上執行介面。 **類別設計工具** 會產生介面執行，並將介面和類別之間的關聯性顯示為繼承關聯性。 您可以在介面與類別之間繪製繼承線，或從 [類別檢視] 中拖曳介面，來實作介面。
 
 > [!TIP]
 > 您可以像建立其他類型一樣建立介面。 如果介面存在，但未出現在類別圖表上，請先顯示它。 如需詳細資訊，請參閱 [如何：使用類別設計工具建立類型](how-to-create-types.md) 和 [如何：查看現有的類型](how-to-view-existing-types.md)。
@@ -42,7 +44,7 @@ ms.locfileid: "85770106"
 2. 開啟 **類別檢視** 並找出介面。
 
     > [!TIP]
-    > 如果未開啟 [類別檢視]****，請從 [檢視]**** 功能表開啟 [類別檢視]**** 或按 **Ctrl**+**Shift**+**C**。
+    > 如果未開啟 [類別檢視]，請從 [檢視] 功能表開啟 [類別檢視] 或按 **Ctrl**+**Shift**+**C**。
 
 3. 將介面節點拖曳到圖表上的類別圖形。
 

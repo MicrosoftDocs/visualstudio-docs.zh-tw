@@ -1,5 +1,7 @@
 ---
 title: 如何：建立類型之間的關聯 (類別設計工具)
+description: 瞭解如何在類別設計工具中的不同類型之間建立關聯。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,16 +18,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cce893efaad5f2317b175391a2685cae7053e3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f72cb173b5ece347bb2d9eb1b4ef0e8d2317b21d
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770955"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901605"
 ---
 # <a name="how-to-create-associations-between-types-in-class-designer"></a>如何：在類別設計工具中建立類型之間的關聯
 
-**類別設計工具**中的關聯線會顯示圖表中類別的關聯性。 關聯線表示某類別為專案中其他類別的屬性或欄位的類型。 關聯線通常是用來說明專案中類別之間最重要的關係。
+**類別設計工具** 中的關聯線會顯示圖表中類別的關聯性。 關聯線表示某類別為專案中其他類別的屬性或欄位的類型。 關聯線通常是用來說明專案中類別之間最重要的關係。
 
 雖然您可以將所有欄位或屬性顯示為關聯，但是針對要在圖表上突顯的部分而只將重要成員顯示為關聯才更具意義  (您可以隱藏次要成員或將其顯示為一般成員)。
 
@@ -48,9 +50,9 @@ ms.locfileid: "85770955"
 
 1. 選取其內含屬性顯示為關聯的圖形。
 
-   該圖形會得到焦點，而且其成員會顯示於 [類別細節]**** 和 [屬性]**** 視窗中。
+   該圖形會得到焦點，而且其成員會顯示於 [類別細節] 和 [屬性] 視窗中。
 
-2. 在 [類別細節]**** 或 [屬性]**** 視窗中編輯該屬性的名稱欄位，然後按 **Enter 鍵**。
+2. 在 [類別細節] 或 [屬性] 視窗中編輯該屬性的名稱欄位，然後按 **Enter 鍵**。
 
    您可以在 [ **類別細節** ] 視窗、關聯線、[ **屬性** ] 視窗和程式碼中更新此名稱。
 

@@ -1,6 +1,8 @@
 ---
 title: 在伺服器總管中取得內建 SharePoint 節點的資料
 titleSuffix: ''
+description: 在 Visual Studio 的伺服器總管視窗中，取得內建 SharePoint 節點基礎 SharePoint 元件的資料。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7649092cc21fcc7b861f4ddf630007bde896e852
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3a975374b82b10c0e29d74bcf68d7bce3225a967
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585767"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903516"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>如何：在伺服器總管中取得內建 SharePoint 節點的資料
-  針對 **伺服器總管**中的每個內建 sharepoint 節點，您可以取得節點所代表之基礎 sharepoint 元件的資料。 如需詳細資訊，請參閱 [伺服器總管中的擴充 SharePoint 連接節點](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
+  針對 **伺服器總管** 中的每個內建 sharepoint 節點，您可以取得節點所代表之基礎 sharepoint 元件的資料。 如需詳細資訊，請參閱 [伺服器總管中的擴充 SharePoint 連接節點](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
 
 ## <a name="example"></a>範例
- 下列程式碼範例示範如何取得清單節點在 **伺服器總管**中所代表基礎 SharePoint 清單的資料。 依預設，[清單] 節點具有 **瀏覽器** 內容功能表項目中的 [View]，您可以按一下以在網頁瀏覽器中開啟清單。 這個範例會 **在 Visual Studio** 內容功能表項目中加入一個可直接在 Visual Studio 中開啟清單的視圖，以擴充清單節點。 程式碼會存取節點的清單資料，以取得要在 Visual Studio 中開啟的清單 URL。
+ 下列程式碼範例示範如何取得清單節點在 **伺服器總管** 中所代表基礎 SharePoint 清單的資料。 依預設，[清單] 節點具有 **瀏覽器** 內容功能表項目中的 [View]，您可以按一下以在網頁瀏覽器中開啟清單。 這個範例會 **在 Visual Studio** 內容功能表項目中加入一個可直接在 Visual Studio 中開啟清單的視圖，以擴充清單節點。 程式碼會存取節點的清單資料，以取得要在 Visual Studio 中開啟的清單 URL。
 
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#10)]
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#10)]

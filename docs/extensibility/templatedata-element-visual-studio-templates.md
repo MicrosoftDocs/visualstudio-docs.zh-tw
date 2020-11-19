@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的 TemplateData 元素) |Microsoft Docs"
+description: 瞭解 TemplateData 元素，以及它如何將範本分類，並定義它在 [新增專案] 或 [加入新專案] 對話方塊中顯示的方式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,15 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3ce0226286e8cc4623b66c043eb7bd376597118
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc0edf82421ba41198480e6c105dd56c02bd0f7e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699198"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903256"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 項目 (Visual Studio 範本)
-將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。
+將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。
 
  \<VSTemplate> \<TemplateData>
 

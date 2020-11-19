@@ -3,17 +3,16 @@ title: 存取私人 Azure 雲端
 description: 了解如何使用 Visual Studio 存取私人雲端資源。
 author: ghogen
 manager: jillfra
-assetId: 9d733c8d-703b-44e7-a210-bb75874c45c8
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/13/2017
 ms.author: ghogen
-ms.openlocfilehash: 136c7f4f497c21de24e34c4c426707de94151ddf
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 92ab5ae3dc6fa5fd807203a1adf2353a20bfb666
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398731"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902827"
 ---
 # <a name="accessing-private-azure-clouds-with-visual-studio"></a>使用 Visual Studio 存取 Azure 私人雲端
 

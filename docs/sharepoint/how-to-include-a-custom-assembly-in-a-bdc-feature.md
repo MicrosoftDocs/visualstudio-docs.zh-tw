@@ -1,5 +1,7 @@
 ---
 title: 如何：在 BDC 功能中包含自訂群組件 |Microsoft Docs
+description: 在商務資料連線中包含自訂群組件 (BDC) 功能，讓您的專案可以參考相同方案中其他專案的元件。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,19 +19,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79336e241b822e5fa9f84dbb771aa4187ea5eadb
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: e7a2a0109faca4da5406b45b4d606ae8a5cd0685
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740067"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903464"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>如何：在 BDC 功能中包含自訂群組件
   您的專案可以參考相同方案中其他專案的元件。 不過，您必須使用 [ **指派參考的元件至 lobsystem** ] 對話方塊，將這些元件加入至專案的功能檔。
 
 ### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>若要在商務資料連線中包含自訂群組件 (BDC) 功能
 
-1. 在 **方案總管**中，選擇包含 BDC 模型的資料夾。
+1. 在 **方案總管** 中，選擇包含 BDC 模型的資料夾。
 
 2. 在 [檢視]  功能表上，按一下 [屬性視窗]  。
 

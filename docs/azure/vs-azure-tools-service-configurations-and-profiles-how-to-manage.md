@@ -3,20 +3,19 @@ title: 如何管理服務組態和設定檔 | Microsoft Docs
 description: 了解如何使用服務組態和設定檔組態檔案 | 其儲存部署環境的設定及雲端服務的發佈設定。
 author: ghogen
 manager: jillfra
-assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 42c4668b2bf9925fe92db51b6a4275c535960a61
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 751214a99c7724c83f01226164202f90425ebf65
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398874"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902074"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>如何管理服務組態和設定檔
-## <a name="overview"></a>總覽
+## <a name="overview"></a>概觀
 當您發佈雲端服務時，Visual Studio 會將組態資訊儲存在兩種組態檔中：服務組態和設定檔。 服務組態 (.cscfg 檔) 可儲存 Azure 雲端服務的部署環境設定。 Azure 會在管理雲端服務時使用這些組態檔。 另一方面，設定檔 (.azurePubxml 檔案) 可儲存雲端服務的發佈設定。 這些設定是您使用發佈精靈時所選內容的記錄，可由 Visual Studio 在本機使用。 本主題說明如何使用這兩種類型的組態檔。
 
 ## <a name="service-configurations"></a>服務組態
@@ -50,7 +49,7 @@ ms.locfileid: "93398874"
 1. 在方案總管中，開啟 Azure 專案的快捷方式功能表，然後選取 [ **管理** 設定]。
 
     [管理服務組態] 對話方塊隨即出現。
-2. 若要將服務組態重新命名，請從 [名稱] 清單中選擇新的服務組態，然後選取 [重新命名]。 在 [ **名稱** ] 文字方塊中，輸入您要用於此服務設定的名稱，然後選取 **[確定]** 。
+2. 若要將服務組態重新命名，請從 [名稱] 清單中選擇新的服務組態，然後選取 [重新命名]。 在 [ **名稱** ] 文字方塊中，輸入您要用於此服務設定的名稱，然後選取 **[確定]**。
 
     在 [方案總管] 中，此服務組態檔的名稱會在 Azure 專案中變更。
 
@@ -73,7 +72,7 @@ ms.locfileid: "93398874"
 
     ![管理設定檔對話方塊](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
 4. 在 [名稱] 清單中選擇某個設定檔，然後選取 [建立複本]。
-5. 選擇 [ **關閉** ] 按鈕。
+5. 選擇 [**關閉**] 按鈕。
 
     新的設定檔會出現在 [目標設定檔] 清單中。
 6. 在 [目標設定檔]  清單中，選取您剛建立的設定檔。 [發佈精靈] 設定會填入您所選設定檔中的選項。

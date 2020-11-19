@@ -3,18 +3,17 @@ title: 使用已連線的服務新增 Azure 儲存體 | Microsoft Docs
 description: 使用 Visual Studio 將 Azure 儲存體服務相依性新增至您的應用程式已連線的服務
 author: ghogen
 manager: jillfra
-assetId: 521ec044-ad4b-4828-8864-01decde2e758
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: f2f55a149420205435d9f64ea1f66c8c6854ec38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d169940d6deffdf67bcbcb94e9f647631d0f606a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800511"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902632"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>使用 Visual Studio 的已連接服務加入 Azure 儲存體
 
@@ -45,15 +44,15 @@ ms.locfileid: "88800511"
 
 1. 在 Visual Studio 中，開啟您的專案。
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **已連線的服務** ] 節點，然後從內容功能表中選取 [ **加入已連接服務**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **已連線的服務** ] 節點，然後從內容功能表中選取 [ **加入已連接服務**]。
 
     ![新增 Azure 已連接服務](./media/vs-azure-tools-connected-services-storage/add-connected-service.png)
 
-1. 在 [已連接服務]**** 頁面中，選取 [使用 Azure 儲存體的雲端儲存體]****。
+1. 在 [已連接服務] 頁面中，選取 [使用 Azure 儲存體的雲端儲存體]。
 
     ![新增 Azure 儲存體](./media/vs-azure-tools-connected-services-storage/add-azure-storage.png)
 
-1. 在 [Azure 儲存體]**** 對話方塊中，選取現有的儲存體帳戶，然後選取 [新增]****。
+1. 在 [Azure 儲存體] 對話方塊中，選取現有的儲存體帳戶，然後選取 [新增]。
 
     如果您需要建立儲存體帳戶，請移至下一個步驟。 否則，請前往步驟 6。
 
@@ -61,22 +60,22 @@ ms.locfileid: "88800511"
 
 1. 建立儲存體帳戶：
 
-   1. 選取對話方塊底部的 [建立新的儲存體帳戶]****。
+   1. 選取對話方塊底部的 [建立新的儲存體帳戶]。
 
-   1. 填寫 [建立儲存體帳戶]**** 對話方塊，然後選取 [建立]****。
+   1. 填寫 [建立儲存體帳戶] 對話方塊，然後選取 [建立]。
 
        ![新的 Azure 儲存體帳戶](./media/vs-azure-tools-connected-services-storage/create-storage-account.png)
 
-   1. 顯示 [Azure 儲存體]**** 對話方塊時，新的儲存體帳戶會出現在清單中。 選取清單中的新儲存體帳戶，然後選取 [新增]****。
+   1. 顯示 [Azure 儲存體] 對話方塊時，新的儲存體帳戶會出現在清單中。 選取清單中的新儲存體帳戶，然後選取 [新增]。
 
-1. 儲存體已連接服務會出現在您專案的 [服務參考]**** 節點之下。
+1. 儲存體已連接服務會出現在您專案的 [服務參考] 節點之下。
 :::moniker-end
 
 :::moniker range=">=vs-2019"
 
 1. 在 Visual Studio 中，開啟您的專案。
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **已連線的服務** ] 節點，然後從內容功能表中選取 [ **加入已連接服務**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **已連線的服務** ] 節點，然後從內容功能表中選取 [ **加入已連接服務**]。
 
     ![新增 Azure 已連接服務](./media/vs-azure-tools-connected-services-storage/vs-2019/add-connected-service.png)
 
@@ -104,7 +103,7 @@ ms.locfileid: "88800511"
 
        ![新的 Azure 儲存體帳戶](./media/vs-azure-tools-connected-services-storage/vs-2019/create-storage-account.png)
 
-   1. 顯示 [Azure 儲存體]**** 對話方塊時，新的儲存體帳戶會出現在清單中。 在清單中選取新的儲存體帳戶，然後選取 [ **下一步]**。
+   1. 顯示 [Azure 儲存體] 對話方塊時，新的儲存體帳戶會出現在清單中。 在清單中選取新的儲存體帳戶，然後選取 [ **下一步]**。
 
 1. 輸入連接字串名稱，然後選擇您要將連接字串儲存在本機秘密檔案或 [Azure Key Vault](/azure/key-vault)中。
 
@@ -114,7 +113,7 @@ ms.locfileid: "88800511"
 
    ![變更摘要](./media/vs-azure-tools-connected-services-storage/vs-2019/summary-of-changes.png)
 
-1. 儲存體已連接服務會出現在您專案的 [服務參考]**** 節點之下。
+1. 儲存體已連接服務會出現在您專案的 [服務參考] 節點之下。
 :::moniker-end
 
 ## <a name="see-also"></a>另請參閱

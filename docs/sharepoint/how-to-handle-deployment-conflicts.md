@@ -1,5 +1,7 @@
 ---
 title: 如何：處理部署衝突 |Microsoft Docs
+description: 請參閱如何執行您自己的程式碼，以處理 SharePoint 專案專案部署衝突的範例。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5df9677fd349825983cc33c5a8ed2648f34b8c9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 975fa69a503f5e2acd3e90defd9fa9895c70db00
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015306"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903503"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>如何：處理部署衝突
   您可以提供自己的程式碼來處理 SharePoint 專案專案的部署衝突。 例如，您可以判斷目前專案專案中的任何檔案是否已存在於部署位置中，然後在部署目前的專案專案之前，先刪除已部署的檔案。 如需部署衝突的詳細資訊，請參閱 [擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。

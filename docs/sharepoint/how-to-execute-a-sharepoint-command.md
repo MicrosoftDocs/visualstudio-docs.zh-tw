@@ -1,5 +1,7 @@
 ---
 title: 如何：執行 SharePoint 命令 |Microsoft Docs
+description: 閱讀如何建立自訂 SharePoint 命令，以從 SharePoint 工具延伸模組呼叫伺服器物件模型 API。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 789b77f3161b5fe566ea033060e8cab16cbaecc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2746704e30a61b0971db50a5083855b4a93560d4
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016990"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903531"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>How to：執行 SharePoint 命令
   如果您想要在 SharePoint 工具擴充功能中使用伺服器物件模型，您必須建立自訂 *SharePoint 命令* 以呼叫 API。 在您定義命令並使用 SharePoint 工具延伸模組部署之後，您的擴充功能就可以執行命令來呼叫 SharePoint 伺服器物件模型。 若要執行命令，請使用物件的其中一個 ExecuteCommand 方法 <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> 。
@@ -32,7 +34,7 @@ ms.locfileid: "86016990"
 
          如需有關專案系統擴充功能的詳細資訊，請參閱 [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)。
 
-    - 在**伺服器總管**的 [ **SharePoint 連接**] 節點的延伸中，使用 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> 屬性。 若要取得 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> 物件，請使用 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> 屬性。
+    - 在 **伺服器總管** 的 [ **SharePoint 連接**] 節點的延伸中，使用 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> 屬性。 若要取得 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> 物件，請使用 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> 屬性。
 
          如需 **伺服器總管** 擴充功能的詳細資訊，請參閱 [伺服器總管中的擴充 SharePoint 連接節點](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
 
@@ -65,7 +67,7 @@ ms.locfileid: "86016990"
 
 - 第二個參數是您想要傳遞給命令之自訂第二個參數的值。 在此情況下，它是要升級至 SharePoint 網站之 *.wsp* 檔案的完整路徑。
 
-- 程式碼不會將隱含 <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> 參數傳遞至命令。 當您從 SharePoint 專案系統的延伸模組或**伺服器總管**中的 [ **sharepoint 連接**] 節點的延伸模組呼叫命令時，會自動將此參數傳遞至命令。 在其他類型的方案中，例如在執行介面的專案範本嚮導中 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> ，此參數為 **null**。
+- 程式碼不會將隱含 <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> 參數傳遞至命令。 當您從 SharePoint 專案系統的延伸模組或 **伺服器總管** 中的 [ **sharepoint 連接**] 節點的延伸模組呼叫命令時，會自動將此參數傳遞至命令。 在其他類型的方案中，例如在執行介面的專案範本嚮導中 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> ，此參數為 **null**。
 
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要 VisualStudio 元件的參考。

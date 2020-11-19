@@ -3,28 +3,27 @@ title: 建構資料表設計工具的篩選字串 | Microsoft Docs
 description: 建構資料表設計工具的篩選字串
 author: ghogen
 manager: jillfra
-assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 30e9a347be1a3b35e69d2c72d141873c62dcdeb3
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 288e4256a472eb7bbc692758ad81df68be507676
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398601"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901917"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>建構資料表設計工具的篩選字串
-## <a name="overview"></a>總覽
+## <a name="overview"></a>概觀
 若要在 Visual Studio [資料表設計工具] 中顯示的 Azure 資料表中篩選資料，您可以建構篩選字串並在篩選欄位中輸入它。 篩選條件字串語法由 WCF Data Services 定義，類似於 SQL WHERE 子句，但會透過 HTTP 要求傳送至表格服務。 [資料表設計工具]  會為您處理適當的編碼，因此，若要篩選所需的屬性值，您只需要在篩選欄位中輸入屬性名稱、比較運算子、準則值和 (選擇性) 布林運算子。 您不需要像透過 [儲存體服務 REST API 參考](/rest/api/storageservices/)建構 URL 來查詢資料表一樣包含 $filter 查詢選項。
 
-WCF Data Services 以 [開放式資料通訊協定](https://www.odata.org/) (OData) 為基礎。 如需篩選系統查詢選項 ( **$filter** ) 的詳細資訊，請參閱 [OData URI 轉換規格](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)。
+WCF Data Services 以 [開放式資料通訊協定](https://www.odata.org/) (OData) 為基礎。 如需篩選系統查詢選項 (**$filter**) 的詳細資訊，請參閱 [OData URI 轉換規格](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)。
 
 ## <a name="comparison-operators"></a>比較運算子
 所有屬性類型都支援下列邏輯運算子：
 
-| 邏輯運算子 | 描述 | 篩選字串範例 |
+| 邏輯運算子 | 說明 | 篩選字串範例 |
 | --- | --- | --- |
 | eq |等於 |City eq 'Redmond' |
 | gt |大於 |Price gt 20 |

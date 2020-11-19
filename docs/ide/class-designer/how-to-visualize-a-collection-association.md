@@ -1,5 +1,7 @@
 ---
 title: 如何：視覺化集合關聯 (類別設計工具)
+description: 瞭解如何在類別設計工具中以視覺化方式呈現集合關聯。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3636b6548725ddc9af0a2e28acfdda06a8821f9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b1e5be53f829949cfffbdc7db727b1117aa9de8
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769894"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901072"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>如何：在類別設計工具中將集合關聯視覺化
 
@@ -32,7 +34,7 @@ ms.locfileid: "85769894"
 
 2. 在類別圖表中，展開類別以便顯示屬性和欄位。
 
-3. 在類別中，以滑鼠右鍵按一下欄位或屬性上，然後選擇 [顯示為集合關聯]****。
+3. 在類別中，以滑鼠右鍵按一下欄位或屬性上，然後選擇 [顯示為集合關聯]。
 
 屬性或欄位會顯示為連結所收集類型的關聯線。
 

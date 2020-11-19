@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a8301fcca5fd915b130477600ed9fe0b5b90f46
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: db37c22af858cef76acda2a42d29a38d244395c8
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830774"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903321"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio 中的部署簡介
 
@@ -40,33 +40,35 @@ ms.locfileid: "91830774"
 
 部署至本機資料夾通常用於測試，或是用來開始使用另一個工具進行最終部署的分段部署。
 
-- **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python** 及 .**NET Core**：使用發行工具以部署至本機資料夾。 確切的可用選項取決於您的應用程式類型。 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]****  (如果您先前尚未設定任何發行設定檔，則必須按一下 [ **建立新設定檔**]。 ) 下一步]，請選擇 [ **資料夾**]。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
+- **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python** 及 .**NET Core**：使用發行工具以部署至本機資料夾。 確切的可用選項取決於您的應用程式類型。 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]  (如果您先前尚未設定任何發行設定檔，則必須按一下 [ **建立新設定檔**]。 ) 下一步]，請選擇 [ **資料夾**]。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
 
     ![選擇 [發行]](../deployment/media/quickstart-publish.png)
 
-- **Windows 傳統型**：使用 ClickOnce 部署可以將 Windows 傳統型應用程式發行至資料夾。 使用者只要按一下，就可以安裝應用程式。 如需詳細資訊，請參閱[使用 ClickOnce 部署傳統型應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 和 Visual Basic)。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
+- **Windows 傳統型**：使用 ClickOnce 部署可以將 Windows 傳統型應用程式發行至資料夾。 使用者只要按一下，就可以安裝應用程式。 如需詳細資訊，請參閱下列：
+
+  - [使用 ClickOnce 部署 .NET Framework Windows 桌面應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+  - [使用 ClickOnce 部署 .NET Windows 傳統型應用程式](quickstart-deploy-using-clickonce-folder.md)
+  - [使用 ClickOnce 部署 c + +/clr 應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ，或針對 c/c + + 使用，請參閱 [使用安裝專案部署原生應用程式](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
 
 ## <a name="publish-to-azure"></a>發佈至 Azure
 
-- **ASP.NET**、 **ASP.NET Core**、 **Python**和 **Node.js**：使用下列其中一種方法，使用容器 (發佈至 Azure App Service 或 Azure App Service Linux) 。
+- **ASP.NET**、 **ASP.NET Core**、 **Python** 和 **Node.js**：使用下列其中一種方法，使用容器 (發佈至 Azure App Service 或 Azure App Service Linux) 。
 
   - 針對連續 (或自動) 部署應用程式，使用 Azure DevOps 與 [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true)。
 
-  - 針對一次 (或手動) 部署應用程式，請使用 Visual Studio 中的 [發行]**** 工具。
+  - 針對一次 (或手動) 部署應用程式，請使用 Visual Studio 中的 [發行] 工具。
 
-  針對提供伺服器自訂組態的部署，您也可以使用 [發行]**** 工具將應用程式部署至 Azure 虛擬機器。
+  針對提供伺服器自訂組態的部署，您也可以使用 [發行] 工具將應用程式部署至 Azure 虛擬機器。
 
-  若要使用 [發行]**** 工具，以滑鼠右鍵按一下 [方案總管] 中的專案，然後選擇 [發行]****。  (如果您先前已設定任何發行設定檔，則必須按一下 [ **建立新設定檔**]。 ) 在 [發佈] 對話方塊中，選擇 [ **App Service** ] 或 [ **Azure 虛擬機器**]，然後遵循設定步驟。
+  若要使用 [發行] 工具，以滑鼠右鍵按一下 [方案總管] 中的專案，然後選擇 [發行]。  (如果您先前已設定任何發行設定檔，則必須按一下 [ **建立新設定檔**]。 ) 在 [發佈] 對話方塊中，選擇 [ **App Service** ] 或 [ **Azure 虛擬機器**]，然後遵循設定步驟。
 
   ![選擇 Azure App Service](../deployment/media/quickstart-publish-azure-new.png "選擇 Azure App Service")
 
-  從 Visual Studio 2017 15.7 版開始，您可以將 ASP.NET Core 應用程式部署至**適用於 Linux 的 App Service**。
+  從 Visual Studio 2017 15.7 版開始，您可以將 ASP.NET Core 應用程式部署至 **適用於 Linux 的 App Service**。
 
   針對 Python 應用程式，另請參閱 [Python - 發行至 Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)。
 
   如需快速簡介，請參閱[發行至 Azure](quickstart-deploy-to-azure.md)及[發行至 Linux](quickstart-deploy-to-linux.md)。 此外，請參閱[將 ASP.NET Core 應用程式發行至 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 如需使用 Git 進行部署，請參閱[使用 Git 將 ASP.NET Core 持續部署至 Azure](/aspnet/core/publishing/azure-continuous-deployment)。
-
-  如需將發行設定檔從 Azure App Service 匯入至 Visual Studio 的資訊，請參閱[匯入發行設定並部署至 Azure](../deployment/tutorial-import-publish-settings-azure.md)。
 
   > [!NOTE]
   > 如果您還沒有 Azure 帳戶，則可以[在這裡註冊](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)。
@@ -83,7 +85,11 @@ ms.locfileid: "91830774"
 
     您也可以使用許多其他方式來部署 ASP.NET 應用程式和服務。 如需詳細資訊，請參閱[部署 ASP.NET Web 應用程式和服務](/aspnet/overview/deployment)。
 
-- **Windows 傳統型**：使用 ClickOnce 部署可以將 Windows 傳統型應用程式發行至 Web 伺服器或網路檔案共用。 使用者只要按一下，就可以安裝應用程式。 如需詳細資訊，請參閱[使用 ClickOnce 部署傳統型應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 和 Visual Basic)。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
+- **Windows 傳統型**：使用 ClickOnce 部署可以將 Windows 傳統型應用程式發行至 Web 伺服器或網路檔案共用。 使用者只要按一下，就可以安裝應用程式。 如需詳細資訊，請參閱下列：
+
+  - [使用 ClickOnce 部署 .NET Framework Windows 桌面應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+  - [使用 ClickOnce 部署 .NET Windows 傳統型應用程式](quickstart-deploy-using-clickonce-folder.md)
+  - [使用 ClickOnce 部署 c + +/CLR 應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)
 
 ## <a name="publish-to-microsoft-store"></a>發行至 Microsoft Store
 
@@ -103,7 +109,7 @@ ms.locfileid: "91830774"
 
 ## <a name="create-an-installer-package-windows-desktop"></a>建立安裝程式套件 (Windows 桌面)
 
-如果您需要比 [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) 可提供的傳統型應用程式更複雜的安裝，您可以建立 Windows Installer 套件 (MSI 或 EXE 安裝檔案) 或自訂啟動載入器。
+如果您需要比 ClickOnce 可提供的傳統型應用程式更複雜的安裝，您可以建立 Windows Installer 套件 (MSI 或 EXE 安裝檔案) 或自訂啟動載入器。
 
 - MSI 型安裝程式套件可以使用 [WiX 工具組 Visual Studio 2017 延伸模組](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)來建立。 這是命令列工具組。
 
@@ -142,7 +148,7 @@ ms.locfileid: "91830774"
 | **WCF 或 OData 服務** | 其他應用程式可以使用您部署至 Web 伺服器的 WCF RIA 服務。 | [開發和部署 WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | 從 Visual Studio 2017 開始就不再支援 LightSwitch，但仍然能夠從 Visual Studio 2015 和更早版本加以部署。 | [部署 LightSwitch 應用程式](/previous-versions/ff872288(v=vs.140)) |
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 在本教學課程中，您已快速瀏覽過不同應用程式的部署選項。
 

@@ -1,5 +1,7 @@
 ---
 title: 進階功能
+description: 深入瞭解可能更適合有經驗的開發人員，或已經熟悉 Visual Studio 的開發人員的先進功能。
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c725e5bcae5d72562e767a06afdee8aa84950b
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 61109a315a7f331821527ee882dd7c019411fca3
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399249"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903295"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 
@@ -50,11 +52,11 @@ Visual Studio 提供一套工具，可讓您輕鬆建立由 Microsoft Azure 提�
 
 ::: moniker-end
 
-Visual Studio 的 [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) 可讓您在 Visual Studio 內檢視和管理 Azure 型雲端資源。 這些資源可能包含虛擬機器、資料表、SQL 資料庫等。 **Cloud Explorer** 會顯示在您所登入 Azure 訂用帳戶下管理之所有帳戶中的 Azure 資源。 此外，如果特定作業需要 Azure 入口網站， **Cloud Explorer** 會提供連結，將您帶到入口網站中您所需前往的位置。
+Visual Studio 的 [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) 可讓您在 Visual Studio 內檢視和管理 Azure 型雲端資源。 這些資源可能包含虛擬機器、資料表、SQL 資料庫等。 **Cloud Explorer** 會顯示在您所登入 Azure 訂用帳戶下管理之所有帳戶中的 Azure 資源。 此外，如果特定作業需要 Azure 入口網站，**Cloud Explorer** 會提供連結，將您帶到入口網站中您所需前往的位置。
 
 ![Visual Studio 中的 Cloud Explorer](media/cloud-explorer.png)
 
-您可以使用 **連線服務** ，將 Azure 服務運用到您的應用程式，例如：
+您可以使用 **連線服務**，將 Azure 服務運用到您的應用程式，例如：
 
 - [Active Directory 連線服務](/azure/active-directory/develop/vs-active-directory-add-connected-service)，讓使用者可以使用其帳戶從 [Azure Active Directory](/azure/active-directory/active-directory-whatis) 連線至 Web 應用程式
 - [Azure 儲存體連線服務](/azure/vs-azure-tools-connected-services-storage)，適用於 Blob 儲存體、佇列和資料表
@@ -90,7 +92,7 @@ Web 推動我們的現代化世界，而 Visual Studio 則可協助您撰寫適�
 
 ## <a name="connect-to-databases"></a>連線至資料庫
 
-**伺服器總管** 可協助您在本機、遠端和 Azure、Salesforce.com、Microsoft 365 及網站上，流覽及管理 SQL Server 實例和資產。 若要開啟 **伺服器總管** ，請在主功能表上選擇 [ **View**  >  **伺服器總管** ]。 如需使用 [伺服器總管] 的詳細資訊，請參閱[新增連線](../data-tools/add-new-connections.md)。
+**伺服器總管** 可協助您在本機、遠端和 Azure、Salesforce.com、Microsoft 365 及網站上，流覽及管理 SQL Server 實例和資產。 若要開啟 **伺服器總管**，請在主功能表上選擇 [ **View**  >  **伺服器總管**]。 如需使用 [伺服器總管] 的詳細資訊，請參閱[新增連線](../data-tools/add-new-connections.md)。
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) 是一個適用於 SQL Server、Azure SQL Database 及 Azure SQL 資料倉儲的強大開發環境。 它可讓您建置、偵錯、維護及重構資料庫。 您可以使用資料庫專案，或直接使用內部或外部所連接的資料庫執行個體。
 
@@ -136,7 +138,7 @@ Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理
 
 若要深入了解如何擴充 Visual Studio，請參閱[擴充 Visual Studio IDE](https://visualstudio.microsoft.com/vs/extend/)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)
 - [Visual Studio 2017 的新功能](../ide/whats-new-visual-studio-2017.md)

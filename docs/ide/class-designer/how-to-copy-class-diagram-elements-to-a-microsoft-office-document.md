@@ -1,5 +1,7 @@
 ---
 title: 如何：將類別圖表項目複製到 Microsoft Office 文件 (類別設計工具)
+description: 瞭解如何將圖形從 .NET 類別圖表複製到其他檔。 您將會取得圖形或其基礎程式碼的複本。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fa6d97b5087659b9fc8120d9480a241517ca8ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe473dfdfdf78934ad018a507c6386a1da9babb6
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770993"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901618"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>如何：將類別圖表元素複製到 Microsoft Office 文件
 
@@ -24,21 +26,21 @@ ms.locfileid: "85770993"
 
 ## <a name="copy-a-single-element"></a>複製單一元素
 
-以滑鼠右鍵按一下圖形，然後選擇 [複製影像]****。
+以滑鼠右鍵按一下圖形，然後選擇 [複製影像]。
 
 ## <a name="copy-several-elements"></a>複製數個元素
 
 1. 選取您要複製的圖表上的圖形。
 
-2. 以滑鼠右鍵按一下選取項目，然後選擇 [複製影像]****。
+2. 以滑鼠右鍵按一下選取項目，然後選擇 [複製影像]。
 
 ## <a name="copy-all-the-elements-in-a-class-diagram"></a>複製類別圖表中的所有元素
 
-1. 以滑鼠右鍵按一下圖表介面，然後選擇 [全選]****，或按 **Ctrl + A**。
+1. 以滑鼠右鍵按一下圖表介面，然後選擇 [全選]，或按 **Ctrl + A**。
 
-2. 在 [編輯]**** 功能表上，選取 [複製影像]****。
+2. 在 [編輯] 功能表上，選取 [複製影像]。
 
-您也可以不選 [複製影像]**** 而選擇 [複製]****。 [複製]**** 會將影像複製為一般點陣圖。 [複製影像]**** 會將影像複製為向量影像，更適用於大多數的 Office 應用程式。
+您也可以不選 [複製影像] 而選擇 [複製]。 [複製] 會將影像複製為一般點陣圖。 [複製影像] 會將影像複製為向量影像，更適用於大多數的 Office 應用程式。
 
 ## <a name="see-also"></a>另請參閱
 

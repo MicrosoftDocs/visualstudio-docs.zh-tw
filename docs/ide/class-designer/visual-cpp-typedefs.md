@@ -1,5 +1,7 @@
 ---
 title: 類別設計工具中的 c + + Typedef
+description: 瞭解類別設計工具如何支援使用關鍵字 typedef 宣告的 c + + typedef 類型。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c57382809b7730df2d7c674c24902d70ccab647
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f95b948d4ffc70d225dd4a8b2bb2debe111c967e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590692"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903438"
 ---
 # <a name="c-typedefs-in-class-designer"></a>類別設計工具中的 c + + typedef
 
-[Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) 語句會在名稱與其基礎類型之間建立一或多個間接取值層。 **類別設計工具**支援 C++ typedef 類型，其使用 `typedef` 關鍵字進行宣告，例如：
+[Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) 語句會在名稱與其基礎類型之間建立一或多個間接取值層。 **類別設計工具** 支援 C++ typedef 類型，其使用 `typedef` 關鍵字進行宣告，例如：
 
 ```cpp
 typedef class coord
@@ -39,11 +41,11 @@ typedef class coord
 
 ## <a name="class-and-struct-shapes"></a>類別和結構圖形
 
-在**類別設計工具**中，C++ typedef 具有 typedef 中指定類型的圖形。 如果來源宣告 `typedef class`，圖形會有圓角和標籤「類別」****。 針對 `typedef struct`，圖形會有方角和標籤「結構」****。
+在 **類別設計工具** 中，C++ typedef 具有 typedef 中指定類型的圖形。 如果來源宣告 `typedef class`，圖形會有圓角和標籤「類別」。 針對 `typedef struct`，圖形會有方角和標籤「結構」。
 
-類別和結構中可宣告巢狀 typedefs。 在**類別設計工具**中，類別和結構圖形可將巢狀 typedef 宣告顯示為巢狀圖形。
+類別和結構中可宣告巢狀 typedefs。 在 **類別設計工具** 中，類別和結構圖形可將巢狀 typedef 宣告顯示為巢狀圖形。
 
-Typedef 圖形支援右鍵功能表 (操作功能表) 上的 [顯示為關聯]**** 和 [顯示為集合關聯]**** 命令。
+Typedef 圖形支援右鍵功能表 (操作功能表) 上的 [顯示為關聯] 和 [顯示為集合關聯] 命令。
 
 ### <a name="class-typedef-example"></a>類別 typedef 範例
 
@@ -68,7 +70,7 @@ typedef struct mystructtag
 
 ## <a name="unnamed-typedefs"></a>未命名的 typedef
 
-雖然您可以宣告沒有名稱的 typedef，但**類別設計工具**不會使用您指定的標籤名稱。 **類別設計工具**會使用**類別檢視**產生的名稱。 例如，下列宣告有效，但會出現在 **類別檢視** 中，並 **類別設計工具** 為名為 **__unnamed**的物件：
+雖然您可以宣告沒有名稱的 typedef，但 **類別設計工具** 不會使用您指定的標籤名稱。 **類別設計工具** 會使用 **類別檢視** 產生的名稱。 例如，下列宣告有效，但會出現在 **類別檢視** 中，並 **類別設計工具** 為名為 **__unnamed** 的物件：
 
 ```cpp
 typedef class coord
@@ -80,9 +82,9 @@ typedef class coord
 ```
 
 > [!NOTE]
-> **類別設計工具**不會顯示來源類型是函式指標的 typedef。
+> **類別設計工具** 不會顯示來源類型是函式指標的 typedef。
 
 ## <a name="see-also"></a>另請參閱
 
 - [使用 c + + 程式碼](working-with-visual-cpp-code.md)
-- [Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)
+- [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)

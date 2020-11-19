@@ -1,8 +1,11 @@
 ---
 title: 在程式碼編輯器中編輯簡介
+description: 瞭解如何在 Visual Studio 中使用程式碼編輯器將程式碼新增至檔案，以及如何撰寫程式碼、流覽並重構程式碼。
 ms.date: 11/30/2017
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a0c8122bd08e4eb9af68a0aa70f06cfb18e51469
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39c5fd62b67c8153da0a64dcd92142300912c25f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595263"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901774"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
 
@@ -50,13 +53,13 @@ ms.locfileid: "75595263"
 
 ::: moniker range=">=vs-2019"
 
-1. 開啟 Visual Studio。 在開始視窗中按 **Esc** 或按一下 [不使用程式碼繼續]****，以開啟開發環境。
+1. 開啟 Visual Studio。 在開始視窗中按 **Esc** 或按一下 [不使用程式碼繼續]，以開啟開發環境。
 
 ::: moniker-end
 
-2. 從功能表列的 [檔案]**** 功能表中，選擇 [新增]**** > [檔案]****。
+2. 從功能表列的 [檔案] 功能表中，選擇 [新增] > [檔案]。
 
-3. 在 [新增檔案]**** 對話方塊的 [一般]**** 類別下，選擇 [Visual C# 類別]****，然後選擇 [開啟]****。
+3. 在 [新增檔案] 對話方塊的 [一般] 類別下，選擇 [Visual C# 類別]，然後選擇 [開啟]。
 
    使用 C# 類別的基本架構，在編輯器中開啟新的檔案。 (請注意，我們不需要建立完整的 Visual Studio 專案，才能享有程式碼編輯器提供的一些優點，您只需要一份程式碼檔案！)
 
@@ -64,7 +67,7 @@ ms.locfileid: "75595263"
 
 ## <a name="use-code-snippets"></a>使用程式碼片段
 
-Visual Studio 提供實用的「程式碼片段」**，讓您可以用來快速且輕鬆地產生常用的程式碼區塊。 [程式碼片段](../ide/code-snippets.md)適用於不同的程式設計語言 (包括 C#、Visual Basic 和 C++)。 請在檔案中新增 C# `void Main` 程式碼片段。
+Visual Studio 提供實用的「程式碼片段」，讓您可以用來快速且輕鬆地產生常用的程式碼區塊。 [程式碼片段](../ide/code-snippets.md)適用於不同的程式設計語言 (包括 C#、Visual Basic 和 C++)。 請在檔案中新增 C# `void Main` 程式碼片段。
 
 1. 請將游標放在檔案中最後一個右大括弧 **}** 的正上方，然後鍵入 `svm` 字元 (`svm` 表示 `static void Main`；[Main()](/dotnet/csharp/programming-guide/main-and-command-args/) 方法是 C# 應用程式的進入點)。
 
@@ -112,7 +115,7 @@ Visual Studio 提供實用的「程式碼片段」**，讓您可以用來快速�
                                 select word;
     ```
 
-1. 我們目前不會使用 `morewords` 變數，但之後可能會用到，所以我們不想要完全將其刪除。 相反地，請將這些行註解化。 選取 `morewords` 的整個定義，直到結尾分號為止，然後選擇工具列上的 [為所選行加上註解]**** 按鈕。 如果您想要使用鍵盤，請按下**ctrl** + **K**、 **ctrl** + **C**。
+1. 我們目前不會使用 `morewords` 變數，但之後可能會用到，所以我們不想要完全將其刪除。 相反地，請將這些行註解化。 選取 `morewords` 的整個定義，直到結尾分號為止，然後選擇工具列上的 [為所選行加上註解] 按鈕。 如果您想要使用鍵盤，請按下 **ctrl** + **K**、 **ctrl** + **C**。
 
    ![註解化按鈕](media/tutorial-comment-out.png)
 
@@ -120,17 +123,17 @@ Visual Studio 提供實用的「程式碼片段」**，讓您可以用來快速�
 
 ## <a name="collapse-code-blocks"></a>摺疊程式碼區塊
 
-我們不想要看到所產生的 `Class1` 具有空白[建構函式](/dotnet/csharp/programming-guide/classes-and-structs/constructors)，所以為了整理我們的程式碼檢視，讓我們將其摺疊。 選擇建構函式第一行邊緣中其內有減號的小型灰色方塊。 或者，如果您是鍵盤使用者，請將游標放在函式程式碼中的任何位置，然後按**ctrl** + **m**、 **ctrl** + **m**。
+我們不想要看到所產生的 `Class1` 具有空白[建構函式](/dotnet/csharp/programming-guide/classes-and-structs/constructors)，所以為了整理我們的程式碼檢視，讓我們將其摺疊。 選擇建構函式第一行邊緣中其內有減號的小型灰色方塊。 或者，如果您是鍵盤使用者，請將游標放在函式程式碼中的任何位置，然後按 **ctrl** + **m**、 **ctrl** + **m**。
 
 ![大綱摺疊按鈕](media/tutorial-collapse.png)
 
-程式碼區塊只會摺疊到第一行，並且後面接著省略符號 (`...`)。 若要再次展開程式碼區塊，請按一下現在具有加號的相同灰色方塊，或再次按下**ctrl** + **m**、 **ctrl** + **m** 。 這項功能稱為「 [大綱](../ide/outlining.md) 」，當您要折迭較長的方法或整個類別時，這項功能特別有用。
+程式碼區塊只會摺疊到第一行，並且後面接著省略符號 (`...`)。 若要再次展開程式碼區塊，請按一下現在具有加號的相同灰色方塊，或再次按下 **ctrl** + **m**、 **ctrl** + **m** 。 這項功能稱為「 [大綱](../ide/outlining.md) 」，當您要折迭較長的方法或整個類別時，這項功能特別有用。
 
 ## <a name="view-symbol-definitions"></a>檢視符號定義
 
 Visual Studio 編輯器可讓您輕鬆檢查類型、方法等的定義。其中一種方式是導覽至包含定義的檔案，例如，在參考符號的任何位置選擇 [ **移至定義** ]。 不會將焦點移離所處理檔案的較快速方式是使用[查看定義](../ide/go-to-and-peek-definition.md#peek-definition)。 讓我們查看 `string` 類型的定義。
 
-1. 以滑鼠右鍵按一下任何出現的 `string`，然後從內容功能表選擇 [查看定義]****。 或者，按**Alt** + **F12**。
+1. 以滑鼠右鍵按一下任何出現的 `string`，然後從內容功能表選擇 [查看定義]。 或者，按 **Alt** + **F12**。
 
    快顯視窗隨即出現，並內含 `String` 類別的定義。 您可以在快顯視窗內捲動，或甚至查看已查看程式碼中另一種類型的定義。
 
@@ -148,7 +151,7 @@ Visual Studio 編輯器可讓您輕鬆檢查類型、方法等的定義。其中
    foreach (string str in qu
    ```
 
-   您會看到 IntelliSense 示範 `query` 符號的 [快速諮詢]****。
+   您會看到 IntelliSense 示範 `query` 符號的 [快速諮詢]。
 
    ![Visual Studio 中的 IntelliSense 文字完成](media/tutorial-intellisense-completion-list.png)
 
@@ -167,11 +170,11 @@ Visual Studio 編輯器可讓您輕鬆檢查類型、方法等的定義。其中
 
 沒有人第一次就取得正確的程式碼，而且您可能想要變更的其中一個項目就是變數或方法的名稱。 讓我們來試試看 Visual Studio 的[重構](../ide/refactoring-in-visual-studio.md)功能，以將 `_words` 變數重新命名為 `words`。
 
-1. 將游標放在變數的定義上 `_words` ，並從按一下滑鼠右鍵或操作功能表中選擇 [**重新命名**]，或按**ctrl** + **r**、 **ctrl** + **r**。
+1. 將游標放在變數的定義上 `_words` ，並從按一下滑鼠右鍵或操作功能表中選擇 [**重新命名**]，或按 **ctrl** + **r**、 **ctrl** + **r**。
 
-   快顯 [重新命名]**** 對話方塊會出現在編輯器右上方。
+   快顯 [重新命名] 對話方塊會出現在編輯器右上方。
 
-1. 輸入所需名稱 **words**。 請注意，也會自動重新命名查詢中 `words` 的參考。 按 **Enter** 鍵之前，請選取 [重新命名]**** 快顯方塊中的 [包括註解]**** 核取方塊。
+1. 輸入所需名稱 **words**。 請注意，也會自動重新命名查詢中 `words` 的參考。 按 **Enter** 鍵之前，請選取 [重新命名] 快顯方塊中的 [包括註解] 核取方塊。
 
    ![重新命名對話方塊](media/tutorial-rename.png)
 

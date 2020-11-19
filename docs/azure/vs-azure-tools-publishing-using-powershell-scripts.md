@@ -4,17 +4,16 @@ description: 了解如何從 Visual Studio 使用 Windows PowerShell 指令碼�
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: 5fff1301-5469-4d97-be88-c85c30f837c1
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 0fafcd0042fce6d3f9eece8e493ee01a9a6923e5
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 97c337adabc5ce22ce92c720a3a4d776eaecf867
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407584"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902139"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>使用 Windows PowerShell 指令碼來發行至開發和測試環境
 
@@ -38,7 +37,7 @@ ms.locfileid: "94407584"
 
 ## <a name="scripts-that-visual-studio-generates"></a>Visual Studio 所產生的指令碼
 
-Visual Studio 會產生一個解決方案層級的資料夾 (稱為 **PublishScripts** )，其中包含兩個 Windows PowerShell 檔案、您的虛擬機器或網站的發行指令碼，以及含有指令碼中可用函數的模組。 Visual Studio 也會產生 JSON 格式的檔案，以指定您要部署之專案的詳細資料。
+Visual Studio 會產生一個解決方案層級的資料夾 (稱為 **PublishScripts**)，其中包含兩個 Windows PowerShell 檔案、您的虛擬機器或網站的發行指令碼，以及含有指令碼中可用函數的模組。 Visual Studio 也會產生 JSON 格式的檔案，以指定您要部署之專案的詳細資料。
 
 ### <a name="windows-powershell-publish-script"></a>Windows PowerShell 發佈指令碼
 
@@ -208,7 +207,7 @@ JSON 檔案建立於 **Configurations** 資料夾中，而且包含可明確指�
 
 您可以自訂發佈指令碼和 JSON 組態檔。 Windows PowerShell 模組 **AzureWebAppPublishModule.psm1** 中的函式不可進行修改。 如果您想要指定不同的資料庫或變更虛擬機器的某些屬性，請編輯 JSON 組態檔。 如果您想要擴充指令碼的功能來自動建置和測試專案，您可以在 **Publish-WebApplication.ps1** 中實作函式虛設常式。
 
-若要自動建置專案，請將呼叫 MSBuild 的程式碼加入 `New-WebDeployPackage` ，如此程式碼範例所示。 MSBuild 命令的路徑會因為您所安裝的 Visual Studio 版本而有所不同。 若要取得正確路徑，您可以使用函式 **Get-MSBuildCmd** ，如此範例所示。
+若要自動建置專案，請將呼叫 MSBuild 的程式碼加入 `New-WebDeployPackage` ，如此程式碼範例所示。 MSBuild 命令的路徑會因為您所安裝的 Visual Studio 版本而有所不同。 若要取得正確路徑，您可以使用函式 **Get-MSBuildCmd**，如此範例所示。
 
 ### <a name="to-automate-building-your-project"></a>自動建置專案
 
@@ -306,7 +305,7 @@ return $WebDeployPackage
     若要自動測試應用程式，請將程式碼加入 `Test-WebApplication`。 請務必要將 **Publish-WebApplication.ps1** 中呼叫這些函式的程式行取消註解。 如果您沒有提供實作，您可以使用 Visual Studio 手動建置專案，然後執行發佈指令碼以發佈至 Azure。
 
 ## <a name="publishing-function-summary"></a>發佈函式摘要
-若要取得可以在 Windows PowerShell 命令提示字元使用之函式的說明，請使用 `Get-Help function-name`命令。 說明中會包括參數說明和範例。 腳本來源檔案中也會有相同的解說文字 **azurewebapppublishmodule.psm1. .psm1** 及 **Publish-WebApplication.ps1** 。 指令碼和說明都已當地語系化為 Visual Studio 所使用的語言。
+若要取得可以在 Windows PowerShell 命令提示字元使用之函式的說明，請使用 `Get-Help function-name`命令。 說明中會包括參數說明和範例。 腳本來源檔案中也會有相同的解說文字 **azurewebapppublishmodule.psm1. .psm1** 及 **Publish-WebApplication.ps1**。 指令碼和說明都已當地語系化為 Visual Studio 所使用的語言。
 
 **AzureWebAppPublishModule**
 
@@ -322,7 +321,7 @@ return $WebDeployPackage
 | Find-AzureVM |取得指定的 Azure 虛擬機器。 |
 | Format-DevTestMessageWithTime |在訊息前面加上日期和時間。 此函式是專為寫入 Error 和 Verbose 串流的訊息所設計。 |
 | Get-AzureSQLDatabaseConnectionString |組合連接字串來連線到 Azure SQL 資料庫。 |
-| Get-AzureVMStorage |傳回指定位置或同質群組中，) 名稱模式為 "devtest *" (不區分大小寫之第一個儲存體帳戶的名稱。如果 "devtest* " 儲存體帳戶不符合位置或同質群組，則函式會忽略它。 指定位置或同質群組。 |
+| Get-AzureVMStorage |傳回指定位置或同質群組中，) 名稱模式為 "devtest *" (不區分大小寫之第一個儲存體帳戶的名稱。如果 "devtest*" 儲存體帳戶不符合位置或同質群組，則函式會忽略它。 指定位置或同質群組。 |
 | Get-MSDeployCmd |傳回執行 MsDeploy.exe 工具的命令。 |
 | New-AzureVMEnvironment |在訂用帳戶中尋找或建立符合 JSON 組態檔中的值的虛擬機器。 |
 | Publish-WebPackage |使用 MsDeploy.exe 和 Web 發佈封裝 .Zip 檔案將資源部署至網站。 此函式不會產生任何輸出。 如果呼叫 MSDeploy.exe 失敗，此函式會擲回例外狀況。 若要取得更詳細的輸出，請使用 **-Verbose** 選項。 |
@@ -334,8 +333,8 @@ return $WebDeployPackage
 | Test-HttpsUrl |將輸入的 URL 轉換為 System.Uri 物件。 如果 URL 為絕對值，而且其配置為 https，則傳回 `$True` 。 如果 URL 是相對值、其配置不是 HTTPS 或輸入的字串無法轉換成 URL，則傳回 `$false` 。 |
 | Test-Member |如果屬性或方法是物件的成員，則傳回 `$true` 。 否則傳回 `$false`。 |
 | Write-ErrorWithTime |寫入前面會加上目前時間的錯誤訊息。 此函式會呼叫 **Format-DevTestMessageWithTime** 函式，以在將訊息寫入 Error 串流之前在訊息前面加上時間。 |
-| Write-HostWithTime |將前面會加上目前時間的訊息寫入主機程式 ( **Write-Host** )。 寫入主機程式的效果並不一定。 大部分裝載 Windows PowerShell 的程式會將這些訊息寫入標準輸出。 |
-| Write-VerboseWithTime |寫入前面會加上目前時間的詳細資訊訊息。 它會呼叫 **Write-Verbose** ，所以只有當指令碼搭配 **Verbose** 參數執行或當 [VerbosePreference] 喜好設定設為 [繼續] 時，才會顯示訊息。 |
+| Write-HostWithTime |將前面會加上目前時間的訊息寫入主機程式 (**Write-Host**)。 寫入主機程式的效果並不一定。 大部分裝載 Windows PowerShell 的程式會將這些訊息寫入標準輸出。 |
+| Write-VerboseWithTime |寫入前面會加上目前時間的詳細資訊訊息。 它會呼叫 **Write-Verbose**，所以只有當指令碼搭配 **Verbose** 參數執行或當 [VerbosePreference] 喜好設定設為 [繼續] 時，才會顯示訊息。 |
 
 **Publish-WebApplication**
 

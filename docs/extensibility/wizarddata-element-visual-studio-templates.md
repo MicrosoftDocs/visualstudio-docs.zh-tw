@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的 WizardData 元素) |Microsoft Docs"
+description: 瞭解 WizardData 元素，以及它如何指定自訂 XML。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa3f9d2e971d944b964f4b194d1324ff960fbd24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0472bfeb3a988bcb39b4daf80cea92398130f59f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740387"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903399"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData 項目 (Visual Studio 範本)
 
@@ -67,7 +69,7 @@ ms.locfileid: "80740387"
 
 可以在這個元素中指定任何 XML。 XML 會以參數的形式傳遞至自訂的 wizard 擴充功能，讓擴充功能可以使用此專案的內容。 這項資料不會進行任何驗證。
 
-**WizardData**元素的內容會以參數形式傳遞（不變），作為方法中參數的字串字典內的參數 `IWizard.RunStarted` 。 字典索引鍵的名稱為 `$wizarddata$` 。
+**WizardData** 元素的內容會以參數形式傳遞（不變），作為方法中參數的字串字典內的參數 `IWizard.RunStarted` 。 字典索引鍵的名稱為 `$wizarddata$` 。
 
 ## <a name="example"></a>範例
 

@@ -3,17 +3,16 @@ title: 設定 Azure 雲端服務的角色
 description: 了解如何使用 Visual Studio 設定 Azure 雲端服務的角色。
 author: ghogen
 manager: jillfra
-assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 6b34a61bb0353bbbd4405b7f642bc63758dfa096
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 120c693e7009dddf2efaab7ce54fd4d20c0b1681
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399275"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902645"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>使用 Visual Studio 設定 Azure 雲端服務角色
 Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您必須為每個角色定義其設定方式，並設定該角色的執行方式。 若要深入了解雲端服務中的角色，請參閱視訊 [Azure 雲端服務簡介](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)。
@@ -71,7 +70,7 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
     ![更新執行個體計數](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-instance-count.png)
 
-1. 從 Visual Studio 的工具列中，選取 [ **儲存** ]。
+1. 從 Visual Studio 的工具列中，選取 [ **儲存**]。
 
 ## <a name="manage-connection-strings-for-storage-accounts"></a>管理儲存體帳戶的連接字串
 您可以新增、移除或修改服務組態的連接字串。 例如，針對具有 `UseDevelopmentStorage=true`值的本機服務組態，您可能想要本機連接字串。 您也能也會想要設定在 Azure 中使用儲存體帳戶的雲端服務組態。
@@ -113,11 +112,11 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
     - **Microsoft Azure 儲存體模擬器** -如果您選取此選項，對話方塊上的其餘設定會停用，因為它們只適用于 Azure。 選取 [確定]。
     - **您的訂用帳戶** - 如果您選取此選項，請使用下拉式清單來選取並登入 Microsoft 帳戶，或新增 Microsoft 帳戶。 選取 Azure 訂用帳戶和儲存體帳戶。 選取 [確定]。
-    - **手動輸入的認證** - 輸入儲存體帳戶名稱，以及主要或次要金鑰。 針對大部分的案例，請選取 [ **連線 (HTTPS** 的選項。 ) 選取 **[確定]** 。
+    - **手動輸入的認證** - 輸入儲存體帳戶名稱，以及主要或次要金鑰。 針對大部分的案例，請選取 [ **連線 (HTTPS** 的選項。 ) 選取 **[確定]**。
 
 1. 若要刪除連接字串，請選取連接字串，然後選取 [移除設定]。
 
-1. 從 Visual Studio 的工具列中，選取 [ **儲存** ]。
+1. 從 Visual Studio 的工具列中，選取 [ **儲存**]。
 
 ## <a name="programmatically-access-a-connection-string"></a>以程式設計方式存取連接字串
 
@@ -173,7 +172,7 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
 1. 若要刪除自訂設定，請選取設定，然後選取 [移除設定]。
 
-1. 從 Visual Studio 的工具列中，選取 [ **儲存** ]。
+1. 從 Visual Studio 的工具列中，選取 [ **儲存**]。
 
 ## <a name="programmatically-access-a-custom-settings-value"></a>以程式設計方式存取自訂設定的值
 
@@ -224,7 +223,7 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
 1. 若要刪除本機儲存體項目，請選取此項目，然後選取 [移除本機儲存體]。
 
-1. 從 Visual Studio 的工具列中，選取 [ **儲存** ]。
+1. 從 Visual Studio 的工具列中，選取 [ **儲存**]。
 
 ## <a name="programmatically-accessing-local-storage"></a>以程式設計方式存取本機儲存體
 

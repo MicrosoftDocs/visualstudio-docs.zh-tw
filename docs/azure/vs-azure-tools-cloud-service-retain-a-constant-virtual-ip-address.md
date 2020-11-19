@@ -4,17 +4,16 @@ description: 了解如何確保 Azure 雲端服務的虛擬 IP 位址 (VIP) 不�
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: 4a58e2c6-7a79-4051-8a2c-99182ff8b881
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 95d6a695c31dc62bbe12c2e7aec217aeac8403d8
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 08473bc03e1e8b7a6882d83b7f1770403186e58a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399835"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902542"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>保持 Azure 雲端服務的固定虛擬 IP 位址
 當您更新裝載於 Azure 中的雲端服務時，您可能需要確保服務的虛擬 IP 位址 (VIP) 不會變更。 許多網域管理服務都使用網域名稱系統 (DNS) 註冊網域名稱。 DNS 只有在 VIP 保持不變時才能運作。 您可以使用 Azure 工具中的 [發佈精靈]  確保雲端服務的 VIP 不會在您更新它時變更。 如需有關如何使用雲端服務的 DNS 網域管理的詳細資訊，請參閱 [設定 Azure 雲端服務的自訂網域名稱](/azure/cloud-services/cloud-services-custom-domain-name-portal)。
@@ -35,7 +34,7 @@ ms.locfileid: "93399835"
 
     ![發佈 Azure 應用程式登入頁面](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-signin.png)
 
-4. 在 [ **一般設定** ] 索引標籤上，確認您要部署的雲端服務名稱、 **環境** 、 **組建** 設定和 **服務** 設定都是正確的。
+4. 在 [ **一般設定** ] 索引標籤上，確認您要部署的雲端服務名稱、 **環境**、 **組建** 設定和 **服務** 設定都是正確的。
 
     ![發佈 Azure 應用程式一般設定索引標籤](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-common-settings.png)
 

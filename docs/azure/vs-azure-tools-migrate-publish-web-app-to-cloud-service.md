@@ -4,17 +4,16 @@ description: 了解如何使用 Visual Studio 將 Web 應用程式移轉並發�
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: eb87aff7bf4ca1e3eac359b27a4280877eaefc50
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c9d689ddca7b6f1b0c02f89c7afb82392e8a58af
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399815"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902346"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>如何：從 Visual Studio 將 web 應用程式遷移和發佈至 Azure 雲端服務
 
@@ -27,7 +26,7 @@ ms.locfileid: "93399815"
 
 1. 以滑鼠右鍵按一下方案節點，然後選取 [ **新增 > 新增專案** ]，並將新的 **Azure 雲端服務 (傳統)** 專案加入至現有的方案。
 1. 在 [ **新的 Microsoft Azure 雲端服務 (傳統)** ] 對話方塊中，按一下 [確定]，而不將任何角色新增至專案。
-1. 以滑鼠右鍵按一下新增的雲端服務專案底下的 [角色] 節點，然後選取 [ **在方案中新增 Web 角色專案** ]。
+1. 以滑鼠右鍵按一下新增的雲端服務專案底下的 [角色] 節點，然後選取 [ **在方案中新增 Web 角色專案**]。
 1. 在 [ **與角色專案建立關聯** ] 對話方塊中，選取您要與 web 角色建立關聯的專案。
 
    > [!Important]

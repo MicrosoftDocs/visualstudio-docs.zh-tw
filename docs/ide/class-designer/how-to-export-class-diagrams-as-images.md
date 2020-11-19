@@ -1,5 +1,7 @@
 ---
 title: 如何：將類別圖表匯出為影像 (類別設計工具)
+description: 瞭解如何將圖表儲存為影像，以從專案中的程式碼匯出您建立的類別圖。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdecb8834f296d24cbd53d6725b800612f9bcf57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2cb72a494cbafc9e2ab6661f056436a083b52de1
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770146"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901397"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>如何：將類別圖表匯出為影像
 
@@ -27,13 +29,13 @@ ms.locfileid: "85770146"
 
 1. 開啟您的類別圖表 (*光碟*) 檔。
 
-2. 從 [類別圖表]**** 功能表或圖表介面捷徑功能表，選擇 [將圖表匯出為影像]****。
+2. 從 [類別圖表] 功能表或圖表介面捷徑功能表，選擇 [將圖表匯出為影像]。
 
 3. 選取圖表。
 
 4. 選取您要的格式。
 
-5. 選擇 [匯出]**** 以完成匯出。
+5. 選擇 [匯出] 以完成匯出。
 
 若要自動更新與其他文件連結的匯出影像，請在 Visual Studio 中重新匯出圖表。
 

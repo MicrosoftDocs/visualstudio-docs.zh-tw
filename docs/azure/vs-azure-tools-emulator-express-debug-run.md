@@ -4,17 +4,16 @@ ms.custom: SEO-VS-2020
 description: 使用 Emulator Express 在本機電腦上執行及偵錯雲端服務
 author: mikejo5000
 manager: jillfra
-ms.assetid: 73108f98-a552-4817-b7a1-551367b71906
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: 4874a93cd7d7546ca1d131f6c8941bd78cd98465
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dee97ab487f4e165fd372559e51b6f19c3501e9f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809829"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902437"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>使用 Emulator Express 在本機電腦上執行 Azure 雲端服務及對其進行偵錯
 使用 Emulator Express，您可以測試及偵錯雲端服務，而不需以系統管理員身分執行 Visual Studio。 視您的雲端服務的需求而定，您可以進行專案設定以使用 Emulator Express 或完整模擬器。 如需完整模擬器的詳細資訊，請參閱 [在計算模擬器中執行 Azure 應用程式](/azure/storage/common/storage-use-emulator)。
@@ -26,13 +25,13 @@ ms.locfileid: "90809829"
 
 1. 在方案總管中，以滑鼠右鍵按一下專案，然後從內容功能表中選取 [ **屬性**]。
 
-1. 在專案屬性頁面中，選取 [Web]**** 索引標籤。
+1. 在專案屬性頁面中，選取 [Web] 索引標籤。
 
     ![Azure 雲端服務專案的屬性](./media/vs-azure-tools-emulator-express-debug-run/web-properties.png)
 
-1. 在 [本機程式開發伺服器]**** 之下，選取 [使用 IIS Express]**** 選項。
+1. 在 [本機程式開發伺服器] 之下，選取 [使用 IIS Express] 選項。
 
-1. 在 [模擬器]**** 之下，選取 [使用 Emulator Express]****。
+1. 在 [模擬器] 之下，選取 [使用 Emulator Express]。
 
 1. 若要啟動 Emulator Express，請在命令提示字元中執行下列命令：
 

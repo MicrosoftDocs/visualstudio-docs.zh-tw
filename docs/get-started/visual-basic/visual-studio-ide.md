@@ -1,8 +1,11 @@
 ---
 title: Visual Basic 開發人員概觀
+description: 瞭解如何使用 Visual Studio 來編輯、偵測和建立程式碼，然後將應用程式發佈為 Visual Basic 開發人員。
 ms.date: 11/15/2018
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -11,16 +14,16 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9938d017d683fd27a3f303824f9568a3876c2c4d
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 990bff2832f290987ed29fd48b69f4d7a1a05bba
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928039"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901566"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>歡迎使用 Visual Studio IDE | Visual Basic
 
-Visual Studio「整合式開發環境」** 是一個有創意的啟動控制板，可供您編輯、偵錯及建置程式碼，然後發佈應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有編譯器、程式碼完成工具、圖形設計工具和更多功能，讓軟體開發程序變得更為容易。
+Visual Studio「整合式開發環境」是一個有創意的啟動控制板，可供您編輯、偵錯及建置程式碼，然後發佈應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有編譯器、程式碼完成工具、圖形設計工具和更多功能，讓軟體開發程序變得更為容易。
 
 ::: moniker range="vs-2017"
 
@@ -107,7 +110,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
    Visual Studio 使用這麼多的功能表、選項和屬性，有時似乎讓人有壓迫感。 搜尋方塊是一個可讓您在 Visual Studio 中快速找到所需項目的絕佳方式。 當您開始鍵入要尋找的項目名稱時，Visual Studio 會列出結果，將您引導至您確實想要去的地方。 如果您需要在 Visual Studio 中新增功能，例如新增對其他程式設計語言的支援，搜尋方塊提供的結果可開啟 Visual Studio 安裝程式，安裝工作負載或個別元件。
 
    > [!TIP]
-   > 按**Ctrl** + **Q**作為搜尋方塊的快捷方式。
+   > 按 **Ctrl** + **Q** 作為搜尋方塊的快捷方式。
 
    ::: moniker range="vs-2017"
 
@@ -129,7 +132,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - [呼叫階層](../../ide/reference/call-hierarchy.md)
 
-   [呼叫階層]**** 視窗會顯示呼叫所選方法的方法。 當您考慮要變更或移除方法，或嘗試追蹤 Bug 時，這會是有用的資訊。
+   [呼叫階層] 視窗會顯示呼叫所選方法的方法。 當您考慮要變更或移除方法，或嘗試追蹤 Bug 時，這會是有用的資訊。
 
    ::: moniker range="vs-2017"
 
@@ -177,7 +180,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - [查看定義](../../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
 
-   [查看定義]**** 視窗會顯示方法或類型的定義，不必實際開啟個別的檔案。
+   [查看定義] 視窗會顯示方法或類型的定義，不必實際開啟個別的檔案。
 
    ::: moniker range="vs-2017"
 
@@ -197,13 +200,13 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 ::: moniker range="vs-2017"
 
-若要開始使用，請 [下載 Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ，並將它安裝在您的系統上。 模組安裝程式可讓您選擇並安裝「工作負載」**，這些通常是您慣用的程式設計語言或平台所需的幾組功能。 若要遵循[建立程式](#create-a-program)的步驟，請務必在安裝期間選取 **.NET Core 跨平台開發**工作負載。
+若要開始使用，請 [下載 Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ，並將它安裝在您的系統上。 模組安裝程式可讓您選擇並安裝「工作負載」，這些通常是您慣用的程式設計語言或平台所需的幾組功能。 若要遵循 [建立程式](#create-a-program)的步驟，請務必在安裝期間選取 **.NET Core 跨平台開發** 工作負載。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-若要開始使用，請 [下載 Visual Studio](https://visualstudio.microsoft.com/downloads) ，並將它安裝在您的系統上。 模組安裝程式可讓您選擇並安裝「工作負載」**，這些通常是您慣用的程式設計語言或平台所需的幾組功能。 若要遵循[建立程式](#create-a-program)的步驟，請務必在安裝期間選取 **.NET Core 跨平台開發**工作負載。
+若要開始使用，請 [下載 Visual Studio](https://visualstudio.microsoft.com/downloads) ，並將它安裝在您的系統上。 模組安裝程式可讓您選擇並安裝「工作負載」，這些通常是您慣用的程式設計語言或平台所需的幾組功能。 若要遵循 [建立程式](#create-a-program)的步驟，請務必在安裝期間選取 **.NET Core 跨平台開發** 工作負載。
 
 ::: moniker-end
 
@@ -217,7 +220,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 ### <a name="change-the-color-theme"></a>變更色彩佈景主題
 
-若要變更為 [深色]**** 佈景主題：
+若要變更為 [深色] 佈景主題：
 
 ::: moniker range="vs-2017"
 
@@ -227,7 +230,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 ::: moniker range=">=vs-2019"
 
-1. 開啟 Visual Studio。 在 [開始] 視窗中，選擇 [不使用程式碼繼續]****。
+1. 開啟 Visual Studio。 在 [開始] 視窗中，選擇 [不使用程式碼繼續]。
 
    ![Visual Studio 2019 中的 [開始] 視窗](media/vs-2019/continue-without-code.png)
 
@@ -237,11 +240,11 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 2. 在功能表列上，選擇 [**工具**  >  **選項**] 以開啟 [**選項**] 對話方塊。
 
-3. 在 [**環境**  >  **一般**選項] 頁面上，將**色彩主題**選取範圍變更為 [**深色**]，然後選擇 **[確定]**。
+3. 在 [**環境**  >  **一般** 選項] 頁面上，將 **色彩主題** 選取範圍變更為 [**深色**]，然後選擇 **[確定]**。
 
    ![在 Visual Studio 中將色彩佈景主題變更為深色](media/change-color-theme.png)
 
-   整個 IDE 的色彩佈景主題會變更為 [深色]****。
+   整個 IDE 的色彩佈景主題會變更為 [深色]。
 
    ::: moniker range="vs-2017"
 
@@ -259,15 +262,15 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 接下來，我們將設定 Visual Studio 來使用為 Visual Basic 開發人員量身打造的環境設定。
 
-1. 在功能表列上，選擇 [**工具**匯  >  **入和匯出設定**]。
+1. 在功能表列上，選擇 [**工具** 匯  >  **入和匯出設定**]。
 
-2. 在 [匯入和匯出設定精靈]**** 中，選取第一頁上的 [重設所有設定]****，然後選擇 [下一步]****。
+2. 在 [匯入和匯出設定精靈] 中，選取第一頁上的 [重設所有設定]，然後選擇 [下一步]。
 
-3. 在 [儲存目前設定]**** 頁面上，選取一個選項來指出是否要儲存目前的設定，然後選擇 [下一步]****。 (如果您尚未自訂任何設定，請選取 [否，直接重設設定並覆寫目前的設定]****)。
+3. 在 [儲存目前設定] 頁面上，選取一個選項來指出是否要儲存目前的設定，然後選擇 [下一步]。 (如果您尚未自訂任何設定，請選取 [否，直接重設設定並覆寫目前的設定])。
 
-4. 在 [選擇預設的設定集合]**** 頁面上，選擇 [Visual Basic]****，然後選擇 [完成]****。
+4. 在 [選擇預設的設定集合] 頁面上，選擇 [Visual Basic]，然後選擇 [完成]。
 
-5. 在 [重設完成]**** 頁面上，選擇 [關閉]****。
+5. 在 [重設完成] 頁面上，選擇 [關閉]。
 
 若要了解您可以個人化 IDE 的其他方式，請參閱[個人化 Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)。
 
@@ -277,18 +280,18 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 ::: moniker range="vs-2017"
 
-1. 在 Visual Studio 功能表列上，選擇 [檔案]** [新增專案]** > ****。
+1. 在 Visual Studio 功能表列上，選擇 [檔案]**[新增專案]** > 。
 
    ![功能表列上的 [檔案] > [新增專案]](media/file-new-project-menu.png)
 
    [ **新增專案** ] 對話方塊會顯示數個專案 *範本*。 範本包含指定專案類型所需的基本檔案和設定。
 
-1. 選擇 [Visual Basic]**** 下的 [.NET Core]**** 類別，然後選擇 [主控台應用程式 (.NET Core)]**** 範本。 在 [名稱]**** 文字方塊中，鍵入 **HelloWorld**，然後選取 [確定]**** 按鈕。
+1. 選擇 [Visual Basic] 下的 [.NET Core] 類別，然後選擇 [主控台應用程式 (.NET Core)] 範本。 在 [名稱] 文字方塊中，鍵入 **HelloWorld**，然後選取 [確定] 按鈕。
 
    ![.NET Core 應用程式範本](media/overview-npd.png)
 
    > [!NOTE]
-   > 如果您未看到 [.NET Core]**** 類別，則需要安裝 [.NET Core 跨平台開發]**** 工作負載。 若要安裝，請選擇 [新增專案]**** 對話方塊左下角的 [開啟 Visual Studio 安裝程式]**** 連結。 在 Visual Studio 安裝程式開啟後，向下捲動並選取 [.NET Core 跨平台開發]**** 工作負載，然後選取 [修改]****。
+   > 如果您未看到 [.NET Core] 類別，則需要安裝 [.NET Core 跨平台開發] 工作負載。 若要安裝，請選擇 [新增專案] 對話方塊左下角的 [開啟 Visual Studio 安裝程式] 連結。 在 Visual Studio 安裝程式開啟後，向下捲動並選取 [.NET Core 跨平台開發] 工作負載，然後選取 [修改]。
 
    Visual Studio 會建立專案。 其為簡單的 "Hello World" 應用程式，會呼叫 <xref:System.Console.WriteLine?displayProperty=nameWithType> 方法來顯示常值字串 "Hello World!" 在主控台 (程式輸出) 視窗中。
 
@@ -296,13 +299,13 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![Visual Studio IDE](media/overview-ide-console-app.png)
 
-   應用程式的 Visual Basic 程式碼會顯示在編輯器視窗中，占據大部分的空間。 請注意，系統會將文字自動標示色彩，以表示不同部分的程式碼，例如關鍵字和類型。 此外，程式碼中的垂直小虛線會指出那些大括號彼此成對，而行號則可協助您稍後找出程式碼。 您可以選擇帶方框的小負號來摺疊或展開程式碼區塊。 此程式碼大綱功能可讓您隱藏您不需要的程式碼，有助於讓畫面變得較為簡潔。 專案檔會列在右邊稱作 [方案總管]**** 的視窗中。
+   應用程式的 Visual Basic 程式碼會顯示在編輯器視窗中，占據大部分的空間。 請注意，系統會將文字自動標示色彩，以表示不同部分的程式碼，例如關鍵字和類型。 此外，程式碼中的垂直小虛線會指出那些大括號彼此成對，而行號則可協助您稍後找出程式碼。 您可以選擇帶方框的小負號來摺疊或展開程式碼區塊。 此程式碼大綱功能可讓您隱藏您不需要的程式碼，有助於讓畫面變得較為簡潔。 專案檔會列在右邊稱作 [方案總管] 的視窗中。
 
    ![具有紅色方塊的 Visual Studio IDE](media/overview-ide-console-app-red-boxes.png)
 
    還有其他可用的功能表和工具視窗，但讓我們目前先繼續進行操作。
 
-1. 現在，啟動應用程式。 您可以藉由從功能表列上的 [偵錯]**** 功能表選擇 [啟動但不偵錯]****，來執行此動作。 您也可以按下**Ctrl** + **F5**。
+1. 現在，啟動應用程式。 您可以藉由從功能表列上的 [偵錯] 功能表選擇 [啟動但不偵錯]，來執行此動作。 您也可以按下 **Ctrl** + **F5**。
 
    ![[偵錯] > [啟動但不偵錯] 功能表](../media/overview-start-without-debugging.png)
 
@@ -327,7 +330,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
    Console.WriteLine("Hello " + name + "!")
    ```
 
-1. 按下**Ctrl**F5 再次執行應用程式 + ** **。
+1. 按下 **Ctrl** F5 再次執行應用程式 + ****。
 
    Visual Studio 會重建應用程式，然後主控台視窗會開啟並提示您輸入您的名稱。
 
@@ -341,19 +344,19 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 ::: moniker range=">=vs-2019"
 
-1. 在 Visual Studio 功能表列上，選擇 [檔案]** [新增專案]** > ****。
+1. 在 Visual Studio 功能表列上，選擇 [檔案]**[新增專案]** > 。
 
    ![功能表列上的 [檔案] > [新增專案]](media/vs-2019/file-new-project.png)
 
-   [建立新專案]**** 視窗隨即開啟，並顯示數個專案「範本」**。 範本包含指定專案類型所需的基本檔案和設定。
+   [建立新專案] 視窗隨即開啟，並顯示數個專案「範本」。 範本包含指定專案類型所需的基本檔案和設定。
 
-1. 若要尋找所需的範本，在搜尋方塊中鍵入或輸入 **.net core 主控台**。 系統即會根據您所輸入的關鍵字自動篩選可用的範本清單。 您可以從 [語言]**** 下拉式清單中選擇 [Visual Basic]****，進一步篩選範本結果。
+1. 若要尋找所需的範本，在搜尋方塊中鍵入或輸入 **.net core 主控台**。 系統即會根據您所輸入的關鍵字自動篩選可用的範本清單。 您可以從 [語言] 下拉式清單中選擇 [Visual Basic]，進一步篩選範本結果。
 
-1. 選取 [主控台應用程式 (.NET Core)]**** 範本，然後選擇 [下一步]****。
+1. 選取 [主控台應用程式 (.NET Core)] 範本，然後選擇 [下一步]。
 
    ![在 Visual Studio 中建立新專案](media/vs-2019/create-new-project.png)
 
-1. 在 [設定新專案]**** 視窗中，於 [專案名稱]**** 方塊中輸入 **HelloWorld**、選擇性地變更專案檔的目錄位置，然後選擇 [建立]****。
+1. 在 [設定新專案] 視窗中，於 [專案名稱] 方塊中輸入 **HelloWorld**、選擇性地變更專案檔的目錄位置，然後選擇 [建立]。
 
    ![在 Visual Studio 中設定新專案](media/vs-2019/configure-new-project.png)
 
@@ -363,19 +366,19 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![Visual Studio IDE](media/overview-ide-console-app.png)
 
-   應用程式的 Visual Basic 程式碼會顯示在編輯器視窗中，占據大部分的空間。 請注意，系統會將文字自動標示色彩，以表示不同部分的程式碼，例如關鍵字和類型。 此外，程式碼中的垂直小虛線會指出那些大括號彼此成對，而行號則可協助您稍後找出程式碼。 您可以選擇帶方框的小負號來摺疊或展開程式碼區塊。 此程式碼大綱功能可讓您隱藏您不需要的程式碼，有助於讓畫面變得較為簡潔。 專案檔會列在右邊稱作 [方案總管]**** 的視窗中。
+   應用程式的 Visual Basic 程式碼會顯示在編輯器視窗中，占據大部分的空間。 請注意，系統會將文字自動標示色彩，以表示不同部分的程式碼，例如關鍵字和類型。 此外，程式碼中的垂直小虛線會指出那些大括號彼此成對，而行號則可協助您稍後找出程式碼。 您可以選擇帶方框的小負號來摺疊或展開程式碼區塊。 此程式碼大綱功能可讓您隱藏您不需要的程式碼，有助於讓畫面變得較為簡潔。 專案檔會列在右邊稱作 [方案總管] 的視窗中。
 
    ![具有紅色方塊的 Visual Studio IDE](media/overview-ide-console-app-red-boxes.png)
 
    還有其他可用的功能表和工具視窗，但讓我們目前先繼續進行操作。
 
-1. 現在，啟動應用程式。 您可以藉由從功能表列上的 [偵錯]**** 功能表選擇 [啟動但不偵錯]****，來執行此動作。 您也可以按下**Ctrl** + **F5**。
+1. 現在，啟動應用程式。 您可以藉由從功能表列上的 [偵錯] 功能表選擇 [啟動但不偵錯]，來執行此動作。 您也可以按下 **Ctrl** + **F5**。
 
    ![[偵錯] > [啟動但不偵錯] 功能表](media/vs-2019/start-without-debugging.png)
 
    Visual Studio 會建立應用程式，而主控台視窗隨即開啟，並顯示訊息 **Hello World！**。 您現在已有一個執行中的應用程式！
 
-   ![主控台視窗](../media/vs-2019/overview-console-window.png)
+   ![顯示 Hello World 訊息之主控台視窗的螢幕擷取畫面。](../media/vs-2019/overview-console-window.png)
 
 1. 若要關閉主控台視窗，請在鍵盤上按下任意鍵。
 
@@ -394,13 +397,13 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
    Console.WriteLine("Hello " + name + "!")
    ```
 
-1. 按下**Ctrl**F5 再次執行應用程式 + ** **。
+1. 按下 **Ctrl** F5 再次執行應用程式 + ****。
 
    Visual Studio 會重建應用程式，然後主控台視窗會開啟並提示您輸入您的名稱。
 
 1. 請在主控台視窗中輸入您的名稱，並按下 **ENTER**。
 
-   ![主控台視窗](../media/vs-2019/overview-console-input.png)
+   ![主控台視窗的螢幕擷取畫面，其中顯示您的名稱問題和應用程式的回應。](../media/vs-2019/overview-console-input.png)
 
 1. 按任意鍵以關閉主控台視窗並停止執行程式。
 
@@ -418,7 +421,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    請注意，變數周圍會出現一個灰色方塊，而邊界會出現一個燈泡。
 
-3. 選取燈泡圖示以顯示可用的[快速動作](../../ide/quick-actions.md)。 選取 [將 'name' 重新命名為 'username']****。
+3. 選取燈泡圖示以顯示可用的[快速動作](../../ide/quick-actions.md)。 選取 [將 'name' 重新命名為 'username']。
 
    ![重新命名 Visual Studio 中的動作](media/rename-quick-action.png)
 
@@ -455,11 +458,11 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![Visual Studio 中的內嵌暫存變數重構](media/inline-temporary-variable-refactoring.png)
 
-9. 按一下 [內嵌暫存變數]**** 以重構程式碼。
+9. 按一下 [內嵌暫存變數] 以重構程式碼。
 
 ::: moniker range="vs-2017"
 
-10. 按下**Ctrl** + **F5**再次執行程式。 輸出看起來會像這樣：
+10. 按下 **Ctrl** + **F5** 再次執行程式。 輸出看起來會像這樣：
 
     ![含有程式輸出的主控台視窗](../media/overview-console-final.png)
 
@@ -467,7 +470,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 ::: moniker range=">=vs-2019"
 
-10. 按下**Ctrl** + **F5**再次執行程式。 輸出看起來會像這樣：
+10. 按下 **Ctrl** + **F5** 再次執行程式。 輸出看起來會像這樣：
 
     ![含有程式輸出的主控台視窗](../media/vs-2019/overview-console-final.png)
 
@@ -475,7 +478,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 ## <a name="debug-code"></a>偵錯程式碼
 
-當您撰寫程式碼時，必須執行並測試它，以找出 Bug。 Visual Studio 偵錯系統可讓您以一次一個陳述式的方式逐步偵錯程式碼，並一邊檢查變數。 您可以設定「中斷點」**，其會停止執行特定行的程式碼。 您可以觀察變數值如何隨著程式碼執行而變更，以及更多。
+當您撰寫程式碼時，必須執行並測試它，以找出 Bug。 Visual Studio 偵錯系統可讓您以一次一個陳述式的方式逐步偵錯程式碼，並一邊檢查變數。 您可以設定「中斷點」，其會停止執行特定行的程式碼。 您可以觀察變數值如何隨著程式碼執行而變更，以及更多。
 
 讓我們來設定中斷點，以查看程式「進行」期間的 `username` 變數值。
 
@@ -485,13 +488,13 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![Visual Studio 中程式碼行的中斷點](media/breakpoint.png)
 
-1. 選取 [ **Debug**  >  **開始調試**程式] 或按下**F5**來開始進行偵錯工具。
+1. 選取 [ **Debug**  >  **開始調試** 程式] 或按下 **F5** 來開始進行偵錯工具。
 
 1. 在主控台視窗出現並要求您的名稱時，鍵入名稱並按 **Enter** 鍵。
 
    焦點會返回 Visual Studio 程式碼編輯器，並以黃色醒目提示具有中斷點的程式碼。 這表示程式要執行的下一行程式碼。
 
-1. 將滑鼠移至 `username` 變數上方以查看其值。 或者，您可以在 `username` 上按一下滑鼠右鍵，然後選取 [新增監看式]**** 將變數新增至 [監看式]**** 視窗，您也可以在此查看其值。
+1. 將滑鼠移至 `username` 變數上方以查看其值。 或者，您可以在 `username` 上按一下滑鼠右鍵，然後選取 [新增監看式] 將變數新增至 [監看式] 視窗，您也可以在此查看其值。
 
    ![Visual Studio 偵錯期間的變數值](media/debugging-variable-value.png)
 

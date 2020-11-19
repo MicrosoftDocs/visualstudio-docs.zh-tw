@@ -3,17 +3,16 @@ title: 使用雲端總管管理 Azure 資源 | Microsoft Docs
 description: 了解如何在 Visual Studio 內使用 [雲端總管] 瀏覽和管理 Azure 資源。
 author: ghogen
 manager: jillfra
-assetId: 6347dc53-f497-49d5-b29b-e8b9f0e939d7
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 12c82cca6c8873facc1a16a926d90fd0f3918c07
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c9c2ce60b2096b6c3a4f06fad7360b1d5ea0c753
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399386"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902276"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>在 Visual Studio Cloud Explorer 中管理與 Azure 帳戶關聯的資源
 
@@ -21,23 +20,23 @@ Cloud Explorer 可讓您從 Visual Studio 內檢視您的 Azure 資源和資源�
 
 與 [Azure 入口網站](https://portal.azure.com)相同，Cloud Explorer 也是建立在 Azure Resource Manager 堆疊的基礎上。 因此，Cloud Explorer 了解 Azure 資源群組之類的資源，以及邏輯應用程式和 API 應用程式之類的 Azure 服務，並且支援[角色型存取控制](/azure/role-based-access-control/role-assignments-portal) (RBAC)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
-* Visual Studio 2017 或更新版本 (請參閱 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads))，且已選取 **Azure 工作負載** 。 您也可以透過 [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657) \(英文\) 來使用舊版 Visual Studio。
+* Visual Studio 2017 或更新版本 (請參閱 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads))，且已選取 **Azure 工作負載**。 您也可以透過 [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657) \(英文\) 來使用舊版 Visual Studio。
 * Microsoft Azure 帳戶 - 如果您沒有帳戶，您可以[申請免費試用](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)，或是[啟用您的 Visual Studio 訂閱者權益](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)。
 
 > [!NOTE]
-> 若要查看 Cloud Explorer，請按下 **Ctrl** + **Q** 以啟動搜尋方塊，然後輸入 **Cloud Explorer** 。
+> 若要查看 Cloud Explorer，請按下 **Ctrl** + **Q** 以啟動搜尋方塊，然後輸入 **Cloud Explorer**。
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>將 Azure 帳戶新增到 Cloud Explorer
 
-若要查看與 Azure 帳戶相關聯的資源，您必須先將帳戶新增至 **Cloud Explorer** 。
+若要查看與 Azure 帳戶相關聯的資源，您必須先將帳戶新增至 **Cloud Explorer**。
 
 1. 在 **Cloud Explorer** 中，選取 [ **帳戶管理** ] 按鈕。
 
    ![Cloud Explorer 的 [Azure 帳戶設定] 圖示](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
-1. 選取 [ **管理帳戶** ]。
+1. 選取 [ **管理帳戶**]。
 
    ![Cloud Explorer 的 [新增帳戶] 連結](./media/vs-azure-tools-resources-managing-with-cloud-explorer/manage-accounts-link.png)
 
@@ -100,7 +99,7 @@ Cloud Explorer 可讓您從 Visual Studio 內檢視您的 Azure 資源和資源�
 
 ## <a name="find-resources-in-cloud-explorer"></a>在 Cloud Explorer 中尋找資源
 
-若要在您的 Azure 帳戶訂用帳戶中尋找具有特定名稱的資源，請在 **Cloud Explorer** 的 [ **搜尋** ] 方塊中輸入名稱。
+若要在您的 Azure 帳戶訂用帳戶中尋找具有特定名稱的資源，請在 **Cloud Explorer** 的 [**搜尋**] 方塊中輸入名稱。
 
   ![在 [雲端總管] 中尋找資源](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
 

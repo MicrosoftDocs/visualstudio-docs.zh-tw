@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3eb912ebb4d8d7d4596a6aae6499ac054d4514ca
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: d2ac806b4a83b23a783c59eeee5df801c9237685
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102502"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94900916"
 ---
 # <a name="intellisense-completion-for-unimported-types-and-extension-methods"></a>未匯入類型和擴充方法的 IntelliSense 完成
 
@@ -33,12 +33,12 @@ ms.locfileid: "93102502"
 
 **原因：** 您不需要手動將 using 語句新增至您的檔案。
 
-## <a name="how-to"></a>使用方法
+## <a name="how-to"></a>操作方式
 
 1. 當您開始輸入在專案中具有相依性之類型或擴充方法的名稱時，IntelliSense 會提供建議。 未匯入命名空間中的專案會將其包含的命名空間顯示為尾碼。
 
    > [!TIP]
-   > 您可以視需要顯示/隱藏未匯入命名空間中的專案，使用 [ **展開] 按鈕 (Alt + A)** 出現在完成清單的左下方。 若要變更預設行為，請移至 [ **工具**  >  **選項**  >  **文字編輯器**  >  **c #**  /  **基本**  >  **IntelliSense** ]，並尋找 **未匯入命名空間中的 [顯示專案** ]。
+   > 您可以視需要顯示/隱藏未匯入命名空間中的專案，使用 [ **展開] 按鈕 (Alt + A)** 出現在完成清單的左下方。 若要變更預設行為，請移至 [**工具**  >  **選項**  >  **文字編輯器**  >  **c #**  /  **基本**  >  **IntelliSense** ]，並尋找 **未匯入命名空間中的 [顯示專案**]。
 
 2. 選取並認可未匯入專案。
 

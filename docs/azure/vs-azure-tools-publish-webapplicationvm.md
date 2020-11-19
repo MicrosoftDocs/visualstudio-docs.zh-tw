@@ -3,17 +3,16 @@ title: Publish-WebApplicationVM | Microsoft Docs
 description: 了解如何將 Web 應用程式部署到虛擬機器。 此指令碼會在您的 Azure 訂用帳戶中建立所需的資源 (如果它們不存在)。
 author: ghogen
 manager: jillfra
-assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: dc8c6083cb0abdcbd8bcd51de717a383cabb5068
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 61055a21e3360419639494ee6dcd47f88440f94e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398562"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902177"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (Windows PowerShell 指令碼)
 將 Web 應用程式部署到虛擬機器。 指令碼會在您的 Azure 訂用帳戶中建立所需的資源 (如果它們不存在)。
@@ -29,7 +28,7 @@ Publish-WebApplicationVM
 -Verbose
 ```
 
-### <a name="configuration"></a>設定
+### <a name="configuration"></a>組態
 描述部署詳細資訊的 JSON 組態檔路徑。
 
 | 別名 | 無 |

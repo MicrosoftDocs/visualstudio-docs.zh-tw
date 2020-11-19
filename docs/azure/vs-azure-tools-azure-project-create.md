@@ -3,17 +3,16 @@ title: 建立 Azure 雲端服務專案
 description: 立即了解如何使用 Visual Studio 建立 Azure 雲端服務專案
 author: ghogen
 manager: jillfra
-assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 1fd554a397c6db3bb1f1d5beb2fc12c0423aed22
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 667d3a0a4e4642c348f6a0dd6663a30fcf704d14
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399750"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902788"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>使用 Visual Studio 來建立 Azure 雲端服務專案
 
@@ -25,7 +24,7 @@ Visual Studio 提供專案範本，可讓您建立 [azure 雲端服務](/azure/c
 ::: moniker range="vs-2017"
 1. 以系統管理員身分開啟 Visual Studio。
 
-1. 在主功能表中，選取 [檔案] **[新增]** > **[專案]** > 。
+1. 在主功能表中，選取 [檔案]**[新增]** > **[專案]** > 。
 
 1. 從 Visual C# 或 Visual Basic 專案範本節點中選取 [雲端]，然後從範本清單中選取 [Azure 雲端服務]。
 

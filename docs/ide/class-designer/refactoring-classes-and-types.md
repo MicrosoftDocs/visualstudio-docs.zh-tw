@@ -1,5 +1,7 @@
 ---
 title: 在類別設計工具中將類別與類型重新命名和移動
+description: 瞭解如何使用類別設計工具和 [類別細節] 視窗來重新命名和移動類別和類型。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baf0e9d9d0f4bb45ef965f64c256bd9360af112b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d51a541edb30e24405faccfec6e05264303d049
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768604"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901084"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>在類別設計工具中將類別與類型重構
 
@@ -35,7 +37,7 @@ ms.locfileid: "85768604"
 
 ## <a name="common-tasks"></a>常見工作
 
-|工作|支援內容|
+|Task|支援內容|
 |----------| - |
 |**重構類別：** 您可以使用重構作業來將一個類別分割成部分類別，或是實作抽象基底類別。|-   [如何：將類別分割成部分類別](how-to-split-a-class-into-partial-classes.md)|
 |**使用介面：** 在類別設計工具中，您可以將介面連接至替介面方法提供程式碼的類別，以在類別圖表上實作介面。|-   [如何：實作介面](how-to-implement-an-interface.md)|
@@ -55,11 +57,11 @@ ms.locfileid: "85768604"
 
 ### <a name="rename-in-the-class-details-window"></a>類別細節視窗中的重新命名
 
-1. 若要顯示 [類別細節]**** 視窗，請用滑鼠右鍵按一下類型或類型成員，然後選取 [類別細節]****。
+1. 若要顯示 [類別細節] 視窗，請用滑鼠右鍵按一下類型或類型成員，然後選取 [類別細節]。
 
      [ **類別細節** ] 視窗隨即出現。
 
-2. 在 [名稱] **** 欄中，變更類型成員的名稱
+2. 在 [名稱]  欄中，變更類型成員的名稱
 
 3. 若要將焦點從儲存格移開，請按 **enter** 鍵或按一下 [離開] 儲存格。
 
@@ -68,21 +70,21 @@ ms.locfileid: "85768604"
 
 ### <a name="rename-in-the-properties-window"></a>屬性視窗中的重新命名
 
-1. 在類別圖表或 [類別細節]**** 視窗中，用滑鼠右鍵按一下類型或成員，然後選取 [屬性]****。
+1. 在類別圖表或 [類別細節] 視窗中，用滑鼠右鍵按一下類型或成員，然後選取 [屬性]。
 
      [ **屬性** ] 視窗隨即出現，並顯示類型或類型成員的屬性。
 
-2. 在 [名稱] **** 屬性中，變更類型或類型成員的名稱。
+2. 在 [名稱]  屬性中，變更類型或類型成員的名稱。
 
      新的名稱會傳播至目前專案中曾出現舊名稱的所有視窗和程式碼位置。
 
 ## <a name="move-type-members-from-one-type-to-another"></a>將類型成員從一個類型移到另一個類型
 
-您可以使用**類別設計工具**將類型成員從一個類型移至另一個類型。 兩個類型在目前的類別圖表都必須可見。
+您可以使用 **類別設計工具** 將類型成員從一個類型移至另一個類型。 兩個類型在目前的類別圖表都必須可見。
 
-1. 在設計介面上顯示的類型中，用滑鼠右鍵按一下您要移動到另一個類型的成員，然後選取 [剪下] ****。
+1. 在設計介面上顯示的類型中，用滑鼠右鍵按一下您要移動到另一個類型的成員，然後選取 [剪下] 。
 
-2. 用滑鼠右鍵按一下目的類型，然後選取 [貼上] ****。
+2. 用滑鼠右鍵按一下目的類型，然後選取 [貼上] 。
 
      該屬性會從來源類型中移除，並出現在目的類型中。
 

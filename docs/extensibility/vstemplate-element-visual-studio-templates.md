@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的 .Vstemplate 元素) |Microsoft Docs"
+description: 深入瞭解 .Vstemplate 元素，以及它如何包含有關專案範本、專案範本或入門套件的所有中繼資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 651e8b6dbbe11c450b105f3185e7e987bb30da9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 973e2ede7e97d1e7710e6571d520be3d8919b9d9
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697872"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903477"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a> (Visual Studio 範本的 .Vstemplate 元素) 
 包含專案範本、專案範本或入門套件的所有中繼資料。
@@ -38,7 +40,7 @@ ms.locfileid: "80697872"
 
 ### <a name="attributes"></a>屬性
 
-| 屬性 | 描述 |
+| 屬性 | 說明 |
 |-----------| - |
 | `Type` | 將範本識別為專案範本或專案範本。 這個屬性的值可以是 `Project` 或 `Item` 。 |
 | `Version` | 指定範本的版本號碼。 和中 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 的範本具有 `Version` 的屬性值 `3.0.0` 。 |
@@ -56,7 +58,7 @@ ms.locfileid: "80697872"
  無。
 
 ## <a name="remarks"></a>備註
- `VSTemplate`元素是 *.vstemplate*檔案的根項目。
+ `VSTemplate`元素是 *.vstemplate* 檔案的根項目。
 
 ## <a name="example"></a>範例
  下列範例會顯示應用程式專案範本的中繼資料 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。

@@ -1,5 +1,7 @@
 ---
 title: 如何：匯入主版頁面或主題 |Microsoft Docs
+description: 在 SharePoint Designer 中建立主版頁面和主題的範本，然後匯入 Visual Studio，以一致的外觀提供 SharePoint 網站上的頁面。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7abca9e9141fdc8d4540e8a38e9579862fc540f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c17f4e7477a20ea245eaa359a6f9611a8dc4ece6
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015291"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903490"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>如何：匯入主版頁面或主題
   您可以建立和使用主版頁面和主題，讓 SharePoint 網站上的頁面保持一致的外觀。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 不提供這些專案的範本，但是您可以在 SharePoint Designer 中建立它們，然後將它們匯入到 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 如需詳細資訊，請參閱 Microsoft 網站上的 [建立區塊：頁面和消費者介面](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) 。
@@ -37,7 +39,7 @@ ms.locfileid: "86015291"
 
      模組包含檔案 (例如，主版頁面或主題檔案) 部署至您在 SharePoint 中指定的位置。
 
-5. 在模組中，刪除名為 *Sample.txt*的預設檔案。
+5. 在模組中，刪除名為 *Sample.txt* 的預設檔案。
 
 6. 選擇模組節點。
 
@@ -76,9 +78,9 @@ ms.locfileid: "86015291"
 
      屬性 `Type="GhostableInLibrary"` （attribute）表示專案已加入至內容資料庫，而模組的 `Url` 屬性（attribute）會指定在 SharePoint 內容資料庫中儲存檔案的位置。
 
-11. 若要變更主版頁面的部署範圍，請在 **方案總管**中，開啟功能設計工具中的功能檔案，然後從 [ **範圍** ] 清單中選擇新的部署範圍。
+11. 若要變更主版頁面的部署範圍，請在 **方案總管** 中，開啟功能設計工具中的功能檔案，然後從 [ **範圍** ] 清單中選擇新的部署範圍。
 
-     **Web**的值表示主版頁面只適用于目前在專案中指定的網站。 [ **網站** ] 值表示主版頁面會套用至目前的網站集合，其中包含所有子網站和根網站。 其他值則不適用。
+     **Web** 的值表示主版頁面只適用于目前在專案中指定的網站。 [ **網站** ] 值表示主版頁面會套用至目前的網站集合，其中包含所有子網站和根網站。 其他值則不適用。
 
     > [!NOTE]
     > 由於主題僅適用于網站集合層級，因此建議您不要將主題的範圍設定為 [ **網站**] 以外的任何值。 如果子網站中使用主題，就會發生錯誤。

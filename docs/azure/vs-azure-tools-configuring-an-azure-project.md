@@ -3,23 +3,22 @@ title: 設定 Azure 雲端服務專案
 description: 了解如何在 Visual Studio 中根據 Azure 雲端服務專案的需求來設定專案。
 author: ghogen
 manager: jillfra
-assetId: 609d6965-05cc-47b1-82dc-c76a92d4f295
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: 388cd20468624c6441342267f6545dfaf0e21901
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: dbf8d1ce8e668adb5fbab61178fafa980fd56298
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399142"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902529"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>使用 Visual Studio 來設定 Azure 雲端服務專案
 您可以根據 Azure 雲端服務專案的需求來設定專案。 您可以設定下列類別的專案的屬性：
 
 - **將雲端服務發佈至 Azure** - 您可以設定屬性以確保部署至 Azure 的現有雲端服務不會被意外刪除。
-- 在 **本機電腦上執行或偵測雲端服務** -您可以選取要使用的服務設定，並指出您是否要啟動 Azure 儲存體模擬器。
+- 在 **本機電腦上執行或偵測雲端服務**-您可以選取要使用的服務設定，並指出您是否要啟動 Azure 儲存體模擬器。
 - **在建立雲端服務套件時加以驗證** - 您可以決定將任何警告都視為錯誤，以便確保在部署雲端服務套件時不會發生任何問題。
 
 ## <a name="steps-to-configure-an-azure-cloud-service-project"></a>設定 Azure 雲端服務專案的步驟

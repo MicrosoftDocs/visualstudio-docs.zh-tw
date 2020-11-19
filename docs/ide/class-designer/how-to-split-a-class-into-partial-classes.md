@@ -1,5 +1,7 @@
 ---
 title: 如何：將類別分割成部分類別 (類別設計工具)
+description: 瞭解如何使用 partial 關鍵字，將類別或結構的宣告分割成多個宣告。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 623ac5269b78faee9f68580f0803576ad56c1233
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac0726851aec0d86223c2d95027b92137682c8a9
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770039"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901345"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>如何：在類別設計工具中將類別分割成部分類別
 
@@ -31,12 +33,12 @@ ms.locfileid: "85770039"
 
 部分方法有兩種。 在 C# 中，稱為 declaring (宣告) 和 implementing (實作)；在 Visual Basic 中則稱為 declaration (宣告) 和 implementation (實作)。
 
-**類別設計工具** 支援部分類別和方法。 類別圖表中的類型圖形即為部分方法的單一宣告位置。 如果部分類別定義于多個檔案中，您可以在 [**屬性**] 視窗中設定 [**新成員位置**] 屬性，以指定**類別設計工具**將使用的宣告位置。 也就是說，當您按兩下類別圖形時， **類別設計工具** 會移至來源檔案，其中包含 [ **新成員位置** ] 屬性所識別的類別宣告。 當您按兩下類別圖形中的部分方法時， **類別設計工具** 會移至部分方法宣告。 另外，在 [屬性]**** 視窗中，[檔案名稱]**** 屬性是指宣告位置。 若是部分類別，[檔案名稱]**** 會列出所有包含該類別宣告和實作程式碼的檔案。 但若是部分方法，[檔案名稱]**** 只會列出包含部分方法宣告的檔案。
+**類別設計工具** 支援部分類別和方法。 類別圖表中的類型圖形即為部分方法的單一宣告位置。 如果部分類別定義于多個檔案中，您可以在 [**屬性**] 視窗中設定 [**新成員位置**] 屬性，以指定 **類別設計工具** 將使用的宣告位置。 也就是說，當您按兩下類別圖形時， **類別設計工具** 會移至來源檔案，其中包含 [ **新成員位置** ] 屬性所識別的類別宣告。 當您按兩下類別圖形中的部分方法時， **類別設計工具** 會移至部分方法宣告。 另外，在 [屬性] 視窗中，[檔案名稱] 屬性是指宣告位置。 若是部分類別，[檔案名稱] 會列出所有包含該類別宣告和實作程式碼的檔案。 但若是部分方法，[檔案名稱] 只會列出包含部分方法宣告的檔案。
 
 下列範例會將 `Employee` 類別的定義分割成兩個宣告，兩者各自定義不同的程序。 範例中的兩個部分定義可位於一個原始程式檔或兩個不同的原始程式檔中。
 
 > [!NOTE]
-> Visual Basic 使用 partial-class 定義，將 Visual Studio 產生的程式碼從使用者撰寫的程式碼分割出來。 程式碼會分成不相關的原始程式檔。 例如，[Windows Form 設計工具]**** 會定義控制項的部分類別，如 `Form`。 您不應該在這些控制項中修改產生的程式碼。
+> Visual Basic 使用 partial-class 定義，將 Visual Studio 產生的程式碼從使用者撰寫的程式碼分割出來。 程式碼會分成不相關的原始程式檔。 例如，[Windows Form 設計工具] 會定義控制項的部分類別，如 `Form`。 您不應該在這些控制項中修改產生的程式碼。
 
 如需 Visual Basic 中部分類型的詳細資訊，請參閱 [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)。
 

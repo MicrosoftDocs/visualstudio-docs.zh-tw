@@ -1,6 +1,8 @@
 ---
 title: 部署、發佈、& 從遠端升級 SharePoint 方案
 titleSuffix: ''
+description: 在遠端網站或本機 SharePoint 網站上部署、發行和升級沙箱化 SharePoint 方案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,19 +18,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5de5128ff19472390e65aa5d9a437aee269ff897
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: db476af4a9d3be9cab2109fb3489d0767765075f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585780"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903568"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>如何：在遠端伺服器上部署、發行和升級 SharePoint 方案
   除了將 SharePoint 方案部署到本機系統之外，您還可以將沙箱化 SharePoint 方案發行至遠端網站或本機 SharePoint 網站。 遠端發佈程式會將 *.wsp* 檔案複製到 SharePoint 伺服器、安裝方案，然後讓您啟用方案。 您也可以在變更遠端 SharePoint 方案後進行升級。
 
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>將沙箱化 SharePoint 方案發行至遠端 SharePoint 伺服器
 
-1. 在 **方案總管**中，開啟您要發行之沙箱化 SharePoint 專案的快捷方式功能表，然後選擇 [ **發行**]。
+1. 在 **方案總管** 中，開啟您要發行之沙箱化 SharePoint 專案的快捷方式功能表，然後選擇 [ **發行**]。
 
 2. 在 [ **發行** ] 對話方塊中，選擇 [ **發行至 SharePoint 網站** ] 選項按鈕，然後輸入線上發行網站的 URL，例如： `https://mytestsite.sharepoint.microsoftonline.com` 。
 
@@ -49,13 +51,13 @@ ms.locfileid: "91585780"
 ## <a name="to-upgrade-a-sandboxed-sharepoint-solution-on-a-remote-sharepoint-server"></a>升級遠端 SharePoint 伺服器上的沙箱化 SharePoint 方案
  如果已在遠端伺服器上發行沙箱化 SharePoint 方案，下列程式可讓您在變更中的應用程式之後進行升級 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
-1. 重新命名中的 SharePoint 套件 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 若要這樣做，請在 **方案總管** 開啟封裝。 它會出現在 **套件瀏覽器**中。
+1. 重新命名中的 SharePoint 套件 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 若要這樣做，請在 **方案總管** 開啟封裝。 它會出現在 **套件瀏覽器** 中。
 
 2. 在 [ **封裝瀏覽器**] 的 [ **名稱** ] 方塊中，將封裝名稱變更為唯一的名稱。
 
 3. 儲存專案。
 
-4. 在 **方案總管**中，開啟專案的快捷方式功能表，然後選擇 [ **發行**]。
+4. 在 **方案總管** 中，開啟專案的快捷方式功能表，然後選擇 [ **發行**]。
 
 5. 在 [ **發行** ] 對話方塊中，選擇 [ **發行至 SharePoint 網站** ] 選項按鈕，然後如果遺漏儲存方案的遠端伺服器的 URL，請輸入該 URL。
 

@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的 TemplateID 元素) |Microsoft Docs"
+description: 深入瞭解 TemplateID 元素，以及它如何指定專案範本的識別碼，該範本會依 TemplateGroupID 元素分類為一組專案範本。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8eb5abac9c837b3022354d6da743ac8f21d5e41d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 734af9de80da5f095f9ad7f0e52023659fea6b67
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699061"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903178"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID 項目 (Visual Studio 範本)
 指定專案範本的識別碼，該專案範本會依 [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) 元素分類為一組專案範本。
@@ -46,7 +48,7 @@ ms.locfileid: "80699061"
 
 |項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  `string`，表示專案樣板的識別碼，該專案範本會依專案分類為專案範本群組 `TemplateGroupID` 。
@@ -56,7 +58,7 @@ ms.locfileid: "80699061"
 
  如果 .vstemplate 檔案省略了 `TemplateID` 元素，則 [Name](../extensibility/name-element-visual-studio-templates.md) 元素會當做範本的識別碼使用。
 
- 專案的值 `TemplateID` 會與 project system 註冊 (HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\11.0\projects \\) 來篩選出現在 [ **加入新專案** ] 對話方塊中的範本。
+ 元素的值 `TemplateID` 會與 project system 註冊 ( # B0) 一起使用， \\ 以篩選出現在 [ **加入新專案** ] 對話方塊中的範本。
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

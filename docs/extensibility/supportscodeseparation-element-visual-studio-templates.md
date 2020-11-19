@@ -1,6 +1,7 @@
 ---
 title: SupportsCodeSeparation 項目 (Visual Studio 範本)
 titleSuffix: ''
+description: 若要在 [加入新專案] 對話方塊中啟用 [將程式碼放入個別檔案] 核取方塊，請瞭解 SupportsCodeSeparation 元素及其指定方式。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,15 +17,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dfdf3244d09c5f3418c5403a32570c382c5365c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1847d5f0a0fa77b1dd0ddd0d74eeba84326d0205
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038461"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901852"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 項目 (Visual Studio 範本)
-指定是否在 [**加入新專案**] 對話方塊中，啟用 [將程式**代碼放在個別檔案中**] 核取方塊。
+指定是否在 [**加入新專案**] 對話方塊中，啟用 [將程式 **代碼放在個別檔案中**] 核取方塊。
 
  \<VSTemplate> \<TemplateData>
  \<SupportsCodeSeparation>
@@ -53,7 +54,7 @@ ms.locfileid: "90038461"
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- 文字必須是 `true` 或 `false` ，表示在 [**加入新專案**] 對話方塊中是否已啟用 [將程式**代碼放入個別**檔案] 核取方塊。
+ 文字必須是 `true` 或 `false` ，表示在 [**加入新專案**] 對話方塊中是否已啟用 [將程式 **代碼放入個別** 檔案] 核取方塊。
 
 ## <a name="remarks"></a>備註
   是選擇性元素。 預設值是 `false`。

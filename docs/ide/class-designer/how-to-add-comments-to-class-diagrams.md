@@ -1,5 +1,7 @@
 ---
 title: 如何：將註解加入至類別圖表 (類別設計工具)
+description: 瞭解如何使用批註圖形來標注類別圖表。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,24 +16,24 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e7514e8ab55697bdfc01f58c5ceffe4228721c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b146efb27bb76d91b7453d574bda6d79d53a68a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85771028"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901670"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>如何：將註解新增至類別圖表
 
 您可以使用註解圖形來標註類別圖表。 註解圖形有一個屬性 **Text**，您可在其中鍵入文字。 註解圖形只存在於圖表介面，而不在程式碼中。
 
-註解位在**類別設計工具**中的類別圖表檢視。 如果您在相同專案上開啟第二個類別圖表，就看不到您在第一個檢視中建立的註解。 如果您刪除圖表，其中包含的所有註解也都會刪除。
+註解位在 **類別設計工具** 中的類別圖表檢視。 如果您在相同專案上開啟第二個類別圖表，就看不到您在第一個檢視中建立的註解。 如果您刪除圖表，其中包含的所有註解也都會刪除。
 
 您可以調整註解圖形的大小，但無法變更外觀的其他層面，像是圖形的背景色彩、字型或字型大小。
 
 ## <a name="to-add-a-comment"></a>新增註解
 
-1. 將註解從 [類別設計工具工具箱]**** 拖曳到類別圖表上。
+1. 將註解從 [類別設計工具工具箱] 拖曳到類別圖表上。
 
 2. 在圖表上新的註解圖形中按一下，然後鍵入想要的文字。
 

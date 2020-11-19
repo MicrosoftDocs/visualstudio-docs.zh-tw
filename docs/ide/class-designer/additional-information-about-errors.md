@@ -1,5 +1,7 @@
 ---
 title: 類別設計工具錯誤
+description: 瞭解如何藉由將已修改或重新放置的原始程式碼再次拖曳到類別圖表來顯示類別設計錯誤，以解決類別設計錯誤。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -28,23 +30,23 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc8b2c013a3e685a6071f4a12d63e3ca475051a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 575f9b74c7931ecc752f4c2e56866534aaa1e3d5
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596511"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903100"
 ---
 # <a name="class-designer-errors"></a>類別設計工具錯誤
 
-**類別設計工具**不會追蹤原始程式檔的位置，因此，修改您的專案結構或移動專案中的原始程式檔，可能會導致**類別設計工具**無法繼續追蹤類型，舉例來說，修改 typedef、基底類別和關聯類型的來源類型都很常見。 您可能會收到錯誤，例如：**類別設計工具無法顯示這個類型**。 若要解決錯誤，請將修改或重新放置的原始程式碼再次拖曳到類別圖表中，使其顯示。
+**類別設計工具** 不會追蹤原始程式檔的位置，因此，修改您的專案結構或移動專案中的原始程式檔，可能會導致 **類別設計工具** 無法繼續追蹤類型，舉例來說，修改 typedef、基底類別和關聯類型的來源類型都很常見。 您可能會收到錯誤，例如：**類別設計工具無法顯示這個類型**。 若要解決錯誤，請將修改或重新放置的原始程式碼再次拖曳到類別圖表中，使其顯示。
 
 ## <a name="resources"></a>資源
 
 您可以在下列資源中找到其他錯誤和警告的協助：
 
 - [使用 Visual C++ 程式碼](working-with-visual-cpp-code.md)包括有關在類別圖表中顯示 C++ 的疑難排解資訊。
-- [Visual Studio 類別設計工具論壇](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner)提供**類別設計工具**相關問題的論壇。
+- [Visual Studio 類別設計工具論壇](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner)提供 **類別設計工具** 相關問題的論壇。
 
 ## <a name="see-also"></a>另請參閱
 

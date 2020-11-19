@@ -1,5 +1,7 @@
 ---
 title: 類別設計工具中的 c + + 列舉
+description: 瞭解類別設計工具如何支援 c + + 列舉和範圍列舉類別類型。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee56850c05e4b06ea4325ec238e56e99b38978d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b12d270884ca9877d6c1c80780a9ae96324f3af4
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114194"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903451"
 ---
 # <a name="c-enumerations-in-class-designer"></a>類別設計工具中的 c + + 列舉
 
-[類別設計工具]**** 支援 C++ `enum` 和範圍 `enum class` 類型。 以下是範例：
+[類別設計工具] 支援 C++ `enum` 和範圍 `enum class` 類型。 以下是範例：
 
 ```cpp
 enum CardSuit {
@@ -38,7 +40,7 @@ enum class CardSuit {
 };
 ```
 
-類別圖表中的 C++ 列舉圖形外觀和運作方式與結構圖形類似，不同之處在於標籤為「列舉」**** 或「列舉類別」****、它是粉紅色而不是藍色，而且它的左和上邊界具有有色框線。 列舉圖形和結構圖形都有方角。
+類別圖表中的 C++ 列舉圖形外觀和運作方式與結構圖形類似，不同之處在於標籤為「列舉」或「列舉類別」、它是粉紅色而不是藍色，而且它的左和上邊界具有有色框線。 列舉圖形和結構圖形都有方角。
 
 如需使用 `enum` 類型的詳細資訊，請參閱[列舉](/cpp/cpp/enumerations-cpp)。
 

@@ -1,5 +1,7 @@
 ---
 title: 如何：編輯 SharePoint 部署設定 |Microsoft Docs
+description: 瞭解如何建立 SharePoint 部署設定或修改現有的部署設定。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74f6377bad0f62aa2c470e72afe64b85b3017ee6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e64f805496d03b42ca70489bab1302ecf58b33bc
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016774"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903555"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>如何：編輯 SharePoint 部署設定
   您可以建立部署設定，或修改現有的部署設定。 例如，您可以執行單一步驟或變更部署程式中的步驟順序。 您可能會想要建立或修改部署設定，因為無法變更內建和以程式設計方式新增的設定。
@@ -28,7 +30,7 @@ ms.locfileid: "86016774"
 
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>若要建立 SharePoint 部署設定
 
-1. 在**方案總管**中，選擇 SharePoint 專案，然後在功能表列上選擇 [專案]、[**專案**_名稱_]**屬性**。
+1. 在 **方案總管** 中，選擇 SharePoint 專案，然後在功能表列上選擇 [專案]、[**專案**_名稱_]**屬性**。
 
 2. 在 [ **SharePoint** ] 索引標籤上，選擇 [ **新增** ] 按鈕。
 
@@ -45,7 +47,7 @@ ms.locfileid: "86016774"
 
 #### <a name="to-change-the-active-deployment-configuration"></a>變更主動部署設定
 
-1. 在**方案總管**中，選擇 SharePoint 專案，然後在功能表列上選擇 [**專案**  >  ** \<*ProjectName*> 屬性**]。
+1. 在 **方案總管** 中，選擇 SharePoint 專案，然後在功能表列上選擇 [**專案**  >  **\<*ProjectName*> 屬性**]。
 
 2. 選擇 [ **SharePoint** ] 索引標籤。
 

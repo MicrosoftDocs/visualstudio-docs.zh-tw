@@ -3,23 +3,22 @@ title: 準備發佈或部署雲端服務
 description: 了解設定雲端和儲存體帳戶服務以及 Azure 應用程式的程序。
 author: ghogen
 manager: jillfra
-ms.assetid: 92ee2f9e-ec49-4c7a-900d-620abe5e9d8a
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: a09b8f5c6efacab0f02a445ed78f8a3769031fa0
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c048968ca97484812b7423a16e4a1834e1c8a66b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399004"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902488"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>準備從 Visual Studio 發佈或部署雲端服務
 
 若要發佈雲端服務專案，必須依本文所述設定下列服務：
 
-* **雲端服務** ，可在 Azure 環境中執行角色，以及
+* **雲端服務**，可在 Azure 環境中執行角色，以及
 * 提供 Blob、佇列和表格服務等存取權的 **儲存體帳戶** 。
 
 ## <a name="create-a-cloud-service"></a>建立雲端服務

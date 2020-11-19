@@ -1,5 +1,7 @@
 ---
 title: 如何：檢視現有類型 (類別設計工具)
+description: 瞭解如何將其圖形加入至類別圖，以查看現有的類型及其成員。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa27489844bc59bc0d4da32440cc1caa74ecbea6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b4660c4efc7c22431b7c9f0d9180576d524a372
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770012"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901163"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>如何：在類別設計工具中檢視現有類型
 
@@ -31,9 +33,9 @@ ms.locfileid: "85770012"
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>在類別圖上查看專案中的類型
 
-1. 從 **方案總管**中的專案，開啟現有的類別圖表 ( .cd) 檔。 如果沒有類別圖，就將新的類別圖加入至專案。 請參閱[如何：將類別圖新增至專案](how-to-add-class-diagrams-to-projects.md)。
+1. 從 **方案總管** 中的專案，開啟現有的類別圖表 ( .cd) 檔。 如果沒有類別圖，就將新的類別圖加入至專案。 請參閱[如何：將類別圖新增至專案](how-to-add-class-diagrams-to-projects.md)。
 
-2. 從 **方案總管**中的專案，將原始程式碼檔拖曳至類別圖。
+2. 從 **方案總管** 中的專案，將原始程式碼檔拖曳至類別圖。
 
     > [!NOTE]
     > 如果方案中有跨多個應用程式共用程式碼的專案，您只能從下列來源將檔案或程式碼拖曳至另一個類別圖：
@@ -48,9 +50,9 @@ ms.locfileid: "85770012"
 您也可以從 **類別檢視** 中的專案節點，將一或多個類型拖曳至類別圖表，以查看專案中的類型。
 
 > [!TIP]
-> 如果**類別檢視**未開啟，請從 [ **View** ] 功能表開啟**類別檢視**。
+> 如果 **類別檢視** 未開啟，請從 [ **View** ] 功能表開啟 **類別檢視**。
 
-若要在圖表上的預設位置顯示類型，請在 [ **類別檢視**中選取一或多個類型，以滑鼠右鍵按一下選取的類型，然後選擇 [ **視圖類別圖**]。
+若要在圖表上的預設位置顯示類型，請在 [ **類別檢視** 中選取一或多個類型，以滑鼠右鍵按一下選取的類型，然後選擇 [ **視圖類別圖**]。
 
 > [!NOTE]
 > 如果專案中已有包含類型的已關閉類別圖，便會開啟類別圖以顯示類型圖案。 但是，如果專案中沒有包含類型的類別圖表， **類別設計工具** 會在專案中建立新的類別圖表，並開啟該圖表以顯示類型。
@@ -59,7 +61,7 @@ ms.locfileid: "85770012"
 
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>在類別圖中顯示專案內容
 
-在 **方案總管** 或 **類別檢視**中，以滑鼠右鍵按一下專案，然後選擇 [ **視圖**]，再選擇 [ **視圖類別圖**]。 就會建立會自動填入內容的類別圖。
+在 **方案總管** 或 **類別檢視** 中，以滑鼠右鍵按一下專案，然後選擇 [ **視圖**]，再選擇 [ **視圖類別圖**]。 就會建立會自動填入內容的類別圖。
 
 ## <a name="see-also"></a>另請參閱
 

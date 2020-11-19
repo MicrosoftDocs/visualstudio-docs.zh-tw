@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的 TemplateGroupID 元素) |Microsoft Docs"
+description: 瞭解 TemplateGroupID 元素，以及它如何指定專案範本會顯示在哪種專案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: affc324418e3745f85fb0b91a0ef7abda0ab28b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5f7d30036f0f25d1f81b690168675d74fc36bbd
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699070"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903217"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID 項目 (Visual Studio 範本)
 指定要顯示哪一種專案項目範本。 當 [ () 的 Visual Studio 範本 ](../extensibility/showbydefault-visual-studio-templates.md) 設定為時，這個元素相當重要 `false` 。 當 [ShowByDefault (Visual Studio 範本) ](../extensibility/showbydefault-visual-studio-templates.md) 設定為時 `true` ，所有專案類型都可使用專案範本。
@@ -46,7 +48,7 @@ ms.locfileid: "80699070"
 
 |項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
@@ -56,7 +58,7 @@ ms.locfileid: "80699070"
 ## <a name="remarks"></a>備註
  `TemplateGroupID` 是元素。
 
- 專案的值 `TemplateGroupID` 會與 project system 註冊 (一起使用 HKEY_LOCAL_MACHINE \Software\microsoft\visualstudio \\ *\<version number>* \Projects \\) 來篩選出現在 [**加入新專案**] 對話方塊中的範本。
+ 元素的值 `TemplateGroupID` 會與專案系統註冊一起使用 ( # B0 \\ *\<version number>* \Projects \\) ，以篩選出現在 [**加入新專案**] 對話方塊中的範本。
 
 |Visual C++ 值|意義|
 |------------------------|-------------|

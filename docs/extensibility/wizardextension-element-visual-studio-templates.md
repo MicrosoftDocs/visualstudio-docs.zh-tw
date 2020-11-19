@@ -1,5 +1,7 @@
 ---
 title: " (Visual Studio 範本的 WizardExtension 元素) |Microsoft Docs"
+description: 深入瞭解 WizardExtension 元素，以及它如何包含用於自訂範本 wizard 的註冊專案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd81b32861114d654aa794b992826589406b1df9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07d1c52e2b1dd8fe452d4c24f8dc6db6b32334a5
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740382"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903386"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension 項目 (Visual Studio 範本)
 包含用於自訂範本 wizard 的註冊專案。
@@ -45,7 +47,7 @@ ms.locfileid: "80740382"
 
 |項目|描述|
 |-------------|-----------------|
-|[裝配](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|必要元素。<br /><br /> 指定出現在全域組件快取中之元件的名稱或強式名稱。 元素中必須至少有一個 `Assembly` 元素 `WizardExtension` 。|
+|[組件](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|必要元素。<br /><br /> 指定出現在全域組件快取中之元件的名稱或強式名稱。 元素中必須至少有一個 `Assembly` 元素 `WizardExtension` 。|
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|必要元素。<br /><br /> 實介面之類別的完整名稱 `IWizard` 。 元素中必須至少有一個 `FullClassName` 元素 `WizardExtension` 。|
 
 ### <a name="parent-elements"></a>父項目
