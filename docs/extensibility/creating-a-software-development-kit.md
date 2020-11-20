@@ -1,5 +1,7 @@
 ---
 title: 建立軟體發展工具組 |Microsoft Docs
+description: 瞭解 Sdk 的一般基礎結構，以及如何建立平臺 SDK 和擴充功能 SDK。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61e547be5f240cafccc058eb7ea2249fd492554b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3a793e3d7233eb1b6d0aaaa74fbe16d52cf6f43
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904117"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974321"
 ---
 # <a name="create-a-software-development-kit"></a>建立軟體發展工具組
 
@@ -33,7 +35,7 @@ Sdk 有兩種類型：
 
 ### <a name="installation"></a>安裝
 
-所有平臺 Sdk 都會安裝在*HKLM\Software\Microsoft\Microsoft sdk \\ [TPI] \V [TPV] \\ @InstallationFolder = [SDK root]*。 因此， [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK 會安裝在 *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*。
+所有平臺 Sdk 都會安裝在 *HKLM\Software\Microsoft\Microsoft sdk \\ [TPI] \V [TPV] \\ @InstallationFolder = [SDK root]*。 因此， [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK 會安裝在 *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*。
 
 ### <a name="layout"></a>Layout
 
@@ -53,8 +55,8 @@ Sdk 有兩種類型：
 | 節點 | 描述 |
 |------------------------| - |
 | *參考* 資料夾 | 包含二進位檔，其中包含可針對進行編碼的 Api。 這些可能包含 Windows 中繼資料 (WinMD) 檔案或元件。 |
-| *DesignTime* 資料夾 | 包含只有在執行前/調試時間才需要的檔案。 這些可能包括 XML 檔、文件庫、標頭、工具箱設計階段二進位檔、MSBuild 成品等等。<br /><br /> XML 檔最好是放在 *\DesignTime* 資料夾中，但是參考的 xml 檔會在 Visual Studio 的參考檔案中繼續放置在一起。 例如，參考<em>\References \\ [config] \\ [架構] \sample.dll</em> 的 XML 檔將會是 *\References \\ [config] [架構 \\ ] \sample.xml*，而該檔的當地語系化版本將會是 *\References \\ [config] [架構 \\ ] \\ [locale] \sample.xml*。 |
-| *Configuration*設定資料夾 | 只能有三個資料夾： *Debug*、 *Retail* 和 *CommonConfiguration*。 SDK 作者可以將檔案放在 *CommonConfiguration* 下，如果應該取用相同的 sdk 檔案集，不論 sdk 取用者的目標是什麼設定都一樣。 |
+| *DesignTime* 資料夾 | 包含只有在執行前/調試時間才需要的檔案。 這些可能包括 XML 檔、文件庫、標頭、工具箱設計階段二進位檔、MSBuild 成品等等。<br /><br /> XML 檔最好是放在 *\DesignTime* 資料夾中，但是參考的 xml 檔會在 Visual Studio 的參考檔案中繼續放置在一起。 例如，參考 <em>\References \\ [config] \\ [架構] \sample.dll</em> 的 XML 檔將會是 *\References \\ [config] [架構 \\ ] \sample.xml*，而該檔的當地語系化版本將會是 *\References \\ [config] [架構 \\ ] \\ [locale] \sample.xml*。 |
+| *Configuration* 設定資料夾 | 只能有三個資料夾： *Debug*、 *Retail* 和 *CommonConfiguration*。 SDK 作者可以將檔案放在 *CommonConfiguration* 下，如果應該取用相同的 sdk 檔案集，不論 sdk 取用者的目標是什麼設定都一樣。 |
 | *架構* 資料夾 | 任何支援的 *架構* 資料夾都可以存在。 Visual Studio 支援下列架構： x86、x64、ARM 和中性。 注意： Win32 會對應至 x86，而 AnyCPU 則對應至中性。<br /><br /> MSBuild 只會在平臺 Sdk 的 *\CommonConfiguration\neutral* 下尋找。 |
 | *SDKManifest.xml* | 此檔案描述 Visual Studio 應如何使用 SDK。 查看 SDK 資訊清單中的 [!INCLUDE[win81](../debugger/includes/win81_md.md)] ：<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName：** 物件瀏覽器在瀏覽清單中顯示的值。<br /><br /> **PlatformIdentity：** 這個屬性的存在會告訴 Visual Studio 和 MSBuild SDK 是 platform SDK，而從該 sdk 新增的參考不應在本機複製。<br /><br /> **TargetFramework：** Visual Studio 會使用這個屬性，以確保只有以這個屬性的值中指定的相同架構為目標的專案，才可以使用 SDK。<br /><br /> **MinVSVersion：** Visual Studio 使用這個屬性來只取用適用于它的 Sdk。<br /><br /> **參考：** 必須針對包含控制項的參考，指定這個屬性。 如需有關如何指定參考是否包含控制項的詳細資訊，請參閱下面的。 |
 
@@ -107,7 +109,7 @@ Sdk 有兩種類型：
 
 2. *參考* 資料夾：包含 api 的二進位檔。 這些可能是 (WinMD) 檔或元件的 Windows 中繼資料。
 
-3. 可轉散發*套件資料夾：* 執行時間/偵錯工具所需的檔案，應封裝為使用者應用程式的一部分。 所有二進位檔都應該放在*\redist \\<config \> \\<\> *架構下，而且二進位名稱應該具有下列格式，以確保唯一性： *]* \<company> ... \<product> \<purpose> \<extension><em>.例如，* Microsoft.Cpp.Build.dll</em>。 名稱與其他 Sdk 的檔案名可能相衝突的所有檔案 (例如，javascript、css、pri、xaml、png 和 jpg 檔案) 應放置在<em>\redist \\<config \> \\<架構<sdkname 之下， \> \\ \> \* 但與 xaml 控制項相關聯的檔案除外。這些檔案應該放在 * \redist \\<config \> \\<架構 \> \\<componentname \> \\ 之下</em>。
+3. 可轉散發 *套件資料夾：* 執行時間/偵錯工具所需的檔案，應封裝為使用者應用程式的一部分。 所有二進位檔都應該放在 *\redist \\<config \> \\<\>* 架構下，而且二進位名稱應該具有下列格式，以確保唯一性： *]* \<company> ... \<product> \<purpose> \<extension><em>.例如，* Microsoft.Cpp.Build.dll</em>。 名稱與其他 Sdk 的檔案名可能相衝突的所有檔案 (例如，javascript、css、pri、xaml、png 和 jpg 檔案) 應放置在<em>\redist \\<config \> \\<架構<sdkname 之下， \> \\ \> \* 但與 xaml 控制項相關聯的檔案除外。這些檔案應該放在 * \redist \\<config \> \\<架構 \> \\<componentname \> \\ 之下</em>。
 
 4. *DesignTime* 資料夾：只在執行前/調試時間所需的檔案，不應封裝為使用者應用程式的一部分。 這些可以是 XML 檔、文件庫、標頭、工具箱設計階段二進位檔、MSBuild 成品等等。 原生專案所使用的任何 SDK 都必須有 *SDKName .props* 檔案。 以下顯示這種檔案類型的範例。
 
@@ -127,15 +129,15 @@ Sdk 有兩種類型：
 
    ```
 
-    XML 參考檔會放在參考檔案的旁邊。 例如， *\References \\<config \> \\<架構 \>\sample.dll*元件的 XML 參考檔是*\References \\<config \> \\<架構 \>\sample.xml*，而該檔的當地語系化版本 \References<設定<架構 *<\\ 地區設定 \> \\ \> \\ \>\sample.xml*。
+    XML 參考檔會放在參考檔案的旁邊。 例如， *\References \\<config \> \\<架構 \>\sample.dll* 元件的 XML 參考檔是 *\References \\<config \> \\<架構 \>\sample.xml*，而該檔的當地語系化版本 \References<設定<架構 *<\\ 地區設定 \> \\ \> \\ \>\sample.xml*。
 
-5. 設定*資料夾：三個子資料夾：* *Debug*、 *Retail*和*CommonConfiguration*。 無論 SDK 取用者的目標設定為何，SDK 作者都可以使用相同的 SDK 檔案集合，將檔案放在 *CommonConfiguration* 下。
+5. 設定 *資料夾：三個子資料夾：* *Debug*、 *Retail* 和 *CommonConfiguration*。 無論 SDK 取用者的目標設定為何，SDK 作者都可以使用相同的 SDK 檔案集合，將檔案放在 *CommonConfiguration* 下。
 
 6. *架構* 資料夾：支援下列架構： x86、X64、ARM、中性。 Win32 對應至 x86，且 AnyCPU 對應至中性。
 
 ### <a name="sdkmanifestxml"></a>SDKManifest.xml
 
-*SDKManifest.xml*檔案描述 Visual Studio 應該如何使用 SDK。 以下是一個範例：
+*SDKManifest.xml* 檔案描述 Visual Studio 應該如何使用 SDK。 以下是一個範例：
 
 ```
 <FileList>
@@ -183,9 +185,9 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 10. SupportsMultipleVersions：如果這個屬性設為 [ **錯誤** ] 或 [ **警告**]，MSBuild 會指出相同的專案無法參考相同 SDK 系列的多個版本。 如果這個屬性不存在，或設為 [ **允許**]，MSBuild 不會顯示這個類型的錯誤或警告。
 
-11. AppX：指定磁片上 Windows 元件庫之應用程式套件的路徑。 此值會在本機偵錯工具期間傳遞至 Windows 元件庫的註冊元件。 檔案名的命名*慣例為 ...。 \<Company> \<Product> \<Architecture> \<Configuration> \<Version>appx*。 如果屬性名稱和屬性值未套用至 Windows 元件庫，則設定和架構是選擇性的。 此值僅適用于 Windows 元件程式庫。
+11. AppX：指定磁片上 Windows 元件庫之應用程式套件的路徑。 此值會在本機偵錯工具期間傳遞至 Windows 元件庫的註冊元件。 檔案名的命名 *慣例為 ...。 \<Company> \<Product> \<Architecture> \<Configuration> \<Version>appx*。 如果屬性名稱和屬性值未套用至 Windows 元件庫，則設定和架構是選擇性的。 此值僅適用于 Windows 元件程式庫。
 
-12. CopyRedistToSubDirectory：指定要將*\redist*資料夾下的檔案複製到應用程式套件根目錄的位置， (也就是在 [**建立應用程式套件**] 中選擇的**套件位置**) 和執行時間配置根。 預設位置為應用程式套件的根目錄和 **F5** 版面配置。
+12. CopyRedistToSubDirectory：指定要將 *\redist* 資料夾下的檔案複製到應用程式套件根目錄的位置， (也就是在 [**建立應用程式套件**] 中選擇的 **套件位置**) 和執行時間配置根。 預設位置為應用程式套件的根目錄和 **F5** 版面配置。
 
 13. DependsOn：定義此 SDK 所依存之 sdk 的 SDK 身分識別清單。 這個屬性會出現在 [參考管理員] 的 [詳細資料] 窗格中。
 
@@ -197,7 +199,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 ## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a> 指定工具箱專案的位置
 
-*SDKManifest.xml*架構的**ToolBoxItems**元素會指定 [工具箱] 專案在平臺和延伸模組 sdk 中的分類和位置。 下列範例顯示如何指定不同的位置。 這適用于 WinMD 或 DLL 參考。
+*SDKManifest.xml* 架構的 **ToolBoxItems** 元素會指定 [工具箱] 專案在平臺和延伸模組 sdk 中的分類和位置。 下列範例顯示如何指定不同的位置。 這適用于 WinMD 或 DLL 參考。
 
 1. 將控制項放在 [工具箱] 預設分類中。
 

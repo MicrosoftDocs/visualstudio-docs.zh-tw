@@ -1,5 +1,7 @@
 ---
 title: 將鍵盤快速鍵系結至功能表項目 |Microsoft Docs
+description: 瞭解如何將 Visual Studio 中的鍵盤快速鍵對應至預設編輯器或自訂編輯器的自訂按鈕、功能表項目或工具列命令。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df973ef6a75a9134b4ee6e945a5702708ece712
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 112089581965b96133f2160341a13efe23329934
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407714"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974619"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>將鍵盤快速鍵系結至功能表項目
 若要將鍵盤快速鍵系結至自訂功能表命令，請只將專案加入至封裝的 *.vsct* 檔案。 本主題說明如何將鍵盤快速鍵對應至自訂按鈕、功能表項目或工具列命令，以及如何在預設編輯器中套用鍵盤對應，或將它限制為自訂編輯器。
@@ -31,9 +33,9 @@ ms.locfileid: "94407714"
 
 ### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>確認鍵盤快速鍵的可用性
 
-1. 在 [ **工具**  >  **選項**  >  **環境** ] 視窗中，選取 [ **鍵盤** ]。
+1. 在 [**工具**  >  **選項**  >  **環境**] 視窗中，選取 [**鍵盤**]。
 
-2. 請確定 [ **使用中的新快捷方式** ] 設定為 [ **全域** ]。
+2. 請確定 [ **使用中的新快捷方式** ] 設定為 [ **全域**]。
 
 3. 在 [ **按快速鍵** ] 方塊中，輸入您想要使用的鍵盤快速鍵。
 
@@ -42,7 +44,7 @@ ms.locfileid: "94407714"
 4. 請嘗試不同的金鑰組合，直到找出未對應的金鑰。
 
    > [!NOTE]
-   > 使用 **Alt** 的鍵盤快速鍵可以開啟功能表，而不是直接執行命令。 因此，當您輸入包含 **Alt** 的快捷方式時，box **目前使用的快捷方式** 可能是空白的。您可以關閉 [ **選項** ] 對話方塊，然後按下按鍵，確認快捷方式沒有開啟功能表。
+   > 使用 **Alt** 的鍵盤快速鍵可以開啟功能表，而不是直接執行命令。 因此，當您輸入包含 **Alt** 的快捷方式時，box **目前使用的快捷方式** 可能是空白的。您可以關閉 [**選項**] 對話方塊，然後按下按鍵，確認快捷方式沒有開啟功能表。
 
    下列程式假設您有一個具有功能表命令的現有 VSPackage。 如果您需要協助，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)模組。
 
@@ -59,7 +61,7 @@ ms.locfileid: "94407714"
 
     將 `guid`  和  `id` 屬性設定為您想要叫用的命令。
 
-    將 `mod1` 屬性設定為 **Control** 、 **Alt** 或 **Shift** 。
+    將 `mod1` 屬性設定為 **Control**、 **Alt** 或 **Shift**。
 
     Keybindings.json 區段看起來應該像這樣：
 

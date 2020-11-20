@@ -1,5 +1,7 @@
 ---
 title: 建立 WPF 工具箱控制項 |Microsoft Docs
+description: 瞭解如何使用 WPF 工具箱控制項範本建立可散發給其他使用者的 [工具箱] 控制項。
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6aa6051648e495e21f7954a737f7b572ce6a6f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dbe9ed00223fa549420537579d39a4c88cf37cb
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903950"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973976"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>建立 WPF 工具箱控制項
 
@@ -31,13 +33,13 @@ WPF (Windows Presentation Framework) 工具箱控制項範本可讓您建立在�
 
 1. 建立名為的 VSIX 專案 `MyToolboxControl` 。 您可以藉由搜尋 "vsix"，在 [ **新增專案** ] 對話方塊中找到 VSIX 專案範本。
 
-2. 當專案開啟時，加入名為的 **WPF 工具箱控制項** 專案範本 `MyToolboxControl` 。 在 [**方案總管**中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 [ **Visual c #** 擴充性]，  >  **Extensibility**然後選取 [ **WPF 工具箱控制項**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *MyToolboxControl.cs*。
+2. 當專案開啟時，加入名為的 **WPF 工具箱控制項** 專案範本 `MyToolboxControl` 。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 [ **Visual c #** 擴充性]，  >  **Extensibility** 然後選取 [ **WPF 工具箱控制項**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *MyToolboxControl.cs*。
 
-    方案現在包含使用者控制項、將 `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> 控制項新增至 **工具箱**的，以及用於部署的 VSIX 資訊清單中的 **VisualStudio. ToolboxControl** 資產專案。
+    方案現在包含使用者控制項、將 `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> 控制項新增至 **工具箱** 的，以及用於部署的 VSIX 資訊清單中的 **VisualStudio. ToolboxControl** 資產專案。
 
 #### <a name="to-create-the-control-ui"></a>建立控制項 UI
 
-1. 在設計工具中開啟*MyToolboxControl。*
+1. 在設計工具中開啟 *MyToolboxControl。*
 
     設計工具會顯示包含了 <xref:System.Windows.Controls.Button> 控制項的 <xref:System.Windows.Controls.Grid> 控制項。
 
@@ -55,11 +57,11 @@ WPF (Windows Presentation Framework) 工具箱控制項範本可讓您建立在�
 
 ## <a name="renaming-the-control"></a>重新命名控制項
 
- 根據預設，您的控制項會以**MyToolboxControl**的形式出現在 [**工具箱**] 中，名為**MyToolboxControl. MyToolboxControl**的群組中。 您可以在 *MyToolboxControl.xaml.cs* 檔案中變更這些名稱。
+ 根據預設，您的控制項會以 **MyToolboxControl** 的形式出現在 [**工具箱**] 中，名為 **MyToolboxControl. MyToolboxControl** 的群組中。 您可以在 *MyToolboxControl.xaml.cs* 檔案中變更這些名稱。
 
 1. 在程式碼查看中開啟 *MyToolboxControl.xaml.cs* 。
 
-2. 找出 `MyToolboxControl` 類別，並將它重新命名為 TestControl。  (最快的方法是重新命名類別，然後從內容功能表中選取 [ **重新命名** ]，然後完成步驟。  (如需 **重新命名** 命令的詳細資訊，請參閱 [重新命名重構 (c # ) ](../ide/reference/rename.md)。 ) 
+2. 找出 `MyToolboxControl` 類別，並將它重新命名為 TestControl。  (最快的方法是重新命名類別，然後從內容功能表中選取 [ **重新命名** ]，然後完成步驟。  (如需 **重新命名** 命令的詳細資訊，請參閱 [重新命名重構 (c # )](../ide/reference/rename.md)。 ) 
 
 3. 移至 `ProvideToolboxControl` 屬性，並將第一個參數的值變更為 **Test**。 這是將在 [ **工具箱**] 中包含控制項的組名。
 
@@ -86,7 +88,7 @@ WPF (Windows Presentation Framework) 工具箱控制項範本可讓您建立在�
 
 2. 在 Visual Studio 的新執行個體中建立 WPF 應用程式專案。 請確定 XAML 設計工具已開啟。
 
-3. 在 [工具箱] **** 中尋找控制項，並將它拖曳至設計介面。
+3. 在 [工具箱]  中尋找控制項，並將它拖曳至設計介面。
 
 4. 開始進行 WPF 應用程式的偵錯工具。
 
@@ -100,4 +102,4 @@ WPF (Windows Presentation Framework) 工具箱控制項範本可讓您建立在�
 
 3. 將 *.vsix* 檔案上傳至網路或網站。
 
-    如果您將檔案上傳至[Visual Studio Marketplace](https://marketplace.visualstudio.com/)網站，其他使用者可以使用**Tools**  >  Visual Studio 中的工具**擴充功能和更新**來線上尋找並安裝該控制項。
+    如果您將檔案上傳至 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)網站，其他使用者可以使用 **Tools**  >  Visual Studio 中的工具 **擴充功能和更新** 來線上尋找並安裝該控制項。

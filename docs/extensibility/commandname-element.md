@@ -1,5 +1,7 @@
 ---
 title: CommandName 元素 |Microsoft Docs
+description: CommandName 專案會在 [選項] 對話方塊和 [自訂] 對話方塊的命令清單中，指定出現在鍵盤類別中的文字。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8152942d015e21b1b80f735fd921a5ddde3674d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8447213b14a3632197ea7ce27677423460315f71
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739758"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974115"
 ---
 # <a name="commandname-element"></a>CommandName 元素
-專案 `CommandName` 會在 [選項] 對話方塊的 [**選項**] 對話方塊中，以及在 [**自訂**] 對話方塊的**命令**清單中，指定出現在鍵盤類別中的文字。
+專案 `CommandName` 會在 [選項] 對話方塊的 [**選項**] 對話方塊中，以及在 [**自訂**] 對話方塊的 **命令** 清單中，指定出現在鍵盤類別中的文字。
 
 ## <a name="syntax"></a>語法
 

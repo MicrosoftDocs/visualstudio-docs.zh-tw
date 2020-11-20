@@ -1,5 +1,7 @@
 ---
-title: 命令列參數 (Visual Studio SDK) |Microsoft Docs
+title: Command-Line 交換器 (Visual Studio SDK) |Microsoft Docs
+description: Devenv.exe 特別針對 Vspackage 的開發支援命令列參數。 使用本節中的文章來瞭解命令列參數。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db2967a6fab128b6730fbbe35d34f23464ca2096
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77b71f95fcc037b2a4bd70770b06f4b130a9ebd1
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739763"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974380"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a> (Visual Studio SDK 的命令列參數) 
 *Devenv.exe*，啟動 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 的可執行檔，可支援專門用來開發 vspackage 的命令列參數。 Vspackage 也可以在 Devenv 命令列提供自己的參數。 下列主題提供如何在 IDE 中使用命令列參數的相關資訊。

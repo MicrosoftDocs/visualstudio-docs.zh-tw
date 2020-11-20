@@ -1,5 +1,7 @@
 ---
 title: CommandPlacement 元素 |Microsoft Docs
+description: CommandPlacement 元素可讓按鈕、群組和功能表包含在一個以上的群組或功能表中。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcf9f23b5e860b895baa4c2a7a783f2ee15fcc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2828a32ea837e95be438aafa6ec4b31293a43a7
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739738"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974064"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement 元素
 CommandPlacement 元素可讓按鈕、群組和功能表包含在一個以上的群組或功能表中。 藉由使用 CommandPlacement 專案，您就不需要完全重新定義這些專案，即可修改使用者介面的外觀。
@@ -47,7 +49,7 @@ CommandPlacement 元素可讓按鈕、群組和功能表包含在一個以上的
 
 |項目|描述|
 |-------------|-----------------|
-|父系|必要。 裝載要放置之專案的功能表或群組。|
+|父代|必要。 裝載要放置之專案的功能表或群組。|
 
 ### <a name="parent-elements"></a>父項目
 

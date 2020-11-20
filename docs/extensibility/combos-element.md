@@ -1,5 +1,7 @@
 ---
 title: Combos 元素 |Microsoft Docs
+description: Combos 元素會將組合元素分組，以定義出現在下拉式方塊中的命令。 本文包含範例。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d005ea69aea7f0331877326abe4087fcff403553
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eba7b40a6e770c5076a4d1aa89bf6196f7ef8684
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739810"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974241"
 ---
 # <a name="combos-element"></a>Combos 元素
 群組 [組合元素](../extensibility/combo-element.md) 元素。

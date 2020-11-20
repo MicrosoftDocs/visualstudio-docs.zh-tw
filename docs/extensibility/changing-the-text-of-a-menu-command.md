@@ -1,5 +1,7 @@
 ---
 title: 變更功能表命令的文字 |Microsoft Docs
+description: 藉由查看此程式碼範例，瞭解如何使用 IMenuCommandService 服務來變更功能表命令的文字標籤。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,19 +14,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88a20d9f29ae86f7946389cafd26d67c244caea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d22669e67becb62d5e90f58c0cdd6b572e684bcf
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183687"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974391"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>變更功能表命令的文字
 下列步驟顯示如何使用服務來變更功能表命令的文字標籤 <xref:System.ComponentModel.Design.IMenuCommandService> 。
 
 ## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>使用 IMenuCommandService 變更功能表命令標籤
 
-1. `MenuText`使用名為**ChangeMenuText**的功能表命令來建立名為的 VSIX 專案。 如需詳細資訊，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)模組。
+1. `MenuText`使用名為 **ChangeMenuText** 的功能表命令來建立名為的 VSIX 專案。 如需詳細資訊，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)模組。
 
 2. 在 *.vsct* 檔案中，將旗標新增 `TextChanges` 至您的功能表命令，如下列範例所示。
 

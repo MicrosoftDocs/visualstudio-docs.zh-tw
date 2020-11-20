@@ -1,5 +1,7 @@
 ---
 title: 建立自訂起始頁 |Microsoft Docs
+description: 瞭解如何建立自訂起始頁。 從空白起始頁面開始，將控制項新增至空白 UserControl 元素，然後測試您的頁面。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: ed35948158866b7d0bbb2e458c8f8bc2f7b3f844
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7e4c9690e573d2807eb3ad9d842921ee08417d8
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903672"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974561"
 ---
 # <a name="creating-a-custom-start-page"></a>建立自訂起始頁
 
@@ -24,7 +26,7 @@ ms.locfileid: "85903672"
 
 首先，建立一個包含 Visual Studio 將辨識之標記結構的 *.xaml* 檔案，以建立空白的起始頁。 然後，新增標記和程式碼後端，以產生您想要的外觀和功能。
 
-1. 建立**WPF 應用程式**類型的新專案， (**Visual c #**  >  **Windows 桌面**) 。
+1. 建立 **WPF 應用程式** 類型的新專案， (**Visual c #**  >  **Windows 桌面**) 。
 
 2. 加入 `Microsoft.VisualStudio.Shell.14.0` 的參考。
 
@@ -69,15 +71,15 @@ ms.locfileid: "85903672"
 
 ### <a name="to-test-a-manually-created-custom-start-page"></a>若要測試手動建立的自訂起始頁
 
-1. 將您的 XAML 檔案及任何支援的文字檔或標記檔案複製到 *%USERPROFILE%\My Documents\Visual Studio 2015 \ StartPages \\ *資料夾。
+1. 將您的 XAML 檔案及任何支援的文字檔或標記檔案複製到 *%USERPROFILE%\My Documents\Visual Studio 2015 \ StartPages \\* 資料夾。
 
-2. 如果您的起始頁參考了 Visual Studio 未安裝之元件中的任何控制項或類型，請複製元件，然後將它們貼到 *{Visual Studio 安裝資料夾 \\ } \Common7\IDE\PrivateAssemblies*中。
+2. 如果您的起始頁參考了 Visual Studio 未安裝之元件中的任何控制項或類型，請複製元件，然後將它們貼到 *{Visual Studio 安裝資料夾 \\ } \Common7\IDE\PrivateAssemblies* 中。
 
 3. 在 Visual Studio 的命令提示字元中，輸入 **devenv/Rootsuffix Exp** 以開啟 Visual Studio 的實驗實例。
 
 4. 在實驗性實例中，移至 [**工具**  >  **選項**  >  **環境**  >  **啟動**] 頁面，然後從 [**自訂起始頁**] 下拉式清單中選取您的 XAML 檔案。
 
-5. 在 [檢視] **** 功能表上，按一下 [起始頁] ****。
+5. 在 [檢視]  功能表上，按一下 [起始頁] 。
 
      應該會顯示您的自訂起始頁。 如果您想要變更任何檔案，您必須關閉實驗性實例、進行變更、複製並貼上變更的檔案，然後重新開啟實驗實例以查看變更。
 

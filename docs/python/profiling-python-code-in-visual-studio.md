@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bf10a1f4474c2916cd63402eac487af7545b0f8f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b47b59c8d45d76fae1e61584510ae39fe5a91784
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810662"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973809"
 ---
 # <a name="profile-python-code"></a>分析 Python 程式碼
 
@@ -23,16 +23,16 @@ ms.locfileid: "90810662"
 
 ## <a name="profiling-for-cpython-based-interpreters"></a>CPython 型解譯器的分析
 
-分析會透過 [**分析**  >  **啟動 Python 分析]** 功能表命令來啟動，此命令會開啟設定對話方塊：
+程式碼剖析是透過 [ **Debug**  >  **啟動 Python 分析]** 功能表命令來啟動，它會開啟設定對話方塊：
 
 ![分析設定對話方塊](media/profiling-start.png)
 
-當您選取 [確定]**** 時，分析工具會執行並開啟效能報告，您可以透過該報告探索應用程式中的執行時間：
+當您選取 [確定] 時，分析工具會執行並開啟效能報告，您可以透過該報告探索應用程式中的執行時間：
 
 ![分析效能報告](media/profiling-results.png)
 
 > [!Note]
-> Visual Studio 目前只支援此層級的完整應用程式剖析，我們非常願意聆聽您對未來功能的意見反應。 請使用此頁面底部的 [產品意見反應]**** 按鈕。
+> Visual Studio 目前只支援此層級的完整應用程式剖析，我們非常願意聆聽您對未來功能的意見反應。 請使用此頁面底部的 [產品意見反應] 按鈕。
 
 ## <a name="profiling-for-ironpython"></a>針對 IronPython 的分析
 

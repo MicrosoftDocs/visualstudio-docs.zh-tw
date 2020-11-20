@@ -1,5 +1,7 @@
 ---
 title: 建立多實例工具視窗 |Microsoft Docs
+description: 瞭解如何修改工具視窗，讓它的多個實例可以同時開啟。 根據預設，工具視窗只能開啟一個實例。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bb84ed9961cac5159e15bc0c45fada5426d2f2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10de60620bcd0b56f251955f478d4d06c984d021
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904056"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974002"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>建立多實例工具視窗
 您可以對工具視窗進行程式設計，讓它的多個實例可以同時開啟。 根據預設，工具視窗只能開啟一個實例。
@@ -25,7 +27,7 @@ ms.locfileid: "85904056"
 
 ## <a name="create-a-basic-single-instance-tool-window"></a>建立基本 (單一實例) 工具視窗
 
-1. 使用 VSIX 範本來建立名為 **MultiInstanceToolWindow** 的專案，並新增名為 **MIToolWindow**的自訂工具視窗專案範本。
+1. 使用 VSIX 範本來建立名為 **MultiInstanceToolWindow** 的專案，並新增名為 **MIToolWindow** 的自訂工具視窗專案範本。
 
     > [!NOTE]
     > 如需使用工具視窗建立延伸模組的詳細資訊，請參閱 [使用工具視窗建立延伸](../extensibility/creating-an-extension-with-a-tool-window.md)模組。

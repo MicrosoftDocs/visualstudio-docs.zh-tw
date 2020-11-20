@@ -1,5 +1,7 @@
 ---
 title: 使用功能表命令建立延伸模組 |Microsoft Docs
+description: 瞭解如何使用可啟動 [記事本] 的功能表命令來建立擴充功能。 建立功能表命令，然後變更功能表命令處理常式。
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,34 +15,34 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c8639ede4a01157718f0ab1a1514927e620fa8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00afdc31e72e4b0336db19939955a0b2360a00a1
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972331"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974279"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>使用功能表命令建立擴充功能
 
 本逐步解說將示範如何使用可啟動 [記事本] 的功能表命令來建立延伸模組。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-menu-command"></a>建立功能表命令
 
-1. 建立名為 **FirstMenuCommand**的 VSIX 專案。 您可以藉由搜尋 "vsix"，在 [ **新增專案** ] 對話方塊中找到 VSIX 專案範本。
+1. 建立名為 **FirstMenuCommand** 的 VSIX 專案。 您可以藉由搜尋 "vsix"，在 [ **新增專案** ] 對話方塊中找到 VSIX 專案範本。
 
 ::: moniker range="vs-2017"
 
-2. 當專案開啟時，加入名為 **FirstCommand**的自訂命令專案範本。 在 [**方案總管**中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至**Visual c #** 擴充性，  >  **Extensibility**然後選取 [**自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *FirstCommand.cs*。
+2. 當專案開啟時，加入名為 **FirstCommand** 的自訂命令專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 **Visual c #** 擴充性，  >  **Extensibility** 然後選取 [**自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *FirstCommand.cs*。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. 當專案開啟時，加入名為 **FirstCommand**的自訂命令專案範本。 在 [**方案總管**中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 [ **Visual c #** 擴充性]，  >  **Extensibility**然後選取 [**命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *FirstCommand.cs*。
+2. 當專案開啟時，加入名為 **FirstCommand** 的自訂命令專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 [ **Visual c #** 擴充性]，  >  **Extensibility** 然後選取 [**命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *FirstCommand.cs*。
 
 ::: moniker-end
 
@@ -56,11 +58,11 @@ ms.locfileid: "86972331"
 
 ::: moniker range=">=vs-2019"
 
-4. 在實驗實例中，開啟 [**擴充**功能  >  **管理延伸**模組] 視窗。 您應該會在這裡看到 **FirstMenuCommand** 延伸模組。  (如果您在 Visual Studio 的工作實例中開啟 [ **管理擴充** 功能]，就不會看到 **FirstMenuCommand**) 。
+4. 在實驗實例中，開啟 [**擴充** 功能  >  **管理延伸** 模組] 視窗。 您應該會在這裡看到 **FirstMenuCommand** 延伸模組。  (如果您在 Visual Studio 的工作實例中開啟 [ **管理擴充** 功能]，就不會看到 **FirstMenuCommand**) 。
 
 ::: moniker-end
 
-現在，移至實驗實例中的 [ **工具** ] 功能表。 您應該會看到 **Invoke FirstCommand** 命令。 此時，此命令會顯示一個訊息方塊，指出 **FirstCommand 內部 FirstMenuCommand. FirstCommand. MenuItemCallback ( # B1 **。 在下一節中，我們將瞭解如何從此命令實際啟動「記事本」。
+現在，移至實驗實例中的 [ **工具** ] 功能表。 您應該會看到 **Invoke FirstCommand** 命令。 此時，此命令會顯示一個訊息方塊，指出 **FirstCommand 內部 FirstMenuCommand. FirstCommand. MenuItemCallback ( # B1**。 在下一節中，我們將瞭解如何從此命令實際啟動「記事本」。
 
 ## <a name="change-the-menu-command-handler"></a>變更功能表命令處理常式
 
@@ -100,7 +102,7 @@ ms.locfileid: "86972331"
     }
     ```
 
-4. 現在就試試看。當您開始對專案進行偵錯工具並按一下 [**工具**叫用  >  **FirstCommand**] 時，您應該會看到 [記事本] 的實例。
+4. 現在就試試看。當您開始對專案進行偵錯工具並按一下 [**工具** 叫用  >  **FirstCommand**] 時，您應該會看到 [記事本] 的實例。
 
     您可以使用類別的實例 <xref:System.Diagnostics.Process> 來執行任何可執行檔，而不只是 [記事本]。 `calc.exe`例如，使用來試試看。
 
@@ -123,7 +125,7 @@ ms.locfileid: "86972331"
 
 既然您的工具擴充功能以您想要的方式執行，現在就可以考慮將它與您的朋友和同事分享。 只要安裝了 Visual Studio 2015，就很簡單。 您只需要將您所建立的 *.vsix* 檔案傳送給他們。  (請務必在發行模式中進行建立。 ) 
 
-您可以在*FirstMenuCommand* bin 目錄中找到此延伸模組的 *.vsix 檔案。* 具體來說，假設您已建立發行設定，它將位於：
+您可以在 *FirstMenuCommand* bin 目錄中找到此延伸模組的 *.vsix 檔案。* 具體來說，假設您已建立發行設定，它將位於：
 
 *\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\FirstMenuCommand.vsix*
 

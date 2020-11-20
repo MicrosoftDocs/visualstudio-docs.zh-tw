@@ -1,5 +1,7 @@
 ---
 title: 功能旗標 |Microsoft Docs
+description: 瞭解 SCC_CAP_xxx 旗標，這些旗標表示原始檔控制外掛程式的功能，以及表示擴充功能的 SCC_EXCAP_xxx 旗標。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9660cbe5a18e82974858fa4d923a38fc73e773f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b80672b00bec95c740824ef7e29f1faba0e63cf4
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739864"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974436"
 ---
 # <a name="capability-flags"></a>功能旗標
-SCC_CAP_*xxx* 旗標是用來表示原始檔控制外掛程式功能的位旗標。 SCC_EXCAP_*xxx* 旗標是遞增旗標，表示擴充的功能並解析為整數值。
+SCC_CAP_ *xxx* 旗標是用來表示原始檔控制外掛程式功能的位旗標。 SCC_EXCAP_ *xxx* 旗標是遞增旗標，表示擴充的功能並解析為整數值。
 
-|功能代碼|值|說明|
+|功能代碼|值|描述|
 |---------------------|-----------|-----------------|
 |`SCC_CAP_REMOVE`|0x00000001L|支援 [SccRemove](../extensibility/sccremove-function.md) 和命令。|
 |`SCC_CAP_RENAME`|0x00000002L|支援 [SccRename](../extensibility/sccrename-function.md) 和命令。|
@@ -50,7 +52,7 @@ SCC_CAP_*xxx* 旗標是用來表示原始檔控制外掛程式功能的位旗標
 
 ## <a name="capability-bits-added-in-version-12"></a>版本1.2 中新增的功能位
 
-|功能代碼|值|說明|
+|功能代碼|值|描述|
 |---------------------|-----------|-----------------|
 |`SCC_CAP_CREATESUBPROJECT`|0x00010000L|支援 [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)。|
 |`SCC_CAP_GETPARENTPROJECT`|0x00020000L|支援 [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)。|
@@ -63,7 +65,7 @@ SCC_CAP_*xxx* 旗標是用來表示原始檔控制外掛程式功能的位旗標
 ## <a name="capability-bits-added-in-version-13"></a>版本1.3 中新增的功能位
  這些旗標一次傳遞至 [SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md) 函式，以判斷是否支援此功能。
 
-|擴充功能程式碼|值|說明|
+|擴充功能程式碼|值|描述|
 |------------------------------|-----------|-----------------|
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|支援 `SCC_CHECKOUT_LOCALVER` 簽出的選項。|
 |`SCC_EXCAP_BACKGROUND_GET`|2|支援 [SccBackgroundGet](../extensibility/sccbackgroundget-function.md)。|

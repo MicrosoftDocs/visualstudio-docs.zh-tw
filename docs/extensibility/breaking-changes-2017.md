@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 2017 擴充性的重大變更
+description: 瞭解 Visual Studio 2017 中的擴充性模型之重大變更的技術詳細資料，以及您可以如何解決這些問題。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/09/2016
 ms.topic: conceptual
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d872003b319773401ef4da72c1fac8dc177ecbdb
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 3121189b1d73543d2a01bbf0b149c6a98eab6909
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011784"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973758"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 擴充性的變更
 
@@ -63,7 +65,7 @@ Visual Studio 2017 提供撰寫新 VSIX v3 資訊清單格式的設計工具。 
 
 * 只安裝到 GAC 中的元件：
 
-  這些元件現在會安裝在 <em>[INSTALLDIR] \Common7\IDE \* 、* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> 或 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*下。 這些資料夾是 Visual Studio 進程的探查路徑的一部分。
+  這些元件現在會安裝在 <em>[INSTALLDIR] \Common7\IDE \* 、* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> 或 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies* 下。 這些資料夾是 Visual Studio 進程的探查路徑的一部分。
 
 * 安裝至非探查路徑和 GAC 中的元件：
 
@@ -98,7 +100,7 @@ Visual Studio 2017 提供撰寫新 VSIX v3 資訊清單格式的設計工具。 
 ### <a name="global-com-registration"></a>全域 COM 註冊
 
 * 先前 Visual Studio 在 HKEY_CLASSES_ROOT 中安裝許多登錄機碼，並 HKEY_LOCAL_MACHINE hive 來支援原生 COM 註冊。 為了消除這種影響，Visual Studio 現在會使用 [COM 元件的免註冊啟用](/previous-versions/dotnet/articles/ms973913(v=msdn.10))。
-* 因此，Visual Studio 預設不會再安裝% ProgramFiles (x86) % \ Common Files\Microsoft Shared\MSEnv 下的大部分 TLB/.OLB/DLL 檔案。 這些檔案現在會安裝在 [INSTALLDIR] 下，以及 Visual Studio 主機進程所使用的對應無註冊 COM 資訊清單。
+* 因此，Visual Studio 預設不會再安裝% ProgramFiles (x86) % \ Common Files\Microsoft Shared\MSEnv 下的大部分 TLB/.OLB/DLL 檔案。 這些檔案現在會安裝在 [INSTALLDIR] 下，以及 Visual Studio 主機進程所使用的對應 Registration-Free COM 資訊清單。
 * 因此，依賴 Visual Studio COM 介面的全域 COM 註冊的外部程式碼將不再找到這些註冊。 在 Visual Studio 進程內執行的程式碼將不會有任何差異。
 
 ### <a name="visual-studio-registry"></a>Visual Studio 登錄
@@ -109,13 +111,13 @@ Visual Studio 2017 提供撰寫新 VSIX v3 資訊清單格式的設計工具。 
   * **HKCU\Software\Microsoft\VisualStudio \{Version}**： Visual Studio 所建立的登錄機碼來儲存使用者專屬的設定。
   * **HKCU\Software\Microsoft\VisualStudio \{版本} _Config**：上述 VISUAL STUDIO HKLM 金鑰的複本，加上從 *.pkgdef* 檔案依副檔名合併的登錄機碼。
 
-* 為了降低對登錄的影響，Visual Studio 現在使用 [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) 函式，將登錄機碼儲存在 *[VSAPPDATA] \privateregistry.bin*下的私用二進位檔案中。 系統登錄中只會保留非常少量的 Visual Studio 特定金鑰。
+* 為了降低對登錄的影響，Visual Studio 現在使用 [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) 函式，將登錄機碼儲存在 *[VSAPPDATA] \privateregistry.bin* 下的私用二進位檔案中。 系統登錄中只會保留非常少量的 Visual Studio 特定金鑰。
 * 在 Visual Studio 進程內執行的現有程式碼不會受到影響。 Visual Studio 會將 HKCU Visual Studio 特定金鑰底下的所有登錄作業重新導向至私用登錄。 讀取和寫入其他登錄位置將繼續使用系統登錄。
 * 外部程式碼將需要從這個檔案載入和讀取 Visual Studio 登錄專案。
 
 ### <a name="react-to-this-breaking-change"></a>回應此重大變更
 
-* 您也應該將外部程式碼轉換為使用適用于 COM 元件的免註冊啟用。
+* 您也應該將外部程式碼轉換為使用 Registration-Free COM 元件的啟用。
 * 外部元件可以 [遵循此處的指引](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup)，找到 Visual Studio 位置。
 * 建議外部元件使用 [外部設定管理員](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) ，而不是直接讀取/寫入 Visual Studio 登錄機碼。
 * 檢查您的延伸模組所使用的元件是否可能已實作為註冊的另一種技術。 例如，偵錯工具擴充功能可能會利用新的 [MSVSMON JSON 檔案 COM 註冊](migrate-debugger-COM-registration.md)。

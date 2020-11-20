@@ -1,5 +1,7 @@
 ---
 title: 建立選項頁 |Microsoft Docs
+description: 瞭解如何建立簡單的 [工具]/[選項] 頁面，以使用屬性方格來檢查和設定屬性。
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be826b73e28a73216ea88ceba8e23eb1e9ea457b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41102dfbbf1e49dadb1360ab0182810a47651dca
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903816"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973716"
 ---
 # <a name="create-an-options-page"></a>建立選項頁面
 
@@ -25,7 +27,7 @@ ms.locfileid: "85903816"
 
  MPF 提供兩種類別，可協助您建立工具選項頁面、 <xref:Microsoft.VisualStudio.Shell.Package> 類別和 <xref:Microsoft.VisualStudio.Shell.DialogPage> 類別。 您可以藉由子類別化類別來建立 VSPackage，以提供這些頁面的容器 `Package` 。 您可以從類別衍生，以建立每個 [工具選項] 頁面 `DialogPage` 。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
@@ -37,7 +39,7 @@ ms.locfileid: "85903816"
 
 1. 每個 Visual Studio 擴充功能都會從 VSIX 部署專案開始，其中包含延伸模組資產。 建立 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 名為的 VSIX 專案 `MyToolsOptionsExtension` 。 您可以藉由搜尋 "vsix"，在 [ **新增專案** ] 對話方塊中找到 VSIX 專案範本。
 
-2. 加入名為的 Visual Studio 套件專案範本，以新增 VSPackage `MyToolsOptionsPackage` 。 在 [**方案總管**中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案] 對話方塊**中，移至 [ **Visual c # 專案**擴充性]，  >  **Extensibility**然後選取 [ **Visual Studio 套件**]。 在對話方塊底部的 [ **名稱** ] 欄位中，將檔案名變更為 `MyToolsOptionsPackage.cs` 。 如需有關如何建立 VSPackage 的詳細資訊，請參閱 [使用 VSPackage 建立延伸](../extensibility/creating-an-extension-with-a-vspackage.md)模組。
+2. 加入名為的 Visual Studio 套件專案範本，以新增 VSPackage `MyToolsOptionsPackage` 。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案] 對話方塊** 中，移至 [ **Visual c # 專案** 擴充性]，  >  **Extensibility** 然後選取 [ **Visual Studio 套件**]。 在對話方塊底部的 [ **名稱** ] 欄位中，將檔案名變更為 `MyToolsOptionsPackage.cs` 。 如需有關如何建立 VSPackage 的詳細資訊，請參閱 [使用 VSPackage 建立延伸](../extensibility/creating-an-extension-with-a-vspackage.md)模組。
 
 ### <a name="to-create-the-tools-options-property-grid"></a>若要建立工具選項屬性方格
 
@@ -99,7 +101,7 @@ ms.locfileid: "85903816"
 
 7. 在 Visual Studio 的實驗實例中，按一下 [ **工具** ] 功能表上的 [ **選項**]。
 
-     在左窗格中，您應該會看到 **我的類別**。  (選項類別目錄會依字母順序列出，因此它應該會出現在清單中的一半下。 ) 開啟 **我的類別** ，然後按一下 [ **我的格線頁**]。 選項方格會出現在右窗格中。 屬性類別是 **My 選項**，而屬性名稱是我的 **整數選項**。 [屬性描述]、[ **我的整數] 選項**會顯示在窗格的底部。 將值從256的初始值變更為其他值。 按一下 **[確定]**，然後重新開啟 **格線頁**。 您可以看到新的值仍然存在。
+     在左窗格中，您應該會看到 **我的類別**。  (選項類別目錄會依字母順序列出，因此它應該會出現在清單中的一半下。 ) 開啟 **我的類別** ，然後按一下 [ **我的格線頁**]。 選項方格會出現在右窗格中。 屬性類別是 **My 選項**，而屬性名稱是我的 **整數選項**。 [屬性描述]、[ **我的整數] 選項** 會顯示在窗格的底部。 將值從256的初始值變更為其他值。 按一下 **[確定]**，然後重新開啟 **格線頁**。 您可以看到新的值仍然存在。
 
      您也可以透過 Visual Studio 的 [搜尋] 方塊取得 [選項] 頁面。 在 IDE 頂端附近的 [搜尋] 方塊中，輸入 **My 類別** ，您會看到 [我的 **類別目錄-> 我的方格] 頁面** 列在結果中。
 
@@ -190,7 +192,7 @@ ms.locfileid: "85903816"
     }
     ```
 
-     `optionsPage`欄位會保存父實例的參考 `OptionPageCustom` 。 此 `Initialize` 方法會顯示 `OptionString` 在 **文字方塊**中。 **TextBox** `OptionString` 當焦點離開**文字方塊**時，事件處理常式會將文字方塊的目前值寫入。
+     `optionsPage`欄位會保存父實例的參考 `OptionPageCustom` 。 此 `Initialize` 方法會顯示 `OptionString` 在 **文字方塊** 中。 **TextBox** `OptionString` 當焦點離開 **文字方塊** 時，事件處理常式會將文字方塊的目前值寫入。
 
 9. 在封裝程式碼檔案中，將屬性的覆寫加入至 `OptionPageCustom.Window` `OptionPageCustom` 類別，以建立、初始化和傳回的實例 `MyUserControl` 。 類別現在看起來應該像這樣：
 
@@ -225,7 +227,7 @@ ms.locfileid: "85903816"
 
 12. 尋找 **我的類別** ，然後尋找 **我的自訂頁面**。
 
-13. 變更 **OptionString**的值。 按一下 **[確定]**，然後重新開啟 **我的自訂頁面**。 您可以看到新的值已保存。
+13. 變更 **OptionString** 的值。 按一下 **[確定]**，然後重新開啟 **我的自訂頁面**。 您可以看到新的值已保存。
 
 ## <a name="access-options"></a>存取選項
 
@@ -247,7 +249,7 @@ ms.locfileid: "85903816"
 
      此程式碼會呼叫 <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> 以建立或取出 `OptionPageGrid` 實例。 `OptionPageGrid` 呼叫 <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> 以載入其選項，也就是公用屬性。
 
-2. 現在，加入名為 **MyToolsOptionsCommand** 的自訂命令專案範本來顯示值。 在 [**加入新專案**] 對話方塊中，移至**Visual c #** 擴充性，  >  **Extensibility**然後選取 [**自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *MyToolsOptionsCommand.cs*。
+2. 現在，加入名為 **MyToolsOptionsCommand** 的自訂命令專案範本來顯示值。 在 [**加入新專案**] 對話方塊中，移至 **Visual c #** 擴充性，  >  **Extensibility** 然後選取 [**自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *MyToolsOptionsCommand.cs*。
 
 3. 在 *MyToolsOptionsCommand* 檔案中，以下列內容取代命令的 `ShowMessageBox` 方法主體：
 

@@ -1,5 +1,7 @@
 ---
 title: 建立基本的專案系統，第1部分 |Microsoft Docs
+description: 瞭解如何建立名為 myproj.csproj 的專案類型。 在 Visual Studio 中，專案是用來組織原始程式碼檔和其他資產的容器。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e95f760712f46632120540091b9f8f408aad9da4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c202aa9e76f568db9394625485282345ea3222c1
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903427"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974531"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>建立基本的專案系統，第1部分
-在 Visual Studio 中，專案是開發人員用來組織原始程式碼檔和其他資產的容器。 專案在 **方案總管**中會顯示為解決方案的子系。 專案可讓您組織、建立、偵測和部署原始程式碼，以及建立 Web 服務、資料庫和其他資源的參考。
+在 Visual Studio 中，專案是開發人員用來組織原始程式碼檔和其他資產的容器。 專案在 **方案總管** 中會顯示為解決方案的子系。 專案可讓您組織、建立、偵測和部署原始程式碼，以及建立 Web 服務、資料庫和其他資源的參考。
 
  專案是在專案檔中定義，例如 Visual c # 專案的 *.csproj* 檔。 您可以建立自己的專案類型，其擁有您自己的專案副檔名。 如需專案類型的詳細資訊，請參閱 [專案類型](../extensibility/internals/project-types.md)。
 
@@ -32,7 +34,7 @@ ms.locfileid: "85903427"
 >
 >   如果您需要將 Visual Studio 的版本設為高於 Visual Studio 2013 的版本，您將無法在 Visual Studio 擴充功能中利用 .VSPS。  如果是這種情況，這個逐步解說是開始使用的絕佳位置。
 
- 本逐步解說將示範如何建立專案副檔名為 *myproj.csproj*的專案類型。 本逐步解說會從現有的 Visual c # 專案系統中借用。
+ 本逐步解說將示範如何建立專案副檔名為 *myproj.csproj* 的專案類型。 本逐步解說會從現有的 Visual c # 專案系統中借用。
 
 > [!NOTE]
 > 如需擴充功能專案的範例，請參閱 [VSSDK 範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。
@@ -55,22 +57,22 @@ ms.locfileid: "85903427"
 
 - 執行基本範本參數替代。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
  您也必須下載 [適用于專案的 Managed 封裝架構](https://github.com/tunnelvisionlabs/MPFProj10)原始程式碼。 將檔案解壓縮到您要建立的解決方案可存取的位置。
 
 ## <a name="create-a-basic-project-type"></a>建立基本的專案類型
- 建立名為 **SimpleProject**的 c # VSIX 專案。  (**檔案**  >  **新增**  >  **專案**，然後**Visual c #** 擴充性  >  **Extensibility**  >  **VSIX 專案**) 。 在**方案總管**上新增 Visual Studio 套件專案專案範本 (，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]，然後**Extensibility**移至 [擴充性]  >  **Visual Studio [封裝**]) 。 將檔案命名為 *SimpleProjectPackage*。
+ 建立名為 **SimpleProject** 的 c # VSIX 專案。  (**檔案**  >  **新增**  >  **專案**，然後 **Visual c #** 擴充性  >  **Extensibility**  >  **VSIX 專案**) 。 在 **方案總管** 上新增 Visual Studio 套件專案專案範本 (，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]，然後 **Extensibility** 移至 [擴充性]  >  **Visual Studio [封裝**]) 。 將檔案命名為 *SimpleProjectPackage*。
 
 ## <a name="creating-a-basic-project-template"></a>建立基本專案範本
  現在，您可以修改此基本 VSPackage 來執行 *myproj.csproj* 專案類型。 若要建立以 *myproj.csproj* 專案類型為基礎的專案，Visual Studio 必須知道要加入至新專案的檔案、資源和參考。 若要提供這項資訊，請將專案檔放在專案範本資料夾中。 當使用者使用 *myproj.csproj* 專案建立專案時，會將檔案複製到新專案。
 
 ### <a name="to-create-a-basic-project-template"></a>建立基本專案範本
 
-1. 將三個資料夾新增到專案中，另一個是在另一個： *Templates\Projects\SimpleProject*下。  (在 **方案總管**中，以滑鼠右鍵按一下 [ **SimpleProject** ] 專案節點，指向 [新增 **]，然後**按一下 [ **新增資料夾**]。 命名資料夾 *範本*。 在 [ *範本* ] 資料夾中，加入名為 [ *專案*] 的資料夾。 在 [ *專案* ] 資料夾中，加入名為 *SimpleProject*的資料夾 ) 
+1. 將三個資料夾新增到專案中，另一個是在另一個： *Templates\Projects\SimpleProject* 下。  (在 **方案總管** 中，以滑鼠右鍵按一下 [ **SimpleProject** ] 專案節點，指向 [新增 **]，然後** 按一下 [ **新增資料夾**]。 命名資料夾 *範本*。 在 [ *範本* ] 資料夾中，加入名為 [ *專案*] 的資料夾。 在 [ *專案* ] 資料夾中，加入名為 *SimpleProject* 的資料夾 ) 
 
-2. 在 [ *Templates\Projects\SimpleProject* ] 資料夾中，加入點陣圖影像檔案，作為名為 *SimpleProject*的圖示。 當您按一下 [ **新增**] 時，圖示編輯器隨即開啟。
+2. 在 [ *Templates\Projects\SimpleProject* ] 資料夾中，加入點陣圖影像檔案，作為名為 *SimpleProject* 的圖示。 當您按一下 [ **新增**] 時，圖示編輯器隨即開啟。
 
 3. 讓圖示成為特殊的。 此圖示將會在稍後的逐步解說中，出現在 [ **新增專案** ] 對話方塊中。
 
@@ -78,7 +80,7 @@ ms.locfileid: "85903427"
 
 4. 儲存圖示並關閉圖示編輯器。
 
-5. 在 [ *Templates\Projects\SimpleProject* ] 資料夾中，加入名為*Program.cs*的**類別**專案。
+5. 在 [ *Templates\Projects\SimpleProject* ] 資料夾中，加入名為 *Program.cs* 的 **類別** 專案。
 
 6. 以下列程式程式碼取代現有的程式碼。
 
@@ -105,9 +107,9 @@ ms.locfileid: "85903427"
 
 7. 儲存檔案。
 
-8. 從*Properties*資料夾將*AssemblyInfo.cs*檔案複製到*Projects\SimpleProject*資料夾。
+8. 從 *Properties* 資料夾將 *AssemblyInfo.cs* 檔案複製到 *Projects\SimpleProject* 資料夾。
 
-9. 在 *Projects\SimpleProject* 資料夾中，加入名為 *SIMPLEPROJECT myproj.csproj*的 XML 檔案。
+9. 在 *Projects\SimpleProject* 資料夾中，加入名為 *SIMPLEPROJECT myproj.csproj* 的 XML 檔案。
 
    > [!NOTE]
    > 此類型之所有專案的副檔名為 *. myproj.csproj*。 如果您想要變更它，則必須在逐步解說中提及的所有位置進行變更。
@@ -154,11 +156,11 @@ ms.locfileid: "85903427"
 
 11. 儲存檔案。
 
-12. 在 [**屬性**] 視窗中，將 [ *AssemblyInfo.cs*]、[ *Program.cs*]、[ *SimpleProject*] 和 [ *SimpleProject* ] 的 [**組建] 動作**設定為 [**內容**]，並將其 [**包含于 VSIX**屬性] 設定為**True**。
+12. 在 [**屬性**] 視窗中，將 [ *AssemblyInfo.cs*]、[ *Program.cs*]、[ *SimpleProject*] 和 [ *SimpleProject* ] 的 [**組建] 動作** 設定為 [**內容**]，並將其 [**包含于 VSIX** 屬性] 設定為 **True**。
 
     此專案範本描述具有 Debug 設定和發行設定的基本 Visual c # 專案。 專案包含兩個原始程式檔： *AssemblyInfo.cs* 和 *Program.cs*，以及數個元件參考。 從範本建立專案時，會自動將 ProjectGuid 值取代為新的 GUID。
 
-    在 **方案總管**中，展開的 **範本** 資料夾應該會顯示如下：
+    在 **方案總管** 中，展開的 **範本** 資料夾應該會顯示如下：
 
 ```
 Templates
@@ -188,7 +190,7 @@ Templates
        }
    ```
 
-2. 將類別新增至名為*SimpleProjectFactory.cs*的 top *SimpleProject*資料夾。
+2. 將類別新增至名為 *SimpleProjectFactory.cs* 的 top *SimpleProject* 資料夾。
 
 3. 加入以下 using 指示詞：
 
@@ -210,7 +212,7 @@ Templates
 
 ### <a name="to-register-the-project-template"></a>註冊專案範本
 
-1. 在 *SimpleProjectPackage.cs*中，將 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 屬性新增至 `SimpleProjectPackage` 類別，如下所示。
+1. 在 *SimpleProjectPackage.cs* 中，將 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 屬性新增至 `SimpleProjectPackage` 類別，如下所示。
 
    ```csharp
    [ProvideProjectFactory(    typeof(SimpleProjectFactory),     "Simple Project",
@@ -233,7 +235,7 @@ Templates
 
 1. 按 **F5** 開始對 Visual Studio 的實驗性實例進行調試。
 
-2. 在實驗實例中，建立新建立專案類型的新專案。 在 [**新增專案**] 對話方塊中，您應該會在 [**已安裝的範本**] 底下看到**SimpleProject** 。
+2. 在實驗實例中，建立新建立專案類型的新專案。 在 [**新增專案**] 對話方塊中，您應該會在 [**已安裝的範本**] 底下看到 **SimpleProject** 。
 
    現在您已有註冊的專案 factory。 不過，它還無法建立專案。 專案封裝和 project factory 會一起運作，以建立專案並加以初始化。
 
@@ -242,7 +244,7 @@ Templates
 
 - 匯入 Managed Package Framework 的原始程式碼檔。
 
-    1. 卸載 **方案總管**中的 SimpleProject 專案 (，選取專案節點，然後在內容功能表上按一下 **[卸載專案**]，) 並在 XML 編輯器中開啟專案檔。
+    1. 卸載 **方案總管** 中的 SimpleProject 專案 (，選取專案節點，然後在內容功能表上按一下 **[卸載專案**]，) 並在 XML 編輯器中開啟專案檔。
 
     2. 將下列區塊新增至專案檔 (在區塊) 的正上方 \<Import> 。 設定 `ProjectBasePath` 為您剛剛下載的 Managed Package Framework 程式碼中 *ProjectBase* 檔案的位置。 您可能必須在路徑名稱加上反斜線。 如果沒有，專案可能會找不到 Managed Package Framework 原始程式碼。
 
@@ -261,7 +263,7 @@ Templates
 
     4. 加入下列組件的參考：
 
-        - `Microsoft.VisualStudio.Designer.Interfaces`* \<VSSDK install> \VisualStudioIntegration\Common\Assemblies\v2.0*) 中的 (
+        - `Microsoft.VisualStudio.Designer.Interfaces`*\<VSSDK install> \VisualStudioIntegration\Common\Assemblies\v2.0*) 中的 (
 
         - `WindowsBase`
 
@@ -297,7 +299,7 @@ Templates
     }
     ```
 
-5. 在 *SimpleProjectFactory.cs*中，將下列指示詞新增至現有指示詞 `using` 之後 `using` 。
+5. 在 *SimpleProjectFactory.cs* 中，將下列指示詞新增至現有指示詞 `using` 之後 `using` 。
 
     ```csharp
     using Microsoft.VisualStudio.Project;
@@ -452,7 +454,7 @@ Templates
 
 ### <a name="to-add-a-custom-project-node-icon"></a>新增自訂專案節點圖示
 
-1. 在 [ **資源** ] 資料夾中，加入名為 *SimpleProjectNode.bmp*的點陣圖檔案。
+1. 在 [ **資源** ] 資料夾中，加入名為 *SimpleProjectNode.bmp* 的點陣圖檔案。
 
 2. 在 [ **屬性** ] 視窗中，將點陣圖減少為 16 x 16 圖元。 讓點陣圖具有特色。
 
@@ -460,7 +462,7 @@ Templates
 
 3. 在 [ **屬性** ] 視窗中，將點陣圖的 [ **建立] 動作** 變更為 [ **內嵌資源**]。
 
-4. 在 *SimpleProjectNode.cs*中，新增下列指示詞 `using` ：
+4. 在 *SimpleProjectNode.cs* 中，新增下列指示詞 `using` ：
 
    ```csharp
    using System.Drawing;
@@ -520,7 +522,7 @@ Templates
 
 - *SimpleProject.Resources.SimpleProjectNode.bmp*
 
-  在實例結構期間， `ProjectNode` 基類會載入 *Resources.imagelis.bmp*，其中內嵌常用於 *Resources\imagelis.bmp*的 16 x 16 點陣圖。 此點陣圖清單可供使用， `SimpleProjectNode` 如下所示 `ImageHandler.ImageList` 。 `SimpleProjectNode` 將專案節點點陣圖附加至清單。 會快取影像清單中專案節點點陣圖的位移，以供稍後用作公用屬性的值 `ImageIndex` 。 Visual Studio 使用這個屬性來決定要顯示為專案節點圖示的點陣圖。
+  在實例結構期間， `ProjectNode` 基類會載入 *Resources.imagelis.bmp*，其中內嵌常用於 *Resources\imagelis.bmp* 的 16 x 16 點陣圖。 此點陣圖清單可供使用， `SimpleProjectNode` 如下所示 `ImageHandler.ImageList` 。 `SimpleProjectNode` 將專案節點點陣圖附加至清單。 會快取影像清單中專案節點點陣圖的位移，以供稍後用作公用屬性的值 `ImageIndex` 。 Visual Studio 使用這個屬性來決定要顯示為專案節點圖示的點陣圖。
 
 ## <a name="test-the-custom-project-node-icon"></a>測試自訂專案節點圖示
  測試您的 project factory，看看它是否建立了具有您自訂專案節點圖示的專案階層。

@@ -1,5 +1,7 @@
 ---
 title: Managed 程式碼中的 COM 常數 |Microsoft Docs
+description: 瞭解 Managed Package Framework，這會讓 managed 程式碼可以使用一些標準的 COM 常數。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 919d000e44b90e975543f8aa6419968a40149adf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dadf3d8965d36719282e0ae98f56e61679f97e4
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739836"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973920"
 ---
 # <a name="com-constants-in-managed-code"></a>Managed 程式碼中的 COM 常數
 Managed Package Framework (MPF) 會讓 managed 程式碼可以使用一些標準的 COM 常數。 以下列出這些常數以供您參考。

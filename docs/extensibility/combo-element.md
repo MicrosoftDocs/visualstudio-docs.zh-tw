@@ -1,5 +1,7 @@
 ---
 title: 組合元素 |Microsoft Docs
+description: 組合元素會定義出現在下拉式方塊中的命令。 有四種類型： DropDownCombo、DynamicCombo、IndexCombo 和 MRUCombo。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18ff9d9e20ec221a86f1cce5f9c43a4e47ed6dc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5c16db298edb0e1fe526190531df4cb638f8e3d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739814"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974315"
 ---
 # <a name="combo-element"></a>組合元素
 定義出現在下拉式方塊中的命令。 下拉式方塊有四種類型，如下所示： DropDownCombo、DynamicCombo、IndexCombo 和 MRUCombo。
@@ -43,14 +45,14 @@ ms.locfileid: "80739814"
 |defaultWidth|必要。 指定下拉式方塊之圖元寬度的整數。|
 |idCommandList|必要。 傳送至使用中命令目標的識別碼，以取得要顯示在下拉式方塊中的專案清單。 此識別碼將會在與控制項相同的 GUID 範圍中。|
 |priority|選擇性。 指定優先權的數位值。|
-|type|選擇性。 指定按鈕類型的列舉值。<br /><br /> 如果未指定，會使用按鈕。<br /><br /> DropDownCombo<br /> VSPackage 負責填入此下拉式方塊的內容。 使用者無法在這個下拉式清單的文字方塊中輸入任何內容。<br /><br /> DynamicCombo<br /> VSPackage 負責填入這個下拉式方塊的內容。 使用者可以編輯這個下拉式方塊，也可以選取其中的專案。<br /><br /> IndexCombo<br /> 與 DynamicCombo 相同，不同之處在于它會引發專案的索引，而不是其文字。<br /><br /> MRUCombo<br />  (IDE) 代表 VSPackage 填入整合式開發環境。  使用者可以在此下拉式方塊中編輯。 IDE 會記住每個下拉式方塊最多最後16個專案。<br /><br /> 當使用者在下拉式方塊中選取某個內容，或輸入新的內容時，IDE 會通知適當的 VSPackage。|
+|類型|選擇性。 指定按鈕類型的列舉值。<br /><br /> 如果未指定，會使用按鈕。<br /><br /> DropDownCombo<br /> VSPackage 負責填入此下拉式方塊的內容。 使用者無法在這個下拉式清單的文字方塊中輸入任何內容。<br /><br /> DynamicCombo<br /> VSPackage 負責填入這個下拉式方塊的內容。 使用者可以編輯這個下拉式方塊，也可以選取其中的專案。<br /><br /> IndexCombo<br /> 與 DynamicCombo 相同，不同之處在于它會引發專案的索引，而不是其文字。<br /><br /> MRUCombo<br />  (IDE) 代表 VSPackage 填入整合式開發環境。  使用者可以在此下拉式方塊中編輯。 IDE 會記住每個下拉式方塊最多最後16個專案。<br /><br /> 當使用者在下拉式方塊中選取某個內容，或輸入新的內容時，IDE 會通知適當的 VSPackage。|
 |條件|選擇性。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
 |項目|描述|
 |-------------|-----------------|
-|父系|選擇性。 按鈕的父元素。|
+|父代|選擇性。 按鈕的父元素。|
 |CommandFlag|必要。 請參閱 [命令旗標元素](../extensibility/command-flag-element.md)。 按鈕的有效 CommandFlag 值如下所示。<br /><br /> -CaseSensitive<br /><br /> - CommandWellOnly<br /><br /> - DefaultDisabled<br /><br /> - DefaultInvisible<br /><br /> - DynamicVisibility<br /><br /> -篩選<br /><br /> - IconAndText<br /><br /> - NoAutoComplete<br /><br /> - NoButtonCustomize<br /><br /> - NoCustomize<br /><br /> - NoKeyCustomize<br /><br /> - StretchHorizontally|
 |字串|必要。 請參閱 [Strings 元素](../extensibility/strings-element.md)。 必須定義子 ButtonText 元素。|
 |Annotation|選擇性批註。|

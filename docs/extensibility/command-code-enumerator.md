@@ -1,5 +1,7 @@
 ---
 title: 命令程式碼列舉值 |Microsoft Docs
+description: SccGetCommandOptions 和 SccPopulateListto 的選項中會使用命令程式碼列舉值，來指出指定選項的命令。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15916d26ac0120417205af0bb9117a45ec0397c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a831813bb975819e9152dfab4d4eefd6b440606
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739794"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974264"
 ---
 # <a name="command-code-enumerator"></a>命令程式碼列舉值
 此列舉值用於 [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) 的選項和 [SccPopulateList](../extensibility/sccpopulatelist-function.md)，以指出指定選項的命令。

@@ -1,5 +1,7 @@
 ---
 title: 建立和管理模式對話方塊 |Microsoft Docs
+description: 瞭解如何使用 DialogWindow 和不使用 DialogWindow，在 Visual Studio 內建立強制回應對話方塊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2f4f296bb155bcde82235d962ae63c8fa4d41d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c95f03ee71a827380539404a90cd79d50232e488
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903782"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973617"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>建立和管理模式對話方塊
 當您在 Visual Studio 內建立強制回應對話方塊時，您必須確定對話方塊的父視窗在對話方塊顯示時已停用，然後在對話方塊關閉之後重新啟用父視窗。 如果您沒有這麼做，可能會收到錯誤： *Microsoft Visual Studio 無法關機，因為強制回應對話方塊正在使用中。關閉作用中的對話方塊，然後再試一次。*
@@ -26,7 +28,7 @@ ms.locfileid: "85903782"
 
 ## <a name="create-a-dialog-box-derived-from-dialogwindow"></a>建立衍生自 DialogWindow 的對話方塊
 
-1. 建立名為 **OpenDialogTest** 的 VSIX 專案，並新增名為 **OpenDialog**的功能表命令。 如需有關如何這麼做的詳細資訊，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)模組。
+1. 建立名為 **OpenDialogTest** 的 VSIX 專案，並新增名為 **OpenDialog** 的功能表命令。 如需有關如何這麼做的詳細資訊，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)模組。
 
 2. 若要使用 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 類別，您必須在 [ **加入參考** ] 對話方塊的 [架構] 索引標籤中，將參考加入至下列元件 () ：
 
@@ -38,7 +40,7 @@ ms.locfileid: "85903782"
 
     - *System.Xaml*
 
-3. 在 *OpenDialog.cs*中，新增下列 `using` 語句：
+3. 在 *OpenDialog.cs* 中，新增下列 `using` 語句：
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;

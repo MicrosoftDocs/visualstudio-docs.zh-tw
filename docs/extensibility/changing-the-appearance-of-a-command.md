@@ -1,5 +1,7 @@
 ---
 title: 變更命令的外觀 |Microsoft Docs
+description: 瞭解如何提供變更命令外觀的意見反應，例如讓命令可供使用/無法使用、隱藏/顯示或核取/取消核取。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c1574704f8848c16f4740189688cb1719f19623
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f79ac7873a1746e0b14db51ba864e94f6bbfa1e
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183713"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974414"
 ---
 # <a name="change-the-appearance-of-a-command"></a>變更命令的外觀
 您可以藉由變更命令的外觀，將意見反應提供給您的使用者。 例如，您可能會想讓命令在無法使用時看起來不同。 您可以讓命令可供使用或無法使用、隱藏或顯示命令，或是在功能表上核取或取消選取。
@@ -80,7 +82,7 @@ ms.locfileid: "84183713"
 
 6. 建置此專案並開始偵錯。 應該會出現 Visual Studio 的實驗實例。
 
-7. 在 [ **工具** ] 功能表上，按一下 [叫用 **ChangeMenuText** ] 命令。 此時，命令名稱是 **Invoke ChangeMenuText**，因此命令處理常式不會呼叫 **ChangeMyCommand ( # B1 **。
+7. 在 [ **工具** ] 功能表上，按一下 [叫用 **ChangeMenuText** ] 命令。 此時，命令名稱是 **Invoke ChangeMenuText**，因此命令處理常式不會呼叫 **ChangeMyCommand ( # B1**。
 
 8. 在 [ **工具** ] 功能表上，您現在應該會看到 **新的文字**。 按一下 [ **新文字**]。 命令現在應該會呈現灰色。
 

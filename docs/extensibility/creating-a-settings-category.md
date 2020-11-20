@@ -1,5 +1,7 @@
 ---
 title: 建立設定分類 |Microsoft Docs
+description: 瞭解如何建立 Visual Studio 設定類別，並使用它來儲存和還原設定檔案中的值。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d50ca998efa034b1d4392c1fb7cecb8de8ed06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 468b1a44fb4754f86b31992e2c6d96bf6380592d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904020"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974540"
 ---
 # <a name="create-a-settings-category"></a>建立設定分類
 
@@ -25,7 +27,7 @@ ms.locfileid: "85904020"
 
 若要開始這個逐步解說，您必須先完成 [ [建立選項] 頁面](../extensibility/creating-an-options-page.md)的第一個區段。 [產生的選項] 屬性方格可讓您檢查及變更類別目錄中的屬性。 在設定檔案中儲存屬性類別目錄之後，您會檢查檔案以查看屬性值的儲存方式。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-settings-category"></a>建立設定分類
@@ -37,7 +39,7 @@ ms.locfileid: "85904020"
 
 2. 開啟 *VSPackage .resx* 檔案，並新增下列三個字串資源：
 
-    |Name|值|
+    |名稱|值|
     |----------|-----------|
     |106|我的類別|
     |107|我的設定|
@@ -48,18 +50,18 @@ ms.locfileid: "85904020"
     > [!NOTE]
     > 在這三個中，只有類別目錄名稱不會出現在 [匯 **入和匯出設定** ] wizard 中。
 
-3. 在 *MyToolsOptionsPackage.cs*中，將 `float` 名為 `OptionFloat` 的屬性加入至 `OptionPageGrid` 類別，如下列範例所示。
+3. 在 *MyToolsOptionsPackage.cs* 中，將 `float` 名為 `OptionFloat` 的屬性加入至 `OptionPageGrid` 類別，如下列範例所示。
 
     ```csharp
-    public class OptionPageGrid : DialogPage
+    public class OptionPageGrid : DialogPage
     {
-        private int optionInt = 256;
-        private float optionFloat = 3.14F;
+        private int optionInt = 256;
+        private float optionFloat = 3.14F;
 
         [Category("My Options")]
         [DisplayName("My Integer option")]
         [Description("My integer option")]
-        public int OptionInteger
+        public int OptionInteger
         {
             get { return optionInt; }
             set { optionInt = value; }
@@ -67,7 +69,7 @@ ms.locfileid: "85904020"
         [Category("My Options")]
         [DisplayName("My Float option")]
         [Description("My float option")]
-        public float OptionFloat
+        public float OptionFloat
         {
             get { return optionFloat; }
             set { optionFloat = value; }
@@ -96,9 +98,9 @@ ms.locfileid: "85904020"
 
 3. 在左窗格的樹狀檢視中，展開 [ **我的類別** ]，然後按一下 [ **我的格線頁**]。
 
-4. 將 **OptionFloat** 的值變更為3.1416，並將 **OptionInteger** 變更為12。 按一下 [確定]  。
+4. 將 **OptionFloat** 的值變更為3.1416，並將 **OptionInteger** 變更為12。 按一下 [確定]。
 
-5. 按一下 [工具]**** 功能表上的 [匯入和匯出設定]****。
+5. 按一下 [工具] 功能表上的 [匯入和匯出設定]。
 
      隨即出現 [匯 **入和匯出設定** ]。
 
@@ -108,17 +110,17 @@ ms.locfileid: "85904020"
 
 7. 按一下 [ **我的設定**]。
 
-     **描述**會變更為**OptionInteger 和 OptionFloat**。
+     **描述** 會變更為 **OptionInteger 和 OptionFloat**。
 
 8. 確認 [ **我的設定** ] 是唯一選取的類別，然後按 **[下一步]**。
 
      [ **命名您的設定檔** ] 頁面隨即出現。
 
-9. 將新的設定檔命名為 *MySettings .vssettings* ，並將它儲存在適當的目錄中。 按一下 [完成]  。
+9. 將新的設定檔命名為 *MySettings .vssettings* ，並將它儲存在適當的目錄中。 按一下 [完成] 。
 
-     **匯出完成**頁面會報告您的設定已成功匯出。
+     **匯出完成** 頁面會報告您的設定已成功匯出。
 
-10. 在 [檔案]**** 功能表上，指向 [開啟舊檔]****，再按一下 [檔案]****。 找出並開啟 *MySettings .vssettings* 。
+10. 在 [檔案] 功能表上，指向 [開啟舊檔]，再按一下 [檔案]。 找出並開啟 *MySettings .vssettings* 。
 
      您可以在檔案的下列區段中找到您匯出的屬性類別 (您的 Guid 會) 不同。
 
@@ -137,9 +139,9 @@ ms.locfileid: "85904020"
 
 11. 關閉設定檔，而不加以變更。
 
-12. 在 [ **工具** ] 功能表上，依序按一下 [ **選項**]、[ **我的類別**]、[ **格線頁** ]，然後將 **OptionFloat** 的值變更為1.0，並將 **OptionInteger** 變更為1。 按一下 [確定]  。
+12. 在 [ **工具** ] 功能表上，依序按一下 [ **選項**]、[ **我的類別**]、[ **格線頁** ]，然後將 **OptionFloat** 的值變更為1.0，並將 **OptionInteger** 變更為1。 按一下 [確定]。
 
-13. 按一下 [**工具**] 功能表上的 [匯**入和匯出設定**]，選取 [匯**入選取的環境設定**]，然後按 **[下一步]**
+13. 按一下 [**工具**] 功能表上的 [匯 **入和匯出設定**]，選取 [匯 **入選取的環境設定**]，然後按 **[下一步]**
 
      [ **儲存目前的設定** ] 頁面隨即出現。
 
@@ -147,7 +149,7 @@ ms.locfileid: "85904020"
 
      [ **選擇要匯入的設定集合** ] 頁面隨即出現。
 
-15. 在樹狀檢視的 [**我的設定**] 節點中，選取 [ *MySettings] .vssettings*檔案。 如果檔案未出現在樹狀檢視中，請按一下 **[流覽]** 並尋找它。 按一下 [下一步]  。
+15. 在樹狀檢視的 [**我的設定**] 節點中，選取 [ *MySettings] .vssettings* 檔案。 如果檔案未出現在樹狀檢視中，請按一下 **[流覽]** 並尋找它。 按 [下一步] 。
 
      [ **選擇要匯入的設定** ] 對話方塊隨即出現。
 

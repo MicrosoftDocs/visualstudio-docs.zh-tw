@@ -1,5 +1,7 @@
 ---
 title: IDE 所執行的回呼函式 |Microsoft Docs
+description: 瞭解外掛程式可在原始檔控制作業期間于適當時間呼叫的回呼函式，以將資訊傳遞至 IDE。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 666486f5b800707a4467a129abeed7a13306f10a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dfb7e8b7e046c9587f591aec96a6a7fbd270865
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739901"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974457"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE 所執行的回呼函數
 為了與整合式開發環境整合 (IDE) 盡可能順暢地進行整合，並提供統一的終端使用者體驗，原始檔控制外掛程式可以使用 IDE 所執行的回呼函數。 外掛程式可以在原始檔控制作業期間，于適當的時間呼叫這些函式，以將資訊傳遞至 IDE;然後，IDE 可以將此資訊顯示為其原生 UI 中的內嵌元素。 在此案例中，使用者在此案例中的使用方式不會比外掛程式採用自己的 UI 更少。
 
- 必要的標頭檔是 *scc. h*。 預設位置為*\Program Files\VSIP 8.0 \ EnvSDK\common\inc \\ *。 它也在具有原始檔控制外掛程式範例的 VSIP 資料夾中，位於*\Program Files\VSIP 8.0 \ MSSCCI \\ *。
+ 必要的標頭檔是 *scc. h*。 預設位置為 *\Program Files\VSIP 8.0 \ EnvSDK\common\inc \\*。 它也在具有原始檔控制外掛程式範例的 VSIP 資料夾中，位於 *\Program Files\VSIP 8.0 \ MSSCCI \\*。
 
 ## <a name="in-this-section"></a>本節內容
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) 描述 [SccOpenProject](../extensibility/sccopenproject-function.md) 使用的回呼函式，以透過 IDE 顯示來自原始檔控制外掛程式的訊息。

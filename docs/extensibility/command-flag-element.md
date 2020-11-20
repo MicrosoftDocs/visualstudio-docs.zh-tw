@@ -1,5 +1,7 @@
 ---
 title: 命令旗標元素 |Microsoft Docs
+description: 命令旗標元素會修改其父元素。 檢查其父元素和子項目。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84138a69dbb42fc349c12276fd7cca4b593e4d47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15dbf960aebc543b71ff282e525476583bdeba3d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649374"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974193"
 ---
 # <a name="command-flag-eelement"></a>命令旗標 Eelement
 修改其父元素。
@@ -35,7 +37,7 @@ ms.locfileid: "81649374"
 
 ### <a name="child-elements"></a>子元素
 
-|值|說明|
+|值|描述|
 |-----------|-----------------|
 |AllowParams|指出當使用者輸入命令的正式名稱時，可以在 **命令** 視窗中輸入命令參數。<br /><br /> 有效期限： `Button`|
 |AlwaysCreate|即使沒有群組或按鈕，也會建立功能表。<br /><br /> 有效期限： `Menu`|

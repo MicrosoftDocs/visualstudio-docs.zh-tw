@@ -1,5 +1,7 @@
 ---
 title: Button 元素 |Microsoft Docs
+description: 按鈕專案會定義使用者可以與之互動的元素。 按鈕可以是不同的類型： Button、MenuButton 和 SplitDropDown。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05bd73764e96a27a92d741f144c222acc48fa518
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8da92f721f0f4333ffb32ac5cb080d87e4fc0543
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739936"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974491"
 ---
 # <a name="button-element"></a>Button 元素
 定義使用者可以與之互動的元素。 按鈕可以是不同的類型： Button、MenuButton 和 SplitDropDown。
@@ -37,12 +39,12 @@ ms.locfileid: "80739936"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |guid|必要。 GUID/識別碼命令識別碼的 GUID。|
 |id|必要。 GUID/識別碼命令識別碼的識別碼。|
 |priority|選擇性。 指定優先權的數位值。|
-|type|選擇性。 指定按鈕種類的列舉值。<br /><br /> 如果未指定，會使用按鈕。<br /><br /> 按鈕<br /> 出現在工具列上的標準命令 (通常是 iconic 按鈕) 、功能表和內容功能表。<br /><br /> MenuButton<br /> 不會執行命令，但是會產生另一個功能表的功能表項目。<br /><br /> SplitDropDown<br /> 控制項，例如 Microsoft Word 中標準工具列上的 [復原] 和 [重做] 按鈕。|
+|類型|選擇性。 指定按鈕種類的列舉值。<br /><br /> 如果未指定，會使用按鈕。<br /><br /> 按鈕<br /> 出現在工具列上的標準命令 (通常是 iconic 按鈕) 、功能表和內容功能表。<br /><br /> MenuButton<br /> 不會執行命令，但是會產生另一個功能表的功能表項目。<br /><br /> SplitDropDown<br /> 控制項，例如 Microsoft Word 中標準工具列上的 [復原] 和 [重做] 按鈕。|
 |條件|選擇性。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
