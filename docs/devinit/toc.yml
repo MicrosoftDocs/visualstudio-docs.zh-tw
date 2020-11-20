@@ -86,3 +86,5 @@
           href: sample-dotnet-core.md
         - name: Node.js 應用程式
           href: sample-nodejs.md
+    - name: 教學課程
+      href: tutorial.md
