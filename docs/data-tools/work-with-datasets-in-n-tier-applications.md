@@ -1,5 +1,7 @@
 ---
 title: 使用多層式架構 (N-Tier) 應用程式中的資料集
+description: 瞭解如何使用多層式應用程式中的資料集。 多層式資料應用程式是以資料為中心的應用程式，這些應用程式會分成多個邏輯層 (或層級) 。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,20 +21,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c7532bed6a7d43c24d698870723d2265fc2b176f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d450bb60bdb604f658f73d0b5df4b9bd739cf923
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585921"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998183"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>使用多層式架構 (N-Tier) 應用程式中的資料集
 
-多*層式資料應用程式*是以資料為中心的應用程式，這些應用程式會分成多個邏輯層 (或*層級*) 。 換句話說，多層式架構資料應用程式是分成多個專案的應用程式，而其專屬專案中各有資料存取層、商務邏輯層和呈現層。 如需詳細資訊，請參閱多 [層式資料應用程式總覽](../data-tools/n-tier-data-applications-overview.md)。
+多 *層式資料應用程式* 是以資料為中心的應用程式，這些應用程式會分成多個邏輯層 (或 *層級*) 。 換句話說，多層式架構資料應用程式是分成多個專案的應用程式，而其專屬專案中各有資料存取層、商務邏輯層和呈現層。 如需詳細資訊，請參閱多 [層式資料應用程式總覽](../data-tools/n-tier-data-applications-overview.md)。
 
 具類型資料集已獲增強，因此可將 TableAdapter 和資料集類別產生為離散專案。 這提供快速分隔應用程式層以及產生多層式架構資料應用程式的能力。
 
-具類型資料集中的多層式支援可讓您將應用程式架構反復開發至多層式設計。此外，也不需要手動將程式碼分隔成一個以上的專案。 使用 **DataSet 設計工具**開始設計資料層。 當您準備好為應用程式架構採用多層式架構 (N-Tier) 設計時，請設定資料集的 [資料集專案]**** 屬性，以將資料集類別產生成不同的專案。
+具類型資料集中的多層式支援可讓您將應用程式架構反復開發至多層式設計。此外，也不需要手動將程式碼分隔成一個以上的專案。 使用 **DataSet 設計工具** 開始設計資料層。 當您準備好為應用程式架構採用多層式架構 (N-Tier) 設計時，請設定資料集的 [資料集專案] 屬性，以將資料集類別產生成不同的專案。
 
 ## <a name="reference"></a>參考
 

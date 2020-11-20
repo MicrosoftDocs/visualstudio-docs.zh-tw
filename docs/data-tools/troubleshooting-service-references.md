@@ -1,5 +1,7 @@
 ---
 title: 服務參考的疑難排解
+description: 檢查當您使用 Windows Communication Foundation (WCF) 或 Visual Studio 中 WCF Data Services 參考時可能發生的常見問題。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d1a1f0efc21f1f612d85725358555fcb0cb8245
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586116"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998066"
 ---
 # <a name="troubleshoot-service-references"></a>針對服務參考進行疑難排解
 
@@ -33,7 +35,7 @@ ms.locfileid: "75586116"
 
 若要修正此錯誤：
 
-1. 在 **方案總管**中，按兩下 *app.config* 檔案將其開啟。
+1. 在 **方案總管** 中，按兩下 *app.config* 檔案將其開啟。
 
 2. 找出 `MaxReceivedMessageSize` 屬性，並將其變更為較大的值。
 
@@ -43,7 +45,7 @@ ms.locfileid: "75586116"
 
 若要修正此錯誤：
 
-- 在 **方案總管**中，以滑鼠右鍵按一下 [WCF 服務程式庫] 專案，然後按一下 [ **建立**]。
+- 在 **方案總管** 中，以滑鼠右鍵按一下 [WCF 服務程式庫] 專案，然後按一下 [ **建立**]。
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>透過遠端桌面存取服務時發生錯誤
 
@@ -60,7 +62,7 @@ ms.locfileid: "75586116"
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>產生之類別的存取層級設定沒有任何作用
 
-將 [設定**服務參考**] 對話方塊中的 [**產生類別的存取層級**] 選項設定為 [**內部**] 或 [ **Friend** ]，可能不一定會有效。 即使此選項顯示在對話方塊中，但產生的支援類別是以的存取層級來產生的 `Public` 。
+將 [設定 **服務參考**] 對話方塊中的 [**產生類別的存取層級**] 選項設定為 [**內部**] 或 [ **Friend** ]，可能不一定會有效。 即使此選項顯示在對話方塊中，但產生的支援類別是以的存取層級來產生的 `Public` 。
 
 這是特定類型的已知限制，例如使用進行序列化的特定類型 <xref:System.Xml.Serialization.XmlSerializer> 。
 
@@ -84,7 +86,7 @@ ms.locfileid: "75586116"
 
 5. 在 [ **Configuration Manager** ] 對話方塊中，將 [使用中的 **方案** 設定] 設定為 [ **Debug**]。 如需詳細資訊，請參閱 [如何：建立和編輯](../ide/how-to-create-and-edit-configurations.md)設定。
 
-6. 在 **方案總管**中，選取 [WCF 服務] 專案。
+6. 在 **方案總管** 中，選取 [WCF 服務] 專案。
 
 7. 在 [ **組建** ] 功能表上，按一下 [ **重建** ] 以重建 WCF 服務專案。
 
@@ -94,7 +96,7 @@ ms.locfileid: "75586116"
 
 若要修正這個錯誤，請停用 RSS 摘要：
 
-1. 在 Internet Explorer 的 [工具]**** 功能表，按一下 [網際網路選項]****。
+1. 在 Internet Explorer 的 [工具] 功能表，按一下 [網際網路選項]。
 
 2. 在 [ **內容** ] 索引標籤 **的 [摘要] 區段中** ，按一下 [ **設定**]。
 

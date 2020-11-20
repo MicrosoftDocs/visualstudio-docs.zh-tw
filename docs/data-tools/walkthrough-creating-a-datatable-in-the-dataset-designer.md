@@ -1,5 +1,6 @@
 ---
 title: 在 DataSet 設計工具中建立 DataTable
+description: 在這個逐步解說中，使用 DataSet 設計工具建立沒有 TableAdapter) 的 DataTable (。 建立新的 Windows Forms 應用程式，並在其中加入新的資料集。
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -13,16 +14,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7dd762c6df5eebc9ebbf142a3ad7dfe430800802
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a0dad1e6878adc73a08753dca21500499e652602
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036765"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998248"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>逐步解說：在 DataSet 設計工具中建立 DataTable
 
-本逐步解說將說明如何 <xref:System.Data.DataTable> 使用 **DataSet 設計工具**建立沒有 TableAdapter) 的 (。 如需有關建立包含 Tableadapter 之資料表的詳細資訊，請參閱 [建立和設定 tableadapter](../data-tools/create-and-configure-tableadapters.md)。
+本逐步解說將說明如何 <xref:System.Data.DataTable> 使用 **DataSet 設計工具** 建立沒有 TableAdapter) 的 (。 如需有關建立包含 Tableadapter 之資料表的詳細資訊，請參閱 [建立和設定 tableadapter](../data-tools/create-and-configure-tableadapters.md)。
 
 ## <a name="create-a-new-windows-forms-application"></a>建立新的 Windows Forms 應用程式
 
@@ -44,13 +45,13 @@ ms.locfileid: "90036765"
 
 2. 在左窗格中，選取 [ **資料**]，然後在中間窗格中選取 [資料 **集** ]。
 
-3. 選擇 [ **新增**]。
+3. 選擇 [新增]  。
 
-     Visual Studio 會將名為 **DataSet1** 的檔案新增至專案，並在 **DataSet 設計工具**中開啟。
+     Visual Studio 會將名為 **DataSet1** 的檔案新增至專案，並在 **DataSet 設計工具** 中開啟。
 
 ## <a name="add-a-new-datatable-to-the-dataset"></a>將新的 DataTable 新增至資料集
 
-1. 將**DataTable**從 [**工具箱**] 的 [**資料集**] 索引標籤拖曳至**DataSet 設計工具**。
+1. 將 **DataTable** 從 [**工具箱**] 的 [**資料集**] 索引標籤拖曳至 **DataSet 設計工具**。
 
      名為 **DataTable1** 的資料表會加入至資料集。
 
@@ -62,7 +63,7 @@ ms.locfileid: "90036765"
 
 2. 為數據行命名 `SongID` 。
 
-3. 在 [屬性] **** 視窗中，將 <xref:System.Data.DataColumn.DataType%2A> 屬性設定為 <xref:System.Int16?displayProperty=fullName>。
+3. 在 [屬性]  視窗中，將 <xref:System.Data.DataColumn.DataType%2A> 屬性設定為 <xref:System.Int16?displayProperty=fullName>。
 
 4. 重複此程式，並新增下列資料行：
 
@@ -76,7 +77,7 @@ ms.locfileid: "90036765"
 
 所有資料表都應該有主鍵。 主鍵可唯一識別資料表中的特定記錄。
 
-若要設定主鍵，請以滑鼠右鍵按一下 [ **SongID** ] 資料行，然後按一下 [ **設定主鍵**]。 **SongID**資料行旁邊會出現索引鍵圖示。
+若要設定主鍵，請以滑鼠右鍵按一下 [ **SongID** ] 資料行，然後按一下 [ **設定主鍵**]。 **SongID** 資料行旁邊會出現索引鍵圖示。
 
 ## <a name="save-your-project"></a>儲存您的專案
 

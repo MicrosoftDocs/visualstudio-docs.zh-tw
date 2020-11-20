@@ -1,5 +1,7 @@
 ---
 title: 填入資料集時關閉條件約束
+description: 瞭解如何在填滿資料集時關閉條件約束。 以程式設計方式或使用 DataSet 設計工具暫止 update 條件約束。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7bdb225a5b310f6f602619b2afcee610c3e9258b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a4d1e17d2f6a0159a9c0187d5e1a3d16216d0ba
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281262"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998313"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>填入資料集時關閉條件約束
 
@@ -45,9 +47,9 @@ ms.locfileid: "85281262"
 
 ## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>使用 DataSet 設計工具暫止更新條件約束
 
-1. 在 [DataSet 設計工具]**** 中開啟資料集。 如需詳細資訊，請參閱 [逐步解說：在 DataSet 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1. 在 [DataSet 設計工具] 中開啟資料集。 如需詳細資訊，請參閱 [逐步解說：在 DataSet 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
-2. 在 [屬性] **** 視窗中，將 <xref:System.Data.DataSet.EnforceConstraints%2A> 屬性設定為 `false`。
+2. 在 [屬性]  視窗中，將 <xref:System.Data.DataSet.EnforceConstraints%2A> 屬性設定為 `false`。
 
 ## <a name="see-also"></a>另請參閱
 

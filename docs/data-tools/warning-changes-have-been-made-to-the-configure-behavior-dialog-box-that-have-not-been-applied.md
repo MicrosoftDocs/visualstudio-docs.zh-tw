@@ -1,6 +1,6 @@
 ---
 title: 變更未套用
-description: 警告 - 已對 [設定行為] 對話方塊進行變更，但是尚未套用變更
+description: 警告-已對 [設定行為] 對話方塊進行了尚未套用的變更。 查看此 Visual Studio O/R 設計工具訊息的相關資訊。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,18 +10,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 02a94c7038e0825a9793521ed57eefd3a61d9e39
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 7f93c4277f1922ae2d78e32d3ed940f9d7215c96
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036726"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998209"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告：已對 [設定行為] 對話方塊進行變更，但是尚未套用變更
 
 警告。 尚未套用的設定行為對話方塊已經變更了。 是否要套用您的變更?
 
-[ **設定行為** ] 對話方塊可讓您 `Insert` `Update` `Delete` 針對所有可用的類別設定、和行為。 當選取新的 [類別]**** 和 [行為]**** 組合，並且尚未套用先前的變更時，就會出現這則訊息。
+[ **設定行為** ] 對話方塊可讓您 `Insert` `Update` `Delete` 針對所有可用的類別設定、和行為。 當選取新的 [類別] 和 [行為] 組合，並且尚未套用先前的變更時，就會出現這則訊息。
 
 ## <a name="change-options"></a>變更選項
 

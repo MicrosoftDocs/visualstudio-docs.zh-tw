@@ -1,5 +1,6 @@
 ---
 title: 使用 DataSet 設計工具建立資料集
+description: 在這個逐步解說中，請使用 DataSet 設計工具建立資料集。 瞭解建立新專案的程式，並在其中加入新的資料集專案。
 ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: conceptual
@@ -14,22 +15,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20cd8bdc4f7d72cd0ed3920f75a4955ee57d2a68
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1f124a459d55b945cd8dbb480d7e7c22b5de4f3e
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036778"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998027"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>逐步解說：使用 DataSet 設計工具建立資料集
 
-在這個逐步解說中，您會使用 **DataSet 設計工具**來建立資料集。 本文會引導您完成建立新專案的程式，並在其中加入新的 **資料集** 專案。 您將瞭解如何在不使用 wizard 的情況下，根據資料庫中的資料表建立資料表。
+在這個逐步解說中，您會使用 **DataSet 設計工具** 來建立資料集。 本文會引導您完成建立新專案的程式，並在其中加入新的 **資料集** 專案。 您將瞭解如何在不使用 wizard 的情況下，根據資料庫中的資料表建立資料表。
 
 ## <a name="prerequisites"></a>必要條件
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
-1. 如果您沒有 LocalDB SQL Server Express，請從 [SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)或透過 **Visual Studio 安裝程式**進行安裝。 在 Visual Studio 安裝程式中，SQL Server Express LocalDB 可以安裝為 **資料儲存和處理** 工作負載的一部分，或作為個別的元件。
+1. 如果您沒有 LocalDB SQL Server Express，請從 [SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)或透過 **Visual Studio 安裝程式** 進行安裝。 在 Visual Studio 安裝程式中，SQL Server Express LocalDB 可以安裝為 **資料儲存和處理** 工作負載的一部分，或作為個別的元件。
 
 2. 遵循下列步驟來安裝 Northwind 範例資料庫：
 
@@ -65,13 +66,13 @@ ms.locfileid: "90036778"
 
 3. 將資料集命名為 **NorthwindDataset**，然後選擇 [ **加入**]。
 
-     Visual Studio 會將名為 **NorthwindDataset** 的檔案新增至專案，並在 **DataSet 設計工具**中開啟。
+     Visual Studio 會將名為 **NorthwindDataset** 的檔案新增至專案，並在 **DataSet 設計工具** 中開啟。
 
 ## <a name="create-a-data-connection-in-server-explorer"></a>在伺服器總管中建立資料連線
 
-1. 在 [檢視]**** 功能表上按一下 [伺服器總管]****。
+1. 在 [檢視] 功能表上按一下 [伺服器總管]。
 
-2. 在 **伺服器總管**中，按一下 [ **連接到資料庫]** 按鈕。
+2. 在 **伺服器總管** 中，按一下 [ **連接到資料庫]** 按鈕。
 
 3. 建立與 Northwind 範例資料庫的連接。
 
@@ -81,17 +82,17 @@ ms.locfileid: "90036778"
 
 ### <a name="to-create-the-customers-table"></a>若要建立 Customers 資料表
 
-1. 展開您在 **伺服器總管**中建立的資料連線，然後展開 [ **資料表]** 節點。
+1. 展開您在 **伺服器總管** 中建立的資料連線，然後展開 [ **資料表]** 節點。
 
 2. 將 **Customers** 資料表從 **伺服器總管** 拖曳至 **DataSet 設計工具**。
 
-     **客戶**資料表和**CustomersTableAdapter**會加入至資料集。
+     **客戶** 資料表和 **CustomersTableAdapter** 會加入至資料集。
 
 ### <a name="to-create-the-orders-table"></a>若要建立 Orders 資料表
 
 - 將 **Orders** 資料表從 **伺服器總管** 拖曳至 **DataSet 設計工具**。
 
-     **Orders**資料表、 **OrdersTableAdapter**，以及**Customers**與**Orders**資料表之間的資料關聯性會新增至資料集。
+     **Orders** 資料表、 **OrdersTableAdapter**，以及 **Customers** 與 **Orders** 資料表之間的資料關聯性會新增至資料集。
 
 ### <a name="to-create-the-orderdetails-table"></a>若要建立 OrderDetails 資料表
 

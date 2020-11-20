@@ -1,5 +1,7 @@
 ---
 title: Windows Communication Foundation 和 WCF Data Services
+description: 探索 Windows Communication Foundation 在 Visual Studio 中 (WCF) 服務和 WCF Data Services，讓您可以建立分散式應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 dev_langs:
@@ -35,12 +37,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1f24a33a482b1994d0d8667b4fc71cf968e4625
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 983ff598003a4f966b5173dc9ae78dd9aaa16580
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281041"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997897"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 
@@ -74,7 +76,7 @@ WCF 服務是以定義服務與用戶端之間合約的介面為基礎。 它會
 
 定義介面和其方法之後，會將其封裝在實介面的類別中。 單一 WCF 服務類別可以執行多個服務合約。
 
-WCF 服務會透過所謂的 *端點*來公開取用。 端點提供與服務通訊的唯一方法;您無法透過直接參考存取服務，就像使用其他類別一樣。
+WCF 服務會透過所謂的 *端點* 來公開取用。 端點提供與服務通訊的唯一方法;您無法透過直接參考存取服務，就像使用其他類別一樣。
 
 端點是由位址、系結和合約所組成。 位址會定義服務所在的位置;這可能是 URL、FTP 位址或網路或本機路徑。 系結會定義您與服務通訊的方式。 WCF 系結提供多用途的模型來指定通訊協定（例如 HTTP 或 FTP）、安全性機制（例如 Windows 驗證）或使用者名稱和密碼等等。 合約包含 WCF 服務類別所公開的作業。
 
@@ -163,7 +165,7 @@ Visual Studio 簡化了建立 WCF 用戶端的工作，為您使用 [ **加入�
 
 ### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>尋找 WCF 服務的可用端點
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下包含服務參考之專案的 **app.config** 檔案，然後按一下 [ **開啟**]。 檔案會出現在程式碼編輯器中。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下包含服務參考之專案的 **app.config** 檔案，然後按一下 [ **開啟**]。 檔案會出現在程式碼編輯器中。
 
 2. `<Client>`在檔案中搜尋標記。
 
@@ -171,7 +173,7 @@ Visual Studio 簡化了建立 WCF 用戶端的工作，為您使用 [ **加入�
 
      如果服務參考提供多個端點，則會有兩個或多個 `<Endpoint` 標記。
 
-4. 在 `<EndPoint>` 標記中，您會發現 `name="` *SomeService* `"` 參數 (其中*SomeService*代表端點名稱) 。 這是可傳遞給服務參考的函式多載之端點的名稱 `endpointConfigurationName As String` 。
+4. 在 `<EndPoint>` 標記中，您會發現 `name="` *SomeService* `"` 參數 (其中 *SomeService* 代表端點名稱) 。 這是可傳遞給服務參考的函式多載之端點的名稱 `endpointConfigurationName As String` 。
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>如何：以非同步方式呼叫服務方法
 
@@ -186,7 +188,7 @@ Windows Communication Foundation 中 (WCF) 服務的大部分方法，都可以�
 
 ### <a name="to-call-a-service-method-asynchronously"></a>以非同步方式呼叫服務方法
 
-1. 在 **方案總管**中，選取 [服務參考]。
+1. 在 **方案總管** 中，選取 [服務參考]。
 
 2. 在 [ **專案** ] 功能表上，按一下 [ **設定服務參考**]。
 
@@ -200,7 +202,7 @@ Windows Communication Foundation 中 (WCF) 服務的大部分方法，都可以�
 
 1. 按一下 [ **資料** ] 功能表上的 [ **顯示資料來源**]。
 
-   隨即出現 [資料來源]**** 視窗。
+   隨即出現 [資料來源] 視窗。
 
 2. 在 [ **資料來源** ] 視窗中，展開服務參考的節點。 服務顯示所傳回的任何複合類型。
 
@@ -216,7 +218,7 @@ Windows Communication Foundation 中 (WCF) 服務的大部分方法，都可以�
 
 ### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>將控制項系結至 WCF 服務所傳回的複合類型
 
-1. 在 [ **資料** ] 功能表上，選取 [ **顯示資料來源**]。 隨即出現 [資料來源]**** 視窗。
+1. 在 [ **資料** ] 功能表上，選取 [ **顯示資料來源**]。 隨即出現 [資料來源] 視窗。
 
 2. 在 [ **資料來源** ] 視窗中，展開服務參考的節點。 服務顯示所傳回的任何複合類型。
 
@@ -234,7 +236,7 @@ Windows Communication Foundation 中 (WCF) 服務的大部分方法，都可以�
 
 ### <a name="to-disable-type-sharing-in-a-single-assembly"></a>停用單一元件中的類型共用
 
-1. 在 **方案總管**中，選取 [服務參考]。
+1. 在 **方案總管** 中，選取 [服務參考]。
 
 2. 在 [ **專案** ] 功能表上，按一下 [ **設定服務參考**]。
 
@@ -244,7 +246,7 @@ Windows Communication Foundation 中 (WCF) 服務的大部分方法，都可以�
 
 ### <a name="to-disable-type-sharing-in-all-assemblies"></a>停用所有元件中的類型共用
 
-1. 在 **方案總管**中，選取 [服務參考]。
+1. 在 **方案總管** 中，選取 [服務參考]。
 
 2. 在 [ **專案** ] 功能表上，按一下 [ **設定服務參考**]。
 
@@ -261,9 +263,9 @@ Windows Communication Foundation 中 (WCF) 服務的大部分方法，都可以�
 | [針對服務參考進行疑難排解](../data-tools/troubleshooting-service-references.md) | 提供一些可能會在服務參考中發生的常見錯誤，以及如何防止這些錯誤。 |
 | [WCF 服務的調試](../debugger/debugging-wcf-services.md) | 描述當您在調試 WCF 服務時，可能會遇到的常見調試問題和技巧。 |
 | [逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | 提供用於建立具類型資料集以及將 TableAdapter 和資料集程式碼分成多個專案的逐步指示。 |
-| [設定服務參考對話方塊](../data-tools/configure-service-reference-dialog-box.md) | 描述 [ **設定服務參考** ] 對話方塊的使用者介面元素。 |
+| [[設定服務參考] 對話方塊](../data-tools/configure-service-reference-dialog-box.md) | 描述 [ **設定服務參考** ] 對話方塊的使用者介面元素。 |
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
 
 - <xref:System.ServiceModel>
 - <xref:System.Data.Services>

@@ -1,5 +1,7 @@
 ---
 title: 適用于 .NET 的資料工具
+description: 複習 Visual Studio data tools for .NET，其提供 API 和工具支援以連接到資料庫、在記憶體中建立資料模型，以及在 UI 中顯示資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: 67cf4969a5db8900910b375d4cf560b1e30da4eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a095d0fc026634c13ee9f74c8568e199e09f49db
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281067"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998274"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>適用於 .NET 的 Visual Studio Data Tools
 

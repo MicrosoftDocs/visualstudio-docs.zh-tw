@@ -1,5 +1,7 @@
 ---
 title: 升級 .mdf 檔案
+description: 在安裝較新版本的 Visual Studio 之後，請參閱將資料庫檔案升級 ( .mdf) 的選項。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d35611dcc7b6067cf6d6166aff521ef291b8dfcd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: babc82469d32540f1a003b629c9d83887ca91595
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281119"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998040"
 ---
 # <a name="upgrade-mdf-files"></a>升級 .mdf 檔案
 
@@ -57,7 +59,7 @@ ms.locfileid: "85281119"
 
 ### <a name="to-upgrade-a-database-file-to-use-the-localdb-version"></a>升級資料庫檔案以使用 LocalDB 版本
 
-1. 在 **伺服器總管**中，選取 [ **連接到資料庫]** 按鈕。
+1. 在 **伺服器總管** 中，選取 [ **連接到資料庫]** 按鈕。
 
 2. 在 [ **加入連接** ] 對話方塊中，指定下列資訊：
 
@@ -65,13 +67,13 @@ ms.locfileid: "85281119"
 
     - **伺服器名稱**：
 
-        - 若要使用預設版本： `(localdb)\MSSQLLocalDB` 。  這會指定 ProjectV12 或 ProjectV13，視安裝的 Visual Studio 版本以及第一個 LocalDB 實例的建立時間而定。 **SQL Server 物件總管**中的 [ **MSSQLLocalDB** ] 節點會顯示其所指向的版本。
+        - 若要使用預設版本： `(localdb)\MSSQLLocalDB` 。  這會指定 ProjectV12 或 ProjectV13，視安裝的 Visual Studio 版本以及第一個 LocalDB 實例的建立時間而定。 **SQL Server 物件總管** 中的 [ **MSSQLLocalDB** ] 節點會顯示其所指向的版本。
 
         - 若要使用特定版本： `(localdb)\ProjectsV12` 或 `(localdb)\ProjectsV13` ，其中 V12 是 localdb 2014，而 V13 是 localdb 2016。
 
-    - **附加資料庫**檔案：主要 *.mdf* 檔案的實體路徑。
+    - **附加資料庫** 檔案：主要 *.mdf* 檔案的實體路徑。
 
-    - 邏輯名稱(&L):您想要使用的檔案名稱****。
+    - 邏輯名稱(&L):您想要使用的檔案名稱。
 
 3. 選取 [ **確定]** 按鈕。
 
@@ -97,7 +99,7 @@ ms.locfileid: "85281119"
 
   - 若要執行專案，請選取 **F5** 鍵。
 
-  - 若要編輯資料庫，請在**方案總管**中開啟 *.mdf*檔案，然後在**伺服器總管**中展開該節點，以使用您的資料庫。
+  - 若要編輯資料庫，請在 **方案總管** 中開啟 *.mdf* 檔案，然後在 **伺服器總管** 中展開該節點，以使用您的資料庫。
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>使 SQL Server Express 預設的資料庫引擎
 

@@ -1,5 +1,7 @@
 ---
 title: 驗證資料集中的資料
+description: 瞭解如何驗證資料集中的資料。 驗證資料涉及確認輸入至資料物件的值符合資料集架構內的條件約束。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 379c5ec40a59ba044c8cce1ef7926294b763d05d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cde45c4086b93713fe6e5223c1725538c0880491
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281080"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998300"
 ---
 # <a name="validate-data-in-datasets"></a>驗證資料集中的資料
 驗證資料是確認在資料物件中輸入的值符合資料集架構內之條件約束的程式。 驗證程式也會確認這些值是否遵循針對您的應用程式所建立的規則。 先驗證資料再將更新傳送至基礎資料庫是很好的作法。 這可減少錯誤，以及應用程式與資料庫之間的潛在往返次數。
@@ -80,7 +82,7 @@ ms.locfileid: "85281080"
 ## <a name="validate-data-during-column-changes"></a>在資料行變更期間驗證資料
 
 > [!NOTE]
-> **DataSet 設計工具**會建立可將驗證邏輯加入至資料集的部分類別。 設計工具產生的資料集不會刪除或變更部分類別中的任何程式碼。
+> **DataSet 設計工具** 會建立可將驗證邏輯加入至資料集的部分類別。 設計工具產生的資料集不會刪除或變更部分類別中的任何程式碼。
 
 您可以藉由回應事件來變更資料行中的值，以驗證資料 <xref:System.Data.DataTable.ColumnChanging> 。 引發時，此事件會傳遞事件引數 (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>) ，其中包含目前資料行所建議的值。 根據的內容 `e.ProposedValue` ，您可以：
 
@@ -97,7 +99,7 @@ ms.locfileid: "85281080"
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>若要在資料列變更時驗證資料 (Visual Basic) 
 
-1. 在 [DataSet 設計工具]**** 中開啟資料集。 如需詳細資訊，請參閱 [逐步解說：在 DataSet 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1. 在 [DataSet 設計工具] 中開啟資料集。 如需詳細資訊，請參閱 [逐步解說：在 DataSet 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2. 按兩下要驗證之資料表的標題列。 此動作會自動 <xref:System.Data.DataTable.RowChanging> <xref:System.Data.DataTable> 在資料集的部分類別檔案中建立的事件處理常式。
 
@@ -108,12 +110,12 @@ ms.locfileid: "85281080"
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>若要在資料列變更時驗證資料 (c # ) 
 
-1. 在 [DataSet 設計工具]**** 中開啟資料集。 如需詳細資訊，請參閱 [逐步解說：在 DataSet 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1. 在 [DataSet 設計工具] 中開啟資料集。 如需詳細資訊，請參閱 [逐步解說：在 DataSet 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2. 按兩下要驗證之資料表的標題列。 此動作會建立的部分類別檔案 <xref:System.Data.DataTable> 。
 
     > [!NOTE]
-    > **DataSet 設計工具**不會自動建立事件的事件處理常式 <xref:System.Data.DataTable.RowChanging> 。 您必須建立方法來處理 <xref:System.Data.DataTable.RowChanging> 事件，並執行程式碼以將事件連結至資料表的初始化方法。
+    > **DataSet 設計工具** 不會自動建立事件的事件處理常式 <xref:System.Data.DataTable.RowChanging> 。 您必須建立方法來處理 <xref:System.Data.DataTable.RowChanging> 事件，並執行程式碼以將事件連結至資料表的初始化方法。
 
 3. 將下列程式碼複製到部分類別中：
 
