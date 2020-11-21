@@ -1,5 +1,7 @@
 ---
 title: 尋找命令方塊
+description: 瞭解 [尋找/命令] 方塊，以及如何使用它來搜尋文字並執行 Visual Studio 命令。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,20 +13,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99b50c0503d313d4482d8370071220dbf1403d9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 341362fe74d4d8a6edbf10afec1a0d49998e857d
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591524"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006597"
 ---
 # <a name="findcommand-box"></a>尋找/命令方塊
 
-您可以從 [尋找/命令]**** 方塊中搜尋文字，並執行 Visual Studio 命令。 [尋找/命令]**** 方塊仍然是工具列控制項，但不再預設為可見。 您可以選擇 [標準]**** 工具列上的 [新增或移除按鈕]****，然後選擇 [尋找]****，以顯示 [尋找/命令]**** 方塊。
+您可以從 [尋找/命令] 方塊中搜尋文字，並執行 Visual Studio 命令。 [尋找/命令] 方塊仍然是工具列控制項，但不再預設為可見。 您可以選擇 [標準] 工具列上的 [新增或移除按鈕]，然後選擇 [尋找]，以顯示 [尋找/命令] 方塊。
 
 若要執行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 命令，請在其前面加上大於 (**>**) 號。
 
-[尋找/命令]**** 方塊會保留輸入的最後 20 個項目，並以下拉式清單予以顯示。 您可以選擇 **方向鍵**來瀏覽清單。
+[尋找/命令] 方塊會保留輸入的最後 20 個項目，並以下拉式清單予以顯示。 您可以選擇 **方向鍵** 來瀏覽清單。
 
 ![尋找&#47;命令方塊](../ide/media/findcommandbox.png)
 
@@ -34,7 +36,7 @@ ms.locfileid: "75591524"
 
 ## <a name="entering-commands"></a>輸入命令
 
-若要使用 [尋找/命令]**** 方塊來發出單一 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 命令或別名，而不是搜尋文字，請在命令前面加上大於 (**>**) 符號。 例如：
+若要使用 [尋找/命令] 方塊來發出單一 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 命令或別名，而不是搜尋文字，請在命令前面加上大於 (**>**) 符號。 例如：
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"

@@ -1,17 +1,18 @@
 ---
 title: 在 Team Explorer 中連線到專案
 description: 瞭解如何使用 Visual Studio 中的 Team Explorer，與小組成員合作來開發和管理專案。
+ms.custom: SEO-VS-2020
 ms.date: 11/17/2020
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 7d920370013b2d624430acbdbe8e38dcc9aab03d
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: fd482bd2225025b5cd8a14f0387e938626fad6d5
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878253"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006311"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>在 Team Explorer 中連線到專案
 
@@ -60,7 +61,7 @@ ms.locfileid: "94878253"
 > [!TIP]
 > 如果您想要從存放庫開啟專案，請參閱 [從存放庫開啟專案](../get-started/tutorial-open-project-from-repo.md)。 如果您想要建立新的專案，或將使用者加入至專案，請參閱 [建立專案 (Azure DevOps) ](/azure/devops/organizations/projects/create-project) 並 [將使用者新增至專案或小組 (Azure DevOps) ](/azure/devops/organizations/security/add-users-team-project)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 的新 Git 體驗](git-with-visual-studio.md)
 - [教學課程：從存放庫開啟專案](../get-started/tutorial-open-project-from-repo.md)

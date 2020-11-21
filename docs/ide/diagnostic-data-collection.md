@@ -1,5 +1,7 @@
 ---
 title: 診斷資料和系統產生的記錄檔
+description: 瞭解 Visual Studio 系統產生的記錄檔、所收集的資料類型，以及如何使用它來修正問題及改善產品品質。
+ms.custom: SEO-VS-2020
 ms.date: 05/24/2018
 ms.topic: conceptual
 author: jillre
@@ -7,12 +9,12 @@ ms.author: michma
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f3774a816ca31bfcdd4013d35dadbb1737e5ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93f450eab5879991f45f4a924338d4a277d13544
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387248"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95005921"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Visual Studio 所收集的系統產生記錄檔
 

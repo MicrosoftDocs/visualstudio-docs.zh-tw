@@ -1,5 +1,7 @@
 ---
 title: 程式碼片段
+description: 瞭解程式碼片段，以及它們如何是可以插入程式碼檔案中的小型可重複使用程式碼區塊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: c06f9f7dc7e5a672e3fd5da3f3fc834fe223a783
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52059dd464ad0c720a4a2e77a961b7d6f3525c6d
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585414"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006389"
 ---
 # <a name="code-snippets"></a>程式碼片段
 
@@ -31,7 +33,7 @@ ms.locfileid: "75585414"
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[程式碼片段 (Visual Studio for Mac)](/visualstudio/mac/snippets)。
 
-程式碼片段可使用的語言包括 C#、C++、Visual Basic、XML 和 T-SQL 等等。 若要查看所有可用的語言已安裝程式碼片段，請從 [**工具**] 功能表開啟 [**程式碼片段管理員**] (或按下**ctrl** + **K**、 **ctrl** + **B**) ，然後從頂端的下拉式功能表中選擇語言。
+程式碼片段可使用的語言包括 C#、C++、Visual Basic、XML 和 T-SQL 等等。 若要查看所有可用的語言已安裝程式碼片段，請從 [**工具**] 功能表開啟 [**程式碼片段管理員**] (或按下 **ctrl** + **K**、 **ctrl** + **B**) ，然後從頂端的下拉式功能表中選擇語言。
 
 ![[程式碼片段管理員] 對話方塊](media/code-snippets-manager.png)
 
@@ -39,9 +41,9 @@ ms.locfileid: "75585414"
 
 - 在功能表列上，選擇 [**編輯**  >  **IntelliSense**  >  **插入程式碼片段**]
 
-- 從程式碼編輯器的滑鼠右鍵功能表或操作功能表中，選擇 [代碼**段**  >  **插入代碼**段]
+- 從程式碼編輯器的滑鼠右鍵功能表或操作功能表中，選擇 [代碼 **段**  >  **插入代碼** 段]
 
-- 從鍵盤按下**ctrl** + **K**、**ctrl** + **X**
+- 從鍵盤按下 **ctrl** + **K**、**ctrl** + **X**
 
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>擴充程式碼片段和範圍陳述式程式碼片段
 
@@ -60,9 +62,9 @@ finally
 }
 ```
 
-若要插入此程式碼片段，請在滑鼠右鍵功能表中按一下 [ **插入程式碼片段** ]， ([程式碼] 視窗的操作功能表) ，然後按一下 [ **Visual c #**]，再輸入 `tryf` ，然後按 **tab**鍵。或者，您可以輸入 `tryf` ，然後按 **tab** 鍵兩次。
+若要插入此程式碼片段，請在滑鼠右鍵功能表中按一下 [ **插入程式碼片段** ]， ([程式碼] 視窗的操作功能表) ，然後按一下 [ **Visual c #**]，再輸入 `tryf` ，然後按 **tab** 鍵。或者，您可以輸入 `tryf` ，然後按 **tab** 鍵兩次。
 
-範圍陳述式程式碼片段的範例：在 C++中，捷徑 `if` 可用作插入程式碼片段或範圍陳述式程式碼片段。 如果您選取一行程式碼 (例如 `return FALSE;`) ，然後選擇 [以範圍**括住**]  >  ** **，則會在該行周圍展開程式碼片段：
+範圍陳述式程式碼片段的範例：在 C++中，捷徑 `if` 可用作插入程式碼片段或範圍陳述式程式碼片段。 如果您選取一行程式碼 (例如 `return FALSE;`) ，然後選擇 [以範圍 **括住**]  >  ****，則會在該行周圍展開程式碼片段：
 
 ```cpp
 if (true)
@@ -75,7 +77,7 @@ if (true)
 
 程式碼片段可以包含取代參數，這些都是您必須取代的預留位置，以符合您要撰寫的精確程式碼。 在上述範例中，`true` 是取代參數，您必須以適當的條件取代。 在此程式碼片段中同一個取代參數的每個執行個體都要重複這項您所進行的取代。
 
-例如，在 Visual Basic 中有會插入屬性的程式碼片段。 若要插入程式碼片段， **Snippet**請  >  從 Visual Basic 程式碼檔案中的滑鼠右鍵功能表或操作功能表中選擇 [程式碼片段**插入代碼**段]。 然後，選擇程式**代碼模式**  >  **屬性、程式、事件**  >  **定義屬性**。
+例如，在 Visual Basic 中有會插入屬性的程式碼片段。 若要插入程式碼片段， **Snippet** 請  >  從 Visual Basic 程式碼檔案中的滑鼠右鍵功能表或操作功能表中選擇 [程式碼片段 **插入代碼** 段]。 然後，選擇程式 **代碼模式**  >  **屬性、程式、事件**  >  **定義屬性**。
 
 ![定義屬性的程式碼片段功能表](media/code-snippets-vb-property.png)
 

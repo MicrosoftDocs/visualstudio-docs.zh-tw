@@ -1,5 +1,7 @@
 ---
 title: 預設鍵盤快速鍵
+description: 瞭解 Visual Studio 中的預設鍵盤快速鍵，可讓您存取各種命令和視窗。
+ms.custom: SEO-VS-2020
 ms.date: 06/26/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -13,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab8798dfb5c1666ef2829361adb8c48202c3981
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: 06bbbb0124984530e92b0066044c71bfbe80ad2b
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022213"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006363"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 
-您可以選擇適當的鍵盤快速鍵，在 Visual Studio 中存取各種 [命令](reference/visual-studio-commands.md) 和視窗。 此頁面會針對您可能已經在安裝 Visual Studio 時選擇的 [一般]**** 設定檔，列出預設命令捷徑。 無論您選擇哪一個設定檔，都可以開啟 [**選項**] 對話方塊，展開 [**環境**] 節點，然後選擇 [**鍵盤**] 來識別命令[的快捷方式](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。 您也可以為指定的命令指派不同的捷徑，以自訂捷徑。
+您可以選擇適當的鍵盤快速鍵，在 Visual Studio 中存取各種 [命令](reference/visual-studio-commands.md) 和視窗。 此頁面會針對您可能已經在安裝 Visual Studio 時選擇的 [一般] 設定檔，列出預設命令捷徑。 無論您選擇哪一個設定檔，都可以開啟 [**選項**] 對話方塊，展開 [**環境**] 節點，然後選擇 [**鍵盤**] 來識別命令 [的快捷方式](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。 您也可以為指定的命令指派不同的捷徑，以自訂捷徑。
 
 如需常用鍵盤快速鍵的清單和其他產能資訊，請參閱：
 
@@ -60,7 +62,7 @@ ms.locfileid: "91022213"
 
 ## <a name="global-shortcuts"></a>全域快速鍵
 
-這些鍵盤快速鍵都是*全域*的，也就是說，您可以在任何 Visual Studio 視窗有焦點時使用這些快速鍵。
+這些鍵盤快速鍵都是 *全域* 的，也就是說，您可以在任何 Visual Studio 視窗有焦點時使用這些快速鍵。
 
 ### <a name="analyze"></a><a name="bkmk_analyze"></a> 分析
 
@@ -182,8 +184,8 @@ ms.locfileid: "91022213"
 |Edit.Cut|**Ctrl + X**<br /><br /> 或<br /><br /> **Shift + Delete**|
 |Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> 或<br /><br /> **Ctrl+Shift+Ins**|
 |Edit.Delete|**刪除**|
-|Edit.Duplicate|**Ctrl + D**|
-|Edit.Find|**Ctrl+F**|
+|Edit.Duplicate|**Ctrl+D**|
+|Edit.Find|**Ctrl + F**|
 |Edit.FindAllReferences|**Shift + F12**|
 |Edit.FindinFiles|**Ctrl + Shift + F**|
 |Edit.FindNext|**F3**|
@@ -216,7 +218,7 @@ ms.locfileid: "91022213"
 |Edit.QuickFindSymbol|**Shift+Alt+F12**|
 |Edit.Redo|**Ctrl + Y**<br /><br /> 或<br /><br /> **Ctrl + Shift + Z**<br /><br /> 或<br /><br /> **Shift+Alt+退格鍵**|
 |Edit.RefreshRemoteReferences|**Ctrl + Shift + J**|
-|Edit.Replace|**Ctrl+H**|
+|Edit.Replace|**Ctrl + H**|
 |Edit.ReplaceinFiles|**Ctrl + Shift + H**|
 |Edit.SelectAll|**Ctrl + A**|
 |Edit.SelectNextControl|**索引標籤**|
@@ -250,7 +252,7 @@ ms.locfileid: "91022213"
 |命令|鍵盤快速鍵|
 |--------------| - |
 |File.Exit|**Alt + F4**|
-|File.NewFile|**Ctrl+N**|
+|File.NewFile|**Ctrl + N**|
 |File.NewProject|**Ctrl + Shift + N**|
 |File.NewWebSite|**Shift+Alt+N**|
 |File.OpenFile|**Ctrl+O** (字母 'O')|
@@ -258,7 +260,7 @@ ms.locfileid: "91022213"
 |File.OpenWebSite|**Shift+Alt+O** (字母 'O')|
 |File.Print|**Ctrl+P**|
 |File.SaveAll|**Ctrl + Shift + S**|
-|File.SaveSelectedItems|**Ctrl+S**|
+|File.SaveSelectedItems|**Ctrl + S**|
 |File.ViewinBrowser|**Ctrl + Shift + W**|
 
 ### <a name="help"></a><a name="bkmk_help"></a> 説明
@@ -543,7 +545,7 @@ ms.locfileid: "91022213"
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|**插入**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**我**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**O**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**輸出**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**Ctrl+Shift+K**<br /><br /> 或<br /><br /> **Ctrl+E、C**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**刪除**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
@@ -552,7 +554,7 @@ ms.locfileid: "91022213"
 
 |命令|鍵盤快速鍵|
 |--------------| - |
-|Debug.Graphics.CaptureFrame|無|
+|Debug.Graphics.CaptureFrame|None|
 |Graphics.MovePixelSelectionDown|**Shift + Alt + 向下鍵**|
 |Graphics.MovePixelSelectionLeft|**Shift + Alt + 向左鍵**|
 |Graphics.MovePixelSelectionRight|**Shift + Alt + 向右鍵**|
@@ -577,7 +579,7 @@ ms.locfileid: "91022213"
 |Format.Bold|**Ctrl + B**|
 |Format.ConverttoHyperlink|**Ctrl + L**|
 |Format.InsertBookmark|**Ctrl + Shift + L**|
-|Format.Italic|**Ctrl + I**|
+|Format.Italic|**Ctrl+I**|
 |Format.Underline|**Ctrl + U**|
 |Project.AddContentPage|**Ctrl+M、Ctrl+C**|
 |Table.ColumntotheLeft|**Ctrl + Alt + 向左鍵**|
@@ -835,7 +837,7 @@ ms.locfileid: "91022213"
 | Edit.GotoPreviousIssueinFile | **Alt+PgUp** |
 | Edit.HideSelection | **Ctrl + M、Ctrl + H** |
 | Edit.IncreaseFilterLevel | **Alt +。** |
-| Edit.IncrementalSearch | **Ctrl + I** |
+| Edit.IncrementalSearch | **Ctrl+I** |
 | Edit.InsertCaretsatAllMatching | **Shift + Alt +;** |
 | Edit.InsertNextMatchingCaret | **Shift + Alt +。** |
 | Edit.InsertTab | **索引標籤** |
@@ -974,7 +976,7 @@ ms.locfileid: "91022213"
 |Format.SizetoContent|**Shift+F7**|
 |Format.SpaceAcross|**Alt + 向右鍵**<br /><br /> 或<br /><br /> **Alt + 向左鍵**|
 |Format.SpaceDown|**Alt+向上箭**<br /><br /> 或<br /><br /> **Alt + 向下鍵**|
-|Format.TabOrder|**Ctrl + D**|
+|Format.TabOrder|**Ctrl+D**|
 |Format.TestDialog|**Ctrl + T**|
 |Format.ToggleGuides|**Ctrl + G**|
 
@@ -991,8 +993,8 @@ ms.locfileid: "91022213"
 |Image.FilledEllipseTool|**Ctrl + Shift + Alt + P**|
 |Image.FilledRectangleTool|**Ctrl + Shift + Alt + R**|
 |Image.FilledRoundedRectangleTool|**Ctrl+Shift+Alt+W**|
-|Image.FillTool|**Ctrl+F**|
-|Image.FlipHorizontal|**Ctrl+H**|
+|Image.FillTool|**Ctrl + F**|
+|Image.FlipHorizontal|**Ctrl + H**|
 |Image.FlipVertical|**Shift+Alt+H**|
 |Image.LargerBrush|**Ctrl + =**|
 |Image.LineTool|**Ctrl + L**|
@@ -1004,7 +1006,7 @@ ms.locfileid: "91022213"
 |Image.OutlinedEllipseTool|**Shift+Alt+P**|
 |Image.OutlinedRectangleTool|**Shift+Alt+R**|
 |Image.OutlinedRoundedRectangleTool|**Shift+Alt+W**|
-|Image.PencilTool|**Ctrl + I**|
+|Image.PencilTool|**Ctrl+I**|
 |Image.PreviousColor|**Ctrl + [**<br /><br /> 或<br /><br /> **Ctrl+向左鍵**|
 |Image.PreviousRightColor|**Ctrl + Shift + [**<br /><br /> 或<br /><br /> **Ctrl+Shift+向左鍵**|
 |Image.RectangleSelectionTool|**Shift+Alt+S**|
@@ -1146,7 +1148,7 @@ ms.locfileid: "91022213"
 |Format.EditText|**F2**|
 |Format.ResetLayout.All|**Ctrl + Shift + R**|
 |執行專案程式碼|**Ctrl + F9**|
-|Timeline.Hide (僅限混合)|**Ctrl+H**|
+|Timeline.Hide (僅限混合)|**Ctrl + H**|
 |Timeline.Lock (僅限混合)|**Ctrl + L**|
 |Timeline.Show (僅限混合)|**Ctrl + Shift + H**|
 |Timeline.Unlock (僅限混合)|**Ctrl + Shift + L**|

@@ -1,5 +1,7 @@
 ---
 title: 問題報表的私用資料
+description: 瞭解如何在建立問題報告以查看開發人員社群，讓您的私用資料更安全。
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6055592896779640e50b4bfaf28d951aa3309433
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 82c89f2f6ec2a1a9bc6c87a600c355226b2f3da4
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739963"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95005934"
 ---
 # <a name="developer-community-data-privacy"></a>開發人員社群資料隱私權
 
@@ -29,15 +31,15 @@ ms.locfileid: "90739963"
 
 如果您擔心資料隱私權，請不要在一律公開的初始報表標題或內容中放置您想要保持私用的任何項目。 相反地，請建立報表，然後注意您會在個別的留言中私下傳送詳細資料。 建立問題報表後，您就能夠指定誰可以查看回覆和附件：
 
-1. 在建立的報表中，選擇 [新增留言]**** 來建立您對問題的私人描述。
+1. 在建立的報表中，選擇 [新增留言] 來建立您對問題的私人描述。
 
-2. 在回覆編輯器中，使用 [提交]**** 和 [取消]**** 按鈕下方的控制項來指定回覆的對象。 選擇 [可供仲裁者和原始貼文者檢視]**** 來限制 Microsoft 員工和您自己的可見性。
+2. 在回覆編輯器中，使用 [提交] 和 [取消] 按鈕下方的控制項來指定回覆的對象。 選擇 [可供仲裁者和原始貼文者檢視] 來限制 Microsoft 員工和您自己的可見性。
 
    ![開發人員社群的隱私權控制](media/developer-community-privacy-control.png)
 
    只有您指定的人員才能看到留言以及其中包含的任何影像、連結或程式碼。 留言下的任何回覆具有與原始留言相同的可見性。 即使回覆的私用控制項未正確顯示受限的可見性狀態也是如此。
 
-3. 新增描述，以及重現所需的任何其他資訊、影像和檔案附件。 選擇 [送出]**** 按鈕以私下傳送這些資訊。
+3. 新增描述，以及重現所需的任何其他資訊、影像和檔案附件。 選擇 [送出] 按鈕以私下傳送這些資訊。
 
    > [!NOTE]
    > 在開發人員社群網站上，連接的檔案有 2 GB 的限制，最多10個檔案。 如果您需要上傳較大的檔案，則可以提交新的問題報表，或在私用留言中向 Microsoft 員工要求上傳 URL。
@@ -47,9 +49,9 @@ ms.locfileid: "90739963"
 
 ## <a name="data-we-collect"></a>我們收集的資料
 
-如果從 Visual Studio 安裝程式起始 [回報問題]****，我們會收集最新的安裝程式記錄檔。
+如果從 Visual Studio 安裝程式起始 [回報問題]，我們會收集最新的安裝程式記錄檔。
 
-如果從 Visual Studio 中起始 [回報問題]****，我們會收集一或多項下列類型的資料：
+如果從 Visual Studio 中起始 [回報問題]，我們會收集一或多項下列類型的資料：
 
 - 事件記錄檔中的 Watson 和 .NET 項目
 

@@ -1,5 +1,7 @@
 ---
-title: 常用命令的預設鍵盤快速鍵
+title: 常用命令的鍵盤快速鍵
+description: 瞭解引起 Visual Studio 最常使用之命令的鍵盤快速鍵。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: TerryGLee
@@ -7,21 +9,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c60da36ac6a8e5002e65e0973af0f3e0cb13eef7
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596719"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006480"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Visual Studio 的熱門鍵盤快速鍵
 
 您可以選擇這些預設鍵盤快速鍵以存取 Visual Studio 中的常用命令。 如需具有預設快捷方式之命令的完整清單，請參閱 [預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
-「全域」** 內容表示快速鍵適用於 Visual Studio 中的任何工具視窗。
+「全域」內容表示快速鍵適用於 Visual Studio 中的任何工具視窗。
 
 > [!NOTE]
-> 您可以開啟 [選項]**** 對話方塊，展開 [環境]**** 節點，然後選擇 [鍵盤]****，以[查看任何命令的捷徑](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。
+> 您可以開啟 [選項] 對話方塊，展開 [環境] 節點，然後選擇 [鍵盤]，以[查看任何命令的捷徑](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。
 
 ## <a name="build"></a>Build
 
@@ -40,7 +42,7 @@ ms.locfileid: "75596719"
 |Debug.BreakAll|**Ctrl+Alt+Break** [全域]|
 |Debug.DeleteAllBreakpoints|**Ctrl+Shift+F9** [全域]|
 |Debug.Exceptions|**Ctrl+Alt+E** [全域]|
-|Debug.QuickWatch|**Ctrl + Alt + Q** [全域]<br /><br />或** Shift+F9** [全域]|
+|Debug.QuickWatch|**Ctrl + Alt + Q** [全域]<br /><br />或 **Shift+F9** [全域]|
 |Debug.Restart|**Ctrl+Shift+F5** [全域]|
 |Debug.RunToCursor|**Ctrl + F10** [全域]|
 |Debug.SetNextStatement|**Ctrl + Shift + F10** [全域]|
@@ -84,7 +86,7 @@ ms.locfileid: "75596719"
 |Edit.NavigateTo|**Ctrl +、** [全域]|
 |Edit.OpenFile|**Ctrl + Shift + G** [全域]|
 |Edit.OvertypeMode|**插入** [文字編輯器]|
-|Edit.ParameterInfo|**Ctrl+Shift+空格鍵** [文字編輯器、工作流程設計工具]<br /><br />或**Ctrl+K、Ctrl+P** [工作流程設計工具]<br /><br />或** Ctrl+K、P** [工作流程設計工具]|
+|Edit.ParameterInfo|**Ctrl+Shift+空格鍵** [文字編輯器、工作流程設計工具]<br /><br />或 **Ctrl+K、Ctrl+P** [工作流程設計工具]<br /><br />或 **Ctrl+K、P** [工作流程設計工具]|
 |Edit.Paste|**Ctrl+V** [全域]<br /><br />或 **Shift+Insert** [全域]|
 |Edit.PeekDefinition|**Alt + F12** [文字編輯器]|
 |Edit.Redo|**Ctrl + Y** [全域]<br /><br />或 **Shift+Alt+退格鍵** [全域]<br /><br />或 **Ctrl+Shift+Z** [全域]|
@@ -119,7 +121,7 @@ ms.locfileid: "75596719"
 |File.SaveSelectedItems|**Ctrl + S** [全域]|
 |File.ViewinBrowser|**Ctrl+Shift+W** [全域]|
 
-## <a name="project"></a>專案
+## <a name="project"></a>Project
 
 |命令|鍵盤快速鍵 [內容]|
 |--------------| - |

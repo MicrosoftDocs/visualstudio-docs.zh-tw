@@ -1,5 +1,7 @@
 ---
 title: 環境設定
+description: 瞭解 Visual Studio 環境設定，以及如何調整這些設定，以最適合您的開發類型。
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e38505b800037be63b326003bfa6c7fc5396126
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313025"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006649"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Visual Studio 的環境設定
 
@@ -32,19 +34,19 @@ ms.locfileid: "89313025"
 
 若要在第一次開啟 Visual Studio 之後變更開發設定，請遵循下列步驟：
 
-1. 從功能表列選取 [**工具**匯  >  **入和匯出設定**]，以開啟 [匯**入和匯出設定] Wizard**。
+1. 從功能表列選取 [**工具** 匯  >  **入和匯出設定**]，以開啟 [匯 **入和匯出設定] Wizard**。
 
-1. 在 [匯入和匯出設定精靈]**** 中，選取 [重設所有設定]****，然後選取 [下一步]****。
+1. 在 [匯入和匯出設定精靈] 中，選取 [重設所有設定]，然後選取 [下一步]。
 
    ![Visual Studio 中的匯入和匯出設定精靈](media/reset-all-settings.png)
 
-1. 在 [儲存目前設定]**** 頁面上，選取 [是]**** 或 [否]****，然後選取 [下一步]****。
+1. 在 [儲存目前設定] 頁面上，選取 [是] 或 [否]，然後選取 [下一步]。
 
-1. 在 [選擇預設的設定集合]**** 頁面上，選擇一個集合，然後選取 [完成]****。
+1. 在 [選擇預設的設定集合] 頁面上，選擇一個集合，然後選取 [完成]。
 
    ![Visual Studio 中的設定集合](media/settings-collections.png)
 
-1. 在 [重設完成]**** 頁面上，選取 [關閉]****。
+1. 在 [重設完成] 頁面上，選取 [關閉]。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,5 +1,7 @@
 ---
 title: 檔案中尋找
+description: 瞭解「檔案中尋找」功能，以及如何使用它來搜尋一組特定的檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,26 +21,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a32720475bda124c563d45133028f43b4f1b9cd
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: c9aa0d1523c8ef8be73a3c5e73255ce1eeb32d57
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344503"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006571"
 ---
 # <a name="find-in-files"></a>檔案中尋找
 
-[檔案中尋找] 可讓您搜尋一組指定的檔案。 找到的相符專案與所採取的動作會列在 [ **結果選項** ] 中所選取的 [ **尋找結果** ] 視窗中。
+[檔案中尋找] 可讓您搜尋一組指定的檔案。 找到的相符專案與所採取的動作會列在 [**結果選項**] 中所選取的 [**尋找結果**] 視窗中。
 
 您可以使用下列任何方法，以在 [尋找和取代] 視窗中顯示 [檔案中尋找]。
 
 ## <a name="to-display-find-in-files"></a>顯示檔案中尋找
 
-1. 在功能表列上，選擇 [ **編輯**  >  **尋找和取代** ]。
+1. 在功能表列上，選擇 [**編輯**  >  **尋找和取代**]。
 
 1. 選擇 [檔案中尋找]。
 
-若要取消尋找作業，請按下 **Ctrl**  +  **Break** 。
+若要取消尋找作業，請按下 **Ctrl**  +  **Break**。
 
 > [!NOTE]
 > [尋找和取代] 工具不會使用 `Hidden` 或 `System` 屬性來搜尋目錄。

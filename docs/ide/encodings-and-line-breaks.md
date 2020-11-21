@@ -1,5 +1,7 @@
 ---
 title: 編碼與分行符號字元
+description: 瞭解 Visual Studio 解釋為分行符號的字元，以及原始編碼和分行符號字元的保留方式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6634a0b2715fb83a397b5e8cd0c8c68274771e2a
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 889af1c0fd28224b2f31eb80bbeecad28346cd1c
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045595"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006636"
 ---
 # <a name="encodings-and-line-endings"></a>編碼與行尾結束符號
 
@@ -44,20 +46,20 @@ ms.locfileid: "93045595"
 
 ## <a name="advanced-save-options"></a>進階儲存選項
 
-您可以 **使用 [檔案** ] 的 [  >  **儲存選項** ] 對話方塊，判斷您要的分行符號字元類型。 您也可以變更具有相同設定之檔案的編碼。
+您可以 **使用 [檔案**] 的 [  >  **儲存選項**] 對話方塊，判斷您要的分行符號字元類型。 您也可以變更具有相同設定之檔案的編碼。
 
 ![進階儲存選項對話方塊](media/line_endings.png)
 
 > [!NOTE]
-> 如果您在 [檔案]  功能表上看不到 [進階儲存選項]  ，您可以新增它。 
-> 1. 選擇 **工具** 、 **自訂** 、 
-> 1. 選擇 [ **命令** ] 索引標籤，選取 [ **功能表列** ] 選項按鈕，然後從對應的下拉式清單中 **選擇 [檔案]。** 選擇 [ **加入命令** ] 按鈕。 
-> 1. 在 [新增命令]  對話方塊的 [類別]  下，選擇 [檔案]  ，然後在 [命令]  清單中選擇 [進階儲存選項]  。 選擇 **[確定]** 按鈕。
-> 1. 使用 [ **上移** ] **和 [下移]** 按鈕，將命令移至功能表中的任何位置。 選擇 [關閉]  以關閉 [自訂]  對話方塊。 
+> 如果您在 [檔案] 功能表上看不到 [進階儲存選項]，您可以新增它。 
+> 1. 選擇 **工具**、 **自訂**、 
+> 1. 選擇 [**命令**] 索引標籤，選取 [**功能表列**] 選項按鈕，然後從對應的下拉式清單中 **選擇 [檔案]。** 選擇 [ **加入命令** ] 按鈕。 
+> 1. 在 [新增命令] 對話方塊的 [類別] 下，選擇 [檔案]，然後在 [命令] 清單中選擇 [進階儲存選項]。 選擇 **[確定]** 按鈕。
+> 1. 使用 [ **上移** ] **和 [下移]** 按鈕，將命令移至功能表中的任何位置。 選擇 [關閉] 以關閉 [自訂] 對話方塊。 
 > 如需詳細資訊，請參閱[自訂功能表和工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu)。
 >
-> 或者，您 **可以選擇 [** 檔案另存新檔]，以存取 [ **Advanced save Options** ] 對話方塊  >  **\<file\>** 。 在 [ **另存** 新檔] 對話方塊中，選擇 [ **儲存** ] 按鈕旁的下拉式方塊，然後選擇 [ **以編碼方式儲存** ]。
+> 或者，您 **可以選擇 [** 檔案另存新檔]，以存取 [ **Advanced save Options** ] 對話方塊  >  **\<file\>**。 在 [ **另存** 新檔] 對話方塊中，選擇 [ **儲存** ] 按鈕旁的下拉式方塊，然後選擇 [ **以編碼方式儲存**]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)

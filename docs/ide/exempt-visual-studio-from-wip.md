@@ -1,5 +1,7 @@
 ---
 title: 免於套用 Windows 資訊保護
+description: 瞭解如何從 Windows 資訊保護排除 Visual studio，但仍允許它使用企業資料。
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,18 +9,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b4eb454f641b5bef7273464d605fb194f650790
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cfb078ee3f136a1d33f5b25040198c23411a05fb
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588560"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006623"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>設定 Visual Studio 作為 WIP 豁免應用程式
 
 [Windows 資訊保護](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) (WIP) 可協助保護企業資料，使其不會從電子郵件、社交媒體和公用雲端之類不受企業控管的應用程式外洩。 WIP 可協助避免企業擁有的裝置與個人裝置發生意外的資料外洩情況，而且不需要變更環境或其他應用程式。
 
-已啟用** WIP 的應用程式應該會防止企業資料移至未受保護的網路位置，以及避免加密個人資料。 Visual Studio 不是已啟用的應用程式，因此除非您免除它，否則它並不適用於已啟用 WIP 的環境。 請遵循本文中的步驟來啟用 Visual Studio，以便在已啟用 WIP 的電腦上運作。
+已啟用 WIP 的應用程式應該會防止企業資料移至未受保護的網路位置，以及避免加密個人資料。 Visual Studio 不是已啟用的應用程式，因此除非您免除它，否則它並不適用於已啟用 WIP 的環境。 請遵循本文中的步驟來啟用 Visual Studio，以便在已啟用 WIP 的電腦上運作。
 
 ## <a name="configure-vs-as-a-wip-exempt-app"></a>設定 VS 作為 WIP 豁免應用程式
 
