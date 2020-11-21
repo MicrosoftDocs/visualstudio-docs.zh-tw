@@ -7,12 +7,12 @@ ms.assetid: 17e2da46-6dc1-4a1c-a8e6-733bd7fa2c6b
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 11/10/2020
-ms.openlocfilehash: a44f64ff3f760aa248946a1d3499b82033f632e2
-ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
+ms.openlocfilehash: 40b88ce040fc7e95aee7c8662a0019530dc92df1
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94575480"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006337"
 ---
 # <a name="software-downloads-and-benefits"></a>軟體下載與權益
 
