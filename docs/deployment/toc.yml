@@ -20,45 +20,45 @@
   items:
     - name: .NET
       items:
-        - name: 使用發行工具部署 .NET Core 應用程式
-          href: /dotnet/core/deploying/deploy-with-vs
-        - name: 為 Microsoft Store 封裝傳統型應用程式
-          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: 使用 ClickOnce 部署 .NET Windows 應用程式
           href: quickstart-deploy-using-clickonce-folder.md
         - name: 使用 ClickOnce 部署 .NET Framework 傳統型應用程式
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
+        - name: 建立安裝程式套件 (Windows 桌面)
+          href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
+        - name: 為 Microsoft Store 封裝傳統型應用程式 >>
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: 從命令列建置 ClickOnce 應用程式
           href: building-clickonce-applications-from-the-command-line.md
     - name: ASP.NET
       items:
-        - name: 將 ASP.NET Core 應用程式發行到 Azure
+        - name: 將 ASP.NET Core 應用程式發佈到 Azure >>
           href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
         - name: 匯入發佈設定並部署至 IIS
           href: tutorial-import-publish-settings-iis.md
         - name: 匯入發行設定並部署至 Azure
           href: tutorial-import-publish-settings-azure.md
-        - name: 使用 Git 將 ASP.NET Core 持續部署到 Azure
+        - name: 使用 Git 將 ASP.NET Core 持續部署至 Azure >>
           href: /aspnet/core/publishing/azure-continuous-deployment
     - name: C++
       items:
-        - name: 部署 C/C++ 應用程式
-          href: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-        - name: 為 Microsoft Store 封裝傳統型應用程式
+        - name: 建立安裝程式套件
+          href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
+        - name: 為 Microsoft Store 封裝傳統型應用程式 >>
           href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-        - name: 使用 ClickOnce 部署 C++/CLR 應用程式...
+        - name: 使用 ClickOnce 部署 C++/CLR 應用程式 >>
           href: /cpp/windows/clickonce-deployment-for-visual-cpp-applications
     - name: UWP
       items:
-        - name: 使用 Visual Studio 封裝 UWP 應用程式
+        - name: 使用 Visual Studio 封裝 UWP 應用程式 >>
           href: /windows/uwp/packaging/packaging-uwp-apps
     - name: Node.js
       items:
-        - name: 發佈到 Linux App Service
+        - name: 發佈到 Linux App Service >>
           href: ../javascript/publish-nodejs-app-azure.md
     - name: Python
       items:
-        - name: 發佈至 Azure App Service
+        - name: 發佈到 Azure App Service >>
           href: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
 - name: 作法指南
   items:

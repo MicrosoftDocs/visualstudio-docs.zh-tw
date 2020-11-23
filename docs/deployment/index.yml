@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/17/2019
-  ms.openlocfilehash: 26c3ce01f656f77c578eaa78902bddb7fd844a7d
-  ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+  ms.openlocfilehash: f3ec7ac35844d149a63a76144f9fe6ba54db12e1
+  ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/11/2020
-  ms.locfileid: "90038487"
+  ms.lasthandoff: 11/19/2020
+  ms.locfileid: "94903906"
 landingContent:
 - title: 關於部署
   linkLists:
@@ -23,10 +23,12 @@ landingContent:
     links:
     - text: 部署簡介
       url: deploying-applications-services-and-components.md
+- title: 開始使用 (.NET Core、Python)
+  linkLists:
+  - linkListType: overview
+    links:
     - text: 部署到資料夾、IIS 或 Azure
       url: deploying-applications-services-and-components-resources.md
-- title: 開始使用
-  linkLists:
   - linkListType: quickstart
     links:
     - text: 發佈至 Azure App Service
@@ -37,18 +39,28 @@ landingContent:
       url: quickstart-deploy-to-a-web-site.md
     - text: 發行至資料夾
       url: quickstart-deploy-to-local-folder.md
+    - text: 使用 ClickOnce 部署 .NET Core 應用程式
+      url: quickstart-deploy-using-clickonce-folder.md
 - title: 部署 .NET 應用程式
   linkLists:
   - linkListType: tutorial
     links:
     - text: 部署 .NET Core 應用程式
       url: /dotnet/core/deploying/deploy-with-vs
-    - text: 使用 ClickOnce 部署傳統型應用程式
+    - text: 使用 ClickOnce 部署 .NET Framework 傳統型應用程式
       url: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
-    - text: 從命令列建置 ClickOnce 應用程式
-      url: building-clickonce-applications-from-the-command-line.md
+    - text: 使用安裝程式套件部署傳統型應用程式
+      url: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
   - linkListType: how-to-guide
     links:
+    - text: 封裝適用於 Microsoft Store 的傳統型應用程式
+      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
+- title: 部署 C++ 應用程式
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 使用安裝程式套件進行部署
+      url: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
     - text: 封裝適用於 Microsoft Store 的傳統型應用程式
       url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
 - title: 部署 ASP.NET Core 應用程式
@@ -61,31 +73,15 @@ landingContent:
       url: tutorial-import-publish-settings-iis.md
     - text: 使用 Git 發佈
       url: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment
-- title: 部署 C++ 應用程式
+- title: 其他部署類型
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 使用安裝專案部署 (C/C++)
-      url: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-    - text: 封裝適用於 Microsoft Store 的傳統型應用程式
-      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-- title: 部署 Python 應用程式
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 發佈到 Linux App Service
+    - text: Python 應用程式到 Linux App Service
       url: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
-- title: 部署 Node.js 應用程式
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: 發佈到 Linux App Service
+    - text: Node.js 應用程式到 Linux App Service
       url: ../javascript/publish-nodejs-app-azure.md
-- title: 將 .NET 套件部署到 NuGet.org
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: 發佈到 NuGet.org (.NET Standard)
-      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
-    - text: 發佈到 NuGet.org (.NET Framework)
-      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework
+    - text: 部署容器化應用程式
+      url: ../containers/index.yml
+    - text: 發佈 NuGet 套件
+      url: /nuget
