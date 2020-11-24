@@ -1,5 +1,7 @@
 ---
 title: ProjectItemFolder 元素 |Microsoft Docs
+description: 取得 ProjectItemFolder 元素的參考資訊，代表 SharePoint 專案專案 XML 架構參考中的對應資料夾。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38f8f70cc6480554441809e33c4083735600fbbb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99a27f8e255aa17e8b9fa604b504109976c5d36a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85539811"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440788"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder 項目
   表示對應的資料夾。
@@ -37,10 +39,10 @@ ms.locfileid: "85539811"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
-|**Target**|必要的 **xs： string** 屬性。<br /><br /> 相對於部署根資料夾，SharePoint 安裝中對應資料夾對應的資料夾路徑。 部署根資料夾取決於 **type** 屬性所指定的部署類型。<br /><br /> 如需詳細資訊，請參閱[開發 sharepoint 方案](../sharepoint/developing-sharepoint-solutions.md)中 sharepoint 專案專案的**部署路徑**和**部署根**屬性的說明。|
-|**類型**|必要的 **xs： string** 屬性。<br /><br /> 對應資料夾的部署類型。 如需可能值的詳細資訊，請參閱[開發 sharepoint 方案](../sharepoint/developing-sharepoint-solutions.md)中 SharePoint 專案專案的 [**部署類型**] 屬性的描述。|
+|**Target**|必要的 **xs： string** 屬性。<br /><br /> 相對於部署根資料夾，SharePoint 安裝中對應資料夾對應的資料夾路徑。 部署根資料夾取決於 **type** 屬性所指定的部署類型。<br /><br /> 如需詳細資訊，請參閱 [開發 sharepoint 方案](../sharepoint/developing-sharepoint-solutions.md)中 sharepoint 專案專案的 **部署路徑** 和 **部署根** 屬性的說明。|
+|**型別**|必要的 **xs： string** 屬性。<br /><br /> 對應資料夾的部署類型。 如需可能值的詳細資訊，請參閱 [開發 sharepoint 方案](../sharepoint/developing-sharepoint-solutions.md)中 SharePoint 專案專案的 [**部署類型**] 屬性的描述。|
 
 ### <a name="child-elements"></a>子元素
  無。

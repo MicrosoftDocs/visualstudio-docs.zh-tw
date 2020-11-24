@@ -1,5 +1,7 @@
 ---
 title: ProjectOutputFile 元素 |Microsoft Docs
+description: 取得 ProjectOutputFile 元素的參考資訊，代表 SharePoint 專案專案 XML 架構參考中個別專案的輸出。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12f399b7a09c18c77482475575ca387a11955762
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffe6f95bdfd7795c837aaaa25ec7ef2a35a7ae76
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542385"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442024"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile 項目
   表示當專案專案部署至 SharePoint 時，要包含的個別專案的輸出。
@@ -43,8 +45,8 @@ ms.locfileid: "85542385"
 |---------------|-----------------|
 |**ProjectId**|必要的 **xs： string** 屬性。<br /><br /> 具有您想要包含之輸出的相依專案的 GUID。 這會對應至相依專案檔中的 **ProjectGuid** 元素。|
 |**ProjectPath**|必要的 **xs： string** 屬性。<br /><br /> 包含您要包含之輸出的相依專案的相對路徑（包括專案檔名稱）。 此路徑相對於包含 SharePoint 專案專案之 SharePoint 專案的根資料夾。|
-|**Target**|選擇性 **xs： string** 屬性。<br /><br /> 要在 SharePoint 伺服器上部署相依專案輸出的路徑（相對於部署根資料夾）。 部署根資料夾取決於 **type** 屬性所指定的部署類型。<br /><br /> 如需詳細資訊，請參閱[開發 sharepoint 方案](../sharepoint/developing-sharepoint-solutions.md)中 sharepoint 專案專案的**部署路徑**和**部署根**屬性的說明。|
-|**類型**|必要的 **xs： string** 屬性。<br /><br /> 要用於相依專案之輸出的部署類型。 如需可能值的詳細資訊，請參閱[開發 sharepoint 方案](../sharepoint/developing-sharepoint-solutions.md)中 SharePoint 專案專案的 [**部署類型**] 屬性的描述。|
+|**Target**|選擇性 **xs： string** 屬性。<br /><br /> 要在 SharePoint 伺服器上部署相依專案輸出的路徑（相對於部署根資料夾）。 部署根資料夾取決於 **type** 屬性所指定的部署類型。<br /><br /> 如需詳細資訊，請參閱 [開發 sharepoint 方案](../sharepoint/developing-sharepoint-solutions.md)中 sharepoint 專案專案的 **部署路徑** 和 **部署根** 屬性的說明。|
+|**型別**|必要的 **xs： string** 屬性。<br /><br /> 要用於相依專案之輸出的部署類型。 如需可能值的詳細資訊，請參閱 [開發 sharepoint 方案](../sharepoint/developing-sharepoint-solutions.md)中 SharePoint 專案專案的 [**部署類型**] 屬性的描述。|
 
 ### <a name="child-elements"></a>子元素
  無。

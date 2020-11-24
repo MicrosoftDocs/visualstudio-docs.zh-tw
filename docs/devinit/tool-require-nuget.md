@@ -1,7 +1,7 @@
 ---
 title: require-nuget
 description: devinit 工具需要-nuget。
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,16 +11,16 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e4f08e8c3f5967eb2e9db53633a12b304ac23bfb
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: dd5c85e6bff00433903a1e9e472f567401ada70c
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671757"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440493"
 ---
 # <a name="require-nuget"></a>require-nuget
 
-`require-nuget`下載 NUGET CLI 並新增至 PATH 變數的工具。 NuGet CLI 提供 NuGet 功能的完整範圍，以安裝、建立、發行和管理套件，而不需要對專案檔進行任何變更。 [在此](/nuget/reference/nuget-exe-cli-reference)閱讀更多有關 NuGet CLI 的資訊。
+此 `require-nuget` 工具會下載 NUGET CLI 並將它新增至 `PATH` 。 NuGet CLI 提供 NuGet 功能的完整範圍，以安裝、建立、發行和管理套件，而不需要對專案檔進行任何變更。 [在此](/nuget/reference/nuget-exe-cli-reference)閱讀更多有關 NuGet CLI 的資訊。
 
 ## <a name="usage"></a>使用方式
 
@@ -45,7 +45,7 @@ ms.locfileid: "94671757"
 此工具的預設行為 `require-nuget` 是安裝最新的 NUGET CLI。
 
 ## <a name="example-usage"></a>使用方式範例
-以下是如何使用執行的範例 `require-nuget` `.devinit.json` 。 
+以下是如何使用執行的範例 `require-nuget` `.devinit.json` 。
 
 #### <a name="devinitjson-that-will-install-a-specified-version-of-nuget"></a>.devinit.js將會安裝指定版本的 NuGet：
 ```json

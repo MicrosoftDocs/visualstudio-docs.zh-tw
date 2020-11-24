@@ -1,5 +1,7 @@
 ---
 title: 從命令列設定負載測試回合設定
+description: 負載測試可以包含「回合設定」，這是指會影響負載測試回合的屬性。 瞭解如何從命令列載入執行設定。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,16 +11,16 @@ ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 79f1cc833278a62e2871cdc725f5993b12bcdb60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 290f56ba0f0ca9c6a8f6a6a1ee4e30b86bcfacd7
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287554"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440957"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>如何：從命令列中選取要使用的負載測試回合設定
 
-負載測試可以包含「回合設定」**，這是指會影響負載測試回合的屬性。 這些設定會在 [屬性]**** 視窗中，依照分類進行組織。 負載測試執行時，它會使用目前設為使用中的回合設定。
+負載測試可以包含「回合設定」，這是指會影響負載測試回合的屬性。 這些設定會在 [屬性] 視窗中，依照分類進行組織。 負載測試執行時，它會使用目前設為使用中的回合設定。
 
 如果您的負載測試只包含一個回合設定，該設定一律為使用中的節點。 如果您的負載測試包含多個回合設定節點，則可以從命令列選取要在執行負載測試時使用的節點。 請參閱[如何：將其他回合設定新增至負載測試](../test/how-to-add-additional-run-settings-to-a-load-test.md)。
 

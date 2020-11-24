@@ -1,7 +1,7 @@
 ---
 title: choco-install
 description: devinit tool choco-安裝以安裝 Chocolatey 套件。
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 82c1bfbaed4a8ae5540447991f1a097760ade0bd
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: d26b2aa89ad295b63f0115acae11148c505720a5
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671937"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440507"
 ---
 # <a name="choco-install"></a>choco-install
 
@@ -26,11 +26,11 @@ ms.locfileid: "94671937"
 
 如果 `input` 和 `additionalOptions` 屬性都省略或空白，則工具不會執行任何動作。
 
-| 名稱                                             | 類型   | 必要 | 值                                                                                                          |
-|--------------------------------------------------|--------|----------|----------------------------------------------------------------------------------------------------------------|
-| **評論**                                     | 字串 | No       | 選擇性批註屬性。 未使用。                                                                          |
-| [**輸入**](#input)                              | 字串 | No       | 要取得安裝的封裝。 如需詳細資料，請參閱下列 [輸入](#input) 。                                                 |
-| [**additionalOptions**](#additional-options)     | 字串 | No       | 傳遞至工具的其他選項。 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。       |
+| 名稱                                             | 類型   | 必要  | 值                                                                                                          |
+|--------------------------------------------------|--------|-----------|----------------------------------------------------------------------------------------------------------------|
+| **評論**                                     | 字串 | No        | 選擇性批註屬性。 未使用。                                                                          |
+| [**輸入**](#input)                              | 字串 | 是       | 要取得安裝的封裝。 如需詳細資料，請參閱下列 [輸入](#input) 。                                                 |
+| [**additionalOptions**](#additional-options)     | 字串 | No        | 傳遞至工具的其他選項。 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。       |
 
 ### <a name="input"></a>輸入
 
@@ -44,14 +44,18 @@ ms.locfileid: "94671937"
 
 此 `choco-install` 工具會設定一些 `choco` 命令列引數，以確保 `choco` 可執行無周邊。 以下列出這些引數，您可以在 [chocolatey 檔](https://chocolatey.org/docs/)中找到這些引數的相關檔。
 
-| 名稱                  | 說明                                                                                        |
+| Name                  | 描述                                                                                        |
 |-----------------------|----------------------------------------------------------------------------------------------------|
 | **--是**             | 確認所有提示-選擇肯定答案而非提示。 意味 著 `--accept-license.` |
 | **--沒有進度**     | 不要顯示進度-不會顯示進度百分比。                                         |
 | **--skip-powershell** | 略過 PowerShell-chocolateyInstall.ps1 將不會執行。                                              |
 
+### <a name="default-behavior"></a>預設行為
+
+此工具的預設行為 `choco-install` 是因為需要屬性而發生錯誤 `input` 。
+
 ## <a name="example-usage"></a>使用方式範例
-以下是如何使用執行的範例 `choco-install` `.devinit.json` 。 
+以下是如何使用執行的範例 `choco-install` `.devinit.json` 。
 
 #### <a name="devinitjson-that-will-install-packages-listed-in-packagesconfig"></a>.devinit.js，將會安裝 packages.config 中所列的套件：
 ```json

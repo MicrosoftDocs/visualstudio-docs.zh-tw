@@ -1,5 +1,6 @@
 ---
 title: 設定負載測試的測試代理程式/測試控制器
+description: 瞭解 Visual Studio 如何使用實體或虛擬機器建立模擬負載，以產生比單一電腦可單獨產生更多的負載。
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -8,12 +9,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4e9aea22a63f2eee8f83ee597ed11c90df7f6b1a
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: e70c1f3783945fbea00816d961f8ae6518ff726b
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099397"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442608"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>用於執行負載測試的測試代理程式和測試控制器概觀
 

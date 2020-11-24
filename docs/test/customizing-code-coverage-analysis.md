@@ -1,5 +1,7 @@
 ---
 title: 自訂程式碼涵蓋範圍分析
+description: 瞭解如何使用 ExcludeFromCodeCoverageAttribute 屬性，從涵蓋範圍結果中排除測試程式碼。 您可以將元件包含在解決方案之外。
+ms.custom: SEO-VS-2020
 ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 9171afdc6fe5ca65a8ba2bcae81fe255981cdae6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99eb322e1eebe2d8845b355cd76a9e34a7516348
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86475987"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441824"
 ---
 # <a name="customize-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
 
@@ -20,21 +22,21 @@ ms.locfileid: "86475987"
 
 若要從程式碼涵蓋範圍結果中排除測試程式碼，並且只包括應用程式程式碼，請將 <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute> 屬性新增至測試類別。
 
-若要包括不屬於您方案的組件，請取得這些組件的 .pdb** 檔案，並將這些檔案複製到組件 .dll** 檔案的相同資料夾。
+若要包括不屬於您方案的組件，請取得這些組件的 .pdb 檔案，並將這些檔案複製到組件 .dll 檔案的相同資料夾。
 
 ## <a name="run-settings-file"></a>回合設定檔
 
-回合配置 [檔](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md) 案是單元測試工具所使用的設定檔。 *.Runsettings*檔案中指定了 Advanced 程式碼涵蓋範圍設定。
+回合配置 [檔](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md) 案是單元測試工具所使用的設定檔。 *.Runsettings* 檔案中指定了 Advanced 程式碼涵蓋範圍設定。
 
 若要自訂程式碼涵蓋範圍，請遵循下列步驟：
 
-1. 將回合設定檔新增至方案。 在 [**方案總管**] 中，在方案的快捷方式功能表上，選擇 [**加入**  >  **新專案**]，然後選取 [ **XML**檔案]。 儲存檔案，其名稱的格式必須是 CodeCoverage.runsettings**。
+1. 將回合設定檔新增至方案。 在 [**方案總管**] 中，在方案的快捷方式功能表上，選擇 [**加入**  >  **新專案**]，然後選取 [ **XML** 檔案]。 儲存檔案，其名稱的格式必須是 CodeCoverage.runsettings。
 
 2. 新增本文結尾處範例檔中的內容，然後遵循下列各節中的描述並根據您自己的需求進行自訂。
 
 ::: moniker range="vs-2017"
 
-3. 若要選取回合設定檔，請在 [測試]**** 功能表上，選擇 [測試設定]**** > [選取測試設定檔]****。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file-from-the-command-line)。
+3. 若要選取回合設定檔，請在 [測試] 功能表上，選擇 [測試設定] > [選取測試設定檔]。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file-from-the-command-line)。
 
 ::: moniker-end
 
@@ -44,14 +46,14 @@ ms.locfileid: "86475987"
 
 ::: moniker-end
 
-   當您選取 [分析程式碼涵蓋範圍]**** 時，從回合設定檔讀取組態資訊。
+   當您選取 [分析程式碼涵蓋範圍] 時，從回合設定檔讀取組態資訊。
 
    > [!TIP]
    > 當您執行測試或更新程式碼時，並不會自動隱藏任何之前的程式碼涵蓋範圍結果及程式碼著色。
 
 ::: moniker range="vs-2017"
 
-若要開啟和關閉自訂設定，請在 [測試]**[測試設定]** > **** 功能表中取消選取或選取檔案。
+若要開啟和關閉自訂設定，請在 [測試]**[測試設定]** >  功能表中取消選取或選取檔案。
 
 ![Visual Studio 2017 中具有自訂設定檔的測試設定功能表](../test/media/codecoverage-settingsfile.png)
 
@@ -65,7 +67,7 @@ ms.locfileid: "86475987"
 
 ## <a name="symbol-search-paths"></a>符號搜尋路徑
 
-程式碼涵蓋範圍需要組件的符號檔 (.pdb** 檔案)。 在您的方案所建置的組件中，符號檔案通常會和二進位檔一起出現，而且程式碼涵蓋範圍會自動運作。 在某些情況下，您可以在程式碼涵蓋範圍分析中加入參考的組件。 在這種情況下， *.pdb* 檔案可能不會與二進位檔相鄰，但您可以在 *.runsettings* 檔案中指定符號搜尋路徑。
+程式碼涵蓋範圍需要組件的符號檔 (.pdb 檔案)。 在您的方案所建置的組件中，符號檔案通常會和二進位檔一起出現，而且程式碼涵蓋範圍會自動運作。 在某些情況下，您可以在程式碼涵蓋範圍分析中加入參考的組件。 在這種情況下， *.pdb* 檔案可能不會與二進位檔相鄰，但您可以在 *.runsettings* 檔案中指定符號搜尋路徑。
 
 ```xml
 <SymbolSearchPaths>
@@ -75,7 +77,7 @@ ms.locfileid: "86475987"
 ```
 
 > [!NOTE]
-> 符號解析可能需要一些時間，特別是在使用具有許多組件的遠端檔案位置時。 因此，請考慮將 .pdb** 檔案複製到二進位 (.dll** 和 .exe**) 檔案在本機中的位置。
+> 符號解析可能需要一些時間，特別是在使用具有許多組件的遠端檔案位置時。 因此，請考慮將 .pdb 檔案複製到二進位 (.dll 和 .exe) 檔案在本機中的位置。
 
 ## <a name="include-or-exclude-assemblies-and-members"></a>包含或排除元件和成員
 
@@ -108,7 +110,7 @@ ms.locfileid: "86475987"
 | XML 元素 | 符合專案 |
 | - | - |
 | ModulePath | 符合元件名稱或檔案路徑所指定的元件。 |
-| 公司名稱 | 符合 **公司** 屬性的元件。 |
+| CompanyName | 符合 **公司** 屬性的元件。 |
 | PublicKeyToken | 依公開金鑰標記比對已簽署的元件。 |
 | 來源 | 依定義來源檔案的路徑名稱比對專案。 |
 | 屬性 | 符合具有指定屬性的元素。 指定屬性的完整名稱，例如 `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`。<br/><br/>如果您排除 <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 屬性，則會從程式碼涵蓋範圍分析中排除使用語言功能 (例如 `async`、`await`、`yield return`) 和自動實作屬性的程式碼。 若要排除真正產生的程式碼，只要排除 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 屬性即可。 |
@@ -118,11 +120,11 @@ ms.locfileid: "86475987"
 
 包含和排除節點使用與萬用字元不同的規則運算式。 所有相符項目皆不區分大小寫。 部份範例如下：
 
-- **.\*** 符合任何字元的字串
+- **.\** _ 符合任何字元的字串
 
-- **\\.** 會比對點 "."
+- _ *\\.** 符合點 "."
 
-- ** \\ ( \\) **符合括弧 " ( ) "
+- **\\ ( \\)** 符合括弧 " ( ) "
 
 - **\\\\** 符合檔案路徑分隔符號 " \\ "
 

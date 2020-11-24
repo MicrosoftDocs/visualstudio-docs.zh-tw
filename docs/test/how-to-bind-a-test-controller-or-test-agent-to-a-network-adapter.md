@@ -1,5 +1,6 @@
 ---
 title: 將測試控制器/測試代理程式系結至網路介面卡
+description: 瞭解如何使用 IP 位址將測試控制器或測試代理程式系結至網路介面卡，以防它已安裝給多個網路介面卡。
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc590973a0a98cd9c5108c9cfe44ea957073b313
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 3f4c215937f6637eedfa869a5e3abd701966c693
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810294"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442347"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>如何：將測試控制器或測試代理程式繫結至網路介面卡
 
@@ -36,7 +37,7 @@ ms.locfileid: "90810294"
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>若要取得網路介面卡的 IP 位址
 
-1. 在 Microsoft Windows 中選擇 [開始]****，在 [開始搜尋]**** 方塊中鍵入 **cmd**，然後選擇 **Enter**。
+1. 在 Microsoft Windows 中選擇 [開始]，在 [開始搜尋] 方塊中鍵入 **cmd**，然後選擇 **Enter**。
 
 2. 輸入 **ipconfig /all**。
 
@@ -44,11 +45,11 @@ ms.locfileid: "90810294"
 
 ### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>將網路介面卡繫結至測試控制器
 
-1. 在 Microsoft Windows 中選擇 [開始]****，在 [開始搜尋]**** 方塊中鍵入 **services.msc**，然後選擇 **Enter**。
+1. 在 Microsoft Windows 中選擇 [開始]，在 [開始搜尋] 方塊中鍵入 **services.msc**，然後選擇 **Enter**。
 
-     [服務]**** 對話方塊隨即顯示。
+     [服務] 對話方塊隨即顯示。
 
-2. 在結果窗格中的 [名稱]**** 資料行底下，以滑鼠右鍵按一下 [Visual Studio Test Controller]**** 服務，然後選擇 [停止]****。
+2. 在結果窗格中的 [名稱] 資料行底下，以滑鼠右鍵按一下 [Visual Studio Test Controller] 服務，然後選擇 [停止]。
 
      -或-
 
@@ -90,11 +91,11 @@ ms.locfileid: "90810294"
 
 ### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>將網路介面卡繫結至測試代理程式
 
-1. 在 Microsoft Windows 中選擇 [開始]****，在 [開始搜尋]**** 方塊中鍵入 **services.msc**，然後選擇 **Enter**。
+1. 在 Microsoft Windows 中選擇 [開始]，在 [開始搜尋] 方塊中鍵入 **services.msc**，然後選擇 **Enter**。
 
-    [服務]**** 對話方塊隨即顯示。
+    [服務] 對話方塊隨即顯示。
 
-2. 在結果窗格中的 [名稱]**** 資料行下，以滑鼠右鍵按一下 [Visual Studio Test Agent]**** 服務，然後選擇 [停止]****。
+2. 在結果窗格中的 [名稱] 資料行下，以滑鼠右鍵按一下 [Visual Studio Test Agent] 服務，然後選擇 [停止]。
 
      -或-
 

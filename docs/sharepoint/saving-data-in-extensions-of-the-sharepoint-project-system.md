@@ -1,6 +1,8 @@
 ---
 title: 將資料儲存在 SharePoint 專案系統的延伸模組中 |Microsoft Docs
 titleSuffix: ''
+description: 瞭解如何在關閉包含擴充功能的 SharePoint 專案之後，儲存保留的字串資料。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30142b9aaec3df7ce0d43845e369eb538533de62
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1e3c05b9ad570febcfc28fec367a8d180dd2b222
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583862"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440645"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>將資料儲存在 SharePoint 專案系統的延伸模組中
   當您延伸 SharePoint 專案系統時，可以儲存在 SharePoint 專案關閉之後仍會保存的字串資料。 資料通常與特定專案專案或專案本身相關聯。
@@ -26,7 +28,7 @@ ms.locfileid: "91583862"
  如果您有不需要保存的資料，您可以將資料新增至 SharePoint 工具物件模型中的任何物件，以執行 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> 介面。 如需詳細資訊，請參閱 [將自訂資料與 SharePoint 工具延伸](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)模組產生關聯。
 
 ## <a name="save-data-that-is-associated-with-a-project-item"></a>儲存與專案專案相關聯的資料
- 當您有與特定 SharePoint 專案專案相關聯的資料時（例如加入至專案專案的屬性值），您可以將資料儲存至專案專案的 *.spdata 檔案。* 若要這樣做，請使用 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> 物件的屬性 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> 。 您加入至這個屬性的資料會儲存在專案專案的 *.spdata*檔案中的**ExtensionData**元素。 如需詳細資訊，請參閱 [ExtensionData 元素](../sharepoint/extensiondata-element.md)。
+ 當您有與特定 SharePoint 專案專案相關聯的資料時（例如加入至專案專案的屬性值），您可以將資料儲存至專案專案的 *.spdata 檔案。* 若要這樣做，請使用 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> 物件的屬性 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> 。 您加入至這個屬性的資料會儲存在專案專案的 *.spdata* 檔案中的 **ExtensionData** 元素。 如需詳細資訊，請參閱 [ExtensionData 元素](../sharepoint/extensiondata-element.md)。
 
  下列程式碼範例示範如何使用 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> 屬性來儲存自訂 SharePoint 專案專案類型中所定義之字串屬性的值。 若要在較大範例的內容中查看這個範例，請參閱 [如何：將屬性加入至自訂 SharePoint 專案專案類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。
 

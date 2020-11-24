@@ -1,7 +1,7 @@
 ---
 title: set-env
 description: devinit 工具需要-set-env。
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ce3876884061246d8ac1dbc1b211766903ea840a
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 820cd87f26e4babc7a83d975c3fb480187af564f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671736"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442281"
 ---
 # <a name="set-env"></a>set-env
 
@@ -38,7 +38,7 @@ ms.locfileid: "94671736"
 
 | 動作       | 輸入            | 描述                                                                                                                                                              | 範例             |
 |--------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| **全部列出** | 空白或省略 | 列出所有目前的環境變數。                                                                                                                              | `"input":""`        |
+| **全部列出** | 空白或省略 | 列出所有目前的環境變數。                                                                                                                           | `"input":""`        |
 | **清單一** | 字串           | 依名稱列出特定環境變數的值。                                                                                                               | `"input":"foo"`     |
 | **add**      | 字串           | 將環境變數的值設定為機碼值組。 新增環境變數（如果還不存在），或設定現有環境變數的值 | `"input":"foo=bar"` |
 | **delete**   | 字串           | 藉由傳入空白值字串來刪除現有的環境變數。                                                                                            | `"input":"foo="`    |
@@ -49,12 +49,16 @@ ms.locfileid: "94671736"
 
 未使用。
 
+### <a name="default-behavior"></a>預設行為
+
+工具的預設行為 `set-env` 是列出所有目前的環境變數。
+
 ## <a name="usage-in-a-codespace"></a>Codespace 中的使用方式
 
 如果您使用的是 codespace，可以透過自訂檔案中的屬性，來設定 codespace 中使用的環境變數 `remoteEnv` [`.devcontainer.json`](/visualstudio/codespaces/reference/configuring) 。
 
 ## <a name="example-usage"></a>使用方式範例
-以下是如何使用執行的範例 `set-env` `.devinit.json` 。 
+以下是如何使用執行的範例 `set-env` `.devinit.json` 。
 
 #### <a name="devinitjson-that-will-set-an-environment-variable-foo-to-value-bar"></a>.devinit.js，將會設定環境變數， `foo` 並將其設定為值 `bar` ：
 ```json

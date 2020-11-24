@@ -1,7 +1,7 @@
 ---
 title: msi-install
 description: 適用于 msiexec 的 devinit 工具。
-ms.date: 10/13/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ab56157d531e762ed36f8c2349e50e76596b05ec
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8dfde12f58161dfcf86eeda2b9714f705685d39a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672170"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440419"
 ---
 # <a name="msi-install"></a>msi-install
 
@@ -44,17 +44,21 @@ ms.locfileid: "94672170"
 
 Msi 安裝工具會設定一些 `msiexec` 命令列引數，以確保 msi 可以執行無周邊。 以下列出這些引數，您可以在檔中找到這些引數的相關檔 `msiexec` [ ](https://docs.microsoft.com/windows-server/administration/windows-commands/msiexec)。
 
-| 名稱          | 說明                                                                                                                                                                                   |
+| Name          | 描述                                                                                                                                                                                   |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| /i            | 執行正常安裝                                                                                                                                                                    | 
-| /quiet        | 指定無需使用者互動的無訊息模式                                                                                                                                        | 
-| /qn           | 指定在安裝過程中沒有 UI                                                                                                                                           | 
-| /passive      | 指定安裝只顯示進度列的自動模式                                                                                                                    | 
-| /l * V          | 開啟記錄，並將所有資訊（包括詳細資訊）記錄到 `devinit.log` 電腦本機暫存資料夾中的檔案。 如果工具失敗，則會顯示記錄檔路徑。      | 
-| /norestart    | 在安裝完成後停止機器重新開機，但如果需要重新開機，則會傳回3010結束代碼                                                                  | 
+| /i            | 執行正常安裝                                                                                                                                                                    |
+| /quiet        | 指定無需使用者互動的無訊息模式                                                                                                                                        |
+| /qn           | 指定在安裝過程中沒有 UI                                                                                                                                           |
+| /passive      | 指定安裝只顯示進度列的自動模式                                                                                                                    |
+| /l * V          | 開啟記錄，並將所有資訊（包括詳細資訊）記錄到 `devinit.log` 電腦本機暫存資料夾中的檔案。 如果工具失敗，則會顯示記錄檔路徑。      |
+| /norestart    | 在安裝完成後停止機器重新開機，但如果需要重新開機，則會傳回3010結束代碼                                                                  |
+
+### <a name="default-behavior"></a>預設行為
+
+此工具的預設行為 `msi-install` 是因為需要屬性而發生錯誤 `input` 。
 
 ## <a name="example-usage"></a>使用方式範例
-以下是如何使用執行的範例 `msi-install` `.devinit.json` 。 
+以下是如何使用執行的範例 `msi-install` `.devinit.json` 。
 
 #### <a name="devinitjson-that-will-install-the-7-zip-msi"></a>將安裝 7-Zip MSI 的 .devinit.js：
 ```json

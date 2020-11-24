@@ -1,5 +1,7 @@
 ---
 title: 建立單元測試方法虛設常式
+description: 瞭解如何使用 [建立單元測試] 命令，此命令可讓您輕鬆地設定測試專案、測試類別和其中的測試方法存根。
+ms.custom: SEO-VS-2020
 ms.date: 04/24/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b2712210d4761edb90414e2a27beba74a3bacbf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8afbc73e8c778829a9a1ce5a59d30df6de2f0daa
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288659"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441855"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>使用建立單元測試命令來建立單元測試方法虛設常式
 
@@ -29,11 +31,11 @@ ms.locfileid: "85288659"
 > [ **建立單元測試** ] 功能表命令僅適用于 c # 程式碼。
 ::: moniker-end
 
-[建立單元測試]**** 功能表命令可延伸，並可用來產生 MSTest、MSTest V2、NUnit 和 xUnit 測試。
+[建立單元測試] 功能表命令可延伸，並可用來產生 MSTest、MSTest V2、NUnit 和 xUnit 測試。
 
 ## <a name="get-started"></a>開始使用
 
-若要開始，請以滑鼠右鍵按一下您想要測試之專案程式碼編輯器中的方法、類型或命名空間，然後選擇 [建立單元測試]****。 [建立單元測試]**** 對話方塊隨即開啟，您可以在此設定想要建立的測試方式。
+若要開始，請以滑鼠右鍵按一下您想要測試之專案程式碼編輯器中的方法、類型或命名空間，然後選擇 [建立單元測試]。 [建立單元測試] 對話方塊隨即開啟，您可以在此設定想要建立的測試方式。
 
 ![使用建立單元測試命令](media/createunittestcommand.png)
 

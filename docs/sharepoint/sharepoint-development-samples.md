@@ -1,5 +1,7 @@
 ---
 title: SharePoint 開發範例 |Microsoft Docs
+description: 取得如何下載及安裝個別範例或 SharePoint 應用程式範例集合的相關資訊。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a52dbb77145d1389995813d89384966fea35cec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bb4a374194c2d8ea94d24923675ec3f5b3d2601
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984163"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440658"
 ---
 # <a name="sharepoint-development-samples"></a>SharePoint 開發範例
   您可以使用 Visual Studio 從 [MSDN 程式碼庫](https://code.msdn.microsoft.com/)下載和安裝 SharePoint 應用程式的範例。
@@ -27,4 +29,4 @@ ms.locfileid: "72984163"
 ## <a name="see-also"></a>另請參閱
 - [建立 SharePoint 方案](../sharepoint/create-sharepoint-solutions.md)
 - [Visual Studio Samples](https://code.msdn.microsoft.com/vstudio)
-- [Office 程式設計中的常見工作](../vsto/common-tasks-in-office-programming.md)
+- [Office 程式設計的一般工作](../vsto/common-tasks-in-office-programming.md)

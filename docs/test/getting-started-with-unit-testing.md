@@ -1,5 +1,7 @@
 ---
 title: 開始使用單元測試
+description: 使用 Visual Studio 來定義和執行單元測試，藉以維護程式碼的健康狀態、確定程式碼涵蓋範圍，以及在客戶遭遇問題之前找出錯誤和失敗。
+ms.custom: SEO-VS-2020
 ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c167e98f9419842876aed713e008b8746064669a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3daff1a7b7c2e62b4ca4a508c5c8dd31261a40dd
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82153041"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441777"
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
 
@@ -26,7 +28,7 @@ ms.locfileid: "82153041"
 
 1. 在 Visual Studio 中開啟您要測試的專案。
 
-   為了示範範例單元測試的目的，本文會測試名為 **helloworld**的簡單 "Hello World" 專案。 此類專案的範例程式碼如下所示：
+   為了示範範例單元測試的目的，本文會測試名為 **helloworld** 的簡單 "Hello World" 專案。 此類專案的範例程式碼如下所示：
 
    ```csharp
    namespace HelloWorldCore
@@ -40,7 +42,7 @@ ms.locfileid: "82153041"
       }
    ```
 
-1. 在 [方案總管]**** 中，選取解決方案節點。 然後，從頂端功能表列選取 [檔案**File**  >  **加入**  >  **新專案**]。
+1. 在 [方案總管] 中，選取解決方案節點。 然後，從頂端功能表列選取 [檔案 **File**  >  **加入**  >  **新專案**]。
 
 1. 在新的專案對話方塊中，尋找並選取您希望使用之測試架構的單元測試專案範本。
 
@@ -48,7 +50,7 @@ ms.locfileid: "82153041"
 
    ![Visual Studio 2019 的單元測試專案範本](media/vs-2019/add-new-test-project.png)
 
-   按一下 [下一步]****，選擇測試專案的名稱，然後按一下 [建立]****。
+   按一下 [下一步]，選擇測試專案的名稱，然後按一下 [建立]。
 
    ::: moniker-end
 
@@ -56,7 +58,7 @@ ms.locfileid: "82153041"
 
    ![Visual Studio 2019 的單元測試專案範本](media/mstest-test-project-template.png)
 
-   選擇測試專案的名稱，然後按一下 [確定]****。
+   選擇測試專案的名稱，然後按一下 [確定]。
 
    ::: moniker-end
 
@@ -64,7 +66,7 @@ ms.locfileid: "82153041"
 
    ![[方案總管] 中的單元測試專案](media/vs-2019/solution-explorer.png)
 
-1. 在單元測試專案中，以滑鼠右鍵按一下 [參考]**** 或 [相依性]****，然後選擇 [新增參考]****，在您想要測試的專案中新增參考。
+1. 在單元測試專案中，以滑鼠右鍵按一下 [參考] 或 [相依性]，然後選擇 [新增參考]，在您想要測試的專案中新增參考。
 
 1. 選取包含您要測試之程式碼的專案，然後按一下 [確定]**OK**。
 
@@ -142,13 +144,13 @@ ms.locfileid: "82153041"
 1. 開啟 [ [測試瀏覽器](../test/run-unit-tests-with-test-explorer.md)]。
 
    ::: moniker range=">=vs-2019"
-   若要開啟 [測試流覽**Test**器]，請 > 從頂端功能表列中選擇 [測試**測試瀏覽器**]。
+   若要開啟 [測試流覽 **Test** 器]，請 > 從頂端功能表列中選擇 [測試 **測試瀏覽器**]。
    ::: moniker-end
    ::: moniker range="vs-2017"
-   若要開啟 test explorer， **Test**請 > **Windows** > 從頂端功能表列中選擇 [測試 Windows **test explorer** ]。
+   若要開啟 test explorer， **Test** 請 > **Windows** > 從頂端功能表列中選擇 [測試 Windows **test explorer** ]。
    ::: moniker-end
 
-1. 按一下 [全部執行]**** 執行您的單元測試。
+1. 按一下 [全部執行] 執行您的單元測試。
 
    ![在測試總管中執行單元測試](media/vs-2019/test-explorer-run-all.png)
 
@@ -166,7 +168,7 @@ ms.locfileid: "82153041"
 > [!NOTE]
 > 只有 Enterprise Edition 才能使用 Live Unit Testing。
 
-1. 從 [測試]**** 功能表中選擇 [測試]**** > [Live Unit Testing]**** > [啟動]**** 來開啟 Live Unit Testing。
+1. 從 [測試] 功能表中選擇 [測試] > [Live Unit Testing] > [啟動] 來開啟 Live Unit Testing。
 
    ::: moniker range="vs-2017"
 
@@ -205,27 +207,27 @@ ms.locfileid: "82153041"
 
 ## <a name="use-a-third-party-test-framework"></a>使用協力廠商測試架構
 
-您可以使用協力廠商測試架構 (例如 Boost、Google 與 NUnit)，在 Visual Studio 中執行單元測試。 使用 **NuGet 套件管理員**安裝您選擇的架構 NuGet 套件。 或者，針對 NUnit 和 xUnit 測試架構，Visual Studio 包含預先設定的測試專案範本，這些範本包含必要的 NuGet 套件。
+您可以使用協力廠商測試架構 (例如 Boost、Google 與 NUnit)，在 Visual Studio 中執行單元測試。 使用 **NuGet 套件管理員** 安裝您選擇的架構 NuGet 套件。 或者，針對 NUnit 和 xUnit 測試架構，Visual Studio 包含預先設定的測試專案範本，這些範本包含必要的 NuGet 套件。
 
 建立使用 [NUnit](https://nunit.org/) 的單元測試：
 
 1. 開啟包含您要測試之程式碼的解決方案。
 
-2. 以滑鼠右鍵按一下 [方案總管]**** 中的解決方案，然後選擇 [新增]**** > [新增專案]****。
+2. 以滑鼠右鍵按一下 [方案總管] 中的解決方案，然後選擇 [新增] > [新增專案]。
 
-3. 選取 [NUnit 測試專案]**** 專案範本。
+3. 選取 [NUnit 測試專案] 專案範本。
 
    ::: moniker range=">=vs-2019"
 
    ![Visual Studio 2019 的 NUnit 測試專案範本](media/vs-2019/nunit-test-project-template.png)
 
-   按一下 [下一步]****、命名專案，然後按一下 [建立]****。
+   按一下 [下一步]、命名專案，然後按一下 [建立]。
 
    ::: moniker-end
 
    ::: moniker range="vs-2017"
 
-   命名專案，然後按一下 [確定]**** 建立專案。
+   命名專案，然後按一下 [確定] 建立專案。
 
    ::: moniker-end
 
@@ -235,13 +237,13 @@ ms.locfileid: "82153041"
 
 4. 從測試專案將參考新增至包含您想要測試之程式碼的專案。
 
-   以滑鼠右鍵按一下 [方案總管]**** 中的專案，然後選取 [新增]**** > [參考]****。 (您也可以從 [參考]**** 或 [相依性]**** 節點的滑鼠右鍵功能表中加入參考。)
+   以滑鼠右鍵按一下 [方案總管] 中的專案，然後選取 [新增] > [參考]。 (您也可以從 [參考] 或 [相依性] 節點的滑鼠右鍵功能表中加入參考。)
 
 5. 將程式碼新增至您的測試方法。
 
    ![將程式碼新增至您的單元測試程式碼檔案](media/vs-2019/unit-test-method.png)
 
-6. 從 [測試總管]**** 執行測試，或在測試程式碼上按一下滑鼠右鍵，然後選擇 [執行測試]****。
+6. 從 [測試總管] 執行測試，或在測試程式碼上按一下滑鼠右鍵，然後選擇 [執行測試]。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,5 +1,7 @@
 ---
 title: 負載測試的考慮時間
+description: 瞭解如何編輯考慮時間，以模擬會讓人們在與網站互動之間等待的人類行為。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,22 +12,22 @@ ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 887d2af9e60be914bd74141041ecc375cfea4f00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1c0c1ef98a77b83c49ca69fd70e38238ed4ded0
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590029"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441296"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>在負載測試情節中編輯考慮時間以模擬網站人類互動延遲
 
-考慮時間可用來模擬造成人們在與網站互動時必須等待的人類行為。 考慮時間會發生在 Web 效能測試的各個要求之間，以及負載情節中各個測試反覆項目之間。 在負載測試中使用考慮時間，有助於建立更精確的負載模擬。 您可以決定負載測試中要使用或忽略考慮時間。 您會在 [負載測試編輯器]**** 中變更負載測試中是否要使用考慮時間。
+考慮時間可用來模擬造成人們在與網站互動時必須等待的人類行為。 考慮時間會發生在 Web 效能測試的各個要求之間，以及負載情節中各個測試反覆項目之間。 在負載測試中使用考慮時間，有助於建立更精確的負載模擬。 您可以決定負載測試中要使用或忽略考慮時間。 您會在 [負載測試編輯器] 中變更負載測試中是否要使用考慮時間。
 
-「考慮特性」** 是套用到負載測試中之情節的設定。 此設定會決定在負載測試期間，是否要使用儲存在個別 Web 效能測試中的考慮時間。 如果想在某些 Web 效能測試中使用考慮時間，其他則不使用，則必須在不同的情節中使用不同的考慮時間設定。 如需情節的詳細資訊，請參閱[編輯負載測試情節](../test/edit-load-test-scenarios.md)。
+「考慮特性」是套用到負載測試中之情節的設定。 此設定會決定在負載測試期間，是否要使用儲存在個別 Web 效能測試中的考慮時間。 如果想在某些 Web 效能測試中使用考慮時間，其他則不使用，則必須在不同的情節中使用不同的考慮時間設定。 如需情節的詳細資訊，請參閱[編輯負載測試情節](../test/edit-load-test-scenarios.md)。
 
-一開始，您會在使用 [新增負載測試精靈]**** 建立負載測試時，設定負載測試中是否要使用考慮時間。 如需詳細資訊，請參閱[編輯負載測試情節](../test/edit-load-test-scenarios.md)。
+一開始，您會在使用 [新增負載測試精靈] 建立負載測試時，設定負載測試中是否要使用考慮時間。 如需詳細資訊，請參閱[編輯負載測試情節](../test/edit-load-test-scenarios.md)。
 
-[考慮特性]**** 選項的描述如下列清單：
+[考慮特性] 選項的描述如下列清單：
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -50,11 +52,11 @@ ms.locfileid: "75590029"
 
 1. 從 Web 效能和負載測試專案中，開啟負載測試。
 
-2. 在 [負載測試編輯器]**** 中，選擇您要變更 [考慮特性]**** 的情節節點。 [考慮特性]**** 隨即顯示在 [屬性]**** 視窗中。 按 **F4** 顯示 [屬性]**** 視窗。
+2. 在 [負載測試編輯器] 中，選擇您要變更 [考慮特性] 的情節節點。 [考慮特性] 隨即顯示在 [屬性] 視窗中。 按 **F4** 顯示 [屬性] 視窗。
 
-3. 變更 [屬性]**** 視窗中的 [考慮特性]**** 屬性。
+3. 變更 [屬性] 視窗中的 [考慮特性] 屬性。
 
-4. 完成變更屬性之後，請選擇 [檔案]**** 功能表上的 [儲存]****。 然後，您就可以使用新的考慮特性執行負載測試。
+4. 完成變更屬性之後，請選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的考慮特性執行負載測試。
 
 ## <a name="see-also"></a>另請參閱
 

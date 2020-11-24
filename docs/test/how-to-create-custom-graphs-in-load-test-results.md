@@ -1,5 +1,7 @@
 ---
 title: 如何：在負載測試結果中建立自訂圖形
+description: 瞭解如何設計圖形，在負載測試執行時或執行完成之後，顯示有關負載測試結果的特定資訊。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1cc9c5bab7601a62bacfbbb155227bd5b632f93a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c003fc5d6573dfdd88ec85ea37fbb10f80c94484
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287801"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441035"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>如何：在負載測試結果中建立自訂圖表
 
@@ -32,11 +34,11 @@ ms.locfileid: "85287801"
 
      在 [ **負載測試分析器**] 上，以滑鼠右鍵按一下 [ **計數器** ] 面板或圖形中的，然後選取 [ **加入圖形]**。
 
-     [輸入圖形名稱]**** 對話方塊隨即顯示。
+     [輸入圖形名稱] 對話方塊隨即顯示。
 
-2. 在 [圖形名稱]**** 底下，鍵入圖形的名稱，然後選擇 [確定]****。
+2. 在 [圖形名稱] 底下，鍵入圖形的名稱，然後選擇 [確定]。
 
-     新的圖表就會出現在 [負載測試分析器]**** 中。 圖形會出現在目前選取的圖形面板中，並取代該面板中原先顯示的圖形。
+     新的圖表就會出現在 [負載測試分析器] 中。 圖形會出現在目前選取的圖形面板中，並取代該面板中原先顯示的圖形。
 
 3. 加入計數器即可自訂新圖形。 如需詳細資訊，請參閱 [如何：在圖形上新增和刪除計數器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)。
 

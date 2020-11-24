@@ -1,5 +1,7 @@
 ---
 title: ProjectItemFile 元素 |Microsoft Docs
+description: 取得 ProjectItemFile 元素的參考資訊，代表 SharePoint 專案專案 XML 架構參考中的專案專案檔。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1c9814498d74a5d1a6533576f1071b4bf7deb57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 099f20926487b09240219f04d9bce4a79709f6e6
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85539850"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440801"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile 項目
   表示當專案專案部署至 SharePoint 時，要包含在專案專案中的 SharePoint 檔案，例如功能元素檔。
@@ -41,8 +43,8 @@ ms.locfileid: "85539850"
 |屬性|描述|
 |---------------|-----------------|
 |**Source**|必要的 **xs： string** 屬性。<br /><br /> 要與專案專案一起部署的檔案名。|
-|**Target**|選擇性 **xs： string** 屬性。<br /><br /> 將在 SharePoint 上部署檔案的路徑（相對於部署根資料夾）。 部署根資料夾取決於 **type** 屬性所指定的部署類型。 如果未指定 **目標** 屬性，則會將檔案部署到 [ **來源** ] 屬性中指定之名稱的資料夾。<br /><br /> 如需詳細資訊，請參閱[開發 sharepoint 方案](../sharepoint/developing-sharepoint-solutions.md)中 sharepoint 專案專案的**部署路徑**和**部署根**屬性的說明。|
-|**類型**|必要的 **xs： string** 屬性。<br /><br /> 檔案的部署類型。 如需可能值的詳細資訊，請參閱[開發 sharepoint 方案](../sharepoint/developing-sharepoint-solutions.md)中 SharePoint 專案專案的 [**部署類型**] 屬性的描述。|
+|**Target**|選擇性 **xs： string** 屬性。<br /><br /> 將在 SharePoint 上部署檔案的路徑（相對於部署根資料夾）。 部署根資料夾取決於 **type** 屬性所指定的部署類型。 如果未指定 **目標** 屬性，則會將檔案部署到 [ **來源** ] 屬性中指定之名稱的資料夾。<br /><br /> 如需詳細資訊，請參閱 [開發 sharepoint 方案](../sharepoint/developing-sharepoint-solutions.md)中 sharepoint 專案專案的 **部署路徑** 和 **部署根** 屬性的說明。|
+|**型別**|必要的 **xs： string** 屬性。<br /><br /> 檔案的部署類型。 如需可能值的詳細資訊，請參閱 [開發 sharepoint 方案](../sharepoint/developing-sharepoint-solutions.md)中 SharePoint 專案專案的 [**部署類型**] 屬性的描述。|
 
 ### <a name="child-elements"></a>子元素
  無。
@@ -54,7 +56,7 @@ ms.locfileid: "85539850"
 |[檔案](../sharepoint/files-element.md)|指定當 SharePoint 專案專案部署至 SharePoint 時要包含的檔案。|
 
 ## <a name="remarks"></a>備註
- 通常會在**ProjectItemFile**元素中參考的 SharePoint 檔案包括功能專案檔 (*Elements.xml*) 、清單定義 (*Schema.xml*) 的架構檔案，以及 Web 組件 () 的 Web 元件定義*檔。*
+ 通常會在 **ProjectItemFile** 元素中參考的 SharePoint 檔案包括功能專案檔 (*Elements.xml*) 、清單定義 (*Schema.xml*) 的架構檔案，以及 Web 組件 () 的 Web 元件定義 *檔。*
 
 ## <a name="element-information"></a>項目資訊
 

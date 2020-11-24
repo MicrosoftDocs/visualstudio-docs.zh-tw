@@ -1,5 +1,6 @@
 ---
 title: 建立 web 效能測試的自訂驗證規則
+description: 瞭解如何建立您自己的驗證規則，衍生自驗證規則類別（ValidationRule）。
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6222aaf6b6aeace595e12c797ead1dfb86b4931
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 627122368c90163cf9aef4c8035bfbb67c4a0dba
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810610"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441816"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂驗證規則程式碼
 
@@ -49,11 +50,11 @@ ms.locfileid: "90810610"
 
 6. (選擇性) 在測試專案中，加入包含自訂驗證規則之類別庫專案的參考。
 
-7. 在測試專案中，開啟 **Web 效能測試編輯器**中的 web 效能測試。
+7. 在測試專案中，開啟 **Web 效能測試編輯器** 中的 web 效能測試。
 
 8. 若要將自訂驗證規則加入至 web 效能測試要求，請以滑鼠右鍵按一下要求，然後選取 [ **加入驗證規則**]。
 
-     [新增驗證規則]**** 對話方塊隨即出現。 您會在 [選取規則]**** 清單中看到您的自訂驗證規則，以及預先定義的驗證規則。 選取您的自訂驗證規則，然後選擇 [確定]****。
+     [新增驗證規則] 對話方塊隨即出現。 您會在 [選取規則] 清單中看到您的自訂驗證規則，以及預先定義的驗證規則。 選取您的自訂驗證規則，然後選擇 [確定]。
 
 9. 執行您的 Web 效能測試。
 

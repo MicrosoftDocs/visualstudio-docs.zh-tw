@@ -1,5 +1,7 @@
 ---
 title: 新增用於負載測試的臨界值規則
+description: 瞭解負載測試中的臨界值規則，這些規則會比較效能計數器值與常數值或另一個效能計數器值。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c6855088c05e03311b5724ba3a0ccf438a43b6a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efd601862de60c38991de5eb901de5b55605540a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288477"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440216"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>如何：使用負載測試編輯器新增臨界值規則
 
@@ -28,18 +30,18 @@ ms.locfileid: "85288477"
 
 1. 開啟負載測試。
 
-2. 在 [負載測試編輯器] 中，展開 [計數器集合]**** 節點。
+2. 在 [負載測試編輯器] 中，展開 [計數器集合] 節點。
 
-3. 在其中一個計數器集合中，展開其中一個 [計數器分類]****。 例如，您可以選取 [LoadTest:Scenario]****。 展開這個節點。
+3. 在其中一個計數器集合中，展開其中一個 [計數器分類]。 例如，您可以選取 [LoadTest:Scenario]。 展開這個節點。
 
-4. 以滑鼠右鍵按一下其中一個計數器，例如 [LoadTest:Scenario]**** 下的 [User Load]****。 選取 [新增臨界值規則]****。
+4. 以滑鼠右鍵按一下其中一個計數器，例如 [LoadTest:Scenario] 下的 [User Load]。 選取 [新增臨界值規則]。
 
-     [新增臨界值規則]**** 對話方塊隨即出現。
+     [新增臨界值規則] 對話方塊隨即出現。
 
-5. 您可以選擇兩種規則類型：**比較常數**和**比較計數器**。 請選取適當的類型並設定其值。
+5. 您可以選擇兩種規則類型：**比較常數** 和 **比較計數器**。 請選取適當的類型並設定其值。
 
     > [!NOTE]
-    > 將 [超出時提醒]**** 屬性設定為 [True]****，表示超出臨界值會是一個問題，或設為 [False]****，表示未達臨界值會是一個問題。
+    > 將 [超出時提醒] 屬性設定為 [True]，表示超出臨界值會是一個問題，或設為 [False]，表示未達臨界值會是一個問題。
 
 ## <a name="see-also"></a>另請參閱
 

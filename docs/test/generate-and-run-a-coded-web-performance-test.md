@@ -1,5 +1,7 @@
 ---
 title: 自動程式化 Web 效能測試
+description: 瞭解如何將 web 效能測試轉換成以程式碼為基礎的腳本，讓您可以編輯和自訂。
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c55c2a2d9b77662170cde24c2b98368240a4af
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589574"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442634"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>產生和執行 Web 效能測試程式碼
 
@@ -85,10 +87,10 @@ Web 效能測試是透過瀏覽您的 Web 應用程式來錄製。 測試包含�
 ## <a name="qa"></a>問答集
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>問：我可以同時執行多個測試嗎？
-**答：** 是，請在 **方案總管**中使用滑鼠右鍵 (內容) ] 功能表。
+**答：** 是，請在 **方案總管** 中使用滑鼠右鍵 (內容) ] 功能表。
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>問：我應該在產生程式碼測試之前或之後加入資料來源？
-**答：** 在您產生自動程式化測試之前，新增[資料來源](../test/add-a-data-source-to-a-web-performance-test.md)比較容易，因為會自動產生程式碼。
+**答：** 在您產生自動程式化測試之前，新增 [資料來源](../test/add-a-data-source-to-a-web-performance-test.md)比較容易，因為會自動產生程式碼。
 
 當您執行具有資料來源的程式碼測試時，可能會看到下列錯誤訊息：
 
@@ -97,4 +99,4 @@ Web 效能測試是透過瀏覽您的 Web 應用程式來錄製。 測試包含�
 發生此錯誤的原因是測試類別擁有已定義的 DataSourceAttribute，而沒有相對應的 DataBindingAttribute。 若要解決這個錯誤，請加入適當的 DataBindingAttribute、刪除它，或在程式碼註解它。
 
 ### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>問：我應該在產生程式碼測試之前或之後加入驗證和擷取規則？
-**答：** 在產生自動程式化測試之前新增驗證規則和擷取規則比較容易；不過建議您使用[自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)進行驗證。
+**答：** 在產生自動程式化測試之前新增驗證規則和擷取規則比較容易；不過建議您使用 [自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)進行驗證。

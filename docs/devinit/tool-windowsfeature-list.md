@@ -1,7 +1,7 @@
 ---
 title: windowsfeature-list
 description: devinit 工具的，清單。
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b521009affbc1db81676481e33640a69e619aaf3
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 07b92e8783393fa19e5c09344a396a6c5c4fc011
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671709"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442123"
 ---
 # <a name="windowsfeature-list"></a>windowsfeature-list
 
@@ -41,7 +41,7 @@ ms.locfileid: "94671709"
 此工具的預設行為 `windowsfeature-list` 是列出所有 Windows 功能的啟用/停用狀態。
 
 ## <a name="example-usage"></a>使用方式範例
-以下是如何使用執行的範例 `windowsfeature-list` `.devinit.json` 。 
+以下是如何使用執行的範例 `windowsfeature-list` `.devinit.json` 。
 
 #### <a name="devinitjson-that-will-list-the-state-of-all-windows-features"></a>.devinit.js，將會列出所有 Windows 功能的狀態：
 ```json

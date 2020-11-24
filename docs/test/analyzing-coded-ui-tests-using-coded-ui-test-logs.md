@@ -1,5 +1,7 @@
 ---
 title: 使用自動程式化 UI 測試記錄分析自動程式化 UI 測試
+description: 深入瞭解自動程式碼 UI 測試記錄檔，其會篩選和記錄有關自動程式化 UI 測試執行的重要資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 6bbb3e6599ef4ae26740eed0eb79047c49356374
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 3dcbb1bdfd89ae13df5174b6502dc6e89437a468
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036141"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442491"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>使用自動程式化 UI 測試記錄分析自動程式化 UI 測試
 
@@ -26,9 +28,9 @@ ms.locfileid: "90036141"
 
 - 如果測試專案中沒有 *App.config* 檔案：
 
-   1. 確定在執行測試時啟動哪些 *QTAgent\*.exe* 程序。 其中一種方法是查看 Windows [工作管理員]**** 中的 [詳細資料]**** 索引標籤。
+   1. 確定在執行測試時啟動哪些 *QTAgent\*.exe* 程序。 其中一種方法是查看 Windows [工作管理員] 中的 [詳細資料] 索引標籤。
 
-   2. 從 *% ProgramFiles (x86) % \ Microsoft Visual Studio \\ \<version> \\ \<edition> \Common7\IDE*資料夾開啟對應的 *.config*檔案。 例如，如果執行的程序是 *QTAgent_40.exe*，開啟 *QTAgent_40.exe.config*。
+   2. 從 *% ProgramFiles (x86) % \ Microsoft Visual Studio \\ \<version> \\ \<edition> \Common7\IDE* 資料夾開啟對應的 *.config* 檔案。 例如，如果執行的程序是 *QTAgent_40.exe*，開啟 *QTAgent_40.exe.config*。
 
    2. 將 **EqtTraceLevel** 的值修改為您要的記錄層級。
 
@@ -60,9 +62,9 @@ ms.locfileid: "90036141"
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>步驟 2：執行自動程式化 UI 測試並檢視記錄
 
-當您在已修改 *QTAgent\*.exe.config* 檔案的情況下執行自動程式化 UI 測試時，會看到 [測試總管]**** 結果中有輸出連結。 記錄檔不只在測試失敗時產生，而且當追蹤層級設定為 [ **詳細**資訊] 時，也會針對成功的測試產生記錄檔。
+當您在已修改 *QTAgent\*.exe.config* 檔案的情況下執行自動程式化 UI 測試時，會看到 [測試總管] 結果中有輸出連結。 記錄檔不只在測試失敗時產生，而且當追蹤層級設定為 [ **詳細** 資訊] 時，也會針對成功的測試產生記錄檔。
 
-1. 在 [測試]**** 功能表上，選擇 [Windows]****，然後選取 [測試總管]****。
+1. 在 [測試] 功能表上，選擇 [Windows]，然後選取 [測試總管]。
 
 2. 在 [ **建置** ] 功能表上，選擇 [ **建置方案**]。
 
@@ -71,7 +73,7 @@ ms.locfileid: "90036141"
      自動化測試會執行，並指出測試成功或失敗。
 
     > [!TIP]
-    > 若要查看**test explorer**，請選擇 [**測試**  >  **視窗**]，然後選擇 [**測試瀏覽器**]。
+    > 若要查看 **test explorer**，請選擇 [**測試**  >  **視窗**]，然後選擇 [**測試瀏覽器**]。
 
 4. 選擇 [**測試瀏覽器**] 結果中的 [**輸出**] 連結。
 

@@ -1,5 +1,7 @@
 ---
 title: 將資料來源加入至 Web 效能測試
+description: 瞭解如何系結資料以提供不同的值給相同的測試，例如，為您的表單張貼參數提供不同的值。
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 94ad53e4ac3d65bfe6cf08bf03f1f79c2075e03d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c43545af9063ad83c61631b59032751fd9526a12
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289062"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442197"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>將資料來源加入至 Web 效能測試
 
@@ -24,7 +26,7 @@ ms.locfileid: "85289062"
 
 ![將資料繫結至 Web 效能測試](../test/media/web_test_databinding_conceptual.png)
 
-我們要使用範例 ASP.NET 應用程式。 其具有三個 .aspx** 頁面：預設頁面、紅色頁面和藍色頁面。 預設頁面具有可選擇紅色或藍色的選項按鈕控制項和一個送出按鈕。 另外兩個 .aspx** 頁面非常簡單。 一個具有名稱為 Red 的標籤，另一個有名稱為 Blue 的標籤。 當您在預設頁面上選取送出時，我們會顯示另外兩個之一的頁面。 您可以下載 [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) 範例，或是就以您自己的 Web 應用程式跟著做。
+我們要使用範例 ASP.NET 應用程式。 其具有三個 .aspx 頁面：預設頁面、紅色頁面和藍色頁面。 預設頁面具有可選擇紅色或藍色的選項按鈕控制項和一個送出按鈕。 另外兩個 .aspx 頁面非常簡單。 一個具有名稱為 Red 的標籤，另一個有名稱為 Blue 的標籤。 當您在預設頁面上選取送出時，我們會顯示另外兩個之一的頁面。 您可以下載 [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) 範例，或是就以您自己的 Web 應用程式跟著做。
 
 ![執行要測試的 Web 應用程式](../test/media/web_test_databinding_runwebapp.png)
 
@@ -128,7 +130,7 @@ ms.locfileid: "85289062"
 
      ![將 ColorName 欄位繫結至 RadioButtonList1 值](../test/media/web_test_databinding_sql_binddatasource.png)
 
-2. 開啟 [方案總管]**** 中的 Local.testsettings** 檔案，並選取 [每一資料來源資料列一次執行]**** 選項。
+2. 開啟 [方案總管] 中的 Local.testsettings 檔案，並選取 [每一資料來源資料列一次執行] 選項。
 
      ![編輯測試設定檔案](../test/media/web_test_databinding_sql_testsettings.png)
 
@@ -140,13 +142,13 @@ ms.locfileid: "85289062"
 
      ![執行 Web 效能測試以確認繫結](../test/media/web_test_databinding_sql_runtest.png)
 
-     為每個資料列中顯示兩個回合。 回合 1 傳送 Red.aspx** 頁面的要求，而回合 2 傳送 Blue.aspx** 頁面的要求。
+     為每個資料列中顯示兩個回合。 回合 1 傳送 Red.aspx 頁面的要求，而回合 2 傳送 Blue.aspx 頁面的要求。
 
      ![測試回合結果](../test/media/web_test_databinding_sql_runresults.png)
 
-     當您繫結至資料來源時，您可能違反預設回應 URL 規則。 在這種情況下，回合 2 中的錯誤是由預期原始測試記錄提供 Red.aspx** 頁面的規則所造成，但是資料繫結現在會將其導向至 Blue.aspx** 頁面。
+     當您繫結至資料來源時，您可能違反預設回應 URL 規則。 在這種情況下，回合 2 中的錯誤是由預期原始測試記錄提供 Red.aspx 頁面的規則所造成，但是資料繫結現在會將其導向至 Blue.aspx 頁面。
 
-2. 刪除**回應 URL** 驗證規則並再次執行測試，即可修正驗證錯誤。
+2. 刪除 **回應 URL** 驗證規則並再次執行測試，即可修正驗證錯誤。
 
      ![刪除回應 URL 驗證規則](../test/media/web_test_databinding_sql_deleteresponseurl.png)
 
@@ -200,11 +202,11 @@ ms.locfileid: "85289062"
 
 **答：** 如果無法新增資料行標頭，您可以使用結構描述檔案將 CSV 檔案當成資料庫處理。
 
-1. 新增名為 schema.ini** 的文字檔。
+1. 新增名為 schema.ini 的文字檔。
 
      ![加入 schema.ini 檔案](../test/media/web_test_databinding_schemafile.png)
 
-2. 請編輯 schema.ini** 檔案，新增可描述您資料結構的資訊。 例如，描述 CSV 檔案的結構描述檔可能像這樣：
+2. 請編輯 schema.ini 檔案，新增可描述您資料結構的資訊。 例如，描述 CSV 檔案的結構描述檔可能像這樣：
 
     ```text
     [testdata.csv]
@@ -215,7 +217,7 @@ ms.locfileid: "85289062"
 
      ![將資料來源加入至 Web 效能測試](../test/media/web_test_databinding_sql_adddatasource.png)
 
-4. 如果您使用 schema.ini** 檔案，請選擇 [資料庫]**** (而非 CSV 檔案) 作為資料來源並為其命名。
+4. 如果您使用 schema.ini 檔案，請選擇 [資料庫] (而非 CSV 檔案) 作為資料來源並為其命名。
 
      ![加入資料庫資料來源](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
@@ -231,7 +233,7 @@ ms.locfileid: "85289062"
 
      ![選擇 [進階]](../test/media/web_test_databinding_advanced.png)
 
-8. 針對 [提供者] 屬性，選取 [Microsoft.Jet.OLEDB.4.0]，然後將 [擴充屬性]**** 設定為 [Text;HDR=NO]。
+8. 針對 [提供者] 屬性，選取 [Microsoft.Jet.OLEDB.4.0]，然後將 [擴充屬性] 設定為 [Text;HDR=NO]。
 
      ![套用進階屬性](../test/media/web_test_databinding_advancedproperties.png)
 

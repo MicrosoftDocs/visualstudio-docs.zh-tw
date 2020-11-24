@@ -1,7 +1,7 @@
 ---
 title: Bridge to Kubernetes 的運作方式
 ms.technology: vs-azure
-ms.date: 06/02/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 description: 說明使用 Bridge Kubernetes 將您的開發電腦連線至 Kubernetes 叢集的程式
 keywords: 橋接至 Kubernetes、Docker、Kubernetes、Azure、容器
@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: afeb612e1d092ebc1f5c33394a62dd9cef6b6a1c
-ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
+ms.openlocfilehash: d1a92433a90e6e6b7f71d0c7db6ced3a52c33315
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116099"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440606"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Bridge to Kubernetes 的運作方式
 
@@ -29,7 +29,7 @@ ms.locfileid: "92116099"
 
 ## <a name="using-bridge-to-kubernetes"></a>使用 Bridge Kubernetes
 
-若要使用橋接器在 Visual Studio 中 Kubernetes，您需要在已安裝*ASP.NET 和 網頁程式開發*工作負載的 Windows 10 上執行[Visual Studio 2019][visual-studio] 16.7 Preview 4 版或更新版本，並安裝[橋接器至 Kubernetes 擴充][btk-extension]功能。 當您使用 Bridge Kubernetes 來建立 Kubernetes 叢集的連線時，您可以選擇將叢集中現有 pod 的所有流量，重新導向至您的開發電腦。
+若要使用橋接器在 Visual Studio 中 Kubernetes，您需要在已安裝 *ASP.NET 和 網頁程式開發* 工作負載的 Windows 10 上執行 [Visual Studio 2019][visual-studio] 16.7 Preview 4 版或更新版本，並安裝 [橋接器至 Kubernetes 擴充][btk-extension]功能。 當您使用 Bridge Kubernetes 來建立 Kubernetes 叢集的連線時，您可以選擇將叢集中現有 pod 的所有流量，重新導向至您的開發電腦。
 
 > [!NOTE]
 > 使用 Bridge Kubernetes 時，系統會提示您輸入服務的名稱，以重新導向至您的開發電腦。 此選項可讓您輕鬆地識別要重新導向的 pod。 Kubernetes 叢集與開發電腦之間的所有重新導向皆適用于 pod。
@@ -104,7 +104,38 @@ ms.locfileid: "92116099"
 
 ## <a name="diagnostics-and-logging"></a>診斷和記錄
 
-使用 Bridge Kubernetes 連接到您的叢集時，叢集的診斷記錄會記錄到您的開發電腦在*Bridge Kubernetes*資料夾的*暫存*目錄中。
+使用 Bridge Kubernetes 連接到您的叢集時，叢集的診斷記錄會記錄到您的開發電腦在 *Bridge Kubernetes* 資料夾的 *暫存* 目錄中。
+
+## <a name="rbac-authorization"></a>RBAC 授權
+
+Kubernetes 會提供角色型存取控制 (RBAC) 來管理使用者和群組的許可權。 如需詳細資訊，請參閱 [Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) 檔。您可以藉由建立 YAML 檔案並使用將其套用至叢集，來為啟用 RBAC 的叢集設定許可權 `kubectl` 。 
+
+若要設定叢集的許可權，請建立或修改 YAML 檔，例如 *許可權。* 如下所示 yml、使用您自己的命名空間， `<namespace>` 以及 (使用者和) 群組需要存取權的主體。
+
+```yml
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: bridgetokubernetes-<namespace>
+  namespace: development
+subjects:
+  - kind: User
+    name: jane.w6wn8.k8s.ginger.eu-central-1.aws.gigantic.io
+    apiGroup: rbac.authorization.k8s.io
+  - kind: Group
+    name: dev-admin
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: admin
+  apiGroup: rbac.authorization.k8s.io
+```
+
+使用命令來套用許可權：
+
+```cmd
+kubectl -n <namespace> apply -f <yaml file name>
+```
 
 ## <a name="limitations"></a>限制
 

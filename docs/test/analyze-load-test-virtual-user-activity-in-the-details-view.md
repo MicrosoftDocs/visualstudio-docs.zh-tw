@@ -1,5 +1,7 @@
 ---
 title: 分析負載測試虛擬使用者活動
+description: 深入瞭解顯示虛擬使用者活動圖的詳細資料檢視。 分析個別虛擬使用者在負載測試期間執行的工作。
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0289ff0d4a20eacc4f6801d9300d39df594bc79e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c05a907bf75ffcdff5bb579ec2624e0dc8a7df9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591230"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441894"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>在負載測試分析器的詳細資料檢視中分析負載測試虛擬使用者活動
 
@@ -26,16 +28,16 @@ ms.locfileid: "75591230"
 
 ![虛擬使用者活動圖](../test/media/virtual_actchart.png)
 
-[詳細資料]**** 檢視中顯示的 [虛擬使用者活動圖]**** 可用來以視覺方式分析個別虛擬使用者在負載測試期間的行為。 [虛擬使用者活動圖]**** 可讓您查看使用者活動模式、負載模式、將失敗或緩慢的測試相互關聯，以及查看其他虛擬使用者活動的要求。 [虛擬使用者活動圖]**** 也可幫助您決定 CPU 使用量突然增加的問題、每秒要求中降低的情形，以及發生這些狀況時正在執行的測試或頁面。
+[詳細資料] 檢視中顯示的 [虛擬使用者活動圖] 可用來以視覺方式分析個別虛擬使用者在負載測試期間的行為。 [虛擬使用者活動圖] 可讓您查看使用者活動模式、負載模式、將失敗或緩慢的測試相互關聯，以及查看其他虛擬使用者活動的要求。 [虛擬使用者活動圖] 也可幫助您決定 CPU 使用量突然增加的問題、每秒要求中降低的情形，以及發生這些狀況時正在執行的測試或頁面。
 
 > [!NOTE]
-> 在執行要使用 **虛擬使用者活動詳細資料圖表**的負載測試之前，您必須使用 [負載效能測試編輯器] 確認 [ **計時詳細資料儲存區** ] 屬性已設為 [ **AllIndividualDetails** ] 選項。
+> 在執行要使用 **虛擬使用者活動詳細資料圖表** 的負載測試之前，您必須使用 [負載效能測試編輯器] 確認 [ **計時詳細資料儲存區** ] 屬性已設為 [ **AllIndividualDetails** ] 選項。
 
 **詳細資料圖例面板**
 
 ![詳細資料圖例面板](../test/media/ltest_detailslegend.png)
 
-詳細資料圖例面板會顯示在 [虛擬使用者活動圖]**** 中。 詳細資料圖例窗格可讓您根據不同準則，篩選出測試、頁面和異動。 例如，您可以從檢視中移除特定測試、移除所有順利完成的測試，或移除因特定因素而失敗的測試。 您也可以移除不具有記錄的所有測試。
+詳細資料圖例面板會顯示在 [虛擬使用者活動圖] 中。 詳細資料圖例窗格可讓您根據不同準則，篩選出測試、頁面和異動。 例如，您可以從檢視中移除特定測試、移除所有順利完成的測試，或移除因特定因素而失敗的測試。 您也可以移除不具有記錄的所有測試。
 
 您可以反白顯示失敗的測試，進而以紅色顯示所有失敗的測試。 您也可以反白顯示具有測試記錄的測試。 會以綠色顯示具有記錄的測試。
 
@@ -43,7 +45,7 @@ ms.locfileid: "75591230"
 
 ![篩選結果面板](../test/media/ltest_filterresults.png)
 
-篩選結果面板會顯示在 [虛擬使用者活動圖]**** 中。 篩選結果面板可篩選下列項目：
+篩選結果面板會顯示在 [虛擬使用者活動圖] 中。 篩選結果面板可篩選下列項目：
 
 - **只顯示有記錄檔的結果**：僅顯示具有關聯測試記錄檔的測試結果。
 
@@ -56,7 +58,7 @@ ms.locfileid: "75591230"
 |工作|相關主題|
 |-|-|
 |**執行負載測試：** 當您建立負載測試並設定為啟用虛擬使用者活動資料收集之後，您必須執行測試直到完成，才能查看 **虛擬使用者活動圖**。||
-|**查看包含虛擬使用者活動資料的負載測試結果：** 在您的負載測試建立、設定和完成執行之後，您可以使用 **虛擬使用者活動圖**來查看虛擬使用者活動資料。|-   [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [如何：分析虛擬使用者在負載測試期間的作用](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
+|**查看包含虛擬使用者活動資料的負載測試結果：** 在您的負載測試建立、設定和完成執行之後，您可以使用 **虛擬使用者活動圖** 來查看虛擬使用者活動資料。|-   [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [如何：分析虛擬使用者在負載測試期間的作用](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
 |**在負載測試中找出效能問題：** 您可以使用 **虛擬使用者活動圖** ，協助您找出負載測試中的效能問題。|-   [逐步解說：使用虛擬使用者活動圖來隔離問題](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
 ## <a name="see-also"></a>另請參閱

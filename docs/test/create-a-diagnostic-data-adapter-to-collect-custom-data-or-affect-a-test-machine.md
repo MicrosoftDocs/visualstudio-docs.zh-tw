@@ -1,5 +1,7 @@
 ---
 title: 建立用於測試的診斷資料配接器
+description: 瞭解如何使用 Visual Studio Enterprise 內提供的 Api 撰寫程式碼，以在測試回合的特定點執行工作。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: b0b53fae-7007-4ad9-a604-21685937622f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65d311ec522e5ba5b5c92193a8af3e53a9e9eb35
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: e73942509ca39d845c2a79f616ace311651be006
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099319"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440268"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>建立診斷資料配接器以收集自訂資料或影響測試電腦
 

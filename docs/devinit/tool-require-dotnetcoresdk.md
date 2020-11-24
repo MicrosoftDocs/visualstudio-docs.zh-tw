@@ -1,7 +1,7 @@
 ---
 title: require-dotnetcoresdk
 description: devinit 工具需要-dotnetcoresdk。
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b75f7961008c8b575cd21b42fdb5246c3b65078d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: fe860b697bb5a85ec2bb3c8221118254552b5301
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672136"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441689"
 ---
 # <a name="require-dotnetcoresdk"></a>require-dotnetcoresdk
 
@@ -48,7 +48,7 @@ ms.locfileid: "94672136"
 工具的預設行為 `require-dotnetcoresdk` 是在 `global.json` 目前的工作目錄中安裝 [ (檔) ](/dotnet/core/tools/global-json?tabs=netcore3x) 檔案中指定的 .NET Core SDK 版本。 如果找不到任何檔案 `global.json` ，則 `require-dotnetcoresdk` 會安裝最新版本的 .NET Core SDK 和共用執行時間。
 
 ## <a name="example-usage"></a>使用方式範例
-以下是如何使用執行的範例 `require-dotnetcoresdk` `.devinit.json` 。 
+以下是如何使用執行的範例 `require-dotnetcoresdk` `.devinit.json` 。
 
 #### <a name="devinitjson-that-will-install-the-latest-version-of-net-core"></a>.devinit.js將會安裝最新版本的 .NET Core：
 ```json

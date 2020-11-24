@@ -1,7 +1,7 @@
 ---
 title: require-azurecli
 description: devinit 工具需要-azurecli。
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: da6ce656e552a7df0b02fd4a0df3a1fb78871607
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: d73fe7c1745ded16ca6b0c94acf117c1707c1063
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672143"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440413"
 ---
 # <a name="require-azurecli"></a>require-azurecli
 
@@ -42,10 +42,10 @@ ms.locfileid: "94672143"
 
 ### <a name="default-behavior"></a>預設行為
 
-此工具的預設行為 `require-azurecli` 是安裝最新版本的 Azure CLI，並將其新增至僅 (Windows) 的路徑。
+此工具的預設行為 `require-azurecli` 是安裝最新版本的 Azure CLI，並將其新增至 `PATH` 。
 
 ## <a name="example-usage"></a>使用方式範例
-以下是如何使用執行的範例 `require-azurecli` `.devinit.json` 。 
+以下是如何使用執行的範例 `require-azurecli` `.devinit.json` 。
 
 #### <a name="devinitjson-that-will-install-the-azure-cli"></a>將會安裝 Azure CLI 的 .devinit.js：
 ```json

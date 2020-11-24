@@ -1,5 +1,7 @@
 ---
 title: 設定 ASP.NET 分析工具以進行負載測試
+description: 瞭解如何使用 ASP.NET profiler 診斷資料介面卡來收集 ASP.NET profiler 資訊。
+ms.custom: SEO-VS-2020
 ms.date: 10/13/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c4f82f8f4c518a9c72399b6e28a01d112f5678c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: baea8be1da9a6dd89c06aa328bf579974503921f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288204"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442322"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>如何：在 Visual Studio 中使用測試設定來設定 ASP.NET 分析工具以進行負載測試
 
@@ -33,20 +35,20 @@ ASP.NET 分析工具診斷資料配接器可讓您在執行負載測試時，從
 
 ## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>針對測試設定來設定 ASP.NET 分析工具
 
-執行這個程序中的步驟之前，您必須先從 Visual Studio 開啟測試設定，然後選取 [資料和診斷]**** 頁面。
+執行這個程序中的步驟之前，您必須先從 Visual Studio 開啟測試設定，然後選取 [資料和診斷] 頁面。
 
 1. 選取要用來收集 ASP.NET 分析工具資料的角色。
 
     > [!WARNING]
     > 這個角色必須是 Web 伺服器。
 
-2. 選取 [ASP.NET 分析工具]**** 以啟用收集 ASP.NET 分析資料，然後選擇 [設定]****。
+2. 選取 [ASP.NET 分析工具] 以啟用收集 ASP.NET 分析資料，然後選擇 [設定]。
 
      設定 ASP.NET 分析資料收集的對話方塊隨即顯示。
 
-3. 在 [分析工具取樣間隔]**** 中鍵入值，指出 ASP.NET 分析取樣過程中，要等待的未暫止 CPU 時脈週期數。
+3. 在 [分析工具取樣間隔] 中鍵入值，指出 ASP.NET 分析取樣過程中，要等待的未暫止 CPU 時脈週期數。
 
-4. 若要啟用階層互動分析，請選取 [啟用階層互動分析]****。
+4. 若要啟用階層互動分析，請選取 [啟用階層互動分析]。
 
      階層互動分析會計算針對每個成品 (例如 *MyPage.aspx* 或 *CompanyLogo.gif*) 傳送至網頁伺服器的要求數目，以及服務每個要求所需的時間。 此外，階層互動分析也會收集頁面要求進行時所使用的 ADO.NET 連線，以及在服務該要求時所執行的查詢和預存程序呼叫數目。
 

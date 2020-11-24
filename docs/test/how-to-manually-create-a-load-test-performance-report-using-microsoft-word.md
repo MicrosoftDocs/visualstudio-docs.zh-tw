@@ -1,5 +1,6 @@
 ---
 title: 使用 MS Word 建立負載測試效能報表
+description: 瞭解如何藉由從 [載入測試結果摘要] 和 [圖形] 視圖複製和貼上資料，手動建立 Microsoft Word 負載測試報告。
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8100ec72beea715a97402f304cfe9dbe6dc54dad
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 2bddd2585d3bc88821fb2c265f21bfda84ed7bef
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810242"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440996"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>如何：使用 Microsoft Word 手動建立負載測試效能報告
 
@@ -31,11 +32,11 @@ ms.locfileid: "90810242"
 
 ## <a name="copy-summary-view-data"></a>複製摘要檢視資料
 
-1. 在 [負載測試結果]**** 中，如果目前沒有顯示摘要檢視，請按一下工具列中的 [摘要]****。
+1. 在 [負載測試結果] 中，如果目前沒有顯示摘要檢視，請按一下工具列中的 [摘要]。
 
-2. 在摘要檢視中，按一下滑鼠右鍵，然後選取 [全選]****。
+2. 在摘要檢視中，按一下滑鼠右鍵，然後選取 [全選]。
 
-3. 在摘要檢視中，按一下滑鼠右鍵，然後選取 [複製]****。 這樣就會將摘要檢視資料當做 HTML 格式呈現至 [剪貼簿]。
+3. 在摘要檢視中，按一下滑鼠右鍵，然後選取 [複製]。 這樣就會將摘要檢視資料當做 HTML 格式呈現至 [剪貼簿]。
 
 4. 在 Microsoft Word 中，將摘要檢視資料貼入所需的位置。
 
@@ -43,13 +44,13 @@ ms.locfileid: "90810242"
 
 ## <a name="copy-graph-view-data"></a>複製圖表檢視資料
 
-1. 在 [負載測試結果]**** 中，如果目前沒有顯示圖表檢視，請選擇工具列中的 [圖表]****。
+1. 在 [負載測試結果] 中，如果目前沒有顯示圖表檢視，請選擇工具列中的 [圖表]。
 
 2. (選擇性) 放大您想要複製到 Microsoft Word 文件的特定圖表，如下圖所示。 如需詳細資訊，請參閱 [如何：放大圖形的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 
      ![圖形檢視縮放控制](../test/media/ltest_zoomcontrol.png)
 
-3. 在您想要複製到 Microsoft Word 文件的圖表上，按一下滑鼠右鍵，然後選取 [複製]****。
+3. 在您想要複製到 Microsoft Word 文件的圖表上，按一下滑鼠右鍵，然後選取 [複製]。
 
 4. 在 Microsoft Word 中，將圖表和相關聯的資料表資料貼入所需的位置。
 

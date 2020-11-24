@@ -1,5 +1,7 @@
 ---
 title: 自動程式化 UI 測試的結構
+description: 瞭解當您建立自動程式化 UI 測試時，新增至自動程式碼 UI 測試方案中的檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7100c6bb5c1dfb4c7d336ec110cf532f1f998d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aeaa2231c62487ec366aa561ea199cf63f3c6792
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591199"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441790"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>自動程式化 UI 測試的結構
 
@@ -24,7 +26,7 @@ ms.locfileid: "75591199"
 
 ## <a name="contents-of-a-coded-ui-test"></a>自動程式化 UI 測試的內容
 
-當您建立自動程式碼 UI 測試時，**自動程式碼 UI 測試產生器**會建立待測使用者介面的對應，以及所有測試的測試方法、參數和判斷提示。 它也會針對每個測試建立類別檔案。
+當您建立自動程式碼 UI 測試時，**自動程式碼 UI 測試產生器** 會建立待測使用者介面的對應，以及所有測試的測試方法、參數和判斷提示。 它也會針對每個測試建立類別檔案。
 
 |檔案|內容|可編輯？|
 |-|-|-|
@@ -34,7 +36,7 @@ ms.locfileid: "75591199"
 |[UIMap. uitest](#UIMapuitest)|測試的 UI XML 對應。|否|
 
 ### <a name="uimapdesignercs"></a><a name="UIMapDesignerFile"></a> UIMap.Designer.cs
-這個檔案包含的程式碼，是建立測試時由**自動程式碼 UI 測試產生器**所自動建立。 測試每次變更時都會重新建立這個檔案，因此這不是讓您加入或修改程式碼的檔案。
+這個檔案包含的程式碼，是建立測試時由 **自動程式碼 UI 測試產生器** 所自動建立。 測試每次變更時都會重新建立這個檔案，因此這不是讓您加入或修改程式碼的檔案。
 
 #### <a name="declarations-section"></a>宣告區段
 這個區段包含 Windows UI 的下列宣告。
@@ -187,12 +189,12 @@ public class AddItemsParams
 根據預設，此檔案包含一個部分 `UIMap` 類別，沒有方法或屬性。
 
 #### <a name="uimap-class"></a>UIMap 類別
-這裡可讓您建立自訂程式碼來擴充 [UIMap](/previous-versions/dd580454(v=vs.140)) 類別的功能。 **自動程式化 UI 測試產生器**不會在每次修改測試時覆寫您在此檔案中建立的程式碼。
+這裡可讓您建立自訂程式碼來擴充 [UIMap](/previous-versions/dd580454(v=vs.140)) 類別的功能。 **自動程式化 UI 測試產生器** 不會在每次修改測試時覆寫您在此檔案中建立的程式碼。
 
 [UIMap](/previous-versions/dd580454(v=vs.140)) 的所有部分都可以使用 [UIMap](/previous-versions/dd580454(v=vs.140)) 類別之任何其他部分的方法和屬性。
 
 ### <a name="codeduitest1cs"></a><a name="CodedUITestCS"></a> CodedUITest1.cs
-這個檔案由**自動程式碼 UI 測試產生器**產生，但不會在每次修改測試時重新建立，因此您可以修改這個檔案中的程式碼。 此檔案的名稱是從您建立測試時所指定的名稱產生。
+這個檔案由 **自動程式碼 UI 測試產生器** 產生，但不會在每次修改測試時重新建立，因此您可以修改這個檔案中的程式碼。 此檔案的名稱是從您建立測試時所指定的名稱產生。
 
 #### <a name="codeduitest1-class"></a>CodedUITest1 類別
 

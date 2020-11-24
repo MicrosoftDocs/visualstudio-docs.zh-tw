@@ -1,5 +1,7 @@
 ---
 title: 使用 .runsettings 檔案設定單元測試
+description: 瞭解如何在 Visual Studio 中使用 .runsettings 檔案，以設定從命令列、IDE 或在組建工作流程中執行的單元測試。
+ms.custom: SEO-VS-2020
 ms.date: 07/15/2020
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8194a5f61b45ac2b4358922aaf8c7c7b8bea4ae9
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: ca15e265f9e6f3188826c019a8c81d02a7668bcf
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518761"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442686"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
@@ -24,7 +26,7 @@ ms.locfileid: "94518761"
 
 ## <a name="create-a-run-settings-file-and-customize-it"></a>建立執行設定檔並加以自訂
 
-1. 將回合設定檔新增至方案。 在 [ **方案總管** ] 中，在方案的快捷方式功能表上，選擇 [ **加入**  >  **新專案** ]，然後選取 [ **XML** 檔案]。 使用 *.runsettings* 之類的名稱來儲存檔案。
+1. 將回合設定檔新增至方案。 在 [**方案總管**] 中，在方案的快捷方式功能表上，選擇 [**加入**  >  **新專案**]，然後選取 [ **XML** 檔案]。 使用 *.runsettings* 之類的名稱來儲存檔案。
 
    > [!TIP]
    > 檔案名稱並不重要，只要使用的副檔名為 .runsettings 即可。
@@ -61,7 +63,7 @@ ms.locfileid: "94518761"
 可用的方法取決於您的 Visual Studio 版本。
 
 ::: moniker range="vs-2017"
-若要在 IDE 中指定回合設定檔，請選取 [測試] **[測試設定]** > **[選取測試設定檔]** > ，然後選取 *.runsettings* 檔案。
+若要在 IDE 中指定回合設定檔，請選取 [測試]**[測試設定]** > **[選取測試設定檔]** > ，然後選取 *.runsettings* 檔案。
 
 ![在 Visual Studio 2017 中選取測試設定檔的功能表](media/select-test-settings-file.png)
 
@@ -94,7 +96,7 @@ ms.locfileid: "94518761"
 
 #### <a name="manually-select-the-run-settings-file"></a>以手動方式選取回合設定檔案
 
-在 IDE 中，選取 [ **測試** 設定回合 > **設定** ] > **選取 [方案範圍 .runsettings** 檔]，然後選取 *.runsettings* 檔案。
+在 IDE 中，選取 [ **測試** 設定回合 > **設定**] > **選取 [方案範圍 .runsettings** 檔]，然後選取 *.runsettings* 檔案。
 
    - 這個檔案會覆寫位於方案根目錄的 *.runsettings* 檔案（如果有的話），並套用到所有測試回合。
    - 此檔案選取專案只會在本機保存。
@@ -122,7 +124,7 @@ ms.locfileid: "94518761"
 
 ### <a name="visual-studio-2019-version-163-and-earlier"></a>Visual Studio 2019 16.3 版及更早版本
 
-若要在 IDE 中指定回合設定檔案，請選取 [ **測試**  >  **選取設定檔** ]。 瀏覽並選取 *.runsettings* 檔案。
+若要在 IDE 中指定回合設定檔案，請選取 [**測試**  >  **選取設定檔**]。 瀏覽並選取 *.runsettings* 檔案。
 
 ![在 Visual Studio 2019 中選取測試設定檔的功能表](media/vs-2019/select-settings-file.png)
 
@@ -131,7 +133,7 @@ ms.locfileid: "94518761"
 
 ## <a name="specify-a-run-settings-file-from-the-command-line"></a>從命令列指定回合設定檔案
 
-若要從命令列執行測試，請使用 *vstest.console.exe* ，並使用 **/settings** 參數指定設定檔案。
+若要從命令列執行測試，請使用 *vstest.console.exe*，並使用 **/settings** 參數指定設定檔案。
 
 1. 開啟 Visual Studio 的 [開發人員命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs) 。
 
@@ -233,7 +235,7 @@ ms.locfileid: "94518761"
 
 ### <a name="blame-data-collector"></a>現象資料收集器
 
-這個選項可協助您找出導致測試主機損毀的有問題的測試。 執行收集器會在 *TestResults* 中建立輸出檔 ( *Sequence.xml* ) ，以在損毀之前捕捉測試的執行順序。
+這個選項可協助您找出導致測試主機損毀的有問題的測試。 執行收集器會在 *TestResults* 中建立輸出檔 (*Sequence.xml*) ，以在損毀之前捕捉測試的執行順序。
 
 ```xml
 <DataCollector friendlyName="blame" enabled="True">
@@ -306,17 +308,17 @@ public void HomePageTest()
 </MSTest>
 ```
 
-|設定|預設|值|
+|組態|預設|值|
 |-|-|-|
-|**ForcedLegacyMode**|false|Visual Studio 2012 中的 MSTest 配接器已進行過最佳化，因此更快速且更具延展性。 某些行為 (例如測試執行順序) 可能與舊版 Visual Studio 稍有出入。 將此值設定為 **true** ，以使用較舊的測試配接器。<br /><br />例如，如果您為單元測試指定 *app.config* 檔案，則可以使用此設定。<br /><br />建議您考慮重構測試，以便使用較新的配接器。|
+|**ForcedLegacyMode**|false|Visual Studio 2012 中的 MSTest 配接器已進行過最佳化，因此更快速且更具延展性。 某些行為 (例如測試執行順序) 可能與舊版 Visual Studio 稍有出入。 將此值設定為 **true**，以使用較舊的測試配接器。<br /><br />例如，如果您為單元測試指定 *app.config* 檔案，則可以使用此設定。<br /><br />建議您考慮重構測試，以便使用較新的配接器。|
 |**IgnoreTestImpact**|false|「測試影響」功能會將受最新變更影響的測試（當在 MSTest 中執行時），或 Visual Studio 2017) 中 Microsoft Test Manager (淘汰的測試排定優先順序。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](/previous-versions/dd286589(v=vs.140))。|
-|**SettingsFile**||您可以指定與此處的 MS 測試配接器一起使用的測試設定檔。 您也可以[從設定功能表](#specify-a-run-settings-file-in-the-ide)指定測試設定檔。<br /><br />如果您指定這個值，也必須將 [ **ForcedlegacyMode** ] 設定為 [ **true** ]。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
-|**KeepExecutorAliveAfterLegacyRun**|false|測試回合完成後，會關閉 MSTest。 所有在測試過程中啟動的處理序也都會終止。 如果您要讓測試執行程式保持運作，請將此值設定為 **true** 。 例如，您可以使用此設定讓瀏覽器在不同的自動程式碼 UI 測試之間保持執行。|
-|**DeploymentEnabled**|true|如果您將此值設定為 **false** ，就不會將您在測試方法中指定的部署項目複製到部署目錄中。|
+|**SettingsFile**||您可以指定與此處的 MS 測試配接器一起使用的測試設定檔。 您也可以[從設定功能表](#specify-a-run-settings-file-in-the-ide)指定測試設定檔。<br /><br />如果您指定這個值，也必須將 [ **ForcedlegacyMode** ] 設定為 [ **true**]。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**KeepExecutorAliveAfterLegacyRun**|false|測試回合完成後，會關閉 MSTest。 所有在測試過程中啟動的處理序也都會終止。 如果您要讓測試執行程式保持運作，請將此值設定為 **true**。 例如，您可以使用此設定讓瀏覽器在不同的自動程式碼 UI 測試之間保持執行。|
+|**DeploymentEnabled**|true|如果您將此值設定為 **false**，就不會將您在測試方法中指定的部署項目複製到部署目錄中。|
 |**CaptureTraceOutput**|true|您可以使用 <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType> 從測試方法寫入偵錯追蹤。|
-|**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|若要在測試回合之後保留部署目錄，請將此值設定為 **false** 。|
-|**MapInconclusiveToFailed**|false|如果測試完成，但狀態結果不明，則通常對應至 [測試總管] 中的已略過狀態。 如果您要讓結果不明的測試顯示為 [失敗]，請將此值設定為 **true** 。|
-|**InProcMode**|false|如果您要在 MSTest 配接器的相同處理序中執行測試，請將此值設定為 **true** 。 這個設定提供較小效能。 但如果測試因例外狀況而結束，則不會執行其餘測試。|
+|**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|若要在測試回合之後保留部署目錄，請將此值設定為 **false**。|
+|**MapInconclusiveToFailed**|false|如果測試完成，但狀態結果不明，則通常對應至 [測試總管] 中的已略過狀態。 如果您要讓結果不明的測試顯示為 [失敗]，請將此值設定為 **true**。|
+|**InProcMode**|false|如果您要在 MSTest 配接器的相同處理序中執行測試，請將此值設定為 **true**。 這個設定提供較小效能。 但如果測試因例外狀況而結束，則不會執行其餘測試。|
 |**AssemblyResolution**|false|您可以在求解及執行單元測試時，指定其他組件的路徑。 例如，您可以針對與測試組件位於不同目錄的相依性組件，使用這些路徑。 若要指定路徑，請使用 **目錄路徑** 項目。 路徑可以包括環境變數。<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
 ## <a name="example-runsettings-file"></a>*.Runsettings* 檔案範例
@@ -439,7 +441,7 @@ public void HomePageTest()
 
 ## <a name="specify-environment-variables-in-the-runsettings-file"></a>在 *.runsettings* 檔案中指定環境變數
 
-您可以在 *.runsettings* 檔案中設定環境變數，以便直接與測試主機互動。 需要在 *.runsettings* 檔案中指定環境變數，才能支援需要設定環境變數（例如 *DOTNET_ROOT* ）的重要專案。 這些變數會在產生測試主機進程時設定，並可在主機中使用。
+您可以在 *.runsettings* 檔案中設定環境變數，以便直接與測試主機互動。 需要在 *.runsettings* 檔案中指定環境變數，才能支援需要設定環境變數（例如 *DOTNET_ROOT*）的重要專案。 這些變數會在產生測試主機進程時設定，並可在主機中使用。
 
 ### <a name="example"></a>範例
 

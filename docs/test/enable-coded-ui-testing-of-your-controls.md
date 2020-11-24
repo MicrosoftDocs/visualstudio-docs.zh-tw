@@ -1,5 +1,7 @@
 ---
 title: 啟用控制項的自動程式化 UI 測試功能
+description: 瞭解如何實作為自動程式化 UI 測試架構的支援，讓您的控制項更具可測試性。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d94c68a660201b0a8767b1405fcd4399cdf6d660
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b36b7e2469aa5d4ef6e11cff2580e0fb0c8ff03
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288685"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441400"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>啟用控制項的自動程式化 UI 測試功能
 
@@ -69,7 +71,7 @@ ms.locfileid: "85288685"
 4. 針對子控制項的協助工具物件，覆寫 <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>、<xref:System.Windows.Forms.AccessibleObject.Name%2A>、<xref:System.Windows.Forms.AccessibleObject.Parent%2A>、<xref:System.Windows.Forms.AccessibleObject.Role%2A>、<xref:System.Windows.Forms.AccessibleObject.State%2A>、<xref:System.Windows.Forms.AccessibleObject.Navigate%2A> 和 <xref:System.Windows.Forms.AccessibleObject.Select%2A> 屬性和方法。
 
 > [!NOTE]
-> 本主題一開始在 <xref:System.Windows.Forms.AccessibleObject> 中提供協助工具範例，然後在其餘程序中，以該範例作為建置基礎。 如果您想要建立協助工具範例的有效版本，請建立主控台應用程式，然後將 *Program.cs* 中的程式碼取代為範例程式碼。 請新增對協助工具、System.Drawing 和 System.Windows.Forms 的參考。 將協助工具的 [內嵌 Interop 類型]**** 變更為 [False]****，以消除建置警告。 您可以將專案的輸出類型從 [主控台應用程式]**** 變更為 [Windows 應用程式]****，如此當您執行應用程式時，才不會出現主控台視窗。
+> 本主題一開始在 <xref:System.Windows.Forms.AccessibleObject> 中提供協助工具範例，然後在其餘程序中，以該範例作為建置基礎。 如果您想要建立協助工具範例的有效版本，請建立主控台應用程式，然後將 *Program.cs* 中的程式碼取代為範例程式碼。 請新增對協助工具、System.Drawing 和 System.Windows.Forms 的參考。 將協助工具的 [內嵌 Interop 類型] 變更為 [False]，以消除建置警告。 您可以將專案的輸出類型從 [主控台應用程式] 變更為 [Windows 應用程式]，如此當您執行應用程式時，才不會出現主控台視窗。
 
 ## <a name="support-custom-property-validation-by-implementing-a-property-provider"></a>藉由實作屬性提供者，支援自訂屬性驗證
 
@@ -99,7 +101,7 @@ ms.locfileid: "85288685"
     }
     ```
 
-1. 藉由建立類別庫專案來建立控制項的 UI 測試延伸模組套件。 請新增對協助工具、Microsoft.VisualStudio.TestTools.UITesting、Microsoft.VisualStudio.TestTools.UITest.Common 和 Microsoft.VisualStudio.TestTools.Extension 的參考。 將協助工具的 [內嵌 Interop 類型]**** 變更為 **False**。
+1. 藉由建立類別庫專案來建立控制項的 UI 測試延伸模組套件。 請新增對協助工具、Microsoft.VisualStudio.TestTools.UITesting、Microsoft.VisualStudio.TestTools.UITest.Common 和 Microsoft.VisualStudio.TestTools.Extension 的參考。 將協助工具的 [內嵌 Interop 類型] 變更為 **False**。
 
 1. 新增衍生自 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> 的屬性提供者類別：
 

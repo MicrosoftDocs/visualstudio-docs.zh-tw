@@ -1,5 +1,7 @@
 ---
 title: 設定測試控制器和測試代理程式的通訊埠
+description: 瞭解如何變更測試控制器、測試代理程式和用戶端所使用的預設傳入埠，以避免與其他軟體發生衝突。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7889feffc41d6bb64b85b4ea95a17a4a986d22df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2726d489c0c67bffb11bc59357f6ad107a6c94ba
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288815"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441564"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>設定測試控制器和測試代理程式的通訊埠
 
@@ -39,7 +41,7 @@ ms.locfileid: "85288815"
     測試控制器必須能夠建立測試代理程式和用戶端的連出連線。
 
     > [!NOTE]
-    > 測試控制器需要將 [檔案及印表機共用]**** 連入連線保持在開啟狀態。
+    > 測試控制器需要將 [檔案及印表機共用] 連入連線保持在開啟狀態。
 
 - **測試代理程式** 連入連線位於 TCP 通訊埠 6910 上。 如果需要的話，您可以設定連入通訊埠。 如需詳細資訊，請參閱[設定連入通訊埠](#configure-the-incoming-ports)。
 

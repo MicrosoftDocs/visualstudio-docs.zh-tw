@@ -1,5 +1,7 @@
 ---
 title: Microsoft Fakes：產生 & 編譯器代碼;命名慣例
+description: 瞭解 Fakes 程式碼產生和編譯的選項和問題，包括 Fakes 所產生類型、成員和參數的命名慣例。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 9a1ba469f460e966be581b87226f2a89faac8186
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: e3ebb1439c7b8eb958d8e7126ca0197462e89a09
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325940"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441629"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的程式碼產生、編譯和命名慣例
 
@@ -223,28 +225,28 @@ attribute of the Assembly element in the .fakes:
 
 ### <a name="shim-delegate-property-or-stub-delegate-field-naming-conventions"></a>填充碼委派屬性或虛設常式委派欄位命名慣例
 
-欄位命名適用的 **基本規則** ，從空白名稱開始：
+欄位命名適用的 **基本規則**，從空白名稱開始：
 
 - 會附加方法名稱。
 
 - 如果方法名稱是明確的介面實作，則會將點移除。
 
-- 如果方法為泛型，則會附加 `Of`*n* ，其中 *n* 是泛型方法引數的數目。
+- 如果方法為泛型，則會附加 `Of`*n*，其中 *n* 是泛型方法引數的數目。
 
-  **特殊方法名稱** ，例如屬性 getter 或 setter，會依照下表所述加以處理：
+  **特殊方法名稱**，例如屬性 getter 或 setter，會依照下表所述加以處理：
 
 |如果方法是...|範例|附加的方法名稱|
 |-|-|-|
 |**函數**|`.ctor`|`Constructor`|
 |靜態 **建構函式**|`.cctor`|`StaticConstructor`|
-|方法名稱由兩個以 "_" 分隔的部分 (例如屬性 getter) 組成的 **存取子**|*kind_name* (一般情況，但 ECMA 不會強制執行)|*NameKind* ，其中這兩個部分會改成大寫並互換|
+|方法名稱由兩個以 "_" 分隔的部分 (例如屬性 getter) 組成的 **存取子**|*kind_name* (一般情況，但 ECMA 不會強制執行)|*NameKind*，其中這兩個部分會改成大寫並互換|
 ||`Prop` 屬性的 getter|`PropGet`|
 ||`Prop` 屬性的 setter|`PropSet`|
 ||事件 adder|`Add`|
 ||事件 remover|`Remove`|
 |由兩個部分組成的 **運算子**|`op_name`|`NameOp`|
 |例如：+ 運算子|`op_Add`|`AddOp`|
-|若是 **轉換運算子** ，會附加傳回類型。|`T op_Implicit`|`ImplicitOpT`|
+|若是 **轉換運算子**，會附加傳回類型。|`T op_Implicit`|`ImplicitOpT`|
 
 > [!NOTE]
 > - **索引子的 getter 和 setter** 是以類似屬性的方式來處理。 索引子的預設名稱是 `Item`。

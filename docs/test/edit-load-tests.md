@@ -1,5 +1,7 @@
 ---
 title: 編輯負載測試
+description: 瞭解用來定義負載測試的案例、計數器集合和回合設定之間的差異。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b95689871a987c018720c529743b8447f39b2bf6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81825b2a9060d75a792e73519486275fd34569a4
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288698"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441465"
 ---
 # <a name="edit-load-tests"></a>編輯負載測試
 
@@ -22,7 +24,7 @@ ms.locfileid: "85288698"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-負載測試是由「情節」**、「計數器集合」** 和「回合設定」** 定義。 下圖說明[情節](../test/edit-load-test-scenarios.md)、[計數器集合](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)和[回合設定](../test/load-test-run-settings-properties.md)之間的差異：
+負載測試是由「情節」、「計數器集合」和「回合設定」定義。 下圖說明[情節](../test/edit-load-test-scenarios.md)、[計數器集合](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)和[回合設定](../test/load-test-run-settings-properties.md)之間的差異：
 
 ![負載測試架構](../test/media/load_test_editor.png)
 
@@ -38,13 +40,13 @@ ms.locfileid: "85288698"
 
 ## <a name="configure-and-manage-performance-counter-sets"></a>設定和管理效能計數器集合
 
-負載測試會提供依技術所組織的具名計數器集合，在分析效能計數器資料時，非常好用。 計數器集合包括負載測試、IIS、ASP.NET 和 SQL。 當您使用 [新增負載測試精靈]**** 建立負載測試時，會為您指定要包含在負載測試中的電腦，設定好一組初始預先定義的重要計數器。 請在 [負載測試編輯器]**** 中管理計數器。
+負載測試會提供依技術所組織的具名計數器集合，在分析效能計數器資料時，非常好用。 計數器集合包括負載測試、IIS、ASP.NET 和 SQL。 當您使用 [新增負載測試精靈] 建立負載測試時，會為您指定要包含在負載測試中的電腦，設定好一組初始預先定義的重要計數器。 請在 [負載測試編輯器] 中管理計數器。
 
 如需詳細資訊，請參閱[在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)。
 
 ## <a name="configure-and-manage-load-test-run-settings"></a>設定和管理負載測試回合設定
 
-回合設定是影響負載測試執行方式的屬性， 這些設定會在 [屬性]**** 視窗中，依照分類進行組織。
+回合設定是影響負載測試執行方式的屬性， 這些設定會在 [屬性] 視窗中，依照分類進行組織。
 
 如需詳細資訊，請參閱[設定負載測試回合設定](../test/configure-load-test-run-settings.md)和[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。
 

@@ -1,7 +1,7 @@
 ---
 title: wsl-install
 description: devinit tool wsl-安裝。
-ms.date: 11/10/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 4cbb30842ebbed148b2aea80f941a738d18ae262
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd48cbe0eac8438bb761029bbca4cd27e13f2319
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671970"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442088"
 ---
 # <a name="wsl-install"></a>wsl-install
 
@@ -66,7 +66,7 @@ AppX 應用程式散發封裝的 URI (`.appx`) 包含要部署的發行版本。
 工具的預設行為 `wsl-install` 是因為 `input` 屬性（必須要安裝的發行版本）而發生錯誤。
 
 ## <a name="example-usage"></a>使用方式範例
-以下是如何使用執行的範例 `wsl-install` `.devinit.json` 。 
+以下是如何使用執行的範例 `wsl-install` `.devinit.json` 。
 
 #### <a name="devinitjson-that-will-install-ubuntu-2004"></a>.devinit.js將安裝 Ubuntu 20.04：
 ```json

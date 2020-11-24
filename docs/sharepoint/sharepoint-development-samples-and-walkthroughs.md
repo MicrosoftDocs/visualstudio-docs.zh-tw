@@ -1,5 +1,7 @@
 ---
 title: SharePoint 開發範例和逐步解說 |Microsoft Docs
+description: 開始使用範例應用程式、範例程式碼，以及示範 SharePoint 開發的逐步解說。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39f4d52b8a94409abeffb7cc9ce2329e463cf8bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a5703958db5d981391c11ae0baceaf83231d3c7
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015806"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440632"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>SharePoint 開發範例和逐步解說
   本節包含範例應用程式、範例程式碼和逐步解說，說明用來建立 SharePoint 方案的語法、結構和技術。

@@ -1,5 +1,7 @@
 ---
 title: " (SharePoint 開發) 的 URL 選擇器對話方塊"
+description: 深入瞭解 [URL 選擇器] 對話方塊，可讓使用者選擇位於其專案中或執行 SharePoint 之本機伺服器上的檔案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 991693c3379e008a2a907efd3127290c7e804c22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 584b77ab714cb692069fadd6c6fad50e20d46f80
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66261949"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442530"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>URL 選擇器對話方塊 (Visual Studio 中的 SharePoint 開發) 
   在 [URL 選擇器] 對話方塊中，您可以選擇位於您的專案中或執行 SharePoint 的本機伺服器中的檔案，例如主版頁面檔案或影像檔。
@@ -42,7 +44,7 @@ ms.locfileid: "66261949"
 
   展開 [ **伺服器** ] 節點，選擇位於執行 SharePoint 之本機伺服器上的檔案。 若要在對話方塊中顯示為可選取，這些檔案必須符合下列準則：
 
-- 檔案必須位於下列其中一個對應的資料夾中： **影像**、 **版面**配置或 **ControlTemplates**。
+- 檔案必須位於下列其中一個對應的資料夾中： **影像**、 **版面** 配置或 **ControlTemplates**。
 
 - 在 SharePoint 內容資料庫中找不到該檔案。
 

@@ -1,5 +1,7 @@
 ---
 title: 單元測試以舊版.NET Framework 為目標
+description: 瞭解如何建立單元測試專案，以 .NET Framework 的特定版本為目標。 目標版本必須為 3.5 或更新版本，而且不能是用戶端版本。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 670ec672c55d591496e26435db5a3112c345a44d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6badbb7723bf4d8ed0c9385558204c2dc4907574
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288165"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441244"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：設定以舊版 .NET Framework 為目標的單元測試
 
@@ -48,9 +50,9 @@ ms.locfileid: "85288165"
 
 ## <a name="retargeting-for-visual-basic-unit-test-projects"></a>為 Visual Basic 單元測試專案重定目標
 
-1. 建立新的 Visual Basic **單元測試專案**專案。
+1. 建立新的 Visual Basic **單元測試專案** 專案。
 
-2. 在 [方案總管]**** 中，從新的 Visual Basic 測試專案右鍵功能表選擇 [屬性]****。
+2. 在 [方案總管] 中，從新的 Visual Basic 測試專案右鍵功能表選擇 [屬性]。
 
      隨即會顯示您的 Visual Basic 測試專案屬性。
 
@@ -58,7 +60,7 @@ ms.locfileid: "85288165"
 
      ![進階編譯選項](../test/media/howtoconfigureunittest35frameworka.png)
 
-4. 使用 [目標 Framework (所有組態)]**** 下拉式清單將目標架構變更為 [.NET Framework 3.5]**** 或是更新版本，如下圖的圖說文字 B 所示。 您不應指定用戶端版本。
+4. 使用 [目標 Framework (所有組態)] 下拉式清單將目標架構變更為 [.NET Framework 3.5] 或是更新版本，如下圖的圖說文字 B 所示。 您不應指定用戶端版本。
 
      ![目標 Framework 下拉式清單](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
@@ -66,24 +68,24 @@ ms.locfileid: "85288165"
 
 1. 建立新的 c # **單元測試專案** 專案。
 
-2. 在 [方案總管]**** 中，從新的 C# 測試專案右鍵功能表選擇 [屬性]****。
+2. 在 [方案總管] 中，從新的 C# 測試專案右鍵功能表選擇 [屬性]。
 
    會隨即顯示您的 C# 測試專案屬性。
 
-3. 在 [應用程式]**** 索引標籤上，選擇 [目標 Framework]****。 從下拉式清單中，選擇 [.NET Framework 3.5]**** 或更新版本，如下圖所示。 您不應指定用戶端版本。
+3. 在 [應用程式] 索引標籤上，選擇 [目標 Framework]。 從下拉式清單中，選擇 [.NET Framework 3.5] 或更新版本，如下圖所示。 您不應指定用戶端版本。
 
    ![目標 Framework 下拉式清單](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="retargeting-for-ccli-unit-test-projects"></a>為 C++/CLI 單元測試專案重定目標
 
-1. 建立新的 C++ **單元測試專案**專案。
+1. 建立新的 C++ **單元測試專案** 專案。
 
    > [!WARNING]
    > 若要針對 Visual C++ 建置舊版 .NET Framework 的 C++/CLI 單元測試，您必須使用對應版本的 Visual Studio。
 
-2. 在 [方案總管]**** 中，從新的 C++ 測試專案選擇 [卸載專案]****。
+2. 在 [方案總管] 中，從新的 C++ 測試專案選擇 [卸載專案]。
 
-3. 在 **方案總管**中，選擇已卸載的 c + + 測試專案，然後選擇 [ **編輯 \<project name> .vcxproj**]。
+3. 在 **方案總管** 中，選擇已卸載的 c + + 測試專案，然後選擇 [ **編輯 \<project name> .vcxproj**]。
 
    .Vcxproj 檔案會在編輯器中開啟 *。*
 
@@ -102,7 +104,7 @@ ms.locfileid: "85288165"
 
 5. 儲存並關閉 *.vcxproj* 檔案。
 
-6. 在 [方案總管]**** 中，從新的 C++ 測試專案右鍵功能表選取 [重新載入專案]****。
+6. 在 [方案總管] 中，從新的 C++ 測試專案右鍵功能表選取 [重新載入專案]。
 
 ## <a name="see-also"></a>另請參閱
 

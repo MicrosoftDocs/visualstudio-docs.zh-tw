@@ -1,5 +1,7 @@
 ---
 title: SharePoint 專案專案架構參考 |Microsoft Docs
+description: 請參閱 SharePoint 專案專案 XML 架構參考的總覽 (ProjectItemModelSchema .xsd) ，它是用來驗證 .spdata 檔案的內容。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,15 +25,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc15ff5c384ec63f99ed50a5f3c700efd7ba3c18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd425111e7e3d69e381e69e60daf914f74cd2d11
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63007715"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442543"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>SharePoint 專案專案架構參考
-  Visual Studio 使用 SharePoint 專案專案架構來驗證 *.spdata* 檔案的內容。 *.Spdata*檔案會指定 SharePoint 專案專案的內容和行為。 如需 SharePoint 專案專案內容的詳細資訊，請參閱 [建立 sharepoint 專案專案的專案範本和專案範本](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。
+  Visual Studio 使用 SharePoint 專案專案架構來驗證 *.spdata* 檔案的內容。 *.Spdata* 檔案會指定 SharePoint 專案專案的內容和行為。 如需 SharePoint 專案專案內容的詳細資訊，請參閱 [建立 sharepoint 專案專案的專案範本和專案範本](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。
 
  SharePoint 專案專案架構的名稱為 ProjectItemModelSchema，預設會安裝在% Program Files (x86) % \ Microsoft Visual Studio 11.0 \ Xml\schemas
 

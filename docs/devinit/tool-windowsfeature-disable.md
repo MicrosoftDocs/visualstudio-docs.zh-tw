@@ -1,7 +1,7 @@
 ---
 title: windowsfeature-disable
 description: devinit tool 的-disable。
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1f06f89a61b77bd4c323303ca796252d4874b3cc
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: e48ba0a288aec76588e3d984d4c1577e053e35ae
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671729"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442156"
 ---
 # <a name="windowsfeature-disable"></a>windowsfeature-disable
 
@@ -40,10 +40,10 @@ ms.locfileid: "94671729"
 
 ### <a name="default-behavior"></a>預設行為
 
-此工具的預設行為 `windowsfeature-disable` 是「錯誤」（ `input` required）。
+工具的預設行為 `windowsfeature-disable` 是在需要時發生錯誤 `input` 。
 
 ## <a name="example-usage"></a>使用方式範例
-以下是如何使用執行的範例 `windowsfeature-disable` `.devinit.json` 。 
+以下是如何使用執行的範例 `windowsfeature-disable` `.devinit.json` 。
 
 #### <a name="devinitjson-that-will-disable-a-specified-feature"></a>.devinit.js將停用指定的功能：
 ```json

@@ -1,5 +1,7 @@
 ---
 title: 如何：建立診斷資料配接器
+description: 瞭解如何使用 Visual Studio 建立類別庫，並新增診斷資料配接器 Api，以建立診斷資料介面卡。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,16 +10,16 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd5d4d14267be51dfea20c43630ff9f31f6d13ac
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 730a3e2618bd5f424d21eaf3eb4ef3621ec1838e
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928615"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439845"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>如何：建立診斷資料配接器
 
-若要建立「診斷資料配接器」**，您可以使用 Visual Studio 建立類別庫，然後將 Visual Studio Enterprise 提供的診斷資料配接器 API 新增類別庫。 在處理測試回合期間引發的事件時，請以資料流或檔案的形式將您所需要的資訊傳送至架構所提供的 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>。 測試完成時，傳送至 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> 的資料流或檔案會儲存為測試結果的附件。 如果從這些測試結果建立 Bug，或當使用[!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]時，檔案也會連結至 Bug。
+若要建立「診斷資料配接器」，您可以使用 Visual Studio 建立類別庫，然後將 Visual Studio Enterprise 提供的診斷資料配接器 API 新增類別庫。 在處理測試回合期間引發的事件時，請以資料流或檔案的形式將您所需要的資訊傳送至架構所提供的 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>。 測試完成時，傳送至 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> 的資料流或檔案會儲存為測試結果的附件。 如果從這些測試結果建立 Bug，或當使用[!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]時，檔案也會連結至 Bug。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -50,21 +52,21 @@ ms.locfileid: "91928615"
 
 ## <a name="create-and-install-a-diagnostic-data-adapter"></a>建立和安裝診斷資料配接器
 
-1. 建立新的**類別庫**專案。
+1. 建立新的 **類別庫** 專案。
 
 2. 新增組件 **Microsoft.VisualStudio.QualityTools.ExecutionCommon**。
 
-   1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **參考** ]，然後選擇 [ **加入參考** ] 命令。
+   1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **參考** ]，然後選擇 [ **加入參考** ] 命令。
 
-   2. 選擇 [.NET]**** 並尋找 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**。
+   2. 選擇 [.NET] 並尋找 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**。
 
    3. 選擇 [確定]。
 
 3. 新增組件 **Microsoft.VisualStudio.QualityTools.Common**。
 
-   1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **參考** ]，然後選取 [ **加入參考** ] 命令。
+   1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **參考** ]，然後選取 [ **加入參考** ] 命令。
 
-   2. 選擇 [/.NET]****，尋找 **Microsoft.VisualStudio.QualityTools.Common.dll**。
+   2. 選擇 [/.NET]，尋找 **Microsoft.VisualStudio.QualityTools.Common.dll**。
 
    3. 選擇 [確定]。
 
@@ -255,7 +257,7 @@ ms.locfileid: "91928615"
 
 14. 如需詳細資訊，了解如何進行測試設定以在執行測試時使用環境，請參閱[在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)。
 
-15. 若要選取您的診斷資料介面卡，您必須先選取現有的測試設定，或從 Visual Studio 中建立新的測試設定，或在 Visual Studio 2017) 中 Microsoft Test Manager (淘汰。 配接器會顯示在測試設定的 [資料和診斷]**** 索引標籤上，並使用您指派給類別的易記名稱。
+15. 若要選取您的診斷資料介面卡，您必須先選取現有的測試設定，或從 Visual Studio 中建立新的測試設定，或在 Visual Studio 2017) 中 Microsoft Test Manager (淘汰。 配接器會顯示在測試設定的 [資料和診斷] 索引標籤上，並使用您指派給類別的易記名稱。
 
 16. 將這些測試設定設定為作用中。 如需測試設定的詳細資訊，請參閱 [使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)。
 

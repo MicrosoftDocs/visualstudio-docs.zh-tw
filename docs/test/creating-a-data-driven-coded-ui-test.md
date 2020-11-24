@@ -1,5 +1,7 @@
 ---
 title: 資料驅動式自動程式化 UI 測試
+description: 瞭解如何使用資料驅動的自動程式化 UI 測試，藉由使用不同的參數值多次執行您的測試，來測試不同的條件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada1f297bbb30fbe636042c87aae42849c1b6b7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9c4deb02bea8bf6e3dc3615ba9c5f0eddc6c877
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595354"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442673"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>建立資料驅動自動程式碼 UI 測試
 
@@ -22,7 +24,7 @@ ms.locfileid: "75595354"
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**需求**
+**Requirements**
 
 - Visual Studio Enterprise
 - 自動程式化 UI 測試元件
@@ -64,17 +66,17 @@ ms.locfileid: "75595354"
    }
    ```
 
-5. 使用 `AddNumbers()` 方法，確認執行測試。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後選擇 [執行測試]****。  (鍵盤快速鍵： **Ctrl** + **R**、**T**) 。
+5. 使用 `AddNumbers()` 方法，確認執行測試。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後選擇 [執行測試]。  (鍵盤快速鍵： **Ctrl** + **R**、**T**) 。
 
-    測試結果會顯示測試 **瀏覽器** 視窗中是否顯示測試成功或失敗。 若要開啟 [測試總管] 視窗，請從 [測試]**** 功能表中選擇 [視窗]****，然後選擇 [測試總管]****。
+    測試結果會顯示測試 **瀏覽器** 視窗中是否顯示測試成功或失敗。 若要開啟 [測試總管] 視窗，請從 [測試] 功能表中選擇 [視窗]，然後選擇 [測試總管]。
 
-6. 因為資料來源也可以用於判斷提示參數值 (測試用來確認預期的值)；讓我們新增判斷提示來驗證兩個數字的總和是否正確。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後依序選擇 [產生自動程式化 UI 測試的程式碼]**** 和 [使用自動程式化 UI 測試產生器]****。
+6. 因為資料來源也可以用於判斷提示參數值 (測試用來確認預期的值)；讓我們新增判斷提示來驗證兩個數字的總和是否正確。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後依序選擇 [產生自動程式化 UI 測試的程式碼] 和 [使用自動程式化 UI 測試產生器]。
 
     對應計算機中顯示總和的文字控制項。
 
     ![對應 UI 文字控制項](../test/media/cuit_datadriven_addassertion.png)
 
-7. 加入判斷提示，以驗證總和的值是否正確。 選擇值為 **3** 的 [顯示文字]**** 屬性，然後選擇 [加入判斷提示]****。 使用 **AreEqual** 比較子，並確認比較值為 **3**。
+7. 加入判斷提示，以驗證總和的值是否正確。 選擇值為 **3** 的 [顯示文字] 屬性，然後選擇 [加入判斷提示]。 使用 **AreEqual** 比較子，並確認比較值為 **3**。
 
     ![設定判斷提示](../test/media/cuit_datadriven_builderaddassertion2.png)
 
@@ -92,19 +94,19 @@ ms.locfileid: "75595354"
    }
    ```
 
-9. 使用 `ValidateSum()` 方法，確認測試執行。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後選擇 [執行測試]****。  (鍵盤快速鍵： **Ctrl** + **R**、**T**) 。
+9. 使用 `ValidateSum()` 方法，確認測試執行。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後選擇 [執行測試]。  (鍵盤快速鍵： **Ctrl** + **R**、**T**) 。
 
      目前，所有參數值在其方法中都會定義為常數。 接下來，讓我們建立資料集，以將測試設為資料驅動。
 
 ### <a name="step-2---create-a-data-set"></a>步驟 2 - 建立資料集
 
-1. 將文字檔新增至名為 data.csv** 的 dataDrivenSample 專案。
+1. 將文字檔新增至名為 data.csv 的 dataDrivenSample 專案。
 
      ![將逗號分隔值檔案加入專案](../test/media/cuit_datadriven_addcsvfile.png)
 
 2. 以下列資料填入 *.csv* 檔案：
 
-    |Num1|Num2|Sum|
+    |Num1|Num2|總和|
     |-|-|-|
     |3|4|7|
     |5|6|11|
@@ -114,9 +116,9 @@ ms.locfileid: "75595354"
 
      ![將資料填入 .csv 檔案](../test/media/cuit_datadriven_adddatatocsvfile.png)
 
-3. 請務必使用正確的編碼方式來儲存 *.csv* 檔案。 在 [檔案]**** 功能表上，選擇 [進階儲存選項]****，然後選擇 [Unicode (UTF-8 無簽章) - 字碼頁 65001]**** 作為編碼。
+3. 請務必使用正確的編碼方式來儲存 *.csv* 檔案。 在 [檔案] 功能表上，選擇 [進階儲存選項]，然後選擇 [Unicode (UTF-8 無簽章) - 字碼頁 65001] 作為編碼。
 
-4. *.Csv*檔案必須複製到輸出目錄，否則無法執行測試。 您可以使用 [ **屬性** ] 視窗來複製它。
+4. *.Csv* 檔案必須複製到輸出目錄，否則無法執行測試。 您可以使用 [ **屬性** ] 視窗來複製它。
 
      ![部署 .csv 檔案](../test/media/cuit_datadriven_deploycsvfile.png)
 
@@ -179,7 +181,7 @@ ms.locfileid: "75595354"
 
      若要了解要將資料編寫至其中的搜尋屬性，請使用 [自動程式碼 UI 測試編輯器]。
 
-    - 開啟 UIMap.uitest** 檔案。
+    - 開啟 UIMap.uitest 檔案。
 
          ![開啟自動程式碼 UI 測試編輯器](../test/media/cuit_datadriven_opentesteditor.png)
 
@@ -231,7 +233,7 @@ ms.locfileid: "75595354"
 
 **答：** 每次您使用 UIMap 自動程式化 UI 測試產生器產生程式碼時，就會覆寫您在 *UIMapDesigner.cs* 檔案中所做的任何程式碼變更。 在此範例中，在大部分情況下，啟用測試以使用資料來源所需的程式碼變更可用於測試的原始程式碼檔 (也就是 *CodedUITest1.cs*) 。
 
-如果您必須修改錄製的方法，您必須將它複製到 *UIMap.cs* 檔案並重新命名。 *UIMap.cs* 檔案可用來覆寫 *UIMapDesigner.cs* 檔案中的方法和屬性。 您必須移除 Coded UITest.cs** 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。
+如果您必須修改錄製的方法，您必須將它複製到 *UIMap.cs* 檔案並重新命名。 *UIMap.cs* 檔案可用來覆寫 *UIMapDesigner.cs* 檔案中的方法和屬性。 您必須移除 Coded UITest.cs 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。
 
 ## <a name="see-also"></a>另請參閱
 

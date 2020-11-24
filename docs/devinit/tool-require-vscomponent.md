@@ -1,7 +1,7 @@
 ---
 title: require-vscomponent
 description: devinit 工具需要-vscomponent。
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e9d2f546e99f83b4c53d0b76abfdaf8ec91868ac
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 4a4725ac0757f43830741afd5aefd540633f05af
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672108"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442274"
 ---
 # <a name="require-vscomponent"></a>require-vscomponent
 
@@ -45,7 +45,7 @@ ms.locfileid: "94672108"
 此工具的預設行為 `require-vscomponent` 是尋找 `.vsconfig` 目前目錄中的檔案，並在無訊息模式中以這些詳細資料執行 Visual Studio 安裝程式。 `require-vscomponent` 僅支援修改現有的 Visual Studio 安裝。
 
 ## <a name="example-usage"></a>使用方式範例
-以下是如何使用執行的範例 `require-vscomponent` `.devinit.json` 。 
+以下是如何使用執行的範例 `require-vscomponent` `.devinit.json` 。
 
 #### <a name="devinitjson-that-will-import-the-configurations-of-a-given-vsconfig-file-path"></a>.devinit.js，將會匯入指定 .vsconfig 檔案路徑的設定：
 ```json

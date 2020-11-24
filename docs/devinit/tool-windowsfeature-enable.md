@@ -1,7 +1,7 @@
 ---
 title: windowsfeature-enable
 description: devinit tool，啟用。
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 9ed1cc5379cc28c3932c96271fda27e23f4cd27c
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 57c122f9ff86994d6ed262fa41834a01be5fa949
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672003"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442116"
 ---
 # <a name="windowsfeature-enable"></a>windowsfeature-enable
 
@@ -40,10 +40,10 @@ ms.locfileid: "94672003"
 
 ### <a name="default-behavior"></a>預設行為
 
-此工具的預設行為 `windowsfeature-enable` 是「錯誤」（ `input` required）。
+工具的預設行為 `windowsfeature-enable` 是在需要時發生錯誤 `input` 。
 
 ## <a name="example-usage"></a>使用方式範例
-以下是如何使用執行的範例 `windowsfeature-enable` `.devinit.json` 。 
+以下是如何使用執行的範例 `windowsfeature-enable` `.devinit.json` 。
 
 #### <a name="devinitjson-that-will-install-iis"></a>.devinit.js將會安裝 IIS：
 ```json

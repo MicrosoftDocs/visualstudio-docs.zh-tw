@@ -1,7 +1,7 @@
 ---
 title: require-mssql
 description: devinit 工具需要-mssql。
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7d7a5e7d8ba78b98e05d1b9aff3145c3c34c6ca0
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 95558da015462899d0388870fce95d19030fc291
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672129"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442095"
 ---
 # <a name="require-mssql"></a>require-mssql
 
@@ -36,7 +36,7 @@ ms.locfileid: "94672129"
 
 `input`屬性可以是具有下列兩個值之一的字串：
 
-| 值     | 說明                              |
+| 值     | 描述                              |
 |-----------|------------------------------------------|
 | 安裝   | 安裝 SQL server。                     |
 | uninstall | 卸載所有的 SQL server 安裝。 |
@@ -49,11 +49,11 @@ ms.locfileid: "94672129"
 
 工具的預設行為 `require-mssql` 是安裝 SQL server。
 
-### <a name="builtin-options"></a>內建選項
+### <a name="built-in-options"></a>內建選項
 
 此 `require-mssql` 工具會設定一些安裝程式命令列引數，以確保安裝程式可以執行無周邊。 以下列出這些引數，您可以在 [SQL 安裝檔](/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt?view=sql-server-ver15&preserve-view=true)中找到這些引數的相關檔。
 
-| 名稱                                                               | 說明 |
+| Name                                                               | 描述 |
 |--------------------------------------------------------------------|-------------|
 | /q                                                                 |             |
 | /ACTION = 安裝                                                    |             |
@@ -75,7 +75,7 @@ ms.locfileid: "94672129"
 | /IACCEPTSQLSERVERLICENSETERMS                                      |             |
 
 ## <a name="example-usage"></a>使用方式範例
-以下是如何使用執行的範例 `require-msssql` `.devinit.json` 。 
+以下是如何使用執行的範例 `require-msssql` `.devinit.json` 。
 
 #### <a name="devinitjson-that-will-install-mssql"></a>.devinit.js將會安裝 MSSQL：
 ```json

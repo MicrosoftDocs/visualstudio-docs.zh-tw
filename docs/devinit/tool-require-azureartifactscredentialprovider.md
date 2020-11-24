@@ -1,7 +1,7 @@
 ---
 title: require-azureartifactscredentialprovider
 description: devinit 工具需要-azureartifactscredentialprovider。
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 0aa0d250289e6bf79467c0a00ddddef5264ed6d2
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: ad39bc070841dae5202abca8ca4624927a100f23
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671896"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440385"
 ---
 # <a name="require-azureartifactscredentialprovider"></a>require-azureartifactscredentialprovider
 
@@ -42,10 +42,10 @@ ms.locfileid: "94671896"
 
 ### <a name="default-behavior"></a>預設行為
 
-工具的預設行為 `require-azureartifactscredentialprovider` 是安裝最新的 Azure Artifacts 認證提供者。
+工具的預設行為 `require-azureartifactscredentialprovider` 是安裝最新版本的 Azure Artifacts 認證提供者。
 
 ## <a name="example-usage"></a>使用方式範例
-以下是如何使用執行的範例 `require-azureartifactscredentialprovider` `.devinit.json` 。 
+以下是如何使用執行的範例 `require-azureartifactscredentialprovider` `.devinit.json` 。
 
 #### <a name="devinitjson-that-will-install-azure-artifacts-credential-provider"></a>.devinit.js將會安裝 Azure Artifacts 認證提供者：
 ```json

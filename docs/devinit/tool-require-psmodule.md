@@ -1,7 +1,7 @@
 ---
 title: require-psmodule
 description: devinit 工具需要-psmodule。
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 51d9353333fac6dcca0035bf7cc8dd722c32cb40
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: c8c87e6df0e7ea66c2413f85fa39f397f30d50a7
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672115"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440001"
 ---
 # <a name="require-psmodule"></a>require-psmodule
 
@@ -47,11 +47,11 @@ ms.locfileid: "94672115"
 
 工具的預設行為 `require-psmodule` 是在需要時發生錯誤 `input` 。
 
-## <a name="builtin-options"></a>內建選項
+### <a name="built-in-options"></a>內建選項
 
 此 `require-psmodule` 工具會設定一些 `Install-Module` 命令列引數，以確保 `Install-Module` 可執行無周邊。 以下列出這些引數，您可以在 [安裝模組](/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true)中找到這些引數的相關檔。
 
-| 名稱         | 說明                                                                                                                                                                                                                                                                                                                                                               |
+| Name         | 描述                                                                                                                                                                                                                                                                                                                                                               |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **-Force**   | 安裝模組並覆寫有關模組安裝衝突的警告訊息。 如果電腦上已有相同名稱的模組，則強制允許安裝多個版本。 如果存在具有相同名稱和版本的現有模組，將會覆寫模組。 Force 和 AllowClobber 可以在 Install-Module 命令中一起使用。 |
 | **-WhatIf**  | -傳遞命令的試執行時，會新增 WhatIf 旗標 `devinit` 。                                                                                                                                                                                                                                                                                                       |
@@ -59,7 +59,7 @@ ms.locfileid: "94672115"
 
 
 ## <a name="example-usage"></a>使用方式範例
-以下是如何使用執行的範例 `require-psmodule` `.devinit.json` 。 
+以下是如何使用執行的範例 `require-psmodule` `.devinit.json` 。
 
 #### <a name="devinitjson-that-will-install-the-powershellget-module"></a>.devinit.js將會安裝 PowerShellGet 模組：
 ```json

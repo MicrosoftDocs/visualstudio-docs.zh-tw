@@ -1,7 +1,7 @@
 ---
 title: choco-upgrade
 description: devinit tool choco-upgrade。
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7db97694e129fe5c70de09aaf4c132656ae00746
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 27a29584a4cf3cd688abe36f625c2e68967c39c0
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672223"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440486"
 ---
 # <a name="choco-upgrade"></a>choco-upgrade
 
@@ -26,11 +26,11 @@ ms.locfileid: "94672223"
 
 如果 `input` 和 `additionalOptions` 屬性都省略或空白，則工具不會執行任何動作。
 
-| 名稱                                             | 類型   | 必要 | 值                                                                                                          |
-|--------------------------------------------------|--------|----------|----------------------------------------------------------------------------------------------------------------|
-| **評論**                                     | 字串 | No       | 選擇性批註屬性。 未使用。                                                                          |
-| [**輸入**](#input)                              | 字串 | No       | 要升級的封裝。 如需詳細資料，請參閱下列 [輸入](#input) 。                                                 |
-| [**additionalOptions**](#additional-options)     | 字串 | No       | 傳遞至工具的其他選項。 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。       |
+| 名稱                                             | 類型   | 必要  | 值                                                                                                          |
+|--------------------------------------------------|--------|-----------|----------------------------------------------------------------------------------------------------------------|
+| **評論**                                     | 字串 | No        | 選擇性批註屬性。 未使用。                                                                          |
+| [**輸入**](#input)                              | 字串 | 是       | 要升級的封裝。 如需詳細資料，請參閱下列 [輸入](#input) 。                                                 |
+| [**additionalOptions**](#additional-options)     | 字串 | No        | 傳遞至工具的其他選項。 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。       |
 
 ### <a name="input"></a>輸入
 
@@ -40,18 +40,22 @@ ms.locfileid: "94672223"
 
 您可以將其他設定選項傳入作為的值 `additionalOptions` 。 這些引數是直接傳遞給所使用的引數， [`choco upgrade`](https://chocolatey.org/docs/commands-upgrade) 而且是在 chocolatey 檔中定義。
 
-## <a name="built-in-options"></a>內建選項
+### <a name="built-in-options"></a>內建選項
 
 此 `choco-upgrade` 工具會設定一些 `choco` 命令列引數，以確保 `choco` 可執行無周邊。 以下列出這些引數，您可以在 [chocolatey 檔](https://chocolatey.org/docs/)中找到這些引數的相關檔。
 
-| 名稱                  | 說明                                                                                        |
+| Name                  | 描述                                                                                        |
 |-----------------------|----------------------------------------------------------------------------------------------------|
 | **--是**             | 確認所有提示-選擇肯定答案而非提示。 意指 `--accept-license` 。 |
 | **--沒有進度**     | 不要顯示進度-不會顯示進度百分比。                                         |
 | **--skip-powershell** | 略過 PowerShell-chocolateyInstall.ps1 將不會執行。                                              |
 
+### <a name="default-behavior"></a>預設行為
+
+此工具的預設行為 `choco-upgrade` 是因為需要屬性而發生錯誤 `input` 。
+
 ## <a name="example-usage"></a>使用方式範例
-以下是如何使用執行的範例 `choco-upgrade` `.devinit.json` 。 
+以下是如何使用執行的範例 `choco-upgrade` `.devinit.json` 。
 
 #### <a name="devinitjson-that-will-update-packages-listed-in-packagesconfig"></a>.devinit.js，將會更新 packages.config 中所列的套件：
 ```json

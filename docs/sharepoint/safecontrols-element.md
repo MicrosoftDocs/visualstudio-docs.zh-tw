@@ -1,5 +1,7 @@
 ---
 title: SafeControls 元素 |Microsoft Docs
+description: 取得 SafeControls 元素的相關資訊，其中包含在 SharePoint 網站的 ASPX 頁面上標示為安全存取的 ASPX 控制項或網頁元件的集合。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e840f0040cf94fea408615525358580d207f07c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3423d1b6efd106ef7f947bd8573dcd1aa548a66
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547897"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440671"
 ---
 # <a name="safecontrols-element"></a>SafeControls 項目
   ASPX 控制項和 Web 組件的集合，可在 SharePoint 網站上的任何 ASPX 頁面上，指定為可存取的任何使用者的安全。

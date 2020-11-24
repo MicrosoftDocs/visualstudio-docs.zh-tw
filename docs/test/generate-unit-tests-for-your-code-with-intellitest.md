@@ -1,5 +1,7 @@
 ---
 title: 使用 IntelliTest 為程式碼產生單元測試
+description: IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元測試套件。 瞭解如何執行 IntelliTest，以查看哪些測試失敗並加以修正。
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2015
 ms.topic: conceptual
 f1_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 65b1de58f195b957d080bd21144c22479b1aafed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d503d37cfcacace8250da4d3e91221364c66b5c
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589587"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442465"
 ---
 # <a name="how-to-generate-unit-tests-by-using-intellitest"></a>如何：使用 IntelliTest 產生單元測試
 
@@ -24,7 +26,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
 ## <a name="availability-and-extensions"></a>可用性和延伸模組
 
-**建立 IntelliTest** 和**執行 IntelliTest** 功能表命令︰
+**建立 IntelliTest** 和 **執行 IntelliTest** 功能表命令︰
 
 * 僅在 Visual Studio Enterprise Edition 中提供使用。
 
@@ -40,7 +42,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
 1. 在 Visual Studio 中開啟您的解決方案，然後開啟擁有您欲測試方法的類別檔案。
 
-2. 在方法上按一下滑鼠右鍵，然後選擇 [執行 IntelliTest] ****，為方法中的程式碼產生單元測試。
+2. 在方法上按一下滑鼠右鍵，然後選擇 [執行 IntelliTest] ，為方法中的程式碼產生單元測試。
 
    ![以滑鼠右鍵按一下您的方法，以產生單元測試](../test/media/runpex.png)
 
@@ -48,7 +50,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
    ![[探勘結果] 視窗會與測試一併顯示](../test/media/pexexplorationresults.png)
 
-若要為類別中的所有公用方法產生單元測試，只要在該類別上 (不需要在特定的方法上) 按一下滑鼠右鍵，然後選擇 [執行 IntelliTest]**** 即可。 您可以使用 [ **流覽結果** ] 視窗中的下拉式清單，顯示類別中每個方法的單元測試和輸入資料。
+若要為類別中的所有公用方法產生單元測試，只要在該類別上 (不需要在特定的方法上) 按一下滑鼠右鍵，然後選擇 [執行 IntelliTest] 即可。 您可以使用 [ **流覽結果** ] 視窗中的下拉式清單，顯示類別中每個方法的單元測試和輸入資料。
 
 ![從清單中選取要檢視的測試結果](../test/media/selectpextest.png)
 
@@ -130,7 +132,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
 ### <a name="q-can-i-generate-parameterized-unit-tests-without-running-intellitest-first"></a><a name="NoRun"></a> 問： 是否可以產生參數化的單元測試而不需先執行 IntelliTest?
 
-**答：** 可以，只要以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest] **** 即可。
+**答：** 可以，只要以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest] 即可。
 
 ![以滑鼠右鍵按一下編輯器，選擇 [建立 IntelliTest]](../test/media/pexcreateintellitest.png)
 
@@ -144,7 +146,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 **答：** 可以，請遵循 [尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。
 Visual Studio Marketplace 中也提供測試架構延伸模組，例如 [NUnit 測試](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)產生器。
 
-重新啟動 Visual Studio 並重新開啟方案之後，以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest] ****。 於此處選取您已安裝的架構：
+重新啟動 Visual Studio 並重新開啟方案之後，以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest] 。 於此處選取您已安裝的架構：
 
 ![選取 IntelliTest 的其他單元測試架構](../test/media/pexcreateintellitestextensions.png)
 

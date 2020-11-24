@@ -1,5 +1,7 @@
 ---
 title: 在測試期間錄製螢幕及聲音
+description: 瞭解如何設定診斷資料介面卡，以在 Visual Studio 中記錄執行測試之使用者的螢幕和聲音。
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2366e77b0b66e2a31ce17e1aefb9240e4f45df2d
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 08ae6d19327a956b5dab71fa30b0b33742390d2b
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928641"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440983"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>如何：使用測試設定在測試期間包含螢幕和聲音錄製
 
@@ -30,25 +32,25 @@ ms.locfileid: "91928641"
 
 1. 開啟您要設定錄製螢幕和聲音的測試設定。 如需詳細資訊，請參閱[在測試時收集診斷資料 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true) 或[使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)。
 
-2. 在測試設定中，選取要用來錄製螢幕和聲音的 [角色]****。
+2. 在測試設定中，選取要用來錄製螢幕和聲音的 [角色]。
 
     > [!NOTE]
     > 若為手動測試和自動化測試，該項是執行測試的機器。
 
-3. 選取 [螢幕和聲音錄製器]****，然後選擇 [設定]****。
+3. 選取 [螢幕和聲音錄製器]，然後選擇 [設定]。
 
-     [設定診斷資料配接器 - 螢幕和聲音錄製器]**** 對話方塊隨即顯示。
+     [設定診斷資料配接器 - 螢幕和聲音錄製器] 對話方塊隨即顯示。
 
      ![視訊組態](../test/media/testsettingvideoconfiggdr.png)
 
-4. (選擇性) 選取 [啟用錄音]**** 擷取錄製中的音訊內容。
+4. (選擇性) 選取 [啟用錄音] 擷取錄製中的音訊內容。
 
-5. (選擇性) 若要指定針對失敗和成功的測試儲存螢幕和聲音錄製，請選取 [如果測試案例成功即儲存錄製]**** 旁的核取方塊。
+5. (選擇性) 若要指定針對失敗和成功的測試儲存螢幕和聲音錄製，請選取 [如果測試案例成功即儲存錄製] 旁的核取方塊。
 
     > [!WARNING]
-    > 如果您選取 [如果測試案例成功即儲存錄製]****，錄製內容會與測試結果一併儲存，並且使用伺服器上的儲存空間。 您可以使用 **Test Attachment Cleaner** 工具清除這些附件。
+    > 如果您選取 [如果測試案例成功即儲存錄製]，錄製內容會與測試結果一併儲存，並且使用伺服器上的儲存空間。 您可以使用 **Test Attachment Cleaner** 工具清除這些附件。
 
-6. 在 [螢幕錄製品質]**** 底下，設定下列下拉式清單選項：
+6. 在 [螢幕錄製品質] 底下，設定下列下拉式清單選項：
 
     1. **畫面播放速率：** 指定您要在螢幕和聲音錄製中使用的每秒畫面格數。 預設值為每秒 4 個畫面格。 您可以指定介於 2 和 20 之間的值。
 
@@ -60,7 +62,7 @@ ms.locfileid: "91928641"
 
     ::: moniker range="vs-2017"
     > [!TIP]
-    > 若要重設此診斷資料配接器的組態，請在 Visual Studio 中選擇 [重設為預設組態]****，在 Microsoft Test Manager 中則選擇 [重設為預設值]****。
+    > 若要重設此診斷資料配接器的組態，請在 Visual Studio 中選擇 [重設為預設組態]，在 Microsoft Test Manager 中則選擇 [重設為預設值]。
     ::: moniker-end
     ::: moniker range=">=vs-2019"
     > [!TIP]

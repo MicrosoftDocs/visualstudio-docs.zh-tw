@@ -1,7 +1,7 @@
 ---
 title: require-nodejs
 description: devinit 工具需要-nodejs。
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3da6bd121aff31c680bea2c4655ee2250f5edb05
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cc071e126baaa7231c8e2d1a6cbd764854918b3f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671784"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442109"
 ---
 # <a name="require-nodejs"></a>require-nodejs
 

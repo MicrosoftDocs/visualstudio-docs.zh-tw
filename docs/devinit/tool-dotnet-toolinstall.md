@@ -1,7 +1,7 @@
 ---
 title: dotnet-toolinstall
 description: devinit tool dotnet-toolinstall。
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 85a8beafdc9b19a807becabb459baa5de88169e2
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 343c66a0f1da955479993502cf5dcf967abe03b9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672216"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440399"
 ---
 # <a name="dotnet-toolinstall"></a>dotnet-toolinstall
 
@@ -38,7 +38,7 @@ ms.locfileid: "94672216"
 
 ### <a name="additional-options"></a>其他選項
 
-您可以將其他設定選項傳入作為的值 `additionalOptions` 。 這些引數是命令所使用之引數的直接傳遞 [`dotnet tool update`](/dotnet/core/tools/global-tools#update-a-tool) 。 
+您可以將其他設定選項傳入作為的值 `additionalOptions` 。 這些引數是命令所使用之引數的直接傳遞 [`dotnet tool update`](/dotnet/core/tools/global-tools#update-a-tool) 。
 
 此 `dotnet tool update` 命令可用來安全地處理已安裝工具的情況。
 
@@ -47,7 +47,7 @@ ms.locfileid: "94672216"
 工具的預設行為 `dotnet-toolinstall` 是在需要時發生錯誤 `input` 。
 
 ## <a name="example-usage"></a>使用方式範例
-以下是如何使用執行的範例 `dotnet-toolinstall` `.devinit.json` 。 
+以下是如何使用執行的範例 `dotnet-toolinstall` `.devinit.json` 。
 
 #### <a name="devinitjson-that-will-install-the-dotnet-trace-tool"></a>.devinit.js將會安裝 dotnet 追蹤工具：
 ```json
