@@ -1,5 +1,6 @@
 ---
 title: 針對專案範本和專案範本進行疑難排解
+description: 瞭解如何在範本無法于開發環境中載入時進行疑難排解。
 ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
@@ -8,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ddb164dbd43d1d2276fce66641ba6e647b49143e
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 42dc34d846f37ed1d7655d6758d045b2db7187d9
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045712"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596842"
 ---
 # <a name="how-to-troubleshoot-templates"></a>如何：針對範本進行疑難排解
 
@@ -23,7 +24,7 @@ ms.locfileid: "93045712"
 
 ::: moniker range="vs-2017"
 
-如果範本中的  對話方塊中。
+如果範本中的 *vstemplate* 檔案未遵守 Visual Studio 範本結構描述，範本可能不會出現在 [新增專案] 對話方塊中。
 
 ::: moniker-end
 
@@ -39,9 +40,9 @@ ms.locfileid: "93045712"
 
 1. 將 *.zip* 檔案解壓縮。
 
-1. 在 Visual Studio 的 [檔案]  功能表中選擇 [開啟]  > [檔案]  。
+1. 在 Visual Studio 的 [檔案] 功能表中選擇 [開啟] > [檔案]。
 
-1. 選取範本的  。
+1. 選取範本的 *vstemplate* 檔案，然後選擇 [開啟]。
 
 1. 確認 *vstemplate* 檔案的 XML 遵守範本結構描述。 如需 *vstemplate* 結構描述的詳細資訊，請參閱 [範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)。
 
@@ -50,7 +51,7 @@ ms.locfileid: "93045712"
 
 1. 儲存並關閉 *vstemplate* 檔案。
 
-1. 選取範本中包含的檔案、按一下滑鼠右鍵，然後選擇 [ **傳送到**  >  **壓縮 (壓縮的) 資料夾** 。 您選取的檔案會壓縮成 *.zip* 檔案。
+1. 選取範本中包含的檔案、按一下滑鼠右鍵，然後選擇 [**傳送到**  >  **壓縮 (壓縮的) 資料夾**。 您選取的檔案會壓縮成 *.zip* 檔案。
 
 1. 將新的 *.zip* 檔案放在與舊 *.zip* 檔相同的目錄中。
 
@@ -60,7 +61,7 @@ ms.locfileid: "93045712"
 
 您可以遵循[針對範本探索進行疑難排解 (擴充性)](../extensibility/troubleshooting-template-discovery.md) 中的步驟來啟用範本探索的診斷記錄。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [針對範本探索進行疑難排解 (擴充性)](../extensibility/troubleshooting-template-discovery.md)
 - [自訂範本](../ide/customizing-project-and-item-templates.md)

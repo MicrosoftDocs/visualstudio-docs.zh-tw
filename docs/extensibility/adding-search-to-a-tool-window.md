@@ -1,5 +1,7 @@
 ---
 title: 將搜尋新增至工具視窗 |Microsoft Docs
+description: 瞭解如何將搜尋功能（包括搜尋方塊、篩選和進度指標）新增至 Visual Studio 中的工具視窗。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b648b0202e00ea0fa3bc659b90f2f9a7d709768f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d117ab18022285e5cd52f18a1de01adeafbc5df3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903402"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597635"
 ---
 # <a name="add-search-to-a-tool-window"></a>將搜尋新增至工具視窗
 當您建立或更新延伸模組中的工具視窗時，可以新增在 Visual Studio 的其他位置出現的相同搜尋功能。 這項功能包含下列功能：
@@ -48,7 +50,7 @@ ms.locfileid: "85903402"
 
 ## <a name="to-create-a-vsix-project"></a>建立 VSIX 專案
 
-1. `TestToolWindowSearch`使用名為**TestSearch**的工具視窗，建立名為的 VSIX 專案。 如果您需要協助，請參閱 [使用工具視窗建立延伸](../extensibility/creating-an-extension-with-a-tool-window.md)模組。
+1. `TestToolWindowSearch`使用名為 **TestSearch** 的工具視窗，建立名為的 VSIX 專案。 如果您需要協助，請參閱 [使用工具視窗建立延伸](../extensibility/creating-an-extension-with-a-tool-window.md)模組。
 
 ## <a name="to-create-a-tool-window"></a>建立工具視窗
 
@@ -75,7 +77,7 @@ ms.locfileid: "85903402"
 
      在 **TestSearchControl** 類別中，加入下列程式碼。
 
-     此程式碼會新增 <xref:System.Windows.Controls.TextBox> 名為 **SearchResultsTextBox** 的公用屬性，以及名為 **SearchContent**的公用字串屬性。 在此函式中，SearchResultsTextBox 會設定為文字方塊，而 SearchContent 會初始化為以行分隔的字串集合。 文字方塊的內容也會初始化為一組字串。
+     此程式碼會新增 <xref:System.Windows.Controls.TextBox> 名為 **SearchResultsTextBox** 的公用屬性，以及名為 **SearchContent** 的公用字串屬性。 在此函式中，SearchResultsTextBox 會設定為文字方塊，而 SearchContent 會初始化為以行分隔的字串集合。 文字方塊的內容也會初始化為一組字串。
 
      [!code-csharp[ToolWindowSearch#1](../extensibility/codesnippet/CSharp/adding-search-to-a-tool-window_1.cs)]
      [!code-vb[ToolWindowSearch#1](../extensibility/codesnippet/VisualBasic/adding-search-to-a-tool-window_1.vb)]
@@ -93,9 +95,9 @@ ms.locfileid: "85903402"
      若要啟用搜尋，您必須覆寫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> 屬性。 <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>類別 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch> 會執行，並提供不啟用搜尋的預設值。
 
     ```csharp
-    public override bool SearchEnabled
+    public override bool SearchEnabled
     {
-        get { return true; }
+        get { return true; }
     }
     ```
 
@@ -242,7 +244,7 @@ ms.locfileid: "85903402"
 1. 在 * TestSearch.cs * 檔案中，將下列程式碼加入至 `TestSearch` 類別。 這段程式碼會啟用立即搜尋，而不是依需求搜尋 (這表示使用者不需要按 **ENTER**) 。 程式碼會覆寫 `ProvideSearchSettings` 類別中的方法 `TestSearch` ，這是變更預設設定的必要方法。
 
     ```csharp
-    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)
+    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)
     {
         Utilities.SetValue(pSearchSettings,
             SearchSettingsDataSource.SearchStartTypeProperty.Name,
@@ -284,13 +286,13 @@ ms.locfileid: "85903402"
      當您每次執行搜尋時，[搜尋] 視窗中會顯示進度列 (為 [搜尋] 文字方塊下的藍色線) 。
 
 ## <a name="to-enable-users-to-refine-their-searches"></a>讓使用者精簡搜尋
- 您可以允許使用者藉由比對 **案例** 或 **全字**相符等選項來精簡搜尋。 選項可以是 [布林值]，其會顯示為核取方塊或命令，這會顯示為按鈕。 在這個逐步解說中，您將建立布林值選項。
+ 您可以允許使用者藉由比對 **案例** 或 **全字** 相符等選項來精簡搜尋。 選項可以是 [布林值]，其會顯示為核取方塊或命令，這會顯示為按鈕。 在這個逐步解說中，您將建立布林值選項。
 
 1. 在 *TestSearch.cs* 檔案中，將下列程式碼加入至 `TestSearch` 類別。 程式碼會覆寫 `SearchOptionsEnum` 方法，以允許搜尋執行偵測指定的選項是開啟或關閉。 中的程式碼會 `SearchOptionsEnum` 將符合大小寫的選項加入至 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumWindowSearchOptions> 列舉值。 符合大小寫的選項也可做為 `MatchCaseOption` 屬性。
 
     ```csharp
     private IVsEnumWindowSearchOptions m_optionsEnum;
-    public override IVsEnumWindowSearchOptions SearchOptionsEnum
+    public override IVsEnumWindowSearchOptions SearchOptionsEnum
     {
         get
         {
@@ -342,13 +344,13 @@ ms.locfileid: "85903402"
 1. 在 *TestSearch.cs* 檔案中，將下列程式碼加入至 `TestSearch` 類別。 程式碼 `SearchFiltersEnum` 會藉由加入 <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> ，以指定篩選搜尋結果，只顯示偶數行。
 
     ```csharp
-    public override IVsEnumWindowSearchFilters SearchFiltersEnum
+    public override IVsEnumWindowSearchFilters SearchFiltersEnum
     {
         get
         {
             List<IVsWindowSearchFilter> list = new List<IVsWindowSearchFilter>();
             list.Add(new WindowSearchSimpleFilter("Search even lines only", "Search even lines only", "lines", "even"));
-            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;
+            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;
         }
     }
 
@@ -359,19 +361,19 @@ ms.locfileid: "85903402"
 2. 在 *TestSearch.cs* 檔案中，將下列方法加入至類別 `TestSearchTask` 中的類別 `TestSearch` 。 這些方法支援 `OnStartSearch` 您將在下一個步驟中修改的方法。
 
     ```csharp
-    private string RemoveFromString(string origString, string stringToRemove)
+    private string RemoveFromString(string origString, string stringToRemove)
     {
         int index = origString.IndexOf(stringToRemove);
         if (index == -1)
             return origString;
-        else 
+        else 
              return (origString.Substring(0, index) + origString.Substring(index + stringToRemove.Length)).Trim();
     }
 
-    private string[] GetEvenItems(string[] contentArr)
+    private string[] GetEvenItems(string[] contentArr)
     {
         int length = contentArr.Length / 2;
-        string[] evenContentArr = new string[length];
+        string[] evenContentArr = new string[length];
 
         int indexB = 0;
         for (int index = 1; index < contentArr.Length; index += 2)
@@ -387,13 +389,13 @@ ms.locfileid: "85903402"
 3. 在 `TestSearchTask` 類別中， `OnStartSearch` 使用下列程式碼更新方法。 這種變更會更新程式碼以支援篩選。
 
     ```csharp
-    protected override void OnStartSearch()
+    protected override void OnStartSearch()
     {
-        // Use the original content of the text box as the target of the search. 
-        var separator = new string[] { Environment.NewLine };
+        // Use the original content of the text box as the target of the search. 
+        var separator = new string[] { Environment.NewLine };
         string[] contentArr = ((TestSearchControl)m_toolWindow.Content).SearchContent.Split(separator, StringSplitOptions.None);
 
-        // Get the search option. 
+        // Get the search option. 
         bool matchCase = false;
         matchCase = m_toolWindow.MatchCaseOption.Value;
 
@@ -406,7 +408,7 @@ ms.locfileid: "85903402"
         {
             string searchString = this.SearchQuery.SearchString;
 
-            // If the search string contains the filter string, filter the content array. 
+            // If the search string contains the filter string, filter the content array. 
             string filterString = "lines:\"even\"";
 
             if (this.SearchQuery.SearchString.Contains(filterString))
@@ -418,7 +420,7 @@ ms.locfileid: "85903402"
                 searchString = RemoveFromString(searchString, filterString);
             }
 
-            // Determine the results. 
+            // Determine the results. 
             uint progress = 0;
             foreach (string line in contentArr)
             {
@@ -441,7 +443,7 @@ ms.locfileid: "85903402"
 
                 SearchCallback.ReportProgress(this, progress++, (uint)contentArr.GetLength(0));
 
-                // Uncomment the following line to demonstrate the progress bar. 
+                // Uncomment the following line to demonstrate the progress bar. 
                 // System.Threading.Thread.Sleep(100);
             }
         }
@@ -457,8 +459,8 @@ ms.locfileid: "85903402"
             this.SearchResults = resultCount;
         }
 
-        // Call the implementation of this method in the base class. 
-        // This sets the task status to complete and reports task completion. 
+        // Call the implementation of this method in the base class. 
+        // This sets the task status to complete and reports task completion. 
         base.OnStartSearch();
     }
     ```

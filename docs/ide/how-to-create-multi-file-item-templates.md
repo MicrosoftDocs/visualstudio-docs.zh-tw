@@ -1,5 +1,7 @@
 ---
 title: 建立多檔案項目範本
+description: 瞭解如何在由多個檔案組成的 Visual Studio 中建立專案範本。
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 4a4f0c50fc0a3fe21da560356d3551ca85ef9d66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a947d23bd7094e003bae3cfe880299bb3698d92e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284421"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597258"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>如何：建立多檔案項目範本
 
@@ -26,11 +28,11 @@ ms.locfileid: "85284421"
 
 - 一個包含表單內嵌資源的檔案
 
-多檔案項目範本需要參數，確保建立項目時使用正確的檔案副檔名。 如果您使用 [匯出範本精靈]**** 建立多檔案項目範本，就會自動產生這些參數，而且不需要進行任何進一步編輯。
+多檔案項目範本需要參數，確保建立項目時使用正確的檔案副檔名。 如果您使用 [匯出範本精靈] 建立多檔案項目範本，就會自動產生這些參數，而且不需要進行任何進一步編輯。
 
 ## <a name="use-the-export-template-wizard"></a>使用 [匯出範本精靈]
 
-建立多檔案項目範本使用的方式和建立單一檔案項目範本一樣。 請參閱[如何：建立項目範本](../ide/how-to-create-item-templates.md)。 在精靈的 [選取要匯出的項目]**** 頁面中，選取有相依檔案的檔案 (例如，Windows Forms 表單檔案)。 精靈會自動納入範本的所有相依檔案，例如設計工具和資源檔。
+建立多檔案項目範本使用的方式和建立單一檔案項目範本一樣。 請參閱[如何：建立項目範本](../ide/how-to-create-item-templates.md)。 在精靈的 [選取要匯出的項目] 頁面中，選取有相依檔案的檔案 (例如，Windows Forms 表單檔案)。 精靈會自動納入範本的所有相依檔案，例如設計工具和資源檔。
 
 ## <a name="manually-create-a-multi-file-item-template"></a>手動建立多檔案項目範本
 
@@ -51,7 +53,7 @@ ms.locfileid: "85284421"
     ```
 
      > [!NOTE]
-     > 將衍生自此範本的項目新增至專案時，檔案名稱會衍生自使用者在 [新增項目]**** 對話方塊中輸入的名稱。
+     > 將衍生自此範本的項目新增至專案時，檔案名稱會衍生自使用者在 [新增項目] 對話方塊中輸入的名稱。
 
 1. 選取要包含在範本中的檔案，在選取專案上按一下滑鼠右鍵，然後選擇 [**傳送到**  >  **壓縮的 (壓縮的) 資料夾**。
 
@@ -61,13 +63,13 @@ ms.locfileid: "85284421"
 
 1. 結束再重新開啟 Visual Studio。
 
-1. 建立新的專案，或開啟現有的專案，然後選擇 [ **project**  >  **加入新專案**] 或按**Ctrl** + **Shift** + **a**。
+1. 建立新的專案，或開啟現有的專案，然後選擇 [ **project**  >  **加入新專案**] 或按 **Ctrl** + **Shift** + **a**。
 
-   多檔案項目範本即會出現在 [新增項目]**** 對話方塊中。
+   多檔案項目範本即會出現在 [新增項目] 對話方塊中。
 
 ## <a name="example"></a>範例
 
-下例示範 Windows Forms 範本。 根據此範本來建立項目時，所建立三個檔案的名稱會符合 [新增項目]**** 對話方塊中所輸入的名稱。
+下例示範 Windows Forms 範本。 根據此範本來建立項目時，所建立三個檔案的名稱會符合 [新增項目] 對話方塊中所輸入的名稱。
 
 ```xml
 <VSTemplate Version="2.0.0" Type="Item"

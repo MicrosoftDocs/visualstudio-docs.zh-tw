@@ -1,5 +1,7 @@
 ---
 title: 使用虛設常式隔離應用程式的組件，以便進行測試
+description: 瞭解存根，這是在測試期間取代另一個元件的一小段程式碼。 使用存根會傳回一致的結果。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -10,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 268cfaa0a5df458ae529f5f2d369dc157ef64548
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: eeb7b981dcaec97d52c24ea40476f0bec84e608e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325968"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598558"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用虛設常式隔離應用程式的各個組件，方便進行單元測試
 
@@ -29,7 +31,7 @@ ms.locfileid: "93325968"
 
 ![實際和 Stub 類別都遵循單一介面。](../test/media/fakesinterfaces.png)
 
-因為您必須能夠利用這種方式建構程式碼才能使用虛設常式，因此通常可以使用虛設常式隔離應用程式中不同的部分。 為了隔離虛設常式與您無法控制的其他組件 (例如 *System.dll* )，通常會使用填充碼。 請參閱[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)。
+因為您必須能夠利用這種方式建構程式碼才能使用虛設常式，因此通常可以使用虛設常式隔離應用程式中不同的部分。 為了隔離虛設常式與您無法控制的其他組件 (例如 *System.dll*)，通常會使用填充碼。 請參閱[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)。
 
 ## <a name="how-to-use-stubs"></a>如何使用 Stub
 
@@ -150,11 +152,11 @@ analyzer = new StockAnalyzer(new StockFeed());
 1. 在 **方案總管** 中， 
     - 針對較舊的 .NET Framework 專案 (非 SDK 樣式) ，請展開您的單元測試專案的 [ **參考** ] 節點。
     ::: moniker range=">=vs-2019"
-    - 若為以 .NET Framework 或 .NET Core 為目標的 SDK 樣式專案，請展開 [相依性 **]** 節點，以尋找您想要在 **元件** 、 **專案** 或 **封裝** 下偽造的元件。
+    - 若為以 .NET Framework 或 .NET Core 為目標的 SDK 樣式專案，請展開 [相依性 **]** 節點，以尋找您想要在 **元件**、 **專案** 或 **封裝** 下偽造的元件。
     ::: moniker-end
-    - 如果您是在 Visual Basic 中工作，請選取 [ **方案總管** ] 工具列中的 [ **顯示所有** 檔案]，以查看 [ **參考** ] 節點。
+    - 如果您是在 Visual Basic 中工作，請選取 [**方案總管**] 工具列中的 [**顯示所有** 檔案]，以查看 [**參考**] 節點。
 
-2. 選取包含您要為其建立填充碼之類別定義的元件。 例如，如果您想要填充碼 **DateTime** ，請選取 [ **System.dll** ]。
+2. 選取包含您要為其建立填充碼之類別定義的元件。 例如，如果您想要填充碼 **DateTime**，請選取 [ **System.dll**]。
 
 3. 在捷徑功能表上，選擇 [新增 Fakes 組件]。
 

@@ -1,6 +1,6 @@
 ---
 title: 免於套用 Windows 資訊保護
-description: 瞭解如何從 Windows 資訊保護排除 Visual studio，但仍允許它使用企業資料。
+description: 瞭解從 Windows 資訊保護排除 Visual Studio，同時仍然允許它使用企業資料。
 ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfb078ee3f136a1d33f5b25040198c23411a05fb
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 34765cc7ac303bd44c3c4ccca87ea7c00a36ccda
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006623"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598389"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>設定 Visual Studio 作為 WIP 豁免應用程式
 

@@ -1,5 +1,7 @@
 ---
 title: 當地語系化工具
+description: 瞭解 Visual Studio 中包含的當地語系化工具，以及如何使用這些工具以多種語言建立當地語系化的應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 02/15/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eebdccf44580442b87e3d31e33ddcd7052838306
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 65c7a82488fea8fc12e6d5db838818269add0181
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810897"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597440"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>開發全球化和當地語系化應用程式
 

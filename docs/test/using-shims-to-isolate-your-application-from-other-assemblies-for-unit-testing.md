@@ -1,5 +1,6 @@
 ---
 title: '使用填充碼 (單元測試隔離您的應用程式) '
+description: 瞭解如何使用填充碼類型，將對特定方法的來電轉接至您在測試過程中撰寫的程式碼。 填充碼會在每次呼叫時傳回一致的結果。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,18 +10,18 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 13a5c8c4058fc051cf7ec0093632220c757604f0
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: 0ce89246d227d747fee2d3a02484855257f016f8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325928"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598207"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>使用填充碼隔離應用程式以進行單元測試
 
 **填充碼類型** 是 Microsoft Fakes Framework 用來讓您將受測的元件與環境隔離的兩項技術之一。 填充碼會將指向特定方法的呼叫轉向至您撰寫來做為測試一部分的程式碼。 有許多方法會取決於外部條件傳回不同的結果，不過填充碼會受您的測試所控制，並且可在每個呼叫中傳回一致的結果。 這可讓您更輕鬆地撰寫測試。
 
-使用 *填充* 碼，將程式碼與不屬於方案的元件隔離。 若要隔離解決方案的元件，請使用 *存根* 。
+使用 *填充* 碼，將程式碼與不屬於方案的元件隔離。 若要隔離解決方案的元件，請使用 *存根*。
 
 如需總覽和「快速入門」的指引，請參閱 [使用 Microsoft Fakes 隔離測試中的程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)。
 
@@ -70,11 +71,11 @@ using (ShimsContext.Create()) {
 1. 在 **方案總管** 中， 
     - 針對較舊的 .NET Framework 專案 (非 SDK 樣式) ，請展開您的單元測試專案的 [ **參考** ] 節點。
     ::: moniker range=">=vs-2019"
-    - 若為以 .NET Framework 或 .NET Core 為目標的 SDK 樣式專案，請展開 [相依性 **]** 節點，以尋找您想要在 **元件** 、 **專案** 或 **封裝** 下偽造的元件。
+    - 若為以 .NET Framework 或 .NET Core 為目標的 SDK 樣式專案，請展開 [相依性 **]** 節點，以尋找您想要在 **元件**、 **專案** 或 **封裝** 下偽造的元件。
     ::: moniker-end
-    - 如果您是在 Visual Basic 中工作，請選取 [ **方案總管** ] 工具列中的 [ **顯示所有** 檔案]，以查看 [ **參考** ] 節點。
+    - 如果您是在 Visual Basic 中工作，請選取 [**方案總管**] 工具列中的 [**顯示所有** 檔案]，以查看 [**參考**] 節點。
 
-2. 選取包含您要為其建立填充碼之類別定義的元件。 例如，如果您想要填充碼 **DateTime** ，請選取 [ **System.dll** ]。
+2. 選取包含您要為其建立填充碼之類別定義的元件。 例如，如果您想要填充碼 **DateTime**，請選取 [ **System.dll**]。
 
 3. 在捷徑功能表上，選擇 [新增 Fakes 組件]。
 

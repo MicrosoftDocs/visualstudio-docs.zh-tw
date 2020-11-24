@@ -1,5 +1,7 @@
 ---
 title: 將工具列新增至工具視窗 |Microsoft Docs
+description: 瞭解如何在 (IDE) 的 Visual Studio 整合式開發環境中，將包含系結至命令之按鈕的工具列加入至工具視窗。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5351fe6a713c217f8fca20d6740b542dc75f053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a093dd65ce4de187cadf7e277c695bac99b5ca6
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904132"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597973"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>將工具列新增至工具視窗
 本逐步解說將說明如何將工具列加入至工具視窗。
@@ -27,14 +29,14 @@ ms.locfileid: "85904132"
 
  如需如何加入工具列的詳細資訊，請參閱 [加入工具列](../extensibility/adding-a-toolbar.md)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-toolbar-for-a-tool-window"></a>建立工具視窗的工具列
 
-1. 建立名為的 VSIX 專案 `TWToolbar` ，這個專案具有名為 **TWTestCommand** 的功能表命令和名為 **TestToolWindow**的工具視窗。 如需詳細資訊，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md) 模組和 [使用工具視窗建立延伸](../extensibility/creating-an-extension-with-a-tool-window.md)模組。 您必須先加入命令專案範本，才能加入工具視窗範本。
+1. 建立名為的 VSIX 專案 `TWToolbar` ，這個專案具有名為 **TWTestCommand** 的功能表命令和名為 **TestToolWindow** 的工具視窗。 如需詳細資訊，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md) 模組和 [使用工具視窗建立延伸](../extensibility/creating-an-extension-with-a-tool-window.md)模組。 您必須先加入命令專案範本，才能加入工具視窗範本。
 
-2. 在 *TWTestCommandPackage. .vsct*中，尋找 [符號] 區段。 在名為 guidTWTestCommandPackageCmdSet 的 GuidSymbol 節點中，宣告工具列和工具列群組，如下所示。
+2. 在 *TWTestCommandPackage. .vsct* 中，尋找 [符號] 區段。 在名為 guidTWTestCommandPackageCmdSet 的 GuidSymbol 節點中，宣告工具列和工具列群組，如下所示。
 
     ```xml
     <IDSymbol name="TWToolbar" value="0x1000" />
@@ -111,7 +113,7 @@ ms.locfileid: "85904132"
 
      您應該會看到工具列 (看起來像是工具視窗左上角的預設圖示) ，緊接在標題正下方。
 
-3. 在工具列上，按一下圖示，將 TWTestCommandPackage 中的訊息顯示在 **TWToolbar. TWTestCommand. MenuItemCallback ( # B1 中 **。
+3. 在工具列上，按一下圖示，將 TWTestCommandPackage 中的訊息顯示在 **TWToolbar. TWTestCommand. MenuItemCallback ( # B1 中**。
 
 ## <a name="see-also"></a>另請參閱
 - [新增工具列](../extensibility/adding-a-toolbar.md)

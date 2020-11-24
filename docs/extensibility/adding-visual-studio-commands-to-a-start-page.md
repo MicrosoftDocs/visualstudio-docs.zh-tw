@@ -1,5 +1,7 @@
 ---
 title: 將 Visual Studio 命令新增至起始頁 |Microsoft Docs
+description: 瞭解在 Visual Studio 的自訂起始頁上，將 Visual Studio 命令系結至 XAML 物件的不同方式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 13dd40006039209b06cc6a71760fdbaa240db4fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7784b077093660eb5f9c9a0bf471a8965811ba72
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740121"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597518"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>將 Visual Studio 命令新增至起始頁
 
@@ -34,7 +36,7 @@ xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.Vis
 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
 ```
 
-從元件 *Microsoft.VisualStudio.Shell.Immutable.11.0.dll*新增 VisualStudio 的另一個命名空間。  (您可能需要在您的專案中新增此元件的參考。 ) 
+從元件 *Microsoft.VisualStudio.Shell.Immutable.11.0.dll* 新增 VisualStudio 的另一個命名空間。  (您可能需要在您的專案中新增此元件的參考。 ) 
 
 ```xml
 xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.Immutable.11.0"

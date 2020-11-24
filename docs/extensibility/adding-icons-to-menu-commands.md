@@ -1,5 +1,7 @@
 ---
 title: 將圖示新增至功能表命令 |Microsoft Docs
+description: 瞭解如何將圖示新增至可在 Visual Studio 整合式開發環境中的功能表和工具列上顯示的命令 (IDE) 。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9f038dc43c1705a7cef47eb09a17607c535e307
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaf0a089c10c850c14b9ba2f807a69eada5d04b9
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903439"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597648"
 ---
 # <a name="add-icons-to-menu-commands"></a>將圖示新增至功能表命令
 命令可以同時出現在功能表和工具列上。 在工具列上，命令通常只會顯示一個圖示 (為了節省空間) 而功能表上的命令通常會同時以圖示和文字顯示。
@@ -33,11 +35,11 @@ ms.locfileid: "85903439"
 
      如果您使用8位的色彩深度，請使用洋紅色， `RGB(255,0,255)` 作為透明度。 不過，建議您偏好32位色彩圖示。
 
-2. 將圖示檔複製到 VSPackage 專案中的 *Resources* 目錄。 在 **方案總管**中，將圖示新增至專案。  (選取 **資源**]，然後在內容功能表上按一下 [ **新增**]、[ **現有專案**]，然後選取您的圖示檔。 ) 
+2. 將圖示檔複製到 VSPackage 專案中的 *Resources* 目錄。 在 **方案總管** 中，將圖示新增至專案。  (選取 **資源**]，然後在內容功能表上按一下 [ **新增**]、[ **現有專案**]，然後選取您的圖示檔。 ) 
 
 3. 在編輯器中開啟 *.vsct* 檔案。
 
-4. 加入 `GuidSymbol` 名稱為 **testIcon**的元素。 建立 guid (**工具**  >  **建立 guid**，然後選取 [登錄**格式**]，再按一下 [**複製**) 並貼到 `value` 屬性中。 結果看起來應該像這樣：
+4. 加入 `GuidSymbol` 名稱為 **testIcon** 的元素。 建立 guid (**工具**  >  **建立 guid**，然後選取 [登錄 **格式**]，再按一下 [**複製**) 並貼到 `value` 屬性中。 結果看起來應該像這樣：
 
     ```xml
     <!-- Create your own GUID -->
@@ -57,7 +59,7 @@ ms.locfileid: "85903439"
 
     - 將 `guid` 值設定為 `<GuidSymbol>` 您在上一個步驟中建立的元素名稱。
 
-    - 將 `href` 值設定為點陣圖檔案的相對路徑 (在此案例中為**資源 \\<圖示檔名稱 \> **。
+    - 將 `href` 值設定為點陣圖檔案的相對路徑 (在此案例中為 **資源 \\<圖示檔名稱 \>**。
 
     - 將 `usedList` 值設定為您稍早建立的 IDSymbol。 這個屬性會指定要在 VSPackage 中使用的圖示清單（以逗號分隔）。 不在清單上的圖示則會排除表單編譯。
 

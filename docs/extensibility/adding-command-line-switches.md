@@ -1,5 +1,7 @@
 ---
-title: 新增命令列參數 |Microsoft Docs
+title: 新增 Command-Line 參數 |Microsoft Docs
+description: 瞭解如何在執行 devenv.exe 命令時，新增套用至 VSPackage 的命令列參數。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb4abf5352ac6ad78852bd3224df0b22784470db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0eefb532380badcf917f6d512bc5b41ebb96b1d1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903476"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597726"
 ---
 # <a name="add-command-line-switches"></a>新增命令列參數
 您可以在執行 *devenv.exe* 時，新增適用于 VSPackage 的命令列參數。 用 <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> 來宣告參數的名稱和其屬性。 在此範例中，會針對名為 **AddCommandSwitchPackage** 的 VSPackage 子類別加入 MySwitch 參數，但不含任何引數，且會自動載入 VSPackage。
@@ -41,7 +43,7 @@ ms.locfileid: "85903476"
 
  DemandLoad 值可能是 `true` (1) 或 `false` (0) 表示應該自動載入 VSPackage。
 
- HelpString 值是出現在**devenv/？** 中的字串資源識別碼。 說明顯示。 此值的格式應該是 "#nnn"，其中 nnn 是整數。 資源檔中的字串值應該以換行字元結尾。
+ HelpString 值是出現在 **devenv/？** 中的字串資源識別碼。 說明顯示。 此值的格式應該是 "#nnn"，其中 nnn 是整數。 資源檔中的字串值應該以換行字元結尾。
 
  名稱值是參數的名稱。
 
@@ -72,4 +74,4 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)
 - [CreatePkgDef 公用程式](../extensibility/internals/createpkgdef-utility.md)
-- [..Pkgdef 檔案](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
+- [.Pkgdef 檔案](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)

@@ -1,5 +1,7 @@
 ---
 title: 使用組態檔定義資料來源
+description: 瞭解如何使用 app.config 檔中定義的資料來源進行單元測試，從建立定義資料來源的 app.config 檔案開始。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06e33721fa4ac1cc657c79c8aa68b35e5ceec00b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75776148"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598493"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
 
@@ -32,7 +34,7 @@ ms.locfileid: "75776148"
 
 - 使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 類別存取資料來源。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 若要完成這個逐步解說，您需要：
 
@@ -44,13 +46,13 @@ ms.locfileid: "75776148"
 
 ## <a name="add-an-appconfig-file-to-the-project"></a>在專案中新增 app.config 檔案
 
-1. 如果您的測試專案中已經有 *app.config* 檔案，請移至[定義自訂組態區段](#define-a-custom-configuration-section)。
+1. 如果您的測試專案中已經有 *app.config* 檔案，請移至 [定義自訂組態區段](#define-a-custom-configuration-section)。
 
-2. 在 [方案總管] **** 中，以滑鼠右鍵按一下您的測試專案，然後選取 [新增]**** > [新增項目]****。
+2. 在 [方案總管] 中，以滑鼠右鍵按一下您的測試專案，然後選取 [新增] > [新增項目]。
 
-     [新增項目]**** 視窗隨即開啟。
+     [新增項目] 視窗隨即開啟。
 
-3. 選取 [應用程式組態檔]**** 範本，然後按一下 [新增]****。
+3. 選取 [應用程式組態檔] 範本，然後按一下 [新增]。
 
 ## <a name="define-a-custom-configuration-section"></a>定義自訂組態區段
 

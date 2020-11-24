@@ -1,5 +1,7 @@
 ---
 title: 建立網站範本
+description: 瞭解如何以手動方式建立網站範本，並識別範本所使用的程式設計語言。
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6870143be825469fde2be4b3448da24d54034fc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8546b1364248b5c419a32e8f8ed40abf0b69fb5a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284174"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597076"
 ---
 # <a name="how-to-manually-create-web-templates"></a>如何：手動建立網站範本
 
@@ -34,7 +36,7 @@ ms.locfileid: "85284174"
 
 4. 編輯 *.Vstemplate* XML 檔案，以提供專案範本中繼資料。 如需詳細資訊，請參閱[後續範例](#example)。
 
-5. `ProjectType`在 *.vstemplate*檔案中尋找元素，並將文字值設為 `Web` 。
+5. `ProjectType`在 *.vstemplate* 檔案中尋找元素，並將文字值設為 `Web` 。
 
 6. 在 `ProjectType` 項目後面，新增 `ProjectSubType` 項目，並將文字值設為範本的程式設計語言。 程式設計語言可以是下列其中一個值：
 
@@ -52,7 +54,7 @@ ms.locfileid: "85284174"
      </TemplateData>
      ```
 
-7. 在您的範本中選取檔案 (這包括 *.vstemplate*檔案) 、以滑鼠右鍵按一下選取範圍，然後選擇 [**傳送到**  >  **壓縮的 (壓縮的) 資料夾**]。 檔案會壓縮成 *.zip* 檔案。
+7. 在您的範本中選取檔案 (這包括 *.vstemplate* 檔案) 、以滑鼠右鍵按一下選取範圍，然後選擇 [**傳送到**  >  **壓縮的 (壓縮的) 資料夾**]。 檔案會壓縮成 *.zip* 檔案。
 
 8. 將 *.zip* 範本檔放在 Visual Studio 專案範本目錄中。 此目錄預設為 *%USERPROFILE%\Documents\Visual Studio \<Version\> \ProjectTemplates*。
 

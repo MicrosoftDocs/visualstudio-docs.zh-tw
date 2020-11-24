@@ -1,5 +1,7 @@
 ---
 title: 新增語言伺服器通訊協定延伸模組 |Microsoft Docs
+description: 瞭解如何建立 Visual Studio 擴充功能，以根據語言伺服器通訊協定 (LSP) 來整合語言伺服器。
+ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0c43d5a50b7a2acb536dee5fe9c6ed9ec3d36d7
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860459"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598142"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>新增語言伺服器通訊協定延伸模組
 
@@ -125,10 +127,10 @@ LSP 不包含如何提供語言文字顏色標示的規格。 為了在 Visual S
 
 1. 在您的延伸模組中建立名為 "文法" 的資料夾 (或者可以是您選擇的任何名稱) 。
 
-2. *在 [文法*] 資料夾內，包含您想要提供自訂顏色標示的任何* \* . tmlanguage*、 * \* . plist*、 * \* . tmtheme*或* \* . json*檔案。
+2. *在 [文法*] 資料夾內，包含您想要提供自訂顏色標示的任何 *\* . tmlanguage*、 *\* . plist*、 *\* . tmtheme* 或 *\* . json* 檔案。
 
    > [!TIP]
-   > *Tmtheme*檔案會定義範圍如何對應至 Visual Studio 分類 (命名的色彩索引鍵) 。 如需指導方針，您可以參考 *% ProgramFiles (x86) % \ Microsoft Visual Studio \\ \<version> \\ \<SKU> \Common7\IDE\CommonExtensions\Microsoft\TextMate\Starterkit\Themesg*目錄中的*tmtheme*檔案。
+   > *Tmtheme* 檔案會定義範圍如何對應至 Visual Studio 分類 (命名的色彩索引鍵) 。 如需指導方針，您可以參考 *% ProgramFiles (x86) % \ Microsoft Visual Studio \\ \<version> \\ \<SKU> \Common7\IDE\CommonExtensions\Microsoft\TextMate\Starterkit\Themesg* 目錄中的 *tmtheme* 檔案。
 
 3. 建立 *.pkgdef* 檔案，並新增類似以下的行：
 
@@ -341,7 +343,7 @@ namespace MockLanguageExtension
 ### <a name="user-editing-of-settings-for-a-workspace"></a>使用者編輯工作區設定
 
 1. 使用者會開啟包含您的伺服器所擁有之檔案的工作區。
-2. 使用者會在名為*VSWorkspaceSettings.js*的*vs*資料夾中新增檔案。
+2. 使用者會在名為 *VSWorkspaceSettings.js* 的 *vs* 資料夾中新增檔案。
 3. 使用者針對伺服器提供的設定，在檔案的 *VSWorkspaceSettings.js中* 加入一行。 例如：
 
     ```json
@@ -498,6 +500,6 @@ Visual Studio 中以 LSP 為基礎的語言伺服器支援依賴 [開啟資料�
 
 請參閱 [此處](walkthrough-publishing-a-visual-studio-extension.md)的 Marketplace 指示。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [新增其他語言的 Visual Studio 編輯器支援](../ide/adding-visual-studio-editor-support-for-other-languages.md)

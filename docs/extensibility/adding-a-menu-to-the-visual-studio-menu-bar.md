@@ -1,5 +1,7 @@
 ---
 title: 將功能表新增至 Visual Studio 的功能表列 |Microsoft Docs
+description: 瞭解如何將功能表新增至 Visual Studio 整合式開發環境 (IDE) 的功能表列。
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb5afbbe688c15f429054d50210a68769173e73
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc84eb8854c0a6ff738a51c2ca883ad0527ec919
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801850"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597856"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>將功能表新增至 Visual Studio 的功能表列
 
-本逐步解說將示範如何將功能表新增至 Visual Studio 整合式開發環境 (IDE) 的功能表列。 IDE 功能表列包含功能表**類別，例如**[檔案]、[**編輯**]、[**視圖**]、[**視窗]****和 [** 說明]。
+本逐步解說將示範如何將功能表新增至 Visual Studio 整合式開發環境 (IDE) 的功能表列。 IDE 功能表列包含功能表 **類別，例如**[檔案]、[**編輯**]、[**視圖**]、[**視窗]****和 [** 說明]。
 
 將新的功能表新增至 Visual Studio 的功能表列之前，請考慮是否要將命令放在現有的功能表中。 如需命令放置的詳細資訊，請參閱 [Visual Studio 的功能表和命令](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)。
 
@@ -33,7 +35,7 @@ ms.locfileid: "88801850"
 > 從 Visual Studio 2019 開始，擴充功能所貢獻的最上層功能表會放置在 [ **延伸** 模組] 功能表下。
 :::moniker-end
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
@@ -43,13 +45,13 @@ ms.locfileid: "88801850"
 
 ::: moniker range="vs-2017"
 
-2. 當專案開啟時，加入名為 **TestCommand**的自訂命令專案範本。 在 [**方案總管**中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >   **新專案**]。 在 [ **加入新專案** ] 對話方塊中，移至 **Visual c #/** 擴充性，然後選取 [ **自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *TestCommand.cs*。
+2. 當專案開啟時，加入名為 **TestCommand** 的自訂命令專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >   **新專案**]。 在 [ **加入新專案** ] 對話方塊中，移至 **Visual c #/** 擴充性，然後選取 [ **自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *TestCommand.cs*。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. 當專案開啟時，加入名為 **TestCommand**的自訂命令專案範本。 在 [**方案總管**中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >   **新專案**]。 在 [ **加入新專案** ] 對話方塊中，移至 [ **Visual c #/** 擴充性]，然後選取 [ **命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *TestCommand.cs*。
+2. 當專案開啟時，加入名為 **TestCommand** 的自訂命令專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >   **新專案**]。 在 [ **加入新專案** ] 對話方塊中，移至 [ **Visual c #/** 擴充性]，然後選取 [ **命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *TestCommand.cs*。
 
 ::: moniker-end
 
@@ -57,7 +59,7 @@ ms.locfileid: "88801850"
 
 ::: moniker range="vs-2017"
 
-1. 在 **方案總管**中，開啟 *TestCommandPackage .vsct*。
+1. 在 **方案總管** 中，開啟 *TestCommandPackage .vsct*。
 
     在檔案結尾，有一個 `<Symbols>` 節點包含數個 `<GuidSymbol>` 節點。 在名為的節點中 `guidTestCommandPackageCmdSet` ，加入新的符號，如下所示：
 
@@ -101,7 +103,7 @@ ms.locfileid: "88801850"
 
 ::: moniker range=">=vs-2019"
 
-1. 在 **方案總管**中，開啟 *TopLevelMenuPackage .vsct*。
+1. 在 **方案總管** 中，開啟 *TopLevelMenuPackage .vsct*。
 
     在檔案結尾，有一個 `<Symbols>` 節點包含數個 `<GuidSymbol>` 節點。 在名為的節點中 `guidTopLevelMenuPackageCmdSet` ，加入新的符號，如下所示：
 

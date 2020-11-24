@@ -1,5 +1,7 @@
 ---
 title: 如何：以編碼方式儲存及開啟檔案
+description: 瞭解如何以特定的編碼方式儲存及開啟檔案，因此當您開啟檔案時，Visual Studio 會正確地顯示檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72496e842841b2c55833075e890da4b7088cb489
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cfec7d31e6fc2c120ef42dc9de2a5a7eea4132e0
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284161"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597089"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>如何：以編碼方式儲存及開啟檔案
 
@@ -26,13 +28,13 @@ ms.locfileid: "85284161"
 
 ## <a name="to-save-a-file-with-encoding"></a>以編碼方式儲存檔案
 
-1. 從 [檔案]**** 功能表上，選擇 [另存新檔]****，然後按一下 [儲存]**** 按鈕旁的下拉式按鈕。
+1. 從 [檔案] 功能表上，選擇 [另存新檔]，然後按一下 [儲存] 按鈕旁的下拉式按鈕。
 
      [**進階儲存選項**] 對話方塊隨即出現。
 
-2. 在 [編碼]**** 下方，選取檔案要使用的編碼方式。
+2. 在 [編碼] 下方，選取檔案要使用的編碼方式。
 
-3. 您也可以在 [行尾結束符號]**** 下方，選取行結尾字元的格式。
+3. 您也可以在 [行尾結束符號] 下方，選取行結尾字元的格式。
 
      如果您想要與不同作業系統的使用者交換檔案，這個選項相當實用。
 
@@ -40,19 +42,19 @@ ms.locfileid: "85284161"
 
 ## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>若要開啟的編碼檔案為專案的一部分
 
-1. 在方案總管**** 中，以滑鼠右鍵按一下檔案，並選擇 [開啟方式]****。
+1. 在方案總管中，以滑鼠右鍵按一下檔案，並選擇 [開啟方式]。
 
-2. 在 [開啟方式]**** 對話方塊中，選擇要開啟檔案的編輯器。
+2. 在 [開啟方式] 對話方塊中，選擇要開啟檔案的編輯器。
 
-     許多 Visual Studio 編輯器 (例如表單編輯器) 會自動偵測編碼，並以適當方式開啟檔案。 如果您選擇的編輯器可讓您選擇編碼方式，即會顯示 [編碼]**** 對話方塊。
+     許多 Visual Studio 編輯器 (例如表單編輯器) 會自動偵測編碼，並以適當方式開啟檔案。 如果您選擇的編輯器可讓您選擇編碼方式，即會顯示 [編碼] 對話方塊。
 
-3. 在 [編碼]**** 對話方塊中，選取編輯器應該使用的編碼方式。
+3. 在 [編碼] 對話方塊中，選取編輯器應該使用的編碼方式。
 
 ## <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>若要開啟的編碼檔案不是專案的一部分
 
-1. 在 [檔案]**** 功能表上，指向 [開啟]****，並選擇 [檔案]**** 或 [從 Web 開啟檔案]****，然後選取要開啟的檔案。
+1. 在 [檔案] 功能表上，指向 [開啟]，並選擇 [檔案] 或 [從 Web 開啟檔案]，然後選取要開啟的檔案。
 
-2. 按一下 [開啟]**** 按鈕旁的下拉式按鈕，然後選擇 [開啟方式]****。
+2. 按一下 [開啟] 按鈕旁的下拉式按鈕，然後選擇 [開啟方式]。
 
 3. 遵循上述程序步驟 2 和 3。
 

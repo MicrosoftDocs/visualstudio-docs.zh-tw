@@ -1,5 +1,7 @@
 ---
 title: 尋找範本
+description: 瞭解如何尋找和組織專案範本和專案範本。
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ecbc5421562ca79466ace0d93a16ac4e3635ddfb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 517918bf7e56381a4d4d2a36fc43f976a07c29ea
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284239"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597154"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：尋找並整理專案範本和項目範本
 
@@ -22,7 +24,7 @@ ms.locfileid: "85284239"
 
 ::: moniker range="vs-2017"
 
-您也可以在使用者範本位置中建立自訂的子目錄，且目錄會顯示在 [新增專案]**** 和 [新增項目]**** 對話方塊中。
+您也可以在使用者範本位置中建立自訂的子目錄，且目錄會顯示在 [新增專案] 和 [新增項目] 對話方塊中。
 
 ::: moniker-end
 
@@ -87,13 +89,13 @@ ms.locfileid: "85284239"
 ::: moniker-end
 
 > [!TIP]
-> 您可以在 [**工具**  >  **選項**]  >  **專案和方案**  >  **位置**中變更使用者範本的已知位置。
+> 您可以在 [**工具**  >  **選項**]  >  **專案和方案**  >  **位置** 中變更使用者範本的已知位置。
 
 ::: moniker range="vs-2017"
 
 ## <a name="organize-templates"></a>組織範本
 
-[新增專案]**** 和 [新增項目]**** 對話方塊中的類別，反映已安裝範本和使用者範本位置中的目錄結構。 在使用者範本目錄新增資料夾，可將使用者範本組織成專屬類別。 [新增專案]**** 和 [新增項目]**** 對話方塊會顯示您對使用者範本類別所做的任何變更。
+[新增專案] 和 [新增項目] 對話方塊中的類別，反映已安裝範本和使用者範本位置中的目錄結構。 在使用者範本目錄新增資料夾，可將使用者範本組織成專屬類別。 [新增專案] 和 [新增項目] 對話方塊會顯示您對使用者範本類別所做的任何變更。
 
 > [!NOTE]
 > 您無法在程式設計語言層級建立新的類別。 只能在每一種語言內建立新的類別。
@@ -106,9 +108,9 @@ ms.locfileid: "85284239"
 
 1. 將此類別的所有範本都放在新資料夾中。
 
-1. 在 [檔案]**** 功能表上，依序選擇 [新增]** 和 [專案]** > ****。
+1. 在 [檔案] 功能表上，依序選擇 [新增]**和 [專案]** > 。
 
-   **HelloWorld** 類別隨即出現在 [新增專案]**** 對話方塊下的 [已安裝]** [Visual C#]** > **** 中。
+   **HelloWorld** 類別隨即出現在 [新增專案] 對話方塊下的 [已安裝]**[Visual C#]** >  中。
 
 ### <a name="create-new-user-item-template-categories"></a>建立新的使用者項目範本類別
 
@@ -118,9 +120,9 @@ ms.locfileid: "85284239"
 
 1. 將此類別的所有範本都放在新資料夾中。
 
-1. 建立專案或開啟現有專案。 在 [專案]**** 功能表中，選擇 [新增項目]****。
+1. 建立專案或開啟現有專案。 在 [專案] 功能表中，選擇 [新增項目]。
 
-   **HelloWorld** 類別隨即出現在 [新增項目]**** 對話方塊下的 [已安裝]** [Visual C# 項目]** > **** 中。
+   **HelloWorld** 類別隨即出現在 [新增項目] 對話方塊下的 [已安裝]**[Visual C# 項目]** >  中。
 
 ### <a name="display-templates-in-parent-categories"></a>在父類別中顯示範本
 
@@ -146,7 +148,7 @@ ms.locfileid: "85284239"
 
 1. 儲存並關閉 *.vstemplate* 檔案。
 
-1. 在範本中選取檔案，以滑鼠右鍵按一下選項，選擇 [傳送至] ** [壓縮的 (zipped) 資料夾]** > ****。
+1. 在範本中選取檔案，以滑鼠右鍵按一下選項，選擇 [傳送至] **[壓縮的 (zipped) 資料夾]** > 。
 
    檔案會壓縮成 *.zip* 檔案。
 

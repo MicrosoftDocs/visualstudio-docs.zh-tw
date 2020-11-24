@@ -1,5 +1,7 @@
 ---
 title: 管理外部工具
+description: 瞭解如何新增及管理可透過 [工具] 功能表存取的新外部工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2017
 ms.topic: conceptual
 f1_keywords:
@@ -11,45 +13,45 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c77ab079a2950d4417c2d00ef74cf86d5c206de7
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591290"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596686"
 ---
 # <a name="manage-external-tools"></a>管理外部工具
 
-您可以使用 [工具]****，從 Visual Studio 內部呼叫外部工具。 [工具]**** 功能表中有提供一些預設的工具，且您可以另外自行加入可執行檔來自訂該功能表。
+您可以使用 [工具]，從 Visual Studio 內部呼叫外部工具。 [工具] 功能表中有提供一些預設的工具，且您可以另外自行加入可執行檔來自訂該功能表。
 
 ## <a name="tools-available-on-the-tools-menu"></a>[工具] 功能表上提供的工具
 
-[工具]**** 功能表包含數個內建命令，包括：
+[工具] 功能表包含數個內建命令，包括：
 
 ::: moniker range="vs-2017"
 
-* [延伸模組和更新]**** 可用來[管理 Visual Studio 延伸模組](finding-and-using-visual-studio-extensions.md)
-* [程式碼片段管理員]**** 可用來[組織程式碼片段](code-snippets.md)
-* [自訂]**** 可用來[自訂功能表和工具列](how-to-customize-menus-and-toolbars-in-visual-studio.md)
-* [選項]**** 可用來[設定各種不同的 Visual Studio IDE 和其他工具選項](reference/options-dialog-box-visual-studio.md)
+* [延伸模組和更新] 可用來[管理 Visual Studio 延伸模組](finding-and-using-visual-studio-extensions.md)
+* [程式碼片段管理員] 可用來[組織程式碼片段](code-snippets.md)
+* [自訂] 可用來[自訂功能表和工具列](how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* [選項] 可用來[設定各種不同的 Visual Studio IDE 和其他工具選項](reference/options-dialog-box-visual-studio.md)
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-* [程式碼片段管理員]**** 可用來[組織程式碼片段](code-snippets.md)
-* [自訂]**** 可用來[自訂功能表和工具列](how-to-customize-menus-and-toolbars-in-visual-studio.md)
-* [選項]**** 可用來[設定各種不同的 Visual Studio IDE 和其他工具選項](reference/options-dialog-box-visual-studio.md)
+* [程式碼片段管理員] 可用來[組織程式碼片段](code-snippets.md)
+* [自訂] 可用來[自訂功能表和工具列](how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* [選項] 可用來[設定各種不同的 Visual Studio IDE 和其他工具選項](reference/options-dialog-box-visual-studio.md)
 
 ::: moniker-end
 
 ## <a name="add-new-tools-to-the-tools-menu"></a>將新的工具新增至 [工具] 功能表
 
-您可加入外部工具，讓它顯示在 [工具]**** 功能表。
+您可加入外部工具，讓它顯示在 [工具] 功能表。
 
-1. 選擇 [工具]**** > [外部工具]****，以開啟 [外部工具]**** 對話方塊。
+1. 選擇 [工具] > [外部工具]，以開啟 [外部工具] 對話方塊。
 
-1. 按一下 [加入]****，然後填入資訊。 例如，下列專案會導致 **Windows 檔案總管** 開啟您目前已在 Visual Studio 中開啟之檔案的目錄：
+1. 按一下 [加入]，然後填入資訊。 例如，下列專案會導致 **Windows 檔案總管** 開啟您目前已在 Visual Studio 中開啟之檔案的目錄：
 
    * 標題：`Open File Location`
 
@@ -61,7 +63,7 @@ ms.locfileid: "75591290"
 
 以下是在定義外部工具時可以使用的引數完整清單：
 
-|Name|引數|描述|
+|名稱|引數|描述|
 |----------|--------------|-----------------|
 |項目路徑|$(ItemPath)|目前檔案的完整檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|
 |項目目錄|$(ItemDir)|目前檔案的目錄 (磁碟機 + 路徑)。|
@@ -81,7 +83,7 @@ ms.locfileid: "75591290"
 |方案檔案名稱|$(SolutionFileName)|目前方案的檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|
 
 > [!NOTE]
-> IDE 狀態列會顯示目前的 **行** 和 **目前** 的資料行變數，以指出插入點位於使用中程式 **代碼編輯器**中的位置。 **目前的文字**變數會傳回在該位置選取的文字或程式碼。
+> IDE 狀態列會顯示目前的 **行** 和 **目前** 的資料行變數，以指出插入點位於使用中程式 **代碼編輯器** 中的位置。 **目前的文字** 變數會傳回在該位置選取的文字或程式碼。
 
 ## <a name="see-also"></a>另請參閱
 

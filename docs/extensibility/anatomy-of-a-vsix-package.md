@@ -1,5 +1,7 @@
 ---
 title: VSIX 封裝的剖析 |Microsoft Docs
+description: 瞭解 Visual Studio 中 VSIX 封裝的內容，其中包含一或多個 Visual Studio 擴充功能和中繼資料資訊清單檔案的檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33cecb4767193010d7e7ca330d891d1835091875
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 3fc65cda5eb969e361e90771e0245fdaeaeebcd1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012330"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598155"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 封裝的剖析
 VSIX 封裝是一個包含一或多個 Visual Studio 延伸模組的 .vsix 檔案，以及 Visual Studio 用來分類及安裝延伸模組的中繼資料 *。* 該中繼資料包含在 VSIX 資訊清單和 *[Content_Types] .xml* 檔案中。 VSIX 封裝也可以包含一或多個 *vsixlangpack* 檔案，以提供當地語系化的設定文字，而且可能包含其他 VSIX 套件來安裝相依性。
@@ -50,11 +52,11 @@ VSIX 封裝是一個包含一或多個 Visual Studio 延伸模組的 .vsix 檔�
  若要在 VSIX 封裝中包含參考元件的附屬 Dll，請加入 `SatelliteDllsProjectOutputGroup` vsix 屬性中 **包含的輸出群組** 。
 
 ## <a name="installation-location"></a>安裝位置
- 在安裝期間， **擴充功能和更新** 會在 *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*下的資料夾中尋找 VSIX 封裝的內容。
+ 在安裝期間， **擴充功能和更新** 會在 *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions* 下的資料夾中尋找 VSIX 封裝的內容。
 
  根據預設，安裝只會套用至目前的使用者，因為 *% LocalAppData%* 是使用者特定的目錄。 但是，如果您將資訊清單的[AllUsers](/previous-versions/ee191547(v=vs.110))元素設定為 `True` ，此延伸模組會安裝在<em> \\ 底下。</em>VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em>將可供電腦的所有使用者使用。
 
 ## <a name="content_typesxml"></a>[Content_Types] .xml
- *[Content_Types] .xml*檔案會識別擴充的 *.vsix*檔中的檔案類型。 Visual Studio 在套件安裝期間使用此檔案，但不會安裝檔案本身。 如需此檔案的詳細資訊，請參閱 [[Content_types] .xml](the-structure-of-the-content-types-dot-xml-file.md)檔案的結構。
+ *[Content_Types] .xml* 檔案會識別擴充的 *.vsix* 檔中的檔案類型。 Visual Studio 在套件安裝期間使用此檔案，但不會安裝檔案本身。 如需此檔案的詳細資訊，請參閱 [[Content_types] .xml](the-structure-of-the-content-types-dot-xml-file.md)檔案的結構。
 
  開放式封裝慣例 (OPC) standard 需要 *[Content_Types] .xml* 檔案。 如需 OPC 的詳細資訊，請參閱 [opc：將資料封裝](/archive/blogs/msdnmagazine/opc-a-new-standard-for-packaging-your-data) 在 MSDN 網站的新標準。

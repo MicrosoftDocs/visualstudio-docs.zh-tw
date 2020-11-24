@@ -1,5 +1,7 @@
 ---
 title: 管理應用程式資源 (.NET)
+description: 瞭解如何管理不屬於編譯器一部分的應用程式資源檔。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1815b0efeebf98587fe07384ea0b2c8d1f5e1d90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4707a3e33279ead458566bc01ed2eed8c67355cf
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88992364"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596738"
 ---
 # <a name="manage-application-resources-net"></a>管理應用程式資源 (.NET)
 
@@ -37,9 +39,9 @@ ms.locfileid: "88992364"
 
 在 受控碼專案中，開啟 [專案屬性] 視窗。 您可以透過下列方式開啟 [屬性] 視窗：
 
-- 在**方案總管**中的專案節點上按一下滑鼠右鍵，然後選取 [**屬性**]
-- 在 **Ctrl**+**Q** 搜尋方塊中，輸入**專案屬性**
-- 選擇**Alt** + **方案總管**中的 Alt**Enter**
+- 在 **方案總管** 中的專案節點上按一下滑鼠右鍵，然後選取 [**屬性**]
+- 在 **Ctrl**+**Q** 搜尋方塊中，輸入 **專案屬性**
+- 選擇 **Alt** + **方案總管** 中的 Alt **Enter**
 
 選取 [ **資源** ] 索引標籤。如果您的專案尚未包含 *.resx* 檔案，您可以新增和刪除不同種類的資源，以及修改現有的資源。
 

@@ -1,5 +1,7 @@
 ---
 title: 新增工具視窗 |Microsoft Docs
+description: 瞭解如何藉由將包含命令的控制項和工具列加入至工具視窗，來建立工具視窗並將它整合至 Visual Studio。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 169f386128ccdd79aef6b90a6703f50323b9b6f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 184e04e74e2065ea2a9e1bcd41b2e878981dd218
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904143"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597986"
 ---
 # <a name="add-a-tool-window"></a>新增工具視窗
 
@@ -32,13 +34,13 @@ ms.locfileid: "85904143"
 
 - 設定工具視窗的預設位置。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 Visual Studio SDK 在 Visual Studio 安裝程式中包含為選用功能。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-tool-window"></a>建立工具視窗
 
-1. 使用 VSIX 範本來建立名為 **FirstToolWin** 的專案，並新增名為 **FirstToolWindow**的自訂工具視窗專案範本。
+1. 使用 VSIX 範本來建立名為 **FirstToolWin** 的專案，並新增名為 **FirstToolWindow** 的自訂工具視窗專案範本。
 
     > [!NOTE]
     > 如需使用工具視窗建立延伸模組的詳細資訊，請參閱 [使用工具視窗建立延伸](../extensibility/creating-an-extension-with-a-tool-window.md)模組。
@@ -52,7 +54,7 @@ Visual Studio SDK 在 Visual Studio 安裝程式中包含為選用功能。 如�
 ## <a name="add-a-toolbar-to-the-tool-window"></a>將工具列新增至工具視窗
 以下列方式加入工具列，可確保其漸層和色彩與 IDE 的其餘部分一致。
 
-1. 在 **方案總管**中，開啟 *FirstToolWindowPackage .vsct*。 *.Vsct*檔案會使用 XML，在您的工具視窗中定義圖形化使用者介面 (GUI) 元素。
+1. 在 **方案總管** 中，開啟 *FirstToolWindowPackage .vsct*。 *.Vsct* 檔案會使用 XML，在您的工具視窗中定義圖形化使用者介面 (GUI) 元素。
 
 2. 在 `<Symbols>` 區段中，尋找 `<GuidSymbol>` `name` 屬性為的節點 `guidFirstToolWindowPackageCmdSet` 。 將下列兩個專案加入 `<IDSymbol>` 至此節點的專案清單 `<IDSymbol>` 中，以定義工具列和工具列群組。
 
@@ -129,7 +131,7 @@ Visual Studio SDK 在 Visual Studio 安裝程式中包含為選用功能。 如�
 ## <a name="add-a-mediaplayer-property-to-firsttoolwindowcontrol"></a>將 MediaPlayer 屬性新增至 FirstToolWindowControl
 從工具列控制項的事件處理常式中，您的程式碼必須能夠存取 Media Player 控制項，也就是 FirstToolWindowControl 類別的子系。
 
-在 **方案總管**中，以滑鼠右鍵按一下 [ *FirstToolWindowControl*]，按一下 [ **視圖程式碼**]，然後將下列程式碼加入至 FirstToolWindowControl 類別。
+在 **方案總管** 中，以滑鼠右鍵按一下 [ *FirstToolWindowControl*]，按一下 [ **視圖程式碼**]，然後將下列程式碼加入至 FirstToolWindowControl 類別。
 
 ```csharp
 public System.Windows.Controls.MediaElement MediaPlayer
@@ -255,7 +257,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
 接下來，在工具視窗的 IDE 中指定預設位置。 工具視窗的設定資訊位於 *FirstToolWindowPackage.cs* 檔案中。
 
-1. 在 *FirstToolWindowPackage.cs*中，尋找 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 類別上的屬性，此屬性會將 `FirstToolWindowPackage` FirstToolWindow 類型傳遞給函式。 若要指定預設位置，您必須在下列範例中新增更多參數到此函式。
+1. 在 *FirstToolWindowPackage.cs* 中，尋找 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 類別上的屬性，此屬性會將 `FirstToolWindowPackage` FirstToolWindow 類型傳遞給函式。 若要指定預設位置，您必須在下列範例中新增更多參數到此函式。
 
     ```csharp
     [ProvideToolWindow(typeof(FirstToolWindow),
@@ -263,7 +265,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
         Window = "3ae79031-e1bc-11d0-8f78-00a0c9110057")]
     ```
 
-    第一個具名引數是 `Style` ，其值為 `Tabbed` ，表示視窗將是現有視窗中的索引標籤。 停駐位置是由 `Window` 參數（在此案例中為 **方案總管**的 GUID）指定。
+    第一個具名引數是 `Style` ，其值為 `Tabbed` ，表示視窗將是現有視窗中的索引標籤。 停駐位置是由 `Window` 參數（在此案例中為 **方案總管** 的 GUID）指定。
 
     > [!NOTE]
     > 如需 IDE 中視窗類型的詳細資訊，請參閱 <xref:EnvDTE.vsWindowType> 。
@@ -274,7 +276,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
 2. 在 [ **View** ] 功能表上，指向 [ **其他視窗** ]，然後按一下 [ **第一個工具視窗]**。
 
-    Media player 工具視窗應該會在 **方案總管**的相同位置開啟。 如果它仍出現在與之前相同的位置，請重設視窗版面配置 (**視窗/重設視窗** 配置) 。
+    Media player 工具視窗應該會在 **方案總管** 的相同位置開啟。 如果它仍出現在與之前相同的位置，請重設視窗版面配置 (**視窗/重設視窗** 配置) 。
 
 3. 按一下該按鈕， (工具視窗中) 的 **搜尋** 圖示。 選取支援的音效或影片檔案，例如 *C:\windows\media\chimes.wav*，然後按 [ **開啟**]。
 

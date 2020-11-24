@@ -1,5 +1,7 @@
 ---
 title: 如何將 app.config 檔案新增至專案
+description: '瞭解如何將 app.config 檔案新增至 c # 專案，讓您可以自訂 common language runtime 尋找和載入元件檔案的方式。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -11,21 +13,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fe659979cadf4d9e5752f7bbe85150aae848de08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 282c66acd71d0c68ff5bc3c74db2e8a2517a00d1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770831"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597349"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>如何：將應用程式組態檔新增至 C# 專案
 
-您可以將應用程式組態檔 (app.config** 檔案) 新增至 C# 專案，以自訂通用語言執行平台尋找及載入組件檔的方式。 如需應用程式組態檔的詳細資訊，請參閱[執行階段如何找出組件 (.NET Framework)](/dotnet/framework/deployment/how-the-runtime-locates-assemblies)。
+您可以將應用程式組態檔 (app.config 檔案) 新增至 C# 專案，以自訂通用語言執行平台尋找及載入組件檔的方式。 如需應用程式組態檔的詳細資訊，請參閱[執行階段如何找出組件 (.NET Framework)](/dotnet/framework/deployment/how-the-runtime-locates-assemblies)。
 
 > [!NOTE]
-> UWP 應用程式不包含 app.config** 檔案。
+> UWP 應用程式不包含 app.config 檔案。
 
-當您建置專案時，開發環境會自動複製您的 app.config** 檔案，並將複本的檔案名稱變更為符合可執行檔的名稱，然後移動到 **bin** 目錄。
+當您建置專案時，開發環境會自動複製您的 app.config 檔案，並將複本的檔案名稱變更為符合可執行檔的名稱，然後移動到 **bin** 目錄。
 
 ## <a name="to-add-an-application-configuration-file-to-a-c-project"></a>將應用程式組態檔加入 C# 專案
 
@@ -33,9 +35,9 @@ ms.locfileid: "85770831"
 
      [加入新項目]  對話方塊隨即出現。
 
-1. 展開 [**已安裝**  >  的**Visual c # 專案**]，然後選擇 [**應用程式佈建檔**] 範本。
+1. 展開 [**已安裝**  >  的 **Visual c # 專案**]，然後選擇 [**應用程式佈建檔**] 範本。
 
-1. 在 [名稱]**** 文字方塊中，輸入名稱，然後選擇 [新增]**** 按鈕。
+1. 在 [名稱] 文字方塊中，輸入名稱，然後選擇 [新增] 按鈕。
 
      名為 *app.config* 的檔案會新增至專案。
 

@@ -1,5 +1,7 @@
 ---
 title: 將子功能表新增至功能表 |Microsoft Docs
+description: 瞭解如何建立子功能表，將它新增至 Visual Studio 的功能表列，並將新的命令加入至子功能表。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,21 +15,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5887dba1ed1c583653b93792174524f8dfb84609
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16b58a6ab6a01ff635b3afd58b06133abacf970e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972318"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598012"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>將子功能表新增至功能表
-本逐步解說會示範如何將子功能表新增至 [ **TestMenu** ] 功能表，以[將功能表新增至 Visual Studio 的功能表列](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)。
+本逐步解說會示範如何將子功能表新增至 [ **TestMenu** ] 功能表，以 [將功能表新增至 Visual Studio 的功能表列](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)。
 
  子功能表是出現在另一個功能表中的次要功能表。 子功能表可透過其名稱後面的箭號來識別。 按一下名稱會顯示子功能表和其命令。
 
  本逐步解說會在 [Visual Studio] 功能表列上的功能表中建立子功能表，並將新的命令放在子功能表上。 本逐步解說也會實施新的命令。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="add-a-submenu-to-a-menu"></a>將子功能表新增至功能表

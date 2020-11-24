@@ -1,5 +1,7 @@
 ---
 title: 建立多重專案範本
+description: 瞭解如何在 Visual Studio 中建立多專案範本，這些範本可同時作為許多專案的容器。
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b71af98c7d72e0b3a510f3968f3d0770cd5401df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efd0808342e38627d0b79b097f36f86a1881dafe
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284408"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597220"
 ---
 # <a name="how-to-create-multi-project-templates"></a>如何：建立多專案範本
 
@@ -24,9 +26,9 @@ ms.locfileid: "85284408"
 
 多專案範本的行為與單一專案範本不同。 它們具有下列獨特的特性：
 
-- 當範本用於建立新專案時，多專案範本中的個別專案不能指派名稱。 相反地，在 vstemplate** 檔案的 **ProjectTemplateLink** 項目上使用 **ProjectName** 屬性，指定每個專案的名稱。
+- 當範本用於建立新專案時，多專案範本中的個別專案不能指派名稱。 相反地，在 vstemplate 檔案的 **ProjectTemplateLink** 項目上使用 **ProjectName** 屬性，指定每個專案的名稱。
 
-- 多專案範本可以包含不同語言的專案，但整個範本本身只能放在一個類別中。 在 vstemplate** 檔案的 **ProjectType** 項目中指定範本類別。
+- 多專案範本可以包含不同語言的專案，但整個範本本身只能放在一個類別中。 在 vstemplate 檔案的 **ProjectType** 項目中指定範本類別。
 
 多專案範本必須包含下列項目，且壓縮成 *.zip* 檔案：
 
@@ -53,7 +55,7 @@ ms.locfileid: "85284408"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- **TemplateContent** 項目包含 **ProjectCollection** 項目，它具有一或多個 **ProjectTemplateLink** 項目可定義所包含專案的 vstemplate** 檔案路徑。 例如：
+- **TemplateContent** 項目包含 **ProjectCollection** 項目，它具有一或多個 **ProjectTemplateLink** 項目可定義所包含專案的 vstemplate 檔案路徑。 例如：
 
     ```xml
     <TemplateContent>
@@ -88,7 +90,7 @@ ms.locfileid: "85284408"
 2. 自訂專案，直到它們可以匯出成範本為止。
 
    > [!TIP]
-   > 如果您使用[範本參數](template-parameters.md)且您想要從父代範本參考變數，請在參數名稱加上前置詞 `ext_`。 例如 `$ext_safeprojectname$`。 此外，請將 **ProjectTemplateLink** 元素的 **CopyParameters** 屬性設定為 **true**。
+   > 如果您使用[範本參數](template-parameters.md)且您想要從父代範本參考變數，請在參數名稱加上前置詞 `ext_`。 例如： `$ext_safeprojectname$` 。 此外，請將 **ProjectTemplateLink** 元素的 **CopyParameters** 屬性設定為 **true**。
    >
    > ```xml
    > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>
@@ -98,9 +100,9 @@ ms.locfileid: "85284408"
 
    [ **匯出範本]** 隨即開啟。
 
-4. 在 [選擇範本類型]**** 頁面上，選取 [專案範本]****。 選取其中一個您想要匯出至範本的專案，然後選擇 [下一步]****。 (對解決方案中的每個專案重複這些步驟)。
+4. 在 [選擇範本類型] 頁面上，選取 [專案範本]。 選取其中一個您想要匯出至範本的專案，然後選擇 [下一步]。 (對解決方案中的每個專案重複這些步驟)。
 
-5. 在 [選取範本選項]**** 頁面上，輸入範本的名稱和選擇性描述、圖示和預覽影像。 選擇 [完成]****。
+5. 在 [選取範本選項] 頁面上，輸入範本的名稱和選擇性描述、圖示和預覽影像。 選擇 [完成]。
 
    專案會匯出為 *.zip* 檔案，放在指定的輸出位置。
 
@@ -126,7 +128,7 @@ ms.locfileid: "85284408"
 此範例顯示基本的多專案根 *.vstemplate* 檔案。 在本範例中，範本有兩個專案：**My Windows Application** 和 **My Class Library**。 **ProjectTemplateLink** 項目上的 **ProjectName** 屬性會指定要提供給專案的名稱。
 
 > [!TIP]
-> 如果未指定 **ProjectName** 屬性，則請使用 vstemplate** 檔案的名稱作為專案名稱。
+> 如果未指定 **ProjectName** 屬性，則請使用 vstemplate 檔案的名稱作為專案名稱。
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"

@@ -1,5 +1,7 @@
 ---
 title: 在自動程式化 UI 測試中使用 HTML5 控制項
+description: 瞭解 Internet Explorer 9 和 Internet Explorer 10 中所包含之 HTML5 控制項的自動程式碼 UI 測試支援。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3519d1cc030c69880bcc047b4b4123785c4fb8b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d902d31b0d417c32b7b3e1a2067a8bb5bcf77451
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289335"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598376"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在自動程式化 UI 測試中使用 HTML5 控制項
 
@@ -20,7 +22,7 @@ ms.locfileid: "85289335"
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**需求**
+**Requirements**
 
 - Visual Studio Enterprise
 

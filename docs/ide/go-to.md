@@ -1,5 +1,7 @@
 ---
 title: 移至檔案、移至符號、移至行
+description: 瞭解如何在 Visual Studio 中移至命令，以及如何使用它們來執行程式碼的焦點搜尋。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,23 +14,23 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3e000224fc09810e15ba3cdbdc4be729139eaaa
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593781"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597531"
 ---
 # <a name="find-code-using-go-to-commands"></a>使用移至命令來尋找程式碼
 
-Visual Studio 的 [移至]**** 命令會對程式碼執行焦點式搜尋，協助您快速找出指定的項目。 您可以透過簡潔的整合介面，移至特定行、類型、符號、檔案和成員。
+Visual Studio 的 [移至] 命令會對程式碼執行焦點式搜尋，協助您快速找出指定的項目。 您可以透過簡潔的整合介面，移至特定行、類型、符號、檔案和成員。
 
 ## <a name="how-to-use-it"></a>用法
 
 輸入 | 函式
 ------------ | ---
-**鍵盤** | 按下**ctrl** + **T**或**ctrl** + **，**
-**滑鼠** | 選取 [**編輯**  >  **移**至  >  **全部**]
+**鍵盤** | 按下 **ctrl** + **T** 或 **ctrl** + **，**
+**滑鼠** | 選取 [**編輯**  >  **移** 至  >  **全部**]
 
 在您程式碼編輯器的右上方會顯示一個小視窗。
 
@@ -72,7 +74,7 @@ m| ![成員圖示](media/gotoall-members-icon.png) | **Ctrl** +**1**、 **Ctrl**
 
 ## <a name="camel-casing"></a>駝峰式命名法的大小寫
 
-如果您在程式碼中使用 [camel casing](https://en.wikipedia.org/wiki/Camel_case) (駝峰式命名法)，則只要輸入程式碼項目名稱的大寫字母，就可以更快速地找到程式碼項目。 例如，如果您的程式碼有一個稱為的型 `CredentialViewModel` **別**，您可以選擇**類型**篩選 (t) ，然後只在 `CVM` [移至] 對話方塊中輸入名稱 () 的大寫字母，以縮小搜尋範圍。 如果您的程式碼名稱很長，則這個功能十分有用。
+如果您在程式碼中使用 [camel casing](https://en.wikipedia.org/wiki/Camel_case) (駝峰式命名法)，則只要輸入程式碼項目名稱的大寫字母，就可以更快速地找到程式碼項目。 例如，如果您的程式碼有一個稱為的型 `CredentialViewModel` **別**，您可以選擇 **類型** 篩選 (t) ，然後只在 `CVM` [移至] 對話方塊中輸入名稱 () 的大寫字母，以縮小搜尋範圍。 如果您的程式碼名稱很長，則這個功能十分有用。
 
 ![[巡覽至] 視窗 - 使用大寫搜尋](../ide/media/vside_capitalsearch.png)
 

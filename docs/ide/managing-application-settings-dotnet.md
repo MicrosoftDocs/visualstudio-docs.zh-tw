@@ -1,5 +1,7 @@
 ---
 title: 管理應用程式設定 (.NET)
+description: 瞭解如何管理 (先前稱為動態屬性) 的應用程式設定，這些屬性不包含在應用程式程式碼中，而是在執行時間所需。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d792a6147795f81211203fc442539371f3caa91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f62e03210e83f434bd32d08c3fe0f7b2b539155e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593703"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596894"
 ---
 # <a name="manage-application-settings-net"></a>管理應用程式設定 (.NET)
 
@@ -38,7 +40,7 @@ ms.locfileid: "75593703"
 
 - 使用者範圍的設定可用於保留表單最後一個位置或字型偏好設定等資訊。 使用者可以在執行階段變更這些值。
 
-您可以使用 [範圍] **** 屬性變更設定的類型。
+您可以使用 [範圍]  屬性變更設定的類型。
 
 專案系統會將應用程式設定儲存在兩個 XML 檔案中：
 
@@ -50,14 +52,14 @@ ms.locfileid: "75593703"
 
 ## <a name="create-application-settings-at-design-time"></a>在設計階段建立應用程式設定
 
-在設計階段建立應用程式設定有兩種方式：使用 [專案設計工具] **** 的 [設定] **** 頁面，或是使用表單或控制項的 [屬性] **** 視窗，這個視窗可讓您將設定繫結至屬性。
+在設計階段建立應用程式設定有兩種方式：使用 [專案設計工具]  的 [設定] 頁面，或是使用表單或控制項的 [屬性]  視窗，這個視窗可讓您將設定繫結至屬性。
 
 當您建立應用程式範圍的設定時 (例如，資料庫連接字串或伺服器資源的參考) 時，會將 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 它儲存在具有標記的 *app.config* 中 `<applicationSettings>` 。 (連接字串儲存在 `<connectionStrings>` 標記之下)。
 
 當您建立使用者範圍的設定時 (例如，預設字型、首頁或視窗大小) ， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會將它儲存在具有標記的 *app.config* 中 `<userSettings>` 。
 
 > [!IMPORTANT]
-> 當您將連接字串儲存在 *app.config*時，您應該採取預防措施以避免在連接字串中洩漏機密資訊，例如密碼或伺服器路徑。
+> 當您將連接字串儲存在 *app.config* 時，您應該採取預防措施以避免在連接字串中洩漏機密資訊，例如密碼或伺服器路徑。
 >
 > 如果您是從外部來源取得連接字串資訊 (例如使用者提供使用者 ID 和密碼)，請務必確保您用來建構連接字串的值不能包含會變更連接行為的其他連接字串參數。
 >
@@ -70,17 +72,17 @@ ms.locfileid: "75593703"
 
 您可以在專案中加入自訂設定檔，以便於管理設定群組。 單一檔案中所包含的設定會以單元方式載入和儲存。 將設定儲存在經常使用及不常使用群組的個別檔案中，可以節省載入和儲存設定的時間。
 
-例如，您可以將 *SpecialSettings 等設定* 新增至您的專案。 雖然 `SpecialSettings` 類別不會出現在 `My` 命名空間中，但是 [檢視程式碼] **** 仍可讀取包含 `Partial Class SpecialSettings`的自訂設定檔。
+例如，您可以將 *SpecialSettings 等設定* 新增至您的專案。 雖然 `SpecialSettings` 類別不會出現在 `My` 命名空間中，但是 [檢視程式碼]  仍可讀取包含 `Partial Class SpecialSettings`的自訂設定檔。
 
-**設定設計**工具會先搜尋專案系統所建立的設定檔案 *。* 這個檔案是 [**設定**] 索引標籤中的 [**專案設計**工具] 所顯示的預設*檔案。設定*位於 [我的*專案*] 資料夾中的專案 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ，以及專案的 [*屬性*] 資料夾中。 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 然後， **專案設計** 工具會搜尋專案根資料夾中的其他設定檔案。 因此，您應該將自訂設定檔放在此。 如果您在專案中的其他位置加入 *配置* 檔， **專案設計** 工具將找不到該檔案。
+**設定設計** 工具會先搜尋專案系統所建立的設定檔案 *。* 這個檔案是 [**設定**] 索引標籤中的 [**專案設計** 工具] 所顯示的預設 *檔案。設定* 位於 [我的 *專案*] 資料夾中的專案 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ，以及專案的 [*屬性*] 資料夾中。 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 然後， **專案設計** 工具會搜尋專案根資料夾中的其他設定檔案。 因此，您應該將自訂設定檔放在此。 如果您在專案中的其他位置加入 *配置* 檔， **專案設計** 工具將找不到該檔案。
 
 ## <a name="access-or-change-application-settings-at-run-time-in-visual-basic"></a>在 Visual Basic 中於執行階段存取或變更應用程式設定
 
-在 Visual Basic 專案中，您可以使用 `My.Settings` 物件在執行階段存取應用程式設定。 請在 [設定]**** 頁面中，按一下 [檢視程式碼]**** 按鈕，以檢視 *Settings.vb* 檔案。 *Settings* `Settings` 會定義類別，此類別可讓您在 Settings 類別上處理這些事件： <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> 、 <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged> 、 <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded> 和 <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving> 。 請注意，*Settings.vb* 中的 `Settings` 類別是部分類別，只會顯示使用者所擁有的程式碼，不會顯示整個產生的類別。 如需使用 `My.Settings` 物件存取應用程式設定的詳細資訊，請參閱[存取應用程式設定 (.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)。
+在 Visual Basic 專案中，您可以使用 `My.Settings` 物件在執行階段存取應用程式設定。 請在 [設定] 頁面中，按一下 [檢視程式碼] 按鈕，以檢視 *Settings.vb* 檔案。 *Settings* `Settings` 會定義類別，此類別可讓您在 Settings 類別上處理這些事件： <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> 、 <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged> 、 <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded> 和 <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving> 。 請注意，*Settings.vb* 中的 `Settings` 類別是部分類別，只會顯示使用者所擁有的程式碼，不會顯示整個產生的類別。 如需使用 `My.Settings` 物件存取應用程式設定的詳細資訊，請參閱[存取應用程式設定 (.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)。
 
-使用者在執行時間變更的任何使用者範圍設定值 (例如，表單) 的位置會儲存在 *user.config* 檔案中。 請注意，預設值仍會儲存在 *app.config*中。
+使用者在執行時間變更的任何使用者範圍設定值 (例如，表單) 的位置會儲存在 *user.config* 檔案中。 請注意，預設值仍會儲存在 *app.config* 中。
 
-如果在執行階段期間 (例如在測試應用程式時) 變更了任何使用者範圍的設定，並想要將這些設定重設為預設值，請按一下 [同步處理]**** 按鈕。
+如果在執行階段期間 (例如在測試應用程式時) 變更了任何使用者範圍的設定，並想要將這些設定重設為預設值，請按一下 [同步處理] 按鈕。
 
 強烈建議您使用 `My.Settings` 物件和預設的 *配置* 檔案來存取設定。 這是因為您可以使用 [ **設定設計** 工具] 將屬性指派給設定，此外，也會在應用程式關閉前自動儲存使用者設定。 然而，Visual Basic 應用程式可以直接存取設定。 在此情況下，您必須存取 `MySettings` 類別，並在專案的根目錄中使用自訂 *的配置* 檔案。 您必須在結束應用程式之前儲存使用者設定，如同您針對 C# 應用程式所做的一樣 (將於下一節中描述)。
 

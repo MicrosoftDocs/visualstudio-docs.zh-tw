@@ -1,5 +1,7 @@
 ---
 title: 建立項目範本
+description: 瞭解如何使用 [匯出範本] 嚮導，在 Visual Studio 中建立專案範本。
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -7,16 +9,16 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 0a0d4122d36c0946b6c1c98ef0f1523ce35751a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abf058526a6ff48a37d4c7585e7deabe1decb14a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284473"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597271"
 ---
 # <a name="how-to-create-item-templates"></a>如何：建立項目範本
 
-本文會向您示範如何使用 [匯出範本精靈]**** 建立項目範本。 如果您的範本中包含多個檔案，請參閱[如何：建立多檔案項目範本](../ide/how-to-create-multi-file-item-templates.md)。
+本文會向您示範如何使用 [匯出範本精靈] 建立項目範本。 如果您的範本中包含多個檔案，請參閱[如何：建立多檔案項目範本](../ide/how-to-create-multi-file-item-templates.md)。
 
 ## <a name="add-an-item-template-to-the-add-new-item-dialog-box"></a>將項目範本新增至 [新增項目] 對話方塊
 
@@ -28,27 +30,27 @@ ms.locfileid: "85284473"
 
 1. 選擇 [ **專案** ] 功能表上的 [ **匯出範本**]。
 
-1. 在 [選擇範本類型]**** 頁面上，選擇 [項目範本]****，選取包含項目的專案，然後選擇 [下一步]****。
+1. 在 [選擇範本類型] 頁面上，選擇 [項目範本]，選取包含項目的專案，然後選擇 [下一步]。
 
-1. 在 [選取要匯出的項目]**** 頁面上，選擇您想要建立範本的項目，然後選擇 [下一步]****。
+1. 在 [選取要匯出的項目] 頁面上，選擇您想要建立範本的項目，然後選擇 [下一步]。
 
-1. 在 [選取項目參考]**** 頁面上，選取要包含在範本中的組件參考，然後選擇 [下一步]****。
+1. 在 [選取項目參考] 頁面上，選取要包含在範本中的組件參考，然後選擇 [下一步]。
 
-1. 在 [選取範本選項]**** 頁面上，輸入範本名稱和選擇性描述、圖示影像和預覽影像，然後選擇 [完成]****。
+1. 在 [選取範本選項] 頁面上，輸入範本名稱和選擇性描述、圖示影像和預覽影像，然後選擇 [完成]。
 
     範本檔案會新增至 *.zip* 檔案，並複製到您在精靈中指定的目錄。 預設位置是 *%USERPROFILE%\Documents\Visual Studio \<version\> \My 匯出的範本*。
 
-1. 如果您未在 [匯出範本精靈]**** 中選取 [自動將範本匯入 Visual Studio]**** 選項，請尋找匯出的範本。 然後，將它複製到使用者項目範本目錄。 預設位置為 *%USERPROFILE%\Documents\Visual Studio \<version\> \Templates\ItemTemplates*。
+1. 如果您未在 [匯出範本精靈] 中選取 [自動將範本匯入 Visual Studio] 選項，請尋找匯出的範本。 然後，將它複製到使用者項目範本目錄。 預設位置為 *%USERPROFILE%\Documents\Visual Studio \<version\> \Templates\ItemTemplates*。
 
 1. 結束再重新開啟 Visual Studio。
 
-1. 建立新的專案，或開啟現有的專案，然後選擇 [ **project**  >  **加入新專案**] 或按**Ctrl** + **Shift** + **a**。
+1. 建立新的專案，或開啟現有的專案，然後選擇 [ **project**  >  **加入新專案**] 或按 **Ctrl** + **Shift** + **a**。
 
-   項目範本會出現在 [新增項目]**** 對話方塊中。 如已在 [匯出範本精靈]**** 中新增描述，該描述會出現在對話方塊的右邊。
+   項目範本會出現在 [新增項目] 對話方塊中。 如已在 [匯出範本精靈] 中新增描述，該描述會出現在對話方塊的右邊。
 
 ## <a name="enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>讓項目範本能在通用 Windows 應用程式專案中使用
 
-此精靈為建立基本範本執行許多工作，但在許多情況下，您需要在匯出範本之後手動修改 *.vstemplate* 檔案。 例如，如果您希望項目出現在通用 Windows 應用程式專案的 [新增項目]**** 對話方塊中，您必須執行一些額外的步驟。
+此精靈為建立基本範本執行許多工作，但在許多情況下，您需要在匯出範本之後手動修改 *.vstemplate* 檔案。 例如，如果您希望項目出現在通用 Windows 應用程式專案的 [新增項目] 對話方塊中，您必須執行一些額外的步驟。
 
 1. 遵循上一節中的步驟匯出項目範本。
 
@@ -64,9 +66,9 @@ ms.locfileid: "85284473"
 
 1. 複製 *.vstemplate* 檔案，並貼回至 *.zip* 檔案。
 
-     如果出現 [複製檔案]**** 對話方塊，請選擇 [複製並取代]**** 選項。
+     如果出現 [複製檔案] 對話方塊，請選擇 [複製並取代] 選項。
 
-您現在可以根據此範本，從 [新增項目]**** 對話方塊將項目新增至通用 Windows 專案。
+您現在可以根據此範本，從 [新增項目] 對話方塊將項目新增至通用 Windows 專案。
 
 ## <a name="enable-templates-for-specific-project-subtypes"></a>啟用特定專案子類型的範本
 
@@ -81,7 +83,7 @@ ms.locfileid: "85284473"
     - Windows
     - Office
     - 資料庫
-    - Web
+    - 網路
 
 例如：`<ProjectSubType>Database</ProjectSubType>`。
 
@@ -119,7 +121,7 @@ ms.locfileid: "85284473"
 
 6. 儲存並關閉 *.vstemplate* 檔案。
 
-7. 在 **Windows 檔案總管**中選取您想要併入範本的檔案。 以滑鼠右鍵按一下選取專案，然後選擇 [**傳送到**  >  **壓縮 (壓縮的) 資料夾**。 您選取的檔案會壓縮成 *.zip* 檔案。
+7. 在 **Windows 檔案總管** 中選取您想要併入範本的檔案。 以滑鼠右鍵按一下選取專案，然後選擇 [**傳送到**  >  **壓縮 (壓縮的) 資料夾**。 您選取的檔案會壓縮成 *.zip* 檔案。
 
 ::: moniker range="vs-2017"
 

@@ -1,5 +1,7 @@
 ---
 title: 加入工具列 |Microsoft Docs
+description: 瞭解如何將包含按鈕的工具列，加入至 Visual Studio 整合式開發環境 (IDE) 的命令。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: beb97356daf3c932470bf2598e58e1f5b40ea233
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 434f7470fe5fca13f217c981cc99d6a884117a86
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904073"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597947"
 ---
 # <a name="add-a-toolbar"></a>新增工具列
 本逐步解說將示範如何將工具列加入 Visual Studio IDE。
@@ -27,15 +29,15 @@ ms.locfileid: "85904073"
 
  如需功能表的詳細資訊，請參閱 [命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-an-extension-with-a-toolbar"></a>使用工具列建立延伸模組
- 建立名為的 VSIX 專案 `IDEToolbar` 。 加入名為 **ToolbarTestCommand**的功能表命令專案範本。 如需有關如何進行此作業的詳細資訊，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)模組。
+ 建立名為的 VSIX 專案 `IDEToolbar` 。 加入名為 **ToolbarTestCommand** 的功能表命令專案範本。 如需有關如何進行此作業的詳細資訊，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)模組。
 
 ## <a name="create-a-toolbar-for-the-ide"></a>建立 IDE 的工具列
 
-1. 在 *ToolbarTestCommandPackage. .vsct*中，尋找 [符號] 區段。 在名為 guidToolbarTestCommandPackageCmdSet 的 GuidSymbol 元素中，加入工具列和工具列群組的宣告，如下所示。
+1. 在 *ToolbarTestCommandPackage. .vsct* 中，尋找 [符號] 區段。 在名為 guidToolbarTestCommandPackageCmdSet 的 GuidSymbol 元素中，加入工具列和工具列群組的宣告，如下所示。
 
     ```xml
     <IDSymbol name="Toolbar" value="0x1000" />
@@ -87,7 +89,7 @@ ms.locfileid: "85904073"
 
 6. 以滑鼠右鍵按一下 Visual Studio 的功能表列，以取得工具列清單。 選取 [ **測試] 工具列**。
 
-7. 您現在應該會看到工具列顯示為 [檔案中尋找] 圖示右邊的圖示。 當您按一下圖示時，應該會看到一個訊息方塊，指出 **ToolbarTestCommandPackage。在 IDEToolbar 中，ToolbarTestCommand. MenuItemCallback ( # B1 **。
+7. 您現在應該會看到工具列顯示為 [檔案中尋找] 圖示右邊的圖示。 當您按一下圖示時，應該會看到一個訊息方塊，指出 **ToolbarTestCommandPackage。在 IDEToolbar 中，ToolbarTestCommand. MenuItemCallback ( # B1**。
 
 ## <a name="see-also"></a>另請參閱
 - [命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)

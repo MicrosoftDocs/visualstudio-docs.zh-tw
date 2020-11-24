@@ -1,5 +1,7 @@
 ---
 title: 建立並執行 UWP 應用程式的單元測試
+description: '瞭解 Visual Studio 通用 Windows 平臺應用程式單元測試的支援。 Visual Studio 提供適用于 c #、Visual Basic 和 c + + 的單元測試範本。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikejo5000
-ms.openlocfilehash: 4109f743caf7c62450591f78e90b92113fc4107e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcf93dff859e2332c79b50086d0dc50d6bd304c8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568876"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598337"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>逐步解說：建立並執行 UWP App 的單元測試
 
@@ -38,7 +40,7 @@ Visual Studio 包含進行通用 Windows 平台 (UWP) 應用程式單元測試�
 
    範本清單會篩選這些範本以進行單元測試。
 
-3. 針對 c # 或 Visual Basic 選取 ** (通用 Windows) 範本的單元測試應用程式 ** ，然後選取 **[下一步]**。
+3. 針對 c # 或 Visual Basic 選取 **(通用 Windows) 範本的單元測試應用程式** ，然後選取 **[下一步]**。
 
    ![在 Visual Studio 中建立新的 UWP 單元測試應用程式](media/vs-2019/new-uwp-unit-test-app.png)
 
@@ -56,13 +58,13 @@ Visual Studio 包含進行通用 Windows 平台 (UWP) 應用程式單元測試�
 
 1. 從 [ **檔案** ] 功能表選擇 [ **新增專案**]。
 
-   [新增專案]**** 對話方塊隨即顯示。
+   [新增專案] 對話方塊隨即顯示。
 
-2. 在 [範本] 下，選擇您要用來建立單元測試的程式設計語言，然後選擇相關聯的 Windows 通用單元測試程式庫。 例如，依序選擇 [Visual C#]****、[Windows 通用]**** 和 [單元測試程式庫 (通用 Windows)]****。
+2. 在 [範本] 下，選擇您要用來建立單元測試的程式設計語言，然後選擇相關聯的 Windows 通用單元測試程式庫。 例如，依序選擇 [Visual C#]、[Windows 通用] 和 [單元測試程式庫 (通用 Windows)]。
 
-3. (選擇性) 在 [名稱]**** 文字方塊中，輸入專案要使用的名稱。
+3. (選擇性) 在 [名稱] 文字方塊中，輸入專案要使用的名稱。
 
-4. (選擇性) 在 [位置]**** 文字方塊中輸入路徑，或是選取 [瀏覽]**** 按鈕，以修改要建立專案的路徑。
+4. (選擇性) 在 [位置] 文字方塊中輸入路徑，或是選取 [瀏覽] 按鈕，以修改要建立專案的路徑。
 
 5. (選擇性) 在 [ **方案** ] 名稱文字方塊中，輸入您的方案要使用的名稱。
 
@@ -78,9 +80,9 @@ Visual Studio 包含進行通用 Windows 平台 (UWP) 應用程式單元測試�
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>編輯單元測試專案的 UWP 應用程式資訊清單檔
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 *package.appxmanifest* 檔案，然後選擇 [ **開啟**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 *package.appxmanifest* 檔案，然後選擇 [ **開啟**]。
 
-2. 在 [資訊清單設計工具]**** 中，選擇 [功能]**** 索引標籤。
+2. 在 [資訊清單設計工具] 中，選擇 [功能] 索引標籤。
 
 3. 在 [ **功能**] 底下的清單中，選取您要讓單元測試及其所測試之程式碼具有的功能。 例如，如果單元測試需要且測試中的程式碼必須有存取網際網路的能力時，則選擇 [ **網際網路** ] 核取方塊。
 

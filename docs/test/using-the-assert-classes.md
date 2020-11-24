@@ -1,5 +1,7 @@
 ---
 title: MSTest Assert 類別和方法
+description: 瞭解如何在應用程式程式碼的單元測試期間，使用 Assert 語句測試程式程式碼為的正確性。
+ms.custom: SEO-VS-2020
 ms.date: 06/07/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c36916c79bd783ed2c6ce960b068e85478b9971d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5401fb15a19d069c0bf454661d6d9283abb2585
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592044"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598194"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>使用 Assert 類別進行單元測試
 
@@ -36,9 +38,9 @@ ms.locfileid: "75592044"
 
 ### <a name="exceptions"></a>例外狀況
 
-每當測試失敗時，便會擲回 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException> 例外狀況。 測試在逾時、擲回未預期的例外狀況，或包含產生**失敗**結果的 Assert 陳述式時，便會失敗。
+每當測試失敗時，便會擲回 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException> 例外狀況。 測試在逾時、擲回未預期的例外狀況，或包含產生 **失敗** 結果的 Assert 陳述式時，便會失敗。
 
-每當測試所產生的結果**不明**，便會擲回 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException>。 一般而言，您會將 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive%2A?displayProperty=nameWithType> 陳述式新增至您仍在處理的測試，以表示它尚未做好執行準備。
+每當測試所產生的結果 **不明**，便會擲回 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException>。 一般而言，您會將 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive%2A?displayProperty=nameWithType> 陳述式新增至您仍在處理的測試，以表示它尚未做好執行準備。
 
 > [!NOTE]
 > 另一種方法就是將尚未準備好要執行的測試以 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.IgnoreAttribute> 屬性標示。 不過，此方法的缺點在於您無法輕鬆地就您未實作的測試數量產生報告。

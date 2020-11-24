@@ -1,5 +1,7 @@
 ---
 title: 將最近使用的清單新增至子功能表 |Microsoft Docs
+description: 瞭解如何將包含最近使用之功能表命令的動態清單新增至 Visual Studio 整合式開發環境 (IDE) 中的子功能表。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0de48e30ea20ab2f7df4e512312978e4faa3a46b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904207"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597922"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>將最近使用的清單新增至子功能表
 本逐步解說是以在 [功能表中加入子功能表](../extensibility/adding-a-submenu-to-a-menu.md)的示範為基礎，並示範如何將動態清單新增至子功能表。 動態清單會形成建立最近使用之 (MRU) 清單的基礎。
@@ -30,7 +32,7 @@ ms.locfileid: "85904207"
 
 如需功能表和 *.vsct* 檔案的詳細資訊，請參閱 [命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 [VISUAL STUDIO SDK](../extensibility/visual-studio-sdk.md)。
 
 ## <a name="create-an-extension"></a>建立延伸模組
@@ -47,7 +49,7 @@ ms.locfileid: "85904207"
 
     ```xml
     <IDSymbol name="MRUListGroup" value="0x1200"/>
-    <IDSymbol name="cmdidMRUList" value="0x0200"/>
+    <IDSymbol name="cmdidMRUList" value="0x0200"/>
     ```
 
 3. 在 `Groups` 區段中，在現有的群組專案之後加入宣告的群組。
@@ -81,11 +83,11 @@ ms.locfileid: "85904207"
 
 ## <a name="filling-the-mru-list"></a>填入 MRU 清單
 
-1. 在 *TestCommandPackageGuids.cs*中，將下列幾行加入至類別定義中現有的命令識別碼之後 `TestCommandPackageGuids` 。
+1. 在 *TestCommandPackageGuids.cs* 中，將下列幾行加入至類別定義中現有的命令識別碼之後 `TestCommandPackageGuids` 。
 
     ```csharp
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file
-    public const uint cmdidMRUList = 0x200;
+    public const uint cmdidMRUList = 0x200;
     ```
 
 2. 在 *TestCommand.cs* 中，加入下列 using 語句。
@@ -147,7 +149,7 @@ ms.locfileid: "85904207"
 6. 在 `InitMRUMenu` 方法之後，加入下列 `OnMRUQueryStatus` 方法。 此處理程式會設定每個 MRU 專案的文字。
 
     ```csharp
-    private void OnMRUQueryStatus(object sender, EventArgs e)
+    private void OnMRUQueryStatus(object sender, EventArgs e)
     {
         OleMenuCommand menuCommand = sender as OleMenuCommand;
         if (null != menuCommand)
@@ -155,7 +157,7 @@ ms.locfileid: "85904207"
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)
             {
-                menuCommand.Text = this.mruList[MRUItemIndex] as string;
+                menuCommand.Text = this.mruList[MRUItemIndex] as string;
             }
         }
     }
@@ -164,7 +166,7 @@ ms.locfileid: "85904207"
 7. 在 `OnMRUQueryStatus` 方法之後，加入下列 `OnMRUExec` 方法。 這是用來選取 MRU 專案的處理常式。 這個方法會將選取的專案移至清單頂端，然後將選取的專案顯示在訊息方塊中。
 
     ```csharp
-    private void OnMRUExec(object sender, EventArgs e)
+    private void OnMRUExec(object sender, EventArgs e)
     {
         var menuCommand = sender as OleMenuCommand;
         if (null != menuCommand)
@@ -172,7 +174,7 @@ ms.locfileid: "85904207"
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)
             {
-                string selection = this.mruList[MRUItemIndex] as string;
+                string selection = this.mruList[MRUItemIndex] as string;
                 for (int i = MRUItemIndex; i > 0; i--)
                 {
                     this.mruList[i] = this.mruList[i - 1];

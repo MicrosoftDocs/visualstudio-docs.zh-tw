@@ -1,5 +1,7 @@
 ---
 title: 在工具視窗中新增快捷方式功能表 |Microsoft Docs
+description: 瞭解如何將快捷方式功能表新增至 Visual Studio 中的工具視窗，此視窗會在按鈕、文字方塊或視窗背景以滑鼠右鍵按一下時出現。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa8d6f5c47289e66a51653e39d31890f09e8ceb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e14d948bf5d4b637002ca1f2ec8be37b64dc22b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904191"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597869"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>在工具視窗中新增快捷方式功能表
 本逐步解說會在工具視窗中放置快捷方式功能表。 快速鍵功能表是使用者在按鈕、文字方塊或視窗背景上按一下滑鼠右鍵時所顯示的功能表。 快速鍵功能表上的命令列為與其他功能表或工具列上的命令相同。 若要支援快捷方式功能表，請在 *.vsct* 檔案中指定，並將其顯示以回應滑鼠右鍵。
@@ -29,7 +31,7 @@ ms.locfileid: "85904191"
 
 或者，如果您的快捷方式功能表無法存取 Visual Studio 的功能，您可以 <xref:System.Windows.FrameworkElement.ContextMenu%2A> 在使用者控制項中使用 XAML 專案的屬性。 如需詳細資訊，請參閱 [CoNtextMenu](/dotnet/framework/wpf/controls/contextmenu)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-the-tool-window-shortcut-menu-package"></a>建立工具視窗快捷方式功能表套件
@@ -39,7 +41,7 @@ ms.locfileid: "85904191"
 ## <a name="specifying-the-shortcut-menu"></a>指定快捷方式功能表
 本逐步解說中所顯示的快捷方式功能表可讓使用者從用來填滿工具視窗背景的色彩清單中選取。
 
-1. 在 *ShortcutMenuPackage*中，在名為 GuidShortcutMenuPackageCmdSet 的 GuidSymbol 元素中尋找，然後宣告快捷方式功能表、快捷方式功能表群組和功能表選項。 GuidSymbol 元素現在看起來應該像這樣：
+1. 在 *ShortcutMenuPackage* 中，在名為 GuidShortcutMenuPackageCmdSet 的 GuidSymbol 元素中尋找，然後宣告快捷方式功能表、快捷方式功能表群組和功能表選項。 GuidSymbol 元素現在看起來應該像這樣：
 
     ```xml
     <GuidSymbol name="guidShortcutMenuPackageCmdSet" value="{00000000-0000-0000-0000-0000}"> // your GUID here
@@ -112,14 +114,14 @@ ms.locfileid: "85904191"
     </Buttons>
     ```
 
-5. 在 *ShortcutMenuCommand.cs*中，新增命令集 GUID、快捷方式功能表和功能表項目的定義。
+5. 在 *ShortcutMenuCommand.cs* 中，新增命令集 GUID、快捷方式功能表和功能表項目的定義。
 
     ```csharp
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ
-    public const int ColorMenu = 0x1000;
-    public const int cmdidRed = 0x102;
-    public const int cmdidYellow = 0x103;
-    public const int cmdidBlue = 0x104;
+    public const int ColorMenu = 0x1000;
+    public const int cmdidRed = 0x102;
+    public const int cmdidYellow = 0x103;
+    public const int cmdidBlue = 0x104;
     ```
 
     這些是在 *ShortcutMenuPackage. .vsct* 檔案的 [符號] 區段中定義的相同命令識別碼。 此處不包含內容群組，因為它只有在 *.vsct* 檔案中才需要。
@@ -127,9 +129,9 @@ ms.locfileid: "85904191"
 ## <a name="implementing-the-shortcut-menu"></a>執行快捷方式功能表
  本節會執行快捷方式功能表和其命令。
 
-1. 在 *ShortcutMenu.cs*中，工具視窗可以取得功能表命令服務，但是它所包含的控制項則不能。 下列步驟顯示如何讓功能表命令服務可供使用者控制項使用。
+1. 在 *ShortcutMenu.cs* 中，工具視窗可以取得功能表命令服務，但是它所包含的控制項則不能。 下列步驟顯示如何讓功能表命令服務可供使用者控制項使用。
 
-2. 在 *ShortcutMenu.cs*中，新增下列 using 指示詞：
+2. 在 *ShortcutMenu.cs* 中，新增下列 using 指示詞：
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
@@ -157,7 +159,7 @@ ms.locfileid: "85904191"
     }
     ```
 
-5. 在 *ShortcutMenuControl.xaml.cs*中，新增功能表命令服務的私用欄位，並變更控制項的函式以取得功能表命令服務。 然後使用功能表命令服務來新增內容功能表命令。 ShortcutMenuControl 的函式現在看起來應該像下列程式碼。 稍後會定義命令處理常式。
+5. 在 *ShortcutMenuControl.xaml.cs* 中，新增功能表命令服務的私用欄位，並變更控制項的函式以取得功能表命令服務。 然後使用功能表命令服務來新增內容功能表命令。 ShortcutMenuControl 的函式現在看起來應該像下列程式碼。 稍後會定義命令處理常式。
 
     ```csharp
     public ShortcutMenuControl(OleMenuCommandService service)
@@ -183,7 +185,7 @@ ms.locfileid: "85904191"
     }
     ```
 
-6. 在 *ShortcutMenuControl*中，將事件新增 <xref:System.Windows.UIElement.MouseRightButtonDown> 至最上層 <xref:System.Windows.Controls.UserControl> 元素。 XAML 檔案現在看起來應該像這樣：
+6. 在 *ShortcutMenuControl* 中，將事件新增 <xref:System.Windows.UIElement.MouseRightButtonDown> 至最上層 <xref:System.Windows.Controls.UserControl> 元素。 XAML 檔案現在看起來應該像這樣：
 
     ```vb
     <UserControl x:Class="TWShortcutMenu.ShortcutMenuControl"
@@ -205,10 +207,10 @@ ms.locfileid: "85904191"
     </UserControl>
     ```
 
-7. 在 *ShortcutMenuControl.xaml.cs*中，新增事件處理常式的存根。
+7. 在 *ShortcutMenuControl.xaml.cs* 中，新增事件處理常式的存根。
 
     ```csharp
-    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
     {
     . . .
     }

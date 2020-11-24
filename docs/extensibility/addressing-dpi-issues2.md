@@ -1,5 +1,7 @@
 ---
 title: 解決 DPI Issues2 |Microsoft Docs
+description: 瞭解針對高解析度畫面進行程式設計時所牽涉到的問題，例如相應增加內容、配置問題，以及使用 DPI 調整 Api。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80f16c5b17a41d1f95b9bcb70e90eb8de46ad69d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 455f144a95a41ae482c1f240e1d2f87b888763a5
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740101"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598454"
 ---
 # <a name="address-dpi-issues"></a>解決 DPI 問題
 以「高解析度」畫面出貨的裝置數量會增加。 這些畫面的每英寸通常有超過200圖元 (ppi) 。 在這些電腦上使用應用程式需要相應增加內容，以符合在裝置上以一般觀賞距離來查看內容的需求。 從2014，高密度顯示器的主要目標是行動裝置電腦 (平板電腦、clamshell 膝上型電腦和手機) 。
@@ -103,7 +105,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
 ## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>使用 DPIHelper 程式庫/類別來調整影像和版面配置
 Visual Studio DPI 協助程式程式庫適用于原生和 managed 表單，可供其他應用程式在 Visual Studio shell 之外使用。
 
-若要使用程式庫，請移至 [VISUAL STUDIO VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples) 擴充性範例，並複製高 DPI_Images_Icons 範例。
+若要使用程式庫，請移至 [VISUAL STUDIO VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples) 擴充性範例，並複製 High-DPI_Images_Icons 範例。
 
 在原始程式檔中，包含 *VsUIDpiHelper* ，並呼叫類別的靜態函式 `VsUI::DpiHelper` ：
 
@@ -126,7 +128,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />
     ```
 
-- 確定專案具有**PresentationCore**和**PresentationUI**的**參考。**
+- 確定專案具有 **PresentationCore** 和 **PresentationUI** 的 **參考。**
 
 - 在程式碼中，請使用 **VisualStudio PlatformUI** 命名空間，並呼叫 DpiHelper 類別的靜態函式。 針對支援的型別 (點、大小、矩形等等) ，提供的擴充功能會傳回新的縮放物件。 例如：
 

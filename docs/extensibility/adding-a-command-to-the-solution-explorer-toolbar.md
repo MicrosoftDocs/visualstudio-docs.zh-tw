@@ -1,5 +1,7 @@
 ---
 title: 將命令加入至方案總管的工具列 |Microsoft Docs
+description: 瞭解如何將執行命令的按鈕新增至 Visual Studio 中的方案總管工具列。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cc2eee209129867696955eb22c9e851c17973c1
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: d080791c94c77577f80a4b55db67febd3d48b56a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414096"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597505"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>將命令新增至方案總管的工具列
 本逐步解說將示範如何將按鈕新增至 **方案總管** 工具列。
@@ -27,7 +29,7 @@ ms.locfileid: "93414096"
  如需功能表、工具列命令和 *.vsct* 檔案的詳細資訊，請參閱 [命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)。
 
 > [!NOTE]
-> 使用 XML 命令表格 ( *. .vsct* ) 檔案，而非命令表格設定 ( *. .ctc* ) 檔案，以定義功能表和命令在 vspackage 中出現的方式。 如需詳細資訊，請參閱 [Visual Studio 命令表格 (。.Vsct) ](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔。
+> 使用 XML 命令表格 (*. .vsct*) 檔案，而非命令表格設定 (*. .ctc*) 檔案，以定義功能表和命令在 vspackage 中出現的方式。 如需詳細資訊，請參閱 [Visual Studio 命令表格 (。.Vsct) ](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔。
 
 ## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
@@ -112,9 +114,9 @@ ms.locfileid: "93414096"
 
     刪除線按鈕會出現在現有按鈕右邊的工具列上。
 
-5. 按一下 [ **檔案** ] 功能表上的 [ **關閉方案** ]。 按鈕會從工具列中消失。
+5. 按一下 [ **檔案** ] 功能表上的 [ **關閉方案**]。 按鈕會從工具列中消失。
 
    在載入 VSPackage 之前，會控制按鈕的可見度 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 載入 VSPackage 之後，按鈕的可見度是由 VSPackage 所控制。  如需詳細資訊，請參閱 [menucommand 對比與 OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,5 +1,7 @@
 ---
 title: 將使用者控制項加入起始頁 |Microsoft Docs
+description: 瞭解如何將 Windows Presentation Foundation (WPF) 使用者控制項新增至 Visual Studio 中的起始頁。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 1d093ecc8afd9fe822c19c2c1f2ceb5765208865
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fa812b477f88b03b8f0d4bdcba6c69f009ec2894
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011992"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597544"
 ---
 # <a name="add-user-control-to-the-start-page"></a>將使用者控制項新增至起始頁
 
@@ -32,7 +34,7 @@ ms.locfileid: "90011992"
 
 1. 使用我們在 [建立自訂起始頁](../extensibility/creating-a-custom-start-page.md)中建立的起始頁。
 
-2. 在 **方案總管**中，以滑鼠 **按右鍵方案，按一下 [** 新增]，然後按一下 [ **新增專案**]。
+2. 在 **方案總管** 中，以滑鼠 **按右鍵方案，按一下 [** 新增]，然後按一下 [ **新增專案**]。
 
 3. 在 [ **新增專案** ] 對話方塊的左窗格中，展開 [ **Visual Basic** ] 或 [ **Visual c #** ] 節點，然後按一下 [ **Windows**]。 在中間窗格中，選取 [ **WPF 使用者控制項程式庫**]。
 
@@ -106,12 +108,12 @@ ms.locfileid: "90011992"
 
 1. 在 XAML 設計工具中，按兩下您加入至控制項的 [ **設定位址** ] 按鈕。
 
-    *UserControl1.cs*檔案隨即在 [程式碼編輯器] 中開啟。
+    *UserControl1.cs* 檔案隨即在 [程式碼編輯器] 中開啟。
 
 2. 填寫 SetButton_Click 的事件處理常式，如下所示。
 
     ```csharp
-    private void SetButton_Click(object sender, RoutedEventArgs e)
+    private void SetButton_Click(object sender, RoutedEventArgs e)
     {
         try
         {
@@ -139,7 +141,7 @@ ms.locfileid: "90011992"
 
 若要使此控制項可供起始頁專案使用，請在起始頁專案檔中，加入新控制項程式庫的參考。 然後，您可以將控制項加入至起始頁 XAML 標記。
 
-1. 在 **方案總管**的起始頁專案中，以滑鼠右鍵按一下 [ **參考** ]，然後按一下 [ **加入參考**]。
+1. 在 **方案總管** 的起始頁專案中，以滑鼠右鍵按一下 [ **參考** ]，然後按一下 [ **加入參考**]。
 
 2. 在 [ **專案** ] 索引標籤上，選取 [ **WebUserControl** ]，然後按一下 **[確定]**。
 
@@ -151,7 +153,7 @@ ms.locfileid: "90011992"
 
 ### <a name="to-add-the-control-to-the-markup"></a>將控制項加入至標記
 
-1. 在 **方案總管**中，開啟 [開始] 頁面 *.xaml* 檔案。
+1. 在 **方案總管** 中，開啟 [開始] 頁面 *.xaml* 檔案。
 
 2. 在 [ **XAML** ] 窗格中，將下列命名空間宣告加入至最上層 <xref:System.Windows.Controls.Grid> 元素。
 
@@ -177,15 +179,15 @@ ms.locfileid: "90011992"
 
 ## <a name="test-a-manually-created-custom-start-page"></a>測試手動建立的自訂起始頁
 
-1. 將您的 XAML 檔案及任何支援的文字檔或標記檔案複製到 *%USERPROFILE%\My Documents\Visual Studio 2015 \ StartPages \\ *資料夾。
+1. 將您的 XAML 檔案及任何支援的文字檔或標記檔案複製到 *%USERPROFILE%\My Documents\Visual Studio 2015 \ StartPages \\* 資料夾。
 
-2. 如果您的起始頁參考 Visual Studio 未安裝之元件中的任何控制項或類型，請複製元件，然後將它們貼到_Visual Studio 安裝資料夾_**\Common7\IDE\PrivateAssemblies \\ **中。
+2. 如果您的起始頁參考 Visual Studio 未安裝之元件中的任何控制項或類型，請複製元件，然後將它們貼到 _Visual Studio 安裝資料夾_**\Common7\IDE\PrivateAssemblies \\** 中。
 
 3. 在 Visual Studio 的命令提示字元中，輸入 **devenv/Rootsuffix Exp** 以開啟 Visual Studio 的實驗實例。
 
 4. 在實驗性實例中，移至 [**工具**  >  **選項**  >  **環境**  >  **啟動**] 頁面，然後從 [**自訂起始頁**] 下拉式清單中選取您的 XAML 檔案。
 
-5. 在 [檢視] **** 功能表上，按一下 [起始頁] ****。
+5. 在 [檢視]  功能表上，按一下 [起始頁] 。
 
     應該會顯示您的自訂起始頁。 如果您想要變更任何檔案，您必須關閉實驗性實例、進行變更、複製並貼上變更的檔案，然後重新開啟實驗實例以查看變更。
 

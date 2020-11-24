@@ -1,5 +1,7 @@
 ---
 title: 使用 IntelliTrace 來將 SharePoint 應用程式進行偵錯工具
+description: 使用 IntelliTrace 可更輕鬆地將 SharePoint 應用程式進行偵錯工具和修正。 建立程式碼，並將其加入至功能接收器。 測試專案。 收集 IntelliTrace 資料。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c7ab11dbe213208a2e8f5e39c3af2d20b79f5cb
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015758"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598480"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>逐步解說：使用 IntelliTrace 來對 SharePoint 應用程式進行偵錯工具
 
@@ -65,7 +67,7 @@ ms.locfileid: "86015758"
 
      IntelliTrace 只會在伺服器陣列方案上運作。
 
-3. 在 **方案總管**中，開啟 [ **功能** ] 節點的快捷方式功能表，然後選擇 [ **加入功能**]。
+3. 在 **方案總管** 中，開啟 [ **功能** ] 節點的快捷方式功能表，然後選擇 [ **加入功能**]。
 
      *Feature1。功能* 隨即出現。
 
