@@ -1,6 +1,8 @@
 ---
 title: 逐步解說：從現有的 SharePoint 網站匯入專案 |Microsoft Docs
 titleSuffix: ''
+description: 在這個逐步解說中，將專案從現有的 SharePoint 網站匯入 Visual Studio 的 SharePoint 專案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,19 +16,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c5f9fd5e3cc9b0df5feb60149e58e895996bb1f0
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7eeff880538d98f997f48f82c49d01045e834031
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298646"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970124"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>逐步解說：從現有的 SharePoint 網站匯入專案
   本逐步解說示範如何將專案從現有的 SharePoint 網站匯入至 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 專案。
 
  本逐步解說將示範下列工作：
 
-- 藉由新增自訂網站欄 (也稱為 *欄位*來自訂 SharePoint 網站。
+- 藉由新增自訂網站欄 (也稱為 *欄位* 來自訂 SharePoint 網站。
 
 - 將 SharePoint 網站匯出至 .wsp 檔。
 
@@ -92,7 +94,7 @@ ms.locfileid: "92298646"
 
 5. 當作業成功完成時，請選擇 [ **方案庫** ] 連結來查看 .wsp 檔案。
 
-     若要在稍後查看 [方案庫] 頁面，請開啟 [**網站動作**] 功能表，選擇 [**網站設定**]，選擇 [**網站集合管理**] 區段中的 [**移至最上層網站設定**] 連結，然後選擇 [資源**庫**] 區段中的 [**方案**] 連結。
+     若要在稍後查看 [方案庫] 頁面，請開啟 [**網站動作**] 功能表，選擇 [**網站設定**]，選擇 [**網站集合管理**] 區段中的 [**移至最上層網站設定**] 連結，然後選擇 [資源 **庫**] 區段中的 [**方案**] 連結。
 
 6. 在 [方案庫] 中，選擇 [ **ExampleSite** ] 連結。
 
@@ -103,11 +105,11 @@ ms.locfileid: "92298646"
 
 ### <a name="to-import-a-wsp-file"></a>匯入 .wsp 檔案
 
-1. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 的功能表列上，選擇 [**檔案**  >  **新增**  >  **專案**]，以顯示 [**新增專案**] 對話方塊。 如果您的 IDE 設定為使用 Visual Basic 開發設定，請在功能表列**上選擇 [** 檔案  >  **新增專案**]。
+1. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 的功能表列上，選擇 [**檔案**  >  **新增**  >  **專案**]，以顯示 [**新增專案**] 對話方塊。 如果您的 IDE 設定為使用 Visual Basic 開發設定，請在功能表列 **上選擇 [** 檔案  >  **新增專案**]。
 
 2. 展開 [ **Visual c #** ] 或 [ **Visual Basic**] 底下的 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
-3. 選擇 [**範本**] 窗格中的 [匯**入 SharePoint 2010 方案套件**] 範本，將專案的名稱保留為 WspImportProject1，然後選擇 [**確定]** 按鈕。
+3. 選擇 [**範本**] 窗格中的 [匯 **入 SharePoint 2010 方案套件**] 範本，將專案的名稱保留為 WspImportProject1，然後選擇 [**確定]** 按鈕。
 
     [ **SharePoint 自訂] Wizard** 隨即出現。
 
@@ -122,7 +124,7 @@ ms.locfileid: "92298646"
 
 7. 在 [ **選取要匯入的專案** ] 方塊中，清除 [ **測試資料行**] 以外的清單中的所有核取方塊，然後選擇 [ **完成]** 按鈕。
 
-    因為此清單包含許多專案，所以您可以選擇**Ctrl** + **A**鍵來挑選清單中的所有專案，選擇空格鍵以清除所有核取方塊，然後只選取 [測試] 資料**行**專案旁的核取方塊。
+    因為此清單包含許多專案，所以您可以選擇 **Ctrl** + **A** 鍵來挑選清單中的所有專案，選擇空格鍵以清除所有核取方塊，然後只選取 [測試] 資料 **行** 專案旁的核取方塊。
 
     匯入作業完成後，會建立名為 **WspImportProject1** 的新專案，其中包含名為 [ **欄位**] 的資料夾。 在此資料夾中，[自訂網站資料行] **測試資料行** 及其定義檔 *Elements.xml*。
 

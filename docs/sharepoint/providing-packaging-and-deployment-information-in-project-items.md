@@ -1,5 +1,7 @@
 ---
 title: 封裝專案專案中的 & 部署資訊
+description: 使用功能屬性、功能接收器、專案輸出參考和安全控制項實體，在 SharePoint 專案專案中新增封裝和部署資料。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: db805c308fd245554824997b24236eb2e2d80e62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f73d8727fb960cf519d368d928aa20cae38ae1a9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984207"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970473"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>提供專案專案中的封裝和部署資訊
   中的所有 SharePoint 專案專案 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 都有屬性，可讓您在專案部署至 SharePoint 時，用來提供額外的資料。 這些屬性如下所示：
@@ -57,7 +59,7 @@ ms.locfileid: "72984207"
 
  所有專案專案的相同功能屬性值都會合並在功能資訊清單中。 但是，如果有兩個不同的專案專案指定具有不相符值的相同功能屬性索引鍵，就會發生驗證錯誤。
 
- 若要將功能屬性直接加入功能 *檔 (的功能) * 中，請呼叫 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 物件模型方法 <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A> 。 如果您使用此方法，請注意，在功能屬性中加入相同功能屬性值的相同規則也適用于直接新增至功能檔的屬性。
+ 若要將功能屬性直接加入功能 *檔 (的功能)* 中，請呼叫 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 物件模型方法 <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A> 。 如果您使用此方法，請注意，在功能屬性中加入相同功能屬性值的相同規則也適用于直接新增至功能檔的屬性。
 
 ## <a name="feature-receiver"></a>功能接收器
  功能接收器是在特定事件發生于專案專案的包含功能時，所執行的程式碼。 例如，您可以定義在安裝、啟動或升級功能時執行的功能接收器。 新增功能接收器的其中一種方式，是將它直接新增至功能，如 [逐步解說：新增功能事件接收器](../sharepoint/walkthrough-add-feature-event-receivers.md)中所述。 另一種方式是在 **功能接收器** 屬性中參考功能接收器類別的名稱和元件。
@@ -82,11 +84,11 @@ ms.locfileid: "72984207"
  如需詳細資訊，請參閱 [如何：加入專案輸出參考](../sharepoint/how-to-add-a-project-output-reference.md)。
 
 ## <a name="safe-control-entries"></a>安全控制項專案
- SharePoint 提供安全性機制，稱為安全控制項專案，可將不受信任的使用者存取限制為特定控制項。 根據設計，SharePoint 可讓不受信任的使用者上傳和建立 SharePoint 伺服器上的 ASPX 頁面。 為了防止這些使用者將 unsafe 程式碼新增至 ASPX 頁面，SharePoint 會限制其對 *安全控制項*的存取。 安全控制項是指定為安全的 ASPX 控制項和 Web 元件，可供您網站上的任何使用者使用。 如需詳細資訊，請參閱 [步驟4：將您的網頁元件新增至安全控制項清單](/previous-versions/office/developer/sharepoint-2007/ms581321(v=office.12))。
+ SharePoint 提供安全性機制，稱為安全控制項專案，可將不受信任的使用者存取限制為特定控制項。 根據設計，SharePoint 可讓不受信任的使用者上傳和建立 SharePoint 伺服器上的 ASPX 頁面。 為了防止這些使用者將 unsafe 程式碼新增至 ASPX 頁面，SharePoint 會限制其對 *安全控制項* 的存取。 安全控制項是指定為安全的 ASPX 控制項和 Web 元件，可供您網站上的任何使用者使用。 如需詳細資訊，請參閱 [步驟4：將您的網頁元件新增至安全控制項清單](/previous-versions/office/developer/sharepoint-2007/ms581321(v=office.12))。
 
  中的每個 SharePoint 專案專案 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 都有一個稱為 **安全控制項** 專案的屬性，這些專案具有兩個布林子屬性： **安全** 且 **安全地針對腳本**。 [安全] 屬性會指定未受信任的使用者是否能存取控制項。 [安全地針對腳本] 屬性會指定不受信任的使用者是否可以查看和變更控制項的屬性。
 
- 安全控制項專案是以元件為基礎參考。 您可以藉由在專案專案的 [ **安全控制項** 專案] 屬性中輸入安全控制項專案，將安全控制項專案加入專案的元件中。 但是，當您將其他元件加入封裝時，您也可以透過**封裝設計**工具中的 [ **Advanced** ] 索引標籤，將安全的控制項專案加入專案的元件中。 如需詳細資訊，請參閱 [如何：將控制項標記為安全控制項](../sharepoint/how-to-mark-controls-as-safe-controls.md) 或 [將 Web 元件元件註冊為安全控制項](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11))。
+ 安全控制項專案是以元件為基礎參考。 您可以藉由在專案專案的 [ **安全控制項** 專案] 屬性中輸入安全控制項專案，將安全控制項專案加入專案的元件中。 但是，當您將其他元件加入封裝時，您也可以透過 **封裝設計** 工具中的 [ **Advanced** ] 索引標籤，將安全的控制項專案加入專案的元件中。 如需詳細資訊，請參閱 [如何：將控制項標記為安全控制項](../sharepoint/how-to-mark-controls-as-safe-controls.md) 或 [將 Web 元件元件註冊為安全控制項](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11))。
 
 ### <a name="xml-entries-for-safe-controls"></a>安全控制項的 XML 專案
  當您將安全控制項專案加入至專案專案或專案的元件時，參考會以下列格式寫入封裝資訊清單中：

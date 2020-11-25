@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：部署專案工作清單定義 |Microsoft Docs
+description: 在這個逐步解說中，使用 Visual Studio 建立、自訂、偵測和部署 SharePoint 清單來追蹤專案工作。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b5639fe7a1b35dea41b14be3730986ad7c7309b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0be8eed2dc41ad433c0e0514dfd34e3c6e3d7193
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015767"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970426"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>逐步解說：部署專案工作清單定義
 
@@ -25,7 +27,7 @@ ms.locfileid: "86015767"
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 - 支援的 Microsoft Windows 和 SharePoint 版本。
 
@@ -53,7 +55,7 @@ ms.locfileid: "86015767"
 
 7. 選擇 [ **依據現有的清單類型建立不可自訂的清單** ] 按鈕，然後在其清單 **中選擇 [** 工作]，然後選擇 [ **完成]** 按鈕。
 
-     清單、功能和套件會出現在 **方案總管**中。
+     清單、功能和套件會出現在 **方案總管** 中。
 
 ## <a name="add-an-event-receiver"></a>新增事件接收器
 
@@ -69,9 +71,9 @@ ms.locfileid: "86015767"
 
 4. 在 [ **哪個專案應該是事件來源** ] 清單中， **選擇 [** 工作]。
 
-5. 在要處理的事件清單中，選取 **已加入專案**旁的核取方塊，然後選擇 [ **完成]** 按鈕。
+5. 在要處理的事件清單中，選取 **已加入專案** 旁的核取方塊，然後選擇 [ **完成]** 按鈕。
 
-     新的事件接收器節點會加入至專案，其中包含名為 **ProjectTaskListEventReceiver**的程式碼檔案。
+     新的事件接收器節點會加入至專案，其中包含名為 **ProjectTaskListEventReceiver** 的程式碼檔案。
 
 6. 將程式碼加入至 `ItemAdded` **ProjectTaskListEventReceiver** 程式碼檔中的方法。 每次新增工作時，就會在工作中加入預設的到期日和描述。 預設的到期日為2009年7月1日。
 
@@ -82,9 +84,9 @@ ms.locfileid: "86015767"
 
 當您建立 SharePoint 方案時，Visual Studio 會自動建立預設專案專案的功能。 您可以使用 [功能設計工具] 來自訂 SharePoint 網站的專案工作清單設定。
 
-1. 在 **方案總管**中，展開 [ **功能**]。
+1. 在 **方案總管** 中，展開 [ **功能**]。
 
-2. 開啟 **Feature1**的快捷方式功能表，然後選擇 [ **View Designer**]。
+2. 開啟 **Feature1** 的快捷方式功能表，然後選擇 [ **View Designer**]。
 
 3. 在 [ **標題** ] 方塊中，輸入 **Project 工作清單功能**。
 
@@ -156,11 +158,11 @@ Visual Studio 回收 IIS 應用程式集區、撤銷任何現有版本的解決�
 
 5. 使用 PowerShell `Add-SPUserSolution` 命令，在遠端 SharePoint 安裝上安裝套件。  (伺服器陣列方案，請使用 `Add-SPSolution` 命令。 ) 
 
-     例如 `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`。
+     例如： `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp` 。
 
 6. 使用 PowerShell `Install-SPUserSolution` 命令來部署解決方案。  (伺服器陣列方案，請使用 `Install-SPSolution` 命令。 ) 
 
-     例如 `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`。
+     例如： `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName` 。
 
      如需遠端部署的詳細資訊，請參閱在 SharePoint 2010 中 [使用方案和使用](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14)) [PowerShell 新增和部署解決方案](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx)。
 

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bebca3a27d11015388e45ff6839f446506e716c
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400111"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970603"
 ---
 # <a name="how-to-use-xml-snippets"></a>如何：使用 XML 程式碼片段
 
@@ -28,13 +28,13 @@ ms.locfileid: "93400111"
 下列程式說明如何存取 [ **插入程式碼片段** ] 命令。
 
 > [!NOTE]
-> [ **插入程式碼片段** ] 命令也可以透過鍵盤快速鍵 ( **Ctrl** + **K** ，然後按 **ctrl** + **X** ) 。
+> [**插入程式碼片段**] 命令也可以透過鍵盤快速鍵 (**Ctrl** + **K**，然後按 **ctrl** + **X**) 。
 
 ### <a name="to-insert-snippets-from-the-shortcut-menu"></a>透過捷徑功能表插入片段
 
 1. 將游標置於您要插入 XML 片段的位置。
 
-2. 以滑鼠右鍵按一下並選取 [ **插入程式碼片段** ]。
+2. 以滑鼠右鍵按一下並選取 [ **插入程式碼片段**]。
 
    會顯示可用 XML 片段的清單。
 
@@ -44,7 +44,7 @@ ms.locfileid: "93400111"
 
 1. 將游標置於您要插入 XML 片段的位置。
 
-2. 從 [ **編輯** ] 功能表，指向 [ **IntelliSense** ]，然後選取 [ **插入程式碼片段** ]。
+2. 從 [ **編輯** ] 功能表，指向 [ **IntelliSense**]，然後選取 [ **插入程式碼片段**]。
 
    會顯示可用 XML 片段的清單。
 
@@ -78,13 +78,13 @@ ms.locfileid: "93400111"
 下列程式說明如何存取 [ **以環繞** ] 命令。
 
 > [!NOTE]
-> 您也可以透過鍵盤快速鍵 ( **ctrl** **Surround With** + **K** ，然後按 **ctrl** + **S** ) 來使用 [環繞于] 命令。
+> 您也可以透過鍵盤快速鍵 (**ctrl** **Surround With** + **K**，然後按 **ctrl** + **S**) 來使用 [環繞于] 命令。
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>若要從內容功能表使用範圍語句
 
 1. 在 XML 編輯器中選取要環繞的文字。
 
-2. 以滑鼠右鍵按一下並選取 [ **環繞于** ]。
+2. 以滑鼠右鍵按一下並選取 [ **環繞于**]。
 
    會顯示可用以此環繞 XML 片段的清單。
 
@@ -94,7 +94,7 @@ ms.locfileid: "93400111"
 
 1. 在 XML 編輯器中選取要環繞的文字。
 
-2. 從 [ **編輯** ] 功能表，指向 [ **IntelliSense** ]，然後 **選取 [** 範圍語句]。
+2. 從 [ **編輯** ] 功能表，指向 [ **IntelliSense**]，然後 **選取 [** 範圍語句]。
 
    會顯示可用以此環繞 XML 片段的清單。
 
@@ -110,9 +110,9 @@ ms.locfileid: "93400111"
 
 按 **enter** 或 **Esc** 可取消欄位編輯，並將編輯器傳回一般。
 
-您可以在 [ **選項** ] 對話方塊的 [字型 **和色彩** ] 窗格中修改 **程式碼片段欄位** 設定，以變更可編輯的程式碼片段欄位預設色彩。 如需詳細資訊，請參閱 [如何：在編輯器中變更字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
+您可以在 [**選項**] 對話方塊的 [字型 **和色彩**] 窗格中修改 **程式碼片段欄位** 設定，以變更可編輯的程式碼片段欄位預設色彩。 如需詳細資訊，請參閱 [如何：在編輯器中變更字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XML 片段](../xml-tools/xml-snippets.md)
 - [如何：從 XML 架構產生 XML 片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

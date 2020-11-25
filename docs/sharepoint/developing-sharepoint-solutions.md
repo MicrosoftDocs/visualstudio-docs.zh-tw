@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 755723dd2ae309e971e86852646ee33d2caa22cf
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672817"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970403"
 ---
 # <a name="develop-sharepoint-solutions"></a>開發 SharePoint 方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中提供數個 SharePoint 專案類型範本，以用來建立 SharePoint 網站和網站元素。 如需可用專案類型的清單，請參閱 [SharePoint 專案和專案專案範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是 SharePoint 專案的元素和屬性描述。
@@ -38,7 +38,7 @@ ms.locfileid: "94672817"
  每個 SharePoint 專案皆包含兩個節點，您無法重新命名、刪除、剪下、複製或從專案拖曳這兩個節點。 以下為這兩個節點：
 
 - 功能
-- 套件
+- Package
 
   即使專案沒有定義任何功能或套件，這兩個節點仍會出現在所有 SharePoint 專案中。
 
@@ -109,7 +109,7 @@ ms.locfileid: "94672817"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[SharePoint 專案與專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)|說明 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中提供的 SharePoint 專案和專案項目範本。|
 |[如何：將項目新增至 SharePoint 專案](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|說明如何將新的或現有的項目加入 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 專案。|

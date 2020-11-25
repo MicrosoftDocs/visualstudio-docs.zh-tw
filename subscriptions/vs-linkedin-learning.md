@@ -8,11 +8,11 @@ ms.date: 10/21/2020
 ms.topic: how-to
 description: 了解包含為所選取 Visual Studio 訂用帳戶中所含 LinkedIn Premium 訂用帳戶一部分的 LinkedIn Learning 權益。
 ms.openlocfilehash: 7a5e15ad5d1101123a03b98da30d48895410313b
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435847"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970308"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 LinkedIn Learning 權益
 
@@ -25,16 +25,16 @@ ms.locfileid: "92435847"
 啟用您的 LinkedIn Premium 訂用帳戶與 LinkedIn Learning 權益：
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在 [Education] (教育) 類別中找到 LinkedIn Learning 磚，然後按一下 [取得程式碼]**** 連結。
+2. 在 [Education] (教育) 類別中找到 LinkedIn Learning 磚，然後按一下 [取得程式碼] 連結。
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning 權益磚](_img/vs-linkedin/vs-linkedin-6-month-tile.png "按一下 [取得程式碼] 以宣告您的程式碼，然後開始使用。")
 
-3. 如果您已有 LinkedIn 帳戶並自動登入，您會立即前往 LinkedIn Learning 權益啟用頁面。  如果您有 LinkedIn 帳戶但未自動登入，只要輸入您的使用者名稱和密碼，然後按一下 [登入]**** 即可。  請跳至[此步驟](#activate-your-offer)以啟用您的供應項目。
+3. 如果您已有 LinkedIn 帳戶並自動登入，您會立即前往 LinkedIn Learning 權益啟用頁面。  如果您有 LinkedIn 帳戶但未自動登入，只要輸入您的使用者名稱和密碼，然後按一下 [登入] 即可。  請跳至[此步驟](#activate-your-offer)以啟用您的供應項目。
 
 ### <a name="create-a-linkedin-account"></a>建立 LinkedIn 帳戶
-4. 如果您還沒有 LinkedIn 帳戶，請按一下 [立即加入]****。
+4. 如果您還沒有 LinkedIn 帳戶，請按一下 [立即加入]。
 
-5. 輸入您的個人資訊，選擇使用者名稱和密碼，然後按一下 [立即加入]****。
+5. 輸入您的個人資訊，選擇使用者名稱和密碼，然後按一下 [立即加入]。
 
 6. 指定您的國家/地區和郵遞區號，然後按 **[下一步]**。
 
@@ -42,24 +42,24 @@ ms.locfileid: "92435847"
 
 8. 在此步驟中，您將有機會指定您感興趣的部分。  若要加快帳戶建立程式的速度，請按一下 [ **不確定]。 我已開啟！**  (您可以稍後再指定感興趣的部分)。
 
-9. 當您提供電子郵件地址時，您會收到一封包含確認碼的訊息。  此郵件的寄件者是 “Linkedin Messages”。  如果您在 [收件匣] 中找不到此郵件，請檢查 [垃圾郵件] 資料夾。  輸入郵件中的代碼，然後按一下 [Verify] (確認)****。
+9. 當您提供電子郵件地址時，您會收到一封包含確認碼的訊息。  此郵件的寄件者是 “Linkedin Messages”。  如果您在 [收件匣] 中找不到此郵件，請檢查 [垃圾郵件] 資料夾。  輸入郵件中的代碼，然後按一下 [Verify] (確認)。
 
-10. 如果您想要從先前輸入的電子郵件帳戶匯入連絡人，您可以立即執行。  否則請按一下 [Skip] (略過)****。 (如果選擇略過此步驟，系統會要求您確認選擇。  按一下 **[是]**。 ) 
+10. 如果您想要從先前輸入的電子郵件帳戶匯入連絡人，您可以立即執行。  否則請按一下 [Skip] (略過)。 (如果選擇略過此步驟，系統會要求您確認選擇。  按一下 **[是]**。 ) 
 
 11. 工作警示可讓您在當地有適合您的工作時收到通知。  您可以立即選擇設定工作警示，或略過此步驟以繼續建立您的帳戶。
 
 12. 根據您到目前為止所提供的喜好設定和個人資訊，您會看到選取的建議關聯以開始建立您的網路。  您可以選擇新增關聯，或略過此步驟。
 
-13. 若要將相片新增至您的個人資料，請按一下 [Upload photo] (上傳相片)****。  否則，您可以略過此步驟。  (您一律可以稍後再新增相片)。
+13. 若要將相片新增至您的個人資料，請按一下 [Upload photo] (上傳相片)。  否則，您可以略過此步驟。  (您一律可以稍後再新增相片)。
 
-14. 您可以將 LinkedIn 應用程式下載至手機，以便在任何地方都能存取您的網路。  您可以傳送連結至手機，或是直接從 Microsoft Store 或 Google Play 下載。  您也可以按一下 [Next] (下一步)**** 暫時略過此步驟，稍後再下載應用程式。
+14. 您可以將 LinkedIn 應用程式下載至手機，以便在任何地方都能存取您的網路。  您可以傳送連結至手機，或是直接從 Microsoft Store 或 Google Play 下載。  您也可以按一下 [Next] (下一步) 暫時略過此步驟，稍後再下載應用程式。
 
 ### <a name="activate-your-offer"></a>啟用您的供應項目
-15. 現在您已登入 LinkedIn 帳戶或建立新帳戶，即準備好啟用 Premium 訂閱並開始享受 LinkedIn Learning。  按一下 [Activate your offer] (啟用您的供應項目)****。
+15. 現在您已登入 LinkedIn 帳戶或建立新帳戶，即準備好啟用 Premium 訂閱並開始享受 LinkedIn Learning。  按一下 [Activate your offer] (啟用您的供應項目)。
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning 啟用](_img/vs-linkedin/vs-linkedin-Activate1.png "按一下 [啟用您的供應專案] 以開始學習。")
 
-16. 您可以開始探索感興趣的技能。  從建議清單中選擇、搜尋其他技能，或按一下 [Skip] (略過)**** 繼續而不選擇技能。
+16. 您可以開始探索感興趣的技能。  從建議清單中選擇、搜尋其他技能，或按一下 [Skip] (略過) 繼續而不選擇技能。
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning 技能](_img/vs-linkedin/vs-linkedin-skills.png "選擇您想要探索的技能。")
 
@@ -99,7 +99,7 @@ ms.locfileid: "92435847"
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 

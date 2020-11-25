@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599493"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970621"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中傾印檔案
 
@@ -69,7 +69,7 @@ Visual Studio 偵錯工具可以儲存 Managed 程式碼或機器碼的傾印檔
 
 1. 在偵錯工具期間于錯誤或中斷點停止時，請選取 [ **Debug**  >  **Save Dump As**]。
 
-1. 在 [**另**存傾印] 對話方塊的 [**存檔類型**] 下，選取 [**含堆積的****小型**傾印或小型傾印] (預設) 。
+1. 在 [**另** 存傾印] 對話方塊的 [**存檔類型**] 下，選取 [**含堆積的****小型** 傾印或小型傾印] (預設) 。
 
 1. 流覽至路徑並選取傾印檔案的名稱，然後選取 [ **儲存**]。
 
@@ -78,9 +78,9 @@ Visual Studio 偵錯工具可以儲存 Managed 程式碼或機器碼的傾印檔
 
 ## <a name="open-a-dump-file"></a><a name="BKMK_Open_a_dump_file"></a> 開啟傾印檔案
 
-1. 在 Visual Studio 中，**選取 [**  >  **開啟**檔案]  >  ** **。
+1. 在 Visual Studio 中，**選取 [**  >  **開啟** 檔案]  >  ****。
 
-1. 在 [開啟檔案]**** 對話方塊中，找出並選取傾印檔案。 它的副檔名通常會是 *dmp* 。 選取 [確定]。
+1. 在 [開啟檔案] 對話方塊中，找出並選取傾印檔案。 它的副檔名通常會是 *dmp* 。 選取 [確定]。
 
    [ **小型** 傾印檔案摘要] 視窗會顯示傾印檔案的摘要和模組資訊，以及您可以採取的動作。
 
@@ -88,14 +88,14 @@ Visual Studio 偵錯工具可以儲存 Managed 程式碼或機器碼的傾印檔
 
 1. 在 [ **動作**：
    - 若要設定符號載入位置，請選取 [ **設定符號路徑**]。
-   - 若要啟動調試，請選取 [ **僅限 Managed**]、[僅限 **原生**的 debug]、[ **使用混合**的 Debug] 或 [ **使用 managed 記憶體**進行調試
+   - 若要啟動調試，請選取 [ **僅限 Managed**]、[僅限 **原生** 的 debug]、[ **使用混合** 的 Debug] 或 [ **使用 managed 記憶體** 進行調試
 
 ## <a name="find-exe-pdb-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 尋找 .exe、.pdb 和來源檔案
 
 若要在傾印檔案上使用完整的調試功能，Visual Studio 需要：
 
 - 建立傾印的 *.exe* 檔案，以及 (dll 等其他二進位檔，) 該傾印處理常式所使用的檔案。
-- *.Exe*和其他二進位檔的符號 (*.pdb*) 檔。
+- *.Exe* 和其他二進位檔的符號 (*.pdb*) 檔。
 - 在建立傾印時，完全符合檔案版本和組建的 *.exe* 和 *.pdb* 檔案。
 - 相關模組的原始程式檔。 如果找不到原始程式檔，您可以使用模組的反組解碼。
 
@@ -107,11 +107,11 @@ Visual Studio 會自動搜尋這些位置，以尋找未包含在傾印檔案中
 
 1. 包含傾印檔案的資料夾。
 2. 傾印檔案所指定的模組路徑，這是收集傾印之電腦上的模組路徑。
-3. 在 [**工具**] (或**Debug**) 中指定的符號路徑 >**選項**  >  **調試**  >  **符號**。 您也可以從 [傾印檔案**摘要**] 視窗的 [**動作**] 窗格開啟 [**符號**] 頁面。 在此頁面上，您可以新增更多要搜尋的位置。
+3. 在 [**工具**] (或 **Debug**) 中指定的符號路徑 >**選項**  >  **調試**  >  **符號**。 您也可以從 [傾印檔案 **摘要**] 視窗的 [**動作**] 窗格開啟 [**符號**] 頁面。 在此頁面上，您可以新增更多要搜尋的位置。
 
 ### <a name="use-the-no-binary-no-symbols-or-no-source-found-pages"></a>使用 [無二進位]、[沒有符號] 或 [找不到來源] 頁面
 
-如果 Visual Studio 找不到在傾印中偵測模組所需的檔案，則會顯示 **找不到任何二進位**檔、 **找不到符號**，或找 **不到來源** 頁面。 這些頁面提供有關問題原因的詳細資訊，並提供可協助您找出檔案的動作連結。 請參閱 [指定符號 ( .pdb) 和來源](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)檔案。
+如果 Visual Studio 找不到在傾印中偵測模組所需的檔案，則會顯示 **找不到任何二進位** 檔、 **找不到符號**，或找 **不到來源** 頁面。 這些頁面提供有關問題原因的詳細資訊，並提供可協助您找出檔案的動作連結。 請參閱 [指定符號 ( .pdb) 和來源](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)檔案。
 
 ## <a name="see-also"></a>另請參閱
 

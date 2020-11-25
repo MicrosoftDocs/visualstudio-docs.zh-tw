@@ -1,5 +1,7 @@
 ---
 title: 疑難排解 SharePoint 方案 |Microsoft Docs
+description: 查看當您使用 Visual Studio 偵錯工具來進行 SharePoint 方案的偵錯工具時，可能發生的問題或警示。
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e79a08d3f8dbc4b579a52501afb08ffb7dca33f2
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a9ef5e7d47f72b82e7a8fab52cc2f1f8716c83bf
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "92298378"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970277"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>疑難排解 SharePoint 方案
   當您使用偵錯工具來進行 SharePoint 方案的偵錯工具時，可能會發生下列問題或警示 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 如需詳細資訊，請參閱 [SharePoint 2007 工作流程解決方案的調試](/previous-versions/bb386166(v=vs.100))程式。
@@ -102,7 +104,7 @@ ms.locfileid: "92298378"
  無。
 
 ### <a name="resolution"></a>解決方法
- 因為 webtemp 網站定義設定檔的 **Path** 屬性值不正確，例如 *webtemp_SiteDefinitionProject1.xml*，所以會發生此問題。 在 webtemp 檔案的 [ **路徑** ] 屬性（位於 **部署位置**底下），將1033變更為適當的地區設定 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] 。 例如，若要使用日文地區設定，請將值變更為1041。 如需詳細資訊，請參閱 [Microsoft 指派的地區設定識別碼](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c)。
+ 因為 webtemp 網站定義設定檔的 **Path** 屬性值不正確，例如 *webtemp_SiteDefinitionProject1.xml*，所以會發生此問題。 在 webtemp 檔案的 [ **路徑** ] 屬性（位於 **部署位置** 底下），將1033變更為適當的地區設定 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] 。 例如，若要使用日文地區設定，請將值變更為1041。 如需詳細資訊，請參閱 [Microsoft 指派的地區設定識別碼](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c)。
 
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>在乾淨的系統上部署工作流程專案時，出現錯誤
  如果您在乾淨系統上的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中部署工作流程專案，就會發生此問題。 乾淨系統為具有 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 SharePoint 全新安裝，但是沒有任何已部署工作流程專案的電腦。
@@ -115,7 +117,7 @@ ms.locfileid: "92298378"
 
 ##### <a name="to-reenter-the-workflow-wizard"></a>重新輸入工作流程嚮導
 
-1. 在 **方案總管**中，選擇 [工作流程] 節點。
+1. 在 **方案總管** 中，選擇 [工作流程] 節點。
 
 2. 在 [ **屬性** ] 視窗中，選擇具有省略號按鈕之任何屬性的省略號 ( ... ) 按鈕。
 
@@ -156,7 +158,7 @@ ms.locfileid: "92298378"
 
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>變更事件接收器的功能範圍
 
-1. 在**方案總管**中，按兩下檔案或開啟其快捷方式功能表，然後選擇 [**開啟**]，在**功能設計**工具中開啟事件接收器的 [*功能*] 檔案。
+1. 在 **方案總管** 中，按兩下檔案或開啟其快捷方式功能表，然後選擇 [**開啟**]，在 **功能設計** 工具中開啟事件接收器的 [*功能*] 檔案。
 
 2. 選擇 [ **範圍**] 旁邊的箭號，然後在出現的清單中選擇 [ **網站** ]。
 
@@ -189,7 +191,7 @@ ms.locfileid: "92298378"
 
 ##### <a name="to-resolve-this-issue"></a>若要解決此問題
 
-1. 在 **方案總管**中，選擇使用者控制項檔案，其副檔名為 *.ascx*。
+1. 在 **方案總管** 中，選擇使用者控制項檔案，其副檔名為 *.ascx*。
 
 2. 在功能表列上，選擇 [**視圖**  >  **屬性視窗]**。
 
@@ -201,7 +203,7 @@ ms.locfileid: "92298378"
  如果您匯入的工作流程包含具有欄位的工作表單，然後在匯入它的相同系統上執行新的工作流程，就會發生這個問題。
 
 ### <a name="error-message"></a>錯誤訊息
- 部署步驟「啟動功能」發生錯誤：在目前網站集合或子網站中找到功能 [*guid*] 中定義的欄位*識別碼 [guid*]。
+ 部署步驟「啟動功能」發生錯誤：在目前網站集合或子網站中找到功能 [*guid*] 中定義的欄位 *識別碼 [guid*]。
 
 ### <a name="resolution"></a>解決方法
  此錯誤是因為中的 [匯入可重複使用的工作流程] 專案 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 未變更工作表單域識別碼所發生的欄位識別碼衝突所造成。 如果您在包含原始工作流程的相同伺服器上部署匯入的工作流程，就會發生欄位識別碼衝突。
@@ -212,7 +214,7 @@ ms.locfileid: "92298378"
  如果您重新命名匯入的清單實例，然後在中執行它，就會發生這個問題 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
 ### <a name="error-message"></a>錯誤訊息
- 組建錯誤：部署步驟「啟動功能」發生錯誤：檔案 Template\Features [匯 \\ *入專案*<em>功能</em>*名稱*] \Files\Lists \\ [*舊*的<em>清單名稱</em>] \Schema.xml 不存在。
+ 組建錯誤：部署步驟「啟動功能」發生錯誤：檔案 Template\Features [匯 \\ *入專案*<em>功能</em>*名稱*] \Files\Lists \\ [*舊* 的 <em>清單名稱</em>] \Schema.xml 不存在。
 
 ### <a name="resolution"></a>解決方法
  當您匯入清單實例時，名為 CustomSchema 的屬性會加入至清單實例的 Elements.xml 檔案中。 Elements.xml 包含清單實例的自訂 schema.xml 路徑。 當您在中重新命名清單實例時 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，自訂 schema.xml 的部署路徑會變更，但 CustomSchema 屬性的路徑值不會更新。 因此，當此功能啟動時，清單實例無法在 CustomSchema 屬性所指定的舊路徑中找到 *schema.xml* 的檔案。
@@ -236,7 +238,7 @@ ms.locfileid: "92298378"
 
 3. 在 [ **應用程式** 集區] 頁面上，選擇 SharePoint 應用程式集區 (通常是 "sharepoint-80" ) ，然後在 [ **動作** ] 窗格中，選擇 [ **Advanced Settings** ] 連結。
 
-4. 若要增加 IIS timeout 之前的等候時間，請將 [ **Ping 回應時間上限] (秒) ** 值變更為大於90秒的值。
+4. 若要增加 IIS timeout 之前的等候時間，請將 [ **Ping 回應時間上限] (秒)** 值變更為大於90秒的值。
 
 5. 若要停用 IIS ping，請將 [ **啟用 ping** ] 設定為 [ **False**]。
 
@@ -257,7 +259,7 @@ ms.locfileid: "92298378"
 ### <a name="resolution"></a>解決方法
  發生這種情況的原因是，當您關閉 SharePoint 方案的偵測會話之後，自動撤銷功能就會撤銷方案。 收回會從 SharePoint 刪除清單定義，但不會刪除清單的實例。 清單實例需要基礎清單定義。
 
- 若要解決此問題，請在功能表列上選擇 [**組建**部署] 來部署解決方案  >  ** **。  (不要藉由選擇 **F5** 鍵來將方案進行偵錯工具。 ) 然後刪除 SharePoint 中的清單實例。
+ 若要解決此問題，請在功能表列上選擇 [**組建** 部署] 來部署解決方案  >  ****。  (不要藉由選擇 **F5** 鍵來將方案進行偵錯工具。 ) 然後刪除 SharePoint 中的清單實例。
 
 ## <a name="original-sharepoint-solution-is-replaced-by-an-exported-version"></a>原始 SharePoint 方案會取代為匯出的版本
  如果您匯出 SharePoint 方案、將方案匯入，然後將 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 方案部署回匯出的相同網站，則會取代原始的 SharePoint 方案。 如果您將方案部署到未在其上啟動原始方案的伺服器，就不會發生這個問題。

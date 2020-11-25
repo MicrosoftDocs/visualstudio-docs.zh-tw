@@ -16,15 +16,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 07f0312892d9f4f4073cf6fb2c9537ffa52a6267
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436353"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970076"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>如何：擴充 Visual Studio 建置處理序
 
-Visual Studio 組建程式是由匯入至您專案檔的一系列 MSBuild *.targets* 檔案所定義。 您可以擴充其中一個匯入的 *檔案，以*允許您在組建程式中的數個點執行自訂工作。 本文說明可用於擴充 Visual Studio 組建程式的兩種方法：
+Visual Studio 組建程式是由匯入至您專案檔的一系列 MSBuild *.targets* 檔案所定義。 您可以擴充其中一個匯入的 *檔案，以* 允許您在組建程式中的數個點執行自訂工作。 本文說明可用於擴充 Visual Studio 組建程式的兩種方法：
 
 - 覆寫一般目標中所定義的特定預先定義目標 (*Microsoft. 一般.* 或匯入) 的檔案。
 
@@ -35,7 +35,7 @@ Visual Studio 組建程式是由匯入至您專案檔的一系列 MSBuild *.targ
 一般目標包含一組預先定義的空目標，可在組建程式中的部分主要目標之前和之後呼叫。 例如，MSBuild 會在 `BeforeBuild` `CoreBuild` 目標之後的主要目標和目標之前呼叫目標 `AfterBuild` `CoreBuild` 。 根據預設，一般目標中的空目標不會執行任何動作，但是您可以在匯入共同目標的專案檔中定義您想要的目標，以覆寫其預設行為。 藉由覆寫預先定義的目標，您可以使用 MSBuild 工作，讓您更充分掌控組建流程。
 
 > [!NOTE]
-> SDK 樣式專案會在 *專案檔的最後一行之後*隱含匯入目標。 這表示除非以手動方式指定匯入，否則您無法覆寫預設目標，如 [如何：使用 MSBuild 專案 sdk](how-to-use-project-sdk.md)中所述。
+> SDK 樣式專案會在 *專案檔的最後一行之後* 隱含匯入目標。 這表示除非以手動方式指定匯入，否則您無法覆寫預設目標，如 [如何：使用 MSBuild 專案 sdk](how-to-use-project-sdk.md)中所述。
 
 #### <a name="to-override-a-predefined-target"></a>覆寫預先定義的目標
 

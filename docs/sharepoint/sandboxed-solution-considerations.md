@@ -1,5 +1,7 @@
 ---
 title: 沙箱化解決方案考慮 |Microsoft Docs
+description: 探索沙箱化方案，這是 Microsoft SharePoint 中的一項功能，可讓網站集合使用者上傳自己的自訂程式碼解決方案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17b310a3f992f80b04ad14bb6e038e05b009a4af
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838876"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970465"
 ---
 # <a name="sandboxed-solution-considerations"></a>沙箱化解決方案考慮
   *沙箱化方案* 是 Microsoft SharePoint 2010 中的一項功能，可讓網站集合使用者上傳自己的自訂程式碼解決方案。 常見的沙箱化解決方案是使用者上傳自己的 Web 組件。
@@ -31,7 +33,7 @@ ms.locfileid: "90838876"
  沙箱化 SharePoint 應用程式是在安全且受監視的進程中執行，該進程可以存取 Web 伺服陣列的有限部分。 Microsoft SharePoint 2010 使用功能、方案庫、解決方案監視和驗證架構的組合，以啟用沙箱化解決方案。
 
 ## <a name="specify-project-trust-level"></a>指定專案信任層級
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 透過稱為 *沙箱化方案*的布林值專案屬性支援沙箱化方案。 您可以在專案中隨時設定這個屬性，也可以在 [ **SharePoint 自訂嚮導]** 中建立專案時指定此屬性。
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 透過稱為 *沙箱化方案* 的布林值專案屬性支援沙箱化方案。 您可以在專案中隨時設定這個屬性，也可以在 [ **SharePoint 自訂嚮導]** 中建立專案時指定此屬性。
 
 > [!NOTE]
 > 在專案建立之後變更其 *沙箱化方案* 屬性，可能會導致驗證錯誤。
@@ -69,7 +71,7 @@ ms.locfileid: "90838876"
  在 WSS 3.0 中，方案只能部署至伺服器陣列層級。 這表示可能會部署可能有害或不穩定的解決方案，其會影響整個 Web 伺服陣列，以及在其下執行的所有其他網站集合和應用程式。 不過，您可以使用沙箱化方案，將您的方案部署至伺服器陣列的子領域，也就是特定的網站集合。 為了提供額外的保護，解決方案的元件不會載入至主要 [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] 進程 (*w3wp.exe*) 。 相反地，它會載入至不同的進程， (*SPUCWorkerProcess.exe*) 。 此程式會受到監視，並會執行配額和節流，以保護伺服器陣列免于執行有害活動的沙箱化解決方案，例如執行耗用 CPU 迴圈的緊密迴圈。
 
 ## <a name="site-collection-solution-gallery"></a>網站集合解決方案資源庫
- [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 有一項稱為「方案庫網站集合」的功能。 您可以從 SharePoint 2010 管理中心頁面存取這項功能，或開啟 [**網站動作**] 功能表，選擇 **[網站設定**]，然後選擇 SharePoint 網站中 [資源**庫**] 下的 [**方案**] 連結。 解決方案資源庫是解決方案的儲存機制，可讓網站集合管理員管理其網站集合中的解決方案。
+ [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 有一項稱為「方案庫網站集合」的功能。 您可以從 SharePoint 2010 管理中心頁面存取這項功能，或開啟 [**網站動作**] 功能表，選擇 **[網站設定**]，然後選擇 SharePoint 網站中 [資源 **庫**] 下的 [**方案**] 連結。 解決方案資源庫是解決方案的儲存機制，可讓網站集合管理員管理其網站集合中的解決方案。
 
  方案庫是儲存在 SharePoint 網站根 Web 的文件庫。 解決方案庫會取代網站範本，並支援解決方案套件。 上傳 SharePoint 方案套件 (*.wsp*) 檔案時，就會將它視為沙箱化方案進行處理。
 

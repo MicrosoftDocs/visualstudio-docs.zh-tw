@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fa5d60d7fe662cff31b54bf3a13c203f4b6d8c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350689"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970081"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>設定 Windows 防火牆以進行遠端偵錯
 
@@ -22,7 +22,7 @@ ms.locfileid: "85350689"
 本主題說明如何設定 Windows 防火牆，以便在 Windows 10、8/8.1 和7上啟用遠端偵錯。以及 Windows Server 2012 R2、2012和 2008 R2 電腦。 Visual Studio 和遠端電腦不需要執行相同的作業系統。 例如，Visual Studio 電腦可以執行 Windows 10，而遠端電腦則可以執行 Windows Server 2012 R2。
 
 >[!NOTE]
->針對不同的作業系統和舊版 Windows，設定 Windows 防火牆的指示稍有不同。 Windows 8/8.1、Windows 10 和 Windows Server 2012 設定會使用 word *應用*程式，而 windows 7 和 windows server 2008 則使用 word *程式*。
+>針對不同的作業系統和舊版 Windows，設定 Windows 防火牆的指示稍有不同。 Windows 8/8.1、Windows 10 和 Windows Server 2012 設定會使用 word *應用* 程式，而 windows 7 和 windows server 2008 則使用 word *程式*。
 
 ## <a name="configure-ports-for-remote-debugging"></a>設定遠端偵錯程式的埠
 
@@ -34,7 +34,7 @@ Visual Studio 和遠端偵錯程式在安裝或啟動期間嘗試開啟正確的
 
 1. 針對新的連入埠，選取 [ **輸入規則** ]，然後選取 [ **新增規則**]。 若為外寄規則，請改為選取 **輸出規則** 。
 
-1. 在 [ **新增輸入規則] 嚮導**中，選取 [ **埠**]，然後選取 **[下一步]**。
+1. 在 [ **新增輸入規則] 嚮導** 中，選取 [ **埠**]，然後選取 **[下一步]**。
 
 1. 根據下表中的埠號碼，選取 [ **TCP** ] 或 [ **UDP**]。
 
@@ -44,7 +44,7 @@ Visual Studio 和遠端偵錯程式在安裝或啟動期間嘗試開啟正確的
 
 1. 選取要啟用的一或多個網路類型，包括遠端連線的網路類型，然後選取 **[下一步]**。
 
-1. 新增規則的名稱 (例如， **msvsmon**、 **IIS**或 **Web Deploy**) ，然後選取 **[完成]**。
+1. 新增規則的名稱 (例如， **msvsmon**、 **IIS** 或 **Web Deploy**) ，然後選取 **[完成]**。
 
    新的規則應該會出現，並在 [ **輸入規則** ] 或 [ **輸出規則** ] 清單中選取。
 
@@ -56,8 +56,8 @@ Visual Studio 和遠端偵錯程式在安裝或啟動期間嘗試開啟正確的
 
 |**連接埠**|**傳入/傳出**|**通訊協定**|**描述**|
 |-|-|-|-|
-|4022|傳入|TCP|針對 VS 2017。 每個 Visual Studio 版本的埠號碼會遞增2。 如需詳細資訊，請參閱 [Visual Studio 遠端偵錯程式埠指派](../debugger/remote-debugger-port-assignments.md)。|
-|4023|傳入|TCP|針對 VS 2017。 每個 Visual Studio 版本的埠號碼會遞增2。 此埠僅用來從遠端偵錯程式的64位版本進行遠端偵錯程式的32位處理常式。 如需詳細資訊，請參閱  [Visual Studio 遠端偵錯程式埠指派](../debugger/remote-debugger-port-assignments.md)。|
+|4022|正在傳入|TCP|針對 VS 2017。 每個 Visual Studio 版本的埠號碼會遞增2。 如需詳細資訊，請參閱 [Visual Studio 遠端偵錯程式埠指派](../debugger/remote-debugger-port-assignments.md)。|
+|4023|正在傳入|TCP|針對 VS 2017。 每個 Visual Studio 版本的埠號碼會遞增2。 此埠僅用來從遠端偵錯程式的64位版本進行遠端偵錯程式的32位處理常式。 如需詳細資訊，請參閱  [Visual Studio 遠端偵錯程式埠指派](../debugger/remote-debugger-port-assignments.md)。|
 |3702|傳出|UDP| (遠端偵錯程式探索所需的選擇性) 。|
 
 ::: moniker-end
@@ -66,13 +66,13 @@ Visual Studio 和遠端偵錯程式在安裝或啟動期間嘗試開啟正確的
 
 |**連接埠**|**傳入/傳出**|**通訊協定**|**描述**|
 |-|-|-|-|
-|4024|傳入|TCP|針對 VS 2019。 每個 Visual Studio 版本的埠號碼會遞增2。 如需詳細資訊，請參閱 [Visual Studio 遠端偵錯程式埠指派](../debugger/remote-debugger-port-assignments.md)。|
-|4025|傳入|TCP|針對 VS 2019。 每個 Visual Studio 版本的埠號碼會遞增2。 此埠僅用來從遠端偵錯程式的64位版本進行遠端偵錯程式的32位處理常式。 如需詳細資訊，請參閱  [Visual Studio 遠端偵錯程式埠指派](../debugger/remote-debugger-port-assignments.md)。|
+|4024|正在傳入|TCP|針對 VS 2019。 每個 Visual Studio 版本的埠號碼會遞增2。 如需詳細資訊，請參閱 [Visual Studio 遠端偵錯程式埠指派](../debugger/remote-debugger-port-assignments.md)。|
+|4025|正在傳入|TCP|針對 VS 2019。 每個 Visual Studio 版本的埠號碼會遞增2。 此埠僅用來從遠端偵錯程式的64位版本進行遠端偵錯程式的32位處理常式。 如需詳細資訊，請參閱  [Visual Studio 遠端偵錯程式埠指派](../debugger/remote-debugger-port-assignments.md)。|
 |3702|傳出|UDP| (遠端偵錯程式探索所需的選擇性) 。|
 
 ::: moniker-end
 
-如果您選取 [**工具**選項偵錯工具] 下的 [**使用 Managed 相容性模式]**  >  **Options**  >  ** **，請開啟這些額外的遠端偵錯程式埠 偵錯工具管理的相容性模式會啟用舊版的 Visual Studio 2010 版本的偵錯工具。
+如果您選取 [**工具** 選項偵錯工具] 下的 [**使用 Managed 相容性模式]**  >  **Options**  >  ****，請開啟這些額外的遠端偵錯程式埠 偵錯工具管理的相容性模式會啟用舊版的 Visual Studio 2010 版本的偵錯工具。
 
 |**連接埠**|**傳入/傳出**|**通訊協定**|**描述**|
 |-|-|-|-|
@@ -102,13 +102,13 @@ Visual Studio 和遠端偵錯程式在安裝或啟動期間嘗試開啟正確的
 
 1. 選取 [ **允許應用程式通過 Windows 防火牆**]。
 
-1. 如果 [**允許的應用程式和功能**] 下的 **[遠端偵錯程式**] 或**Visual Studio 遠端偵錯工具**沒有出現，請選取 [**變更設定**]，然後選取 [**允許其他應用程式**
+1. 如果 [**允許的應用程式和功能**] 下的 **[遠端偵錯程式**] 或 **Visual Studio 遠端偵錯工具** 沒有出現，請選取 [**變更設定**]，然後選取 [**允許其他應用程式**
 
 1. 如果遠端偵錯程式應用程式仍未列在 [**新增應用程式**] 對話方塊中，請選取 **[流覽]**，然後 \<Visual Studio installation directory\> \\ \\ \\ \\ \<x86*, *x64*, or *Appx*\> 根據您應用程式的適當架構，流覽至 * Common7 IDE 遠端偵錯程式。 選取 *msvsmon.exe*，然後選取 [ **新增**]。
 
 1. 在 [ **應用程式** ] 清單中，選取您剛剛新增的 **遠端偵錯程式** 。 選取 [ **網路類型**]，然後選取一或多個網路類型，包括遠端連線的網路類型。
 
-1. 選取 [新增]****，然後選取 [確定]****。
+1. 選取 [新增]，然後選取 [確定]。
 
 ## <a name="troubleshoot-the-remote-debugging-connection"></a><a name="troubleshooting"></a>疑難排解遠端偵錯連接
 
@@ -116,7 +116,7 @@ Visual Studio 和遠端偵錯程式在安裝或啟動期間嘗試開啟正確的
 
 - 在 Windows [ **開始** ] 功能表中，搜尋並開啟 [ **windows 防火牆**]，然後選取 [ **允許應用程式通過 Windows 防火牆**]。 確定 [ **遠端偵錯程式** ] 或 [ **Visual Studio 遠端偵錯工具** 會出現在 [ **允許的應用程式和功能** ] 清單中，並選取核取方塊，並選取正確的網路類型。 如果沒有，請 [新增正確的應用程式和設定](#configure-remote-debugging-through-windows-firewall)。
 
-- 在 Windows [ **開始** ] 功能表中，搜尋並開啟 [ **具有 Advanced Security 的 Windows 防火牆**]。 請確定 [**輸入 (規則**] 下出現 [**遠端偵錯程式**] 或**Visual Studio 遠端偵錯工具**，並選擇性地顯示**輸出規則**) 綠色核取記號圖示，且所有設定都正確。
+- 在 Windows [ **開始** ] 功能表中，搜尋並開啟 [ **具有 Advanced Security 的 Windows 防火牆**]。 請確定 [**輸入 (規則**] 下出現 [**遠端偵錯程式**] 或 **Visual Studio 遠端偵錯工具**，並選擇性地顯示 **輸出規則**) 綠色核取記號圖示，且所有設定都正確。
 
   - 若要查看或變更規則設定，請在清單中的 **遠端偵錯** 程式應用程式上按一下滑鼠右鍵，然後選取 [ **屬性**]。 您可以使用 [ **屬性** ] 索引標籤來啟用或停用規則，或變更埠號碼、通訊協定或網路類型。
   - 如果「遠端偵錯程式」應用程式未出現在 [規則] 清單中，請 [新增並設定正確的埠](#configure-ports-for-remote-debugging)。

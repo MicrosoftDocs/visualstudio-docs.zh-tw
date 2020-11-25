@@ -1,5 +1,7 @@
 ---
 title: 可取代的參數 |Microsoft Docs
+description: 檢查 (token 的可替換參數) ，其會在設計階段不知道其實際值的 SharePoint 方案專案中，指定專案檔內部的值。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cd44b3edfaeae376e5a4a9698d138bd75c03bf8
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839159"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970252"
 ---
 # <a name="replaceable-parameters"></a>可替換的參數
   可以在專案檔內使用可取代的參數或 *權杖*，以提供在設計階段不知道其實際值的 SharePoint 方案專案的值。 它們類似于標準範本權杖的功能 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 如需詳細資訊，請參閱 [範本參數](../ide/template-parameters.md)。
@@ -60,11 +62,11 @@ ms.locfileid: "90839159"
 |$SharePoint. FileName $|包含封裝之定義檔的名稱。|
 |$SharePoint FileNameWithoutExtension $|名稱 (沒有包含套件定義檔的副檔名) 。|
 |$SharePoint. Package.Id $|包含封裝的 SharePoint 識別碼。 如果有一個以上的封裝使用某項功能，則此值會變更。|
-|$SharePoint. FileName $|包含功能的定義檔名稱，例如*Feature1。*|
+|$SharePoint. FileName $|包含功能的定義檔名稱，例如 *Feature1。*|
 |$SharePoint FileNameWithoutExtension $|功能定義檔的名稱，不含副檔名。|
 |$SharePoint DeploymentPath $|封裝中包含功能的資料夾名稱。 此標記等同于功能設計工具中的 [部署路徑] 屬性。 範例值為 "Project1_Feature1"。|
 |$SharePoint. Feature.Id $|包含功能的 SharePoint 識別碼。 如同所有功能層級的權杖，此權杖只能由封裝中包含的檔案使用，而不會直接新增至功能以外的封裝。|
-|$SharePoint. ProjectItem.Name $|專案專案的名稱 (不是) 的檔案名，如同從 **ISharePointProjectItem.Name**取得的名稱。|
+|$SharePoint. ProjectItem.Name $|專案專案的名稱 (不是) 的檔案名，如同從 **ISharePointProjectItem.Name** 取得的名稱。|
 |$SharePoint，請輸入 \<GUID> 。AssemblyQualifiedName $|符合語彙基元的 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] 之類型的組件限定名稱。 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] 的格式為小寫且對應於 Guid.ToString("D") 格式 (也就是 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。|
 |$SharePoint，請輸入 \<GUID> 。FullName $|符合標記中 GUID 的型別的完整名稱。 GUID 的格式為小寫，而且會對應至 Guid.empty ( "D" ) 格式 (也就是 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx) 。|
 
@@ -75,7 +77,7 @@ ms.locfileid: "90839159"
 
 - ASCX
 
-- .ASPX
+- ASPX
 
 - Webpart
 
@@ -103,7 +105,7 @@ ms.locfileid: "90839159"
 </PropertyGroup>
 ```
 
- 您可以將擴充功能直接新增至*目標 (目標) 檔。* 但是，加入延伸模組會改變所有封裝在本機系統上的 SharePoint 專案的延伸模組清單，而不只是您自己的副檔名。 當您是系統上的唯一開發人員，或您的大部分專案都需要此擴充功能時，此擴充功能可能會很方便。 不過，由於它是系統專屬的，此方法無法移植，因此建議您改為將任何延伸模組新增至專案檔。
+ 您可以將擴充功能直接新增至 *目標 (目標) 檔。* 但是，加入延伸模組會改變所有封裝在本機系統上的 SharePoint 專案的延伸模組清單，而不只是您自己的副檔名。 當您是系統上的唯一開發人員，或您的大部分專案都需要此擴充功能時，此擴充功能可能會很方便。 不過，由於它是系統專屬的，此方法無法移植，因此建議您改為將任何延伸模組新增至專案檔。
 
 ## <a name="see-also"></a>另請參閱
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)

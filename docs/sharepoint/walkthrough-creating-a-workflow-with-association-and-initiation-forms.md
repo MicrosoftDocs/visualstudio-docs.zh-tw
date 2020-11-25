@@ -1,5 +1,7 @@
 ---
 title: 使用關聯與初始表單建立工作流程
+description: 在這個 SharePoint 逐步解說中，建立包含關聯和初始表單使用方式的基本連續工作流程。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f257dfed2fe439c5ab22ab9951b6258116c6567
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62501a23695b81ee0437d3210dced7c81f9b054e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017129"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970434"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>逐步解說：使用關聯與初始表單建立工作流程
   本逐步解說示範如何建立包含關聯和初始表單使用方式的基本連續工作流程。 這些是 ASPX 表單，可在 SharePoint 系統管理員第一次將參數加入至工作流程時，將參數加入至工作流程中， () 的關聯表單，以及當使用者啟動工作流程) 時 (起始表單。
@@ -86,26 +88,26 @@ ms.locfileid: "86017129"
 
 8. 在 [ **Visual c #** ] 或 [ **Visual Basic**] 下，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
-9. 在 [ **範本** ] 窗格中，選擇 [ **僅限順序的工作流程 (伺服器陣列方案]) ** 範本，然後選擇 [ **加入** ] 按鈕。
+9. 在 [ **範本** ] 窗格中，選擇 [ **僅限順序的工作流程 (伺服器陣列方案])** 範本，然後選擇 [ **加入** ] 按鈕。
 
      [ **SharePoint 自訂] Wizard** 隨即出現。
 
-10. 在 [ **指定用於偵錯工具的工作流程名稱** ] 頁面上，接受預設名稱 (**ExpenseReport-workflow1.xaml**) 。 保留預設工作流程範本類型值 (**清單工作流程) **。 選擇 [下一步]**** 按鈕。
+10. 在 [ **指定用於偵錯工具的工作流程名稱** ] 頁面上，接受預設名稱 (**ExpenseReport-workflow1.xaml**) 。 保留預設工作流程範本類型值 (**清單工作流程)**。 選擇 [下一步] 按鈕。
 
 11. 在 [ **您希望 Visual Studio 自動關聯偵錯工具的工作流程嗎？** ] 頁面上，清除已核取您的工作流程範本的方塊。
 
      此步驟可讓您在稍後手動將工作流程與共享檔案清單產生關聯，以顯示關聯表單。
 
-12. 選擇 [完成]**** 按鈕。
+12. 選擇 [完成] 按鈕。
 
 ## <a name="add-an-association-form-to-the-workflow"></a>將關聯表單新增至工作流程
  接著，建立。當 SharePoint 系統管理員第一次將工作流程與支出報表檔建立關聯時，所顯示的 ASPX 關聯表單。
 
 #### <a name="to-add-an-association-form-to-the-workflow"></a>將關聯表單新增至工作流程
 
-1. 選擇**方案總管**中的 [ **workflow1.xaml** ] 節點。
+1. 選擇 **方案總管** 中的 [ **workflow1.xaml** ] 節點。
 
-2. 在功能表列上 **，選擇 [**  >  **加入新**專案]，以顯示 [**加入新專案**] 對話方塊。
+2. 在功能表列上 **，選擇 [**  >  **加入新** 專案]，以顯示 [**加入新專案**] 對話方塊。
 
 3. 在對話方塊樹狀檢視中，依您的專案語言) 展開 [ **Visual c #** ] 或 [ **Visual Basic** (]，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
@@ -131,7 +133,7 @@ ms.locfileid: "86017129"
     <br /><br />
     ```
 
-3. 展開**方案總管**中的**ExpenseReportAssocForm .aspx**檔案，以顯示其相依的檔案。
+3. 展開 **方案總管** 中的 **ExpenseReportAssocForm .aspx** 檔案，以顯示其相依的檔案。
 
     > [!NOTE]
     > 如果您的專案在中 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ，您必須選擇 [ **View All Files** ] 按鈕來執行此步驟。
@@ -164,7 +166,7 @@ ms.locfileid: "86017129"
 
 #### <a name="to-create-an-initiation-form"></a>建立初始表單
 
-1. 選擇**方案總管**中的 [ **workflow1.xaml** ] 節點。
+1. 選擇 **方案總管** 中的 [ **workflow1.xaml** ] 節點。
 
 2. 在功能表列上，選擇 [ **Project**  >  **加入新專案**]，顯示 [**加入新專案**] 對話方塊。
 
@@ -196,7 +198,7 @@ ms.locfileid: "86017129"
     <br /><br />
     ```
 
-3. 展開**方案總管**中的**ExpenseReportInitForm .aspx**檔案，以顯示其相依的檔案。
+3. 展開 **方案總管** 中的 **ExpenseReportInitForm .aspx** 檔案，以顯示其相依的檔案。
 
 4. 開啟 ExpenseReportInitForm .aspx 檔案的快捷方式功能表，然後選擇 [ **View Code**]。
 
@@ -257,19 +259,19 @@ ms.locfileid: "86017129"
 
 3. 藉由執行下列其中一個步驟，將此活動新增至工作流程：
 
-    - 開啟 [ **IfElse** ] 活動的快捷方式功能表，選擇 [ **複製**]，在工作流程設計工具中的 [ **onWorkflowActivated1** ] 活動下，開啟該行的快捷方式功能表，然後選擇 [ **貼**上]。
+    - 開啟 [ **IfElse** ] 活動的快捷方式功能表，選擇 [ **複製**]，在工作流程設計工具中的 [ **onWorkflowActivated1** ] 活動下，開啟該行的快捷方式功能表，然後選擇 [ **貼** 上]。
 
-    - 從 [工具箱] 拖曳 [ **IfElse** ] 活動，然後將它連接到工作流程設計 **工具**中 [ **onWorkflowActiviated1** ] 活動下的那一行。
+    - 從 [工具箱] 拖曳 [ **IfElse** ] 活動，然後將它連接到工作流程設計 **工具** 中 [ **onWorkflowActiviated1** ] 活動下的那一行。
 
 4. 在 [工具箱] 中，展開 [ **SharePoint 工作流程** ] 節點，然後找出 [ **CreateTask** ] 活動。
 
 5. 藉由執行下列其中一個步驟，將此活動新增至工作流程：
 
-    - 開啟**CreateTask**活動的快捷方式功能表，選擇 [**複製**]，然後在 [工作流程設計工具] 的 [ **IfElseActivity1** ] 中，開啟這兩個**放置活動**中其中一個的快捷方式功能表，然後選擇 [**貼**上]。
+    - 開啟 **CreateTask** 活動的快捷方式功能表，選擇 [**複製**]，然後在 [工作流程設計工具] 的 [ **IfElseActivity1** ] 中，開啟這兩個 **放置活動** 中其中一個的快捷方式功能表，然後選擇 [**貼** 上]。
 
-    - 將 [ **CreateTask** ] 活動從 [**工具箱**] 拖曳到 [ **IfElseActivity1**] 中的兩個**放置活動**區域的其中一個。
+    - 將 [ **CreateTask** ] 活動從 [**工具箱**] 拖曳到 [ **IfElseActivity1**] 中的兩個 **放置活動** 區域的其中一個。
 
-6. 在 [**屬性**] 視窗的 [ **CorrelationToken** ] 屬性中，輸入*taskToken*的屬性值。
+6. 在 [**屬性**] 視窗的 [ **CorrelationToken** ] 屬性中，輸入 *taskToken* 的屬性值。
 
 7. 選擇加號 (![TreeView plus](../sharepoint/media/plus.gif "TreeView 加號")) 旁邊的加號，以展開 [ **CorrelationToken** ] 屬性。
 
@@ -287,9 +289,9 @@ ms.locfileid: "86017129"
 
 14. 藉由執行下列其中一個步驟，將此活動新增至工作流程：
 
-    - 開啟**LogToHistoryListActivity**活動的快捷方式功能表，選擇 [**複製**]，然後在 [工作流程設計工具] 中的 [ **IfElseActivity1** ] 區域內，開啟其他**下拉式活動**的快捷方式功能表，然後選擇 [**貼**上]。
+    - 開啟 **LogToHistoryListActivity** 活動的快捷方式功能表，選擇 [**複製**]，然後在 [工作流程設計工具] 中的 [ **IfElseActivity1** ] 區域內，開啟其他 **下拉式活動** 的快捷方式功能表，然後選擇 [**貼** 上]。
 
-    - 從 [**工具箱**] 將 [ **LogToHistoryListActivity** ] 活動拖放到 [ **IfElseActivity1**] 中的 [其他**放置活動**] 區域。
+    - 從 [**工具箱**] 將 [ **LogToHistoryListActivity** ] 活動拖放到 [ **IfElseActivity1**] 中的 [其他 **放置活動**] 區域。
 
 ## <a name="add-code-to-the-workflow"></a>將程式碼加入至工作流程
  接下來，將程式碼加入至工作流程，以提供其功能。
@@ -359,7 +361,7 @@ ms.locfileid: "86017129"
 
 5. 在 [ **屬性** ] 視窗中，選擇 [ **條件** ] 屬性的下拉箭號，然後設定程式 *代碼條件* 值。
 
-6. 選擇加號 (![TreeView plus](../sharepoint/media/plus.gif "TreeView 加號")) 旁邊的加號，然後將其值設定為*checkApprovalNeeded*，以展開 [**條件**] 屬性。
+6. 選擇加號 (![TreeView plus](../sharepoint/media/plus.gif "TreeView 加號")) 旁邊的加號，然後將其值設定為 *checkApprovalNeeded*，以展開 [**條件**] 屬性。
 
 7. 在工作流程設計工具中，開啟 [ **logToHistoryListActivity1** ] 活動的快捷方式功能表，然後選擇 [ **產生處理常式** ] 為事件產生空白的方法 `MethodInvoking` 。
 
@@ -393,9 +395,9 @@ ms.locfileid: "86017129"
 
 1. 選擇快速啟動列上的 [ **共用文件** ] 連結。
 
-2. 選擇 [文檔**庫工具**] 索引標籤上的 [連結**庫**] 連結，然後選擇 [文檔**庫設定**] 功能區按鈕
+2. 選擇 [文檔 **庫工具**] 索引標籤上的 [連結 **庫**] 連結，然後選擇 [文檔 **庫設定**] 功能區按鈕
 
-3. 在 [**許可權與管理**] 區段中，選擇 [**工作流程設定**] 連結，然後選擇 [**工作**流程] 頁面上的 [**新增工作流程**] 連結。
+3. 在 [**許可權與管理**] 區段中，選擇 [**工作流程設定**] 連結，然後選擇 [**工作** 流程] 頁面上的 [**新增工作流程**] 連結。
 
 4. 在 [工作流程設定] 頁面的頂端清單中，選擇 [ **ExpenseReport-workflow1.xaml** ] 範本。
 
@@ -414,7 +416,7 @@ ms.locfileid: "86017129"
 
 2. 選擇 [快速啟動] 列上的 [ **共用文件** ] 連結，以顯示 [ **共用的檔** ] 清單。
 
-3. 選擇頁面頂端 [文檔**庫工具**] 索引標籤上的 [**檔**] 連結，然後選擇功能區上的 [**上傳檔**] 按鈕，將新檔上傳至**共用檔**清單。
+3. 選擇頁面頂端 [文檔 **庫工具**] 索引標籤上的 [**檔**] 連結，然後選擇功能區上的 [**上傳檔**] 按鈕，將新檔上傳至 **共用檔** 清單。
 
 4. 在 [ **上傳檔** ] 對話方塊中，選擇 [ **流覽]** 按鈕，選擇任何檔檔案，選擇 [ **開啟** ] 按鈕，然後選擇 [ **確定]** 按鈕。
 

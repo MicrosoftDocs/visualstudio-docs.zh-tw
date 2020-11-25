@@ -1,5 +1,7 @@
 ---
 title: SharePoint 開發逐步解說 |Microsoft Docs
+description: 請參閱逐步解說的連結，示範如何使用 Visual Studio 開發和部署 SharePoint 方案。 連結會依功能區域進行組織。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ae7ed434d2f76036f0409fe21d4dd1493cd28b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d1700958d155801a436cbd00a8a88f7599292a0
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62979467"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970314"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>SharePoint 開發逐步解說
   下列逐步解說示範如何使用開發和部署 SharePoint 方案 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
@@ -31,7 +33,7 @@ ms.locfileid: "62979467"
 |[逐步解說：建立基本網站定義專案](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|示範如何建立基本網站定義，其中包含具有控制項的視覺網頁元件。|
 |[逐步解說：使用影像匯入自訂主版頁面和網站頁面](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)|示範如何將 SharePoint 自訂主版頁面及包含影像的網站頁面匯入至 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sharepoint 專案|
 
-## <a name="import-wizard"></a>匯入嚮導
+## <a name="import-wizard"></a>匯入精靈
 
 |主題|描述|
 |-----------|-----------------|

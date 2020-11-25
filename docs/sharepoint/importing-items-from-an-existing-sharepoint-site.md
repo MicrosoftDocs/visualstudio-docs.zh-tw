@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9c2703bfdd4f47281a1fc19060cb69f8b312e7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017031"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970545"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>從現有的 SharePoint 網站匯入專案
   匯入 SharePoint 方案套件專案範本可讓您在新的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 方案中，重複使用來自現有 SharePoint 網站的項目，例如內容類型和欄位。 雖然您可以執行大部分匯入的方案而不需修改，仍有特定限制和問題需要考量，特別是您在匯入後修改任何項目的話。
@@ -74,7 +74,7 @@ ms.locfileid: "86017031"
 ## <a name="what-happens-when-you-import-a-solution"></a>當您匯入方案時，會發生什麼事
  當您使用 [匯入 SharePoint 方案套件] 範本匯入方案時，會 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 複製 *.wsp* 檔案的所有內容，並嘗試在匯入的專案及其檔案之間盡可能地協調和保留任意數量的關聯和參考。
 
- 所有匯入的項目會複製到 **方案總管**中的對應資料夾。 例如，內容類型會出現在 [內容類型] **** 資料夾下，而清單執行個體會出現在 [清單執行個體] **** 下。 與匯入項目相關的檔案也會複製到項目的資料夾。 例如，匯入的清單執行個體會包含其模組、表單和 ASPX 頁面。
+ 所有匯入的項目會複製到 **方案總管** 中的對應資料夾。 例如，內容類型會出現在 [內容類型]  資料夾下，而清單執行個體會出現在 [清單執行個體] 下。 與匯入項目相關的檔案也會複製到項目的資料夾。 例如，匯入的清單執行個體會包含其模組、表單和 ASPX 頁面。
 
 ### <a name="dependent-items"></a>相依項目
  如果您在 [匯入 SharePoint 方案套件精靈] 中選取項目，但未選取其相依項目，會有訊息方塊通知您必須同時選取相依項目才能匯入。
@@ -82,21 +82,21 @@ ms.locfileid: "86017031"
 ### <a name="what-are-features"></a>什麼是功能？
  SharePoint Designer 使用者可能會看到非預期的檔案，稱為 *功能*，出現在 **方案總管** 的匯入方案中。雖然功能存在於 SharePoint Designer 方案中，它們在檢視中是隱藏的。 現在，在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中會顯示功能。
 
- 功能是 SharePoint 項目的容器。 每一個功能會保留其所包含之每個項目的參考，例如內容類型和清單定義。 當您匯入方案時， [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會設定所有匯入項目的功能，並嘗試維護檔案的功能與項目關聯。 無法解析其參考的任何檔案會放在 **** [其他匯入檔案] 資料夾中。
+ 功能是 SharePoint 項目的容器。 每一個功能會保留其所包含之每個項目的參考，例如內容類型和清單定義。 當您匯入方案時， [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會設定所有匯入項目的功能，並嘗試維護檔案的功能與項目關聯。 無法解析其參考的任何檔案會放在  [其他匯入檔案] 資料夾中。
 
  如需功能的詳細資訊，請參閱 [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md) 和 [使用功能](/previous-versions/office/developer/sharepoint-2010/ms460318(v=office.14))。
 
 ### <a name="handle-special-cases"></a>處理特殊案例
- 在某些情況下，Visual Studio 無法調解項目與其相依的檔案。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 無法解析的任何檔案會出現在 ****[其他匯入檔案] 資料夾底下。 此外，它們的 **DeploymentType** 屬性會設為 **NoDeployment** ，使它們不會隨著方案部署。
+ 在某些情況下，Visual Studio 無法調解項目與其相依的檔案。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 無法解析的任何檔案會出現在 [其他匯入檔案] 資料夾底下。 此外，它們的 **DeploymentType** 屬性會設為 **NoDeployment** ，使它們不會隨著方案部署。
 
- 例如，如果您匯入清單定義 ExpenseForms，使用該名稱的清單定義會出現在**方案總管**中的 [**清單定義**] 資料夾底下，以及其*Elements.xml*和*Schema.xml*檔案中。 不過，其相關聯的 ASPX 和 HTML 表單，可能會放置於 **** [其他匯入檔案] 資料夾下，稱為 **ExpenseForms** 的資料夾。 若要完成匯入，請在 **方案總管** 中，移動 ExpenseForms 清單定義底下的這些檔案，並將每個檔案的 **DeploymentType** 屬性從 **NoDeployment** 變更為 **ElementFile**。
+ 例如，如果您匯入清單定義 ExpenseForms，使用該名稱的清單定義會出現在 **方案總管** 中的 [**清單定義**] 資料夾底下，以及其 *Elements.xml* 和 *Schema.xml* 檔案中。 不過，其相關聯的 ASPX 和 HTML 表單，可能會放置於  [其他匯入檔案] 資料夾下，稱為 **ExpenseForms** 的資料夾。 若要完成匯入，請在 **方案總管** 中，移動 ExpenseForms 清單定義底下的這些檔案，並將每個檔案的 **DeploymentType** 屬性從 **NoDeployment** 變更為 **ElementFile**。
 
  匯入事件接收器時， *Elements.xml* 的檔案會複製到正確的位置，但您必須手動將該元件包含在方案套件中，才能使用方案進行部署。 [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] 如何執行此動作，請參閱 [如何：新增和移除其他元件](../sharepoint/how-to-add-and-remove-additional-assemblies.md)。
 
- 匯入工作流程時，InfoPath 表單會複製到 **** [其他匯入檔案] 資料夾。 如果 *.wsp* 檔案包含 Web 範本，它會設定為 **方案總管**中的啟動頁面。
+ 匯入工作流程時，InfoPath 表單會複製到  [其他匯入檔案] 資料夾。 如果 *.wsp* 檔案包含 Web 範本，它會設定為 **方案總管** 中的啟動頁面。
 
 ## <a name="import-fields-and-property-bags"></a>匯入欄位和屬性包
- 當您匯入具有多個欄位的方案時，會將所有個別的欄位定義合併到**方案總管**稱為**欄位**之節點下的單一*Elements.xml*檔案中。 同樣地，所有屬性包專案都會合並到名為**PropertyBags**的節點下的*Elements.xml*檔案中。
+ 當您匯入具有多個欄位的方案時，會將所有個別的欄位定義合併到 **方案總管** 稱為 **欄位** 之節點下的單一 *Elements.xml* 檔案中。 同樣地，所有屬性包專案都會合並到名為 **PropertyBags** 的節點下的 *Elements.xml* 檔案中。
 
  在 SharePoint 中的欄位是指定資料類型例如文字、布林或查閱的資料行。 如需詳細資訊，請參閱 [建置組塊：資料行和欄位類型](/previous-versions/office/developer/sharepoint-2010/ee535893(v=office.14))。 屬性包可讓您將屬性加入至 SharePoint 中的物件，從伺服器陣列到 SharePoint 網站上清單的所有項目。 屬性包會實作為屬性名稱和值的雜湊資料表。 如需詳細資訊，請參閱 [管理 SharePoint 組態](/previous-versions/msp-n-p/ff647766(v=pandp.10)) 或 [SharePoint 屬性包設定](https://archive.codeplex.com/?p=pbs)。
 

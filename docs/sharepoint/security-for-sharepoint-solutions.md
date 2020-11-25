@@ -1,5 +1,7 @@
 ---
 title: SharePoint 解決方案的安全性 |Microsoft Docs
+description: 探索 Visual Studio 納入哪些功能，以協助加強 SharePoint 應用程式的安全性。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6dc1449a40528670274ea5b275cca3f0a8d2f277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3290d603de124288a5b176dfe0d2e39f5c1377f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73983782"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970449"
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint 方案的安全性
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 包含下列功能，以協助加強 SharePoint 應用程式的安全性。
@@ -39,7 +41,7 @@ ms.locfileid: "73983782"
 ## <a name="vista-and-windows-7-user-account-control"></a>Vista 和 Windows 7 使用者帳戶控制
  [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] 並 [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] 將稱為「使用者帳戶控制」的安全性功能 (UAC) 。 若要在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和系統上開發 SharePoint 方案 [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] ，UAC 需要您以 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 系統管理員身分執行。 在 [ **開始** ] 功能表中，開啟的快捷方式功能表 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，然後選擇 [以 **系統管理員身分執行**]。
 
- 若要將 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 快捷方式設定為 [一律以系統管理員身分執行]，請開啟其快捷方式功能表，選擇 [**屬性**]，選擇 [**屬性**] 對話方塊中的 [ **Advanced** ] 按鈕，然後選取 [以**系統管理員身分執行**] 核取方塊。
+ 若要將 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 快捷方式設定為 [一律以系統管理員身分執行]，請開啟其快捷方式功能表，選擇 [**屬性**]，選擇 [**屬性**] 對話方塊中的 [ **Advanced** ] 按鈕，然後選取 [以 **系統管理員身分執行**] 核取方塊。
 
  如需詳細資訊，請參閱 [瞭解及設定 Windows Vista 中的使用者帳戶控制](/previous-versions/windows/it-pro/windows-vista/cc709628(v=ws.10))。 和 [Windows 7 使用者帳戶控制](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731416(v=ws.10))。
 

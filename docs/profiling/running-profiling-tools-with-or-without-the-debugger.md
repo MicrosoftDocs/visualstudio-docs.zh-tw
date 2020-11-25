@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0bd8f90c586366a298ba96009dfe5d87a042141b
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918106"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970297"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>使用或不使用偵錯工具來執行分析工具
 
@@ -39,26 +39,26 @@ Visual Studio 提供各種效能測量和分析工具的選擇。 某些工具�
 
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a>偵錯時收集程式碼剖析資料
 
-當您選取 [ **Debug**  >  **開始調試** 程式] 或按下 **F5** 來開始 Visual Studio 中的偵錯工具時，預設會顯示 [ **診斷工具** ] 視窗。 若要手動開啟，請選取 [ **Debug**  >  **Windows**  >  **Show 診斷工具** ]。 [診斷工具]  視窗會顯示事件、處理序記憶體和 CPU 使用量的相關資訊。
+當您選取 [ **Debug**  >  **開始調試** 程式] 或按下 **F5** 來開始 Visual Studio 中的偵錯工具時，預設會顯示 [**診斷工具**] 視窗。 若要手動開啟，請選取 [ **Debug**  >  **Windows**  >  **Show 診斷工具**]。 [診斷工具] 視窗會顯示事件、處理序記憶體和 CPU 使用量的相關資訊。
 
 ![診斷工具視窗的螢幕擷取畫面](../profiling/media/diagnostictoolswindow.png "[診斷工具] 視窗")
 
-- 使用工具列上的  、[UI 分析]  ，以及 [CPU 使用量]  。
+- 使用工具列上的 **設定** 圖示來選擇是否要檢視 [記憶體使用量]、[UI 分析]，以及 [CPU 使用量]。
 
-- 在 [ **設定** ] 下拉式清單中選取 [ **設定** ]，以開啟具有更多選項的 **診斷工具屬性頁面** 。
+- 在 [**設定**] 下拉式清單中選取 [**設定**]，以開啟具有更多選項的 **診斷工具屬性頁面**。
 
-- 如果您正在執行 Visual Studio Enterprise，可以前往 [ **工具**  >  **選項**  >  **IntelliTrace** ] 來啟用或停用 IntelliTrace。
+- 如果您正在執行 Visual Studio Enterprise，可以前往 [**工具**  >  **選項**  >  **IntelliTrace**] 來啟用或停用 IntelliTrace。
 
 在您停止偵錯時，診斷工作階段就會結束。
 
-如需詳細資訊，請參閱：
+如需詳細資訊，請參閱
 
 - [透過分析 CPU 使用量測量應用程式效能](../profiling/beginners-guide-to-performance-profiling.md)
 - [在 Visual Studio 中測量記憶體使用量](../profiling/memory-usage.md)
 
 ### <a name="the-events-tab"></a>[事件] 索引標籤
 
-在偵錯工作階段期間，[診斷工具] 視窗的 [事件] 索引標籤會列出所發生診斷事件。 類別首碼 *中斷點* 、檔案和其他專案，可讓您快速掃描 *清單中的* 類別，或略過不在意的類別。
+在偵錯工作階段期間，[診斷工具] 視窗的 [事件] 索引標籤會列出所發生診斷事件。 類別首碼 *中斷點*、檔案和其他專案，可讓您快速掃描 *清單中的* 類別，或略過不在意的類別。
 
 您可以使用 [ **篩選** ] 下拉式清單，藉由選取或清除特定的事件類別，來篩選出和移出事件。
 
@@ -74,21 +74,21 @@ Visual Studio 提供各種效能測量和分析工具的選擇。 某些工具�
 
 若要收集效能資料而不進行偵錯，您可以執行 [效能分析工具]。
 
-1. 在 Visual Studio 中開啟專案時，將解決方案設定設為 [ **發行** ]，然後選取 [ **本機 Windows 偵錯工具** ] (或 [ **本機電腦** ]) 作為部署目標。
+1. 在 Visual Studio 中開啟專案時，將解決方案設定設為 [ **發行**]，然後選取 [ **本機 Windows 偵錯工具** ] (或 [ **本機電腦** ]) 作為部署目標。
 
-1. 選取 [ **Debug**  >  **效能分析工具** ]，或按 **Alt** + **F2** 。
+1. 選取 [ **Debug**  >  **效能分析工具**]，或按 **Alt** + **F2**。
 
-1. 在 [診斷工具] 的 [啟動] 頁面上，選取一或多個要執行的工具。 只有適用于專案類型、作業系統和程式設計語言的工具才會顯示。 選取 [顯示所有工具]  來另外查看針對這個診斷工作階段停用的工具。
+1. 在 [診斷工具] 的 [啟動] 頁面上，選取一或多個要執行的工具。 只有適用于專案類型、作業系統和程式設計語言的工具才會顯示。 選取 [顯示所有工具] 來另外查看針對這個診斷工作階段停用的工具。
 
    ![診斷工具的螢幕擷取畫面](../profiling/media/diaghubsummarypage.png "DIAG_SelectTool")
 
-1. 若要開始診斷工作階段，請選取 [開始]  。
+1. 若要開始診斷工作階段，請選取 [開始]。
 
    當會話正在執行時，某些工具會在 [診斷工具] 頁面上顯示即時資料的圖表，以及用來暫停和繼續收集資料的控制項。
 
     ![效能分析工具的資料收集螢幕擷取畫面](../profiling/media/diaghubcollectdata.png "中樞收集資料")
 
-1. 若要結束診斷工作階段，請選取 [停止收集]  。
+1. 若要結束診斷工作階段，請選取 [停止收集]。
 
    分析的資料會出現在 **報表** 頁面上。
 
@@ -96,7 +96,7 @@ Visual Studio 提供各種效能測量和分析工具的選擇。 某些工具�
 
 ![診斷工具最近開啟的會話清單螢幕擷取畫面](../profiling/media/diaghubopenexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
 
-如需詳細資訊，請參閱：
+如需詳細資訊，請參閱
 
 - [分析 CPU 使用量](../profiling/cpu-usage.md)
 - [分析 .NET 程式碼的記憶體使用量](../profiling/dotnet-alloc-tool.md)

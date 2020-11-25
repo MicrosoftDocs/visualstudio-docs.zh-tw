@@ -1,5 +1,7 @@
 ---
 title: 使用影像匯入自訂主版頁面 & 網站頁面
+description: 在這個逐步解說中，將包含影像的 SharePoint 自訂主版頁面和網站頁面匯入 Visual Studio 的 SharePoint 專案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 311124b2e0b81e70c4c2a7b40754207e6c66b749
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ceb69608a2d1770f082991f3d927d4e4639ae56
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015689"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970151"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>逐步解說：使用影像匯入自訂主版頁面和網站頁面
   本逐步解說將示範如何將 SharePoint 自訂主版頁面及包含影像的網站頁面匯入至 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sharepoint 專案。
@@ -33,7 +35,7 @@ ms.locfileid: "86015689"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
  您必須具有下列元件，才能完成此逐步解說：
 
 - 支援的 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] 和 SharePoint 版本。
@@ -51,7 +53,7 @@ ms.locfileid: "86015689"
 
 2. 在 [ **主版頁面** ] 功能區中，選擇 [ **空白主版頁面**]。
 
-3. 選擇新的主版頁面，然後在 **主版頁面** 功能區上，選擇 [ **編輯**檔案]。
+3. 選擇新的主版頁面，然後在 **主版頁面** 功能區上，選擇 [ **編輯** 檔案]。
 
 4. 在 SharePoint Designer 底部，選擇 [程式 **代碼** ] 索引標籤。
 
@@ -76,7 +78,7 @@ ms.locfileid: "86015689"
     </html>
     ```
 
-6. 儲存頁面，選擇 [**主版頁面**] 索引標籤，然後將主版頁面重新命名為**mybasic1。**
+6. 儲存頁面，選擇 [**主版頁面**] 索引標籤，然後將主版頁面重新命名為 **mybasic1。**
 
 ## <a name="add-an-image-to-the-content-database-in-sharepoint-designer"></a>將影像加入至 SharePoint Designer 中的內容資料庫
  現在您可以新增要在網站頁面上顯示的影像。 映射會部署到 SharePoint 內容資料庫。
@@ -85,7 +87,7 @@ ms.locfileid: "86015689"
 
 1. 在流覽窗格中，選擇 [ **所有** 檔案] 網站物件，然後在樹狀檢視中選擇 [ **images** ] 資料夾。
 
-2. 在 [ **所有** 檔案] 功能區上，選擇 [匯 **入**檔案]，選擇您選擇的檔案，然後選擇 [ **確定]** 按鈕。 在此範例中，檔案的名稱為 **myimg1.png**。
+2. 在 [ **所有** 檔案] 功能區上，選擇 [匯 **入** 檔案]，選擇您選擇的檔案，然後選擇 [ **確定]** 按鈕。 在此範例中，檔案的名稱為 **myimg1.png**。
 
      您可以選擇性地建立子資料夾，以協助組織影像。
 
@@ -131,7 +133,7 @@ ms.locfileid: "86015689"
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>從 SharePoint Designer 匯出專案
 
-1. 在 SharePoint Designer 的流覽窗格中，選擇 [ **小組網站** ] 物件，然後在 [ **網站** ] 功能區中選擇 [ **另存**新檔範本]。
+1. 在 SharePoint Designer 的流覽窗格中，選擇 [ **小組網站** ] 物件，然後在 [ **網站** ] 功能區中選擇 [ **另存** 新檔範本]。
 
 2. 在 [ **另存** 新檔範本] 對話方塊中，輸入檔案名和範本名稱，選取 [ **包含內容** ] 核取方塊，然後選擇 [ **確定]** 按鈕。
 
@@ -158,7 +160,7 @@ ms.locfileid: "86015689"
 
 3. 選擇 [ **完成]** 按鈕以匯入選取的專案。
 
-4. 在 **方案總管**中，選擇 [ \_ catalogsmasterpage] \_ 節點，並將其 [ **部署衝突解決** 方式] 屬性的值設定為 [ **自動**]。
+4. 在 **方案總管** 中，選擇 [ \_ catalogsmasterpage] \_ 節點，並將其 [ **部署衝突解決** 方式] 屬性的值設定為 [ **自動**]。
 
     這有助於確保自動解決任何部署衝突。
 

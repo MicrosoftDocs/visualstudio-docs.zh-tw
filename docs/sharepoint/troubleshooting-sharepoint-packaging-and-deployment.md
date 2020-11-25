@@ -1,5 +1,7 @@
 ---
 title: 疑難排解 SharePoint 封裝和部署 |Microsoft Docs
+description: 瞭解並修正當您封裝和部署 SharePoint 方案時可能遇到的各種問題。
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7eafac8015b7a2c51279b7a2d664f0e094d2397b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07ce649a22573041768bfc316f65bfcdf7577b98
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981928"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95969948"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>針對 SharePoint 封裝和部署進行疑難排解
   這個主題涵蓋您在封裝和部署 SharePoint 方案時可能會遇到的各種問題。
@@ -51,7 +53,7 @@ ms.locfileid: "72981928"
 |-----------|-----------------|
 |自動|偵測到衝突並自動解決衝突。|
 |Prompt|偵測到衝突，並在解決衝突之前將其報告給開發人員。|
-|無|未偵測到衝突。|
+|None|未偵測到衝突。|
 
 ## <a name="differences-between-f5-deployment"></a>F5 部署之間的差異
  當您使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將 SharePoint 專案部署至本機 SharePoint 伺服器來進行測試和偵錯時，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 還會執行一些額外步驟。
@@ -108,7 +110,7 @@ ms.locfileid: "72981928"
 ### <a name="resolution"></a>解決方法
  如果 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 專案系統不知道嵌套使用者控制項，它就無法提供 IntelliSense，而且會發出警告。 如果未建置專案而且設計工具並未關閉及重新開啟，或者已啟用自動撤銷選項 (這樣會在偵錯之後從 SharePoint 登錄區撤銷使用者控制項)，則專案系統不會感知巢狀使用者控制項。
 
- 若要移除這項警告，請建置專案，然後關閉設計工具再重新開啟，或者停用專案的自動撤銷選項。 若要這樣做，請在 [專案屬性] 對話方塊的 [ **SharePoint** ] 索引標籤上，清除 [**在調試後自動**撤銷] 核取方塊。
+ 若要移除這項警告，請建置專案，然後關閉設計工具再重新開啟，或者停用專案的自動撤銷選項。 若要這樣做，請在 [專案屬性] 對話方塊的 [ **SharePoint** ] 索引標籤上，清除 [**在調試後自動** 撤銷] 核取方塊。
 
 ## <a name="see-also"></a>另請參閱
 
