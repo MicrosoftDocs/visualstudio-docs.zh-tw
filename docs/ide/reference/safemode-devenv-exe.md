@@ -1,5 +1,7 @@
 ---
 title: -SafeMode (devenv.exe)
+description: 瞭解如何使用安全模式 devenv 命令列參數，以安全模式啟動 Visual Studio，只載入預設環境和服務。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f180a45b274ec3042b7e150a43b5e8681fafcfed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d8f663ca581892ba3207acbb0271586c322bad2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593586"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039868"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 

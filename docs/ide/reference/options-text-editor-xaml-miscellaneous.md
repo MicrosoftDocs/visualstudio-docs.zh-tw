@@ -1,5 +1,7 @@
 ---
 title: 選項、文字編輯器、XAML、其他
+description: 瞭解如何使用 XML 區段中的 [其他] 頁面，來指定如何在 XAML 檔中格式化元素和屬性。
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -28,22 +30,22 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f646d52e3aae3d52f6cd24d75421fbdc71d30d66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5662381d025fa2c74ac82ac217122ea9097ab14
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544088"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040962"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>選項、文字編輯器、XAML、其他
 
-使用 [其他]**** 屬性頁來指定如何格式化您 XAML 文件中的項目和屬性。 若要開啟 [選項]**** 對話方塊，請按一下 [工具]**** 功能表，然後按一下 [選項]****。 若要存取 [其他]**** 屬性頁，請展開 [文字編輯器]**** > [XAML]**** > [其他]**** 節點。
+使用 [其他] 屬性頁來指定如何格式化您 XAML 文件中的項目和屬性。 若要開啟 [選項] 對話方塊，請按一下 [工具] 功能表，然後按一下 [選項]。 若要存取 [其他] 屬性頁，請展開 [文字編輯器] > [XAML] > [其他] 節點。
 
 ## <a name="auto-insert"></a>自動插入
 
 使用此設定可控制標記和引號的自動產生時機。
 
-|Name|描述|
+|名稱|說明|
 |-|-|
 |**結尾標記**|指定當您關閉具有大於字元 (>) 的開始標記時，是否自動產生項目的結尾標記。|
 |**屬性引號**|指定從陳述式完成下拉式清單中選取屬性值時，是否產生封閉式引號。|

@@ -1,5 +1,7 @@
 ---
 title: -Upgrade (devenv.exe)
+description: 瞭解如何使用 Upgrade devenv 命令列參數，將方案檔和其所有專案檔或指定的專案檔更新為這些檔案目前的 Visual Studio 格式。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bb2b296d8728587c9aa3c22b7a670d89612eff1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2bb0565783efb27cf4194bb25982ee0f717be776
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596420"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040949"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 

@@ -12,11 +12,11 @@ manager: ''
 robots: ''
 ms.date: 4/3/2020
 ms.faqid: q1_5
-ms.openlocfilehash: d50798fcc04baca95d6ee4843f5ecd79d5e892c3
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 04c6f3473f31f438afb9785cc460aa0da38605d5
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2020
+ms.lasthandoff: 11/25/2020
 ms.locfileid: "91838354"
 ---
 ## <a name="how-do-i-add-alternate-identities-to-my-subscription-and-how-does-this-impact-my-azure-credits-and-azure-devops"></a>我要如何將替代身分識別新增到我的訂閱？而這又會對我的 Azure 點數和 Azure DevOps 產生什麼影響？
@@ -27,4 +27,4 @@ ms.locfileid: "91838354"
 
 針對所有訂閱，您可以新增「公司或學校帳戶」，讓您可以搭配需要登入的權益 (VS IDE、Azure DevOps 與 Azure) 使用該帳戶。
 
-新增替代身分識別很容易。 請連線至 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions)，按一下 [新增替代帳戶]，輸入電子郵件地址，然後按一下 [新增]。 如需使用替代身分識別的詳細資訊，請參閱我們的[替代身分識別](../../../../vs-alternate-identity.md) \(部分機器翻譯\) 一文。
+新增替代身分識別很容易。 請連線至 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions)，按一下 [新增替代帳戶]，輸入電子郵件地址，然後按一下 [新增]。 如需使用替代身分識別的詳細資訊，請參閱我們的[替代身分識別](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity) \(部分機器翻譯\) 一文。

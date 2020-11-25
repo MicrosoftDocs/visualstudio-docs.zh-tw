@@ -1,5 +1,7 @@
 ---
 title: 一般、文字編輯器、選項
+description: 瞭解如何使用 [一般] 頁面來變更 Visual Studio 程式碼和文字編輯器的全域設定。
+ms.custom: SEO-VS-2020
 ms.date: 01/18/2019
 ms.topic: reference
 f1_keywords:
@@ -33,16 +35,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1665db5fff414227c18fd8de4224302cb6d43c2a
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80472829"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040598"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>選項對話方塊：文字編輯器 \> 一般
 
-此對話方塊可讓您變更 Visual Studio 程式碼和文字編輯器的全域設定。 若要顯示這個對話方塊，請選取 [工具]**** 功能表上的 [選項]****，並展開 [文字編輯器]**** 資料夾，然後選取 [一般]****。
+此對話方塊可讓您變更 Visual Studio 程式碼和文字編輯器的全域設定。 若要顯示這個對話方塊，請選取 [工具] 功能表上的 [選項]，並展開 [文字編輯器] 資料夾，然後選取 [一般]。
 
 ## <a name="settings"></a>設定
 
@@ -68,9 +70,9 @@ ms.locfileid: "80472829"
 
 ### <a name="enable-mouse-click-to-perform-go-to-definition"></a>啟用按一下滑鼠即執行前往定義
 
-選取時，您可以按下 **Ctrl** 並暫留在元素上，同時按一下滑鼠。 這樣會帶您前往所選取元素的定義。 您也可以從 [使用輔助按鍵]**** 下拉式清單選擇 [Alt]**** 或 [Ctrl + Alt]********。
+選取時，您可以按下 **Ctrl** 並暫留在元素上，同時按一下滑鼠。 這樣會帶您前往所選取元素的定義。 您也可以從 [使用輔助按鍵] 下拉式清單選擇 [Alt] 或 [Ctrl + Alt]。
 
-選取 [在預覽檢視中開啟定義]**** 核取方塊，以在視窗中顯示元素的定義，而不需從您目前在程式碼編輯器中的位置尋覽到他處。
+選取 [在預覽檢視中開啟定義] 核取方塊，以在視窗中顯示元素的定義，而不需從您目前在程式碼編輯器中的位置尋覽到他處。
 
 ## <a name="display"></a>顯示
 

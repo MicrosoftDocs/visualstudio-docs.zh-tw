@@ -9,10 +9,10 @@ ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q5_4
 ms.openlocfilehash: 3c8bb23e5a37aeef0580fa478495ccbe1ad63cc1
-ms.sourcegitcommit: a9fcf189aebe16234919421f2ad73e395e1ab8be
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
+ms.lasthandoff: 11/25/2020
 ms.locfileid: "91828932"
 ---
 ## <a name="can-i-use-my-monthly-azure-credits-to-run-production-applications"></a>我是否可以使用每月 Azure 點數來執行生產應用程式？

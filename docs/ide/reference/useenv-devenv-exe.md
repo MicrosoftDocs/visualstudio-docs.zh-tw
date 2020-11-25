@@ -1,5 +1,7 @@
 ---
 title: -UseEnv (devenv.exe)
+description: 瞭解如何使用 UseEnv devenv 命令列參數來開始 Visual Studio 和載入特定環境變數以進行編譯。
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2019
 ms.topic: reference
 f1_keywords:
@@ -19,19 +21,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35808b27964b3ca8fa0488f1be2ce6dc5530b3dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51b47156b73d81f427c08e62006dc6e457e5780b
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596388"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040936"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 
 啟動 Visual Studio，並載入特定環境變數進行編譯。
 
 > [!NOTE]
-> 此參數的安裝包含 **使用 C++ 的桌面開發**工作負載。
+> 此參數的安裝包含 **使用 C++ 的桌面開發** 工作負載。
 
 ## <a name="syntax"></a>語法
 
@@ -51,10 +53,10 @@ devenv /UseEnv {SolutionName|ProjectName}
 
 ## <a name="remarks"></a>備註
 
-此參數會影響專案屬性中適用於 **VC++ 目錄**的 Visual Studio IDE。 如果您指定 `/UseEnv` 參數，[VC++ 目錄]**** 節點會顯示 PATH、INCLUDE、LIBPATH 和 LIB 環境變數的值  (也會顯示 **來原始目錄** 和 **排除目錄**的值 ) 。否則，此節點會以五個目錄值取代環境變數： **可執行檔目錄**、 **包含目錄**、 **參考目錄**、連結 **庫目錄**和連結 **庫 WinRT 目錄**。
+此參數會影響專案屬性中適用於 **VC++ 目錄** 的 Visual Studio IDE。 如果您指定 `/UseEnv` 參數，[VC++ 目錄] 節點會顯示 PATH、INCLUDE、LIBPATH 和 LIB 環境變數的值  (也會顯示 **來原始目錄** 和 **排除目錄** 的值 ) 。否則，此節點會以五個目錄值取代環境變數： **可執行檔目錄**、 **包含目錄**、 **參考目錄**、連結 **庫目錄** 和連結 **庫 WinRT 目錄**。
 
 > [!TIP]
-> 您可以使用滑鼠右鍵按一下 C++ 專案，然後選取 [屬性]**** 來存取專案屬性。 在 [屬性頁]**** 對話方塊中，依序選取 [組態屬性]**** 和 [VC++ 目錄]****。
+> 您可以使用滑鼠右鍵按一下 C++ 專案，然後選取 [屬性] 來存取專案屬性。 在 [屬性頁] 對話方塊中，依序選取 [組態屬性] 和 [VC++ 目錄]。
 
 使用此參數指定專案名稱時，工具會顯示專案父代方案內所有專案的環境變數。
 

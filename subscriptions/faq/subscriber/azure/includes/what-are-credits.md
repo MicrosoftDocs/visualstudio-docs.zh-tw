@@ -8,10 +8,10 @@ ms.author: cabuschl
 ms.date: 10/07/2020
 ms.faqid: q5_1
 ms.openlocfilehash: 3c08eb06541484342410c1c8830bbebaee978bb1
-ms.sourcegitcommit: a9fcf189aebe16234919421f2ad73e395e1ab8be
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
+ms.lasthandoff: 11/25/2020
 ms.locfileid: "91829095"
 ---
 ## <a name="what-are-the-monthly-azure-credits"></a>什麼是每月 Azure 點數？

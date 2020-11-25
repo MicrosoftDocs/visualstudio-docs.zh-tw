@@ -4,22 +4,22 @@ ms.date: 05/21/2019
 ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
-- fxcop analyzers, ported rules, unported rules, deprecated rules
+- .NET analyzers, ported rules, unported rules, deprecated rules
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 33f935158077e566a5a9bc14645acaae79201347
-ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
+ms.openlocfilehash: c73816ae31ac9283b0f9053c08b8a351511b9a76
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90832173"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040363"
 ---
 # <a name="deprecated-rules"></a>過時的規則
 
-下列 FxCop 舊版分析規則已被取代，而且不會實作為分析器。 如需進一步的資訊，您可以依規則識別碼搜尋 (例如[roslyn-分析器 GitHub 問題頁面](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)上的**CA1009**) 。
+下列 FxCop 舊版分析規則已被取代，而且不會實作為分析器。 如需進一步的資訊，您可以依規則識別碼搜尋 (例如 [roslyn-分析器 GitHub 問題頁面](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)上的 **CA1009**) 。
 
 - [CA1006](ca1006.md)
 - [CA1009](ca1009.md)

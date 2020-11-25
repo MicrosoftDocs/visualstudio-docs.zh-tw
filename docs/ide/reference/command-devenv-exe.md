@@ -1,5 +1,7 @@
 ---
 title: -Command (devenv.exe)
+description: 瞭解如何在啟動 Visual Studio IDE 之後，使用命令 devenv 命令列參數來執行指定的命令。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 434b2ad0f2a6ca4d84c6d82bf9a1a85876a4d975
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bcfff93ac9cb4903c534c0d4d57387a5143b6b40
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75570397"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040871"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 

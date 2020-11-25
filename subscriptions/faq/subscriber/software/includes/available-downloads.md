@@ -8,11 +8,11 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q2_1
-ms.openlocfilehash: 73aa7ede968d221b49942dad4e2a8cbf5284cf15
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: e8e7d1f5667b5acd183017ce6e17818b73cade2c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2020
+ms.lasthandoff: 11/25/2020
 ms.locfileid: "91838409"
 ---
 ## <a name="what-software-downloads-are-available"></a>有哪些軟體下載項目可供使用？
@@ -21,5 +21,5 @@ ms.locfileid: "91838409"
 
 請查看這份[依訂閱層級分類的可用下載項目清單](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) \(英文\)。 如需下載項目的詳細資訊，請參閱下列文章：
 
-- [產品可用性](../../../../product-availability.md)
-- [下載軟體](../../../../download-software.md)
+- [產品可用性](https://docs.microsoft.com/visualstudio/subscriptions/product-availability)
+- [下載軟體](https://docs.microsoft.com/visualstudio/subscriptions/download-software)

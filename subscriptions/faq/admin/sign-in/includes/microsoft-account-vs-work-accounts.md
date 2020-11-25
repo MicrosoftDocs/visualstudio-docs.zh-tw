@@ -8,11 +8,11 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
 ms.openlocfilehash: 4027c134813204819e4ea354d43b6ef561bd69a8
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88809791"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970358"
 ---
 ## <a name="what-is-the-difference-between-using-a-microsoft-account-vs-work-account"></a>使用 Microsoft 帳戶與公司帳戶有什麼差別？
 

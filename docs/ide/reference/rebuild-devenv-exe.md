@@ -1,5 +1,7 @@
 ---
 title: -Rebuild (devenv.exe)
+description: 瞭解如何使用 Rebuild devenv 命令列參數來清除然後建立指定的方案設定。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76fe4bcf3441163604d93e9264ed6f78fcf0224b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8086e5ffb2ebdd154e95eda18e04ed5b64cd3dd2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565613"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040039"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 
@@ -55,11 +57,11 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
 ## <a name="remarks"></a>備註
 
-- 這個參數會執行與 IDE 中 [重建方案]**** 功能表命令相同的動作。
+- 這個參數會執行與 IDE 中 [重建方案] 功能表命令相同的動作。
 
 - 請以雙引號括住包含空格的字串。
 
-- 清除和建置的摘要資訊 (包含錯誤) 可以顯示在 [命令]**** 視窗中，或使用 [/Out](out-devenv-exe.md) 參數指定的任何記錄檔中。
+- 清除和建置的摘要資訊 (包含錯誤) 可以顯示在 [命令] 視窗中，或使用 [/Out](out-devenv-exe.md) 參數指定的任何記錄檔中。
 
 ## <a name="example"></a>範例
 

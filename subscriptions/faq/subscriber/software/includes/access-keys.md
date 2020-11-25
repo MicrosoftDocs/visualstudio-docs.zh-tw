@@ -8,10 +8,10 @@ ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q2_3
 ms.openlocfilehash: 32c295a236b3221636b241c1fa806bbdd93d3c15
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
+ms.lasthandoff: 11/25/2020
 ms.locfileid: "81385907"
 ---
 ## <a name="how-do-i-access-my-product-keys-when-my-subscription-expires"></a>我要如何在訂閱到期之後存取我的產品金鑰？

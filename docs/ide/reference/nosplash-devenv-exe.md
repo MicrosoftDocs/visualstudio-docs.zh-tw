@@ -1,5 +1,7 @@
 ---
 title: -NoSplash (devenv.exe)
+description: 瞭解如何使用 NoSplash devenv 命令列參數來防止顯示啟動顯示畫面。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: v-dele
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1e8118faa743398271fb282a2603aab5fcd76b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e86398663ea7b6c8209d4123ab3cb12651d4491e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62950652"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96043994"
 ---
 # <a name="nosplash-devenvexe"></a>/NoSplash (devenv.exe)
 

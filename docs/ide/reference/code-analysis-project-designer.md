@@ -1,5 +1,7 @@
 ---
 title: 專案設計工具、程式碼分析
+description: 瞭解程式碼分析、專案設計工具，以及它如何包含程式碼分析工具，您可以選擇在程式碼上執行。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 350c32ea0904913b20f346243de9cb464667289a
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 7a972e183047b9d8cb7adfd30638be2fd4b0de86
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659351"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041028"
 ---
 # <a name="code-analysis-project-designer"></a>專案設計工具、程式碼分析
 

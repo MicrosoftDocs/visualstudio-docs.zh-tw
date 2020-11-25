@@ -1,5 +1,7 @@
 ---
 title: 選項、文字編輯器、C/C++、實驗
+description: 瞭解如何使用 C/c + + 區段中的實驗性頁面，來變更與 IntelliSense 和流覽資料庫相關的實驗性行為。
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e35bdb8c6a56ef3174277836769201cd00e47dad
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77278708"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040299"
 ---
 # <a name="options-text-editor-cc-experimental"></a>選項、文字編輯器、C/C++、實驗
 
@@ -24,11 +26,11 @@ ms.locfileid: "77278708"
 
 ::: moniker range="vs-2017"
 
-本文描述 Visual Studio 2017 中的選項。 針對 Visual Studio 2015，請在目錄上方的選取器中選取 [2015]****。
+本文描述 Visual Studio 2017 中的選項。 針對 Visual Studio 2015，請在目錄上方的選取器中選取 [2015]。
 
 ::: moniker-end
 
-若要存取此屬性頁，請按下**Ctrl** + **Q**以啟動搜尋方塊，然後輸入**實驗**性。 鍵入前幾個字母之後，搜尋就會找到頁面。 您也可以選擇 [**工具**  >  **選項**]，並展開 [**文字編輯器**]，然後選擇 [ **c/c + +**]，然後選擇 [**實驗**]。
+若要存取此屬性頁，請按下 **Ctrl** + **Q** 以啟動搜尋方塊，然後輸入 **實驗** 性。 鍵入前幾個字母之後，搜尋就會找到頁面。 您也可以選擇 [**工具**  >  **選項**]，並展開 [**文字編輯器**]，然後選擇 [ **c/c + +**]，然後選擇 [**實驗**]。
 
 這些功能可在 Visual Studio 安裝中使用。
 
@@ -43,7 +45,7 @@ ms.locfileid: "77278708"
 
 ## <a name="enable-faster-project-load"></a>啟用更快的專案載入
 
-在 Visual Studio 2017 15.3 版中，這項功能稱為**啟用專案快取**，並已移至 [VC++ 專案設定](vcpp-project-settings-projects-and-solutions-options-dialog-box.md)屬性頁。
+在 Visual Studio 2017 15.3 版中，這項功能稱為 **啟用專案快取**，並已移至 [VC++ 專案設定](vcpp-project-settings-projects-and-solutions-options-dialog-box.md)屬性頁。
 
 這個選項讓 Visual Studio 能夠快取專案資料，以便在您下次開啟專案時，載入那份快取的資料，而不必重新從專案檔計算資料。 使用快取資料可以大幅加速專案載入時間。
 
@@ -65,6 +67,6 @@ ms.locfileid: "77278708"
 
 ## <a name="see-also"></a>另請參閱
 
-- [設定語言特定編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)
+- [設定 Language-Specific 編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)
 - [Refactoring in C++ (VC Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
 ) (在 C++ 中重構 (VC 部落格))

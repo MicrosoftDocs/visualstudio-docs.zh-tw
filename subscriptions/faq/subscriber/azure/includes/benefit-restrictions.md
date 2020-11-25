@@ -8,10 +8,10 @@ ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q5_6
 ms.openlocfilehash: a0bb8bc6be00398118588a9b1113bcfed50e1a41
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
+ms.lasthandoff: 11/25/2020
 ms.locfileid: "81386287"
 ---
 ## <a name="are-there-any-geographic-or-service-restrictions-impacting-this-benefit"></a>是否有任何會影響此權益的地理或服務限制？

@@ -1,5 +1,7 @@
 ---
 title: 將匿名型別轉換為元組
+description: 瞭解如何使用 [快速動作與重構] 功能表，將匿名型別轉換為 Visual Studio 中的元組。
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f7e89c5b5a05900fe42af62ef87f70292e94e662
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 452ba826a2765ef624e6c3d04bb20915a26c51fb
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094270"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040858"
 ---
 # <a name="convert-anonymous-type-to-tuple"></a>將匿名型別轉換為元組
 
@@ -34,13 +36,13 @@ ms.locfileid: "79094270"
 ## <a name="how-to"></a>操作方式
 
 1. 將游標放在匿名型別中。
-2. 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
+2. 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
 
    ![將匿名型別轉換為元組](media/convert-anon-to-tuple.png)
 
 2. 按 **Enter** 鍵接受重構。
 
-   ![將匿名型別轉換為元組](media/convert-anon-to-tuple-complete.png)
+   ![將匿名型別轉換為已接受的元組](media/convert-anon-to-tuple-complete.png)
 
 ## <a name="see-also"></a>另請參閱
 

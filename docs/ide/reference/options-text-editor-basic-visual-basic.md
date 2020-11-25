@@ -1,5 +1,7 @@
 ---
 title: 選項、文字編輯器、基本 (VB)、進階
+description: 瞭解如何使用 [基本] 區段中的 [Advanced] 頁面，變更分析、匯入指示詞和醒目提示屬性的預設設定。
+ms.custom: SEO-VS-2020
 ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
@@ -18,15 +20,15 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 778cd1f9c126b176cafad8b33a147d284bea1b67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 530fffdf335232a76a54e66551487a89dc50b09a
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88214650"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040988"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>選項、文字編輯器、基本 (Visual Basic)、進階
-位於 [選項]**** ([工具]**** 功能表) 對話方塊上 [文字編輯器]**** 資料夾的 [基本]**** 資料夾中的 [VB 專用]**** 屬性頁面包含下列屬性：
+位於 [選項] ([工具] 功能表) 對話方塊上 [文字編輯器] 資料夾的 [基本] 資料夾中的 [VB 專用] 屬性頁面包含下列屬性：
 
 ## <a name="analysis"></a>分析
 
@@ -42,7 +44,7 @@ ms.locfileid: "88214650"
 
 - 使用指示詞群組來進行分隔
 
-   選取後，快顯功能表中的 [移除並排序 Using]**** 命令會透過在具有相同根命名空間的指示詞群組之間插入空白行來分隔 `using` 指示詞。
+   選取後，快顯功能表中的 [移除並排序 Using] 命令會透過在具有相同根命名空間的指示詞群組之間插入空白行來分隔 `using` 指示詞。
 
 - 為參考組件中的類型建議 Using
 - 為 NuGet 套件中的類型建議 Using
@@ -51,11 +53,11 @@ ms.locfileid: "88214650"
 
    ![在 Visual Studio 中安裝 NuGet 套件的快速動作](media/nuget-lightbulb.png)
 
-## <a name="highlighting"></a>醒目提示
+## <a name="highlighting"></a>反白顯示
 
  **啟用參考和關鍵字的反白顯示**
 
-文字編輯器可以反白顯示符號的所有執行個體或子句中的所有關鍵字，例如 `If..Then`、`While...End While` 或 `Try...Catch...Finally`。 您可以按下**ctrl**  +  **shift**  +  **鍵**或**ctrl**  +  **shift**  +  **向上**箭號，在反白顯示的參考或關鍵字之間流覽。
+文字編輯器可以反白顯示符號的所有執行個體或子句中的所有關鍵字，例如 `If..Then`、`While...End While` 或 `Try...Catch...Finally`。 您可以按下 **ctrl**  +  **shift**  +  **鍵** 或 **ctrl**  +  **shift**  +  **向上** 箭號，在反白顯示的參考或關鍵字之間流覽。
 
 ## <a name="outlining"></a>大綱
 
@@ -104,7 +106,7 @@ ms.locfileid: "88214650"
 
 **自動插入 End 建構**
 
-當您輸入（例如，程式宣告的第一行） `Sub Main` 並按下 **enter**時，文字編輯器會新增相符的 `End Sub` 行。 同樣地，如果新增 [For](/dotnet/visual-basic/language-reference/statements/for-next-statement) 迴圈，則文字編輯器會新增對稱的 `Next` 陳述式。 選取此選項後，程式碼編輯器會自動新增 End 建構。
+當您輸入（例如，程式宣告的第一行） `Sub Main` 並按下 **enter** 時，文字編輯器會新增相符的 `End Sub` 行。 同樣地，如果新增 [For](/dotnet/visual-basic/language-reference/statements/for-next-statement) 迴圈，則文字編輯器會新增對稱的 `Next` 陳述式。 選取此選項後，程式碼編輯器會自動新增 End 建構。
 
 **自動插入 Interface 及 MustOverride 成員**
 

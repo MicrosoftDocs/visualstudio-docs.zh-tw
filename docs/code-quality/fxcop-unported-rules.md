@@ -1,23 +1,23 @@
 ---
-title: Unported 規則
+title: 未移植的規則
 ms.date: 05/21/2019
 ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
-- fxcop analyzers, ported rules
+- .NET analyzers, ported rules
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 294f7f8fea9ff11068712ff653b6bd34137b4620
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 0a17e39839fa0e75842f4b7692cc012f6aa4b315
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89511077"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040351"
 ---
-# <a name="unported-rules"></a>Unported 規則
+# <a name="unported-rules"></a>未移植的規則
 
 ## <a name="overview"></a>概觀
 

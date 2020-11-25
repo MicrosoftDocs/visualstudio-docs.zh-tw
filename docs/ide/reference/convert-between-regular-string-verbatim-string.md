@@ -1,5 +1,6 @@
 ---
 title: 在一般和逐字字串常值之間轉換
+description: 瞭解如何使用 [快速動作] 和 [重構] 功能表，在一般字串和逐字字串常值之間進行轉換。
 ms.custom: SEO-VS-2020
 ms.date: 06/08/2020
 ms.topic: reference
@@ -10,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f411c0ac56adeb30370cbfc6f0f908ffd25bed05
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d50b979902e6eb5a606305b262f5009caef87467
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045910"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040455"
 ---
 # <a name="convert-between-regular-string-and-verbatim-string-literals-refactoring"></a>在一般字串和逐字字串常值重構之間轉換
 
@@ -29,11 +30,11 @@ ms.locfileid: "93045910"
 
 **原因：** 將逐字字串常值轉換為一般字串常值有助於節省空間。 將一般字串常值轉換為逐字字串常值，可以提供更清楚的說明。
 
-## <a name="how-to"></a>使用方法
+## <a name="how-to"></a>操作方式
 
 1. 將插入號放在一般字串或逐字字串常值：
 
-2. 按下 **Ctrl** + **。** 以觸發 [快速動作與重構]  功能表。
+2. 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
 
 3. 選取下列其中一個選項：
 
@@ -45,6 +46,6 @@ ms.locfileid: "93045910"
 
     ![轉換為逐字字串](media/convert-to-verbatim-string.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [重構](../refactoring-in-visual-studio.md)

@@ -1,5 +1,7 @@
 ---
 title: -Project (devenv.exe)
+description: 瞭解如何使用專案 devenv 命令列參數來識別指定之方案設定內的單一專案，以建立、清除、重建或部署專案。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4b57a5bd51ff20de8da87798aa398db04bc1c7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 90c1cdf37ddda7209b4f951e42ad07720e5cc40b
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567771"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040104"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
@@ -65,7 +67,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 - 請以雙引號括住包含空格的字串。
 
-- 組建的摘要資訊 (包括錯誤) 可顯示在 [命令]**** 視窗中，或使用 `/Out` 參數指定的任何記錄檔中。
+- 組建的摘要資訊 (包括錯誤) 可顯示在 [命令] 視窗中，或使用 `/Out` 參數指定的任何記錄檔中。
 
 ## <a name="example"></a>範例
 

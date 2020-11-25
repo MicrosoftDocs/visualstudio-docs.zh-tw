@@ -1,5 +1,7 @@
 ---
 title: 選項、文字編輯器、HTML (Web Form)、其他
+description: 瞭解如何使用 [HTML] 區段中的 [其他] 頁面，來設定 HTML 編輯器如何處理貼到頁面中的元素的喜好設定。
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa26144a7c0a2f7edad58ecfb26e3a7d402a994
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf5495f60e92a38c0c43a0751054d41dc4de6970
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770904"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040767"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>選項、文字編輯器、HTML (Web Form)、其他
 
-使用 [其他]**** 選項頁面設定 HTML 編輯器如何處理貼到頁面中之元素的喜好設定。 若要存取此頁面，請在功能表列上選擇 [**工具**  >  **選項**]，然後展開 [**文字編輯器**  >  **HTML (Web Form) **  >  **其他**]。
+使用 [其他] 選項頁面設定 HTML 編輯器如何處理貼到頁面中之元素的喜好設定。 若要存取此頁面，請在功能表列上選擇 [**工具**  >  **選項**]，然後展開 [**文字編輯器**  >  **HTML (Web Form)**  >  **其他**]。
 
 ## <a name="miscellaneous-html-options"></a>其他 HTML 選項
 

@@ -1,5 +1,7 @@
 ---
 title: -Run (devenv.exe)
+description: 瞭解如何使用執行 devenv 命令列參數來編譯和執行指定的專案或方案。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7468fbd6422248f2f15bf74e70cdf9c5bee849c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e523220ca3269b6af5404ce2d6ab653f29698599
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593625"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039901"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 
@@ -52,7 +54,7 @@ devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 
 - 請以雙引號括住包含空格的字串。
 
-- 摘要資訊 (包含錯誤) 可以顯示在 [命令]**** 視窗中，或使用 `/Out` 參數指定的任何記錄檔中。
+- 摘要資訊 (包含錯誤) 可以顯示在 [命令] 視窗中，或使用 `/Out` 參數指定的任何記錄檔中。
 
 ## <a name="example"></a>範例
 

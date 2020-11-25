@@ -1,5 +1,7 @@
 ---
 title: 進階、C#、文字編輯器、選項
+description: '瞭解如何使用 c # 區段中的 [Advanced] 頁面，修改 c # 的編輯器格式、程式碼重構和 XML 檔批註的設定。'
+ms.custom: SEO-VS-2020
 ms.date: 11/13/2020
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: acd04f80d5ade3a4afea418def69d4bbb6e20fa0
-ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
+ms.openlocfilehash: 6e8c235c62eeba394902698ecbfc412ed37b0979
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94626188"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039888"
 ---
 # <a name="options-text-editor-c-advanced"></a>進階、C#、文字編輯器、選項
 
-使用 [進階] 選項頁面來修改 C# 的編輯器格式、程式碼重構和 XML 文件註解設定。 若要存取此選項頁面，請選擇 [ **工具**  >  **選項** ]，然後選擇 [ **文字編輯器**  >  **c #**  >  **Advanced** ]。
+使用 [進階] 選項頁面來修改 C# 的編輯器格式、程式碼重構和 XML 文件註解設定。 若要存取此選項頁面，請選擇 [**工具**  >  **選項**]，然後選擇 [**文字編輯器**  >  **c #**  >  **Advanced**]。
 
 > [!NOTE]
 > 並非所有選項都會列在此處。

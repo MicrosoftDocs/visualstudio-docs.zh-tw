@@ -1,5 +1,7 @@
 ---
 title: 專案轉換器
+description: 用於舊版 Visual Studio 的 [轉換] 對話方塊目前已淘汰。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,16 +16,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5348bb82d54f2914a5b8ee26ada0f924f592aab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f095d05a873eb59b0f6453ddb796fc2a183705e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595731"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040806"
 ---
 # <a name="convert-dialog-box"></a>轉換對話方塊
 
-用於舊版 Visual Studio 的 [轉換]**** 對話方塊目前已淘汰。
+用於舊版 Visual Studio 的 [轉換] 對話方塊目前已淘汰。
 
 ## <a name="see-also"></a>另請參閱
 

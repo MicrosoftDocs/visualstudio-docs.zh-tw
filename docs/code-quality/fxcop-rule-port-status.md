@@ -1,35 +1,35 @@
 ---
 title: FxCop 規則埠狀態
 ms.date: 05/21/2019
-description: 瞭解已移植到 Visual Studio 中 FxCop 分析器的靜態程式碼分析規則。 查看移植更新上的移植規則和資源。
+description: 瞭解 Visual Studio 中已移植到 .NET 分析器的靜態程式碼分析規則。 查看移植更新上的移植規則和資源。
 ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
-- fxcop analyzers, ported rules
+- .NET analyzers, ported rules
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cedd96036a6d0725dbde5f0b11400a20360a20ec
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: dde5a3d8ccf5557905395ee03d108e995ecffe7e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348941"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039571"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則埠狀態
 
-如果您先前在 Visual Studio 中使用了靜態程式碼分析，您可能會想知道哪些規則在目前的實作為 [FxCop 分析器](install-fxcop-analyzers.md)中可用。 此頁面會列出已移植的規則。 請參閱 [Unported 規則](fxcop-unported-rules.md) ，以瞭解尚未移植的規則，以及是否有規劃將它們移植。
+如果您先前在 Visual Studio 中使用了靜態程式碼分析，您可能會想知道哪些規則在目前的執行中是以 [.net 分析器](install-net-analyzers.md)的形式提供。 此頁面會列出已移植的規則。 請參閱 [Unported 規則](fxcop-unported-rules.md) ，以瞭解尚未移植的規則，以及是否有規劃將它們移植。
 
 ## <a name="ported-rules"></a>移植的規則
 
-Roslyn-分析器存放庫中自動產生的 [檔頁面](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) ，具有已移植至 FxCop 分析器的最新規則清單。 該頁面也有其他資訊，例如規則是否預設為啟用，以及是否有相關聯的 *程式碼修正* 。  ([程式碼修正](../ide/quick-actions.md) 是在 Visual Studio 的燈泡圖示功能表中，可用的單鍵修正。 ) 
+Roslyn-分析器存放庫中自動產生的 [檔頁面](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Microsoft.CodeAnalysis.NetAnalyzers.md) ，具有已移植至 roslyn 分析器的最新規則清單。 該頁面也有其他資訊，例如規則是否預設為啟用，以及是否有相關聯的 *程式碼修正*。  ([程式碼修正](../ide/quick-actions.md) 是在 Visual Studio 的燈泡圖示功能表中，可用的單鍵修正。 ) 
 
-從這個頁面的日期開始，已移植至 [fxcop 分析器](install-fxcop-analyzers.md) 的 fxcop 規則清單包括：
+從這個頁面的日期開始，已移植到 [.net 分析器](install-net-analyzers.md) 的 FxCop 規則清單包括：
 
-規則識別碼 | Title
+規則識別碼 | 標題
 --------|---------
 [CA1000](/dotnet/fundamentals/code-analysis/quality-rules/ca1000) | 不要在泛型類型上宣告靜態成員
 [CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001) | 具有可處置欄位的類型應該為可處置
@@ -64,7 +64,7 @@ Roslyn-分析器存放庫中自動產生的 [檔頁面](https://github.com/dotne
 [CA1050](/dotnet/fundamentals/code-analysis/quality-rules/ca1050) | 類型必須在命名空間中宣告
 [CA1051](/dotnet/fundamentals/code-analysis/quality-rules/ca1051) | 不要宣告可見的執行個體欄位
 [CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) | 靜態預留位置類型應該是靜態或 NotInheritable
-[CA1053](/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | 靜態預留位置類型不應該有 (CA1053 為 FxCop 分析器 [CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) 一部分的函式) 
+[CA1053](/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | 靜態預留位置類型不應該有 (CA1053 為 .NET 分析器 [CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) 一部分的函式) 
 [CA1054](/dotnet/fundamentals/code-analysis/quality-rules/ca1054) | Uri 參數不應為字串
 [CA1055](/dotnet/fundamentals/code-analysis/quality-rules/ca1055) | Uri 傳回值不應該為字串
 [CA1056](/dotnet/fundamentals/code-analysis/quality-rules/ca1056) | Uri 屬性不應為字串
@@ -202,6 +202,6 @@ CA5377 | 使用容器層級存取原則
 CA5379 | 不要使用弱式金鑰衍生函數演算法
 CA9999 | 分析器版本不符
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [CodeAnalysis. 將 microsoft.codeanalysis.fxcopanalyzers 規則](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)
+- [.NET 分析器規則](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Microsoft.CodeAnalysis.NetAnalyzers.md)

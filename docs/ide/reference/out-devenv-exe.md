@@ -1,5 +1,7 @@
 ---
 title: -Out (devenv.exe)
+description: 瞭解如何使用 Out devenv 命令列參數來指定要儲存的檔案，並在執行、執行和結束、升級、建立、重建、清理或部署解決方案時顯示錯誤。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06409d3b7e3d218fcf2b81dce7ea58d3202b7e21
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568007"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040052"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 
@@ -45,7 +47,7 @@ devenv /Out FileName
 
 如果指定不存在的檔案名稱，即會自動建立該檔案。 否則，該檔案已經存在，並將結果附加至檔案的現有內容。
 
-命令列建置錯誤會顯示於 [命令]**** 視窗以及 [輸出]**** 視窗的 [方案產生器] 檢視中。 此參數適用於檢視自動組建的結果。
+命令列建置錯誤會顯示於 [命令] 視窗以及 [輸出] 視窗的 [方案產生器] 檢視中。 此參數適用於檢視自動組建的結果。
 
 ## <a name="example"></a>範例
 

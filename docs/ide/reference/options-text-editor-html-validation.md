@@ -1,5 +1,7 @@
 ---
 title: 選項、文字編輯器、HTML (Web Form)、驗證
+description: 瞭解如何使用 [HTML] 區段中的 [驗證] 頁面，設定 HTML 編輯器如何檢查檔中 HTML 標籤語法的喜好設定。
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ede4600cb1fa1df118b4635a193d8bff348d5119
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b65edc2b6c48bc76075e909d0f9bd1341a1b6dd8
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568278"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040559"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>選項、文字編輯器、HTML (Web Form)、驗證
 
-使用 [驗證]**** 選項頁面來設定 HTML 編輯器如何檢查文件中 HTML 標記語法的喜好設定。 若要存取此頁面，請在功能表列上選擇 [**工具**  >  **選項**]，然後展開 [**文字編輯器**  >  **HTML (Web Form) **  >  **驗證**]。
+使用 [驗證] 選項頁面來設定 HTML 編輯器如何檢查文件中 HTML 標記語法的喜好設定。 若要存取此頁面，請在功能表列上選擇 [**工具**  >  **選項**]，然後展開 [**文字編輯器**  >  **HTML (Web Form)**  >  **驗證**]。
 
 ## <a name="validation"></a>驗證
 

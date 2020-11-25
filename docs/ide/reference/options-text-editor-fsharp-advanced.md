@@ -1,5 +1,7 @@
 ---
 title: 選項、文字編輯器、F#、進階
+description: '瞭解如何使用 F # 區段中的 [Advanced] 頁面，修改 F # 的區塊結構輔助線和大綱設定。'
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,16 +11,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 64626a0ebd8850098bbbc056d523b6a3f034bf4e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9f4550ccf83f5697bca46d4a4049fe7df9b1c20
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770950"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039636"
 ---
 # <a name="options-text-editor-f-advanced"></a>選項、文字編輯器、F#、進階
 
-使用 [進階]**** 選項頁面修改 F# 的一些文字編輯器設定。 若要存取此選項頁面，請選擇 [**工具**  >  **選項**]，然後選擇 [**文字編輯器**]  >  **F #**  >  **Advanced**。
+使用 [進階] 選項頁面修改 F# 的一些文字編輯器設定。 若要存取此選項頁面，請選擇 [**工具**  >  **選項**]，然後選擇 [**文字編輯器**]  >  **F #**  >  **Advanced**。
 
 ## <a name="block-structure-guides"></a>區塊結構輔助線
 

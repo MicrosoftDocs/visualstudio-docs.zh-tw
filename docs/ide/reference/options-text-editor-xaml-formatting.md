@@ -1,5 +1,7 @@
 ---
 title: 格式、XAML、文字編輯器、選項
+description: 瞭解如何在程式碼編輯器中使用 XAML 進行程式設計時，使用 [格式化選項] 頁面及其子頁面來設定格式化程式碼的選項。
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -29,16 +31,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d340a3b9468ea23c4cab23aabe19a7c1390955a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddeb503153eacdcff993405e29bb8b3bdbe0c722
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568239"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040520"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>格式、XAML、文字編輯器、選項
 
-使用 [格式化]**** 屬性頁來指定如何格式化您 XAML 文件中的項目和屬性。 若要開啟 [選項]**** 對話方塊，請按一下 [工具]**** 功能表，然後按一下 [選項]****。 若要存取 [格式化]**** 屬性頁，請展開 [文字編輯器]**** > [XAML]**** > [格式]**** 節點。
+使用 [格式化] 屬性頁來指定如何格式化您 XAML 文件中的項目和屬性。 若要開啟 [選項] 對話方塊，請按一下 [工具] 功能表，然後按一下 [選項]。 若要存取 [格式化] 屬性頁，請展開 [文字編輯器] > [XAML] > [格式] 節點。
 
 ## <a name="auto-formatting-events"></a>自動格式化事件
 
@@ -88,7 +90,7 @@ ms.locfileid: "75568239"
 
 **將超過指定長度的標記換行**
 
-指定是否在 [長度]**** 所指定的行長度處換行。
+指定是否在 [長度] 所指定的行長度處換行。
 
 **長度**
 

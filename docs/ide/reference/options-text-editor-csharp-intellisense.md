@@ -1,5 +1,7 @@
 ---
 title: IntelliSense、C#、文字編輯器、選項
+description: '瞭解如何使用 c # 區段中的 [IntelliSense] 頁面，修改影響 c # 之 IntelliSense 行為的設定。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,24 +18,24 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 87a167a75f3b06522da77d562b0137df89757975
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e727fad6d3cb15f70cf630b1077170d16d28b7f
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596212"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039740"
 ---
 # <a name="options-text-editor-c-intellisense"></a>IntelliSense、C#、文字編輯器、選項
 
-使用 [IntelliSense]**** 選項頁修改影響 C# 之 IntelliSense 行為的設定。 若要存取此選項頁面，請選擇 [**工具**  >  **選項**]，然後選擇 [**文字編輯器**]  >  **c #**  >  **IntelliSense**。
+使用 [IntelliSense] 選項頁修改影響 C# 之 IntelliSense 行為的設定。 若要存取此選項頁面，請選擇 [**工具**  >  **選項**]，然後選擇 [**文字編輯器**]  >  **c #**  >  **IntelliSense**。
 
-[IntelliSense]**** 頁面包含下列選項：
+[IntelliSense] 頁面包含下列選項：
 
 ## <a name="completion-lists"></a>完成清單
 
 - 輸入一個字元後顯示完成清單*
 
-   選取這個選項時，IntelliSense 會在您開始輸入時自動顯示完成清單。 未選取這個選項時，仍然可以從 [IntelliSense]**** 功能表或按 **CTRL**+**空格鍵**來使用 IntelliSense 完成。
+   選取這個選項時，IntelliSense 會在您開始輸入時自動顯示完成清單。 未選取這個選項時，仍然可以從 [IntelliSense] 功能表或按 **CTRL**+**空格鍵** 來使用 IntelliSense 完成。
 
 - 在刪除字元後顯示完成清單
 
@@ -53,7 +55,7 @@ ms.locfileid: "75596212"
 
 - 在識別碼後鍵入 ?-Tab 時包含程式碼片段
 
-   選取此選項時，IntelliSense 會將 c # 程式碼片段的別名新增至完成清單（若有的話） **？** +識別碼之後按下**Tab 鍵**
+   選取此選項時，IntelliSense 會將 c # 程式碼片段的別名新增至完成清單（若有的話） **？** +識別碼之後按下 **Tab 鍵**
 
 ## <a name="enter-key-behavior"></a>ENTER 鍵行為
 
@@ -77,7 +79,7 @@ ms.locfileid: "75596212"
 
 - 一律在按下 ENTER 鍵時加入新行
 
-   指定如果您對完成清單中的項目輸入「任何字元」**，然後按 **ENTER**，則會自動新增新的一行，並將游標移到這個新行。
+   指定如果您對完成清單中的項目輸入「任何字元」，然後按 **ENTER**，則會自動新增新的一行，並將游標移到這個新行。
 
 ## <a name="show-name-suggestions"></a>顯示名稱建議
 

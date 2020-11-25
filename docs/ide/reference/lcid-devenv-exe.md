@@ -1,5 +1,7 @@
 ---
 title: -LCID (devenv.exe)
+description: 瞭解如何使用 LCID devenv 命令列參數來設定用於 IDE 內文字、貨幣和其他值的預設語言。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eda3a4d9242655af1b018664273ceb693c7e775c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77557929"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96043981"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 

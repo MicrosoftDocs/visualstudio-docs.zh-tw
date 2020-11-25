@@ -1,5 +1,7 @@
 ---
 title: 選項、Windows Form 設計工具、一般
+description: 瞭解如何使用 [一般] 頁面，設定 Visual Studio 中的 Windows Form 設計工具格線和其他功能的喜好設定。
+ms.custom: SEO-VS-2020
 ms.date: 08/09/2019
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2a72b27dc2277501d0e0957c8b89b551f4d6852d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7172ca12344ab046c9bf65e7df280a9fa6dd0aa
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568057"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040078"
 ---
 # <a name="options-dialog-box-windows-forms-designer"></a>選項對話方塊： Windows Form 設計工具
 
-[Windows Form 設計工具] 選項頁面可讓您在 Visual Studio 中設定 Windows Form 設計工具的格線和其他功能的喜好設定。 從 [工具]**** 功能表，開啟 [選項]**** 對話方塊。
+[Windows Form 設計工具] 選項頁面可讓您在 Visual Studio 中設定 Windows Form 設計工具的格線和其他功能的喜好設定。 從 [工具] 功能表，開啟 [選項] 對話方塊。
 
 ## <a name="code-generation-settings"></a>程式碼產生設定
 

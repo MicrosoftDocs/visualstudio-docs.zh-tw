@@ -4,18 +4,18 @@ ms.date: 05/21/2019
 ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
-- fxcop analyzers, ported rules, unported rules, rules that may be ported
+- .NET analyzers, ported rules, unported rules, rules that may be ported
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c8d06902c0f97cb1ecee727a536a0095ccaf5a3d
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 8510027e60bfd7383b07306d0d11e81fd11bfbfd
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658564"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039546"
 ---
 # <a name="unported-rules-that-may-be-ported"></a>可能可移植的未移植規則
 
