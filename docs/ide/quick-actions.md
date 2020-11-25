@@ -1,5 +1,7 @@
 ---
 title: 快速動作、燈泡及螺絲起子
+description: 瞭解如何使用單一快速動作來重構、產生或以其他方式修改您的程式碼。
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfafcca1cddcaa216b8a9e12dd7d961949afa2bb
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 967e73748b364e7e41b1773a7fab33831152ab18
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036518"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870777"
 ---
 # <a name="quick-actions"></a>快速動作
 
@@ -44,13 +46,13 @@ ms.locfileid: "90036518"
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[重構 (Visual Studio for Mac)](/visualstudio/mac/refactoring)。
 
-您可以使用燈泡燈泡 ![ 圖示 ](media/light-bulb-icon.png) 或螺絲螺絲 ![ 起子圖示圖示或 ](media/screwdriver-icon.png) 按下**Ctrl** + **.** 來套用快速動作。 當游標位於可使用動作的程式碼行上時。 如果有紅色波浪線指出錯誤，而且 Visual Studio 有適用於該錯誤的修正，您將會看到錯誤燈泡 ![錯誤燈泡圖示](media/error-light-bulb-icon.png)。
+您可以使用燈泡燈泡 ![ 圖示 ](media/light-bulb-icon.png) 或螺絲螺絲 ![ 起子圖示圖示或 ](media/screwdriver-icon.png) 按下 **Ctrl** + **.** 來套用快速動作。 當游標位於可使用動作的程式碼行上時。 如果有紅色波浪線指出錯誤，而且 Visual Studio 有適用於該錯誤的修正，您將會看到錯誤燈泡 ![錯誤燈泡圖示](media/error-light-bulb-icon.png)。
 
 例如，協力廠商可以針對任何語言，在 SDK 當中提供自訂診斷和建議，而 Visual Studio 燈泡會依據那些規則來顯示。
 
 ## <a name="icons"></a>圖示
 
-當有快速動作可用時，顯示的圖示會指出可用的修正或重構類型。 「螺絲起子」** ![螺絲起子圖示](media/screwdriver-icon.png)圖示表示有可變更程式碼的動作，但不一定要使用。 「黃色燈泡」** ![燈泡圖示](media/light-bulb-icon.png)圖示表示有「應」** 執行的動作，以改善程式碼。 「錯誤燈泡」** ![錯誤燈泡圖示](media/error-light-bulb-icon.png)圖示表示有動作可修正您程式碼中的錯誤。
+當有快速動作可用時，顯示的圖示會指出可用的修正或重構類型。 「螺絲起子」 ![螺絲起子圖示](media/screwdriver-icon.png)圖示表示有可變更程式碼的動作，但不一定要使用。 「黃色燈泡」 ![燈泡圖示](media/light-bulb-icon.png)圖示表示有「應」執行的動作，以改善程式碼。 「錯誤燈泡」 ![錯誤燈泡圖示](media/error-light-bulb-icon.png)圖示表示有動作可修正您程式碼中的錯誤。
 
 ## <a name="to-see-a-light-bulb-or-screwdriver"></a>顯示燈泡或螺絲起子
 
@@ -62,9 +64,9 @@ ms.locfileid: "90036518"
 
 - 當您將插入號 (游標) 移至適用的程式碼行時的編輯器左邊界中
 
-您也可以按**Ctrl** + **。** 即可看到可用快速動作與重構的清單。
+您也可以按 **Ctrl** + **。** 即可看到可用快速動作與重構的清單。
 
-若要查看可能的修正，請選取燈泡旁的向下箭號或 [顯示可能的修正]**** 連結。 隨即顯示可用的 [快速動作] 清單。
+若要查看可能的修正，請選取燈泡旁的向下箭號或 [顯示可能的修正] 連結。 隨即顯示可用的 [快速動作] 清單。
 
 ![放大的燈泡](../ide/media/vs2015_lightbulb_hover_expanded.png)
 

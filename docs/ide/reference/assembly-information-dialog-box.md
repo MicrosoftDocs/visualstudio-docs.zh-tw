@@ -1,5 +1,7 @@
 ---
 title: 組件資訊對話方塊
+description: 瞭解 [元件資訊] 對話方塊，以及如何使用它來指定 .NET Framework 全域程式集屬性的值。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,18 +14,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1813c4e399a125aca0185436b4a7216b72b5842
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ee8738d06c0f02adb6f5e6352d2006e0133c66ef
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809003"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871336"
 ---
 # <a name="assembly-information-dialog-box"></a>組件資訊對話方塊
 
-您可以使用 [組件資訊] 對話方塊來指定 .NET Framework 全域組件屬性的值，該值會儲存在隨專案自動建立的 AssemblyInfo 檔案中。 在 [方案總管] 中，AssemblyInfo 檔案位於 Visual Basic 專案的 [我的專案]**** 節點中 (按一下 [顯示所有檔案]**** 以檢視它)。 針對 C# 專案，它位於 [屬性]**** 底下。 如需詳細資訊，請參閱[屬性 (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index)。
+您可以使用 [組件資訊] 對話方塊來指定 .NET Framework 全域組件屬性的值，該值會儲存在隨專案自動建立的 AssemblyInfo 檔案中。 在 [方案總管] 中，AssemblyInfo 檔案位於 Visual Basic 專案的 [我的專案] 節點中 (按一下 [顯示所有檔案] 以檢視它)。 針對 C# 專案，它位於 [屬性] 底下。 如需詳細資訊，請參閱[屬性 (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index)。
 
-若要存取此對話方塊，請在 [方案總管]**** 中選取專案節點，然後在 [專案]**** 功能表上，選取 [屬性]****。在 [應用程式]**** 頁面上，選取 [組件資訊]**** 按鈕。
+若要存取此對話方塊，請在 [方案總管] 中選取專案節點，然後在 [專案] 功能表上，選取 [屬性]。在 [應用程式] 頁面上，選取 [組件資訊] 按鈕。
 
 ## <a name="uielement-list"></a>UIElement 清單
 
@@ -36,7 +38,7 @@ ms.locfileid: "90809003"
 **公司**\
 指定組件資訊清單的公司名稱。 對應至 <xref:System.Reflection.AssemblyCompanyAttribute>。
 
-您可以在登錄中設定或變更 [公司] 的預設值。 視您的 Windows 版本而定，請在**Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion** 或 **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion** 索引鍵下尋找 **RegisteredOrganization** 值。
+您可以在登錄中設定或變更 [公司] 的預設值。 視您的 Windows 版本而定，請在 **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion** 或 **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion** 索引鍵下尋找 **RegisteredOrganization** 值。
 
 **產品**\
 指定組件資訊清單的產品名稱。 對應至 <xref:System.Reflection.AssemblyProductAttribute>。
@@ -57,7 +59,7 @@ ms.locfileid: "90809003"
 識別組件的唯一 GUID。 當您建立專案時，Visual Studio 會產生組件的 GUID。 對應至 <xref:System.Guid>。
 
 **中性語言**\
-指定組件所支援的文化特性。 對應至 <xref:System.Resources.NeutralResourcesLanguageAttribute>。 預設值為 [ ** 無] () **。
+指定組件所支援的文化特性。 對應至 <xref:System.Resources.NeutralResourcesLanguageAttribute>。 預設值為 [ **無] ()**。
 
 **使元件變成 COM 可見**\
 指定組件中的類型是否可供 COM 使用。 對應至 <xref:System.Runtime.InteropServices.ComVisibleAttribute>。

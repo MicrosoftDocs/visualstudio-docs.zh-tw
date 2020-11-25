@@ -1,5 +1,7 @@
 ---
 title: 管理專案中的參考
+description: 瞭解如何在專案中管理外部元件和已聯機服務的參考。
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
@@ -21,18 +23,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55b0d3487eb18db33805b418882f157d55b1253
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdf737d26ec14c2a108125425a3b66cdf4a0e519
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183531"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870946"
 ---
 # <a name="manage-references-in-a-project"></a>管理專案中的參考
 
 在您針對外部元件或已連線服務撰寫程式碼之前，您的專案首先必須包含所需的參考。 參考其實是在專案檔中的項目，包含 Visual Studio 找出該元件或該服務所需的資訊。
 
-若要新增參考，請以滑鼠右鍵按一下方案總管**** 中的 [參考]**** 或 [相依性]**** 節點，然後選擇 [新增參考]****。 您也可以用滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **參考**]。 如需詳細資訊，請參閱 [如何：加入或移除參考](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)。
+若要新增參考，請以滑鼠右鍵按一下方案總管中的 [參考] 或 [相依性] 節點，然後選擇 [新增參考]。 您也可以用滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **參考**]。 如需詳細資訊，請參閱 [如何：加入或移除參考](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)。
 
 ![在 Visual C&#43;&#43; 中新增參考](../ide/media/vs2015_cpp_add_reference.png)
 
@@ -69,7 +71,7 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 應用程式�
 1. 移至擁有不受支援之延伸模組 SDK 的廠商網站，並安裝相依性與您專案的目標平台版本相容的延伸模組 SDK 版本。
 
     > [!NOTE]
-    > 找出延伸模組 SDK 是否有其他延伸模組 SDK 相依性的一種方法，是在**參考管理員**中尋找。 重新啟動 Visual Studio、建立新的 C# UWP 應用程式專案，然後以滑鼠右鍵按一下專案並選擇 [新增參考]****。 依序移至 [Windows]**** 索引標籤和 [延伸模組]**** 子索引標籤，然選取延伸模組 SDK。 在**參考管理員**的右窗格中尋找。 如果有相依性，則會在那裡列出。
+    > 找出延伸模組 SDK 是否有其他延伸模組 SDK 相依性的一種方法，是在 **參考管理員** 中尋找。 重新啟動 Visual Studio、建立新的 C# UWP 應用程式專案，然後以滑鼠右鍵按一下專案並選擇 [新增參考]。 依序移至 [Windows] 索引標籤和 [延伸模組] 子索引標籤，然選取延伸模組 SDK。 在 **參考管理員** 的右窗格中尋找。 如果有相依性，則會在那裡列出。
 
     > [!IMPORTANT]
     > 如果您的專案是以 Windows 10 為目標，且在先前步驟中安裝的延伸模組 SDK 相依於 Microsoft Visual C++ Runtime Package，則與 Windows 10 相容的 Microsoft Visual C++ Runtime Package 版本為 v14.0，並隨著 Visual Studio 一起安裝。
@@ -78,20 +80,20 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 應用程式�
 
 1. 重新啟動 Visual Studio，然後開啟您的應用程式。
 
-1. 以滑鼠右鍵按一下導致錯誤之專案中的 [參考]**** 或 [相依性]**** 節點，然後選擇 [新增參考]****。
+1. 以滑鼠右鍵按一下導致錯誤之專案中的 [參考] 或 [相依性] 節點，然後選擇 [新增參考]。
 
-1. 依序按一下 [Windows]**** 索引標籤和 [延伸模組]**** 子索引標籤，然後針對舊延伸模組 SDK 取消核取方塊，並核取新延伸模組 SDK 的核取方塊。 按一下 [確定]  。
+1. 依序按一下 [Windows] 索引標籤和 [延伸模組] 子索引標籤，然後針對舊延伸模組 SDK 取消核取方塊，並核取新延伸模組 SDK 的核取方塊。 按一下 [確定]。
 
 ## <a name="add-a-reference-at-design-time"></a>在設計階段新增參考
 
 當您在專案中參考組件時，Visual Studio 會搜尋下列位置中的組件：
 
-- 目前專案目錄。 (您可以使用 [瀏覽] **** 索引標籤尋找這些組件)。
+- 目前專案目錄。 (您可以使用 [瀏覽]  索引標籤尋找這些組件)。
 
-- 同一方案中的其他專案目錄。 (您可以使用 [專案] **** 索引標籤尋找這些組件。)
+- 同一方案中的其他專案目錄。 (您可以使用 [專案]  索引標籤尋找這些組件。)
 
 > [!NOTE]
-> - 所有專案都包含 **mscorlib**的隱含參考。
+> - 所有專案都包含 **mscorlib** 的隱含參考。
 > - 所有專案都包含 `System.Core` 的隱含參考，即使 `System.Core` 已從參考清單中移除也一樣。
 > - Visual Basic 專案包含 <xref:Microsoft.VisualBasic>的隱含參考。
 
@@ -111,7 +113,7 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 應用程式�
 
 ## <a name="project-to-project-references"></a>專案對專案參考
 
-專案對專案參考是包含組件的專案參考；您可以使用 [參考管理員] 對話方塊的 [專案]**** 索引標籤來新增專案參考。 當給定專案路徑時，Visual Studio 即可找出組件。
+專案對專案參考是包含組件的專案參考；您可以使用 [參考管理員] 對話方塊的 [專案] 索引標籤來新增專案參考。 當給定專案路徑時，Visual Studio 即可找出組件。
 
 當您有會產生組件的專案時，您應該參考該專案，而不要使用檔案參考 (請參閱下文)。 專案對專案參考的優點是它會在組建系統中建立專案之間的相依性。 如果自上次建置的參考專案已變更，則將會建立相依專案。 檔案參考不會建立組建相依性，因此可以建置參考專案而不需建置相依專案，且參考可能會遭到淘汰。  (亦即，專案可以參考先前建立的專案版本。 ) 這可能會導致 *bin* 目錄中需要有數個版本的單一 DLL，但這是不可能的。 當發生此衝突時，您會看到一則訊息，例如「警告: 無法將專案 'project' 中的相依性 'file' 複製至執行目錄，因為它會覆寫參考 'file'」。 如需詳細資訊，請參閱[針對中斷參考進行疑難排解](../ide/troubleshooting-broken-references.md)以及[如何：建立和移除專案相依性](../ide/how-to-create-and-remove-project-dependencies.md)。
 
@@ -120,11 +122,11 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 應用程式�
 
 ## <a name="shared-project-references"></a>共用的專案參考
 
-與大多數其他專案類型不同，「共用的專案」** 沒有任何二進位輸出。 取而代之的是，程式碼會編譯至參考它的每個專案中。 [共用的專案](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows)可讓您撰寫由一些不同應用程式專案所參考的通用程式碼。 此程式碼會編譯成每個參考專案的一部分，並且可以包含編譯器指示詞，以協助將平台專用功能併入到共用程式碼基底中。 在 [參考管理員] 對話方塊的 [共用的專案]**** 索引標籤上，新增對共用專案的參考。
+與大多數其他專案類型不同，「共用的專案」沒有任何二進位輸出。 取而代之的是，程式碼會編譯至參考它的每個專案中。 [共用的專案](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows)可讓您撰寫由一些不同應用程式專案所參考的通用程式碼。 此程式碼會編譯成每個參考專案的一部分，並且可以包含編譯器指示詞，以協助將平台專用功能併入到共用程式碼基底中。 在 [參考管理員] 對話方塊的 [共用的專案] 索引標籤上，新增對共用專案的參考。
 
 ## <a name="file-references"></a>檔案參考
 
-檔案參考是 Visual Studio 專案內容外部組件的直接參考。 您可以使用 [參考管理員] 對話方塊的 [瀏覽]**** 索引標籤來建立它們。 當您只有組件或元件時，請使用檔案參考，不要使用會建立檔案參考作為輸出的專案。
+檔案參考是 Visual Studio 專案內容外部組件的直接參考。 您可以使用 [參考管理員] 對話方塊的 [瀏覽] 索引標籤來建立它們。 當您只有組件或元件時，請使用檔案參考，不要使用會建立檔案參考作為輸出的專案。
 
 ## <a name="see-also"></a>另請參閱
 

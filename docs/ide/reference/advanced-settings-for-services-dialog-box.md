@@ -1,5 +1,7 @@
 ---
 title: 服務對話方塊的進階設定
+description: 瞭解如何使用服務功能的 [Advanced Settings] 來設定用戶端應用程式服務的 [advanced settings]。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,19 +14,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 967e99102f3b88e82a5466e7ce8d2cac2412d286
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59ad28dd6890effbac00282a0e9bc388b4191139
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585674"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871310"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>服務對話方塊的進階設定
-用戶端應用程式服務簡化了對 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 登入、角色以及 Windows Forms 和 Windows Presentation Foundation (WPF) 應用程式的設定檔服務的存取。 您可以使用 [專案設計工具]**** 的 [服務]**** 頁面來設定用戶端應用程式服務。 如需 [服務]**** 頁面的詳細資訊，請參閱[專案設計工具、服務頁](../../ide/reference/services-page-project-designer.md)。
+用戶端應用程式服務簡化了對 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 登入、角色以及 Windows Forms 和 Windows Presentation Foundation (WPF) 應用程式的設定檔服務的存取。 您可以使用 [專案設計工具] 的 [服務] 頁面來設定用戶端應用程式服務。 如需 [服務] 頁面的詳細資訊，請參閱[專案設計工具、服務頁](../../ide/reference/services-page-project-designer.md)。
 
-在 [專案設計工具]**** 中，使用 [服務]**** 頁面的 [服務的進階設定]**** 對話方塊，即可設定用戶端應用程式服務的進階設定。 藉由使用這些設定，您可以覆寫一些預設應用程式服務行為，以啟用較少見的案例。 如需詳細資訊，請參閱[用戶端應用程式服務](/dotnet/framework/common-client-technologies/client-application-services)。
+在 [專案設計工具] 中，使用 [服務] 頁面的 [服務的進階設定] 對話方塊，即可設定用戶端應用程式服務的進階設定。 藉由使用這些設定，您可以覆寫一些預設應用程式服務行為，以啟用較少見的案例。 如需詳細資訊，請參閱[用戶端應用程式服務](/dotnet/framework/common-client-technologies/client-application-services)。
 
-若要存取 [服務的進階設定]**** 對話方塊，請選取方案總管**** 中的專案節點，然後按一下 [專案]**** 功能表上的 [屬性]****。 當 [專案設計工具]**** 出現時，請按一下 [服務]**** 索引標籤，然後按一下 [進階]**** 按鈕。 在您啟用用戶端應用程式服務之前，此按鈕會維持停用狀態。
+若要存取 [服務的進階設定] 對話方塊，請選取方案總管中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 當 [專案設計工具] 出現時，請按一下 [服務] 索引標籤，然後按一下 [進階] 按鈕。 在您啟用用戶端應用程式服務之前，此按鈕會維持停用狀態。
 
 ## <a name="task-list"></a>工作清單
 

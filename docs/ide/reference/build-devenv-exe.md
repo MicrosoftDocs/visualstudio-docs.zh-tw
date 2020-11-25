@@ -1,5 +1,7 @@
 ---
 title: -Build (devenv.exe)
+description: 瞭解組建 devenv 命令列參數，以及如何使用它來建立具有指定之方案設定檔的方案或專案。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1766fe22573554b41ebfaa38fbd9e8d6c90c5790
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b23a15984c4ded6ca77b1660e14c53be9fd42e3
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595757"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871427"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -55,7 +57,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 ## <a name="remarks"></a>備註
 
-- `/Build` 參數會執行與整合式開發環境內之 [建置方案]**** 功能表命令相同的函式。
+- `/Build` 參數會執行與整合式開發環境內之 [建置方案] 功能表命令相同的函式。
 
 - 請以雙引號括住包含空格的字串。
 
@@ -63,7 +65,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 - `/Build` 參數只會建置自上次建置後已變更的專案。 若要建置方案中所有的專案，請改為使用 [/rebuild](../../ide/reference/rebuild-devenv-exe.md)。
 
-- 如果您收到錯誤訊息，指出**專案組態無效**，請確定您已指定方案平台或專案平台 (例如 `Debug|Win32`)。
+- 如果您收到錯誤訊息，指出 **專案組態無效**，請確定您已指定方案平台或專案平台 (例如 `Debug|Win32`)。
 
 ## <a name="example"></a>範例
 

@@ -1,5 +1,7 @@
 ---
 title: 選擇工具箱項目，WPF 元件
+description: 瞭解如何使用 [WPF 元件] 索引標籤，顯示可在本機電腦上選取的 Windows Presentation Foundation 控制項。
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
 f1_keywords:
@@ -12,30 +14,30 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28576fab1ed4b39810b6f4cc32fb2955a7a44039
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 7b9727d335607f15101222e40be193de2315b7dc
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099345"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871323"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>選擇工具箱項目、WPF 元件
 
-[選擇工具箱項目]**** 對話方塊的這個索引標籤會顯示您的本機電腦上可用的 Windows Presentation Foundation (WPF) 控制項清單。 若要顯示這份清單，請從 [**工具**] 功能表選取 **[選擇工具箱專案**]，以顯示 [**選擇工具箱專案**] 對話方塊，然後選取其 [ **WPF 元件**] 索引標籤。若要排序列出的元件，請選取任何資料行標題。
+[選擇工具箱項目] 對話方塊的這個索引標籤會顯示您的本機電腦上可用的 Windows Presentation Foundation (WPF) 控制項清單。 若要顯示這份清單，請從 [**工具**] 功能表選取 **[選擇工具箱專案**]，以顯示 [**選擇工具箱專案**] 對話方塊，然後選取其 [ **WPF 元件**] 索引標籤。若要排序列出的元件，請選取任何資料行標題。
 
-- 如果選取了某個元件旁的核取方塊，[工具箱]**** 中會顯示該元件的圖示。
+- 如果選取了某個元件旁的核取方塊，[工具箱] 中會顯示該元件的圖示。
 
     > [!TIP]
-    > 若要將 WPF 控制項新增至開啟供編輯的專案文件，請將其**工具箱**圖示拖曳至 [設計檢視] 介面上。 該元件的預設標記和程式碼已插入您的專案，您可以隨時進行修改。 如需詳細資訊，請參閱[工具箱](../../ide/reference/toolbox.md)。
+    > 若要將 WPF 控制項新增至開啟供編輯的專案文件，請將其 **工具箱** 圖示拖曳至 [設計檢視] 介面上。 該元件的預設標記和程式碼已插入您的專案，您可以隨時進行修改。 如需詳細資訊，請參閱[工具箱](../../ide/reference/toolbox.md)。
 
-- 如果清除了某個元件旁的核取方塊，則會從 [工具箱]**** 移除對應的圖示。
+- 如果清除了某個元件旁的核取方塊，則會從 [工具箱] 移除對應的圖示。
 
     > [!NOTE]
-    > 安裝在您電腦上的 .NET 元件會保持可供使用，無論其圖示是否顯示在 [工具箱]**** 中。
+    > 安裝在您電腦上的 .NET 元件會保持可供使用，無論其圖示是否顯示在 [工具箱] 中。
 
-[WPF 元件]**** 索引標籤中的欄位包含下列資訊：
+[WPF 元件] 索引標籤中的欄位包含下列資訊：
 
-**名稱**
+**Name**
 
 列出您電腦登錄中項目之 WPF 控制項的名稱。
 
@@ -53,7 +55,7 @@ ms.locfileid: "92099345"
 
 ## <a name="uielement-list"></a>UIElement 清單
 
-### <a name="filter"></a>Filter
+### <a name="filter"></a>篩選
 
 根據您在文字方塊中提供的字串來篩選 WPF 控制項清單。 這會顯示四個欄位中的所有相符項。
 
@@ -63,7 +65,7 @@ ms.locfileid: "92099345"
 
 **瀏覽**
 
-開啟 [開啟舊檔]**** 對話方塊，該對話方塊可讓您巡覽至包含 WPF 控制項的組件。 請使用此選項載入不在全域組件快取中的組件。
+開啟 [開啟舊檔] 對話方塊，該對話方塊可讓您巡覽至包含 WPF 控制項的組件。 請使用此選項載入不在全域組件快取中的組件。
 
 **語言**
 

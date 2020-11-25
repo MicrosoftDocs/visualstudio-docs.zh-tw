@@ -1,5 +1,7 @@
 ---
 title: UWP 應用程式的應用程式屬性頁
+description: 瞭解如何使用 [應用程式] 頁面來指定通用 Windows 平臺 (UWP) 專案的元件和套件資訊，並以 Windows 10 版本為目標。
+ms.custom: SEO-VS-2020
 ms.date: 01/23/2018
 ms.topic: reference
 f1_keywords:
@@ -11,20 +13,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 826d408d8e1a6a2cb8bcad956ce930781a9155db
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77173081"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871362"
 ---
 # <a name="application-property-page-uwp-projects"></a>應用程式屬性頁 (UWP 專案)
 
-使用 [應用程式]**** 屬性頁指定通用 Windows 平台 (UWP) 專案的組件和套件資訊，並以 Windows 10 版本為目標。
+使用 [應用程式] 屬性頁指定通用 Windows 平台 (UWP) 專案的組件和套件資訊，並以 Windows 10 版本為目標。
 
 ![應用程式屬性頁](media/application-page-uwp.png)
 
-若要存取 [應用程式]**** 頁面，請在 [方案總管]**** 中選擇專案節點。 然後選擇**Project**  >  功能表列上的 [專案**屬性**]。 屬性頁會在 [應用程式]**** 索引標籤上開啟。
+若要存取 [應用程式] 頁面，請在 [方案總管] 中選擇專案節點。 然後選擇 **Project**  >  功能表列上的 [專案 **屬性**]。 屬性頁會在 [應用程式] 索引標籤上開啟。
 
 ## <a name="general-section"></a>[一般] 區段
 
@@ -38,7 +40,7 @@ ms.locfileid: "77173081"
 
 **元件資訊** &mdash;選擇這個按鈕會顯示 [[元件資訊] 對話方塊](../../ide/reference/assembly-information-dialog-box.md)。
 
-**封裝資訊清單** &mdash;選擇此按鈕會開啟資訊清單設計工具。 資訊清單設計工具可以透過選擇 [方案總管]**** 中的 _Package.appxmanifest_ 檔案加以存取。 如需詳細資訊，請參閱[使用資訊清單設計工具設定套件](/windows/msix/package/packaging-uwp-apps#configure-your-project)。
+**封裝資訊清單** &mdash;選擇此按鈕會開啟資訊清單設計工具。 資訊清單設計工具可以透過選擇 [方案總管] 中的 _Package.appxmanifest_ 檔案加以存取。 如需詳細資訊，請參閱[使用資訊清單設計工具設定套件](/windows/msix/package/packaging-uwp-apps#configure-your-project)。
 
 ## <a name="targeting-section"></a>目標鎖定區段
 

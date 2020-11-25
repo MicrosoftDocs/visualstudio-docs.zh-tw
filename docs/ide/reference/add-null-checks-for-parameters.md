@@ -1,5 +1,7 @@
 ---
 title: 為所有項目 (參數) 新增 Null 檢查
+description: 瞭解如何在程式碼中建立並新增 if 語句，以檢查所有可為 null、非檢查參數的 nullity。
+ms.custom: SEO-VS-2020
 ms.date: 09/17/2019
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 573a9e56d3aedd55bc571eaaa363b42a53019566
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5828a2bb28f7b3085cd5d43c452c520a730b8175
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74782304"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870959"
 ---
 # <a name="add-null-checks-for-all-parameters"></a>為所有參數新增 Null 檢查 
 
@@ -32,7 +34,7 @@ ms.locfileid: "74782304"
 
 1. 將游標放在方法內的任何參數上。
 
-2. 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
+2. 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
 
    ![快速動作與重構](media/add-null-checks-for-all-parameters.png)
    

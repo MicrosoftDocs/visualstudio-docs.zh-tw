@@ -1,5 +1,7 @@
 ---
 title: 新增明確的轉換
+description: 瞭解如何根據您的程式碼內容，自動將明確轉換新增至運算式。
+ms.custom: SEO-VS-2020
 ms.date: 03/26/2020
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e159082266b848ce4742e436c706f3f71b2cc9ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8208ec9c84eb076ab5c313b3078d3853619fb06
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84182972"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870842"
 ---
 # <a name="add-explicit-cast"></a>新增明確的轉換
 
@@ -29,7 +31,7 @@ ms.locfileid: "84182972"
 ## <a name="how-to-use-it"></a>用法
 
 1. 將插入號放在錯誤上。
-2. 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
+2. 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
 3. 選取 [Add explicit cast] \(新增明確轉換\)。
 
    ![在 Visual Studio 中新增明確的轉換快速動作](media/add-explicit-cast.png)

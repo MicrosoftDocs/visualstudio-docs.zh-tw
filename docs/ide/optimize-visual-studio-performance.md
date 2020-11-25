@@ -1,6 +1,8 @@
 ---
 title: Visual Studio 變慢時改善效能
 titleSuffix: ''
+description: 瞭解如何改善 Visual Studio 效能，如果您發現它的執行速度很慢。
+ms.custom: SEO-VS-2020
 ms.date: 04/11/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 6495e8506e12c0c5e5f878a23c609fe53a401bde
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e6f93b7709144e6682bc54d5686fde5ff650f56
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596992"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871466"
 ---
 # <a name="optimize-visual-studio-performance"></a>最佳化 Visual Studio 效能
 
@@ -49,7 +51,7 @@ ms.locfileid: "75596992"
 
 ## <a name="help-us-improve"></a>協助我們改善
 
-您的意見反應可協助我們改善。 使用 [回報問題]**** 功能，「記錄」追蹤，並將它傳送給我們。 選取 [快速啟動]**** 旁的意見反應圖示，或從功能表列中選取 [說明]**** > [傳送意見反應]**** > [回報問題]****。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](../ide/how-to-report-a-problem-with-visual-studio.md)。
+您的意見反應可協助我們改善。 使用 [回報問題] 功能，「記錄」追蹤，並將它傳送給我們。 選取 [快速啟動] 旁的意見反應圖示，或從功能表列中選取 [說明] > [傳送意見反應] > [回報問題]。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](../ide/how-to-report-a-problem-with-visual-studio.md)。
 
 ## <a name="see-also"></a>另請參閱
 

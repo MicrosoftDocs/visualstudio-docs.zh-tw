@@ -1,5 +1,7 @@
 ---
 title: 別名命令
+description: 瞭解如何使用 Alias 命令來建立完整命令、完整命令和引數，或另一個別名的新別名。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 031f1a4bab1acee3f3d0999b17c0b607f7808df9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a9521809baf338c542b0c1cba288f643b985f02
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596901"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871505"
 ---
 # <a name="alias-command"></a>別名命令
 針對完整命令、完整命令和引數或其他別名，建立新的別名。

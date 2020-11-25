@@ -1,5 +1,7 @@
 ---
 title: 自訂 IDE
+description: 瞭解如何以最能支援您自己開發樣式和需求的方式來個人化 Visual Studio IDE。
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2017
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39c9edbf5e96a59912c0cf16d7b4178f6fba2a62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4acd399aeb9de1d25cbe6abe2b8bba3f347dbc8a
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585739"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871453"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>將 Visual Studio IDE 個人化
 
@@ -31,20 +33,20 @@ ms.locfileid: "75585739"
 
 - 在功能表列上選擇 [**工具**  >  **選項**]，如果尚未展開，請展開 [**環境**] 節點。
 
-- 在搜尋方塊中按下**Ctrl** + **Q**，輸入**環境**，然後從結果中選擇 [**環境 > 一般**]。
+- 在搜尋方塊中按下 **Ctrl** + **Q**，輸入 **環境**，然後從結果中選擇 [**環境 > 一般**]。
 
 > [!TIP]
 > 當 [選項] 對話方塊出現時，您可以在該頁面上按 **F1**，以取得各種不同設定的說明。
 
 ## <a name="environment-color-themes"></a>環境色彩佈景主題
 
-若要在 [淺色]、[深色] 和 [藍色] 之間變更色彩主題，請在 [搜尋] 方塊中輸入 **環境** ，然後選擇 [ **環境 > 一般**]。 在 [選項]**** 對話方塊中，變更 [色彩佈景主題]**** 選項。
+若要在 [淺色]、[深色] 和 [藍色] 之間變更色彩主題，請在 [搜尋] 方塊中輸入 **環境** ，然後選擇 [ **環境 > 一般**]。 在 [選項] 對話方塊中，變更 [色彩佈景主題] 選項。
 
 若要變更編輯器中的顏色標示選項，請在 [搜尋] 方塊中輸入 **環境** ，然後選擇 [ **環境 > 字型和色彩**]。 請參閱[如何：變更字型和色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)。
 
 ### <a name="main-menu-casing"></a>主功能表大小寫
 
-您可以變更主功能表的下列兩種大小寫設定：[字首大寫]**** ("File") 與 [全部大寫]**** ("FILE")。 在 [搜尋] 方塊中輸入 **環境** ，選取 **[環境 > 一般**]，然後將 [ **套用標題案例樣式] 變更為 [功能表列** ] 選項。
+您可以變更主功能表的下列兩種大小寫設定：[字首大寫] ("File") 與 [全部大寫] ("FILE")。 在 [搜尋] 方塊中輸入 **環境** ，選取 **[環境 > 一般**]，然後將 [ **套用標題案例樣式] 變更為 [功能表列** ] 選項。
 
 ### <a name="customize-menus-and-toolbars"></a>自訂功能表與工具列
 
@@ -64,7 +66,7 @@ ms.locfileid: "75585739"
 
 ## <a name="external-tools"></a>外部工具
 
-您可以自訂 [工具]**** 功能表來啟動外部工具。 如需詳細資訊，請參閱[管理外部工具](../ide/managing-external-tools.md)。
+您可以自訂 [工具] 功能表來啟動外部工具。 如需詳細資訊，請參閱[管理外部工具](../ide/managing-external-tools.md)。
 
 ## <a name="see-also"></a>另請參閱
 
