@@ -1,5 +1,6 @@
 ---
 title: 專案和編輯器的原始檔控制指導方針
+description: 瞭解專案和編輯器為了支援原始檔控制，應遵守的指導方針。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d1066995537ff6c43a587326c1087b66f79ff52
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: fdd7e23840701981eaea46b44355c34b55b37a33
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037630"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190131"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>專案和編輯器的其他原始檔控制指導方針
 為了支援原始檔控制，專案和編輯器必須遵守一些指導方針。

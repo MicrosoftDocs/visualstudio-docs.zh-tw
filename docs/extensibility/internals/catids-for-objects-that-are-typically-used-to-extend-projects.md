@@ -1,5 +1,6 @@
 ---
 title: 通常用來擴充專案的物件 Catid
+description: '瞭解物件的 Catid，這些物件是用來擴充 Visual Basic、Visual c # 和 Visual C++ 專案的專案和專案自動化物件。'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f69a2de627a0200f7b4eb2185e68d4de5ef2cf08
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1b0b20425cd1508db29932e9687d00055e4db58c
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037116"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190014"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>通常用來擴充專案的物件 Catid
-下表列出用來擴充、和專案之 `Project` `ProjectItem` 物件的 catid [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 。 這些 Catid 是在 *VSLangProj. .olb*中定義。
+下表列出用來擴充、和專案之 `Project` `ProjectItem` 物件的 catid [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 。 這些 Catid 是在 *VSLangProj. .olb* 中定義。
 
 ## <a name="listing-of-catids"></a>Catid 清單
 
@@ -31,7 +32,7 @@ ms.locfileid: "90037116"
 |<xref:VSLangProj.PrjCATID.prjCATIDProjectItem>|{610D4615-D0D5-11D2-8599-006097C68E81}|
 
 ## <a name="visual-basic-catids"></a>Visual Basic Catid
- 下表列出用來擴充流覽物件的 Catid [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 。 它們全都定義在 *VSLangProj. .olb*中。
+ 下表列出用來擴充流覽物件的 Catid [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 。 它們全都定義在 *VSLangProj. .olb* 中。
 
 |名稱|GUID|
 |----------|----------|
@@ -42,7 +43,7 @@ ms.locfileid: "90037116"
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBReferenceBrowseObject>|{2289B812-8191-4e81-B7B3-174045AB0CB5}|
 
 ## <a name="visual-c-catids"></a>Visual c # Catid
- 下列 Catid 可以用來擴充 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 流覽物件。 它們全都定義在 *VSLangProj. .olb*中。
+ 下列 Catid 可以用來擴充 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 流覽物件。 它們全都定義在 *VSLangProj. .olb* 中。
 
 |名稱|GUID|
 |----------|----------|

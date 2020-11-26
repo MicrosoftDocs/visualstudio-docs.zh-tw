@@ -7,15 +7,15 @@ ms.date: 11/09/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
 ms.openlocfilehash: a2caadd454564b389f48987e69e1bc08475affea
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493266"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190183"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 for Mac 導覽
 
-Visual Studio for Mac 是 Mac 上的 _.NET 整合式開發環境_ ，可用來編輯、偵錯及建置程式碼，然後發佈應用程式。 除了程式碼編輯器和偵錯工具之外，Visual Studio for Mac 還包含編譯器、程式碼完成工具、圖形設計工具和原始檔控制功能，以簡化軟體發展流程。
+Visual Studio for Mac 是 Mac 上的 _.NET 整合式開發環境_，可用來編輯、偵錯及建置程式碼，然後發佈應用程式。 除了程式碼編輯器和偵錯工具之外，Visual Studio for Mac 還包含編譯器、程式碼完成工具、圖形設計工具和原始檔控制功能，以簡化軟體發展流程。
 
 Visual Studio for Mac 支援的檔案類型很多都與 Windows 相同，例如 `.csproj`、`.fsproj`或 `.sln` 檔案，也支援 EditorConfig 這類功能，也就是說，您可以使用最適合您的 IDE。
 建立、開啟及開發應用程式，對於先前在 Windows 上使用 Visual Studio 的任何人而言，將會是熟悉的經驗。 此外，Visual Studio for Mac 採用許多功能強大的工具，這些工具讓其 Windows 對等項目成為功能如此強大的 IDE。 Roslyn 編譯器平台用於重構和 IntelliSense。 它的專案系統和組建引擎使用 MSBuild，而其來源編輯器使用與 Windows 上的 Visual Studio 相同的基礎。 它為 Xamarin 與 .NET Core 應用程式使用相同的偵錯工具引擎，並為 Xamarin.iOS 和 Xamarin.Android 使用相同的設計工具。
@@ -150,6 +150,6 @@ Visual Studio for Mac 與 Git 和子版本原始檔控制系統整合。 進行�
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio IDE (在 Windows 上)](/visualstudio/ide/visual-studio-ide)

@@ -7,17 +7,17 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: f8f4645c9b69ff0fa7aa332f0716cc07b7a46e8a
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80234133"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190198"
 ---
 ## <a name="get-support"></a>取得支援
 
 有時可能會發生一些問題。 若 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 安裝和升級問題進行疑難排解](../troubleshooting-installation-issues.md)，以取得逐步指導方針。
 
-我們也提供[**安裝聊天**](https://visualstudio.microsoft.com/vs/support/#talktous) (僅限英文) 支援選項，可回答安裝的相關問題。
+我們也提供 [**安裝聊天**](https://visualstudio.microsoft.com/vs/support/#talktous) (僅限英文) 支援選項，可回答安裝的相關問題。
 
 以下是一些支援選項：
 

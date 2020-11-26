@@ -12,11 +12,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2019
 ms.openlocfilehash: c3a2e14236c2d24bc9650fab81150cc295826844
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006250"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189923"
 ---
 # <a name="how-to-use-visual-studio-with-a-codespace-preview"></a>如何搭配使用 Visual Studio 與 codespace (Preview) 
 
@@ -86,7 +86,7 @@ Visual Studio 在 GitHub Codespaces 中有絕佳的開發支援。 您可以建�
 
    ![使用連線到 codespace 的 [開始] 視窗 Visual Studio](media/visual-studio-start-window.png)
 
-   如果您已經在 Visual Studio 中，您可以**使用 [檔案**  >  **連接至 Codespace]** 功能表項目。
+   如果您已經在 Visual Studio 中，您可以 **使用 [檔案**  >  **連接至 Codespace]** 功能表項目。
 
    ![Visual Studio 檔案連接至 codespace 功能表項目](media/visual-studio-file-connect-to-codespace.png)
 

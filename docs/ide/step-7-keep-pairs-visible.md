@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e854425bab10174220188b23fb7e292371e9cb48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168719"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189338"
 ---
 # <a name="step-7-keep-pairs-visible"></a>步驟 7：讓配對保持可見
 只要玩家僅選擇不相符的圖示配對，遊戲都可以運作良好。 但是，請考慮當玩家選擇相符的配對時會發生的情況。 遊戲不用藉由啟動計時器使圖示消失 (使用 <xref:System.Windows.Forms.Timer.Start> 方法)，而是應該本身進行重設，如此它就不會再使用 `firstClicked` 和 `secondClicked` 參考變數來追蹤任何標籤，但不需要重設已選擇之兩個標籤的色彩。
@@ -57,12 +57,12 @@ ms.locfileid: "88168719"
     firstClicked = null;
     ```
 
-     這兩個陳述式中的第一個會檢查兩個圖示是否相同。 由於正在比較兩個值，因此 c # 程式會使用 `==` 等號比較運算子。 第二個陳述式會實際變更值 (稱為「指派」**)，方法是將 `firstClicked` 參考變數設為等於 `null` 以進行重設。 這就是它為何改用 `=` 指派運算子的緣故。 C # 會使用 `=` 來設定值，並 `==` 加以比較。 Visual Basic 則是使用 `=` 來進行變數指派和比較。
+     這兩個陳述式中的第一個會檢查兩個圖示是否相同。 由於正在比較兩個值，因此 c # 程式會使用 `==` 等號比較運算子。 第二個陳述式會實際變更值 (稱為「指派」)，方法是將 `firstClicked` 參考變數設為等於 `null` 以進行重設。 這就是它為何改用 `=` 指派運算子的緣故。 C # 會使用 `=` 來設定值，並 `==` 加以比較。 Visual Basic 則是使用 `=` 來進行變數指派和比較。
 
 2. 儲存並執行程式，然後開始在表單中選擇圖示。 如果您選擇不相符的配對，計時器的 Tick 事件觸發器和這兩個圖示都會消失。 如果您選擇相符的配對，則 `if` 會執行新的語句，而 return 語句會導致方法略過啟動計時器的程式碼，因此圖示會保持可見，如下列影像所示。
 
      ![您在本教學課程中建立的遊戲](../ide/media/express_finishedgame.png)<br/>
-*具有可見圖示組的****配對遊戲***
+***配對遊戲** _ _with 可見的圖示配對 *
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 

@@ -17,11 +17,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: fc0729eccc6f1392561959dcdac0cf13dfc8e04a
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780949"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189754"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>步驟5：將您的 ASP.NET Core 應用程式部署至 Azure
 
@@ -37,15 +37,15 @@ _觀看此影片並跟著操作，以將您的第一個 ASP.NET Core 應用程�
 
 ## <a name="publish-to-azure-app-service"></a>發佈至 Azure App Service
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]****。 在 [ **發佈** ] 嚮導中，選擇 [ **Azure** ] 作為目標。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]。 在 [ **發佈** ] 嚮導中，選擇 [ **Azure** ] 作為目標。
 
    ![Azure App Service 1 的螢幕擷取畫面](media/vs-2019/app-service-screen-1.png)
 
-1. 針對特定的目標，請選擇 **Azure App Service (Windows) **。
+1. 針對特定的目標，請選擇 **Azure App Service (Windows)**。
 
    ![Azure App Service 2 的螢幕擷取畫面](media/vs-2019/app-service-screen-2.png)
 
-1. 選擇 [ **建立新的 Azure App Service**]。 如果您還沒有 Azure 帳戶，請按一下 [建立您的免費 Azure 帳戶]**** 並完成簡短的註冊程序。
+1. 選擇 [ **建立新的 Azure App Service**]。 如果您還沒有 Azure 帳戶，請按一下 [建立您的免費 Azure 帳戶] 並完成簡短的註冊程序。
 
    ![Azure App Service 3 的螢幕擷取畫面](media/vs-2019/app-service-screen-3.png)
 
@@ -53,11 +53,11 @@ _觀看此影片並跟著操作，以將您的第一個 ASP.NET Core 應用程�
 
    ![Azure App Service 4 的螢幕擷取畫面](media/vs-2019/app-service-screen-4.png)
 
-1. 選擇 [完成]****。 這些資源會在 Azure 中建立、部署應用程式，且 [ **發佈** ] 索引標籤會填入您剛才建立之內容的相關資訊。 [ **發行** ] 索引標籤可讓您使用相同的設定來發佈按鈕、顯示設定詳細資料，或讓您新增服務（例如資料庫）。
+1. 選擇 [完成]。 這些資源會在 Azure 中建立、部署應用程式，且 [ **發佈** ] 索引標籤會填入您剛才建立之內容的相關資訊。 [ **發行** ] 索引標籤可讓您使用相同的設定來發佈按鈕、顯示設定詳細資料，或讓您新增服務（例如資料庫）。
 
 現在，新增 Azure SQL Server 資料庫。
 
-1. 在 [ **發行** ] 索引標籤的 [ **服務**相依性] 下的 [ **SQL Server 資料庫**] 旁，選擇 [ **設定**]。
+1. 在 [ **發行** ] 索引標籤的 [ **服務** 相依性] 下的 [ **SQL Server 資料庫**] 旁，選擇 [ **設定**]。
 
 1. 在下一個畫面上，選擇 [ **Azure SQL Database**]。
 
@@ -77,7 +77,7 @@ _觀看此影片並跟著操作，以將您的第一個 ASP.NET Core 應用程�
 
 ## <a name="exploring-the-azure-portal-and-your-hosted-app"></a>探索 Azure 入口網站和您的託管應用程式
 
-建立應用程式服務之後，您的網站會在瀏覽器中啟動。 當瀏覽器在載入時，您也可以在 Azure 入口網站中尋找該 App Service。 若您探索應用程式服務的可用選項，您會找到 [概觀]**** 區段，您可以在該處啟動和停止應用程式。
+建立應用程式服務之後，您的網站會在瀏覽器中啟動。 當瀏覽器在載入時，您也可以在 Azure 入口網站中尋找該 App Service。 若您探索應用程式服務的可用選項，您會找到 [概觀] 區段，您可以在該處啟動和停止應用程式。
 
 ![Azure App Service 選項](media/vs-2019/vs2019-azure-app-service-menu-options.png)
 

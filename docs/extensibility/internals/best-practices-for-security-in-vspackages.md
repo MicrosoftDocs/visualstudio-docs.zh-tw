@@ -1,5 +1,7 @@
 ---
 title: Vspackage 中安全性的最佳作法 |Microsoft Docs
+description: 瞭解 VSPackage 中安全性的最佳作法，也就是 Visual Studio 應用程式的基本安全性和部署單位。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e73be2af3d24a6a719f353fbd0ab25dbdf86fe09
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f81f682271a949954d113ffd2f6228db0de814e8
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012135"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190040"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Vspackage 中安全性的最佳作法
 若要 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 在您的電腦上安裝，您必須在具有系統管理認證的內容中執行。 應用程式的基本安全性和部署單位 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 是 [VSPackage](../../extensibility/internals/vspackages.md)。 VSPackage 必須使用註冊 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，這也需要系統管理認證。

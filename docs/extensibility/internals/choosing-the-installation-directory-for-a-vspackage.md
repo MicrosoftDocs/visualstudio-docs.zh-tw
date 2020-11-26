@@ -1,5 +1,7 @@
 ---
 title: 選擇 VSPackage 的安裝目錄 |Microsoft Docs
+description: 瞭解如何選擇 VSPackage 的安裝目錄及其支援的檔案，方法是使用像是受管理或未受管理的因素。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ead19e9f50201ab795e3c3f68b661037d309d98d
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: cfb7f339ca9832db8fdfea47a5bc1aa940534823
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011901"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189975"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>選擇 VSPackage 的安裝目錄
 VSPackage 及其支援的檔案必須位於使用者的檔案系統上。 位置取決於 VSPackage 是受控或非受控、並存的版本控制配置，以及使用者選擇。

@@ -1,5 +1,6 @@
 ---
 title: 將設定套用到多個專案連接
+description: 瞭解如何使用原始檔控制外掛程式來執行批次作業，以將設定套用到多個專案連接上。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81448760f0417528fd630c4919ce516b32e518c8
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: cd5b7af98470c1d9a82eb0504c333e74de8c004f
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034916"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190105"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>跨多個專案連接的設定應用程式
 使用原始檔控制外掛程式 API 版本1.2 所建立的原始檔控制外掛程式，可以使用批次作業，跨多個專案或多個連接內容執行相同的原始檔控制作業。 您可以使用批次來消除使用者體驗中的多餘、每個專案的對話方塊。

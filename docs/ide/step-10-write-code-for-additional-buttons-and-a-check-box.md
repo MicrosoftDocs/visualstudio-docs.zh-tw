@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d66f7705821025bd5e30ea0d0c7f2dd57d540e4
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036908"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189900"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>步驟 10：為其他按鈕及核取方塊撰寫程式碼
 
@@ -44,7 +44,7 @@ ms.locfileid: "90036908"
 > [!NOTE]
 > 您的程式碼可能不會顯示 "camelCase" 字母。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 * 若要移至下一個教學課程步驟，請參閱 **[步驟11：執行您的應用程式並嘗試其他功能](../ide/step-11-run-your-program-and-try-other-features.md)**。
 

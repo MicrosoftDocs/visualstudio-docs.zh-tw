@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1abf435625cc9003dc569542e24e020e3801ec00
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039805"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189325"
 ---
 # <a name="options-dialog-box-visual-studio"></a>[選項] 對話方塊 (Visual Studio)
 

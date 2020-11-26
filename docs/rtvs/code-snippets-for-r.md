@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 31dfa975cea519d4d064856090a265b844f265f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238721"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189104"
 ---
 # <a name="code-snippets-for-r"></a>R 程式碼片段
 
@@ -60,4 +60,4 @@ ms.locfileid: "88238721"
 </CodeSnippets>
 ```
 
-所有程式碼片段的 XML 檔案會與 RTVS 一起安裝，[程式碼片段管理員]**** 的 [位置]**** 欄位中提供了路徑。 您也可以在 GitHub 之 [src/Package/Impl/Snippets](https://github.com/Microsoft/RTVS/tree/master/src/Package/Impl/Snippets) 下的 RTVS 原始程式碼中找到它們。
+所有程式碼片段的 XML 檔案會與 RTVS 一起安裝，[程式碼片段管理員] 的 [位置] 欄位中提供了路徑。 您也可以在 GitHub 之 [src/Package/Impl/Snippets](https://github.com/Microsoft/RTVS/tree/master/src/Package/Impl/Snippets) 下的 RTVS 原始程式碼中找到它們。

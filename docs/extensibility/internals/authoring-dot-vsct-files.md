@@ -1,5 +1,7 @@
 ---
 title: 創作。.Vsct Files |Microsoft Docs
+description: 瞭解如何撰寫 .vsct 檔案，以將功能表項目、工具列和其他 UI 元素新增至 Visual Studio 整合式開發環境 (IDE) 。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54e67a28d59cb739abbeab188ff1f100751f2aa8
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: e0aeb601449ffcc47b7f7786825ee222b8b6ac5b
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413903"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190079"
 ---
 # <a name="author-vsct-files"></a>撰寫 .vsct 檔案
 本檔說明如何撰寫 *.vsct* 檔案，以將功能表項目、工具列和其他使用者介面 (UI) 專案加入至 Visual Studio 整合式開發環境 (IDE) 。 當您將 UI 專案加入至沒有 *.vsct* 檔案的 Visual Studio 封裝 (VSPackage) 時，請使用這些步驟。
@@ -51,9 +53,9 @@ ms.locfileid: "93413903"
 
 1. 在專案的頂端 `CommandTable` ，為 `Extern` 要參考的每個外部檔案加入一個元素，並將屬性設定為檔案的 `href` 名稱。 您可以參考下列標頭檔以存取 Visual Studio 資源：
 
-   - *Stdidcmd* ：定義 Visual Studio 所公開之所有命令的識別碼。
+   - *Stdidcmd*：定義 Visual Studio 所公開之所有命令的識別碼。
 
-   - *Vsshlids* ：包含 Visual Studio 功能表的命令識別碼。
+   - *Vsshlids*：包含 Visual Studio 功能表的命令識別碼。
 
 2. 如果您的封裝呼叫由 Visual Studio 或由其他封裝所定義的任何命令，請在專案 `UsedCommands` 之後加入元素 `Commands` 。 針對您所呼叫且不是套件一部分的每個命令，將 [UsedCommand](../../extensibility/usedcommand-element.md) 元素填入此元素。 將 `guid` 元素的和 `id` 屬性設定 `UsedCommand` 為要呼叫的命令的 GUID 和識別碼值。
 
@@ -64,7 +66,7 @@ ms.locfileid: "93413903"
 
 #### <a name="to-declare-ui-elements"></a>宣告 UI 元素
 
-1. 在 `Symbols` 元素中，加入三個 [GuidSymbol](../../extensibility/guidsymbol-element.md) 專案。 每個 `GuidSymbol` 元素都有 `name` 屬性和 `value` 屬性。 設定 `name` 屬性，使其反映元素的用途。 `value`屬性會採用 GUID。  (若要產生 GUID，請在 [ **工具** ] 功能表上選取 [ **建立 guid** ]，然後選取 [登錄 **格式** ]。 ) 
+1. 在 `Symbols` 元素中，加入三個 [GuidSymbol](../../extensibility/guidsymbol-element.md) 專案。 每個 `GuidSymbol` 元素都有 `name` 屬性和 `value` 屬性。 設定 `name` 屬性，使其反映元素的用途。 `value`屬性會採用 GUID。  (若要產生 GUID，請在 [ **工具** ] 功能表上選取 [ **建立 guid**]，然後選取 [登錄 **格式**]。 ) 
 
      第一個 `GuidSymbol` 元素代表您的封裝，且通常沒有任何子系。 第二個 `GuidSymbol` 元素代表命令集，且會包含定義您的功能表、群組和命令的所有符號。 第三個 `GuidSymbol` 元素代表您的映射存放區，並包含命令所有圖示的符號。 如果您沒有使用圖示的命令，您可以省略第三個 `GuidSymbol` 元素。
 
@@ -233,7 +235,7 @@ ms.locfileid: "93413903"
 
    - 功能表控制器：功能表控制器是按鈕旁邊有箭號的按鈕。 按一下箭號會開啟清單。 若要將功能表控制器加入至 UI，請建立專案， `Menu` 並 `type` `MenuController` `MenuControllerLatched` 根據您想要的行為，將其屬性設定為或。 若要填入功能表控制器，請將它設定為元素的父系 `Group` 。 功能表控制器會在下拉式清單中顯示該群組的所有子系。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)
 - [Visual Studio 命令表格 (. .vsct) 檔](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [.VSCT XML 架構參考](../../extensibility/vsct-xml-schema-reference.md)

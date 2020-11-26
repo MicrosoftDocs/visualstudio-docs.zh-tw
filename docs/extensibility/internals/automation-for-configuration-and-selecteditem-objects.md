@@ -1,5 +1,7 @@
 ---
 title: Configuration 和 SelectedItem 物件的自動化 |Microsoft Docs
+description: 瞭解如何使用 Shell Interop 中的設定和 SelectedItem 物件，將 Visual Studio 組建和選取的專案進程自動化。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0341cdf56b32b8b1ac77104b3f3e813ae0610767
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bc4b23662efe688146a7266d1b061d2d9611a45
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709964"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190066"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>Configuration 和 SelectedItem 物件的自動化
 

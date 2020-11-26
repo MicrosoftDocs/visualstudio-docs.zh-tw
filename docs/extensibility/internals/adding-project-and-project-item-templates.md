@@ -1,5 +1,7 @@
 ---
 title: 加入專案和專案專案範本 |Microsoft Docs
+description: 瞭解如何將專案和專案專案範本加入至 Visual Studio 整合式開發環境 (IDE) 中的對話方塊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14eb1a9e2e63fa6e63d3ba2efa4426421e6b5593
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e97b04294f0545c378210d39f343f3b009b6d15
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710200"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190170"
 ---
 # <a name="add-project-and-project-item-templates"></a>新增專案與專案專案範本
 當您建立自己的專案類型時，您必須使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (IDE) 對話方塊的標準整合式開發環境，以提供新增專案和專案專案的支援。 下列主題討論新增專案和專案專案的不同技術。

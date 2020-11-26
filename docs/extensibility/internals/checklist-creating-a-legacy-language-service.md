@@ -1,5 +1,7 @@
 ---
 title: 檢查清單：建立舊版語言服務 |Microsoft Docs
+description: 瞭解為 Visual Studio core 編輯器建立舊版語言服務所必須採取的基本步驟。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11785dab63cbb6a95ab2d34c5edbfb4525ebf34c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 905d81d49706c3ae5348d71c03189d6e036dd3e5
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709781"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189988"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>檢查清單：建立舊版語言服務
 下列檢查清單摘要說明為核心編輯器建立語言服務所必須採取的基本步驟 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 若要將您的語言服務整合至 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，您必須建立一個 debug 運算式評估工具。 如需詳細資訊，請參閱[Visual Studio 偵錯工具](../../extensibility/debugger/visual-studio-debugger-extensibility.md)擴充性中的[撰寫 CLR 運算式評估](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)工具。

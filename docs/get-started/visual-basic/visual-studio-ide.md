@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 990bff2832f290987ed29fd48b69f4d7a1a05bba
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901566"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189884"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>歡迎使用 Visual Studio IDE | Visual Basic
 
@@ -89,7 +89,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ::: moniker-end
 
-- [IntelliSense](../../ide/using-intellisense.md)
+- [智慧](../../ide/using-intellisense.md)
 
    IntelliSense 為一組功能的字詞，會直接在編輯器中顯示有關您程式碼的資訊，而在某些情況下會為您撰寫一些程式碼。 就像內嵌在編輯器中的基本文件，讓您不必在其他位置查閱類型資訊。 IntelliSense 功能會因語言而異。 如需詳細資訊，請參閱 [c # intellisense](../../ide/visual-csharp-intellisense.md)、 [Visual C++ IntelliSense](../../ide/visual-cpp-intellisense.md)、 [JavaScript intellisense](../../ide/javascript-intellisense.md)和 [Visual Basic intellisense](../../ide/visual-basic-specific-intellisense.md)。 下圖顯示 IntelliSense 如何顯示類型的成員清單：
 

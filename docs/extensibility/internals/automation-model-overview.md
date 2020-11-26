@@ -1,5 +1,7 @@
 ---
 title: Automation 模型總覽 |Microsoft Docs
+description: 瞭解由一組物件所組成的 Visual Studio automation 模型，您可以針對這些物件撰寫 Visual Studio 的增益集或延伸模組。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa06b58ccd8d4cba8e16b17bc725798ae02d7e8f
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: f88d064c551ccffe1c59e68c8472b519a58db436
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414434"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190092"
 ---
 # <a name="automation-model-overview"></a>Automation 模型總覽
 Automation 模型包含一組物件，可讓您撰寫 Visual Studio 的增益集或延伸模組。 增益集是一種應用程式，可操作 Visual Studio 環境並將一般工作自動化。 Visual Studio 擴充功能可以建立自訂 Visual Studio 元件，或新增至標準元件的功能，例如文字編輯器。
@@ -38,9 +40,9 @@ Automation 模型包含一組物件，可讓您撰寫 Visual Studio 的增益集
 
 - 程式碼
 
-- Build
+- 組建
 
 如需自動化的詳細資訊，請參閱 [Visual Studio 的自動化和](/previous-versions/visualstudio/visual-studio-2015/extensibility/extensibility-in-visual-studio?preserve-view=true&view=vs-2015)擴充性。 這份檔及其提供的連結，可協助您做出有關如何為 VSPackage 提供自動化的決策。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：建立增益集](/previous-versions/80493a3w(v=vs.140))

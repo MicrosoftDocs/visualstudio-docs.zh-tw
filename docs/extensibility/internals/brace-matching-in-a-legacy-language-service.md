@@ -1,5 +1,7 @@
 ---
 title: 舊版語言服務中的括弧對稱 |Microsoft Docs
+description: 深入瞭解舊版語言服務中的大括弧比對，可協助您追蹤必須一起發生的語言專案，例如括弧和大括弧。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0081be3e3ab5a53f7d85f77475d4288aa5c87092
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d9f93f0081d45e986ab6845cdaee53209b84e13
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709810"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190001"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>舊版語言服務中的括弧對稱
 括弧對稱可協助開發人員追蹤需要一起發生的語言元素，例如括弧和大括弧。 當開發人員輸入右大括弧時，會反白顯示左大括弧。
@@ -35,10 +37,10 @@ ms.locfileid: "80709810"
 
  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法會呼叫掃描器來 token 化這一行，並在插入號之前傳回權杖。 掃描器會藉由 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 在目前的權杖上設定的 token 觸發程式值，來指出已找到語言元素組。 <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法 <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> 會呼叫方法，而這個方法會接著 <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> 使用的剖析原因值來呼叫方法， <xref:Microsoft.VisualStudio.Package.ParseReason> 以找出相符的語言元素。 找到相符的語言專案時，會反白顯示這兩個元素。
 
- 如需如何鍵入括弧來觸發括弧醒目提示的完整說明，請參閱[舊版語言服務剖析器和掃描器](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)一文中的*範例剖析*作業一節。
+ 如需如何鍵入括弧來觸發括弧醒目提示的完整說明，請參閱 [舊版語言服務剖析器和掃描器](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)一文中的 *範例剖析* 作業一節。
 
 ## <a name="enable-support-for-brace-matching"></a>啟用括弧配對的支援
- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>屬性可以設定**MatchBraces**、 **MatchBracesAtCaret**和**ShowMatchingBrace**登錄專案，以設定類別的對應屬性 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 。 語言喜好設定屬性也可以由使用者設定。
+ <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>屬性可以設定 **MatchBraces**、 **MatchBracesAtCaret** 和 **ShowMatchingBrace** 登錄專案，以設定類別的對應屬性 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 。 語言喜好設定屬性也可以由使用者設定。
 
 |登錄項目|屬性|描述|
 |--------------------|--------------|-----------------|
@@ -50,7 +52,7 @@ ms.locfileid: "80709810"
  您可以將條件陳述式（如、、和、、、、）與相符 `if` `else if` `else` `#if` `#elif` `#else` `#endif` 分隔符號的相同方式進行比對。 您可以將 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 類別子類別化，並提供可將文字範圍和分隔符號加入至相符元素內部陣列的方法。
 
 ## <a name="set-the-trigger"></a>設定觸發程式
- 下列範例顯示如何在掃描器中偵測相符的括弧、大括弧和方括弧，以及設定它的觸發程式。 <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>類別上的方法會 <xref:Microsoft.VisualStudio.Package.Source> 偵測觸發程式，並呼叫剖析器來尋找相符的配對 (請參閱本文中的*尋找相符*區段) 。 此範例僅供說明之用。 它會假設您的掃描器包含一個方法 `GetNextToken` ，該方法會從文字行識別並傳回權杖。
+ 下列範例顯示如何在掃描器中偵測相符的括弧、大括弧和方括弧，以及設定它的觸發程式。 <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>類別上的方法會 <xref:Microsoft.VisualStudio.Package.Source> 偵測觸發程式，並呼叫剖析器來尋找相符的配對 (請參閱本文中的 *尋找相符* 區段) 。 此範例僅供說明之用。 它會假設您的掃描器包含一個方法 `GetNextToken` ，該方法會從文字行識別並傳回權杖。
 
 ```csharp
 using Microsoft.VisualStudio.Package;

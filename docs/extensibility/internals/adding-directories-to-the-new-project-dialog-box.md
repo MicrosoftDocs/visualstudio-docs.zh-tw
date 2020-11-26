@@ -1,5 +1,7 @@
 ---
 title: 將目錄新增至 [新增專案] 對話方塊 |Microsoft Docs
+description: 在 Visual Studio 中，瞭解如何將目錄新增至 [新增專案] 對話方塊，讓您可以建立新的專案類型，並顯示這些專案以做為範本使用。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 827e383bba13c9742deb654bf3d680adeb3c109b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87e4c0bcb44690a36579fe77564962515534338d
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710238"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190144"
 ---
 # <a name="add-directories-to-the-new-project-dialog-box"></a>將目錄新增至新增專案對話方塊
 當您建立新的專案類型時，您也可以在 [ **新增專案** ] 對話方塊中註冊新的目錄，以顯示它們作為範本使用。 下列程式碼範例說明如何註冊新的目錄（也稱為節點）。 在此範例中，會註冊 VSPackage 所公開的範本（ *CLSID_Package*）。 如此一來，[ **新增專案** ] 對話方塊的左側會提供加入的節點，以及由 *Folder_Label_ResID* 資源決定的名稱。 此資源是從 VSPackage 附屬 DLL 載入的。
 
- **資料夾**值代表顯示*Folder_Label_ResID*節點的資料夾 GUID。 在此範例中，GUID 代表 [**新增專案**] 對話方塊的 [**專案類型**] 窗格中的 [**其他專案**] 資料夾。 如果 [ **其他專案** ] 值不存在，標籤就會位於最上層。
+ **資料夾** 值代表顯示 *Folder_Label_ResID* 節點的資料夾 GUID。 在此範例中，GUID 代表 [**新增專案**] 對話方塊的 [**專案類型**] 窗格中的 [**其他專案**] 資料夾。 如果 [ **其他專案** ] 值不存在，標籤就會位於最上層。
 
  `TemplatesDir`值指定包含專案範本的目錄完整路徑。 這些檔案可以是 *.vsz* 檔案或要複製的一般範本檔案。
 

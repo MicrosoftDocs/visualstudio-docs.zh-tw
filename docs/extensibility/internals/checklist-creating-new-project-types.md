@@ -1,5 +1,7 @@
 ---
 title: 檢查清單：建立新的專案類型 |Microsoft Docs
+description: 瞭解在 Visual Studio 中建立及顯示新的專案類型時必須完成的工作。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 111eb74d388682ff3cf97d5e0aa7e7e5a91cbaf3
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 20579422e8253b2c0cff7961a91395b5e44137ab
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414187"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189962"
 ---
 # <a name="checklist-create-new-project-types"></a>檢查清單：建立新的專案類型
 您必須完成幾項工作，才能建立新的專案類型。 下列檢查清單提供這些工作的指南：
@@ -49,15 +51,15 @@ ms.locfileid: "93414187"
 
     - 可以自動化的物件或衍生自的類別 `IDispatch` 。
 
-    - XML 命令表 ( *. .vsct* ) 檔。 如需詳細資訊，請參閱 [Visual Studio 命令表格 (. .vsct) ](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔。
+    - XML 命令表 (*. .vsct*) 檔。 如需詳細資訊，請參閱 [Visual Studio 命令表格 (. .vsct) ](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔。
 
 6. 測試、偵測和啟動您的專案類型。
 
-7. 藉由設定為的值，在 [ **加入參考** ] 對話方塊的 [ **專案** ] 索引標籤中顯示您的專案 `VARIANT_TRUE` `VSHPROPID_ShowProjInSolutionPage` 。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>。
+7. 藉由設定為的值，在 [**加入參考**] 對話方塊的 [**專案**] 索引標籤中顯示您的專案 `VARIANT_TRUE` `VSHPROPID_ShowProjInSolutionPage` 。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 與 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>。
 
-8. 建立 Microsoft Installer ( *.msi* ) 檔案，以安裝您的 vspackage。 如需詳細資訊，請參閱 [使用 Windows Installer 安裝 vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)、 [註冊專案類型](../../extensibility/internals/registering-a-project-type.md)和 [vspackage](../../extensibility/internals/vspackages.md)。
+8. 建立 Microsoft Installer (*.msi*) 檔案，以安裝您的 vspackage。 如需詳細資訊，請參閱 [使用 Windows Installer 安裝 vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)、 [註冊專案類型](../../extensibility/internals/registering-a-project-type.md)和 [vspackage](../../extensibility/internals/vspackages.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 中的階層](../../extensibility/internals/hierarchies-in-visual-studio.md)
 - [建立專案類型的時機](../../extensibility/internals/when-to-create-project-types.md)
 - [建立專案類型](../../extensibility/internals/creating-project-types.md)
