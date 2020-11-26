@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a6ad330c083a97e8a098f05a9e0398a806a9153b
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "92298595"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189119"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>情節：使用視覺化和模型功能變更設計
 
@@ -86,7 +86,7 @@ Lucerne 則維持一個相當大型且複雜的系統集合，其中有些系統
 |領域特定語言 (DSL) 圖表|是|是|是|||
 |相依性圖表，圖層驗證|||是|是|是|
 |Code Map|||是|是|是|
-|類別設計工具 (以程式碼為基礎)||||是||
+|類別設計工具 (以程式碼為基礎)||||Yes||
 
 若要繪製相依性圖表，您必須建立模型專案作為現有方案的一部分，或建立一個新的方案。 這些圖表必須在模型專案中建立。
 相依性圖表上的專案位於模型專案中，但不會儲存在一般模型中。 由程式碼建立的 Code Map 與 .NET 類別圖表則位在模型專案之外。
@@ -174,7 +174,7 @@ Dinner Now 必須評估符合新需求所需的成本。 這有一部分取決�
 
 |**圖表**|**描述**|
 |-|-|
-|*相依性圖表*<br /><br /> 請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表：參考](../modeling/layer-diagrams-reference.md)<br />- [相依性圖表：指導方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|程式碼的邏輯架構。<br /><br /> 相依性圖表會將 Visual Studio 方案中的成品組織和對應至稱為 *圖層*的抽象群組。 這些圖層可識別這些成品在系統中執行的角色、工作或功能。<br /><br /> 相依性圖表適用于描述系統的預定設計，以及針對該設計驗證不斷演進的程式碼。<br /><br /> 若要建立圖層，請從 [方案總管]、[Code Map]、[類別檢視] 以及 [物件瀏覽器] 拖曳項目。 若要繪製新圖層，請使用工具箱或以滑鼠右鍵按一下圖表介面。<br /><br /> 若要查看現有的相依性，請在相依性圖表介面上按一下滑鼠右鍵，然後按一下 [產生相依性 **]**。 若要指定預定的相依性，請繪製新相依性。|
+|*相依性圖表*<br /><br /> 請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表：參考](../modeling/layer-diagrams-reference.md)<br />- [相依性圖表：指導方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|程式碼的邏輯架構。<br /><br /> 相依性圖表會將 Visual Studio 方案中的成品組織和對應至稱為 *圖層* 的抽象群組。 這些圖層可識別這些成品在系統中執行的角色、工作或功能。<br /><br /> 相依性圖表適用于描述系統的預定設計，以及針對該設計驗證不斷演進的程式碼。<br /><br /> 若要建立圖層，請從 [方案總管]、[Code Map]、[類別檢視] 以及 [物件瀏覽器] 拖曳項目。 若要繪製新圖層，請使用工具箱或以滑鼠右鍵按一下圖表介面。<br /><br /> 若要查看現有的相依性，請在相依性圖表介面上按一下滑鼠右鍵，然後按一下 [產生相依性 **]**。 若要指定預定的相依性，請繪製新相依性。|
 
 例如，下列相依性圖表描述各層之間的相依性，以及與每個圖層相關聯的成品數目：
 
@@ -196,7 +196,7 @@ Dinner Now 必須評估符合新需求所需的成本。 這有一部分取決�
 
 - 大部分的圖表是由以線條連結之節點所組成。 針對每個圖表類型，工具箱會提供不同種類的節點及線條。
 
-   若要開啟工具箱，請在 [檢視] **** 功能表上按一下 [工具箱] ****。
+   若要開啟工具箱，請在 [檢視]  功能表上按一下 [工具箱] 。
 
 - 若要建立節點，請將其從工具箱拖曳到圖表。 特定種類的節點必須拖曳到現有節點上。 例如，在元件圖表上，必須將新連接埠加入現有元件中。
 
@@ -308,7 +308,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 - 如需快速取得原始程式碼的概觀，請遵循這些步驟來產生 Code Map：
 
-     在 [架構] **** 功能表上，按一下 [產生方案的 Code Map] ****。
+     在 [架構]  功能表上，按一下 [產生方案的 Code Map] 。
 
      若要快速取得已編譯程式碼的概觀，請建立空白的 Code Map，然後將組件檔或二進位檔拖曳到地圖介面上。
 
@@ -379,7 +379,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 - *「一般化」* (Generalization) 表示特定分類器的部分定義繼承自一般分類器。 *「實現」* (Realization) 表示類別實作介面提供的作業及屬性。
 
-     若要建立這些關聯性，請使用 [繼承] **** 工具。 另外，實現可以用 *「棒棒糖符號」*(Lollipop) 表示。
+     若要建立這些關聯性，請使用 [繼承]  工具。 另外，實現可以用 *「棒棒糖符號」*(Lollipop) 表示。
 
 - *「封裝」* (Package) 是分類器、關聯、生命線、元件及其他封裝的群組。 *「匯入」* (Import) 關聯性表示某個封裝包含另一個封裝的所有定義。
 
@@ -398,7 +398,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 #### <a name="relationship-to-other-diagrams"></a>與其他圖表的關聯性
 
-|**圖表**|**說明**|
+|**圖表**|**描述**|
 |-|-|
 |相依性圖表|定義與類別相關的系統邏輯架構。<br /><br /> 使用相依性驗證可確保程式碼與設計保持一致。<br /><br /> 請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表：參考](../modeling/layer-diagrams-reference.md)<br />- [相依性圖表：指導方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|
 |Code Map|將現有程式碼中的組織與關聯性視覺化。<br /><br /> 若要識別類別、其關聯性及方法，請建立會顯示這些項目的 Code Map。<br /><br /> 請參閱：<br /><br /> - [將相依性對應到您的解決方案](../modeling/map-dependencies-across-your-solutions.md)|
@@ -472,7 +472,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 #### <a name="relationship-to-other-diagrams"></a>與其他圖表的關聯性
 
-|**圖表**|**說明**|
+|**圖表**|**描述**|
 |-|-|
 |Code Map|將現有程式碼中的組織與關聯性視覺化。<br /><br /> 若要建立圖層，請產生 Code Map，然後在地圖上將項目分組為可能的圖層。 將群組從地圖拖曳至相依性圖表。<br /><br /> 請參閱：<br /><br /> - [將相依性對應到您的解決方案](../modeling/map-dependencies-across-your-solutions.md)<br />- [流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)|
 

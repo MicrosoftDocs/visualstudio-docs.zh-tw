@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 8c89f1d59405fb7475e827cac9624c6623d7041e
-ms.sourcegitcommit: 1d74273a50ede5a90d9d64372d93aad357daef42
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89365661"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189091"
 ---
 # <a name="frequently-asked-questions"></a>常見問題集
 
@@ -43,13 +43,13 @@ A. 否。 RTVS 是開發 R 程式碼的工具，並會使用標準的原生 R �
 
 **問。RTVS 是否適用于非英文地區設定？**
 
-A. RTVS 的 1.0 版僅支援英文。 1.1 版將會針對和 Visual Studio 本身相同的語言集進行當地語系化。 在此期間，請使用[適用於 Visual Studio 2015 的英文語言套件](https://www.microsoft.com/download/details.aspx?id=48157)。針對 Visual Studio 2017，請執行安裝程式，並在 [語言套件]**** 索引標籤中選取 [英文]。
+A. RTVS 的 1.0 版僅支援英文。 1.1 版將會針對和 Visual Studio 本身相同的語言集進行當地語系化。 在此期間，請使用[適用於 Visual Studio 2015 的英文語言套件](https://www.microsoft.com/download/details.aspx?id=48157)。針對 Visual Studio 2017，請執行安裝程式，並在 [語言套件] 索引標籤中選取 [英文]。
 
 ![適用於 Visual Studio 2017 的國際設定](media/FAQ-international-settings.png)
 
 **問。我很喜歡目前的 Visual Studio 設定，但是我想要嘗試新的資料科學設定。我該怎麼做？**
 
-A. 使用**工具**匯  >  **入和匯出設定**來儲存目前的 Visual Studio 設定，然後切換至資料科學設定。 若要還原已儲存的設定，請再次使用 [匯入和匯出設定]**** 命令。
+A. 使用 **工具** 匯  >  **入和匯出設定** 來儲存目前的 Visual Studio 設定，然後切換至資料科學設定。 若要還原已儲存的設定，請再次使用 [匯入和匯出設定] 命令。
 
 **問。我可以將 Visual Studio 專案儲存在網路共用嗎？**
 
@@ -113,4 +113,4 @@ A. 適用於 R 的 RStudio 是一個優秀且成熟的 IDE，且已經開發多�
 
 A. 當然！ 原始程式碼位於 [GitHub (英文)](https://github.com/microsoft/RTVS) 上。 使用問題追蹤器提交 Bug，以及對已歸檔的 Bug 提出註解。
 
-也歡迎您參與編輯這份文件&mdash;，只要選取任一頁面右上角的 [編輯]**** 命令，即可開始編輯文件。 我們也歡迎您在文件上提出註解，您可以在任何頁面的底部加入註解。
+也歡迎您參與編輯這份文件&mdash;，只要選取任一頁面右上角的 [編輯] 命令，即可開始編輯文件。 我們也歡迎您在文件上提出註解，您可以在任何頁面的底部加入註解。
