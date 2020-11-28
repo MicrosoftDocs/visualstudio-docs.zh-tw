@@ -1,5 +1,7 @@
 ---
 title: 如何：當地語系化程式碼 |Microsoft Docs
+description: 瞭解如何使用 GetGlobalResourceObject 的呼叫（參考當地語系化資源的方法）來取代硬式編碼字串，以當地語系化 SharePoint 中的程式碼。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c1963ff0b6ef317dfa1a2c8154a1628710dc562
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2cbe38c55b92514954cc3487544fed89d68cc4dc
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016692"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304585"
 ---
 # <a name="how-to-localize-code"></a>如何：當地語系化程式碼
   未當地語系化程式碼會使用硬式編碼的字串值。 若要將程式碼字串當地語系化，請將它們取代為的呼叫 <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> ，也就是參考當地語系化資源的方法。
@@ -27,7 +29,7 @@ ms.locfileid: "86016692"
 
 #### <a name="to-localize-code"></a>當地語系化程式碼
 
-1. 在**方案總管**中，開啟專案專案的快捷方式功能表，然後選擇 [**加入**  >  **模組**]。
+1. 在 **方案總管** 中，開啟專案專案的快捷方式功能表，然後選擇 [**加入**  >  **模組**]。
 
      選擇 [ **資源檔** ] 範本。
 
@@ -50,9 +52,9 @@ ms.locfileid: "86016692"
 
 7. 建立專案以建立資源附屬 Dll。
 
-8. 在 **封裝設計**工具中，選擇 [ **Advanced** ] 索引標籤，然後加入附屬元件。
+8. 在 **封裝設計** 工具中，選擇 [ **Advanced** ] 索引標籤，然後加入附屬元件。
 
-9. 在 [**位置**] 方塊中，于位置路徑前面加上文化特性識別碼資料夾，例如*de \\ \<Project Item Name>.resources.dll*。
+9. 在 [**位置**] 方塊中，于位置路徑前面加上文化特性識別碼資料夾，例如 *de \\ \<Project Item Name>.resources.dll*。
 
 10. 如果您的方案尚未參考 system.string 元件，請在其中加入參考，然後在您的程式碼中加入指示詞 <xref:System.Web> 。
 

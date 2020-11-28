@@ -1,5 +1,7 @@
 ---
 title: 快速監看式命令
+description: 深入瞭解 [快速監看式] 命令，以及它如何在 [快速監看式] 視窗的 [運算式] 欄位中顯示所選或指定的文字。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f6382a79884bf8c3891a3a191b594bf183efb62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6185418364e8b22e1f473308b2db9899c8778d13
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565626"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304166"
 ---
 # <a name="quick-watch-command"></a>快速監看式命令
 可顯示[快速監看式](../../debugger/watch-and-quickwatch-windows.md)視窗的 [運算式] 欄位中所選取或指定的文字。 您可以使用此對話方塊來計算偵錯工具辨識的變數或運算式目前的值，或暫存器的內容。 此外，您可以變更任何非 const 變數的值或任何暫存器的內容。
@@ -32,7 +34,7 @@ Debug.QuickWatchq [text]
 ## <a name="arguments"></a>引數
 
 `text`\
-選擇性。 要新增至 [快速監看式]**** 對話方塊的文字。
+選擇性。 要新增至 [快速監看式] 對話方塊的文字。
 
 ## <a name="remarks"></a>備註
 

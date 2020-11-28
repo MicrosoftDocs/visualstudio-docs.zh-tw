@@ -1,5 +1,7 @@
 ---
 title: 檔案中尋找命令
+description: 在 [尋找和取代] 視窗的 [檔案中尋找] 索引標籤上，深入瞭解 [尋找] 命令，以及它如何使用一些可用的選項來搜尋檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,15 +15,15 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d313c29be1d5fb4f1be1febe9b5b7cd32e7e11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa0a907332b3ce0164573b809ee9c4b2ac2addda
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569578"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305394"
 ---
 # <a name="find-in-files-command"></a>檔案中尋找命令
-在 [尋找和取代]**** 視窗中，您可以使用 [檔案中尋找]**** 索引標籤提供的選項子集，搜尋檔案。
+在 [尋找和取代] 視窗中，您可以使用 [檔案中尋找] 索引標籤提供的選項子集，搜尋檔案。
 
 ## <a name="syntax"></a>語法
 

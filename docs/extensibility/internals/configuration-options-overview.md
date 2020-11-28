@@ -1,5 +1,7 @@
 ---
 title: 設定選項總覽 |Microsoft Docs
+description: 瞭解 Visual Studio 中專案設定的選項。 「設定」（configuration）是一種以命名屬性集和檔案位置所描述的組建類型。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d5ac25fcef7b942b791402baf17982c9810e92a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df8931066aef5f7163018fba540dd46dcfe5dcc0
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709416"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304734"
 ---
 # <a name="configuration-options-overview"></a>設定選項總覽
 中的專案 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可支援多個可建立、調試、執行和/或部署的設定。 「設定」（configuration）是一種以命名屬性集（通常是編譯器參數和檔案位置）描述的組建類型。 根據預設，新解決方案包含兩個設定： *Debug* 和 *Release*。 您可以使用預設設定來套用這些設定，或修改這些設定以符合您的特定解決方案及/或專案需求。 某些封裝可以用兩種方式來建立：作為 ActiveX 編輯器或就地元件。 不過，專案不需要支援多個設定。 如果只有一個可用的設定，則該設定會對應到所有解決方案設定。
@@ -38,7 +40,7 @@ ms.locfileid: "80709416"
 > [!NOTE]
 > 除非您的目標專案不支援 Win32，否則您無法建立排除 Win32 平臺的 *myconfig.xml* 方案設定。
 
- 變更解決方案的作用中設定，會選取該方案中所建立、執行、調試或部署的專案設定集。 例如，如果您將使用中的方案設定從 [ *發行* ] 變更為 [ *調試*程式]，則該方案內的所有專案都會自動以方案的 Debug 設定中指出的專案設定來建立。 專案的設定也會命名為 *Debug* ，除非使用者已在環境的 Configuration Manager 中進行手動變更。
+ 變更解決方案的作用中設定，會選取該方案中所建立、執行、調試或部署的專案設定集。 例如，如果您將使用中的方案設定從 [ *發行* ] 變更為 [ *調試* 程式]，則該方案內的所有專案都會自動以方案的 Debug 設定中指出的專案設定來建立。 專案的設定也會命名為 *Debug* ，除非使用者已在環境的 Configuration Manager 中進行手動變更。
 
  針對每個專案儲存的方案設定屬性包含專案名稱、專案設定名稱、旗標，以指出是否要建立或部署，以及平臺名稱。 如需詳細資訊，請參閱 [方案](../../extensibility/internals/solution-configuration.md)設定。
 

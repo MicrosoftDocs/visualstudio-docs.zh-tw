@@ -1,5 +1,7 @@
 ---
 title: 列出記憶體命令
+description: 瞭解清單記憶體命令，以及它如何顯示指定記憶體範圍的內容。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c500b1b516c2b1ab1bc66b7970fccc4ec7a85baa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 696cb36f932a1a79388d94d749b4b5d4bff7d0c2
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568707"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305330"
 ---
 # <a name="list-memory-command"></a>列出記憶體命令
 顯示指定的記憶體範圍的內容。
@@ -47,7 +49,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 
 /Format:`formattype`
 
-選擇性。 在 [記憶體]**** 視窗中檢視記憶體資訊用的格式類型，可能是 OneByte、TwoBytes、FourBytes、EightBytes、Float (32 位元) 或 Double (64 位元)。 如果使用 OneByte，則無法使用 `/Unicode`。
+選擇性。 在 [記憶體] 視窗中檢視記憶體資訊用的格式類型，可能是 OneByte、TwoBytes、FourBytes、EightBytes、Float (32 位元) 或 Double (64 位元)。 如果使用 OneByte，則無法使用 `/Unicode`。
 
 /Hex&#124;Signed&#124;Unsigned
 

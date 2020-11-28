@@ -1,5 +1,7 @@
 ---
 title: 如何：取得 SharePoint 專案服務 |Microsoft Docs
+description: 瞭解如何在專案系統延伸模組、伺服器總管擴充功能或其他 Visual Studio 擴充功能中存取 SharePoint 專案服務。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f49883337c5748c0f8bcab5d0a88e02612e51b4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 553b4ae3b7ecfa9fa49065824020ebdcecf77215
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015557"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304443"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>如何：取得 SharePoint 專案服務
   您可以使用下列類型的解決方案來存取 SharePoint 專案服務：
 
 - SharePoint 專案系統的延伸模組，例如專案延伸、專案專案延伸或專案專案類型定義。 如需這些擴充功能類型的詳細資訊，請參閱 [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)。
 
-- **伺服器總管**中 [ **SharePoint 連接**] 節點的延伸。 如需這些擴充功能類型的詳細資訊，請參閱 [伺服器總管中的擴充 SharePoint 連接節點](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
+- **伺服器總管** 中 [ **SharePoint 連接**] 節點的延伸。 如需這些擴充功能類型的詳細資訊，請參閱 [伺服器總管中的擴充 SharePoint 連接節點](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
 
 - 另一種類型的 Visual Studio 延伸模組，例如 VSPackage。
 
@@ -73,7 +75,7 @@ ms.locfileid: "86015557"
      如需定義專案專案類型的詳細資訊，請參閱 [如何：定義 SharePoint 專案專案類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。
 
 ## <a name="retrieve-the-service-in-server-explorer-extensions"></a>在伺服器總管擴充功能中取出服務
- 在**伺服器總管**的 [ **SharePoint 連接**] 節點擴充功能中，您可以使用物件的屬性來存取專案服務 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> 。
+ 在 **伺服器總管** 的 [ **SharePoint 連接**] 節點擴充功能中，您可以使用物件的屬性來存取專案服務 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> 。
 
 #### <a name="to-retrieve-the-service-in-a-server-explorer-extension"></a>若要在伺服器總管擴充功能中取出服務
 
@@ -81,12 +83,12 @@ ms.locfileid: "86015557"
 
 2. 使用 <xref:System.IServiceProvider.GetService%2A> 方法來要求 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 物件。
 
-     下列程式碼範例示範如何使用專案服務，將訊息從擴充功能新增至**伺服器總管**中清單節點的快捷方式功能表，寫入至 [**輸出**] 視窗和 [**錯誤清單**] 視窗。
+     下列程式碼範例示範如何使用專案服務，將訊息從擴充功能新增至 **伺服器總管** 中清單節點的快捷方式功能表，寫入至 [**輸出**] 視窗和 [**錯誤清單**] 視窗。
 
      [!code-vb[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.vb#1)]
      [!code-csharp[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.cs#1)]
 
-     如需在**伺服器總管**中擴充 [ **sharepoint 連接**] 節點的詳細資訊，請參閱[如何：在伺服器總管中擴充 sharepoint 節點](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。
+     如需在 **伺服器總管** 中擴充 [ **sharepoint 連接**] 節點的詳細資訊，請參閱 [如何：在伺服器總管中擴充 sharepoint 節點](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。
 
 ## <a name="retrieve-the-service-in-other-visual-studio-extensions"></a>取得其他 Visual Studio 延伸模組中的服務
  您可以在 VSPackage 中，或在任何可存取 automation 物件模型中之物件的 Visual Studio 延伸模組中取得專案服務 <xref:EnvDTE80.DTE2> ，例如實介面的專案範本 wizard <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 。

@@ -1,5 +1,7 @@
 ---
 title: 參與 [加入新專案] 對話方塊 |Microsoft Docs
+description: 在 [專案] 登錄子機碼下註冊 [新增專案範本]，以瞭解如何參與 Visual Studio 中的 [加入新專案] 對話方塊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83444d9be6ba23392b792a0187bf46dc9920c465
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94a13890f0b5e60b1da204b89a01c1cadc6d00c4
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709282"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304638"
 ---
 # <a name="contribute-to-the-add-new-item-dialog-box"></a>[加入新專案] 對話方塊
-專案子類型可以在 [**專案**] 登錄子機碼下註冊 [新增**專案**] 範本，為 [**加入新專案**] 對話方塊提供完整的新目錄。
+專案子類型可以在 [**專案**] 登錄子機碼下註冊 [新增 **專案**] 範本，為 [**加入新專案**] 對話方塊提供完整的新目錄。
 
 ## <a name="register-add-new-item-templates"></a>註冊新增專案範本
- 此區段位於登錄中 **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0\projects** 下。 下列登錄專案會假設 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 專案是由假設專案子類型所匯總。 專案的專案如下所 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 示。
+ 此區段位於登錄的 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects** 下。 下列登錄專案會假設 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 專案是由假設專案子類型所匯總。 專案的專案如下所 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 示。
 
 ```
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects\{F184B08F-C81C-45F6-A57F-5ABD9991F28F}]
@@ -35,9 +37,9 @@ ms.locfileid: "80709282"
 "TemplatesDir"="projectSubTypeTemplatesDir\\VBProjectItems"
 ```
 
- **AddItemTemplates\TemplateDirs**子機碼包含登錄專案，其中包含可在 [**加入新專案**] 對話方塊中提供之專案的目錄路徑。
+ **AddItemTemplates\TemplateDirs** 子機碼包含登錄專案，其中包含可在 [**加入新專案**] 對話方塊中提供之專案的目錄路徑。
 
- 環境會自動載入**Projects**登錄子機碼下的所有**AddItemTemplates**資料。 此資料可以包含基底專案的資料，以及特定專案子類型類型的資料。 每個專案子類型都是由專案類型 **GUID**所識別。 專案子類型可以指定要針對特定的 flavored 專案實例使用替代的 **新增專案** 樣板集合，方法是 `VSHPROPID_ AddItemTemplatesGuid` <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> 在實值中支援列舉 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> ，以傳回專案子類型的 GUID 值。 如果 `VSHPROPID_AddItemTemplatesGuid` 未指定屬性，則會使用基底專案 GUID。
+ 環境會自動載入 **Projects** 登錄子機碼下的所有 **AddItemTemplates** 資料。 此資料可以包含基底專案的資料，以及特定專案子類型類型的資料。 每個專案子類型都是由專案類型 **GUID** 所識別。 專案子類型可以指定要針對特定的 flavored 專案實例使用替代的 **新增專案** 樣板集合，方法是 `VSHPROPID_ AddItemTemplatesGuid` <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> 在實值中支援列舉 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> ，以傳回專案子類型的 GUID 值。 如果 `VSHPROPID_AddItemTemplatesGuid` 未指定屬性，則會使用基底專案 GUID。
 
  您可以在 [ **加入新專案** ] 對話方塊中，藉由在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> 專案子類型匯總工具物件上執行介面，來篩選項目。 例如，藉由匯總專案來執行資料庫專案的專案子類型 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，可以藉 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 由執行篩選來篩選 [ **加入新專案** ] 對話方塊中的特定專案，然後藉由在中支援來加入資料庫專案特定專案 `VSHPROPID_ AddItemTemplatesGuid` <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> 。 如需在 [ **加入新專案** ] 對話方塊中篩選和加入專案的詳細資訊，請參閱將 [專案加入至加入新](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)專案對話方塊。
 

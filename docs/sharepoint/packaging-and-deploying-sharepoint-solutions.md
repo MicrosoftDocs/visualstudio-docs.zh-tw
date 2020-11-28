@@ -1,5 +1,7 @@
 ---
 title: 封裝和部署 SharePoint 方案 |Microsoft Docs
+description: 封裝和部署 SharePoint 方案，這些方案是使用方案套件 ( .wsp) 檔案部署到 SharePoint 伺服器。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a4bf3394cf47b4f355fbe6a330ff5374e2da1c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd06a5be3c9e7ceea38bdb4560f8b6262175bd45
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015599"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305072"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>封裝和部署 SharePoint 方案
   SharePoint 方案通常會使用 ( .wsp) 檔案的方案套件，部署到 SharePoint 伺服器。 您可以使用 Visual Studio 將 SharePoint 專案專案組織成功能，並建立封裝以部署 SharePoint 功能。
@@ -84,20 +86,20 @@ ms.locfileid: "86015599"
  您可以使用方案總管來流覽和開啟 SharePoint 專案的檔案。 使用方案總管中的內容功能表來新增功能、功能事件接收器和功能資源。 此外，您可以開啟 [功能設計工具] 和 [封裝設計工具] 來設定部署的功能和套件。
 
 ## <a name="deploy-sharepoint-solutions"></a>部署 SharePoint 方案
- 在 Visual Studio 中自訂功能和封裝之後，您可以建立要部署到 SharePoint 伺服器的 *.wsp* 檔。 您可以使用 Visual Studio 來進行 debug 和 test。在開發電腦上的 SharePoint 伺服器上僅限*wsp* 。 如需如何將 SharePoint 方案部署到遠端 SharePoint 伺服器的詳細資訊，請參閱 [部署方案](/previous-versions/office/developer/sharepoint-2010/aa544500(v=office.14))。
+ 在 Visual Studio 中自訂功能和封裝之後，您可以建立要部署到 SharePoint 伺服器的 *.wsp* 檔。 您可以使用 Visual Studio 來進行 debug 和 test。在開發電腦上的 SharePoint 伺服器上僅限 *wsp* 。 如需如何將 SharePoint 方案部署到遠端 SharePoint 伺服器的詳細資訊，請參閱 [部署方案](/previous-versions/office/developer/sharepoint-2010/aa544500(v=office.14))。
 
  您也可以在開發電腦上自訂部署步驟。 如需詳細資訊，請參閱 [部署、發行和升級 SharePoint 方案套件](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)。
 
 ## <a name="deploy-files-in-sharepoint-solutions"></a>在 SharePoint 方案中部署檔案
- 一般來說，當您將 SharePoint 專案專案加入至 SharePoint 方案時，會包含所有必要的檔案。 可 (程式碼檔編譯) 內建于方案的輸出元件中的檔案。 不過，您可能也必須將無法編譯的檔案（例如 *.xml*、 *.txt*或資源檔）加入至 SharePoint 專案。 這些檔案不會自動封裝在您的解決方案中。 若要確定封裝已封裝，請將檔案加入至對應的資料夾或 SharePoint 專案專案中。
+ 一般來說，當您將 SharePoint 專案專案加入至 SharePoint 方案時，會包含所有必要的檔案。 可 (程式碼檔編譯) 內建于方案的輸出元件中的檔案。 不過，您可能也必須將無法編譯的檔案（例如 *.xml*、 *.txt* 或資源檔）加入至 SharePoint 專案。 這些檔案不會自動封裝在您的解決方案中。 若要確定封裝已封裝，請將檔案加入至對應的資料夾或 SharePoint 專案專案中。
 
- 部署方案時，新增至對應資料夾的檔案會自動複製到 SharePoint hive。 新增至 SharePoint 專案專案的檔案會部署到每個檔案的 [ **部署位置** ] 屬性中所指定的位置，此位置是根據 [ **部署類型** ] 屬性部分設定的。 **部署類型**屬性值預設為**NoDeployment**，這表示該檔案不會與方案一起部署。 您必須設定屬性的另一個值，以將檔案包含在封裝中。
+ 部署方案時，新增至對應資料夾的檔案會自動複製到 SharePoint hive。 新增至 SharePoint 專案專案的檔案會部署到每個檔案的 [ **部署位置** ] 屬性中所指定的位置，此位置是根據 [ **部署類型** ] 屬性部分設定的。 **部署類型** 屬性值預設為 **NoDeployment**，這表示該檔案不會與方案一起部署。 您必須設定屬性的另一個值，以將檔案包含在封裝中。
 
  例如，若要將 *.xml* 檔案加入至 SharePoint 專案，請執行下列其中一項動作：
 
-- 將 SharePoint 「版面配置」對應資料夾新增至您的專案。 這會在 **方案總管** 名為 **版面** 配置的資料夾中建立專案的子資料夾。 將 *.xml* 檔案新增至新的子資料夾。 根據預設，檔案會部署到下的 SharePoint 檔*系統。\\\TEMPLATE\LAYOUTS \<Folder Name> *。 如需如何加入對應資料夾的詳細資訊，請參閱 [如何：加入和移除對應的資料夾](../sharepoint/how-to-add-and-remove-mapped-folders.md)。
+- 將 SharePoint 「版面配置」對應資料夾新增至您的專案。 這會在 **方案總管** 名為 **版面** 配置的資料夾中建立專案的子資料夾。 將 *.xml* 檔案新增至新的子資料夾。 根據預設，檔案會部署到下的 SharePoint 檔 *系統。\\\TEMPLATE\LAYOUTS \<Folder Name>*。 如需如何加入對應資料夾的詳細資訊，請參閱 [如何：加入和移除對應的資料夾](../sharepoint/how-to-add-and-remove-mapped-folders.md)。
 
-- 將 *.xml*檔案新增至 SharePoint 專案專案的資料夾，然後將 *.xml*檔案的 [**部署類型**] 屬性從**NoDeployment**變更為其他設定，例如**RootFile**或**ElementFile**。 適當的 **部署類型** 設定取決於檔案和專案。 如需 **部署類型** 屬性設定的詳細資訊，請參閱 [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)。
+- 將 *.xml* 檔案新增至 SharePoint 專案專案的資料夾，然後將 *.xml* 檔案的 [**部署類型**] 屬性從 **NoDeployment** 變更為其他設定，例如 **RootFile** 或 **ElementFile**。 適當的 **部署類型** 設定取決於檔案和專案。 如需 **部署類型** 屬性設定的詳細資訊，請參閱 [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)。
 
   如果新增的檔案未套用至方案中的任何特定專案，您可以將空白的 SharePoint 專案加入至方案，然後在其中加入其他檔案。 另一個將檔案部署至 SharePoint 的替代方案（特別是針對內容資料庫）是將模組加入至專案，然後將檔案新增至模組。 如需詳細資訊，請參閱 [使用模組來包含方案中的](../sharepoint/using-modules-to-include-files-in-the-solution.md)檔案。
 

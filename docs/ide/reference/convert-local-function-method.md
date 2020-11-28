@@ -1,5 +1,7 @@
 ---
 title: 將區域函式轉換為方法
+description: 瞭解如何使用 [快速動作] 和 [重構] 功能表，將區域函式轉換為方法。
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -7,12 +9,12 @@ ms.author: kehavens
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3572682fe68d9b0b1bc4adee537de5cd056a8906
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64a46fc6221f00e6bb130be8010cb2544a00dcc8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71301685"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305576"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>將區域函式轉換為方法
 
@@ -32,7 +34,7 @@ ms.locfileid: "71301685"
 
     ![將區域函式轉換為方法程式碼範例](media/convert-local-function-to-method.png)
 
-2. 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
+2. 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
 
     ![將區域函式轉換為方法程式碼修正範例](media/convert-local-function-to-method-codefix.png)
 

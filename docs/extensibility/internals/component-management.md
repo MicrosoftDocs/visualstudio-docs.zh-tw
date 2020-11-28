@@ -1,5 +1,7 @@
 ---
 title: 元件管理 |Microsoft Docs
+description: 瞭解如何在 Visual Studio 中建立 VSPackage 安裝程式時，管理 Windows Installer 元件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5dcac9fb14a83021b852be2c52436fcdca84bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 648a1c90b143a0f38f8911fcaed3ee1ed16908b6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709329"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304927"
 ---
 # <a name="component-management"></a>元件管理
 Windows Installer 中的工作單位稱為 Windows Installer 元件 (有時候稱為 WICs 或只是) 的元件。 GUID 會識別每個 WIC，也就是使用 Windows Installer 的安裝程式和參考計數的基本單位。
@@ -29,7 +31,7 @@ Windows Installer 中的工作單位稱為 Windows Installer 元件 (有時候�
 
 - 將在版本之間共用的檔案和登錄機碼，寫入自己的元件。
 
-     這麼做可讓您輕鬆地在下一版中使用。 例如，在全域註冊的類型程式庫、副檔名、在 **HKEY_CLASSES_ROOT**中註冊的其他專案等等。
+     這麼做可讓您輕鬆地在下一版中使用。 例如，在全域註冊的類型程式庫、副檔名、在 **HKEY_CLASSES_ROOT** 中註冊的其他專案等等。
 
 - 將共用元件群組至不同的合併模組。
 

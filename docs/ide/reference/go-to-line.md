@@ -1,5 +1,7 @@
 ---
 title: 移至行
+description: 深入瞭解 [移至行] 對話方塊，以及它如何讓您移至使用中的檔案中的特定行。
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2018
 ms.topic: reference
 f1_keywords:
@@ -13,22 +15,22 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 643da538626395434c1269e2294d90b332c564e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7241a574dc8ac8531c2eb4d88eddb1cf047a80d6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249874"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304206"
 ---
 # <a name="go-to-line-dialog-box"></a>移至行對話方塊
 
-[移至指定行]**** 對話方塊可讓您移至使用中文件內的特定行。 若要存取此對話方塊，請開啟檔進行編輯，然後選取 [**編輯**  >  **移**至  >  **行**] 或按**Ctrl** + **G**。
+[移至指定行] 對話方塊可讓您移至使用中文件內的特定行。 若要存取此對話方塊，請開啟檔進行編輯，然後選取 [**編輯**  >  **移** 至  >  **行**] 或按 **Ctrl** + **G**。
 
 ![Visual Studio 中的 [移至指定行] 對話方塊](media/go-to-line-dialog-box.png)
 
 ## <a name="line-number-1---n"></a>行號 (1 - \<n>)
 
-在 [ **行號 (1- \<n>) ** ] 方塊中，輸入您想要移至之使用中的檔案中的行號。 輸入的數字必須介於 1 與目前文件中最後的行號之間。
+在 [ **行號 (1- \<n>)** ] 方塊中，輸入您想要移至之使用中的檔案中的行號。 輸入的數字必須介於 1 與目前文件中最後的行號之間。
 
 ## <a name="see-also"></a>另請參閱
 

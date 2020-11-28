@@ -1,5 +1,7 @@
 ---
 title: 如何：在執行部署步驟時執行程式碼 |Microsoft Docs
+description: 執行程式碼，以處理 SharePoint 專案專案在 Visual Studio 執行部署步驟之前和之後所引發的事件。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2b0431ab4f985d801a78159fc2d324a29f8b638
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b921d8500c95ebbb771b5c0b5817db87b7c6ca
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015533"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304460"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>如何：在執行部署步驟時執行程式碼
   如果您想要針對 SharePoint 專案中的部署步驟執行其他工作，您可以在 Visual Studio 執行每個部署步驟之前和之後，處理 SharePoint 專案專案所引發的事件。 如需詳細資訊，請參閱 [擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。

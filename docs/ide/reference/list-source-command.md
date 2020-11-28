@@ -1,5 +1,7 @@
 ---
 title: 列出原始碼命令
+description: 深入瞭解 List Source 命令，以及它如何顯示指定的源程式碼。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,17 +16,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 286cfa87de96b75e8b79d9ee3bc31e84d7761670
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae2463a3d8dd295fcba9bf264e1ad3fa250169d4
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770623"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305281"
 ---
 # <a name="list-source-command"></a>列出原始碼命令
 顯示指定的原始程式碼程式行。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 Debug.ListSource [/Count:number] [/Current] [/File:filename]

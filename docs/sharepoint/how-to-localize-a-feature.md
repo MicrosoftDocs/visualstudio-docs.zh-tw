@@ -1,5 +1,7 @@
 ---
 title: 如何：將功能當地語系化 |Microsoft Docs
+description: 瞭解如何將硬式編碼的字串值取代為參考當地語系化資源的運算式，以當地語系化 SharePoint 中的功能標題和描述。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b0d15654ba48b6c95cf2b2f7fa4f9cd665f0959a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3865c11c67fd826e0ce914b6aeb88364da3212b7
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016142"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305192"
 ---
 # <a name="how-to-localize-a-feature"></a>如何：當地語系化功能
   依預設，功能標題和描述會使用硬式編碼的字串值。 若要將功能標題和描述當地語系化，請將字串取代為參考當地語系化資源的運算式。
@@ -27,7 +29,7 @@ ms.locfileid: "86016142"
 
 #### <a name="to-localize-a-feature"></a>若要將功能當地語系化
 
-1. 在 **方案總管**中，開啟 [ **Feature1** ] 節點的快捷方式功能表，然後選擇 [ **加入功能資源**]。
+1. 在 **方案總管** 中，開啟 [ **Feature1** ] 節點的快捷方式功能表，然後選擇 [ **加入功能資源**]。
 
 2. 在 [ **新增資源** ] 對話方塊中，從清單中選擇 [不區分 **語言** ] 作為預設語言功能資源檔的文化特性。
 

@@ -1,5 +1,7 @@
 ---
 title: Vspackage 中的命令路由 |Microsoft Docs
+description: 瞭解 Vspackage 中的命令路由，以及如何根據在 Visual Studio 中執行命令的內容來路由傳送命令。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 957ddcca46365a882609c15c96d666c2848ace6c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8168fbe3ad5ba9b1b332aebc4675ecd8e752ee7e
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709547"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305227"
 ---
 # <a name="command-routing-in-vspackages"></a>Vspackage 中的命令路由
 命令會 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 根據其執行所在的內容路由傳送。 它會從初始內容向外路由傳送至全域內容。

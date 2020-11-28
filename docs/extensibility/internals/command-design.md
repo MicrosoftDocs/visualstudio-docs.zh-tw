@@ -1,5 +1,7 @@
 ---
 title: 命令設計 |Microsoft Docs
+description: 瞭解如何在 Visual Studio 中設計 VSPackage 的命令。 包括、如何指定出現的位置、可用的位置，以及處理方式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa58813623dc8150cafb4fbfee6496d09f889ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ab06ade9be1ccd0683cd298a5e758ddcfa883f8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709652"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304866"
 ---
 # <a name="command-design"></a>命令設計
 當您將命令新增至 VSPackage 時，您必須指定其出現的位置、可用的位置，以及處理方式。
@@ -41,7 +43,7 @@ ms.locfileid: "80709652"
 ### <a name="command-organization"></a>命令組織
  環境依群組、優先順序和功能表來定位命令。
 
-- 群組是相關命令的邏輯集合，例如 **剪**下、 **複製**和 **貼** 上命令群組。 群組是出現在功能表上的命令。
+- 群組是相關命令的邏輯集合，例如 **剪** 下、 **複製** 和 **貼** 上命令群組。 群組是出現在功能表上的命令。
 
 - 優先權決定群組中個別命令出現在功能表上的順序。
 
@@ -60,7 +62,7 @@ ms.locfileid: "80709652"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[命令執行](../../extensibility/internals/command-implementation.md)|描述如何在 VSPackage 中執行命令。|
 |[命令可用性](../../extensibility/internals/command-availability.md)|描述 Visual Studio 內容如何判斷哪些命令可供使用。|

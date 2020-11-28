@@ -1,5 +1,7 @@
 ---
 title: 列出暫存器命令
+description: 瞭解清單暫存器命令，以及它如何顯示所選暫存器的值，並讓您修改要顯示的暫存器清單。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,17 +16,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5459ded60ea90ae00a3f943f829065a82548d160
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568681"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305297"
 ---
 # <a name="list-registers-command"></a>列出暫存器命令
 顯示所選暫存器的值，並讓您修改要顯示的暫存器清單。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cmd
 Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]

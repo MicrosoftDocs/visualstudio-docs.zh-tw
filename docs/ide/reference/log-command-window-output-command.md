@@ -1,5 +1,7 @@
 ---
 title: 記錄命令視窗輸出命令
+description: 瞭解記錄命令視窗輸出命令，以及它如何將命令視窗中的所有輸入和輸出複製到檔案中。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6ba8fb419726018bd089e217386ab5dbd6a9c33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cab4f102832e8dfa6ce51b61abed8e3bfd672c40
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568655"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305278"
 ---
 # <a name="log-command-window-output-command"></a>記錄命令視窗輸出命令
 
-將來自 [命令]**** 視窗的所有輸入和輸出複製到檔案中。
+將來自 [命令] 視窗的所有輸入和輸出複製到檔案中。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +43,10 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ## <a name="switches"></a>交換器
 
 /on\
-選擇性。 開始在指定的檔案中記錄 [命令]**** 視窗，並將新資訊附加至檔案。
+選擇性。 開始在指定的檔案中記錄 [命令] 視窗，並將新資訊附加至檔案。
 
 /off\
-選擇性。 停止 [命令]**** 視窗的記錄。
+選擇性。 停止 [命令] 視窗的記錄。
 
 /overwrite\
 選擇性。 如果在 `filename` 引數指定的檔案符合現有檔案，即會覆寫該檔案。

@@ -1,5 +1,7 @@
 ---
 title: 取代命令
+description: 您可以使用 [尋找和取代] 視窗的 [檔案中取代] 索引標籤上可用的選項子集，瞭解 Replace 命令與其如何取代檔案中的文字。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,15 +15,15 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 620e55938a9c96393d8cd7de6f238d3f98715d29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2db7b59c1982f706cc6d2b18039870871ffa1039
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596680"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304036"
 ---
 # <a name="replace-command"></a>取代命令
-使用在 [尋找和取代]**** 視窗 [檔案中取代]**** 索引標籤提供的選項子集，取代檔案中的文字。
+使用在 [尋找和取代] 視窗 [檔案中取代] 索引標籤提供的選項子集，取代檔案中的文字。
 
 ## <a name="syntax"></a>語法
 

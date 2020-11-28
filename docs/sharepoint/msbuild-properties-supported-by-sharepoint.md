@@ -1,5 +1,7 @@
 ---
 title: SharePoint 支援的 MSBuild 屬性 |Microsoft Docs
+description: 閱讀和所支援的 MSBuild 屬性名稱和描述的清單，這是 SharePoint 專用的清單。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5470160c6b0af1af39238a14319ad497e1541a43
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1eab3832121f1e0c926257797ddbc79695546a5
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985168"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305146"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>SharePoint 支援的 MsBuild 屬性
   您 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 可以在 sharepoint 專案中使用 VisualStudio 檔案、專案檔或專案使用者檔案中定義的任何屬性 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 除了專案所提供的通用 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 屬性之外，sharepoint 也會定義 sharepoint 專案專屬的其他屬性。

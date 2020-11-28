@@ -1,5 +1,7 @@
 ---
 title: 如何：使用模組來包含檔案 |Microsoft Docs
+description: 瞭解如何使用模組來包含檔案，這是可讓您將 ASPX 主版頁面、文字檔或影像等檔案部署到 SharePoint 的容器。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ada86be30e207e36c7e0d84d3fd5dd877605e4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 381cb529db3f4116a9c42041c26e0e1e242073df
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016301"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305413"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>如何：使用模組來包含檔案
   *模組* (不會與模組混淆 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) 是可讓您將 ASPX 主版頁面、文字檔或影像等檔案部署到 SharePoint 的容器。
@@ -33,9 +35,9 @@ ms.locfileid: "86016301"
 
      如需詳細資訊，請參閱 [SharePoint 專案和專案專案範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。
 
-2. 在**方案總管**中，選擇專案節點，然後在功能表列上選擇 [**專案**  >  **加入新專案**]。
+2. 在 **方案總管** 中，選擇專案節點，然後在功能表列上選擇 [**專案**  >  **加入新專案**]。
 
-     [新增項目]**** 對話方塊隨即開啟。
+     [ **加入新專案** ] 對話方塊隨即開啟。
 
 3. 在 SharePoint 範本清單中，選擇 [ **模組** ] 範本，然後選擇 [ **加入** ] 按鈕。
 
@@ -53,7 +55,7 @@ ms.locfileid: "86016301"
 
      當您將檔案新增至專案時，它的專案會自動加入至模組的 Elements.xml 檔案。 部署專案時，檔案會複製到 SharePoint server （相對於 **檔案元素的** **Url** 屬性所指定的專案根目錄），例如 `Url="Module1/New Folder/SomeFile.doc` 。 如果您想要變更檔案的部署位置，請將它移至 **方案總管** 中的另一個資料夾，或變更其 **Url** 設定。
 
-8. 針對您想要出現在文件庫中的任何檔案，請將 `Type="GhostableInLibrary"` 屬性附加至 *Elements.xml*中的專案。 例如，
+8. 針對您想要出現在文件庫中的任何檔案，請將 `Type="GhostableInLibrary"` 屬性附加至 *Elements.xml* 中的專案。 例如，
 
     ```xml
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />

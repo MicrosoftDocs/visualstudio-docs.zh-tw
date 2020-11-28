@@ -1,5 +1,7 @@
 ---
 title: Debug.Print
+description: 瞭解 Print 命令，以及它如何評估運算式或顯示指定的文字。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0524ce015ea4675254615c11e5768e59049c37f6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567836"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304131"
 ---
 # <a name="print-command"></a>Print 命令
 

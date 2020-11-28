@@ -1,5 +1,7 @@
 ---
 title: 列出呼叫堆疊命令
+description: 瞭解清單呼叫堆疊命令，以及它如何顯示目前的呼叫堆疊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34de768f41079311505ae7948502bb4356814ec7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 845d48f6a0fcc2b844777870bd7c9551f4a4d471
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770690"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305345"
 ---
 # <a name="list-call-stack-command"></a>列出呼叫堆疊命令
 顯示目前的呼叫堆疊。

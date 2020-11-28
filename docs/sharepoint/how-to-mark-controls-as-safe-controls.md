@@ -1,5 +1,7 @@
 ---
 title: 如何：將控制項標記為安全控制項 |Microsoft Docs
+description: 當您加入元件時，將控制項標記為 SharePoint 專案專案的 [安全控制項專案] 屬性或 [封裝設計工具] 中的安全控制項。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd7ed13504d3d91f4239a8ea070454e1c31b1114
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 024cd50fc36b84addca11dc3c0f23cdc64fa507d
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016262"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304505"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>如何：將控制項標記為安全控制項
   基於安全性，SharePoint 會區分受保護的 Web 控制項與不是腳本插入的 web 控制項。 受信任的使用者可以存取受保護的控制項（或 *安全的控制項*）。 當您將元件加入封裝時，可以將控制項標示為 [安全控制項專案] 屬性中 SharePoint 專案專案或 **封裝設計** 工具中的控制項。 如需相關資訊，請參閱
@@ -51,7 +53,7 @@ ms.locfileid: "86016262"
 
      文字方塊控制項現在會標示為可安全地對腳本插入的控制項。
 
-7. 選擇 [確定]**** 按鈕以關閉對話方塊。
+7. 選擇 [確定] 按鈕以關閉對話方塊。
 
 ## <a name="marking-safe-controls-in-the-package-designer"></a>在封裝設計工具中標示安全控制項
 
@@ -67,9 +69,9 @@ ms.locfileid: "86016262"
 
 4. 建立另一個 SharePoint 方案。
 
-5. 在 **方案總管**中，開啟 [ *封裝* 檔案] 的快捷方式功能表，然後選擇 [ **開啟** ] 以開啟 **封裝設計**工具。
+5. 在 **方案總管** 中，開啟 [ *封裝* 檔案] 的快捷方式功能表，然後選擇 [ **開啟** ] 以開啟 **封裝設計** 工具。
 
-6. 在 **封裝設計**工具中，選擇 [ **Advanced** ] 索引標籤。
+6. 在 **封裝設計** 工具中，選擇 [ **Advanced** ] 索引標籤。
 
 7. 在 [ **其他元件**] 下，選擇 [ **加入** ] 按鈕，然後從清單中選擇 [ **加入現有的元件** ]。
 
@@ -90,11 +92,11 @@ ms.locfileid: "86016262"
     |命名空間|控制項的完整命名空間，例如 **BdcModelProject1. VisualWebPart1**。|
     |類型名稱|Button1|
     |組件名稱|強式元件名稱，例如： ClientExtensions、Version = 14.0.0.0、Culture = 中立、PublicKeyToken = 71e9bce111e9429c。|
-    |Safe|清除 [ **安全** ] 核取方塊。|
+    |保險箱|清除 [ **安全** ] 核取方塊。|
     |安全地對抗腳本|將 [ **對腳本保持安全** ] 核取方塊保持為清除。|
 
     > [!NOTE]
-    > 透過**封裝設計**工具的 [ **Advanced** ] 索引標籤加入的元件的**元件名稱**值不能是標記，它必須是強式名稱的元件。 如需詳細資訊，請參閱[建立和使用強式名稱的組件](/previous-versions/dotnet/netframework-4.0/xwb8f617(v=vs.100))。
+    > 透過 **封裝設計** 工具的 [ **Advanced** ] 索引標籤加入的元件的 **元件名稱** 值不能是標記，它必須是強式名稱的元件。 如需詳細資訊，請參閱[建立和使用強式名稱的組件](/previous-versions/dotnet/netframework-4.0/xwb8f617(v=vs.100))。
 
 13. 選擇 **Tab** 鍵以建立另一個安全控制項專案。
 
@@ -107,7 +109,7 @@ ms.locfileid: "86016262"
     |命名空間|控制項的完整命名空間，例如 **BdcModelProject1. VisualWebPart1**。|
     |類型名稱|TextBox1|
     |組件名稱|強式元件名稱，例如： ClientExtensions、Version = 14.0.0.0、Culture = 中立、PublicKeyToken = 71e9bce111e9429c。|
-    |Safe|選取 [ **安全** ] 核取方塊。|
+    |保險箱|選取 [ **安全** ] 核取方塊。|
     |安全地對抗腳本|選取 [ **安全地針對腳本** ] 核取方塊。|
 
 16. 選擇 **Tab** 鍵，然後選擇 [ **確定** ] 按鈕以關閉對話方塊。

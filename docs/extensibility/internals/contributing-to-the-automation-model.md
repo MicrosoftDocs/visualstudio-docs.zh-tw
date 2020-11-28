@@ -1,5 +1,7 @@
 ---
 title: 參與 Automation 模型 |Microsoft Docs
+description: 瞭解如何在設計 VSPackage 時遵循一組指導方針來參與 Visual Studio automation 模型。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d660edc740229c3e91b99e1f59eb37b4e9312098
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab43da108a8d4a3339c54973f60bf1bef6a74780
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709262"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305604"
 ---
 # <a name="contribute-to-the-automation-model"></a>參與 automation 模型
 Visual Studio 提供一組自動化介面來自訂環境。 Automation 模型是物件模型，可讓使用者建立 Visual Studio 的增益集和延伸模組。
@@ -47,7 +49,7 @@ Visual Studio 提供一組自動化介面來自訂環境。 Automation 模型是
 
 - [選項頁的自動化支援](../../extensibility/internals/automation-support-for-options-pages.md)
 
- 描述如何藉由擴充物件，在**工具**功能表上，傳回 VSPackage 的 [自訂**選項**] 對話方塊支援屬性的自動化物件 `DTE.Properties` 。
+ 描述如何藉由擴充物件，在 **工具** 功能表上，傳回 VSPackage 的 [自訂 **選項**] 對話方塊支援屬性的自動化物件 `DTE.Properties` 。
 
 - [為程式碼提供自動化](../../extensibility/internals/providing-automation-for-code.md)
 
@@ -65,5 +67,5 @@ Visual Studio 提供一組自動化介面來自訂環境。 Automation 模型是
 
  提供 Configuration 和 SelectedItems 物件自動化的相關資訊。
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> 提供的程式碼範例會顯示 VSPackage 如何參與 DTE automation 物件模型。 列出參數、傳回值和選取的備註。

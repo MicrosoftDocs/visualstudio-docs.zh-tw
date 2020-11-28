@@ -1,5 +1,7 @@
 ---
 title: EvaluateStatement
+description: 瞭解評估語句命令，以及它如何評估並顯示指定的語句。
+ms.custom: SEO-VS-2020
 ms.date: 02/25/2019
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2b6333b6b57891065b42c2d56e3acfe68b315de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 264629769bbb25af97404e7c97c2676c4951f8d3
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595653"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305424"
 ---
 # <a name="evaluate-statement-command"></a>評估陳述式命令
 

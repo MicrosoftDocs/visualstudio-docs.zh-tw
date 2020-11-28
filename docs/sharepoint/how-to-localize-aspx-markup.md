@@ -1,5 +1,7 @@
 ---
 title: 如何：當地語系化 ASPX 標記 |Microsoft Docs
+description: 瞭解如何將硬式編碼的字串值取代為參考當地語系化資源的運算式，以當地語系化 SharePoint 中的 ASPX 標記。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63bd8ee614a78752069002820689a2cc6c0be783
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a4fcf724a8ae1586354f620a68b32e9f281b545
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016287"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304666"
 ---
 # <a name="how-to-localize-aspx-markup"></a>如何：當地語系化 ASPX 標記
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] ( .aspx) 頁面通常會使用硬式編碼的字串值。 若要將這些字串當地語系化，請將它們取代為參考當地語系化資源的運算式。
@@ -31,9 +33,9 @@ ms.locfileid: "86016287"
 
      如果您只是要當地語系化標記而非程式碼，請加入全域資源檔專案專案。 如果您要當地語系化程式碼和標記，請新增資源檔專案專案。
 
-    1. 若要加入全域資源檔，請在**方案總管**中開啟 SharePoint 專案專案的快捷方式功能表，然後選擇 [**加入**  >  **新專案**]。 在 [SharePoint **2010** ] 節點下，選擇 [ **全域資源檔** ] 範本。
+    1. 若要加入全域資源檔，請在 **方案總管** 中開啟 SharePoint 專案專案的快捷方式功能表，然後選擇 [**加入**  >  **新專案**]。 在 [SharePoint **2010** ] 節點下，選擇 [ **全域資源檔** ] 範本。
 
-    2. 若要加入資源檔，請在**方案總管**中開啟 SharePoint 專案專案的快捷方式功能表，然後選擇 [**加入**  >  **新專案**]。 在 [ **Visual Basic** ] 或 [ **Visual c #** ] 節點下，選擇 [ **資源檔** ] 範本。
+    2. 若要加入資源檔，請在 **方案總管** 中開啟 SharePoint 專案專案的快捷方式功能表，然後選擇 [**加入**  >  **新專案**]。 在 [ **Visual Basic** ] 或 [ **Visual c #** ] 節點下，選擇 [ **資源檔** ] 範本。
 
     > [!NOTE]
     > 請務必將資源檔新增至 SharePoint 專案專案，以啟用 [部署類型] 屬性。 稍後在此程式中需要這個屬性。 如果您的方案沒有 SharePoint 專案專案，您可以加入空白的 SharePoint 專案，並移除其預設的 *Elements.xml* 檔案。
@@ -60,7 +62,7 @@ ms.locfileid: "86016287"
     </asp:Content>
     ```
 
-     至
+     to
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">

@@ -1,5 +1,7 @@
 ---
 title: 將欄位重構為屬性
+description: 瞭解如何使用 [快速動作與重構] 功能表將欄位轉換為屬性。
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: db0bd17cd0bead3807f857b2198b8d4ea4c72ffb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4ac28646af9d68accd18c0d40480dd22e47b023
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569708"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305471"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>封裝欄位重構
 
@@ -49,10 +51,10 @@ ms.locfileid: "75569708"
 
    - **鍵盤**
       - 按 **CTRL+R**，再按 **CTRL+E**。  (請注意，根據您所選取的設定檔，鍵盤快速鍵可能會不同)。
-      - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取任一個 [封裝欄位]**** 項目。
+      - 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取任一個 [封裝欄位] 項目。
    - **滑鼠**
-      - 選取 [編輯] > [重構] > [封裝欄位]****。
-      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取任一個 [封裝欄位]**** 項目。
+      - 選取 [編輯] > [重構] > [封裝欄位]。
+      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取任一個 [封裝欄位] 項目。
 
    選取項目 | 描述
    --------- | -----------
@@ -62,7 +64,7 @@ ms.locfileid: "75569708"
    系統會建立屬性，並更新對該欄位的參考 (若已選取)。
 
    > [!TIP]
-   > 請使用快顯視窗中的 [預覽變更]**** 連結，以在認可變更之前先[查看會有什麼結果](../../ide/preview-changes.md)。
+   > 請使用快顯視窗中的 [預覽變更] 連結，以在認可變更之前先[查看會有什麼結果](../../ide/preview-changes.md)。
 
    - C#：
 

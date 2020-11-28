@@ -1,5 +1,7 @@
 ---
 title: 移至命令
+description: 深入瞭解 [移至] 命令，以及它如何將游標移至指定的行。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 535906d8b8d7f8ba0c2984d22ceead18a0d47c2d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0ef161cb8108ed3244c263ee51fee4251fc05d8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569201"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305208"
 ---
 # <a name="go-to-command"></a>移至命令
 將游標移至指定的程式行。
@@ -36,7 +38,7 @@ Edit.GoTo [linenumber]
 ## <a name="remarks"></a>備註
 行編號是從一開始。 如果 `linenumber` 的值小於一，則會顯示第一行。 如果 `linenumber` 的值大於最後一行的行號，則會顯示最後一行。
 
-如果未指定 `linenumber` 的值，則會顯示 [移至指定行]**** 對話方塊。
+如果未指定 `linenumber` 的值，則會顯示 [移至指定行] 對話方塊。
 
 此命令的別名是 GoToLn。
 

@@ -1,5 +1,7 @@
 ---
 title: 開啟檔案命令
+description: 瞭解 [開啟檔案] 命令，以及它如何開啟現有的檔案，並讓您指定編輯器。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e29e3182a19c9f3a667d41725327110b415fd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 792fe50aea43bc9711a58a895be09f85c041345b
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591511"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304116"
 ---
 # <a name="open-file-command"></a>開啟檔案命令
 
@@ -41,7 +43,7 @@ File.OpenFile filename [/e:editorname]
 
 /e:`editorname`
 
-選擇性。 將用來開啟檔案之編輯器的名稱。 如果指定此引數，但未提供編輯器名稱，則會出現 [開啟方式]**** 對話方塊。
+選擇性。 將用來開啟檔案之編輯器的名稱。 如果指定此引數，但未提供編輯器名稱，則會出現 [開啟方式] 對話方塊。
 
 /e:`editorname` 引數語法會使用出現在 [開啟方式] 對話方塊並使用引號括住的編輯器名稱。
 

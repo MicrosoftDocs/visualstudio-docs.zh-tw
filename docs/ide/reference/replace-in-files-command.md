@@ -1,5 +1,7 @@
 ---
 title: 檔案中取代命令
+description: 您可以使用 [尋找和取代] 視窗的 [檔案中取代] 索引標籤上可用的選項，瞭解檔案中的 [取代檔案] 命令，以及它如何取代檔案中的文字。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,15 +16,15 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96f7d7ae0ea5eaf0de1a6fa4357e2750cdd8c22e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da2bfe820f70925a979548abeab955865f2bbc2c
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565470"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304158"
 ---
 # <a name="replace-in-files-command"></a>檔案中取代命令
-使用在 [尋找和取代]**** 視窗 [檔案中取代]**** 索引標籤提供的選項子集，取代檔案中的文字。
+使用在 [尋找和取代] 視窗 [檔案中取代] 索引標籤提供的選項子集，取代檔案中的文字。
 
 ## <a name="syntax"></a>語法
 
@@ -88,7 +90,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 
 /text2 或 /2
 
-選擇性。 在 [尋找結果 2]**** 視窗中顯示取代結果。
+選擇性。 在 [尋找結果 2] 視窗中顯示取代結果。
 
 /wild 或 /l
 
@@ -99,7 +101,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 選擇性。 只搜尋全字相符。
 
 ## <a name="example"></a>範例
-此範例會在 "my visual studio projects" 資料夾的所有 .cls 檔案中搜尋 `btnCancel`，並以 `btnReset` 取代它，在 [尋找結果 2]**** 視窗中顯示取代資訊。
+此範例會在 "my visual studio projects" 資料夾的所有 .cls 檔案中搜尋 `btnCancel`，並以 `btnReset` 取代它，在 [尋找結果 2] 視窗中顯示取代資訊。
 
 ```
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2

@@ -1,5 +1,7 @@
 ---
 title: 重構程式碼以將 var 取代為明確類型
+description: 瞭解如何使用快速動作，以明確型別取代區域變數運算式中的 var。
+ms.custom: SEO-VS-2020
 ms.date: 05/15/2018
 ms.topic: reference
 author: TerryGLee
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ec388564e1851402f085f6bbaefba08dbea212c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9270ca6cf7407d196eca211b6a76c6dc6a8be78
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595770"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305539"
 ---
 # <a name="refactoring-to-replace-var-with-an-explicit-type"></a>重構以將 var 取代為明確類型
 
@@ -38,11 +40,11 @@ ms.locfileid: "75595770"
 
 1. 將插入號放在 `var` 關鍵字上。
 
-1. 按下**Ctrl** + **。** 或按一下程式碼檔案邊界的螺絲起子 ![螺絲起子圖示](../media/screwdriver-icon.png) 圖示。
+1. 按下 **Ctrl** + **。** 或按一下程式碼檔案邊界的螺絲起子 ![螺絲起子圖示](../media/screwdriver-icon.png) 圖示。
 
    ![使用明確類型快速動作功能表](media/use-explicit-type.png)
 
-1. 選取 [使用明確類型]****。 或選取 [預覽變更]**** 以開啟 [[預覽變更]](../../ide/preview-changes.md) 對話方塊，然後選取 [套用]****。
+1. 選取 [使用明確類型]。 或選取 [預覽變更] 以開啟 [[預覽變更]](../../ide/preview-changes.md) 對話方塊，然後選取 [套用]。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,6 +1,8 @@
 ---
 title: 如何使用 SharePoint 專案中的資源檔 |Microsoft Docs
 titleSuffix: ''
+description: 使用 SharePoint 專案中的資源檔，讓您可以提供當地語系化的名稱、定義屬性，以及對 BDC 模型中定義的物件套用許可權。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1693308c591e60a2df0e4d8e18ece8cc9b598fd2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ecc2bfab37e534e4edc005273ab5fc826b771228
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585741"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304357"
 ---
 # <a name="how-to-use-a-resource-file-in-a-sharepoint-project"></a>如何使用 SharePoint 專案中的資源檔
 
@@ -33,7 +35,7 @@ ms.locfileid: "91585741"
 
 ### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>將 BDC 資源檔加入至 SharePoint 專案
 
-1. 在 **方案總管**中，展開 SharePoint 專案的資料夾，然後選擇包含 BDC 模型的資料夾。
+1. 在 **方案總管** 中，展開 SharePoint 專案的資料夾，然後選擇包含 BDC 模型的資料夾。
 
 2. 在功能表列上，選擇 [ **Project**  >  **加入新專案**]。
 

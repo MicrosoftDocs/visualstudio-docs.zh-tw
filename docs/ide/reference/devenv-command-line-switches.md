@@ -1,5 +1,7 @@
 ---
 title: Devenv 命令列參數
+description: 瞭解 devenv 命令列參數，以及如何使用它們來設定 IDE 選項，也可以從命令列建立、偵測和部署專案。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed7a36ad561daf87ec65db0f6c51c9dd7833eb9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 597a3f7e9a9b36d52f55a9215891c40b18f1a9e9
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82255561"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305507"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令列參數
 
@@ -52,7 +54,7 @@ Devenv 可讓您從命令列針對 IDE 設定不同選項、建置專案、偵�
   > [!NOTE]
   > 只能有一個參考此專案的方案檔應該位於其上層資料夾。 如果父資料夾未包含參考此專案的解決方案檔，或父資料夾包含二或多個參考此專案的解決方案檔，則會建立暫存解決方案檔。
 
-- 當路徑和檔案名稱包括空格時，必須在前後加上引號 ("")。 例如 `"c:\project a\"`。
+- 當路徑和檔案名稱包括空格時，必須在前後加上引號 ("")。 例如： `"c:\project a\"` 。
 
 - 在同一行的參數與引數之間插入一個空白字元。 例如，`devenv /log output.txt` 命令會開啟 IDE，並將該工作階段的所有記錄資訊輸出至 output.txt。
 
@@ -76,13 +78,13 @@ Devenv 可讓您從命令列針對 IDE 設定不同選項、建置專案、偵�
 |[/Run 或 /R](run-devenv-exe.md)|編譯並執行指定的方案。<br /><br /> `devenv /run mysln.sln`|
 |[/RunExit](runexit-devenv-exe.md)|編譯並執行指定的方案、執行方案時最小化 IDE，以及在方案完成執行之後關閉 IDE。<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|以安全模式啟動 Visual Studio。 此參數只會載入預設環境、預設服務，以及隨附的協力廠商封裝版本。<br /><br /> 此參數不需使用引數。|
-|[/UseEnv](useenv-devenv-exe.md)|導致 IDE 使用 PATH、INCLUDE、LIBPATH 和 LIB 環境變數進行 C++ 編譯。 此參數的安裝包含 **使用 C++ 的桌面開發**工作負載。 如需詳細資訊，請參閱 [Setting the Path and Environment Variables for Command-Line Builds](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds)。|
+|[/UseEnv](useenv-devenv-exe.md)|導致 IDE 使用 PATH、INCLUDE、LIBPATH 和 LIB 環境變數進行 C++ 編譯。 此參數的安裝包含 **使用 C++ 的桌面開發** 工作負載。 如需詳細資訊，請參閱 [Setting the Path and Environment Variables for Command-Line Builds](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds)。|
 
 下列命令列參數不會顯示 IDE。
 
 |命令列參數|描述|
 | - |-----------------|
-|[/?](q-devenv-exe.md)|在 [命令提示字元]**** 視窗中顯示 `devenv` 參數的說明。<br /><br /> 此參數不需使用引數。|
+|[/?](q-devenv-exe.md)|在 [命令提示字元] 視窗中顯示 `devenv` 參數的說明。<br /><br /> 此參數不需使用引數。|
 |[/Build](build-devenv-exe.md)|根據所指定方案的組態，建置指定的方案或專案。<br /><br /> `devenv mysln.sln /build`|
 |[/Clean](clean-devenv-exe.md)|刪除 build 命令所建立的任何檔案，而不會影響原始程式檔。<br /><br /> `devenv mysln.sln /clean`|
 |[/Deploy](deploy-devenv-exe.md)|根據方案組態，建置方案以及部署所需的檔案。<br /><br /> `devenv mysln.sln /deploy`|

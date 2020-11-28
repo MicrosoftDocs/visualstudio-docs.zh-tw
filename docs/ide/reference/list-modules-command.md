@@ -1,5 +1,7 @@
 ---
 title: 列出模組命令
+description: 深入瞭解 List 模組命令，以及它如何列出目前進程的模組。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e083a0e1baeefc6807dccb2199cd0e5a9bd883d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa0c3f6445a22ee80457e8a7f9f24fb7008f77ed
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595497"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305313"
 ---
 # <a name="list-modules-command"></a>列出模組命令
 列出目前處理序的模組。

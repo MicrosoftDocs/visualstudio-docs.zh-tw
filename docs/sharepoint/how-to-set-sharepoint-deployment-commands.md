@@ -1,5 +1,7 @@
 ---
 title: 如何：設定 SharePoint 部署命令 |Microsoft Docs
+description: 瞭解如何藉由設定 SharePoint 預先部署和部署後命令來自訂部署流程。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2329efef64e7d8605f8483ff7dce3107cd702fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc1da67206e5e5c9fde1b5c595424239d1685ac7
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015508"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304393"
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>如何：設定 SharePoint 部署命令
   您可以藉由設定部署前和部署後命令來自訂部署流程。 當您從 Visual Studio 中的 SharePoint 方案進行調試時，這些命令會在其他部署動作之前和之後執行。
 
 ### <a name="to-add-a-pre-deployment-command"></a>新增預先部署命令
 
-1. 在功能表列上，選擇 [**專案**  >  ** \<*ProjectName*> 屬性**]。
+1. 在功能表列上，選擇 [**專案**  >  **\<*ProjectName*> 屬性**]。
 
 2. 選擇 [ **SharePoint** ] 索引標籤。
 
@@ -34,7 +36,7 @@ ms.locfileid: "86015508"
 
 ### <a name="to-add-a-post-deployment-command"></a>新增部署後命令
 
-1. 在功能表列上，選擇 [**專案**  >  ** \<*ProjectName*> 屬性**]。
+1. 在功能表列上，選擇 [**專案**  >  **\<*ProjectName*> 屬性**]。
 
 2. 選擇 [ **SharePoint** ] 索引標籤。
 

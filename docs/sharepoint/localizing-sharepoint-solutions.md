@@ -1,5 +1,7 @@
 ---
 title: 當地語系化 SharePoint 方案 |Microsoft Docs
+description: 將程式碼中的硬式編碼字串從程式碼中移除，並將它們抽象化為 XML 型資源 ( .resx) 包含翻譯字串的檔案，以當地語系化 SharePoint 方案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a7b04ab1f77eba15f2bc617f89514a8d0952674
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16cb372e5acf719d3edc79f081cff6f4b0396b6a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017137"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304266"
 ---
 # <a name="localize-sharepoint-solutions"></a>當地語系化 SharePoint 方案
 
@@ -44,7 +46,7 @@ ms.locfileid: "86017137"
 
  如需詳細資訊，請參閱 [階層式組織的當地語系化資源](../ide/globalizing-and-localizing-applications.md)。
 
- 若要在中，指定您在中開發的 SharePoint 專案預設資源檔 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，請在新增資源檔時，在 [**加入資源**] 對話方塊的 [文化特性] 清單中選擇 [不區分文化特性] (非變異**國家) ** 。
+ 若要在中，指定您在中開發的 SharePoint 專案預設資源檔 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，請在新增資源檔時，在 [**加入資源**] 對話方塊的 [文化特性] 清單中選擇 [不區分文化特性] (非變異 **國家)** 。
 
 ## <a name="localize-visual-studio-sharepoint-solutions"></a>當地語系化 Visual Studio SharePoint 方案
  當您將方案當地語系化時，您應該考慮您的解決方案向使用者顯示的所有文字資訊。 您必須將參考訊息、錯誤訊息和 [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] 字串轉譯，以及將這些翻譯放在資源檔中。
@@ -109,11 +111,11 @@ $Resources:String ID
 ### <a name="localize-code"></a>當地語系化程式碼
  除了當地語系化功能字串和標記之外 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] ，您還必須將出現在方案程式碼中的訊息字串和錯誤字串當地語系化。 當地語系化的參考和錯誤訊息會包含在附屬元件中。 附屬元件包含使用者可以看到的字串，例如 [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] 文字和輸出訊息，例如例外狀況。
 
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 使用標準 .NET Framework 中樞和輪輻模型。 中樞或主要程式元件包含預設語言資源。 輪輻或附屬元件包含特定語言的資源。 如需詳細資訊，請參閱[封裝和部署資源](/previous-versions/dotnet/netframework-4.0/sb6a8618(v=vs.100))。 附屬元件會從資源 (*.resx*) 檔案進行編譯。 當您將特定語言的資源檔新增至專案和方案套件時，會將 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 資源檔編譯為名為 *{project Name} .resources.dll*的附屬元件。
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 使用標準 .NET Framework 中樞和輪輻模型。 中樞或主要程式元件包含預設語言資源。 輪輻或附屬元件包含特定語言的資源。 如需詳細資訊，請參閱[封裝和部署資源](/previous-versions/dotnet/netframework-4.0/sb6a8618(v=vs.100))。 附屬元件會從資源 (*.resx*) 檔案進行編譯。 當您將特定語言的資源檔新增至專案和方案套件時，會將 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 資源檔編譯為名為 *{project Name} .resources.dll* 的附屬元件。
 
  如同 ASPX 標記，將個別資源檔專案專案加入至專案，以當地語系化 SharePoint 應用程式程式碼;一個用於預設語言，另一個用於每個當地語系化的語言。 不過，如先前所述，如果您已經有可當地語系化 ASPX 標記的資源檔，您可以重複使用它們來當地語系化程式碼。 如果您需要建立資源檔，請為預設語言資源檔提供您選擇的名稱，並附加 *.resx* 副檔名。 將當地語系化的資源檔命名為與特定語言文化特性一起附加的相同名稱 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] 。 將每個資源檔的 [組建動作] 屬性設定為 [內嵌資源]，以啟用附屬資源元件的建立。
 
- 若要建立附屬元件，請建立專案，然後透過**封裝設計**工具的 [ **Advanced** ] 索引標籤，將檔案新增為其他元件。 新增元件時，請在位置路徑前面加上文化特性 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] 資料夾，例如 *de de \\ {Project Item Name} .resources.dll*。 這可讓封裝包含具有相同名稱的檔案。
+ 若要建立附屬元件，請建立專案，然後透過 **封裝設計** 工具的 [ **Advanced** ] 索引標籤，將檔案新增為其他元件。 新增元件時，請在位置路徑前面加上文化特性 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] 資料夾，例如 *de de \\ {Project Item Name} .resources.dll*。 這可讓封裝包含具有相同名稱的檔案。
 
  在您的程式碼中，使用下列語法，將硬式編碼的字串取代為對方法的呼叫 <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> ：
 

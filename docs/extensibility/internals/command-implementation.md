@@ -1,5 +1,7 @@
 ---
 title: 命令執行 |Microsoft Docs
+description: 瞭解 Visual Studio 中的命令實行、如何在 VSPackage 中設定命令群組、在其中新增命令、註冊命令，並加以執行。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7a536120c81c154cf894717a2af6a4e048d56e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76b1f564c883d1ce03748f560b595cfa44a28b37
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709584"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304821"
 ---
 # <a name="command-implementation"></a>命令執行
 若要在 VSPackage 中執行命令，您必須執行下列工作：

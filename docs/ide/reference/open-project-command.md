@@ -1,5 +1,7 @@
 ---
 title: 開啟專案命令
+description: 瞭解 [開啟專案] 命令，以及它如何開啟現有的專案或方案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c1034fbbafa04af2d62526fdbb48812d64e050
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce00713cbfe862c5788a0131c99ba4c5750bb600
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565808"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304144"
 ---
 # <a name="open-project-command"></a>開啟專案命令
 

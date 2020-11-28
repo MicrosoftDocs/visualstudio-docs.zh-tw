@@ -1,5 +1,7 @@
 ---
 title: 將商務資料整合到 SharePoint 中 |Microsoft Docs
+description: 閱讀有關如何藉由建立商務資料連線 (BDC) 服務的模型，來將商務資料整合至 SharePoint 的高階摘要。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4bbfb681a0dac0825bf7af4f1f27ab1c1b50053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3156adc286222282ae63f70f70838bc6b7155a8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016312"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304348"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>將商務資料整合至 SharePoint
   您可以將商務資料整合到 SharePoint。 商務資料可能來自後端伺服器應用程式，例如 [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)] 、Siebel、SAP 或 Web 服務。 使用者可以在 SharePoint 中使用外部清單或商務資料 Web 組件來查看、加入、更新或刪除商務資料。  使用者也可以在 Microsoft Office 的應用程式（例如 Microsoft Outlook）中離線存取此資料。 如需詳細資訊，請參閱 [哪裡可以顯示外部資料](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14))。

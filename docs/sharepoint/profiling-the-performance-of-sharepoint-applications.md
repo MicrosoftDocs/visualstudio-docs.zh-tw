@@ -1,5 +1,7 @@
 ---
 title: 分析 SharePoint 應用程式的效能 |Microsoft Docs
+description: 如果 SharePoint 應用程式的執行速度變慢或效率不高，請分析這些應用程式的效能。 使用 Visual Studio 分析功能來尋找有問題的程式碼。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13f2e3f5df236157550aa79af40f0cbc575eb8bf
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ecdacce58e17c616b22c9a6a8ba6fce9d5cf272c
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414408"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305107"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>分析 SharePoint 應用程式的效能
 
@@ -39,9 +41,9 @@ ms.locfileid: "93414408"
 
 ## <a name="performance-session-process"></a>效能會話進程
 
-若要分析應用程式，請先流量分析工具 Performance Wizard 建立效能會話。 在功能表列上，選擇 [ **分析** ]、[ **啟動效能分析]** 。 當您完成嚮導時，請輸入您的效能會話所需的資訊，例如您想要的設定檔方法，以及您想要分析的應用程式。 如需詳細資訊，請參閱 [如何：使用效能 Wizard 分析網站或 Web 應用程式](../profiling/how-to-collect-performance-data-for-a-web-site.md)。 或者，您可以使用命令列選項來設定和執行效能會話。 如需詳細資訊，請參閱 [從命令列流量分析工具](../profiling/using-the-profiling-tools-from-the-command-line.md)。 如果您想要手動設定效能會話的每個層面，請參閱 [如何：流量分析工具手動建立效能會話](../profiling/how-to-manually-create-performance-sessions.md)。 您也可以在 [ **測試結果** ] 視窗中，開啟單元測試的快捷方式功能表，然後選擇 [ **建立效能會話** ]，在單元測試中建立效能會話。
+若要分析應用程式，請先流量分析工具 Performance Wizard 建立效能會話。 在功能表列上，選擇 [ **分析**]、[ **啟動效能分析]**。 當您完成嚮導時，請輸入您的效能會話所需的資訊，例如您想要的設定檔方法，以及您想要分析的應用程式。 如需詳細資訊，請參閱 [如何：使用效能 Wizard 分析網站或 Web 應用程式](../profiling/how-to-collect-performance-data-for-a-web-site.md)。 或者，您可以使用命令列選項來設定和執行效能會話。 如需詳細資訊，請參閱 [從命令列流量分析工具](../profiling/using-the-profiling-tools-from-the-command-line.md)。 如果您想要手動設定效能會話的每個層面，請參閱 [如何：流量分析工具手動建立效能會話](../profiling/how-to-manually-create-performance-sessions.md)。 您也可以在 [ **測試結果** ] 視窗中，開啟單元測試的快捷方式功能表，然後選擇 [ **建立效能會話**]，在單元測試中建立效能會話。
 
-設定效能會話之後，會儲存會話設定、設定伺服器以提供程式碼剖析資料，以及執行應用程式。 當您使用應用程式時，會將效能資料寫入至記錄檔。 效能會話會列在 **效能總管** 的 [ **目標** ] 資料夾底下。 在效能會話完成後，它的報表就會出現在 **效能總管** 的 [ **報表** ] 資料夾中。 若要顯示報表，請在 **效能總管** 中開啟報表。 若要查看或設定效能會話的屬性，請在 **效能總管** 中開啟其快捷方式功能表，然後選擇 [ **屬性** ]。 如需有關效能會話特定屬性的詳細資訊，請參閱設定 [分析工具的效能會話](../profiling/configuring-performance-sessions.md)。 如需有關如何解讀效能會話結果的詳細資訊，請參閱 [分析分析工具資料](../profiling/analyzing-performance-tools-data.md)。
+設定效能會話之後，會儲存會話設定、設定伺服器以提供程式碼剖析資料，以及執行應用程式。 當您使用應用程式時，會將效能資料寫入至記錄檔。 效能會話會列在 **效能總管** 的 [ **目標** ] 資料夾底下。 在效能會話完成後，它的報表就會出現在 **效能總管** 的 [**報表**] 資料夾中。 若要顯示報表，請在 **效能總管** 中開啟報表。 若要查看或設定效能會話的屬性，請在 **效能總管** 中開啟其快捷方式功能表，然後選擇 [ **屬性**]。 如需有關效能會話特定屬性的詳細資訊，請參閱設定 [分析工具的效能會話](../profiling/configuring-performance-sessions.md)。 如需有關如何解讀效能會話結果的詳細資訊，請參閱 [分析分析工具資料](../profiling/analyzing-performance-tools-data.md)。
 
 ## <a name="stress-test"></a>壓力測試
 
@@ -59,14 +61,14 @@ Web 效能測試會模擬終端使用者如何與 SharePoint 應用程式互動�
 
 ## <a name="related-topics"></a>相關主題
 
-|Title|描述|
+|標題|描述|
 |-----------|-----------------|
 |[逐步解說：分析 SharePoint 應用程式](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|示範如何在 SharePoint 應用程式上執行取樣設定檔分析。|
 |[在發行前對您的應用程式執行效能測試](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts&preserve-view=true)|描述如何建立負載測試，以協助您對 SharePoint 應用程式進行壓力測試。|
 |[對程式碼進行單元測試](../test/unit-test-your-code.md)|描述如何使用單元測試找出程式碼中的邏輯錯誤。|
 |[使用自動程式碼 UI 測試來測試 SharePoint 2010 應用程式](/previous-versions/visualstudio/visual-studio-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests?preserve-view=true&view=vs-2015)|說明如何測試 SharePoint 應用程式的使用者介面。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [改善程式碼品質](../test/improve-code-quality.md)

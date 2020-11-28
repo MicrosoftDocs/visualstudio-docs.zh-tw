@@ -1,5 +1,7 @@
 ---
 title: 合併功能和套件資訊清單中的 XML |Microsoft Docs
+description: 合併設計工具-在 SharePoint 功能和套件資訊清單中產生和使用者加入的 XML 程式碼。 學習功能和套件資訊清單元素，以及合併例外狀況。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16305ed63f48d9f14e35aeb8d37e35f23f40be25
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838991"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304227"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>合併功能和封裝資訊清單中的 XML
   功能和封裝是由資訊清單檔案所定義 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 。 這些封裝的資訊清單是 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 由使用者從在資訊清單範本中輸入的設計師和自訂所產生的資料組合。 在封裝期間，將 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 自訂 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 語句與提供的設計工具合併， [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 以形成封裝的 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 資訊清單檔案。 類似的元素（稍後會在合併例外狀況中注明例外狀況）會合並，以避免 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 在您將檔案部署至 SharePoint 之後的驗證錯誤，以及讓資訊清單檔案更小且更有效率。
@@ -31,7 +33,7 @@ ms.locfileid: "90838991"
  如果專案有唯一索引鍵，則會 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 比較設計工具和自訂索引鍵的值。 如果值相符，則會合並成單一值。 如果值不同，則會捨棄設計工具索引鍵值，並使用自訂索引鍵值。 集合也會合並。 例如，如果設計工具產生的 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 和自訂 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 都包含元件集合，則封裝的資訊清單只會包含一個元件集合。
 
 ## <a name="merge-exceptions"></a>合併例外狀況
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將大部分的設計工具 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 元素與類似的自訂元素合併在一起 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ，只要它們具有單一、唯一的識別屬性即可。 不過，某些元素缺少合併所需的唯一識別碼 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 。 這些元素稱為 *合併例外*狀況。 在這些情況下，不 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會將自訂元素與設計工具提供的專案合併在 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 一起 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ，而是將它們附加至封裝的資訊清單檔案。
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將大部分的設計工具 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 元素與類似的自訂元素合併在一起 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ，只要它們具有單一、唯一的識別屬性即可。 不過，某些元素缺少合併所需的唯一識別碼 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 。 這些元素稱為 *合併例外* 狀況。 在這些情況下，不 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會將自訂元素與設計工具提供的專案合併在 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 一起 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ，而是將它們附加至封裝的資訊清單檔案。
 
  以下是功能和套件資訊清單檔案的合併例外狀況清單 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 。
 
@@ -48,9 +50,9 @@ ms.locfileid: "90838991"
 |元素名稱|唯一索引鍵|
 |------------------|----------------|
 |功能 (所有屬性) |*屬性名稱* (功能專案的每個屬性名稱都是唯一索引鍵。 ) |
-|ElementFile|位置|
-|ElementManifests/ElementManifest|位置|
-|屬性/屬性|答案|
+|ElementFile|Location|
+|ElementManifests/ElementManifest|Location|
+|屬性/屬性|Key|
 |CustomUpgradeAction|名稱|
 |CustomUpgradeActionParameter|名稱|
 
@@ -63,16 +65,16 @@ ms.locfileid: "90838991"
 |元素名稱|唯一索引鍵|
 |------------------|----------------|
 |所有屬性) 的解決方案 (|*屬性名稱* (方案元素的每個屬性名稱都是唯一索引鍵。 ) |
-|ApplicationResourceFiles/ApplicationResourceFile|位置|
-|元件/元件|位置|
-|ClassResources/ClassResource|位置|
-|DwpFiles/DwpFile|位置|
-|FeatureManifests/FeatureManifest|位置|
-|資源/資源|位置|
-|RootFiles/RootFile|位置|
-|SiteDefinitionManifests/SiteDefinitionManifest|位置|
-|WebTempFile|位置|
-|TemplateFiles/TemplateFile|位置|
+|ApplicationResourceFiles/ApplicationResourceFile|Location|
+|元件/元件|Location|
+|ClassResources/ClassResource|Location|
+|DwpFiles/DwpFile|Location|
+|FeatureManifests/FeatureManifest|Location|
+|資源/資源|Location|
+|RootFiles/RootFile|Location|
+|SiteDefinitionManifests/SiteDefinitionManifest|Location|
+|WebTempFile|Location|
+|TemplateFiles/TemplateFile|Location|
 |SolutionDependency|SolutionID|
 
 ## <a name="manually-add-deployed-files"></a>手動新增已部署的檔案

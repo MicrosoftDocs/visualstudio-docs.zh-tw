@@ -1,5 +1,7 @@
 ---
 title: 內容參數 |Microsoft Docs
+description: 瞭解 Visual Studio 整合式開發環境中的內容參數 (IDE) ，以在您新增或執行 wizard 時定義專案的狀態。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d1a8c83ef9794479c35cd36609d77ef94621732
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 654ebf68efebaa44766079c172e87396134805e3
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012447"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304717"
 ---
 # <a name="context-parameters"></a>內容參數
-在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境中 (IDE) ，您可以將嚮導加入至 [ **新增專案**]、[ **加入新**專案] 或 [ **加入子專案** ] 對話方塊。 您可以在 [檔案 **] 功能表上，或** 以滑鼠右鍵按一下 **方案總管**中的專案，來使用新增的嚮導。 IDE 會將內容參數傳遞至 wizard 的執行。 當 IDE 呼叫 wizard 時，內容參數會定義專案的狀態。
+在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境中 (IDE) ，您可以將嚮導加入至 [ **新增專案**]、[ **加入新** 專案] 或 [ **加入子專案** ] 對話方塊。 您可以在 [檔案 **] 功能表上，或** 以滑鼠右鍵按一下 **方案總管** 中的專案，來使用新增的嚮導。 IDE 會將內容參數傳遞至 wizard 的執行。 當 IDE 呼叫 wizard 時，內容參數會定義專案的狀態。
 
  IDE 會 <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> 在 ide 呼叫專案的方法時，將旗標設定為啟動嚮導 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> 。 當設定時，專案必須 `IVsExtensibility::RunWizardFile` 使用已註冊的 wizard 名稱或 GUID，以及 IDE 傳遞給它的其他內容參數，來執行方法。
 

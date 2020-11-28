@@ -1,6 +1,8 @@
 ---
 title: SharePoint 工具擴充功能的程式設計模型總覽
 titleSuffix: ''
+description: 閱讀 SharePoint 工具擴充功能程式設計模型的總覽。 執行擴充性介面。 瞭解物件模型。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2f7b56b372f1f083b441a5d3e6045ffc7aff7ed
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 67e0f4ae5b06e96747a7257b2b9b444566235877
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585728"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305132"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>SharePoint 工具擴充功能的程式設計模型總覽
   在 Visual Studio 中建立 SharePoint 工具的延伸模組時，您會從實作 SharePoint 工具公開的一或多個擴充性介面開始。 在大部分情況下，您也會使用 SharePoint 工具所提供的其他類型，在您的延伸模組中實作功能。 在某些情況下，您也可以使用 Visual Studio 和 SharePoint 所提供的其他物件模型中的類型。 您必須了解每個物件模型的用途，並了解如何將它們搭配使用，為 SharePoint 工具建立延伸模組。
@@ -36,7 +38,7 @@ ms.locfileid: "91585728"
 |<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|實作這個介面來擴充 Visual Studio 中已安裝的 SharePoint 專案項目的類型。 如需範例，請參閱 [如何：建立 SharePoint 專案專案延伸](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)模組。|
 |<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>|實作這個介面來擴充 SharePoint 專案。 如需範例，請參閱 [如何：建立 SharePoint 專案延伸](../sharepoint/how-to-create-a-sharepoint-project-extension.md)模組。|
 |<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep>|實作這個介面來定義新的部署步驟，可以在部署或撤回 SharePoint 專案項目時執行。 如需範例，請參閱 [逐步解說：建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。|
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>|在**伺服器總管**視窗中的 [ **SharePoint 連接**] 節點下，執行這個介面以擴充現有的節點。 如需範例，請參閱 [如何：在伺服器總管中擴充 SharePoint 節點](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。|
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>|在 **伺服器總管** 視窗中的 [ **SharePoint 連接**] 節點下，執行這個介面以擴充現有的節點。 如需範例，請參閱 [如何：在伺服器總管中擴充 SharePoint 節點](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。|
 |<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>|在 [**伺服器總管**] 視窗的 [ **SharePoint 連接**] 節點下，執行這個介面以定義新的節點類型。 如需範例，請參閱 [如何：在伺服器總管中擴充 SharePoint 節點](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。|
 |<xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule>|實作這個介面來定義自訂功能驗證規則。 如需範例，請參閱 [如何：建立 SharePoint 方案的自訂功能和封裝驗證規則](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。|
 |<xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule>|實作這個介面來定義自訂封裝驗證規則。 如需範例，請參閱 [如何：建立 SharePoint 方案的自訂功能和封裝驗證規則](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。|
@@ -73,7 +75,7 @@ ms.locfileid: "91585728"
 
 |命名空間|描述|
 |-|-|
-|<xref:Microsoft.VisualStudio.SharePoint.Commands>|包含您可以用來建立自訂 *SharePoint 命令*的類型。 SharePoint 命令是從 SharePoint 工具擴充功能呼叫 SharePoint 伺服器物件模型的方法。 如需詳細資訊，請參閱 [呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。|
+|<xref:Microsoft.VisualStudio.SharePoint.Commands>|包含您可以用來建立自訂 *SharePoint 命令* 的類型。 SharePoint 命令是從 SharePoint 工具擴充功能呼叫 SharePoint 伺服器物件模型的方法。 如需詳細資訊，請參閱 [呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。|
 
 #### <a name="microsoftvisualstudiosharepointexplorerextensionsdll"></a>Microsoft.VisualStudio.SharePoint.Explorer.Extensions.dll
 
@@ -84,16 +86,16 @@ ms.locfileid: "91585728"
 ### <a name="visual-studio-automation-object-model"></a>Visual Studio automation 物件模型
  Visual Studio 自動化物件模型會提供可用來自動化 Visual Studio 專案 和 IDE 的 API。 使用 Visual Studio 物件模型來執行非 SharePoint 專案特定的專案相關工作，或在 Visual Studio 中執行其他一般自動化工作。 傳統上，此物件模型常用於 Visual Studio 增益集和巨集，但您也可以在 SharePoint 工具擴充功能中使用它。
 
- Visual Studio automation 物件模型的主要部分是在 *EnvDTE.dll* 元件中定義。 *EnvDTE \\ \<version> .dll*元件提供在特定版本的 Visual Studio 中引進的額外功能。 這些組件隨附於 Visual Studio。
+ Visual Studio automation 物件模型的主要部分是在 *EnvDTE.dll* 元件中定義。 *EnvDTE \\ \<version> .dll* 元件提供在特定版本的 Visual Studio 中引進的額外功能。 這些組件隨附於 Visual Studio。
 
  如需自動化物件模型的詳細資訊，請參閱 [VISUAL STUDIO SDK 參考](../extensibility/visual-studio-sdk-reference.md)。
 
 ### <a name="visual-studio-integration-object-model"></a>Visual Studio 整合物件模型
- 整合物件模型提供的 Api，可讓您藉由建立 *VSPackage*將功能新增至 Visual Studio。 VSPackage 是模組，藉由提供自訂功能，例如工具視窗、編輯器、設計工具、服務和專案來擴充 Visual Studio IDE。
+ 整合物件模型提供的 Api，可讓您藉由建立 *VSPackage* 將功能新增至 Visual Studio。 VSPackage 是模組，藉由提供自訂功能，例如工具視窗、編輯器、設計工具、服務和專案來擴充 Visual Studio IDE。
 
- 如果您想要加入將與內建的 SharePoint 工具搭配使用的新 Visual Studio 功能，您可以使用整合物件模型。 例如，如果您建立可表示 SharePoint 網站自訂動作的自訂 SharePoint 專案項目，您也可以建立可實作自訂動作的設計工具的 VSPackage。 您可以將設計工具與自訂動作建立關聯，方法是將快捷方式功能表項目加入至代表 **方案總管**中自訂動作的專案專案。 您可以開啟設計工具，方法是開啟其快捷方式功能表 (方法是以滑鼠右鍵按一下自訂動作專案專案，或選擇 [ **Shift** + **F10**鍵]) 然後選擇 [**開啟**]。
+ 如果您想要加入將與內建的 SharePoint 工具搭配使用的新 Visual Studio 功能，您可以使用整合物件模型。 例如，如果您建立可表示 SharePoint 網站自訂動作的自訂 SharePoint 專案項目，您也可以建立可實作自訂動作的設計工具的 VSPackage。 您可以將設計工具與自訂動作建立關聯，方法是將快捷方式功能表項目加入至代表 **方案總管** 中自訂動作的專案專案。 您可以開啟設計工具，方法是開啟其快捷方式功能表 (方法是以滑鼠右鍵按一下自訂動作專案專案，或選擇 [ **Shift** + **F10** 鍵]) 然後選擇 [**開啟**]。
 
- 此物件模型是在隨附於 Visual Studio SDK 的組件集中定義。 此物件模型中的部分主要元件包括 *Microsoft.VisualStudio.Shell.11.0.dll*、 *Microsoft.VisualStudio.Shell.Interop.dll*和 *Microsoft.VisualStudio.OLE.Interop.dll*。
+ 此物件模型是在隨附於 Visual Studio SDK 的組件集中定義。 此物件模型中的部分主要元件包括 *Microsoft.VisualStudio.Shell.11.0.dll*、 *Microsoft.VisualStudio.Shell.Interop.dll* 和 *Microsoft.VisualStudio.OLE.Interop.dll*。
 
  如需有關整合物件模型的詳細資訊，請參閱 [Automation 模型總覽](../extensibility/internals/automation-model-overview.md) 和 [Visual Studio SDK 參考](../extensibility/visual-studio-sdk-reference.md)。
 
@@ -104,7 +106,7 @@ ms.locfileid: "91585728"
 
 |物件模型|描述|
 |------------------|-----------------|
-|伺服器物件模型|伺服器物件模型提供 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 和 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 以程式設計的方式公開的所有功能的存取權。 此物件模型的設計是要由 SharePoint 伺服器上執行的 SharePoint 方案所使用。 此物件模型大部分是在 *Microsoft.SharePoint.dll* 元件中定義。 如需伺服器物件模型的詳細資訊，請參閱 [使用 SharePoint Foundation 伺服器端物件模型](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14))。|
+|伺服器物件模型|伺服器物件模型提供 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 和 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 以程式設計的方式公開的所有功能的存取權。 此物件模型的設計是要由 SharePoint 伺服器上執行的 SharePoint 方案所使用。 此物件模型大部分是在 *Microsoft.SharePoint.dll* 元件中定義。 如需伺服器物件模型的詳細資訊，請參閱 [使用 SharePoint Foundation Server-Side 物件模型](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14))。|
 |用戶端物件模型|用戶端物件模型是可以用來從遠端用戶端或伺服器與 SharePoint 資料交互操作的伺服器物件模型的子集。 其設計是為了將必須執行以執行一般工作的往返次數降到最低。 大部分的用戶端物件模型都是在 *Microsoft.SharePoint.Client.dll* 和 *Microsoft.SharePoint.Client.Runtime.dll* 元件中定義。 如需用戶端物件模型的詳細資訊，請參閱 [Managed 用戶端物件模型](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14))。|
 
 ## <a name="see-also"></a>另請參閱

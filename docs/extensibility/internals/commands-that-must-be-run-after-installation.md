@@ -1,5 +1,7 @@
 ---
 title: 必須在安裝後執行的命令 |Microsoft Docs
+description: 瞭解在安裝透過 Visual Studio 中的 .msi 檔案部署的擴充功能時，必須執行的命令。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77add5afd5d44358f0077a11bb70559a796e74c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64eda9c95b9c469d8defc8ab0318031e9e43172a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709478"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305040"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>必須在安裝後執行的命令
 如果您透過 *.msi* 檔案部署擴充功能，您必須在安裝過程中執行 **devenv/setup** ，才能讓 Visual Studio 探索您的擴充功能。
@@ -44,7 +46,7 @@ ms.locfileid: "80709478"
 |DEVENV_EXE_2005|RL_DevenvExe_2005|
 |DEVENV_EXE_2008|RL_DevenvExe_2008|
 
- 例如，Visual Studio 安裝程式會將 **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0\setup\vs\environmentpath** 的登錄值寫入為 *C:\VS2008\Common7\IDE\devenv.exe*，也就是安裝程式必須執行的可執行檔完整路徑。
+ 例如，Visual Studio 安裝程式會將 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath** 的登錄值寫入為 *C:\VS2008\Common7\IDE\devenv.exe*，也就是安裝程式必須執行的可執行檔完整路徑。
 
 > [!NOTE]
 > 因為 RegLocator 資料表的類型資料行是2，所以不需要在簽章資料表中指定其他版本資訊。

@@ -1,5 +1,7 @@
 ---
 title: 命令路由演算法 |Microsoft Docs
+description: 瞭解 Visual Studio 中的命令解析順序，因為命令是由不同的元件處理，並從最內層路由到最外層的內容。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af8d3e53e09214ce36a80ca18856085dfb2bb746
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1694e0835add6eac75986538a8abae99adf717b1
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709542"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305240"
 ---
 # <a name="command-routing-algorithm"></a>命令路由演算法
 在 Visual Studio 命令會由許多不同的元件處理。 命令會根據目前的選取範圍，從最內層的內容路由傳送至最外層的 (也稱為全域) 內容。 如需詳細資訊，請參閱 [命令可用性](../../extensibility/internals/command-availability.md)。
@@ -36,9 +38,9 @@ ms.locfileid: "80709542"
 
 6. 文件視窗：如果命令 `RouteToDocs` 在其 *.vsct* 檔案中設定了旗標，Visual Studio 會在檔視圖物件（也就是介面的實例或檔物件的實例）上尋找命令目標， <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> (通常是 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> 介面或 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> 介面) 。 如果 document view 物件不支援命令，Visual Studio 會將命令路由傳送至傳回的 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面。  (這是檔資料物件的選用介面。 ) 
 
-7. 目前階層：目前的階層可以是擁有使用中文件視窗的專案，或是在 **方案總管**中選取的階層。 Visual Studio 會尋找在 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 目前或使用中的階層上所執行的介面。 階層應該支援每次使用時都有效的命令，即使專案專案的文件視窗具有焦點也一樣。 不過，只有在 **方案總管** 具有焦點時才適用的命令，必須使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 介面及其 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> 和方法來支援 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> 。
+7. 目前階層：目前的階層可以是擁有使用中文件視窗的專案，或是在 **方案總管** 中選取的階層。 Visual Studio 會尋找在 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 目前或使用中的階層上所執行的介面。 階層應該支援每次使用時都有效的命令，即使專案專案的文件視窗具有焦點也一樣。 不過，只有在 **方案總管** 具有焦點時才適用的命令，必須使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 介面及其 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> 和方法來支援 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> 。
 
-     **剪**下、 **複製**、 **貼**上、 **刪除**、 **重新命名**、 **輸入**和 **DoubleClick** 命令都需要特殊處理。 如需如何處理階層中 **刪除** 和 **移除** 命令的詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> 介面。
+     **剪** 下、 **複製**、 **貼** 上、 **刪除**、 **重新命名**、 **輸入** 和 **DoubleClick** 命令都需要特殊處理。 如需如何處理階層中 **刪除** 和 **移除** 命令的詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> 介面。
 
 8. 全域：如果先前提及的內容尚未處理某個命令，Visual Studio 會嘗試將它路由至擁有執行介面之命令的 VSPackage <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 。 如果尚未載入 VSPackage，當 Visual Studio 呼叫方法時，就不會載入它 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 。 只有在呼叫方法時，才會載入 VSPackage <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 。
 

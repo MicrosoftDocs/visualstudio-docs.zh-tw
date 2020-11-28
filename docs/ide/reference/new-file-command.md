@@ -1,5 +1,7 @@
 ---
 title: 新增檔案命令
+description: 瞭解新的檔案命令，以及它如何建立新的檔案並加以開啟。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe8a99ee59a347fdcb7cff601b75139760630f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c800ce0ed130ed78f9537584c95a29a717f405fa
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595952"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304104"
 ---
 # <a name="new-file-command"></a>新增檔案命令
 建立新的檔案並開啟它。 檔案會顯示其他檔案資料夾之下。
@@ -46,10 +48,10 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 /t:"Visual C++\C++ File (.cpp)"
 ```
 
-上述範例指出 C++ 檔案範本位於 [新增檔案]**** 對話方塊的 Visual C++ 分類。
+上述範例指出 C++ 檔案範本位於 [新增檔案] 對話方塊的 Visual C++ 分類。
 
 /e:`editorname`\
-選擇性。 將用來開啟檔案之編輯器的名稱。 如果指定此引數，但未提供編輯器名稱，則會出現 [開啟方式]**** 對話方塊。
+選擇性。 將用來開啟檔案之編輯器的名稱。 如果指定此引數，但未提供編輯器名稱，則會出現 [開啟方式] 對話方塊。
 
 /e:`editorname` 引數語法會使用出現在 [開啟方式] 對話方塊並使用引號括住的編輯器名稱。
 
