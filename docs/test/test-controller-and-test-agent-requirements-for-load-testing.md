@@ -1,5 +1,6 @@
 ---
 title: " (負載測試的測試控制器/測試代理程式需求) "
+description: 瞭解負載測試的測試控制器和測試代理程式需求。 Visual Studio 支援數種測試類型。
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.assetid: 372d97ce-12e4-46a9-9863-da508adba68f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a5d4e0562ed15aa44beba858f46870bf672d46ba
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 6668e669fdc26db9d81c7176aeee16e5af42987b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810545"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330182"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>負載測試的測試控制器和測試代理程式需求
 
@@ -31,7 +32,7 @@ ms.locfileid: "90810545"
 
 下表顯示部署測試控制器和測試代理程式的建議硬體需求。
 
-|**Configuration**|**元件**|**CPU**|**HD**|**記憶體**|
+|**設定**|**元件**|**CPU**|**HD**|**記憶體**|
 |-|-------------------|-|------------|-|
 |少於 500 位虛擬使用者|測試代理程式|2.6 GHz|10 GB|2 GB|
 |少於 1000 位虛擬使用者|測試代理程式|雙重處理器 2.6 GHz|10 GB|2 GB|
@@ -40,7 +41,7 @@ ms.locfileid: "90810545"
 |N x 30 部電腦於測試環境中。 這包括要測試的代理程式和伺服器。|測試控制器|N 2.6 GHz 處理器|||
 
 > [!NOTE]
-> 虛擬使用者的人數會隨著每個測試而大不相同。 造成這個變異的主要原因是「考慮時間」** 或使用者延遲的變異。 如需詳細資訊，請參閱[編輯考慮時間以模擬網站人類互動延遲](../test/edit-think-times-in-load-test-scenarios.md)。 在負載測試中，Web 測試一般都比單元測試更為有效，而且可產生更多的負載。 上表數字的有效情況：對一般 Web 應用程式執行 Web 測試時，搭配 3-5 秒的考慮時間。
+> 虛擬使用者的人數會隨著每個測試而大不相同。 造成這個變異的主要原因是「考慮時間」或使用者延遲的變異。 如需詳細資訊，請參閱[編輯考慮時間以模擬網站人類互動延遲](../test/edit-think-times-in-load-test-scenarios.md)。 在負載測試中，Web 測試一般都比單元測試更為有效，而且可產生更多的負載。 上表數字的有效情況：對一般 Web 應用程式執行 Web 測試時，搭配 3-5 秒的考慮時間。
 
 這裡提供的方針可做為硬體規劃的一般指引。 測試資料的數量和測試代理程式的數目會使測試效能產生極大的差異。 對測試代理程式而言，CPU 速度和可用的記憶體將會限制測試負載。 此外，視測試代理程式的數目和測試的相關資料數量而定，測試控制器會需要更大量的資源。
 

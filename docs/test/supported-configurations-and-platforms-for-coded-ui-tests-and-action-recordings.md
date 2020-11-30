@@ -1,5 +1,7 @@
 ---
 title: 自動程式化 UI 測試的組態和平台
+description: 本文包含 Visual Studio Enterprise 的自動程式碼 UI 測試支援的設定和平臺。
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2015
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3636f87db5c395f1660d9271d0eed5cacec99161
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2b749375c398b3deb6ac56e8b1a787b0bcb82b22
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036895"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330247"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>自動程式碼 UI 測試和動作記錄的支援組態和平台
 
@@ -25,13 +27,13 @@ Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會�
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**需求**
+**Requirements**
 
 - Visual Studio Enterprise
 
 ## <a name="supported-configurations"></a>支援的設定
 
-| 設定 | 支援 |
+| 組態 | 支援 |
 |-| - |
 | 作業系統 | [!INCLUDE[win7](../debugger/includes/win7_md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]<br /><br /> [!INCLUDE[win8](../debugger/includes/win8_md.md)]<br /><br /> Windows 10 |
 | 32 位元/ 64 位元支援 | 執行 32 位元 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 的 32 位元 Windows 可以測試 32 位元應用程式。<br /><br /> 執行 32 位元 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 的 64 位元 Windows，可以測試具有「UI 同步處理」的 32 位元 WOW 應用程式。<br /><br /> 執行 32 位元 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 的 64 位元 Windows 可以測試沒有「UI 同步處理」的 64 位元 Windows Form 和 WPF 應用程式。 |

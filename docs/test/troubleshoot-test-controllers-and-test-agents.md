@@ -1,5 +1,7 @@
 ---
 title: 針對測試控制器和測試代理程式進行移難排解
+description: 瞭解當您在 Visual Studio 中使用測試控制器和測試代理程式時，可能會遇到的一些常見問題。
+ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 51d7e15ec71eec7134dfc49b3515385970e593a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e86811739df2d59e3de7980cfa346da68cc0eb43
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565951"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330143"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>負載測試中測試控制器和測試代理程式的疑難排解策略
 
@@ -29,7 +31,7 @@ ms.locfileid: "75565951"
 當您執行負載測試時，若您嘗試連接至測試代理程式電腦並收集效能計數器，便可能會接收到錯誤。 「遠端登錄」服務是負責提供效能計數器資料給遠端電腦的服務。 在某些作業系統上，遠端登錄服務並不會自動啟動。 若要修正此問題，請手動啟動「遠端登錄」服務。
 
 > [!NOTE]
-> 您可以在 [控制台]**** 中存取「遠端登錄」服務。 選擇 [系統管理工具]****，然後選擇 [服務]****。
+> 您可以在 [控制台] 中存取「遠端登錄」服務。 選擇 [系統管理工具]，然後選擇 [服務]。
 
 造成這個問題的另一個原因，是您沒有讀取效能計數器的足夠權限。 對於本機測試回合，執行測試的使用者帳戶必須是 [Power Users] 群組 (或更高) 的成員，或 [Performance Monitor Users] 群組的成員。 對於遠端測試回合，設定控制器執行的帳戶必須是 [Power Users] 群組 (或更高) 的成員，或 [Performance Monitor Users] 群組的成員。
 
@@ -41,7 +43,7 @@ ms.locfileid: "75565951"
 
 1. 停止測試控制器服務。 在命令提示中，鍵入 `net stop vsttcontroller`。
 
-2. 開啟 *QTController.exe.config*的檔案。此檔案位於控制器安裝目錄中。
+2. 開啟 *QTController.exe.config* 的檔案。此檔案位於控制器安裝目錄中。
 
 3. 在該檔案的系統診斷區段中，編輯 `EqtTraceLevel` 參數的項目。 您的程式碼應該會與以下相似：
 
@@ -99,9 +101,9 @@ ms.locfileid: "75565951"
 
 1. 選擇 [ **開始**]，然後選擇 [ **執行**]。
 
-     [執行]**** 對話方塊隨即顯示。
+     [執行] 對話方塊隨即顯示。
 
-2. 鍵入 `cmd`，然後選擇 [確定]****。
+2. 鍵入 `cmd`，然後選擇 [確定]。
 
      命令提示字元隨即開啟。
 
@@ -113,7 +115,7 @@ ms.locfileid: "75565951"
 
 1. 停止測試控制器服務。 在命令提示中，鍵入 `net stop vsttcontroller`。
 
-2. 開啟 *QTController.exe.config*的檔案。這個檔案位於 *% ProgramFiles (x86) % \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*。
+2. 開啟 *QTController.exe.config* 的檔案。這個檔案位於 *% ProgramFiles (x86) % \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*。
 
 3. 將 `BindTo` 屬性的項目加入至應用程式設定。 指定控制器要繫結之網路介面卡的 IP 位址。 您的程式碼應該會與以下相似：
 

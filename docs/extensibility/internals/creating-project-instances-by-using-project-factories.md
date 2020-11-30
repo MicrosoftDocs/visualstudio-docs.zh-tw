@@ -1,5 +1,7 @@
 ---
 title: 使用專案工廠建立專案實例 |Microsoft Docs
+description: 瞭解如何使用 Visual Studio 整合式開發環境 (IDE) 中的專案 factory 來建立專案類別實例。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31ba5dd11af18f8a723b2271544eff2bd292e2e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59ad41bda80337fd0adc65d4792adbbbb1cf38f1
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709055"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328583"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>使用 project factory 建立專案實例
 中的專案類型 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用 *專案 factory* 來建立專案物件的實例。 專案 factory 類似于 cocreatable COM 物件的標準 class factory。 但是，不會 cocreatable 專案物件;您只能使用專案 factory 來建立它們。
@@ -38,7 +40,7 @@ ms.locfileid: "80709055"
 
    專案類型會與特定的副檔名相關聯。 當使用者嘗試開啟現有的專案檔，或嘗試透過複製範本來建立新的專案時，IDE 會使用該檔案上的副檔名來判斷對應的專案 GUID。
 
-   一旦 IDE 判斷它是否必須建立新的專案，或開啟特定類型的現有專案，IDE 就會使用 **[HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0\projects]** 下系統登錄中的資訊，找出哪些 VSPackage 會執行必要的專案 factory。 IDE 會載入此 VSPackage。 在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> 方法中，VSPackage 必須藉由呼叫方法，在 IDE 中註冊其 project factory <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> 。
+   當 IDE 判斷它是否必須建立新的專案或開啟特定類型的現有專案時，IDE 會使用 **[HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects]** 下系統登錄中的資訊，來找出哪些 VSPackage 會執行必要的專案 factory。 IDE 會載入此 VSPackage。 在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> 方法中，VSPackage 必須藉由呼叫方法，在 IDE 中註冊其 project factory <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> 。
 
    介面的主要方法 `IVsProjectFactory` 是 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> ，這應該會處理兩種案例：開啟現有的專案並建立新專案。 大部分的專案會將其專案狀態儲存在專案檔中。 通常會建立新的專案，方法是複製一份傳遞給方法的範本檔案 `CreateProject` ，然後開啟複製。 現有的專案會藉由直接開啟傳遞給方法的專案檔來具現化 `CreateProject` 。 `CreateProject`方法可以視需要向使用者顯示額外的 UI 功能。
 

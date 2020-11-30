@@ -1,5 +1,7 @@
 ---
 title: 開發舊版語言服務 |Microsoft Docs
+description: 瞭解如何在 VSPackage 過程中，或使用 Managed Extensibility Framework (MEF) 擴充功能來執行舊版語言服務。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c7f930d5087b6a822156fd44024def0d5b42b49
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7876b590cb5b09cf5db571ba1145f6bf747e5e5
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708675"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329740"
 ---
 # <a name="develop-a-legacy-language-service"></a>開發舊版語言服務
 本節連結的主題可協助您建立舊版語言服務。

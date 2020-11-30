@@ -1,5 +1,6 @@
 ---
 title: 執行原始檔控制的時機 VSPackage
+description: 瞭解可用於擴充 Visual Studio 原始檔控制解決方案的原始檔控制外掛程式和原始檔控制 Vspackage 的選項。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f96191115a509e07b5263f1d10d53ea3b2cc9c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c7b6c0e786f13ff526a1b71861c040cb165bc9e4
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037038"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329818"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>判斷是否要執行原始檔控制 VSPackage
 

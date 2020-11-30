@@ -1,5 +1,7 @@
 ---
 title: 探索界限 | Microsoft IntelliTest 開發人員測試工具
+description: PexSettingsAttributeBase 是以屬性形式設定界限的抽象基底類別。 瞭解如何使用命名屬性來修改設定。
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2a57d79fb64675f90edf50e6a0d7d50b8a3c6fd7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 713ccf139e4110923f45073308da2c249305eb18
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315209"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328895"
 ---
 # <a name="exploration-bounds"></a>探索界限
 

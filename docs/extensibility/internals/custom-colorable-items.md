@@ -1,5 +1,7 @@
 ---
 title: 自訂可設定色彩專案 |Microsoft Docs
+description: 瞭解如何藉由覆寫 [字型和色彩] 對話方塊中的專案（例如關鍵字和批註）來建立自訂可設定色彩專案做為語言服務的一部分。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: feecd9e8f8178045f66999b775e2d0792f50b288
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 648a8e45b5b472ccc1a37cd69e2043f0bb5b9aa3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708988"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328531"
 ---
 # <a name="custom-colorable-items"></a>自訂可設定色彩專案
 您可以藉由將自訂可設定色彩專案實作為語言服務的一部分，來覆寫標示的類型清單，例如關鍵字和批註。
 
 ## <a name="user-settings-of-colorable-items"></a>可設定色彩專案的使用者設定
- 您可以藉由選取 [**工具**] 功能表上的 **[選項**]，然後選取 [**環境**] 下的 [字型**和色彩**]，來顯示 [字型**和色彩**] 對話方塊。 當您選取顯示（例如 **文字編輯器** 或 **命令視窗**）時，[ **顯示專案** ] 清單方塊會顯示該顯示專案的所有可設定色彩專案。 您可以針對每個可設定色彩專案來查看和變更字型、大小、前景色彩和背景色彩。 您的選擇會儲存在登錄中的快取中，並由可設定色彩專案名稱存取。
+ 您可以藉由選取 [**工具**] 功能表上的 **[選項**]，然後選取 [**環境**] 下的 [字型 **和色彩**]，來顯示 [字型 **和色彩**] 對話方塊。 當您選取顯示（例如 **文字編輯器** 或 **命令視窗**）時，[ **顯示專案** ] 清單方塊會顯示該顯示專案的所有可設定色彩專案。 您可以針對每個可設定色彩專案來查看和變更字型、大小、前景色彩和背景色彩。 您的選擇會儲存在登錄中的快取中，並由可設定色彩專案名稱存取。
 
 ## <a name="presentation-of-colorable-items"></a>可設定色彩專案的簡報
  因為 IDE 會在 [字型 **和色彩** ] 對話方塊中處理可設定色彩專案的使用者覆寫，所以您只需要為每個自訂可設定色彩專案提供名稱。 此名稱會顯示在 [ **顯示專案** ] 清單中。 可設定色彩專案會依字母順序顯示。 若要將語言服務的自訂可設定色彩專案分組，您可以使用您的語言名稱來開始每個名稱，例如 **NewLanguage-Comment** 和 **NewLanguage 關鍵字**。
@@ -32,7 +34,7 @@ ms.locfileid: "80708988"
 >
 > *C:\Program Files (x86) \Microsoft Visual Studio 14.0 \ VSSDK\VisualStudioIntegration\Tools\Bin*
 >
-> 若要重設快取，請輸入 **CreateExpInstance/Reset**。 如需 **CreateExpInstance**的詳細資訊，請參閱 [CreateExpInstance 公用程式](../../extensibility/internals/createexpinstance-utility.md)。
+> 若要重設快取，請輸入 **CreateExpInstance/Reset**。 如需 **CreateExpInstance** 的詳細資訊，請參閱 [CreateExpInstance 公用程式](../../extensibility/internals/createexpinstance-utility.md)。
 
  永遠不會參考可設定色彩專案清單中的第一個專案。 第一個專案對應至可設定色彩專案索引0，而且 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 一律會提供該專案的預設文字色彩和屬性。 處理這個未參考專案的最簡單方式，就是在清單中提供預留位置可設定色彩專案做為第一個專案。
 

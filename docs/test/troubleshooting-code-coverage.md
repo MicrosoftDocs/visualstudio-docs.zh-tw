@@ -1,5 +1,7 @@
 ---
 title: 針對程式碼涵蓋範圍進行疑難排解
+description: 瞭解當您預期 Visual Studio 收集原生和 managed 元件的資料時，如何解決錯誤的空結果訊息。
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: troubleshooting
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 39d5d54021e7b8286bd653941d233a73bcf8cfb4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e960e0729e7d13b27d0c4fbda9b3f8eca0ac57c
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80528001"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330117"
 ---
 # <a name="troubleshoot-code-coverage"></a>對程式碼涵蓋範圍進行疑難排解
 
@@ -20,7 +22,7 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生和 managed 
 
 ## <a name="what-you-should-see"></a>您應該會看到
 
-如果您選擇 [**測試**] 功能表上的 [**分析程式碼涵蓋範圍**] 命令，而且組建和測試都成功執行，您應該會在 [程式**代碼涵蓋範圍**] 視窗中看見結果清單。 您可能必須展開項目才能查看詳細資料。
+如果您選擇 [**測試**] 功能表上的 [**分析程式碼涵蓋範圍**] 命令，而且組建和測試都成功執行，您應該會在 [程式 **代碼涵蓋範圍**] 視窗中看見結果清單。 您可能必須展開項目才能查看詳細資料。
 
 ::: moniker range=">=vs-2019"
 ![顯示著色內容的程式碼涵蓋範圍結果](../test/media/vs-2019/codecoverage1.png)
@@ -39,11 +41,11 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生和 managed 
 
 ### <a name="no-tests-were-executed"></a>沒有執行過任何測試
 
-分析&mdash;請查看輸出視窗。 在 [顯示輸出來源]**** 下拉式清單中選擇 [測試]****。 檢查是否有記錄任何警告或錯誤。
+分析&mdash;請查看輸出視窗。 在 [顯示輸出來源] 下拉式清單中選擇 [測試]。 檢查是否有記錄任何警告或錯誤。
 
 說明&mdash;程式碼涵蓋範圍分析會在執行測試時進行。 這項分析只包括在執行測試時載入記憶體的組件。 如果沒有執行任何測試，程式碼涵蓋範圍就不會產生任何報告。
 
-解決方式&mdash;在 [測試總管] 中，選擇 [全部執行]****，確認所執行的測試是否成功。 在使用 [分析程式碼涵蓋範圍]**** 之前修正所有錯誤。
+解決方式&mdash;在 [測試總管] 中，選擇 [全部執行]，確認所執行的測試是否成功。 在使用 [分析程式碼涵蓋範圍] 之前修正所有錯誤。
 
 ### <a name="youre-looking-at-a-previous-result"></a>您看到的是之前的結果
 
@@ -55,15 +57,15 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生和 managed 
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>.pdb (符號) 檔案無法使用
 
-分析 &mdash; 開啟編譯目的檔案夾 (通常會*bin\debug*) ，並確認每個元件都有與 *.dll*或 *.exe*檔案相同的目錄中的 *.pdb*檔。
+分析 &mdash; 開啟編譯目的檔案夾 (通常會 *bin\debug*) ，並確認每個元件都有與 *.dll* 或 *.exe* 檔案相同的目錄中的 *.pdb* 檔。
 
 說明 &mdash; 程式碼涵蓋範圍引擎會要求每個元件在測試回合期間都能夠存取其相關聯 *的 .pdb* 檔案。 如果特定元件沒有 *.pdb* 檔，就不會分析該元件。
 
-*.Pdb*檔案必須從與 *.dll*或 *.exe*檔案相同的組建產生。
+*.Pdb* 檔案必須從與 *.dll* 或 *.exe* 檔案相同的組建產生。
 
 解決方法 &mdash; ：確定您的組建設定會產生 *.pdb* 檔。 如果建立專案時不會更新 *.pdb* 檔案，請開啟專案屬性，選取 [ **組建** ] 頁面，選擇 [ **Advanced**]，然後檢查 [ **偵錯工具資訊**]。
 
-針對 c + + 專案，請確定產生的 .pdb 檔案具有完整的偵錯工具資訊。 開啟 [專案屬性]，並確認 [**連結器**  >  **調試**程式]  >  會將 [**產生調試**程式] 設定為 [**產生已針對共用和發行優化的偵錯工具] (/debug： FULL) **。
+針對 c + + 專案，請確定產生的 .pdb 檔案具有完整的偵錯工具資訊。 開啟 [專案屬性]，並確認 [**連結器**  >  **調試** 程式]  >  會將 [**產生調試** 程式] 設定為 [**產生已針對共用和發行優化的偵錯工具] (/debug： FULL)**。
 
 如果 *.pdb* 和 *.dll* 或 *.exe* 檔案位於不同的位置，請將 *.pdb* 檔案複製到相同的目錄。 您也可以設定程式碼涵蓋範圍引擎來搜尋另一個位置的 *.pdb* 檔。 如需詳細資訊，請參閱[自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。
 

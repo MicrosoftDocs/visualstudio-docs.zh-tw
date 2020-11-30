@@ -1,5 +1,7 @@
 ---
 title: 自訂消費者介面 (原始檔控制 VSPackage) |Microsoft Docs
+description: 瞭解如何使用原始檔控制 VSPackage 指定 UI 專案，在 Visual Studio 中建立自訂使用者介面 (UI) 。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6ef807cef17a6ca3cddfee05ba57ace27e34a9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1426b271ea8db4d486043c9fbe885a0f428b514
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708935"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328518"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>自訂使用者介面 (原始檔控制 VSPackage) 
 VSPackage 會透過 Visual Studio 的命令資料表 (*. .vsct*) 檔來宣告其功能表項目和其預設狀態。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) 會顯示預設狀態下的功能表項目，直到載入 VSPackage 為止。 接著 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 會呼叫方法來啟用或停用功能表項目。
@@ -49,9 +51,9 @@ VSPackage 會透過 Visual Studio 的命令資料表 (*. .vsct*) 檔來宣告其
 
   下表說明 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 如何隱藏不同的 UI 專案的特定詳細資料。
 
-| UI 專案 | 描述 |
+| UI 專案 | 說明 |
 | - | - |
-| 功能表與工具列 | 原始檔控制封裝必須在 *.vsct*檔案的[VisibilityConstraints](../../extensibility/visibilityconstraints-element.md)區段中，將初始功能表和工具列可見度狀態設定為原始檔控制封裝識別碼。 這可讓 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 適當地設定功能表項目的狀態，而不需要載入 VSPackage 和呼叫方法的執行 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 。 |
+| 功能表與工具列 | 原始檔控制封裝必須在 *.vsct* 檔案的 [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md)區段中，將初始功能表和工具列可見度狀態設定為原始檔控制封裝識別碼。 這可讓 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 適當地設定功能表項目的狀態，而不需要載入 VSPackage 和呼叫方法的執行 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 。 |
 | 工具視窗 | 當它變成非使用中時，原始檔控制 VSPackage 會隱藏它所擁有的任何工具視窗。 |
 | 原始檔控制 VSPackage 特定的選項頁面 | 登錄機碼 **HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUICoNtexts** 可讓 VSPackage 設定需要顯示其 [選項] 頁面的內容。 您必須使用原始檔控制服務的服務識別碼 (SID) 來建立此機碼底下的登錄專案，並為其指派 DWORD 值1。 每當 UI 事件發生在與原始檔控制 VSPackage 的內容中時，就會呼叫 VSPackage （如果它是使用中）。 |
 

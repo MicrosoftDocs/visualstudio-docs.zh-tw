@@ -1,5 +1,7 @@
 ---
 title: 建立解決方案的父容器檔案夾 |Microsoft Docs
+description: 瞭解如何使用原始檔控制外掛程式 API 版本1.2，為方案中的所有 Web 專案指定單一根原始檔控制目的地。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e5481e20a12fc05ccba97eef55173e5ce9b30d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e65da2b50984b0259079a1693dd31d400e1e12e3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709093"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329935"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>建立解決方案的父容器檔案夾
 在原始檔控制外掛程式 API 版本1.2 中，使用者可以針對方案內的所有 Web 專案指定單一根原始檔控制目的地。 這個單一根目錄稱為 (SUR) 的超級統一根。
@@ -62,7 +64,7 @@ ms.locfileid: "80709093"
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 如果原始檔控制外掛程式不會傳回 `SCC_CAP_CREATESUBPROJECT` 和 `SCC_CAP_GETPARENTPROJECT` 功能旗標，則預設為1.1 版的行為。 此外，使用者 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可以藉由將下列機碼的值設定為 *dword： 00000001*，來選擇還原為1.1 版的行為：
 
- **[HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol] DoNotCreateSolutionRootFolderInSourceControl**  = *dword： 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl**  = *dword： 00000001*
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 版本1.2 的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

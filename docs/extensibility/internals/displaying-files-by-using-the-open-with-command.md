@@ -1,5 +1,7 @@
 ---
 title: 使用 [開啟檔案] 命令顯示檔案 |Microsoft Docs
+description: 瞭解專案如何在 Visual Studio 整合式開發環境中呼叫 [開啟檔案] 命令 (IDE) 以顯示檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4051793077e613981e1dd5b44f1736878f5853e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2cb6bd44148d470cac68addc09db9e9207e9d70
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708585"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329688"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>使用開啟檔案命令顯示檔案
 專案可以要求 IDE 顯示 [ **開啟方式** ] 對話方塊。 此要求會提示使用者開啟具有所選標準編輯器的檔案。 下列步驟說明此程式：

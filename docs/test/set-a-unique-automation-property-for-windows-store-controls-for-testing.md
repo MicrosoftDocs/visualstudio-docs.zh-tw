@@ -1,5 +1,6 @@
 ---
 title: 設定獨特的自動化屬性-測試 UWP 控制項
+description: 瞭解如何在以 XAML 為基礎的 UWP 應用程式中，根據 XAML 控制項的類型來指派唯一自動化屬性，以執行自動程式碼 UI 測試。
 ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: how-to
@@ -8,12 +9,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikejo5000
-ms.openlocfilehash: 1790ac51f513ddcb42500eb271212b68a4aefe63
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5af4f9c70696144e0efb420ab27860a1969bddc6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810216"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328324"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>為 UWP 控制項設定唯一自動化屬性以進行測試
 
@@ -44,7 +45,7 @@ ms.locfileid: "90810216"
 在 XAML 中，將控制項的 **AutomationProperties.AutomationId** 明確地設定為 **ButtonX**。
 
 ```xaml
-<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
+<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
 ```
 
 在 XAML 中，將控制項的 **AutomationProperties.Name** 明確設定為 **ButtonY**。
@@ -61,7 +62,7 @@ ms.locfileid: "90810216"
 
 ![在 Blend for Visual Studio 中命名互動式元素](../test/media/cuit_windowsstoreproperty_blend_1.png)
 
-若要自動將唯一名稱提供給您新增的新控制項，請選取 [**工具**  >  **選項**] 以開啟 [**選項**] 對話方塊。 選取 [XAML 設計工具]****，然後選取 [建立時自動命名互動式元素]****。 選取 [確定]**** 關閉對話方塊。
+若要自動將唯一名稱提供給您新增的新控制項，請選取 [**工具**  >  **選項**] 以開啟 [**選項**] 對話方塊。 選取 [XAML 設計工具]，然後選取 [建立時自動命名互動式元素]。 選取 [確定] 關閉對話方塊。
 
 ## <a name="use-a-data-template"></a>使用資料範本
 

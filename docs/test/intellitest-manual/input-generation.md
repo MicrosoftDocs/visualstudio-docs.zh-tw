@@ -1,5 +1,7 @@
 ---
 title: 動態符號執行 | Microsoft IntelliTest 開發人員測試工具
+description: 瞭解 IntelliTest 如何藉由分析程式中的分支條件來產生參數化單元測試的輸入。
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 771fd167a2dc9fce8278ca53f730872a9f170eb7
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315196"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329906"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>使用動態符號執行產生輸入
 
@@ -26,7 +28,7 @@ IntelliTest 會藉由分析程式中的分支條件，以產生[參數化單元�
 
 1. IntelliTest 會以所選的輸入 `i` 執行測試，並監視測試和待測程式的執行狀況。
 
-1. 在執行期間，程式會採用程式的所有條件式分支所判定的特定路徑。 判定執行的所有條件集合稱為「路徑條件」**，撰寫為正式輸入參數的述詞 `p: I -> {true, false}`。 IntelliTest 會計算這個述詞的表示法。
+1. 在執行期間，程式會採用程式的所有條件式分支所判定的特定路徑。 判定執行的所有條件集合稱為「路徑條件」，撰寫為正式輸入參數的述詞 `p: I -> {true, false}`。 IntelliTest 會計算這個述詞的表示法。
 
 1. IntelliTest 會設定 `q := (q or p)`。 換句話說，它記錄了已看到 `p` 所代表路徑的事實。
 
@@ -52,14 +54,14 @@ IntelliTest 使用 [Z3](https://github.com/Z3Prover/z3/wiki) 條件約束規劃�
 ## <a name="dynamic-code-coverage"></a>動態程式碼涵蓋範圍
 
 作為執行階段監視的副作用，IntelliTest 會收集動態程式碼涵蓋範圍資料。
-這稱為「動態」** 的原因是 IntelliTest 只知道已執行的程式碼，因此它無法以其他涵蓋範圍工具通常使用的相同方式，提供涵蓋範圍的絕對值。
+這稱為「動態」的原因是 IntelliTest 只知道已執行的程式碼，因此它無法以其他涵蓋範圍工具通常使用的相同方式，提供涵蓋範圍的絕對值。
 
 例如，當 IntelliTest 報告動態涵蓋範圍為 5/10 基本區塊時，這表示已涵蓋十個中的五個區塊，其中分析到目前為止已觸達之所有方法 (相對於待測組件中已存在的所有方法) 的區塊總數是十個。
 稍後在分析中，隨著探索到更多的可觸達方法，分子 (在此範例中為 5) 和分母 (10) 都可能會增加。
 
 ## <a name="integers-and-floats"></a>整數和浮點數
 
-IntelliTest 的[條件約束規劃求解](#constraint-solver)可決定基本類型的測試輸入值 (例如 **byte**、**int**、**float** 等等)，以觸發測試和待測程式的不同執行路徑。
+IntelliTest 的 [條件約束規劃求解](#constraint-solver)可決定基本類型的測試輸入值 (例如 **byte**、**int**、**float** 等等)，以觸發測試和待測程式的不同執行路徑。
 
 ## <a name="objects"></a>物件
 
@@ -79,7 +81,7 @@ IntelliTest 在執行測試和待測程式時，會監視已執行的指令。 �
 
 ## <a name="visibility"></a>可見度
 
-.NET 中有一個詳盡的可見性模型：類型、方法、欄位和其他成員可以是**私人**、**公用**、**內部**等等。
+.NET 中有一個詳盡的可見性模型：類型、方法、欄位和其他成員可以是 **私人**、**公用**、**內部** 等等。
 
 當 IntelliTest 產生測試時，它只會嘗試執行所產生測試內容中 .NET 可見性規則的合法動作 (例如呼叫建構函式、方法和設定欄位)。
 
@@ -90,7 +92,7 @@ IntelliTest 在執行測試和待測程式時，會監視已執行的指令。 �
   .NET 有 **InternalsVisibleToAttribute** 可將內部成員的可見性延伸到其他組件。
 
 * **[PexClass](attribute-glossary.md#pexclass) 的私人和家庭 (在 C# 中為受保護) 成員的可見性**
-  * IntelliTest 一律會將產生的測試直接放入 [PexClass](attribute-glossary.md#pexclass) 或子類別中。 因此，IntelliTest 假設它可能會使用所有可見的家庭成員 (在 C# 中為**受保護**)。
+  * IntelliTest 一律會將產生的測試直接放入 [PexClass](attribute-glossary.md#pexclass) 或子類別中。 因此，IntelliTest 假設它可能會使用所有可見的家庭成員 (在 C# 中為 **受保護**)。
   * 如果產生的測試直接放入 [PexClass](attribute-glossary.md#pexclass) 中(通常是透過使用部分類別)，IntelliTest 會假設它也可以使用 [PexClass](attribute-glossary.md#pexclass) 的所有私人成員。
 
 * **公用成員的可見性**
@@ -100,7 +102,7 @@ IntelliTest 在執行測試和待測程式時，會監視已執行的指令。 �
 
 如何測試具有介面類型參數的方法？ 或是具有非密封類別參數的方法？ IntelliTest 不知道在呼叫這個方法時，稍後將使用的實作。 而且也許在測試時甚至沒有可用的實際實作。
 
-傳統的解決方法是使用具有明確行為的「模擬物件」**。
+傳統的解決方法是使用具有明確行為的「模擬物件」。
 
 一個模擬物件可實作一個介面 (或延伸非密封類別)。 它不代表實際的實作，而只是允許使用模擬物件執行測試的捷徑。 其行為是根據每個使用它的測試案例，以手動方式定義。 有許多工具可讓您輕鬆地定義模擬物件和其預期的行為，但這種行為仍然必須以手動方式定義。
 
@@ -115,7 +117,7 @@ IntelliTest 可以產生值來替代模擬物件中的硬式編碼值。 就像�
 
 ## <a name="structs"></a>結構
 
-IntelliTest 對**結構**值的推理類似於其處理[物件](#objects)的方式。
+IntelliTest 對 **結構** 值的推理類似於其處理 [物件](#objects)的方式。
 
 ## <a name="arrays-and-strings"></a>陣列和字串
 
@@ -133,6 +135,6 @@ IntelliTest 會嘗試將觸發相關程式行為所需的陣列和字串大小�
 
 在[開發人員社群](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)上張貼您的意見與功能建議。
 
-## <a name="further-reading"></a>延伸閱讀
+## <a name="further-reading"></a>進一步閱讀
 
-* [如何運作？](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)
+* [運作方式](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

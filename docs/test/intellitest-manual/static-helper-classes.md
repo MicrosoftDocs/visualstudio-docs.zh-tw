@@ -1,5 +1,7 @@
 ---
 title: 靜態協助程式類別 | Microsoft IntelliTest 開發人員測試工具
+description: 瞭解 IntelliTest 為撰寫參數化單元測試所提供的靜態 helper 類別。
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 5010761213cf79756cf8da3d2fffe60dd0b61efd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f11b4f7d456e588e6a2920580766ce06530227e0
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315183"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329467"
 ---
 # <a name="static-helper-classes"></a>靜態協助程式類別
 
@@ -85,7 +87,7 @@ public void TestSomething(int i) {
 
 為測試提供輔助輸入值的靜態類別，可用以實作[參數化模擬](input-generation.md#parameterized-mocks)。
 
-**PexChoose** 類別無法協助決定特定輸入值的測試是通過還是失敗。 **PexChoose** 只提供輸入值，也稱為「選項」**。 使用者仍然需要限制輸入值，以及撰寫判斷提示來定義測試何時通過或失敗。
+**PexChoose** 類別無法協助決定特定輸入值的測試是通過還是失敗。 **PexChoose** 只提供輸入值，也稱為「選項」。 使用者仍然需要限制輸入值，以及撰寫判斷提示來定義測試何時通過或失敗。
 
 **作業模式**
 
@@ -95,7 +97,7 @@ public void TestSomething(int i) {
 
 * 針對特定測試案例所產生的程式碼，會以特定方式設定選擇提供者，以便重新執行此類測試案例時會做出特定的選擇，觸發特定的執行路徑。
 
-**使用量**
+**使用方式**
 
 * 簡單呼叫 **PexChoose.Value** 以產生新值：
 
@@ -141,7 +143,7 @@ public partial class MathExTests {
 
 靜態類別，可用來略過參數上的條件約束，以及列印與值建立關聯的符號資訊。
 
-**使用量**
+**使用方式**
 
 在執行期間，IntelliTest 一般會嘗試涵蓋程式碼的所有執行路徑。 不過，它不應該探索所有可能的案例，特別是在運算假設和判斷提示條件時。
 

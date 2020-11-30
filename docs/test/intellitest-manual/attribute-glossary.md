@@ -1,5 +1,7 @@
 ---
 title: 屬性詞彙 | Microsoft IntelliTest 開發人員測試工具
+description: 本文提供依命名空間組織的 IntelliTest 屬性清單，以及屬性的詳細資料。
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 00d8b24d26237a3c7b4130eba4614b5ea7b7eccd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c356893b0c9716374950df3edc3dc480f022100
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315222"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330221"
 ---
 # <a name="attribute-glossary"></a>屬性字彙
 
@@ -48,7 +50,7 @@ ms.locfileid: "89315222"
 
 此屬性會判斷提示受控管的值不得為 **null**。 它可以附加至：
 
-* 參數化測試方法的**參數**
+* 參數化測試方法的 **參數**
 
   ```csharp
   // assume foo is not null
@@ -79,9 +81,9 @@ ms.locfileid: "89315222"
 <a name="pexclass"></a>
 ## <a name="pexclass"></a>PexClass
 
-此屬性會標示包含「探索」** 的類別。 它相當於 MSTest **TestClassAttribute** (或 NUnit **TestFixtureAttribute**)。 此屬性是選擇性的。
+此屬性會標示包含「探索」的類別。 它相當於 MSTest **TestClassAttribute** (或 NUnit **TestFixtureAttribute**)。 此屬性是選擇性的。
 
-使用 [PexClass](#pexclass) 所標示的類別必須是「預設可建構的」**：
+使用 [PexClass](#pexclass) 所標示的類別必須是「預設可建構的」：
 
 * 公開匯出的類型
 * 預設建構函式
@@ -89,7 +91,7 @@ ms.locfileid: "89315222"
 
 如果類別不符合這些需求，則會報告錯誤，而且探索會失敗。
 
-也強烈建議將這些類別設為**部分**，讓 IntelliTest 可以產生為類別一部分但在不同檔案中的新測試。 這種方法因[可見度](input-generation.md#visibility)而解決許多問題，而且是 C# 中的一般技術。
+也強烈建議將這些類別設為 **部分**，讓 IntelliTest 可以產生為類別一部分但在不同檔案中的新測試。 這種方法因[可見度](input-generation.md#visibility)而解決許多問題，而且是 C# 中的一般技術。
 
 **其他套件和分類**：
 

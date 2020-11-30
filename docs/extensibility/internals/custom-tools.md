@@ -1,5 +1,7 @@
 ---
 title: 自訂工具 |Microsoft Docs
+description: 瞭解如何在 Visual Studio 中建立自訂工具，以將工具與專案中的專案建立關聯，並在儲存檔案時執行該工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e60f1d8cb8b25ed50b0b20c5ebb538286687ad72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ba8760ce53f222ebbe4626bde0d897d4d12c8a6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708951"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329961"
 ---
 # <a name="custom-tools"></a>自訂工具
-*自訂工具* 可讓您將工具與專案中的專案建立關聯，並在儲存檔案時執行該工具。 某些自訂工具有時稱為 *單一*檔案產生器，經常用來執行從資料產生程式碼的轉譯程式，反之亦然。 例如，單一檔案產生器會 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 從 *設定* 和 *.resx* 檔建立和原始程式碼。 產生的原始程式碼會提供對 *. 設定* 和 *.resx* 檔中資料的強型別存取。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 專案類型支援自訂工具， [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 專案類型則不支援。 您自己的專案類型也可以支援自訂工具。
+*自訂工具* 可讓您將工具與專案中的專案建立關聯，並在儲存檔案時執行該工具。 某些自訂工具有時稱為 *單一* 檔案產生器，經常用來執行從資料產生程式碼的轉譯程式，反之亦然。 例如，單一檔案產生器會 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 從 *設定* 和 *.resx* 檔建立和原始程式碼。 產生的原始程式碼會提供對 *. 設定* 和 *.resx* 檔中資料的強型別存取。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 專案類型支援自訂工具， [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 專案類型則不支援。 您自己的專案類型也可以支援自訂工具。
 
  自訂工具是用來執行介面的註冊元件 `IVsSingleFileGenerator` 。
 
@@ -43,7 +45,7 @@ ms.locfileid: "80708951"
 
  顯示如何在專案檔中保存專案專案屬性，例如原始程式檔的作者。
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> 提供的詳細資料 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> ，它會將單一輸入檔轉換成單一輸出檔案，該檔案可以編譯或新增至專案。
 
  <xref:EnvDTE.ProjectItem> 說明 `ProjectItem` 代表專案中專案的介面。

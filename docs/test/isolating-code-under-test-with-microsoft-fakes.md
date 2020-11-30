@@ -1,5 +1,7 @@
 ---
 title: 使用 Microsoft Fakes 在測試期間隔離程式碼
+description: 瞭解 Microsoft Fakes 如何使用存根或填充碼取代應用程式的其他部分，協助您隔離要測試的程式碼。
+ms.custom: SEO-VS-2020
 ms.date: 06/03/2020
 ms.topic: how-to
 ms.author: mikejo
@@ -10,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: e837b1a0e9a1d8fe06342352e4eedf5ce0fa9117
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: aa1f0505d37059ce65da80fcf483473610cf2f6d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325946"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329532"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 隔離測試中的程式碼
 
@@ -86,10 +88,10 @@ Fakes 分為兩種類別：
    1. 在 **方案總管** 中， 
        - 針對較舊的 .NET Framework 專案 (非 SDK 樣式) ，請展開您的單元測試專案的 [ **參考** ] 節點。
        ::: moniker range=">=vs-2019"
-       - 若為以 .NET Framework 或 .NET Core 為目標的 SDK 樣式專案，請展開 [相依性 **]** 節點，以尋找您想要在 **元件** 、 **專案** 或 **封裝** 下偽造的元件。
+       - 若為以 .NET Framework 或 .NET Core 為目標的 SDK 樣式專案，請展開 [相依性 **]** 節點，以尋找您想要在 **元件**、 **專案** 或 **封裝** 下偽造的元件。
        ::: moniker-end
-       - 如果您是在 Visual Basic 中工作，請選取 [ **方案總管** ] 工具列中的 [ **顯示所有** 檔案]，以查看 [ **參考** ] 節點。
-   2. 選取包含您要為其建立填充碼之類別定義的元件。 例如，如果您想要填充碼 **DateTime** ，請選取 [ **System.dll** ]。
+       - 如果您是在 Visual Basic 中工作，請選取 [**方案總管**] 工具列中的 [**顯示所有** 檔案]，以查看 [**參考**] 節點。
+   2. 選取包含您要為其建立填充碼之類別定義的元件。 例如，如果您想要填充碼 **DateTime**，請選取 [ **System.dll**]。
 
    3. 在捷徑功能表上，選擇 [新增 Fakes 組件]。
 

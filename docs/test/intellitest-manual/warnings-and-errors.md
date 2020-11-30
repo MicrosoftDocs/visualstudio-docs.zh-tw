@@ -1,5 +1,7 @@
 ---
 title: 警告與錯誤 | Microsoft IntelliTest 開發人員測試工具
+description: 本文包含 IntelliTest 的警告和錯誤，分為不同的分類，並提供每個警告和錯誤的描述。
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 639b68c4d999a5e491f6e52a2cf3a7960563ed17
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77275446"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329428"
 ---
 # <a name="warnings-and-errors"></a>警告和錯誤
 

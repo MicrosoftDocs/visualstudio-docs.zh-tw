@@ -1,5 +1,7 @@
 ---
 title: Web 效能測試 API
+description: 瞭解 web 效能測試 API，該 API 支援程式碼 web 效能測試、測試外掛程式、要求外掛程式、要求和解壓縮/驗證規則。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b7320a38d474748713d687f4ee00b5b91f0208
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4802d95c46d1187911f4bbc134cc0c50ce08b18
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287073"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329714"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>如何：使用 Web 效能測試 API
 
@@ -47,13 +49,13 @@ ms.locfileid: "85287073"
 
 8. 使用 [Web 效能測試編輯器] 加入新的 Web 效能測試外掛程式：
 
-    1. 選擇工具列上的 [新增 Web 測試外掛程式]****。
+    1. 選擇工具列上的 [新增 Web 測試外掛程式]。
 
-         [新增 Web 測試外掛程式]**** 對話方塊隨即出現。
+         [新增 Web 測試外掛程式] 對話方塊隨即出現。
 
     2. 在 **[選取外掛程式]** 底下，選取您的 web 效能測試外掛程式類別。
 
-    3. 在 [所選外掛程式的屬性]**** 窗格中，設定外掛程式要在執行階段中使用的初始值。
+    3. 在 [所選外掛程式的屬性] 窗格中，設定外掛程式要在執行階段中使用的初始值。
 
         > [!NOTE]
         > 您可以從外掛程式公開任意數目的屬性，只要讓這些屬性成為公用、可設定且屬於基底型別 (例如整數、布林或字串) 的屬性即可。 您之後也可以使用 [屬性] 視窗來編輯 Web 效能測試外掛程式屬性。

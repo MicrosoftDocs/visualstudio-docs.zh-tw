@@ -1,5 +1,7 @@
 ---
 title: 使用不同的 Web 瀏覽器搭配自動程式化 UI 測試
+description: 瞭解如何自訂您的測試，並針對您的 web 應用程式使用不同的瀏覽器加以播放。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 507da254d108ddc31f2b1c9fdf7f393d42934f2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6baddaeac3fdea3d27f60722e728df209bfd768d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289322"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330026"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>使用不同的網頁瀏覽器搭配自動程式化 UI 測試
 
@@ -47,7 +49,7 @@ ms.locfileid: "85289322"
 
 **使用非 Internet Explorer 網頁瀏覽器播放：** 若要在非 Internet Explorer 的網頁瀏覽器中播放，請將測試程式碼中的 BrowserWindow.CurrentBrowser 屬性變更為 **Firefox** 或 **Chrome**。
 
-若要在非 IE 網頁瀏覽器上播放測試，您必須安裝**自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件**。
+若要在非 IE 網頁瀏覽器上播放測試，您必須安裝 **自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件**。
 
 ### <a name="install-selenium-components"></a>安裝 Selenium 元件
 
@@ -55,19 +57,19 @@ ms.locfileid: "85289322"
 
 1. 在 [ **工具** ] 功能表中選擇 [ **擴充功能和更新**]。
 
-2. 在 [擴充功能和更新]**** 對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。
+2. 在 [擴充功能和更新] 對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. 在 [擴充功能]**** 功能表中，選擇 [管理擴充功能]****。
+1. 在 [擴充功能] 功能表中，選擇 [管理擴充功能]。
 
-2. 在 [管理擴充功能]**** 對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。
+2. 在 [管理擴充功能] 對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。
 
 ::: moniker-end
 
-3. 反白顯示延伸模組並選擇 [下載]****。
+3. 反白顯示延伸模組並選擇 [下載]。
 
     > [!TIP]
     > 您也可以在[這裡](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)下載自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件。
@@ -80,15 +82,15 @@ ms.locfileid: "85289322"
 
 1. 啟用 Just My Code：
 
-    1. 在 [工具]**** 功能表中選擇 [選項]****，然後選擇 [偵錯]****。
+    1. 在 [工具] 功能表中選擇 [選項]，然後選擇 [偵錯]。
 
-    2. 選取 [啟用 Just My Code]****。
+    2. 選取 [啟用 Just My Code]。
 
 2. 停用 CLR 例外狀況：
 
-    1. 在 [偵錯]**** 功能表中選擇 [例外狀況]****。
+    1. 在 [偵錯] 功能表中選擇 [例外狀況]。
 
-    2. 取消核取 [通用語言執行平台例外狀況]**** 的 [使用者未處理]****。
+    2. 取消核取 [通用語言執行平台例外狀況] 的 [使用者未處理]。
 
 如果在自動程式化 UI 測試中看不到變更 `BrowserWindow.CurrentBrowser` 的選項，您使用的 Visual Studio 版本可能不支援使用各種網頁瀏覽器進行自動程式化 UI 測試。 若要使用這樣的自動程式化 UI 測試，您必須使用 Visual Studio Enterprise 版。
 

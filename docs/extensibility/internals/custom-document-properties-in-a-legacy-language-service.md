@@ -1,5 +1,6 @@
 ---
 title: 舊版語言服務中的自訂文件屬性
+description: 瞭解如何建立 Visual Studio 屬性視窗中所顯示的自訂文件屬性，作為舊版語言服務的一部分。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c38ad28456ab8b9bccf29d2249307b718a5767b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d5fa24f3d052ab9122776967607b2c197fb102bf
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036830"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329896"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>舊版語言服務中的自訂文件屬性
 文件屬性可以在 [ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **屬性** ] 視窗中顯示。 程式設計語言通常沒有與個別原始程式檔相關聯的屬性。 不過，XML 支援會影響編碼、架構和樣式表單的檔案屬性。
@@ -159,7 +160,7 @@ namespace TestLanguagePackage
 //!Description = A sample file
 ```
 
- 此範例顯示從原始程式檔的前兩行取得和設定檔案屬性所需的兩種方法，以及當使用者直接修改原始程式檔時，如何更新屬性。 `SetPropertyValue`此處所示之範例中的方法，與從類別呼叫的方法相同， `TestDocumentProperties` 如*自訂 DocumentProperties 類別*一節所示。
+ 此範例顯示從原始程式檔的前兩行取得和設定檔案屬性所需的兩種方法，以及當使用者直接修改原始程式檔時，如何更新屬性。 `SetPropertyValue`此處所示之範例中的方法，與從類別呼叫的方法相同， `TestDocumentProperties` 如 *自訂 DocumentProperties 類別* 一節所示。
 
  此範例會使用掃描器來判斷前兩行中的權杖類型。 此範例僅供說明之用。 在此情況下，較常見的方法是將原始程式檔剖析為剖析樹狀結構，其中樹狀結構的每個節點都包含特定標記的相關資訊。 根節點會包含檔案屬性。
 

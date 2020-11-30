@@ -1,5 +1,7 @@
 ---
 title: 測試產生 | Microsoft IntelliTest 開發人員測試工具
+description: 瞭解 IntelliTest 如何從您的執行方法產生測試案例，然後產生方法的輸入，並檢查資料的判斷提示。
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c251a1539b42da2b4e92c2996457075f3c3be135
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790146e3014765224f22bd247732c7ac3f062269
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315170"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329441"
 ---
 # <a name="test-generation"></a>測試產生
 
@@ -191,7 +193,7 @@ public void Test2([PexAssumeNotNull] object o)
 
 1. 如果它不是在[設定的路徑界限](exploration-bounds.md)內終止，就視為失敗，除非設定 [TestExcludePathBoundsExceeded](exploration-bounds.md#testexcludepathboundsexceeded) 選項。
 
-1. 如果測試擲回 **PexAssumeFailedException**，即成功。 不過，除非 [TestEmissionFilter](exploration-bounds.md#testemissionfilter) 設為 [全部]****，否則通常會被篩選掉。
+1. 如果測試擲回 **PexAssumeFailedException**，即成功。 不過，除非 [TestEmissionFilter](exploration-bounds.md#testemissionfilter) 設為 [全部]，否則通常會被篩選掉。
 
 1. 如果測試違反[判斷提示](#assumptions-and-assertions)，例如，擲回單元測試架構的判斷提示違規例外狀況，即失敗。
 
@@ -235,7 +237,7 @@ namespace MyTests
 ```
 
 <a name="further-reading"></a>
-## <a name="further-reading"></a>延伸閱讀
+## <a name="further-reading"></a>進一步閱讀
 
 * [程式碼繫結測試](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
 * [一項掌控全場的測試](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)

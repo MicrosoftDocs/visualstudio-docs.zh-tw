@@ -1,5 +1,7 @@
 ---
 title: 安裝測試代理程式和測試控制器
+description: 瞭解如何使用 Visual Studio 代理程式來協調 Azure Test Plans 或 Team Foundation Server 的測試。
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b75ae05a65ae15e82c45ec0cf43935fb0809160
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d2ffa3a1006057169d7e4f473922ff2eebbfe7bb
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928602"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328882"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>安裝測試代理程式和測試控制器
 
@@ -26,7 +28,7 @@ ms.locfileid: "91928602"
 
 下表顯示安裝適用於 Visual Studio 之測試代理程式或測試控制器的系統需求：
 
-| 項目 | 需求 |
+| 項目 | 規格需求 |
 | ---- | ------------ |
 | **代理程式** | Windows 10<br />Windows 8、Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard 和 Datacenter<br />Windows Server 2012 R2 |
 | **控制器** | Windows 10<br />Windows 8、Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard 和 Datacenter<br />Windows Server 2012 R2 |
@@ -34,7 +36,7 @@ ms.locfileid: "91928602"
 
 ## <a name="install-the-test-controller-and-test-agents"></a>安裝測試控制器和測試代理程式
 
-您可以從 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents) 下載 Agents for Visual Studio。 尋找 *Agents for Visual Studio 2019*，選取 [代理程式]** 或 [控制器]**，然後選擇 [下載]**。 執行下載的可執行檔以安裝測試代理程式或控制器。
+您可以從 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents) 下載 Agents for Visual Studio。 尋找 *Agents for Visual Studio 2019*，選取 [代理程式] 或 [控制器]，然後選擇 [下載]。 執行下載的可執行檔以安裝測試代理程式或控制器。
 
 您可以從[舊版下載](https://visualstudio.microsoft.com/vs/older-downloads/)頁面下載 Agents for Visual Studio 2017、Visual Studio 2015 和 Visual Studio 2013。
 
@@ -77,7 +79,7 @@ ms.locfileid: "91928602"
 
 ## <a name="upgrade-from-visual-studio-2013-test-agents"></a>從 Visual Studio 2013 測試代理程式升級
 
-建議您在所有新的自動化測試案例中使用 Agents for Visual Studio。 您可以使用組建管線中的「部署測試代理程式」** 工作來下載並在電腦上安裝測試代理程式。
+建議您在所有新的自動化測試案例中使用 Agents for Visual Studio。 您可以使用組建管線中的「部署測試代理程式」工作來下載並在電腦上安裝測試代理程式。
 
 下表顯示 Agents for Visual Studio 2013 支援的案例，以及 Team Foundation Server (TFS) 2015 和 Test Plans 的替代方案：
 

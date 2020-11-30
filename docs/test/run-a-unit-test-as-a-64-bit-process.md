@@ -1,5 +1,7 @@
 ---
 title: 以 64 位元處理序的形式執行單元測試
+description: 瞭解如何執行單元測試，並以64位進程的形式來捕捉程式碼涵蓋範圍資訊。 您必須有64位的電腦。
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3c5cb51232457a43200c8a71ace51cc4b8a63e02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d18a97a3cf8f680e7bfe3d679e8e57f7cc716fb
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88507982"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329064"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>以 64 位元處理序的形式執行單元測試
 
@@ -26,19 +28,19 @@ ms.locfileid: "88507982"
 1. 如果您的程式碼或測試編譯為32位/x86，但您現在想要以64位進程的形式執行，請將它們重新編譯為 **任何 CPU**。
 
    ::: moniker range="vs-2017"
-   或者，在 Visual Studio 2017 中，您也可以將專案編譯為 **64**位。
+   或者，在 Visual Studio 2017 中，您也可以將專案編譯為 **64** 位。
    ::: moniker-end
 
     > [!TIP]
-    > 為了達到最大彈性，請使用 [任何 CPU]**** 組態來編譯測試專案。 然後，您就可以在 32 位元和 64 位元代理程式上執行。 使用 **64** 位設定來編譯測試專案並沒有任何好處，除非您呼叫的程式碼只在64位上受到支援。
+    > 為了達到最大彈性，請使用 [任何 CPU] 組態來編譯測試專案。 然後，您就可以在 32 位元和 64 位元代理程式上執行。 使用 **64** 位設定來編譯測試專案並沒有任何好處，除非您呼叫的程式碼只在64位上受到支援。
 
 2. 將單元測試設定為以64位進程的形式執行。
 
    ::: moniker range=">=vs-2019"
-   在 [Visual Studio] 功能表中，選擇 [ **測試**]，然後選擇 [ **AnyCPU 專案的處理器架構**]。 選擇 [x64]****，以 64 位元處理序的形式來執行測試。
+   在 [Visual Studio] 功能表中，選擇 [ **測試**]，然後選擇 [ **AnyCPU 專案的處理器架構**]。 選擇 [x64]，以 64 位元處理序的形式來執行測試。
    ::: moniker-end
    ::: moniker range="vs-2017"
-   在 [Visual Studio] 功能表中，選擇 [ **測試**]，然後選擇 [ **測試設定**]，再選擇 [ **處理器架構**]。 選擇 [x64]****，以 64 位元處理序的形式來執行測試。
+   在 [Visual Studio] 功能表中，選擇 [ **測試**]，然後選擇 [ **測試設定**]，再選擇 [ **處理器架構**]。 選擇 [x64]，以 64 位元處理序的形式來執行測試。
    ::: moniker-end
 
    \- 或 -

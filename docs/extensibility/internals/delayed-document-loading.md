@@ -1,5 +1,7 @@
 ---
 title: 延遲的檔載入 |Microsoft Docs
+description: 瞭解 Visual Studio 中的延遲檔載入，以及如何撰寫延伸模組的程式碼，使其不會在檔載入前查詢檔中的元素。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f78d49013c1f0bd359d4439b73620a159a9ccc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6489c819efe0fd29cd2d120c08414cf0532ad6f
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708817"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328388"
 ---
 # <a name="delayed-document-loading"></a>延遲的檔載入
 
@@ -65,4 +67,4 @@ ms.locfileid: "80708817"
 
 沒有可見的提示可指出檔是否已初始化，因此很難找出您的延伸模組是否強制執行初始化。 您可以設定登錄機碼讓驗證變得更容易，因為它會導致未完全初始化的每個檔的標題都有標題中的文字 *[Stub]* 。
 
-在**HKEY_CURRENT_USER \software\microsoft\visualstudio\14.0\backgroundsolutionload**中，將**StubTabTitleFormatString**設定為* {0} [Stub]*。
+在 **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad** 中，將 **StubTabTitleFormatString** 設定為 *{0} [Stub]*。

@@ -1,5 +1,7 @@
 ---
 title: 建立專案類型 |Microsoft Docs
+description: 瞭解如何藉由設計、建立和註冊支援程式設計工作的新專案類型，來擴充 Visual Studio。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2398b63b8cd52784252cfc764bb6c6a30e1accc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4038a122c6d2ec5f6ed29df6e529b2bff2e2bb71
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709074"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329922"
 ---
 # <a name="create-project-types"></a>建立專案類型
 您可以藉 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 由建立新的專案類型來擴充。 若要建立新的專案類型，您必須瞭解數個概念並完成一些步驟。 下列主題提供如何建立專案類型的總覽。

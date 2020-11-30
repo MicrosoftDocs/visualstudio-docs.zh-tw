@@ -1,5 +1,7 @@
 ---
 title: 測試工具
+description: 瞭解 Visual Studio 測試控管如何協助您和您的小組開發及維持高標準的程式碼品質。
+ms.custom: SEO-VS-2020
 ms.date: 03/16/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 5d61ab4ec7647921a928841d2a9c89fb84becdf9
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: f5eff2257988a4210e7f4cd8a8a37c66c57c185d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928065"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328687"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>先查看 Visual Studio 中的測試控管
 
@@ -26,7 +28,7 @@ Visual Studio 測試工具可協助您和小組開發及維持絕佳的高標準
 
 ## <a name="test-explorer"></a>測試總管
 
-[測試總管]**** 視窗可協助開發人員建立、管理及執行單元測試。 您可以使用 Microsoft 單元測試架構，或使用多種協力廠商架構和開放原始碼架構的其中一種。
+[測試總管] 視窗可協助開發人員建立、管理及執行單元測試。 您可以使用 Microsoft 單元測試架構，或使用多種協力廠商架構和開放原始碼架構的其中一種。
 
 ::: moniker range="vs-2017"
 ![Visual Studio 測試總管](media/devtest-testexplorer.png)

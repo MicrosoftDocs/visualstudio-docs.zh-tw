@@ -1,5 +1,7 @@
 ---
 title: 使用自動程式化 UI 測試來測試 UWP 應用程式
+description: 瞭解如何建立通用 Windows 平臺應用程式的自動程式碼 UI 測試，方法是建立 UWP 應用程式來測試及建立自動程式化 UI 測試。
+ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: how-to
 author: mikejo5000
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: aad17d244d70051a363a4cde294c592968093ba0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6ec6750a48b8902ec77e8982beb774e306c8d1d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286748"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330234"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>建立自動程式化 UI 測試來測試 UWP 應用程式
 
@@ -27,7 +29,7 @@ ms.locfileid: "85286748"
 
 第一個步驟是建立簡單的 UWP 應用程式來執行測試。
 
-1. 在 Visual Studio 中，使用適用於 Visual C# 或 Visual Basic 的 [空白應用程式 (通用 Windows)]**** 範本建立新的專案。
+1. 在 Visual Studio 中，使用適用於 Visual C# 或 Visual Basic 的 [空白應用程式 (通用 Windows)] 範本建立新的專案。
 
    ::: moniker range="vs-2017"
 
@@ -35,17 +37,17 @@ ms.locfileid: "85286748"
 
    ::: moniker-end
 
-1. 在 [新增通用 Windows 平台專案]**** 對話方塊中，選取 [確定]**** 以接受預設平台版本。
+1. 在 [新增通用 Windows 平台專案] 對話方塊中，選取 [確定] 以接受預設平台版本。
 
-1. 從 [方案總管]**** 中，開啟 *MainPage.xaml*。
+1. 從 [方案總管] 中，開啟 *MainPage.xaml*。
 
-   該檔案隨即在 [XAML 設計工具]**** 中開啟。
+   該檔案隨即在 [XAML 設計工具] 中開啟。
 
-1. 將按鈕控制項和文字方塊控制項從 [工具箱]**** 中拖曳至設計介面。
+1. 將按鈕控制項和文字方塊控制項從 [工具箱] 中拖曳至設計介面。
 
      ![設計 UWP 應用程式](../test/media/toolbox-controls.png)
 
-1. 提供控制項的名稱。 選取文字方塊控制項，然後在 [屬性]**** 視窗的 [名稱]**** 欄位中輸入 **textBox**。 選取按鈕控制項，然後在 [屬性]**** 視窗的 [名稱]**** 欄位中輸入 **button**。
+1. 提供控制項的名稱。 選取文字方塊控制項，然後在 [屬性] 視窗的 [名稱] 欄位中輸入 **textBox**。 選取按鈕控制項，然後在 [屬性] 視窗的 [名稱] 欄位中輸入 **button**。
 
 1. 按兩下按鈕控制項，並將下列程式碼新增至 `Button_Click` 方法的主體。 此程式碼只會將文字方塊中的文字設定為按鈕控制項的名稱，這只是為了提供一些資料，藉以驗證我們稍後將建立的自動程式化 UI 測試。
 
@@ -57,15 +59,15 @@ ms.locfileid: "85286748"
    Me.textBox.Text = Me.button.Name
    ```
 
-1. 按下**Ctrl** + **F5**以執行應用程式。 您應該會看到如下的內容：
+1. 按下 **Ctrl** + **F5** 以執行應用程式。 您應該會看到如下的內容：
 
    ![含有按鈕和文字方塊的 UWP 應用程式](media/uwp-app.png)
 
 ## <a name="create-a-coded-ui-test"></a>建立自動程式碼 UI 測試
 
-1. 若要將測試專案新增至方案，請在 [方案總管]**** 中，以滑鼠右鍵按一下方案，並選擇 [新增]**** > [新增專案]****。
+1. 若要將測試專案新增至方案，請在 [方案總管] 中，以滑鼠右鍵按一下方案，並選擇 [新增] > [新增專案]。
 
-1. 搜尋並選取 [自動程式化 UI 測試專案 (通用 Windows)]**** 範本。
+1. 搜尋並選取 [自動程式化 UI 測試專案 (通用 Windows)] 範本。
 
    ::: moniker range="vs-2017"
 
@@ -74,23 +76,23 @@ ms.locfileid: "85286748"
    ::: moniker-end
 
    > [!NOTE]
-   > 如果您沒有看到 [自動程式化 UI 測試專案 (通用 Windows)]**** 範本，則需要[安裝自動程式化 UI 測試元件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。
+   > 如果您沒有看到 [自動程式化 UI 測試專案 (通用 Windows)] 範本，則需要[安裝自動程式化 UI 測試元件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。
 
-1. 在 [產生自動程式化 UI 測試的程式碼]**** 對話方塊中，選取 [手動編輯測試]****。
+1. 在 [產生自動程式化 UI 測試的程式碼] 對話方塊中，選取 [手動編輯測試]。
 
    ![[產生自動程式化 UI 測試的程式碼] 對話方塊](../test/media/manually-edit-the-test.png)
 
-1. 如果您的 UWP 應用程式尚未執行，請按**Ctrl** + **F5**啟動它。
+1. 如果您的 UWP 應用程式尚未執行，請按 **Ctrl** + **F5** 啟動它。
 
-1. 開啟 [自動程式化 UI 測試產生器]**** 對話方塊，方法是將游標置於 `CodedUITestMethod1` 方法，然後選擇 [測試]**** > [產生自動程式化 UI 測試的程式碼]**** > [使用自動程式化 UI 測試產生器]****。
+1. 開啟 [自動程式化 UI 測試產生器] 對話方塊，方法是將游標置於 `CodedUITestMethod1` 方法，然後選擇 [測試] > [產生自動程式化 UI 測試的程式碼] > [使用自動程式化 UI 測試產生器]。
 
-1. 將控制項新增至 UI 控制項對應。 使用 [自動程式化 UI 測試產生器]**** 交叉線工具，選取 UWP 應用程式中的按鈕控制項。 在 [新增判斷提示]**** 對話方塊中，如果有必要，請展開 [UI 控制項對應]**** 窗格，然後選取 [將控制項新增至 UI 對應]****。
+1. 將控制項新增至 UI 控制項對應。 使用 [自動程式化 UI 測試產生器] 交叉線工具，選取 UWP 應用程式中的按鈕控制項。 在 [新增判斷提示] 對話方塊中，如果有必要，請展開 [UI 控制項對應] 窗格，然後選取 [將控制項新增至 UI 對應]。
 
      ![將控制項加入至 UI 對應](../test/media/add-control-to-ui-control-map.png)
 
 1. 請重複上一個步驟，將文字方塊控制項新增至 UI 控制項對應。
 
-1. 在 [自動程式化 UI 測試產生器]**** 對話方塊中，選取 [產生程式碼]**** 或按 **Ctrl**+**G**。 然後選取 [產生]****，為 UI 控制項對應的變更建立程式碼。
+1. 在 [自動程式化 UI 測試產生器] 對話方塊中，選取 [產生程式碼] 或按 **Ctrl**+**G**。 然後選取 [產生]，為 UI 控制項對應的變更建立程式碼。
 
      ![產生 UI 對應的程式碼](../test/media/generate-code-dialog.png)
 
@@ -98,18 +100,18 @@ ms.locfileid: "85286748"
 
      ![按一下按鈕控制項以設定 Textbox 值](../test/media/uwp-app-button-textbox.png)
 
-1. 新增判斷提示，以確認文字方塊控制項中的文字。 使用交叉線工具選取文字方塊控制項，然後在 [新增判斷提示]**** 對話方塊中選取 [文字]**** 屬性。 然後，選取 [新增判斷提示]**** 或按 **Alt**+**A**。 在 [判斷提示失敗的訊息]**** 方塊中，輸入 **extbox value is unexpected.**， 然後選取 **[確定]**。
+1. 新增判斷提示，以確認文字方塊控制項中的文字。 使用交叉線工具選取文字方塊控制項，然後在 [新增判斷提示] 對話方塊中選取 [文字] 屬性。 然後，選取 [新增判斷提示] 或按 **Alt**+**A**。 在 [判斷提示失敗的訊息] 方塊中，輸入 **extbox value is unexpected.**， 然後選取 **[確定]**。
 
      ![使用交叉線工具選擇文字方塊新增判斷提示](../test/media/add-assertion-for-text.png)
 
-1. 產生判斷提示的測試程式碼。 在 [自動程式化 UI 測試產生器]**** 對話方塊中，選取 [產生程式碼]****。 在 [產生程式碼]**** 對話方塊中，選取 [新增並產生]****。
+1. 產生判斷提示的測試程式碼。 在 [自動程式化 UI 測試產生器] 對話方塊中，選取 [產生程式碼]。 在 [產生程式碼] 對話方塊中，選取 [新增並產生]。
 
      ![產生 Textbox 判斷提示的程式碼](../test/media/add-and-generate-assert-method.png)
 
-   在 [方案總管]**** 中，開啟 *UIMap.Designer.cs*，以檢視針對 assert 方法和控制項所新增的程式碼。
+   在 [方案總管] 中，開啟 *UIMap.Designer.cs*，以檢視針對 assert 方法和控制項所新增的程式碼。
 
    > [!TIP]
-   > 如果您要使用 Visual Basic，請開啟 *CodedUITest1.vb*。 然後，在 `CodedUITestMethod1()` 測試方法程式碼中，以滑鼠右鍵按一下對 assert 方法 `Me.UIMap.AssertMethod1()` 的呼叫，並選擇 [移至定義]****。 *UIMap.Designer.vb* 隨即會在程式碼編輯器中開啟，您可以檢視針對 assert 方法和控制項所新增的程式碼。
+   > 如果您要使用 Visual Basic，請開啟 *CodedUITest1.vb*。 然後，在 `CodedUITestMethod1()` 測試方法程式碼中，以滑鼠右鍵按一下對 assert 方法 `Me.UIMap.AssertMethod1()` 的呼叫，並選擇 [移至定義]。 *UIMap.Designer.vb* 隨即會在程式碼編輯器中開啟，您可以檢視針對 assert 方法和控制項所新增的程式碼。
 
     > [!WARNING]
     > 請勿直接修改 *UIMap.designer.cs* 或 *UIMap.Designer.vb* 檔案。 如果這樣做，則在產生測試時，將會覆寫您的變更。
@@ -137,15 +139,15 @@ ms.locfileid: "85286748"
     End Sub
     ```
 
-1. 接下來，我們需要取得想要測試之 UWP [應用程式](#create-a-uwp-app-to-test)的 **AutomationId**。 開啟 Windows [開始]**** 功能表來查看應用程式磚。 然後，將交叉線工具 ![目標圖示](media/target-icon.png) 從 [自動程式化 UI 測試產生器]**** 對話方塊，拖曳至應用程式磚。 當藍色方塊圍繞著磚時，請放開滑鼠。
+1. 接下來，我們需要取得想要測試之 UWP [應用程式](#create-a-uwp-app-to-test)的 **AutomationId**。 開啟 Windows [開始] 功能表來查看應用程式磚。 然後，將交叉線工具 ![目標圖示](media/target-icon.png) 從 [自動程式化 UI 測試產生器] 對話方塊，拖曳至應用程式磚。 當藍色方塊圍繞著磚時，請放開滑鼠。
 
    ![交叉線工具](media/cross-hair-tool.png)
 
-   [新增判斷提示]**** 對話方塊隨即開啟，並顯示應用程式的 **AutomationId**。 以滑鼠右鍵按一下 **AutomationId**，並選擇 [將值複製到剪貼簿]****。
+   [新增判斷提示] 對話方塊隨即開啟，並顯示應用程式的 **AutomationId**。 以滑鼠右鍵按一下 **AutomationId**，並選擇 [將值複製到剪貼簿]。
 
    ![[新增判斷提示] 對話方中的 AutomationID](../test/media/automation-id.png)
 
-1. 將程式碼新增至測試方法，以啟動 UWP 應用程式。 在 [方案總管]**** 中，開啟 *CodedUITest1.cs* 或 *CodedUITest1.vb*。 在上述對 `AssertMethod1` 的呼叫中，新增程式碼以啟動 UWP 應用程式：
+1. 將程式碼新增至測試方法，以啟動 UWP 應用程式。 在 [方案總管] 中，開啟 *CodedUITest1.cs* 或 *CodedUITest1.vb*。 在上述對 `AssertMethod1` 的呼叫中，新增程式碼以啟動 UWP 應用程式：
 
    ```csharp
    XamlWindow.Launch("af5ecd75-f252-45a1-9e7e-c6f1d8f054ff_0q1pp7qrjexbp!App")
@@ -202,13 +204,13 @@ ms.locfileid: "85286748"
        End Sub
    ```
 
-1. 建置測試專案，然後選取 [測試]**** > [視窗]**** > [測試總管]**** 來開啟 [測試總管]****。
+1. 建置測試專案，然後選取 [測試] > [視窗] > [測試總管] 來開啟 [測試總管]。
 
-1. 選擇 [全部執行]**** 以執行測試。
+1. 選擇 [全部執行] 以執行測試。
 
-   應用程式隨即開啟，點選按鈕，並在文字方塊的 [文字]**** 屬性中填入。 Assert 方法會驗證文字方塊的 [文字]**** 屬性。
+   應用程式隨即開啟，點選按鈕，並在文字方塊的 [文字] 屬性中填入。 Assert 方法會驗證文字方塊的 [文字] 屬性。
 
-   測試完成之後，[測試總管]**** 會顯示測試成功。
+   測試完成之後，[測試總管] 會顯示測試成功。
 
    ![通過的測試在 [測試總管] 中顯示](../test/media/test-explorer-coded-ui-test-passed.png)
 
@@ -224,7 +226,7 @@ ms.locfileid: "85286748"
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>問：為什麼無法修改 UIMap.Designer 檔案中的程式碼？
 
-**答**：每次您使用 [自動程式化 UI 測試產生器]**** 產生程式碼時，對 *UIMapDesigner.cs* 檔案中的程式碼所做的變更都會被覆寫。 如果您需要修改錄製的方法，請將它複製到 *UIMap.cs* 檔案並重新命名。 *UIMap.cs* 檔案可用來覆寫 *UIMapDesigner.cs* 檔案中的方法和屬性。 請移除 *CodedUITest.cs* 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。
+**答**：每次您使用 [自動程式化 UI 測試產生器] 產生程式碼時，對 *UIMapDesigner.cs* 檔案中的程式碼所做的變更都會被覆寫。 如果您需要修改錄製的方法，請將它複製到 *UIMap.cs* 檔案並重新命名。 *UIMap.cs* 檔案可用來覆寫 *UIMapDesigner.cs* 檔案中的方法和屬性。 請移除 *CodedUITest.cs* 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。
 
 ## <a name="see-also"></a>另請參閱
 

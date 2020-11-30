@@ -1,5 +1,7 @@
 ---
 title: 使用開啟檔案命令顯示檔案 |Microsoft Docs
+description: 瞭解 Visual Studio 整合式開發環境 (IDE) 如何處理 [檔案] 功能表上的 [開啟檔案] 命令以顯示檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc18442c55b6989c4d8668e1425fdd62a2d4b1b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a932a9b56a63069e010cb2b945de25564c2d135
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708601"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328336"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>使用開啟檔案命令顯示檔案
 下列步驟說明 IDE 如何處理 [ **開啟** 檔案] 命令 **，該命令** 可在的 [檔案] 功能表上取得 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 這些步驟也會說明專案如何回應源自此命令的呼叫。
 
- 當使用者按一下 [檔案 **] 功能表上的 [** **開啟**檔案] 命令，並從 [**開啟**檔案] 對話方塊中選取檔案時，會發生下列進程：
+ 當使用者按一下 [檔案 **] 功能表上的 [** **開啟** 檔案] 命令，並從 [**開啟** 檔案] 對話方塊中選取檔案時，會發生下列進程：
 
 1. IDE 會使用執行中的檔資料表，判斷檔案是否已在專案中開啟。
 

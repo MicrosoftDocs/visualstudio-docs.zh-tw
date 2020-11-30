@@ -1,5 +1,7 @@
 ---
 title: 如何測試適用于 UWP 應用程式的 c + + DLL
+description: 瞭解如何使用適用于 c + + 的 Microsoft 測試架構為通用 Windows 平臺應用程式建立 c + + DLL 的單元測試。
+ms.custom: SEO-VS-2020
 ms.date: 05/01/2019
 ms.topic: how-to
 ms.author: corob
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: corob-msft
-ms.openlocfilehash: 7b556f085ae4e4a9c610aefa87b3f9125fb27042
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7ae79ff4df783d3c4541720c9fef709087e7da6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285605"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330091"
 ---
 # <a name="how-to-test-a-c-dll"></a>如何測試 c + + DLL
 
@@ -26,7 +28,7 @@ ms.locfileid: "85285605"
 
 ::: moniker range="vs-2019"
 
-從建立新的測試專案開始。 在 [檔案]**** 功能表上，依序選擇 [新增]**** 和 [專案] > ****。 在 [新增專案]**** 對話方塊中，在搜尋方塊中鍵入 "test"，然後將 [語言]**** 設為 C++。 接著從專案範本清單中選擇 [單元測試應用程式 (通用 Windows)]****。
+從建立新的測試專案開始。 在 [檔案] 功能表上，依序選擇 [新增] 和 [專案] > 。 在 [新增專案] 對話方塊中，在搜尋方塊中鍵入 "test"，然後將 [語言] 設為 C++。 接著從專案範本清單中選擇 [單元測試應用程式 (通用 Windows)]。
 
    ![建立新的 UWP 測試專案](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
@@ -34,13 +36,13 @@ ms.locfileid: "85285605"
 
 ::: moniker range="vs-2017"
 
-從建立新的測試專案開始。 在 [檔案]**** 功能表上，依序選擇 [新增]**** 和 [專案] > ****。 在 [新增專案]**** 對話方塊中，展開 [已安裝]**** > [Visual C++]****，並選擇 [Windows 通用]****。 接著從專案範本清單中選擇 [單元測試應用程式 (通用 Windows)]****。
+從建立新的測試專案開始。 在 [檔案] 功能表上，依序選擇 [新增] 和 [專案] > 。 在 [新增專案] 對話方塊中，展開 [已安裝] > [Visual C++]，並選擇 [Windows 通用]。 接著從專案範本清單中選擇 [單元測試應用程式 (通用 Windows)]。
 
 ::: moniker-end
 
-1. 在 [新增專案] 對話方塊中，展開 [已安裝]**** > [Visual C++]****，並選擇 [Windows 通用]****。 接著從專案範本清單中選擇 [單元測試應用程式 (通用 Windows)]****。
+1. 在 [新增專案] 對話方塊中，展開 [已安裝] > [Visual C++]，並選擇 [Windows 通用]。 接著從專案範本清單中選擇 [單元測試應用程式 (通用 Windows)]。
 
-2. 將專案命名為 `RooterLibTests`；指定位置；將方案命名為 `RooterLib`；並確定已核取 [為方案建立目錄]****。
+2. 將專案命名為 `RooterLibTests`；指定位置；將方案命名為 `RooterLib`；並確定已核取 [為方案建立目錄]。
 
      ![指定方案和專案的名稱和位置](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
@@ -71,7 +73,7 @@ ms.locfileid: "85285605"
 
      請注意， `Assert` 類別提供數個靜態方法，可讓您在測試方法中用來驗證結果。
 
-2. 選擇 [測試]**** 功能表上的 [執行]****，然後選擇 [全部執行]****。
+2. 選擇 [測試] 功能表上的 [執行]，然後選擇 [全部執行]。
 
      測試專案隨即建置並執行。 [ **測試瀏覽器** ] 視窗隨即出現，且測試會列在 [ **通過的測試**] 底下。 視窗底部的 [ **摘要** ] 窗格會提供有關所選取測試的其他詳細資料。
 
@@ -81,20 +83,20 @@ ms.locfileid: "85285605"
 
 ::: moniker range="vs-2019"
 
-在 **方案總管**中，選擇方案名稱。 從捷徑功能表選擇 [新增]****，然後選擇 [新增專案]****。 在 [新增專案]**** 對話方塊中，將 [語言]**** 設為 C++，並在搜尋方塊中鍵入 "DLL"。 從結果清單中，選擇 [單元測試應用程式 (通用 Windows - C++/CX)****。
+在 **方案總管** 中，選擇方案名稱。 從捷徑功能表選擇 [新增]，然後選擇 [新增專案]。 在 [新增專案] 對話方塊中，將 [語言] 設為 C++，並在搜尋方塊中鍵入 "DLL"。 從結果清單中，選擇 [單元測試應用程式 (通用 Windows - C++/CX)。
 
 ![建立 RooterLib 專案](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-在 **方案總管**中，選擇方案名稱。 從捷徑功能表選擇 [新增]****，然後選擇 [新增專案]****。
+在 **方案總管** 中，選擇方案名稱。 從捷徑功能表選擇 [新增]，然後選擇 [新增專案]。
 
 ![建立 RooterLib 專案](../test/media/ute_cpp_windows_rooterlib_create.png)
 
 ::: moniker-end
 
-1. 在 [新增專案]**** 對話方塊中，選擇 [DLL (UWP 應用程式)]****。
+1. 在 [新增專案] 對話方塊中，選擇 [DLL (UWP 應用程式)]。
 
 2. 將下列程式碼新增至 *RooterLib.h* 檔案：
 
@@ -124,7 +126,7 @@ ms.locfileid: "85285605"
 
 3. 將 ROOTERLIB_EXPORTS 符號加入命令列。
 
-    1. 在 **方案總管**中，選擇 [ **RooterLib** ] 專案，然後從快捷方式功能表選擇 [ **屬性** ]。
+    1. 在 **方案總管** 中，選擇 [ **RooterLib** ] 專案，然後從快捷方式功能表選擇 [ **屬性** ]。
 
          ![加入前置處理器符號定義](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
@@ -152,9 +154,9 @@ ms.locfileid: "85285605"
 
 1. 將 RooterLib 加入 RooterLibTests 專案。
 
-   1. 在 [方案總管]**** 中，選擇 **RooterLibTests** 專案，然後在捷徑功能表上選擇 [新增]**** > [參考]****。
+   1. 在 [方案總管] 中，選擇 **RooterLibTests** 專案，然後在捷徑功能表上選擇 [新增] > [參考]。
 
-   1. 在 [新增參考]**** 對話方塊中，選擇 [專案]****。 然後選取 [RouterLib]**** 項目。
+   1. 在 [新增參考] 對話方塊中，選擇 [專案]。 然後選取 [RouterLib] 項目。
 
 2. 在 *unittest1.cpp* 中包含 RooterLib 標頭檔。
 
@@ -190,7 +192,7 @@ ms.locfileid: "85285605"
 
     新測試會出現在 [ **測試瀏覽器** ] 的 [ **未執行的測試** ] 節點中。
 
-5. 在 [測試總管]**** 中，選擇 [全部執行]****。
+5. 在 [測試總管] 中，選擇 [全部執行]。
 
     ![成功的基本測試](../test/media/ute_cpp_testexplorer_basictest.png)
 
@@ -219,7 +221,7 @@ ms.locfileid: "85285605"
     >
     > 當您的使用者變更他們的需求時，請停用已不再正確的測試。 以相同的累加方式，撰寫新的測試，一次使一個測試生效。
 
-2. 在 [測試總管]**** 中，選擇 [全部執行]****。
+2. 在 [測試總管] 中，選擇 [全部執行]。
 
 3. 測試失敗。
 
@@ -289,9 +291,9 @@ ms.locfileid: "85285605"
    };
    ```
 
-2. 在 [測試總管]**** 中，選擇 [全部執行]****。
+2. 在 [測試總管] 中，選擇 [全部執行]。
 
-    測試失敗。 在 [ **Test Explorer**] 中選擇測試名稱。 失敗的判斷提示會反白顯示。 [測試總管]**** 的詳細資料窗格中會顯示失敗的訊息。
+    測試失敗。 在 [ **Test Explorer**] 中選擇測試名稱。 失敗的判斷提示會反白顯示。 [測試總管] 的詳細資料窗格中會顯示失敗的訊息。
 
     ![NegativeRangeTests 失敗](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
@@ -299,7 +301,7 @@ ms.locfileid: "85285605"
 
    1. 在 `SquareRoot` 函式的開頭設定中斷點。
 
-   2. 在失敗測試的捷徑功能表上，選擇 [偵錯選取的測試] ****。
+   2. 在失敗測試的捷徑功能表上，選擇 [偵錯選取的測試] 。
 
         當在中斷點停止執行時，逐步執行程式碼。
 
@@ -336,7 +338,7 @@ ms.locfileid: "85285605"
     result = (result + v/result) / 2.0;
     ```
 
-2. 選擇 [全部執行]**** 測試重構的方法，並確定並未導入迴歸。
+2. 選擇 [全部執行] 測試重構的方法，並確定並未導入迴歸。
 
     > [!TIP]
     > 一組穩定而良好的單元測試，可確認您並未在變更程式碼時引入錯誤。

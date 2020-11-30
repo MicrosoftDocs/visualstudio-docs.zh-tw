@@ -1,5 +1,7 @@
 ---
 title: 測試清單編輯器常見問題集
+description: 請參閱這些關於 Visual Studio Test Explorer 的常見問題，其中包含一些常見的疑難排解。
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 5d0e98c3201d1e0e58ee972ad38c3a49bc9555de
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ef6c6bf3cedcccd156e7ae9ae02c2e5f70805521
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037025"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330169"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 測試總管常見問題集
 
@@ -31,7 +33,7 @@ ms.locfileid: "90037025"
 建置專案來執行以組件為基礎的探索。
 ::: moniker-end
 ::: moniker range="vs-2017"
-建置專案，然後確定已在 [工具]**[選項]** > **[測試]** > **** 中開啟以組件為基礎的探索。
+建置專案，然後確定已在 [工具]**[選項]** > **[測試]** >  中開啟以組件為基礎的探索。
 ::: moniker-end
 [即時測試探索](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/)是來源型的測試探索。 它無法探索使用理論、自訂介面卡、自訂特徵、語句等的測試， `#ifdef` 因為它們是在執行時間定義。 需要組建才能準確找到這些測試。 在 Visual Studio 2017 15.6 版及更新版本中，以組件為基礎的探索 (傳統型探索) 只會在建置之後執行。 這項設定表示當您在編輯時，即時測試探索會盡可能找到更多測試，而組件型探索允許動態定義的測試在組建之後顯示。 即時測試探索會改善回應性，但仍然可讓您在建置後取得完整且精確的結果。
 
@@ -48,7 +50,7 @@ ms.locfileid: "90037025"
 
 **以元件為基礎的探索不再適用于我的專案。如何? 重新開啟嗎？**
 
-移至 [工具]**[選項]** > **[測試]** > ****，然後核取 [在組建之後，另外從建置的組件中探索測試]**** 的方塊。
+移至 [工具]**[選項]** > **[測試]** > ，然後核取 [在組建之後，另外從建置的組件中探索測試] 的方塊。
 
 ![以組件為基礎的選項](media/testex-toolsoptions.png)
 ::: moniker-end
@@ -95,7 +97,7 @@ ms.locfileid: "90037025"
 
 **在 [測試總管] 搜尋方塊中，已無「檔案路徑」篩選條件。**
 
-Visual Studio 2017 15.7 版已移除 [測試總管]**** 搜尋方塊中的檔案路徑篩選條件。 此功能的使用率很低，且排除這項功能可讓 [測試總管] 更快速地擷取測試方法。 如果此變更中斷您的開發流程，請在[開發人員社群](https://developercommunity.visualstudio.com/)提交意見反應來告訴我們。
+Visual Studio 2017 15.7 版已移除 [測試總管] 搜尋方塊中的檔案路徑篩選條件。 此功能的使用率很低，且排除這項功能可讓 [測試總管] 更快速地擷取測試方法。 如果此變更中斷您的開發流程，請在[開發人員社群](https://developercommunity.visualstudio.com/)提交意見反應來告訴我們。
 
 ## <a name="remove-undocumented-interfaces"></a>移除未記載的介面
 
@@ -124,7 +126,7 @@ Visual Studio 2017 15.7 版已移除 [測試總管]**** 搜尋方塊中的檔案
 
 **我無法在 Visual Studio 2017 15.7 版及更新版本中執行 UWP 測試。**
 
-最近的 UWP 測試專案指定一個測試平台建置屬性，可讓識別測試應用程式時的效能更佳。 如果您有在 Visual Studio 15.7 版之前初始化的 UWP 測試專案，您可能會在**輸出**測試中看到此錯誤  >  ** **：
+最近的 UWP 測試專案指定一個測試平台建置屬性，可讓識別測試應用程式時的效能更佳。 如果您有在 Visual Studio 15.7 版之前初始化的 UWP 測試專案，您可能會在 **輸出** 測試中看到此錯誤  >  ****：
 
 **System.AggregateException: One or more errors occurred. ---> System.InvalidOperationException: The following TestContainer was not found {} at Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()**
 
@@ -144,7 +146,7 @@ Visual Studio 2017 15.7 版已移除 [測試總管]**** 搜尋方塊中的檔案
 ::: moniker range=">=vs-2019"
 ## <a name="using-preview-features"></a>使用預覽功能
 
-在 Visual Studio 2019 中，您可以在 [工具] **> 選項 > 環境 > 預覽功能**中加入宣告預覽功能。
+在 Visual Studio 2019 中，您可以在 [工具] **> 選項 > 環境 > 預覽功能** 中加入宣告預覽功能。
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 ## <a name="using-feature-flags"></a>使用功能旗標

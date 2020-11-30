@@ -1,5 +1,7 @@
 ---
 title: 安裝協力廠商單元測試架構
+description: Visual Studio 測試總管可以從任何已針對其開發配接器介面的單元測試架構中執行測試。
+ms.custom: SEO-VS-2020
 ms.date: 07/09/2020
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c274f203b9bf2746716c0625c61141aaa332977a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6433d665157c186a390e2963ef7ad1447b2f982
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387183"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329974"
 ---
 # <a name="install-unit-test-frameworks"></a>安裝單元測試架構
 
@@ -29,11 +31,11 @@ Visual Studio 方案可包含多個單元測試專案，這些專案使用不同
 
 ## <a name="acquire-frameworks"></a>取得架構
 
-使用 **NuGet 套件管理員**安裝協力廠商單元測試架構。
+使用 **NuGet 套件管理員** 安裝協力廠商單元測試架構。
 
-1. 以滑鼠右鍵按一下會包含您測試程式碼的專案，然後選取 [管理 NuGet 套件]****。
+1. 以滑鼠右鍵按一下會包含您測試程式碼的專案，然後選取 [管理 NuGet 套件]。
 
-2. 在 **NuGet 套件管理員**中，搜尋您想要安裝的測試架構，然後按一下 [安裝]****。
+2. 在 **NuGet 套件管理員** 中，搜尋您想要安裝的測試架構，然後按一下 [安裝]。
 
    ![Visual Studio 中的 NuGet 套件管理員](media/vs-2019/nuget-package-manager.png)
 
@@ -45,11 +47,11 @@ Visual Studio 方案可包含多個單元測試專案，這些專案使用不同
 
 1. 流覽至 [**工具**  >  **nuget 封裝管理員**  >  **管理解決方案的 nuget 套件**]，開啟解決方案的 nuget 封裝管理員。
 
-2. 按一下 [更新]**** 索引標籤並搜尋已安裝的 MSTest、NUnit 或 xUnit 測試配接器。
+2. 按一下 [更新] 索引標籤並搜尋已安裝的 MSTest、NUnit 或 xUnit 測試配接器。
 
 3. 選取每個測試配接器，然後選取下拉式功能表中最新穩定的版本。
 
-4. 選擇 [安裝]**** 按鈕。
+4. 選擇 [安裝] 按鈕。
 
    ![升級測試配接器](media/install-adapter-upgrade.png)
 

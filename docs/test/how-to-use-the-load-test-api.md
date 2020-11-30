@@ -1,5 +1,7 @@
 ---
 title: 負載測試 API
+description: 瞭解如何使用支援測試外掛程式的負載測試 API （可控制或增強負載測試）。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1fc3ff1aa238249f7425c61b5b28d2a96e299fec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd2064a76777390eb4b708b402578f1d89ca52c7
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287099"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328674"
 ---
 # <a name="how-to-use-the-load-test-api"></a>如何：使用負載測試 API
 
@@ -46,14 +48,14 @@ Visual Studio 支援能夠控制或增強負載測試的負載測試外掛程式
 
 8. 使用 [負載測試編輯器] 加入新的負載測試外掛程式。
 
-    1. 以滑鼠右鍵按一下負載測試的根節點，然後選擇 [新增負載測試外掛程式]****。
+    1. 以滑鼠右鍵按一下負載測試的根節點，然後選擇 [新增負載測試外掛程式]。
 
-    2. [新增負載測試外掛程式]**** 對話方塊隨即顯示。
+    2. [新增負載測試外掛程式] 對話方塊隨即顯示。
 
-    3. 在 [所選外掛程式的屬性]**** 窗格中，設定外掛程式要在執行階段中使用的初始值。
+    3. 在 [所選外掛程式的屬性] 窗格中，設定外掛程式要在執行階段中使用的初始值。
 
         > [!NOTE]
-        > 您可以從外掛程式公開任意數量的屬性。只要讓它們成為公用、可設定的，以及基底類型，例如整數、布林值或字串。 您之後也可以使用 [屬性]**** 視窗來編輯負載測試外掛程式屬性。
+        > 您可以從外掛程式公開任意數量的屬性。只要讓它們成為公用、可設定的，以及基底類型，例如整數、布林值或字串。 您之後也可以使用 [屬性] 視窗來編輯負載測試外掛程式屬性。
 
 9. 執行負載測試。
 

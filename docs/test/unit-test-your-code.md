@@ -1,5 +1,7 @@
 ---
 title: 單元測試
+description: 瞭解可用來讓開發人員和測試人員在程式碼中尋找邏輯錯誤的快速方式的單元測試工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: be0f8f7eeb116a251477ce57027a2176119c2d17
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 8f48a50b39c04df9abab7c11b3b85cc0d2670025
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099306"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330130"
 ---
 # <a name="unit-test-your-code"></a>對程式碼進行單元測試
 
@@ -24,13 +26,13 @@ ms.locfileid: "92099306"
 
 單元測試工具包括：
 
-* **測試瀏覽器** &mdash;執行單元測試，並在**測試瀏覽器**中查看其結果。 您可以使用任何具有 [測試總管]**** 配接器的單元測試架構，包括協力廠商架構。
+* **測試瀏覽器** &mdash;執行單元測試，並在 **測試瀏覽器** 中查看其結果。 您可以使用任何具有 [測試總管] 配接器的單元測試架構，包括協力廠商架構。
 
 * **適用于 managed 程式碼的 Microsoft 單元測試架構** &mdash;適用于 managed 程式碼的 Microsoft 單元測試架構會隨 Visual Studio 一起安裝，並提供用於測試 .NET 程式碼的架構。
 
-* **適用于 c + + 的 Microsoft 單元測試架構** &mdash;適用于 c + + 的 Microsoft 單元測試架構是在**使用 c + +** 工作負載進行桌面開發時安裝的一部分。 它提供用於測試機器碼的架構。 也包含 Google Test、Boost.Test 及 CTest 架構，且協力廠商配接器可用於其他測試架構。 如需詳細資訊，請參閱[撰寫 C/C++ 的單元測試](../test/writing-unit-tests-for-c-cpp.md)。
+* **適用于 c + + 的 Microsoft 單元測試架構** &mdash;適用于 c + + 的 Microsoft 單元測試架構是在 **使用 c + +** 工作負載進行桌面開發時安裝的一部分。 它提供用於測試機器碼的架構。 也包含 Google Test、Boost.Test 及 CTest 架構，且協力廠商配接器可用於其他測試架構。 如需詳細資訊，請參閱[撰寫 C/C++ 的單元測試](../test/writing-unit-tests-for-c-cpp.md)。
 
-* 程式**代碼涵蓋範圍工具** &mdash;您可以從 Test Explorer 中的一個命令來判斷單元測試所執行的產品程式碼數量。
+* 程式 **代碼涵蓋範圍工具** &mdash;您可以從 Test Explorer 中的一個命令來判斷單元測試所執行的產品程式碼數量。
 
 * **Microsoft Fakes 隔離架構** &mdash;Microsoft Fakes 隔離架構可以針對在受測程式碼中建立相依性的生產和系統程式碼建立替代類別和方法。 藉由實作函式的偽造委派，您可以控制相依性物件的行為和輸出。
 

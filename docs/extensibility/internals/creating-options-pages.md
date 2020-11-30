@@ -1,5 +1,7 @@
 ---
 title: 建立選項頁 |Microsoft Docs
+description: 瞭解如何在 Visual Studio 中的 [工具] 功能表底下建立 [選項] 頁面，方法是從受控封裝架構中執行 DialogPage 類別。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 368efaa78a56723d4a72c482bea9ee739385127e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4759b3590fcde116e6f106ac326ff875e9566c43
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709156"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328635"
 ---
 # <a name="create-options-pages"></a>建立選項頁面
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] managed 封裝架構中，從 [工具] 功能表底下新增 [選項] 頁面，衍生自的類別會 <xref:Microsoft.VisualStudio.Shell.DialogPage> 延伸 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE。 **Options** **Tools**
