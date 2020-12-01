@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 820cd87f26e4babc7a83d975c3fb480187af564f
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 20f2d142c0e253cf5ad5a7ec5d85974ff5522508
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442281"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96356831"
 ---
 # <a name="set-env"></a>set-env
 
@@ -30,7 +30,7 @@ ms.locfileid: "95442281"
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------|
 | **評論**                                 | 字串 | No       | 選擇性批註屬性。 未使用。                                       |
 | [**輸入**](#input)                          | 字串 | No       | 工具的輸入。 如需詳細資料，請參閱下列 [輸入](#input) 。               |
-| [**additionalOptions**](#additional-options) | 字串 | No       | 未使用。 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。  |
+| [**additionalOptions**](#additional-options) | 字串 | No       | 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。            |
 
 ### <a name="input"></a>輸入
 
@@ -47,7 +47,7 @@ ms.locfileid: "95442281"
 
 ### <a name="additional-options"></a>其他選項
 
-未使用。
+ `--user``--process`可包含、或， `--machine` 以指定要設定環境變數的位置。 根據預設，我們會以使用者為目標。 如需環境變數可能目標的詳細資訊，請參閱 [>environmentvariabletarget](https://docs.microsoft.com/dotnet/api/system.environmentvariabletarget)。
 
 ### <a name="default-behavior"></a>預設行為
 
@@ -68,6 +68,20 @@ ms.locfileid: "95442281"
     {
       "tool": "set-env",
       "input": "foo=bar",
+    }
+  ]
+}
+```
+
+#### <a name="devinitjson-that-will-set-an-environment-variable-foo-to-value-bar-stored-in-the-environment-block-associated-with-the-current-process"></a>.devinit.js，則會將環境變數（值）設定 `foo` 為 `bar` 儲存在與目前進程相關聯的環境區塊中：
+```json
+{
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+  "run": [
+    {
+      "tool": "set-env",
+      "input": "foo=bar",
+      "additionalOptions": "--process",
     }
   ]
 }

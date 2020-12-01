@@ -8,10 +8,10 @@ author: evanwindom
 ms.author: v-evwin
 ms.date: 11/11/2020
 ms.openlocfilehash: a5c449c8ab6b07d981073d626aa0fa1394dc59af
-ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2020
+ms.lasthandoff: 12/01/2020
 ms.locfileid: "94626217"
 ---
 ## <a name="what-is-the-github-setup-process"></a>什麼是 GitHub 設定程序？

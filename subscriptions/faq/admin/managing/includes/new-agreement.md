@@ -8,10 +8,10 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
 ms.openlocfilehash: e44617f2114201bcd14fbde938d0a420773f1022
-ms.sourcegitcommit: 296ab61c40bf090c577ef20e84d581939bd1855b
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
+ms.lasthandoff: 12/01/2020
 ms.locfileid: "92526097"
 ---
 ## <a name="i-have-a-new-agreement--how-do-i-move-my-subscribers"></a>我有新的合約。  我要如何移動訂閱者？

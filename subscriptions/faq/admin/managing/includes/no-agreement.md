@@ -8,10 +8,10 @@ author: evanwindom
 ms.author: cabuschl
 ms.date: 11/10/2020
 ms.openlocfilehash: 55e6aff63d96bf0eca3e45f58ee48d0610aad4d9
-ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2020
+ms.lasthandoff: 12/01/2020
 ms.locfileid: "94626218"
 ---
 ## <a name="why-am-i-not-seeing-an-agreement-while-logged-into-the-portal"></a>為什麼我在登入入口網站時看不到協議？

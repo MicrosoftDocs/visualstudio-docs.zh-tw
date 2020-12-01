@@ -8,10 +8,10 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
 ms.openlocfilehash: 06713ee3b98997d248bd62513130d8a1db5c016d
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 12/01/2020
 ms.locfileid: "92157891"
 ---
 ## <a name="why-is-the-portal-not-showing-the-correct-number-of-visual-studio-subscriptions-for-my-agreement"></a>為什麼入口網站不會針對我的合約顯示正確的 Visual Studio 訂閱數目？

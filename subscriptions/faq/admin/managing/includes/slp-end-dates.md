@@ -8,10 +8,10 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
 ms.openlocfilehash: 8a1692e9739a3cfe68f25cc61596a001732c6f7c
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 12/01/2020
 ms.locfileid: "92157815"
 ---
 ## <a name="why-does-my-slp-agreement-have-an-end-date-and-why-is-it-sometimes-different-for-my-subscribers"></a>為什麼我的 SLP 合約有結束日期，為什麼針對我的訂閱者而言，有時會有所不同？
