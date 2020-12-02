@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 工具列的 Guid 和識別碼 |Microsoft Docs
+description: 查看 Visual Studio 整合式開發環境 (IDE) 中包含的工具列和識別碼值的清單，以及它們所包含的群組。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe42821cdacc038d767e52373d45ddd7b8954323
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b44cda401faa0d7e34bf9ce7579aa3cca026fa13
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708233"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480378"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio 工具列的 Guid 和識別碼
 本主題列舉 Visual Studio 整合式開發環境中包含的工具列 GUID 和識別碼值 (IDE) 以及它們所包含的群組。 這些值會定義在 *.vsct* 檔案中，這些檔案會安裝為 Visual Studio SDK 的一部分。 如需詳細資訊，請參閱 [IDE 定義的命令、功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
@@ -41,7 +43,7 @@ ms.locfileid: "80708233"
 |工具列|識別碼|
 |-------------|--------|
 |標準|IDM_VS_TOOL_STANDARD|
-|Build|IDM_VS_TOOL_BUILD|
+|組建|IDM_VS_TOOL_BUILD|
 |文字編輯器|IDM_VS_TOOL_TEXTEDITOR|
 |偵錯|guidVSDebugGroup： IDM_DEBUG_TOOLBAR|
 |調試位置|guidVSDebugGroup： IDM_DEBUG_CONTEXT_TOOLBAR|
@@ -95,7 +97,7 @@ ms.locfileid: "80708233"
 |----------|--------|
 |執行|IDM_DEBUG_TOOLBAR|
 |逐步執行|IDG_DEBUG_TOOLBAR_STEPPING|
-|監看式|IDG_DEBUG_TOOLBAR_WATCH|
+|觀看|IDG_DEBUG_TOOLBAR_WATCH|
 |Windows|IDG_DEBUG_TOOLBAR_WINDOWS|
 
 ### <a name="debug-location-toolbar-groups"></a>調試位置工具列群組

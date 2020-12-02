@@ -1,5 +1,7 @@
 ---
 title: 步驟2：執行您的圖片檢視器應用程式
+description: 瞭解如何執行您的圖片檢視器應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8204f2a32a1bb29203c75af55aa383141f17853f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddc016df63a7bb6ffbe3923de72c4f23cb32739c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579412"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480651"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>步驟2：執行您的圖片檢視器應用程式
 
@@ -32,27 +34,27 @@ ms.locfileid: "77579412"
     - 在工具列上，選擇 [ **開始調試** ] 按鈕，如下所示：
 
       ![[開始偵錯] 工具列按鈕](../ide/media/express_icondebug.png)<br>
-      ***開始調試***的 *工具列按鈕*
+      **_開始調試_* _toolbar 按鈕 *
 
 1. Visual Studio 會執行您的應用程式，而且會出現名為 **Form1** 的視窗。 下列螢幕擷取畫面顯示您剛剛建立的應用程式。 應用程式正在執行中，您很快就會新增至該應用程式。
 
      ![正在執行 Windows Forms 應用程式](../ide/media/express_firstrun.png)<br>
-***Windows Forms 應用程式***，*正在*執行
+**_Windows Forms App_* _，_running *
 
 1. 返回至 Visual Studio 整合式開發環境 (IDE) ，然後查看新的工具列。 當您執行應用程式時，工具列上會出現其他按鈕。 這些按鈕可讓您進行一些動作，例如停止和啟動您的應用程式，並協助您追蹤任何錯誤 (錯誤) 它可能有的錯誤。 在此範例中，我們使用它來啟動和停止應用程式。
 
      ![調試工具列](../ide/media/express_debugtoolbar.png)<br>
-***調試****工具列*
+***調試** _ _toolbar *
 
 1. 使用下列其中一種方法來停止您的應用程式：
 
-    - 在工具列上選擇 [停止偵錯]**** 按鈕。
+    - 在工具列上選擇 [停止偵錯] 按鈕。
 
     - 在功能表列上，選擇 [ **Debug**  >  **停止調試**]。
 
-    - 使用鍵盤，然後按**Shift** + **F5**。
+    - 使用鍵盤，然後按 **Shift** + **F5**。
 
-    - 選擇**Form1**視窗左上角的 [ **X** ] 按鈕。
+    - 選擇 **Form1** 視窗左上角的 [ **X** ] 按鈕。
 
     > [!NOTE]
     > 當您從 IDE 內執行您的應用程式時，它會呼叫偵錯工具，因為您通常會在應用程式中找出並修正 (錯誤) 的 bug。 雖然此應用程式很小，而且還沒有這麼做，但它仍然是真正的程式。 您遵循相同程序執行和偵錯其他程式。 若要深入了解偵錯，請參閱[偵錯工具簡介](../debugger/debugger-feature-tour.md)。

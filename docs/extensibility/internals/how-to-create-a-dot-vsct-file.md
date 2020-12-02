@@ -1,5 +1,7 @@
 ---
 title: 如何：建立。.Vsct 檔案 |Microsoft Docs
+description: 瞭解如何手動建立 .vsct 檔案，這是以 XML 為基礎的 Visual Studio 命令表格設定檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a571098deeeca0e8262d855c24d0bf1ce66be08e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47d38e68494f29947131bcc8ce3a2a59b2e8d48b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905529"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480365"
 ---
 # <a name="how-to-create-a-vsct-file"></a>如何：建立 .vsct 檔案
 
@@ -25,7 +27,7 @@ ms.locfileid: "85905529"
 
 - 您可以使用以 XML 為基礎的命令資料表設定編譯器 *Vsct.exe*，從現有的 *.ctc* 檔產生檔案。
 
-- 您可以使用*Vsct.exe*從現有的*cto*檔產生 *.vsct*檔案。
+- 您可以使用 *Vsct.exe* 從現有的 *cto* 檔產生 *.vsct* 檔案。
 
 - 您可以手動建立新的 *.vsct* 檔案。
 
@@ -45,7 +47,7 @@ ms.locfileid: "85905529"
 
 6. 在 XSD 架構清單中，選取 *.vsct .xsd* 架構。 如果它不在清單中，請按一下 [ **新增** ]，然後在本機磁片磁碟機上尋找檔案。 當您完成時，請按一下 **[確定]** 。
 
-7. 在 XML 檔案中，輸入 *<CommandTable* ，然後按 **tab**鍵。輸入以關閉標記 *>* 。
+7. 在 XML 檔案中，輸入 *<CommandTable* ，然後按 **tab** 鍵。輸入以關閉標記 *>* 。
 
     此動作會建立基本的 *.vsct* 檔案。
 
@@ -61,7 +63,7 @@ ms.locfileid: "85905529"
 
 1. 取得一份 Perl 語言。
 
-2. 取得 Perl 腳本*ConvertCTCToVSCT.pl*的複本，通常位於* \<Visual Studio SDK installation path> \VisualStudioIntegration\Tools\bin*資料夾中。
+2. 取得 Perl 腳本 *ConvertCTCToVSCT.pl* 的複本，通常位於 *\<Visual Studio SDK installation path> \VisualStudioIntegration\Tools\bin* 資料夾中。
 
 3. 取得您想要轉換之 *.ctc* 原始程式檔的複本。
 
@@ -86,7 +88,7 @@ ms.locfileid: "85905529"
 
 ## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>如何：從現有的 cto 檔建立 .vsct 檔案
 
-您可以從現有的*cto*檔建立 XML *.vsct*檔。 這樣做可讓您充分利用新的命令資料表編譯器格式。 即使 *cto* 檔是從 *.ctc* 檔案編譯，此程式仍可運作。 您可以編輯 *.vsct* 檔案，並將其編譯成另一個 cto 檔案。
+您可以從現有的 *cto* 檔建立 XML *.vsct* 檔。 這樣做可讓您充分利用新的命令資料表編譯器格式。 即使 *cto* 檔是從 *.ctc* 檔案編譯，此程式仍可運作。 您可以編輯 *.vsct* 檔案，並將其編譯成另一個 cto 檔案。
 
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>從 .cto 檔建立 .vsct 檔
 
@@ -138,7 +140,7 @@ ms.locfileid: "85905529"
 
      此標記應該在 `ItemGroup` 包含內嵌資源的專案內。
 
-4. 在編輯器中，開啟通常名為* \<ProjectName\> Package.cs*或* \<ProjectName\> package*的封裝檔案。
+4. 在編輯器中，開啟通常名為 *\<ProjectName\> Package.cs* 或 *\<ProjectName\> package* 的封裝檔案。
 
 5. 將 `ProvideMenuResource` 屬性新增至 package 類別，如下列範例所示。
 

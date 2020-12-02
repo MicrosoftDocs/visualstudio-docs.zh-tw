@@ -1,5 +1,7 @@
 ---
 title: 篩選嵌套專案的 AddItem 對話方塊 |Microsoft Docs
+description: 瞭解如何藉由執行父專案的 IVsFilterAddProjectItemDlg 介面，在 Visual Studio 中篩選嵌套專案的 [AddItem] 對話方塊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bc97b6041f4844ff71fe1d38a7103e1219888be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02d574007250960e3cb0b39bf50696f03af98e27
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708389"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480457"
 ---
 # <a name="filter-the-additem-dialog-box-for-nested-projects"></a>篩選嵌套專案的 AddItem 對話方塊
 當您針對嵌套專案顯示 [ **AddItem** ] 對話方塊時，父專案可以控制要在對話方塊中顯示的專案。
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>介面可讓您篩選將會出現在**AddItem**對話方塊中的節點。 當子專案顯示 [ **AddItem** ] 對話方塊時，父系可以執行 `IVsFilterAddProjectItemDlg` 介面並篩選以其他方式顯示在子專案中的專案。
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>介面可讓您篩選將會出現在 **AddItem** 對話方塊中的節點。 當子專案顯示 [ **AddItem** ] 對話方塊時，父系可以執行 `IVsFilterAddProjectItemDlg` 介面並篩選以其他方式顯示在子專案中的專案。
 
  當專案依功能分組時，在特定的父專案下，您可以在 `IVsFilterAddProjectItemDlg` 使用者于嵌套專案的快捷方式功能表上選取 [ **加入專案專案** ] 時執行。 `IvsFilterAddProjectItemDlg displays`只執行該群組專屬的專案專案或檔案。 其他群組的專案專案會從對話方塊中篩選出來，即使它們儲存在相同的目錄中也一樣。
 

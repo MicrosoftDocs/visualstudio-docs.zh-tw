@@ -1,5 +1,7 @@
 ---
 title: 步驟 5：新增標籤參考
+description: 瞭解如何將標籤參考新增至您的表單。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,15 +15,15 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de89d7194425e1a8cba9e11f2734372d80b256b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95a4286feb778e17b345f964b1b7ccca5343e461
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579337"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480560"
 ---
 # <a name="step-5-add-label-references"></a>步驟 5：新增標籤參考
-程式需要追蹤玩家所選擇的 Label 控制項。 現在，程式會顯示玩家選擇的所有標籤。 但是，我們將要變更該行為。 在選擇第一個標籤之後，程式應該會顯示標籤的圖示。 在選擇第二個標籤之後，程式應該要短暫顯示這兩個圖示，然後再次隱藏這兩個圖示。 您的程式現在將會使用*參考變數*，追蹤第一次和第二次選擇的 Label 控制項。
+程式需要追蹤玩家所選擇的 Label 控制項。 現在，程式會顯示玩家選擇的所有標籤。 但是，我們將要變更該行為。 在選擇第一個標籤之後，程式應該會顯示標籤的圖示。 在選擇第二個標籤之後，程式應該要短暫顯示這兩個圖示，然後再次隱藏這兩個圖示。 您的程式現在將會使用 *參考變數*，追蹤第一次和第二次選擇的 Label 控制項。
 
 ## <a name="to-add-label-references"></a>若要加入標籤參考
 
@@ -47,7 +49,7 @@ ms.locfileid: "77579337"
 4. 選擇一個 Label 控制項，並注意什麼事也沒發生。 程式已經在追蹤玩家所選擇的第一個標籤，因此 `firstClicked` 不等於 `null` c # 或 `Nothing` Visual Basic 中的。 當 `if` 陳述式檢查 `firstClicked` 以判斷它是否等於 `null` 或 `Nothing` 時，若發現不相等，就不會執行 `if` 陳述式中的陳述式。 因此，只有所選的第一個圖示會變成黑色，而其他圖示則看不見，如下列影像所示。
 
      ![顯示一個圖示的配對遊戲](../ide/media/express_tut4step5.png)<br/>
-*顯示一個圖示*的***配對遊戲***
+***配對遊戲** _ _showing 一個圖示 *
 
      您可以在教學課程的下一個步驟中加入 **Timer** 控制項，以解決此問題。
 

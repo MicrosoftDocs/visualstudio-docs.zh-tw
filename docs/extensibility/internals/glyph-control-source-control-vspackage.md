@@ -1,5 +1,7 @@
 ---
 title: 字元控制項 (原始檔控制 VSPackage) |Microsoft Docs
+description: 瞭解如何在原始檔控制 VSPackage 中顯示自訂字元，讓您可以使用自己的圖示來指出原始檔控制下的專案狀態。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,21 +13,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9db1b4542eae293e39cda674fac3eb984aa77d3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaf7f40224e2f197627bb995dc6cccdf297b46e5
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708324"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480469"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>字元控制項 (原始檔控制 VSPackage) 
 可供原始檔控制 Vspackage 使用的深層整合有一部分，就是能夠顯示自己的字元來指出原始檔控制下的專案狀態。
 
 ## <a name="levels-of-glyph-control"></a>字型控制項的層級
- 狀態圖像是一個圖示，指出專案在顯示時的目前狀態（例如，在 **方案總管** 或 **類別檢視**中）。 原始檔控制 VSPackage 可以執行兩個層級的字元控制項。 它可以將字元選擇限制為 IDE 所提供的一組預先定義的字元 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，也可以定義一組要顯示的自訂圖像。
+ 狀態圖像是一個圖示，指出專案在顯示時的目前狀態（例如，在 **方案總管** 或 **類別檢視** 中）。 原始檔控制 VSPackage 可以執行兩個層級的字元控制項。 它可以將字元選擇限制為 IDE 所提供的一組預先定義的字元 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，也可以定義一組要顯示的自訂圖像。
 
 ### <a name="default-set-of-glyphs"></a>預設的一組字元
- 若要判斷與 **方案總管**中的專案相關聯的狀態圖像，專案會使用從原始檔控制要求狀態圖像 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.GetSccGlyph%2A> 。 原始檔控制 VSPackage 可能會決定要讓選擇的字元限制為 IDE 所提供的預先定義圖像。 在此情況下，VSPackage 會傳回值陣列，這些值代表 *vsshell*中定義的圖像列舉。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>。 這是 IDE 所設定的一組預先定義的字元，例如已簽入圖像的掛鎖，以及簽出圖像的核取記號。
+ 若要判斷與 **方案總管** 中的專案相關聯的狀態圖像，專案會使用從原始檔控制要求狀態圖像 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.GetSccGlyph%2A> 。 原始檔控制 VSPackage 可能會決定要讓選擇的字元限制為 IDE 所提供的預先定義圖像。 在此情況下，VSPackage 會傳回值陣列，這些值代表 *vsshell* 中定義的圖像列舉。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>。 這是 IDE 所設定的一組預先定義的字元，例如已簽入圖像的掛鎖，以及簽出圖像的核取記號。
 
 ### <a name="custom-set-of-glyphs"></a>自訂的一組字元
  原始檔控制 VSPackage 可以在安裝時，使用自己的圖像來取得獨特的外觀和風格。 當新的原始檔控制 VSPackage 為作用中時，即使先前的原始檔控制 VSPackage 仍處於非使用中狀態，也應該能夠開始使用自己的圖像。 在此模式中，原始檔控制 VSPackage 仍然可以使用現有的圖示，以保持與選擇一致的外觀 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。

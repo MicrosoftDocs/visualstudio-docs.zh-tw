@@ -1,5 +1,7 @@
 ---
 title: 步驟 4：將 Click 事件處理常式新增至每個標籤
+description: 瞭解如何將 click 事件處理常式新增至每個標籤。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7049271dddb4e763bf5ecb3760358bdd63e38df5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f620b097e2a565bbacf3322d03385aa70fd0356f
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579342"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480599"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>步驟 4：將 Click 事件處理常式新增至每個標籤
 
@@ -34,11 +36,11 @@ ms.locfileid: "77579342"
 
 ## <a name="to-add-a-click-event-handler-to-each-label"></a>若要將 Click 事件處理常式加入每一個標籤
 
-1. 在 **Windows Forms 設計工具**中開啟表單。 在**方案總管**中，選擇 [Form1.cs]** 或 [Form1.vb]**。 在功能表列上，選擇 [**視圖**  >  **設計**工具]。
+1. 在 **Windows Forms 設計工具** 中開啟表單。 在 **方案總管** 中，選擇 [Form1.cs] 或 [Form1.vb]。 在功能表列上，選擇 [**視圖**  >  **設計** 工具]。
 
 2. 選擇第一個 Label 控制項以選取該項目。 接著，按住 **Ctrl** 鍵，同時選擇其他每一個標籤加以選取。 確定已選取每一個標籤。
 
-3. 在 [屬性]**** 視窗中選擇工具列上的 [事件]**** 按鈕，檢視 [屬性]**** 視窗中的 [事件]**** 頁面。 向下滾動至 **Click** 事件，然後在方塊中輸入 **label_Click** ，如下列螢幕擷取畫面所示。
+3. 在 [屬性] 視窗中選擇工具列上的 [事件] 按鈕，檢視 [屬性] 視窗中的 [事件] 頁面。 向下滾動至 **Click** 事件，然後在方塊中輸入 **label_Click** ，如下列螢幕擷取畫面所示。
 
      ![顯示 Click 事件的 [屬性] 視窗](../ide/media/express_labelclick.png)
 
@@ -60,7 +62,7 @@ ms.locfileid: "77579342"
 
      這個方法會先檢查是否已成功地將 `clickedLabel` 從物件轉換為 Label 控制項。 如果轉換不成功，則其值為 `null` (C#) 或 `Nothing` (Visual Basic)，而且您不會想執行方法中其餘部分的程式碼。 接下來，此方法會使用 Label 的 **ForeColor** 屬性來檢查已選擇標籤的文字色彩。 如果 Label 的文字色彩為黑色，則表示已選擇該圖示，且方法已執行完成  (`return` 語句的作用：它會告訴程式停止執行此方法 ) 。否則，就不會選擇該圖示，因此程式會將標籤的文字色彩變更為黑色。
 
-6. 在功能表列上 **，選擇 [**  >  **全部儲存**] 以儲存進度，然後在功能表列上，選擇 [ **Debug**  >  **開始調試**程式] 來執行您的程式。 您應該會看到一個藍色背景的空白表單。 在該表單中選擇任一個儲存格，應該就可以看見其中一個圖示。 繼續在表單中選擇不同位置。 當您選擇圖示時，圖示應該就會出現。
+6. 在功能表列上 **，選擇 [**  >  **全部儲存**] 以儲存進度，然後在功能表列上，選擇 [ **Debug**  >  **開始調試** 程式] 來執行您的程式。 您應該會看到一個藍色背景的空白表單。 在該表單中選擇任一個儲存格，應該就可以看見其中一個圖示。 繼續在表單中選擇不同位置。 當您選擇圖示時，圖示應該就會出現。
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 

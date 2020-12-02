@@ -1,5 +1,7 @@
 ---
 title: 使用原始檔控制 Vspackage 消費者入門 |Microsoft Docs
+description: 瞭解 Visual Studio 中的原始檔控制 Vspackage，以及它們如何成為原始檔控制外掛程式的更先進替代方案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69245d9a5c4fb8b27e66b5f1860063756cd46520
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e444b73dce312625c7f86eda2930ba683e504f2
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708334"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480482"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>開始使用原始檔控制 Vspackage
 

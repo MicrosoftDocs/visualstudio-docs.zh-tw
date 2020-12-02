@@ -1,5 +1,7 @@
 ---
 title: split/merge if 陳述式
+description: 瞭解如何使用 [快速動作與重構] 功能表來分割或合併 if 語句。
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a3b42f83faacda6be34b282150cf4fb4c0f379f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f72c6c2ed1cfdd1c8ea4471976d6a4980dfe422f
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093688"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479923"
 ---
 # <a name="split-or-merge-if-statements"></a>split/merge if 陳述式
 
@@ -37,11 +39,11 @@ ms.locfileid: "79093688"
 
 1. 將游標放在 `if` 陳述式的 `&&` 或 `||` 運算子旁邊。
 
-2. 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
+2. 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
 
     ![分割 if 陳述式](../media/split-if-statement.png)
 
-3. 選取 [分割成巢狀 if 陳述式]****。
+3. 選取 [分割成巢狀 if 陳述式]。
 
     ![分割 if 陳述式完成](../media/split-if-statement-complete.png)
 
@@ -49,11 +51,11 @@ ms.locfileid: "79093688"
 
 1. 將游標放在內部 `if` 關鍵字中。
 
-2. 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
+2. 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
 
     ![合併 if 陳述式](../media/merge-if-statement.png)
 
-3. 選取 [與外部 if 陳述式合併]****。
+3. 選取 [與外部 if 陳述式合併]。
 
     ![合併 If 陳述式完成](../media/merge-if-statement-complete.png)
 

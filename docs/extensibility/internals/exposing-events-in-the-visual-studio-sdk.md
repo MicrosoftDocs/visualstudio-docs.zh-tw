@@ -1,5 +1,7 @@
 ---
 title: 公開 Visual Studio SDK 中的事件 |Microsoft Docs
+description: 瞭解公開專案和專案專案事件的 Visual Studio SDK 方法和登錄專案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48f1e0ea0dcd07bbc26fc89d5c61a6a5941d4727
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5eec842f989497fda618482916154aabdcdd406
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708492"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480534"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>在 Visual Studio SDK 中公開事件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可讓您使用自動化來來源事件。 建議您輸入專案和專案專案的來源事件。
@@ -27,7 +29,7 @@ ms.locfileid: "80708492"
 
 1. 環境隨即啟動。
 
-2. 它會從登錄讀取所有 Vspackage 之 **Automation**、 **AutomationEvents**和 **AutomationProperties** 索引鍵下的所有值名稱，並將這些名稱儲存在資料表中。
+2. 它會從登錄讀取所有 Vspackage 之 **Automation**、 **AutomationEvents** 和 **AutomationProperties** 索引鍵下的所有值名稱，並將這些名稱儲存在資料表中。
 
 3. 自動化取用者會呼叫，在此範例中為 `DTE.Events.AutomationProjectsEvents` 或 `DTE.Events.AutomationProjectItemsEvents` 。
 
@@ -46,7 +48,7 @@ ms.locfileid: "80708492"
 ## <a name="registry-entries-from-the-basic-project-sample"></a>基本專案範例中的登錄專案
  本節說明如何將 automation 事件值新增至登錄。
 
- **[HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\8.0\Packages \\<PkgGUID \> \AutomationEvents]**
+ **[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\<PkgGUID \> \AutomationEvents]**
 
  **AutomationProjectEvents** = 傳回 `AutomationProjectEvents` 物件。
 
@@ -62,7 +64,7 @@ ms.locfileid: "80708492"
 
  ![Visual Studio 專案事件](../../extensibility/internals/media/projectevents.gif "ProjectEvents") 事件的 Automation 模型
 
- 類別 `CProjectEventsContainer` 代表 *BscProjectsEvents*的來源物件，並 `CProjectItemsEventsContainer` 代表 *BscProjectItemsEvents*的來源物件。
+ 類別 `CProjectEventsContainer` 代表 *BscProjectsEvents* 的來源物件，並 `CProjectItemsEventsContainer` 代表 *BscProjectItemsEvents* 的來源物件。
 
  在大部分的情況下，您必須針對每個事件要求傳回新的物件，因為大部分的事件物件都採用篩選物件。 當您引發事件時，請檢查此篩選準則來確認正在呼叫事件處理常式。
 

@@ -1,5 +1,7 @@
 ---
 title: 靜態區域函式重構選項
+description: 瞭解如何使用 [快速動作] 和 [重構] 功能表，將區域函式設為靜態，並將函式之外定義的變數傳遞至函式的宣告與呼叫。
+ms.custom: SEO-VS-2020
 ms.date: 02/10/2020
 ms.topic: reference
 author: governesss
@@ -11,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: c297457c910c484c05c974c581e89c75e0ad44e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e85fcc96542b4f3538729aeb50a4e080c902657
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77144842"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479884"
 ---
 # <a name="static-local-function-refactorings-and-quick-actions"></a>靜態區域函數重構和快速動作
 
@@ -38,7 +40,7 @@ ms.locfileid: "77144842"
 
 1. 將插入號放在區域函式名稱上。
 
-2. 按下**Ctrl** + **。** ) 觸發 [ **快速動作與重構** ] 功能表的 (期間。
+2. 按下 **Ctrl** + **。** ) 觸發 [ **快速動作與重構** ] 功能表的 (期間。
 
    ![將區域函式設為靜態](media/make-local-function-static.png)
 
@@ -60,7 +62,7 @@ ms.locfileid: "77144842"
 
 1. 將插入號放在用於靜態區域函式的變數上。
 
-2. 按下**Ctrl** + **。** ) 觸發 [ **快速動作與重構** ] 功能表的 (期間。
+2. 按下 **Ctrl** + **。** ) 觸發 [ **快速動作與重構** ] 功能表的 (期間。
 
    ![在靜態區域函數中明確傳遞變數](media/pass-variable-explicitly-static-local-function.png)
 

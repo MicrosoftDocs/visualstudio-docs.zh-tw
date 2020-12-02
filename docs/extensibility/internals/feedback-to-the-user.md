@@ -1,5 +1,7 @@
 ---
 title: 對使用者的意見反應 |Microsoft Docs
+description: 瞭解如何在 Visual Studio 整合式開發環境 (IDE) 中提供視覺回饋給使用者。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46b9190b16b9aa444384847bf209ccca50c7f768
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8f3f79a61729a641ee7c046ddd196a648469fb3
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708406"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480521"
 ---
 # <a name="feedback-to-the-user"></a>對使用者的意見反應
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 中，有關可用功能的視覺化意見反應是以使用者目前的選取範圍和全域選取內容為基礎。 下表列出不同的選取內容中可用的功能。
@@ -53,7 +55,7 @@ ms.locfileid: "80708406"
 
 - 檔特定的 **工具箱** 會更新，以反映使用中的檔。
 
-- **編輯器**工具列和**資料表**功能表隨即顯示，且標題列會更新以反映 Web 表單視窗。
+- **編輯器** 工具列和 **資料表** 功能表隨即顯示，且標題列會更新以反映 Web 表單視窗。
 
 - 使用中的階層視窗（通常是 **方案總管**）及其標題列更新，以反映目前的內容，而且即時線上的 [ **專案** ] 功能表命令會套用至使用中的 Web 應用程式專案。
 

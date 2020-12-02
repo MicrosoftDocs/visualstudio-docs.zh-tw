@@ -1,5 +1,7 @@
 ---
 title: 步驟 2：新增隨機物件和圖示清單
+description: 瞭解如何為遊戲建立一組相符的符號。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f4731778ebb3acbdc3bb7d9b5827c1015541d98
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1018b390f6ebbf67fab88554aa85fe6a8ecec88d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579427"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480690"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>步驟 2：新增隨機物件和圖示清單
 
@@ -26,7 +28,7 @@ ms.locfileid: "77579427"
 
 ## <a name="to-add-a-random-object-and-a-list-of-icons"></a>新增隨機物件和圖示清單
 
-1. 在 [**方案總管**中，如果您使用的是 c #，請選擇 [ *Form1.cs* ] *，如果您*使用 Visual Basic，則選擇 [form1.vb]，然後在功能表列上選擇 [ **View**  >  **Code**]。 或者，您可以選擇 **F7** 鍵或按兩下方案總管**** 中的 [Form1]****。
+1. 在 [**方案總管** 中，如果您使用的是 c #，請選擇 [ *Form1.cs* ] *，如果您* 使用 Visual Basic，則選擇 [form1.vb]，然後在功能表列上選擇 [ **View**  >  **Code**]。 或者，您可以選擇 **F7** 鍵或按兩下方案總管中的 [Form1]。
 
      這會顯示 Form1 背後的程式碼模組。
 
@@ -42,7 +44,7 @@ ms.locfileid: "77579427"
 
 3. 新增清單物件時，請注意開啟的 **IntelliSense** 視窗。 以下是 c # 範例，但當您在 Visual Basic 中加入清單時，會出現類似的文字。
 
-     ![顯示 Click 事件的 [屬性] 視窗](../ide/media/express_listintellisense.png)<br/>***IntelliSense** 視窗*
+     ![顯示 Click 事件的 [屬性] 視窗](../ide/media/express_listintellisense.png)<br/>**_IntelliSense_* 視窗*
 
     > [!NOTE]
     > IntelliSense 視窗時只有在您手動輸入程式碼時才會出現。 如果您複製並貼上程式碼，它不會出現。

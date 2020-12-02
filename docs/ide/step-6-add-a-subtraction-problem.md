@@ -1,5 +1,7 @@
 ---
 title: 步驟 6：新增減法問題
+description: 瞭解如何新增減法問題，並瞭解如何執行工作。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6dd2b572074265cca62a45b962c604abf5c849
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8157335e47ec13c66da471f77ddbd2877bcac12d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579826"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480664"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>步驟 6：新增減法問題
 在本教學課程的第六個部分中，您將加入減法問題並學習如何執行下列工作：
@@ -60,12 +62,12 @@ ms.locfileid: "77579826"
      您可以透過多種方式呼叫 Random 類別的 `Next()` 方法，也就是您在本教學課程前段中命名為 "randomizer" 的方法。 能夠以多種方式呼叫的方法稱為「多載」(Overload)，您可以使用 IntelliSense 來了解這些方法。 再看一次 `Next()` 方法的 [IntelliSense] 視窗工具提示。
 
      ![IntelliSense 視窗工具提示](../ide/media/express_overloads.png)<br/>
-***IntelliSense*** *視窗工具提示*
+**_IntelliSense_* _ _window 工具提示 *
 
-     工具提示會顯示 [(+ 2 多載)]****，也就是說，您可以透過另外兩種方式呼叫 `Next()` 方法。 多載包含不同數目或類型的引數，因此彼此之間的運作方式會稍有不同。 例如，某個方法可能會接受單一整數引數，且其中一個多載可能會接受一個整數和一個字串。 您可以依據需要的功能選擇正確的多載。 當您將程式碼新增至 `StartTheQuiz()` 方法時，只要輸入 `randomizer.Next(`，[IntelliSense] 視窗就會顯示詳細資訊。 若要循環瀏覽這些多載，請選擇**向上鍵**和**向下鍵**，如下圖所示：
+     工具提示會顯示 [(+ 2 多載)]，也就是說，您可以透過另外兩種方式呼叫 `Next()` 方法。 多載包含不同數目或類型的引數，因此彼此之間的運作方式會稍有不同。 例如，某個方法可能會接受單一整數引數，且其中一個多載可能會接受一個整數和一個字串。 您可以依據需要的功能選擇正確的多載。 當您將程式碼新增至 `StartTheQuiz()` 方法時，只要輸入 `randomizer.Next(`，[IntelliSense] 視窗就會顯示詳細資訊。 若要循環瀏覽這些多載，請選擇 **向上鍵** 和 **向下鍵**，如下圖所示：
 
      ![IntelliSense 中 Next&#40;&#41; 方法的多載](../ide/media/express_nextoverload.png)<br/>
-*的 多載 * ***下一個（）*** *中的方法* ***IntelliSense***
+*的*  * 多載 **下一步 (** _* ***IntelliSense** 中的_# B1 _ 方法
 
      在這個案例中，您想要選擇最後一個多載，因為這樣就可以指定最小值和最大值。
 
@@ -86,7 +88,7 @@ ms.locfileid: "77579826"
      您的程式包括減法問題，如下圖所示：
 
      ![包含減法問題的數學測驗](../ide/media/express_addsubtract.png)<br/>
-***數學測驗*** *有減法問題*
+_*_數學測驗_*_ _with 減法問題 *
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 

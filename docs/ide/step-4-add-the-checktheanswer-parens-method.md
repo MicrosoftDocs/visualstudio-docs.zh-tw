@@ -1,5 +1,7 @@
 ---
 title: 步驟 4：新增 CheckTheAnswer() 方法
+description: '瞭解如何撰寫 CheckTheAnswer ( # B1 方法來判斷數學問題的答案是否正確。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 199cee66013392a253139abf8ef1b88b502abac2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1d9d22363aa26628d122b451c51fb7d1df29fbe
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80472620"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480586"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>步驟 4：新增 CheckTheAnswer() 方法
 
@@ -48,14 +50,14 @@ ms.locfileid: "80472620"
      [!code-vb[VbExpressTutorial3Step4#10](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_2.vb)]
      [!code-csharp[VbExpressTutorial3Step4#10](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_2.cs)]
 
-     如果答案正確，`CheckTheAnswer()` 會傳回 `true`。 事件處理常式會停止計時器，並顯示恭喜訊息，然後再次啟用 [開始]**** 按鈕。 否則，測驗會繼續。
+     如果答案正確，`CheckTheAnswer()` 會傳回 `true`。 事件處理常式會停止計時器，並顯示恭喜訊息，然後再次啟用 [開始] 按鈕。 否則，測驗會繼續。
 
 3. 儲存您的程式，執行程式，開始進行測驗，並提供正確答案給加法問題。
 
     > [!NOTE]
     > 當您輸入答案時，必須在開始輸入答案之前先選取預設值，或是手動刪除零。 您將在本教學課程稍後更正這種行為。
 
-     當您提供正確答案時，訊息方塊隨即開啟，[開始]**** 按鈕會變成可用，且計時器會停止。
+     當您提供正確答案時，訊息方塊隨即開啟，[開始] 按鈕會變成可用，且計時器會停止。
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 

@@ -1,5 +1,7 @@
 ---
 title: 排除 ~ SAK 檔案 |Microsoft Docs
+description: 瞭解如何從原始檔控制外掛程式 API 1.2 刪除 ~ SAK 檔案，以及這些檔案如何由功能旗標和新功能所取代。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +14,20 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0294198bb1560f8df6f17170013f88d4fe11e5cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e846354b2d48b2f7866daa14987e757f41779c8
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708506"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480508"
 ---
 # <a name="elimination-of-sak-files"></a>排除 ~ SAK 檔案
 在原始檔控制外掛程式 API 1.2 中， *~ SAK* 檔案已取代為功能旗標和新函式，這些函式會偵測原始檔控制外掛程式是否支援 *mssccprj.scc* 檔和共用簽出。
 
 ## <a name="sak-files"></a>~ SAK 檔案
-Visual Studio .NET 2003 建立了首碼為 *~ SAK*的暫存檔案。 這些檔案是用來判斷原始檔控制外掛程式是否支援：
+Visual Studio .NET 2003 建立了首碼為 *~ SAK* 的暫存檔案。 這些檔案是用來判斷原始檔控制外掛程式是否支援：
 
-- *MSSCCPRJ.SCC SCC*檔。
+- *MSSCCPRJ.SCC SCC* 檔。
 
 - 多 (共用) 簽出。
 
@@ -45,7 +47,7 @@ Visual Studio .NET 2003 建立了首碼為 *~ SAK*的暫存檔案。 這些檔�
 
  如果原始檔控制外掛程式支援建立和使用 *mssccprj.scc* 檔案，則會宣告 `SCC_CAP_SCCFILE` 功能並執行 [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md)。 這個函式會使用檔案清單來呼叫。 此函式 `TRUE' or 'FALSE` 會傳回每個檔案，以指出 Visual Studio 是否應該為它使用 *MSSCCPRJ.SCC 的 SCC* 檔。 如果原始檔控制外掛程式選擇不支援這些新功能和函式，則可以使用下列登錄機碼來停用這些檔案的建立：
 
- **[HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol] DoNotCreateTemporaryFilesInSourceControl**  = *dword： 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl**  =  *dword： 00000001*
 
 > [!NOTE]
 > 如果此登錄機碼設定為 *dword： 00000000*，則相當於機碼不存在，而且 Visual Studio 仍會嘗試建立暫存檔案。 但是，如果登錄機碼設定為 *dword： 00000001*，Visual Studio 不會嘗試建立暫存檔案。 相反地，它會假設原始檔控制外掛程式不支援 *MSSCCPRJ.SCC SCC* 檔案，且不支援共用簽出。

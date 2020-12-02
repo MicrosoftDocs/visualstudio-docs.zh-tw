@@ -1,5 +1,7 @@
 ---
 title: Work with multiple user accounts
+description: 瞭解如何將您的所有 Microsoft 帳戶新增至 Visual Studio，讓您可以從任何帳戶存取資源，而不需要個別登入。
+ms.custom: SEO-VS-2020
 ms.date: 11/16/2020
 ms.topic: conceptual
 author: ornellaalt
@@ -7,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe124fc35eabec4b3c48cdf8dfa53ef8f17b0003
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 071c6061417e26b45e5f9e67bc6ac1001bf08530
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671333"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480339"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 
@@ -115,7 +117,7 @@ Azure Active Directory (AAD) 可支援在 ASP.NET MVC Web 應用程式中進行�
 
 1. 在 **Visual Studio** 下方，選擇 [繼續]。
 
-   ![device-login-page.png](media/work-with-multiple-user-accounts/device-login-page.png)
+   ![顯示 Continue 選項之裝置登入頁面的螢幕擷取畫面。](media/work-with-multiple-user-accounts/device-login-page.png)
 
 1. 遵循提示輸入帳戶認證。
 

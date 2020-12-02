@@ -1,5 +1,7 @@
 ---
 title: 將檔案名稱重新命名以符合類型
+description: 瞭解如何使用 [快速動作與重構] 功能表來重新命名類型以符合檔案名，或將檔案名重新命名以符合其包含的類型。
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b7a42a174fecd078e804f2ab3c35fbe442364a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 020dcedd6b0cb2117984d45548b5c1e099c67aee
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594392"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479819"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>將類型同步至檔案名稱，或將檔案名稱同步至類型的重構
 
@@ -49,11 +51,11 @@ ms.locfileid: "75594392"
 2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [將檔案重新命名為 *TypeName*.cs]****，其中 *TypeName* 是您所選類型的名稱。
-      - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [將類型重新命名為 _Filename_]****，其中 *Filename* 是目前檔案的名稱。
+      - 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將檔案重新命名為 *TypeName*.cs]，其中 *TypeName* 是您所選類型的名稱。
+      - 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將類型重新命名為 _Filename_]，其中 *Filename* 是目前檔案的名稱。
    - **滑鼠**
-      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [將檔案重新命名為 *TypeName*.cs]****，其中 *TypeName* 是您所選類型的名稱。
-      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [將類型重新命名為 _Filename_]****，其中 *Filename* 是目前檔案的名稱。
+      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將檔案重新命名為 *TypeName*.cs]，其中 *TypeName* 是您所選類型的名稱。
+      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將類型重新命名為 _Filename_]，其中 *Filename* 是目前檔案的名稱。
 
    類型或檔案會重新命名。
 

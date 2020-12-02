@@ -1,5 +1,7 @@
 ---
 title: 階層和選取專案 |Microsoft Docs
+description: 瞭解 Visual Studio 如何處理專案等階層，以及它如何使用選取內容來判斷要向使用者顯示的內容。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0e38c2cea464abded5ecf6ee2c8ac087868b07e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04f433e3da45e10d2b1721ac13254856489d2d0a
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708132"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480417"
 ---
 # <a name="hierarchies-and-selection"></a>階層和選取範圍
 當您自訂時 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，您應該瞭解如何 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 處理專案等階層，以及它如何使用選取內容來判斷要向使用者顯示的內容。 本節討論階層 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 和選取的概念。

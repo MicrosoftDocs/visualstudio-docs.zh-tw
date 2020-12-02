@@ -1,5 +1,7 @@
 ---
 title: 步驟 3：新增倒數計時器
+description: 瞭解如何新增倒數計時器，以追蹤為了讓測驗者完成的剩餘秒數。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca2dce7f6f9ddc484b67f250f34d69747c6e46e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 723b5daabd19d2e49462bf62d2657c6a6cd14b7f
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579866"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480638"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>步驟 3：新增倒數計時器
 
@@ -38,11 +40,11 @@ ms.locfileid: "77579866"
 
      現在您需要實際計算秒數的方法，例如計時器，它會在經過您指定的時間後引發事件。
 
-2. 在設計視窗中，將 <xref:System.Windows.Forms.Timer> 控制項從 [工具箱]**** 的 [元件]**** 類別移至表單。
+2. 在設計視窗中，將 <xref:System.Windows.Forms.Timer> 控制項從 [工具箱] 的 [元件] 類別移至表單。
 
      控制項會出現在設計視窗底部的灰色區域中。
 
-3. 在表單上選擇您剛新增的 [timer1]**** 圖示，並將其 [Interval]**** 屬性設定為 [1000]****。
+3. 在表單上選擇您剛新增的 [timer1] 圖示，並將其 [Interval] 屬性設定為 [1000]。
 
      由於間隔值為毫秒，因此 1000 這個值會讓 <xref:System.Windows.Forms.Timer.Tick> 事件每秒引發一次。
 
@@ -94,7 +96,7 @@ ms.locfileid: "77579866"
 
      `addend1 + addend2` 陳述式會將兩個變數中的值相加。 第一個部分 (`sum.Value`) 會使用 sum (總和) NumericUpDown 控制項的 **Value** 屬性來顯示正確答案。 稍後您會使用相同屬性檢查測驗的答案。
 
-     受測者透過使用 <xref:System.Windows.Forms.NumericUpDown> 控制項就能更輕鬆地輸入數字，這就是為何使用其中一個控制項輸入數學問題答案的原因。 所有可能的答案包括從 0 到 100 的整數。 藉由保留 [Minimum]****、[Maximum]**** 和 [DecimalPlaces]**** 屬性的預設值，就能確保受測者無法輸入小數、負數或太大的數字 (如果您要允許受測者輸入 3.141 而不是 3.1415，可以將 [DecimalPlaces]**** 屬性設定為 3)。
+     受測者透過使用 <xref:System.Windows.Forms.NumericUpDown> 控制項就能更輕鬆地輸入數字，這就是為何使用其中一個控制項輸入數學問題答案的原因。 所有可能的答案包括從 0 到 100 的整數。 藉由保留 [Minimum]、[Maximum] 和 [DecimalPlaces] 屬性的預設值，就能確保受測者無法輸入小數、負數或太大的數字 (如果您要允許受測者輸入 3.141 而不是 3.1415，可以將 [DecimalPlaces] 屬性設定為 3)。
 
 6. 將三行程式碼加入至 `StartTheQuiz()` 方法的結尾，使程式碼看起來如下。
 
@@ -103,7 +105,7 @@ ms.locfileid: "77579866"
 
      現在，當測驗開始時，**timeLeft** 變數會設定為 30，而且 **timeLabel** 控制項的 **Text** 屬性會設定為 30 秒。 然後，Timer 控制項的 <xref:System.Windows.Forms.Timer.Start> 方法就會開始倒數計時。 (測驗還不會檢查答案，這是下一個部分)。
 
-7. 儲存您的程式，並執行程式，然後選擇表單上的 [開始]**** 按鈕。
+7. 儲存您的程式，並執行程式，然後選擇表單上的 [開始] 按鈕。
 
      計時器就會開始倒數。 當時間結束時，測驗就會結束，答案也會出現。 下圖將顯示進行中的測驗。
 

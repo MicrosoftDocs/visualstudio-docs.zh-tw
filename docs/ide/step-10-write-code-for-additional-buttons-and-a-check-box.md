@@ -1,6 +1,6 @@
 ---
 title: 為其他按鈕及核取方塊撰寫程式碼
-description: 在 [建立圖片檢視器] 教學課程中，瞭解如何撰寫其他按鈕和 cheeck 方塊的程式碼。
+description: 瞭解如何在 [建立圖片檢視器] 教學課程中撰寫其他按鈕和核取方塊的程式碼。
 ms.date: 08/30/2019
 ms.custom: SEO-VS-2020
 ms.assetid: 185cf370-ab39-4ac0-b6bc-601d5b95a4a2
@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d66f7705821025bd5e30ea0d0c7f2dd57d540e4
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: c8fa5bcacd4d6086dbe926240ec11743f06e513d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189900"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480326"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>步驟 10：為其他按鈕及核取方塊撰寫程式碼
 

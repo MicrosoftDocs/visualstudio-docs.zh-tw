@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 中的階層 |Microsoft Docs
+description: 瞭解 Visual Studio 整合式開發環境中的專案階層 (IDE) ，其中包含專案專案及其相關聯的屬性。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdbb8a0e58f6b1e5bc6e32f8c319d1480c4db4b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a7126f52517b1028cf878750294f1d4c7dbfe26
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708194"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480352"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio 中的階層
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) *會將*專案顯示為階層。 在 IDE 中，階層是節點的樹狀結構，其中每個節點都有一組相關聯的屬性。 *專案*階層是一個容器，可保存專案的專案、專案的關聯性，以及專案的相關屬性和命令。
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) *會將* 專案顯示為階層。 在 IDE 中，階層是節點的樹狀結構，其中每個節點都有一組相關聯的屬性。 *專案* 階層是一個容器，可保存專案的專案、專案的關聯性，以及專案的相關屬性和命令。
 
  在中 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，您可以使用階層介面來管理專案階層 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>介面會將您從專案專案叫用的命令重新導向至適當的階層視窗，而不是標準的命令處理常式。
 

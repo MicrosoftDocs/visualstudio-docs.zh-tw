@@ -1,5 +1,7 @@
 ---
 title: 處理特殊化部署 |Microsoft Docs
+description: 瞭解如何在 Visual Studio 中處理應用程式專案的特殊部署。 例如，部署至 Web 服務器或裝置。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 972965c3565088af8205d6f7903d7098e568c057
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 664625cd8737fb9a9a3e398716d750d6d9665529
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708214"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480430"
 ---
 # <a name="handle-specialized-deployment"></a>處理特殊部署
 部署是專案的選擇性作業。 例如，Web 專案支援部署，讓專案更新 Web 服務器。 同樣地， **智慧型裝置** 專案支援部署，以將建立的應用程式複製到目標裝置。 專案子類型可透過實作為介面，提供特殊的部署行為 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 。 此介面會定義一組完整的部署作業：
