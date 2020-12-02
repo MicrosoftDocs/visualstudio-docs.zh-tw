@@ -1,5 +1,7 @@
 ---
 title: 擴充屬性 |Microsoft Docs
+description: 瞭解您必須執行的介面，以及在 Visual Studio 屬性視窗中擴充屬性清單的呼叫。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7064128c54434b0a7bb8799e62b751e765511c48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 721f45ebe83e0edb7bf7a182ea71b2181593ad6e
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708423"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479528"
 ---
 # <a name="extend-properties"></a>擴充屬性
 [ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **屬性** ] 視窗是適用于 COM 和 com + 元件的通用屬性瀏覽器，並支援所有 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 產品。 [ **屬性** ] 視窗適用于 `ITypeInfo` 型別資訊和 com + 中繼資料，可在整合式開發環境 (IDE) 的任何其他視窗中，列出目前所選物件的設計階段屬性。
 
- [**屬性**] 視窗（可透過在鍵盤上按**F4**來開啟，或在 [**視圖**] 功能表上選取 [**屬性] 視窗**）是用來查看和編輯所選物件的與設定無關的設計階段屬性和事件。 與解決方案和專案相關聯的設定相依屬性會顯示在 [屬性頁](../../extensibility/internals/property-pages.md)上。 如需詳細資訊，請 [管理設定選項](../../extensibility/internals/managing-configuration-options.md)。
+ [**屬性**] 視窗（可透過在鍵盤上按 **F4** 來開啟，或在 [**視圖**] 功能表上選取 [**屬性] 視窗**）是用來查看和編輯所選物件的與設定無關的設計階段屬性和事件。 與解決方案和專案相關聯的設定相依屬性會顯示在 [屬性頁](../../extensibility/internals/property-pages.md)上。 如需詳細資訊，請 [管理設定選項](../../extensibility/internals/managing-configuration-options.md)。
 
  ![屬性視窗總覽](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow") 屬性視窗
 

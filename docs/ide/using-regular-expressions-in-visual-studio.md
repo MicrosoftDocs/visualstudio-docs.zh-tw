@@ -1,5 +1,7 @@
 ---
 title: 使用規則運算式
+description: 瞭解您可以在 Visual Studio 中使用的一些正則運算式字元、運算子、結構和模式範例。
+ms.custom: SEO-VS-2020
 ms.date: 09/13/2019
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1739d6b2376a4f86edd3c0102f7fad79da5d7cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8648eb48c68e0220b1d36a851619edec2b51ceb7
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568616"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478987"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用規則運算式
 
@@ -52,7 +54,7 @@ Visual Studio 會使用 [.NET 規則運算式](/dotnet/standard/base-types/regul
 |[逸出反斜線之後的字元](/dotnet/standard/base-types/character-escapes-in-regular-expressions)| \\ |`\^` 符合字元 ^|
 |指定前置字元或群組的出現次數。 如需詳細資訊，請參閱[比對 n 次](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n)。|{n}，其中 'n' 是發生次數|`x(ab){2}x` 符合 "對 xababx"<br/>`x(ab){2,3}x` 比對 "對 xababx" 和 "xabababx"，但不符合 "比對 xababababx"|
 |[比對 Unicode 類別中的文字](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p)。 如需 Unicode 字元類別的詳細資訊，請參閱 [Unicode Standard 5.2 字元屬性](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)。|\p{X}，其中 "X" 是 Unicode 數字。|`\p{Lu}` 符合 "Thomas Doe" 中的 "T" 和 "D"|
-|[比對字邊界](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (在字元類別之外 `\b` 會指定字邊界，在字元類別 `\b` 內則會指定退格鍵。)|`\bin` 符合 "in" in "in"，但在 "pinto" 中找不到相符專案|
+|[符合單字界限](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (在字元類別之外 `\b` 會指定字邊界，在字元類別 `\b` 內則會指定退格鍵。)|`\bin` 符合 "in" in "in"，但在 "pinto" 中找不到相符專案|
 |比對分行符號 (即歸位字元後面接著新行)|\r?\n|`End\r?\nBegin` 只有在 "End" 是一行的最後一個字串，且 "Begin" 是下一行的第一個字串時，才會比對 "End" 和 "Begin"|
 |比對任何[文字字元](/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w)|\w|`a\wd` 符合 "add" 和 "a1d"，但不符合 "a d"|
 |比對任何[空白字元](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface` 符合「公用介面」片語|
@@ -69,16 +71,16 @@ Visual Studio 會使用 [.NET 規則運算式](/dotnet/standard/base-types/regul
 
 若要建立編號的擷取群組，請用規則運算式模式中的括弧括住子運算式。 擷取會依據規則運算式中的左括號的位置，由左至右自動編號。 存取擷取的群組：
 
-- 在**正則運算式內**：使用 `\number` 。 例如，規則運算式 `(\w+)\s\1` 中的 `\1` 參考第一個擷取群組 `(\w+)`。
+- 在 **正則運算式內**：使用 `\number` 。 例如，規則運算式 `(\w+)\s\1` 中的 `\1` 參考第一個擷取群組 `(\w+)`。
 
 - **在取代模式中**：使用 `$number` 。 例如，已分組的規則運算式 `(\d)([a-z])` 會定義兩個群組：第一個群組包含單一的十進位數字，第二個群組包含介於 **a** 和 **z** 之間的單一字元。 運算式在下列字串中找到四個相符項目：**1a 2b 3c 4d**。 取代字串 `z$1` 只參考第一個群組 (`$1`)，並將字串轉換成 **z1 z2 z3 z4**。
 
-下圖顯示規則運算式 `(\w+)\s\1` 和取代字串 `$1`。 規則運算式和取代模式會參考自動編號為 1 的第一個擷取群組。 當您在 Visual Studio 的 [快速取代]**** 對話方塊中選擇 [全部取代]**** 時，會將重複的字組從文字中移除。
+下圖顯示規則運算式 `(\w+)\s\1` 和取代字串 `$1`。 規則運算式和取代模式會參考自動編號為 1 的第一個擷取群組。 當您在 Visual Studio 的 [快速取代] 對話方塊中選擇 [全部取代] 時，會將重複的字組從文字中移除。
 
 ![Visual Studio 中顯示編號擷取群組的快速取代](media/numbered-capture-group.png)
 
 > [!TIP]
-> 請確定已選取 [快速取代]**** 對話方塊中的 [使用規則運算式]**** 按鈕。
+> 請確定已選取 [快速取代] 對話方塊中的 [使用規則運算式] 按鈕。
 
 ### <a name="named-capture-groups"></a>具名的擷取群組
 
@@ -86,16 +88,16 @@ Visual Studio 會使用 [.NET 規則運算式](/dotnet/standard/base-types/regul
 
 具名擷取群組 (例如編號的擷取群組)，可在規則運算式本身或在取代模式中使用。 存取具名擷取群組：
 
-- 在**正則運算式內**：使用 `\k<name>` 。 例如，規則運算式 `(?<repeated>\w+)\s\k<repeated>` 中的 `\k<repeated>` 參考名稱為 `repeated` 且子運算式為 `\w+` 的擷取群組。
+- 在 **正則運算式內**：使用 `\k<name>` 。 例如，規則運算式 `(?<repeated>\w+)\s\k<repeated>` 中的 `\k<repeated>` 參考名稱為 `repeated` 且子運算式為 `\w+` 的擷取群組。
 
-- **在取代模式中**：使用 `${name}` 。 例如 `${repeated}`。
+- **在取代模式中**：使用 `${name}` 。 例如： `${repeated}` 。
 
-舉例來說，下圖顯示規則運算式 `(?<repeated>\w+)\s\k<repeated>` 和取代字串 `${repeated}`。 規則運算式和取代模式會參考名為 `repeated` 的擷取群組。 當您在 Visual Studio 的 [快速取代]**** 對話方塊中選擇 [全部取代]**** 時，會將重複的字組從文字中移除。
+舉例來說，下圖顯示規則運算式 `(?<repeated>\w+)\s\k<repeated>` 和取代字串 `${repeated}`。 規則運算式和取代模式會參考名為 `repeated` 的擷取群組。 當您在 Visual Studio 的 [快速取代] 對話方塊中選擇 [全部取代] 時，會將重複的字組從文字中移除。
 
 ![Visual Studio 中顯示具名擷取群組的快速取代](media/named-capture-group.png)
 
 > [!TIP]
-> 請確定已選取 [快速取代]**** 對話方塊中的 [使用規則運算式]**** 按鈕。
+> 請確定已選取 [快速取代] 對話方塊中的 [使用規則運算式] 按鈕。
 
 如需具名擷取群組的詳細資訊，請參閱[具名的相符子運算式](/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#named-matched-subexpressions)。 如需取代模式中所用規則運算式的詳細資訊，請參閱[規則運算式中的替代項目](/dotnet/standard/base-types/substitutions-in-regular-expressions)。
 

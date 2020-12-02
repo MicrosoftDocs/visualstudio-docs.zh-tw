@@ -1,5 +1,7 @@
 ---
 title: 步驟 8：自訂測驗
+description: 瞭解如何將 timeLabel 控制項轉換成不同的色彩，並為測驗人員提供提示。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e568a9fa844802ddab934264cbc316d3514fe577
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21403aeb51f342f607575d99a79ce2bdb7aaa54a
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579376"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479312"
 ---
 # <a name="step-8-customize-the-quiz"></a>步驟 8：自訂測驗
 
@@ -29,7 +31,7 @@ ms.locfileid: "77579376"
 
 ## <a name="to-customize-the-quiz"></a>自訂測驗
 
-- 當測驗中只剩下五秒時，請設定其**背景**色彩屬性以將**timeLabel**控制項變成紅色。
+- 當測驗中只剩下五秒時，請設定其 **背景** 色彩屬性以將 **timeLabel** 控制項變成紅色。
 
   ```csharp
   timeLabel.BackColor = Color.Red;

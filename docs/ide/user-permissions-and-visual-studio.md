@@ -1,5 +1,6 @@
 ---
 title: 以系統管理員身分執行
+description: 瞭解如何以系統管理員身分執行 Visual Studio。
 ms.date: 01/06/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 927031b4755644aeac553367a4f8a08faa0c0992
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d69d916b8b99d6f5b5b3421ae4aea073e24fa67
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75718632"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478948"
 ---
 # <a name="user-permissions-and-visual-studio"></a>使用者權限和 Visual Studio
 
@@ -28,14 +29,14 @@ ms.locfileid: "75718632"
 
 您可以用一般使用者的形式，在 Visual Studio IDE 中進行幾乎所有的工作。 您需要有系統管理員權限才能完成下列工作：
 
-|區域|工作|取得詳細資訊|
+|區域|Task|取得詳細資訊|
 |----------|----------| - |
 |安裝|安裝或修改 Visual Studio。|[安裝 Visual Studio](../install/install-visual-studio.md)、 [修改 Visual Studio](../install/modify-visual-studio.md)|
 ||安裝、更新或移除本機說明內容。|[安裝和管理本機說明內容](../help-viewer/install-manage-local-content.md)|
-|工具箱|將傳統 COM 控制項新增至 [工具箱]****。|[工具箱](../ide/reference/toolbox.md)|
+|工具箱|將傳統 COM 控制項新增至 [工具箱]。|[工具箱](../ide/reference/toolbox.md)|
 |建置|使用註冊元件的建置後事件。|[了解自訂建置步驟和建置事件](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||包含當您建置 C++ 專案時的註冊步驟。||
-|偵錯|對以更高權限執行的應用程式進行偵錯。|[偵錯工具設定和準備](../debugger/debugger-settings-and-preparation.md)|
+|偵錯|對以更高權限執行的應用程式進行偵錯。|[偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)|
 ||對在不同使用者帳戶下執行的應用程式進行偵錯，例如 ASP.NET 網站。|[ASP.NET 和 AJAX 應用程式的偵錯工具](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
 ||在 XAML 瀏覽器應用程式 (XBAP) 的區域中進行偵錯。|[WPF 主機 ( # A0) ](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||使用模擬器來對 Microsoft Azure 雲端服務專案進行偵錯。|[在 Visual Studio 中針對雲端服務進行偵錯](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
@@ -53,9 +54,9 @@ ms.locfileid: "75718632"
 
 ::: moniker range="vs-2017"
 
-1. 開啟 [開始]**** 功能表，然後捲動至 Visual Studio 2017。
+1. 開啟 [開始] 功能表，然後捲動至 Visual Studio 2017。
 
-1. 從 **Visual Studio 2017** 的操作功能表 (按一下滑鼠右鍵)，選取 [更多]**[以系統管理員身分執行]** > ****。
+1. 從 **Visual Studio 2017** 的操作功能表 (按一下滑鼠右鍵)，選取 [更多]**[以系統管理員身分執行]** > 。
 
    在 Visual Studio 啟動時，**(系統管理員)** 會顯示在標題列的產品名稱之後。
 
@@ -63,9 +64,9 @@ ms.locfileid: "75718632"
 
 ::: moniker range=">=vs-2019"
 
-1. 開啟 [開始]**** 功能表，然後捲動至 Visual Studio 2019。
+1. 開啟 [開始] 功能表，然後捲動至 Visual Studio 2019。
 
-1. 從 **Visual Studio 2019** 的操作功能表 (按一下滑鼠右鍵)，選取 [更多]**[以系統管理員身分執行]** > ****。
+1. 從 **Visual Studio 2019** 的操作功能表 (按一下滑鼠右鍵)，選取 [更多]**[以系統管理員身分執行]** > 。
 
    在 Visual Studio 啟動時，**(系統管理員)** 會顯示在標題列的產品名稱之後。
 

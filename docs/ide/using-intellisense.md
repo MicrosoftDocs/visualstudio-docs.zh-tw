@@ -1,5 +1,7 @@
 ---
 title: 參數資訊、列出成員和快速諮詢
+description: 瞭解如何使用這些 IntelliSense 功能：列出成員、參數資訊、快速諮詢和自動完成文字。
+ms.custom: SEO-VS-2020
 ms.date: 05/25/2018
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbd85ece0cf7b84230e37c74c27e746df7a52439
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: c60372d7268dd76bf9bbd967678490998ffa76c3
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878279"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479013"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio 中的 Intellisense
 
@@ -83,7 +85,7 @@ IntelliSense 選項預設為開啟。 **Tools**  >  **Options**  >  如果您不
 ## <a name="intellisense-icons"></a>IntelliSense 圖示
 IntelliSense 中的圖示可以搭配圖示修飾詞來傳達其他意義。 這些是在物件圖示頂端的階層式星形、心形和鎖定圖示，可分別傳達受保護、內部或私人等意義。
 
-|    圖示    |    協助工具選項    |    說明    |
+|    圖示    |    Accessibility    |    描述    |
 |------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ![公用圖示修飾詞](../ide/media/intellisensePublicNoModifier.png)       |    公用類別    |    未限制存取。   |
 | ![受保護圖示修飾詞](../ide/media/intellisenseProtectedModifier.png)       |    受保護類別    |    存取限於包含類別或衍生自包含類別的類型。    |
@@ -107,7 +109,7 @@ MessageBox( hWnd, "String literal|")
 
 **已關閉自動選項。** IntelliSense 預設會自動運作，但您可將其停用。 即使停用自動陳述式完成，還是可以叫用 IntelliSense 功能。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)

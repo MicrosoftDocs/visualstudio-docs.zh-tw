@@ -1,5 +1,7 @@
 ---
 title: 公開專案物件 |Microsoft Docs
+description: 瞭解如何在 Visual Studio 中公開自訂專案類型的物件，方法是提供允許使用自動化介面存取專案的自動化物件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81446fa582524872b03199ae707f658776787961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d93b1bf414a9e58f8311a1f1d7066a789ef8c6b6
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708476"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479507"
 ---
 # <a name="expose-project-objects"></a>公開專案物件
 

@@ -1,5 +1,7 @@
 ---
 title: Visual C++ 程式碼片段
+description: 瞭解如何使用程式碼片段將常用的程式碼新增至 c + + 程式碼檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: corob-msft
@@ -9,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5cde2be817c49344e02ff06030022f99790a7a2
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77277838"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478805"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 程式碼片段
 
@@ -26,13 +28,13 @@ ms.locfileid: "77277838"
 
 若要插入程式碼片段，請開啟 c + + 程式碼檔 (*.cpp* 或 *.H*) ，按一下檔案內的某個位置，然後執行下列其中一項：
 
-- 按一下滑鼠右鍵以取得操作功能表，然後選取 [插入程式碼片段]****
+- 按一下滑鼠右鍵以取得操作功能表，然後選取 [插入程式碼片段]
 
-- 在 [編輯/IntelliSense]**** 功能表中，選取 [插入程式碼片段]****
+- 在 [編輯/IntelliSense] 功能表中，選取 [插入程式碼片段]
 
-- 使用**快速鍵： Ctrl** + **K** + **X**
+- 使用 **快速鍵： Ctrl** + **K** + **X**
 
-您應該會看到開頭為 **#if** 的選擇清單。 當您選取 [#if]**** 時，應該會看到下列程式碼已新增至檔案：
+您應該會看到開頭為 **#if** 的選擇清單。 當您選取 [#if] 時，應該會看到下列程式碼已新增至檔案：
 
 ```cpp
 #if 0
@@ -48,11 +50,11 @@ ms.locfileid: "77277838"
 
 - 以滑鼠右鍵按一下以取得內容功能表，**然後選取 [** 範圍語句]
 
-- 從 [**編輯**  >  **IntelliSense** ] 功能表中**Surround With** ，選取 [範圍語句]
+- 從 [**編輯**  >  **IntelliSense** ] 功能表中 **Surround With** ，選取 [範圍語句]
 
 - 使用鍵盤，按下： **Ctrl** + **K** + **S**
 
-選取 [#if]****。 您應該會看到如下內容：
+選取 [#if]。 您應該會看到如下內容：
 
 ```cpp
 #if 0
@@ -64,7 +66,7 @@ ms.locfileid: "77277838"
 
 ## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>可以找到 C++ 程式碼片段完整清單的位置
 
-移至 [工具]**** 功能表上的 [程式碼片段管理員]****，並將 [語言]**** 設定為 [Visual C++]****，即可找到 C++ 程式碼片段的完整清單。 在下面的視窗中，展開 [Visual C++]****。 您應該會看到所有的 C++ 程式碼片段依照字母順序排列的名稱。
+移至 [工具] 功能表上的 [程式碼片段管理員]，並將 [語言] 設定為 [Visual C++]，即可找到 C++ 程式碼片段的完整清單。 在下面的視窗中，展開 [Visual C++]。 您應該會看到所有的 C++ 程式碼片段依照字母順序排列的名稱。
 
 大部分程式碼片段的名稱都一目了然，但某些名稱可能會造成混淆。
 
@@ -115,7 +117,7 @@ private:
 
 共有三個不同的 **for** 程式碼片段，提供不同類型的 `for` 迴圈。
 
-**Rfor**程式碼片段提供以[範圍為基礎](/cpp/cpp/range-based-for-statement-cpp)的 for 迴圈 (連結) 。 會優先使用此建構，而非索引式 `for` 迴圈。
+**Rfor** 程式碼片段提供以 [範圍為基礎](/cpp/cpp/range-based-for-statement-cpp)的 for 迴圈 (連結) 。 會優先使用此建構，而非索引式 `for` 迴圈。
 
 ```cpp
 for (auto& i : v)
@@ -124,7 +126,7 @@ for (auto& i : v)
 }
 ```
 
-**For**程式碼片段提供 `for` 迴圈，其中的條件是以物件) 中 (的長度為依據 `size_t` 。
+**For** 程式碼片段提供 `for` 迴圈，其中的條件是以物件) 中 (的長度為依據 `size_t` 。
 
 ```cpp
 for (size_t i = 0; i < length; i++)
@@ -133,7 +135,7 @@ for (size_t i = 0; i < length; i++)
 }
 ```
 
-**Forr**程式碼片段提供反向 `for` 迴圈，其中的條件是以物件的整數) 長度 (為基礎。
+**Forr** 程式碼片段提供反向 `for` 迴圈，其中的條件是以物件的整數) 長度 (為基礎。
 
 ```cpp
 for (int i = length - 1; i >= 0; i--)

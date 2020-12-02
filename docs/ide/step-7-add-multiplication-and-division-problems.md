@@ -1,5 +1,7 @@
 ---
 title: 步驟 7：新增乘法及除法問題
+description: 瞭解如何新增乘法和除法問題。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92a1744b68ad043dcee21dcb5995fbd1908bd81b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 84dc1df79392aeefe331746c52d2fbe8dbb91e8e
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579786"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479494"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>步驟 7：新增乘法及除法問題
 
@@ -58,7 +60,7 @@ ms.locfileid: "77579786"
      受測者必須回答四個問題才能完成測驗，如下圖所示。
 
      ![包含四個問題的數學測驗](../ide/media/express_finishedquiz.png)<br/>
-*有四個問題的****數學測驗***
+***數學測驗** _ _with 四個問題 *
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 

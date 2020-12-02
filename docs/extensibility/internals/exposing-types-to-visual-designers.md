@@ -1,5 +1,7 @@
 ---
 title: 將類型公開至視覺化設計工具 |Microsoft Docs
+description: 瞭解如何公開類別和類型定義（包括自訂工具中的定義），以便 Visual Studio 可提供給視覺化設計工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48aa8a729b5cc38d3cee08a7f5ec143d5e84931a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 43d1e1dca1860faa44d6bb5bc256bb8f0465e8b2
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012526"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479521"
 ---
 # <a name="expose-types-to-visual-designers"></a>將類型公開至視覺化設計工具
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須能夠在設計階段存取類別和類型定義，才能顯示視覺化設計工具。 類別是從一組預先定義的元件載入，其中包含目前專案的完整相依性集合， (參考加上) 的相依性。 視覺化設計工具也可能需要存取自訂工具所產生的檔案中所定義的類別和類型。
@@ -37,7 +39,7 @@ ms.locfileid: "90012526"
 
 - 產生的程式碼必須與全域專案設定的語言相同。
 
-     無論自訂工具在登錄中的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> **GeneratesDesignTimeSource** 設定為1，都將會編譯暫存的 PE，無論自訂工具會將它報告為所要求的擴充功能。 延伸模組不需要是 *.vb*、 *.cs*或 *. form1.jsl*;它可以是任何延伸模組。
+     無論自訂工具在登錄中的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> **GeneratesDesignTimeSource** 設定為1，都將會編譯暫存的 PE，無論自訂工具會將它報告為所要求的擴充功能。 延伸模組不需要是 *.vb*、 *.cs* 或 *. form1.jsl*;它可以是任何延伸模組。
 
 - 自訂工具產生的程式碼必須是有效的，而且它必須只使用在執行完成時存在於專案中的一組參考來進行編譯 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> 。
 

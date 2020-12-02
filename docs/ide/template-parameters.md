@@ -1,5 +1,7 @@
 ---
 title: 專案和項目範本參數
+description: 瞭解如何在範本具現化時，使用範本參數取代範本中的值。
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -10,16 +12,16 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e575011f76370083b5a0f461fbb62bbbc839ea3
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78169361"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479193"
 ---
 # <a name="template-parameters"></a>範本參數
 
-將範本具現化時，您可以取代範本中的值。 若要設定這項功能，請使用「範本參數」**。 範本參數可以用來取代範本中的值，例如類別名稱和命名空間。 當使用者新增項目或專案取代這些參數時，範本精靈會在背景中執行。
+將範本具現化時，您可以取代範本中的值。 若要設定這項功能，請使用「範本參數」。 範本參數可以用來取代範本中的值，例如類別名稱和命名空間。 當使用者新增項目或專案取代這些參數時，範本精靈會在背景中執行。
 
 ## <a name="declare-and-enable-template-parameters"></a>宣告和啟用範本參數
 
@@ -50,7 +52,7 @@ ms.locfileid: "78169361"
 |參數|描述|
 |---------------|-----------------|
 |clrversion|通用語言執行平台 (CLR) 的最新版本。|
-|ext_*|將 `ext_` 前置詞新增至任何參數，以參考父代範本的變數。 例如 `ext_safeprojectname`。|
+|ext_*|將 `ext_` 前置詞新增至任何參數，以參考父代範本的變數。 例如： `ext_safeprojectname` 。|
 |guid[1-10]|GUID；用來取代專案檔中的專案 GUID。 您最多可以指定 10 個唯一的 GUID (例如，`guid1`)。|
 |itemname|正在使用該參數的檔案名稱。|
 |machinename|目前的電腦名稱 (例如，Computer01)。|

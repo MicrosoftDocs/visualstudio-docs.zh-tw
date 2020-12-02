@@ -1,5 +1,7 @@
 ---
 title: 教學課程 1：建立圖片檢視器
+description: 瞭解如何建立可從檔案載入圖片並將它顯示在視窗中的應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 10/16/2019
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44fe22aa1d4549d1daba4324349160afcd3133ba
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1c0eea844b04cbe8ba261fd4d65a6d21fb99aa4b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811210"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479130"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教學課程 1：建立圖片檢視器
 
@@ -34,7 +36,7 @@ ms.locfileid: "90811210"
 
 * 使用版面配置將控制項放在表單上。
 
-* 將 [開啟檔案]**** 和 [色彩]**** 對話方塊新增至表單。
+* 將 [開啟檔案] 和 [色彩] 對話方塊新增至表單。
 
 * 使用 IntelliSense 和程式碼片段撰寫程式碼。
 
@@ -46,11 +48,11 @@ ms.locfileid: "90811210"
 
 ## <a name="tutorial-links"></a>教學課程的連結
 
-|Title|描述|
+|標題|描述|
 |-----------|-----------------|
 |[步驟 1：建立 Windows Forms 應用程式專案](../ide/step-1-create-a-windows-forms-application-project.md)|首先，建立 Windows Forms 應用程式專案。|
 |[步驟2：執行您的圖片檢視器應用程式](../ide/step-2-run-your-program.md)|執行您在上一個步驟中建立的 Windows Forms 應用程式專案。|
-|[步驟 3：設定表單屬性](../ide/step-3-set-your-form-properties.md)|使用 [屬性]**** 視窗變更表單的外觀。|
+|[步驟 3：設定表單屬性](../ide/step-3-set-your-form-properties.md)|使用 [屬性] 視窗變更表單的外觀。|
 |[步驟 4：使用 TableLayoutPanel 控制項來配置表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|新增 `TableLayoutPanel` 控制項至表單。|
 |[步驟 5：將控制項新增至表單](../ide/step-5-add-controls-to-your-form.md)|將控制項 (例如 `PictureBox` 控制項和 `CheckBox` 控制項) 新增至表單。 將按鈕加入至表單。|
 |[步驟 6：命名按鈕控制項](../ide/step-6-name-your-button-controls.md)|將按鈕重新命名為更有意義的名稱。|

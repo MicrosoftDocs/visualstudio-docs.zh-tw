@@ -1,5 +1,7 @@
 ---
 title: 阿拉伯文和希伯來文的支援
+description: 瞭解如何顯示阿拉伯文和希伯來文文字，以及輸入物件名稱和值的雙向文字。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57bccfccb77c5a80fd2630680564f88f08d7ca5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa2520527259c476f84d83cdff81d9f96bc2bbd7
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591992"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478961"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Visual Studio 中的雙向語言支援
 
@@ -42,7 +44,7 @@ Visual Studio 支援 Unicode，因此如果您的系統已設好適當的地區�
 
 - 方案、專案和檔案名稱，包括您在專案路徑中包含的任何資料夾。
 
-   [方案總管]**** 會正確顯示解決方案和元素名稱。
+   [方案總管] 會正確顯示解決方案和元素名稱。
 
 - 檔案內容。
 
@@ -50,7 +52,7 @@ Visual Studio 支援 Unicode，因此如果您的系統已設好適當的地區�
 
 - 資料項目。
 
-   [伺服器總管]**** 會正確顯示這些元素，並可讓您編輯它們。
+   [伺服器總管] 會正確顯示這些元素，並可讓您編輯它們。
 
 - 複製到 Windows 剪貼簿的項目。
 
@@ -58,7 +60,7 @@ Visual Studio 支援 Unicode，因此如果您的系統已設好適當的地區�
 
 - 屬性值。
 
-   您可以在 [ **屬性** ] 視窗中使用阿拉伯文或希伯來文文字。 視窗可讓您使用標準 Windows 擊鍵 (**ctrl** + **右 shift** （由右至左）和**ctrl** + **LeftShift** （由) 左至右）從右至左和由左到右的讀取順序進行切換。
+   您可以在 [ **屬性** ] 視窗中使用阿拉伯文或希伯來文文字。 視窗可讓您使用標準 Windows 擊鍵 (**ctrl** + **右 shift** （由右至左）和 **ctrl** + **LeftShift** （由) 左至右）從右至左和由左到右的讀取順序進行切換。
 
 - 程式碼和常值文字。
 
@@ -78,7 +80,7 @@ Visual Studio 支援 Unicode，因此如果您的系統已設好適當的地區�
 
 ## <a name="right-to-left-reading-order"></a>由右至左的讀取順序
 
-Visual Studio 只能有限地支援從右至左的讀取順序。 根據預設，Visual Studio 中的文字輸入控制項採用由左至右的讀取順序。 在大部分情況下，您可以使用標準 Windows 筆勢來切換讀取順序。 例如，您可以按**Ctrl** + **右 shift**切換 [**屬性**] 視窗，以支援由右至左讀取屬性值的順序。
+Visual Studio 只能有限地支援從右至左的讀取順序。 根據預設，Visual Studio 中的文字輸入控制項採用由左至右的讀取順序。 在大部分情況下，您可以使用標準 Windows 筆勢來切換讀取順序。 例如，您可以按 **Ctrl** + **右 shift** 切換 [**屬性**] 視窗，以支援由右至左讀取屬性值的順序。
 
 Visual Studio 中的下列位置並不支援從右至左的讀取順序：
 

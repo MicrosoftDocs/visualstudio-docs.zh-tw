@@ -1,5 +1,7 @@
 ---
 title: 教學課程 3：建立配對遊戲
+description: 瞭解如何建立配對遊戲，讓播放程式必須符合隱藏圖示的配對。
+ms.custom: SEO-VS-2020
 ms.date: 10/16/2019
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 ms.topic: tutorial
@@ -9,12 +11,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 399275b64392ab4c6def97eb8c4f6a5bdafb2c4a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 62859c86ff3b4057eceb1f6e00ebfd46867f9927
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810831"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479026"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>教學課程 3：建立配對遊戲
 
@@ -41,7 +43,7 @@ ms.locfileid: "90810831"
 
 ## <a name="tutorial-links"></a>教學課程的連結
 
-|Title|描述|
+|標題|描述|
 |-----------|-----------------|
 |[步驟 1：建立專案並將資料表新增至表單](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|從建立專案並新增 `TableLayoutPanel` 控制項，讓控制項正確對齊開始。|
 |[步驟 2：新增隨機物件與圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|加入 `Random` 物件和 `List` 物件，以建立圖示清單。|
