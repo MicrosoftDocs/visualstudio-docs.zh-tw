@@ -1,5 +1,7 @@
 ---
 title: MIDL 工作 | Microsoft Docs
+description: 深入瞭解 MSBuild MIDL 工作，這項工作會包裝 Microsoft 介面定義語言 (MIDL) 編譯器工具 midl.exe。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -26,16 +28,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a43975244eaf064c9ed7608fa41c16854ca140f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 884cecdcbdbef3320516dd67c43cedd72bc25076
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633469"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903851"
 ---
 # <a name="midl-task"></a>MIDL 工作
 
-包裝 Microsoft 介面定義語言 (MIDL) 編譯器工具 (midl.exe**)。 如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考)。
+包裝 Microsoft 介面定義語言 (MIDL) 編譯器工具 (midl.exe)。 如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考)。
 
 ## <a name="parameters"></a>參數
 
@@ -143,7 +145,7 @@ ms.locfileid: "77633469"
 
      如果是 `true`，即會檢查列舉值位於允許的範圍內。
 
-     如需詳細資訊，請參閱 midl.exe** 的命令列說明 (**/?**) 中的 **/error enum** 選項。
+     如需詳細資訊，請參閱 midl.exe 的命令列說明 (**/?**) 中的 **/error enum** 選項。
 
 - **ErrorCheckRefPointers**
 
@@ -227,7 +229,7 @@ ms.locfileid: "77633469"
 
      選擇性的 **字串** 參數。
 
-     針對 COM 介面指定「介面識別項檔」** 的名稱。 這會覆寫透過在 IDL 檔名中加入 "_i.c" 而取得的預設名稱。
+     針對 COM 介面指定「介面識別項檔」的名稱。 這會覆寫透過在 IDL 檔名中加入 "_i.c" 而取得的預設名稱。
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/iid** 選項。
 
@@ -235,7 +237,7 @@ ms.locfileid: "77633469"
 
      選擇性的 **int** 參數。
 
-     指定「地區設定識別項」**，讓您能夠在輸入檔、檔案名稱和目錄路徑中使用國際字元。 指定十進位的地區設定識別項。
+     指定「地區設定識別項」，讓您能夠在輸入檔、檔案名稱和目錄路徑中使用國際字元。 指定十進位的地區設定識別項。
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/lcid** 選項。 另請參閱[地區設定識別碼](/windows/desktop/intl/locale-identifiers)。
 
@@ -243,7 +245,7 @@ ms.locfileid: "77633469"
 
      選擇性的 **布林值** 參數。
 
-     若為 `true`，則輸入檔的格式必須與 mktyplib.exe** 2.03 版相容。
+     若為 `true`，則輸入檔的格式必須與 mktyplib.exe 2.03 版相容。
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/mktyplib203** 選項。 另請參閱 MSDN 網站上的 [ODL 檔案語法](/previous-versions/windows/desktop/automat/odl-file-syntax)。
 
@@ -259,7 +261,7 @@ ms.locfileid: "77633469"
 
      選擇性的 **String []** 參數。
 
-     指定一或多個「定義」**；也就是要傳遞到 C 前置處理器的名稱和選擇性的值，如同透過 `#define` 指示詞。 每個定義的格式是 *name[=value]*。
+     指定一或多個「定義」；也就是要傳遞到 C 前置處理器的名稱和選擇性的值，如同透過 `#define` 指示詞。 每個定義的格式是 *name[=value]*。
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/D** 選項。 另請參閱此表格中的 **UndefinePreprocessorDefinitions** 參數。
 
@@ -287,7 +289,7 @@ ms.locfileid: "77633469"
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/sstub** 選項。 另請參閱此表格中的 **ClientStubFile** 參數。
 
-- **Source**
+- **來源**
 
      必要的 `ITaskItem[]` 參數。
 
@@ -297,7 +299,7 @@ ms.locfileid: "77633469"
 
      選擇性的 **字串** 參數。
 
-     指定目標系統中結構的對應儲存 (「封裝層級」**)。
+     指定目標系統中結構的對應儲存 (「封裝層級」)。
 
      指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
@@ -403,7 +405,7 @@ ms.locfileid: "77633469"
 
      選擇性的 **字串** 參數。
 
-     指定要發出的警告嚴重性 (「警告層級」**)。 值為 0，就會不發出任何警告。 否則，如果其警告層級是小於或等於指定值的數字，就會發出警告。
+     指定要發出的警告嚴重性 (「警告層級」)。 值為 0，就會不發出任何警告。 否則，如果其警告層級是小於或等於指定值的數字，就會發出警告。
 
      指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
@@ -417,6 +419,6 @@ ms.locfileid: "77633469"
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/W** 選項。 另請參閱此表格中的 **WarnAsError** 參數。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)
