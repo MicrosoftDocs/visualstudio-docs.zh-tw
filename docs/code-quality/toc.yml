@@ -8,15 +8,21 @@
       items:
         - name: 概觀
           href: roslyn-analyzers-overview.md
+        - name: 安裝
+          expanded: true
+          items:
+            - name: .NET 分析器
+              href: install-net-analyzers.md
+            - name: 第三方分析器
+              href: install-roslyn-analyzers.md
         - name: 設定
           expanded: true
           items:
             - name: 總覽
               href: use-roslyn-analyzers.md
             - name: .NET 分析器
+              expanded: true
               items:
-                - name: 安裝 .NET 分析器
-                  href: install-net-analyzers.md
                 - name: 程式碼品質
                   items:
                     - name: 程式碼品質選項
@@ -42,8 +48,6 @@
               href: automatic-feature-suspension.md
             - name: 隱藏程式碼分析違規項目
               href: in-source-suppression-overview.md
-        - name: 安裝第三方分析器
-          href: install-roslyn-analyzers.md
         - name: 常見問題集
           href: analyzers-faq.md
     - name: 舊版分析
