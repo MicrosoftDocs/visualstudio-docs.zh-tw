@@ -1,18 +1,18 @@
 ---
-title: Visual Studio 訂用帳戶中的 Visual Studio App Center 權益 | Microsoft Docs
+title: Visual Studio 訂閱 Visual Studio App Center 權益 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabushcl
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: 了解 Visual Studio 訂用帳戶中所含的 Visual Studio App Center 權益。
-ms.openlocfilehash: 6b1fc94d596f3b771f8354c0857ef533c00e1449
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 8468b7641d12eca4db09d55d8d308ef5a913bc3c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435726"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537769"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Visual Studio App Center
 
@@ -26,15 +26,15 @@ App Center 是應用程式的任務控制機制。
 開始使用 Visual Studio App Center 非常簡單。
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 尋找 Visual Studio App Center 圖格，然後按一下 [開始使用]****。
+2. 尋找 Visual Studio App Center 圖格，然後按一下 [開始使用]。
     > [!div class="mx-imgBorder"]
     > ![VS App Center 磚](_img/vs-app-center/vs-app-center-tile.png "按一下 Visual Studio App Center 圖格上的 [開始使用]。")
 
-3. 接著，建立帳戶。  您可以使用現有的 Microsoft、Google、GitHub 或 Facebook 帳戶來登入，或提供您的使用者名稱、電子郵件與密碼來建立新帳戶。  按一下 [建立帳戶]**** 以繼續。
+3. 接著，建立帳戶。  您可以使用現有的 Microsoft、Google、GitHub 或 Facebook 帳戶來登入，或提供您的使用者名稱、電子郵件與密碼來建立新帳戶。  按一下 [建立帳戶] 以繼續。
     > [!div class="mx-imgBorder"]
     > ![VS App Center 建立帳戶](_img/vs-app-center/vs-app-center-create-account.png "選擇您要登入的方式。")
 
-4. 就是這麼簡單。  只要按一下 [新增組織]**** 或 [新增應用程式]**** 就可以開始！
+4. 就是這麼簡單。  只要按一下 [新增組織] 或 [新增應用程式] 就可以開始！
     > [!div class="mx-imgBorder"]
     > ![VS App Center 入口網站](_img/vs-app-center/vs-app-center-portal.png "您已經準備好了。 按一下 [新增組織] 或 [新增應用程式]，開始使用。")
 
@@ -43,9 +43,9 @@ App Center 是應用程式的任務控制機制。
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, NFR<sup>1</sup> | 已包括       |  是          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise  | Vl | 已包括       |  是          |
+| 使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶  | Vl | 已包括       |  是          |
 | Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                       | 已包括                                                            |是 |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                      | 已包括                                                            |是 |
+| 使用 GitHub Enterprise Visual Studio Professional 訂用帳戶 | Vl                                      | 已包括                                                            |是 |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 已包括                                                            |是 |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 已包括                                                            |是 |
 ||
@@ -63,7 +63,7 @@ App Center 是應用程式的任務控制機制。
 答：App Center 需要一些較舊瀏覽器不提供的較新功能。  若不支援您的瀏覽器，請依照這些步驟執行：
 1. 開啟不同的瀏覽器，例如 Microsoft Edge 或最新版本的 Google Chrome 或 Firefox，或 Safari。
 2. 連線至 Visual Studio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 並登入。
-3. 現在按一下 Visual Studio App Center 圖格上的 [開始使用]**** 連結。
+3. 現在按一下 Visual Studio App Center 圖格上的 [開始使用] 連結。
 
 您現在應該可以存取 App Center 入口網站並建立您的帳戶。
 
@@ -74,9 +74,9 @@ App Center 是應用程式的任務控制機制。
 - 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 

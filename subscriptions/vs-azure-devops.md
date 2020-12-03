@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 07/22/2020
 ms.topic: conceptual
 description: 了解如何以 Visual Studio 訂閱者的身分使用 Azure DevOps。
-ms.openlocfilehash: 536941d02b790349d126257e61164d2b0b98d794
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: f8cf4cd5f2165a528301d5dc2387a7906f11dcab
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970498"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537691"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio 訂閱者的 Azure DevOps 權益
 身為有效的 Visual Studio 訂閱者，您可以使用 Azure DevOps 一定範圍內的功能，這些功能是隨附於訂用帳戶的權益。 您可以使用所屬每個 Azure DevOps 組織中的這些相同功能，無論是您建立了組織，或由他人新增了功能。
@@ -31,9 +31,9 @@ ms.locfileid: "95970498"
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup>  | Azure Boards & 存放庫 (基本<sup>2</sup>) 、Azure Test Plans、自我裝載的並行作業 |  是          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl| Azure Boards & 存放庫 (基本<sup>2</sup>) 、Azure Test Plans、自我裝載的並行作業 |  是          |
+| 使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶   | Vl| Azure Boards & 存放庫 (基本<sup>2</sup>) 、Azure Test Plans、自我裝載的並行作業 |  是          |
 | Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                        | Azure Boards & 存放庫 (基本<sup>2</sup>)                                                              |  是          |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl| Azure Boards & 存放庫 (基本<sup>2</sup>)                                                              |  是          |
+| 使用 GitHub Enterprise Visual Studio Professional 訂用帳戶 | Vl| Azure Boards & 存放庫 (基本<sup>2</sup>)                                                              |  是          |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | Azure Boards & 存放庫 (基本<sup>2</sup>) ，Azure Test Plans                                              |  是          |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | Azure Boards & 存放庫 (基本<sup>2</sup>) ，Azure Test Plans                                             |  是          |
 ||
@@ -57,7 +57,7 @@ ms.locfileid: "95970498"
 - 是否有關於 Visual Studio IDE、Azure DevOps 或其他 Visual Studio 產品或服務的問題？  造訪 [Visual Studio 支援服務](https://visualstudio.microsoft.com/support/)。
 - [Azure DevOps 檔](/azure/devops/)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)

@@ -1,18 +1,18 @@
 ---
-title: Visual Studio 訂閱的開發人員社群權益 |Microsoft Docs
+title: Visual Studio 訂閱開發人員社群權益 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 44a790d1-f37e-4be0-9023-af1b3fdfcd35
-ms.date: 11/17/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: 瞭解所選 Visual Studio 訂用帳戶中所含的開發人員社群支援權益。
-ms.openlocfilehash: 68c2ecd4c87039e1e75b2f36fd261e18951d612a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 1b90a18c251e96f3c815129d81b3b09611594e99
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94905492"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538042"
 ---
 # <a name="developer-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中開發人員社群支援論壇
 張貼問題、尋找答案，並在開發人員社群論壇分享您的知識。
@@ -42,9 +42,9 @@ Azure 社群權益的可用性取決於訂用帳戶層級，如下所示：
 |                                          訂用帳戶層級                                           |     通道      |    優點    | 可續約？ |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (Standard) ，NFR<sup>1</sup>                            | VL, Azure, 零售 |   可用    |    是     |
-|                           含 GitHub Enterprise 的 Visual Studio Enterprise                           | VL, Azure, 零售 |   可用    |    是     |
+|                           使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶                           | VL, Azure, 零售 |   可用    |    是     |
 |                          Visual Studio Professional (Standard)                          | VL, Azure, 零售 |   可用    |    是     |
-|                          含 GitHub Enterprise 的 Visual Studio Professional                          | VL, Azure, 零售 |   可用    |    是     |
+|                          使用 GitHub Enterprise Visual Studio Professional 訂用帳戶                          | VL, Azure, 零售 |   可用    |    是     |
 |                              Visual Studio Test Professional (標準訂用帳戶)                               |    VL, 零售     |   可用    |    是     |
 |                                       MSDN 平台 (標準)                                       |    VL, 零售     |   可用    |    是     |
 | Visual Studio Enterprise (每月雲端) ，Visual Studio Professional (每月雲端) |        全部        | 無法使用 |     否     |
@@ -60,7 +60,7 @@ Azure 社群權益的可用性取決於訂用帳戶層級，如下所示：
 - 需要有關 Visual Studio 訂用帳戶銷售、訂用帳戶、帳戶與計費的協助？  請連絡 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)

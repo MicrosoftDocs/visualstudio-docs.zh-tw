@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: 深入瞭解並安裝適用于企業的 Microsoft 365 應用程式
-ms.openlocfilehash: 88570806d90ff022ede6f39c16325d8696ef0f9e
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: d23f8cccd284972d05d7085aea7e0b1cab0f275d
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006120"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537821"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中適用于企業的 Microsoft 365 應用程式
 您可以在選取的 Visual Studio 訂用帳戶中，取得適用于 enterprise (的 Microsoft 365 應用程式先前的 Office 365 Pro Plus)  
@@ -55,11 +55,11 @@ ms.locfileid: "91006120"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售| 可用       |  Yes          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise  | Vl | 可用       |  Yes          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售| 可用       |  是          |
+| 使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶  | Vl | 可用       |  是          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | 無法使用       |  N/A          |
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                            |  N/A          |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl | 無法使用         |  N/A          |
+| 使用 GitHub Enterprise Visual Studio Professional 訂用帳戶 | Vl | 無法使用         |  N/A          |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  N/A          |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
@@ -77,13 +77,13 @@ ms.locfileid: "91006120"
 - 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

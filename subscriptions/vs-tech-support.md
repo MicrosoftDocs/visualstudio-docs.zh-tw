@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 11/05/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: 了解如何啟用 Visual Studio 訂用帳戶所包含的技術支援權益。
-ms.openlocfilehash: 9ae88bcc066473752a600284d815378bc8870f64
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ea67dde54dd66af6d20b7f9af84d2bfe80211444
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413959"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537964"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>啟用並使用 Visual Studio 訂用帳戶中的技術支援權益
 如果產品仍在 [支援生命週期](https://support.microsoft.com/lifecycle/search)的主要支援階段中，Visual Studio 訂用帳戶技術支援權益可為其解決 **非生產環境** 中的協助修正問題。 自權益啟用的 1 年內，Visual Studio Enterprise 標準和年度雲端訂用帳戶可接收四個事件，而 Visual Studio Professional 標準和年度雲端訂用帳戶可接收兩個事件。 您必須在訂用帳戶為最新狀態時啟用權益。
@@ -30,7 +30,7 @@ ms.locfileid: "93413959"
 
 非開發人員產品 (例如，從 Visual Studio 訂用帳戶下載的 SQL、Windows、SharePoint) 僅符合主流支援的資格。 這些產品僅獲得開發環境的授權，以設計、開發、測試或展示應用程式。 這些產品未授權用於生產環境。
 
-產品層級描述：展開 [ **無法使用的支援方案** ]。 如果您看到 **支援方案無法用於指定產品的支援 (程式碼： 8)** ，您的支援合約無法用於您所選取的產品版本。
+產品層級描述：展開 [ **無法使用的支援方案**]。 如果您看到 **支援方案無法用於指定產品的支援 (程式碼： 8)**，您的支援合約無法用於您所選取的產品版本。
 
 > [!IMPORTANT]
 > 所提供的支援事件適用于支援服務的修正。  它們可能不會用來協助處理涉及下列產品的程式碼/開發問題：
@@ -45,7 +45,7 @@ ms.locfileid: "93413959"
 1. 前往 <https://my.visualstudio.com/Benefits>，向下捲動至 [支援] 區段，然後在 [技術支援] 磚上，按一下 [Chat to activate] \(聊天啟用\)。
     > [!div class="mx-imgBorder"]
     > ![技術支援權益磚](_img/vs-tech-support/vs-tech-support-tile.png "按一下 [技術支援] 磚上的 [聊天以啟動]。")
-2. 這會起始您與客戶代表的聊天工作階段；客戶代表可建立您的 **合約識別碼** 和 **存取識別碼** ，並透過電子郵件將這些識別碼提供給您以作為記錄。
+2. 這會起始您與客戶代表的聊天工作階段；客戶代表可建立您的 **合約識別碼** 和 **存取識別碼**，並透過電子郵件將這些識別碼提供給您以作為記錄。
 
 3. 若要完成此程序，您必須提供代表：
    - 您的國家/地區
@@ -57,7 +57,7 @@ ms.locfileid: "93413959"
    > [!div class="mx-imgBorder"]
    > ![技術支援權益尋找訂用帳戶識別碼](_img/vs-tech-support/vs-tech-support-subID-cropped.png "在 [訂閱] 索引標籤上尋找您的訂用帳戶識別碼。")
 
-4. 程序完成之後，您會收到一封電子郵件，其中含有您建立支援事件時會用到的 **合約識別碼** 和 **存取識別碼** 。  它也會提供使用您的新「存取識別碼」和「合約識別碼」來提交支援事件的指示。 
+4. 程序完成之後，您會收到一封電子郵件，其中含有您建立支援事件時會用到的 **合約識別碼** 和 **存取識別碼**。  它也會提供使用您的新「存取識別碼」和「合約識別碼」來提交支援事件的指示。 
 
    > [!NOTE]
    > 若要使用英文以外的語言啟用您的支援帳戶，請從 [這份清單](https://support.microsoft.com/help/14084/activate-support-contract)中選擇您的國家/地區。
@@ -79,8 +79,8 @@ ms.locfileid: "93413959"
    > [!div class="mx-imgBorder"]
    > ![建立新的支援要求](_img/vs-tech-support/vs-tech-support-create-new.png "完成欄位以建立新的支援要求。") 
 0. 在 [ **步驟 2** ] 區段中，提供您的位置和時區。
-0. 按一下 [ **新增合約** ]。
-0. 當您啟用支援權益時，請輸入您在確認電子郵件中收到的 **存取識別碼** 和 **合約識別碼** 。 按一下 [新增]  。
+0. 按一下 [ **新增合約**]。
+0. 當您啟用支援權益時，請輸入您在確認電子郵件中收到的 **存取識別碼** 和 **合約識別碼** 。 按一下 [加入]  。
    > [!div class="mx-imgBorder"]
    > ![新增合約識別碼](_img/vs-tech-support/vs-tech-support-add-contract-id.png "從確認電子郵件中新增存取識別碼和合約識別碼。") 
 0. 您的新支援合約將會出現在 **步驟 2** 中。  加以選取。
@@ -91,7 +91,7 @@ ms.locfileid: "93413959"
    > [!div class="mx-imgBorder"]
    > ![驗證您的連絡人資訊](_img/vs-tech-support/vs-tech-support-contact-info.png "驗證您的連絡人資訊和慣用的連絡人方法。") 
 0. 在 **步驟 4** 中，您可以選擇與小組的其他人共用這項支援要求資訊。  輸入您想要與之共用要求的電子郵件地址。 按 **[下一** 步] 移至下一個步驟。
-0. **步驟 5** 摘要說明您為事件提供的所有資訊。  如果您對所有專案都是正確的，而且您已準備好繼續進行，請按一下 [ **提交** ]。 
+0. **步驟 5** 摘要說明您為事件提供的所有資訊。  如果您對所有專案都是正確的，而且您已準備好繼續進行，請按一下 [ **提交**]。 
  
 ### <a name="submit-an-incident-by-phone"></a>透過電話提交事件
 如果您想要透過電話建立支援事件，請找出您的國家/地區的 [客戶服務](https://support.microsoft.com/help/13948/global-customer-service-phone-numbers) 電話號碼。 當您撥打電話時，請務必準備好合約識別碼和存取識別碼。
@@ -100,7 +100,7 @@ ms.locfileid: "93413959"
 若要使用您的 Visual Studio 訂閱技術支援權益來解決與 Azure 相關的問題，您必須將合約識別碼和存取識別碼連結至您的 Azure 訂用帳戶。
 
 1. 前往 https://portal.azure.com 並登入
-0. 從左側導覽中，按一下 [說明 **+ 支援** ]
+0. 從左側導覽中，按一下 [說明 **+ 支援**]
 0. 按一下 [支援] 底下的 [新增支援要求]
 
 ## <a name="eligibility"></a>資格
@@ -108,9 +108,9 @@ ms.locfileid: "93413959"
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL，Azure，零售，選取的 NFR<sup>1</sup> | 4 個事件       |  是|
-| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl | 4 個事件       |  是|
+| 使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶 | Vl | 4 個事件       |  是|
 | Visual Studio Professional (Standard) | VL、Azure、零售、挑選過的 NFR<sup>2</sup>                                        | 2 個事件                                                          |是         |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                     | 2 個事件                                                          |是         |
+| 使用 GitHub Enterprise Visual Studio Professional 訂用帳戶 | Vl                                     | 2 個事件                                                          |是         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 2 個事件                                             |  是         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 2 個事件                                               | 是         |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
@@ -124,8 +124,8 @@ ms.locfileid: "93413959"
 
 ## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
-- [Azure 文件](/azure/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
+- [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟

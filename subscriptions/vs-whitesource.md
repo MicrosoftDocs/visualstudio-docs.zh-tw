@@ -2,17 +2,17 @@
 title: Visual Studio 訂用帳戶中的 WhiteSource 螺栓 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: 了解如何啟用 Visual Studio 訂用帳戶所含的 WhiteSource Bolt 訂用帳戶。
-ms.openlocfilehash: 7d0e95bf82f31b92ef5b581a0b7d8b7d082d3237
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: dffa4645795e771b2f947426907ed3e03caedf80
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435996"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537678"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 WhiteSource Bolt
 
@@ -22,19 +22,19 @@ ms.locfileid: "92435996"
 
 1. 若要啟用您的 WhiteSource 螺栓權益，請登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 。
 
-2. 在 [工具] 區段找到 [WhiteSource Bolt] 磚，並按一下權益磚底部的 [取得代碼]**** 連結。
+2. 在 [工具] 區段找到 [WhiteSource Bolt] 磚，並按一下權益磚底部的 [取得代碼] 連結。
    > [!div class="mx-imgBorder"]
    > ![WhiteSource 權益磚](_img/vs-whitesource/vs-whitesource-tile.png "按一下 WhiteSource 螺栓磚上的 [取得程式碼] 開始使用。")
 
-3. 您會收到顯示啟用代碼的通知。  **將程式碼複製至剪貼簿**，然後按一下 [啟用]****。
+3. 您會收到顯示啟用代碼的通知。  **將程式碼複製至剪貼簿**，然後按一下 [啟用]。
    > [!div class="mx-imgBorder"]
    > ![WhiteSource 權益程式碼](_img/vs-whitesource/vs-whitesource-code.png "將程式碼複製到剪貼簿，然後按一下 [啟動]。")
 
-4. 在 [啟用您的帳戶]**** 頁面上，按一下步驟 1 中的 [安裝]**** 連結。
-5. 在 Visual Studio Marketplace 中按一下 [免費取得]****。
-6. 接下來，選取您想要使用的 Azure DevOps 組織，然後按一下 [安裝]****。  (如果尚未設定 Azure DevOps Services，請前往[權益](https://my.visualstudio.com/benefits)頁面並啟用您的 Azure DevOps Services 權益。)
+4. 在 [啟用您的帳戶] 頁面上，按一下步驟 1 中的 [安裝] 連結。
+5. 在 Visual Studio Marketplace 中按一下 [免費取得]。
+6. 接下來，選取您想要使用的 Azure DevOps 組織，然後按一下 [安裝]。  (如果尚未設定 Azure DevOps Services，請前往[權益](https://my.visualstudio.com/benefits)頁面並啟用您的 Azure DevOps Services 權益。)
 
-7. 按一下 [繼續前往組織]****。
+7. 按一下 [繼續前往組織]。
 8. 成功安裝 WhiteSource Bolt 之後，返回[啟用頁面](https://bolt.whitesourcesoftware.com/whitesource-bolt-azure-devops#activate)，然後檢視影片以了解如何設定。 
 9. 如需詳細資訊，請瀏覽 WhiteSource Bolt [常見問題集頁面](https://bolt.whitesourcesoftware.com/azure/faq/) \(英文\)。 
 
@@ -43,9 +43,9 @@ ms.locfileid: "92435996"
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  是       |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl | 6 個月       |  是       |
+| 使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶 | Vl | 6 個月       |  是       |
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                           |NA         |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                      | 無法使用                                                           |NA         |
+| 使用 GitHub Enterprise Visual Studio Professional 訂用帳戶 | Vl                                      | 無法使用                                                           |NA         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                                           |NA         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                                           |NA         |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
@@ -61,9 +61,9 @@ ms.locfileid: "92435996"
 - 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 

@@ -1,18 +1,18 @@
 ---
-title: Visual Studio 訂用帳戶中的指引對談權益 | Microsoft Docs
+title: Visual Studio 訂用帳戶中的指引談權益 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 10/21/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: 了解 Visual Studio 訂用帳戶中所含的指引對談權益。
-ms.openlocfilehash: 0aab627d7c870720c0cc0d043ffb6ce556568703
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 4f5f188ee7b6662549e5ade80a97c57f24bce64c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353378"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538094"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的指引對談
 「指引對談」服務除了協助您使用您的 Visual Studio 訂用帳戶權益之外，也提供尋找產品資訊與技術文件的協助。
@@ -23,7 +23,7 @@ ms.locfileid: "92353378"
 透過「指引對談」服務取得協助非常簡單。
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在權益頁面的 [支援] 區段找到 [指引對談] 圖格，然後按一下 [立即對話]****。
+2. 在權益頁面的 [支援] 區段找到 [指引對談] 圖格，然後按一下 [立即對話]。
     > [!div class="mx-imgBorder"]
     > ![[指引對談] 磚](_img/vs-concierge-chat/vs-concierge-chat-tile.png "按一下 [立即聊天] 以啟動新的聊天會話。")
 
@@ -39,9 +39,9 @@ ms.locfileid: "92353378"
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  是          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise | Vl| 可用       |  是          |
+| 使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶 | Vl| 可用       |  是          |
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 可用                                                            |  是          |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl | 可用                                                            |  是          |
+| 使用 GitHub Enterprise Visual Studio Professional 訂用帳戶 | Vl | 可用                                                            |  是          |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  是          |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                              |  是          |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
@@ -63,7 +63,7 @@ ms.locfileid: "92353378"
 
 ## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 

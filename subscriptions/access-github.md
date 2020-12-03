@@ -1,5 +1,5 @@
 ---
-title: 使用 GitHub Enterprise 的 Visual Studio |Microsoft Docs
+title: 使用 GitHub Enterprise Visual Studio 訂閱 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,14 +7,14 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 10/22/2020
 ms.topic: conceptual
 description: 瞭解如何在 Visual Studio 訂用帳戶中存取 GitHub Enterprise
-ms.openlocfilehash: fc4c36e72affb94f0707389d219284cc2a652bfd
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 59b665b1da7d46732f1f4e967ae2a98ec54875ff
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467514"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537899"
 ---
-# <a name="visual-studio-with-github-enterprise-subscriptions"></a>包含 GitHub Enterprise 訂用帳戶的 Visual Studio
+# <a name="visual-studio-subscriptions-with-github-enterprise"></a>使用 GitHub Enterprise Visual Studio 訂閱 
 
 與 Microsoft (EA) 的 Enterprise 合約客戶，有資格購買新的訂用帳戶供應專案，以結合 Visual Studio 標準訂用帳戶和 GitHub Enterprise。 Visual Studio 訂閱者若想取得 GitHub Enterprise，這是個既簡單又經濟實惠的方法。 
 
@@ -24,7 +24,7 @@ ms.locfileid: "92467514"
 
 ## <a name="whats-available"></a>選擇有哪些？ 
 
-有下列選項可供使用：
+可用選項如下：
 
 - 含 GitHub Enterprise 的 Visual Studio Enterprise
 - 含 GitHub Enterprise 的 Visual Studio Professional
@@ -33,13 +33,13 @@ Visual Studio Enterprise、Visual Studio Professional 和 GitHub Enterprise 也�
 
 若要深入瞭解權益和選項，請造訪 <https://visualstudio.microsoft.com/subscriptions/visual-studio-github> 。 
 
-## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>什麼是含 GitHub Enterprise 設定程序的 Visual Studio？
+## <a name="what-is-the-visual-studio-subscription-with-github-enterprise-setup-process"></a>GitHub Enterprise 安裝程式的 Visual Studio 訂用帳戶是什麼？
 
-具有 GitHub Enterprise 訂用帳戶的 Visual Studio 是以兩個部分來管理：
+具有 GitHub Enterprise 的 Visual Studio 訂用帳戶會以兩個部分來管理：
 1. Visual Studio 訂用帳戶 (Enterprise 或 Professional)
 2. GitHub Enterprise 
 
-當您獲指派具有 GitHub 訂用帳戶的 Visual Studio 時，您會收到一封電子郵件，告知您 Visual Studio 訂用帳戶管理員已指派訂用帳戶給您。  屆時，您將能夠在中查看可用的訂用帳戶權益 <https://my.visualstudio.com/benefits> 。  這包括 GitHub Enterprise 的權益，如下所示。
+當您使用 GitHub Enterprise 指派 Visual Studio 訂用帳戶時，您會收到一封電子郵件，告知您 Visual Studio 訂用帳戶管理員已指派訂用帳戶給您。  屆時，您將能夠在中查看可用的訂用帳戶權益 <https://my.visualstudio.com/benefits> 。  這包括 GitHub Enterprise 的權益，如下所示。
 
    > [!div class="mx-imgBorder"]
    > ![GitHub Enterprise 擱置的企業帳戶設定](_img/access-github/pending-account-setup.png "您的組織必須先設定企業帳戶。")  
@@ -89,9 +89,9 @@ GitHub Enterprise 是由 GitHub 系統管理員與 Visual Studio 訂用帳戶分
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 - 取得 GitHub Enterprise 的[技術支援](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [Azure DevOps 文件](https://docs.microsoft.com/azure/devops/) \(英文\)
 - [Azure 檔](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 

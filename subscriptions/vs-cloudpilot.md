@@ -1,18 +1,18 @@
 ---
-title: Visual Studio 訂用帳戶的 CloudPilot 權益 | Microsoft Docs
+title: Visual Studio 訂用帳戶的 CloudPilot 權益 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 6255b6a3-f101-4b2c-b7fa-851eccc944b2
-ms.date: 03/24/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: 了解所選 Visual Studio 訂用帳戶中所含的 CloudPilot 權益
-ms.openlocfilehash: 642a5b35f41676c76d9eb4e5f1319fbbf57c55df
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 505e4caad5ee6d9b70fc50769c8a008469aa1345
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005920"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538146"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 CloudPilot 權益
 將您的應用程式移至 Microsoft Azure 只需幾個簡單的步驟。 在幾分鐘內即可找出需進行程式碼變更 (細至程式碼行)，以成功遷移至：容器、VM、App Services、SQL Azure 和 (或) SQL MI。 然後，透過使用 ASR、DMA 和 DMS 的精靈，將應用程式遷移至 Azure。
@@ -23,19 +23,19 @@ ms.locfileid: "91005920"
 ## <a name="activation-steps"></a>啟用步驟
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在 [工具] 類別中，尋找 CloudPilot 權益磚，然後按一下 [取得程式碼]****。
+2. 在 [工具] 類別中，尋找 CloudPilot 權益磚，然後按一下 [取得程式碼]。
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot 權益磚](_img/vs-cloudpilot/vs-cloudpilot-tile-ent.png)
 
-0. 您會看到一則訊息，告知您已順利擷取程式碼。  按一下 [啟動]****，隨即將您重新導向至 CloudPilot 頁面；您可以在其中繼續啟用程序。  (如果您未選擇立即啟用，可以隨時返回在訂用帳戶入口網站中的 CloudPilot 磚。  [取得程式碼] 連結會變更為 [啟用]，按一下即可進入啟用程序中的下一個步驟。)
+0. 您會看到一則訊息，告知您已順利擷取程式碼。  按一下 [啟動]，隨即將您重新導向至 CloudPilot 頁面；您可以在其中繼續啟用程序。  (如果您未選擇立即啟用，可以隨時返回在訂用帳戶入口網站中的 CloudPilot 磚。  [取得程式碼] 連結會變更為 [啟用]，按一下即可進入啟用程序中的下一個步驟。)
 
-0. 查看 CloudPilot 能為開發工作提供的權益。  準備好開始時，請按一下 [啟用]**** 按鈕。
+0. 查看 CloudPilot 能為開發工作提供的權益。  準備好開始時，請按一下 [啟用] 按鈕。
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot 登陸頁面](_img/vs-cloudpilot/vs-cloudpilot-landing.png)
 
-0. 若要建立您的帳戶並啟用 CloudPilot 訂用帳戶，請填妥 Web 表單中的連絡資訊，然後按一下 [註冊]****。
+0. 若要建立您的帳戶並啟用 CloudPilot 訂用帳戶，請填妥 Web 表單中的連絡資訊，然後按一下 [註冊]。
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot 註冊頁面](_img/vs-cloudpilot/vs-cloudpilot-register.png)
@@ -43,7 +43,7 @@ ms.locfileid: "91005920"
    > [!NOTE]
    > CloudPilot 權益的啟用限制為每組織十個，可從 Visual Studio Enterprise 或 Visual Studio Professional 訂用帳戶的任何組合中兌換。  如果您的組織已使用十個啟用，您就無法啟用 CloudPilot 權益，並會從 UnifyCloud 收到一封提供進一步資訊的電子郵件。
 
-0. 接下來，您會看到可讓您熟悉 CloudPilot 的產品頁面。  按一下右上角的 [瀏覽至 CloudPilot]**** 前往 CloudPilot 入口網站。
+0. 接下來，您會看到可讓您熟悉 CloudPilot 的產品頁面。  按一下右上角的 [瀏覽至 CloudPilot] 前往 CloudPilot 入口網站。
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot 產品頁面](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
@@ -59,10 +59,10 @@ ms.locfileid: "91005920"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 2 個授權、90 天、無限次數掃描       |  不可以。  僅提供給新訂閱者使用          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl | 2 個授權、90 天、無限次數掃描       |  不可以。  僅提供給新訂閱者使用          |
-| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 1 個授權、30 天、一次掃描                                                            |  不可以。  僅提供給新訂閱者使用           |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl | 1 個授權、30 天、一次掃描                                                            |  不可以。  僅提供給新訂閱者使用           |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 2 個授權、90 天、無限次數掃描       |  否。  僅提供給新訂閱者使用          |
+| 使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶   | Vl | 2 個授權、90 天、無限次數掃描       |  否。  僅提供給新訂閱者使用          |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 1 個授權、30 天、一次掃描                                                            |  否。  僅提供給新訂閱者使用           |
+| 使用 GitHub Enterprise Visual Studio Professional 訂用帳戶 | Vl | 1 個授權、30 天、一次掃描                                                            |  否。  僅提供給新訂閱者使用           |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  N/A           |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |無法使用  | N/A |
@@ -84,11 +84,11 @@ ms.locfileid: "91005920"
 - 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 如果您尚未啟用訂用帳戶隨附的 Azure DevTest 個人點數權益，請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 並按一下 [工具] 類別中的 azure 磚，以設定您的 azure 訂用帳戶並兌換您的 Azure DevTest 個人點數。

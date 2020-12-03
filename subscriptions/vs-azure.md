@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 10/28/2020
 ms.topic: how-to
 description: 瞭解如何啟用 Visual Studio 訂用帳戶中所含的 Azure DevTest 個人點數權益。
-ms.openlocfilehash: f524f0933d067d0c62c184d54c441edc7b15739d
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: bfd94ef7995ed5f456462e1bce6aa0d4d045bdd0
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903642"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538003"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
 身為 Visual Studio 訂閱者，您不需要額外收費即可使用 Microsoft Azure。  使用您的 [每月 Azure DevTest 個人點數](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)，azure 就是您開發/測試的個人沙箱。  您可以佈建虛擬機器、雲端服務和其他 Azure 資源。  信用額度會依訂用帳戶層級而異。
@@ -24,15 +24,15 @@ ms.locfileid: "92903642"
    > [!div class="mx-imgBorder"]
    > ![Azure 磚](_img/vs-azure/vs-azure-tile.png "按一下 [Azure] 磚上的 [啟用] 按鈕，開始使用。")
 
-3. 如果您沒有現有的 Azure 訂用帳戶，系統會要求您填寫必要的資訊，以建立您的 Azure 訂用帳戶。  第一個步驟是提供您的個人資訊，然後選取 **[下一步]** 。
+3. 如果您沒有現有的 Azure 訂用帳戶，系統會要求您填寫必要的資訊，以建立您的 Azure 訂用帳戶。  第一個步驟是提供您的個人資訊，然後選取 **[下一步]**。
    > [!div class="mx-imgBorder"]
    > ![Azure 註冊](_img/vs-azure/vs-azure-about-you.png "將您的個人連絡人資訊新增至您的 Azure 訂用帳戶。")
 
-4. 接下來，您必須使用簡單的驗證碼來驗證您的身分識別。 提供您的電話號碼，並選擇您是否想要以文字或電話接收代碼。  輸入您收到的驗證碼，然後選取 [ **驗證程式代碼** ]。   
+4. 接下來，您必須使用簡單的驗證碼來驗證您的身分識別。 提供您的電話號碼，並選擇您是否想要以文字或電話接收代碼。  輸入您收到的驗證碼，然後選取 [ **驗證程式代碼**]。   
    > [!div class="mx-imgBorder"]
    > ![Azure 準備就緒](_img/vs-azure/vs-azure-identity.png "要求驗證碼，然後輸入該驗證碼以繼續。")
 
-5. 在最後一個步驟中，選取核取方塊以接受條款，然後選取 [ **註冊** ]。  就是這麼簡單！
+5. 在最後一個步驟中，選取核取方塊以接受條款，然後選取 [ **註冊**]。  就是這麼簡單！
    > [!div class="mx-imgBorder"]
    > ![Azure 註冊](_img/vs-azure/vs-azure-agreement.png "按一下 [註冊] 按鈕，完成您的 Azure 訂用帳戶建立。")
 
@@ -73,10 +73,10 @@ ms.locfileid: "92903642"
 |                 訂用帳戶等級/方案                 |           優點           |                         可續約？                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise Standard               |     每月信用點數 $150 美元     |                             是                             |
-|              含 GitHub Enterprise 的 Visual Studio Enterprise               |     每月信用點數 $150 美元     |                             是                             |
+|              使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶               |     每月信用點數 $150 美元     |                             是                             |
 |               Visual Studio Enterprise 每月               |        無法使用        |                                                             |
 |             Visual Studio Professional Standard              |     每月信用點數 $50 美元      |                             是
-|              含 GitHub Enterprise 的 Visual Studio Professional              |     每月信用點數 $150 美元     |                             是                             |
+|              使用 GitHub Enterprise Visual Studio Professional 訂用帳戶              |     每月信用點數 $150 美元     |                             是                             |
 |              Visual Studio Professional 每月              |        無法使用        |                                                             |
 |                    Visual Studio Test Pro                    |     每月信用點數 $50 美元      |                             是                             |
 |                        MSDN 平台                        |     每月信用點數 $100 美元     |                             是                             |
@@ -118,11 +118,11 @@ ms.locfileid: "92903642"
 
 ## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 如需有關 Microsoft 工具與服務的詳細資訊，請參閱下列文件：
 - [Azure](/azure/)
 - [Azure DevOps](/azure/devops/)

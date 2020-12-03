@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 10/28/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: 瞭解系統管理員如何解決過度配置的訂閱
-ms.openlocfilehash: bf3c23cad87dc88b24bae3e8b31ebf8b7d9e1dfe
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: c2876223d2aa4f8da5f267595a193a2fecc3ace2
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904291"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537743"
 ---
 # <a name="over-allocated-subscriptions"></a>過度配置的訂用帳戶
 有時，在新增訂閱者之後訂單也有所變更，而可能導致已指派的訂閱數超過公司所擁有的授權數。 這稱為「過度配置」。  
@@ -39,10 +39,10 @@ ms.locfileid: "92904291"
 
 ## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
-- 深入了解如何管理[含 GitHub Enterprise 的 Visual Studio 訂用帳戶](assign-github.md)。
+## <a name="next-steps"></a>後續步驟
+- 深入瞭解如何 [使用 GitHub Enterprise 管理 Visual Studio 訂閱](assign-github.md)。
 - 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
