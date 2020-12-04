@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: d1a92433a90e6e6b7f71d0c7db6ced3a52c33315
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c6a85faf2d1451dcab9bc822fcdf228513b90dca
+ms.sourcegitcommit: ab60fd7b4a8219e378d100df1386e1b038ecdafc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440606"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96595262"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Bridge to Kubernetes 的運作方式
 
@@ -72,7 +72,8 @@ ms.locfileid: "95440606"
 如果 Bridge 與 Kubernetes 偵測到您的 Kubernetes 叢集上已啟用 Azure Dev Spaces，系統會提示您停用 Azure Dev Spaces，然後才能使用 Bridge 來 Kubernetes。
 
 路由管理員會在啟動時執行下列動作：
-* 使用子域的 *GENERATED_NAME* ，複製在命名空間中找到的所有 ingresses。
+
+* 複製所有 ingresses (，包括使用子域的 *GENERATED_NAME* 在命名空間中找到的負載平衡器 ingresses) 。
 * 針對與具有 *GENERATED_NAME* 子域的重複 ingresses 相關聯的每個服務建立 envoy pod。
 * 為您正在隔離的服務建立額外的 envoy pod。 這可讓具有子域的要求路由傳送到您的開發電腦。
 * 設定每個 envoy pod 的路由規則，以處理具有子域的服務路由。
@@ -144,7 +145,7 @@ kubectl -n <namespace> apply -f <yaml file name>
 * 服務必須由單一 pod 支援，才能連接至該服務。 您無法連接到具有多個 pod 的服務，例如具有複本的服務。
 * Pod 可能只有在該 pod 中執行的單一容器，才能讓 Bridge Kubernetes 成功連接。 橋接器至 Kubernetes 無法連線到具有其他容器的 pod 的服務，例如側車由服務網格插入的容器。
 * 目前，Kubernetes pod 的 Bridge 必須是 Linux 容器。 不支援 Windows 容器。
-* 隔離無法與 HTTPS 一起使用。
+* 當您使用 Bridge 與 Visual Studio Kubernetes 時，不能搭配 HTTPS 使用隔離。 當您使用 Visual Studio Code 時，只會在隔離模式中支援 HTTPS。
 * 橋接器至 Kubernetes 需要較高的許可權，才能在您的開發電腦上執行，以編輯主機檔案。
 * 無法在已啟用 Azure Dev Spaces 的叢集上使用 Bridge 與 Kubernetes。
 
